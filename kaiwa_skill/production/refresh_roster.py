@@ -76,6 +76,14 @@ def main():
             row["status"] = "partial"
         else:
             row["status"] = "queued"
+        if row["status"] == "accepted":
+            row["pending_work"] = "None for the accepted build"
+        elif row["status"] == "needs_review":
+            row["pending_work"] = "Resolve recorded errors or issues; finish remaining pages; rebuild and coordinator audit"
+        elif row["counts"].get("verified") == row["total_pages"]:
+            row["pending_work"] = "Ensure current build; complete coordinator audit and acceptance"
+        else:
+            row["pending_work"] = "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit"
     roster["updated_at"] = ingest.now()
     roster["counts"] = snapshot["counts"]
     roster["issue_count"] = snapshot["issue_count"]
@@ -93,7 +101,8 @@ def main():
                       f"    Nguồn: {row['source']}",
                       f"    Worker: {row['worker_id']}; {row['model']}/{row['reasoning_effort']}; agent_id: {row['agent_id'] or 'chưa cấp'}",
                       f"    Status thực: {json.dumps(row['counts'], ensure_ascii=False)}; issue: {row['issue_count']}; build_current: {row['build_current']}",
-                      f"    Chưa verified: {row['pending_pages'] or 'không'}; nghiệm thu coordinator: {row['coordinator_acceptance']}"])
+                      f"    Chưa verified: {row['pending_pages'] or 'không'}; nghiệm thu coordinator: {row['coordinator_acceptance']}",
+                      f"    Việc còn lại: {row['pending_work']}"])
     ingest.atomic_bytes(production / "ROSTER.txt", ("\n".join(lines) + "\n").encode("utf-8"))
     print(json.dumps({"total_pages": snapshot["total_pages"], "counts": snapshot["counts"], "issue_count": snapshot["issue_count"]}, ensure_ascii=False))
 

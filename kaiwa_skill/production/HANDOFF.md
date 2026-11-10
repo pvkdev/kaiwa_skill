@@ -38,3 +38,9 @@ Không có daemon hoặc tiến trình nền được bảo đảm tiếp tục 
 - `880-t-v-ng-mimikara-n3-minato-b3140fae78af`: ACCEPTED 47/47 trang, đủ 880 mục; commit output `ea221b1`. Coordinator đã rà độc lập cả hai cột tiếng Việt toàn bộ 47 trang sau lỗi dấu lặp lại; tiếng Nhật/bố cục lấy mẫu 10 trang. Báo cáo và sổ QA trong corpus ghi rõ lỗi đã sửa, các nhận định sai đã rút và giới hạn.
 - Slot này chuyển sang `namachuukei-chuujoukyuu-f08dd9302ee6`, nguồn `book/Shadowing/Namachuukei Chuujoukyuu.pdf` (từ `kaiwa_skill/`), 89 trang; agent `production_book_04`, gpt-6-sol/high.
 - N1 vẫn ở `production_book_03`, chưa nghiệm thu. Tiếp tục toàn bộ hàng đợi; không suy ra tác nhân còn chạy chỉ từ file này, kiểm live agents và status thật khi resume.
+
+## Cập nhật sau nghiệm thu N1
+
+- `1170-t-v-ng-mimikara-n1-e1d2f2dffd69`: ACCEPTED 70/70 trang, đủ 1170 mục; commit output `992a210`. Coordinator kiểm toàn bảng 14 trang và các hàng gắn cờ; worker rà rộng các trang liên quan sau bốn lỗi ký tự/dấu. Báo cáo phân biệt lỗi chuyển đổi với những cách in khác thường thật sự của nguồn. Claim đã release.
+- Slot chuyển sang `namachuukei-shochuukyuu-1-53b5b51998a3`, nguồn `book/Shadowing/Namachuukei Shochuukyuu 1.pdf` (từ `kaiwa_skill/`), 91 trang; agent `production_book_05`, gpt-6-sol/high.
+- `production_book_04` tiếp tục sách 89 trang. Sách kế tiếp chưa giao: `85-21a2cb6f3fef`, 93 trang. Tiếp tục theo queue_order trong roster.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T03:24:06.813603+00:00",
+  "updated_at": "2026-11-10T03:40:04.724044+00:00",
   "run_status": "active",
   "source_path_base": "kaiwa_skill/",
   "coordinator": {
@@ -14,9 +14,9 @@
   "total_books": 30,
   "total_pages": 4597,
   "counts": {
-    "pending": 4468,
-    "verified": 123,
-    "draft": 6
+    "pending": 4443,
+    "verified": 139,
+    "rendered": 15
   },
   "books": [
     {
@@ -35,7 +35,7 @@
       },
       "issue_count": 0,
       "coordinator_acceptance": "accepted",
-      "pending_work": "Accepted; no remaining conversion work for this source/build",
+      "pending_work": "None for the accepted build",
       "corpus_path": "kaiwa_skill/corpus/1160-t-v-ng-mimikara-n2-6d226fd8769f",
       "worker_state": "finished",
       "build_current": true,
@@ -62,7 +62,7 @@
       },
       "issue_count": 0,
       "coordinator_acceptance": "accepted",
-      "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
+      "pending_work": "None for the accepted build",
       "corpus_path": "kaiwa_skill/corpus/880-t-v-ng-mimikara-n3-minato-b3140fae78af",
       "build_current": true,
       "claim_owner": null,
@@ -83,21 +83,22 @@
       "reasoning_effort": "high",
       "worker_id": "production_book_03",
       "agent_id": "/root/production_coordinator/production_book_03",
-      "status": "in_progress",
+      "status": "accepted",
       "counts": {
-        "verified": 64,
-        "draft": 6
+        "verified": 70
       },
       "issue_count": 0,
-      "coordinator_acceptance": "pending",
-      "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
+      "coordinator_acceptance": "accepted",
+      "pending_work": "None for the accepted build",
       "corpus_path": "kaiwa_skill/corpus/1170-t-v-ng-mimikara-n1-e1d2f2dffd69",
-      "build_current": false,
-      "claim_owner": "production_book_03",
+      "build_current": true,
+      "claim_owner": null,
       "status_error": null,
-      "pending_pages": "65-70",
-      "current_build_sha256": null,
-      "worker_state": "running"
+      "pending_pages": "",
+      "current_build_sha256": "83aadf5a1bf7549f865896dfbd43deefbd2eed600dbee7a32dcf35769607dc04",
+      "worker_state": "finished",
+      "accepted_build_sha256": "83aadf5a1bf7549f865896dfbd43deefbd2eed600dbee7a32dcf35769607dc04",
+      "acceptance_path": "kaiwa_skill/corpus/1170-t-v-ng-mimikara-n1-e1d2f2dffd69/acceptance.json"
     },
     {
       "queue_order": 4,
@@ -111,16 +112,18 @@
       "agent_id": "/root/production_coordinator/production_book_04",
       "status": "in_progress",
       "counts": {
-        "pending": 89
+        "verified": 10,
+        "rendered": 10,
+        "pending": 69
       },
       "issue_count": 0,
       "coordinator_acceptance": "pending",
       "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/namachuukei-chuujoukyuu-f08dd9302ee6",
       "build_current": false,
-      "claim_owner": null,
+      "claim_owner": "production_book_04",
       "status_error": null,
-      "pending_pages": "1-89",
+      "pending_pages": "11-89",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -133,20 +136,22 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_05",
-      "agent_id": null,
-      "status": "queued",
+      "agent_id": "/root/production_coordinator/production_book_05",
+      "status": "in_progress",
       "counts": {
-        "pending": 91
+        "rendered": 5,
+        "pending": 86
       },
       "issue_count": 0,
       "coordinator_acceptance": "pending",
       "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/namachuukei-shochuukyuu-1-53b5b51998a3",
       "build_current": false,
-      "claim_owner": null,
+      "claim_owner": "production_book_05",
       "status_error": null,
       "pending_pages": "1-91",
-      "current_build_sha256": null
+      "current_build_sha256": null,
+      "worker_state": "running"
     },
     {
       "queue_order": 6,

@@ -1,8 +1,8 @@
 PRODUCTION ROSTER — toàn bộ PDF
-Snapshot UTC: 2026-11-10T03:24:06.813603+00:00
+Snapshot UTC: 2026-11-10T03:40:04.724044+00:00
 Đường dẫn nguồn tương đối từ kaiwa_skill/.
 Coordinator: gpt-6-astra/high; worker: gpt-6-sol/high; tối đa 2 PDF đồng thời.
-30 PDF; 4597 trang; {"pending": 4468, "verified": 123, "draft": 6}.
+30 PDF; 4597 trang; {"pending": 4443, "verified": 139, "rendered": 15}.
 Mọi số đếm lấy từ ingest.status_all và kiểm hash file thực tế.
 Roster là trạng thái bền vững; không phải daemon. Không có tiến trình bảo đảm tiếp tục khi agents dừng.
 
@@ -11,148 +11,178 @@ Roster là trạng thái bền vững; không phải daemon. Không có tiến t
     Worker: production_book_01; gpt-6-sol/high; agent_id: /root/production_coordinator/production_book_01
     Status thực: {"verified": 8}; issue: 0; build_current: True
     Chưa verified: không; nghiệm thu coordinator: accepted
+    Việc còn lại: None for the accepted build
 02. 880-t-v-ng-mimikara-n3-minato-b3140fae78af | 47 trang | accepted
     Nguồn: vocab/880 TỪ VỰNG MIMIKARA N3 MINATO.pdf
     Worker: production_book_02; gpt-6-sol/high; agent_id: /root/production_coordinator/production_book_02
     Status thực: {"verified": 47}; issue: 0; build_current: True
     Chưa verified: không; nghiệm thu coordinator: accepted
-03. 1170-t-v-ng-mimikara-n1-e1d2f2dffd69 | 70 trang | in_progress
+    Việc còn lại: None for the accepted build
+03. 1170-t-v-ng-mimikara-n1-e1d2f2dffd69 | 70 trang | accepted
     Nguồn: vocab/1170 TỪ VỰNG MIMIKARA N1.pdf
     Worker: production_book_03; gpt-6-sol/high; agent_id: /root/production_coordinator/production_book_03
-    Status thực: {"verified": 64, "draft": 6}; issue: 0; build_current: False
-    Chưa verified: 65-70; nghiệm thu coordinator: pending
+    Status thực: {"verified": 70}; issue: 0; build_current: True
+    Chưa verified: không; nghiệm thu coordinator: accepted
+    Việc còn lại: None for the accepted build
 04. namachuukei-chuujoukyuu-f08dd9302ee6 | 89 trang | in_progress
     Nguồn: book/Shadowing/Namachuukei Chuujoukyuu.pdf
     Worker: production_book_04; gpt-6-sol/high; agent_id: /root/production_coordinator/production_book_04
-    Status thực: {"pending": 89}; issue: 0; build_current: False
-    Chưa verified: 1-89; nghiệm thu coordinator: pending
-05. namachuukei-shochuukyuu-1-53b5b51998a3 | 91 trang | queued
+    Status thực: {"verified": 10, "rendered": 10, "pending": 69}; issue: 0; build_current: False
+    Chưa verified: 11-89; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
+05. namachuukei-shochuukyuu-1-53b5b51998a3 | 91 trang | in_progress
     Nguồn: book/Shadowing/Namachuukei Shochuukyuu 1.pdf
-    Worker: production_book_05; gpt-6-sol/high; agent_id: chưa cấp
-    Status thực: {"pending": 91}; issue: 0; build_current: False
+    Worker: production_book_05; gpt-6-sol/high; agent_id: /root/production_coordinator/production_book_05
+    Status thực: {"rendered": 5, "pending": 86}; issue: 0; build_current: False
     Chưa verified: 1-91; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 06. 85-21a2cb6f3fef | 93 trang | queued
     Nguồn: book/Kaiwa/外国人のための日本語敬語の使い方-基本表現85.pdf
     Worker: production_book_06; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 93}; issue: 0; build_current: False
     Chưa verified: 1-93; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 07. 669041168-4f47df1cc97a | 96 trang | queued
     Nguồn: book/Kaiwa/669041168-日本語会話-基本文型８８.pdf
     Worker: production_book_07; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 96}; issue: 0; build_current: False
     Chưa verified: 1-96; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 08. 03-yuukibui-dd762e3fd201 | 103 trang | queued
     Nguồn: book/BJT/03.日本語でビジネス会話 中級編ー英訳・語彙冊 YUUKIBUI.pdf
     Worker: production_book_08; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 103}; issue: 0; build_current: False
     Chưa verified: 1-103; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 09. 5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c | 136 trang | queued
     Nguồn: book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf
     Worker: production_book_09; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 136}; issue: 0; build_current: False
     Chưa verified: 1-136; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 10. shigoto-no-nihongo-bijinesu-manaa-hen-0e3d5e9467fa | 136 trang | queued
     Nguồn: book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf
     Worker: production_book_10; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 136}; issue: 0; build_current: False
     Chưa verified: 1-136; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 11. 01-yuukibui-b12c61270c7b | 138 trang | queued
     Nguồn: book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf
     Worker: production_book_11; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 138}; issue: 0; build_current: False
     Chưa verified: 1-138; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 12. remake-ad35b87b708d | 140 trang | queued
     Nguồn: book/BJT/ロールプレイで学ぶ ビジネス日本語 - 中級レベル ―就活から入社まで― [Remake].pdf
     Worker: production_book_12; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 140}; issue: 0; build_current: False
     Chưa verified: 1-140; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 13. book-be075317cdca | 145 trang | queued
     Nguồn: book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf
     Worker: production_book_13; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 145}; issue: 0; build_current: False
     Chưa verified: 1-145; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 14. 02-yuukibui-3e66906b7e05 | 148 trang | queued
     Nguồn: book/BJT/02.日本語でビジネス会話 中級編 ー練習冊 YUUKIBUI.pdf
     Worker: production_book_14; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 148}; issue: 0; build_current: False
     Chưa verified: 1-148; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 15. namachuukei-shochuukyuu-2-b5b793947c13 | 152 trang | queued
     Nguồn: book/Shadowing/Namachuukei Shochuukyuu 2.pdf
     Worker: production_book_15; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 152}; issue: 0; build_current: False
     Chưa verified: 1-152; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 16. wakaru-bijinesu-nihongo-c0c4bc000a34 | 152 trang | queued
     Nguồn: book/BJT/Wakaru_Bijinesu_Nihongo.pdf
     Worker: production_book_16; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 152}; issue: 0; build_current: False
     Chưa verified: 1-152; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 17. shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0 | 162 trang | partial
     Nguồn: book/BJT/Shigoto_no_nihongo_Denwa_Outai_Kisohen.pdf
     Worker: production_book_17; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 158, "verified": 4}; issue: 0; build_current: True
     Chưa verified: 1-19,24-162; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 18. nameraka-nihongo-kaiwa-7a1ef4391141 | 163 trang | queued
     Nguồn: book/Shadowing/なめらか日本語会話 Nameraka Nihongo Kaiwa.pdf
     Worker: production_book_18; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 163}; issue: 0; build_current: False
     Chưa verified: 1-163; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 19. book-f4bcdf991dba | 168 trang | queued
     Nguồn: book/Shadowing/シャドウイング 日本語を話そう中_上級.pdf
     Worker: production_book_19; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 168}; issue: 0; build_current: False
     Chưa verified: 1-168; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 20. 30-f497459c2a83 | 181 trang | queued
     Nguồn: book/BJT/にほんごで働く!ビジネス日本語30時間.pdf
     Worker: production_book_20; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 181}; issue: 0; build_current: False
     Chưa verified: 1-181; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 21. remake-ad312498c548 | 198 trang | queued
     Nguồn: book/BJT/上級レベル グローバル企業でのキャリア構築をめざして [Remake].pdf
     Worker: production_book_21; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 198}; issue: 0; build_current: False
     Chưa verified: 1-198; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 22. 700-essential-phrases-for-japanese-conversation-4863922-16d0299e765d | 208 trang | queued
     Nguồn: book/Kaiwa/700-essential-phrases-for-japanese-conversation-4863922159-9784863922150_compress del intro.pdf
     Worker: production_book_22; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 208}; issue: 0; build_current: False
     Chưa verified: 1-208; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 23. 180-common-native-japanese-figures-of-speech-in-regular-8eeff5021caa | 209 trang | queued
     Nguồn: book/Kaiwa/180-common-native-japanese-figures-of-speech-in-regular-conversation-9784863923256-4863923256_compress.pdf
     Worker: production_book_23; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 209}; issue: 0; build_current: False
     Chưa verified: 1-209; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 24. japanese-conversation-conveying-feelings-180-basic-expr-06bbcf5b4324 | 209 trang | queued
     Nguồn: book/Kaiwa/japanese-conversation-conveying-feelings-180-basic-expressions-9784863922600_compress.pdf
     Worker: production_book_24; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 209}; issue: 0; build_current: False
     Chưa verified: 1-209; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 25. 180-458b548674d1 | 220 trang | queued
     Nguồn: book/Kaiwa/日本人がよく使う日本語会話オノマトペ基本表現180.pdf
     Worker: production_book_25; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 220}; issue: 0; build_current: False
     Chưa verified: 1-220; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 26. 125-extended-patterns-for-japanese-conversation-4863922-95f1ac587f24 | 225 trang | queued
     Nguồn: book/Kaiwa/125-extended-patterns-for-japanese-conversation-4863922442-9784863922440_compress.pdf
     Worker: production_book_26; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 225}; issue: 0; build_current: False
     Chưa verified: 1-225; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 27. 200-quick-and-easy-phrases-for-japanese-conversation-97-09f743ddc922 | 225 trang | queued
     Nguồn: book/Kaiwa/200-quick-and-easy-phrases-for-japanese-conversation-9784863922068_compress.pdf
     Worker: production_book_27; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 225}; issue: 0; build_current: False
     Chưa verified: 1-225; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 28. conversational-customer-service-japanese-intensive-trai-2ec8b7129cb8 | 225 trang | queued
     Nguồn: book/Kaiwa/conversational-customer-service-japanese-intensive-training-for-immediate-use-700-set-phrases-9784863923126_compress.pdf
     Worker: production_book_28; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 225}; issue: 0; build_current: False
     Chưa verified: 1-225; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 29. remake-5779739d0a4b | 227 trang | queued
     Nguồn: book/BJT/ロールプレイで学ぶビジネス日本語 - 初中級レベル－場面に合わせて適切に話そう－ [Remake].pdf
     Worker: production_book_29; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 227}; issue: 0; build_current: False
     Chưa verified: 1-227; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit
 30. 210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2 | 233 trang | queued
     Nguồn: book/Kaiwa/210-additional-super-miniature-phrases-for-immediate-use-in-japanese-conversation-4863922639-9784863922631_compress.pdf
     Worker: production_book_30; gpt-6-sol/high; agent_id: chưa cấp
     Status thực: {"pending": 233}; issue: 0; build_current: False
     Chưa verified: 1-233; nghiệm thu coordinator: pending
+    Việc còn lại: Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit

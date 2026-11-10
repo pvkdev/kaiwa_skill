@@ -19,3 +19,17 @@ Coordinator đã mở và đọc toàn bảng p13/p14, chưa thấy sai khác. p
 ## Đóng QA N3
 
 Các ghi chú N3 phía trên là lịch sử giữa đợt. Kết quả cuối: ACCEPTED, commit `ea221b1`. Coordinator mở rộng đọc cả hai cột Việt trên 47/47 trang, kiểm lại mọi sửa; tiếng Nhật/bố cục mẫu 1,4,9,19,24,29,34,40,42,47. Sổ `corpus/880-t-v-ng-mimikara-n3-minato-b3140fae78af/COORDINATOR_VIET_AUDIT.json` và REVIEW.md ghi đầy đủ các lỗi dấu, cụm nghĩa thiếu đã phục hồi, p47 `まだ`→`また`, cùng nhận định DOORIMU sai do đường nối crop ghép. Full source band giữ DORIMU. Hash-bound acceptance và build cuối hợp lệ, claim đã release. N1 vẫn cần QA cuối.
+
+## N1 — QA cuối đang xử lý
+
+Worker đủ 70 trang. Coordinator đã mở rộng mẫu toàn bảng đến p20,22,29,40,64,67,69,70; đồng thời mở crop từng hàng được worker gắn cờ. Sổ `corpus/1170-t-v-ng-mimikara-n1-e1d2f2dffd69/COORDINATOR_AUDIT.json` ghi phạm vi/hash và lỗi. Phát hiện thật: p16:261 Đanh đá (không phải Danh); p40:674 はあく (từng thiếu は); p55:923 致命的な (từng thiếu な, nhận định lỗi in của worker sai); p67:1120 quýnh lên (không phải quỳnh). Đã giao sửa, reverify và rà rộng hai cột Nhật p39–41/p54–56, hai cột Việt p15–17/p66–70. Chưa nghiệm thu, cần đọc bản cuối và kết quả rà rộng.
+
+## namachuukei-chuujoukyuu-f08dd9302ee6
+
+Đã giao worker04 toàn89 trang. Coordinator đã mở nguồn p1,4,5 và đọc toàn Markdown: bìa, hướng dẫn giáo viên nhiều đoạn, danh sách chức năng hai cột. Chưa thấy sai nội dung chính trong ba mẫu; p5 metadata đường dẫn đang dùng 教師のみなさんへ trong khi header riêng trang in 教師の方々へ, đã yêu cầu khớp lại. P4 thật sự có 教師のみなさんへ; không sửa template toàn nhóm. Cần kiểm các lesson có hình/bảng/furigana và phần cuối khi sách tiến triển.
+
+## Đóng QA N1
+
+Các ghi chú N1 phía trên là lịch sử. Kết quả cuối ACCEPTED, commit `992a210`, đủ70tr/1170mục, build hiện tại, không issue, claim release. Bốn lỗi đã sửa và đọc lại; worker hoàn tất rà rộng102hàng Nhật/120hàng Việt. Evidence p16 được sửa mô tả đúng crop coordinator150DPI phóng1,5 lần và crop worker300DPI riêng. Báo cáo không quy kết nguyên nhân quan sát full-image/crop khác nhau. Phạm vi chính xác và giới hạn nằm trong corpus REVIEW/COORDINATOR_AUDIT/acceptance.
+
+P5 sách Namachuukei89 đã sửa metadata theo header riêng và reverify; coordinator đã đọc lại. Slot N1 chuyển sang Namachuukei Shochuukyuu1 (91 trang), worker05.
