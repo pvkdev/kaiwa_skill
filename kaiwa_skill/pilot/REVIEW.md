@@ -1,5 +1,11 @@
 # Nghiệm thu pilot — PASS
 
+## Cập nhật text-only — skill 0.2.0
+
+Theo yêu cầu người dùng, ảnh đối chiếu được chuyển sang cache tạm ngoài corpus; output chỉ gồm Markdown/JSON/JSONL. Nội dung bốn trang và hash Markdown được nghiệm thu bên dưới giữ nguyên. Hash ảnh trong hồ sơ là bằng chứng lịch sử về ảnh đã được dùng khi đối chiếu, không yêu cầu phân phối ảnh. Có thể render lại từ PDF gốc để kiểm tra. Báo cáo dưới đây ghi lại lần nghiệm thu nội dung ở skill 0.1.2; việc chuyển vị trí ảnh không phải một lần chép/đánh giá lại nội dung.
+
+Kiểm tra migration ở skill commit `32c52d3`: cả bốn hash Markdown và toàn bộ evidence cũ giữ nguyên; sau khi gỡ PNG khỏi corpus và xóa bốn ảnh cache, status vẫn 4 verified / 158 pending, không claim, `build_current: true`. Bộ công cụ phiên bản này có 27 unittest đạt, bao gồm cache bị xóa, render lại và từ chối ảnh nhúng. Các số 21 test bên dưới là kết quả lịch sử của lần pilot ban đầu.
+
 - Ngày: 2026-11-10 (Asia/Tokyo).
 - Skill: 0.1.2, commit `037615b` (gồm công cụ từ `4668d40`).
 - Xây dựng và rà soát: Astra/high. Chuyển đổi: hai worker Sol/high tuần tự, `pilot_sol_a` và `pilot_sol_b`.
@@ -37,7 +43,7 @@ Worker A hoàn thành p20–p21, lưu checkpoint và release claim. Worker B có
 - p0022: `6f5fb4bbe051a3b1dd028baca742bc7be2e4c00b5615da034a3ac46b46bee486`
 - p0023: `95bd3f6b27ee710ab3bda92b3e24336548f29a5e7fe8a397dfe8cd158a7c7924`
 
-Ảnh và bằng chứng theo trang nằm trong thư mục corpus của sách. Thay đổi các nội dung này phải kiểm tra lại; báo cáo PASS này không tự mở rộng cho phiên bản khác.
+Bằng chứng text theo trang nằm trong thư mục corpus của sách. Ảnh từng được lưu trong corpus khi nghiệm thu 0.1.2; từ 0.2.0 chỉ lưu tạm trong cache. Thay đổi nội dung nguồn hoặc Markdown phải kiểm tra lại; báo cáo PASS này không tự mở rộng cho nội dung khác.
 
 ## Điều phối sản xuất
 

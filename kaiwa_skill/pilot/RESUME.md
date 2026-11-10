@@ -1,5 +1,7 @@
 # Pilot resume test — Shigoto no Nihongo: Denwa Outai Kisohen
 
+Ghi chú phiên bản 0.2.0: bảng hash bên dưới là hồ sơ tại thời điểm thử bàn giao. Các ảnh `renders/` nay chỉ là cache tạm `.cache/renders/<book_id>/`, không thuộc output text hoặc cây Git hiện tại.
+
 - Book ID: `shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0`
 - Source SHA-256: `dfdb0e2b61e0322252532c2a83a7c4c5d62269b45edb40ae61eb5e3c32b74711`
 - Sequence: `pilot-sol-a` verified physical PDF pages 20–21 and released its claim; fresh worker `pilot-sol-b` read the handoff, checked read-only status, claimed the same book, reconciled it, then rendered, transcribed, visually reviewed, and verified **only pages 22–23**. It built a partial book from all four verified pages and released its claim.

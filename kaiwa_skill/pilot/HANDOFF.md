@@ -1,5 +1,7 @@
 # Pilot handoff — Shigoto no Nihongo: Denwa Outai Kisohen
 
+Ghi chú phiên bản 0.2.0: đây là hồ sơ bàn giao lịch sử. Ảnh `renders/` từng thuộc corpus nay chuyển sang cache tạm `.cache/renders/<book_id>/`; các hash dưới đây vẫn ghi nhận phép thử đã thực hiện. Output hiện tại chỉ có text.
+
 - Book ID: `shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0`
 - Source (relative to `kaiwa_skill/`): `book/BJT/Shigoto_no_nihongo_Denwa_Outai_Kisohen.pdf`
 - Source SHA-256: `dfdb0e2b61e0322252532c2a83a7c4c5d62269b45edb40ae61eb5e3c32b74711`
