@@ -1,6 +1,6 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
-Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill 0.2.0, output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
+Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill hiện tại 0.2.1 (làm rõ đối chiếu header/footer và dải chia bảng, không đổi nội dung pilot), output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
 
 Điều phối `gpt-6-astra/high`; chỉ hai worker `gpt-6-sol/high` cùng lúc, mỗi worker đúng một PDF. Chạy các lệnh từ gốc repo hiện tại. Root chat không dùng Git; coordinator chịu trách nhiệm commit tuần tự theo sách. Không sửa `bunpou_skill/` hoặc PDF nguồn.
 
@@ -27,3 +27,8 @@ Inventory/status đọc lại ngày 2026-11-10: 30 PDF, 4597 trang vật lý; 4 
 - Slot 2 bắt đầu `880-t-v-ng-mimikara-n3-minato-b3140fae78af` (47 trang).
 
 Không có daemon hoặc tiến trình nền được bảo đảm tiếp tục sau khi toàn bộ tác nhân dừng. Tệp này bảo toàn quyền tiếp tục và hàng đợi, không chứng minh công việc đang chạy.
+
+## Sách đã nghiệm thu
+
+- `1160-t-v-ng-mimikara-n2-6d226fd8769f`: 8/8 trang, coordinator kiểm cả tám, ACCEPTED; commit output `5379b10`. Báo cáo riêng và hash-bound acceptance nằm trong corpus sách. Audit phân biệt lỗi ranh giới bảng đã sửa với nhận định thiếu header đã rút sau crop đối chứng.
+- Slot được cấp tiếp cho `1170-t-v-ng-mimikara-n1-e1d2f2dffd69` (70 trang), agent `production_book_03`. Sách N3 tiếp tục ở `production_book_02`. Trạng thái số trang mới nhất lấy từ roster/CLI.

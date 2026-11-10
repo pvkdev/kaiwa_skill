@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T02:35:56.750018+00:00",
+  "updated_at": "2026-11-10T02:38:59.544953+00:00",
   "run_status": "active",
   "source_path_base": "kaiwa_skill/",
   "coordinator": {
@@ -14,10 +14,9 @@
   "total_books": 30,
   "total_pages": 4597,
   "counts": {
-    "pending": 4538,
-    "verified": 10,
-    "draft": 6,
-    "rendered": 43
+    "pending": 4533,
+    "verified": 16,
+    "rendered": 48
   },
   "books": [
     {
@@ -30,21 +29,22 @@
       "reasoning_effort": "high",
       "worker_id": "production_book_01",
       "agent_id": "/root/production_coordinator/production_book_01",
-      "status": "in_progress",
+      "status": "accepted",
       "counts": {
-        "verified": 2,
-        "draft": 6
+        "verified": 8
       },
       "issue_count": 0,
-      "coordinator_acceptance": "pending",
-      "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
+      "coordinator_acceptance": "accepted",
+      "pending_work": "Accepted; no remaining conversion work for this source/build",
       "corpus_path": "kaiwa_skill/corpus/1160-t-v-ng-mimikara-n2-6d226fd8769f",
-      "worker_state": "running",
-      "build_current": false,
-      "claim_owner": "production_book_01",
+      "worker_state": "finished",
+      "build_current": true,
+      "claim_owner": null,
       "status_error": null,
-      "pending_pages": "3-8",
-      "current_build_sha256": null
+      "pending_pages": "",
+      "current_build_sha256": "f4f494accb8e9d8221e37a5a54285aa384eb234a5005f507f4b6d81b61d5f366",
+      "accepted_build_sha256": "f4f494accb8e9d8221e37a5a54285aa384eb234a5005f507f4b6d81b61d5f366",
+      "acceptance_path": "kaiwa_skill/corpus/1160-t-v-ng-mimikara-n2-6d226fd8769f/acceptance.json"
     },
     {
       "queue_order": 2,
@@ -81,20 +81,22 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_03",
-      "agent_id": null,
-      "status": "queued",
+      "agent_id": "/root/production_coordinator/production_book_03",
+      "status": "in_progress",
       "counts": {
-        "pending": 70
+        "rendered": 5,
+        "pending": 65
       },
       "issue_count": 0,
       "coordinator_acceptance": "pending",
       "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/1170-t-v-ng-mimikara-n1-e1d2f2dffd69",
       "build_current": false,
-      "claim_owner": null,
+      "claim_owner": "production_book_03",
       "status_error": null,
       "pending_pages": "1-70",
-      "current_build_sha256": null
+      "current_build_sha256": null,
+      "worker_state": "running"
     },
     {
       "queue_order": 4,
