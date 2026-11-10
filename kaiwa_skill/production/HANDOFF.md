@@ -1,6 +1,6 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
-Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill hiện tại 0.2.2 (làm rõ đối chiếu header/footer, furigana và dòng nối bảng, không đổi nội dung pilot), output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
+Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill hiện tại 0.2.3 (làm rõ đối chiếu header/footer, furigana và dòng nối bảng, không đổi nội dung pilot), output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
 
 Điều phối `gpt-6-astra/high`; chỉ hai worker `gpt-6-sol/high` cùng lúc, mỗi worker đúng một PDF. Chạy các lệnh từ gốc repo hiện tại. Root chat không dùng Git; coordinator chịu trách nhiệm commit tuần tự theo sách. Không sửa `bunpou_skill/` hoặc PDF nguồn.
 
@@ -53,3 +53,16 @@ Không có daemon hoặc tiến trình nền được bảo đảm tiếp tục 
 - `namachuukei-shochuukyuu-1-53b5b51998a3`: giữ p0001–p0040 verified; resume p0041–p0091. Worker mới `/root/production_resume/production_book_05_resume` (gpt-6-sol/high).
 - Scratch/bản nháp cũ giữ để phục hồi nhưng không được coi là verified. Hai worker đọc lại status, nhận claim mới, reconcile, mở ảnh từng trang và checkpoint từng trang. Chưa nghiệm thu hai sách này.
 - Tiếp tục toàn bộ hàng đợi sau hai sách đang dở; sách tiếp theo `85-21a2cb6f3fef`. Root không thao tác Git; coordinator commit tuần tự từng sách sau QA.
+
+## Bổ sung quy trình sau QA resume — skill 0.2.3
+
+- Commit skill `0b4b6ad`: cụ thể hóa hai lượt ảnh → Markdown và Markdown → ảnh trước verify, crop để kiểm từng kana nhỏ/cuối chuỗi và occurrence/span. Chỉ sửa hướng dẫn; không đổi CLI/schema hay quy tắc bảo toàn nguyên văn, không sửa nội dung pilot hoặc ba sách accepted. `git diff --check` đạt.
+- Đã gửi quy trình mới cho cả hai worker resume; tiếp tục toàn queue. Book05 đã rà mở rộng ruby p24–40 và41–55, sửa/reverify trang có sai khác; coordinator readback các sửa đổi và lưu hash trong COORDINATOR_AUDIT.json. Không suy diễn lượt rà của worker thành kiểm độc lập100% của coordinator.
+- Mốc worker gần nhất: book04 p65/89; book05 p56/91 và đang p57. Đây là snapshot, dùng CLI/status để lấy tiến độ hiện tại.
+
+## Nghiệm thu sách 04 và chuyển slot — 2026-11-10
+
+- `namachuukei-chuujoukyuu-f08dd9302ee6`: ACCEPTED 89/89, 0 issue, build hiện tại, claim đã release. Commit output `d8087de`. Coordinator kiểm nguồn/Markdown 58 trang, mọi đầu/cuối unit và các nhóm mở rộng; báo cáo, sổ QA và acceptance hash-bound trong corpus ghi rõ giới hạn. Không còn lỗi đã biết trong phạm vi kiểm.
+- Staged 187 file text đúng byte trên đĩa; không có image/cache/claim/lock/scratch/source. Kiểm whitespace với CR-at-EOL và bỏ cảnh báo blank-at-EOF của book.md sinh tự động; không normalize nội dung verified để tránh đổi hash. Validator/hash/build đều đạt.
+- Slot mới: `/root/production_resume/production_book_06`, gpt-6-sol/high, `85-21a2cb6f3fef`, nguồn `book/Kaiwa/外国人のための日本語敬語の使い方-基本表現85.pdf`, 93 trang. Worker đọc trạng thái thật rồi init/claim; coordinator tiếp tục QA và commit tuần tự.
+- Sách05 vẫn chạy ở `/root/production_resume/production_book_05_resume`, mốc80/91 verified; coordinator đã so nguồn toàn p1–77, tiếp tục mở rộng đến hết sách sau lỗi furigana occurrence lặp. Chưa nghiệm thu05. Dùng CLI/roster mới lấy số hiện tại.
