@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 — 2026-11-10
+
+- Làm rõ kiểm header/footer và ranh giới bảng theo từng trang, không dùng số hàng hoặc nội dung lặp mặc định.
+- Khi quan sát ảnh toàn trang và crop không khớp, đối chứng trước khi sửa; không suy nguyên nhân hiển thị khi chưa xác định. Không đổi CLI, schema hoặc quy tắc text-only.
+- Áp dụng sau audit production N2: sửa dải chia bảng; phản ánh riêng các nhận định thiếu header đã được rút sau khi crop xác nhận nguồn có chữ. Nội dung pilot giữ nguyên, không mở rộng nghiệm thu pilot sang sách khác.
+
 ## 0.2.0 — 2026-11-10
 
 - Theo yêu cầu người dùng, corpus và bài luyện kaiwa chỉ có text; hình mang nghĩa được diễn đạt bằng văn bản có nhãn biên tập.
