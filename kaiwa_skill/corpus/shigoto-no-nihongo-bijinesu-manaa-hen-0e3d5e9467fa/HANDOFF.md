@@ -4,12 +4,12 @@
 - Source: `book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf` (136 physical pages)
 - Source SHA-256: `0e3d5e9467fafaef97acda677080aa1bb6f9b849aa20e5993172ee6b0864d7a6`
 - Output mode: `text_only`; rendered images are review cache only.
-- Current checkpoint after reconcile/build: 50 verified, 5 needs_review, 81 pending, 0 draft/rendered/invalid. `build_current: true`; output is partial/INCOMPLETE.
-- **Next independent page: PDF p0056** (printed p54). Claim this book with a new unique owner/token before mutation. Do not reuse `production_book_10_sol_20261111_001` or `production_book_10_sol_cont_20261111_42f9a1`.
+- Current checkpoint after reconcile/build: 66 verified, 6 needs_review, 64 pending, 0 draft/rendered/invalid. `build_current: true`; output is partial/INCOMPLETE.
+- **Next independent page: PDF p0073** (not rendered/read by this worker). Claim this book with a new unique owner/token before mutation. Do not reuse `production_book_10_sol_20261111_001` or `production_book_10_sol_cont_20261111_42f9a1`, or `production_book_10_sol_cont2_20261111_c42b`.
 
 ## Completed coverage
 
-PDF p0002, p0004–p0019, p0021–p0022, p0024–p0026, p0028–p0055 are verified with page-specific render/Markdown hashes and evidence. PDF p0001, p0003, p0020, p0023, p0027 are locally `needs_review` as below. No pages after PDF p0055 have been transcribed. The p0006 miniature matches full-size PDF pp0030–0031; p0007 miniature matches pp0034–0035. Their guide pages contain explicit source crossrefs and were verified after comparison. PDF p0040 is the six-panel ③ 返事の仕方 comic; p0041 contains its points c–e and 語尾の大切さ. All p0036–p0055 are verified. The continuation worker added PDF p0042–p0055 (14 pages), opening each full source page and direct 6x crops; PDF p0055 also used direct 8x heading/comic and tight panel6 crops. No new source issue arose in this batch.
+PDF p0002, p0004–p0019, p0021–p0022, p0024–p0026, p0028–p0068, p0070–p0072 are verified with page-specific render/Markdown hashes and evidence. PDF p0001, p0003, p0020, p0023, p0027, p0069 are locally `needs_review` as below. No pages after PDF p0072 have been transcribed. The p0006 miniature matches full-size PDF pp0030–0031; p0007 miniature matches pp0034–0035. Their guide pages contain explicit source crossrefs and were verified after comparison. PDF p0040 is the six-panel ③ 返事の仕方 comic; p0041 contains its points c–e and 語尾の大切さ. All p0036–p0055 are verified. The continuation worker added PDF p0042–p0055 (14 pages), opening each full source page and direct 6x crops; PDF p0055 also used direct 8x heading/comic and tight panel6 crops. No new source issue arose in this batch.
 
 ## Source review items
 
@@ -19,13 +19,15 @@ PDF p0002, p0004–p0019, p0021–p0022, p0024–p0026, p0028–p0055 are verifi
 - p0023: faint handwritten Japanese line above six-panel comic remains unreadable after high-resolution/contrast inspection. Rest of page recorded.
 - p0027: Chinese female answer ② has unreadable glyph before `鸡窝` in heading and prose after direct 8x and threshold crops. Placeholder remains in draft Markdown.
 
-These five issues are source-local and do not block p0042 onward. If genuinely resolved from source, record corrected Markdown, obtain fresh hash-bound evidence, and verify; otherwise preserve `needs_review`. Do not infer text from context.
+- p0069: handwritten subtitle above character labels has missing strokes in the middle. Inspected full2x, direct6x, direct8x original and 4x-contrast tight crops; kept readable prefix/suffix with local marker. Six comic panels, signature `Nguyễn Sĩ Tú`, Chinese g and English continuation/g are transcribed. No inferred repair.
+
+These six issues are source-local and do not block p0073 onward. If genuinely resolved from source, record corrected Markdown, obtain fresh hash-bound evidence, and verify; otherwise preserve `needs_review`. Do not infer text from context.
 
 ## Runtime and continuation
 
 Python: `C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1104-2876-0_26.1104.2876.0_x64__3k8sg7r9htsxt/dependencies/python/python.exe`
 
-Run from repo root `D:/CODE/git/kaiwa_skill` with `kaiwa_skill/tools/ingest.py`. Review source render and tight crops for each page, then record/verify with actual comparison. Scratch crops/evidence for the first worker remain under `.cache/renders/<book_id>/scratch-production_book_10_sol-*`; continuation scratch uses `scratch-cont-*` in the same temporary cache. Use your own scratch prefix. Continue `p0056` through `p0136`, then reconcile/build and release your new claim. The continuation worker owner `production_book_10_sol_cont` releases its claim after this handoff.
+Run from repo root `D:/CODE/git/kaiwa_skill` with `kaiwa_skill/tools/ingest.py`. Review source render and tight crops for each page, then record/verify with actual comparison. Scratch crops/evidence for the first worker remain under `.cache/renders/<book_id>/scratch-production_book_10_sol-*`; continuation scratch uses `scratch-cont-*` in the same temporary cache. Use your own scratch prefix. Continue `p0073` through `p0136`, then reconcile/build and release your new claim. The latest continuation worker owner `production_book_10_sol_cont2` releases its claim after this handoff.
 
 
 ## Continuation checkpoint — PDF p0042–p0055
@@ -36,3 +38,15 @@ Run from repo root `D:/CODE/git/kaiwa_skill` with `kaiwa_skill/tools/ingest.py`.
 - Continuations checked: English③ p0046 ends `It's a`, continues `trendy word...` on p0047; Chinese/English① at the bottom of p0052 continue at the top of the translations on p0053. Text remains within each physical page, with editorial cross-page notes.
 - P0055 faint subtitle `〜びっくりする着信音！？〜` read using direct 8x original and contrast crops. All sound-effect syllables, dialogue/thought bubbles and meaning-bearing illustration relations are recorded. No placeholder/issue remains there.
 - Next page p0056 has not been rendered or read by this worker. Seven accepted books, other active books and source PDFs were untouched. No Git stage/commit performed.
+
+
+## Continuation checkpoint — PDF p0056–p0072 (production_book_10_sol_cont2)
+
+- Batch coverage: 17 physical pages; 16 verified (p0056–p0068 and p0070–p0072), p0069 needs_review for the faded subtitle only. Current total: 66 verified, 6 needs_review, 64 pending p0073–p0136; 0 draft/rendered/invalid. Reconcile and partial build passed, `build_current: true`. This is WIP/INCOMPLETE, not acceptance.
+- Current `book.md` SHA-256: `0a6d1525f0927ea588e06754631f86b4b8329a7378dec2f35124e6d7001279e2`; `search.jsonl`: `976dffe212ff3662f36464d3cb2706cb32142b16444f975a223c56c5805e2864`.
+- Every new page was opened as full2x source image and direct6x upper/lower crops, then read back against Markdown. Extra tight crops: p56 Chinese (`切掉电源`, corrected from draft misread); p58 Chinese; p64 Chinese (`签、证护照`, source oddity retained); p67 direct8x original/contrast subtitle `〜もしも遅刻したら〜`; p69 direct8x subtitle/contrast and watermark. Cache/scratch only under `.cache/renders/<book_id>/scratch-cont2*`; no image output in corpus.
+- Other source oddities retained: p57 English labels the second paragraph `e.` rather than Japanese/Chinese `d.`; p58 Chinese② prints `注意不要不影响他人`; p65 Chinese `发表看法` corrected during reverse review. English line-end hyphens retained, including con-veyance/per-sonal/man-ner/of-ficial/cas-es/permis-sion/impres-sion/fa-vor/de-pending. P70 has one actual ruby occurrence `尋＝たず` in m, no inferred ruby added elsewhere.
+- Cross-page joins verified: p64 English h ends `hurry back`, continues p65 `to the office as soon as possible.`; p68 English f ends `docu-`, continues p69 `ments, or taking memos.`. Translations b for p63 are printed on p62; g for p68 is printed on p69; p/q for p70 are printed on p71. Content kept on its physical source page.
+- P72 is truly blank with no printed number/title/text/meaning-bearing image; full image and direct6x crops inspected twice. Described as editorial blank-page note.
+- Next pending independent page is p0073. Earlier source issues p1/p3/p20/p23/p27 unchanged. Seven accepted books, other active books, tools/skills and source PDFs untouched; no Git stage/commit. Claim owner `production_book_10_sol_cont2` releases token `production_book_10_sol_cont2_20261111_c42b` after this handoff.
+

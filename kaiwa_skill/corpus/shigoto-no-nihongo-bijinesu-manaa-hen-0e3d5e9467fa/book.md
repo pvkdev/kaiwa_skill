@@ -2347,3 +2347,798 @@ Mô tả hình (biên tập): Hai người bên cạnh cau mày; bóng suy nghĩ
 こんなこと、時々ありませんか？ これでは携帯電話は騒音そのものですね。
 では、携帯電話のマナーってどんなものでしょう？
 
+## PDF page 56
+
+<a id="p0056"></a>
+
+<a id="p0056-b001"></a>
+
+- Trang in: 54
+- Đường dẫn nội dung: 第1章 / Unit 8 / 携帯電話のマナー
+
+## ② 携帯電話のマナーとは
+
+世界の人々が使っている携帯電話。国によって携帯電話のマナーは違う場合も多いですね。
+法律で決まっているものから、そうでないものまで、いろいろありますので、注意してください。
+
+### 車の中での通話・メール
+
+Mô tả hình (biên tập): Hai hình người lái ô tô; bên trái cầm điện thoại sát tai để nói, bên phải nhìn điện thoại cầm trước người. Cả hai hình đều có dấu ×.
+
+a. これはマナー違反というよりも、大変危険なため、法律で禁止されています。見つかった場合、罰金などの処罰を受けますので、絶対にやめてください。
+
+### 電車の中での通話・メール
+
+Mô tả hình (biên tập): Hai người ngồi ghế tàu dưới tay nắm; hình nói điện thoại có dấu ×, hình nhìn điện thoại cầm trước người có dấu △.
+
+b. 電車の中での通話は、法律で禁止されているわけではありませんが、公共機関を使うときのマナーとして、大声や長時間の通話は控えましょう。携帯メールは電車で使っても構いませんが、携帯電話電源オフ車両などに乗った場合は、通話とともに禁止です。
+
+## 中文 (biên tập)
+
+a. 做这种事情的危险性已不仅仅是违反社会公德，而是已经开始触犯法律。一旦被发现轻则也要被罚款，请切记。
+
+b. 在电车里使用电话虽说不属于违法行为，但对于在公共交通工具上使用手提电话的社会规范你不应该一无所知。通话中应最大限度地压低声音。电车上虽然可以使用手机，但在要求切掉电源的车厢里手机通话是被禁止的。
+
+## English (biên tập)
+
+a. This is not a matter of lack of politeness; it is forbidden by law because of its being extremely dangerous. If discovered, you will be punished with a fine, etc. so never do it.
+
+b. Talking on a cell phone on the train is not illegal, but as a rule, refrain from speaking loudly or for a long time in a public con-veyance. You can use cell phone text messaging, but not if you ride in a train car that requires you to turn off your phone.
+
+## PDF page 57
+
+<a id="p0057"></a>
+
+<a id="p0057-b001"></a>
+
+- Trang in: 55
+- Đường dẫn nội dung: 第1章 / Unit 8 / 携帯電話のマナー
+- Tiêu đề lề: 第1章 日本の一般マナー
+
+## 私用電話
+
+Mô tả hình (biên tập): Hình trái dấu ×, người ngồi tại bàn có máy tính nói điện thoại. Hình phải dấu △, người đứng cạnh cửa nói điện thoại.
+
+c. 緊急でどうしても今話さなければならないこと以外、基本的に、社内での私用携帯電話はやめておきましょう。仕方のない場合も、自分の席で堂々と話すのではなく、廊下など仕事をしている周りの人の迷惑にならない場所で話しましょう。
+
+## 携帯電話を使ったサービスの利用
+
+Mô tả hình (biên tập): Hình trái dấu ×, người phụ nữ nhìn điện thoại, các bóng suy nghĩ có giày cao gót, váy và túi xách. Hình phải dấu △, người đàn ông nhìn điện thoại, các bóng suy nghĩ có tàu điện, ô tô và dấu chân.
+
+d. 今は、携帯でなんでもできる時代です。携帯を使って飛行機の予約をしたり、地図を調べたり、ネット検索をしたり、ブログを更新したりできます。しかし、仕事中は、業務にあまりかかわりのないことでの携帯サービスを使うのは、控えましょう。
+
+## 中文 (biên tập)
+
+c. 在公司里工作，除有特殊情况不得不使用手机通话外，原则上是禁止使用私人手机的。遇到特殊情况，不要在自己的办公桌前满不在乎地通话，应该到走廊等不影响他人工作的地方去通话。
+
+d. 在这个手机功能愈来愈发达的时代，人们可以轻松利用手机预定机票、检索地图、浏览网络、更新博客。但是，工作毕竟是工作，和业务无关的事情还是不要使用手机。
+
+## English (biên tập)
+
+c. Unless there is an emergency that demands you use your per-sonal cell phone, don't use it at work. If you have to use it, don't sit there at your desk but go out into the hall, etc. so as not to bother others who are working.
+
+e. You can do anything with a cell phone today: make plane reser-vations, check maps, use the Internet, update blogs, etc. Re-frain from using cell phone services at work when they are unre-lated to your job.
+
+## PDF page 58
+
+<a id="p0058"></a>
+
+<a id="p0058-b001"></a>
+
+- Trang in: 56
+- Đường dẫn nội dung: 第1章 / Unit 8 / 携帯電話のマナー
+
+## 社内での私用携帯電話について
+
+① 個人の携帯電話は、仕事中は電源を切っておくのがいちばんいいですが、今の日本ではできない場合も多いでしょう。それでも机の上に出しっぱなしにせずに、机の引き出しなどに入れておきましょう。その場合、着信はバイブレーションにしておき、音を出さないように。
+
+Mô tả hình① (biên tập): Dấu × cạnh điện thoại mở đặt trên mặt bàn, cạnh ống bút và sổ.
+
+② 着信のメロディはあまりうるさいものでなく、突然聞こえても周りがびっくりしないくらいの、音や曲にしましょう。
+
+Mô tả hình② (biên tập): Dấu ×; điện thoại trên bàn phát các nốt nhạc trong một bóng lớn, người ở phía sau giật mình làm giấy bay lên.
+
+③ 携帯電話を気にせず、仕事に集中する
+
+時折、携帯電話を手にずっと持っていたり、数分に１度、メールをチェックしたりする人がいますが、これはよくありません。携帯をチェックするのは、せめて、昼休みやお手洗いに行くときなどだけにしておきましょう。
+
+Mô tả hình③ (biên tập): Dấu ×; người ngồi trước giấy tờ, một tay cầm bút và tay còn lại cầm điện thoại rung.
+
+## 中文 (biên tập)
+
+① 工作中个人的手机最好切断电源。在日本能够使用手机的公共场所越来越少。你不能以此为由把手机摆在桌上不管，你应该把它收进办公桌抽屉。
+
+② 利用彩铃乐曲功能时注意不要不影响他人。尤其不能让突然响起的乐曲惊动他人。
+
+③ 心里不要总惦记着手机，应该集中精力投入工作。
+
+有些人手里始终攥着手机，因为惦记邮件几分钟就要看一看手机画面。哪怕只是想看一眼是不是有邮件进来，也应该耐心等到午休或是上厕所的时候。
+
+## English (biên tập)
+
+① It's best to turn off your personal cell phone at work, but this is probably difficult in Japan today. Don't leave it on your desk; put it in a drawer, etc. In that case, put your cell phone on man-ner mode so it won't make any noise.
+
+② Make sure to choose a ring tone that isn't jarring to those around you in case it goes off suddenly.
+
+③ Focus on work and not your cell phone.
+
+Some people hold their cell phones all the time or check their messages every few minutes. Don't do this. Check your cell phone only at lunch time or when you use the restroom.
+
+## PDF page 59
+
+<a id="p0059"></a>
+
+<a id="p0059-b001"></a>
+
+- Trang in: 57
+- Đường dẫn nội dung: 第1章 / Unit 8 / 携帯電話のマナー
+- Tiêu đề lề: 第1章 日本の一般マナー
+
+## 「日本人は携帯メールが大好き」
+
+世界中で携帯電話は進化していますが、日本ほど携帯メールが進化している国も珍しいでしょう。街中で周りを見渡せば、携帯で話すより携帯メールを打っている人のほうが多く見られるくらいです。日本人は元々、人に面と向かって何かを言うのが苦手なタイプの人も多いので、手軽にタイムリーに文字で会話ができる携帯メールが、こんなに普及したのかもしれません。ただ、文字を打つだけでは雰囲気が伝わらないということで、メールをいろいろとデコレーションしてかわいくしたり、メールの背景をいろいろ選べたりと、どんどん、日本ならではの携帯技術が進んでいます。携帯メールは今や、立派な会話の一種といえるでしょう。
+
+皆さんも、日本語を勉強したり、日本語で仕事をしたりする上で、携帯メールを使うことも多いと思います。携帯メールを使いこなせば、日本人の友人などとの付き合いももっと深くなり、日本での生活がさらに楽しくなるはずです。文法などの失敗を恐れず、どんどん携帯メールにチャレンジしてみてください。
+
+Mô tả hình (biên tập): Hai điện thoại mở ở hai đầu đường mũi tên đứt đoạn; giữa đường có người đang bước qua. Điện thoại phía trước có biểu tượng phong bì trên màn hình.
+
+## PDF page 60
+
+<a id="p0060"></a>
+
+<a id="p0060-b001"></a>
+
+- Trang in: 58
+- Đường dẫn nội dung: 第1章 / Unit 9 / 社会人として、してはいけないこと
+
+## Unit 9 社会人として、してはいけないこと
+
+仕事をする時に、してはいけないこと、
+しないほうがいいことを、考えてみましょう！
+
+## 確認クイズ
+
+### 第1問
+
+朝起きたら９時を過ぎていました。どうしますか？
+
+1…すぐに上司に電話をする
+2…どうせ間に合わないから、お昼から出社する
+3…急いで用意して会社に向かう
+
+### 第2問
+
+仕事上でミスしてしまいました。どうしますか？
+
+1…そのまま、なかったことにする
+2…急いで、ミスを回復する作業をする
+3…とりあえず、上司に報告する
+
+### 解答
+
+第1問　1 → ① 遅刻・欠勤・外出などの連絡　参照
+第2問　3 → ② ミスは必ず報告しよう　参照
+
+## PDF page 61
+
+<a id="p0061"></a>
+
+<a id="p0061-b001"></a>
+
+- Trang in: 59
+- Đường dẫn nội dung: 第1章 / Unit 9 / 社会人として、してはいけないこと
+- Tiêu đề lề: 第1章 日本の一般マナー
+
+## ① 遅刻・欠勤・外出などの連絡
+
+上司に連絡が必要なのは、どんなときでしょうか？
+
+### （1）遅刻
+
+Nhãn vai và trình tự hình (biên tập): Bên trái cấp trên hỏi 山田, rồi mũi tên sang cảnh 張 đến muộn, hai người khác nhìn 張; cấp trên có bóng suy nghĩ.
+
+**Cấp trên (biên tập):** 山田くん、張さんは？
+
+**山田 (biên tập):** さあ、何も聞いてませんけど・・・・
+
+**張 (biên tập):** おはようございます〜
+
+**Suy nghĩ của cấp trên (biên tập):** おはようじゃなくて遅刻だろっ！！
+
+### （2）欠勤
+
+Mô tả hình (biên tập): Cấp trên đứng cạnh bàn với bóng người vẽ nét đứt; mũi tên sang cảnh đồng hồ đã tiến thêm, bàn vẫn vắng và cấp trên tức giận.
+
+**Cấp trên (biên tập):** 張さん、今日も遅刻みたいだなぁ・・・
+
+**Cấp trên (biên tập):** 遅刻じゃなくて欠勤だったのか！！
+
+### （3）外出
+
+Nhãn vai và trình tự hình (biên tập): Cấp trên hỏi 木下; mũi tên sang cảnh cấp trên phản ứng tức giận, hình nhỏ 張 có dấu hỏi.
+
+**Cấp trên (biên tập):** 木下君。張さんは今どこにいるかな？
+
+**木下 (biên tập):** ああ、さっき仕事がないからちょっと出てくるって外出したみたいですけど
+
+**Cấp trên (biên tập):** なに〜〜？仕事がないからって勝手に外出するな！！
+
+どこがよくなかったか、わかりましたか？
+
+## ポイント
+
+a. どんな小さなことでも、普段と違う行動をとるときは、前もって上司に伝えること。
+伝え方はなるべく、携帯メールなどではなく、電話などで直接、言いましょう。
+
+## 中文 (biên tập)
+
+a. 工作中再小的事情，即便有必要采用一些特殊手段来处理，也应该事先征得上司同意。和上司联络不要用手机，应该用办公电话。
+
+## English (biên tập)
+
+a. No matter how trivial, if you are going to do something outside of the ordinary, tell your boss first. Contact him directly by phone if possible and not via cell phone text messaging.
+
+## PDF page 62
+
+<a id="p0062"></a>
+
+<a id="p0062-b001"></a>
+
+- Trang in: 60
+- Đường dẫn nội dung: 第1章 / Unit 9 / 社会人として、してはいけないこと
+
+## ② ミスは必ず報告しよう
+
+〜このミス、誰のミス？〜
+
+新入社員　ゴードンさん
+先輩社員　遠藤さん
+
+Mô tả hình (biên tập): Truyện sáu ô đánh số 1–6, đọc từ trái sang phải, hàng trên rồi hàng dưới. 遠藤 cầm giấy hỏi ゴードン; ゴードン trở nên lo lắng và đổ mồ hôi trong ô5–6.
+
+### Ô1 (biên tập)
+
+**遠藤:** ゴードンさん、この間の出張、何か問題あった？
+
+**ゴードン:** え？どうしてですか？
+
+### Ô2 (biên tập)
+
+**遠藤:** いつまで経っても報告書くれないから、何かトラブルかなと思って
+
+**ゴードン:** いやぁ、特に何もないんですけど・・・
+
+### Ô3 (biên tập)
+
+**遠藤:** そう？じゃあ早く報告書を書いてよね
+
+**ゴードン:** あの・・・報告書は昨日メールで送ったと思うんですけど、届いてませんか？
+
+### Ô4 (biên tập)
+
+**遠藤:** 届いてないよ？本当に送ってくれたの？
+
+### Ô5 (biên tập)
+
+**ゴードン:** えー、実は僕のコンピュータ昨日から調子がおかしいから届いてないのかも・・・
+
+### Ô6 (biên tập)
+
+Bóng thoại chung hai người (biên tập): ・・・・・
+
+## 中文 (biên tập)
+
+b. 当上司问你有什么问题时，再不好张口的事情也不要隐瞒事实，应该如实汇报。有时隐瞒一个枝节问题，也会给工作带来无法挽回的损失。
+
+## English (biên tập)
+
+b. If asked if you have any problems, don't be afraid to discuss them no matter how embarrassing. Often, hiding a mistake can cause the problem to snowball.
+
+## PDF page 63
+
+<a id="p0063"></a>
+
+<a id="p0063-b001"></a>
+
+- Trang in: 61
+- Đường dẫn nội dung: 第1章 / Unit 9 / 社会人として、してはいけないこと / ② ミスは必ず報告しよう
+- Tiêu đề lề: 第1章 日本の一般マナー
+
+## ポイント
+
+### b. 隠さない
+
+何か問題がある？　などと聞かれた場合、それがもし言いにくいことでも、まずは隠さずに問題があったことを認めて、報告しましょう。一つのミスを隠すことで、問題がドンドン大きくなることも多いのです。
+
+Mô tả hình (biên tập): ゴードン cầm xẻng xúc đống đất, có các giọt mồ hôi bên đầu.
+
+### c. うそをつかない
+
+自分のしてしまったミスを認めたとしても、その内容にうそをついてはいけません。全部うそなのはもちろんですが、ほとんど本当の話だけれども、非常に重要な部分だけうそをつく、という場合も同じです。何か一つでもうそをつくことで、会社に大きな損害を与えることもあるのです。すべて本当のことを報告するようにしてください。
+
+### d. 言い訳しない
+
+皆さんの中には、それぞれの国の文化によっては、自分のミスを認めたり謝ったりすることに慣れていない人もいるかもしれません。でも、日本人を相手にしている場合、あまり言い訳ばかりしていると、それだけで印象が悪くなることも多いでしょう。言いたいことはたくさんあると思いますが、まずはミスを認めて、それについてひと言謝ったほうがいいでしょう。どうしても理由を説明したいときは、その問題が解決した後などにしましょう。
+
+## 中文 (biên tập)
+
+c. 既然承认自己有错，就不应该隐瞒事实。
+
+全部隐瞒和部分隐瞒性质一样。既然有讲真话的勇气，就不应该在任何细节上隐瞒什么。事实上往往如此，隐瞒一点都有可能给社会带来巨大的危害。对于事实，应当全面如实地汇报。
+
+d. 国家不同，文化不同。可能有些人还不习惯承认自己的过失或因自己的过失去向别人道歉。和日本人打交道，总是找理由为自己辩护会给人留下很不好的印象，你想辩解的理由很多，但首先要承认自己有过失并为此向别人道歉。即便你有很多理由要向对方解释，你也应该等到问题解决之后去做。
+
+## English (biên tập)
+
+c. After admitting to your mistake, don't lie about the nature of it. If you lie about an important aspect of your mistake, it's the same as lying about the entire thing. You can inflict severe losses on the company with one small lie. Please report your mistake truthfully.
+
+d. Some of you may not be used to admitting to or apologizing for a mistake, depending on your culture. But if you make excuses, you will often leave your Japanese listener with a negative impres-sion. There's probably a lot you'd like to say in your defense but first admit your mistake and apologize. If you have to explain yourself, make sure to do so after the problem has been resolved.
+
+## PDF page 64
+
+<a id="p0064"></a>
+
+<a id="p0064-b001"></a>
+
+- Trang in: 62
+- Đường dẫn nội dung: 第1章 / Unit 9 / 社会人として、してはいけないこと
+
+## ③ 勤務時間中の私用外出
+
+### 私用外出 OK の場合
+
+e. ビザやパスポートの申請、公的な登録や更新などで、公的機関へ行く場合
+
+f. 家族などが突然病気になったり怪我をしたり、緊急のことがあった場合
+
+→これらの場合は、日本で生活するに当たって必ず必要、もしくは仕方のない外出なので、認められることが多いでしょう。ただし、もちろん、その場合は上司にきちんと内容を報告し、許可を得なければいけません。
+
+Mô tả hình (biên tập): ゴードン ngồi điền giấy, phía sau là biển `パスポート申請` và mũi tên sang phải.
+
+### 私用外出 NG の場合
+
+g. 買い物などの私的な用事
+
+h. 仕事で外へ出たついでにカフェへ行って休憩したりして、なかなか帰ってこない
+
+→仕事に全く関係ない私的な行動は、あまりしないほうがいいですが、どうしても時間がないとか、とても疲れて歩けない、などというときは、なるべく短い時間で用事をすませ、なるべく早く仕事に戻りましょう。
+
+Mô tả hình (biên tập): Người phụ nữ đeo túi bước đi, bên cạnh có bàn và ghế dưới ô che.
+
+## 中文 (biên tập)
+
+e. 去公共机关办理签、证护照申请手续
+
+f. 家里有人生病、受伤、有急事需要马上处理
+
+在日本生活和工作有时遇到特殊情况不得不请假外出，对此上司也不会不准假。但是，不管请假原因是什么你都应该事前向上司说明并征得上司同意。
+
+g. 购物等个人私事
+
+h. 应尽可能避免在工作时间内处理与工作无关的私事。实在没有时间或太疲劳无法行走而必须休息时，不要耽搁太长时间，休息完后要尽快返回工作岗位。
+
+## English (biên tập)
+
+e. Going to a government office to apply for a visa or passport, of-ficial registration, or renewal.
+
+f. If someone in your family suddenly falls ill, gets hurt, or has some other emergency.
+
+You will often be allowed to take time off from work in such cas-es as they can't be avoided if you are to live in Japan. Of course, you must inform your boss ahead of time to get permis-sion to take time off.
+
+g. Shopping and other private-time activities.
+
+h. You leave the office and stop in a cafe to take a long break.
+
+You shouldn't stay away from the office to engage in activities totally unrelated to work. If you have no free time or are just too tired to keep walking, you can take a short break but hurry back
+
+Ghi chú nối trang (biên tập): Đoạn English h kết thúc giữa câu tại `hurry back`, tiếp ở đầu phần dịch PDF p0065.
+
+## PDF page 65
+
+<a id="p0065"></a>
+
+<a id="p0065-b001"></a>
+
+- Trang in: 63
+- Đường dẫn nội dung: 第1章 / Unit 9 / 社会人として、してはいけないこと
+- Tiêu đề lề: 第1章 日本の一般マナー
+
+## ④ 勤務中のインターネット
+
+仕事中に、インターネットにアクセスして業務に関連したことを調べたり、何かを検索したりしている人も、多いのでは？
+
+パソコンを使ってインターネットをしていると、周りからは仕事をしているように見えるかもしれません。誰にも指摘されなくても、勤務中のインターネットはマナーを守って使用しましょう。
+
+### 勤務中にはしてはいけないこと
+
+#### i. 株などのオンライン取引
+
+毎日の株価が気になるかもしれませんが、勤務中に取引を行うのはよくありません。
+
+Mô tả hình i (biên tập): Dấu ×; người đàn ông thao tác máy tính có biểu đồ chứng khoán, bóng suy nghĩ chứa dấu ！.
+
+#### j. ネットショッピング
+
+これは私用外出で買い物をするのと同じで、勤務時間中にしてはいけません。ショッピングは仕事が終わった後にゆっくりしてください。
+
+Mô tả hình j (biên tập): Dấu ×; người phụ nữ sử dụng máy tính, bóng hình đôi bốt từ màn hình và trái tim trong bóng suy nghĩ.
+
+#### k. ブログなどの更新やコメント作業
+
+今は、多くの人がブログをしている時代です。皆さんも自分のブログを持っていたら、ふと勤務時間中にブログの更新がしたくなるかもしれません。でも、それは家ですることです。他人のブログなどにコメントを付けたりするのも同じことです。
+
+Mô tả hình k (biên tập): Dấu ×; người đàn ông nhìn máy tính có hình chân dung trên trang, bóng suy nghĩ có nốt nhạc.
+
+## 中文 (biên tập)
+
+i. 网上炒股
+
+上班时间不可以做股票交易，尽管你心里可能一直惦记着股票行情。
+
+j. 网上购物
+
+网上购物和去商店购物没有什么不同，工作时间是不允许做这些事情的。购物应该安排在下班之后。
+
+k. 博客更新、网上讨论
+
+网上博客已经走入我们的生活，我们当中也许有人在网上开了博客，工作中有时或许会产生“更新一下”的念头。尽管心情可以理解，但这些事情应该安排在下班回家之后。对他人博客发表看法也是下班回家后做的事。
+
+## English (biên tập)
+
+Phần tiếp của h từ PDF p0064 (biên tập):
+
+to the office as soon as possible.
+
+i. On-line stock trading.
+
+You might be worried about daily stock trades, but it isn't good to be a day trader while at the office.
+
+j. Internet shopping.
+
+Just as with personal shopping during work hours, you mustn't do this at work. Please do your shopping after work.
+
+k. Blog updates and comments. Many people have blogs today.
+
+If you have a blog, you might want to update it at work. Don't. Do it at home. Same for commenting on others' blogs.
+
+## PDF page 66
+
+<a id="p0066"></a>
+
+<a id="p0066-b001"></a>
+
+- Trang in: 64
+- Đường dẫn nội dung: 第1章 / Unit 10 / 社会人らしい行動と言葉遣い
+
+## Unit 10 社会人らしい行動と言葉遣い
+
+どういう行動をすれば素敵なビジネスパーソンに
+見えるか、考えてみましょう。
+
+## 確認クイズ
+
+### 第1問
+
+病院へ行ったために少し遅刻して出勤するときは、どのように部屋に入りますか。
+
+1…皆が心配しているので、元気よく入る
+2…皆もう仕事をしているので、静かに入る
+3…遅刻して申し訳ないので、隠れて入る
+
+### 第2問
+
+風邪で欠勤するとき、上司に電話でどのように言いますか？
+
+1…「今日、ちょっと用事があるので休みます」
+2…「すみません。ちょっと体調が悪いので、休ませていただきたいんですが……」
+3…「風邪を引いたので、休んでもいいですか」
+
+### 解答
+
+第1問　2 → ① 社会人らしい行動　参照
+第2問　2 → ② 社会人らしい言葉遣い　参照
+
+## PDF page 67
+
+<a id="p0067"></a>
+
+<a id="p0067-b001"></a>
+
+- Trang in: 65
+- Đường dẫn nội dung: 第1章 / Unit 10 / 社会人らしい行動と言葉遣い
+- Tiêu đề lề: 第1章 日本の一般マナー
+
+## ① 社会人らしい行動
+
+〜もしも遅刻したら〜
+
+新入社員　金さん
+先輩社員　大野さん
+課長
+
+Mô tả hình (biên tập): Truyện sáu ô đánh số 1–6, đọc từ trái sang phải, hàng trên rồi hàng dưới.
+
+### Ô1 (biên tập)
+
+金 ngồi dậy trên giường, tay ôm đầu, mặt đau và có giọt mồ hôi; cạnh giường có đồng hồ báo thức. Không có lời thoại.
+
+### Ô2 (biên tập)
+
+金 gọi điện thoại, phía bên kia là 大野.
+
+**金:** おはようございます金です。今日ちょっと頭が痛いので、病院へ行ってから出勤すると課長にお伝え下さい
+
+**大野:** わかりました。大丈夫？気をつけてね
+
+### Ô3 (biên tập)
+
+金 đeo túi, cúi người bước qua cửa vào văn phòng, hai đồng nghiệp đang làm việc ở phía trước. Có hình đồng hồ, không có lời thoại.
+
+### Ô4 (biên tập)
+
+**金:** 課長、おはようございます。ただ今出社しました。薬をもらってきたのでしばらくすれば治ると思います。
+
+**課長:** そうか、大丈夫か？まあ今日はあまり無理せずに
+
+### Ô5 (biên tập)
+
+**金:** わたし宛の電話などありませんでしたか？
+
+### Ô6 (biên tập)
+
+**大野:** あ、2件ほど電話があったので机の上にメモを置いておいたわよ
+
+**金:** ありがとうございました
+
+金 cầm tờ ghi chú (biên tập).
+
+金さんの行動はどうでしたか？　とてもスムーズでしたね。
+どこが社会人としてよかったか、見ていきましょう。
+
+## PDF page 68
+
+<a id="p0068"></a>
+
+<a id="p0068-b001"></a>
+
+- Trang in: 66
+- Đường dẫn nội dung: 第1章 / Unit 10 / 社会人らしい行動と言葉遣い / ① 社会人らしい行動
+
+## どこが社会人らしい行動だったでしょう？
+
+a. 不都合な事柄（頭痛）が起こったら、すぐに会社に連絡している
+
+b. なぜ遅刻するか（欠勤も同じ）という理由（病院へ行く）を、きちんと伝えている
+
+c. オフィスに入るときは静かに入室し、もうすでに仕事を始めている同僚たちに気を配っている
+
+d. すぐに上司に問題の経過（結果）を報告している
+
+e. 不在中に迷惑を掛けた周りの同僚に、お礼を言っている
+
+## ポイント
+
+### f. 簡潔にわかりやすくスピーディに
+
+どんなことでも、仕事にかかわることである以上、シンプルにスピーディに進めることが重要です。これは何かを話している時も、書類を作っている時も、メモを取っている時も、すべて基本は同じです。
+
+### g. 周りの人への気遣い
+
+人が大勢いる会社の中で働く以上、仕事はチームプレーです。いくらあなたが仕事ができる人だったとしても、人間関係がうまくいかなければ意味がありません。特に感謝の気持ちを忘れないようにしましょう。
+
+## 中文 (biên tập)
+
+a. 身体不适，如头痛时，应马上告诉公司
+
+b. 迟到、不能上班时必须向公司讲明原因，如去医院看病等
+
+c. 进办公室时动作、声音要小，注意不要影响已经开始工作的同事们。
+
+d. 马上向公司汇报问题发生的经过或问题处理的结果
+
+e. 自己离开办公岗位期间，周围同事帮自己处理了很多事情。为此特致谢意
+
+f. 简捷明快提高效率
+
+事情无论大小，只要是和工作有关的事情就要高效从速处理。谈业务、做文件、作记录都要遵循高效从速这个原则。
+
+## English (biên tập)
+
+a. Contact the company immediately if something happens to you (headache).
+
+b. Tell the office why you are late or absent (have to go to the hos-pital).
+
+c. Quietly slip into the office without bothering the others who are already working.
+
+d. Report immediately to the boss about what happened.
+
+e. Apologize to your coworkers for the inconvenience your absence caused.
+
+f. Concisely clearly quickly.
+
+No matter what the job is, the key is to proceed simply and quickly. This is true whether you are speaking, creating docu-
+
+Ghi chú nối trang (biên tập): English f ngắt từ `docu-` ở cuối trang, tiếp `ments, or taking memos.` tại PDF p0069; dịch g cũng nằm ở trang sau.
+
+## PDF page 70
+
+<a id="p0070"></a>
+
+<a id="p0070-b001"></a>
+
+- Trang in: 68
+- Đường dẫn nội dung: 第1章 / Unit 10 / 社会人らしい行動と言葉遣い / ② 社会人らしい言葉遣い
+
+## どこが、社会人らしくない言葉遣いだったでしょう？
+
+h. 「お腹が痛いので、休みます」のように、「〜だから〜します」と言い切りの形を使っている
+
+i. 「全然、大丈夫じゃありません」のように、後ろ向きの言葉を選んでいる
+
+j. 「病院には行ってません」と、相手の気遣いの言葉をそこで終わらせている
+
+k. 「会社に行けない」などの重要なことを、自分で勝手に決めている
+
+l. 「仕事をやっておいてください」と、周りに迷惑を掛けることを堂々と言っている
+
+Mô tả hình (biên tập): 呉 khoanh tay, vẻ bối rối, bóng cạnh đầu có dấu hỏi.
+
+## では、どう言えばよかったのでしょう？
+
+m. 「お腹が痛いので休みます」→「少しお腹が痛いので、休ませていただきたいんですが……」
+
+休むことは決まっていても、「休みます」ではなく、「休みたいんですが」と上司に尋ねるのがポイント。
+
+Furigana (nguồn): 尋＝たず
+
+n. 「全然、大丈夫じゃありません」→「ちょっと大丈夫じゃなさそうな……」
+
+相手は心配しているのですから、「大丈夫ではないかも」と、断言しないでおきましょう。
+
+「病院にはまだ行ってません」→「実は、まだ病院には行ってないんです」
+
+o. 理由の説明→「昨日、なにか悪いものを食べたみたいで……」
+
+体調不良などの原因を説明するときは、あまり細かく説明したり報告したりする必要はありません。
+
+p. 「しばらく、会社に行けないと思います」→「しばらく、お休みしなければいけなくなるかもしれません」
+
+休みたくないけれど「休まなければいけないかも」というところが重要。
+
+q. 「仕事をやっておいてください」→「皆さんにご迷惑をお掛けするかもしれません」
+
+何かを頼むということは、誰かに迷惑が掛かる、ということを忘れずに。
+
+Mô tả hình (biên tập): 呉 mỉm cười, tay đặt trước ngực, bóng cạnh đầu có bóng đèn.
+
+## 中文 (biên tập)
+
+h. 就像说“我肚子疼需要休息”那样和同事说话时生硬地使用“因为……所以……”这种强调个人意志的表达方式
+
+i. “这还用问，问题明摆着吗！”这种呛人的话你听了感觉舒服吗？
+
+j. 冒出一句“我还没去医院呢！”就算回答了问话。
+
+k. 自己想不上班就不上班。
+
+l. “今天我上不了班，活儿你干吧！”这种给别人添麻烦的话也能轻松说出口。
+
+m. 定下来要请假，征求上司意见时要说“我有点事可以请假吗？”而不要说“我今天必须请假……”
+
+n. 看出对方表示担心时，也不要马上下结论说“自己身体不会有问题的”。
+
+o. 说明自己身体不好的原因时，没有必要细说详情。
+
+## English (biên tập)
+
+h. Ends sentence by using the pattern *dakara...shimasu*, as in *onaka ga itai node yasumimasu* (I have a stomachache so I'll be absent).
+
+i. Chooses negative words such as *zenzen, daijobu ja arimasen* (not at all, not okay).
+
+j. Answers by repeating part of the other party's solicitation: *byoin ni wa itte-imasen* (I haven't been to the hospital).
+
+k. Decides on his own something as important as not being able to go to work.
+
+l. Brazenly puts others out by asking them to do his work for him.
+
+m. Even if you know you will be absent, tell your boss that you want to take off work rather than that you will be absent.
+
+n. Your listener is worrying about you so don't assert as fact that you aren't okay.
+
+o. You needn't go into too much detail about the cause if you're feeling indisposed.
+
+## PDF page 71
+
+<a id="p0071"></a>
+
+<a id="p0071-b001"></a>
+
+- Trang in: 69
+- Đường dẫn nội dung: 第1章 / Unit 10 / 社会人らしい行動と言葉遣い / ② 社会人らしい言葉遣い
+- Tiêu đề lề: 第1章 日本の一般マナー
+
+## 社会人らしい言葉遣いのポイント
+
+### r. うまくあいまい表現を使う
+
+社会人らしい言葉遣い、ということでいうと、日本語の場合、「あいまい表現」をうまく使えれば、怖いものはありません。これが使えるかどうかで、同じ内容のことを言っていても、相手のあなたに対する印象は、かなり違ったものになるでしょう。
+
+例）「困ります」→「困るんですが……」、「わかりません」→「わかりかねます」
+
+### s. 前向きな言葉を使う
+
+同じ物事を話すのでも、前向きなプラスの言葉を使うのと、後ろ向きな言葉を使うのとでは、印象が大きく違います。なるべくポジティブな言葉を選んで話すようにしましょう。指示を受けるときなども同じです。
+
+例）「できません」→「努力してみます」、「自信がありません」→「頑張ります」
+
+### t. 順序よく話す
+
+仕事上の会話はわかりやすいことも重要です。でも、皆さんにとっては外国語である日本語でわかりやすく話すことは、とても大変なことだと思います。
+
+そんな時は５Ｗ３Ｈを思い出しながら話してみてください。
+
+5W
+
+- When　いつ
+- Where　どこで
+- Who　誰が
+- What　何を
+- Why　なぜ
+
+3H
+
+- How　どのように
+- How many　いくつで
+- How much　いくらで
+
+## 中文 (biên tập)
+
+Các mục p/q tiếp phần giải thích PDF p0070 (biên tập).
+
+p. 表达出自己本来不想请假却不得不请假的遗憾心情很重要。
+
+q. 求人办事本身就是给人添麻烦，这一点一定要牢记在心里。
+
+r. 学会婉转表达意见
+
+学会成人表达方式是很重要的，掌握了日语含糊其辞的表达方式你会畅通无阻。说明同一件事情，是否能够婉转表达意见，无疑会直接左右别人对你的印象。
+
+s. 用积极向上鼓舞斗志的语言表达自己的意见
+
+讲述同一件事情，用积极向上的词汇来表达还是用消极泄气的词汇来表达，给人带来的感觉完全不同。你应该尽可能选用明快的词汇，接受上司安排工作时更应如此。
+
+t. 注意叙事次序
+
+工作中语言交流应简明易懂。我想，对大家来讲，用母语以外的语言日语来简明地表达自己的意见是一件相当困难的事情。每当此时，请你想一想５个Ｗ和３个Ｈ，然后再慢慢陈述。
+
+## English (biên tập)
+
+p. The idea is to convey that you don't want to be absent but that you have to be.
+
+q. Don't forget that you are putting someone to trouble by asking a fa-vor.
+
+r. Using vague expressions well.
+
+In adult Japanese society you have nothing to fear if you master vague expressions. Impressions about you will vary drastically de-pending on how well you learn this technique.
+
+s. Use positive expressions.
+
+Impressions vary greatly depending on whether you use positive or negative expressions. Try to use positive expressions, including when receiving directives.
+
+t. Speak logically.
+
+It's important to speak intelligibly at work, although this is certainly not easy since it isn't your native language. Try using the five Ws.
+
+## PDF page 72
+
+<a id="p0072"></a>
+
+<a id="p0072-b001"></a>
+
+- Trang in: không có
+- Đường dẫn nội dung: sau 第1章 / trước phần tiếp theo
+
+## Trang trắng (biên tập)
+
+Trang nguồn không có chữ hoặc hình mang thông tin; chỉ có các chấm/vết scan rải rác.
+
