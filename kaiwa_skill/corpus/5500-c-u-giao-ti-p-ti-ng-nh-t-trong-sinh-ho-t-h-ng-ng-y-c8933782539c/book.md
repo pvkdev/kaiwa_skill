@@ -10393,3 +10393,3633 @@ Denki wo keshitemo ii desu ka?
 
 218 · 219
 
+## PDF page 111
+
+<a id="p0111"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0111
+
+- Trang in: 220 (trái), 221 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / TỪ VỰNG QUAN TRỌNG.
+
+<a id="p0111-b001"></a>
+## Trang 220 (biên tập)
+
+生活のために日本語会話文句 5500
+
+## TỪ VỰNG QUAN TRỌNG
+
+### Thức dậy
+
+- 徹夜 — thức đêm
+  Furigana (nguồn): 徹夜＝てつや
+- 目覚まし — đồng hồ báo thức
+  Furigana (nguồn): 目＝め; 覚＝ざ
+- 起こす — đánh thức
+  Furigana (nguồn): 起＝お
+- 鼾 — tiếng ngáy, sự ngáy
+  Furigana (nguồn): 鼾＝いびき
+- ぐっすり — trạng thái ngủ say, ngủ ngon
+- 起床 — sự thức dậy
+  Furigana (nguồn): 起床＝きしょう
+- 朝方 — bình minh, rạng đông
+  Furigana (nguồn): 朝方＝あさがた
+- 眠気 — buồn ngủ
+  Furigana (nguồn): 眠気＝ねむけ
+- 寝過ごす — ngủ quá giấc
+  Furigana (nguồn): 寝＝ね; 過＝す
+
+<a id="p0111-b002"></a>
+### Chuẩn bị ra ngoài
+
+- 歯を磨く — đánh răng
+  Furigana (nguồn): 歯＝は; 磨＝みが
+- 髪の毛 — tóc
+  Furigana (nguồn): 髪＝かみ; 毛＝け
+- しゃんと — có hình dáng đẹp
+- 化粧 — trang điểm
+  Furigana (nguồn): 化粧＝けしょう
+
+220
+
+<a id="p0111-b003"></a>
+## Trang 221 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+- ネクタイを締める — đeo cà vạt
+  Furigana (nguồn): 締＝し
+- 弁当 — cơm hộp
+  Furigana (nguồn): 弁当＝べんとう
+- シャワー — vòi hoa sen
+- 朝シャン — gội đầu vào buổi sáng
+  Furigana (nguồn): 朝＝あさ
+- 髪をとかす — chải tóc
+  Furigana (nguồn): 髪＝かみ
+- スーツ — áo vét
+- ネクタイ — cà vạt
+
+<a id="p0111-b004"></a>
+### Đọc báo
+
+- スポーツ — thể thao
+- チーム — đội
+- まじめ — chăm chỉ, cần mẫn
+- 目を通す — xem lướt qua
+  Furigana (nguồn): 目＝め; 通＝とお
+- 番組 — chương trình (tivi)
+  Furigana (nguồn): 番組＝ばんぐみ
+- 時間をつぶす — giết thời gian (nhàn rỗi)
+  Furigana (nguồn): 時間＝じかん
+- 無理 — quá sức, quá khả năng
+  Furigana (nguồn): 無理＝むり
+- 気楽 — thư thái, an nhàn
+  Furigana (nguồn): 気楽＝きらく
+
+<a id="p0111-b005"></a>
+### Làm việc nhà
+
+- ごみを捨てる — vứt rác
+  Furigana (nguồn): 捨＝す
+- クリーニング — giặt giũ
+
+221
+
+## PDF page 112
+
+<a id="p0112"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0112
+
+- Trang in: 222 (trái), 223 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / TỪ VỰNG QUAN TRỌNG (tiếp); II. ẨM THỰC / 1. ĂN CƠM.
+
+<a id="p0112-b001"></a>
+## Trang 222 (biên tập)
+
+生活のために日本語会話文句 5500
+
+- 積み上げる — chất chồng lên
+  Furigana (nguồn): 積＝つ; 上＝あ
+- 乾燥機 — máy sấy
+  Furigana (nguồn): 乾燥機＝かんそうき
+- アイロンをかける — ủi
+- 散らかる — lung tung, không gọn gàng
+  Furigana (nguồn): 散＝ち
+- びしょ濡れ — sự ướt sũng, ướt như chuột lột
+  Furigana (nguồn): 濡＝ぬ
+- 汗をかく — ra mồ hôi
+  Furigana (nguồn): 汗＝あせ
+
+<a id="p0112-b002"></a>
+### Về nhà
+
+- 迎える — đón
+  Furigana (nguồn): 迎＝むか
+- チェック — sự kiểm tra
+- おやつ — bữa ăn phụ
+- 塾 — trường tư thục
+  Furigana (nguồn): 塾＝じゅく
+- まっすぐ — đi thẳng, hướng thẳng
+- ラッシュ — giờ cao điểm
+- 込む — đông đúc
+  Furigana (nguồn): 込＝こ
+- 乗り込む — lên xe, lên tàu
+  Furigana (nguồn): 乗＝の; 込＝こ
+
+<a id="p0112-b003"></a>
+### Đi ngủ
+
+- 物語 — truyện
+  Furigana (nguồn): 物語＝ものがたり
+- ソファー — ghế sofa
+- 電気を消す — tắt điện
+  Furigana (nguồn): 電気＝でんき; 消＝け
+
+222
+
+<a id="p0112-b004"></a>
+## Trang 223 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+## II. ẨM THỰC
+
+### 1. ĂN CƠM
+
+**1.** 毎日朝食を食べますか。
+
+Furigana (nguồn): 毎日＝まいにち; 朝食＝ちょうしょく; 食＝た
+
+Mainichi chooshoku wo tabemasu ka?
+
+*Mỗi ngày bạn có ăn sáng không?*
+
+• **Đối thoại:**
+
+毎日朝食を食べますか。
+
+Furigana (nguồn): 毎日＝まいにち; 朝食＝ちょうしょく; 食＝た
+
+Mainichi chooshoku wo tabemasu ka?
+
+*Mỗi ngày bạn có ăn sáng không?*
+
+いいえ、朝はコーヒーだけです。
+
+Furigana (nguồn): 朝＝あさ
+
+Iie, asa wa koohii dake desu.
+
+*Không, buổi sáng tôi chỉ uống cà phê thôi.*
+
+<a id="p0112-b005"></a>
+**2.** ときどき朝ご飯を食べません。
+
+Furigana (nguồn): 朝＝あさ; 飯＝はん; 食＝た
+
+Tokidoki asagohan wo tabemasen.
+
+*Thỉnh thoảng tôi không ăn sáng.*
+
+<a id="p0112-b006"></a>
+**3.** 仕事に行く途中で何か買って食べます。
+
+Furigana (nguồn): 仕事＝しごと; 行＝い; 途中＝とちゅう; 何＝なに; 買＝か; 食＝た
+
+Shigoto ni iku tochuu de nanika katte tabemasu.
+
+*Trên đường đi làm bạn mua gì để ăn?*
+
+<a id="p0112-b007"></a>
+**4.** いつも食堂で昼ごはんをとります。
+
+Furigana (nguồn): 食堂＝しょくどう; 昼＝ひる
+
+Itsumo shokudo de hirugohan wo torimasu.
+
+*Tôi thường ăn trưa ở căn tin.*
+
+<a id="p0112-b008"></a>
+**5.** 会社の近くに高くないレストランが多くあります。
+
+Furigana (nguồn): 会社＝かいしゃ; 近＝ちか; 高＝たか; 多＝おお
+
+Kaisha no chikaku ni takakunai resutoran ga ooku arimasu.
+
+*Có rất nhiều nhà hàng không đắt lắm ở gần công ty.*
+
+223
+
+## PDF page 113
+
+<a id="p0113"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0113
+
+- Trang in: 224 (trái), 225 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / 1. ĂN CƠM (tiếp).
+
+<a id="p0113-b001"></a>
+## Trang 224 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**6.** 弁当を持って仕事に行きます。
+
+Furigana (nguồn): 弁当＝べんとう; 持＝も; 仕事＝しごと; 行＝い
+
+Bentoo wo motte shigoto ni ikimasu.
+
+*Tôi mang cơm hộp đi làm.*
+
+• **Đối thoại:**
+
+どこで昼ごはんをとりますか。
+
+Furigana (nguồn): 昼＝ひる
+
+Doko de hirugohan wo torimasu ka?
+
+*Bạn ăn trưa ở đâu?*
+
+弁当を持って仕事に行きます。
+
+Furigana (nguồn): 弁当＝べんとう; 持＝も; 仕事＝しごと; 行＝い
+
+Bentoo wo motte shigoto ni ikimasu.
+
+*Tôi mang cơm hộp đi làm.*
+
+<a id="p0113-b002"></a>
+**7.** 毎朝子供に昼ごはんを用意します。
+
+Furigana (nguồn): 毎朝＝まいあさ; 子供＝こども; 昼＝ひる; 用意＝ようい
+
+Maiasa kodomo ni hirugohan wo yooishimasu.
+
+*Tôi chuẩn bị đồ ăn trưa cho con mỗi sáng.*
+
+<a id="p0113-b003"></a>
+**8.** いつも家で晩ご飯を食べます。
+
+Furigana (nguồn): 家＝いえ; 晩＝ばん; 飯＝はん; 食＝た
+
+Itsumo ie de bangohan wo tabemasu.
+
+*Tôi thường ăn tối ở nhà.*
+
+<a id="p0113-b004"></a>
+**9.** これは家族の者たちと話し合う唯一の時間です。
+
+Furigana (nguồn): 家族＝かぞく; 者＝もの; 話＝はな; 合＝あ; 唯一＝ゆいいつ; 時間＝じかん
+
+Kore wa kazoku no monotachi to hanashiau yuiitsu no jikan desu.
+
+*Đây là thời gian duy nhất tôi nói chuyện cùng với mọi người trong gia đình.*
+
+<a id="p0113-b005"></a>
+**10.** 朝ご飯はほとんど外食です。
+
+Furigana (nguồn): 朝＝あさ; 飯＝はん; 外食＝がいしょく
+
+Asagohan wa hotondo gaishoku desu.
+
+*Tôi hầu như ăn sáng bên ngoài.*
+
+224
+
+<a id="p0113-b006"></a>
+## Trang 225 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**11.** 食事のバランスを取るのが非常に難しいです。
+
+Furigana (nguồn): 食事＝しょくじ; 取＝と; 非常＝ひじょう; 難＝むずか
+
+Shokuji no baransu wo toru no ga hijoo ni muzukashii desu.
+
+*Việc cân bằng dinh dưỡng trong bữa ăn là rất khó.*
+
+• **Đối thoại:**
+
+食事のバランスが取れていますか。
+
+Furigana (nguồn): 食事＝しょくじ; 取＝と
+
+Shokuji no baransu ga toreteimasu ka?
+
+*Bạn có thể cân bằng dinh dưỡng cho buổi ăn không?*
+
+食事のバランスを取るのが非常に難しいです。
+
+Furigana (nguồn): 食事＝しょくじ; 取＝と; 非常＝ひじょう; 難＝むずか
+
+Shokuji no baransu wo toru no ga hijoo ni muzukashii desu.
+
+*Việc cân bằng dinh dưỡng trong bữa ăn là rất khó.*
+
+<a id="p0113-b007"></a>
+**12.** よく食べ過ぎます。
+
+Furigana (nguồn): 食＝た; 過＝す
+
+Yoku tabe sugimasu.
+
+*Tôi thường ăn quá bữa.*
+
+• **Đối thoại:**
+
+食事の量を迎えなければなりません。
+
+Furigana (nguồn): 食事＝しょくじ; 量＝りょう; 迎＝むか
+
+Shokuji no ryoo wo mukaenakereba narimasen.
+
+*Bạn phải ăn uống đúng giờ.*
+
+それは分かるのですけど、よく食べすぎます。
+
+Furigana (nguồn): 分＝わ; 食＝た
+
+Sore wa wakaru no desu kedo, yoku tabe sugimasu.
+
+*Tôi biết điều đó, nhưng tôi thường ăn quá bữa.*
+
+<a id="p0113-b008"></a>
+**13.** 食事によく注意したほうがいいです。
+
+Furigana (nguồn): 食事＝しょくじ; 注意＝ちゅうい
+
+Shokuji ni yoku chuuishita hoo ga ii desu.
+
+*Nên chú ý ăn uống điều độ.*
+
+225
+
+## PDF page 114
+
+<a id="p0114"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0114
+
+- Trang in: 226 (trái), 227 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / 1. ĂN CƠM (tiếp).
+
+<a id="p0114-b001"></a>
+## Trang 226 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**14.** 自炊しますか。
+
+Furigana (nguồn): 自炊＝じすい
+
+Jisuishimasu ka?
+
+*Bạn có tự nấu ăn không?*
+
+• **Đối thoại:**
+
+自炊しますか。
+
+Furigana (nguồn): 自炊＝じすい
+
+Jisuishimasu ka?
+
+*Bạn có tự nấu ăn không?*
+
+ときどきします。
+
+Tokidokishimasu.
+
+*Thỉnh thoảng.*
+
+<a id="p0114-b002"></a>
+**15.** いつも自炊します。
+
+Furigana (nguồn): 自炊＝じすい
+
+Itsumo jisuishimasu.
+
+*Tôi thường tự nấu ăn.*
+
+<a id="p0114-b003"></a>
+**16.** ぜんぜん自炊しません。
+
+Furigana (nguồn): 自炊＝じすい
+
+Zenzen jisui shimasen.
+
+*Tôi hoàn toàn không tự nấu ăn.*
+
+<a id="p0114-b004"></a>
+**17.** 薫さんは料理がお上手です。
+
+Furigana (nguồn): 薫＝かおる; 料理＝りょうり; 上手＝じょうず
+
+Kaorosan wa ryoori ga ojoozu desu.
+
+*Kaoro giỏi nấu ăn.*
+
+<a id="p0114-b005"></a>
+**18.** 料理教室に通っています。
+
+Furigana (nguồn): 料理＝りょうり; 教室＝きょうしつ; 通＝かよ
+
+Ryoori kyooshitsu ni kayotteimasu.
+
+*Tôi ghé qua phòng nấu ăn.*
+
+<a id="p0114-b006"></a>
+**19.** 私もパンを焼くのが好きです。
+
+Furigana (nguồn): 私＝わたし
+
+Watashi mo pan wo mijikaku no ga suki desu.
+
+*Tôi cũng thích bánh mì nướng.*
+
+226
+
+<a id="p0114-b007"></a>
+## Trang 227 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**20.** 中華料理を作ってあげます。
+
+Furigana (nguồn): 中華＝ちゅうか; 料理＝りょうり; 作＝つく
+
+Chuuka ryoori wo tsukutte agemasu.
+
+*Tôi có làm món ăn Trung Quốc.*
+
+<a id="p0114-b008"></a>
+**21.** 今晩外食はどうですか。
+
+Furigana (nguồn): 今晩＝こんばん; 外食＝がいしょく
+
+Komban gaishoku wo doo desu ka?
+
+*Tối nay chúng ta ăn ngoài ở đâu?*
+
+<a id="p0114-b009"></a>
+**22.** いっぱいいただきました。
+
+Ippai itadakimashita.
+
+*Tôi đã no rồi.*
+
+• **Diễn đạt tương tự:**
+
+いいえ、けっこうです。いっぱいいただきました。
+
+Iie, kekkoo desu. Ippai itadakimashita.
+
+*Không, được rồi. Tôi đã no lắm rồi.*
+
+<a id="p0114-b010"></a>
+**23.** この料理はとてもおいしいです。
+
+Furigana (nguồn): 料理＝りょうり
+
+Kono ryoori wa totemo oishii desu.
+
+*Món ăn này rất ngon.*
+
+<a id="p0114-b011"></a>
+**24.** フイチキンは地元の名物です。
+
+Furigana (nguồn): 地元＝じもと; 名物＝めいぶつ
+
+Fuichikin wa jimoto no meibutsu desu.
+
+*Gà chiên là món đặc sản địa phương.*
+
+<a id="p0114-b012"></a>
+**25.** スープを沸かしてください。
+
+Furigana (nguồn): 沸＝わ
+
+Suupu wo wakashite kudasai.
+
+*Hãy nấu cho súp sôi lên.*
+
+<a id="p0114-b013"></a>
+**26.** サクランボをケーキの上に乗せて出します。
+
+Furigana (nguồn): 乗＝の; 出＝だ
+
+Sakuranbo wo keeki no ue ni nosete dashimasu.
+
+*Tôi sắp xếp các quả dâu tây lên chiếc bánh kem.*
+
+227
+
+## PDF page 115
+
+<a id="p0115"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0115
+
+- Trang in: 228 (trái), 229 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / 1. ĂN CƠM (tiếp); 2. UỐNG RƯỢU.
+
+<a id="p0115-b001"></a>
+## Trang 228 (biên tập)
+
+生活のために日本語会話文句 5500
+
+• **Diễn đạt mở rộng:**
+
+ウェイターはほかのテーブルに料理を出してます。
+
+Furigana (nguồn): 料理＝りょうり; 出＝だ
+
+Ueitaa wa hoka no teeburu ni ryoori wo dashitemasu.
+
+*Anh bồi bàn đang sắp xếp các món ăn khác nhau lên bàn.*
+
+Ghi chú nối trang (biên tập): Diễn đạt mở rộng tiếp mục 26 ở trang in 227.
+
+<a id="p0115-b002"></a>
+**27.** 日本料理はあっさりした味で有名です。
+
+Furigana (nguồn): 日本＝にほん; 料理＝りょうり; 味＝あじ; 有名＝ゆうめい
+
+Nihon ryoori wa assarishita aji de yuumei desu.
+
+*Món ăn Nhật có hương vị ngon và nổi tiếng.*
+
+• **Diễn đạt mở rộng:**
+
+彼女は名古屋で非常に有名です。
+
+Furigana (nguồn): 彼女＝かのじょ; 名古屋＝なごや; 非常＝ひじょう; 有名＝ゆうめい
+
+Kanojo wa nagoya de hijoo ni yuumei desu.
+
+*Cô ấy rất nổi tiếng ở Nagoya.*
+
+「雪国」は川端康成のもっとも有名な小説のひとつです。
+
+Furigana (nguồn): 雪国＝ゆきぐに; 川端康成＝かわばたやすなり; 有名＝ゆうめい; 小説＝しょうせつ
+
+“Yukiguni” wa kawabata yasunari no mottomo yuumei na shoosetsu no hitotsu desu.
+
+*“Yukiguni” là một tiểu thuyết rất nổi tiếng của Yasunari Kawabata.*
+
+<a id="p0115-b003"></a>
+### 2. UỐNG RƯỢU
+
+**1.** やった、一緒にビールを飲むことができる。
+
+Furigana (nguồn): 一緒＝いっしょ; 飲＝の
+
+Yatta, issho ni biiru wo nomu koto ga dekiru.
+
+*Này, cậu có thể đi nhậu cùng không?*
+
+<a id="p0115-b004"></a>
+**2.** 何が飲みたいですか。
+
+Furigana (nguồn): 何＝なに; 飲＝の
+
+Nani ga nomitai desu ka?
+
+*Bạn muốn uống gì?*
+
+228
+
+## Trang 229 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+• **Đối thoại:**
+
+何が飲みたいですか。
+
+Furigana (nguồn): 何＝なに; 飲＝の
+
+Nani ga nomitai desu ka?
+
+*Bạn muốn uống gì?*
+
+コーヒーお願いします。
+
+Furigana (nguồn): 願＝ねが
+
+Koohii onegaishimasu.
+
+*Làm ơn cho tôi ly cà phê.*
+
+<a id="p0115-b005"></a>
+**3.** お飲み物は。
+
+Furigana (nguồn): 飲＝の; 物＝もの
+
+Onomimono wa?
+
+*Bạn uống gì?*
+
+<a id="p0115-b006"></a>
+**4.** ビールを2杯ください。
+
+Furigana (nguồn): 杯＝はい
+
+Biiru wo nibai kudasai.
+
+*Hãy cho tôi 2 ly cà phê.*
+
+<a id="p0115-b007"></a>
+**5.** このコーヒーは濃すぎます。
+
+Furigana (nguồn): 濃＝こ
+
+Kono koohii wa kosugimasu.
+
+*Ly cà phê này quá đậm.*
+
+<a id="p0115-b008"></a>
+**6.** お酒を飲みますか。
+
+Furigana (nguồn): 酒＝さけ; 飲＝の
+
+Osake wo nomimasu ka?
+
+*Bạn có uống rượu không?*
+
+<a id="p0115-b009"></a>
+**7.** 酔っ払った。
+
+Furigana (nguồn): 酔＝すい; 払＝ばら
+
+Suibbaratta.
+
+*Tôi đã bị say rượu.*
+
+<a id="p0115-b010"></a>
+**8.** 彼はお酒に強いです。
+
+Furigana (nguồn): 彼＝かれ; 酒＝さけ; 強＝つよ
+
+Kare wa osake ni tsuyoi desu.
+
+*Anh ấy có tửu lượng cao.*
+
+229
+
+## PDF page 116
+
+<a id="p0116"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0116
+
+- Trang in: 230 (trái), 231 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / 2. UỐNG RƯỢU (tiếp); 3. LỰA CHỌN NHÀ HÀNG.
+
+<a id="p0116-b001"></a>
+## Trang 230 (biên tập)
+
+生活のために日本語会話文句 5500
+
+• **Diễn đạt tương tự:**
+
+彼はヘビースモーカーです。
+
+Furigana (nguồn): 彼＝かれ
+
+Kare wa hebiisuumookaa desu.
+
+*Ông ấy là người nghiện thuốc nặng.*
+
+Ghi chú nối trang (biên tập): Diễn đạt tương tự tiếp mục 8 trang in 229.
+
+<a id="p0116-b002"></a>
+**9.** お好きな飲み物は何ですか。
+
+Furigana (nguồn): 好＝す; 飲＝の; 物＝もの; 何＝なん
+
+Osuki na nomimono wa nan desu ka?
+
+*Đồ uống mà bạn thích là gì?*
+
+<a id="p0116-b003"></a>
+**10.** ビールで始まります。
+
+Furigana (nguồn): 始＝はじ
+
+Biiru de hajimarimasu.
+
+*Bắt đầu uống bia.*
+
+<a id="p0116-b004"></a>
+**11.** ビールをも一杯ください。
+
+Furigana (nguồn): 一杯＝いっぱい
+
+Biiru wo mo ippai kudasai.
+
+*Hãy cho thêm 1 ly bia.*
+
+<a id="p0116-b005"></a>
+**12.** 彼らかが彼を家まで送らなければなりません。酔っ払ったからです。
+
+Furigana (nguồn): 彼＝かれ; 彼＝かれ; 家＝いえ; 送＝おく; 酔＝すい; 払＝ばら
+
+Kareraka ga kare wo ie made okuranakereba narimasen. Suipparatta kara desu.
+
+*Họ phải chở anh ấy về nhà. Vì anh ấy đã say.*
+
+<a id="p0116-b006"></a>
+### 3. LỰA CHỌN NHÀ HÀNG
+
+**1.** 今晩はどこで食事しますか。
+
+Furigana (nguồn): 今晩＝こんばん; 食事＝しょくじ
+
+Konban wa doko de shokujishimasu ka?
+
+*Tối nay dùng bữa ở đâu vậy?*
+
+<a id="p0116-b007"></a>
+**2.** この喫茶店は想像したほどよくないです。
+
+Furigana (nguồn): 喫茶店＝きっさてん; 想像＝そうぞう
+
+Kono kissaten wa soozooshita hodo yokunai desu.
+
+*Quán nước này không ngon như tôi đã nghĩ.*
+
+230
+
+<a id="p0116-b008"></a>
+## Trang 231 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**3.** 中華料理それともフランス料理が好きですか。
+
+Furigana (nguồn): 中華＝ちゅうか; 料理＝りょうり; 料理＝りょうり; 好＝す
+
+Chuuka ryoori soretomo furansu ryoori ga suki desu ka?
+
+*Bạn thích món ăn Pháp hay món ăn Trung Quốc?*
+
+<a id="p0116-b009"></a>
+**4.** このレストランは地元で非常に有名です。
+
+Furigana (nguồn): 地元＝じもと; 非常＝ひじょう; 有名＝ゆうめい
+
+Kono resutoran wa jimoto de hijoo ni yuumei desu.
+
+*Nhà hàng này rất nổi tiếng ở địa phương.*
+
+<a id="p0116-b010"></a>
+**5.** 特別に行きたいレストランがありますか。
+
+Furigana (nguồn): 特別＝とくべつ; 行＝い
+
+Tokubetsu ni ikitai resutoran ga arimasu ka?
+
+*Bạn có muốn dùng bữa ở nhà hàng đặc biệt không?*
+
+<a id="p0116-b011"></a>
+**6.** どのレストランがいいと思いますか。
+
+Furigana (nguồn): 思＝おも
+
+Dono resutoran ga ii to omoimasu ka?
+
+*Bạn nghĩ nhà hàng nào ngon?*
+
+• **Đối thoại:**
+
+どのレストランがいいと思いますか。
+
+Furigana (nguồn): 思＝おも
+
+Dono resutoran ga ii to omoimasu ka?
+
+*Bạn nghĩ nhà hàng nào ngon?*
+
+横浜にある中華料理店です。
+
+Furigana (nguồn): 横浜＝よこはま; 中華＝ちゅうか; 料理店＝りょうりてん
+
+Yokohama ni aru chuuka ryooriten desu.
+
+*Nhà hàng Trung Quốc ở Yokohama.*
+
+<a id="p0116-b012"></a>
+**7.** うちのレストランでは中華料理しか提供しません。
+
+Furigana (nguồn): 中華＝ちゅうか; 料理＝りょうり; 提供＝ていきょう
+
+Uchi no resutoran dewa chuuka ryoori shika teikyoo shimasen.
+
+*Nhà hàng chúng tôi không phục vụ món ăn Trung Quốc.*
+
+231
+
+## PDF page 117
+
+<a id="p0117"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0117
+
+- Trang in: 232 (trái), 233 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / 3. LỰA CHỌN NHÀ HÀNG (tiếp); 4. ĐẶT CHỖ.
+
+<a id="p0117-b001"></a>
+## Trang 232 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**8.** 各種のワインをご提供します。
+
+Furigana (nguồn): 各種＝かくしゅ; 提供＝ていきょう
+
+Kakushu no wain wo go teikyooshimasu.
+
+*Tôi sẽ phục vụ từng loại rượu.*
+
+<a id="p0117-b002"></a>
+**9.** 角のレストランはどうですか。
+
+Furigana (nguồn): 角＝かど
+
+Kado no resutoran wa doo desu ka?
+
+*Nhà hàng ở góc đường thế nào?*
+
+<a id="p0117-b003"></a>
+**10.** 新鮮な海鮮物が好きです。
+
+Furigana (nguồn): 新鮮＝しんせん; 海鮮物＝かいせんぶつ; 好＝す
+
+Shinsen na kaisenbutsu ga suki desu.
+
+*Tôi thích món hải sản tươi sống.*
+
+<a id="p0117-b004"></a>
+### 4. ĐẶT CHỖ
+
+**1.** いつテーブルが空きますか。
+
+Furigana (nguồn): 空＝あ
+
+Itsu teeburu ga akimasu ka?
+
+*Nhà hàng khi nào mới trống chỗ?*
+
+<a id="p0117-b005"></a>
+**2.** 申し訳ありませんが、席は全部予約されました。
+
+Furigana (nguồn): 申＝もう; 訳＝わけ; 席＝せき; 全部＝ぜんぶ; 予約＝よやく
+
+Mooshiwake arimasen ga, seki wa zenbu yoyaku saremashita.
+
+*Thành thật xin lỗi quý khách, toàn bộ chỗ ngồi đã được đặt trước rồi.*
+
+<a id="p0117-b006"></a>
+**3.** 二人、お願いします。
+
+Furigana (nguồn): 二人＝ふたり; 願＝ねが
+
+Futari, onegaishimasu.
+
+*Làm ơn cho đặt bàn hai người.*
+
+<a id="p0117-b007"></a>
+**4.** 窓際のテーブルをお願いします。
+
+Furigana (nguồn): 窓際＝まどぎわ; 願＝ねが
+
+Madogiwa no teeburu wo onegaishimasu.
+
+*Làm ơn cho tôi bàn ngồi bên cửa sổ.*
+
+232
+
+<a id="p0117-b008"></a>
+## Trang 233 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**5.** ありがとう、ここでいいです。
+
+Arigatoo, koko de ii desu.
+
+*Cảm ơn, chỗ này được rồi.*
+
+<a id="p0117-b009"></a>
+**6.** 遠山幸太郎ですが、電話で予約しました。
+
+Furigana (nguồn): 遠山＝とおやま; 幸太郎＝こうたろう; 電話＝でんわ; 予約＝よやく
+
+Tooyama kootaroo desu ga, denwa de yoyaku shimashita.
+
+*Xin giúp cho, tôi đã đặt chỗ trước qua điện thoại.*
+
+<a id="p0117-b010"></a>
+**7.** こちらへどうぞ。
+
+Kochira he doozo.
+
+*Xin mời quý khách đi lối này.*
+
+<a id="p0117-b011"></a>
+**8.** 大丈夫です。ここでいいです。
+
+Furigana (nguồn): 大丈夫＝だいじょうぶ
+
+Daijoobu desu. Koko de ii desu.
+
+*Không sao đâu. Chỗ này được rồi.*
+
+<a id="p0117-b012"></a>
+**9.** お客様の席です。
+
+Furigana (nguồn): 客様＝きゃくさま; 席＝せき
+
+Okyakusama no seki desu.
+
+*Đây là chỗ ngồi của quý khách.*
+
+<a id="p0117-b013"></a>
+**10.** このテーブルが空いています。
+
+Furigana (nguồn): 空＝あ
+
+Kono tebburu ga aiteimasu.
+
+*Cái bàn này đang còn trống.*
+
+<a id="p0117-b014"></a>
+**11.** どこのお座りになりたいですか。
+
+Furigana (nguồn): 座＝すわ
+
+Doko no osuwari ni naritai desu ka?
+
+*Bạn muốn ngồi ở đâu?*
+
+<a id="p0117-b015"></a>
+**12.** 今空いているテーブルがないかもしれません。
+
+Furigana (nguồn): 今＝いま; 空＝あ
+
+Ima aiteiru teeburu ga nai kamoshiremasen.
+
+*Bây giờ có lẽ không còn bàn trống.*
+
+233
+
+## PDF page 118
+
+<a id="p0118"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0118
+
+- Trang in: 234 (trái), 235 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / 5. CHỌN MÓN ĂN.
+
+<a id="p0118-b001"></a>
+## Trang 234 (biên tập)
+
+生活のために日本語会話文句 5500
+
+### 5. CHỌN MÓN ĂN
+
+**1.** なににしますか。
+
+Nani ni shimasu ka?
+
+*Bạn chọn món gì?*
+
+<a id="p0118-b002"></a>
+**2.** 何を食べたいですか。
+
+Furigana (nguồn): 何＝なに; 食＝た
+
+Nani wo tabetai desu ka?
+
+*Bạn muốn ăn gì?*
+
+<a id="p0118-b003"></a>
+**3.** 今注文していただいていいですか。
+
+Furigana (nguồn): 今＝いま; 注文＝ちゅうもん
+
+Ima chuumonshite itadaite ii desu ka?
+
+*Bây giờ quý khách gọi món chứ ạ?*
+
+• **Đối thoại:**
+
+今注文していただいていいですか。
+
+Furigana (nguồn): 今＝いま; 注文＝ちゅうもん
+
+Ima chuumonshite itadaite ii desu ka?
+
+*Bây giờ quý khách gọi món chứ ạ?*
+
+友達を持っているから。
+
+Furigana (nguồn): 友達＝ともだち; 持＝も
+
+Tomodachi wo motteiru kara.
+
+*Tôi còn chờ bạn.*
+
+<a id="p0118-b004"></a>
+**4.** デザートは何にしますか。
+
+Furigana (nguồn): 何＝なに
+
+Dezaato wa nani ni shimasu ka?
+
+*Bạn chọn món tráng miệng gì?*
+
+<a id="p0118-b005"></a>
+**5.** アイスクリームにします。
+
+Aisukuriimu ni shimasu.
+
+*Tôi chọn kem.*
+
+<a id="p0118-b006"></a>
+**6.** ステーキとパンにします。
+
+Suteeki to pan ni shimasu.
+
+*Tôi chọn bánh mì và bò bít tết.*
+
+234
+
+<a id="p0118-b007"></a>
+## Trang 235 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**7.** 果物が要りますか。
+
+Furigana (nguồn): 果物＝くだもの; 要＝い
+
+Kudamono ga irimasu ka?
+
+*Bạn có cần trái cây không?*
+
+<a id="p0118-b008"></a>
+**8.** ご注文のものです。
+
+Furigana (nguồn): 注文＝ちゅうもん
+
+Go chuumon no mono desu.
+
+*Tôi sẽ gọi món.*
+
+<a id="p0118-b009"></a>
+**9.** はい、りんごを一ください。
+
+Furigana (nguồn): 一＝いち
+
+Hai, ringo wo ichi kudasai.
+
+*Vâng, làm ơn cho tôi một ly táo ép.*
+
+<a id="p0118-b010"></a>
+**10.** 何を飲みますか。
+
+Furigana (nguồn): 何＝なに; 飲＝の
+
+Nani wo nomimasu ka?
+
+*Bạn uống gì?*
+
+<a id="p0118-b011"></a>
+**11.** ウィスキーをワングラスお願いします。
+
+Furigana (nguồn): 願＝ねが
+
+Uisukii wo wangurasu onegaishimasu.
+
+*Làm ơn cho tôi một whisky.*
+
+<a id="p0118-b012"></a>
+**12.** メニューを見せてください。
+
+Furigana (nguồn): 見＝み
+
+Menyuu wo misete kudasai.
+
+*Hãy cho tôi xem thực đơn.*
+
+• **Đối thoại:**
+
+メニューを見せてください。
+
+Furigana (nguồn): 見＝み
+
+Menyuu wo misete kudasai.
+
+*Hãy cho tôi xem thực đơn.*
+
+はい、どうぞ。
+
+Hai, doozo.
+
+*Vâng, xin mời.*
+
+235
+
+## PDF page 119
+
+<a id="p0119"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0119
+
+- Trang in: 236 (trái), 237 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / 5. CHỌN MÓN ĂN (tiếp); 6. THAN PHIỀN VỀ THỰC ĐƠN VÀ CÁCH PHỤC VỤ.
+
+<a id="p0119-b001"></a>
+## Trang 236 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**13.** 今日は何かお勧めですか。
+
+Furigana (nguồn): 今日＝きょう; 勧＝すす
+
+Kyoo wa nanika susume desu ka?
+
+*Hôm nay quyết định ăn gì?*
+
+<a id="p0119-b002"></a>
+**14.** まだ決めていません。
+
+Furigana (nguồn): 決＝き
+
+Mada kimete imasen.
+
+*Vẫn chưa quyết định nữa.*
+
+<a id="p0119-b003"></a>
+**15.** もうちょっと時間がもらいたいです。
+
+Furigana (nguồn): 時間＝じかん
+
+Moo chotto jikan ga moraitai desu.
+
+*Tôi muốn chờ một chút.*
+
+<a id="p0119-b004"></a>
+**16.** 今から注文してもいいですか。
+
+Furigana (nguồn): 今＝いま; 注文＝ちゅうもん
+
+Ima kara chuumonshitemo ii desu ka?
+
+*Bây giờ gọi món được chứ?*
+
+<a id="p0119-b005"></a>
+### 6. THAN PHIỀN VỀ THỰC ĐƠN VÀ CÁCH PHỤC VỤ
+
+**1.** サービスが遅い。
+
+Furigana (nguồn): 遅＝おそ
+
+Saabisu ga osoi.
+
+*Phục vụ chậm quá.*
+
+• **Đối thoại:**
+
+サービスが遅い。
+
+Furigana (nguồn): 遅＝おそ
+
+Saabisu ga osoi.
+
+*Phục vụ chậm quá.*
+
+申し訳ありません、これから速くします。
+
+Furigana (nguồn): 申＝もう; 訳＝わけ; 速＝はや
+
+Mooshiwake arimasen, kore kara hayakushimasu.
+
+*Thành thật xin lỗi, từ giờ tôi sẽ nhanh hơn.*
+
+<a id="p0119-b006"></a>
+**2.** 私たちを一日中ずっと無視している。
+
+Furigana (nguồn): 私＝わたし; 一日中＝いちにちじゅう; 無視＝むし
+
+Watashitachi wo ichinichijuu zutto mushishiteiru.
+
+236
+
+## Trang 237 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+*Phục vụ không quan tâm đến chúng tôi.*
+
+<a id="p0119-b007"></a>
+**3.** このスープは塩辛すぎる。
+
+Furigana (nguồn): 塩辛＝しおから
+
+Kono suppu wa shiokara sugiru.
+
+*Món súp này quá mặn và cay.*
+
+<a id="p0119-b008"></a>
+**4.** コーヒーは冷えている。
+
+Furigana (nguồn): 冷＝ひ
+
+Koohii wa hieteiru.
+
+*Cà phê nguội quá.*
+
+<a id="p0119-b009"></a>
+**5.** いつまで待って食事できるのか。
+
+Furigana (nguồn): 待＝ま; 食事＝しょくじ
+
+Itsumade matte shokuji dekiru no ka?
+
+*Chờ đến khi nào mới dùng bữa được chứ?*
+
+<a id="p0119-b010"></a>
+**6.** あら、ステーキは焼きできだ。
+
+Furigana (nguồn): 焼＝や
+
+Ara, suteeki na yaki deki da.
+
+*À, bò bít tết bị cháy khét.*
+
+<a id="p0119-b011"></a>
+**7.** すみません、サラダを忘れたよ。
+
+Furigana (nguồn): 忘＝わす
+
+Sumimasen, sarada wasureta yo.
+
+*Xin lỗi, anh quên mang món xà lách cho tôi rồi.*
+
+<a id="p0119-b012"></a>
+**8.** この肉は焼きすぎて噛めない。
+
+Furigana (nguồn): 肉＝にく; 焼＝や; 噛＝か
+
+Kono niku wa yakisugite kamenai.
+
+*Miếng thịt này bị cháy khét, không thể ăn được.*
+
+<a id="p0119-b013"></a>
+**9.** このスープがまずい。
+
+Kono suupu ga mazui.
+
+*Món súp này dở quá.*
+
+<a id="p0119-b014"></a>
+**10.** よく焼いてって言ったのに。
+
+Furigana (nguồn): 焼＝や; 言＝い
+
+Yoku yaitette itta noni.
+
+*Mặc dù đã nói là đừng nướng cháy vậy mà...*
+
+237
+
+## PDF page 120
+
+<a id="p0120"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0120
+
+- Trang in: 238 (trái), 239 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / 7. THANH TOÁN TIỀN.
+
+<a id="p0120-b001"></a>
+## Trang 238 (biên tập)
+
+生活のために日本語会話文句 5500
+
+### 7. THANH TOÁN TIỀN
+
+**1.** お勘定をお願いします。
+
+Furigana (nguồn): 勘定＝かんじょう; 願＝ねが
+
+Okanjoo wo onegaishimasu.
+
+*Làm ơn tính tiền.*
+
+<a id="p0120-b002"></a>
+**2.** 半分半分払いましょう。
+
+Furigana (nguồn): 半分＝はんぶん; 半分＝はんぶん; 払＝はら
+
+Hanbun hanbun haraimashoo.
+
+*Chúng ta cùng chia ra trả nhé!*
+
+• **Diễn đạt tương tự:**
+
+割り勘にしましょう。
+
+Furigana (nguồn): 割＝わ; 勘＝かん
+
+Warikan ni shimashoo.
+
+*Chúng ta cùng chia ra trả nhé!*
+
+<a id="p0120-b003"></a>
+**3.** 今回おごるから。
+
+Furigana (nguồn): 今回＝こんかい
+
+Konkai ogoru kara.
+
+*Lần này tôi sẽ khao.*
+
+• **Diễn đạt tương tự:**
+
+今回ご馳走するから。
+
+Furigana (nguồn): 今回＝こんかい; 馳走＝ちそう
+
+Konkai gochisoosuru kara.
+
+*Lần này tôi sẽ khao.*
+
+<a id="p0120-b004"></a>
+**4.** 今から勘定します。
+
+Furigana (nguồn): 今＝いま; 勘定＝かんじょう
+
+Ima kara kanjooshimasu.
+
+*Bây giờ tôi sẽ tính tiền.*
+
+<a id="p0120-b005"></a>
+**5.** どんなカードを受けますか。
+
+Furigana (nguồn): 受＝う
+
+Donna kaado wo ukemasu ka?
+
+*Anh nhận thẻ như thế nào?*
+
+<a id="p0120-b006"></a>
+**6.** これはどの費用ですか。
+
+Furigana (nguồn): 費用＝ひよう
+
+Kore wa dono hiyoo desu ka?
+
+*Đây là phí gì vậy?*
+
+238
+
+<a id="p0120-b007"></a>
+## Trang 239 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**7.** 特別で払いたいですか。
+
+Furigana (nguồn): 特別＝とくべつ; 払＝はら
+
+Tokubetsu de haraitai desu ka?
+
+*Tôi muốn trả riêng được chứ?*
+
+<a id="p0120-b008"></a>
+**8.** 勘定をお願いします。
+
+Furigana (nguồn): 勘定＝かんじょう; 願＝ねが
+
+Kanjoo wo onegaishimasu.
+
+*Làm ơn tính tiền.*
+
+<a id="p0120-b009"></a>
+**9.** 小切手、或いはクレジットカードで支払ってもいいですか。
+
+Furigana (nguồn): 小切手＝こぎって; 或＝ある; 支払＝しはら
+
+Kogitte, arui wa kurejitto kaado de shiharattemo ii desu ka?
+
+*Tôi trả bằng séc hay thẻ tín dụng đều được chứ?*
+
+<a id="p0120-b010"></a>
+**10.** 申し訳ありませんが、現金だけですが。
+
+Furigana (nguồn): 申＝もう; 訳＝わけ; 現金＝げんきん
+
+Mooshiwake arimasen ga, genkin dake desu ga.
+
+*Thành thật xin lỗi, tôi chỉ nhận tiền mặt.*
+
+<a id="p0120-b011"></a>
+**11.** お返しです。
+
+Furigana (nguồn): 返＝かえ
+
+Okaeshi desu.
+
+*Tôi sẽ trả lại.*
+
+<a id="p0120-b012"></a>
+**12.** お勘定をお願いします。
+
+Furigana (nguồn): 勘定＝かんじょう; 願＝ねが
+
+Okanjoo wo onegaishimasu.
+
+*Làm ơn tính tiền.*
+
+<a id="p0120-b013"></a>
+**13.** 勘定書を持ってきてください。
+
+Furigana (nguồn): 勘定書＝かんじょうしょ; 持＝も
+
+Kanjoosho wo mottekite kudasai.
+
+*Hãy mang theo hóa đơn.*
+
+239
+
+## PDF page 121
+
+<a id="p0121"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0121
+
+- Trang in: 240 (trái), 241 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / TỪ VỰNG QUAN TRỌNG.
+
+<a id="p0121-b001"></a>
+## Trang 240 (biên tập)
+
+生活のために日本語会話文句 5500
+
+## TỪ VỰNG QUAN TRỌNG
+
+### Ăn cơm
+
+- 用意 — sẵn sàng, chuẩn bị
+  Furigana (nguồn): 用意＝ようい
+- バランスを取る — lấy lại cân bằng
+  Furigana (nguồn): 取＝と
+- 控える — tiếp giáp với
+  Furigana (nguồn): 控＝ひか
+- 自炊 — tự nấu ăn
+  Furigana (nguồn): 自炊＝じすい
+- 通う — ghé (thăm)
+  Furigana (nguồn): 通＝かよ
+- 役 — sự phục vụ
+  Furigana (nguồn): 役＝えき
+- フライチキン — cơm chiên
+- 沸かす — đun sôi, nấu
+  Furigana (nguồn): 沸＝わ
+- サクランボ — dâu tây
+- ウェイター — bồi bàn
+- あっさり — dễ dàng
+
+<a id="p0121-b002"></a>
+### Uống rượu
+
+- 酔っ払う — say rượu
+  Furigana (nguồn): 酔＝すい; 払＝ばら
+- 酒に強い — tửu lượng cao
+  Furigana (nguồn): 酒＝さけ; 強＝つよ
+- ヘビースモーカー — người nghiện thuốc nặng
+
+240
+
+<a id="p0121-b003"></a>
+## Trang 241 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+### Lựa chọn nhà hàng
+
+- 喫茶店 — quán nước
+  Furigana (nguồn): 喫茶店＝きっさてん
+- 地元 — địa phương, trong vùng
+  Furigana (nguồn): 地元＝じもと
+- レストラン — nhà hàng
+- ワイン — rượu
+- 提供 — sự cung cấp
+  Furigana (nguồn): 提供＝ていきょう
+- 角 — góc
+  Furigana (nguồn): 角＝かど
+
+<a id="p0121-b004"></a>
+### Đặt chỗ
+
+- テーブル — cái bàn
+- 空く — trống
+  Furigana (nguồn): 空＝あ
+- 窓際 — bên cửa sổ
+  Furigana (nguồn): 窓際＝まどぎわ
+- 座る — ngồi
+  Furigana (nguồn): 座＝すわ
+
+<a id="p0121-b005"></a>
+### Chọn món ăn
+
+- 注文 — sự gọi món
+  Furigana (nguồn): 注文＝ちゅうもん
+- デザート — món tráng miệng
+- アイスクリーム — kem
+- ステーキ — món bò bít tết
+- ウィスキー — rượu whisky
+- メニュー — thực đơn
+- 進める — thúc đẩy, xúc tiến
+  Furigana (nguồn): 進＝すす
+
+241
+
+## PDF page 122
+
+<a id="p0122"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0122
+
+- Trang in: 242 (trái), 243 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / II. ẨM THỰC / TỪ VỰNG QUAN TRỌNG (tiếp); III. LIÊN LẠC QUA ĐIỆN THOẠI / 1. GỌI ĐIỆN THOẠI.
+
+<a id="p0122-b001"></a>
+## Trang 242 (biên tập)
+
+生活のために日本語会話文句 5500
+
+### Than phiền về thực đơn và cách phục vụ
+
+- サービス — phục vụ
+- スープ — súp
+- 塩辛い — mặn và cay
+  Furigana (nguồn): 塩辛＝しおから
+- 冷える — nguội, lạnh
+  Furigana (nguồn): 冷＝ひ
+- サラダ — xà lách
+- 噛む — cắn, nhai
+  Furigana (nguồn): 噛＝か
+
+<a id="p0122-b002"></a>
+### Thanh toán tiền
+
+- 勘定 — tính tiền
+  Furigana (nguồn): 勘定＝かんじょう
+- 割り勘 — tính riêng
+  Furigana (nguồn): 割＝わ; 勘＝かん
+- 小切手 — séc ngân hàng
+  Furigana (nguồn): 小切手＝こぎって
+- クレジットカード — thẻ tín dụng
+- お返し — sự trả lại
+  Furigana (nguồn): 返＝かえ
+
+242
+
+<a id="p0122-b003"></a>
+## Trang 243 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+## III. LIÊN LẠC QUA ĐIỆN THOẠI
+
+### 1. GỌI ĐIỆN THOẠI
+
+**1.** もしもし、野村俊二さんをお願いします。
+
+Furigana (nguồn): 野村＝のむら; 俊二＝しゅんじ; 願＝ねが
+
+Moshimoshi, nomura shunjisan wo onegaishimasu.
+
+*A lô, làm ơn cho tôi gặp Nomura Shunji.*
+
+<a id="p0122-b004"></a>
+**2.** スミスさんですか。
+
+Sumisusan desu ka?
+
+*Sumisu phải không?*
+
+<a id="p0122-b005"></a>
+**3.** 小林さんのオフィスですか。
+
+Furigana (nguồn): 小林＝こばやし
+
+Kobayashisan no ofisu desu ka?
+
+*Văn phòng của Kobayashi phải không?*
+
+<a id="p0122-b006"></a>
+**4.** もしもし、順米？
+
+Moshimoshi, junbei?
+
+*A lô, Junbei phải không?*
+
+• **Đối thoại:**
+
+もしもし、順米？
+
+Moshimoshi, junbei?
+
+*A lô, Junbei phải không?*
+
+はい、どちら様ですか。
+
+Furigana (nguồn): 様＝さま
+
+Hai, dochira sama desu ka?
+
+*Vâng, ngài là ai vậy?*
+
+<a id="p0122-b007"></a>
+**5.** 林さんをお願いします。
+
+Furigana (nguồn): 林＝はやし; 願＝ねが
+
+Hayashisan wo onegaishimasu.
+
+*Làm ơn cho gặp Hayashi.*
+
+243
+
+## PDF page 123
+
+<a id="p0123"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0123
+
+- Trang in: 244 (trái), 245 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / III. LIÊN LẠC QUA ĐIỆN THOẠI / 1. GỌI ĐIỆN THOẠI (tiếp); 2. NGHE ĐIỆN THOẠI.
+
+<a id="p0123-b001"></a>
+## Trang 244 (biên tập)
+
+生活のために日本語会話文句 5500
+
+• **Đối thoại:**
+
+林さんをお願いします。
+
+Furigana (nguồn): 林＝はやし; 願＝ねが
+
+Hayashisan wo onegaishimasu.
+
+*Làm ơn cho gặp Hayashi.*
+
+少々お待ちください。
+
+Furigana (nguồn): 少々＝しょうしょう; 待＝ま
+
+Shooshoo omachi kudasai.
+
+*Xin chờ một chút nhé.*
+
+Ghi chú nối trang (biên tập): Đối thoại tiếp mục 5 ở trang in 243.
+
+<a id="p0123-b002"></a>
+**6.** もしもし、長尾さんをお願いします。
+
+Furigana (nguồn): 長尾＝ながお; 願＝ねが
+
+Moshimoshi, nagaosan wo onegaishimasu.
+
+*A lô, làm ơn cho gặp Nagao.*
+
+<a id="p0123-b003"></a>
+**7.** 李さんはいらっしゃいますか。
+
+Furigana (nguồn): 李＝り
+
+Risan wa irasshaimasu ka?
+
+*Anh Ri có đó không ạ?*
+
+<a id="p0123-b004"></a>
+**8.** 長距離電話をしたんですけど。
+
+Furigana (nguồn): 長距離＝ちょうきょり; 電話＝でんわ
+
+Chookyoori denwa wo shitan desu kedo.
+
+*Tôi muốn gọi điện thoại đường dài.*
+
+<a id="p0123-b005"></a>
+**9.** 宮本さんと話したいですけど。
+
+Furigana (nguồn): 宮本＝みやもと; 話＝はな
+
+Miyamotosan to hanashitai desu kedo.
+
+*Tôi muốn nói chuyện với Miyamoto.*
+
+<a id="p0123-b006"></a>
+**10.** 張先生のお宅でしょうか。
+
+Furigana (nguồn): 張＝ちょう; 先生＝せんせい; 宅＝たく
+
+Choo sensei no otaku deshoo ka?
+
+*Có phải nhà của thầy giáo Cho không ạ?*
+
+<a id="p0123-b007"></a>
+**11.** 通じなかった。
+
+Furigana (nguồn): 通＝つう
+
+Tsuuji nakatta.
+
+*Tôi đã không thông qua.*
+
+244
+
+<a id="p0123-b008"></a>
+## Trang 245 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**12.** 今切らなければならない。
+
+Furigana (nguồn): 今＝いま; 切＝き
+
+Ima kiranakereba naranai.
+
+*Bây giờ tôi phải cúp máy.*
+
+<a id="p0123-b009"></a>
+**13.** 電話がちょっと故障しています。
+
+Furigana (nguồn): 電話＝でんわ; 故障＝こしょう
+
+Denwa ga chotto koshooshiteimasu.
+
+*Điện thoại đang bị hỏng.*
+
+<a id="p0123-b010"></a>
+**14.** 電話してみたんですが、いつも話中でした。
+
+Furigana (nguồn): 電話＝でんわ; 話中＝はなしちゅう
+
+Denwashitemitan desu ga, itsumo hanashichuu deshita.
+
+*Tôi muốn thử gọi điện thế nhưng họ đang nói chuyện.*
+
+<a id="p0123-b011"></a>
+### 2. NGHE ĐIỆN THOẠI
+
+**1.** 彼は今、席をはずしていますが、何か伝言がありますか。
+
+Furigana (nguồn): 彼＝かれ; 今＝いま; 席＝せき; 何＝なに; 伝言＝でんごん
+
+Kare wa ima, seki wo hazushiteimasu ga, nani ka dengon ga arimasu ka?
+
+*Bây giờ, anh ấy đã đi vắng rồi, có gì nhắn lại không?*
+
+<a id="p0123-b012"></a>
+**2.** 宮本ですけど。
+
+Furigana (nguồn): 宮本＝みやもと
+
+Miyamoto desu kedo.
+
+*Tôi là Miyamoto nhưng mà...*
+
+<a id="p0123-b013"></a>
+**3.** 明日電話をかけ直してくれますか。
+
+Furigana (nguồn): 明日＝あした; 電話＝でんわ; 直＝なお
+
+Ashita denwa wo kake naoshite kuremasu ka?
+
+*Ngày mai anh sửa điện thoại giùm tôi được chứ?*
+
+<a id="p0123-b014"></a>
+**4.** ちょっと待ってください。
+
+Furigana (nguồn): 待＝ま
+
+Chotto matte kudasai.
+
+*Hãy chờ một chút.*
+
+245
+
+## PDF page 124
+
+<a id="p0124"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0124
+
+- Trang in: 246 (trái), 247 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / III. LIÊN LẠC QUA ĐIỆN THOẠI / 2. NGHE ĐIỆN THOẠI (tiếp).
+
+<a id="p0124-b001"></a>
+## Trang 246 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**5.** 少々お待ちください。
+
+Furigana (nguồn): 少々＝しょうしょう; 待＝ま
+
+Shooshoo omachi kudasai.
+
+*Hãy chờ một chút.*
+
+• **Đối thoại:**
+
+手島さんをお願いします。
+
+Furigana (nguồn): 手島＝てしま; 願＝ねが
+
+Teshimasan wo onegaishimasu.
+
+*Làm ơn cho tôi gặp anh Teshima.*
+
+少々お待ちください。
+
+Furigana (nguồn): 少々＝しょうしょう; 待＝ま
+
+Shooshoo omachi kudasai.
+
+*Hãy chờ một chút.*
+
+<a id="p0124-b002"></a>
+**6.** 松下電器ですけど。
+
+Furigana (nguồn): 松下＝まつした; 電器＝でんき
+
+Matsushita denki desu kedo.
+
+*Trung tâm điện máy Matsushita nghe đây.*
+
+<a id="p0124-b003"></a>
+**7.** もしもし、岡本ですけど。
+
+Furigana (nguồn): 岡本＝おかもと
+
+Moshimoshi, okamoto desu kedo.
+
+*A lô, Okamoto xin nghe.*
+
+<a id="p0124-b004"></a>
+**8.** 別の電話に出ています。
+
+Furigana (nguồn): 別＝べつ; 電話＝でんわ; 出＝で
+
+Betsu no denwa ni deteimasu.
+
+*Tôi gác máy.*
+
+<a id="p0124-b005"></a>
+**9.** もしもし、藤本ですけど。どなたですか。
+
+Furigana (nguồn): 藤本＝ふじもと
+
+Moshimoshi, fujimoto desukedo. Donata desu ka?
+
+*A lô, Fujimoto nghe đây. Ai ở đầu dây vậy ạ?*
+
+<a id="p0124-b006"></a>
+**10.** どなたですか。
+
+Donata desu ka?
+
+*Ngài là ai?*
+
+246
+
+## Trang 247 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+• **Đối thoại:**
+
+どなたですか。
+
+Donata desu ka?
+
+*Ngài là ai?*
+
+吉本です。
+
+Furigana (nguồn): 吉本＝よしもと
+
+Yoshimoto desu.
+
+*Yoshimoto đây.*
+
+<a id="p0124-b007"></a>
+**11.** 少々お待ちください。すぐに呼んでまいります。
+
+Furigana (nguồn): 少々＝しょうしょう; 待＝ま; 呼＝よ
+
+Shooshoo omachi kudasai. Suguni yondema
+irimasu.
+
+*Hãy chờ một chút. Tôi sẽ gọi ngay.*
+
+<a id="p0124-b008"></a>
+**12.** 彼がいるかどうか見てきます。
+
+Furigana (nguồn): 彼＝かれ; 見＝み
+
+Kare ga iru kadooka mitekimasu.
+
+*Có tìm thấy anh ấy ở đâu không.*
+
+<a id="p0124-b009"></a>
+**13.** はい、どなたですか。
+
+Hai, donata desu ka?
+
+*Vâng, ngài là ai vậy?*
+
+<a id="p0124-b010"></a>
+**14.** 申し訳ありませんが、彼は席をはずしております。
+
+Furigana (nguồn): 申＝もう; 訳＝わけ; 彼＝かれ; 席＝せき
+
+Mooshiwake arimasen ga, kare wa seki wo hazushite orimasu.
+
+*Thành thật xin lỗi, anh ấy đi ra ngoài rồi ạ.*
+
+<a id="p0124-b011"></a>
+**15.** もしもし。
+
+Moshimoshi.
+
+*A lô.*
+
+247
+
+## PDF page 125
+
+<a id="p0125"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0125
+
+- Trang in: 248 (trái), 249 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / III. LIÊN LẠC QUA ĐIỆN THOẠI / 2. NGHE ĐIỆN THOẠI (tiếp); 3. ĐỂ LẠI LỜI NHẮN; 4. GỌI NHẦM SỐ VÀ PHÁ RỐI ĐIỆN THOẠI.
+
+<a id="p0125-b001"></a>
+## Trang 248 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**16.** 申し訳ありませんが、彼は今電話に出られないですけど。
+
+Furigana (nguồn): 申＝もう; 訳＝わけ; 彼＝かれ; 今＝いま; 電話＝でんわ; 出＝で
+
+Mooshi wake arimasen ga, kare wa ima denwa ni derarenai desu kedo.
+
+*Thành thật xin lỗi, bây giờ anh ấy không thể nghe điện thoại được.*
+
+<a id="p0125-b002"></a>
+### 3. ĐỂ LẠI LỜI NHẮN
+
+**1.** 彼はあいにく席を外しておりますが、何か伝言がありますか。
+
+Furigana (nguồn): 彼＝かれ; 席＝せき; 外＝はず; 何＝なに; 伝言＝でんごん
+
+Kare wa ainuku seki wo hazushite orimasu ga, nani ga dengon ga arimasu ka?
+
+*Thật tiếc là anh ấy đi ra ngoài, vậy anh có gì nhắn lại không ạ?*
+
+<a id="p0125-b003"></a>
+**2.** 伝言をお願いできますか。
+
+Furigana (nguồn): 伝言＝でんごん; 願＝ねが
+
+Dengon wo onegai dekimasu ka?
+
+*Bạn có thể giúp tôi nhắn lại không?*
+
+<a id="p0125-b004"></a>
+**3.** 私に電話するよう伝えてくれますか。
+
+Furigana (nguồn): 私＝わたし; 電話＝でんわ; 伝＝つた
+
+Watashi ni denwasuru yoo tsutaete kuremasu ka?
+
+*Nhắn với anh ấy là hãy gọi điện cho tôi được chứ?*
+
+<a id="p0125-b005"></a>
+**4.** のちほどかけ直します。
+
+Furigana (nguồn): 直＝なお
+
+Nochihodo kake naoshimasu.
+
+*Tôi sẽ đến sửa sau.*
+
+<a id="p0125-b006"></a>
+**5.** 伝言をお願いできますか。
+
+Furigana (nguồn): 伝言＝でんごん; 願＝ねが
+
+Dengon wo onegai dekimasu ka?
+
+*Tôi có thể nhờ anh nhắn lại giùm được không?*
+
+248
+
+<a id="p0125-b007"></a>
+## Trang 249 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**6.** 彼に電話するように伝えてください。
+
+Furigana (nguồn): 彼＝かれ; 電話＝でんわ; 伝＝つた
+
+Kare ni denwasuru yooni tsutaete kudasai.
+
+*Hãy nhắn lại là tôi gọi điện cho anh ấy.*
+
+<a id="p0125-b008"></a>
+**7.** 彼が戻ってきたらわたしに電話するように伝えてください。
+
+Furigana (nguồn): 彼＝かれ; 戻＝もど; 電話＝でんわ; 伝＝つた
+
+Kare ga modottekitara watashi ni denwasuru yooni tsutaete kudasai.
+
+*Nếu anh ấy quay lại, hãy nhắn là gọi điện cho tôi nhé.*
+
+<a id="p0125-b009"></a>
+**8.** 電話したと彼に伝えてくれますか。
+
+Furigana (nguồn): 電話＝でんわ; 彼＝かれ; 伝＝つた
+
+Denwashita to kare ni tsutaete kuremasu ka?
+
+*Nếu có điện thoại bạn có thể nhắn với anh ấy giúp tôi được không?*
+
+<a id="p0125-b010"></a>
+**9.** また彼に連絡してみます。
+
+Furigana (nguồn): 彼＝かれ; 連絡＝れんらく
+
+Mata kare ni renrakushite mimasu.
+
+*Tôi thử liên lạc với anh ấy lần nữa.*
+
+<a id="p0125-b011"></a>
+**10.** 急用があるから母に電話するように伝えてください。
+
+Furigana (nguồn): 急用＝きゅうよう; 母＝はは; 電話＝でんわ; 伝＝つた
+
+Kyuuyoo ga aru kara haha ni denwasuru yooni tsutaete kudasai.
+
+*Vì có việc gấp nên hãy nhắn anh ấy gọi lại cho mẹ.*
+
+<a id="p0125-b012"></a>
+### 4. GỌI NHẦM SỐ VÀ PHÁ RỐI ĐIỆN THOẠI
+
+**1.** 電話番号を間違えたんです。
+
+Furigana (nguồn): 電話番号＝でんわばんごう; 間違＝まちが
+
+Denwabangoo wo machigaetan desu.
+
+*Tôi đã gọi nhầm số.*
+
+249
+
+## PDF page 126
+
+<a id="p0126"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0126
+
+- Trang in: 250 (trái), 251 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / III. LIÊN LẠC QUA ĐIỆN THOẠI / 4. GỌI NHẦM SỐ VÀ PHÁ RỐI ĐIỆN THOẠI (tiếp).
+
+<a id="p0126-b001"></a>
+## Trang 250 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**2.** 電話番号を間違えに違いない。
+
+Furigana (nguồn): 電話番号＝でんわばんごう; 間違＝まちが; 違＝ちが
+
+Denwabangoo wo machigae ni chigainai.
+
+*Chắc là tôi đã nhầm số điện thoại.*
+
+<a id="p0126-b002"></a>
+**3.** これから電話しないでください。
+
+Furigana (nguồn): 電話＝でんわ
+
+Korekara denwashinai de kudasai.
+
+*Xin đừng gọi cho tôi nữa.*
+
+<a id="p0126-b003"></a>
+**4.** 番号をお間違えじゃないでしょうか。
+
+Furigana (nguồn): 番号＝ばんごう; 間違＝まちが
+
+Bangoo wo machigae janai deshoo ka?
+
+*Chắc là bạn đã gọi nhầm số phải không?*
+
+• **Đối thoại:**
+
+もしもし、美恵ちゃん・・・
+
+Furigana (nguồn): 美恵＝みえ
+
+Moshimoshi, miechan...
+
+*A lô, bé Mie hả...*
+
+すみません、番号をお間違えじゃないでしょうか。
+
+Furigana (nguồn): 番号＝ばんごう; 間違＝まちが
+
+Sumimasen, bangoo wo omachigae janai deshoo ka?
+
+*Xin lỗi, có lẽ bạn đã gọi nhầm số rồi chăng?*
+
+<a id="p0126-b004"></a>
+**5.** いたずら電話をやめなさい。
+
+Furigana (nguồn): 電話＝でんわ
+
+Itazura denwa wo yamenasai.
+
+*Đừng có gọi điện làm phiền tôi nữa.*
+
+<a id="p0126-b005"></a>
+**6.** こちらは5656ですけど、何番におかけでしょうか。
+
+Furigana (nguồn): 何番＝なんばん
+
+Kochira wa gosen robyaku gojuu roku desu kedo, nanban ni okake shoo ka?
+
+*Đây là số 5656, bạn gọi số nào?*
+
+250
+
+<a id="p0126-b006"></a>
+## Trang 251 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**7.** 電話番号はもう52134587に変わりました。
+
+Furigana (nguồn): 電話番号＝でんわばんごう; 変＝か
+
+Denwabangoo wa moo go ni ichi san yon go hachi shichi ni kawari mashita.
+
+*Điện thoại của tôi đã đổi thành số 52134587.*
+
+<a id="p0126-b007"></a>
+**8.** 失礼しました。間違えました。
+
+Furigana (nguồn): 失礼＝しつれい; 間違＝まちが
+
+Shitsurei shimashita. Machigae mashita.
+
+*Xin thất lễ. Tôi đã gọi nhầm.*
+
+<a id="p0126-b008"></a>
+**9.** 電話番号を間違えたと思います。
+
+Furigana (nguồn): 電話番号＝でんわばんごう; 間違＝まちが; 思＝おも
+
+Denwabangoo wo machigaeta to omoimasu.
+
+*Tôi nghĩ là đã bị nhầm số.*
+
+<a id="p0126-b009"></a>
+**10.** ここには滝沢英明という人はいません。
+
+Furigana (nguồn): 滝沢＝たきざわ; 英明＝ひであさ
+
+Koko niwa takizawa hideasa to iu hito wa imasen.
+
+*Ở đây không có ai gọi là Takizawa Hideasa.*
+
+<a id="p0126-b010"></a>
+**11.** その番号はだれも使っていません。
+
+Furigana (nguồn): 番号＝ばんごう; 使＝つか
+
+Sono bangoo wa dare mo tsukatteimasen.
+
+*Không có ai sử dụng số điện thoại đó cả.*
+
+251
+
+## PDF page 127
+
+<a id="p0127"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0127
+
+- Trang in: 252 (trái), 253 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / III. LIÊN LẠC QUA ĐIỆN THOẠI / TỪ VỰNG QUAN TRỌNG; IV. PHƯƠNG TIỆN VẬN CHUYỂN / 1. XE BUÝT.
+
+<a id="p0127-b001"></a>
+## Trang 252 (biên tập)
+
+生活のために日本語会話文句 5500
+
+## TỪ VỰNG QUAN TRỌNG
+
+### Gọi điện thoại
+
+- オフィス — văn phòng
+- 長距離電話 — điện thoại đường dài
+  Furigana (nguồn): 長距離電話＝ちょうきょりでんわ
+- 通じる — dẫn đến, hiểu rõ
+  Furigana (nguồn): 通＝つう
+- 話中 — đang nói chuyện
+  Furigana (nguồn): 話中＝はなしちゅう
+
+<a id="p0127-b002"></a>
+### Nghe điện thoại
+
+- 席をはずす — rời khỏi ghế
+  Furigana (nguồn): 席＝せき
+- かけ直す — gọi lại
+  Furigana (nguồn): 直＝なお
+- 呼ぶ — kêu gọi
+  Furigana (nguồn): 呼＝よ
+
+<a id="p0127-b003"></a>
+### Để lại lời nhắn
+
+- あいにく — thật đáng tiếc
+- のちほど — hẹn gặp sau
+- 伝える — nhắn lại
+  Furigana (nguồn): 伝＝つた
+- 戻る — quay lại
+  Furigana (nguồn): 戻＝もど
+- 急用 — việc gấp
+  Furigana (nguồn): 急用＝きゅうよう
+
+<a id="p0127-b004"></a>
+### Gọi nhầm số và phá rối điện thoại
+
+- 連絡が取れる — có thể liên lạc
+  Furigana (nguồn): 連絡＝れんらく; 取＝と
+- 変わる — thay đổi
+  Furigana (nguồn): 変＝か
+
+252
+
+<a id="p0127-b005"></a>
+## Trang 253 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+## IV. PHƯƠNG TIỆN VẬN CHUYỂN
+
+### 1. XE BUÝT
+
+**1.** このバスは公園へ行きますか。
+
+Furigana (nguồn): 公園＝こうえん; 行＝い
+
+Kono basu wa kooen he ikimasu ka?
+
+*Tuyến xe buýt này có đến công viên không?*
+
+• **Đối thoại:**
+
+このバスは公園へ行きますか。
+
+Furigana (nguồn): 公園＝こうえん; 行＝い
+
+Kono basu wa kooen he ikimasu ka?
+
+*Tuyến xe buýt này có đến công viên không?*
+
+いいえ、行かないです。
+
+Furigana (nguồn): 行＝い
+
+Iie, ikanai desu.
+
+*Không, tuyến này không đến đó.*
+
+<a id="p0127-b006"></a>
+**2.** シテェー広場まではこのバスで行けますか。
+
+Furigana (nguồn): 広場＝ひろば; 行＝い
+
+Shiteii hiroba made wa kono basu de ikemasu ka?
+
+*Đến quảng trường Shitee có thể đi tuyến xe buýt này chứ?*
+
+<a id="p0127-b007"></a>
+**3.** あの停留場までいくらですか。
+
+Furigana (nguồn): 停留場＝ていりゅうじょう
+
+Ano teiryuu joo made ikura desu ka?
+
+*Đến ga đó mất khoảng bao lâu?*
+
+<a id="p0127-b008"></a>
+**4.** ここには空港行きのシャトルバスがありますか。
+
+Furigana (nguồn): 空港＝くうこう; 行＝い
+
+Koko niwa kuukoo iki no shatorubasu ga arimasu ka?
+
+*Ở đây có tuyến xe buýt nào đến sân bay không?*
+
+<a id="p0127-b009"></a>
+**5.** バス停はどこですか。
+
+Furigana (nguồn): 停＝てい
+
+Basutei wa doko desu ka?
+
+*Trạm dừng xe buýt ở đâu?*
+
+253
+
+## PDF page 128
+
+<a id="p0128"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0128
+
+- Trang in: 254 (trái), 255 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / 1. XE BUÝT (tiếp).
+
+<a id="p0128-b001"></a>
+## Trang 254 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**6.** バスの路線図がありますか。
+
+Furigana (nguồn): 路線図＝ろせんず
+
+Basu no rosensu ga arimasu ka?
+
+*Có bản đồ tuyến xe buýt không?*
+
+<a id="p0128-b002"></a>
+**7.** このバスはディズニーランドへ行きますか。
+
+Furigana (nguồn): 行＝い
+
+Kono basu wa deizuniirando he ikimasu ka?
+
+*Tuyến xe buýt này có đi đến Disneyland không?*
+
+<a id="p0128-b003"></a>
+**8.** 乗り換える必要があります。
+
+Furigana (nguồn): 乗＝の; 換＝か; 必要＝ひつよう
+
+Norikaeru hitsuyoo ga arimasu.
+
+*Cần phải sang xe.*
+
+<a id="p0128-b004"></a>
+**9.** どこで乗り換えるべきですか。
+
+Furigana (nguồn): 乗＝の; 換＝か
+
+Doko de norikaeru beki deus ka?
+
+*Cần phải sang xe ở đâu?*
+
+<a id="p0128-b005"></a>
+**10.** 着いたら教えてくれませんか。
+
+Furigana (nguồn): 着＝つ; 教＝おし
+
+Tsuitara oshiete kuremasen ka?
+
+*Nếu đến nơi, bạn nói tôi biết được chứ?*
+
+<a id="p0128-b006"></a>
+**11.** バスは出たばかりですか。
+
+Furigana (nguồn): 出＝で
+
+Basu wa deta bakari desu ka?
+
+*Xe buýt sắp khởi hành rồi hả?*
+
+<a id="p0128-b007"></a>
+**12.** どこで降りればいいか教えてくれませんか。
+
+Furigana (nguồn): 降＝お; 教＝おし
+
+Doko de orireba ii ka oshiete kuremasen ka?
+
+*Bạn có thể chỉ cho tôi biết nên xuống đâu không?*
+
+<a id="p0128-b008"></a>
+**13.** 乗り換えしなければなりませんか。
+
+Furigana (nguồn): 乗＝の; 換＝か
+
+Norikaeshinakereba narimasen ka?
+
+*Có cần phải sang xe không?*
+
+254
+
+## Trang 255 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+• **Đối thoại:**
+
+乗り換えしなければなりませんか。
+
+Furigana (nguồn): 乗＝の; 換＝か
+
+Norikaeshinakereba narimasen ka?
+
+*Có cần phải sang xe không?*
+
+いいえ、乗り換えしなくてもいいです。
+
+Furigana (nguồn): 乗＝の; 換＝か
+
+Iie, norikaeshinakutemo ii desu.
+
+*Không, bạn không cần sang xe cũng được.*
+
+<a id="p0128-b009"></a>
+**14.** このバスは市の中心へ行きますか。
+
+Furigana (nguồn): 市＝し; 中心＝ちゅうしん; 行＝い
+
+Kono basu wa shi no chuushin he ikimasu ka?
+
+*Tuyến xe buýt này có đến trung tâm thành phố không?*
+
+<a id="p0128-b010"></a>
+**15.** 長城へ行けばいいか教えてくれませんか。
+
+Furigana (nguồn): 長城＝ちょうじょう; 行＝い; 教＝おし
+
+Choojoo he ikeba ii ka oshiete kuremasen ka?
+
+*Bạn có thể chỉ cho tôi biết nên đi sao để đến Chojo không?*
+
+<a id="p0128-b011"></a>
+**16.** ここは終点です。
+
+Furigana (nguồn): 終点＝しゅうてん
+
+Koko wa shuuten desu.
+
+*Đây là tuyến cuối cùng.*
+
+<a id="p0128-b012"></a>
+**17.** この駅の先はまた二つの駅があります。
+
+Furigana (nguồn): 駅＝えき; 先＝さき; 二＝ふた; 駅＝えき
+
+Kono eki no saki wa mata futatsu no eki ga arimasu.
+
+*Trước trạm dừng này còn hai trạm nữa.*
+
+• **Đối thoại:**
+
+いつ降りればいいですか。
+
+Furigana (nguồn): 降＝お
+
+Itsu orireba ii desu ka?
+
+*Khi nào xuống thì được?*
+
+Ghi chú nối trang (biên tập): Lời đáp tiếp ở trang in 256.
+
+255
+
+## PDF page 129
+
+<a id="p0129"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0129
+
+- Trang in: 256 (trái), 257 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / 1. XE BUÝT (tiếp).
+
+<a id="p0129-b001"></a>
+## Trang 256 (biên tập)
+
+生活のために日本語会話文句 5500
+
+ここから先はまた二つの駅があります。
+
+Furigana (nguồn): 先＝さき; 二＝ふた; 駅＝えき
+
+Kono kara saki wa mata futatsu no eki ga arimasu.
+
+*Từ đây còn hai trạm dừng nữa.*
+
+Ghi chú nối trang (biên tập): Lời đáp tiếp đối thoại mục 17 ở trang in 255.
+
+<a id="p0129-b002"></a>
+**18.** 十分以内にあそこに着けます。
+
+Furigana (nguồn): 十分以内＝じゅうぶいない; 着＝つ
+
+Juupun inai ni asoko ni tsukemasu.
+
+*Có thể đến đó trong 10 phút.*
+
+<a id="p0129-b003"></a>
+**19.** 映画館で降りて、3番のバスに乗り換えればいいです。
+
+Furigana (nguồn): 映画館＝えいがかん; 降＝お; 番＝ばん; 乗＝の; 換＝か
+
+Eigakan de orite, sanban no basu ni norikaereba ii desu.
+
+*Xuống nhà hát này nên sang tuyến xe buýt số 3.*
+
+<a id="p0129-b004"></a>
+**20.** いいえ、乗り換えしなくてもいいです。
+
+Furigana (nguồn): 乗＝の; 換＝か
+
+Iie, norikaeshinakutemo ii desu.
+
+*Không, dù không sang xe cũng được.*
+
+<a id="p0129-b005"></a>
+**21.** バス代はいくらですか。
+
+Furigana (nguồn): 代＝だい
+
+Basudai wa ikura desu ka?
+
+*Giá vé xe buýt bao nhiêu tiền?*
+
+<a id="p0129-b006"></a>
+**22.** バス停のすぐそばにタクシー乗り場がありますか。
+
+Furigana (nguồn): 停＝てい; 乗＝の; 場＝ば
+
+Basutei no sugu soba ni takushii noriba ga arimasu ka?
+
+*Có nơi nào bắt tắc xi ở gần trạm xe buýt không?*
+
+<a id="p0129-b007"></a>
+**23.** 違うバスに乗ってしまいました。
+
+Furigana (nguồn): 違＝ちが; 乗＝の
+
+Chigau basu ni notte shimaimashita.
+
+*Tôi đã đi nhầm tuyến xe buýt rồi.*
+
+256
+
+<a id="p0129-b008"></a>
+## Trang 257 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**24.** このバスは20分おきに一便があります。
+
+Furigana (nguồn): 一便＝いちびん
+
+Kono basu wa nijuupun oki ni ichibin ga arimasu.
+
+*Tuyến xe buýt này cứ cách 20 phút là có 1 chiếc.*
+
+<a id="p0129-b009"></a>
+**25.** ここで降りればいいです。
+
+Furigana (nguồn): 降＝お
+
+Koko de orireba ii desu.
+
+*Cho tôi xuống ở đây được rồi.*
+
+<a id="p0129-b010"></a>
+**26.** 乗り越してしまいました。
+
+Furigana (nguồn): 乗＝の; 越＝こ
+
+Norikoshite shimasimashita.
+
+*Tôi bị lỡ/ nhỡ chuyến tàu/ xe.*
+
+<a id="p0129-b011"></a>
+**27.** いつ降りればいいか教えてくれませんか。
+
+Furigana (nguồn): 降＝お; 教＝おし
+
+Itsu orireba ii ka oshiete kuremasen ka?
+
+*Bạn có thể cho tôi biết khi nào xuống xe được chứ?*
+
+<a id="p0129-b012"></a>
+**28.** 着いたら教えてくれませんか。
+
+Furigana (nguồn): 着＝つ; 教＝おし
+
+Tsuitara oshiete kuremasen ka?
+
+*Nếu đến nơi nói cho tôi biết được chứ?*
+
+<a id="p0129-b013"></a>
+**29.** すみません、いつ降りたらいいか分かりません。
+
+Furigana (nguồn): 降＝お; 分＝わ
+
+Sumimasen, itsu oritara ii ka wakarimasen.
+
+*Xin lỗi, tôi không biết khi nào xuống thì được.*
+
+<a id="p0129-b014"></a>
+**30.** このバスに乗ればいいです。
+
+Furigana (nguồn): 乗＝の
+
+Kono basu ni noreba ii desu.
+
+*Đi tuyến xe buýt này thì được.*
+
+<a id="p0129-b015"></a>
+**31.** ここで降りればいいです。
+
+Furigana (nguồn): 降＝お
+
+Koko de orireba ii desu.
+
+*Không nên xuống ở đây.*
+
+257
+
+## PDF page 130
+
+<a id="p0130"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0130
+
+- Trang in: 258 (trái), 259 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / 1. XE BUÝT (tiếp); 2. TÀU ĐIỆN NGẦM.
+
+<a id="p0130-b001"></a>
+## Trang 258 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**32.** 次で降りればいいです。
+
+Furigana (nguồn): 次＝つぎ; 降＝お
+
+Tsugi de orireba ii desu.
+
+*Cho tôi xuống ở trạm kế tiếp là được.*
+
+<a id="p0130-b002"></a>
+**33.** バスに乗って、二番目のバス停で降りればいいです。
+
+Furigana (nguồn): 乗＝の; 二番目＝にばんめ; 停＝てい; 降＝お
+
+Basu ni notte, nibanme no basutei de orireba ii desu.
+
+*Lên xe buýt và sau đó xuống trạm thứ 2 thì được.*
+
+<a id="p0130-b003"></a>
+### 2. TÀU ĐIỆN NGẦM
+
+**1.** 一番近い地下鉄の駅はどこですか。
+
+Furigana (nguồn): 一番＝いちばん; 近＝ちか; 地下鉄＝ちかてつ; 駅＝えき
+
+Ichiban chikai chikatetsu no eki wa doko desu ka?
+
+*Nhà ga tàu điện ngầm gần nhất nằm ở đâu?*
+
+<a id="p0130-b004"></a>
+**2.** 地下鉄の路線図がもらえますか。
+
+Furigana (nguồn): 地下鉄＝ちかてつ; 路線図＝ろせんず
+
+Chikatetsu no rosenzu ga moraemasu ka?
+
+*Bạn có thể cho tôi sơ đồ lộ trình tàu điện ngầm không?*
+
+<a id="p0130-b005"></a>
+**3.** 地下鉄で現代美術館まで行けますか。
+
+Furigana (nguồn): 地下鉄＝ちかてつ; 現代＝げんだい; 美術館＝びじゅつかん; 行＝い
+
+Chikatetsu de gendai bijutsukan made ikemasu ka?
+
+*Tôi có thể đi đến viện bảo tàng mỹ thuật bằng tàu điện ngầm được chứ?*
+
+• **Đối thoại:**
+
+地下鉄で現代美術館まで行けますか。
+
+Furigana (nguồn): 地下鉄＝ちかてつ; 現代＝げんだい; 美術館＝びじゅつかん
+
+Chikatetsu de gendai bijutsukan made ikemasu ka?
+
+*Tôi có thể đi đến viện bảo tàng mỹ thuật bằng tàu điện ngầm được chứ?*
+
+258
+
+## Trang 259 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+はい、5番街で降りればいいです。
+
+Furigana (nguồn): 番街＝ばんがい; 降＝お
+
+Hai, gobangai de orireba ii desu.
+
+*Vâng, được chứ, sau đó bạn nên xuống trạm số 5.*
+
+<a id="p0130-b006"></a>
+**4.** どこで代用貨幣が買えますか。
+
+Furigana (nguồn): 代用＝だいよう; 貨幣＝かへい; 買＝か
+
+Doko de daiyoo kahei ga kaemasu ka?
+
+*Tôi có thể mua hàng bằng tiền đồng ở đâu?*
+
+• **Đối thoại:**
+
+どこで代用貨幣が買えますか。
+
+Furigana (nguồn): 代用＝だいよう; 貨幣＝かへい; 買＝か
+
+Doko de daiyoo kahei ga kaemasu ka?
+
+*Tôi có thể mua hàng bằng tiền đồng ở đâu?*
+
+自動販売機で買えます。
+
+Furigana (nguồn): 自動販売機＝じどうはんばいき; 買＝か
+
+Jidoohanbaiki de kaemasu.
+
+*Có thể mua qua máy bán hàng tự động.*
+
+<a id="p0130-b007"></a>
+**5.** 地下鉄は夜も止まらないのですか。
+
+Furigana (nguồn): 地下鉄＝ちかてつ; 夜＝よる; 止＝と
+
+Chikatetsu wa yoru mo tomaranai no desu ka?
+
+*Tàu điện ngầm cũng chạy cả ban đêm hả?*
+
+• **Đối thoại:**
+
+地下鉄は夜も止まらないのですか。
+
+Furigana (nguồn): 地下鉄＝ちかてつ; 夜＝よる; 止＝と
+
+Chikatetsu wo yoru mo tomaranai no desu ka?
+
+*Tàu điện ngầm cũng chạy cả ban đêm hả?*
+
+はい、24時間運行します。
+
+Furigana (nguồn): 時間＝じかん; 運行＝うんこう
+
+Hai, nijuyon jikan unkooshimasu.
+
+*Vâng, nó hoạt động suốt 24 giờ.*
+
+<a id="p0130-b008"></a>
+**6.** 地下鉄は何時まで運行しますか。
+
+Furigana (nguồn): 地下鉄＝ちかてつ; 何時＝いつ; 運行＝うんこう
+
+Chikatetsu wa itsu made unkooshimasu ka?
+
+*Tàu điện ngầm chạy đến mấy giờ?*
+
+259
+
+## PDF page 131
+
+<a id="p0131"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0131
+
+- Trang in: 260 (trái), 261 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / 2. TÀU ĐIỆN NGẦM (tiếp); 3. TAXI.
+
+<a id="p0131-b001"></a>
+## Trang 260 (biên tập)
+
+生活のために日本語会話文句 5500
+
+• **Đối thoại:**
+
+地下鉄は何時まで運行しますか。
+
+Furigana (nguồn): 地下鉄＝ちかてつ; 何時＝いつ; 運行＝うんこう
+
+Chikatetsu wa itsu made unkooshimasu ka?
+
+*Tàu điện ngầm chạy đến mấy giờ?*
+
+終電は夜12時に出ます。
+
+Furigana (nguồn): 終電＝しゅうでん; 夜＝よる; 時＝じ; 出＝で
+
+Shuuden wa yoru nijuu ni demasu.
+
+*Chuyến cuối sẽ xuất phát lúc 12 giờ.*
+
+Ghi chú nối trang (biên tập): Đối thoại tiếp mục 6 ở trang in 259.
+
+<a id="p0131-b002"></a>
+**7.** 急行はこの駅に止まりますか。
+
+Furigana (nguồn): 急行＝きゅうこう; 駅＝えき; 止＝と
+
+Kyuukoo wa kono eki ni tomarimasu ka?
+
+*Tàu tốc hành có ngừng ở nhà ga này không?*
+
+• **Đối thoại:**
+
+急行はこの駅に止まりますか。
+
+Furigana (nguồn): 急行＝きゅうこう; 駅＝えき; 止＝と
+
+Kyuukoo wa kono eki ni tomarimasu ka?
+
+*Tàu tốc hành có ngừng ở nhà ga này không?*
+
+いいえ、普通列車に乗らなければなりません。
+
+Furigana (nguồn): 普通列車＝ふつうれっしゃ; 乗＝の
+
+Iie, futsuu ressha ni noranaketeba narimaen.
+
+*Không, thông thường phải đi tàu lửa.*
+
+<a id="p0131-b003"></a>
+**8.** これは普通列車ですか。
+
+Furigana (nguồn): 普通列車＝ふつうれっしゃ
+
+Kore wa futsuu ressha desu ka?
+
+*Đây là tàu lửa thường hả?*
+
+<a id="p0131-b004"></a>
+**9.** 江戸博物館へはどの出口から出ればいいですか。
+
+Furigana (nguồn): 江戸博物館＝えどはくぶつかん; 出口＝でぐち; 出＝で
+
+Ekihaku butsukan hewa dono deguchi kara derareba ii desu ka?
+
+*Muốn đến viện bảo tàng lịch sử Edo thì nên đi lối nào?*
+
+260
+
+<a id="p0131-b005"></a>
+## Trang 261 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**10.** 南フェリー乗り場へ行くにはどの線に乗りますか。
+
+Furigana (nguồn): 南＝みなみ; 乗＝の; 場＝ば; 行＝い; 線＝せん; 乗＝の
+
+Minami firii noriba he iku niwa dono sen ni norimasu ka?
+
+*Nên đi tuyến nào để đến bến phà phía Nam vậy?*
+
+• **Đối thoại:**
+
+南フェリー乗り場へ行くにはどの線に乗りますか。
+
+Furigana (nguồn): 南＝みなみ; 乗＝の; 場＝ば; 行＝い; 線＝せん; 乗＝の
+
+Minami firii noriba he iku niwa dono sen ni norimasu ka?
+
+*Nên đi tuyến nào để đến bến phà phía Nam vậy?*
+
+1番線また9番線に乗ればいいです。
+
+Furigana (nguồn): 番線＝ばんせん; 番線＝ばんせん; 乗＝の
+
+Ichibansen mata kyuubansen ni noreba ii desu.
+
+*Nên đi tuyến số 1 hoặc số 9.*
+
+<a id="p0131-b006"></a>
+**11.** 渋谷までの料金はいくらですか。
+
+Furigana (nguồn): 渋谷＝しぶや; 料金＝りょうきん
+
+Shibuya made no ryookin wa ikura desu ka?
+
+*Tiền phí đi đến Shibuya là bao nhiêu?*
+
+<a id="p0131-b007"></a>
+### 3. TAXI
+
+**1.** あなたのタクシーは空いていますか。
+
+Furigana (nguồn): 空＝あ
+
+Anata no takushii wa aiteimasu ka?
+
+*Taxi của bạn còn chỗ trống không?*
+
+• **Diễn đạt tương tự:**
+
+あなたのタクシーは貸切ですか。
+
+Furigana (nguồn): 貸切＝かしきり
+
+Anata no takushii wa kashikiri desu ka?
+
+*Taxi của bạn còn chỗ trống không?*
+
+261
+
+## PDF page 132
+
+<a id="p0132"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0132
+
+- Trang in: 262 (trái), 263 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / 3. TAXI (tiếp); 4. TRẢ TIỀN XE.
+
+<a id="p0132-b001"></a>
+## Trang 262 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**2.** あなたのタクシーは貸切ですか。
+
+Anata no takushii wa kashikiri desu ka?
+
+*Có trả tiền taxi trước cho anh không?*
+
+<a id="p0132-b002"></a>
+**3.** このタクシーは予約されましたか。
+
+Furigana (nguồn): 予約＝よやく
+
+Kono takushii wa yoyakusaremashita ka?
+
+*Chuyến taxi này đã được đặt trước chưa?*
+
+<a id="p0132-b003"></a>
+**4.** 三番街へお願いします。
+
+Furigana (nguồn): 三番街＝さんばんまち; 願＝ねが
+
+Sanban machi he onegaishimasu.
+
+*Làm ơn chở tôi đến khu phố 3.*
+
+<a id="p0132-b004"></a>
+**5.** タクシー！
+
+Takushii!
+
+*Taxi!*
+
+<a id="p0132-b005"></a>
+**6.** 空港までお願いします。
+
+Furigana (nguồn): 空港＝くうこう; 願＝ねが
+
+Kuukoo made onegaishimasu.
+
+*Làm ơn cho tôi đến sân bay.*
+
+<a id="p0132-b006"></a>
+**7.** 午後6：30に迎えに出てください。
+
+Furigana (nguồn): 午後＝ごご; 出＝で
+
+Gogo roku: sanjuu ni mukae ni dere kudasai.
+
+*Hãy đến đón tôi lúc 6 giờ 30 chiều nhé.*
+
+<a id="p0132-b007"></a>
+**8.** この住所まで送ってください。
+
+Furigana (nguồn): 住所＝じゅうしょ; 送＝おく
+
+Kono juusho made okutte kudasai.
+
+*Hãy chở giùm tôi đến địa chỉ này.*
+
+<a id="p0132-b008"></a>
+**9.** 何分かのあとタクシーはつきます。
+
+Furigana (nguồn): 何分＝なんぶん
+
+Banpun ka no oto takushii wa tsukimasu?
+
+*Mất khoảng mấy phút đi bằng tắc xi?*
+
+<a id="p0132-b009"></a>
+**10.** お乗りください。
+
+Furigana (nguồn): 乗＝の
+
+Onori kudasai.
+
+262
+
+## Trang 263 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+*Hãy chở giùm.*
+
+<a id="p0132-b010"></a>
+**11.** どこへ行きますか。
+
+Furigana (nguồn): 行＝い
+
+Doko he ikimasu ka?
+
+*Anh đi đâu?*
+
+<a id="p0132-b011"></a>
+**12.** どこへ行きたいのですか。
+
+Furigana (nguồn): 行＝い
+
+Doko he ikitai no desu ka?
+
+*Anh muốn đi đâu?*
+
+<a id="p0132-b012"></a>
+**13.** どれぐらい走りましたか。
+
+Furigana (nguồn): 走＝はし
+
+Dore gurai hashiri mashita ka?
+
+*Bạn đã chạy mất bao lâu?*
+
+<a id="p0132-b013"></a>
+### 4. TRẢ TIỀN XE
+
+**1.** バス代はいくらなのか知っていますか。
+
+Furigana (nguồn): 代＝だい; 知＝し
+
+Basudai wa ikura nano ka shitteimasu ka?
+
+*Bạn có biết một chuyến xe buýt tốn khoảng bao nhiêu tiền không?*
+
+<a id="p0132-b014"></a>
+**2.** バス代はいくらですか。
+
+Furigana (nguồn): 代＝だい
+
+Basudai wa ikura desu ka?
+
+*Phí xe buýt tốn khoảng bao nhiêu?*
+
+<a id="p0132-b015"></a>
+**3.** 一人当たりは200円です。
+
+Furigana (nguồn): 一人＝ひとり; 当＝あ; 円＝えん
+
+Hitori atari wa nihyakuen desu.
+
+*Một người 200 yên.*
+
+<a id="p0132-b016"></a>
+**4.** これは500円です。おつりは要りません。
+
+Furigana (nguồn): 要＝い
+
+Kore wa gohyakuen desu. Otsuri wa irimasen.
+
+*Đây là 500 yên. Không cần thối lại.*
+
+263
+
+## PDF page 133
+
+<a id="p0133"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0133
+
+- Trang in: 264 (trái), 265 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / 4. TRẢ TIỀN XE (tiếp); 5. TỰ LÁI XE.
+
+<a id="p0133-b001"></a>
+## Trang 264 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**5.** 航空券はちょうど6万円になります。
+
+Furigana (nguồn): 航空券＝こうくうけん; 万円＝まんえん
+
+Kookuuken wa choodo rokumanen ni narimasu.
+
+*Vé máy bay đúng 6 vạn yên.*
+
+<a id="p0133-b002"></a>
+**6.** 上海オーバーの料金はいくらですか。
+
+Furigana (nguồn): 料金＝りょうきん
+
+Shanhai oobaa no ryookin wa ikura desu ka?
+
+*Tiền phí đến Thượng Hải khoảng bao nhiêu?*
+
+<a id="p0133-b003"></a>
+**7.** 託送料金はいくらですか。
+
+Furigana (nguồn): 託送＝たくそう; 料金＝りょうきん
+
+Takusoo ryookin wa ikura desu ka?
+
+*Tiền phí chở về nhà khoảng bao nhiêu tiền?*
+
+<a id="p0133-b004"></a>
+**8.** 往復のチケットはいくらですか。
+
+Furigana (nguồn): 往復＝おうふく
+
+Oofuku no chiketto wa ikura desu ka?
+
+*Vé khứ hồi khoảng bao nhiêu tiền?*
+
+<a id="p0133-b005"></a>
+**9.** 子供の切符は半額です。
+
+Furigana (nguồn): 子供＝こども; 切符＝きっぷ; 半額＝はんがく
+
+Kodomo no kippu wa hangaku desu.
+
+*Vé trẻ em thì bán nửa vé.*
+
+<a id="p0133-b006"></a>
+**10.** ありがとう。100円にしましょう。
+
+Furigana (nguồn): 円＝えん
+
+Arugatoo. Hyakuen ni shimashoo.
+
+*Cảm ơn, lấy cho tôi loại 100 yên.*
+
+<a id="p0133-b007"></a>
+### 5. TỰ LÁI XE
+
+**1.** 私は駐車違反で罰金をとられてしまった。
+
+Furigana (nguồn): 私＝わたし; 駐車＝ちゅうしゃ; 違反＝いはん; 罰金＝ばっきん
+
+Watashi wa chuusha ihan de bakinn wo torarete shimatta.
+
+*Tôi đã bị mất phí tiền phạt vì đỗ xe sai chỗ.*
+
+• **Diễn đạt mở rộng:**
+
+彼女はスピード違反で罰金をとられてしまった。
+
+Furigana (nguồn): 彼女＝かのじょ; 違反＝いはん; 罰金＝ばっきん
+
+264
+
+## Trang 265 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+Kanojo wa supiddo ihan de bakkin wo torarete shimatta.
+
+*Cô ấy bị mất phí tiền phạt vì chạy quá tốc độ.*
+
+<a id="p0133-b008"></a>
+**2.** 運転免許を持っていますか。
+
+Furigana (nguồn): 運転免許＝うんてんめんきょ; 持＝も
+
+Untenmenkyo wo motteimasu ka?
+
+*Bạn có bằng lái xe không?*
+
+<a id="p0133-b009"></a>
+**3.** わたしは交通渋滞がいやだ。
+
+Furigana (nguồn): 交通渋滞＝こうつうじゅうたい
+
+Watashi wa kootsuu juutai ga iya da.
+
+*Tôi ghét nạn kẹt xe lắm.*
+
+<a id="p0133-b010"></a>
+**4.** わたしは真新しいスポーツカーを買いました。
+
+Furigana (nguồn): 真新＝まあたら
+
+Watashi wa maatarashii supootsukaa wo kaimashita.
+
+*Tôi đã mua một chiếc xe thể thao thương hiệu mới.*
+
+• **Diễn đạt mở rộng:**
+
+彼の服は真新しくみえる。
+
+Furigana (nguồn): 彼＝かれ; 服＝ふく; 真新＝まあたら
+
+Kare no fuku wa maatarashiku mieru.
+
+*Bộ đồ của anh ấy là hàng thương hiệu mới.*
+
+<a id="p0133-b011"></a>
+**5.** わたしは車を運転するとき緊張します。
+
+Furigana (nguồn): 車＝くるま; 運転＝うんてん; 緊張＝きんちょう
+
+Watashi wa kuruma wo untensuru toki kinchooshimasu.
+
+*Tôi cảm thấy lo lắng khi lái xe.*
+
+<a id="p0133-b012"></a>
+**6.** わたしはあまり車を運転しない。
+
+Furigana (nguồn): 車＝くるま; 運転＝うんてん
+
+Watashi wa amari kuruma wo unten shinai.
+
+*Tôi không thích lái xe hơi lắm.*
+
+<a id="p0133-b013"></a>
+**7.** わたしは毎日車で出勤する。
+
+Furigana (nguồn): 毎日＝まいにち; 車＝くるま; 出勤＝しゅっきん
+
+Watashi wa mainichi kuruma de shukkinsuru.
+
+*Tôi đi làm mỗi ngày bằng xe hơi.*
+
+265
+
+## PDF page 134
+
+<a id="p0134"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0134
+
+- Trang in: 266 (trái), 267 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / 5. TỰ LÁI XE (tiếp); 6. TÌM BÃI ĐẬU XE.
+
+<a id="p0134-b001"></a>
+## Trang 266 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**8.** わたしは多くの時間をかけて車の手入れをしています。
+
+Furigana (nguồn): 多＝おお; 時間＝じかん; 車＝くるま; 手入＝てい
+
+Watashi wa ooku no jikan wo kakete kuruma no teire wo shiteimasu.
+
+*Tôi mất nhiều thời gian mới mua được chiếc xe hơi.*
+
+<a id="p0134-b002"></a>
+**9.** わたしは交通の渋滞が嫌いだ。
+
+Furigana (nguồn): 交通＝こうつう; 渋滞＝じゅうたい; 嫌＝きら
+
+Watashi wa kootsuu no juutai ga kirai da.
+
+*Tôi ghét cảnh kẹt xe.*
+
+<a id="p0134-b003"></a>
+**10.** 駐車場を捜すことは面倒だ。
+
+Furigana (nguồn): 駐車場＝ちゅうしゃじょう; 捜＝さが; 面倒＝めんどう
+
+Chuushajoo wo sagasu koto wa mendoo da.
+
+*Việc tìm bãi đậu xe thật là phiền phức.*
+
+<a id="p0134-b004"></a>
+### 6. TÌM BÃI ĐẬU XE
+
+**1.** ここに止まってもいいですか。
+
+Koko ni tomattemo ii desu ka?
+
+*Tôi đậu xe ở đây được chứ?*
+
+• **Đối thoại:**
+
+ここに止まってもいいですか。
+
+Koko ni tomattemo ii desu ka?
+
+*Tôi đậu xe ở đây được chứ?*
+
+いいえ、駐車場は建物の裏にあります。
+
+Furigana (nguồn): 駐車場＝ちゅうしゃじょう; 建物＝たてもの; 裏＝うら
+
+Iie, chuushajoo wa tatemono no ura ni arimasu.
+
+*Không được đâu, bãi đậu xe ở phía sau tòa nhà.*
+
+<a id="p0134-b005"></a>
+**2.** ここに駐車しましょう。
+
+Furigana (nguồn): 駐車＝ちゅうしゃ
+
+Koko ni chuusha shimashoo.
+
+*Đậu xe ở đây được?*
+
+266
+
+<a id="p0134-b006"></a>
+## Trang 267 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**3.** どこに駐車しなければいけないの。
+
+Furigana (nguồn): 駐車＝ちゅうしゃ
+
+Doko ni chuushashinakereba ikenai no?
+
+*Tôi phải đậu xe ở đâu?*
+
+<a id="p0134-b007"></a>
+**4.** あそこに駐車場があります。
+
+Furigana (nguồn): 駐車場＝ちゅうしゃじょう
+
+Asoko ni chuushajoo ga arimasu.
+
+*Ở đó có bãi đậu xe.*
+
+<a id="p0134-b008"></a>
+**5.** 駐車する空き地を探さなければありません。
+
+Furigana (nguồn): 駐車＝ちゅうしゃ; 空＝あ; 地＝ち; 探＝さが
+
+Chuushasuru akichi wo sagasanakereba arimasen.
+
+*Tôi phải tìm bãi đậu xe trước.*
+
+<a id="p0134-b009"></a>
+**6.** ここには駐車できません。
+
+Furigana (nguồn): 駐車＝ちゅうしゃ
+
+Koko niwa chuusha dekimasen.
+
+*Không thể đậu xe ở đây.*
+
+<a id="p0134-b010"></a>
+**7.** ここに駐車すれば罰金されます。
+
+Furigana (nguồn): 駐車＝ちゅうしゃ; 罰金＝ばっきん
+
+Koko ni chuusha sureba bakkinn saremasu.
+
+*Nếu đậu xe ở đây sẽ bị phạt tiền.*
+
+<a id="p0134-b011"></a>
+**8.** ここには8時以降駐車できません。
+
+Furigana (nguồn): 時＝じ; 以降＝いこう; 駐車＝ちゅうしゃ
+
+Koko niwa hachiji ikoo chuusha dekimasen.
+
+*Không thể đậu xe ở đây hơn 8 giờ.*
+
+<a id="p0134-b012"></a>
+**9.** 駐車するところはありません。
+
+Furigana (nguồn): 駐車＝ちゅうしゃ
+
+Chuushasuru tokoro wa arimasen.
+
+*Không có bãi đậu xe.*
+
+<a id="p0134-b013"></a>
+**10.** この辺りにモータープールはありません。
+
+Furigana (nguồn): 辺＝あた
+
+Kono atari ni mootaapuuru wa arimasen.
+
+*Ở vùng này không có hồ bơi.*
+
+267
+
+## PDF page 135
+
+<a id="p0135"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0135
+
+- Trang in: 268 (trái), 269 (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / 6. TÌM BÃI ĐẬU XE (tiếp); TỪ VỰNG QUAN TRỌNG.
+
+<a id="p0135-b001"></a>
+## Trang 268 (biên tập)
+
+生活のために日本語会話文句 5500
+
+**11.** 店の裏には小さな駐車場があります。
+
+Furigana (nguồn): 店＝みせ; 裏＝うら; 小＝ちい; 駐車場＝ちゅうしゃじょう
+
+Mise no ura niwa chiisana chuushajoo ga arimasu.
+
+*Có một bãi đậu xe nhỏ phía sau tiệm.*
+
+<a id="p0135-b002"></a>
+## TỪ VỰNG QUAN TRỌNG
+
+### Xe buýt
+
+- 降りる — xuống (xe, núi...)
+- シャトルバス — xe buýt tuyến ngắn
+- 教える — chỉ, bảo, dạy
+  Furigana (nguồn): 教＝おし
+- 乗り換える — đổi xe, sang xe
+  Furigana (nguồn): 乗＝の; 換＝か
+- 直行 — chạy suốt
+  Furigana (nguồn): 直行＝ちょっこう
+- 拾う — lượm, nhặt
+  Furigana (nguồn): 拾＝ひろ
+- 着く — đến, tới
+  Furigana (nguồn): 着＝つ
+- 乗り越す — đi vượt qua
+- 次 — lần sau, tiếp đến
+
+<a id="p0135-b003"></a>
+### Tàu điện ngầm
+
+- 止まる — dừng lại, ngừng
+  Furigana (nguồn): 止＝と
+- 運行 — sự vận động
+  Furigana (nguồn): 運行＝うんこう
+- 終電 — chuyến xe điện
+  Furigana (nguồn): 終電＝しゅうでん
+- 乗り場 — điểm lên xe
+  Furigana (nguồn): 乗＝の; 場＝ば
+
+268
+
+<a id="p0135-b004"></a>
+## Trang 269 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+### Taxi
+
+- タクシー — tắc xi
+- 貸切 — tiền đồng, tiền xu
+  Furigana (nguồn): 貸切＝かしきり
+- 空港 — sân bay
+  Furigana (nguồn): 空港＝くうこう
+- 住所 — địa chỉ, nơi sống
+  Furigana (nguồn): 住所＝じゅうしょ
+
+<a id="p0135-b005"></a>
+### Trả tiền xe
+
+- 当たり — đúng, trúng (số)
+  Furigana (nguồn): 当＝あ
+- 航空券 — vé máy bay
+  Furigana (nguồn): 航空券＝こうくうけん
+- アーバー — cây thông
+- 託送 — giao nhận
+  Furigana (nguồn): 託送＝たくそう
+- チケット — vé, tem phiếu
+- 切符 — vé
+
+<a id="p0135-b006"></a>
+### Tự lái xe
+
+- 免許 — giấy phép (lái xe)
+  Furigana (nguồn): 免許＝めんきょ
+- 交通渋滞 — nạn kẹt xe
+  Furigana (nguồn): 交通渋滞＝こうつうじゅうたい
+- 真新しい — thương hiệu mới
+  Furigana (nguồn): 真新＝まあたら
+- 手入れて — có trong tay
+  Furigana (nguồn): 手入＝てはい
+- 面倒 — phiền phức, rắc rối
+  Furigana (nguồn): 面倒＝めんどう
+
+269
+
+## PDF page 136
+
+<a id="p0136"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0136
+
+- Trang in: 270 (trái), không có số trang (phải).
+- Đường dẫn nội dung: CHƯƠNG 2 / SINH HOẠT THƯỜNG NGÀY / IV. PHƯƠNG TIỆN VẬN CHUYỂN / TỪ VỰNG QUAN TRỌNG (tiếp); thông tin xuất bản.
+
+<a id="p0136-b001"></a>
+## Trang 270 (biên tập)
+
+生活のために日本語会話文句 5500
+
+### Tìm bãi đậu xe
+
+- 駐車 — đậu xe
+  Furigana (nguồn): 駐車＝ちゅうしゃ
+- 裏 — phía sau
+  Furigana (nguồn): 裏＝うら
+- 空き地 — đất trống
+  Furigana (nguồn): 空＝あ; 地＝ち
+- 罰金 — tiền phạt
+  Furigana (nguồn): 罰金＝ばっきん
+- 以降 — sau đó
+  Furigana (nguồn): 以降＝いこう
+
+270
+
+<a id="p0136-b002"></a>
+## Panel phải: thông tin xuất bản (biên tập)
+
+5500 CÂU GIAO TIẾP TIẾNG NHẬT
+TRONG SINH HOẠT HẰNG NGÀY
+
+Tri Thức Việt
+
+NHÀ XUẤT BẢN HỒNG ĐỨC
+
+65 Tràng Thi, Quận Hoàn Kiếm, Hà Nội
+
+ĐT : 39.260.031
+
+<a id="p0136-b003"></a>
+- Chịu trách nhiệm xuất bản : Giám đốc - BÙI VIỆT BẮC
+- Chịu trách nhiệm nội dung : Tổng biên tập - LÝ BÁ TOÀN
+- Biên tập : Nguyễn Thế Vinh
+- Biên tập Văn Lang : Hải Yến
+- Trình bày : Thanh Lan
+- Vẽ bìa : Nguyễn Tuấn
+- Sửa bản in : Hải Yến
+
+<a id="p0136-b004"></a>
+CÔNG TY CP VĂN HÓA VĂN LANG - NS. VĂN LANG
+
+40 - 42 Nguyễn Thị Minh Khai, Q.1, TP.HCM
+
+ĐT : 38.242157 - 38.233022 - Fax : 38.235079
+
+<a id="p0136-b005"></a>
+In 1.500 cuốn khổ 12x20 cm tại Xưởng in Cty CP Văn hóa Văn Lang
+06 Nguyễn Trung Trực, P.5, Q.Bình Thạnh, Tp.HCM.
+
+Xác nhận ĐKXB số : 1120-2015/CXBIPH/36-26/HĐ.
+
+QĐXB số : 1190/QĐ - NXBHĐ, ngày 16/05/2015.
+
+ISBN : 978-604-86-5757-4.
+
+In xong và nộp lưu chiểu quý 3 năm 2015.
+

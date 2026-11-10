@@ -3,11 +3,11 @@
 - Source: `book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf` (136 physical PDF pages).
 - Source SHA-256: `c8933782539c7bbe8ac755f2278bb7a6d7cf0d9165843c9ef14a198993b1825a`.
 - Output mode: text only.
-- Status after `build`: **74 verified, 36 needs_review, 26 pending**; `build_current=true`.
-- Next page: **physical PDF p111**; pending interval **p111–p136**.
-- Verified physical PDF pages: p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p17, p18, p19, p20, p21, p23, p28, p29, p30, p35, p36, p37, p38, p39, p42, p45, p47, p49, p50, p57, p61, p66, p67, p72, p73, p76, p77, p78, p79, p80, p81, p82, p83, p84, p85, p86, p87, p88, p89, p90, p91, p92, p93, p94, p95, p96, p97, p98, p99, p100, p101, p102, p103, p104, p105, p106, p107, p108, p109, p110.
+- Status after final `reconcile` + `build`: **100 verified, 36 needs_review, 0 pending**; `build_current=true`. Still **INCOMPLETE**, not accepted.
+- No pending page remains. Every physical PDF page has been processed; the 36 source-obscured pages below require a better scan.
+- Verified physical PDF pages: p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p17, p18, p19, p20, p21, p23, p28, p29, p30, p35, p36, p37, p38, p39, p42, p45, p47, p49, p50, p57, p61, p66, p67, p72, p73, p76, p77, p78, p79, p80, p81, p82, p83, p84, p85, p86, p87, p88, p89, p90, p91, p92, p93, p94, p95, p96, p97, p98, p99, p100, p101, p102, p103, p104, p105, p106, p107, p108, p109, p110, p111, p112, p113, p114, p115, p116, p117, p118, p119, p120, p121, p122, p123, p124, p125, p126, p127, p128, p129, p130, p131, p132, p133, p134, p135, p136.
 - Partial output: `book.md`, `search.jsonl`, `build.json` in this book corpus directory; each page has `pages/pNNNN.md` and `.json`.
-- Latest worker: `production_book_09_sol_cont4`; token `production_book_09_sol_cont4_20261111_b7ef`. Claim released after final validation; no active writer remains.
+- Latest worker: `production_book_09_sol_cont5`; claim released after final validation. No active writer remains.
 
 ## Source issues requiring a better scan
 
@@ -80,7 +80,7 @@
 - Final reconcile + build + status: **54 verified / 36 needs_review / 46 pending**, `build_current=true`, all page error arrays empty. Still **INCOMPLETE**, not accepted. Claim released cleanly after final validation.
 - Closed page checkpoint at physical p90. Next pending page **p91**; interval **p91–p136** has not been rendered/read by this worker.
 
-## Latest continuation checkpoint — PDF p91–p110
+## Previous continuation checkpoint — PDF p91–p110
 
 - Worker model: `gpt-6-sol/high`, user instruction and skill 0.2.4. Source SHA-256 independently rechecked and unchanged. Only this book corpus and temporary cache were written; no Git, tools/skills, source PDF or other-book changes.
 - New verified pages: **p91–p110** (20 physical pages). Actual full4x source spread and all four quadrant crops opened per page. Compared image→Markdown and each Markdown line→image for Japanese, romanization, Vietnamese accents, exact source furigana occurrence/span, headings and folios. No OCR used. Source mistakes and translation mismatches retained.
@@ -92,10 +92,22 @@
 - Final reconcile + build + status: **74 verified / 36 needs_review / 26 pending**, `build_current=true`, no page validation errors. Still **INCOMPLETE**, not accepted. Partial book SHA-256 `c34fa3991d2756bb4811f44130331bdfc04df103fc5f39f0183828b0b155fb93`.
 - Clean closed checkpoint at physical p110. Next pending physical PDF page **p111**; interval **p111–p136** has not been rendered/read by this worker. Claim released cleanly after final validation.
 
+## Latest continuation checkpoint — PDF p111–p136
+
+- Worker model: `gpt-6-sol/high`, user instruction and skill 0.2.4. CLI rechecked the unchanged source SHA-256. Only this book corpus and temporary cache were written; no Git, tools/skills, source PDF or other-book changes.
+- New verified pages: **p111–p136** (26 physical pages). Actual full4x source spread and all four quadrant crops opened per page. Compared source→Markdown and every Markdown line/row→source for Japanese, romanization, Vietnamese accents, exact printed furigana occurrence/span, headings, folios and final colophon. No OCR used. Source mistakes and translation mismatches retained.
+- Additional focused crops: p127 city name confirms `シテェー`; p129 enlarged ruby confirms `十分以内＝じゅうぶいない`; p136 enlarged author label confirms printed `Tri Thức Việt` (no acute accent on the first i). P136 blank lower-left/upper-right regions also opened in quadrants, final colophon read in full; small ornamental logos/lines omit no text.
+- Coordinator finding p115 item4: reopened original q3, corrected fullwidth `２` to printed narrow ASCII `2`, recorded and reverified p115 with fresh matching evidence. No other already-verified page outside this continuation interval was edited.
+- No additional source issue in p111–p136. Existing **36 needs_review** pages remain unresolved and excluded from `book.md`/`search.jsonl`; complete readable partial drafts and local unreadable markers are retained. A better scan is required; hidden characters were not inferred.
+- Exact physical PDF pages blocked by source: **p1, p16, p22, p24, p25, p26, p27, p31, p32, p33, p34, p40, p41, p43, p44, p46, p48, p51, p52, p53, p54, p55, p56, p58, p59, p60, p62, p63, p64, p65, p68, p69, p70, p71, p74, p75**. Issue locations are detailed above and in each page checkpoint.
+- Cross-page joins checked: vocabulary p111→p112, p114 item26 expansion→p115, p115 item8 alternative→p116, p122 item5 dialogue→p123, p128 item17 dialogue reply→p129, p130 item6 dialogue→p131. Cross-panel joins checked p115 item2 dialogue, p117 item10 dialogue, p119 item2 translation, p124 item10 dialogue, p128 item13 dialogue, p130 item3 dialogue, p132 item10 translation, p133 item1 expansion.
+- Source irregularities retained include p113 `迎＝むか`/mukae; p114 Kaorosan/Kaoro/mijikaku/`フイチキン`; p115 `酔＝すい; 払＝ばら`/Suibbaratta; p116 `彼らかが`/Kareraka and `ビールをも一杯`; p117 tebburu/`どこのお座り`; p118 `持っている`/motteiru and `一＝いち`; p119 `焼きできだ`/na yaki deki da/suppu; p120 `馳走＝ちそう`; p121 `役＝えき` and mismatched food glosses; p122 `順米`; p123 Chookyoori/`話中＝はなしちゅう`; p124 yondema / irimasu line split; p125 ainuku/nani ga; p126 robyaku/okake shoo/`英明＝ひであさ`; p127 `シテェー`/Shiteii; p128 rosensu/deus/`中心＝ちゅうしん`; p129 `十分以内＝じゅうぶいない`/Kono kara/shimasimashita; p130 dialogue3 missing 行 ruby/roman dialogue5 wo/`何時＝いつ`; p131 nijuu ni/noranaketeba narimaen/Ekihaku butsukan/firii; p132 Banpun/oto/dere; p133 Arugatoo/bakinn/supiddo/`上海オーバー`; p134 `なければありません`/bakkinn/pool translation; p135 `手入れて＝てはい`/`貸切` gloss tiền đồng, tiền xu. These preserve observations, not editorial repairs.
+- Final validation: reconcile + build + status: **100 verified / 36 needs_review / 0 pending**, all page error arrays empty, `build_current=true`. Every physical page is checkpointed, but this remains **INCOMPLETE** because source-obscured pages cannot be verified. Claim released cleanly after validation.
+- Partial book SHA-256: `2496b788c139070d6456b2a1ff7ee9de4f3900162a640e721959e5924eb94732`. Search SHA-256: `31a212c4ea0c32c9885e7cf28510b96c3e9236c63b7e2211143001c9cfb6b2ed`.
+
 ## Resume instructions
 
-- Recover/claim using `kaiwa_skill/tools/ingest.py`; reconcile and check source hash before writing.
-- Continue at physical PDF p111, then each pending page through p136. The 36 `needs_review` pages already have local partial drafts and issue records. Do not infer text behind the black binding edge.
-- Render each page and inspect the full spread plus quadrant crops; compare transcription to image in both directions, including Japanese, romanization, Vietnamese, headings, page numbers and printed furigana occurrence/span. Verify with page evidence only when completely readable; otherwise record partial text with local unreadable markers and `needs_review`.
-- Images and scratch drafts for p18–p110 are under `kaiwa_skill/.cache/renders/<book_id>/`; these are temporary reference files.
-- Build partial at checkpoints, and run final build/reconcile/quality checks after all pages are processed. No Git operation was performed by this worker.
+- No pending transcription page remains. Coordinator may QA and save this truthful WIP; do not mark accepted or complete while the 36 source-obscured pages remain `needs_review`.
+- Resolving those pages requires a better source. Do not infer the black-binding text or blurred p1 contact details. Preserve current partial drafts/issues until readable evidence is available.
+- Images, crops, scratch drafts/review JSON and checkpoint helper remain temporary under `kaiwa_skill/.cache/renders/<book_id>/`; they are not output assets and must not be committed.
+- Source PDFs remain read-only. No Git operation was performed by this worker.
