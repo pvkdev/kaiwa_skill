@@ -44,18 +44,32 @@ def main():
         row["build_current"] = current.get("build_current", False)
         row["claim_owner"] = (current.get("claim") or {}).get("owner")
         row["status_error"] = current.get("error")
-        if (root / "corpus" / row["book_id"] / "manifest.json").exists():
-            directory, manifest, _ = ingest.load_book(root, row["book_id"])
-            detail = ingest.status(directory, manifest)
-            row["pending_pages"] = ranges([int(p) for p, state in detail["pages"].items() if state["status"] != "verified"])
+        directory = root / "corpus" / row["book_id"]
+        row["current_build_sha256"] = None
+        if row["status_error"]:
+            row["pending_pages"] = "unknown: source or checkpoint error"
+        elif (directory / "manifest.json").exists():
+            try:
+                directory, manifest, _ = ingest.load_book(root, row["book_id"])
+                detail = ingest.status(directory, manifest)
+                row["pending_pages"] = ranges([int(p) for p, state in detail["pages"].items() if state["status"] != "verified"])
+                if row["build_current"]:
+                    row["current_build_sha256"] = ingest.sha(directory / "build.json")
+            except (ingest.IngestError, OSError, KeyError, TypeError, ValueError) as exc:
+                row["status_error"] = str(exc)
+                row["pending_pages"] = "unknown: source or checkpoint error"
+                row["build_current"] = False
         else:
             row["pending_pages"] = f"1-{row['total_pages']}"
-        if row["coordinator_acceptance"] == "accepted" and row["counts"].get("verified") == row["total_pages"] and row["build_current"] and not row["issue_count"]:
+        acceptance_current = bool(row.get("accepted_build_sha256")) and row.get("accepted_build_sha256") == row["current_build_sha256"]
+        if row["coordinator_acceptance"] == "accepted" and not acceptance_current:
+            row["coordinator_acceptance"] = "stale_requires_audit"
+        if row["coordinator_acceptance"] == "accepted" and acceptance_current and row["counts"].get("verified") == row["total_pages"] and row["build_current"] and not row["issue_count"] and not row["status_error"]:
             row["status"] = "accepted"
-        elif row.get("worker_state") == "running":
-            row["status"] = "in_progress"
         elif row["issue_count"] or row["status_error"]:
             row["status"] = "needs_review"
+        elif row.get("worker_state") == "running":
+            row["status"] = "in_progress"
         elif row["counts"].get("verified") == row["total_pages"]:
             row["status"] = "awaiting_coordinator_audit"
         elif row["counts"].get("verified", 0):
