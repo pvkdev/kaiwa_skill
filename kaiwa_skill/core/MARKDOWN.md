@@ -31,7 +31,8 @@ Nhãn mô tả không in trên sách phải ghi rõ `(biên tập)`, kể cả n
 ## Bảng và hình
 
 - Bảng dùng Markdown nếu bảo toàn được các ô. Bảng phức tạp có thể dùng HTML tối thiểu hoặc danh sách ghi rõ nhãn cột; không làm mất quan hệ hàng/cột.
-- Hình có chữ phải phiên âm chữ đọc được; hình mang nghĩa lưu crop trong assets và liên kết tương đối. Mô tả AI có nhãn `Mô tả hình (biên tập)` và không thay thế ảnh.
+- Đầu ra chỉ có text, không dùng Markdown image, thẻ img/SVG, data URI hoặc liên kết tới hình để thay cho nội dung. Hình có chữ phải chép chữ đọc được; hình mang nghĩa chuyển thành `Mô tả hình (biên tập)` đủ thông tin để hiểu tình huống/bài tập mà không cần ảnh. Giữ quan hệ, thứ tự, người/vật, nhãn và dữ kiện thực sự thấy trong hình; không suy diễn lời thoại, ý định hoặc chi tiết không nhìn rõ. Hình trang trí không mang nội dung học có thể bỏ qua. Nếu không thể diễn đạt chính xác, ghi issue, không đánh dấu verified.
+- Bài luyện kaiwa được soạn sau này cũng dùng text để nêu bối cảnh, vai, nhiệm vụ và diễn biến, không yêu cầu người học nhìn hình.
 - Nội dung không đọc được: đánh dấu `[không đọc được: vị trí]`, ghi issue, không cho verified.
 - Giữ header/footer hữu ích (tên unit, trang, tham chiếu). Các yếu tố trang trí có thể mô tả trong review, không giả làm nội dung văn bản.
 

@@ -58,6 +58,7 @@ class IngestTests(unittest.TestCase):
         self.assertEqual(catalog["books"][0]["id"], self.book)
         self.assertEqual(catalog["books"][0]["page_count"], 2)
         self.assertEqual(catalog["books"][0]["source"], "book/tiny.pdf")
+        self.assertEqual(self.manifest["output_mode"], "text_only")
         self.draft_page()
         self.assertEqual(self.source.read_bytes(), self.original_source)
 
@@ -228,36 +229,36 @@ class IngestTests(unittest.TestCase):
 
     def test_assets_validate_and_rebase_and_blocks_index(self):
         self.draft_page()
-        self.draft.write_text("![crop](../assets/missing.png)", encoding="utf-8")
+        self.draft.write_text("[reference](../assets/missing.txt)", encoding="utf-8")
         with self.assertRaises(ingest.IngestError):
             ingest.record_page(self.directory, self.manifest, 1, self.draft)
         assets = self.directory / "assets"
         assets.mkdir()
-        (assets / "crop.png").write_bytes(b"fixture")
-        self.draft.write_text('# Unit 4 — Shopping\n\nPrinted page 21\n\n<a id="p0001-b001"></a>\nFirst\n![crop](../assets/crop.png)\n<a id="p0001-b002"></a>\nSecond', encoding="utf-8")
+        (assets / "reference.txt").write_bytes(b"fixture")
+        self.draft.write_text('# Unit 4 — Shopping\n\nPrinted page 21\n\n<a id="p0001-b001"></a>\nFirst\n[reference](../assets/reference.txt)\n<a id="p0001-b002"></a>\nSecond', encoding="utf-8")
         ingest.record_page(self.directory, self.manifest, 1, self.draft)
         self.verify_fixture()
         self.run_cli("build", self.book)
-        self.assertIn("pages/../assets/crop.png", (self.directory / "book.md").read_text(encoding="utf-8"))
+        self.assertIn("pages/../assets/reference.txt", (self.directory / "book.md").read_text(encoding="utf-8"))
         rows = [json.loads(line) for line in (self.directory / "search.jsonl").read_text(encoding="utf-8").splitlines()]
         self.assertEqual([row["block_id"] for row in rows], ["p0001-b001", "p0001-b002"])
         self.assertTrue(all("Unit 4 — Shopping" in row["context"] and "Printed page 21" in row["context"] for row in rows))
-        self.assertTrue(all(row["asset_sha256"] == {"assets/crop.png": ingest.sha(assets / "crop.png")} for row in rows))
-        (assets / "crop.png").unlink()
+        self.assertTrue(all(row["asset_sha256"] == {"assets/reference.txt": ingest.sha(assets / "reference.txt")} for row in rows))
+        (assets / "reference.txt").unlink()
         self.assertEqual(self.run_cli("build", self.book)["verified_pages"], [])
 
     def test_changed_asset_invalidates_review_and_build_until_rereview(self):
         assets = self.directory / "assets"
         assets.mkdir()
-        crop = assets / "crop.png"
-        crop.write_bytes(b"original crop")
-        self.draft.write_text("![crop](../assets/crop.png)", encoding="utf-8")
+        crop = assets / "reference.txt"
+        crop.write_bytes(b"original text")
+        self.draft.write_text("[reference](../assets/reference.txt)", encoding="utf-8")
         self.draft_page()
         old_evidence = self.verify_fixture()
-        self.assertEqual(old_evidence["asset_sha256"], {"assets/crop.png": ingest.sha(crop)})
+        self.assertEqual(old_evidence["asset_sha256"], {"assets/reference.txt": ingest.sha(crop)})
         self.run_cli("build", self.book)
         self.assertTrue(self.run_cli("status", self.book)["build_current"])
-        crop.write_bytes(b"different crop")
+        crop.write_bytes(b"different text")
         self.assertFalse(self.run_cli("status", self.book)["build_current"])
         with self.assertRaises(ingest.IngestError):
             ingest.verify_page(self.directory, self.manifest, 1, old_evidence)
@@ -269,7 +270,7 @@ class IngestTests(unittest.TestCase):
         self.run_cli("build", self.book)
         self.assertTrue(self.run_cli("status", self.book)["build_current"])
         marker = ingest.read_json(self.directory / "build.json")
-        self.assertEqual(marker["page_asset_hashes"], {"1": {"assets/crop.png": ingest.sha(crop)}})
+        self.assertEqual(marker["page_asset_hashes"], {"1": {"assets/reference.txt": ingest.sha(crop)}})
 
     def test_legacy_plain_text_review_and_build_remain_valid(self):
         self.draft_page()
@@ -289,8 +290,8 @@ class IngestTests(unittest.TestCase):
     def test_legacy_asset_review_without_hash_binding_rejected(self):
         assets = self.directory / "assets"
         assets.mkdir()
-        (assets / "crop.png").write_bytes(b"crop")
-        self.draft.write_text("<img src='../assets/crop.png'>", encoding="utf-8")
+        (assets / "reference.txt").write_bytes(b"reference")
+        self.draft.write_text("[reference](../assets/reference.txt)", encoding="utf-8")
         self.draft_page()
         self.verify_fixture()
         state_path = ingest.page_paths(self.directory, 1)[0]
@@ -299,6 +300,122 @@ class IngestTests(unittest.TestCase):
         state["evidence"].pop("asset_sha256")
         ingest.atomic_json(state_path, state)
         self.assertEqual(self.run_cli("build", self.book)["verified_pages"], [])
+
+    def test_missing_cache_preserves_verified_text_but_blocks_new_verify(self):
+        self.draft_page()
+        evidence = self.verify_fixture()
+        self.run_cli("build", self.book)
+        render = ingest.page_paths(self.directory, 1)[2]
+        self.assertEqual(render, self.root / ".cache" / "renders" / self.book / "p0001.png")
+        self.assertFalse((self.directory / "renders").exists())
+        render.unlink()
+        result = self.run_cli("status", self.book)
+        self.assertEqual(result["counts"]["verified"], 1)
+        self.assertTrue(result["build_current"])
+        self.assertEqual(self.run_cli("build", self.book)["verified_pages"], [1])
+        with self.assertRaisesRegex(ingest.IngestError, "fresh verification"):
+            ingest.verify_page(self.directory, self.manifest, 1, evidence)
+
+    def test_identical_cache_regeneration_preserves_evidence(self):
+        self.draft_page()
+        evidence = self.verify_fixture()
+        state_path, _, render = ingest.page_paths(self.directory, 1)
+        before = ingest.read_json(state_path)
+        render.unlink()
+        self.run_cli("render", self.book, "--pages", "1")
+        after = ingest.read_json(state_path)
+        self.assertEqual(after, before)
+        self.assertEqual(ingest.sha(render), evidence["render_sha256"])
+        render.write_bytes(b"corrupt cached image")
+        result = self.run_cli("status", self.book)
+        self.assertEqual(result["counts"]["invalid"], 1)
+        self.assertIn("render_sha256 mismatch", result["pages"]["1"]["errors"])
+        self.run_cli("render", self.book, "--pages", "1")
+        self.assertEqual(ingest.read_json(state_path), before)
+
+    def test_text_only_rejects_image_embeds_and_local_image_links(self):
+        self.draft_page()
+        before = ingest.page_paths(self.directory, 1)[1].read_bytes()
+        snippets = (
+            "![local](../assets/crop.png)", "![remote](https://example.test/image.png)",
+            "![data](data:image/png;base64,aaaa)", "![reference][image]", "![shortcut]",
+            '<IMG SRC="https://example.test/image.png">', '<picture><source srcset="x"></picture>',
+            '<svg><image href="data:image/png;base64,aaaa"/></svg>',
+            '<video src="https://example.test/clip.mp4"></video>',
+            '<div style="background-image:url(https://example.test/image.png)">x</div>',
+            "[local image](../assets/crop.png)",
+            "[remote image](https://example.test/CROP.PNG?download=1#x)",
+            "[data image](data:image/png;base64,aaaa)",
+            "[encoded image](https://example.test/crop%2Epng?x=1)",
+        )
+        for snippet in snippets:
+            with self.subTest(snippet=snippet):
+                self.draft.write_text(snippet, encoding="utf-8")
+                with self.assertRaisesRegex(ingest.IngestError, "Text-only"):
+                    ingest.record_page(self.directory, self.manifest, 1, self.draft)
+        self.assertEqual(ingest.page_paths(self.directory, 1)[1].read_bytes(), before)
+
+    def test_legacy_migration_preserves_source_markdown_and_review(self):
+        self.draft_page()
+        self.verify_fixture()
+        state_path, md, cache = ingest.page_paths(self.directory, 1)
+        state = ingest.read_json(state_path)
+        state.pop("render_storage")
+        ingest.atomic_json(state_path, state)
+        legacy = self.directory / "renders" / "p0001.png"
+        legacy.parent.mkdir()
+        legacy.write_bytes(cache.read_bytes())
+        cache.unlink()
+        markdown = md.read_bytes()
+        self.assertFalse(ingest.page_integrity(self.directory, self.manifest, 1)[1])
+        self.run_cli("claim", self.book, "--owner", "migration", "--token", "migration-token")
+        self.run_cli("migrate-text-only", self.book, expect=2)
+        result = self.run_cli("migrate-text-only", self.book, "--token", "migration-token")
+        self.assertEqual(result["migrated_pages"], 1)
+        after = ingest.read_json(state_path)
+        self.assertEqual(after.pop("render_storage"), "cache")
+        self.assertEqual(after, state)
+        self.assertEqual(cache.read_bytes(), legacy.read_bytes())
+        self.assertTrue(legacy.exists(), "Migration must leave tracked files for coordinator removal")
+        self.assertEqual(md.read_bytes(), markdown)
+        self.assertEqual(self.source.read_bytes(), self.original_source)
+        legacy.unlink()
+        cache.unlink()
+        self.assertEqual(self.run_cli("build", self.book, "--token", "migration-token")["verified_pages"], [1])
+
+    def test_legacy_migration_rejects_corrupt_image_without_changing_state(self):
+        self.draft_page()
+        self.verify_fixture()
+        state_path, _, cache = ingest.page_paths(self.directory, 1)
+        state = ingest.read_json(state_path)
+        state.pop("render_storage")
+        ingest.atomic_json(state_path, state)
+        legacy = self.directory / "renders" / "p0001.png"
+        legacy.parent.mkdir()
+        legacy.write_bytes(b"corrupt image")
+        cache.unlink()
+        before = state_path.read_bytes()
+        self.run_cli("migrate-text-only", self.book, expect=2)
+        self.assertEqual(state_path.read_bytes(), before)
+        self.assertFalse(cache.exists())
+        self.assertEqual(legacy.read_bytes(), b"corrupt image")
+
+    def test_image_embed_rejected_by_verify_and_build_even_with_matching_hashes(self):
+        self.draft_page()
+        evidence = self.verify_fixture()
+        state_path, md, _ = ingest.page_paths(self.directory, 1)
+        state = ingest.read_json(state_path)
+        md.write_text(md.read_text(encoding="utf-8") + '\n<img src="https://example.test/x.png">', encoding="utf-8")
+        state["markdown_sha256"] = ingest.sha(md)
+        evidence["markdown_sha256"] = state["markdown_sha256"]
+        state["evidence"] = evidence
+        ingest.atomic_json(state_path, state)
+        self.assertEqual(self.run_cli("build", self.book)["verified_pages"], [])
+        state["status"] = "draft"
+        state.pop("evidence")
+        ingest.atomic_json(state_path, state)
+        with self.assertRaisesRegex(ingest.IngestError, "Text-only"):
+            ingest.verify_page(self.directory, self.manifest, 1, evidence)
 
 
 if __name__ == "__main__":

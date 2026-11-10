@@ -29,3 +29,5 @@ Coordinator đọc dispatch.json và chọn model trong lệnh tạo tác nhân.
 Skill và output có commit riêng. Commit ở máy này; không tự push remote. Các file đã lưu nhưng chưa commit vẫn có thể resume trên máy hiện tại; commit dùng cho lịch sử và phục hồi qua Git. Nguồn PDF và bunpou chỉ đọc.
 
 Giai đoạn này bảo toàn nguồn sách. Topic, level, tình huống mới, lộ trình học và dữ liệu app sẽ được xây bằng quy trình sau, dùng nguồn đã nghiệm thu.
+
+Đầu ra chỉ có text (Markdown, JSON, JSONL). Ảnh PDF chỉ được render tạm để AI đọc và đối chiếu, không nằm trong corpus bàn giao hoặc commit. Có thể xóa cache mà vẫn sử dụng và tìm kiếm text đã verified; khi cần kiểm tra lại, render từ PDF gốc. Các bài luyện kaiwa về sau cũng diễn đạt bối cảnh, vai và tình huống bằng text.

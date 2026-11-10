@@ -20,6 +20,7 @@ from urllib.parse import unquote, urlparse
 import pypdfium2 as pdfium
 
 CHECKS = ("visual_review", "text_complete", "reading_order", "japanese_accuracy")
+IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".bmp", ".tif", ".tiff", ".avif", ".ico"}
 
 
 class IngestError(Exception):
@@ -125,7 +126,16 @@ def load_book(root, book):
 
 def page_paths(directory, page):
     stem = f"p{page:04d}"
-    return directory / "pages" / (stem + ".json"), directory / "pages" / (stem + ".md"), directory / "renders" / (stem + ".png")
+    cache = safe_child(directory.parent.parent, f".cache/renders/{directory.name}/{stem}.png")
+    return directory / "pages" / (stem + ".json"), directory / "pages" / (stem + ".md"), cache
+
+
+def review_render_path(directory, page, state):
+    cache = page_paths(directory, page)[2]
+    legacy = directory / "renders" / f"p{page:04d}.png"
+    if state.get("render_storage") != "cache" and not cache.exists() and legacy.exists():
+        return legacy
+    return cache
 
 
 def local_assets(directory, text):
@@ -135,9 +145,14 @@ def local_assets(directory, text):
     assets = {}
     for link in links:
         target = link.strip().split(' "', 1)[0].strip("<>")
+        parsed = urlparse(target)
+        if Path(unquote(parsed.path)).suffix.lower() in IMAGE_SUFFIXES or target.lower().startswith("data:image/"):
+            raise IngestError("Text-only output cannot reference image assets: " + target)
         if target.startswith("#") or urlparse(target).scheme in ("http", "https", "mailto", "data"):
             continue
         asset = safe_child(directory, "pages/" + unquote(target.split("#", 1)[0]))
+        if asset.suffix.lower() in IMAGE_SUFFIXES:
+            raise IngestError("Text-only output cannot reference local image assets: " + target)
         if not asset.is_file():
             raise IngestError("missing local asset: " + target)
         assets[asset.relative_to(directory.resolve()).as_posix()] = asset
@@ -150,6 +165,11 @@ def asset_hashes(directory, text):
 
 def markdown_errors(directory, page, text):
     errors = []
+    if (re.search(r'!\s*\[', text)
+            or re.search(r'<\s*(?:img|picture|svg|image|object|embed|iframe|canvas|video|source)\b', text, re.I)
+            or re.search(r'<\s*input\b[^>]*\btype\s*=\s*[\"\']?image\b', text, re.I)
+            or re.search(r'(?:background(?:-image)?|content)\s*:\s*[^;\n]*url\s*\(', text, re.I)):
+        errors.append("Text-only output forbids Markdown/HTML image embeds, including remote/data images.")
     if f'<a id="p{page:04d}"></a>' not in text:
         errors.append("missing stable page anchor")
     anchors = re.findall(r'<a id="(p\d{4}-b\d{3})"></a>', text)
@@ -179,6 +199,7 @@ def page_integrity(directory, manifest, page):
         state = read_json(state_path)
         if not isinstance(state, dict):
             raise IngestError("Page checkpoint must be a JSON object.")
+        render = review_render_path(directory, page, state)
         errors = []
         if state.get("status") not in ("rendered", "draft", "verified", "needs_review", "invalid"):
             errors.append("unknown page status")
@@ -188,9 +209,13 @@ def page_integrity(directory, manifest, page):
             errors.append("missing Markdown hash")
         if state.get("page") != page or state.get("source_sha256") != manifest["source_sha256"]:
             errors.append("page/source identity mismatch")
-        for path, field in ((render, "render_sha256"), (md, "markdown_sha256")):
-            if state.get(field) and (not path.exists() or sha(path) != state[field]):
-                errors.append(f"{field} mismatch or missing file")
+        if state.get("render_sha256"):
+            if render.exists() and sha(render) != state["render_sha256"]:
+                errors.append("render_sha256 mismatch")
+            elif not render.exists() and state.get("status") != "verified":
+                errors.append("missing review render; regenerate the temporary cache")
+        if state.get("markdown_sha256") and (not md.exists() or sha(md) != state["markdown_sha256"]):
+            errors.append("markdown_sha256 mismatch or missing file")
         if state.get("markdown_sha256") and md.exists():
             try:
                 current_assets = asset_hashes(directory, md.read_text(encoding="utf-8"))
@@ -268,7 +293,7 @@ def initialize(root, source_name, requested_id=None):
         with pdfium.PdfDocument(source) as pdf:
             count = len(pdf)
         manifest = {"schema_version": 1, "id": book, "source": relative,
-                    "source_sha256": digest, "page_count": count, "created_at": now()}
+                    "source_sha256": digest, "page_count": count, "created_at": now(), "output_mode": "text_only"}
         return checkpoint(directory, manifest)
 
 
@@ -296,7 +321,7 @@ def render_pages(directory, manifest, source, pages, scale=2.0):
         for number in pages:
             state_path, md, image = page_paths(directory, number)
             state, errors = page_integrity(directory, manifest, number)
-            if state and not errors and state.get("render_sha256") and state.get("render_scale") == scale:
+            if state and not errors and image.exists() and state.get("render_sha256") and state.get("render_scale") == scale:
                 continue
             page = pdf[number - 1]
             bitmap = page.render(scale=scale)
@@ -306,8 +331,18 @@ def render_pages(directory, manifest, source, pages, scale=2.0):
             bitmap.close()
             page.close()
             atomic_bytes(image, buffer.getvalue())
+            digest = sha(image)
+            # Cache regeneration with identical bytes does not undo historical
+            # review. Validate all other content again before preserving it.
+            if (state and state.get("status") == "verified" and state.get("render_sha256") == digest
+                    and state.get("render_scale") == scale and not page_integrity(directory, manifest, number)[1]):
+                state["render_storage"] = "cache"
+                atomic_json(state_path, state)
+                checkpoint(directory, manifest)
+                continue
             state = {"page": number, "source_sha256": manifest["source_sha256"],
-                     "status": "rendered", "render_sha256": sha(image), "render_scale": scale, "updated_at": now()}
+                     "status": "rendered", "render_sha256": digest, "render_scale": scale,
+                     "render_storage": "cache", "updated_at": now()}
             # A re-render invalidates review; an existing draft remains usable.
             if md.exists():
                 state.update(status="draft", markdown_sha256=sha(md),
@@ -386,11 +421,14 @@ def verify_page(directory, manifest, page, evidence):
     state, errors = page_integrity(directory, manifest, page)
     if not state or errors or state.get("status") not in ("draft", "verified"):
         raise IngestError("Cannot verify page without a valid draft: " + "; ".join(errors))
+    render = page_paths(directory, page)[2]
+    if not render.is_file() or sha(render) != state["render_sha256"]:
+        raise IngestError("A fresh verification requires an available matching render in the temporary cache; run render first.")
     errors = markdown_errors(directory, page, page_paths(directory, page)[1].read_text(encoding="utf-8"))
     if errors:
         raise IngestError("; ".join(errors))
     validate_evidence(evidence, manifest, state)
-    state.update(status="verified", evidence=evidence, updated_at=now())
+    state.update(status="verified", evidence=evidence, render_storage="cache", updated_at=now())
     atomic_json(state_path, state)
     return checkpoint(directory, manifest)
 
@@ -419,6 +457,37 @@ def reconcile(directory, manifest):
             state.pop("evidence", None)
             atomic_json(page_paths(directory, page)[0], state)
     return checkpoint(directory, manifest)
+
+
+def migrate_text_only(directory, manifest):
+    """Copy validated legacy review images to disposable cache; never delete."""
+    prepared = []
+    for page in range(1, manifest["page_count"] + 1):
+        state_path, md, cache = page_paths(directory, page)
+        if not state_path.exists():
+            continue
+        state, errors = page_integrity(directory, manifest, page)
+        if md.exists():
+            errors.extend(markdown_errors(directory, page, md.read_text(encoding="utf-8")))
+        legacy = directory / "renders" / f"p{page:04d}.png"
+        if legacy.exists() and state and sha(legacy) != state.get("render_sha256"):
+            errors.append("legacy render hash mismatch")
+        if not state or errors:
+            raise IngestError(f"Cannot migrate page {page}: " + "; ".join(errors))
+        prepared.append((state_path, state, legacy, cache))
+    for state_path, state, legacy, cache in prepared:
+        if legacy.exists() and not cache.exists():
+            data = legacy.read_bytes()
+            if hashlib.sha256(data).hexdigest() != state["render_sha256"]:
+                raise IngestError("Legacy render changed during migration.")
+            atomic_bytes(cache, data)
+        state["render_storage"] = "cache"
+        atomic_json(state_path, state)
+    manifest["output_mode"] = "text_only"
+    checkpoint(directory, manifest)
+    return {"id": manifest["id"], "migrated_pages": len(prepared), "output_mode": "text_only",
+            "legacy_images_deleted": False,
+            "note": "Legacy images were validated and left in place for coordinator removal. Cache is disposable after review."}
 
 
 def build(directory, manifest):
@@ -519,7 +588,7 @@ def main(argv=None):
     init = commands.add_parser("init")
     init.add_argument("--source", required=True)
     init.add_argument("--id")
-    for name in ("status", "claim", "release", "recover", "render", "record", "needs_review", "evidence-template", "verify", "reconcile", "build"):
+    for name in ("status", "claim", "release", "recover", "render", "record", "needs_review", "evidence-template", "verify", "reconcile", "build", "migrate-text-only"):
         sub = commands.add_parser(name)
         sub.add_argument("book")
         sub.add_argument("--token")
@@ -606,6 +675,8 @@ def main(argv=None):
                         result = reconcile(directory, manifest)
                     elif args.command == "build":
                         result = build(directory, manifest)
+                    elif args.command == "migrate-text-only":
+                        result = migrate_text_only(directory, manifest)
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
     except (IngestError, OSError, ValueError, KeyError, TypeError) as exc:
