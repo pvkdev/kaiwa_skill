@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2 — 2026-11-10
+
+- Làm rõ quy tắc furigana đã có: chỉ giữ cách đọc thực in ở từng lần xuất hiện và map đúng phần chữ được chú âm, không điền cách đọc cho từ lặp.
+- Làm rõ dòng nối trong bảng/danh sách và nhãn cột biên tập sau QA sách Shadowing. Không đổi schema, CLI hay nội dung pilot; đây là ví dụ áp dụng yêu cầu bảo toàn nguồn, không thêm chuẩn phiên âm mới.
+
 ## 0.2.1 — 2026-11-10
 
 - Làm rõ kiểm header/footer và ranh giới bảng theo từng trang, không dùng số hàng hoặc nội dung lặp mặc định.
