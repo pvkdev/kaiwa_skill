@@ -1,0 +1,8 @@
+# Bàn giao sách 669041168-4f47df1cc97a
+
+- Nguồn: `book/Kaiwa/669041168-日本語会話-基本文型８８.pdf`, SHA-256 `4f47df1cc97a4b27ba61d05850633ea73466e48c03a20b48e927f351435f3256`, 96 trang PDF vật lý.
+- Trạng thái sau phiên `production_book_07_sol_resume`: 95 verified; p0028 needs_review do ảnh nằm trong chính PDF nguồn bị cắt mép trái và đáy. Không khôi phục bằng suy đoán. Không có trang pending, rendered hay draft.
+- Phiên này claim/reconcile và đối chiếu thật p0089–p0096. Mỗi trang đã mở ảnh 4× toàn trang và crop native theo panel hoặc cột, chép Nhật/Anh/Trung, chú âm theo lần xuất hiện, số trang in và liên kết bảng/chủ đề; đọc hai chiều nguồn ↔ Markdown rồi record/evidence/verify từng trang. p0095 gồm 88 hàng của `文型リスト` trên trang in 188–189; p0096 là `さくいん` trang in 190–191. Ảnh crop chỉ ở `.cache/renders/`, không nằm trong output text.
+- `book.md`, `search.jsonl` và `build.json` đã build partial từ đúng 95 trang verified. `complete=false`, `transcription_complete=false`, coordinator review vẫn cần. Trang p0028 không có trong bản ghép/chỉ mục.
+- `COORDINATOR_AUDIT.json` vẫn ghi hai yêu cầu mở rộng `requested_pending`: rà nhấn mạnh Nhật ở meaning/Point và gạch dưới Anh p0001–p0066; rà toàn bộ ranh giới gạch dưới tiêu đề sau lỗi lặp p0085/p0086. Phiên này đã rà nhấn mạnh và ranh giới tiêu đề p0089–p0094 trong lúc chuyển đổi, không rà trọn các phạm vi audit cũ; không tuyên bố chúng hoàn tất. Coordinator tiếp tục audit độc lập và chỉ đóng yêu cầu khi có bằng chứng mở nguồn tương ứng.
+- Cần PDF nguyên vẹn của trang p0028 mới có thể hoàn tất 96/96 và build full. Issue nguồn, kích thước trang và phần mất được lưu trong `pages/p0028.json`.

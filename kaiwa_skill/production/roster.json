@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T21:16:25.411184+00:00",
+  "updated_at": "2026-11-10T21:34:48.692876+00:00",
   "run_status": "active",
   "source_path_base": "kaiwa_skill/",
   "coordinator": {
@@ -14,10 +14,10 @@
   "total_books": 30,
   "total_pages": 4597,
   "counts": {
-    "pending": 3984,
-    "verified": 607,
-    "needs_review": 3,
-    "rendered": 3
+    "pending": 3964,
+    "verified": 623,
+    "needs_review": 9,
+    "rendered": 1
   },
   "books": [
     {
@@ -197,21 +197,19 @@
       "agent_id": "/root/production_sol_resume/production_book_07_sol_resume",
       "status": "needs_review",
       "counts": {
-        "verified": 87,
-        "needs_review": 1,
-        "rendered": 2,
-        "pending": 6
+        "verified": 95,
+        "needs_review": 1
       },
       "issue_count": 1,
       "coordinator_acceptance": "pending",
       "pending_work": "Resolve recorded errors or issues; finish remaining pages; rebuild and coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/669041168-4f47df1cc97a",
-      "build_current": false,
-      "claim_owner": "production_book_07_sol_resume",
+      "build_current": true,
+      "claim_owner": null,
       "status_error": null,
-      "pending_pages": "28,89-96",
-      "current_build_sha256": null,
-      "worker_state": "running"
+      "pending_pages": "28",
+      "current_build_sha256": "084650d56ea9e4aa9e78e097aa20766d67ca1cc69a71549a7ac89502d6ec2716",
+      "worker_state": "partial_released"
     },
     {
       "queue_order": 8,
@@ -252,19 +250,19 @@
       "agent_id": "/root/production_sol_resume/production_book_09_sol_resume",
       "status": "needs_review",
       "counts": {
-        "needs_review": 2,
-        "verified": 15,
+        "needs_review": 8,
+        "verified": 23,
         "rendered": 1,
-        "pending": 118
+        "pending": 104
       },
-      "issue_count": 2,
+      "issue_count": 8,
       "coordinator_acceptance": "pending",
       "pending_work": "Resolve recorded errors or issues; finish remaining pages; rebuild and coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
       "build_current": false,
       "claim_owner": "production_book_09_sol_resume",
       "status_error": null,
-      "pending_pages": "1,16,18-136",
+      "pending_pages": "1,16,22,24-27,31-136",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -277,8 +275,8 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_10",
-      "agent_id": null,
-      "status": "queued",
+      "agent_id": "/root/production_sol_resume/production_book_10_sol",
+      "status": "in_progress",
       "counts": {
         "pending": 136
       },
@@ -290,7 +288,8 @@
       "claim_owner": null,
       "status_error": null,
       "pending_pages": "1-136",
-      "current_build_sha256": null
+      "current_build_sha256": null,
+      "worker_state": "running"
     },
     {
       "queue_order": 11,
@@ -774,5 +773,5 @@
       "current_build_sha256": null
     }
   ],
-  "issue_count": 3
+  "issue_count": 9
 }
