@@ -234,14 +234,70 @@ class IngestTests(unittest.TestCase):
         assets = self.directory / "assets"
         assets.mkdir()
         (assets / "crop.png").write_bytes(b"fixture")
-        self.draft.write_text('<a id="p0001-b001"></a>\nFirst\n![crop](../assets/crop.png)\n<a id="p0001-b002"></a>\nSecond', encoding="utf-8")
+        self.draft.write_text('# Unit 4 — Shopping\n\nPrinted page 21\n\n<a id="p0001-b001"></a>\nFirst\n![crop](../assets/crop.png)\n<a id="p0001-b002"></a>\nSecond', encoding="utf-8")
         ingest.record_page(self.directory, self.manifest, 1, self.draft)
         self.verify_fixture()
         self.run_cli("build", self.book)
         self.assertIn("pages/../assets/crop.png", (self.directory / "book.md").read_text(encoding="utf-8"))
         rows = [json.loads(line) for line in (self.directory / "search.jsonl").read_text(encoding="utf-8").splitlines()]
         self.assertEqual([row["block_id"] for row in rows], ["p0001-b001", "p0001-b002"])
+        self.assertTrue(all("Unit 4 — Shopping" in row["context"] and "Printed page 21" in row["context"] for row in rows))
+        self.assertTrue(all(row["asset_sha256"] == {"assets/crop.png": ingest.sha(assets / "crop.png")} for row in rows))
         (assets / "crop.png").unlink()
+        self.assertEqual(self.run_cli("build", self.book)["verified_pages"], [])
+
+    def test_changed_asset_invalidates_review_and_build_until_rereview(self):
+        assets = self.directory / "assets"
+        assets.mkdir()
+        crop = assets / "crop.png"
+        crop.write_bytes(b"original crop")
+        self.draft.write_text("![crop](../assets/crop.png)", encoding="utf-8")
+        self.draft_page()
+        old_evidence = self.verify_fixture()
+        self.assertEqual(old_evidence["asset_sha256"], {"assets/crop.png": ingest.sha(crop)})
+        self.run_cli("build", self.book)
+        self.assertTrue(self.run_cli("status", self.book)["build_current"])
+        crop.write_bytes(b"different crop")
+        self.assertFalse(self.run_cli("status", self.book)["build_current"])
+        with self.assertRaises(ingest.IngestError):
+            ingest.verify_page(self.directory, self.manifest, 1, old_evidence)
+        self.assertEqual(self.run_cli("build", self.book)["verified_pages"], [])
+        self.run_cli("render", self.book, "--pages", "1")
+        with self.assertRaisesRegex(ingest.IngestError, "asset hashes"):
+            ingest.verify_page(self.directory, self.manifest, 1, old_evidence)
+        self.verify_fixture()
+        self.run_cli("build", self.book)
+        self.assertTrue(self.run_cli("status", self.book)["build_current"])
+        marker = ingest.read_json(self.directory / "build.json")
+        self.assertEqual(marker["page_asset_hashes"], {"1": {"assets/crop.png": ingest.sha(crop)}})
+
+    def test_legacy_plain_text_review_and_build_remain_valid(self):
+        self.draft_page()
+        self.verify_fixture()
+        state_path = ingest.page_paths(self.directory, 1)[0]
+        state = ingest.read_json(state_path)
+        state.pop("asset_sha256")
+        state["evidence"].pop("asset_sha256")
+        ingest.atomic_json(state_path, state)
+        self.run_cli("build", self.book)
+        marker = ingest.read_json(self.directory / "build.json")
+        marker.pop("page_asset_hashes")
+        ingest.atomic_json(self.directory / "build.json", marker)
+        self.assertTrue(self.run_cli("status", self.book)["build_current"])
+        self.assertFalse(ingest.page_integrity(self.directory, self.manifest, 1)[1])
+
+    def test_legacy_asset_review_without_hash_binding_rejected(self):
+        assets = self.directory / "assets"
+        assets.mkdir()
+        (assets / "crop.png").write_bytes(b"crop")
+        self.draft.write_text("<img src='../assets/crop.png'>", encoding="utf-8")
+        self.draft_page()
+        self.verify_fixture()
+        state_path = ingest.page_paths(self.directory, 1)[0]
+        state = ingest.read_json(state_path)
+        state.pop("asset_sha256")
+        state["evidence"].pop("asset_sha256")
+        ingest.atomic_json(state_path, state)
         self.assertEqual(self.run_cli("build", self.book)["verified_pages"], [])
 
 

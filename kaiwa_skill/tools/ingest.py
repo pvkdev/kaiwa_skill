@@ -128,6 +128,26 @@ def page_paths(directory, page):
     return directory / "pages" / (stem + ".json"), directory / "pages" / (stem + ".md"), directory / "renders" / (stem + ".png")
 
 
+def local_assets(directory, text):
+    """Resolve the same supported inline references used by validation/build."""
+    links = re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', text)
+    links += re.findall(r'(?:src|href)=[\"\']([^\"\']+)', text)
+    assets = {}
+    for link in links:
+        target = link.strip().split(' "', 1)[0].strip("<>")
+        if target.startswith("#") or urlparse(target).scheme in ("http", "https", "mailto", "data"):
+            continue
+        asset = safe_child(directory, "pages/" + unquote(target.split("#", 1)[0]))
+        if not asset.is_file():
+            raise IngestError("missing local asset: " + target)
+        assets[asset.relative_to(directory.resolve()).as_posix()] = asset
+    return assets
+
+
+def asset_hashes(directory, text):
+    return {relative: sha(path) for relative, path in sorted(local_assets(directory, text).items())}
+
+
 def markdown_errors(directory, page, text):
     errors = []
     if f'<a id="p{page:04d}"></a>' not in text:
@@ -139,18 +159,10 @@ def markdown_errors(directory, page, text):
     # rejected so unsupported references cannot silently evade validation.
     if re.search(r'^\s*\[[^\]]+\]:', text, re.M):
         errors.append("reference-style links unsupported; use inline links")
-    links = re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', text)
-    links += re.findall(r'(?:src|href)=[\"\']([^\"\']+)', text)
-    for link in links:
-        target = link.strip().split(' "', 1)[0].strip("<>")
-        if target.startswith("#") or urlparse(target).scheme in ("http", "https", "mailto", "data"):
-            continue
-        try:
-            asset = safe_child(directory, "pages/" + unquote(target.split("#", 1)[0]))
-            if not asset.is_file():
-                errors.append("missing local asset: " + target)
-        except IngestError:
-            errors.append("local asset escapes book: " + target)
+    try:
+        local_assets(directory, text)
+    except IngestError as exc:
+        errors.append(str(exc))
     return errors
 
 
@@ -179,6 +191,13 @@ def page_integrity(directory, manifest, page):
         for path, field in ((render, "render_sha256"), (md, "markdown_sha256")):
             if state.get(field) and (not path.exists() or sha(path) != state[field]):
                 errors.append(f"{field} mismatch or missing file")
+        if state.get("markdown_sha256") and md.exists():
+            try:
+                current_assets = asset_hashes(directory, md.read_text(encoding="utf-8"))
+                if state.get("asset_sha256", {}) != current_assets:
+                    errors.append("local asset hash mismatch; record and review the changed assets again")
+            except (IngestError, OSError) as exc:
+                errors.append(str(exc))
         if state.get("status") == "verified":
             if not state.get("render_sha256") or not state.get("markdown_sha256"):
                 errors.append("verified page lacks content hashes")
@@ -291,7 +310,8 @@ def render_pages(directory, manifest, source, pages, scale=2.0):
                      "status": "rendered", "render_sha256": sha(image), "render_scale": scale, "updated_at": now()}
             # A re-render invalidates review; an existing draft remains usable.
             if md.exists():
-                state.update(status="draft", markdown_sha256=sha(md))
+                state.update(status="draft", markdown_sha256=sha(md),
+                             asset_sha256=asset_hashes(directory, md.read_text(encoding="utf-8")))
             atomic_json(state_path, state)
             checkpoint(directory, manifest)
     return manifest
@@ -314,7 +334,8 @@ def record_page(directory, manifest, page, markdown):
     if errors:
         raise IngestError("; ".join(errors))
     atomic_bytes(md, text.encode("utf-8"))
-    state.update(status="draft", markdown_sha256=sha(md), updated_at=now())
+    state.update(status="draft", markdown_sha256=sha(md),
+                 asset_sha256=asset_hashes(directory, text), updated_at=now())
     state.pop("evidence", None)
     state.pop("invalid_reasons", None)
     state.pop("issues", None)
@@ -329,6 +350,7 @@ def evidence_template(directory, manifest, page):
         raise IngestError("A valid recorded draft is required before review.")
     return {"page": page, "source_sha256": manifest["source_sha256"],
             "render_sha256": state["render_sha256"], "markdown_sha256": state["markdown_sha256"],
+            "asset_sha256": state.get("asset_sha256", {}),
             "reviewer": "", "reviewed_at": "", "checks": {key: False for key in CHECKS},
             "notes": "Describe actual visual comparison, uncertainty handling, and corrections."}
 
@@ -342,6 +364,8 @@ def validate_evidence(evidence, manifest, state):
             raise IngestError(f"Review evidence {field} does not match this page.")
     if evidence.get("source_sha256") != manifest["source_sha256"]:
         raise IngestError("Review source hash mismatch.")
+    if evidence.get("asset_sha256", {}) != state.get("asset_sha256", {}):
+        raise IngestError("Review evidence local asset hashes do not match this page.")
     if not isinstance(evidence.get("reviewer"), str) or not evidence["reviewer"].strip():
         raise IngestError("Evidence requires the actual reviewer's identity.")
     try:
@@ -420,6 +444,7 @@ def build(directory, manifest):
             for position in range(1, len(parts), 2):
                 index.append({"book_id": manifest["id"], "page": number, "block_id": parts[position], "source": manifest["source"],
                           "source_sha256": manifest["source_sha256"], "markdown_sha256": state["markdown_sha256"],
+                          "asset_sha256": state.get("asset_sha256", {}), "context": parts[0].strip(),
                           "complete_book": complete, "transcription_complete": complete, "text": parts[position + 1].strip()})
     # build.json is the final commit marker: readers must verify its output hashes.
     atomic_bytes(directory / "book.md", ("\n".join(lines) + "\n").encode("utf-8"))
@@ -428,6 +453,7 @@ def build(directory, manifest):
               "verified_pages": sorted(set(row["page"] for row in index)), "book_sha256": sha(directory / "book.md"),
               "transcription_complete": complete, "acceptance": "coordinator_review_required",
               "page_hashes": {str(row["page"]): row["markdown_sha256"] for row in index},
+              "page_asset_hashes": {str(row["page"]): row["asset_sha256"] for row in index if row["asset_sha256"]},
               "search_sha256": sha(directory / "search.jsonl")}
     atomic_json(directory / "build.json", result)
     return result
@@ -452,7 +478,9 @@ def status(directory, manifest):
             meta = read_json(build_path)
             verified = [int(n) for n, item in result["pages"].items() if item["status"] == "verified" and not item["errors"]]
             hashes = {str(n): page_integrity(directory, manifest, n)[0]["markdown_sha256"] for n in verified}
-            result["build_current"] = (meta["source_sha256"] == manifest["source_sha256"] and meta.get("page_hashes") == hashes and meta["verified_pages"] == verified and sha(directory / "book.md") == meta["book_sha256"] and sha(directory / "search.jsonl") == meta["search_sha256"])
+            asset_maps = {str(n): page_integrity(directory, manifest, n)[0].get("asset_sha256", {}) for n in verified}
+            asset_maps = {n: hashes for n, hashes in asset_maps.items() if hashes}
+            result["build_current"] = (meta["source_sha256"] == manifest["source_sha256"] and meta.get("page_hashes") == hashes and meta.get("page_asset_hashes", {}) == asset_maps and meta["verified_pages"] == verified and sha(directory / "book.md") == meta["book_sha256"] and sha(directory / "search.jsonl") == meta["search_sha256"])
         except (IngestError, OSError, KeyError):
             pass
     return result
