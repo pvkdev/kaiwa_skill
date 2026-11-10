@@ -204,3 +204,8 @@ CLI thực: {'pending': 3993, 'verified': 600, 'needs_review': 2, 'rendered': 2}
 ## Book09 tiếp tục p71+ — 2026-11-10T22:29Z
 
 - WIP p56–70 đã commit `6420e9e`. Worker Sol/high mới `/root/production_sol_resume/production_book_09_sol_cont3` đã đọc handoff, claim thành công với token `production_book_09_sol_cont3_20261111_d91f` và bắt đầu physical p71. Roster đã gán agent ID thật, `worker_state=running`. Book10 worker riêng vẫn tiếp tục; status/QA về sau đọc từ file thật, không coi WIP là nghiệm thu.
+
+## Book10 bàn giao WIP tại p41 — 2026-11-10T22:42Z
+
+- Worker `/root/production_sol_resume/production_book_10_sol` đã xử lý qua PDF p41, build/reconcile thành công, nhả claim sạch. Book10 36/136 verified, 5 needs_review (p1 bìa cụt, p3 publisher mark mờ, p20 chữ Trung trước 用, p23 dòng viết tay mờ, p27 chữ Trung trước 鸡窝), 95 pending p42–136; `build_current=true`, chưa nghiệm thu. HANDOFF riêng ghi nguồn SHA/issue/next page. P6/p7 miniature đã đối chiếu đúng bản in cỡ đầy đủ PDF p30–31/p34–35 và verified; p36–41 verified.
+- Roster đọc file thật sau release: 683/4597 verified, 3871 pending, 42 needs_review, 1 draft; bảy sách accepted/501 trang giữ nguyên, book09 worker Sol/high cont3 còn giữ claim và đang tiếp khoảng p83. Coordinator QA book10 thêm p21/22/24/25/26/28/31/34/35/36 và guide p6/7, không thấy sai khác trong phạm vi ghi hash; p23/p27 source issue xác nhận bằng ảnh/crop. Tiếp tục giao Sol/high book10 từ p42 sau commit WIP.
