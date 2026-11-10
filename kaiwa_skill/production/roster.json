@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T18:26:53.747141+00:00",
+  "updated_at": "2026-11-10T18:49:46.601437+00:00",
   "run_status": "active",
   "source_path_base": "kaiwa_skill/",
   "coordinator": {
@@ -14,10 +14,10 @@
   "total_books": 30,
   "total_pages": 4597,
   "counts": {
-    "pending": 4016,
-    "verified": 579,
-    "needs_review": 1,
-    "rendered": 1
+    "pending": 3993,
+    "verified": 600,
+    "needs_review": 2,
+    "rendered": 2
   },
   "books": [
     {
@@ -197,10 +197,9 @@
       "agent_id": "/root/production_resume/production_book_07",
       "status": "needs_review",
       "counts": {
-        "verified": 74,
+        "verified": 84,
         "needs_review": 1,
-        "rendered": 1,
-        "pending": 20
+        "pending": 11
       },
       "issue_count": 1,
       "coordinator_acceptance": "pending",
@@ -209,7 +208,7 @@
       "build_current": false,
       "claim_owner": "production_book_07",
       "status_error": null,
-      "pending_pages": "28,76-96",
+      "pending_pages": "28,86-96",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -250,18 +249,21 @@
       "reasoning_effort": "high",
       "worker_id": "production_book_09",
       "agent_id": "/root/production_resume/production_book_09",
-      "status": "in_progress",
+      "status": "needs_review",
       "counts": {
-        "pending": 136
+        "needs_review": 1,
+        "verified": 11,
+        "rendered": 2,
+        "pending": 122
       },
-      "issue_count": 0,
+      "issue_count": 1,
       "coordinator_acceptance": "pending",
-      "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
+      "pending_work": "Resolve recorded errors or issues; finish remaining pages; rebuild and coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
       "build_current": false,
-      "claim_owner": null,
+      "claim_owner": "production_book_09",
       "status_error": null,
-      "pending_pages": "1-136",
+      "pending_pages": "1,13-136",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -771,5 +773,5 @@
       "current_build_sha256": null
     }
   ],
-  "issue_count": 1
+  "issue_count": 2
 }
