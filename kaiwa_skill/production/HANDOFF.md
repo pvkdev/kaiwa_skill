@@ -200,3 +200,7 @@ CLI thực: {'pending': 3993, 'verified': 600, 'needs_review': 2, 'rendered': 2}
 
 - Worker `/root/production_sol_resume/production_book_09_sol_cont2` đã xử lý p56–70, build/reconcile sạch và nhả claim; book09 hiện 37/136 verified, 33 needs_review vì gáy đen che ký tự/dấu, 66 pending p71–136, `build_current=true`, chưa nghiệm thu. Mới verified p57/61/66/67; các trang còn lại p56–70 có draft phần đọc được và marker cục bộ. HANDOFF riêng của sách ghi chi tiết từng issue. Coordinator mở nguồn/so Markdown p57/61/66 không thấy sai khác trong mẫu; p58 xác nhận gáy che chữ; sổ QA gắn hash.
 - `refresh_roster.py` đọc file thật ngay sau release: 662/4597 verified, 3893 pending, 39 needs_review, 1 draft, 2 rendered; bảy sách accepted/501 trang giữ nguyên. Book10 worker Sol/high vẫn giữ claim và tiếp tục, đã verified p6 sau đối chiếu mini-spread với bản đầy đủ PDF p30–31; p7 còn chờ PDF p34–35. Coordinator so p21/22/24/25/26/28/31, chưa thấy sai khác trong các phạm vi ghi sổ; p23/p27 có chữ nguồn quá mờ nên needs_review. Tiếp tục giao Sol/high book09 từ p71 sau commit WIP, không đoán chữ.
+
+## Book09 tiếp tục p71+ — 2026-11-10T22:29Z
+
+- WIP p56–70 đã commit `6420e9e`. Worker Sol/high mới `/root/production_sol_resume/production_book_09_sol_cont3` đã đọc handoff, claim thành công với token `production_book_09_sol_cont3_20261111_d91f` và bắt đầu physical p71. Roster đã gán agent ID thật, `worker_state=running`. Book10 worker riêng vẫn tiếp tục; status/QA về sau đọc từ file thật, không coi WIP là nghiệm thu.
