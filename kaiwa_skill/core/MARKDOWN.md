@@ -18,6 +18,8 @@ Nội dung nguyên văn...
 
 Không dùng placeholder trong output thật. Metadata điều phối, trạng thái và review nằm ngoài nguyên văn. Nội dung nguồn phải được phân biệt với nhãn cấu trúc do người chuyển đổi thêm.
 
+Nhãn mô tả không in trên sách phải ghi rõ `(biên tập)`, kể cả nhãn bằng tiếng Nhật. Ví dụ: `Chữ trong hình (biên tập): 営業部`, `Tiêu đề lề (biên tập): 電話を受ける／第一声`. Nếu trang sau không lặp lại tiêu đề ノート, có thể đặt `## Ghi chú tiếp từ trang trước (biên tập)`; không trình bày tiêu đề tự thêm như nguyên văn nguồn. Các trường metadata quy định sẵn ở đầu trang đã là metadata, không cần lặp nhãn.
+
 ## Tiếng Nhật và hội thoại
 
 - Câu Nhật giữ nguyên chuỗi từ, dấu câu và ngôn ngữ của sách, không chèn cách đọc vào giữa từ. Furigana ghi ở dòng riêng `Furigana (nguồn): 漢字＝かんじ` theo thứ tự và khối tương ứng; chỉ ghi cách đọc sách thật sự in.

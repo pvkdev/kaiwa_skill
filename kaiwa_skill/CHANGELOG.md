@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 — 2026-11-10
+
+- Sau rà soát pilot, chuẩn hóa nhãn biên tập cho chữ trong hình, tiêu đề lề và tiêu đề nối trang; phân biệt rõ phần thêm để tổ chức Markdown với nguyên văn sách.
+
 ## 0.1.1 — 2026-11-10
 
 - Chỉ mục giữ ngữ cảnh unit/trang cho từng khối nội dung.
