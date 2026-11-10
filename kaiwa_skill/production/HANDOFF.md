@@ -123,3 +123,7 @@ Snapshot 2026-11-10T16:49:09.327930+00:00: CLI438/4597verified,4154pending,3rend
 Snapshot 2026-11-10T17:19:51.873748+00:00: CLI486/4597verified,4109pending,1rendered,1needs_review(07p28sourcecrop). Accepted6books/398pages unchanged. Worker07 through50(49verified), correctingQA48–50 and expanding circled例1–50; worker08 through35/103. CoordinatorQA07 through50 pending3findings,08 all1–15 plus16/20/21/24/25/28–30 clear;35 bracketstyle correctionpending. TwoSol/highworkerscontinue;nextqueue09,notpaused.
 
 QA follow-up:07 findings48–50 resolved/reverified/readback; expanded circled例 review31/48/50currenthashes clear.08 bracket35resolved/readback; independentQA36–37clear,40 pendingprintedunderline span. Worker08through40,07continues51+.
+
+## Resume checkpoint 2026-11-10 17:39 UTC
+
+Actual CLI snapshot: 519/4597 verified, 4076 pending, 1 rendered, 1 needs_review. Six accepted books (398 pages) remain intact. Active book07 has 57 verified through physical58, source-cropped28 remains needs_review; book08 has60/103 verified. Same two live Sol/high workers continue. Coordinator independently compared07 through57 and08 sampled lesson/vocabulary boundaries through57. Narrow italic span51 and punctuation53 corrected/reverified/readback. Queue continues09 then10 as slots free; no pause.
