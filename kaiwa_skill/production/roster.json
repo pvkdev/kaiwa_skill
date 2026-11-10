@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T03:40:04.724044+00:00",
+  "updated_at": "2026-11-10T12:24:07.534510+00:00",
   "run_status": "active",
   "source_path_base": "kaiwa_skill/",
   "coordinator": {
-    "agent_id": "/root/production_coordinator",
+    "agent_id": "/root/production_resume",
     "model": "gpt-6-astra",
     "reasoning_effort": "high"
   },
   "max_parallel_books": 2,
   "pilot_gate": "kaiwa_skill/pilot/REVIEW.md",
-  "skill_version": "0.2.1",
+  "skill_version": "0.2.2",
   "total_books": 30,
   "total_pages": 4597,
   "counts": {
-    "pending": 4443,
-    "verified": 139,
-    "rendered": 15
+    "pending": 4383,
+    "verified": 211,
+    "rendered": 3
   },
   "books": [
     {
@@ -109,21 +109,21 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_04",
-      "agent_id": "/root/production_coordinator/production_book_04",
+      "agent_id": "/root/production_resume/production_book_04_resume",
       "status": "in_progress",
       "counts": {
-        "verified": 10,
-        "rendered": 10,
-        "pending": 69
+        "verified": 42,
+        "rendered": 3,
+        "pending": 44
       },
       "issue_count": 0,
       "coordinator_acceptance": "pending",
       "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/namachuukei-chuujoukyuu-f08dd9302ee6",
       "build_current": false,
-      "claim_owner": "production_book_04",
+      "claim_owner": "production_book_04_resume",
       "status_error": null,
-      "pending_pages": "11-89",
+      "pending_pages": "43-89",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -136,20 +136,20 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_05",
-      "agent_id": "/root/production_coordinator/production_book_05",
+      "agent_id": "/root/production_resume/production_book_05_resume",
       "status": "in_progress",
       "counts": {
-        "rendered": 5,
-        "pending": 86
+        "verified": 40,
+        "pending": 51
       },
       "issue_count": 0,
       "coordinator_acceptance": "pending",
       "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/namachuukei-shochuukyuu-1-53b5b51998a3",
       "build_current": false,
-      "claim_owner": "production_book_05",
+      "claim_owner": "production_book_05_resume",
       "status_error": null,
-      "pending_pages": "1-91",
+      "pending_pages": "41-91",
       "current_build_sha256": null,
       "worker_state": "running"
     },

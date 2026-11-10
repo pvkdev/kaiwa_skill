@@ -1,6 +1,6 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
-Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill hiện tại 0.2.1 (làm rõ đối chiếu header/footer và dải chia bảng, không đổi nội dung pilot), output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
+Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill hiện tại 0.2.2 (làm rõ đối chiếu header/footer, furigana và dòng nối bảng, không đổi nội dung pilot), output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
 
 Điều phối `gpt-6-astra/high`; chỉ hai worker `gpt-6-sol/high` cùng lúc, mỗi worker đúng một PDF. Chạy các lệnh từ gốc repo hiện tại. Root chat không dùng Git; coordinator chịu trách nhiệm commit tuần tự theo sách. Không sửa `bunpou_skill/` hoặc PDF nguồn.
 
@@ -44,3 +44,12 @@ Không có daemon hoặc tiến trình nền được bảo đảm tiếp tục 
 - `1170-t-v-ng-mimikara-n1-e1d2f2dffd69`: ACCEPTED 70/70 trang, đủ 1170 mục; commit output `992a210`. Coordinator kiểm toàn bảng 14 trang và các hàng gắn cờ; worker rà rộng các trang liên quan sau bốn lỗi ký tự/dấu. Báo cáo phân biệt lỗi chuyển đổi với những cách in khác thường thật sự của nguồn. Claim đã release.
 - Slot chuyển sang `namachuukei-shochuukyuu-1-53b5b51998a3`, nguồn `book/Shadowing/Namachuukei Shochuukyuu 1.pdf` (từ `kaiwa_skill/`), 91 trang; agent `production_book_05`, gpt-6-sol/high.
 - `production_book_04` tiếp tục sách 89 trang. Sách kế tiếp chưa giao: `85-21a2cb6f3fef`, 93 trang. Tiếp tục theo queue_order trong roster.
+
+## Khởi động lại sau gián đoạn — 2026-11-10
+
+- Coordinator mới: `/root/production_resume` (gpt-6-astra/high). Live inventory trước spawn chỉ có root và coordinator mới; tất cả tác nhân phiên cũ đã dừng. Hai claim cũ được thu hồi bằng CLI `recover --kind claim --expected-token … --confirm-writer-stopped`, lưu audit nguyên trạng. Không có write lock tồn tại.
+- Snapshot hash thực trước resume: 30 PDF / 4597 trang; 211 verified, 3 rendered, 4383 pending, 0 issues. Ba Mimikara accepted và build hiện tại nguyên vẹn.
+- `namachuukei-chuujoukyuu-f08dd9302ee6`: giữ p0001–p0042 verified; resume p0043–p0089. Worker mới `/root/production_resume/production_book_04_resume` (gpt-6-sol/high).
+- `namachuukei-shochuukyuu-1-53b5b51998a3`: giữ p0001–p0040 verified; resume p0041–p0091. Worker mới `/root/production_resume/production_book_05_resume` (gpt-6-sol/high).
+- Scratch/bản nháp cũ giữ để phục hồi nhưng không được coi là verified. Hai worker đọc lại status, nhận claim mới, reconcile, mở ảnh từng trang và checkpoint từng trang. Chưa nghiệm thu hai sách này.
+- Tiếp tục toàn bộ hàng đợi sau hai sách đang dở; sách tiếp theo `85-21a2cb6f3fef`. Root không thao tác Git; coordinator commit tuần tự từng sách sau QA.
