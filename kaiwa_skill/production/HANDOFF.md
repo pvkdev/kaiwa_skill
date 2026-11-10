@@ -32,3 +32,9 @@ Không có daemon hoặc tiến trình nền được bảo đảm tiếp tục 
 
 - `1160-t-v-ng-mimikara-n2-6d226fd8769f`: 8/8 trang, coordinator kiểm cả tám, ACCEPTED; commit output `5379b10`. Báo cáo riêng và hash-bound acceptance nằm trong corpus sách. Audit phân biệt lỗi ranh giới bảng đã sửa với nhận định thiếu header đã rút sau crop đối chứng.
 - Slot được cấp tiếp cho `1170-t-v-ng-mimikara-n1-e1d2f2dffd69` (70 trang), agent `production_book_03`. Sách N3 tiếp tục ở `production_book_02`. Trạng thái số trang mới nhất lấy từ roster/CLI.
+
+## Cập nhật sau nghiệm thu N3
+
+- `880-t-v-ng-mimikara-n3-minato-b3140fae78af`: ACCEPTED 47/47 trang, đủ 880 mục; commit output `ea221b1`. Coordinator đã rà độc lập cả hai cột tiếng Việt toàn bộ 47 trang sau lỗi dấu lặp lại; tiếng Nhật/bố cục lấy mẫu 10 trang. Báo cáo và sổ QA trong corpus ghi rõ lỗi đã sửa, các nhận định sai đã rút và giới hạn.
+- Slot này chuyển sang `namachuukei-chuujoukyuu-f08dd9302ee6`, nguồn `book/Shadowing/Namachuukei Chuujoukyuu.pdf` (từ `kaiwa_skill/`), 89 trang; agent `production_book_04`, gpt-6-sol/high.
+- N1 vẫn ở `production_book_03`, chưa nghiệm thu. Tiếp tục toàn bộ hàng đợi; không suy ra tác nhân còn chạy chỉ từ file này, kiểm live agents và status thật khi resume.

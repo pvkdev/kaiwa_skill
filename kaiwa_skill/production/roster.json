@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T02:38:59.544953+00:00",
+  "updated_at": "2026-11-10T03:24:06.813603+00:00",
   "run_status": "active",
   "source_path_base": "kaiwa_skill/",
   "coordinator": {
@@ -14,9 +14,9 @@
   "total_books": 30,
   "total_pages": 4597,
   "counts": {
-    "pending": 4533,
-    "verified": 16,
-    "rendered": 48
+    "pending": 4468,
+    "verified": 123,
+    "draft": 6
   },
   "books": [
     {
@@ -56,21 +56,22 @@
       "reasoning_effort": "high",
       "worker_id": "production_book_02",
       "agent_id": "/root/production_coordinator/production_book_02",
-      "status": "in_progress",
+      "status": "accepted",
       "counts": {
-        "verified": 4,
-        "rendered": 43
+        "verified": 47
       },
       "issue_count": 0,
-      "coordinator_acceptance": "pending",
+      "coordinator_acceptance": "accepted",
       "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/880-t-v-ng-mimikara-n3-minato-b3140fae78af",
-      "build_current": false,
-      "claim_owner": "production_book_02",
+      "build_current": true,
+      "claim_owner": null,
       "status_error": null,
-      "pending_pages": "5-47",
-      "worker_state": "running",
-      "current_build_sha256": null
+      "pending_pages": "",
+      "worker_state": "finished",
+      "current_build_sha256": "8d0b308f3cee2010ec1dd46096630698dde239ef60f7b7c00981e08b16d0e1fe",
+      "accepted_build_sha256": "8d0b308f3cee2010ec1dd46096630698dde239ef60f7b7c00981e08b16d0e1fe",
+      "acceptance_path": "kaiwa_skill/corpus/880-t-v-ng-mimikara-n3-minato-b3140fae78af/acceptance.json"
     },
     {
       "queue_order": 3,
@@ -84,8 +85,8 @@
       "agent_id": "/root/production_coordinator/production_book_03",
       "status": "in_progress",
       "counts": {
-        "rendered": 5,
-        "pending": 65
+        "verified": 64,
+        "draft": 6
       },
       "issue_count": 0,
       "coordinator_acceptance": "pending",
@@ -94,7 +95,7 @@
       "build_current": false,
       "claim_owner": "production_book_03",
       "status_error": null,
-      "pending_pages": "1-70",
+      "pending_pages": "65-70",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -107,8 +108,8 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_04",
-      "agent_id": null,
-      "status": "queued",
+      "agent_id": "/root/production_coordinator/production_book_04",
+      "status": "in_progress",
       "counts": {
         "pending": 89
       },
@@ -120,7 +121,8 @@
       "claim_owner": null,
       "status_error": null,
       "pending_pages": "1-89",
-      "current_build_sha256": null
+      "current_build_sha256": null,
+      "worker_state": "running"
     },
     {
       "queue_order": 5,
