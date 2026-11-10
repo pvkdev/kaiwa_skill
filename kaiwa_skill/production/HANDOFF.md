@@ -190,3 +190,13 @@ CLI thực: {'pending': 3993, 'verified': 600, 'needs_review': 2, 'rendered': 2}
 
 - Worker `/root/production_sol_resume/production_book_09_sol_cont` đã nhả claim sau build/reconcile sạch. Book09 33/136 verified, 22 needs_review do scan che chữ, 81 pending p56–136; `build_current=true`, chưa nghiệm thu. Trong lượt p42–55: p42/45/47/49/50 verified, chín trang còn lại có draft và issue cục bộ. Coordinator đã so toàn p42 và p50 với ảnh, không có sai khác đã biết trong mẫu; sổ QA cập nhật hash.
 - Roster ngay sau release: 649/4597 verified, 3920 pending, 2 draft, 1 rendered, 25 needs_review. Book10 worker tiếp tục p20+ và p6–7 còn đợi đối chiếu inset. Giao worker Sol/high mới tiếp book09 p56–136 sau commit WIP; không bỏ phần pending.
+
+## Book09 p56+ và QA book10 p20 — 2026-11-10T22:07Z
+
+- Worker mới `/root/production_sol_resume/production_book_09_sol_cont2` đã nhận claim riêng `production_book_09_sol_cont2_20261111_87ea`, tiếp tục p56+ sau commit WIP `b9f0bd3`. Roster đã gán đúng agent ID; kiểm CLI thấy claim live, không reclaim.
+- Book10 p20 có một chữ Hán trong dòng Trung ③ sau `而不是` không phân biệt chắc bằng crop 8x; worker đã reset p20 khỏi verified sang draft và tiếp tục p21. Coordinator cũng mở crop, không xác nhận dự đoán chữ. Cần nguồn/ảnh rõ hoặc giữ needs_review, không suy diễn từ ngữ cảnh.
+
+## Book09 bàn giao WIP tại p70 — 2026-11-10T22:26Z
+
+- Worker `/root/production_sol_resume/production_book_09_sol_cont2` đã xử lý p56–70, build/reconcile sạch và nhả claim; book09 hiện 37/136 verified, 33 needs_review vì gáy đen che ký tự/dấu, 66 pending p71–136, `build_current=true`, chưa nghiệm thu. Mới verified p57/61/66/67; các trang còn lại p56–70 có draft phần đọc được và marker cục bộ. HANDOFF riêng của sách ghi chi tiết từng issue. Coordinator mở nguồn/so Markdown p57/61/66 không thấy sai khác trong mẫu; p58 xác nhận gáy che chữ; sổ QA gắn hash.
+- `refresh_roster.py` đọc file thật ngay sau release: 662/4597 verified, 3893 pending, 39 needs_review, 1 draft, 2 rendered; bảy sách accepted/501 trang giữ nguyên. Book10 worker Sol/high vẫn giữ claim và tiếp tục, đã verified p6 sau đối chiếu mini-spread với bản đầy đủ PDF p30–31; p7 còn chờ PDF p34–35. Coordinator so p21/22/24/25/26/28/31, chưa thấy sai khác trong các phạm vi ghi sổ; p23/p27 có chữ nguồn quá mờ nên needs_review. Tiếp tục giao Sol/high book09 từ p71 sau commit WIP, không đoán chữ.

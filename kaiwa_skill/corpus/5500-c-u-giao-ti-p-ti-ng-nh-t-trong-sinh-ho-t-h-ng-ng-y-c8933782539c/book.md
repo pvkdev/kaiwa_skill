@@ -4433,3 +4433,634 @@ Iie, tabako wo suu nowo ki ni shiteimasen.
 
 98 · 99
 
+## PDF page 57
+
+<a id="p0057"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0057
+
+- Trang in: 112 (trái), 113 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / II. THỂ HIỆN NGUYỆN VỌNG / 9. MONG ƯỚC → 10. CHÚC MỪNG.
+
+<a id="p0057-b001"></a>
+## Trang 112 — 9. MONG ƯỚC (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**11.** タバコをたいへん吸いたい。
+
+Furigana (nguồn): 吸＝す
+
+Tabako wo taihen suitai.
+
+*Tôi rất muốn hút thuốc.*
+
+<a id="p0057-b002"></a>
+**12.** 彼らは紛争をまもなく解決できるように。
+
+Furigana (nguồn): 彼＝かれ; 紛争＝ふんそう; 解決＝かいけつ
+
+Karera wa bunsoo wo mamonaku kaiketsu dekiru yooni.
+
+*Họ đã đi đến quyết định không tranh chấp.*
+
+<a id="p0057-b003"></a>
+**13.** 給料があがると期待している。
+
+Furigana (nguồn): 給料＝きゅうりょう; 期待＝きたい
+
+Kyuuryoo ga agaru to kitaishiteiru.
+
+*Tôi hi vọng là có tiền lương cao.*
+
+<a id="p0057-b004"></a>
+**14.** もっといい生活をしたい。
+
+Furigana (nguồn): 生活＝せいかつ
+
+Motto ii seikatsu wo shitai.
+
+*Tôi muốn cuộc sống tốt hơn một chút.*
+
+<a id="p0057-b005"></a>
+## 10. CHÚC MỪNG
+
+**1.** 楽しい旅を祈ります。
+
+Furigana (nguồn): 楽＝たの; 旅＝たび; 祈＝いの
+
+Tanoshii tabi wo inorimasu.
+
+*Chúc bạn có chuyến đi vui vẻ.*
+
+<a id="p0057-b006"></a>
+**2.** われわれの祝福を表します。
+
+Furigana (nguồn): 祝福＝しゅくふく; 表＝あらわ
+
+Wareware no shukufuku wo arawashimasu.
+
+*Gửi đến bạn những lời chúc tốt đẹp nhất.*
+
+<a id="p0057-b007"></a>
+**3.** ご入賞おめでとうございます。
+
+Furigana (nguồn): 入賞＝にゅうしょう
+
+Go nyuushoo omedetoo gozaimasu.
+
+*Chúc mừng bạn đã giành được giải thưởng.*
+
+<a id="p0057-b008"></a>
+**4.** ご結婚おめでとうございます。
+
+Furigana (nguồn): 結婚＝けっこん
+
+Go kekkon omedetoo gozaimasu.
+
+*Chúc mừng cuộc hôn nhân của bạn!*
+
+<a id="p0057-b009"></a>
+## Trang 113 — 10. CHÚC MỪNG (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại được giữ theo thứ tự.
+
+ご結婚おめでとうございます。
+
+Furigana (nguồn): 結婚＝けっこん
+
+Go kekkon omedetoo gozaimasu.
+
+*Chúc mừng cuộc hôn nhân của bạn!*
+
+ありがとうございます。
+
+Arigatoo gozaimasu.
+
+*Cảm ơn rất nhiều.*
+
+<a id="p0057-b010"></a>
+**5.** 幸運に恵まれるように。
+
+Furigana (nguồn): 幸運＝こううん; 恵＝めぐ
+
+Kooun ni megumareru yooni.
+
+*Chúc bạn gặp nhiều may mắn.*
+
+<a id="p0057-b011"></a>
+**6.** お誕生日おめでとうございます。
+
+Furigana (nguồn): 誕生日＝たんじょうび
+
+Otanjoobi omedetoo gozaimasu.
+
+*Chúc mừng sinh nhật!*
+
+<a id="p0057-b012"></a>
+**7.** 楽しんでください。
+
+Furigana (nguồn): 楽＝たの
+
+Tanoshinde kudasai.
+
+*Hãy vui vẻ nhé.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại được giữ theo thứ tự.
+
+楽しんでください。
+
+Furigana (nguồn): 楽＝たの
+
+Tanoshinde kudasai.
+
+*Hãy vui vẻ nhé.*
+
+はい、ありがとう。
+
+Hai, arigatoo.
+
+*Vâng, cảm ơn!*
+
+<a id="p0057-b013"></a>
+**8.** 快適な旅をお祈りします。
+
+Furigana (nguồn): 快適＝かいてき; 旅＝たび; 祈＝いの
+
+Kaiteki na tabi wo inorishimasu.
+
+*Chúc bạn có một chuyến đi vui vẻ!*
+
+112 · 113
+
+## PDF page 61
+
+<a id="p0061"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0061
+
+- Trang in: 120 (trái), 121 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / II. THỂ HIỆN NGUYỆN VỌNG / 10. CHÚC MỪNG.
+
+<a id="p0061-b001"></a>
+## Trang 120 — 10. CHÚC MỪNG (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**40.** 楽しんでね。
+
+Furigana (nguồn): 楽＝たの
+
+Tanoshinde ne.
+
+*Vui quá nhỉ.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại được giữ theo thứ tự.
+
+誕生日パーティーに行ってきます。
+
+Furigana (nguồn): 誕生日＝たんじょうび; 行＝い
+
+Tanjoobi paatii ni ittekimasu.
+
+*Tôi sẽ đi dự tiệc sinh nhật.*
+
+楽しんでね。
+
+Furigana (nguồn): 楽＝たの
+
+Tanoshinde ne.
+
+*Vui quá nhỉ.*
+
+<a id="p0061-b002"></a>
+**41.** すべてが心にかなうように。
+
+Furigana (nguồn): 心＝こころ
+
+Subete ga kokoro ni kanau yooni.
+
+*Chúc bạn mọi việc đều suôn sẻ/ thuận lợi.*
+
+• **Diễn đạt tương tự:**
+
+すべてがうまく行くように。
+
+Furigana (nguồn): 行＝い
+
+Subete ga umaku iku yooni.
+
+*Chúc bạn mọi việc đều suôn sẻ/ thuận lợi.*
+
+<a id="p0061-b003"></a>
+**42.** 楽しく過ごすように。
+
+Furigana (nguồn): 楽＝たの; 過＝す
+
+Tanoshiku sugosu yooni.
+
+*Chúc bạn luôn vui vẻ.*
+
+<a id="p0061-b004"></a>
+**43.** 一日も早く天気になるように。
+
+Furigana (nguồn): 一日＝いちにち; 天気＝てんき
+
+Ichinichi mo hayaku tenki ni naru yooni.
+
+*Chúc bạn sớm bình phục / mau khỏe.*
+
+<a id="p0061-b005"></a>
+**44.** 奥さんによろしくお伝えください。
+
+Furigana (nguồn): 奥＝おく; 伝＝つた
+
+Okusan ni yoroshiku otsutae kudasai.
+
+*Cho tôi gởi lời thăm vợ của anh.*
+
+<a id="p0061-b006"></a>
+## Trang 121 — 10. CHÚC MỪNG (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+• **Diễn đạt tương tự:**
+
+お父さんによろしくお伝えください。
+
+Furigana (nguồn): 伝＝つた
+
+Otoosan ni yoroshiku otsutae kudasai.
+
+*Cho tôi gởi lời thăm bố của anh.*
+
+<a id="p0061-b007"></a>
+**45.** あけましておめでとうございます。
+
+Akemashite omedetoo gozaimasu.
+
+*Chúc mừng năm mới.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại được giữ theo thứ tự.
+
+あけましておめでとうございます。
+
+Akemashite omedetoo gozaimasu.
+
+*Chúc mừng năm mới.*
+
+あけましておめでとうございます。
+
+Akemashite omedetoo gozaimasu.
+
+*Chúc mừng năm mới.*
+
+<a id="p0061-b008"></a>
+**46.** 結婚おめでとうございます。
+
+Furigana (nguồn): 結婚＝けっこん
+
+Kekkon omedetoo gozaimasu.
+
+*Chúc mừng kết hôn.*
+
+<a id="p0061-b009"></a>
+**47.** お誕生日おめでとうございます。
+
+Furigana (nguồn): 誕生日＝たんじょうび
+
+Otanjoobi omedetoo gozaimasu.
+
+*Chúc mừng sinh nhật.*
+
+<a id="p0061-b010"></a>
+**48.** メリークリスマス
+
+Meriikurisumasu.
+
+*Chúc mừng Giáng sinh.*
+
+<a id="p0061-b011"></a>
+**49.** 新年おめでとうございます。
+
+Furigana (nguồn): 新年＝しんねん
+
+Shinnen omedetoo gozaimasu.
+
+*Chúc mừng năm mới.*
+
+• **Đối thoại:**
+
+Ghi chú nối trang (biên tập): Nội dung đối thoại tiếp ở trang 122.
+
+120 · 121
+
+## PDF page 66
+
+<a id="p0066"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0066
+
+- Trang in: 130 (trái), 131 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / II. THỂ HIỆN NGUYỆN VỌNG / TỪ VỰNG QUAN TRỌNG → III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 1. ĐẶT CÂU HỎI.
+
+<a id="p0066-b001"></a>
+## Trang 130 — TỪ VỰNG QUAN TRỌNG (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+### Bi quan và lạc quan
+
+- うまく行く — thành công, thuận lợi
+- 何もかも — tất cả mọi thứ
+  - Furigana (nguồn): 何＝なに
+- 無事 — bình an, mạnh khỏe
+  - Furigana (nguồn): 無事＝ぶじ
+- 勝つ — chiến thắng
+  - Furigana (nguồn): 勝＝か
+- 気前 — sự rộng lượng, hào phóng
+  - Furigana (nguồn): 気前＝きまえ
+- 疑う — nghi ngờ, thắc mắc
+  - Furigana (nguồn): 疑＝うたが
+
+<a id="p0066-b002"></a>
+### Nguyện vọng, chúc phúc
+
+- 力を尽くす — cống hiến, phục vụ
+  - Furigana (nguồn): 力＝ちから; 尽＝つ
+- 当たり前 — đương nhiên, rõ ràng
+  - Furigana (nguồn): 当＝あ; 前＝まえ
+- 気にする — quan tâm, chăm sóc
+  - Furigana (nguồn): 気＝き
+- 手伝う — giúp đỡ
+  - Furigana (nguồn): 手伝＝てつだ
+
+<a id="p0066-b003"></a>
+### Thích và không thích
+
+- 物語 — câu chuyện
+  - Furigana (nguồn): 物語＝ものがたり
+- 無力的 — không đủ sức lực
+  - Furigana (nguồn): 無力的＝むりょくてき
+- つまらない — chán, không đáng gì
+- サッカー — bóng đá
+- 正直 — nói thẳng, nói thật
+  - Furigana (nguồn): 正直＝しょうじき
+- ぜんぜん — hoàn toàn
+
+<a id="p0066-b004"></a>
+## Trang 131 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+## III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM
+
+### 1. ĐẶT CÂU HỎI
+
+**1.** 入ってもいいですか。
+
+Furigana (nguồn): 入＝はい
+
+Haittemo ii desu ka?
+
+*Tôi có thể vào được không?*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại được giữ theo thứ tự.
+
+入ってもいいですか。
+
+Furigana (nguồn): 入＝はい
+
+Haittemo ii desu ka?
+
+*Tôi có thể vào được không?*
+
+どうぞ、入ってください。
+
+Furigana (nguồn): 入＝はい
+
+Doozo, haitte kudasai.
+
+*Xin mời vào.*
+
+<a id="p0066-b005"></a>
+**2.** トイレを使ってもいいですか。
+
+Furigana (nguồn): 使＝つか
+
+Toire wo tsukattemo ii desu ka?
+
+*Tôi có thể sử dụng phòng tắm được không?*
+
+<a id="p0066-b006"></a>
+**3.** 一つ質問していいですか。
+
+Furigana (nguồn): 一＝ひと; 質問＝しつもん
+
+Hitotsu shitsumonshite ii desu ka?
+
+*Tôi có thể hỏi bạn một câu được không?*
+
+<a id="p0066-b007"></a>
+**4.** 車をここに止めてもいいですか。
+
+Furigana (nguồn): 車＝くるま; 止＝と
+
+Kuruma wo koko ni tometemo ii desu ka?
+
+*Tôi đậu xe ở đây liệu có được không?*
+
+<a id="p0066-b008"></a>
+**5.** ここに座ってもいいですか。
+
+Furigana (nguồn): 座＝すわ
+
+Koko ni suwattemo ii desu ka?
+
+*Tôi có thể ngồi ở đây được không?*
+
+130 · 131
+
+## PDF page 67
+
+<a id="p0067"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0067
+
+- Trang in: 132 (trái), 133 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 1. ĐẶT CÂU HỎI.
+
+<a id="p0067-b001"></a>
+## Trang 132 — 1. ĐẶT CÂU HỎI (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**6.** ここで写真をとってもいいですか。
+
+Furigana (nguồn): 写真＝しゃしん
+
+Koko de shashin wo tottemi ii desu ka?
+
+*Chúng tôi được phép chụp ảnh ở đây không?*
+
+<a id="p0067-b002"></a>
+**7.** 見てもいいですか。
+
+Furigana (nguồn): 見＝み
+
+Mitemo ii desu ka?
+
+*Cho tôi xem được chứ?*
+
+<a id="p0067-b003"></a>
+**8.** 試着してもいいですか。
+
+Furigana (nguồn): 試着＝しちゃく
+
+Shichakushitemo ii desu ka?
+
+*Tôi có thể mặc thử nó không?*
+
+<a id="p0067-b004"></a>
+**9.** 会議を明日に延期してもいいですか。
+
+Furigana (nguồn): 会議＝かいぎ; 明日＝あした; 延期＝えんき
+
+Kaigi wo ashita ni enkishitemo ii desu ka?
+
+*Hoãn cuộc họp đến ngày mai liệu có được không?*
+
+<a id="p0067-b005"></a>
+**10.** この本を貸していただけませんか。
+
+Furigana (nguồn): 本＝ほん; 貸＝か
+
+Kono hon wo kashite itadakemasen ka?
+
+*Tôi có thể mượn quyển sách của bạn được không?*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại được giữ theo thứ tự.
+
+この本を貸していただけませんか。
+
+Furigana (nguồn): 本＝ほん; 貸＝か
+
+Kono hon wo kashite itadakemasen ka?
+
+*Tôi có thể mượn quyển sách của bạn được không?*
+
+いいですよ。読みおわったら返してください。
+
+Furigana (nguồn): 読＝よ; 返＝かえ
+
+Ii desu yo. Yomi owattara kaeshite kudasai.
+
+*Được chứ. Sau khi đọc xong hãy trả lại cho tôi.*
+
+<a id="p0067-b006"></a>
+**11.** ここでタバコを吸ってもいいですか。
+
+Furigana (nguồn): 吸＝す
+
+Koko de tabako wo suttemo ii desu ka?
+
+*Tôi có thể hút thuốc ở đây được chứ?*
+
+• **Đối thoại:**
+
+<a id="p0067-b007"></a>
+## Trang 133 — Đối thoại tiếp từ trang 132 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại được giữ theo thứ tự.
+
+ここでタバコを吸ってもいいですか。
+
+Furigana (nguồn): 吸＝す
+
+Koko de tabako wo suttemo ii desu ka?
+
+*Tôi có thể hút thuốc ở đây được chứ?*
+
+ええ、かまいません。
+
+Ee, kamaimasen.
+
+*Vâng, cứ tự nhiên.*
+
+<a id="p0067-b008"></a>
+**12.** あなたのそばに座ってもいいですか。
+
+Furigana (nguồn): 座＝すわ
+
+Anata no soba ni suwattemo ii desu ka?
+
+*Tôi có thể ngồi kế bạn được chứ?*
+
+• **Diễn đạt tương tự:**
+
+あなたのそばに座ってもかまいませんか。
+
+Furigana (nguồn): 座＝すわ
+
+Anata no soba ni suwattemo kamaimasen ka?
+
+*Tôi có thể ngồi kế bạn được chứ?*
+
+<a id="p0067-b009"></a>
+**13.** ここには駐車できますか。
+
+Furigana (nguồn): 駐車＝ちゅうしゃ
+
+Koko niwa chuusha dekimasu ka?
+
+*Tôi có thể đỗ xe ở đây được chứ?*
+
+<a id="p0067-b010"></a>
+**14.** ここに座る人がいますか。
+
+Furigana (nguồn): 座＝すわ; 人＝ひと
+
+Koko ni suwaru hito ga imasu ka?
+
+*Có người ngồi ở đây chưa?*
+
+• **Diễn đạt tương tự:**
+
+誰かここに座っていますか。
+
+Furigana (nguồn): 誰＝だれ; 座＝すわ
+
+Dare ka koko ni suwatteimasu ka?
+
+*Có ai ngồi chỗ này chưa vậy?*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; lượt hỏi ở trang này, lượt đáp tiếp trang 134.
+
+誰かここに座る人がいますか。
+
+Furigana (nguồn): 誰＝だれ; 座＝すわ; 人＝ひと
+
+Dareka koko ni suwaru hito ga imasu ka?
+
+*Có ai ngồi chỗ này chưa vậy?*
+
+132 · 133
+

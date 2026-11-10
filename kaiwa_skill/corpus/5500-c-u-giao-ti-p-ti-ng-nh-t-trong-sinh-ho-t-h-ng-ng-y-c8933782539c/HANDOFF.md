@@ -3,11 +3,11 @@
 - Source: `book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf` (136 physical PDF pages).
 - Source SHA-256: `c8933782539c7bbe8ac755f2278bb7a6d7cf0d9165843c9ef14a198993b1825a`.
 - Output mode: text only.
-- Status after `build`: **33 verified, 22 needs_review, 81 pending**; `build_current=true`.
-- Next page: **physical PDF p56**; pending interval **p56–p136**.
-- Verified physical PDF pages: p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p17, p18, p19, p20, p21, p23, p28, p29, p30, p35, p36, p37, p38, p39, p42, p45, p47, p49, p50.
+- Status after `build`: **37 verified, 33 needs_review, 66 pending**; `build_current=true`.
+- Next page: **physical PDF p71**; pending interval **p71–p136**.
+- Verified physical PDF pages: p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p17, p18, p19, p20, p21, p23, p28, p29, p30, p35, p36, p37, p38, p39, p42, p45, p47, p49, p50, p57, p61, p66, p67.
 - Partial output: `book.md`, `search.jsonl`, `build.json` in this book corpus directory; each page has `pages/pNNNN.md` and `.json`.
-- Latest worker: `production_book_09_sol_cont`; token `production_book_09_sol_cont_20261111_42b197`. Claim successfully released after final validation; no active writer remains.
+- Latest worker: `production_book_09_sol_cont2`; token `production_book_09_sol_cont2_20261111_87ea`. Claim successfully released after final validation; no active writer remains.
 
 ## Source issues requiring a better scan
 
@@ -25,7 +25,7 @@
 - PDF p40: Printed p78 item 15 Japanese/roman endings, item 19 roman ending, and item 20 Japanese/roman endings extend into black binding edge and cannot be read at 4x full/crops. Partial draft marks local unreadable spans; better source required. Other regions of pp78-79 inspected full and in quadrants.
 - PDF p41: Printed p80 item 6 roman punctuation and item 9 Japanese/roman ends meet black binding edge and cannot be distinguished in 4x full/crops. Partial draft marks these local spans; better source required. Remaining pp80-81 inspected full and in quadrants.
 
-## Latest continuation checkpoint — PDF p42–p55
+## Previous continuation checkpoint — PDF p42–p55
 
 - Worker model: `gpt-6-sol/high`, per user override and skill 0.2.4. No Git, skill/tool, source PDF or other-book changes.
 - New verified pages: p42, p45, p47, p49, p50. Each source spread was actually opened at scale 4, followed by all four quadrant crops, and compared image→Markdown and Markdown→image for Japanese/roman/Vietnamese, every printed furigana occurrence/span, headings and folios. Reviews are embedded in page checkpoints; temporary review JSON remains only in render cache.
@@ -43,10 +43,33 @@
 - Final validation: reconcile + build; status counts 33 verified / 22 needs_review / 81 pending, build_current=true, no page errors. Still INCOMPLETE.
 - Context handoff at a closed page checkpoint; p56–p136 not yet rendered/read by this worker.
 
+## Latest continuation checkpoint — PDF p56–p70
+
+- Worker model: `gpt-6-sol/high`, per user override and skill 0.2.4. Source SHA-256 independently rechecked and unchanged. No Git, skill/tool, source PDF or other-book changes.
+- New verified pages: **p57, p61, p66, p67**. Actual full4x source images and all four quadrant crops opened for every processed physical page. Read and compared image→Markdown and Markdown→image for Japanese, romanization, Vietnamese accents, all printed furigana occurrences/spans, headings and folios. Source mistakes retained. Page evidence stored by CLI in individual checkpoints.
+- Additional focused crops: p65 two enlarged gutter-ruby crops; p67 source return-book Vietnamese ending (confirmed printed `tôi.`); p68 item15/16 ending crop. All images and scratch drafts/review JSON only in `.cache/renders/<book_id>/`.
+- Cross-page checks: p61 trailing dialogue label continues as two New Year greetings on p62/p122. P67 item14 question continues with reply on p68/p134. Within-spread translations/alternatives retained where split between printed panels.
+- New needs_review pages: **p56, p58, p59, p60, p62, p63, p64, p65, p68, p69, p70**. All readable text has a complete local draft and only actually uncertain/obscured spans have `[không đọc được: ...]` markers. They remain excluded from built output. Exact issues follow:
+
+- PDF p56: Printed p110 item16 Vietnamese and item17 main/alternative Vietnamese endings reach black binding edge; final glyphs/punctuation not all visible in 4x full and four quadrant crops. Local unreadable markers retained. Remaining pp110-111 compared image to Markdown and Markdown to image, including printed furigana and source oddities たへん/gakkariahiteiru/Seikai. Requires better scan.
+- PDF p58: Printed p114 item11 Vietnamese end and item15 Vietnamese first-line end are partly obscured by black binding edge at4x full and all four quadrant crops. Local unreadable markers retained. Remaining pp114-115 compared image to Markdown and Markdown to image, including all furigana, folios, within-spread item17 continuation and source koikaku/あけましして/asameru/seigoo. Better scan needed.
+- PDF p59: Printed p116 item24 Japanese first-line and roman ending touch black binding edge; not all glyphs/punctuation distinguishable in4x full and four quadrant crops. Local unreadable spans retained. All other pp116-117 Japanese/roman/Vietnamese/furigana, two dialogues, opening item22 expansion from p115 and folios compared both directions. Source おしあわせ/shi spacing and Shukuga no I preserved. Better scan needed.
+- PDF p60: Printed p118 item32 main and expanded Vietnamese line endings meet binding edge; final glyphs/punctuation cannot be distinguished in4x full/four quadrant crops. Local unreadable markers retained. Rest pp118-119 items31-39, three dialogues, printed furigana occurrence/span and folios compared both ways; source だいいちひともの/Shokufukusuru/oi norishimasu oddities preserved. Better scan needed.
+- PDF p62: Printed p122 item50 Japanese/roman/Vietnamese first-line ends are partly obscured at binding edge in4x full/four quadrant crops. Local unreadable spans retained. Remaining pp122-123 including p121 dialogue continuation, section11 items1-8/expansions, all source furigana and folios compared both ways. Source はに興味, 持に/もち/mochi, ongaky and translations preserved. Better scan needed.
+- PDF p63: Printed p124 item10 main/expanded roman endings, item11 Vietnamese ending and item12 Japanese/roman/Vietnamese/alternative Vietnamese endings meet black binding edge; not all final glyphs/punctuation visible at4x full and four quadrant crops. Local markers retained. Remaining pp124-125 items9-20 and all source furigana, headings, folios compared both ways; source 抗弁/本当の/収集 reading しゅうしゅう preserved. Better scan needed.
+- PDF p64: Printed p126 item21 roman end and item24/item25 Japanese first-line endings meet black binding edge; not all final glyphs visible in4x full/four quadrant crops. Local markers retained. Other pp126-127 items21-30 plus vocabulary and exact source ruby occurrences/spans compared both directions. Source 正直 ruby しょうじき, 体育 ruby たいいく and odd translation よっぽど retained. Better scan needed.
+- PDF p65: Printed p129 合理的 furigana first kana/dakuten is obscured by binding edge; only following うりてき confidently read in4x full/four quadrants and two enlarged gutter-ruby crops. Local unreadable marker retained. All other pp128-129 vocabulary/glosses/headings/folios and individual furigana spans compared both ways, including source 異=こと and 受け入れる gloss. Better scan needed for exact first kana.
+- PDF p68: Printed p134 item16 roman ending after itadakimasu touches black binding edge; final punctuation cannot be distinguished in4x full, four quadrant crops and enlarged ending crop. Local unreadable marker retained. Other pp134-135 text incl p133 dialogue reply, items15-17, section2 items1-10, Japanese/roman/Vietnamese, exact ruby spans and folios compared both ways. Better scan needed.
+- PDF p69: Printed p136 item12 Vietnamese ending, item13 dialogue Japanese ending and item14 Vietnamese first-line ending meet black binding edge; final marks/glyphs not all visible in4x full/four quadrant crops. Local markers retained. Rest pp136-137 items11-20 and dialogue, within-spread item15 translation/alternative, all source ruby spans and folios compared both ways. Source meanings/roman aideia irregularities preserved. Better scan needed.
+- PDF p70: Printed p138 item21 roman ending, item24 Japanese/roman/Vietnamese first-line ends and item25 Japanese first-line end meet black binding edge; p139 item28 申 furigana also partly obscured. Final glyphs/punctuation/ruby not confidently distinguishable at4x full and all four quadrant crops. Local markers retained. Other pp138-139 items21-29, item25 continuation, source aidiea/narasoosuru and every legible ruby span compared both ways. Better scan needed.
+
+- Final validation: reconcile + build + status: **37 verified / 33 needs_review / 66 pending**, `build_current=true`, no page errors. Still INCOMPLETE.
+- Claim released cleanly. Handoff at a closed page checkpoint; next pending physical page **p71**. P71–p136 have not been rendered or read by this worker. Resume only this pending interval; existing source-obscured pages require a better scan.
+
 ## Resume instructions
 
 - Recover/claim using `kaiwa_skill/tools/ingest.py`; reconcile and check source hash before writing.
-- Continue at physical PDF p56, then each pending page through p136. The 22 `needs_review` pages already have local partial drafts and issue records. Do not infer text behind the black binding edge.
+- Continue at physical PDF p71, then each pending page through p136. The 33 `needs_review` pages already have local partial drafts and issue records. Do not infer text behind the black binding edge.
 - Render each page and inspect the full spread plus quadrant crops; compare transcription to image in both directions, including Japanese, romanization, Vietnamese, headings, page numbers and printed furigana occurrence/span. Verify with page evidence only when completely readable; otherwise record partial text with local unreadable markers and `needs_review`.
-- Images and scratch drafts for p18–p55 are under `kaiwa_skill/.cache/renders/<book_id>/`; these are temporary reference files.
+- Images and scratch drafts for p18–p70 are under `kaiwa_skill/.cache/renders/<book_id>/`; these are temporary reference files.
 - Build partial at checkpoints, and run final build/reconcile/quality checks after all pages are processed. No Git operation was performed by this worker.
