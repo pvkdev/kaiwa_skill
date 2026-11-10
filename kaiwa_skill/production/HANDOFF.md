@@ -118,3 +118,8 @@ Snapshot 2026-11-10T16:49:09.327930+00:00: CLI438/4597verified,4154pending,3rend
 - Book06 `85-21a2cb6f3fef`: accepted all 93 physical pages after independent full-page QA; 0 issues, current build, claim released. Output commit `af0374b`; build SHA `13fb6c0136543cfb83bb91a92a0baf95c2399bf34ff93ccb95ee039402f3de05`. Supplied PDF itself skips printed106–107/item14 between physical54–55; limitation retained in acceptance. Accepted queue now6books/398pages.
 - Running Sol/high agents: `/root/production_resume/production_book_07` continues book07 (p28 source crop blocker retained; other pages continue), and `/root/production_resume/production_book_08` owns `03-yuukibui-dd762e3fd201`103pages. New08 token `production_book_08_1794330003838_204673952`; fresh source hash matched and initialized103pending before work.
 - Coordinator remains active through entire queue; next free slot gets queue09. No push. No source/bunpou/image output changes.
+
+
+Snapshot 2026-11-10T17:19:51.873748+00:00: CLI486/4597verified,4109pending,1rendered,1needs_review(07p28sourcecrop). Accepted6books/398pages unchanged. Worker07 through50(49verified), correctingQA48–50 and expanding circled例1–50; worker08 through35/103. CoordinatorQA07 through50 pending3findings,08 all1–15 plus16/20/21/24/25/28–30 clear;35 bracketstyle correctionpending. TwoSol/highworkerscontinue;nextqueue09,notpaused.
+
+QA follow-up:07 findings48–50 resolved/reverified/readback; expanded circled例 review31/48/50currenthashes clear.08 bracket35resolved/readback; independentQA36–37clear,40 pendingprintedunderline span. Worker08through40,07continues51+.
