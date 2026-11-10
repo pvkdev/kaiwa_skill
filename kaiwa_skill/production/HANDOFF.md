@@ -1,8 +1,8 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
-Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill hiện tại 0.2.3 (làm rõ đối chiếu header/footer, furigana và dòng nối bảng, không đổi nội dung pilot), output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
+Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill hiện tại 0.2.4 (điều phối và mọi tác nhân sản xuất dùng Sol/high; quy tắc nội dung 0.2.3 giữ nguyên), output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
 
-Điều phối `gpt-6-astra/high`; chỉ hai worker `gpt-6-sol/high` cùng lúc, mỗi worker đúng một PDF. Chạy các lệnh từ gốc repo hiện tại. Root chat không dùng Git; coordinator chịu trách nhiệm commit tuần tự theo sách. Không sửa `bunpou_skill/` hoặc PDF nguồn.
+Điều phối `gpt-6-sol/high`; chỉ hai worker `gpt-6-sol/high` cùng lúc, mỗi worker đúng một PDF. Chạy các lệnh từ gốc repo hiện tại. Root chat không dùng Git; coordinator chịu trách nhiệm commit tuần tự theo sách. Không sửa `bunpou_skill/` hoặc PDF nguồn.
 
 ## Tiếp tục
 
@@ -148,3 +148,9 @@ CLI thực: 571/4597 verified, 4022 pending, 3 rendered, 1 needs_review (book07 
 ## Checkpoint 2026-11-10T18:50:45.904532+00:00
 
 CLI thực: {'pending': 3993, 'verified': 600, 'needs_review': 2, 'rendered': 2}; tổng4597 trang,2issues nguồn. Bảy sách accepted/501 trang nguyên vẹn. Hai Sol/high worker07 và09 vẫn running. Coordinator QA07 qua84 trừ28; rà mở rộng meaning/Point emphasis vẫn chờ worker hoàn tất. QA09 p2–10 hash-bound clear; p1 bìa sau khối liên hệ quá mờ, giữ needs_review và phần đọc được, không suy đoán.07p28 nguồn bị cắt giữ needs_review. Tiếp toàn queue; slot kế nhận10 khi07 bàn giao WIP partial, không gọi07/09 completed khi thiếu nguồn.
+
+## Resume 2026-11-11 — toàn đội Sol/high
+
+- User yêu cầu toàn bộ coordinator, QA, worker và sửa skill dùng `gpt-6-sol/high`, thay thế cấu hình Astra cũ. Skill 0.2.4 chỉ cập nhật phân công model, không đổi bằng chứng hay báo cáo QA lịch sử.
+- Các agent 07/09 phiên cũ đã dừng theo live inventory của root. Trước recover, `status-all` kiểm file thật: 607/4597 verified, 3985 pending, 2 rendered, 3 needs_review, 3 issues. Book07 87/96 verified; p28 nguồn bị cắt, p89 rendered, p90–96 pending. Book09 15/136 verified; 2 needs_review, 1 rendered, 118 pending. Không sửa các trang đã verified còn hợp lệ.
+- Phục hồi claim bằng CLI audit có token và `--confirm-writer-stopped`; sau đó giao hai sách cho worker Sol/high mới, ghi agent ID thật trong roster. Xem các mục tiếp theo để biết tiến độ sau mốc này.

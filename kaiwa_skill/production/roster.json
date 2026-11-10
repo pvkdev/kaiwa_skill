@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T18:49:46.601437+00:00",
+  "updated_at": "2026-11-10T21:16:25.411184+00:00",
   "run_status": "active",
   "source_path_base": "kaiwa_skill/",
   "coordinator": {
-    "agent_id": "/root/production_resume",
-    "model": "gpt-6-astra",
+    "agent_id": "/root/production_sol_resume",
+    "model": "gpt-6-sol",
     "reasoning_effort": "high"
   },
   "max_parallel_books": 2,
   "pilot_gate": "kaiwa_skill/pilot/REVIEW.md",
-  "skill_version": "0.2.3",
+  "skill_version": "0.2.4",
   "total_books": 30,
   "total_pages": 4597,
   "counts": {
-    "pending": 3993,
-    "verified": 600,
-    "needs_review": 2,
-    "rendered": 2
+    "pending": 3984,
+    "verified": 607,
+    "needs_review": 3,
+    "rendered": 3
   },
   "books": [
     {
@@ -194,21 +194,22 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_07",
-      "agent_id": "/root/production_resume/production_book_07",
+      "agent_id": "/root/production_sol_resume/production_book_07_sol_resume",
       "status": "needs_review",
       "counts": {
-        "verified": 84,
+        "verified": 87,
         "needs_review": 1,
-        "pending": 11
+        "rendered": 2,
+        "pending": 6
       },
       "issue_count": 1,
       "coordinator_acceptance": "pending",
       "pending_work": "Resolve recorded errors or issues; finish remaining pages; rebuild and coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/669041168-4f47df1cc97a",
       "build_current": false,
-      "claim_owner": "production_book_07",
+      "claim_owner": "production_book_07_sol_resume",
       "status_error": null,
-      "pending_pages": "28,86-96",
+      "pending_pages": "28,89-96",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -248,22 +249,22 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_09",
-      "agent_id": "/root/production_resume/production_book_09",
+      "agent_id": "/root/production_sol_resume/production_book_09_sol_resume",
       "status": "needs_review",
       "counts": {
-        "needs_review": 1,
-        "verified": 11,
-        "rendered": 2,
-        "pending": 122
+        "needs_review": 2,
+        "verified": 15,
+        "rendered": 1,
+        "pending": 118
       },
-      "issue_count": 1,
+      "issue_count": 2,
       "coordinator_acceptance": "pending",
       "pending_work": "Resolve recorded errors or issues; finish remaining pages; rebuild and coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
       "build_current": false,
-      "claim_owner": "production_book_09",
+      "claim_owner": "production_book_09_sol_resume",
       "status_error": null,
-      "pending_pages": "1,13-136",
+      "pending_pages": "1,16,18-136",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -773,5 +774,5 @@
       "current_build_sha256": null
     }
   ],
-  "issue_count": 2
+  "issue_count": 3
 }

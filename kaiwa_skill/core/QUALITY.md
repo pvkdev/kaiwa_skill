@@ -8,7 +8,7 @@ Không verified nếu scan chưa rõ, còn issue mất chữ hoặc thiếu dữ
 
 ## Pilot
 
-Sol/high làm 4–6 trang đại diện. Astra/high mở ảnh gốc và đọc toàn bộ output pilot; ghi báo cáo `kaiwa_skill/pilot/REVIEW.md` gồm sách/hash, trang, mẫu đã bao phủ, lỗi phát hiện, sửa đổi, hạn chế và quyết định PASS/REVISE.
+Sol/high làm 4–6 trang đại diện. Coordinator Sol/high mở ảnh gốc và đọc toàn bộ output pilot; ghi báo cáo `kaiwa_skill/pilot/REVIEW.md` gồm sách/hash, trang, mẫu đã bao phủ, lỗi phát hiện, sửa đổi, hạn chế và quyết định PASS/REVISE.
 
 Kiểm thử phục hồi bằng hai worker tuần tự trên cùng sách: worker A hoàn tất một phần rồi release; worker B context mới đọc trạng thái để tiếp tục, không làm thay đổi hash trang đạt. Ngoài ra test tự động mô phỏng crash giữa các bước ghi, hỏng Markdown, thiếu review, đổi PDF, và xóa cache ảnh sau verify. Cache thiếu phải vẫn cho phép dùng text đã xác nhận nhưng không cho xác nhận mới khi chưa render lại. Bàn giao sạch không được báo là đã mô phỏng kill process.
 

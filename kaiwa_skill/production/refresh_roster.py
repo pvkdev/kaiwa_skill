@@ -92,7 +92,7 @@ def main():
     ingest.atomic_json(production / "roster.json", roster)
     lines = ["PRODUCTION ROSTER — toàn bộ PDF", f"Snapshot UTC: {roster['updated_at']}",
              "Đường dẫn nguồn tương đối từ kaiwa_skill/.",
-             "Coordinator: gpt-6-astra/high; worker: gpt-6-sol/high; tối đa 2 PDF đồng thời.",
+             f"Coordinator: {roster['coordinator']['model']}/{roster['coordinator']['reasoning_effort']}; worker: {roster['books'][0]['model']}/{roster['books'][0]['reasoning_effort']}; tối đa {roster['max_parallel_books']} PDF đồng thời.",
              f"{roster['total_books']} PDF; {snapshot['total_pages']} trang; {json.dumps(snapshot['counts'], ensure_ascii=False)}.",
              "Mọi số đếm lấy từ ingest.status_all và kiểm hash file thực tế.",
              "Roster là trạng thái bền vững; không phải daemon. Không có tiến trình bảo đảm tiếp tục khi agents dừng.", ""]
