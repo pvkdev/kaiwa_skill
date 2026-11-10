@@ -7,3 +7,5 @@ Coordinator điền thông tin thực trước khi spawn. Output chỉ có text;
 Tác nhân thay thế nhận thêm: vị trí manifest, trang đã verified, lý do bàn giao, lock đã giải phóng hay cần coordinator thu hồi. Không truyền đáp án mong muốn cho reviewer độc lập.
 
 Nhắc worker kiểm header/footer và ranh giới bảng riêng từng trang, không truyền mẫu cố định sang trang khác. Vùng có vẻ thiếu trong ảnh toàn trang cần crop riêng trước khi xóa/bỏ; quan sát mâu thuẫn cần đối chứng và báo, không tự giả định nguyên nhân.
+
+Nhắc worker thực hiện hai lượt trước verify: ảnh → Markdown để tìm thiếu, Markdown → ảnh để tìm phần tự thêm. Kiểm từng kana nhỏ/cuối chuỗi furigana ở crop rõ, đúng occurrence/span; kiểm cả tiêu đề bảng và nhãn biên tập. Không thay lượt đối chiếu này bằng kiểm chính tả hoặc suy cách đọc đúng theo từ điển.

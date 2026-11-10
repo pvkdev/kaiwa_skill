@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.3 — 2026-11-10
+
+- Cụ thể hóa bước đối chiếu trước verify thành hai chiều ảnh → Markdown và Markdown → ảnh, sau khi QA production phát hiện cả ruby thiếu và ruby tự thêm.
+- Nhắc kiểm từng kana nhỏ/cuối chuỗi và đúng occurrence/span bằng crop rõ, đồng thời kiểm nhãn bảng. Không đổi quy tắc nguyên văn, schema hay CLI; nội dung pilot giữ nguyên. Nhóm trang production bị ảnh hưởng được rà mở rộng và reverify các trang sửa, với hash/readback trong báo cáo từng sách.
+
 ## 0.2.2 — 2026-11-10
 
 - Làm rõ quy tắc furigana đã có: chỉ giữ cách đọc thực in ở từng lần xuất hiện và map đúng phần chữ được chú âm, không điền cách đọc cho từ lặp.
