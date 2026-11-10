@@ -1528,3 +1528,822 @@ d. Of course sometimes it is all right to answer haa or un, but it isn't good to
 
 e. The response, heh, is convenient but be careful of your facial expression when using it. If you smirk as you say it, you are implying condescendingly that your listener is incapable of something you can do.
 
+## PDF page 42
+
+<a id="p0042"></a>
+
+<a id="p0042-b001"></a>
+
+- Trang in: 40
+- Đường dẫn nội dung: 第1章 / Unit 6 / 敬語の使い方
+
+## Unit 6 敬語の使い方
+
+日本語の中でいちばん使いこなすのが難しいのが、敬語です。
+状況別に使い分けられますか？
+
+## 確認クイズ
+
+### 第1問
+
+取引先から課長に電話がかかってきました。課長はいません。何と言いますか？
+
+1…「課長さんは今、いません」
+2…「課長はご不在です」
+3…「課長はただ今、席を外しております」
+
+### 第2問
+
+「ここ」を改まった言い方で言うと？
+
+1…こなた
+2…こちら
+3…この方
+
+### 解答
+
+第1問　3 → ① 敬語の使い方　参照
+第2問　2 → ② 敬語の知識　参照
+
+## 中文（a–c） (biên tập)
+
+a. 「いく」的敬语表达方式主要有「いらっしゃいますか」「行かれますか」和「お行きになりますか」等。不能使用「お行きになさいますか」。
+
+b. 「お」可以接在很多单词的词头，用起来确实很方便。但是，一般情况下，「お」不能接在「コーヒー」这类外来语单词的词头。
+
+c. 谈及自己的行为时要用自谦语。就像把「持つ」变成「お持ちする」一样，只要记住「お〜する」这个句型，当需要使用自谦语时你会感到很方便。
+
+## English (a–c) (biên tập)
+
+a. The verb,「行く」cannot be made into「お行きになさいますか」. It should be「いらっしゃいますか」,「行かれますか」or「お行きになりますか」.
+
+b. The prefix,「お」, is convenient and can be used with many words, but in general, it cannot be used with katakana words, such as「コーヒー」.
+
+c. Use humble language when referring to your own actions. It would be convenient for you to memorize「お〜する」construc-tions, such as「お持ちします」for「持つ」.
+
+## PDF page 43
+
+<a id="p0043"></a>
+
+<a id="p0043-b001"></a>
+
+- Trang in: 41
+- Đường dẫn nội dung: 第1章 / Unit 6 / ① 敬語の使い方
+
+Tiêu đề lề (biên tập): 第1章 日本の一般マナー.
+
+## ① 敬語の使い方
+
+どの敬語が間違っているか、考えてみよう！
+
+a. 「お行きなさいますか」ではなく、「行く」の尊敬語は、「いらっしゃいますか」「行かれますか」「お行きになりますか」のどれかです。
+
+Mô tả hình (biên tập): Khung a đánh ×; một người đàn ông nói với người đàn ông đeo kính ngồi sau bàn: 「部長、今日は取引先へお行きなさいますか？」
+
+b. 「お」はいろいろなものの頭に付けて使える便利な言葉ですが、一般的に、「コーヒー」などのカタカナ語には「お」は付けません。
+
+Mô tả hình (biên tập): Khung b đánh ×; một người hỏi người đang dùng máy sao chụp: 「おコピーを先に取らせてもらってもいいですか？」
+
+c. 自分の行動を表すときは謙譲語を使います。「持つ」は「お持ちします」のように、「お〜する」の形を覚えておくと便利です。
+
+Mô tả hình (biên tập): Khung c đánh ×; người phụ nữ ôm chồng hộp, người đàn ông chạy tới nói: 「私がお持ちになっていたします！」
+
+## ポイント
+
+d. 敬語を使わないことで失礼になる場合もありますが、敬語を使い過ぎて間違った言葉遣いになってしまうこともあることを、覚えておきましょう。
+
+e. 敬語にはいろいろな種類と使い分けがありますが、あまり難しく考えず、簡単でシンプルな形を覚えて、まずはたくさん使ってみましょう。
+
+例）尊敬語「お〜なる」、謙譲語「お〜する」、丁寧語「です・ます」
+
+## 中文（d–e） (biên tập)
+
+d. 某些场合不用敬语会很失礼，但滥用敬语语病也会伤人，这一点一定要牢记。
+
+e. 敬语有形式和用法之分。使用敬语要避难就简，尽可能多多练习。
+
+## English (d–e) (biên tập)
+
+d. Sometimes it is rude not to use polite language, but keep in mind that it is also possible to overuse it or use it incorrectly.
+
+e. There are many different kinds of polite language. Memorize simple forms so you can use many of them without thinking too hard.
+
+## PDF page 44
+
+<a id="p0044"></a>
+
+<a id="p0044-b001"></a>
+
+- Trang in: 42
+- Đường dẫn nội dung: 第1章 / Unit 6 / ② 敬語の知識
+
+## ② 敬語の知識
+
+仕事で役立つ敬語や言葉遣いを見てみよう
+
+### ビジネスマナー頻出語句
+
+① 名前の呼び方の基本（社外の人に対して）
+
+| Đối tượng (biên tập) | Phía (biên tập) | Cách gọi (biên tập) |
+|---|---|---|
+| 自分(私) | ― | わたくし |
+| 相手 | ― | 〜様、〜さん |
+| 会社 | 自分 | 弊社（へいしゃ）、わたくしども |
+| 会社 | 相手 | 御社（おんしゃ）、〜(社名)様 |
+| 上司 | 自分 | (部長の)山本 |
+| 上司 | 相手 | 山本部長(様) |
+
+② ビジネスでよく使う敬語動詞一覧
+
+| 基本形 | 尊敬語 | 謙譲語 |
+|---|---|---|
+| 言う | おっしゃる | 申す　申し上げる |
+| 聞く | お聞きになる | 伺う　うけたまわる |
+| 思う | 思われる　お思いになる | 存じる |
+| 見る | ご覧になる | 拝見する |
+| 知っている | ご存じである | 存じている　存じ上げる |
+| する | なさる　される | いたす |
+| いる | いらっしゃる　おいでになる | おる |
+| 行く | いらっしゃる　おいでになる | 参る　伺う |
+| 来る | いらっしゃる　お見えになる　お越しになる | 参る　伺う |
+|  |  |  |
+| 会う | お会いになる | お目にかかる　お会いする |
+| もらう | お受けになる　お納めになる | 頂く　頂戴する |
+| 与える | 下さる | 差し上げる |
+
+## ポイント
+
+f. ①は、同じ人を呼ぶのでも、あなたと、話に出てくる人や話している相手との関係によって、呼び方が変わるので、注意しましょう。
+
+g. ②は、一つの動詞にたくさんの敬語の言い方があることも多いですが、いちばん簡単で自分が覚えやすい(使いやすい)ものを使っていれば、問題ありません。
+
+## 中文（f–g） (biên tập)
+
+f. ①尽管称呼的是同一个人，但根据你和话题中人及讲话人的关系，称谓会发生变化，这一点要特别注意。
+
+g. ②是指同一个动词会有多种敬语表达方式。你只要记住形式、用法最易掌握的敬语，应用起来不会有什么大问题。
+
+## English (f–g) (biên tập)
+
+f. ① shows that you should realize usage of respect language dif-fers depending on the relationship between the listener, the per-son you are speaking about, and yourself.
+
+g. ② shows there are a multitude of verb forms signifying respect. If you learn what is easiest for you to memorize and use you will have no problem.
+
+## PDF page 45
+
+<a id="p0045"></a>
+
+<a id="p0045-b001"></a>
+
+- Trang in: 43
+- Đường dẫn nội dung: 第1章 / Unit 6 / ② 敬語の知識（続き）
+
+Tiêu đề lề (biên tập): 第1章 日本の一般マナー.
+
+## ③ 改まった言い方
+
+| Nhóm (biên tập) | 普通の言い方 | 改まった言い方 |
+|---|---|---|
+| 代名詞 | これ | こちら |
+| 代名詞 | それ | そちら |
+| 代名詞 | どれ | どちら |
+| 代名詞 | 誰 | どなた |
+| 代名詞 | どんな | どのような |
+| 代名詞 | どう | いかが |
+| 時間 | 今日（きょう） | 本日(ほんじつ) |
+| 時間 | あした | 明日(みょうにち) |
+| 時間 | きのう | 昨日(さくじつ) |
+| 時間 | 去年 | 昨年 |
+| 時間 | 今 | ただ今 |
+| 時間 | さっき | 先ほど |
+| 時間 | 後(あと)で | 後(のち)ほど |
+| 時間 | この間 | 先日(せんじつ) |
+| 時間 | その日 | 当日 |
+| 時間 | 次の日 | 翌日 |
+| 時間 | 今度(今回) | このたび |
+| 時間 | 今度(この次) | 次回 |
+| 時間 | 今度(他の日) | 後日 |
+| 時間 | ちょっと | 少々　少し |
+| 時間 | すぐ | 至急　〜次第 |
+| 表現 | 〜です | 〜でございます |
+| 表現 | 〜ではありません | 〜ではございません |
+| 表現 | そうですか | さようでございますか |
+| 表現 | どうですか | いかがですか |
+| 表現 | いいですか | よろしいですか |
+| 表現 | わかりました | かしこまりました／承(うけたまわ)りました |
+| 表現 | わかりません | わかりかねます |
+| 表現 | あります | ございます |
+| 表現 | ありません | ございません |
+| 表現 | すみませんが | 申し訳ございませんが |
+| 表現 | できません | できかねます／いたしかねます |
+
+Ghi chú bố cục (biên tập): Hai lựa chọn trong mỗi ô わかりました và できません được in trên hai dòng; dấu ／ chỉ phân cách lựa chọn khi chuyển sang text.
+
+## ④ クッションワード
+
+### 頼む・尋ねる
+
+恐れ入りますが
+
+お手数ですが
+
+ご面倒ですが
+
+ご迷惑をお掛けしますが
+
+申し訳ございませんが
+
+お忙しいとは存じますが
+
+よろしければ
+
+お差し支えなければ
+
+失礼ですが
+
+念のため
+
+### 断る・謝る
+
+あいにくではございますが
+
+せっかくですが
+
+残念ながら
+
+申し上げにくいのですが
+
+大変心苦しいのですが
+
+## ポイント
+
+h. ③④共、この表現が使えるようになると、仕事する上で大変礼儀正しい印象を与えることができます。
+
+i. ④のクッションワードとは、文章の前に付けることで、その文章の内容を、相手に受け入れてもらいやすくするためのものです。
+
+## 中文（h–i） (biên tập)
+
+h. ③④是指只要掌握了这种表达方式，工作中就会给人留下彬彬有礼的好印象。
+
+i. ④所指的标题用语一般写在文章之前，目的是为了让读者扫一眼就能理解文章的内容。
+
+## English (h–i) (biên tập)
+
+h. If you learn to use polite language, as in ③ and ④, you can give an impression at work of knowing the social graces.
+
+i. The “cushion words” in ④ soften the content of the sentences following, making them easier for the listener to accept.
+
+## PDF page 46
+
+<a id="p0046"></a>
+
+<a id="p0046-b001"></a>
+
+- Trang in: 44
+- Đường dẫn nội dung: 第1章 / Unit 6 / ③ 若者言葉
+
+## ③ 若者言葉
+
+〜ビジネスマンらしい話し方って？〜
+
+Nhân vật ghi trong hình (biên tập): スミスさん（nam）、渡辺さん（nữ）.
+
+### Truyện sáu khung (biên tập)
+
+1. Mô tả hình (biên tập): Hai người gặp nhau cạnh thang máy.
+
+**スミスさん:** 渡辺さん、おはようございます！
+
+**渡辺さん:** ああ、スミスさん おはよう
+
+2. Mô tả hình (biên tập): Hai người đứng trong thang máy.
+
+**渡辺さん:** 仕事どう？ 慣れた？
+
+3. **スミスさん:** いやぁ〜 マジ やばいっすよ！ 俺の部署って忙しいじゃないですかぁ
+
+**スミスさん:** なんていうか ビミョー
+
+4. **渡辺さん:** そうなの？ 何がそんなに大変なの？
+
+5. **スミスさん:** っていうか〜、やっぱ俺的には先輩たちの仕事手伝わなきゃかな？とか思うっしょ！ じゃないとなんか居心地悪いっていうか〜…
+
+6. Mô tả hình (biên tập): Hai người đứng cạnh nhau; スミスさん có dấu hỏi bên đầu.
+
+**渡辺さん:** そうなんだ。それよりスミスさんって日本語どこで勉強したんだっけ？
+
+**スミスさん:** え？僕っすか？ 大学の友達と遊んでるうちに自然に覚えたんすけど…
+
+さて。スミスさんの言葉遣い、どう思いましたか？
+
+## 中文（①–③） (biên tập)
+
+① 请看下列三组短句。每一组等号前后的短句所要表达的意思完全相同。等号前的短句不能用于郑重场合。
+
+マジ＝本当に　やばい＝大変，危ない　〜っすよ＝んですよ
+
+道理一样，郑重场合不要用“マジ（で）〜？”，而要用“本当ですか”。
+
+② 近来，一些人不知出于什么心理，常用“〜じゃないですかぁ”这样的表达方式来向对方征求意见。公务活动中请不要使用这种表达方式。
+
+③ “ビミョウ”源自“微妙”。遇到“ちょっとわからない”“いいか悪いか判断しにくい”这种情况时，很多年轻人都在使用“ビミョウ”这个词。是否应该这样来表达，要看对方是什么人。
+
+## English (①–③) (biên tập)
+
+① マジ means “really?”　やばい means “Oh, no! This is terrible!”　〜っすよ is the same as んですよ (it's the fact that ...). Similarly,「マジ(で)〜？」is not very good. The best expression to use is「本当ですか？」.
+
+② The number of people who seek the agreement of their listener by saying,「〜じゃないですかぁ」even though they have no par-ticular reason in mind, is on the increase. Don't talk like this at the workplace.
+
+③ This popular slang item originally derives from the word, “subtle, fine distinction.” Recently, young people have increasingly been using it to mean everything from “I don't really know,” “It's hard to tell if it's good or bad,” to just about everything else. It's a
+
+Ghi chú nối trang (biên tập): Đoạn English ③ tiếp sang PDF p0047 bằng “trendy word so be careful with whom you use it.”
+
+## PDF page 47
+
+<a id="p0047"></a>
+
+<a id="p0047-b001"></a>
+
+- Trang in: 45
+- Đường dẫn nội dung: 第1章 / Unit 6 / ③ 若者言葉（続き）
+
+Tiêu đề lề (biên tập): 第1章 日本の一般マナー.
+
+## ビジネスにふさわしい言葉遣いとは？
+
+どこが若者言葉だったか、見てみましょう。
+
+①「マジやばいっすよ」
+
+マジ→本当に、やばい→大変・危ない、〜っすよ→んですよ　という意味です。
+
+同じように「マジ（で）〜？」というのもよくありません。「本当ですか？」がベスト。
+
+②「忙しいじゃないですかぁ」
+
+特に理由もないときに「〜じゃないですかぁ」と相手に同意を求めるような話し方をする人が最近増えていますが、これもビジネス場面ではやめましょう。
+
+③「ビミョー」
+
+これは「微妙」が語源ですが、最近では「ちょっとわからない」「いいか悪いか判断しにくい」などの場面で、すべて「ビミョー」という若者が増えています。流行り言葉でもあるので、使う相手には注意しましょう。
+
+④「っていうか〜、俺的には……」
+
+Furigana (nguồn): 俺＝おれ（chỉ ở tiêu đề ④）.
+
+前に何の文章もないとき、話し始めのときに「っていうか〜」と言うのも、最近の若者言葉です。仕事場では使わないように。「俺的には」は「私としては」という意味なので、「〜的」と言わずに、きちんと使いましょう。
+
+⑤「思うっしょ」「僕っすか？」
+
+このように「っ」を使って言葉を縮めてリズムをよくするのも若者言葉によくあります。
+
+さまざまなバリエーションがありますが、ビジネスシーンでは「思いますよね」「僕ですか？」というふうに言い換えてください。
+
+Mô tả hình (biên tập): Một người đàn ông nhíu mày, có dấu hỏi trong bóng suy nghĩ.
+
+## ポイント
+
+j. スミスさんの言葉遣いは、意味は全部わかりますし、間違ってはいません。ただ、大学生などが仲間内で使う「若者言葉」なので、会社やビジネス場面では、たとえ意味がおかしくなくても、使うのはふさわしくないことを、覚えておいてください。
+
+## 中文（④–⑤・j） (biên tập)
+
+④ 没有任何前提，开口就说“っていうか”似乎是现在年轻人时髦的说话方式。工作中千万不要这样用。“俺的には”是要表达“わたしとしては”这层意思，不要用“〜的”这种表达方式，请你使用正确的表达方式。
+
+⑤ “っ”产生的主要原因或许是因为很多年轻人都想通过简化词语来加强抑扬顿挫的语气。由此还派生出很多雷同的用法。公务活动中请不要使用“思うっしょ”“僕っすか”而要使用“思いますよね”“僕ですか”。
+
+j. 史密斯说话时使用的单词，意义不会让人误解，不能说有什么错。但这些单词是大学生同学或伙伴之间用的词。请大家牢记，如果把这些单词照搬于公司公务活动或商务洽谈中，即使意思没有错也是有问题的，或者说是不合时宜的。
+
+## English (③ tiếp・④–⑤・j) (biên tập)
+
+trendy word so be careful with whom you use it.
+
+Ghi chú nối trang (biên tập): Dòng trên nối đoạn ③ cuối PDF p0046.
+
+④ Young people have also taken up the practice recently of begin-ning their utterances with「〜っていうか〜」even though they have said nothing to preface it. Don't use this at the workplace.「僕的には」means “as for me.” Please speak correctly and dis-pense with the「〜的」.
+
+⑤ This use of「っ」to improve rhythm and abbreviate words is also prevalent in young people's speech. There are many variations, but in the business environment, rephrase such expressions as:「思いますよね」and「僕ですか？」, respectively.
+
+j. Mr. Smith's language usage is understandable and correct, but it is young people's speech used by college students with each other and is not appropriate for the workplace.
+
+## PDF page 48
+
+<a id="p0048"></a>
+
+<a id="p0048-b001"></a>
+
+- Trang in: 46
+- Đường dẫn nội dung: 第1章 / Unit 7 / 整理整頓
+
+## Unit 7 整理整頓
+
+あなたのデスクはいつもきれいですか？
+あなたがいなくても、どこに何があるかわかるように、いつも整理しておきましょう！
+
+## 確認クイズ
+
+### 第1問
+
+ちょうど買おうと思っていたペンが、会社にたくさんありました。どうしますか？
+
+1…持って帰って家で使っていいか、上司に聞く
+2…会社のものは持って帰らない
+3…備品なので、勝手に持って帰る
+
+### 第2問
+
+現在進行中の仕事の書類は、どこに保管していますか。
+
+1…誰にでもわかるように、デスクの引き出しに入れてある
+2…重要な書類なので、いつも持ち歩いている
+3…重要な書類なので、誰にもわからないように隠してある
+
+### 解答
+
+第1問　2 → ③ 備品の使い方　参照
+第2問　1 → ④ 書類の整理　参照
+
+## 中文（①–③） (biên tập)
+
+① 每天下班的时候，请务必把笔记本电脑电源关掉再走人。
+
+② 电话机应该放在随手可以拿起来接听的地方。电话机上不要堆放杂物。电话机旁应该备有记录单。
+
+③ 眼前正在处理的文件应该整理好集中放在一处。
+
+## English (①–③) (biên tập)
+
+① Make sure to turn off your notebook pc every day before going home.
+
+② Put the phone in a place where you can answer it easily. Don't put anything on top of the telephone, but always put memo pads near the phone.
+
+③ You will have a clearer idea of what you are doing if you neatly put the documents you are working on currently in one spot.
+
+## PDF page 49
+
+<a id="p0049"></a>
+
+<a id="p0049-b001"></a>
+
+- Trang in: 47
+- Đường dẫn nội dung: 第1章 / Unit 7 / ① 自分のデスクをきれいに！
+
+Tiêu đề lề (biên tập): 第1章 日本の一般マナー.
+
+## ① 自分のデスクをきれいに！
+
+Mô tả hình (biên tập): Bàn làm việc có chồng tài liệu bên trái, máy tính xách tay ở giữa, chuột bên phải máy tính; điện thoại, giấy ghi chú và chai nước bên phải bàn. Thùng rác ở phía trái dưới bàn; ngăn kéo dưới cùng bên phải được mở, chứa các tập hồ sơ. Sáu chú thích có mũi tên lần lượt trỏ vào máy tính, điện thoại, tài liệu, chai nước, thùng rác và ngăn kéo:
+
+① ノートパソコンは毎日必ず電源を切って帰るように
+
+② 電話はすぐ取れるように、取りやすい位置に。電話の上にモノを置いたりしてはいけません。電話の近くには必ずメモを置くように
+
+③ 現在進めている書類も、どこか一箇所に整理しておくとわかりやすい
+
+④ 最低限の飲み物は置いてもいいが、お菓子などは机の上で広げないこと
+
+⑤ ゴミはたまったらすぐに たまらなくても1日1回 帰る前に捨てること
+
+⑥ 外から見えないデスクの中もファイルなどできちんと整理しておくこと
+
+## 中文（④–⑥） (biên tập)
+
+④ 桌上放一点必备的饮料是可以的，但最好不要把零食摆一桌子。
+
+⑤ 垃圾堆满了要马上倒掉，即使堆不满每天下班前至少也要倒一次。
+
+⑥ 虽然人们看不到办公桌抽屉里面什么样，但也应该把抽屉里面的文件整理好。
+
+## English (④–⑥) (biên tập)
+
+④ Keep liquid refreshments on your desk to a minimum and don't spread your snacks out on top of your desk.
+
+⑤ As soon as your trash accumulates, throw it away. Even if it only accumulates slowly, make sure to dispose of it once a day be-fore going home.
+
+⑥ Keep the files inside of your desk neatly organized even if they aren't visible from the outside.
+
+## PDF page 50
+
+<a id="p0050"></a>
+
+<a id="p0050-b001"></a>
+
+- Trang in: 48
+- Đường dẫn nội dung: 第1章 / Unit 7 / ② オフィスの共用部分
+
+## ② オフィスの共用部分
+
+〜ここはいったい、誰が掃除する所？〜
+
+Nhân vật ghi trong hình (biên tập): 中国人新入社員 李さん、先輩社員 木村さん. Cả hai là nữ.
+
+### Truyện sáu khung (biên tập)
+
+1. Mô tả hình (biên tập): 李さん cúi chào 木村さん.
+
+**李さん:** 今日からこちらに配属になった李です。よろしくお願いします。
+
+**木村さん:** こちらこそ。じゃあ早速だけど、この部署の当番について説明するわね
+
+2. Mô tả hình (biên tập): Hai người ở cạnh bồn rửa và cốc trong phòng nước.
+
+**李さん:** 当番って何の当番ですか？
+
+**木村さん:** この給湯室みたいにみんなが共同で使う場所を女子社員が順番に掃除したりするのよ
+
+3. **李さん:** え？どうして女性だけが担当するんですか？
+
+**木村さん:** そうねぇ、習慣だから… とにかく出社したらポットにお湯を入れてね
+
+**李さん:** それだけですか？
+
+**木村さん:** ううん、他にもコップを洗ったり給湯室を掃除してね
+
+4. Mô tả hình (biên tập): 木村さん cầm một chiếc khay.
+
+**李さん:** え？掃除するんですか？ 掃除業者はいないんですか？
+
+**木村さん:** お掃除の人はいるけど、こういうことは自分たちでやるのよ
+
+5. **李さん:** ええ？それっておかしいと思います。私の仕事は掃除じゃありません！
+
+**木村さん:** でも私たち、みんなずっとこうやって来たから。李さんは新人なんだからやってほしいな。
+
+6. Mô tả hình (biên tập): 李さん khoanh tay, cau mày; dưới hình có dòng:
+
+・・・納得いかないなぁ・・・
+
+納得いかない李さん、どうすればいいでしょう？
+
+## 中文（a–b） (biên tập)
+
+a. 在日本的公司里，职工应该轮班负责公共设施或设备的清扫和维护，即所谓的“值班”。
+
+b. 历史较长规模较大的公司，“当班值日”是理所当然的，这项工作主要由女职工和新职工来承担。
+
+## English (a–b) (biên tập)
+
+a. Sometimes in Japanese companies, employees are expected to take turns being in charge of cleaning common areas.
+
+b. The bigger and older the company, the more mandatory rota-tional tasks there are. Female employees or new-hires are usu-ally put in charge of them.
+
+## PDF page 51
+
+<a id="p0051"></a>
+
+<a id="p0051-b001"></a>
+
+- Trang in: 49
+- Đường dẫn nội dung: 第1章 / Unit 7 / ② オフィスの共用部分 / ポイント
+
+Tiêu đề lề (biên tập): 第1章 日本の一般マナー.
+
+## ポイント
+
+a. 日本の会社では、社員が順番で共用部分の片付けなどを担当する「当番」というものがある場合があります。
+
+b. 古くて大きな会社ほど、何かしら当番があることが多く、それを担当するのは女性社員か、新入社員の場合が多いです。
+
+c. こうした当番は習慣の一つで、男女差別のような深い意味はない場合がほとんどです。
+
+d. いろいろな意味で、日本人ではない皆さんには納得できない、理解できないことも多いと思いますが、とりあえず特別な理由がないかぎりは、最初のうちは我慢して当番をしてみましょう。
+
+e. 外国人だからということで、あなただけが当番をしないことを、日本人社員は許すかもしれません。でも、同僚たちとはいい関係になれないかもしれません。
+
+## きれい好きな日本人
+
+日本人がきれい好きだというのは、よく言われていることですが、日本には「自分の身の回りのことは自分でするのが当たり前」というような価値観があるからかもしれません。ですので、日本では、小学生から、学校の教室は自分たちで毎日掃除します。皆さんの国では、生徒が学校を掃除しなくていい所も多いのでは？ 日本人は、小学校・中学校・高校と、そういう習慣で生活する人が多いので、オフィスでも自分でゴミを捨てたり片付けたりするのは、そのためかもしれませんね。
+
+Mô tả hình (biên tập): Một người quấn khăn đầu đang quét rác bằng chổi, bên cạnh có ký hiệu nốt nhạc và hình lấp lánh.
+
+## 中文（c–e） (biên tập)
+
+c. 这种当班值日业已成为一种习惯，一般来讲这项工作并不反映男女职工待遇是否平等之类的问题。
+
+d. 我想，无论从哪个角度来讲，大家不是日本人，有些事情可能很难搞清楚或很难理解。如果没有什么特殊原因，先不要问“为什么？”。工作刚开始，耐着性子去经历一下“值班”怎么样？
+
+e. 如果以自己是外国人为由不去“值班”的话，公司职员也许能够谅解你。但你可能因此而无法和公司同事建立良好的人际关系。
+
+## English (c–e) (biên tập)
+
+c. In most cases, assignment of tasks is simply a custom and does not signify gender discrimination.
+
+d. On a lot of levels, there are probably many things that all of you who are not Japanese have difficulty accepting or understanding about this, but unless you have some exceptional rationale, try to put up with taking your turn being in charge of these tasks.
+
+e. Japanese employees may forgive you for not taking your turn being in charge of tasks if you use the rationalization of being foreign, but you could sour your relationship with your col-leagues.
+
+## PDF page 52
+
+<a id="p0052"></a>
+
+<a id="p0052-b001"></a>
+
+- Trang in: 50
+- Đường dẫn nội dung: 第1章 / Unit 7 / ③ 会社の備品の使い方
+
+## ③ 会社の備品の使い方
+
+会社にある文房具などの備品の使い方に、ルールはあるでしょうか？
+
+Mô tả hình (biên tập): Hình f đánh ×: người đàn ông bỏ đồ vào túi xách riêng. Hình g đánh ○: người đàn ông cất đồ vào tủ đựng đồ dùng. Hình h đánh ×: một người mang thiết bị hình hộp đi, người khác nhìn chỗ trống có đường nét đứt và dấu hỏi. Hình i đánh ○: một người ra dấu ngón tay cái, người đeo kính ở gần bảng nói 「OK!」.
+
+f. オフィスにはたくさんの新しい文房具が置いてあって、誰でも使えるようになっているかもしれません。でも、私用に使うために持って帰ってはいけません。
+
+g. 自分がよく使う備品は、自分の机に置いておいてもいいですが、そうでない備品は、決められた場所にきちんと戻しておきましょう。
+
+h. プロジェクターのようにあまり数がないものを借りる場合は、無断で借りるのは少し気を付けてください。ほかにそれを借りようと思っている人が困るかもしれません。
+
+i. その備品に管理者がいる場合は、その人に声を掛けたり、いつまで借りたいかなどをどこかに登録したり、それぞれの職場のルールに従って備品を使用してください。
+
+## ポイント
+
+j. 備品に対する管理方法は、同じ会社の中でも、部署によって違うことも多いので、まずは、何か使いたいと思ったときに、周りの社員にどうしたらいいか聞いてください。誰にも聞かずに勝手に持っていくのだけは、やめましょう。
+
+## 中文（f–j・①） (biên tập)
+
+f. 办公室备有很多新的文具，这是为所有工作人员提供的办公用品。你不可以为了个人使用把这些文具带回家。
+
+g. 自己经常使用的办公用品要放在自己的办公桌上，其他物品请你把它放回应该放的地方。
+
+h. 借用投影机这类数量有限的器材必须考虑到会不会影响别人使用。不能只图自己方便。
+
+i. 办公用品一般都有专人负责，借用时打一声招呼，问一问借用时间等情况在什么地方作记录。请务必遵守办公用品内部管理规章。
+
+j. 即便是同一个公司，部门不同物品管理方法不同的情况也很常见。借用物品需要办理什么手续首先应该问一问该物品所属管理部门的工作人员。不要不闻不问擅自使用公司物品。
+
+① 使用文件夹分类保管文件
+
+在文件夹封皮上贴上表示内容的明胶标签，使人一目了然，为了便于
+
+## English (f–j・①) (biên tập)
+
+f. There might be an abundance of new stationery products in the of-fice that anyone can use, but you mustn't take them home for per-sonal use.
+
+g. You can leave on your own desk the equipment you use, but you should put away all other equipment in its proper place.
+
+h. When borrowing items like projectors, which are limited in quantity, take care not to do so without permission because other employees might need to borrow the same item.
+
+i. If someone is in charge of such equipment, talk to him or record how long you want to borrow it. Follow the rules of the workplace on equipment use.
+
+j. Often rules for equipment differ by company department, so first ask other employees what to do when you want to use something. Nev-er take equipment without asking.
+
+① File clear files, etc. by category.
+
+Write the contents on labels and attach for easy recognition. Store
+
+Ghi chú nối trang (biên tập): Đoạn 中文① và English① tiếp sang đầu phần dịch ở PDF p0053; phần chính ④ 書類の整理 nằm trên trang đó.
+
+## PDF page 53
+
+<a id="p0053"></a>
+
+<a id="p0053-b001"></a>
+
+- Trang in: 51
+- Đường dẫn nội dung: 第1章 / Unit 7 / ④ 書類の整理
+
+Tiêu đề lề (biên tập): 第1章 日本の一般マナー.
+
+## ④ 書類の整理
+
+仕事をする上で、書類やファイルはとても重要です。
+仕事のできる書類の整理方法とは、どんなものでしょう？
+
+### ① クリアファイルなどを使って項目ごとに保管する
+
+シールなどに内容を書いて貼っておくとわかりやすいでしょう。本のように立てて収納すると取り出しやすいです。
+
+Furigana (nguồn): 貼＝は.
+
+Mô tả hình (biên tập): Hai tập hồ sơ dựng đứng, một tập có các tai phân mục nhô ra bên cạnh.
+
+### ② トレーを使う
+
+もらったばかりの書類や、今まさに仕事中の書類、まだ整理できてない書類などは、A4サイズのトレーに一時的に入れておくといいでしょう。あくまでも一時的なものなので、そこに書類をどんどんためたりしないように。
+
+Mô tả hình (biên tập): Tờ giấy đặt vào bộ khay đựng giấy ba tầng.
+
+### ③ 重要資料だけどあまり見ないものは、バインダー式ファイルに
+
+重要なので捨てることはできないけれど、今はもうあまり見ない過去の資料などは、項目別に分けてバインダー式ファイルに入れ、デスクのいちばん下の引き出しか、本棚などに入れておきましょう。背表紙にきちんと内容を書いておくことが重要です。
+
+Mô tả hình (biên tập): Hai tập hồ sơ dựng đứng phía sau một tập mở có vòng kẹp giấy.
+
+## ポイント
+
+k. もちろんこれだけではなく、職場全体で保管している資料や、パソコン内にあるデータなど、さまざま種類の書類が、現代の職場にはあると思います。そのすべてに共通していえることは、「自分がいないときにほかの人が探しやすく」しておく、ということです。これさえ心掛ければ、すべての書類の整理は自然にうまくいき、仕事がしやすい環境になるでしょう。
+
+## 中文（① tiếp・②–③・k） (biên tập)
+
+工作人员取存文件夹，文件夹应该立起来摆放。
+
+Ghi chú nối trang (biên tập): Dòng trên nối cuối 中文① ở PDF p0052.
+
+② 文件盒使用方法
+
+新收到的文件、正在处理的文件、尚未整理好的文件可暂时分类放在A4规格复印纸大小的文件盒里。文件盒是用来临时收存文件的地方，不要没有制约地堆放文件。
+
+③ 用带不锈钢夹扣的文件夹将不是每天都要阅读的重要资料和不可能做扔掉处理的重要的历史资料夹起来放入文件柜最底层的抽屉里或收放在书柜里。别忘了文件夹外侧要注明文件内容。
+
+k. 除此之外工作现场还有很多其它资料。如整个工作单位保管的资料，电脑中的各种数据和其它各类资料。用一句话来说，文件管理的目的就是 你不在别人也能找得到。只要你能明白这个道理，你必定能够遵守文件管理制度，大家就都能在一个良好的环境中工作。
+
+## English (① tiếp・②–③・k) (biên tập)
+
+the files upright like books for easy access.
+
+Ghi chú nối trang (biên tập): Dòng trên nối cuối English① ở PDF p0052.
+
+② Using trays.
+
+Temporarily put into A-4 sized trays documents that you have just received, are still working on or haven't organized yet. Emphasis is on temporariness; don't let such documents pile up in the tray.
+
+③ Put important documents you won't look at often into binders.
+
+Such documents are too important to throw away, but are old so you don't often need them. Put them by category into file binders, and put the binders into your bottom desk drawer or on a bookshelf. It's important to clearly label the binder spines.
+
+k. There are probably many kinds of documents in the modern work-place, including those filed in the company as a whole or as data in computers. What is important is that others can easily find the infor-mation if you aren't there. If you keep this in mind, document orga-nization will naturally go well, facilitating a good work environment.
+
+## PDF page 54
+
+<a id="p0054"></a>
+
+<a id="p0054-b001"></a>
+
+- Trang in: 52
+- Đường dẫn nội dung: 第1章 / Unit 8 / 携帯電話のマナー
+
+## Unit 8 携帯電話のマナー
+
+便利で、なくてはならない携帯電話。
+でも、ちゃんとマナーを守っていますか？
+
+## 確認クイズ
+
+### 第1問
+
+電車の中で携帯が鳴ったら、どうしたらいいでしょう。
+
+1…普通に電話を取る
+2…電車の中なので、用事が終わるまでずっと、こそこそと話す
+3…相手に「今、電車の中なので後で、かけます」と言って切る
+
+### 第2問
+
+仕事中、あなたの携帯電話はどこに置いておくのがいいですか？
+
+1…バイブレーションの振動がわかるように、手に握っている
+2…音を消して、机の引き出しなどに入れておく
+3…すぐ電話に出られるように、机に置いておく
+
+### 解答
+
+第1問　3 → ② 携帯電話のマナー　参照
+第2問　2 → ② 携帯電話のマナー　参照
+
+## PDF page 55
+
+<a id="p0055"></a>
+
+<a id="p0055-b001"></a>
+
+- Trang in: 53
+- Đường dẫn nội dung: 第1章 / Unit 8 / ① 携帯電話の騒音について
+
+Tiêu đề lề (biên tập): 第1章 日本の一般マナー.
+
+## ① 携帯電話の騒音について
+
+〜びっくりする着信音！？〜
+
+Nhân vật ghi trong hình (biên tập): 中国人エンジニア 高さん、電車で乗り合わせた人達（một nam, một nữ）.
+
+### Truyện sáu khung (biên tập)
+
+1. Mô tả hình (biên tập): Đoàn tàu chạy qua thành phố dưới trời có mặt trời và mây.
+
+2. Mô tả hình (biên tập): Trong toa tàu đông người có tay nắm treo; mọi người giật mình vì âm thanh phát ra. Chữ âm thanh:
+
+ジャジャジャ
+ジャーン
+
+3. Mô tả hình (biên tập): 高さん cầm điện thoại mở ra, tiếng chuông vẫn vang; người đàn ông bên cạnh nghĩ:
+
+**Người đàn ông (suy nghĩ; biên tập):** こいつの携帯か…
+
+Chữ âm thanh (biên tập): ジャ／ジャジャ／ジャーン（／ phân cách các dòng của chữ âm thanh）.
+
+4. Mô tả hình (biên tập): 高さん tiếp tục nhìn điện thoại; tiếng chuông còn 「ジャ ジャ」 kèm nốt nhạc. Người phụ nữ nghĩ:
+
+**Người phụ nữ (suy nghĩ; biên tập):** 何でずっと見てるの？
+
+5. Mô tả hình (biên tập): 高さん áp điện thoại vào tai; tiếng chuông có 「ジャ ジャ…」 và tiếng bấm 「ピッ」. Hai người bên cạnh thở ra.
+
+6. **高さん:** ウェーイ！？ もしもし〜！
+
+Mô tả hình (biên tập): Hai người bên cạnh cau mày; bóng suy nghĩ chung ghi:
+
+うるさっ
+
+こんなこと、時々ありませんか？ これでは携帯電話は騒音そのものですね。
+では、携帯電話のマナーってどんなものでしょう？
+
