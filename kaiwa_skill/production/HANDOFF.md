@@ -127,3 +127,8 @@ QA follow-up:07 findings48â€“50 resolved/reverified/readback; expanded circledä¾
 ## Resume checkpoint 2026-11-10 17:39 UTC
 
 Actual CLI snapshot: 519/4597 verified, 4076 pending, 1 rendered, 1 needs_review. Six accepted books (398 pages) remain intact. Active book07 has 57 verified through physical58, source-cropped28 remains needs_review; book08 has60/103 verified. Same two live Sol/high workers continue. Coordinator independently compared07 through57 and08 sampled lesson/vocabulary boundaries through57. Narrow italic span51 and punctuation53 corrected/reverified/readback. Queue continues09 then10 as slots free; no pause.
+
+
+## Checkpoint 2026-11-10 17:58 UTC
+
+Actual CLI snapshot at17:58:16Z:545/4597 verified,4049pending,1draft,1rendered,1needs_review (07p28 sourcecrop),1issue. Six accepted books/398pages intact. Book07 65verified through66 except28; book08 snapshot78verified, subsequently worker reported80. Same two Sol/high agents continue. Independent coordinator QA07 through65 except28;08 selected earlier pages and all64-78 plus80,79 bracket correction pending. Expanded08 Vocabulary/WordUsage emphasis audit1-65 done; changed18/19/33 independently source/crop/readback cleared. Expanded07 English romanized-form italics1-64 requested after64 omission, in progress. Continue entire queue09/10 as slots free; no pause and no complete acceptance for07 with cropped28.
