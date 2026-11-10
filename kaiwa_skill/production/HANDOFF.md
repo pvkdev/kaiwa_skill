@@ -132,3 +132,14 @@ Actual CLI snapshot: 519/4597 verified, 4076 pending, 1 rendered, 1 needs_review
 ## Checkpoint 2026-11-10 17:58 UTC
 
 Actual CLI snapshot at17:58:16Z:545/4597 verified,4049pending,1draft,1rendered,1needs_review (07p28 sourcecrop),1issue. Six accepted books/398pages intact. Book07 65verified through66 except28; book08 snapshot78verified, subsequently worker reported80. Same two Sol/high agents continue. Independent coordinator QA07 through65 except28;08 selected earlier pages and all64-78 plus80,79 bracket correction pending. Expanded08 Vocabulary/WordUsage emphasis audit1-65 done; changed18/19/33 independently source/crop/readback cleared. Expanded07 English romanized-form italics1-64 requested after64 omission, in progress. Continue entire queue09/10 as slots free; no pause and no complete acceptance for07 with cropped28.
+
+
+## Checkpoint 2026-11-10 18:17 UTC
+
+CLI thực: 571/4597 verified, 4022 pending, 3 rendered, 1 needs_review (book07 p28 nguồn bị cắt). Sáu sách đã nghiệm thu/398 trang giữ nguyên. Hai worker tiếp tục. Sau snapshot, book08 đến100/103 và book07 đến72. Coordinator đã kiểm độc lập các trang chọn trước đó và toàn64–100 của08; toàn1–27,29–72 của07. Rà mở rộng nhấn mạnh meaning/Point của07 còn chờ hoàn tất. Tiếp tục toàn hàng đợi, không tạm dừng.
+
+## Nghiệm thu book08, cấp queue09 — 2026-11-10 18:26 UTC
+
+- `03-yuukibui-dd762e3fd201`: ACCEPTED 103/103 trang vật lý, 0 issue, build hiện tại, claim đã release. Commit output `6f45fdc`; build SHA `d5ce526d1167c5ca7b82f644bbc200940ca6aea7889c8c7df81b5d98803a599f`. Coordinator kiểm độc lập92/103 trang và xử lý toàn bộ finding; báo cáo/acceptance ràng buộc hash trong corpus.215 file text staged đúng byte; kiểm whitespace đạt, bảo toàn hard-break/CRLF nguồn. Tổng đã nghiệm thu:7 sách/501 trang.
+- Worker Sol/high mới `/root/production_resume/production_book_09` nhận136 trang của “5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày”, book ID `5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c`. Đã hash lại nguồn trước dispatch; worker init và claim owner `production_book_09`, token `production_book_09_20261111_0327`.
+- Snapshot refresh18:26:53Z:579/4597 verified,4016 pending,1 rendered,1 needs_review. Snapshot chạy trước claim09 nên claim_owner còn null; token mới ở trên. Book07 qua75, tiếp76; trang28 thiếu nguồn vẫn needs_review, rà mở rộng nhấn mạnh còn chờ. Queue10 nhận slot kế sau bàn giao partial07. Tiếp tục toàn hàng đợi; không push.
