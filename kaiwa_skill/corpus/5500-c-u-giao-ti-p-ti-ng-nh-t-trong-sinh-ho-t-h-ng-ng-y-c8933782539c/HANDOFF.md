@@ -3,11 +3,11 @@
 - Source: `book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf` (136 physical PDF pages).
 - Source SHA-256: `c8933782539c7bbe8ac755f2278bb7a6d7cf0d9165843c9ef14a198993b1825a`.
 - Output mode: text only.
-- Status after `build`: **54 verified, 36 needs_review, 46 pending**; `build_current=true`.
-- Next page: **physical PDF p91**; pending interval **p91–p136**.
-- Verified physical PDF pages: p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p17, p18, p19, p20, p21, p23, p28, p29, p30, p35, p36, p37, p38, p39, p42, p45, p47, p49, p50, p57, p61, p66, p67, p72, p73, p76, p77, p78, p79, p80, p81, p82, p83, p84, p85, p86, p87, p88, p89, p90.
+- Status after `build`: **74 verified, 36 needs_review, 26 pending**; `build_current=true`.
+- Next page: **physical PDF p111**; pending interval **p111–p136**.
+- Verified physical PDF pages: p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p17, p18, p19, p20, p21, p23, p28, p29, p30, p35, p36, p37, p38, p39, p42, p45, p47, p49, p50, p57, p61, p66, p67, p72, p73, p76, p77, p78, p79, p80, p81, p82, p83, p84, p85, p86, p87, p88, p89, p90, p91, p92, p93, p94, p95, p96, p97, p98, p99, p100, p101, p102, p103, p104, p105, p106, p107, p108, p109, p110.
 - Partial output: `book.md`, `search.jsonl`, `build.json` in this book corpus directory; each page has `pages/pNNNN.md` and `.json`.
-- Latest worker: `production_book_09_sol_cont3`; token `production_book_09_sol_cont3_20261111_d91f`. Claim successfully released after final validation; no active writer remains.
+- Latest worker: `production_book_09_sol_cont4`; token `production_book_09_sol_cont4_20261111_b7ef`. Claim released after final validation; no active writer remains.
 
 ## Source issues requiring a better scan
 
@@ -66,7 +66,7 @@
 - Final validation: reconcile + build + status: **37 verified / 33 needs_review / 66 pending**, `build_current=true`, no page errors. Still INCOMPLETE.
 - Claim released cleanly. Handoff at a closed page checkpoint; next pending physical page **p71**. P71–p136 have not been rendered or read by this worker. Resume only this pending interval; existing source-obscured pages require a better scan.
 
-## Latest continuation checkpoint — PDF p71–p90
+## Previous continuation checkpoint — PDF p71–p90
 
 - Worker model: `gpt-6-sol/high`, user override and skill 0.2.4. Source SHA-256 independently rechecked and unchanged. Only this book corpus and temporary cache were written; no Git, tools/skills, source PDF or other-book changes.
 - New verified pages: **p72, p73, p76, p77, p78, p79, p80, p81, p82, p83, p84, p85, p86, p87, p88, p89, p90** (17 pages). Actual full4x source spread and all four quadrant crops opened per page. Japanese, romanization, Vietnamese accents, all source furigana occurrences/spans, labels, headings and folios compared image→Markdown and Markdown→image. No OCR used. Source errors and mismatches retained.
@@ -80,10 +80,22 @@
 - Final reconcile + build + status: **54 verified / 36 needs_review / 46 pending**, `build_current=true`, all page error arrays empty. Still **INCOMPLETE**, not accepted. Claim released cleanly after final validation.
 - Closed page checkpoint at physical p90. Next pending page **p91**; interval **p91–p136** has not been rendered/read by this worker.
 
+## Latest continuation checkpoint — PDF p91–p110
+
+- Worker model: `gpt-6-sol/high`, user instruction and skill 0.2.4. Source SHA-256 independently rechecked and unchanged. Only this book corpus and temporary cache were written; no Git, tools/skills, source PDF or other-book changes.
+- New verified pages: **p91–p110** (20 physical pages). Actual full4x source spread and all four quadrant crops opened per page. Compared image→Markdown and each Markdown line→image for Japanese, romanization, Vietnamese accents, exact source furigana occurrence/span, headings and folios. No OCR used. Source mistakes and translation mismatches retained.
+- Focused crops: p91 自由 ruby enlarged to examine kana size; p95 enlarged 完璧 confirms kanji and `かんぺき` while roman `Kanbeki` remains source spelling. All crops/scratch drafts/review JSON and temporary checkpoint helper remain under `.cache/renders/<book_id>/`, never corpus output.
+- No additional `needs_review` source issue in this interval. Existing **36 needs_review** pages remain unresolved and require a better scan; no hidden binding text was inferred.
+- Cross-page joins checked: p90→p91 item1 alternative/dialogue; p94→p95 section14 item1 alternative; p98→p99 Hứa hẹn vocabulary continuation; p103→p104 item22 expansion; p104→p105 item31 dialogue reply; p105→p106 reading10 dialogue reply; p106→p107 housework2 alternative. Within-spread joins checked p93/item4, p94/item12 alternative, p96/item11. P110 closes with complete sleep item12, no unfinished dialogue.
+- Vocabulary p97–p99 preserved all row pairings and group boundaries, no furigana printed or added. P99 right panel begins CHƯƠNG2 / SINH HOẠT THƯỜNG NGÀY / I. VẬN ĐỘNG.
+- Source irregularities retained include p92 `ななにも`/nana nimo, soko koto, `助けらない`/Tasukeranai; p95 Kanbeki/Sukoshi; p96 `ソー・コメント`/sookomenti and `そのについて`; p97 `薦める`, mismatched 命がけ/手をこまねいて glosses; p99 `遅れよ`/okure yo; p100 Mazamashi; p101 Hachiji no; p102 literal line-end `moyooshi-`, `眠`/みん/min and wo hashan; p103 `二日酔＝ににちょ`/Ninichi yoi; p104 missing を in27 and tie dialogue after26; p105 Mainichieki/Sopootsumen/Itterashai; p106 mushi/Reshiki/yomakakute and 眠/min; p107 repeated irete, literal line-end `dumiagera-`, hesuutsu/okoo/kataduke/tsu motteimasu; p108 `協力`/sensai/Okaeru and unpunctuated `ただ今`; p109 yatsu/oyatsu, kassaa/sakkaa; p110 ベット/asoku/nowo/Mesamashi.
+- Final reconcile + build + status: **74 verified / 36 needs_review / 26 pending**, `build_current=true`, no page validation errors. Still **INCOMPLETE**, not accepted. Partial book SHA-256 `c34fa3991d2756bb4811f44130331bdfc04df103fc5f39f0183828b0b155fb93`.
+- Clean closed checkpoint at physical p110. Next pending physical PDF page **p111**; interval **p111–p136** has not been rendered/read by this worker. Claim released cleanly after final validation.
+
 ## Resume instructions
 
 - Recover/claim using `kaiwa_skill/tools/ingest.py`; reconcile and check source hash before writing.
-- Continue at physical PDF p91, then each pending page through p136. The 36 `needs_review` pages already have local partial drafts and issue records. Do not infer text behind the black binding edge.
+- Continue at physical PDF p111, then each pending page through p136. The 36 `needs_review` pages already have local partial drafts and issue records. Do not infer text behind the black binding edge.
 - Render each page and inspect the full spread plus quadrant crops; compare transcription to image in both directions, including Japanese, romanization, Vietnamese, headings, page numbers and printed furigana occurrence/span. Verify with page evidence only when completely readable; otherwise record partial text with local unreadable markers and `needs_review`.
-- Images and scratch drafts for p18–p90 are under `kaiwa_skill/.cache/renders/<book_id>/`; these are temporary reference files.
+- Images and scratch drafts for p18–p110 are under `kaiwa_skill/.cache/renders/<book_id>/`; these are temporary reference files.
 - Build partial at checkpoints, and run final build/reconcile/quality checks after all pages are processed. No Git operation was performed by this worker.
