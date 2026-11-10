@@ -66,3 +66,10 @@ Không có daemon hoặc tiến trình nền được bảo đảm tiếp tục 
 - Staged 187 file text đúng byte trên đĩa; không có image/cache/claim/lock/scratch/source. Kiểm whitespace với CR-at-EOL và bỏ cảnh báo blank-at-EOF của book.md sinh tự động; không normalize nội dung verified để tránh đổi hash. Validator/hash/build đều đạt.
 - Slot mới: `/root/production_resume/production_book_06`, gpt-6-sol/high, `85-21a2cb6f3fef`, nguồn `book/Kaiwa/外国人のための日本語敬語の使い方-基本表現85.pdf`, 93 trang. Worker đọc trạng thái thật rồi init/claim; coordinator tiếp tục QA và commit tuần tự.
 - Sách05 vẫn chạy ở `/root/production_resume/production_book_05_resume`, mốc80/91 verified; coordinator đã so nguồn toàn p1–77, tiếp tục mở rộng đến hết sách sau lỗi furigana occurrence lặp. Chưa nghiệm thu05. Dùng CLI/roster mới lấy số hiện tại.
+
+## Nghiệm thu sách 05 và chuyển slot — 2026-11-10
+
+- `namachuukei-shochuukyuu-1-53b5b51998a3`: ACCEPTED 91/91, 0 issue, build hiện tại và claim đã release. Commit output `13fd252`. Coordinator đã mở ảnh nguồn và đối chiếu toàn bộ 91 trang sau lỗi occurrence ruby tái diễn; mọi sai khác đã biết đã sửa/reverify/readback, hash ledger khớp toàn sách. Báo cáo/acceptance hash-bound trong corpus.
+- 192 file text staged đúng byte, không ảnh/cache/claim/lock/scratch. Whitespace còn lại là CRLF bảo toàn byte, blank cuối book sinh tự động và hai space Markdown hard-break ở colophon p91/bản ghép; giữ nguyên bằng chứng đã verified. Scratch cũ của05 vẫn tồn tại ngoài commit.
+- Slot mới `/root/production_resume/production_book_07`, gpt-6-sol/high, `669041168-4f47df1cc97a`, nguồn `book/Kaiwa/669041168-日本語会話-基本文型８８.pdf`, 96 trang. Worker đọc status rồi init/claim. Tiếp tục toàn queue.
+- Book06 đang chạy ở `/root/production_resume/production_book_06`; mốc9/93 verified. Coordinator đã QA toàn p1–6, sửa/readback ruby/nhãn/romanization; giữ ruby dị thường特定＝ことば ởTOC và ghi rõ nhận định受＝う bị rút sau tightcrop đối chứng. Chưa nghiệm thu06; tiếp tục QA phần mở đầu và cặp mẫu bài chínhp10.
