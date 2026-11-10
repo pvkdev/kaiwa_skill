@@ -5064,3 +5064,2515 @@ Dareka koko ni suwaru hito ga imasu ka?
 
 132 · 133
 
+## PDF page 72
+
+<a id="p0072"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0072
+
+- Trang in: 142 (trái), 143 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 3. PHÁT BIỂU Ý KIẾN.
+
+<a id="p0072-b001"></a>
+## Trang 142 — 3. PHÁT BIỂU Ý KIẾN (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**10.** お考えを聞かせてください。
+
+Furigana (nguồn): 考＝かんが; 聞＝き
+
+Okangae wo kikasete kudasai.
+
+*Hãy lắng nghe quan điểm.*
+
+<a id="p0072-b002"></a>
+**11.** わたしから見れば、これはかなりいい計画だと思う。
+
+Furigana (nguồn): 見＝み; 計画＝けいかく; 思＝おも
+
+Watashi kara mireba, kore wa kanari ii keikaku dato omou.
+
+*Theo tôi nghĩ kế hoạch này rất hay.*
+
+• **Diễn đạt tương tự:**
+
+わたしから見れば、これはなかなかすばらしい計画だと思う。
+
+Furigana (nguồn): 見＝み; 計画＝けいかく; 思＝おも
+
+Watashi kara mireba, kore wa nakanaka subarashii keikaku dato omou.
+
+*Theo tôi nghĩ kế hoạch này rất hay.*
+
+<a id="p0072-b003"></a>
+**12.** これを意識した人がまだ少ないというのは問題だ。
+
+Furigana (nguồn): 意識＝いしき; 人＝ひと; 少＝すく; 問題＝もんだい
+
+Kore wo ishikishita hito ga mada sukunai to iu nowa mondai da.
+
+*Số người đã đưa ra ý kiến cho vấn đề này không ít.*
+
+<a id="p0072-b004"></a>
+**13.** これは明らかの買っておくべきものだ。
+
+Furigana (nguồn): 明＝あき; 買＝か
+
+Kore wa akiraka no katte oku beki mono da.
+
+*Đây là cái mà chúng ta muốn mua.*
+
+<a id="p0072-b005"></a>
+**14.** どう考えているのか教えてください。
+
+Furigana (nguồn): 考＝かんが; 教＝おし
+
+Doo kangaeteiru noka oshiete kudasai.
+
+*Hãy suy nghĩ kỹ xem sao.*
+
+<a id="p0072-b006"></a>
+## Trang 143 — 3. PHÁT BIỂU Ý KIẾN (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**15.** わたしの考えでは学生は実地研究を行わなければならない。
+
+Furigana (nguồn): 考＝かんが; 学生＝がくせい; 実地研究＝じっちけんきゅう
+
+Watashi no kangaete wa gakusei wa jicchikenkyuu wo okonawanakereba naranai.
+
+*Theo quan điểm của tôi, sinh viên cần phải tiến hành nghiên cứu hiện trường.*
+
+<a id="p0072-b007"></a>
+**16.** わたしから見れば、彼を首にする必要がないと思う。
+
+Furigana (nguồn): 見＝み; 彼＝かれ; 首＝くび; 必要＝ひつよう; 思＝おも
+
+Watashi kara mireba, kare wo kubi ni suru hitsuyoo ga nai to omou.
+
+*Theo tôi nghĩ việc sa thải anh ấy là không cần thiết.*
+
+• **Diễn đạt mở rộng:**
+
+会社に遅れたら首にされてしまうぞ。
+
+Furigana (nguồn): 会社＝かいしゃ; 遅＝おく; 首＝くび
+
+Kaisha ni okuretara kubi ni sarete shimau zo.
+
+*Nếu đi trễ mà bị sa thải thì...*
+
+<a id="p0072-b008"></a>
+**17.** ドライブでもしてみたらいかがですか。
+
+Doraibu demoshitemitara ikaga desu ka?
+
+*Nên làm gì để tập lái xe?*
+
+• **Diễn đạt mở rộng:**
+
+タバコでも吸いませんか。
+
+Furigana (nguồn): 吸＝す
+
+Tabako demo suimasen ka?
+
+*Bạn có hút thuốc không?*
+
+<a id="p0072-b009"></a>
+**18.** もう一度あなたの決めたことを考え直してほしい。
+
+Furigana (nguồn): 一度＝いちど; 決＝き; 考＝かんが; 直＝なお
+
+Moo ichido anata no kimeta koto wo kangae naoshite hoshii.
+
+*Tôi muốn bạn suy nghĩ lại thêm một lần nữa về điều đã quyết định.*
+
+142 · 143
+
+## PDF page 73
+
+<a id="p0073"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0073
+
+- Trang in: 144 (trái), 145 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 3. PHÁT BIỂU Ý KIẾN.
+
+<a id="p0073-b001"></a>
+## Trang 144 — 3. PHÁT BIỂU Ý KIẾN (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**19.** いいホテルをお勧めしてもいいです。
+
+Furigana (nguồn): 勧＝すす
+
+Ii horeru wo osusumeshitemo ii desu.
+
+*Tôi khuyên bạn nên ở khách sạn tốt.*
+
+<a id="p0073-b002"></a>
+**20.** いますぐ出発することを提案します。
+
+Furigana (nguồn): 出発＝しゅっぱつ; 提案＝ていあん
+
+Imasugu shubbatsusuru koto wo teianshimasu.
+
+*Đề án sẽ được tiến hành ngay bây giờ.*
+
+<a id="p0073-b003"></a>
+**21.** 厳しく言えば、あなたに辞職してもらいたいのだ。
+
+Furigana (nguồn): 厳＝きび; 言＝い; 辞職＝じしょく
+
+Kibishiku ieba, anata ni joshokushite moraitai noda.
+
+*Nếu nói một cách nghiêm chỉnh, tôi muốn thôi việc.*
+
+<a id="p0073-b004"></a>
+**22.** いざいざを引き起こさないでほしい。
+
+Furigana (nguồn): 引＝ひ; 起＝お
+
+Izaiza wo hikiokosanai de hoshii.
+
+*Tôi không muốn gây ra những chuyện rắc rối.*
+
+<a id="p0073-b005"></a>
+**23.** 真相をありのまま彼に伝えるべきだと思います。
+
+Furigana (nguồn): 真相＝しんそう; 彼＝かれ; 伝＝つた; 思＝おも
+
+Shinsoo wo ari no mama kare ni tsutaeru biki dato omoimasu.
+
+*Tôi nghĩ cần phải nói cho anh ấy chân tướng sự thật.*
+
+<a id="p0073-b006"></a>
+**24.** わたしならそう考えもしないのだ。
+
+Furigana (nguồn): 考＝かんが
+
+Watashi nara soo kangae moshinai no da.
+
+*Nếu là tôi, tôi không nghĩ thế.*
+
+• **Diễn đạt mở rộng:**
+
+わたしがあなたなら、傘を持っていくはずだ。
+
+Furigana (nguồn): 傘＝かさ; 持＝も
+
+Watashi ga anata nara, kasa wo motteiku hazu da.
+
+*Nếu là bạn, tôi chắc chắn sẽ mang theo dù.*
+
+<a id="p0073-b007"></a>
+## Trang 145 — 3. PHÁT BIỂU Ý KIẾN (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**25.** レストランへ食事に行くようにとお薦めします。
+
+Furigana (nguồn): 食事＝しょくじ; 行＝い; 薦＝すす
+
+Resutoran he shokuji ni iku yooni to osusumeshimasu.
+
+*Tôi khuyên bạn nên đến nhà hàng dùng bữa.*
+
+<a id="p0073-b008"></a>
+**26.** わたしがあなたなら、そんなに多くタバコを吸わない。
+
+Furigana (nguồn): 多＝おお; 吸＝す
+
+Watashi ga anata nara, sonna ni ooku tabako wo suwanai.
+
+*Nếu tôi là bạn thì tôi sẽ không hút thuốc nhiều như thế.*
+
+<a id="p0073-b009"></a>
+**27.** わたしの見るところでは、お住まいを売るべきではない。
+
+Furigana (nguồn): 見＝み; 住＝す; 売＝う
+
+Watashi no miru tokoro dewa, osumai wo uru beki de wanai.
+
+*Theo cách nhìn của tôi thì không cần phải bán nhà.*
+
+<a id="p0073-b010"></a>
+**28.** 犬を飼ったほうがあなたにはいいかもしれない。
+
+Furigana (nguồn): 犬＝いぬ; 飼＝か
+
+Inu wo katta hoo ga anata niwa ii kamo shirenai.
+
+*Có lẽ tốt hơn hết là bạn nên nuôi chó.*
+
+<a id="p0073-b011"></a>
+**29.** これらの本はもう役に立たないから、いっそのこと売ってしまったほうがいい。
+
+Furigana (nguồn): 本＝ほん; 役＝えき
+
+Korera no hon wa moo eki ni tatanai kara, isso no koto utteshimatta hoo ga ii.
+
+*Quyển sách này vì không còn ích lợi gì nữa, tốt hơn hết nên bán đi.*
+
+144 · 145
+
+## PDF page 76
+
+<a id="p0076"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0076
+
+- Trang in: 150 (trái), 151 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 4. AN ỦI.
+
+<a id="p0076-b001"></a>
+## Trang 150 — 4. AN ỦI (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**8.** 誰でもこんなことに会う可能性がある。
+
+Furigana (nguồn): 誰＝だれ; 会＝あ; 可能性＝かのうせい
+
+Dare demo konna koto ni au kanoosei ga aru.
+
+*Bất kì ai cũng có thể gặp phải những việc như thế mà.*
+
+<a id="p0076-b002"></a>
+**9.** もう自分を責めないでください。
+
+Furigana (nguồn): 自分＝じぶん; 責＝せ
+
+Moo jibun wo semenaide kudasai.
+
+*Đừng tự dằn vặt mình nữa. / Đừng đổ lỗi cho mình nữa.*
+
+<a id="p0076-b003"></a>
+**10.** これは普通のミスです。
+
+Furigana (nguồn): 普通＝ふつう
+
+Kore wa futsuu no misu desu.
+
+*Đó là lỗi phổ biến ai cũng mắc phải mà.*
+
+<a id="p0076-b004"></a>
+**11.** 何も心配することはない。
+
+Furigana (nguồn): 何＝なに; 心配＝しんぱい
+
+Nani mo shinbaisuru koto wa nai.
+
+*Không có gì phải lo lắng cả.*
+
+<a id="p0076-b005"></a>
+**12.** あなたが思ったほど悪くない。
+
+Furigana (nguồn): 思＝おも; 悪＝わる
+
+Anata ga omotta hodo warukunai.
+
+*Nó không xấu như bạn nghĩ đâu*
+
+<a id="p0076-b006"></a>
+**13.** 落ち着いて、いまさら、自然に任せろ。
+
+Furigana (nguồn): 落＝お; 着＝つ; 自然＝しぜん; 任＝まか
+
+Ochitsuite, imasara, shizen ni makasero.
+
+*Hãy bình tĩnh và việc gì đến sẽ đến thôi.*
+
+<a id="p0076-b007"></a>
+**14.** しっかりしろ
+
+Shikkarishiro.
+
+*Hoan nghênh!*
+
+<a id="p0076-b008"></a>
+**15.** よし、大丈夫だ。
+
+Furigana (nguồn): 大丈夫＝だいじょうぶ
+
+Yoshi, dajoobu da.
+
+*Được rồi, không sao đâu.*
+
+<a id="p0076-b009"></a>
+**16.** だれでもそんなことにあうから。
+
+<a id="p0076-b010"></a>
+## Trang 151 — Mục 16 tiếp từ trang 150 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+Dare demo sonna koto ni au kara.
+
+*Đó là chuyện ai cũng gặp phải mà.*
+
+<a id="p0076-b011"></a>
+**17.** 過ぎたことを忘れよう。
+
+Furigana (nguồn): 過＝す; 忘＝わす
+
+Sugita koto wo wasure yoo.
+
+*Hãy quên những việc đã qua đi.*
+
+• **Diễn đạt tương tự:**
+
+過ぎたことは仕方がない。
+
+Furigana (nguồn): 過＝す; 仕方＝しかた
+
+Sugita koto wa shikata ga nai.
+
+*Hãy quên những việc đã qua đi.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+本当に申し訳ありません。
+
+Furigana (nguồn): 本当＝ほんとう; 申＝もう; 訳＝わけ
+
+Hontoo ni mooshiwake arimasen.
+
+*Tôi thật lòng xin lỗi.*
+
+過ぎたことを忘れよう。
+
+Furigana (nguồn): 過＝す; 忘＝わす
+
+Sugita koto wo wasure yoo.
+
+*Hãy quên những việc đã qua đi.*
+
+<a id="p0076-b012"></a>
+**18.** いい面を考えてください。
+
+Furigana (nguồn): 面＝めん; 考＝かんが
+
+Ii men wo kangaete kudasai.
+
+*Hãy suy nghĩ về điều tích cực.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+未来は想像がつかないね。
+
+Furigana (nguồn): 未来＝みらい; 想像＝そうぞう
+
+Mirai wa soozoo ga tsukanai ne.
+
+*Không thể tưởng tượng được tương lai mình rồi sẽ sao nhỉ.*
+
+いい面を考えてください。
+
+Furigana (nguồn): 面＝めん; 考＝かんが
+
+Ii men wo kangaete kudasai.
+
+*Hãy suy nghĩ về điều tích cực.*
+
+150 · 151
+
+## PDF page 77
+
+<a id="p0077"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0077
+
+- Trang in: 152 (trái), 153 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 4. AN ỦI (tiếp); 5. KHUYẾN KHÍCH, ĐỘNG VIÊN.
+
+<a id="p0077-b001"></a>
+## Trang 152 — 4. AN ỦI (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**19.** あんまり気にしないでください。
+
+Furigana (nguồn): 気＝き
+
+Anmari ki ni shinai de kudasai.
+
+*Đừng để tâm đến những điều như thế.*
+
+<a id="p0077-b002"></a>
+## 5. KHUYẾN KHÍCH, ĐỘNG VIÊN
+
+**1.** 怖がらないで、みんな味方です。
+
+Furigana (nguồn): 怖＝こわ; 味方＝みかた
+
+Kowagaranai de, minna mikata desu.
+
+*Đừng sợ gì cả, mọi người luôn ủng hộ bạn mà.*
+
+<a id="p0077-b003"></a>
+**2.** お任せ、信用しているから。
+
+Furigana (nguồn): 任＝まか; 信用＝しんよう
+
+Omakase, shinyooshiteiru kara.
+
+*Cứ tiến hành đi, tôi hoàn toàn tin tưởng ở bạn.*
+
+<a id="p0077-b004"></a>
+**3.** 続けて、あなたはできるから。
+
+Furigana (nguồn): 続＝つづ
+
+Tsudukete, anata wa dekiru kara.
+
+*Tiếp tục đi nào, bạn có thể làm được mà.*
+
+<a id="p0077-b005"></a>
+**4.** あなたを信じています。
+
+Furigana (nguồn): 信＝しん
+
+Anata wo shinjiteimasu.
+
+*Tôi tin tưởng ở bạn.*
+
+<a id="p0077-b006"></a>
+**5.** あなたの選挙をサポートしている。
+
+Furigana (nguồn): 選挙＝せんきょ
+
+Anata no senkyo wo sapootoshiteiru.
+
+*Tôi ủng hộ chiến dịch bầu cử của anh.*
+
+<a id="p0077-b007"></a>
+**6.** あなたの提案に賛成します。
+
+Furigana (nguồn): 提案＝ていあん; 賛成＝さんせい
+
+Anata no teian ni sanseishimasu.
+
+*Tôi hoàn toàn tán thành đề án của bạn.*
+
+<a id="p0077-b008"></a>
+**7.** いつまでも支持している。
+
+Furigana (nguồn): 支持＝しじ
+
+Itsumade mo shijishiteiru.
+
+*Tôi lúc nào cũng ủng hộ bạn.*
+
+<a id="p0077-b009"></a>
+## Trang 153 — 5. KHUYẾN KHÍCH, ĐỘNG VIÊN (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**8.** きっと成功すると信じている。
+
+Furigana (nguồn): 成功＝せいこう; 信＝しん
+
+Kitto seikoosuru to shinjiteiru.
+
+*Tôi tin rằng chắc chắn bạn sẽ thành công.*
+
+<a id="p0077-b010"></a>
+**9.** あなたの味方です。
+
+Furigana (nguồn): 味方＝みかた
+
+Anata no migata desu.
+
+*Tôi luôn bên bạn.*
+
+<a id="p0077-b011"></a>
+**10.** わたしはあなたのサポーターです。
+
+Watashi wa anata no sapootaa desu.
+
+*Tôi luôn đứng đằng sau bạn.*
+
+<a id="p0077-b012"></a>
+**11.** やってみても悪くない。
+
+Furigana (nguồn): 悪＝わる
+
+Yattemite mo warukunai.
+
+*Thử một lần sẽ không làm bạn thất vọng đâu.*
+
+<a id="p0077-b013"></a>
+**12.** 大丈夫だよ、世界の終わりじゃないから。
+
+Furigana (nguồn): 大丈夫＝だいじょうぶ; 世界＝せかい; 終＝お
+
+Daijoobu dayo, sekai no owari janai kara.
+
+*Không sao, đó chưa phải là ngày tận thế đâu.*
+
+<a id="p0077-b014"></a>
+**13.** あなたを支持している。
+
+Furigana (nguồn): 支持＝しじ
+
+Anata wo shijishiteiru.
+
+*Tôi ủng hộ bạn.*
+
+<a id="p0077-b015"></a>
+**14.** ずっとあなたを支持している
+
+Furigana (nguồn): 支持＝しじ
+
+Zutto anata wo shijishiteiru.
+
+*Tôi luôn ủng hộ bạn.*
+
+<a id="p0077-b016"></a>
+**15.** 勇気を出して。
+
+Furigana (nguồn): 勇気＝ゆうき; 出＝だ
+
+Yuuki wo dashite.
+
+*Bạn thật dũng cảm.*
+
+<a id="p0077-b017"></a>
+**16.** あなたに味方します。
+
+Furigana (nguồn): 味方＝みかた
+
+Anata ni mikatashimasu.
+
+*Tôi là người luôn ủng hộ bạn.*
+
+152 · 153
+
+## PDF page 78
+
+<a id="p0078"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0078
+
+- Trang in: 154 (trái), 155 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 5. KHUYẾN KHÍCH, ĐỘNG VIÊN.
+
+<a id="p0078-b001"></a>
+## Trang 154 — Diễn đạt tương tự của mục 16 (tiếp từ trang 153) (biên tập)
+
+生活のために日本語会話文句 5500
+
+• **Diễn đạt tương tự:**
+
+あなたの要求を支持し助けます。
+
+Furigana (nguồn): 要求＝ようきゅう; 支持＝しじ
+
+Anata no yookyuu wo shijishi tasukemasu.
+
+*Tôi sẽ ủng hộ những yêu cầu của bạn.*
+
+<a id="p0078-b002"></a>
+**17.** あなたはちゃんとできるんだ。
+
+Anata wa chanto dekirunda.
+
+*Bạn có thể thành công.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+この仕事はわたしには無理でしょう。
+
+Furigana (nguồn): 仕事＝しごと; 無理＝むり
+
+Kono shigoto wa watashi wa muri deshoo.
+
+*Đối với tôi có lẽ làm không nổi công việc này đâu.*
+
+信じてくれよ。きみはきっとできる。
+
+Furigana (nguồn): 信＝しん
+
+Shinjite kure yo. Kimi wa kitto dekiru.
+
+*Hãy tự tin lên. Bạn có thể làm được mà.*
+
+<a id="p0078-b003"></a>
+**18.** もう少しででき上がるところだった。
+
+Furigana (nguồn): 少＝すこ; 上＝あ
+
+Moo sukoshi de deki agaru tokoro datta.
+
+*Cố gắng lên một chút mọi việc sẽ tốt thôi.*
+
+<a id="p0078-b004"></a>
+**19.** 手を貸してあげるから、心配は要りませんよ。
+
+Furigana (nguồn): 手＝て; 貸＝か; 心配＝しんぱい; 要＝い
+
+Te wo kashite ageru kara, shinbai wa irimasen yo.
+
+*Tôi sẽ giúp bạn, không cần phải lo lắng đâu.*
+
+<a id="p0078-b005"></a>
+**20.** しっかりしなさい。
+
+Shikkari shinasai.
+
+*Hãy bình tĩnh.*
+
+<a id="p0078-b006"></a>
+**21.** あなたのほうがわたしよりずっと上手です。
+
+Furigana (nguồn): 上手＝じょうず
+
+Anata no hoo ga watashi yori zutto joozu desu.
+
+*Bạn giỏi giang hơn tôi mà.*
+
+<a id="p0078-b007"></a>
+## Trang 155 — 5. KHUYẾN KHÍCH, ĐỘNG VIÊN (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**22.** あきらめてはいけないよ。
+
+Akiramete wa ikenai yo.
+
+*Không được từ bỏ đâu.*
+
+<a id="p0078-b008"></a>
+**23.** やってみなさい。
+
+Yatte minasai.
+
+*Hãy thử làm đi.*
+
+<a id="p0078-b009"></a>
+**24.** 自分のことを確認している。
+
+Furigana (nguồn): 自分＝じぶん; 確認＝かくにん
+
+Jibun no koto wo kakuninshiteiru.
+
+*Xác nhận lại việc của chính mình.*
+
+<a id="p0078-b010"></a>
+**25.** 君こそ一番だ。
+
+Furigana (nguồn): 君＝きみ; 一番＝いちばん
+
+Kimi koso ichiban da.
+
+*Bạn là nhất đó.*
+
+<a id="p0078-b011"></a>
+**26.** 君がちゃんとできると確認している。
+
+Furigana (nguồn): 君＝きみ; 確認＝かくにん
+
+Kimi ga chanto dekiru to kakuninshiteiru.
+
+*Xác nhận lại đi bạn có thể làm được.*
+
+<a id="p0078-b012"></a>
+**27.** よくできました。
+
+Yoku dekimashita.
+
+*Có thể tốt mà.*
+
+<a id="p0078-b013"></a>
+**28.** えらいですね。
+
+Erai desu ne.
+
+*Bạn tài quá nhỉ?*
+
+<a id="p0078-b014"></a>
+**29.** もうあなたには選択する余地がない。
+
+Furigana (nguồn): 選択＝せんたく; 余地＝よち
+
+Moo anata niwa sentakusuru yochi ga nai.
+
+*Bạn phải làm.*
+
+• **Diễn đạt tương tự:**
+
+もうやらなければならない。
+
+Moo yaranakereba naranai.
+
+*Bạn phải làm.*
+
+154 · 155
+
+## PDF page 79
+
+<a id="p0079"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0079
+
+- Trang in: 156 (trái), 157 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 5. KHUYẾN KHÍCH, ĐỘNG VIÊN (tiếp); 6. KHEN NGỢI.
+
+<a id="p0079-b001"></a>
+## Trang 156 — 5. KHUYẾN KHÍCH, ĐỘNG VIÊN (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**30.** ちょっとした挫折で失望落胆してはならない。
+
+Furigana (nguồn): 挫折＝ざせつ; 失望落胆＝しつぼうらくたん
+
+Chotto shita kisetsu de shitsuboo raakutan shite wa naranai.
+
+*Dù thất bại cũng không được chán nản.*
+
+<a id="p0079-b002"></a>
+**31.** このグループのメンバーはみんな腕利きだ。
+
+Furigana (nguồn): 腕利＝うでき
+
+Kono guruupu no menbaa wa minna udekikida.
+
+*Các thành viên của nhóm này tất cả đều có tay nghề cao.*
+
+<a id="p0079-b003"></a>
+## 6. KHEN NGỢI
+
+**1.** たいしたもんですね。
+
+Taishita mon desu ne.
+
+*Bạn thật là may mắn!*
+
+<a id="p0079-b004"></a>
+**2.** 素敵なスカートだね。
+
+Furigana (nguồn): 素敵＝すてき
+
+Suteki na sukaato da ne.
+
+*Cái váy bạn đang mặc đẹp quá.*
+
+<a id="p0079-b005"></a>
+**3.** かわいい猫ですね。
+
+Furigana (nguồn): 猫＝ねこ
+
+Kawauu neko desu ne!
+
+*Con mèo nhỏ dễ thương quá!*
+
+• **Diễn đạt mở rộng:**
+
+彼女はかわいいです。
+
+Furigana (nguồn): 彼女＝かのじょ
+
+Kanojo wa kawaii desu.
+
+*Cô ấy thật dễ thương.*
+
+<a id="p0079-b006"></a>
+**4.** あなたのように若く見えたらいいなあ。
+
+Furigana (nguồn): 若＝わか; 見＝み
+
+Anata no yooni wakaku mietara ii naa.
+
+*Tôi nghĩ nhìn mình cũng trẻ như bạn.*
+
+<a id="p0079-b007"></a>
+## Trang 157 — Diễn đạt mở rộng của mục 4 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+• **Diễn đạt mở rộng:**
+
+この子は鶯のように歌っている。
+
+Furigana (nguồn): 子＝こ; 鶯＝うぐいす; 歌＝うた
+
+Kono ko wa uguisu no yooni utatteiru.
+
+*Giọng hát của đứa trẻ ngọt ngào như chim sơn ca.*
+
+<a id="p0079-b008"></a>
+**5.** あなたの取った成績に感心している。
+
+Furigana (nguồn): 取＝と; 成績＝せいせき; 感心＝かんしん
+
+Anata no totta seiseki ni kanshinshiteiru.
+
+*Tôi luôn thán phục những thành tích mà bạn đạt được.*
+
+<a id="p0079-b009"></a>
+**6.** あなたは本当にいいセンスがありますね。
+
+Furigana (nguồn): 本当＝ほんとう
+
+Anata wa hontoo ni ii sensu ga arimasu ne.
+
+*Thực sự bạn có thị hiếu rất tốt.*
+
+• **Diễn đạt mở rộng:**
+
+山田さんは本当に服にはセンスがない。
+
+Furigana (nguồn): 山田＝やまだ; 本当＝ほんとう; 服＝ふく
+
+Yamadasan wa hontoo ni fuku niwa sensu ga nai.
+
+*Khiếu thẩm mỹ về quần áo của Yamada rất tệ.*
+
+<a id="p0079-b010"></a>
+**7.** スマートに見える。
+
+Furigana (nguồn): 見＝み
+
+Sumaato ni mieru.
+
+*Nhìn bạn thật bảnh bao.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+健一さん、今日はスマートに見えますね。
+
+Furigana (nguồn): 健一＝けんいち; 見＝み
+
+Kenichisan, kyoo wa sumaato ni miemasu ne.
+
+*Kenichi, hôm nay nhìn anh thật bảnh bao.*
+
+ありがとう。
+
+Arigatoo.
+
+*Cảm ơn nhé.*
+
+<a id="p0079-b011"></a>
+**8.** おもしろいアイディアですね。
+
+Omoshiroi aideia desu ne.
+
+*Bạn có ý kiến rất thú vị.*
+
+156 · 157
+
+## PDF page 80
+
+<a id="p0080"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0080
+
+- Trang in: 158 (trái), 159 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 6. KHEN NGỢI.
+
+<a id="p0080-b001"></a>
+## Trang 158 — 6. KHEN NGỢI (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**9.** 新しいジャケットを着て、格好いいね。
+
+Furigana (nguồn): 新＝あたら; 着＝き; 格好＝かっこう
+
+Aatarashi jaketto wo kite, gakkoo ii ne.
+
+*Nhìn anh rất tuyệt trong bộ comple mới này.*
+
+<a id="p0080-b002"></a>
+**10.** ほめなければいけない。本当によくできましたね。
+
+Furigana (nguồn): 本当＝ほんとう
+
+Homenakereba ikenai. Hontoo ni yoku dekimashita ne.
+
+*Tôi phải đưa nó cho bạn thôi. Thực ra bạn làm việc rất tốt.*
+
+<a id="p0080-b003"></a>
+**11.** よくがんばりましたね。
+
+Yoku ganbari mashita ne.
+
+*Bạn đã rất cố gắng nhỉ.*
+
+<a id="p0080-b004"></a>
+**12.** すごいですね。
+
+Sugoi desu ne.
+
+*Bạn giỏi quá nhỉ.*
+
+<a id="p0080-b005"></a>
+**13.** ねえ、あなたの新しい背広が好きです。
+
+Furigana (nguồn): 新＝あたら; 背広＝せひろ; 好＝す
+
+Nee, anata no atarashii sehiro ga suki desu.
+
+*Nè, tôi rất thích bộ comple mới của bạn.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+ねえ、いま何時か知っている。
+
+Furigana (nguồn): 何時＝なんじ; 知＝し
+
+Nee, ima nanji ka shitteiru.
+
+*Nè, bạn có biết bây giờ là mấy giờ không?*
+
+五時半です。
+
+Furigana (nguồn): 五時半＝ごじはん
+
+Gojihan desu.
+
+*5 giờ 30.*
+
+<a id="p0080-b006"></a>
+**14.** あなたのスピーチに感心しました。
+
+Furigana (nguồn): 感心＝かんしん
+
+<a id="p0080-b007"></a>
+## Trang 159 — Mục 14 tiếp từ trang 158 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+Anata no supiichi ni kanshinshimashita.
+
+*Tôi đã rất quan tâm đến bài diễn thuyết của bạn.*
+
+• **Diễn đạt tương tự:**
+
+彼らは彼にたいへんお世辞を言う。
+
+Furigana (nguồn): 彼＝かれ; 彼＝かれ; 世辞＝せじ; 言＝い
+
+Karera wa kare ni taihen oseji wo iu.
+
+*Họ nói lời tán dương anh ấy.*
+
+<a id="p0080-b008"></a>
+**15.** あなたの英語はたいへん上達しました。
+
+Furigana (nguồn): 英語＝えいご; 上達＝じょうたつ
+
+Anata no eigo wa taihen jootatsu shimashita.
+
+*Tiếng Anh của bạn đã rất thành thạo.*
+
+<a id="p0080-b009"></a>
+**16.** よくできました。
+
+Yoku dekimashita.
+
+*Tôi có thể làm tốt.*
+
+<a id="p0080-b010"></a>
+**17.** でかしたぞ。
+
+Dekashita zo!
+
+*Tốt rồi nhỉ.*
+
+<a id="p0080-b011"></a>
+**18.** すごい、大したものだ。
+
+Furigana (nguồn): 大＝たい
+
+Sugoi, taishita mono da.
+
+*Tuyệt quá, cậu thật tử tế.*
+
+<a id="p0080-b012"></a>
+**19.** すごい、えらいぞ。
+
+Sugoi, erai zo.
+
+*Tuyệt quá, cậu thật là tài giỏi.*
+
+• **Diễn đạt tương tự:**
+
+すばらしい。
+
+Subarashii.
+
+*Tuyệt vời!*
+
+<a id="p0080-b013"></a>
+**20.** 完璧だ。
+
+Furigana (nguồn): 完璧＝かんぺき
+
+Kanbeki da.
+
+*Thật hoàn hảo.*
+
+158 · 159
+
+## PDF page 81
+
+<a id="p0081"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0081
+
+- Trang in: 160 (trái), 161 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 6. KHEN NGỢI.
+
+<a id="p0081-b001"></a>
+## Trang 160 — 6. KHEN NGỢI (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**21.** よかったなあ。
+
+Yokatta naa!
+
+*Tốt quá ta!*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+あなたは今度の試験で満点を取りました。
+
+Furigana (nguồn): 今度＝こんど; 試験＝しけん; 満点＝まんてん; 取＝と
+
+Anata wa kondo no shiken de manten wo torimashita.
+
+*Bạn đã nhận được điểm cao trong kỳ thi lần này.*
+
+やった。
+
+Yatta.
+
+*Tôi đã làm được rồi.*
+
+<a id="p0081-b002"></a>
+**22.** 結構ですね。
+
+Furigana (nguồn): 結構＝けっこう
+
+Kekkoo desu ne.
+
+*Tốt rồi nhỉ!*
+
+<a id="p0081-b003"></a>
+**23.** すばらしい
+
+Subarashii.
+
+*Tuyệt vời.*
+
+<a id="p0081-b004"></a>
+**24.** それでOKだ。
+
+Sore de OK da.
+
+*Điều đó thì OK.*
+
+<a id="p0081-b005"></a>
+**25.** お見事（ですね）！
+
+Furigana (nguồn): 見事＝みごと
+
+Omigoto (desu ne)!
+
+*Thật là quyến rũ!*
+
+<a id="p0081-b006"></a>
+**26.** 見事にできた。
+
+Furigana (nguồn): 見事＝みごと
+
+Mmigoto ni dekita.
+
+*Thật là quyến rũ!*
+
+<a id="p0081-b007"></a>
+**27.** まったく信じられない。
+
+Furigana (nguồn): 信＝しん
+
+<a id="p0081-b008"></a>
+## Trang 161 — Mục 27 tiếp từ trang 160 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+Mattaku shinjirarenai.
+
+*Tôi hoàn toàn không thể tin nổi.*
+
+• **Diễn đạt tương tự:**
+
+うそー、信じられないことだ。
+
+Furigana (nguồn): 信＝しん
+
+Usoo, shinjirarenai koto da.
+
+*Xạo quá đi, đó là điều mà tôi không thể tin nổi.*
+
+<a id="p0081-b009"></a>
+**28.** すばらしい。信じられないほどだ。
+
+Furigana (nguồn): 信＝しん
+
+Subarashii. Shinhirarenai hodo da.
+
+*Tuyệt quá. Tôi không dám tin nữa.*
+
+<a id="p0081-b010"></a>
+**29.** すてきだ。
+
+Suteki da!
+
+*Tuyệt vời!*
+
+<a id="p0081-b011"></a>
+**30.** 聞いたところよさそうだ。
+
+Furigana (nguồn): 聞＝き
+
+Kiita tokoro yosa sooda.
+
+*Thật tuyệt khi nghe điều đó.*
+
+<a id="p0081-b012"></a>
+**31.** おお。
+
+Oo.
+
+*Ấn tượng quá!*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+おお！きれい！
+
+Oo! Kirei!
+
+*Ấn tượng quá! Đẹp nhỉ!*
+
+ありがとう。
+
+Arigatoo.
+
+*Cảm ơn.*
+
+<a id="p0081-b013"></a>
+**32.** 最高！それは最高だ。
+
+Furigana (nguồn): 最高＝さいこう; 最高＝さいこう
+
+Saikoo! Sore wa saikoo da.
+
+*Tuyệt quá! Điều đó thật là tuyệt.*
+
+160 · 161
+
+## PDF page 82
+
+<a id="p0082"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0082
+
+- Trang in: 162 (trái), 163 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 6. KHEN NGỢI (tiếp); 7. TRÁCH MÓC.
+
+<a id="p0082-b001"></a>
+## Trang 162 — 6. KHEN NGỢI (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**33.** イェー！すごい！
+
+Iee! Sugoi!
+
+*A! Tuyệt quá đi!*
+
+<a id="p0082-b002"></a>
+**34.** すごくハンサムだ。
+
+Sugoku hansamu da.
+
+*Rất đẹp trai!*
+
+<a id="p0082-b003"></a>
+**35.** 超かっこういい。
+
+Furigana (nguồn): 超＝ちょう
+
+Choo kakkoo ii!
+
+*Thật là thú vị!*
+
+<a id="p0082-b004"></a>
+## 7. TRÁCH MÓC
+
+**1.** 自分の利己的な行為に恥ずかしくないのか。
+
+Furigana (nguồn): 自分＝じぶん; 利己的＝りこてき; 行為＝こうい; 恥＝は
+
+Jibun no rikoteki na kooi ni hazukashi kunai no ka?
+
+*Bạn không tự cảm thấy xấu hổ về hành động của mình sao?*
+
+• **Diễn đạt mở rộng:**
+
+彼女はこれぐらい優しい質問を出して恥ずかしいと思っている。
+
+Furigana (nguồn): 彼女＝かのじょ; 優＝やさ; 質問＝しつもん; 出＝だ; 恥＝は; 思＝おも
+
+Kanojo wa kore gurai yasashii shitsumon wo dashite hazukashii to omotteiru.
+
+*Cô ta đưa ra câu hỏi dễ đến độ tôi cảm thấy xấu hổ giùm cô ta.*
+
+<a id="p0082-b005"></a>
+**2.** 何で彼にこんな待遇をするの。
+
+Furigana (nguồn): 何＝なん; 彼＝かれ; 待遇＝たいぐう
+
+Nan de kare ni konna taiguu wo suru no?
+
+*Có chế độ đãi ngộ gì cho anh ấy?*
+
+<a id="p0082-b006"></a>
+## Trang 163 — 7. TRÁCH MÓC (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**3.** どうしてあんなに乱暴しているの。
+
+Furigana (nguồn): 乱暴＝らんぼう
+
+Dooshite anna ni ranhooshiteiru no?
+
+*Tại sao anh lại làm đảo lộn lên như thế chứ?*
+
+<a id="p0082-b007"></a>
+**4.** 何をやっていると思う。
+
+Furigana (nguồn): 何＝なに; 思＝おも
+
+Nani wo yatteiru to omou?
+
+*Bạn nghĩ là phải làm gì đây?*
+
+<a id="p0082-b008"></a>
+**5.** 何で本当の話を言わないの。
+
+Furigana (nguồn): 何＝なん; 本当＝ほんとう; 話＝はなし; 言＝い
+
+Nande hontoo no hanashi wo iwanai no!
+
+*Bạn thật sự không nên nói thế chứ!*
+
+<a id="p0082-b009"></a>
+**6.** 少なくとも地面を掃除するべきだ。
+
+Furigana (nguồn): 少＝すく; 地面＝じめん; 掃除＝そうじ
+
+Sukunaku tomo jimen wo soojisuru beki da.
+
+*Bạn cần phải vứt bỏ nó đi.*
+
+<a id="p0082-b010"></a>
+**7.** あなたは早く帰るべきではない。
+
+Furigana (nguồn): 早＝はや; 帰＝かえ
+
+Anata wa hayaku kaeru beki dewanai.
+
+*Bạn không được về sớm.*
+
+<a id="p0082-b011"></a>
+**8.** 一度まじめにしてくれないか。
+
+Furigana (nguồn): 一度＝いちど
+
+Ichido majime ni shitekurenai ka?
+
+*Bạn không bắt đầu một lần xem sao à?*
+
+<a id="p0082-b012"></a>
+**9.** よくもわたしにこんな口調で話せるね。
+
+Furigana (nguồn): 口調＝くちょう; 話＝はな
+
+Yoku mo watashi ni konna kuchoo de hanaseru ne.
+
+*Bạn hay nói với tôi bằng những lời lẽ như thế quá nhỉ!*
+
+• **Diễn đạt mở rộng:**
+
+よくやったものだ。
+
+Yoku yatta mono da.
+
+*Đó là việc mà tôi thường làm.*
+
+162 · 163
+
+## PDF page 83
+
+<a id="p0083"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0083
+
+- Trang in: 164 (trái), 165 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 7. TRÁCH MÓC (tiếp); 8. THỪA NHẬN SAI LẦM.
+
+<a id="p0083-b001"></a>
+## Trang 164 — 7. TRÁCH MÓC (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**10.** なんなにがさつな言い方をしてはいけないよ。
+
+Furigana (nguồn): 言＝い; 方＝かた
+
+Nanna ni gasatsu na iikata wo shitewa ikenai yo.
+
+*Đừng có ăn nói lỗ mãng như thế.*
+
+<a id="p0083-b002"></a>
+**11.** よくもおれの顔をつぶしたな。
+
+Furigana (nguồn): 顔＝かお
+
+Yoku mo ore no kao wo tsubushita na.
+
+*Bạn thường làm thế mà không biết xấu hổ.*
+
+<a id="p0083-b003"></a>
+**12.** いつもこうやっていますね。
+
+Itsumo kooyatteimasu ne.
+
+*Bạn lúc nào cũng làm như thế này nhỉ.*
+
+• **Diễn đạt mở rộng:**
+
+みずから進んで重い任務を引き受けるのが彼の特徴です。
+
+Furigana (nguồn): 進＝すす; 重＝おも; 任務＝にんむ; 引＝ひ; 受＝う; 彼＝かれ; 特徴＝とくちょう
+
+Mizu kara susunde omoi ninmu wo hikiukeru noga kare no tokuchoo desu.
+
+*Bản chất của anh ta là thích làm những công việc nhẹ nhàng, sướng ích cho bản thân.*
+
+<a id="p0083-b004"></a>
+**13.** どうしてわたしにそんな態度ですか。
+
+Furigana (nguồn): 態度＝たいど
+
+Dooshite watashi ni sonna taido desu ka?
+
+*Tại sao bạn lại có thái độ đó với tôi?*
+
+<a id="p0083-b005"></a>
+**14.** それ見ろ、何をしたのか。
+
+Furigana (nguồn): 見＝み; 何＝なに
+
+Sore miro, nani wo shita no ka?
+
+*Nhìn đi, bạn có thấy gì không?*
+
+<a id="p0083-b006"></a>
+**15.** 君の勝手にしてはいられない。
+
+Furigana (nguồn): 君＝きみ; 勝手＝かって
+
+Kimi no katte ni shite wa iranai.
+
+*Không phải tùy thuộc vào cậu.*
+
+<a id="p0083-b007"></a>
+## Trang 165 — 8. THỪA NHẬN SAI LẦM
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**1.** わたしが間違ったかもしれない。
+
+Furigana (nguồn): 間違＝まちが
+
+Watashi ga machigatta kamo shirenai.
+
+*Có lẽ tôi đã sai.*
+
+<a id="p0083-b008"></a>
+**2.** この問題ではわたしが間違った。
+
+Furigana (nguồn): 問題＝もんだい; 間違＝まちが
+
+Kono mondai dewa watashi ga machigatta.
+
+*Trong vấn đề này tôi đã sai.*
+
+<a id="p0083-b009"></a>
+**3.** それはわたしの過ちだ。
+
+Furigana (nguồn): 過＝あやま
+
+Sore wa watashi no ayamachi da.
+
+*Đó là lỗi của tôi.*
+
+• **Diễn đạt tương tự:**
+
+それはわたしが悪かった。
+
+Furigana (nguồn): 悪＝わる
+
+Sore wa watashi ga warukatta.
+
+*Đó là do tôi không tốt.*
+
+<a id="p0083-b010"></a>
+**4.** じゃ、あなたが正しいとしよう。
+
+Furigana (nguồn): 正＝ただ
+
+Ja, anata ga tadashii toshiyoo.
+
+*Vậy thì, bạn làm lại cho đúng đi.*
+
+<a id="p0083-b011"></a>
+**5.** わたしはこの点を見落としたと思う。
+
+Furigana (nguồn): 点＝てん; 見＝み; 落＝お; 思＝おも
+
+Watashi wa kono ten wo miotoshita to omou.
+
+*Tôi nghĩ là mình đã bỏ sót điểm này.*
+
+• **Diễn đạt mở rộng:**
+
+あなたはこの仕事においてのいくつかのミスを見落とした。
+
+Furigana (nguồn): 仕事＝しごと; 見＝み; 落＝お
+
+Anata wa kono shigoto ni oite no ikutsuka ni musu wo miotoshita.
+
+*Bạn đã bỏ qua sai sót ở một chỗ nào đó trong công việc này.*
+
+164 · 165
+
+## PDF page 84
+
+<a id="p0084"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0084
+
+- Trang in: 166 (trái), 167 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 8. THỪA NHẬN SAI LẦM (tiếp); 9. PHÁN ĐOÁN.
+
+<a id="p0084-b001"></a>
+## Trang 166 — 8. THỪA NHẬN SAI LẦM (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**6.** ああ、しっかり覚えているはずなのに。
+
+Furigana (nguồn): 覚＝おぼ
+
+Aa, shikkari oboeteiru hazu nanoni.
+
+*À, tôi nghĩ là sẽ cố nhớ vậy mà...*
+
+<a id="p0084-b002"></a>
+**7.** この点においてはあなたの言ったのが理屈に合っているかもしれない。
+
+Furigana (nguồn): 点＝てん; 言＝い; 理屈＝りくつ; 合＝あ
+
+Konoten ni oite wa anata no itta no ga rikutsu ni atteiru kamoshirenai.
+
+*Ở điểm này thì những gì bạn đã nói là không hợp lý.*
+
+<a id="p0084-b003"></a>
+**8.** これ、確かに私がやったのです。
+
+Furigana (nguồn): 確＝たし
+
+Kore, tashika ni watashi ga yatta no desu.
+
+*Đây chính xác là việc tôi đã làm.*
+
+• **Diễn đạt mở rộng:**
+
+この情報を漏らしたのは私です。
+
+Furigana (nguồn): 情報＝じょうほう; 漏＝も; 私＝わたし
+
+Kono joohoo wo morashita nowa watashi desu.
+
+*Chính tôi là người tiết lộ thông tin này.*
+
+<a id="p0084-b004"></a>
+**9.** おっしゃるとおりです。その時私は何を考えていたかはまったく知らなかった。
+
+Furigana (nguồn): 時＝とき; 私＝わたし; 何＝なに; 考＝かんが; 知＝し
+
+Ossharu toori desu. Sono toki watashi wa nani wo kangae teita kawa mattaku shiranakatta.
+
+*Đúng như bạn nói. Lúc đó tôi hoàn toàn không biết là mình đã nghĩ gì.*
+
+<a id="p0084-b005"></a>
+## 9. PHÁN ĐOÁN
+
+**1.** 彼が正しいかもしれません。
+
+Furigana (nguồn): 彼＝かれ; 正＝ただ
+
+Kare ga tadashii kamoshiremasen.
+
+*Có lẽ là anh ấy đúng.*
+
+<a id="p0084-b006"></a>
+## Trang 167 — 9. PHÁN ĐOÁN (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**2.** 今日はあまり気持ちがよくなそそうですね。
+
+Furigana (nguồn): 今日＝きょう
+
+Kyoo wa amari kimochi ga yoku nasosoo desu ne.
+
+*Hôm nay có lẽ tâm trạng không tốt lắm nhỉ.*
+
+• **Diễn đạt mở rộng**
+
+今日は天気なそうですね。
+
+Furigana (nguồn): 今日＝きょう; 天気＝てんき
+
+Kyoo wa tenki na soo desu ne.
+
+*Hôm nay thời tiết có vẻ tốt nhỉ.*
+
+<a id="p0084-b007"></a>
+**3.** 聞いてよさそうです。
+
+Furigana (nguồn): 聞＝き
+
+Kiite yosa soo desu.
+
+*Nghe điều đó có vẻ tốt.*
+
+• **Diễn đạt tương tự**
+
+お考えは聞いてよさそうですね。
+
+Furigana (nguồn): 考＝かんが; 聞＝き
+
+Okangae wa kiite yosasoo desu ne.
+
+*Việc bạn nghĩ có vẻ tốt nhỉ.*
+
+<a id="p0084-b008"></a>
+**4.** いまにも雨が降りそうです。
+
+Furigana (nguồn): 雨＝あめ; 降＝ふ
+
+Imanimo ame ga furi soo desu.
+
+*Có lẽ bây giờ trời sẽ mưa.*
+
+• **Diễn đạt mở rộng**
+
+彼女は私を知っているように話しかけた。
+
+Furigana (nguồn): 彼女＝かのじょ; 私＝わたし; 知＝し; 話＝はな
+
+Kanojo wa watashi wo shitteiru yooni hanashi kaketa.
+
+*Cô ấy đã bắt chuyện như thể là biết tôi vậy.*
+
+<a id="p0084-b009"></a>
+**5.** 私の自転車はきっとどこかが故障している。
+
+Furigana (nguồn): 私＝わたし; 自転車＝じてんしゃ; 故障＝こしょう
+
+Watashi no jitensha wa kitto dokoka ga koshooshiteiru.
+
+*Chiếc xe đạp của tôi bị hỏng ở một chỗ nào đó.*
+
+166 · 167
+
+## PDF page 85
+
+<a id="p0085"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0085
+
+- Trang in: 168 (trái), 169 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 9. PHÁN ĐOÁN.
+
+<a id="p0085-b001"></a>
+## Trang 168 — 9. PHÁN ĐOÁN (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**6.** 彼はきっと成功するでしょう。
+
+Furigana (nguồn): 彼＝かれ; 成功＝せいこう
+
+Kare wa kitto seikoosuru deshoo.
+
+*Chắc có lẽ anh ấy sẽ thành công.*
+
+• **Đối thoại**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+大変疲れたでしょう。
+
+Furigana (nguồn): 大変＝たいへん; 疲＝つか
+
+Taihen tsukareta deshoo.
+
+*Bạn có vẻ rất mệt.*
+
+そうですね、寝たいですね。
+
+Furigana (nguồn): 寝＝ね
+
+Soo desu ne, netai desu ne.
+
+*Ừm, đúng đấy. Tôi muốn ngủ.*
+
+<a id="p0085-b002"></a>
+**7.** 午後は雨が降るかもしれません。
+
+Furigana (nguồn): 午後＝ごご; 雨＝あめ; 降＝ふ
+
+Gogo wa ame ga furu kamoshiremasen.
+
+*Chiều nay chắc có lẽ trời sẽ mưa.*
+
+<a id="p0085-b003"></a>
+**8.** 私から見ると、この計画は現実的だと思います。
+
+Furigana (nguồn): 私＝わたし; 見＝み; 計画＝けいかく; 現実的＝げんじつてき; 思＝おも
+
+Watashi kara miru to, kono keikaku wa genjitsuteki dato omoimasu.
+
+*Theo quan điểm của tôi, tôi nghĩ kế hoạch này có tính thiết thực.*
+
+<a id="p0085-b004"></a>
+**9.** 三十歳以上だと思います。
+
+Furigana (nguồn): 三十歳以上＝さんじゅうさいいじょう; 思＝おも
+
+Sanjuusai ijoo dato omoimasu.
+
+*Tôi nghĩ là trên 30 tuổi.*
+
+• **Đối thoại**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; lượt đáp ở trang 169 trong cùng spread.
+
+柳さんはいくつですか。
+
+Furigana (nguồn): 柳＝やなぎ
+
+Yanagisan wa ikutsu desu ka?
+
+*Anh Yanagi bao nhiêu tuổi?*
+
+<a id="p0085-b005"></a>
+## Trang 169 — Đối thoại tiếp từ trang 168 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+三十歳以上だと思います。
+
+Furigana (nguồn): 三十歳以上＝さんじゅうさいいじょう; 思＝おも
+
+Sanjuusai ijoo dato omoimasu.
+
+*Tôi nghĩ là trên 30 tuổi.*
+
+<a id="p0085-b006"></a>
+**10.** アクセントから見ると、南から来たかもしれません。
+
+Furigana (nguồn): 見＝み; 南＝みなみ; 来＝き
+
+Akusento kara miru to, minami kara kita kamo shiremasen.
+
+*Nếu xét về giọng nói thì có lẽ anh ta đến từ miền Nam.*
+
+• **Diễn đạt mở rộng:**
+
+うれしさから見ると、今回の食事を楽しんでもらえた。
+
+Furigana (nguồn): 見＝み; 今回＝こんかい; 食事＝しょくじ; 楽＝たの
+
+Ureshisa kara miru to, konkai no shokuji wo tanoshinde moraeta.
+
+*Nếu xét từ niềm vui đó, có lẽ buổi dùng bữa lần này rất vui.*
+
+<a id="p0085-b007"></a>
+**11.** 今日は雨が降らないでしょう。
+
+Furigana (nguồn): 今日＝きょう; 雨＝あめ; 降＝ふ
+
+Kyoo wa ame ga furanai deshoo.
+
+*Hôm nay có lẽ trời không mưa.*
+
+• **Diễn đạt tương tự**
+
+レースには勝てないような感じがします。
+
+Furigana (nguồn): 勝＝か; 感＝かん
+
+Reesu niwa katenai yoona kangashimasu.
+
+*Tôi có cảm giác như thể không thể chiến thắng trong cuộc đua.*
+
+168 · 169
+
+## PDF page 86
+
+<a id="p0086"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0086
+
+- Trang in: 170 (trái), 171 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 9. PHÁN ĐOÁN (tiếp); 10. QUYẾT ĐỊNH.
+
+<a id="p0086-b001"></a>
+## Trang 170 — Diễn đạt mở rộng của mục 11 (tiếp từ trang 169) (biên tập)
+
+生活のために日本語会話文句 5500
+
+• **Diễn đạt mở rộng:**
+
+列車は遅れるかもしれません。
+
+Furigana (nguồn): 列車＝れっしゃ; 遅＝おく
+
+Ressha wa okureru kamoshiremasen.
+
+*Có lẽ xe lửa sẽ đến trễ.*
+
+<a id="p0086-b002"></a>
+**12.** そう見えますね。
+
+Furigana (nguồn): 見＝み
+
+Soo miemasu ne.
+
+*Trông có vẻ như thế nhỉ.*
+
+• **Diễn đạt tương tự:**
+
+彼女は招かれるかもしれません。
+
+Furigana (nguồn): 彼女＝かのじょ; 招＝まね
+
+Kanojo wa manekareru kamoshiremasen.
+
+*Có lẽ cô ấy được mời.*
+
+• **Diễn đạt mở rộng**
+
+この仕事には飽きたような気がします。
+
+Furigana (nguồn): 仕事＝しごと; 飽＝あ; 気＝き
+
+Kono shigoto niwa akita yoona ki ga shimasu.
+
+*Tôi có cảm giác công việc này rất chán.*
+
+<a id="p0086-b003"></a>
+**13.** 今日は晴れそうな天気です。
+
+Furigana (nguồn): 今日＝きょう; 天気＝てんき
+
+Kyoo wa haresoo na tenki desu.
+
+*Hôm nay thời tiết có vẻ rất tốt.*
+
+<a id="p0086-b004"></a>
+**14.** 彼はもう中国に帰らないでしょう。
+
+Furigana (nguồn): 彼＝かれ; 中国＝ちゅうごく; 帰＝かえ
+
+Kare wa moo chuugoku ni kaeranai deshoo.
+
+*Có lẽ anh ấy không về Trung Quốc.*
+
+• **Diễn đạt mở rộng:**
+
+彼は約束を忘れたようです。
+
+Furigana (nguồn): 彼＝かれ; 約束＝やくそく; 忘＝わす
+
+<a id="p0086-b005"></a>
+## Trang 171 — Mục 14 tiếp từ trang 170 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+Kare wa yakusoku wo wasureta yoo desu.
+
+*Dường như anh ta đã quên cuộc hẹn.*
+
+<a id="p0086-b006"></a>
+**15.** 断るのが無意味のようです。
+
+Furigana (nguồn): 断＝ことわ; 無意味＝むいみ
+
+Kotowaru noga muimi no yoo desu.
+
+*Việc từ chối dường như không có ý nghĩa.*
+
+• **Diễn đạt mở rộng:**
+
+時間の無駄遣いは無意味です。
+
+Furigana (nguồn): 時間＝じかん; 無駄遣＝むだづか; 無意味＝むいみ
+
+Jikan no mudadukai wa muimi desu.
+
+*Sự mất thời gian vô ích không có ý nghĩa.*
+
+<a id="p0086-b007"></a>
+## 10. QUYẾT ĐỊNH
+
+**1.** もう決めた。
+
+Furigana (nguồn): 決＝き
+
+Moo kimeta.
+
+*Tôi đã quyết định rồi.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+確かなのか。
+
+Furigana (nguồn): 確＝たし
+
+Tashika nano ka?
+
+*Chính xác rồi chứ?*
+
+もちろん、もう決めた。
+
+Furigana (nguồn): 決＝き
+
+Mochiron, moo kimeta.
+
+*Dĩ nhiên, tôi đã quyết định rồi.*
+
+<a id="p0086-b008"></a>
+**2.** じゃ、そう決めておこう。
+
+Furigana (nguồn): 決＝き
+
+Ja, soo kimete okoo.
+
+*Vậy thì, chúng ta quyết định vậy đi.*
+
+170 · 171
+
+## PDF page 87
+
+<a id="p0087"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0087
+
+- Trang in: 172 (trái), 173 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 10. QUYẾT ĐỊNH.
+
+<a id="p0087-b001"></a>
+## Trang 172 — Diễn đạt mở rộng của mục 2 (tiếp từ trang 171) (biên tập)
+
+生活のために日本語会話文句 5500
+
+• **Diễn đạt mở rộng:**
+
+私たちは最後のこの問題に対する解決法を決めた。
+
+Furigana (nguồn): 私＝わたし; 最後＝さいご; 問題＝もんだい; 対＝たい; 解決法＝かいけつほう; 決＝き
+
+Watashi tachi wa saigo no kono mondai ni taisuru kaiketsuhoo wo kimeta.
+
+*Cuối cùng chúng tôi đã quyết định đưa ra giải pháp đối với vấn đề này.*
+
+<a id="p0087-b002"></a>
+**3.** ぼくの禁煙はなにものにも押しとどめられない。
+
+Furigana (nguồn): 禁煙＝きんえん; 押＝お
+
+Boku no kinen wa nani mono nimo oshi to domerarenai.
+
+*Việc hút thuốc của tôi khó mà từ bỏ.*
+
+<a id="p0087-b003"></a>
+**4.** よし！
+
+Yoshi!
+
+*Tốt rồi!*
+
+<a id="p0087-b004"></a>
+**5.** そうしよう。一度約束した以上反故にはしない。
+
+Furigana (nguồn): 一度約束＝いちどやくそく; 以上反故＝いじょうほご
+
+Soo shiyoo. Ichido yakusokushita ijoo hogo niwa shinai.
+
+*Quyết định thế đi. Hẹn rồi là không được nuốt lời.*
+
+<a id="p0087-b005"></a>
+**6.** わたしはそうすることに決めた。
+
+Furigana (nguồn): 決＝き
+
+Watashi wa soosuru koto ni kimeta.
+
+*Tôi đã quyết định việc đó.*
+
+<a id="p0087-b006"></a>
+**7.** わたしは自分の計画を実行に移そうとすることにした。
+
+Furigana (nguồn): 自分＝じぶん; 計画＝けいかく; 実行＝じっこう; 移＝うつ
+
+Watashi wa jibun no keikaku wo jikkoo ni utsu soo to suru koto ni shita.
+
+*Tôi quyết định tiến hành kế hoạch của mình.*
+
+<a id="p0087-b007"></a>
+## Trang 173 — Diễn đạt mở rộng của mục 7 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+• **Diễn đạt mở rộng:**
+
+わたしたちは明日出発することにした。
+
+Furigana (nguồn): 明日＝あした; 出発＝しゅっぱつ
+
+Watashitachi wa ashita shubbatsusuru koto ni shita.
+
+*Chúng tôi đã quyết định ngày mai sẽ xuất phát.*
+
+<a id="p0087-b008"></a>
+**8.** わたしはもう決定した。
+
+Furigana (nguồn): 決定＝けってい
+
+Watashi wa moo ketteishita.
+
+*Tôi đã quyết định.*
+
+<a id="p0087-b009"></a>
+**9.** わたしは科学研究に取り組むことにした。
+
+Furigana (nguồn): 科学研究＝かがくけんきゅう; 取＝と; 組＝く
+
+Watashi wa kagaku kenkyuu ni tori kumu koto ni shita.
+
+*Tôi quyết định chuyên tâm vào việc nghiên cứu khoa học.*
+
+<a id="p0087-b010"></a>
+**10.** では、そう決めましょう。
+
+Furigana (nguồn): 決＝き
+
+Dewa, soo kimemashoo.
+
+*Vậy thì, chúng ta quyết định vậy đi.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+駅で待ち合わせましょう。
+
+Furigana (nguồn): 駅＝えき; 待＝ま; 合＝あ
+
+Eki de machiawase mashoo.
+
+*Chúng ta sẽ gặp nhau ở nhà ga.*
+
+ええ、そう決めましょう。
+
+Furigana (nguồn): 決＝き
+
+Ee, soo kime mashoo.
+
+*Ừm, chúng ta quyết định vậy đi.*
+
+<a id="p0087-b011"></a>
+**11.** わたしは二度と彼に会うまいと決心している。
+
+Furigana (nguồn): 二度＝にど; 彼＝かれ; 会＝あ; 決心＝けっしん
+
+Watashi wa nido to kare ni au maito kesshin-
+shiteiru.
+
+*Tôi quyết tâm gặp lại anh ấy lần 2.*
+
+172 · 173
+
+## PDF page 88
+
+<a id="p0088"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0088
+
+- Trang in: 174 (trái), 175 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 10. QUYẾT ĐỊNH.
+
+<a id="p0088-b001"></a>
+## Trang 174 — 10. QUYẾT ĐỊNH (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**12.** まだ決心がつかないでいる。
+
+Furigana (nguồn): 決心＝けっしん
+
+Mada kesshin ga tsukanai de iru.
+
+*Tôi vẫn không quyết tâm.*
+
+<a id="p0088-b002"></a>
+**13.** わたしはもうやめることにした。
+
+Watashi wa moo yameru koto ni shita.
+
+*Tôi đã quyết định từ bỏ.*
+
+<a id="p0088-b003"></a>
+**14.** むかし両親が決めた結婚が多かった。
+
+Furigana (nguồn): 両親＝りょうしん; 決＝き; 結婚＝けっこん; 多＝おお
+
+Mukashi ryooshin ga kimeta kekkon ga ookatta.
+
+*Có nhiều người kết hôn do bố mẹ quyết định.*
+
+<a id="p0088-b004"></a>
+**15.** あなたから決めなさい。
+
+Furigana (nguồn): 決＝き
+
+Anata kara kime nasai.
+
+*Bạn nên quyết định đi.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+どちらのレストランに行きましょうか。
+
+Furigana (nguồn): 行＝い
+
+Dochira no resutoran ni ikimashoo ka?
+
+*Chúng ta đi ăn ở nhà hàng nào?*
+
+あなたから決めなさい。
+
+Furigana (nguồn): 決＝き
+
+Anata kara kimenasai.
+
+*Bạn nên quyết định đi.*
+
+<a id="p0088-b005"></a>
+**16.** 決定権は君にある。
+
+Furigana (nguồn): 決定権＝けっていけん; 君＝きみ
+
+Ketteiken wa kimi ni aru.
+
+*Quyền quyết định là do em.*
+
+• **Diễn đạt tương tự:**
+
+君が決定権を持っている。
+
+Furigana (nguồn): 君＝きみ; 決定権＝けっていけん; 持＝も
+
+Kimi ga ketteiken wo motteiru.
+
+*Em có quyền quyết định.*
+
+<a id="p0088-b006"></a>
+## Trang 175 — Diễn đạt mở rộng của mục 16 (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+• **Diễn đạt mở rộng:**
+
+彼もこのことに発言権がある。
+
+Furigana (nguồn): 彼＝かれ; 発言権＝はつげんけん
+
+Kare mo kono koto ni hatsugenken ga aru.
+
+*Anh ấy cũng có quyền nói.*
+
+<a id="p0088-b007"></a>
+**17.** 彼女は大丈夫だと言い張っています。
+
+Furigana (nguồn): 彼女＝かのじょ; 大丈夫＝だいじょうぶ; 言＝い; 張＝は
+
+Kanojo wa daijoobu dato iibatteimasu.
+
+*Cô ấy quả quyết là không sao.*
+
+• **Diễn đạt mở rộng:**
+
+彼はどうしてもみんなで写真を取ろうと言い張る。
+
+Furigana (nguồn): 彼＝かれ; 写真＝しゃしん; 取＝と; 言＝い; 張＝は
+
+Kare wa dooshitemo minna de shashin wo toroo to ii haru.
+
+*Anh ấy quả quyết rằng dù bất cứ giá nào cũng phải chụp hình với mọi người.*
+
+<a id="p0088-b008"></a>
+**18.** 彼は仕事をやめることにした。
+
+Furigana (nguồn): 彼＝かれ; 仕事＝しごと
+
+Kare wa shigoto wo yameru koto ni shita.
+
+*Anh ấy đã quyết định thôi việc.*
+
+• **Diễn đạt tương tự:**
+
+わたしは仕事をやめることにした。
+
+Furigana (nguồn): 仕事＝しごと
+
+Watashi wa shigoto wo yameru koto ni shita.
+
+*Tôi đã quyết định thôi việc.*
+
+<a id="p0088-b009"></a>
+**19.** わたしは家を売らないことにした。
+
+Furigana (nguồn): 家＝いえ; 売＝う
+
+Watashi wa ie wo uranai koto ni shita.
+
+*Tôi quyết định không mua nhà.*
+
+<a id="p0088-b010"></a>
+**20.** わたしは帰ろうと決意した。
+
+Furigana (nguồn): 帰＝かえ; 決意＝けつい
+
+Watashi wa kaeroo to ketsuishita.
+
+*Tôi quyết tâm sẽ về.*
+
+174 · 175
+
+## PDF page 89
+
+<a id="p0089"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0089
+
+- Trang in: 176 (trái), 177 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 10. QUYẾT ĐỊNH (tiếp); 11. HỨA HẸN.
+
+<a id="p0089-b001"></a>
+## Trang 176 — Diễn đạt mở rộng của mục 20 (tiếp từ trang 175) (biên tập)
+
+生活のために日本語会話文句 5500
+
+• **Diễn đạt mở rộng:**
+
+渡辺さんよりもっとうまくできるようにと決心した。
+
+Furigana (nguồn): 渡辺＝わたなべ; 決心＝けっしん
+
+Watanabesan yori motto imaku dekiru yooni to kesshinshita.
+
+*Tôi quyết tâm sẽ làm việc thành công hơn anh Watanabe.*
+
+<a id="p0089-b002"></a>
+**21.** もう決めましたか。
+
+Furigana (nguồn): 決＝き
+
+Moo kimemashita ka?
+
+*Bạn đã quyết định chưa?*
+
+<a id="p0089-b003"></a>
+**22.** いいえ、まだです。
+
+Iie, mada desu.
+
+*Chưa, tôi vẫn chưa quyết định.*
+
+<a id="p0089-b004"></a>
+**23.** わたしは考え直してやめることにした。
+
+Furigana (nguồn): 考＝かんが; 直＝なお
+
+Watashi wa kangae naoshite yameru koto ni shita.
+
+*Tôi đã quyết là không suy nghĩ lại.*
+
+<a id="p0089-b005"></a>
+**24.** まだ決めていません。
+
+Furigana (nguồn): 決＝き
+
+Mada kimete imasen.
+
+*Tôi vẫn chưa quyết định.*
+
+• **Đối thoại:**
+
+Ghi chú (biên tập): Nguồn không in nhãn vai; hai lượt thoại giữ theo thứ tự.
+
+いつ給料を上げられますか。
+
+Furigana (nguồn): 給料＝きゅうりょう; 上＝あ
+
+Itsu kyuuryoo wo ageraremasu ka?
+
+*Khi nào bạn nhận lương?*
+
+まだ決めていません。
+
+Furigana (nguồn): 決＝き
+
+Mada kimete imasen.
+
+*Tôi vẫn chưa quyết định.*
+
+<a id="p0089-b006"></a>
+## Trang 177 — 10. QUYẾT ĐỊNH (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**25.** ためらわないで早くしなさい。
+
+Furigana (nguồn): 早＝はや
+
+Tamerawanai de hayaku shinasai.
+
+*Hãy nhanh lên nếu không sẽ không kịp.*
+
+<a id="p0089-b007"></a>
+**26.** はっきるした返事をしてください。
+
+Furigana (nguồn): 返事＝へんじ
+
+Hakkirushita henji wo shite kudasai.
+
+*Hãy hồi đáp cho tôi rõ ràng nhé.*
+
+<a id="p0089-b008"></a>
+**27.** なかなか決められない。
+
+Furigana (nguồn): 決＝き
+
+Nakanaka kimerarenai.
+
+*Khó mà có thể quyết định.*
+
+<a id="p0089-b009"></a>
+**28.** 禁煙のように、わたしはよく決心するものです。
+
+Furigana (nguồn): 禁煙＝きんえん; 決心＝けっしん
+
+Kinen no yooni, watashi wa yoku kesshinsuru mono desu.
+
+*Tôi thường quyết tâm không hút thuốc.*
+
+<a id="p0089-b010"></a>
+**29.** ぐずぐずしないで早く決めなさい。
+
+Furigana (nguồn): 早＝はや; 決＝き
+
+Guzuguzu shinai de hayaku kimenasai.
+
+*Hãy quyết định nhanh lên đừng có lề mề nữa.*
+
+• **Diễn đạt tương tự:**
+
+ためらわないでください。
+
+Tamerawanai de kudasai.
+
+*Đừng chậm chạp như vậy.*
+
+<a id="p0089-b011"></a>
+## 11. HỨA HẸN
+
+**1.** 再び遅刻をしないことを保証する。
+
+Furigana (nguồn): 再＝ふたた; 遅刻＝ちこく; 保証＝ほしょう
+
+Futatabi chikoku wo shinai koto wo hoshoosuru.
+
+*Tôi đảm bảo là sẽ không đi trễ lần hai.*
+
+176 · 177
+
+## PDF page 90
+
+<a id="p0090"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0090
+
+- Trang in: 178 (trái), 179 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / III. THỂ HIỆN Ý KIẾN VÀ QUAN ĐIỂM / 11. HỨA HẸN (tiếp); 12. CHO PHÉP VÀ NGĂN CẤM.
+
+<a id="p0090-b001"></a>
+## Trang 178 — 11. HỨA HẸN (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**2.** あなたに対して保証します。
+
+Furigana (nguồn): 対＝たい; 保証＝ほしょう
+
+Anata ni taishite hoshooshimasu.
+
+*Tôi đảm bảo với bạn.*
+
+<a id="p0090-b002"></a>
+**3.** わたしが保証します。
+
+Furigana (nguồn): 保証＝ほしょう
+
+Watashi ga hoshooshimasu.
+
+*Tôi hứa mà.*
+
+<a id="p0090-b003"></a>
+**4.** 今度あなたがパスできることを保証します。
+
+Furigana (nguồn): 今度＝こんど; 保証＝ほしょう
+
+Kondo anata ga pasu dekiru koto wo hoshooshi-
+masu.
+
+*Tôi tin là lần này bạn có thể làm được.*
+
+<a id="p0090-b004"></a>
+**5.** みなさんのサービスのよさには本当に満足している。
+
+Furigana (nguồn): 本当＝ほんとう
+
+Minasan no saabisu no yosa niwa hontoo ni manzokushiteiru.
+
+*Tôi thật sự rất hài lòng về cách phục vụ của mọi người.*
+
+<a id="p0090-b005"></a>
+**6.** 今度わたしと一緒に行けることを保証する。
+
+Furigana (nguồn): 今度＝こんど; 一緒＝いっしょ; 行＝い; 保証＝ほしょう
+
+Kondo watashi isshoni ikeru koto wo hoshoosuru.
+
+*Đảm bảo lần này bạn có thể đi với tôi.*
+
+<a id="p0090-b006"></a>
+**7.** 彼女は自分の写真を持ってくると言って承知してくれた。
+
+Furigana (nguồn): 彼女＝かのじょ; 自分＝じぶん; 写真＝しゃしん; 持＝も; 言＝い; 承知＝しょうち
+
+Kanojo wa jibun no shashin wo mottekuru to itte shoochishite kureta.
+
+*Cô ấy đã thừa nhận là có hình của chính mình.*
+
+<a id="p0090-b007"></a>
+## Trang 179 — 11. HỨA HẸN (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**8.** 品物が使いにいくければ返品できると彼女は承諾してくれた。
+
+Furigana (nguồn): 品物＝しなもの; 使＝つか; 返品＝へんぴん; 彼女＝かのじょ; 承諾＝しょうだく
+
+Shinamono ga tsukai ni ikukereba henbin dekiru to kanojo wa shoodakushite kureta.
+
+*Cô ấy thừa nhận là nếu sử dụng sản phẩm này không tốt thì có thể trả lại.*
+
+<a id="p0090-b008"></a>
+**9.** 絶対に食言はしないよ。
+
+Furigana (nguồn): 絶対＝ぜったい; 食言＝しょくげん
+
+Zettai ni shokugen hashinai yo.
+
+*Tuyệt đối không được thất hứa đó.*
+
+• **Diễn đạt tương tự:**
+
+絶対に約束をたがえることはないよ。
+
+Furigana (nguồn): 絶対＝ぜったい; 約束＝やくそく
+
+Zettai ni yakusoku wo tagaeru koto wa nai yo.
+
+*Tuyệt đối không được thất hứa đó.*
+
+<a id="p0090-b009"></a>
+**10.** 両親は彼に自転車を買ってあげると承諾した。
+
+Furigana (nguồn): 両親＝りょうしん; 彼＝かれ; 自転車＝じてんしゃ; 買＝か; 承諾＝しょうだく
+
+Ryooshin wa kare ni jitensha wo katte ageru to shoodakushita.
+
+*Bố mẹ thừa nhận là sẽ mua xe đạp cho anh ấy.*
+
+<a id="p0090-b010"></a>
+## 12. CHO PHÉP VÀ NGĂN CẤM
+
+**1.** 見てもよろしいですか。
+
+Furigana (nguồn): 見＝み
+
+Mitemo yoroshii desu ka?
+
+*Tôi có thể nhìn nó được không?*
+
+178 · 179
+
