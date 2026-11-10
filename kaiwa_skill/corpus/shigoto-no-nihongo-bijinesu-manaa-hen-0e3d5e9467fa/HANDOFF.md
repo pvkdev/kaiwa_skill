@@ -4,12 +4,12 @@
 - Source: `book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf` (136 physical pages)
 - Source SHA-256: `0e3d5e9467fafaef97acda677080aa1bb6f9b849aa20e5993172ee6b0864d7a6`
 - Output mode: `text_only`; rendered images are review cache only.
-- Current checkpoint after reconcile/build: 66 verified, 6 needs_review, 64 pending, 0 draft/rendered/invalid. `build_current: true`; output is partial/INCOMPLETE.
-- **Next independent page: PDF p0073** (not rendered/read by this worker). Claim this book with a new unique owner/token before mutation. Do not reuse `production_book_10_sol_20261111_001` or `production_book_10_sol_cont_20261111_42f9a1`, or `production_book_10_sol_cont2_20261111_c42b`.
+- Current checkpoint after reconcile/build: 86 verified, 6 needs_review, 44 pending, 0 draft/rendered/invalid. `build_current: true`; output is partial/INCOMPLETE.
+- **Next independent page: PDF p0093** (not rendered/read by continuation worker cont3). Claim this book with a new unique owner/token before mutation. Do not reuse `production_book_10_sol_20261111_001` or `production_book_10_sol_cont_20261111_42f9a1`, or `production_book_10_sol_cont2_20261111_c42b`, or `book10-cont3-20261111-73c41f`.
 
 ## Completed coverage
 
-PDF p0002, p0004–p0019, p0021–p0022, p0024–p0026, p0028–p0068, p0070–p0072 are verified with page-specific render/Markdown hashes and evidence. PDF p0001, p0003, p0020, p0023, p0027, p0069 are locally `needs_review` as below. No pages after PDF p0072 have been transcribed. The p0006 miniature matches full-size PDF pp0030–0031; p0007 miniature matches pp0034–0035. Their guide pages contain explicit source crossrefs and were verified after comparison. PDF p0040 is the six-panel ③ 返事の仕方 comic; p0041 contains its points c–e and 語尾の大切さ. All p0036–p0055 are verified. The continuation worker added PDF p0042–p0055 (14 pages), opening each full source page and direct 6x crops; PDF p0055 also used direct 8x heading/comic and tight panel6 crops. No new source issue arose in this batch.
+PDF p0002, p0004–p0019, p0021–p0022, p0024–p0026, p0028–p0068, p0070–p0092 are verified with page-specific render/Markdown hashes and evidence. PDF p0001, p0003, p0020, p0023, p0027, p0069 are locally `needs_review` as below. No pages after PDF p0092 have been transcribed. The p0006 miniature matches full-size PDF pp0030–0031; p0007 miniature matches pp0034–0035. Their guide pages contain explicit source crossrefs and were verified after comparison. PDF p0040 is the six-panel ③ 返事の仕方 comic; p0041 contains its points c–e and 語尾の大切さ. All p0036–p0055 are verified. The continuation worker added PDF p0042–p0055 (14 pages), opening each full source page and direct 6x crops; PDF p0055 also used direct 8x heading/comic and tight panel6 crops. No new source issue arose in this batch.
 
 ## Source review items
 
@@ -27,7 +27,7 @@ These six issues are source-local and do not block p0073 onward. If genuinely re
 
 Python: `C:/Program Files/WindowsApps/OpenAI.CodexPrimaryRuntime.v26-1104-2876-0_26.1104.2876.0_x64__3k8sg7r9htsxt/dependencies/python/python.exe`
 
-Run from repo root `D:/CODE/git/kaiwa_skill` with `kaiwa_skill/tools/ingest.py`. Review source render and tight crops for each page, then record/verify with actual comparison. Scratch crops/evidence for the first worker remain under `.cache/renders/<book_id>/scratch-production_book_10_sol-*`; continuation scratch uses `scratch-cont-*` in the same temporary cache. Use your own scratch prefix. Continue `p0073` through `p0136`, then reconcile/build and release your new claim. The latest continuation worker owner `production_book_10_sol_cont2` releases its claim after this handoff.
+Run from repo root `D:/CODE/git/kaiwa_skill` with `kaiwa_skill/tools/ingest.py`. Review source render and tight crops for each page, then record/verify with actual comparison. Scratch crops/evidence for the first worker remain under `.cache/renders/<book_id>/scratch-production_book_10_sol-*`; continuation scratch uses `scratch-cont-*` in the same temporary cache. Use your own scratch prefix. Continue `p0093` through `p0136`, then reconcile/build and release your new claim. The latest continuation worker owner `production_book_10_sol_cont3` releases its claim after this handoff.
 
 
 ## Continuation checkpoint — PDF p0042–p0055
@@ -50,3 +50,15 @@ Run from repo root `D:/CODE/git/kaiwa_skill` with `kaiwa_skill/tools/ingest.py`.
 - P72 is truly blank with no printed number/title/text/meaning-bearing image; full image and direct6x crops inspected twice. Described as editorial blank-page note.
 - Next pending independent page is p0073. Earlier source issues p1/p3/p20/p23/p27 unchanged. Seven accepted books, other active books, tools/skills and source PDFs untouched; no Git stage/commit. Claim owner `production_book_10_sol_cont2` releases token `production_book_10_sol_cont2_20261111_c42b` after this handoff.
 
+
+
+## Continuation checkpoint — PDF p0073–p0092 (production_book_10_sol_cont3)
+
+- Batch coverage: all 20 physical pages p0073–p0092 verified with individual source/render/Markdown hashes and concrete evidence. Current total: 86 verified, six older needs_review (p1/p3/p20/p23/p27/p69), 44 pending p0093–p0136; zero draft/rendered/invalid and zero validation errors. Reconcile/build passed; `build_current: true`. This is WIP/INCOMPLETE, not acceptance.
+- Current `book.md` SHA-256: `4766c0456745f7e0a239ed57a5b856fc3385cf9d6ebbc1f33d4f6ec2932a68ad`; `search.jsonl`: `665fe5a58a24d432c14a63d70f4e4a349eaff600be144afe705366bdf51e1590`; `build.json`: `ba54a160d24939ffcb651417890841f9d8f6405d23e708da0d6b707142ff5476`.
+- Every page opened full2x and direct6x upper/lower (p73 uses its title crop). Extra direct8x crops for comics p78/p84/p90, p83 faded subtitle original/contrast, each odd page inactive edge tabs, p80 Chinese a, p81 Chinese f, p88 sound/Chinese and p89 name. Source p83 subtitle reads `〜日本茶の正しい出し方〜`. All images/crops/scratch are ignored cache only, prefix `scratch-cont3-*`.
+- Inactive right tabs on odd pages p75/p77/p79/p81/p83/p85/p87/p89/p91 read individually and recorded as `第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題`. P75 was freshly reverified after adding inactive tabs. Source typography/wording preserved: p74 answer says `名刺をもらった後の移動`, whereas p78 heading says `名刺をもらった後の行動`; p81 Japanese c label uses a colon. P83 Chinese i says `不要垫茶托` despite JP/EN distinction; p87 Chinese a prints `不附和`.
+- Final reverse review p88 used direct12x tight CN crops: sound phrase is source `卡叽卡机`, with final 木-radical `机`, not repeated `叽`. Corrected initial draft, re-recorded/reverified p88 and rebuilt. P88 comic has `ゲフッ`, prose `ゲップ`. No unresolved source issue arose in this batch.
+- Furigana occurs only where printed: p78 quoted `道明寺＝どうみょうじ` in panel3; p83 `茶碗＝ちゃわん`; p85 `経＝た`; p86 `箸＝はし`; p87 `椀＝わん`; p88 `噛＝か`; p89 `完璧＝かんぺき`. No inferred readings on repeated names/words.
+- Cross-page join checked: English m at p76 ends `ac-`, p77 starts `cept his with your left.`. Kept split on source physical pages with editorial join notes. All other sentences in this batch end on their page; p92 starts Unit14 quiz and has no prose continuing to p93.
+- Next independent pending page: PDF p0093. Source SHA remains `0e3d5e9467fafaef97acda677080aa1bb6f9b849aa20e5993172ee6b0864d7a6`. Claim `production_book_10_sol_cont3` / `book10-cont3-20261111-73c41f` is released after this handoff. Earlier six source issues, other books, source PDFs, tools/skills and global production files untouched. No Git stage/commit.

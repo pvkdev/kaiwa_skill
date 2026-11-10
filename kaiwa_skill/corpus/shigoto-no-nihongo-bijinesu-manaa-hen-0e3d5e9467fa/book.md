@@ -3142,3 +3142,1053 @@ It's important to speak intelligibly at work, although this is certainly not eas
 
 Trang nguồn không có chữ hoặc hình mang thông tin; chỉ có các chấm/vết scan rải rác.
 
+## PDF page 73
+
+<a id="p0073"></a>
+
+<a id="p0073-b001"></a>
+
+- Trang in: không có
+- Đường dẫn nội dung: 日本のビジネスマナー
+
+## 日本のビジネスマナー
+
+## PDF page 74
+
+<a id="p0074"></a>
+
+- Trang in: 72
+- Đường dẫn nội dung: Unit 11 / 名刺
+
+## Unit 11 名刺
+
+名刺はあなたのもう一つの顔です！
+印象よく相手に渡しましょう！
+
+## 確認クイズ
+
+### 第1問
+
+名刺を相手と同時に交換するときは、自分の名刺はどちらの手で持ちますか？
+
+1…右手
+
+2…左手
+
+3…両手
+
+### 第2問
+
+名刺をもらった相手の名前がよく聞き取れなかったら、どうしますか？
+
+1…もう一度聞くのは失礼になるので、後で自分で漢字を調べる
+
+2…その場は名前を呼ばなくてもすむようにして、後から自分の上司に聞く
+
+3…相手にもう一度確認する
+
+### 解答
+
+第1問　1　→　①－(3) 同時交換　参照
+
+第2問　3　→　①－(4) 名刺をもらった後の移動　参照
+
+<a id="p0074-b002"></a>
+
+## 中文 (biên tập)
+
+a. 递交名片时，名片递交的方向应该正好是对方能够阅读名片内容的方向。
+
+b. 无法越过会议桌时，一般需要走到对方旁边递交名片。
+
+c. 名片是对方一直保存的卡片，卡片上不能有令对方产生不快的内容。
+
+## English (biên tập)
+
+a. Hand your business card to the other person so that your name is readable right-side up.
+
+b. Sometimes you will have to hand your business card over a ta-ble, but it is best to stand next to the person when doing so.
+
+c. When you give someone your business card, he keeps it. Make sure your card isn't displeasing.
+
+## PDF page 75
+
+<a id="p0075"></a>
+
+- Trang in: 73
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 11 / 名刺 / ① 名刺を交換する
+
+## ① 名刺を交換する
+
+### (1) 渡す
+
+a. 名刺を渡すときは、自分の名前が相手にちゃんと読めるような向きで渡しましょう。
+
+b. 仕方なくテーブル越しに渡すときもありますが、基本は、相手のそばまで行って渡しましょう。
+
+c. 名刺は、相手のところにずっと残るものです。相手を不快にさせない名刺を渡しましょう。
+
+Mô tả hình (biên tập): Ba hình a–c đều có dấu ×. Hình a: người đưa xoay danh thiếp khiến chữ ngược hướng người nhận. Hình b: một người vươn qua bàn dài để đưa danh thiếp cho người ở đầu bàn đối diện. Hình c: danh thiếp có một góc bị rách/mẻ. Các dấu và nét trên danh thiếp là ký hiệu minh họa, không phải tên đọc được.
+
+### (2) 受け取る
+
+d. 名刺をもらうときは両手で。どうしても片手でしか無理なときは「片手で失礼します」とひと言、言いましょう。
+
+e. 相手が立って自分のそばまで来てくれたときは、必ず立って受け取りましょう。
+
+f. 名刺をつまむように受け取るのは、相手の名刺が汚いような印象を与えるので、やめましょう。
+
+Mô tả hình (biên tập): Ba hình d–f đều có dấu ×. Hình d: một tay giữ danh thiếp khi nhận. Hình e: người nhận vẫn ngồi khi người kia đứng trước mặt đưa danh thiếp. Hình f: tay kẹp góc danh thiếp bằng các đầu ngón tay.
+
+<a id="p0075-b002"></a>
+
+## 中文 (biên tập)
+
+d. 接对方名片时要伸出双手来接，不得已只能用一只手接的时候，要向对方强调一句“对不起,不得已,只能用一只手来接您的名片”。
+
+e. 对方站起身走过来递名片时自己一定要站起身来接。
+
+f. 接名片后要把名片稳稳地拿在手里，不要给对方留下嫌对方名片不干净的印象。
+
+## English (biên tập)
+
+d. Accept a business card with two hands. If you have to use only one hand, apologize with *katate de shitsurei shimasu* (sorry to use one hand).
+
+e. If the other person stands and comes up next to you, stand up to accept the business card.
+
+f. Don't pinch the card between your fingertips when accepting it; you'll give off the impression that it's dirty.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 76
+
+<a id="p0076"></a>
+
+- Trang in: 74
+- Đường dẫn nội dung: Unit 11 / 名刺 / ① 名刺を交換する / (3) 同時交換
+
+## (3) 同時交換
+
+### NG編
+
+×1
+
+g. 取引先の応接室で。座っていたらお客様の方から名刺交換に来た。
+
+×2
+
+h. あわてて立ち上がって、尻ポケットから名刺入れを出した。
+
+×3
+
+i. 左手で名刺を持って、お客様より上の位置に差し出した。
+
+×4
+
+j. 右手の親指と人差し指で名刺の真ん中をバシッとつまんで受け取った。
+
+Mô tả hình (biên tập): Bốn hình theo thứ tự ×1–×4. 1: người mặc vest vẫn ngồi trên ghế, người đeo kính đứng cạnh đưa danh thiếp. 2: người mặc vest vội đứng lên, đưa tay ra túi sau. 3: hai người trao danh thiếp, một tấm đưa cao hơn tấm kia. 4: tay kẹp giữa danh thiếp bằng ngón cái và ngón trỏ.
+
+### 問題
+
+どこがマナー違反か、わかりますか？　考えてみてください。
+
+◆ 名刺交換は、誰からするのですか？
+
+◆ 名刺入れは、どこに入れるのですか？
+
+◆ 自分の名刺は、どちらの手で渡すのですか？
+
+◆ 相手の名刺は、どうやって受け取るのですか？
+
+次のページで正解を見てみましょう。
+
+<a id="p0076-b002"></a>
+
+## 中文 (biên tập)
+
+g. 在客户接待室。刚刚坐在椅子上，客户就过来交换名片。
+
+h. 急忙站起身，从屁股兜掏出名片。
+
+i. 左手持名片从客人上方位置递过去。
+
+j. 用右手拇指和食指抓着名片中央接了过来。
+
+k. 在客户接待室。客人一进来，马上站起身。
+
+l. 亲自走到客人身边从上衣口袋里拿出名片递给客人。
+
+m. 准备接对方名片时，右手拿着自己的名片，左手做好接名片的准备。
+
+## English (biên tập)
+
+g. At the customer's reception room. The customer came to ex-change business cards while you were sitting.
+
+h. You hurriedly stand up and pull a card out of your rear pocket.
+
+i. You hold the card in your left hand and hand yours over at a more elevated level than the customer's.
+
+j. You pinch the middle of the customer's card with the thumb and index finger of your right hand.
+
+k. At the customer's reception room. The customer comes in so you immediately stand up.
+
+l. You go stand next to the customer and pull your card out from the pocket of your jacket.
+
+m. You give the customer your card with your right hand as you ac-
+
+Ghi chú nối trang (biên tập): English m tiếp ở PDF p77: “cept his with your left.”
+
+## PDF page 77
+
+<a id="p0077"></a>
+
+- Trang in: 75
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 11 / 名刺 / ① 名刺を交換する / (3) 同時交換
+
+## OK編
+
+○1
+
+k. 取引先の応接室で。お客様が入ってきたので、すぐに立ち上がる。
+
+○2
+
+l. 自らお客様のそばへ行って、上着のポケットから名刺を出して差し出す。
+
+○3
+
+m. 右手で自分の名刺を持って、お客さまの名刺を、左手で受けるような形にして受け取る。
+
+○4
+
+n. 名刺の端のほうを左手で受けとったら、右手を添えて両手で持つ。
+
+Mô tả hình (biên tập): Bốn hình theo thứ tự ○1–○4. 1: người mặc vest đứng dậy khỏi ghế khi người đeo kính vào phòng. 2: người mặc vest đến gần người kia, đưa tay vào phần túi áo trên. 3: hai người trao danh thiếp, tay phải đưa tấm của mình, tay trái đỡ tấm được trao. 4: hai tay giữ hai mép bên của một danh thiếp.
+
+### ポイント
+
+o. 取引先の会社を訪問したときは、自分から先に名刺を出そう。
+
+p. 名刺は自分の分身でもあるので、お尻のポケットに入れないように。相手にも失礼になります。
+
+q. 自分の名刺は「右手」で持って渡す。
+
+r. 相手の名刺は、左手で受けてからすぐに右手を添える。
+
+<a id="p0077-b002"></a>
+
+## 中文 (biên tập)
+
+n. 左手拿着名片一端，右手跟上来拿着名片另一端，这是双手接对方名片的过程。
+
+o. 拜访客户公司时，自己要先递上名片。
+
+p. 名片代表自己的身份。不要把名片放在屁股兜里，这样也不尊重对方。
+
+q. 右手拿着自己的名片递向客户。
+
+r. 接对方名片时，先用左手接过来，然后马上用右手抓住另一端。
+
+## English (biên tập)
+
+cept his with your left.
+
+n. You take the card, of which you were holding one edge with your left hand, and shift evenly to both hands.
+
+o. When visiting a customer, give your business card first.
+
+p. Your business card is your alter ego. Do not keep it in your rear pocket; it's rude.
+
+q. Hand your business card over with your right hand.
+
+r. As soon as you take the other person's card with your left hand, shift to both hands.
+
+Ghi chú nối trang (biên tập): Dòng English đầu tiếp từ m ở PDF p76 “ac-”.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 78
+
+<a id="p0078"></a>
+
+<a id="p0078-b001"></a>
+
+- Trang in: 76
+- Đường dẫn nội dung: Unit 11 / 名刺 / ① 名刺を交換する / (4) 名刺をもらった後の行動
+
+## (4) 名刺をもらった後の行動
+
+### 〜名刺をもらったのはいいけれど……〜
+
+Nhân vật (biên tập, nhãn nguồn): インド人SE カーンさん／取引先 課長／取引先 担当者
+
+Mô tả hình (biên tập): Truyện sáu khung, đọc trái sang phải hàng trên rồi hàng dưới. カーン đứng trao danh thiếp cho hai người; 課長 đeo kính, 担当者 tóc ngắn. Tên vai trong lượt thoại dưới đây lấy từ các nhãn nhân vật và đuôi bóng thoại; nhãn “suy nghĩ” là biên tập.
+
+#### 1 (biên tập: số khung nguồn)
+
+**カーン:** カーンと申します。よろしくお願いします
+
+#### 2 (biên tập: số khung nguồn)
+
+**課長:** こちらこそ。道明寺です。
+
+**担当者:** わたくし堂珍と申します
+
+**カーン (suy nghĩ):** どう…？？　何て？
+
+#### 3 (biên tập: số khung nguồn)
+
+**カーン:** あの… もう一度お名前をお聞きしてもいいでしょうか？
+
+**課長:** 私は『道明寺』です
+
+Furigana (nguồn): 道明寺＝どうみょうじ
+
+**カーン:** ドウミョウジさま…ですね？
+
+#### 4 (biên tập: số khung nguồn)
+
+**カーン:** え…と、すみません。漢字がまだあまり読めないので… お名前はなんとお読みするんですか？
+
+**担当者:** ドウチンです。『堂』が「ドウ」で『珍』が「チン」って読むんです
+
+#### 5 (biên tập: số khung nguồn)
+
+**カーン:** ドウミョウジさまにドウチンさまですね。よろしくお願いします
+
+**課長:** カーンさんはインドの方だから漢字は大変ですよね。どうぞお座りください
+
+#### 6 (biên tập: số khung nguồn)
+
+Mô tả hình (biên tập): カーン đã ngồi đối diện hai người qua bàn, đặt hai tấm danh thiếp trước mặt; không có lời thoại.
+
+難しい名前のお客さまでしたね。カーンさんはよくがんばりました。
+
+## PDF page 79
+
+<a id="p0079"></a>
+
+- Trang in: 77
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 11 / 名刺 / (4) 名刺をもらった後の行動
+
+## ポイント
+
+s. 聞き取れなかったお客様の名前を確認することは、恥ずかしいことではありません。
+
+t. 名刺に書かれた漢字の読み方を聞いても、もちろん大丈夫です。「漢字がまだあまり得意ではないので……」などと正直に言えば、誰でも親切に教えてくれるはずです。
+
+u. 間違った名前を覚えたり、呼んだりすることが、いちばん失礼になります。
+
+v. たくさんの名刺をもらったときなど、名前を覚えることはできませんから、机の上に並べて、その都度、名前を確認しましょう。
+
+<a id="p0079-b002"></a>
+
+## 名刺入れを持とう！
+
+名刺入れは自分の顔でもあります。相手に汚れたり折れたりしたものを渡すのは、顔を洗っていないときにお客様に会うようなものです。美しい名刺をいつでも差し出せるように、名刺はきちんと名刺入れに入れて保管しましょう。でも名刺入れは毎日持っているけれど、中に名刺が入っていなかった！　ということにならないように、チェックするようにしましょう。
+
+Mô tả hình (biên tập): Nhân vật nhỏ nâng một tấm thẻ bên trên chiếc hộp danh thiếp mở trống.
+
+<a id="p0079-b003"></a>
+
+## 中文 (biên tập)
+
+s. 没有听清对方的名字不是什么丢脸的事情。
+
+t. 问一问对方名字汉字的读音是完全可以的。问的时候如果能够谦虚一句“汉字我掌握的不好……”。无论谁听了这样的话都会热情地告诉你自己名字的读音。
+
+u. 名字记错、称呼错对方的名字是最失礼的事情。
+
+v. 即便一下接过来很多名片，也不能把人名弄错。把名片放在桌子上需要称呼客人名字时仔细确认一下。
+
+## English (biên tập)
+
+s. It's not embarrassing to verify the customer's name if you didn't catch it.
+
+t. Of course it's all right to ask how to read the kanji on the card. If you honestly admit that you still aren't very good at kanji, anyone would be happy to tell you the readings.
+
+u. What's most rude is to memorize the name incorrectly or call the person by the wrong name.
+
+v. You can't memorize all the names when you receive a lot of business cards, so line them up on your desk and check them each time.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 80
+
+<a id="p0080"></a>
+
+- Trang in: 78
+- Đường dẫn nội dung: Unit 12 / 接客・訪問
+
+## Unit 12 接客・訪問
+
+ビジネスとは直接関係ないと思うかもしれませんが、
+これができれば確実に印象アップ！
+
+## 確認クイズ
+
+### 第1問
+
+来客を案内するときは、どうやって歩くのがいいでしょうか。
+
+1…相手の真後ろを歩く
+
+2…相手の右隣を歩く
+
+3…相手の斜め前を歩く
+
+### 第2問
+
+日本茶の出し方は、どうするのがいいでしょうか。
+
+1…片手でお盆を持って、片手でお茶を出す
+
+2…上座に座っている人から出す
+
+3…社内の人から出す
+
+### 解答
+
+第1問　3　→　①－(1) 出迎え　参照
+
+第2問　2　→　①－(5) お茶の出し方　参照
+
+<a id="p0080-b002"></a>
+
+## 中文 (biên tập)
+
+a. 迎接客户前请检查一下自己的衣装服饰。坐在自己的办公桌前长时间工作穿戴的衣服不可能太整洁。
+
+b. 迎接约定来访的客户时，为了向客人表示欢迎，应直接称呼客人名字或“○○先生”，不要让客人感到紧张。
+
+c. 客人来了之后现找接待房间非常不妥，应事先订好房间记住房间号。
+
+## English (biên tập)
+
+a. When welcoming a customer, check your appearance. It's easy to end up looking slovenly when working at your desk.
+
+b. When greeting a customer who is visiting your company, make him feel relaxed by calling out his name in a welcoming way (use *sama* after his name).
+
+c. It's not good to begin looking for a room for your customer after his arrival. Arrange a room ahead of time and verify the room number.
+
+## PDF page 81
+
+<a id="p0081"></a>
+
+- Trang in: 79
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 12 / 接客・訪問 / ① 接客
+
+## ① 接客
+
+### (1) 出迎え
+
+a. お客さまを出迎えるときは、自分の身だしなみをチェックしてください。自分のデスクで仕事をしているときは、どうしてもだらしない格好になっていたりするものです。
+
+b. 訪問予定のあるお客さまを出迎えるときは、「○○様」と名前を呼んだりして歓迎の気持ちを表して、相手をリラックスさせてあげましょう。
+
+c: お客さまが来てから入ってもらう部屋を探すのは、よくありません。事前に予約し、部屋の番号などもきちんと確認しておくようにしましょう。
+
+Chữ trong hình (biên tập): a dấu ×, người nam áo vest mở, cà vạt lệch, nói「こちらへどうぞ」; b dấu ○, người nữ đưa tay hướng dẫn, nói「中川様、お待ちしておりました。」; c dấu ○, người nữ ở cửa đưa tay mời, nói「こちらです。どうぞ」.
+
+### (2) 部屋への案内（歩く位置）
+
+d. 真ん前を歩くと、お客さまの邪魔にもなるし、お客さまがついて来ているかも確認しづらいので、あまりよくありません。
+
+e. 真横を歩くことは、お客さまと対等という意味にもなるので、失礼な場合もあります。部屋へ行く途中では、あれこれサービスで雑談する必要はありません。
+
+f. お客さまの斜め前が、お客さまも歩きやすいし、お客さまの様子もよくわかる位置です。お客さまの歩く速度に合わせて歩くようにしましょう。
+
+Mô tả hình (biên tập): d dấu ×: người dẫn đường đi thẳng phía trước khách đeo kính cầm cặp. e dấu ×: hai người đi ngang hàng. f dấu ○: người dẫn đi chếch phía trước khách, đưa tay hướng dẫn.
+
+<a id="p0081-b002"></a>
+
+## 中文 (biên tập)
+
+d. 走在客人正前方会给客人带来不便，客人跟在身后又很可能什么都看不清，这一点应该引起注意。
+
+e. 走在客人旁边意味着自己的身份和客人对等，这是很失礼的事情。去接待房间的途中应尽可能给客人提供相应服务，不要和客人闲谈。
+
+f. 行走在客人的侧前方既可以观察客人神情也不影响客人行走。应尽可能按照客人步行的速度行走。
+
+## English (biên tập)
+
+d. It's not good to walk directly in front of the customer because you will be in his way and it will be difficult to check if he is fol-lowing you.
+
+e. Sometimes it is rude to walk alongside the customer because it means you are of the same rank as he is. There's no need to chat about all and sundry on the way to the room.
+
+f. It's easiest to walk at an angle in front of the customer and it also makes it easy to keep track of him. Try to pace yourself to match the customer's walking speed.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 82
+
+<a id="p0082"></a>
+
+- Trang in: 80
+- Đường dẫn nội dung: Unit 12 / 接客・訪問 / ① 接客
+
+## (3) ドアの開け方
+
+g. ドアには、押して開けるものと引いて開けるものがあります。引いて開けるドアは、普通に開けてお客様に先に入室してもらえばいいのですが、押して開けるものの場合、迷いますね。この場合は、ドアがお客さまに当たったりすると失礼ですので、自分が先に入ってドアを押さえておきましょう。
+
+Mô tả hình (biên tập): Hai hình ×／○ đều có lời「どうぞ」của người dẫn khách. Hình ×: người dẫn đứng ở phía khách, đẩy cửa và chỉ tay vào phòng. Hình ○: người dẫn đã ở phía trong phòng và giữ cửa mở cho khách đang ở ngoài.
+
+## (4) 座席の案内
+
+h. 左側に立っている人に話すのに左手を使うと、相手に少し背中を向けることになるので、印象があまりよくありません。右手全体で場所を示しましょう。指は指さないようにしてください。
+
+Mô tả hình (biên tập): Hai hình ×／○ đều có lời「あちらで少々お待ち下さい」của người dẫn. Hình ×: người dẫn nghiêng người, dùng ngón trỏ tay trái chỉ về ghế. Hình ○: người dẫn mở bàn tay phải hướng về ghế, mặt hướng khách.
+
+<a id="p0082-b002"></a>
+
+## 中文 (biên tập)
+
+g. 屋门有推开式的门和拉开式的门两种。拉开式的门直接把门拉开请客人进屋就可以了。推开式的门不太好处理。这时如果让客人撞在门上非常失礼。自己应该先进屋把门推开请客人进屋。
+
+h. 和站在左边的人讲话时，如果用左手指示方向，自己的后背会挡着对方视线，对方肯定不高兴。这时应该用整个右手来示意所在位置。不要用食指指示方向。
+
+## English (biên tập)
+
+g. Some doors are to be pushed open and others to be pulled open. You can easily pull open a door to let a customer into a room, but it's more complicated when the door is to be pushed open. It would be impolite if the door hit the customer so go in first and keep it open for him.
+
+h. If you use your left hand as you stand on the left side talking, you will be turning your back slightly to the customer, leaving a poor impression. Indicate the place with your right hand and don't point.
+
+## PDF page 83
+
+<a id="p0083"></a>
+
+- Trang in: 81
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 12 / 接客・訪問 / ① 接客
+
+## (5) お茶の出し方
+
+### 〜日本茶の正しい出し方〜
+
+Nhân vật (biên tập, nhãn nguồn): 外国人社員／お客様（hai người）／部長
+
+Mô tả hình (biên tập): Truyện sáu khung, đọc trái sang phải hàng trên rồi hàng dưới. 1: khay có ba chén trà bốc hơi, đĩa lót để riêng chồng bên cạnh. 2: nhân viên cầm khay một tay, gõ cửa bằng tay kia, nói「失礼します」. 3: nhân viên đặt khay ở bàn phụ cạnh bàn họp; hai khách và 部長 đang ngồi. 4: khay đặt trên bàn phụ, nhân viên dùng hai tay đưa chén lên đĩa lót. 5: nhân viên dùng hai tay đặt trà trước khách đeo kính. 6: nhân viên đứng cạnh cửa cúi chào, ba người còn ngồi tại bàn.
+
+日本茶を出したことがなくても、とりあえず知識として知っておけば安心ですね。
+
+## ポイント
+
+i. 茶碗は、直前まで茶たくには載せません。
+
+Furigana (nguồn): 茶碗＝ちゃわん
+
+j. お盆を持ったままテーブルにお茶を出すことは、なるべくしないように。
+
+k. 上座の人から、お茶をお出しすること。
+
+<a id="p0083-b002"></a>
+
+## 中文 (biên tập)
+
+i. 茶杯直接拿到客人面前，不要垫茶托。
+
+j. 尽可能不要一只手托着茶盘另一只手给客人上茶。
+
+k. 从上手位置向下手位置依次倒茶。
+
+## English (biên tập)
+
+i. Don't put the teacup on the saucer until the last minute.
+
+j. Try to avoid serving tea while still holding the tray.
+
+k. Serve tea starting with the seat of honor.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 84
+
+<a id="p0084"></a>
+
+<a id="p0084-b001"></a>
+
+- Trang in: 82
+- Đường dẫn nội dung: Unit 12 / 接客・訪問 / ② 訪問
+
+## ② 訪問
+
+### 〜取引先への初訪問〜
+
+Nhân vật (biên tập, nhãn nguồn): 李さん／取引先 受付嬢
+
+Mô tả hình (biên tập): Truyện sáu khung, đọc trái sang phải hàng trên rồi hàng dưới. Vai trong các lượt thoại được đối chiếu đuôi bóng thoại; các nhãn “suy nghĩ” và “người đến gặp” dưới đây là biên tập.
+
+#### 1 (biên tập: số khung nguồn)
+
+**李:** 約束時間を15分過ぎちゃった！
+
+Mô tả hình (biên tập): 李 nhìn đồng hồ ở cổ tay, phía trong có quầy tiếp tân, người ngồi và chậu cây.
+
+#### 2 (biên tập: số khung nguồn)
+
+**受付嬢:** どうぞ
+
+Mô tả hình (biên tập): 受付嬢 đi trước đưa tay hướng dẫn; 李 đi sau mặc áo khoác, cầm cặp, mỉm cười và có bóng suy nghĩ hình trái tim.
+
+#### 3 (biên tập: số khung nguồn)
+
+**李:** 失礼します
+
+Mô tả hình (biên tập): 李 vẫn mặc áo khoác, ngồi sâu tựa vào ghế sofa, cặp đặt bên cạnh, trước mặt có bàn và gạt tàn; cạnh mặt có bóng thở ra.
+
+#### 4 (biên tập: số khung nguồn)
+
+**李:** もしもし あ、お世話になっております！
+
+Mô tả hình (biên tập): 李 đã cởi áo khoác, vừa cầm điện thoại vừa cầm điếu thuốc đang bốc khói; ở góc dưới có nốt nhạc, trà được đưa đến bằng hai tay.
+
+#### 5 (biên tập: số khung nguồn)
+
+**李 (suy nghĩ):** のど渇いたなぁ
+
+**李 (suy nghĩ):** でも失礼なのかな… 我慢しよう
+
+Mô tả hình (biên tập): 李 nhìn chén trà trên đĩa lót, tay đặt trên đầu gối, trán có giọt mồ hôi.
+
+#### 6 (biên tập: số khung nguồn)
+
+**Người đến gặp (biên tập):** お待たせしました
+
+Mô tả hình (biên tập): Người đến gặp đứng trước mặt; 李 đứng lên khỏi sofa, hai tay đặt trước người. Chén trà vẫn trên bàn.
+
+この中にダメなところがあります。どこがダメだったでしょう？
+
+## PDF page 85
+
+<a id="p0085"></a>
+
+- Trang in: 83
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 12 / 接客・訪問 / ② 訪問
+
+## ポイント
+
+l. 遅刻するときは、約束の時間の10分前までには連絡を入れること。どんなに急いでいても、到着したときは、自分の身だしなみをチェックしましょう。
+
+m. 案内されている時は、やたらと話したりしないこと。
+
+n. コートは、受付に行く前に脱いでおくこと。
+
+o. 勝手に座らずに、「こちらでお待ちください」などと、ひと言言われてからにするほうがいいでしょう。
+
+p. 灰皿があっても、タバコは吸わないこと。
+
+q. 携帯電話は、電源を切っておくか、必ずマナーモードにしておくように。緊急の用件以外は、取引先で別の電話には出ないこと。
+
+r. 出されたお茶は飲んでも構いませんが、「失礼します」とひと言、言ってから頂きましょう。
+
+<a id="p0085-b002"></a>
+
+## 訪問後のお礼
+
+取引先への訪問がうまくいっても、そこで気を抜かずに、会社に帰ってから、お礼のメールなどを相手に送っておくとよいでしょう。「本日はありがとうございました」「今後とも、どうぞよろしくお願いいたします」など、簡単で短い文章でいいので、何日も経ってからではなく、翌日くらいまでに送るのがベストです。
+
+Furigana (nguồn): 経＝た
+
+Mô tả hình (biên tập): Người dùng máy tính xách tay; các dấu mũi tên gấp khúc nối màn hình với biểu tượng phong bì ở phía trên.
+
+<a id="p0085-b003"></a>
+
+## 中文 (biên tập)
+
+l. 预计可能要迟到，要在约定时间10分钟以前通知对方。无论怎么着急，见人之前都要再检查一遍自己的衣着。
+
+m. 对方接待自己进屋时，不要和对方说闲话。
+
+n. 外套在走到接待处之前要脱掉。
+
+o. 不要随便坐下，听到对方说“请您在此稍等”之后再坐不迟。
+
+p. 摆放着烟灰缸也不要吸烟。
+
+q. 手机要关掉电源或将手机设定为“振动呼叫功能”，除特殊急事以外，不能在客户面前接别的电话。
+
+r. 可以喝对方给自己倒的茶，喝之前要说“对不起……”“谢谢……”。
+
+## English (biên tập)
+
+l. If you are going to be late, contact the person ten minutes ahead of the scheduled meeting time. No matter how rushed you are, check your appearance by the time you arrive.
+
+m. When you are being shown in, don't engage in chatter.
+
+n. Take off your coat before you arrive at the reception desk.
+
+o. It's probably best not to sit down until someone tells you where to wait.
+
+p. Don't smoke even if there is an ashtray.
+
+q. Either turn off your cell phone or set it to manner mode. Don't answer the phone at a customer's unless it is an emergency.
+
+r. You can drink the tea you are served, but only after you say *shit-surei shimasu*.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 86
+
+<a id="p0086"></a>
+
+<a id="p0086-b001"></a>
+
+- Trang in: 84
+- Đường dẫn nội dung: Unit 13 / 接待・会食
+
+## Unit 13 接待・会食
+
+お客さまと食事をするなんて、緊張しますね。
+でも、これさえ知っていれば大丈夫！！
+
+## 確認クイズ
+
+### 第1問
+
+食事中にしてはいけないことは？
+
+1…茶碗を持ち上げて食べる
+
+2…お皿をテーブルに置いたまま食べる
+
+3…お箸をフォークのように食べ物に刺す
+
+Furigana (nguồn): 箸＝はし
+
+### 第2問
+
+お酒の勧め方で正しいのは？
+
+1…何も言わずに、相手のグラスにどんどんお酒を注ぐ
+
+2…ビール瓶は両手で持つ
+
+3…お酒はグラスいっぱいに注ぐ
+
+### 解答
+
+第1問　3　→　①－(1) マナー違反に見える行動　参照
+
+第2問　2　→　②－(2) すすめ方　参照
+
+## PDF page 87
+
+<a id="p0087"></a>
+
+- Trang in: 85
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 13 / 接待・会食 / ① 食事の席で
+
+## ① 食事の席で
+
+### (1) 日本人から見るとマナー違反に見える行動
+
+#### a. 茶碗（ご飯・みそ汁）を置いたまま食べる
+
+茶碗を手に持って食べることがマナー違反の国もありますが、日本では、ご飯やみそ汁のお椀は手に持って食べます。
+
+Furigana (nguồn): 椀＝わん
+
+Mô tả hình (biên tập): Dấu ×: người nữ cúi mặt sát hai bát đang đặt trên bàn, một tay cầm đũa, tay kia đặt xuống bàn.
+
+#### b. 貧乏ゆすりをする
+
+緊張するとつい座っている膝を上下に細かく動かす癖のある人もいますが、これは「貧乏ゆすり」と呼ばれていて、好ましいものではないので、食事中もそれ以外でも、やめておきましょう。
+
+Mô tả hình (biên tập): Dấu ×: hai người ngồi đối diện qua bàn; người bên phải có các nét chuyển động ở chân/đầu gối, người đeo kính đối diện nhìn sang.
+
+#### c. 食べ物をお箸で突き刺す
+
+食べ物にお箸を突き刺すのは、日本ではマナー違反とされています。お箸を上手に使うのが難しくても、フォークのように食べ物に突き刺してはいけません。
+
+Mô tả hình (biên tập): Dấu ×: người nữ dùng hai đầu đũa chọc vào miếng thức ăn trên đĩa.
+
+<a id="p0087-b002"></a>
+
+## 中文 (biên tập)
+
+a. 手不动饭碗吃饭
+
+把饭碗端在手里吃饭不附和一些国家的习惯。而日本人吃饭饭碗是要端在手里的。
+
+b. 抖动小腿
+
+有些人一紧张，坐在椅子下的腿往往会失控地抖起来。日本人认为越抖越穷，十分反感。吃饭时也好，其它场合也好，请不要这样抖动。
+
+c. 用筷子扎食物
+
+在日本用筷子扎食物被视为没有教养。即使筷子的使用方法掌握得不好，也不要用筷子扎食物。
+
+## English (biên tập)
+
+a. Eating with the bowl (rice or miso soup) on the table.
+
+In some countries it is impolite to pick up a bowl to eat from, but in Japan rice and miso soup bowls should be held while eating.
+
+b. Jiggling legs nervously.
+
+Some people can't help when seated but jiggle their knees up and down if nervous. This fidgeting is not desirable; don't do it when eating or at any other time.
+
+c. Stabbing food with chopsticks.
+
+It is considered bad manners in Japan to stab food with chop-sticks. Even if using chopsticks is difficult, you can't stab food with them as if they were a fork.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 88
+
+<a id="p0088"></a>
+
+- Trang in: 86
+- Đường dẫn nội dung: Unit 13 / 接待・会食 / ① 食事の席で
+
+## (2) 食事中にしてはいけないこと
+
+d. 食べ物を噛むときに口を開けると、「くちゃくちゃ」と音がすることがありますが、この音は、一緒に食べている人を不快にさせます。話しながら食べたりする場合は、注意しましょう。
+
+Furigana (nguồn): 噛＝か
+
+Mô tả hình (biên tập): Dấu ×: người nam vừa cầm thìa ăn vừa há miệng, trong bóng có chữ「くちゃくちゃ」.
+
+e. 体から自然に外へ出る生理現象は抑えなくてもいい、という考えの人もいますが、あまり堂々とゲップをするのは、控えたほうがいいでしょう。
+
+Mô tả hình (biên tập): Dấu ×: người đeo kính ngả người ra sau bát thức ăn, tay đặt trên bụng; bóng âm thanh「ゲフッ」.
+
+f. 目の前で鼻をほじられたら、日本人は目のやり場に困ります。周りの迷惑にもなるので、人前で鼻をほじったりしないようにしましょう。
+
+Mô tả hình (biên tập): Dấu ×: người nam ngoáy mũi khi ngồi ăn; người nữ cầm đũa đối diện nhìn sang, có giọt mồ hôi.
+
+<a id="p0088-b002"></a>
+
+## 食事中のたばこについて
+
+今、日本では食事中にたばこを吸えない場所が増えてきています。喫煙・禁煙席が分かれているレストランが多いのはもちろん、最近では、ランチタイムは店内すべて禁煙というお店もあるくらいです。ですから、たばこを吸いたい人は、きちんと、吸ってもいい場所で吸うようにしてください。
+
+Mô tả hình (biên tập): Người nam cầm điếu thuốc, trước mặt có cốc và gạt tàn; luồng khói dẫn tới biển tròn có vạch chéo và chữ「禁煙」.
+
+<a id="p0088-b003"></a>
+
+## 中文 (biên tập)
+
+d. 食物放进口中咀嚼，每一次张嘴都发出卡叽卡机的声音，这种声音会使一起吃饭的人感到不快，边吃边说的时候要特别注意。
+
+e. 有些人认为，因生理现象从身体中自然发出的声音没有必要去刻意控制，但类似打嗝这种现象最好还是设法控制一下。
+
+f. 日本人非常讨厌别人在自己面前挖鼻孔。想一想周围人会怎样想，还是不要在人眼前挖鼻孔。
+
+## English (biên tập)
+
+d. If you chew with your mouth open you will make a chomping sound that is unpleasant to those who must dine with you. Be extra careful of this when talking while eating.
+
+e. Some people may think it is fine not to suppress physiological emissions that flow from the body, but please refrain from bla-tantly belching.
+
+f. If you pick your nose in front of others, Japanese won't know where to focus their attention. It's a disgusting habit that shouldn't be done in public.
+
+## PDF page 89
+
+<a id="p0089"></a>
+
+- Trang in: 87
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 13 / 接待・会食 / ② お酒の席で
+
+## ② お酒の席で
+
+### (1) 飲み方
+
+Chữ trong hình (biên tập, trái → phải): Người nữ cầm chai nói「ヒルマンさん どうぞー」; người nam cầm cốc bằng hai tay đáp「あ、頂きます」. Mũi tên → dẫn sang hình người nữ rót vào cốc, nói「どんどん飲んで下さいね〜」, người nam giơ một bàn tay ngăn lại và nói「あ、ほんと少しで結構です」.
+
+g. お酒を勧めるときは「どうぞ」、飲むときは「いただきます」と言えばOK！
+
+h. 自分が飲める量まで注がれたら、「もう結構です」「ありがとうございます」などと言うと、そこまでにしてもらえます。
+
+### (2) すすめ方
+
+Chữ trong hình (biên tập, trái → phải): Người tóc sáng cầm chai bằng hai tay nói「あの、どうぞ…」; người tóc đen đáp「あ、どうもどうも」. Mũi tên → dẫn sang hình người tóc sáng rót bằng hai tay, nhãn chai hướng lên; người kia cầm cốc đón.
+
+i. お酒を勧めるときは、必ず、酒瓶は両手で持ちましょう。ラベルが上を向いていると更に完璧です。
+
+Furigana (nguồn): 完璧＝かんぺき
+
+j. 相手がグラスを持ったら、ゆっくりお酒を注ぎましょう。ビールの場合は、泡がグラスから溢れないように注意します。
+
+<a id="p0089-b002"></a>
+
+## 中文 (biên tập)
+
+g. 劝人喝酒时说一句“请喝酒”。自己喝之前说一句“承蒙款待,谢谢”。
+
+h. 别人给自己倒酒时，倒到自己酒量的位置时应边阻止边说“行了，我也就喝这么多！”“谢谢”。
+
+i. 劝酒时，要用两只手握着酒瓶，酒瓶上的标签要朝上。这是一种有修养的劝酒方法。
+
+j. 如果对方举着酒杯，你应该慢慢给对方倒酒。倒啤酒的时候注意别让泡沫溢出。
+
+## English (biên tập)
+
+g. It's OK to offer alcohol with a *dozo*, and to drink after saying, *ita-dakimasu*.
+
+h. When an amount of alcohol is poured that you feel is all you want to drink, say *mo kekko desu* or “thank you,” and the person pouring will stop.
+
+i. Pour alcohol by holding the bottle with both hands. Keeping the label on the upper side of the bottle while pouring makes your pouring picture perfect.
+
+j. Pour slowly while the other party holds his glass. Make sure to avoid letting the foam overflow in the case of beer.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 90
+
+<a id="p0090"></a>
+
+<a id="p0090-b001"></a>
+
+- Trang in: 88
+- Đường dẫn nội dung: Unit 13 / 接待・会食 / ② お酒の席で
+
+## (3) 乾杯
+
+### 〜飲めない僕の乾杯！〜
+
+Nhân vật (biên tập, nhãn nguồn): お酒が飲めない 王さん／お酒は飲めるけど飲まないスミスさん／課長／部長／同僚（nam và nữ）
+
+Mô tả hình (biên tập): Truyện sáu khung, đọc trái sang phải hàng trên rồi hàng dưới. Nhãn vai dưới đây được đối chiếu với hình nhân vật/đuôi bóng thoại; “suy nghĩ” là nhãn biên tập.
+
+#### 1 (biên tập: số khung nguồn)
+
+**部長:** では皆さん、今期もお疲れ様でした。カンパーイ！
+
+Mô tả hình (biên tập): Mọi người cùng giơ cốc hoặc vại bia quanh bàn.
+
+#### 2 (biên tập: số khung nguồn)
+
+**課長:** 王さんもう飲んだの？ お酒強いんだねぇ
+
+**王 (suy nghĩ):** いえ、そうじゃないんですけど…
+
+Mô tả hình (biên tập): 王 đỏ mặt, có giọt mồ hôi, cầm cốc cạnh 課長.
+
+#### 3 (biên tập: số khung nguồn)
+
+**課長:** スミスさんは全然飲んでないけど？
+
+**スミス:** あ、私お酒は飲まないんです
+
+Mô tả hình (biên tập): スミス giơ một bàn tay trước ngực.
+
+#### 4 (biên tập: số khung nguồn)
+
+**同僚（nam）:** 王さんもっと飲んで飲んで！ カンパーイ！！
+
+Mô tả hình (biên tập): Đồng nghiệp nam giơ cốc về phía 王; 王 vẫn cầm cốc, đỏ mặt và có giọt mồ hôi.
+
+#### 5 (biên tập: số khung nguồn)
+
+**同僚（nữ）:** スミスさんもちょっとぐらい飲んでよ〜
+
+**スミス:** いえ、結構です
+
+Mô tả hình (biên tập): Đồng nghiệp nữ cầm chai bằng hai tay hướng về スミス; スミス giơ bàn tay ngăn lại.
+
+#### 6 (biên tập: số khung nguồn)
+
+2時間後…
+
+Mô tả hình (biên tập): 王 loạng choạng ra trước bàn, mắt nhắm, áo mở cổ; 課長 phía sau giơ tay, trán có giọt mồ hôi. Ở bàn phía sau, đồng nghiệp nam khoác tay qua vai スミス, đồng nghiệp nữ cũng mỉm cười; スミス ngồi tại bàn, mắt nhắm và mỉm cười.
+
+王さんとスミスさん、それぞれのお酒の飲み方をどう思いましたか？
+
+## PDF page 91
+
+<a id="p0091"></a>
+
+- Trang in: 89
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 13 / 接待・会食 / ② お酒の席で
+
+## ポイント
+
+k. 日本式の「乾杯」は、「カンパイ！」と言っても全部飲み干す必要はありません。少ししか飲んでいなくても、全く問題ないのです。
+
+l. お酒が弱いときは、無理して飲まなくても構いません。でも、断るときは「私はお酒を飲みません」のようにあまりはっきり言わず、「お酒が弱いので……」などと言いましょう。
+
+m. 上司などにお酒を勧められたときは、一応「ありがとうございます」とグラスに注いでもらって、飲まなくてもいいので、グラスに口をつけましょう。
+
+n. あまりたくさん飲んで酔っ払わないように。
+
+o. 飲んだ次の日に、会社に遅刻してはいけません。
+
+<a id="p0091-b002"></a>
+
+## 女性がお酌をすることについて
+
+日本では、女性が男性にお酒を注ぐ（お酌をする）ことをよしとする考えがあり、こうした習慣は、最近だいぶなくなってはきましたが、会社によっては、それがまだ当たり前になっている所もあります。新入社員や女性社員は、お酌をするように注意されたりする場合もあるでしょう。もしも、上司や先輩から、接待や会食のときにお客さまなどにお酌するように言われたら、皆さんの国の習慣と違って戸惑うこともあるでしょうし、少し嫌だと感じるかもしれませんが、男女差別というよりはただの習慣なので、あまり深く考えなくてもいいでしょう。
+
+Mô tả hình (biên tập): Nhân vật nữ nâng một bình rượu rất lớn để rót vào chén bên trái.
+
+<a id="p0091-b003"></a>
+
+## 中文 (biên tập)
+
+k. 日本式干杯并非因为说了干杯就必须把酒杯里的酒全部喝干。哪怕只喝一点，也不会有谁责怪你。
+
+l. 不胜酒力，完全不必勉强自己。对方非要让自己喝，不要直截了当地说“我不喝酒”，而要婉转地说“我不会喝酒……”。
+
+m. 上司来劝酒时，说一句“谢谢”，再请上司给自己倒酒。不喝没有关系，但要把酒杯放到嘴边做做样子。
+
+n. 注意不要喝得太多醉倒。
+
+o. 头天喝过酒，第二天绝对不能迟到。
+
+## English (biên tập)
+
+k. In Japan there is no need to empty your glass when everyone says, “Bottoms up!” It's perfectly fine to take only a sip.
+
+l. If you can't drink, you don't have to. When you turn down alco-hol, instead of saying directly that you can't drink, just say, “I get intoxicated easily.”
+
+m. If your boss pours you a drink that you don't want, thank him and put the glass to your lips without drinking.
+
+n. Don't drink so much that you become inebriated.
+
+o. You aren't to be late to work the day after you go out drinking.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 92
+
+<a id="p0092"></a>
+
+<a id="p0092-b001"></a>
+
+- Trang in: 90
+- Đường dẫn nội dung: Unit 14 / 席次
+
+## Unit 14 席次
+
+どこに座ればいいのか、
+決まりがあるなら知っておきたいですね！！
+
+## 確認クイズ
+
+### 第1問
+
+上司や取引先の人と4人でタクシーに乗ったとき、あなたはどこに座りますか？
+
+1…助手席
+
+2…後部座席のいちばん右
+
+3…後部座席の真ん中
+
+### 第2問
+
+上司や取引先の人とエレベーターに乗るとき、あなたはどうしますか？
+
+1…左奥隅で、邪魔にならないようにしている
+
+2…お客さまを守るように、ドアの真ん前に立つ
+
+3…操作盤の前に立って、階数ボタンなどを押したりする
+
+### 解答
+
+第1問　1　→　③ タクシー　参照
+
+第2問　3　→　⑤ エレベーター　参照
+
