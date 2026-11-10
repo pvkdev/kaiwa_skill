@@ -3631,3 +3631,805 @@ Soto no katsudoo wa amari konomanai.
 
 76 · 77
 
+## PDF page 42
+
+<a id="p0042"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0042
+
+- Trang in: 82 (trái), 83 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / II. THỂ HIỆN NGUYỆN VỌNG / 2. XIN LỖI.
+
+<a id="p0042-b001"></a>
+## Trang 82 — 2. XIN LỖI (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**Đối thoại:**
+
+遅れてすみません。
+
+Furigana (nguồn): 遅＝おく
+
+Okurete sumimasen.
+
+*Xin lỗi tôi đã đến trễ.*
+
+気にしないで。
+
+Furigana (nguồn): 気＝き
+
+Ki ni shinaide.
+
+*Tôi không bận tâm đâu. / Không sao đâu.*
+
+<a id="p0042-b002"></a>
+**18.** 井上さん、わざとじゃないが。。。
+
+Furigana (nguồn): 井上＝いのうえ
+
+Inoosan, wazato janai ga...
+
+*Inochi này, tôi không cố ý thế đâu...*
+
+**Diễn đạt mở rộng:**
+
+わざと怒らせるわけじゃない。
+
+Furigana (nguồn): 怒＝おこ
+
+Wazato okoraseru wake janai.
+
+*Chẳng phải là tôi đã làm bạn giận sao?*
+
+<a id="p0042-b003"></a>
+**19.** 乱暴さにお詫びしなければなりません。
+
+Furigana (nguồn): 乱暴＝らんぼう; 詫＝わ
+
+Ranboosa ni oyubi shinakereba narimasen.
+
+*Tôi thật lòng xin lỗi vì sự thất lễ của mình.*
+
+**Đối thoại:**
+
+乱暴さにお詫びしなければなりません。
+
+Furigana (nguồn): 乱暴＝らんぼう; 詫＝わ
+
+Ranboosa ni oyubi shinakereba narimasen.
+
+*Tôi thật lòng xin lỗi vì sự thất lễ của mình.*
+
+気にしないで。
+
+Furigana (nguồn): 気＝き
+
+Ki ni shinaide.
+
+*Tôi không bận tâm đâu.*
+
+<a id="p0042-b004"></a>
+## Trang 83 — 2. XIN LỖI (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+<a id="p0042-b005"></a>
+**20.** 許していただきたいです。
+
+Furigana (nguồn): 許＝ゆる
+
+Yurushite itadakitai desu.
+
+*Tôi muốn bạn thứ lỗi cho tôi.*
+
+<a id="p0042-b006"></a>
+**21.** 遅刻でお詫びしなければなりません。
+
+Furigana (nguồn): 遅刻＝ちこく; 詫＝わ
+
+Chikoku de oyubi shinakereba narimasen.
+
+*Tôi thật lòng xin lỗi vì đến trễ.*
+
+<a id="p0042-b007"></a>
+**22.** きっといろいろご不便をおかけました。
+
+Furigana (nguồn): 不便＝ふべん
+
+Kitto iroiro gofuben wo okakemashita.
+
+*Xin lỗi vì đã làm phiền lòng bạn.*
+
+<a id="p0042-b008"></a>
+**23.** すべて私のせいです。
+
+Furigana (nguồn): 私＝わたし
+
+Subete watashi no sei desu.
+
+*Tất cả là lỗi tại tôi.*
+
+<a id="p0042-b009"></a>
+**24.** わたしがすべての責任を取るべきです。
+
+Furigana (nguồn): 責任＝せきにん; 取＝と
+
+Watashi ga subete no sekinin wo toru beki desu.
+
+*Tôi là người chịu trách nhiệm tất cả.*
+
+**Diễn đạt mở rộng:**
+
+バスの運転手は乗客の安全に責任を取るべきです。
+
+Furigana (nguồn): 運転手＝うんてんしゅ; 乗客＝じょうきゃく; 安全＝あんぜん; 責任＝せきにん; 取＝と
+
+Basu no untenshu wa jookyaku no anzen ni sekinin wo toru beki desu.
+
+*Tài xế xe buýt phải hoàn toàn chịu trách nhiệm về sự an toàn của hành khách.*
+
+<a id="p0042-b010"></a>
+**25.** こんな時間に電話して、申し訳ありません。
+
+Furigana (nguồn): 時間＝じかん; 電話＝でんわ; 申＝もう
+
+Konna jikan ni denwashite, mooshiwake arimasen.
+
+*Tôi thật lòng xin lỗi vì đã gọi điện vào lúc này.*
+
+82 · 83
+
+## PDF page 45
+
+<a id="p0045"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0045
+
+- Trang in: 88 (trái), 89 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / II. THỂ HIỆN NGUYỆN VỌNG / 3. ĐÁP LẠI LỜI XIN LỖI.
+
+<a id="p0045-b001"></a>
+## Trang 88 — 3. ĐÁP LẠI LỜI XIN LỖI (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+**Đối thoại:**
+
+本当にすみません。
+
+Furigana (nguồn): 本当＝ほんとう
+
+Hontoo ni sumimasen.
+
+*Tôi thành thật xin lỗi.*
+
+気にしないで。
+
+Furigana (nguồn): 気＝き
+
+Ki ni shinaide.
+
+*Tôi không bận tâm đâu.*
+
+<a id="p0045-b002"></a>
+**14.** 本当にかまいません。
+
+Furigana (nguồn): 本当＝ほんとう
+
+Hontoo ni kamaimasen.
+
+*Tôi thật lòng xin lỗi.*
+
+**Diễn đạt mở rộng:**
+
+遅れてもかまわないです。
+
+Furigana (nguồn): 遅＝おく
+
+Okuretemo kamawanai desu.
+
+*Xin lỗi đã đến trễ.*
+
+<a id="p0045-b003"></a>
+**15.** あっ。大丈夫です。まだ起きている。
+
+Furigana (nguồn): 大丈夫＝だいじょうぶ; 起＝お
+
+Atsu. Daijobu desu. Mada okiteiru.
+
+*À, không sao đâu. Tôi vẫn còn thức mà.*
+
+**Đối thoại:**
+
+こんな時間にで電話してごめんなさい。
+
+Furigana (nguồn): 時間＝じかん; 電話＝でんわ
+
+Konna jikan ni de denwashite gomennasai.
+
+*Xin lỗi vì đã gọi điện cho bạn vào giờ này.*
+
+あっ、大丈夫です。まだ起きているから。
+
+Furigana (nguồn): 大丈夫＝だいじょうぶ; 起＝お
+
+Atsu, daijoobu desu. Dama okiteiru kara.
+
+*À, không sao đâu. Tôi vẫn còn thức mà.*
+
+<a id="p0045-b004"></a>
+**16.** 今回は許してあげる。
+
+Furigana (nguồn): 今回＝こんかい; 許＝ゆる
+
+Konkai wa yurushite ageru.
+
+*Lần này xin thứ lỗi cho tôi.*
+
+<a id="p0045-b005"></a>
+## Trang 89 — 3. ĐÁP LẠI LỜI XIN LỖI (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+<a id="p0045-b006"></a>
+**17.** ちょっと遅いです。もう１時間も寝てしまった。
+
+Furigana (nguồn): 遅＝おそ; 時間＝じかん; 寝＝ね
+
+Chotto osoi desu. Moo ichijikan mo nete shimatta.
+
+*Tôi đến trễ một chút. Tôi ngủ dậy trễ hơn 1 tiếng.*
+
+<a id="p0045-b007"></a>
+**18.** わざとじゃないと分かっています。
+
+Furigana (nguồn): 分＝わ
+
+Wazato janai to wakatteimasu.
+
+*Tôi đâu có gì mà giận.*
+
+**Đối thoại:**
+
+わざと怒らせるわけじゃない。
+
+Furigana (nguồn): 怒＝おこ
+
+Wazato okoraseru wake janai.
+
+*Tôi xin lỗi đã làm bạn giận.*
+
+わざとじゃないと分かっています。
+
+Furigana (nguồn): 分＝わ
+
+Wazato janai to wakatteimasu.
+
+*Tôi đâu có gì mà giận.*
+
+<a id="p0045-b008"></a>
+**19.** それは避けられないことです。
+
+Furigana (nguồn): 避＝さ
+
+Sore wa sakerarenai koto desu.
+
+*Đó là điều không thể tránh khỏi.*
+
+<a id="p0045-b009"></a>
+**20.** ぜんぜん心がとがめることはない。
+
+Furigana (nguồn): 心＝こころ
+
+Zenzen kokoro ga togameru koto wa nai.
+
+*Tôi hoàn toàn không bận tâm.*
+
+<a id="p0045-b010"></a>
+**21.** 誤らなくてもいい。私のせいだから。
+
+Furigana (nguồn): 誤＝あやま; 私＝わたし
+
+Ayamaranakutemo ii. Watashi no sei dakara.
+
+*Dù không sai. Nhưng một phần cũng tại tôi.*
+
+**Đối thoại:**
+
+ごめんなさい。
+
+Gomennasai.
+
+*Xin lỗi.*
+
+Ghi chú nối trang (biên tập): Đối thoại tiếp ở PDF p0046, trang in 90.
+
+88 · 89
+
+## PDF page 47
+
+<a id="p0047"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0047
+
+- Trang in: 92 (trái), 93 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / II. THỂ HIỆN NGUYỆN VỌNG / 4. CẢM ƠN → 5. ĐÁP LẠI LỜI CẢM ƠN.
+
+<a id="p0047-b001"></a>
+## Trang 92 — 4. CẢM ƠN (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+<a id="p0047-b002"></a>
+**6.** ありがとうございます。
+
+Arigatoo gozaimasu.
+
+*Cảm ơn.*
+
+**Diễn đạt tương tự:**
+
+助けてくれありがとうございます。
+
+Furigana (nguồn): 助＝たす
+
+Tasukete kure arigatoo gozaimasu.
+
+*Cảm ơn vì đã giúp đỡ.*
+
+<a id="p0047-b003"></a>
+**7.** どう感謝したらいいか分かりません。
+
+Furigana (nguồn): 感謝＝かんしゃ; 分＝わ
+
+Doo kanshashitara ii ka wakarimasen.
+
+*Tôi không biết làm gì để tỏ lòng biết ơn anh.*
+
+**Diễn đạt tương tự:**
+
+なんとお礼を言ったらいいか分かりません。
+
+Furigana (nguồn): 礼＝れい; 言＝い; 分＝わ
+
+Nanto ore wo ittara ii ka wakarimasen.
+
+*Tôi không biết nói gì để cảm ơn anh nữa.*
+
+<a id="p0047-b004"></a>
+**8.** どうもお世話様でした。
+
+Furigana (nguồn): 世＝せ; 話＝わ; 様＝さま
+
+Doomo osewasama deshita.
+
+*Cảm ơn vì đã giúp đỡ rất nhiều.*
+
+<a id="p0047-b005"></a>
+**9.** 大変助かりました。
+
+Furigana (nguồn): 大変＝たいへん; 助＝たす
+
+Taihen tasukari mashita.
+
+*Cảm ơn vì đã giúp đỡ.*
+
+<a id="p0047-b006"></a>
+**10.** ご協力ありがとうございます。
+
+Furigana (nguồn): 協力＝きょうりょく
+
+Go kyooryoku arigatoo gozaimasu.
+
+*Cảm ơn vì đã hợp tác.*
+
+<a id="p0047-b007"></a>
+**11.** あなたのおかげです。
+
+Anata no okage desu.
+
+*Nhờ có bạn.*
+
+<a id="p0047-b008"></a>
+## Trang 93 — 4. CẢM ƠN (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+<a id="p0047-b009"></a>
+**12.** 手伝ってくれてありがとうございます。
+
+Furigana (nguồn): 手伝＝てつだ
+
+Tetsudatte kurete arigatoo gozaimasu.
+
+*Cảm ơn vì đã giúp đỡ tôi.*
+
+<a id="p0047-b010"></a>
+**13.** 深く感謝したいです。
+
+Furigana (nguồn): 深＝ふか; 感謝＝かんしゃ
+
+Fukaku kanshashitai desu.
+
+*Tôi muốn nói lời cảm ơn sâu sắc.*
+
+<a id="p0047-b011"></a>
+**14.** おかげさまで助かりました。
+
+Furigana (nguồn): 助＝たす
+
+Okagesamade tasukari mashita.
+
+*Tôi rất biết ơn sự giúp đỡ của bạn.*
+
+<a id="p0047-b012"></a>
+**15.** ありがとう。
+
+Arigatoo.
+
+*Cảm ơn.*
+
+<a id="p0047-b013"></a>
+**16.** 考えは抜かりがないね。
+
+Furigana (nguồn): 抜＝ぬ
+
+Kangae wa nukari ga nai ne.
+
+*Suy nghĩ không thiếu sót nhỉ.*
+
+<a id="p0047-b014"></a>
+## 5. ĐÁP LẠI LỜI CẢM ƠN
+
+**1.** 満足してくれてうれしいです。
+
+Furigana (nguồn): 満足＝まんぞく
+
+Manzokushitekurete ureshii desu.
+
+*Tôi rất vui vì bạn đã giúp.*
+
+<a id="p0047-b015"></a>
+**2.** どういたしまして。
+
+Dooitashi mashite.
+
+*Không có chi.*
+
+<a id="p0047-b016"></a>
+**3.** とんでもない
+
+Tondemonai.
+
+*Không có gì đâu mà.*
+
+92 · 93
+
+## PDF page 49
+
+<a id="p0049"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0049
+
+- Trang in: 96 (trái), 97 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / II. THỂ HIỆN NGUYỆN VỌNG / 6. TÁN THÀNH.
+
+<a id="p0049-b001"></a>
+## Trang 96 — 6. TÁN THÀNH (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+<a id="p0049-b002"></a>
+**3.** そのとおりです。
+
+Sono toori desu.
+
+*Tôi cũng thế.*
+
+**Đối thoại:**
+
+まず宿題をするべきです。
+
+Furigana (nguồn): 宿題＝しゅくだい
+
+Mazu shukudai wo suru beki desu.
+
+*Trước tiên cần phải làm bài tập.*
+
+そのとおりです。
+
+Sono toori desu.
+
+*Tôi cũng thế*
+
+<a id="p0049-b003"></a>
+**4.** そう、そうするべきです。
+
+Soo, soosuru beki desu.
+
+*Đúng rồi, tôi cũng phải làm thế.*
+
+<a id="p0049-b004"></a>
+**5.** これはいいアイディアだと思います。
+
+Furigana (nguồn): 思＝おも
+
+Kore wa ii aideia dato omoimasu.
+
+*Tôi nghĩ đó là ý kiến hay.*
+
+**Diễn đạt tương tự:**
+
+いいアイディアですね。
+
+Ii aideia desu ne.
+
+*Ý kiến hay quá nhỉ.*
+
+<a id="p0049-b005"></a>
+**6.** あなたが正しいと思います。
+
+Furigana (nguồn): 正＝ただ; 思＝おも
+
+Anata ga tadashii to omoimasu.
+
+*Tôi nghĩ là bạn đúng.*
+
+<a id="p0049-b006"></a>
+**7.** これは合理的です。
+
+Furigana (nguồn): 合理的＝ごうりてき
+
+Kore wa gooriteki desu.
+
+*Điều đó là hợp lý.*
+
+<a id="p0049-b007"></a>
+**8.** おっしゃるとおりです。
+
+Ossharu toori desu.
+
+*Đúng như đã nói.*
+
+<a id="p0049-b008"></a>
+## Trang 97 — 6. TÁN THÀNH (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+**Diễn đạt tương tự:**
+
+ごもっともです。
+
+Gomottomo desu.
+
+*Đúng như đã nói.*
+
+<a id="p0049-b009"></a>
+**9.** 私もそう考えているところです。
+
+Furigana (nguồn): 私＝わたし; 考＝かんが
+
+Watashi mo soo kangaeteiru tokoro desu.
+
+*Tôi cũng có quan điểm như thế.*
+
+<a id="p0049-b010"></a>
+**10.** 反対しません。
+
+Furigana (nguồn): 反対＝はんたい
+
+Hantai shimasen.
+
+*Tôi không phản đối.*
+
+**Diễn đạt mở rộng:**
+
+彼は早起きには強く反対します。
+
+Furigana (nguồn): 彼＝かれ; 早起＝はやお; 強＝つよ; 反対＝はんたい
+
+Kare wa haya oki niwa tsuyoku hantai shimasu.
+
+*Anh ấy phản đối việc dậy sớm.*
+
+<a id="p0049-b011"></a>
+**11.** 彼の計画には賛成しますか。
+
+Furigana (nguồn): 彼＝かれ; 計画＝けいかく; 賛成＝さんせい
+
+Kare no keikaku niwa sanseishimasu ka?
+
+*Bạn có tán thành kế hoạch của anh ấy không?*
+
+<a id="p0049-b012"></a>
+**12.** 消費を削減するのはいいと思いますか。
+
+Furigana (nguồn): 消費＝しょうひ; 削減＝さくげん; 思＝おも
+
+Shoohi wo sakugensuru nowa ii to omoimasu ka?
+
+*Bạn nghĩ sao về việc cắt giảm phí tiêu dùng?*
+
+**Diễn đạt mở rộng:**
+
+ロシア語の文法はたいへん難しいと思います。
+
+Furigana (nguồn): 語＝ご; 文法＝ぶんぽう; 難＝むずか; 思＝おも
+
+Roshiago no bunboo wa taihen muzukashii to omoimasu.
+
+*Tôi cho rằng ngữ pháp tiếng Nga rất khó.*
+
+96 · 97
+
+## PDF page 50
+
+<a id="p0050"></a>
+
+# 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày — PDF p0050
+
+- Trang in: 98 (trái), 99 (phải).
+- Đường dẫn nội dung: CHƯƠNG 1 / II. THỂ HIỆN NGUYỆN VỌNG / 6. TÁN THÀNH.
+
+<a id="p0050-b001"></a>
+## Trang 98 — 6. TÁN THÀNH (tiếp) (biên tập)
+
+生活のために日本語会話文句 5500
+
+<a id="p0050-b002"></a>
+**13.** このアイディアはいいと思いますか。
+
+Furigana (nguồn): 思＝おも
+
+Kono aideia wa ii to omoimasu ka?
+
+*Bạn nghĩ ý kiến này hay chứ?*
+
+**Diễn đạt tương tự:**
+
+いいアイディアだと思いますか。
+
+Furigana (nguồn): 思＝おも
+
+Ii aideia dato omoimasu ka?
+
+*Bạn nghĩ ý kiến này hay chứ?*
+
+<a id="p0050-b003"></a>
+**14.** 私の考えに賛成しますか。
+
+Furigana (nguồn): 私＝わたし; 考＝かんが; 賛成＝さんせい
+
+Watashi no kangae ni sanseishimasu ka?
+
+*Bạn tán thành quan điểm của tôi chứ?*
+
+**Diễn đạt tương tự:**
+
+私の考えを支持しますか。
+
+Furigana (nguồn): 私＝わたし; 考＝かんが; 支持＝しじ
+
+Watashi no kangae wo shijishimasu ka?
+
+*Bạn ủng hộ quan điểm của tôi chứ?*
+
+<a id="p0050-b004"></a>
+**15.** 賛成すると思います。
+
+Furigana (nguồn): 賛成＝さんせい; 思＝おも
+
+Sanseisuru to omoimasu.
+
+*Tôi tán thành.*
+
+<a id="p0050-b005"></a>
+**16.** これは確かに理屈に合っています。
+
+Furigana (nguồn): 確＝たし; 理屈＝りくつ; 合＝あ
+
+Kore wa tashika ni rikutsu ni atteimasu.
+
+*Dù ai cũng thấy đó là điều rất hợp lý.*
+
+<a id="p0050-b006"></a>
+**17.** それこそ私が言いたかったのです。
+
+Furigana (nguồn): 私＝わたし
+
+Sorekoso watashi ga iitakatta no desu.
+
+*Điều mà tôi đã nói là rất đúng.*
+
+<a id="p0050-b007"></a>
+**18.** まったくそのとおりです。
+
+Mattaku sono toori desu.
+
+*Hoàn toàn đúng.*
+
+<a id="p0050-b008"></a>
+## Trang 99 — 6. TÁN THÀNH (tiếp) (biên tập)
+
+5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+<a id="p0050-b009"></a>
+**19.** お話はまああ合理的だと思います。
+
+Furigana (nguồn): 話＝はなし; 合理的＝ごうりてき; 思＝おも
+
+Ohanashi wa maaa gooriteki dato omoimasu.
+
+*Tôi nghĩ là câu chuyện hoàn toàn hợp lý.*
+
+<a id="p0050-b010"></a>
+**20.** 大賛成です。
+
+Furigana (nguồn): 大賛成＝だいさんせい
+
+Daisansei desu.
+
+*Tôi rất tán thành.*
+
+<a id="p0050-b011"></a>
+**21.** はい、そうです。
+
+Hai, soo desu.
+
+*Vâng, đúng rồi.*
+
+<a id="p0050-b012"></a>
+**22.** はい、力を尽くします。
+
+Furigana (nguồn): 力＝ちから; 尽＝つ
+
+Hai, chikara wo tsukushimasu.
+
+*Vâng, tôi sẽ dốc hết sức.*
+
+<a id="p0050-b013"></a>
+**23.** もちろんです。
+
+Mochiron desu.
+
+*Dĩ nhiên rồi.*
+
+<a id="p0050-b014"></a>
+**24.** 当たり前です。
+
+Furigana (nguồn): 当＝あ; 前＝まえ
+
+Atari mae desu.
+
+*Tất nhiên rồi.*
+
+<a id="p0050-b015"></a>
+**25.** 喜んでやります。
+
+Furigana (nguồn): 喜＝よろこ
+
+Yorokonde yarimasu.
+
+*Tôi rất sẵn lòng.*
+
+<a id="p0050-b016"></a>
+**26.** いいえ、大丈夫です。
+
+Furigana (nguồn): 大丈夫＝だいじょうぶ
+
+Iie, daijoobu desu.
+
+*Không, không có gì đâu.*
+
+<a id="p0050-b017"></a>
+**27.** いいえ、タバコを吸うのを気にしていません。
+
+Furigana (nguồn): 吸＝す; 気＝き
+
+Iie, tabako wo suu nowo ki ni shiteimasen.
+
+*Không, tôi không hút thuốc.*
+
+98 · 99
+

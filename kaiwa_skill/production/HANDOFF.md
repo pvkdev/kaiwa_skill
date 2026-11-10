@@ -171,3 +171,22 @@ CLI thực: {'pending': 3993, 'verified': 600, 'needs_review': 2, 'rendered': 2}
 
 - Worker `/root/production_sol_resume/production_book_09_sol_resume` dừng sau p41 và release claim sạch. Book09 có 28/136 verified, 13 needs_review do scan mờ/gáy đen che chữ, 95 pending p42–136; `build_current=true`. Chưa nghiệm thu. HANDOFF riêng và sổ QA coordinator ghi chi tiết; coordinator đã mở ảnh nguồn p31/p33 và xác nhận ví dụ chữ/dấu bị che, so nội dung p14/15/17/35/38 không thấy sai khác trong mẫu.
 - Roster CLI ngay sau release: 636/4597 verified, 3942 pending, 2 draft, 1 rendered, 16 needs_review. Book10 worker vẫn chạy. Sẽ giao một worker Sol/high mới tiếp tục chính book09 p42–136; không bỏ qua các trang pending để chuyển queue11.
+
+## Book09 tiếp tục p42+ — 2026-11-10T21:49Z
+
+- Worker mới `/root/production_sol_resume/production_book_09_sol_cont` đã đọc handoff/status, nhận claim riêng `production_book_09_sol_cont_20261111_42b197`, bắt đầu render p42+. Roster đã gán đúng agent ID, `worker_state=running`. Book10 vẫn ở worker Sol/high riêng. Commit WIP book09 trước lượt mới: `50e43fc`; mọi số sau mốc này đọc từ CLI.
+- Coordinator phát hiện tên tác giả ở chân preface book10 p5 bị chuyển chữ: nguồn in `釜渕優子`, Markdown trước sửa ghi `金渊优子`. Worker10 đang mở lại crop và sửa/reverify hash-bound; sổ QA ghi finding đang mở. Chưa coi mẫu p5 đạt.
+
+## QA sửa tên tác giả book10 — 2026-11-10T21:51Z
+
+- Worker10 đã tự mở crop PDF 8x p1/p3/p5, xác nhận cả ba in `釜渕優子`; sửa draft p1/p3 và re-record/reverify p5. Coordinator đọc lại ba Markdown, p5 checkpoint/evidence khớp SHA mới `1d13493bc54dcef765f33212895771ec3fdbae3c197f362d661e4fdd5f2638ad`. Finding trước đó đã được ghi resolved trong `COORDINATOR_SOL_AUDIT.json`. P1/p3 vẫn needs_review vì những vùng khác của nguồn bị cắt/mờ, không gọi verified.
+
+## Checkpoint hai worker Sol/high — 2026-11-10T22:01Z
+
+- Roster đọc file thật: 648/4597 verified, 3922 pending, 3 rendered, 2 draft, 22 needs_review. Bảy sách accepted/501 trang giữ nguyên. Book09 worker tiếp tục p42+, đến khoảng p52; p43/44/46 và các trang sát gáy khác có partial draft/issue nguồn, không đoán chữ. Coordinator đã mở/so toàn p42, không thấy sai khác trong mẫu. Book10 đến p19 verified (trừ p1/p3 needs_review và p6/p7 draft chờ so inset), còn đang tiếp p20+.
+- QA book10 p16: worker đã sửa ba dấu lửng thành bốn dấu chấm rời `・・・・` theo crop 8x PDF, reverify; coordinator readback SHA mới `a751fe515b216b216e1050af672b85f855843b94f4762598d5ec2a4a593e1a08`. Mẫu p17 (ba ngôn ngữ) và p19 (sơ đồ đánh số hai người) không có sai khác đã biết. Sổ `COORDINATOR_SOL_AUDIT.json` ghi hash/phạm vi thật; đây vẫn là WIP, không nghiệm thu.
+
+## Book09 bàn giao tiếp WIP tại p55 — 2026-11-10T22:04Z
+
+- Worker `/root/production_sol_resume/production_book_09_sol_cont` đã nhả claim sau build/reconcile sạch. Book09 33/136 verified, 22 needs_review do scan che chữ, 81 pending p56–136; `build_current=true`, chưa nghiệm thu. Trong lượt p42–55: p42/45/47/49/50 verified, chín trang còn lại có draft và issue cục bộ. Coordinator đã so toàn p42 và p50 với ảnh, không có sai khác đã biết trong mẫu; sổ QA cập nhật hash.
+- Roster ngay sau release: 649/4597 verified, 3920 pending, 2 draft, 1 rendered, 25 needs_review. Book10 worker tiếp tục p20+ và p6–7 còn đợi đối chiếu inset. Giao worker Sol/high mới tiếp book09 p56–136 sau commit WIP; không bỏ phần pending.
