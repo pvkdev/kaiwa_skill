@@ -160,3 +160,14 @@ CLI thực: {'pending': 3993, 'verified': 600, 'needs_review': 2, 'rendered': 2}
 - Worker Sol/high `/root/production_sol_resume/production_book_07_sol_resume` đã verify p89–96, build partial và release. Book07 `669041168-4f47df1cc97a` hiện 95/96 verified; p28 nguồn PDF bị cụt giữ `needs_review`. `build_current=true`, build SHA-256 `084650d56ea9e4aa9e78e097aa20766d67ca1cc69a71549a7ac89502d6ec2716`; không gọi accepted. `corpus/.../HANDOFF.md`, `REVIEW.md`, `COORDINATOR_SOL_AUDIT.json` ghi chi tiết QA và hai audit mở rộng còn pending. Commit output mang nhãn WIP riêng.
 - Slot được giao `/root/production_sol_resume/production_book_10_sol` (gpt-6-sol/high), book `shigoto-no-nihongo-bijinesu-manaa-hen-0e3d5e9467fa`, nguồn `book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf`, 136 trang. SHA nguồn preflight khớp roster. Bìa p1 có đoạn quảng bá bị cắt lề trái trong PDF; worker kiểm crop và giữ issue nếu thiếu chữ, không tái tạo.
 - `/root/production_sol_resume/production_book_09_sol_resume` tiếp tục book09; p1/p16/p22/p24–27 có chữ mờ hoặc bị gáy đen che, lưu `needs_review` và vẫn xử lý p29+. Snapshot roster sau dispatch: 623/4597 verified, 9 needs_review, 1 rendered, 3964 pending. Số tiếp theo phải đọc CLI/file thật, không suy từ mốc này.
+
+## Checkpoint Sol/high — 2026-11-10T21:43Z
+
+- `refresh_roster.py` đọc file thật: 635/4597 verified, 3943 pending, 4 rendered, 1 draft, 14 needs_review (14 issue); bảy sách accepted/501 trang giữ nguyên. Hai worker live: `/root/production_sol_resume/production_book_09_sol_resume` (book09) và `/root/production_sol_resume/production_book_10_sol` (book10). Book07 đã bàn giao WIP 95/96, commit `e536c4e`; p28 còn phụ thuộc nguồn tốt hơn.
+- Coordinator Sol/high đã mở ảnh thật và so Markdown book09 p14/15/17/35/38, đều không có sai khác đã biết trong mẫu; đã mở ảnh p22/24/33 kiểm chữ/dấu bị gáy che, giữ needs_review. Book10 đã so p11 divider và p12 quiz, đều không có sai khác đã biết trong mẫu; p1 bìa cụt, p3 publisher mark quá mờ. Hai sổ `COORDINATOR_SOL_AUDIT.json` giữ hash và phạm vi cụ thể. Book10 p5–7 nhiều ngôn ngữ/chữ nhỏ đang deferred rendered và worker cam kết quay lại trước handoff.
+- Mốc này không phải nghiệm thu; cả hai worker giữ claim và tiếp tục trang đọc được. Tiếp tục toàn queue, không push.
+
+## Book09 bàn giao WIP — 2026-11-10T21:48Z
+
+- Worker `/root/production_sol_resume/production_book_09_sol_resume` dừng sau p41 và release claim sạch. Book09 có 28/136 verified, 13 needs_review do scan mờ/gáy đen che chữ, 95 pending p42–136; `build_current=true`. Chưa nghiệm thu. HANDOFF riêng và sổ QA coordinator ghi chi tiết; coordinator đã mở ảnh nguồn p31/p33 và xác nhận ví dụ chữ/dấu bị che, so nội dung p14/15/17/35/38 không thấy sai khác trong mẫu.
+- Roster CLI ngay sau release: 636/4597 verified, 3942 pending, 2 draft, 1 rendered, 16 needs_review. Book10 worker vẫn chạy. Sẽ giao một worker Sol/high mới tiếp tục chính book09 p42–136; không bỏ qua các trang pending để chuyển queue11.
