@@ -73,3 +73,48 @@ Không có daemon hoặc tiến trình nền được bảo đảm tiếp tục 
 - 192 file text staged đúng byte, không ảnh/cache/claim/lock/scratch. Whitespace còn lại là CRLF bảo toàn byte, blank cuối book sinh tự động và hai space Markdown hard-break ở colophon p91/bản ghép; giữ nguyên bằng chứng đã verified. Scratch cũ của05 vẫn tồn tại ngoài commit.
 - Slot mới `/root/production_resume/production_book_07`, gpt-6-sol/high, `669041168-4f47df1cc97a`, nguồn `book/Kaiwa/669041168-日本語会話-基本文型８８.pdf`, 96 trang. Worker đọc status rồi init/claim. Tiếp tục toàn queue.
 - Book06 đang chạy ở `/root/production_resume/production_book_06`; mốc9/93 verified. Coordinator đã QA toàn p1–6, sửa/readback ruby/nhãn/romanization; giữ ruby dị thường特定＝ことば ởTOC và ghi rõ nhận định受＝う bị rút sau tightcrop đối chứng. Chưa nghiệm thu06; tiếp tục QA phần mở đầu và cặp mẫu bài chínhp10.
+
+## Tiến độ hai sách 06/07 — snapshot 2026-11-10
+
+- Refresh CLI: 343/4597 verified, 8 rendered, 4246 pending, 0 machine issues. Năm sách accepted (305 trang) giữ nguyên; pilot điện thoại 4 trang giữ nguyên.
+- Worker06 `/root/production_resume/production_book_06`: 25/93 verified. Coordinator đã đối chiếu nguồn toàn p1–20 và đang mở rộng mẫu phần chính; sửa/readback case romaji và map ruby theo occurrence/span thật. P24 còn chờ sửa hai span ruby xuống dòng.
+- Worker07 `/root/production_resume/production_book_07`: 9/96 verified. Coordinator đã đối chiếu nguồn toàn p1–9, gồm mẫu bài thu nhỏ và đủ Nhật/Anh/Trung; lỗi đã sửa/readback, nhận định sai về ruby 天気 được rút sau crop đối chứng.
+- Hai sách chưa nghiệm thu; ledger trong corpus ghi hash/phạm vi/trạng thái từng mẫu. Tiếp tục toàn queue, không blocker. Snapshot không chứng minh worker còn sống khi resume; đọc live agents và CLI thực.
+
+## Snapshot tiếp tục 06/07 — 2026-11-10T14:55Z
+
+- CLI refresh: 359/4597 verified, 5 rendered, 4233 pending, 0 machine issues; 5 sách accepted/305 trang nguyên vẹn, pilot điện thoại 4 trang nguyên vẹn. Hai worker hiện tại vẫn là production_book_06 và production_book_07 dưới /root/production_resume.
+- Coordinator đã mở/so toàn p1–36 sách06, p1–14 sách07. P36 chờ bảo toàn gạch bỏ ます trong khung/ví dụ; p14 chờ giữ đúng lỗi thiếu んです ở đoạn Anh của nguồn. P33 macron kīte và p13 ruby xuống dòng đã sửa/reverify/readback. Ledger hash-bound ghi chi tiết, chưa nghiệm thu06/07.
+- Tiếp tục toàn hàng đợi; snapshot không chứng minh tiến độ hiện tại hoặc tác nhân còn sống khi resume. Đọc CLI/status và live agents.
+
+## Checkpoint tiếp tục 2026-11-10T15:22Z
+
+Snapshot CLI/hash thực: 378/4597 verified, 3 rendered, 4216 pending, 0 machine issues. Năm sách đã nghiệm thu (305 trang) giữ nguyên. Hai worker Sol/high vẫn chạy: `/root/production_resume/production_book_06` 48/93 và `/root/production_resume/production_book_07` 21/96; không đổi claim. Astra/high đã mở ảnh/Markdown và crop kiểm tra chéo mọi trang 1–48 của book06, 1–21 của book07. Các ruby tự thêm p44–45 và dấu dakuten p18 đã sửa, reverify, đọc lại; audit ledger hiện không có finding chưa giải quyết. Đây là checkpoint giữa chừng, chưa nghiệm thu hai sách đang chạy; tiếp tục toàn bộ hàng đợi, không phải yêu cầu dừng.
+
+Giới hạn nguồn book06 đã kiểm tra độc lập: PDF p54 in104–105/mục13/audio58, p55 in108–109/mục15/audio60; khoảng106–107/mục14 không có ở đoạn liên tiếp này. Ghi trong REVIEW nghiệm thu, không tái tạo nội dung thiếu. Bằng chứng hash ảnh trong COORDINATOR_AUDIT.json.
+
+
+Snapshot 2026-11-10T15:40:07.475813+00:00: status_all 394 verified / 4597, 2 rendered, 4201 pending, 0 machine issues. Hai worker06/07 vẫn running; QA độc lập06 p1–57 và07 p1–25,07p26 đang sửa ruby/diagram theo crop. 5 sách accepted/305 trang giữ nguyên; source gap06 đã ghi ở trên. Tiếp tục toàn queue, chưa phải handoff dừng.
+
+
+Source issue07 p28 (printed54–55): ảnh gốc PDF bị cụt lề trái/đáy, mất một phần hội thoại8 và dịch. Coordinator đã mở full và kiểm MediaBox/CropBox/XObject: p28 728.4×516, image3035×2150; p27/p29 841.68×595.2,image3507×2480. Worker lưu phần đọc được, đặt needs_review, tiếp tục p29+. Không tự thay nguồn hay suy đoán chữ; sách07 chưa thể nghiệm thu đầy đủ nếu thiếu nguồn trang này.
+
+
+Snapshot 2026-11-10T15:58:22.759572+00:00: CLI thực 406 verified /4597, 2 rendered, 1 needs_review (book07 p28 nguồn cụt ảnh), 4188 pending. Worker06 báo 68/93; worker07 29 verified qua p30, tiếp p31+. Coordinator đã QA hash-bound06 p1–65,07 p1–27+29; p30 chờ bỏ một ruby 方 không in. Hai build partial đã chạy tại06 p65 và07 p30; chưa nghiệm thu. Tiếp tục toàn queue; source issue07 không chặn các trang/sách độc lập còn lại.
+
+## Checkpoint 2026-11-10T16:19:09.813337+00:00
+
+- status_all thực tế: 420 verified / 4597; 4172 pending, 4 rendered, 1 needs_review, 1 issue (book07 p28 nguồn bị cắt).
+- Book06 đã build checkpoint75/93 partial; coordinator QA toàn trang1–75 currenthash clear. Book07 coordinator QA1–27+29–34 currenthash clear; tiếp tục các trang còn lại, p28 không được verify/accepted thiếu nguồn.
+- Hai worker Sol/high production_book_06 và production_book_07 vẫn chạy; không có yêu cầu pause. Sau hoàn tất/QA từng sách tiếp tục queue08/09 theo AUDIT_NOTES.
+
+Snapshot 2026-11-10T16:32:56.677575+00:00: CLI420→428/4597 verified,4161pending,7rendered,1needs_review (07p28 sourcecrop). Worker06 verified84/93, independent QA1–84 hashbound clear. Worker07 verified35 physical pages (1–27,29–36), auditing English line-end hyphens across1–27 after systemic corrections29/31/32/33/35/36; p37 rendered. Corrected pages29–36 independently read back, current hashes refreshed. Two workers running; next queue08 after06 accepted.
+
+
+Snapshot 2026-11-10T16:49:09.327930+00:00: CLI438/4597verified,4154pending,3rendered,1draft,1needs_review(07p28sourcecrop). Haiworker06/07 running;06qua91/93,coordinatorQA1–90currentclear,p91chờ6hyphensEnglishheader.07qua40(39verified),partialbuild40;QA1–27+29–39currentclear sau16trangEnglishhyphenaudit1–27 đã mởsource/readback. Tiếpaccept06/dispatch08 khi QA/build đủ; chưa nghiệmthu06/07.
+
+## 2026-11-10T17:02Z — book06 accepted, book08 dispatched
+
+- Book06 `85-21a2cb6f3fef`: accepted all 93 physical pages after independent full-page QA; 0 issues, current build, claim released. Output commit `af0374b`; build SHA `13fb6c0136543cfb83bb91a92a0baf95c2399bf34ff93ccb95ee039402f3de05`. Supplied PDF itself skips printed106–107/item14 between physical54–55; limitation retained in acceptance. Accepted queue now6books/398pages.
+- Running Sol/high agents: `/root/production_resume/production_book_07` continues book07 (p28 source crop blocker retained; other pages continue), and `/root/production_resume/production_book_08` owns `03-yuukibui-dd762e3fd201`103pages. New08 token `production_book_08_1794330003838_204673952`; fresh source hash matched and initialized103pending before work.
+- Coordinator remains active through entire queue; next free slot gets queue09. No push. No source/bunpou/image output changes.

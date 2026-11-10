@@ -33,3 +33,18 @@ Worker đủ 70 trang. Coordinator đã mở rộng mẫu toàn bảng đến p2
 Các ghi chú N1 phía trên là lịch sử. Kết quả cuối ACCEPTED, commit `992a210`, đủ70tr/1170mục, build hiện tại, không issue, claim release. Bốn lỗi đã sửa và đọc lại; worker hoàn tất rà rộng102hàng Nhật/120hàng Việt. Evidence p16 được sửa mô tả đúng crop coordinator150DPI phóng1,5 lần và crop worker300DPI riêng. Báo cáo không quy kết nguyên nhân quan sát full-image/crop khác nhau. Phạm vi chính xác và giới hạn nằm trong corpus REVIEW/COORDINATOR_AUDIT/acceptance.
 
 P5 sách Namachuukei89 đã sửa metadata theo header riêng và reverify; coordinator đã đọc lại. Slot N1 chuyển sang Namachuukei Shochuukyuu1 (91 trang), worker05.
+
+
+Queue08 preflight (2026-11-10, planning only; not page QA evidence): coordinator opened source preview PDF physical1–6 from 03-yuukibui-dd762e3fd201 (103p). Single-page scans; p1 cover, p2 title/library stamp, p3 colophon, p4–6 English CONTENTS. Printed title is 英訳・語い冊, not filename 語彙; preserve source spelling and watermark JLPT Mogi / Yuuki Bui. Plan must cover English dialogues/variations/listening practice and Japanese-English vocabulary rows. No corpus/claim initialized; actual conversion remains queued until a worker slot opens.
+
+
+Queue08 preflight extension (planning only): independently rehashed source dd762e3fd201f93408026f7839faf18f60ebf5f8472fed26ad143617f3840341,103pages; opened physical7–10. P7 contents(v) ends Lesson20; p8 printed1 begins Lesson1 English monologue; p9–10 printed2–3 two-column Japanese/English vocabulary. Read full left column then full right, preserve parenthesized inline readings, section labels 談話型/本文会話/語句の使い方, printed reference p.1/p.2/p.3/P.4 and exercise labels distinct from physical page. P9-to10 vocabulary continuation, frequent English wrapping/hyphenation. Still no corpus/claim initialized and no page QA acceptance evidence.
+
+
+Queue09 preflight (planning only; no page QA evidence): independently rehashed c8933782539c7bbe8ac755f2278bb7a6d7cf0d9165843c9ef14a198993b1825a,136pages. Opened physical1–8,135–136. Paired printed-page spreads; cover/backcover together, title/TOC starts with blank left panels, running JP/VI headers. Main units contain Japanese, printed romaji, Vietnamese, labelled dialogues/variants/expansions with ruby above only some source words. Last p135 printed268–269 vocab, p136 printed270 vocab plus colophon. Preserve source quirks e.g. p8 romaji Watachi, imootono, wrong-looking Japanese/translation; zoom Vietnamese diacritics and small ruby independently. Vocabulary tables may contain source mismatches; no normalization. No corpus/claim initialized.
+
+## Queue10 preflight — 2026-11-10T16:30Z (planning only, not QA acceptance)
+
+- BID shigoto-no-nihongo-bijinesu-manaa-hen-0e3d5e9467fa; source book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf; actual SHA256 0e3d5e9467fafaef97acda677080aa1bb6f9b849aa20e5993172ee6b0864d7a6,136 physical pages. No init/claim.
+- Opened physical1–8 at scale2.2. p1 cover has left-clipped lower promotional text; p2,p4 blank; p3 noisy title-page scan, publisher mark needs close crop. p5 printed3 dense Japanese/English/Chinese preface. p6–7 printed4–5 usage diagrams contain tiny reproduced pages with meaningful labels/dialogue, require tight crops, not omission by treating illustration as decoration.
+- p8 printed6 first TOC: section1 printed9; units1–10 printed10,16,22,28,34,40,46,52,58,64. Initial physical=printed+2 confirmed only for these front pages, not entire PDF. Main layouts include comics, quizzes, explanatory text and three source languages. Temporary previews .cache/coordinator_resume/queue10_preview_pNNNN.png.
