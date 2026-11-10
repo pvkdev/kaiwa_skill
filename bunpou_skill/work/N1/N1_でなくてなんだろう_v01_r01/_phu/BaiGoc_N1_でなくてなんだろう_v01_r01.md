@@ -1,0 +1,38 @@
+Cấp độ: N1
+
+# ～でなくてなんだろう
+
+**Nếu không phải là… thì là gì? / Đây chính là…**
+
+### Cấu trúc
+
+> **N ＋ でなくてなんだろう**
+
+### Cách dùng / Ý nghĩa
+
+Là câu hỏi tu từ dùng để **khẳng định mạnh mẽ rằng một sự việc chính là N**.
+
+Người nói không thực sự chờ người nghe trả lời, mà nhấn mạnh nhận định của mình:
+
+**“Điều này rõ ràng là N, còn có thể gọi là gì khác được nữa?”**
+
+### Ví dụ
+
+##### ① 肝臓病の子どものために自分の肝臓の一部をあげる。これが愛でなくてなんだろう。
+
+###### → Hiến một phần gan của mình cho đứa con mắc bệnh gan. Nếu đây không phải tình yêu thương thì là gì?
+
+##### ② 級友たちは転校生の私に何も教えてくれないばかりか、私が困っているのを見て笑っている。これがいじめでなくてなんだろう。
+
+###### → Các bạn cùng lớp không những chẳng chỉ dẫn gì cho một học sinh mới chuyển đến như tôi, mà còn cười khi thấy tôi gặp khó khăn. Nếu đây không phải bắt nạt thì là gì?
+
+### Chú ý
+
+Hình thức là câu hỏi nhưng ý nghĩa là **khẳng định**, không phải nghi ngờ.
+
+Dùng được để nhấn mạnh cả điều tích cực lẫn tiêu cực:
+
+- **愛でなくてなんだろう**：Đây chính là tình yêu thương.
+- **いじめでなくてなんだろう**：Đây rõ ràng là bắt nạt.
+
+Mẫu này mang tính chủ quan và giàu cảm xúc, làm nổi bật sự tin chắc của người nói.

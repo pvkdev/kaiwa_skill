@@ -1,0 +1,119 @@
+Cấp độ: N2
+
+# ～ ようではないか／ようじゃないか
+
+> **Hãy Cùng …/ Sao Không … ?**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể ý chí + ではないか／じゃないか**  
+>
+> **Động từ thể ý chí + ではありませんか／じゃありませんか**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Mẫu câu dùng để đưa ra gợi ý, đề xuất hay rủ rê, mời mọc cùng làm gì. Ngoài ra còn dùng để biểu thị mạnh mẽ ý chí của người nói, hoặc để hô hào, kêu gọi người nghe cùng thực hiện hành động nào đó.
+
+②　Cách nói này có ý nghĩa thúc giục người nghe mạnh hơn so với cấu trúc ｢～ようか｣ và chủ yếu là được nam giới, người lớn tuổi, những người có chức quyền như chính trị gia, giám đốc khi kêu gọi số đông… 
+
+③　Không dùng trong đời sống thường ngày
+
+④　Ngoài ra cũng có cách nói「～ようではないですか」 
+
+→　Có Nghĩa là :  Hãy cùng …/ Sao không … ?
+
+---
+
+## Ví dụ
+
+##### 1. みんなで頑張ろうじゃないか。
+
+###### → Tất cả mọi người hãy cùng nhau cố gắng lên nào!
+
+##### 2. これからは少しでも人の役に立つことを考えようではないか。
+
+###### → Từ bây giờ, chúng ta hãy suy nghĩ xem nên làm những gì có ích cho mọi người.
+
+##### 3. 災害を受けた人々に救援物資を送ろうではないか。
+
+###### → Chúng ta hãy cùng gửi hàng cứu trợ cho những người đang gặp thiệt hai do thiên tai.
+
+##### 4. 自然保護の運動を広めようではないか。
+
+###### → Chúng ta hãy mở rộng phong trào bảo vệ môi trường tự nhiên.
+
+##### 5. 環境問題について、具体的に自分にはどんなことができるか、一つ一つリストに書いてみようではないか。
+
+###### → Về vấn đề môi trường, chúng ta hãy viết ra danh sách từng cái một, xem bản thân mình có thể làm được gì cụ thể.
+
+##### 6. 旅行の費用を積み立てるというのはいい考えですね。さっそく、私たちも来月から始めようじゃありませんか。
+
+###### → Việc tích cóp chi phí cho du lịch là một ý hay nhỉ. Vậy chúng ta hãy mau chóng bắt đầu thực hiện từ tháng sau nhé.
+
+##### 7. 一緒に飲もうじゃないか。
+
+###### → Chúng ta hãy cùng nhau uống rượu đi nào.
+
+##### 8. 飢えに苦しむ子どもたちのために、何ができるか一緒に考えようではないか。
+
+###### → Chúng ta hãy cùng nhau suy nghĩ xem có thể làm được gì vì những trẻ em đang bị đói khổ.
+
+##### 9. この問題については、もっとよく話し合おうじゃないか。
+
+###### → Về vấn đề này thì chúng ta hãy trao đổi nhiều hơn.
+
+##### 10. よし、そんなに俺と喧嘩したいのなら、受けて立とうじゃないか。
+
+###### → Được thôi, nếu muốn gây với tao như thế, thì hãy đứng lên cùng gây nào!
+
+##### 11. やれるかどうかわかりませんが、とにかくやってみようではありませんか。
+
+###### → Không biết có làm được không nhưng trước mắt cứ làm thử xem đã.
+
+##### 12. 男女差別の問題について真剣に考えようではありませんか。
+
+###### → Chúng ta hãy suy nghĩ thật nghiêm túc về vấn đề phân biệt nam nữ.
+
+##### 13. ごみを減らす努力を、まず家庭の中からしようではないか。
+
+###### → Hãy bắt đầu thực hiện nỗ lực giảm rác thải, trước hết ngay từ bên trong gia đình mình.
+
+##### 14. 今夜は、語り明かそうではありませんか。
+
+###### → Nào đêm nay, chúng ta sẽ cùng nhau nói chuyện cho đến sáng nhé.
+
+##### 15. 私たちでいくら話し合っても結論はでないから、社長に相談してみようじゃありませんか。
+
+###### → Chúng ta có bàn bao nhiêu đi nữa thì cũng không có kết luận, nên nãy thử xin ký kiến Giám đốc xem sao.
+
+##### 16. 考えているだけではだめだ。思い切ってやってみようではないか。
+
+###### → Chỉ suy nghĩ thôi thì không được. Hãy quyết liệt thực hiện thử.
+
+##### 17. 賃金を上げるように社長に交渉しようじゃありませんか。
+
+###### → Để nâng tiền công thì chúng ta hãy thương lượng với Giám đốc.
+
+##### 18. せっかくここまで来たんだから、思い切り楽しもうじゃありませんか。
+
+###### → Đã mất công đến đây rồi nên hãy cùng vui chơi hết mình nào!
+
+##### 19. みんなで力を合わせて、この島(の自然を守っていこうではないか。
+
+###### → Mọi người hãy cùng gắng sức bảo tồn thiên nhiên cho hòn đảo này nào.
+
+##### 20. 町を元気にする方法について、一緒に考えようではありませんか。
+
+###### → Hãy cùng nhau nghĩ cách làm cho khu phố trở nên sôi nổi nào.
+
+##### 21. もう一度話し合おうではないか。
+
+###### → Sao chúng ta không cùng nói chuyện thêm 1 lần nữa?
+
+##### 22. （文章）人それぞれ悩みはある。しかし、考えているだけでは悩みは解決しない。苦しくても一歩ずつ前に進もうではないか。
+
+###### → (Bài luận) Con người ai cũng có những nỗi lo. Nhưng mà chỉ suy nghĩ thôi thì cũng không giải quyết được lo lắng. Dù khó khăn đi chăng nữa nhưng hãy cứ tiến từng bước về phía trước.

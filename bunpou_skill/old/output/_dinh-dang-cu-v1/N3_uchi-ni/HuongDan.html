@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N3_uchi-ni – Hướng dẫn làm video</title>
+<script>try { var _t = localStorage.getItem("bunpou:theme"); if (_t === "light" || _t === "dark") document.documentElement.setAttribute("data-theme", _t); } catch (e) {}</script>
+<!--
+  Template trang hướng dẫn cho từng video. KHÔNG sửa tay file HuongDan.html trong output/.
+  File được sinh bởi: python tools/build_html.py output/<ID>
+  Dữ liệu (kịch bản, phong cách, tùy chỉnh, meta) được nhúng sẵn trong thẻ <script id="bunpou-data">.
+-->
+<style>
+  :root {
+    --bg: #f6f5f1; --surface: #ffffff; --surface-2: #f1efe9; --border: #e3e0d8;
+    --text: #1f1d1a; --muted: #6b665d; --accent: #c2410c; --accent-soft: #fdeee5;
+    --on-accent: #ffffff; --ok: #15803d; --ok-soft: #e7f6ec; --jp: #1e3a8a; --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.04);
+    --radius: 14px;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-jp: "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", "Meiryo", "Noto Sans JP", system-ui, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", Consolas, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151412; --surface: #1d1c19; --surface-2: #26241f; --border: #34312b;
+      --text: #ece9e2; --muted: #a39e93; --accent: #fb923c; --accent-soft: #3a2416;
+      --on-accent: #1a0f08; --ok: #4ade80; --ok-soft: #173222; --jp: #a5b4fc; --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+      --bg: #151412; --surface: #1d1c19; --surface-2: #26241f; --border: #34312b;
+      --text: #ece9e2; --muted: #a39e93; --accent: #fb923c; --accent-soft: #3a2416;
+      --on-accent: #1a0f08; --ok: #4ade80; --ok-soft: #173222; --jp: #a5b4fc; --shadow: none;
+  }
+  :root { color-scheme: light; }
+  :root[data-theme="dark"] { color-scheme: dark; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.6; }
+  a { color: var(--accent); }
+  button { font: inherit; cursor: pointer; }
+
+  header.top { padding: 28px 24px 18px; max-width: 1680px; margin: 0 auto; display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; }
+  .head-main { min-width: 0; }
+  .theme-btn { flex: none; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 7px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; box-shadow: var(--shadow); }
+  .theme-btn:hover { border-color: var(--accent); }
+  .theme-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .theme-btn .ico { font-size: 15px; line-height: 1; }
+  @media (max-width: 600px) { #theme-txt { display: none; } .theme-btn { padding: 8px 10px; } }
+  .eyebrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; color: var(--muted); font-size: 13px; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-weight: 700; font-size: 12px; letter-spacing: .03em; }
+  .chip { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); font-size: 12px; }
+  h1.title { margin: 10px 0 4px; font-size: clamp(22px, 3vw, 32px); line-height: 1.25; }
+  h1.title .jp { font-family: var(--font-jp); }
+  .usages { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  .usages li { font-size: 13px; color: var(--muted); }
+  .usages li b { font-family: var(--font-jp); color: var(--text); }
+
+  main.grid { max-width: 1680px; margin: 0 auto; padding: 0 24px 48px; display: grid; grid-template-columns: minmax(400px, 560px) 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 1000px) { main.grid { grid-template-columns: 1fr; padding: 0 16px 40px; } header.top { padding: 20px 16px 14px; } }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .steps { padding: 18px; }
+  .content { position: sticky; top: 16px; }
+  @media (max-width: 1000px) { .content { position: static; } }
+  .steps h2 { margin: 0 0 4px; font-size: 18px; }
+  .steps .sub { margin: 0 0 14px; color: var(--muted); font-size: 13px; }
+  .progress { height: 6px; background: var(--surface-2); border-radius: 99px; overflow: hidden; margin-bottom: 14px; }
+  .progress > i { display: block; height: 100%; width: 0; background: var(--ok); transition: width .25s; }
+
+  .step { border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; background: var(--surface); }
+  .step.done { background: var(--ok-soft); border-color: transparent; }
+  .step-head { display: flex; align-items: center; gap: 10px; }
+  .num { flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 13px; }
+  .step.done .num { background: var(--ok); color: #fff; }
+  .step-head h3 { margin: 0; font-size: 15px; flex: 1; }
+  .step-head label { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 4px; cursor: pointer; user-select: none; }
+  .step-body { margin: 8px 0 0 36px; font-size: 14px; }
+  .step-body p { margin: 6px 0; }
+  .step-body code { word-break: break-all; }
+  .step-body ol, .step-body ul { margin: 6px 0; padding-left: 18px; }
+  .step-body li { margin: 3px 0; }
+  .alt { margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); font-size: 13px; }
+  .alt > b:first-child { display: block; margin-bottom: 4px; }
+  .kv { width: 100%; border-collapse: collapse; font-size: 13px; margin: 6px 0; }
+  .kv td { padding: 5px 6px; border-bottom: 1px dashed var(--border); vertical-align: top; }
+  .kv td:first-child { color: var(--muted); white-space: nowrap; }
+  .warn { color: var(--accent); font-weight: 600; }
+
+  .btns { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 6px 12px; border-radius: 9px; font-size: 13px; font-weight: 600; text-decoration: none; transition: background .15s, border-color .15s; }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .btn.primary:hover { filter: brightness(1.08); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .path { font-family: var(--mono); font-size: 12px; background: var(--surface-2); border: 1px solid var(--border); padding: 6px 8px; border-radius: 8px; word-break: break-all; display: block; margin: 6px 0; }
+  .note { font-size: 12px; color: var(--muted); margin: -2px 0 6px; }
+  .note.bad { color: var(--accent); font-weight: 600; }
+  .files { margin: 6px 0; padding: 0; list-style: none; }
+  .files li { font-family: var(--mono); font-size: 12px; padding: 3px 0; }
+
+  .content { overflow: hidden; align-self: start; }
+  .tabs { display: flex; gap: 4px; padding: 10px 10px 0; border-bottom: 1px solid var(--border); background: var(--surface-2); overflow-x: auto; }
+  .tab { border: 0; background: transparent; padding: 9px 14px; border-radius: 10px 10px 0 0; color: var(--muted); font-weight: 600; font-size: 14px; white-space: nowrap; }
+  .tab[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: 0 -1px 0 var(--border) inset; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--border); }
+  .toolbar .hint { font-size: 13px; color: var(--muted); }
+  .pane { padding: 6px 26px 30px; max-height: calc(100vh - 130px); overflow: auto; }
+  @media (max-width: 1000px) { .pane { max-height: none; padding: 4px 16px 24px; } }
+  .raw { white-space: pre-wrap; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 16px 0; }
+
+  .md h1 { font-size: 24px; margin: 20px 0 10px; }
+  .md h2 { font-size: 19px; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accent-soft); }
+  .md h3 { font-size: 15px; margin: 18px 0 0; padding: 8px 14px; background: var(--surface-2); border: 1px solid var(--border); border-bottom: 0; border-radius: 10px 10px 0 0; }
+  .md h3 + .para { border: 1px solid var(--border); border-radius: 0 0 10px 10px; padding: 10px 14px; margin-top: 0; }
+  .md .para { margin: 10px 0; }
+  .md .line { margin: 2px 0; }
+  .md .lbl-jp { font-family: var(--font-jp); font-size: 18px; color: var(--jp); margin: 6px 0 2px; }
+  .md .lbl-kana { font-family: var(--font-jp); color: var(--muted); font-size: 14px; }
+  .md .lbl-tr { font-weight: 500; }
+  .md .lbl-grammar, .md .lbl-fun, .md .lbl-scene { color: var(--text); }
+  .md .lbl-fun { font-style: italic; }
+  .md strong { font-weight: 700; }
+  .md table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 10px 0; display: block; overflow-x: auto; }
+  .md th, .md td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; vertical-align: top; }
+  .md th { background: var(--surface-2); }
+  .md td, .md li { font-family: var(--font), var(--font-jp); }
+  .md code { font-family: var(--mono); font-size: .92em; background: var(--surface-2); padding: 1px 5px; border-radius: 5px; }
+  .md pre { background: var(--surface-2); padding: 12px; border-radius: 10px; overflow: auto; }
+  .md blockquote { margin: 10px 0; padding: 6px 14px; border-left: 3px solid var(--accent); color: var(--muted); }
+  .md ul, .md ol { padding-left: 22px; }
+
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%) translateY(20px); opacity: 0; background: var(--text); color: var(--bg); padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 9; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  footer.foot { max-width: 1680px; margin: 0 auto; padding: 0 24px 32px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="head-main">
+  <div class="eyebrow">
+    <span class="badge" id="h-level"></span>
+    <span class="chip" id="h-id"></span>
+    <span id="h-stats"></span>
+  </div>
+  <h1 class="title"><span class="jp" id="h-mau"></span> – <span id="h-nghia"></span></h1>
+  <ul class="usages" id="h-usages"></ul>
+  </div>
+  <button class="theme-btn" id="theme-btn" type="button" aria-label="Đổi giao diện sáng/tối"><span class="ico" id="theme-ico">🌙</span><span id="theme-txt">Giao diện tối</span></button>
+</header>
+
+<main class="grid">
+  <!-- ======================== CÁC BƯỚC ======================== -->
+  <section class="card steps" aria-labelledby="steps-title">
+    <h2 id="steps-title">Làm video trong 4 bước</h2>
+    <p class="sub">Tick "Xong" sau mỗi bước. Trang tự nhớ tiến độ trên trình duyệt này.</p>
+    <div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+
+    <div class="step" data-step="1">
+      <div class="step-head"><span class="num">1</span><h3>Tạo notebook</h3><label><input type="checkbox"> Xong</label></div>
+      <div class="step-body">
+        <div class="btns">
+          <a class="btn primary" href="https://notebooklm.google.com" target="_blank" rel="noopener">Mở NotebookLM ↗</a>
+          <button class="btn" data-copy="id">Copy tên notebook</button>
+        </div>
+        <p>Bấm <b>Create notebook</b>, rồi đổi tên notebook thành <code id="s1-id"></code>.</p>
+      </div>
+    </div>
+
+    <div class="step" data-step="2">
+      <div class="step-head"><span class="num">2</span><h3>Thêm đúng 2 nguồn</h3><label><input type="checkbox"> Xong</label></div>
+      <div class="step-body">
+        <p><b>Cách nhanh – kéo thả:</b> AI đã mở sẵn thư mục chứa file khi làm xong. Kéo 2 file sau vào khung <b>Add sources</b>:</p>
+        <ul class="files" id="s2-files"></ul>
+        <p>Đã lỡ đóng thư mục? Bấm <b>Copy đường dẫn</b>, trong NotebookLM chọn <b>Add sources → Upload</b>, dán vào ô địa chỉ của hộp chọn file, Enter, rồi chọn 2 file trên.</p>
+        <code class="path" id="s2-path"></code>
+        <p class="note" id="s2-note"></p>
+        <div class="btns">
+          <button class="btn primary" data-copy="folder">Copy đường dẫn thư mục</button>
+          <a class="btn" href="./" target="_blank" rel="noopener">Xem thư mục ↗</a>
+        </div>
+        <div class="alt">
+          <b>Cách dự phòng – dán chữ (không cần file):</b>
+          Chọn <b>Add sources → Copied text</b>, dán từng phần, mỗi phần là một nguồn:
+          <div class="btns">
+            <button class="btn" data-copy="kichban">Copy Kịch bản</button>
+            <button class="btn" data-copy="phongcach">Copy Phong cách</button>
+          </div>
+        </div>
+        <p class="warn">Notebook chỉ được có đúng 2 nguồn này, cả 2 đều được tích chọn.</p>
+      </div>
+    </div>
+
+    <div class="step" data-step="3">
+      <div class="step-head"><span class="num">3</span><h3>Tạo video</h3><label><input type="checkbox"> Xong</label></div>
+      <div class="step-body">
+        <p>Khung <b>Studio</b> → <b>Video Overview</b> → biểu tượng <b>bút chì (Customize)</b>, rồi chọn:</p>
+        <table class="kv" id="s3-settings"></table>
+        <div class="btns"><button class="btn primary" data-copy="tuychinh">Copy text tùy chỉnh</button></div>
+        <p>Dán vào ô <b>Custom topic</b> (mục "What should the video focus on?") → bấm <b>Generate</b>. Có thể đóng tab, NotebookLM vẫn tiếp tục tạo.</p>
+      </div>
+    </div>
+
+    <div class="step" data-step="4">
+      <div class="step-head"><span class="num">4</span><h3>Tải video về</h3><label><input type="checkbox"> Xong</label></div>
+      <div class="step-body">
+        <p>Video xong → menu <b>⋮</b> → <b>Download</b>. Đặt tên file:</p>
+        <div class="btns"><button class="btn" data-copy="mp4">Copy tên file video</button></div>
+        <div class="alt">
+          <b>Nếu video chưa ổn</b>
+          Giọng khô hoặc bỏ bớt ví dụ → bấm tạo lại (mỗi lần tạo cho kết quả khác). Vẫn quá dài → nhờ AI:
+          "giảm ví dụ của <span id="s4-id"></span> còn 6 câu mỗi cách dùng".
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== NỘI DUNG ======================== -->
+  <section class="card content" aria-label="Nội dung">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-tab="kichban" aria-selected="true">Kịch bản</button>
+      <button class="tab" role="tab" data-tab="phongcach" aria-selected="false">Phong cách</button>
+      <button class="tab" role="tab" data-tab="tuychinh" aria-selected="false">Text tùy chỉnh</button>
+    </div>
+    <div class="toolbar">
+      <span class="hint" id="tab-hint"></span>
+      <div class="btns" style="margin:0">
+        <button class="btn" id="btn-view">Xem markdown gốc</button>
+        <button class="btn primary" id="btn-copy-tab">Copy</button>
+      </div>
+    </div>
+    <div class="pane" id="pane" role="tabpanel"></div>
+  </section>
+</main>
+
+<footer class="foot" id="foot"></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="bunpou-data" type="application/json">{
+ "id": "N3_uchi-ni",
+ "mau": "〜うちに",
+ "nghia": "Trong lúc…, trước khi…",
+ "cap_do": "N3",
+ "cach_dung": [
+  "Tranh thủ làm trước khi trạng thái thay đổi",
+  "Đang làm một việc thì có thay đổi tự nhiên xảy ra"
+ ],
+ "so_vi_du": 8,
+ "so_vi_du_moi": 3,
+ "version": "1.6.0",
+ "built_at": "2026-10-29 07:03",
+ "series": {
+  "_ghi_chu": "Thiết lập cố định cho cả series video. Hiện trong bước 3 của trang HuongDan.html. Sửa xong thì các bài làm sau sẽ dùng giá trị mới.",
+  "ngon_ngu": "Tiếng Việt",
+  "dinh_dang": "Explainer",
+  "phong_cach_hinh_anh": ""
+ },
+ "files": {
+  "kichban": "KichBan_N3_uchi-ni.md",
+  "phongcach": "00_HuongDan_PhongCach.md",
+  "tuychinh": "TuyChinh_N3_uchi-ni.txt",
+  "ghichu": "GhiChu_BienTap.md"
+ },
+ "content": {
+  "kichban": "# 〜うちに – Trong lúc…, trước khi…\n\n## 1. Mở màn: tình huống\nTối thứ Sáu, Lan mua về hai cái bánh bao nóng hổi, đặt cạnh quyển sách ngữ pháp. Cô tự nhủ: \"Đọc một chương rồi ăn\". Trang một, trang hai… đến trang ba thì mắt díp lại.\nSáng hôm sau tỉnh dậy, má in hằn chữ của trang sách, còn bánh bao thì lạnh ngắt như viên đá. Ôi thôi xong!\nCác bạn thấy không, cảnh này có hai chuyện: lẽ ra phải ăn khi còn nóng, và đọc sách một hồi thì ngủ quên lúc nào không hay.\nTiếng Nhật gom cả hai chuyện vào một mẫu đấy. Vậy tiếng Nhật nói chuyện này thế nào? Mình vào luôn nhé!\n\n## 2. Giới thiệu mẫu ngữ pháp\nMẫu hôm nay là: 〜うちに.\nNghĩa chung: \"trong lúc…\", \"trước khi…\".\n\n## 3. Ý nghĩa\nうち vốn nghĩa là \"bên trong\". Còn うちに là \"ngay trong khoảng thời gian đang còn như thế này\". Hãy tưởng tượng bạn cầm một cây kem giữa trưa nắng.\n- Kem còn nguyên mà sắp tan → ăn lẹ đi, kẻo mất. Đây là cách dùng 1: tranh thủ làm trước khi trạng thái đổi hoặc hết.\n- Mải mê liếm kem một hồi, ngẩng lên thì đã hết ba cây lúc nào không hay. Đây là cách dùng 2: đang làm một việc thì có thay đổi tự nhiên xảy ra, mình không hề định trước.\n**Chìa khóa:** vế sau là việc mình muốn làm cho kịp thì là cách dùng 1; vế sau là thay đổi tự xảy ra ngoài ý muốn thì là cách dùng 2.\n\n## 4. Cấu trúc và cách chia\n| Kết hợp | Nghĩa | Ví dụ ngắn | Cách đọc |\n| --- | --- | --- | --- |\n| V る + うちに | trong lúc làm gì đó | 話すうちに – trong lúc nói chuyện | はなすうちに |\n| V ている + うちに | trong lúc đang làm | 読んでいるうちに – trong lúc đang đọc | よんでいるうちに |\n| V ない + うちに | trước khi chuyện đó kịp xảy ra | 忘れないうちに – trước khi quên | わすれないうちに |\n| Aい + うちに | khi còn ở trạng thái đó | 若いうちに – khi còn trẻ | わかいうちに |\n| Aな + な + うちに | khi còn ở trạng thái đó | 元気なうちに – khi còn khỏe | げんきなうちに |\n| N + の + うちに | trong lúc còn là N | 学生のうちに – khi còn là sinh viên | がくせいのうちに |\n\n## 5.1 Cách dùng 1: Tranh thủ làm trước khi trạng thái thay đổi\n**Dấu hiệu nhận biết:** vế trước là trạng thái đang còn nhưng sắp đổi hoặc sắp hết (trẻ, nóng, chưa tối…). Vế sau là việc người nói muốn làm, rủ làm hoặc đề nghị làm (〜たい、〜ましょう、〜てください). Sắc thái: \"tranh thủ đi, kẻo muộn\".\n\n### Ví dụ 1\n**Dẫn cảnh:** Lan ngắm tấm bản đồ thế giới dán trên tường, tay lăm lăm cuốn sổ tiết kiệm tiền làm thêm.\n**Câu Nhật:** 若いうちに、いろいろな国へ行きたい。\n**Cách đọc:** わかいうちに、いろいろなくにへいきたい。\n**Dịch:** Hiểu nôm na là: \"Khi còn trẻ, mình muốn đi nhiều nước.\"\n**Soi ngữ pháp:** 若い là Aい + うちに, nghĩa là \"khi còn trẻ\". Tuổi trẻ rồi sẽ qua, nên vế sau 行きたい là điều muốn làm cho kịp.\n**Chốt vui:** Tiền thì kiếm lại được, còn sức đi du lịch thì phải tranh thủ.\n\n### Ví dụ 2\n**Dẫn cảnh:** Chiều muộn trên đồi, mặt trời tụt dần sau núi. Tanaka vẫn nằm dài trên cỏ, còn Lan thì nhìn đồng hồ, toát mồ hôi.\n**Câu Nhật:** 暗くならないうちに帰りましょう。\n**Cách đọc:** くらくならないうちにかえりましょう。\n**Dịch:** Có thể dịch là: \"Chúng ta về trước khi trời tối nhé.\"\n**Soi ngữ pháp:** 暗くならない là \"chưa kịp tối\", thêm うちに thành \"trước khi trời tối\". Vế sau 帰りましょう là lời rủ làm ngay.\n**Chốt vui:** Núi buổi tối không đèn, không sóng, chỉ có tiếng Tanaka kêu đói.\n\n### Ví dụ 3\n**Dẫn cảnh:** Mẹ Tanaka vừa bưng ra đĩa tôm chiên nóng giòn. Lan thì còn mải chụp đĩa tôm từ ba góc khác nhau để khoe.\n**Câu Nhật:** 温かいうちに食べてください。\n**Cách đọc:** あたたかいうちにたべてください。\n**Dịch:** Câu này có nghĩa là: \"Hãy ăn khi còn nóng nhé.\"\n**Soi ngữ pháp:** 温かい là Aい + うちに, nghĩa là \"khi còn nóng\". Nóng thì sẽ nguội, nên vế sau 食べてください là lời giục ăn cho kịp.\n**Chốt vui:** Tôm chiên nguội rồi thì chỉ còn là một bài học về sự hối tiếc.\n\n### Ví dụ 4 [MỚI]\n**Dẫn cảnh:** Tanaka, hiếm khi nghiêm túc, ngắm bà nội đang tưới hoa ngoài vườn rồi lẩm nhẩm tính tiền làm thêm.\n**Câu Nhật:** おばあちゃんが元気なうちに、温泉に連れていってあげたい。\n**Cách đọc:** おばあちゃんがげんきなうちに、おんせんにつれていってあげたい。\n**Dịch:** Nói kiểu Việt mình là: \"Mình muốn đưa bà đi suối nước nóng khi bà còn khỏe.\"\n**Soi ngữ pháp:** 元気な là Aな, nên phải thêm な rồi mới tới うちに. Vế sau 連れていってあげたい là điều muốn làm cho kịp.\n**Chốt vui:** Khoảnh khắc hiếm có: Tanaka lên kế hoạch mà không cần ai nhắc.\n\n## 5.2 Cách dùng 2: Đang làm một việc thì có thay đổi tự nhiên xảy ra\n**Dấu hiệu nhận biết:** vế trước thường là V ている, tức một việc kéo dài một lúc (読んでいる、話している…). Vế sau là một thay đổi tự xảy ra, ngoài ý muốn (〜てしまった、〜になった…), thường chia ở quá khứ.\n\n### Ví dụ 1\n**Dẫn cảnh:** Đêm trước kỳ thi, Tanaka mở sách ra và tự nhủ: chỉ đọc năm phút thôi. Sáng hôm sau, đèn bàn vẫn còn sáng.\n**Câu Nhật:** 本を読んでいるうちに、寝てしまった。\n**Cách đọc:** ほんをよんでいるうちに、ねてしまった。\n**Dịch:** Hiểu nôm na là: \"Trong lúc đang đọc sách thì mình ngủ quên mất.\"\n**Soi ngữ pháp:** 読んでいる là V ている + うちに, nghĩa là \"trong lúc đang đọc\". 寝てしまった là chuyện tự xảy ra, không ai định trước.\n**Chốt vui:** Sách là thuốc ngủ tốt nhất mà không cần đơn của bác sĩ.\n\n### Ví dụ 2\n**Dẫn cảnh:** Tanaka đến buổi họp mặt chỉ để mượn vở của cô bạn cùng lớp. Ai ngờ hai người nói chuyện suốt cả tiếng đồng hồ.\n**Câu Nhật:** 話しているうちに、彼女のことが好きになった。\n**Cách đọc:** はなしているうちに、かのじょのことがすきになった。\n**Dịch:** Có thể dịch là: \"Nói chuyện một hồi thì mình đã thích cô ấy.\"\n**Soi ngữ pháp:** 話している là V ている + うちに. 好きになった là \"trở nên thích\", một thay đổi tự nhiên mà không ai chủ ý.\n**Chốt vui:** Định mượn vở, cuối cùng mượn luôn cả số điện thoại.\n\n### Ví dụ 3 [MỚI]\n**Dẫn cảnh:** Ngày đầu ở Nhật, Lan gắp đậu phộng bằng đũa, hạt nào hạt nấy bay như đạn. Cứ thế mỗi ngày, mỗi ngày…\n**Câu Nhật:** 毎日練習しているうちに、お箸が上手に使えるようになった。\n**Cách đọc:** まいにちれんしゅうしているうちに、おはしがじょうずにつかえるようになった。\n**Dịch:** Nói kiểu Việt mình là: \"Cứ luyện tập mỗi ngày một thời gian, mình đã dùng đũa giỏi lúc nào không hay.\"\n**Soi ngữ pháp:** 練習している là V ている + うちに. 使えるようになった là \"đã trở nên dùng được\", thay đổi diễn ra dần dần, không phải quyết định một lúc.\n**Chốt vui:** Hy sinh ba ký đậu phộng, đổi lại kỹ năng dùng đũa. Giá hời.\n\n### Ví dụ 4 [MỚI]\n**Dẫn cảnh:** Lan nghe lời \"đường tắt\" của điện thoại, rẽ vào một con hẻm, rồi lại một con hẻm nữa.\n**Câu Nhật:** 歩いているうちに、道に迷ってしまった。\n**Cách đọc:** あるいているうちに、みちにまよってしまった。\n**Dịch:** Câu này có nghĩa là: \"Đi bộ một hồi thì mình bị lạc đường mất.\"\n**Soi ngữ pháp:** 歩いている là V ている + うちに. 迷ってしまった là chuyện xảy ra ngoài ý muốn, chẳng ai định lạc đường cả.\n**Chốt vui:** Điện thoại báo: \"Bạn đã đến nơi\". Nơi nào thì không rõ.\n\n## 6. Bẫy dễ nhầm\n- **〜うちに và 〜間に（あいだに）:** hai mẫu này gần nghĩa nên rất hay bị nhầm. 子どもが寝ている間に、掃除をした。（こどもがねているあいだに、そうじをした。）nghĩa là \"Trong lúc con ngủ, mình đã dọn dẹp\". Cách phân biệt: 間に chỉ nhìn vào khoảng thời gian đó. うちに còn mang ý \"trạng thái này sắp đổi, nên tranh thủ\". Vì vậy câu kiểu \"kẻo muộn\" như 若いうちに、温かいうちに thường dùng うちに.\n- **うち nghĩa là \"nhà\":** うち còn là cách nói thân mật của \"nhà mình\". 明日、うちに来ない？（あした、うちにこない？）nghĩa là \"Mai qua nhà mình chơi không?\". Cách phân biệt: nhìn vế trước. Nếu là trạng thái còn đang có (若い、温かい、学生の…) thì là mẫu hôm nay. Nếu là \"ai đó の\" hoặc đứng riêng, rồi theo sau là 来る、帰る thì là \"nhà\".\n\n## 7. Tổng kết, mẹo nhớ và đố nhanh\n**Tóm lại:**\n- Tranh thủ làm trước khi trạng thái đổi hoặc hết → 〜うちに + 〜たい、〜ましょう、〜てください\n- Đang làm một việc thì có thay đổi tự xảy ra → V ている + うちに + 〜てしまった、〜になった\n\n**Mẹo nhớ:** \"Kem sắp tan thì ăn lẹ, mải đọc sách thì ngủ say.\"\n\n**Đố nhanh:**\n1. 元気（　）うちに、旅行に行きたい。（げんき（　）うちに、りょこうにいきたい。）→ Đáp án: な, vì 元気 là tính từ đuôi な, nối với うちに thì phải thêm な.\n2. 学生（　）うちに、たくさん友だちを作りたい。（がくせい（　）うちに、たくさんともだちをつくりたい。）→ Đáp án: の, vì 学生 là danh từ, nối với うちに thì dùng の.\n3. 漫画を読んでいる（　）、朝になってしまった。（まんがをよんでいる（　）、あさになってしまった。）→ Đáp án: うちに, vì đọc một hồi thì trời sáng lúc nào không hay, đó là thay đổi tự nhiên.\n\n**Kết:** Quay lại buổi tối của Lan. Giờ các bạn kể được cả hai nửa câu chuyện rồi:\n肉まんが温かいうちに食べたかった。（にくまんがあたたかいうちにたべたかった。）– \"Mình đã muốn ăn bánh bao khi còn nóng.\"\n勉強しているうちに、寝てしまった。（べんきょうしているうちに、ねてしまった。）– \"Học một hồi thì mình ngủ quên mất.\"\nCùng một mẫu, một bên là tranh thủ, một bên là lỡ mất. Hẹn gặp lại các bạn ở bài sau!\n",
+  "phongcach": "# HƯỚNG DẪN PHONG CÁCH GIẢNG – KÊNH NGỮ PHÁP TIẾNG NHẬT\n\nTài liệu này quy định CÁCH GIẢNG, không phải nội dung bài. Nội dung bài nằm trong Kịch bản đi kèm.\n\n## Người xem\n\nNgười Việt học tiếng Nhật, bận rộn, muốn nghe một lần là hiểu và nhớ. Cấp độ cụ thể ghi trong phần tùy chỉnh của từng video.\n\n## Giọng giảng\n\n- Thân mật như anh/chị khóa trên vui tính kể chuyện cho đàn em. Xưng \"mình\", gọi người xem là \"các bạn\".\n- Hài hước, dí dỏm, có nhấn nhá lên xuống, có cảm thán tự nhiên (\"ôi thôi xong\", \"chuẩn luôn\", \"nghe quen không?\").\n- Hài để giúp nhớ, không lấn át kiến thức. Không chế giễu người học.\n- Câu ngắn, từ đơn giản. Thuật ngữ ngữ pháp phải được nói lại bằng lời thường ngay sau đó.\n\n## Trình tự bắt buộc\n\n1. Mở màn bằng tình huống → 2. Giới thiệu mẫu → 3. Ý nghĩa → 4. Cấu trúc, cách chia → 5. Từng cách dùng, mỗi cách dùng nhiều ví dụ → 6. Bẫy dễ nhầm → 7. Tổng kết, mẹo nhớ, đố nhanh, kết bằng cách quay lại tình huống mở màn.\n\nKhông đảo thứ tự, không bỏ phần, không bỏ ví dụ nào có trong Kịch bản.\n\n## Cách trình bày mỗi ví dụ\n\nKịch bản ghi mỗi ví dụ bằng các nhãn in đậm: Dẫn cảnh, Câu Nhật, Cách đọc, Dịch, Soi ngữ pháp, Chốt vui.\nCác nhãn này chỉ để đánh dấu cấu trúc – KHÔNG đọc tên nhãn thành tiếng.\n\n1. Kể phần Dẫn cảnh như kể chuyện.\n2. Đọc chậm, rõ câu tiếng Nhật nguyên văn, phát âm theo đúng dòng Cách đọc (kana). Ngắt nghỉ tự nhiên như người Nhật.\n3. Đọc bản dịch, mở đầu bằng câu dẫn có sẵn (\"câu này có nghĩa là…\", \"hiểu nôm na là…\", \"có thể dịch là…\", \"nói kiểu Việt mình là…\").\n4. Chỉ rõ chỗ mẫu ngữ pháp xuất hiện và vì sao dùng nó.\n5. Chốt bằng câu vui có sẵn.\n\n## Quy tắc về tiếng Nhật\n\n- Đọc đúng từng chữ câu tiếng Nhật trong Kịch bản. Không tự sửa, không tự thêm câu tiếng Nhật mới.\n- Tên mẫu ngữ pháp luôn nói bằng tiếng Nhật.\n\n## Hình ảnh trên video\n\n- Mỗi ví dụ một khung hình: câu tiếng Nhật lớn ở giữa, phần mẫu ngữ pháp được tô màu nổi bật, bản dịch tiếng Việt nhỏ bên dưới.\n- Hình minh họa bám sát đúng tình huống của từng ví dụ trong Kịch bản, đủ chi tiết để người xem hình dung ngay cảnh đó.\n- Khung cấu trúc và khung tổng kết dùng bảng hoặc sơ đồ mũi tên, ít chữ.\n\n## Điều cấm\n\n- Không mở đầu kiểu \"Hôm nay chúng ta sẽ tìm hiểu về tài liệu…\". Vào thẳng tình huống.\n- Không nhắc đến \"nguồn\", \"tài liệu\", \"kịch bản\", \"hướng dẫn phong cách\".\n- Không thêm kiến thức ngữ pháp ngoài Kịch bản.\n",
+  "tuychinh": "Bài giảng về mẫu ngữ pháp 〜うちに (trong lúc…, trước khi…), dành cho người học trình độ N3. Các cách dùng: tranh thủ làm trước khi trạng thái thay đổi (làm việc gì đó khi trạng thái còn đang tiếp diễn), đang làm một việc thì có thay đổi tự nhiên xảy ra (không có chủ ý).\n\nTrình bày ĐÚNG theo file Kịch bản, đi lần lượt từ mục 1 đến mục 7, không bỏ mục nào và không bỏ ví dụ nào. Giọng giảng và cách đọc ví dụ theo đúng file Hướng dẫn phong cách: thân mật, hài hước, dí dỏm, xưng \"mình\", gọi người xem là \"các bạn\".\n\nVới mỗi ví dụ: dẫn cảnh → đọc chậm, rõ câu tiếng Nhật nguyên văn (đọc theo dòng Cách đọc) → dịch (\"câu này có nghĩa là…\") → chỉ ra chỗ dùng mẫu ngữ pháp → chốt vui. Trên màn hình: câu tiếng Nhật lớn ở giữa, tô màu phần ngữ pháp, bản dịch nhỏ bên dưới.\n\nVào thẳng tình huống mở màn. Không nhắc đến \"tài liệu\", \"nguồn\" hay \"kịch bản\". Không đọc các nhãn in đậm.\n"
+ }
+}</script>
+<script>
+(function () {
+  "use strict";
+  var D = JSON.parse(document.getElementById("bunpou-data").textContent);
+  if (!D) { document.body.innerHTML = "<p style='padding:24px'>Chưa có dữ liệu. Chạy: python tools/build_html.py output/&lt;ID&gt;</p>"; return; }
+  var $ = function (id) { return document.getElementById(id); };
+
+  // ---------- đường dẫn thư mục (tính lúc mở trang, nên vẫn đúng khi chuyển máy)
+  // Không lưu đường dẫn cố định nào trong trang: mọi đường dẫn được tính từ vị trí hiện tại của chính file này,
+  // nên copy cả dự án sang máy khác / ổ đĩa khác / macOS vẫn đúng.
+  var IS_FILE = location.protocol === "file:";
+  var REL = (function () {               // đường dẫn tương đối trong dự án (luôn đúng ở mọi máy)
+    var m = decodeURIComponent(location.pathname).match(/\/((?:output|core\/examples)\/[^\/]+)\/[^\/]*$/);
+    return m ? m[1] : "output/" + D.id;
+  })();
+  function folderPath() {
+    if (!IS_FILE) return REL;
+    var p = decodeURIComponent(location.pathname);
+    p = p.substring(0, p.lastIndexOf("/"));
+    if (/^\/[A-Za-z]:/.test(p)) p = p.slice(1).replace(/\//g, "\\");          // Windows: đổi dạng /X:/… thành X:\…
+    if (location.host) p = "\\\\" + location.host + p.replace(/\//g, "\\");  // ổ mạng (UNC)
+    return p;
+  }
+  function folderName() {
+    var p = decodeURIComponent(location.pathname).replace(/\/[^\/]*$/, "");
+    return p.substring(p.lastIndexOf("/") + 1);
+  }
+
+  // ---------- copy
+  var COPY = {
+    id: function () { return D.id; },
+    folder: folderPath,
+    kichban: function () { return D.content.kichban; },
+    phongcach: function () { return D.content.phongcach; },
+    tuychinh: function () { return D.content.tuychinh; },
+    mp4: function () { return D.id + ".mp4"; }
+  };
+  var LABEL = { id: "tên notebook", folder: "đường dẫn thư mục", kichban: "Kịch bản", phongcach: "Phong cách", tuychinh: "text tùy chỉnh", mp4: "tên file video" };
+  var toastTimer;
+  function toast(msg) {
+    var t = $("toast"); t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.classList.remove("show"); }, 1800);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta); return ok;
+  }
+  function copy(key) {
+    var text = COPY[key](), label = LABEL[key];
+    var done = function (ok) { toast(ok ? "✓ Đã copy " + label : "Không copy được – hãy bôi đen và Ctrl+C"); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(fallbackCopy(text)); });
+    } else { done(fallbackCopy(text)); }
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-copy]");
+    if (b) copy(b.getAttribute("data-copy"));
+  });
+
+  // ---------- markdown → HTML (đủ cho Kịch bản / Phong cách)
+  function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function inline(s) {
+    s = esc(s);
+    s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+    s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    return s;
+  }
+  var LBL = { "Câu Nhật": "jp", "Cách đọc": "kana", "Dịch": "tr", "Dẫn cảnh": "scene", "Soi ngữ pháp": "grammar", "Chốt vui": "fun" };
+  function lineHtml(x) {
+    var m = x.match(/^\*\*(.+?):\*\*/), cls = "line";
+    if (m && LBL[m[1]]) cls += " lbl lbl-" + LBL[m[1]];
+    return '<div class="' + cls + '">' + inline(x) + "</div>";
+  }
+  function cells(r) { return r.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map(function (c) { return c.trim(); }); }
+  function table(rows) {
+    var head = cells(rows[0]);
+    var body = rows.slice(1).filter(function (r) { return !/^\|\s*:?-{2,}/.test(r); });
+    return "<table><thead><tr>" + head.map(function (c) { return "<th>" + inline(c) + "</th>"; }).join("") +
+      "</tr></thead><tbody>" + body.map(function (r) {
+        return "<tr>" + cells(r).map(function (c) { return "<td>" + inline(c) + "</td>"; }).join("") + "</tr>";
+      }).join("") + "</tbody></table>";
+  }
+  var BLOCK_START = /^(#{1,4}\s|\||>|```|\s*[-*]\s+|\s*\d+\.\s+)/;
+  function md(src) {
+    var lines = src.replace(/\r\n?/g, "\n").split("\n"), out = [], i = 0, m, buf;
+    while (i < lines.length) {
+      var l = lines[i];
+      if (/^\s*$/.test(l)) { i++; continue; }
+      if (/^```/.test(l)) {
+        buf = []; i++;
+        while (i < lines.length && !/^```/.test(lines[i])) { buf.push(lines[i]); i++; }
+        i++; out.push("<pre><code>" + esc(buf.join("\n")) + "</code></pre>"); continue;
+      }
+      if ((m = l.match(/^(#{1,4})\s+(.*)$/))) { out.push("<h" + m[1].length + ">" + inline(m[2]) + "</h" + m[1].length + ">"); i++; continue; }
+      if (/^\|/.test(l)) { buf = []; while (i < lines.length && /^\|/.test(lines[i])) { buf.push(lines[i]); i++; } out.push(table(buf)); continue; }
+      if (/^>/.test(l)) { buf = []; while (i < lines.length && /^>/.test(lines[i])) { buf.push(lines[i].replace(/^>\s?/, "")); i++; } out.push("<blockquote>" + md(buf.join("\n")) + "</blockquote>"); continue; }
+      if (/^\s*[-*]\s+/.test(l) || /^\s*\d+\.\s+/.test(l)) {
+        var ordered = /^\s*\d+\.\s+/.test(l), re = ordered ? /^\s*\d+\.\s+/ : /^\s*[-*]\s+/;
+        buf = []; while (i < lines.length && re.test(lines[i])) { buf.push(lines[i].replace(re, "")); i++; }
+        var tag = ordered ? "ol" : "ul";
+        out.push("<" + tag + ">" + buf.map(function (x) { return "<li>" + inline(x) + "</li>"; }).join("") + "</" + tag + ">"); continue;
+      }
+      buf = [];
+      while (i < lines.length && !/^\s*$/.test(lines[i]) && (buf.length === 0 || !BLOCK_START.test(lines[i]))) { buf.push(lines[i]); i++; }
+      out.push('<div class="para">' + buf.map(lineHtml).join("") + "</div>");
+    }
+    return out.join("\n");
+  }
+
+  // ---------- header + các bước
+  var docTitle = D.mau + " – " + D.nghia;
+  $("h-level").textContent = D.cap_do;
+  $("h-id").textContent = D.id;
+  $("h-mau").textContent = D.mau;
+  $("h-nghia").textContent = D.nghia;
+  $("h-stats").textContent = D.cach_dung.length + " cách dùng · " + D.so_vi_du + " ví dụ" +
+    (D.so_vi_du_moi ? " (" + D.so_vi_du_moi + " mới)" : "") + " · quy tắc v" + D.version;
+  $("h-usages").innerHTML = D.cach_dung.map(function (c, i) {
+    var parts = c.split(" – ");
+    return "<li>" + (i + 1) + ". " + (parts.length > 1 ? "<b>" + esc(parts[0]) + "</b> – " + esc(parts.slice(1).join(" – ")) : esc(c)) + "</li>";
+  }).join("");
+  $("s1-id").textContent = D.id;
+  $("s4-id").textContent = D.id;
+  $("s2-path").textContent = folderPath();
+  (function () {
+    var note = $("s2-note");
+    if (!IS_FILE) {
+      note.textContent = "Đang xem qua " + location.protocol.replace(":", "") + " – mở trực tiếp file HuongDan.html trên máy để có đường dẫn đầy đủ.";
+    } else if (folderName() !== D.id) {
+      note.className = "note bad";
+      note.textContent = "Trang đang nằm ngoài thư mục bài " + D.id + " (thư mục hiện tại: " + folderName() + "). Hãy để HuongDan.html cùng chỗ với các file của bài thì link và đường dẫn mới đúng.";
+    } else {
+      note.textContent = "Đường dẫn tự nhận theo vị trí hiện tại của trang – chuyển máy, đổi ổ đĩa vẫn đúng. Trong dự án: " + REL + "/";
+    }
+  })();
+  $("s2-files").innerHTML = [D.files.kichban, D.files.phongcach].map(function (f) {
+    return '<li>📄 <a href="./' + encodeURI(f) + '" target="_blank" rel="noopener">' + esc(f) + "</a></li>";
+  }).join("");
+  var S = D.series || {};
+  $("s3-settings").innerHTML = [
+    ["Choose language", S.ngon_ngu || "Tiếng Việt"],
+    ["Định dạng", S.dinh_dang || "Explainer"],
+    ["Choose visual style", S.phong_cach_hinh_anh || '<span class="warn">Chưa chọn – chọn 1 kiểu rồi ghi vào series.json để cả series giống nhau</span>'],
+    ["Sources", "Cả 2 nguồn"]
+  ].map(function (r) { return "<tr><td>" + r[0] + "</td><td><b>" + r[1] + "</b></td></tr>"; }).join("");
+  $("foot").innerHTML = "Thư mục: <code>" + esc(folderPath()) + "</code> · Tạo lúc " + esc(D.built_at) +
+    " · Nhật ký AI: <a href=\"./" + encodeURI(D.files.ghichu) + "\" target=\"_blank\" rel=\"noopener\">" + esc(D.files.ghichu) + "</a>";
+
+  // ---------- tiến độ (lưu theo ID, bỏ qua nếu trình duyệt chặn lưu)
+  var KEY = "bunpou:" + D.id + ":steps", state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { state = {}; }
+  var steps = Array.prototype.slice.call(document.querySelectorAll(".step"));
+  function paint() {
+    var n = 0;
+    steps.forEach(function (s) {
+      var on = !!state[s.getAttribute("data-step")];
+      s.classList.toggle("done", on); s.querySelector("input").checked = on; if (on) n++;
+    });
+    $("progress-bar").style.width = (n / steps.length * 100) + "%";
+  }
+  steps.forEach(function (s) {
+    s.querySelector("input").addEventListener("change", function (e) {
+      state[s.getAttribute("data-step")] = e.target.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (err) {}
+      paint();
+    });
+  });
+  paint();
+
+  // ---------- nút sáng/tối (nhớ lựa chọn; mặc định theo hệ điều hành)
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  function themeNow() {
+    var a = document.documentElement.getAttribute("data-theme");
+    return a || (mq && mq.matches ? "dark" : "light");
+  }
+  function paintTheme() {
+    var dark = themeNow() === "dark";
+    $("theme-ico").textContent = dark ? "☀️" : "🌙";
+    $("theme-txt").textContent = dark ? "Giao diện sáng" : "Giao diện tối";
+    $("theme-btn").setAttribute("aria-pressed", String(dark));
+  }
+  $("theme-btn").addEventListener("click", function () {
+    var next = themeNow() === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("bunpou:theme", next); } catch (e) {}
+    paintTheme();
+  });
+  if (mq && mq.addEventListener) mq.addEventListener("change", paintTheme);
+  paintTheme();
+
+  // ---------- tab nội dung
+  var TABS = {
+    kichban: { file: D.files.kichban, hint: "Nguồn 1 – tải lên NotebookLM", mdview: true },
+    phongcach: { file: D.files.phongcach, hint: "Nguồn 2 – tải lên NotebookLM", mdview: true },
+    tuychinh: { file: D.files.tuychinh, hint: "Dán vào ô Custom topic", mdview: false }
+  };
+  var current = "kichban", rawMode = false;
+  function render() {
+    var t = TABS[current], text = D.content[current];
+    $("tab-hint").textContent = t.hint + " · " + t.file;
+    $("btn-copy-tab").textContent = "Copy " + (current === "tuychinh" ? "text tùy chỉnh" : "markdown");
+    $("btn-view").style.display = t.mdview ? "" : "none";
+    $("btn-view").textContent = rawMode ? "Xem trước" : "Xem markdown gốc";
+    $("pane").innerHTML = (t.mdview && !rawMode) ? '<div class="md">' + md(text) + "</div>" : '<pre class="raw">' + esc(text) + "</pre>";
+    $("pane").scrollTop = 0;
+    document.querySelectorAll(".tab").forEach(function (b) { b.setAttribute("aria-selected", String(b.getAttribute("data-tab") === current)); });
+  }
+  document.querySelectorAll(".tab").forEach(function (b) {
+    b.addEventListener("click", function () { current = b.getAttribute("data-tab"); rawMode = false; render(); });
+  });
+  $("btn-view").addEventListener("click", function () { rawMode = !rawMode; render(); });
+  $("btn-copy-tab").addEventListener("click", function () { copy(current); });
+  render();
+  document.title = D.id + " – Hướng dẫn làm video";
+})();
+</script>
+</body>
+</html>

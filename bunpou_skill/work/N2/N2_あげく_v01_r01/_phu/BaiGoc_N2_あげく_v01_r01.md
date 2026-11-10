@@ -1,0 +1,82 @@
+Cấp độ: N2
+
+# ～あげく
+
+> **Sau Một Thời Gian Dài Thì…/ Sau Khi Đã…Thì…/ Cuối Cùng Thì…/ Sau… Rốt Cuộc Là**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể た + あげく（に）**  
+> **Danh từ + あげく（に）**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+① Mẫu câu diễn tả tình trạng A cứ tiếp diễn trong 1 thời gian dài rồi dẫn đến kết quả B. B thường là không tốt (rốt cục là/ kết cục là)
+
+② Thường dùng trong trường hợp diễn tả kết quả đáng tiếc, không mong muốn.
+
+→ Có Nghĩa là : Sau một thời gian dài thì…/Sau khi đã…thì…/Cuối cùng thì…
+
+---
+
+## Ví dụ
+
+##### 1. 迷ったあげく、彼の誘いを断ってしまった。
+
+###### → Sau một thời gian phân vân thì tôi đã từ chối lời mời của anh ấy.
+
+##### 2. 散々考えたあげく、その計画を実行に移した。
+
+###### → Sau một thời gian đắn đo suy nghĩ, chúng tôi cũng đã đưa kế hoạch đó vào thực hiện.
+
+##### 3. 両親に相談したあげくに、彼と離婚することにした。
+
+###### → Sau khi đã tâm sự và nói chuyện với ba mẹ xong, cuối cùng tôi đã quyết định sẽ ly hôn với anh ta.
+
+##### 4. さんざん文句を言ったあげくに、出て行ったんです。
+
+###### → Sau khi càu nhàu một hồi xong, anh ta đã bỏ đi.
+
+##### 5. 大学を受験するかどうか、いろいろ考えたあげく、今年は受けないことに決めた。
+
+###### → Sau một thời gian đắn đo không biết có nên thi đại học không thì năm nay tôi đã quyết định là sẽ không dự thi.
+
+##### 6. さんざん道に迷ったあげく、結局、駅前に戻って交番で道を聞かなければならなかった。
+
+###### → Sau một hồi lạc đường, kết cục chúng tôi đã phải quay lại trước nhà ga và hỏi đường ở đồn cảnh sát.
+
+##### 7. この問題については、長時間にわたる議論のあげく、とうとう結論は出なかった。
+
+###### → Về vấn đề này thì sau một hồi tranh luận kéo dài, cuối cùng vẫn không đưa ra được kết luận.
+
+##### 8. 何日間も協議を続けたあげくのはての結論として、今回は我々の会としては代表を送らないことにした。
+
+###### → Kết luận cuối cùng sau khi đã liên tục thảo luận suốt mấy ngày là hội chúng tôi sẽ không cử đại diện tham dự lần này.
+
+##### 9. いろいろ悩んだあげく、大学院に進むことにしました。
+
+###### → Sau thời gian dài băn khoăn thì tôi đã quyết định học cao học.
+
+##### 10. 2時間も待たされたあげく、結局、試合は延期になった。
+
+###### → Bị bắt đợi suốt 2 tiếng đồng hồ nhưng kết cục thì trận đấu lại bị hoãn.
+
+##### 11. 彼は困ったあげく、会社の上司からもお金を借りたそうだよ。
+
+###### → Anh ấy liên tục gặp khó khăn nên nghe nói còn mượn cả tiền của sếp ở công ty.
+
+##### 12. 答えに困ったあげく、つまらないこと を言ってしまった。
+
+###### → Không biết trả lời thế nào rốt cục là lại nói ra điều ngớ ngẩn.
+
+##### 13. 彼は、遅刻を くり返したあげく、店長に謝らなかったので、クビ になった。
+
+###### → Liên tiếp đi muộn không xin lỗi cửa hàng trưởng, anh ta đã bị sa thải.
+
+##### 14. 弟は、勉強しないで怠け続けたあげくに、就職にも失敗してずっと バイト生活を して いる。
+
+###### → Em trai tôi không chịu học hành liên tục lười biếng, kết cục là không xin được việc phải làm thêm suốt.

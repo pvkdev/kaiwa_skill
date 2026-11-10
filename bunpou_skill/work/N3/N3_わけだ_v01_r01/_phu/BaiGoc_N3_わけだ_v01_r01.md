@@ -1,0 +1,287 @@
+Cấp độ: N3
+
+# ～ わけだ
+
+**Thảo Nào, Hèn Chi…/ Thì Ra Là Thế…/ Thì Ra Đó Là Lý Do…/ Nói Cách Khác Thì…**
+
+---
+
+## Cấu trúc
+
+> **Động từ thể thường ＋ わけだ。**  
+>
+> **N な／である ＋ わけだ。**  
+>
+> **Tính từ đuôi na + な + わけだ**  
+>
+> **Tính từ đuôi い + わけだ**  
+>
+> **Vている／ていた／られる／させる + わけだ**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Diễn tả nguyên nhân, hay lý do của việc gì/ sự kiện gì đó đã được sáng tỏ (đã hiểu ra vấn đề). Tương đương với 「なるほど、それで…」/ 「～のは当然だ」Mang ý nghĩa “Thảo nào, hèn chi, bảo sao”
+
+②　Diễn tả nguyên nhân, lí do của một vật, sự việc
+
+③　Được sử dụng để khẳng định, nhấn mạnh rằng chuyện mình trình bày là sự thật có căn cứ logic, hoặc trình bày suy nghĩ của mình để thuyết phúc người nghe
+
+④　Diễn tả kết quả xảy ra tự nhiên, tất yếu của sự việc, sự vật. Thường được sử dụng với các từ 「ので」、「だから」、「から」…
+
+⑤　Diễn tả một kết luận tất yếu rút ra từ lời thoại của người trên.
+
+⑥　Diễn tả ý nghĩa có thể thay thế một sự vật, hiện tượng này bằng sự vật, hiện tượng khác. Mang ý nghĩa “nói cách khác là”, “hay còn được nói là”. Thường sử dụng chung với 「つまり」、「要するに」
+
+→　Có Nghĩa là : **Thảo nào…/ Thì ra là thế…/ Thì ra đó là lý do…/ Nói cách khác thì…**
+
+---
+
+**Cách dùng 1: Diễn tả nguyên nhân, hay lý do của việc gì/ sự kiện gì đó đã được sáng tỏ (đã hiểu ra vấn đề)**
+
+- Mang ý nghĩa “Thảo nào, hèn chi, bảo sao”
+
+##### Ví dụ: 
+
+##### 1. この エアコン、20年前のだ。こわれるわけだ。
+
+###### →　Cái điều hòa này, từ 20 năm trước rồi. Thảo nào mà bị hỏng.
+
+##### 2. 「山田さん、大学に落ちたらしいよ」/ 「そうか。それで元気がないわけだ」
+
+###### →　”Yamada trượt đại học rồi đấy.”/ “Thảo nào, thì ra là thế nên cậu ấy trông không được khỏe.”
+
+##### 3. 暑いわけだ。気温が 36度もある。
+
+###### →　Thảo nào mà nóng thế. Nhiệt độ lên đến 36 độ.
+
+##### 4. あんなに食べたら太るわけだ。
+
+###### →　Ăn nhiều như thế thì béo là phải/ thảo nào chả béo.
+
+##### 5. 彼は日本に 10年住んでいるから、日本語が上手なわけだ。
+
+###### →　Anh ấy sống ở Nhật 10 năm rồi, thảo nào mà tiếng Nhật giỏi thế.
+
+##### 6. こんなところで工事を していたのか。渋滞するわけだ。
+
+###### →　Chỗ như thế này mà làm công trình à? Thảo nào bị tắc nghẽn là phải.
+
+##### 7. 暗いわけだ。蛍光灯が一本切れている。
+
+###### →　Thảo nào tối ghê. Một bóng đèn huỳnh quang đã bị đứt bóng.
+
+##### 8. あ、雪が降ってきた。道理で寒いわけだ。
+
+###### →　A, tuyết rơi rồi. Thảo nào mà trời lạnh ghê.
+
+##### 9. ジョンさんは、お母さんが日本人ですから、日本語が上手なわけです。
+
+###### →　Anh John vì có mẹ là người Nhật nên tiếng Nhật giỏi là đúng.
+
+##### 10. 検眼したら、ずいぶん近視の度が進んでいた。どうりで、このごろ遠くのものがよく見えないわけだ。
+
+###### →　Khi kiểm tra mắt thì thấy múc độ cận càng nghiêm trọng. Thảo nào mà gần đây tôi không nhìn rõ được những vật ở xa.
+
+##### 11. A:彼女は ダイエット を しているらしいですよ。
+
+##### B: だから最近やせたと見えるわけだ。
+
+###### →　A:Nghe nói cô ấy đang giảm cân rồi đấy.
+
+###### B:Hèn gì dạo này trông gầy thế.
+
+##### 12. A: あの人は日本人ですよ。でも、外見は ベトナム人のようですね。
+
+##### B: それで日本語が上手なわけですね。
+
+###### →　A:Người này là người Nhật đấy. Nhưng ngoại hình lại nhìn giống người Việt Nam.
+
+###### B:Bảo sao tiếng Nhật lại giỏi vậy.
+
+##### 13. 隣の人は失業しましたよ。なるほど最近家にいたばかりなわけですね。
+
+###### →　Hàng xóm nhà mình thất nghiệp rồi đấy. Bảo sao dạo này anh ta ở nhà suốt
+
+---
+
+**Cách dùng 2: Diễn tả nguyên nhân, lí do của một vật, sự việc.**
+
+##### Ví dụ :
+
+##### 1. 今から一所懸命勉強します。奨学金を取りたいわけだ。
+
+###### →　Từ bây giờ tôi sẽ cố gắng học hành. Vì tôi muốn lấy được học bổng.
+
+##### 2. 子供は泣いてしまったん。おもちゃが壊れたわけだ。
+
+###### →　Bọn trẻ khóc mất rồi. Vì đồ chơi hỏng hết rồi.
+
+##### 3. 会社がつぶれた。社長は借金したが、返せないわけだ。
+
+###### →　Công ty bị phá sản. Vì giám đốc nợ tiền nhưng không trả được.
+
+##### 4. 夜型の人間が増えて来たために、コンビニエンスストアがこれほど広がったわけです。
+
+###### →　Do những người sống về đêm ngày càng nhiều nên các cửa hàng tiện lợi mới phát triển như vậy.
+
+##### 5. 4人とも車で来るわけだから、うちの前にずらっと4台路上駐車することになるね。
+
+###### →　Anh biết đấy, cả 4 người đều đến bằng xe hơi, do đó họ sẽ đụa xe ngay trên đường thành một dãy 4 chiếc, ở phía trước nhà.
+
+##### 6.今年は米の出来がよくなかった。冷夏だったわけだ。
+
+###### →　Năm nay thu hoạch gạo không được tốt. Lý do là vì mùa hè nhiệt độ thấp.
+
+##### 7. 私は昔から機械類を触るのが苦手です。だから今でもワープロも使えないわけです。
+
+###### →　Xưa nay tôi vẫn ngại đụng tay vào các máy loại máy móc. Vì vậy đến giờ tôi cũng chưa sử dụng được máy đánh chữ điện tử.
+
+##### 8. このスケジュール表を見ると、京都には一泊しかしないから水曜日の午前中には東京へ帰って来られるわけだ。
+
+###### →　Nhìn vào bảng lịch trình này có thể thấy, vì chỉ ngủ lại Kyoto có một đêm thôi nên trong sáng ngày thứ tư là chúng ta có thê quay trở lại Tokyo được.
+
+##### 9. 彼に頼まれなかったから、私はその仕事をやらなかったわけで、頼まれればいつでもやってあげるつもりだ。
+
+###### →　Vì anh ta đã không nhờ nên thành ra tôi đã không làm công việc đó, chứ nếu nhờ thì tôi lúc nào cũng sẵn sàng giúp.
+
+##### 10. 休みの日は朝寝坊するから、なんとなく一日が早いと感じるわけだ。
+
+###### →　Vì những ngày nghỉ tôi hay ngủ nướng nên cảm thấy một ngày trôi qua thật nhanh sao ấy.
+
+##### 11. 彼女は猫を3匹と犬を1匹飼っている。一人暮らしで寂しいわけだ。
+
+###### →　Cô ta nuôi 3 con mèo và 1 con chó. Là vì cô ấy sống cô đơn một mình.
+
+##### 12. 姉は休みのたびに海外旅行に出かける。日常の空間から脱出したいわけだ。
+
+###### →　Chị tôi mỗi kỳ nghỉ đều đi du lịch nước ngoài. Vì chị ấy muốn thoát khỏi không gian thường ngày.
+
+##### 13. 山田君は就職難を乗り越えて大企業に就職したのに、結局3ヶ月でやめてしまった。本当にやりたかった音楽関係の仕事を目指すことしたわけだが、音楽業界も就職は難しそうなので、心配している。
+
+###### →　Yamada đã vượt qua thời kỳ khó khăn khi xin việc và vào làm ở một công ty lớn, vậy mà cuối cùng lại nghỉ việc chỉ sau 3 tháng.Cậu ấy quyết định theo đuổi công việc liên quan đến âm nhạc – điều mà cậu thực sự muốn làm,nhưng vì việc xin vào ngành âm nhạc có vẻ cũng khó khăn, nên tôi cảm thấy lo lắng.
+
+##### 14. 生活が豊かになり、二酸化炭素の排出量が増えると地球温暖化が進むというわけだ。
+
+###### →　Cuộc sống trở nên giàu có hơn, lượng khí CO2 thải ra ngày càng nhiều hơn nên trái đất cũng ngày càng nóng hơn.
+
+##### 15. 始めは観光旅行のつもりで日本へ遊びに来たんですが、日本が好きになり、とうとう10年も日本に住んでしまったわけです。
+
+###### →　Như anh biết đấy, lúc đầu tôi chỉ định đến Nhật du lịch thôi, nhưng sau đó bắt đầu thích Nhật Bản và cuối cùng thì đã sống ở đây được 10 năm rồi.
+
+##### 16. 私は古本やめぐりが好きで、暇があると古本屋を回っては掘り出し物を探しているわけですが、この頃はいい古本屋が少なくなってきたので残念に思っています。
+
+###### →　Tôi thích dạo quanh các tiệm sách cũ, và hễ rảnh rỗi là tôi lại đảo một vòng để tìm những cuốn hay với giá rẻ, nhưng gần đây những tiệm sách cũ mà hay cứ ít dần đi, tiếc thật!
+
+---
+
+**Cách dùng 3: Khẳng định, nhấn mạnh rằng chuyện mình trình bày là sự thật có căn cứ logic, hoặc trình bày suy nghĩ của mình để thuyết phục người nghe.**
+
+##### Ví dụ: 
+
+##### 1. 30ページの宿題から、１日に3ページずつやれば10日で終わるわけです。
+
+###### →　Bài tập có 30 trang, nếu mỗi ngày làm 3 trang thì trong 10 ngày sẽ xong.
+
+##### 2. ベトナムとは時差が２時間あるから、日本が午前11時かならベトナムは午後１時なわけだ。
+
+###### →　Vì Nhật chênh 2 tiếng đồng hồ so với Anh, nên nếu ở Nhật là 11 giờ sáng thì ở Việt Nam là 1 giờ trưa.
+
+##### 3. 5パーセントの値引きというと、一万円の物は9,500円になるわけですね。
+
+###### →　Nếu giảm 5% thì món đồ 10 nghìn Yên sẽ cò 9.500 Yên nhỉ.
+
+##### 4. 最近円高が進んで、輸入品の値段が下がっている。だから洋書も安くなっているわけだ。
+
+###### →　Dạo này đồng yên cứ tăng giá, giá hàng nhập khẩu cũng rẻ đi. Vi vậy sách ngoại văn cũng trở nên rẻ hơn.
+
+##### 5. 彼はベトナムで3年間働いていたので、ベトナムの事情にかなり詳しいわけである。
+
+###### →　Cậu ấy đã làm việc ở Việt Nam 3 năm, vì vậy biết khá tường tận về tình hình bên Việt Nam.
+
+##### 6. 体重を測ったら52キロになっていた。先週は49キロだったから、一週間で3キロも太ってしまったわけだ。
+
+###### →　Lúc cân thấy đã lên 52 kg. Tuần rồi cân nặng 49kg, như vậy trong vòng 1 tuần tôi đã tăng đến 3kg.
+
+##### 7. 山田さんにパーティーのことを知らせなかったんだって？それじゃ、いくら待っても来ないわけだ。
+
+###### →　Nghe nói người ta không thông báo cho anh Yamada về buổi tiệc à? Vậy thì chúng ta có chờ bao nhiêu anh ta cũng sẽ không đến.
+
+##### 8. 私、国際交流関係のボランティア活動はすでに10年近くやってきているわけでして、自慢じゃありませんが、皆さんよりもずっと経験はあるわけです。そういう立場の者としてご提案させていただいているわけです。
+
+###### →　Tôi tham gia những hoạt động tình nguyện liên quan đến giao lưu quốc tế đã gần 10 năm rồi. Không phải tôi tự cao, nhưng tôi có kinh nghiệm hơn các bạn nhiều. Với tư cách một người có vị trí như thế, tôi xin được phép đề xuất ý kiến.
+
+---
+
+**Cách dùng 4: Diễn tả kết quả xảy ra tự nhiên, tất yếu của sự việc, sự vật.**
+
+- Thường được sử dụng với các từ 「ので」、「だから」、「から」…
+
+##### Ví dụ: 
+
+##### 1. 天気予報によると、だんだん寒くなる一方だから、今日は昨日より寒いわけだ。
+
+###### →　Theo dự báo thời tiết thì ngày càng lạnh hơn nên tất nhiên hôm nay sẽ lạnh hơn hôm qua rồi.
+
+##### 2. 彼はクラス の中で一番賢明なので、いつも一番高い点を取るわけだ。
+
+###### →　Anh ấy thông minh nhất lớp nên tất nhiên lúc nào cũng được điểm cao nhất rồi
+
+##### 3. 佐藤選手は日本の最高な選手なので、国内の試合で金メダル を取るわけだ。
+
+###### →　Tuyển thủ Satou là tuyển thủ tuyệt nhất Nhật Bản nên tất nhiên những giải đấu trong nước anh ấy đều đạt được huy chương vàng rồi.
+
+##### 4. 彼女は動物が嫌いですから、犬を飼ったことがないわけです。
+
+###### →　Cô ấy ghét động vật nên tất nhiên chưa từng nuôi chó rồi.
+
+---
+
+**Cách dùng 5: Diễn tả một kết luận tất yếu rút ra từ lời thoại của người trên.**
+
+##### Ví dụ: 
+
+##### 1. A:田中さんは外国で ピアノ を ならいましたよ。
+
+##### B: それじゃ プロ になったわけだよね。
+
+###### →　A: Anh Tanaka đã học Piano ở nước ngoài đấy.
+
+###### B: Vậy nên anh ấy đã trở thành người chuyên nghiệp rồi nhỉ
+
+##### 2. A:彼女は部長になったよ。
+
+##### B：それなら彼女はそんなに自慢するわけですね。
+
+###### →　A: Cô ấy đã trở thành trưởng phòng rồi đấy.
+
+###### B: Vậy nên cô ấy mới tự mãn thế kia nhỉ.
+
+##### 3. A：最近私は病気にかかったよ。
+
+#####   B：そうですか。それじゃ君が休んだばかりなわけですね。
+
+###### →　A: Dạo này tôi bị bệnh đó.
+
+###### B: Vậy nên cậu mới nghỉ suốt như thế nhỉ
+
+---
+
+**Cách dùng 6: Diễn tả ý nghĩa có thể thay thế một sự vật, hiện tượng này bằng sự vật, hiện tượng khác.**
+
+- Thường sử dụng chung với 「つまり」、「要するに」
+
+##### Ví dụ: 
+
+##### 1. あの人は私の銘のお母さんですよ。つまり、あの人は私の妹であるわけだ。
+
+###### →　Người đó là mẹ của cháu gái tôi. Nói cách khác thì người đó là em gái tôi.
+
+##### 2. 彼は20年以上科学を研究しましたよ。言いかえれば、専門家であるわけだよ。
+
+###### →　Ông ấy đã nghiên cứu khoa học trên 20 năm rồi ấy. Nói cách khác thì là nhà chuyên môn đấy.
+
+##### 3. 彼女は埼玉から来ました。私も。つまり、彼女と私は同郷であるわけですよ。
+
+###### →　Cô ấy đến từ tỉnh Saitama. Tôi cũng vậy. Nói cách khác thì tôi và cô ấy đồng hương đấy.

@@ -1,0 +1,164 @@
+Cấp độ: N3
+
+# ～ てくる
+
+> **Bắt Đầu.../ Tự Nhiên.../ Trào Ra.../ Dâng Lên... (Từ Trong Cơ Thể, Trong Lòng)**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Vて ＋ くる**  
+> **Vて ＋ きた**  
+> **Vて ＋ きます ／ きました**
+
+→ Chia động từ về **thể て**, sau đó thêm **くる**. Nếu động từ có thể て kết thúc bằng **で** thì giữ nguyên **で** rồi thêm くる.
+
+---
+
+## Cách dùng / Ý nghĩa
+
+- **Diễn tả một thứ gì đó từ trong cơ thể tiết ra, trào ra hoặc một cảm xúc từ trong lòng tự nhiên nảy sinh, dâng lên.**
+- **Người nói chú ý đến lúc hiện tượng bắt đầu xuất hiện hoặc lúc bản thân bắt đầu cảm nhận rõ hiện tượng đó.**
+
+##### 悲しくて、涙が出てきた。
+
+###### → Vì buồn nên nước mắt tôi trào ra.
+
+→ Nước mắt từ trong cơ thể trào ra một cách tự nhiên do cảm xúc buồn.
+
+##### その話を聞いて、怒りがわいてきた。
+
+###### → Nghe câu chuyện đó, cơn giận trong tôi dâng lên.
+
+→ Cơn giận nảy sinh từ trong lòng, khiến người nói bắt đầu cảm nhận rõ sự tức giận.
+
+→ Tùy hiện tượng và ngữ cảnh, có thể dịch là: **Bắt đầu.../ Tự nhiên.../ Trào ra.../ Dâng lên...**
+
+---
+
+## Chú ý
+
+- **Trong cách dùng này, くる không được hiểu theo nghĩa di chuyển “đến đây” hay “đi làm gì đó rồi quay lại”.** Các bạn hãy hình dung rằng một thứ gì đó **từ bên trong cơ thể hoặc trong lòng xuất hiện ra**, khiến mình bắt đầu cảm nhận được.
+- **Đây thường là những phản ứng tự nhiên, không phải hành động được thực hiện theo ý chí.** Chẳng hạn, nước mắt tự trào ra vì xúc động, mồ hôi túa ra vì nóng hoặc cơn giận dâng lên khi nhớ lại một chuyện nào đó.
+- **Không phải lúc nào ～てくる cũng có nghĩa là “dần dần”.** Hiện tượng có thể xuất hiện từ từ hoặc đột ngột. Vì vậy, các bạn cần dựa vào ngữ cảnh để dịch cho tự nhiên.
+
+##### その言葉を聞いた瞬間、涙が出てきた。
+
+###### → Ngay khoảnh khắc nghe những lời đó, nước mắt tôi trào ra.
+
+→ Trong câu này, nước mắt trào ra ngay khi người nói nghe được những lời ấy, nên không cần dịch thành “nước mắt dần dần trào ra”.
+
+- **Những cách kết hợp thường gặp trong phạm vi bài này:**
+
+##### 涙が出てくる
+
+###### → Nước mắt trào ra.
+
+##### 汗が出てくる
+
+###### → Mồ hôi túa ra.
+
+##### 怒りがわいてくる
+
+###### → Cơn giận dâng lên.
+
+##### 勇気がわいてくる
+
+###### → Lòng can đảm nảy sinh, trỗi dậy.
+
+##### 喜びがこみあげてくる
+
+###### → Niềm vui dâng trào.
+
+→ **出る** thường diễn tả thứ gì đó thoát ra, xuất hiện; **わく** diễn tả cảm xúc nảy sinh từ bên trong; **こみあげる** diễn tả cảm xúc hoặc phản ứng dâng lên mạnh, có thể khó kìm lại.
+
+- **So với việc chỉ dùng động từ đơn, ～てくる làm nổi bật sự xuất hiện của hiện tượng theo cảm nhận của người nói.**
+
+##### 涙が出た。
+
+###### → Tôi đã chảy nước mắt.
+
+##### 涙が出てきた。
+
+###### → Nước mắt tôi bắt đầu trào ra.
+
+→ Câu thứ nhất thông báo việc chảy nước mắt đã xảy ra. Câu thứ hai hướng sự chú ý đến lúc nước mắt bắt đầu trào ra.
+
+- **Trong nghĩa diễn tả phản ứng hoặc cảm xúc bắt đầu xuất hiện này, không thay ～てくる bằng ～ていく một cách máy móc.** Muốn nói “nước mắt trào ra” hay “cơn giận dâng lên” như trong bài, các bạn hãy ghi nhớ cả cụm với ～てくる.
+
+---
+
+## Ví dụ
+
+##### 1. 悲しくて、涙が出てきた。
+
+###### → Vì buồn nên nước mắt tôi trào ra.
+
+##### 2. こう暑いと、じっとしていても汗が出てくる。
+
+###### → Trời nóng thế này thì dù ngồi yên, mồ hôi vẫn túa ra.
+
+##### 3. そのときはあまり感じなかったが、あとになって怒りがわいてきた。
+
+###### → Lúc đó tôi không cảm thấy gì nhiều, nhưng sau đó cơn giận mới dâng lên.
+
+##### 4. しばらくしてから、優勝の喜びがこみあげてきた。
+
+###### → Một lúc sau, niềm vui giành chức vô địch mới dâng trào trong tôi.
+
+##### 5. 母からの手紙を読んでいたら、涙が出てきました。
+
+###### → Khi đang đọc thư mẹ gửi, nước mắt tôi bỗng trào ra.
+
+##### 6. あまりにもおかしくて、笑いすぎて涙が出てきた。
+
+###### → Vì quá buồn cười nên tôi cười đến chảy cả nước mắt.
+
+##### 7. 辛い料理を食べていたら、額から汗が出てきました。
+
+###### → Khi đang ăn món cay, mồ hôi bắt đầu túa ra trên trán tôi.
+
+##### 8. 大勢の人の前で話すことになり、緊張して冷や汗が出てきた。
+
+###### → Phải nói trước đông người khiến tôi căng thẳng đến toát mồ hôi lạnh.
+
+##### 9. 冷たい風に当たっていたら、鼻水が出てきた。
+
+###### → Đứng hứng gió lạnh một lúc, tôi bắt đầu chảy nước mũi.
+
+##### 10. 焼きたてのパンを見たら、よだれが出てきた。
+
+###### → Nhìn thấy bánh mì vừa nướng xong, tôi thèm đến chảy nước miếng.
+
+##### 11. あのとき言われたことを思い出すと、また怒りがわいてくる。
+
+###### → Mỗi khi nhớ lại những lời người ta nói với mình lúc đó, cơn giận trong tôi lại dâng lên.
+
+##### 12. 友達に励まされて、もう一度挑戦する勇気がわいてきました。
+
+###### → Được bạn động viên, tôi có thêm can đảm để thử thách bản thân một lần nữa.
+
+##### 13. みんなの応援の声を聞いて、やる気がわいてきた。
+
+###### → Nghe tiếng mọi người cổ vũ, tôi bỗng có thêm động lực.
+
+##### 14. 卒業式で先生の話を聞いていると、感謝の気持ちがこみあげてきました。
+
+###### → Khi nghe thầy cô phát biểu trong lễ tốt nghiệp, lòng biết ơn dâng trào trong tôi.
+
+##### 15. 久しぶりに家族の顔を見て、喜びがこみあげてきた。
+
+###### → Sau một thời gian dài mới được nhìn thấy người thân, niềm vui dâng trào trong tôi.
+
+##### 16. 友達の変な表情を思い出したら、笑いがこみあげてきた。
+
+###### → Nhớ lại vẻ mặt kỳ quặc của bạn, tôi bỗng thấy buồn cười đến khó nhịn.
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Với cách dùng này, các bạn hãy nhớ hình ảnh **“từ bên trong xuất hiện ra”**: từ trong cơ thể thì có **nước mắt trào ra, mồ hôi túa ra**; từ trong lòng thì có **cơn giận, niềm vui, lòng biết ơn… dâng lên**.
+- Khi gặp ～てくる, các bạn đừng vội dịch くる là “đến”. Hãy nhìn vào hiện tượng được nhắc đến để chọn cách dịch tự nhiên: **nước mắt thì “trào ra”, mồ hôi thì “túa ra”, cảm xúc thì “nảy sinh” hoặc “dâng lên”**.
+- Cũng không cần câu nào cũng thêm “bắt đầu” hay “dần dần” vào bản dịch. Chỉ cần cách dịch thể hiện được **sự xuất hiện hoặc dâng lên của phản ứng, cảm xúc** là được.

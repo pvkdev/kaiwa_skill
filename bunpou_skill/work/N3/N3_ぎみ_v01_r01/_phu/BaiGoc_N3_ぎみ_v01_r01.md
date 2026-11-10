@@ -1,0 +1,87 @@
+Cấp độ: N3
+
+# ～ ぎみ
+
+**Có Vẻ Hơi…/ Có Cảm Giác…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Danh từ／V ~~ます~~  + 気味**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói biểu thị ý nghĩa “mặc dù mức độ không nhiều nhưng có xu hướng, có khuynh hướng…”
+
+②　Thường dùng để thể hiện cảm nhận dựa trên biểu hiện cơ thể (có triệu chứng), tâm lý…
+
+③　Thường mang nghĩa tiêu cực
+
+→　Có Nghĩa là : **Có vẻ hơi…/ Có cảm giác…**
+
+---
+
+## Ví dụ
+
+##### 1. 今日はちょっと風邪気味なので、早めに帰らせてください。
+
+###### → Vì hôm nay tôi có vẻ hơi bị cảm nên xin cho tôi về sớm một chút.
+
+##### 2. 最近、忙しい仕事が続いたので少し疲れ気味です。
+
+###### → Gần đây công việc cứ dồn dập nên tôi có vẻ hơi mệt.
+
+##### 3. 長雨のため、このところ工事はかなり遅れ気味だ。
+
+###### → Do mưa kéo dài nên gần đây việc xây dựng có vẻ khá chậm.
+
+##### 4. このごろ成績がちょっと下がり気味ですが、どうかしたんですか。
+
+###### → Dạo gầy đây kết quả có vẻ hơi đi xuống. Chuyện gì đang xảy ra vậy?
+
+##### 5. 最近彼はうぬぼれぎみだ。
+
+###### → Dạo gầy đây anh ta có vẻ hơi tự mãn.
+
+##### 6. あの人はどうも焦り気味です。
+
+###### → Người đó có vẻ hơi nóng vội.
+
+##### 7. 内閣の支持率は前月よりやや下がりぎみだが、下げ幅は小さい。
+
+###### → Tỷ lệ ủng hộ Nội Các có vẻ hơi giảm so với tháng trước nhưng mức giảm thì nhỏ.
+
+##### 8. 風邪ぎみで昨日学校を休んだ。
+
+###### → Tôi qua tôi đã nghỉ học vì có vẻ hơi bị cảm.
+
+##### 9. ２時間も字を打ったので、ちょっと疲れ気味です。
+
+###### → Vì tôi đánh máy suốt 2 tiếng nên có vẻ hơi mệt.
+
+##### 10. 新入社員は緊張気味の顔をしていた。
+
+###### → Các nhân viên mới có vẻ hơi lo lắng.
+
+##### 11. 残業続きで疲れ気味だ。
+
+###### → Tôi cảm thấy hơi mệt vì liên tục tăng ca.
+
+##### 12. 今日はどうも風邪気味で、頭が痛い。
+
+###### → Hôm nay tôi cảm thấy hơi cảm nên đau đầu.
+
+##### 13. 生活が不規則で睡眠不足気味だ。
+
+###### → Tôi cảm thấy hơi thiếu ngủ vì giờ giấc sinh hoạt lộn xộn.
+
+##### 14. 最近太り気味なので、夕食を抜くことにした。
+
+###### → Vì gần đây tôi cảm thấy hơi béo nên đã quyết định bỏ cơm tối.
+
+##### 15. 初めての演説なので、彼は少し緊張気味だ。
+
+###### → Vì là bài phát biểu đầu tiên ông ta có vẻ hơi căng thẳng.

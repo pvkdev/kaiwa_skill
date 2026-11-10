@@ -1,0 +1,105 @@
+Cấp độ: N2
+
+# ～ ことに／ことには
+
+> **Thật Là… – Thật…Làm Sao**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Vる／Vた + ことに**  
+>
+> **Tính từ (い) + ことに**  
+>
+> **Tính từ (な) + な + ことに**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Đi sau một tính từ hoặc động từ nhấn mạnh tình cảm, cảm xúc nhằm diễn đạt trước cảm nghĩ của người nói về một sự việc định trình bày sau đó. Dùng trong văn viết.
+
+②　Đôi khi cũng được đi với dạng 「～ことには」
+
+→　Có Nghĩa là : Thật là… – Thật…làm sao
+
+---
+
+## Ví dụ
+
+##### 1. 残念なことに、私が訪ねたときには、その人はもう引っ越したあとだった。
+
+###### → Thật là đáng tiếc, khi tôi tìm đến nơi thì người ấy đã dọn nhà đi nơi khác rồi.
+
+##### 2. 幸いなことに、やっと自分の好きな人と結婚できました。
+
+###### → May mắn thay, cuối cùng tôi đã có thể kết hôn với người tôi yêu.
+
+##### 3. 面白いことに、私がいま教えている学生は、私が昔お世話になった先生の子どもさんだ。
+
+###### → Thật thú vị làm sao, người học trò mà tôi đang dạy bây giờ chính là con của người thầy ngày xưa đã dìu dắt tôi.
+
+##### 4. 驚いたことに、彼女はもうその話を知っていた。
+
+###### → Thật không ngờ là cô ta đã biết chuyện đó rồi.
+
+##### 5. 驚いたことに、先生は相変わらず微笑んでいた。
+
+###### → Thật là đáng ngạc nhiên, cô giáo vẫn mỉm cười như thường lệ.
+
+##### 6. 驚いたことに、保守政党と革新政党が共に手を組んで連立内閣を作った。
+
+###### → Thật đáng ngạc nhiên, đảng Bảo thủ và Đảng Đổi mới đã bắt tay để xây dựng một chính phủ liên minh.
+
+##### 7. 残念なことに、努力して頑張りましたが、失敗しました。
+
+###### → Thật không may, tôi đã cố hết sức nhưng đã thất bại.
+
+##### 8. 不思議なことに、何年も実がならなかった柿の木に今年はたくさん実がなった。
+
+###### → Lạ lùng thay, cây hồng mấy năm rồi không sinh quả nhưng năm nay lại ra rất nhiều trái.
+
+##### 9. あきれたことに、その役所は知事の選挙資金のために裏金をプールしていた。
+
+###### → Thật là ngao ngán, cơ quan hành chính ấy đã gây quỹ đen để chuẩn bị cho chi phí tranh cử của viên tỉnh trưởng.
+
+##### 10. 悔しいことには、１点差でＡ校とのバスケットボールの試合に負けてしまった。
+
+###### → Thật là nuối tiếc làm sao, chúng tôi đã để thua trận bóng rổ với lớp A chỉ với 1 điểm cách biệt.
+
+##### 11. 彼は一度わたしの命を救った。しかし、奇妙なことに、彼はわたしを毛嫌いしている。
+
+###### → Anh ta đã một lần cứu tôi. Tuy vậy thật kỳ lạ là anh ta thật sự ghét tôi.
+
+##### 12. うれしいことに、来年カナダに留学できそうだ。
+
+###### → Thật là vui vì năm sau có thể tôi sẽ được du học ở Canada.
+
+##### 13. 不幸なことに友人の母が亡くなったのです。
+
+###### → Thật là bất hạnh, mẹ của bạn tôi đã mất.
+
+##### 14. おどろいたことに、山本さんは小説を一日で書き上げたのだそうだ。
+
+###### → Thật đáng ngạc nhiên vì nghe nói ông Yamamot đã hoàn thành cuốn tiểu thuyết chỉ trong một ngày.
+
+##### 15. 驚いたことに、町の様子が１０年前に比べ、すっかり変わってしまった。
+
+###### → Thật đáng ngạc nhiên, khu phố này đã thay đổi hoàn toàn so với 10 năm trước.
+
+##### 16. うれしいことに、スピ－チ大会の代表に選ばれた。
+
+###### → Cái việc vui sướng đó, là vì được chọn làm đại biểu của đại hội hùng biện.
+
+##### 17. 惜しいことに、A チーム は 1点差で負けた。
+
+###### → Tiếc thật, đội A đã thua 1 điểm.
+
+##### 18. 残念なことに、楽しみにしていた キャンプ が雨で中止になった。
+
+###### → Tiếc nhỉ, vì mưa mà buổi cắm trại tôi mong chờ đã bị ngừng giữa chừng.
+
+##### 19. 驚いたことに、その コンサート の チケット は １５分で売り切れたそうだ。
+
+###### → Thật kinh ngạc, nghe nói vé của buổi hòa nhạc đã bán sạch trong 15 phút.

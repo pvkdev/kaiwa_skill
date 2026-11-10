@@ -1,0 +1,195 @@
+Cấp độ: N3
+
+# ～ み
+
+> **Danh Từ Hóa Tính Từ — Diễn Tả Tính Chất, Trạng Thái Có Thể Cảm Nhận**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Aい（bỏ い）＋ み**
+>
+> **Aな（bỏ な）＋ み**
+
+→ Thêm **み** vào phần thân của một số tính từ để tạo thành **danh từ**.
+
+→ **Chỉ một số tính từ kết hợp được với み**, không áp dụng cách chia này cho tất cả tính từ.
+
+##### 甘い → 甘み
+
+###### → Ngọt → Vị ngọt.
+
+##### 丸い → 丸み
+
+###### → Tròn → Nét tròn, độ tròn.
+
+##### 重い → 重み
+
+###### → Nặng → Sức nặng, trọng lượng, tầm quan trọng.
+
+##### 楽しい → 楽しみ
+
+###### → Vui → Niềm vui, điều đáng mong chờ.
+
+##### 新鮮な → 新鮮み
+
+###### → Mới mẻ → Sự mới mẻ.
+
+---
+
+## Cách dùng / Ý nghĩa
+
+- **Biến tính từ thành danh từ để diễn tả tính chất, trạng thái hoặc cảm giác có thể cảm nhận được từ một sự vật, sự việc.**
+- **Có thể dùng để nói về hình dáng, sắc màu, mùi vị, cảm giác cơ thể, cảm xúc hoặc ấn tượng mà một điều gì đó đem lại.**
+
+##### このスープには野菜の甘みがあります。
+
+###### → Món súp này có vị ngọt của rau củ.
+
+→ Người nói đang nhắc đến **vị ngọt có thể cảm nhận được khi ăn**, nên dùng danh từ 甘み.
+
+##### あの人の言葉には重みがある。
+
+###### → Lời nói của người ấy có sức nặng.
+
+→ Ở đây, 重み diễn tả **giá trị, tầm quan trọng hoặc sức tác động mà người nghe cảm nhận được từ lời nói**.
+
+→ Tùy từng từ, có thể dịch là: **Vị.../ Nét.../ Sắc.../ Cảm giác.../ Niềm.../ Sự...**
+
+---
+
+## Chú ý
+
+- **Điểm cần nhớ nhất là không phải tính từ nào cũng thêm được み.** Các bạn nên học những từ đã được sử dụng phổ biến như **甘み、丸み、厚み、重み、楽しみ、新鮮み…** theo nghĩa và cách kết hợp của chúng.
+- **Sau khi thêm み, từ đã trở thành danh từ.** Vì vậy, có thể kết hợp với các trợ từ như **が、を、に、の…** tùy vai trò trong câu.
+
+**Một số cách kết hợp thường gặp:**
+
+> **～み ＋ がある ／ がない**  
+> → Có / không có tính chất, cảm giác ấy.
+>
+> **～み ＋ を感じる**  
+> → Cảm nhận được tính chất, cảm giác ấy.
+>
+> **～み ＋ のある ＋ N**  
+> → Sự vật có tính chất ấy.
+>
+> **～み ＋ を帯びた ＋ N**  
+> → Sự vật mang nét, sắc thái ấy.
+
+##### 温かみのある部屋
+
+###### → Một căn phòng mang lại cảm giác ấm cúng.
+
+##### 青みを帯びた白
+
+###### → Màu trắng ngả xanh.
+
+- **～み không chỉ dùng cho cảm xúc trong lòng.** Nó còn diễn tả những đặc điểm có thể nhận ra bằng giác quan, chẳng hạn như **dáng tròn, sắc xanh, độ dày hoặc vị ngọt**.
+- **Phân biệt ～さ và ～み:**
+
+**～さ** thường dùng để gọi tên tính chất hoặc mức độ của tính chất ấy, thuận tiện khi đo lường, so sánh.
+
+**～み** thường diễn tả nét đặc trưng, cảm giác hoặc ý nghĩa cụ thể mà người nói cảm nhận được.
+
+##### この荷物の重さは三キロです。
+
+###### → Kiện hành lý này nặng ba ki-lô-gam.
+
+→ 重さ diễn tả **trọng lượng được đo bằng con số**.
+
+##### 先生の言葉の重みを感じました。
+
+###### → Tôi cảm nhận được sức nặng trong lời nói của thầy/cô.
+
+→ 重み diễn tả **giá trị và sức tác động của lời nói**.
+
+→ Tuy nhiên, đây là **khuynh hướng sử dụng**, không phải quy tắc tuyệt đối. Chẳng hạn, 重み cũng có thể chỉ sức nặng thực tế, 厚み cũng có thể chỉ độ dày của một vật. Các bạn cần học theo từng từ và ngữ cảnh.
+
+- **Không phải cứ có cả dạng ～さ và ～み là hai từ thay thế được cho nhau trong mọi câu.** Một số cách kết hợp đã trở thành cách nói quen thuộc.
+
+##### お会いできる日を楽しみにしています。
+
+###### → Tôi mong chờ ngày được gặp anh/chị.
+
+→ **～を楽しみにしている** là cách nói quen thuộc mang nghĩa **“mong chờ, háo hức chờ đợi…”**. Trong cách nói này, không thay 楽しみ bằng 楽しさ.
+
+- **新鮮み trong ví dụ về bài phát biểu mang nghĩa “sự mới mẻ”.** Người nói muốn nhận xét nội dung không đem lại cảm giác mới mẻ, chứ không nói về độ tươi của thực phẩm.
+
+---
+
+## Ví dụ
+
+##### 1. 丸みを帯びた形
+
+###### → Hình dáng mang nét tròn, bo tròn.
+
+##### 2. 青みを帯びた白
+
+###### → Màu trắng ngả xanh.
+
+##### 3. 厚みのある板
+
+###### → Một tấm ván dày.
+
+##### 4. 校長は入学式で毎年同じことを言っている。ぜんぜん新鮮みがない。
+
+###### → Năm nào hiệu trưởng cũng nói những điều giống nhau trong lễ nhập học. Chẳng có chút mới mẻ nào cả.
+
+##### 5. お会いできる日を楽しみにしています。
+
+###### → Tôi mong chờ ngày được gặp anh/chị.
+
+##### 6. このスープには野菜の甘みがあります。
+
+###### → Món súp này có vị ngọt của rau củ.
+
+##### 7. このコーヒーは苦みが強いです。
+
+###### → Cà phê này có vị đắng đậm.
+
+##### 8. 歩くと、足に痛みを感じます。
+
+###### → Khi đi bộ, tôi cảm thấy đau ở chân.
+
+##### 9. あの人の言葉には重みがある。
+
+###### → Lời nói của người ấy có sức nặng.
+
+##### 10. この部屋は木の家具が多くて、温かみがあります。
+
+###### → Căn phòng này có nhiều đồ nội thất bằng gỗ nên mang lại cảm giác ấm cúng.
+
+##### 11. この作家の文章には深みがあります。
+
+###### → Văn của tác giả này có chiều sâu.
+
+##### 12. 私の強みは、最後まであきらめないことです。
+
+###### → Điểm mạnh của tôi là không bỏ cuộc cho đến cùng.
+
+##### 13. 自分の弱みを人に知られたくない。
+
+###### → Tôi không muốn người khác biết điểm yếu của mình.
+
+##### 14. 彼女は悲しみをこらえて、笑顔で話していた。
+
+###### → Cô ấy nén nỗi buồn và mỉm cười nói chuyện.
+
+##### 15. 一人暮らしを始めて、家族のありがたみがわかりました。
+
+###### → Sau khi bắt đầu sống một mình, tôi mới thấm thía sự quý giá của gia đình.
+
+##### 16. 毎週土曜日に友達と会うのが、私の楽しみです。
+
+###### → Gặp bạn bè vào mỗi thứ Bảy là niềm vui của tôi.
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Với ～み, các bạn hãy nhớ hai ý: **“biến thành danh từ”** và **“diễn tả một nét tính chất, cảm giác có thể cảm nhận được”**. Chẳng hạn, ngọt thì thành **vị ngọt**, tròn thì thành **nét tròn**, vui thì thành **niềm vui, điều đáng mong chờ**.
+- Điều quan trọng là **học theo từng từ**, không tự động bỏ い hoặc な rồi thêm み vào bất kỳ tính từ nào. Những từ có ～み thường có nghĩa và cách kết hợp riêng cần ghi nhớ.
+- Khi so sánh với ～さ, các bạn có thể nhớ rằng **～さ thường hướng đến tính chất, mức độ; ～み thường hướng đến nét đặc trưng và cảm nhận**. Sau đó, hãy dựa vào ngữ cảnh để hiểu đúng nghĩa của từng từ.
+- Riêng **～を楽しみにしています**, các bạn nên nhớ cả cụm với nghĩa **“tôi đang mong chờ…”**. Đây là cách diễn đạt rất hay gặp khi nói về một cuộc gặp, chuyến đi hoặc sự kiện mà mình háo hức chờ đợi.

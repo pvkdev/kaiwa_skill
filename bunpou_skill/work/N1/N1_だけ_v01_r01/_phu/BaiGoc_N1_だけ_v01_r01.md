@@ -1,0 +1,95 @@
+Cấp độ: N1
+
+# ～ だけ
+
+Đến mức…/ Hết mức có thể…/ Làm cho đã…/ Chỉ làm… (không kỳ vọng kết quả)
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Vる + だけ**  
+> **V (thể thể điều kiện/thể thường) + だけ + V (cùng động từ đó)**  
+> **Vる + だけは + V (cùng động từ đó)**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+① **Ý nghĩa 1: Hết mức có thể / Hết tất cả phạm vi** 
+
+Biểu thị ý nghĩa làm "hết mức có thể", những gì có thể làm thì hãy cứ thực hiện.
+
+- Cấu trúc thường dùng: **Vるだけ (の) + V**
+
+② **Ý nghĩa 2: Làm hết mức mình muốn / Khỏa mãn bản thân** 
+
+Diễn tả việc làm một hành động thỏa thích, làm cho đến khi thấy vừa lòng/đã đời.
+
+- Cấu trúc thường dùng: **V (thể điều kiện ～たら) + だけ + V** hoặc **Vたいだけ + V**
+
+③ **Ý nghĩa 3: Làm thì có làm nhưng không kỳ vọng lắm / Làm xong nhưng không có kết quả tốt** 
+
+Diễn tả việc cố gắng thực hiện hành động ở mức tối thiểu hoặc thử làm, nhưng không đặt quá nhiều kỳ vọng vào kết quả cuối cùng.
+
+- Cấu trúc thường dùng: **Vる + だけは + V**
+
+→ **Có nghĩa là:** Hết mức có thể / Hết sức / Cho thỏa thích / Cho đã / Thử làm xem sao chứ không mong đợi gì.
+
+---
+
+**Ý nghĩa 1: Hết mức có thể**
+
+## Ví dụ
+
+##### 1. やるだけのことはやった。あとは結果を待つばかりだ。
+
+###### → Những gì làm được thì tôi đã làm rồi. Giờ chỉ còn chờ kết quả thôi.
+
+##### 2. 相手が私の言うことをきくかどうかはわからないが、言うだけのことは言っておいた。
+
+###### → Không biết đối phương có nghe những gì tôi nói không, nhưng tôi đã nói những gì có thể.
+
+---
+
+###### **Ý nghĩa 2: Làm hết mức mình muốn / Cho thỏa thích**
+
+## Ví dụ
+
+##### 1. 相手を謝らせることはできなかったが、私としても、言うだけ言ったら気がすんだ。
+
+###### → Tôi không thể bắt đối phương xin lỗi, nhưng đối với tôi, nói ra những gì mình muốn là được rồi.
+
+##### 2. 泣くだけ泣いたら気が晴れた。またあしたからがんばろう。
+
+###### → Khóc cho đã xong tâm trạng thoải mái. Từ ngày mai lại cố gắng nhé.
+
+##### 3. 相談したいことがあって食事に誘ったのに、先輩は食べるだけ食べると、さっさと帰ってしまった。
+
+###### → Vì có chuyện muốn bàn nên tôi mới mời đi ăn vậy mà, anh ấy ăn cho đã xong rồi vội vàng ra về.
+
+##### 4. 食べたいだけ食べていいですよ。
+
+###### → Muốn ăn bao nhiêu cũng được.
+
+---
+
+**Ý nghĩa 3: Làm thì có làm nhưng không kỳ vọng**
+
+## Ví dụ
+
+##### 1. だめもとで、頼むだけは頼んでみたら？
+
+###### → Vì không có gì để mất nên hay là thử nhờ coi sao?
+
+##### 2. この企画書、読むだけは読んでいただけませんか。
+
+###### → Bản kế hoạch này, anh đọc giúp em với?
+
+##### 3. 店長に紹介してあげるだけはしてあげるけど、採用されるかどうかは保証できないよ。
+
+###### → Mình sẽ giới thiệu cậu với bà chủ, còn việc có được nhận vào làm hay không thì mình không đảm bảo.
+
+##### 4. 小説の新人賞に応募するだけはしてみたが、二次審査にも進めなかった。
+
+###### → Tôi đã thử ứng tuyển giải tiểu thuyết gia trẻ, nhưng không được vào vòng trong.

@@ -1,0 +1,79 @@
+Cấp độ: N1
+
+# ～なくして／なくしては
+
+> Nếu Không Có… (Thì Khó Mà…)
+
+---
+
+## Cấu trúc
+
+> ```
+> Danh từ ＋ なくして／なくしては
+> Vること + なくして／なくしては
+> ```
+
+## Cách dùng / Ý nghĩa
+
+①　Đi sau những danh từ, diễn tả ý “nếu không có điều gì đó thì sẽ gặp khó khăn, khó thực hiện được…”。  
+②　Phía sau đi với dạng phủ định.  
+③　Đây là cách nói dùng trong viết, trong văn nói sử dụng「～がなかったら、～」  
+→　Có Nghĩa là : Nếu không có… (thì khó mà…)
+
+## Ví dụ
+
+##### 1. 先生方の指導なくしてはわたしの大学合格はあり得ませんでした。
+
+###### → Nếu không có sự chỉ dẫn của các thầy cô thì tôi đã không thể đỗ đại học.
+
+##### 2. 十分な話し合いなくしては ダム の建設の問題は解決しないだろう。
+
+###### → Nếu không có sự thảo luận giữa các bên thì vấn đề liên quan đến việc xây đập chắc là khó giải quyết được.
+
+##### 3. 彼なくしては会議が始まらない。
+
+###### → Nếu không có anh ta thì cuộc họp không thể bắt đầu.
+
+##### 4. 親の援助なくしてはとても一人で生活できない。
+
+###### → Nếu không có sự hỗ trợ của bố mẹ thì tôi chẳng thể nào sống một mình được。
+
+##### 5. 努力なくしては成功などありえない。
+
+###### → Nếu không có nỗ lực thì không thể có chuyện thành công。
+
+##### 6. 無償の愛情なくしては子育ては苦痛でしかない。
+
+###### → Nếu không có tình thương bao la thì việc nuôi dạy con sẽ chỉ là cực hình。
+
+##### 7. 事実の究明なくしては、有罪なのか無罪なのか判断などできるはずがない。
+
+###### → Nếu không tìm hiểu sự thật thì không thể nào phán đoán được là có tội hay không。
+
+##### 8. 彼女のこの長年の努力なくしては全国大会の代表の座を勝ち取ることはできなかっただろう。
+
+###### → Nếu không có nỗ lực trong nhiều năm nay, chắc cô ấy đã không đạt được vị thế đại biểu đi dự đại hội toàn quốc。
+
+##### 9. 現代人の生活は携帯電話なくしては、成り立たない。
+
+###### → Cuộc sống của chúng ta hiện nay nếu không có điện thoại di động thì không làm được gì。
+
+##### 10. 当事者同士の率直な意見交換なくしては問題解決への道のりは遠いと言わざるを得ない。
+
+###### → Phải nói rằng nếu không có sự trao đổi ý kiến thẳng thắn giữa các bên liên quan thì còn lâu mới giải決 được vấn đề。
+
+##### 11. 友情なくして幸せな人生はない。
+
+###### → Không có tình nghĩa thì không thể có cuộc sống hạnh phúc。
+
+##### 12. 言論の自由なくして民主主義はない。
+
+###### → Không có tự do ngôn luận thì không thể có chủ nghĩa dân chủ。
+
+##### 13. 愛なくして何の人生か。
+
+###### → Không có tình yêu thì sống để làm gì？
+
+##### 14. 相手を尊重することなくして友情は続かない。
+
+###### → Không tôn trọng đối phương thì tình bạn không thể kéo dài。

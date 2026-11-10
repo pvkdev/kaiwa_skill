@@ -1,0 +1,135 @@
+Cấp độ: N3
+
+# に違いない
+
+**Chắc Chắn Là…/ Chắc Hẳn Là…/ Nhất Định Là…/ Hẳn Là…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Thể thường + に違いない**  
+>
+> **Tính từ -na/ Tính từ đuôi い + に違いない**  
+>
+> **Danh từ ~~だ~~ + に違いない**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói được sử dụng khi người nói muốn khẳng định phán đoán, suy nghĩ của bản thân, cho rằng chắc chắn là như thế, dựa vào một căn cứ, cơ sở nào đó.
+
+②　So với cách nói「～だろう」thì ở đây, mức độ xác tin, chắc mẩm của người nói cao hơn. Mang tính văn viết hơn so với「きっと～と思う」.
+
+③　Đây là cách nói đồng nghĩa nhưng cứng hơn với「に相違ない」và「に決まっている」
+
+④　Thể lịch sự hơn của 「に違いない」 là 「に違いありません」
+
+→　Có Nghĩa là : **Chắc chắn là…/ Chắn hẳn là…/ Nhất định là…/ Hẳn là…** 
+
+---
+
+## Ví dụ
+
+##### 1. 私の傘がない。誰かが持っていったに違いない。
+
+###### → Không thấy ô của tôi đâu. Chắc chắn là ai đó đã cầm đi rồi.
+
+##### 2. あの店はいつも混んでいるから、安いに違いない。
+
+###### → Quán kia lúc nào cũng đông nên nhất định là rẻ rồi.
+
+##### 3. 今ごろ、山田さんはひまにちがいありません。
+
+###### → Bây giờ chắc chắn là Yamada đang rảnh.
+
+##### 4. あれは、田村さんに違いない。
+
+###### → Kia chắc chắn là anh Tamura.
+
+##### 5. 彼はきっと寝ているに違いない。
+
+###### → Nhất định là anh ấy đang ngủ.
+
+##### 6. 財布  は 電車  の 中  で盗まれたに 違  いない。
+
+###### → Cái ví ắt hẳn là đã bị lấy cắp ở trên xe điện.
+
+##### 7. あんな 素晴  しい 車  に乗っているのだから、 田村  さんは 金持  ちに 違  いない。
+
+###### → Đi một cái xe hơi tuyệt vời như thế, chắc hẳn anh Tamura giàu lắm.
+
+##### 8. この 車  は 高  いに 違  いない。
+
+###### → Chiếc xe này ắt hẳn là đắt tiền lắm.
+
+##### 9. これが 合言葉  だったに 違  いない。
+
+###### → Từ này ắt hẳn là một từ ám chỉ/mật khẩu.
+
+##### 10. あそこにかかっている 絵  は素晴しい。 値段も高いに 違いない。
+
+###### → Bức tranh treo đằng kia thật tuyệt. Chắn hẳn giá cũng đắt.
+
+##### 11. まじめな山田さんのことだから、時間通りに来るに違いない。
+
+###### → Vì anh Yamada là một người nghiêm túc nên chắc chắn anh ấy sẽ đến đúng giờ.
+
+##### 12. 教室  にかばんがないから、 田中さんはもう帰ったに 違いない。
+
+###### → Vì trong phòng học không còn túi xách nên ắt hẳn Tanaka đã về rồi.
+
+##### 13. 学生  の 憂鬱  そうな 様子  からすると、試験は 難しかったに 違いない。
+
+###### → Cứ coi dáng vẻ u sầu của sinh viên mà đoán, bài thi chắc hẳn là khó lắm.
+
+##### 14. あなたはそんなに 長  い 旅行  のあとで 疲  れているに 違いない。
+
+###### → Anh hẳn phải là mệt lắm sau một chuyến đi dài như vậy.
+
+##### 15. あんなふうに 話すとは 彼  は 馬鹿  に 違いない。
+
+###### → Anh ta hẳn phải là một kẻ ngốc mới nói như vậy.
+
+##### 16. あの 人  の 幸  せそうな 顔  を 御覧  なさい。きっといい 知  らせだったに 違いありません。
+
+###### → Cứ nhìn vẻ mặt hạnh phúc của ngời ấy thì biết. Chắc hẳn đã nhận được tin vui.
+
+##### 17. これは 本物  のダイヤモンドに 違いない。
+
+###### → Cái này chắc chắn là một viên kim cương thật.
+
+##### 18. その 計画  は 成功  するに 違いない。
+
+###### → Kế hoạch đó chắc hẳn sẽ thành công.
+
+##### 19. あの 人  は 規則  をわざと 破るような 人  ではない。きっと 知  らなかったに 違いない。
+
+###### → Anh ta không phải loại người cố tình vi phạm quy tắc. Chắc chỉ là do anh ta không biết.
+
+##### 20. その 犬  は 空腹  に 違いない。
+
+###### → Con chó đó chắc hẳn là đang đói lắm.
+
+##### 21. 彼の実力からして、合格するに違いない。
+
+###### → Với thực lực của mình thì chắc hẳn anh ta sẽ đậu.
+
+##### 22. 娘さんは 母親似 だとすれば、きっと 綺麗 な 方に 違いありません。
+
+###### → Nếu cô con gái mà giống mẹ thì chắc hẳn sẽ rất xinh đẹp.
+
+##### 23. あの人の 言うことは 理想  には 違  いないが、世 の中そううまくいかないものだ。
+
+###### → Những gì người đó nói thì đúng là điều lý tưởng đó, nhưng thực tế cuộc sống lại không suôn sẻ như thế.
+
+---
+
+## NÂNG CAO
+
+1．Trong hầu hết trường hợp『～に相違ない』có nghĩa tương đương với 『～に違いない』và『～に決まっている』.
+
+2．Tuy nhiên, 『～に違いない』và『～に決まっている』dùng trong văn nói, còn 『～に相違ない』dùng trong văn viết, và là cách nói trang trọng.
+
+3．Ngoài ra, 『～に決まっている』có tính xác thực cao (sự xác tín) hơn so với 『～に相違ない』『～に違いない』.

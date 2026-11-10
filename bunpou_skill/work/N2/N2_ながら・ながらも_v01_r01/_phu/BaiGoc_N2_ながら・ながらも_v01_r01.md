@@ -1,0 +1,147 @@
+Cấp độ: N2
+
+# 〜 ながら／ながらも
+
+> **Tuy…Nhưng…/ Dù Là…Nhưng…/ Mặc Dù…Nhưng…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ ~~ます~~ + ながら（も）**  
+>
+> **Danh từ（であり）＋ ながら（も）**  
+>
+> **Tính từ đuôi い ＋ ながら（も）**  
+>
+> **Tính từ đuôi ~~な~~ （であり）＋ ながら（も）**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là dạng liên kết nghịch, diễn tả điều trái với dự đoán, được suy ra từ một trạng thái nào đó. “Tuy là vậy nhưng thực tế thì…”
+
+②　Cấu trúc này có cách sử dụng tương tự như 「～が」「～けれども」nhưng Cứng nhắc hơn.
+
+③「ながらも」là dạng nhấn mạnh và mang tính cứng nhắc hơn so với「ながら」
+
+④　Những cụm quán ngữ thường được sử dụng: 『残念ながら』(Thật đáng tiếc)『しかしながら』(Tuy nhiên)『知りながら』(Mặc dù biết)『知っていながら』(Mặc dù biết)『狭いながらも』(Tuy chật chội) 『と思いながらも』(Tuy nghĩ là…/Tuy thấy là…)
+
+⑤　Hay đi cùng với những từ mang ý nghĩa tiêu cực (nhỏ, chật…) nhưng sau đó lại đưa ra những yếu tố tích cực ở phía sau.
+
+⑥　Ngoài ra, cấu trúc này thường được sử dụng với các từ diễn tả trạng thái, nhấn mạnh tính đồng thời của sự việc
+
+→　Có Nghĩa là : Tuy…nhưng…/ Dù là…nhưng…/ Mặc dù…nhưng…
+
+---
+
+## Ví dụ
+
+##### 1. (挨拶の最後) これで、簡単ながら、お祝いの挨拶とさせていただきます。
+
+###### → (Cuối lời chào hỏi) Dù đơn giản nhưng cho tôi gửi lời chúc mừng ạ.
+
+##### 2. 彼は金持ちでありながらも、とても地味な生活をしている。
+
+###### → Ông ấy tuy rất giàu có nhưng sống rất giản dị.
+
+##### 3. うちの子はまだ ２歳ですが、たまに私たちはけんか をすると、子供ながら、心配になるみたいです。
+
+###### → Con tôi mới 2 tuổi, nhưng khi chúng tôi cãi nhau thì nó dù là con nít nhưng vẫn tỏ ra lo lắng.
+
+##### 4. 田中さんは学生の身でありながら、地元の食品会社を経営している。
+
+###### → Anh Tanaka tuy vẫn đang là sinh viên nhưng anh đang kinh doanh một công ty thực phẩm địa phương.
+
+##### 5. 定年退職した後も、微力ながら、留学生の受け入れに貢献したいと存じます。
+
+###### → Tuy chỉ là đóng góp nhỏ nhoi nhưng tôi định sau khi về hưu sẽ cống hiến cho việc tiếp nhận du học sinh.
+
+##### 6. あの人は体が小さいながらも、なかなか力がある。
+
+###### → Người đàn ông đó tuy nhỏ con nhưng khá khỏe.
+
+##### 7. 10月3日ですか。残念ながらぼくは参加できません。その日は友達の結婚式があるんです。
+
+###### → Ngày 3/10 ạ, thật tiếc nhưng tôi không thể tham gia được. Ngày đó có lễ cưới của bạn tôi.
+
+##### 8. あの子は子供ながら、社会の働きを よく知っていますね。
+
+###### → Cô bé đó dù là trẻ con, nhưng hiểu khá rõ về xã hội đấy nhỉ.
+
+##### 9. ぼくの部屋は 1階で、小さいながら庭も付いています。
+
+###### → Căn phòng của tôi ở tầng 1, tuy nhỏ nhưng cũng có cả vườn.
+
+##### 10. 移転したばかりの新しい事務所は、狭いながらも駅に近いので満足している。
+
+###### → Văn phòng mới vừa chuyển đến tuy có chật chội nhưng vì gần nhà ga nên tôi rất hài lòng.
+
+##### 11. 彼は豊かな才能に恵まれながらも、その才能を生かせないうちに病に倒れ、若くして亡くなってしまった。
+
+###### → Anh ấy tuy có một tài năng thiên phú nhưng chưa kịp phát huy đã ngã bệnh và qua đời ở tuổi còn rất trẻ.
+
+##### 12. 狭いながらも楽しいわが家。
+
+###### → Nhà chúng tôi tuy chật chội nhưng đầy tiếng cười.
+
+##### 13. 貧しいながらも温かい家庭で育って彼は、大人になってからも決して親の恩を忘れなかった。
+
+###### → Lớn lên trong một gia đình tuy nghèo khó nhưng rất đầm ấm, khi đã trưởng thành rồi anh ta vẫn không bao giờ quên công ơn của cha mẹ mình.
+
+##### 14. 体に悪いと知りながらも、タバコがやめられない人は多い。
+
+###### → Mặc dù biết là có hại cho sức khỏe nhưng vẫn có nhiều người không thể bỏ thuốc lá.
+
+##### 15. KFCの面接を受けた。緊張しながらも、質問にはしっかり答えられた。
+
+###### → Tôi đã dự buổi phỏng vấn của KFC. Mặc dù căng thẳng nhưng tôi đã trả lời các câu hỏi khá tốt.
+
+##### 16. 彼はテストの時間を知っていながら私に教えてくれなかった。
+
+###### → Cậu ta mặc dù biết giờ thi nhưng đã không nói cho tôi biết.
+
+##### 17. 田舎での生活は不便ながらも、自然に囲まれていて毎日がすがすがしい。
+
+###### → Cuộc sống ở quê tuy bất tiện nhưng được cái có thiên nhiên bao quanh nên mỗi ngày cảm thấy thật khỏe khoắn.
+
+##### 18. 少し悪いと思いながらも、彼は笑うのを抑えることはできなかった。
+
+###### → Mặc dù thấy hơi có lỗi nhưng anh ta đã không nhịn được cười.
+
+##### 19. 子どもたちは文句をいながらも、後片付け を手伝ってくれた。
+
+###### → Bọn trẻ tuy có phàn nàn, nhưng sau đó vẫn giúp việc dọn dẹp.
+
+##### 20. 残念ながら曇っていて、初日の出は見られなかった。
+
+###### → Tiếc thật nhưng vì mây mù nên không thể nhìn thấy mặt trời mọc ngày đầu năm mới.
+
+##### 21. 「私はもう 10年も東京にすんでいながら、まだ一度も東京タワー に行ったことがないんです」
+
+###### → Tôi sống ở Tokyo đã 10 năm rồi nhưng vẫn chưa 1 lần đến tháp Tokyo.
+
+##### 22. 事情はよくわからないながら、何とかして助けてあげたいと思った。
+
+###### → Tuy không biết rõ sự tình nhưng tôi muốn giúp gì đó cho anh.
+
+##### 23. この車は小型ながら乗り心地がいい。
+
+###### → Cái xe này tuy nhỏ nhưng ngồi lên cảm thấy thoải mái.
+
+##### 24. 警察官でありながら飲酒運転をするとは許せない。
+
+###### → Dù là cảnh sát nhưng lái xe sau khi uống rượu là không thể tha thứ.
+
+##### 25. A氏は若いながらも古い習慣を よく知っている。
+
+###### → Anh A tuy còn trẻ nhưng nắm rõ về phong tục xưa.
+
+##### 26. 初めて作った料理だが、我ながらおいしくできた。
+
+###### → Tuy là món ăn lần đầu tiên nấu nhưng tôi cũng đã làm ngon.
+
+##### 27. 何度も練習しているのに、一向に上手にならない。我ながら情けない。
+
+###### → Dù luyện tập bao nhiêu lần nhưng vẫn không tốt lên. Tôi thật hết chỗ nói.

@@ -1,0 +1,135 @@
+Cấp độ: N3
+
+# 〜 くらいなら／ぐらいなら
+
+> **Nếu Phải …Thì Thà … Còn Hơn/ Nếu So Với … Thì … Vẫn Hơn**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Vる  ＋ くらないなら／ぐらいなら、～**  
+>
+> **Vる  ＋ くらいなら／ぐらいなら、～のほうがいい**  
+>
+> **Vる  ＋ くらいなら／ぐらいなら、〜のほうがましだ。**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**①　Sử dụng khi muốn nói rằng  việc A là điều không mong muốn, “nếu phải làm A thì thà làm B còn hơn”. Đưa ra lý lẽ để không phải làm A.**
+
+**②　Người nói đưa ra 1 tình huống/ sự việc được cho là tồi tệ nhất (A) và sau đó đề cập đến một tình huống/sự việc tuy không phải là tốt nhưng vẫn còn hơn tình huống/sự việc trước đó (B)**
+
+**③　Dùng để nói lên ý nghĩ chủ quan của người nói, chứ không phải sự thật khách quan.**
+
+→　Có Nghĩa là : **Nếu phải …thì thà … còn hơn/ Nếu so với … thì … vẫn hơn**
+
+---
+
+## Ví dụ
+
+##### 1. あいつに助けてもらうくらいなら、死んだほうがましだ。
+
+###### →　Nếu phải nhờ hắn giúp thì thà chết còn sướng hơn.
+
+##### 2. 上司と飲みに行くくらいなら、残業したほうがいいよ。
+
+###### →　Nếu phải đi nhậu với cấp trên thì thà là làm tăng ca còn hơn.
+
+##### 3. 気が合わない人と一緒に生活するぐらいなら、このまま独身でいたい。
+
+###### →　Nếu mà phải sống cùng với người mình không hợp, thì thà ở độc thân còn hơn.
+
+##### 4. 30分も遅れて説明会に行くくらいなら、参加しないほうがいい。
+
+###### →　Nếu như đến muộn buổi thuyết trình những 30 phút, thì tôi thà không tham gia còn hơn.
+
+##### 5. お金を払ってこんな料理を食べるくらいなら、自分で作ったほうがいい。
+
+###### →　Nếu phải trả tiền để ăn món này thì tự mình nấu còn hơn.
+
+##### 6. あんな男に頭を下げるくらいなら、死んだほうがましだ。
+
+###### →　Nếu phải cúi đầu trước hắn ta thì thà chết còn hơn.
+
+##### 7. そんな給料の低い会社で夜遅くまで働くくらいなら、アルバイト のほうがいいんじゃない。
+
+###### →　Если phải làm đến khuya tại công ty lương thấp thế này thì không phải đi làm baito vẫn hơn sao.
+
+##### 8. あんな性格が悪い人と結婚するくらいなら、死ぬまで一人でいるほうがいい。
+
+###### →　Nếu phải kết hôn với người có tính cách xấu thì thà sống 1 mình đến chết còn hơn.
+
+##### 9. 最近は、地方に転勤せられるくらいなら、会社を辞める、という若者が増えているそうだ。
+
+###### →　Gần đây số người trẻ tuổi thà bỏ việc còn hơn bị điều đến nơi khác để làm việc đang tăng dần lên.
+
+##### 10. 娘は、彼と別れるくらいなら、家を出る、とまで言ってるんです。
+
+###### →　Con gái tôi đã đến mức nói rằng nếu phải chia tay với người yêu thì thà bỏ nhà đi còn hơn.
+
+##### 11. あんな大学に行くくらいなら、就職するほうがよほどいい。
+
+###### →　Nếu phải vào một trường đại học như thế, thì thà xin đi làm còn hay hơn nhiều.
+
+##### 12. A：先生、父ったら、好きなお酒が飲めないくらいなら、治療なんかしなくたっていいって言うんです。
+
+##### B：それは困りましたね。
+
+###### →　A: 　Thưa bác sĩ, ba tôi bảo nếu phải ngừng uống món rượu yêu thích thì thà là không điều trị còn hơn.
+
+###### 　　B:　Thế thì khổ nhỉ.
+
+##### 13. 上から紙を張って訂正するくらいなら、もう一度はじめから書き直したほうがいいと思うよ。
+
+###### →　Nếu phải dán giấy lên trên để sửa lại, tôi nghĩ tốt hơn là nên viết lại từ đầu một lần nữa.
+
+##### 14. 銀行で借りるくらいなら、私が貸してあげるのに。
+
+###### →　Nếu phải mượn tiền ở ngân hàng thì chính tôi sẽ cho bạn mượn được, vậy mà….
+
+##### 15. 君に迷惑をかけるくらいなら、僕が自分で行くよ。
+
+###### →　Nếu như nhờ cậu đi sẽ làm phiền cậu, thì tớ sẽ tự đi đấy.
+
+##### 16. すぐに別れるくらいなら、最初から付き合わなければよかったのに･･･。
+
+###### →　Nếu phải chia tay ngay thì thà ngay từ đầu đã không nên quen thì tốt hơn rồi.
+
+##### 17. A：｢カメラが壊れちゃって、修理代が15,000円もするんだ。｣
+
+##### 　B：｢15,000円も払うくらいなら、新しいほうがいいね。｣
+
+###### → A：Máy chụp hình bị hỏng, tiền sửa chữa đến những 10.000 yên. 
+
+###### 　B： Nếu phải trả đến 15.000 yên thì tốt hơn nên mua cái mới nhỉ.
+
+##### 18. お金を払って電車に乗るくらいなら、時間がかかっても自転車で行ったほうがいい。
+
+###### →　Nếu phải trả tiền để đi tàu điện, thì tốt hơn nên đi bằng xe đạp, dù mất chút thời gian.
+
+##### 19. A：レポート、締切に間に合わないよ。どうしよう。　　 
+
+##### 　　B：そんなに焦るくらいなら、もっと早く書き始めればよかったのに。
+
+###### → 　A：Bài báo cáo, sẽ không kịp hạn nộp rồi. Làm sao đây.　
+
+###### 　　B： Nếu sốt ruột như thế sao không bắt đầu viết sớm hơn.
+
+##### 20. 材料費を1000円も出すくらいなら、手作りするより、買ったほうがいいんじゃない？
+
+###### →　Nếu phải trả 1000 Yên cho phí nguyên liệu thì mua tốt hơn là tự làm chứ nhỉ.
+
+##### 21. 毎朝自分で弁当を作るくらいなら、コンビニ弁当でいい。
+
+###### →　Nếu so với việc sáng nào cũng tự làm cơm hộp thì tôi thà mua cơm hộp ở cửa hàng tiện lợi còn hơn.
+
+##### 22. やせるために好きなケーキを我慢するくらいなら、今の体型のままでかまわない。
+
+###### →　Nếu phải kiềm chế trước bánh gato mà mình yêu thích để giảm cân, thì thà giữ nguyên thân hình hiện tại cũng được.
+
+##### 23. 疲れて学校を休むくらいなら、アルバイトなんてやめなさい。
+
+###### →　Nếu phải nghỉ học vì mệt mỏi thì hãy nghỉ làm thêm này kia đi.

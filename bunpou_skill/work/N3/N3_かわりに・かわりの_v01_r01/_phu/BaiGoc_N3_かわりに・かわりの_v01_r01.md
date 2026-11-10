@@ -1,0 +1,109 @@
+Cấp độ: N3
+
+# ～ かわりに／かわりの
+
+> **Thay Vì…/ Thay Cho…/ Đổi Lại…/ Bù Lại…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Danh từ + の + かわりに／かわりの + Danh từ**  
+>
+> **Động từ thể từ điển  + かわりに／かわりの + Danh từ**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**①　Là cách nói thể hiện sự thay thế cho một người hay vật nào đó.**
+
+**②　Ngoài ra còn được sử dụng để diễn tả tuy có những điều tốt nhưng bù lại cũng có những điều không tốt, hoặc ngược lại. Thể hiện những mặt tích cực và tiêu cực của một sự vật, một vấn đề.**
+
+**③　Có thể dùng dạng kanji của 「かわりに」 là「 代わりに」.**
+
+→　Có Nghĩa là : **Thay vì…/ Thay cho…/ Đổi lại…/ Bù lại…**
+
+---
+
+## Ví dụ
+
+##### 1. 最近、時計のかわりに携帯電話を使う人が増えた。
+
+###### → Gần đây số người sử dụng điện thoại di động thay cho đồng hồ đã tăng lên.
+
+##### 2. 山下さんのかわりに、山田さんが A社の会議に出ます。
+
+###### → Anh Yamada sẽ đi họp ở công ty A thay cho anh Yamashita.
+
+##### 3. 山下さんのかわりの人は、決まりましたか。
+
+###### → Đã quyết định được người sẽ thay thế anh Yamashita chưa?
+
+##### 4. 引っ越しを手伝うかわりに、宿題を手伝ってよ。
+
+###### → Đổi lại việc tớ giúp cậu chuyển nhà, hãy giúp tớ làm bài tập đi.
+
+##### 5. 正月は海外旅行に行く代わりに、近くの温泉に行った。
+
+###### → Thay vì đi du lịch nước ngoài vào dịp Tết, tôi đã đi onsen ở gần nhà.
+
+##### 6. 今とても忙しいです。誰か( わたしの )代わりにやってくれる人いないかな。
+
+###### → Bận quá đi mất. Không có ai có thể làm thay được cho mình nhỉ.
+
+##### 7. 彼の代わりに木村さんが会議に出る予定です。
+
+###### → Theo dự định thì anh Kimura sẽ dự họp thay cho anh ta.
+
+##### 8. 僕の代わりに、君がしてくれ。
+
+###### → Cậu hãy làm thay cho tôi!
+
+##### 9. 今日は急用で来られなかったハイン先生の代わりに、授業をします。
+
+###### → Hôm nay tôi sẽ lên lớp thay cho cô Hạnh vì cô ấy bận đột xuất không đến được.
+
+##### 10. 正月は海外旅行に行く代わりに、近くの温泉に行った。
+
+###### → Vào dịp tết tôi đã đi suối nước nóng gần nhà thay vì đi du lịch nước ngoài.
+
+##### 11. 映画を見に行く代わりに家でテレビを見る。
+
+###### → Tôi sẽ xem tivi ở nhà thay vì đi xem phim ở ngoài.
+
+##### 12. 　今とても忙しいです。誰か代わりにやってくれる人いないかな。
+
+###### → Tôi thật sự rất bận. Liệu có ai làm giúp tôi không nhỉ.
+
+##### 13. この仕事は安定している代わりに、給料があまり高くない。
+
+###### → Công việc này ổn định nhưng đổi lại lương không cao lắm.
+
+##### 14. ジェムさんに英語を教えてもらう代わりに、彼に日本語を教えてあげることにした。
+
+###### → Tôi đã quyết định sẽ dạy James tiếng Nhật, đổi lại tôi nhờ anh dạy tôi tiếng Anh.
+
+##### 15. この辺は買い物などに不便な代わりに、自然が豊かで気持ちがいい。
+
+###### → Khu vực này mua sam này kia hơi bất tiện nhưng bù lại có nhiều thiên nhiên nên thấy rất dễ chịu.
+
+##### 16. インターネットの普及で様々な情報が手に入る代わりに、人とのコミュニケーションが少なくなった。
+
+###### → Nhờ sự phổ biến của internet mà con người có được rất nhiều thông tin nhưng đổi lại sự giao tiếp giữa con người ngày càng ít đi.
+
+##### 17. 夫は新聞は読まない代わりに、雑誌はすみずみまで読む。
+
+###### → Chông tôi không đọc báo nhưng bù lại đọc các tạp chí rất chăm chú.
+
+##### 18. 都市化が進んでいく中で、面倒くさい近所付き合いから解放された代わりに、子育ての援助者を失っていく。
+
+###### → Khi đô thị hóa ngày càng tăng thì chúng ta càng thoát khỏi sự xã giao phiền phức với hàng xóm nhưng đổi lại chúng ta ngày càng thiếu người hỗ trợ trong việc nuôi dạy con cái.
+
+##### 19. 日本語を教えてくれる代わりに、鈴木さんにベトナム語を教えています。
+
+###### → Tôi dạy tiếng Việt cho anh Suzuki, đổi lại anh ấy dạy tôi tiếng Nhật.
+
+##### 20. 現代人はさまざまな生活の快適さを手に入れた代わりに、取り返しのつかないほど自然を破壊してしまったのではないか。
+
+###### → Chẳng phải là con người ngày nay đã có được cuộc sống vô cùng tiện lợi nhưng đổi lại đã phá hủy tự nhiên đến mức không thể cứu vãn được nữa hay sao?

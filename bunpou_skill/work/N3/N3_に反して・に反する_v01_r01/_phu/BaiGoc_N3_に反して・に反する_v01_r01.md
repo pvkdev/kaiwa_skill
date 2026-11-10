@@ -1,0 +1,91 @@
+Cấp độ: N3
+
+# に反して／に反する
+
+**Trái Với…Thì…/ Ngược Lại Với…Thì…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **\[Danh từ\] +  に反して**  
+>
+> **\[Danh từ 1\] + に反する + \[Danh từ 2\]**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Diễn tả kết quả, hành động trái với dự đoán, suy nghĩ, kỳ vọng…trước đó. 
+
+②　予測／予報／教え／法律／意／期待／希望／願い＋ に反して：Trái với dự đoán / dự báo / dạy / pháp luật / ý / kì vọng / hy vọng / ước nguyện.
+
+→　Có Nghĩa là : **Trái với…thì…/ Ngược lại với…thì…**
+
+---
+
+## Ví dụ
+
+##### 1. 予想に反して試験はとてもやさしかったです。
+
+###### → Trái với dự đoán, kỳ thi năm nay rất dễ.
+
+##### 2. 年初の予測に反して、今年は天候不順の年となった。
+
+###### → Trái với dự báo hồi đầu năm, năm nay là một năm có thời tiết khong thuận lợi.
+
+##### 3. 予想に反して、今年の大学入試はそれほど難しくなかったそうだ。
+
+###### → Trái với dự đoán, nghe nói kỳ thi tuyển sinh đại học năm nay không khó đến mức ấy.
+
+##### 4. 周囲の期待に反して、彼らは結局結婚しなかった。
+
+###### → Ngược lại với kỳ vọng của những người xung quanh, hai người họ kết cục đã không cưới nhau.
+
+##### 5. 親の期待に反して、結局、彼は大学さえ卒業しなかった。
+
+###### → Trái với kỳ vọng của ba mẹ, kết cục anh ta thậm chí đã không tốt nghiệp được đại học.
+
+##### 6. 今回の選挙は、多くの人の予想に反する結果に終わった。
+
+###### → Cuộc bầu cử lần này đã kết thúc với một kết quả ngược hẳn với đự đoán của nhiều người.
+
+##### 7. 人々の予想に反し、土地の値段が下がり続けている。
+
+###### → Ngược với dự đoán của nhiều người,giá đất đang tiếp tục giảm.
+
+##### 8. 弟は親の期待に反することばかりしている。
+
+###### → Em trai tôi toàn làm những việc trái với mong đợi của bố mẹ.
+
+##### 9. 年初の予測に反して、今年は天候不順の年となった。
+
+###### → Trái với dự đoán hồi đầu năm,năm nay thời tiết không thuận lợi.
+
+##### 10. 専門家の予想に反して景気は回復し始めた。
+
+###### → Nền kinh tế đã bắt đầu phục hồi trái với dự đoán của các chuyên gia.
+
+##### 11. 我々の期待に反して、新商品はあまり売れなかった。
+
+###### → Trái với kì vọng của chúng tôi,sản phẩm mới không bán được nhiều.
+
+##### 12. A チーム が勝つだろうという予想に反して B チーム が勝った。
+
+###### → Trái với dự đoán là đội A sẽ thắng, đội B đã thắng.
+
+##### 13. 応募者数は当初の見込みに反し、非常に多かった。
+
+###### → Trái với dự đoán ban đầu, có quá nhiều người xin việc.
+
+##### 14. 無断外泊は寮の規則に反する。
+
+###### → Nghỉ trọ ở ngoài mà không xin phép là làm trái với qui định của ký túc xá.
+
+##### 15. 自由な言論を許さないのは憲法の精神に反する。
+
+###### → Không cho phép tự do ngôn luận là đi ngược lại với tinh thần của hiến pháp.
+
+##### 16. たとえ親の命令でも、自分の意思に反することはしたくない。
+
+###### → Dù đó là mệnh lệnh của bố mẹ chăng nữa thì tôi cũng không muốn làm trái với mong muốn của bản thân.

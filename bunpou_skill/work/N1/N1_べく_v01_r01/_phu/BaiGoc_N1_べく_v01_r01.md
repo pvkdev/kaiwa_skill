@@ -1,0 +1,118 @@
+Cấp độ: N1
+
+# ～べく
+
+> Để… / Để Có Thể…
+
+---
+
+## Cấu trúc
+
+> **V る ＋ べく**  
+> **Ngoại lệ:　する＋べく　→　すべく／するべく**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói diễn đạt ý định/quyết tâm sẽ làm để đạt được mục đích nào đó.  
+②　Đây là cách nói trang trọng, mang tính văn viết, lối nói cổ nhưng vẫn được sử dụng trong ngôn ngữ hiện đại.  
+③　Đi với động từ thể hiện ý chí, vế câu sau đó cũng biểu thị hành vi mang tính ý chí,  không đi với câu văn mang tính khuyến khích, thúc đẩy, nhờ vả, mệnh lệnh,  cấm đoán, rủ rê…  
+④　Chủ ngữ trước và sau giống nhau.  
+⑤　Đây là hình thức liên dụng của trợ từ 「べし」  
+
+→　Có Nghĩa là : Để… / Để có thể…
+
+## Ví dụ
+
+##### 1. 彼はサッカー選手になるべく、毎日厳しい練習を している。
+
+###### → Anh ấy luyện tập chăm chỉ mỗi ngày để trở thành cầu thủ bóng đá.
+
+##### 2. 友人を見舞うべく、病院を訪れた。
+
+###### → Tôi đã đến bệnh viện để thăm một người bạn.
+
+##### 3. 新型の機械を購入するべく、社長は色々調べている。
+
+###### → Giám đốc đang tìm hiểu rất nhiều thứ để mua được máy đời tiên tiến nhất.
+
+##### 4. 介護ロボット を開発すべく、私達は今日も実験を続ける。
+
+###### → Chúng tôi ngày nào cũng tiến hành thí nghiệm để phát triển robot điều dưỡng.
+
+##### 5. 中学校の同窓会に参加すべく、私はふるさとに帰った。
+
+###### → Tôi trở về quê để tham gia họp lớp trung học.
+
+##### 6. アルバイト を始めるべく、彼は必要な書類を そろえた。
+
+###### → Anh ấy đã chuẩn bị những giấy tờ cần thiết để bắt đầu việc làm thêm.
+
+##### 7. これ を田中さんに知らせるべく、メール を書いた。
+
+###### → Tôi đã viết mail để thông báo điều này cho anh Tanaka.
+
+##### 8. ひとこと鈴木さんに別れの言葉を言うべく、彼のマンションを訪れたのですが、彼は既に出発した後でした。
+
+###### → Tôi đến nhà anh Suzuki để nói một lời tạm biệt với anh ấy nhưng trước đó anh ấy đã rời khỏi.
+
+##### 9. 彼女は新しい気持ちで再出発するべく、長野県の山村に引っ越して行った。
+
+###### → Cô ấy đã chuyển đến sống ở một ngôi làng trên núi của tỉnh Nagano để thay đổi cũng như làm lại từ đầu.
+
+##### 10. 田中氏は記者会見場に向かうべく、上着を着て部屋を出た。
+
+###### → Ông Tanaka đã mặc áo khoác, rời khỏi phòng để đến chỗ phòng họp báo.
+
+##### 11. ラムさんを迎えるべく空港まで行ったが、会えなかった。
+
+###### → Tôi đã đến sân bay để đón anh Lâm nhưng đã không gặp anh ấy.
+
+##### 12. 兄は締め切りに間に合わせるべく、昼も夜も論文に取り組んでいる。
+
+###### → Để kịp với hạn chót nộp bài, anh trai tôi làm việc ngày đêm với luận văn của mình.
+
+##### 13. 彼は一日も早く借金を返すべく、必死で働いている。
+
+###### → Ông ta làm việc miệt mài để trả được nợ càng sớm càng tốt.
+
+##### 14. ウイルスの感染経路を明らかにすべく、調査が行われた。
+
+###### → Một cuộc điều tra đã được tiến hành để làm rõ nguồn ô nhiễm.
+
+##### 15. 恩師に会うべく、久し振りに母校を訪れた。
+
+###### → Đã lâu rồi tôi mới đến thăm lại trường cũ để gặp lại người thầy cũ của mình.
+
+##### 16. 彼はこの十年間人生を立て直し、暴力に満ちた過去を消すべく、つとめてきた。
+
+###### → Trong 10 năm qua, ông ấy đã nổ lực làm lại cuộc đời để xóa bỏ quá khứ đầy bạo lực của mình.
+
+##### 17. 開幕式に間に合わせるべく突貫工事が行われている。
+
+###### → Tiến độ xây dựng đang được đẩy nhanh để kịp lễ khai mạc.
+
+##### 18. 警察官は男を逮捕すべく追いかけた。
+
+###### → Viên cảnh sát đã đuổi theo để bắt người đàn ông đó.
+
+##### 19. 定年退職後、海外に移住すべく、今からお金をためています。
+
+###### → Để sang định cư ở nước ngoài sau khi về hưu, tôi để để dành tiền ngay từ bây giờ.
+
+##### 20. 日本へ留学するべく、貯金をしています。
+
+###### → Tôi đang tiết kiệm tiền để có thể du học Nhật Bản.
+
+##### 21. プロの歌手になるべく、週に３回ダンスを習っています。
+
+###### → Để trở thành ca sĩ chuyên nghiệp, tôi đang đi học khiêu vũ 3 buổi một tuần.
+
+##### 22. エンジニアになる べく一生懸命勉強した。
+
+###### → Tôi đã học tập chăm chỉ để có thể trở thành kỹ sư.
+
+##### 23. そこで、サービスの状態を改善すべく迅速な処置を取っていただけるようお願い致します。
+
+###### → Vì thế, tôi đề nghị quý công ty hãy nhanh chóng xử lý để cải thiện tình trạng dịch vụ.

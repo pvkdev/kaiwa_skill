@@ -1,0 +1,243 @@
+Cấp độ: N2
+
+# ～ ものだ／ものではない
+
+> **Đương Nhiên/ Bản Chất Là…/ Nên…/ Không Nên…/ Hồi Còn…/ Khi…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể thường（Vる・ない・た） + ものだ／ものではない**  
+>
+> **Tính từ い + ものだ／ものではない**  
+>
+> **Tính từ -na + な + ものだ／ものではない**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Diễn tả những điều/ thứ được cho là tự nhiên, đương nhiên, thuộc về quy luật.
+
+②　Diễn tả lời khuyên, cảnh cáo nhẹ nhàng.
+
+③　Diễn tả tâm trạng, cảm xúc (cảm thán, thở dài, ngạc nhiên)
+
+④　Hồi tưởng, diễn tả lại những sự việc, trạng thái thường xảy ra trong quá khứ.
+
+→　Có Nghĩa là : Đương nhiên/ Bản chất là…/ Nên…/ Không nên…/ Hồi còn…/ Khi…
+
+---
+
+## Cách dùng 1: Diễn tả những điều/ thứ được cho là tự nhiên, đương nhiên, thuộc về quy luật.
+
+Được sử dụng khi muốn nói rằng “việc đó là đương nhiên, là phải thế”. 
+
+Thường để nói về những việc không phải là ý kiến cá nhân, mà là những điều mang tính đạo đức, ý kiến chung, chân lý, bản chất vốn có…, hoặc trình bày như một tính chất thông thường để giáo huấn.
+
+---
+
+### Ví Dụ
+
+##### 1. 地震のときは、だれでも慌てるものだ。
+
+###### → Lúc có động đất thì ai cũng hoảng sợ.
+
+##### 2. 年末はだれでも忙しいものだ。
+
+###### → Vào cuối năm ai cũng bận rộn.
+
+##### 3. 人の性格はなかなか変わらないものだ。
+
+###### → Tính cách con người là thứ khó mà thay đổi được.
+
+##### 4. 文化は国によって違うものだ。
+
+###### → Văn hóa là thứ mà mỗi nước đều khác nhau.
+
+##### 5. 人間は本来自分勝手なものです。
+
+###### → Con người vốn dĩ là ích kỷ.
+
+##### 6. 会社などの団体宛の手紙には宛名の下に「御中」と書くものだ。
+
+###### → Thư gửi cho các nhóm, tổ chức như công ty này nọ thì bên dưới (sau) tên sẽ viết “Kính gửi”.
+
+##### 7. 人の心は、なかなか分からないものだ。
+
+###### → Lòng người là thứ thật khó mà hiểu được.
+
+##### 8. 4人生なんて、はかないものだ。
+
+###### → Đời người vốn là phù du.
+
+##### 9. 赤ん坊は泣くものだ。
+
+###### → Trẻ sơ sinh thì đương nhiên là hay khóc.
+
+##### 10. 金というのはすぐなくなるものだ。
+
+###### → Tiền là thứ tuy có đó nhưng rồi lại mất.
+
+##### 11. 水は本来低きに流れるものです。
+
+###### → Nước vốn dĩ là thứ chảy xuống chỗ trũng.
+
+##### 12. 世間とは冷たいものだ。一時は騒いでもすぐに忘れる。
+
+###### → Người đời thường hay lãnh đạm. Nhất thời dù có làm rùm beng lên thì rồi cũng sẽ quên ngay.
+
+##### 13. 地震のときは、誰でもあわてるものだ。
+
+###### → Khi xảy ra động đất thì ai cũng hốt hoảng cả.
+
+---
+
+## Cách dùng 2: Diễn tả lời khuyên, cảnh cáo nhẹ nhàng.
+
+– Cấu trúc này có thể được sử dụng để mang nghĩa khuyên bảo, cấm đoán nhẹ nhàng .
+
+– Dùng cho những tri thức lẽ thường. Không dùng trong trường hợp xác định được đối tượng hay người được nhắm đến mà chỉ nói chung, hướng tới tất cả mọi người. 
+
+– Không nên dùng với người vế trên Có nghĩa là: Nên làm gì, phải làm gì / Không nên làm gì, không được làm gì 
+
+---
+
+### Ví dụ
+
+##### 1. あの陰口を言うものではない。
+
+###### → Không nên nói xấu sau lưng người khác như thế.
+
+##### 2. 学生はもっと勉強するものです。
+
+###### → Học sinh là nên học nhiều hơn.
+
+##### 3. もう10時半だよ。早く寝なさい。子どもは10時前に寝るものだ。
+
+###### → 10 giờ rưỡi rồi đấy. Ngủ sớm đi. Trẻ con thì phải ngủ trước 10 giờ.
+
+##### 4. 無駄遣いをするもんじゃない。お金は大切にするものだ。
+
+###### → Không nên tiêu xài lãng phí. Tiền là thứ cần phải biết quý trọng.
+
+##### 5. お年寄りには丁寧に接するものだ。
+
+###### → Với người già thì phải đối xử nhẹ nhàng lịch sự.
+
+##### 6. 弱い者いじめをするものじゃないよ。
+
+###### → Không được hiếp đáp người yếu đuối đấy nhé.
+
+##### 7. お見舞いに鉢植えの花は持って行かないものですよ。
+
+###### → Khi thăm bệnh thì không nên mang theo hoa trồng trong chậu đấy nhé
+
+##### 8. 人に親切にしてもらったら、ありがとうと言うものだよ。
+
+###### → Khi được ai đối xử tốt thì phải nói cảm ơn đấy nhé.
+
+##### 9. 道で人にぶつかったりしたら、「すみません」と謝るものだ。
+
+###### → Khi va phải ai đó ở ngoài đường thì phải nói “xin lỗi”.
+
+##### 10. 「食べ物を口に入れたまま、しゃべるもんじゃない」と祖母が言う。
+
+###### → Bà tôi nói rằng “Không được vừa ăn vừa nói”
+
+##### 11. 人の陰口を言うものではありません。
+
+###### → Không được nói sau lưng người khác
+
+##### 12. 学生は教室に遅れるものではありません。
+
+###### → Học sinh không nên đi học muộn.
+
+##### 13. 人との出会いは大切にするものだ。
+
+###### → Nên trân trọng những cuộc gặp gỡ với mọi người.
+
+##### 14. 気軽に人にお金を貸すものではない。
+
+###### → Đừng nên tùy tiện cho người khác vay tiền.
+
+---
+
+## Cách dùng 3: Diễn tả tâm trạng, cảm xúc (cảm thán, thở dài, ngạc nhiên)
+
+Không dùng cho hành vi mang ý chí của người nói. Thường hay đi kèm với tính từ, phó từ (よく、ずいぶん…) thể hiện chủ quan của người nói.
+
+---
+
+### Ví dụ
+
+##### 1. 人生はすばらしいものだ。
+
+###### → Cuộc đời con người là điều tuyệt vời.
+
+##### 2. いつか京都に行きたいものだ。
+
+###### → Lúc nào đó muốn đi Kyoto quá.
+
+##### 3. 子育ては大変なものだ。
+
+###### → Nuôi con thật vất vả.
+
+##### 4. 梯子乗りってすごいものですね。
+
+###### → Cái môn nhào lộn trên thang ấy thật là đáng kinh ngạc nhỉ.
+
+##### 5. あんな大事故にあって、よく助かったものだ。
+
+###### → Gặp một tai nạn như thế nhưng vẫn còn may mắn lắm.
+
+##### 6. いつか京都に行ってみたいものだ。
+
+###### → Tôi lúc nào cũng muốn đến Kyoto thử một lần cho biết.
+
+##### 7. 時間の経つのは早いものですね。
+
+###### → Thời gian trôi qua thật nhanh.
+
+##### 8. この校舎も古くなったものだ。
+
+###### → Ôi! Ngôi trường đã cũ quá rồi.
+
+---
+
+## Cách dùng 4: Hồi tưởng, diễn tả lại những sự việc, trạng thái thường xảy ra trong quá khứ.
+
+Vì diễn tả lại những việc trong quá khứ nên với cách dùng này, ta sẽ sử dụng thể た《～た + ものだ》
+
+---
+
+### Ví dụ
+
+##### 1. 子どものころ、いたずら を して、よく父に叱られたものだ。
+
+###### → Khi còn nhỏ tôi thường bị bố mắng vì nghịch ngợm.
+
+##### 2. この辺は、昔は静かだったものだ。
+
+###### → Khu vực này hồi xưa rất là yên tĩnh.
+
+##### 3. 学生時代は毎日図書館へ通ったものだ。
+
+###### → Thời sinh viên ngày nào tôi cũng đến thư viện.
+
+##### 4. 子どものころ、いたずら を して、よく父に叱られたものだ。
+
+###### → Hồi bé, tôi phá phách nên thường bị bố la rầy.
+
+##### 5. この辺は、昔は静かだったものだ。
+
+###### → Khu vực này hồi xưa rất yên tĩnh.
+
+##### 6. 学生のころはよく貧乏旅行をしたものでした。
+
+###### → Hồi sinh viên, tôi nhớ thường thực hiện những chuyến du lịch rẻ tiền.
+
+##### 7. 小さいころは、よくみんなで近くの森へ遊びに行ったものでした。
+
+###### → Hồi nhỏ, mọi người thường đi chơi ở khu rừng gần nhà.

@@ -1,0 +1,204 @@
+Cấp độ: N1
+
+# ～まぎれに（～紛れに）
+
+> Vì quá… nên… / Trong cơn… / Trong lúc túng quẫn…
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Aい bỏ い ＋ まぎれに**
+> **N ＋ まぎれに**
+
+Có thể viết bằng hiragana **「まぎれに」** hoặc dùng chữ Hán **「紛れに」**.
+
+## Cách dùng / Ý nghĩa
+
+Diễn tả việc **do cảm xúc hoặc trạng thái khó chịu lên quá mạnh, người ta làm một hành động trong lúc thiếu bình tĩnh, không suy xét thấu đáo**.
+
+Mẫu câu không chỉ thể hiện nguyên nhân **“vì quá… nên…”**, mà còn gợi cảm giác **bị cảm xúc chi phối rồi hành động bột phát**, hoặc **làm liều, chống chế để đối phó với tình thế**.
+
+**Ví dụ dễ nhớ:**
+
+##### 彼は腹立ち**まぎれに**、ドアを強く閉めた。
+
+###### → Trong cơn tức giận, anh ấy đóng sầm cửa lại.
+
+Ở đây, anh ấy **vì quá tức giận nên hành động theo cảm xúc**, thay vì bình tĩnh suy nghĩ.
+
+→ **Được dịch là: Vì quá… nên… / Trong cơn… / Trong lúc túng quẫn…**
+
+## Chú ý
+
+### ① Nên học theo từng cụm từ thường gặp
+
+##### **苦しまぎれに**
+
+→ Trong lúc quá khổ sở, bí bách hoặc bị dồn vào thế khó nên làm gì đó để tìm cách thoát ra.
+
+Không chỉ dùng cho đau đớn về thể xác, cụm này còn được dùng khi một người bị hỏi dồn, không biết giải thích thế nào nên nói dối hoặc chống chế.
+
+##### **悔しまぎれに**
+
+→ Vì quá cay cú, ấm ức hoặc không cam lòng nên nói hay làm điều gì đó.
+
+Chẳng hạn, thua cuộc nhưng không chấp nhận được nên đổ lỗi hoặc nói lời khó nghe.
+
+Ở đây, **悔しい** nên hiểu là **“cay cú, ấm ức, không cam lòng”**, không đơn thuần là “xấu hổ”.
+
+##### **腹立ちまぎれに**
+
+→ Trong cơn tức giận, để mặc cơn giận chi phối rồi hành động thiếu suy xét.
+
+Chẳng hạn, tức quá nên đập bàn, đóng sầm cửa hoặc trút giận lên người khác.
+
+### ② Không dùng cho mọi trường hợp “quá… nên…”
+
+Mẫu này thường đi với trạng thái khó chịu và hành động thiếu bình tĩnh.
+
+Khi muốn nói **“vui quá nên bật khóc”**, nên dùng:
+
+##### 合格の知らせを聞いて、うれしさのあまり泣いてしまった。
+
+###### → Nghe tin đỗ, tôi vui quá nên bật khóc.
+
+Không nên chỉ dựa vào nghĩa tiếng Việt **“quá… nên…”** rồi tự ghép mọi tính từ với **「まぎれに」**.
+
+### ③ Hành động phía sau không nhất thiết hoàn toàn vô thức
+
+Người thực hiện có thể vẫn chủ động nói hoặc làm điều gì đó, nhưng hành động ấy xuất phát từ **cảm xúc nhất thời hoặc tình trạng bị dồn ép**, thay vì được cân nhắc bình tĩnh.
+
+Ví dụ, **苦しまぎれにうそをつく** là biết mình đang nói dối, nhưng vì bí quá nên tìm cách chống chế.
+
+### ④ Phân biệt với 「～に紛れて」
+
+##### 腹立ちまぎれに、大声を出した。
+
+###### → Trong cơn tức giận, tôi đã lớn tiếng.
+
+Trọng tâm là **hành động do cảm xúc chi phối**.
+
+##### 人混みに紛れて、姿を消した。
+
+###### → Người đó lẫn vào đám đông rồi biến mất.
+
+Trọng tâm là **hòa lẫn vào thứ khác khiến khó nhận ra**.
+
+Không nên thấy cùng có **「紛れ」** rồi hiểu hai cách nói này theo cùng một nghĩa.
+
+## Ví dụ
+
+### 1. 苦しまぎれに — Trong lúc khổ sở, túng quẫn
+
+##### ①　質問に答えられず、彼は苦し**まぎれに**うそをついた。
+
+###### → Không trả lời được câu hỏi, anh ấy bí quá nên nói dối.
+
+##### ②　言い訳が思いつかず、苦し**まぎれに**「忘れました」と答えた。
+
+###### → Không nghĩ ra được lời biện minh, tôi đành chống chế rằng “Tôi quên mất rồi”.
+
+##### ③　ミスを指摘された彼は、苦し**まぎれに**ほかの人のせいにした。
+
+###### → Bị chỉ ra lỗi sai, anh ấy túng quá nên đổ lỗi cho người khác.
+
+##### ④　苦し**まぎれに**その場を取り繕ったが、すぐに話の矛盾を指摘された。
+
+###### → Tôi đã cố chống chế để cho qua chuyện, nhưng ngay lập tức bị chỉ ra điểm mâu thuẫn trong lời nói.
+
+**Chú ý:**
+
+Trong những câu trên, **苦しまぎれに** không nhất thiết dịch là “vì đau khổ quá”. Các cách dịch **“bí quá nên…”**, **“trong lúc túng quẫn…”**, **“đành chống chế…”** sẽ tự nhiên hơn tùy tình huống.
+
+### 2. 悔しまぎれに — Vì quá cay cú, ấm ức
+
+##### ⑤　試合に負けた彼は、悔し**まぎれに**「今日は本気じゃなかった」と言った。
+
+###### → Thua trận, anh ấy cay cú nên nói: “Hôm nay tôi đâu có chơi hết sức”.
+
+##### ⑥　弟に負けて、悔し**まぎれに**ゲームのコントローラーを投げてしまった。
+
+###### → Thua em trai, tôi cay cú quá nên ném cả tay cầm chơi game đi.
+
+##### ⑦　彼女は悔し**まぎれに**、相手の欠点ばかり並べ立てた。
+
+###### → Vì quá ấm ức, cô ấy cứ kể ra hết khuyết điểm này đến khuyết điểm khác của đối phương.
+
+##### ⑧　悔し**まぎれに**言った一言で、友達を傷つけてしまった。
+
+###### → Chỉ vì một câu nói trong lúc cay cú, tôi đã làm tổn thương bạn mình.
+
+**Chú ý:**
+
+Những câu này thường gợi tình huống **không chấp nhận được thất bại hoặc cảm thấy thua kém**, rồi phản ứng để giải tỏa sự ấm ức.
+
+### 3. 腹立ちまぎれに — Trong cơn tức giận
+
+##### ⑨　彼は腹立ち**まぎれに**、机を強くたたいた。
+
+###### → Trong cơn tức giận, anh ấy đập mạnh xuống bàn.
+
+##### ⑩　私は腹立ち**まぎれに**、相手の話を最後まで聞かずに電話を切った。
+
+###### → Vì quá tức giận, tôi cúp máy khi chưa nghe người kia nói hết.
+
+##### ⑪　腹立ち**まぎれに**送ったメッセージを、後になって後悔した。
+
+###### → Sau đó, tôi đã hối hận về tin nhắn mình gửi trong cơn tức giận.
+
+##### ⑫　上司に叱られた彼は、腹立ち**まぎれに**同僚に八つ当たりした。
+
+###### → Bị sếp mắng, anh ấy tức quá nên giận cá chém thớt với đồng nghiệp.
+
+**Chú ý từ vựng:**
+
+##### **八つ当たりする（やつあたりする）**
+
+→ Trút giận lên người hoặc vật không liên quan; giận cá chém thớt.
+
+## Phân biệt với các cách nói liên quan
+
+### ① 人混みに紛れて — Lẫn vào đám đông
+
+##### 犯人は人混みに紛れて逃げた。
+
+###### → Thủ phạm lẫn vào đám đông để bỏ trốn.
+
+Đây là nghĩa **hòa lẫn vào khiến khó phân biệt**, không phải “vì quá đông nên…”.
+
+### ② どさくさに紛れて — Lợi dụng lúc hỗn loạn
+
+##### 彼はどさくさに紛れて、会場から抜け出した。
+
+###### → Anh ấy lợi dụng lúc hỗn loạn để lẻn ra khỏi hội trường.
+
+Cũng có thể nói:
+
+##### 彼はどさくさまぎれに、会場から抜け出した。
+
+###### → Nhân lúc hỗn loạn, anh ấy lẻn ra khỏi hội trường.
+
+Riêng **「どさくさまぎれに」** cần ghi nhớ với nghĩa **“lợi dụng lúc hỗn loạn…”**, tránh áp dụng máy móc cách dịch “vì quá… nên…”.
+
+### ③ 気が紛れる — Tạm nguôi ngoai, khuây khỏa
+
+##### 友達と話していると、少し気が紛れた。
+
+###### → Nói chuyện với bạn bè khiến tôi cảm thấy khuây khỏa đôi chút.
+
+Ở đây, sự chú ý chuyển sang việc khác nên nỗi buồn hoặc cảm giác khó chịu tạm thời giảm bớt. Câu này không diễn tả hành động bột phát do cảm xúc quá mạnh.
+
+## Tổng kết và bình luận
+
+Để nhớ **「～まぎれに」**, các bạn hãy hình dung:
+
+**“Trong lúc cảm xúc khó chịu lên quá mạnh, người ta thiếu bình tĩnh rồi làm một việc gì đó.”**
+
+Nên học thuộc ba cụm tiêu biểu:
+
+- **苦しまぎれにうそをつく**：Bí quá nên nói dối.
+- **悔しまぎれに悪口を言う**：Cay cú quá nên nói xấu.
+- **腹立ちまぎれに物を投げる**：Tức quá nên ném đồ.
+
+Điểm cần nhớ là sắc thái **bột phát, thiếu suy xét hoặc chống chế trong lúc bị dồn ép**. Vì vậy, những cách dịch như **“trong cơn…”**, **“bí quá nên…”**, **“cay cú quá nên…”** thường thể hiện rõ ý nghĩa của mẫu câu hơn cách dịch chung chung “vì quá… nên…”.

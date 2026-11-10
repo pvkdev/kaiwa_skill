@@ -1,0 +1,99 @@
+Cấp độ: N2
+
+# ～ (か) と思うと／ (か) と思ったら
+
+> **Ngay Khi… Thì Đã…/ Vừa Mới … Mà Đã…/ Vừa Thấy…Thì Đã…**
+
+---
+
+##  Cấu trúc
+
+> **Động từ thể た ＋ (か) と思うと／(か) と思ったら**
+
+---
+
+##  Cách dùng / Ý nghĩa
+
+①　Diễn tả ý nghĩa “Một sự việc hay một trạng thái thay đổi đột ngột, xảy ra ngay sau một hành động, sự việc nào đó.”. Nhấn mạnh việc cảm thấy sự chuyển đổi đột ngột từ việc trước sang việc phía sau quá nhanh. (Vế phía sau mang nội dung bất ngờ)
+
+②　Vì sử dụng để miêu tả hiện thực nên vế sau không đi với mệnh lệnh, nguyện vọng, ý chí (よう、つもり、したい) v.v..
+
+③　Ngoài ra không dùng cho hành vi của chính người nói.
+
+→　Có Nghĩa là : Ngay khi… thì đã…/ vừa mới … mà đã…/ Vừa thấy…thì đã…
+
+---
+
+##  Ví dụ
+
+##### 1. この時期は、晴れていたかと思うと、急に降り出すことがあるから、傘を もっていったら？
+
+###### → Mùa này cứ vừa nắng lên chút thì ngay lập tức lại mưa nên anh cứ mang ô đi.
+
+##### 2. 日曜なのに、お父さん、忙しそうだね。さっき戻ったかと思うと、また出かけて行った。
+
+###### → Tuy là ngày chủ nhật nhưng bố có vẻ bận rộn ghê. Vừa nãy mới thấy về mà đã lại đi mất rồi.
+
+##### 3. 急に空が暗くなったかと思うと、激しい雨が降ってきた。
+
+###### → Đột nhiên trời sập tối, và thế là một cơn mưa dữ dỗi trút xuống.
+
+##### 4. 空が何かピカッと光ったかと思うと、ドーンと大きな音がして地面が揺れた。
+
+###### → Vừa mới thấy trên bầu trời lóe sáng lên một cái gì đó thì một tiếng ầm vang lên và mặt đất rung chuyển.
+
+##### 5. ロン君は「さようなら」と言ったかと思うと、教室を飛び出していった。
+
+###### → Long vừa nói “tạm biệt” xong thì đã phóng ra khỏi lớp.
+
+##### 6. あの二人、さっきまで喧嘩していたかと思ったら、もう仲良くしている。
+
+###### → Hai người đó vừa mới thấy cãi nhau lúc nãy xong mà giờ đã hòa vui vẻ rồi.
+
+##### 7. この時期は、晴れていたかと思うと、急に雨が降り出すこともあるから、傘を持って行ったほうがいい。
+
+###### → Mùa này trời có khi vừa thấy nắng lên chút lại đổ mưa bất chợt, anh nên mang theo dù.
+
+##### 8. うちの子どもは学校から帰ってきたかと思うと、いつもすぐ遊びに行っていまう。
+
+###### → Con tôi luôn vừa mới thấy nó đi học về là lại phóng đi chơi ngay.
+
+##### 9. やっと帰ってきたかと思ったら、また出かけるの？
+
+###### → Mãi mới về nhà, vậy mà lại đi nữa à?
+
+##### 10. 帰ってきたかと思ったら、また出かけていた。
+
+###### → Vừa mới về đây mà lại đi nữa rồi.
+
+##### 11. あの子はやっと勉強を始めたかと思ったら、もう居眠りをしている。
+
+###### → Vừa thấy nó ngồi vào bạn học thì lại đã ngủ mất rồi.
+
+##### 12. 赤ちゃんは笑ったかと思ったら、また泣き出して困っていた。
+
+###### → Đứa bé vừa thấy nó cười xong lại khóc lên khiến tôi rất bối rối.
+
+##### 13. 何をやっているのかと思ったら、昼寝をしていたのか。
+
+###### → Đang nghĩ không biết nó đang làm gì, hóa ra nó đang ngủ trưa.
+
+##### 14. あの人は忙しい人で、来たかと思ったら、もう帰ってきた。
+
+###### → Người đó luôn bận rộn, cứ nghĩ là đã tới, dè đâu lại về mất tiêu rồi.
+
+##### 15. 花が咲いたと思ったら、もう散ってしまった。
+
+###### → Cứ nghĩ là hoa đã nở, ngờ đâu đã rụng mất tiêu rồi.
+
+##### 16. 赤ちゃんは、泣いたかと思うとすぐに笑いはじめたり、表情の変化が激しい。
+
+###### → Em bé vừa mới khóc đã cười ngay rồi, biểu cảm thay đổi nhanh thế.
+
+##### 17. 彼は椅子に座ったかと思うと、すぐに居眠りを始めた。
+
+###### → Anh ấy vừa mới ngồi xuống ghế thì đã bắt đầu ngáp.
+
+##### 18. 「彼女、最近、ちょっと変だね」「うん。さっきまで笑っていたかと思うと、急に黙り込んだりして ・・・」
+
+###### → ”Gần đây cô ấy lạ ghê.”/ “Uh. Vừa nãy đang cười mà ngay lập tức lại chẳng nói chẳng rằng …”

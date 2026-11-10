@@ -1,0 +1,196 @@
+Cấp độ: N3
+
+# ～ように
+
+> **Như…/ Theo Như…/ Đúng Như…/ Để…/ Sao Cho…/ Để Không…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+**① Như…/ Theo như…**
+
+> **N ＋ の ＋ ように**  
+> **V thể thường ＋ ように**
+
+→ Với động từ, có thể gặp các dạng như **Vる／Vた／Vない／Vている＋ように**, tùy nội dung muốn diễn đạt.
+
+**② Để…/ Sao cho…**
+
+> **V thể khả năng ＋ ように**  
+> **Vない ＋ ように**  
+> **Vる chỉ trạng thái, kết quả không mang ý chí ＋ ように**
+
+→ Với những động từ như **間に合う／わかる／見える／聞こえる**, dùng dạng từ điển trước ように.
+
+→ **Ở nghĩa mục đích, có thể lược bỏ に, dùng ～よう、…**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**① Diễn tả việc làm theo hoặc nội dung phù hợp với một điều đã nói, đã viết, đã biết, đã nghĩ…**
+
+- **Lấy nội dung phía trước làm căn cứ hoặc làm mẫu để diễn đạt phần phía sau.**
+- **Có thể dùng khi hướng dẫn người khác làm theo, hoặc khi nhắc lại một nội dung đã được đề cập.**
+- **Mang nghĩa gần với ～とおりに trong những ngữ cảnh này.**
+
+##### 皆さん、今から私が言うように体を動かしてください。
+
+###### → Mọi người hãy cử động cơ thể theo những gì tôi nói từ bây giờ nhé.
+
+→ Người nghe được yêu cầu **làm theo lời hướng dẫn của người nói**.
+
+##### この本にも書いてあるように、世界のあちこちで水不足が大きな問題になっています。
+
+###### → Như trong cuốn sách này cũng đã viết, tình trạng thiếu nước đang trở thành một vấn đề lớn ở nhiều nơi trên thế giới.
+
+→ Người nói **dẫn lại nội dung đã được viết trong sách** để trình bày vấn đề.
+
+→ Được dịch là: **Như…/ Theo như…/ Đúng như…**
+
+**② Diễn tả mục đích: thực hiện B để đạt được trạng thái A hoặc để tránh xảy ra A.**
+
+- **Vế trước nêu trạng thái, khả năng hoặc kết quả muốn đạt được.**
+- **Vế sau nêu hành động được thực hiện để hướng tới kết quả đó.**
+- **Khi dùng Vない, diễn tả việc làm gì đó để tránh một điều không mong muốn xảy ra.**
+
+##### ９時の新幹線に間に合うように、８時に家を出た。
+
+###### → Tôi đã ra khỏi nhà lúc 8 giờ để kịp chuyến Shinkansen lúc 9 giờ.
+
+→ **Ra khỏi nhà lúc 8 giờ** là hành động được thực hiện để đạt được kết quả **kịp chuyến tàu lúc 9 giờ**.
+
+##### 他の人の迷惑にならないように、静かに話してください。
+
+###### → Hãy nói nhỏ để không làm phiền người khác.
+
+→ Người nói yêu cầu **nói nhỏ** nhằm tránh kết quả **gây phiền cho người khác**.
+
+→ Được dịch là: **Để…/ Sao cho…/ Để có thể…/ Để không…**
+
+---
+
+## Chú ý
+
+- **Cần phân biệt hai nghĩa bằng quan hệ giữa hai vế.** Nếu làm theo một nội dung đã có thì hiểu là **“theo như…”**. Nếu làm một việc nhằm đạt kết quả nào đó thì hiểu là **“để…”**.
+- **Ở nghĩa thứ nhất, không phải lúc nào ように cũng yêu cầu làm giống hoàn toàn từng chi tiết.** Khi nhắc lại điều đã nói hoặc đã viết, thường chỉ cần dịch tự nhiên là **“như…”**.
+- **Trong lời nói trang trọng, có thể gặp Vました＋ように khi nhắc lại điều đã nói hoặc đã giải thích.**
+
+##### 先日お話ししましたように、佐藤さんが転勤することになりました。
+
+###### → Như tôi đã nói hôm trước, anh Sato sẽ chuyển công tác.
+
+- **Ở nghĩa mục đích, vế trước thường là điều muốn có thể thực hiện được, trạng thái muốn đạt được hoặc điều muốn tránh.** Không nên thấy tiếng Việt có chữ “để” là luôn dùng ように.
+- **Chủ thể ở hai vế có thể giống nhau hoặc khác nhau.** Chẳng hạn, mẹ thực hiện việc chăm lo, còn gia đình là những người được sống thoải mái.
+- **Có thể bỏ に ở nghĩa mục đích.** Cách dùng ～よう、… thường mang sắc thái trang trọng hơn.
+
+##### 母は家族が快適に暮らせるよう、いろいろと気を配っている。
+
+###### → Mẹ quan tâm, chăm lo nhiều điều để gia đình có thể sống thoải mái.
+
+- **Vない＋ように diễn tả mục đích tránh xảy ra một việc, không có nghĩa bản thân ように là mẫu cấm đoán.**
+
+##### 忘れないように、メモしておいた。
+
+###### → Tôi đã ghi chú lại để không quên.
+
+---
+
+## Phân biệt với ～ために
+
+**① ～ように: Nhấn mạnh trạng thái hoặc kết quả muốn đạt được.**
+
+- Thường đi với **thể khả năng**, **thể phủ định** hoặc **động từ diễn tả trạng thái, kết quả không mang ý chí**.
+- Hướng đến việc **có thể làm được**, **kịp**, **hiểu được**, **không quên**, **không gây phiền…**
+
+##### ９時の新幹線に間に合うように、８時に家を出た。
+
+###### → Tôi đã ra khỏi nhà lúc 8 giờ để kịp chuyến Shinkansen lúc 9 giờ.
+
+→ Nhấn mạnh kết quả muốn đạt được là **kịp chuyến tàu**.
+
+**② ～ために: Nêu mục đích thực hiện một hành động có chủ ý.**
+
+> **Vる ＋ ために**
+
+- Trong cách dùng mục đích cơ bản, động từ phía trước diễn tả **hành động mà người thực hiện chủ động hướng tới**.
+- Chủ thể thực hiện hành động ở hai vế thường là một.
+
+##### 私はコンピューターについて勉強するために日本へ来た。
+
+###### → Tôi đã đến Nhật để học về máy tính.
+
+→ **Học về máy tính** là hành động có chủ ý, được đặt làm mục đích của việc đến Nhật.
+
+##### ９時の新幹線に乗るためには、８時に家を出なければならない。
+
+###### → Để lên chuyến Shinkansen lúc 9 giờ, phải ra khỏi nhà lúc 8 giờ.
+
+→ **Lên chuyến tàu** là hành động muốn thực hiện.
+
+**Các bạn có thể nhớ:** ために thường hướng đến **“làm một việc”**, còn ように thường hướng đến **“đạt được một trạng thái hoặc kết quả”**. Vì vậy, không thể thay thế hai mẫu cho nhau trong mọi câu.
+
+---
+
+## Ví dụ
+
+**① Như…/ Theo như…**
+
+##### 1. 子どもは親の思うようにはならないのがふつうだ。
+
+###### → Thông thường, con cái không phát triển theo đúng những gì cha mẹ mong muốn.
+
+##### 2. 皆さん、今から私が言うように体を動かしてください。
+
+###### → Mọi người hãy cử động cơ thể theo những gì tôi nói từ bây giờ nhé.
+
+##### 3. この本にも書いてあるように、世界のあちこちで水不足が大きな問題になっています。
+
+###### → Như trong cuốn sách này cũng đã viết, tình trạng thiếu nước đang trở thành một vấn đề lớn ở nhiều nơi trên thế giới.
+
+##### 4. 先日お話ししましたように、佐藤さんが転勤することになったので、来週、送別会を開きたいと思います。
+
+###### → Như tôi đã nói hôm trước, vì anh Sato sẽ chuyển công tác nên tôi muốn tổ chức tiệc chia tay vào tuần sau.
+
+##### 5. いつものように、朝７時に家を出た。
+
+###### → Như thường lệ, tôi ra khỏi nhà lúc 7 giờ sáng.
+
+##### 6. ご存じのように、明日は休館日です。
+
+###### → Như mọi người đã biết, ngày mai là ngày đóng cửa.
+
+**② Để…/ Sao cho…/ Để không…**
+
+##### 7. ９時の新幹線に間に合うように、８時に家を出た。
+
+###### → Tôi đã ra khỏi nhà lúc 8 giờ để kịp chuyến Shinkansen lúc 9 giờ.
+
+##### 8. 母は家族が快適に暮らせるよう、いろいろと気を配っている。
+
+###### → Mẹ quan tâm, chăm lo nhiều điều để gia đình có thể sống thoải mái.
+
+##### 9. 他の人の迷惑にならないように、静かに話してください。
+
+###### → Hãy nói nhỏ để không làm phiền người khác.
+
+##### 10. 思いついたアイディアは、忘れないようにすぐメモしておくことが大切だ。
+
+###### → Với những ý tưởng vừa nghĩ ra, điều quan trọng là ghi chú lại ngay để không quên.
+
+##### 11. 子どもが一人で着替えられるように、ボタンの少ない服を選んだ。
+
+###### → Tôi đã chọn quần áo có ít cúc để con có thể tự thay đồ.
+
+##### 12. 後ろの席の人にも声が届くように、少し大きな声で話した。
+
+###### → Tôi đã nói lớn hơn một chút để những người ngồi phía sau cũng nghe được.
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Với nghĩa **“như/theo như…”**, các bạn hãy tìm xem câu đang dựa vào **lời nói, nội dung đã viết, điều đã biết hay điều mong muốn** nào.
+- Với nghĩa **“để/sao cho…”**, hãy xác định **kết quả muốn đạt được ở vế trước** và **hành động thực hiện để hướng tới kết quả đó ở vế sau**.
+- Điểm dễ nhầm nhất là ように và ために. Hãy chú ý sự khác nhau giữa **“làm một việc”** và **“có thể làm được hoặc đạt được một kết quả”**, thay vì chỉ dựa vào cách dịch tiếng Việt là “để”.

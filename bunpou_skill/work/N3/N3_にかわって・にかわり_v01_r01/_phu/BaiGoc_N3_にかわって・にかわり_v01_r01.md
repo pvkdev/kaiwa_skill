@@ -1,0 +1,79 @@
+Cấp độ: N3
+
+# ～ にかわって／にかわり
+
+**Thay Thế Cho…/ Thay Mặt Cho…/ Thay Cho…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **N + の + に代わって**  
+>
+> **Vる・Vない・Vた + に代わって**  
+>
+> **Vる・Vない・Vた + に代わり、～**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+　『～に代わって／～に代わり』sử dụng khi muốn nói rằng “làm việc khác, sử dụng cái khác, người khác làm thay cho một người, một vật vốn có trách nhiệm phải thực hiện”.
+
+→　Có Nghĩa là : **Thay thế cho…/ Thay mặt cho…/ Thay cho…**
+
+---
+
+## Ví dụ
+
+##### 1. 父に代わって、一言お礼申し上げます。
+
+###### → Thay mặt cha tôi, tôi xin có đôi lời cảm tạ.
+
+##### 2. 本日は、入院中の父に代わり、私がご挨拶させていただきます。
+
+###### → Hôm nay, tôi xin phép được gửi lời chào hỏi, thay cho cha tôi đang phải nằm viện.
+
+##### 3. 出張中の部長に代わって、私がご挨拶させていただきます。
+
+###### → Thay mặt ông Trưởng phòng đang đi công tác, tôi xin phép được chào hỏi.
+
+##### 4. 急病の母に代わって、父が出席した。
+
+###### → Cha tôi đã tham dự, thay cho mẹ tôi bị bệnh đột ngột.
+
+##### 5. 本日、ご出席いただけなかった山本さんに代わって、ご家族の方に賞状と副賞を受け取っていただきます。
+
+###### → Ông Yamamoto hôm nay không thể tham dự được, chúng tôi xin mời người trong gia đình tiếp nhận bằng khen và phần thưởng bổ sung thay cho ông ấy.
+
+##### 6. 木村先生は急用で学校へいらっしゃいません。それで今日は、木村先生に代わって、私が授業をします。
+
+###### → Thầy Kimura hôm nay có việc đột xuất nên không đến trường được. Vì vậy, hôm nay tôi sẽ dạy thay cho thầy ấy.
+
+##### 7. 松本さんが立候補を辞退するとなると、彼女に代わる実力者を立てなければならない。
+
+###### → Nếu bà Matsumoto rút khỏi danh sách ứng cử viên, chúng ta phải đề cử người có năng lực thay thế cho bà ấy.
+
+##### 8. 今後はガソリンで走る車に代わって電気自動車が普及するのだろうか。
+
+###### → Trong thời gian tới, có lẽ xe ô tô điện sẽ phổ biến, thay cho xe chạy bằng xăng.
+
+##### 9. 野球に代わり、サッカーが盛んになってきた。
+
+###### → Thay cho môn bóng chày, bóng đã đã ngày càng trở nên thịnh hành.
+
+##### 10. 普通の電話にかわって、各家庭でテレビ電話が使われるようになる日もそう遠くないだろう。
+
+###### → Có lẽ ngày mà điện thoại tivi sẽ được sử dụng trong các gia đình thay cho điện thoại thông thường sẽ không còn xa nữa.
+
+##### 11. 21世紀には、これまでの先進諸国に代わって、アジア諸国が世界にリードするようになるのではないだろうか。
+
+###### → Vào thế kỷ 21, thay thế cho các nước tiên tiến trước đây, có lẽ các nước châu Á sẽ lãnh đạo thế giới.
+
+##### 12. 本日は社長に代わり、私、中川がご挨拶を申し上げます。
+
+###### → Hôm nay, thay mặt cho Giám đốc, tôi, Nakagawa, xin gửi lời chào đến quý vị.
+
+##### 13. ビデオにかわり、DVDが使われるようになった。
+
+###### → DVD đã bắt đầu được sử dụng, thay cho Video.

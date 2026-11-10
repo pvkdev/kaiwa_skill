@@ -1,0 +1,133 @@
+Cấp độ: N1
+
+# ～ や/ や否や
+
+> **Ngay Khi Vừa…/ Vừa Mới… Thì…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Vる ＋ や/ や否や**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói diễn đạt một hành động, trạng thái diễn ra ngay tức thì sau một hành động khác. Thường diễn đạt những trường hợp bất ngờ, ngoài dự đoán hoặc không diễn ra theo cách thông thường.
+
+②　Mẫu câu này dùng với những động từ diễn tả hành động xảy ra trong khoảnh khắc, theo sau đó là vế câu miêu tả sự việc, hiện thực, không diễn tả quan điểm, nguyện vọng, hay suy nghĩ của người nói.
+
+③　Vì là cách nói diễn đạt sự việc xảy ra thực tế nên không sử dụng để diễn tả câu ý chí như 「しよう」「するつもり」, hoặc cũng không sử dụng cho câu sai khiến, mệnh lệnh, hoặc phủ định. Ngoài ra cũng không sử dụng để diễn tả hành động của bản thân. Chỉ sử dụng để diễn tả cho ngôi thứ ba
+
+④　Mẫu câu này giống với mẫu câu ～が早いか, thường dùng trong văn viết.
+
+⑤　Cấu trúc này có ý nghĩa tương tự với 「すると、すぐに」「たとたん（に）」
+
+⑥　Hình thức 「や」(bỏ「否や」) thỉnh thoảng cũng xuất hiện và cũng có ý nghĩa, cách sử dụng tương tự.
+
+→　Có Nghĩa là : Ngay khi vừa…/ Vừa mới… Thì…
+
+---
+
+## Ví dụ
+
+##### 1. よし子は部屋に入ってくるや否や、「変なにおいがする」と言って窓を開けた。
+
+###### → Yoshiko vừa mới bước vào phòng đã nói “có mùi gì lạ” và mở cửa sổ ra.
+
+##### 2. 帰宅するや、愛犬が飛びついてきた。
+
+###### → Tôi vừa về đến nhà là cún yêu đã chồm ra.
+
+##### 3. 私に借金を している山田さんは、私の顔を見るや、言い訳を始めた。
+
+###### → Anh Yamada, người vay tiền tôi, vừa nhìn thấy tôi là đã vội thanh minh.
+
+##### 4. 子供たちは唐揚げが大好物で、食卓に出すや、あっという間になくなってしまう。
+
+###### → Bọn trẻ nhà tôi thích món gà rán karage nên bàn ăn vừa dọn ra là thoắt một cái đã hết sạch.
+
+##### 5. そのニュースが伝わるや否や、たちまちテレビ局に抗議の電話がかかってきた。
+
+###### → Ngay khi tin đó vừa truyền đi thì ngay lập tức đã có điện thoại gọi đến đài truyền hình phản đối.
+
+##### 6. 社長の決断がなされるや、担当のスタッフはいっせいに仕事に取りかかった。
+
+###### → Giám đốc vừa quyết định xong là các nhân viên phụ trách đồng loạt bắt tay vào công việc.
+
+##### 7. 火災報知器が鳴るや否や、生徒は次々に走って校庭へ避難した。
+
+###### → Chuông báo cháy vừa reo là các học sinh lũ lượt sơ tán ra sân trường.
+
+##### 8. 小犬をいじめていた子供たちは、警察が来たと見るや一斉に逃げ出した。
+
+###### → Mấy đứa nhỏ đang bắt nạt chú cún con ngay khi vừa thấy cảnh sát đến thì đồng loạt bỏ chạy.
+
+##### 9. 息子は食卓に着くや否やおなかが減ったといって、ご飯を食べ始めた。
+
+###### → Con trai tôi vừa ngồi vào bàn ăn thì nói đói bụng quá, rồi bắt đầu ăn ngay.
+
+##### 10. 彼が家から出てゆくやいなや、例の旅の男が入ってきた。
+
+###### → Ngay khi anh ta vừa rời khỏi nhà thì người lữ khách đó bước vào.
+
+##### 11. 会社に着くや否や、またまたいいことが起こった。
+
+###### → Ngay khi tôi vừa đến công ty thì đã có điều tốt xảy đến.
+
+##### 12. 選挙戦が始まるや否や、あちこちからにぎやかな声が聞こえてきた。
+
+###### → Cuộc tranh cử vừa mới bắt đầu là đã thấy tranh luận ồn ào từ chỗ này chỗ kia.
+
+##### 13. この病気の新しい治療法が発表されるや否や、全国の病院から問い合わせが殺到した。
+
+###### → Phương pháp chữa trị mới cho căn bệnh này vừa mới được công bố thì đã liên tục nhận được câu hỏi từ các bệnh viện trên khắp cả nước.
+
+##### 14. 不運な娘が眼を閉じるやいなやリックは手紙を開こうと思った。
+
+###### → Đứa con gái bất hạnh vừa nhắm mắt thì Rick định mở lá thư ra đọc.
+
+##### 15. わたしはその人の顔を一目見るや否や、１０年前に別れた恋人だと気がついた。
+
+###### → Khoảnh khắc tôi nhìn vào gương mặt người đàn ông đó thì tôi đã nhận ra đó là người bạn trai mà tôi đã chia tay 10 năm trước.
+
+##### 16. 彼が登場するや否や、会場から割れんばかりの拍手が沸き起こった。
+
+###### → Ngay khi anh ấy vừa xuất hiện trên sân khấu thì khán giả vỗ tay như sấm.
+
+##### 17. ドアが開くや、猫が飛び出していった。
+
+###### → Cửa vừa hé mở là con mèo phóng ra ngoài đi mất.
+
+##### 18. ベルが鳴るや否や、学生たちは一斉に書き始めた。
+
+###### → Chuông vừa mới reo là các học sinh đồng loạt viết.
+
+##### 19. 授業が始まるや否や、彼は居眠りを始めた。
+
+###### → Giờ học vừa mới bắt đầu thì anh ta đã bắt đầu ngủ gật.
+
+##### 20. その男の人は部屋に入るや否や、いきなり大声で怒鳴り始めた。
+
+###### → Ngay khi người đàn ông đó vừa mới bước vào phòng thì đột ngột nổi giận đùng đùng.
+
+##### 21. 食卓に到着するや否や、彼女が詰め寄った。
+
+###### → Cô ta đẩy tôi ngồi sát vào ngay khi tôi vừa mới đến bàn ăn.
+
+##### 22. 私が家に帰ってくるや否や、愛犬が飛びついてきた。
+
+###### → Ngay khi tôi vừa về đến nhà thì chú chó cưng đã bay đến ngay.
+
+##### 23. 泥棒は警察の顔を見るや否や、逃げ出していった。
+
+###### → Tên trộm ngay khi vừa thấy mặt viên cảnh sát đã bỏ chạy đi.
+
+##### 24. 彼女が船室に入るやいなや明かりが消えた。
+
+###### → Ngay khi cô ấy vừa bước vào cabin tàu thì đèn tắt.
+
+##### 25. ホイッスルの音を聞くやいなや、彼らは全速力で走りだした。
+
+###### → Ngay khi vừa nghe tiếng còi thì họ bắt đầu chạy hết tốc lực.

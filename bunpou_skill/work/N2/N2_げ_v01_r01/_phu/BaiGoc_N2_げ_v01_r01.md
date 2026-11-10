@@ -1,0 +1,119 @@
+Cấp độ: N2
+
+# ～ げ
+
+> Trông Có Vẻ…
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể ~~ます~~ ＋ げ**  
+>
+> **Tính từ - ( ~~い~~) ＋ げ**  
+>
+> **Tính từ - ( ~~な~~) ＋ げ**  
+>
+> **～ げな ＋Danh từ**  
+>
+> **～げに ＋ Động từ**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Mẫu câu diễn tả sự cảm nhận về dáng vẻ, tâm trạng của người hay con vật nào đó qua những gì nhìn thấy bên ngoài
+
+②「げ」được dùng như một tính từ đuôi な.
+
+③　Trong các ví dụ có thể thay bằng「～そう」, nhưng「～げ」là cách nói mang tính văn viết và là cách nói hơi cổ. Cũng có nhiều trường hợp được xem như là cách nói mang tính thành ngữ.
+
+④　Kanji đôi khi được viết là「気」
+
+Có Nghĩa là : Trông có vẻ…
+
+---
+
+## Ví dụ
+
+##### 1. 老人が、何か言いたげに近づいて来た。
+
+###### → Ông lão có vẻ như muốn nói gì đó đã tiến lại gần phía tôi.
+
+##### 2. 彼は寂しげに、一人で公園の ペンチ に座っていた。
+
+###### → Anh ấy ngồi một mình trên ghế đá công viên với dáng vẻ cô đơn.
+
+##### 3. A: あの犬、迷子になったのかなあ？
+
+##### B: わからない、でも悲しげな目でこっち を見ているね。
+
+###### → A: Chú chó kia, hình như bị lạc thì phải?
+
+###### B: Tớ không rõ. Nhưng nó đang nhìn về phía này với ánh mắt có vẻ buồn bã nhỉ.
+
+##### 4. （ニュース）日本は、危なげのない試合で １回戦に勝利しました。
+
+###### → (Tin tức) Nhật Bản đã chiến thắng ngay hiệp đầu trong một trận đấu không có vẻ gì là nguy hiểm.
+
+##### 5. その人は退屈げに雑誌のページをめくっていた。
+
+###### → Lúc đó người ấy đang lần giở từng trang tạp chí trông có vẻ buồn tẻ.
+
+##### 6. 高い熱のある博は、 私に話すのも苦しげだった。
+
+###### → Hiroshi đang sốt cao nên ngay cả việc nói chuyện với tôi cũng có vẻ khó khăn.
+
+##### 7. 花子  は 楽  しげに 初  めての 海外旅行  の 話  をしてくれた。
+
+###### → Hanako trông có vẻ hào hứng khi kể về chuyến du lịch nước ngoài lần đầu tiên của cô ấy.
+
+##### 8. 彼女  の 笑顔  にはどこか 寂しげなところがあった。
+
+###### → Đâu đó trên khuôn mặt tươi cười của cô ấy, thoáng một nét buồn bã.
+
+##### 9. あの人は 寂しげな 目をしている。
+
+###### → Ánh mắt người đó có vẻ cô đơn.
+
+##### 10. 二人は親しげに 話している。
+
+###### → Hai người đó nói chuyện trông có vẻ thân thiết.
+
+##### 11. 「そうですか」というその声には 悲しげな 響きがあった。
+
+###### → Có một âm hưởng đau buồn trong giọng nói “vậy à” á.
+
+##### 12. 彼 は 両親  を 亡くしてから、 悲しげで 仕事も休みがちだ。
+
+###### → Anh ta kể từ sau khi mất cha mẹ, trông có vẻ buồn bã và cũng hay nghỉ việc.
+
+##### 13. 「 お  母さん、どうしたの」と聞くと、 子供は 悲しげな 顔をして下を向いた。
+
+###### → เมื่อ tôi hỏi “mẹ cháu sao thế?” thì đứa bé trông có vẻ buồn bả và cúi mặt xuống.
+
+##### 14. 彼  は 何か言いたげだった。
+
+###### → Anh ấy có vẻ như muốn nói điều gì đó.
+
+##### 15. 彼  のそのいわくありげな 様子  が 私  には 気になった。
+
+###### → Tôi để ý cái dáng vẻ của anh ấy như có chưa một ẩn tình gì đó.
+
+##### 16. 男  は 意味  ありげな 笑  いを 浮  かべた。
+
+###### → Người đàn ông nở một nụ cười đầy ẩn ý.
+
+*意味  ありげな～ là cách nói thành ngữ.*
+
+##### 17. 会議の 後  、 彼  はいかにも不安ありげな 顔をしていた。
+
+###### → Sau cuộc họp, gương mặt anh ấy trông có vẻ bất an.
+
+##### 18. A:田中さん、手伝ってあげたのに、一言もお礼なしだった。
+
+###### → A: Cái cậu Tanaka ý, tôi giúp đỡ như thế mà đến một lời cảm ơn cũng không có.
+
+#####  B: 一言も？かわいげないね。
+
+###### → B: Một lời cảm ơn cũng không có ư? Thế thì không được tử tế lắm nhỉ.

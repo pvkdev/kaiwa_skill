@@ -1,0 +1,103 @@
+Cấp độ: N3
+
+# ～ からには／からは
+
+**Một Khi Đã…Thì Sẽ…/ Bởi Vì…Nên…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **\[Thể thường\] + からには／からは、～**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+① Là cách nói trình bày nhấn mạnh lý do, thể hiện thái độ, ý chí quyết tâm, sẵn sàng làm gì đó của người nói (vế sau thể hiện nghĩa vụ, ý chí, hy vọng, yêu cầu, mệnh lệnh, quyết định, dự đoán… hàm ý tiếp tục đến cùng).
+
+② Ngoài ra, còn biểu thị ý nghĩa “vì đã diễn ra tình huống như thế/ vì đã như thế, nên…”. Theo sau thường là cách nói mang ý nghĩa “sẽ tiếp tục làm đến cùng”.
+
+③ Được sử dụng nhiều trong những trường hợp diễn tả ý nhờ vả, ý định, mệnh lệnh, ý chí của người nói. Thường đi chung với **「Vたい／てください／なければ／べきだ／つもりだ／はずだ／にちがいない／てはいけない」** v.v. ở phía sau
+
+→ Có Nghĩa là : **Một khi đã…thì sẽ…/ Bởi Vì…nên…**
+
+---
+
+## Ví dụ
+
+##### 1. 約束したからには、守るべきだ。
+
+###### → Một khi đã hứa thì phải giữ lời.
+
+##### 2. 試合に出るからには、勝ちたい。
+
+###### → Một khi đã tham gia thi đấu thì tôi muốn thắng.
+
+##### 3. 自分で決めたからには、大変でも頑張ります。
+
+###### → Một khi mà bản thân đã quyết định thì cho dù vất vả cũng sẽ cố gắng.
+
+##### 4. 会議に出席するからには、自分の意見を言うべきだ。
+
+###### → Một khi mà tham gia cuộc họp thì tôi phải nói ra ý kiến của mình.
+
+##### 5. やるからには、最後までやれ。
+
+###### → Một khi đã làm thì hãy làm đến cùng.
+
+##### 6. 日本に来たからには、日本のことを徹底的に知りたい。
+
+###### → Bởi vì đã đến Nhật nên tôi muốn hiểu rõ về Nhật Bản.
+
+##### 7. ベトナムに来たからには、ベトナムの文化を徹底的に知りたい。
+
+###### → Bởi vì đã đến Việt Nam nên tôi muốn hiểu rõ về văn hóa Việt Nam.
+
+##### 8. 何回も話し合って皆で決めたことだ。決めたからには成功するように頑張ろう。
+
+###### → Đây là việc đã được mọi người cùng nhau quyết định sau khi thảo luận nhiều lần nên một khi đã quyết rồi thì hãy cố gắng để đạt được thành công.
+
+##### 9. 自分からやると言ったからには、人に認められるような仕事をしたい。
+
+###### → Bởi vì đã nói là sẽ tự làm nên muốn làm những công việc được mọi người thừa nhận.
+
+##### 10. こちらからお願いするからは、私たちもできるだけのことをいたします。
+
+###### → Bởi vì chúng tôi đã nhờ vả nên về phía chúng tôi cũng sẽ cố gắng thực hiện tất cả những gì có thể.
+
+##### 11. こちらからお願いするからには、出来るだけの御礼をさせて頂きます。
+
+###### → Vì chúng tôi đã nhờ vả nên nhất định cho chúng tôi được cảm ơn.
+
+##### 12. 彼が戻った？「戻った」と言うからには、生きていると？
+
+###### → Anh ta đã trở lại à? Cậu nói “đã trở lại” ý là anh ta vẫn còn sống hả?
+
+##### 13. 二ヶ月以上も特訓をしたからには、少しは進歩するものと思っていたのだが。
+
+###### → Bởi vì đã luyện tập đặc biệt hơn 2 tháng trời nên tôi cứ tưởng có tiến bộ một chút rồi chứ.
+
+##### 14. 約束したからには、守らければならない。
+
+###### → Bởi vì đã hứa nên phải giữ lời.
+
+##### 15. ベトナムに住んでいるからには、ベトナムの法律に従わなければならない。
+
+###### → Bởi vì đang sống ở Việt Nam nên đương nhiên phải tuân thủ pháp luật của Việt Nam.
+
+##### 16. 試合に出るからには、勝ちたい。
+
+###### → Một khi đã thi đấu thì tôi muốn giành chiến thắng.
+
+##### 17. こうなったからには何が何でも優勝してほしい。
+
+###### → Đã đến nước này thì tôi muốn các cậu phải chiến thắng bằng mọi giá.
+
+##### 18. 親友に頼まれたからには、断るわけにはいかない。
+
+###### → Bởi vì đứa bạn thân nhờ nên tôi không thể từ chối được.
+
+##### 19. 子供であるからには、親の世話をするのは当たり前だ。
+
+###### → Là con nên việc chăm sóc bố mẹ là đương nhiên.

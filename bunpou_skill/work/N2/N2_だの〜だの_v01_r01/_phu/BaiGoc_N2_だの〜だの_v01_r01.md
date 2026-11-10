@@ -1,0 +1,79 @@
+Cấp độ: N2
+
+# ～ だの ～ だの
+
+> Nào Là… Nào Là…
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể thường + だの + Động từ thể thường + だの**  
+>
+> **Danh từ （だった） + だの + Danh từ （だった） + だの**  
+>
+> **Tính từ -na（だった） + だの + Tính từ -na （だった） + だの**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+Là cách nói mang tính liệt kê (giống với「～や～など」「～やら、～やら」「～なり～なり」「～とか ～とか」 ) hoặc dùng để phê phán, chê bai.
+
+→　Có Nghĩa là : Nào là… Nào là…
+
+---
+
+## Ví dụ
+
+##### 1. 彼女は市場に出かけると、肉だの野菜だの持ちきれないほど買ってきた。
+
+###### → Cô ấy, hễ đi chợ là mua về đủ thứ, nào thịt, nào rau, đến mức không cầm xuể.
+
+##### 2. きのう泊まったホテルは、眺めだのサービスだの、本当に満足のいくものだった。
+
+###### →  Khách sạn tôi ở lại hôm qua thì tôi thật sự rất hài lòng, nào là view nhìn, nào là dịch vụ… đều tốt.
+
+##### 3. 同窓会には中村だの池田だの、20年ぶりの懐かしい顔が揃った。
+
+###### → Tại buổi sinh hoạt của hội cựu học sinh, có đông đủ khuôn mặt thân quen, đã 20 năm chưa gặp lại, nào là Nakamura, nào là Ikeda.
+
+##### 4. 好きだの嫌いだの言わないで、栄養のために偏食したら駄目だよ。
+
+###### → Đừng có nói là thích món này, ghét món kia, chế độ ăn uống thiếu cân bằng dinh dưỡng là không được đâu đấy.
+
+##### 5. わたし、午後だの、午前だのって、どっちがどっちか、わからなくなってしまうのよ。
+
+###### → Tôi sẽ không còn biết lúc nào là buổi sáng, lúc nào là buổi tối nữa mất.
+
+##### 6. 彼は風邪を引いただの、頭が痛いだのと言って、よく学校をサボる。
+
+###### → Cậu ta thường hay cúp học với lý do nào là cảm, nào là nhức đầu…
+
+##### 7. 彼は、やれ給料が安いだの休みが少ないだのと文句が多い。
+
+###### → Anh ta than phiền rất nhiều, nào là đồng lương rẻ mạt, nào là ngày nghỉ quá ít.
+
+##### 8. 彼はいつ会っても会社を辞めて留学するだのなんだのと実現不可能な事ばかり言っている。
+
+###### → Lúc nào gặp anh ta cũng cứ nói toàn những chuyện không có thực, nào ra tôi sẽ nghỉ làm đi du học, nào là này nọ…
+
+##### 9. チャリティーバザーには有名人の服だのサイン入りの本だのいろいろなものが集まった。
+
+###### → Chợ bán hàng từ thiện đã tập hợp được đủ thứ, nào là quần áo những nhân vật nổi danh, nào là sách có chữ ký của tác giả…
+
+##### 10. なんだのかんだの弁解話ばかり言って、自分の間違いを認めない。
+
+###### → Nói chỉ cứ biện giải nào là thế này, nào là thế kia mà không chịu thừa nhận lỗi của mình.
+
+##### 11. 彼女の話はいつも給料が少ないだの仕事が忙しすぎるだの、文句ばかりだ。
+
+###### → Câu chuyện của bạn gái tôi luôn là mức lương thấp nhưng công việc lại quá bận rộn,lúc nào cũng phàn nàn.
+
+##### 12. 私の部屋には漫画だの服だのが散らかっていて寝る場所さえないほどだ。
+
+###### → Trong phòng của tôi lộn xộn nào là truyện tranh,quần áo,thậm chí đến chỗ ngủ còn không có.
+
+##### 13. 彼はいつもスターになるだの映画を撮るだのと、夢のようなことばかり言っている。
+
+###### → Anh ấy đang nói giống như một giấc mơ rằng anh ấy đang quay phim,trở thành một ngôi sao

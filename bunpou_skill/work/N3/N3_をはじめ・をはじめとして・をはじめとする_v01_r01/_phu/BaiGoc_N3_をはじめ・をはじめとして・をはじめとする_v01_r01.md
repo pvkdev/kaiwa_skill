@@ -1,0 +1,97 @@
+Cấp độ: N3
+
+# 〜 をはじめ／をはじめとして／をはじめとする
+
+> **Tiêu Biểu Như Là…/ Trước Tiên Là…/ Trước Hết Là…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Danh từ + をはじめ**  
+>
+> **Danh từ + をはじめとして**  
+>
+> **Danh từ + をはじめとする + Danh từ**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+① Mẫu câu dùng để đưa ra 1 đại diện, 1 ví dụ tiêu biểu mang tính điển hình,   rồi sau đó mới nêu lên những cái tương tự còn lại.
+
+②  Vì là nêu lên một cái điển hình sau đó nêu những cái tương tự nên vế sau thường đi với những từ thể hiện số nhiều, tập hợp như 「みんな・いろいろ・たくさん・だれも・など・まで」
+
+→ Có Nghĩa là : **Tiêu biểu như là…/ Trước tiên là…/ Trước hết là…**
+
+---
+
+## Ví dụ
+
+##### 1. この電子辞書は英語を はじめ、スペイン語、中国語など、さまざまな言語に対応している。
+
+###### → Bộ kim từ điển này hỗ trợ đa dạng ngôn ngữ như tiếng Anh, tiếng Tây Ban Nha, tiếng Trung Quốc v.v.
+
+##### 2. 上野動物園に パンダ を はじめ子供たちに人気がある動物がたくさんいます。
+
+###### → Ở vườn thú Ueno, những động vật mà trẻ em yêu thích như gấu trúc có rất nhiều.
+
+##### 3. 日本にいる間は、先生を はじめ、みんなさんに本当に親切にしていただき、本当にありがとうございました。
+
+###### → Trong thời gian ở Nhật, từ cô giáo đến mọi người đều đối xử rất tốt với tôi, tôi xin chân thành cảm ơn.
+
+##### 4. うちの会社には、中国人を はじめとして、多くの外国人スタッフ がいる。
+
+###### → Công ty chúng tôi có nhiều nhân viên nước ngoài, từ người Trung Quốc cho đến các quốc gia khác.
+
+##### 5. 歌舞伎を はじめとして、多くの日本の伝統文化が、江戸時代に生まれ、発展した。
+
+###### → Rất nhiều loại hình văn hoá truyền thống của Nhật ví dụ như kabuki đều được sinh ra và phát triển từ thời Edo.
+
+##### 6. 日本語には外国語が多い。英語をはじめ、フランス語、ドイツ語などさまざまな外国語起源の 外来語が使われているという。
+
+###### → Nghe nói trong tiếng Nhật thì từ vay mượn rất nhiều. Những từ vay mượn đang được sử dụng có nguồn gốc từ rất nhiều nước khác nhau, trước tiên là tiếng Anh, rồi tiếng Pháp, tiếng Đức…
+
+##### 7. 今年は富士山をはじめ、各地の有名な山に登ろう。
+
+###### → Năm nay chúng ta hãy leo các núi nổi tiếng ở các nơi, trước tiên là núi Phú Sĩ.
+
+##### 8. わたしは日本に来てから保証人をはじめ多くの方のお世話になって暮らしています。
+
+###### → Kể từ sau khi đến sinh sống, tôi được rất nhiều người giúp đỡ, mà trước hết phải kể đến người bảo lãnh cho tôi.
+
+##### 9. ご両親をはじめ、家族の皆さんによろしくお伝えください。
+
+###### → Xin hãy cho tôi gửi lời hỏi thăm đến ba mẹ anh và mọi người trong gia đình.
+
+##### 10. ホームステイ中お母さんをはじめ、ご家族の方々に大変お世話になりました。
+
+###### → Trong thời gian ở homestay, tôi đã được giúp đỡ từ mẹ nuôi và mọi người trong gia đình rất nhiều.
+
+##### 11. 会議に日本をはじめ、アジアの国々が参加した。
+
+###### → Cuộc họp đó có Nhật Bản và những quốc gia châu Á khác tham dự.
+
+##### 12. この動物園にはパンダをはじめ、像やキリンなどたくさんの動物がいる。
+
+###### → Công viên này có rất nhiều động vật, đầu tiên phải kể đến gấu panda, rồi voi và hưu cao cổ…
+
+##### 13. 言葉の問題をはじめとして、外国で生活していると、さまざまな困難がある。
+
+###### → Khi sống ở nước ngoài thì sẽ gặp rất nhiều khó khăn, đầu tiên phải kể đến chính là vấn đề ngôn ngữ.
+
+##### 14. 東京をはじめ、全国の主要都市で新製品の発売が決まった。
+
+###### → Sản phẩm mới đã được quyết định là sẽ bán ở Tokyo và các thành phố lớn khác trên cả nước.
+
+##### 15. わが国では、野球をはじめとして、サッカーやテニスなど、様々なスポーツがさかんである。
+
+###### → Đất nước tôi có rất nhiều môn thể thao phổ biến, đầu tiên phải kể đến bóng chày, rồi bóng đá và tennis…
+
+##### 16. 沢山の会社様から、お花や電報を頂戴し、社長をはじめ社員一同大変喜んでおります。
+
+###### → Chúng tôi nhận được rất nhiều hoa và điện báo chúc mừng từ rất nhiều quý công ty. Lãnh đạo công ty và toàn thể nhân viên vô cùng hạnh phúc.
+
+##### 17. ニューヨーク を はじめとする大都市では交通、犯罪などの都市問題は避けられない。
+
+###### → Ở những đô thị lớn như New York thì những vấn đề đô thị như giao thông, tội phạm…là không thể tránh khỏi.

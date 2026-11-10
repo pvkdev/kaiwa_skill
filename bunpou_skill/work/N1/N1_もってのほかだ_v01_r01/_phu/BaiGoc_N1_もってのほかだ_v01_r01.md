@@ -1,0 +1,45 @@
+Cấp độ: N1
+
+# ～もってのほかだ
+
+**Không thể chấp nhận được / Thật quá đáng / Tuyệt đối không được**
+
+### Cấu trúc
+
+> **～とは、もってのほかだ**
+>
+> **～なんて、もってのほかだ**
+
+Cũng có thể dùng **「もってのほかだ」** để trực tiếp đánh giá một sự việc đã được nhắc đến.
+
+### Cách dùng / Ý nghĩa
+
+Thể hiện sự **phê phán hoặc phản đối mạnh mẽ**, cho rằng một hành động, cách cư xử hay suy nghĩ là quá đáng, hoàn toàn không thể chấp nhận.
+
+Trong cách dùng của bài này, mẫu câu gần nghĩa với **「とんでもない」**.
+
+Có thể hiểu là:
+
+**“Làm như vậy thì thật không thể chấp nhận được.”**
+
+### Ví dụ
+
+##### ① 「親からの仕送りを遊びに使ってしまうなんて、もってのほかだ」
+
+###### → “Dùng hết tiền cha mẹ gửi cho vào việc ăn chơi là điều không thể chấp nhận được.”
+
+##### ② 「かわいがってくれたおばあちゃんを、ババア呼ばわりするとはもってのほかだ。謝れ！」
+
+###### → “Gọi người bà đã hết lòng yêu thương mình là ‘mụ già’ thì thật quá đáng. Xin lỗi bà ngay!”
+
+##### ③ 「あんなやつに謝るなんて、もってのほかだわ」
+
+###### → “Chuyện xin lỗi một kẻ như thế thì tuyệt đối không có đâu.”
+
+### Chú ý
+
+Không nên chỉ dịch là **“không thể tưởng tượng nổi”**, vì cách dịch ấy có thể làm mất sắc thái **phản đối, không chấp nhận**.
+
+Mẫu câu thể hiện đánh giá chủ quan của người nói. Ở câu ③, người nói cho rằng việc xin lỗi đối phương là điều không thể chấp nhận; bản thân câu không khẳng định quan điểm ấy là đúng.
+
+Đây là lời đánh giá khá mạnh, cần chú ý khi nói trực tiếp với người khác.

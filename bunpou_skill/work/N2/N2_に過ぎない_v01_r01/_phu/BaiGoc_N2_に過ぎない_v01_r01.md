@@ -1,0 +1,86 @@
+Cấp độ: N2
+
+# ～ に過ぎない
+
+> **Chỉ Là…/ Chỉ Đơn Giản Là…/ Chỉ Là…Không Hơn Không Kém**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Danh từ +（である）+ に過ぎない**  
+> **Động từ (thể từ điển/ thể ている/ thể た) + に過ぎない**  
+> **Tính từ đuôi い + に過ぎない**  
+> **Tính từ đuôi -na + （である） + に過ぎない**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+Diễn tả sự vật, sự việc, tình trạng chỉ ở mức độ đó, không hơn được hoặc nêu suy nghĩ của người nói về một sự vật sự việc rằng không phải trọng yếu, không phải đặc biệt, chỉ ít.
+
+→　Có Nghĩa là : Chỉ là…/ Chỉ đơn giản là…/ Chỉ là…không hơn không kém
+
+---
+
+## Ví dụ
+
+##### 1. 高校に進学しない人は、5%以下にすぎない。
+
+###### → Số người không học tiếp lên cấp 3 chỉ dưới 5%.
+
+##### 2. 彼のスピーチ は長かったが、同じこと を言っているにすぎなかった。
+
+###### → Bài diễn thuyết của anh ấy tuy dài nhưng chỉ là nói đi nói lại những điều tương tự.
+
+##### 3. 目標がないのにいくら頑張っても、時間を無駄にしているにすぎません。
+
+###### → Không có mục tiêu thì dù có cố gắng đến mấy cũng chỉ phí thời gian.
+
+##### 4. 彼はただの子どもにすぎない。一人で暮らすことなどできない。
+
+###### → Nó chỉ là một đứa trẻ. Sao có thể sống 1 mình được.
+
+##### 5. 私は先生の助手にすぎません。まだ授業を担当するなんてできません。
+
+###### → Tôi chỉ đơn giản là trợ giảng của thầy thôi. Tôi vẫn chưa thể tự phụ trách giảng dạy được.
+
+##### 6. 一日30分ランニング を したにすぎないが、１ ヶ\[\]月で 5 キロ もやせた。
+
+###### → Mỗi ngày tôi chỉ chạy 30 phút mà cũng giảm đến 5 kg sau 1 tháng.
+
+##### 7. 私は メンバー の一人にすぎません。成功するためには、みんなの協力が必要です。
+
+###### → Tôi chỉ là một thành viên thôi. Để có thể thành công thì cần sự hợp tác của tất cả mọi người.
+
+##### 8. ある意味では、人生は夢にすぎない。
+
+###### → Ở một ý nghĩa nào đó, cuộc sống chỉ là một giấc mơ (không hơn không kém).
+
+##### 9. それは怠ける口実にすぎない。
+
+###### → Đó chỉ là một lời biện minh cho sự lười biếng.
+
+##### 10. ほんの冗談にすぎない。
+
+###### → Đây chỉ là một lời đùa không hơn không kém.
+
+##### 11. 人生は、はかない夢にすぎない。
+
+###### → Cuộc đời chỉ là một giấc mơ thoáng qua.
+
+##### 12. 私は貧しい農民に過ぎない。
+
+###### → Tôi chỉ là một anh nông dân nghèo không hơn không kém.
+
+##### 13. 前のやっていたことは現実からの逃避に過ぎない。
+
+###### → Những việc tôi đã làm trước đây chỉ là một chạy trốn khỏi hiện thực cuộc sống.
+
+##### 14. 大丈夫です。ただ、ちょっと疲れたにすぎない。
+
+###### → Không sao đâu. Tôi chỉ là hơi mệt một chút thôi.
+
+##### 15. ごめん。俺はただの貧乏な団子売りの男にすぎない。
+
+###### → Xin lỗi. Anh chỉ là một thằng bán bánh giò.

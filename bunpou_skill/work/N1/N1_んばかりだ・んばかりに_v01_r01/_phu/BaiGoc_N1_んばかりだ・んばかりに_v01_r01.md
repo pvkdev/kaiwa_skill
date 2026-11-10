@@ -1,0 +1,113 @@
+Cấp độ: N1
+
+# ～ んばかりだ／んばかりに
+
+> **Tưởng Chừng Như…/ Gần Như…/ Dường Như Sắp…/ Cứ Như Thế Đến Mức…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **V~~ない~~ + んばかりだ／んばかりに**  
+>
+> **V~~ない~~ + んばかりの + N**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Được sử dụng để diễn tả ý “Như thể sắp…đến nơi, dù thực tế không phải như vậy hoặc thể hiện mức độ, khả năng xảy ra rất cao của việc đó”
+
+②　Dùng cho ngôi thứ ba, không sử dụng để nói về bản thân mình. 
+
+→　Có Nghĩa là : Tưởng chừng như…/ Gần như…/ Dường như sắp…/ Cứ như thể đến mức…
+
+---
+
+## Ví dụ
+
+##### 1. デパートは溢れんばかりの買い物客でごった返していた。
+
+###### → Trung tâm mua sắm đông nghẹt, khách mua hàng tưởng chừng như sắp tràn hết ra bên ngoài.
+
+##### 2. たくさんの花をつけたユリが、風に吹かれて折れんばかりに揺れている。
+
+###### → Cây hoa huệ nhiều hoa, đung đưa trong gió như thể sắp gãy đến nơi.
+
+##### 3. うちの犬は誰か来ると、噛み付かんばかりに吠えるので、困っている。
+
+###### → Con chó nhà tôi cứ hễ có ai đến là y như rằng nó sẽ sủa lên như sắp cắn người ta, khiến tôi rất khổ tâm.
+
+##### 4. 彼のスピーチが終わると、割れんばかりの拍手が沸き起こった。
+
+###### → Bài phát biểu của ông ấy vừa kết thúc, tiếng vỗ tay vang dậy tưởng chừng như sắp vỡ tung cả hội trường.
+
+##### 5. 彼女は、今にも泣き出さんばかりの顔をして、部屋を飛び出していった。
+
+###### → Cô ấy phóng ra khỏi phòng bỏ đi, mặt như sắp khóc.
+
+##### 6. 彼は力強くうなずいた。任せろと言わんばかりだった。
+
+###### → Anh ta gật đầu rất mạnh. Như thể là nói “cứ giao phó cho tôi” vậy.
+
+##### 7. 頭を畳につけんばかりにしてわびたのに、父は許してくれなかった。
+
+###### → Rạp đầu gần như chạm xuống chiếu để xin lỗi mà bố tôi vẫn không chịu tha thứ.
+
+##### 8. 演奏が終ったとき、会場には割れんばかりの拍手が起こった。
+
+###### → Khi tiết mục biểu diễn kết thúc, hội trường như vỡ òa trong tiếng vỗ tay.
+
+##### 9. かごいっぱい、あふれんばかりのさくらんぼ を いただいた。
+
+###### → Tôi vừa được tặng một rổ đầy ắp (gần như tràn ra ngoài) quả anh đào.
+
+##### 10. ニュース を聞いて、彼は飛び上がらんばかりに驚( おどろ ) いた。
+
+###### → Vừa nghe tin xong, anh ta gần như bay lên vì ngạc nhiên.
+
+##### 11. 彼女はその人の死を知って、のどが張り裂けんばかりの声を上げて泣いた。
+
+###### → Nghe tin người đó mất, cô ấy đã gào khóc đến xé họng.
+
+##### 12. 彼女は、周りを圧倒せんばかりの行動力の持ち主だ。
+
+###### → Cô ấy là người có sức mạnh hành động gần như áp đảo những người xung quanh.
+
+##### 13. デパートは溢れんばかりの買い物客でごった返していた。
+
+###### → Trung tâm mua sắm đông nghẹt, khách mua hàng tưởng chừng như sắp tràn hết ra bên ngoài.
+
+##### 14. たくさんの花をつけたユリが、風に吹かれて折れんばかりに揺れている。
+
+###### → Cây hoa huệ nhiều hoa, đung đưa trong gió như thể sắp gãy đến nơi.
+
+##### 15. うちの犬は誰か来ると、噛み付かんばかりに吠えるので、困っている。
+
+###### → Con chó nhà tôi cứ hễ có ai đến là y như rằng nó sẽ sủa lên như sắp cắn người ta, khiến tôi rất khổ tâm.
+
+##### 16. 彼のスピーチが終わると、割れんばかりの拍手が沸き起こった。
+
+###### → Bài phát biểu của ông ấy vừa kết thúc, tiếng vỗ tay vang dậy tưởng chừng như sắp vỡ tung cả hội trường.
+
+##### 17. 彼女は、今にも泣き出さんばかりの顔をして、部屋を飛び出していった。
+
+###### → Cô ấy phóng ra khỏi phòng bỏ đi, mặt như sắp khóc.
+
+---
+
+## NÂNG CAO
+
+～と言わんばかりに
+
+「～と言わんばかりに」cũng thường được sử dụng bằng cách lược bỏ “言わん”, thành thể “とばかりに”
+
+**Ví dụ:**
+
+##### 1. 食べ放題なのだから、食べないと言わんばかりに、皿に山ほど料理を取ってきた。
+
+###### → Anh ta lấy đầy thức ăn cho vào dĩa, như thể muốn nói ràng vì là buffet nên phải ăn thật nhiều vào.
+
+##### 2. 食べ放題なのだから、食べないとばかりに、皿に山ほど料理を取ってきた。
+
+###### → Anh ta lấy đầy thức ăn cho vào dĩa, như thể muốn nói ràng vì là buffet nên phải ăn thật nhiều vào.

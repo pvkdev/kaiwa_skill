@@ -1,0 +1,115 @@
+Cấp độ: N1
+
+# ～ ならでは
+
+> Chỉ Có Thể Là …/ Chỉ Có…Mới Có Thể/ Chỉ Có…Mới Có Được
+
+---
+
+## Cấu trúc ngữ pháp
+
+> ```
+> Danh từ ＋ ならでは
+> ```
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Đi sau danh từ chỉ người, tổ chức, sự vật hoặc nơi chốn, diễn tả ý nghĩa “chỉ có người đó, tổ chức đó, sự vật hoặc nơi chốn đó mới có thể, mới có được, những người khác, nơi khác, hoặc cái khác…thì không thể làm được, có được”.
+
+②　Mẫu câu diễn tả sự đánh giá cao của người nói đối với người/ vật được nhắc đến, nên được sử dụng nhiều trong quảng cáo.
+
+③　Cấu trúc này thường được gặp rất nhiều dưới dạng 「Nならではの～だ」「Nならではだ」
+
+## →　Có Nghĩa là : Chỉ có thể là …/ Chỉ có…mới có thể/ Chỉ có…mới có được
+
+## Ví dụ
+
+##### 1. この絵には子どもならでは表せない無邪気さがある。
+
+###### → Bức tranh này có sự ngây thơ trong sáng mà chỉ có trẻ con mới thể hiện được.
+
+##### 2. こんな素晴らしい字は、林さんならではだ。
+
+###### → Chữ đẹp như thế này thì chỉ có thể là của anh Hayashi.
+
+##### 3. この祭りこそは京都ならではの光景です。
+
+###### → Chính trong lễ hội này bạn mới tìm thấy những hình ảnh chỉ Kyoto mới có được.
+
+##### 4. これは芸術的才能のある山本さんならではの作品だと思います。
+
+###### → Tôi cho rằng đây là một tác phẩm mà chỉ ở người có tài năng nghệ thuật như chị Yamamoto mới tạo ra được.
+
+##### 5. ベトナムならではの料理だ。
+
+###### → Đó là món ăn mà bạn chỉ có thể thưởng thức được ở Việt Nam.
+
+##### 6. 彼ならではの技だ。
+
+###### → Đó là một kỹ năng mà chỉ có anh ấy mới làm được.
+
+##### 7. 京都には、京都ならではの風景があり、名産がある。
+
+###### → Kyoto có những cảnh quan và đặc sản độc đáo của riêng mình.
+
+##### 8. プロの選手ならではの見事なプレーに観客は感動していた。
+
+###### → Các khán giả đã rất phấn khích trước màn thi đấu tuyệt vời mà chỉ ở những vận động viên chuyên nghiệp mới có được.
+
+##### 9. 母親ならではの手厚い看護をした。
+
+###### → Cô ấy đã chăm sóc con mình vô cực chu đáo mà chỉ có những bà mẹ mới làm được.
+
+##### 10. それはメコンデルタならではの習慣だ。
+
+###### → Đó là những phong tục tập quán mà bạn chỉ có thể tìm thấy được ở Vùng ĐBSCL.
+
+##### 11. 下町ならではの、見ることのできない光景だ。
+
+###### → Đó là những hình ảnh mà bạn chỉ có thể nhìn thấy ở những khu phố lâu đời.
+
+##### 12. この野菜スープは、母ならではの味です。
+
+###### → Món súp rau này có vị độc đáo riêng mà chỉ mẹ tôi mới nấu được.
+
+##### 13. 居心地のよさ、行き届いたサービスは、このホテルならではだ。
+
+###### → Sự ấm cúng, dịch vụ chu đáo…chỉ có thể tìm thấy được ở khách sạn này.
+
+##### 14. 当旅館ならではのコース料理をぜひ一度ご賞味ください。
+
+###### → Xin mời quý khách hãy một lần thưởng thức các món ăn mà chỉ ở chỗ chúng tôi mới có được.
+
+##### 15. 全国各地にその地方ならではの名産がある。
+
+###### → Mỗi vùng trên cả nước đều có đặc sản riêng của mình.
+
+##### 16. あそこでは一流ホテルならではの豪華な雰囲気が味わえる。
+
+###### → Đến đó, bạn sẽ cảm nhận được không khi sang trọng đặc biệt mà chỉ có những khách sạn hạng nhất mới có được.
+
+##### 17. 世界各国にはその国ならではの伝統文化と風習がある。
+
+###### → Mỗi quốc gia trên thế giới đều có nền văn hóa truyền thống và phong tục độc đáo của riêng mình.
+
+##### 18. あなたならではの発想で、この企画を考えてください。
+
+###### → Hãy suy nghĩ một kế hoạch độc đáo theo ý tưởng của riêng bạn.
+
+##### 19. さすが歌舞伎俳優の一之助けさんならではの演技だ。ほれぼれするほど リアリティー がある。
+
+###### → Quả đúng là kĩ thuật diễn xuất của diễn viên kịch kabuki Ichinosuke. Màn biểu diễn có tính hiện thực đầy cuốn hút.
+
+##### 20. ぜひ一度ヨット に乗ってみてはいかがですか。この体験は ハワイ ならではですよ。
+
+###### → Nhất định là phải thử lên du thuyền một lần, anh thấy sao? Trải nghiệm này thì chỉ có thể là ở Hawai mà thôi.
+
+##### 21. この布製の袋はぬくもりが感じられる。手作りならではだと思う。
+
+###### → Có thể cảm nhận được độ ấm từ cái túi vải này. Tôi nghĩ chỉ có thể là sản phẩm thủ công mới được thế này.
+
+##### 22. 100年続いた老舗ならではの味の良さ！店主が変わっても全く味が落ちていない。
+
+###### → Không phải là quán ăn lâu đời đã tồn tại 100 năm thì không thể có được vị ngon thế này. Dù có thay đổi chủ quán đi nữa, vị ngon của món ăn cũng không hề giảm xuống.

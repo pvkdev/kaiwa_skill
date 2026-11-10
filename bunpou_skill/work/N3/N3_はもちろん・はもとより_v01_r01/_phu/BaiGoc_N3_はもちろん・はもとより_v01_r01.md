@@ -1,0 +1,196 @@
+Cấp độ: N3
+
+# ～はもちろん／はもとより
+
+> **…Thì Đương Nhiên Rồi, …Cũng…/ …Thì Khỏi Nói…/ Không Chỉ… Mà Còn…**
+
+---
+
+## Cấu trúc
+
+> **N ＋ はもちろん、～（も）**
+>
+> **N ＋ はもちろんのこと、～（も）**
+>
+> **N ＋ はもとより、～（も）**
+
+**Khi nói về một hành động, có thể danh từ hóa bằng の:**
+
+> **V thể thông thường ＋ の ＋ はもちろん、～（も）**
+>
+> **V thể thông thường ＋ の ＋ はもとより、～（も）**
+
+→ Tùy vai trò của danh từ trong câu, có thể giữ những trợ từ hoặc cụm trợ từ cần thiết như **に、で、について…** trước は.
+
+→ Vì vậy, các bạn có thể gặp những cách kết hợp như **にはもちろん、ではもちろん、についてはもちろん、ではもとより…**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**① Nêu một sự việc được xem là đương nhiên, không cần phải nói đến, sau đó bổ sung rằng những sự việc khác cũng như vậy.**
+
+- **Trong cấu trúc “Aはもちろん、Bも…”, người nói xem A là trường hợp đã rõ, rồi nhấn mạnh rằng B cũng có cùng đặc điểm, trạng thái hoặc cũng nằm trong phạm vi được nhắc đến.**
+
+##### 彼は、英語はもちろん、ドイツ語も中国語もできる。
+
+###### → Tiếng Anh thì khỏi nói, anh ấy còn biết cả tiếng Đức và tiếng Trung nữa.
+
+→ Người nói xem việc anh ấy biết tiếng Anh là điều đã rõ, sau đó bổ sung rằng anh ấy còn biết cả những ngôn ngữ khác.
+
+**② Có thể dùng để khen ngợi, thể hiện sự ngạc nhiên hoặc đơn thuần bổ sung thông tin.**
+
+- **Không chỉ dùng với nội dung tích cực mà còn dùng với nội dung tiêu cực.**
+- **Vế sau được nhấn mạnh nhưng không nhất thiết phải có “mức độ cao hơn” vế trước.**
+
+##### 会社の経営が悪化して、ボーナスはもちろん給料も出ない状態だ。
+
+###### → Tình hình kinh doanh của công ty xấu đi, đến mức tiền thưởng thì khỏi nói, ngay cả lương cũng không trả được.
+
+→ Câu này dùng mẫu はもちろん để diễn tả **tình trạng khó khăn**, không mang ý khen ngợi.
+
+**③ ～はもちろんのこと có ý nghĩa cơ bản tương tự ～はもちろん.**
+
+- Đây là cách diễn đạt đầy đủ hơn, có thể làm nổi bật ý **“điều đó thì đương nhiên rồi, ngoài ra còn…”**.
+
+##### 山下さんは勉強についてはもちろんのこと、私生活の問題まで何でも相談できる先輩だ。
+
+###### → Anh Yamashita là một người đàn anh mà chuyện học thì khỏi nói, ngay cả những vấn đề về đời tư cũng có thể nhờ tư vấn.
+
+**④ ～はもとより có cách dùng và ý nghĩa gần với ～はもちろん nhưng mang sắc thái trang trọng, cứng hơn.**
+
+- **～はもちろん** dùng phổ biến trong cả hội thoại và văn viết.
+- **～はもとより** thường gặp trong văn viết, phát biểu hoặc những tình huống trang trọng; cũng có thể dùng trong lời nói mang phong cách ấy.
+
+##### 日本へ留学するなら、言葉はもとより文化や習慣も学んでほしい。
+
+###### → Nếu sang Nhật du học, tôi mong bạn học không chỉ ngôn ngữ mà cả văn hóa và tập quán nữa.
+
+→ Được dịch là: **…Thì đương nhiên rồi, …cũng…/ …Thì khỏi nói…/ Không chỉ… mà còn…**
+
+---
+
+## Chú ý
+
+- **A được xem là điều đương nhiên theo cách nhìn hoặc ngữ cảnh của người nói.** Không có nghĩa rằng A phải là một sự thật hiển nhiên với tất cả mọi người.
+- **Không nên hiểu rằng B lúc nào cũng khó hơn, tốt hơn hoặc có mức độ cao hơn A.** B có thể đơn giản là một đối tượng, phương diện hoặc phạm vi khác được bổ sung.
+
+##### 田中さんはもちろん、山田さんも参加します。
+
+###### → Anh Tanaka thì đương nhiên rồi, anh Yamada cũng sẽ tham gia.
+
+→ Câu này bổ sung người tham gia, không so sánh ai có mức độ cao hơn ai.
+
+- **Trong câu phủ định, nội dung phủ định có thể áp dụng cho cả A và B.**
+
+##### この村には、電車はもちろん、バスも通っていない。
+
+###### → Ở ngôi làng này, tàu điện thì khỏi nói, ngay cả xe buýt cũng không chạy qua.
+
+→ Cả tàu điện lẫn xe buýt đều không chạy qua làng.
+
+- **Phần phía sau thường đi cùng も**, nhưng cũng có thể gặp **にも、でも、まで…** tùy cách kết hợp và điều muốn nhấn mạnh.
+- **Khi phía trước là hành động, cần danh từ hóa trước khi kết hợp.** Các bạn có thể dùng **V＋の**, như trong câu về tự chơi thể thao hoặc ăn bắp cải.
+
+##### スポーツをするのはもちろん、見るのも好きです。
+
+###### → Chơi thể thao thì khỏi nói, tôi cũng thích xem nữa.
+
+- **Không cần câu nào cũng dịch đầy đủ thành “…thì đương nhiên rồi…”.** Trong nhiều trường hợp, **“không chỉ… mà còn…”** hoặc **“…thì khỏi nói, …cũng…”** sẽ tự nhiên hơn.
+
+---
+
+## Ví dụ
+
+**① ～はもちろん／～はもちろんのこと**
+
+##### 1. 復習はもちろん、予習もしなければなりません。
+
+###### → Ôn bài là tất nhiên rồi, cũng phải chuẩn bị bài trước nữa.
+
+##### 2. 病気の治療はもちろん、予防のための医学も重要だ。
+
+###### → Điều trị bệnh thì đương nhiên rồi, y học dự phòng cũng rất quan trọng.
+
+##### 3. 委員長の高田さんはもちろん、委員会の全メンバーが参加します。
+
+###### → Chủ tịch ủy ban Takada thì đương nhiên rồi, tất cả các thành viên của ủy ban đều sẽ tham gia.
+
+##### 4. 浅草という町は日曜、祭日はもちろん、平日もにぎやかだ。
+
+###### → Khu phố Asakusa thì Chủ nhật và ngày lễ khỏi nói, ngay cả ngày thường cũng rất nhộn nhịp.
+
+##### 5. 彼は、英語はもちろん、ドイツ語も中国語もできる。
+
+###### → Tiếng Anh thì khỏi nói, anh ấy còn biết cả tiếng Đức và tiếng Trung nữa.
+
+##### 6. 大都市ではもちろん、地方の小さな農村でも情報がすばやくキャッチできるようになってきた。
+
+###### → Ở các thành phố lớn thì khỏi nói, ngay cả những làng quê nhỏ cũng đã có thể nắm bắt thông tin nhanh chóng.
+
+##### 7. 彼はスポーツ万能で、テニスはもちろん、ゴルフもサッカーもうまい。
+
+###### → Anh ấy giỏi nhiều môn thể thao; quần vợt thì khỏi nói, cả gôn và bóng đá cũng chơi giỏi.
+
+##### 8. 山下さんは勉強についてはもちろんのこと、私生活の問題まで何でも相談できる先輩だ。
+
+###### → Anh Yamashita là một người đàn anh mà chuyện học thì khỏi nói, ngay cả những vấn đề về đời tư cũng có thể nhờ tư vấn.
+
+##### 9. この本は、勉強にはもちろん役に立つし、見るだけでも楽しい。
+
+###### → Cuốn sách này đương nhiên có ích cho việc học, mà chỉ xem thôi cũng thấy thú vị.
+
+##### 10. 来週のパーティーは、いろいろな国の料理はもちろん、カラオケもディスコもある。
+
+###### → Bữa tiệc tuần sau không chỉ có món ăn của nhiều nước mà còn có cả karaoke và nhảy disco nữa.
+
+##### 11. 彼は子どもの送り迎えはもちろん、料理も洗濯も家事は何でもやる。
+
+###### → Việc đưa đón con thì khỏi nói, cả nấu nướng, giặt giũ, việc nhà gì anh ấy cũng làm.
+
+##### 12. キャベツは炒めて食べるのはもちろん、生で食べてもおいしいです。
+
+###### → Bắp cải xào lên ăn thì đương nhiên là ngon rồi, mà ăn sống cũng ngon.
+
+##### 13. 彼は、勉強はもちろん、スポーツもよくできる。
+
+###### → Cậu ấy không chỉ học giỏi mà còn giỏi thể thao.
+
+##### 14. あのレストランは、サービスはもちろん、料理の味も悪くない。
+
+###### → Cả dịch vụ lẫn hương vị món ăn của nhà hàng đó đều không tồi.
+
+##### 15. 会社の経営が悪化して、ボーナスはもちろん給料も出ない状態だ。
+
+###### → Tình hình kinh doanh của công ty xấu đi, đến mức tiền thưởng thì khỏi nói, ngay cả lương cũng không trả được.
+
+##### 16. 今度のパーティーには、君はもちろん、奥さんにも出席してもらいたい。
+
+###### → Tôi muốn không chỉ cậu mà cả vợ cậu cũng đến tham dự bữa tiệc lần này.
+
+##### 17. コンビニでは日用品の販売はもちろん、宅配便の受け付けもするし、公共料金の支払いもできる。
+
+###### → Ở cửa hàng tiện lợi, việc bán đồ dùng hằng ngày thì khỏi nói, ngoài ra còn nhận gửi hàng chuyển phát và có thể thanh toán tiền điện, nước…
+
+##### 18. 彼はスポーツマンで、自分でするのはもちろん、見るのも大好きだそうだ。
+
+###### → Anh ấy là người chơi thể thao; tự chơi thì khỏi nói, nghe nói anh ấy còn rất thích xem nữa.
+
+**② ～はもとより**
+
+##### 19. 日本へ留学するなら、言葉はもとより文化や習慣も学んでほしい。
+
+###### → Nếu sang Nhật du học, tôi mong bạn học không chỉ ngôn ngữ mà cả văn hóa và tập quán nữa.
+
+##### 20. アメリカ大統領選挙の結果は、国内はもとより国外にも大きな影響を与える。
+
+###### → Kết quả bầu cử tổng thống Mỹ gây ảnh hưởng lớn không chỉ trong nước mà cả ở nước ngoài.
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Các bạn có thể nhớ ý chung là **“A thì khỏi phải nói rồi, B cũng như vậy”**. Người nói lấy A làm trường hợp đã rõ, rồi bổ sung và hướng sự chú ý đến B.
+- **はもちろん** và **はもとより** gần nhau về ý nghĩa. Khi giao tiếp thông thường, các bạn có thể ưu tiên **はもちろん**; khi cần phong cách trang trọng hơn, có thể dùng **はもとより**.
+- Mẫu này **không chỉ dùng để khen ngợi**. Nó còn dùng để kể thêm thông tin hoặc diễn tả tình trạng tiêu cực, như việc không có cả tiền thưởng lẫn tiền lương.
+- Khi dịch, hãy chọn cách diễn đạt phù hợp với câu: **“…thì đương nhiên rồi…”, “…thì khỏi nói…” hoặc “không chỉ… mà còn…”**. Điều quan trọng là thể hiện được ý **A đã rõ và B cũng được bao gồm**.

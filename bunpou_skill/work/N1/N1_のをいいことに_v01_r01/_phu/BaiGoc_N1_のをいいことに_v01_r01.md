@@ -1,0 +1,88 @@
+Cấp độ: N1
+
+# ～のをいいことに
+
+> **Lợi Dụng Việc… / Lợi Dụng Chuyện…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Vる / Vない + のをいいことに**  
+> **Tính từ -na + な + のをいいことに**  
+> **N + をいいことに**
+> **N + である + のをいいことに**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói thường được sử dụng với tâm trạng mang tính phê phán/chỉ trích rằng “(ai đó) đã lợi dụng tình hình/hoành cảnh nào đó để thực hiện một việc không hay/không tốt”.
+
+②　Cũng được sử dụng với dạng「～をいいことにして」
+
+→　Có Nghĩa là : Lợi dụng việc… / Lợi dụng chuyện…
+
+---
+
+## Ví dụ
+
+##### 1. 夜間、人気がないのをいいことに、トンネル内の落書きはエスカレートする一方です。
+
+###### → Lợi dụng buổi tối không có bóng người qua lại, tình trạng vẽ bậy bên trong đường hầm ngày càng leo thang.
+
+##### 2. 僕が黙っているのをいいことにして勝手なことを言う。
+
+###### → Họ lợi dụng sự im lặng của tôi để nói những gì họ muốn.
+
+##### 3. 山本君は電車が遅れたのをいいことに、テストが終わる頃、堂々とやってきた。
+
+###### → Yamada lợi dụng chuyện xe điện đến trễ, thản nhiên bước vào lớp khi bài kiểm tra sắp kết thúc.
+
+##### 4. 誰にも疑われていないのをいいことに、彼女は会社の金を使い続けた。
+
+###### → Lợi dụng việc không bị ai nghi ngờ, cô ta đã liên tục sử dụng tiền của công ty.
+
+##### 5. どうやらうちの猫、飼い主の留守をいいことに、いたずらをしたらしく、部屋がめちゃくちゃだ。
+
+###### → Có vẻ như con mèo nhà tôi đã lợi dụng lúc chủ vắng nhà nên phá phách, phòng ốc đồ đạc tứ tung.
+
+##### 6. 先生がいないのをいいことに学校をサボった。
+
+###### → Nó đã lợi dụng sự vắng mặt của giáo viên để cúp học.
+
+##### 7. 表現の自由は守るべき権利の一つだが、それをいいことに他人を傷つけるような作品を面白半分に作る人を認めるべきではない。
+
+###### → Tự do ngôn luận là một trong những quyền cần được bảo vệ, nhưng cũng không cho phép một người nào đó lợi dụng nó để tạo ra, chẳng hạn như một tác phẩm mà làm tổn thương người khác chỉ để mua vui.
+
+##### 8. 彼は忙しいのをいいことに、全然私に連絡をくれない。
+
+###### → Anh ta hoàn toàn không liên lạc cho tôi và lấy cớ là rất bận.
+
+##### 9. 小川さんって店員が見ていないのをいいことに、試食のチョコレートを3つも食べたんだよ。
+
+###### → Ogawa đã lợi dụng lúc nhân viên cửa hàng không nhìn để ăn những 3 miếng sô cô la dành cho khách thử luôn đấy.
+
+##### 10. 主人の不在をいいことにして、王氏は隣家の男と不倫した。
+
+###### → Lợi dụng lúc chồng vắng nhà, bà Vương đã ngoại tình với người đàn ông nhà bên.
+
+##### 11. 社長の甥であるのをいいことに、上司に反抗したり仕事をサボったりと、彼は好き勝手なことばかりしている。
+
+###### → Cậu ta lợi dụng việc là cháu trai của Giám đốc để làm toàn những việc tùy tiện, chẳng hạn như chống đối cấp trên, hoặc tự ý nghỉ việc…
+
+##### 12. 僕が東京に慣れないのをいいことにして僕をだました。
+
+###### → Hắn ta đã lợi dụng sự thiếu hiểu biết của tôi về Tokyo để lừa tôi.
+
+##### 13. 彼女は我々のもてなしをいいことに、一銭も払わずに丸一ヶ月滞在した。
+
+###### → Cô đã lợi dụng sự hiếu khách của chúng tôi và ở lại cả tháng mà không trả bất cứ đồng nào.
+
+##### 14. 親が叱らないのをいいことに、子どもは電車の中を走り回っている。
+
+###### → Lợi dụng việc không bị bố mẹ la mắng, đứa bé cứ chạy nhảy bên trong xe điện.
+
+##### 15. やがて帝も死に、予言は的中、国は乱れ、弟の燕王が太子の幼弱をいいことに謀反した。
+
+###### → Chẳng bao lâu sau hoàng đế chết, lời tiên tri trở thành hiện thực, đất nước bị xáo trộn, người em trai đang là vua nước Yến đã lợi dụng sự non nớt của thái tử để nổi dậy làm phản.

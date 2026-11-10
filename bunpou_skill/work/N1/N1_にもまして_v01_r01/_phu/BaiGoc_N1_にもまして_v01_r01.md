@@ -1,0 +1,81 @@
+Cấp độ: N1
+
+# ～ にもまして
+
+> Hơn Cả – Hết Thảy – Càng Hơn
+
+---
+
+## Cấu trúc
+
+> ```
+> N ＋ にもまして
+> ```
+
+## Cách dùng / Ý nghĩa
+
+①　Đi với dạng 「X＋にもまして＋Yだ」. Là cách nói biểu thị nhấn mạnh ý nghĩa “tất nhiên X là thế nhưng Y còn hơn thế nữa”。
+
+②　Cấu trúc 「Nghi vấn từ＋にもまして」sẽ mang ý nghĩa “hơn tất thải/Hơn bất kỳ ai/Hơn bất kỳ lúc nào”　-　Ví dụ:「何／だれ／いつ＋にもまして」＝「何よりも／だれよりも／いつよりも」v.v。
+
+③　Kanji sẽ viết にも増して
+
+→　Có Nghĩa là : Hơn cả – Hết thảy – Càng hơn
+
+## Ví dụ
+
+##### 1. わたし自身の結婚問題にもまして気がかりなのは姉の離婚問題です。
+
+###### → Điều mà tôi quan tâm hơn cả việc tôi lập gia đình chính là vấn đề ly hôn của chị tôi.
+
+##### 2. ゴミ問題は何にもまして急を要する問題だ。
+
+###### → Vấn đề rác thải là vấn đề cấp bách hơn tất thảy.
+
+##### 3. きのう友だちが結婚するという手紙が来たが、それにもましてうれしかったのは友だちの病気がすっかり治ったということだった。
+
+###### → Hôm qua có thư báo là bạn tôi sẽ lập gia định nhưng điều khiến tôi vui hơn chính là việc bệnh của bạn ấy đã khỏi hẳn hoàn toàn.
+
+##### 4. 今回のワールドカップは、前回にもまして盛り上がった。
+
+###### → Word Cup lần này còn náo nhiệt hơn cả lần trước.
+
+##### 5. 円高による輸出業界の不況は、去年にも増して厳しくなると予想されている。
+
+###### → Tình trạng suy thoái của ngành xuất khẩu do đồng yên tăng giá được dự đoán sẽ càng nghiêm trọng hơn cả năm ngoái.
+
+##### 6. それにもまして気がかりなのは家族の健康だ。
+
+###### → Việc tôi bận tâm hơn cả điều đó chính là sức khỏe của gia đình.
+
+##### 7. 大学生の就職は、今年は去年にもまして、さらに厳しい状況になることが予想される。
+
+###### → Vấn đề tìm việc của sinh viên đại học trong năm nay được dự đoán sẽ cam go hơn cả so với năm ngoái.
+
+##### 8. 彼女は以前にもまして美しい。
+
+###### → Cô ấy trông đẹp hơn bao giờ hết.
+
+##### 9. 今回のイベントは、前回にもまして好評だった。
+
+###### → Sự kiện lần này được đánh giá cao hơn cả lần trước.
+
+##### 10. 彼は気まぐれですね。今日は昨日にもまして気が短いです。
+
+###### → Anh ấy tính khí thất thường nhỉ. Hôm nay còn nóng tính hơn so với hôm qua.
+
+##### 11. いい家を買いたいですから、以前にもまして一所懸命働いて、コチコチ しなきゃならない。
+
+###### → Vì tôi muốn mua nhà nên đã chăm chỉ làm việc hơn cả lúc trước rồi tích kiệm từng chút một.
+
+##### 12. 何にもまして幸いなことは外国で中学時代の親友にばったり会うことです。
+
+###### → Điều may mắn hơn tất cả mọi thứ là tôi đã bất ngờ gặp lại người bạn thân hồi trung học ở nước ngoài.
+
+##### 13. 今は会社員になってから、大学時代にもまして熱心に外国語を勉強しています。
+
+###### → Bây giờ tuy tôi là nhân viên công ty nhưng còn học ngoại ngữ nhiệt tình hơn thời học sinh đại học nữa.
+
+##### 14. あの作家の新しい小説は前回書いた小説にもまして内容がいいです。
+
+###### → Quyển tiểu thuyết mới của nhà văn đó so với quyển viết lần trước thì nội dung tốt hơn.

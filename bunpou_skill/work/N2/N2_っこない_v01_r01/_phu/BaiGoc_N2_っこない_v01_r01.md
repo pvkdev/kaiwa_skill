@@ -1,0 +1,107 @@
+Cấp độ: N2
+
+# っこない
+
+> **Nhất Định Là Không…/ Tuyệt Đối Không…/ Không Thể…/ Làm Gì Có Chuyện…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể ~~ます~~ + っこない**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Mẫu câu này dùng để nhấn mạnh, phủ định một cách dứt khoát, mạnh mẽ rằng không có khẳng năng xảy ra việc đó, không thể nào có chuyện đó (theo ý kiến chủ quan của người nói)
+
+②　Đây là cách nói suồng sã, sử dụng trong những mối quan hệ thân thiết, gần gũi. Thường không sử dụng trong văn viết hay trong hoàn cảnh trang trọng.
+
+③　Có nghĩa gần giống với các các nói như ｢絶対～しない／～するはずがない／～するわけがない｣
+
+→　Có Nghĩa là : Nhất định là không…/ Tuyệt đối không…/ Không thể…/ Làm gì có chuyện…
+
+---
+
+## Ví dụ
+
+##### 1. 今の実業では、試験に受かりっこない。
+
+###### → Với thực lực như hiện tại thì tuyệt đối không thể thi đậu nổi đâu.
+
+##### 2. ｢毎日5時間は勉強しなさい。｣｢そんなこと、できっこないよ｣
+
+###### → Mỗi ngày hãy học ít nhất là 5 tiếng.– Chuyện đó, làm không được đâu.
+
+##### 3. あの人、来っこないよ。いつも約束を守らないんだから。
+
+###### → Người đó tuyệt đối không tới đâu. Vì lúc nào anh ta cũng không giữ lời hứa.
+
+##### 4. 私が講師？　そんなの、できっこありません。
+
+###### → Tôi là giảng viên á? Việc đó, tôi không thể làm được đâu.
+
+##### 5. あんなに速い話し方では、誰が聞いてもわかりっこないよ。
+
+###### → Nói nhanh như vậy thì chẳng ai có thể hiểu được đâu.
+
+##### 6. 車なんて買えっこないよ。自転車を買うお金もないんだから。
+
+###### → Việc mua ô tô là không thể. Đến tiền mua xe đạp tôi còn chẳng có nữa là.
+
+##### 7. 一日でこの本の文法全部なんて、覚えられっこない。
+
+###### → Tuyệt đối không thể nhớ hết được toàn bộ ngữ pháp của quyển sách này chỉ trong một ngày.
+
+##### 8. 3歳の子ともにそんな難しいことを言っても、わかりっこないよ。
+
+###### → Những những chuyện khó như thế với trẻ 3 tuổi thì làm sao nó hiểu được.
+
+##### 9. こんな難しい本を買ってやったって、小学校一年生の雄介にわかりっこない。
+
+###### → Mua cho mấy quyển sách khó như thế này thì Yusuke mới học lớp 1 làm sao hiểu được.
+
+##### 10. 宝くじなんて、当たりっこないよ。確立はすごく低いんだ。
+
+###### → Vé số này kia không bao giờ trúng đâu. Vì xác suất cực thấp.
+
+##### 11. いくら彼に聞いても、本当のことなんか言いっこないよ。
+
+###### → Bạn có hỏi anh ta bao nhiêu đi nữa, anh ta cũng không nói thật đâu.
+
+##### 12. 山口さんなんか、頼んだってやってくれっこないよ。
+
+###### → Những người như Yamaguchi, có nhờ cũng không có chuyện làm giúp cho đâu.
+
+##### 13. 俳優になんかなれっこないと親にも言われたけれど、夢は捨てられなかった。
+
+###### → Ngay cả cha mẹ tôi cũng nói rằng không thể trở thành diễn viên được đâu, nhưng tôi vẫn không thể từ bỏ ước mơ của mình.
+
+##### 14. こんなひどい雨では頂上まで登れっこないから、今日は出かけるのはやめよう。
+
+###### → Mưa dữ dội thế này thì không thể nào leo lên đến đỉnh được đâu, hôm nay chúng ta nên hoãn việc xuất phát lại.
+
+##### 15. こんなにひどい嵐じゃ、ゴルフなんかできっこない。今日はやめとこう。
+
+###### → Trời gió bão thế này thì làm sao chơi gôn này kia được. Hôm nay nghỉ thôi.
+
+##### 16. ｢いいマンションね。でも、家賃が30万円だって。｣
+
+##### –｢30万円！そんな高い家賃、僕たちには払えっこないよ｣
+
+###### →  “Căn hộ tốt quá nhỉ. Nhưng nghe nói tiền thuê 300 nghìn Yên”
+
+###### – “300 nghìn Yên à? Tiền thuê mắc như thế thì làm sao chúng ta trả cha nổi chứ.”
+
+##### 17. A:日本は最初の試合、ブラジル とだって。
+
+##### ー B: ブラジル と？前回の優勝国でしょ。勝てっこないよ。
+
+###### → A: Thấy bảo Nhật Bản trong trận đầu sẽ gặp Brazil.
+
+###### ー B: Brazil á? Vô địch lần trước phải không? Thế thì chắc chắn không thể thắng rồi.
+
+##### 18. その テーブル は一人じゃ持てっこないよ。二人で持とう。
+
+###### → Bàn đó mà một người thì không thể bê được đâu. Hai người hãy cùng bê đi.

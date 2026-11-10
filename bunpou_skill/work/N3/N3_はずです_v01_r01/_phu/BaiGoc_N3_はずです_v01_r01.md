@@ -1,0 +1,210 @@
+Cấp độ: N3
+
+# ～ はずです
+
+**Chắc Là…/ Chắc Hẳn Là…/ Nhất Định Là…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **\[Động từ thể thường\] + はずです／はずだ。**  
+>
+> **\[Tính từ い / Tính từ -na + な\] + はずです／はずだ。**  
+>
+> **\[Danh từ + の\] + はずです／はずだ。**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Diễn đạt khả năng việc gì đó xảy ra và khả năng này là cao, người nói có sự chắc chắn về việc này. 
+
+Điều chắc chắn này thường dựa vào một lý do nào đó để suy luận ra, giống như kiểu “Đã là thế này thì nhất định/chắc chắn phải thế này.
+
+②　Ngoài ra còn được sử dụng nhiều trong những trường hợp phán đoán, suy đoán của người nói, sự suy đoán này cũng được dựa trên một lý do khách quan hoặc dựa trên một kinh nghiệm thực tế nào đó.
+
+→　Có Nghĩa là :  **Chắc là…/ Chắc hẳn là…/ Nhất định là…**
+
+---
+
+## Ví dụ
+
+##### 1. 今10時ですから、郵便局は開いているはずです。
+
+###### → Bây giờ là 10 giờ nên chắc chắn là bưu điện đang mở cửa.
+
+##### 2. 山田さんは英語の教師ですから、英語が話せるはずだ。
+
+###### → Anh Yamada là giáo viên tiếng Anh nên chắc hẳn là nói được tiếng Anh.
+
+##### 3. 彼女は美術を勉強していますから、絵が上手なはずです。
+
+###### → Cô ấy học về mỹ thuật nên chắc chắn là vẽ giỏi rồi.
+
+##### 4. 彼は風邪を引いたと言いましたから、今日は休みのはずです。
+
+###### → Anh ấy đã nói là bị cảm nên hôm nay chắc là sẽ nghỉ ở nhà.
+
+##### 5. 今日の気温は １℃。寒いはずですね。
+
+###### → Nhiệt độ hôm nay là 1 độ. Chắc chắn là lạnh rồi.
+
+##### 6. カインさんはもう会社を出たはずですよ。三時の飛行機に乗ると言っていたから。
+
+###### → Anh Khanh chắc chắn là đã rời khỏi công ty rồi đấy. Vì anh ấy đã nói là sẽ đi chuyến bay lúc 3 giờ.
+
+##### 7. 今日は祝日だから、会社は休みのはずだ。
+
+###### → Hôm nay là ngày lễ nên công ty chắc chắn là nghỉ.
+
+##### 8. スポーツ大会の写真は麻美君に頼みましょう。写真学校の学生だから上手なはずですよ。
+
+###### → Hình chụp cho hội thao hãy nhờ Asami đi. Vì cậu ta là sinh viên trường nhiếp ảnh nên chắc chắn là chụp đẹp đấy.
+
+##### 9. 彼女は今日出かけると言っていましたから、今は留守のはずです。
+
+###### → Vì cô ấy bảo là hôm nay sẽ ra ngoài nên bây giờ chắc chắn là không có ở nhà.
+
+##### 10. 今日は日曜日だからデパートは混んでいるはずです。
+
+###### → Hôm nay là chủ nhật nên chắc chắn là các cửa hàng sẽ rất đông đúc.
+
+##### 11. パパがそろそろ家に帰るはずだ。
+
+###### → Ba tôi chắc chắn là sắp về đến nhà.
+
+##### 12. 彼女はベトナムで4年も留学したそうですから、ベトナム語が上手なはずです。
+
+###### → Vì nghe nói cô ấy đã du học ở Việt Nam suốt 4 năm nên chắc chắn là giỏi tiếng Việt.
+
+##### 13. ロン君は7時に家を出たそうですから、ここには８時前に着くはずです。
+
+###### → Vì nghe nói Long đã rời khỏi nhà lúc 7 giờ nên đến đấy chắc chắn là 8 giờ.
+
+##### 14. このブランドバッグは3千万ドン以上かかるはずだ。
+
+###### → Cái túi hiệu này chắc chắn là giá hơn 30 triệu đồng.
+
+---
+
+## ※ Mở rộng:
+
+**1. Không sử dụng cho những phán đoán cho những hành vi mang tính ý chí quyết định của người nói.**
+
+## Ví dụ
+
+##### 1. 私は来週帰国するはずです。(X)
+
+###### → Tôi (chắc chắn) sẽ về nước vào tuần tới. (SAI)
+
+*⇒ 私は来週帰国する予定です。(O)*
+*Tôi (dự định) sẽ về nước vào tuần tới. (ĐÚNG)*
+
+---
+
+**2.Ngoài ra còn được sử dụng để diễn tả tâm trạng vỡ lẽ, hiểu ra khi phát hiện một sự thật giúp lý giải việc mà mình thắc mắc, chưa hiểu rõ trước đó.**
+
+Trong trường hợp này thường được dịch là: **“Chả trách…là phải / Hèn chi… / Làm gì mà không…”**
+
+## Ví dụ
+
+##### 1. さっきから道が妙にすいていると思っていたが、すいているはずだ。今日は日曜日だ。
+
+###### → Nãy giờ tôi cứ nghĩ sao hôm nay đường xá vắng vẻ kỳ lạ thế. Mà vắng là đúng rồi, hôm nay là chủ nhật mà.
+
+##### 2. 寒いはずです。雪が降ってきました。
+
+###### → Trời lạnh là đúng rồi. Tuyết đã bắt đầu rơi.
+
+---
+
+**3.Trường hợp khác được sử dụng khi một người nói đoan chắc rằng sự việc sẽ như vậy nhưng thực tế lại không diễn ra như thế.** 
+
+**Lúc đó để diễn tả trạng thái ân hận, nghi hoặc của người nói.**
+
+## Ví dụ
+
+##### 1. ちゃんとかばんに入れたはずなのに、家に帰ってみると財布がない。
+
+###### → Tôi đã bỏ cản thận vô cặp rồi vậy mà về nhà lại không thấy cái ví đâu.
+
+##### 2. 山田さんは英語の教師ですから、英語が話せるはずだと思いますが、実はあまり話せません。
+
+###### → Vì anh Yamada là giáo viên tiếng Anh nên tôi nghĩ là chắc chắn anh ấy phải nói được tiếng Anh nhưng sự thực là anh ấy không nói được mấy.
+
+---
+
+## NÂNG CAO
+
+※ Thể phủ định của 「はずです」là 「はずがない」hoặc「はずはない」
+
+1. **Thể hiện ý kiến, quan điểm “Không chắc chắn” về một việc nào đó.**
+
+Ví dụ:
+
+#####  彼は病気ですから、来るはずがないね。
+
+###### → Anh ấy bị bệnh nên tôi không chắc là anh ấy sẽ đến.
+
+Vậy câu này thì sao: 「彼は病気ですから、来ないはずだね。」
+
+Về ý nghĩa thì đều giống nhau ở việc cho rằng anh ấy sẽ không đến, nhưng thái độ của người nói đối với việc tin rằng anh ấy có đến hay không thì khác nhau một chút.
+
+##### 1. 彼は病気ですから、来るはずがないね。
+
+###### → Anh ấy bị bệnh nên tôi không chắc chắn là anh ấy sẽ đến. (Tôi hầu như không tin việc anh ấy đến)
+
+##### 2. 彼は病気ですから、来ないはずだね。
+
+###### → Anh ấy bị bệnh nên chắc chắn là không đến đâu. (Tôi chỉ đoán là anh ấy không đến)
+
+Nói chung cả hai câu này ý nghĩa đều giống nhau, nhưng nếu muốn nhấn mạnh việc “tôi không tin” thì dùng 「はずがない」
+
+---
+
+2. **Biểu thị cách nói phán đoán mang tính chủ quan của người nói cho rằng không thể nào như thế, không có khả năng như thế trước một sự việc nào đó.**
+
+→　Có nghĩa là: **Làm gì có chuyện – Lẽ nào – Làm sao mà….**
+
+Ví dụ:
+
+##### 1. 何かの間違いでしょう。彼が独身のはずがありません。ときどき奥さんの話をしますよ。
+
+###### → Chắc có gì nhầm lẫn ở đây. Làm gì có chuyện anh ấy độc thân. Thỉnh thoảng anh ta có kể về vợ anh ấy mà.
+
+##### 2. A「田中さん、遅いね。どうしたんだろう。」
+
+##### 　B「田中さんは今日は来られるはずがないよ。神戸に出張しているんだから。」
+
+###### → 　A. Tanaka lâu quá nhỉ. Anh ta làm gì không biết.
+
+###### 　　B. Làm gì có chuyện Tanaka hôm nay đến đây được. Vì anh ta đang đi công tác ở Kobe mà.
+
+##### 3. A「林さん暇かな。テニスに誘ってみようか。」
+
+##### 　B「あの人は今就職活動中いましゅうしょくかつどうちゅうだから、暇ひまなはずはないよ。」
+
+###### → 　A. Hayashi có rảnh không ta. Mình rủ anh ta cùng chơi Tennis đi.　
+
+###### 　B. Anh ta hiện giờ đang tìm việc mà. Làm gì có chuyện rảnh được chứ.
+
+##### 4. A「え、かぎがない？そんなはずないよ。ぼくたしかに机の上に置いたよ。」
+
+##### 　B「あ、あった、あった、ごめんなさい。」
+
+###### → 　A. Hả? Không có chìa khóa à? Làm gì có chuyện đó! Hẳn là tôi đã đặt nó trên bàn mà.　
+
+###### 　B. A, có rồi, có rồi! Xin lỗi!
+
+##### 5. 彼が試験に失敗するはずはないと思うが、それでもやはり100%とは言えない。
+
+###### → Mặc dù anh ta nghĩ là làm gì mà thi rớt được nhưng quả thật không thể nói chắc chắn 100% được.
+
+##### 6. 小さい子供が四人もいるのだから、家の中がきれいなはずがないでしょ。
+
+###### → Vì nhà đó có những 4 đứa con nhỏ nên làm sao mà nhà sạch đẹp được.
+
+##### 7. こんなことは子供に言うはずがない。
+
+###### → Lẽ nào những chuyện như thế này lại nói với trẻ con được.

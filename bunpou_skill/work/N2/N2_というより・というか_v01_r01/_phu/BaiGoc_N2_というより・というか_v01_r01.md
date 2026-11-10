@@ -1,0 +1,109 @@
+Cấp độ: N2
+
+# ～ というより／というか
+
+> **Đúng Hơn Là…/ Nói Đúng Hơn Là…/ Thay Vì Nói Là….( Thì Đúng Hơn Là….)**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **「Thể thường/ Danh từ」A +  というより/というか + B**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**①　Dùng so sánh phán đoán hoặc diễn đạt, cho rằng nói như B thì đúng hơn là A. Hoặc là Cái sau mới là thích đáng hơn/ Hơn cả việc trước đó**
+
+**②　Cũng thường hay bắt gặp đi với dạng: 「Aというより（も）、むしろ　B」**
+
+→　Có Nghĩa là : **Đúng hơn là…/ Nói đúng hơn là…/ Thay vì nói là….( thì đúng hơn là….)**
+
+---
+
+## Ví dụ
+
+##### 1. 美人というよりかわいいです。
+
+###### → (Cô ấy) đáng yêu thì đúng hơn là đẹp.
+
+##### 2. 日は涼しいというより寒いくらいだった。
+
+###### → Hôm nay hơi lạnh thì đúng hơn là mát.
+
+##### 3. その音は、人というより動物のようだった。
+
+###### → Âm thanh đó nghe giống tiếng động vật hơn là tiếng người.
+
+##### 4. あの学生はできないというか、やる気がないのでしょう。
+
+###### → Cậu sinh viên đó đúng hơn là không có động lực chứ không phải là không có năng lực.
+
+##### 5. 前の車は遅すぎて、走るというより、走っているようだ。
+
+###### → Cái ô tô phía trước quá chậm, cứ như bò ra đường chứ không phải chạy.
+
+##### 6. それから彼女はまた、普通というか、元に戻ったんです。
+
+###### → Từ đó trở đi, cô ấy lại bình thường, hay nói đúng hơn là đã quay trở lại như ban đầu.
+
+##### 7. あの人は、失礼というより、無神経なのだ。
+
+###### → Người đó nói đúng ra là thiếu suy nghĩ, hơn là vô lễ.
+
+##### 8. コンピューターゲームは子供のおもちゃというより、今や大人向けの一大産業プロダクトとなっている。
+
+###### → Các trò chơi trên máy vi tính hiện đã và đang trở thành một sản phẩm kinh doanh lớn dành cho người lớn, hơn là đồ chơi dành cho trẻ em.
+
+##### 9. 「この辺にぎやかですね。」
+
+###### → “ Khu vực này nhộn nhịp nhỉ!”
+
+##### 10. 「にぎやかというより、人通りや車の音でうるさいくらいなんです。」
+
+###### → “Tôi thấy xe cộ và người qua lại ồn ào thì đúng hơn (là nhộn nhịp).
+
+##### 11. 子供「選挙で投票するというのは、国民の義務なんでしょう。」
+
+###### → Con: “Việc bỏ phiếu bầu có phải là nghĩa vụ của người dân không bố?”
+
+##### 12. 父親「義務というよりむしろ権利なんだよ。」
+
+###### → Bố: “Nói đúng hơn thì đó là quyền lợi đó con
+
+##### 13. 「やはり田中さんに挨拶に行ったほうが良いでしょうか。」
+
+###### → Quả thật chắc có lẽ chúng ta nên đi đến đó chào hỏi anh Tanaka một tiếng nhỉ?
+
+##### 14. 「というより、行かなければならないでしょうね。」
+
+###### → Nói đúng hơn là chúng ta phải đi thôi nhỉ.
+
+##### 15. 彼女はすらっとしているというよりもむしろやせている。
+
+###### → Cô ấy nói đúng ra là gầy hơn là thon.
+
+##### 16. 彼らは恋人同士というよりむしろ友達同士だ。
+
+###### → Họ giống như bạn bè hơn là người yêu.
+
+##### 17. 彼女は歌手というよりむしろ女優である。
+
+###### → Nói cô ấy là một diễn viên thì đúng hơn là một ca sĩ.
+
+##### 18. 気温が低すぎて、寒いというか痛い。
+
+###### → Nhiệt độ quá thấp, nói là lạnh, hay đúng hơn là cảm thấy rát cả người.
+
+##### 19. あの店は冷房が効いていていつもとても涼しい、というか寒い。
+
+###### → Tiệm đó máy lạnh chạy quá mạnh nên rất mát, hay nói đúng hơn là cảm thấy lạnh.
+
+##### 20.  私にとってあの俳優は、かっこいいというかもはや尊い。
+
+###### → Đối với tôi, diễn viên đó rất tuyệt, hay nói đúng hơn là rất đáng kính.
+
+##### 21.  あの人も、というかあの人こそ人の痛みがわかる人だ。
+
+###### → Người đó cũng, hay nói chính xác hơn chính người đó mới là người hiểu được nỗi đau của người khác.

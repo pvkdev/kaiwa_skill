@@ -1,0 +1,85 @@
+Cấp độ: N2
+
+# ～ にかけては／にかけても
+
+> **Về Mặt… Thì…/ Xét Về… Thì…/ Nói Về… Thì…/ Trong Lĩnh Vực… Thì…**
+
+---
+
+##  Cấu trúc
+
+> **Danh từ + にかけて（は）**  
+>
+> **Tính từ đuôi ~~い~~ + さ + にかけて（は）**
+
+---
+
+##  Cách dùng / Ý nghĩa
+
+①　Mẫu câu diễn tả ý nghĩa “Liên quan đến việc đó thì…/ Về lĩnh vực đó thì…/ Xét về lĩnh vực nào đó thì…là nhất, không có gì hơn được”. Thường nhằm đánh giá cao năng lực của một người, một sự vật, sự việc. Đôi khi cũng có đánh giá tiêu cực.
+
+②　Mẫu câu này thường đi kèm với từ thể hiện năng lực, kĩ thuật. 
+
+→　Có Nghĩa là : Về mặt… thì…/ Xét về… thì…/ Nói về… thì…/ Trong lĩnh vực… thì…
+
+---
+
+##  Ví dụ
+
+##### 1. サービスにかけてはここにまさるホテルはない。
+
+###### → Về mặt dịch vụ thì không có khách sạn nào hơn được chỗ này.
+
+##### 2. 英単語の暗記にかけては、彼にかなう者はいない。
+
+###### → Nói về khả năng nhớ từ vựng tiếng Anh thì không ai bằng anh ta được.
+
+##### 3. いびきにかけては、ロンさんにかなうものはいない。
+
+###### → Nói về chuyện ngáy to thì không ai bằng Long được.
+
+*（もの・ところ）にかなうものはない＝ Không có gì bằng / không nơi nào bằng.*
+
+*（人）にかなうものはいない = Không có ai bằng (anh ta / cô ta)*
+
+*Tương đương với: （ひと）の右に出る者はいない。*
+
+##### 4. 数学にかけては彼についていけない。
+
+###### → Nói về toán thì chúng ta (tôi) không thể theo kịp anh ta.
+
+##### 5. 大気汚染にかけてはその都市ほどひどい所はない。
+
+###### → Nói về ô nhiễm không khí thì không có nơi nào khủng khiếp bằng chỗ đó (thành phố đó).
+
+##### 6. 彼はその仕事にかけては老練な人だ。
+
+###### → Anh ta là một người lão luyện đối với (khi nói về) công việc đó.
+
+##### 7. 彼は経済にかけては誰にも負けないと自負している。
+
+###### → Anh ta tự phụ rằng nói về kinh tế thì anh ta không thua bất kỳ ai.
+
+##### 8. チームの名誉にかけても今度の試合は絶対負けられません。
+
+###### → Ngay cả về danh dự của đội thì trận đấu lần này chúng ta cũng không được phép thua.
+
+##### 9. 料理にかけては、彼は名人だ。
+
+###### → Nếu nói về món ăn thì anh ấy là người nổi tiếng
+
+##### 10. 先生はその仕事にかけては老練な人だ。
+
+###### → Nếu nói về công việc đó thì thầy giáo là người lão luyện
+
+##### 11. 物価の高さにかけては、その地域ほど高いところはない。
+
+###### → Nếu nói về giá cả cao thì không nơi nào cao như thành phố đó
+
+##### 12. 私は安い材料でおいしい料理を作ることにかけてはだれも負けませんよ。
+
+###### → Về khoản nấu đồ ăn ngon từ nguyên liệu rẻ thì tôi không thua ai đâu
+
+##### 13. ボール運びのうまさにかけては A選手の右に出るものはいない。
+
+###### → Về việc chuyền bóng giỏi thì không ai hơn tuyển thủ A cả

@@ -1,0 +1,168 @@
+Cấp độ: N3
+
+# ～ について／につき
+
+**Về…/ Liên Quan Đến…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Danh từ + について**  
+> **Danh từ + については：Lấy đối tượng làm chủ đề để miêu tả.**  
+> **Danh từ + についても：Nhấn mạnh đối tượng (về cả…)**  
+> **Danh từ + につき、～：Chủ yếu sử dụng trong văn viết, hoặc kiểu cách, trang trọng.**  
+> **Danh từ + について + の + Danh từ 2：Là hình thức kết nối hai danh từ, bổ nghĩa cho danh từ đi sau.**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**① Được sử dụng để diễn tả ý nghĩa “liên quan đến/ về điều gì đó…”**
+
+**② Phía sau thường là những động từ mang nghĩa 話す、聞く、考える、書く、調べる v.v.**
+
+**③ Cách sử dụng tương tự với 「～に関して」nhưng mang tính văn nói hơn.**
+
+→ Có Nghĩa là : **Liên quan đến… / Liên quan tới… / Về…**
+
+---
+
+## Ví dụ
+
+##### 1. あの映画について、どう思う？
+
+###### → Cậu nghĩ sao về bộ phim đó?
+
+##### 2. 日本の祭りについて調べた。
+
+###### → Tôi đã tìm hiểu về các lễ hội của Nhật.
+
+##### 3. 新しい システム についての質問は、E メール でお願いします。
+
+###### → Xin vui lòng gửi mail nếu có các câu hỏi liên quan đến hệ thống mới.
+
+##### 4. テスト の内容についてのお知らせです。
+
+###### → Đây là thông báo về nội dung bài thi.
+
+##### 5. 個人情報の管理につきまして、ご説明させていただきます。
+
+###### → Chúng tôi xin phép được giải thích về việc quản lý thông tin cá nhân.
+
+*（～させていただきます là cách nói trang trọng mang ý nghĩa “cho phép tôi được …”）*
+
+##### 6. 日本の経済について研究しています。
+
+###### → Tôi đang nghiên cứu về kinh tế Nhật Bản.
+
+##### 7. 彼は、ベトナムの文化について研究しています。
+
+###### → Cậu ấy đang nghiên cứu về văn hóa Việt Nam.
+
+##### 8. あの作家の経歴について知っていたら教えてくれませんか。
+
+###### → Nếu anh biết về tiểu sử của nhà văn đó thì có thể nói cho tôi biết không?
+
+##### 9. 今日は私の国の産業について少しお話しようと思います。
+
+###### → Hôm nay, tôi muốn trình bày một chút về các ngành công nghiệp của nước tôi.
+
+##### 10. けさ新聞で渡り鳥について、ひとつの記事を読んだ。
+
+###### → Sáng nay tôi đã có đọc một bài báo về loài chim di trú.
+
+##### 11. あの人について私は何も知りません。
+
+###### → Tôi không biết gì về người đó cả.
+
+##### 12. この町の歴史についてちょっと調べてみようと思っている。
+
+###### → Tôi định tìm hiểu đôi chút về lịch sử của thị trấn này.
+
+##### 13. 昨日の小論文の試験は「私の国の教育制度について」という題だった。
+
+###### → Bài thi tiểu luận hôm qua có đề tài là “Về hệ thống giáo dục của đất nước tôi”.
+
+##### 14. 農村の生活様式について調べている。
+
+###### → Tôi đang tìm hiểu về cách sinh hoạt ở nông thôn.
+
+##### 15. 彼女は自分自身について何も語ろうとしない。
+
+###### → Cô ấy không chịu nói gì về mình.
+
+##### 16. 事故の原因について究明する。
+
+###### → Tôi sẽ tìm hiểu kỹ về nguyên nhân của tai nạn.
+
+##### 17. 日本の習慣についても、自分の国の習慣と比べながら考えてみよう。
+
+###### → Chúng ta hãy suy nghĩ về cả phong tục của nước Nhật trên cơ sở vừa so sánh với phong tục của nước mình.
+
+##### 18. 本部の移転問題につき、審議が行われた。
+
+###### → Người ta đã cân nhắc về việc di chuyển trụ sở chính.
+
+##### 19. わが社の新製品につき、ご説明いたします。
+
+###### → Tôi xin trình bày về sản phẩm mới của công ty chúng tôi.
+
+##### 20. 領土の分割案につき、関係各国の代表から厳しい批判が浴びせられた。
+
+###### → Đại biểu các nước có liên quan đã nghiêm khắc phê phán đề án phân chia lãnh thổ.
+
+##### 21. この病気の原因については、いくつかの説がある。
+
+###### → Về nguyên nhân của căn bệnh này thì có một số giả thuyết.
+
+##### 22. その点については全面的に賛成はできない。
+
+###### → Về điểm đó thì tôi hoàn toàn không thể tán thành.
+
+##### 23. あの俳優の私生活については、よく報道されています。
+
+###### → Về đời tư của diễn viên đó thì thường được đăng báo.
+
+##### 24. コンピューターの使い方についての本がほしい。
+
+###### → Tôi muốn có một quyển sách về máy vi tính.
+
+##### 25. この薬の安全性についての調査結果が出た。
+
+###### → Điều tra về tính an toàn của loại thuốc này đã có.
+
+##### 26. この日本文化史についてのレポートは大変よくできている。
+
+###### → Bài báo cáo về lịch sử văn hóa Nhật Bản này được thực hiện rất tốt.
+
+##### 27. 経済方針についての説明を受けた。
+
+###### → Tôi đã nghe giải thích về phương châm kinh doanh.
+
+##### 28. 将来についての夢を語った。
+
+###### → Tôi đã kể ra những ước mơ về tương lai.
+
+##### 29. 事の善悪についての判断ができなくなっている。
+
+###### → Người ta đã không còn có thể phán đoán về sự tốt xấu của sự việc.
+
+---
+
+## Chú ý
+
+- Ngoài ra, 「～について」 còn được sử dụng đi sau từ chỉ số lượng, và lấy con số đó làm đơn vị, để diễn tả ý “tương ứng với đơn vị đó”. 
+- Thường được dịch là: **“cho mỗi”**.
+
+##### 1. 車一台について五千円の使用量を頂戴します。
+
+###### → Chúng tôi xin nhận 5 nghìn yên phí sử dụng cho mỗi chiếc xe.
+
+##### 2. 乗客一人につき三つまでの荷物を持ち込むことができます。
+
+###### → Mỗi hành khách có thể mang lên tối đa là 3 hành lý xách tay.
+
+##### 3. 作業員五人について1部屋しか割り当てられなかった。
+
+###### → Chỉ có thể phân chia 1 phòng cho mỗi 5 công nhân.

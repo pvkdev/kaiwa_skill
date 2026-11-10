@@ -1,0 +1,91 @@
+Cấp độ: N1
+
+# ～たら最後／たが最後
+
+> Một Khi Đã..Thì – Nếu…Thì Nhất Định – Nếu…Thì Kết Cục Thế Nào Cũng Là… – Khi Mà..
+
+---
+
+## Cấu trúc ngữ pháp
+
+> ```
+> Động từ thể た + ら最後/ が最後
+> ```
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Giống như nghĩa đen của từ「最後」, cấu trúc này biểu thị ý nghĩa “một khi như thế thì cứ thế tiếp diễn”, “một khi đã như thế thì tất cả mọi thứ sẽ”, “Nếu mà làm  V thì kết cục thế nào cũng là …“
+
+②　Phía sau thường diễn tả kết quả hoặc trạng thái không tốt, không mong muốn.
+
+③「たら最後」mang tính văn nói hơn so với「～たが最後」
+
+## →　Có Nghĩa là : Một khi đã..thì – Nếu…thì nhất định – Nếu…thì kết cục thế nào cũng là… – Khi mà..
+
+## Ví dụ
+
+##### 1. 博人は遊びに出かけたら最後、暗くなるまで戻ってきません。
+
+###### → Khi mà Hiroto nó đi ra ngoài chơi thì nó sẽ không quay về cho đến khi trời tối.
+
+##### 2. ファイルは一度削除したら最後、元に戻せないから、気をつけたほうがいいですよ。
+
+###### → Một khi đã xóa file thì sẽ không thể quay lại như cũ được nên hãy cẩn thận nhé.
+
+##### 3. 彼は国境を一歩でも出たが最後、二度と故郷には戻れないことを知っていた。
+
+###### → Anh ta đã biết là một khi đã bước ra khỏi biên giới dù chỉ một bước thôi thì nhất định sẽ không thể quay trở lại quê hương.
+
+##### 4. 彼は怒ったら最後、絶対に許してくれない。
+
+###### → Nếu anh ta mà tức giận thì nhất định sẽ không tha thứ cho đâu.
+
+##### 5. 兄は大酒飲みだから、飲み始めたら最後酔いつぶれるまで飲んでしまう。
+
+###### → Anh trai tôi uống rượu nhiều nên nếu đã bắt đầu uống thì thế nào cũng uống đến không biết trời đất là gì.
+
+##### 6. 彼にお金を持たせたら最後、何に使われるかわからない。
+
+###### → Nếu mà đưa cho anh ta giữ tiền thì kết quả là có tiêu vào đâu cũng không biết nữa.
+
+##### 7. あの人にお金を貸したが最後、返してもらえないから、気をつけたほうがいいよ。
+
+###### → Khi mà cho người đó mượn tiền rồi thì không thể đòi lại được nên hãy cẩn thận nhé.
+
+##### 8. 信用というものは、いったん失ったが最後、取り戻すのは難しい。
+
+###### → Niềm tin là thứ mà một khi đã đánh mất rồi thì sẽ rất khó để lấy lại.
+
+##### 9. ああいう大人しい人って、みんなそうらしいんですけど、いったん、癇癪を起こしたが最後、手がつけられないほど腹を立てるんですね。
+
+###### → Những người hiền hiền như thế, có vẻ mọi người đều giống nhau, rằng một khi đã nổi giận rồi thì không cản nổi.
+
+##### 10. うちの息子はパソコンの前に座ったが最後、声をかけても返事もしない。
+
+###### → Con trai nhà tôi một khi đã ngồi vào máy tính là có gọi nó cũng không thèm trả lời.
+
+##### 11. 不倫をしたが最後、なかなか元の家庭に戻れない。
+
+###### → Một khi đã ngoại tình rồi thì gia đình khó mà trở lại được như xưa.
+
+##### 12. アンさんはカラオケが大好きで、マイクを握ったが最後、誰にも渡さない。
+
+###### → An rất thích karaoke, nên khi đã cầm micro rồi thì không đưa cho ai nữa hết.
+
+##### 13. それを言ったが最後あなたたち二人の友情は完全に壊れてしまうよ。
+
+###### → Một khi mà nói ra điều đó thì tình bạn của hai người sẽ hoàn tầm chấm dứt đấy.
+
+##### 14. うちの娘は パソコン の前に座ったが最後、声を かけても返事もしない。
+
+###### → Con gái tôi mà đã ngồi trước máy tính thì có gọi nó cũng không thèm trả lời.
+
+##### 15. あんな人が委員長になったら最後、この会はだめになる。
+
+###### → Người như thế mà trở thành chủ tịch hiệp hội thì thế nào cái hội này cũng không có tương lai.
+
+##### 16. わたしは卵アレルギー なので、卵が入っている食品を うっかり口にしたら最後、顔中に赤いぶつぶつができる。
+
+###### → Tôi bị dị ứng với trứng nên nếu lỡ ăn phải món ăn có trứng thì thế nào cũng bị nổi mẩn sần sùi khắp mặt.

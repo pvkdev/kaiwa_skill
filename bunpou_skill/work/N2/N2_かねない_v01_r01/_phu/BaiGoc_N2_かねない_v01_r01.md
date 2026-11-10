@@ -1,0 +1,87 @@
+Cấp độ: N2
+
+# 〜 かねない
+
+> **Có Khả Năng… / Có Thể Sẽ…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể ~~ます~~ ＋ かねない／かねません**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói dùng để Diễn tả ý nghĩa “có khả năng, có nguy cơ dẫn đến một kết quả, một sự việc không tốt nào đó sẽ xảy ra”
+
+②　Là cách nói mang tính văn viết, Thường đi chung với 「Vたら、Nなら」ở phía trước.
+
+③　Mẫu câu này nói rõ về nguyên nhân hơn おそれがある
+
+→　Có Nghĩa là : Có khả năng… / Có thể sẽ…
+
+---
+
+## Ví dụ
+
+##### 1. うわさはどんどん変な方向へ発展していきかねない。
+
+###### → Có khả năng tin đồn sẽ dần phát triển theo chiều hướng xấu.
+
+##### 2. 大事なことはみんなに相談しないと、後で文句を言われかねませんよ。
+
+###### → Chuyện quan trọng nếu không bàn với mọi người, sau đó có thể sẽ bị phàn nàn đấy.
+
+##### 3. 風邪だからといって放っておくと、大きい病気になりかねない。
+
+###### → Dù chỉ bị cảm lạnh thôi nhưng nếu cứ bỏ mặc như thế mà không lo thuốc men, thì có thể bệnh sẽ trở nặng.
+
+##### 4. そんな乱暴な運転をしたら、事故を起こしかねないよ。
+
+###### → Nếu cứ lái xe lạng lách như thế có thể sẽ gây tai nạn đấy.
+
+##### 5. あんなにスピードを出したら、事故を起こしかねないよ。
+
+###### → Nếu phóng tốc độ như thế, có thể sẽ gây tai nạn đấy.
+
+##### 6. そんなひどいことも、あの人なら言いかねない。
+
+###### → Nếu là người đó thì có thể sẽ nói ra chuyện tệ hại như vậy.
+
+##### 7. あまり遊んでばかりいると、入学試験に失敗しかねない。
+
+###### → Nếu cứ chơi suốt như thế, có thể sẽ thi rớt đầu vào.
+
+##### 8. 「まさか、彼がそんなひどいことするとは思えませんが」
+
+#####  「あいつは金のためならどんなことでもやりかねない男だよ」
+
+###### → Tôi không thể nào nghĩ là anh ta lại làm những chuyện như thế.
+
+###### – Nó là một gã đàn ông mà vì tiền thì chuyện gì cũng cũng có thể làm đấy.
+
+##### 9. 君は、彼がそんなことをするはずがないと言ってるそうだが、ぼくはあいつならやりかねないと思うけどね。
+
+###### → Anh bảo là không thể nào có chuyện nó làm một việc như thế, nhưng tôi thì lại nghĩ là ai chứ nó thì rất có thể sẽ làm chuyện đó.
+
+##### 10. 食事と睡眠だけはきちんと取らないと、体を壊すことになりかねません。
+
+###### → Chỉ riêng ăn uống với ngủ nghỉ mà không đàng hoàng thì có thể sẽ có hại cho sức khỏe.
+
+##### 11. 政府の今回の決定はいくつかの問題点をはらんでおり、近隣諸国の反発を招きかねない。
+
+###### → Quyết định lần này của Chính phủ bao hàm một số điểm đang tranh cãi, có thể sẽ gây ra phản ứng chống đối từ các nước láng giềng.
+
+##### 12. 最近のマスコミの過剰な報道は、無関係な人を傷付けることにもなりかねない。
+
+###### → Những tin tức thái quá của các phương tiện truyền thông gần đây có thể sẽ gây tổn thương cho những người vô can.
+
+##### 13. この問題を解決せずに放っておいたら、国際問題になりかねない。
+
+###### → Nếu cứ để vấn đề này như vậy mà không giải quyết thì có thể sẽ trở thành vấn đề quốc tế.
+
+##### 14. 今回の土砂崩れは二次災害を引き起こしかねないものであり、対策を急がねばならない。
+
+###### → Trận sụt lở đất đá lần này có thể sẽ gây ra thiệt hại kế tiếp. Cần phải gấp rút bàn cách đối phó.

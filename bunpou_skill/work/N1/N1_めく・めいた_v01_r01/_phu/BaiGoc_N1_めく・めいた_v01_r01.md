@@ -1,0 +1,99 @@
+Cấp độ: N1
+
+# ～めく／めいた
+
+> Có Vẻ…/ Như…
+
+---
+
+## Cấu trúc
+
+> ```
+> N + めく
+> N + めく + N
+> N + めいた + N
+> ```
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Đi sau những danh từ, diễn đạt ý “có cảm giác, có một số yếu tố mà danh từ đó thể hiện”（～らしくなる／～のように見える）
+
+②　Không dùng trong những trường hợp “khi yếu tố, cảm giác đó hoàn toàn là như thế”
+
+③　Những danh từ đi kèm có giới hạn ( ví dụ như 謎めく、色、時めく、春めく /夏めく /秋めく /冬めく、うごめく、きらめく、ざわめく、そよめく、つやめく、どよめく、はためく、ひしめく、ふためく、ゆらめく、よろめく ) v.v.
+
+④　Khi bổ nghĩa cho danh từ thì dùng cách nói 「N めく N」「N めいた N」
+
+⑤　Là một hậu tố cổ, nghĩa tương tự với 「～っぽい」
+
+→ Có Nghĩa là : Có vẻ…/ Như…
+
+---
+
+## Ví dụ
+
+##### 1. 少しずつ春めいてきた。
+
+###### → Trời đã dần dần nhuốm tiết xuân。
+
+##### 2. 風も涼しくなり、徐々に秋めいてまりましたが、いかがお過ごしでしょうか。
+
+###### → Gió bắt đầu mát, thời tiết cũng bắt đầu như sắp sang thu. Mọi thứ vẫn tốt chứ?
+
+##### 3. 東京もいよいよ春めいてきて、桜の開花が待ち遠くなりました。
+
+###### → Tokyo trời cũng bắt đầu như sắp sang xuân, anh đào cũng sắp ra hoa。
+
+##### 4. どことなく謎めいた女性がホールの入り口に立っていた。
+
+###### → Có một người phụ nữ có vẻ gì đó bí ẩn đứng ở cửa ra vào của hội trường。
+
+##### 5. 冗談めいた口調だったが、「10年後は俺が社長かもね」と言った彼の目は真剣そのものだった。
+
+###### → Tuy giọng có vẻ đùa khi nói rằng “10 năm sau có thể tôi sẽ là Giám đốc không chừng” nhưng ánh mắt anh ta khi đó rất nghiêm túc。
+
+##### 6. 不正を暴いたジャーナリストに対して、「交通事故に気をつけろ」といった脅迫めいた電話が毎日かかってくる。
+
+###### → Nhà báo bất chính mỗi ngày đều nhận được điện thoại gọi đến như đe dọa rằng “hãy coi chừng bị xe đụng đấy！”
+
+##### 7. 彼は、皮肉めいた言い方をした。
+
+###### → Anh ấy nói pha chút mỉa mai。
+
+##### 8. モナリザの謎めいた微笑みは時代を超えて人々を魅了し続けている。
+
+###### → Nụ cười đầy bí ẩn của nàng Mona Lisa qua bao thời vẫn cuốn hút người xem。
+
+##### 9. 社長の口から出たのは、言い訳めいた言葉だけで、被害者への謝罪の言葉は一言もなかった。
+
+###### → Những gì từ miệng ông Giám đốc phát ra chỉ toàn là những lời như biện minh, không hề có một lời nào xin lỗi gửi đến những người bị hại。
+
+##### 10. 彼は上司のせいで苦労したが、非難めいたことは一言も言わず、黙々と働いていた。
+
+###### → Dù rất cực khổ bởi cấp trên nhưng anh ta vẫn cật lực làm việc, không một lời nào than vãn。
+
+##### 11. 彼の作り物めいた笑いが、気になった。
+
+###### → Tôi băn khoăn về nụ cười có vẻ gượng gào của anh ấy。
+
+##### 12. 歴史上の人物の生涯には、とかく作り話めいた美談が存在しているのだ。
+
+###### → Về cuộc đời của những nhân vật lịch sử, luôn tồn tại những câu chuyện đẹp có vẻ như được thêm thắt。
+
+##### 13. この地方の天気は夏めいてきた。
+
+###### → Thời tiết ở khu vực này giống như mùa hạ。
+
+##### 14. 彼女は フランス人ですが、ドイツ人めいた アクセント があります。
+
+###### → Cô ấy là người Pháp nhưng lại có âm điệu giống người Đức。
+
+##### 15. あの人はもう二十歳なのに、子供めいた行動がよくします。
+
+###### → Người đó đã 20 tuổi rồi mà lại hay hành xử như trẻ con。
+
+##### 16. あの子はまだ中学生なのに、ときどき大人めいた考えがあります。
+
+###### → Đứa bé đó tuy mới là học sinh trung học mà thỉnh thoảng có suy nghĩ như người lớn。

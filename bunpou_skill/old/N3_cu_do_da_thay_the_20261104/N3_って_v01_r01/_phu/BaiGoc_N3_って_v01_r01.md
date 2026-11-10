@@ -1,0 +1,350 @@
+Cấp độ: N3
+
+# ～って
+
+**Nói Là…, Nghe Nói Là…/ Cái Gọi Là…/ Mặc Dù, Cho Dù, Thậm Chí, Ngay Cả…/ Là…, Thì…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **\[Thể thường\] + って**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**①　Dùng để trích dẫn lại lời người khác nói**, mang nghĩa là “Nói là…, Nghe nói là...”
+
+**②　Dùng để nhắc lại (nhấn mạnh) cái được nói đến trước đó hoặc dùng để đưa ra định nghĩa** (thay cho というのは), mang nghĩa là “Cái gọi là…“
+
+**③　Sử dụng như từ nối ở giữa câu**, mang nghĩa là “Mặc dù, cho dù, thậm chí, ngay cả…”
+
+**④　Đứng sau chủ đề của câu và thường dùng thay cho** は, mang nghĩa là “Là…, Thì…“
+
+**⑤　Là văn nói dùng thay cho と trong một số mẫu câu** như: と思う、と聞く、と言う、と書く…
+
+→　Có Nghĩa là :  **Nói là…, Nghe nói là…/ Cái gọi là…/ Mặc dù, cho dù, thậm chí, ngay cả…/ Là…, thì…**
+
+---
+
+## Cách dùng 1: Nói là…, Nghe nói là…
+
+**\[Thể thường\] + って**
+
+- **Dùng để trích dẫn lại lời người khác nói.** 
+- **Đây là cách dùng ít trang trọng hơn của「と言いました/ と聞きました/そうです」và hay dùng trong hội thoại hàng ngày.**
+
+→　Có nghĩa là: Nói là…, Nghe nói là…
+
+---
+
+### Ví dụ:
+
+##### 1. 彼はしらないって。（＝ 彼はしらないと言いました）
+
+###### → Anh ấy nói là không biết.
+
+##### 2. 山田さんは パーティー に参加しないって。（＝ 山田さんは パーティー に参加しないと言いました）
+
+###### → Yamada nói là anh ấy sẽ không dự tiệc.
+
+##### 3. 明日は雪だって。（＝ 明日は雪だそうです）
+
+###### → Nghe nói mai sẽ có tuyết rơi.
+
+##### 4. 彼女は手伝ってほしいって。（＝彼女は手伝ってほしいと言いました）
+
+###### → Cô ấy nói là muốn được giúp đỡ.
+
+##### 5. 小川さん、今日は休むって言ったよ。
+
+###### → Anh Ogawa đã nói là hôm nay sẽ nghỉ.
+
+##### 6. 佐藤さんの奥さんは料理のせんせいだって。
+
+###### → Vợ của Satou là giáo viên dạy nấu ăn.
+
+##### 7. 山川君、先生は教員室まできてくださいって。
+
+###### → Em Yamakawa, Thầy nói là hãy đến phòng khoa.
+
+##### 8. 山田さんは パーティー に参加しないって。
+
+###### → Yamada nói là không tham gia bữa tiệc.
+
+##### 9. 田中さんって、商社に勤めているんですよ。
+
+###### → Người tên là Tanaka thì đang làm việc cho công ty thương mại.
+
+##### 10. 彼女はしらないって。
+
+###### → Cô ấy nói là không biết
+
+##### 11. 試験の範囲は、教科書の １００ ページ から最後までだって。
+
+###### → Nghe nói phạm vi đề thi là từ trang 100 đến hết sách học.
+
+---
+
+**※「んだって/ んですって」hay được dùng trong hội thoại hàng ngày. 「んですって」lịch sự hơn một chút, hay được phụ nữ sử dụng. Tìm hiểu thêm tại đây**
+
+### Ví dụ
+
+##### 1. 彼はしらないんだって。
+
+###### → Anh ấy nói là không biết
+
+##### 2. 彼女は手伝ってほしいんですって。
+
+###### → Cô ấy nói là muốn được giúp đỡ
+
+##### 3. 明日から暑くなるんですって。
+
+###### → Nghe nói từ mai thời tiết sẽ nóng lên
+
+##### 4. 駅前に タイ料理の レストラン ができたんだって。行ってみようよ。
+
+###### → Nghe nói là trước nhà ga vừa xây nhà hàng đồ ăn Thái. Cùng nhau đi thử nha.
+
+---
+
+**※ Bạn cũng có thể nghe người Nhật thêm 「さ」ở sau って. Đây cũng là một cách nói thân mật trong hội thoại.**
+
+### Ví dụ:
+
+##### 1. 山田さんは パーティー に参加しないんだってさ。
+
+###### → Yamada nói là anh ấy sẽ không đến dự tiệc
+
+##### 2. 明日は雪だってさ。
+
+###### → Nghe nói mai sẽ có tuyết rơi
+
+---
+
+## Cách dùng 2: Cái gọi là…
+
+**\[Thể thường\] + って \[Thể thường\] + って + Danh từ**
+
+-  **Dùng để nhắc lại (nhấn mạnh) cái được nói đến trước đó.**
+-  **Đây là cách nói ít trang trọng hơn của 「と/という/というのは/ということは」**
+
+→　Có nghĩa là: Cái gọi là…
+
+---
+
+### Ví dụ:
+
+##### 1. 木村先生ってどんな人ですか。（＝ 木村先生という人はどんな人ですか）
+
+###### → Thầy Kimura là người thế nào?
+
+##### 2. 「ちょっと手伝ってよ」－「手伝うって、何を？」（＝ 手伝うというのは、何を）
+
+###### → Này, giúp tớ một chút./ Cậu bảo giúp là giúp cái gì?
+
+##### 3. A:「デジカメ ってなんですか。」（＝「デジカメ というのはなんですか。」
+
+#####          B:「デジカメ っていうのは デジタルカメラ のことですよ」（＝「デジカメ というのは デジタルカメラ のことですよ」）
+
+###### →A: Dejikame là cái gì thế?
+
+###### B: Dejikame tức là digital camera (máy ảnh kỹ thuật số) đó.
+
+##### 4. A:「となりの クラス の山田って人、知ってる？」（＝「となりの クラス の山田という人、知ってる？」）
+
+#####      B:「知らない」
+
+###### →A: Cậu biết người tên là Yamada ở lớp bên cạnh không? /
+
+###### B:  Không biết.
+
+##### 5. A:「ここに \[禁煙」って書いてありますよ」（＝「ここに \[禁煙」と書いてありますよ」）
+
+#####      B:「あ、気づきませんでした」
+
+###### →A: Ở đây có viết là “Cấm hút thuốc” đấy.
+
+###### B:  À, tôi không để ý.
+
+##### 6. 就活って、就職活動のことだ。
+
+###### → Shukatsu là hoạt động tìm kiếm việc làm.
+
+##### 7. コンビニ って、コンビニエンスストア のことだ。
+
+###### → Combini nghĩa là cửa hàng tiện lợi
+
+##### 8. 満月って、少しも欠けることなく全面が輝いて見える月のことである。
+
+###### → Mantsuki nghĩa là trăng tròn, mặt trăng chiếu sáng toàn bộ
+
+##### 9. 良い教師って、学生のこと を理解してあげられる教師のことだ。
+
+###### → Giáo viên tốt là giáo viên có thể làm cho học sinh hiểu về mình
+
+##### 10. 名大って、名古屋大学のことだ。
+
+###### → Meidai là đại học Nagoya
+
+##### 11. リュウ さん、さっき田中さんって人を探してたよ。
+
+###### → Ryu-san đang tìm người tên là Tanaka-san.
+
+##### 12. これはたこ焼きっていう食べ物だよ。
+
+###### → Đây là một loại đồ ăn được gọi là takoyaki.
+
+##### 13. 夏目漱石って人が書いた本を読んだんけど、とても難しくてわからなかった。
+
+###### → Tôi đã đọc một cuốn sách do Soseki Natsume viết, nhưng nó rất khó và tôi không hiểu gì
+
+##### 14. マルイ っていう デパート に行ったことある？
+
+###### → Bạn đã bao giờ đến một cửa hàng bách hóa có tên là Marui chưa?
+
+##### 15. みんなの日本語っていう教科書が一番有名だよね。
+
+###### → Cuốn sách giáo khoa tiếng Nhật của mọi người là nổi tiếng nhất.
+
+##### 16. ナルト っていう漫画が面白いらしいよ。
+
+###### → Nghe nói như một bộ manga tên là Naruto rất thú vị.
+
+##### 17. Anello っていう鞄が最近、人気があるらしいね。
+
+###### → Nghe nói những ngày gần đây, một chiếc túi có tên là Anello đang được ưa chuộng.
+
+##### 18. これはじゃんけんっていう ゲーム だよ。
+
+###### → Đây là trò chơi oẳn tù tì.
+
+---
+
+## Cách dùng 3: Mặc dù, cho dù, thậm chí, ngay cả…
+
+**\[Động từ thể た\] + って** 
+
+**\[Tính từ い → く\] + たって**
+
+**\[Tính từ -na/ Danh từ\] + だって**
+
+- **Sử dụng như từ nối ở giữa câu**, mang nghĩa là “Mặc dù, cho dù, thậm chí, ngay cả…”
+-   **Giống với ても/ でも nhưng ít trang trọng và suồng sã hơn**, dùng trong hội thoại hàng ngày (たって／だって)
+
+→　Có nghĩa là: Mặc dù, cho dù, thậm chí, ngay cả…
+
+---
+
+### Ví dụ:
+
+##### 1. 今から走ったって、間に合わない。
+
+###### → Dù bây giờ có chạy đi nữa thì cũng không kịp.
+
+##### 2. いくら広くたって、駅から遠い部屋には住みたくない。
+
+###### → Dù rộng thế nào đi nữa tôi cũng không muốn ở một căn phòng cách xa ga.
+
+##### 3. この料理は簡単だから、子供だって作れる。
+
+###### → Món này dễ nên ngay cả trẻ con cũng có thể làm được.
+
+##### 4. いとこにとってはこんな大学は一日だって我慢できないだろう。
+
+###### → Em họ tôi chắc là không thể chịu nổi thậm chí một ngày ở trường đại học như thế này.
+
+##### 5. やったっていいじゃん。（＝ やってもいいじゃない？）
+
+###### → Tôi làm có được không?
+
+##### 6. 考えたってわからない
+
+###### → Mặc dù có suy nghĩ cũng không hiểu.
+
+##### 7. 急いだってできない
+
+###### → Dù có khẩn trương thì cũng không thể (không kịp).
+
+##### 8. いくら安くたって要らないものは要らないよ。
+
+###### → Dù có rẻ mấy đi nữa đồ không cần thì không cần mua làm gì.
+
+##### 9. 強いお酒だって飲めるよ。
+
+###### → Rượu mạnh cũng có thể uống được.
+
+##### 10. いくら読んだってわからないんです。
+
+###### → Dù có đọc bao nhiêu lần thì cũng không hiểu.
+
+##### 11. 不便だって仕方がないね。
+
+###### → Dù có bất tiện thì cũng không có cách nào.
+
+##### 12. 忙しくたってかまわないよ。
+
+###### → Dù có bận cũng không sao đâu.
+
+##### 13. いくら押したって全然動かないんです。
+
+###### → Có ấn bao nhiêu lần thì nó cũng không hoạt động.
+
+##### 14. 健康な人だって病気になることもあるよ。
+
+###### → Người khỏe mạnh như thế nào thì cũng có lúc ốm.
+
+##### 15. 雨だって行くよ。
+
+###### → Dù trời mưa thì cũng đi.
+
+---
+
+## Cách dùng 4: Là…, Thì…
+
+**\[Danh từ\] + って**
+
+- **Đứng sau chủ đề của câu và thường dùng thay cho は**
+
+→　Có nghĩa là: Là…, Thì…
+
+---
+
+### Ví dụ:
+
+##### 1. あなたの恋人ってどんな人ですか？
+
+###### → người yêu của bạn là người như thế nào?
+
+##### 2. 日本語ってどうすれば上手になりますか？
+
+###### → Làm thế nào để giỏi được tiếng Nhật
+
+##### 3. すみません、会社の パーティー っていつですか？
+
+###### → Xin lỗi, bữa tiệc của công ty diễn ra khi nào?
+
+---
+
+## Cách dùng 5: Thay thế cho と trong một số mẫu câu
+
+**\[Mệnh đề ngắn\] + って**
+
+-  **Là văn nói dùng thay thế cho と** trong một số mẫu câu như: と思う、と聞く、と言う、と書く…
+
+---
+
+### Ví dụ
+
+##### 1. 山田さんは明日休むって言った。（＝ 山田さんは明日休むと言った。)
+
+###### → Anh Yamada nói rằng ngày mai anh ấy sẽ nghỉ.
+
+##### 2. 社長は何って言いましたか。（＝ 社長は何と言いましたか。)
+
+###### → Giám đốc đã nói gì vậy
+
+##### 3. 仕事はなんですかって聞かれた。（＝ 仕事はなんですかと聞かれた。)
+
+###### → Tôi bị hỏi là “Công việc của bạn là gì?”

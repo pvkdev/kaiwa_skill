@@ -1,0 +1,99 @@
+Cấp độ: N1
+
+# ～ からある/ からいる/ からする/ からの
+
+> Có Tới…/ Có Trên…/ Có Hơn…/ Hơn…
+
+---
+
+## Cấu trúc
+
+> ```
+> Từ chỉ số lượng, chiều dài… + からある / からいる / からする / からの
+> ```
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Đi sau danh từ chỉ độ lớn, trọng lượng, chiều dài, số lượng, biểu thị ý nghĩa “có hơn” để nhấn mạnh số lượng nhiều, nhấn mạnh độ rộng, chiều dài, cân nặng...
+
+②　Phân biệt cách sử dụng 「〜からある/ からする/ からの/ からいる」
+
+「〜からする」→ Khi nói về giá cả/ trị giá và giá trị lớn
+
+「〜からある」→ Khi nói về khoảng cách / cân nặng / chiều cao / chiều rộng / kích thước
+
+「〜からの／からいる」→  Khi nói về số người, số tiền
+
+## →　Có Nghĩa là : Có tới…/ Có trên…/ Có hơn…/ Hơn…
+
+## Ví dụ
+
+##### 1. 私の故郷と日本は５千キロからある距離がある。
+
+###### → Quê tôi và Nhật Bản cách nhau hơn 5000km.
+
+##### 2. 毎朝晩、２３０件からある家に新聞を配らなければなりません。
+
+###### → Mối tối tôi phải đi giao báo cho hơn 230 nhà.
+
+##### 3. 2トンからあるこの岩。
+
+###### → Hòn đá này phải có hơn 2 tấn.
+
+##### 4. １００キロからある荷物を３階まで運ぶには、足腰の強い人が３人は必要だ。【2006年】
+
+###### → Để khuân đồ hành lý nặng hơn 100kg này lên lầu 3 thì cần phải có 3 người khỏe mạnh. (đề năm 2006)
+
+##### 5. 身長２メートルからある男が、突然、目の前に現れた。
+
+###### → Một người đàn ông cao hơn 2m bất ngờ xuất hiện trước mặt tôi.
+
+##### 6. 500 ページからある論文を 3日間で読んだ。
+
+###### → Tôi đã đọc một bài luận văn hơn 500 trang trong 3 ngày.
+
+##### 7. 災害時、3000人からいる観客を、安全に退出させるには人手が足りない。
+
+###### → Khi xảy ra thảm họa, không đủ người để đảm bảo di dời an toàn cho hơn 3000 khán giả.
+
+##### 8. 人気歌手が来日するとあって、空港には1000人からのファンが詰めかけた。
+
+###### → Do ca sĩ nổi tiếng đến Nhật nên đã có hơn 1000 fan hâm mộ vây kín sân bay.
+
+##### 9. 不動産屋は5,000万円からするマンションばかり紹介する。
+
+###### → Nhà môi giới bất động sản chỉ toàn giới thiệu những căn hộ có giá hơn 5 triệu Yên.
+
+##### 10. 彼女は４０億円からする遺産を相続したそうだ。
+
+###### → Nghe nói cô ta đã thừa kế một tài sản lên đến hơn 4 tỷ Yên.
+
+##### 11. 2000万円からする宝石が何者かに盗まれて、大騒ぎになっている。
+
+###### → Viên đá quý trị giá hơn 20 triệu Yên đã bị ai đó đánh cắp, đang gây xôn xao dư luận.
+
+##### 12. この切手は発行枚数が少なかったこともあり、今では1枚50万円からの値がついているそうだ。
+
+###### → Con tem này cũng một phần do số lượng phát hành ít, nên hiện nay nghe nói nó có giá hơn 500 nghìn Yên.
+
+##### 13. 伊東氏は、個人で1億円からの寄付を申し出た。
+
+###### → Ông Ito đã đề nghị tự mình sẽ quyên góp hơn 100 triệu Yên.
+
+##### 14. 地震の被害を受けた地域に、十数名の専門家からなる救援隊が派遣された。
+
+###### → Một đội cứu hộ gồm hơn một chục chuyên gia đã được điều đến khu vực bị ảnh hưởng bởi trận động đất.【đề tháng 12 năm 2009】(\*)
+
+##### 15. 新しい条例へ抗議する デモ が行われ、200万人からの人々が通りに集まった。
+
+###### → Biểu tình được tổ chức để phản đối sắc lệnh mới, có tới hơn 2 triệu người đã tập trung trên đường phố.
+
+##### 16. 今日の スピーチ大会には 500人からの人が集まった。
+
+###### → Có tới hơn 500 người đã tập trung tại cuộc thi diễn thuyết hôm nay.
+
+##### 17. この辺りは立地条件が良いので、最も安いものでも家賃は １０万円からする。
+
+###### → Vì vị trí này rất tốt trong khu vực cho nên giá thuê rẻ nhất cũng từ 100.000 yên.

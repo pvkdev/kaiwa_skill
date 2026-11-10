@@ -1,0 +1,87 @@
+Cấp độ: N1
+
+# かたがた
+
+> Nhân Tiện / Sẵn Tiện Xem Như / Cũng Như Là Để / Một Là…Hai Là Để…
+
+---
+
+## Cấu trúc
+
+> **Danh từ ＋ かたがた**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói diễn tả ý nghĩa “kết hợp làm cùng lúc cả hai việc A và B”. Đây là cách nói diễn tả hành động diễn tả hai hành động song song, xảy ra cùng một thời điểm
+
+②　Khác với 「ついでに」「かたわら」diễn tả kết hợp hai sự việc nhưng không nhất thiết phải cùng một thời điểm, có thể diễn ra trước sau hoặc trong khoảng thời gian trống của một trong hai việc.
+
+③　Đây là cách nói trang trọng, văn viết, được dùng nhiều trong email, thư từ…
+
+④　Thường đi sau những danh từ như 挨拶、お見舞い、お礼、報告 、お詫び、散歩.
+
+## →　Có Nghĩa là : Nhân tiện /Sẵn tiện xem như /Cũng như là để / Một là…hai là để…
+
+## Ví dụ
+
+##### 1. 部長のお宅へお礼かたがたごあいさつに行こうと思っています。
+
+###### → Tôi dự định đến nhà sếp vừa để cảm ơn vừa để chào hỏi xã giao luôn.
+
+##### 2. ご報告かたがた一度伺いたいのですが ・・・
+
+###### → Tôi muốn đến thăm anh một lần nhân tiện cũng để báo cáo (công việc) …
+
+##### 3. 見学かたがた祖父が入所している老人ホーム を訪ねた。
+
+###### → Nhân chuyến tham quan, tôi đã đến thăm viện dưỡng lão nơi ông tôi đang ở.
+
+##### 4. 本日は先日のお詫びかたがた、お伺いしました。
+
+###### → Hôm nay tôi đến đây cũng như là để xin lỗi về việc hôm nọ.
+
+##### 5. 本日はお礼かたがたお伺いしました。
+
+###### → Hôm nay tôi đến đây cũng như là để gửi lời cảm ơn anh.
+
+##### 6. 墓参りかたがた、幼友だちに会って来ようと思う。
+
+###### → Tôi định một phần là ghé thăm mộ, hai là để gặp lại những người bạn cũ hồi thơ ấu.
+
+##### 7. 夕涼みかたがた、図書館に寄ってみた。
+
+###### → Sẵn xem như đi dạo mát, tôi đã thử ghé qua thư viện.
+
+##### 8. 叔母が体調を崩したと聞いたので、見舞いかたがた手伝いに行った。
+
+###### → Nghe nói sức khỏe của cô yếu đi nên tôi đến thăm đồng thời để giúp đỡ cô.
+
+##### 9. 就職の報告かたがた近いうちに恩師を訪ねようと思っている。
+
+###### → Tôi định sẽ sớm đến thăm thầy đồng thời báo cáo tình hình xin việc.
+
+##### 10. ごあいさつかたがた、お伺いしました。
+
+###### → Tôi đến chơi cũng như là để chào hỏi mọi người.
+
+##### 11. 散歩かたがた、友達を訪ねた。
+
+###### → Tôi đến thăm bạn tôi sẵn tiện xem như đi dạo.
+
+##### 12. 先日お世話になったお礼かたがた、社長のお宅にお寄りしました。
+
+###### → Tôi đến nhà ông Giám đốc cũng như để cảm ơn ông ấy vì lần giúp đỡ hôm nọ.
+
+##### 13. 毎朝、犬の散歩かたがた公園のごみ拾いをしている。
+
+###### → Sáng nào tôi cũng dẫn chó đi dạo và nhặt rác ở công viên.
+
+##### 14. 先日、病気的友達のお見舞いかたがた、彼の新しい家を見てきました。
+
+###### → Hôm nọ tôi đã có đến xem nhà mới của anh ta khi tôi đến thăm bệnh。
+
+##### 15. 明日ご挨拶かたがた、りんごをお届けにあがります。
+
+###### → Ngày mai tôi sẽ đến chỗ anh, một là giao táo hai là để gửi lời chào hỏi.

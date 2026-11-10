@@ -1,0 +1,133 @@
+Cấp độ: N2
+
+# っぱなし
+
+**Cứ Nguyên…Như Thế/ …Suốt**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **V~~ます~~ + っぱなしだ/ で**  
+>
+> **V~~ます~~ + っぱなしに + する/ なる**  
+>
+> **V~~ます~~ + っぱなしの + Danh từ**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Sử dụng khi muốn diễn đạt “cứ để nguyên như thế mà không thực hiện hành động lẽ ra phải làm”.
+
+②　Ngoài ra còn được sử dụng khi muốn diễn đạt một trạng thái của hành động nào đó cứ được giữ nguyên như thế suốt trong một khoảng thời gian.
+
+③　Thường được sử dụng để diễn đạt những trạng thái không hay, không mong muốn.
+
+④　Mặc dù đa số cách dùng giống nhau nhưng giữa “まま” và “っぱなし” vẫn có điểm khác biệt:
+
+「まま」: Dùng với những động từ mà kết quả hành động của nó vẫn giống với ban đầu, không thay đổi (Ví dụ: 着る,…) 
+
+「っぱなし」: Dùng với những động từ mà kết quả hành động của nó sẽ khác với ban đầu cho dù có thực hiện liên tục (Ví dụ: しゃべる、走る、…)
+
+→　Có Nghĩa là :  **Cứ nguyên…như thế/ …Suốt**
+
+---
+
+## Ví dụ
+
+##### 1. 新幹線で東京から名古屋まで立ちっぱなしだった。
+
+###### → Tôi đã phải đứng suốt trên tàu shinkansen từ Tokyo đến Nagoya.
+
+##### 2. テレビ を つけっぱなしで寝てしまった。
+
+###### → Tôi để tivi bật nguyên như vậy và ngủ quên mất.
+
+##### 3. 水を出しっぱなしにしないでください。
+
+###### → Đừng có để nguyên vòi nước chảy như thế. (Hãy khóa lại khi không dùng)
+
+##### 4. 誰かの傘が置きっぱなしになっている。
+
+###### → Ai đó đã để cái ô suốt ở đây.
+
+##### 5. コーラ の フタ を開けっぱなしにすると、泡がなくなっちゃいますよ。
+
+###### → Nếu để nắp coca mở nguyên như thế thì bọt sẽ bị mất hết đấy.
+
+##### 6. 彼はずっとしゃべりっぱなしだ。
+
+###### → Anh ta cứ nói liên mồm suốt.
+
+##### 7. ご飯を食べたら、食べっぱなしにしないで、ちゃんと片付けなさい。
+
+###### → Ăn cơm xong thì đừng có để nguyên như vậy mà hãy dọn dẹp cẩn thận đi.
+
+##### 8. 道具  が 出  しっぱなしだよ。 使ったら、かたづけなさい。
+
+###### → Đồ đạc vẫn để lung tung kia kìa. Sử dụng xong thì hãy dọn dẹp ngay đi chứ.
+
+##### 9. あのメーカーは売りっぱなしではなく、アフターケアがしっかりしている。
+
+###### → Nhà sản xuất đó không chỉ có bán rồi thôi mà họ chăm sóc khách hàng rất tốt.
+
+##### 10. この 仕事  は 立  ちっぱなしのことが 多   いので、 疲   れる。
+
+###### → Công việc này vì hay phải đứng suốtnên rất mệt.
+
+##### 11. 講演会  では 休憩   もなしに２ 時間   も 話   しっぱなしで、とても 疲   れた。
+
+###### → Trong buổi diễn thuyết vì tôi phải nói suốt 2 tiếng không nghỉ nên rất mệt.
+
+##### 12. その 蛇口   、 壊れっぱなしよ。
+
+###### → Cái vòi nước đó, nó vẫn còn hỏng đấy.
+
+##### 13. 「お兄ちゃん、きのう、 部屋   の 電気   、つけっぱなしだったよ。」
+
+###### → Anh này, hôm qua anh cử để đèn trong phòng mở suốt đấy.
+
+##### 14. 隣   の 家   の 車   の 室内灯  がつけっぱなしになっていたので、 知らせてあげた。
+
+###### → Vì đèn nội thất xe của nhà bên cảnh vẫn cứ để mở suốt nên tôi đã báo cho họ biết.
+
+##### 15. 玄関  のドアを 開   けっ 放   しにしないでください。 虫  が入ってくるから。
+
+###### → Xin đừng có để cửa hành lang mở như thế. Vì côn trùng sẽ bay vào nhà.
+
+##### 16. 夕   べはいつの 間   にか 寝   てしまったから、 一晩中電気   がつけっぱなしだった。
+
+###### → Vì tối qua tôi ngủ quên lúc nào không hay nên đã để đèn sáng cả đêm.
+
+##### 17. バスが 込   んでいて、 会社   から 家   まで１ 時間立   ちっぱなしだった。
+
+###### → Vì xe buýt quá đông nên tôi đã phải đứng suốt 1 tiếng từ công ty về đến nhà.
+
+##### 18. 水   を 出   しっぱなしにしないでください。
+
+###### → Xin đừng có để nước chảy suốt như thế.
+
+##### 19. きょうはバスが 込   んでいたので、 終点   まで 立   ちっぱなしだった。
+
+###### → Vì hôm nay xe buýt quá đông người nên tôi đã phải đứng suốt cho đến trạm cuối.
+
+##### 20. 電気   をつけっぱなしにしないでください。
+
+###### → Xin đừng có để đèn sáng suốt như thế.
+
+##### 21. 彼   は 本   やノートなどを 置   きっぱなしにして片付けようともしない。
+
+###### → Nó cứ để sách vở nguyên như thế và không hề có ý dọn dẹp.
+
+##### 22. この１ 週間雨   が降りっぱなしで、 洗濯物   が乾かない。
+
+###### → Một tuần nay trời cứ mưa suốt nên quần áo phơi mãi mà không khô được.
+
+##### 23. 1ヶ 月   エアコンをつけっぱなしにしたら 電気料金   が6000 円代   だった。
+
+###### → Nếu mà cứ mở máy điều hòa suốt cả tháng thì tiền điện khoảng 6000 Yên.
+
+##### 24. 座りっぱなしで 体   を 動   かさないことはタバコを 吸   うのと 同   じくらいに 体   に 良   くないらしい。
+
+###### → Hình như việc cứ ngồi một chỗ suốt mà không vận động thì cũng không tốt cho sức khỏe giống như hút thuốc lá vậy.

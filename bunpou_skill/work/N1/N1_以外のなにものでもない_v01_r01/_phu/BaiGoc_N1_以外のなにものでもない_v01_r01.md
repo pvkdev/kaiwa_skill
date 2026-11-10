@@ -1,0 +1,55 @@
+Cấp độ: N1
+
+# ～以外のなにものでもない
+
+**Không gì khác ngoài… / Chính là… / Chẳng qua chính là…**
+
+### Cấu trúc
+
+> **N ＋ 以外のなにものでもない**
+
+### Cách dùng / Ý nghĩa
+
+Khẳng định mạnh mẽ rằng **bản chất của sự việc chính là N**, không thể xem là điều gì khác.
+
+Thường dùng khi người nói đưa ra đánh giá hoặc lập luận dứt khoát.
+
+Có thể hiểu là:
+
+**“Không phải bất cứ điều gì khác ngoài N.”**
+
+**→ “Chính là N.”**
+
+### Ví dụ
+
+##### ① 林の中に粗大ごみを捨てて行く人がいるが、これは環境破壊以外のなにものでもない。
+
+###### → Có người mang rác cồng kềnh vào rừng vứt bỏ. Đây chính là hành vi phá hoại môi trường.
+
+##### ② 部長は何かにつけて「恋人はいないのか」とか「いつ結婚するのか」などと言う。これはセクハラ以外のなにものでもないと思う。
+
+###### → Trưởng phòng cứ có dịp là hỏi những câu như “Chưa có người yêu à?” hay “Bao giờ kết hôn?”. Tôi cho rằng đây chính là hành vi quấy rối tình dục.
+
+##### ③ 片親家庭の子どもには問題児が多いというのは、偏見以外のなにものでもなかろう。
+
+###### → Cho rằng trẻ em trong các gia đình đơn thân có nhiều đứa hư chẳng phải chính là thành kiến hay sao?
+
+### Chú ý
+
+Mặc dù có hình thức phủ định **「～でもない」**, ý nghĩa của toàn bộ mẫu là **khẳng định mạnh mẽ**.
+
+So sánh trọng tâm:
+
+##### **～でなくてなんだろう**
+
+###### → Nếu không phải N thì là gì?
+
+Dùng câu hỏi tu từ để nhấn mạnh nhận định.
+
+##### **～以外のなにものでもない**
+
+###### → Không gì khác ngoài N.
+
+Trực tiếp khẳng định bản chất của sự việc.
+
+Ở câu ③, **「なかろう」** đưa nhận định dưới hình thức suy đoán, gần với **「ないだろう」**.

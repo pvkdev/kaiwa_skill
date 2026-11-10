@@ -1,0 +1,55 @@
+Cấp độ: N1
+
+# ～ではあるまいか
+
+**Phải chăng là… / Chẳng phải là… sao? / Có lẽ là…**
+
+### Cấu trúc
+
+> **N／Aな bỏ な ＋ ではあるまいか**
+>
+> **V／Aい thể thông thường ＋ のではあるまいか**
+>
+> **N／Aな ＋ なのではあるまいか**
+>
+> **V thể từ điển ＋ べきではあるまいか**
+
+### Cách dùng / Ý nghĩa
+
+Là cách nói trang trọng, gần nghĩa với:
+
+##### **～ではないだろうか**
+
+##### **～ではなかろうか**
+
+Dùng để **đưa ra suy đoán, nêu một nhận định để người nghe cùng xem xét**, hoặc gián tiếp đề xuất điều nên làm.
+
+### Ví dụ
+
+##### ① 政治家はもっと若者の声に耳を傾けるべきではあるまいか。
+
+###### → Phải chăng các chính trị gia nên lắng nghe tiếng nói của người trẻ nhiều hơn?
+
+##### ② 山へ行った夫が予定を３日過ぎても帰って来ない。もしかして、遭難したのではあるまいか。
+
+###### → Chồng tôi đi leo núi, đã quá lịch về ba ngày mà vẫn chưa trở lại. Phải chăng anh ấy đã gặp nạn?
+
+##### ③ この小説はあまり売れないのではあるまいかと心配していたが、それは杞憂だった。
+
+###### → Tôi đã lo rằng có lẽ cuốn tiểu thuyết này sẽ không bán chạy, nhưng hóa ra đó chỉ là lo lắng không đâu.
+
+### Chú ý
+
+Không dịch máy móc phần **「あるまい」** thành “chắc là không”.
+
+Cả cụm **「ではあるまいか」** có thể nêu một khả năng theo hướng **“phải chăng là như vậy?”**.
+
+Ở câu ②:
+
+##### **遭難したのではあるまいか**
+
+###### → Phải chăng đã gặp nạn?
+
+Không phải “chắc là không gặp nạn”.
+
+Ở câu ③, ý phủ định “không bán chạy” nằm trong **「売れない」**.

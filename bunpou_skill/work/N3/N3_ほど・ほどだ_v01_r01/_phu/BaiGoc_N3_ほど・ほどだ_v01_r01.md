@@ -1,0 +1,156 @@
+Cấp độ: N3
+
+# ～ ほど／ほどだ
+
+> **Đến Mức…/ Đến Độ…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **N + ほど／ほどだ**  
+>
+> **V-Thể thường + ほど／ほどだ**  
+>
+> **Aい + ほど／ほどだ**  
+>
+> **Aな(だ→な) + ほど／ほどだ**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+- **Biểu thị nhấn mạnh mức độ của một trạng thái, hành động nào đó bằng cách nói ví von hay nêu ví dụ cụ thể.**
+- **Vế sau thường gặp những động từ thể hiện ý chí, cảm xúc của người nói.**
+- **Khi 「ほど」đi sau「これ／それ／あれ／どれ」thì sẽ có ý nghĩa lần lượt tương ứng với「こんなに／そんなに／あんなに／どんなに」**
+- **Chú ý: Cách nói “～かとおもうほど” như ở ví dụ ⑨ cũng rất hay được sử dụng trong giao tiếp hằng ngày**
+
+→　Có Nghĩa là : **Đến mức…/ Đến độ…**
+
+---
+
+## Ví dụ
+
+##### 1. 歯を抜いたときは、死ぬほど痛かった。
+
+###### → Lúc nhổ răng tôi đau gần chết.
+
+##### 2. 泣きたいほど宿題が多い。
+
+###### → Bài tập nhiều đến mức muốn khóc.
+
+##### 3. 昨日は、声がかれるほど歌った。
+
+###### → Hôm qua tôi đã hát đến cháy cả họng.
+
+##### 4. 昨日はお腹いっぱいで、動けなくなるほど食べました。
+
+###### → Hôm qua tôi đã ăn no đến mức không thể đi nổi.
+
+##### 5. 今、家の近くで工事を していて、集中できないほど　うるさいです。
+
+###### → Vì bây giờ gần nhà tôi đang xây dựng, nên ồn đến mức không thể tập trung được.
+
+##### 6. 値段を見て、目が飛び出るほど驚いた。
+
+###### → Khi nhìn thấy giá thì tôi đã ngạc nhiên đến mức trố cả mắt ra.
+
+##### 7. 飽きるほどたくさん食べた。
+
+###### → Tôi đã ăn nhiều đến phát ngán.
+
+##### 8. 今年に入って、売り上げが驚くほど伸びた。
+
+###### → Bắt đầu vào năm nay doanh thu tăng đến mức kinh ngạc.
+
+##### 9. さっき地震があった。本棚が倒れるかと思うほど激しく揺れた。
+
+###### → Lúc nãy đã có trận động đất. Nó đã rung lắc dữ dội đến mức tôi nghĩ kệ sách sẽ bị đổ.
+
+##### 10. 募金を呼びかけたところ、信じられないほどのお金が集まった。
+
+###### → Tôi vừa kêu gọi quyên góp mà số tiền đã thu được đến mức đáng kinh ngạc.
+
+##### 11. 昨日は山登りに行って、もう一歩も歩けないほど疲れました。
+
+###### → Hôm qua leo núi mệt đến mức không đi nổi bước nào nữa.
+
+##### 12. 「足、けがしたんですか。」
+
+###### → – Bị thương ở chân hả?
+
+##### 13. 「うん、昨日までは泣きたいほど痛かったけど、今日は大分よくなったよ。」
+
+###### → – Phải, cho đến tận hôm qua thì đau muốn phát khóc luôn nhưng hôm nay cũng đỡ nhiều rồi.
+
+##### 14. 悩んでいたとき、友人が話を聞いてくれて、うれしくて涙が出るほどだった。
+
+###### → Lúc tôi phiền muộn có người bạn chịu lắng nghe mình tâm sự nên tôi vui tới mức rơi nước mắt.
+
+##### 15. 今朝は寒くて、池に氷が張るほどだった。
+
+###### → Sáng nay trời lạnh đến mức nước trong hồ đóng băng.
+
+##### 16. いじめは子どもにとっては死にたいほどのつらい経験なのかもしれない。
+
+###### → Đối với trẻ con, bắt nạt có thể là một kinh nghiệm đau thương tới mức muốn chết cho xong.
+
+##### 17. 今年の日本語能力試験はそれほど簡単じゃなかった。
+
+###### → Kỳ thi năng lực Nhật ngữ hôm nay không dễ như thế.
+
+##### 18. 突然立っていられないほどの痛みを背中に感じた。
+
+###### → Tôi thấy đau ở lưng đến mức đột nhiên không thể đứng dậy được.
+
+##### 19. 死ぬほど寂しいと思ったことはありませんか？
+
+###### → Bạn có bao giờ cảm thấy buồn đến muốn chết đi cho rồi không?
+
+##### 20. 何も話せないほどその痛みはひどかった。
+
+###### → Đau đến mức không nói được gì.
+
+##### 21. 雑誌ほどの大きさのかばん を電車に忘れてしまったんです。
+
+###### → Tôi đã để quên trên tàu 1 chiếc cặp có kích thước tương đương quyển tạp chí.
+
+##### 22. オークション では、びっくりするほどの値段がつけられた。
+
+###### → Ở buổi đấu giá, giá đã được định một cách đáng kinh ngạc.
+
+##### 23. その犬は震えるほど覚えていた。
+
+###### → Tôi đã nhớ con chó đó đến mức run rẩy.
+
+##### 24. 試験に受かった時は、涙が出るほど嬉しかった。
+
+###### → Khi đã vươt qua kì thi thì tôi đã vui mừng đến mức rơi cả nước mắt.
+
+##### 25. 今日は昨日ほど寒くない。
+
+###### → 今日は昨日ほど寒くない。→　Hôm nay thì không lạnh đến độ như hôm qua.
+
+##### 26. あの人ほど日本語が上手に話せたらいいのになぁ。
+
+###### → Tôi muốn nói được tiếng Nhật đến mức tốt hơn cả người kia.
+
+---
+
+## NÂNG CAO
+
+**Cách sử dụng tương tự với 「くらい」, nhưng 「ほど」thường được dùng trong những trường hợp diễn tả mức độ cao hơn..**
+
+**Ví dụ:**
+
+Tuy có đau nhưng vẫn ở mức chịu đựng được.
+
+(Sai) 痛いけれど、がまんできるほどの痛さだ。(X)
+
+(Đúng) 痛いけれど、がまんできるくらいの痛さだ。(O)
+
+---
+
+## Tổng Kết và Bình Luận
+
+Cũng với nghĩa là “Đến mức…/ Đến độ…” thì ngoài ほど ra, còn có cấu trúc くらい／ぐらい cũng có cách dùng tương tự.

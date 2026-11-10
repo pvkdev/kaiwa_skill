@@ -1,0 +1,141 @@
+Cấp độ: N2
+
+# ～（よ）うとする／～（よ）うとしている
+
+> **Sắp…/ Đang Sắp…/ Đang Đến Thời Điểm…/ Đang Ở Ngưỡng…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể ý chí ＋ とする／としている**
+
+**Trong cách dùng của bài này, động từ diễn tả sự việc, chuyển động hoặc biến đổi không mang ý chí của chủ thể.**
+
+
+| Động từ | Thể ý chí | Kết hợp       |
+| ------- | --------- | ------------- |
+| 迎える     | 迎えよう      | 迎えようとしている     |
+| 明ける     | 明けよう      | 明けようとしている     |
+| 消える     | 消えよう      | 消えようとしている     |
+| 生まれる    | 生まれよう     | 生まれようとする      |
+| 終わる     | 終わろう      | 終わろうとしている     |
+| 打ち上げられる | 打ち上げられよう  | 打ち上げられようとしている |
+
+
+- Cuối câu thường gặp dạng「～（よ）うとしている」.
+- Dạng「～（よ）うとする」cũng xuất hiện khi bổ nghĩa cho danh từ, như「生まれようとする命」.
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　**Diễn tả một sự việc hoặc sự biến đổi đang ở ngay trước thời điểm xảy ra, bắt đầu hay hoàn tất.**
+
+②　Nhấn mạnh trạng thái **đang tiến đến một thời điểm chuyển tiếp**, chẳng hạn trời sắp sáng, năm mới sắp bắt đầu, ngọn lửa sắp tắt hoặc một thời đại sắp mở ra.
+
+③　Trong cách dùng này, người nói **miêu tả sự việc sắp xảy ra**, không diễn tả ý định hoặc sự cố gắng của chủ thể.
+
+④　Mang sắc thái **văn chương, miêu tả**, thường gặp trong truyện, bài viết, lời bình và lời tường thuật.
+
+→ Có nghĩa là: **Sắp…/ Đang sắp…/ Đang đến thời điểm…/ Đang ở ngưỡng…**
+
+---
+
+## Chú ý
+
+### 1. “Thể ý chí” không có nghĩa là chủ thể có ý định
+
+Dù dùng hình thức「～（よ）う」, những sự việc như **trời sáng, ngọn lửa tắt, một sinh mệnh chào đời** không có ý chí.
+
+Trong bài này, hình thức đó kết hợp với「とする／としている」để diễn tả **sự việc đang tiến gần đến lúc xảy ra**.
+
+### 2. Không nhất thiết là sự việc hoàn toàn không có con người tham gia
+
+Một sự kiện do con người tổ chức hoặc thực hiện vẫn có thể được miêu tả bằng mẫu này khi câu **tập trung vào sự kiện sắp xảy ra**, thay vì ý định của người thực hiện.
+
+Ví dụ,「ロケットが打ち上げられようとしている」diễn tả **tên lửa sắp được phóng**, không phải tên lửa đang cố gắng làm gì.
+
+### 3. Khoảng thời gian “sắp” phụ thuộc vào sự việc
+
+Không phải lúc nào mẫu này cũng chỉ vài giây ngay trước một hành động.
+
+Với **năm mới, mùa mới hoặc một thời đại**, câu có thể miêu tả một giai đoạn đang tiến đến bước chuyển tiếp đó.
+
+### 4. Có thể dùng trong bối cảnh quá khứ
+
+Khi kể lại chuyện trước đây, mẫu câu vẫn diễn tả **sự việc sắp xảy ra tại thời điểm được nhắc đến**, không nhất thiết là sắp xảy ra ở hiện tại.
+
+Ví dụ ① bên dưới miêu tả tình hình vào thời điểm người nói chào đời.
+
+---
+
+## Ví dụ
+
+##### 1. 私が生まれたのは1960年、日本が高度経済成長の時代を迎えようとしている時期だった。
+
+###### → Tôi sinh năm 1960, vào thời điểm Nhật Bản đang bước đến ngưỡng cửa của thời kỳ tăng trưởng kinh tế cao.
+
+##### 2. 宇宙飛行士である妻が乗るロケットが、今、打ち上げられようとしている。成功を祈るばかりだ。
+
+###### → Tên lửa chở vợ tôi, một phi hành gia, hiện sắp được phóng. Tôi chỉ còn biết cầu mong vụ phóng thành công.
+
+##### 3. 新しい年が明けようとしている。今年はどんな年になるだろうか。
+
+###### → Một năm mới sắp bắt đầu. Không biết năm nay sẽ là một năm như thế nào.
+
+##### 4. オリンピックの閉幕を迎え、20日間にわたって燃え続けた聖火が、今、消えようとしています。
+
+###### → Khi Olympic đi đến lễ bế mạc, ngọn đuốc thiêng đã cháy liên tục suốt 20 ngày giờ đây sắp tắt.
+
+##### 5. 病院では、生まれようとする命と消えようとする命の交代が、日々くり返されている。
+
+###### → Tại bệnh viện, sự tiếp nối giữa những sinh mệnh sắp chào đời và những sinh mệnh sắp lụi tắt diễn ra ngày qua ngày.
+
+##### 6. 太陽が水平線の向こうに沈もうとしている。
+
+###### → Mặt trời đang sắp khuất xuống phía bên kia đường chân trời.
+
+##### 7. 長い冬が終わろうとしている。山の雪も少しずつ解けてきた。
+
+###### → Mùa đông dài sắp kết thúc. Tuyết trên núi cũng đã bắt đầu tan dần.
+
+##### 8. 庭の桜のつぼみがふくらみ、花が咲こうとしている。
+
+###### → Những nụ hoa anh đào trong vườn đã căng lên, hoa đang sắp nở.
+
+---
+
+## Phân biệt với nghĩa “định làm／cố gắng làm…”
+
+Cùng cấu trúc「～（よ）うとする／としている」nhưng có hai cách hiểu khác nhau.
+
+
+| Cách dùng              | Nội dung                                           | Cách dịch           |
+| ---------------------- | -------------------------------------------------- | ------------------- |
+| **Hành động có chủ ý** | Chủ thể định hoặc cố thực hiện một hành động       | Định…/ Cố gắng…     |
+| **Sự việc sắp xảy ra** | Miêu tả thời điểm ngay trước một sự việc, biến đổi | Sắp…/ Đang đến lúc… |
+
+
+##### 1. 彼は重いドアを開けようとしている。
+
+###### → Anh ấy đang cố mở cánh cửa nặng.
+
+→ Có chủ thể đang **cố gắng thực hiện hành động**.
+
+##### 2. 夜が明けようとしている。
+
+###### → Trời sắp sáng.
+
+→ Miêu tả **một sự biến đổi sắp xảy ra**, không mang ý định hay sự cố gắng.
+
+**Cần xét ý nghĩa của động từ và ngữ cảnh, không chỉ nhìn hình thức「～（よ）う」.**
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Trong phạm vi bài này, hãy nhớ mẫu câu theo ý **“sự việc đang tiến đến thời điểm xảy ra”**.
+- Thường gặp với những biến đổi như **sắp sáng, sắp tắt, sắp kết thúc, sắp bước sang một thời kỳ mới**.
+- 「～（よ）うとしている」ở đây không phải **“đang cố gắng”**, mà là **“đang sắp…”**.
+- Sắc thái văn chương giúp người nói làm nổi bật **thời khắc chuyển tiếp** của sự việc.

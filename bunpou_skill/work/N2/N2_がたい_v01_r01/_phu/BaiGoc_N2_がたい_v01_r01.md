@@ -1,0 +1,107 @@
+Cấp độ: N2
+
+# 〜 がたい
+
+> **Khó Mà … (Làm Gì Đó).**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể ~~ます~~+ がたい**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Biểu thị ý nghĩa “khó mà thực hiện được, không thể nào thực hiện được hành vi nào đó”.
+
+②　Thường đi với những dạng động từ như: 「信じ難い」Khó mà tin được;「許し難い」Khó mà tha thứ được;「理解しがたい」Khó lòng mà hiểu được;「想像しがたい」Khó mà tưởng tượng được / Khó có thể tưởng tượng được;「耐えがたい」Khó mà chịu đựng được;;「受け入れがたい」Khó mà chấp nhận được…
+
+**(\*) Ngoại lệ:** 分かる　→　~~分かりがたい~~
+
+③　Không sử dụng với ý nghĩa “không thể” mang tính khả năng, năng lực. Chủ yếu dùng với những động từ liên quan đến phát ngôn (nói, biểu đạt…) hoặc động từ liên quan đến cảm xúc, tâm lí (cảm tưởng, lí giải, tin tưởng…) 
+
+④　Đây là cách nói hơi cũ và mang tính thành ngữ.
+
+→　Có Nghĩa là : Khó mà … (làm gì đó).
+
+---
+
+## Ví dụ
+
+##### 1. あの優しい彼がそんなひどいことをしたとは信じがたい。
+
+###### → Thật khó tin là người tốt bụng như anh ấy lại làm điều tồi tệ như vậy.
+
+##### 2. あの料理はなんとも言いがたい初めての味だ。
+
+###### → Món ăn này có vị gì đó tôi mới gặp lần đầu, rất khó nói.
+
+##### 3. あの元気なひろしが病気になるなんて信じがたいことです。
+
+###### → Một người khỏe mạnh như Hiroshi thế kia mà lại bị bệnh thì thật là khó tin.
+
+##### 4. 弱い者をいじめるとは許しがたい行為だ。
+
+###### → Việc bắt nạt những người yếu đuối là một hành vi khó mà tha thứ được.
+
+##### 5. 幼い子どもと離れて暮らすことは彼女には耐えがたかったのだろう。
+
+###### → Việc phải sống xa đứa con bé bỏng của mình thì có lẽ khó có thể chịu đựng nổi đối với cô ấy.
+
+##### 6. これは正解ではないが、間違っているとも言いがたい。
+
+###### → Cái này không phải là chính xác nhưng cũng khó có thể cho là sai được.
+
+##### 7. あんな気の弱そうな人が「人殺し」なんて信じがたい。
+
+###### → Thật khó lòng mà tin được một người nhút nhát như thế mà lại giết người.
+
+##### 8. 親が子を、若者が老人を虐待するような犯罪は許しがたい。
+
+###### → Những tội ác như ba mẹ giết con cái, thanh niên ngược đãi người già… thì thật khó mà tha thứ được.
+
+##### 9. それは受け入れがたい敗戦だ。
+
+###### → Đó là một trận chiến thất bại khó lòng mà chấp nhận được.
+
+##### 10. （部屋の整理を しながら）これは高かったからもったいないし、これも友だちにもらったものだから捨てづらいし、・・・。どれも捨てがたいなあ。
+
+###### → (Trong khi sắp xếp phòng) Cái này đắt, cũng phí, cái này thì được bạn tặng nên không vứt đi được… Cái nào cũng khó vứt ghê.
+
+##### 11. （引っ越しのとき）長年住んだ家だから、ちょっと離れがたい気もするね。
+
+###### → (Khi chuyển chỗ ở) Là ngôi nhà đã sống nhiều năm nên có chút vương vấn khó rời.
+
+##### 12. 3年間、毎日みんなと練習したのは、忘れがたい思い出です。
+
+###### → 3 năm qua, mỗi ngày cùng mọi người luyện tập là những kỉ niệm khó quên.
+
+##### 13. 罪のない人を殺すなんて、許しがたいことだ。
+
+###### → Giết người vô tội là điều khó tha thứ.
+
+##### 14. 彼は無遅刻、無欠席なんて、信じがたいね。
+
+###### → Thật khó tin là anh ấy không đi muộn, không vắng mặt.
+
+---
+
+## NÂNG CAO
+
+**So sánh がたい và にくい**
+
+Cả hai mẫu câu にくい và がたい đều mang nghĩa là “khó làm gì đó” nhưng にくい mang tính khách quan hơn, dùng được cả với những động từ chỉ ý chí và chỉ hành động hoặc năng lực (khó về mặt tinh thần và cả thể chất), còn がたい chủ yếu diễn tả sự khó khăn về mặt tâm lý, tinh thần, trong lòng người nói tự cảm thấy khó và gần như không thể làm được) hơn là sự việc khách quan, thường dùng nhiều với những động từ chỉ ý chí.
+
+---
+
+## Ví dụ
+
+##### 1. まじめな彼女が嘘を ついているなんて信じにくい /信じがたい。
+
+###### → Người nghiêm túc như cô ấy mà lại nói dối thì thật khó tin.
+
+##### 2. この魚は食べにくい /食べがたい。
+
+###### → Món cá này thật khó ăn.

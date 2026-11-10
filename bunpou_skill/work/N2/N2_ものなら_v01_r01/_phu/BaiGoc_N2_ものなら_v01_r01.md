@@ -1,0 +1,101 @@
+Cấp độ: N2
+
+# 〜 ものなら
+
+> **Nếu Như…Thì…/ Nếu Có Thể … Thì …**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể khả năng  ＋ ものなら**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Mẫu câu diễn tả sự giả định về một việc gì đó khó hoặc không thể xảy ra.“Trong trường hợp nếu thực hiện được, thì…”
+
+②　Vế trước là động từ thể hiện ý nghĩa khả năng, vế sau là nguyện vọng, mong muốn của người nói. Trường hợp lặp lại cùng một động từ thì nhấn mạnh ý nghĩa là thực tế không thực hiện được.
+
+③　Ngoài ra, mẫu này còn nằm trong câu 「やれるものならやってみろ」 (Nếu làm được thì làm thử đi), thường hay được sử dụng để động viên, khích lệ 
+
+→　Có Nghĩa là : Nếu như…thì…/ Nếu có thể … thì …
+
+---
+
+## Ví dụ
+
+##### 1. できるものなら、もう一度人生を やり直したい。
+
+###### →　Nếu có thể tôi muốn làm lại cuộc đời mình.
+
+##### 2. 「準備、大変そうね。誰かに手伝ってもらったら？」
+
+###### →　”Việc chuẩn bị có vẻ vất vả nhỉ. Hay là nhờ ai đó giúp đi.”
+
+##### 3. 「頼めるものなら頼みたいけど、皆忙しいから、無理なじゃないかなぁ」
+
+###### →　“Nếu mà nhờ được thì tôi cũng muốn nhờ nhưng mà vì mọi người đều bận nên chắc không được đâu.”
+
+##### 4. やり直せるものなら、もう一度、高校時代に戻りたい。
+
+###### →　Nếu có thể làm lại được thì tôi muốn trở\_lại thời cấp 3 một lần nữa.
+
+##### 5. 生まれ変われるものなら、スポーツ選手になりたい。
+
+###### →　Nếu được sinh ra 1 lần nữa thì tôi muốn trở thành vận động viên thể thao.
+
+##### 6. あの日の記憶を消せるものなら消してしまいたい。
+
+###### →　Nếu có thể tôi muốn xóa hết kí ức về ngày hôm đó.
+
+##### 7. 子どもが病気になったとき、代われるものなら、代わってやりたいと、親なら思うだろう。
+
+###### →　Khi con bị ốm thì bố mẹ nào cũng nghĩ giá mà có thể ốm thay con được thì tốt.
+
+##### 8. できるものなら世界中を旅行してみたい。
+
+###### →　Nếu có thể được, tôi muốn thử đi du lịch vòng quanh thế giới.
+
+##### 9. 帰れるものなら、今すぐ、国へ帰りたい。
+
+###### →　Nếu có thể trở về, tôi muốn trở về nước ngay bây giờ.
+
+##### 10. もし願いがかなうものなら、この美術館にある絵が全部ほしい。
+
+###### →　Nếu có thể đạt được ước nguyện, tôi muốn có tất cả các bức tranh trong bảo tàng mỹ thuật này.
+
+##### 11. 生まれ変われるものなら、鳥になりたい。だって、空を飛びたいんだもん。
+
+###### →　Nếu có thể được sinh ra lần nữa, tôi muốn được thành chim. Bởi vì tôi rất muốn được bay trên bầu trời.
+
+##### 12. もし希望通りのことができるものなら、今すぐ引退して、趣味の花作りに打ち込みたい。
+
+###### →　Nếu có thể làm theo đúng với nguyện vọng của mình, tôi muốn nghỉ hưu ngay, để tập trung vào việc trồng hoa theo sở thích.
+
+##### 13. スケジュールが自由になるものなら、広島に一泊したいのだが、そうもいかない。
+
+###### →　Nếu giờ giấc cho phép thì tôi muốn lưu trú lại Hiroshima một đêm, nhưng không thể làm thế được.
+
+##### 14. 治るものなら、どんな手術でも受けます。
+
+###### →　Nếu có thể khỏi, thì tôi sẽ nhận bất kỳ cuộc phẫu thuật nào.
+
+##### 15. こんな職場などやめられるものなら、やめてしまいたいが、家族がいるから、そうはいかない。
+
+###### →　Nếu bỏ được một chỗ làm như thế này, tôi muốn bỏ quách đi cho rồi. Nhưng vì còn gia đình, nên không thể làm thế được.
+
+##### 16. A：「今年はスキーに行かないんですか。」
+
+###### →　A: Cô không đi trượt tuyết hả?
+
+#####       B：「行けるもんなら、もう行っているわよ。忙しくてどうしても休みがもらえないの。」
+
+###### →　B: Nếu đi được, tôi đã đi rồi đấy. Nhưng vì bận quá, không sao có thể xin nghỉ được.
+
+*※「もんなら」là dạng biến thể trong văn nói của「ものなら」*
+
+##### 17. やれるものならやってみろ。
+
+###### →　Nếu làm được thì cứ làm thử đi.

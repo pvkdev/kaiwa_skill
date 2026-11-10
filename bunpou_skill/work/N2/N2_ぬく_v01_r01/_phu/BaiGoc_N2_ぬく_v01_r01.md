@@ -1,0 +1,147 @@
+Cấp độ: N2
+
+# ～ぬく
+
+> **Làm Đến Cùng…/ Kiên Trì… Đến Cùng/ …Một Cách Triệt Để/ …Đến Cực Độ**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể ます bỏ ます ＋ ぬく**
+
+- 「ぬく」có thể viết bằng chữ Hán là「抜く」.
+- Khi chia thì, chia phần「ぬく」như động từ nhóm I: **ぬきます／ぬいた／ぬいて／ぬかない**.
+
+
+| Động từ | Kết hợp với ～ぬく | Ý nghĩa                              |
+| ------- | --------------- | ------------------------------------ |
+| やる      | やりぬく            | Làm đến cùng                         |
+| 走る      | 走りぬく            | Kiên trì chạy đến hết                |
+| 考える     | 考えぬく            | Suy nghĩ thật kỹ, thấu đáo           |
+| 生きる     | 生きぬく            | Vượt khó khăn để sống sót, sống tiếp |
+| 耐える     | 耐えぬく            | Chịu đựng đến cùng                   |
+| がんばる    | がんばりぬく          | Cố gắng đến cùng                     |
+| 悩む      | 悩みぬく            | Trăn trở, day dứt rất nhiều          |
+| 困る      | 困りぬく            | Hết sức khó xử, vô cùng khốn đốn     |
+
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　**Diễn tả việc kiên trì thực hiện một hành động đến cùng, dù gặp khó khăn, trở ngại hoặc phải bỏ ra nhiều công sức.**
+
+- Nhấn mạnh sự bền bỉ, quyết tâm, không bỏ cuộc giữa chừng.
+- Thường dùng với những hành động đòi hỏi nỗ lực như làm việc, chạy đường dài, chiến đấu, chịu đựng…
+
+②　**Diễn tả việc thực hiện một hành động một cách triệt để, hoặc trải qua một trạng thái đến mức độ rất cao.**
+
+- Với「考えぬく」, nhấn mạnh việc suy nghĩ kỹ lưỡng, thấu đáo.
+- Với「悩みぬく」「困りぬく」, nhấn mạnh mức độ trăn trở, khó xử sâu sắc.
+
+→ Có nghĩa là: **Làm đến cùng…/ Kiên trì… đến cùng/ …Một cách triệt để/ …Đến cực độ**
+
+---
+
+## Chú ý
+
+### 1. Nhấn mạnh cả quá trình nỗ lực
+
+「～ぬく」không chỉ thông báo rằng một việc đã kết thúc, mà thường gợi lên **quá trình cố gắng, chịu đựng hoặc vượt qua khó khăn**.
+
+Vì vậy, mẫu này không phù hợp để thay cho mọi cách nói “làm xong” trong sinh hoạt hằng ngày.
+
+### 2. Không phải lúc nào cũng dịch là “đến cùng”
+
+- 「やりぬく」「走りぬく」: Làm đến cùng, chạy đến hết.
+- 「考えぬく」: Suy nghĩ thật kỹ, thấu đáo.
+- 「悩みぬく」: Trăn trở, day dứt rất nhiều.
+- 「困りぬく」: Vô cùng khó xử, khốn đốn.
+
+Cần dựa vào động từ phía trước để chọn cách dịch tự nhiên.
+
+### 3. Làm đến cùng không đồng nghĩa với đạt được kết quả mong muốn
+
+Mẫu này nhấn mạnh việc **không bỏ cuộc trong quá trình thực hiện**. Người nói vẫn có thể đã cố gắng đến cùng nhưng không chiến thắng hoặc không thành công.
+
+### 4. Không nhầm với「抜く」mang nghĩa “nhổ, rút ra”
+
+Trong bài này,「ぬく」đứng sau một động từ để bổ sung ý nghĩa **đến cùng, triệt để**, không mang nghĩa trực tiếp là “nhổ” hay “rút ra”.
+
+---
+
+## Ví dụ
+
+##### 1. 決めたことは最後までやりぬきなさい。
+
+###### → Việc đã quyết định thì hãy kiên trì làm đến cùng.
+
+##### 2. 彼は初マラソンで42.195キロを走りぬいた。
+
+###### → Ngay trong lần đầu tham gia marathon, anh ấy đã kiên trì chạy hết quãng đường 42,195 km.
+
+##### 3. 考えぬいた末に、会社を辞めて独立することにした。
+
+###### → Sau khi suy nghĩ thật kỹ, tôi đã quyết định nghỉ việc ở công ty để tự gây dựng sự nghiệp.
+
+##### 4. A氏は戦時下を生きぬき、戦後は祖国の復興に尽くした。
+
+###### → Ông A đã vượt qua những năm tháng chiến tranh để sống sót, rồi sau chiến tranh đã cống hiến hết mình cho công cuộc tái thiết đất nước.
+
+##### 5. 何度失敗しても、あきらめずに最後までやりぬくつもりです。
+
+###### → Dù thất bại bao nhiêu lần, tôi vẫn định kiên trì làm đến cùng mà không bỏ cuộc.
+
+##### 6. 厳しい練習に耐えぬいた選手たちが、いよいよ試合に臨む。
+
+###### → Những vận động viên đã bền bỉ chịu đựng quá trình luyện tập khắc nghiệt cuối cùng cũng bước vào trận đấu.
+
+##### 7. 残りの一か月も、目標に向かってがんばりぬこう。
+
+###### → Trong một tháng còn lại, chúng ta hãy tiếp tục cố gắng hết mình vì mục tiêu nhé.
+
+##### 8. 留学するかどうか悩みぬいた末、今回は見送ることにした。
+
+###### → Sau rất nhiều trăn trở về việc có nên đi du học hay không, tôi đã quyết định tạm gác lại cơ hội lần này.
+
+##### 9. 返済のめどが立たず、困りぬいて両親に相談した。
+
+###### → Không biết xoay xở thế nào để trả nợ, tôi vô cùng bế tắc nên đã tìm đến cha mẹ để bàn bạc.
+
+##### 10. 選手たちは最後まで戦いぬいたが、惜しくも優勝を逃した。
+
+###### → Các vận động viên đã chiến đấu đến cùng, nhưng đáng tiếc vẫn để tuột mất chức vô địch.
+
+---
+
+## Phân biệt ～ぬく và ～きる
+
+
+| Mẫu câu | Điểm nhấn                                                       |
+| ------- | --------------------------------------------------------------- |
+| **～ぬく** | Kiên trì, vượt khó để thực hiện đến cùng; làm một cách triệt để |
+| **～きる** | Làm hết, hoàn thành toàn bộ; đạt đến trạng thái hoàn toàn       |
+
+
+Hai mẫu có thể dùng trong cùng một tình huống nhưng khác nhau về sắc thái.
+
+##### 1. マラソンで42.195キロを走りきった。
+
+###### → Tôi đã chạy hết quãng đường marathon dài 42,195 km.
+
+→ Nhấn mạnh việc **hoàn thành toàn bộ quãng đường**.
+
+##### 2. 苦しかったが、マラソンで42.195キロを走りぬいた。
+
+###### → Dù rất vất vả, tôi vẫn kiên trì chạy hết quãng đường marathon dài 42,195 km.
+
+→ Nhấn mạnh việc **vượt qua sự vất vả để chạy đến cùng**.
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Các bạn có thể nhớ「～ぬく」qua ý **kiên trì đến cùng, làm một cách triệt để**.
+- Với những từ như「やりぬく」「耐えぬく」「生きぬく」, hãy chú ý sắc thái **vượt qua khó khăn, không bỏ cuộc**.
+- Với「考えぬく」「悩みぬく」「困りぬく」, cần hiểu theo nghĩa **thấu đáo, sâu sắc hoặc đến mức độ rất cao**, không máy móc dịch tất cả thành “làm xong”.

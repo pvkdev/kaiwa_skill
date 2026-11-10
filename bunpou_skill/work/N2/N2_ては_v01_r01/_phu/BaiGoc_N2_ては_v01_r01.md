@@ -1,0 +1,53 @@
+Cấp độ: N2
+
+# ～ては
+
+> **Hành Động Lặp Đi Lặp Lại, Cứ…Rồi Lại…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **～Vては～、～Vては～**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　AてはB nghĩa là cứ làm A thì B xảy ra. 
+
+②　Mẫu câu hay dùng với các cặp động từ trái nghĩa nhau.
+
+→　Có Nghĩa là : Hành động lặp đi lặp lại, Cứ…rồi lại…
+
+---
+
+## Ví dụ
+
+##### 1. 書いては消し、消しては書いているうちに、紙が破れた。
+
+###### → Cứ viết lại xóa, xóa lại viết đến rách cả giấy.
+
+##### 2. 東京は、降ってはやみの毎日で、はっきりしない天気が続く。
+
+###### → Ở Tokyo hàng ngày cứ mưa lại tạnh, thời tiết không rõ ràng cứ kéo dài.
+
+##### 3. ABC出版社は、新しい本を出しては ベストセラー になっている。
+
+###### → Nhà xuất bản ABC cứ ra sách nào là sách đó thành sách bán chạy nhất.
+
+##### 4. 押しては引き、引いては押して、やっとその牛は歩き出した。
+
+###### → Đẩy lại kéo, kéo lại đẩy, cuối cùng con bò cũng chịu bước đi.
+
+##### 5. ずっと苦しそうで、昨日から食べては吐いているんです。
+
+###### → Khổ sở lắm, từ hôm qua đến giờ cứ ăn vào là lại nôn ra.
+
+##### 6. 彼女は毎年海外旅行に行っては、珍しい織物を買って帰ってくる。
+
+###### → Cô ấy cứ mỗi năm đi du lịch nước ngoài lại mua về những loại vải hiếm.
+
+##### 7. 留学のために貯金を しているのだが、なかなかたまらない。貯金通帳を見てはため息を つく毎日だ。
+
+###### → Tôi đang để dành tiền để đi du học nhưng mãi mà không dành được. Mỗi ngày, cứ nhìn đến tài khoản tiết kiệm tôi lại thở dài.

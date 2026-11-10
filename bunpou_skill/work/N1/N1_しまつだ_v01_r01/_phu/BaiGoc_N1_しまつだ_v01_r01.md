@@ -1,0 +1,50 @@
+Cấp độ: N1
+
+# ～ しまつだ
+
+> Có nhiều chuyện diễn ra, nhưng cuối cùng dẫn đến kết quả xấu...
+
+---
+
+## Cấu trúc ngữ pháp
+
+> - **Vる + しまつだ**  
+> *(Đôi khi có thể đi với dạng ～ている)*
+>
+>
+>
+> - Chỉ định từ: **この／その／あの + しまつだ**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+① Diễn tả một quá trình trải qua nhiều việc xấu/chuyện không hay, và rốt cuộc dẫn đến một kết quả cực kỳ tồi tệ, xấu đi (mang sắc thái thở dài, thất vọng, phê phán). 
+
+② Thường đi cùng với các từ thể hiện quá trình tệ đi như: ついに (cuối cùng), あげく (sau một hồi...), 最近では (gần đây thì...).
+
+→ **Có nghĩa là:** Cuối cùng thành ra... / Rốt cuộc dẫn đến kết quả... / Đến nông nỗi... / Rơi vào cảnh...
+
+---
+
+## Ví dụ
+
+##### 1. 彼はさんざん借金をしたあげく、ついに人の金まで盗むしまつだ。
+
+###### → Sau khi mượn nợ tùm lum, cuối cùng anh ấy rơi vào cảnh cướp tiền người khác.
+
+##### 2. Ｂさんは事業に失敗してから酒量が増え、最近では朝から酔っぱらっているしまつだ。
+
+###### → Sau khi thất bại sự nghiệp, anh B uống rượu nhiều hơn, gần đây thì sáng ngày say xỉn.
+
+##### 3. あの新入社員は生意気だ。先日など、ミスを指摘したら、反省するどころか人のせいにするしまつだった。
+
+###### → Nhân viên mới đó rất xấc xược. Như bữa trước nè, mình chỉ trích lỗi của nó, chẳng những không hối lỗi mà còn đổ thừa người khác.
+
+##### 4. （わがままな子どもを見ながら）「甘やかすからこのしまつだ」
+
+###### → (Vừa nhìn đứa trẻ ích kỷ) “Cưng chiều nên ra nông nỗi này đây.”
+
+##### 5. 注意したらかえってにらみつけるのだから始末に負えない／始末が悪い。
+
+###### → Nhắc nhở xong trái lại nó còn oán hận mình.

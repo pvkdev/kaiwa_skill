@@ -1,0 +1,90 @@
+Cấp độ: N1
+
+# てからというもの
+
+> **Kể Từ Khi…/ Kể Từ Sau Khi…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Vて ＋ からというもの（は）**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+- Sử dụng khi muốn diễn đạt trạng thái từ sau khi thực hiện một hành động nào đó thì trạng thái đó cứ tiếp diễn, kéo dài mãi. Hoặc nói theo cách dễ hiểu hơn là Kể từ khi hành động nào đó xảy ra, thì có một sự thay đổi và sự thay đổi này cứ giữ nguyên mãi về sau.
+- Mẫu câu này nhấn mạnh ý nghĩa một sự việc bắt đầu kể từ thời điểm nào đó và không dùng với những mốc quá khứ gần. Vế sau diễn tả tình trạng sau khi thay đổi.
+- Có ý nghĩa tương tự「てからは」và do có thêm 「というもの」nên mang tính bao hàm cảm xúc của người nói trong đó.
+- Đây là cách nói thiên về văn viết.
+
+→　Có Nghĩa là : Kể từ khi…/ Kể từ sau khi…
+
+---
+
+## Ví dụ
+
+##### 1. タバコを止めてからというもの、食欲が出て体の調子がとてもいい。
+
+###### → Kể từ sau khi bỏ thuốc lá, tôi bắt đầu có cảm giác thèm ăn nên sức khỏe rất tốt.
+
+##### 2. あの本を読んでからというものは、どう生きるべきかについて考えない日はない。
+
+###### → Kể từ sau khi đọc quyển sách đó xong thì chưa có ngày nào tôi thôi nghĩ về việc nên sống như thế nào cho phải.
+
+##### 3. 円高の問題は深刻だ。今年になってからというもの、円高傾向は進む一方だ。
+
+###### → Vấn đề đồng Yên lên giá rất nghiêm trọng. Kể từ bắt đầu vào năm nay, xu hướng đồng Yên lên giá cứ thế tăng.
+
+##### 4. ダイエットにバナナが効くという話を聞いてからというもの、朝食には必ずバナナを食べるようにしている。
+
+###### → Kể từ sau khi nghe được chuyện chuối rất tốt cho việc ăn kiêng thì tôi luôn cố gắng ăn chuối vào mỗi buổi sáng.
+
+##### 5. この携帯電話を使ってからというもの、手放せなくなってしまった。
+
+###### → Kể từ sau khi bắt đầu sử dụng cái điện thoại di động này rồi thì tôi đã không thể rời tay khỏi nó.
+
+##### 6. 娘が大学に入り家を出ていってからというもの、家の中が寂しくなった。
+
+###### → Kể từ khi con gái đi học đại học xa nhà, trong nhà đã trở nên buồn hẳn.
+
+##### 7. 子供が生まれてからというものは、子供のおもちゃばかり見て歩いています。
+
+###### → Kể từ khi con chào đời là tôi cứ vừa đi vừa chỉ ngắm những đồ chơi cho trẻ con.
+
+##### 8. 日本に来てからというもの、国の家族のこと を思わない日はない。
+
+###### → Kể từ khi đến Nhật, không ngày nào là tôi không nghĩ về gia đình.
+
+##### 9. 新学期が始まってからというもの、とっても忙しくなった。
+
+###### → Kể từ khi kỳ học mới bắt đầu là tôi đã trở nên cực kỳ bận rộn.
+
+##### 10. 彼は試験に失敗してからというもの、すっかり腐っている。
+
+###### → Kể từ khi thi trượt, anh ta hoàn toàn trở nên đổ đốn.
+
+##### 11. 彼はホーチミンに大きな診療所を持つ事を知ってからというもの、彼女は彼に対して愛想よくしたいと思っていた。
+
+###### → Kể từ sau khi biết được anh ta có một phòng khám lớn ở HCM thì cô ấy bắt đầu tìm cách lân la làm thân với anh ấy.
+
+##### 12. 彼女の料理の腕は、ネックレスをあげてからというもの劇的に進歩した。
+
+###### → Trình nấu ăn của bạn gái tôi đã lên hẳn kể từ sau khi tôi tặng cố ấy chiếc dây chuyền.
+
+##### 13. あなたが負傷したことを知ってからというもの、彼女はいつも泣いてばかりいる。
+
+###### → Cô ấy cứ khóc suốt kể từ sau khi biết tin cậu bị thương.
+
+##### 14. 息子が大学に入り家を出ていってからというもの、寂しくなった。
+
+###### → Tôi cảm thấy rất trống vắng kể từ sau khi con trai tôi nó vào đại học và chuyển ra ở xa.
+
+##### 15. タインさんはハノイへ移住してらというもの、何者かによって厳重に尾行されている。
+
+###### → Thanh kể từ sau khi chuyển ra HN sống thì cứ bị một gã nào đó bám theo suốt.
+
+##### 16. Eメールを使うようになってからというものは、ほとんど手紙を書かなくなった。
+
+###### → Kể từ sau khi bắt đầu sử dụng E-mail rồi thì tôi hầu như không còn viết thư tay nữa.

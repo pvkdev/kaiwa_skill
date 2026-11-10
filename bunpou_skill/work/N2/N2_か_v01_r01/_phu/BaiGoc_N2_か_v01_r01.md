@@ -1,0 +1,163 @@
+Cấp độ: N2
+
+# ～か
+
+> **Làm Sao Mà… Được!/ Có… Đâu!/ Ai Mà… Chứ!/ Có Ai Lại…!**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Biểu thức cuối câu ở dạng khẳng định ＋ か**
+
+**Những dạng thường gặp:**
+
+> **Vる ＋ か**  
+> **V thể khả năng ＋ か**  
+> **Vます ＋ か**  
+> **～だろうか／～であろうか**
+
+**Lưu ý:** Bài này trình bày cách dùng **phản vấn「反語」**, không phải cách đặt câu hỏi thông thường.
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　**Dùng hình thức câu hỏi để nhấn mạnh ý phủ định. Người nói không thực sự muốn hỏi để lấy thông tin, mà muốn khẳng định rằng điều đó không thể, không có hoặc không được chấp nhận.**
+
+②　Tùy ngữ cảnh, có thể thể hiện **sự phản đối, từ chối, bất bình, trách móc hoặc cảm xúc mạnh**.
+
+③　Thường gặp những cách nói như:
+
+- 「できるか」: Làm sao làm được! → Không thể làm được.
+- 「言えるか」: Làm sao nói được! → Không thể nói như vậy.
+- 「だれが～か」: Ai mà… chứ! → Không ai…
+- 「そんな～がありますか」: Có ai lại…! → Không nên hoặc không thể chấp nhận việc đó.
+
+④　Trong văn viết, cũng có thể dùng câu hỏi phản vấn để **nhấn mạnh một nhận định hoặc bộc lộ sự kinh ngạc**, không nhất thiết mang sắc thái tức giận.
+
+→ Có nghĩa là: **Làm sao mà… được!/ Có… đâu!/ Ai mà… chứ!/ Có ai lại…!**
+
+---
+
+## Chú ý
+
+### 1. Hình thức khẳng định nhưng ý nghĩa là phủ định
+
+Trong phạm vi bài này, câu được diễn đạt bằng hình thức khẳng định kết hợp với「か」, nhưng ý người nói muốn truyền đạt lại mang tính phủ định.
+
+Ví dụ:
+
+- 「できるか」→ Không thể làm được.
+- 「だれが信じるか」→ Không ai tin.
+- 「だれが予想したであろうか」→ Không ai ngờ tới.
+
+Khi dịch, có thể giữ hình thức câu hỏi tu từ hoặc chuyển sang câu phủ định, tùy cách diễn đạt tự nhiên trong tiếng Việt.
+
+### 2. Không phải cứ kết thúc bằng「か」là câu phản vấn
+
+Cùng một hình thức có thể là câu hỏi thực sự hoặc câu phản vấn. Cần xét:
+
+- Hoàn cảnh giao tiếp.
+- Nội dung trước và sau câu.
+- Ngữ điệu và thái độ của người nói.
+
+Nếu người nói đã có nhận định rõ ràng và dùng câu hỏi để nhấn mạnh nhận định đó, câu thường mang nghĩa phản vấn.
+
+### 3. Có「ますか」không có nghĩa là câu luôn nhẹ nhàng
+
+Trong cách dùng phản vấn,「～ますか」vẫn có thể mang ý **trách móc, phản bác hoặc phủ định mạnh**.
+
+Ví dụ,「そんな口のきき方がありますか」không nhằm hỏi có tồn tại cách nói đó hay không, mà thể hiện ý **“không được ăn nói như thế”**.
+
+### 4.「だれが～か」có thể mang nghĩa “không ai…”
+
+Ở cách dùng này,「だれ」không nhằm yêu cầu người nghe nêu tên một người cụ thể, mà giúp nhấn mạnh rằng **không ai làm, tin hoặc dự đoán được điều đó**.
+
+### 5. Phủ định không chỉ giới hạn ở khả năng thực hiện
+
+「できるか」có thể thể hiện:
+
+- Không có khả năng làm.
+- Không thể chấp nhận làm.
+- Kiên quyết từ chối làm.
+
+Vì vậy, cần dựa vào ngữ cảnh để hiểu đúng thái độ của người nói.
+
+---
+
+## Ví dụ
+
+##### 1. A：「結婚しよう。」
+
+###### → A: Chúng mình kết hôn đi.
+
+##### B：「えっ、本気で言ってるの？」
+
+###### → B: Hả, anh nói thật đấy à?
+
+##### A：「こんなこと冗談で言えるか。」
+
+###### → A: Chuyện như thế này làm sao anh có thể nói đùa được!
+
+→ Hàm ý: **Anh không nói đùa. Anh đang nghiêm túc.**
+
+##### 2. いくら頼まれたからといって、そんな詐欺みたいなこと、できるか。
+
+###### → Dù có được nhờ vả đến đâu, làm sao tôi có thể làm chuyện chẳng khác nào lừa đảo như thế!
+
+→ Hàm ý: **Tôi không chấp nhận làm chuyện đó.**
+
+##### 3. あなた、新人でしょ。先輩に向かって、そんな口のきき方がありますか。
+
+###### → Cậu là người mới đúng không? Có ai lại ăn nói với tiền bối bằng giọng điệu như thế!
+
+→ Hàm ý: **Không được ăn nói với tiền bối như vậy.**
+
+##### 4. だれがあなたの言うことなんか信じますか。
+
+###### → Ai mà tin những lời anh nói chứ!
+
+→ Hàm ý: **Không ai tin những lời anh nói.**
+
+##### 5. 100年前に、人類が月に行く時代が来ると、だれが予想したであろうか。
+
+###### → Một trăm năm trước, ai có thể ngờ rằng sẽ đến thời đại con người đặt chân lên Mặt Trăng?
+
+→ Nhấn mạnh rằng **đó là điều khó ai có thể ngờ tới vào thời điểm ấy**.
+
+##### 6. こんなに大量の仕事を、一人で今日中に終わらせられるか。
+
+###### → Một lượng công việc nhiều thế này, làm sao một mình tôi có thể hoàn thành hết trong hôm nay!
+
+##### 7. 長年お世話になった先生のことを、どうして忘れられるか。
+
+###### → Người thầy đã giúp đỡ tôi suốt bao năm, làm sao tôi có thể quên được!
+
+##### 8. 約束を何度も破るような人に、大切な仕事を任せられますか。
+
+###### → Một người liên tục thất hứa như thế, làm sao có thể giao công việc quan trọng cho được!
+
+---
+
+## Phân biệt câu hỏi thông thường và câu phản vấn
+
+
+| Nội dung              | Câu hỏi thông thường                             | Câu phản vấn            |
+| --------------------- | ------------------------------------------------ | ----------------------- |
+| Mục đích              | Hỏi để biết hoặc xác nhận thông tin              | Nhấn mạnh một nhận định |
+| Thái độ               | Chưa biết hoặc chưa chắc về câu trả lời          | Đã có ý kiến rõ ràng    |
+| Ý nghĩa trong bài này | Có thể nhận câu trả lời khẳng định hoặc phủ định | Mang hàm ý phủ định     |
+| Cách hiểu             | Có làm được không?                               | Làm sao làm được!       |
+
+
+**Điểm quyết định là ý định của người nói và ngữ cảnh, không chỉ riêng hình thức「か」.**
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Các bạn có thể ghi nhớ mẫu này bằng cách hiểu: **Hỏi để nhấn mạnh rằng “không”**.
+- 「できるか」thường là **“làm sao làm được!”**, còn「だれが～か」có thể là **“ai mà… chứ!”**.
+- Câu phản vấn có thể dùng để từ chối, trách móc, phản đối hoặc bộc lộ sự kinh ngạc.
+- Khi đọc hoặc nghe, hãy xác định **người nói thật sự đang hỏi hay đang dùng câu hỏi để bày tỏ thái độ**.

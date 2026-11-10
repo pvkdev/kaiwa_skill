@@ -1,0 +1,173 @@
+Cấp độ: N2
+
+# ～ べきだ/ べきではない
+
+**Nên…/ Cần…/ Phải Làm Việc Gì..**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **\[Động từ thể từ điển\] + べきだ/ べきではない。**  
+> **\[Tính từ -na (bỏ な)\] + である + べきだ/ べきではない。**  
+> **※ する 　→　すべきだ/ すべきではない**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**①　Mẫu câu diễn đạt việc nên/ không nên làm gì đó, hoặc được sử dụng để cảnh báo, khuyên nhủ, cấm đoán, ra lệnh….**
+
+**②　Không dùng với luật lệ, nội quy. Không nên dùng trực tiếp với người vế trên.**
+
+**③　Đây là hình thức biến thể của trợ động từ văn cổ 「べし」, được sử dụng rất nhiều, cho cả văn nói và văn viết**
+
+**④　 Dạng phủ định sẽ là 「べきではない」「べきでない」**
+
+→　Có Nghĩa là :  **Nên…/ Cần…/ Phải làm việc gì..**
+
+---
+
+## Ví dụ
+
+##### 1. 学生はもっと勉強すべきだ。
+
+###### → Học sinh nên học nhiều hơn.
+
+*※「すべき」 là dạng rút gọn của 「するべき」, được sử dụng phổ biến hơn trong văn viết và văn nói.*
+
+##### 2. 電車の中では、若者はお年寄りに席を譲るべきです。
+
+###### → Ở trên tàu thì người trẻ tuổi nên nhường chỗ cho người già.
+
+##### 3. そんな大声で話すべきではない。
+
+###### → Anh/ chị không nên nói lớn tiếng như vậy.
+
+##### 4. 無断で欠席すべきではない。
+
+###### → Anh/chị không nên tự ý vắng mặt mà không thông báo.
+
+##### 5. 約束は守るべきだ。
+
+###### → Bạn nên giữ lời hứa.
+
+##### 6. おもちゃはまず安全であるべきだ。
+
+###### → Đối với đồ chơi thì điều đầu tiên là cần phải an toàn.
+
+##### 7. あなたはもっと理性的であるべきだ。
+
+###### → Anh cần phải có lý/có chừng mực hơn.
+
+##### 8. 約束は守るべきだ。
+
+###### → Đã hứa thì nên giữ lời.
+
+##### 9. 電車の中では、若者は年寄りに席を譲るべきです。
+
+###### → Những người trẻ tuổi thì nên nhường ghế cho người già trên ở xe điện.
+
+##### 10. 学生は勉強すべきだ。
+
+###### → Học sinh thì phải học.
+
+##### 11. 何をすべきか、もう彼女の心は決まっていた。
+
+###### → Cô ấy đã quyết định những gì cô ấy nên làm.
+
+##### 12. 他人の私生活に干渉すべきではない。
+
+###### → Không nên can thiệp vào chuyện đời tư của người khác.
+
+##### 13. わたしは彼に言うべきことを全部言った。
+
+###### → Tôi đã nói hết với anh ta những gì cần nói rồi.
+
+##### 14. レストランやロビーでは、携帯電話で大声で話をするべきではない。
+
+###### → Ở những nơi như nhà hàng hay sảnh khách sạn thì không nên nói chuyện điện thoại lớn.
+
+##### 15. 近頃は小学生まで塾に通っているそうだが、子供はもっと自由に遊ばせるべきだ。
+
+###### → Gần đây, cả học sinh tiểu học cũng phải đi học thêm. Trẻ em thì nên được cho vui chơi tự do hơn nữa.
+
+##### 16. 彼に会いに行くべきじゃないかな？
+
+###### → Chẳng phải chúng ta nên đến gặp ông ta chứ nhỉ?
+
+##### 17. 現代は何事も地球規模で考えるべきだ。
+
+###### → Thời buổi ngày nay thì làm gì cũng cần suy nghĩ trên quy mô toàn cầu.
+
+##### 18. 女性は常に化粧をして美しくあるべきだなどという考えには賛成できない。
+
+###### → Tôi không tán thành ý kiến cho rằng phụ nữ nên thường xuyên trang điểm đẹp.
+
+##### 19. 人間は自分の行動に責任を持つべきだ。
+
+###### → Con người thì cần chịu trách nhiệm cho những hành động của mình.
+
+##### 20. 地球的規模で自然破壊が進んでいる。人間は自然に対してもっと謙虚であるべきだ。
+
+###### → Tàn phá thiên nhiên đang diễn ra trên quy mô toàn cầu. Con người cần phải nương tay hơn nữa đối với thiên nhiên.
+
+##### 21. 拾った財布は警察に届けるべきですよ。
+
+###### → Cậu nên giao cho cảnh sát ví cậu đã nhặt được.
+
+##### 22. 親が生きているうちにもっと親孝行するべきだった、と後悔している。
+
+###### → Tôi vẫn cứ hối hận là lẽ ra nên hiếu thảo với bố mẹ hơn khi bố mẹ còn sống.
+
+##### 23. この仕事は君がやるべきだ。
+
+###### → Công việc này thì cậu nên làm.
+
+##### 24. おもちゃは、まず安全であるべきだ。
+
+###### → Đồ chơi thì trước hết cần đảm bảo an toàn.
+
+##### 25. １万円拾ったんだって？ そりゃあ、すぐに警察に届けるべきだよ。
+
+###### → Nghe nói cậu nhặt được 10 nghìn Yên hả? Vậy thì cậu nên giao ngay cho cảnh sát đi.
+
+---
+
+## NÂNG CAO
+
+1. **Đối với những sự việc mang tính nghĩa vụ, trách nhiệm bắt buộc thì không sử dụng mẫu này mà phải sử dụng 「～なければならない」**.
+
+##### 1. 海外旅行に行くときはパスポートを持って行くべきだ。*(X)*
+
+###### → Khi đi du lịch nước ngoài thì nên mang theo hộ chiếu.
+
+##### 2. 海外旅行に行くときはパスポートを持って行かなければならない。*(O)*
+
+###### → Khi đi du lịch nước ngoài thì PHẢI mang theo hộ chiếu.
+
+
+
+---
+
+2. **Một số ví dụ với 「べき」nhưng không phải dưới dạng 「べきだ/ べきではない」ở cuối câu.**
+
+##### 1. 私は彼に言うべきこと を全部言った。
+
+###### → Tôi đã nói hết những gì cần nói với anh ta.
+
+##### 2. 何をすべきか、もう彼女の心は決まっていた。
+
+###### → Cô ấy đã quyết định điều mà mình nên làm.
+
+##### 3. 彼に会いに行くべきじゃないかな？
+
+###### → Tôi có nên đi gặp anh ta không nhỉ?
+
+##### 4. 彼は信頼すべき人ではない。
+
+###### → Anh ta không phải là người nên tin tưởng.
+
+##### 5. それは記念すべき出来事だ。
+
+###### → Đó là một sự kiện đáng nhớ.

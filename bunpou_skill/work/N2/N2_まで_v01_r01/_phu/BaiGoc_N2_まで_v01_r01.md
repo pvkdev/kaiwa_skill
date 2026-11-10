@@ -1,0 +1,170 @@
+Cấp độ: N2
+
+# ～まで
+
+> **Đến Cả…/ Ngay Cả…/ Thậm Chí…/ Đến Mức…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+**① Đến cả…; không chỉ… mà còn…**
+
+> **N ＋ まで**  
+> **N ＋ に ＋ まで**
+
+**② Làm đến mức vượt quá phạm vi thông thường**
+
+> **Vて ＋ まで ＋ V**  
+> **N chỉ hành động ＋ まで ＋ する**  
+> **N chỉ hành động ＋ までして ＋ V**
+
+→ Những danh từ chỉ hành động thường gặp: **借金、徹夜、美容整形…**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**① Nêu thêm một đối tượng hoặc sự việc nằm ngoài dự đoán, nhấn mạnh rằng phạm vi của sự việc đã mở rộng đến cả mức đó.**
+
+- **Mang nghĩa “không chỉ những điều thông thường mà đến cả điều này cũng…”.**
+- **Thường thể hiện sự ngạc nhiên, bất ngờ, thất vọng hoặc cảm xúc mạnh của người nói.**
+- **Có thể dùng cho cả sự việc tích cực lẫn tiêu cực.**
+
+##### 親友にまで裏切られた。もうだれも信じられない。
+
+###### → Tôi bị cả người bạn thân phản bội. Giờ chẳng còn tin ai được nữa.
+
+→ Người nói không ngờ rằng **đến cả người bạn thân mà mình tin tưởng cũng phản bội mình**.
+
+→ Được dịch là: **Đến cả…/ Ngay cả… cũng…/ Thậm chí… còn…**
+
+**② Nêu một hành động hoặc cách làm vượt quá mức thông thường để đạt được mục đích nào đó.**
+
+- **Nhấn mạnh rằng người thực hiện đã hoặc định làm đến mức mà bình thường người ta không nghĩ sẽ làm.**
+- **Trong cách dùng của bài này, thường mang sắc thái không tán thành, cho rằng không đáng, không cần thiết hoặc không muốn làm đến mức đó.**
+- **Cũng có thể thể hiện sự bất ngờ trước một hành động quá mức hoặc sự tiếc nuối vì đã làm như vậy.**
+
+##### 新しいテレビがほしいが、借金してまで買おうとは思わない。
+
+###### → Tôi muốn có một chiếc tivi mới, nhưng không định mua đến mức phải vay nợ.
+
+→ Người nói muốn mua tivi, nhưng cho rằng **vay nợ để mua là đi quá mức mình chấp nhận**.
+
+→ Được dịch là: **Đến mức…/ Làm đến cả việc… để…/ …đến mức phải…**
+
+---
+
+## Chú ý
+
+- **Ở nghĩa thứ nhất, まで nhấn mạnh sự mở rộng ngoài dự đoán.** Không nhất thiết phải nói rõ phần “không chỉ…” ở trước.
+
+##### 校長先生まで応援に来てくれた。
+
+###### → Đến cả thầy hiệu trưởng cũng đến cổ vũ.
+
+→ Chỉ riêng まで đã thể hiện rằng **việc thầy hiệu trưởng đến là điều đáng ngạc nhiên đối với người nói**.
+
+- **に không phải thành phần bắt buộc trước まで.** Chỉ giữ に khi cần thể hiện quan hệ ngữ pháp của danh từ trong câu.
+
+##### 親友に裏切られた。
+
+###### → Tôi bị bạn thân phản bội.
+
+##### 親友にまで裏切られた。
+
+###### → Tôi bị đến cả bạn thân phản bội.
+
+→ に đánh dấu người thực hiện hành động trong câu bị động; まで được thêm vào để nhấn mạnh.
+
+- **Khi まで đứng ở vị trí của が hoặc を, thông thường không giữ lại が hoặc を trước まで.**
+
+##### 雪まで降り出した。
+
+###### → Thậm chí tuyết cũng bắt đầu rơi.
+
+- **Vてまで và Nまでして có thể diễn đạt cùng một nội dung nếu danh từ đó kết hợp được với する.**
+
+##### 借金してまで買いたくない。
+
+###### → Tôi không muốn mua đến mức phải vay nợ.
+
+##### 借金までして買いたくない。
+
+###### → Tôi không muốn phải làm đến cả việc vay nợ để mua.
+
+- **Ở nghĩa thứ hai, không phải câu nào cũng kết thúc bằng dạng phủ định.** Câu vẫn có thể kể lại một hành động đã thực hiện, nhưng người nói thể hiện sự không tán thành, bất ngờ hoặc tiếc nuối.
+
+##### 学校をさぼってまで見に行ったのに、がっかりした。
+
+###### → Tôi đã trốn cả buổi học để đi xem, vậy mà lại thất vọng.
+
+- **Đừng chỉ dựa vào まで để dịch là “đến” một thời điểm hoặc địa điểm.** Trong bài này, trọng tâm là **“đến cả điều ngoài dự đoán”** và **“làm đến mức vượt quá thông thường”**.
+
+---
+
+## Ví dụ
+
+### ① Đến cả…; ngay cả… cũng…
+
+##### 1. 午後になって風はますます強くなり、夕方には雪まで降り出した。
+
+###### → Đến buổi chiều, gió càng lúc càng mạnh; tới chiều tối, thậm chí tuyết cũng bắt đầu rơi.
+
+##### 2. この薬は飲んでも効果がないばかりか、深刻な副作用まで出るそうだ。
+
+###### → Nghe nói thuốc này không những uống vào không có hiệu quả mà còn gây cả tác dụng phụ nghiêm trọng.
+
+##### 3. 親友にまで裏切られた。もうだれも信じられない。
+
+###### → Tôi bị cả người bạn thân phản bội. Giờ chẳng còn tin ai được nữa.
+
+##### 4. 50歳になってやっと、夢にまで見たパリに行くことができた。
+
+###### → Mãi đến năm 50 tuổi, tôi mới được đến Paris, nơi tôi ao ước đến mức còn thấy cả trong mơ.
+
+##### 5. 先生だけでなく、校長先生まで応援に来てくれた。
+
+###### → Không chỉ các thầy cô mà đến cả thầy hiệu trưởng cũng đến cổ vũ.
+
+##### 6. この店では、日用品だけでなく、家具まで売っている。
+
+###### → Cửa hàng này không chỉ bán đồ dùng hằng ngày mà còn bán cả đồ nội thất.
+
+### ② Làm đến mức vượt quá phạm vi thông thường
+
+##### 7. 新しいテレビがほしいが、借金してまで買おうとは思わない。
+
+###### → Tôi muốn có một chiếc tivi mới, nhưng không định mua đến mức phải vay nợ.
+
+##### 8. あなたは、禁止されている薬物に頼ってまで優勝したいのですか。
+
+###### → Bạn muốn giành chức vô địch đến mức phải dựa vào cả chất cấm sao?
+
+##### 9. 登山は私の趣味だが、家族に心配をかけてまでするつもりはない。
+
+###### → Leo núi là sở thích của tôi, nhưng tôi không định theo đuổi đến mức khiến gia đình phải lo lắng.
+
+##### 10. あのコンサートにはがっかりした。学校をさぼってまで見に行ったのに。
+
+###### → Tôi thất vọng về buổi hòa nhạc ấy. Vậy mà tôi đã trốn cả buổi học để đi xem.
+
+##### 11. 最近は就職活動のために、美容整形までする若者もいるそうだ。
+
+###### → Nghe nói gần đây, có những người trẻ thậm chí còn phẫu thuật thẩm mỹ để phục vụ việc ứng tuyển.
+
+##### 12. うそをついてまで、自分をよく見せようとは思わない。
+
+###### → Tôi không định làm đến mức nói dối chỉ để tạo ấn tượng tốt về bản thân.
+
+##### 13. その仕事を終わらせるために、徹夜までする必要はない。
+
+###### → Không cần phải thức trắng đêm chỉ để hoàn thành công việc đó.
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Với **Nまで／Nにまで**, các bạn hãy nghĩ đến **“đến cả điều đó cũng…”**. Người nói nhấn mạnh rằng sự việc đã mở rộng tới một đối tượng hoặc mức độ ngoài dự đoán.
+- Với **Vてまで／Nまでして／Nまでする**, hãy xác định **hành động bị xem là quá mức** và **mục đích mà người thực hiện hướng tới**.
+- Ở nghĩa thứ hai, hãy đọc cả câu để nhận ra thái độ của người nói: **không muốn làm đến mức đó, cho rằng không đáng, hoặc tiếc vì đã làm đến mức đó**. Sắc thái này không nhất thiết được thể hiện bằng một đuôi phủ định.

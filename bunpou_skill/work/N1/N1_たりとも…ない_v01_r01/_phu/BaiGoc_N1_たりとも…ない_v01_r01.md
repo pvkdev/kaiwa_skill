@@ -1,0 +1,41 @@
+Cấp độ: N1
+
+# ～たりとも…ない
+
+> **Cho dù...cũng không**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Số từ / Từ chỉ số lượng nhỏ nhất (1日, 1滴, 一瞬, 一言...) + たりとも + Động từ dạng phủ định**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+① Dùng để nhấn mạnh rằng "ngay cả một lượng nhỏ nhất (một ngày, một giọt, một khoảnh khắc, một từ...)" cũng hoàn toàn không thể/không được phép diễn ra. 
+
+② Thường đi với các từ chỉ số lượng là 1 (như: 1日 - một ngày, 1滴 - một giọt, 一瞬 - một khoảnh khắc, 一言 - một lời/một từ...).
+
+→ Có nghĩa là: **Dù chỉ (một)... cũng không... / Ngay cả (một)... cũng không...**
+
+---
+
+## Ví dụ
+
+##### 1. 試験まであとわずかだ。一日たりとも遊んではいられない。
+
+###### → Chỉ còn chút nữa là tới ngày thi. Tôi không thể chơi dù chỉ một ngày.
+
+##### 2. 砂漠では一滴たりとも水を無駄にはできない。
+
+###### → Ở sa mạc thì 1 giọt nước cũng không thể lãng phí.
+
+##### 3. 車の通りの多い所では、親は一瞬たりとも子どもの手を離さないように注意すべきだ。
+
+###### → Ở nơi nhiều xe cộng qua lại, cha mẹ cần chú ý không rời tay khỏi con mình dù chỉ khoảnh khắc.
+
+##### 4. 先生の言うことは一言たりとも聞き逃まいと、新入生たちは真剣に話を聞いていた。
+
+###### → Những học sinh mới chăm chú lắng nghe thầy nói không bỏ sót dù chỉ một từ.

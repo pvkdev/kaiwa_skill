@@ -1,0 +1,242 @@
+Cấp độ: N1
+
+# ～あるまじき
+
+> Không thể chấp nhận được ở… / Không được phép có ở… / Không xứng với tư cách là…
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **N chỉ lập trường, vai trò, tư cách ＋ にあるまじき ＋ N**  
+> **N chỉ lập trường, vai trò, tư cách ＋ としてあるまじき ＋ N**
+
+Danh từ đứng sau thường là:
+
+- **行為（こうい）**：Hành vi.
+- **言動（げんどう）**：Lời nói và hành động.
+- **発言（はつげん）**：Phát ngôn.
+- **態度（たいど）**：Thái độ.
+- **振る舞い（ふるまい）**：Cách cư xử.
+- **こと**：Việc, điều.
+
+Ví dụ về cách kết hợp:
+
+##### **学生にあるまじき行為**
+
+###### Hành vi không thể chấp nhận được ở một học sinh, sinh viên.
+
+##### **教師としてあるまじき発言**
+
+###### Phát ngôn không thể chấp nhận được với tư cách là giáo viên.
+
+##### **親にあるまじきこと**
+
+###### Điều không được phép có ở người làm cha mẹ.
+
+---
+
+## Cách dùng / Ý nghĩa
+
+Diễn tả sự **phê phán, chỉ trích mạnh mẽ của người nói đối với một hành vi, lời nói hoặc thái độ mà người ở vai trò, địa vị hay tư cách đó tuyệt đối không được có**.
+
+Ý nghĩa trọng tâm là:
+
+**“Đã ở tư cách, vị trí ấy thì tuyệt đối không được làm như vậy.”**
+
+Trong cấu trúc **「AにあるまじきB」**:
+
+- **A** là vai trò, tư cách hoặc vị trí được lấy làm tiêu chuẩn đánh giá.
+- **B** là hành vi, lời nói hoặc thái độ bị cho là đi ngược lại tiêu chuẩn ấy.
+
+**Ví dụ dễ nhớ:**
+
+##### カンニングするなど、学生に**あるまじき**行為だ。
+
+###### → Quay cóp là hành vi không thể chấp nhận được ở một học sinh, sinh viên.
+
+Người nói cho rằng **đã là học sinh, sinh viên thì không được phép gian lận trong thi cử**, đồng thời thể hiện thái độ lên án hành vi đó.
+
+→ **Được dịch là: Không thể chấp nhận được ở… / Không được phép có ở… / Không xứng với tư cách là…**
+
+---
+
+## Chú ý
+
+### ① “Không thể có” mang nghĩa phê phán, không phải không có khả năng xảy ra
+
+Trong bài này, **「あるまじき」** tương đương với ý **“tuyệt đối không được phép có”**.
+
+Hành vi đó có thể đã thực sự xảy ra, nhưng người nói đánh giá rằng nó **trái với trách nhiệm, đạo đức hoặc chuẩn mực của người ở vị trí ấy**.
+
+##### それは教師に**あるまじき**発言だ。
+
+###### → Đó là một phát ngôn không thể chấp nhận được ở một người giáo viên.
+
+Câu này không có nghĩa là giáo viên **không có khả năng nói ra câu đó**, mà là **đã làm giáo viên thì không được phép phát ngôn như vậy**.
+
+### ② Danh từ phía trước thể hiện vai trò, tư cách hoặc vị trí
+
+Những từ thường gặp gồm:
+
+- **学生**：Học sinh, sinh viên.
+- **教師**：Giáo viên.
+- **親**：Cha mẹ.
+- **医師**：Bác sĩ.
+- **政治家**：Chính trị gia.
+- **責任者**：Người chịu trách nhiệm.
+- **人の上に立つ者**：Người ở vị trí lãnh đạo.
+- **人**：Con người.
+
+Không nên chỉ hiểu đây là mẫu nói về nghề nghiệp. **Tư cách làm cha mẹ, làm người hoặc làm người lãnh đạo** cũng có thể trở thành tiêu chuẩn để đánh giá.
+
+### ③ 「に」 và 「として」 đều có thể dùng
+
+**「Nにあるまじき」** nêu vai trò hoặc tư cách làm tiêu chuẩn đánh giá.
+
+**「Nとしてあるまじき」** thể hiện rõ ý **“với tư cách là N thì không được phép…”**.
+
+##### それは医師に**あるまじき**行為だ。
+
+###### → Đó là hành vi không thể chấp nhận được ở một bác sĩ.
+
+##### それは医師として**あるまじき**行為だ。
+
+###### → Đó là hành vi không thể chấp nhận được với tư cách là bác sĩ.
+
+Trong nhiều tình huống, hai cách nói có ý nghĩa gần nhau.
+
+### ④ 「あるまじき」 đứng trước danh từ
+
+Cần ghi nhớ cả cụm:
+
+##### **あるまじき ＋ 行為／発言／態度／こと…**
+
+###### Khi muốn kết thúc câu, thường dùng:
+
+##### **～にあるまじきことだ。**
+
+##### **～としてあるまじき行為だ。**
+
+###### Không dùng **「あるまじき」** như một tính từ đuôi い để tự ý chia thành các dạng như **「あるまじくない」**.
+
+### ⑤ Là cách nói trang trọng, sắc thái chỉ trích mạnh
+
+Mẫu này thường xuất hiện trong văn viết, bình luận, phát biểu hoặc những lời phê phán nghiêm khắc.
+
+Không nên dùng tùy tiện cho mọi lỗi nhỏ, vì nó mang cảm giác **“hành vi ấy không xứng với tư cách của người đó”**, mạnh hơn một lời nhắc nhở thông thường.
+
+---
+
+## Ví dụ
+
+##### 1. カンニングするなど、学生に**あるまじき**行為だ。
+
+###### → Quay cóp là hành vi không thể chấp nhận được ở một học sinh, sinh viên.
+
+##### 2. 子どもを虐待して殺すとは、まったく親に**あるまじき**ことだ。
+
+###### → Ngược đãi con đến chết là điều hoàn toàn không thể chấp nhận được ở người làm cha mẹ.
+
+##### 3. 部下に全責任を負わせるなど、人の上に立つものとして**あるまじき**ふるまいだ。
+
+###### → Đẩy toàn bộ trách nhiệm cho cấp dưới là cách hành xử không thể chấp nhận được với tư cách là người lãnh đạo.
+
+*Chú ý:*
+
+*Ba câu trên đều có chung cách đánh giá:*
+
+***Đã là học sinh, cha mẹ hoặc người lãnh đạo thì phải có trách nhiệm và cách cư xử tương ứng. Hành vi được nêu ra đã đi ngược lại điều đó.***
+
+### Ví dụ bổ sung
+
+##### 4. 生徒を人前で侮辱するなど、教師に**あるまじき**行為だ。
+
+###### → Sỉ nhục học sinh trước mặt mọi người là hành vi không thể chấp nhận được ở một giáo viên.
+
+##### 5. 彼の言動は政治家として**あるまじき**もので、非難されて当然だ。
+
+###### → Lời nói và hành động của ông ấy không thể chấp nhận được với tư cách là một chính trị gia, nên việc bị chỉ trích là đương nhiên.
+
+##### 6. 患者の個人情報を他人に漏らすのは、医師として**あるまじき**行為だ。
+
+###### → Tiết lộ thông tin cá nhân của bệnh nhân cho người khác là hành vi không thể chấp nhận được với tư cách là bác sĩ.
+
+##### 7. 問題を隠したまま部下を責めるとは、責任者に**あるまじき**態度だ。
+
+###### → Che giấu vấn đề rồi lại trách móc cấp dưới là thái độ không thể chấp nhận được ở người chịu trách nhiệm.
+
+##### 8. 他人の研究成果を自分のものとして発表するなど、研究者に**あるまじき**行為だ。
+
+###### → Công bố thành quả nghiên cứu của người khác như thể đó là của mình là hành vi không thể chấp nhận được ở một nhà nghiên cứu.
+
+##### 9. 病気の親を放置し、その年金を勝手に使うなど、子として**あるまじき**行為だ。
+
+###### → Bỏ mặc cha mẹ đang bệnh rồi tự ý tiêu tiền lương hưu của họ là hành vi không thể chấp nhận được với tư cách là người con.
+
+##### 10. 困っている人をだまして金を奪うとは、人として**あるまじき**ことだ。
+
+###### → Lừa lấy tiền của người đang gặp khó khăn là điều không thể chấp nhận được với tư cách là một con người.
+
+---
+
+## Mở rộng: 「～まじき」「許すまじき」
+
+### ① 「まじき」 là cách nói mang tính văn viết
+
+**「あるまじき」** là một cách kết hợp của **「まじき」**.
+
+Trong cách dùng đang học, **「まじき」** thể hiện ý **“không được phép…”, “không nên…”**, đồng thời đứng trước danh từ.
+
+Dạng kết hợp cơ bản: **Vる ＋ まじき ＋ N**
+
+Riêng **「する」** có thể gặp: **するまじき／すまじき**
+
+Tuy nhiên, đây là lối nói mang tính văn viết, có sắc thái cổ. Khi học cách sử dụng trong tiếng Nhật hiện đại, nên ưu tiên ghi nhớ những cụm quen thuộc như **「あるまじき」** và **「許すまじき」**, thay vì tự ghép với nhiều động từ khác nhau.
+
+### ② 許すまじき — Không thể dung thứ
+
+##### **許すまじき行為**
+
+###### → Hành vi không thể dung thứ.
+
+##### **許すまじきこと**
+
+###### → Điều không thể tha thứ.
+
+##### 11. 他人の案を盗んで自分の案として提出するなど、**許すまじき**ことだ。
+
+###### → Đánh cắp ý tưởng của người khác rồi nộp như ý tưởng của mình là điều không thể dung thứ.
+
+##### 12. 弱い者をいじめるのは、**許すまじき**行為だ。
+
+###### → Bắt nạt người yếu thế là hành vi không thể dung thứ.
+
+*Phân biệt trọng tâm:*
+
+- **Nに／としてあるまじき**：Phê phán vì hành vi **không phù hợp với vai trò, tư cách của người thực hiện**.
+- **許すまじき**：Phê phán rằng hành vi đó **không thể dung thứ**.
+
+---
+
+## Tổng kết và bình luận
+
+Để nhớ **「～あるまじき」**, các bạn hãy hình dung:
+
+**“Đã là người ở vai trò, tư cách đó thì tuyệt đối không được làm như vậy.”**
+
+Ba cụm tiêu biểu cần nhớ:
+
+##### **学生にあるまじき行為**
+
+###### Hành vi không thể chấp nhận được ở học sinh, sinh viên.
+
+##### **親にあるまじきこと**
+
+###### Điều không được phép có ở người làm cha mẹ.
+
+##### **人の上に立つ者としてあるまじき振る舞い**
+
+###### Cách cư xử không thể chấp nhận được với tư cách là người lãnh đạo.
+
+Trọng tâm của mẫu này là **lấy vai trò, trách nhiệm hoặc tư cách của một người làm tiêu chuẩn để phê phán mạnh mẽ hành vi của họ**.

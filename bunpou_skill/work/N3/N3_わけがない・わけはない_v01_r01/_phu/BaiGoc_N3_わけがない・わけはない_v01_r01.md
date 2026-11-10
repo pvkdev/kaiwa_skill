@@ -1,0 +1,99 @@
+Cấp độ: N3
+
+# わけがない／わけはない
+
+**Không Thể Nào Mà…/ Không Lý Nào Mà…/ Chả Có Lý Do Gì…/ Làm Sao Mà…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ /tính từ thể thường (Tính từ -na + な) + わけ(が／は) ない**
+>
+> **Vている／ていた／られる／させる + わけ(が／は) ない**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+**①　 Mẫu câu diễn đạt sự phủ nhận lý do, khả năng xảy ra của việc gì đó, khẳng định hoặc phán đoán mang tính chủ quan của người nói** (tuyệt đối không, không thể có chuyện đó)
+
+**②　Có thể dùng「わけはない」**, ý nghĩa và cách dùng vẫn tương tự như vậy, nhưng「わけ(が) ない」phổ biến hơn.
+
+**③　Dạng lịch sự hơn của 「わけがない」 là 「わけがないです／わけがありません」.** Trong hội thoại thân mật, văn nói thường chỉ dùng 「わけない」
+
+**④　Là cách nói có ý nghĩa tương tự với「はずがない」**
+
+→　Có Nghĩa là : **Không thể nào mà…/ Không lý nào mà…/ Chả có lý do gì…/ làm sao mà…**
+
+---
+
+## Ví dụ
+
+##### 1. お金がないのだから、家を買えるわけがない。
+
+###### → Không có tiền nên không thể nào mua được nhà.
+
+##### 2. 「今日、ひま？」/ 「ひまなわけないよ。明日、引っ越しなんだから」
+
+###### → ”Hôm nay rảnh không?” / “Rảnh thế nào được? Mai là phải chuyển nhà rồi.”
+
+##### 3. あの強い相手に勝てるわけがない。
+
+###### → Không có lý do gì khiến tôi có thể thắng được đối thủ mạnh đó.
+
+##### 4. 「この パン、古くない？」/ 「古いわけないよ。昨日買ったんだから」
+
+###### → ”Bánh mì này không phải cũ đấy chứ?” / “Cũ là cũ thế nào? Hôm qua mới mua mà.”
+
+##### 5. うそばかりついている彼が、みんなに信用されるわけがないでしょう。
+
+###### → Chả có lý do gì mà một người toàn nói dối như anh ta lại được mọi người tin tưởng.
+
+##### 6. こんな難しいこと、私に出来るわけがない。
+
+###### → Tôi sao có thể làm được việc khó thế này.
+
+##### 7. 塩も入れていない料理なんておいしいわけがない。
+
+###### → Món ăn mà không bỏ muối vào thì sao mà ngon được.
+
+##### 8. そんなわけはない = そんなわけ ( が ) ない 。
+
+###### → Không thể nào/ Không thể như thế được.
+
+##### 9. まだ習っていない問題を試験に出されても、できるわけがない。
+
+###### → Những dạng bài chưa học mà được cho thi thì làm sao mà làm được.
+
+##### 10. こんな漢字の多い本をあの子が読むわけはない。彼はまんがしか読まないんだから。
+
+###### → Lẽ nào một cuốn sách nhiều chữ Hán như thế này mà thằng bé đó lại cơ chứ. Vì nó chỉ đọc truyện tranh thôi.
+
+##### 11. こんなに低温の夏なんだから、秋にとれる米がおいしいわけがない。
+
+###### → Vì mùa hè có nhiệt độ thấp như thế này nên gạo thu hoạch trong mùa thu làm sao mà ngon được.
+
+##### 12. A「後藤さんは暇かな。明日の会に誘ってみようか。」
+
+##### B「後藤さん？彼女は今結婚式の準備で忙しいよ。暇なわけないよ。」
+
+###### →A: “Goto có rảnh không nhỉ? Hay mình rủ cô ấy tham gia buổi ngày mai đi”.
+
+###### B: “Goto hả? Hiện giờ cô ta đang rất bận bịu chuẩn bị cho lễ cưới đó. Làm sao mà rảnh được.”
+
+##### 13. けさ、電車の中で前田さんによく似た人を見かけたんです。でも、あの方は今上海にいるんだから、前田さんのわけがありませんよね。
+
+###### → Sáng nay trên xe điện tôi đã thấy một người rất giống với anh Maeda. Nhưng mà anh ấy giờ hiện giờ đang ở Thượng hải nên không lý nào là anh ấy đâu nhỉ.
+
+##### 14. 朝寝坊のあなたが、朝五時に起きられるわけがない。
+
+###### → Một người hay ngủ nướng như anh thì làm sao mà dậy được lúc 5 giờ sáng cơ chứ.
+
+##### 15. あんな下手な絵が売れるわけがない。
+
+###### → Không lý nào một bức tranh xấu tệ như thế có thể bán được.
+
+##### 16. こんなやさしい仕事が君にできないわけがない。
+
+###### → Không lý nào một công việc dễ như thế này mà cậu lại không làm được.

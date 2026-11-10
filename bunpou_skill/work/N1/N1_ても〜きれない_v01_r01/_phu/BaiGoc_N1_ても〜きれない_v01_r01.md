@@ -1,0 +1,114 @@
+Cấp độ: N1
+
+# ～ても～きれない
+
+> **Không thể… hết được / Dù có… cũng không thể… hết / Không sao… cho xuể**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể て ＋ も ＋ Động từ thể ます bỏ ~~ます~~ ＋ きれない**
+
+---
+
+## Ví dụ:
+
+##### 食べても食べきれない
+
+###### → Dù ăn cũng không thể ăn hết.
+
+##### 感謝してもしきれない
+
+###### → Không thể bày tỏ hết lòng biết ơn.
+
+##### 数えきれない
+
+###### → Không thể đếm xuể.
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói nhấn mạnh rằng một hành động không thể thực hiện hết, hoàn thành hết hoặc đạt đến giới hạn cuối cùng, dù đã cố gắng thực hiện.
+
+②　Cấu trúc 「Vます bỏ ~~ます~~ ＋ きれない」 biểu thị việc không thể làm hết một việc gì đó do số lượng quá nhiều, mức độ quá lớn hoặc khả năng của con người có hạn.
+
+③　Khi kết hợp với 「～ても」 thành 「～ても～きれない」, câu nhấn mạnh rằng dù có thực hiện hành động đó thì vẫn không thể hoàn thành hết hoặc không thể đạt đến mức độ cần thiết.
+
+④　Ngoài những hành động cụ thể như ăn, đếm, sử dụng, mẫu này còn thường dùng để diễn tả cảm xúc hoặc đánh giá có mức độ quá lớn, chẳng hạn như sự hối hận, lòng biết ơn, sự kính trọng hoặc những lời chỉ trích không thể diễn tả hết.
+
+⑤　Thường gặp trong những cách nói như:
+
+- 悔やんでも悔やみきれない: Hối hận đến mức nào cũng không đủ.
+- 感謝してもしきれない: Không thể bày tỏ hết lòng biết ơn.
+- 数えきれない: Nhiều đến mức không thể đếm xuể.
+- 謝っても謝りきれない: Xin lỗi bao nhiêu cũng không đủ.
+
+→ Có nghĩa là: **Không thể… hết được – Không thể… cho xuể – Dù có… cũng không thể… hết.**
+
+---
+
+## Ví dụ
+
+##### ①　あの時のミスは悔やんでも悔やみきれない。
+
+###### → Lỗi lầm khi đó có hối hận đến mấy cũng không thể nguôi ngoai được.
+
+##### ②　子どもを殺した犯人は、どんなに憎んでも憎みきれない。
+
+###### → Tên tội phạm đã giết chết đứa trẻ ấy có căm ghét đến mức nào cũng không đủ.
+
+##### ③　この汚名をすすぐまでは、死んでも死にきれない。
+
+###### → Chừng nào chưa rửa sạch được tiếng xấu này, tôi chết cũng không cam lòng.
+
+##### ④　私があなたを傷つけたことは、どんなに詫びても詫びきれることではない。
+
+###### → Việc tôi làm tổn thương bạn là lỗi lầm mà dù có xin lỗi bao nhiêu cũng không thể bù đắp hết được.
+
+##### ⑤　両親には感謝してもしきれない。
+
+###### → Tôi không thể bày tỏ hết lòng biết ơn đối với cha mẹ mình.
+
+##### ⑥　彼がこれまでに経験した苦労は、言葉では言いきれないほどだ。
+
+###### → Những khó khăn mà anh ấy đã trải qua cho đến nay nhiều đến mức không thể diễn tả hết bằng lời.
+
+##### ⑦　世界には数えきれないほどの星がある。
+
+###### → Trên thế giới có vô số ngôi sao, nhiều đến mức không thể đếm xuể.
+
+##### ⑧　この仕事は一日ではやりきれない。
+
+###### → Công việc này không thể hoàn thành hết chỉ trong một ngày.
+
+##### ⑨　彼女が受けた悲しみは、簡単には語りきれない。
+
+###### → Nỗi đau mà cô ấy phải chịu không thể dễ dàng kể hết bằng lời.
+
+##### ⑩　今回の失敗は、どんなに謝っても謝りきれないほど重大なものだった。
+
+###### → Thất bại lần này nghiêm trọng đến mức dù có xin lỗi bao nhiêu cũng không đủ.
+
+---
+
+## Lưu ý
+
+①　Cần phân biệt hai dạng:
+
+- Vます bỏ ~~ます~~ ＋ きれない: Không thể làm hết, không thể hoàn thành hết hoặc không thể diễn tả hết.
+- Vて ＋ も ＋ Vます bỏ ~~ます~~ ＋ きれない: Dù có làm… cũng không thể làm hết hoặc không thể đạt đến mức độ cần thiết.
+
+②　「～きる」 mang nghĩa làm hết, hoàn toàn hoặc đến cùng; 「～きれない」 là dạng phủ định, biểu thị không thể làm hết hoặc không thể đạt đến giới hạn đó.
+
+③　Không phải câu nào cũng cần dịch sát là “dù có…”. Với 「数えきれない」, cách dịch tự nhiên hơn là “không thể đếm xuể”; với 「悔やんでも悔やみきれない」, có thể dịch là “hối hận đến mấy cũng không nguôi”.
+
+④　Một số động từ thường gặp:
+
+- 食べきれない: Không thể ăn hết.
+- 使いきれない: Không thể dùng hết.
+- 数えきれない: Không thể đếm xuể.
+- 言いきれない: Không thể nói hết/khẳng định hoàn toàn.
+- 悔やんでも悔やみきれない: Hối hận đến mấy cũng không đủ.
+- 感謝してもしきれない: Không thể bày tỏ hết lòng biết ơn.

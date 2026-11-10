@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N3_tokoro-ni-he-wo-de-v2 – Hướng dẫn làm video</title>
+<script>try { var _t = localStorage.getItem("bunpou:theme"); if (_t === "light" || _t === "dark") document.documentElement.setAttribute("data-theme", _t); } catch (e) {}</script>
+<!--
+  Template trang hướng dẫn cho từng video. KHÔNG sửa tay file HuongDan.html trong output/.
+  File được sinh bởi: python tools/build_html.py output/<ID>
+  Dữ liệu (kịch bản, phong cách, tùy chỉnh, meta) được nhúng sẵn trong thẻ <script id="bunpou-data">.
+-->
+<style>
+  :root {
+    --bg: #f6f5f1; --surface: #ffffff; --surface-2: #f1efe9; --border: #e3e0d8;
+    --text: #1f1d1a; --muted: #6b665d; --accent: #c2410c; --accent-soft: #fdeee5;
+    --on-accent: #ffffff; --ok: #15803d; --ok-soft: #e7f6ec; --jp: #1e3a8a; --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.04);
+    --radius: 14px;
+    --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-jp: "Hiragino Sans", "Yu Gothic UI", "Yu Gothic", "Meiryo", "Noto Sans JP", system-ui, sans-serif;
+    --mono: ui-monospace, "Cascadia Code", Consolas, "SF Mono", Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151412; --surface: #1d1c19; --surface-2: #26241f; --border: #34312b;
+      --text: #ece9e2; --muted: #a39e93; --accent: #fb923c; --accent-soft: #3a2416;
+      --on-accent: #1a0f08; --ok: #4ade80; --ok-soft: #173222; --jp: #a5b4fc; --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+      --bg: #151412; --surface: #1d1c19; --surface-2: #26241f; --border: #34312b;
+      --text: #ece9e2; --muted: #a39e93; --accent: #fb923c; --accent-soft: #3a2416;
+      --on-accent: #1a0f08; --ok: #4ade80; --ok-soft: #173222; --jp: #a5b4fc; --shadow: none;
+  }
+  :root { color-scheme: light; }
+  :root[data-theme="dark"] { color-scheme: dark; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); line-height: 1.6; }
+  a { color: var(--accent); }
+  button { font: inherit; cursor: pointer; }
+
+  header.top { padding: 28px 24px 18px; max-width: 1680px; margin: 0 auto; display: flex; gap: 16px; align-items: flex-start; justify-content: space-between; }
+  .head-main { min-width: 0; }
+  .theme-btn { flex: none; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 7px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; box-shadow: var(--shadow); }
+  .theme-btn:hover { border-color: var(--accent); }
+  .theme-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .theme-btn .ico { font-size: 15px; line-height: 1; }
+  @media (max-width: 600px) { #theme-txt { display: none; } .theme-btn { padding: 8px 10px; } }
+  .eyebrow { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; color: var(--muted); font-size: 13px; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--accent); color: var(--on-accent); font-weight: 700; font-size: 12px; letter-spacing: .03em; }
+  .chip { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border); font-size: 12px; }
+  h1.title { margin: 10px 0 4px; font-size: clamp(22px, 3vw, 32px); line-height: 1.25; }
+  h1.title .jp { font-family: var(--font-jp); }
+  .usages { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+  .usages li { font-size: 13px; color: var(--muted); }
+  .usages li b { font-family: var(--font-jp); color: var(--text); }
+
+  main.grid { max-width: 1680px; margin: 0 auto; padding: 0 24px 48px; display: grid; grid-template-columns: minmax(400px, 560px) 1fr; gap: 24px; align-items: start; }
+  @media (max-width: 1000px) { main.grid { grid-template-columns: 1fr; padding: 0 16px 40px; } header.top { padding: 20px 16px 14px; } }
+
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+  .steps { padding: 18px; }
+  .content { position: sticky; top: 16px; }
+  @media (max-width: 1000px) { .content { position: static; } }
+  .steps h2 { margin: 0 0 4px; font-size: 18px; }
+  .steps .sub { margin: 0 0 14px; color: var(--muted); font-size: 13px; }
+  .progress { height: 6px; background: var(--surface-2); border-radius: 99px; overflow: hidden; margin-bottom: 14px; }
+  .progress > i { display: block; height: 100%; width: 0; background: var(--ok); transition: width .25s; }
+
+  .step { border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; margin-bottom: 10px; background: var(--surface); }
+  .step.done { background: var(--ok-soft); border-color: transparent; }
+  .step-head { display: flex; align-items: center; gap: 10px; }
+  .num { flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); font-weight: 700; font-size: 13px; }
+  .step.done .num { background: var(--ok); color: #fff; }
+  .step-head h3 { margin: 0; font-size: 15px; flex: 1; }
+  .step-head label { font-size: 12px; color: var(--muted); display: flex; align-items: center; gap: 4px; cursor: pointer; user-select: none; }
+  .step-body { margin: 8px 0 0 36px; font-size: 14px; }
+  .step-body p { margin: 6px 0; }
+  .step-body code { word-break: break-all; }
+  .step-body ol, .step-body ul { margin: 6px 0; padding-left: 18px; }
+  .step-body li { margin: 3px 0; }
+  .alt { margin-top: 10px; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); font-size: 13px; }
+  .alt > b:first-child { display: block; margin-bottom: 4px; }
+  .kv { width: 100%; border-collapse: collapse; font-size: 13px; margin: 6px 0; }
+  .kv td { padding: 5px 6px; border-bottom: 1px dashed var(--border); vertical-align: top; }
+  .kv td:first-child { color: var(--muted); white-space: nowrap; }
+  .warn { color: var(--accent); font-weight: 600; }
+
+  .btns { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 6px 12px; border-radius: 9px; font-size: 13px; font-weight: 600; text-decoration: none; transition: background .15s, border-color .15s; }
+  .btn:hover { border-color: var(--accent); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+  .btn.primary:hover { filter: brightness(1.08); }
+  .btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .path { font-family: var(--mono); font-size: 12px; background: var(--surface-2); border: 1px solid var(--border); padding: 6px 8px; border-radius: 8px; word-break: break-all; display: block; margin: 6px 0; }
+  .note { font-size: 12px; color: var(--muted); margin: -2px 0 6px; }
+  .note.bad { color: var(--accent); font-weight: 600; }
+  .files { margin: 6px 0; padding: 0; list-style: none; }
+  .files li { font-family: var(--mono); font-size: 12px; padding: 3px 0; }
+
+  .content { overflow: hidden; align-self: start; }
+  .tabs { display: flex; gap: 4px; padding: 10px 10px 0; border-bottom: 1px solid var(--border); background: var(--surface-2); overflow-x: auto; }
+  .tab { border: 0; background: transparent; padding: 9px 14px; border-radius: 10px 10px 0 0; color: var(--muted); font-weight: 600; font-size: 14px; white-space: nowrap; }
+  .tab[aria-selected="true"] { background: var(--surface); color: var(--text); box-shadow: 0 -1px 0 var(--border) inset; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--border); }
+  .toolbar .hint { font-size: 13px; color: var(--muted); }
+  .pane { padding: 6px 26px 30px; max-height: calc(100vh - 130px); overflow: auto; }
+  @media (max-width: 1000px) { .pane { max-height: none; padding: 4px 16px 24px; } }
+  .raw { white-space: pre-wrap; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 16px 0; }
+
+  .md h1 { font-size: 24px; margin: 20px 0 10px; }
+  .md h2 { font-size: 19px; margin: 28px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--accent-soft); }
+  .md h3 { font-size: 15px; margin: 18px 0 0; padding: 8px 14px; background: var(--surface-2); border: 1px solid var(--border); border-bottom: 0; border-radius: 10px 10px 0 0; }
+  .md h3 + .para { border: 1px solid var(--border); border-radius: 0 0 10px 10px; padding: 10px 14px; margin-top: 0; }
+  .md .para { margin: 10px 0; }
+  .md .line { margin: 2px 0; }
+  .md .lbl-jp { font-family: var(--font-jp); font-size: 18px; color: var(--jp); margin: 6px 0 2px; }
+  .md .lbl-kana { font-family: var(--font-jp); color: var(--muted); font-size: 14px; }
+  .md .lbl-tr { font-weight: 500; }
+  .md .lbl-grammar, .md .lbl-fun, .md .lbl-scene { color: var(--text); }
+  .md .lbl-fun { font-style: italic; }
+  .md strong { font-weight: 700; }
+  .md table { border-collapse: collapse; width: 100%; font-size: 14px; margin: 10px 0; display: block; overflow-x: auto; }
+  .md th, .md td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; vertical-align: top; }
+  .md th { background: var(--surface-2); }
+  .md td, .md li { font-family: var(--font), var(--font-jp); }
+  .md code { font-family: var(--mono); font-size: .92em; background: var(--surface-2); padding: 1px 5px; border-radius: 5px; }
+  .md pre { background: var(--surface-2); padding: 12px; border-radius: 10px; overflow: auto; }
+  .md blockquote { margin: 10px 0; padding: 6px 14px; border-left: 3px solid var(--accent); color: var(--muted); }
+  .md ul, .md ol { padding-left: 22px; }
+
+  .toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%) translateY(20px); opacity: 0; background: var(--text); color: var(--bg); padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 9; }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+  footer.foot { max-width: 1680px; margin: 0 auto; padding: 0 24px 32px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="head-main">
+  <div class="eyebrow">
+    <span class="badge" id="h-level"></span>
+    <span class="chip" id="h-id"></span>
+    <span id="h-stats"></span>
+  </div>
+  <h1 class="title"><span class="jp" id="h-mau"></span> – <span id="h-nghia"></span></h1>
+  <ul class="usages" id="h-usages"></ul>
+  </div>
+  <button class="theme-btn" id="theme-btn" type="button" aria-label="Đổi giao diện sáng/tối"><span class="ico" id="theme-ico">🌙</span><span id="theme-txt">Giao diện tối</span></button>
+</header>
+
+<main class="grid">
+  <!-- ======================== CÁC BƯỚC ======================== -->
+  <section class="card steps" aria-labelledby="steps-title">
+    <h2 id="steps-title">Làm video trong 4 bước</h2>
+    <p class="sub">Tick "Xong" sau mỗi bước. Trang tự nhớ tiến độ trên trình duyệt này.</p>
+    <div class="progress" aria-hidden="true"><i id="progress-bar"></i></div>
+
+    <div class="step" data-step="1">
+      <div class="step-head"><span class="num">1</span><h3>Tạo notebook</h3><label><input type="checkbox"> Xong</label></div>
+      <div class="step-body">
+        <div class="btns">
+          <a class="btn primary" href="https://notebooklm.google.com" target="_blank" rel="noopener">Mở NotebookLM ↗</a>
+          <button class="btn" data-copy="id">Copy tên notebook</button>
+        </div>
+        <p>Bấm <b>Create notebook</b>, rồi đổi tên notebook thành <code id="s1-id"></code>.</p>
+      </div>
+    </div>
+
+    <div class="step" data-step="2">
+      <div class="step-head"><span class="num">2</span><h3>Thêm đúng 2 nguồn</h3><label><input type="checkbox"> Xong</label></div>
+      <div class="step-body">
+        <p><b>Cách nhanh – kéo thả:</b> AI đã mở sẵn thư mục chứa file khi làm xong. Kéo 2 file sau vào khung <b>Add sources</b>:</p>
+        <ul class="files" id="s2-files"></ul>
+        <p>Đã lỡ đóng thư mục? Bấm <b>Copy đường dẫn</b>, trong NotebookLM chọn <b>Add sources → Upload</b>, dán vào ô địa chỉ của hộp chọn file, Enter, rồi chọn 2 file trên.</p>
+        <code class="path" id="s2-path"></code>
+        <p class="note" id="s2-note"></p>
+        <div class="btns">
+          <button class="btn primary" data-copy="folder">Copy đường dẫn thư mục</button>
+          <a class="btn" href="./" target="_blank" rel="noopener">Xem thư mục ↗</a>
+        </div>
+        <div class="alt">
+          <b>Cách dự phòng – dán chữ (không cần file):</b>
+          Chọn <b>Add sources → Copied text</b>, dán từng phần, mỗi phần là một nguồn:
+          <div class="btns">
+            <button class="btn" data-copy="kichban">Copy Kịch bản</button>
+            <button class="btn" data-copy="phongcach">Copy Phong cách</button>
+          </div>
+        </div>
+        <p class="warn">Notebook chỉ được có đúng 2 nguồn này, cả 2 đều được tích chọn.</p>
+      </div>
+    </div>
+
+    <div class="step" data-step="3">
+      <div class="step-head"><span class="num">3</span><h3>Tạo video</h3><label><input type="checkbox"> Xong</label></div>
+      <div class="step-body">
+        <p>Khung <b>Studio</b> → <b>Video Overview</b> → biểu tượng <b>bút chì (Customize)</b>, rồi chọn:</p>
+        <table class="kv" id="s3-settings"></table>
+        <div class="btns"><button class="btn primary" data-copy="tuychinh">Copy text tùy chỉnh</button></div>
+        <p>Dán vào ô <b>Custom topic</b> (mục "What should the video focus on?") → bấm <b>Generate</b>. Có thể đóng tab, NotebookLM vẫn tiếp tục tạo.</p>
+      </div>
+    </div>
+
+    <div class="step" data-step="4">
+      <div class="step-head"><span class="num">4</span><h3>Tải video về</h3><label><input type="checkbox"> Xong</label></div>
+      <div class="step-body">
+        <p>Video xong → menu <b>⋮</b> → <b>Download</b>. Đặt tên file:</p>
+        <div class="btns"><button class="btn" data-copy="mp4">Copy tên file video</button></div>
+        <div class="alt">
+          <b>Nếu video chưa ổn</b>
+          Giọng khô hoặc bỏ bớt ví dụ → bấm tạo lại (mỗi lần tạo cho kết quả khác). Vẫn quá dài → nhờ AI:
+          "giảm ví dụ của <span id="s4-id"></span> còn 6 câu mỗi cách dùng".
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== NỘI DUNG ======================== -->
+  <section class="card content" aria-label="Nội dung">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-tab="kichban" aria-selected="true">Kịch bản</button>
+      <button class="tab" role="tab" data-tab="phongcach" aria-selected="false">Phong cách</button>
+      <button class="tab" role="tab" data-tab="tuychinh" aria-selected="false">Text tùy chỉnh</button>
+    </div>
+    <div class="toolbar">
+      <span class="hint" id="tab-hint"></span>
+      <div class="btns" style="margin:0">
+        <button class="btn" id="btn-view">Xem markdown gốc</button>
+        <button class="btn primary" id="btn-copy-tab">Copy</button>
+      </div>
+    </div>
+    <div class="pane" id="pane" role="tabpanel"></div>
+  </section>
+</main>
+
+<footer class="foot" id="foot"></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script id="bunpou-data" type="application/json">{
+ "id": "N3_tokoro-ni-he-wo-de-v2",
+ "mau": "〜ところに／へ／を／で",
+ "nghia": "Đúng lúc…, trong lúc… thì…, vừa… thì…",
+ "cap_do": "N3",
+ "cach_dung": [
+  "ところに／ところへ – đang dở dang thì có người/việc ập tới",
+  "ところを – đang làm thì bị bắt gặp, bị tóm",
+  "ところで – vừa chạm mốc thì chuyện tiếp theo xảy ra"
+ ],
+ "so_vi_du": 19,
+ "so_vi_du_moi": 0,
+ "version": "1.6.0",
+ "built_at": "2026-10-29 07:03",
+ "series": {
+  "_ghi_chu": "Thiết lập cố định cho cả series video. Hiện trong bước 3 của trang HuongDan.html. Sửa xong thì các bài làm sau sẽ dùng giá trị mới.",
+  "ngon_ngu": "Tiếng Việt",
+  "dinh_dang": "Explainer",
+  "phong_cach_hinh_anh": ""
+ },
+ "files": {
+  "kichban": "KichBan_N3_tokoro-ni-he-wo-de-v2.md",
+  "phongcach": "00_HuongDan_PhongCach.md",
+  "tuychinh": "TuyChinh_N3_tokoro-ni-he-wo-de-v2.txt",
+  "ghichu": "GhiChu_BienTap.md"
+ },
+ "content": {
+  "kichban": "# 〜ところに／へ／を／で – Đúng lúc…, trong lúc… thì…, vừa… thì…\n\n## 1. Mở màn: tình huống\nChiều thứ Sáu, Tanaka mở tủ lạnh và thấy một hộp bánh flan dán tờ giấy to tướng: \"Của em. Anh cấm đụng!\"\nTanaka nghĩ: một thìa thôi, chắc không sao. Thìa thứ nhất, thìa thứ hai, rồi thìa thứ năm… thì \"cạch\", cửa nhà mở.\nEm gái đi học về, đứng sững ở cửa bếp, mắt dán vào cái thìa trên tay anh. Ôi thôi xong!\nCảnh này có hai chuyện: \"đang ăn thì em gái về tới\", và \"đang ăn thì bị em gái nhìn thấy\".\nTiếng Nhật kể cả hai chuyện bằng cùng một chữ ところ, chỉ đổi trợ từ phía sau. Vậy tiếng Nhật nói chuyện này thế nào?\n\n## 2. Giới thiệu mẫu ngữ pháp\nMẫu hôm nay là: 〜ところに／へ／を／で (ところに、ところへ、ところを、ところで).\nNghĩa chung: \"đúng lúc… thì…\", \"trong lúc đang… thì…\", \"vừa… xong thì…\".\n\n## 3. Ý nghĩa\nところ vốn nghĩa là \"chỗ\". Ở mẫu này, nó là một \"chỗ\" trên dòng thời gian, tức là một thời điểm, một giai đoạn.\nCác bạn hãy tưởng tượng ところ là một sân khấu nhỏ, trên đó việc A đang diễn. Rồi:\n- Có người BƯỚC LÊN sân khấu, chen ngang màn diễn → ところに hoặc ところへ.\n- Có người ở dưới CHỘP ẢNH đúng màn diễn đó, tức là bắt gặp tại trận → ところを.\n- Màn diễn vừa HẠ MÀN, màn tiếp theo bắt đầu ngay → ところで.\nBản chất là thế này: trợ từ sau ところ thường \"ăn theo\" động từ ở vế sau. 来る là tới đâu đó, nên hợp với に／へ. 見る là thấy cái gì, nên hợp với を. Còn で đánh dấu \"ngay tại\" thời điểm đó.\n**Chìa khóa:** nhìn động từ ở vế sau. Động từ đó chọn trợ từ cho ところ.\n\n## 4. Cấu trúc và cách chia\n| Kết hợp | Nghĩa | Ví dụ ngắn | Cách đọc |\n| --- | --- | --- | --- |\n| V る + ところ | sắp, định làm | 出かけるところに – đúng lúc sắp ra ngoài | でかけるところに |\n| V ている + ところ | đang làm | 昼寝をしているところに – đúng lúc đang ngủ trưa | ひるねをしているところに |\n| V た + ところ | vừa làm xong | 駅に着いたところで – vừa tới ga | えきについたところで |\n| Aい + ところ | tính chất của thời điểm | いいところへ – đúng lúc hay | いいところへ |\n| Aな + な + ところ | tính chất của thời điểm | 大事なところで – đúng đoạn quan trọng | だいじなところで |\n| N + の + ところ | trong lúc N | お休みのところを – trong lúc đang nghỉ | おやすみのところを |\n\nNhớ nhé: tính từ đuôi な phải giữ な, danh từ phải có の rồi mới tới ところ.\n\n## 5.1 Cách dùng 1: ところに／ところへ – đang dở dang thì có người/việc ập tới\n**Dấu hiệu nhận biết:** vế sau thường là động từ chỉ sự xuất hiện, đi tới: 来る、帰ってくる、入ってくる、電話がかかってくる、通りかかる. Việc ở vế sau thường chen ngang, làm gián đoạn việc ở vế trước.\n\n### Ví dụ 1\n**Dẫn cảnh:** Ngày chuyển nhà, Lan đang vật lộn với thùng sách nặng như tảng đá thì Tanaka đi ngang, tay cầm cốc trà sữa.\n**Câu Nhật:** いいところへ来た。この荷物運ぶの、手伝って。\n**Cách đọc:** いいところへきた。このにもつはこぶの、てつだって。\n**Dịch:** Câu này có nghĩa là: \"Cậu đến đúng lúc lắm. Phụ mình khiêng đống đồ này đi.\"\n**Soi ngữ pháp:** いいところ là \"thời điểm tốt\". Vế sau là 来た, \"tới\", động từ chỉ sự xuất hiện, nên dùng へ.\n**Chốt vui:** Với Lan là \"đúng lúc\", với Tanaka là \"đúng lúc xui\". Trà sữa chưa kịp uống một ngụm.\n\n### Ví dụ 2\n**Dẫn cảnh:** Chủ nhật, mình vừa ôm gối chìm vào giấc ngủ trưa thì chuông cửa reo \"kinh koong\" liên hồi.\n**Câu Nhật:** 私が昼寝をしているところに、お客さんが来た。\n**Cách đọc:** わたしがひるねをしているところに、おきゃくさんがきた。\n**Dịch:** Hiểu nôm na là: \"Đúng lúc mình đang ngủ trưa thì có khách tới nhà.\"\n**Soi ngữ pháp:** 昼寝をしているところ là \"đang ngủ trưa\", việc còn dở dang. Khách 来た, ập tới phá giấc ngủ, nên dùng に.\n**Chốt vui:** Ra mở cửa với một bên má in hằn vết gối. Ấn tượng đầu tiên: mười điểm.\n\n### Ví dụ 3\n**Dẫn cảnh:** Lan đã trễ hẹn mười phút, một chân xỏ giày, một tay chạm nắm cửa… thì điện thoại rung bần bật.\n**Câu Nhật:** 出かけようとしたところに、電話がかかってきた。\n**Cách đọc:** でかけようとしたところに、でんわがかかってきた。\n**Dịch:** Có thể dịch là: \"Đúng lúc mình định ra ngoài thì có điện thoại gọi tới.\"\n**Soi ngữ pháp:** 〜ようとしたところ là \"vừa định làm\". 電話がかかってきた là \"điện thoại gọi tới\", cũng là một thứ ập tới, nên dùng に.\n**Chốt vui:** Người gọi chính là bạn đang chờ Lan: \"Tới đâu rồi?\" – \"Tới… cửa nhà mình.\"\n\n### Ví dụ 4\n**Dẫn cảnh:** Mình vừa khoác áo, cầm ô định đi thì anh ấy bấm chuông, tay ôm bó hoa thật to.\n**Câu Nhật:** 私が出かけるところに、彼が来た。\n**Cách đọc:** わたしがでかけるところに、かれがきた。\n**Dịch:** Nói kiểu Việt mình là: \"Mình vừa định đi ra ngoài thì anh ấy tới.\"\n**Soi ngữ pháp:** 出かける ở thể từ điển, tức là \"sắp đi, chưa đi\". Nghĩa gần giống ví dụ 3. Vế sau là 来た nên dùng に.\n**Chốt vui:** Hoa thì đẹp, chỉ có giờ giấc là hơi… có vấn đề.\n\n### Ví dụ 5\n**Dẫn cảnh:** Nồi lẩu vừa vét sạch, bát đũa vừa rửa xong, thì cậu bạn chuyên \"ghé chơi đúng bữa\" gõ cửa.\n**Câu Nhật:** 夕食が終わったところに、友だちが来た。\n**Cách đọc:** ゆうしょくがおわったところに、ともだちがきた。\n**Dịch:** Câu này có nghĩa là: \"Đúng lúc mình vừa ăn tối xong thì bạn mình tới.\"\n**Soi ngữ pháp:** 終わったところ là V たところ, \"vừa xong\". Người tới, động từ vẫn là 来た, nên vẫn dùng に.\n**Chốt vui:** Cậu ấy nhìn nồi lẩu trống trơn, nồi lẩu nhìn lại cậu ấy. Im lặng đến nao lòng.\n\n### Ví dụ 6\n**Dẫn cảnh:** Giờ nghỉ trưa, hai đồng nghiệp đang thì thầm bàn cách xin nghỉ phép ba ngày… thì sếp Yamada đứng ngay sau lưng.\n**Câu Nhật:** 彼と相談しているところに、山田さんが来た。\n**Cách đọc:** かれとそうだんしているところに、やまださんがきた。\n**Dịch:** Hiểu nôm na là: \"Đúng lúc mình đang bàn chuyện với anh ấy thì anh Yamada tới.\"\n**Soi ngữ pháp:** 相談しているところ là \"đang bàn bạc\", chưa xong. 山田さんが来た chen ngang, nên dùng に.\n**Chốt vui:** Kế hoạch nghỉ phép lập tức đổi tên thành \"kế hoạch làm thêm cuối tuần\".\n\n### Ví dụ 7\n**Dẫn cảnh:** Bà cụ nhà bên vừa pha xong ấm trà, bày đĩa bánh ra hiên thì Lan đi học về ngang qua.\n**Câu Nhật:** いいところに来ました。一緒にお茶でも飲みませんか。\n**Cách đọc:** いいところにきました。いっしょにおちゃでものみませんか。\n**Dịch:** Có thể dịch là: \"Cháu đến đúng lúc quá. Vào uống chén trà với bà nhé?\"\n**Soi ngữ pháp:** いいところに来ました là câu cửa miệng khi ai đó tới đúng lúc. Ở đây dùng に, nghĩa y như へ ở ví dụ 1. お茶でも là \"trà hay gì đó\", mời cho nhẹ nhàng.\n**Chốt vui:** Lan: \"Dạ, cháu chỉ đi ngang thôi ạ\"… rồi ngồi luôn hai tiếng.\n\n### Ví dụ 8\n**Dẫn cảnh:** Tanaka đang bị mẹ mắng vì bài kiểm tra điểm kém thì anh họ hớn hở bước vào, tay cầm bộ trò chơi mới.\n**Câu Nhật:** 悪いところに来たなあ。\n**Cách đọc:** わるいところにきたなあ。\n**Dịch:** Nói kiểu Việt mình là: \"Anh tới đúng lúc chẳng ra gì rồi!\"\n**Soi ngữ pháp:** 悪いところ là \"thời điểm tệ\", ngược với いいところ ở ví dụ 1 và 7. Vế sau vẫn là 来た, nên dùng に. なあ là tiếng cảm thán, kiểu \"ôi chao\".\n**Chốt vui:** Bộ trò chơi mới chưa kịp bóc tem đã bị mẹ \"tạm giữ\" luôn.\n\n## 5.2 Cách dùng 2: ところを – đang làm thì bị bắt gặp, bị tóm\n**Dấu hiệu nhận biết:** vế sau là động từ tác động thẳng vào cảnh đang diễn ra: 見る、見つける、見つかる、捕まる、助ける、呼び止める. Rất hay đi với thể bị động, tức là kiểu nói \"bị…\": \"bị nhìn thấy\", \"bị bắt\".\n\n### Ví dụ 1\n**Dẫn cảnh:** Tên trộm xe đạp đạp thục mạng, ngoái lại cười đắc thắng… rồi lao thẳng vào chốt cảnh sát.\n**Câu Nhật:** 逃げているところを警察に捕まりました。\n**Cách đọc:** にげているところをけいさつにつかまりました。\n**Dịch:** Câu này có nghĩa là: \"Đang bỏ trốn thì bị cảnh sát tóm.\"\n**Soi ngữ pháp:** 逃げているところ là \"cảnh đang chạy trốn\". 捕まる là \"bị bắt\", tóm gọn đúng cảnh đó, nên dùng を.\n**Chốt vui:** Bài học: đạp xe thì nhìn đằng trước, đừng ngoái lại khoe.\n\n### Ví dụ 2\n**Dẫn cảnh:** Giờ kiểm tra từ vựng, Tanaka khẽ lật bàn tay chi chít chữ viết bằng bút bi… ngẩng lên thì thầy Suzuki đứng ngay trước bàn.\n**Câu Nhật:** カンニングしているところを先生に見られた。\n**Cách đọc:** カンニングしているところをせんせいにみられた。\n**Dịch:** Hiểu nôm na là: \"Đang quay cóp thì bị thầy nhìn thấy.\"\n**Soi ngữ pháp:** 見られた là thể bị động của 見る, nghĩa là \"bị nhìn thấy\". Cái bị nhìn thấy chính là cảnh đang quay cóp, nên dùng を.\n**Chốt vui:** Chữ trên tay thì bé xíu, nhưng radar của thầy Suzuki không bỏ sót chữ nào.\n\n### Ví dụ 3\n**Dẫn cảnh:** Yui, học sinh cấp ba, đang đi về cùng bạn trai, cười nói rôm rả… rẽ vào ngõ thì gặp mẹ xách giỏ rau đi chợ về.\n**Câu Nhật:** 母に彼氏と一緒に帰っているところを見られた。\n**Cách đọc:** ははにかれしといっしょにかえっているところをみられた。\n**Dịch:** Có thể dịch là: \"Mình bị mẹ nhìn thấy lúc đang đi về cùng bạn trai.\"\n**Soi ngữ pháp:** 母に…見られた là \"bị mẹ nhìn thấy\". Người nhìn đi với に, còn cảnh bị nhìn đi với ところを.\n**Chốt vui:** Tối đó, mâm cơm có thêm một món đặc biệt: \"khai báo lý lịch\".\n\n### Ví dụ 4\n**Dẫn cảnh:** Tiết lịch sử sau bữa trưa no căng, Tanaka dựng sách lên làm \"tường thành\" rồi gục xuống bàn…\n**Câu Nhật:** 授業中に居眠りしているところを先生に見つかってしまった。\n**Cách đọc:** じゅぎょうちゅうにいねむりしているところをせんせいにみつかってしまった。\n**Dịch:** Nói kiểu Việt mình là: \"Đang ngủ gật trong giờ học thì bị thầy phát hiện mất rồi.\"\n**Soi ngữ pháp:** 居眠り là \"ngủ gật\". 見つかる là \"bị phát hiện\", nên dùng を. 〜てしまった thêm cảm giác \"toang rồi\".\n**Chốt vui:** Tường thành bằng sách chắn được mắt thầy, nhưng không chắn được tiếng ngáy.\n\n### Ví dụ 5\n**Dẫn cảnh:** Ở nhà một mình, Minh bật nhạc giao hưởng, cầm chiếc đũa làm gậy chỉ huy, vung tay đầy cảm xúc… thì cửa phòng hé mở.\n**Câu Nhật:** 指揮者の物まねをしているところを妹に見られてしまった。\n**Cách đọc:** しきしゃのものまねをしているところをいもうとにみられてしまった。\n**Dịch:** Câu này có nghĩa là: \"Đang nhại điệu bộ người chỉ huy dàn nhạc thì bị em gái nhìn thấy mất.\"\n**Soi ngữ pháp:** 指揮者 là \"người chỉ huy dàn nhạc\", 物まね là \"bắt chước, nhại\". 妹に見られてしまった là \"bị em gái thấy mất\", nên dùng を.\n**Chốt vui:** Em gái lặng lẽ đóng cửa. Năm phút sau, cả nhóm chat gia đình đều biết.\n\n### Ví dụ 6\n**Dẫn cảnh:** Anh sinh viên về quê nghỉ hè, lén ra ban công hút thuốc, đinh ninh mẹ đã ngủ… quay lại thì mẹ đứng sau tấm rèm.\n**Câu Nhật:** さっき母親にベランダでタバコを吸っているところを見られました。\n**Cách đọc:** さっきははおやにベランダでタバコをすっているところをみられました。\n**Dịch:** Hiểu nôm na là: \"Lúc nãy mình bị mẹ bắt gặp đang hút thuốc ngoài ban công.\"\n**Soi ngữ pháp:** Công thức quen thuộc: [người]に + [cảnh]ところを + 見られる. 母親 cũng là \"mẹ\", nhưng là cách gọi khách quan hơn 母.\n**Chốt vui:** Khói thuốc bay mất trong ba giây, còn bài giảng của mẹ thì kéo dài ba tiếng.\n\n### Ví dụ 7\n**Dẫn cảnh:** Trên một trang hỏi đáp của Nhật, có bạn đặt một câu hỏi rất… thành thật.\n**Câu Nhật:** 未成年がたばこを持っているところを警察に見られたらどうなるのですか？\n**Cách đọc:** みせいねんがたばこをもっているところをけいさつにみられたらどうなるのですか？\n**Dịch:** Có thể dịch là: \"Trẻ vị thành niên mà bị cảnh sát thấy đang cầm thuốc lá thì sẽ bị xử lý thế nào ạ?\"\n**Soi ngữ pháp:** 未成年 là \"người chưa thành niên\". 見られたら là \"nếu bị nhìn thấy\". Vẫn là cảnh bị bắt gặp, nên dùng を.\n**Chốt vui:** Câu trả lời được bình chọn nhiều nhất: \"Thì đừng cầm.\"\n\n## 5.3 Cách dùng 3: ところで – vừa chạm mốc thì chuyện tiếp theo xảy ra\n**Dấu hiệu nhận biết:** thường là V たところで. Vế trước vừa chạm một cái mốc (vừa tới, vừa lên, vừa xong), vế sau là chuyện xảy ra ngay tại mốc đó: 気がつく、閉まる、終わる、始める…\n\n### Ví dụ 1\n**Dẫn cảnh:** Lan chạy hộc tốc ra ga cho kịp chuyến tàu bảy giờ, thò tay vào túi lấy ví… chỉ thấy một gói kẹo.\n**Câu Nhật:** 駅に着いたところで財布を忘れてきたことに気がついた。\n**Cách đọc:** えきについたところでさいふをわすれてきたことにきがついた。\n**Dịch:** Nói kiểu Việt mình là: \"Vừa tới ga thì mình mới nhận ra đã để quên ví ở nhà.\"\n**Soi ngữ pháp:** 着いたところで là \"vừa tới nơi\", một cái mốc. 気がついた là \"nhận ra\", xảy ra ngay tại mốc đó, nên dùng で.\n**Chốt vui:** Tiếc là máy bán vé không nhận kẹo.\n\n### Ví dụ 2\n**Dẫn cảnh:** Tanaka bước một chân lên toa tàu, chân kia vừa kịp theo vào, sau lưng vang lên tiếng \"xịch\".\n**Câu Nhật:** 乗ったところで、電車のドアが閉まった。\n**Cách đọc:** のったところで、でんしゃのドアがしまった。\n**Dịch:** Câu này có nghĩa là: \"Mình vừa lên tàu thì cửa tàu đóng lại.\"\n**Soi ngữ pháp:** 乗ったところで là \"vừa lên xong\". 閉まった là chuyện xảy ra ngay tại mốc đó, nên dùng で.\n**Chốt vui:** Chậm nửa giây thôi là thành người đứng trên sân ga vẫy tay tiễn đoàn tàu.\n\n### Ví dụ 3\n**Dẫn cảnh:** Phiên bản phim hành động: Lan ôm cặp lao xuống cầu thang, lấy đà, bật nhảy…\n**Câu Nhật:** 必死で走り、飛び乗ったところで電車のドアが閉まった。\n**Cách đọc:** ひっしではしり、とびのったところででんしゃのドアがしまった。\n**Dịch:** Hiểu nôm na là: \"Mình chạy bán sống bán chết, vừa nhảy được lên tàu thì cửa tàu cũng đóng lại.\"\n**Soi ngữ pháp:** 飛び乗る là \"nhảy lên tàu, lên xe\". 飛び乗ったところで là mốc \"vừa nhảy lên\". Cửa 閉まった ngay tại mốc đó.\n**Chốt vui:** Cảnh này đẹp như phim, nhưng ngoài đời thì rất nguy hiểm. Đừng thử nhé!\n\n### Ví dụ 4\n**Dẫn cảnh:** Ba đêm thức trắng với chín cốc cà phê, Tanaka gõ dấu chấm cuối cùng của bài báo cáo…\n**Câu Nhật:** レポートの最後の一行を書いたところで、突然気絶した。\n**Cách đọc:** レポートのさいごのいちぎょうをかいたところで、とつぜんきぜつした。\n**Dịch:** Có thể dịch là: \"Vừa viết xong dòng cuối cùng của bài báo cáo thì mình đột nhiên ngất đi.\"\n**Soi ngữ pháp:** 最後の一行 đọc là さいごのいちぎょう, \"dòng cuối cùng\". 書いたところで là mốc \"vừa viết xong\". 気絶した xảy ra ngay tại mốc đó.\n**Chốt vui:** Tỉnh dậy, câu đầu tiên Tanaka hỏi là: \"Đã bấm lưu chưa?\"\n\n## 6. Bẫy dễ nhầm\n- **〜ところです ở cuối câu:** mẫu này chỉ báo mình đang ở giai đoạn nào của việc: V る là \"sắp\", V ている là \"đang\", V た là \"vừa xong\". 今、晩ご飯を食べているところです。（いま、ばんごはんをたべているところです。）nghĩa là \"Mình đang ăn tối đây.\" Cách phân biệt: ところです khép lại câu, không có chuyện thứ hai. Còn ところに／を／で thì nối sang vế sau, nơi có chuyện khác xảy ra.\n- **〜たところで + vế sau tiêu cực:** trông y hệt cách dùng 3, nhưng nghĩa là \"dù có… thì cũng vô ích\". 今から走ったところで、もう間に合わない。（いまからはしったところで、もうまにあわない。）nghĩa là \"Giờ có chạy thì cũng không kịp nữa rồi.\" Cách phân biệt: vế sau là \"vô ích, không kịp, không được\" thì là mẫu này. Vế sau là một chuyện xảy ra thật thì là ところで \"vừa… thì…\".\n\n## 7. Tổng kết, mẹo nhớ và đố nhanh\n**Tóm lại:**\n- Có người, có việc ẬP TỚI (来る、帰ってくる、電話がかかってくる) → ところに／ところへ\n- Bị BẮT GẶP, BỊ TÓM (見られる、見つかる、捕まる) → ところを\n- VỪA CHẠM MỐC thì chuyện khác xảy ra ngay → ところで\n\n**Mẹo nhớ:** \"Ai tới thì に／へ, bị thấy thì を, chạm mốc thì で.\"\n\n**Đố nhanh:**\n1. お風呂に入っているところ（　）、宅配便が来た。（おふろにはいっているところ（　）、たくはいびんがきた。）→ Đáp án: に (hoặc へ), vì vế sau là 来た, \"người giao hàng tới\".\n2. 冷蔵庫のケーキを食べているところ（　）、姉に見られた。（れいぞうこのケーキをたべているところ（　）、あねにみられた。）→ Đáp án: を, vì \"bị chị gái nhìn thấy\".\n3. 仕事が一段落したところ（　）、休憩しましょう。（しごとがいちだんらくしたところ（　）、きゅうけいしましょう。）→ Đáp án: で, vì \"công việc vừa xong một chặng\" là cái mốc để nghỉ.\n\n**Kết:** Quay lại chiều thứ Sáu của Tanaka và hộp bánh flan. Giờ các bạn kể được cả hai chuyện rồi:\n妹のプリンを食べているところに、妹が帰ってきた。（いもうとのプリンをたべているところに、いもうとがかえってきた。）– \"Đang ăn bánh flan của em gái thì em gái về tới.\"\nこっそりプリンを食べているところを、妹に見つかった。（こっそりプリンをたべているところを、いもうとにみつかった。）– \"Đang lén ăn bánh flan thì bị em gái bắt quả tang.\"\nCùng một cảnh, đổi trợ từ là đổi cả câu chuyện. Còn Tanaka thì đang trên đường đi mua hai hộp bánh flan mới. Hẹn gặp lại các bạn ở bài sau!\n",
+  "phongcach": "# HƯỚNG DẪN PHONG CÁCH GIẢNG – KÊNH NGỮ PHÁP TIẾNG NHẬT\n\nTài liệu này quy định CÁCH GIẢNG, không phải nội dung bài. Nội dung bài nằm trong Kịch bản đi kèm.\n\n## Người xem\n\nNgười Việt học tiếng Nhật, bận rộn, muốn nghe một lần là hiểu và nhớ. Cấp độ cụ thể ghi trong phần tùy chỉnh của từng video.\n\n## Giọng giảng\n\n- Thân mật như anh/chị khóa trên vui tính kể chuyện cho đàn em. Xưng \"mình\", gọi người xem là \"các bạn\".\n- Hài hước, dí dỏm, có nhấn nhá lên xuống, có cảm thán tự nhiên (\"ôi thôi xong\", \"chuẩn luôn\", \"nghe quen không?\").\n- Hài để giúp nhớ, không lấn át kiến thức. Không chế giễu người học.\n- Câu ngắn, từ đơn giản. Thuật ngữ ngữ pháp phải được nói lại bằng lời thường ngay sau đó.\n\n## Trình tự bắt buộc\n\n1. Mở màn bằng tình huống → 2. Giới thiệu mẫu → 3. Ý nghĩa → 4. Cấu trúc, cách chia → 5. Từng cách dùng, mỗi cách dùng nhiều ví dụ → 6. Bẫy dễ nhầm → 7. Tổng kết, mẹo nhớ, đố nhanh, kết bằng cách quay lại tình huống mở màn.\n\nKhông đảo thứ tự, không bỏ phần, không bỏ ví dụ nào có trong Kịch bản.\n\n## Cách trình bày mỗi ví dụ\n\nKịch bản ghi mỗi ví dụ bằng các nhãn in đậm: Dẫn cảnh, Câu Nhật, Cách đọc, Dịch, Soi ngữ pháp, Chốt vui.\nCác nhãn này chỉ để đánh dấu cấu trúc – KHÔNG đọc tên nhãn thành tiếng.\n\n1. Kể phần Dẫn cảnh như kể chuyện.\n2. Đọc chậm, rõ câu tiếng Nhật nguyên văn, phát âm theo đúng dòng Cách đọc (kana). Ngắt nghỉ tự nhiên như người Nhật.\n3. Đọc bản dịch, mở đầu bằng câu dẫn có sẵn (\"câu này có nghĩa là…\", \"hiểu nôm na là…\", \"có thể dịch là…\", \"nói kiểu Việt mình là…\").\n4. Chỉ rõ chỗ mẫu ngữ pháp xuất hiện và vì sao dùng nó.\n5. Chốt bằng câu vui có sẵn.\n\n## Quy tắc về tiếng Nhật\n\n- Đọc đúng từng chữ câu tiếng Nhật trong Kịch bản. Không tự sửa, không tự thêm câu tiếng Nhật mới.\n- Tên mẫu ngữ pháp luôn nói bằng tiếng Nhật.\n\n## Hình ảnh trên video\n\n- Mỗi ví dụ một khung hình: câu tiếng Nhật lớn ở giữa, phần mẫu ngữ pháp được tô màu nổi bật, bản dịch tiếng Việt nhỏ bên dưới.\n- Hình minh họa bám sát đúng tình huống của từng ví dụ trong Kịch bản, đủ chi tiết để người xem hình dung ngay cảnh đó.\n- Khung cấu trúc và khung tổng kết dùng bảng hoặc sơ đồ mũi tên, ít chữ.\n\n## Điều cấm\n\n- Không mở đầu kiểu \"Hôm nay chúng ta sẽ tìm hiểu về tài liệu…\". Vào thẳng tình huống.\n- Không nhắc đến \"nguồn\", \"tài liệu\", \"kịch bản\", \"hướng dẫn phong cách\".\n- Không thêm kiến thức ngữ pháp ngoài Kịch bản.\n",
+  "tuychinh": "Bài giảng về mẫu ngữ pháp 〜ところに／へ／を／で (đúng lúc…, trong lúc… thì…, vừa… thì…), dành cho người học trình độ N3. Các cách dùng: ところに／ところへ (đang dở dang thì có người/việc ập tới), ところを (đang làm thì bị bắt gặp, bị tóm), ところで (vừa chạm mốc thì chuyện tiếp theo xảy ra).\n\nTrình bày ĐÚNG theo file Kịch bản, đi lần lượt từ mục 1 đến mục 7, không bỏ mục nào và không bỏ ví dụ nào. Giọng giảng và cách đọc ví dụ theo đúng file Hướng dẫn phong cách: thân mật, hài hước, dí dỏm, xưng \"mình\", gọi người xem là \"các bạn\".\n\nVới mỗi ví dụ: dẫn cảnh → đọc chậm, rõ câu tiếng Nhật nguyên văn (đọc theo dòng Cách đọc) → dịch (\"câu này có nghĩa là…\") → chỉ ra chỗ dùng mẫu ngữ pháp → chốt vui. Trên màn hình: câu tiếng Nhật lớn ở giữa, tô màu phần ngữ pháp, bản dịch nhỏ bên dưới.\n\nVào thẳng tình huống mở màn. Không nhắc đến \"tài liệu\", \"nguồn\" hay \"kịch bản\". Không đọc các nhãn in đậm.\n"
+ }
+}</script>
+<script>
+(function () {
+  "use strict";
+  var D = JSON.parse(document.getElementById("bunpou-data").textContent);
+  if (!D) { document.body.innerHTML = "<p style='padding:24px'>Chưa có dữ liệu. Chạy: python tools/build_html.py output/&lt;ID&gt;</p>"; return; }
+  var $ = function (id) { return document.getElementById(id); };
+
+  // ---------- đường dẫn thư mục (tính lúc mở trang, nên vẫn đúng khi chuyển máy)
+  // Không lưu đường dẫn cố định nào trong trang: mọi đường dẫn được tính từ vị trí hiện tại của chính file này,
+  // nên copy cả dự án sang máy khác / ổ đĩa khác / macOS vẫn đúng.
+  var IS_FILE = location.protocol === "file:";
+  var REL = (function () {               // đường dẫn tương đối trong dự án (luôn đúng ở mọi máy)
+    var m = decodeURIComponent(location.pathname).match(/\/((?:output|core\/examples)\/[^\/]+)\/[^\/]*$/);
+    return m ? m[1] : "output/" + D.id;
+  })();
+  function folderPath() {
+    if (!IS_FILE) return REL;
+    var p = decodeURIComponent(location.pathname);
+    p = p.substring(0, p.lastIndexOf("/"));
+    if (/^\/[A-Za-z]:/.test(p)) p = p.slice(1).replace(/\//g, "\\");          // Windows: đổi dạng /X:/… thành X:\…
+    if (location.host) p = "\\\\" + location.host + p.replace(/\//g, "\\");  // ổ mạng (UNC)
+    return p;
+  }
+  function folderName() {
+    var p = decodeURIComponent(location.pathname).replace(/\/[^\/]*$/, "");
+    return p.substring(p.lastIndexOf("/") + 1);
+  }
+
+  // ---------- copy
+  var COPY = {
+    id: function () { return D.id; },
+    folder: folderPath,
+    kichban: function () { return D.content.kichban; },
+    phongcach: function () { return D.content.phongcach; },
+    tuychinh: function () { return D.content.tuychinh; },
+    mp4: function () { return D.id + ".mp4"; }
+  };
+  var LABEL = { id: "tên notebook", folder: "đường dẫn thư mục", kichban: "Kịch bản", phongcach: "Phong cách", tuychinh: "text tùy chỉnh", mp4: "tên file video" };
+  var toastTimer;
+  function toast(msg) {
+    var t = $("toast"); t.textContent = msg; t.classList.add("show");
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.classList.remove("show"); }, 1800);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta); return ok;
+  }
+  function copy(key) {
+    var text = COPY[key](), label = LABEL[key];
+    var done = function (ok) { toast(ok ? "✓ Đã copy " + label : "Không copy được – hãy bôi đen và Ctrl+C"); };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(fallbackCopy(text)); });
+    } else { done(fallbackCopy(text)); }
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest("[data-copy]");
+    if (b) copy(b.getAttribute("data-copy"));
+  });
+
+  // ---------- markdown → HTML (đủ cho Kịch bản / Phong cách)
+  function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function inline(s) {
+    s = esc(s);
+    s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+    s = s.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    s = s.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    return s;
+  }
+  var LBL = { "Câu Nhật": "jp", "Cách đọc": "kana", "Dịch": "tr", "Dẫn cảnh": "scene", "Soi ngữ pháp": "grammar", "Chốt vui": "fun" };
+  function lineHtml(x) {
+    var m = x.match(/^\*\*(.+?):\*\*/), cls = "line";
+    if (m && LBL[m[1]]) cls += " lbl lbl-" + LBL[m[1]];
+    return '<div class="' + cls + '">' + inline(x) + "</div>";
+  }
+  function cells(r) { return r.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map(function (c) { return c.trim(); }); }
+  function table(rows) {
+    var head = cells(rows[0]);
+    var body = rows.slice(1).filter(function (r) { return !/^\|\s*:?-{2,}/.test(r); });
+    return "<table><thead><tr>" + head.map(function (c) { return "<th>" + inline(c) + "</th>"; }).join("") +
+      "</tr></thead><tbody>" + body.map(function (r) {
+        return "<tr>" + cells(r).map(function (c) { return "<td>" + inline(c) + "</td>"; }).join("") + "</tr>";
+      }).join("") + "</tbody></table>";
+  }
+  var BLOCK_START = /^(#{1,4}\s|\||>|```|\s*[-*]\s+|\s*\d+\.\s+)/;
+  function md(src) {
+    var lines = src.replace(/\r\n?/g, "\n").split("\n"), out = [], i = 0, m, buf;
+    while (i < lines.length) {
+      var l = lines[i];
+      if (/^\s*$/.test(l)) { i++; continue; }
+      if (/^```/.test(l)) {
+        buf = []; i++;
+        while (i < lines.length && !/^```/.test(lines[i])) { buf.push(lines[i]); i++; }
+        i++; out.push("<pre><code>" + esc(buf.join("\n")) + "</code></pre>"); continue;
+      }
+      if ((m = l.match(/^(#{1,4})\s+(.*)$/))) { out.push("<h" + m[1].length + ">" + inline(m[2]) + "</h" + m[1].length + ">"); i++; continue; }
+      if (/^\|/.test(l)) { buf = []; while (i < lines.length && /^\|/.test(lines[i])) { buf.push(lines[i]); i++; } out.push(table(buf)); continue; }
+      if (/^>/.test(l)) { buf = []; while (i < lines.length && /^>/.test(lines[i])) { buf.push(lines[i].replace(/^>\s?/, "")); i++; } out.push("<blockquote>" + md(buf.join("\n")) + "</blockquote>"); continue; }
+      if (/^\s*[-*]\s+/.test(l) || /^\s*\d+\.\s+/.test(l)) {
+        var ordered = /^\s*\d+\.\s+/.test(l), re = ordered ? /^\s*\d+\.\s+/ : /^\s*[-*]\s+/;
+        buf = []; while (i < lines.length && re.test(lines[i])) { buf.push(lines[i].replace(re, "")); i++; }
+        var tag = ordered ? "ol" : "ul";
+        out.push("<" + tag + ">" + buf.map(function (x) { return "<li>" + inline(x) + "</li>"; }).join("") + "</" + tag + ">"); continue;
+      }
+      buf = [];
+      while (i < lines.length && !/^\s*$/.test(lines[i]) && (buf.length === 0 || !BLOCK_START.test(lines[i]))) { buf.push(lines[i]); i++; }
+      out.push('<div class="para">' + buf.map(lineHtml).join("") + "</div>");
+    }
+    return out.join("\n");
+  }
+
+  // ---------- header + các bước
+  var docTitle = D.mau + " – " + D.nghia;
+  $("h-level").textContent = D.cap_do;
+  $("h-id").textContent = D.id;
+  $("h-mau").textContent = D.mau;
+  $("h-nghia").textContent = D.nghia;
+  $("h-stats").textContent = D.cach_dung.length + " cách dùng · " + D.so_vi_du + " ví dụ" +
+    (D.so_vi_du_moi ? " (" + D.so_vi_du_moi + " mới)" : "") + " · quy tắc v" + D.version;
+  $("h-usages").innerHTML = D.cach_dung.map(function (c, i) {
+    var parts = c.split(" – ");
+    return "<li>" + (i + 1) + ". " + (parts.length > 1 ? "<b>" + esc(parts[0]) + "</b> – " + esc(parts.slice(1).join(" – ")) : esc(c)) + "</li>";
+  }).join("");
+  $("s1-id").textContent = D.id;
+  $("s4-id").textContent = D.id;
+  $("s2-path").textContent = folderPath();
+  (function () {
+    var note = $("s2-note");
+    if (!IS_FILE) {
+      note.textContent = "Đang xem qua " + location.protocol.replace(":", "") + " – mở trực tiếp file HuongDan.html trên máy để có đường dẫn đầy đủ.";
+    } else if (folderName() !== D.id) {
+      note.className = "note bad";
+      note.textContent = "Trang đang nằm ngoài thư mục bài " + D.id + " (thư mục hiện tại: " + folderName() + "). Hãy để HuongDan.html cùng chỗ với các file của bài thì link và đường dẫn mới đúng.";
+    } else {
+      note.textContent = "Đường dẫn tự nhận theo vị trí hiện tại của trang – chuyển máy, đổi ổ đĩa vẫn đúng. Trong dự án: " + REL + "/";
+    }
+  })();
+  $("s2-files").innerHTML = [D.files.kichban, D.files.phongcach].map(function (f) {
+    return '<li>📄 <a href="./' + encodeURI(f) + '" target="_blank" rel="noopener">' + esc(f) + "</a></li>";
+  }).join("");
+  var S = D.series || {};
+  $("s3-settings").innerHTML = [
+    ["Choose language", S.ngon_ngu || "Tiếng Việt"],
+    ["Định dạng", S.dinh_dang || "Explainer"],
+    ["Choose visual style", S.phong_cach_hinh_anh || '<span class="warn">Chưa chọn – chọn 1 kiểu rồi ghi vào series.json để cả series giống nhau</span>'],
+    ["Sources", "Cả 2 nguồn"]
+  ].map(function (r) { return "<tr><td>" + r[0] + "</td><td><b>" + r[1] + "</b></td></tr>"; }).join("");
+  $("foot").innerHTML = "Thư mục: <code>" + esc(folderPath()) + "</code> · Tạo lúc " + esc(D.built_at) +
+    " · Nhật ký AI: <a href=\"./" + encodeURI(D.files.ghichu) + "\" target=\"_blank\" rel=\"noopener\">" + esc(D.files.ghichu) + "</a>";
+
+  // ---------- tiến độ (lưu theo ID, bỏ qua nếu trình duyệt chặn lưu)
+  var KEY = "bunpou:" + D.id + ":steps", state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { state = {}; }
+  var steps = Array.prototype.slice.call(document.querySelectorAll(".step"));
+  function paint() {
+    var n = 0;
+    steps.forEach(function (s) {
+      var on = !!state[s.getAttribute("data-step")];
+      s.classList.toggle("done", on); s.querySelector("input").checked = on; if (on) n++;
+    });
+    $("progress-bar").style.width = (n / steps.length * 100) + "%";
+  }
+  steps.forEach(function (s) {
+    s.querySelector("input").addEventListener("change", function (e) {
+      state[s.getAttribute("data-step")] = e.target.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (err) {}
+      paint();
+    });
+  });
+  paint();
+
+  // ---------- nút sáng/tối (nhớ lựa chọn; mặc định theo hệ điều hành)
+  var mq = window.matchMedia ? window.matchMedia("(prefers-color-scheme: dark)") : null;
+  function themeNow() {
+    var a = document.documentElement.getAttribute("data-theme");
+    return a || (mq && mq.matches ? "dark" : "light");
+  }
+  function paintTheme() {
+    var dark = themeNow() === "dark";
+    $("theme-ico").textContent = dark ? "☀️" : "🌙";
+    $("theme-txt").textContent = dark ? "Giao diện sáng" : "Giao diện tối";
+    $("theme-btn").setAttribute("aria-pressed", String(dark));
+  }
+  $("theme-btn").addEventListener("click", function () {
+    var next = themeNow() === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    try { localStorage.setItem("bunpou:theme", next); } catch (e) {}
+    paintTheme();
+  });
+  if (mq && mq.addEventListener) mq.addEventListener("change", paintTheme);
+  paintTheme();
+
+  // ---------- tab nội dung
+  var TABS = {
+    kichban: { file: D.files.kichban, hint: "Nguồn 1 – tải lên NotebookLM", mdview: true },
+    phongcach: { file: D.files.phongcach, hint: "Nguồn 2 – tải lên NotebookLM", mdview: true },
+    tuychinh: { file: D.files.tuychinh, hint: "Dán vào ô Custom topic", mdview: false }
+  };
+  var current = "kichban", rawMode = false;
+  function render() {
+    var t = TABS[current], text = D.content[current];
+    $("tab-hint").textContent = t.hint + " · " + t.file;
+    $("btn-copy-tab").textContent = "Copy " + (current === "tuychinh" ? "text tùy chỉnh" : "markdown");
+    $("btn-view").style.display = t.mdview ? "" : "none";
+    $("btn-view").textContent = rawMode ? "Xem trước" : "Xem markdown gốc";
+    $("pane").innerHTML = (t.mdview && !rawMode) ? '<div class="md">' + md(text) + "</div>" : '<pre class="raw">' + esc(text) + "</pre>";
+    $("pane").scrollTop = 0;
+    document.querySelectorAll(".tab").forEach(function (b) { b.setAttribute("aria-selected", String(b.getAttribute("data-tab") === current)); });
+  }
+  document.querySelectorAll(".tab").forEach(function (b) {
+    b.addEventListener("click", function () { current = b.getAttribute("data-tab"); rawMode = false; render(); });
+  });
+  $("btn-view").addEventListener("click", function () { rawMode = !rawMode; render(); });
+  $("btn-copy-tab").addEventListener("click", function () { copy(current); });
+  render();
+  document.title = D.id + " – Hướng dẫn làm video";
+})();
+</script>
+</body>
+</html>

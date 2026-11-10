@@ -1,0 +1,120 @@
+Cấp độ: N1
+
+# 〜に至る/至るまで/至って
+
+> Cho Đến, Đến Cả, Đến Mức, Dẫn đến, Đến giai đoạn/ phạm vi
+
+---
+
+## Cấu trúc ngữ pháp
+
+> - **Danh từ + に至る／至るまで／至って**
+>
+>
+> - **Vる + に至る／至るまで／至って**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói diễn tả một sự việc đạt đến phạm vi như thế. Thường được sử dụng để nhấn mạnh mức độ trần trên (đến mức đó) hoặc trần dưới (nhỏ nhặt đến từng ngóc ngách).
+
+②　Đây là cách nói nhấn mạnh của 「まで」
+
+③　Danh từ đằng trước 「に至るまで」là một chủ đề ngoài mức dự đoán
+
+④　Hay dùng với mẫu câu 「から〜に至るまで」 hoặc 「もちろん〜に至るまで」
+
+→　Có Nghĩa là : Cho đến, Đến cả, Đến mức, Đến tận
+
+---
+
+## Ví dụ
+
+##### 1. 警察の調べは厳しかった。現在の給料から過去の借金の額に至るまで調べられた。
+
+###### → Cảnh sát đã điều tra rất kỹ. Công ty đó đã bị điều tra từ lương bổng hiện nay cho đến các số tiền nợ trong quá khứ.
+
+##### 2. 中山氏は山田さんに関心があるのだろうか。山田さんの休日の行動に至るまで詳しく知りたがった。
+
+###### → Ông Nanayama có vẻ quan tâm đến chị Yamada nhỉ. Đến cả các hoạt động vào ngày nghỉ của chị Yamada ông ấy cũng muốn biết rõ.
+
+##### 3. 身近なごみ問題から国際経済の問題に至るまで、面接試験の質問内容は実にいろいろだった。
+
+###### → Nội dung các câu hỏi thi phỏng vấn thật sự rất đa dạng, từ các vấn đề gần gủi như rác thải cho đến các vấn đề về kinh tế quốc tế.
+
+##### 4. 修学旅行に行く際は、自分の物は下着にいたるまで全部名前を書いたものだ。
+
+###### → Khi đi học tập tập thực địa thì tất cả đồ dùng cá nhân đều viết tên trên đó, đến cả đồ lót cũng thế.
+
+##### 5. 対戦する相手チームのことは、メンバー一人一人の性格にいたるまで分析した。
+
+###### → Chúng tôi đã phân tích đội bạn rất kỹ, cho đến cả tính cách của từng thành viên trong đội.
+
+##### 6. 今日に至るまで、彼の死因は判明しておらぬ。
+
+###### → Cho đến nay thì nguyên nhân cái chết của ông vẫn chưa được sáng tỏ.
+
+##### 7. マイケル・ジャクソンは現代文化の象徴で、ポスターからマウスパッド、Tシャッに至るまで、世界中で使われている。
+
+###### → Michael Jackson đã trở thành một biểu tượng của văn hóa hiện đại, hình ảnh của ông được xuất hiện rộng khắp trên toàn thế giới, từ các áp phích quảng cáo cho đến các tấm lót rê chuột và áo sơ mi.
+
+##### 8. 帰宅途中、夕立に遭い、頭から足実に至るまで全身びしょ濡れになった。
+
+###### → Trên đường về nhà tôi bị mắc mưa rào nên bị ướt sũng từ đầu cho đến chân.
+
+##### 9. 私の学校は服装が厳しい。制服の着方はもちろん、ヘアスタイル や スカート の長さに至るまで注意される。
+
+###### → Ở trường tôi quy định về trang phục rất nghiêm khắc. Về cách ăn mặc thì đã đành, nhưng đến cả kiểu tóc hay là độ dài của váy mà cũng bị lưu ý.
+
+##### 10. 今度の旅行の スケジュール表は綿密だ。起床時間から飛行機内の食事開始時間に至るまで書いてある。
+
+###### → Bản lịch trình chuyến du lịch lần này cực kỳ tỉ mỉ. Từ thời gian ngủ dậy đến cả thời gian bắt đầu bữa ăn trong máy bay cũng được viết ra.
+
+##### 11. 優勝にいたるまでの過程を話してくれませんか。
+
+###### → Anh có thể kể cho chúng tôi nghe về chặng đường để đi đến chức vô địch được không?
+
+##### 12. あなたたちの結婚に至るまでのロマンスを教えてください。
+
+###### → Xin hãy cho chúng tôi biết câu chuyện tình yêu lãng mạn của anh chị cho đến ngày cưới được không?
+
+##### 13. 私の学校は服装に厳しい。制服の着方はもちろん、ヘアスタイルやスカートの長さに至るまで注意される。
+
+###### → Trường tôi rất nghiêm khắc về trang phục. Chúng tôi bị nhắc nhở từ cách mặc đồng phục cho đến kiểu tóc và chiều dài của váy.
+
+##### 14. 今度の旅行のスケジュールは綿密だ。起床時間から飛行機内の食事開始時間に至るまで書いてある。
+
+###### → Lịch trình cho chuyến đi lần này rất chi tiết. Chúng được viết rất cụ thể, từ thời gian rời khỏi giường cho đến thời gian ăn trên máy bay.
+
+##### 15. 父の趣味は料理です。食材も自家製でないと気が済まないらしく、みそ、豆腐に至るまで自分で作ります。
+
+###### → Sở thích của bố tôi là nấu ăn. Dường như nguyên liệu mà không phải là tự làm thì ông không hài lòng, đến ngay cả miso hay là đậu phụ ông cũng phải tự tay làm.
+
+##### 16. 日常おかずから高級料理の食材に至るまで、この店にないものはない。
+
+###### → Từ những món ăn thường ngày cho đến cả nguyên liệu làm món ăn cao cấp, chẳng có thứ gì mà cửa hàng này lại không có.
+
+##### 17. 小林先生には卒業後の進路はもちろん、恋愛の悩みに至るまで何でも相談している。
+
+###### → Đối với thầy Kobayashi thì tư vấn về con đường sau khi tốt nghiệp là việc tất nhiên, nhưng đến cả những lo lắng về chuyện tình yêu, hay bất cứ điều gì thầy cũng tư vấn được.
+
+##### 18. ゆみさんは天気はもちろん、その日の朝、昼、晩の気温に至るまで日記に書き留めているそうだ。
+
+###### → Nghe nói là chị Yumi ghi chú về thời tiết thì đã đành rồi, nhưng đến cả nhiệt độ buổi sáng, trưa và tối của ngày hôm đấy chị ấy cũng ghi hết cả vào trong nhật ký.
+
+##### 19. 兄は3カ月間1日も休まず働き続け、過労死するに至った。
+
+###### → Anh tôi làm việc suốt 3 tháng không nghỉ ngày nào, đến mức chết vì lao lực.
+
+##### 20. 加害者が犯行に至った経緯は次のとおりです。
+
+###### → Lý do dẫn đến hành vi phạm tội của người gây hại là như sau.
+
+##### 21. 泥棒に入られ、現金やクレジットカードはもちろん、冷蔵庫の中身に至るまで全部取られた。
+
+###### → Bị trộm đột nhập, lấy đi tất cả không chỉ tiền mặt, thẻ tín dụng mà đến cả đồ trong tủ lạnh.
+
+##### 22. 死亡事故が起こるに至って、やっとその交差点に信号が取り付けられた。
+
+###### → Phải cho đến khi xảy ra tai nạn chết người thì cuối cùng, ngã tư đó mới được gắn đèn tín hiệu.

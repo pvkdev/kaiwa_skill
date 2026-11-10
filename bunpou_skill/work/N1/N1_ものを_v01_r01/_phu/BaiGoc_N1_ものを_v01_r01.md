@@ -1,0 +1,129 @@
+Cấp độ: N1
+
+# ～ものを
+
+> Vậy Mà – Thế Mà – Giá Mà – Phải Chi Mà – Nếu Mà … Thì Đã …
+
+---
+
+## Cấu trúc ngữ pháp
+
+> ```
+> Vる / Vた + ものを
+> Tính từ い + ものを
+> Tính từ -na + な +ものを
+> ```
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói tương tự với 「～のに」, Sử dụng để diễn tả tâm trạng bất mãn, không hài lòng hoặc tiếc nuối trước thực tế trái với mong đợi.  
+②　Được sử dụng nhiều trong trường hợp chứa đựng cảm xúc nghi ngờ, bất mãn, hận, phê phán hoặc hối hận…của người nói.  
+③　Trong một số trường hợp cũng được dùng để thể hiện ý chí của người nói dưới dạng mệnh lệnh hoặc nguyện vọng.  
+④　Đặc biệt cấu trúc 「～すればいいものを」cũng được sử dụng nhiều, với ý nghĩa “nếu làm thế thì tốt rồi, vậy mà…”. Thể hiện trạng tiếc nuối hoặc trách móc của người nói.  
+→　Có Nghĩa là : Vậy mà – Thế mà – Giá mà – Phải chi mà – Nếu mà … thì đã …
+
+## Ví dụ
+
+##### 1. 先輩があんなに親切に言ってくれたものを、彼はどうして断ったのだろう。
+
+###### → Anh ấy đã tốt bụng nói đến thế vậy mà sao cậu ta lại từ chối nhỉ?
+
+##### 2. 知っていれば教えてあげたものを。わたしも知らなかったんです。
+
+###### → Phải chi tôi biết thì tôi đã chỉ rồi. Tại tôi không biết gì cả.
+
+##### 3. 夏の間にもう少し作業を進めていればよかったものを。怠けていたものだから、今になって、締め切りに追われて苦しんでいる。
+
+###### → Trong mùa hè giá mà triển khai công việc một chút thì hay biết mấy, vậy mà do lười biếng nên bây giờ phải khổ sở vì kỳ hạn đang đến gần.
+
+##### 4. あのとき、薬さえあれば彼の命は助かったものを。
+
+###### → Lúc đó giá mà có thuốc thì anh ấy đã được cứu sống rồi.
+
+##### 5. 知っていれば、助けてあげたものを。
+
+###### → Nếu tôi có biết thì tôi đã giúp đỡ anh rồi…
+
+##### 6. 早く検査していれば治療できるものを、病気の発見が遅過ぎた。
+
+###### → Phải chi mà khám sức khỏe sớm thì đã điều trị được rồi, đằng này phát hiện bệnh quá muộn.
+
+##### 7. 同僚何だから、仕事のことは聞いてくれればいくらでも協力したものを。
+
+###### → Vì là đồng nghiệp nên phải chi chuyện công việc anh hỏi tôi một tiếng thì chuyện gì tôi cũng có thể giúp được, vậy mà…
+
+##### 8. 一言声をかけてくれれば手伝ったものを。
+
+###### → Nếu cậu gọi tôi một tiếng thì tôi đã giúp rồi. Vậy mà…
+
+##### 9. よせばいいものを、彼は社長に文句を言った。そのため首になった。
+
+###### → Giá mà bỏ qua thì được rồi, thế mà anh ta lại phàn nàn với ngài giám đốc. Thế nên anh ta đã bị đuổi việc.
+
+##### 10. 黙っていればいいものを、つい余計なことを言ってしまった。
+
+###### → Phải chi im lặng thì tốt rồi, vậy mà tôi lại lỡ miệng nói ra điều dư thừa.
+
+##### 11. わたしに連絡してくれれば、迎えに行ってあげたものを。
+
+###### → Giá mà cậu liên lạc cho tôi thì tôi đã đi đón rồi, thế mà…
+
+##### 12. ヘルスチェックを受けていればすぐに治ったものを。
+
+###### → Nếu em đi khám sức khỏe thì đã khỏi ngay rồi, vậy mà…
+
+##### 13. やればできるものを、どうしてやらないんですか。
+
+###### → Nếu cậu làm thì được rồi, thế mà sao cậu không làm vậy?
+
+##### 14. あなたがお金に困っていると知っていれば、何とか力になったものを。
+
+###### → Nếu tôi biết cậu gặp khó khăn về tiền bạc, thì tôi đã tìm cách giúp rồi…
+
+##### 15. もう少し勉強すれば合格できたものを。
+
+###### → Giá mà tôi học chăm hơn chút thì thi đậu rồi…
+
+##### 16. 今朝、すぐにベッドから出ればよかったものを、ごろごろしてたら二度寝しちゃったよ。
+
+###### → Sáng nay phải chi tôi rời khỏi giường ngay thì được rồi, vậy mà cứ nằm lăn tới lăn lui nên tôi lại ngủ tiếp hiệp hai.
+
+##### 17. もっと練習すればいいものを、遊んでるから試合で負けるんだよ。
+
+###### → Nếu luyện tập chăm chỉ hơn thì tốt rồi, thế mà chỉ toàn chơi suốt thôi nên chúng ta sẽ thua trận đấu cho mà xem.
+
+##### 18. 早く返事すればいいものを、すぐメールを送らないから先方に怒られるんだよ。
+
+###### → Phải chi trả lời ngay thì tốt rồi, vậy mà tôi đã không gửi mail ngay nên đã bị đối tác trách ấy.
+
+##### 19. 大学生の時に、ちゃんと勉強しておけばよかったものを。今になって後悔している。
+
+###### → Giá mà hồi đại học tôi học hành đàng hoàng thì tốt biết mấy. Đến giờ tôi vẫn còn hối hận.
+
+##### 20. ちゃんと働けばいいものを。彼は、いつまでも働く気はないみたいだ。
+
+###### → Phải chi làm việc đàng hoàng thì tốt biết mấy. Dường như cậu ta chẳng bao giờ muốn làm việc.
+
+##### 21. 昔の彼女のことなんて、忘れてしまえばいいものを。彼はいつまでもその子のことが忘れられないようだ。
+
+###### → Nếu có thể quên được bạn gái ngày xưa thì tốt biết mấy. Nhưng dường như anh ta mãi không quên được cô gái đó.
+
+##### 22. 安静していれば治るもの を、田中さんはすぐに働き始めて、また病気を悪化させてしまった。
+
+###### → Giá mà nghỉ ngơi thì sẽ khỏi bệnh đấy nhưng anh Tanaka lại bắt đầu làm việc ngay nên đã làm cho bệnh nặng thêm.
+
+##### 23. もっと慎重にやれば誤解されないもの を、彼の強引なやり方がいつも誤解を招く。
+
+###### → Nếu mà làm việc thận trọng hơn thì sẽ không bị hiểu lầm nhưng cách làm theo kiểu cưỡng ép (cậy quyền) của anh ta lúc nào cũng gây ra hiểu lầm.
+
+##### 24. 気をつけていれば事故は起こらなかったもの を、本当に残念なことになってしまった。
+
+###### → Giá mà cẩn thận hơn thì tai nạn đã không xảy ra nhưng không may là điều đáng tiếc đã xảy ra.
+
+##### 25. 行きたくないのなら、行かなければよかったもの を。
+
+###### → Nếu không muốn đi thì không đi cũng được mà. (nhưng sao vẫn cứ đi?)
+
+##### 26. 話せばわかるもの を、何も言わなければわかってもらえないよ。
+
+###### → Nếu chịu nói ra thì người khác sẽ hiểu nhưng anh chẳng nói gì cả thì sao mà được thấu hiểu đây?

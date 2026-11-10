@@ -1,0 +1,143 @@
+Cấp độ: N2
+
+# ～一方（で）
+
+> **Một Mặt… Mặt Khác…/ Trong Khi… Thì…/ Đồng Thời, Ở Một Phương Diện Khác…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+**Cách nối trong sách:**
+
+> **Vる ＋ 一方（で）**  
+> **N ＋ の ＋ 一方（で）**
+
+**Khi diễn tả đặc điểm hoặc tư cách, còn có các cách nối:**
+
+> **Aい ＋ 一方（で）**  
+> **Aな ＋ 一方（で）**  
+> **N ／ Aな（bỏ な）＋ である ＋ 一方（で）**
+
+**Khi nối hai câu:**
+
+> **A。一方（で）、B。**
+
+**Khi nêu rõ hai mặt:**
+
+> **一方では～、他方では～。**
+
+→ **一方** đọc là **いっぽう**.
+
+→ Có thể lược bỏ **で**, dùng **～一方、…**.
+
+---
+
+## Cách dùng / Ý nghĩa
+
+① **Nêu một mặt của sự việc, đồng thời đưa ra một mặt khác để đối chiếu.**
+
+② **Có thể diễn tả hai mặt khác nhau của cùng một người, sự vật hoặc hiện tượng; cũng có thể đối chiếu hai đối tượng khác nhau.**
+
+③ **Hai mặt thường có sự khác biệt hoặc tương phản, nhưng không nhất thiết phải trái ngược hoàn toàn.** Điều quan trọng là người nói muốn nhìn sự việc từ hai phương diện.
+
+##### あの先生は厳しく指導する一方で、学生の相談にもよくのってくれる。
+
+###### → Thầy ấy một mặt hướng dẫn rất nghiêm khắc, mặt khác cũng thường nhiệt tình tư vấn cho sinh viên.
+
+→ Câu nêu **hai mặt của cùng một người thầy**: nghiêm khắc khi hướng dẫn, đồng thời quan tâm và giúp đỡ sinh viên.
+
+##### 西日本では大雨による被害が出ている。一方、東日本は水不足で困っている。
+
+###### → Miền Tây Nhật Bản đang chịu thiệt hại do mưa lớn. Trong khi đó, miền Đông Nhật Bản lại gặp khó khăn vì thiếu nước.
+
+→ Câu **đối chiếu tình hình của hai khu vực khác nhau**.
+
+→ Được dịch là: **Một mặt… mặt khác…/ Trong khi… thì…/ Đồng thời, ở một phương diện khác…**
+
+---
+
+## Chú ý
+
+- **Không nhất thiết hai hành động phải diễn ra đúng cùng một khoảnh khắc.** Mẫu này còn diễn tả những đặc điểm, khuynh hướng hoặc cách hành xử cùng tồn tại trong hoàn cảnh được nói đến.
+- **Chủ thể ở hai vế có thể giống hoặc khác nhau.** Vì vậy, không nên hiểu mẫu này chỉ dùng cho một người thực hiện hai hành động.
+- **Vế sau không phủ nhận nội dung ở vế trước.** Người nói thừa nhận cả hai mặt và đặt chúng cạnh nhau để người nghe thấy sự khác biệt.
+- **Nの一方で thường gặp với danh từ chỉ sự việc, quá trình**, chẳng hạn sự phát triển hoặc sự thay đổi. Khi nói về tư cách “là học sinh”, “là bác sĩ”… thì thường dùng **Nである一方で**.
+
+##### 彼は大学生である一方で、会社も経営している。
+
+###### → Anh ấy vừa là sinh viên đại học, đồng thời cũng điều hành một công ty.
+
+- **一方 có thể đứng đầu câu sau để chuyển sang mặt hoặc đối tượng còn lại.** Cũng có thể dùng **一方で** hoặc **その一方で**.
+
+##### この製品は使い方が簡単だ。その一方で、修理には専門的な知識が必要だ。
+
+###### → Sản phẩm này dễ sử dụng. Nhưng ở một mặt khác, việc sửa chữa lại đòi hỏi kiến thức chuyên môn.
+
+- **一方では～、他方では～ làm rõ hai phương diện được đối chiếu.**
+
+##### 一方では期待しているが、他方では不安も感じている。
+
+###### → Một mặt tôi đang kỳ vọng, nhưng mặt khác cũng cảm thấy bất an.
+
+- **Thường gặp trong bài viết, báo cáo, tin tức hoặc khi trình bày, phân tích một vấn đề.** Mẫu này giúp người nói thể hiện nhiều mặt của sự việc một cách rõ ràng.
+
+---
+
+## Ví dụ
+
+##### 1. あの先生は厳しく指導する一方で、学生の相談にもよくのってくれる。
+
+###### → Thầy ấy một mặt hướng dẫn rất nghiêm khắc, mặt khác cũng thường nhiệt tình tư vấn cho sinh viên.
+
+##### 2. 高度経済成長は急速な発展の一方で、深刻な公害問題を引き起こした。
+
+###### → Thời kỳ tăng trưởng kinh tế cao một mặt đem lại sự phát triển nhanh chóng, mặt khác lại gây ra những vấn đề ô nhiễm nghiêm trọng.
+
+##### 3. A国は軍縮を進める一方、核実験を続けている。
+
+###### → Nước A một mặt thúc đẩy giải trừ quân bị, mặt khác vẫn tiếp tục thử nghiệm hạt nhân.
+
+##### 4. A国は一方では軍縮を進めながら、他方では核実験を続けている。
+
+###### → Nước A một mặt thúc đẩy giải trừ quân bị, mặt khác vẫn tiếp tục thử nghiệm hạt nhân.
+
+##### 5. 西日本では大雨による被害が出ている。一方、東日本は水不足で困っている。
+
+###### → Miền Tây Nhật Bản đang chịu thiệt hại do mưa lớn. Trong khi đó, miền Đông Nhật Bản lại gặp khó khăn vì thiếu nước.
+
+##### 6. この町は交通が便利な一方で、家賃が高い。
+
+###### → Thị trấn này giao thông thuận tiện, nhưng mặt khác giá thuê nhà lại cao.
+
+##### 7. この仕事は収入が高い一方で、自由な時間が少ない。
+
+###### → Công việc này có thu nhập cao, nhưng đổi lại thời gian tự do khá ít.
+
+##### 8. 彼は大学生である一方で、会社も経営している。
+
+###### → Anh ấy vừa là sinh viên đại học, đồng thời cũng điều hành một công ty.
+
+##### 9. 都市開発の一方で、古い町並みを守ろうとする動きもある。
+
+###### → Bên cạnh việc phát triển đô thị, cũng có những hoạt động nhằm bảo tồn cảnh quan phố cổ.
+
+##### 10. 兄が都会で働く一方で、弟は故郷で農業をしている。
+
+###### → Trong khi người anh làm việc ở thành phố thì người em lại làm nông ở quê nhà.
+
+##### 11. この製品は使い方が簡単だ。その一方で、修理には専門的な知識が必要だ。
+
+###### → Sản phẩm này dễ sử dụng. Nhưng ở một mặt khác, việc sửa chữa lại đòi hỏi kiến thức chuyên môn.
+
+##### 12. 新しい仕事が楽しみな一方で、うまくできるか不安もある。
+
+###### → Tôi vừa háo hức với công việc mới, vừa lo liệu mình có làm tốt hay không.
+
+---
+
+## Tổng Kết và Bình Luận
+
+- Các bạn hãy nhớ hình ảnh **“nhìn từ mặt này, rồi nhìn từ mặt khác”**. Hai mặt đều được thừa nhận, nhưng được đặt cạnh nhau để thấy sự khác biệt.
+- Mẫu này dùng được cho **hai mặt của cùng một đối tượng** hoặc **sự khác nhau giữa hai đối tượng**. Không cần ép tất cả các câu thành hai hành động xảy ra đúng cùng lúc.
+- Khi viết bài phân tích, có thể dùng **A一方でB** trong một câu, hoặc tách thành **A。一方、B。** để trình bày từng mặt rõ ràng hơn.

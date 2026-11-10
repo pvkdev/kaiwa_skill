@@ -1,0 +1,75 @@
+Cấp độ: N1
+
+# ～ あっての
+
+> Tồn Tại Được Là Nhờ…/ Có Được Là Nhờ…
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **N1 ＋ あっての + N2**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+Là cách nói biểu thị nhấn mạnh ý nghĩa “chính vì có N1 nên mới có N2”, “N2 hình thành được là nhờ có N1”.
+
+→　Có Nghĩa là : Tồn tại được là nhờ…/ Có được là nhờ…
+
+---
+
+## Ví dụ
+
+##### 1. 愛あっての結婚生活だ。愛がなければ、一緒に暮らす意味がない。
+
+###### →　Cuộc sống hôn nhân tồn tại được là nhờ tình yêu. Nếu không có tình yêu thì sống cùng nhau cũng không có ý nghĩa gì.
+
+##### 2. 私たちはお客さまあっての仕事ですから、お客さまを何より大切にしています。
+
+###### →　Vì công việc tồn tại được là nhờ khách hàng nên chúng tôi luôn xem khách hàng là thượng đế.
+
+##### 3. 交渉は相手あってのことですから、自分の都合だけ主張してもうまくいかない。
+
+###### →　Việc thương thảo hình thành được là nhờ có đối tác nên cho dù chúng ta chỉ khăng khăng theo hướng tốt cho mình thì cũng khó mà thương thảo suôn sẻ được.
+
+##### 4. あなたあっての私なんです。それを忘れないでください。
+
+###### →　Em sống được là vì có anh. Xin anh đừng quên điều đó.
+
+##### 5. お酒とタバコをやめることができたのも、家族の協力があってのことだ。
+
+###### →　Việc tôi đã có thể bỏ rượu và thuốc lá chính là nhờ sự hỗ trợ của gia đình.
+
+##### 6. どんなに有名でも、お客様あってのお店です。
+
+###### →　Cho dù có nổi tiếng đến đâu thì cửa hàng tồn tại được là nhờ có khách hàng.
+
+##### 7. 今日の私があるのも、20数年前に私を産んでくれた両親あっての事です。
+
+###### →　Tôi có được như ngày hôm nay chính là nhờ ba mẹ tôi đã sinh ra tôi 20 mấy năm trước.
+
+##### 8. あなたの援助あっての私の成功です。
+
+###### →　Thành công tôi có được chính là nhờ sự giúp đỡ của anh.
+
+##### 9. 需要あっての供給とは買いたい人と合っての売りたい人と言う意味だ。
+
+###### →　Có cung mới có cầu nghĩa là phải có người mua mới có người bán.
+
+##### 10. 数学は基礎あっての高いレベル だから、数学が上手になるように、まず基礎を ちゃんと勉強しなさい。
+
+###### →　Toán học phải có cơ bản mới có trình độ nâng cao nên để giỏi toán thì hãy học hành cẩn thận cơ bản trước đi.
+
+##### 11. あなたの助けあっての成功だから、本当にありがたい。
+
+###### →　Phải có sự trợ giúp của cậu mới có chiến thắng nên tôi thực sự biết ơn.
+
+##### 12. リーダー の山田さんあっての勝利だから、山田さんが表彰されるべきだ。
+
+###### →　Phải có lãnh đạo là anh Yamada thì mới có chiến thắng nên anh Yamada nên được biểu dương.
+
+##### 13. あの先生あっての今の私だ。本当にもう一度会いたくてたまらない。
+
+###### →　Phải có thầy giáo đó mới có tôi ngày hôm nay. Thật sự tôi rất muốn gặp thầy lại một lần.

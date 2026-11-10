@@ -1,0 +1,85 @@
+Cấp độ: N2
+
+# 〜 のことだから
+
+> **Như (Anh Ta/Cô Ta)…Thì…/ Gì Chứ…Thì…./ Vì Là…Nên…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Danh từ + のことだから**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Nêu phán đoán, nhận xét mang tính khách quan của người nói dựa trên tính cách, đặc tính, đặc trưng, sự việc của người/vật nào đó mà cả người nói và người nghe đều biết rõ. “Vì là người/vật đó nên nhất định là sẽ làm điều gì đúng với tính cách hay bản chất của người/vật đó.“
+
+②　Chủ yếu đi với từ chỉ người. Vế phía sau là suy luận, phán đoán của người nói. 
+
+③　Cũng có trường hợp được dùng đứng cuối câu 
+
+④　Các dạng khác: ～ことだ／～ことだから、きっと～／～ことだから、からならず～
+
+→　Có Nghĩa là : Như (anh ta/cô ta)…Thì…/ Gì chứ…thì…./ Vì là…nên…
+
+---
+
+## Ví dụ
+
+##### 1. それ、原さんに訳してもらったら？」
+
+##### 「そうだね。英語が得意な彼女のことだから、１時間もあれば、できるだろうね」
+
+###### → ”Cái đó, sao không nhờ Hara dịch cho?”
+
+###### – 　“Ừ nhỉ. Người giỏi tiếng Anh như cô ấy thì chỉ 1 tiếng chắc cũng xong nhỉ”
+
+##### 2. まじめな彼女のことだから、職場でもみんなに信頼しんらいされているでしょう。
+
+###### → Người nghiêm chỉnh như cô ấy thì nhất định ở nơi làm việc cũng được mọi người tin tưởng.
+
+##### 3. パソコン に強い彼のことだから、もっといい方法を知っているに違いない。
+
+###### → Người giỏi máy tính như anh ấy thì nhất định sẽ biết phương pháp tốt hơn.
+
+##### 4. 「青木さんがまだ来てないです」「まあ、彼女のことだから、心配ないよ」
+
+###### → ”Aoki vẫn chưa đến.” / “À, nếu là cô ấy thì không cần phải lo đâu” (Vì cô ấy đã hứa sẽ đến thì nhất định đến)
+
+##### 5. けちなあの人のことだから、こんな高い会費かいひ を払うわけはない。
+
+###### → Keo kiệt như người đó thì chả có lý do gì sẽ chịu trả phí thành viên cao như thế này đâu.
+
+##### 6. 戦争中のことだから、何が起こるかわからない。
+
+###### → Gì chứ chiến tranh thì không thể biết trước điều gì sẽ xảy ra.
+
+##### 7. 彼のことだから、すぐにここへ飛んでくるに違いないと思った。
+
+###### → Ai chứ anh ta thì tôi nghĩ thế nào cũng bay đến đây ngay ấy mà.
+
+##### 8. 彼のことだから、きっと最後まで頑張りぬくと思います。
+
+###### → Ai chứ anh ấy thì tôi nghĩ chắc chắn sẽ cố gắng đến cùng.
+
+##### 9. のんきなカインのことだから、何も心配していないだろう。
+
+###### → Ai chứ Khánh vốn vô ưu nên chắc có lẽ không bận tâm gì đâu.
+
+##### 10. ナムのことだ。怒ってカッとなったら、何をするか分からない。
+
+###### → Ai chứ Nam mà. Một khi nó đã nổi giận lên thì sẽ không biết nó sẽ làm những gì đâu.
+
+##### 11. そういうことだから彼が来るのは期待できないよ。
+
+###### → Vì là như thế nên việc anh ta sẽ đến là không mong chờ gì được rồi.
+
+##### 12. 子供のことですから、そんな難しいことを言ってもわかりませんよ。
+
+###### → Vì là trẻ con nên anh nói những điều khó như thế thì nó cũng không hiểu được đâu.
+
+##### 13. 自分でやったことだから仕方がないね。
+
+###### → Vì là do bản thân anh ta tự làm nên đành chịu thôi.

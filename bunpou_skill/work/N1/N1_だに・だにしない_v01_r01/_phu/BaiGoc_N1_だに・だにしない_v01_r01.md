@@ -1,0 +1,103 @@
+Cấp độ: N1
+
+# ～だに／だにしない
+
+> Chỉ Cần…Là Đã…/ Thậm Chí…Cũng Không…/ Không Hề…
+
+---
+
+## Cấu trúc
+
+> ```
+> N + だに／だにしない
+> Vる + だに／だにしない
+> Ngoại lệ:「夢」sẽ thành「夢にだに」
+> ```
+
+## Cách dùng / Ý nghĩa
+
+①　Được sử dụng với dạng khẳng định, mang nghĩa「だけでも」(chỉ cần…cũng đủ…) hoặc được sử dụng phủ định với ý nghĩa「さえしない」(ngay cả…cũng không…),「まったく～しない」(không…một chút nào)
+
+②　Đây là cách nói dùng trong văn viết.
+
+→　Có Nghĩa là : Chỉ cần…là đã…/ Thậm chí…cũng không…/ Không hề…
+
+## Ví dụ
+
+##### 1. そんな危険を冒すなんて、考えるだに恐ろしい。
+
+###### → Chuyện làm một việc nguy hiểm như thế, chỉ cần nghĩ đến thôi cũng đủ thấy sợ rồi.
+
+##### 2. 思い出すだに、怒りで胸が熱くなる。
+
+###### → Chỉ cần nhớ lại thôi là lồng ngực tôi lại nóng bừng lên vì giận dữ.
+
+##### 3. 子どものころ、死については考えるだに恐ろしかった。
+
+###### → Khi còn nhỏ, thậm chí mới chỉ nghĩ về cái chết thôi là tôi đã sợ rồi.
+
+##### 4. 科学の力で自分と全く同じ人間が作り出せるなんて、そんな事を考えるだに恐ろしい。
+
+###### → Việc có thể tạo ra những con người giống hệt mình bằng sức mạnh của khoa học, chỉ mới nghĩ đến thôi đã thấy sợ rồi.
+
+##### 5. 世界中にこの伝染病が広まったら、百万人もの人が死ぬなど、想像するだに恐ろしい。
+
+###### → Nếu bệnh truyền nhiễm này lan rộng ra khắp thế giới thì hàng chục triệu người sẽ chết, chỉ cần tưởng tượng thôi đã thấy sợ rồi.
+
+##### 6. 将来、ロボット に仕事を奪われる時代が来るなんて、考えるだに恐ろしい。
+
+###### → Tương lai, thời đại công việc sẽ bị mất hết vào tay robot sẽ đến, chỉ cần tưởng tượng thôi đã thấy đáng sợ rồi.
+
+##### 7. まさか宝くじが当たるなんて夢にだに思わなかった。
+
+###### → Thậm chí đến trong mơ tôi cũng chưa bao giờ mơ mình sẽ trúng vé số.
+
+##### 8. このような事故が起きるとは想像だにしなかった。
+
+###### → Lúc ấy, chúng tôi không hề tưởng tượng rằng sẽ xảy ra một việc như thế này.
+
+##### 9. 衛兵は直立不動のまま、微動だにしない。
+
+###### → Người lính canh đứng thẳng bất động, thậm chí một chút nhúc nhích cũng không.
+
+##### 10. 自分が政治家になろうとは、想像だにしていなかった。
+
+###### → Ngay cả trong tưởng tượng tôi cũng không nghĩ bản thân mình sẽ trở thành một chính trị gia.
+
+##### 11. 一顧だにしない。
+
+###### → Thậm chí, không một chút ngó ngàng đến.
+
+##### 12. 一瞥だにしない。
+
+###### → Thậm chí, không một cái liếc mắt xem qua.
+
+##### 13. わたしは、このような立派な賞を頂くなどとは、夢にだに思わなかった。
+
+###### → Thậm chí trong giấc mơ tôi cũng đã không dám nghĩ là mình sẽ nhận được giải thưởng tuyệt vời như thế này.
+
+##### 14. こんなことになるとは、夢にも思わなかった。
+
+###### → Ngay cả trong giấc mơ tôi cũng không nghĩ sẽ trở nên như thế này.
+
+##### 15. このように地球温暖化が進むとは、50年前には想像だにしなかった。
+
+###### → Chuyện trái đất nóng dần lên ngày càng nghiêm trọng như thế này, cách đây 50 năm, thậm chí mọi người đã tưởng tượng ra.
+
+##### 16. 放送の内容には全く動揺を示さなかったが、放送が終わると静かに涙を流し、微動だにしなかったという。
+
+###### → Tuy không thể hiện một chút rung động nào đối với nội dung của chương trình phát sóng, anh ấy đã lặng lẽ rơi nước mắt mà thậm chí không hề nhúc nhích 1 chút nào khi kết thúc chương trình phát sóng.
+
+## NÂNG CAO
+
+１．Quán dụng ngữ
+
+夢にだに思わなかった： Thậm chí trong mơ cũng không nghĩ tới.
+
+微動だにしない： Ngày một chút lung ly cũng không。いまだに：Đến tới bây giờ
+
+２. 6 giới từ phụ
+
+「だに」「さへ」「し」「のみ」「など」「ばかり」. 
+
+Đặc biệt「だに」「さへ」là những giới từ rất quan trọng.

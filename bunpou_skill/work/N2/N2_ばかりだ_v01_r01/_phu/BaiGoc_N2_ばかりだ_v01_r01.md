@@ -1,0 +1,101 @@
+Cấp độ: N2
+
+# ～ ばかりだ
+
+**Ngày Càng…/ Cứ Ngày Càng…/ Cứ Dần…/ Không Ngừng…**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể từ điển （Ｖる） +　ばかりだ**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Dùng để diễn tả sự vật/hiện tượng tiếp tục phát triển theo chiều hướng nào đó (tăng lên, xấu đi). Có thể cho cả hiện tượng tích cực và tiêu cực nhưng được sử dụng nhiều hơn cho hiện tượng tiêu cực, ngày càng xấu đi.
+
+②　Đi sau động từ chỉ sự chuyển đổi (なる／～ていく／上がる／下がる…). Các bạn chú ý là các động từ đi kèm với ばかりだ PHẢI là những động từ thể hiện sự biến đổi, thay đổi
+
+③　～ばかりだ có cách dùng tương tự với 一方だ, nhưng ばかりだ thường dùng với xu hướng biến đổi không tốt, còn 一方だ thì cả tốt và không tốt đều dùng được.
+
+④　Phân biệt 4 mẫu ngữ pháp thể hiện sự biến đổi, thay đổi: 「～ようとしている」「～始める」「～つつある」「一方だ・ばかりだ」qua hình ảnh bên dưới
+
+→　Có Nghĩa là : **Ngày càng…/ Cứ ngày càng…/ Cứ dần…/ Không ngừng…**
+
+---
+
+## Ví dụ
+
+##### 1. 年を とると、記憶力は衰えるばかりだ。
+
+###### →　Càng nhiều tuổi trí nhớ càng trở nên sa sút, yếu đi.
+
+##### 2. この数年、生活は苦しくなるばかりだ。
+
+###### →　Mấy năm nay, cuộc sống ngày càng trở nên khó khăn.
+
+##### 3. このままではナムの日本語の成績は下がるばかりだ。なんとかしなくてはならない。
+
+###### →　Cứ thế này thì kết quả tiếng Nhật của Nam ngày càng tệ. Phải làm gì điều gì đó.
+
+##### 4. 最近の ラム委員長の行動はよいとは言えない。彼への不信感は増すばかりだ。
+
+###### →　Không thể cho rằng các hành động gần đây của Ông Lâm Chủ tịch là chấp nhận được. Sự mất lòng tin đối với ông ấy ngày càng tăng.
+
+##### 5. 傷が深くなるばかりです。
+
+###### →　Vết thương cứ ngày càng sâu hơn.
+
+##### 6. 手術が終わってから、父の病気は悪くなるばかりでした。
+
+###### →　Sau khi phẫu thuật xong thì bệnh của ba tôi cứ ngày càng xấu đi.
+
+##### 7. 仕事は減るし物価が上がるばかりで、生活は楽にならない。
+
+###### →　Cuộc sống không dễ thở lên chút nào vì công việc thì ngày càng giảm, giá cả thì cứ ngày càng tăng.
+
+##### 8. 少年犯罪が増えるばかりだ。
+
+###### →　Tội phạm ở thanh thiếu niên cứ ngày càng tăng.
+
+##### 9. 世の中わからないことは増えるばかりだ。
+
+###### →　Trong xã hội ngày nay ngày càng nhiều điều không hiểu được.
+
+##### 10. この家に来て、千春は痛々しいほど痩せていくばかりだ。
+
+###### →　Kể từ sau khi đến ngôi nhà này thì Chiharu cứ ngày càng gầy đi, trông đến đau lòng.
+
+##### 11. 祖父は体が弱っていくばかりだ。
+
+###### →　Ông tôi sức khỏe cứ ngày càng yếu đi.
+
+##### 12. 資源をめぐる争いで、両国の関係はますます悪化するばかりだ。
+
+###### →　Do các tranh chấp về tài nguyên nên quan hệ của hai nước cứ ngày càng xấu đi.
+
+##### 13. 英語も数学も学校を出てからは忘れていくばかりだ。
+
+###### →　Cả tiếng Anh cũng như Toán, sau khi ra trường thì tôi cứ dần quên sạch.
+
+##### 14. 戦争のために、国民の生活はますます苦しくなるばかりだ。
+
+###### →　Do chiến tranh nên cuộc sống của người dân ngày càng cực khổ.
+
+##### 15. これではベトナム人にアレルギー疾患や癌が増えるばかりだと心配されています。
+
+###### →　Cứ thế này thì e rằng các chứng dị ứng và bệnh ung thư ở người Việt ngày càng tăng.
+
+##### 16. それを賄うために企業や個人の健康保険料の負担も増えるばかりだ。
+
+###### →　Để bù đắp cho việc đó thì gánh nặng về chi phí bảo hiểm của doanh nghiệp và các cá nhân ngày càng lớn.
+
+##### 17. 消費拡大の続く中国で日本のモノを売りたいと考える日本企業、日本人は年々増えるばかりだ。
+
+###### →　Ngày càng có nhiều doanh nghiệp Nhật, người Nhật có ý định bán hàng hóa Nhật Bản vào thị trường Trung Quốc vốn đang tăng trưởng tiêu thụ liên tục.
+
+##### 18. 選挙のときの対立が原因で、党内の二つのグループの関係は悪くなるばかりだ。
+
+###### →　Mối quan hệ của hai nhóm trong nội bộ Đảng ngày càng xấu đi vì nguyên nhân đối lập lúc bầu cử.

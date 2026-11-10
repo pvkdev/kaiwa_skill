@@ -1,0 +1,105 @@
+Cấp độ: N2
+
+# ～ ことから／ところから
+
+**Do…/ Vì…/ Bởi… (Từ Thực Tế)**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Động từ thể ngắn + ことから**  
+>
+> **Danh từ + だったことから**  
+>
+> **Tính từ い + ことから**  
+>
+> **Tính từ -na + な/だったことから**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Là cách nói biểu thị bằng cớ hoặc nguyên do của sự việc.
+
+②「ところから」 được sử dụng nhiều trong trường hợp kể lại nguyên do của một tên gọi hoặc bao hàm ý, ngoài ra còn có nguyên nhân, lý do khác nữa.
+
+②　Dùng trong văn viết, mang sắc thái trang trọng, kiểu cách.
+
+→　Có Nghĩa là : **Do…/ Vì…/ Bởi… (từ thực tế)**
+
+---
+
+## Ví dụ
+
+##### 1. 顔がそっくりなことから、双子であることを知った。
+
+###### → Tôi biết họ một cặp song sinh do gương mặt họ giống nhau như đúc.
+
+##### 2. 道がぬれていることから、昨夜、雨が降ったことがわかった。
+
+###### → Do đường ướt nên tôi biết là đêm qua trời đã mưa.
+
+##### 3. 医者は彼女の顔色が悪いことから、貧血ではないかと思ったそうだ。
+
+###### → Nghe nói bác sĩ suy đoán cô ta bị thiếu máu do thấy gương mặt cô ấy rất xanh xao.
+
+##### 4. 二人が一緒に仕事をしたことから、交際が始まった。
+
+###### → Hai người họ đã bắt đầu quen nhau do đã làm việc cùng nhau.
+
+##### 5. この鳥は目のまわりが白いことから、メジロと呼ばれている。
+
+###### → Con chim này do quanh mắt màu trắng nên được gọi là chim mắt trắng (mejiro)
+
+##### 6. 彼女はアラビア語ができるということから、オリンピックの通訳に推薦された。
+
+###### → Cô ấy đã được đề cử làm thông dịch cho Thế Vận hội do có thể nói được tiếng Ả Rập.
+
+##### 7. この村の老人が皆元気なことから、村の食習慣が体にいいと考えられている。
+
+###### → Do những người già trong ngôi làng này đều khỏe mạnh nên có thể cho rằng thói quen ăn uống của họ rất tốt cho sức khỏe.
+
+##### 8. ここは桜の名所であることから、春には花見客が大勢やってくる。
+
+###### → Do nơi này nổi tiếng với hoa anh đào nên vào mùa xuân có rất nhiều người đến đây ngắm hoa.
+
+##### 9. 彼は父親が有名な作家であることから、周囲から特別な目で見られがちです。
+
+###### → Anh ta thường được nhìn bằng ánh mắt đặc biệt do cha anh ta là một nhà văn nổi tiếng.
+
+##### 10. この辺は桜の木が多いことから、桜木町と呼ばれるようになった。
+
+###### → Do khu vực này có nhiều cây hoa anh đào nên được gọi thành Sakuraki-cho.
+
+##### 11. 富士山が見えることから、この町は富士見町という名前がついた。
+
+###### → Do từ đây có thể nhìn thấy núi Phú Sĩ nên thị trấn này được đặt tên là Fujimi-cho.
+
+##### 12. ガラスが割れていることから、泥棒が入ったとわかった。
+
+###### → Tôi biết được có trộm đột nhập vì kính bị vỡ (trên nền nhà…).
+
+##### 13. 灰皿に煙の立っている吸い殻が残っていたところから、犯人はまだ遠くへは行っていないと判断された。
+
+###### → Tên tội phạm được cho là vẫn chưa đi xa vì khói vẫn còn bốc lên từ tàn thuốc để lại trên gạc tàn.
+
+##### 14. この魚は、蛇そっくりなところから、海蛇という名前をもつ。
+
+###### → Loài cá này tên gọi là “rắn biển” do có hình thù giống hệt loài rắn.
+
+##### 15. カボチャは、カンボジアからやってきたと言われているところからその名が付いたそうだ。
+
+###### → Nghe nói bí đỏ (Capocha), sở dĩ có tên như thế là do ngời ta nói nó được du nhập từ Campuchia vào.
+
+##### 16. 車のバンパーから被害者の衣服の繊維が検出されたことから、その車の所有者にひき逃げの容疑がかかっている。
+
+###### → Người chủ của chiếc xe ấy bị tình nghi là đã cán người rồi bỏ trốn do người ta đã lấy ra được một ít sợi vải của áo quần nạn nhân từ cái giảm xóc của chiếc xe.
+
+##### 17. その人物が殺害されたことを記録した文書が全く存在しないところから、実はその人物は生き延びて大陸に渡ったのだという伝説が生まれたらしい。
+
+###### → Hình như có truyền thuyết cho rằng thật ra nhân vật ấy hãy còn sống và đã thoát được sang phía đất liền, do hoàn toàn không có một văn bản nào ghi chép rằng nhân vật ấy đã bị sát hại.
+
+##### 18. 彼女の父親が中国人であるところから、中国人の知り合いも多い。
+
+###### → Cô ấy cũng có rất nhiều người quen là người Trung Quốc do bố cô ấy là người Trung Quốc.

@@ -1,0 +1,111 @@
+Cấp độ: N2
+
+# ようにも ～ ない
+
+> **Dù Có Muốn Cũng Không Được – Dẫu Có Muốn Cũng Không Thể**
+
+---
+
+## Cấu trúc ngữ pháp
+
+> **Vる + にも ＋ Vられない (dạng phủ định của Thể khả năng)**  
+>
+> **Ｖよう(Thể ý chí) + にも ＋Vられない (dạng phủ định của  Thể khả năng)**
+
+---
+
+## Cách dùng / Ý nghĩa
+
+①　Động từ được chia ở thể ý hướng, diễn tả ý nghĩa  “cho dù có muốn thực hiện điều đó nhưng cũng không thể làm được vì có lý do, nguyên do gì đó”
+
+②　Động từ đứng trước và sau「にも」là một. Phía trước chia ở thể ý hướng, phía sau chia ở thể khả năng.
+
+③　Nếu vế đầu dùng động từ thể từ điển thì thường diễn đạt những vấn đề về tâm lý/ suy nghĩ (muốn khóc/ muốn nói nhưng không khóc/ không nói được). Nếu vế đầu dùng động từ thể ý chí thì thường diễn đạt hành động (muốn làm nhưng không làm được).
+
+④　Cách nói này có xu hướng được sử dụng nhiều trong những trường hợp diễn tả sự biện minh, cái cớ, hoặc thể hiện cảm xúc, suy nghĩ tiêu cực
+
+→　Có Nghĩa là : Dù có muốn cũng không được – Dẫu có muốn cũng không thể
+
+---
+
+## Ví dụ
+
+##### 1. 行こうにも行けない。
+
+###### → Có muốn đi cũng không đi được.
+
+##### 2. こどもに大切な書類を汚され、泣くに泣けない心境だ。
+
+###### → Bị con làm bẩn mất tài liệu quan trọng, tôi muốn khóc mà không khóc nổi.
+
+##### 3. 彼女はあいさつもせずに会社を やめた。何か言うに言えない事情があったのだろうか。
+
+###### → Cô ấy chẳng chào tạm biệt ai đã nghỉ việc luôn. Chắc là có điều gì đó muốn nói mà không thể nói ra chăng?
+
+##### 4. 野菜を たくさんもらったが、食べきれない。捨てるに捨てられず困ってる。
+
+###### → Được cho bao nhiêu là rau nên tôi không ăn hết. Muốn vứt đi mà không thể vứt được, phiền phức quá.
+
+##### 5. 大切な電話が来ることになっているので、出かけようにも出かけられません。
+
+###### → Vì tôi đang chờ một cuộc điện thoại quan trong nên dẫu có muốn đi ra ngoài cũng không thể.
+
+##### 6. なにしろ言葉が通じないのだから、道を聞こうにも聞けなくて困った。
+
+###### → Tôi đã rất khổ sở vì không biết ngôn ngữ nên dẫu có muốn cũng không thể hỏi đường được.
+
+##### 7. お金に困っている後輩から借金を頼まれて、断ろうにも断れなかった。
+
+###### → Cậu đàn em đang gặp khó khăn về tiền bạc nhờ cho mượn tiền nên dẫu có muốn từ chối cũng không được.
+
+##### 8. 早く電話をかけようにも、近くに電話がなくてかけられなかったのです。
+
+###### → Dù có muốn gọi điện sớm nhưng gần đó không có điện thoại nên không thể gọi được.
+
+##### 9. 熱があって頭痛もし、朝、起きようにも起きられなかった。
+
+###### → Tôi bị sốt, đau頭 nên sáng nay có muốn dậy cũng không nổi.
+
+##### 10. こんなにたくさんあるのでは、覚えようにも覚えられない。
+
+###### → Nhiều thế này thì có muốn nhớ hết cũng không thể nhớ nổi.
+
+##### 11. 停電でエレベーターが止まり、中の人は出ようにも出られなかった。
+
+###### → Thang máy bị dừng do cúp điện nên những người trong đó có muốn ra ngoài cũng không ra được.
+
+##### 12. 彼女はものを言うにも息がつけません。
+
+###### → Cô ấy có muốn nói nhưng cũng không còn hơi sức để mà nói.
+
+##### 13. 新聞の募集広告に応募しようにも、切手代どころか封筒を買う金もないという始末です。
+
+###### → Dù có muốn ứng tuyển quảng cáo trên báo nhưng tôi thậm chí còn không có tiền để mua tem và phong thư để gửi nữa.
+
+##### 14. 彼女は頭を上げようにも上げられなかった。
+
+###### → Cô ấy thậm chí còn không dám ngẩng đầu lên nữa.
+
+##### 15. 逮捕令状の発給を請求しようにも、根拠となるものがなんにもないのだ。
+
+###### → Dù có muốn ra lệnh bắt giữ nhưng chúng ta không có bất kỳ chứng cứ nào cả.
+
+##### 16. たとえ飛んでいる飛行機が途中で故障なんかしたら、降りようにも降りられないだろう。
+
+###### → Giả sử một chiếc máy bay đang bay gặp sự cố giữa chừng thì chúng ta có muốn xuống cũng không được.
+
+##### 17. 彼女は懇願するような眼差しで父親を見上げた。その眼差しはなにか言おうにも口から出てこない言葉以上に、彼女を取り成してくれた。
+
+###### → Cô ấy ngước lên nhìn cha với ánh mắt cầu xin. Và ánh mắt đó còn hiệu quả hơn cả việc cô ấy định nói gì đó nhưng không thể.
+
+##### 18. ジェイクを呼ぼうにも声が出なかった。
+
+###### → Tôi cố gắng gọi Jake nhưng không thành tiếng.
+
+##### 19. 連絡先がわからなくて、連絡しようにも連絡できなかった。
+
+###### → Không biết ai để liên lạc nên có muốn liên lạc cũng không thể được.
+
+##### 20. 当時、子供がおもちゃ を欲し가ったが、お金がなくて買ってやろうにも買ってやれなかった。
+
+###### → Con tôi đang muốn mua đồ chơi nhưng tôi lại không có tiền, muốn mua cho con mà không thể mua được.
