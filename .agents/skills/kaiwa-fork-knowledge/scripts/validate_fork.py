@@ -260,6 +260,44 @@ def has_block_content(value: str) -> bool:
                 re.search(r'(?:…|⋯){1,}|[.．・]{3,}|[!?！？○◯×◎△]', value))
 
 
+def deferred_translations(lines: list[str], markers: dict[int, tuple[str, str]]) -> dict[int, str]:
+    """Recognize a numbered JP exercise followed by explicitly numbered VI.
+
+    Only complete 1..N groups with nonempty circled-number translations qualify.
+    A prose summary or a later unrelated gloss cannot satisfy missing pairs.
+    This checks correspondence, not whether the translations retain every idea.
+    """
+    result: dict[int, str] = {}
+    for start, marker in markers.items():
+        if marker[0] != 'JP' or not re.match(r'^\s*1[.)]\s+\*\*JP:', lines[start]):
+            continue
+        end = next((i for i in range(start + 1, len(lines)) if pair_boundary(lines[i])), len(lines))
+        indices = [i for i in markers if start <= i < end]
+        if len(indices) < 2 or any(markers[i][0] != 'JP' for i in indices):
+            continue
+        ordinals = [re.match(r'^\s*(\d+)[.)]\s+\*\*JP:', lines[i]) for i in indices]
+        if any(match is None for match in ordinals):
+            continue
+        expected = list(range(1, len(indices) + 1))
+        if [int(match[1]) for match in ordinals] != expected:
+            continue
+        glosses = [(i, re.match(r'^\s*\*\*Bản Việt[^*]*:\*\*\s*(.*)$', lines[i]))
+                   for i in range(indices[-1] + 1, end)]
+        glosses = [(i, match) for i, match in glosses if match is not None]
+        if len(glosses) != 1:
+            continue
+        _, gloss = glosses[0]
+        text = gloss[1]
+        numbers = list(re.finditer(r'(?<!\S)([①-⑳])\s*', text))
+        if [ord(match[1]) - ord('①') + 1 for match in numbers] != expected:
+            continue
+        parts = [text[match.end():numbers[j + 1].start() if j + 1 < len(numbers) else len(text)].strip()
+                 for j, match in enumerate(numbers)]
+        if all(has_block_content(part) for part in parts):
+            result.update(zip(indices, parts))
+    return result
+
+
 def validate_chapter(path: Path, report: Report) -> set[str]:
     content = read_text(path, report, str(path))
     if content is None:
@@ -287,6 +325,7 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
     lines, source_lines = language_lines(content.splitlines())
     markers = {i: marker for i, line in enumerate(lines)
                if (marker := pair_marker(line)) is not None}
+    deferred = deferred_translations(lines, markers)
 
     def next_marker(start: int) -> tuple[int, tuple[str, str]] | None:
         for i in range(start + 1, len(lines)):
@@ -314,7 +353,14 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
             report.error(f'{path}:{source_lines[index]}', f'empty {label} text')
         if tag == 'JP':
             expected = 'VI' if role is None else f'{role} (VI)'
-            if following is None or not labels_correspond(label, following[1][0]):
+            if index in deferred:
+                source_blanks = len(EXERCISE_BLANK.findall(block))
+                translated_blanks = len(EXERCISE_BLANK.findall(deferred[index]))
+                if source_blanks != translated_blanks:
+                    report.warn(f'{path}:{source_lines[index]}',
+                                f'possible exercise placeholder mismatch: JP {source_blanks}, VI {translated_blanks}; '
+                                'review against source, including intentional placeholder notation changes')
+            elif following is None or not labels_correspond(label, following[1][0]):
                 report.error(f'{path}:{source_lines[index]}', f'{label} must be followed by {expected} before the next section')
             else:
                 vi_index, (_, vi_value) = following

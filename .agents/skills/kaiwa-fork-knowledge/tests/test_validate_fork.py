@@ -219,6 +219,40 @@ class TranslationLayoutTest(unittest.TestCase):
         errors = self.check('**JP:** はい。\n**VI:** Vâng.\n\n**VI:** Vâng ạ.\n')
         self.assertTrue(any('lacks preceding' in error for error in errors))
 
+    def test_numbered_exercise_can_keep_translations_after_the_whole_group(self):
+        self.assertEqual([], self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n\n'
+                                        '**Bản Việt để đọc sau khi chọn:** ① Vâng. ② Không.\n'))
+
+    def test_deferred_translation_cannot_be_unnumbered_summary(self):
+        self.assertTrue(self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n\n'
+                                   '**Bản Việt:** Hai người trả lời.\n'))
+
+    def test_deferred_translation_cannot_skip_an_item(self):
+        self.assertTrue(self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n3. **JP:** どうぞ。\n\n'
+                                   '**Bản Việt:** ① Vâng. ③ Xin mời.\n'))
+
+    def test_deferred_translation_cannot_duplicate_an_item_number(self):
+        self.assertTrue(self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n\n'
+                                   '**Bản Việt:** ① Vâng. ① Không.\n'))
+
+    def test_deferred_translation_cannot_have_empty_item(self):
+        self.assertTrue(self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n\n'
+                                   '**Bản Việt:** ① ② Không.\n'))
+
+    def test_deferred_translation_cannot_cross_section_boundary(self):
+        self.assertTrue(self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n\n## Khác\n'
+                                   '**Bản Việt:** ① Vâng. ② Không.\n'))
+
+    def test_deferred_translation_does_not_hide_missing_source_payload(self):
+        self.assertTrue(self.check('1. **JP:** \n2. **JP:** いいえ。\n\n'
+                                   '**Bản Việt:** ① Vâng. ② Không.\n'))
+
+    def test_deferred_translation_still_warns_when_a_blank_is_solved(self):
+        report = self.report('1. **JP:** 名前は＿＿＿です。\n2. **JP:** はい。\n\n'
+                             '**Bản Việt:** ① Tôi tên An. ② Vâng.\n')
+        self.assertEqual([], report.errors)
+        self.assertTrue(any('JP 1, VI 0' in warning for warning in report.warnings))
+
 
 if __name__ == '__main__':
     unittest.main()

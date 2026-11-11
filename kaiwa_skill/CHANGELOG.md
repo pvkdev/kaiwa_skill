@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.8 — 2026-11-11
+
+- Validator nhận nhóm đề Nhật đánh số rồi bản Việt đánh số tròn ở phía sau, giữ bố cục tách dịch khỏi đề. Chỉ chấp nhận đủ số thứ tự và nội dung từng mục; vẫn bắt thiếu dịch, mục rỗng, qua ranh giới chương và lệch ô trống. Kiểm cấu trúc không phát hiện được bản dịch chỉ tóm tắt ý.
+- QA sớm điện thoại bổ sung quy tắc giữ từng lời khuyên, đúng chiều so sánh và quan hệ nhân quả khi viết lại phần giải thích.
+- 70 test fork và17 test direct PASS; regression14 bản đã chốt:0 lỗi,16 cảnh báo thuộc những vùng nguồn Nameraka/Manners/88 đã ghi rõ.
+
 ## 0.4.7 — 2026-11-11
 
 - Nhận nhiều cặpJP–VI cùng dòng và lời dẫn trước thoại manga; báo lỗi theo số dòng gốc, không đổi bố cục sách. Giữ các lượt phản ứng/dấu lặng có nghĩa.
