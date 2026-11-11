@@ -13,3 +13,7 @@ Theo QA đã sửa: TOC Unit34 thành 失礼ですけれども…… theo PDF11;
 - chapters/02-Unit01-第一声.md: 3ddc6cd13b1fd0f41272bade0451d501cbbb410abcb7f2a1032b822fec37836e
 
 Rà bổ sung PDF45: root mở và xác nhận rolecaseA ghi山本商事, B ghi山川商事; output giữ đúng từng nơi, không chuẩn hóa theo suy đoán. Tổng nguồn root đã mở14 trang. Chỉ so phầnrolecase45, chưa toànUnit7.
+
+Rà bổ sung PDF49/51: số60-2345-0099 đúng như bản in rolecard và lặp hai lần trong script; không tự đổi thành06. So phần monologue,8lượt roleplay và10mục từ ở51 với output, phù hợp. Riêngノート④ thiếu ví dụ 同じ九州方言でも、鹿児島の方言は独特である; đã yêu cầu worker bổ sung Nhật–Việt và rà cácノート trước đó, đang chờ sửa. Tổng root đã mở16 trang; không tính là fullUnit8 độc lập vì chưa mở48/50.
+
+Worker đã bổ sung ví dụノート④ ởPDF51, root đọc lại câuNhật vàViệt sau sửa thấy phù hợp ảnh51. Worker báo audit cácノートUnit1–9 và khôi phục thêm ví dụ tại35/39/43/50; root chưa mở các trang này ở lần QA này, không tính là kiểm độc lập. Root mở thêm bìa1 và colophon160, xác nhận CDつき, ISBN9784757413313, lần1 ngày2007-12-25/lần4 ngày2014-05-26. Tổng root đã mở18 trang, trong đó160 mới soidentity, chaptercolophon đang chờ writer.
