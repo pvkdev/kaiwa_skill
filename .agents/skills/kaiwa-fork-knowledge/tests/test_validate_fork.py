@@ -26,6 +26,24 @@ class TranslationLayoutTest(unittest.TestCase):
     def test_named_japanese_speakers(self):
         self.assertEqual([], self.check('**係の人 (JP):** どうぞ。\n\n**係の人 (VI):** Xin mời.\n'))
 
+    def test_translated_role_keeps_adjacent_pair(self):
+        self.assertEqual([], self.check('**係の人 (JP):** どうぞ。\n\n**Nhân viên (VI):** Xin mời.\n'))
+
+    def test_romanized_name_with_example_number(self):
+        self.assertEqual([], self.check('**2 ルイス (JP):** お願いします。\n\n**Louis (VI):** Nhờ anh.\n'))
+
+    def test_example_number_is_not_role_identity(self):
+        self.assertEqual([], self.check('**1 リサ (JP):** はい。\n\n**リサ (VI):** Vâng.\n'))
+
+    def test_different_japanese_roles_still_fail(self):
+        self.assertTrue(self.check('**先生 (JP):** はい。\n\n**学生 (VI):** Vâng.\n'))
+
+    def test_translated_role_still_requires_vi_tag(self):
+        self.assertTrue(self.check('**係の人 (JP):** はい。\n\n**Nhân viên (JP):** Vâng.\n'))
+
+    def test_translated_role_still_requires_adjacent_translation(self):
+        self.assertTrue(self.check('**係の人 (JP):** はい。\n\n## Phần khác\n\n**Nhân viên (VI):** Vâng.\n'))
+
     def test_unlabelled_source_speaker(self):
         self.assertEqual([], self.check('**A₁:** 伝言をお願いします。\n**VI:** Nhờ chuyển lời giúp tôi.\n'))
 

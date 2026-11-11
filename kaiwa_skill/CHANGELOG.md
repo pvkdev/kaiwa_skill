@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.5 — 2026-11-11
+
+- Validator chấp nhận vai Nhật được dịch/phiên âm trong lượt Việt liền kề và số ví dụ không lặp ở nhãn vai. Kiểm sai vai A/B, thiếu lượt Việt và nhầm tag vẫn giữ; parser không xác minh ngữ nghĩa tên vai đã dịch.
+- Thêm sáu ca hồi quy từ bản clean kính ngữ; tổng 26 kiểm thử đạt.
+
 ## 0.3.4 — 2026-11-11
 
 - Validator nhận cặp Nhật–Việt trong danh sách đánh số/gạch đầu dòng, vai nói có tên Nhật và đoạn Nhật không nhãn, tránh bắt đổi bố cục sách chỉ vì giới hạn parser. Kiểm thiếu bản dịch hoặc sai vai rõ ràng vẫn giữ.

@@ -156,6 +156,29 @@ def check_digest(path: Path, expected: object, report: Report, label: str) -> No
         report.error(label, f'missing file: {path}')
 
 
+def labels_correspond(japanese: str, vietnamese: str) -> bool:
+    """Check adjacent language tags, without pretending to translate role names.
+
+    A Japanese role can be translated or romanized in its Vietnamese turn.
+    Semantic role identity still needs review; ASCII A/B mismatches stay errors.
+    """
+    if japanese == 'JP' or vietnamese == 'VI':
+        return japanese == 'JP' and vietnamese == 'VI'
+    if not japanese.endswith(' (JP)') or not vietnamese.endswith(' (VI)'):
+        return False
+    def role(label: str) -> str:
+        return re.sub(r'^(?:例\s*)?[0-9０-９]+\s+', '', label[:-5]).strip()
+    source, target = role(japanese), role(vietnamese)
+    if not source or not target:
+        return False
+    if source == target:
+        return True
+    japanese_script = r'[\u3040-\u30ff\u3400-\u9fff]'
+    return bool(re.search(japanese_script, source) and
+                not re.search(japanese_script, target) and
+                re.search(r'[^\W\d_]', target, re.UNICODE))
+
+
 def validate_chapter(path: Path, report: Report) -> set[str]:
     content = read_text(path, report, str(path))
     if content is None:
@@ -192,7 +215,7 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
             expected = 'VI' if label == 'JP' else label.replace('(JP)', '(VI)')
             following_line = next((later for later in lines[index + 1:] if later.strip()), '')
             following = PAIR.match(following_line)
-            if following is None or following.group(1) != expected:
+            if following is None or not labels_correspond(label, following.group(1)):
                 report.error(f'{path}:{index + 1}', f'{label} must be followed by {expected} (blank lines allowed)')
         elif label == 'VI' or label.endswith('(VI)'):
             expected = 'JP' if label == 'VI' else label.replace('(VI)', '(JP)')
@@ -203,7 +226,7 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
             unlabelled_source = (label == 'VI' and previous is None and
                                  not previous_line.lstrip().startswith(('#', '<')) and
                                  re.search(r'[\u3040-\u30ff\u3400-\u9fff]', previous_line))
-            if (previous is None or previous.group(1) != expected) and not unlabelled_source:
+            if (previous is None or not labels_correspond(previous.group(1), label)) and not unlabelled_source:
                 report.error(f'{path}:{index + 1}', f'{label} lacks preceding {expected}')
     return seen
 
