@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T11:01:29.859470+00:00",
+  "updated_at_utc": "2026-11-11T11:35:49.681110+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
-  "worker_reasoning_effort": "high",
+  "worker_reasoning_effort": "medium",
   "max_workers": 3,
   "preservation_policy": "Complete readable Japanese–Vietnamese book rewrite preserving each book's teaching sequence, exercises and distinctive sections. Not a summary or curriculum template.",
   "assignments": [
@@ -15,7 +15,7 @@
     },
     {
       "role": "worker_1",
-      "worker": "/root/clean_keigo",
+      "worker": "/root/medium_okimari180",
       "stage": "full_pdf_direct_active",
       "book_id": "180-common-native-japanese-figures-of-speech-in-regular-8eeff5021caa",
       "source_pdf": "kaiwa_skill/book/Kaiwa/180-common-native-japanese-figures-of-speech-in-regular-conversation-9784863923256-4863923256_compress.pdf",
@@ -24,7 +24,7 @@
     },
     {
       "role": "worker_2",
-      "worker": "/root/clean_namachuukei_sho",
+      "worker": "/root/medium_business30",
       "stage": "full_pdf_direct_active",
       "book_id": "30-f497459c2a83",
       "source_pdf": "kaiwa_skill/book/BJT/にほんごで働く!ビジネス日本語30時間.pdf",
@@ -33,7 +33,7 @@
     },
     {
       "role": "worker_3",
-      "worker": "/root/clean_namachuukei_chu",
+      "worker": "/root/medium_daily5500",
       "stage": "full_pdf_direct_active",
       "book_id": "5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
       "source_pdf": "kaiwa_skill/book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf",
@@ -173,7 +173,7 @@
       ],
       "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_sho",
+      "owner": "/root/medium_business30",
       "title": "しごとの日本語 電話応対 基礎編",
       "knowledge_dir": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編",
       "knowledge_commit": "49b0926"
@@ -204,7 +204,7 @@
       "route": "pdf_direct",
       "state": "full_direct_active",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_sho",
+      "owner": "/root/medium_business30",
       "title": "にほんごで働く！ビジネス日本語30時間",
       "knowledge_dir": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間"
     },
@@ -254,7 +254,7 @@
       "route": "pdf_direct",
       "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_keigo",
+      "owner": "/root/medium_okimari180",
       "title": "わかる！話せる！日本語会話 発展文型125",
       "knowledge_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125",
       "known_source_issue": "PDF120/unit67: final A turn only in English/Chinese, no Japanese/romaji counterpart; retained VI, no invented JP.",
@@ -268,7 +268,7 @@
       "route": "pdf_direct",
       "state": "full_direct_active",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_keigo",
+      "owner": "/root/medium_okimari180",
       "title": "日本人がよく使う 日本語会話お決まり表現180",
       "knowledge_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話お決まり表現180"
     },
@@ -317,7 +317,7 @@
       ],
       "state": "full_direct_active",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_chu",
+      "owner": "/root/medium_daily5500",
       "title": "5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
       "knowledge_dir": "kaiwa_skill/knowledge/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày"
     },
@@ -522,7 +522,7 @@
       ],
       "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_chu",
+      "owner": "/root/medium_daily5500",
       "title": "シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
       "knowledge_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
       "knowledge_commit": "dca0eff"
@@ -1135,5 +1135,22 @@
   },
   "completed_full_books": 18,
   "completed_full_source_pages": 2158,
-  "completion_count_definition": "18 released supplied-PDF scopes/2158 pages: initial7 independently reviewed in full; later11 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content."
+  "completion_count_definition": "18 released supplied-PDF scopes/2158 pages: initial7 independently reviewed in full; later11 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "replaced_interrupted_workers": [
+    {
+      "old_worker": "/root/clean_keigo",
+      "new_worker": "/root/medium_okimari180",
+      "reason": "User explicitly requested gpt-6-sol/medium; old workers remain interrupted, replacements resume existing checkpoints."
+    },
+    {
+      "old_worker": "/root/clean_namachuukei_sho",
+      "new_worker": "/root/medium_business30",
+      "reason": "User explicitly requested gpt-6-sol/medium; old workers remain interrupted, replacements resume existing checkpoints."
+    },
+    {
+      "old_worker": "/root/clean_namachuukei_chu",
+      "new_worker": "/root/medium_daily5500",
+      "reason": "User explicitly requested gpt-6-sol/medium; old workers remain interrupted, replacements resume existing checkpoints."
+    }
+  ]
 }
