@@ -1,6 +1,6 @@
 # Clean hàng loạt — đang điều phối
 
-Kế hoạch hiện hành: [DIRECT_PLAN.md](DIRECT_PLAN.md). Raw đầy đủ tiếp tục clean; PDF chưa chạy đi thẳng knowledge sau pilot. Kiểm kê đổi luồng: 9 nguồn raw ready, 7 raw dở/có vấn đề nguồn, 14 PDF chưa ingest. Các số này là snapshot; kiểm lại manifest/claim khi giao việc.
+Kế hoạch hiện hành: [DIRECT_PLAN.md](DIRECT_PLAN.md). Raw đầy đủ tiếp tục clean; chưa có raw đầy đủ thì PDF-direct theo phân công, giữ raw dở làm tài liệu phụ chỉ đọc. Đã có9bản đọc đủ779trang PDF đầu vào; catalog30PDF vẫn đang xử lý. Các mốc bên dưới là snapshot, dùng resume/state thật khi tiếp quản.
 
 Người dùng yêu cầu một sub điều phối và ba worker, tất cả `gpt-6-sol/high`; runtime chỉ cho ba sub active cùng root nên luân phiên vai. Root giữ lượt điều phối, QA và Git; chưa hoàn thành catalog30 PDF.
 
@@ -18,14 +18,19 @@ Bảy nguồn đầu có501 trang PDF, đã build/validate và rà ảnh/raw/cle
 
 Pilot 基本文型88 chỉ PDF7–12:4 chapter,9 unit; đã khôi phục CD01–03/trang mở PART1/mạch hội thoại trước giải thích/MEMO. Root mở lại đủ6 ảnh và rà bản sửa; vẫn pilot_partial, không gọi full sách.
 
+## Hai bản full mới: tác giả đối chiếu toàn sách, root QA mẫu
+
+- Roleplay trung cấp140trang:10chương/109unit, commit689603f. Root QA16trang mẫu, inventory1CD/15mã track. Chưa full independent semantic review.
+- 本文冊138trang:22chương/128unit, commit42b8667. Root QA10trang mẫu. Rebase provenance chỉ4anchor/dòng trống trong raw tổng hợp; toàn138rawpages và nội dung chapter không đổi, snapshot/history cũ được giữ. Build/validate0/0. Chưa full independent semantic review.
+
 ## Đang chạy
 
-- `/root/knowledge_coordinator`: đã bàn giao contract/công cụ PDF-native; 8 test mới và30 test cũ PASS. Đang idle để ba worker chạy.
-- `/root/clean_keigo`: pilot Wakaru đã được root kiểm/sửa và ghi PASS theo hash, vẫn chỉ PDF1/17/18/23/149/152 +PDF9 chứng cứ CD. Đã giao full direct mới cuốn なめらか日本語会話 (tên/ấn bản chờ worker xác minh bìa),163 trang, không tạo raw.
-- `/root/clean_namachuukei_sho`: tiếp clean roleplay trung cấp140 trang từ checkpoint PDF1–85, đang Unit5; bổ sung CD/audio inventory.
-- `/root/clean_namachuukei_chu`: 本文冊 kinh doanh138 trang đã author-check PDF1–35; đang tiếp từ PDF36. Không làm lại.
+- `/root/knowledge_coordinator`: đã bàn giao direct/needs_review/rebase;17test direct +35test fork PASS. Đang idle để ba worker chạy.
+- `/root/clean_keigo`: full direct なめらか日本語会話163trang, đã hết23bài và index tớiPDF153, đang đáp án154–162. PDF32/chapter05 needs_review vùng chữ in bị che; không dùng ghi tay làm đáp án, các phần khác vẫn tiếp tục.
+- `/root/clean_namachuukei_sho`: full direct わかるビジネス日本語152trang từ pilot PASS; cùng thư mục/history,21chapter. Đã hết45Scene tớiPDF129, đang phụ lục130–148; chapter đáp án draft chờ150–151, không giả complete.
+- `/root/clean_namachuukei_chu`: full direct 練習冊148trang, tận dụng23trang raw cũ; đã qua Bài13/PDF97, đang Bài14. Không sửa corpus/claim cũ.
 
-Review roleplay trước khi đổi luồng chỉ mới mở một số trang phần đầu, chưa xác nhận chapter độc lập. Nghiệm thu tương lai phải dựa hash/output hiện tại, không dùng trạng thái cũ làm bằng chứng.
+Mọi nghiệm thu dựa hash hiện tại và phạm vi review được ghi rõ. Book88 đã chuyển PDF-direct có history (commit1c2d7c0); giữ byte4chapter/9unit và scope7–12. Công thức nguồnPDF9 vẫn needs_review; chưa mở full96trang. Worker kế dùng extend-scope, không init/reset.
 
 Pilot trực tiếp đã giữ45key lựa chọn,21câu Drill và65mảnh đáp án ôn có Việt; đã sửa bản Việt từng lượt bài tập và hai nghĩa/cách viết. Báo cáo `_meta/pilot-independent-review.json` trong thư mục Wakaru. Các bản toàn sách vẫn cần checkpoint/QA riêng; không suy full acceptance từ PASS pilot.
 

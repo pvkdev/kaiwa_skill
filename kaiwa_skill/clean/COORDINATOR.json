@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T05:21:42.672729+00:00",
+  "updated_at_utc": "2026-11-11T06:41:34.689328+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -11,7 +11,7 @@
     {
       "role": "sub_coordinator",
       "worker": "/root/knowledge_coordinator",
-      "stage": "tools_delivered_idle_to_release_slot"
+      "stage": "rebase_tools_delivered_idle_to_release_slot"
     },
     {
       "role": "worker_1",
@@ -26,14 +26,20 @@
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
-      "stage": "continue_clean_and_audio",
-      "book_id": "remake-ad35b87b708d"
+      "stage": "full_pdf_direct_active",
+      "book_id": "wakaru-bijinesu-nihongo-c0c4bc000a34",
+      "source_pdf": "kaiwa_skill/book/BJT/Wakaru_Bijinesu_Nihongo.pdf",
+      "scope_pdf_pages": 152,
+      "planned_chapters": 21
     },
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
-      "stage": "continue_clean_and_audio",
-      "book_id": "01-yuukibui-b12c61270c7b"
+      "stage": "full_pdf_direct_reuse_partial_raw_active",
+      "book_id": "02-yuukibui-3e66906b7e05",
+      "source_pdf": "kaiwa_skill/book/BJT/02.日本語でビジネス会話 中級編 ー練習冊 YUUKIBUI.pdf",
+      "scope_pdf_pages": 148,
+      "planned_chapters": 21
     }
   ],
   "source_queue": [
@@ -53,14 +59,16 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "42b8667"
     },
     {
       "book_id": "02-yuukibui-3e66906b7e05",
       "source_pdf": "kaiwa_skill/book/BJT/02.日本語でビジネス会話 中級編 ー練習冊 YUUKIBUI.pdf",
       "source_sha256": "3e66906b7e052b1394bb246542ce5087b15570da4dcf2425d037e4d198a2440b",
       "page_count": 148,
-      "route": "raw_in_progress_or_source_issue",
+      "route": "pdf_direct_reuse_partial_raw",
       "raw_counts": {
         "pending": 125,
         "rendered": 0,
@@ -79,7 +87,10 @@
         "Not all manifest pages are verified",
         "Build verified pages incomplete",
         "Build page hashes incomplete"
-      ]
+      ],
+      "state": "full_direct_active_using_readonly_partial_raw",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_chu"
     },
     {
       "book_id": "03-yuukibui-dd762e3fd201",
@@ -104,7 +115,7 @@
       "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf",
       "source_sha256": "0e3d5e9467fafaef97acda677080aa1bb6f9b849aa20e5993172ee6b0864d7a6",
       "page_count": 136,
-      "route": "raw_in_progress_or_source_issue",
+      "route": "pdf_direct_reuse_partial_raw",
       "raw_counts": {
         "pending": 0,
         "rendered": 0,
@@ -123,14 +134,16 @@
         "Build verified pages incomplete",
         "Build page hashes incomplete",
         "Page 1: verification evidence/hash/issue mismatch"
-      ]
+      ],
+      "state": "queued_direct_with_readonly_raw",
+      "raw_initialization_allowed": false
     },
     {
       "book_id": "shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0",
       "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Denwa_Outai_Kisohen.pdf",
       "source_sha256": "dfdb0e2b61e0322252532c2a83a7c4c5d62269b45edb40ae61eb5e3c32b74711",
       "page_count": 162,
-      "route": "raw_in_progress_or_source_issue",
+      "route": "pdf_direct_reuse_partial_raw",
       "raw_counts": {
         "pending": 158,
         "rendered": 0,
@@ -149,7 +162,9 @@
         "Build verified pages incomplete",
         "Build page hashes incomplete",
         "Page 1: Markdown/evidence missing"
-      ]
+      ],
+      "state": "queued_direct_with_readonly_raw",
+      "raw_initialization_allowed": false
     },
     {
       "book_id": "wakaru-bijinesu-nihongo-c0c4bc000a34",
@@ -157,7 +172,7 @@
       "source_sha256": "c0c4bc000a3471ce6a94171eb076df1c8efe54c1859a6fbf9d1e7b662a245993",
       "page_count": 152,
       "route": "pdf_direct",
-      "state": "pilot_accepted_full_extension_pending",
+      "state": "full_direct_active_after_pilot",
       "raw_initialization_allowed": false,
       "pilot_scope_pdf_pages": [
         1,
@@ -166,7 +181,8 @@
         23,
         149,
         152
-      ]
+      ],
+      "owner": "/root/clean_namachuukei_sho"
     },
     {
       "book_id": "30-f497459c2a83",
@@ -193,7 +209,9 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "689603f"
     },
     {
       "book_id": "remake-5779739d0a4b",
@@ -254,7 +272,7 @@
       "source_pdf": "kaiwa_skill/book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf",
       "source_sha256": "c8933782539c7bbe8ac755f2278bb7a6d7cf0d9165843c9ef14a198993b1825a",
       "page_count": 136,
-      "route": "raw_in_progress_or_source_issue",
+      "route": "pdf_direct_reuse_partial_raw",
       "raw_counts": {
         "pending": 0,
         "rendered": 0,
@@ -273,14 +291,16 @@
         "Build verified pages incomplete",
         "Build page hashes incomplete",
         "Page 1: verification evidence/hash/issue mismatch"
-      ]
+      ],
+      "state": "queued_direct_with_readonly_raw",
+      "raw_initialization_allowed": false
     },
     {
       "book_id": "669041168-4f47df1cc97a",
       "source_pdf": "kaiwa_skill/book/Kaiwa/669041168-日本語会話-基本文型８８.pdf",
       "source_sha256": "4f47df1cc97a4b27ba61d05850633ea73466e48c03a20b48e927f351435f3256",
       "page_count": 96,
-      "route": "raw_in_progress_or_source_issue",
+      "route": "pdf_direct_existing_pilot",
       "raw_counts": {
         "pending": 0,
         "rendered": 0,
@@ -299,7 +319,11 @@
         "Build verified pages incomplete",
         "Build page hashes incomplete",
         "Page 28: verification evidence/hash/issue mismatch"
-      ]
+      ],
+      "state": "migration_complete_queued_full_extension",
+      "raw_initialization_allowed": false,
+      "migration_commit": "1c2d7c0",
+      "known_source_issue": "PDF9 contradictory contraction formula retained; pilot only7–12"
     },
     {
       "book_id": "700-essential-phrases-for-japanese-conversation-4863922-16d0299e765d",
@@ -396,7 +420,7 @@
       "source_pdf": "kaiwa_skill/book/Shadowing/Namachuukei Shochuukyuu 2.pdf",
       "source_sha256": "b5b793947c13ed7889cbe26f33c5e7e9f49cf23069463499fafcddf461f6e5a8",
       "page_count": 152,
-      "route": "raw_in_progress_or_source_issue",
+      "route": "pdf_direct_reuse_partial_raw",
       "raw_counts": {
         "pending": 140,
         "rendered": 2,
@@ -409,7 +433,9 @@
       "blocker_count": 1,
       "blocker_summary": [
         "Ingest build not yet present"
-      ]
+      ],
+      "state": "queued_direct_with_readonly_raw",
+      "raw_initialization_allowed": false
     },
     {
       "book_id": "nameraka-nihongo-kaiwa-7a1ef4391141",
@@ -435,7 +461,7 @@
       "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf",
       "source_sha256": "be075317cdcab1bad0245126bf7c4fe9bb066fcb714bc19aa841f5373b612869",
       "page_count": 145,
-      "route": "raw_in_progress_or_source_issue",
+      "route": "pdf_direct_reuse_partial_raw",
       "raw_counts": {
         "pending": 0,
         "rendered": 0,
@@ -454,7 +480,9 @@
         "Not all manifest pages are verified",
         "Build verified pages incomplete",
         "Build page hashes incomplete"
-      ]
+      ],
+      "state": "queued_direct_with_readonly_raw",
+      "raw_initialization_allowed": false
     },
     {
       "book_id": "1160-t-v-ng-mimikara-n2-6d226fd8769f",
@@ -624,10 +652,11 @@
     "pilot_output_commit": "9e2f7d5"
   },
   "tool_validation": {
-    "direct_tests_passed": 10,
-    "fork_tests_passed": 30,
-    "skill_quick_validate": "passed",
-    "initial_skill_commit": "09add94"
+    "version": "0.4.5",
+    "fork_tests_passed": 35,
+    "direct_tests_passed": 17,
+    "commit": "ece2c91",
+    "note": "Migration88 structural0error/2sourceissuewarnings; full scope not started"
   },
   "knowledge_outputs": [
     {
@@ -637,10 +666,9 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 8,
-      "chapter_checkpoint_counts": {
-        "author_checked": 4
-      },
+      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
+      "acceptance": null,
       "full_completion_requires_review_not_status_alone": true
     },
     {
@@ -650,10 +678,9 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 70,
-      "chapter_checkpoint_counts": {
-        "author_checked": 7
-      },
+      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
+      "acceptance": null,
       "full_completion_requires_review_not_status_alone": true
     },
     {
@@ -663,10 +690,9 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 47,
-      "chapter_checkpoint_counts": {
-        "author_checked": 5
-      },
+      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
+      "acceptance": null,
       "full_completion_requires_review_not_status_alone": true
     },
     {
@@ -674,13 +700,20 @@
       "title": "「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語",
       "source_pdf": "kaiwa_skill/book/BJT/Wakaru_Bijinesu_Nihongo.pdf",
       "source_mode": "pdf_direct",
-      "metadata_status": "pilot_partial",
-      "scope_pdf_page_count": 6,
+      "metadata_status": "full",
+      "scope_pdf_page_count": 152,
       "chapter_checkpoint_counts": {
-        "author_checked": 4
+        "author_checked": 17,
+        "draft": 1,
+        "pending": 3
       },
       "audio_inventory_present": true,
-      "full_completion_requires_review_not_status_alone": true
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 131,
+        "pending": 21
+      }
     },
     {
       "book_dir": "kaiwa_skill/knowledge/なめらか日本語会話",
@@ -690,24 +723,37 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 163,
       "chapter_checkpoint_counts": {
-        "author_checked": 3,
-        "pending": 24
+        "author_checked": 24,
+        "needs_review": 1,
+        "pending": 2
       },
       "audio_inventory_present": true,
-      "full_completion_requires_review_not_status_alone": true
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 152,
+        "needs_review": 1,
+        "pending": 10
+      }
     },
     {
       "book_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 基本文型88",
       "title": "わかる！話せる！日本語会話 基本文型88",
       "source_pdf": "kaiwa_skill/book/Kaiwa/669041168-日本語会話-基本文型８８.pdf",
-      "source_mode": "raw_fork",
+      "source_mode": "pdf_direct",
       "metadata_status": "pilot_partial",
       "scope_pdf_page_count": 6,
       "chapter_checkpoint_counts": {
-        "author_checked": 4
+        "needs_review": 2,
+        "author_checked": 2
       },
       "audio_inventory_present": true,
-      "full_completion_requires_review_not_status_alone": true
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 5,
+        "needs_review": 1
+      }
     },
     {
       "book_dir": "kaiwa_skill/knowledge/中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―",
@@ -716,11 +762,9 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 140,
-      "chapter_checkpoint_counts": {
-        "author_checked": 9,
-        "pending": 1
-      },
-      "audio_inventory_present": false,
+      "chapter_checkpoint_counts": {},
+      "audio_inventory_present": true,
+      "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true
     },
     {
@@ -730,10 +774,9 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 93,
-      "chapter_checkpoint_counts": {
-        "author_checked": 9
-      },
+      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
+      "acceptance": null,
       "full_completion_requires_review_not_status_alone": true
     },
     {
@@ -743,12 +786,29 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 138,
+      "chapter_checkpoint_counts": {},
+      "audio_inventory_present": true,
+      "acceptance": "full_author_checked_with_root_sampled_qa",
+      "full_completion_requires_review_not_status_alone": true
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 練習冊",
+      "title": "日本語でビジネス会話 中級編〈練習冊〉",
+      "source_pdf": "kaiwa_skill/book/BJT/02.日本語でビジネス会話 中級編 ー練習冊 YUUKIBUI.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 148,
       "chapter_checkpoint_counts": {
-        "author_checked": 10,
-        "pending": 12
+        "author_checked": 14,
+        "pending": 7
       },
       "audio_inventory_present": true,
-      "full_completion_requires_review_not_status_alone": true
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 97,
+        "pending": 51
+      }
     },
     {
       "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 英訳・語い冊",
@@ -757,10 +817,9 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 103,
-      "chapter_checkpoint_counts": {
-        "author_checked": 21
-      },
-      "audio_inventory_present": false,
+      "chapter_checkpoint_counts": {},
+      "audio_inventory_present": true,
+      "acceptance": null,
       "full_completion_requires_review_not_status_alone": true
     },
     {
@@ -770,10 +829,9 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 89,
-      "chapter_checkpoint_counts": {
-        "author_checked": 11
-      },
-      "audio_inventory_present": false,
+      "chapter_checkpoint_counts": {},
+      "audio_inventory_present": true,
+      "acceptance": null,
       "full_completion_requires_review_not_status_alone": true
     },
     {
@@ -783,23 +841,30 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 91,
-      "chapter_checkpoint_counts": {
-        "author_checked": 13
-      },
-      "audio_inventory_present": false,
+      "chapter_checkpoint_counts": {},
+      "audio_inventory_present": true,
+      "acceptance": null,
       "full_completion_requires_review_not_status_alone": true
     }
   ],
-  "pending_tool_work": [
-    {
-      "owner": "/root/knowledge_coordinator",
-      "status": "waiting_for_active_slot",
-      "task": "Support needs_review source issues in direct units/page/chapter/checkpoint/resume; strict validation rejects unresolved issues, explicit scoped acceptance warns without ignoring missing/pending/stale. Nameraka PDF32 handwriting obscures printed glyphs; author keeps draft+issues meanwhile."
-    }
-  ],
+  "pending_tool_work": [],
   "resume_notes": [
-    "Full direct in progress uses per-page/chapter checkpoint/resume; whole-book build waits for evidence across full scope. Do not fabricate pending pages or shrink scope to build.",
-    "Roleplay140 all physical pages authored; exercise Vietnamese audit still active. Root source sample122 model/audio15 checked; exercise translation must not supply grammar hidden in blanks.",
-    "Nameraka source sample3/4/7/8 corrections checked; full direct author is continuing beyond26 pages."
-  ]
+    "Full direct in progress uses per-page/chapter checkpoint/resume; whole-book build waits for full scope evidence.",
+    "Nameraka PDF32 narrow obscured question areas are needs_review; do not use handwritten answers. Strict validate rejects unresolved; explicit --allow-source-issues preserves warning and still rejects missing/pending/stale.",
+    "Wakaru extended from pilot on same folder via scope-history; pilot hash/report remain historical6page acceptance. PDF9 supplementary evidence must be fully mapped/read when cleaning full front.",
+    "Raw-complete books clean from snapshot; six raw-incomplete books assigned future PDF-direct may consult existing raw read-only. Book88 existing raw-fork pilot needs audited migration; do not overwrite/init it."
+  ],
+  "raw_coordination_check": {
+    "parent_thread": "01a1c315-57af-7570-8396-498b5c1e456d",
+    "parent_state": "idle/interrupted",
+    "checked_child_states": {
+      "book14_workbook02": "idle/interrupted",
+      "book15_namachuukei2": "idle/interrupted"
+    },
+    "raw_corpus_and_claim_files_unchanged": true,
+    "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
+  },
+  "completed_full_books": 9,
+  "completed_full_source_pages": 779,
+  "completion_count_definition": "7 prior full independently reviewed books; roleplay140 and main138 full author-checked with root16/10page sampled QA, respectively."
 }

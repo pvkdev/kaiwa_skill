@@ -3,7 +3,7 @@
 Yêu cầu mới ngày 2026-11-11 thay kế hoạch chạy hai lượt cho toàn bộ kho. Đích vẫn là bản sách Nhật–Việt đầy đủ, giữ mạch riêng, ví dụ, bài tập, đáp án và đặc trưng của mỗi sách.
 
 1. Raw đã đầy đủ: dùng fork-knowledge, tiếp tục checkpoint hiện có; không bỏ công việc đã làm.
-2. Raw đang làm: giữ nguồn/checkpoint, không chạy trùng. Coordinator kiểm manifest/claim thật để tiếp tục hoặc xử lý vấn đề; không tự coi raw partial là đủ.
+2. Raw đang dở: giữ nguyên nguồn/checkpoint; sau phân công tránh trùng, đi PDF-direct và tận dụng phần raw có sẵn như tài liệu phụ chỉ đọc. Không buộc hoàn tất lượt raw rồi mới clean, không coi raw partial là nguồn hoàn chỉnh. Pilot88 đã được migration có history giữ byte4chapter/9unit; nguồn chính mới là PDF, ledger raw cũ inactive được bảo toàn. Muốn mở full phải extend-scope, không init/reset.
 3. PDF chưa bắt đầu: dành cho kaiwa-pdf-knowledge; không khởi tạo raw mới. Snapshot kiểm kê ban đầu: 30 sách, 4597 trang, 16 đã khởi tạo raw, 14 chưa khởi tạo. Kiểm lại khi nhận sách vì số liệu có thể thay đổi.
 4. Viết contract và công cụ PDF-native: PDF hash, page/block evidence, coverage, units/search, checkpoint dependency, resume và audio inventory; không giả tạo raw provenance.
 5. Pilot một worker trên một phần sách Wakaru_Bijinesu_Nihongo.pdf (152 trang); chốt phạm vi sau khi xem ảnh. Root kiểm độc lập toàn bộ phạm vi theo cùng chuẩn clean. Lỗi pilot phải sửa output và skill trước khi PASS.
