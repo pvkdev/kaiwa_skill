@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 — 2026-11-11
+
+- Thêm skill `kaiwa-fork-knowledge`: biên soạn tầng kiến thức Nhật–Việt từ corpus, đối chiếu PDF, tách provenance và giữ nguyên ingest.
+- Thêm kế hoạch pilot, hợp đồng đầu ra, công cụ build bản đọc/chỉ mục và validator cấu trúc; không dùng script để chứng nhận dịch đúng hoặc đã đọc trang.
+- Pilot tách riêng trong `knowledge/`, tên thư mục theo bìa sách; chưa triển khai làm sạch toàn kho hoặc thiết kế lộ trình.
+
 ## 0.2.5 — 2026-11-11
 
 - Root trực tiếp đảm nhiệm điều phối/QA/Git theo yêu cầu người dùng; dừng sub điều phối riêng và tăng ba worker Sol/high song song trong giới hạn bốn tác nhân của phiên.
