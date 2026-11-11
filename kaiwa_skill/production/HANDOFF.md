@@ -1,5 +1,17 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
+## Sách12 accepted, sách14 đã mở — 2026-11-11T03:52:22.259194+00:00
+
+- Sách 12 `remake-ad35b87b708d`: 140/140 trang verified, không issue hoặc pending QA; build hiện hành, claim đã release. Root kiểm 20 mẫu nội dung và các phạm vi marker/icon; hợp các phạm vi là 34 trang, mức độ kiểm ghi rõ trong ledger. Acceptance, báo cáo và ledger gắn hash đã commit `3f59b9c`. Kho có 8 sách accepted, tổng 641 trang. Phạm vi nghiệm thu là toàn PDF được cung cấp, gồm phụ lục đáp án p130–140.
+- Sách 13 WIP qua p116: 56 verified, 60 needs_review, 29 pending p117–145; build hiện hành, claim cũ đã release, commit `10c62b4`. Worker `/root/production_book_13_root_cont3` Sol/high đang tiếp từ p117. Ruby tiếng Nhật p85 đã sửa và root đọc lại; review tiếng Thái và mẫu in nhỏ vẫn giữ đúng phạm vi.
+- Sách 14 `02-yuukibui-3e66906b7e05`, 148 trang: worker `/root/production_book_14_sol` Sol/high bắt đầu từ p1, tự init và claim bằng CLI. Nguồn và SHA chính xác có trong roster. Sách 11 `/root/production_book_11_root_cont7` vẫn tiếp tục, mốc gần nhất 120/138 verified.
+- Snapshot kiểm hash gần nhất: 1.150 verified / 4.597 trang; số đếm mới hơn đọc từ trạng thái thực. Ba worker đã được kiểm tra còn running. Root tiếp tục giữ lượt để QA, Git và điều phối; không gửi final chỉ vì đã khởi chạy. Chỉ commit đường dẫn ingest sở hữu bằng `git commit --only` vì chat clean/knowledge dùng chung repo/index.
+
+## Book11 nối114 — 2026-11-11T03:30:40.736313+00:00
+
+- Root kiểm113verified/138,114rendered,24pending115–138,0issue,currentbuild,claimnull sau cont6 release. WIP `13c8bb0`; đã spawn `/root/production_book_11_root_cont7` Sol/high tiếp114–138. Sách12cont4 và13cont2 tiếp song song; root giữ lượt.
+- Sách12 ROOT_AUDIT có pending QA task-icons từ source sample125; worker đang bổ sung/rà cùng nhóm. Phải readback và đóng trước acceptance.
+
 ## Book12 nối114 — 2026-11-11T03:18:36.995169+00:00
 
 - Root kiểm113verified/140,27pending114–140,0issue,currentbuild,claimnull sau cont3 release. WIP `eec3a8c`; đã spawn `/root/production_book_12_root_cont4` Sol/high tiếp114–140. Sách11cont6 và13cont2 tiếp song song. Root giữ lượt QA/điều phối, không final vì chỉ giao việc.
