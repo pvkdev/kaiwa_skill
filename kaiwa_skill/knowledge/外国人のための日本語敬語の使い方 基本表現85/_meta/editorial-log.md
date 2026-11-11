@@ -116,3 +116,14 @@ Các sai khác p18/p20 đã được root mở ảnh xác nhận có ngay trong 
 
 - Đã mở PDF69,89,90,91: phát hiện công thức Vます-bỏます＋て ở PDF69 không đủ cho ví dụ待って; giữ dữ kiện bản in kèm cảnh báo ngắn, unit tương ứng needs_review.
 - Dịch nhãn và gloss tiếng Anh còn sót trong phụ lục sang Việt, giữ chuỗi romaji vì đây là bảng romaji riêng của sách. Bỏ furigana phụ trợ ở bốn bảng cách nói lịch sự p89, thêm nghĩa Việt đối chiếu cho các cặp; không đổi từ Nhật/thứ tự/ô bảng.
+
+## QA độc lập bổ sung
+
+- PDF42–68 panel trái: reviewer đã mở từng ảnh và so raw/clean của §3. PDF54→55 thật sự nhảy từ trang in 105 sang 108, nên mục 14 và track 59 vẫn để thiếu nguồn; không phục dựng. Drill PDF67–68 đủ 10 câu, mỗi câu bốn lựa chọn, đáp án theo bản in.
+- PDF65 / mục ～ておる, ví dụ 「今、外に出ております。」: bản Việt trước đó “đang ra ngoài” gợi hành động khởi hành, trong khi ảnh và gloss nguồn chỉ trạng thái đang ở ngoài. Đổi thành “Bây giờ tôi đang ở ngoài ạ.”; không đổi câu Nhật.
+- PDF85–87 panel trái: QA độc lập đã đối chiếu đủ 41 nhóm × 4 = 164 câu đáp án Nhật với ảnh/raw, kể cả bốn đáp án mục14 không có trang bài học. Theo yêu cầu root sau QA, bổ sung bản Việt ngay sau từng câu trong chapter08; không thêm lời giải ngoài đáp án đã in, không chuyển dịch lên phần đề. Số câu Nhật 164, số dòng Việt mới 164; bản Việt mới cần root QA trước build.
+- PDF87 panel phải–93: QA độc lập đã rà bảng chia động từ Nhật/romaji, bảng tra Nhật/romaji, 107 mục chỉ mục; các ô trống và sai khác nhãn romaji nguồn giữ nguyên, p93 xuất bản/tác giả đã loại theo coverage có lý do.
+
+## Rà toàn sách và bổ sung bản Việt đáp án
+
+Worker khác tác giả đã mở/so đủ93 trang,9 chương, sửa PDF65「今、外に出ております」 thành “đang ở ngoài”. Phần Nhật của đáp án được rà đủ; theo yêu cầu root, worker bổ sung164 bản Việt cho164 đáp án in sẵn. Root sau đó mở PDF85–87, đọc và đối chiếu toàn164 cặp Nhật–Việt, sửa hướng đến bằng taxi ởいらっしゃる①② và hạn明日までに thành chậm nhất vào ngày mai. Kiểm bằng script xác nhận164 câu Nhật vẫn đúng y bản trước và mỗi câu có một dòng Việt liền sau. Không tự giải bài, không thêm đáp án, không phục dựng bài14 thiếu nguồn. Review trước phần Việt mới không được dùng để xác nhận bản dịch mới; phần này có root QA riêng. Các lỗi bản in đã gắn cờ vẫn giữ.

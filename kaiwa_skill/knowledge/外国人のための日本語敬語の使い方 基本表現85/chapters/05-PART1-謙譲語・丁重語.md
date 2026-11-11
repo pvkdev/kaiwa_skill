@@ -1252,7 +1252,7 @@ Từ gợi ý: 協力する (hợp tác), 心配する (lo lắng), 紹介する
 
 **JP:** 今、外に出ております。
 
-**VI:** Bây giờ tôi đang ra ngoài ạ.
+**VI:** Bây giờ tôi đang ở ngoài ạ.
 
 #### 意味と使い方
 

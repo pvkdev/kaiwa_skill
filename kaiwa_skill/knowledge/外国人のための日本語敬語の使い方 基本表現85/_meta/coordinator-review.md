@@ -10,3 +10,7 @@ Root kiểm ảnh theo mẫu và các điểm nguồn đã gắn cờ; không tu
 - Bảng tra kana và romaji giữ thứ tự dữ liệu; bảng91 có nhãn cột lệch, đã nói rõ để người học dùng bảng Nhật đối chiếu. Chỉ mục giữ đầy đủ107 mục theo tác giả và kiểm nguồn mẫu; không tự điền ô trống trong các bảng chia.
 
 Các phần học, bài tập, lựa chọn, chỗ trống, đáp án gốc, hội thoại theo chức năng/tình huống, track và phụ lục được giữ. Không thêm audio, bài còn thiếu, đáp án tự giải hay phân loại lộ trình.
+
+## Rà toàn sách và bổ sung bản Việt đáp án
+
+Worker khác tác giả đã mở/so đủ93 trang,9 chương, sửa PDF65「今、外に出ております」 thành “đang ở ngoài”. Phần Nhật của đáp án được rà đủ; theo yêu cầu root, worker bổ sung164 bản Việt cho164 đáp án in sẵn. Root sau đó mở PDF85–87, đọc và đối chiếu toàn164 cặp Nhật–Việt, sửa hướng đến bằng taxi ởいらっしゃる①② và hạn明日までに thành chậm nhất vào ngày mai. Kiểm bằng script xác nhận164 câu Nhật vẫn đúng y bản trước và mỗi câu có một dòng Việt liền sau. Không tự giải bài, không thêm đáp án, không phục dựng bài14 thiếu nguồn. Review trước phần Việt mới không được dùng để xác nhận bản dịch mới; phần này có root QA riêng. Các lỗi bản in đã gắn cờ vẫn giữ.
