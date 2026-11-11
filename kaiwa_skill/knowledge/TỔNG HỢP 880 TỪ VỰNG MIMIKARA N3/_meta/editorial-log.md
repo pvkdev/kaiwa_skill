@@ -80,3 +80,7 @@ Lọc khẩu hiệu động viên lặp ở đầu một số trang, dải MINAT
 ## Root follow-up sau independent QA
 
 Root mở PDF20/29/34/37. PDF34 STT632 in はっと và nghĩa “yên tâm”; giữ hàng nguồn, thêm vào ghi chú ngay sau bảng, unit p34 vốn needs_review được bổ sung issue. Root đã rà lại đúng phần ghi chú sau sửa; review của worker trước đó vẫn được giữ với hash riêng. Không thay nguyên dữ liệu bảng.
+
+## Dịch gloss English còn sót — root follow-up
+
+Root mở ảnh PDF28/29 và rà lại thay đổi: STT517 Massage→Xoa bóp, mát-xa;520 bỏ từ Top lặp, giữ nghĩa Việt vị trí thứ hạng cao nhất;532 sale→bán giảm giá;546 Thẻ,card→Thẻ. Đây là dịch/lọc lớp nghĩa English theo yêu cầu clean, không sửa từ Nhật, đọc, Hán Việt hoặc số thứ tự. Kiểm mới:880 dòng còn đủ; mọi ô ngoài bốn nghĩa đã ghi ngoại lệ khớp nguồn. Các kết quả0 khác biệt trước đây là mốc trước lần dịch này, không phải mô tả mọi ô hiện tại. Hash review chính trước sửa và hash hiện tại được lưu tách.

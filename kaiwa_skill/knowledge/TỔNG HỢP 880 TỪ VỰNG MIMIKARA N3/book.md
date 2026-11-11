@@ -750,10 +750,10 @@
 | 514. |  |  | プロフェッショナル | chuyên nghiệp |
 | 515. |  |  | アマチュア | nghiệp dư |
 | 516. |  |  | トレーニング | đào tạo, huấn luyện, rèn luyện |
-| 517. |  |  | マッサージ | Massage |
+| 517. |  |  | マッサージ | Xoa bóp, mát-xa |
 | 518. |  |  | アドバイス | Lời khuyên |
 | 519. |  |  | アイデア | ý tưởng |
-| 520. |  |  | トップ | Top, vị trí thứ hạng cao nhất |
+| 520. |  |  | トップ | Vị trí thứ hạng cao nhất |
 | 521. |  |  | スピード | tốc độ |
 | 522. |  |  | ラッシュ | Giờ cao điểm |
 | 523. |  |  | バイク | xe máy |
@@ -773,7 +773,7 @@
 | STT | Kanji | Âm Hán Việt | Hiragana | Nghĩa |
 |---|---|---|---|---|
 | 531. |  |  | デザイン | thiết kế |
-| 532. |  |  | バーゲンセール | sale |
+| 532. |  |  | バーゲンセール | bán giảm giá |
 | 533. |  |  | パート | làm thêm |
 | 534. |  |  | コンビニエンスストア | cửa hàng tiện ích |
 | 535. |  |  | レジ | máy tính tiền |
@@ -787,7 +787,7 @@
 | 543. |  |  | アナウンス | thông báo, MC |
 | 544. |  |  | メッセージ | tin nhắn, lời nhắn |
 | 545. |  |  | パンフレット | tờ rơi |
-| 546. |  |  | カード | Thẻ, card |
+| 546. |  |  | カード | Thẻ |
 
 *Lưu ý nguồn:* Ở STT 543, “MC” trong nghĩa bản in chưa được xác minh; hãy thận trọng khi học nghĩa này.
 
