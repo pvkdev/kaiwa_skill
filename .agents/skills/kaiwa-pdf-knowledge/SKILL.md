@@ -20,6 +20,7 @@ Lỗi thực tế từ pilot: giữ thoại Nhật của bài ôn nhưng thay ph
 ## Làm theo phần có thể khôi phục
 
 1. Xác minh claim/phân công hiện tại. Mở bìa/trang tên và mục lục để xác nhận tên sách, ấn bản và cấu trúc thật, không lấy filename làm tên. Chia chapter theo sách; lập scope tường minh cho pilot hoặc full. Metadata không được quảng cáo pilot là full.
+   Với mỗi sách mới, mở sớm các kiểu trang khác nhau (bài chính, bài tập có hình/chú từ, đáp án, phụ lục) để nhận diện phần riêng cần giữ. Khi chương đầu đã checked, gửi đường dẫn cùng số trang cho root QA song song trong lúc viết tiếp; phát hiện mất một loại nội dung phải rà ngược phần đã làm, không chỉ sửa các chương về sau.
 2. Dùng `scripts/direct_progress.py --help` và help lệnh con để init. Khóa PDF SHA256, số trang thật, phạm vi và thứ tự chapters. Một writer cho mỗi sách; mọi tác nhân khác chỉ QA đọc.
 3. Mở ảnh từng trang nguồn; text layer/OCR chỉ giúp tra chữ. Đọc toàn trang để biết thứ tự và crop vùng mờ khi cần. Chuyển thẳng sang chapter sạch, không soạn thêm raw tương đương cả trang. Đặt unit ID ổn định, liên kết các vùng nguồn sang unit; ghi lý do cho vùng bỏ. Kiểm cả các vùng nối trang và phần đáp án ở cuối sách.
 4. Ghi page evidence và checkpoint ngay sau từng trang đã đối chiếu; checkpoint chapter sau khi đối chiếu toàn phần. `author_checked` chỉ dùng khi đã thật sự mở ảnh và so bản viết. Thay nội dung/evidence sau kiểm phải kiểm lại; hash không chứng minh đúng nghĩa hoặc đủ kiến thức.
