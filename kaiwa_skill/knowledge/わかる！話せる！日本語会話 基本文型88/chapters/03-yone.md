@@ -1,11 +1,7 @@
 <a id="u-part1-03"></a>
 # Bài 3. お祭り行くよね — ～よね
 
-## Cách dùng
-
-Mẫu **[cuối câu] + よね** dùng khi người nói muốn người nghe cùng nắm một thông tin hoặc có cùng cảm nhận. Sách chia thành **A. kiểm tra sự thống nhất**, **B. báo thông tin mới** và **C. hưởng ứng lời người kia**.
-
-「よね」 kết hợp 「よ」 (nêu rõ thông tin hoặc cảm xúc của mình) với 「ね」 (nhẹ nhàng tìm sự đồng tình). Vì thế, 「ですよね」 đòi hỏi người nghe xác nhận rõ hơn 「ですね」.
+**Mã CD của bài:** CD 03.
 
 ## Hội thoại mở đầu
 
@@ -26,6 +22,12 @@ Sách cũng nêu dạng lịch sự của lời hỏi ở tiêu đề:
 **JP:** お祭りは行きますよね。
 
 **VI:** Bạn sẽ đi lễ hội chứ nhỉ?
+
+## Ý nghĩa, mẫu và điểm lưu ý
+
+Mẫu **[cuối câu] + よね** dùng khi người nói muốn người nghe cùng nắm một thông tin hoặc có cùng cảm nhận. Sách chia thành **A. kiểm tra sự thống nhất**, **B. báo thông tin mới** và **C. hưởng ứng lời người kia**.
+
+「よね」 kết hợp 「よ」 (nêu rõ thông tin hoặc cảm xúc của mình) với 「ね」 (nhẹ nhàng tìm sự đồng tình). Vì thế, 「ですよね」 đòi hỏi người nghe xác nhận rõ hơn 「ですね」.
 
 ## A. Kiểm tra sự thống nhất
 

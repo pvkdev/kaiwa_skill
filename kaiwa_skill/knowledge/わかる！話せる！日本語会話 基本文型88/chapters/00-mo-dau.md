@@ -9,7 +9,7 @@
 
 **VI:** À, cho tôi hỏi một chút…
 
-Khi người kia đáp, mới nêu câu hỏi hoặc lời nhờ. Bắt đầu ngay bằng việc của mình có thể khiến họ khó chịu. Trình tự tự nhiên là gọi 「あのう…」, nghe 「はい」 rồi mới hỏi; đứng sát và hỏi thẳng 「駅はどこですか」 tạo ấn tượng đột ngột.
+Khi người kia đáp, mới nêu câu hỏi hoặc lời nhờ. Bắt đầu ngay bằng việc của mình có thể khiến họ khó chịu, hoặc khiến họ nghĩ “Thôi, người nước ngoài nên cũng đành vậy”. Trình tự tự nhiên là gọi 「あのう…」, nghe 「はい」 rồi mới hỏi; đứng sát và hỏi thẳng 「駅はどこですか」 tạo ấn tượng đột ngột.
 
 **JP:** はい。
 
@@ -24,7 +24,7 @@ Nói 「あのう」 chậm, vừa đủ nghe, với giọng dè dặt. Người
 <a id="u-intro-02"></a>
 ## 2. Giữ khoảng cách: 「適当な距離をとる」
 
-Sách lưu ý rằng khi mới gặp, tiến sát bất ngờ có thể làm người nghe thấy e ngại. Sách đối chiếu khoảng cách đủ để cúi chào với khoảng cách để bắt tay: khi bắt chuyện bằng tiếng Nhật, nên đứng ở khoảng cách vừa phải. Cùng lời chào 「はじめまして」, tư thế đứng cách ra và cúi nhẹ tạo cảm giác dễ chịu hơn tư thế áp sát.
+Sách nhận xét rằng người Nhật đôi khi thấy người nước ngoài “hơi đáng sợ”; theo lời giải thích trong nguồn, điều này không nhất thiết do người ấy cao hoặc có vóc dáng lớn, mà do tiến quá sát khi giao tiếp. Vì vậy, sách đối chiếu “khoảng cách đủ để cúi chào” trong tiếng Nhật với “khoảng cách để bắt tay” trong ngôn ngữ khác. Cùng lời chào 「はじめまして」, tư thế đứng cách ra và cúi nhẹ tạo cảm giác dễ chịu hơn tư thế áp sát.
 
 **JP:** はじめまして。
 
@@ -48,6 +48,8 @@ Trong hội thoại tiếng Nhật, đôi khi câu dừng ở 「が」 hoặc �
 **VI:** Tôi nghe nói địa điểm ở tầng ba của tòa nhà chính, nhưng…
 
 ### Ba cách nói cùng một ý
+
+Trong tiếng Nhật, cùng một ý có thể được nói bằng nhiều văn phong, nên thoạt nhìn có vẻ khá rắc rối.
 
 **JP:** いいお天気ですね。
 

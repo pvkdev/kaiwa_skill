@@ -12,7 +12,7 @@
 
 **VI:** À, cho tôi hỏi một chút…
 
-Khi người kia đáp, mới nêu câu hỏi hoặc lời nhờ. Bắt đầu ngay bằng việc của mình có thể khiến họ khó chịu. Trình tự tự nhiên là gọi 「あのう…」, nghe 「はい」 rồi mới hỏi; đứng sát và hỏi thẳng 「駅はどこですか」 tạo ấn tượng đột ngột.
+Khi người kia đáp, mới nêu câu hỏi hoặc lời nhờ. Bắt đầu ngay bằng việc của mình có thể khiến họ khó chịu, hoặc khiến họ nghĩ “Thôi, người nước ngoài nên cũng đành vậy”. Trình tự tự nhiên là gọi 「あのう…」, nghe 「はい」 rồi mới hỏi; đứng sát và hỏi thẳng 「駅はどこですか」 tạo ấn tượng đột ngột.
 
 **JP:** はい。
 
@@ -27,7 +27,7 @@ Nói 「あのう」 chậm, vừa đủ nghe, với giọng dè dặt. Người
 <a id="u-intro-02"></a>
 ### 2. Giữ khoảng cách: 「適当な距離をとる」
 
-Sách lưu ý rằng khi mới gặp, tiến sát bất ngờ có thể làm người nghe thấy e ngại. Sách đối chiếu khoảng cách đủ để cúi chào với khoảng cách để bắt tay: khi bắt chuyện bằng tiếng Nhật, nên đứng ở khoảng cách vừa phải. Cùng lời chào 「はじめまして」, tư thế đứng cách ra và cúi nhẹ tạo cảm giác dễ chịu hơn tư thế áp sát.
+Sách nhận xét rằng người Nhật đôi khi thấy người nước ngoài “hơi đáng sợ”; theo lời giải thích trong nguồn, điều này không nhất thiết do người ấy cao hoặc có vóc dáng lớn, mà do tiến quá sát khi giao tiếp. Vì vậy, sách đối chiếu “khoảng cách đủ để cúi chào” trong tiếng Nhật với “khoảng cách để bắt tay” trong ngôn ngữ khác. Cùng lời chào 「はじめまして」, tư thế đứng cách ra và cúi nhẹ tạo cảm giác dễ chịu hơn tư thế áp sát.
 
 **JP:** はじめまして。
 
@@ -51,6 +51,8 @@ Trong hội thoại tiếng Nhật, đôi khi câu dừng ở 「が」 hoặc �
 **VI:** Tôi nghe nói địa điểm ở tầng ba của tòa nhà chính, nhưng…
 
 #### Ba cách nói cùng một ý
+
+Trong tiếng Nhật, cùng một ý có thể được nói bằng nhiều văn phong, nên thoạt nhìn có vẻ khá rắc rối.
 
 **JP:** いいお天気ですね。
 
@@ -210,12 +212,14 @@ Lời nói có thể đổi âm để ngắn hơn hoặc dễ phát âm hơn. C�
 
 **VI:** Các cặp tương ứng: nói; nhà tôi; không mấy; quả đúng là; cái gì; thật; như thế nào; hôm nọ; chỉ/toàn. Vế sau mỗi mũi tên là cách nói biến âm hoặc rút gọn của vế trước.
 
+<a id="u-part1-opening"></a>
+
+**PART1 — 日本語会話の最重要文型８:** Tám mẫu câu quan trọng nhất trong hội thoại tiếng Nhật.
+
 <a id="u-part1-01"></a>
 ## Bài 1. このドーナツ、おいしいね — ～ね
 
-### Cách dùng
-
-Mẫu **[câu] + ね** dùng khi muốn chia sẻ cảm nhận, thông tin hoặc sự xúc động với người nghe. Ba chức năng chính là **A. nhẹ nhàng tìm sự đồng tình**, **B. xác nhận lại** và **C. nhắc nhở, dặn dò**. 「ね」 còn thể hiện sự thân thiện; khi quan tâm hoặc động viên người nghe, sắc thái ấy đặc biệt rõ.
+**Mã CD của bài:** CD 01.
 
 ### Hội thoại mở đầu
 
@@ -234,6 +238,10 @@ Sách cũng nêu dạng lịch sự của lời nhận xét:
 **JP:** このドーナツはおいしいですね。
 
 **VI:** Bánh donut này ngon nhỉ.
+
+### Ý nghĩa, mẫu và điểm lưu ý
+
+「ね」 dùng khi người nói muốn chia sẻ cảm nhận, thông tin hoặc sự xúc động với người nghe, đồng thời tìm sự đồng tình hay xác nhận lại. Mẫu cơ bản là **[câu] + ね**, với ba chức năng: **A. nhẹ nhàng tìm sự đồng tình**, **B. xác nhận lại** và **C. nhắc nhở, dặn dò**. 「ね」 cũng chứa sự thân thiện; sách lưu ý nó thường được dùng khi quan tâm hoặc động viên người nghe (xem phần C).
 
 ### A. Nhẹ nhàng tìm sự đồng tình
 
@@ -324,9 +332,7 @@ Sách cũng nêu dạng lịch sự của lời nhận xét:
 <a id="u-part1-02"></a>
 ## Bài 2. もう帰ったよ — ～よ
 
-### Cách dùng
-
-Mẫu **[câu] + よ** báo cho người nghe điều họ chưa biết hoặc chưa để ý. 「よ」 khiến lời nói hướng rõ đến người nghe và thu hút sự chú ý. Sách chia thành **A. truyền đạt thông tin mới** và **B. nhấn mạnh chỉ dẫn hoặc lời cảnh báo**. Khi rất muốn người nghe nhận được thông tin, người nói có thể lên giọng ở cuối câu.
+**Mã CD của bài:** CD 02.
 
 ### Hội thoại mở đầu
 
@@ -337,6 +343,10 @@ Mẫu **[câu] + よ** báo cho người nghe điều họ chưa biết hoặc c
 **B (JP):** 今日はもう帰ったよ。
 
 **B (VI):** Hôm nay ông ấy về rồi đấy.
+
+### Ý nghĩa, mẫu và điểm lưu ý
+
+「よ」 báo cho người nghe điều họ chưa biết hoặc chưa để ý. Nó khiến lời nói hướng rõ đến người nghe và thu hút sự chú ý. Mẫu cơ bản là **[câu] + よ**, với hai chức năng: **A. truyền đạt thông tin mới** và **B. nhấn mạnh chỉ dẫn hoặc lời cảnh báo**. Khi rất muốn người nghe nhận được thông tin, người nói có thể lên giọng ở cuối câu.
 
 #### Ghi chú về cách nói
 
@@ -392,8 +402,6 @@ Sách ghi rằng với danh từ và tính từ 「な」, kiểu bỏ 「だ」
 
 **B (VI):** Ừ nhỉ. Xin lỗi, xin lỗi.
 
-**MEMO:** Khi 「帰ろう」 dùng để thúc người nghe cùng về, phần cuối được nâng giọng: 「帰ろう↗」.
-
 #### 5
 
 **A (JP):** これとこれ、どっちがいい？
@@ -436,14 +444,12 @@ Sách ghi rằng với danh từ và tính từ 「な」, kiểu bỏ 「だ」
 
 **B (VI):** À, vâng.
 
+**MEMO:** Khi 「帰ろう」 dùng để thúc người nghe cùng về, phần cuối được nâng giọng: 「帰ろう↗」.
+
 <a id="u-part1-03"></a>
 ## Bài 3. お祭り行くよね — ～よね
 
-### Cách dùng
-
-Mẫu **[cuối câu] + よね** dùng khi người nói muốn người nghe cùng nắm một thông tin hoặc có cùng cảm nhận. Sách chia thành **A. kiểm tra sự thống nhất**, **B. báo thông tin mới** và **C. hưởng ứng lời người kia**.
-
-「よね」 kết hợp 「よ」 (nêu rõ thông tin hoặc cảm xúc của mình) với 「ね」 (nhẹ nhàng tìm sự đồng tình). Vì thế, 「ですよね」 đòi hỏi người nghe xác nhận rõ hơn 「ですね」.
+**Mã CD của bài:** CD 03.
 
 ### Hội thoại mở đầu
 
@@ -464,6 +470,12 @@ Sách cũng nêu dạng lịch sự của lời hỏi ở tiêu đề:
 **JP:** お祭りは行きますよね。
 
 **VI:** Bạn sẽ đi lễ hội chứ nhỉ?
+
+### Ý nghĩa, mẫu và điểm lưu ý
+
+Mẫu **[cuối câu] + よね** dùng khi người nói muốn người nghe cùng nắm một thông tin hoặc có cùng cảm nhận. Sách chia thành **A. kiểm tra sự thống nhất**, **B. báo thông tin mới** và **C. hưởng ứng lời người kia**.
+
+「よね」 kết hợp 「よ」 (nêu rõ thông tin hoặc cảm xúc của mình) với 「ね」 (nhẹ nhàng tìm sự đồng tình). Vì thế, 「ですよね」 đòi hỏi người nghe xác nhận rõ hơn 「ですね」.
 
 ### A. Kiểm tra sự thống nhất
 
