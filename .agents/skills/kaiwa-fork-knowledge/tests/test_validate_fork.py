@@ -9,13 +9,34 @@ API = runpy.run_path(str(Path(__file__).resolve().parents[1] / 'scripts/validate
 
 
 class TranslationLayoutTest(unittest.TestCase):
-    def check(self, body):
+    def report(self, body):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / 'chapter.md'
             path.write_text('<a id="u-fixture"></a>\n# Bài học\n\n' + body, encoding='utf-8')
             report = API['Report']()
             API['validate_chapter'](path, report)
-            return report.errors
+            return report
+
+    def check(self, body):
+        return self.report(body).errors
+
+    def test_self_introduction_translation_cannot_add_a_fourth_blank(self):
+        report = self.report('**JP:** 私は＿＿＿＿の＿＿＿＿と申します。＿＿＿＿からまいりました。\n\n'
+                             '**VI:** Tôi là＿＿＿＿thuộc＿＿＿＿, tên là＿＿＿＿. Tôi đến từ＿＿＿＿.\n')
+        self.assertTrue(any('JP 3, VI 4' in warning for warning in report.warnings))
+
+    def test_self_introduction_retains_three_functional_blanks(self):
+        report = self.report('**JP:** 私は＿＿＿＿の＿＿＿＿と申します。＿＿＿＿からまいりました。\n\n'
+                             '**VI:** Tôi thuộc＿＿＿＿, tên là＿＿＿＿. Tôi đến từ＿＿＿＿.\n')
+        self.assertEqual([], report.warnings)
+
+    def test_translation_should_not_solve_the_blank(self):
+        report = self.report('**JP:** ここに（　）を入れてください。\n\n**VI:** Điền tên vào đây.\n')
+        self.assertTrue(any('JP 1, VI 0' in warning for warning in report.warnings))
+
+    def test_blank_width_and_glyph_are_layout_not_content(self):
+        report = self.report('**JP:** 名前は＿＿＿＿です。\n\n**VI:** Tôi tên là________.\n')
+        self.assertEqual([], report.warnings)
 
     def test_numbered_examples_preserve_numbering(self):
         self.assertEqual([], self.check('1. **JP:** 明日までにお願いします。\n\n   **VI:** Chậm nhất ngày mai nhé.\n'))

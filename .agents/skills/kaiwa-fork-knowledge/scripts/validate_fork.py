@@ -19,6 +19,7 @@ UNIT_ID = re.compile(r'u-[a-z0-9]+(?:-[a-z0-9]+)*')
 RAW_PAGE = re.compile(r'p(\d{4})')
 SHA256 = re.compile(r'[0-9a-f]{64}')
 PAIR = re.compile(r'^\s*(?:(?:[-+*]|\d+[.)])\s+)?\*\*(JP|VI|[^*\n]+? \((?:JP|VI)\)):\*\*\s*(.*?)\s*$')
+EXERCISE_BLANK = re.compile(r'_{3,}|＿{2,}|[（(][\s\u3000]*[）)]')
 REMAINS = [
     (re.compile(r'<\s*/?\s*(?:ruby|rt|rp)\b', re.I), 'ruby/furigana HTML'),
     (re.compile(r'(?im)^\s*(?:furigana\s*\(nguồn\)|furigana\s*:|ふりがな\s*[:：])'), 'furigana marker'),
@@ -217,6 +218,13 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
             following = PAIR.match(following_line)
             if following is None or not labels_correspond(label, following.group(1)):
                 report.error(f'{path}:{index + 1}', f'{label} must be followed by {expected} (blank lines allowed)')
+            else:
+                source_blanks = len(EXERCISE_BLANK.findall(value))
+                translated_blanks = len(EXERCISE_BLANK.findall(following.group(2)))
+                if source_blanks != translated_blanks:
+                    report.warn(f'{path}:{index + 1}',
+                                f'possible exercise placeholder mismatch: JP {source_blanks}, VI {translated_blanks}; '
+                                'review against source, including intentional placeholder notation changes')
         elif label == 'VI' or label.endswith('(VI)'):
             expected = 'JP' if label == 'VI' else label.replace('(VI)', '(JP)')
             previous_line = next((earlier for earlier in reversed(lines[:index]) if earlier.strip()), '')

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.8 — 2026-11-11
+
+- Cảnh báo heuristic về số ô trống ở cặp JP/VI, sau khi QA phát hiện khung tự giới thiệu ba ô bị dịch thành bốn. Không ép cách ghi hoặc coi cảnh báo là kết luận ngữ nghĩa.
+- Thêm bốn ca hồi quy về thừa/thiếu ô và khác độ dài/ký hiệu;30 kiểm thử đạt. Bảy bản full hiện có và pilot đều qua validator không lỗi/cảnh báo.
+
 ## 0.3.7 — 2026-11-11
 
 - Làm rõ mọi đáp án Nhật in sẵn cần bản Việt ở đúng phần đáp án; review cũ phần Nhật không xác nhận bản dịch mới.
