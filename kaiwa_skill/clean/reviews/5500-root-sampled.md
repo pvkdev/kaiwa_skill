@@ -9,3 +9,7 @@ Front giữ đủ mục lục và lời đầu; số trang ở mục12/13/14 ph�
 Root xác nhận source16 bị sát gáy ở cuối「あんな口調（口ぶり）でわたしと話さないで」; giữ giới hạn, không tự bù. Root crop8 xác nhận câu「彼の妹の習慣をもって知りたいです」và romaji “motte” thực sự in như vậy. PDF10 có「何が起きたが」và「かんだいかい声」. Đây là chuỗi Nhật nguồn bất thường, cần ghi vấn đề nguồn đúngpage/block/unit, không chỉ log rồi trình bày như mẫu Nhật đã xác nhận. Đã yêu cầu worker xử lý và rà các trường hợp tương tự; chưa đọc lại bản sau xử lý.
 
 Đây là QA sớm, chưa release full. Số5500 trong tên không được dùng làm số câu thực trong PDF; cần đếm mục thật khi bàn giao. Root không sửa sách đang do worker sở hữu.
+
+Root mở thêm38/66/99, tổng14 trang nguồn. So toàn47 dòng từ ở nửa trái ba trang với cuối chapter01/02/03: giữ đủheadword và nghĩa, không bỏ phần bảng ở trang ranh giới. Các chỗ震える/返品/ずばりと/違える đã có nghĩa phù hợp hơn cột Việt in sẵn. Nửa phải là đầu phần mới, giữ block/unit/chapter riêng.
+
+Đầu phần Nguyện vọng38,「旅行が好きです」đã có bản Việt câu trần thuật đúng; cột Việt nguồn in thành câu hỏi. Câu「ジャズのほうが好きです」còn thiếu “hơn” trong output, đã yêu cầu sửa và rà các cấu trúc so sánh trước đó. Gloss99「・・・しだいだ」in gộp “tùy theo/ngay sau”; yêu cầu giữ nghĩa chắc theo ví dụ tại96 và ghi rõ gloss nguồn quá rộng, không khẳng định hai nghĩa cùng thuộc đúng dạngだ. Đang chờ đọc lại các sửa.
