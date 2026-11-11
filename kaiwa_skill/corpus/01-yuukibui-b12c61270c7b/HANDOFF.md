@@ -1,3 +1,23 @@
+# Bàn giao mới nhất book11 — WIP p1–113; p114 đã render
+
+- Cập nhật: 2026-11-11 12:29 JST; worker `production_book_11_root_cont6`, `gpt-6-sol/high`, điều phối `/root`; token `book11-root107-20261111-7d3c` sẽ release sạch ngay sau handoff này.
+- Book `01-yuukibui-b12c61270c7b`, 138 trang vật lý; PDF tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn kiểm lại `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt này chuyển mới **p107–113 (7 trang)**. Mỗi trang mở full scale2 và direct4 trên/dưới; p107–112 thêm direct8 theo dải ruby/bold, p113 direct8 nửa đầu và direct4 nửa dưới xác nhận thật sự trống. So hai chiều ảnh→Markdown→ảnh và checkpoint từng trang. p114 render scale2 và mở full để kiểm nối, **chưa chép/verify**.
+- Sau reconcile/build: **113/138 verified (p1–113), 1 rendered (p114), 24 pending (p115–138), 0 draft/needs_review/invalid, 0 issue/error**; `build_current=true`, bản ghép partial chỉ gồm p1–113. SHA-256 `build.json`: `b24e11405bc69f9ccc9a3d4a99f304b0d1322e40a5303019f97b0993bad541f0`.
+
+## Nội dung lượt này và điểm nguồn
+
+- p107–109 hoàn tất 第十六課 本文会話 `課長の家で`: nhân vật 課長／課長夫人／サイモン（部下）, cuộc thăm nhà, ăn uống rồi ra về. p107 kết ở chỉ dẫn サイモンさんは正座する, p108 tiếp lời 課長夫人; p108 cuối サイモン cảm ơn, p109 nối bằng 課長 rồi kết hội thoại. Giữ từng vai/lượt, chỉ dẫn hành động, ruby theo lần xuất hiện, số lề và punctuation. p109 tiếp `《類話》` mục1 料理をほめる, hai ví dụ A/B.
+- p110 `類話` mục2 `酒を断る`: giữ tên `ブアリ君`, tám lượt, sự kiện 歓迎会の二次会 và 課長命令 như in; sau đó `語句の使い方` mục1–2. p111 mục3–9, p112 mục10–16, p113 mục17–18. Giữ ô trống và bold đúng phần mẫu theo occurrence, các ví dụ/ruby/ref p.94–97. p113 chỉ có hai mục ở đầu, nửa dưới trống ngoài số in100.
+- p114 mở **第十七課 `敬語`**, hai hộp 談話型 (`近況を聞く`, `招待者が中座する`) có nhiều ô trống; không có câu nối từ p113. p1–106 verified cũ giữ nguyên. Không sửa tools/skill/Git/sách khác. Cache ảnh và scratch chỉ ở `.cache/renders/<book_id>/`, không thuộc output.
+
+## Tiếp tục ngay
+
+- **Physical p114 (trang in101)** là trang đầu chưa chép: đã render `p0114.png` và mở full. Cần direct4/crop hai hộp để đếm và giữ từng ô trống, vai A/B, chữ ruby và câu mục tiêu; tiếp p115–138.
+- Worker mới kiểm source/status/claim thật rồi claim token mới sau release. Bảo toàn p1–113, mỗi trang full/crop và đối chiếu hai chiều, exact ruby/bold/roles/blanks/header/footer; chỗ không chắc thật ghi needs_review cụ thể và đi tiếp. Root giữ QA/Git/acceptance.
+
+---
+
 # Bàn giao mới nhất book11 — WIP p1–106; p107 đã render
 
 - Cập nhật: 2026-11-11 12:11 JST; worker `production_book_11_root_cont5`, `gpt-6-sol/high`, điều phối `/root`; token `book11-root101-20261111-e61a` sẽ release sạch sau ghi handoff.
