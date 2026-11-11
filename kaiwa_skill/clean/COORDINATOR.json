@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "phase": "active",
-  "updated_at_utc": "2026-11-11T03:45:30.946731+00:00",
+  "updated_at_utc": "2026-11-11T04:08:09.465140+00:00",
   "authorization": "User explicitly requested bulk cleaning with three gpt-6-sol/high workers and continuous root coordination; do not end after launch.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -10,45 +10,26 @@
   "assignments": [
     {
       "worker": "/root/clean_namachuukei_sho",
-      "corpus": "kaiwa_skill/corpus/85-21a2cb6f3fef",
-      "title": "外国人のための日本語敬語の使い方 基本表現85",
-      "book_dir": "kaiwa_skill/knowledge/外国人のための日本語敬語の使い方 基本表現85",
-      "stage": "independent_full_book_QA",
-      "review_record": "_meta/independent-review.md",
-      "checkpoint_counts": {
-        "author_checked": 9
-      },
-      "planned_chapters": 9,
-      "scope_pdf_pages": 93,
-      "snapshot_root": "kaiwa_skill/source_snapshots/85-21a2cb6f3fef/f5781a803f314556/80768879"
+      "corpus": "kaiwa_skill/corpus/remake-ad35b87b708d",
+      "title": "中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―",
+      "book_dir": "kaiwa_skill/knowledge/中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―",
+      "stage": "full_clean_active",
+      "scope_pdf_pages": 140,
+      "snapshot_root": "kaiwa_skill/source_snapshots/remake-ad35b87b708d/87df499c907819b7/61190cf5"
     },
     {
       "worker": "/root/clean_namachuukei_chu",
-      "corpus": "kaiwa_skill/corpus/669041168-4f47df1cc97a",
-      "title": "わかる！話せる！日本語会話 基本文型88",
-      "book_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 基本文型88",
-      "stage": "preservation_recheck_existing_pilot_only",
-      "review_record": "_meta/preservation-recheck.md",
-      "scope_note": "PDF7–12 only; do not expand full until ingest ready",
-      "checkpoint_counts": {
-        "author_checked": 4
-      },
-      "scope_pdf_pages": 6,
-      "snapshot_root": "kaiwa_skill/source_snapshots/669041168-4f47df1cc97a/deca656ca2cb8343/135937d1"
+      "corpus": "kaiwa_skill/corpus/01-yuukibui-b12c61270c7b",
+      "stage": "preflight_only_until_source_ready",
+      "source_pdf": "kaiwa_skill/book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf",
+      "preflight_record": "kaiwa_skill/clean/preflight/01-yuukibui-b12c61270c7b.md"
     },
     {
       "worker": "/root/clean_keigo",
-      "corpus": "kaiwa_skill/corpus/880-t-v-ng-mimikara-n3-minato-b3140fae78af",
-      "title": "TỔNG HỢP 880 TỪ VỰNG MIMIKARA N3",
-      "book_dir": "kaiwa_skill/knowledge/TỔNG HỢP 880 TỪ VỰNG MIMIKARA N3",
-      "stage": "independent_full_book_QA",
-      "review_record": "_meta/independent-review.md",
-      "checkpoint_counts": {
-        "author_checked": 5
-      },
-      "planned_chapters": 5,
-      "scope_pdf_pages": 47,
-      "snapshot_root": "kaiwa_skill/source_snapshots/880-t-v-ng-mimikara-n3-minato-b3140fae78af/fc0fc362cfe6621a/7990b850"
+      "corpus": "kaiwa_skill/corpus/5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
+      "stage": "preflight_only_until_source_ready",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf",
+      "preflight_record": "kaiwa_skill/clean/preflight/5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c.md"
     }
   ],
   "source_queue": [
@@ -68,9 +49,11 @@
       "corpus": "kaiwa_skill/corpus/02-yuukibui-3e66906b7e05",
       "source_pdf": "kaiwa_skill/book/BJT/02.日本語でビジネス会話 中級編 ー練習冊 YUUKIBUI.pdf",
       "page_count": 148,
-      "readiness": "not_initialized",
-      "reason_count": 0,
-      "reasons": []
+      "readiness": "waiting",
+      "reason_count": 1,
+      "reasons": [
+        "Ingest build not yet present"
+      ]
     },
     {
       "corpus": "kaiwa_skill/corpus/03-yuukibui-dd762e3fd201",
@@ -124,13 +107,9 @@
       "corpus": "kaiwa_skill/corpus/remake-ad35b87b708d",
       "source_pdf": "kaiwa_skill/book/BJT/ロールプレイで学ぶ ビジネス日本語 - 中級レベル ―就活から入社まで― [Remake].pdf",
       "page_count": 140,
-      "readiness": "waiting",
-      "reason_count": 34,
-      "reasons": [
-        "Ingest claim or write lock exists",
-        "Ingest build is not complete",
-        "Manifest verified count differs from page count"
-      ]
+      "readiness": "ready_for_fork",
+      "reason_count": 0,
+      "reasons": []
     },
     {
       "corpus": "kaiwa_skill/corpus/remake-5779739d0a4b",
@@ -289,7 +268,7 @@
       "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf",
       "page_count": 145,
       "readiness": "waiting",
-      "reason_count": 108,
+      "reason_count": 96,
       "reasons": [
         "Ingest claim or write lock exists",
         "Ingest build is not complete",
@@ -348,27 +327,56 @@
     {
       "book_dir": "kaiwa_skill/knowledge/TỔNG HỢP 880 TỪ VỰNG MIMIKARA N3",
       "commit": "fedfb5f",
-      "coordinator_review": "sampled; see book _meta/coordinator-review.md"
+      "coordinator_review": "sampled; see book _meta/coordinator-review.md",
+      "independent_full_review_commit": "ebdd6d6",
+      "source_glosses_needing_review": [
+        360,
+        543,
+        632,
+        636,
+        682
+      ],
+      "latest_root_gloss_translation_commit": "600a35d"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/Danh sách 1160 từ vựng MINATO DORIMU",
       "commit": "19da433",
-      "coordinator_review": "sampled; see book _meta/coordinator-review.md"
+      "coordinator_review": "sampled; see book _meta/coordinator-review.md",
+      "independent_full_review_commit": "eea30db"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/外国人のための日本語敬語の使い方 基本表現85",
       "commit": "8e939e7",
-      "coordinator_review": "sampled images, source issues retained; missing printed106–107; 15 units needs_review"
+      "coordinator_review": "sampled images, source issues retained; missing printed106–107; 15 units needs_review",
+      "independent_full_review_commit": "3f227ed"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/TỔNG HỢP 1170 TỪ VỰNG MIMIKARA N1",
       "commit": "dcc3864",
-      "coordinator_review": "sampled images, all1170 rows matched; two suspected source gloss issues retained"
+      "coordinator_review": "sampled images, all1170 rows matched; two suspected source gloss issues retained",
+      "independent_full_review_commit": "5d1612f"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 英訳・語い冊",
       "commit": "3fe61bd",
-      "coordinator_review": "sampled images; all103 coverage hashes and all content anchors checked; full independent review pending"
+      "coordinator_review": "sampled images; all103 coverage hashes and all content anchors checked; full independent review pending",
+      "independent_full_review_commit": "4b99345"
     }
-  ]
+  ],
+  "pilot_preservation_recheck": {
+    "book_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 基本文型88",
+    "scope_pdf_pages": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "units": 9,
+    "commit": "ab929bd",
+    "review_record": "_meta/preservation-independent-review.md",
+    "whole_book_cleaned": false
+  },
+  "all_seven_initial_sources_independently_reviewed": true
 }

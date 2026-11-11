@@ -1,24 +1,25 @@
-# Clean hàng loạt — điều phối đang hoạt động
+# Clean hàng loạt — đang điều phối
 
-Root giữ lượt điều phối và đúng ba worker `gpt-6-sol/high`. Ingest và clean chạy ở thư mục riêng; chỉ nhận sách có nguồn sẵn sàng.
+Đúng ba worker `gpt-6-sol/high`. Root giữ lượt điều phối, kiểm nguồn mới, QA và Git; chưa kết thúc phạm vi toàn catalog30 PDF.
 
-Đã build bản đọc toàn phạm vi PDF đầu vào và kiểm cấu trúc không lỗi/cảnh báo (501 trang trong bảy nguồn):
+## Đã có bản đọc và rà độc lập
 
-- 日本語生中継 初中級編1: 91 trang, 13 chương, 253 unit; đã rà độc lập toàn bộ ảnh/raw/clean.
-- 日本語生中継 中～上級編: 89 trang, 11 chương, 122 unit; đã rà độc lập toàn bộ ảnh/raw/clean.
-- TỔNG HỢP880 TỪ VỰNG MIMIKARA N3: 47 trang, đủ880 dòng; giữ cách đọc và Hán Việt.
-- Danh sách1160 từ vựng MINATO DORIMU: 8 trang, đủ1160 mục; nguồn thiếu số460 và có1161, không tự sửa.
-- 外国人のための日本語敬語の使い方 基本表現85: 93 trang, 9 chương, 116 unit; 15 unit còn vấn đề nguồn. PDF gốc thiếu trang in106–107/bài14; không tự phục dựng.
-- TỔNG HỢP1170 TỪ VỰNG MIMIKARA N1: 70 trang, đủ1170 dòng; 306 ô Kanji và 328 ô Hán Việt trống được giữ nguyên. Hai unit có nghĩa nguồn đáng ngờ giữ needs_review.
+Bảy nguồn đầu có501 trang PDF, đã build/validate và rà ảnh/raw/clean toàn phạm vi bởi tác nhân khác tác giả hoặc kết hợp reviewer/root. Mỗi sách có hồ sơ chỉ rõ những phần được rà và sửa sau review; không đồng nghĩa mọi nhận xét trong bản in đã được xác minh ngoài sách.
 
-Root review ảnh theo mẫu, kiểm toàn bộ dữ liệu bảng bằng script; mỗi sách ghi rõ giới hạn ở `_meta/coordinator-review.md`. Không gọi mọi bản dịch đã kiểm độc lập toàn bộ. Trạng thái full nghĩa là đủ PDF được cung cấp, không đảm bảo PDF vốn có đủ mọi trang của sách in hoặc có CD/kịch bản riêng.
+- 日本語生中継 初中級編1:91 trang,13 chương,253 unit; bản Việt đã làm rõ vai và giữ nhánh lựa chọn.
+- 日本語生中継 中～上級編:89 trang,11 chương,122 unit; Bài8 kết thúc PDF87.
+- Bảng880 từ N3:47 trang; đủ880 dòng. Bốn gloss English được dịch Việt có log; năm cụm nghĩa nguồn còn cần xác minh ở360/543/632/636/682.
+- MINATO checklist1160 từ:8 trang; thiếu STT460/có1161 đúng nguồn, không tự thêm cách đọc/nghĩa.
+- Kính ngữ 基本表現85:93 trang,9 chương,116 unit;164 đáp án Nhật có Việt đã được root QA. PDF thiếu trang in106–107/bài14;15 unit còn vấn đề nguồn.
+- Bảng1170 từ N1:70 trang; STT1132 khôi phụcきっちり（と） theo ảnh, khác raw có log. Hai nghĩa nguồn1159/1165 còn needs_review.
+- 日本語でビジネス会話 中級編〈英訳・語い冊〉:103 trang,21 phần,145 unit; thoại English-only dịch Việt, không dựng Japanese. Các chênh lệch nguồn được giữ riêng.
 
-- 日本語でビジネス会話 中級編〈英訳・語い冊〉: 103 trang, 21 phần, 145 unit; hội thoại chỉ có English trong tập được dịch Việt, không tạo thêm lời Nhật.
+Pilot 基本文型88 chỉ PDF7–12:4 chapter,9 unit; đã khôi phục CD01–03/trang mở PART1/mạch hội thoại trước giải thích/MEMO. Root mở lại đủ6 ảnh và rà bản sửa; vẫn pilot_partial, không gọi full sách.
 
-Đang chạy tiếp:
+## Đang chạy
 
-- `/root/clean_namachuukei_sho`: independent QA toàn sách kính ngữ 基本表現85.
-- `/root/clean_namachuukei_chu`: rà và khôi phục phần học/track của pilot 基本文型88, chỉ PDF7–12.
-- `/root/clean_keigo`: independent QA toàn bảng880 từ N3.
+- `/root/clean_namachuukei_sho`: full clean cuốn 中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―,140 trang; source mới đã ready, snapshot/plan10 phần đã init.
+- `/root/clean_namachuukei_chu`: preflight 本文冊 kinh doanh138 trang, chỉ chuẩn bị cấu trúc, chưa clean khi raw chưa ready.
+- `/root/clean_keigo`: preflight nguồn file5500 câu,136 trang, xác nhận nhan đề/cấu trúc từ PDF, chưa clean khi raw chưa ready.
 
-Trạng thái máy và ownership: [COORDINATOR.json](COORDINATOR.json). Hướng dẫn tiếp quản: [HANDOFF.md](HANDOFF.md). Checkpoint từng sách ở `_meta/clean-state.json`; nguồn ghim ở `source_snapshots/`, ngoài knowledge. Sau gián đoạn, xác nhận worker cũ dừng rồi chạy clean_progress.py resume, không xóa tiến độ hoặc init lại.
+Bản đọc: [knowledge/README.md](../knowledge/README.md). Ownership và hàng đợi: [COORDINATOR.json](COORDINATOR.json). Tiếp quản: [HANDOFF.md](HANDOFF.md). Phiên bị đóng sẽ dừng tính toán; checkpoint/snapshot hỗ trợ mở lại từ chỗ đã lưu, không có daemon nền.
