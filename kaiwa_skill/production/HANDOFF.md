@@ -1,5 +1,23 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
+## Checkpoint root mới nhất — 2026-11-11T02:48Z
+
+- Root vẫn giữ lượt, ba worker Sol/high thật đang chạy: sách11 `/root/production_book_11_root_cont4` từ95 sau WIP94 commit `7616377`; sách12 `/root/production_book_12_root_cont3` từ89 sau WIP88 commit `53b44e6`; sách13 `/root/production_book_13_sol` tiếp tục nguồn145trang. Prefix verified giữ nguyên, mỗi lượt claim mới sau release thật.
+- Root đã mở map/legend/biên giới D-E sách11 p87 và org chart p93, ghi rõ scope sample ở ROOT_AUDIT; không giả nhận tight-audit mọi ruby. Sách12 đã source-confirm đủ12 trang prefix17/26/27/28/30/31/33/34/35/36/38/40 có sao glossary literal; worker escape/reverify, root đọc lại, chứng minh unescape bằng chữ đã commit435a1e9 và hash evidence khớp. Pending QA đó đã đóng.
+- Snapshot hash CLI gần nhất:1051verified/4597;79needs_review;7sách accepted. Đây là mốc trước các trang mới; roster/file thật có thể tiến thêm. Thai chưa attest giữ needs_review theo capability, mini samples tách riêng source-resolution issue. Không tuyên bố hoàn tất sách13.
+- Chỉ commit ingest bằng `git commit --only -- <đường dẫn cụ thể>` vì luồng clean/knowledge đồng thời dùng chung repo/index. Root tiếp QA/wait/dispatch, không final vì chỉ khởi chạy.
+
+## Các lượt nối tiếp trong root đang sống
+
+- Sách11 đã WIP64 trang commit `d19f2fe`, root nối ngữ cảnh mới từ65. Sau đó WIP86 trang commit `6356ce0`, root lập tức spawn `/root/production_book_11_root_cont3` tiếp87. Trang87 map/table47tỉnh chưa chép ở thời điểm giao; trước đó có preview rendered. Claim cũ đã release.
+- Sách12 đã WIP40 trang commit `435a1e9`, root lập tức spawn `/root/production_book_12_root_cont2` từ41. QA literal glossary stars đã sửa own41–75 với delta review giữ nguyên chữ/render; prefix1–40 còn12trang ứng viên cần kiểm marker trước nghiệm thu. Danh sách ở ROOT_AUDIT của sách.
+- Sách13 `/root/production_book_13_sol` tiếp tục. Các trang mini spread mờ và phần Thai chưa attest phải phân biệt source blur với reviewer/OCR capability. Tesseract puretha psm7 cho một dòng tốt hơn psm6 cả trang nhưng vẫn có lỗi; không coi OCR là bằng chứng đúng hay tự clear needs_review. Root đã mở nguồn và giữ audit minh bạch.
+- Root tiếp tục giữ lượt, QA, commit theo đúng đường dẫn riêng và dispatch ngay khi worker kết thúc context. Không gửi final chỉ vì đã giao việc.
+
+## Tự nối lượt đã hoạt động — sách11 p65 trở đi
+
+Worker cũ hoàn tất p45–64,64/138verified,0issue,claimnull,currentbuild. Root kiểm trạng thái và lưu WIP `d19f2fe`, sau đó ngay trong lượt đang mở đã spawn Sol/high ngữ cảnh sạch `/root/production_book_11_root_cont2` để tiếp physicalp65–138. Không đợi người dùng khởi chạy lại. Sách12 `/root/production_book_12_sol` và13 `/root/production_book_13_sol` vẫn chạy song song. Roster ghi agent ID mới; số trang hiện tại lấy từ CLI/file thật.
+
 ## Root đang giữ lượt điều phối — 2026-11-11
 
 Người dùng nhắc rằng gửi final làm vòng giao việc ngừng sau các batch. Root đang giữ lượt hoạt động, không gửi final chỉ để báo tiến độ; chờ worker/QA/followup liên tục cho đến hết phạm vi, yêu cầu dừng hoặc runtime/usage blocker thật. Ba worker hiện tại: sách11 `/root/production_sol_resume/production_book_11_sol_cont` từ p45 sau44verified; sách12 `/root/production_book_12_sol` từp21 sau20verified; sách13 `/root/production_book_13_sol`145trang mới bắt đầu. Khi worker báo hoàn tất batch, root xác minh claim release, lưu WIP riêng và nối việc ngay (có thể dùng worker mới cùng model nếu cần ngữ cảnh sạch).
