@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T12:54:34.367121+00:00",
+  "updated_at_utc": "2026-11-11T13:18:22.552048+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -35,10 +35,10 @@
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
       "stage": "full_pdf_direct_active",
-      "book_id": "book-f4bcdf991dba",
-      "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう中_上級.pdf",
-      "title": "シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
-      "scope_pdf_pages": 168
+      "book_id": "conversational-customer-service-japanese-intensive-trai-2ec8b7129cb8",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/conversational-customer-service-japanese-intensive-training-for-immediate-use-700-set-phrases-9784863923126_compress.pdf",
+      "title": "すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "scope_pdf_pages": 225
     }
   ],
   "source_queue": [
@@ -372,8 +372,11 @@
       "source_sha256": "2ec8b7129cb8dff63a414edaef504898954b77762512c2eaa29bfea42e36ef2a",
       "page_count": 225,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_chu",
+      "title": "すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700"
     },
     {
       "book_id": "japanese-conversation-conveying-feelings-180-basic-expr-06bbcf5b4324",
@@ -497,11 +500,12 @@
       "source_sha256": "f4bcdf991dbaaa09f8fdd0bd754bd39473dce9879a1e0e0884354c4862078750",
       "page_count": 168,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_chu",
+      "owner": "/root",
       "title": "シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
-      "knowledge_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版"
+      "knowledge_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
+      "knowledge_commit": "0feafae"
     },
     {
       "book_id": "book-be075317cdca",
@@ -732,6 +736,11 @@
       "book_dir": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間",
       "commit": "62fd98b",
       "coordinator_review": "author full; root40 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
+      "commit": "0feafae",
+      "coordinator_review": "author full; root36 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -1125,14 +1134,14 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 162,
-        "needs_review": 1,
-        "pending": 46
+        "author_checked": 185,
+        "needs_review": 2,
+        "pending": 22
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 23,
-        "needs_review": 1,
-        "pending": 7
+        "author_checked": 25,
+        "needs_review": 2,
+        "pending": 4
       }
     },
     {
@@ -1143,19 +1152,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 168,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issue",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 138,
-        "needs_review": 1,
-        "pending": 29
+        "author_checked": 167,
+        "needs_review": 1
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 6,
-        "needs_review": 1,
-        "draft": 1,
-        "pending": 2
-      }
+        "author_checked": 9,
+        "needs_review": 1
+      },
+      "knowledge_commit": "0feafae"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
@@ -1168,10 +1175,30 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 227
+        "author_checked": 59,
+        "pending": 168
       },
       "chapter_checkpoint_counts": {
-        "pending": 25
+        "author_checked": 4,
+        "pending": 21
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "title": "すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/conversational-customer-service-japanese-intensive-training-for-immediate-use-700-set-phrases-9784863923126_compress.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 225,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 222,
+        "author_checked": 3
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 12
       }
     }
   ],
@@ -1192,9 +1219,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 20,
-  "completed_full_source_pages": 2475,
-  "completion_count_definition": "20 released supplied-PDF scopes/2475 pages: initial7 independently reviewed in full; later13 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 21,
+  "completed_full_source_pages": 2643,
+  "completion_count_definition": "21 released supplied-PDF scopes/2643 pages: initial7 independently reviewed in full; later14 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",

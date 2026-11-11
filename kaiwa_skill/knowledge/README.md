@@ -40,11 +40,13 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [にほんごで働く！ビジネス日本語30時間](<にほんごで働く！ビジネス日本語30時間/book.md>) — 181 trang/15 chương/171 unit; tác giả rà toàn PDF, root QA40 trang mẫu. [Giới hạn QA và nguồn](<にほんごで働く！ビジネス日本語30時間/_meta/coordinator-review.md>).
 
+- [シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版](<シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版/book.md>) — 168 trang/10 chương/93 unit; tác giả rà toàn PDF, root QA36 trang mẫu. [Giới hạn QA và nguồn](<シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版/_meta/coordinator-review.md>).
+
 ## Đang clean
 
 - **日本人がよく使う 日本語会話お決まり表現180** — full scope209 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 - **初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―** — full scope227 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
-- **シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版** — full scope168 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+- **すぐに使える 接客日本語会話大特訓［英語版］決まり文句700** — full scope225 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 
