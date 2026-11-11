@@ -2789,7 +2789,7 @@ Chức năng của bài: どちらがいいかアドバイスを求める (xin l
 
 選択肢：a．間に合う　b．急ぐ　c．急がない　d．乗り換え　e．遅い　f．遅れる　g．待ち合わせ
 
-**Bản dịch để xem sau khi điền:** Takako: “Nhanh lên, nhanh lên. Nếu không (①) thì…” Yukari: “Ừ. Đến lớp thầy Takayama mà (②) dù chỉ năm phút thì gay đấy.” Takako: “Có lẽ lẽ ra mình nên hẹn (③) hơn một chút.” Yukari: “Ừ. Nhưng nếu (④) sang tàu nhanh ở Shinjuku, tớ nghĩ sẽ (⑤) giờ học.” Lựa chọn: kịp; vội; không vội; đổi tàu; muộn/chậm; đến muộn; hẹn gặp.
+**Bản dịch để xem sau khi điền:** Takako: “Nhanh lên, nhanh lên. Nếu không (①) thì…” Yukari: “Ừ. Đến lớp thầy Takayama mà (②) dù chỉ năm phút thì gay đấy.” Takako: “Có lẽ mình nên xếp thời gian (③) sớm hơn một chút.” Yukari: “Ừ. Nhưng nếu (④) sang tàu nhanh ở Shinjuku, tớ nghĩ sẽ (⑤) giờ học.” Lựa chọn: kịp; vội; không vội; đổi tàu; muộn/chậm; đến muộn; hẹn gặp.
 
 <!-- unit_id: u-lesson08-warm-2 -->
 <a id="u-lesson08-warm-2"></a>
@@ -3008,7 +3008,7 @@ Hình đặt lời nói của người đối diện cạnh ý nghĩ của bạn
 
 ④ **見知らぬ人:** 市役所まで行きたいんですが、ここからだったら、電車で行くのがいいんですか。<br>**あなたの考え:** 駅まで遠いし、バスのほうが本数が多い
 
-**Bản dịch để xem sau khi luyện:** ① Bạn hỏi đường có đông buổi sáng không và muốn lái xe; bạn nghĩ đi tàu vì sáng kẹt xe. ② Bạn hỏi chọn tàu điện ngầm hay JR; bạn nghĩ JR thuận tiện chuyển tuyến. ③ Cấp trên hỏi chuyến du lịch công ty nên đi Shinkansen hay máy bay; bạn nghĩ Shinkansen tiện hơn. ④ Người lạ hỏi nên đi tàu đến tòa thị chính không; bạn nghĩ ga xa và xe buýt nhiều chuyến hơn.
+**Bản dịch để xem sau khi luyện:** ① Người bạn hỏi đường có đông buổi sáng không và định lái xe; bạn nghĩ đi tàu vì sáng kẹt xe. ② Người bạn hỏi chọn tàu điện ngầm hay JR; bạn nghĩ JR thuận tiện chuyển tuyến. ③ Cấp trên hỏi chuyến du lịch công ty nên đi Shinkansen hay máy bay; bạn nghĩ Shinkansen tiện hơn. ④ Người lạ hỏi nên đi tàu đến tòa thị chính không; bạn nghĩ ga xa và xe buýt nhiều chuyến hơn.
 
 <!-- unit_id: u-lesson08-condition-examples -->
 <a id="u-lesson08-condition-examples"></a>
@@ -3057,7 +3057,7 @@ Hình đặt lời hỏi của người đối diện cạnh ý nghĩ của bạ
 
 ④ **近所の人:** 中央郵便局までって、どうやって行くのが一番便利なんですか。<br>**あなたの考え:** 時間による／朝と夕方はバスが便利／昼は自転車がいい
 
-**Bản dịch để xem sau khi luyện:** ① Bạn hỏi đi Kobe bằng gì; bạn muốn cách rẻ. ② Bạn hỏi đi tuyến nào đến Shinjuku; bạn muốn ít đổi tàu. ③ Người lạ hỏi đi buýt đến ga Tsuchiura mất bao lâu; bạn biết buýt mất hơn 30 phút, đi xe hơi 10 phút. ④ Hàng xóm hỏi cách tiện nhất đến bưu điện trung ương; bạn biết còn tùy giờ, sáng và chiều xe buýt tiện, trưa đi xe đạp tốt.
+**Bản dịch để xem sau khi luyện:** ① Người bạn hỏi đi Kobe bằng gì; bạn muốn cách rẻ. ② Người bạn hỏi đi tuyến nào đến Shinjuku; bạn muốn ít đổi tàu. ③ Người lạ hỏi đi buýt đến ga Tsuchiura mất bao lâu; bạn biết buýt mất hơn 30 phút, đi xe hơi 10 phút. ④ Hàng xóm hỏi cách tiện nhất đến bưu điện trung ương; bạn biết còn tùy giờ, sáng và chiều xe buýt tiện, trưa đi xe đạp tốt.
 
 ### もういっぱい!?
 
@@ -3155,7 +3155,7 @@ Chức năng của bài: 申し出る (ngỏ lời giúp hoặc tặng đồ); �
 
 ⑤ ただで（もらう・くれる）のは悪いから、少しお金を出すよ。
 
-**Bản dịch để xem sau khi chọn:** ① “Chiếc tủ này, nếu (có ích/tiện) thì cứ lấy nhé.” ② “Mua một năm trước nên chưa cũ (đến thế/đến mức kia) đâu.” ③ “Chỉ 1.000 yên thôi ạ? Thật (giúp người khác/đỡ cho tôi) quá.” ④ “(Anh/chị có lòng/đã cất công) nhưng giờ tôi xin thôi, vì phòng nhỏ.” ⑤ “Nhận miễn phí thì ngại quá, nên tôi sẽ trả một chút tiền.”
+**Bản dịch để xem sau khi chọn:** ① “Chiếc tủ này, nếu (có ích/tiện) thì cứ lấy nhé.” ② “Mua một năm trước nên chưa cũ (đến thế/đến mức kia) đâu.” ③ “Chỉ 1.000 yên thôi ạ? Thật (giúp người khác/đỡ cho tôi) quá.” ④ “(Anh/chị có lòng/đã cất công) nhưng giờ tôi xin thôi, vì phòng nhỏ.” ⑤ “(Nhận/cho) miễn phí thì ngại quá, nên tôi sẽ trả một chút tiền.”
 
 ### 聞き取り練習
 
@@ -3360,7 +3360,7 @@ Hình đặt lời người kia cạnh ý nghĩ của bạn; hãy hỏi điều 
 
 ④ **先輩:** 出口先生の『西洋史』の教科書いらない？<br>**あなたの考え:** いくら？
 
-**Bản dịch để xem sau khi luyện:** ① Bạn rủ sớm hôm nào đi xem phim; bạn muốn hỏi khi nào. ② Bạn không thể đến đúng 5 giờ đã hẹn; bạn muốn hỏi mấy giờ được. ③ Thầy/cô hỏi về tiệc cuối năm của nhóm seminar; bạn muốn hỏi ngày nào trong tháng Mười Hai. ④ Đàn anh/chị hỏi có cần sách giáo khoa “Lịch sử phương Tây” của thầy Deguchi không; bạn muốn hỏi giá bao nhiêu.
+**Bản dịch để xem sau khi luyện:** ① Người bạn rủ bạn đi xem phim vào một ngày gần đây; bạn muốn hỏi khi nào. ② Người bạn nói không thể đến lúc 5 giờ như đã hẹn; bạn muốn hỏi người ấy đến được lúc mấy giờ. ③ Thầy/cô hỏi về tiệc cuối năm của nhóm seminar; bạn muốn hỏi ngày nào trong tháng Mười Hai. ④ Đàn anh/chị hỏi có cần sách giáo khoa “Lịch sử phương Tây” của thầy Deguchi không; bạn muốn hỏi giá bao nhiêu.
 
 ### もういっぱい!?
 
@@ -3691,7 +3691,7 @@ Thông báo của ひまわりハイツ được giữ dưới đây. Chọn t�
 
 選択肢：a．とめる　b．置く　c．出す　d．守る　e．遊ぶ　f．別々にする　g．通路　h．駐車場
 
-**Bản dịch để xem sau khi điền:** “Gửi các cư dân Himawari Heights. 1. Khi đổ rác, hãy (①) phép tắc. Rác cháy được xin (②) trước 7 giờ 30 sáng thứ Hai hằng tuần. Lon và chai (thu thứ Tư hằng tuần) cần (③) trước. 2. Đừng (⑤) đồ ở (④). Xe đạp và xe máy cần được (⑥) đúng nơi quy định. 3. Vì nguy hiểm, xin đừng để trẻ (⑧) ở (⑦). Rất mong mọi người hợp tác.” Lựa chọn: đỗ/để xe; đặt; mang ra; tuân thủ; chơi; tách riêng; hành lang; bãi đỗ xe.
+**Bản dịch để xem sau khi điền:** “Gửi các cư dân Himawari Heights. 1. Khi đổ rác, hãy (①) phép tắc. Với rác đốt được, xin hãy (②) trước 7 giờ 30 sáng thứ Hai hằng tuần. Lon và chai (thu thứ Tư hằng tuần) cần (③) trước. 2. Đừng (⑤) đồ ở (④). Xe đạp và xe máy cần được (⑥) đúng nơi quy định. 3. Vì nguy hiểm, xin đừng để trẻ (⑧) ở (⑦). Rất mong mọi người hợp tác.” Lựa chọn: đỗ/để xe; đặt; mang ra; tuân thủ; chơi; tách riêng; hành lang; bãi đỗ xe.
 
 <!-- unit_id: u-lesson10-more-2 -->
 <a id="u-lesson10-more-2"></a>

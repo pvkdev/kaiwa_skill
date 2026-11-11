@@ -115,3 +115,20 @@ Giữ câu Nhật và dữ kiện bài tập. Đoạn giải thích có bản Vi
 - Bài 9 đã có đủ PDF 73–80 theo thứ tự sách và ảnh từng trang. Không thấy source issue mới trong phạm vi này; chapter được checkpoint `author_checked` sau khi rà trọn mạch.
 - Bài 10 đã có đủ PDF 81–88 theo thứ tự sách và ảnh từng trang. Không thấy source issue mới trong phạm vi này; chapter được checkpoint `author_checked` sau khi rà trọn mạch.
 - Chương hậu ký/giới thiệu tác giả đã có đủ PDF 89–90; PDF 91 lưu ở metadata. Đã mở ảnh và đối chiếu từng trang. Không thấy source issue mới. Đủ coverage cả 91 trang PDF vật lý, trong đó PDF 1–4 và 91 là metadata/ấn bản, PDF 5–90 thuộc các chương nội dung. Chờ root build và QA toàn sách trước khi đổi `book.json.status` từ `partial` sang `full`.
+
+## Rà độc lập: chỉnh câu dịch Bài 8, PDF 65
+
+- Ở câu khởi động 【1】 của `chapters/08-bai-8.md`, sửa lỗi lặp “Có lẽ lẽ ra” thành câu Việt tự nhiên và giữ ô (③) chưa điền. Câu Nhật, lựa chọn a–g và yêu cầu bài tập không đổi. Đã đối chiếu ảnh PDF 65 với raw snapshot.
+
+## Rà độc lập: chỉnh bản dịch Bài 9, PDF 73 và 78
+
+- PDF 73, khởi động 【2】⑤: bản Việt cũ chỉ diễn đạt một nhánh của `(もらう・くれる)`, dễ làm lộ lựa chọn. Đã dịch đủ hai nhánh “(nhận/cho)” sau đề, giữ nguyên câu Nhật và ô chọn.
+- PDF 78, luyện 2-34: lời bạn ở tình huống ① và ② từng được mô tả bằng “bạn” dễ hiểu nhầm là người học đang nói. Đã ghi rõ người bạn rủ đi xem phim/người bạn không thể tới 5 giờ, còn người học phải hỏi lại. Ảnh, raw snapshot và nhãn vai đều xác nhận như vậy.
+
+## Rà độc lập: chỉnh câu Việt Bài 10, PDF 87
+
+- Trong bản dịch thông báo ひまわりハイツ, câu “Rác cháy được xin (②)” bị đảo cú pháp và dùng nhãn không tự nhiên. Đã đổi thành “Với rác đốt được, xin hãy (②)…” để giữ rõ câu lệnh và ô trống; dữ kiện 7:30 sáng thứ Hai, tám lựa chọn, câu Nhật vẫn nguyên theo ảnh/raw.
+
+## Rà độc lập: làm rõ vai ở luyện Bài 8, PDF 70–71
+
+- Sau khi rà lại các nhãn vai trong luyện 2-25 và 2-26, sửa bản Việt từ “Bạn hỏi...” sang “Người bạn hỏi...” ở các tình huống ①–② của mỗi bài. Nguồn đặt lời trong bong bóng của 友人, còn học viên là あなた ở bong bóng suy nghĩ. Câu Nhật và dữ kiện không đổi.

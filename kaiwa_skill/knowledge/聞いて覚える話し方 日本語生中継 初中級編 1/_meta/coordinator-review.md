@@ -10,3 +10,7 @@ Root kiểm độc lập theo mẫu, không tuyên bố đã kiểm mọi bản 
 - Bìa, mục lục và ấn bản có hồ sơ metadata; lời bạt và tiểu sử giữ cuối sách. Không ép các bài theo template mới.
 
 Phạm vi hoàn tất: toàn bộ 91 trang của PDF đầu vào này. CD và tập kịch bản riêng không có trong đầu vào; bản này không bao gồm nội dung chưa được cung cấp. Checkpoint/hash và validator xác nhận cấu trúc, không chứng minh mọi bản dịch đúng tuyệt đối.
+
+## Vòng độc lập toàn sách sau build đầu
+
+Worker khác tác giả `/root/clean_keigo` đã mở ảnh và đối chiếu đủ91/91 trang, ghi `_meta/independent-review.md`. Các sửa dịch ở Bài8/9/10 làm rõ vai, giữ đủ nhánh lựa chọn và sửa cú pháp Việt; không sửa câu Nhật hoặc tự giải ô trống. Root xem diff, kiểm ledger rồi rebuild/validate lại. Hash của chapter được rà nằm trong book.json.completion.independent_review; các chỉnh sau đó cần review phần liên quan lại. Giới hạn mẫu ảnh của riêng root nêu trên vẫn giữ.
