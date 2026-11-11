@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 — 2026-11-11
+
+- Thêm `kaiwa-pdf-knowledge`: PDF chưa ingest đi thẳng bản sách Nhật–Việt; nguồn raw hoàn chỉnh tiếp tục dùng fork clean. Giữ nguyên mạch riêng, ví dụ, thực hành, đáp án và phụ lục của từng sách.
+- PDF-native provenance theo trang/block, hash PDF, kiểm kê vùng giữ/bỏ, coverage, unit/search, checkpoint và resume phát hiện phần stale; không tạo raw giả. Dùng lại builder và kiểm tra text của fork.
+- Bổ sung danh mục CD/audio, dẫn trang/vùng, trạng thái file thực có và bằng chứng bổ sung ngoài scope pilot. Thêm yêu cầu inventory cho bản clean cũ.
+- 8 test mới và30 test fork cũ đạt; pilot ngữ nghĩa đang thực hiện, chưa mở full direct chỉ nhờ test qua.
+
 ## 0.3.8 — 2026-11-11
 
 - Cảnh báo heuristic về số ô trống ở cặp JP/VI, sau khi QA phát hiện khung tự giới thiệu ba ô bị dịch thành bốn. Không ép cách ghi hoặc coi cảnh báo là kết luận ngữ nghĩa.
