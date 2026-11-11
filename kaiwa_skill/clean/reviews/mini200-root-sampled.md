@@ -7,3 +7,5 @@ Yêu cầu chuyển câu về tình trạng file nghe trong workspace từ cuố
 Root mở thêm20,21,23,28, tổng15 trang nguồn. So đầy đủ các mục5/6/8/13, toàn các thoại chính/phụ và POINT. Ví dụ tính từ ở POINT20 chỉ in English; bản Việt giữ hai nghĩa, không tự dựng câu Nhật. Mục8 có3thoại, mục13 có5thoại kể cả hai Words: đủ. Chưa thấy lỗi trong các phần đã so.
 
 Root đọc lại cuối guide: câu trạng thái file trong workspace đã được chuyển ra khỏi phần học; cách luyện và tra CD1/CD2 vẫn giữ đủ. Sửa đổi phù hợp, không còn pending ở phát hiện QA sớm này.
+
+Root mở83–84, tổng17trang nguồn. So trọnmục68確かに/69ちょうどいいです,5thoại mỗi mục,POINTvàCD1-68/69: Nhật/Việt/quan hệ phủđịnh-hỏi phùhợp,khôngthiếuWordsinriêng. Crop83xácnhậnすごく(khôngdấukéo),outputđúng;khôngghifalsepositive. Chương05đangdraftvìcònphầnchưađượcviết,khôngnângtoànchương.

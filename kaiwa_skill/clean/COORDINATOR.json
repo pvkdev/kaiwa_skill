@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T14:37:05.659196+00:00",
+  "updated_at_utc": "2026-11-11T14:55:39.042904+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -20,16 +20,24 @@
       "book_id": "200-quick-and-easy-phrases-for-japanese-conversation-97-09f743ddc922",
       "source_pdf": "kaiwa_skill/book/Kaiwa/200-quick-and-easy-phrases-for-japanese-conversation-9784863922068_compress.pdf",
       "title": "すぐに使える 日本語会話 超ミニフレーズ200",
-      "scope_pdf_pages": 225
+      "scope_pdf_pages": 225,
+      "latest_checkpoint_counts": {
+        "author_checked": 98,
+        "pending": 127
+      }
     },
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
-      "stage": "full_pdf_direct_initializing",
+      "stage": "full_pdf_direct_active",
       "book_id": "remake-ad312498c548",
       "source_pdf": "kaiwa_skill/book/BJT/上級レベル グローバル企業でのキャリア構築をめざして [Remake].pdf",
       "title": "上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
-      "scope_pdf_pages": 198
+      "scope_pdf_pages": 198,
+      "latest_checkpoint_counts": {
+        "author_checked": 30,
+        "pending": 168
+      }
     },
     {
       "role": "worker_3",
@@ -38,7 +46,12 @@
       "book_id": "700-essential-phrases-for-japanese-conversation-4863922-16d0299e765d",
       "source_pdf": "kaiwa_skill/book/Kaiwa/700-essential-phrases-for-japanese-conversation-4863922159-9784863922150_compress del intro.pdf",
       "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
-      "scope_pdf_pages": 208
+      "scope_pdf_pages": 208,
+      "latest_checkpoint_counts": {
+        "author_checked": 52,
+        "needs_review": 1,
+        "pending": 155
+      }
     }
   ],
   "source_queue": [
@@ -248,7 +261,7 @@
       "source_sha256": "ad312498c548a75a6493409ae20bb33e8ed6d2bd67ca0d81bb713de625033cfb",
       "page_count": 198,
       "route": "pdf_direct",
-      "state": "full_direct_initializing",
+      "state": "full_direct_active",
       "raw_initialization_allowed": false,
       "owner": "/root/clean_namachuukei_sho",
       "title": "上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
@@ -1239,8 +1252,8 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 48,
-        "pending": 177
+        "author_checked": 60,
+        "pending": 165
       },
       "chapter_checkpoint_counts": {
         "author_checked": 3,
@@ -1258,10 +1271,30 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 208
+        "author_checked": 12,
+        "needs_review": 1,
+        "pending": 195
       },
       "chapter_checkpoint_counts": {
-        "pending": 8
+        "needs_review": 1,
+        "pending": 7
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
+      "title": "上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
+      "source_pdf": "kaiwa_skill/book/BJT/上級レベル グローバル企業でのキャリア構築をめざして [Remake].pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 198,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 198
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 17
       }
     }
   ],

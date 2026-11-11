@@ -22,6 +22,16 @@ Tất cả sub gpt-6-sol/high. Runtime4 active tính root nên tối đa3 sub ac
 
 Đây là snapshot; dùng resume/hash thật. Còn3 PDF chưa giao:210pháttriển233,180cảmxúc209,180onomatopoeia220. Khi bàn giao, giao tiếp ngay, không hỏi lại quyền. Các sách cũ của worker root sở hữu, không viết lại.
 
+## QA đang diễn ra — snapshot mới nhất
+
+Cả ba assignment đã được helper đăng ký và guard SHA/page count; không còn bước init/assign chờ ở Roleplay cao cấp. Dùng COORDINATOR hiện tại và resume thật để lấy số trang, thay các con số snapshot cũ ở trên.
+
+- 超ミニフレーズ200: root mở17 nguồn (thêm83/84), so mục68/69 không thấy lỗi. Các mẫu trước1/2/3/5/6/8/13 và hướng dẫn đã so. Báo cáo reviews/mini200-root-sampled.md; chưa nghiệm thu toàn225.
+- 必須700: root11 nguồn1/2/9/11–13/15–16/21/207–208. Guide/Unit1/Features1 đã so. Cue romaji là dữ kiện đề nên giữ nguyên, kể cảItadakimasu/Gochisōsama; không đổi thànhKanji. Process-notes đã chuyển_meta; nghĩanonpast～ちゃう và warning2 đã sửa/readback. Sourceissue chỉ chắc trangin2 khôngcó, không suy nội dung mất; ngày207 giữ hai dữ kiện in mâu thuẫn. Part2 đã checked22–53, tiếpPart3. Báo cáo reviews/essential700-root-sampled.md.
+- Roleplay上級: root20 nguồn1/15–30/187/197–198. So trọn bài1 nguồn23–30; front chỉ QA mẫu dù đã đọc toàn output. Các sửa logic ở15–17 và sơ đồ18–20 đã đọc lại: không chênh lệch độkhó,2×90phút,advice nhómtrước,điều kiện oralresponse; ba người thuộc包材1課; cácnhãn sảnphẩm;受注/発注;cảđườnggiao thẳng/quakho và営業 tới cảkháchcũ/mới. Bài1語学 và dấu ngoặc flow đã sửa/readback. Hai ghi chú sản xuất ởflow đang yêu cầu bỏ khỏi phần học khi refresh gần nhất. Các ranh giới bài theo dividerthật: bài1 23–30,bài2 bắtđầu31; không theooffset cũ. Giữ17chapters/full198vàhistory. Hai trang đápán7/8 nằm trongchaptercuối đúngthứtự in, provenancekhôngđổi. Báo cáo reviews/roleplay-advanced-root-sampled.md.
+
+Skill fork đã thêm quy tắc cue romaji, commit eec34de; direct kế thừa skill fork. Không đổi code nên không chạy lại test. Root tiếp tục chờ handoff, QA/chốt rồi giao ba PDF cuối ngay.
+
 ## Đã chốt
 
 Mới nhất **Roleplay sơ–trung**,227trang/25chương/172unit,commit09c08fc,BookSHAcd59d0e61fcc795142690aa362cca57d18633dc9aa4d174f5008667b542c6c06. Root33ảnh:1/4/8/11/24–39/185/191–193/202–203/206/215–216/221/223/226–227. Toànbài1soảnh; mẫuCan-do/index/answers/scriptssoảnh. SửaAfirstspeaker/Đạt/companyrelations/teacheraccent/choiceshints/answergenericmeaningsđãđọclại. Index226,14script/42questions; toànindexauthoraudit,rootchỉ33khóaở193/202. 223–224duplicate221–222 (rootso221/223),192nhảy7→9,204adsexcluded. Strictvalidate0/0,no pending/draft/stale.34audio01–34/14scriptrefs/WebURL4008,discunknown/filesnot_checked. WorkerđãRoleplay上級.
