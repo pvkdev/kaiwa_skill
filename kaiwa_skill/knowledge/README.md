@@ -2,7 +2,7 @@
 
 Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát và những vấn đề còn trong nguồn. Chưa sắp thành lộ trình mới.
 
-[Tra CD, băng và nguồn nghe](AUDIO_INDEX.md) — có trạng thái inventory và trạng thái file âm thanh riêng; các sách cũ còn thiếu inventory đang chờ bổ sung.
+[Tra CD, băng và nguồn nghe](AUDIO_INDEX.md) — có trạng thái inventory và trạng thái file âm thanh riêng; một số hồ sơ mới kiểm một phần, phạm vi được ghi rõ trong từng inventory.
 
 ## Đã có bản đọc đủ PDF đầu vào
 
@@ -16,17 +16,21 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 - [中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―](<中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―/book.md>) —140 trang/10 chương/109unit; tác giả đối chiếu toàn phạm vi, root QA16 trang mẫu. [Giới hạn review](<中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―/_meta/coordinator-review.md>). Có inventory1CD/15mã track; chưa kiểm file nghe.
 - [日本語でビジネス会話 中級編 本文冊](<日本語でビジネス会話 中級編 本文冊/book.md>) —138 trang/22 chương/128unit; tác giả đối chiếu toàn phạm vi, root QA10 trang mẫu. [Hồ sơ và rebase provenance](<日本語でビジネス会話 中級編 本文冊/_meta/coordinator-review.md>). Pin mới chỉ bổ sung4anchor vào raw tổng hợp, toàn138trang nguồn không đổi chữ.
 
+- [なめらか日本語会話](<なめらか日本語会話/book.md>) —163trang/27chương/158unit; tác giả rà toàn sách, root QA15trang mẫu. [Giới hạn và vấn đề nguồn](<なめらか日本語会話/_meta/coordinator-review.md>): chỉPDF32 còn chữ bị che, không đoán phục hồi. Audio băng bán riêng, bảnin6năm2002.
+
+- [わかるビジネス日本語（新装版）](<「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）/book.md>) —152trang/21chương/278unit; đầy đủ chỉ mục/đáp án, tác giả rà toàn sách, root QA16trang mẫu. [Giới hạn review](<「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）/_meta/coordinator-review.md>).50nhãn audio②–51, chưa có xác nhận file nghe.
+
 ## Đang clean
 
-- **なめらか日本語会話** —163 trang, đang biên soạn trực tiếp PDF → knowledge bằng skill mới, không tạo raw trung gian. Audio là băng bán riêng theo hướng dẫn; tình trạng tệp nghe được ghi trong inventory.
+- **わかる！話せる！日本語会話 基本文型88** —đang mở rộng full96trang từ pilot7–12 đã migration PDF-direct, giữ history/checkpoint.
 
-- **わかるビジネス日本語（新装版）** —152 trang, mở rộng full từ pilot đã PASS; giữ lịch sử và checkpoint trên cùng thư mục.
+- **ビジネスマナー編** —136trang, đang preflight/biên soạn PDF-direct; xác minh nhan đề thật trước đặt tên folder.
 
-- **日本語でビジネス会話 中級編 練習冊** —148 trang, đi trực tiếp từ PDF, tham khảo23trang raw đã có; giữ phần raw đó chỉ đọc.
+- **日本語でビジネス会話 中級編 練習冊** —đã mở đủ148trang, đang audit phục hồi glossary chân trang; chưa release. Phần đang chờ sửa mangdraft đểresume đúng.
 
 ## Pilot một phần
 
-- [「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）](「BJTビジネス日本語能力テスト」入門%20わかるビジネス日本語（新装版）/book.md) —pilot trực tiếp PDF1/17/18/23/149/152;4 phần/10unit, root đã QA/sửa và ghi PASS. Có inventory CD với bằng chứng PDF9 bổ sung. Chưa xử lý toàn sách152trang.
+- Pilot Wakaru đã được mở rộng thành bản toàn sách ở trên. Báo cáo/hash pilot cũ được giữ làm lịch sử, không dùng thay review full.
 
 - **わかる！話せる！日本語会話 基本文型88** —chỉ PDF7–12;4 phần/9unit giữ nguyên khi chuyển provenance sang PDF-direct, history/ledger cũ được lưu. Vấn đề công thức nguồn PDF9 vẫn needs_review; chưa mở full96trang.
 

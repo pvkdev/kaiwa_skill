@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T06:41:34.689328+00:00",
+  "updated_at_utc": "2026-11-11T07:11:11.964027+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -16,26 +16,26 @@
     {
       "role": "worker_1",
       "worker": "/root/clean_keigo",
-      "stage": "full_pdf_direct_active",
-      "book_id": "nameraka-nihongo-kaiwa-7a1ef4391141",
-      "source_pdf": "kaiwa_skill/book/Shadowing/なめらか日本語会話 Nameraka Nihongo Kaiwa.pdf",
-      "title": "なめらか日本語会話",
-      "scope_pdf_pages": 163,
-      "planned_chapters": 27
+      "stage": "full_pdf_direct_extension_active",
+      "book_id": "669041168-4f47df1cc97a",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/669041168-日本語会話-基本文型８８.pdf",
+      "title": "わかる！話せる！日本語会話 基本文型88",
+      "scope_pdf_pages": 96
     },
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
       "stage": "full_pdf_direct_active",
-      "book_id": "wakaru-bijinesu-nihongo-c0c4bc000a34",
-      "source_pdf": "kaiwa_skill/book/BJT/Wakaru_Bijinesu_Nihongo.pdf",
-      "scope_pdf_pages": 152,
-      "planned_chapters": 21
+      "book_id": "shigoto-no-nihongo-bijinesu-manaa-hen-0e3d5e9467fa",
+      "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf",
+      "scope_pdf_pages": 136,
+      "title": "しごとの日本語 ビジネスマナー編",
+      "planned_chapters": 25
     },
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
-      "stage": "full_pdf_direct_reuse_partial_raw_active",
+      "stage": "full_direct_authored_footnote_audit_active",
       "book_id": "02-yuukibui-3e66906b7e05",
       "source_pdf": "kaiwa_skill/book/BJT/02.日本語でビジネス会話 中級編 ー練習冊 YUUKIBUI.pdf",
       "scope_pdf_pages": 148,
@@ -135,8 +135,15 @@
         "Build page hashes incomplete",
         "Page 1: verification evidence/hash/issue mismatch"
       ],
-      "state": "queued_direct_with_readonly_raw",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active_using_readonly_raw",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_sho",
+      "title": "しごとの日本語 ビジネスマナー編",
+      "knowledge_dir": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編",
+      "known_missing_printed_pages": [
+        104,
+        105
+      ]
     },
     {
       "book_id": "shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0",
@@ -172,7 +179,7 @@
       "source_sha256": "c0c4bc000a3471ce6a94171eb076df1c8efe54c1859a6fbf9d1e7b662a245993",
       "page_count": 152,
       "route": "pdf_direct",
-      "state": "full_direct_active_after_pilot",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
       "pilot_scope_pdf_pages": [
         1,
@@ -182,7 +189,7 @@
         149,
         152
       ],
-      "owner": "/root/clean_namachuukei_sho"
+      "knowledge_commit": "0a884d7"
     },
     {
       "book_id": "30-f497459c2a83",
@@ -320,10 +327,11 @@
         "Build page hashes incomplete",
         "Page 28: verification evidence/hash/issue mismatch"
       ],
-      "state": "migration_complete_queued_full_extension",
+      "state": "full_direct_extension_assigned",
       "raw_initialization_allowed": false,
       "migration_commit": "1c2d7c0",
-      "known_source_issue": "PDF9 contradictory contraction formula retained; pilot only7–12"
+      "known_source_issue": "PDF9 contradictory contraction formula retained; pilot only7–12",
+      "owner": "/root/clean_keigo"
     },
     {
       "book_id": "700-essential-phrases-for-japanese-conversation-4863922-16d0299e765d",
@@ -443,9 +451,12 @@
       "source_sha256": "7a1ef4391141caedb682df607d058a97be189823fb5e5521d39614fa34d53c28",
       "page_count": 163,
       "route": "pdf_direct",
-      "state": "direct_active",
+      "state": "complete_author_checked_root_sampled_with_source_issue",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_keigo"
+      "knowledge_commit": "c92c81e",
+      "unresolved_source_pages": [
+        32
+      ]
     },
     {
       "book_id": "book-f4bcdf991dba",
@@ -703,17 +714,15 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 152,
       "chapter_checkpoint_counts": {
-        "author_checked": 17,
-        "draft": 1,
-        "pending": 3
+        "author_checked": 21
       },
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 131,
-        "pending": 21
-      }
+        "author_checked": 152
+      },
+      "knowledge_commit": "0a884d7"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/なめらか日本語会話",
@@ -723,18 +732,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 163,
       "chapter_checkpoint_counts": {
-        "author_checked": 24,
-        "needs_review": 1,
-        "pending": 2
+        "author_checked": 26,
+        "needs_review": 1
       },
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issue",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 152,
-        "needs_review": 1,
-        "pending": 10
-      }
+        "author_checked": 162,
+        "needs_review": 1
+      },
+      "knowledge_commit": "c92c81e"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 基本文型88",
@@ -742,17 +750,19 @@
       "source_pdf": "kaiwa_skill/book/Kaiwa/669041168-日本語会話-基本文型８８.pdf",
       "source_mode": "pdf_direct",
       "metadata_status": "pilot_partial",
-      "scope_pdf_page_count": 6,
+      "scope_pdf_page_count": 96,
       "chapter_checkpoint_counts": {
         "needs_review": 2,
-        "author_checked": 2
+        "author_checked": 4,
+        "pending": 10
       },
       "audio_inventory_present": true,
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 5,
-        "needs_review": 1
+        "author_checked": 16,
+        "needs_review": 1,
+        "pending": 79
       }
     },
     {
@@ -799,15 +809,15 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 148,
       "chapter_checkpoint_counts": {
-        "author_checked": 14,
-        "pending": 7
+        "author_checked": 13,
+        "draft": 8
       },
       "audio_inventory_present": true,
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 97,
-        "pending": 51
+        "author_checked": 89,
+        "draft": 59
       }
     },
     {
@@ -845,6 +855,16 @@
       "audio_inventory_present": true,
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編",
+      "title": "しごとの日本語 ビジネスマナー編",
+      "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 136,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true
     }
   ],
   "pending_tool_work": [],
@@ -864,7 +884,7 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 9,
-  "completed_full_source_pages": 779,
+  "completed_full_books": 11,
+  "completed_full_source_pages": 1094,
   "completion_count_definition": "7 prior full independently reviewed books; roleplay140 and main138 full author-checked with root16/10page sampled QA, respectively."
 }
