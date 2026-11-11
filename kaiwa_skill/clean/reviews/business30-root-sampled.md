@@ -29,3 +29,9 @@ Kiểm chương01 bằngvalidate_chapter sau các sửa:0 lỗi/0 cảnh báo; c
 Root mở thêm61/62/76/77, tổng26 trang nguồn. So trọn cột電話のルール61 vàホウレンソウ76, lời chào/giải thích khiêm nhường cùng5W3H giữ đủ ý. PDF77 trắng thật;61 kết Bài3/62 mở Bài4, số trang in nhảy51→53 trong PDF cung cấp, không mất đoạn kiến thức ở chỗ nối đã mở.
 
 Quiz taxi62 ban đầu chuyển sai trước/sau: output đặtB ởghếtrước/A ởghếsau, trong khi hình xe hướngtrái và hai cột là[ngườilái/A],[B/C]. Worker sửa về đúng bố cục nhìn từtrên; thang máy cũng bổ sung[A B]/[C D],cửa dưới/nút bêntrái gầnC. Root đọc lại output sau sửa, khớp hình62; các ô chọn người vẫn trống, không tự giải. Đây là ví dụ cần giữ quan hệ hình, không chỉ liệt kê nhãn.
+
+Root mở thêm 110, 119, 120, 123, tổng 30 trang nguồn. Đọc toàn output Bài 7; so bảng từ và dấu trọng âm 110, hai lịch/ràng buộc A–B của roleplay 3 ở 119, mẫu cùng bốn gợi ý bài luyện 1 ở 120, trọn cột 飛び込み ở 123. Các lịch giữ ngày/giờ và ô trống, không tự tìm giờ hẹn thay người học; bài luyện giữ câu mẫu in sẵn cùng gợi ý chưa giải. Cột văn hóa giữ giải thích ghé chào hàng không hẹn trước và câu hỏi về nước người học.
+
+Bảng từ 110 có 31 mục, đã đọc cả hai bảng nghĩa và dấu. Yêu cầu writer sửa ご↑うこくせん↓りゃく thành こ↑うこくせん↓りゃく cho 広告戦略 và giữ mục từ 勝手 thay vì chỉ ghi cách đọc かって. Ngoài hai điểm ấy, mẫu bảng phù hợp ảnh đã mở; đang chờ đọc bản sửa. Chưa kiểm độc lập toàn các hội thoại/bài tập còn lại của Bài 7 hoặc toàn trọng âm của sách.
+
+Writer đã mở lại crop 110, sửa hai vị trí và refresh checkpoint Bài 7. Root đọc lại thấy こ↑うこくせん↓りゃく và mục từ 勝手 kèm cách đọc かって đúng yêu cầu. Số mục chính xác là 31; tin nhắn root ban đầu ghi 32 là lỗi đếm trong trao đổi, không phải có một mục bị mất.
