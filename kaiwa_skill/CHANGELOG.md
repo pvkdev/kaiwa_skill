@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.4 — 2026-11-11
+
+- Validator nhận cặp Nhật–Việt trong danh sách đánh số/gạch đầu dòng, vai nói có tên Nhật và đoạn Nhật không nhãn, tránh bắt đổi bố cục sách chỉ vì giới hạn parser. Kiểm thiếu bản dịch hoặc sai vai rõ ràng vẫn giữ.
+- Thêm kiểm thử hồi quy từ bố cục gặp khi clean hàng loạt; thông báo validator xuất UTF-8.
+
 ## 0.3.3 — 2026-11-11
 
 - CLI tiến độ clean xuất UTF-8 trên Windows để tên sách Nhật không làm lệnh báo lỗi mã hóa sau khi checkpoint đã ghi thành công.

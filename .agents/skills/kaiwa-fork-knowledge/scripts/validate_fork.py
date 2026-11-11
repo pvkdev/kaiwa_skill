@@ -18,7 +18,7 @@ ANCHOR = re.compile(r'<a\s+id=["\']([^"\']+)["\']\s*></a>', re.I)
 UNIT_ID = re.compile(r'u-[a-z0-9]+(?:-[a-z0-9]+)*')
 RAW_PAGE = re.compile(r'p(\d{4})')
 SHA256 = re.compile(r'[0-9a-f]{64}')
-PAIR = re.compile(r'^\s*\*\*(JP|VI|[A-Z] \((?:JP|VI)\)):\*\*\s*(.*?)\s*$')
+PAIR = re.compile(r'^\s*(?:(?:[-+*]|\d+[.)])\s+)?\*\*(JP|VI|[^*\n]+? \((?:JP|VI)\)):\*\*\s*(.*?)\s*$')
 REMAINS = [
     (re.compile(r'<\s*/?\s*(?:ruby|rt|rp)\b', re.I), 'ruby/furigana HTML'),
     (re.compile(r'(?im)^\s*(?:furigana\s*\(nguồn\)|furigana\s*:|ふりがな\s*[:：])'), 'furigana marker'),
@@ -198,7 +198,12 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
             expected = 'JP' if label == 'VI' else label.replace('(VI)', '(JP)')
             previous_line = next((earlier for earlier in reversed(lines[:index]) if earlier.strip()), '')
             previous = PAIR.match(previous_line)
-            if previous is None or previous.group(1) != expected:
+            # A book may use an unlabelled Japanese paragraph or speaker before
+            # a Vietnamese gloss. Do not force a new lesson layout to add JP tags.
+            unlabelled_source = (label == 'VI' and previous is None and
+                                 not previous_line.lstrip().startswith(('#', '<')) and
+                                 re.search(r'[\u3040-\u30ff\u3400-\u9fff]', previous_line))
+            if (previous is None or previous.group(1) != expected) and not unlabelled_source:
                 report.error(f'{path}:{index + 1}', f'{label} lacks preceding {expected}')
     return seen
 
@@ -371,4 +376,7 @@ def main() -> int:
 
 
 if __name__ == '__main__':
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, 'reconfigure'):
+            stream.reconfigure(encoding='utf-8')
     sys.exit(main())
