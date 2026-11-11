@@ -1,4 +1,24 @@
-# Bàn giao mới nhất book11 — WIP p1–94; p95 đã render
+# Bàn giao mới nhất book11 — WIP p1–100; p101 đã render
+
+- Cập nhật: 2026-11-11 JST; worker `production_book_11_root_cont4`, `gpt-6-sol/high`, điều phối `/root`; token `book11-root95-20261111-f4c8` sẽ release sạch sau ghi handoff.
+- Book `01-yuukibui-b12c61270c7b`, 138 trang vật lý; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn đã kiểm `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt này chuyển mới **p95–100 (6 trang)**, full render và direct4 trên/dưới mỗi trang, so hai chiều rồi verify từng trang. p101 đã render scale2, mở full để xác định bố cục và tạo direct4 hai nửa, **chưa chép/verify**.
+- Sau reconcile/build: **100/138 verified (p1–100), 1 rendered (p101), 37 pending (p102–138), 0 draft/needs_review/invalid, 0 issue/error**; build partial, chưa completed/accepted. `book.md`/`search.jsonl` hiện chứa đúng p1–100. SHA-256 `build.json`: `87bedd8f96565c082cb4697c86afc19211f0b0cf361573d271120328481bb97a`.
+
+## Nội dung lượt này và điểm nguồn
+
+- p95 trang in82 là `《本文会話》 社長に紹介される`, 14 lượt của 課長／社長／ジョーンズ, phần giới thiệu 研修生 rồi nói về thị trường, ロックハート, 中東担当部長. p96 đầu tiếp lượt 社長 về 中東, tiếp hai lượt, rồi `《類話》` 1–2. Sơ đồ p96 chuyển đủ: ベルナール và A cùng khung 同じ会社; 伝言 từ ベルナール tới A, 伝える từ A tới B ngoài khung.
+- p97 `類話` mục3 và sơ đồ: シャンベ trong アロー社, 伝言 tới A rồi 伝える tới B; phần `語句の使い方` mục1–3. p98 mục4–9(1), p99 nối9(2) rồi10–15. Giữ ô trống, ref p/l, bold theo từng lần nguồn, ruby từng occurrence. p100 chỉ có `〔類話〕` mục16 với hai ví dụ ở đầu trang; nửa dưới thực sự trống ngoài số in87.
+- p1–94 verified cũ giữ nguyên. Không sửa tools/skills/Git/sách khác. Ảnh/crops/scratch chỉ trong cache sách, không thuộc output.
+
+## Tiếp tục ngay
+
+- **Physical p101 (trang in88)** là `内閣の組織図`, sơ đồ nhiều nhánh và chữ/ruby rất nhỏ. `p0101.png` đã mở full; `p0101-top4-cont4.png`/`p0101-bot4-cont4.png` đã tạo nhưng chưa mở. Cần crop direct8/16 từng cột và chuyển đủ nhánh/ô/mũi nối thành text có nhãn biên tập. Các nút nhìn toàn trang gồm 内閣, 安全保障会議, 内閣官房, 内閣法制局, 人事院, 会計検査院, hàng loạt 省・庁; không suy thêm quan hệ từ kiến thức ngoài PDF. p102–138 pending.
+- Worker mới kiểm claim/status/hash thật rồi claim token mới. Bảo toàn p1–100, đọc p101 chậm chắc từng cột và source→MD→source, sau đó đi từng trang. Với chỗ scan không rõ, ghi needs_review cụ thể thay vì đoán. Root giữ QA/Git/acceptance.
+
+---
+
+# Bàn giao trước — WIP p1–94; p95 đã render
 
 - Cập nhật: 2026-11-11 JST; worker `production_book_11_root_cont3`, `gpt-6-sol/high`, điều phối trực tiếp `/root`.
 - Book `01-yuukibui-b12c61270c7b`, 138 physical pages; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
