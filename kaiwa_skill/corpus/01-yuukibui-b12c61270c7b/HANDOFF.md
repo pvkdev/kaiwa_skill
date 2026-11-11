@@ -1,3 +1,106 @@
+# Bàn giao mới nhất book11 — WIP p1–64
+
+- Cập nhật: 2026-11-11T01:37:58.120054+00:00; worker `production_book_11_sol_cont_root45`, `gpt-6-sol/high`, điều phối trực tiếp `/root`.
+- Book `01-yuukibui-b12c61270c7b`, 138 physical pages; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`.
+- SHA-256 nguồn giữ nguyên: `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt này chuyển mới **p45–64 (20 trang)**. Mỗi trang đã mở full render scale2, direct4 trên/dưới, mở lại sau draft để đối chiếu nguồn→Markdown và Markdown→nguồn; verify riêng từng trang bằng CLI. p49 thêm direct8 chữ `斎` để phân biệt biến thể trong `斎藤`.
+- Sau reconcile/build: **64/138 verified (p1–64), 74 pending (p65–138), 0 rendered/draft/needs_review/invalid, 0 issue/error**, `build_current=true`. Sách partial, chưa completed/accepted. `book.md` và `search.jsonl` chỉ gồm p1–64.
+- SHA-256 `build.json`: `4335cf66a65f9d8913023e5e528916f3f262cf9fd438938636ddc97a2546e698`.
+- p1–44 giữ nguyên; p45–64 đều có `b001` duy nhất trước first substantive unit; typography ngữ pháp theo từng occurrence, không bold mù mọi chuỗi trùng. Kiểm cấu trúc anchors/text-only cục bộ đã qua; đây không thay QA ngữ nghĩa độc lập của root.
+- Token dùng lượt này: `book11-root45-20261111-c542`; release sạch bằng CLI sau khi ghi handoff. Không Git, không sửa tools/config/roster/main HANDOFF hoặc sách khác. Ảnh/scratch chỉ cache riêng.
+
+## Nội dung và điểm nguồn cần giữ
+
+- p45–48 kết 第六課: các hội thoại転勤/五年ぶり/近所/引っ越し/おくやみ rồi語句; giữ giới thiệu chuyển nhà lặp qua p45→46, `405号室`, `八十一＝はちじゅういち` và typography từng mẫu.
+- p49 `日本人に多いみょう字`: 57 họ trong ba dải20/20/17 dòng, giữ7 ô cách đọc trống (安部/荒井/伊東/大田/菊池/酒井/武内). Chữ nguồn là `斎藤`, không đổi `齋藤`; các dòng `なかじま＝中島`, `やまざき＝山崎`, `わたなべ＝渡辺` giữ nguồn.
+- p50–55 第七課 `社外からかかって来た電話`: header第七課 ruby `だいななか`. p50 khung có14 ô trống; note review đã sửa lỗi đếm13 thành14, không đổi text nguồn. Nhãn vai `大`/`林`, `交`/`換` được ruby riêng theo cách in; số `391の5231`/`内線321` giữ hai lần p52. p53 `後ほど` có `後＝のち`; p54 tên `おおきた（大来）` khác nghe nhầm `おきた`, giữ rõ. `私＝わたくし` trong hội thoại p52 nhưng `私＝わたし` trong ví dụ p54.
+- p56–61 第八課 `社員旅行`: 第八課 ruby `だいはっか`, p56 10lượt/10ô trống. p57 giữ `土＝ど`/`日＝にち`, `一曲＝いっきょく`, `参加するでしょ`, `歌わされたり`/`やらされたり`. p58 form `保養所利用申込書` chuyển đủ text (昭和/ngày/nơi/課/tên/số người/bữa ăn/phí); `利用月日＝りようがっぴ`, `小人＝こども`, `有/無＝う/む` ở nhãn nhưng `あり/なし` ở lựa chọn, phí `2000円`/`1000円`. p61 `今日中＝きょうじゅう` khác `今週中＝こんしゅうちゅう` như ruby in; không đồng nhất hóa.
+- p62–64 mở 第九課 `予約`: ruby `だいきゅうか`. p63 hội thoại9lượt `旅行社で`, số `7月28日` giữ ASCII, ruby chỉ `月＝がつ`/`日＝にち`, `午前九時＝ごぜん/くじ`; kết ở `自由席で並ぶしかないですね。`, p64 chuyển類話, không nối giả. p64 `早目＝はやめ`, S席/A席, ngày15/16/9月27/27/29, lời cuối B và chú thích nhận tên/điện thoại đủ.
+- Không phát hiện vùng scan thực sự không đọc được trong p45–64; không tạo issue suy đoán. Trang form/bảng đã chuyển đầy đủ text, không phụ thuộc ảnh.
+
+## Tiếp tục ngay
+
+- **Trang mới tiếp theo: physical p65–138**. p65 đã mở preview nguồn trong cache `preview0065-root45.png` chỉ để kiểm nối: mở `《応用会話》` / `レストランの予約`, nhân vật中村 vàレストラン. **p65 vẫn pending, chưa ledger render/record/verify**.
+- Đọc current rules và own HANDOFF, kiểm status/claim thật rồi claim token mới. Giữ verified1–64. Root có thể followup worker ngay, không cần chờ user. Mỗi trang mới vẫn full/crop thật, đối chiếu hai chiều và checkpoint riêng, typography đúng occurrence và b001 đầu khối.
+- Root giữ Git/QA. Mẫu QA hữu ích trong batch: p49 bảng họ, p50 ô trống, p53 ruby後, p58 form, p60 grammar/emphasis, p61 ruby中, p64 dates/roles.
+
+---
+
+## Lịch sử checkpoint p1–44
+
+# Bàn giao mới nhất book11 — WIP p1–44, QA anchors/emphasis đã sửa
+
+- Cập nhật: 2026-11-11T00:31:16.656522+00:00; worker `production_book_11_sol_cont_root`, `gpt-6-sol/high`, điều phối trực tiếp `/root` theo thay đổi của user.
+- Book `01-yuukibui-b12c61270c7b`, 138 physical pages; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`.
+- SHA-256 nguồn giữ nguyên: `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt này chuyển đổi mới **p36–44 (9 trang)**, mở toàn trang và direct4 mỗi trang, đối chiếu hai chiều/ruby/source typography rồi verified từng trang. p37 thêm direct8 để phân biệt `阿佐ヶ谷` và `七分＝ななふん`.
+- Sau reconcile/build: **44/138 verified (p1–44), 94 pending (p45–138), 0 rendered/draft/needs_review/invalid, 0 issue/error**, `build_current=true`. Sách partial, chưa completed/accepted. `book.md`/`search.jsonl` chỉ gồm p1–44.
+- SHA-256 `build.json`: `6602a768ccedec27cf4833e6ba6b8e3ea2ec0dffe1f4895771bac5ca67b7800c`.
+
+## QA root đã xử lý trong lượt này
+
+- Root mở p16/p25/p35, thấy nguyên văn/ruby phù hợp trong mẫu nhưng thiếu emphasis ngữ pháp và anchor đầu. Worker đã báo phạm vi trước khi sửa.
+- Kiểm file thật xác nhận thiếu `b001` đúng toàn **p16–36**. Đã thêm anchor trước nội dung nguồn đầu cho cả 21 trang, giữ nguyên mọi anchor `b002+`, mở lại ảnh từng trang và fresh verify. **p16–44 đều có b001 duy nhất**. p37–38 vốn có b001 do CLI chèn; p39+ đặt rõ ngay từ draft.
+- Đã rà và khôi phục emphasis theo vị trí nguồn ở **p16–17, p22–23, p27–29, p33–35**; thêm emphasis tên sách in đậm p26/p27/p29. Không áp dụng tất cả từ trùng: đã kiểm riêng các câu nhắc lại không đậm ở p17 mục8, p27 mục1/4, p28 mục8, p34 mục10, p35 mục15A. P39–41 được giữ emphasis ngữ pháp ngay trong lượt chuyển đổi mới.
+- Script so sánh từng trang p16–36 xác nhận bỏ duy nhất Markdown `**` thì nội dung khớp bản sửa anchor-only; không đổi một chữ/ruby/dấu nguồn nào trong đợt QA này. Fresh evidence giữ review nguồn trước và ghi rõ việc sửa anchors/emphasis.
+- Các trang p18–21/p24–25/p30–32/p36 chỉ thêm anchor; p26 thêm cả emphasis hai tên sách. P1–15 không sửa.
+- Không còn audit emphasis/anchor p16–36 đang treo trong phạm vi đã giao; root vẫn cần QA độc lập và acceptance toàn sách sau đủ nguồn. Các ghi chú audit pending trong lịch sử, nếu có, đã được mục mới nhất này thay thế.
+
+## Phạm vi mới và điểm cần giữ
+
+- p36 mở 第五課 道を聞く / 談話型; p37 本文会話 hỏi đường tới nhà課長; p38 類話 待ち合わせ; p39–41 語句; p42 mở 第六課 あいさつ; p43–44 本文会話 朝/夕方 và đầu 類話1/2.
+- p37 đọc `歩いて七分ぐらいかな` và ruby `七分＝ななふん`, không phải 十分. `家` có ruby `いえ`/`うち` khác nhau từng lần; `二階建＝にかいだ` chỉ span chữ Hán.
+- p38 giữ `12番線` số ASCII và ruby chỉ `番線＝ばんせん`, `十二時＝じゅうにじ`, `総武線`, `黄色`; không cập nhật dữ kiện đường sắt lịch sử theo hiện tại.
+- p39→40 nối mẫu6(1)→6(2); p40→41 nối11b(1)→11b(2), rồi11c. Các mục `は/でしたね`, `というのは/ですね`, `というと/ですね` tách đúng theo nguồn.
+- p42 第六課 in ruby `だいろっか`; giữ `あまりお役に立てませんで…` trong khung. P43 朝9 lượt/夕方5 lượt, giữ đoạn tiếp trong cùng vai 松下, không chèn nhãn mới.
+- p43→44 nối đoạn hai người rời cơ quan, sau đó caption `駅へ行くとちゅうで`. P44 phần 国へ帰る có `君＝きみ`, khác `君＝くん` ở lời gọi ラーマン君; giữ `あまりお役に立てなかったろう`.
+- p44 cuối bắt đầu 類話2 転勤 với một lượt A chúcご栄転/メキシコ. Đã mở preview p45 để kiểm nối: p45 đầu B `うん、二年ばかり行ってくることになってね。...` tiếp chính hội thoại này. **p45 chưa record/render ledger/verify**.
+
+## Tiếp tục
+
+- **Trang mới tiếp theo: physical p45–138**. Đọc rules/core/HANDOFF, kiểm status/claim thật, claim token mới sau release sạch. Giữ typography có ý nghĩa và b001 trước first substantive unit ngay từ draft; chỉ bold nơi nguồn thực sự in, không replace mọi occurrence cùng chuỗi.
+- Worker không dùng Git, không sửa tools/config/roster/main production HANDOFF/sách khác. Root sở hữu Git/QA. Render/crop/scratch chỉ trong cache riêng, không thuộc output text.
+
+---
+
+## Lịch sử checkpoint p1–35
+
+# Bàn giao mới nhất book11 — WIP p1–35
+
+- Cập nhật: 2026-11-11T00:12:20.526936+00:00 (2026-11-11 JST).
+- Worker tiếp: `production_book_11_sol_cont`, `gpt-6-sol/high`, skill 0.2.4; token đã dùng `book11-cont-20261111-d73b`.
+- Book ID: `01-yuukibui-b12c61270c7b`. Nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`.
+- SHA-256 nguồn: `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt tiếp này mở ảnh thật toàn trang và crop direct4 từng physical **p16–35**, chép và đối chiếu hai chiều rồi verify từng trang: **20 trang mới verified**. p1–15 giữ nguyên.
+- Trạng thái thật sau reconcile/build: **35/138 verified (p1–35), 103 pending (p36–138), 0 rendered, 0 draft, 0 needs_review, 0 invalid, 0 issue**; mọi page errors đều rỗng. `build_current=true`; partial, chưa completed/accepted.
+- Build SHA-256 `build.json`: `be2fefab113daf9fa731d3ad0a7efda2e08a0811233a2602f9d7785c33045b0b`. `book.md`/`search.jsonl` hiện chứa đúng các trang verified p1–35.
+
+## Phạm vi và điểm nguồn cần giữ
+
+- p16–17 kết bài1 語句の使い方; p18–23 bài2 わからない日本語を聞く; p24–29 bài3 依頼; p30–35 bài4 断り. Đọc trực tiếp ảnh, không dùng OCR/text layer để chép.
+- Mỗi page checkpoint có source/render/Markdown hashes và review cụ thể; render ledger scale2, crop direct4 trên/dưới mỗi trang, p29 thêm direct8 để phân biệt ruby nhỏ. Cache/scratch chỉ trong `kaiwa_skill/.cache/renders/01-yuukibui-b12c61270c7b/`, không thuộc output.
+- p17 8(1) in `交通の便利なのに`, giữ nguyên; p20 in `同音異義語`, khác `同音意義語` ở mục lục p12, không đồng nhất hóa.
+- p21 in `漢字の言葉は、ふつう訓読みと訓読み、音読みと音読みです。` và `メジョウ`/`メウエ`, giữ nguyên sau crop. Hai khung chữ là `目上`/`渡部`, đã chuyển text đúng vị trí.
+- p25 và p28 `花びん` có ruby nguồn `花＝か`, giữ theo chữ in; p29 direct8 xác nhận `二十分＝にじっぷん`, các lần xuất hiện p31/p34 cũng giữ ruby in này.
+- p26/p27/p29 giữ tên `中根千枝` và tên sách `『タテ社会の人間関係』`/`『適応の条件』`, giọng nam/nữ/teinei khác nhau, không tự sửa thống nhất.
+- p27 in `買物`; p31/p34 in `手が放せない` (放), không thay bằng 離. p33 5(1) là `お引き受けするんですが`, khác `お引き受けするのですが` trong bài thoại p31.
+- p34 mẫu8 là `（時間）する`, không sửa mẫu thành したら dù ví dụ dùng したら. p35 `横文字`, `野田産業`, câu cuối phần15(2) có dấu lửng; giữ nguyên.
+- Các số lề, tên bài ở đầu trang, chân trang in3–22, watermark `JLPT Mogi / Yuuki Bùi`, ô trống và ref p/l được đối chiếu từng trang. Không hình mang nghĩa mới ngoài các khung chữ; không nhúng ảnh.
+
+## Ranh trang và tiếp tục
+
+- p15→16: lời tự giới thiệu kết trọn, chuyển 語句. p16→17 tiếp mục7. p18→19 chuyển khung sang bài thoại. p19→20→21 tiếp 類話1→2–5→6–8; p22→23 tiếp 語句5→6–8.
+- p25→26: hội thoại2 電話をかけてもらう tiếp bằng ボナン `そうですか。お手数ですが…`, sau hai lượt mới sang 類話; không tạo lời kết p25.
+- p26→27: 類話3 tiếp bản 女性と女性; sau bốn lượt chuyển 語句. p27→28: mẫu5 chỉ ví dụ(1) ở p27, ví dụ(2) đứng đầu p28; p28→29 tiếp mẫu11–13.
+- p31→32 tiếp 類話1→2–4. p33→34→35 tiếp 語句1–5→6–10→11–15. Lượt B dài trong p32 mục4 giữ hai đoạn cùng một người nói.
+- Đã mở preview trực tiếp p36 để kiểm ranh cuối: p36 bắt đầu `第五課 道を聞く` (trang in23), không câu bị cắt cần nối từ p35. Preview p36 **chưa record/render ledger/verify**.
+- **Tiếp từ physical p36–138** sau kiểm claim/status thật và claim token mới. Không sửa p1–35 verified nếu không có finding cụ thể. Chưa có source blocker trong p1–35.
+- Coordinator giữ quyền QA mẫu/serial Git; worker này không dùng Git, không sửa tools/config/roster/main production HANDOFF hoặc sách khác.
+
+---
+
+## Lịch sử bàn giao trước lượt tiếp
+
 # Bàn giao book11 — WIP
 
 - Cập nhật: 2026-11-10T23:52Z (2026-11-11 JST).
@@ -37,3 +140,9 @@
 ## Tiếp tục
 
 Đọc AGENTS/core/skill/USAGE và handoff này, kiểm claim/status thật, claim bằng token mới. Tiếp tục p16–138, giữ nguyên các trang verified còn hợp lệ. Không sửa PDF nguồn, tools/config/roster hoặc Git index. Coordinator kiểm mẫu và commit tuần tự.
+
+
+Xác nhận release lượt tiếp 2026-11-11T00:12:20.526936+00:00: CLI `claim=null`, `build_current=true`, 35 verified / 103 pending / 0 issue.
+
+
+Release xác nhận 2026-11-11T00:31:16.656522+00:00: `claim=null`, `build_current=true`, 44 verified / 94 pending / 0 issue.
