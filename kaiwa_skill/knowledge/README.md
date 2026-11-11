@@ -20,18 +20,20 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [わかるビジネス日本語（新装版）](<「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）/book.md>) —152trang/21chương/278unit; đầy đủ chỉ mục/đáp án, tác giả rà toàn sách, root QA16trang mẫu. [Giới hạn review](<「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）/_meta/coordinator-review.md>).50nhãn audio②–51, chưa có xác nhận file nghe.
 
+- [日本語でビジネス会話 中級編 練習冊](<日本語でビジネス会話 中級編 練習冊/book.md>) —148trang/21chương/143unit; đã audit đầy đủ chú từ chân trang, tác giả rà toàn sách, root QA5trang mẫu. [Giới hạn review](<日本語でビジネス会話 中級編 練習冊/_meta/coordinator-review.md>).
+
 ## Đang clean
 
 - **わかる！話せる！日本語会話 基本文型88** —đang mở rộng full96trang từ pilot7–12 đã migration PDF-direct, giữ history/checkpoint.
 
-- **ビジネスマナー編** —136trang, đang preflight/biên soạn PDF-direct; xác minh nhan đề thật trước đặt tên folder.
+- **しごとの日本語 ビジネスマナー編** —136trang/25chapter, đang viết PDF-direct. Nguồn thiếu trang in104–105 trongUnit16, sẽ giữ phần hiện hữu và ghi rõ giới hạn.
 
-- **日本語でビジネス会話 中級編 練習冊** —đã mở đủ148trang, đang audit phục hồi glossary chân trang; chưa release. Phần đang chờ sửa mangdraft đểresume đúng.
+- **聞いて覚える話し方 日本語生中継 初中級編２** —152trang gồm本冊 và別冊 script/từvựng/đápán, đang PDF-direct; nguồn ghi2CD, chưa kiểm file nghe.
 
 ## Pilot một phần
 
 - Pilot Wakaru đã được mở rộng thành bản toàn sách ở trên. Báo cáo/hash pilot cũ được giữ làm lịch sử, không dùng thay review full.
 
-- **わかる！話せる！日本語会話 基本文型88** —chỉ PDF7–12;4 phần/9unit giữ nguyên khi chuyển provenance sang PDF-direct, history/ledger cũ được lưu. Vấn đề công thức nguồn PDF9 vẫn needs_review; chưa mở full96trang.
+- **わかる！話せる！日本語会話 基本文型88** —bản `book.md` tạm còn buildpilot7–12; đang viết các chapter theo scope mở rộng1–96/16chapter. Migration giữ history/ledger cũ; vấn đề công thức nguồnPDF9 cònneeds_review. Chưa nghiệm thu toàn96trang.
 
 [Theo dõi tiến độ](../clean/STATUS.md).

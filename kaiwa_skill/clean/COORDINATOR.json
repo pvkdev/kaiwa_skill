@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T07:11:11.964027+00:00",
+  "updated_at_utc": "2026-11-11T08:12:26.196408+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -11,7 +11,7 @@
     {
       "role": "sub_coordinator",
       "worker": "/root/knowledge_coordinator",
-      "stage": "rebase_tools_delivered_idle_to_release_slot"
+      "stage": "validator_fixes_delivered_idle_to_release_slot"
     },
     {
       "role": "worker_1",
@@ -35,11 +35,12 @@
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
-      "stage": "full_direct_authored_footnote_audit_active",
-      "book_id": "02-yuukibui-3e66906b7e05",
-      "source_pdf": "kaiwa_skill/book/BJT/02.日本語でビジネス会話 中級編 ー練習冊 YUUKIBUI.pdf",
-      "scope_pdf_pages": 148,
-      "planned_chapters": 21
+      "stage": "full_pdf_direct_reuse_partial_raw_active",
+      "book_id": "namachuukei-shochuukyuu-2-b5b793947c13",
+      "source_pdf": "kaiwa_skill/book/Shadowing/Namachuukei Shochuukyuu 2.pdf",
+      "scope_pdf_pages": 152,
+      "planned_chapters": 26,
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２"
     }
   ],
   "source_queue": [
@@ -88,9 +89,9 @@
         "Build verified pages incomplete",
         "Build page hashes incomplete"
       ],
-      "state": "full_direct_active_using_readonly_partial_raw",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_chu"
+      "knowledge_commit": "a90b875"
     },
     {
       "book_id": "03-yuukibui-dd762e3fd201",
@@ -442,8 +443,10 @@
       "blocker_summary": [
         "Ingest build not yet present"
       ],
-      "state": "queued_direct_with_readonly_raw",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active_using_readonly_raw",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_chu",
+      "knowledge_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２"
     },
     {
       "book_id": "nameraka-nihongo-kaiwa-7a1ef4391141",
@@ -611,6 +614,36 @@
       "commit": "3fe61bd",
       "coordinator_review": "sampled images; all103 coverage hashes and all content anchors checked; full independent review pending",
       "independent_full_review_commit": "4b99345"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―",
+      "commit": "689603f",
+      "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review.",
+      "independent_full_semantic_review": false
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 本文冊",
+      "commit": "42b8667",
+      "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review.",
+      "independent_full_semantic_review": false
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/なめらか日本語会話",
+      "commit": "c92c81e",
+      "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review.",
+      "independent_full_semantic_review": false
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）",
+      "commit": "0a884d7",
+      "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review.",
+      "independent_full_semantic_review": false
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 練習冊",
+      "commit": "a90b875",
+      "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review.",
+      "independent_full_semantic_review": false
     }
   ],
   "pilot_preservation_recheck": {
@@ -663,11 +696,14 @@
     "pilot_output_commit": "9e2f7d5"
   },
   "tool_validation": {
-    "version": "0.4.5",
-    "fork_tests_passed": 35,
+    "version": "0.4.7",
+    "commit": "e974bbf",
+    "fork_tests_passed": 62,
     "direct_tests_passed": 17,
-    "commit": "ece2c91",
-    "note": "Migration88 structural0error/2sourceissuewarnings; full scope not started"
+    "regression_book_count": 12,
+    "regression_errors": 0,
+    "regression_warnings": 2,
+    "warning_scope": "Known Nameraka PDF32 source obstruction only; structure checks are not semantic certification."
   },
   "knowledge_outputs": [
     {
@@ -749,20 +785,21 @@
       "title": "わかる！話せる！日本語会話 基本文型88",
       "source_pdf": "kaiwa_skill/book/Kaiwa/669041168-日本語会話-基本文型８８.pdf",
       "source_mode": "pdf_direct",
-      "metadata_status": "pilot_partial",
+      "metadata_status": "full",
       "scope_pdf_page_count": 96,
       "chapter_checkpoint_counts": {
-        "needs_review": 2,
-        "author_checked": 4,
-        "pending": 10
+        "needs_review": 3,
+        "author_checked": 8,
+        "draft": 1,
+        "pending": 4
       },
       "audio_inventory_present": true,
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 16,
-        "needs_review": 1,
-        "pending": 79
+        "author_checked": 62,
+        "needs_review": 2,
+        "pending": 32
       }
     },
     {
@@ -809,16 +846,15 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 148,
       "chapter_checkpoint_counts": {
-        "author_checked": 13,
-        "draft": 8
+        "author_checked": 21
       },
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 89,
-        "draft": 59
-      }
+        "author_checked": 148
+      },
+      "knowledge_commit": "a90b875"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 英訳・語い冊",
@@ -864,15 +900,45 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 136,
       "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "audio_inventory_present": true,
+      "chapter_checkpoint_counts": {
+        "author_checked": 16,
+        "needs_review": 4,
+        "pending": 5
+      },
+      "page_checkpoint_counts": {
+        "author_checked": 108,
+        "needs_review": 5,
+        "pending": 23
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２",
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "source_pdf": "kaiwa_skill/book/Shadowing/Namachuukei Shochuukyuu 2.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "audio_inventory_present": true,
+      "scope_pdf_page_count": 152,
+      "chapter_checkpoint_counts": {
+        "author_checked": 3,
+        "pending": 23
+      },
+      "page_checkpoint_counts": {
+        "author_checked": 19,
+        "pending": 133
+      }
     }
   ],
   "pending_tool_work": [],
   "resume_notes": [
-    "Full direct in progress uses per-page/chapter checkpoint/resume; whole-book build waits for full scope evidence.",
-    "Nameraka PDF32 narrow obscured question areas are needs_review; do not use handwritten answers. Strict validate rejects unresolved; explicit --allow-source-issues preserves warning and still rejects missing/pending/stale.",
-    "Wakaru extended from pilot on same folder via scope-history; pilot hash/report remain historical6page acceptance. PDF9 supplementary evidence must be fully mapped/read when cleaning full front.",
-    "Raw-complete books clean from snapshot; six raw-incomplete books assigned future PDF-direct may consult existing raw read-only. Book88 existing raw-fork pilot needs audited migration; do not overwrite/init it."
+    "User authorized all30PDFs; keep coordinating and assigning next books until scope complete or explicit stop.",
+    "All9initial fully-ready raw books have clean outputs. Remaining work is PDF-direct, using incomplete raw only read-only.",
+    "Book88 migration/history is complete, full1–96/16chapter active. Never init/reset the existing folder or historical ledger.",
+    "Scope metadata full does not imply released. Use per-book audit, checkpoints, validation and bounded root QA."
   ],
   "raw_coordination_check": {
     "parent_thread": "01a1c315-57af-7570-8396-498b5c1e456d",
@@ -884,7 +950,7 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 11,
-  "completed_full_source_pages": 1094,
+  "completed_full_books": 12,
+  "completed_full_source_pages": 1242,
   "completion_count_definition": "7 prior full independently reviewed books; roleplay140 and main138 full author-checked with root16/10page sampled QA, respectively."
 }

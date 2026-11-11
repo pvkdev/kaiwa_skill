@@ -1,41 +1,19 @@
 # Clean hàng loạt — đang điều phối
 
-Kế hoạch hiện hành: [DIRECT_PLAN.md](DIRECT_PLAN.md). Raw đầy đủ tiếp tục clean; chưa có raw đầy đủ thì PDF-direct theo phân công, giữ raw dở làm tài liệu phụ chỉ đọc. Đã có11bản đọc đủ1094trang PDF đầu vào; catalog30PDF vẫn đang xử lý. Các mốc bên dưới là snapshot, dùng resume/state thật khi tiếp quản.
+Đã có12bản đọc đủ phạm vi1242trang PDF đầu vào trên catalog30PDF/4597trang. Các vùng nguồn thiếu/che vẫn được đánh dấu; không phục dựng bằng suy đoán. Bản đọc và giới hạn QA: [knowledge/README.md](../knowledge/README.md).
 
-Người dùng yêu cầu một sub điều phối và ba worker, tất cả `gpt-6-sol/high`; runtime chỉ cho ba sub active cùng root nên luân phiên vai. Root giữ lượt điều phối, QA và Git; chưa hoàn thành catalog30 PDF.
+Bảy bản đầu501trang đã rà độc lập toàn phạm vi. Năm bản mới do tác giả đốichiếu toàn sách và root QA mẫu: roleplay140,本文冊138,Nameraka163,Wakaru152,練習冊148. Hồ sơ từng sách ghi rõ phạm vi, không gọi tất cả là full independent semantic review.
 
-## Đã có bản đọc và rà độc lập
+練習冊 đã khôi phục/audit toàn chú từ chân trang, releasea90b875. Công cụ0.4.7 có62test fork+17direct PASS, regression12bản0lỗi; chỉ2cảnh báo nguồn Nameraka32 đã biết. Kiểm cấu trúc không thay kiểm nghĩa.
 
-Bảy nguồn đầu có501 trang PDF, đã build/validate và rà ảnh/raw/clean toàn phạm vi bởi tác nhân khác tác giả hoặc kết hợp reviewer/root. Mỗi sách có hồ sơ chỉ rõ những phần được rà và sửa sau review; không đồng nghĩa mọi nhận xét trong bản in đã được xác minh ngoài sách.
+## Ba writer hiện tại
 
-- 日本語生中継 初中級編1:91 trang,13 chương,253 unit; bản Việt đã làm rõ vai và giữ nhánh lựa chọn.
-- 日本語生中継 中～上級編:89 trang,11 chương,122 unit; Bài8 kết thúc PDF87.
-- Bảng880 từ N3:47 trang; đủ880 dòng. Bốn gloss English được dịch Việt có log; năm cụm nghĩa nguồn còn cần xác minh ở360/543/632/636/682.
-- MINATO checklist1160 từ:8 trang; thiếu STT460/có1161 đúng nguồn, không tự thêm cách đọc/nghĩa.
-- Kính ngữ 基本表現85:93 trang,9 chương,116 unit;164 đáp án Nhật có Việt đã được root QA. PDF thiếu trang in106–107/bài14;15 unit còn vấn đề nguồn.
-- Bảng1170 từ N1:70 trang; STT1132 khôi phụcきっちり（と） theo ảnh, khác raw có log. Hai nghĩa nguồn1159/1165 còn needs_review.
-- 日本語でビジネス会話 中級編〈英訳・語い冊〉:103 trang,21 phần,145 unit; thoại English-only dịch Việt, không dựng Japanese. Các chênh lệch nguồn được giữ riêng.
+- clean_keigo: full96trang 基本文型88, đã tớiPDF68, đang69–76; giữ sourceissues9/28. Front/PART1/Warm-up/chươngđộngtừ/danhtừ/tínhtừ/đầucâu đãcheckpoint. Bảnbook.md cònbuildpilot cũ khi fullchưađủ.
+- clean_namachuukei_sho: full136trang しごとの日本語 ビジネスマナー編, đã tới119, đangUnit19từ120. Nguồn cóphụđề mờ23/69, mảnhcâu28 và thiếu trang in104–105 giữaPDF105/106. Giữ dữliệu còn đọc được và bối cảnh ấn bản2015.
+- clean_namachuukei_chu: full152trang 日本語生中継 初中級編２, gồm本冊+別冊 scripts/từvựng/đápán; đã tới27, đangBài3từ28. Cover ghi2CD, đã ghi tracks1-2…1-17; file nghe chưa kiểm.
 
-Pilot 基本文型88 chỉ PDF7–12:4 chapter,9 unit; đã khôi phục CD01–03/trang mở PART1/mạch hội thoại trước giải thích/MEMO. Root mở lại đủ6 ảnh và rà bản sửa; vẫn pilot_partial, không gọi full sách.
+Subcoordinator knowledge_coordinator idle sau xử lý công cụ. Runtime cho4active tínhroot nên luân phiên bốn vai sub, tất cảSol/high. Ngoài ba sách active còn15PDF chờ; root tiếp giao việc sau bàn giao, chưa hoàn tất toànkho.
 
-## Hai bản full mới: tác giả đối chiếu toàn sách, root QA mẫu
+[CD/băng/nguồn nghe](../knowledge/AUDIO_INDEX.md) có inventory và trạng thái file riêng. Một số hồ sơ cũ rà giới hạn; unknown không nghĩa không cóaudio. Chưa tìm/tải tệp nghe.
 
-- Roleplay trung cấp140trang:10chương/109unit, commit689603f. Root QA16trang mẫu, inventory1CD/15mã track. Chưa full independent semantic review.
-- 本文冊138trang:22chương/128unit, commit42b8667. Root QA10trang mẫu. Rebase provenance chỉ4anchor/dòng trống trong raw tổng hợp; toàn138rawpages và nội dung chapter không đổi, snapshot/history cũ được giữ. Build/validate0/0. Chưa full independent semantic review.
-
-- Nameraka163trang:27chương/158unit, commitc92c81e; tác giả rà toàn sách, root QA15trang mẫu. ChỉPDF32 bị che cònneeds_review, khôngpending/draft/stale; validate cho phép nguồn có vấn đề0lỗi/2cảnh báo.
-
-- Wakaru152trang:21chương/278unit, commit0a884d7;45Scene,102đápánDrill,65mảnh đápánôn, chỉ mục142biểu hiện/174từ. Root QA16trang mẫu qua pilot+extension, strict0/0,50nhãn nghe, file chưa kiểm.
-
-## Đang chạy
-
-- `/root/knowledge_coordinator`: đã bàn giao direct/needs_review/rebase;17test direct +35test fork PASS. Đang idle để ba worker chạy.
-- `/root/clean_keigo`: Nameraka đã releasec92c81e; đang mở rộng full96trang 基本文型88 từ pilot đã migration. Không init/reset; giữ history và sourceissuePDF9.
-- `/root/clean_namachuukei_sho`: Wakaru đã release0a884d7; đang preflight rồi viết full136trang ビジネスマナー編 bằng PDF-direct, raw cũ chỉ đọc phụ trợ.
-- `/root/clean_namachuukei_chu`: đã mở/viết tới148trang nhưng chưa release: audit phục hồi glossary chân trang. Bài1–3 đã rà lại PDF8–24; Bài4–12 draft chờ audit, resume về25. Không dùng author_checked cũ để che phần thiếu; không sửa corpus/claim.
-
-Mọi nghiệm thu dựa hash hiện tại và phạm vi review được ghi rõ. Book88 đã chuyển PDF-direct có history (commit1c2d7c0); giữ byte4chapter/9unit và scope7–12. Công thức nguồnPDF9 vẫn needs_review; chưa mở full96trang. Worker kế dùng extend-scope, không init/reset.
-
-Pilot trực tiếp đã giữ45key lựa chọn,21câu Drill và65mảnh đáp án ôn có Việt; đã sửa bản Việt từng lượt bài tập và hai nghĩa/cách viết. Báo cáo `_meta/pilot-independent-review.json` trong thư mục Wakaru. Các bản toàn sách vẫn cần checkpoint/QA riêng; không suy full acceptance từ PASS pilot.
-
-Bản đọc: [knowledge/README.md](../knowledge/README.md). Ownership và hàng đợi: [COORDINATOR.json](COORDINATOR.json). Tiếp quản: [HANDOFF.md](HANDOFF.md). Phiên bị đóng sẽ dừng tính toán; checkpoint/snapshot hỗ trợ mở lại từ chỗ đã lưu, không có daemon nền.
+Mốc trên làsnapshot; [COORDINATOR.json](COORDINATOR.json) là hàng đợi/phân công, [HANDOFF.md](HANDOFF.md) là hướng dẫn tiếp quản. Đóngapp dừngtính toán, checkpoint/hash/history giúp nối lại từ phần còncurrent. Không tạo daemon/automation.
