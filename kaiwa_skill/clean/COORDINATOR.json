@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T11:39:12.420803+00:00",
+  "updated_at_utc": "2026-11-11T11:48:19.750884+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -35,10 +35,10 @@
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
       "stage": "full_pdf_direct_active",
-      "book_id": "5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf",
-      "title": "5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
-      "scope_pdf_pages": 136
+      "book_id": "book-f4bcdf991dba",
+      "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう中_上級.pdf",
+      "title": "シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
+      "scope_pdf_pages": 168
     }
   ],
   "source_queue": [
@@ -315,11 +315,12 @@
         "Build page hashes incomplete",
         "Page 1: verification evidence/hash/issue mismatch"
       ],
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
       "owner": "/root/clean_namachuukei_chu",
       "title": "5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
-      "knowledge_dir": "kaiwa_skill/knowledge/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày"
+      "knowledge_dir": "kaiwa_skill/knowledge/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
+      "knowledge_commit": "6f689ed"
     },
     {
       "book_id": "669041168-4f47df1cc97a",
@@ -492,8 +493,11 @@
       "source_sha256": "f4bcdf991dbaaa09f8fdd0bd754bd39473dce9879a1e0e0884354c4862078750",
       "page_count": 168,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_chu",
+      "title": "シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
+      "knowledge_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版"
     },
     {
       "book_id": "book-be075317cdca",
@@ -714,6 +718,11 @@
       "book_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125",
       "commit": "89f4c0f",
       "coordinator_review": "author full; root29 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
+      "commit": "6f689ed",
+      "coordinator_review": "author full; root17 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -1066,18 +1075,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 136,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 31,
-        "needs_review": 17,
-        "pending": 88
+        "author_checked": 76,
+        "needs_review": 60
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 1,
-        "needs_review": 1,
-        "pending": 7
-      }
+        "author_checked": 2,
+        "needs_review": 7
+      },
+      "knowledge_commit": "6f689ed"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間",
@@ -1090,12 +1098,12 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 18,
-        "pending": 163
+        "author_checked": 78,
+        "pending": 103
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 1,
-        "pending": 14
+        "author_checked": 5,
+        "pending": 10
       }
     },
     {
@@ -1109,10 +1117,31 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 209
+        "author_checked": 76,
+        "needs_review": 1,
+        "pending": 132
       },
       "chapter_checkpoint_counts": {
-        "pending": 31
+        "author_checked": 11,
+        "needs_review": 1,
+        "pending": 19
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
+      "title": "シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
+      "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう中_上級.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 168,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 168
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 10
       }
     }
   ],
@@ -1133,9 +1162,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 18,
-  "completed_full_source_pages": 2158,
-  "completion_count_definition": "18 released supplied-PDF scopes/2158 pages: initial7 independently reviewed in full; later11 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 19,
+  "completed_full_source_pages": 2294,
+  "completion_count_definition": "19 released supplied-PDF scopes/2294 pages: initial7 independently reviewed in full; later12 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",

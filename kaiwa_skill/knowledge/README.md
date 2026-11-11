@@ -36,11 +36,13 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [わかる！話せる！日本語会話 発展文型125](<わかる！話せる！日本語会話 発展文型125/book.md>) — 225 trang/30 chương/143 unit; tác giả rà toàn PDF, root QA29 trang mẫu. [Giới hạn QA và nguồn](<わかる！話せる！日本語会話 発展文型125/_meta/coordinator-review.md>).
 
+- [5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày](<5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/book.md>) — 136 trang/9 chương/141 unit; tác giả rà toàn PDF, root QA17 trang mẫu. [Giới hạn QA và nguồn](<5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/_meta/coordinator-review.md>).
+
 ## Đang clean
 
 - **日本人がよく使う 日本語会話お決まり表現180** — full scope209 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 - **にほんごで働く！ビジネス日本語30時間** — full scope181 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
-- **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — full scope136 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+- **シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版** — full scope168 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 

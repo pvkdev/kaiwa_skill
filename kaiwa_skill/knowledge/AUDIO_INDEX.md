@@ -1,8 +1,8 @@
 # CD, băng và nguồn nghe theo sách
 
-Snapshot 2026-11-11T11:01:29.859470+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
+Snapshot 2026-11-11T11:48:19.750884+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
 
-- **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — [Ghi chú nghe](<5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — [Ghi chú nghe](<5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **Danh sách 1160 từ vựng MINATO DORIMU** — [Ghi chú nghe](<Danh sách 1160 từ vựng MINATO DORIMU/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **TỔNG HỢP 1170 TỪ VỰNG MIMIKARA N1** — [Ghi chú nghe](<TỔNG HỢP 1170 TỪ VỰNG MIMIKARA N1/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **TỔNG HỢP 880 TỪ VỰNG MIMIKARA N3** — [Ghi chú nghe](<TỔNG HỢP 880 TỪ VỰNG MIMIKARA N3/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
@@ -10,13 +10,14 @@ Snapshot 2026-11-11T11:01:29.859470+00:00. Hồ sơ đang viết còn cập nh�
 - **しごとの日本語 ビジネスマナー編** — [Ghi chú nghe](<しごとの日本語 ビジネスマナー編/_meta/audio.md>); `not_seen`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **しごとの日本語 電話応対 基礎編** — [Ghi chú nghe](<しごとの日本語 電話応対 基礎編/_meta/audio.md>); `documented`, 70 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **なめらか日本語会話** — [Ghi chú nghe](<なめらか日本語会話/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
-- **にほんごで働く！ビジネス日本語30時間** — [Ghi chú nghe](<にほんごで働く！ビジネス日本語30時間/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **にほんごで働く！ビジネス日本語30時間** — [Ghi chú nghe](<にほんごで働く！ビジネス日本語30時間/_meta/audio.md>); `documented`, 27 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **わかる！話せる！日本語会話 基本文型88** — [Ghi chú nghe](<わかる！話せる！日本語会話 基本文型88/_meta/audio.md>); `documented`, 88 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **わかる！話せる！日本語会話 発展文型125** — [Ghi chú nghe](<わかる！話せる！日本語会話 発展文型125/_meta/audio.md>); `documented`, 99 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版** — [Ghi chú nghe](<シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版** — [Ghi chú nghe](<シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版/_meta/audio.md>); `documented`, 42 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―** — [Ghi chú nghe](<中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―/_meta/audio.md>); `documented`, 15 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **外国人のための日本語敬語の使い方 基本表現85** — [Ghi chú nghe](<外国人のための日本語敬語の使い方 基本表現85/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
-- **日本人がよく使う 日本語会話お決まり表現180** — [Ghi chú nghe](<日本人がよく使う 日本語会話お決まり表現180/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **日本人がよく使う 日本語会話お決まり表現180** — [Ghi chú nghe](<日本人がよく使う 日本語会話お決まり表現180/_meta/audio.md>); `documented`, 30 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本語でビジネス会話 ― 中級編 ― 本文冊** — [Ghi chú nghe](<日本語でビジネス会話 中級編 本文冊/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本語でビジネス会話 中級編〈練習冊〉** — [Ghi chú nghe](<日本語でビジネス会話 中級編 練習冊/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本語でビジネス会話 中級編〈英訳・語い冊〉** — [Ghi chú nghe](<日本語でビジネス会話 中級編 英訳・語い冊/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
