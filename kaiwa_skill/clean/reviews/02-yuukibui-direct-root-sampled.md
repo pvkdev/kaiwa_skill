@@ -1,9 +1,11 @@
-# QA mẫu BJT 練習冊 PDF-direct
+# Nghiệm thu phạm vi PDF đầu vào
 
-Thời điểm: 2026-11-11T06:44:11.742754+00:00. Reviewer root, khác tác giả. Đây là kiểm tra mẫu, không xác nhận toàn148trang.
+Bản direct đủ148trang,21chương,143unit. Tác giả mở từng ảnh và sauQA đã rà lại toàn chú từPDF8–147, giữ headword/dạng từ điển, nghĩaViệt và mã bài; PDF148 trắng. Mọi page/chapter checkpoint current, khôngdraft/pending/stale. Rootbuild và validator0.4.6:0lỗi/0cảnh báo.
 
-Đọc toàn chương12おわび; mở ảnh PDF86/89/90 và crop4× mục6 PDF86. Source SHA3e66906b7e052b1394bb246542ce5087b15570da4dcf2425d037e4d198a2440b. Chapter SHA256 0a77a737d07fe5ecc84a6e428ec7f730551e06d593b4c8c2622d9f6111982819.
+Root đọc toàn chương12 và mở5trang mẫu86/89/90/91/92: đối chiếu mẫu5–6 tại86, khung6lượt cùng4tìnhhuống/cue/B₃ tại89–90, gloss phục hồi tại86/90 và20headword tại91–92. Sửa sắc thái非過去 củaつい…てしまうんです thành hay vô ý nhầm; crop xác nhận確認すればよかった đúng nguồn, không tạo issue phủ định giả. Bỏ汚れ khỏi danh sách footer90 vì không được in làm headword ở đó. Chưa rà độc lập mọi cue/thoại/footnote toàn148trang.
 
-PDF86: chínmẫu toàn chương được đọc ở bảnclean, hai mẫumục5/6 được đối chiếu ảnh. Root yêu cầu sửa VI củaつい４日と８日をまちがえてしまうんです từ quákhứ thành “Tôi cứ hay vô ý nhầm ngày4 với ngày8.” Tác giả đã sửa, đọc lại bảnhiện tại/crop, checkpoint lại. Nghi vấn chữ phủđịnh trong vídụ mục6 được loại sau crop; nguồn thực in確認すればよかったと思います, clean chép đúng, không tạo sourceissue giả.
+Lần build đầu có33lỗi do parser chỉ nhận cặp nhãn một dòng; công cụ đã được sửa và thử cả12bản đã viết đủ, không đổi bố cục sách để né lỗi. Negative tests vẫn bắt thiếu dịch/marker rỗng thật/sai vai/ôtrống;55test fork và17test direct đạt. Đây chỉ là kiểm cấu trúc, không chứng minh đầy đủ ngữ nghĩa ngoài những ảnh đã mở.
 
-PDF89–90: đủ khung A₁/B₁/A₂/B₂/A₃/B₃, blanks cảJP/VI; vídụ mất sách và ba tìnhhuống máyghiâm/tàiliệu/lờinhắn; rolecues vàB₃ in sẵn đều giữ. Không tự điền cảthoại bằng đápán từsách khác. Chưa thấy bỏ mục hoặc nghĩa cần sửa khác trong phạm vi ảnh đã mở. Các trang84/85/87/88 chỉ đọc bảnclean, chưa đốichiếu ảnh bởi root.
+Hai chênh lệch nguồn do tác giả ghi ởPDF13/14 được giữ trongeditorial-log, không âm thầm sửa câu Nhật. Audio ghi hướng dẫn dùng băng trongPDF4–5, thông tin ấn bản1987 và nhà phát hành theoPDF3, không thấy mã track trong phạm vi tác giả rà; chưa kiểm file nghe thực tế.
+
+Nguồn/hash và hashchapter/book trongcoordinator-review.json. Bản này chưa là full independent semantic review và chưa thiết kế lộ trình mới.
