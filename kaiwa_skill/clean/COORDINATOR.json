@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "phase": "active",
-  "updated_at_utc": "2026-11-11 01:56:51 UTC",
+  "updated_at_utc": "2026-11-11T03:25:48.846218+00:00",
   "authorization": "User explicitly requested bulk cleaning with three gpt-6-sol/high workers and continuous root coordination; do not end after launch.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -10,58 +10,46 @@
   "assignments": [
     {
       "worker": "/root/clean_namachuukei_sho",
-      "corpus": "kaiwa_skill/corpus/namachuukei-shochuukyuu-1-53b5b51998a3",
-      "title": "聞いて覚える話し方 日本語生中継 初中級編 1",
-      "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編 1",
-      "stage": "batch_2",
-      "next_work_pdf_pages": [
-        11,
-        12,
-        13,
-        14,
-        15,
-        16
-      ],
-      "author_checked_chapters": 2,
-      "draft_chapters": 1,
-      "last_batch_content_pages": 6,
-      "snapshot_root": "kaiwa_skill/source_snapshots/namachuukei-shochuukyuu-1-53b5b51998a3/7e62283e6447591d/d508fe96"
-    },
-    {
-      "worker": "/root/clean_namachuukei_chu",
       "corpus": "kaiwa_skill/corpus/namachuukei-chuujoukyuu-f08dd9302ee6",
       "title": "聞いて覚える話し方 日本語生中継 中～上級編",
       "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 中～上級編",
-      "stage": "batch_2",
-      "next_work_pdf_pages": [
-        14,
-        15,
-        16,
-        17,
-        18
-      ],
-      "author_checked_chapters": 0,
-      "draft_chapters": 1,
-      "last_batch_content_pages": 5,
+      "stage": "independent_full_book_QA",
+      "review_record": "_meta/independent-review.md",
+      "checkpoint_counts": {
+        "author_checked": 11
+      },
+      "scope_pdf_pages": 89,
+      "planned_chapters": 11,
       "snapshot_root": "kaiwa_skill/source_snapshots/namachuukei-chuujoukyuu-f08dd9302ee6/ecd29c28d4eb0df1/8e433a00"
     },
     {
+      "worker": "/root/clean_namachuukei_chu",
+      "corpus": "kaiwa_skill/corpus/03-yuukibui-dd762e3fd201",
+      "title": "日本語でビジネス会話 中級編 英訳・語い冊",
+      "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 英訳・語い冊",
+      "stage": "active_continuous",
+      "snapshot_root": "kaiwa_skill/source_snapshots/03-yuukibui-dd762e3fd201/9d94f2adf7585b0a/a875e0f7",
+      "checkpoint_counts": {
+        "author_checked": 14,
+        "pending": 7
+      },
+      "scope_pdf_pages": 103,
+      "planned_chapters": 21
+    },
+    {
       "worker": "/root/clean_keigo",
-      "corpus": "kaiwa_skill/corpus/85-21a2cb6f3fef",
-      "title": "外国人のための日本語敬語の使い方 基本表現85",
-      "book_dir": "kaiwa_skill/knowledge/外国人のための日本語敬語の使い方 基本表現85",
-      "stage": "batch_2",
-      "next_work_pdf_pages": [
-        11,
-        12,
-        13,
-        14,
-        15
-      ],
-      "author_checked_chapters": 2,
-      "draft_chapters": 1,
-      "last_batch_content_pages": 6,
-      "snapshot_root": "kaiwa_skill/source_snapshots/85-21a2cb6f3fef/f5781a803f314556/80768879"
+      "corpus": "kaiwa_skill/corpus/namachuukei-shochuukyuu-1-53b5b51998a3",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編 1",
+      "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編 1",
+      "stage": "independent_full_book_QA",
+      "review_record": "_meta/independent-review.md",
+      "note": "Authoring already released; worker owns review edits until handoff. Root must not edit this book concurrently.",
+      "checkpoint_counts": {
+        "author_checked": 13
+      },
+      "scope_pdf_pages": 91,
+      "planned_chapters": 13,
+      "snapshot_root": "kaiwa_skill/source_snapshots/namachuukei-shochuukyuu-1-53b5b51998a3/7e62283e6447591d/d508fe96"
     }
   ],
   "source_queue": [
@@ -70,7 +58,7 @@
       "source_pdf": "kaiwa_skill/book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf",
       "page_count": 138,
       "readiness": "waiting",
-      "reason_count": 81,
+      "reason_count": 45,
       "reasons": [
         "Ingest claim or write lock exists",
         "Ingest build is not complete",
@@ -138,7 +126,7 @@
       "source_pdf": "kaiwa_skill/book/BJT/ロールプレイで学ぶ ビジネス日本語 - 中級レベル ―就活から入社まで― [Remake].pdf",
       "page_count": 140,
       "readiness": "waiting",
-      "reason_count": 107,
+      "reason_count": 59,
       "reasons": [
         "Ingest claim or write lock exists",
         "Ingest build is not complete",
@@ -302,9 +290,11 @@
       "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf",
       "page_count": 145,
       "readiness": "waiting",
-      "reason_count": 1,
+      "reason_count": 108,
       "reasons": [
-        "Ingest build not yet present"
+        "Ingest claim or write lock exists",
+        "Ingest build is not complete",
+        "Manifest verified count differs from page count"
       ]
     },
     {
@@ -336,9 +326,43 @@
   "handoff": "Read this file plus each book's _meta/clean-state.json and page-coverage.json. Verify workers stopped before taking ownership. Resume existing book; do not reset checked chapters.",
   "catalog_books": 30,
   "qa_notes": [
-    "Completed chapters have author checks; root sample QA is ongoing, not full-book acceptance.",
-    "Chu PDF9 states 1–6 but contains five messages; PDF12 has no separate track for question4; keep discrepancies documented.",
-    "Keigo PDF7 source inconsistency requires root visual check.",
-    "Existing 88-pattern pilot predates preservation clarification; recheck flow/tracks before expanding when source book becomes ready."
+    "Root sampled source images, checked book-specific exercise structure and translations; not full-book acceptance.",
+    "Chu deadline 明日まで was corrected to chậm nhất vào ngày mai; list/role formatting is supported by validator, 20 tests passed.",
+    "Keigo PDF7 source wording, PDF18 answer-number mismatch and PDF20 particle/romaji mismatch were visually confirmed; keep content notes and needs_review on affected knowledge units.",
+    "Sho PDF29 menu is exercise ambiguity, not asserted to be a printing mistake; both data statements are retained.",
+    "All 30 catalog PDFs remain in scope; only ready_for_fork sources may be dispatched. Source queues are refreshed during coordination."
+  ],
+  "authoring_complete_pending_coordinator_release": [],
+  "released_supplied_pdf_scope": [
+    {
+      "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編 1",
+      "commit": "87c18d1",
+      "coordinator_review": "sampled; see book _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 中～上級編",
+      "commit": "0314647",
+      "coordinator_review": "sampled; see book _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/TỔNG HỢP 880 TỪ VỰNG MIMIKARA N3",
+      "commit": "fedfb5f",
+      "coordinator_review": "sampled; see book _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/Danh sách 1160 từ vựng MINATO DORIMU",
+      "commit": "19da433",
+      "coordinator_review": "sampled; see book _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/外国人のための日本語敬語の使い方 基本表現85",
+      "commit": "8e939e7",
+      "coordinator_review": "sampled images, source issues retained; missing printed106–107; 15 units needs_review"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/TỔNG HỢP 1170 TỪ VỰNG MIMIKARA N1",
+      "commit": "dcc3864",
+      "coordinator_review": "sampled images, all1170 rows matched; two suspected source gloss issues retained"
+    }
   ]
 }

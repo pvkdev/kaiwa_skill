@@ -1,13 +1,22 @@
-# Clean hàng loạt — đang chạy
+# Clean hàng loạt — điều phối đang hoạt động
 
-Điều phối bắt đầu ngày 2026-11-11 (JST), theo yêu cầu giữ chat hoạt động và dùng đúng ba worker `gpt-6-sol/high`. Toàn kho hiện có 30 PDF; chỉ nhận sách đã có ingest đủ điều kiện và ghim phiên bản nguồn trước khi biên soạn.
+Root giữ lượt điều phối và đúng ba worker `gpt-6-sol/high`. Ingest và clean chạy ở thư mục riêng; chỉ nhận sách có nguồn sẵn sàng.
 
-- **日本語生中継 初中級編 1**: lô đầu đã biên soạn PDF5–10; hai chương hướng dẫn được tác giả kiểm, Bài1 đang nháp. Worker tiếp PDF11–16 để hoàn tất Bài1.
-- **日本語生中継 中～上級編**: lô đầu đã biên soạn PDF9–13; Bài1 đang nháp. Worker tiếp PDF14–18; phần hướng dẫn PDF4–8 vẫn còn trong kế hoạch.
-- **日本語敬語の使い方 基本表現85**: lô đầu biên soạn PDF3,5,6,7,8,10; hai chương đầu được tác giả kiểm, §1 đang nháp. Worker tiếp PDF11–15.
+Đã build bản đọc toàn phạm vi PDF đầu vào và kiểm cấu trúc không lỗi/cảnh báo (398 trang trong sáu nguồn):
 
-Đây là trạng thái theo checkpoint tác giả, chưa phải nghiệm thu toàn sách. Root đang kiểm mẫu ảnh nguồn và bản clean. Không có sách nào trong đợt hàng loạt được tuyên bố hoàn tất ở thời điểm này.
+- 日本語生中継 初中級編1: 91 trang, 13 chương, 253 unit; đang thêm rà soát độc lập toàn sách.
+- 日本語生中継 中～上級編: 89 trang, 11 chương, 122 unit; đang thêm rà soát độc lập toàn sách.
+- TỔNG HỢP880 TỪ VỰNG MIMIKARA N3: 47 trang, đủ880 dòng; giữ cách đọc và Hán Việt.
+- Danh sách1160 từ vựng MINATO DORIMU: 8 trang, đủ1160 mục; nguồn thiếu số460 và có1161, không tự sửa.
+- 外国人のための日本語敬語の使い方 基本表現85: 93 trang, 9 chương, 116 unit; 15 unit còn vấn đề nguồn. PDF gốc thiếu trang in106–107/bài14; không tự phục dựng.
+- TỔNG HỢP1170 TỪ VỰNG MIMIKARA N1: 70 trang, đủ1170 dòng; 306 ô Kanji và 328 ô Hán Việt trống được giữ nguyên. Hai unit có nghĩa nguồn đáng ngờ giữ needs_review.
 
-Trạng thái máy và phân công: [COORDINATOR.json](COORDINATOR.json). Tiến độ chính xác từng sách nằm ở `_meta/clean-state.json`, `_meta/page-coverage.json` và hồ sơ biên tập của sách. Nếu chat bị ngắt, đọc các file đó và xác nhận worker cũ đã dừng trước khi tiếp quản.
+Root review ảnh theo mẫu, kiểm toàn bộ dữ liệu bảng bằng script; mỗi sách ghi rõ giới hạn ở `_meta/coordinator-review.md`. Không gọi mọi bản dịch đã kiểm độc lập toàn bộ. Trạng thái full nghĩa là đủ PDF được cung cấp, không đảm bảo PDF vốn có đủ mọi trang của sách in hoặc có CD/kịch bản riêng.
 
-Giữ toàn bộ mạch kiến thức và đặc trưng sách, kể cả bài tập, dữ kiện, đáp án nguồn, ghi chú và mã track cần cho thực hành. Nội dung học trong `knowledge/`; snapshot raw nằm riêng trong `source_snapshots/`. Worker không dùng Git hoặc sửa nguồn ingest.
+Đang chạy tiếp:
+
+- `/root/clean_namachuukei_sho`: independent QA toàn sách 日本語生中継 中～上級編.
+- `/root/clean_namachuukei_chu`: clean 日本語でビジネス会話 中級編〈英訳・語い冊〉,103 trang; đã qua hướng dẫn/Bài1–13, tiếp Bài14.
+- `/root/clean_keigo`: independent QA toàn sách 日本語生中継 初中級編1.
+
+Trạng thái máy và ownership: [COORDINATOR.json](COORDINATOR.json). Hướng dẫn tiếp quản: [HANDOFF.md](HANDOFF.md). Checkpoint từng sách ở `_meta/clean-state.json`; nguồn ghim ở `source_snapshots/`, ngoài knowledge. Sau gián đoạn, xác nhận worker cũ dừng rồi chạy clean_progress.py resume, không xóa tiến độ hoặc init lại.
