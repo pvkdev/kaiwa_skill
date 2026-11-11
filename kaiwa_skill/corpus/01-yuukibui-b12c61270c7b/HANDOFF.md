@@ -1,4 +1,25 @@
-# Bàn giao mới nhất book11 — WIP p1–100; p101 đã render
+# Bàn giao mới nhất book11 — WIP p1–106; p107 đã render
+
+- Cập nhật: 2026-11-11 12:11 JST; worker `production_book_11_root_cont5`, `gpt-6-sol/high`, điều phối `/root`; token `book11-root101-20261111-e61a` sẽ release sạch sau ghi handoff.
+- Book `01-yuukibui-b12c61270c7b`, 138 trang vật lý; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn kiểm lại `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt này chuyển mới **p101–106 (6 trang)**, mở full source từng trang, direct4 trên/dưới; p101 direct8 theo các dải trái/giữa/phải, p102–105 thêm direct8 vùng ruby nhỏ. So hai chiều ảnh→Markdown→ảnh rồi checkpoint `record`/`verify` từng trang. p107 đã render scale2 và mở full chỉ để kiểm nối, **chưa chép/verify**.
+- Sau reconcile/build: **106/138 verified (p1–106), 1 rendered (p107), 31 pending (p108–138), 0 draft/needs_review/invalid, 0 issue/error**; `build_current=true`, bản ghép partial chỉ gồm p1–106. SHA-256 `build.json`: `5a8a86e5613a63b374c48c613da516b9b8316a26e2191f81b350fcddf02546bf`.
+
+## Nội dung lượt này và điểm nguồn
+
+- p101 trang in88 `内閣の組織図`: chuyển tất cả ô/nhánh/chữ/ruby thành danh sách phân cấp có nhãn biên tập. Nhánh trái từ 内閣 có 安全保障会議, 内閣官房, 内閣法制局, 人事院; trục phải có 総理府 và các 省 cùng cấp, các 庁/委員会 con đặt đúng bên dưới. **会計検査院 là ô đứng riêng không có đường nối**, không gán nhánh. Giữ cơ cấu lịch sử như in (大蔵省, 郵政省, 労働省 v.v.). Root đã đọc chéo full/direct4 và draft p101, báo không thấy lệch nhãn/quan hệ.
+- p102 mở 第十五課 `問い合わせ`, mục tiêu và hai hộp 談話型 về 催し物/施設, một ô trống trong mẫu điện thoại, đủ sáu loại gợi ý ở hộp đầu và hai hàng hộp sau. p103–104 `図書館の利用について聞く`: giữ hai đoạn gọi điện, các vai 交換手／チャン／図書, số 104 và 353-4231, `『アジア経済研究所』`, `『経済日報』`, giờ thư viện, 十何紙/二十紙 và câu hỏi cuối p103 nối đúng lời đáp đầu p104. p104 bắt đầu `語句の使い方` mục1–2, p105 kết bài15 mục3–5; bold từng occurrence nguồn.
+- p106 mở 第十六課 `訪問`, mục tiêu và hai hộp 談話型: đi thăm/ra về, ba ô trống nguyên nguồn, từng lượt A/B, ruby. p107 mở `《本文会話》 課長の家で` với nhân vật 課長／課長夫人／サイモン; không có câu cắt từ p106.
+- p1–100 verified cũ giữ nguyên; không sửa tools/skill/Git/sách khác. Ảnh/crops/scratch chỉ trong `.cache/renders/<book_id>/`, không thuộc output.
+
+## Tiếp tục ngay
+
+- **Physical p107 (trang in94)** là trang mới cần chép: đã render và mở full. `課長の家で`, サイモン đến nhà 課長; đầu hội thoại từ `—玄関でのあいさつ—`, lề 1/5/10/15/20/25; cần direct4/crop từng nửa để đọc đầy đủ lời/ruby, phân biệt 課長夫人／課長, rồi tiếp p108–138.
+- Worker mới kiểm claim/status/hash thật, claim token mới sau release. Bảo toàn p1–106, mỗi trang tiếp tục full/crop và đối chiếu hai chiều. Chỗ không chắc thật ghi needs_review cụ thể và đi tiếp, không đoán. Root giữ QA/Git/acceptance.
+
+---
+
+# Bàn giao trước — WIP p1–100; p101 đã render
 
 - Cập nhật: 2026-11-11 JST; worker `production_book_11_root_cont4`, `gpt-6-sol/high`, điều phối `/root`; token `book11-root95-20261111-f4c8` sẽ release sạch sau ghi handoff.
 - Book `01-yuukibui-b12c61270c7b`, 138 trang vật lý; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn đã kiểm `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
