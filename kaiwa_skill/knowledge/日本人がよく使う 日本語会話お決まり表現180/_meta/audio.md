@@ -1,0 +1,43 @@
+# Audio — 日本人がよく使う 日本語会話お決まり表現180
+
+- PDF1 ghi CD付 và 音声ダウンロード付; chưa xác định số đĩa hoặc file âm thanh thực tế.
+- PDF10, trang minh họa cách dùng, có biểu tượng CD 6 bên bài ハマる; sẽ kiểm ở bài thật PDF30.
+- PDF11 nói thông tin tải âm thanh nằm ở phần cuối sách; chưa thấy URL hoặc mã tải trên PDF1–12.
+- PDF12: CD kèm sách thu tên mỗi unit và mọi ví dụ Listen & Speak, chỉ tiếng Nhật. Sách hướng dẫn bốn bước đọc, nghe và nói đuổi.
+- Đã mở PDF1–209; file nghe thực tế vẫn chưa kiểm.
+- PDF13–18 (序章): không có mã CD hoặc URL tải mới.
+- PDF19–25, Section A: icon **CD 1** ở bài1/PDF20, **CD 2** ở bài3/PDF22, **CD 3** ở bài5/PDF24. Các bài2/4/6 không có icon CD mới trên trang của mình. Chưa kiểm file nghe.
+- PDF26–29, Section B: CD 4 tại PDF26, CD 5 tại PDF28; chưa kiểm file nghe.
+- PDF30–35, Section C: CD 6 tại PDF30, CD 7 tại PDF32, CD 8 tại PDF34; chưa kiểm file nghe.
+- PDF36–37, Section D: CD 9 tại PDF36; chưa kiểm file nghe.
+- PDF38–41, Section E: CD 10 tại PDF38, CD 11 tại PDF40; chưa kiểm file nghe.
+- PDF42–45, Section F: CD 12 tại PDF42, CD 13 tại PDF44; chưa kiểm file nghe.
+- PDF46–49, Section G: CD 14 tại PDF46, CD 15 tại PDF48; chưa kiểm file nghe.
+- PDF50–55, Section H: CD 16 tại PDF50, CD 17 tại PDF52, CD 18 tại PDF54; chưa kiểm file nghe.
+- PDF56–57, Section I: CD 19 tại PDF56; chưa kiểm file nghe.
+- PDF58–62, Section J: CD 20 tại 58, CD 21 tại 60, CD 22 tại 62; chưa kiểm file nghe.
+- PDF63–68, Section J: CD 23 tại PDF64, CD 24 tại PDF66, CD 25 tại PDF68; chưa kiểm file nghe.
+- PDF69–73, Section J: CD 26 tại PDF70, CD 27 tại PDF72; chưa kiểm file nghe.
+- PDF74–77, Section J: CD 28 tại PDF74, CD 29 tại PDF76; chưa kiểm file nghe.
+- PDF78–83, Section K: CD 30 tại PDF78, CD 31 tại PDF80, CD 32 tại PDF82; chưa kiểm file nghe.
+- PDF84–87, Section L: CD 33 tại PDF84, CD 34 tại PDF86; chưa kiểm file nghe.
+- PDF88–93, Section M: CD 35 tại PDF88, CD 36 tại PDF90, CD 37 tại PDF92; chưa kiểm file nghe.
+- PDF94–95, Section N: CD 38 tại PDF94; chưa kiểm file nghe.
+- PDF96–101, Section O: CD 39 tại PDF96, CD 40 tại PDF98, CD 41 tại PDF100; chưa kiểm file nghe.
+- PDF102–109, Section P: CD 42 tại PDF102, CD 43 tại PDF104, CD 44 tại PDF106, CD 45 tại PDF108; chưa kiểm file nghe.
+- PDF110–115, Section Q: CD 46 tại PDF110, CD 47 tại PDF112, CD 48 tại PDF114; chưa kiểm file nghe.
+- PDF116–121, Section Q: CD 49 tại PDF116, CD 50 tại PDF118, CD 51 tại PDF120; chưa kiểm file nghe.
+- PDF122–129, Section R: CD 52 tại PDF122, CD 53 tại PDF124, CD 54 tại PDF126, CD 55 tại PDF128; chưa kiểm file nghe.
+- PDF130–133, Section S: CD 56 tại PDF130, CD 57 tại PDF132; chưa kiểm file nghe.
+- PDF134–138, Section T: CD 58 tại PDF134, CD 59 tại PDF136, CD 60 tại PDF138; chưa kiểm file nghe.
+- PDF139–143, Section T: CD 61 tại PDF140, CD 62 tại PDF142; chưa kiểm file nghe.
+- PDF144–149, Section U: CD 63 tại PDF144, CD 64 tại PDF146, CD 65 tại PDF148; chưa kiểm file nghe.
+- PDF150–155, Section U: CD 66 tại PDF150, CD 67 tại PDF152, CD 68 tại PDF154; chưa kiểm file nghe.
+- PDF156–163, Section V: CD 69 tại PDF156, CD 70 tại PDF158, CD 71 tại PDF160, CD 72 tại PDF162; chưa kiểm file nghe.
+- PDF164–167, Section W: CD 73 tại PDF164, CD 74 tại PDF166; chưa kiểm file nghe.
+- PDF168–173, Section X: CD 75 tại PDF168, CD 76 tại PDF170, CD 77 tại PDF172; chưa kiểm file nghe.
+- PDF174–181, Section Y: CD 78 tại PDF174, CD 79 tại PDF176, CD 80 tại PDF178, CD 81 tại PDF180; chưa kiểm file nghe.
+- PDF182–187, Section Z: CD 82 tại PDF182, CD 83 tại PDF184, CD 84 tại PDF186; chưa kiểm file nghe.
+- PDF188–193, Section Z: CD 85 tại PDF188, CD 86 tại PDF190, CD 87 tại PDF192; chưa kiểm file nghe.
+- PDF194–199, Section Z: CD 88 tại PDF194, CD 89 tại PDF196, CD 90 tại PDF198; chưa kiểm file nghe.
+- PDF208–209 xác nhận ISBN **978-4-86392-325-6**, lần in thứ hai 2018-04-10 (lần đầu 2017-01-10). Bìa có CD付 và 音声ダウンロード付; cuối sách không in thêm URL hoặc mã tải riêng. Đã đối chiếu đủ biểu tượng CD 1–90 ở bài chính, không suy số đĩa; chưa kiểm file nghe thực tế.

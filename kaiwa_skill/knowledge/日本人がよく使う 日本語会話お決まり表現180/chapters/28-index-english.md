@@ -1,0 +1,242 @@
+# Index (English version) — Tra theo cụm tiếng Anh
+
+Mỗi khóa tra tiếng Anh dẫn tới biểu thức Nhật, nghĩa Việt và trang bài tương ứng. Các khóa khác nhau có thể cùng dẫn đến một bài.
+
+<a id="u-180-index-en-p200"></a>
+## Trang 200
+
+- **A lot** → **山のようにある** — Nhiều như núi (tr. 198; mục 179).
+- **A mountain of** → **山のようにある** — Nhiều như núi (tr. 198; mục 179).
+- **A weight lifted from your back** → **肩の荷が下りる** — Trút được gánh nặng (tr. 41; mục 22).
+- **A world of difference** → **雲泥の差** — Khác biệt một trời một vực (tr. 90; mục 71).
+- **About to die** → **死にそう** — Như sắp chết, khổ sở quá mức (tr. 142; mục 123).
+- **Abused** → **叩かれる** — Bị chỉ trích (tr. 102; mục 83).
+- **Act like a big shot** → **大きな顔をする** — Ra vẻ ta đây quan trọng (tr. 110; mục 91).
+- **Addicted to** → **ハマる** — Mê, bị cuốn vào (tr. 30; mục 11).
+- **All talk and no action** → **口先だけ** — Chỉ nói miệng, chẳng làm (tr. 55; mục 36).
+- **Allergy** → **アレルギー** — Dị ứng; phản cảm mạnh (tr. 124; mục 105).
+- **As one wished** → **思うツボ** — Đúng như tính toán của ai đó (tr. 196; mục 177).
+- **Astonished** → **開いた口がふさがらない** — Kinh ngạc đến há hốc miệng (tr. 128; mục 109).
+- **Attention to detail** → **手とり足とり** — Cầm tay chỉ việc (tr. 42; mục 23).
+- **Attention-hungry** → **寂しがり屋** — Người dễ thấy cô đơn (tr. 65; mục 46).
+- **Backfire** → **裏目に出る** — Phản tác dụng (tr. 139; mục 120).
+- **Baseless** → **根も葉もない** — Hoàn toàn vô căn cứ (tr. 109; mục 90).
+- **Be a sucker for** → **目がない** — Mê không cưỡng được (tr. 31; mục 12).
+- **Bear a burden** → **しわ寄せ** — Hệ quả xấu lan sang chỗ khác (tr. 192; mục 173).
+- **Beat to the punch** → **先手を打つ** — Ra tay trước, đi trước một bước (tr. 28; mục 9).
+- **Between a rock and a hard place** → **板ばさみ** — Kẹt giữa hai phía (tr. 138; mục 119).
+- **Blind spot** → **盲点** — Điểm mù, chỗ bỏ sót (tr. 194; mục 175).
+- **Bolt from the blue** → **寝耳に水** — Tin đột ngột khiến sửng sốt (tr. 167; mục 148).
+- **Boss around** → **あごで使う** — Sai khiến người khác bằng thái độ hách dịch (tr. 115; mục 96).
+- **Bottlenecked** → **ネックになる** — Thành nút thắt, trở ngại (tr. 134; mục 115).
+- **Breathtaking** → **手に汗握る** — Hồi hộp đến toát mồ hôi tay (tr. 84; mục 65).
+- **Burn with shame** → **顔から火が出る** — Xấu hổ đến đỏ bừng mặt (tr. 144; mục 125).
+- **Butter up** → **ごまをする** — Nịnh nọt để được lợi (tr. 50; mục 31).
+- **Can't bring myself to** → **手につかない** — Không thể chú tâm làm việc (tr. 130; mục 111).
+- **Can't do a thing** → **手も足も出ない** — Không xoay xở được gì (tr. 137; mục 118).
+- **Can't put yourself into it** → **身が入らない** — Không toàn tâm vào việc (tr. 132; mục 113).
+- **Can't show my face** → **合わせる顔がない** — Xấu hổ không dám gặp mặt (tr. 147; mục 128).
+- **Can't eat a bite** → **食事がのどを通らない** — Lo đến ăn không nổi (tr. 87; mục 68).
+- **Cause trouble** → **お騒がせする** — Gây phiền hoặc lo lắng cho nhiều người (tr. 151; mục 132).
+- **Choke back tears** → **涙をのむ** — Nuốt nước mắt, nén nỗi buồn (tr. 161; mục 142).
+- **Choosing between two evils** → **痛しかゆし** — Tiến thoái lưỡng nan (tr. 181; mục 162).
+- **Cinch** → **朝飯前** — Dễ ợt, chuyện nhỏ (tr. 21; mục 2).
+- **Cloudy** → **雲をつかむ** — Mơ hồ, không nắm bắt được (tr. 199; mục 180).
+- **Consensus-building** → **根回し** — Dàn xếp, tạo đồng thuận trước (tr. 29; mục 10).
+- **Contrarian** → **ひねくれ者** — Người hay nghĩ ngược, ngang bướng (tr. 75; mục 56).
+- **Contrary person** → **ひねくれ者** — Người hay nghĩ ngược, ngang bướng (tr. 75; mục 56).
+- **Cool your head** → **頭を冷やす** — Hạ hỏa, bình tĩnh lại (tr. 149; mục 130).
+- **Cover it yourself** → **自腹を切る** — Tự bỏ tiền túi (tr. 159; mục 140).
+- **Crabby** → **ご機嫌斜め** — Không vui, khó ở (tr. 182; mục 163).
+
+<a id="u-180-index-en-p201"></a>
+## Trang 201
+
+- **Cram overnight** → **一夜漬け** — Học hoặc làm dồn trong một đêm (tr. 83; mục 64).
+- **Cross a dangerous bridge** → **危ない橋を渡る** — Liều chấp nhận rủi ro (tr. 160; mục 141).
+- **Crybaby** → **泣き虫** — Người hay khóc (tr. 68; mục 49).
+- **Cut corners** → **手を抜く** — Làm qua loa, bớt công cần thiết (tr. 52; mục 33).
+- **Doesn't hold a candle to** → **足元にも及ばない** — Không thể sánh bằng (tr. 91; mục 72).
+- **Don't even notice** → **痛くもかゆくもない** — Chẳng hề hấn gì (tr. 40; mục 21).
+- **Easily flattered** → **お調子者** — Người dễ bị tâng bốc, hùa theo (tr. 74; mục 55).
+- **Extremely thorough** → **かゆいところに手が届く** — Chu đáo đến từng điều nhỏ (tr. 44; mục 25).
+- **Fast quitter** → **三日坊主** — Người nhanh chán, bỏ cuộc sớm (tr. 155; mục 136).
+- **Feel like dying** → **死にそう** — Như sắp chết, khổ sở quá mức (tr. 142; mục 123).
+- **Feel like you're choking** → **息が詰まる** — Ngột ngạt đến nghẹt thở (tr. 163; mục 144).
+- **Feel uneasy** → **気が気でない** — Đứng ngồi không yên vì lo (tr. 85; mục 66).
+- **Feeling small** → **肩身が狭い** — Cảm thấy lép vế, ngượng ngập (tr. 150; mục 131).
+- **First thing in the morning / afternoon** → **朝一・午後一** — Đầu giờ sáng / đầu giờ chiều (tr. 189; mục 170).
+- **First to arrive** → **一番乗り** — Người đến đầu tiên (tr. 25; mục 6).
+- **Forget oneself** → **我を忘れる** — Quên mình, mất tự chủ vì mải mê (tr. 33; mục 14).
+- **Frivolous** → **お調子者** — Người dễ bị tâng bốc, hùa theo (tr. 74; mục 55).
+- **Frog in a well** → **井の中の蛙** — Ếch ngồi đáy giếng (tr. 119; mục 100).
+- **From A to Z** → **一から十まで** — Từ đầu đến cuối, mọi chi tiết (tr. 43; mục 24).
+- **From worst to best** → **ピンからキリまで** — Đủ mọi mức, từ thấp nhất đến cao nhất (tr. 89; mục 70).
+- **Fudge the numbers** → **サバを読む** — Khai sai con số cho lợi mình (tr. 51; mục 32).
+- **Get a headache** → **頭が痛い** — Đau đầu vì chuyện khó giải quyết (tr. 140; mục 121).
+- **Get an earache** → **耳にタコができる** — Nghe mãi đến phát chán (tr. 125; mục 106).
+- **Get goosebumps** → **鳥肌が立つ** — Nổi da gà (tr. 165; mục 146).
+- **Get hooked** → **ハマる** — Mê, bị cuốn vào (tr. 30; mục 11).
+- **Get lonely easily** → **寂しがり屋** — Người dễ thấy cô đơn (tr. 65; mục 46).
+- **Get mixed up in** → **とばっちりを食う・とばっちりを受ける** — Bị vạ lây (tr. 169; mục 150).
+- **Get mud on (your) face** → **顔に泥を塗る** — Làm ai đó mất mặt (tr. 152; mục 133).
+- **Get sick of** → **鼻につく** — Chán ghét vì lặp mãi (tr. 126; mục 107).
+- **Gets into the mood / Doesn't get into the mood** → **ノリがいい・悪い** — Dễ hòa vào không khí sôi nổi / không hào hứng (tr. 73; mục 54).
+- **Give a cold look** → **白い目で見る** — Nhìn bằng ánh mắt lạnh nhạt (tr. 106; mục 87).
+- **Give an ear** → **耳を傾ける** — Chú ý lắng nghe (tr. 186; mục 167).
+- **Give an evasive reply** → **お茶をにごす** — Nói lảng, trả lời né tránh (tr. 53; mục 34).
+- **Godsend** → **棚ぼた** — May mắn bất ngờ (tr. 22; mục 3).
+- **Grit one's teeth** → **歯を食いしばる** — Nghiến răng chịu đựng (tr. 157; mục 138).
+- **Halfhearted** → **煮え切らない** — Lưỡng lự, không dứt khoát (tr. 133; mục 114).
+- **Harden one's heart** → **心を鬼にして** — Cứng lòng vì điều tốt cho người khác (tr. 100; mục 81).
+- **Have a big mouth** → **大きな口をきく** — Ăn nói lớn lối (tr. 111; mục 92).
+- **Have a terrible experience** → **痛い目にあう** — Gặp chuyện khổ sở (tr. 170; mục 151).
+- **Have a weakness for** → **目がない** — Mê không cưỡng được (tr. 31; mục 12).
+- **Headwind** → **逆風** — Bất lợi, gió ngược (tr. 179; mục 160).
+- **Heart is crushed** → **心が折れる** — Nản lòng, suy sụp (tr. 141; mục 122).
+- **Heart is somewhere else** → **心ここにあらず** — Để tâm trí ở nơi khác (tr. 131; mục 112).
+
+<a id="u-180-index-en-p202"></a>
+## Trang 202
+
+- **Hit a peak** → **頭打ち** — Chạm mức trần, không tăng thêm (tr. 176; mục 157).
+- **Hit a wall** → **壁にぶつかる** — Gặp bức tường cản trở (tr. 135; mục 116).
+- **Hold a grudge against** → **目のかたきにする** — Xem ai đó như kẻ thù (tr. 121; mục 102).
+- **Hooked** → **病みつき** — Mê đến không dứt ra được (tr. 32; mục 13).
+- **Humble** → **腰が低い** — Khiêm nhường (tr. 62; mục 43).
+- **Hurts to hear** → **耳が痛い** — Nghe mà nhói vì đúng điểm yếu của mình (tr. 146; mục 127).
+- **Immature** → **大人げない** — Trẻ con, thiếu chín chắn (tr. 148; mục 129).
+- **Incompatible** → **水と油** — Như nước với dầu, không hợp nhau (tr. 122; mục 103).
+- **Indistinct** → **雲をつかむ** — Mơ hồ, không nắm bắt được (tr. 199; mục 180).
+- **Itching to do something** → **居てもたってもいられない** — Bồn chồn không thể ngồi yên (tr. 86; mục 67).
+- **Jaw hit the floor** → **開いた口がふさがらない** — Kinh ngạc đến há hốc miệng (tr. 128; mục 109).
+- **Kick in the pants** → **尻を叩く** — Thúc giục mạnh để người khác hành động (tr. 95; mục 76).
+- **Last-second cancelation** → **ドタキャン** — Hủy vào phút chót (tr. 188; mục 169).
+- **Laugh sarcastically** → **鼻で笑う** — Cười khẩy (tr. 113; mục 94).
+- **Lay the groundwork** → **根回し** — Dàn xếp, tạo đồng thuận trước (tr. 29; mục 10).
+- **Lean back** → **ふんぞりかえる** — Ngả người vênh váo (tr. 112; mục 93).
+- **Let bygones be bygones.** → **なかったことにする** — Coi như chưa từng xảy ra (tr. 97; mục 78).
+- **Like cats and dogs** → **犬猿の仲** — Quan hệ như chó với khỉ, rất bất hòa (tr. 123; mục 104).
+- **Like chalk and cheese** → **月とスッポン** — Khác nhau một trời một vực (tr. 88; mục 69).
+- **Like dogs and monkeys** → **犬猿の仲** — Quan hệ như chó với khỉ, rất bất hòa (tr. 123; mục 104).
+- **Like the devil** → **鬼のように** — Cực kỳ, như quỷ (tr. 185; mục 166).
+- **Like the moon and a turtle** → **月とスッポン** — Khác nhau một trời một vực (tr. 88; mục 69).
+- **Lip service** → **口先だけ** — Chỉ nói miệng, chẳng làm (tr. 55; mục 36).
+- **Lone wolf** → **一匹狼** — Người thích làm một mình (tr. 64; mục 45).
+- **Long-awaited** → **待ちに待った** — Chờ đợi đã lâu (tr. 49; mục 30).
+- **Look at the long term** → **長い目で見る** — Xem xét về lâu dài (tr. 99; mục 80).
+- **Look forward to** → **首を長くして待つ** — Mong ngóng mãi (tr. 48; mục 29).
+- **Look over** → **目を通す** — Xem lướt, đọc qua (tr. 187; mục 168).
+- **Looked down upon** → **風当たりが強い** — Bị phản ứng và chỉ trích gay gắt (tr. 103; mục 84).
+- **Loose lips** → **おしゃべり** — Người lắm lời, hay buôn chuyện (tr. 72; mục 53).
+- **Lose oneself** → **我を忘れる** — Quên mình, mất tự chủ vì mải mê (tr. 33; mục 14).
+- **Make a commotion** → **バタバタする** — Tất bật, chạy ngược chạy xuôi (tr. 79; mục 60).
+- **Makes me feel dizzy** → **目が回る** — Bận đến chóng mặt (tr. 81; mục 62).
+- **Mind your own business** → **大きなお世話** — Việc của tôi, đừng can thiệp (tr. 127; mục 108).
+- **Mixed blessing** → **痛しかゆし** — Tiến thoái lưỡng nan (tr. 181; mục 162).
+- **Moody** → **気分屋** — Người tính khí thất thường (tr. 69; mục 50).
+- **More than I can handle** → **手に負えない** — Vượt quá khả năng xoay xở (tr. 129; mục 110).
+- **No big deal** → **お安い御用** — Có gì khó đâu (tr. 23; mục 4).
+- **No problem** → **楽勝** — Dễ dàng, không thành vấn đề (tr. 20; mục 1).
+- **No skin off my nose** → **痛くもかゆくもない** — Chẳng hề hấn gì (tr. 40; mục 21).
+- **Nod yes** → **首を縦に振る** — Gật đầu đồng ý (tr. 184; mục 165).
+- **Not even time to breathe** → **息つく暇もない** — Bận đến không có lúc lấy hơi (tr. 82; mục 63).
+
+<a id="u-180-index-en-p203"></a>
+## Trang 203
+
+- **Nothing to lose** → **ダメ元** — Cứ thử, không mất gì (tr. 38; mục 19).
+- **Off the cuff** → **ぶっつけ本番** — Làm ngay không tập trước (tr. 80; mục 61).
+- **One after another** → **いもづる式** — Nối tiếp thành chuỗi (tr. 191; mục 172).
+- **One thing after another** → **踏んだり蹴ったり** — Họa vô đơn chí (tr. 168; mục 149).
+- **Ostracized** → **仲間はずれ** — Bị gạt ra khỏi nhóm (tr. 107; mục 88).
+- **Outcast** → **村八分** — Bị cả nhóm tẩy chay (tr. 108; mục 89).
+- **Packed like sardines** → **すし詰め** — Chật ních, chen kín (tr. 190; mục 171).
+- **Peevish** → **へそを曲げる** — Dỗi, giận dỗi (tr. 183; mục 164).
+- **Piece of cake** → **朝飯前** — Dễ ợt, chuyện nhỏ (tr. 21; mục 2).
+- **Piece of cake** → **お安い御用** — Có gì khó đâu (tr. 23; mục 4).
+- **Pitfall** → **落とし穴** — Cạm bẫy, điểm dễ mắc sai lầm (tr. 195; mục 176).
+- **Play into someone's hands** → **思うツボ** — Đúng như tính toán của ai đó (tr. 196; mục 177).
+- **Popular (person)** → **人気者** — Người được nhiều người yêu mến (tr. 60; mục 41).
+- **Postpone** → **お預け** — Phải chờ, tạm hoãn (tr. 158; mục 139).
+- **Pretend it never happened** → **なかったことにする** — Coi như chưa từng xảy ra (tr. 97; mục 78).
+- **Pretend to endure** → **やせ我慢をする** — Cố chịu đựng, giả vờ không sao (tr. 156; mục 137).
+- **Put on airs** → **格好をつける** — Làm ra vẻ, cố tỏ ra oai (tr. 116; mục 97).
+- **Put your back into** → **本腰を入れる** — Thật sự dốc sức bắt tay vào (tr. 35; mục 16).
+- **Reach an impasse** → **煮詰まる** — Đi vào bế tắc; tiến gần kết luận (tr. 143; mục 124).
+- **Read the atmosphere** → **空気を読む** — Biết nhìn tình hình, hiểu ý người quanh mình (tr. 37; mục 18).
+- **Read the situation** → **空気を読む** — Biết nhìn tình hình, hiểu ý người quanh mình (tr. 37; mục 18).
+- **Rehash** → **二番煎じ** — Lặp lại cái cũ, thiếu mới mẻ (tr. 193; mục 174).
+- **Rejection** → **アレルギー** — Dị ứng; phản cảm mạnh (tr. 124; mục 105).
+- **Ruined** → **台無し** — Hỏng hết, tiêu tan (tr. 171; mục 152).
+- **Running around everywhere** → **バタバタする** — Tất bật, chạy ngược chạy xuôi (tr. 79; mục 60).
+- **Rush job** → **一夜漬け** — Học hoặc làm dồn trong một đêm (tr. 83; mục 64).
+- **Safe Tile** → **安全パイ** — Phương án/người an toàn (tr. 39; mục 20).
+- **Scales falling from eyes** → **目からウロコ** — Sáng mắt ra, vỡ lẽ (tr. 36; mục 17).
+- **Scatterbrained** → **おっちょこちょい** — Người hấp tấp, đãng trí (tr. 61; mục 42).
+- **Screen** → **ふるいにかける** — Sàng lọc (tr. 197; mục 178).
+- **Selfish** → **虫がいい** — Chỉ nghĩ lợi cho mình (tr. 153; mục 134).
+- **Separate the wheat from the chaff** → **ふるいにかける** — Sàng lọc (tr. 197; mục 178).
+- **Sharp-minded** → **頭が切れる** — Đầu óc sắc bén (tr. 59; mục 40).
+- **Shudder** → **ゾッとする** — Rùng mình (tr. 164; mục 145).
+- **Shy** → **恥ずかしがり屋** — Người nhút nhát, hay ngượng (tr. 67; mục 48).
+- **Sit on one's laurels** → **あぐらをかく** — Ỷ vào vị thế mà không cố gắng (tr. 114; mục 95).
+- **Skim off the cream** → **甘い汁を吸う** — Hưởng lợi dễ dàng trên công sức người khác (tr. 120; mục 101).
+- **Skyrocketing up** → **うなぎ上り** — Tăng vọt (tr. 175; mục 156).
+- **Softhearted** → **お人好し** — Người tốt bụng đến mức dễ bị lợi dụng (tr. 71; mục 52).
+- **Sore loser** → **負けず嫌い** — Không chịu thua (tr. 66; mục 47).
+- **Spinning one's wheels** → **空回り** — Cố gắng mà không hiệu quả (tr. 180; mục 161).
+- **Spoiled child** → **甘えん坊** — Người hay nhõng nhẽo, ỷ lại (tr. 70; mục 51).
+- **Spoilt** → **甘えん坊** — Người hay nhõng nhẽo, ỷ lại (tr. 70; mục 51).
+- **Stabbed in the back** → **飼い犬に手をかまれる** — Bị người mình tin cậy phản bội (tr. 173; mục 154).
+- **Standstill** → **足踏み** — Giậm chân tại chỗ (tr. 177; mục 158).
+
+<a id="u-180-index-en-p204"></a>
+## Trang 204
+
+- **Start over from the beginning** → **一からやり直す** — Làm lại từ đầu (tr. 154; mục 135).
+- **Starving for ~** → **～に飢える** — Khao khát, thiếu thốn điều gì (tr. 46; mục 27).
+- **Steadily** → **コツコツ** — Kiên trì, từng bước đều đặn (tr. 45; mục 26).
+- **Stick your nose in** → **首を突っ込む** — Xen sâu vào chuyện gì (tr. 34; mục 15).
+- **Strike while the iron is hot** → **善は急げ** — Việc tốt thì làm ngay (tr. 27; mục 8).
+- **Stubborn** → **頭が固い** — Cứng nhắc, cố chấp (tr. 76; mục 57).
+- **Suffer through it** → **砂をかむ** — Nhạt nhẽo, buồn tẻ đến phải chịu đựng (tr. 162; mục 143).
+- **Swimmingly** → **トントン拍子** — Thuận buồm xuôi gió (tr. 24; mục 5).
+- **Tailwind** → **追い風** — Thuận lợi, gió xuôi (tr. 178; mục 159).
+- **Take a toll** → **しわ寄せ** — Hệ quả xấu lan sang chỗ khác (tr. 192; mục 173).
+- **Take advantage of** → **足元をみる** — Lợi dụng điểm yếu của người khác (tr. 118; mục 99).
+- **Take one's chances** → **一か八か** — Đánh liều một phen (tr. 57; mục 38).
+- **Take one's hat off to** → **頭が下がる** — Kính phục, nể phục (tr. 77; mục 58).
+- **Talked about behind one's back** → **後ろ指を指される** — Bị người ta nói xấu sau lưng (tr. 104; mục 85).
+- **Tenacious** → **頑張り屋** — Người chăm chỉ, kiên trì (tr. 58; mục 39).
+- **The nail that sticks up gets hammered down** → **出る杭は打たれる** — Người nổi bật dễ bị dập xuống (tr. 105; mục 86).
+- **There's always someone better** → **上には上がある** — Giỏi đến đâu vẫn có người giỏi hơn (tr. 92; mục 73).
+- **Throw up your hands** → **お手上げ** — Bó tay, hết cách (tr. 136; mục 117).
+- **Tight-lipped** → **口が堅い** — Biết giữ kín chuyện (tr. 63; mục 44).
+- **To be addicted to** → **病みつき** — Mê đến không dứt ra được (tr. 32; mục 13).
+- **To be played** → **一杯食わされる** — Bị lừa một vố (tr. 172; mục 153).
+- **To forgive and forget** → **水に流す** — Bỏ qua chuyện cũ (tr. 96; mục 77).
+- **To have sweaty palms** → **手に汗握る** — Hồi hộp đến toát mồ hôi tay (tr. 84; mục 65).
+- **To make a move on** → **口説く** — Thuyết phục tha thiết; tán tỉnh (tr. 56; mục 37).
+- **To overlook** → **大目に見る** — Nương nhẹ, bỏ qua lỗi (tr. 98; mục 79).
+- **To panic** → **パニクる** — Hoảng lên, cuống lên (tr. 78; mục 59).
+- **To side with** → **肩を持つ** — Đứng về phía, bênh vực (tr. 94; mục 75).
+- **To woo** → **口説く** — Thuyết phục tha thiết; tán tỉnh (tr. 56; mục 37).
+- **Trap** → **落とし穴** — Cạm bẫy, điểm dễ mắc sai lầm (tr. 195; mục 176).
+- **Turn a blind eye** → **見て見ぬふりをする** — Thấy mà làm ngơ (tr. 54; mục 35).
+- **Turn a deaf ear** → **聞く耳をもたない** — Không chịu lắng nghe (tr. 117; mục 98).
+- **Turn pale** → **血の気が引く** — Mặt tái đi vì sợ (tr. 166; mục 147).
+- **Two birds with one stone** → **一石二鳥** — Một công đôi việc (tr. 26; mục 7).
+- **Unrehearsed** → **ぶっつけ本番** — Làm ngay không tập trước (tr. 80; mục 61).
+- **Untiringly** → **コツコツ** — Kiên trì, từng bước đều đặn (tr. 45; mục 26).
+- **Unwillingly give in** → **百歩譲って** — Cho dù nhượng bộ rất nhiều (tr. 101; mục 82).
+- **Upward growth** → **右肩上がり** — Tăng đều (tr. 174; mục 155).
+- **Want desperately** → **喉から手が出るほど欲しい** — Thèm muốn đến mức không chịu nổi (tr. 47; mục 28).
+- **Want to dig a hole and hide in it** → **穴があったら入りたい** — Chỉ muốn chui xuống lỗ vì xấu hổ (tr. 145; mục 126).
+- **Water and oil** → **水と油** — Như nước với dầu, không hợp nhau (tr. 122; mục 103).
+- **Water under the bridge** → **水に流す** — Bỏ qua chuyện cũ (tr. 96; mục 77).
+- **Windfall** → **棚ぼた** — May mắn bất ngờ (tr. 22; mục 3).
+- **Winner / Loser** → **勝ち組・負け組** — Nhóm thắng cuộc / nhóm thua cuộc (tr. 93; mục 74).
+- **Without a hitch** → **トントン拍子** — Thuận buồm xuôi gió (tr. 24; mục 5).
+- **Worried** → **頭が痛い** — Đau đầu vì chuyện khó giải quyết (tr. 140; mục 121).
+
