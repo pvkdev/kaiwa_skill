@@ -1,11 +1,15 @@
-# QA mẫu — Shadowing 初・中級編 bản Indonesia–Thai–Việt
+# QA và phạm vi nghiệm thu
 
-Root đã mở ảnh 24 trang PDF: 1–4, 8–9, 20–21, 23, 25–26, 37–38, 45, 107–114, 138–139. Đây là QA mẫu trong lúc worker viết, chưa phải kiểm độc lập toàn bộ 145 trang hoặc nghiệm thu cuối.
+Đã có bản đọc đủ PDF cung cấp: 145 trang, 8 chương, 66 unit; 42 section, **411 hội thoại** và 950 lượt Nhật có 950 lượt Việt. Người biên tập mở toàn bộ ảnh nguồn và tự đối chiếu; root kiểm mẫu **34 trang**, không tuyên bố kiểm độc lập ngữ nghĩa toàn sách. Số đếm chỉ kiểm cấu trúc, không chứng minh đúng nghĩa.
 
-Đã đọc toàn chapter front/guide; đối chiếu lời đầu 3–4, bảng cấu trúc và hướng dẫn 8–9/20–21, phần giáo viên 23. F/C/D là quan hệ mức độ trang trọng giữa hai người, không phải nhãn ba CD. Bảng cấp độ nói về kỳ thi năng lực Nhật ngữ cũ, không gán lại thành N-level hiện hành. Title2 và colophon139 dùng 初・中級編; preface nhắc tên bản cũ 初～中級版 là ngữ cảnh riêng. ISBN9784874246061, lần xuất bản đầu 2013-12-24, くろしお出版, năm tác giả được xác nhận theo139. Chưa xác nhận số đĩa chỉ từ chữ CD付.
+Root mở PDF1–4,8–9,20–21,23,25–26,37–38,43–45,63–64,81–82,107–114,131–134,138–139. Đọc toàn front/guide, so lời đầu3–4, bảng/hướng dẫn8–9/20–21, hướng dẫn giáo viên23; so trọn Unit1 Section1/7/10 và bảy giải thích, section cuối Unit2/3, Unit5 Section1/2/7 và cột③. Các phần khác thuộc lượt tác giả đối chiếu toàn sách. Quảng cáo141–145 và trang trắng140 vẫn nằm trong coverage, có lý do loại.
 
-So trọn mười đối thoại Section1 Unit1 với25–26; đọc nhóm Section7 tại37–38 và bảy giải thích tại45. Đã kiểm các sửa tên Yamada bị cột Việt in nhầm Tanaka, はい？ có dấu hỏi và giải thích ちょっとね có sắc thái không tốt/ngần ngại. Những ví dụ ở bảng hướng dẫn và sáu cặp rút gọn đã có nghĩa Việt sau QA.
+Đã kiểm lại các sửa tên Yamada, câu hỏi はい？, sắc thái ngần ngại/đánh giá của ちょっとね, hoa cắt cành, việc làm đã chốt, độ dài tóc mái che lông mày, địa danh Shinjuku và hai kỹ năng tiến bộ. Đoạn kết cột Việt138 bị in lặp được dịch lại đầy đủ theo Nhật. Root sửa thêm lời tiếp nhận そうなんだ thành “À, ra vậy” và lời trước bữa ăn いただきまーす thành “Vâng, tôi xin phép ăn nhé” theo43–44; sửa dấu ngoặc kép dư trong bản Việt mẹo nhớ từ ở64.
 
-So trọn hai Section1–2 Unit5, tổng20 hội thoại, với107–114, gồm các lượt nối sang trang sau, mãCD37/38 và liên kết giải thích. Cột③ ở138 giữ đủ câu hỏi, bốn câu trả lời và đoạn kết Nhật–Việt; đoạn Việt in lặp sai câu cuối đã được sửa theo Nhật, không bịa nội dung. Source139 đã mở để xác minh identity; backmatter đang do worker hoàn tất.
+Root phóng crop2/139, đính chính lần đọc nhầm dấu chấm từ ảnh nhỏ: tên đúng là **初～中級編**. Chapter, metadata/audio và thư mục đã thống nhất theo tên thật; colophon dùng biến thể dấu sóng〜. Lịch sử đính chính nằm trong editorial-log, không sửa nguồn. ISBN9784874246061, bản đầu2013-12-24, くろしお出版 được so139. F/C/D là quan hệ trang trọng giữa người nói; bảng thi là hệ cũ, không gán thành N-level hiện hành.
 
-Đang yêu cầu worker sửa các chỗ còn lọt từ bản Việt in sẵn: Shinzuku thành Shinjuku; sắc thái ngần ngại của ちょっとね trong Unit1 Section7; 切り花でしたよね trong Unit5 Section2 là xác nhận hoa cắt cành, không phải “bó hoa là tốt nhất”; 就職することが決まった là việc vào công ty đã được chốt, không chỉ ý định tự quyết định. Cần đọc lại bản sửa trước nghiệm thu. Không nâng trạng thái toàn sách vì QA mẫu này hoặc vì parser qua.
+Số420 hội thoại trong bàn giao trước được đính chính theo số mục thật: Unit1 100, Unit2 85, Unit3 76, Unit4 80, Unit5 70. Root mở63–64/81–82 xác nhận section cuối Unit2 chỉ5, Unit3 chỉ6; bản đọc không thiếu9 hội thoại. Không lấy42 section nhân10.
+
+Inventory ghi42 nhãn CD02–43, giữ số0 đầu và liên kết section/script; không suy CD01 hoặc số đĩa. File nghe thực tế **not_checked**. Xem audio.md trong _meta.
+
+Build/validate sau sửa: **0 lỗi, 0 cảnh báo**, không pending/draft/stale/needs_review. Không có vấn đề nguồn chưa giải quyết được ghi nhận; điều đó không bảo đảm không còn lỗi chưa phát hiện. Hash bản đọc và từng chapter được khóa trong coordinator-review.json. Chưa sắp topic/level hoặc viết lộ trình mới.
