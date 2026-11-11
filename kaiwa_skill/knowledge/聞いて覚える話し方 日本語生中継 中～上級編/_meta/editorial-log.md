@@ -54,6 +54,9 @@
 5. PDF 14–18 không có transcript của các track và không in đáp án cho các ô bài tập; bản clean giữ đúng phần đề và ví dụ có sẵn.
 6. Cụm 「無事チェックインができた」 ở PDF 13 không cho biết đó là check-in khách sạn hay sân bay; bản Việt dùng “làm thủ tục check-in suôn sẻ”, không gán địa điểm.
 7. Root QA phát hiện bản Việt của hai cụm 「明日までには」「明日までに」 ở PDF 14–15 từng ghi “trước ngày mai”, làm sớm hạn của nguồn. Đã sửa cả hai thành “chậm nhất vào ngày mai” và checkpoint lại Bài 1.
+8. PDF 88 in số trang 88, còn PDF 87 in 86; bản clean/coverage ghi đúng số in nhìn thấy, không điền số 87 bằng suy đoán. PDF 89 không in số trang.
+9. PDF 88 có đoạn Acknowledgement chỉ bằng tiếng Anh. Bản clean giữ thông tin tài trợ duy nhất của đoạn này bằng tiếng Việt, không lặp nguyên văn tiếng Anh.
+10. Khung 奥付 PDF 89 có địa chỉ, điện thoại, fax, email, website và thông báo đổi bản in lỗi. Đây là chi tiết liên lạc/xuất bản của ấn bản 2004, không phải nội dung học; bản clean giữ nhan đề, tác giả, hai ngày in, nhà xuất bản, minh họa, thiết kế, đơn vị in, ISBN và chỉ rõ vị trí phần liên hệ bị lược trong snapshot.
 
 ## Review tiếp theo
 
