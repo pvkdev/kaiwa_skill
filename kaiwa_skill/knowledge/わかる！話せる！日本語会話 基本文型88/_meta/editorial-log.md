@@ -40,3 +40,22 @@
 ## Root independent preservation review — 2026-11-11
 
 Root mở đủ PDF7–12, so chapter với ảnh. Khôi phục ý giải thích chiều cao/vóc dáng-vs-khoảng cách ở7 và lời dẫn nhiều văn phong ở8; đưa MEMO帰ろう của11 về sau tám lượt luyện đúng cuối trang. Các câu Nhật và mọi ví dụ giữ nguyên. Ghi preservation-independent-review.md; checkpoint intro và bài2 đã refresh. Review cũ chỉ là lịch sử, không nâng phạm vi pilot thành full.
+- Full extend-scope: thêm phần đầu PDF1–6 theo ảnh thật; PDF6 chia panel CDの使い方 và trang mở 序章 thuộc hai chapter. Mục lục giữ đủ tám nhóm và các chuỗi tên mẫu; bản dịch Anh/Trung lặp ý Nhật đã chuyển sang Việt, không chép song song.
+
+## 2026-11-11 — PART1 mẫu 4–8, PDF13–17
+
+Đã mở ảnh gốc từng trang, đối chiếu raw phụ trợ; giữ 5 hội thoại mẫu và 40 cặp 会話練習 Nhật–Việt, giải thích, khung mẫu, ví dụ, điểm lưu ý, MEMO và mã CD 4–8. Lề điều hướng lặp được loại riêng trong evidence. Chỉnh câu quy ước mã CD ở chương đầu theo QA của root; phạm vi thu âm là dữ kiện PDF6, cách đặt mã tra cứu là quy ước biên tập.
+
+## 2026-11-11 — Warming-up và どうも, PDF18–22
+
+Đã mở ảnh từng panel: sáu lượt × tám câu, các lựa chọn và ô chấm điểm, bài văn hóa bốn cách dùng どうも, toàn đáp án và chú thích in trên PDF22 trái. PDF22 phải là trang mở PART2 và được chuyển sang đầu chapter06. Đáp án ở sau đề, không điền ô trống.
+
+## 2026-11-11 — PDF28 crop gốc
+
+Ảnh PDF gốc mở ở 2x và 4x đều bị cắt mép trái/đáy. Mã CD14 và câu/giải thích 1–7 còn đọc được. Hội thoại mở đầu mất ký hiệu vai ở mép trái nên ghi hai lượt theo thứ tự, không đặt nhãn giả. Câu 8 C chỉ còn đầu câu A; bản dịch Anh A đọc được đã chuyển Việt, không dựng phần Nhật, B còn thiếu. Structured needs_review: page28 + unit u-88-part2-14, block p0028-b005.
+
+PDF27 hội thoại mở đầu B in tiếng Nhật 「まだ２回しか使ってない」 và tiếng Trung “才用过两次”, nhưng bản Anh in “two weeks”. Bản clean bám Nhật “mới dùng hai lần”; đây là chênh lệch bản dịch phụ của nguồn, không phải chữ Nhật bị thiếu hoặc chưa xác nhận.
+
+## 2026-11-11 — Ghi nhận bản dịch phụ PDF85
+
+Ở PDF85/trang in169, hội thoại số3 và số4 có bản Anh đặt lệch cặp: dòng dưới số3 nói về tiếng Nhật yếu, dòng dưới số4 nói về đội yếu nhất; cả hai đối lập với lời Nhật tương ứng. Bản Trung dưới mỗi số khớp lời Nhật. Một cặp tiếng Trung về thi cử còn bị in lặp lạc vị trí dưới số4, tương ứng nội dung số7. Bản clean giữ đúng tám cặp Nhật và dịch Việt từ Nhật; không đưa cặp Trung lặp thành bài thứ chín. Đây là sai khác ở bản dịch phụ, không làm mờ phần Nhật đã đọc rõ, nên không đổi unit sang needs_review.

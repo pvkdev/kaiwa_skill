@@ -1,12 +1,13 @@
-# QA mẫu khi mở rộng 基本文型88
+# Nghiệm thu phạm vi PDF và giới hạn kiểm tra
 
-Root đọc toàn chương mới00a-dau-sach-va-cach-hoc.md và mở ảnh PDF2–6; bìa1 đã mở ở migration, cùng PDF/hash4f47df1cc97a4b27ba61d05850633ea73466e48c03a20b48e927f351435f3256. So lời đầu/ba câu Nhật, mục lục và tám nhóm, bốnSTEP, nhãn trang bài/legend, bốn lượt dùngCD và panel nối序章 ởPDF6. Kiến thức trong phạm vi này phù hợp; các lớpEnglish/Chinese lặp được bỏ, giải thích chuyểnViệt.
+Bản đọc bao phủ đủ 96 trang PDF được cung cấp, 16 chương và 113 unit. Tác giả đối chiếu toàn nguồn; 94 trang author_checked, PDF9 và28 needs_review. Validator với --allow-source-issues trả 0 lỗi, 4 cảnh báo cho hai page/unit tương ứng; không còn pending, draft hoặc stale.
 
-Yêu cầu tác giả phân biệt quy ước biên tập “giữ số CD làm mã đoạn để tra” với điều nguồnPDF6 thực sự nói (mọi thoại mẫu/thực hành được thu). Tác giả báo đã sửa và root đọc lại đoạn cuối. Sơ đồ thumbnail bàiよ là chỉ dẫn bố cục; đề nghị trỏ tới bàiよ đầy đủ, không coi là bài tập mới.
+Root đã mở 21 trang nguồn qua pilot, migration và QA mở rộng: 1–12, 18–22, 28, 31, 95–96. Root đọc toàn phần mở đầu và pilot cũ; đối chiếu toàn 48 câu ôn, lựa chọn, ô trống và 48 số đáp án in riêng cùng chú thích ở PDF18–22. Bài đọc どうも giữ bốn cách dùng, gồm cách kéo dài âm có chủ đích. Bảng 88 mẫu và chỉ mục 143 mục được đọc trong output, so ảnh hai trang cuối; đây không phải rà độc lập toàn bộ các bài chính liên quan.
 
-Root mởPDF28 toàn ảnh, xác nhận nguồn cắt mép trái/đáy thật; còn đọc được nhãnCD14 và phần lớn hội thoại bên phải. Chưa đối chiếu bảnclean bài14 hoặc xác định từng unit/block vấn đề. Không khẳng định toàn trang mất; tác giả phải giữ phần đọc được và issue theo đúng vùng thiếu.
+Theo QA đã sửa ô trống tương ứng trong bản Việt, phân biệt cặp từ đầu vào Drill B với chỗ cần điền; không điền đáp án vào đề. Root xác minh thêm ngữ cảnh trời tối tại PDF31 và sửa hàng17 của bảng tra cứu: 降りそう là có vẻ sắp mưa. Các bài chính khác vẫn thuộc phạm vi đối chiếu của tác giả, chưa full independent semantic review.
 
-Đây là QA mẫu, chưa full96trang, không nâng pilot cũ thành chứng nhận toàn sách. PDF9 có công thức mâu thuẫn đã được giữ từ migration, không tự sửa Japanese/đoán phần thiếu.
+PDF9 in công thức ～では→～ちゃ mâu thuẫn với ví dụ 来てはだめ→来ちゃだめ; bản clean giữ ví dụ và cảnh báo thay vì công nhận công thức sai. PDF28 bị cắt đáy, chỉ còn đầu câu8A trong phần C; giữ các câu đọc được, bản Việt của A dựa trên English còn rõ và không dựng Nhật hoặc lượt B mất. Root đã mở ảnh28 và đọc unit liên quan. Chi tiết nguồn ở source-issues.md.
 
-Chapter front SHA256 tại thời điểm đọc: f0078deda1e2c7bf946881c09a79a50f99452908304f9f18ef0ebe9ad661cf3c
-Thời điểmUTC: 2026-11-11T07:13:23.767002+00:00
+Audio có nhãn CD1–88 theo trang bài và hướng dẫn dùng CD ở PDF6; đây là mã tra cứu, không suy có88 đĩa. Chưa xác nhận số đĩa hay tệp nghe thực tế, actual_files_status vẫn not_checked. Migration và scope history giữ nguyên chứng cứ pilot cũ; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
+
+Hash bản đọc đã kiểm: d63451eee590067e539302e7d544d6d0e10f0d0a06d1e342441285677f0987ec
