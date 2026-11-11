@@ -17,3 +17,7 @@ Root đã đọc lại toàn chapter front sau hai đợt sửa. Các điểm tr
 Root mở tiếp 19, 20, 21, 26, 27, 36, 37, nâng tổng lên 25 trang nguồn. So trọn sáu hội thoại đầu Section ① (20–21), sáu hội thoại đầu Section ② (26–27), đủ 11 ô giải thích (36–37), phần mở Unit và bảng biểu thức (19). Các lượt Nhật–Việt và mã DISK 1/02, 05 trong mẫu phù hợp. Chưa mở các trang còn lại của Unit 1; 38 hội thoại là số writer báo đã đối chiếu toàn Unit, không phải số root kiểm độc lập.
 
 Đã yêu cầu giữ ý nói thẳng suy nghĩ thật/cảm xúc của bản thân trong intro 19; sửa nghĩa テレフォンショッピング trong mục lục 4 thành mua sắm qua điện thoại. Root đã đọc lại hai sửa này cùng tên 実力チェック いきなりシャドーイング và lời khuyên vỗ tay ở hướng dẫn giáo viên; cả bốn vị trí đã phù hợp. Chưa kiểm nội dung chính của Unit 8 ở trang 160.
+
+Root mở thêm 46, 47, 58, 59, tổng 29 trang. So đủ hai hội thoại cuối Section ① Unit 2 (15–16) và 12 ô giải thích cuối Unit. Nội dung Nhật giữ đủ, phần Việt sửa đúng một số diễn đạt kém rõ của bản dịch in sẵn. Đã gửi ba sửa nhỏ: bỏ ý “tám tiếng liên tục” không có trong 一日８時間は; giữ ý vùng xương thắt lưng bị đau/tổn thương của giải thích 腰の骨を傷めた; gọi 駄洒落 là chơi chữ dựa trên âm gần nhau thay vì nói lái. Đang chờ đọc lại bản sửa, không coi toàn Unit 2 đã kiểm độc lập.
+
+Writer đã sửa và refresh checkpoint; root đọc lại đủ ba vị trí thấy các ý trên đã được giữ đúng. Cách diễn đạt của bản dịch vẫn có thể tự nhiên hơn nguồn Việt in sẵn, nhưng không được tự thêm quan hệ thời gian hoặc đổi loại hiện tượng ngôn ngữ.

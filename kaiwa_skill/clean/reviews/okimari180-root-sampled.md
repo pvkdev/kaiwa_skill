@@ -11,3 +11,7 @@ Colophon208 xác nhận清ルミ,Jリサーチ,ISBN9784863923256,lần1 ngày201
 Root mở thêm53, tổng11 trang, so trọn bài34 お茶をにごす: Nhật thực in hai nhãnA liên tiếp ở ví dụ1, còn EnglishA/B. Output giữ đúng nhãn nguồn, đủ câu/Việt/gloss và cảnh báo, không tự đổi nhãn. Sourceissue53 đúng vị trí. Đã đọc lại đầu mục朝飯前 sau sửa thành “Dễ ợt, chuyện nhỏ”.
 
 Root mở thêm PDF 103, tổng 12 trang, so trọn unit 84 風当たりが強い với chapter Section P. Hai hội thoại, bốn lượt Nhật–Việt, giải thích và chú từ phù hợp nguồn Nhật. Bản Anh của lượt A ở hội thoại 2 thực sự lặp ý phản hồi của B thay vì dịch câu hỏi của A. Bản Việt hiện theo câu Nhật đọc rõ và đúng nghĩa. Đã yêu cầu writer ghi đây là chênh lệch ngoại ngữ đã sửa, không giữ trạng thái bất định chỉ vì bản Anh sai; vấn đề nhãn vai ở PDF 53 vẫn riêng biệt và chưa được giải quyết.
+
+Root mở thêm PDF 129, tổng 13 trang, so trọn unit 110 手に負えない: đề mục 子供たちの世話, bốn lượt Nhật–Việt, hai chú từ và mini-column 負ける đều đủ, đúng nguồn đã mở. Số nhãn mini thực sự chỉ nhìn thấy 3; không tự đổi thành 29 theo thứ tự suy ra. Giữ cả nghĩa thua và giảm giá cùng 1000円負ける／もう少し負けてもらえませんか. Yêu cầu chuyển lời giải thích biên tập “nhãn in: 3” ra hồ sơ, trong bài chỉ hiển thị số nhìn được bình thường. Đây không phải bất định kiến thức cần needs_review.
+
+Root đọc lại sau sửa: tiêu đề mini hiện giữ số 3 bình thường, không còn chèn “nhãn in” vào phần học.
