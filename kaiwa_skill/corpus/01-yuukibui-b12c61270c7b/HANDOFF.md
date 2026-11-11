@@ -1,4 +1,23 @@
-# Bàn giao mới nhất book11 — WIP p1–113; p114 đã render
+# Bàn giao mới nhất book11 — 138/138 trang verified, build complete
+
+- Cập nhật: 2026-11-11 13:09 JST; worker `production_book_11_root_cont7`, `gpt-6-sol/high`, điều phối `/root`; token `book11-cont7-20261111-b7e2` sẽ release sạch sau handoff.
+- Book `01-yuukibui-b12c61270c7b`, PDF `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf` từ `kaiwa_skill/`, 138 trang vật lý; SHA-256 nguồn `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt này chuyển **p114–138 (25 trang)**, mỗi trang mở full render và direct4 trên/dưới; p127 thêm direct8 để xác nhận ruby tên `丸越＝まるこし`. Mỗi trang chép văn bản thuần, so hai chiều ảnh→Markdown→ảnh, record/evidence/verify riêng. Giữ p1–113 đã verified trước nguyên trạng.
+- Sau `reconcile`/`build`: **138/138 verified, 0 pending/rendered/draft/needs_review/invalid; 0 issue**, `complete=true`, `transcription_complete=true`, `build.complete=true`, `verified_pages=138`. SHA-256 `build.json`: `748db061c84498d597a284e0c87dc03d2c3078d31437a6c4a9887d021ff061cf`. Trạng thái acceptance vẫn `coordinator_review_required` để root QA.
+
+## Nội dung lượt cuối và điểm nguồn
+
+- p114–119 kết 第十七課 `敬語`; p120–125 第十八課 `アポイントメント`; p126–129 第十九課 `注意を受ける`; p130–135 第二十課 `面接試験`. Giữ đầy đủ mẫu, ô trống, mục tiêu bold, vai/lượt thoại, ví dụ, số lề, ruby từng lần, trang in và watermark. p127 hội thoại `習慣の違い` có `丸越` ruby nguồn `まるこし`; p131–133 phỏng vấn `コピーライターに応募する` với lương/giờ làm lịch sử như in.
+- p136 trang trắng chỉ có watermark, không có số in; p137 `あとがき` trang in124 giữ nguyên năm `1987年 8月`, thông tin trợ cấp/nhà xuất bản và bốn tên `鈴木禮子`, `郷司幸子`, `野村伸一`, `大橋伸六`; p138 trang cuối trắng chỉ watermark, không có số in.
+- Không sửa tools/skill/Git/sách khác. Ảnh/crops/scratch chỉ trong `.cache/renders/<book_id>/`, không thuộc output. `book.md` và `search.jsonl` đã build đủ 138 trang.
+
+## Tiếp theo
+
+- Root làm QA/acceptance/Git theo quyền điều phối. Worker không tự xác nhận acceptance. Nếu root phát hiện sai lệch cục bộ, dùng nguồn/crop đã lưu để sửa và verify lại trang tương ứng rồi reconcile/build.
+
+---
+
+# Bàn giao trước book11 — WIP p1–113; p114 đã render
 
 - Cập nhật: 2026-11-11 12:29 JST; worker `production_book_11_root_cont6`, `gpt-6-sol/high`, điều phối `/root`; token `book11-root107-20261111-7d3c` sẽ release sạch ngay sau handoff này.
 - Book `01-yuukibui-b12c61270c7b`, 138 trang vật lý; PDF tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn kiểm lại `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
@@ -255,3 +274,15 @@ Xác nhận release lượt tiếp 2026-11-11T00:12:20.526936+00:00: CLI `claim=
 
 
 Release xác nhận 2026-11-11T00:31:16.656522+00:00: `claim=null`, `build_current=true`, 44 verified / 94 pending / 0 issue.
+
+## QA cuối p11–14: bổ sung anchor đầu khối (2026-11-11)
+
+- Worker `production_book_11_anchor_repair`, claim token `production_book_11_anchor_repair_20261111_01`; chỉ sửa bốn trang này. PDF nguồn `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`, SHA-256 `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`, không đổi. Không sửa ROOT_AUDIT hay trang khác.
+- Đã mở ảnh gốc toàn trang p11, p12, p13, p14 và xác nhận vị trí khối đầu. Chỉ thêm `<a id="pNNNN-b001"></a>` cùng dòng trống ngay sau metadata, lần lượt trước `## 語句の使い方`, `## 目 次`, `第九課 予約 … 49`, `Chữ đầu trang (biên tập): 第一課`. Giữ nguyên mọi anchor `b002+`; không đổi chữ Nhật/ruby/spacing/emphasis hoặc nội dung khác.
+- Bản Markdown trước sửa lưu trong `.cache/renders/01-yuukibui-b12c61270c7b/anchor-repair-original-p0011.md` đến `p0014.md`. Kiểm byte: xóa đúng anchor mới và hai LF trong từng trang sau sửa khôi phục nguyên byte trước sửa; SHA-256 cũ → mới:
+  - p11 `104841eaf459dfc83c60f1769780a7ce72575ecd801bcd8503a83f2877d42408` → `8a35c9d59e8c227d11db4098c004c784289ffc3736aea0003cf717cbba08a902`.
+  - p12 `073e77f73b4bf351d9a99413111b8d07720777c8b794ef3317fa19ed2c99caf0` → `36a3244059e1b42dc5513aff7642f660c80a6cae6c6acd2142e4ad4f74491b1c`.
+  - p13 `b96b841f03801cb29671c572782f8f6682c069380585e44897b2bca7b434126d` → `74f46f1d31fc5282d03a8f5e04a1ffbac6469085c157b9ad2f4e8d5d5c5fb23b`.
+  - p14 `24c9b505a18fe143da4bd1e701e305fb90b299c498f9c6f13238a1afcae2d721` → `8f3ee0350f022b6358246eef60c73fec970baf1b8a451b814f2cdb2422e13c4f`.
+- Hash ảnh render p11–14 không đổi, lần lượt `e13a8a04bebac25eedf94cb6717d4f1b0d3859c6addd26c5a601ca4e24b9eaa8`, `f48ccff20747747a754d8fac74eb8c1c6789ba3f0be78ede58003369a2386bd5`, `ad359ffca47b81d4c23b9e256ea7acb42fd3e3ee3ce934e90d5dab80a5489ee5`, `612a0ef8a0d88cd881d2ea61253aed73dff9fcee794f27837864bd0cb1542b80`. Không render lại.
+- CLI đã record và reverify từng trang với evidence riêng, sau đó reconcile/build: 138/138 verified, 0 issue, build complete. Review lượt này chỉ kiểm vị trí anchor, delta byte và hash nguồn/render. Evidence của worker trước ghi đã đối chiếu toàn trang; lượt này không đọc lại từng kana. Root cần readback và quyết định acceptance/commit.
