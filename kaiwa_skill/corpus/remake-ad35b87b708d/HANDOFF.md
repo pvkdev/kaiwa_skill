@@ -2,15 +2,17 @@
 
 - Source: `book/BJT/ロールプレイで学ぶ ビジネス日本語 - 中級レベル ―就活から入社まで― [Remake].pdf` (140 physical pages).
 - Source SHA-256: `ad35b87b708de387488152e8fd1aca16e63e37d28502d7901ef8e8d7d0891089`.
-- Latest worker: `production_book_12_root_cont2` (`gpt-6-sol/high`); claim released at handoff.
-- Status at handoff: **88 verified, 52 pending, 0 rendered, 0 draft, 0 needs_review, 0 invalid**; `build_current=true`, `complete=false`, coordinator acceptance pending.
-- Verified physical pages: **p0001–p0088**. Resume at **p0089** after status/reconcile and a new unique claim.
+- Latest worker: `production_book_12_root_cont3` (`gpt-6-sol/high`); claim released at handoff.
+- Status at handoff: **113 verified, 27 pending, 0 rendered, 0 draft, 0 needs_review, 0 invalid**; `build_current=true`, `complete=false`, coordinator acceptance pending.
+- Verified physical pages: **p0001–p0113**. Resume at **p0114** after status/reconcile and a new unique claim.
 - Text-only outputs: `book.md`, `search.jsonl`, `build.json`; authoritative checkpoints are `pages/pXXXX.md` and `pages/pXXXX.json`.
-- Latest build (2026-11-11T02:45:39.015832+00:00): `book_sha256=5541187c6d86d489c3eb9e769579bbdd8718e777289b21d93402739f7abb8f97`; `search_sha256=f814bdc374365a6d17d24cc434ba833adac04d18a9f27993d0d0e0c0d3d8e0c0`.
+- Latest build (2026-11-11T03:15:32.555157+00:00): `book_sha256=4036bd5f3bce28ccb3c7f0fbbde7c821ac33aee34e08e422bae7dfa6bf98c123`; `search_sha256=bf10cb3e177aa873762c7ea3055b83d6147e225bfcd54ca31e88f48be25649f2`.
 
 ## Review and source fidelity
 
 Every completed PDF page was visually opened (full page and enlarged crops where needed) and compared against its Markdown in both directions. Source pages are image scans and have no usable selectable text. Reviews include all visible languages; ruby spans and occurrences; bold, underline, blanks, and glossary stars; tables, role cards, diagrams, icons and footers; printed page numbers and watermark overlays independently. Inferred continuation headings or speaker labels are explicitly marked `(biên tập)`. No open readability issue is recorded.
+
+Worker `production_book_12_root_cont3` claimed with token `cont3-20261111-unique-89` and completed p89–113. Each page was opened full and with enlarged text or ruby crops, transcribed manually, recorded and verified with page-specific evidence. Unit 5 case study continued through p99, Unit 6 began on p100, and p113 is the Unit 6 case study. The multirow schedules and asymmetric role facts on p104–106 were kept as tables and text; p105's merged 10–12 leave cell is explicitly described. p112's email subject/body writing area was left blank. All glossary stars in the new pages use exactly one literal `\*`; no exercises were solved. p114–140 have no transcription yet. The claim is released for the next worker.
 
 Root separately QA sampled p10, p16, p20, p28, p32, p50, p60, and p68; no source-word correction was required. The p28 inferred-heading label was corrected and reverified. Source p16 prints `Dongseo` in Vietnamese while p10 prints `Tozai` in English; both are preserved.
 
@@ -110,3 +112,28 @@ The source PDF and `bunpou_skill/` remained read only. No Git operation was perf
 | p0086 | `12483523bb001128aceb3316cc283189a78b44cadcb8d26cc8bf8444aef966ad` |
 | p0087 | `31ac54752c1cfdc145f99ef015c5157c6f6bd0adf482a68b9366275c4cc36c5f` |
 | p0088 | `90130aafd8f2af241da42ab03f7150f045baf7645b22a7cdb42e0515008e8f1f` |
+| p0089 | `c1d2a9519e2b6b9f5c6c317bec306749b7c3c4681b02df370e0e3fc0927ec1dd` |
+| p0090 | `1213249f6f23897130217bb3c615bbc5634a5ac5d67b6c39c11bebfbc5b3e183` |
+| p0091 | `7c9329c0cf1b1bfb733f142daf8da116b38208401a7c9c2a6fee99fc87beb8ce` |
+| p0092 | `adaf42b115bf905a56b725636819117932c465bc97a41e29dcfa86a23eee89c5` |
+| p0093 | `b583604952189d9b3a79deea5e6faef71a759de9af29dd24befe99998fb97e66` |
+| p0094 | `5f21bf34887e22ea96f637aef95f65bd206b24b40034cc290f0223122be755cb` |
+| p0095 | `44d05f8bd9601a3f90cabe55becadcaed3c12c796207ffc0cfb935d99f032941` |
+| p0096 | `6ef3ac6cb3f791b0bf65ef974a49ac2a4b8fe8a136e7a30fedfd6c46692efdb0` |
+| p0097 | `ebd78551163f4f32c7d03f40ec054b7e8f2365def17f72e02d3d3bee1e8b44a1` |
+| p0098 | `77cba3a424b1b9538218b5ee21578cb24258d8dace748ae0fff093332b343680` |
+| p0099 | `4f78d6fefe2f99c133661b973cf428af564e729b3f02c0911a1541437627a80f` |
+| p0100 | `ef6dd8a24a9a37fbebd1838af65653f293363241ce5c4e2dba9963f45531fb9d` |
+| p0101 | `c8e6e4be29b675519b2eb9ad1f5d49edd9463e177e47f21e9f052110d500c7b0` |
+| p0102 | `a6b7afcf29822a0cdf141b1a562683e4256e031ea0843ca326a702298ebe1824` |
+| p0103 | `b7af9cceb53b4756c15845906eeab5a3e7aa35c46ce1c9c97ca73bd7eafb9edb` |
+| p0104 | `fdcd33ee845b30f0d4914a43af88729bbf505c239d106184d372c7a0b7cab496` |
+| p0105 | `6520a533cc4f137690b3b189438a1baa6a75f3d6d85683d98f3d8f99db25feb0` |
+| p0106 | `38420ed2ab8e876f8d8e165e5b09507e29f86acdfad6b460f3b1c1febdccc37f` |
+| p0107 | `37edd9cd2488d7da4914480a6f2a1ba60600afac12afb78f34f4e154d53e6cf7` |
+| p0108 | `e8b67b8ad6558f5f194bb4ac1ff7d59a4d21a25caafe1621209186fd6ffe09af` |
+| p0109 | `c5fe244c64e4a1923522afe91e37318284c80e0f4c6d6b9360c312f6248263d3` |
+| p0110 | `463ab20d215f507982cdb4ca6b832b7aaf1e25b92e193566a4de4a8084eb42f3` |
+| p0111 | `598998a60871c04a7533d05133b1671c0f6537ec2d6326678e9b8d3c920fa292` |
+| p0112 | `54338145b21be8b6a772a099a5944c43984250b1821e92f3673f3c193eee9a46` |
+| p0113 | `d12bb62527a4259166718e42b9096466156627e78beae8ec689fc91ff34b4869` |
