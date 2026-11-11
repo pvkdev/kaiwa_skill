@@ -1,3 +1,29 @@
+# Bàn giao mới nhất book11 — WIP p1–86; p87 đã render
+
+- Cập nhật: 2026-11-11 JST; worker `production_book_11_root_cont2`, `gpt-6-sol/high`, điều phối trực tiếp `/root`.
+- Book `01-yuukibui-b12c61270c7b`, 138 physical pages; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt này chuyển mới **p65–86 (22 trang)**, mỗi trang đã mở full scale2 và direct4 trên/dưới, so hai chiều với Markdown, verify từng trang. p75, p79, p80, p86 thêm direct8 để phân biệt kana hoặc bold. Đã reconcile/build.
+- Trạng thái sau build: **86/138 verified (p1–86), 1 rendered (p87), 51 pending (p88–138), 0 draft/needs_review/invalid, 0 issue/error**, `build_current=true`; sách còn partial, chưa complete/accepted. `book.md`/`search.jsonl` chỉ gồm p1–86. SHA-256 `build.json`: `868824b19115f698a34c2db71e3d81feb8d35a78e90c7badec38b38db3a6d7b2`.
+- p1–64 đã verified trước, không thay nội dung. Sửa riêng p75 theo QA root: ruby `決＝けっ` trong `決算月`, crop trực tiếp scale8 thấy っ nhỏ; ghi/verify lại. Token lượt này `book11-root65-20261111-a91e`, sẽ release sạch sau handoff. Không Git, không sửa tools/config/sách khác. Ảnh/scratch ở cache riêng.
+
+## Nội dung và điểm nguồn cần giữ ở p65–86
+
+- p65–67 kết 第九課: `レストランの予約` 14 lượt; `六日` đọc nguồn `六＝むい；日＝か`; số khách 10, 5000円, 座敷, đồ uống tính riêng. Sau đó 語句 1–7, bold đúng từng occurrence.
+- p68–75 第十課 `お土産`: p69 bản thoại 12 lượt giữ `五日間＝いつかかん`; p70 類話 1–2 có ký hiệu dòng lề phải `1…` bị cắt scan, chỉ ghi phần nhìn thấy; p71 類話3 rồi 語句. p72 mẫu8 bold chỉ `(さ)` và `よ` ở cuối theo crop. p75 là bảng `年中行事` đủ 12 tháng, ô trống, các ngày lễ lịch sử y nguồn. Tháng 7 có **ba dòng riêng** `7日 七夕`, `中元`, `お盆`, không thêm `お` vào 中元. Tháng 3 `決＝けっ` đã sửa bằng direct8; giữ `23日ごろ`.
+- p76–81 第十一課 `連絡`: p76 khung 談話型 và ô trống; p77 本文 `出先から会社に連絡する` 10 lượt; p78 hai 類話 (trễ hẹn và 欠勤); p79–81 語句 1–12, mục9 nối p80→81. p80 ruby in dưới `今週中` là `こんしゅうちゅう` (khác đọc thông dụng), đã xác nhận direct8; đừng sửa thành じゅう.
+- p82–86 mở 第十二課 `おわび`: p82 khung 談話型; p83 `日にちをまちがえる` 11 lượt với `四日＝よっか`/`八日＝ようか`; p84 類話1 và đầu 類話2 (`借りた物をなくした時`), p85 kết hai lượt rồi 語句 1–4, p86 語句 5–9. p86 crop direct8 xác nhận `二日酔＝ふつかよい` và bold ví dụ `飲ま**なければよかった**`.
+- Đã giữ mọi số lề/trang in, watermark, furigana nguồn, vai, ví dụ, dấu câu, blanks và bold nguồn trong p65–86. Mỗi trang có anchor `b001` trước đơn vị nội dung đầu. Không có vùng scan cần `needs_review` trong p65–86.
+
+## Tiếp tục ngay
+
+- **Physical p87 (trang in74) là trang đầu tiên chưa chép**: ledger đã render scale2; file cache `p0087.png` đã mở preview. Đây là bản đồ Nhật và bảng đủ 47 `都道府県名 (a) と県庁所在地名 (b)`, vùng A–H, số trên bản đồ và các nhãn biển; cần direct4/crops và chuyển hết quan hệ bảng/bản đồ thành text/table, không nhúng ảnh. p87 hiện **rendered**, chưa draft/verify; p88–138 pending. Đừng bỏ bảng/bản đồ chỉ vì khó.
+- Worker tiếp theo đọc rules/core/HANDOFF, kiểm source hash/status/claim thật, claim token mới sau release. Giữ verified p1–86. Tiếp tục từng trang full/crop thực, đối chiếu hai chiều, exact ruby/emphasis, b001 và checkpoint riêng. Trường hợp bất định thật thì `needs_review` cụ thể rồi đi trang khác.
+- Root giữ QA/Git/commit/acceptance. Handoff này chỉ là checkpoint worker, không có quyền xác nhận hoàn tất sách.
+
+---
+
+# Lịch sử checkpoint p1–64
+
 # Bàn giao mới nhất book11 — WIP p1–64
 
 - Cập nhật: 2026-11-11T01:37:58.120054+00:00; worker `production_book_11_sol_cont_root45`, `gpt-6-sol/high`, điều phối trực tiếp `/root`.
