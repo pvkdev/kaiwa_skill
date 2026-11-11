@@ -9,3 +9,7 @@ Root kiểm độc lập theo mẫu, không tuyên bố rà toàn bộ bản d�
 - Mọi chapter trong kế hoạch được giữ theo thứ tự; coverage/hash/anchor kiểm bằng công cụ riêng, không thay việc đọc ảnh.
 
 Phạm vi hoàn tất: 89 trang PDF được cung cấp. Không có CD/kịch bản riêng trong đầu vào này; không tự phục dựng hội thoại chỉ có trong audio. Các issue của nguồn vẫn nằm trong hồ sơ biên tập và đơn vị liên quan.
+
+## Vòng độc lập toàn sách
+
+Worker khác tác giả `/root/clean_namachuukei_sho` đã mở ảnh/so raw snapshot và bản clean đủ89/89 trang; ghi từng phần trong `_meta/independent-review.md`. Không phát hiện lỗi rõ cần sửa nên giữ chapters. Ranh giới cuối được kiểm lại: Bài8 PDF79–87, hậu ký/tiểu sử/ấn bản PDF88–89. Hash các chapter được rà nằm trong book.json.completion.independent_review; sửa sau đó cần rà lại phần liên quan. Phạm vi ảnh theo mẫu của riêng root vẫn như trên.
