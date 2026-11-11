@@ -1,5 +1,13 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
+## Root đang giữ lượt điều phối — 2026-11-11
+
+Người dùng nhắc rằng gửi final làm vòng giao việc ngừng sau các batch. Root đang giữ lượt hoạt động, không gửi final chỉ để báo tiến độ; chờ worker/QA/followup liên tục cho đến hết phạm vi, yêu cầu dừng hoặc runtime/usage blocker thật. Ba worker hiện tại: sách11 `/root/production_sol_resume/production_book_11_sol_cont` từ p45 sau44verified; sách12 `/root/production_book_12_sol` từp21 sau20verified; sách13 `/root/production_book_13_sol`145trang mới bắt đầu. Khi worker báo hoàn tất batch, root xác minh claim release, lưu WIP riêng và nối việc ngay (có thể dùng worker mới cùng model nếu cần ngữ cảnh sạch).
+
+Sách10 đã hết pending,129verified/7needs_review, WIP commit `d0eb434`; không nghiệm thu. Root đã lưu QA p116/p121/p136 và crop p123 trong ROOT_AUDIT của sách. Sách11 đã sửa anchors/emphasis nhóm16–36; root readback mẫu16/25/35, lịch sử finding giữ trong ROOT_AUDIT. Sách12 root mẫu10/16/20; sách13 root mẫu1/8, p8 mini spread mờ vẫn needs_review.
+
+Có luồng clean/knowledge khác đang dùng cùng repo và có thể stage file; root ingest dùng `git commit --only -- <đường-dẫn-của-output>` để không gộp index của luồng khác, không sửa VERSION/CHANGELOG đang được luồng kia thay đổi. Commit `a73f4f3` đã gộp nhầm các file staged của clean cùng hai dòng quy tắc keep-alive; không mất hoặc sửa dữ liệu clean, không rewrite lịch sử để tránh ảnh hưởng luồng song song. Chỉ stage/commit đường dẫn ingest sở hữu từ đây.
+
 ## Phân công hiện tại — root điều phối trực tiếp (0.2.5)
 
 Người dùng yêu cầu dừng sub điều phối riêng để dành ba slot cho worker. `/root/production_sol_resume` đã bị interrupt có chủ đích; không restart sub này. Root đảm nhiệm QA, cập nhật roster, Git và giao lại worker khi hết lượt. Ba worker Sol/high đang chạy: sách10 `/root/production_sol_resume/production_book_10_sol_cont5` tiếp p113–136; sách11 `/root/production_sol_resume/production_book_11_sol_cont` tiếp từ p36 sau checkpoint35/138; sách12 `/root/production_book_12_sol` bắt đầu sách140 trang `remake-ad35b87b708d`. Quan hệ cha trong tên agent10/11 là lịch sử; cả hai đã nhận báo trực tiếp root. Không dừng worker vì parent coordinator bị dừng.
