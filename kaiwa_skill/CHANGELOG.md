@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 — 2026-11-11
+
+- Bổ sung workflow clean song song ingest: phát hiện nguồn sẵn sàng, snapshot văn bản và checkpoint từng chương.
+- Tiếp quản sau gián đoạn giữ chương hợp lệ, phát hiện thay đổi nguồn/đầu ra và nêu phần cần đối chiếu lại; không tự chạy nền hoặc ghi vào corpus.
+
 ## 0.3.0 — 2026-11-11
 
 - Thêm skill `kaiwa-fork-knowledge`: biên soạn tầng kiến thức Nhật–Việt từ corpus, đối chiếu PDF, tách provenance và giữ nguyên ingest.

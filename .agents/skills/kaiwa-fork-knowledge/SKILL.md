@@ -1,6 +1,6 @@
 ---
 name: kaiwa-fork-knowledge
-description: Tạo tầng kiến thức kaiwa tiếng Nhật bằng tiếng Việt từ corpus Markdown đã ingest, đối chiếu PDF gốc và giữ provenance riêng; dùng cho bản học sạch, không dùng để ingest PDF nguyên văn.
+description: Fork kiến thức kaiwa Nhật–Việt từ corpus đã ingest, đối chiếu PDF, tìm sách sẵn sàng và tiếp tục clean theo checkpoint; không dùng để ingest PDF nguyên văn.
 ---
 
 # Fork kiến thức từ corpus kaiwa
@@ -20,5 +20,7 @@ description: Tạo tầng kiến thức kaiwa tiếng Nhật bằng tiếng Vi�
 ## Đầu ra và QA
 
 Đọc [hợp đồng đầu ra](references/output-contract.md) cho **mọi fork** trước khi viết chapter hoặc metadata. Chỉ gọi bản dịch đã được kiểm độc lập sau khi reviewer đối chiếu PDF và sửa các vấn đề còn mở. Validator chỉ kiểm cấu trúc và dấu hiệu sót, không chứng minh dịch đúng hay đã đọc ảnh. Khi sửa nội dung sau rà soát, rà soát liên quan phải làm lại. Pilot chỉ cho phép thử phạm vi đã chốt; không tự mở rộng sang full khi pilot đạt. Full cần phạm vi và phân công mới từ coordinator.
+
+Đọc [chạy song song và khôi phục](references/parallel-and-resume.md) khi tìm sách ingest xong để clean, bắt đầu công việc dài hoặc tiếp quản sau gián đoạn. Dùng `scripts/clean_progress.py --help` để xem CLI thực tế. Tiến độ ingest và clean độc lập; không sửa hoặc giữ lock ingest để điều phối clean. Mỗi sách chỉ có một tác nhân clean đang ghi; coordinator chia ngân sách worker giữa hai giai đoạn.
 
 Đọc [kế hoạch pilot](references/pilot-plan.md) khi triển khai hoặc nghiệm thu pilot sách `日本語会話-基本文型８８`; với sách khác, chọn phạm vi và bố cục theo nội dung thật của sách.
