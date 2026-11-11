@@ -1,8 +1,14 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
+## Phân công hiện tại — root điều phối trực tiếp (0.2.5)
+
+Người dùng yêu cầu dừng sub điều phối riêng để dành ba slot cho worker. `/root/production_sol_resume` đã bị interrupt có chủ đích; không restart sub này. Root đảm nhiệm QA, cập nhật roster, Git và giao lại worker khi hết lượt. Ba worker Sol/high đang chạy: sách10 `/root/production_sol_resume/production_book_10_sol_cont5` tiếp p113–136; sách11 `/root/production_sol_resume/production_book_11_sol_cont` tiếp từ p36 sau checkpoint35/138; sách12 `/root/production_book_12_sol` bắt đầu sách140 trang `remake-ad35b87b708d`. Quan hệ cha trong tên agent10/11 là lịch sử; cả hai đã nhận báo trực tiếp root. Không dừng worker vì parent coordinator bị dừng.
+
+Snapshot CLI khi chuyển giao: 850 verified, 3703 pending, 43 needs_review, 1 rendered trên4597 trang; 7 sách accepted. Đây là snapshot, tiến độ mới lấy từ file thật. Toàn bộ các mốc hai worker phía dưới là lịch sử. Chỉ root dùng Git; worker không commit hoặc spawn. Bản chỉ thị root trực tiếp thay thế chỉ thị tạo sub coordinator cũ.
+
 Người dùng đã yêu cầu chuyển đổi tất cả PDF. Gate pilot PASS nằm tại `kaiwa_skill/pilot/REVIEW.md`; skill hiện tại 0.2.4 (điều phối và mọi tác nhân sản xuất dùng Sol/high; quy tắc nội dung 0.2.3 giữ nguyên), output chỉ text. Danh sách nguồn và phân công chuẩn: `roster.json`; bản dễ đọc: `ROSTER.txt`. Đường dẫn nguồn trong roster tương đối từ `kaiwa_skill/`; đường dẫn corpus tương đối từ repo.
 
-Điều phối `gpt-6-sol/high`; chỉ hai worker `gpt-6-sol/high` cùng lúc, mỗi worker đúng một PDF. Chạy các lệnh từ gốc repo hiện tại. Root chat không dùng Git; coordinator chịu trách nhiệm commit tuần tự theo sách. Không sửa `bunpou_skill/` hoặc PDF nguồn.
+Hiện tại root trực tiếp điều phối, QA và commit tuần tự theo sách; không có sub điều phối riêng. Tối đa ba worker `gpt-6-sol/high` cùng lúc, mỗi worker đúng một PDF. Chạy các lệnh từ gốc repo hiện tại. Không sửa `bunpou_skill/` hoặc PDF nguồn. Các mốc hai worker phía dưới là lịch sử, không phải cấu hình hiện hành.
 
 ## Tiếp tục
 
