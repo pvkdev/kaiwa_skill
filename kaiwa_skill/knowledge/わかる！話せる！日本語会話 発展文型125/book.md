@@ -645,7 +645,7 @@ Mẫu: 「わからない」 được nói thân mật thành 「わかんない
 2. **A (JP):** さっきの店員、熱心だったね。 **A (VI):** Nhân viên bán hàng lúc nãy nhiệt tình nhỉ. **B (JP):** うん。熱心というか、しつこいというか。 **B (VI):** Ừ. Nhiệt tình thì có, mà cũng hơi dai dẳng nữa. **A (JP):** ちょっとね。 **A (VI):** Hơi quá thật. **B (JP):** ああいうタイプはどうも信用できないんだよね。 **B (VI):** Kiểu người ấy tớ cứ thấy khó tin tưởng.
 3. **A (JP):** どうやら彼が壊しちゃったみたい。 **A (VI):** Có vẻ chính anh ấy đã làm hỏng nó. **B (JP):** ほんとに？ なんでわかるの？ **B (VI):** Thật à? Sao cậu biết? **A (JP):** 最近、ほかに誰もあの部屋に入ってないんだって。 **A (VI):** Nghe nói gần đây chẳng có ai khác vào căn phòng ấy.
 
-**MEMO:** 「具合」 ở đây chỉ tình trạng sức khỏe hoặc thể trạng; xem [mục 100「具合」](26-part3-kaiwa-kotoba.md#u-125-part3-100).
+**MEMO:** 「具合」 ở đây chỉ tình trạng sức khỏe hoặc thể trạng; xem [mục 100「具合」](#u-125-part3-100).
 
 <a id="u-125-part1-ra-to-n-column"></a>
 ### コラム：「ら行の音→ん」の例

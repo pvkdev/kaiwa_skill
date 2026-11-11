@@ -11,3 +11,5 @@ Tác giả trả phần giải thích/基本パターン về sauモデル会話
 **Nguồn còn thiếu:** PDF120/unit67 có lượt A cuối ở cột Anh–Trung nhưng không có ở Nhật/romaji. Root mở xác nhận; giữ nghĩa Việt có nhãn nguồn riêng, không dựng Nhật. Page120/unit/chapter17 giữ needs_review. Không pending/draft/stale. Build full30/143; validate --allow-source-issues **0 lỗi/2 cảnh báo**, cùng issue120 ở page/unit. Bản đọc giữ cảnh báo và liên kết source-issues.
 
 Inventory có99 nhãn CD1–99, gắn vị trí bài và nguồn. Bài một trang không có icon mới không bị gán track đoán. Chưa xác nhận số đĩa hoặc file nghe thực tế (not_checked). Colophon224: ISBN9784863922440, lần đầu2015-10-10, in lần2 ngày2016-11-10, Jリサーチ出版. Hash bản đọc và từng chapter ởcoordinator-review.json. Đủ phạm vi không có nghĩa không còn lỗi chưa phát hiện.
+
+Bản vá điều hướng40eb2c2: bản gộp chuyển 1 link file chương thành fragment nội bộ; đã kiểm mọi anchor đích tồn tại. Chữ học, file chương, units, search, bằng chứng trang và audio không đổi; phạm vi rà nghĩa không được nâng. Hash mới `abf1e360b48a8b7ee7c0b98748da4def3dd0cd2f28d9cc4afe020aca9791dfd7`; validate0lỗi/2cảnhbáo nguồn như trước.
