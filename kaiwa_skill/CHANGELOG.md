@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.3 — 2026-11-11
+
+- CLI tiến độ clean xuất UTF-8 trên Windows để tên sách Nhật không làm lệnh báo lỗi mã hóa sau khi checkpoint đã ghi thành công.
+
 ## 0.3.2 — 2026-11-11
 
 - Làm rõ clean là biên tập dễ đọc, giữ đầy đủ nội dung, mạch triển khai, bài tập và các phần đặc trưng từng sách; không tuyển chọn kiến thức hoặc ép khuôn bài học.
