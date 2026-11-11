@@ -19,6 +19,8 @@ Nếu cột dịch có thêm lượt thoại mà cột Nhật và romaji không 
 
 Lỗi thực tế từ pilot: giữ thoại Nhật của bài ôn nhưng thay phần Việt bằng vài câu tóm tắt vẫn làm mất bản dịch. Dịch đầy đủ từng lượt đã in, giữ ô trống tương ứng; nếu cần, đặt bản dịch ở phần riêng sau đề. Với đáp án là mảnh câu ngoài phạm vi đề pilot, dịch đúng độ mở của mảnh câu, không suy thêm chủ thể hoặc hoàn cảnh.
 
+Trước checkpoint, đọc riêng phần Việt của từng đoạn nói/hội thoại: người học phải thấy đủ lời người nói thực sự nói, gồm cả lời chào, dè dặt và số①②. Câu kiểu “A tự giới thiệu…, B chào đón…” là tóm tắt, không thay cho lời dịch A/B/C. Kiểm cả khung blockquote và bảng thay thế, không chỉ các đoạn có nhãn JP/VI mà parser nhận ra. Nếu QA phát hiện lỗi loại này, rà ngược mọi phần đã viết cùng kiểu trước khi bàn giao, không chỉ sửa từ chương tiếp theo.
+
 ## Làm theo phần có thể khôi phục
 
 1. Xác minh claim/phân công hiện tại. Mở bìa/trang tên và mục lục để xác nhận tên sách, ấn bản và cấu trúc thật, không lấy filename làm tên. Chia chapter theo sách; lập scope tường minh cho pilot hoặc full. Metadata không được quảng cáo pilot là full.
