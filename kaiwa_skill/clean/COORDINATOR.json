@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T12:29:32.492769+00:00",
+  "updated_at_utc": "2026-11-11T12:51:59.065261+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -25,11 +25,11 @@
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
-      "stage": "full_pdf_direct_active",
-      "book_id": "30-f497459c2a83",
-      "source_pdf": "kaiwa_skill/book/BJT/にほんごで働く!ビジネス日本語30時間.pdf",
-      "title": "にほんごで働く！ビジネス日本語30時間",
-      "scope_pdf_pages": 181
+      "stage": "full_pdf_direct_initializing",
+      "book_id": "remake-5779739d0a4b",
+      "source_pdf": "kaiwa_skill/book/BJT/ロールプレイで学ぶビジネス日本語 - 初中級レベル－場面に合わせて適切に話そう－ [Remake].pdf",
+      "title": "初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
+      "scope_pdf_pages": 227
     },
     {
       "role": "worker_3",
@@ -202,11 +202,12 @@
       "source_sha256": "f497459c2a8324ee59114e03bee6bbef58e54d44d763d9169e170f6d840a905e",
       "page_count": 181,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_sho",
+      "owner": "/root",
       "title": "にほんごで働く！ビジネス日本語30時間",
-      "knowledge_dir": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間"
+      "knowledge_dir": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間",
+      "knowledge_commit": "62fd98b"
     },
     {
       "book_id": "remake-ad35b87b708d",
@@ -234,8 +235,11 @@
       "source_sha256": "5779739d0a4b7f03ce3763c7f42679347991902f957d017b665f91b4ffec8496",
       "page_count": 227,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_initializing",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_sho",
+      "title": "初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
+      "knowledge_dir": "kaiwa_skill/knowledge/初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―"
     },
     {
       "book_id": "remake-ad312498c548",
@@ -723,6 +727,11 @@
       "book_dir": "kaiwa_skill/knowledge/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
       "commit": "6f689ed",
       "coordinator_review": "author full; root17 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間",
+      "commit": "62fd98b",
+      "coordinator_review": "author full; root40 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -1095,16 +1104,15 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 181,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 151,
-        "pending": 30
+        "author_checked": 181
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 11,
-        "pending": 4
-      }
+        "author_checked": 15
+      },
+      "knowledge_commit": "62fd98b"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話お決まり表現180",
@@ -1117,14 +1125,14 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 142,
+        "author_checked": 154,
         "needs_review": 1,
-        "pending": 66
+        "pending": 54
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 21,
+        "author_checked": 22,
         "needs_review": 1,
-        "pending": 9
+        "pending": 8
       }
     },
     {
@@ -1138,14 +1146,15 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 79,
+        "author_checked": 130,
         "needs_review": 1,
-        "pending": 88
+        "pending": 37
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 3,
+        "author_checked": 5,
         "needs_review": 1,
-        "pending": 6
+        "draft": 1,
+        "pending": 3
       }
     }
   ],
@@ -1166,9 +1175,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 19,
-  "completed_full_source_pages": 2294,
-  "completion_count_definition": "19 released supplied-PDF scopes/2294 pages: initial7 independently reviewed in full; later12 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 20,
+  "completed_full_source_pages": 2475,
+  "completion_count_definition": "20 released supplied-PDF scopes/2475 pages: initial7 independently reviewed in full; later13 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",
