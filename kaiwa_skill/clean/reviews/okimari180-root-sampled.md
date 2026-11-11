@@ -15,3 +15,5 @@ Root mở thêm PDF 103, tổng 12 trang, so trọn unit 84 風当たりが強�
 Root mở thêm PDF 129, tổng 13 trang, so trọn unit 110 手に負えない: đề mục 子供たちの世話, bốn lượt Nhật–Việt, hai chú từ và mini-column 負ける đều đủ, đúng nguồn đã mở. Số nhãn mini thực sự chỉ nhìn thấy 3; không tự đổi thành 29 theo thứ tự suy ra. Giữ cả nghĩa thua và giảm giá cùng 1000円負ける／もう少し負けてもらえませんか. Yêu cầu chuyển lời giải thích biên tập “nhãn in: 3” ra hồ sơ, trong bài chỉ hiển thị số nhìn được bình thường. Đây không phải bất định kiến thức cần needs_review.
 
 Root đọc lại sau sửa: tiêu đề mini hiện giữ số 3 bình thường, không còn chèn “nhãn in” vào phần học.
+
+Root mở thêm168, tổng14 ảnh nguồn. So trọn biểu thức149 踏んだり蹴ったり: hội thoại1 thật có hai nhãnA trong Nhật, Anh làA/B. Output giữ nguyên nhãn và cảnh báo hẹp, đủ nghĩa/4lượt/chú từ離婚・文句を言う. Đây là vấn đề nguồn thứ hai được root xác nhận, tách khỏi53; không tự đổi vai.
