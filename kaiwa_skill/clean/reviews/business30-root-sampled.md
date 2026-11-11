@@ -25,3 +25,7 @@ Root mở thêm22, tổng22 trang. Ví dụ bài luyện[A]22 và[B]23 ban đầ
 Đã đọc bảng trọng âm mới dùng↑↓, đối chiếu lại các mẫu đã phóng14: 海外か↓いがい,研修生け↑んしゅ↓うせい,新幹線し↑んか↓んせん,ファ↓クス phù hợp. Root bắt thêm lỗi kanaごうにん ở後任 do khôi phục bảng dấu; worker sửaこ↑うにん, root đọc lại. Đây là kiểm một số hàng phát âm, không phải full independent accent audit toàn sách. Không suy dấu từ từ điển ngoài nguồn.
 
 Kiểm chương01 bằngvalidate_chapter sau các sửa:0 lỗi/0 cảnh báo; chỉ kiểm cấu trúc chương, không thay fullbuild/validate hoặc kiểm ngữ nghĩa.
+
+Root mở thêm61/62/76/77, tổng26 trang nguồn. So trọn cột電話のルール61 vàホウレンソウ76, lời chào/giải thích khiêm nhường cùng5W3H giữ đủ ý. PDF77 trắng thật;61 kết Bài3/62 mở Bài4, số trang in nhảy51→53 trong PDF cung cấp, không mất đoạn kiến thức ở chỗ nối đã mở.
+
+Quiz taxi62 ban đầu chuyển sai trước/sau: output đặtB ởghếtrước/A ởghếsau, trong khi hình xe hướngtrái và hai cột là[ngườilái/A],[B/C]. Worker sửa về đúng bố cục nhìn từtrên; thang máy cũng bổ sung[A B]/[C D],cửa dưới/nút bêntrái gầnC. Root đọc lại output sau sửa, khớp hình62; các ô chọn người vẫn trống, không tự giải. Đây là ví dụ cần giữ quan hệ hình, không chỉ liệt kê nhãn.
