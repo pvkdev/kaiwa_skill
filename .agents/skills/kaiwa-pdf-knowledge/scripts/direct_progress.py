@@ -20,7 +20,7 @@ from validate_fork import (Report, SHA256, UNIT_ID, check_build,  # noqa: E402
                            validate_chapter)
 
 BLOCK = re.compile(r"p(\d{4})-b\d{3}")
-STATUSES = ("draft", "author_checked")
+STATUSES = ("draft", "needs_review", "author_checked")
 CHECKS = ("visual_review", "text_complete", "reading_order", "japanese_accuracy")
 
 
@@ -207,15 +207,116 @@ def page_path(book: Path, page: int) -> Path:
 def page_refs(rows: list[dict], page: int) -> dict[str, set[str]]:
     refs: dict[str, set[str]] = {}
     for unit in rows:
-        for source in unit.get("source", []):
+        sources = unit.get("source")
+        for source in sources if isinstance(sources, list) else []:
+            if not isinstance(source, dict):
+                continue
             if source.get("pdf_page") == page:
-                for block in source.get("pdf_blocks", []):
-                    refs.setdefault(block, set()).add(unit["unit_id"])
+                blocks = source.get("pdf_blocks")
+                for block in blocks if isinstance(blocks, list) else []:
+                    if isinstance(block, str) and isinstance(unit.get("unit_id"), str):
+                        refs.setdefault(block, set()).add(unit["unit_id"])
     return refs
 
 
+def issue_description(issue: object) -> str:
+    return issue.get("description", "").strip() if isinstance(issue, dict) and isinstance(
+        issue.get("description"), str) else ""
+
+
+def unit_issue_errors(unit: dict) -> list[str]:
+    """Source issues must identify a page and block already mapped to the unit."""
+    if unit.get("review_status") != "needs_review":
+        return []
+    uid = unit.get("unit_id", "<unknown>")
+    issues = unit.get("issues")
+    if not isinstance(issues, list) or not issues:
+        return [f"{uid}: needs_review requires concrete source issues"]
+    sources = unit.get("source")
+    mapped = set()
+    for src in sources if isinstance(sources, list) else []:
+        if isinstance(src, dict) and isinstance(src.get("pdf_blocks"), list):
+            mapped.update((src.get("pdf_page"), block) for block in src["pdf_blocks"])
+    errors = []
+    for issue in issues:
+        if not issue_description(issue) or (issue.get("pdf_page"), issue.get("pdf_block")) not in mapped:
+            errors.append(f"{uid}: issue needs description and mapped pdf_page/pdf_block")
+    return errors
+
+
+def source_issue_errors(book: Path, rows: list[dict]) -> list[str]:
+    errors = [error for unit in rows for error in unit_issue_errors(unit)]
+    by_id = {unit.get("unit_id"): unit for unit in rows}
+    pages = {source.get("pdf_page") for unit in rows
+             for source in (unit.get("source") if isinstance(unit.get("source"), list) else [])
+             if isinstance(source, dict) and type(source.get("pdf_page")) is int}
+    for page in pages:
+        try:
+            evidence = read(page_path(book, page))
+        except (OSError, ValueError):
+            continue
+        if not isinstance(evidence, dict):
+            continue
+        if evidence.get("review_status") != "needs_review":
+            continue
+        raw_blocks = evidence.get("blocks")
+        blocks = {block.get("id"): block for block in raw_blocks if isinstance(block, dict)} if isinstance(raw_blocks, list) else {}
+        raw_issues = evidence.get("issues")
+        for issue in raw_issues if isinstance(raw_issues, list) else []:
+            if not isinstance(issue, dict):
+                continue
+            bid = issue.get("pdf_block")
+            block = blocks.get(bid, {})
+            if block.get("disposition") != "included":
+                continue
+            raw_ids = block.get("unit_ids")
+            for uid in raw_ids if isinstance(raw_ids, list) else []:
+                unit = by_id.get(uid, {})
+                unit_issues = unit.get("issues")
+                if (unit.get("review_status") != "needs_review" or not any(
+                        isinstance(x, dict) and x.get("pdf_page") == page and
+                        x.get("pdf_block") == bid and issue_description(x)
+                        for x in (unit_issues if isinstance(unit_issues, list) else []))):
+                    errors.append(f"{uid}: source issue {bid} requires matching needs_review unit")
+    for unit in rows:
+        if unit.get("review_status") != "needs_review":
+            continue
+        unit_issues = unit.get("issues")
+        for issue in unit_issues if isinstance(unit_issues, list) else []:
+            if not isinstance(issue, dict) or not issue_description(issue):
+                continue
+            page, block = issue.get("pdf_page"), issue.get("pdf_block")
+            if type(page) is not int:
+                continue
+            try:
+                evidence = read(page_path(book, page))
+                page_issues = evidence.get("issues", [])
+                if (evidence.get("review_status") != "needs_review" or
+                    not isinstance(page_issues, list) or not any(
+                        isinstance(x, dict) and x.get("pdf_block") == block and issue_description(x)
+                        for x in page_issues)):
+                    errors.append(f"{unit['unit_id']}: source issue {block} lacks matching needs_review page evidence")
+            except (OSError, ValueError, TypeError):
+                errors.append(f"{unit['unit_id']}: source issue page evidence unavailable")
+    return errors
+
+
+def source_issues(book: Path, meta: dict, rows: list[dict]) -> list[str]:
+    issues = []
+    for page in meta["scope"]["pdf_pages"]:
+        evidence = read(page_path(book, page))
+        if evidence.get("review_status") == "needs_review":
+            for issue in evidence.get("issues", []):
+                issues.append(f"PDF p{page}, {issue['pdf_block']}: {issue['description'].strip()}")
+    for unit in rows:
+        if unit.get("review_status") == "needs_review":
+            for issue in unit.get("issues", []):
+                issues.append(f"Unit {unit['unit_id']}, PDF p{issue['pdf_page']}, {issue['pdf_block']}: {issue['description'].strip()}")
+    return issues
+
+
 def page_errors(book: Path, meta: dict, page: int, rows: list[dict],
-                *, require_checked: bool) -> list[str]:
+                *, require_checked: bool, allow_source_issues: bool = False) -> list[str]:
     path = page_path(book, page)
     if not path.is_file():
         return [f"p{page:04d}: missing page evidence"]
@@ -223,6 +324,8 @@ def page_errors(book: Path, meta: dict, page: int, rows: list[dict],
         item = read(path)
     except (ValueError, OSError) as error:
         return [f"p{page:04d}: invalid page evidence: {error}"]
+    if not isinstance(item, dict):
+        return [f"p{page:04d}: page evidence must be an object"]
     errors = []
     loc = f"p{page:04d}"
     if item.get("schema_version") != 1 or item.get("pdf_page") != page:
@@ -232,15 +335,21 @@ def page_errors(book: Path, meta: dict, page: int, rows: list[dict],
     if not isinstance(item.get("render_sha256"), str) or not SHA256.fullmatch(item["render_sha256"]):
         errors.append(f"{loc}: missing render SHA-256")
     if item.get("review_status") not in STATUSES:
-        errors.append(f"{loc}: review_status must be draft or author_checked")
-    if require_checked and item.get("review_status") != "author_checked":
+        errors.append(f"{loc}: review_status must be draft, needs_review or author_checked")
+    if require_checked and item.get("review_status") not in (("author_checked", "needs_review") if allow_source_issues else ("author_checked",)):
         errors.append(f"{loc}: page has not been author checked")
-    if item.get("review_status") == "author_checked":
+    if item.get("review_status") in ("author_checked", "needs_review"):
         if not isinstance(item.get("review_note"), str) or not item["review_note"].strip():
-            errors.append(f"{loc}: author_checked requires review_note")
+            errors.append(f"{loc}: reviewed page requires review_note about opened image")
         checks = item.get("checks")
-        if not isinstance(checks, dict) or not all(checks.get(key) is True for key in CHECKS):
+        if not isinstance(checks, dict):
+            errors.append(f"{loc}: reviewed page requires explicit checks")
+        elif item.get("review_status") == "author_checked" and not all(checks.get(key) is True for key in CHECKS):
             errors.append(f"{loc}: author_checked requires explicit visual/content checks")
+        elif item.get("review_status") == "needs_review" and (
+                checks.get("visual_review") is not True or checks.get("reading_order") is not True or
+                any(type(checks.get(key)) is not bool for key in CHECKS)):
+            errors.append(f"{loc}: needs_review requires visual/reading checks true and all checks boolean")
     blocks = item.get("blocks")
     if not isinstance(blocks, list):
         return errors + [f"{loc}: blocks must be a list"]
@@ -266,7 +375,7 @@ def page_errors(book: Path, meta: dict, page: int, rows: list[dict],
         disposition = block.get("disposition")
         if disposition == "included":
             ids = block.get("unit_ids")
-            if not isinstance(ids, list) or not ids or set(ids) != refs.get(bid, set()):
+            if not isinstance(ids, list) or not ids or any(not isinstance(x, str) for x in ids) or set(ids) != refs.get(bid, set()):
                 errors.append(f"{loc}/{bid}: unit_ids differ from units.jsonl source references")
         elif disposition == "excluded":
             if refs.get(bid):
@@ -280,6 +389,14 @@ def page_errors(book: Path, meta: dict, page: int, rows: list[dict],
             errors.append(f"{loc}/{bid}: disposition must be included, excluded or audio_evidence")
     for bid in refs.keys() - seen:
         errors.append(f"{loc}: unit references missing source block {bid}")
+    if item.get("review_status") == "needs_review":
+        issues = item.get("issues")
+        if not isinstance(issues, list) or not issues:
+            errors.append(f"{loc}: needs_review requires concrete source issues")
+        else:
+            for issue in issues:
+                if (not issue_description(issue) or issue.get("pdf_block") not in seen):
+                    errors.append(f"{loc}: issue needs description and existing pdf_block")
     return errors
 
 
@@ -303,13 +420,18 @@ def checkpoint(repo: Path, book: Path, page: int | None, chapter: str | None,
     state = read(state_path)
     if state["scope"] != meta["scope"] or state["source_pdf"] != meta["source_pdf"]:
         raise ValueError("Scope/source changed since init; rebase required")
-    if status == "author_checked" and not note.strip():
-        raise ValueError("author_checked requires a note describing actual visual comparison")
+    if status in ("author_checked", "needs_review") and not note.strip():
+        raise ValueError(f"{status} requires a note describing actual visual comparison")
     rows = units(book)
     if page is not None:
         if page not in state["scope"]["pdf_pages"]:
             raise ValueError("Page outside declared scope")
-        errors = page_errors(book, meta, page, rows, require_checked=status == "author_checked")
+        errors = page_errors(book, meta, page, rows,
+                             require_checked=status in ("author_checked", "needs_review"),
+                             allow_source_issues=status == "needs_review")
+        evidence_status = read(page_path(book, page)).get("review_status") if page_path(book, page).is_file() else None
+        if status != "draft" and evidence_status != status:
+            errors.append(f"Page evidence status {evidence_status!r} differs from checkpoint {status!r}")
         if errors:
             raise ValueError("; ".join(errors))
         state["pages"][str(page)] = {"status": status,
@@ -320,11 +442,27 @@ def checkpoint(repo: Path, book: Path, page: int | None, chapter: str | None,
         if chapter not in state["scope"]["chapters"]:
             raise ValueError("Chapter outside declared scope")
         deps = chapter_deps(book, chapter, rows, meta)
-        if status == "author_checked":
+        relevant = [u for u in rows if u.get("chapter") == chapter]
+        issue_errors = [error for unit in relevant for error in unit_issue_errors(unit)]
+        if issue_errors:
+            raise ValueError("; ".join(issue_errors))
+        if status in ("author_checked", "needs_review"):
+            page_statuses = []
             for p in map(int, deps["page_evidence_sha256"]):
                 entry = state["pages"][str(p)]
-                if entry["status"] != "author_checked" or entry.get("evidence_sha256") != sha(page_path(book, p)):
-                    raise ValueError(f"Page {p} must have a current author_checked checkpoint")
+                page_statuses.append(entry["status"])
+                if (entry["status"] not in ("author_checked", "needs_review") or
+                        entry.get("evidence_sha256") != sha(page_path(book, p)) or
+                        page_errors(book, meta, p, rows, require_checked=True,
+                                    allow_source_issues=status == "needs_review")):
+                    raise ValueError(f"Page {p} must have a current reviewed checkpoint compatible with {status}")
+            unit_statuses = [u.get("review_status") for u in relevant]
+            if status == "author_checked" and any(x != "author_checked" for x in unit_statuses + page_statuses):
+                raise ValueError("author_checked chapter cannot include unresolved unit/page")
+            if status == "needs_review" and (
+                    any(x not in ("author_checked", "needs_review") for x in unit_statuses) or
+                    "needs_review" not in unit_statuses + page_statuses):
+                raise ValueError("needs_review chapter requires a mapped source issue and no draft units/pages")
         state["chapters"][chapter] = {"status": status, **deps,
                                       "note": note, "updated_at": now()}
         target = chapter
@@ -336,8 +474,8 @@ def resume(repo: Path, book: Path) -> dict:
     state = read(book / "_meta/direct-state.json")
     meta = read(book / "_meta/book.json")
     result = {"blocked": False, "needs_rebase": [], "pages": {k: [] for k in
-              ("completed", "draft", "pending", "stale")},
-              "chapters": {k: [] for k in ("completed", "draft", "pending", "stale")}}
+              ("completed", "needs_review", "draft", "pending", "stale")},
+              "chapters": {k: [] for k in ("completed", "needs_review", "draft", "pending", "stale")}}
     if state["scope"] != meta.get("scope") or state["source_pdf"] != meta.get("source_pdf"):
         result["blocked"] = True
         result["needs_rebase"].append("declared scope or PDF identity changed")
@@ -357,11 +495,13 @@ def resume(repo: Path, book: Path) -> dict:
             group = "pending"
         elif (not page_path(book, page).is_file() or
               sha(page_path(book, page)) != entry.get("evidence_sha256") or
-              page_errors(book, meta, page, rows, require_checked=entry["status"] == "author_checked") or
+              page_errors(book, meta, page, rows,
+                          require_checked=entry["status"] in ("author_checked", "needs_review"),
+                          allow_source_issues=entry["status"] == "needs_review") or
               result["blocked"]):
             group = "stale"
         else:
-            group = "completed" if entry["status"] == "author_checked" else "draft"
+            group = {"author_checked": "completed", "needs_review": "needs_review"}.get(entry["status"], "draft")
         result["pages"][group].append(page)
     for chapter in state["scope"]["chapters"]:
         entry = state["chapters"].get(chapter, {"status": "pending"})
@@ -375,16 +515,29 @@ def resume(repo: Path, book: Path) -> dict:
                 current = False
             mapped_pages = set(map(int, entry.get("page_evidence_sha256", {})))
             related_stale = bool(mapped_pages.intersection(result["pages"]["stale"]))
-            group = ("completed" if entry["status"] == "author_checked" else "draft") if (
-                current and not result["blocked"] and not related_stale
+            related_unreviewed = (entry["status"] in ("author_checked", "needs_review") and
+                                  bool(mapped_pages.intersection(result["pages"]["pending"] + result["pages"]["draft"])))
+            relevant = [u for u in rows if u.get("chapter") == chapter]
+            issue_invalid = any(unit_issue_errors(u) for u in relevant)
+            unit_statuses = [u.get("review_status") for u in relevant]
+            if entry["status"] == "author_checked":
+                incompatible = ("needs_review" in unit_statuses or bool(mapped_pages.intersection(result["pages"]["needs_review"])))
+            elif entry["status"] == "needs_review":
+                incompatible = (not relevant or any(s not in ("author_checked", "needs_review") for s in unit_statuses) or
+                                not ("needs_review" in unit_statuses or bool(mapped_pages.intersection(result["pages"]["needs_review"]))))
+            else:
+                incompatible = False
+            group = {"author_checked": "completed", "needs_review": "needs_review"}.get(entry["status"], "draft") if (
+                current and not result["blocked"] and not related_stale and not related_unreviewed and
+                not issue_invalid and not incompatible
             ) else "stale"
         result["chapters"][group].append(chapter)
     result["next_page"] = next((p for p in state["scope"]["pdf_pages"] if p in
                                    result["pages"]["pending"] + result["pages"]["draft"] +
-                                   result["pages"]["stale"]), None)
+                                   result["pages"]["stale"] + result["pages"]["needs_review"]), None)
     result["next_chapter"] = next((c for c in state["scope"]["chapters"] if c in
                                       result["chapters"]["pending"] + result["chapters"]["draft"] +
-                                      result["chapters"]["stale"]), None)
+                                      result["chapters"]["stale"] + result["chapters"]["needs_review"]), None)
     return result
 
 
@@ -476,6 +629,7 @@ def build(repo: Path, book: Path) -> dict:
     rows = units(book)
     errors = [error for p in meta["scope"]["pdf_pages"] for error in
               page_errors(book, meta, p, rows, require_checked=False)]
+    errors += source_issue_errors(book, rows)
     audio = read(book / "_meta/audio.json")
     errors += audio_errors(audio, meta, rows, book)
     if errors:
@@ -490,16 +644,38 @@ def build(repo: Path, book: Path) -> dict:
                           for p in meta["scope"]["pdf_pages"]]}
     write(book / "_meta/page-coverage.json", coverage)
     result = assemble(book)
+    issues = source_issues(book, meta, rows)
+    issue_path = book / "_meta/source-issues.md"
+    if issues:
+        issue_path.write_text("# Vấn đề nguồn chưa giải quyết\n\n" +
+                              "\n".join(f"- {issue.replace(chr(10), ' ')}" for issue in issues) + "\n",
+                              encoding="utf-8")
+        book_path = book / "book.md"
+        text = book_path.read_text(encoding="utf-8")
+        heading, rest = text.split("\n", 1)
+        notice = ("\n> **Lưu ý nguồn:** Một số chữ/chi tiết trên PDF chưa xác nhận được. "
+                  "Xem [vấn đề nguồn chưa giải quyết](_meta/source-issues.md). "
+                  "Bản này chưa hoàn tất xác nhận nội dung.\n")
+        book_path.write_text(heading + "\n" + notice + rest, encoding="utf-8")
+    elif issue_path.exists():
+        issue_path.unlink()
     meta = read(book / "_meta/book.json")
+    meta["build"]["book_sha256"] = sha(book / "book.md")
     meta["build"].update({"source_pdf_sha256": sha(pdf),
                           "page_coverage_sha256": sha(book / "_meta/page-coverage.json"),
                           "audio_sha256": sha(book / "_meta/audio.json"),
-                          "audio_md_sha256": sha(book / "_meta/audio.md")})
+                          "audio_md_sha256": sha(book / "_meta/audio.md"),
+                          "review_state": "source_issues_unresolved" if issues else "no_recorded_source_issues",
+                          "source_issues_sha256": sha(issue_path) if issues else None})
     write(book / "_meta/book.json", meta)
+    if issues:
+        result["completion_status"] = "source_issues_unresolved"
+        result["warnings"] = issues
     return result
 
 
-def validate(repo: Path, book: Path, allow_draft: bool = False) -> int:
+def validate(repo: Path, book: Path, allow_draft: bool = False,
+             allow_source_issues: bool = False) -> int:
     report = Report()
     try:
         meta, pdf = meta_and_pdf(repo, book)
@@ -550,6 +726,9 @@ def validate(repo: Path, book: Path, allow_draft: bool = False) -> int:
             report.error("units.jsonl", f"{uid}: source required")
             continue
         for source in sources:
+            if not isinstance(source, dict):
+                report.error("units.jsonl", f"{uid}: source entry must be an object")
+                continue
             page, blocks = source.get("pdf_page"), source.get("pdf_blocks")
             if type(page) is not int or page not in pages or not isinstance(blocks, list) or not blocks or any(
                     not isinstance(b, str) or not BLOCK.fullmatch(b) or int(b[1:5]) != page for b in blocks):
@@ -557,8 +736,15 @@ def validate(repo: Path, book: Path, allow_draft: bool = False) -> int:
     for chapter, anchors in chapter_anchors.items():
         for uid in anchors - ids:
             report.error(chapter, f"anchor lacks provenance: {uid}")
+    issue_errors = source_issue_errors(book, rows)
+    for error in issue_errors:
+        report.error("source issue", error)
+    page_error_count = 0
     for page in pages:
-        for error in page_errors(book, meta, page, rows, require_checked=not allow_draft):
+        errors = page_errors(book, meta, page, rows, require_checked=not allow_draft,
+                             allow_source_issues=allow_source_issues)
+        page_error_count += len(errors)
+        for error in errors:
             report.error("page evidence", error)
     try:
         audio = read(book / "_meta/audio.json")
@@ -574,6 +760,31 @@ def validate(repo: Path, book: Path, allow_draft: bool = False) -> int:
                        ("audio_md_sha256", book / "_meta/audio.md")):
         if not path.is_file() or build_meta.get(name) != sha(path):
             report.error("build", f"missing/stale {name}")
+    if not issue_errors and not page_error_count:
+        issues = source_issues(book, meta, rows)
+        if issues:
+            issue_path = book / "_meta/source-issues.md"
+            book_text = (book / "book.md").read_text(encoding="utf-8-sig") if (book / "book.md").is_file() else ""
+            if (not issue_path.is_file() or build_meta.get("source_issues_sha256") != sha(issue_path) or
+                    build_meta.get("review_state") != "source_issues_unresolved" or
+                    "(_meta/source-issues.md)" not in book_text):
+                report.error("build", "source issue notice missing/stale")
+            for issue in issues:
+                if allow_source_issues or allow_draft:
+                    report.warn("source issue", issue + " (chưa xác nhận nội dung)")
+                else:
+                    report.error("source issue", issue + " (chưa giải quyết)")
+        else:
+            legacy_clean_build = (
+                "review_state" not in build_meta and
+                "source_issues_sha256" not in build_meta and
+                not (book / "_meta/source-issues.md").exists()
+            )
+            if not legacy_clean_build and (
+                build_meta.get("review_state") != "no_recorded_source_issues" or
+                build_meta.get("source_issues_sha256") is not None
+            ):
+                report.error("build", "source issue state stale")
     if (book / "_meta/page-coverage.json").is_file():
         coverage = read(book / "_meta/page-coverage.json")
         if coverage.get("scope_pdf_pages") != pages or coverage.get("source_pdf_sha256") != meta["source_pdf"]["sha256"]:
@@ -584,14 +795,16 @@ def validate(repo: Path, book: Path, allow_draft: bool = False) -> int:
         else:
             for item in actual:
                 p = item["pdf_page"]
-                if item.get("evidence_sha256") != sha(page_path(book, p)):
+                if not page_path(book, p).is_file() or item.get("evidence_sha256") != sha(page_path(book, p)):
                     report.error("page-coverage.json", f"p{p:04d} evidence changed")
     progress = resume(repo, book)
     if progress["blocked"] or progress["pages"]["stale"] or progress["chapters"]["stale"]:
         report.error("direct-state.json", "source/content/evidence checkpoint stale")
-    if not allow_draft and (len(progress["pages"]["completed"]) != len(pages) or
-                            len(progress["chapters"]["completed"]) != len(chapters)):
-        report.error("direct-state.json", "scope lacks current author_checked checkpoints")
+    if not allow_draft:
+        allowed_pages = progress["pages"]["completed"] + (progress["pages"]["needs_review"] if allow_source_issues else [])
+        allowed_chapters = progress["chapters"]["completed"] + (progress["chapters"]["needs_review"] if allow_source_issues else [])
+        if len(allowed_pages) != len(pages) or len(allowed_chapters) != len(chapters):
+            report.error("direct-state.json", "scope lacks current reviewed checkpoints; pending/draft/stale are not accepted")
     return report.show()
 
 
@@ -620,7 +833,9 @@ def main() -> int:
             cmd.add_argument("--status", choices=("partial", "full"), required=True)
             cmd.add_argument("--note", required=True)
         if name == "validate":
-            cmd.add_argument("--allow-draft", action="store_true")
+            mode = cmd.add_mutually_exclusive_group()
+            mode.add_argument("--allow-draft", action="store_true")
+            mode.add_argument("--allow-source-issues", action="store_true")
     args = parser.parse_args()
     repo, book = args.repo_root.resolve(), args.book_dir.resolve()
     if not book.is_relative_to(repo):
@@ -640,7 +855,7 @@ def main() -> int:
         elif args.command == "build":
             output = build(repo, book)
         else:
-            return validate(repo, book, args.allow_draft)
+            return validate(repo, book, args.allow_draft, args.allow_source_issues)
         print(json.dumps(output, ensure_ascii=False, indent=2))
         return 0
     except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as error:

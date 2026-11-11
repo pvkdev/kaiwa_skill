@@ -17,6 +17,19 @@ py .agents/skills/kaiwa-pdf-knowledge/scripts/direct_progress.py validate "kaiwa
 
 `build` cần evidence cho toàn scope và mọi chapter đã khai báo. Full book còn pending thì dùng checkpoint/resume và đọc từng chapter để QA, chưa build toàn sách. `--allow-draft` không cho phép bỏ qua evidence/chapters bị thiếu; nó chỉ hạ yêu cầu author_checked của dữ liệu đã có. Không tạo file trang giả hoặc đổi phạm vi để né lỗi thiếu dữ liệu.
 
+### Chữ nguồn bị che/không đọc chắc (`needs_review`)
+
+Chỉ dùng khi đã **mở ảnh gốc**, thấy vấn đề cụ thể trong chính PDF, và không thể phục hồi chắc chắn. Không đoán chữ/đáp án. Page evidence có `review_status: "needs_review"`, `review_note` ghi đã mở ảnh và phạm vi chưa rõ, `issues` chứa ít nhất một `{ "pdf_block": "p0032-b005", "description": "Chữ in ... bị ghi tay che ..." }` trỏ block có thật trong `blocks`. `checks.visual_review` và `checks.reading_order` phải `true`; cả bốn checks phải là boolean; `text_complete`/`japanese_accuracy` có thể `false` đúng thực tế. Nếu block đó vào unit, unit có `review_status: "needs_review"` và `issues` chứa `{ "pdf_page": 32, "pdf_block": "p0032-b005", "description": "..." }` đúng source mapping. Issue unit phải khớp issue trang cùng block. Giữ `issues` cụ thể; không dùng status này cho phần chỉ chưa làm.
+
+```powershell
+py .agents/skills/kaiwa-pdf-knowledge/scripts/direct_progress.py checkpoint "kaiwa_skill/knowledge/<tên sách>" --repo-root . --page 32 --status needs_review --note "Đã mở ảnh p32; chữ in tại p0032-b005 bị ghi tay che, chưa đọc chắc."
+py .agents/skills/kaiwa-pdf-knowledge/scripts/direct_progress.py checkpoint "kaiwa_skill/knowledge/<tên sách>" --repo-root . --chapter "chapters/<chương>.md" --status needs_review --note "Đã đối chiếu chương; còn vấn đề nguồn p32-b005."
+py .agents/skills/kaiwa-pdf-knowledge/scripts/direct_progress.py build "kaiwa_skill/knowledge/<tên sách>" --repo-root .
+py .agents/skills/kaiwa-pdf-knowledge/scripts/direct_progress.py validate "kaiwa_skill/knowledge/<tên sách>" --repo-root . --allow-source-issues
+```
+
+Checkpoint chapter `needs_review` chỉ ghi khi **mọi trang mà unit của chương trỏ đến** đã có checkpoint `author_checked` hoặc `needs_review` hiện hành, unit không còn draft, và ít nhất một page/unit có issue. `resume` hiển thị nhóm `needs_review` riêng, không tính nó là completed. Build viết notice ngay đầu `book.md` liên kết `_meta/source-issues.md`, ghi `book.build.review_state: "source_issues_unresolved"` và trả warnings; status scope `full` chỉ nói phạm vi trang, không có nghĩa clean đã hoàn tất. `validate` mặc định fail nếu còn issue. `--allow-source-issues` chỉ cho cấu trúc/coverage đã hoàn tất với warning hiển thị; pending, draft, stale, thiếu trang/chapter, source hash sai hoặc issue thiếu bằng chứng vẫn fail. Sửa nội dung/evidence sau checkpoint làm trạng thái stale; phải mở ảnh và checkpoint lại. Khi giải quyết issue, đổi page/unit sang `author_checked` chỉ sau đối chiếu thật, cập nhật checks, checkpoint lại rồi build/validate mặc định.
+
 ## Nguồn và trang
 
 Khi coordinator giao mở rộng pilot sang full **cùng sách**, không init lại, sao chép thư mục tên khác hoặc sửa hash/scope bằng tay. Dùng `extend-scope <book_dir> --repo-root . --pages "1-N" --chapters "<toàn bộ thứ tự chapter, gồm chapter cũ>" --status full --note "<scope mới đã được giao>"`. Lệnh chỉ thêm trang/chapter, giữ thứ tự tương đối chapter cũ và checkpoint còn hợp lệ, lưu metadata/state cũ trong `_meta/scope-history/`. Trang mới luôn pending, kể cả trước đó đã được xem riêng cho CD. Chapter sửa nội dung sau mở rộng vẫn stale bình thường. Build cũ mất hiệu lực; báo cáo pilot trước đó chỉ là chứng cứ lịch sử của phạm vi và hash cũ. Mở rộng không có nghĩa đã hoàn thành full.

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.3 — 2026-11-11
+
+- Từ scan Nameraka PDF32: hỗ trợ needs_review cho unit/trang/chapter có chữ in bị ghi tay che. Issue phải gắn vùng thật; checkpoint/resume không coi nó là đã xác nhận.
+- Strict validate từ chối unresolved; --allow-source-issues giữ cảnh báo và không bỏ qua pending/draft/stale/missing. Build thêm cảnh báo nguồn và hồ sơ source-issues.
+- Giữ tương thích bản pilot đã nghiệm thu trước trường review_state khi không có source issue; không bắt viết lại output chỉ để đổi metadata schema.16 test direct và30 test fork cũ đạt.
+
 ## 0.4.2 — 2026-11-11
 
 - Thêm `extend-scope` cho pilot cùng sách: chỉ mở rộng trang/chapter, lưu scope-history và giữ checkpoint còn hợp lệ; trang mới pending, không chứng nhận lại phần stale hoặc xóa dấu vết pilot.

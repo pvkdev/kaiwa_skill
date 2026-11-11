@@ -2,11 +2,13 @@
 from __future__ import annotations
 
 import importlib.util
+import io
 import json
 from pathlib import Path
 import tempfile
 import unittest
 from unittest import mock
+from contextlib import redirect_stdout
 
 
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts/direct_progress.py"
@@ -70,6 +72,30 @@ class DirectProgressTest(unittest.TestCase):
         for chapter in self.chapters:
             direct.checkpoint(self.repo, self.book, None, chapter, "author_checked",
                               "Đã đối chiếu ảnh, nội dung và dịch.")
+
+    def mark_source_issue(self):
+        evidence = direct.read(direct.page_path(self.book, 1))
+        evidence["review_status"] = "needs_review"
+        evidence["review_note"] = "Đã mở ảnh p1; chữ in bị ghi tay che, không đoán chữ còn thiếu."
+        evidence["checks"]["text_complete"] = False
+        evidence["checks"]["japanese_accuracy"] = False
+        evidence["issues"] = [{"pdf_block": "p0001-b001",
+                                "description": "Chữ in trong ví dụ bị ghi tay che; chưa đọc được."}]
+        direct.write(direct.page_path(self.book, 1), evidence)
+        self.rows[0]["review_status"] = "needs_review"
+        self.rows[0]["issues"] = [{"pdf_page": 1, "pdf_block": "p0001-b001",
+                                    "description": "Câu Nhật bị che, giữ dấu thiếu thay vì đoán."}]
+        self.write_units()
+
+    def check_issue_book(self):
+        self.mark_source_issue()
+        direct.checkpoint(self.repo, self.book, 1, None, "needs_review",
+                          "Đã mở ảnh; vùng bị che cần kiểm từ bản nguồn khác.")
+        direct.checkpoint(self.repo, self.book, 2, None, "author_checked", "Đã xem ảnh.")
+        direct.checkpoint(self.repo, self.book, None, self.chapters[0], "needs_review",
+                          "Đã kiểm chương; còn chữ in bị che ở p1.")
+        direct.checkpoint(self.repo, self.book, None, self.chapters[1], "author_checked",
+                          "Đã kiểm đủ p2.")
 
     def test_build_validate_without_raw_and_resume(self):
         self.check_all()
@@ -189,6 +215,93 @@ class DirectProgressTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "stale"):
             direct.extend_scope(self.repo, self.book, [1, 2, 3], self.chapters,
                                 "full", "Cannot erase stale evidence.")
+
+    def test_needs_review_is_distinct_and_requires_explicit_validation_mode(self):
+        self.check_issue_book()
+        progress = direct.resume(self.repo, self.book)
+        self.assertEqual(progress["pages"]["needs_review"], [1])
+        self.assertEqual(progress["pages"]["completed"], [2])
+        self.assertEqual(progress["chapters"]["needs_review"], [self.chapters[0]])
+        result = direct.build(self.repo, self.book)
+        self.assertEqual(result["completion_status"], "source_issues_unresolved")
+        self.assertIn("_meta/source-issues.md", (self.book / "book.md").read_text(encoding="utf-8"))
+        with redirect_stdout(io.StringIO()):
+            self.assertEqual(direct.validate(self.repo, self.book), 1)
+        output = io.StringIO()
+        with redirect_stdout(output):
+            self.assertEqual(direct.validate(self.repo, self.book, allow_source_issues=True), 0)
+        self.assertIn("WARN", output.getvalue())
+        self.assertIn("chưa xác nhận nội dung", output.getvalue())
+
+    def test_needs_review_requires_mapped_issue_and_fresh_checkpoint(self):
+        self.mark_source_issue()
+        self.rows[0]["issues"][0]["pdf_block"] = "p0001-b999"
+        self.write_units()
+        with self.assertRaisesRegex(ValueError, "mapped pdf_page/pdf_block"):
+            direct.build(self.repo, self.book)
+        self.rows[0]["issues"][0]["pdf_block"] = "p0001-b001"
+        self.write_units()
+        evidence = direct.read(direct.page_path(self.book, 1))
+        evidence["issues"] = []
+        direct.write(direct.page_path(self.book, 1), evidence)
+        with self.assertRaisesRegex(ValueError, "concrete source issues"):
+            direct.checkpoint(self.repo, self.book, 1, None, "needs_review", "Đã xem ảnh.")
+        evidence["issues"] = [{"pdf_block": "p0001-b001", "description": "Chữ bị che."}]
+        direct.write(direct.page_path(self.book, 1), evidence)
+        direct.checkpoint(self.repo, self.book, 1, None, "needs_review", "Đã xem ảnh.")
+        with self.assertRaisesRegex(ValueError, "compatible"):
+            direct.checkpoint(self.repo, self.book, None, self.chapters[0], "author_checked", "Đã xem ảnh.")
+        direct.checkpoint(self.repo, self.book, None, self.chapters[0], "needs_review", "Còn chữ bị che.")
+        evidence["issues"][0]["description"] = "Đổi mô tả sau checkpoint."
+        direct.write(direct.page_path(self.book, 1), evidence)
+        progress = direct.resume(self.repo, self.book)
+        self.assertEqual(progress["pages"]["stale"], [1])
+        self.assertEqual(progress["chapters"]["stale"], [self.chapters[0]])
+
+    def test_page_issue_cannot_leave_affected_unit_author_checked(self):
+        self.mark_source_issue()
+        self.rows[0]["review_status"] = "author_checked"
+        self.rows[0]["issues"] = []
+        self.write_units()
+        with self.assertRaisesRegex(ValueError, "requires matching needs_review unit"):
+            direct.build(self.repo, self.book)
+
+    def test_allow_source_issues_still_rejects_pending_and_missing(self):
+        self.check_issue_book()
+        direct.build(self.repo, self.book)
+        state_path = self.book / "_meta/direct-state.json"
+        state = direct.read(state_path)
+        state["pages"]["2"] = {"status": "pending"}
+        direct.write(state_path, state)
+        with redirect_stdout(io.StringIO()):
+            self.assertEqual(direct.validate(self.repo, self.book, allow_source_issues=True), 1)
+        self.assertEqual(direct.resume(self.repo, self.book)["chapters"]["stale"], [self.chapters[1]])
+        direct.page_path(self.book, 2).unlink()
+        with redirect_stdout(io.StringIO()):
+            self.assertEqual(direct.validate(self.repo, self.book, allow_source_issues=True), 1)
+
+    def test_needs_review_chapter_rejects_draft_related_page(self):
+        self.mark_source_issue()
+        self.rows[0]["source"].append({"pdf_page": 2, "pdf_blocks": ["p0002-b001"]})
+        self.write_units()
+        direct.checkpoint(self.repo, self.book, 1, None, "needs_review", "Đã xem ảnh.")
+        with self.assertRaisesRegex(ValueError, "compatible"):
+            direct.checkpoint(self.repo, self.book, None, self.chapters[0], "needs_review", "Còn chữ bị che.")
+
+    def test_legacy_issue_free_build_does_not_require_rewriting_accepted_pilot(self):
+        self.check_all()
+        direct.build(self.repo, self.book)
+        meta_path = self.book / "_meta/book.json"
+        meta = direct.read(meta_path)
+        meta["build"].pop("review_state")
+        meta["build"].pop("source_issues_sha256")
+        direct.write(meta_path, meta)
+        with redirect_stdout(io.StringIO()):
+            self.assertEqual(direct.validate(self.repo, self.book), 0)
+        # A stale report must not be hidden by falling back to the older schema.
+        (self.book / "_meta/source-issues.md").write_text("Old source issue", encoding="utf-8")
+        with redirect_stdout(io.StringIO()):
+            self.assertEqual(direct.validate(self.repo, self.book), 1)
 
 
 if __name__ == "__main__":
