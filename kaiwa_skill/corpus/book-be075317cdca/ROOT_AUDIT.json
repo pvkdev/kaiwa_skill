@@ -39,9 +39,30 @@
       "render_sha256": "ad309858ec481c65bbb972f0efe3d790ecb4860dd4a9aa63ec23f59506aa48ff",
       "scope": "Opened full multilingual original and read entire MD. Sampled Indonesian/Vietnamese text and preserved source errors/meaning differences. Root questioned Thai row2 B as possibly missing นี่; owning worker opened3x crop and rejected the hypothesis. Root independently opened p0074-thai2-crop.png: visible ก็เป็นการ, matching MD, so no requested change. This does not validate every Thai mark; needs_review remains.",
       "result": "thai_exactness_review_still_required"
+    },
+    "85": {
+      "reviewed_at": "2026-11-11T03:07:04.166148+00:00",
+      "markdown_sha256": "1510412cb1893e38138d4f4ab8c9e1b680622759c2cd4fbe33f23de30efa5baf",
+      "render_sha256": "5c96b88bf454ee76c7cab3c1cbf7fc4138c74beb4c76c11e24f0e6b65d89fc0c",
+      "scope": "Read back corrected entire MD and compared each of32 body ruby entries in order against root direct6 Japanese source crop opened previously. Unprinted repeated readings removed; final printed 会話=かいわ correctly scoped. Prose and translations unchanged. Owning worker rerendered same source at3x and retained needs_review specifically for Thai. Root confirms requested Japanese-ruby correction, not Thai paragraph accuracy.",
+      "result": "japanese_ruby_issue_resolved_thai_review_remains"
+    },
+    "89": {
+      "reviewed_at": "2026-11-11T03:13:44.645069+00:00",
+      "markdown_sha256": "59c622727d024b03c6271fb0713b0870ebcbfe96f2ff2d6e8bafbe62a6b039ae",
+      "render_sha256": "8ef3b84c526781ef9d0f4761a80abfe77600ba6d65269c0c934c3182c2de957a",
+      "scope": "Opened full original and read entire MD. Compared10 Japanese dialogue pairs, style markers, CD30, references3/4/5, amounts70000/100yen and5times, colloquial あんだって/買い/だめもと, printed ruby where visible and folio88. Not independent tight per-kana crop audit.",
+      "result": "no_known_text_difference_in_sample"
+    },
+    "23": {
+      "reviewed_at": "2026-11-11T03:25:53.329153+00:00",
+      "markdown_sha256": "a8924d34f34eb90b2788775bb2d264f5c185f3477acacb0605430f9c0c61a3a5",
+      "render_sha256": "f427cea1155f00a4689d64586f7943b2915a474d16d52fb056c01ba8332320f4",
+      "scope": "Opened full original and entire MD. Compared full Japanese teacher-introduction prose and headings,10minutes/1-2sections/2-3weeks guidance,2step and4method lists, exact source 不審/工夫例 wording, concluding teacher-role paragraph and folio22. No printed furigana on this page and none invented.",
+      "result": "no_known_text_difference_in_sample"
     }
   },
-  "updated_at": "2026-11-11T02:48:11.806917+00:00",
+  "updated_at": "2026-11-11T03:25:53.329153+00:00",
   "diagnostics": [
     {
       "at": "2026-11-11T02:06:59.855932+00:00",
@@ -49,6 +70,16 @@
       "method": "Local installed Tesseract with existing tha.traineddata, puretha psm6 full/body and psm7 single physical line, ignored cache only",
       "observation": "Wholepage/body mode separates or drops tone/vowel marks. Single-line mode recovers more marks but still omits source tone in พร้อม and adds a character in ซึ่งมี. OCR output is draft only, not proof.",
       "corpus_mutated": false
+    }
+  ],
+  "history": [
+    {
+      "reviewed_at": "2026-11-11T03:02:08.684203+00:00",
+      "markdown_sha256": "ef27f0d9a42b241303063a1f13e4adc44010929da24257cdf916b9de7f0c53d4",
+      "render_sha256": "5c96b88bf454ee76c7cab3c1cbf7fc4138c74beb4c76c11e24f0e6b65d89fc0c",
+      "scope": "Opened full original plus root-p85-japanese6 direct PDF crop. Read entire MD and compared Japanese prose/ruby occurrences. Existing needs_review correctly blocks verification: ruby list has readings added at repeated source occurrences where none printed, and 日本語会話 overextends source 会話=かいわ. Asked owning continuation worker for precise occurrence/span correction; Thai review remains independently unresolved.",
+      "result": "known_ruby_occurrence_corrections_requested_on_needs_review_draft",
+      "page": 85
     }
   ]
 }
