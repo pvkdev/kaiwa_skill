@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.6 — 2026-11-11
+
+- Validator nhận cặp Nhật–Việt nhiều dòng, khung blockquote, các dòng biến đổi, nhãn có chú thích và cách trình bày câu Nhật không gắn nhãn; không ép sách về một bố cục chung.
+- Giữ kiểm tra thiếu dịch, marker rỗng thật, sai vai A/B và lệch ô trống; không gom bảng/bài tiếp theo vào cặp trước. Chấp nhận chỗ trống và dấu lặng có chủ đích.
+- 55 test fork và17 test direct đạt. Regression12 bản đã viết đủ:0lỗi; chỉ2cảnh báo cùng vùng nguồn Nameraka PDF32 bị che đã biết. Không sửa nội dung các sách để vượt kiểm tra.
+
 ## 0.4.5 — 2026-11-11
 
 - QA mở rộng bổ sung quy tắc giữ quan hệ sơ đồ đủ để tự làm bài, giữ kana của ví dụ/tên đúng nguồn và kiểm sắc thái thời/thể; áp dụng cho cả raw-clean và direct qua contract kế thừa.

@@ -18,7 +18,8 @@ ANCHOR = re.compile(r'<a\s+id=["\']([^"\']+)["\']\s*></a>', re.I)
 UNIT_ID = re.compile(r'u-[a-z0-9]+(?:-[a-z0-9]+)*')
 RAW_PAGE = re.compile(r'p(\d{4})')
 SHA256 = re.compile(r'[0-9a-f]{64}')
-PAIR = re.compile(r'^\s*(?:(?:[-+*]|\d+[.)])\s+)?\*\*(JP|VI|[^*\n]+? \((?:JP|VI)\)):\*\*\s*(.*?)\s*$')
+PAIR = re.compile(r'^\s*(?:(?:[-+*]|\d+[.)])\s+)?(?:[（(][\s\u3000]*[）)]\s+)?\*\*([^*\n]+?):\*\*\s*(.*?)\s*$')
+PAIR_ROLE = re.compile(r'^(.+?)\s+\((JP|VI)(?:,\s*[^)]+)?\)$')
 EXERCISE_BLANK = re.compile(r'_{3,}|＿{2,}|[（(][\s\u3000]*[）)]')
 REMAINS = [
     (re.compile(r'<\s*/?\s*(?:ruby|rt|rp)\b', re.I), 'ruby/furigana HTML'),
@@ -157,27 +158,83 @@ def check_digest(path: Path, expected: object, report: Report, label: str) -> No
         report.error(label, f'missing file: {path}')
 
 
+def pair_label(label: str) -> tuple[str, str | None] | None:
+    if label in ('JP', 'VI'):
+        return label, None
+    match = PAIR_ROLE.fullmatch(label)
+    if not match:
+        return None
+    return match[2], match[1].strip()
+
+
 def labels_correspond(japanese: str, vietnamese: str) -> bool:
     """Check adjacent language tags, without pretending to translate role names.
 
     A Japanese role can be translated or romanized in its Vietnamese turn.
     Semantic role identity still needs review; ASCII A/B mismatches stay errors.
     """
-    if japanese == 'JP' or vietnamese == 'VI':
-        return japanese == 'JP' and vietnamese == 'VI'
-    if not japanese.endswith(' (JP)') or not vietnamese.endswith(' (VI)'):
+    source, target = pair_label(japanese), pair_label(vietnamese)
+    if source is None or target is None or source[0] != 'JP' or target[0] != 'VI':
         return False
     def role(label: str) -> str:
-        return re.sub(r'^(?:例\s*)?[0-9０-９]+\s+', '', label[:-5]).strip()
-    source, target = role(japanese), role(vietnamese)
-    if not source or not target:
+        label = re.sub(r'^(?:例\s*)?[0-9０-９]+\s+', '', label).strip()
+        return re.sub(r'\s+in sẵn$', '', label, flags=re.I).strip()
+    if source[1] is None:
+        return target[1] is None
+    if target[1] is None:
+        # A descriptive JP header can use a plain VI gloss; an A/B dialogue
+        # turn still needs a role-bearing translation to check the speaker.
+        return not re.fullmatch(r'[A-ZＡ-Ｚ](?:[0-9０-９₀-₉]+)?', role(source[1]))
+    source_role, target_role = role(source[1]), role(target[1])
+    if not source_role or not target_role:
         return False
-    if source == target:
+    if source_role == target_role:
         return True
     japanese_script = r'[\u3040-\u30ff\u3400-\u9fff]'
-    return bool(re.search(japanese_script, source) and
-                not re.search(japanese_script, target) and
-                re.search(r'[^\W\d_]', target, re.UNICODE))
+    return bool(re.search(japanese_script, source_role) and
+                not re.search(japanese_script, target_role) and
+                re.search(r'[^\W\d_]', target_role, re.UNICODE))
+
+
+def pair_boundary(line: str) -> bool:
+    stripped = line.lstrip()
+    return bool(re.match(r'#{1,6}\s|<a\s+id=|<!--\s*unit_id:', stripped, re.I))
+
+
+def pair_marker(line: str) -> tuple[str, str] | None:
+    match = PAIR.match(line)
+    if match and pair_label(match[1]) is not None:
+        return match[1], match[2]
+    return None
+
+
+def block_content(value: str, continuation: list[str]) -> str:
+    parts = [value]
+    inline = bool(value.strip())
+    continuing = False
+    for line in continuation:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if (stripped.startswith(('|', '```', '<!--')) or
+                re.match(r'^(?:[-+*]|\d+[.)])\s+\*\*(?!JP:|VI:)', stripped)):
+            break
+        # An inline pair is complete unless a visible arrow/quote starts its
+        # continuation. An empty header can own the following list/dialogue.
+        if inline and not continuing and not stripped.startswith(('→', '>')):
+            break
+        if inline and continuing and not stripped.startswith(('→', '>')):
+            break
+        continuing = True
+        text = re.sub(r'^\s*(?:>\s*|(?:[-+*]|\d+[.)])\s+|→\s*)', '', line).strip()
+        text = re.sub(r'^[A-Za-zＡ-Ｚａ-ｚ][\w₀-₉]*\s*[:：]\s*', '', text)
+        parts.append(text)
+    return '\n'.join(parts)
+
+
+def has_block_content(value: str) -> bool:
+    return bool(re.search(r'[^\W_]', value, re.UNICODE) or EXERCISE_BLANK.search(value) or
+                re.search(r'(?:…|⋯){1,}|[.．]{3,}', value))
 
 
 def validate_chapter(path: Path, report: Report) -> set[str]:
@@ -205,36 +262,61 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
             line = content.count('\n', 0, match.start()) + 1
             report.warn(f'{path}:{line}', label)
     lines = content.splitlines()
-    for index, line in enumerate(lines):
-        match = PAIR.match(line)
-        if not match:
-            continue
-        label, value = match.groups()
-        if not value:
+    markers = {i: marker for i, line in enumerate(lines)
+               if (marker := pair_marker(line)) is not None}
+
+    def next_marker(start: int) -> tuple[int, tuple[str, str]] | None:
+        for i in range(start + 1, len(lines)):
+            if pair_boundary(lines[i]):
+                return None
+            if i in markers:
+                return i, markers[i]
+        return None
+
+    def previous_marker(start: int) -> tuple[int, tuple[str, str]] | None:
+        for i in range(start - 1, -1, -1):
+            if pair_boundary(lines[i]):
+                return None
+            if i in markers:
+                return i, markers[i]
+        return None
+
+    for index, (label, value) in markers.items():
+        tag, role = pair_label(label)
+        following = next_marker(index)
+        end = following[0] if following else next(
+            (i for i in range(index + 1, len(lines)) if pair_boundary(lines[i])), len(lines))
+        block = block_content(value, lines[index + 1:end])
+        if not has_block_content(block):
             report.error(f'{path}:{index + 1}', f'empty {label} text')
-        if label == 'JP' or label.endswith('(JP)'):
-            expected = 'VI' if label == 'JP' else label.replace('(JP)', '(VI)')
-            following_line = next((later for later in lines[index + 1:] if later.strip()), '')
-            following = PAIR.match(following_line)
-            if following is None or not labels_correspond(label, following.group(1)):
-                report.error(f'{path}:{index + 1}', f'{label} must be followed by {expected} (blank lines allowed)')
+        if tag == 'JP':
+            expected = 'VI' if role is None else f'{role} (VI)'
+            if following is None or not labels_correspond(label, following[1][0]):
+                report.error(f'{path}:{index + 1}', f'{label} must be followed by {expected} before the next section')
             else:
-                source_blanks = len(EXERCISE_BLANK.findall(value))
-                translated_blanks = len(EXERCISE_BLANK.findall(following.group(2)))
+                vi_index, (_, vi_value) = following
+                vi_following = next_marker(vi_index)
+                vi_end = vi_following[0] if vi_following else next(
+                    (i for i in range(vi_index + 1, len(lines)) if pair_boundary(lines[i])), len(lines))
+                translated = block_content(vi_value, lines[vi_index + 1:vi_end])
+                source_blanks = len(EXERCISE_BLANK.findall(block))
+                translated_blanks = len(EXERCISE_BLANK.findall(translated))
                 if source_blanks != translated_blanks:
                     report.warn(f'{path}:{index + 1}',
                                 f'possible exercise placeholder mismatch: JP {source_blanks}, VI {translated_blanks}; '
                                 'review against source, including intentional placeholder notation changes')
-        elif label == 'VI' or label.endswith('(VI)'):
-            expected = 'JP' if label == 'VI' else label.replace('(VI)', '(JP)')
+        else:
+            expected = 'JP' if role is None else f'{role} (JP)'
+            previous = previous_marker(index)
             previous_line = next((earlier for earlier in reversed(lines[:index]) if earlier.strip()), '')
-            previous = PAIR.match(previous_line)
             # A book may use an unlabelled Japanese paragraph or speaker before
             # a Vietnamese gloss. Do not force a new lesson layout to add JP tags.
-            unlabelled_source = (label == 'VI' and previous is None and
+            previous_is_translation = previous is not None and pair_label(previous[1][0])[0] == 'VI'
+            unlabelled_source = (label == 'VI' and (previous is None or previous_is_translation) and
+                                 pair_marker(previous_line) is None and
                                  not previous_line.lstrip().startswith(('#', '<')) and
                                  re.search(r'[\u3040-\u30ff\u3400-\u9fff]', previous_line))
-            if (previous is None or not labels_correspond(previous.group(1), label)) and not unlabelled_source:
+            if (previous is None or not labels_correspond(previous[1][0], label)) and not unlabelled_source:
                 report.error(f'{path}:{index + 1}', f'{label} lacks preceding {expected}')
     return seen
 
