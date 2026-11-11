@@ -33,7 +33,7 @@ Sách88 migration raw→direct1c2d7c0; history647ff62ba2fa4c548d7c92d5fb545857 b
 
 ## Công cụ và kiểm tra
 
-Version0.4.8;70 test fork+17 direct PASS. Regression14 bản đã chốt:0errors/16warn nguồnNameraka+Manners+88. Cache .cache/validator-regression/v048-results.json; helper run.py chỉ hỗ trợ root, không phải phụ thuộc sản phẩm.
+Version0.4.9;75 test fork+17 direct PASS. Regression14 bản đã chốt:0errors/16warn nguồnNameraka+Manners+88. Cache .cache/validator-regression/v049-results.json; helper run.py chỉ hỗ trợ root, không phải phụ thuộc sản phẩm.
 
 Skill .agents/skills/kaiwa-fork-knowledge/SKILL.md và .agents/skills/kaiwa-pdf-knowledge/SKILL.md cùng direct-contract. CLI init/checkpoint/resume/build/validate/extend-scope. build không có --allow-source-issues; validate có. Full đang dở chỉ checkpoint/resume, không fake evidence/thu scope để xanh. needs_review chỉ lỗi nguồn đã mở ảnh, issue đúng page/block/unit; chưa viết dùng draft. Parser không chứng minh đúng nghĩa/đủ nội dung, không ép sách vào template để vượt parser.
 
@@ -52,3 +52,13 @@ Không final ở trạng thái này; tiếp QA và điều phối hàng đợi t
 125 tới61/225; root đã mở16 trang1/2/8/10–16/18–23, so toàn nhóm01–04; sửa1–2 hội thoại ởguide11 vàただ ở序章16. Denwa tới51/162; root mở14 trang5/11–18/20–23/45, so intro/Unit1 vàchênh công ty rolecard45; sửa đảo nghĩa giọng thấp/nhanh, lời khuyên bị mất, TOC34. Nama2 tới119/152 kể cả1needs_review83; script đang quaBài6. Root mở11 trang1/7/13/15/16/19/28/97–100, so trọn scriptBài1, sửa vaiYoshino/cậu ấy; **chưa release**, yêu cầu worker audit ngược10bài các nhóm Việt sau đề (không tóm lượt, giữ mọi lựa chọn, không tự giải) vàdịch đủ chỉ dẫnJP còn thiếu. Parser0.4.8 hỗ trợ nhóm JP1..N rồi Việt①..N, không đổi bố cục vì lỗi công cụ. Báo cáo3sách ở clean/reviews/*-root-sampled.md.
 
 Audio Nameraka đã root mở thêm6/mở lại7–8, sửa dẫn câu mô tả tape từ7 về6 vàghi giới hạn vì có câu hỏi in sẵn; followup8f19042. Root source sample hiện16 trang, chapter không đổi. Skill guard quan hệ nhân quả/so sánh e5a0953, parser0.4.8 có8regressiontest mới; không cần rerun khi chỉ viết tiếp nội dung chưa đổi công cụ.
+
+## Tiếp quản sau rà source/đáp án
+
+Công cụ0.4.9 nhận nhãn VI nêu rõ chỉ có trong cộtEnglish/Chinese; giữ orphan check bình thường, có5tests mới. Đã mở125/PDF120 xác nhận lượtA model bài67 chỉ có trong cột dịch, giữVI/needs_review, không tạoJP; Unit67 bản hiện hữu qua textcheck. Root đã đọc thêm35/51/52/224, sửa hạnまでに/dẫnMEMO/bạn gái, tổng21trangmẫu. Source120 là vấn đề duy nhất báo tới lúc này.
+
+Nama2 đã viết đủ152trang, nhưng10chapter bài chính hạdraft để audit đầy đủ mọi lượt/lựa chọn/chỉ dẫnViệt, không dùng đáp án điền đề. Worker phải rà nghĩa fragment đáp án theo đề; root bắt受けた (冷たい印象) bị dịch học/thamgia, đã yêu cầu và worker báo sửa nhận/có ấn tượng;行ったりするんですか làđi[karaoke]. Root chưa đọc lại sau sửa. Root mở thêm94/136/141/142/151, so75từ vàtrọn đáp ánBài1/Bài10, tổng21trangmẫu. Guide8–10/sourceissues83/119 đã root xác nhận. Chưa releaseNama2 trước audit/PASS/QA cuối.
+
+Denwa tớiUnit15/PDF79 ởbáo mới nhất; root so18trangmẫu, thêmbìa1/colophon160 xácnhậnCDつき/ISBN9784757413313/2014lần4. Ví dụノート④51 đã bổ sung/root đọc lại. Worker auditノートUnit1–9 và báo thêmvídụ35/39/43/50, source54 giữお確かめていただけますか dạngsai cóchủđích; root chưa so những trang mới này. Các sốphone lạ60/30 giữ theo nguồn, khôngnormalize.
+
+Fresh rawscan.readonly:2queuedpartial vẫnwaiting, route không đổi. Book88 cófollowup hạn Warm-up6#5(chậm nhất ngàymai), đãbuild/validate0/4 vàrefresh reviewhash; không đổi đề/lời giải. Các kiểm tra0.4.9/14bookregression đãPASS, không cần chạy lặp nếu không có thay đổi công cụ/quan ngại mới. Tiếp điều phối3worker, không final ởmốc này.

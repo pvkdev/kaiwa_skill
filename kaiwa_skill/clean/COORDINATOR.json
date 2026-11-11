@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T09:11:49.661063+00:00",
+  "updated_at_utc": "2026-11-11T09:42:32.919085+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -252,7 +252,8 @@
       "raw_initialization_allowed": false,
       "owner": "/root/clean_keigo",
       "title": "わかる！話せる！日本語会話 発展文型125",
-      "knowledge_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125"
+      "knowledge_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125",
+      "known_source_issue": "PDF120/unit67: final A turn only in English/Chinese, no Japanese/romaji counterpart; retained VI, no invented JP."
     },
     {
       "book_id": "180-common-native-japanese-figures-of-speech-in-regular-8eeff5021caa",
@@ -459,7 +460,8 @@
       "raw_initialization_allowed": false,
       "owner": "/root/clean_namachuukei_chu",
       "knowledge_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２",
-      "title": "聞いて覚える話し方 日本語生中継 初中級編２"
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "qa_stage": "Full152page authored;10 main lesson chapters demoted to draft for preservation/VI audit. Source83/119 retained."
     },
     {
       "book_id": "nameraka-nihongo-kaiwa-7a1ef4391141",
@@ -581,7 +583,8 @@
     "Keigo PDF7 source wording, PDF18 answer-number mismatch and PDF20 particle/romaji mismatch were visually confirmed; keep content notes and needs_review on affected knowledge units.",
     "Sho PDF29 menu is exercise ambiguity, not asserted to be a printing mistake; both data statements are retained.",
     "All 30 catalog PDFs remain in scope; only ready_for_fork sources may be dispatched. Source queues are refreshed during coordination.",
-    "Early root QA reports: clean/reviews/125-root-sampled.md, denwa-root-sampled.md, namachuukei2-root-sampled.md. Nama2 requires full10lesson preservation audit of deferred VI groups and untranslated instructions before release; parser0.4.8 supports deferred numbered translations without changing layout."
+    "Early root QA reports: clean/reviews/125-root-sampled.md, denwa-root-sampled.md, namachuukei2-root-sampled.md. Nama2 requires full10lesson preservation audit of deferred VI groups and untranslated instructions before release; parser0.4.8 supports deferred numbered translations without changing layout.",
+    "Fresh read-only raw scan of16 existing corpora: the2 queued partial raw books (5500, Shadowing初中級) remain waiting, so direct routing unchanged. No corpus/PDF mutation. Root sampled reports now12521pages, Denwa18, Nama2 21; see reports for exact scope. Audio identity pages verified separately, not authored chapters."
   ],
   "authoring_complete_pending_coordinator_release": [],
   "released_supplied_pdf_scope": [
@@ -728,9 +731,9 @@
     "pilot_output_commit": "9e2f7d5"
   },
   "tool_validation": {
-    "version": "0.4.8",
-    "commit": "18df99e",
-    "fork_tests_passed": 70,
+    "version": "0.4.9",
+    "commit": "973cd63",
+    "fork_tests_passed": 75,
     "direct_tests_passed": 17,
     "regression_book_count": 14,
     "regression_errors": 0,
@@ -823,12 +826,12 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 51,
-        "pending": 111
+        "author_checked": 79,
+        "pending": 83
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 10,
-        "pending": 28
+        "author_checked": 17,
+        "pending": 21
       }
     },
     {
@@ -882,12 +885,14 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 61,
-        "pending": 164
+        "author_checked": 148,
+        "needs_review": 1,
+        "pending": 76
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 9,
-        "pending": 21
+        "author_checked": 21,
+        "needs_review": 1,
+        "pending": 8
       }
     },
     {
@@ -991,14 +996,14 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 118,
-        "needs_review": 1,
-        "pending": 33
+        "author_checked": 71,
+        "draft": 79,
+        "needs_review": 2
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 19,
-        "needs_review": 1,
-        "pending": 6
+        "author_checked": 15,
+        "draft": 10,
+        "needs_review": 1
       }
     }
   ],
