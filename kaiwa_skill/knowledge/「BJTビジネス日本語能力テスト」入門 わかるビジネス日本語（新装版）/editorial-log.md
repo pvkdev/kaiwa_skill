@@ -1,0 +1,34 @@
+- PDF16: giữ tên nhóm 紹介する và ba cách nói Scene1–3; bỏ họa tiết trang trí và furigana phụ.
+- PDF19–22: Scene2–3 giữ từng lượt thoại Nhật/Việt, câu hỏi và lựa chọn, giới tính/quan hệ, ký hiệu -p, từ vựng, đủ Expressions/Drill/Formal vs Informal và Coffee Break 握手. Hai lớp English hội thoại dùng đối chiếu nghĩa, không chép lặp. Không điền lời giải cho Drill.
+- PDF24–31: nhóm 意思を表明する giữ trang mở, ba Scene4–6, mọi lượt thoại JP/VI, lựa chọn, Vocabulary, Expressions, Drill, Formal vs Informal, Coffee Break 名刺/紹介 và hai bài 復習; đã crop PDF31 xác nhận ô trống và lời thoại trước khi chép. Bản English hội thoại lặp bỏ sau khi dùng đối chiếu.
+- PDF32–34: nhóm 質問する mở với năm Scene; Scene7 giữ lời thoại/câu hỏi/lựa chọn, từ vựng, mẫu xin lời khuyên, drill, formal/informal và Coffee Break 印鑑. Chưa chốt chapter vì Scene8–11 và ôn còn pending.
+- PDF35–36: Scene8 giữ thoại Nhật/Việt, câu hỏi ba lựa chọn, ký hiệu -p, từ vựng, giải thích, drill và cặp mức thân mật; English lặp bỏ sau đối chiếu.
+- PDF37–38: Scene9 giữ đủ thoại, bốn số fax đúng thứ tự, từ ファックス, bốn mục Expressions và Formal/Informal; không có Drill trên trang nguồn.
+- PDF39–40: Scene10 giữ toàn bộ giờ/hẹn ngày mai, bảy lượt thoại, hai lựa chọn, từ vựng, năm giải thích, drill và cặp formal/informal.
+- PDF41–43: Scene11 giữ thoại, từ vựng, Expressions/Drill/Formal; hai bài ôn giữ từng lượt JP/VI, tổng cộng sáu ô trống và địa chỉ/giờ in sẵn. Hình điện thoại PDF42 chỉ trang trí.
+- PDF44–46: nhóm 話しかける mở với bốn Scene; Scene12 giữ đủ chỉ dẫn trong ngoặc, thoại/lựa chọn/từ vựng và sáu mục Expressions. Scene13–15/ôn còn pending; chapter draft.
+- PDF47–48: Scene13 giữ đĩa mềm và hình bốn ngăn, đầy đủ lời thoại, từ vựng, drill và bốn cách dùng はい trong Coffee Break.
+- PDF49–50: Scene14 giữ bốn nút trong hình, mọi ký hiệu -p/-f và lời thoại JP/VI; Coffee Break お土産2 đủ hỏi/đáp, drill chưa được giải.
+- PDF51–53: Scene15 giữ lời thoại, bốn nút máy photocopy, từ vựng, Expressions/Drill/Formal; hai bài ôn giữ toàn bộ lời JP/VI và năm ô trống nguồn, không giải hộ.
+- PDF54–56: nhóm 依頼する mở với năm Scene; Scene16 giữ thoại/câu hỏi/lựa chọn, từ vựng, drill/formal và Coffee Break もしもし. Scene17–20/ôn còn pending; chapter draft.
+- PDF57–58: Scene17 đủ thoại/lựa chọn/từ vựng, drill hai vai, cặp formal và Coffee Break ウチ・ソト; chuyển cả hai bong bóng thoại hình sang JP/VI.
+- PDF59–60: Scene18 giữ dữ liệu thay đổi, yêu cầu làm lại biểu đồ, từng lượt JP/VI, drill ba gợi ý và cặp formal/informal; không tạo đáp án Drill.
+- PDF61–62: Scene19 giữ tám lượt thoại, món trà và lý do tặng, ba lựa chọn, mọi ví dụ お伝えください/Drill và cặp formal.
+- PDF63–65: Scene20 giữ mọi ký hiệu -p/-f/-m, thoại/lựa chọn/từ vựng/Drill/Formal; hai bài ôn giữ toàn bộ JP/VI và năm ô trống, không tự giải.
+- PDF66–68: nhóm 了解する mở ba Scene; Scene21 giữ thoại, mốc 明日中/あさって, ký hiệu -p/-m, từ vựng, giải thích, Formal và Coffee Break 住所. Scene22–23/ôn còn pending; chapter draft.
+- PDF69–70: Scene22 giữ lời thoại Watanabe/Yan, nhiệm vụ fax tài liệu làm hôm nay, ba lựa chọn, từ vựng, bốn Expressions và cặp formal/informal.
+- PDF71–73: Scene23 giữ lời thoại/tình huống Philippines, mọi ví dụ của năm Expressions, mức formal và hai bài ôn với bảy ô trống.
+- PDF74–76: nhóm 断る mở năm Scene; Scene24 giữ cả yêu cầu photocopy được nhận và yêu cầu ghi biên bản bị từ chối, câu hỏi/lựa chọn không tự giải. Scene25–28/ôn pending; chapter draft.
+- PDF77–78: Scene25 giữ lịch hẹn, mốc 6:30, lý do từ chối mềm, toàn bộ thoại/lựa chọn/Drill/Expressions/Formal.
+- PDF79–80: Scene26 giữ ngày lương, lời rủ/từ chối, ba lựa chọn, ví dụ Karaoke/Sushi và Coffee Break つきあい. Nhận định về việc làm Nhật được quy về lời sách, không cập nhật như sự thật hiện thời.
+- PDF81–82: Scene27 giữ mọi lời mời/từ chối, ba lựa chọn, nghĩa hai chiều của 結構です theo ngữ cảnh, ví dụ chọn trà/cà phê và Coffee Break お酌. Không có Drill trên trang nguồn.
+- PDF83–85: Scene28 và 復習 nhóm 断る giữ toàn hội thoại Nhật, câu hỏi, lựa chọn, ví dụ, Drill và lời thoại bài ôn in sẵn; bản Việt giữ các ô ①–③/①–②, không tự điền đáp án.
+- PDF86–93: 相談する gồm 3 Scene, sơ đồ chỗ ngồi bốn số đã chuyển thành vị trí văn bản không chọn đáp án; toàn lời thoại, Vocabulary, Expressions, Drill, Formal/Informal, Coffee Break và hai bài ôn giữ đúng mạch. Chỉ bỏ hình nền và lớp English trùng.
+- PDF94–101: 許可を求める gồm Scene32–34, toàn hội thoại/câu hỏi/lựa chọn, ví dụ, Drill, Coffee Break 根回し và hai bài ôn; bản dịch ôn giữ đúng các ô ①②, không viết đáp án.
+- PDF102–109: 確認する gồm Scene35–37, toàn hội thoại/câu hỏi/lựa chọn, ví dụ đối chiếu thông tin, Drill, Formal/Informal và hai bài ôn; bản Việt giữ ô ①–③ mà không tự giải.
+- PDF110–119: 助言する gồm Scene38–41, toàn hội thoại/câu hỏi/lựa chọn, ví dụ, Drill, Formal/Informal, sáu điểm Coffee Break 名刺② và hai bài ôn; bản Việt ôn giữ các ô ①②, không điền đáp án.
+- PDF120–129: 挨拶する gồm Scene42–45, đủ ba mẩu giấy nhắn, hai bài phát biểu dài, câu hỏi/lựa chọn, ví dụ và bài ôn. PDF129 lời dẫn ghi chuyển sang 営業部 nhưng câu Nhật mẫu ghi 総務部; giữ cả hai như nguồn, không tự giải mâu thuẫn.
+- PDF130–134: giữ đủ 5 mục 便利な表現 với lần lượt 5/5/4/5/3 tình huống, mọi lượt Nhật–Việt và giải thích. Ký hiệu CD trang134 là số 51 in trong vòng tròn, không giả mã Unicode ㊿①.
+- PDF135–138: 状況一覧表 tiếng Nhật 45 hàng, 7 cột chuyển trọn sang bảng có Nhật–Việt; các ô quan hệ thực sự trống giữ dấu —. PDF137–138 là cùng bảng tiếng Anh, đối chiếu rồi loại bản lặp.
+- PDF26 QA theo ảnh: ví dụ giải thích in kana **ABCしょうじでございます**, **おがわでございます**, **こばやしさん、おねがいします**; khôi phục đúng mặt chữ nguồn trong chapter05, giữ bản Việt. Không tự chuyển tên kana thành Kanji.
+- PDF150–151: thêm đủ các câu Drill nguồn Scene11–44 vào đúng bảng đáp án sau PDF149, dịch Việt từng câu tại phần đáp án; bỏ câu mô tả phạm vi pilot cũ trong chapter04. Không đưa câu trả lời lên đề.

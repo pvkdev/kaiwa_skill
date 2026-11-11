@@ -66,7 +66,7 @@ Thường dùng khi giới thiệu bản thân và khi nhờ người khác làm
 
 ### すみません
 
-Nghĩa thay đổi theo ngữ cảnh. Trong hội thoại này, 中川 dùng để cảm ơn khi nhận quà. Xem thêm mục từ 「すみません」 trong phần *便利な表現* của sách (ngoài phạm vi pilot).
+Nghĩa thay đổi theo ngữ cảnh. Trong hội thoại này, 中川 dùng để cảm ơn khi nhận quà. Xem thêm mục từ 「すみません」 trong phần *便利な表現* của sách.
 
 <a id="u-wakaru-scene1-coffee"></a>
 ## Coffee Break — お土産（おみやげ）1

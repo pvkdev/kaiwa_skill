@@ -1,7 +1,11 @@
-# QA mẫu khi mở rộng Wakaru toàn sách
+# Nghiệm thu toàn phạm vi và giới hạn QA
 
-Thời điểm: 2026-11-11T06:44:11.742068+00:00. Reviewer root, khác tác giả. Đây là kiểm tra mẫu, không xác nhận toàn152trang.
+Bản PDF→knowledge hiện có đủ152trang,21chương,278unit; tác giả báo đã đối chiếu từng ảnh, mọi page/chapter checkpoint hiện hành author_checked. Root chạy validator strict:0lỗi/0cảnh báo. Điều này không thay thế việc kiểm ngữ nghĩa độc lập toàn sách.
 
-Đã đọc toàn chương05意思を表明する và mở ảnh PDF25–31 (7trang; chưa mở trang24 divider). Source SHA c0c4bc000a3471ce6a94171eb076df1c8efe54c1859a6fbf9d1e7b662a245993. Chapter SHA256 9bfef5de6284bf56cc333622ef53216f4731cb133f298c03c795faf04b581260.
+Root mở16trang nguồn theo hai giai đoạn. Pilot:1/17/18/23/149/152, bổ sung vùng hướng dẫnCD ở9; review lịch sử và hash trongpilot-independent-review.json. Mở rộng:25–31 (đọc toàn chương05),150–151 (đáp án Drill mới). Root so mạch thoại/đề/lựa chọn, Vocabulary/Expressions, mọi ví dụ của chương05, haiDrill, mức lịch sự, haiCoffeeBreak, hai bài ôn giữ ô trống. Sửa lại các ví dụ tên in kana, không suy chữHán; phân biệt単身赴任 với出張 trong đáp án. Bốn trang đáp án có45key hội thoại,102câuDrill thuộc34Scene,65mảnh đáp án ôn; phần mới150–151 được đối chiếu ảnh, phần149/152 đã cóQA pilot. Không dùng số đếm để chứng minh toàn bộ nghĩa.
 
-Đã đối chiếu ba thoại Scene4–6, câu hỏi/lựa chọn, từ vựng, giải thích English chuyển Việt, mọi ví dụ nhỏ, hai Drill và mẫu, hai mức Formal/Informal, Coffee Break danh thiếp/thứ tự giới thiệu, cả hai bài ôn. Bản Việt giữ các ô trống và không lộ đáp án. Chỉ số CD⑤–⑦ khớp ảnh, không suy sốđĩa. Chưa thấy nội dung cần sửa trong phạm vi mẫu này. Không dùng report này thay cho pilot review lịch sử hay full author audit.
+Chỉ mục142dòng biểu hiện và174dòng từ vựng/cách đọc/Scene được tác giả viết và đối chiếu; root chưa rà độc lập toàn chỉ mục. Các bảng English đảo chiều được tác giả xác nhận trùng và ghi coverage riêng. Tương tự, phần lớn các chương ngoài mẫu mới có author review.
+
+Giữ và ghi chênh lệch của nguồn:PDF18 lời giải thíchEnglish gán vai cảm ơn khác thoại Nhật;PDF129 dẫn tình huống営業部 nhưng câu mẫu総務部. Không dựng thêm câu Nhật hoặc tự sửa dữ liệu in. Không có phần bị che/thiếu chữ chưa phục hồi được ghi trong bản này.
+
+Audio inventory có50nhãn②–51 theo trang/bài, chưa xác nhận số đĩa hay có file nghe thực tế. Nguồn/hash và hash bản đọc được lưu trongcoordinator-review.json. Chưa thiết kế lộ trình hoặc gán level mới.

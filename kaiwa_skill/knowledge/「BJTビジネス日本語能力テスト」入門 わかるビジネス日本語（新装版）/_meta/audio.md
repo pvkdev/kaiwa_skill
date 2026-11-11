@@ -1,3 +1,3 @@
-# CD và nguồn nghe — pilot
+# CD và nguồn nghe — kiểm kê ký hiệu hoàn tất
 
-Bìa PDF1 ghi **CD BOOK**. Hướng dẫn PDF9 ghi hội thoại có trên CD. PDF17 đặt ký hiệu **②** cạnh Scene 1. Chưa xác nhận cách đánh số track hoặc số đĩa từ toàn sách. Chưa kiểm file âm thanh thực tế. Chi tiết vùng nguồn ở `audio.json` và `pdf-pages/p0009.json`.
+Bìa PDF1 ghi **CD BOOK**. Hướng dẫn PDF9 ghi các hội thoại được ghi âm trên CD. Đã mở ảnh và ghi ký hiệu **②–㊻** cạnh Scene1–45 cùng **㊼–㊿, 51** cạnh 5 mục 便利な表現. Số 51 được in trong vòng tròn ở PDF134. Từng trang, khối nguồn và chapter chứa lời thoại nằm trong `audio.json`. Chưa xác nhận số đĩa hoặc file âm thanh thực tế.
