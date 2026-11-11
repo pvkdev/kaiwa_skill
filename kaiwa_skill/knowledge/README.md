@@ -22,18 +22,17 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [日本語でビジネス会話 中級編 練習冊](<日本語でビジネス会話 中級編 練習冊/book.md>) —148trang/21chương/143unit; đã audit đầy đủ chú từ chân trang, tác giả rà toàn sách, root QA5trang mẫu. [Giới hạn review](<日本語でビジネス会話 中級編 練習冊/_meta/coordinator-review.md>).
 
+
+- [しごとの日本語 ビジネスマナー編](<しごとの日本語 ビジネスマナー編/book.md>) — 136 trang, 25 chương, 124 unit; root QA 17 trang mẫu và đối chiếu 100/100 ký hiệu đáp án. [Giới hạn nguồn và review](<しごとの日本語 ビジネスマナー編/_meta/coordinator-review.md>). Nguồn thiếu trang in104–105, một số chữ mờ.
+
+- [わかる！話せる！日本語会話 基本文型88](<わかる！話せる！日本語会話 基本文型88/book.md>) — 96 trang, 16 chương, 113 unit; root QA 21 trang qua pilot và mở rộng, gồm 48 câu ôn và đáp án. [Giới hạn nguồn và review](<わかる！話せる！日本語会話 基本文型88/_meta/coordinator-review.md>). Giữ cảnh báo công thức PDF9 và scan cắt PDF28; 88 mã CD, chưa xác nhận tệp nghe.
+
 ## Đang clean
 
-- **わかる！話せる！日本語会話 基本文型88** —đang mở rộng full96trang từ pilot7–12 đã migration PDF-direct, giữ history/checkpoint.
+- **わかる！話せる！日本語会話 発展文型125** — full scope 225 trang; PDF-direct đang viết, chưa nghiệm thu toàn sách.
+- **しごとの日本語 電話応対 基礎編** — full scope 162 trang; PDF-direct đang viết, chưa nghiệm thu toàn sách.
+- **聞いて覚える話し方 日本語生中継 初中級編２** — full scope 152 trang; PDF-direct đang viết, chưa nghiệm thu toàn sách.
 
-- **しごとの日本語 ビジネスマナー編** —136trang/25chapter, đang viết PDF-direct. Nguồn thiếu trang in104–105 trongUnit16, sẽ giữ phần hiện hữu và ghi rõ giới hạn.
-
-- **聞いて覚える話し方 日本語生中継 初中級編２** —152trang gồm本冊 và別冊 script/từvựng/đápán, đang PDF-direct; nguồn ghi2CD, chưa kiểm file nghe.
-
-## Pilot một phần
-
-- Pilot Wakaru đã được mở rộng thành bản toàn sách ở trên. Báo cáo/hash pilot cũ được giữ làm lịch sử, không dùng thay review full.
-
-- **わかる！話せる！日本語会話 基本文型88** —bản `book.md` tạm còn buildpilot7–12; đang viết các chapter theo scope mở rộng1–96/16chapter. Migration giữ history/ledger cũ; vấn đề công thức nguồnPDF9 cònneeds_review. Chưa nghiệm thu toàn96trang.
+Pilot Wakaru và88 đã được mở rộng; báo cáo cũ chỉ áp dụng phạm vi/hash lịch sử.
 
 [Theo dõi tiến độ](../clean/STATUS.md).

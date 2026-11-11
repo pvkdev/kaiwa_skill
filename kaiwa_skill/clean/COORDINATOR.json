@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T08:12:26.196408+00:00",
+  "updated_at_utc": "2026-11-11T08:53:27.797284+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -16,31 +16,29 @@
     {
       "role": "worker_1",
       "worker": "/root/clean_keigo",
-      "stage": "full_pdf_direct_extension_active",
-      "book_id": "669041168-4f47df1cc97a",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/669041168-日本語会話-基本文型８８.pdf",
-      "title": "わかる！話せる！日本語会話 基本文型88",
-      "scope_pdf_pages": 96
+      "stage": "full_pdf_direct_active",
+      "book_id": "125-extended-patterns-for-japanese-conversation-4863922-95f1ac587f24",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/125-extended-patterns-for-japanese-conversation-4863922442-9784863922440_compress.pdf",
+      "title": "わかる！話せる！日本語会話 発展文型125",
+      "scope_pdf_pages": 225
     },
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
       "stage": "full_pdf_direct_active",
-      "book_id": "shigoto-no-nihongo-bijinesu-manaa-hen-0e3d5e9467fa",
-      "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf",
-      "scope_pdf_pages": 136,
-      "title": "しごとの日本語 ビジネスマナー編",
-      "planned_chapters": 25
+      "book_id": "shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0",
+      "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Denwa_Outai_Kisohen.pdf",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "scope_pdf_pages": 162
     },
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
-      "stage": "full_pdf_direct_reuse_partial_raw_active",
+      "stage": "full_pdf_direct_active",
       "book_id": "namachuukei-shochuukyuu-2-b5b793947c13",
       "source_pdf": "kaiwa_skill/book/Shadowing/Namachuukei Shochuukyuu 2.pdf",
-      "scope_pdf_pages": 152,
-      "planned_chapters": 26,
-      "title": "聞いて覚える話し方 日本語生中継 初中級編２"
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "scope_pdf_pages": 152
     }
   ],
   "source_queue": [
@@ -109,7 +107,9 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "3fe61bd"
     },
     {
       "book_id": "shigoto-no-nihongo-bijinesu-manaa-hen-0e3d5e9467fa",
@@ -136,15 +136,15 @@
         "Build page hashes incomplete",
         "Page 1: verification evidence/hash/issue mismatch"
       ],
-      "state": "full_direct_active_using_readonly_raw",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_sho",
       "title": "しごとの日本語 ビジネスマナー編",
       "knowledge_dir": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編",
       "known_missing_printed_pages": [
         104,
         105
-      ]
+      ],
+      "knowledge_commit": "8a162ca"
     },
     {
       "book_id": "shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0",
@@ -171,8 +171,11 @@
         "Build page hashes incomplete",
         "Page 1: Markdown/evidence missing"
       ],
-      "state": "queued_direct_with_readonly_raw",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_sho",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "knowledge_dir": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編"
     },
     {
       "book_id": "wakaru-bijinesu-nihongo-c0c4bc000a34",
@@ -245,8 +248,11 @@
       "source_sha256": "95f1ac587f2442dfb9794eb65e175d2b718ac073f08f0a96d76fdc86f9ad869f",
       "page_count": 225,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_keigo",
+      "title": "わかる！話せる！日本語会話 発展文型125",
+      "knowledge_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125"
     },
     {
       "book_id": "180-common-native-japanese-figures-of-speech-in-regular-8eeff5021caa",
@@ -328,11 +334,11 @@
         "Build page hashes incomplete",
         "Page 28: verification evidence/hash/issue mismatch"
       ],
-      "state": "full_direct_extension_assigned",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
       "migration_commit": "1c2d7c0",
       "known_source_issue": "PDF9 contradictory contraction formula retained; pilot only7–12",
-      "owner": "/root/clean_keigo"
+      "knowledge_commit": "c0c4dc1"
     },
     {
       "book_id": "700-essential-phrases-for-japanese-conversation-4863922-16d0299e765d",
@@ -377,7 +383,9 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "8e939e7"
     },
     {
       "book_id": "180-458b548674d1",
@@ -404,7 +412,9 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "0314647"
     },
     {
       "book_id": "namachuukei-shochuukyuu-1-53b5b51998a3",
@@ -422,7 +432,9 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "87c18d1"
     },
     {
       "book_id": "namachuukei-shochuukyuu-2-b5b793947c13",
@@ -443,10 +455,11 @@
       "blocker_summary": [
         "Ingest build not yet present"
       ],
-      "state": "full_direct_active_using_readonly_raw",
+      "state": "full_direct_active",
       "raw_initialization_allowed": false,
       "owner": "/root/clean_namachuukei_chu",
-      "knowledge_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２"
+      "knowledge_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２"
     },
     {
       "book_id": "nameraka-nihongo-kaiwa-7a1ef4391141",
@@ -454,7 +467,7 @@
       "source_sha256": "7a1ef4391141caedb682df607d058a97be189823fb5e5521d39614fa34d53c28",
       "page_count": 163,
       "route": "pdf_direct",
-      "state": "complete_author_checked_root_sampled_with_source_issue",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
       "knowledge_commit": "c92c81e",
       "unresolved_source_pages": [
@@ -514,7 +527,9 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "19da433"
     },
     {
       "book_id": "1170-t-v-ng-mimikara-n1-e1d2f2dffd69",
@@ -532,7 +547,9 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "dcc3864"
     },
     {
       "book_id": "880-t-v-ng-mimikara-n3-minato-b3140fae78af",
@@ -550,7 +567,9 @@
       },
       "readiness": "ready_for_fork",
       "blocker_count": 0,
-      "blocker_summary": []
+      "blocker_summary": [],
+      "state": "complete_author_checked_root_sampled",
+      "knowledge_commit": "fedfb5f"
     }
   ],
   "git_policy": "Workers never use Git. Root uses exact-path commits; concurrent ingest shares checkout/index, avoid shared staging.",
@@ -644,6 +663,18 @@
       "commit": "a90b875",
       "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review.",
       "independent_full_semantic_review": false
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編",
+      "commit": "8a162ca",
+      "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review; unresolved source issues retained.",
+      "independent_full_semantic_review": false
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 基本文型88",
+      "commit": "c0c4dc1",
+      "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review; unresolved source issues retained.",
+      "independent_full_semantic_review": false
     }
   ],
   "pilot_preservation_recheck": {
@@ -700,10 +731,10 @@
     "commit": "e974bbf",
     "fork_tests_passed": 62,
     "direct_tests_passed": 17,
-    "regression_book_count": 12,
+    "regression_book_count": 13,
     "regression_errors": 0,
-    "regression_warnings": 2,
-    "warning_scope": "Known Nameraka PDF32 source obstruction only; structure checks are not semantic certification."
+    "regression_warnings": 12,
+    "warning_scope": "Known Nameraka32 and five Manners source pages only, as of the 13-book run; book88 separately validates0errors/4sourcewarnings. Structure checks are not semantic certification."
   },
   "knowledge_outputs": [
     {
@@ -713,10 +744,10 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 8,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
       "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "knowledge_commit": "19da433"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/TỔNG HỢP 1170 TỪ VỰNG MIMIKARA N1",
@@ -725,10 +756,10 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 70,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
       "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "knowledge_commit": "dcc3864"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/TỔNG HỢP 880 TỪ VỰNG MIMIKARA N3",
@@ -737,10 +768,10 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 47,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
       "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "knowledge_commit": "fedfb5f"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）",
@@ -749,16 +780,55 @@
       "source_mode": "pdf_direct",
       "metadata_status": "full",
       "scope_pdf_page_count": 152,
-      "chapter_checkpoint_counts": {
-        "author_checked": 21
-      },
       "audio_inventory_present": true,
       "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
         "author_checked": 152
       },
+      "chapter_checkpoint_counts": {
+        "author_checked": 21
+      },
       "knowledge_commit": "0a884d7"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編",
+      "title": "しごとの日本語 ビジネスマナー編",
+      "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 136,
+      "audio_inventory_present": true,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 131,
+        "needs_review": 5
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 21,
+        "needs_review": 4
+      },
+      "knowledge_commit": "8a162ca"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Denwa_Outai_Kisohen.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 162,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 31,
+        "pending": 131
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 5,
+        "pending": 33
+      }
     },
     {
       "book_dir": "kaiwa_skill/knowledge/なめらか日本語会話",
@@ -767,15 +837,15 @@
       "source_mode": "pdf_direct",
       "metadata_status": "full",
       "scope_pdf_page_count": 163,
-      "chapter_checkpoint_counts": {
-        "author_checked": 26,
-        "needs_review": 1
-      },
       "audio_inventory_present": true,
       "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issue",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
         "author_checked": 162,
+        "needs_review": 1
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 26,
         "needs_review": 1
       },
       "knowledge_commit": "c92c81e"
@@ -787,19 +857,36 @@
       "source_mode": "pdf_direct",
       "metadata_status": "full",
       "scope_pdf_page_count": 96,
+      "audio_inventory_present": true,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 94,
+        "needs_review": 2
+      },
       "chapter_checkpoint_counts": {
         "needs_review": 3,
-        "author_checked": 8,
-        "draft": 1,
-        "pending": 4
+        "author_checked": 13
       },
+      "knowledge_commit": "c0c4dc1"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125",
+      "title": "わかる！話せる！日本語会話 発展文型125",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/125-extended-patterns-for-japanese-conversation-4863922442-9784863922440_compress.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 225,
       "audio_inventory_present": true,
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 62,
-        "needs_review": 2,
-        "pending": 32
+        "author_checked": 23,
+        "pending": 202
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 3,
+        "pending": 27
       }
     },
     {
@@ -809,10 +896,10 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 140,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
       "acceptance": "full_author_checked_with_root_sampled_qa",
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "knowledge_commit": "689603f"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/外国人のための日本語敬語の使い方 基本表現85",
@@ -821,10 +908,10 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 93,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
       "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "knowledge_commit": "8e939e7"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 本文冊",
@@ -833,10 +920,10 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 138,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
       "acceptance": "full_author_checked_with_root_sampled_qa",
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "knowledge_commit": "42b8667"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 練習冊",
@@ -845,14 +932,14 @@
       "source_mode": "pdf_direct",
       "metadata_status": "full",
       "scope_pdf_page_count": 148,
-      "chapter_checkpoint_counts": {
-        "author_checked": 21
-      },
       "audio_inventory_present": true,
       "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
         "author_checked": 148
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 21
       },
       "knowledge_commit": "a90b875"
     },
@@ -863,10 +950,10 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 103,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
       "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "knowledge_commit": "3fe61bd"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 中～上級編",
@@ -875,10 +962,10 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 89,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
       "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true
+      "full_completion_requires_review_not_status_alone": true,
+      "knowledge_commit": "0314647"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編 1",
@@ -887,49 +974,30 @@
       "source_mode": "raw_fork",
       "metadata_status": "full",
       "scope_pdf_page_count": 91,
-      "chapter_checkpoint_counts": {},
       "audio_inventory_present": true,
-      "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true
-    },
-    {
-      "book_dir": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編",
-      "title": "しごとの日本語 ビジネスマナー編",
-      "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Bijinesu_Manaa_hen.pdf",
-      "source_mode": "pdf_direct",
-      "metadata_status": "full",
-      "scope_pdf_page_count": 136,
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
-      "audio_inventory_present": true,
-      "chapter_checkpoint_counts": {
-        "author_checked": 16,
-        "needs_review": 4,
-        "pending": 5
-      },
-      "page_checkpoint_counts": {
-        "author_checked": 108,
-        "needs_review": 5,
-        "pending": 23
-      }
+      "knowledge_commit": "87c18d1"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２",
-      "acceptance": null,
-      "full_completion_requires_review_not_status_alone": true,
       "title": "聞いて覚える話し方 日本語生中継 初中級編２",
       "source_pdf": "kaiwa_skill/book/Shadowing/Namachuukei Shochuukyuu 2.pdf",
       "source_mode": "pdf_direct",
       "metadata_status": "full",
-      "audio_inventory_present": true,
       "scope_pdf_page_count": 152,
-      "chapter_checkpoint_counts": {
-        "author_checked": 3,
-        "pending": 23
-      },
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 19,
-        "pending": 133
+        "author_checked": 95,
+        "needs_review": 1,
+        "pending": 56
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 13,
+        "needs_review": 1,
+        "pending": 12
       }
     }
   ],
@@ -950,7 +1018,7 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 12,
-  "completed_full_source_pages": 1242,
-  "completion_count_definition": "7 prior full independently reviewed books; roleplay140 and main138 full author-checked with root16/10page sampled QA, respectively."
+  "completed_full_books": 14,
+  "completed_full_source_pages": 1474,
+  "completion_count_definition": "14 released supplied-PDF scopes /1474 pages: initial7 independently reviewed in full; next7 author full/root sampled. Source issues remain explicit; full PDF scope does not imply flawless source."
 }

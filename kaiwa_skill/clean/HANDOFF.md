@@ -1,50 +1,48 @@
-# Tiếp quản điều phối clean + PDF → knowledge
+# Tiếp quản điều phối clean và PDF → knowledge
 
-Repo D:/CODE/git/kaiwa_skill; cwd môi trường D:/AI_SKILL. Luôn đặt workdir đúng repo.
+Repo D:/CODE/git/kaiwa_skill; cwd môi trường D:/AI_SKILL. Luôn đặt workdir đúng repo. Đọc AGENTS.md và hai skill hiện hành trước khi nối việc.
 
 ## Mục tiêu và quyền đã giao
 
-User yêu cầu hoàn tất30PDF/4597trang, không kết thúc lượt chỉ để báo khởi chạy hoặc checkpoint giữa chừng. Giữ root điều phối, giao sách kế sau bàn giao. Không tạo goal/automation/chat mới; chỉ final khi hết phạm vi, user dừng hoặc giới hạn thực sự. Đóng app dừng tính toán, checkpoint trên đĩa cho phép nối lại.
+Hoàn tất30 PDF/4597 trang. User yêu cầu giữ lượt điều phối hoạt động, giao sách kế sau bàn giao, không final tại launch hoặc checkpoint giữa chừng. Không tạo chat, goal hay automation mới. Chỉ kết thúc khi hết phạm vi, user dừng hoặc giới hạn thực sự. Checkpoint trên đĩa giúp tiếp sau gián đoạn; không hứa tiếp tính toán khi ứng dụng đóng.
 
-Raw đầy đủ→fork clean; raw chưa có/còn dở→PDF-direct, dùng raw cũ chỉ đọc phụ trợ. Không phải hoàn tất raw rồi mới clean. Không sửa PDF/corpus/claim/snapshot cũ. Bản knowledge đi theo tên sách thật, giữ mạch riêng, mọi ví dụJP+VI, giải thích, bài tập/ô trống/lựa chọn/rolecard/đáp án/phụ lục. Chú từ cuối trang/dạng từ điển là kiến thức, không phải rác footer. Giữ dữ kiện hình đủ để tự làm bài, vai manga theo từng bóng thoại. Không tự giải/đoánJP từ bản dịch/hiện đại hóa nội dung/gán topic hoặc level.
+Raw đầy đủ dùng kaiwa-fork-knowledge; PDF chưa chạy/raw còn dở dùng kaiwa-pdf-knowledge, chỉ tham khảo raw cũ dưới dạng nguồn phụ chỉ đọc. Không sửa PDF/corpus/claim/snapshot. Bản knowledge đặt theo tên sách thật, giữ mạch riêng, mọi ví dụ Nhật kèm Việt, giải thích, bài tập, lựa chọn, ô trống, rolecard, đáp án in sẵn và phụ lục. Chú từ chân trang/dạng từ điển vẫn là kiến thức. Giữ dữ kiện hình đủ để làm bài và vai manga theo từng bóng thoại. Không tự giải, đoán tiếng Nhật từ bản dịch, hiện đại hóa nguồn hoặc gán topic/level.
 
-Mỗi sách cần audio.json/audio.md: identity/ấn bản/ISBN/nhãn CD/tape/track/script/URL và dẫn trang/block khi thấy. Actual files not_checked nếu chưa kiểm. Không suy sốđĩa từ mã CD hoặc tự tải. Một số inventory bảy sách cũ chỉ rà giới hạn/unknown, không gọi là full audio audit.
+Mỗi sách cần audio.json/audio.md: tên/ấn bản/ISBN, CD/tape/track/script/URL và bằng chứng trang/block khi thấy. File thực tế chưa kiểm thì not_checked. Không suy số đĩa từ nhãn CD hoặc tự tìm/tải. Một số inventory cũ có phạm vi giới hạn, không gọi là full audio audit.
 
-## Runtime và bốn vai sub
+## Runtime và phân công
 
-Tất cả sub gpt-6-sol/high. Runtime4active tính cả root nên tối đa3sub active, luân phiên một vai điều phối và ba vai worker. Không tạo sub thứ năm/chat riêng để lách. Root giữ Git và QA. Một writer cho một sách.
+Tất cả sub gpt-6-sol/high. Runtime4 active tính root nên tối đa3 sub active, luân phiên một vai điều phối và ba worker. Không tạo sub thứ năm. Root giữ Git và QA; một writer cho mỗi sách. Khi đang viết, root chỉ đọc và gửi sửa; khi bàn giao root mới sở hữu sửa/chốt.
 
-- /root/knowledge_coordinator: idle sau bàn giao parser/rebase tools; code hiện0.4.7 đã root chốt. Chỉ kích hoạt khi có slot/task kỹ thuật cụ thể.
-- /root/clean_keigo: active full96trang `knowledge/わかる！話せる！日本語会話 基本文型88`,16chapter. Đã hết phần đầu/PART1/Warm-up và các nhóm tớiPDF68; đang nhóm cuối câu từ69đến76, sau đó77–96. Chỉ sourceissuesPDF9 (công thức mâu thuẫn) và28 (scan cắt mép/đáy, câu8 mất cuốiA/B). Đã giữ phầnEnglish còn đọc được thànhVI, không dựngJP. Warm-up giữ48câu, đã sửa ôVI: bỏ12ô dư ở seedDrillB, thêm1ô mất ở第3回4, không điền ngữ pháp. Root đã QA front mới/ảnh2–6 và đọcunit14/crop28; pilot7–12 có full QA lịch sử. Chưa root QA toàn Warm-up ảnh18–22 hoặc phần sau. Bảnbook.md vẫn là buildpilot cũ khi full chưa đủ. Worker từng bàn giao tới31 giữa chừng, đã followup tiếp32–96, không coi là hoàn thành.
-- /root/clean_namachuukei_sho: active full136trang/25chapter `knowledge/しごとの日本語 ビジネスマナー編`. Đã quaUnit18/PDF119; tiếp120–125 rồi tới136. Sourceissues đã biết: phụđề mờ23/69, mảnh lời dẫn28 kết thúcはずで, thiếu trang in104–105 giữaPDF105/106 thuộcUnit16. Root xác minh23/28–29/105–106, không tự nối chữ. Root QA trọnUnit1/ảnh12–17 và bảng kính ngữ44–45; sửa vai ô5 ở23 thành上司, ô6ちょっとね; đoạn28 so sánhtext tự đủ, excerptJP hỏng ởmeta. Divider73 đã cóunit/anchor sau QA. Các dạngMDT/NTD/MTD và七田/イチダ/市田/シチダ trongUnit15 được giữ đúng từng nơi, không normalize. Unit16: chú thíchEnglish/Chinese106 trùngJP107 đã đốichiếu, không bỏ kiến thức riêng. Cần QA cuối các sơ đồ ghếUnit14 và100đáp án○× ở136 nếu có thể. Audio hiệnunknown theo phạm vi đã đọc.
-- /root/clean_namachuukei_chu: active full152trang/26chapter `knowledge/聞いて覚える話し方 日本語生中継 初中級編２`, SHA b5b793947c13… (full trongCOORDINATOR). Front1–6,guide7–11 vàBài1/2 PDF12–27 đãchecked; tiếpBài3 từ28. Bản chính10課PDF12–91,あとがき/tácgiả/xuấtbản92–94,別冊95–96,10scriptchapters97–135,単語表136–141,解答142–151,cover152excluded. Phải giữ cả別冊, không lấy script/đápán điền vào đề. Cover ghi2CD; tracks đã ghi1-2…1-17 theo nguồn, actualfilesnot_checked. Nétbútchì người học ở21/23–27 được loại riêng. Root còn cần QA sớm guide/Bài1; nguồn bằngảnh, textlayer rỗng.
+- /root/knowledge_coordinator: idle sau bàn giao công cụ0.4.7; chỉ kích hoạt khi có slot và việc kỹ thuật cụ thể.
+- /root/clean_keigo: **わかる！話せる！日本語会話 発展文型125**, full225 trang, 30 chương, book_id125-extended-patterns-for-japanese-conversation-4863922-95f1ac587f24. Front1–12 đã checked, tiếp序章13–16 rồi PART1 từ17. Map: PART1 17–52; PART2/A53–107, B108–155, C156–176; PART3 177–219; 文型リスト220–223; colophon/back224–225. ISBN9784863922440, in lần2 năm2016; CD付, actual files not_checked. Root còn cần QA sớm front/chương đầu. Sách88 đã bàn giao và chốt, không tiếp sửa88.
+- /root/clean_namachuukei_sho: **しごとの日本語 電話応対 基礎編**, full162 trang, 38 chương, SHA dfdb0e2b61e0… đầy đủ trongCOORDINATOR. Front1–11, intro12–19, Unit1–3 PDF20–31 đã checked; tiếpUnit4 từ32.35 unit mỗi unit4 trang tới159; colophon/back160–162. Check lựa chọn cùng chữ nhưng khác giọng, tên/số điện thoại/tin nhắn, đáp án/script in riêng; không chuẩn hóa theo suy đoán. CDつき và mã1/2 củaUnit1, actual files not_checked. Root chưa QA, ưu tiên sớm front/intro/Unit1. Manners đã chốt, không tiếp ghi.
+- /root/clean_namachuukei_chu: **聞いて覚える話し方 日本語生中継 初中級編２**, full152 trang/26 chương, SHA b5b793947c13… . Main10 bài PDF12–91 đã viết,167 units; tiếpあとがき/colophon92–94,別冊95–96,10 script chapters97–135,単語表136–141,解答142–151,back152. Phải giữ cả別冊, không điền script/đáp án vào đề. PDF83 needs_review hẹp: chỉ dẫn a〜e nhưng khung chỉ a–d. Cover ghi2CD; tracks tới2-43 đã thấy, không suy2-1. Root mở1/7/13/15/16/19/97, so vocab23mục và đềdictation/roleplay mẫu; đã yêu cầu sửa hai VI nhầm ngữ nghĩa ởbài1, worker báo sửa/refreshed. Cần lưu báo cáo QA mẫu, đọc hash mới và tiếp QA script/từ/đáp án khi viết xong. Badge bìa ghi JLPT旧3級, không tự đổi sangN3.
 
-Các mốc là snapshot. Chạy resume/hash thật trước nối việc. Khi tác giả đang ghi, root QA chỉ đọc và gửi sửa; không cùng sửa chapter.
+Mốc trên là snapshot, chạy resume/hash thật trước tiếp quản. Còn13 PDF chưa được giao, tra source_queue; tiếp giao hợp lý sau bàn giao, không hỏi lại quyền.
 
-## Đã release phạm vi PDF cung cấp
+## Đã chốt phạm vi PDF cung cấp
 
-12sách/1242trang, xem knowledge/README.md vàCOORDINATOR.released_supplied_pdf_scope. Bảy sách đầu501trang đã full independent review; năm bản mới chỉ tác giả full/root mẫu. Full ở đây là PDF được cung cấp; vùng nguồn thiếu/che được ghi riêng, không dựng.
+14 sách/1474 trang. Danh sách/commit ở COORDINATOR.released_supplied_pdf_scope và knowledge/README.md. Bảy bản đầu501 trang full independent review; bảy bản mới author full/root sampled: roleplay140 (689603f, root16trang);本文冊138 (42b8667, root10); Nameraka163 (c92c81e, root15, nguồn32 bị che); Wakaru152 (0a884d7, root16);練習冊148 (a90b875, root5, author audit toàn chú từ); Manners136 (8a162ca, root17,100/100 đáp án ký hiệu);88patterns96 (c0c4dc1, root21 qua pilot/migration/mở rộng).
 
-Năm bản mới: roleplay140 commit689603f (root16trang mẫu);本文冊138 commit42b8667 (root10mẫu); Nameraka163 c92c81e (root15mẫu, chỉsource32bịche, allow-source-issues0error/2warn); Wakaru152 0a884d7 (root16mẫu qua pilot+extension, strict0/0);練習冊148 a90b875 (root5mẫu86/89/90/91/92, auditgloss toàn8–147 do tác giả, strict0/0). Không gọi các bản này là full independent semantic review.
+Manners nguồn23/69 phụ đề mờ,28 mảnh câu,105/106 thiếu trang in104–105. allow-source-issues0error/10warn. Sách88 nguồn9 công thức mâu thuẫn và28 cắt đáy câu8A/B; allow-source-issues0error/4warn. Giữ thông báo ngay trong bản đọc. Root đã so48 câu ôn/đáp án và mục tra cứu95–96; sửa hàng17 降りそう thành có vẻ sắp mưa dựa trên ngữ cảnh31. CD1–88 là nhãn đoạn, không phải88 đĩa. Các bản này không phải full independent semantic review.
 
-本文冊 rebase provenance có audit: mọi138rawpage bytes/PDF không đổi, compiled chỉ thêm4anchor/dòngtrống. Snapshot mới b3ee70a10d8ae410/224b77fb-rebase-756b3046; history _meta/rebase-history/756b3046d61f4fd6a3ec63688854bd1c. Snapshot cũ9a2c9088f812080b/224b77fb giữ nguyên.
+本文冊 rebase có audit: toàn138 raw page bytes/PDF không đổi, compiled chỉ thêm4anchor/dòng trống. Snapshot mới b3ee70a10d8ae410/224b77fb-rebase-756b3046; history _meta/rebase-history/756b3046d61f4fd6a3ec63688854bd1c; giữ snapshot cũ9a2c9088f812080b/224b77fb.
 
-Book88 đã migrationraw→direct commit1c2d7c0, history647ff62ba2fa4c548d7c92d5fb545857 bảo toàn4chapter/9unit/ledger/review cũ. Sau đó đãextendfull1–96; không init/reset. clean-state cũ inactive, source.mode=pdf_direct và direct-state là luồng hiện hành.
+Sách88 migration raw→direct1c2d7c0; history647ff62ba2fa4c548d7c92d5fb545857 bảo toàn4chapter/9unit/ledger/review cũ; extend full1–96 có scope-history, không init/reset. clean-state cũ inactive, direct-state hiện hành.
 
-Ngoài3sách active còn15PDF chờ (12chưa khởi tạo+3rawpartial), tra source_queue. Dự kiến sauManners làDenwa cùngseries, sau88 là125patterns; có thể chọn hợp lý trong hàng đợi theo readiness thật. Không giao trùng/đợi user xác nhận lại.
+## Công cụ và kiểm tra
 
-## Công cụ/QA hiện hành
+Version0.4.7, commite974bbf;62 test fork+17 direct PASS. Regression13 bản trước88:0errors/12warn nguồnNameraka+Manners;88 kiểm riêng0/4. Cache .cache/validator-regression/v047-results.json; helper run.py chỉ hỗ trợ root, không phải phụ thuộc sản phẩm.
 
-Version0.4.7, commite974bbf.62test fork+17direct PASS;12book regressionexit0, chỉ2warn nguồn Nameraka32. Kết quả cache `.cache/validator-regression/v047-results.json`; helperread-only `.cache/validator-regression/run.py` chọn các bản đãrelease, không phải phụ thuộc sản phẩm.
+Skill .agents/skills/kaiwa-fork-knowledge/SKILL.md và .agents/skills/kaiwa-pdf-knowledge/SKILL.md cùng direct-contract. CLI init/checkpoint/resume/build/validate/extend-scope. build không có --allow-source-issues; validate có. Full đang dở chỉ checkpoint/resume, không fake evidence/thu scope để xanh. needs_review chỉ lỗi nguồn đã mở ảnh, issue đúng page/block/unit; chưa viết dùng draft. Parser không chứng minh đúng nghĩa/đủ nội dung, không ép sách vào template để vượt parser.
 
-Skillraw `.agents/skills/kaiwa-fork-knowledge/SKILL.md`; direct `.agents/skills/kaiwa-pdf-knowledge/SKILL.md`, đọc cảcontract. Direct CLI: init/checkpoint/resume/build/validate/extend-scope. build không có cờ--allow-source-issues; validate có. Full còn dở dùngcheckpoint/resume, không fakeevidence/thu scope đểbuildxanh. needs_review chỉ lỗi nguồn đãmởảnh, issue đúngpage/block/unit; pending/nội dung còn thiếu dùngdraft. Parser hỗ trợ nhiều dòng/inline, nhưng không chứng minh đúng nghĩa/đủ mọi dạng dịch. Đừng sửa sách về template chỉ để vượt parser.
-
-Raw-fork scan nhận pin snapshot qua nguồn gốc ledger và bỏ ledgerinactive củaPDF-direct. rebase-identical-pages chỉ dùng khiPDF/rawpage byte-identical vàcompiled chỉ thêmanchor/dòngtrống, lưuhistory/snapshot mới, không giả review.
+Raw-fork scan nhận pin snapshot theo ledger gốc, bỏ ledger inactive của direct. rebase-identical-pages chỉ dùng khi PDF/rawpage byte-identical và compiled chỉ thêm anchor/dòng trống, luôn giữ history/snapshot.
 
 ## Git và môi trường
 
-Git chung với chat ingest khác; chỉ exact-path stage/diff vàcommit --only. Không git add .,reset,push,stage bunpou/PDF/corpus/production hoặc thay đổi khác ngoài phạm vi. Commit code và từng output nghiệm thu riêng. knowledge/source_snapshots giữ nguyênbytes theo.gitattributes; CRLF và2space hardbreak có chủ đích. Check whitespace bằng `git -c core.whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol diff --cached --check -- <paths>`.
+Git dùng chung chat ingest khác; stage exact paths và commit --only. Không add., reset, push, stage bunpou/PDF/corpus hoặc thay đổi ngoài phạm vi. Commit công cụ và từng sách nghiệm thu riêng. knowledge/source_snapshots giữ bytes theo.gitattributes, CRLF và2space hardbreak có chủ đích. Whitespace check với core.whitespace=-blank-at-eol,-blank-at-eof,cr-at-eol.
 
-`py -B` +PYTHONUTF8=1; Python cópymupdf/yaml, dùngimportpymupdfasfitz; pdfinfo/Poppler trênPATH. Output chỉmd/json/jsonl; ảnh/crop/helperPython tạm ởignored .cache, khôngcommit. Nếuexec_command trảsession_id phảipoll write_stdin, không làm mấtID bằng chỉin.output. Khôngsleeplonger60s khi đang điều phối.
+Dùng py -B, PYTHONUTF8=1, import pymupdf as fitz; pdfinfo/Poppler có PATH. Output chỉmd/json/jsonl; ảnh/crop/helperPython ở ignored.cache. exec_command trảsession_id thì poll write_stdin; functions.wait chỉ dùng nếu functions.exec báo running cell. Không sleep/wait chặn quá60giây; gửi commentary tiếng Việt ngắn khi có thay đổi có ý nghĩa, khoảng60giây trong lúc làm.
 
-Khi tiếp quản xemgitstatuscó lọc, tránh in hàng trăm đường dẫn và không stage thay đổi ngoài phạm vi. Không kết thúc turn ở trạng thái này; tiếp QA và điều phối hàng đợi.
+Không final ở trạng thái này; tiếp QA và điều phối hàng đợi tới hết phạm vi.
