@@ -17,3 +17,7 @@ Root mở thêm PDF 129, tổng 13 trang, so trọn unit 110 手に負えない:
 Root đọc lại sau sửa: tiêu đề mini hiện giữ số 3 bình thường, không còn chèn “nhãn in” vào phần học.
 
 Root mở thêm168, tổng14 ảnh nguồn. So trọn biểu thức149 踏んだり蹴ったり: hội thoại1 thật có hai nhãnA trong Nhật, Anh làA/B. Output giữ nguyên nhãn và cảnh báo hẹp, đủ nghĩa/4lượt/chú từ離婚・文句を言う. Đây là vấn đề nguồn thứ hai được root xác nhận, tách khỏi53; không tự đổi vai.
+
+Root mở9/47/198/199/204/207, tổng20 ảnh nguồn. So đầy đủ mục28 và miniうそ, mục179 và mini山, mục180; source47 phóng crop xác nhận cả hai ví dụうそ. Các câu Nhật–Việt, chú từ, nghĩa chính/phụ và mạch phù hợp. TOC9 xác nhận nhómX/Y/Z và các mục149–180; chưa kiểm độc lập toàn TOC4–8.
+
+Đã so trọn45 khóa English204 và57 mục Japanese207 cùng tham chiếu trang; các lỗi OCR ở bản draft English204 đã được writer tự sửa trước khi root gửi yêu cầu, bản hiện tại đủ45 khóa. Index Japanese in bằngromaji, output nối sang headword Nhật đã in trong bài và nghĩa Việt, giữ thứ tự Latin. Kiểm nội bộ đủ180 heading chính1–180 và mọi nhãn Nhật của index Japanese khớp heading chính. Riêng English “Want desperately” dùng aliaskana, root mở47 xác nhận dạng chính喉から手が出るほど欲しい và yêu cầu thống nhất tên tra ấy. Chưa coi toàn hai index hoặc180 bài đã được kiểm độc lập.
