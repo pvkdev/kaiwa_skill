@@ -269,6 +269,28 @@ class TranslationLayoutTest(unittest.TestCase):
     def test_negated_foreign_only_claim_does_not_bypass_pairing(self):
         self.assertTrue(self.check('**Lượt A không chỉ có trong cột English (VI):** Xin chào.\n'))
 
+    def test_deferred_translations_can_be_a_multiline_numbered_list(self):
+        self.assertEqual([], self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n\n'
+                                        '**Bản Việt sau khi chọn:**\n\n1. Vâng.\n2. Không.\n'))
+
+    def test_multiline_deferred_translation_can_keep_indented_turns(self):
+        self.assertEqual([], self.check('1. **JP:** A: はい。 B: どうぞ。\n2. **JP:** いいえ。\n\n'
+                                        '**Bản Việt:**\n1. A: Vâng.\n   B: Xin mời.\n2. Không.\n'))
+
+    def test_multiline_deferred_translation_cannot_skip_an_item(self):
+        self.assertTrue(self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n\n'
+                                   '**Bản Việt:**\n1. Vâng.\n3. Không.\n'))
+
+    def test_multiline_deferred_translation_cannot_hide_missing_last_item(self):
+        self.assertTrue(self.check('1. **JP:** はい。\n2. **JP:** いいえ。\n\n'
+                                   '**Bản Việt:**\n1. Vâng.\n'))
+
+    def test_multiline_deferred_translation_still_checks_blanks(self):
+        report = self.report('1. **JP:** 名前は＿＿です。\n2. **JP:** はい。\n\n'
+                             '**Bản Việt:**\n1. Tôi tên An.\n2. Vâng.\n')
+        self.assertEqual([], report.errors)
+        self.assertTrue(any('JP 1, VI 0' in warning for warning in report.warnings))
+
 
 if __name__ == '__main__':
     unittest.main()

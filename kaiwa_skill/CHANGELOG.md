@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.10 — 2026-11-11
+
+- Nhóm bản Việt đặt sau đề có thể dùng danh sách nhiều dòng, mỗi mục đánh số riêng và chứa các lượt thoại xuống dòng. Vẫn yêu cầu đủ mục tương ứng, không vượt ranh giới phần và giữ cảnh báo lệch ô trống; không ép hội thoại về một đoạn dài.
+- 80 test fork và17 test direct PASS; regression14 bản đã chốt:0 lỗi,16 cảnh báo nguồn đã biết. Bài3 của 生中継2 giữ bố cục mới dễ đọc sau khi khôi phục đủ lượt/lựa chọn.
+
 ## 0.4.9 — 2026-11-11
 
 - Nhận nhãn bản Việt nêu rõ một lượt chỉ có trong cột dịch ngoại ngữ; không buộc dựng câu Nhật khi nguồn thật thiếu đối ứng. Nhãn này vẫn cần nội dung và đối chiếu PDF; nhãn vai chỉ nhắc English hoặc nguồn có cảJapanese vẫn giữ kiểm tra cặp. Không đổi bố cục sách để vượt validator.

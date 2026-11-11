@@ -301,13 +301,32 @@ def deferred_translations(lines: list[str], markers: dict[int, tuple[str, str]])
         glosses = [(i, match) for i, match in glosses if match is not None]
         if len(glosses) != 1:
             continue
-        _, gloss = glosses[0]
+        gloss_index, gloss = glosses[0]
         text = gloss[1]
-        numbers = list(re.finditer(r'(?<!\S)([①-⑳])\s*', text))
-        if [ord(match[1]) - ord('①') + 1 for match in numbers] != expected:
-            continue
-        parts = [text[match.end():numbers[j + 1].start() if j + 1 < len(numbers) else len(text)].strip()
-                 for j, match in enumerate(numbers)]
+        if text.strip():
+            numbers = list(re.finditer(r'(?<!\S)([①-⑳])\s*', text))
+            if [ord(match[1]) - ord('①') + 1 for match in numbers] != expected:
+                continue
+            parts = [text[match.end():numbers[j + 1].start() if j + 1 < len(numbers) else len(text)].strip()
+                     for j, match in enumerate(numbers)]
+        else:
+            # A readable translation section may put one numbered item per
+            # line instead of compressing the whole group into a paragraph.
+            numbered: list[tuple[int, str]] = []
+            for line in lines[gloss_index + 1:end]:
+                if not line.strip():
+                    continue
+                item = re.match(r'^\s*(\d+)[.)]\s+(.*)$', line)
+                if item:
+                    numbered.append((int(item[1]), item[2].strip()))
+                elif numbered and line.startswith(('  ', '\t', '>')):
+                    number, value = numbered[-1]
+                    numbered[-1] = number, value + '\n' + line.strip()
+                else:
+                    break
+            if [number for number, _ in numbered] != expected:
+                continue
+            parts = [value for _, value in numbered]
         if all(has_block_content(part) for part in parts):
             result.update(zip(indices, parts))
     return result
