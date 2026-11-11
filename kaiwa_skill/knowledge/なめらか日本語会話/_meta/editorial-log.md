@@ -1,0 +1,37 @@
+# Nhật ký biên tập trực tiếp
+
+- PDF1–2: trang bìa và trang tên xác nhận nhan đề, tác giả, ALC; hình bìa chỉ trang trí.
+- PDF3–4: chuyển toàn bộ mạch lời nói đầu sang Việt, giữ nguyên câu Nhật minh họa về kính áp tròng và bản Việt, đối tượng khoảng 300 giờ và bối cảnh Kobe 1995.
+- PDF5: giữ mục lục theo PART và §; số trang là trang in, không tự đồng nhất với trang PDF vật lý.
+- PDF6–7: giữ cấu trúc, nhãn vai, thời lượng, cách dùng tape bán riêng (kể cả luyện nghe cho 日本語能力試験) và trình tự roleplay.
+- PDF8–9: PDF9 là bản dịch English của lời gửi người học PDF8, không có nội dung riêng; một bản Việt đủ ý từ hai trang được dùng trong chapter.
+- PDF10–15: PART1 mở §1; giữ 9 cặp câu đối chiếu, 8 hội thoại mẫu, bài luyện I–V với đủ ô trống/lựa chọn, và 2 bài nghe in lời thoại. Hình nhóm năm người ở PDF15 chuyển thành dữ kiện trung tính để người học vẫn tự xác định người trong ảnh; không điền đáp án. Bản English giải thích trùng nghĩa ở PDF11 đã chuyển ý sang Việt.
+- PDF16–20: giữ tám cặp dạng rút ngắn, sáu hội thoại mẫu, luyện I–IV với các từ chọn/ô trống không tự điền, và hai bài nghe có câu hỏi–lời thoại. Ghi tay không thuộc bản in trên PDF17 đã bỏ.
+- PDF21–26: giữ 13 cặp câu, sáu hội thoại, luyện I–VI (không điền ô trống/○×), hai bài nghe có lời thoại. PDF26 có chữ viết tay của người dùng scan, đã bỏ; nhãn người nói cuối bài nghe 1 đổi A/B ngay bản in, giữ theo nguồn.
+- PDF27–33: giữ ba chức năng って／て, sáu hội thoại mẫu, luyện I–VIII, hai bài nghe. Chữ viết tay PDF29/30 bỏ; PDF32 mảng ghi chú che một phần chữ in luyện VII.2/VII.4, đã giữ đoạn đọc chắc chắn và ô trống, page/unit/chapter draft chờ nguồn rõ hơn; không đoán chữ bị che.
+- PDF34–37: giữ ba nhóm ん và chú ý tuổi/giới, bảy hội thoại mẫu, luyện I–III, hai bài nghe với đề và toàn thoại. Ghi tay PDF35 ngoài sách đã bỏ.
+- PDF38–43: giữ bảng mọi cặp đổi âm, bảy hội thoại, luyện I–III và hai bài nghe. Ghi tay ở ô luyện III.2 PDF42 không được dùng làm đáp án.
+- PDF44–49: giữ divider PART2, giải thích lược trợ từ, năm hội thoại có ngoặc chỉ trợ từ, luyện I–II chưa điền, hai bài nghe có dấu ○. PDF45 crop cao xác nhận câu cuối hội thoại 5 「お客様がお待ちよ、きれいな方よ」 dù có ghi tay đè; không đưa bút tích vào bài.
+- PDF50–57: giữ năm chức năng cụm rút, dấu ngữ điệu ↗, mười hội thoại mẫu, luyện I–VI còn nguyên ô/từ chọn, hai bài nghe. PDF51 nhãn tham chiếu Nhật p17/p28 khác English p6/p14; giữ số ở nhãn Nhật, không suy đồng nhất. Bút tích PDF52/53/55/56 bỏ khỏi lời giải.
+- PDF58–64: giữ đủ 18 cặp câu cố định, mười hội thoại mẫu, luyện I–V và hai bài nghe, mọi lượt Nhật–Việt; ô trống/lựa chọn không điền. Bút tích PDF59/61 bỏ khỏi nội dung in.
+- PDF65–71: giữ hai mươi cụm lặp, chú ý lặp quá khứ, sáu hội thoại, luyện I–V và hai bài nghe. PDF67 hai chuỗi tranh/bong bóng trống được chuyển thành mô tả diễn biến khung, không điền lời giải; ghi tay PDF66/68/71 bỏ khỏi văn bản nguồn.
+- PDF72–78: giữ năm cách diễn đạt để ngỏ, ví dụ đầy đủ, luyện I–VI với mọi ô/lựa chọn chưa giải và hai bài nghe. Bút tích PDF74/78 bỏ khỏi lời in.
+- PDF79–85: giữ năm kiểu chuyển trật tự, bốn biến thể câu Tanaka, chín hội thoại, luyện I–VI và hai bài nghe Nhật–Việt. Mọi ô/lựa chọn chưa điền; ghi tay PDF81 bỏ khỏi bản in.
+- PDF86–91: trang mở PART3 và 11 mục, đủ năm nhóm cách nói lịch sự/thân mật, luyện I–III (ba tình huống riêng) và hai bài nghe Nhật–Việt. Các ô chưa điền.
+- PDF92–96: giữ năm hội thoại mẫu, luyện I–V với đủ lựa chọn và ô trống, hai bài nghe Nhật–Việt. Không ghép đáp án hoặc điền bài.
+- PDF97–101: giữ bốn hội thoại mẫu, luyện I–III với các ô trống và từ chọn, hai bài nghe Nhật–Việt về du lịch và khách sạn; không tự điền đáp án.
+- PDF102–105: giữ sắc thái ね／な／さ, khác biệt giới/vùng và mức độ lịch sự; sáu nhóm hội thoại, hai bài chèn từ không giải, hai bài nghe Nhật–Việt.
+- PDF106–112: giữ bảng lời hưởng ứng lịch sự/thân mật, năm hội thoại, luyện I–V với đầy đủ cặp chọn/ô trống, hai bài nghe Nhật–Việt. Không tự chọn đáp án.
+- PDF113–117: giữ ghi chú ね／な, sáu hội thoại, luyện I–IV với toàn lựa chọn/ô trống và hai bài nghe Nhật–Việt. Không tự điền hay chuyển câu hỏi thành đáp án.
+- PDF118–124: giữ よ／ぞ và chú ý lịch sự/giới, 11 hội thoại mẫu, luyện I–VII với vai/cặp chọn/ô trống và hai bài nghe Nhật–Việt. Không giải bài.
+- PDF125–129: giữ hai nhóm năm lời cảm ơn/xin lỗi, luyện I–V với câu nguồn/lựa chọn/ô trống, hai bài nghe Nhật–Việt. Không điền bài tập.
+- PDF130–134: giữ giải thích, ba hội thoại mẫu, luyện I–V với mọi lựa chọn và ô trống, hai bài nghe Nhật–Việt. Không điền bài tập.
+- PDF135–139: giữ bốn hội thoại mẫu, luyện I–VI với tranh/bản đồ được diễn giải thành dữ kiện và ô trống, hai bài nghe Nhật–Việt. Không điền bài tập.
+- PDF140–145: giữ giải thích và ba chú ý かな／かしら／っけ, tám ví dụ, luyện I–VI và hai bài nghe Nhật–Việt; ô trống không điền.
+- PDF146–153: giữ toàn bộ chỉ mục theo trang in, đầu mục, nghĩa Việt, trang tham chiếu và câu ví dụ Nhật–Việt. Không rút thành danh sách từ đơn.
+- Root QA PDF135/152: chỉnh nghĩa Việt 席をはずしております thành hiện không có ở bàn; bổ sung nghĩa vật của やつ trong chỉ mục, giữ nguyên Nhật và số trang.
+- PDF154–162: chép trọn bảng đáp án §1–23 theo trang in, các mã ký hiệu, biến thể bằng dấu gạch chéo và câu ví dụ Nhật–Việt. Đáp án đặt sau toàn bộ bài học và chỉ mục.
+- PDF163: giữ tiểu sử tác giả, nhan đề, mốc 1997/2002 in lần sáu, đơn vị thực hiện và ghi chú cuối sách.
+- Root QA PDF137: mở crop bản đồ 4×, bổ sung đầy đủ quan hệ hai đường dọc/hai đường ngang, vị trí hiện tại và sáu nhãn địa điểm Nhật–Việt; không điền lời chỉ đường.
+- Root QA PDF137/138/161/162: crop rõ xác nhận bản đồ in 銀行 cạnh コンビニ và hai đường dọc cắt hai đường ngang tạo bốn giao lộ; tranh vẽ bà cùng chó, khớp đáp án 犬といっしょだ. Đã sửa hai lỗi đọc hình nhỏ trong bản clean; không ghi source issue cho hai cặp này.
+- Final validate QA: tách 15 lượt thoại Nhật–Việt vốn gộp cùng dòng ở §2; chuẩn hóa nhãn Câu hỏi chung/Mẫu trong §4; ghi rõ các ô chưa điền ở bản Việt §3/§4/§7 mà không thêm đáp án. Đối chiếu lại ảnh PDF154–162 và sửa đáp án §1 p.14 I.1 từ あとで売っている thành chữ in あそこで売っている, nghĩa Việt “đang bán ở đằng kia”.

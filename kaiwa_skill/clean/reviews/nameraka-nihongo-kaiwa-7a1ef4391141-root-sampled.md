@@ -1,13 +1,11 @@
-# Root QA mẫu — chưa nghiệm thu toàn sách
+# QA và nghiệm thu phạm vi PDF đầu vào
 
-Đã đọc toàn chapter front, mở ảnh PDF3/4/7/8; chỉ xác nhận các vùng đã đối chiếu, chưa xác nhận nguồn toàn front1–9 hoặc toàn163trang.
+Đã có bản đọc đủ163trang,27chương,158unit. Tác giả đối chiếu toàn sách; root QA độc lập15trang mẫu:3/4/7/8/32/135/137/138/144/145/146/153/154/162/163. Đây chưa phải full independent semantic review.
 
-Phát hiện và đã yêu cầu tác giả bổ sung: nguyên câu Nhật về kính áp tròng trong lời nói đầu PDF4, không thay bằng bản Việt diễn ý; công dụng băng luyện nghe 日本語能力試験 ở PDF7; điều kiện phươngngữ ở PDF8. Root đọc lại đúng ba vị trí sửa so ảnh đã mở, xác nhận giữ đủ nguyên câu/ý. Mạch lời nói đầu, đối tượng300giờ, điều kiện dùng, tập nghe/đóngvai trong mẫu được giữ. Audio là băng bánriêng; chưa có file thực tế.
+Root yêu cầu và đã đọc lại bản sửa: nguyên câu kính áp tròng/JLPT/điều kiện phương ngữ ở phần đầu; sắc thái席をはずす và nghĩa vật củaやつ; dữ kiện đường nối/nhãn bản đồ; con chó trong tranh; đáp ánあそこで売っている khác lỗi chépあとで. Crop4× giải quyết hai lỗi nhận hình nhỏ (ngân hàng/chó); không ghi chúng thành mâu thuẫn nguồn. Đối chiếu thêm bàiV–VI và hai hội thoại nghe cuối§23, chỉ mục hai trang mẫu146/153, đáp án hai trang mẫu154/162 và colophon. PDF161 chỉ đọc bảnclean, không được tính là ảnh root đã mở.
 
-Còn cần QA phần §1–23/index/answers, theo checkpoint hiện hành. Không dùng root sample để tuyên bố full independent review.
+PDF32 vẫn có câu in bị ghi tay che. Root đã mở nguồn/crop, không tìm được lớp chữ hoặc annotation để phục hồi; giữneeds_review đúng page/block/unit và công bố ởsource-issues.md. Không cópending/draft/stale. Validator cho phép source issues:0lỗi/2cảnh báo cùng vấn đề này. Không gọi sách sạch hoàn toàn hoặc suy lời đáp cho phần bị che.
 
-Nguồn: `kaiwa_skill/book/Shadowing/なめらか日本語会話 Nameraka Nihongo Kaiwa.pdf`, SHA256 `7a1ef4391141caedb682df607d058a97be189823fb5e5521d39614fa34d53c28`.
+Audio ghi băng bán riêng, vị trí23bài nghe, đúng tác giả/nhà phát hành/6刷2002 theoPDF163; chưa tìm hoặc xác nhận file nghe. Hash chương trongcoordinator-review.json nhận diện bản tác giả đã kiểm, không chứng minh root đọc toàn27chương.
 
-Hash chapter lúc ghi báo cáo (sửa tiếp thì phải rà lại phần liên quan):
-
-- `chapters/01-前書きと使い方.md`: `1062ba0bf0a395f26c31d7b38a53261ad9e72759134c2e0fcb6dd6e6c0eb9564`
+Nguồn/hash/phạm vi và hash chương hiện tại: xem `_meta/coordinator-review.json` của sách.
