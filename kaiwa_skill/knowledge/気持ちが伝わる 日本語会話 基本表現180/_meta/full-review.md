@@ -1,0 +1,13 @@
+# Rà toàn sách — 2026-11-12
+
+Đã mở ảnh **209/209 trang vật lý** của PDF có SHA-256 `06bbcf5b4324d8ec1fc925f698d48e451e357c35947d4d444bf6a55450c5584b`, đối chiếu nội dung với từng chương và lưu 209 hồ sơ trang có hash ảnh render khớp cache. Front gồm bìa, lời đầu, mục lục 90 Unit và hướng dẫn; bài học có 19 Section A–S. Trật tự lời thoại/ví dụ, mỗi biểu đạt và phần chú từ đã được kiểm theo trang, không suy lời thoại từ CD.
+
+- **180/180 biểu đạt**, đủ số 1–180; mỗi biểu đạt có nghĩa/cách dùng, hai mục Listen & Speak, tiếng Nhật, nghĩa Việt và phần từ/cách nói. **50/50 Hints** giữ theo đúng vị trí trong bài; chuỗi romaji chỉ in trong nguồn vẫn được giữ và giải nghĩa Việt, không tự dựng Kanji.
+- Mục lục PDF4–9: **90/90 Unit**, hai nhan đề mỗi Unit. Chênh số trang in ở Section M và bảng tra Nhật được ghi ngay tại mục lục và nhật ký.
+- Index English PDF200–204: **189 khóa thực in**, theo từng trang **37+39+40+40+33**. Index Nhật PDF205–207: **180 khóa romaji thực in**, **54+67+59**. Giữ các khóa lặp/alternative/dấu `～` và số trang in; sáu ref đảo chỗ trong index Nhật và một ref `Unzari` trong index English được nối tới bài thật. Không thay khóa `Masani` bằng nhan đề bài chính.
+- Audio: bìa ghi `CD付`, hướng dẫn nói CD phát tên Unit và ví dụ Listen & Speak bằng tiếng Nhật. **90 nhãn duy nhất `CD 1`–`CD 90`** ở bài; một occurrence `CD 13` lặp ở hình hướng dẫn PDF10. Số đĩa chưa thấy xác nhận; tệp âm thanh thực tế `not_checked`.
+- Trạng thái resume sau rà: **205 trang author_checked**, **4 trang needs_review**; **20 chương author_checked**, **4 chương needs_review**; không còn pending, draft, stale hoặc cần rebase. Bốn trang còn cờ là **PDF168, 187, 204, 206**, mỗi trang có vấn đề nguồn hẹp được giữ nguyên và nêu tại `_meta/source-issues.md`. Các cờ này thể hiện bất nhất in sẵn, không phải nội dung chưa viết.
+
+Đã rà ngược các điểm dễ sai nghĩa trong lời thoại và Hints: ngôi người đối thoại, sắc thái `思い込みが激しい`, gloss `kehai`, nhãn A/A, âm dài trong romaji index, và cách dùng `Masani` trong hai bảng tra. Bản Việt ở index English được lấy từ nghĩa biểu đạt ở bài đích và viết đủ câu, không cắt giữa chừng. Các thay đổi đã được đối chiếu lại ảnh và refresh checkpoint trang/chương liên quan.
+
+`direct_progress build` đã tạo bản sách từ **24 chương / 201 units** trong full scope PDF1–209, trạng thái `source_issues_unresolved`. `direct_progress validate --allow-source-issues` trả **0 lỗi / 8 cảnh báo** (hai cảnh báo page/unit cho mỗi một trong bốn trang có issue). `resume` sau build trả **0 pending / 0 draft / 0 stale / 0 needs_rebase**. Trạng thái này không coi bốn bất nhất nguồn đã được giải quyết.

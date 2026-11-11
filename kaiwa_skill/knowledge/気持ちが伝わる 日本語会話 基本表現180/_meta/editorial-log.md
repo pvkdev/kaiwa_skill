@@ -1,0 +1,23 @@
+# Nhật ký biên tập
+
+## 2026-11-12
+
+- PDF22, biểu đạt 3, ví dụ 1: bản English diễn nghĩa món của Haruka là “beautiful”, nhưng câu Nhật in **めちゃめちゃおいしかったです**. Bản Việt theo câu Nhật: “ngon cực kỳ”; giữ nguyên chữ Nhật.
+- PDF23, biểu đạt 4, ví dụ 1: gloss English của **ゴールを決める** ghi “Decide on goals”. Trong ngữ cảnh đá phạt đền **PKだ！ 決めてくれ～** và từ ゴール, nghĩa phù hợp là “ghi bàn”; bản Việt giữ đúng ngữ cảnh.
+- PDF25, Hints 2: dịch sát **effeminate** là “bị coi là nữ tính/thiếu nam tính”, ghi rõ đây là quan điểm của cột sách, không thay bằng nhận xét chung “yếu đuối”.
+- PDF28, Hints 3: nguồn chỉ in chuỗi La-tinh **Kongo tomo yoroshiku**; bản học giữ nguyên cách ghi đó thay cho cách viết Kanji do biên tập suy ra.
+- PDF48, Hints 8: tiêu đề in “Not good at expressing emotions” nhưng thân cột chỉ giải thích thói quen cảm ơn nhiều lần. Giữ nghĩa tiêu đề và toàn bộ nội dung riêng, không âm thầm đổi tiêu đề theo thân cột.
+- PDF58, biểu đạt 39, ví dụ 1: English diễn **いい人** thành “the man for me”, tự gán nam giới; bản Nhật không chỉ giới tính. Bản Việt giữ “người phù hợp”.
+- PDF79, biểu đạt 60, ví dụ 1: English mở rộng **部長にほめられた** thành “manager gave him a pat on his back”; câu Nhật chỉ nói được trưởng phòng khen. Bản Việt không thêm hành động vỗ lưng.
+- PDF94, biểu đạt 75: nhan đề Nhật và roman trong các ví dụ đều là **ドキドキ / dokidoki**, nhưng dòng romaji ngay dưới nhan đề in **Doidoki(suru)**. Bản học giữ Nhật đúng bản in và không lấy romaji nhan đề lỗi để đổi cách đọc.
+- PDF97, Hints 22: bản in có **kiochi suru** kèm gloss “feeling down”, không có chữ Nhật tương ứng. Ban đầu đánh dấu `needs_review` vì thiếu chữ Nhật; sau khi đối chiếu lại ảnh, xác định đây là cách in romaji của nguồn, giống Hints 3. Bản học giữ nguyên chuỗi và nghĩa Việt, không dựng chữ Nhật; gỡ cờ nguồn và chuyển trang/đơn vị/chương về `author_checked`.
+- PDF101/Hints23 và PDF109/Hints25: nguồn chỉ in **ishin-denshin** và **deru kugi wa utareru** bằng romaji trong cột giải thích. Bản học giữ nguyên romaji và dịch nghĩa, không dựng chữ Nhật tương ứng.
+- PDF168, biểu đạt 149, ví dụ 2: nguồn Nhật và romaji in hai lượt nhãn **A/A** nhưng cột English bên dưới in **A/B**. Đã crop lại vùng hội thoại để xác nhận; bản học giữ nguyên A/A của nguồn Nhật, không tự sửa lượt thứ hai. Đánh dấu vấn đề hẹp ở trang/đơn vị/chương P.
+- QA PDF157, biểu đạt 138: bản English cho thấy **食べてくれない** nói với chính người đối thoại, nên sửa bản Việt từ “người ấy” sang “cậu”. QA PDF165, biểu đạt 146: **私はだめですよ** không có phép so sánh; sửa nghĩa Việt thành “tôi cũng chẳng ra gì”, và gloss **出来が悪い** là chất lượng/năng lực kém, không gán phẩm chất đạo đức.
+- PDF187, biểu đạt 168, ví dụ 1: cả hai lượt Nhật/romaji đều in nhãn **A**, cột English in **A/B**. Đã crop 4× xác nhận chữ in. Bản học giữ A/A kèm ghi chú ngay tại ví dụ; issue hẹp ở trang/đơn vị/chương R.
+- QA PDF10, cột mẫu: nguồn chỉ in tiêu đề English **Spirit of otagaisama** và roman **otagaisama**, nên bỏ nhan đề Kanji do biên tập tự dựng. Dịch rõ “taken to the cleaners” là bị lừa, mất nhiều tiền ở nước ngoài. PDF44/Hints 7 đã dùng お互いさま như một lời giải thích, không đặt nó làm chữ Nhật trích nguyên văn của cột.
+- QA PDF173, biểu đạt 154, ví dụ 2: **思い込みが激しいもんだから** chỉ việc hay vội kết luận hoặc cứ đinh ninh, không kết luận người nói cố chấp. QA PDF187/Hints 47: gloss nguồn của **kehai** chỉ là “sign, indication”; bỏ nghĩa “linh cảm” đã thêm.
+- PDF4–9, mục lục: khôi phục đủ 90 Unit và 180 nhan đề biểu đạt theo thứ tự nguồn, sau khi đối chiếu trang bài. Mục lục PDF7 ghi Section M bắt đầu trang **144**, trong khi bài thật bắt đầu trang **134**; mục lục PDF9 ghi bảng tra Nhật bắt đầu trang **204**, nhưng bảng thật bắt đầu **205**. Bản học giữ cả số in sai và vị trí thật để tra cứu, không tạo trang thiếu.
+- PDF205–207, bảng tra Nhật in sai sáu số trang: **Ochitsuku 85→84**, **Sukkiri suru 84→85**, **~Taina 62→63**, **Nantoka 63→62**, **Narubeku 65→64**, **Dekireba 64→65**. Đã đối chiếu trang bài PDF62–65/84–85; bảng học giữ số in kèm liên kết tới biểu đạt thật, không ghép nhầm khóa với chữ Nhật của trang in. PDF201 index English in **Unzari 154**, còn biểu đạt thực ở **155**; chỉ English index có chênh này. Hai index đều giữ khóa nguyên dạng.
+- PDF206, khóa romaji **Masani** dẫn tới trang 30, nhưng nhan đề biểu đạt thực tại trang 30 là **そのままズバリ / Sono mama zubari**. Giữ khóa index nguồn và liên kết tới đúng trang, không âm thầm đổi khóa thành chữ Nhật khác.
+- Crop lại PDF201/203/205/206: khóa cách đọc in **Āa** và **Jīnto / Jīntosuru / Jīntokuru** có dấu trường âm; khôi phục dấu bị mất trong bản chép đầu. PDF201 English key **Fidgetting** in hai chữ `t` theo ảnh và text layer, giữ chính tả nguồn trong index.
