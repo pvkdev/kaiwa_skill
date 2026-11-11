@@ -50,10 +50,14 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [どんどん話せる！日本語会話フレーズ大特訓 必須700](<どんどん話せる！日本語会話フレーズ大特訓 必須700/book.md>) — 208 trang/8 chương/110 unit; tác giả rà toàn PDF, root QA26 trang mẫu. [Giới hạn QA và nguồn](<どんどん話せる！日本語会話フレーズ大特訓 必須700/_meta/coordinator-review.md>).
 
+- [上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―](<上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―/book.md>) — 198 trang/17 chương/183 unit; tác giả rà toàn PDF, root QA41 trang mẫu. [Giới hạn QA và nguồn](<上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―/_meta/coordinator-review.md>).
+
+- [すぐに使える 日本語会話 超ミニフレーズ200](<すぐに使える 日本語会話 超ミニフレーズ200/book.md>) — 225 trang/13 chương/217 unit; tác giả rà toàn PDF, root QA35 trang mẫu. [Giới hạn QA và nguồn](<すぐに使える 日本語会話 超ミニフレーズ200/_meta/coordinator-review.md>).
+
 ## Đang clean
 
-- **すぐに使える 日本語会話 超ミニフレーズ200** — full scope225 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
-- **上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―** — full scope198 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+- **すぐに使える 日本語会話 超ミニフレーズ 発展210** — full scope233 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+- **日本人がよく使う 日本語会話 オノマトペ基本表現180** — full scope220 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 - **気持ちが伝わる 日本語会話 基本表現180** — full scope209 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.

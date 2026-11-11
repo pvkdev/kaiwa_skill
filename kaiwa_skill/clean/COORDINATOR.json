@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T15:59:12.190711+00:00",
+  "updated_at_utc": "2026-11-11T21:12:17.881451+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -17,26 +17,24 @@
       "role": "worker_1",
       "worker": "/root/clean_keigo",
       "stage": "full_pdf_direct_active",
-      "book_id": "200-quick-and-easy-phrases-for-japanese-conversation-97-09f743ddc922",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/200-quick-and-easy-phrases-for-japanese-conversation-9784863922068_compress.pdf",
-      "title": "すぐに使える 日本語会話 超ミニフレーズ200",
-      "scope_pdf_pages": 225,
+      "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/210-additional-super-miniature-phrases-for-immediate-use-in-japanese-conversation-4863922639-9784863922631_compress.pdf",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
+      "scope_pdf_pages": 233,
       "latest_checkpoint_counts": {
-        "author_checked": 195,
-        "pending": 30
+        "pending": 233
       }
     },
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
       "stage": "full_pdf_direct_active",
-      "book_id": "remake-ad312498c548",
-      "source_pdf": "kaiwa_skill/book/BJT/上級レベル グローバル企業でのキャリア構築をめざして [Remake].pdf",
-      "title": "上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
-      "scope_pdf_pages": 198,
+      "book_id": "180-458b548674d1",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/日本人がよく使う日本語会話オノマトペ基本表現180.pdf",
+      "title": "日本人がよく使う 日本語会話 オノマトペ基本表現180",
+      "scope_pdf_pages": 220,
       "latest_checkpoint_counts": {
-        "author_checked": 142,
-        "pending": 56
+        "pending": 220
       }
     },
     {
@@ -48,8 +46,9 @@
       "title": "気持ちが伝わる 日本語会話 基本表現180",
       "scope_pdf_pages": 209,
       "latest_checkpoint_counts": {
-        "pending": 196,
-        "author_checked": 13
+        "author_checked": 103,
+        "draft": 6,
+        "pending": 100
       }
     }
   ],
@@ -260,11 +259,12 @@
       "source_sha256": "ad312498c548a75a6493409ae20bb33e8ed6d2bd67ca0d81bb713de625033cfb",
       "page_count": 198,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_sho",
+      "owner": "/root",
       "title": "上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
-      "knowledge_dir": "kaiwa_skill/knowledge/上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―"
+      "knowledge_dir": "kaiwa_skill/knowledge/上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
+      "knowledge_commit": "ff72296"
     },
     {
       "book_id": "125-extended-patterns-for-japanese-conversation-4863922-95f1ac587f24",
@@ -299,11 +299,12 @@
       "source_sha256": "09f743ddc922161b06a160fd3a918f4167b129be053effb48e9c1bc8b5c21ca7",
       "page_count": 225,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_keigo",
+      "owner": "/root",
       "title": "すぐに使える 日本語会話 超ミニフレーズ200",
-      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200"
+      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200",
+      "knowledge_commit": "e82b3b1"
     },
     {
       "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
@@ -311,8 +312,11 @@
       "source_sha256": "2fdf1586c2e2673f6b27b93fcf3c04c8584567fdd3c2258bcdd0033743de2b05",
       "page_count": 233,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_keigo",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
+      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ 発展210"
     },
     {
       "book_id": "5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
@@ -441,8 +445,11 @@
       "source_sha256": "458b548674d123f0e35c8df67395c3e569eab80ffa6e9c4a7848a8489547d439",
       "page_count": 220,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_sho",
+      "title": "日本人がよく使う 日本語会話 オノマトペ基本表現180",
+      "knowledge_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話 オノマトペ基本表現180"
     },
     {
       "book_id": "namachuukei-chuujoukyuu-f08dd9302ee6",
@@ -789,6 +796,16 @@
       "book_dir": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700",
       "commit": "836c853",
       "coordinator_review": "author full; root26 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
+      "commit": "ff72296",
+      "coordinator_review": "author full; root41 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200",
+      "commit": "e82b3b1",
+      "coordinator_review": "author full; root35 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -1257,16 +1274,15 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 225,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 191,
-        "pending": 34
+        "author_checked": 225
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 10,
-        "pending": 3
-      }
+        "author_checked": 13
+      },
+      "knowledge_commit": "e82b3b1"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700",
@@ -1296,16 +1312,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 198,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 130,
-        "pending": 68
+        "author_checked": 197,
+        "needs_review": 1
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 11,
-        "pending": 6
-      }
+        "author_checked": 16,
+        "needs_review": 1
+      },
+      "knowledge_commit": "ff72296"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/気持ちが伝わる 日本語会話 基本表現180",
@@ -1318,10 +1335,48 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 209
+        "author_checked": 137,
+        "draft": 6,
+        "pending": 66
       },
       "chapter_checkpoint_counts": {
-        "pending": 24
+        "draft": 1,
+        "author_checked": 14,
+        "pending": 9
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話 オノマトペ基本表現180",
+      "title": "日本人がよく使う 日本語会話 オノマトペ基本表現180",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/日本人がよく使う日本語会話オノマトペ基本表現180.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 220,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 220
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 8
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ 発展210",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/210-additional-super-miniature-phrases-for-immediate-use-in-japanese-conversation-4863922639-9784863922631_compress.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 233,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 233
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 16
       }
     }
   ],
@@ -1342,9 +1397,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 25,
-  "completed_full_source_pages": 3512,
-  "completion_count_definition": "25 released supplied-PDF scopes/3512 pages: initial7 independently reviewed in full; later18 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 27,
+  "completed_full_source_pages": 3935,
+  "completion_count_definition": "27 released supplied-PDF scopes/3935 pages: initial7 independently reviewed in full; later20 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",
@@ -1383,6 +1438,19 @@
           "reason": "User explicitly requested gpt-6-sol/medium; old workers remain interrupted, replacements resume existing checkpoints."
         }
       ]
+    }
+  ],
+  "authoring_complete_pending_root_review": [],
+  "quota_resume_history": [
+    {
+      "at_utc": "2026-11-11T21:08:41.765448+00:00",
+      "instruction": "User explicitly requested restoring interrupted quota-limited workers, gpt-6-sol/high, until all PDFs complete.",
+      "workers": [
+        "/root/clean_keigo",
+        "/root/clean_namachuukei_chu",
+        "/root/clean_namachuukei_sho"
+      ],
+      "observed_state": "all three running after followup_task; medium workers not resumed"
     }
   ]
 }
