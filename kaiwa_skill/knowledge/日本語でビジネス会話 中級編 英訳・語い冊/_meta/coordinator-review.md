@@ -10,3 +10,7 @@ Root đã mở ảnh PDF2,3,8,42,43,50,94, đối chiếu nhan đề/ấn bản,
 - Tác giả đã mở/so toàn103 trang, checkpoint21/21 author_checked. Các chênh lệch bản dịch/từ vựng tại Bài12/14/15/17/19 giữ ở đúng nơi xuất hiện và có editorial log; không tự hợp nhất chức danh, số lượng hay lời thoại giữa hai chỗ nguồn.
 
 Phạm vi full là PDF của tập phụ trợ này, không bao gồm 本文冊/練習冊 hoặc audio chưa được cung cấp cho bước clean. Bản Nhật chỉ giữ những gì thật sự có trong tập; hội thoại English-only được dịch Việt, không tái tạo Japanese bằng dịch ngược. Chưa có independent review toàn tập; ảnh mẫu và validator không thay thế việc đó.
+
+## Vòng độc lập toàn tập sau release đầu
+
+Worker khác tác giả `/root/clean_keigo` đã mở từng ảnh1–103, so snapshot/raw và đủ21 chapter; ghi independent-review.md. Không phát hiện clean lệch PDF hoặc bản Việt làm mất dữ kiện. Đã mở lại PDF97 để xác nhận đó là đầu Bài20; Bài19 kết thúc96, Bài20 nội dung97–102,103 trắng. Review chỉ xác nhận tập nguồn và bản dịch theo nguồn, không xác nhận các nhận xét/giá/chức danh của ấn bản1987 là thông tin giao tiếp hiện hành. Hash chapter được rà nằm trong completion.independent_review; phần ảnh theo mẫu của riêng root vẫn như trên.
