@@ -4,6 +4,8 @@
 
 Ingest ghi vào `kaiwa_skill/corpus/`; clean chỉ đọc nguồn và ghi vào `kaiwa_skill/knowledge/`. Có thể ingest sách B trong lúc clean sách A. Một tác nhân clean sở hữu một sách; coordinator không giao trùng sách hoặc vượt ngân sách worker của phiên. Không coi file `book.md` xuất hiện là sách đã hoàn tất.
 
+Hai chat trong cùng checkout vẫn dùng chung Git index. Chọn một coordinator chịu trách nhiệm Git cho cả hai luồng; clean có thể checkpoint xuống đĩa mà không stage/commit cạnh một phiên ingest đang dùng index. Nếu cần commit từ nhiều phiên, dùng checkout/worktree riêng hoặc commit giới hạn đường dẫn cụ thể, kiểm cả index và HEAD trước khi ghi; không reset lịch sử để tách một commit của phiên khác đã nhận các file đang stage.
+
 `clean_progress.py scan --repo-root <repo>` đọc trạng thái để tìm ứng viên. Chỉ đưa sách vào `ready_for_fork` khi nguồn hiện tại có đủ trang verified, bằng chứng/hash trang hợp lệ, không có issue mở, PDF và bản ghép/chỉ mục khớp build marker, không có claim/write lock ingest đang hoạt động. Trạng thái này có nghĩa nguồn sẵn sàng cho bước fork có đối chiếu PDF; không tự nâng nghiệm thu coordinator của ingest. Sách còn làm dở hoặc bản build cũ ở trạng thái chờ, không chặn các sách độc lập.
 
 Lệnh scan chỉ quan sát và trả danh sách; kết quả có thể kèm tiến độ clean đã lưu cho cùng nguồn. Coordinator đối chiếu phạm vi ledger để chọn resume hoặc việc mới, không suy một pilot hoàn tất là đã clean cả sách. Chính tác nhân làm công việc đọc PDF, lọc, dịch và biên soạn. Không có daemon dịch tự động, không cài lịch chạy nền. Trong một lượt được giao xử lý hàng đợi, coordinator quét lại sau mỗi sách/lần bàn giao và nhận sách sẵn sàng tiếp theo trong phạm vi đã giao.
