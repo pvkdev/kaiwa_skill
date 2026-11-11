@@ -1,18 +1,18 @@
 # Clean hàng loạt — đang điều phối
 
-Đã nghiệm thu **27/30 phạm vi PDF, 3.935/4.597 trang**. Bảy bản đầu được rà độc lập toàn phạm vi; hai mươi bản sau writer rà toàn nguồn và root QA mẫu. [Bản đọc và hồ sơ](../knowledge/README.md). Full scope không chứng nhận nguồn hoàn hảo; các lỗi nguồn vẫn có cảnh báo và bằng chứng.
+Đã nghiệm thu **28/30 PDF, 4.144/4.597 trang đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi;21bản sau writer rà toàn nguồn và root QA mẫu. [Thư viện bản đọc](../knowledge/README.md). Phạm vi đủ không chứng nhận mọi chữ nguồn hoàn hảo; vấn đề nguồn được giữ và khoanh rõ.
 
-Hai bản vừa nghiệm thu:
+Bản vừa chốt: **気持ちが伝わる 日本語会話 基本表現180**, commit7f22d1d.209trang/24chương/201unit;180biểuđạt,90Unit theo cặp,360hoạtđộng,50Hints,189khóaEnglish và180khóaJapaneseromaji. Root43ảnh nguồn, gồm toànintro/guide và cả8trangindex; main chỉ QA mẫu. Bảyref sai đã có sốin+vịtrí/link đúng. Bốn trang168/187/204/206 còn nhãnA/A hoặc khóaMasani không khớp đầu mục; validate0lỗi/8cảnhbáo cùng4vấnđề. BookSHA8211e098a36f3ee17c876abd9188effa2f73c53a797ba24f70ca8202d0d68641.
 
-- **Roleplay business cao cấp**, ff72296:198trang/17chương/183unit. Root41ảnh mẫu, toàn bài1/6 vàmẫu hướngdẫn/côngty/model17/đápán. Nguồn179 mâu thuẫn6万枚×12円 so432万円, giữnguyên và cảnhbáohẹp. Validate0lỗi/2cảnhbáo cùngissue;197trangchecked+1needs_review. BookSHA70af402b23d0ae72c5e672c05e9e738a1149dcf26ed4582176f871ee72fc37e2.
-- **超ミニフレーズ200**, e82b3b1:225trang/13chương/217unit.200mục,202khóaAnh/223khóaNhật,5refin sai giữsốin+vịtríthật. Root35ảnh toàntrang và200cropaudio riêng; strictvalidate0/0,khôngpending/draft/stale/needs_review.2CD/198cặp mãmain,haihead100/200khôngicon,hai guideoccurrences CD1/16 khácmain22 đượcghi riêng. BookSHAf3d82dec9ee2c83d978f1ff042c09042c005914fa05a00cc1d7f96e9fc582e41.
+Còn hai sách đang viết, đều **gpt-6-sol/high**:
 
-Đã khôi phục cả ba worker sau quota theo yêu cầu mới nhất, đều **gpt-6-sol/high**. Worker medium không chạy. Tất cả PDF đã có assignment; còn ba bản đang viết:
+- /root/clean_keigo: **すぐに使える 日本語会話 超ミニフレーズ 発展210**,233trang. Main đã đến mục108/PDF123; TOC4–9 còn draft để ghi đủ210khóa. Root17ảnh nguồn, toàn10mục đầu vàmục60; lỗi chữいや đã sửa. Source75 giữA/A vàcảnhbáohẹp. Audio dùng chung mã giữa các head, không suy từ số mục.
+- /root/clean_namachuukei_sho: **日本人がよく使う 日本語会話 オノマトペ基本表現180**,220trang. Đã xong front/intro/Part1/Part2, Part3 quaPDF111; Part3 vẫn draft đến khi đủ163. Root31ảnh nguồn,so toànfront+intro và6headmẫu Part1. Sửa nghĩa/ngoạingữ/ghi chú sản xuất đã đọc lại.185slot trong4Part có từlặp, không ép sốslot thành180.
 
-- /root/clean_keigo: **超ミニフレーズ 発展210**,233trang; đãinitfullscope và xácnhận cover/metadata. Main16–225 mộtmục/trang theo9nhóm; Englishindex226–231,khôngcóJapaneseindex riêng; colophon232–233. Tiếpfront và10mụcđầu đểrootQA.
-- /root/clean_namachuukei_chu: **気持ちが伝わる 基本表現180**,209trang/24chương; đãđến SectionL/PDF133, tiếpM. TOC4–9draft khi bổsung90Unittitles; cònM–S vàindex200–207/pub208–209. Root11ảnh mẫu; các phát hiện sớm đã sửa. Không coi nhãnCD1–90 là90đĩa.
-- /root/clean_namachuukei_sho: **オノマトペ基本表現180**,220trang/8chương; đãinitfullscope.4Part có24/39/77/45slot (185lầnxuất hiện với từ lặp, không suy thiếu/sai vìtên180).217 làtácgiả/colophon,218trắng,219–220hướngdẫn tải. Rootcontactsheet trướcđó coi217trôngtrắng làpreflight thiếu, đã đượcwriter xácnhận lại. ISBN9784863923874/first2018-05-10. Tiếpfront/chươngđầu đểQA.
+Worker thứba /root/clean_namachuukei_chu đang **QA chỉ đọc** index210–216 của cuốn onomatopoeia, chỉ ghi cache. Trước đó đã độc lập mở210crop audio của cuốn210:210occurrences,198mã disc-track,12cặp head dùng chung,khôngmờ; đây chỉ là QAicon, khôngrà nghĩa210trang. Root đã kiểm hashreportfe3f28b86dc17164136c0dcd1ed2c984bc42ea72552be8a0b8d80933e27ff161. Một sách mộtwriter; không ghi chồng.
 
-Runtime4active tính root nên chỉ3worker; root điều phối/QA/Git. Một sách một writer. Công cụ0.4.10:80testfork+17directPASS; regression18bản trước0lỗi/33cảnhbáo. Chín bản mới đượcvalidate riêng. Skilldocsc95e0ed phân biệt romajiđọcrõ với mâu thuẫn dữkiện; không đổi code/khôngchạylại test khôngcầnthiết.
+Đã kiểm danh sách thực:30PDF trongbook/vocab khớp đủ30nguồn/4597trang củaqueue,khôngthiếu hoặcngoàiqueue. MọiPDFđãgiao. Ba worker được khôi phục sauquota theo yêu cầu, đều sol/high; worker medium khôngchạy.
 
-[CD,băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) ghi thông tin thực in; filethật not_checked, chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) giữ hàngđợi; [HANDOFF](HANDOFF.md) để nối sau giánđoạn. Dùngcheckpoint thật thay sốsnapshot. Tiếp điều phối tới30PDF; không có daemon khi đóng ứngdụng.
+Công cụ0.4.10:80testfork+17directPASS; regression18bản trước0lỗi/33cảnhbáo,10bản mới đượcvalidate riêng. Skilldocs6ca79cb bổsung đốichiếu keyindex thay vì join sốtrang và khôngcắtgiữacâu Việt; codekhôngđổi,khônglặptestkhôngcầnthiết.
+
+[CD,băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) ghi thông tin thực in; filethật not_checked,chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) và[HANDOFF](HANDOFF.md) giữ tiến độ để nối saugiánđoạn. Dùngcheckpoint thật thay sốsnapshot. Tiếp điều phối tới30PDF; không códaemon khiđóng ứngdụng.

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T21:12:17.881451+00:00",
+  "updated_at_utc": "2026-11-11T21:48:52.362214+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -22,7 +22,10 @@
       "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
       "scope_pdf_pages": 233,
       "latest_checkpoint_counts": {
-        "pending": 233
+        "author_checked": 106,
+        "draft": 6,
+        "needs_review": 1,
+        "pending": 120
       }
     },
     {
@@ -34,22 +37,19 @@
       "title": "日本人がよく使う 日本語会話 オノマトペ基本表現180",
       "scope_pdf_pages": 220,
       "latest_checkpoint_counts": {
-        "pending": 220
+        "author_checked": 135,
+        "pending": 85
       }
     },
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
-      "stage": "full_pdf_direct_active",
-      "book_id": "japanese-conversation-conveying-feelings-180-basic-expr-06bbcf5b4324",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/japanese-conversation-conveying-feelings-180-basic-expressions-9784863922600_compress.pdf",
-      "title": "気持ちが伝わる 日本語会話 基本表現180",
-      "scope_pdf_pages": 209,
-      "latest_checkpoint_counts": {
-        "author_checked": 103,
-        "draft": 6,
-        "pending": 100
-      }
+      "stage": "independent_index_qa",
+      "book_id": "180-458b548674d1",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/日本人がよく使う日本語会話オノマトペ基本表現180.pdf",
+      "title": "日本人がよく使う 日本語会話 オノマトペ基本表現180",
+      "scope_pdf_pages": 220,
+      "qa_scope": "Read-only independent source index210–216 inspection; cache only; main writer remains clean_namachuukei_sho"
     }
   ],
   "source_queue": [
@@ -413,11 +413,12 @@
       "source_sha256": "06bbcf5b4324d8ec1fc925f698d48e451e357c35947d4d444bf6a55450c5584b",
       "page_count": 209,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_chu",
+      "owner": "/root",
       "title": "気持ちが伝わる 日本語会話 基本表現180",
-      "knowledge_dir": "kaiwa_skill/knowledge/気持ちが伝わる 日本語会話 基本表現180"
+      "knowledge_dir": "kaiwa_skill/knowledge/気持ちが伝わる 日本語会話 基本表現180",
+      "knowledge_commit": "7f22d1d"
     },
     {
       "book_id": "85-21a2cb6f3fef",
@@ -806,6 +807,11 @@
       "book_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200",
       "commit": "e82b3b1",
       "coordinator_review": "author full; root35 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/気持ちが伝わる 日本語会話 基本表現180",
+      "commit": "7f22d1d",
+      "coordinator_review": "author full; root43 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -1332,18 +1338,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 209,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 137,
-        "draft": 6,
-        "pending": 66
+        "author_checked": 205,
+        "needs_review": 4
       },
       "chapter_checkpoint_counts": {
-        "draft": 1,
-        "author_checked": 14,
-        "pending": 9
-      }
+        "author_checked": 20,
+        "needs_review": 4
+      },
+      "knowledge_commit": "7f22d1d"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話 オノマトペ基本表現180",
@@ -1356,10 +1361,13 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 220
+        "author_checked": 135,
+        "pending": 85
       },
       "chapter_checkpoint_counts": {
-        "pending": 8
+        "author_checked": 5,
+        "draft": 1,
+        "pending": 2
       }
     },
     {
@@ -1373,10 +1381,16 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 233
+        "author_checked": 106,
+        "draft": 6,
+        "needs_review": 1,
+        "pending": 120
       },
       "chapter_checkpoint_counts": {
-        "pending": 16
+        "draft": 1,
+        "author_checked": 5,
+        "needs_review": 1,
+        "pending": 9
       }
     }
   ],
@@ -1397,9 +1411,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 27,
-  "completed_full_source_pages": 3935,
-  "completion_count_definition": "27 released supplied-PDF scopes/3935 pages: initial7 independently reviewed in full; later20 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 28,
+  "completed_full_source_pages": 4144,
+  "completion_count_definition": "28 released supplied-PDF scopes/4144 pages: initial7 independently reviewed in full; later21 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",
@@ -1451,6 +1465,26 @@
         "/root/clean_namachuukei_sho"
       ],
       "observed_state": "all three running after followup_task; medium workers not resumed"
+    }
+  ],
+  "source_file_inventory_check": {
+    "checked_at_utc": "2026-11-11T21:48:53.015444+00:00",
+    "pdf_files": 30,
+    "queue_entries": 30,
+    "source_page_count": 4597,
+    "unqueued_pdfs": [],
+    "missing_pdfs": [],
+    "method": "rg --files book/vocab compared with source_queue"
+  },
+  "independent_qa": [
+    {
+      "worker": "/root/clean_namachuukei_chu",
+      "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
+      "scope": "all210 main audio-only crops, not fullpage semantics",
+      "occurrences": 210,
+      "unique_disc_track_pairs": 198,
+      "report_cache": ".cache/root-live-qa/mini210-audio-independent.json",
+      "report_sha256": "fe3f28b86dc17164136c0dcd1ed2c984bc42ea72552be8a0b8d80933e27ff161"
     }
   ]
 }
