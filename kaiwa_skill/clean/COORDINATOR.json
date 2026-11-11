@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T10:07:32.817944+00:00",
+  "updated_at_utc": "2026-11-11T10:42:49.905305+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -35,10 +35,10 @@
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
       "stage": "full_pdf_direct_active",
-      "book_id": "book-be075317cdca",
-      "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf",
-      "title": "シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版",
-      "scope_pdf_pages": 145
+      "book_id": "5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf",
+      "title": "5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
+      "scope_pdf_pages": 136
     }
   ],
   "source_queue": [
@@ -307,8 +307,11 @@
         "Build page hashes incomplete",
         "Page 1: verification evidence/hash/issue mismatch"
       ],
-      "state": "queued_direct_with_readonly_raw",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_chu",
+      "title": "5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
+      "knowledge_dir": "kaiwa_skill/knowledge/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày"
     },
     {
       "book_id": "669041168-4f47df1cc97a",
@@ -509,11 +512,12 @@
         "Build verified pages incomplete",
         "Build page hashes incomplete"
       ],
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
       "owner": "/root/clean_namachuukei_chu",
-      "title": "シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版",
-      "knowledge_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版"
+      "title": "シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
+      "knowledge_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
+      "knowledge_commit": "dca0eff"
     },
     {
       "book_id": "1160-t-v-ng-mimikara-n2-6d226fd8769f",
@@ -687,6 +691,11 @@
       "commit": "1e29c64",
       "coordinator_review": "Full author preservation audit; root27 source-page samples including all9 placeholder warnings; source83/119 retained. See per-book review.",
       "independent_full_semantic_review": false
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
+      "commit": "dca0eff",
+      "coordinator_review": "author full; root34 sampled source pages; 411 dialogues/950 pairs; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -834,14 +843,14 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 110,
+        "author_checked": 154,
         "needs_review": 1,
-        "pending": 51
+        "pending": 7
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 24,
+        "author_checked": 35,
         "needs_review": 1,
-        "pending": 13
+        "pending": 2
       }
     },
     {
@@ -895,35 +904,33 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 184,
+        "author_checked": 222,
         "needs_review": 1,
-        "pending": 40
+        "pending": 2
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 25,
+        "author_checked": 28,
         "needs_review": 1,
-        "draft": 1,
-        "pending": 3
+        "pending": 1
       }
     },
     {
-      "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版",
-      "title": "シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版",
+      "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
+      "title": "シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
       "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf",
       "source_mode": "pdf_direct",
       "metadata_status": "full",
       "scope_pdf_page_count": 145,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 6,
-        "pending": 139
+        "author_checked": 145
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 1,
-        "pending": 7
-      }
+        "author_checked": 8
+      },
+      "knowledge_commit": "dca0eff"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―",
@@ -1034,6 +1041,25 @@
         "needs_review": 2
       },
       "knowledge_commit": "1e29c64"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
+      "title": "5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 136,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 12,
+        "pending": 124
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 1,
+        "pending": 8
+      }
     }
   ],
   "pending_tool_work": [],
@@ -1053,7 +1079,7 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 15,
-  "completed_full_source_pages": 1626,
-  "completion_count_definition": "15 released supplied-PDF scopes/1626 pages: initial7 independently reviewed in full; later8 author full/root sampled. Explicit source issues remain; full scope is not flawless-source certification."
+  "completed_full_books": 16,
+  "completed_full_source_pages": 1771,
+  "completion_count_definition": "16 released supplied-PDF scopes/1771 pages: initial7 independently reviewed in full; later9 author full/root sampled. Explicit source issues remain; full scope is not flawless-source certification."
 }

@@ -30,11 +30,13 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [聞いて覚える話し方 日本語生中継 初中級編２](<聞いて覚える話し方 日本語生中継 初中級編２/book.md>) — 152 trang,26 chương,227 unit; đã rà lại bản Việt bài tập và nghĩa đáp án. Root kiểm27 trang mẫu, gồm75 mục từ và đáp án Bài1/Bài10. [Giới hạn QA và nguồn](<聞いて覚える話し方 日本語生中継 初中級編２/_meta/coordinator-review.md>). Hai lỗi in83/119 được giữ rõ;2CD/82 mã nghe, chưa kiểm file thực tế.
 
+- [シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版](<シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版/book.md>) — 145 trang,8 chương,66 unit;42 section/**411 hội thoại**,950 lượt Nhật–Việt. Root kiểm34 trang mẫu; tác giả rà toàn PDF. [Giới hạn QA](<シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版/_meta/coordinator-review.md>).42 nhãn CD02–43, số đĩa chưa xác nhận, file chưa kiểm.
+
 ## Đang clean
 
 - **わかる！話せる！日本語会話 発展文型125** — full scope 225 trang, đang viết PDF-direct; chưa nghiệm thu toàn sách.
 - **しごとの日本語 電話応対 基礎編** — full scope 162 trang, đang viết PDF-direct; chưa nghiệm thu toàn sách.
-- **シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版** — full scope 145 trang, đang viết PDF-direct; chưa nghiệm thu toàn sách.
+- **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — full scope136 trang spread, đang viết PDF-direct; chưa nghiệm thu toàn sách.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 

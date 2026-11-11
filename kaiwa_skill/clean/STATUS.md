@@ -1,13 +1,11 @@
 # Clean hàng loạt — đang điều phối
 
-Đã chốt **15/30 bản đọc**, bao phủ **1.626/4.597 trang PDF đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi; tám bản sau do tác giả đối chiếu toàn nguồn và root QA mẫu. Vùng nguồn thiếu, mờ hoặc mâu thuẫn vẫn được ghi rõ. Xem [bản đọc và hồ sơ QA](../knowledge/README.md).
+Đã chốt **16/30 bản đọc**, bao phủ **1.771/4.597 trang PDF đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi; chín bản sau tác giả đối chiếu toàn nguồn và root QA mẫu. Xem [bản đọc và hồ sơ](../knowledge/README.md).
 
-Bản vừa chốt là 日本語生中継 初中級編２:152 trang,26 chương,227 unit, commit1e29c64. Đã rà lại bản Việt bài tập và nghĩa đáp án; root mở27 trang mẫu và kiểm cả9 cảnh báo ô trống theo ngữ cảnh. Hai vấn đề in83/119 vẫn được giữ. Inventory ghi2CD/82 mã nghe, tệp thực tế chưa kiểm.
+Vừa chốt Shadowing 初～中級編 bản Indonesia–Thai–Việt, commit dca0eff:145 trang,8 chương,42 section/**411 hội thoại**,950 lượt Nhật–Việt. Root mở34 trang mẫu, kiểm lại các sửa nghĩa Việt và tên sách bằng crop lớn. Số420 trong bàn giao trước đã đính chính theo mục thật; không thiếu hội thoại. Validate0/0. Inventory42 nhãn CD02–43, chưa xác nhận số đĩa/file nghe.
 
-Ba worker Sol/high đang tiếp: 発展文型125 (225 trang), 電話応対 基礎編 (162 trang), シャドーイング 日本語を話そう！ 初・中級編 bản Indonesia–Thai–Việt (145 trang). Còn12 PDF chưa được giao; root tiếp tục giao khi có bàn giao. Runtime chỉ cho4 active tính cả root nên luân phiên bốn vai sub; sub điều phối hiện idle, ba worker đang viết.
+Ba worker Sol/high tiếp: 発展文型125 (225 trang, index và rà mạch cuối), 電話応対 基礎編 (162 trang, Unit cuối),5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày (136 trang spread, mới bắt đầu direct). Còn11 PDF chưa giao; giao tiếp ngay khi bàn giao. Runtime4 active tính root, sub điều phối idle trong lúc ba worker viết.
 
-Công cụ0.4.10 có80 test fork và17 test direct PASS. Regression15 bản đã chốt:0 lỗi,29 cảnh báo gồm các vấn đề nguồn đã biết và9 cảnh báo bố cục ô trống đã kiểm của 生中継2. Kiểm cấu trúc không chứng minh đúng nghĩa hoặc đủ kiến thức.
+Công cụ0.4.10:80 test fork+17 direct PASS. Regression15 bản trước0errors/29warnings; Shadowing mới validate riêng0/0. Skill thêm kiểm nghĩa bản Việt in sẵn trong cùng lượt biên tập, không thêm vòng dịch toàn sách. Validator không chứng minh đúng nghĩa/đủ kiến thức.
 
-[CD, băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) có inventory và tình trạng file riêng. Một số hồ sơ cũ mới rà giới hạn; unknown không có nghĩa sách không có audio. Chưa tìm hoặc tải file nghe.
-
-[COORDINATOR.json](COORDINATOR.json) ghi snapshot hàng đợi/phân công; [HANDOFF.md](HANDOFF.md) hướng dẫn tiếp quản. Checkpoint/hash/history lưu xuống đĩa để nối lại sau gián đoạn. Đóng ứng dụng dừng tính toán; không có daemon hoặc automation chạy riêng.
+[CD, băng và nguồn nghe](../knowledge/AUDIO_INDEX.md): inventory và tình trạng file tách riêng; chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) giữ hàng đợi; [HANDOFF](HANDOFF.md) giúp tiếp quản. Checkpoint giúp khôi phục sau gián đoạn; không có daemon chạy khi đóng ứng dụng. Lượt điều phối còn tiếp tục.
