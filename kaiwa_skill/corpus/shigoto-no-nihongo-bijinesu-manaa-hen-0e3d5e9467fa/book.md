@@ -5304,3 +5304,1279 @@ m. Give the copies to the person who requested them after you've checked that ea
 
 Ghi chú nối trang (biên tập): Câu tiếng Anh m tiếp trên PDF p0113: “pages are mixed in.”
 
+## PDF page 113
+
+<a id="p0113"></a>
+
+- Trang in: 113
+- Đường dẫn nội dung: Unit 17 / 指示を受ける / ④ 注意を受ける
+
+## ④ 注意を受ける
+
+上司や先輩から注意を受けるのは嫌なものですが、注意する方も気持ちのいいものではありません。前向きな態度で頑張りましょう。
+
+### 注意を受けるときの態度
+
+n. 謝罪する
+
+皆さんの中には、納得いかないときは謝りたくない人もいるかもしれません。でも日本では、習慣的に、まずは謝罪の言葉を言うことがとても多いのです。
+
+o. 言い訳しない
+
+注意されたときにすぐ言い訳しないこと。主張はわかりますが、まず、上司の言うことをきちんと聞いてください。「でも」「だって」などの言葉は使わないように。
+
+p. 適度にあいづちを打つ
+
+日本では、相手の話を聞くときよくあいづちを打ちますが、これは「聞いてますよ」というサインにもなります。じっと黙って相手の顔を見ているだけだと、真剣に注意を聞いていても、話を理解していないとか、不満に思っているように思われてしまいます。時々相手の目を見て「はい、はい」と、所々であいづちを打ったほうが、話がスムーズに進むでしょう。
+
+Mô tả hình (biên tập): Ba khung dọc. Khung n có dấu ○: người đàn ông cúi chào khi bàn tay người đối diện chỉ vào anh; lời anh: 「申し訳ありません…」. Khung o có dấu ×: anh dang hai tay; người đối diện: 「どうして報告しなかったの？」; anh: 「だって課長、あの時は仕方なかったんですよ」. Khung p có dấu ×: anh đứng im, lời 「・・・・・」; người đối diện: 「お客様から昨日の電話についてクレームがあってね…」.
+
+<a id="p0113-b002"></a>
+
+## 中文 (biên tập)
+
+n. 道歉
+
+一些人可能因为不能理解而不愿道歉。而在日本，人们总是把道歉的话习惯性地挂在嘴边上。
+
+o. 不找借口
+
+当别人提醒自己注意时，不要为自己的行为作解释。尽管你有自己的主张，但这时候必须按照上司说的去做。没有必要说“可是……” “但是……”这类解释原因的话。
+
+p. 学会随声附和
+
+在日本，听人说话时人们都会适当地随声附和，意思就是告诉对方“我在听你说！”如果光看着对方的脸一声都不吭，即便你在认真听对方讲话，但是不是理解了对方说的话，对方因为无法判断往往会认为你有什么不满。所以听人说话时最好一边看着对方的脸一边说“对、对”“是、是”，这种随声附和会使对方的话题顺利地进展下去。
+
+## English (biên tập)
+
+pages are mixed in.
+
+Ghi chú nối trang (biên tập): Dòng trên tiếp câu m từ PDF p0112, kết thúc ở “no blank”.
+
+n. Apologizing.
+
+Some of you might not want to apologize when you see no need. But in Japan apologizing first and foremost is a very com-mon custom.
+
+o. Don't proffer excuses.
+
+Don't make excuses the minute you are reprimanded. It's un-derstandable that you want to defend yourself, but first listen to your boss. Don't use words like demo, datte (yes, but).
+
+p. Use appropriate responses.
+
+In Japan, listeners utter monosyllabic responses to indicate they are listening. If you silently stare at the speaker's face, he will think you don't understand or are unhappy even if you are listen-ing in earnest. The conversation will proceed more smoothly if you insert a hai, hai periodically.
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 114
+
+<a id="p0114"></a>
+
+- Trang in: 114
+- Đường dẫn nội dung: Unit 18 / 報告・連絡・相談
+
+## Unit 18 報告・連絡・相談
+
+日本のビジネスシーンで重要な
+「ほう・れん・そう」を、学びましょう！
+
+### 確認クイズ
+
+第1問
+
+報告の仕方で正しいのはどれでしょう？
+
+1…結論から話す
+
+2…最初から全部、順番に話す
+
+3…悪い内容は話さない
+
+第2問
+
+連絡が必要でないことはどれでしょう？
+
+1…直帰する
+
+2…遅刻する
+
+3…頭痛がする
+
+解答
+
+第1問　1 → ①報告　参照
+
+第2問　3 → ②連絡　参照
+
+<a id="p0114-b002"></a>
+
+## 中文 (biên tập)
+
+a. “汇报、联络、商量”是日本公司对业务人员工作上最基本的要求。只要工作，无论什么时候都离不开“汇报、联络和商量”，对此你应该认真学习。
+
+b. “汇报”要求汇报内容条理，具体。汇报之前必须考虑好自己准备汇报的内容。
+
+c. 不能因为上司是自己的直接领导就认为上司在任何情况下都能听自己汇报。准备汇报之前，应当征求一下上司的意见 “您现在有空吗？”“我想向您汇报一下有关……”。
+
+## English (biên tập)
+
+a. This is an abbreviation for hokoku, renraku, sodan (reporting, contacting, consulting). They are the basics of Japanese busi-ness (especially inside a company). Learn when these are neces-sary.
+
+b. Concretely plan what you want to say to make your report readi-ly understood.
+
+c. No boss can be expected to drop everything to listen to your re-port. Ask if your boss has time now, or say that you would like to give an update on some matter when it's convenient.
+
+Ghi chú đối ứng (biên tập): Bản dịch a–c trên trang này ứng với phần Nhật ở PDF p0115.
+
+## PDF page 115
+
+<a id="p0115"></a>
+
+- Trang in: 115
+- Đường dẫn nội dung: Unit 18 / 報告・連絡・相談 / ① 報告
+
+## 「ほう・れん・そう」とは？
+
+a. 「報告・連絡・相談」の略で、日本のビジネス（特に社内）における基本です。どんなときに「ほうれんそう」が必要なのか、学んでおきましょう。
+
+Mô tả hình (biên tập): Một người khoanh tay, trong bóng suy nghĩ là bó rau lá.
+
+## ① 報告
+
+### 報告する内容はまとめておく
+
+b. わかりやすく報告できるように、前もって、話す内容を考えておきましょう。報告はすべて具体的に。
+
+### 報告する前に上司の都合を聞く
+
+c. いくら上司だからといって、いつでもどこでも、あなたの報告を聞いてくれるわけではありません。「今、お時間よろしいですか？」「××の件で、少しご報告したいことがあるのですが」などと、上司の時間の都合を聞きましょう。
+
+### 結論から先に話す
+
+d. 仕事の流れや経過を報告したいのはわかりますが、最初から順番に話したのでは、何をいちばん伝えたいのかわかりません。「××の件は、現在〜となっています。理由は……」というように、とりあえず結論から話しはじめましょう。
+
+### 悪いことから報告する
+
+e. いくつか報告したいことがある中で、悪いニュースは最後にしたくなるものです。でも、すぐに対応してもらう必要がありますから、悪いニュースから先に言いましょう。
+
+Ghi chú đối ứng (biên tập): Bản dịch a–c ở PDF p0114.
+
+<a id="p0115-b002"></a>
+
+## 中文 (biên tập)
+
+d. 汇报时想马上汇报工作程序、工作经过的心情可以理解，但“汇报”如果没有一个先后次序，有时自己都会忘记自己是从什么问题开始汇报的。汇报应该从“结论”开始 “关于××项目，现在已经完成了××（百分比等）；关于……问题现阶段已处理到……主要原因是因……”
+
+e. 同时汇报几件事，总想把结果最不理想的安排在最后。结果最不理想的事情往往是必须马上处理的事情。因此同时汇报几件事情时要先汇报结果最不理想的事情。
+
+## English (biên tập)
+
+d. It's understandable that you want to explain the workflow, but if you list up everything from the beginning, your listener won't know what you really want to say. Give the conclusion before launching into details.
+
+e. People tend to want to save bad news to last. But it is the bad news that needs most immediately to be handled so start with it.
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 116
+
+<a id="p0116"></a>
+
+- Trang in: 116
+- Đường dẫn nội dung: Unit 18 / 報告・連絡・相談 / ② 連絡
+
+## ② 連絡
+
+### 遅刻・欠勤するとき
+
+f. 出社時間に間に合わない、病気で欠勤する、などの場合はもちろん、約束の時間に間に合わないときなども、時間が過ぎてからではなく、10分前くらいまでには連絡の電話などをしましょう。
+
+### 直行・直帰するとき
+
+Furigana (nguồn, tiêu đề): 直行＝ちょっこう、直帰＝ちょっき
+
+g. 家から直接、取引先などへ行くことを「直行」、取引先などから直接、家へ帰ることを「直帰」といいます。取引先にいる時に勤務時間をすでに過ぎてしまったりしたら、直帰しても構わないこともありますが、絶対に、会社に電話をかけて、そのことを連絡するように。
+
+Furigana (nguồn, g, từ trong ngoặc lần đầu): 直行＝ちょっこう、直帰＝ちょっき
+
+### 計画を変更するとき
+
+h. 仕事上のスケジュールや場所、時間などを変更した場合は、すぐに関係者に連絡しましょう。いろいろな人が大変迷惑することになります。
+
+### 外出するとき
+
+i. 仕事で取引先を訪問するなどの外出はもちろん、銀行へ行くなどのちょっとした外出も、必ず出掛ける前に連絡するようにしてください。だいたいの戻る時間も、併せて言っておきましょう。
+
+<a id="p0116-b002"></a>
+
+## 中文 (biên tập)
+
+f. 当出现“无论怎么赶都会迟到”“生病了非请假不可”“约定时间快到了，来不及了”等情况时，首先要和公司联系。联系时间至少应安排在上班时间10分钟以前，而不是上班时间开始以后。
+
+g. 在日本，上班时间直接从家里去客户单位被称为“直行”，下班后直接从客户单位回家被称为“直归”。去客户单位处理业务过了下班时间，大多数情况下是可以直接回家的。但要切记出现这种情况一定要事前给公司打电话汇报一下。
+
+h. 工作日程、时间地点更改后必须马上通知有关方面。这种事情会给各方造成种种麻烦。
+
+## English (biên tập)
+
+f. If you can't get to the office on time, will be absent because of illness, or will be late for an appointment, call 10 minutes before the designated time.
+
+g. Going directly to a customer's from home is called chokko, while going straight home from a customer's is called chokki. You can go straight home if you are at a customer's until after work hours, but you must call the company to explain yourself.
+
+h. Contact those involved whenever there is a change in work schedule, place, or time. Not doing so will inconvenience many people.
+
+Ghi chú đối ứng (biên tập): Bản dịch i ở PDF p0117.
+
+## PDF page 117
+
+<a id="p0117"></a>
+
+- Trang in: 117
+- Đường dẫn nội dung: Unit 18 / 報告・連絡・相談 / ② 連絡
+
+## 〜自分で連絡しよう！〜
+
+Nhãn nhân vật (biên tập): 新入社員 鄭さん／鄭さんのお姉さん／同僚の牧田さん.
+
+Mô tả bố cục (biên tập): Sáu khung theo số 1–3 hàng trên, 4–6 hàng dưới; các nhãn người nói dưới đây do biên tập gán theo nhân vật trong tranh.
+
+### Khung 1 (biên tập)
+
+Mô tả hình (biên tập): 鄭さん bật dậy từ giường; phía sau có đồng hồ treo tường.
+
+**鄭さん:** 寝坊したー！！
+
+### Khung 2 (biên tập)
+
+Mô tả hình (biên tập): 鄭さん chạy đi; chị cầm điện thoại.
+
+**鄭さん:** 大変！お姉ちゃん 私急いでるから 代わりに会社に電話して！
+
+**お姉さん:** はいはい、誰にかけたらいいの？
+
+### Khung 3 (biên tập)
+
+Mô tả hình (biên tập): Chị bấm điện thoại; 鄭さん đang thay áo ở phía sau. Âm bấm: 「ピ」「ピ」.
+
+**鄭さん:** んー、じゃあ牧田さんにかけて！
+
+### Khung 4 (biên tập)
+
+Mô tả hình (biên tập): Chị nói qua điện thoại trong khi 鄭さん chạy đi.
+
+**お姉さん:** もしもし、鄭ですが、妹は昨日夜遅くまで起きていたみたいで、今日ちょっと寝坊しちゃって、起きたらもう8時すぎてたんです。なので少し遅れます。
+
+### Khung 5 (biên tập)
+
+Mô tả hình (biên tập): 牧田さん nghe điện thoại ở bàn làm việc.
+
+**牧田さん:** あ、そうですか。わかりました。課長に伝えればいいですか？
+
+**お姉さん:** はい、お願いします
+
+### Khung 6 (biên tập)
+
+Mô tả hình (biên tập): Chị giơ điện thoại; 鄭さん cầm lược và máy sấy tóc.
+
+**お姉さん:** 連絡しておいたよ〜
+
+**鄭さん:** あ、ありがとー！
+
+この連絡の仕方はどうでしたか？　これでよかったでしょうか？
+
+<a id="p0117-b002"></a>
+
+## 中文 (biên tập)
+
+i. 工作时间内要去拜访客户，要去银行时，出门前要打招呼。大致什么时间可以回来也要顺便说一声。
+
+## English (biên tập)
+
+i. Any time you leave the company to visit a customer, go to the bank, etc., tell the company first, and include your approximate return time.
+
+Ghi chú đối ứng (biên tập): Bản dịch i ứng với đoạn Nhật trên PDF p0116.
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 118
+
+<a id="p0118"></a>
+
+- Trang in: 118
+- Đường dẫn nội dung: Unit 18 / 報告・連絡・相談 / ② 連絡
+
+## ポイント
+
+j. 連絡は、必ず自分で、連絡しなければならない人に言うこと
+
+最近、直接、上司に連絡するのではなく、同僚や友人など自分が連絡しやすい人に言って、その人から上司などに伝えてもらうケースが増えていますが、これはよくありません。
+
+連絡は、直接するようにしてください。
+
+k. 連絡は簡単に短く用件だけ
+
+この場合、連絡しなければいけないのは「遅刻する」ことと、「どれくらい遅刻するか」ということだけです。どうして寝坊したとか、何時に起きたとか、そんなことは言う必要はありませんし、その分、時間がかかって相手に迷惑です。
+
+Mô tả hình (biên tập): Một người vừa chạy vừa cầm điện thoại, tay kia cầm áo khoác trên móc; không có lời thoại/chữ.
+
+<a id="p0118-b002"></a>
+
+## 中文 (biên tập)
+
+j. “联络”一定要自己亲自来做，也就是说，必须直接和要联络的人联络。
+
+有些人不是直接和上司联络，而是先和自己认为好说话的同事和朋友联络。近来通过朋友、同事转告这种现象有所增加，这是很不好的事情。
+
+“联络”要求的是“直接联络”。
+
+k. “联络”内容要简短，一句话说明问题
+
+必须“联络”的事情是“迟到”和“迟到×分钟”，没有必要说明“睡过点了”，“我××点起的床……”等迟到原因。说多余的话会占用别人的时间，影响别人的工作。
+
+## English (biên tập)
+
+j. Talk to the person in charge yourself.
+
+Recently there have been more incidences of employees telling their colleagues and friends to contact their superiors for them, but this is not good.
+
+Tell the person directly.
+
+k. Be brief and concise.
+
+In this case, say only that you will be late and by how much. Don't say why you overslept, what time you woke up, etc. Such detail wastes the listener's valuable time.
+
+## PDF page 119
+
+<a id="p0119"></a>
+
+- Trang in: 119
+- Đường dẫn nội dung: Unit 18 / 報告・連絡・相談 / ③ 相談
+
+## ③ 相談
+
+### 何か気になることがあれば、すぐ相談する
+
+l. どうしたらいいか迷うことや、トラブルになりそうなことがあるときは、すぐに上司や周りに相談すること。一人で悩んでいても解決しません。
+
+### 相談するときは、相手のいい時間に
+
+m. みんな仕事が忙しいので、なかなか相談に乗ってもらえる時間がないかもしれません。そういうときは、メールでとりあえず内容を先に知らせておくなどしてもいいでしょう。
+
+### 相談する前に、自分でも一応考えてみる
+
+n. 重要なことはもちろん相談したほうがいいのですが、「どうしましょう？」「どうしたらいいですか？」とただ聞くだけでは、相談された側も考えるのに時間がかかってしまうので、相談する前に、自分でもその問題について考えてみてください。「こうしようと思うのですが、どうでしょうか？」「これについては、××でいいでしょうか？」「○○と××ではどちらがいいでしょうか？」など、相手が答えやすいように相談するのがマナーです。
+
+Mô tả hình (biên tập): Một người đứng đặt ngón tay lên miệng, trong bóng suy nghĩ có 「・・・・」.
+
+<a id="p0119-b002"></a>
+
+## 中文 (biên tập)
+
+l. 工作中有问题、有困难又不知如何应对为好时，要及时请上司和同事帮助。一个人苦思是解决不了问题的。
+
+m. 大家都很忙，也许不能马上为你出谋划策或帮助你解决问题，这时你不妨先给大家（关系人）发一份邮件，把你遇到的困难告诉大家。
+
+n. 重要的事情征求一下别人的意见是非常必要的。提出问题的时候不要总是说“怎么办？”“应该怎么处理呢？”这样会占用别人很多时间，你也要为帮助你的人着想。征求他人意见之前你应该先很好地整理一下自己的思路。不要使对方为难是征求别人意见时的行规。你不妨这样来提问 “我想这样来处理，你看行得通吗？”“这个问题这样处理合适吗？”“甲和乙，哪个办法更好呢？”等等。
+
+## English (biên tập)
+
+l. Consult with your boss or those around you when you don't know what to do or have a problem. You won't solve the prob-lem by mulling over it alone.
+
+m. Everyone's busy and might not have much time to help you. In those cases, try first sending an email explaining the problem.
+
+n. Of course it's good to consult someone about crucial matters, but it takes time for the listener to come up with ideas about what to do, so before asking, think about the problem yourself. Suggest possible plans of action that you are considering. It's good manners to make it easy for your listener to respond.
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 120
+
+<a id="p0120"></a>
+
+<a id="p0120-b001"></a>
+
+- Trang in: 120
+- Đường dẫn nội dung: Unit 19 / 社内でのコミュニケーション
+
+## Unit 19 社内でのコミュニケーション
+
+仕事を楽しくするには、
+よいコミュニケーションがかかせません！
+
+### 確認クイズ
+
+第1問
+
+上司に対する態度で、好ましくないことはどれでしょう？
+
+1…敬語を使って話す
+
+2…なれなれしい態度を取る
+
+3…お金の貸し借りをしない
+
+第2問
+
+部署の仲間と毎日食べに行くランチ代は、誰が支払う？
+
+1…先輩
+
+2…上司
+
+3…各自、自分で
+
+解答
+
+第1問　2 → ①上司・先輩　参照
+
+第2問　3 → ③食事をする　参照
+
+## PDF page 121
+
+<a id="p0121"></a>
+
+- Trang in: 121
+- Đường dẫn nội dung: Unit 19 / 社内でのコミュニケーション / ① 上司・先輩
+
+## ① 上司・先輩
+
+上司に対する態度は、どんなものがいいでしょうか？
+
+a. 上司と親しくなったからといって、こちらからあまりなれなれしい態度をとらないほうがいいでしょう。
+
+Mô tả hình a (biên tập): Dấu ×; người trẻ đứng sau khoác vai và ôm người đeo kính, người đeo kính có giọt mồ hôi.
+
+b. 社内の人でも、上司にはなるべく敬語で話しましょう。敬語がうまく使えないときは「〜です／ですか」「〜ます／ますか」だけでもOKです。
+
+Mô tả hình b (biên tập): Dấu ○; người trẻ nói với người đeo kính: 「課長、明日の会議には出席されますか？」.
+
+c. 日本では、上司が話し終わる前に、下の立場の人が話しはじめることはあまりありません。上司が話しているときは、なるべく最後まで聞くようにしたほうがいいでしょう。
+
+Mô tả hình c (biên tập): Dấu ×; người đeo kính: 「昨日の会議についてなんだけど…」; người trẻ xua tay và nói: 「そんなことより課長、これ見てくださいよ！」.
+
+d. 日本では、年長者を敬う文化があるので、同じ社内の人でも年長者には、お客さまに接する時と同じように丁寧に対応する方がいいでしょう。
+
+Mô tả hình d (biên tập): Dấu ○; người trẻ đứng cạnh cửa mở, đưa tay mời: 「お先にどうぞ」.
+
+<a id="p0121-b002"></a>
+
+## 中文 (biên tập)
+
+a. 和上司关系再亲密工作中也不能不拘礼节。
+
+b. 在公司里和上司讲话要尽可能使用敬语。如果敬语把握不好，可以使用“〜です／ですか”“ます／ますか”这样的文体（日语敬体表达方式）。
+
+c. 在日本，上司讲话之前，一般员工很少讲话。听上司讲话时，应坚持听完上司讲话。
+
+d. 日本有尊敬长者的文化传统，在同一个公司工作的同事中，肯定有比自己年龄大的人，和他们在一起的时候对待他们应该像对待客人一样去对待。
+
+## English (biên tập)
+
+a. No matter how well you know your superior, it's best not to take an overly familiar attitude towards him.
+
+b. Use respect language toward superiors as much as possible even inside the company. If you can't use it well yet, it's okay to use the desu/masu form.
+
+c. In Japan, underlings don't usually interrupt when their superior is speaking. It's best to hear out what your superior has to say.
+
+d. In Japanese culture seniors are respected so you should treat senior employees in your company with the same respect you accord customers.
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 122
+
+<a id="p0122"></a>
+
+- Trang in: 122
+- Đường dẫn nội dung: Unit 19 / 社内でのコミュニケーション / ② 同僚
+
+## ② 同僚
+
+同僚への態度は、どう取ればいいでしょう。
+
+e. プライベートで仲がよくても、会社の中では、普通の同僚として行動するように。公私混同してはいけません。
+
+Mô tả hình e (biên tập): Dấu ×; một nam một nữ nắm tay nhau, có hình trái tim phía trên.
+
+f. 相手が同僚の場合、親しくなったら敬語を使う必要はありません。相手が敬語を使うのをやめたら、あなたもやめて構いません。
+
+Mô tả hình f (biên tập): Dấu ○; nam: 「昨日夜9時からのテレビ見た？」; nữ: 「あ、見た見た！おもしろかったよね！」.
+
+g. 日本では、親しい友人同士でもお金の貸し借りをすることはあまりありません。食事代をちょっと借りて後ですぐ返すくらいはありますが、「〜万円貸して」というようなことを言うと、嫌がられる場合もあるでしょう。
+
+Mô tả hình g (biên tập): Dấu ×; một người chắp tay nhờ người khác: 「ねえ、悪いけどちょっと2万円貸してくれない？」; người kia toát mồ hôi.
+
+h. 同僚とは、困ったときに気軽に助け合えるような関係になっておくのが理想です。お互いに上司や先輩に言えない悩みなども相談できるようだといいですね。
+
+Mô tả hình h (biên tập): Dấu ○; hai nam đứng cạnh máy photocopy; một người cầm tài liệu hỏi: 「悪いけどこの資料作るの手伝ってくれる？」; người kia đáp: 「ああこれ？いいよ」.
+
+<a id="p0122-b002"></a>
+
+## 中文 (biên tập)
+
+e. 两个人关系再好，下班以后怎么相处是自己的事情，上班时间两人必须保持正常的同事关系。不分场合、不分公私显然是不应该的。
+
+f. 当然，因为对方是同事，关系近了完全可以不用敬语。一般来说，对方不用敬语的话，你也可以不用。
+
+g. 在日本，再亲密的朋友也很少互相借钱。即便偶有这种情况发生也仅限于一顿饭钱，而且会马上还给对方。张口就要借上万日元，恐怕谁都不愿再和你相处。
+
+h. 同事有困难主动去帮助有助于促进同事与同事间的友情。一些苦恼的事可能很难和上司或年长的人讲，这时如果能和要好的同事讲一讲，无疑会减轻你的压力。
+
+## English (biên tập)
+
+e. Even if you are close in your private life, at the company you should treat each other as regular colleagues. Don't mix your private and public lives.
+
+f. You needn't use polite language with colleagues you are close to. When your colleague drops polite language, you can, too.
+
+g. In Japan, even close friends don't often lend or borrow money. Sometimes someone will borrow money for a meal and immedi-ately repay it, but few people want to be asked to lend large sums.
+
+h. It would be ideal to develop a relationship whereby you and your colleagues feel free to help each other in times of need. It's nice to be able to talk to someone who is not your boss or superior.
+
+## PDF page 124
+
+<a id="p0124"></a>
+
+- Trang in: 124
+- Đường dẫn nội dung: Unit 19 / 社内でのコミュニケーション / ③ 食事をする
+
+## ポイント
+
+i. 食べ物を口に入れながら話をしたりして、音を立てたりしない
+
+食事中、楽しくおしゃべりしていると、ついつい食べ物を口に入れたまま話をしてしまうことがあるかもしれませんが、「くちゃくちゃ」と音がしたり、口の中のものが見えたりすると、周りの人も落ち着いて食べられないので、気を付けましょう。
+
+j. 一人だけ大声で話したり笑ったりしない
+
+日本人は、比較的声が静かな人が多いです。（もちろんそうでない人もいます）
+
+日本人の同僚や上司と食事をしているとき、みんながどれくらいの声の大きさで話しているか、見てください。自分だけやたらと大声で話していませんか？　もしそうだったら、みんなはあなたの声を「大きいなぁ、周りに全部聞こえて恥ずかしいなぁ」と思っているかもしれません。極端に小さな声で話す必要はありませんが、周りの声の大きさに合わせるといいでしょう。
+
+k. みんなが食べているときは、できるだけタバコは吸わない
+
+喫煙席に座ればもちろんタバコは吸っても構いませんが、みんなで食事をしていて、まだ食べている人がいるときは、なるべくなら吸わないほうがいいでしょう。みんなが食べ終わっておしゃべりしている時や、食後のコーヒーを飲んでいる時などに吸ってください。
+
+<a id="p0124-b002"></a>
+
+## 中文 (biên tập)
+
+i. 边吃边说时需要注意嘴里发出的声音
+
+吃饭时有时说得太高兴就忘记了自己嘴里还嚼着食物，如果发出咀嚼食物的声音或让人看到口中咀嚼的食物，大家很难再吃下去，这一点一定要时刻注意。
+
+j. 不要一个人大声说笑
+
+日本人大都不愿大声说话。（当然不是所有人都是这样）。
+
+和日本同事、上司一起吃饭时，你可以观察一下大家都是用多大的声音交谈。是不是只有自己在大声说话？如果是这样，大家也许就会想，你说话声音这么大所有人都听得见，你也不感到难为情吗？虽然没有必要用特别小的声音说话，但你应该尽可能把自己的声音控制在和旁人说话声音大小差不多的水平上。
+
+k. 大家都在吃的时候不要吸烟
+
+坐在吸烟席当然可以抽烟。但大家在一起吃饭的时候，如果有些人还没有吃完，你应该尽量克制住烟瘾。吸烟应该等大家都吃完
+
+## English (biên tập)
+
+i. If you talk while putting food in your mouth or have fun chatter-ing during a quiet meal, you might end up talking with your mouth full.
+
+Remember that the people around you will be disconcerted by your champing or being able to see the food in your mouth.
+
+j. Don't be the only one to talk or laugh loudly.
+
+Many Japanese speak very quietly. (Of course, there are excep-tions.) Check around you when eating with Japanese colleagues or superiors to see how loudly they speak. Are you the only one speaking too loudly? If so, people around you might feel it's embarrassing that everything you are saying is audible. You needn't whisper, but tune in to how loudly others are speaking.
+
+k. Try not to smoke when everyone is eating.
+
+Of course you can smoke in the smoking section, but if some in your party are still eating, refrain from smoking. Smoke when ev-
+
+Ghi chú nối trang (biên tập): Cả đoạn Trung k và đoạn Anh k tiếp trên PDF p0125; Anh ev- nối eryone.
+
+## PDF page 125
+
+<a id="p0125"></a>
+
+- Trang in: 125
+- Đường dẫn nội dung: Unit 19 / 社内でのコミュニケーション / ④ アフターファイブのお付き合い
+
+## ④ アフターファイブのお付き合い
+
+l. 「アフターファイブ」というのは勤務時間後のことです。
+
+### 飲み会などに誘われたら
+
+m. 皆さんの中では、仕事とプライベートを分けて考えていて、上司や同僚と夜まで一緒にいたくない人もいるかもしれません。もちろんそれは悪いことではありませんが、誘う方も気を使って誘っている場合もあるので、3回に1回くらいは参加してみてはどうでしょうか？
+
+### 断る場合
+
+n. どうしても断りたいときや用事があるときは、「ありがとうございます。でもその日はちょっと用事があって……」などと、まず最初に、誘ってもらったお礼の言葉を付けると、印象がいいですね。「次の機会にまた誘ってください」「次はぜひ参加させてください」などと言うと、相手も嫌な気はしないはずです。
+
+Mô tả hình (biên tập): Một người tí hon bám vào kim đồng hồ chỉ khoảng 5 giờ; cạnh đó có chai và nhiều loại ly đồ uống, gồm cốc bia có bọt; không có chữ.
+
+<a id="p0125-b002"></a>
+
+## 中文 (biên tập)
+
+以后再吸或者在饭后喝咖啡的时候再吸。
+
+Ghi chú nối trang (biên tập): Dòng trên tiếp đoạn k từ PDF p0124, kết thúc ở “吃完”.
+
+l. 「アフターファイブ」是指下班以后的活动。
+
+m. 有些人把工作时间和个人生活界限划分得很清，晚上不愿意和上司、同事们一起活动。这样做当然没有什么不好，但有时也应该给邀请人留点面子，约3次怎么也应该去1次，不要总让邀请人失望。
+
+n. 实在去不了只能回绝的时候，要说一句“非常感谢。不巧，我那天实在脱不开身，改日再……”。这是一种礼节，能做到这一点别人不会对你有意见的。“下次我一定去”“下次别忘了叫我”都是婉拒邀请的客套话。你只要学会这样说，大家就会认为你是一个知书达理的人。
+
+## English (biên tập)
+
+eryone is talking after the meal or drinking their after-meal cof-fee.
+
+Ghi chú nối trang (biên tập): Dòng trên tiếp ev- trong đoạn k từ PDF p0124.
+
+l. “After 5” refers to after-work hours.
+
+m. Some of you might separate your work and private lives, and do not want to stay out to all hours with colleagues and superiors. Of course, there's nothing wrong with that, but the people ask-ing you out are being considerate. How about going out one time out of three?
+
+n. If you really want to refuse or have some other appointment, it will leave a good impression if you first thank the person asking. If you say that you hope the person asks you again sometime, or you would like to go another time, your listener won't feel put out.
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 126
+
+<a id="p0126"></a>
+
+<a id="p0126-b001"></a>
+
+- Trang in: 126
+- Đường dẫn nội dung: Unit 20 / 日本人の仕事観
+
+## Unit 20 日本人の仕事観
+
+日本人は一般的に、どのように
+仕事について考えているのでしょうか？
+
+### 確認クイズ
+
+第1問
+
+今まで、日本人にとって一般的だった働き方はどれでしょう？
+
+1…2年に一度くらい転職する
+
+2…一つの会社でずっと働く
+
+3…1年のうち3カ月は休暇をとる
+
+第2問
+
+日本の伝統的な会社で、トップの役職名はどれでしょう？
+
+1…総経理
+
+2…社長
+
+3…専務
+
+解答
+
+第1問　2 → ①日本人の仕事観　参照
+
+第2問　2 → ④役職名一覧　参照
+
+## PDF page 127
+
+<a id="p0127"></a>
+
+- Trang in: 127
+- Đường dẫn nội dung: Unit 20 / 日本人の仕事観 / ① 日本人の仕事観
+
+## ① 日本人の仕事観
+
+日本人といっても、もちろんいろいろな人がいますが、一般的に日本人が伝統的にしてきた考え方を知ることは、日本のビジネス社会やビジネスパーソンを理解する上で、役に立つことも多いかもしれません。でも、不況などの影響で、日本人の仕事観もどんどん変化してきています。
+
+### 以前／現在 (bố cục biên tập)
+
+Mô tả hình (biên tập): Hai cột hình so sánh, mỗi cột có hình trên nhãn 「以前」 và hình dưới nhãn 「現在」, giữa hai hình ghi 「VS」. Cột trái phía trên: một nhóm người quàng tay lên vai nhau thành vòng tròn; phía dưới: các cá nhân cầm cặp đi về nhiều hướng khác nhau. Cột phải phía trên: một con đường từ một người trẻ cạnh một tòa nhà đến chân dung người lớn tuổi, mũi tên nét đứt theo đường ấy. Phía dưới: đường từ người trẻ đến người lớn tuổi đi qua nhiều tòa nhà khác nhau, có các mũi tên nét đứt nối các tòa nhà.
+
+a. 以前は、一人ひとりが会社の歯車のように、それぞれが一生懸命役割を果たすことで、日本企業は成長してきました。でも今は、個人主義の人もどんどん増えています。
+
+b. 今まで日本では、転職はあまり一般的ではありませんでしたし、いいイメージが少なかったのですが、最近は、転職や起業も昔よりは多くなり、会社に対する考え方も変わってきています。
+
+<a id="p0127-b002"></a>
+
+## 中文 (biên tập)
+
+a. 过去，每个职工就像是公司的齿轮，为了公司的利益和发展夜以继日地奉献着自己的一切。日本企业就是这样壮大起来的。但是今天的日本，个人主义思想严重的人正在与日俱增。
+
+b. 日本过去很少听说换工作。这或许是因为对换工作的人偏见较多的缘故。而今天的日本，很多人都在选择更换工作、独自立业，人们对于是否应该将自己的一生奉献给一个公司这类价值观有了新的思考。
+
+## English (biên tập)
+
+a. In the past, each employee was like a cog in the company ma-chine, each doing his best at his job. This is how Japan's cor-porations prospered. But now there are many individualistic em-ployees.
+
+b. It wasn't common for people to job-hop in the past, and doing so gave a bad impression. Now people change jobs or start their own companies more readily; attitudes toward companies are changing.
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 128
+
+<a id="p0128"></a>
+
+- Trang in: 128
+- Đường dẫn nội dung: Unit 20 / 日本人の仕事観 / ② 日本企業のシステム
+
+## ② 日本企業のシステム
+
+Mô tả hình (biên tập): Bốn bậc cột cao dần từ trái sang phải, mỗi bậc có một người ngồi, tuổi biểu hiện tăng dần. Nhãn lần lượt: 「新入社員」→「課長」→「部長」→「社長」. Mũi tên lớn cong từ chân bậc trái hướng sang phải, trên mũi tên ghi 「年功序列」.
+
+c. 日本の会社の伝統的なもう一つの特徴は、「年功序列」といって、年齢が上になればなるほど出世して、役職が上になっていき、給料も上がっていく、というものでした。
+
+でも、最近では「成果主義」が多くの会社に導入されることになり、年齢に関係なく、実力のある人が出世したり、給料が高くなったりするようになりました。
+
+<a id="p0128-b002"></a>
+
+## 中文 (biên tập)
+
+c. 日本企业的另一个传统就是论资排辈，它是指年龄越大待遇越好，职务越高，薪水越高这种现象。
+
+不过，近来很多公司开始实施成果主义，不再把年龄再作为考核条件。你只要有实力能给公司创效益就给你涨工资。
+
+## English (biên tập)
+
+c. Another traditional aspect of Japanese companies was the se-niority system, in which the more time an employee spent in the company, the higher up he went, and the better salary he got.
+
+Now many companies have introduced the merit system, which rewards individual ability with no relation to age.
+
+## PDF page 129
+
+<a id="p0129"></a>
+
+<a id="p0129-b001"></a>
+
+- Trang in: 129
+- Đường dẫn nội dung: Unit 20 / 日本人の仕事観 / ③ 愛社精神
+
+## ③ 愛社精神
+
+〜社歌って何？〜
+
+Nhãn nhân vật (biên tập): 新入社員 王さん／部署のみなさん (năm người).
+
+Mô tả bố cục (biên tập): Sáu khung theo số1–3 hàng trên,4–6 hàng dưới. Nhãn người nói bên dưới do biên tập thêm theo tranh.
+
+### Khung 1 (biên tập)
+
+Mô tả hình (biên tập): 王さん ngồi tại bàn, mở túi/cặp đặt trên bàn; có đồng hồ nhỏ trên tường, cốc đựng bút và khay giấy. Không có chữ.
+
+### Khung 2 (biên tập)
+
+Mô tả hình (biên tập): Âm nhạc từ loa trên tường, biểu diễn bằng các nốt nhạc; 王さん đưa tay lên tai, bóng thoại 「？」. Góc trên có đồng hồ.
+
+### Khung 3 (biên tập)
+
+Mô tả hình (biên tập): Đồng nghiệp đứng sau bàn hát theo nhạc từ loa; bóng thoại chứa các nốt nhạc; 王さん quay nhìn, bóng thoại 「？」.
+
+### Khung 4 (biên tập)
+
+Mô tả hình (biên tập): Nhạc vẫn phát; hai người đứng tập động tác giơ tay, khuỵu gối; một phụ nữ ngồi tại bàn. Hai hình đầu 王さん ở phía trước có 「？」「！？」 và các giọt mồ hôi.
+
+### Khung 5 (biên tập)
+
+Mô tả hình (biên tập): Đồng hồ trên tường, loa phát các nốt nhạc; 王さん quay đầu, đồng nghiệp xắn tay áo tại bàn. Tiếng chuông in: 「ジリリリリリリリ・・・・」.
+
+**Đồng nghiệp (biên tập):** さぁ〜、仕事するぞ！
+
+### Khung 6 (biên tập)
+
+Mô tả hình (biên tập): Mọi người tập trung quanh một người đeo kính; 王さん ở phía trước lo lắng với bóng suy nghĩ.
+
+**Người đeo kính (biên tập):** おはようございます
+
+**Người đeo kính (biên tập):** 朝礼をはじめたいと思います！
+
+**Mọi người (biên tập):** おはようございます
+
+**王さん (suy nghĩ):** 朝礼って毎日あるの？さっきの歌と体操は何？？
+
+どうですか？　あなたの会社では、朝こんなことありませんか？
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 130
+
+<a id="p0130"></a>
+
+- Trang in: 130
+- Đường dẫn nội dung: Unit 20 / 日本人の仕事観 / ③ 愛社精神
+
+## ポイント
+
+d. 社歌
+
+日本の会社には、社歌がある所も多く、大きな会社では始業前に社歌が流れる場合も多いでしょう。あまり周りに歌っている人はいないかもしれませんが、興味があれば歌詞など見て一緒に歌ってみてはどうでしょう。
+
+e. 体操
+
+社歌と同じく、毎朝、体操の音楽が流れる職場もあるでしょう。日本の大企業や工場などによく見られる習慣です。これも強制ではありませんが、興味があれば一度、体を動かしてみるのも、朝のいい運動になるでしょう。
+
+f. 朝礼
+
+会社によって、全くない所、毎朝ある所、週に1回、毎月1回、など、違いがあります。
+
+内容は会社のモットーを全員で声を合わせて読んだり、行事などの連絡事項を伝えたり、新しい社員の紹介をしたりと、いろいろです。
+
+<a id="p0130-b002"></a>
+
+## 中文 (biên tập)
+
+d. 社歌（代表企业精神、弘扬企业文化、象征该企业的歌曲）
+
+很多日本企业都有社歌。大公司工作开始前都要唱社歌。虽然唱社歌的人并不多，但如果你有兴趣，不妨看着歌词试着唱一唱。
+
+e. 体操
+
+和社歌一样，每天早上你在公司里都能听到体操音乐。这种现象在日本各大企业（工厂）都能看得到，大多数职工都想通过做体操来达到锻炼身体的目的。当然这种活动并非要强制每个人都参与。假如你对此有兴趣的话，不妨和大家一块活动活动身子骨，这可是一个很好的清晨运动噢！
+
+## English (biên tập)
+
+d. Company song.
+
+Many Japanese firms have company songs, and large firms play the songs before work commences. Most people might not sing it, but if you are interested, take a look at the lyrics and try sing-ing along.
+
+e. Calisthenics.
+
+Some workplaces play the calisthenics song every morning, just like the company song. This custom is common in large Japa-nese firms and factories. It isn't mandatory, but if you're inter-ested, why not try some nice morning calisthenics?
+
+Ghi chú đối ứng (biên tập): Bản dịch f ở PDF p0131.
+
+## PDF page 131
+
+<a id="p0131"></a>
+
+- Trang in: 131
+- Đường dẫn nội dung: Unit 20 / 日本人の仕事観 / ④ 役職名一覧
+
+## ④ 役職名一覧
+
+### 日本企業の一般的な役職名の呼び方を覚えておこう！
+
+◆ 会長（かいちょう） 前の社長がなることが多い。
+
+◆ 社長（しゃちょう） 会社のトップ。
+
+◆ 副社長（ふくしゃちょう） 複数名いる場合もある。
+
+◆ 専務（せんむ）
+
+◆ 常務（じょうむ） 常務までが「役員」と呼ばれる。
+
+◆ 部長（ぶちょう） ある部門のトップ。「営業部長」「人事部長」など。
+
+◆ 次長（じちょう）
+
+◆ 課長（かちょう） ある一つの課のトップ。「人事部採用課長」「購買課長」など。
+
+◆ 係長（かかりちょう） ある一つの係のトップ。最近少なくなる傾向にある役職。
+
+### 全部、正しく読めましたか？
+
+会社によっては、役職のある人でも「〜さん」と呼ぶ所もありますが、まだまだ「〜部長」と役職名を付けて呼ぶほうが一般的です。役職名は間違えないようにしましょう。
+
+Mô tả hình (biên tập): Một người đặt tay dưới cằm, không có chữ trong hình.
+
+<a id="p0131-b002"></a>
+
+## 中文 (biên tập)
+
+f. 朝礼（日本企业早晨职工们集中在一起进行的一项活动）
+
+公司不同，朝礼活动安排的时间不同。有的公司每天早晨一次，有的公司每周一次，有的公司每月一次；有的公司干脆不设这项活动。朝礼活动的主要内容有，职工们早晨集中在一起大声诵读社训（公司规章、公司奋斗目标等），确认什么时间在什么地点参加什么活动（主要是指日本地方上的一些传统活动）、上司向大家介绍新参加工作的或新调来的职工的情况等。总之，朝礼活动形式多样、丰富多彩。
+
+## English (biên tập)
+
+f. Morning roll call and pep talk.
+
+Some companies don't do this, while others have one every morning, once a week, or once a month. Employees read the company motto in unison, listen to company news, or are intro-duced to new employees.
+
+Ghi chú đối ứng (biên tập): Bản dịch f ứng với đoạn Nhật ở PDF p0130.
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 132
+
+<a id="p0132"></a>
+
+<a id="p0132-b001"></a>
+
+- Trang in: 132
+- Đường dẫn nội dung: ビジネスマナー○×確認問題100
+
+## ビジネスマナー○×確認問題100
+
+最後に、ビジネスマナーがきちんと身に付いたか、○×で確認してみましょう。
+
+1　日本人はシャイなので、顔を見ないであいさつをしたほうがいい　□
+
+2　廊下で上司とすれ違う時のおじぎの角度は45度　□
+
+3　朝出社してきた時に上司にあいさつするおじぎの角度は15度　□
+
+4　退社時間5分前になったら、帰る準備を始める　□
+
+5　上司が会社に残っている間は、帰ってはいけない　□
+
+6　クールビズの時はネクタイをしないで会社に行ってもいい　□
+
+7　男性は、通勤の時は書類が入るビジネスバッグを持って行く　□
+
+8　カジュアルデーはジャージで会社に行っても構わない　□
+
+9　夏は暑いので、シャツのボタンは3つあけてもいい　□
+
+10　女性は、ミニスカートで会社には行かないほうがいい　□
+
+11　男性は、少しくらい髪の毛に寝癖があっても、気にしなくていい　□
+
+12　何かと便利なので、小指の爪は伸ばしておく　□
+
+13　ひげは毎日そらなくてもいい　□
+
+14　女性のおしゃれは大切なので、派手なネイルでもOK　□
+
+15　口臭にはなるべく気を付ける　□
+
+16　香水はあまりたくさん付けない　□
+
+17　仕事に着ていくシャツは、毎日着替える　□
+
+18　前から目が見えないほど前髪が長い　□
+
+19　爪の中が黒くならないように気を付ける　□
+
+20　鼻毛が出ている　□
+
+21　お客さまと一緒にエレベーターに乗るときは、操作盤の前に立つ　□
+
+22　ノックは大きな音で　□
+
+23　腕組みをして座る　□
+
+24　脚はそろえて座る　□
+
+25　テーブルにひじを突いて上司の話を聞く　□
+
+## PDF page 133
+
+<a id="p0133"></a>
+
+<a id="p0133-b001"></a>
+
+- Trang in: 133
+- Đường dẫn nội dung: ビジネスマナー○×確認問題100 / 26–50
+
+26　背もたれに寄り掛かって座る　□
+
+27　電車の中で化粧をする　□
+
+28　電車の中で脚を開いて座る（女性）　□
+
+29　食事中、話しながら口を開けて音をさせて食べる　□
+
+30　相手が話しているときは、適度に「あいづち」を打つ　□
+
+31　あごを上げて相手を見る　□
+
+32　にやにやしながら話す　□
+
+33　呼び掛けられたら「あぁ？」と返事する　□
+
+34　「はいはいはい」などと連続してあいづちを打つ　□
+
+35　口をずっと半開きにして相手の話を聞く　□
+
+36　「そこ」の改まった言い方は「そなた」である　□
+
+37　「誰」の改まった言い方は「どなた」である　□
+
+38　「お〜する」という敬語は自分の動作に対して使う　□
+
+39　「どうですか」の尊敬語は「いかがになりますか」である　□
+
+40　重要な書類は誰にもわからないように隠しておく　□
+
+41　ゴミは、会社のルールに従って捨てる　□
+
+42　社員は、会社の備品を持って帰っていい　□
+
+43　備品を借りるときは声を掛ける　□
+
+44　書類はきちんとファイリングしておく　□
+
+45　電車の中では、携帯電話の着信音はオフにしておく　□
+
+46　携帯電話で話すとき、相手の声が聞こえないので、大声を出す　□
+
+47　携帯メールをしながら車を運転する　□
+
+48　社内での私用電話は、自分の携帯を使うなら、してもいい　□
+
+49　携帯電話の着信音は、電話にすぐ気付くように、大きな音にしておく　□
+
+50　携帯メールはこまめにチェックする　□
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 134
+
+<a id="p0134"></a>
+
+<a id="p0134-b001"></a>
+
+- Trang in: 134
+- Đường dẫn nội dung: ビジネスマナー○×確認問題100 / 51–75
+
+## ビジネスマナー○×確認問題100
+
+51　仕事が暇なときは、会社のパソコンでネットショッピングしてもいい　□
+
+52　遅刻するときは、必ず電話でも連絡する　□
+
+53　遅刻くらいだったら、上司の携帯にメールを入れればOK　□
+
+54　仕事でミスをしたときは隠さない　□
+
+55　自分のミスは認めてはいけない　□
+
+56　私用外出は絶対に認められない　□
+
+57　取引先へ行った帰りに、カフェに寄って、帰ってこなくてもいい　□
+
+58　家では時間がないので、会社でブログの更新などをする　□
+
+59　会社に遅刻したら、皆の仕事の邪魔にならないように静かに部屋に入る　□
+
+60　会社を病気で休むときは、急ぎの仕事のことを同僚などに頼んでおく　□
+
+61　名刺は両手で持つ　□
+
+62　名刺は左手で相手に渡す　□
+
+63　名刺は、名前が相手に読める向きで渡す　□
+
+64　名刺をつまむようにして受け取る　□
+
+65　名刺入れは尻ポケットに入れておく　□
+
+66　名刺に書いてある名前が読めないときは、相手に確認する　□
+
+67　来客を案内するときは、相手の真後ろを歩く　□
+
+68　ドアを押して開けるときは、お客様に先に部屋に入ってもらう　□
+
+69　お茶は、上座に座っている人から出す　□
+
+70　取引先を訪問するときは、コートは受付に行く前に脱いでおく　□
+
+71　取引先では、携帯電話はマナーモードにしておく　□
+
+72　出されたお茶は、失礼になるので飲んではいけない　□
+
+73　食事中、お箸をフォークと同じように食べ物に刺して食べる　□
+
+Furigana (nguồn, câu73): 箸＝はし
+
+74　ご飯茶碗を手で持ち上げて食べてはいけない　□
+
+75　相手が食べ終わるまで、なるべくタバコは吸わないほうがいい　□
+
+## PDF page 135
+
+<a id="p0135"></a>
+
+<a id="p0135-b001"></a>
+
+- Trang in: 135
+- Đường dẫn nội dung: ビジネスマナー○×確認問題100 / 76–100
+
+76　お酒を相手に勧めるときは、「どうぞ」とひと言、声を掛ける　□
+
+77　お酒を勧めるときは、瓶は右手で持つ　□
+
+78　お酒を勧められたら、グラスは両手で持つ　□
+
+79　日本では、「乾杯」の時でも、飲み干さなくていい　□
+
+80　お酒が弱くても、上司から勧められたら断ってはいけない　□
+
+81　お酒を飲んだ次の日は、遅刻してもいい　□
+
+82　タクシーでは、運転席の後ろの座席が上座　□
+
+83　応接室ではドアに近い席が下座になる　□
+
+84　エスカレーターに乗るとき、東京では、左に立って右側を空ける　□
+
+85　電話は3コール以内に出るのが理想　□
+
+86　電話の近くにはメモを置いておく　□
+
+87　名前などが聞き取れなくても、失礼になるので聞き返してはいけない　□
+
+88　伝言メモは、邪魔にならないように机の端のほうに置く　□
+
+89　メールの用件を参考までに知らせたい人には、CCの宛先で送る　□
+
+90　上司の指示を聞きに行くときは、メモとペンを持って行くといい　□
+
+91　上司から注意を受けたときに、すぐに言い訳しないほうがいい　□
+
+92　報告するときは、まず結論から話す　□
+
+93　私用外出するときは、特に上司には連絡しなくてもいい　□
+
+94　会社を欠勤するときは、自分で上司に連絡する　□
+
+95　直行・直帰するときは、必ず会社に連絡する　□
+
+96　「ほう・れん・そう」の「そう」は「相談」のことだ　□
+
+97　上司と食事をしたら、必ず上司が食事代を支払ってくれる　□
+
+98　同僚とのお金の貸し借りは、仲のいい証拠だ　□
+
+99　アフターファイブの飲み会などは、絶対に参加しなければならない　□
+
+100　日本企業のトップの役職名は「社長」だ　□
+
+解答は次のページにあります。
+
+Nhãn lề phải (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題.
+
+## PDF page 136
+
+<a id="p0136"></a>
+
+- Trang in: không có
+- Đường dẫn nội dung: ビジネスマナー○×確認問題100 / 解答・著者紹介・奥付
+
+## ビジネスマナー ○×確認問題100
+
+### 解答
+
+| NO. | 正解 | NO. | 正解 |
+| --- | --- | --- | --- |
+| 1 | × | 51 | × |
+| 2 | × | 52 | ○ |
+| 3 | ○ | 53 | × |
+| 4 | × | 54 | ○ |
+| 5 | × | 55 | × |
+| 6 | ○ | 56 | × |
+| 7 | ○ | 57 | × |
+| 8 | × | 58 | × |
+| 9 | × | 59 | ○ |
+| 10 | ○ | 60 | ○ |
+| 11 | × | 61 | ○ |
+| 12 | × | 62 | × |
+| 13 | × | 63 | ○ |
+| 14 | × | 64 | × |
+| 15 | ○ | 65 | × |
+| 16 | ○ | 66 | ○ |
+| 17 | ○ | 67 | × |
+| 18 | × | 68 | × |
+| 19 | ○ | 69 | ○ |
+| 20 | × | 70 | ○ |
+| 21 | ○ | 71 | ○ |
+| 22 | × | 72 | × |
+| 23 | × | 73 | × |
+| 24 | ○ | 74 | × |
+| 25 | × | 75 | ○ |
+| 26 | × | 76 | ○ |
+| 27 | × | 77 | × |
+| 28 | × | 78 | ○ |
+| 29 | × | 79 | ○ |
+| 30 | ○ | 80 | × |
+| 31 | × | 81 | × |
+| 32 | × | 82 | ○ |
+| 33 | × | 83 | ○ |
+| 34 | × | 84 | ○ |
+| 35 | × | 85 | ○ |
+| 36 | × | 86 | ○ |
+| 37 | ○ | 87 | × |
+| 38 | ○ | 88 | × |
+| 39 | × | 89 | ○ |
+| 40 | × | 90 | ○ |
+| 41 | ○ | 91 | ○ |
+| 42 | × | 92 | ○ |
+| 43 | ○ | 93 | × |
+| 44 | ○ | 94 | ○ |
+| 45 | ○ | 95 | ○ |
+| 46 | × | 96 | ○ |
+| 47 | × | 97 | × |
+| 48 | × | 98 | × |
+| 49 | × | 99 | × |
+| 50 | × | 100 | ○ |
+
+<a id="p0136-b002"></a>
+
+## 著者紹介
+
+釜渕優子　かまぶちゆうこ
+
+関西学院大学大学院言語コミュニケーション文化研究科博士課程前期課程修了。
+
+国立三重大学留学生センター講師、大連・GECIS-Asia日本語トレーナーなどを経て、法人向け外国人材採用支援、ビジネス日本語・マナー研修の「YUMA Teaching Japanese Firm」（http://www.yuma-japanese.com/）主催。著書に「マンガでわかる実用敬語 初級編」など。
+
+関西学院大学日本語教育センター「ビジネス日本語」担当講師。JSST（Japanese Standard Speaking Test）リードレイター。
+
+### Chữ và logo nhà xuất bản (biên tập)
+
+地球人ネットワークを創る
+
+アルクのシンボル
+「地球人マーク」です。
+
+Mô tả logo (biên tập): Đường viền hình đầu tròn nghiêng, mắt tròn nhỏ và miệng mở tạo hình nêm; nằm trong khung chữ nhật với các dòng trên.
+
+<a id="p0136-b003"></a>
+
+## しごとの日本語 ビジネスマナー編
+
+2008年10月1日 （初版）
+
+2015年3月5日 （第6刷）
+
+著者　釜渕優子
+
+編集――日本語チーム
+
+編集協力――石 暁宇
+
+英語翻訳――Jenine Heaton、Carolyn J. Heaton
+
+中国語翻訳――吉田 方
+
+表紙デザイン――中村 力
+
+本文デザイン――田松光子
+
+イラスト――秋本麻衣
+
+DTP――株式会社創樹
+
+印刷・製本――図書印刷株式会社
+
+発行者――平本照麿
+
+発行所――株式会社アルク
+
+〒168-8611 東京都杉並区永福2-54-12
+
+TEL：03-3327-1101　FAX：03-3327-1300
+
+Email：csss@alc.co.jp
+
+Website：http://www.alc.co.jp/
+
+落丁本、乱丁本は弊社にてお取り替えいたしております。アルクお客様センター（電話：03-3327-1101　受付時間：平日9時〜17時）までご相談ください。本書の全部または一部の無断転載を禁じます。著作権法上で認められた場合を除いて、本書からのコピーを禁じます。定価はカバーに表示してあります。
+
+©2008 釜渕優子／ALC PRESS INC.
+
+Printed in Japan.
+
+PC：7008141
+
+ISBN：978-4-7574-1467-9
+
