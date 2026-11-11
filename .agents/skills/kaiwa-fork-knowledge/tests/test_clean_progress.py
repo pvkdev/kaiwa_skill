@@ -166,6 +166,23 @@ class CleanProgressTest(unittest.TestCase):
         self.assertEqual({rel: digest(snapshot_root / rel)
                           for rel in state["snapshot"]["files"]}, snapshot_before)
 
+    def test_scan_finds_pinned_fork_and_ignores_legacy_ledger_in_direct_mode(self) -> None:
+        _, state = self.init()
+        self.checkpoint(CHAPTERS[0], "author_checked")
+        path = self.book / "_meta/book.json"
+        meta = json.loads(path.read_text(encoding="utf-8"))
+        meta["source_markdown"]["path"] = state["snapshot"]["root"] + "/" + state["source"]["markdown"]["path"]
+        put_json(path, meta)
+        row = self.run_cli("scan")["books"][0]
+        self.assertEqual(row["clean_progress"]["completed"], [CHAPTERS[0]])
+        self.assertEqual(row["output_folder"], "kaiwa_skill/knowledge/Sample Book")
+        meta["source"] = {"mode": "pdf_direct"}
+        meta.pop("source_markdown")
+        put_json(path, meta)
+        row = self.run_cli("scan")["books"][0]
+        self.assertNotIn("clean_progress", row)
+        self.assertNotIn("clean_progress_error", row)
+
     def test_resume_keeps_checkpoints_across_processes_and_localizes_edits(self) -> None:
         self.init()
         self.checkpoint(CHAPTERS[0], "author_checked")

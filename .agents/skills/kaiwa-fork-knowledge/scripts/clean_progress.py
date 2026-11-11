@@ -160,8 +160,14 @@ def scan(repo: Path) -> dict:
         row = None
         try:
             meta = read_json(meta_path)
-            row = by_source.get(meta["source_markdown"]["path"])
-            if row is None or not (meta_path.parent / "clean-state.json").is_file():
+            if meta.get("source", {}).get("mode") == "pdf_direct":
+                continue  # Any retained clean-state.json is an inactive historical ledger.
+            state_path = meta_path.parent / "clean-state.json"
+            if not state_path.is_file():
+                continue
+            state = read_json(state_path)
+            row = by_source.get(state["source"]["markdown"]["path"])
+            if row is None:
                 continue
             book = meta_path.parent.parent
             progress = resume(repo, book)

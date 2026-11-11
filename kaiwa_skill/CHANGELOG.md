@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.5 — 2026-11-11
+
+- Resume direct ưu tiên phần pending/draft/stale trước vấn đề nguồn đã biết, tránh quay mãi một trang bị che trong khi phần sau chưa làm.
+- Scan raw-fork nhận diện bản đã pin snapshot bằng nguồn gốc trong ledger, và bỏ qua ledger lịch sử inactive của sách đã chuyển PDF-direct; tránh giao lại sách đã clean.
+- Pilot88 đã chuyển provenance có history, giữ nguyên byte4chapter/9unit nội dung và toàn bộ nguồn/ledger/review cũ; vấn đề công thức PDF9 vẫn needs_review. Chưa mở full96trang.
+- 35test fork và17test direct đạt; migration thực tế kiểm không lỗi cấu trúc, giữ2warning cho cùng vấn đề nguồn page/unit.
+
 ## 0.4.4 — 2026-11-11
 
 - Raw còn dở được phân công PDF-direct, dùng các trang đã có như tài liệu phụ chỉ đọc; giữ corpus/claim/checkpoint thay vì buộc làm xong lượt raw trước. Pilot raw-fork đang có cần migration tường minh.

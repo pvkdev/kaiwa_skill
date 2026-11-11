@@ -32,6 +32,8 @@ Yêu cầu bổ sung 2026-11-11: mỗi sách cần `_meta/audio.json` và `_meta
 
 Đọc [chạy song song và khôi phục](references/parallel-and-resume.md) khi tìm sách ingest xong để clean, bắt đầu công việc dài hoặc tiếp quản sau gián đoạn. Dùng `scripts/clean_progress.py --help` để xem CLI thực tế. Tiến độ ingest và clean độc lập; không sửa hoặc giữ lock ingest để điều phối clean. Mỗi sách chỉ có một tác nhân clean đang ghi; coordinator chia ngân sách worker giữa hai giai đoạn.
 
+Scan gắn tiến độ raw-fork theo nguồn gốc trong clean ledger kể cả khi book.json đã trỏ snapshot. Sách có `source.mode=pdf_direct` dùng direct-state.json; clean-state.json còn lại sau migration là hồ sơ lịch sử, không phải tác vụ clean đang hoạt động. Dùng COORDINATOR.json và metadata từng sách để tránh giao lại bản đã làm.
+
 Checkpoint/hash xác nhận phiên bản đã lưu, không chứng minh bản cũ đáp ứng yêu cầu biên tập mới. Khi tiếp quản một bản làm theo quy tắc trước phản hồi của người dùng, rà lại các phần bị ảnh hưởng trước khi nghiệm thu hoặc nhân rộng; không tự nâng xác nhận cũ.
 
 Nếu live raw tổng hợp đổi sau snapshot, giữ nguyên pin và xem diff trước. Trường hợp **mọi trang raw byte-identical, PDF không đổi, compiled book chỉ thêm anchor/dòng trống**, coordinator có thể dùng `scripts/clean_progress.py rebase-identical-pages <book> --repo-root . --note "<lý do đã kiểm>"`. Lệnh kiểm guard, tạo snapshot mới và history byte-exact, chỉ đổi provenance cùng dependency hashes; không thêm xác nhận nội dung. Chữ học/trang/PDF thay hoặc checkpoint stale thì phải từ chối và rà nguồn liên quan. Không sửa snapshot cũ hoặc đổi hash bằng tay để bỏ cảnh báo; sau rebase build/validate lại.

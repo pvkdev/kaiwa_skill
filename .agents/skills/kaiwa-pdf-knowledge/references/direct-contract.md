@@ -17,6 +17,8 @@ py .agents/skills/kaiwa-pdf-knowledge/scripts/direct_progress.py validate "kaiwa
 
 `build` cần evidence cho toàn scope và mọi chapter đã khai báo. Full book còn pending thì dùng checkpoint/resume và đọc từng chapter để QA, chưa build toàn sách. `--allow-draft` không cho phép bỏ qua evidence/chapters bị thiếu; nó chỉ hạ yêu cầu author_checked của dữ liệu đã có. Không tạo file trang giả hoặc đổi phạm vi để né lỗi thiếu dữ liệu.
 
+`resume.next_page/next_chapter` ưu tiên pending/draft/stale theo thứ tự sách; chỉ quay lại needs_review khi không còn phần có thể viết/kiểm tiếp. Issue nguồn đã biết vẫn được giữ riêng, không buộc tác nhân lặp lại mãi một trang bị che trong khi các chương sau chưa làm.
+
 ### Chữ nguồn bị che/không đọc chắc (`needs_review`)
 
 Chỉ dùng khi đã **mở ảnh gốc**, thấy vấn đề cụ thể trong chính PDF, và không thể phục hồi chắc chắn. Không đoán chữ/đáp án. Page evidence có `review_status: "needs_review"`, `review_note` ghi đã mở ảnh và phạm vi chưa rõ, `issues` chứa ít nhất một `{ "pdf_block": "p0032-b005", "description": "Chữ in ... bị ghi tay che ..." }` trỏ block có thật trong `blocks`. `checks.visual_review` và `checks.reading_order` phải `true`; cả bốn checks phải là boolean; `text_complete`/`japanese_accuracy` có thể `false` đúng thực tế. Nếu block đó vào unit, unit có `review_status: "needs_review"` và `issues` chứa `{ "pdf_page": 32, "pdf_block": "p0032-b005", "description": "..." }` đúng source mapping. Issue unit phải khớp issue trang cùng block. Giữ `issues` cụ thể; không dùng status này cho phần chỉ chưa làm.

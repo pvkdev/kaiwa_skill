@@ -288,6 +288,19 @@ class DirectProgressTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "compatible"):
             direct.checkpoint(self.repo, self.book, None, self.chapters[0], "needs_review", "Còn chữ bị che.")
 
+    def test_resume_prioritizes_unfinished_work_before_known_source_issue(self):
+        self.mark_source_issue()
+        direct.checkpoint(self.repo, self.book, 1, None, "needs_review", "Đã xem ảnh, còn chữ bị che.")
+        direct.checkpoint(self.repo, self.book, None, self.chapters[0], "needs_review", "Giữ issue nguồn.")
+        progress = direct.resume(self.repo, self.book)
+        self.assertEqual(progress["next_page"], 2)
+        self.assertEqual(progress["next_chapter"], self.chapters[1])
+        direct.checkpoint(self.repo, self.book, 2, None, "author_checked", "Đã đối chiếu ảnh.")
+        direct.checkpoint(self.repo, self.book, None, self.chapters[1], "author_checked", "Đã kiểm chương2.")
+        progress = direct.resume(self.repo, self.book)
+        self.assertEqual(progress["next_page"], 1)
+        self.assertEqual(progress["next_chapter"], self.chapters[0])
+
     def test_legacy_issue_free_build_does_not_require_rewriting_accepted_pilot(self):
         self.check_all()
         direct.build(self.repo, self.book)

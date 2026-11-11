@@ -532,12 +532,12 @@ def resume(repo: Path, book: Path) -> dict:
                 not issue_invalid and not incompatible
             ) else "stale"
         result["chapters"][group].append(chapter)
-    result["next_page"] = next((p for p in state["scope"]["pdf_pages"] if p in
-                                   result["pages"]["pending"] + result["pages"]["draft"] +
-                                   result["pages"]["stale"] + result["pages"]["needs_review"]), None)
-    result["next_chapter"] = next((c for c in state["scope"]["chapters"] if c in
-                                      result["chapters"]["pending"] + result["chapters"]["draft"] +
-                                      result["chapters"]["stale"] + result["chapters"]["needs_review"]), None)
+    for group, scope, key in (("pages", state["scope"]["pdf_pages"], "next_page"),
+                             ("chapters", state["scope"]["chapters"], "next_chapter")):
+        actionable = result[group]["pending"] + result[group]["draft"] + result[group]["stale"]
+        result[key] = next((item for item in scope if item in actionable), None)
+        if result[key] is None:
+            result[key] = next((item for item in scope if item in result[group]["needs_review"]), None)
     return result
 
 
