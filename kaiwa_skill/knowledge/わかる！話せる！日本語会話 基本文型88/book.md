@@ -1,5 +1,7 @@
 # わかる！話せる！日本語会話 基本文型88
 
+> **Lưu ý nguồn:** Một số chữ/chi tiết trên PDF chưa xác nhận được. Xem [vấn đề nguồn chưa giải quyết](_meta/source-issues.md). Bản này chưa hoàn tất xác nhận nội dung.
+
 
 <a id="u-intro-01"></a>
 ## Mở đầu: Cách bắt đầu và duy trì hội thoại tiếng Nhật

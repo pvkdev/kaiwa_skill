@@ -1,0 +1,20 @@
+{
+  "date_jst": "2026-11-11",
+  "scope": "Existing four-part pilot on PDF7–12; not the entire book",
+  "ledger": "clean-state.json",
+  "adoption": "Each chapter hash was checked against the existing pilot-review.json before recording author_checked. No chapter content or existing review was rewritten.",
+  "fresh_cli_process_resume": {
+    "completed_chapters": 4,
+    "draft_chapters": 0,
+    "pending_chapters": 0,
+    "stale_chapters": 0,
+    "snapshot_errors": 0,
+    "needs_rebase": [],
+    "scope_changed": false,
+    "blocked": false,
+    "next": null
+  },
+  "automated_recovery_checks": {"tests": 11, "passed": 11, "command": "py -B -m unittest discover -s .agents/skills/kaiwa-fork-knowledge/tests -p test_clean_progress.py -v"},
+  "existing_pilot_validator": "0 errors; 0 warnings",
+  "limits": "The tests simulate interrupted writes and start fresh CLI processes. They are not a physical power-loss or forced process-kill test. No full-book cleanup or background daemon was started."
+}

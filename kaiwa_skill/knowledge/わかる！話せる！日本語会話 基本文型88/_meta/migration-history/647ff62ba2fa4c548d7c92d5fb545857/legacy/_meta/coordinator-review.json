@@ -1,0 +1,20 @@
+{
+  "date_jst": "2026-11-11",
+  "status": "pilot_ready_for_user_review",
+  "scope": {"pdf_pages": [7, 8, 9, 10, 11, 12], "chapter_count": 4, "unit_count": 8},
+  "delegation": {"subagents": 3, "model": "gpt-6-sol", "reasoning_effort": "high", "roles": ["skill author", "pilot author", "validator and independent QA"]},
+  "source_integrity": {"baseline_comparison": "unchanged", "files_checked": 8, "files": ["source PDF", "raw book.md", "raw pages p0007.md through p0012.md"], "sha256_records": "book.json"},
+  "author_review": {"physical_pdf_pages_opened": [1, 7, 8, 9, 10, 11, 12, 13], "details": "pilot-review.json", "scope_limit": "PDF1 for title and PDF13 for boundary only"},
+  "independent_review": {"sampled_pdf_pages": [9, 10, 11, 12], "details": "independent-review.md", "new_content_findings": 0, "scope_limit": "Sampled source passages; not an independent review of all material on PDF7–12"},
+  "coordinator_visual_checks": {"pdf_pages_opened": [1, 11], "purpose": "title confirmation and lesson 2 source comparison"},
+  "checks": [
+    {"name": "skill quick_validate", "result": "pass"},
+    {"name": "fork structure and provenance validator", "result": "0 errors; 0 warnings"},
+    {"name": "validator negative fixtures", "result": "expected failures for missing translation, unknown raw anchor, image/raw markers, missing metadata and stale hashes; Japanese kanji retained"},
+    {"name": "builder byte-stable rebuild", "result": "pass"},
+    {"name": "stale chapter invalidates build", "result": "pass"},
+    {"name": "duplicate unit ID rejected before output writes", "result": "pass"}
+  ],
+  "known_source_issues": [{"pdf_page": 9, "raw_anchor": "p0009-b005", "decision": "Keep verified example; omit inconsistent printed formula from learning text; preserve discrepancy in editorial log."}],
+  "rollout": "Pilot only. No full-book or full-corpus cleanup has been started by this task."
+}
