@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.1 — 2026-11-11
+
+- Sửa skill theo lỗi pilot thật: mọi câu/lượt Nhật đã in trong bài tập phải có bản Việt, không thay bằng tóm tắt; giữ ô trống và phần đáp án tách riêng.
+- Pilot trực tiếp Wakaru đã được root đọc ảnh/output độc lập, sửa và kiểm lại: 6 trang nguồn + PDF9 chứng cứ CD, 4 chapter/10 unit. Lưu PASS với hash hiện tại; không nghiệm thu toàn sách152trang. Mở dispatch full direct cho PDF chưa ingest.
+
 ## 0.4.0 — 2026-11-11
 
 - Thêm `kaiwa-pdf-knowledge`: PDF chưa ingest đi thẳng bản sách Nhật–Việt; nguồn raw hoàn chỉnh tiếp tục dùng fork clean. Giữ nguyên mạch riêng, ví dụ, thực hành, đáp án và phụ lục của từng sách.

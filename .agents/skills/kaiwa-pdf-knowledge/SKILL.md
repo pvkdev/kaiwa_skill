@@ -13,6 +13,8 @@ description: Đọc PDF kaiwa trực tiếp thành sách kiến thức Nhật–
 
 Khác biệt duy nhất về xuất xứ: bản trực tiếp không có `source_markdown`, raw anchors hoặc snapshot raw. Dùng PDF hash + số trang vật lý + block nguồn có bằng chứng. Đọc [hợp đồng PDF trực tiếp](references/direct-contract.md) trước khi tạo metadata. Builder chung vẫn tạo `book.md` và search từ chapters; không sửa `book.md` tay.
 
+Lỗi thực tế từ pilot: giữ thoại Nhật của bài ôn nhưng thay phần Việt bằng vài câu tóm tắt vẫn làm mất bản dịch. Dịch đầy đủ từng lượt đã in, giữ ô trống tương ứng; nếu cần, đặt bản dịch ở phần riêng sau đề. Với đáp án là mảnh câu ngoài phạm vi đề pilot, dịch đúng độ mở của mảnh câu, không suy thêm chủ thể hoặc hoàn cảnh.
+
 ## Làm theo phần có thể khôi phục
 
 1. Xác minh claim/phân công hiện tại. Mở bìa/trang tên và mục lục để xác nhận tên sách, ấn bản và cấu trúc thật, không lấy filename làm tên. Chia chapter theo sách; lập scope tường minh cho pilot hoặc full. Metadata không được quảng cáo pilot là full.
