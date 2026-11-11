@@ -85,6 +85,14 @@ Tiêu đề in thật ở PDF1 giữ trong book.json và đầu phần 1. Lọc 
 
 Source issues: không có lỗi STT, thiếu trang, hoặc ô raw không giải đọc được.
 
+## Rà độc lập theo ảnh — 2026-11-11
+
+Đã mở toàn bộ PDF1–70 và so 1170 hàng/năm cột theo `_meta/independent-review.md`. Một lỗi raw/clean so với ảnh: PDF68 STT1132 ghi `きっちり（と）`, raw snapshot và bản clean cũ ghi `きっちり`. Đã xem lại PDF68 ở 300 dpi, sửa đúng ô HIRAGANA trong chapter thành `きっちり（と）`, giữ các ô khác; thêm ghi chú sau bảng, đánh dấu unit68 `needs_review` vì raw snapshot vẫn thiếu biến thể. Nhận định cũ “mọi giá trị khớp” chỉ nói raw–clean trước khi so độc lập với ảnh và hết hiệu lực cho ô này. PDF69 STT1159 và PDF70 STT1165 xác nhận hai cụm nghĩa đáng ngờ đã được giữ nguyên, có ghi chú; không có chỉnh nghĩa.
+
 ## Root sampled QA
 
 Giữ nguyên tất cả1170 dòng. Nghĩa đáng ngờ trong nguồn ở1159/1165: thêm ghi chú sau bảng tương ứng, hai unit giữ needs_review, không tự sửa bằng suy đoán. Root review PDF1/35/69/70 và kiểm toàn bộ bảng bằng script; không gọi đó là review từ điển toàn sách.
+
+## Rà độc lập toàn70 trang và sửa raw theo PDF
+
+Worker khác tác giả mở đủ70/70 ảnh, so1170 dòng và phát hiện STT1132 phải làきっちり（と）. Root mở ảnh PDF68 độ phân giải cao, xác nhận và chấp nhận ô sửa. Unit68 có trạng thái pdf_checked_with_raw_correction; issue raw được giữ kèm xác nhận đã giải quyết, không còn là bất định chép chữ. Ghi chú kỹ thuật raw thiếu được giữ ở metadata, bỏ khỏi phần học. Kiểm1170 dòng hiện chỉ khác snapshot ở đúng ô1132 này; các kết quả khớp tuyệt đối trước đây là mốc trước sửa. Hai nghĩa nguồn1159/1165 vẫn needs_review, không xác nhận từ điển toàn bảng.
