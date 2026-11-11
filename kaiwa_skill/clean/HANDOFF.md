@@ -5,7 +5,7 @@ Root đang điều phối toàn catalog30 PDF, chỉ clean nguồn ready. Ngư�
 Repo: `D:/CODE/git/kaiwa_skill`. Đọc AGENTS.md, `.agents/skills/kaiwa-fork-knowledge/SKILL.md`, COORDINATOR.json và STATUS.md. Worker hiện tại:
 
 - `/root/clean_namachuukei_sho`: đã bàn giao N1 full70 trang/build/commit; đã QA độc lập Chu đủ89 trang. Hiện independent QA Keigo93 trang.
-- `/root/clean_namachuukei_chu`: 英訳・語い冊 kinh doanh, full103 trang; checkpoint từng bài và tự tiếp tục. Sau Bài17 đang Bài18.
+- `/root/clean_namachuukei_chu`: đã bàn giao 英訳・語い冊 kinh doanh full103 trang (commit3fe61bd). Hiện rà/sửa preservation pilot 基本文型88, chỉ PDF7–12, không mở rộng full; ghi preservation-recheck.md, không ghi đè review cũ.
 - `/root/clean_keigo`: đã bàn giao Keigo đủ93 trang; đã QA độc lập Sho đủ91 trang; hiện independent QA N3 47 trang. Không sửa N3 khi worker còn sở hữu.
 
 Đã release phạm vi PDF: Sho91p(commit87c18d1), Chu89p(0314647), N3 47p(fedfb5f), MINATO checklist8p(19da433), Keigo93p(8e939e7). Root review theo mẫu, không gán review toàn sách. Sho đã independent review/rebuild commit87139ff; Chu đã independent review commit6a11343. N1 đã release commitdcc3864. Keigo15 units needs_review; thiếu bài14/trang in106–107 do chính PDF, không dựng lại.
@@ -16,4 +16,4 @@ Chờ nguồn ingest sẵn sàng; quét lại sau sách/bàn giao. Nếu không 
 
 Git chia sẻ index với ingest ở chat khác. Chỉ root Git, exact-path `git commit --only -- <book> <snapshot>`, file mới dùng `git add -N` đúng path. Không git add., không reset lịch sử, không push. Kiểm commit thực sự chỉ chứa path được giao. Source snapshot byte-for-byte ở ngoài knowledge; chỉ.md/.json/.jsonl, ảnh ignoredcache.
 
-Điểm tiếp theo: tiếp tục business, nhận N3/Keigo independent QA; scan nguồn mới và giao ngay trong phạm vi đã được ủy quyền. Cập nhật ownership/checkpoint vào COORDINATOR.json. Nếu thực sự bị ngắt, xác nhận worker cũ dừng trước khi nhận lại sách; đọc ledger và resume, không khởi tạo lại/xóa tiến độ.
+Điểm tiếp theo: nhận pilot preservation recheck và N3/Keigo independent QA, rồi giao business independent QA cho worker khác tác giả khi có slot; scan nguồn mới và giao ngay trong phạm vi đã được ủy quyền. Cập nhật ownership/checkpoint vào COORDINATOR.json. Nếu thực sự bị ngắt, xác nhận worker cũ dừng trước khi nhận lại sách; đọc ledger và resume, không khởi tạo lại/xóa tiến độ.
