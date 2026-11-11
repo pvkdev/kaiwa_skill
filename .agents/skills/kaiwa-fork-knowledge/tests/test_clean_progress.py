@@ -304,6 +304,97 @@ class CleanProgressTest(unittest.TestCase):
         self.assertGreaterEqual(calls, 2)
         self.assertFalse((self.book / "_meta" / "clean-state.json").exists())
 
+    def rebase_fixture(self):
+        """Mirror a book pinned to its first snapshot before live compiled drift."""
+        _, state = self.init()
+        old_root = state["snapshot"]["root"]
+        meta_path = self.book / "_meta/book.json"
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        meta["source_markdown"]["path"] = old_root + "/kaiwa_skill/corpus/sample-corpus/book.md"
+        put_json(meta_path, meta)
+        rows = [json.loads(line) for line in self.units_path.read_text(encoding="utf-8").splitlines()]
+        for row in rows:
+            for source in row["source"]:
+                source["raw_page"] = old_root + "/" + source["raw_page"]
+        self.write_units(rows)
+        for chapter in CHAPTERS:
+            self.checkpoint(chapter, "author_checked")
+        old_bytes = {name: (self.book / "_meta" / name).read_bytes() for name in
+                     ("book.json", "clean-state.json", "units.jsonl")}
+        old_snapshot_hashes = {rel: digest(self.repo / old_root / rel) for rel in state["snapshot"]["files"]}
+        self.raw_book.write_text(
+            "# Raw book\n<a id=\"p0001\"></a>\n\n<a id=\"p0001-b001\"></a>\n"
+            "<a id=\"p0002\"></a>\n", encoding="utf-8")
+        build_path = self.corpus / "build.json"
+        build = json.loads(build_path.read_text(encoding="utf-8"))
+        build["book_sha256"] = digest(self.raw_book)
+        put_json(build_path, build)
+        spec = importlib.util.spec_from_file_location("clean_progress_rebase_test", SCRIPT)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module, old_root, old_bytes, old_snapshot_hashes
+
+    def test_rebase_anchor_only_preserves_content_and_old_snapshot(self) -> None:
+        module, old_root, old_bytes, old_snapshot_hashes = self.rebase_fixture()
+        with mock.patch.object(module, "pdf_page_count", return_value=2):
+            result = module.rebase_identical_pages(self.repo, self.book,
+                                                    "Compiled book gained a page block anchor and blank line.")
+        self.assertEqual(result["status"], "rebased_provenance_only")
+        self.assertEqual(result["completed_chapters"], 2)
+        self.assertEqual(result["added_anchors"], ["p0001-b001"])
+        self.assertEqual({rel: digest(self.repo / old_root / rel) for rel in old_snapshot_hashes},
+                         old_snapshot_hashes)
+        history = self.book / result["history"]
+        for name, data in old_bytes.items():
+            self.assertEqual((history / name).read_bytes(), data)
+        audit = json.loads((history / "audit.json").read_text(encoding="utf-8"))
+        self.assertEqual(audit["changed_raw_page_count"], 0)
+        self.assertEqual(audit["identical_page_count"], 2)
+        state = json.loads((self.book / "_meta/clean-state.json").read_text(encoding="utf-8"))
+        rows = [json.loads(line) for line in self.units_path.read_text(encoding="utf-8").splitlines()]
+        old_rows = [json.loads(line) for line in old_bytes["units.jsonl"].decode("utf-8").splitlines()]
+        for old, new in zip(old_rows, rows):
+            self.assertEqual({k: v for k, v in old.items() if k != "source"},
+                             {k: v for k, v in new.items() if k != "source"})
+            self.assertEqual(old["source"][0]["raw_anchors"], new["source"][0]["raw_anchors"])
+            self.assertTrue(new["source"][0]["raw_page"].startswith(result["new_snapshot"] + "/"))
+        self.assertFalse(module.resume(self.repo, self.book)["needs_rebase"])
+        self.assertEqual(module.resume(self.repo, self.book)["completed"], CHAPTERS)
+        self.assertEqual(state["checkpoints"][CHAPTERS[0]]["status"], "author_checked")
+
+    def test_rebase_refuses_changed_page_body(self) -> None:
+        module, _, old_bytes, _ = self.rebase_fixture()
+        self.page_files[1].write_text("Changed Japanese body\n", encoding="utf-8")
+        self.make_ingest(complete=True)
+        with mock.patch.object(module, "pdf_page_count", return_value=2):
+            with self.assertRaisesRegex(ValueError, "Raw page body changed"):
+                module.rebase_identical_pages(self.repo, self.book, "Page changed")
+        self.assertEqual((self.book / "_meta/units.jsonl").read_bytes(), old_bytes["units.jsonl"])
+
+    def test_rebase_refuses_changed_compiled_learning_text(self) -> None:
+        module, _, old_bytes, _ = self.rebase_fixture()
+        self.raw_book.write_text(self.raw_book.read_text(encoding="utf-8") + "学習内容の変更\n",
+                                 encoding="utf-8")
+        build_path = self.corpus / "build.json"
+        build = json.loads(build_path.read_text(encoding="utf-8"))
+        build["book_sha256"] = digest(self.raw_book)
+        put_json(build_path, build)
+        with mock.patch.object(module, "pdf_page_count", return_value=2):
+            with self.assertRaisesRegex(ValueError, "learning text changed"):
+                module.rebase_identical_pages(self.repo, self.book, "Learning text changed")
+        self.assertEqual((self.book / "_meta/book.json").read_bytes(), old_bytes["book.json"])
+
+    def test_rebase_refuses_stale_chapter_and_pdf_page_count(self) -> None:
+        module, _, _, _ = self.rebase_fixture()
+        with mock.patch.object(module, "pdf_page_count", return_value=3):
+            with self.assertRaisesRegex(ValueError, "physical page count"):
+                module.rebase_identical_pages(self.repo, self.book, "PDF count changed")
+        chapter = self.book / CHAPTERS[0]
+        chapter.write_text(chapter.read_text(encoding="utf-8") + "\nChanged chapter\n", encoding="utf-8")
+        with mock.patch.object(module, "pdf_page_count", return_value=2):
+            with self.assertRaisesRegex(ValueError, "Stale chapter"):
+                module.rebase_identical_pages(self.repo, self.book, "Chapter changed")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.4 — 2026-11-11
+
+- Raw còn dở được phân công PDF-direct, dùng các trang đã có như tài liệu phụ chỉ đọc; giữ corpus/claim/checkpoint thay vì buộc làm xong lượt raw trước. Pilot raw-fork đang có cần migration tường minh.
+- Thêm rebase-identical-pages cho compiled raw chỉ thêm anchor/dòng trống: giữ PDF và mọi raw page byte-identical, lưu snapshot/history mới; giữ snapshot cũ và checkpoint nội dung còn hợp lệ. Nội dung/PDF khác hoặc checkpoint stale bị từ chối.
+- Chạy thành công trên 本文冊138 trang: thêm4anchor trong compiled source, không đổi chữ học, build/validate0/0.34 test fork và16 test direct đạt.
+
 ## 0.4.3 — 2026-11-11
 
 - Từ scan Nameraka PDF32: hỗ trợ needs_review cho unit/trang/chapter có chữ in bị ghi tay che. Issue phải gắn vùng thật; checkpoint/resume không coi nó là đã xác nhận.

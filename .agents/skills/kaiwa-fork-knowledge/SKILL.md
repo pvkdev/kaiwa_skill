@@ -34,4 +34,6 @@ Yêu cầu bổ sung 2026-11-11: mỗi sách cần `_meta/audio.json` và `_meta
 
 Checkpoint/hash xác nhận phiên bản đã lưu, không chứng minh bản cũ đáp ứng yêu cầu biên tập mới. Khi tiếp quản một bản làm theo quy tắc trước phản hồi của người dùng, rà lại các phần bị ảnh hưởng trước khi nghiệm thu hoặc nhân rộng; không tự nâng xác nhận cũ.
 
+Nếu live raw tổng hợp đổi sau snapshot, giữ nguyên pin và xem diff trước. Trường hợp **mọi trang raw byte-identical, PDF không đổi, compiled book chỉ thêm anchor/dòng trống**, coordinator có thể dùng `scripts/clean_progress.py rebase-identical-pages <book> --repo-root . --note "<lý do đã kiểm>"`. Lệnh kiểm guard, tạo snapshot mới và history byte-exact, chỉ đổi provenance cùng dependency hashes; không thêm xác nhận nội dung. Chữ học/trang/PDF thay hoặc checkpoint stale thì phải từ chối và rà nguồn liên quan. Không sửa snapshot cũ hoặc đổi hash bằng tay để bỏ cảnh báo; sau rebase build/validate lại.
+
 Đọc [kế hoạch pilot](references/pilot-plan.md) khi triển khai hoặc nghiệm thu pilot sách `日本語会話-基本文型８８`; với sách khác, chọn phạm vi và bố cục theo nội dung thật của sách.

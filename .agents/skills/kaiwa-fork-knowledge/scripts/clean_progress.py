@@ -8,7 +8,9 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import shutil
+import subprocess
 import sys
 import uuid
 
@@ -51,6 +53,15 @@ def atomic_json(path: Path, data: dict) -> None:
         os.fsync(stream.fileno())
     os.replace(temp, path)
     # fsync of directories is not portable on Windows; replace is atomic there.
+
+
+def atomic_bytes(path: Path, data: bytes) -> None:
+    temp = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
+    with temp.open("wb") as stream:
+        stream.write(data)
+        stream.flush()
+        os.fsync(stream.fileno())
+    os.replace(temp, path)
 
 
 @contextmanager
@@ -255,12 +266,17 @@ def snapshot_errors(repo: Path, snapshot: dict) -> list[str]:
 
 
 def chapter_inputs(repo: Path, book: Path, chapter: str, snapshot: dict) -> dict:
-    chapter_path = inside(book, chapter)
-    if not chapter_path.is_file():
-        raise ValueError(f"Missing chapter: {chapter}")
     units_path = book / "_meta" / "units.jsonl"
     units = [json.loads(line) for line in units_path.read_text(encoding="utf-8-sig").splitlines()
              if line.strip()]
+    return chapter_inputs_rows(repo, book, chapter, snapshot, units)
+
+
+def chapter_inputs_rows(repo: Path, book: Path, chapter: str,
+                        snapshot: dict, units: list[dict]) -> dict:
+    chapter_path = inside(book, chapter)
+    if not chapter_path.is_file():
+        raise ValueError(f"Missing chapter: {chapter}")
     relevant = [unit for unit in units if unit.get("chapter") == chapter]
     if not relevant:
         raise ValueError(f"No units for chapter: {chapter}")
@@ -369,10 +385,227 @@ def resume(repo: Path, book: Path) -> dict:
     return result
 
 
+ANCHOR_LINE = re.compile(r"^\s*<a\s+id=[\"']([^\"']+)[\"']\s*></a>\s*$", re.I)
+PAGE_ANCHOR = re.compile(r"p(\d{4})(?:-b\d{3})?")
+
+
+def compiled_parts(path: Path) -> tuple[list[str], list[str], int]:
+    """Only standalone HTML anchors and wholly blank lines are layout drift."""
+    meaningful, anchors, blank_count = [], [], 0
+    for line in path.read_text(encoding="utf-8-sig").splitlines():
+        if not line.strip():
+            blank_count += 1
+            continue
+        match = ANCHOR_LINE.fullmatch(line)
+        if match:
+            anchors.append(match[1])
+        else:
+            meaningful.append(line)
+    return meaningful, anchors, blank_count
+
+
+def pdf_page_count(pdf: Path) -> int:
+    result = subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True,
+                            encoding="utf-8", errors="replace")
+    if result.returncode:
+        raise ValueError(f"pdfinfo failed: {result.stderr.strip()}")
+    match = re.search(r"(?m)^Pages:\s+(\d+)\s*$", result.stdout)
+    if not match:
+        raise ValueError("pdfinfo did not report a physical page count")
+    return int(match[1])
+
+
+def rebase_identical_pages(repo: Path, book: Path, note: str) -> dict:
+    """Re-pin an anchor/layout-only compiled raw book after exact page comparison."""
+    if not note.strip():
+        raise ValueError("Rebase requires --note explaining the observed source drift")
+    meta_dir = book / "_meta"
+    with exclusive(meta_dir):
+        meta_path, state_path, units_path = (meta_dir / name for name in
+                                             ("book.json", "clean-state.json", "units.jsonl"))
+        old_bytes = {"book.json": meta_path.read_bytes(), "clean-state.json": state_path.read_bytes(),
+                     "units.jsonl": units_path.read_bytes()}
+        metadata, state = read_json(meta_path), read_json(state_path)
+        if not same_scope(metadata["scope"], state["scope"]):
+            raise ValueError("Book scope differs from clean ledger")
+        if metadata["source_pdf"] != state["source"]["pdf"]:
+            raise ValueError("PDF identity differs between metadata and ledger")
+        pdf_info = state["source"]["pdf"]
+        pdf = inside(repo, pdf_info["path"])
+        if not pdf.is_file() or sha(pdf) != pdf_info["sha256"]:
+            raise ValueError("Source PDF changed")
+        old_snapshot = state["snapshot"]
+        errors = snapshot_errors(repo, old_snapshot)
+        if errors:
+            raise ValueError("Old snapshot changed: " + "; ".join(errors))
+        old_root = old_snapshot["root"].rstrip("/")
+        source = state["source"]["markdown"]
+        source_rel = source["path"]
+        old_compiled_rel = old_root + "/" + source_rel
+        if (metadata["source_markdown"] != {"path": old_compiled_rel, "sha256": source["sha256"]} or
+                old_snapshot["files"].get(source_rel) != source["sha256"]):
+            raise ValueError("Declared compiled raw book differs from old pinned source")
+        live_book, old_book = inside(repo, source_rel), inside(repo, old_compiled_rel)
+        if not live_book.is_file() or sha(old_book) != source["sha256"]:
+            raise ValueError("Old compiled source missing or changed")
+        corpus = live_book.parent
+        if not corpus.is_relative_to((repo / "kaiwa_skill/corpus").resolve()):
+            raise ValueError("Live source is outside kaiwa_skill/corpus")
+        manifest = read_json(corpus / "manifest.json")
+        physical_count = pdf_page_count(pdf)
+        if (manifest.get("page_count") != physical_count or
+                manifest.get("source_sha256") != pdf_info["sha256"] or
+                max(state["scope"]["pdf_pages"]) > physical_count):
+            raise ValueError("PDF physical page count/hash differs from raw manifest or scope")
+        readiness = scan_one(repo, corpus)
+        if readiness["status"] != "ready_for_fork":
+            raise ValueError("Live raw corpus is not verified: " + "; ".join(readiness["reasons"]))
+        old_text, old_anchors, old_blank = compiled_parts(old_book)
+        new_text, new_anchors, new_blank = compiled_parts(live_book)
+        if old_text != new_text:
+            raise ValueError("Compiled raw learning text changed beyond standalone anchors/blank lines")
+        if len(new_anchors) != len(set(new_anchors)) or not set(old_anchors).issubset(new_anchors):
+            raise ValueError("Compiled raw anchors were removed or duplicated")
+        page_rels = {relative(repo, corpus / "pages" / f"p{p:04d}.md")
+                     for p in state["scope"]["pdf_pages"]}
+        snapshot_pages = {rel for rel in old_snapshot["files"] if
+                          rel.startswith(relative(repo, corpus) + "/pages/") and rel.endswith(".md")}
+        if snapshot_pages != page_rels:
+            raise ValueError("Snapshot page set differs from declared PDF page scope")
+        for rel in sorted(page_rels):
+            live = inside(repo, rel)
+            if not live.is_file() or sha(live) != old_snapshot["files"][rel]:
+                raise ValueError(f"Raw page body changed: {rel}")
+        added_anchors = sorted(set(new_anchors) - set(old_anchors))
+        for anchor in added_anchors:
+            match = PAGE_ANCHOR.fullmatch(anchor)
+            if not match:
+                raise ValueError(f"New compiled anchor is not a PDF page/block ID: {anchor}")
+            rel = relative(repo, corpus / "pages" / f"p{match[1]}.md")
+            if rel not in page_rels or anchor not in compiled_parts(inside(repo, rel))[1]:
+                raise ValueError(f"New compiled anchor absent from identical raw page: {anchor}")
+        old_units = [json.loads(line) for line in units_path.read_text(encoding="utf-8-sig").splitlines()
+                     if line.strip()]
+        for chapter in state["scope"]["chapters"]:
+            entry = state["checkpoints"].get(chapter, {"status": "pending"})
+            if entry["status"] == "pending":
+                continue
+            current = chapter_inputs_rows(repo, book, chapter, old_snapshot, old_units)
+            if any(current[key] != entry.get(key) for key in
+                   ("chapter_sha256", "units_sha256", "source_pages")):
+                raise ValueError(f"Stale chapter/units/source checkpoint: {chapter}")
+        # Keep all snapshot files, including the new corpus manifest/build; pages stay byte-identical.
+        live_hashes = {}
+        for rel in old_snapshot["files"]:
+            live = inside(repo, rel)
+            if not live.is_file() or not live.is_relative_to(corpus):
+                raise ValueError(f"Missing live corpus file: {rel}")
+            live_hashes[rel] = sha(live)
+        new_book_hash = live_hashes[source_rel]
+        scope_hash = hashlib.sha256(json.dumps(state["scope"], sort_keys=True).encode()).hexdigest()[:8]
+        token = uuid.uuid4().hex
+        snapshot_rel = (Path("kaiwa_skill/source_snapshots") / corpus.name /
+                        new_book_hash[:16] / f"{scope_hash}-rebase-{token[:8]}").as_posix()
+        snapshot_dir = inside(repo, snapshot_rel)
+        if snapshot_dir.exists():
+            raise ValueError("New snapshot destination already exists")
+        new_snapshot = {"root": snapshot_rel, "files": live_hashes}
+        new_units = json.loads(json.dumps(old_units, ensure_ascii=False))
+        changed_refs = 0
+        for unit in new_units:
+            for item in unit["source"]:
+                raw = item["raw_page"]
+                original = raw[len(old_root) + 1:] if raw.startswith(old_root + "/") else raw
+                if original not in page_rels:
+                    raise ValueError(f"Unit raw_page is outside identical snapshot pages: {raw}")
+                if raw not in (original, old_root + "/" + original):
+                    raise ValueError(f"Unexpected raw_page prefix: {raw}")
+                item["raw_page"] = snapshot_rel + "/" + original
+                changed_refs += raw != item["raw_page"]
+        new_units_bytes = ("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in new_units)).encode("utf-8")
+        updated_state = json.loads(json.dumps(state, ensure_ascii=False))
+        updated_meta = json.loads(json.dumps(metadata, ensure_ascii=False))
+        updated_state["source"]["markdown"] = {"path": source_rel, "sha256": new_book_hash}
+        updated_state["snapshot"] = new_snapshot
+        updated_meta["source_markdown"] = {"path": snapshot_rel + "/" + source_rel,
+                                            "sha256": new_book_hash}
+        updated_meta.pop("build", None)
+        history_rel = (Path("_meta/rebase-history") / token).as_posix()
+        stamp = now()
+        for chapter in state["scope"]["chapters"]:
+            entry = updated_state["checkpoints"].get(chapter, {"status": "pending"})
+            if entry["status"] == "pending":
+                continue
+            new_inputs = chapter_inputs_rows(repo, book, chapter, new_snapshot, new_units)
+            entry.update(new_inputs)
+            entry.setdefault("provenance_rebases", []).append({
+                "at": stamp, "history": history_rel,
+                "note": "Provenance-only rebase; raw pages byte-identical; no content review was added."})
+        updated_state.setdefault("rebase_history", []).append(history_rel)
+        # Snapshot first; check live source a second time before touching book metadata.
+        snapshot_dir.parent.mkdir(parents=True, exist_ok=True)
+        temp_snapshot = snapshot_dir.with_name(f".{snapshot_dir.name}.{token}.tmp")
+        temp_snapshot.mkdir()
+        try:
+            for rel in live_hashes:
+                target = inside(temp_snapshot, rel)
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(inside(repo, rel), target)
+            if snapshot_errors(repo, {"root": relative(repo, temp_snapshot), "files": live_hashes}):
+                raise ValueError("Live source changed while new snapshot was copied")
+            os.replace(temp_snapshot, snapshot_dir)
+        finally:
+            if temp_snapshot.exists():
+                cleanup = temp_snapshot.resolve()
+                allowed = (repo / "kaiwa_skill/source_snapshots").resolve()
+                if cleanup == allowed or not cleanup.is_relative_to(allowed):
+                    raise ValueError("Refusing snapshot cleanup outside source_snapshots")
+                shutil.rmtree(cleanup)
+        if any(not inside(repo, rel).is_file() or sha(inside(repo, rel)) != digest
+               for rel, digest in live_hashes.items()) or sha(pdf) != pdf_info["sha256"]:
+            raise ValueError("Live source changed before rebase commit")
+        if any(path.read_bytes() != old_bytes[name] for name, path in
+               (("book.json", meta_path), ("clean-state.json", state_path), ("units.jsonl", units_path))):
+            raise ValueError("Book metadata changed before rebase commit")
+        history_dir = inside(book, history_rel)
+        history_dir.parent.mkdir(parents=True, exist_ok=True)
+        history_dir.mkdir()
+        for name, data in old_bytes.items():
+            atomic_bytes(history_dir / name, data)
+        audit = {"schema_version": 1, "at": stamp, "note": note,
+                 "old_files_sha256": {name: hashlib.sha256(data).hexdigest() for name, data in old_bytes.items()},
+                 "old_snapshot": old_root, "new_snapshot": snapshot_rel,
+                 "old_compiled_sha256": source["sha256"], "new_compiled_sha256": new_book_hash,
+                 "pdf_sha256": pdf_info["sha256"], "physical_pdf_pages": physical_count,
+                 "identical_page_count": len(page_rels), "changed_raw_page_count": 0,
+                 "added_compiled_anchors": added_anchors, "removed_compiled_anchors": [],
+                 "old_blank_lines": old_blank, "new_blank_lines": new_blank,
+                 "relocated_unit_references": changed_refs,
+                 "live_file_hashes": live_hashes}
+        atomic_json(history_dir / "audit.json", audit)
+        try:
+            atomic_bytes(units_path, new_units_bytes)
+            atomic_json(meta_path, updated_meta)
+            atomic_json(state_path, updated_state)
+            progress = resume(repo, book)
+            if progress["snapshot_errors"] or progress["needs_rebase"] or progress["stale"]:
+                raise ValueError("Post-rebase guards failed; original metadata restored")
+        except Exception:
+            for name, path in (("units.jsonl", units_path), ("book.json", meta_path),
+                               ("clean-state.json", state_path)):
+                atomic_bytes(path, old_bytes[name])
+            raise
+        return {"status": "rebased_provenance_only", "history": history_rel,
+                "new_snapshot": snapshot_rel, "identical_pages": len(page_rels),
+                "added_anchors": added_anchors, "relocated_unit_references": changed_refs,
+                "completed_chapters": len(progress["completed"]), "draft_chapters": len(progress["draft"]),
+                "next_action": "rebuild book/search and validate; semantic QA remains independent"}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
-    for name in ("scan", "init", "checkpoint", "resume"):
+    for name in ("scan", "init", "checkpoint", "resume", "rebase-identical-pages"):
         sub = commands.add_parser(name)
         if name != "scan":
             sub.add_argument("book_dir", type=Path)
@@ -381,6 +614,9 @@ def main() -> None:
             sub.add_argument("--chapter", required=True)
             sub.add_argument("--status", choices=("draft", "author_checked"), required=True)
             sub.add_argument("--note", default="")
+        if name == "rebase-identical-pages":
+            sub.add_argument("--note", required=True,
+                             help="Auditable explanation of anchor/layout-only compiled raw drift")
     args = parser.parse_args()
     try:
         repo = args.repo_root.resolve()
@@ -394,6 +630,8 @@ def main() -> None:
                 output = init(repo, book)
             elif args.command == "checkpoint":
                 output = checkpoint(repo, book, args.chapter, args.status, args.note)
+            elif args.command == "rebase-identical-pages":
+                output = rebase_identical_pages(repo, book, args.note)
             else:
                 output = resume(repo, book)
         print(json.dumps(output, ensure_ascii=False, indent=2))
