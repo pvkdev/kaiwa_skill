@@ -16,6 +16,8 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - **中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―** —140 trang, đang biên soạn từ nguồn đã sẵn sàng.
 
+- **日本語でビジネス会話 中級編 本文冊** —138 trang, đang biên soạn từ nguồn đã sẵn sàng.
+
 ## Pilot một phần
 
 - **わかる！話せる！日本語会話 基本文型88** —chỉ PDF7–12;4 phần/9unit đã rà lại bảo toàn. Toàn sách chưa clean.

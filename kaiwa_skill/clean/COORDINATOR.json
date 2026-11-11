@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "phase": "active",
-  "updated_at_utc": "2026-11-11T04:08:09.465140+00:00",
+  "updated_at_utc": "2026-11-11T04:21:38.556519+00:00",
   "authorization": "User explicitly requested bulk cleaning with three gpt-6-sol/high workers and continuous root coordination; do not end after launch.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -15,21 +15,35 @@
       "book_dir": "kaiwa_skill/knowledge/中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―",
       "stage": "full_clean_active",
       "scope_pdf_pages": 140,
-      "snapshot_root": "kaiwa_skill/source_snapshots/remake-ad35b87b708d/87df499c907819b7/61190cf5"
+      "snapshot_root": "kaiwa_skill/source_snapshots/remake-ad35b87b708d/87df499c907819b7/61190cf5",
+      "checkpoint_counts": {
+        "author_checked": 3,
+        "pending": 7
+      },
+      "planned_chapters": 10
     },
     {
       "worker": "/root/clean_namachuukei_chu",
       "corpus": "kaiwa_skill/corpus/01-yuukibui-b12c61270c7b",
-      "stage": "preflight_only_until_source_ready",
+      "stage": "full_clean_active",
       "source_pdf": "kaiwa_skill/book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf",
-      "preflight_record": "kaiwa_skill/clean/preflight/01-yuukibui-b12c61270c7b.md"
+      "preflight_record": "kaiwa_skill/clean/preflight/01-yuukibui-b12c61270c7b.md",
+      "scope_pdf_pages": 138,
+      "title": "日本語でビジネス会話 ― 中級編 ― 本文冊",
+      "book_dir": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 本文冊",
+      "snapshot_root": "kaiwa_skill/source_snapshots/01-yuukibui-b12c61270c7b/9a2c9088f812080b/224b77fb",
+      "checkpoint_counts": {
+        "draft": 1,
+        "pending": 21
+      },
+      "planned_chapters": 22
     },
     {
       "worker": "/root/clean_keigo",
-      "corpus": "kaiwa_skill/corpus/5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
+      "corpus": "kaiwa_skill/corpus/book-be075317cdca",
       "stage": "preflight_only_until_source_ready",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hàng ngày.pdf",
-      "preflight_record": "kaiwa_skill/clean/preflight/5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c.md"
+      "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf",
+      "preflight_record": "kaiwa_skill/clean/preflight/book-be075317cdca.md"
     }
   ],
   "source_queue": [
@@ -37,22 +51,20 @@
       "corpus": "kaiwa_skill/corpus/01-yuukibui-b12c61270c7b",
       "source_pdf": "kaiwa_skill/book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf",
       "page_count": 138,
-      "readiness": "waiting",
-      "reason_count": 32,
-      "reasons": [
-        "Ingest claim or write lock exists",
-        "Ingest build is not complete",
-        "Manifest verified count differs from page count"
-      ]
+      "readiness": "ready_for_fork",
+      "reason_count": 0,
+      "reasons": []
     },
     {
       "corpus": "kaiwa_skill/corpus/02-yuukibui-3e66906b7e05",
       "source_pdf": "kaiwa_skill/book/BJT/02.日本語でビジネス会話 中級編 ー練習冊 YUUKIBUI.pdf",
       "page_count": 148,
       "readiness": "waiting",
-      "reason_count": 1,
+      "reason_count": 144,
       "reasons": [
-        "Ingest build not yet present"
+        "Ingest claim or write lock exists",
+        "Ingest build is not complete",
+        "Manifest verified count differs from page count"
       ]
     },
     {
@@ -378,5 +390,11 @@
     "review_record": "_meta/preservation-independent-review.md",
     "whole_book_cleaned": false
   },
-  "all_seven_initial_sources_independently_reviewed": true
+  "all_seven_initial_sources_independently_reviewed": true,
+  "completed_preflights": [
+    "kaiwa_skill/clean/preflight/669041168-4f47df1cc97a.md",
+    "kaiwa_skill/clean/preflight/5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c.md",
+    "kaiwa_skill/clean/preflight/shigoto-no-nihongo-bijinesu-manaa-hen-0e3d5e9467fa.md",
+    "kaiwa_skill/clean/preflight/shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0.md"
+  ]
 }

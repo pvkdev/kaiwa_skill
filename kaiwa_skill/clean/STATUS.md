@@ -18,8 +18,8 @@ Pilot 基本文型88 chỉ PDF7–12:4 chapter,9 unit; đã khôi phục CD01–
 
 ## Đang chạy
 
-- `/root/clean_namachuukei_sho`: full clean cuốn 中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―,140 trang; source mới đã ready, snapshot/plan10 phần đã init.
-- `/root/clean_namachuukei_chu`: preflight 本文冊 kinh doanh138 trang, chỉ chuẩn bị cấu trúc, chưa clean khi raw chưa ready.
-- `/root/clean_keigo`: preflight nguồn file5500 câu,136 trang, xác nhận nhan đề/cấu trúc từ PDF, chưa clean khi raw chưa ready.
+- `/root/clean_namachuukei_sho`: full clean cuốn 中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―,140 trang; đã checkpoint phần mở đầu và Unit1 (PDF1–40), đang Unit2; plan10 phần.
+- `/root/clean_namachuukei_chu`: full clean 本文冊 kinh doanh138 trang; source đã ready và snapshot/plan22 phần đã init.
+- `/root/clean_keigo`: preflight shadowing sơ–trung cấp145 trang; full88/5500/business manners/telephone đã có map riêng, chưa clean khi raw chưa ready.
 
 Bản đọc: [knowledge/README.md](../knowledge/README.md). Ownership và hàng đợi: [COORDINATOR.json](COORDINATOR.json). Tiếp quản: [HANDOFF.md](HANDOFF.md). Phiên bị đóng sẽ dừng tính toán; checkpoint/snapshot hỗ trợ mở lại từ chỗ đã lưu, không có daemon nền.

@@ -7,8 +7,8 @@ Repo D:/CODE/git/kaiwa_skill. Người dùng yêu cầu giữ lượt sống, đ
 ## Ownership hiện tại
 
 - `/root/clean_namachuukei_sho`: FULL CLEAN mới `remake-ad35b87b708d`, PDF roleplay中級140 trang. Folder `kaiwa_skill/knowledge/中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―`. Snapshot `kaiwa_skill/source_snapshots/remake-ad35b87b708d/87df499c907819b7/61190cf5`. Plan10 phần: front1–25; Unit1 26–40; Unit2 41–55; Unit3 56–69; Unit4 70–85; Unit5 86–99; Unit6 100–115; Unit7 116–127;敬語/ấn bản128–129;別冊 đáp án130–140. Worker tự tiếp từng chương, dịch cả đáp án Nhật, giữ mọi phần riêng/mạch/role/blank/track. Root không sửa khi worker còn sở hữu.
-- `/root/clean_namachuukei_chu`: PREFLIGHT ONLY source01-yuukibui-b12c61270c7b, 本文冊138 trang; source chưa ready. Chỉ đọc PDF/lập map, lưu `clean/preflight/01-yuukibui-b12c61270c7b.md`, không init hay viết knowledge. Báo root nếu ready.
-- `/root/clean_keigo`: PREFLIGHT ONLY file5500 câu136 trang, corpus dài kết thúcc8933782539c. Chỉ xác nhận title/cấu trúc từ PDF, lưu preflight cùng corpus id. Trước đó đã xong preflight full88 ở `clean/preflight/669041168-4f47df1cc97a.md` (chưa root đọc/commit; không sửa pilot).
+- `/root/clean_namachuukei_chu`: FULL CLEAN source01-yuukibui-b12c61270c7b,138 trang, đã ready. Folder `knowledge/日本語でビジネス会話 中級編 本文冊`, title thật có本文冊 trênPDF2. Snapshot `source_snapshots/01-yuukibui-b12c61270c7b/9a2c9088f812080b/224b77fb`. Plan22 file: front1–13,20課14–135,hậu từ/trắng136–138. Tự checkpoint và tiếp toàn sách.
+- `/root/clean_keigo`: PREFLIGHT ONLY shadowing初中級145 trang, corpusbook-be075317cdca. Preflight full88/5500/businessmanners/telephone đã bàn giao trongclean/preflight; root đã đọc. Không sửa knowledge hoặc nguồn khi chưa ready.
 
 ## Đã bàn giao và commit
 
@@ -26,3 +26,7 @@ Dùng `py -B`, PYTHONUTF8=1; `python` PATH là Store alias. clean_progress.py sc
 Quét nguồn sau bàn giao và định kỳ. Chỉ clean nguồnready; preflight không nghĩađãclean. Giữ đúng1owner/book, không lấy nguồn đang dở để init full. Metadata source/hash và ledger khác phạm vi sẽ báo lỗi; không reset/đổi hash để che. Raw correction theoPDF có chứng cứ được phép, không sửa snapshot.
 
 Git chung checkout/index với ingest ở chat khác. Chỉ exact-path `git commit --only -- <book> <snapshot>`; file mới dùng gitadd-N đúng path. Kiểm shortstat/commit paths, không gitadd., không reset history, không push. Ảnh chỉ ignoredcache, output chỉ.md/.json/.jsonl. Control files/README mới cập nhật hiện trạng rồi commit riêng. Worker tựcheckpoint và báo tiến độ; root không kết thúc khi một worker rảnh, giao nguồn ready hoặc preflight hữu ích tiếp.
+
+## Root sampled QA đang dở
+
+Roleplay: root đã mở ảnh PDF7/19/24/31/35 từ `.cache/renders/remake-ad35b87b708d`. Front table/14 tình huống/cast/chú thích若干名1–5 đúng nguồn; resumeformふりがな là dữ liệu nên giữ. Yêu cầu sửa deadline PDF35 thành chậm nhất sáng ngày kia đã được worker sửa/checkpoint Unit1. Ghi chú tạm ở `.cache/clean/root-roleplay-qa.md` để dùng lúc fullhandoff. Chưa gọi QA toàn25/40/140 trang.
