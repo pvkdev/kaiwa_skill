@@ -7,3 +7,5 @@ Root yêu cầu và đã đọc lại bản sửa: nguyên câu kính áp tròng
 PDF32 vẫn có câu in bị ghi tay che. Root đã mở nguồn/crop, không tìm được lớp chữ hoặc annotation để phục hồi; giữneeds_review đúng page/block/unit và công bố ởsource-issues.md. Không cópending/draft/stale. Validator cho phép source issues:0lỗi/2cảnh báo cùng vấn đề này. Không gọi sách sạch hoàn toàn hoặc suy lời đáp cho phần bị che.
 
 Audio ghi băng bán riêng, vị trí23bài nghe, đúng tác giả/nhà phát hành/6刷2002 theoPDF163; chưa tìm hoặc xác nhận file nghe. Hash chương trongcoordinator-review.json nhận diện bản tác giả đã kiểm, không chứng minh root đọc toàn27chương.
+
+Rà bổ sung audio: root mở thêm PDF6 và mở lại7–8. Câu mô tả câu hỏi trên băng bán riêng nằm ở6, hướng dẫn luyện ở7; inventory đã sửa dẫn trang và nêu giới hạn vì PDF cũng có câu hỏi in sẵn. Tổng trang root đã mở là16; không mở rộng thành full independent review. Nội dung chapter và PDF không đổi.

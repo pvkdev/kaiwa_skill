@@ -2,7 +2,7 @@
 
 Thông tin tìm bản nghe: 富阪容子, 株式会社アルク; phát hành lần đầu15/1/1997, bản scan in lần6 ngày5/8/2002 (PDF163). ISBN chưa thấy; không suy đây là CD.
 
-PDF6–8 hướng dẫn dùng **băng âm thanh bán riêng** cho bài nghe, trả lời câu hỏi và luyện đóng vai. PDF7 cho biết câu hỏi nghe chỉ có trên băng. Tác giả đã rà phạm vi PDF1–163 và ghi các vị trí bài nghe bên dưới; không thấy số track/số băng in tại các bài nghe, chưa kiểm file âm thanh thực tế.
+PDF6–8 hướng dẫn dùng **băng âm thanh bán riêng** cho bài nghe, trả lời câu hỏi và luyện đóng vai. PDF6 mô tả phần 聞き取り練習問題 là có câu hỏi trên băng bán riêng; PDF7 hướng dẫn các cách luyện với băng. Một số trang bài trong PDF cũng in câu hỏi (ví dụ PDF15), nên không hiểu mô tả này thành khẳng định mọi câu hỏi đều vắng khỏi sách. Tác giả đã rà phạm vi PDF1–163 và ghi các vị trí bài nghe bên dưới; không thấy số track/số băng in tại các bài nghe, chưa kiểm file âm thanh thực tế.
 
 §1 PDF15 (trang in 16) có biểu tượng băng ở hai bài 聞きとり練習, không in số track. Lời thoại và câu hỏi có trong sách; chưa xác nhận tệp audio.
 §2 PDF20 (trang in 21) có biểu tượng băng cho hai bài 聞きとり練習; không in số track.
