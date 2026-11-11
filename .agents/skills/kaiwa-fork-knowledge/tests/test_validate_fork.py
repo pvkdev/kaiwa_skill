@@ -253,6 +253,22 @@ class TranslationLayoutTest(unittest.TestCase):
         self.assertEqual([], report.errors)
         self.assertTrue(any('JP 1, VI 0' in warning for warning in report.warnings))
 
+    def test_foreign_only_source_turn_does_not_need_invented_japanese(self):
+        self.assertEqual([], self.check('**A (JP):** 早いね。 **A (VI):** Sớm nhỉ.\n\n'
+                                        '**Lượt B chỉ có trong cột English/Chinese (VI):** Có sớm đâu.\n'))
+
+    def test_foreign_only_source_still_requires_translation_payload(self):
+        self.assertTrue(self.check('**Lượt A chỉ có trong cột English/Chinese (VI):**\n'))
+
+    def test_english_in_role_name_does_not_bypass_orphan_check(self):
+        self.assertTrue(self.check('**English teacher (VI):** Xin chào.\n'))
+
+    def test_source_including_japanese_still_needs_jp_counterpart(self):
+        self.assertTrue(self.check('**Lượt A chỉ có trong cột Japanese/English (VI):** Xin chào.\n'))
+
+    def test_negated_foreign_only_claim_does_not_bypass_pairing(self):
+        self.assertTrue(self.check('**Lượt A không chỉ có trong cột English (VI):** Xin chào.\n'))
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.9 — 2026-11-11
+
+- Nhận nhãn bản Việt nêu rõ một lượt chỉ có trong cột dịch ngoại ngữ; không buộc dựng câu Nhật khi nguồn thật thiếu đối ứng. Nhãn này vẫn cần nội dung và đối chiếu PDF; nhãn vai chỉ nhắc English hoặc nguồn có cảJapanese vẫn giữ kiểm tra cặp. Không đổi bố cục sách để vượt validator.
+- Giữ nghĩa Việt và vấn đề nguồn của lượt A chỉ có ở cột Anh–Trung tại phát triển125/PDF120; thêm hướng dẫn vào skill trực tiếp.
+- 75 test fork và17 test direct PASS; regression14 bản đã chốt vẫn0 lỗi,16 cảnh báo nguồn đã biết.
+
 ## 0.4.8 — 2026-11-11
 
 - Validator nhận nhóm đề Nhật đánh số rồi bản Việt đánh số tròn ở phía sau, giữ bố cục tách dịch khỏi đề. Chỉ chấp nhận đủ số thứ tự và nội dung từng mục; vẫn bắt thiếu dịch, mục rỗng, qua ranh giới chương và lệch ô trống. Kiểm cấu trúc không phát hiện được bản dịch chỉ tóm tắt ý.

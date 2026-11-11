@@ -208,6 +208,21 @@ def pair_marker(line: str) -> tuple[str, str] | None:
     return None
 
 
+def foreign_only_vi(label: str) -> bool:
+    """An editorial label may explicitly identify a foreign-only source turn.
+
+    Such a translation has no Japanese counterpart to pair with. Its source and
+    accuracy still require PDF review; mentioning English in a role is not enough.
+    """
+    parsed = pair_label(label)
+    if parsed is None or parsed[0] != 'VI' or re.search(r'không\s+chỉ\s+có', label, re.I):
+        return False
+    source = re.search(r'chỉ\s+có\s+(?:trong|ở)\s+(?:cột|bản)\s+(.*)\s+\(VI\)$', label, re.I)
+    return bool(source and
+                re.search(r'\b(?:English|Chinese|Anh|Trung|Hàn|Portuguese|Korean)\b', source[1], re.I) and
+                not re.search(r'\b(?:Japanese|Nhật|JP)\b', source[1], re.I))
+
+
 def language_lines(lines: list[str]) -> tuple[list[str], list[int]]:
     """Tokenize explicit inline labels without changing the book or line refs."""
     expanded: list[str] = []
@@ -375,6 +390,8 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
                                 f'possible exercise placeholder mismatch: JP {source_blanks}, VI {translated_blanks}; '
                                 'review against source, including intentional placeholder notation changes')
         else:
+            if foreign_only_vi(label):
+                continue
             expected = 'JP' if role is None else f'{role} (JP)'
             previous = previous_marker(index)
             previous_line = next((earlier for earlier in reversed(lines[:index]) if earlier.strip()), '')

@@ -15,6 +15,8 @@ Với raw còn dở được coordinator giao sang direct, tận dụng các tra
 
 Khác biệt duy nhất về xuất xứ: bản trực tiếp không có `source_markdown`, raw anchors hoặc snapshot raw. Dùng PDF hash + số trang vật lý + block nguồn có bằng chứng. Đọc [hợp đồng PDF trực tiếp](references/direct-contract.md) trước khi tạo metadata. Builder chung vẫn tạo `book.md` và search từ chapters; không sửa `book.md` tay.
 
+Nếu cột dịch có thêm lượt thoại mà cột Nhật và romaji không có, giữ nghĩa Việt của lượt ấy và chỉ rõ nguồn ngoại ngữ của nó; không dựng câu Nhật để tạo cặp. Ghi vấn đề đúng page/block/unit và giữ phần Nhật thực sự in. Đây khác với bỏ bản Việt của một lượt Nhật đã có.
+
 Lỗi thực tế từ pilot: giữ thoại Nhật của bài ôn nhưng thay phần Việt bằng vài câu tóm tắt vẫn làm mất bản dịch. Dịch đầy đủ từng lượt đã in, giữ ô trống tương ứng; nếu cần, đặt bản dịch ở phần riêng sau đề. Với đáp án là mảnh câu ngoài phạm vi đề pilot, dịch đúng độ mở của mảnh câu, không suy thêm chủ thể hoặc hoàn cảnh.
 
 ## Làm theo phần có thể khôi phục
