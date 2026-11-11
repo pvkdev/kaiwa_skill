@@ -12,13 +12,13 @@ description: Điều phối markdown hóa PDF kaiwa, xem status, tiếp tục sa
 1. Kiểm tra Git và nguồn; xác định pilot hay production. `bunpou_skill/` chỉ đọc. Nạp `kaiwa_skill/dispatch.json` làm cấu hình model, giới hạn song song và commit; đây là cấu hình coordinator đọc, không phải daemon tự chạy.
 2. Xem status đã đối chiếu với file thật; không tin lịch sử chat hay chỉ số phần trăm cũ. Xử lý nguồn thay đổi trước khi tiếp tục.
 3. Pilot: chọn 4–6 trang thực chất của một sách, có ít nhất hội thoại, giải thích/bảng/bài tập và một cặp trang liên tiếp. Mở trang để lựa chọn, không chỉ dựa tên sách. Có thể mở thêm trang để tìm mẫu, chỉ chuyển đổi phạm vi đã chọn.
-4. Full: chỉ mở hàng đợi production khi pilot có báo cáo PASS lưu trên đĩa. Mỗi tác nhân nhận đúng một PDF và phạm vi còn lại. Mặc định hai worker đồng thời, không vượt slot khả dụng.
+4. Full: chỉ mở hàng đợi production khi pilot có báo cáo PASS lưu trên đĩa. Root trực tiếp điều phối, QA và commit; không chiếm slot bằng sub điều phối riêng. Mặc định ba worker Sol/high đồng thời, mỗi worker một PDF, không vượt slot khả dụng. Khi một worker kết thúc lượt và còn trang, followup hoặc giao tiếp từ checkpoint; khi hết sách thì lấy sách tiếp trong hàng đợi.
 
 ## Phân công
 
 Dùng `collaboration.spawn_agent` với `model="gpt-6-sol"`, `reasoning_effort="high"`, `fork_turns="none"`. Đây là tên model cụ thể user yêu cầu (Sol, không tự đổi sang 6.1 Sol). Truyền prompt theo `kaiwa_skill/core/WORKER_PROMPT.md`, đường dẫn repo thực tế, book_id, trang và vị trí checkpoint. Không giao cùng sách cho hai worker. Worker không tự sinh thêm tác nhân.
 
-Điều phối, sửa skill và QA cũng dùng `gpt-6-sol/high`. Model của phiên hiện tại không được đổi chỉ bằng lời nhắc; nếu cần dùng tác nhân đúng model.
+Điều phối, sửa skill và QA do root thuộc dòng Sol đảm nhiệm theo chỉ thị người dùng; worker dùng đúng `gpt-6-sol/high`. Không tự đổi model của worker.
 
 ## Giám sát và bàn giao
 

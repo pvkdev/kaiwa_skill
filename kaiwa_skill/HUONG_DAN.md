@@ -7,7 +7,7 @@ Mở Codex tại gốc repo (thư mục có AGENTS.md, bunpou_skill và kaiwa_sk
 - “Dùng $kaiwa-ingest xem status toàn bộ kho, số trang nháp, số trang đã đối chiếu và lỗi còn lại.”
 - “Dùng $kaiwa-ingest tiếp tục sách BOOK_ID từ checkpoint; worker Sol/high.”
 - “Dùng $kaiwa-ingest chạy pilot theo phạm vi đã chọn, kiểm tra bằng Astra/high rồi commit output pilot.”
-- “Dùng $kaiwa-ingest chạy toàn bộ hàng đợi với hai worker Sol/high, mỗi worker một sách; commit từng sách nghiệm thu.”
+- “Dùng $kaiwa-ingest để root điều phối ba worker Sol/high, mỗi worker một sách; commit từng sách nghiệm thu.”
 
 Coordinator đọc dispatch.json và chọn model trong lệnh tạo tác nhân. File cấu hình không tự khởi động tác nhân. Đóng ứng dụng/phiên làm việc có thể ngừng xử lý; các checkpoint vẫn nằm trên đĩa và được dùng khi yêu cầu tiếp tục.
 

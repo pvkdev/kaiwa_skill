@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.5 — 2026-11-11
+
+- Root trực tiếp đảm nhiệm điều phối/QA/Git theo yêu cầu người dùng; dừng sub điều phối riêng và tăng ba worker Sol/high song song trong giới hạn bốn tác nhân của phiên.
+
 ## 0.2.4 — 2026-11-11
 
 - Theo yêu cầu mới của người dùng, toàn bộ điều phối, QA, sửa skill và chuyển đổi sách dùng `gpt-6-sol/high`. Cập nhật cấu hình và hướng dẫn vận hành; không thay đổi schema, CLI, corpus đã nghiệm thu hoặc bằng chứng QA lịch sử.
