@@ -5,7 +5,9 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import posixpath
 import re
+from urllib.parse import unquote, urlsplit
 
 
 def digest(path: Path) -> str:
@@ -17,6 +19,148 @@ def contained(root: Path, relative: str) -> Path:
     if not result.is_relative_to(root.resolve()):
         raise ValueError(f"Path escapes book directory: {relative}")
     return result
+
+
+FENCE = re.compile(r"^ {0,3}(`{3,}|~{3,})(?:[^\r\n]*)$")
+
+
+def escaped(text: str, index: int) -> bool:
+    backslashes = 0
+    while index - backslashes - 1 >= 0 and text[index - backslashes - 1] == "\\":
+        backslashes += 1
+    return backslashes % 2 == 1
+
+
+def link_end(text: str, start: int) -> tuple[int, int] | None:
+    """Return the destination bounds of an inline Markdown link at ``start``."""
+    if escaped(text, start) or (start > 0 and text[start - 1] == "!"):
+        return None
+    depth = 1
+    i = start + 1
+    while i < len(text) and depth:
+        if not escaped(text, i):
+            if text[i] == "[":
+                depth += 1
+            elif text[i] == "]":
+                depth -= 1
+        i += 1
+    if depth or i >= len(text) or text[i] != "(":
+        return None
+    destination_start = i + 1
+    depth = 1
+    i += 1
+    quote = None
+    angle = False
+    title_zone = False
+    while i < len(text):
+        char = text[i]
+        if escaped(text, i):
+            i += 1
+            continue
+        if angle:
+            angle = char != ">"
+        elif quote:
+            if char == quote:
+                quote = None
+        elif char == "<":
+            angle = True
+        elif char.isspace() and depth == 1:
+            title_zone = True
+        elif char in "\"'" and title_zone:
+            quote = char
+        elif char == "(":
+            depth += 1
+        elif char == ")":
+            depth -= 1
+            if not depth:
+                return destination_start, i
+        i += 1
+    return None
+
+
+def rewrite_destination(body: str, chapter: str, chapters: set[str]) -> str:
+    if body.startswith("<"):
+        end = body.find(">")
+        if end < 0:
+            return body
+        destination, suffix = body[1:end], body[end + 1:]
+        wrapped = True
+    else:
+        match = re.match(r"(?:\\.|[^\s])+", body)
+        if not match:
+            return body
+        destination, suffix = match[0], body[match.end():]
+        wrapped = False
+    if not destination or destination.startswith(("#", "/", "\\")):
+        return body
+    try:
+        target = urlsplit(destination)
+    except ValueError:
+        return body
+    if target.scheme or target.netloc or target.query or not target.path or not target.fragment:
+        return body
+    relative = unquote(target.path)
+    resolved = posixpath.normpath(posixpath.join(posixpath.dirname(chapter), relative))
+    if resolved not in chapters:
+        return body
+    fragment = "#" + destination.split("#", 1)[1]
+    return ("<" + fragment + ">" if wrapped else fragment) + suffix
+
+
+def rewrite_inline_links(text: str, chapter: str, chapters: set[str]) -> str:
+    result = []
+    i = 0
+    while i < len(text):
+        if text[i] == "`" and not escaped(text, i):
+            run_end = i + 1
+            while run_end < len(text) and text[run_end] == "`":
+                run_end += 1
+            marker = text[i:run_end]
+            closing = re.search(r"(?<!`)" + re.escape(marker) + r"(?!`)", text[run_end:])
+            if closing:
+                end = run_end + closing.end()
+                result.append(text[i:end])
+                i = end
+                continue
+            result.append(marker)
+            i = run_end
+            continue
+        if text[i] == "[":
+            bounds = link_end(text, i)
+            if bounds:
+                start, end = bounds
+                result.append(text[i:start])
+                result.append(rewrite_destination(text[start:end], chapter, chapters))
+                result.append(")")
+                i = end + 1
+                continue
+        result.append(text[i])
+        i += 1
+    return "".join(result)
+
+
+def compiled_links(text: str, chapter: str, chapters: set[str]) -> str:
+    """Keep chapter links in source; target assembled anchors in book.md."""
+    result = []
+    prose = []
+    fence = None
+    for line in text.splitlines(keepends=True):
+        marker = FENCE.match(line)
+        if fence:
+            result.append(line)
+            if marker and marker[1][0] == fence[0] and len(marker[1]) >= fence[1] and not line[marker.end(1):].strip():
+                fence = None
+        elif marker:
+            if prose:
+                result.append(rewrite_inline_links("".join(prose), chapter, chapters))
+                prose = []
+            result.append(line)
+            fence = marker[1][0], len(marker[1])
+        else:
+            prose.append(line)
+    if prose:
+        result.append(rewrite_inline_links("".join(prose), chapter, chapters))
+    return "".join(result)
 
 
 def assemble(book: Path) -> dict:
@@ -32,6 +176,7 @@ def assemble(book: Path) -> dict:
     texts = {}
     parts = [f"# {meta['title']}\n"]
     chapter_hashes = {}
+    chapter_paths = set(chapters)
     for relative in chapters:
         path = contained(book, relative)
         text = path.read_text(encoding="utf-8-sig").strip()
@@ -39,8 +184,8 @@ def assemble(book: Path) -> dict:
             raise ValueError(f"Empty chapter: {relative}")
         texts[relative] = text
         chapter_hashes[relative] = digest(path)
-        # Chapters use ordinary headings, no code fences; keep source anchors stable.
-        parts.append(re.sub(r"(?m)^(#{1,5}) ", r"\1# ", text))
+        compiled = compiled_links(text, relative, chapter_paths)
+        parts.append(re.sub(r"(?m)^(#{1,5}) ", r"\1# ", compiled))
     search_rows = []
     for unit in units:
         chapter = unit["chapter"]
