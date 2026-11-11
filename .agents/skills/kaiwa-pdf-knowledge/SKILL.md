@@ -31,6 +31,8 @@ Trước checkpoint, đọc riêng phần Việt của từng đoạn nói/hội
 5. Bổ sung audio inventory theo phần dưới. Trong full scope đang dở, checkpoint/resume từng trang/chapter và QA trực tiếp chapter đã viết. Builder cần evidence của toàn scope và chapter đầy đủ: chỉ build/validate toàn sách khi đủ dữ liệu; lỗi thiếu trang đang pending không có nghĩa cần tạo evidence giả hoặc đổi scope. Đọc warning và kiểm PDF, không sửa metadata chỉ để làm xanh validator.
 6. Khi gián đoạn, ghi trang/chapter đang dở và lỗi cụ thể; người tiếp quản chạy resume, kiểm PDF/hash và dependency trước khi nối việc. Nguồn thay hash phải xử lý stale/rebase, không nâng trạng thái cũ. Không làm lại phần đã kiểm còn hợp lệ.
 
+Chữ đọc rõ vẫn có thể chứa mâu thuẫn nội dung: kiểm quan hệ số lượng/đơn giá/tổng tiền, điều kiện, vai và tham chiếu trong mạch sách. Nếu nguồn thật sự không nhất quán và không thể xác định cách sửa, giữ nguyên Nhật và dữ kiện, ghi cảnh báo hẹp tại chỗ cùng issue page/block/unit/chapter; không tự sửa một số để phép tính đúng và không đánh dấu author_checked chỉ vì phiên âm rõ.
+
 Nếu chính scan che/mất chữ in, mở crop để phân biệt chữ nguồn với ghi tay của người học; không chép ghi tay thành đáp án hoặc đoán chữ bị che. Dùng `needs_review` cho page/unit/chapter liên quan, có issue trỏ đúng vùng nguồn theo contract. `resume` giữ nhóm này tách khỏi phần đã xác nhận. `validate` mặc định từ chối vấn đề chưa giải quyết; `--allow-source-issues` chỉ kiểm bản đủ cấu trúc/phạm vi kèm cảnh báo nguồn, vẫn từ chối pending/draft/stale/missing. Builder đặt cảnh báo và liên kết `_meta/source-issues.md`; kết quả ấy không phải nội dung đã sạch hoàn toàn.
 
 ## CD và nguồn nghe
