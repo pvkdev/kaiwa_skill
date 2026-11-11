@@ -277,3 +277,7 @@ CLI thực: {'pending': 3993, 'verified': 600, 'needs_review': 2, 'rendered': 2}
 
 - Worker `/root/production_sol_resume/production_book_10_sol_cont4` đã xác minh p93–112: cả 20 trang mới verified; build/reconcile sạch, claim=null. Book10 có **106/136 verified, 6 needs_review cũ, 24 pending p113–136**, `build_current=true`, chưa nghiệm thu. HANDOFF riêng ghi đủ nguồn, SHA, bản vẽ vị trí ngồi, email mẫu, cross-page joins và trang kế tiếp. PDF nguồn nhảy từ trang in103 ở physical p105 sang trang in106 ở physical p106: trang in104–105 vắng trong file, không tạo nội dung giả và không thể tuyên bố tái hiện toàn bộ sách in.
 - Roster sau release đọc file thật: 832/4597 verified, 3721 pending, 43 needs_review, 1 draft của book11 worker Sol/high đang chạy. Coordinator so nguồn/Markdown book10 p95/p100/p105/p106/p112 trong phạm vi audit gắn hash; không thấy sai khác trong mẫu. Tiếp giao Sol/high book10 từ physical p113 sau commit WIP.
+
+## Book10 tiếp tục p113+ — 2026-11-11T00:06Z
+
+- WIP book10 p93–112 đã commit `f6b43c6`. Worker Sol/high mới `/root/production_sol_resume/production_book_10_sol_cont5` đã claim token `book10-cont5-20261111-e510`, bắt đầu physical p113–136, bao gồm câu tiếng Anh nối từ p112. Roster đã gán agent ID thật, `worker_state=running`. Book11 worker Sol/high cont tiếp tục song song; counts sau mốc này đọc CLI.
