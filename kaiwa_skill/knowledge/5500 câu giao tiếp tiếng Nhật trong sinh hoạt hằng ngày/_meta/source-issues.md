@@ -1,0 +1,134 @@
+# Vấn đề nguồn chưa giải quyết
+
+- PDF p8, p0008-b002: PDF8 trang in 15 in `彼の妹の習慣をもって知りたいです` và romaji `motte`; cách dùng もって ở đây bất thường. Giữ đúng chữ in, không tự sửa thành もっと.
+- PDF p10, p0010-b001: PDF10 trang in 18 in `誰か、ここで何が起きたが教えてくれませんか`; trợ từ が sau 起きた bất thường, giữ đúng nguồn.
+- PDF p10, p0010-b002: PDF10 trang in 19 in `娘さんのかんだいかい声`; chuỗi かんだいかい bất thường, giữ đúng nguồn và chỉ dịch phần chắc chắn.
+- PDF p16, p0016-b001: PDF16 trang in 30 câu 2: phần kết sau `あんな口調（口ぶり）でわたしと話さないで` bị gáy scan cắt; crop 3× vẫn không đọc chắc.
+- PDF p22, p0022-b001: PDF22 trang in 42 câu 10: sau `間が悪く` bị gáy scan cắt trước `何も話せなくなりました`; romaji gợi ý nhưng không dùng để tự chép ký tự Nhật bị khuất.
+- PDF p24, p0024-b001: PDF24 trang in 46 ví dụ dưới câu 16: sau `がっかりし` bị gáy scan cắt trước `いる`; không tự chép ký tự khuất.
+- PDF p25, p0025-b001: PDF25 trang in 48 câu 7: sau `出られなく` bị gáy scan cắt trước `残念でした`; không tự chép ký tự khuất.
+- PDF p26, p0026-b001: PDF26 trang in 50: lời đáp đối thoại bị cắt ở gáy sau `想像したほど` trước `よくなかったです`. Câu 13 in `このチャンスを締めなければなりません。残念です。`, chữ 締め không khớp nghĩa Việt in sẵn; giữ chữ in, không tự sửa.
+- PDF p27, p0027-b001: PDF27 trang in 52 câu 10: sau `たいへん悲しい` bị gáy scan cắt trước `すね`; không đọc chắc ký tự Nhật bị khuất.
+- PDF p32, p0032-b001: PDF32 trang in 62 câu 8: sau `どうしたら` bị gáy scan cắt trước `いか分からない`; không đọc chắc ký tự Nhật bị khuất.
+- PDF p34, p0034-b001: PDF34 trang in 66: câu 3 sau `みんなほっ` và câu 5 sau `幸いで` bị gáy scan cắt trước phần tiếp dòng; không tự chép ký tự Nhật bị khuất.
+- PDF p40, p0040-b001: PDF40 trang in 78: câu 15 và 20 bị vùng gáy che phần cuối dòng Nhật; giữ phần nhìn thấy, không dựng chữ từ romaji hoặc nghĩa Việt.
+- PDF p41, p0041-b001: PDF41 trang in 80: câu 9 bị vùng gáy che đoạn cuối 申し訳ありま…んでした; không đoán ký tự khuất.
+- PDF p43, p0043-b001: PDF43 trang in 84: câu 26 bị vùng gáy che giữa すみ…せん; không dựng phần khuất.
+- PDF p44, p0044-b001: PDF44 trang in 86: câu 6 bị vùng gáy che sau ありませ; không dựng phần kết câu.
+- PDF p46, p0046-b001: PDF46 trang in 90 in 誤らなくてもいい trong mục đáp lời xin lỗi; chữ 誤 bất thường theo ngữ cảnh, giữ đúng chữ in và chú nghĩa dựa trên lời đáp.
+- PDF p47, p0047-b001: PDF47 trang in 92 in 助けてくれありがとうございます, thiếu liên kết ngữ pháp thông thường trước ありがとうございます; giữ đúng chuỗi nguồn.
+- PDF p48, p0048-b001: PDF48 trang in 94: câu đáp sau そうですね。誰だって忘れることがありますか và câu 6 kết thúc ください bị gáy cắt; giữ phần đọc được, không dựng chữ thiếu.
+- PDF p50, p0050-b002: PDF50 trang in 99 câu 19 in お話はまああ合理的だと思います, cụm まああ bất thường; giữ chữ in, chỉ dịch ý chắc chắn.
+- PDF p51, p0051-b001: PDF51 trang in 100 câu 36 bị vùng gáy che sau でし trước う; không dựng phần khuất.
+- PDF p52, p0052-b001: PDF52 trang in 102 câu 41 và 43 bị vùng gáy cắt phần cuối dòng Nhật; giữ phần đọc được.
+- PDF p53, p0053-b001: PDF53 trang in 104 câu 10 bị gáy cắt sau 思 trước います; câu 9 in 彼の計画には誰かに反対です bất thường, giữ nguồn và diễn nghĩa chắc chắn.
+- PDF p54, p0054-b001: PDF54 trang in 106 câu 20–22 bị gáy cắt một phần dòng Nhật; câu 26 đối thoại in いつか仕事を忘れてもらないか, cấu trúc もらないか bất thường. Giữ phần nhìn thấy, không dựng chữ khuất.
+- PDF p55, p0055-b001: PDF55 trang in 108 câu 29 bị gáy cắt cuối dòng Nhật; giữ phần nhìn thấy.
+- PDF p56, p0056-b001: PDF56 trang in 110 câu 15 in 私がたへん悲観的だといえます, chuỗi 私がたへん bất thường; giữ đúng chữ in.
+- PDF p58, p0058-b001: PDF58 trang in 114 câu 12 in あけまししておめでとうございます, dạng あけましして bất thường; giữ đúng nguồn, không tự sửa Nhật.
+- PDF p59, p0059-b001: PDF59 trang in 116 câu 24 bị vùng gáy cắt giữa おめでとうござ…います; giữ chữ thấy được.
+- PDF p62, p0062-b001: PDF62 trang in 122 câu 3 in わたしはに興味を持っています, thiếu đối tượng trước に dù romaji/Việt in thêm môn học; không tự điền câu Nhật.
+- PDF p62, p0062-b002: PDF62 trang in 123 câu 4 in わたしは持に趣味がありません, chữ 持に bất thường theo ngữ cảnh; giữ chữ in.
+- PDF p63, p0063-b001: PDF63 trang in 124 câu 12 bị gáy che phần cuối dòng Nhật; giữ phần thấy được.
+- PDF p63, p0063-b002: PDF63 trang in 125 câu 14 園芸は本当のおもしろい có cấu trúc bất thường, giữ đúng chữ in.
+- PDF p64, p0064-b001: PDF64 trang in 126 câu 24–25 bị gáy che đoạn cuối dòng Nhật; giữ phần đọc được.
+- PDF p66, p0066-b001: PDF66 trang in 130 bảng từ in 無力的; dạng từ bất thường, giữ đúng chữ nguồn và chỉ diễn nghĩa phần chắc chắn.
+- PDF p69, p0069-b001: PDF69 trang in 136 lời thoại sau まさかあなたはいま家にいるはずじゃないですか bị gáy che đoạn cuối; giữ phần thấy được.
+- PDF p70, p0070-b001: PDF70 trang in 138 câu 24 và 25 có đoạn Nhật sát gáy bị che giữa các dòng; giữ phần thấy được, không suy từ romaji hoặc Việt.
+- PDF p72, p0072-b001: PDF72 trang in 142 câu 13 in これは明らかの買っておくべきものだ, 明らかの bất thường; giữ chữ nguồn, dịch ý chắc chắn.
+- PDF p73, p0073-b001: PDF73 trang in 144 câu 22 in いざいざを引き起こさないでほしい; dạng いざいざ bất thường theo ngữ cảnh, giữ chữ in.
+- PDF p74, p0074-b001: PDF74 trang in 146 câu 30 và phần đối thoại câu 31 bị gáy cắt đuôi dòng Nhật; giữ phần nhìn thấy.
+- PDF p75, p0075-b001: PDF75 trang in 148 câu đáp đối thoại sau もう見つか bị gáy cắt, không tự dựng chữ khuất.
+- PDF p78, p0078-b001: PDF78 trang in 154 câu 24 自分のことを確認している dùng 確認 bất thường trong mạch khuyến khích; giữ chữ nguồn, diễn nghĩa có giới hạn.
+- PDF p78, p0078-b002: PDF78 trang in 155 câu 26 君がちゃんとできると確認している dùng 確認 bất thường trong mạch khuyến khích; giữ chữ nguồn, diễn nghĩa có giới hạn.
+- PDF p83, p0083-b001: PDF83 trang in 164 câu 10 in なんなにがさつな言い方, なんなに bất thường; giữ chữ in.
+- PDF p84, p0084-b002: PDF84 trang in 167 câu 2 in 気持ちがよくなそそう và ví dụ 今日は天気なそう, hai dạng なそそう/天気なそう bất thường; giữ đúng JP nguồn, không tự sửa.
+- PDF p86, p0086-b002: PDF86 trang in 171 câu 15 in 断るのが無意味のようです, kết nối 無意味のよう bất thường; giữ đúng nguồn.
+- PDF p89, p0089-b002: PDF89 trang in 177 câu 26 in はっきるした返事, dạng はっきる bất thường; giữ chữ nguồn và dịch phần ý chắc chắn.
+- PDF p90, p0090-b002: PDF90 trang in 179 câu 8 in 品物が使いにいくければ, dạng 使いにいくければ bất thường; giữ chữ nguồn, diễn nghĩa điều kiện trả hàng theo phần chắc chắn.
+- PDF p92, p0092-b002: PDF92 trang in 183 câu 13 in このことについてななにもできません và diễn đạt câu 15 助けらないかもしれません, các dạng ななにも/助けらない bất thường; giữ nguồn.
+- PDF p96, p0096-b001: PDF96 trang in 190 câu 10 in ソー・コメント và câu 11 そのについて, đều bất thường; giữ đúng chuỗi nguồn, dịch ý có giới hạn.
+- PDF p96, p0096-b002: PDF96 trang in 191 diễn đạt sau câu 15 in 違うがない, kết hợp bất thường; giữ chữ nguồn.
+- PDF p99, p0099-b002: PDF99 trang in 197 câu 3 in まだ起きないと遅れよ; kết thúc 遅れよ bất thường, giữ đúng chuỗi nguồn.
+- PDF p108, p0108-b001: PDF108 trang in 214 câu 14 in もっと協力な洗剤, 協力な bất thường trong ngữ cảnh sức tẩy của 洗剤; giữ đúng chữ in và ghi giới hạn ở bản Việt.
+- PDF p113, p0113-b002: PDF113 trang in 225 lời thoại sau câu 12 in 食事の量を迎えなければなりません; 迎え bất thường trong ngữ cảnh lượng ăn, giữ đúng chuỗi in và diễn nghĩa có giới hạn.
+- PDF p116, p0116-b001: PDF116 trang in 230 câu 11 in ビールをも一杯 và câu 12 in 彼らかが彼を家まで..., các kết hợp も一杯/彼らかが bất thường; giữ đúng nguồn.
+- PDF p117, p0117-b002: PDF117 trang in 233 câu 11 in どこのお座りになりたいですか, kết hợp どこのお座り bất thường; giữ đúng chuỗi nguồn.
+- PDF p118, p0118-b001: Trang in 234 đối thoại câu 3 in 友達を持っているから trong ngữ cảnh đang chờ bạn; cách dùng 持っている bất thường, giữ đúng chữ in.
+- PDF p118, p0118-b002: Trang in 235 câu 9 in はい、りんごを一ください, thiếu đơn vị sau 一; lời Việt in sẵn nói nước táo nhưng JP không thể hiện nước ép, không điền Nhật từ bản dịch.
+- PDF p119, p0119-b002: Trang in 237 câu 6 in ステーキは焼きできだ, cách kết hợp 焼きでき bất thường; giữ chuỗi nguồn.
+- PDF p120, p0120-b002: Trang in 239 câu 7 in 特別で払いたいですか, cách nói trả riêng bất thường; giữ nguyên JP nguồn.
+- PDF p121, p0121-b001: Trang in 240 bảng từ có nhiều gloss Việt lệch từ Nhật rõ: フライチキン ghi cơm chiên, サクランボ ghi dâu tây, 控える ghi tiếp giáp với, v.v.; giữ mục từ Nhật và chỉnh nghĩa Việt theo từ in.
+- PDF p122, p0122-b001: Trang in 242 gloss 割り勘 ghi tính riêng, không khớp nghĩa chia tiền trả đều.
+- PDF p127, p0127-b001: Trang in 252 gloss 通じる ghi dẫn đến, hiểu rõ và のちほど ghi hẹn gặp sau; không khớp ngữ cảnh điện thoại.
+- PDF p130, p0130-b002: Trang in 259 mục tàu điện ngầm dùng 代用貨幣 cho vật mua ở máy tự động; cách gọi không thông dụng trong ngữ cảnh vé/đồng xu, giữ JP nguồn và dịch phần chắc chắn.
+- PDF p131, p0131-b002: Trang in 261 xếp あなたのタクシーは貸切ですか vào diễn đạt tương tự của 空いていますか, nhưng hỏi thuê trọn chuyến khác với hỏi xe còn trống; giữ cả hai câu và dịch đúng nghĩa từng câu.
+- PDF p133, p0133-b001: Trang in 264 câu 6 上海オーバー và gloss đi Thượng Hải không xác định rõ loại phí; giữ đúng JP, dịch trong giới hạn ngữ cảnh.
+- PDF p134, p0134-b002: Trang in 267 câu 5 駐車する空き地を探さなければありません có đuôi ありません bất thường cho nghĩa nghĩa vụ; giữ nguyên JP nguồn, ghi giới hạn ở VI.
+- PDF p135, p0135-b002: Trang in 269 bảng từ có 貸切 ghi tiền đồng/tiền xu, 真新しい ghi thương hiệu mới, 手入れて ghi có trong tay và アーバー ghi cây thông; ba gloss đầu lệch JP rõ đã chỉnh Việt, riêng アーバー chưa đủ ngữ cảnh để xác nhận nghĩa.
+- Unit u-5500-i-camxuc-p0008, PDF p8, p0008-b002: PDF8 trang in 15 in `彼の妹の習慣をもって知りたいです` và romaji `motte`; cách dùng もって ở đây bất thường. Giữ đúng chữ in, không tự sửa thành もっと.
+- Unit u-5500-i-camxuc-p0010, PDF p10, p0010-b001: PDF10 trang in 18 in `誰か、ここで何が起きたが教えてくれませんか`; trợ từ が sau 起きた bất thường, giữ đúng nguồn.
+- Unit u-5500-i-camxuc-p0010, PDF p10, p0010-b002: PDF10 trang in 19 in `娘さんのかんだいかい声`; chuỗi かんだいかい bất thường, giữ đúng nguồn và chỉ dịch phần chắc chắn.
+- Unit u-5500-i-camxuc-p0016, PDF p16, p0016-b001: PDF16 trang in 30 câu 2: phần kết sau `あんな口調（口ぶり）でわたしと話さないで` bị gáy scan cắt; crop 3× vẫn không đọc chắc.
+- Unit u-5500-i-camxuc-p0022, PDF p22, p0022-b001: PDF22 trang in 42 câu 10: sau `間が悪く` bị gáy scan cắt trước `何も話せなくなりました`; romaji gợi ý nhưng không dùng để tự chép ký tự Nhật bị khuất.
+- Unit u-5500-i-camxuc-p0024, PDF p24, p0024-b001: PDF24 trang in 46 ví dụ dưới câu 16: sau `がっかりし` bị gáy scan cắt trước `いる`; không tự chép ký tự khuất.
+- Unit u-5500-i-camxuc-p0025, PDF p25, p0025-b001: PDF25 trang in 48 câu 7: sau `出られなく` bị gáy scan cắt trước `残念でした`; không tự chép ký tự khuất.
+- Unit u-5500-i-camxuc-p0026, PDF p26, p0026-b001: PDF26 trang in 50: lời đáp đối thoại bị cắt ở gáy sau `想像したほど` trước `よくなかったです`. Câu 13 in `このチャンスを締めなければなりません。残念です。`, chữ 締め không khớp nghĩa Việt in sẵn; giữ chữ in, không tự sửa.
+- Unit u-5500-i-camxuc-p0027, PDF p27, p0027-b001: PDF27 trang in 52 câu 10: sau `たいへん悲しい` bị gáy scan cắt trước `すね`; không đọc chắc ký tự Nhật bị khuất.
+- Unit u-5500-i-camxuc-p0032, PDF p32, p0032-b001: PDF32 trang in 62 câu 8: sau `どうしたら` bị gáy scan cắt trước `いか分からない`; không đọc chắc ký tự Nhật bị khuất.
+- Unit u-5500-i-camxuc-p0034, PDF p34, p0034-b001: PDF34 trang in 66: câu 3 sau `みんなほっ` và câu 5 sau `幸いで` bị gáy scan cắt trước phần tiếp dòng; không tự chép ký tự Nhật bị khuất.
+- Unit u-5500-i-nguyenvong-p0040, PDF p40, p0040-b001: PDF40 trang in 78: câu 15 và 20 bị vùng gáy che phần cuối dòng Nhật; giữ phần nhìn thấy, không dựng chữ từ romaji hoặc nghĩa Việt.
+- Unit u-5500-i-nguyenvong-p0041, PDF p41, p0041-b001: PDF41 trang in 80: câu 9 bị vùng gáy che đoạn cuối 申し訳ありま…んでした; không đoán ký tự khuất.
+- Unit u-5500-i-nguyenvong-p0043, PDF p43, p0043-b001: PDF43 trang in 84: câu 26 bị vùng gáy che giữa すみ…せん; không dựng phần khuất.
+- Unit u-5500-i-nguyenvong-p0044, PDF p44, p0044-b001: PDF44 trang in 86: câu 6 bị vùng gáy che sau ありませ; không dựng phần kết câu.
+- Unit u-5500-i-nguyenvong-p0046, PDF p46, p0046-b001: PDF46 trang in 90 in 誤らなくてもいい trong mục đáp lời xin lỗi; chữ 誤 bất thường theo ngữ cảnh, giữ đúng chữ in và chú nghĩa dựa trên lời đáp.
+- Unit u-5500-i-nguyenvong-p0047, PDF p47, p0047-b001: PDF47 trang in 92 in 助けてくれありがとうございます, thiếu liên kết ngữ pháp thông thường trước ありがとうございます; giữ đúng chuỗi nguồn.
+- Unit u-5500-i-nguyenvong-p0048, PDF p48, p0048-b001: PDF48 trang in 94: câu đáp sau そうですね。誰だって忘れることがありますか và câu 6 kết thúc ください bị gáy cắt; giữ phần đọc được, không dựng chữ thiếu.
+- Unit u-5500-i-nguyenvong-p0050, PDF p50, p0050-b002: PDF50 trang in 99 câu 19 in お話はまああ合理的だと思います, cụm まああ bất thường; giữ chữ in, chỉ dịch ý chắc chắn.
+- Unit u-5500-i-nguyenvong-p0051, PDF p51, p0051-b001: PDF51 trang in 100 câu 36 bị vùng gáy che sau でし trước う; không dựng phần khuất.
+- Unit u-5500-i-nguyenvong-p0052, PDF p52, p0052-b001: PDF52 trang in 102 câu 41 và 43 bị vùng gáy cắt phần cuối dòng Nhật; giữ phần đọc được.
+- Unit u-5500-i-nguyenvong-p0053, PDF p53, p0053-b001: PDF53 trang in 104 câu 10 bị gáy cắt sau 思 trước います; câu 9 in 彼の計画には誰かに反対です bất thường, giữ nguồn và diễn nghĩa chắc chắn.
+- Unit u-5500-i-nguyenvong-p0054, PDF p54, p0054-b001: PDF54 trang in 106 câu 20–22 bị gáy cắt một phần dòng Nhật; câu 26 đối thoại in いつか仕事を忘れてもらないか, cấu trúc もらないか bất thường. Giữ phần nhìn thấy, không dựng chữ khuất.
+- Unit u-5500-i-nguyenvong-p0055, PDF p55, p0055-b001: PDF55 trang in 108 câu 29 bị gáy cắt cuối dòng Nhật; giữ phần nhìn thấy.
+- Unit u-5500-i-nguyenvong-p0056, PDF p56, p0056-b001: PDF56 trang in 110 câu 15 in 私がたへん悲観的だといえます, chuỗi 私がたへん bất thường; giữ đúng chữ in.
+- Unit u-5500-i-nguyenvong-p0058, PDF p58, p0058-b001: PDF58 trang in 114 câu 12 in あけまししておめでとうございます, dạng あけましして bất thường; giữ đúng nguồn, không tự sửa Nhật.
+- Unit u-5500-i-nguyenvong-p0059, PDF p59, p0059-b001: PDF59 trang in 116 câu 24 bị vùng gáy cắt giữa おめでとうござ…います; giữ chữ thấy được.
+- Unit u-5500-i-nguyenvong-p0062, PDF p62, p0062-b001: PDF62 trang in 122 câu 3 in わたしはに興味を持っています, thiếu đối tượng trước に dù romaji/Việt in thêm môn học; không tự điền câu Nhật.
+- Unit u-5500-i-nguyenvong-p0062, PDF p62, p0062-b002: PDF62 trang in 123 câu 4 in わたしは持に趣味がありません, chữ 持に bất thường theo ngữ cảnh; giữ chữ in.
+- Unit u-5500-i-nguyenvong-p0063, PDF p63, p0063-b001: PDF63 trang in 124 câu 12 bị gáy che phần cuối dòng Nhật; giữ phần thấy được.
+- Unit u-5500-i-nguyenvong-p0063, PDF p63, p0063-b002: PDF63 trang in 125 câu 14 園芸は本当のおもしろい có cấu trúc bất thường, giữ đúng chữ in.
+- Unit u-5500-i-nguyenvong-p0064, PDF p64, p0064-b001: PDF64 trang in 126 câu 24–25 bị gáy che đoạn cuối dòng Nhật; giữ phần đọc được.
+- Unit u-5500-i-nguyenvong-p0066, PDF p66, p0066-b001: PDF66 trang in 130 bảng từ in 無力的; dạng từ bất thường, giữ chữ in.
+- Unit u-5500-i-ykien-p0069, PDF p69, p0069-b001: PDF69 trang in 136 lời thoại sau まさかあなたはいま家にいるはずじゃないですか bị gáy che đoạn cuối; giữ phần thấy được.
+- Unit u-5500-i-ykien-p0070, PDF p70, p0070-b001: PDF70 trang in 138 câu 24 và 25 có đoạn Nhật sát gáy bị che giữa các dòng; giữ phần thấy được, không suy từ romaji hoặc Việt.
+- Unit u-5500-i-ykien-p0072, PDF p72, p0072-b001: PDF72 trang in 142 câu 13 in これは明らかの買っておくべきものだ, 明らかの bất thường; giữ chữ nguồn, dịch ý chắc chắn.
+- Unit u-5500-i-ykien-p0073, PDF p73, p0073-b001: PDF73 trang in 144 câu 22 in いざいざを引き起こさないでほしい; dạng いざいざ bất thường theo ngữ cảnh, giữ chữ in.
+- Unit u-5500-i-ykien-p0074, PDF p74, p0074-b001: PDF74 trang in 146 câu 30 và phần đối thoại câu 31 bị gáy cắt đuôi dòng Nhật; giữ phần nhìn thấy.
+- Unit u-5500-i-ykien-p0075, PDF p75, p0075-b001: PDF75 trang in 148 câu đáp đối thoại sau もう見つか bị gáy cắt, không tự dựng chữ khuất.
+- Unit u-5500-i-ykien-p0078, PDF p78, p0078-b001: PDF78 trang in 154 câu 24 自分のことを確認している dùng 確認 bất thường trong mạch khuyến khích; giữ chữ nguồn, diễn nghĩa có giới hạn.
+- Unit u-5500-i-ykien-p0078, PDF p78, p0078-b002: PDF78 trang in 155 câu 26 君がちゃんとできると確認している dùng 確認 bất thường trong mạch khuyến khích; giữ chữ nguồn, diễn nghĩa có giới hạn.
+- Unit u-5500-i-ykien-p0083, PDF p83, p0083-b001: PDF83 trang in 164 câu 10 in なんなにがさつな言い方, なんなに bất thường; giữ chữ in.
+- Unit u-5500-i-ykien-p0084, PDF p84, p0084-b002: PDF84 trang in 167 câu 2 in 気持ちがよくなそそう và ví dụ 今日は天気なそう, hai dạng なそそう/天気なそう bất thường; giữ đúng JP nguồn, không tự sửa.
+- Unit u-5500-i-ykien-p0086, PDF p86, p0086-b002: PDF86 trang in 171 câu 15 in 断るのが無意味のようです, kết nối 無意味のよう bất thường; giữ đúng nguồn.
+- Unit u-5500-i-ykien-p0089, PDF p89, p0089-b002: PDF89 trang in 177 câu 26 in はっきるした返事, dạng はっきる bất thường; giữ chữ nguồn và dịch phần ý chắc chắn.
+- Unit u-5500-i-ykien-p0090, PDF p90, p0090-b002: PDF90 trang in 179 câu 8 in 品物が使いにいくければ, dạng 使いにいくければ bất thường; giữ chữ nguồn, diễn nghĩa điều kiện trả hàng theo phần chắc chắn.
+- Unit u-5500-i-ykien-p0092, PDF p92, p0092-b002: PDF92 trang in 183 câu 13 in このことについてななにもできません và diễn đạt câu 15 助けらないかもしれません, các dạng ななにも/助けらない bất thường; giữ nguồn.
+- Unit u-5500-i-ykien-p0096, PDF p96, p0096-b001: PDF96 trang in 190 câu 10 in ソー・コメント và câu 11 そのについて, đều bất thường; giữ đúng chuỗi nguồn, dịch ý có giới hạn.
+- Unit u-5500-i-ykien-p0096, PDF p96, p0096-b002: PDF96 trang in 191 diễn đạt sau câu 15 in 違うがない, kết hợp bất thường; giữ chữ nguồn.
+- Unit u-5500-ii-vandong-p0099, PDF p99, p0099-b002: PDF99 trang in 197 câu 3 in まだ起きないと遅れよ; kết thúc 遅れよ bất thường, giữ chữ nguồn.
+- Unit u-5500-i-vandong-p0108, PDF p108, p0108-b001: PDF108 trang in 214 câu 14 in もっと協力な洗剤, 協力な bất thường trong ngữ cảnh sức tẩy của 洗剤; giữ đúng chữ in và ghi giới hạn ở bản Việt.
+- Unit u-5500-i-amthuc-p0113, PDF p113, p0113-b002: PDF113 trang in 225 lời thoại sau câu 12 in 食事の量を迎えなければなりません; 迎え bất thường trong ngữ cảnh lượng ăn, giữ đúng chuỗi in và diễn nghĩa có giới hạn.
+- Unit u-5500-i-amthuc-p0116, PDF p116, p0116-b001: PDF116 trang in 230 câu 11 in ビールをも一杯 và câu 12 in 彼らかが彼を家まで..., các kết hợp も一杯/彼らかが bất thường; giữ đúng nguồn.
+- Unit u-5500-i-amthuc-p0117, PDF p117, p0117-b002: PDF117 trang in 233 câu 11 in どこのお座りになりたいですか, kết hợp どこのお座り bất thường; giữ đúng chuỗi nguồn.
+- Unit u-5500-i-ii-amthuc-p0118, PDF p118, p0118-b001: Trang in 234 đối thoại câu 3 in 友達を持っているから trong ngữ cảnh đang chờ bạn; cách dùng 持っている bất thường, giữ đúng chữ in.
+- Unit u-5500-i-ii-amthuc-p0118, PDF p118, p0118-b002: Trang in 235 câu 9 in はい、りんごを一ください, thiếu đơn vị sau 一; lời Việt in sẵn nói nước táo nhưng JP không thể hiện nước ép, không điền Nhật từ bản dịch.
+- Unit u-5500-i-ii-amthuc-p0119, PDF p119, p0119-b002: Trang in 237 câu 6 in ステーキは焼きできだ, cách kết hợp 焼きでき bất thường; giữ chuỗi nguồn.
+- Unit u-5500-i-ii-amthuc-p0120, PDF p120, p0120-b002: Trang in 239 câu 7 in 特別で払いたいですか, cách nói trả riêng bất thường; giữ nguyên JP nguồn.
+- Unit u-5500-i-ii-amthuc-p0121, PDF p121, p0121-b001: Trang in 240 bảng từ có nhiều gloss Việt lệch từ Nhật rõ: フライチキン ghi cơm chiên, サクランボ ghi dâu tây, 控える ghi tiếp giáp với, v.v.; giữ mục từ Nhật và chỉnh nghĩa Việt theo từ in.
+- Unit u-5500-ii-amthuc-p0122, PDF p122, p0122-b001: Trang in 242 gloss 割り勘 ghi tính riêng; nghĩa theo JP là chia tiền trả đều.
+- Unit u-5500-iii-dienthoai-p0127, PDF p127, p0127-b001: Gloss 通じる và のちほど trong bản in lệch ngữ cảnh điện thoại; đã chỉnh nghĩa Việt.
+- Unit u-5500-i-iv-vanchuyen-p0130, PDF p130, p0130-b002: Trang in 259 mục tàu điện ngầm dùng 代用貨幣 cho vật mua ở máy tự động; cách gọi không thông dụng trong ngữ cảnh vé/đồng xu, giữ JP nguồn và dịch phần chắc chắn.
+- Unit u-5500-i-iv-vanchuyen-p0131, PDF p131, p0131-b002: Trang in 261 xếp あなたのタクシーは貸切ですか vào diễn đạt tương tự của 空いていますか, nhưng hỏi thuê trọn chuyến khác với hỏi xe còn trống; giữ cả hai câu và dịch đúng nghĩa từng câu.
+- Unit u-5500-i-iv-vanchuyen-p0133, PDF p133, p0133-b001: Trang in 264 câu 6 上海オーバー và gloss đi Thượng Hải không xác định rõ loại phí; giữ đúng JP, dịch trong giới hạn ngữ cảnh.
+- Unit u-5500-i-iv-vanchuyen-p0134, PDF p134, p0134-b002: Trang in 267 câu 5 駐車する空き地を探さなければありません có đuôi ありません bất thường cho nghĩa nghĩa vụ; giữ nguyên JP nguồn, ghi giới hạn ở VI.
+- Unit u-5500-i-iv-vanchuyen-p0135, PDF p135, p0135-b002: Trang in 269 bảng từ có 貸切 ghi tiền đồng/tiền xu, 真新しい ghi thương hiệu mới, 手入れて ghi có trong tay và アーバー ghi cây thông; ba gloss đầu lệch JP rõ đã chỉnh Việt, riêng アーバー chưa đủ ngữ cảnh để xác nhận nghĩa.
