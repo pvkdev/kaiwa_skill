@@ -62,3 +62,21 @@ Lọc khẩu hiệu động viên lặp ở đầu một số trang, dải MINAT
 - Ô trống theo nguồn: Kanji 174, Âm Hán Việt 176; cột cách đọc và Nghĩa không có ô trống.
 - clean_progress resume: 5 phần completed, 0 draft/pending/stale/needs_rebase/snapshot_errors.
 
+## Rà độc lập — ghi nhận cách diễn đạt nguồn
+
+- PDF p2 / STT 23 / `u-vocab-p0002`: bản in ghi `就職／しゅうしょく` với nghĩa `tìm việc làm`; ảnh PDF, raw snapshot và clean cùng một nội dung. Đây là gloss ngắn có thể dùng theo nghĩa phổ thông, chưa có căn cứ đủ mạnh để xếp lỗi nguồn. Giữ nguyên bảng và trạng thái `author_checked` của unit.
+
+- PDF p20 / STT 360 / `u-vocab-p0020`: bản in ghi `感心／かんしん` với gloss `Khâm phục, thán phục, quan tâm`. Hai nghĩa đầu chỉ sự khâm phục; `quan tâm` có thể lẫn với từ đồng âm khác chữ `関心`. Ảnh/raw/clean khớp, không thay bằng suy đoán; đánh dấu unit `needs_review` để kiểm nghĩa nguồn.
+
+- PDF p29 / STT 543 / `u-vocab-p0029`: bản in ghi `アナウンス` là `thông báo, MC`. `MC` chỉ người dẫn, có khả năng lẫn với từ chỉ người thay vì sự thông báo. Ảnh/raw/clean khớp; giữ nguyên bảng, đánh dấu unit `needs_review` để xác minh.
+
+- PDF p34 / STT 636 / `u-vocab-p0034`: bản in ghi `読書／どくしょ` với nghĩa `đọc viết`. Cụm nghĩa này không khớp chữ `書` và cách dùng của từ Nhật; ảnh/raw/clean khớp. Giữ nguyên bảng, đánh dấu unit `needs_review` để xác minh.
+
+- PDF p37 / STT 682 / `u-vocab-p0037`: bản in ghi `協調／きょうちょう` với nghĩa `nhấn mạnh`. Nghĩa này có dấu hiệu lẫn với từ đồng âm khác chữ; ảnh/raw/clean khớp. Giữ nguyên bảng, đánh dấu unit `needs_review` để xác minh.
+
+- Theo yêu cầu rà độc lập, thêm lời lưu ý ngắn sau bảng của các unit p20, p29, p34, p37 để người học biết đúng cụm nghĩa nguồn còn cần xác minh. Không thay hàng dữ liệu nguồn; checkpoint các chương 2–4 được làm mới sau chỉnh sửa.
+
+
+## Root follow-up sau independent QA
+
+Root mở PDF20/29/34/37. PDF34 STT632 in はっと và nghĩa “yên tâm”; giữ hàng nguồn, thêm vào ghi chú ngay sau bảng, unit p34 vốn needs_review được bổ sung issue. Root đã rà lại đúng phần ghi chú sau sửa; review của worker trước đó vẫn được giữ với hash riêng. Không thay nguyên dữ liệu bảng.

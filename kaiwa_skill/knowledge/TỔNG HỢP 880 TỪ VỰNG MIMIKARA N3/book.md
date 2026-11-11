@@ -543,6 +543,8 @@
 | 375. | 発明 | PHÁT MINH | はつめい | phát minh |
 | 376. | 関係 | QUAN HỆ | かんけい | quan hệ |
 
+*Lưu ý nguồn:* Ở STT 360, cụm “quan tâm” trong nghĩa bản in chưa được xác minh; hãy thận trọng khi học nghĩa này.
+
 ## Từ vựng STT 377–565
 
 <!-- unit_id: u-vocab-p0021 -->
@@ -787,6 +789,8 @@
 | 545. |  |  | パンフレット | tờ rơi |
 | 546. |  |  | カード | Thẻ, card |
 
+*Lưu ý nguồn:* Ở STT 543, “MC” trong nghĩa bản in chưa được xác minh; hãy thận trọng khi học nghĩa này.
+
 <!-- unit_id: u-vocab-p0030 -->
 <a id="u-vocab-p0030"></a>
 
@@ -922,6 +926,8 @@
 | 638. | 芸術 | VÂN THUẬT | げいじゅつ | nghệ thuật |
 | 639. | 検査 | KIỂM TRA | けんさ | kiểm tra |
 
+*Lưu ý nguồn:* Ở STT 632 (はっと), nghĩa “yên tâm”, và STT 636 (読書), nghĩa “đọc viết”, được giữ theo bản in nhưng còn cần kiểm tra. Không coi các cụm nghĩa này là đã được xác nhận.
+
 <!-- unit_id: u-vocab-p0035 -->
 <a id="u-vocab-p0035"></a>
 
@@ -1002,6 +1008,8 @@
 | 694. | 保護 | BẢO HỘ | ほご | bảo vệ, bảo hộ |
 | 695. | 環境 | HOÀN CẢNH | かんきょう | môi trường |
 | 696. | 資源 | TƯ NGUYÊN | しげん | tài nguyên |
+
+*Lưu ý nguồn:* Ở STT 682, nghĩa “nhấn mạnh” trong bản in chưa được xác minh; hãy thận trọng khi học nghĩa này.
 
 <!-- unit_id: u-vocab-p0038 -->
 <a id="u-vocab-p0038"></a>
