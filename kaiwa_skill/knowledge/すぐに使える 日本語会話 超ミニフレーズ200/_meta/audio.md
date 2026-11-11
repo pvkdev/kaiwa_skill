@@ -1,0 +1,50 @@
+# Audio — すぐに使える 日本語会話 超ミニフレーズ200
+
+- Bìa PDF1 ghi **CD2枚付**.
+- PDF14 nói CD thu toàn bộ lời Nhật của các ví dụ hội thoại, có bốn bước luyện nghe–nhắc.
+- Đã mở PDF1–225; file âm thanh thực tế chưa kiểm. Nguồn in ấn bản đầu 2014-11-10, lần in thứ ba 2018-02-10 và ISBN 978-4-86392-206-8 tại PDF224; PDF225 lặp nhan đề và ISBN.
+- PDF16–18: nhãn CD-1 1–3 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF19–22: nhãn CD-1 4–7 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF23–28: nhãn CD-1 8–13 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF29–32: nhãn CD-1 14–17 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF33–36: nhãn CD-1 18–21 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF37–42: nhãn CD-1 22–27 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF43–48: nhãn CD-1 28–33 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF49–54: nhãn CD-1 34–39 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF55–60: nhãn CD-1 40–45 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF61–66: nhãn CD-1 46–51 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF67–74: nhãn CD-1 52–59 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF75–80: nhãn CD-1 60–65 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF81–86: nhãn CD-1 66–71 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF87–92: nhãn CD-1 72–77 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF93–98: nhãn CD-1 78–83 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF99–107: nhãn CD-1 84–92 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF108–113: nhãn CD-1 93–98 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF114: nhãn CD-1 99 in ở đầu mục 99; script là hội thoại Nhật in trên trang. PDF115/mục 100 không thấy mã CD in ở góc trên, vị trí âm thanh của mục chưa xác nhận. File nghe thực tế chưa kiểm.
+- PDF116–119: nhãn CD-2 01–04 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF120–125: nhãn CD-2 05–10 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF126–133: nhãn CD-2 11–18 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF134–137: nhãn CD-2 19–22 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF138–141: nhãn CD-2 23–26 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF142–145: nhãn CD-2 27–30 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF12–13: trong ảnh minh họa mục 22, mã in là **CD-1 16** ở cả hai trang; mục 22 thật tại PDF37 in **CD-1 22**. Hai mã trong trang hướng dẫn là occurrence minh họa bất nhất, không đổi nhãn bài chính.
+- PDF148–151: nhãn CD-2 31–34 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF152–155: nhãn CD-2 35–38 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF156–160: nhãn CD-2 39–43 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF161–163: nhãn CD-2 44–46 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF164–167: nhãn CD-2 47–50 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF168–171: nhãn CD-2 51–54 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF172–175: nhãn CD-2 55–58 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF176–179: nhãn CD-2 59–62 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF180–183: nhãn CD-2 63–66 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF184–187: nhãn CD-2 67–70 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF188–191: nhãn CD-2 71–74 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF192–195: nhãn CD-2 75–78 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF196–199: nhãn CD-2 79–82 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF200–203: nhãn CD-2 83–86 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF204–207: nhãn CD-2 87–90 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF208–211: nhãn CD-2 91–94 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF212–216: nhãn CD-2 95–99 ở đầu từng mục; script là hội thoại Nhật in trên trang. File nghe chưa kiểm.
+- PDF216/mục199 in CD-2 99. PDF217/mục200 không thấy mã CD ở góc trên; vị trí âm thanh của mục này chưa xác nhận, không suy CD-2 100 từ số thứ tự bài. File nghe thực tế chưa kiểm.
+
+- Tổng mã in ở bài chính: 198 nhãn, gồm CD-1 1–99 và CD-2 01–99. Mục 100/PDF115 và mục 200/PDF217 không có mã in nhìn thấy; không suy mã đoạn. Hai occurrence hướng dẫn PDF12–13 in CD-1 16 cho ảnh mục22, trong khi bài mục22/PDF37 in CD-1 22. Phần hậu sách PDF224–225 không in thêm hướng dẫn tải âm thanh hoặc mã tải.
