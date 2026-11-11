@@ -1,5 +1,13 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
+## Book12 nối114 — 2026-11-11T03:18:36.995169+00:00
+
+- Root kiểm113verified/140,27pending114–140,0issue,currentbuild,claimnull sau cont3 release. WIP `eec3a8c`; đã spawn `/root/production_book_12_root_cont4` Sol/high tiếp114–140. Sách11cont6 và13cont2 tiếp song song. Root giữ lượt QA/điều phối, không final vì chỉ giao việc.
+
+## Book11 nối107 — 2026-11-11T03:13:44.645069+00:00
+
+- Root xác nhận106verified/138,107rendered,31pending,0issue,currentbuild,claimnull sau cont5 release. WIP `c2a23c6`; đã spawn `/root/production_book_11_root_cont6` Sol/high tiếp107–138. Sách12cont3 và13cont2 tiếp song song. Root giữ lượt.
+
 ## Book13 nối từ88 — 2026-11-11T03:03:46.992878+00:00
 
 - Worker cũ release sạch tại87:44verified,43needs_review,3rendered88–90,55pending91–145; build current. Root kiểm file/hash và lưu WIP `23c8f85`; đã spawn Sol/high `/root/production_book_13_root_cont2` tiếp88–145, nhận riêng QA rubyJPp85 và Thai exactness. Không làm lại verified prefix.
