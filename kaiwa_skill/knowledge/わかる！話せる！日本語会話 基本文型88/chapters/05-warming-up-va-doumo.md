@@ -115,7 +115,7 @@ Trước khi vào PART2 「基本文型80」, sách mời người học làm b�
 
 **ドリル B:** Biến hai từ trong ngoặc thành câu rồi chọn một dạng in sẵn.
 
-5. **A (JP):** これを明日までに（やる／無理）でしょう。 **A (VI):** Làm xong việc này trước ngày mai (làm / không thể) nhỉ? **B (JP):** そうですね。多すぎますね。 **B (VI):** Đúng vậy. Nhiều quá nhỉ. **Lựa chọn JP:** 1 やると無理 / 2 やるには無理 / 3 やるのは無理. **Nghĩa VI:** 1 “làm thì không thể” / 2 “để làm thì không thể” / 3 việc làm là không thể.
+5. **A (JP):** これを明日までに（やる／無理）でしょう。 **A (VI):** Làm xong việc này chậm nhất ngày mai (làm / không thể) nhỉ? **B (JP):** そうですね。多すぎますね。 **B (VI):** Đúng vậy. Nhiều quá nhỉ. **Lựa chọn JP:** 1 やると無理 / 2 やるには無理 / 3 やるのは無理. **Nghĩa VI:** 1 “làm thì không thể” / 2 “để làm thì không thể” / 3 việc làm là không thể.
 6. **A (JP):** （会長／入院する）、知ってる？ **A (VI):** Cậu biết chuyện (chủ tịch / nhập viện) chưa? **B (JP):** ううん、知らない。 **B (VI):** Chưa, tớ không biết. **Lựa chọn JP:** 1 会長が入院したの / 2 会長が入院しての / 3 会長が入院するかの. **Nghĩa VI:** 1 chuyện chủ tịch đã nhập viện / 2 “chủ tịch nhập viện” với dạng ての / 3 “chủ tịch có nhập viện” với かの.
 
 **ドリル C:** Chọn một câu thích hợp nhất trong 1–3.

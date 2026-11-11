@@ -59,3 +59,5 @@ PDF27 hội thoại mở đầu B in tiếng Nhật 「まだ２回しか使っ�
 ## 2026-11-11 — Ghi nhận bản dịch phụ PDF85
 
 Ở PDF85/trang in169, hội thoại số3 và số4 có bản Anh đặt lệch cặp: dòng dưới số3 nói về tiếng Nhật yếu, dòng dưới số4 nói về đội yếu nhất; cả hai đối lập với lời Nhật tương ứng. Bản Trung dưới mỗi số khớp lời Nhật. Một cặp tiếng Trung về thi cử còn bị in lặp lạc vị trí dưới số4, tương ứng nội dung số7. Bản clean giữ đúng tám cặp Nhật và dịch Việt từ Nhật; không đưa cặp Trung lặp thành bài thứ chín. Đây là sai khác ở bản dịch phụ, không làm mờ phần Nhật đã đọc rõ, nên không đổi unit sang needs_review.
+
+- Root QA PDF20,第6回5: sửa nghĩa Việt 明日までに thành chậm nhất ngày mai; giữ nguyên đề, từ đầu vào và phương án.

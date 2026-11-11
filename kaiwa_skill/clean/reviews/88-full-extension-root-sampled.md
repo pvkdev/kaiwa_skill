@@ -11,3 +11,5 @@ PDF9 in công thức ～では→～ちゃ mâu thuẫn với ví dụ 来ては
 Audio có nhãn CD1–88 theo trang bài và hướng dẫn dùng CD ở PDF6; đây là mã tra cứu, không suy có88 đĩa. Chưa xác nhận số đĩa hay tệp nghe thực tế, actual_files_status vẫn not_checked. Migration và scope history giữ nguyên chứng cứ pilot cũ; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 
 Hash bản đọc đã kiểm: d63451eee590067e539302e7d544d6d0e10f0d0a06d1e342441285677f0987ec
+
+Rà hạn thời gian: Warm-up第6回5 tạiPDF20 là明日までに, bản Việt sửa thành chậm nhất ngày mai, không dời hạn sớm và không thay từ seed/giải bài. Hash bản đọc hiện hành: 2d2f478ceabde5c8c864093f125513070e1c89a65740d11467acc77040dc6e3b. Validator vẫn0lỗi/4cảnh báo nguồn đã biết.
