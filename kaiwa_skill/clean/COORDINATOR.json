@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "phase": "29_released_final_book_independent_index_qa",
-  "updated_at_utc": "2026-11-11T22:47:21.454635+00:00",
+  "phase": "complete_supplied_pdf_scope_with_documented_source_issues",
+  "updated_at_utc": "2026-11-11T23:05:30.242916+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -16,7 +16,7 @@
     {
       "role": "worker_1",
       "worker": "/root/clean_keigo",
-      "stage": "full_pdf_direct_active",
+      "stage": "completed_supplied_pdf_scope",
       "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
       "source_pdf": "kaiwa_skill/book/Kaiwa/210-additional-super-miniature-phrases-for-immediate-use-in-japanese-conversation-4863922639-9784863922631_compress.pdf",
       "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
@@ -25,27 +25,30 @@
         "author_checked": 231,
         "needs_review": 2
       },
-      "qa_scope": "All233pages authored; final index/build audit before root release"
+      "qa_scope": "All233pages authored; final index/build audit before root release",
+      "active_work": false
     },
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
-      "stage": "independent_index_qa",
+      "stage": "completed_supplied_pdf_scope",
       "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
       "source_pdf": "kaiwa_skill/book/Kaiwa/210-additional-super-miniature-phrases-for-immediate-use-in-japanese-conversation-4863922639-9784863922631_compress.pdf",
       "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
       "scope_pdf_pages": 233,
-      "qa_scope": "All320 English index row occurrences and anchor targets on Mini210 PDF226–231; scene counts200/210 complete"
+      "qa_scope": "All320 English index row occurrences and anchor targets on Mini210 PDF226–231; scene counts200/210 complete",
+      "active_work": false
     },
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
-      "stage": "idle_after_independent_qa",
+      "stage": "completed_supplied_pdf_scope",
       "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
       "source_pdf": "kaiwa_skill/book/Kaiwa/210-additional-super-miniature-phrases-for-immediate-use-in-japanese-conversation-4863922639-9784863922631_compress.pdf",
       "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
       "scope_pdf_pages": 233,
-      "qa_scope": "16 restored end-scenes independently compared JP/VI; four findings fixed/read back; no outstanding findings in targeted scope"
+      "qa_scope": "16 restored end-scenes independently compared JP/VI; four findings fixed/read back; no outstanding findings in targeted scope",
+      "active_work": false
     }
   ],
   "source_queue": [
@@ -311,11 +314,12 @@
       "source_sha256": "2fdf1586c2e2673f6b27b93fcf3c04c8584567fdd3c2258bcdd0033743de2b05",
       "page_count": 233,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
       "owner": "/root/clean_keigo",
       "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
-      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ 発展210"
+      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ 発展210",
+      "knowledge_commit": "1506921"
     },
     {
       "book_id": "5500-c-u-giao-ti-p-ti-ng-nh-t-trong-sinh-ho-t-h-ng-ng-y-c8933782539c",
@@ -819,6 +823,11 @@
       "book_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話 オノマトペ基本表現180",
       "commit": "38c623b",
       "coordinator_review": "author full; root37 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ 発展210",
+      "commit": "1506921",
+      "coordinator_review": "author full; root32 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -888,7 +897,8 @@
       "rebuilt_books": 2,
       "rewritten_links": 370,
       "learning_chapters_unchanged": true
-    }
+    },
+    "final_skill_guidance_commit": "15662a7"
   },
   "knowledge_outputs": [
     {
@@ -1395,7 +1405,7 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 233,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
         "author_checked": 231,
@@ -1404,15 +1414,15 @@
       "chapter_checkpoint_counts": {
         "author_checked": 14,
         "needs_review": 2
-      }
+      },
+      "knowledge_commit": "1506921"
     }
   ],
   "pending_tool_work": [],
   "resume_notes": [
-    "User authorized all30PDFs; keep coordinating and assigning next books until scope complete or explicit stop.",
-    "All9initial fully-ready raw books have clean outputs. Remaining work is PDF-direct, using incomplete raw only read-only.",
-    "Book88 migration/history is complete, full1–96/16chapter active. Never init/reset the existing folder or historical ledger.",
-    "Scope metadata full does not imply released. Use per-book audit, checkpoints, validation and bounded root QA."
+    "All30 suppliedPDF scopes released;4597physical pages. No remaining authoring or assigned QA work.",
+    "Keep original sources, historical migrations, and reviewed-source defect notes intact. Do not reset checked outputs.",
+    "Any future roadmap work should build on knowledge outputs and preserve source references; it is a separate task."
   ],
   "raw_coordination_check": {
     "parent_thread": "01a1c315-57af-7570-8396-498b5c1e456d",
@@ -1424,9 +1434,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 29,
-  "completed_full_source_pages": 4364,
-  "completion_count_definition": "29 released supplied-PDF scopes/4364 pages: initial7 independently reviewed in full; later22 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 30,
+  "completed_full_source_pages": 4597,
+  "completion_count_definition": "30 released supplied-PDF scopes/4597 pages: initial7 independently reviewed in full; later23 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",
@@ -1487,7 +1497,12 @@
     "source_page_count": 4597,
     "unqueued_pdfs": [],
     "missing_pdfs": [],
-    "method": "rg --files book/vocab compared with source_queue"
+    "method": "rg --files book/vocab compared with source_queue",
+    "final_verification": "kaiwa_skill/clean/FINAL_INVENTORY.json",
+    "verified_pdf_sha256_pins": true,
+    "verified_every_physical_page_in_scope": true,
+    "verified_all30_book_build_hashes": true,
+    "final_released_books": 30
   },
   "independent_qa": [
     {
@@ -1546,6 +1561,37 @@
       "scope": "16 restored end scenes; targeted full JP/VI;4fixed/readback",
       "status": "complete",
       "learning_content_written": false
+    },
+    {
+      "report_cache": ".cache/root-live-qa/mini210-toc-independent.json",
+      "report_sha256": "c35bcb196d86be340e7e911ae8facb4ad0be3d11e8e2de2fa951d930c03e1060",
+      "scope": "All210TOC rows;3printed source variants mapped clearly;no open finding",
+      "status": "complete",
+      "learning_content_written": false
+    },
+    {
+      "report_cache": ".cache/root-live-qa/mini210-index-independent.json",
+      "report_sha256": "e30d082ed7d21e6fd0c8a8cb26f7c3e870427042dd3d60781384ed137de4f6db",
+      "scope": "All320index rows/source/ref/order;5findings fixed/readback;no open finding",
+      "status": "complete",
+      "learning_content_written": false
     }
-  ]
+  ],
+  "final_completion": {
+    "books": 30,
+    "source_physical_pages": 4597,
+    "inventory": "kaiwa_skill/clean/FINAL_INVENTORY.json",
+    "last_book_release_commit": "1506921",
+    "last_book_root_validation": {
+      "errors": 0,
+      "warnings": 4,
+      "source_issue_pages": [
+        75,
+        207
+      ]
+    },
+    "no_pending_authoring_or_qa": true,
+    "audio_actual_files_status": "not_checked",
+    "source_defects_are_documented_not_invented_away": true
+  }
 }

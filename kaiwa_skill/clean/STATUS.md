@@ -1,15 +1,17 @@
-# Clean hàng loạt — kiểm tra cuốn cuối
+# Clean hàng loạt — đã hoàn tất phạm vi
 
-Đã nghiệm thu **29/30 PDF, 4.364/4.597 trang nguồn**. Bảy bản đầu được rà độc lập toàn phạm vi; các bản sau được worker đối chiếu toàn nguồn và root QA mẫu. Xem [thư viện](../knowledge/README.md) và hồ sơ nghiệm thu riêng từng sách.
+Đã nghiệm thu **30/30 PDF, 4.597/4.597 trang nguồn**. Mỗi PDF có bản knowledge theo tên sách, chapter sạch, bản đọc tổng hợp, dữ liệu tra cứu, hồ sơ nguồn/checkpoint và thông tin audio. Không còn sách đang viết hoặc chờ QA. Các sub đã hoàn tất và dừng sửa file, đều chạy gpt-6-sol/high theo lựa chọn cuối của người dùng.
 
-Cuốn áp chót **日本人がよく使う 日本語会話 オノマトペ基本表現180** đã chốt ở commit `38c623b`: 220 trang, 185 đầu mục theo bốn phần, 370 hoạt động, 365 dòng chỉ mục. Root QA 37 trang nguồn; reviewer độc lập kiểm toàn chỉ mục/audio và 15 mục mẫu. PDF38 vẫn giữ vấn đề mã audio nguồn in trùng1; validator 0 lỗi/2 cảnh báo đúng vấn đề này.
+Mở [thư viện Markdown](../knowledge/README.md), [danh mục CD và nguồn nghe](../knowledge/AUDIO_INDEX.md), hoặc [kiểm kê cuối](FINAL_INVENTORY.json).
 
-Cuốn cuối **すぐに使える 日本語会話 超ミニフレーズ 発展210** đã viết đủ 233 trang. Có 210 đầu mục/926 tình huống; 16 cảnh cuối từng thiếu đã phục hồi, kiểm đếm độc lập và đối chiếu Nhật–Việt lại. Bốn lỗi trong phần phục hồi đã sửa/readback. Chỉ mục 320 dòng đang được reviewer đối chiếu từng dòng trước release. PDF75/207 giữ vấn đề vai A/A trong nguồn.
+Bảy bản đầu được rà độc lập toàn phạm vi. Hai mươi ba bản sau được writer đối chiếu toàn nguồn và root QA mẫu; các lượt QA độc lập bổ sung được ghi riêng trong hồ sơ từng sách. Đủ phạm vi không có nghĩa mọi chữ nguồn đều hoàn hảo. Những chỗ nguồn mờ, thiếu hoặc mâu thuẫn vẫn có ghi chú và needs_review hẹp, không đoán phục hồi.
 
-Ba sub đều `gpt-6-sol/high`: keigo tác giả cuốn210; sho QA chỉ mục; chu đã hoàn thành QA 16 cảnh. Các worker medium vẫn dừng. Root giữ Git và nghiệm thu; một sách một writer. Có checkpoint để khôi phục, không chạy lại phần đã kiểm còn hợp lệ.
+Cuốn cuối **すぐに使える 日本語会話 超ミニフレーズ 発展210**: 233 trang, 16 chương, 224 unit; 210 đầu mục, 926 tình huống, 210 dòng mục lục và320 dòng chỉ mục. Root mở32 trang nguồn; reviewer kiểm riêng toàn số tình huống, mục lục, chỉ mục, góc audio và các mẫu ngữ nghĩa. Các cảnh từng thiếu đã phục hồi và được so lại. Commit1506921; bookSHA249bec614b34fcd7920de73b3178b2c4b5c57b97189a2f48a1e9df4a8ae3bf85. Validator0lỗi/4cảnhbáo chỉ hai vấn đề vai A/A của nguồn PDF75/207.
 
-Kiểm đếm bổ sung cuốn200: 995/995 tình huống, toàn 200 mục, không lệch số lượng; commit audit `746b475`. Đây không phải rà nghĩa độc lập toàn sách.
+Cuốn áp chót **オノマトペ基本表現180**: commit38c623b,220 trang/185đầu mục/370hoạt động/365dòng chỉ mục; root37trang và các QA độc lập đã lưu. Cuốn200 có kiểm đếm995/995tình huống bổ sung ở746b475, không thay nội dung học.
 
-Công cụ sửa navigation ở `40eb2c2`, 82 test fork và17 direct PASS; root chạy riêng hai regression navigation PASS. Hai bản125/Feel180 được rebuild chỉ liên kết ở `617d903`; các chapter/units/search/evidence/audio không đổi. Manifest [NAVIGATION_REBUILD.json](NAVIGATION_REBUILD.json).
+Kiểm kê cuối xác nhận đủ30PDF trên đĩa khớp queue và30đầu ra; SHA256 nguồn khớp pin, từng scope phủ đủ trang vật lý, hash book.md của cả30sách khớp metadata build. Không có checkpoint pending/draft/stale.
 
-[Thông tin CD và nguồn nghe](../knowledge/AUDIO_INDEX.md) giữ thông tin in trong sách; chưa kiểm file âm thanh thực tế. Queue khớp đúng 30 PDF/4.597 trang trên đĩa. Tiếp kiểm tra và chốt tới hết phạm vi.
+Công cụ navigation40eb2c2:82testfork+17direct PASS, root2regressionnavigation PASS. Hai sách125/Feel180 rebuild370liên kết ở617d903, không đổi chapter/units/search/evidence/audio. Skill15662a7 bổ sung giữ dạng in riêng của mục lục/chỉ mục và kiểm thứ tự block trước bàn giao.
+
+Thông tin CD/track/ISBN/ấn bản/script/URL hoặc mã tải được ghi khi thực in trong nguồn, kèm trang chứng cứ. File nghe thực tế chưa được kiểm hoặc tìm/tải.

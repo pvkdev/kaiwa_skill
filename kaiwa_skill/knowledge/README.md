@@ -1,6 +1,6 @@
 # Các bản sách đã clean
 
-Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát và những vấn đề còn trong nguồn. Chưa sắp thành lộ trình mới.
+Đã hoàn tất **30/30 PDF, 4.597 trang nguồn** theo phạm vi được cung cấp. Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát và những vấn đề còn trong nguồn. Chưa sắp thành lộ trình mới.
 
 [Tra CD, băng và nguồn nghe](AUDIO_INDEX.md) — có trạng thái inventory và trạng thái file âm thanh riêng; một số hồ sơ mới kiểm một phần, phạm vi được ghi rõ trong từng inventory.
 
@@ -58,9 +58,11 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [日本人がよく使う 日本語会話 オノマトペ基本表現180](<日本人がよく使う 日本語会話 オノマトペ基本表現180/book.md>) — 220 trang/8 chương/208 unit; tác giả rà toàn PDF, root QA37 trang mẫu. [Giới hạn QA và nguồn](<日本人がよく使う 日本語会話 オノマトペ基本表現180/_meta/coordinator-review.md>).
 
+- [すぐに使える 日本語会話 超ミニフレーズ 発展210](<すぐに使える 日本語会話 超ミニフレーズ 発展210/book.md>) — 233 trang/16 chương/224 unit; tác giả rà toàn PDF, root QA32 trang mẫu. [Giới hạn QA và nguồn](<すぐに使える 日本語会話 超ミニフレーズ 発展210/_meta/coordinator-review.md>).
+
 ## Đang clean
 
-- **すぐに使える 日本語会話 超ミニフレーズ 発展210** — full scope233 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+Không còn sách đang viết hoặc chờ QA trong phạm vi 30 PDF này.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 

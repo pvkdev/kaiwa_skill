@@ -1,6 +1,6 @@
 # CD, băng và nguồn nghe theo sách
 
-Snapshot 2026-11-11T22:47:21.454635+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
+Snapshot 2026-11-11T23:04:11.590050+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
 
 - **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — [Ghi chú nghe](<5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **Danh sách 1160 từ vựng MINATO DORIMU** — [Ghi chú nghe](<Danh sách 1160 từ vựng MINATO DORIMU/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
@@ -10,7 +10,7 @@ Snapshot 2026-11-11T22:47:21.454635+00:00. Hồ sơ đang viết còn cập nh�
 - **しごとの日本語 ビジネスマナー編** — [Ghi chú nghe](<しごとの日本語 ビジネスマナー編/_meta/audio.md>); `not_seen`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **しごとの日本語 電話応対 基礎編** — [Ghi chú nghe](<しごとの日本語 電話応対 基礎編/_meta/audio.md>); `documented`, 70 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **すぐに使える 接客日本語会話大特訓［英語版］決まり文句700** — [Ghi chú nghe](<すぐに使える 接客日本語会話大特訓［英語版］決まり文句700/_meta/audio.md>); `documented`, 92 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
-- **すぐに使える 日本語会話 超ミニフレーズ 発展210** — [Ghi chú nghe](<すぐに使える 日本語会話 超ミニフレーズ 発展210/_meta/audio.md>); `complete_from_printed_pdf`, 210 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **すぐに使える 日本語会話 超ミニフレーズ 発展210** — [Ghi chú nghe](<すぐに使える 日本語会話 超ミニフレーズ 発展210/_meta/audio.md>); `documented`, 210 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **すぐに使える 日本語会話 超ミニフレーズ200** — [Ghi chú nghe](<すぐに使える 日本語会話 超ミニフレーズ200/_meta/audio.md>); `documented`, 198 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **どんどん話せる！日本語会話フレーズ大特訓 必須700** — [Ghi chú nghe](<どんどん話せる！日本語会話フレーズ大特訓 必須700/_meta/audio.md>); `documented`, 91 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **なめらか日本語会話** — [Ghi chú nghe](<なめらか日本語会話/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.

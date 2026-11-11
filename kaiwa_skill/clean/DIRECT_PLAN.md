@@ -1,5 +1,7 @@
 # Chuyển sang xử lý một lượt PDF → knowledge
 
+**Trạng thái cuối:** đã hoàn tất 30/30 PDF, 4.597 trang nguồn. Xem [STATUS](STATUS.md) và [kiểm kê cuối](FINAL_INVENTORY.json); các mốc bên dưới là kế hoạch/lịch sử triển khai.
+
 Yêu cầu mới ngày 2026-11-11 thay kế hoạch chạy hai lượt cho toàn bộ kho. Đích vẫn là bản sách Nhật–Việt đầy đủ, giữ mạch riêng, ví dụ, bài tập, đáp án và đặc trưng của mỗi sách.
 
 1. Raw đã đầy đủ: dùng fork-knowledge, tiếp tục checkpoint hiện có; không bỏ công việc đã làm.
