@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T09:42:32.919085+00:00",
+  "updated_at_utc": "2026-11-11T10:07:32.817944+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -35,10 +35,10 @@
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
       "stage": "full_pdf_direct_active",
-      "book_id": "namachuukei-shochuukyuu-2-b5b793947c13",
-      "source_pdf": "kaiwa_skill/book/Shadowing/Namachuukei Shochuukyuu 2.pdf",
-      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
-      "scope_pdf_pages": 152
+      "book_id": "book-be075317cdca",
+      "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf",
+      "title": "シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版",
+      "scope_pdf_pages": 145
     }
   ],
   "source_queue": [
@@ -456,12 +456,11 @@
       "blocker_summary": [
         "Ingest build not yet present"
       ],
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_chu",
       "knowledge_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２",
       "title": "聞いて覚える話し方 日本語生中継 初中級編２",
-      "qa_stage": "Full152page authored;10 main lesson chapters demoted to draft for preservation/VI audit. Source83/119 retained."
+      "knowledge_commit": "1e29c64"
     },
     {
       "book_id": "nameraka-nihongo-kaiwa-7a1ef4391141",
@@ -510,8 +509,11 @@
         "Build verified pages incomplete",
         "Build page hashes incomplete"
       ],
-      "state": "queued_direct_with_readonly_raw",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_chu",
+      "title": "シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版",
+      "knowledge_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版"
     },
     {
       "book_id": "1160-t-v-ng-mimikara-n2-6d226fd8769f",
@@ -679,6 +681,12 @@
       "commit": "c0c4dc1",
       "coordinator_review": "Author reviewed full supplied PDF; root sampled only, see per-book coordinator-review; unresolved source issues retained.",
       "independent_full_semantic_review": false
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２",
+      "commit": "1e29c64",
+      "coordinator_review": "Full author preservation audit; root27 source-page samples including all9 placeholder warnings; source83/119 retained. See per-book review.",
+      "independent_full_semantic_review": false
     }
   ],
   "pilot_preservation_recheck": {
@@ -731,14 +739,14 @@
     "pilot_output_commit": "9e2f7d5"
   },
   "tool_validation": {
-    "version": "0.4.9",
-    "commit": "973cd63",
-    "fork_tests_passed": 75,
+    "version": "0.4.10",
+    "commit": "f6c9298",
+    "fork_tests_passed": 80,
     "direct_tests_passed": 17,
-    "regression_book_count": 14,
+    "regression_book_count": 15,
     "regression_errors": 0,
-    "regression_warnings": 16,
-    "warning_scope": "Known source issues in Nameraka32, five Manners pages, and88patterns9/28. Structural checks do not certify semantics."
+    "regression_warnings": 29,
+    "warning_scope": "Known Nameraka/Manners/88/Nama2 source warnings plus9 reviewed placeholder layout warnings inNama2. Validator does not certify semantic completeness."
   },
   "knowledge_outputs": [
     {
@@ -826,12 +834,14 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 79,
-        "pending": 83
+        "author_checked": 110,
+        "needs_review": 1,
+        "pending": 51
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 17,
-        "pending": 21
+        "author_checked": 24,
+        "needs_review": 1,
+        "pending": 13
       }
     },
     {
@@ -885,14 +895,34 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 148,
+        "author_checked": 184,
         "needs_review": 1,
-        "pending": 76
+        "pending": 40
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 21,
+        "author_checked": 25,
         "needs_review": 1,
-        "pending": 8
+        "draft": 1,
+        "pending": 3
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版",
+      "title": "シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版",
+      "source_pdf": "kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 145,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 6,
+        "pending": 139
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 1,
+        "pending": 7
       }
     },
     {
@@ -993,18 +1023,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 152,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 71,
-        "draft": 79,
+        "author_checked": 150,
         "needs_review": 2
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 15,
-        "draft": 10,
-        "needs_review": 1
-      }
+        "author_checked": 24,
+        "needs_review": 2
+      },
+      "knowledge_commit": "1e29c64"
     }
   ],
   "pending_tool_work": [],
@@ -1024,7 +1053,7 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 14,
-  "completed_full_source_pages": 1474,
-  "completion_count_definition": "14 released supplied-PDF scopes /1474 pages: initial7 independently reviewed in full; next7 author full/root sampled. Source issues remain explicit; full PDF scope does not imply flawless source."
+  "completed_full_books": 15,
+  "completed_full_source_pages": 1626,
+  "completion_count_definition": "15 released supplied-PDF scopes/1626 pages: initial7 independently reviewed in full; later8 author full/root sampled. Explicit source issues remain; full scope is not flawless-source certification."
 }

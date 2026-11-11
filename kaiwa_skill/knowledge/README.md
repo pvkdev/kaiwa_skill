@@ -16,7 +16,7 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 - [中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―](<中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―/book.md>) —140 trang/10 chương/109unit; tác giả đối chiếu toàn phạm vi, root QA16 trang mẫu. [Giới hạn review](<中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―/_meta/coordinator-review.md>). Có inventory1CD/15mã track; chưa kiểm file nghe.
 - [日本語でビジネス会話 中級編 本文冊](<日本語でビジネス会話 中級編 本文冊/book.md>) —138 trang/22 chương/128unit; tác giả đối chiếu toàn phạm vi, root QA10 trang mẫu. [Hồ sơ và rebase provenance](<日本語でビジネス会話 中級編 本文冊/_meta/coordinator-review.md>). Pin mới chỉ bổ sung4anchor vào raw tổng hợp, toàn138trang nguồn không đổi chữ.
 
-- [なめらか日本語会話](<なめらか日本語会話/book.md>) —163trang/27chương/158unit; tác giả rà toàn sách, root QA15trang mẫu. [Giới hạn và vấn đề nguồn](<なめらか日本語会話/_meta/coordinator-review.md>): chỉPDF32 còn chữ bị che, không đoán phục hồi. Audio băng bán riêng, bảnin6năm2002.
+- [なめらか日本語会話](<なめらか日本語会話/book.md>) —163trang/27chương/158unit; tác giả rà toàn sách, root QA16trang mẫu. [Giới hạn và vấn đề nguồn](<なめらか日本語会話/_meta/coordinator-review.md>): chỉPDF32 còn chữ bị che, không đoán phục hồi. Audio băng bán riêng, bảnin6năm2002.
 
 - [わかるビジネス日本語（新装版）](<「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）/book.md>) —152trang/21chương/278unit; đầy đủ chỉ mục/đáp án, tác giả rà toàn sách, root QA16trang mẫu. [Giới hạn review](<「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）/_meta/coordinator-review.md>).50nhãn audio②–51, chưa có xác nhận file nghe.
 
@@ -27,12 +27,15 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [わかる！話せる！日本語会話 基本文型88](<わかる！話せる！日本語会話 基本文型88/book.md>) — 96 trang, 16 chương, 113 unit; root QA 21 trang qua pilot và mở rộng, gồm 48 câu ôn và đáp án. [Giới hạn nguồn và review](<わかる！話せる！日本語会話 基本文型88/_meta/coordinator-review.md>). Giữ cảnh báo công thức PDF9 và scan cắt PDF28; 88 mã CD, chưa xác nhận tệp nghe.
 
+
+- [聞いて覚える話し方 日本語生中継 初中級編２](<聞いて覚える話し方 日本語生中継 初中級編２/book.md>) — 152 trang,26 chương,227 unit; đã rà lại bản Việt bài tập và nghĩa đáp án. Root kiểm27 trang mẫu, gồm75 mục từ và đáp án Bài1/Bài10. [Giới hạn QA và nguồn](<聞いて覚える話し方 日本語生中継 初中級編２/_meta/coordinator-review.md>). Hai lỗi in83/119 được giữ rõ;2CD/82 mã nghe, chưa kiểm file thực tế.
+
 ## Đang clean
 
-- **わかる！話せる！日本語会話 発展文型125** — full scope 225 trang; PDF-direct đang viết, chưa nghiệm thu toàn sách.
-- **しごとの日本語 電話応対 基礎編** — full scope 162 trang; PDF-direct đang viết, chưa nghiệm thu toàn sách.
-- **聞いて覚える話し方 日本語生中継 初中級編２** — full scope 152 trang; PDF-direct đang viết, chưa nghiệm thu toàn sách.
+- **わかる！話せる！日本語会話 発展文型125** — full scope 225 trang, đang viết PDF-direct; chưa nghiệm thu toàn sách.
+- **しごとの日本語 電話応対 基礎編** — full scope 162 trang, đang viết PDF-direct; chưa nghiệm thu toàn sách.
+- **シャドーイング 日本語を話そう！ 初・中級編 インドネシア語・タイ語・ベトナム語版** — full scope 145 trang, đang viết PDF-direct; chưa nghiệm thu toàn sách.
 
-Pilot Wakaru và88 đã được mở rộng; báo cáo cũ chỉ áp dụng phạm vi/hash lịch sử.
+Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 
 [Theo dõi tiến độ](../clean/STATUS.md).
