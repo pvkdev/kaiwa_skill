@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.7 — 2026-11-11
+
+- Làm rõ mọi đáp án Nhật in sẵn cần bản Việt ở đúng phần đáp án; review cũ phần Nhật không xác nhận bản dịch mới.
+- Phân biệt lỗi raw đã được sửa và reviewer xác nhận từ PDF với nghĩa/công thức nguồn còn đáng ngờ; giữ log/provenance, không đánh dấu gloss phổ thông là lỗi khi thiếu căn cứ.
+
 ## 0.3.6 — 2026-11-11
 
 - Cập nhật kế hoạch pilot theo rà bảo toàn: giữ trang mở PART1 và mã CD01–03, hội thoại trước giải thích, MEMO đúng thứ tự nguồn. Chín unit trong cùng scope PDF7–12; review mới tách khỏi lịch sử cũ, không đổi thành full sách.
