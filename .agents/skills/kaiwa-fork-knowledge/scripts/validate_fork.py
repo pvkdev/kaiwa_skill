@@ -208,6 +208,29 @@ def pair_marker(line: str) -> tuple[str, str] | None:
     return None
 
 
+def language_lines(lines: list[str]) -> tuple[list[str], list[int]]:
+    """Tokenize explicit inline labels without changing the book or line refs."""
+    expanded: list[str] = []
+    source_lines: list[int] = []
+    inline = re.compile(r'\*\*([^*\n]+?):\*\*')
+    for number, line in enumerate(lines, 1):
+        matches = [] if line.lstrip().startswith('|') else [
+            match for match in inline.finditer(line) if pair_label(match[1]) is not None]
+        if not matches or (len(matches) == 1 and pair_marker(line) is not None):
+            expanded.append(line)
+            source_lines.append(number)
+            continue
+        prefix = line[:matches[0].start()]
+        if prefix.strip():
+            expanded.append(prefix)
+            source_lines.append(number)
+        for index, match in enumerate(matches):
+            end = matches[index + 1].start() if index + 1 < len(matches) else len(line)
+            expanded.append(line[match.start():end].strip())
+            source_lines.append(number)
+    return expanded, source_lines
+
+
 def block_content(value: str, continuation: list[str]) -> str:
     parts = [value]
     inline = bool(value.strip())
@@ -234,7 +257,7 @@ def block_content(value: str, continuation: list[str]) -> str:
 
 def has_block_content(value: str) -> bool:
     return bool(re.search(r'[^\W_]', value, re.UNICODE) or EXERCISE_BLANK.search(value) or
-                re.search(r'(?:…|⋯){1,}|[.．]{3,}', value))
+                re.search(r'(?:…|⋯){1,}|[.．・]{3,}|[!?！？○◯×◎△]', value))
 
 
 def validate_chapter(path: Path, report: Report) -> set[str]:
@@ -261,7 +284,7 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
         for match in pattern.finditer(content):
             line = content.count('\n', 0, match.start()) + 1
             report.warn(f'{path}:{line}', label)
-    lines = content.splitlines()
+    lines, source_lines = language_lines(content.splitlines())
     markers = {i: marker for i, line in enumerate(lines)
                if (marker := pair_marker(line)) is not None}
 
@@ -288,11 +311,11 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
             (i for i in range(index + 1, len(lines)) if pair_boundary(lines[i])), len(lines))
         block = block_content(value, lines[index + 1:end])
         if not has_block_content(block):
-            report.error(f'{path}:{index + 1}', f'empty {label} text')
+            report.error(f'{path}:{source_lines[index]}', f'empty {label} text')
         if tag == 'JP':
             expected = 'VI' if role is None else f'{role} (VI)'
             if following is None or not labels_correspond(label, following[1][0]):
-                report.error(f'{path}:{index + 1}', f'{label} must be followed by {expected} before the next section')
+                report.error(f'{path}:{source_lines[index]}', f'{label} must be followed by {expected} before the next section')
             else:
                 vi_index, (_, vi_value) = following
                 vi_following = next_marker(vi_index)
@@ -302,7 +325,7 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
                 source_blanks = len(EXERCISE_BLANK.findall(block))
                 translated_blanks = len(EXERCISE_BLANK.findall(translated))
                 if source_blanks != translated_blanks:
-                    report.warn(f'{path}:{index + 1}',
+                    report.warn(f'{path}:{source_lines[index]}',
                                 f'possible exercise placeholder mismatch: JP {source_blanks}, VI {translated_blanks}; '
                                 'review against source, including intentional placeholder notation changes')
         else:
@@ -317,7 +340,7 @@ def validate_chapter(path: Path, report: Report) -> set[str]:
                                  not previous_line.lstrip().startswith(('#', '<')) and
                                  re.search(r'[\u3040-\u30ff\u3400-\u9fff]', previous_line))
             if (previous is None or not labels_correspond(previous[1][0], label)) and not unlabelled_source:
-                report.error(f'{path}:{index + 1}', f'{label} lacks preceding {expected}')
+                report.error(f'{path}:{source_lines[index]}', f'{label} lacks preceding {expected}')
     return seen
 
 

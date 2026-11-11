@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.7 — 2026-11-11
+
+- Nhận nhiều cặpJP–VI cùng dòng và lời dẫn trước thoại manga; báo lỗi theo số dòng gốc, không đổi bố cục sách. Giữ các lượt phản ứng/dấu lặng có nghĩa.
+- Đối chiếu chức năng bài Warm-up88: giữ ô khuyết trong Việt, không thêm ô vào cặp từ seed hoặc tự cung cấp ngữ pháp thiếu.
+- 62test fork và17test direct đạt;12bản đã chốt vẫn0lỗi, chỉ2cảnh báo nguồn Nameraka đã biết.
+
 ## 0.4.6 — 2026-11-11
 
 - Validator nhận cặp Nhật–Việt nhiều dòng, khung blockquote, các dòng biến đổi, nhãn có chú thích và cách trình bày câu Nhật không gắn nhãn; không ép sách về một bố cục chung.

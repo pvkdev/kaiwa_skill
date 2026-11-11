@@ -153,6 +153,38 @@ class TranslationLayoutTest(unittest.TestCase):
                             '**VI:** Một bản dịch khác không có câu nguồn.\n')
         self.assertTrue(any('VI lacks preceding JP' in error for error in errors))
 
+    def test_two_dialogue_pairs_can_share_one_numbered_line(self):
+        report = self.report('1. **A (JP):** こんにちは。 **A (VI):** Xin chào. '
+                             '**B (JP):** どうも。 **B (VI):** Chào bạn.\n')
+        self.assertEqual([], report.errors)
+        self.assertEqual([], report.warnings)
+
+    def test_manga_narration_can_precede_an_inline_jp_marker(self):
+        self.assertEqual([], self.check('1. Người cấp trên nói. **上司 (JP):** おはよう。\n'
+                                        '**上司 (VI):** Chào buổi sáng.\n'))
+
+    def test_inline_pair_still_checks_missing_translation(self):
+        errors = self.check('**A (JP):** おはよう。 **A (VI):** Chào. '
+                            '**B (JP):** お願いします。\n')
+        self.assertTrue(any('B (JP) must be followed' in error for error in errors))
+
+    def test_inline_pair_still_checks_wrong_speaker(self):
+        self.assertTrue(self.check('**A (JP):** おはよう。 **B (VI):** Chào.\n'))
+
+    def test_inline_pair_still_warns_about_placeholders(self):
+        report = self.report('**A (JP):** ＿＿＿＿に＿＿＿＿を。 '
+                             '**A (VI):** Điền ＿＿＿＿.\n')
+        self.assertTrue(any('JP 2, VI 1' in warning for warning in report.warnings))
+
+    def test_silent_or_symbol_only_turns_are_content(self):
+        for text in ('・・・・・・', '？', '×'):
+            with self.subTest(text=text):
+                self.assertEqual([], self.check(f'**JP:** {text}\n**VI:** {text}\n'))
+
+    def test_bulleted_vi_keeps_the_unlabelled_japanese_predecessor(self):
+        self.assertEqual([], self.check('おはようございます。\n\n'
+                                        '- **VI:** Chào buổi sáng.\n'))
+
     def test_repeated_unlabelled_japanese_speakers_keep_plain_vi_glosses(self):
         body = ('**グエン:** すみません。\n**VI:** Xin lỗi.\n\n'
                 '**担当者:** どうぞ。\n**VI:** Xin mời.\n\n'
