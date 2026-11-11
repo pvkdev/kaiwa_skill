@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T21:48:52.362214+00:00",
+  "phase": "29_released_final_book_independent_index_qa",
+  "updated_at_utc": "2026-11-11T22:47:21.454635+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -22,34 +22,30 @@
       "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
       "scope_pdf_pages": 233,
       "latest_checkpoint_counts": {
-        "author_checked": 106,
-        "draft": 6,
-        "needs_review": 1,
-        "pending": 120
-      }
+        "author_checked": 231,
+        "needs_review": 2
+      },
+      "qa_scope": "All233pages authored; final index/build audit before root release"
     },
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
-      "stage": "full_pdf_direct_active",
-      "book_id": "180-458b548674d1",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/日本人がよく使う日本語会話オノマトペ基本表現180.pdf",
-      "title": "日本人がよく使う 日本語会話 オノマトペ基本表現180",
-      "scope_pdf_pages": 220,
-      "latest_checkpoint_counts": {
-        "author_checked": 135,
-        "pending": 85
-      }
+      "stage": "independent_index_qa",
+      "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/210-additional-super-miniature-phrases-for-immediate-use-in-japanese-conversation-4863922639-9784863922631_compress.pdf",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
+      "scope_pdf_pages": 233,
+      "qa_scope": "All320 English index row occurrences and anchor targets on Mini210 PDF226–231; scene counts200/210 complete"
     },
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
-      "stage": "independent_index_qa",
-      "book_id": "180-458b548674d1",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/日本人がよく使う日本語会話オノマトペ基本表現180.pdf",
-      "title": "日本人がよく使う 日本語会話 オノマトペ基本表現180",
-      "scope_pdf_pages": 220,
-      "qa_scope": "Read-only independent source index210–216 inspection; cache only; main writer remains clean_namachuukei_sho"
+      "stage": "idle_after_independent_qa",
+      "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/210-additional-super-miniature-phrases-for-immediate-use-in-japanese-conversation-4863922639-9784863922631_compress.pdf",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ 発展210",
+      "scope_pdf_pages": 233,
+      "qa_scope": "16 restored end-scenes independently compared JP/VI; four findings fixed/read back; no outstanding findings in targeted scope"
     }
   ],
   "source_queue": [
@@ -278,7 +274,9 @@
       "title": "わかる！話せる！日本語会話 発展文型125",
       "knowledge_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125",
       "known_source_issue": "PDF120/unit67: final A turn only in English/Chinese, no Japanese/romaji counterpart; retained VI, no invented JP.",
-      "knowledge_commit": "89f4c0f"
+      "knowledge_commit": "89f4c0f",
+      "navigation_commit": "617d903",
+      "navigation_rebuild_manifest": "kaiwa_skill/clean/NAVIGATION_REBUILD.json"
     },
     {
       "book_id": "180-common-native-japanese-figures-of-speech-in-regular-8eeff5021caa",
@@ -304,7 +302,8 @@
       "owner": "/root",
       "title": "すぐに使える 日本語会話 超ミニフレーズ200",
       "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200",
-      "knowledge_commit": "e82b3b1"
+      "knowledge_commit": "e82b3b1",
+      "additional_scene_coverage_qa_commit": "746b475"
     },
     {
       "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
@@ -418,7 +417,9 @@
       "owner": "/root",
       "title": "気持ちが伝わる 日本語会話 基本表現180",
       "knowledge_dir": "kaiwa_skill/knowledge/気持ちが伝わる 日本語会話 基本表現180",
-      "knowledge_commit": "7f22d1d"
+      "knowledge_commit": "7f22d1d",
+      "navigation_commit": "617d903",
+      "navigation_rebuild_manifest": "kaiwa_skill/clean/NAVIGATION_REBUILD.json"
     },
     {
       "book_id": "85-21a2cb6f3fef",
@@ -446,11 +447,12 @@
       "source_sha256": "458b548674d123f0e35c8df67395c3e569eab80ffa6e9c4a7848a8489547d439",
       "page_count": 220,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_sho",
+      "owner": "/root",
       "title": "日本人がよく使う 日本語会話 オノマトペ基本表現180",
-      "knowledge_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話 オノマトペ基本表現180"
+      "knowledge_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話 オノマトペ基本表現180",
+      "knowledge_commit": "38c623b"
     },
     {
       "book_id": "namachuukei-chuujoukyuu-f08dd9302ee6",
@@ -812,6 +814,11 @@
       "book_dir": "kaiwa_skill/knowledge/気持ちが伝わる 日本語会話 基本表現180",
       "commit": "7f22d1d",
       "coordinator_review": "author full; root43 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話 オノマトペ基本表現180",
+      "commit": "38c623b",
+      "coordinator_review": "author full; root37 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -871,7 +878,17 @@
     "regression_book_count": 18,
     "regression_errors": 0,
     "regression_warnings": 33,
-    "warning_scope": "Known source warnings in Nameraka/Manners/88/Nama2/Denwa/125 plus9 reviewed placeholder layout warnings inNama2; 18 released books validated, no errors. Validator does not certify semantic completeness."
+    "warning_scope": "Known source warnings in Nameraka/Manners/88/Nama2/Denwa/125 plus9 reviewed placeholder layout warnings inNama2; 18 released books validated, no errors. Validator does not certify semantic completeness.",
+    "navigation_patch": {
+      "commit": "40eb2c2",
+      "fork_tests_passed": 82,
+      "direct_tests_passed": 17,
+      "root_targeted_navigation_tests_passed": 2,
+      "navigation_rebuild_commit": "617d903",
+      "rebuilt_books": 2,
+      "rewritten_links": 370,
+      "learning_chapters_unchanged": true
+    }
   },
   "knowledge_outputs": [
     {
@@ -1358,17 +1375,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 220,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 135,
-        "pending": 85
+        "author_checked": 219,
+        "needs_review": 1
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 5,
-        "draft": 1,
-        "pending": 2
-      }
+        "author_checked": 7,
+        "needs_review": 1
+      },
+      "knowledge_commit": "38c623b"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ 発展210",
@@ -1381,16 +1398,12 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 106,
-        "draft": 6,
-        "needs_review": 1,
-        "pending": 120
+        "author_checked": 231,
+        "needs_review": 2
       },
       "chapter_checkpoint_counts": {
-        "draft": 1,
-        "author_checked": 5,
-        "needs_review": 1,
-        "pending": 9
+        "author_checked": 14,
+        "needs_review": 2
       }
     }
   ],
@@ -1411,9 +1424,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 28,
-  "completed_full_source_pages": 4144,
-  "completion_count_definition": "28 released supplied-PDF scopes/4144 pages: initial7 independently reviewed in full; later21 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 29,
+  "completed_full_source_pages": 4364,
+  "completion_count_definition": "29 released supplied-PDF scopes/4364 pages: initial7 independently reviewed in full; later22 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",
@@ -1485,6 +1498,54 @@
       "unique_disc_track_pairs": 198,
       "report_cache": ".cache/root-live-qa/mini210-audio-independent.json",
       "report_sha256": "fe3f28b86dc17164136c0dcd1ed2c984bc42ea72552be8a0b8d80933e27ff161"
+    },
+    {
+      "worker": "/root/clean_namachuukei_chu",
+      "book_id": "180-458b548674d1",
+      "scope": "independent_index_qa",
+      "report_cache": ".cache/root-live-qa/onomato-index-independent.json",
+      "report_sha256": "3207817647109d021511847f9fc0feeab7d3480c839d1f55ac66946ab32ec3ba",
+      "status": "complete",
+      "learning_content_written": false
+    },
+    {
+      "worker": "/root/clean_namachuukei_chu",
+      "book_id": "180-458b548674d1",
+      "scope": "independent_audio_qa",
+      "report_cache": ".cache/root-live-qa/onomato-audio-independent.json",
+      "report_sha256": "800763dd6963cc3c89f1bcea51cd0cf817002c555001da28e9c3756e7f046029",
+      "status": "complete",
+      "learning_content_written": false
+    },
+    {
+      "worker": "/root/clean_namachuukei_chu",
+      "book_id": "180-458b548674d1",
+      "scope": "independent_semantic_sample",
+      "report_cache": ".cache/root-live-qa/onomato-part4-sample-independent.json",
+      "report_sha256": "805b8810ef29df23e92afab4245dcafc9c1bb6bfe3098c81b0baa0e55af22d4e",
+      "status": "complete",
+      "learning_content_written": false
+    },
+    {
+      "report_cache": ".cache/root-live-qa/mini200-scene-coverage-independent.json",
+      "report_sha256": "6a62850bed4c2dd17794d1f0912ac5a762ea6eda5ad37a8aeedef5b059967962",
+      "scope": "All200main heads;995source/output scenes;counts only",
+      "status": "complete",
+      "learning_content_written": false
+    },
+    {
+      "report_cache": ".cache/root-live-qa/mini210-scene-coverage-independent.json",
+      "report_sha256": "e007466b722c3463dff156867d355b649576f10d6b0a8be37ddd551e801595a0",
+      "scope": "All210main heads;926source/output scenes;counts only",
+      "status": "complete",
+      "learning_content_written": false
+    },
+    {
+      "report_cache": ".cache/root-live-qa/mini210-restored-scenes-independent.json",
+      "report_sha256": "3d233bdeef41af736d0e30c6337bc8e30a45c234114e3f623e4ab79a5fb21cf4",
+      "scope": "16 restored end scenes; targeted full JP/VI;4fixed/readback",
+      "status": "complete",
+      "learning_content_written": false
     }
   ]
 }

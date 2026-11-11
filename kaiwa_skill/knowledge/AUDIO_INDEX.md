@@ -1,6 +1,6 @@
 # CD, băng và nguồn nghe theo sách
 
-Snapshot 2026-11-11T21:48:52.362214+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
+Snapshot 2026-11-11T22:47:21.454635+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
 
 - **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — [Ghi chú nghe](<5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **Danh sách 1160 từ vựng MINATO DORIMU** — [Ghi chú nghe](<Danh sách 1160 từ vựng MINATO DORIMU/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
@@ -10,7 +10,7 @@ Snapshot 2026-11-11T21:48:52.362214+00:00. Hồ sơ đang viết còn cập nh�
 - **しごとの日本語 ビジネスマナー編** — [Ghi chú nghe](<しごとの日本語 ビジネスマナー編/_meta/audio.md>); `not_seen`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **しごとの日本語 電話応対 基礎編** — [Ghi chú nghe](<しごとの日本語 電話応対 基礎編/_meta/audio.md>); `documented`, 70 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **すぐに使える 接客日本語会話大特訓［英語版］決まり文句700** — [Ghi chú nghe](<すぐに使える 接客日本語会話大特訓［英語版］決まり文句700/_meta/audio.md>); `documented`, 92 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
-- **すぐに使える 日本語会話 超ミニフレーズ 発展210** — [Ghi chú nghe](<すぐに使える 日本語会話 超ミニフレーズ 発展210/_meta/audio.md>); `documented`, 98 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **すぐに使える 日本語会話 超ミニフレーズ 発展210** — [Ghi chú nghe](<すぐに使える 日本語会話 超ミニフレーズ 発展210/_meta/audio.md>); `complete_from_printed_pdf`, 210 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **すぐに使える 日本語会話 超ミニフレーズ200** — [Ghi chú nghe](<すぐに使える 日本語会話 超ミニフレーズ200/_meta/audio.md>); `documented`, 198 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **どんどん話せる！日本語会話フレーズ大特訓 必須700** — [Ghi chú nghe](<どんどん話せる！日本語会話フレーズ大特訓 必須700/_meta/audio.md>); `documented`, 91 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **なめらか日本語会話** — [Ghi chú nghe](<なめらか日本語会話/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
@@ -23,7 +23,7 @@ Snapshot 2026-11-11T21:48:52.362214+00:00. Hồ sơ đang viết còn cập nh�
 - **中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―** — [Ghi chú nghe](<中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―/_meta/audio.md>); `documented`, 15 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―** — [Ghi chú nghe](<初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―/_meta/audio.md>); `documented`, 34 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **外国人のための日本語敬語の使い方 基本表現85** — [Ghi chú nghe](<外国人のための日本語敬語の使い方 基本表現85/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
-- **日本人がよく使う 日本語会話 オノマトペ基本表現180** — [Ghi chú nghe](<日本人がよく使う 日本語会話 オノマトペ基本表現180/_meta/audio.md>); `documented`, 31 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **日本人がよく使う 日本語会話 オノマトペ基本表現180** — [Ghi chú nghe](<日本人がよく使う 日本語会話 オノマトペ基本表現180/_meta/audio.md>); `documented`, 86 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本人がよく使う 日本語会話お決まり表現180** — [Ghi chú nghe](<日本人がよく使う 日本語会話お決まり表現180/_meta/audio.md>); `documented`, 91 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本語でビジネス会話 ― 中級編 ― 本文冊** — [Ghi chú nghe](<日本語でビジネス会話 中級編 本文冊/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本語でビジネス会話 中級編〈練習冊〉** — [Ghi chú nghe](<日本語でビジネス会話 中級編 練習冊/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.

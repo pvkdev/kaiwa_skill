@@ -56,12 +56,11 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [気持ちが伝わる 日本語会話 基本表現180](<気持ちが伝わる 日本語会話 基本表現180/book.md>) — 209 trang/24 chương/201 unit; tác giả rà toàn PDF, root QA43 trang mẫu. [Giới hạn QA và nguồn](<気持ちが伝わる 日本語会話 基本表現180/_meta/coordinator-review.md>).
 
+- [日本人がよく使う 日本語会話 オノマトペ基本表現180](<日本人がよく使う 日本語会話 オノマトペ基本表現180/book.md>) — 220 trang/8 chương/208 unit; tác giả rà toàn PDF, root QA37 trang mẫu. [Giới hạn QA và nguồn](<日本人がよく使う 日本語会話 オノマトペ基本表現180/_meta/coordinator-review.md>).
+
 ## Đang clean
 
-Một worker đang QA chỉ đọc chỉ mục210–216 của cuốn onomatopoeia; hai worker tiếp tục biên tập hai bản dưới đây.
-
 - **すぐに使える 日本語会話 超ミニフレーズ 発展210** — full scope233 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
-- **日本人がよく使う 日本語会話 オノマトペ基本表現180** — full scope220 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 
