@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T13:18:22.552048+00:00",
+  "updated_at_utc": "2026-11-11T14:04:42.584174+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -17,10 +17,10 @@
       "role": "worker_1",
       "worker": "/root/clean_keigo",
       "stage": "full_pdf_direct_active",
-      "book_id": "180-common-native-japanese-figures-of-speech-in-regular-8eeff5021caa",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/180-common-native-japanese-figures-of-speech-in-regular-conversation-9784863923256-4863923256_compress.pdf",
-      "title": "日本人がよく使う 日本語会話お決まり表現180",
-      "scope_pdf_pages": 209
+      "book_id": "200-quick-and-easy-phrases-for-japanese-conversation-97-09f743ddc922",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/200-quick-and-easy-phrases-for-japanese-conversation-9784863922068_compress.pdf",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ200",
+      "scope_pdf_pages": 225
     },
     {
       "role": "worker_2",
@@ -270,11 +270,12 @@
       "source_sha256": "8eeff5021caa8ac4c21e27ad494e70a8ce91392f151182deb7f711c497267719",
       "page_count": 209,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_keigo",
+      "owner": "/root",
       "title": "日本人がよく使う 日本語会話お決まり表現180",
-      "knowledge_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話お決まり表現180"
+      "knowledge_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話お決まり表現180",
+      "knowledge_commit": "ffae3af"
     },
     {
       "book_id": "200-quick-and-easy-phrases-for-japanese-conversation-97-09f743ddc922",
@@ -282,8 +283,11 @@
       "source_sha256": "09f743ddc922161b06a160fd3a918f4167b129be053effb48e9c1bc8b5c21ca7",
       "page_count": 225,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_keigo",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ200",
+      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200"
     },
     {
       "book_id": "210-additional-super-miniature-phrases-for-immediate-us-2fdf1586c2e2",
@@ -741,6 +745,11 @@
       "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
       "commit": "0feafae",
       "coordinator_review": "author full; root36 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話お決まり表現180",
+      "commit": "ffae3af",
+      "coordinator_review": "author full; root24 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -1131,18 +1140,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 209,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 185,
-        "needs_review": 2,
-        "pending": 22
+        "author_checked": 207,
+        "needs_review": 2
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 25,
-        "needs_review": 2,
-        "pending": 4
-      }
+        "author_checked": 29,
+        "needs_review": 2
+      },
+      "knowledge_commit": "ffae3af"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
@@ -1175,12 +1183,12 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 59,
-        "pending": 168
+        "author_checked": 171,
+        "pending": 56
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 4,
-        "pending": 21
+        "author_checked": 18,
+        "pending": 7
       }
     },
     {
@@ -1194,11 +1202,31 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 222,
-        "author_checked": 3
+        "author_checked": 149,
+        "needs_review": 1,
+        "pending": 75
       },
       "chapter_checkpoint_counts": {
-        "pending": 12
+        "author_checked": 4,
+        "needs_review": 1,
+        "pending": 7
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ200",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/200-quick-and-easy-phrases-for-japanese-conversation-9784863922068_compress.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 225,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 225
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 13
       }
     }
   ],
@@ -1219,9 +1247,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 21,
-  "completed_full_source_pages": 2643,
-  "completion_count_definition": "21 released supplied-PDF scopes/2643 pages: initial7 independently reviewed in full; later14 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 22,
+  "completed_full_source_pages": 2852,
+  "completion_count_definition": "22 released supplied-PDF scopes/2852 pages: initial7 independently reviewed in full; later15 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",

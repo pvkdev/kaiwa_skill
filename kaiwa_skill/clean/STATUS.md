@@ -1,19 +1,19 @@
 # Clean hàng loạt — đang điều phối
 
-Đã chốt **21/30 bản đọc**, bao phủ **2.643/4.597 trang PDF đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi; mười bốn bản sau tác giả đối chiếu toàn nguồn và root QA mẫu. [Bản đọc và hồ sơ](../knowledge/README.md).
+Đã chốt **22/30 bản đọc**, bao phủ **2.852/4.597 trang PDF đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi; mười lăm bản sau tác giả rà toàn nguồn và root QA mẫu. [Bản đọc và hồ sơ](../knowledge/README.md).
 
-Bản vừa chốt: **Shadowing trung–cao bản Indonesia–Thai–Việt**,168 trang/10 chương/93 unit,commit0feafae. Có232 thoại ngắn+8 section dài; root36 trang mẫu; validateallow0 lỗi/2 cảnh báo cùng nhãn vai nguồn70 (A/B/A/A).2CD/62 cặp đĩa–track,file chưa kiểm.
+Bản vừa chốt: **日本人がよく使う 日本語会話お決まり表現180**, 209 trang/31 chương/200 unit, commit ffae3af. Có180 biểu thức,50 cột từ,218 khóa English và180 mục Japanese. Root mở24 trang, so toàn English index và khôi phục6 khóa OCR bỏ; validate0 lỗi/4 cảnh báo cùng hai bất nhất vai nguồn53/168. Có90 mã track/91 lần xuất hiện vì mẫu guide lặp CD6; số đĩa chưa xác nhận, file chưa kiểm.
 
-Bản trước: **にほんごで働く！ビジネス日本語30時間**,181 trang/15 chương/171 unit,commit62fd98b. Root QA40 trang mẫu và validate strict0 lỗi/0 cảnh báo. Giữ đủ8 bài chính, đáp án/script, chỉ mục395 hàng theo audit của writer và tập từ riêng20 trang;1CD/57 nhãn01–57,file chưa kiểm.
+Hai bản trước: **Shadowing trung–cao bản Indonesia–Thai–Việt**,168 trang (0feafae),232 thoại ngắn+8 phần dài,root36 trang,sourceissue vai70,validate0/2; **Business30 giờ**,181 trang (62fd98b),15 chương/171unit,root40 trang,strictvalidate0/0. Các bản có đủ phần hậu sách, script/đáp án/tập từ theo sách và inventory nghe. 5500 câu đã chốt trước đó vẫn còn66 vấn đề nguồn tại60 trang, xem cảnh báo trong bản đọc.
 
-5500 câu136 trang đã chốt trước đó (6f689ed), còn66 vấn đề nguồn tại60 trang; xem cảnh báo trong bản đọc, không coi toàn bộ là câu Nhật đã xác nhận.
+Ba worker **gpt-6-sol/high** đang tiếp:
 
-Ba bản trước: Shadowing 初～中級編145 trang (dca0eff,411 hội thoại/950 lượt Nhật–Việt,root34 trang mẫu); 電話応対 基礎編162 trang (49b0926,root27 trang, nguồn83 cắt ghi chú); 発展文型125225 trang (89f4c0f,root29 trang và bảng125 dòng, nguồn120 thiếu một lượt Nhật). Mạch bài, chức năng bài nghe, bản Việt và tham chiếu đã được sửa qua QA; các lỗi nguồn vẫn được cảnh báo.
+- **すぐに使える 日本語会話 超ミニフレーズ200** —225 trang,13 chương,front1–14 đã checked; tiếp chương học đầu. Root mới kiểm bìa/colophon3 trang.
+- **接客日本語会話大特訓［英語版］決まり文句700** —225 trang,12 chương; đã qua176 trang. Root11 ảnh mẫu,giữ prompt luyện nói và ô tự đánh dấu trước câu Nhật. Chênh gloss từ ở98 còn được đánh dấu; mốc apparel99 đã giải quyết theo6Unit thực.
+- **Roleplay thương mại sơ–trung** —227 trang,25 chương; đã xong14 bài chính qua181. Root22 ảnh mẫu,so trọn bài1 và các kiểu hướng dẫn/sơ đồ. Ranh giới chương được sửa theo ảnh thực và ghi history,không ép theo preflight.
 
-Ba worker Sol/high tiếp **Roleplay tiếng Nhật thương mại sơ–trung** (227 trang,đã qua Bài3), **接客日本語会話大特訓［英語版］決まり文句700** (225 trang,đã init12 chương) và **お決まり表現180** (209 trang,đang các nhóm cuối/chỉ mục). Còn6 PDF chưa giao. Runtime4 active tính root nên sub điều phối idle trong lúc ba worker viết.
+Còn **5 PDF chưa giao**. Runtime4 active tính root nên sub điều phối idle trong lúc3 worker viết. Các bản đang dở chưa được tính nghiệm thu.
 
-Root Roleplay đã so trọn Bài1 và một phần front,17 trang nguồn; đã sửa chỉ dẫn A nói trước, loại manh mối tự thêm ở lựa chọn dịch và giữ rõ các quan hệ sơ đồ công ty/nhân viên. Sách180 hiện còn vấn đề nhãn vai nguồn53/168; không tự đổi vai. Các bản đang dở chưa được tính nghiệm thu.
+Công cụ0.4.10:80 test fork+17 direct PASS. Regression18 bản trước0 lỗi/33 cảnh báo; các bản mới được root validate riêng. Skill đã bổ sung giữ mảnh đáp án theo ngữ cảnh,không thêm manh mối vào lựa chọn và không bỏ khóa tra do OCR số trang hỏng. Validator không chứng minh đúng nghĩa hoặc đủ kiến thức.
 
-Công cụ0.4.10:80 test fork+17 direct PASS. Regression18 bản trước: **0 lỗi/33 cảnh báo**, gồm vấn đề nguồn và9 cảnh báo bố cục ô trống đã kiểm củaNama2. Skill đã thêm kiểm bản Việt in sẵn và giữ mô tả giọng của script ở sau đề nghe. 5500 mới validate riêng0/132. Validator không chứng minh đúng nghĩa hoặc đủ kiến thức.
-
-[CD, băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) có inventory và tình trạng file tách riêng; chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) giữ hàng đợi; [HANDOFF](HANDOFF.md) giúp tiếp quản. Checkpoint giúp nối sau gián đoạn; không có daemon khi đóng ứng dụng. Lượt điều phối còn tiếp tục.
+[CD,băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) tách thông tin in trong sách khỏi file thực tế; chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) giữ hàng đợi; [HANDOFF](HANDOFF.md) để tiếp quản. Checkpoint giúp nối sau gián đoạn; không có daemon khi đóng ứng dụng. Lượt điều phối còn tiếp tục.

@@ -42,9 +42,11 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版](<シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版/book.md>) — 168 trang/10 chương/93 unit; tác giả rà toàn PDF, root QA36 trang mẫu. [Giới hạn QA và nguồn](<シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版/_meta/coordinator-review.md>).
 
+- [日本人がよく使う 日本語会話お決まり表現180](<日本人がよく使う 日本語会話お決まり表現180/book.md>) — 209 trang/31 chương/200 unit; tác giả rà toàn PDF, root QA24 trang mẫu. [Giới hạn QA và nguồn](<日本人がよく使う 日本語会話お決まり表現180/_meta/coordinator-review.md>).
+
 ## Đang clean
 
-- **日本人がよく使う 日本語会話お決まり表現180** — full scope209 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+- **すぐに使える 日本語会話 超ミニフレーズ200** — full scope225 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 - **初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―** — full scope227 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 - **すぐに使える 接客日本語会話大特訓［英語版］決まり文句700** — full scope225 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 
