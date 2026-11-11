@@ -33,7 +33,7 @@ Sách88 migration raw→direct1c2d7c0; history647ff62ba2fa4c548d7c92d5fb545857 b
 
 ## Công cụ và kiểm tra
 
-Version0.4.7, commite974bbf;62 test fork+17 direct PASS. Regression13 bản trước88:0errors/12warn nguồnNameraka+Manners;88 kiểm riêng0/4. Cache .cache/validator-regression/v047-results.json; helper run.py chỉ hỗ trợ root, không phải phụ thuộc sản phẩm.
+Version0.4.8;70 test fork+17 direct PASS. Regression14 bản đã chốt:0errors/16warn nguồnNameraka+Manners+88. Cache .cache/validator-regression/v048-results.json; helper run.py chỉ hỗ trợ root, không phải phụ thuộc sản phẩm.
 
 Skill .agents/skills/kaiwa-fork-knowledge/SKILL.md và .agents/skills/kaiwa-pdf-knowledge/SKILL.md cùng direct-contract. CLI init/checkpoint/resume/build/validate/extend-scope. build không có --allow-source-issues; validate có. Full đang dở chỉ checkpoint/resume, không fake evidence/thu scope để xanh. needs_review chỉ lỗi nguồn đã mở ảnh, issue đúng page/block/unit; chưa viết dùng draft. Parser không chứng minh đúng nghĩa/đủ nội dung, không ép sách vào template để vượt parser.
 
@@ -46,3 +46,9 @@ Git dùng chung chat ingest khác; stage exact paths và commit --only. Không a
 Dùng py -B, PYTHONUTF8=1, import pymupdf as fitz; pdfinfo/Poppler có PATH. Output chỉmd/json/jsonl; ảnh/crop/helperPython ở ignored.cache. exec_command trảsession_id thì poll write_stdin; functions.wait chỉ dùng nếu functions.exec báo running cell. Không sleep/wait chặn quá60giây; gửi commentary tiếng Việt ngắn khi có thay đổi có ý nghĩa, khoảng60giây trong lúc làm.
 
 Không final ở trạng thái này; tiếp QA và điều phối hàng đợi tới hết phạm vi.
+
+## QA và tiến độ bổ sung09:11UTC
+
+125 tới61/225; root đã mở16 trang1/2/8/10–16/18–23, so toàn nhóm01–04; sửa1–2 hội thoại ởguide11 vàただ ở序章16. Denwa tới51/162; root mở14 trang5/11–18/20–23/45, so intro/Unit1 vàchênh công ty rolecard45; sửa đảo nghĩa giọng thấp/nhanh, lời khuyên bị mất, TOC34. Nama2 tới119/152 kể cả1needs_review83; script đang quaBài6. Root mở11 trang1/7/13/15/16/19/28/97–100, so trọn scriptBài1, sửa vaiYoshino/cậu ấy; **chưa release**, yêu cầu worker audit ngược10bài các nhóm Việt sau đề (không tóm lượt, giữ mọi lựa chọn, không tự giải) vàdịch đủ chỉ dẫnJP còn thiếu. Parser0.4.8 hỗ trợ nhóm JP1..N rồi Việt①..N, không đổi bố cục vì lỗi công cụ. Báo cáo3sách ở clean/reviews/*-root-sampled.md.
+
+Audio Nameraka đã root mở thêm6/mở lại7–8, sửa dẫn câu mô tả tape từ7 về6 vàghi giới hạn vì có câu hỏi in sẵn; followup8f19042. Root source sample hiện16 trang, chapter không đổi. Skill guard quan hệ nhân quả/so sánh e5a0953, parser0.4.8 có8regressiontest mới; không cần rerun khi chỉ viết tiếp nội dung chưa đổi công cụ.

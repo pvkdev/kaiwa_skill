@@ -6,8 +6,10 @@ Hai bản vừa chốt: ビジネスマナー136 trang, commit8a162ca; 基本文
 
 Ba worker Sol/high đang tiếp: 発展文型125 (225 trang), 電話応対 基礎編 (162 trang), 日本語生中継 初中級編２ (152 trang). Còn13 PDF chưa được giao; root tiếp tục giao khi có bàn giao. Bốn vai sub được luân phiên vì runtime chỉ cho4 active tính cả root; sub điều phối hiện idle, ba worker đang viết.
 
-Công cụ0.4.7 có62 test fork và17 test direct PASS. Regression13 bản trước release88:0 lỗi,12 cảnh báo nguồn đã biết;88 kiểm riêng0 lỗi/4 cảnh báo nguồn. Kiểm cấu trúc không chứng minh đúng nghĩa hoặc đủ kiến thức.
+Công cụ0.4.8 có70 test fork và17 test direct PASS. Regression14 bản đã chốt:0 lỗi,16 cảnh báo nguồn đã biết. Kiểm cấu trúc không chứng minh đúng nghĩa hoặc đủ kiến thức.
 
 [CD, băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) có inventory và tình trạng file riêng. Một số hồ sơ cũ mới rà giới hạn; unknown không có nghĩa sách không có audio. Chưa tìm hoặc tải file nghe.
 
 [COORDINATOR.json](COORDINATOR.json) ghi snapshot hàng đợi/phân công; [HANDOFF.md](HANDOFF.md) hướng dẫn tiếp quản. Checkpoint/hash/history lưu xuống đĩa để nối lại sau gián đoạn. Đóng ứng dụng dừng tính toán; không có daemon hoặc automation chạy riêng.
+
+Snapshot09:11UTC:125 mẫu61/225 trang; Điện thoại51/162; 生中継2 có118 author_checked,1 needs_review và33 pending. 生中継2 cần audit ngược bản Việt của10 bài chính trước release; các yêu cầu QA mở lưu trong clean/reviews.

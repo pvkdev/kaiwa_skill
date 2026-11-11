@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T08:53:27.797284+00:00",
+  "updated_at_utc": "2026-11-11T09:11:49.661063+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -580,7 +580,8 @@
     "Chu deadline 明日まで was corrected to chậm nhất vào ngày mai; list/role formatting is supported by validator, 20 tests passed.",
     "Keigo PDF7 source wording, PDF18 answer-number mismatch and PDF20 particle/romaji mismatch were visually confirmed; keep content notes and needs_review on affected knowledge units.",
     "Sho PDF29 menu is exercise ambiguity, not asserted to be a printing mistake; both data statements are retained.",
-    "All 30 catalog PDFs remain in scope; only ready_for_fork sources may be dispatched. Source queues are refreshed during coordination."
+    "All 30 catalog PDFs remain in scope; only ready_for_fork sources may be dispatched. Source queues are refreshed during coordination.",
+    "Early root QA reports: clean/reviews/125-root-sampled.md, denwa-root-sampled.md, namachuukei2-root-sampled.md. Nama2 requires full10lesson preservation audit of deferred VI groups and untranslated instructions before release; parser0.4.8 supports deferred numbered translations without changing layout."
   ],
   "authoring_complete_pending_coordinator_release": [],
   "released_supplied_pdf_scope": [
@@ -727,14 +728,14 @@
     "pilot_output_commit": "9e2f7d5"
   },
   "tool_validation": {
-    "version": "0.4.7",
-    "commit": "e974bbf",
-    "fork_tests_passed": 62,
+    "version": "0.4.8",
+    "commit": "18df99e",
+    "fork_tests_passed": 70,
     "direct_tests_passed": 17,
-    "regression_book_count": 13,
+    "regression_book_count": 14,
     "regression_errors": 0,
-    "regression_warnings": 12,
-    "warning_scope": "Known Nameraka32 and five Manners source pages only, as of the 13-book run; book88 separately validates0errors/4sourcewarnings. Structure checks are not semantic certification."
+    "regression_warnings": 16,
+    "warning_scope": "Known source issues in Nameraka32, five Manners pages, and88patterns9/28. Structural checks do not certify semantics."
   },
   "knowledge_outputs": [
     {
@@ -822,12 +823,12 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 31,
-        "pending": 131
+        "author_checked": 51,
+        "pending": 111
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 5,
-        "pending": 33
+        "author_checked": 10,
+        "pending": 28
       }
     },
     {
@@ -881,12 +882,12 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 23,
-        "pending": 202
+        "author_checked": 61,
+        "pending": 164
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 3,
-        "pending": 27
+        "author_checked": 9,
+        "pending": 21
       }
     },
     {
@@ -990,14 +991,14 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 95,
+        "author_checked": 118,
         "needs_review": 1,
-        "pending": 56
+        "pending": 33
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 13,
+        "author_checked": 19,
         "needs_review": 1,
-        "pending": 12
+        "pending": 6
       }
     }
   ],
