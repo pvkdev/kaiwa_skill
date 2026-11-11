@@ -1,6 +1,8 @@
 # Clean hàng loạt — đang điều phối
 
-Đúng ba worker `gpt-6-sol/high`. Root giữ lượt điều phối, kiểm nguồn mới, QA và Git; chưa kết thúc phạm vi toàn catalog30 PDF.
+Kế hoạch hiện hành: [DIRECT_PLAN.md](DIRECT_PLAN.md). Raw đầy đủ tiếp tục clean; PDF chưa chạy đi thẳng knowledge sau pilot. Kiểm kê đổi luồng: 9 nguồn raw ready, 7 raw dở/có vấn đề nguồn, 14 PDF chưa ingest. Các số này là snapshot; kiểm lại manifest/claim khi giao việc.
+
+Người dùng yêu cầu một sub điều phối và ba worker, tất cả `gpt-6-sol/high`; runtime chỉ cho ba sub active cùng root nên luân phiên vai. Root giữ lượt điều phối, QA và Git; chưa hoàn thành catalog30 PDF.
 
 ## Đã có bản đọc và rà độc lập
 
@@ -18,8 +20,13 @@ Pilot 基本文型88 chỉ PDF7–12:4 chapter,9 unit; đã khôi phục CD01–
 
 ## Đang chạy
 
-- `/root/clean_namachuukei_sho`: full clean cuốn 中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―,140 trang; đã checkpoint phần mở đầu và Unit1 (PDF1–40), đang Unit2; plan10 phần.
-- `/root/clean_namachuukei_chu`: full clean 本文冊 kinh doanh138 trang; source đã ready và snapshot/plan22 phần đã init.
-- `/root/clean_keigo`: preflight shadowing sơ–trung cấp145 trang; full88/5500/business manners/telephone đã có map riêng, chưa clean khi raw chưa ready.
+- `/root/knowledge_coordinator`: đã bàn giao contract/công cụ PDF-native; 8 test mới và30 test cũ PASS. Đang idle để ba worker chạy.
+- `/root/clean_keigo`: pilot Wakaru đã được root kiểm/sửa và ghi PASS theo hash, vẫn chỉ PDF1/17/18/23/149/152 +PDF9 chứng cứ CD. Đã giao full direct mới cuốn なめらか日本語会話 (tên/ấn bản chờ worker xác minh bìa),163 trang, không tạo raw.
+- `/root/clean_namachuukei_sho`: tiếp clean roleplay trung cấp140 trang từ checkpoint PDF1–85, đang Unit5; bổ sung CD/audio inventory.
+- `/root/clean_namachuukei_chu`: 本文冊 kinh doanh138 trang đã author-check PDF1–35; đang tiếp từ PDF36. Không làm lại.
+
+Review roleplay trước khi đổi luồng chỉ mới mở một số trang phần đầu, chưa xác nhận chapter độc lập. Nghiệm thu tương lai phải dựa hash/output hiện tại, không dùng trạng thái cũ làm bằng chứng.
+
+Pilot trực tiếp đã giữ45key lựa chọn,21câu Drill và65mảnh đáp án ôn có Việt; đã sửa bản Việt từng lượt bài tập và hai nghĩa/cách viết. Báo cáo `_meta/pilot-independent-review.json` trong thư mục Wakaru. Các bản toàn sách vẫn cần checkpoint/QA riêng; không suy full acceptance từ PASS pilot.
 
 Bản đọc: [knowledge/README.md](../knowledge/README.md). Ownership và hàng đợi: [COORDINATOR.json](COORDINATOR.json). Tiếp quản: [HANDOFF.md](HANDOFF.md). Phiên bị đóng sẽ dừng tính toán; checkpoint/snapshot hỗ trợ mở lại từ chỗ đã lưu, không có daemon nền.

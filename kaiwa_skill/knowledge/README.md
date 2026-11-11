@@ -2,6 +2,8 @@
 
 Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát và những vấn đề còn trong nguồn. Chưa sắp thành lộ trình mới.
 
+[Tra CD, băng và nguồn nghe](AUDIO_INDEX.md) — có trạng thái inventory và trạng thái file âm thanh riêng; các sách cũ còn thiếu inventory đang chờ bổ sung.
+
 ## Đã có bản đọc đủ PDF đầu vào
 
 - [聞いて覚える話し方 日本語生中継 初中級編 1](聞いて覚える話し方%20日本語生中継%20初中級編%201/book.md) — 91 trang PDF; đã rà độc lập toàn phạm vi. [Hồ sơ](聞いて覚える話し方%20日本語生中継%20初中級編%201/_meta/coordinator-review.md).
@@ -14,11 +16,15 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 ## Đang clean
 
+- **なめらか日本語会話** —163 trang, đang biên soạn trực tiếp PDF → knowledge bằng skill mới, không tạo raw trung gian. Audio là băng bán riêng theo hướng dẫn; tình trạng tệp nghe được ghi trong inventory.
+
 - **中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―** —140 trang, đang biên soạn từ nguồn đã sẵn sàng.
 
 - **日本語でビジネス会話 中級編 本文冊** —138 trang, đang biên soạn từ nguồn đã sẵn sàng.
 
 ## Pilot một phần
+
+- [「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）](「BJTビジネス日本語能力テスト」入門%20わかるビジネス日本語（新装版）/book.md) —pilot trực tiếp PDF1/17/18/23/149/152;4 phần/10unit, root đã QA/sửa và ghi PASS. Có inventory CD với bằng chứng PDF9 bổ sung. Chưa xử lý toàn sách152trang.
 
 - **わかる！話せる！日本語会話 基本文型88** —chỉ PDF7–12;4 phần/9unit đã rà lại bảo toàn. Toàn sách chưa clean.
 

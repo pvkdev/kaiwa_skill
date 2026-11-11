@@ -21,7 +21,7 @@ Lỗi thực tế từ pilot: giữ thoại Nhật của bài ôn nhưng thay ph
 2. Dùng `scripts/direct_progress.py --help` và help lệnh con để init. Khóa PDF SHA256, số trang thật, phạm vi và thứ tự chapters. Một writer cho mỗi sách; mọi tác nhân khác chỉ QA đọc.
 3. Mở ảnh từng trang nguồn; text layer/OCR chỉ giúp tra chữ. Đọc toàn trang để biết thứ tự và crop vùng mờ khi cần. Chuyển thẳng sang chapter sạch, không soạn thêm raw tương đương cả trang. Đặt unit ID ổn định, liên kết các vùng nguồn sang unit; ghi lý do cho vùng bỏ. Kiểm cả các vùng nối trang và phần đáp án ở cuối sách.
 4. Ghi page evidence và checkpoint ngay sau từng trang đã đối chiếu; checkpoint chapter sau khi đối chiếu toàn phần. `author_checked` chỉ dùng khi đã thật sự mở ảnh và so bản viết. Thay nội dung/evidence sau kiểm phải kiểm lại; hash không chứng minh đúng nghĩa hoặc đủ kiến thức.
-5. Bổ sung audio inventory theo phần dưới. Build/validate mỗi chapter; đọc warning và kiểm PDF, không sửa metadata chỉ để làm xanh validator.
+5. Bổ sung audio inventory theo phần dưới. Trong full scope đang dở, checkpoint/resume từng trang/chapter và QA trực tiếp chapter đã viết. Builder cần evidence của toàn scope và chapter đầy đủ: chỉ build/validate toàn sách khi đủ dữ liệu; lỗi thiếu trang đang pending không có nghĩa cần tạo evidence giả hoặc đổi scope. Đọc warning và kiểm PDF, không sửa metadata chỉ để làm xanh validator.
 6. Khi gián đoạn, ghi trang/chapter đang dở và lỗi cụ thể; người tiếp quản chạy resume, kiểm PDF/hash và dependency trước khi nối việc. Nguồn thay hash phải xử lý stale/rebase, không nâng trạng thái cũ. Không làm lại phần đã kiểm còn hợp lệ.
 
 ## CD và nguồn nghe
