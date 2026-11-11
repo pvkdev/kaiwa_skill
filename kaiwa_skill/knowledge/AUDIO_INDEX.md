@@ -1,6 +1,6 @@
 # CD, băng và nguồn nghe theo sách
 
-Snapshot 2026-11-11T12:51:58.787985+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
+Snapshot 2026-11-11T12:54:34.367121+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
 
 - **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — [Ghi chú nghe](<5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **Danh sách 1160 từ vựng MINATO DORIMU** — [Ghi chú nghe](<Danh sách 1160 từ vựng MINATO DORIMU/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
@@ -16,8 +16,9 @@ Snapshot 2026-11-11T12:51:58.787985+00:00. Hồ sơ đang viết còn cập nh�
 - **シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版** — [Ghi chú nghe](<シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版** — [Ghi chú nghe](<シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版/_meta/audio.md>); `documented`, 42 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―** — [Ghi chú nghe](<中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―/_meta/audio.md>); `documented`, 15 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―** — [Ghi chú nghe](<初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **外国人のための日本語敬語の使い方 基本表現85** — [Ghi chú nghe](<外国人のための日本語敬語の使い方 基本表現85/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
-- **日本人がよく使う 日本語会話お決まり表現180** — [Ghi chú nghe](<日本人がよく使う 日本語会話お決まり表現180/_meta/audio.md>); `documented`, 69 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+- **日本人がよく使う 日本語会話お決まり表現180** — [Ghi chú nghe](<日本人がよく使う 日本語会話お決まり表現180/_meta/audio.md>); `documented`, 73 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本語でビジネス会話 ― 中級編 ― 本文冊** — [Ghi chú nghe](<日本語でビジネス会話 中級編 本文冊/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本語でビジネス会話 中級編〈練習冊〉** — [Ghi chú nghe](<日本語でビジネス会話 中級編 練習冊/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **日本語でビジネス会話 中級編〈英訳・語い冊〉** — [Ghi chú nghe](<日本語でビジネス会話 中級編 英訳・語い冊/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.

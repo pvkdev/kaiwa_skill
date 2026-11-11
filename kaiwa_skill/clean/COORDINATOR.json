@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T12:51:59.065261+00:00",
+  "updated_at_utc": "2026-11-11T12:54:34.367121+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -25,7 +25,7 @@
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
-      "stage": "full_pdf_direct_initializing",
+      "stage": "full_pdf_direct_active",
       "book_id": "remake-5779739d0a4b",
       "source_pdf": "kaiwa_skill/book/BJT/ロールプレイで学ぶビジネス日本語 - 初中級レベル－場面に合わせて適切に話そう－ [Remake].pdf",
       "title": "初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
@@ -235,7 +235,7 @@
       "source_sha256": "5779739d0a4b7f03ce3763c7f42679347991902f957d017b665f91b4ffec8496",
       "page_count": 227,
       "route": "pdf_direct",
-      "state": "full_direct_initializing",
+      "state": "full_direct_active",
       "raw_initialization_allowed": false,
       "owner": "/root/clean_namachuukei_sho",
       "title": "初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
@@ -1125,14 +1125,14 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 154,
+        "author_checked": 162,
         "needs_review": 1,
-        "pending": 54
+        "pending": 46
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 22,
+        "author_checked": 23,
         "needs_review": 1,
-        "pending": 8
+        "pending": 7
       }
     },
     {
@@ -1146,15 +1146,32 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 130,
+        "author_checked": 138,
         "needs_review": 1,
-        "pending": 37
+        "pending": 29
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 5,
+        "author_checked": 6,
         "needs_review": 1,
         "draft": 1,
-        "pending": 3
+        "pending": 2
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
+      "title": "初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
+      "source_pdf": "kaiwa_skill/book/BJT/ロールプレイで学ぶビジネス日本語 - 初中級レベル－場面に合わせて適切に話そう－ [Remake].pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 227,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 227
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 25
       }
     }
   ],
