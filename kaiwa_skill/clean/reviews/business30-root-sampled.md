@@ -19,3 +19,9 @@ Root mở thêm11–16,20–21,23,25,28, tổng21 trang nguồn. Đọc toàn ou
 Ký hiệu trọng âm từ vựng13–14 là dữ liệu học phát âm. Bảng bổ sung lần đầu còn sai hướng/vị trí (海外/研修生/新幹線/ファクス), root yêu cầu hạ draft và crop từng hàng thay vì suy mẫu chung. Worker báo đã sửa bằng↑↓ và checkpoint lại; cần root đọc lại bảng mới, chưa coi toàn trọng âm đã kiểm độc lập. Những phần nghĩa/từ điển giữ đủ; không bỏ bảng vì furigana phụ trợ được loại.
 
 Đã đọc lại front sau sửa: TOC có nghĩa Việt cho tám bài và các nhánh; đoạn hành chính English/địa chỉ đã chuyển_meta, ISBN/năm vẫn giữ. Đối chiếu rolecard/practice mẫu thấy dữ kiện/ô trống và lời Việt đã in được giữ, không có lời giải tự thêm tại đó. Cột danh thiếp28 giữ trình tự trao/nhận và ba câu Nhật với nghĩa Việt.
+
+Root mở thêm22, tổng22 trang. Ví dụ bài luyện[A]22 và[B]23 ban đầu còn thiếu câu thường trong bóng thoại, chỉ có câu kính ngữ mẫu bên dưới. Worker đã bổ sung cả hai tầngNhật–Việt; root đọc lại các cặp言います→おっしゃいます/申します và出かけました→出かけられました/お出かけになりました, thấy khớp nguồn. Những câu luyện chưa giải vẫn để người học làm.
+
+Đã đọc bảng trọng âm mới dùng↑↓, đối chiếu lại các mẫu đã phóng14: 海外か↓いがい,研修生け↑んしゅ↓うせい,新幹線し↑んか↓んせん,ファ↓クス phù hợp. Root bắt thêm lỗi kanaごうにん ở後任 do khôi phục bảng dấu; worker sửaこ↑うにん, root đọc lại. Đây là kiểm một số hàng phát âm, không phải full independent accent audit toàn sách. Không suy dấu từ từ điển ngoài nguồn.
+
+Kiểm chương01 bằngvalidate_chapter sau các sửa:0 lỗi/0 cảnh báo; chỉ kiểm cấu trúc chương, không thay fullbuild/validate hoặc kiểm ngữ nghĩa.

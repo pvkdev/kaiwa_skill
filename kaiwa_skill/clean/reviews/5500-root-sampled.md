@@ -13,3 +13,5 @@ Root xác nhận source16 bị sát gáy ở cuối「あんな口調（口ぶ�
 Root mở thêm38/66/99, tổng14 trang nguồn. So toàn47 dòng từ ở nửa trái ba trang với cuối chapter01/02/03: giữ đủheadword và nghĩa, không bỏ phần bảng ở trang ranh giới. Các chỗ震える/返品/ずばりと/違える đã có nghĩa phù hợp hơn cột Việt in sẵn. Nửa phải là đầu phần mới, giữ block/unit/chapter riêng.
 
 Đầu phần Nguyện vọng38,「旅行が好きです」đã có bản Việt câu trần thuật đúng; cột Việt nguồn in thành câu hỏi. Câu「ジャズのほうが好きです」còn thiếu “hơn” trong output, đã yêu cầu sửa và rà các cấu trúc so sánh trước đó. Gloss99「・・・しだいだ」in gộp “tùy theo/ngay sau”; yêu cầu giữ nghĩa chắc theo ví dụ tại96 và ghi rõ gloss nguồn quá rộng, không khẳng định hai nghĩa cùng thuộc đúng dạngだ. Đang chờ đọc lại các sửa.
+
+Root đã đọc lại hai vị trí sau sửa: nhạc jazz **hơn**, glossしだいだ chỉ giữ “tùy theo…”, sự khác biệt bản in ghi_meta. Worker báo rà32 dòng so sánh trong các chapter đã viết; root chưa đối chiếu độc lập32 dòng đó. Chapter02 qua kiểm cấu trúc0/0; chưafullbuild/validate, chưarelease.
