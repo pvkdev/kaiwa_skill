@@ -1,4 +1,26 @@
-# Bàn giao mới nhất book11 — WIP p1–86; p87 đã render
+# Bàn giao mới nhất book11 — WIP p1–94; p95 đã render
+
+- Cập nhật: 2026-11-11 JST; worker `production_book_11_root_cont3`, `gpt-6-sol/high`, điều phối trực tiếp `/root`.
+- Book `01-yuukibui-b12c61270c7b`, 138 physical pages; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
+- Lượt này chuyển mới **p87–94 (8 trang)**; mở full render mỗi trang, direct4/crops trên dưới; p87 direct8 từng cột bảng/map/legend + direct16 hàng 兵庫/神戸, p93 xoay landscape direct4 và mở hai crop. So hai chiều với MD rồi verify từng trang. p95 đã render/mở full preview nhưng chưa draft.
+- Sau reconcile/build: **94/138 verified (p1–94), 1 rendered (p95), 43 pending (p96–138), 0 draft/needs_review/invalid, 0 issue/error**, `build_current=true`; partial, chưa complete/accepted. `book.md`/`search.jsonl` chỉ gồm p1–94. SHA-256 `build.json`: `6879b11287fb121f309e7f2c0021df58e9dadd24df171e1a40ba1c0417da39d5`.
+- Token lượt này `book11-root87-20261111-d719`; sẽ release sạch sau handoff. Không Git, không sửa ngoài corpus/cache sách được giao.
+
+## Nội dung mới và điểm nguồn
+
+- p87 trang in74 là bảng `都道府県名（ⓐ）と県庁所在地名（ⓑ）`, **47 hàng** trong ba cụm cột nguồn, số 1–47 duy nhất; bản đồ đã chuyển đủ quan hệ A–H, số tỉnh, chấm 県庁所在地 và bốn biển sang text có nhãn biên tập, không hình. Giữ dữ kiện thời sách `13 埼玉／浦和`, không đổi thành Saitama; crop direct16 cho thấy ruby của 兵庫 là `庫＝こ` như in. Bản đồ số47沖縄 tách rời; p88 sang bài mới.
+- p88–92 第十三課 `表現、やり方を聞く`: p88 談話型 4 lượt/6 blanks; p89 本文会話 hai đoạn, đoạn2 tiếp qua p90 ba lượt. p90 類話 `お返し` và bắt đầu 語句 1–2; p91 語句3–8; p92 語句9–13, rồi kết bài. Giữ `山本課長` khác `山崎`, notes 目上, ellipsis, dấu `/` lựa chọn và emphasis ngữ pháp theo từng lần nguồn.
+- p93 trang in80 là `会社組織図（一例）` nằm ngang trên PDF, xoay crop để đọc; chuyển mọi ô và quan hệ nhánh của `本社`/`役職名`, 10 bộ phận, vai trò đại diện/phó, khung 管理職 thành text có nhãn biên tập. p94 mở 第十四課 `初対面の人と` với hai mẫu 談話型, 7+4 blanks, các slash lựa chọn và ruby. Không issue nguồn trong p87–94.
+- p1–86 verified cũ giữ nguyên, gồm root QA sửa p75 ruby `決＝けっ`; không sửa lịch sử.
+
+## Tiếp tục ngay
+
+- **Physical p95 (trang in82)** là trang đầu chưa chép: đã ledger render scale2 và mở full preview. `《本文会話》` / `社長に紹介される`, nhân vật 課長・社長・ジョーンズ (研修生イギリスから), hội thoại dài mở đầu `社長、ご紹介させていただきます。...`. Phải mở direct4 trên/dưới để chép chính xác 14+ lượt/ruby/marginal 1,5,10,15,20,25. p96–138 pending.
+- Worker tiếp theo kiểm source/status/release/claim thật rồi claim token mới; bảo toàn p1–94, tiếp tục từng trang full/crop hai chiều, exact occurrence/span ruby/bold, `b001` và checkpoint. Với vùng không rõ thật dùng `needs_review` cụ thể và đi trang khác. Root giữ QA/Git/acceptance.
+
+---
+
+# Bàn giao trước — WIP p1–86; p87 đã render
 
 - Cập nhật: 2026-11-11 JST; worker `production_book_11_root_cont2`, `gpt-6-sol/high`, điều phối trực tiếp `/root`.
 - Book `01-yuukibui-b12c61270c7b`, 138 physical pages; nguồn tương đối từ `kaiwa_skill/`: `book/BJT/01.日本語でビジネス会話 中級編 ー本文冊 YUUKIBUI.pdf`; SHA-256 nguồn `b12c61270c7b14d537a3782e61da6898fff8466fae361b50de717087199afc0a`.
