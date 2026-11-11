@@ -48,11 +48,13 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―](<初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―/book.md>) — 227 trang/25 chương/172 unit; tác giả rà toàn PDF, root QA33 trang mẫu. [Giới hạn QA và nguồn](<初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―/_meta/coordinator-review.md>).
 
+- [どんどん話せる！日本語会話フレーズ大特訓 必須700](<どんどん話せる！日本語会話フレーズ大特訓 必須700/book.md>) — 208 trang/8 chương/110 unit; tác giả rà toàn PDF, root QA26 trang mẫu. [Giới hạn QA và nguồn](<どんどん話せる！日本語会話フレーズ大特訓 必須700/_meta/coordinator-review.md>).
+
 ## Đang clean
 
 - **すぐに使える 日本語会話 超ミニフレーズ200** — full scope225 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 - **上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―** — full scope198 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
-- **どんどん話せる！日本語会話フレーズ大特訓 必須700** — full scope208 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+- **気持ちが伝わる 日本語会話 基本表現180** — full scope209 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 

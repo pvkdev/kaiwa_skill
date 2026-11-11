@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T14:55:39.042904+00:00",
+  "updated_at_utc": "2026-11-11T15:59:12.190711+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -22,8 +22,8 @@
       "title": "すぐに使える 日本語会話 超ミニフレーズ200",
       "scope_pdf_pages": 225,
       "latest_checkpoint_counts": {
-        "author_checked": 98,
-        "pending": 127
+        "author_checked": 195,
+        "pending": 30
       }
     },
     {
@@ -35,22 +35,21 @@
       "title": "上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
       "scope_pdf_pages": 198,
       "latest_checkpoint_counts": {
-        "author_checked": 30,
-        "pending": 168
+        "author_checked": 142,
+        "pending": 56
       }
     },
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
       "stage": "full_pdf_direct_active",
-      "book_id": "700-essential-phrases-for-japanese-conversation-4863922-16d0299e765d",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/700-essential-phrases-for-japanese-conversation-4863922159-9784863922150_compress del intro.pdf",
-      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
-      "scope_pdf_pages": 208,
+      "book_id": "japanese-conversation-conveying-feelings-180-basic-expr-06bbcf5b4324",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/japanese-conversation-conveying-feelings-180-basic-expressions-9784863922600_compress.pdf",
+      "title": "気持ちが伝わる 日本語会話 基本表現180",
+      "scope_pdf_pages": 209,
       "latest_checkpoint_counts": {
-        "author_checked": 52,
-        "needs_review": 1,
-        "pending": 155
+        "pending": 196,
+        "author_checked": 13
       }
     }
   ],
@@ -384,11 +383,12 @@
       "source_sha256": "16d0299e765d8fdd3891a72d5a1d113de67d4cbde531ffa65dbeeaf0c6b69c5b",
       "page_count": 208,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_chu",
+      "owner": "root",
       "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
-      "knowledge_dir": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700"
+      "knowledge_dir": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "knowledge_commit": "836c853"
     },
     {
       "book_id": "conversational-customer-service-japanese-intensive-trai-2ec8b7129cb8",
@@ -409,8 +409,11 @@
       "source_sha256": "06bbcf5b4324d8ec1fc925f698d48e451e357c35947d4d444bf6a55450c5584b",
       "page_count": 209,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_chu",
+      "title": "気持ちが伝わる 日本語会話 基本表現180",
+      "knowledge_dir": "kaiwa_skill/knowledge/気持ちが伝わる 日本語会話 基本表現180"
     },
     {
       "book_id": "85-21a2cb6f3fef",
@@ -781,6 +784,11 @@
       "book_dir": "kaiwa_skill/knowledge/初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
       "commit": "09c08fc",
       "coordinator_review": "author full; root33 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "commit": "836c853",
+      "coordinator_review": "author full; root26 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -1252,12 +1260,12 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 60,
-        "pending": 165
+        "author_checked": 191,
+        "pending": 34
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 3,
-        "pending": 10
+        "author_checked": 10,
+        "pending": 3
       }
     },
     {
@@ -1268,17 +1276,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 208,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 12,
-        "needs_review": 1,
-        "pending": 195
+        "author_checked": 206,
+        "needs_review": 2
       },
       "chapter_checkpoint_counts": {
-        "needs_review": 1,
-        "pending": 7
-      }
+        "needs_review": 2,
+        "author_checked": 6
+      },
+      "knowledge_commit": "836c853"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
@@ -1291,10 +1299,29 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 198
+        "author_checked": 130,
+        "pending": 68
       },
       "chapter_checkpoint_counts": {
-        "pending": 17
+        "author_checked": 11,
+        "pending": 6
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/気持ちが伝わる 日本語会話 基本表現180",
+      "title": "気持ちが伝わる 日本語会話 基本表現180",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/japanese-conversation-conveying-feelings-180-basic-expressions-9784863922600_compress.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 209,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 209
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 24
       }
     }
   ],
@@ -1315,9 +1342,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 24,
-  "completed_full_source_pages": 3304,
-  "completion_count_definition": "24 released supplied-PDF scopes/3304 pages: initial7 independently reviewed in full; later17 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 25,
+  "completed_full_source_pages": 3512,
+  "completion_count_definition": "25 released supplied-PDF scopes/3512 pages: initial7 independently reviewed in full; later18 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",

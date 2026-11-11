@@ -15,3 +15,11 @@ Root đọc lại các sửa15–20: chiềuđộkhó,2×90phút,oralresponsevà
 Root đã mở đủ23–30 và đọc toànchapter01 (8942ký tự), tổng20trang nguồn. So toàn flow→CD01→2dụngまだまだ/ôtrống→うち/おたく→column→2bộrolecards→caseKanJP–VI/4câuhỏi→On/KanzakiJP–VI. Đủ mạch và nội dung, không tự giải. Có2sửa nhỏ yêu cầu:語学 trong26dịchngoạingữ/ngônngữ thay học vấn; giữdấungoặc（印象的な一言）trênflow24. Đangchờreadback,khôngảnhhưởngscope/chương2đangviết.
 
 Root đọc lại nhãn（印象的な一言）và nghĩa語学→ngônngữ/ngoạingữ: hai sửa khớp nguồn24/26 đã mở; hếtpendingQAởbài1.
+
+Root đọc lại flowbài1 sau refreshgầnnhất: còn đúng chuỗinhãn,vai,nghĩa; hai câuprocess-noteđãđưara khỏi phần học,khôngmất dữkiệnflow.
+
+Root mở đủ79–88, tổng30trang nguồn (thêm10trangbài6). Đọc toànchapter06,so fullmodelCD08,flow,cácdụng/ôtrống,25thànhngữ,column,4rolecards/bảnghàng,caseChō/3câuhỏi và2ITrolecards. Mọi loại nội dung đầyđủ. Đãyêucầusửa flowmấtnhãnNhật/bỏchỉdẫntựthêm,nghĩachung本当ですか,はずsắctháitin/nhớđãlàm,事務的xinlỗimáymóc/chiếulệ,headerbảngViệt+datatranslationthayJPtựđặt. Writerbáođãsửa/refreshvàràflow2–5,rootđangchờreadbackcảlô;32/44/46writerkiểm,rootchưamở.
+
+PháthiệnfidelityNhậtsaukhimởcrop88:source修復しましたbịviếtthành復旧しました,đãyêucầuphụchồi. Crop87cóngoặctríchlồngđầucâugiảithíchご注文...;bảnviếtmấtdấungoặcmởngoài/kiểungoặc,đãyêucầuđốichiếu. CasedàivàVIgiữđủý,nhưngđãnhắcwriter ràchữNhậtcáccaseđãviếtbằngảnh,khôngđổitừđồngnghĩachodễđọc. Đangchờsửa/readback,khôngnângnghiệmthuBài6trướckhisửaxong.
+
+Writer đã mở lại các case41/54/67/77/87/97, sửa thêm97 từ1時間頃thànhsource1時頃vàVItheongữcảnh; phạmvi này làauthoraudit,rootchưamởcáctrangấyngoài87. Root đọc lại cảlôBài6:flowvàvaiNhật–Việt,本当nghĩachung,はずsắctháitinđãlàm,謝罪máymóc,bảngdatavàViệt,ngoặclồng87và修復88đúngsourceđãmở. Các phát hiệnBài6đãgiảiquyết;root30nguồnbao2bài1/6trọnnguồnvàfrontmẫu,khôngnângcả198trang.
