@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T14:04:42.584174+00:00",
+  "updated_at_utc": "2026-11-11T14:37:05.659196+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -25,20 +25,20 @@
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
-      "stage": "full_pdf_direct_active",
-      "book_id": "remake-5779739d0a4b",
-      "source_pdf": "kaiwa_skill/book/BJT/ロールプレイで学ぶビジネス日本語 - 初中級レベル－場面に合わせて適切に話そう－ [Remake].pdf",
-      "title": "初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
-      "scope_pdf_pages": 227
+      "stage": "full_pdf_direct_initializing",
+      "book_id": "remake-ad312498c548",
+      "source_pdf": "kaiwa_skill/book/BJT/上級レベル グローバル企業でのキャリア構築をめざして [Remake].pdf",
+      "title": "上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
+      "scope_pdf_pages": 198
     },
     {
       "role": "worker_3",
       "worker": "/root/clean_namachuukei_chu",
       "stage": "full_pdf_direct_active",
-      "book_id": "conversational-customer-service-japanese-intensive-trai-2ec8b7129cb8",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/conversational-customer-service-japanese-intensive-training-for-immediate-use-700-set-phrases-9784863923126_compress.pdf",
-      "title": "すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
-      "scope_pdf_pages": 225
+      "book_id": "700-essential-phrases-for-japanese-conversation-4863922-16d0299e765d",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/700-essential-phrases-for-japanese-conversation-4863922159-9784863922150_compress del intro.pdf",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "scope_pdf_pages": 208
     }
   ],
   "source_queue": [
@@ -235,11 +235,12 @@
       "source_sha256": "5779739d0a4b7f03ce3763c7f42679347991902f957d017b665f91b4ffec8496",
       "page_count": 227,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_sho",
+      "owner": "root",
       "title": "初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
-      "knowledge_dir": "kaiwa_skill/knowledge/初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―"
+      "knowledge_dir": "kaiwa_skill/knowledge/初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
+      "knowledge_commit": "09c08fc"
     },
     {
       "book_id": "remake-ad312498c548",
@@ -247,8 +248,11 @@
       "source_sha256": "ad312498c548a75a6493409ae20bb33e8ed6d2bd67ca0d81bb713de625033cfb",
       "page_count": 198,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_initializing",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_sho",
+      "title": "上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―",
+      "knowledge_dir": "kaiwa_skill/knowledge/上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―"
     },
     {
       "book_id": "125-extended-patterns-for-japanese-conversation-4863922-95f1ac587f24",
@@ -367,8 +371,11 @@
       "source_sha256": "16d0299e765d8fdd3891a72d5a1d113de67d4cbde531ffa65dbeeaf0c6b69c5b",
       "page_count": 208,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_chu",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "knowledge_dir": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700"
     },
     {
       "book_id": "conversational-customer-service-japanese-intensive-trai-2ec8b7129cb8",
@@ -376,11 +383,12 @@
       "source_sha256": "2ec8b7129cb8dff63a414edaef504898954b77762512c2eaa29bfea42e36ef2a",
       "page_count": 225,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
-      "owner": "/root/clean_namachuukei_chu",
+      "owner": "root",
       "title": "すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
-      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700"
+      "knowledge_dir": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "knowledge_commit": "ae73d29"
     },
     {
       "book_id": "japanese-conversation-conveying-feelings-180-basic-expr-06bbcf5b4324",
@@ -750,6 +758,16 @@
       "book_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話お決まり表現180",
       "commit": "ffae3af",
       "coordinator_review": "author full; root24 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "commit": "ae73d29",
+      "coordinator_review": "author full; root18 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―",
+      "commit": "09c08fc",
+      "coordinator_review": "author full; root33 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -1180,16 +1198,15 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 227,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 171,
-        "pending": 56
+        "author_checked": 227
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 18,
-        "pending": 7
-      }
+        "author_checked": 25
+      },
+      "knowledge_commit": "09c08fc"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
@@ -1199,18 +1216,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 225,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issues",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 149,
-        "needs_review": 1,
-        "pending": 75
+        "author_checked": 223,
+        "needs_review": 2
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 4,
-        "needs_review": 1,
-        "pending": 7
-      }
+        "author_checked": 11,
+        "needs_review": 1
+      },
+      "knowledge_commit": "ae73d29"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200",
@@ -1223,10 +1239,29 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "pending": 225
+        "author_checked": 48,
+        "pending": 177
       },
       "chapter_checkpoint_counts": {
-        "pending": 13
+        "author_checked": 3,
+        "pending": 10
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/700-essential-phrases-for-japanese-conversation-4863922159-9784863922150_compress del intro.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 208,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 208
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 8
       }
     }
   ],
@@ -1247,9 +1282,9 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 22,
-  "completed_full_source_pages": 2852,
-  "completion_count_definition": "22 released supplied-PDF scopes/2852 pages: initial7 independently reviewed in full; later15 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
+  "completed_full_books": 24,
+  "completed_full_source_pages": 3304,
+  "completion_count_definition": "24 released supplied-PDF scopes/3304 pages: initial7 independently reviewed in full; later17 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content.",
   "replaced_interrupted_workers": [
     {
       "old_worker": "/root/medium_okimari180",

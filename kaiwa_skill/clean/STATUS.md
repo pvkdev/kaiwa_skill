@@ -1,19 +1,20 @@
 # Clean hàng loạt — đang điều phối
 
-Đã chốt **22/30 bản đọc**, bao phủ **2.852/4.597 trang PDF đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi; mười lăm bản sau tác giả rà toàn nguồn và root QA mẫu. [Bản đọc và hồ sơ](../knowledge/README.md).
+Đã chốt **24/30 bản đọc**, bao phủ **3.304/4.597 trang PDF đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi; mười bảy bản sau writer rà toàn nguồn và root QA mẫu. [Bản đọc và hồ sơ](../knowledge/README.md).
 
-Bản vừa chốt: **日本人がよく使う 日本語会話お決まり表現180**, 209 trang/31 chương/200 unit, commit ffae3af. Có180 biểu thức,50 cột từ,218 khóa English và180 mục Japanese. Root mở24 trang, so toàn English index và khôi phục6 khóa OCR bỏ; validate0 lỗi/4 cảnh báo cùng hai bất nhất vai nguồn53/168. Có90 mã track/91 lần xuất hiện vì mẫu guide lặp CD6; số đĩa chưa xác nhận, file chưa kiểm.
+Hai bản vừa chốt:
 
-Hai bản trước: **Shadowing trung–cao bản Indonesia–Thai–Việt**,168 trang (0feafae),232 thoại ngắn+8 phần dài,root36 trang,sourceissue vai70,validate0/2; **Business30 giờ**,181 trang (62fd98b),15 chương/171unit,root40 trang,strictvalidate0/0. Các bản có đủ phần hậu sách, script/đáp án/tập từ theo sách và inventory nghe. 5500 câu đã chốt trước đó vẫn còn66 vấn đề nguồn tại60 trang, xem cảnh báo trong bản đọc.
+- **Roleplay thương mại sơ–trung**:227 trang/25 chương/172 unit, commit09c08fc. Root33 trang mẫu; strictvalidate0 lỗi/0 cảnh báo. Có226 khóa chỉ mục,14script/42câu hỏi; giữ đáp án ở cuối. Nguồn223–224 lặp221–222 được ghi coverage, không in lặp. Audio34nhãn01–34,14script refs, URL web; số đĩa chưa xác nhận, file chưa kiểm.
+- **接客700**:225 trang/12 chương/127 unit, commitae73d29. Root18 trang mẫu; validate0 lỗi/4 cảnh báo cùng bất nhất icon vai nguồn178–179. Có92bài luyện,723prompt và723mẫu Nhật tương ứng. Giữ gloss 身 và cách đọc私わたし→わたくし sau QA. HaiCD/92cặp đĩa-track, file chưa kiểm.
 
 Ba worker **gpt-6-sol/high** đang tiếp:
 
-- **すぐに使える 日本語会話 超ミニフレーズ200** —225 trang,13 chương,front1–14 đã checked; tiếp chương học đầu. Root mới kiểm bìa/colophon3 trang.
-- **接客日本語会話大特訓［英語版］決まり文句700** —225 trang,12 chương; đã qua176 trang. Root11 ảnh mẫu,giữ prompt luyện nói và ô tự đánh dấu trước câu Nhật. Chênh gloss từ ở98 còn được đánh dấu; mốc apparel99 đã giải quyết theo6Unit thực.
-- **Roleplay thương mại sơ–trung** —227 trang,25 chương; đã xong14 bài chính qua181. Root22 ảnh mẫu,so trọn bài1 và các kiểu hướng dẫn/sơ đồ. Ranh giới chương được sửa theo ảnh thực và ghi history,không ép theo preflight.
+- **超ミニフレーズ200**:full225 trang/13 chương. Đã qua36 trang/21mục học. Root15ảnh mẫu, so hướng dẫn và các mục1/2/3/5/6/8/13; các thoại/Words/POINT phù hợp. Bài146 về đuôi câu và các phần tra cuối phải giữ.
+- **必須700**:full208 trang/8 chương, đã init. Bài theo prompt và mẫu nhưng cấu trúc riêng5Part + bảngtra70câu cuối. PDF2 bắt đầu ở cuối Introduction in3, thiếu trang in2 theoTOC; giữ phần có thật và source-issue hẹp, không dựng. Colophon207 in平成30年（2019年）mâu thuẫn, không tự chọn một năm. Root mới3ảnh preflight.
+- **Roleplay thương mại cao cấp**:full198 trang, đang preflight/init theo cấu trúc thật. Root mới1/197/198; hai trang cuối vẫn là học liệu, không loại như footer.
 
-Còn **5 PDF chưa giao**. Runtime4 active tính root nên sub điều phối idle trong lúc3 worker viết. Các bản đang dở chưa được tính nghiệm thu.
+Còn **3 PDF chưa giao**:210phát triển233trang,180cảm xúc209trang,180onomatopoeia220trang. Runtime4 active tính root nên sub điều phối idle trong lúc3 worker viết. Bản đang dở chưa tính nghiệm thu.
 
-Công cụ0.4.10:80 test fork+17 direct PASS. Regression18 bản trước0 lỗi/33 cảnh báo; các bản mới được root validate riêng. Skill đã bổ sung giữ mảnh đáp án theo ngữ cảnh,không thêm manh mối vào lựa chọn và không bỏ khóa tra do OCR số trang hỏng. Validator không chứng minh đúng nghĩa hoặc đủ kiến thức.
+Công cụ0.4.10:80test fork+17direct PASS. Regression18 bản trước0 lỗi/33 cảnh báo; sáu bản mới được root validate riêng. Skill giữ mảnh đáp án theo ngữ cảnh, không thêm manh mối vào lựa chọn, không bỏ khóa tra do OCR số trang hỏng. Validator không chứng minh đúng nghĩa hoặc đủ học liệu. 5500câu vẫn còn66 vấn đề nguồn tại60trang; không gọi toàn bộ Nhật đã sạch hoàn hảo.
 
-[CD,băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) tách thông tin in trong sách khỏi file thực tế; chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) giữ hàng đợi; [HANDOFF](HANDOFF.md) để tiếp quản. Checkpoint giúp nối sau gián đoạn; không có daemon khi đóng ứng dụng. Lượt điều phối còn tiếp tục.
+[CD,băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) tách thông tin in khỏi file thực tế; chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) giữ hàng đợi; [HANDOFF](HANDOFF.md) để tiếp quản. Checkpoint giúp nối sau gián đoạn; không có daemon khi đóng ứng dụng. Lượt điều phối còn tiếp tục.
