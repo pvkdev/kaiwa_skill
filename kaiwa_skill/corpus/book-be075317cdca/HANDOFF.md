@@ -3,9 +3,9 @@
 - Nguồn: `kaiwa_skill/book/Shadowing/シャドウイング 日本語を話そう初_中級.pdf`
 - SHA-256 nguồn: `be075317cdcab1bad0245126bf7c4fe9bb066fcb714bc19aa841f5373b612869`
 - Book ID: `book-be075317cdca`; 145 trang vật lý.
-- Worker lượt này: `production_book_13_root_cont2`; claim `production_book_13_root_cont2_20261111` đã release sau checkpoint.
-- Checkpoint sau p0116: **56 verified, 60 needs_review, 29 pending (p0117–p0145), 0 rendered, 0 draft, 0 invalid**. Trang tiếp theo là **p0117** (Unit 5 section 3, phần tiếp theo tiếng Nhật). Mỗi p0088–p0116 đã render, mở toàn trang, crop chữ/ruby nhỏ, record và checkpoint.
-- `reconcile` và `build` thành công sau p0116. `book.md`, `search.jsonl`, `build.json` phản ánh 56 trang verified; `book_sha256: 3d8f2a92bef60bc0340734de193ab6bc51ea526b9f89e9e9dfb22edbcffc5e06`, `search_sha256: 38443f2bdcd10974c01d096db2b6420c875892b8c4b752b2dace900b9f50d7eb`. `transcription_complete: false`, `acceptance: coordinator_review_required`.
+- Worker lượt này: `production_book_13_root_cont3`; claim `production_book_13_root_cont3_20261111` đã release sau checkpoint.
+- Checkpoint sau p0145: **66 verified, 79 needs_review, 0 pending, 0 rendered, 0 draft, 0 invalid**. p0117–p0145 đều đã mở ảnh trang gốc, chép nội dung và checkpoint. Các trang Nhật p0117, p0119, p0121, p0123, p0125, p0127, p0129, p0131, p0133 và trang trắng p0140 verified; các trang dịch, giải thích đa ngữ, colophon và quảng cáo cuối sách giữ needs_review theo issue.
+- `reconcile` và `build` thành công sau p0145. `book.md`, `search.jsonl`, `build.json` phản ánh **66 trang verified**; `book_sha256: 6b98ebf459e49c959199d9b4005304695cc9b3b98af8ac5fd72e217c6687f79f`, `search_sha256: 14e38763156a2ff2b161765c539b895573d666226900293d942e984e4d7fc20c`. `transcription_complete: false`, `acceptance: coordinator_review_required`.
 
 ## Cách làm và trạng thái review
 
@@ -21,4 +21,11 @@ Các trang `needs_review`: p0008, p0012, p0015–p0018, p0020, p0024 và các tr
 
 ## Tiếp tục
 
-Claim mới, kiểm hash nguồn, mở p0117 trước khi record; tiếp tục từng trang đến p0145. Sau đó xử lý `needs_review` theo issue cụ thể, reconcile/build, rồi coordinator QA/acceptance. Không sửa `ROOT_AUDIT.json`, nguồn PDF, tools hoặc Git trong vai worker. Khi handoff, root đang giữ QA/Git và có thể tạo worker mới sau khi claim hiện tại release.
+Các trang vật lý đều đã có bản chép. Tiếp theo xử lý `needs_review` theo issue cụ thể, nhất là người đọc tiếng Thái đối chiếu ký tự và second-pass quảng cáo chữ nhỏ; rồi coordinator QA/acceptance. Không sửa `ROOT_AUDIT.json`, nguồn PDF, tools hoặc Git trong vai worker. Root giữ QA/Git và có thể tạo worker mới sau khi claim hiện tại release.
+
+## Lượt p0117–p0145
+
+- Trang Nhật p0117–p0133 số lẻ được mở toàn ảnh và crop độ phân giải cao, đối chiếu ruby đúng **lần xuất hiện/đoạn chữ**. Trang dịch số chẵn p0118–p0134 đã chép đủ các cột Indonesia/Thai/Việt đọc được từ ảnh; chưa chứng thực exact Thai, nên vẫn `needs_review`.
+- p0135–p0137 là giải thích đa ngữ 1–16; chép theo từng ô và giữ `needs_review` vì Thai. p0138 là Column 3 phỏng vấn người học, bốn khối ngôn ngữ với Q, bốn bong bóng và kết luận; đoạn tiếng Việt cuối **lặp nguyên câu thứ nhất trong nguồn**, đã giữ. p0139 là tác giả/ấn bản, tên người dịch bằng Thai cần người đọc bản ngữ; p0140 là trang trắng đã verified.
+- p0141–p0145 là quảng cáo sách của nhà xuất bản, bản chép gồm tiêu đề, tên tác giả, giá, ISBN, mô tả, các ô/nhãn và thông tin hình bìa đọc được. Chữ trên bìa và chi tiết in cực nhỏ cần second-pass; `needs_review` là để chỉ rõ phần chưa chứng thực. p0143 có dãy ISBN ở mục 「ストーリーで覚える漢字 II 301-500」 nhìn lặp với mục 「漢字300」 trong nguồn; không tự sửa theo sách khác. p0144 topic list có glyph nhỏ 機会/機械 cần xem lại crop.
+- Không lấy OCR làm chứng cứ; `manifest.json` giữ issue cụ thể từng trang. Không có pending/draft/invalid, nhưng chưa đạt acceptance vì 79 trang needs_review.
