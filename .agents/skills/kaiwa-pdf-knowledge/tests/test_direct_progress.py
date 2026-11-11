@@ -164,6 +164,32 @@ class DirectProgressTest(unittest.TestCase):
         audio["actual_files"][0]["sha256"] = direct.sha(asset)
         self.assertEqual(direct.audio_errors(audio, meta, self.rows, self.book), [])
 
+    def test_scope_extension_retains_checkpoint_and_records_history(self):
+        self.check_all()
+        before = direct.read(self.book / "_meta/direct-state.json")
+        output = direct.extend_scope(self.repo, self.book, [1, 2, 3],
+                                     self.chapters + ["chapters/03.md"], "full",
+                                     "Pilot accepted; full book authorized by coordinator.")
+        after = direct.read(self.book / "_meta/direct-state.json")
+        self.assertEqual(after["pages"]["1"], before["pages"]["1"])
+        self.assertEqual(after["chapters"][self.chapters[0]],
+                         before["chapters"][self.chapters[0]])
+        self.assertEqual(after["pages"]["3"]["status"], "pending")
+        self.assertEqual(direct.read(self.book / output["history"])["state_before"], before)
+        progress = direct.resume(self.repo, self.book)
+        self.assertEqual(progress["chapters"]["completed"], self.chapters)
+        self.assertEqual(progress["pages"]["pending"], [3])
+
+    def test_scope_extension_cannot_drop_or_recertify_old_content(self):
+        self.check_all()
+        with self.assertRaisesRegex(ValueError, "additive"):
+            direct.extend_scope(self.repo, self.book, [2, 3], self.chapters,
+                                "partial", "Wrongly drops old page.")
+        (self.book / self.chapters[0]).write_text("Changed after review", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "stale"):
+            direct.extend_scope(self.repo, self.book, [1, 2, 3], self.chapters,
+                                "full", "Cannot erase stale evidence.")
+
 
 if __name__ == "__main__":
     unittest.main()

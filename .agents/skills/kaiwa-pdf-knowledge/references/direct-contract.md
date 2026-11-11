@@ -17,6 +17,8 @@ py .agents/skills/kaiwa-pdf-knowledge/scripts/direct_progress.py validate "kaiwa
 
 ## Nguồn và trang
 
+Khi coordinator giao mở rộng pilot sang full **cùng sách**, không init lại, sao chép thư mục tên khác hoặc sửa hash/scope bằng tay. Dùng `extend-scope <book_dir> --repo-root . --pages "1-N" --chapters "<toàn bộ thứ tự chapter, gồm chapter cũ>" --status full --note "<scope mới đã được giao>"`. Lệnh chỉ thêm trang/chapter, giữ thứ tự tương đối chapter cũ và checkpoint còn hợp lệ, lưu metadata/state cũ trong `_meta/scope-history/`. Trang mới luôn pending, kể cả trước đó đã được xem riêng cho CD. Chapter sửa nội dung sau mở rộng vẫn stale bình thường. Build cũ mất hiệu lực; báo cáo pilot trước đó chỉ là chứng cứ lịch sử của phạm vi và hash cũ. Mở rộng không có nghĩa đã hoàn thành full.
+
 `_meta/book.json` có `schema_version: 1`, `title` thật, `status: pilot_partial|partial|full`, `source: {"mode":"pdf_direct"}`, `source_pdf: {"path":"...", "sha256":"..."}`, `pdf_page_count`, `scope: {"pdf_pages":[...], "chapters":[...]}`. `full` bắt buộc chứa toàn bộ trang PDF 1..N. Pilot chỉ xác nhận đúng các trang được nêu, không ngầm nhận đã bao phủ sách.
 
 Mỗi trang trong scope có `_meta/pdf-pages/pNNNN.json`:

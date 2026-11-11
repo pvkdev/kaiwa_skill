@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.2 — 2026-11-11
+
+- Thêm `extend-scope` cho pilot cùng sách: chỉ mở rộng trang/chapter, lưu scope-history và giữ checkpoint còn hợp lệ; trang mới pending, không chứng nhận lại phần stale hoặc xóa dấu vết pilot.
+- 10 test PDF-direct đạt, gồm giữ checkpoint cũ khi mở rộng và từ chối dùng đổi scope để che nội dung đã sửa.
+
 ## 0.4.1 — 2026-11-11
 
 - Sửa skill theo lỗi pilot thật: mọi câu/lượt Nhật đã in trong bài tập phải có bản Việt, không thay bằng tóm tắt; giữ ô trống và phần đáp án tách riêng.

@@ -142,6 +142,58 @@ def init(repo: Path, book: Path, source_path: str, title: str, pages: list[int],
             "scope_pages": len(pages), "chapters": chapters}
 
 
+def extend_scope(repo: Path, book: Path, pages: list[int], chapters: list[str],
+                 status: str, note: str) -> dict:
+    """Audited additive scope change; existing content/checkpoints stay untouched."""
+    meta, pdf = meta_and_pdf(repo, book)
+    progress = resume(repo, book)
+    if progress["blocked"] or progress["pages"]["stale"] or progress["chapters"]["stale"]:
+        raise ValueError("Resolve stale source/content before extending scope")
+    old_scope = meta["scope"]
+    if (not note.strip() or not pages or pages != sorted(set(pages)) or
+            not set(old_scope["pdf_pages"]).issubset(pages) or
+            pages[-1] > pdf_page_count(pdf)):
+        raise ValueError("Scope extension needs a note and an additive valid page scope")
+    if status == "full" and pages != list(range(1, meta["pdf_page_count"] + 1)):
+        raise ValueError("Full scope must cover every physical PDF page")
+    if (not chapters or len(chapters) != len(set(chapters)) or
+            any(not c.startswith("chapters/") or not c.endswith(".md") or
+                inside(book, c).suffix.lower() != ".md" for c in chapters) or
+            [c for c in chapters if c in old_scope["chapters"]] != old_scope["chapters"]):
+        raise ValueError("Preserve existing chapters and their relative order")
+    new_scope = {"pdf_pages": pages, "chapters": chapters}
+    if new_scope == old_scope:
+        raise ValueError("Scope extension adds no pages or chapters")
+    state_path = book / "_meta/direct-state.json"
+    audio_path = book / "_meta/audio.json"
+    state, audio = read(state_path), read(audio_path)
+    stamp = now()
+    history_path = book / "_meta/scope-history" / f"{uuid.uuid4().hex}.json"
+    write(history_path, {"changed_at": stamp, "note": note, "book_before": meta,
+                         "state_before": state, "audio_before": audio,
+                         "scope_after": new_scope,
+                         "new_scope_is_not_completion": True})
+    # No existing checkpoint or source identity is re-certified by extension.
+    state["scope"] = new_scope
+    for page in pages:
+        state["pages"].setdefault(str(page), {"status": "pending"})
+    for chapter in chapters:
+        state["chapters"].setdefault(chapter, {"status": "pending"})
+    state["last_scope_extension"] = {"changed_at": stamp, "note": note,
+                                    "history": history_path.relative_to(book).as_posix()}
+    meta["scope"], meta["status"] = new_scope, status
+    audio["supplemental_evidence_pages"] = [
+        p for p in audio.get("supplemental_evidence_pages", []) if p not in pages]
+    # Readers must build again; old pilot output/review remain historical evidence.
+    meta.pop("build", None)
+    write(book / "_meta/book.json", meta)
+    write(audio_path, audio)
+    write(state_path, state)
+    return {"status": "scope_extended_not_completed", "scope": new_scope,
+            "history": history_path.relative_to(book).as_posix(),
+            "next_action": "resume; process pending pages/chapters; rebuild and validate"}
+
+
 def units(book: Path) -> list[dict]:
     path = book / "_meta/units.jsonl"
     return [json.loads(line) for line in path.read_text(encoding="utf-8-sig").splitlines()
@@ -546,7 +598,7 @@ def validate(repo: Path, book: Path, allow_draft: bool = False) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
-    for name in ("init", "checkpoint", "resume", "build", "validate"):
+    for name in ("init", "extend-scope", "checkpoint", "resume", "build", "validate"):
         cmd = sub.add_parser(name)
         cmd.add_argument("book_dir", type=Path)
         cmd.add_argument("--repo-root", type=Path, required=True)
@@ -562,6 +614,11 @@ def main() -> int:
             target.add_argument("--chapter")
             cmd.add_argument("--status", choices=STATUSES, required=True)
             cmd.add_argument("--note", default="")
+        if name == "extend-scope":
+            cmd.add_argument("--pages", required=True)
+            cmd.add_argument("--chapters", required=True)
+            cmd.add_argument("--status", choices=("partial", "full"), required=True)
+            cmd.add_argument("--note", required=True)
         if name == "validate":
             cmd.add_argument("--allow-draft", action="store_true")
     args = parser.parse_args()
@@ -572,6 +629,10 @@ def main() -> int:
         if args.command == "init":
             output = init(repo, book, args.source_pdf, args.title, pages_arg(args.pages),
                           [x.strip() for x in args.chapters.split(",")], args.status)
+        elif args.command == "extend-scope":
+            output = extend_scope(repo, book, pages_arg(args.pages),
+                                  [x.strip() for x in args.chapters.split(",")],
+                                  args.status, args.note)
         elif args.command == "checkpoint":
             output = checkpoint(repo, book, args.page, args.chapter, args.status, args.note)
         elif args.command == "resume":
