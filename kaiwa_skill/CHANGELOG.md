@@ -2,6 +2,7 @@
 
 ## 0.4.5 — 2026-11-11
 
+- QA mở rộng bổ sung quy tắc giữ quan hệ sơ đồ đủ để tự làm bài, giữ kana của ví dụ/tên đúng nguồn và kiểm sắc thái thời/thể; áp dụng cho cả raw-clean và direct qua contract kế thừa.
 - Resume direct ưu tiên phần pending/draft/stale trước vấn đề nguồn đã biết, tránh quay mãi một trang bị che trong khi phần sau chưa làm.
 - Scan raw-fork nhận diện bản đã pin snapshot bằng nguồn gốc trong ledger, và bỏ qua ledger lịch sử inactive của sách đã chuyển PDF-direct; tránh giao lại sách đã clean.
 - Pilot88 đã chuyển provenance có history, giữ nguyên byte4chapter/9unit nội dung và toàn bộ nguồn/ledger/review cũ; vấn đề công thức PDF9 vẫn needs_review. Chưa mở full96trang.
