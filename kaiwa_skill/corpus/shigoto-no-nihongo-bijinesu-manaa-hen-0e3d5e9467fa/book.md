@@ -4192,3 +4192,1115 @@ Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 �
 
 第2問　3　→　⑤ エレベーター　参照
 
+## PDF page 93
+
+<a id="p0093"></a>
+
+- Trang in: 91
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 14 / 席次
+
+## どこに座る（立つ）のが正しいでしょう？クイズ！
+
+a. イラストを見て、上座から順番に1、2、3……と、席次を書いてみましょう。1がいちばん偉い人が座る席、というふうになります。誰がどこに座る（立つ）といいか、考えてみてください。
+
+## ① 応接室
+
+Mô tả hình bài tập (biên tập): Hai sơ đồ phòng nhìn từ trên xuống, ký hiệu （1） và （2）; mỗi phòng có cửa ra vào ở cạnh dưới, cửa sổ ở cạnh trên, tranh ở tường phải và một vật hình chữ nhật nhỏ cạnh cửa. Mỗi vị trí ngồi nối bằng đường thẳng tới một ô □ để điền số. （1）: bàn dài đặt dọc ở giữa, hai ghế đơn ở bên trái (ghế phía trên □, ghế phía dưới □), sofa ba chỗ ở bên phải (từ trên xuống □／□／□). （2）: bàn dài đặt ngang ở giữa, sofa ba chỗ ở phía trên, sát cửa sổ (từ trái sang phải □／□／□); hai ghế đơn ở phía dưới, gần cửa ra vào (từ trái sang phải □／□). Các ô đều để trống, không có đáp án in trên trang.
+
+## 問題
+
+b. 部屋に置いてあるソファの並び方が違うと、席次はどう変わるでしょう？　それも考えて、□の中に順番に数字を書いてみてください。
+
+<a id="p0093-b002"></a>
+
+## 中文 (biên tập)
+
+a. 请你看着插图按顺序用阿拉伯数字标出上手、下手座位位置。毫无疑问，坐在1号位置的人身份最高！请你考虑一下，应该怎样给大家安排座位位置呢？
+
+b. 办公室里沙发摆放位置不同，上手、下手位置不同。沙发位置变换以后应该怎样判断上下手位置呢？你能在心里默念出上下手位置的顺序吗？
+
+## English (biên tập)
+
+a. Look at the illustration and write in the numbers for seat ranking, starting with the seat of honor (1). Think about who should sit or stand where.
+
+b. Think about how the seating order changes when the chairs are rearranged. Try filling in the numerical order in the diagram.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 94
+
+<a id="p0094"></a>
+
+- Trang in: 92
+- Đường dẫn nội dung: Unit 14 / 席次 / ② 会議室
+
+## ② 会議室
+
+Mô tả hình bài tập (biên tập): Hai sơ đồ phòng nhìn từ trên xuống, ký hiệu （1） và （2）, cửa ra vào đều ở cạnh dưới về phía phải. Các vị trí chưa có số đều nối bằng đường thẳng đến ô □ để điền; không có đáp án in trên trang. （1）: bàn xếp hình chữ U, mở về phía cửa. Ở cạnh trên có năm chỗ, từ trái sang phải □／□／議長／□／□; cạnh trái dưới góc trên có ba chỗ, từ trên xuống □／□／□; cạnh phải dưới góc trên có ba chỗ, từ trên xuống □／□／□. （2）: bàn dài ở giữa, chỗ đầu bàn phía trên ghi 議長; mỗi bên trái và phải có bốn chỗ dọc theo bàn, từ trên xuống □／□／□／□.
+
+## 問題
+
+c. 最近は、会議室にもいろいろな形がありますが、ルールは同じです。上座はどこでしょうか？　1から順番に数字を書いてみましょう。
+
+<a id="p0094-b002"></a>
+
+## 中文 (biên tập)
+
+c. 最近会议室桌椅沙发常变样。规矩都是一样的，上手位置在哪里呢？请你按顺序用阿拉伯数字把上下手位置写出来。
+
+## English (biên tập)
+
+c. There are all different styles of conference rooms today, but the rules are the same. Where is the seat of honor? Try filling in the numerical order beginning with number 1.
+
+## PDF page 95
+
+<a id="p0095"></a>
+
+- Trang in: 93
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 14 / 席次
+
+## ③ タクシー
+
+Mô tả hình bài tập (biên tập): Xe nhìn từ trên xuống, đầu xe phía trên. Vô lăng và ghế lái ở phía trước bên phải hình; ghế phía trước bên trái hình nối tới ô □. Hàng ghế sau có ba chỗ, từ trái sang phải hình □／□／□, mỗi chỗ nối tới một ô trống. Không có số đáp án.
+
+## ④ 列車
+
+進行方向　↑
+
+Mô tả hình bài tập (biên tập): Hai hàng, mỗi hàng ba ghế, đối diện nhau; cửa sổ ở phía phải mỗi hàng. Mũi tên 進行方向 hướng lên. Hàng phía trên quay mặt xuống, ba chỗ từ trái sang phải □／□／□; hàng phía dưới quay mặt lên cùng chiều mũi tên, từ trái sang phải □／□／□. Mỗi vị trí ghế nối tới một ô trống, không có số đáp án.
+
+## 問題
+
+上座から順番に数字を書いてください。
+
+## ポイント
+
+d. 乗り物も席順に決まりはありますが、人それぞれ好みがありますので、聞いてみるのも一つの方法です。でも一応、基本の席次を知っておくと安心ですね。
+
+<a id="p0095-b002"></a>
+
+## 中文 (biên tập)
+
+d. 交通工具也有上手、下手位置之分，每个人都有自己喜欢坐的位置，最简单的方法就是张口问一问别人想坐哪儿。如果知道上下手位置那当然是最好不过的。
+
+## English (biên tập)
+
+d. There are also rules for seating in vehicles, but people have their individual preferences, so try asking. Of course, it's safest to know the basics.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 96
+
+<a id="p0096"></a>
+
+- Trang in: 94
+- Đường dẫn nội dung: Unit 14 / 席次 / ⑤ エレベーター
+
+## ⑤ エレベーター
+
+Mô tả hình bài tập (biên tập): Thang máy nhìn từ cửa vào có bốn người đứng ở bốn vị trí. Người phía trước bên trái hình đứng cạnh bảng điều khiển hình chữ nhật; phía sau bên trái là người đeo kính; phía trước bên phải là người chắp tay; phía sau bên phải là người mặc bộ đồ có hoa văn. Mỗi người được một mũi tên chỉ tới từ ô □ riêng (trước trái □, sau trái □, trước phải □, sau phải □). Các ô chưa điền số.
+
+## エスカレーターではどっちに立てばいいの？
+
+皆さんの国では、エスカレーターに乗るときはどちらに立ちますか？　日本はなぜか、地域によって立つ位置が変わります。東京方面はエスカレーターの左側に立ち、右側を、急いでいる人が歩けるように空けておきます。でも、大阪方面は、右側に立ち、左側を空けます。東西で分かれているというわけでもなく、九州の福岡などは東京と同じで左側に立ちます。日本の中でもこんな違いがあるなんて、面白いですね。あなたの住んでいる日本の都市では、左側に立ちますか？右側に立ちますか？　エスカレーターに乗るとき、チェックしてみてください。
+
+Mô tả hình (biên tập): Một người ở chân thang cuốn dang hai tay sang hai bên; bóng thoại ghi `!?`.
+
+## 問題
+
+上座から順番に数字を書いてください。
+
+## ポイント
+
+e. エレベーターは、社内、社外いろいろな人が同時に使うので、なかなか思いどおりの位置に乗れることはないかもしれませんが、原則さえ知っていれば応用できますね！
+
+<a id="p0096-b002"></a>
+
+## 中文 (biên tập)
+
+e. 乘电梯的人既有公司内的人也有公司外的人，有时可能找不到一个合适的位置，但只要记住一些约定，你就不会感到为难。
+
+f. 接待室里离门最远的位置是上手座，相反离门最近的位置是下手座，记住了吗？
+
+g. 会议室里主持会议的人在场时，离会议室门口最远、在会议主持人旁边的位置就是上手座。
+
+## English (biên tập)
+
+e. Many people from both inside and outside the company use the elevator at the same time so it might be difficult to secure the place you want, but if you know the rules, you'll be able to apply them.
+
+f. Remember that the seat farthest from the door of the reception room is the seat of honor and the nearest is reserved for the low-est in status.
+
+g. When a chairman is present in the conference room, the seat next to the chairman and farthest from the door is the seat of honor.
+
+Ghi chú nối trang (biên tập): Bản Nhật của f và g xuất hiện trên PDF p0097.
+
+## PDF page 97
+
+<a id="p0097"></a>
+
+- Trang in: 95
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 14 / 席次 / 解答
+
+## 解答
+
+### 1．応接室
+
+Mô tả đáp án hình (biên tập): Hai phòng cùng bố cục như PDF p0093, cửa ra vào ở cạnh dưới, cửa sổ trên, tranh bên phải. （1）: hai ghế đơn bên trái từ trên xuống 4／5; sofa bên phải từ trên xuống 1／2／3. （2）: sofa phía trên từ trái sang phải 3／2／1; hai ghế đơn phía dưới từ trái sang phải 5／4.
+
+f. 応接室では、入り口からいちばん遠い所がいちばん上座、と覚えます。逆に、いちばん下座は入り口にいちばん近い所です。
+
+### 2．会議室
+
+Mô tả đáp án hình (biên tập): Hai phòng cùng bố cục như PDF p0094, cửa ra vào ở cạnh dưới về bên phải. （1）: hàng trên bàn chữ U từ trái sang phải 3／1／議長／2／4; bên trái từ trên xuống, dưới góc trên: 5／7／9; bên phải từ trên xuống, dưới góc trên: 6／8／10. （2）: 議長 ở đầu bàn trên; cặp chỗ trái/phải theo từng hàng từ trên xuống 1／2, 3／4, 5／6, 7／8.
+
+g. 会議室では議長がいる場合は、議長の隣で入り口から遠い所が上座です。
+
+<a id="p0097-b002"></a>
+
+### 3．タクシー
+
+Mô tả đáp án hình (biên tập): Đầu xe ở trên, vô lăng bên phải. Ghế trước bên trái: 4; hàng sau từ trái sang phải hình: 2／3／1.
+
+h. タクシーは、運転手の真後ろが上座。この位置がいちばん安全だといわれています。助手席は下座。料金を支払ったり道順を説明したりと、動きやすい位置ですね。
+
+### 4．列車
+
+進行方向　↑
+
+Mô tả đáp án hình (biên tập): Cửa sổ ở bên phải hai hàng ghế đối diện nhau. Hàng phía trên quay mặt xuống, từ trái sang phải 4／6／2. Hàng phía dưới quay mặt lên cùng chiều mũi tên, từ trái sang phải 3／5／1.
+
+i. 列車は基本的に、進行方向に向いている席が上座です。後は窓際（奥）も上座に当たるので、いちばんの上座は、窓際いちばん奥の進行方向に向いている席、となります。
+
+### 5．エレベーター
+
+Mô tả đáp án hình (biên tập): Bốn người ở cùng vị trí như PDF p0096. Mũi tên số 1 chỉ người đeo kính phía sau bên trái; số 2 chỉ người phía sau bên phải; số 3 chỉ người phía trước bên phải; số 4 chỉ người phía trước bên trái cạnh bảng điều khiển.
+
+j. ドアを開けたり、いろいろな操作をしたりしなければいけないので、下座の人は操作盤の前に立つのが原則です。
+
+<a id="p0097-b003"></a>
+
+## 中文 (biên tập)
+
+h. 出租车上司机的正后方是上手座。因为这个位置最安全。司机助手席是下手座。因为支付公路费、给司机做向导时这个位置活动起来最方便。
+
+i. 乘坐电车时，面向列车前进方向的位置是上手座。靠窗户一侧的位置也是上手座。最好的、最上手的位置是既面向列车前进的方向、又靠近窗户。
+
+j. 必须随时开关车门和做各种操作的位置当然是下手座。下手座位置的人站在操作盘前是理所当然的。
+
+## English (biên tập)
+
+h. In a taxi, the seat right in back of the driver is the seat of honor; it's the safest spot. The passenger seat is for the lowest social rung as it facilitates paying the fare, giving instructions, etc.
+
+i. Generally, in a train the seat facing the direction of motion is the seat of honor. The window seat (inside) is also the seat of honor so the highest-rung seat is the window seat facing the direction of motion.
+
+j. As a rule, the lowest-status person stands in front of the control panel because the door has to be opened or various operations done.
+
+Ghi chú nối trang (biên tập): Bản Trung/Anh của f và g in trên PDF p0096.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 98
+
+<a id="p0098"></a>
+
+- Trang in: 96
+- Đường dẫn nội dung: Unit 15 / 電話応対
+
+## Unit 15 電話応対
+
+あなたの電話の応対で、会社の印象まで決まってしまいます。
+顔が見えないので、十分に注意しましょう。
+
+## 確認クイズ
+
+### 第1問
+
+電話がかかってきたら、どうすればいいでしょう？
+
+1…10コール以内に出る
+
+2…日本語に自信がないので、ほかの人が出るのを待つ
+
+3…3コール以内で出る
+
+### 第2問
+
+内線電話がかかってきたときの対応で、おかしいのはどれでしょう？
+
+1…「はい。営業部です」
+
+2…「おはようございます。ABC産業でございます」
+
+3…「人事課でございます」
+
+### 解答
+
+第1問　3　→　① 電話応対の基本　参照
+
+第2問　2　→　② 外線・内線　参照
+
+<a id="p0098-b002"></a>
+
+## 中文 (biên tập)
+
+a. 为了便于大家使用电话机，电话机周围要保持清洁，电话机旁须有记录用纸。
+
+b. 接电话时，电话铃声鸣响三声内一定要接听。不能马上接听电话时，拿起话机要马上说“让您久等了”。
+
+c. 拿起话机首先要明快地报出公司全称。能否做到这一点将直接影响公司形象。
+
+## English (biên tập)
+
+a. To ensure being able to answer the phone quickly keep the area clean and have a memo pad handy.
+
+b. Try to answer the phone by the third ring. If you can't, tell the caller immediately that you are sorry to have kept him waiting.
+
+c. First, cheerfully and clearly give the company name when an-swering the phone. The caller's impression of the company is influenced by this first encounter.
+
+Ghi chú nối trang (biên tập): Bản Nhật của a–c xuất hiện trên PDF p0099.
+
+## PDF page 99
+
+<a id="p0099"></a>
+
+- Trang in: 97
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 15 / 電話応対 / ① 電話応対の基本
+
+## ① 電話応対の基本
+
+Mô tả chuỗi hình (biên tập): Sáu hình a→b→c→d→e→f, theo hàng trên trái sang phải rồi hàng dưới trái sang phải. a: điện thoại, giấy ghi chú và cốc bút. b: tay nhấc ống nghe, tiếng chuông ghi 「プルル・・・」. c–f: cùng người đàn ông nghe điện thoại; ở e người đó cầm bút ghi vào giấy.
+
+a. 電話がすぐに取れるように、電話の周りはきれいにしておき、そばにはメモ用紙も置いておきましょう。
+
+b. 電話はなるべく3コール以内で出ること。長く取れなかったときは、最初に「お待たせいたしました」と付け加えましょう。
+
+Chữ trong hình c (biên tập): 「はい。ABC商事でございます。」
+
+c. 最初の第一声は、社名などを明るくはっきり言いましょう。これで、会社の印象が、よくなったり悪くなったりするのです。
+
+Chữ trong hình d (biên tập): 「××工業の中村さまですね。いつもお世話になっております。」
+
+d. 相手を確認したら、「お世話になっております」などと、あいさつしましょう。
+
+Chữ trong hình e (biên tập): 「明日の会議予定の変更についてですね？」
+
+e. 本題に入ったら、必ずメモをとりながら聞くように。
+
+Chữ trong hình f (biên tập): 「わたくし、野田と申しますので」
+
+f. 伝言などを受けた場合は、最後に必ず自分の名前を名乗ること。相手から「失礼ですが……」と聞かれた場合も同じです。
+
+<a id="p0099-b002"></a>
+
+## 中文 (biên tập)
+
+d. 听到对方情况后，要说“谢谢关照”、“承蒙关心”。这是起码的礼节。
+
+e. 将寒暄礼后电话中所听事情的要点记录下来。
+
+f. 当对方希望将事情转告给其他人时，接电话人应向对方表示承诺并将自己的名字告诉对方。其他场合听到对方说“对不起……”时，也要马上告诉对方自己是谁。
+
+## English (biên tập)
+
+d. After verifying the caller's identity, say, *osewa ni natte orimasu* (thank you for your continued patronage).
+
+e. Always take notes on the main gist of the message.
+
+f. Always give your own name when you have finished taking the message. Also, give your name if the caller says, *shitsurei desu ga...* (excuse me, but...).
+
+Ghi chú nối trang (biên tập): Bản Trung/Anh của a–c in trên PDF p0098.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 100
+
+<a id="p0100"></a>
+
+- Trang in: 98
+- Đường dẫn nội dung: Unit 15 / 電話応対 / ② 外線・内線
+
+## ② 外線・内線
+
+同じ電話応対でも、外線電話と内線電話では、あいさつや敬語の使い方が違ってきます。
+
+## 第一声
+
+### 外線電話
+
+Chữ trong hình (biên tập): Người phụ nữ cầm ống nghe nói 「××商事でございます」.
+
+g. 外線電話は、外のお客さまからかかってくるわけですから、まずは会社名を名乗りましょう。「×商事営業部でございます」のように、会社名＋部署名、会社によっては会社名＋部署名＋名前を名乗る場合もあります。
+
+### 内線電話
+
+Chữ trong hình (biên tập): Cùng người phụ nữ cầm ống nghe nói 「人事部 採用課です」.
+
+h. 内線電話は主に、社内やグループ会社の人しかかけてきませんので、会社名は必要ありません。部署名、課やグループ名を必ず名乗るようにします。内線番号が細かく分かれているからといって、「はい」や「はい、大野です」など、自宅の電話のような使い方はよくありません。
+
+<a id="p0100-b002"></a>
+
+## 敬語
+
+### 外線電話
+
+Chữ trong hình (biên tập): Người đàn ông cầm ống nghe nói 「いつもお世話になっております。その後はいかがですか？」.
+
+i. 外線電話で話すときは、基本的に、外の人を相手にするわけですから、できるだけ失礼にならないような敬語（尊敬語・謙譲語）を使って話せると、ベストです。
+
+### 内線電話
+
+Chữ trong hình (biên tập): Cùng người đàn ông cầm ống nghe nói 「いつもお世話になります。その後どうですか？」.
+
+j. 内線電話の場合、相手にもよりますが、外線電話よりは敬語に気を使わなくても大丈夫です。「です・ます」などの丁寧語さえ使えれば、問題ありません。
+
+<a id="p0100-b003"></a>
+
+## 中文 (biên tập)
+
+g. 外线电话肯定是从公司外部挂进来的，接电话时首先要报公司名，比如“这里是×商社营业部”的主要信息是公司＋所属部门。有些公司还要求不仅要报出公司名、所属部门名，还要报接电话人的名字。
+
+h. 内线电话肯定是公司内部的人挂过来的，这时可以不报公司名，但是所属部门名、科室名称同样有必要报给对方。内线号码往往是所属部门和部门负责人的代码，不能像接自己家里电话那样拿起电话就说“喂”或“喂，我是大野”。
+
+## English (biên tập)
+
+g. Calls made on outside lines come from customers so first give the company name. The order is: company name and depart-ment name, or in some cases, company name, department name, and your own name.
+
+h. Inter-company calls are usually from inside the company or from affiliates so there is no need to say the company name. Always give the department, section, or affiliate name. Even if there are many inside lines don't answer the phone as if you were at home, as in “Hello, Ono here.”
+
+Ghi chú nối trang (biên tập): Bản Trung/Anh của i và j in trên PDF p0101.
+
+## PDF page 101
+
+<a id="p0101"></a>
+
+- Trang in: 99
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 15 / 電話応対 / ③ 電話を取り次ぐ
+
+## ③ 電話を取り次ぐ
+
+〜取り次ぎって難しい〜
+
+Nhân vật (biên tập): インド人SE カーンさん／宮下さん
+
+### 1
+
+Mô tả hình (biên tập): カーン nhấc điện thoại trên bàn; cạnh đó có giấy ghi chú.
+
+Chữ âm thanh (biên tập): プルル・・・
+
+**カーンさん:** はい、ABCコンピュータでございます
+
+### 2
+
+Mô tả hình (biên tập): カーン nghe điện thoại và ghi vào giấy.
+
+Nhãn vai người gọi dưới đây là biên tập; người này chỉ có lời qua điện thoại.
+
+**Người gọi (biên tập):** あ、MDTセキュリティの七田ですが、宮下さんいらっしゃいますか？
+
+**カーンさん:** NTD？ セキュリティのイチダさん…？ですね。宮下は席をはずしてますが
+
+### 3
+
+**Người gọi (biên tập):** そうですか、じゃあ伝言をお願いしたいんですが、4日（よっか）の件を8日（ようか）に変更して頂くということで
+
+**カーンさん:** …はい わかりました 失礼します
+
+### 4
+
+2時間後
+
+Mô tả hình (biên tập): 宮下 gọi カーン lại.
+
+**宮下さん:** カーンさん、ちょっといい？
+
+**カーンさん:** はい、なんでしょうか
+
+### 5
+
+**宮下さん:** このNTDの市田さんって誰かな？ 4日に変更ってなに？
+
+Chữ trên giấy nhắn (biên tập):
+
+宮下様  
+NTD市田様  
+4日に変更  
+受信者 カーン
+
+### 6
+
+Mô tả hình (biên tập): 宮下 và カーン đứng đối diện, giữa hai người có dấu ？; カーン toát mồ hôi.
+
+**カーンさん:** あの、そう聞こえたんですけど・・・・
+
+どうして、うまく伝言できなかったのでしょうか？
+
+<a id="p0101-b002"></a>
+
+## 中文 (biên tập)
+
+i. 接外线电话时，挂进电话的人大都是公司外部的人，应尽可能使用自谦语和敬语，以免失礼。
+
+j. 接内线电话时，用不用自谦语和敬语往往取决于双方身份。一般不必像接外线电话那样使用自谦语和敬语，使用“です、ます”这样的慎重语不会有什么大问题。
+
+## English (biên tập)
+
+i. When speaking on an outside phone line, it's best to use polite language (respect or humble language) because you are usually dealing with someone on the outside.
+
+j. You don't have to be as particular about polite language on in-ternal lines, depending on the caller. You can get by using the *desu/masu* level of politeness.
+
+Ghi chú nối trang (biên tập): Bản Nhật của i và j in trên PDF p0100.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 102
+
+<a id="p0102"></a>
+
+- Trang in: 100
+- Đường dẫn nội dung: Unit 15 / 電話応対 / ③ 電話を取り次ぐ
+
+## ポイント
+
+### k. 間違いやすいアルファベットは確認する
+
+「T／D」、「B／V」、「M／N」などは、日本人でも聞き間違いやすいポイントです。
+「ティー／ディー」だと間違えやすいので、「D（デー）」ですか？と言い換えたり、「B」は「ABCのBですか？」と言ったり、不安なときは必ず確認するようにしましょう。
+
+### l. 「1（いち）／7（しち）」「四日（よっか）／八日（ようか）」などの数字も、再確認！
+
+数字にも、読み方によって聞き間違いやすくなるものがあります。「7時（しちじ）」と言われたら、「7時（ななじ）ですね？」と読み方を変えて聞き直しましょう。
+でも「七田（しちだ）」のように名前の場合は、「ナナダ様」と言ってはいけません。そういう場合は、「しちだ様のシチは、数字の7、8、9の『シチ』でしょうか？」など、相手に失礼にならないように聞きましょう。
+
+### m. メモをとるときは、なるべく正確に！
+
+メモはいい加減に書いてはいけません。聞き取れなかったり、聞き取ったものに不安を感じたりしたら、お客様に失礼にならないように聞き直しましょう。
+
+<a id="p0102-b002"></a>
+
+## もう一度聞くときに、便利なフレーズ
+
+・恐れ入りますが、お名前をもう一度よろしいでしょうか。
+
+・申し訳ございません。会社名をもう一度よろしいですか。
+
+・念のため、もう一度、綴りを教えていただけますか？
+
+Furigana (nguồn): 綴＝つづ
+
+Mô tả hình (biên tập): Người đàn ông nghe điện thoại toát mồ hôi; hai bóng ghi ？, bóng còn lại có các chữ T B V ở hàng trên và D bên dưới.
+
+<a id="p0102-b003"></a>
+
+## 中文 (biên tập)
+
+k. 容易听错的西文字母没有听清的话要请对方再重复一边。
+像“T/D、”“B/V、”“M/N”这些字母，日本人也经常听错。“剃／递”就可能听错，出现这种情况要马上向对方确认“是D（递）吗？”“B是ABC的B吗？”。总之，没有把握的时候一定要向对方确认。
+
+l. “1/7”“四日／八日”等数字（日语读音很相近），有时也需要请对方再说一遍。
+一部分数字读音很容易听错。对方说“7时（しちじ）”的时候可以用“7时（ななじ）？”来确认。
+但是，对方说“七田（しちだ）”时则不能用“ナナダ様”来确认。
+出现这种人名“七田”的情况时，要用“七田先生的七是数字7、8、9的七吗？”这种方法来确认，万不能失礼。
+
+## English (biên tập)
+
+k. Verify letters of the alphabet that are easy to misunderstand:
+Japanese have a hard time differentiating between T and D, B and V, and M and N. When in doubt, repeat the letter you think is being said, or identify it (“the B of ABC?”), etc.
+
+l. Verify numbers that sound similar in Japanese (1 and 7, fourth and eighth, etc.).
+Numbers can be hard to differentiate depending on how they are read. If you hear *shichiji* (7:00), verify with *nanaji desu ne?* But for the name, Shichida, you can't substitute Nanada. To avoid being rude, say, “The *shichi* in Shichida is like the number 7 in 7, 8, 9, right?”
+
+Ghi chú nối trang (biên tập): Bản Trung/Anh của m in trên PDF p0103.
+
+## PDF page 103
+
+<a id="p0103"></a>
+
+- Trang in: 101
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 15 / 電話応対 / ④ メモの取り方
+
+## ④ メモの取り方
+
+### Giấy nhắn mẫu (biên tập)
+
+TO: 宮下様
+
+2008年4月28日　AM／PM　15時30分頃
+
+Ghi chú hình thức (biên tập): PM được khoanh tròn; AM không khoanh.
+
+MTDセキュリティ　シチダ　様より
+
+□ 電話がありました  
+□ 後ほど電話ください  
+□ また電話します  
+☑ その他
+
+4日の件を8日に変更　030-△△××-0055
+
+Hai dòng trống (biên tập): ＿＿＿＿＿＿／＿＿＿＿＿＿
+
+受信者: カーン
+
+## ポイント
+
+n. 会社名や名前の漢字などがわからないときは、ひらがなかカタカナで書いておくこと。
+
+o. 名前などが聞き取れないときは、電話番号だけでも必ず聞いておくこと。
+
+p. メモ欄は簡単にでいいので、用件がわかるように書くこと。
+
+q. メモは、相手にわかりやすいように、机の目立つ位置に置くこと。
+
+Quan hệ chú thích (biên tập): Mũi tên từ hàng công ty/tên người gọi của giấy nhắn đến n; mũi tên từ hàng nội dung/số điện thoại đến nhóm o và p. q đặt bên dưới giấy nhắn.
+
+<a id="p0103-b002"></a>
+
+## 中文 (biên tập)
+
+m. 作电话记录要认真，不能敷衍了事。
+没听清或对听到的事情没把握要有礼貌地向对方再确认一遍。
+
+n. 听不清公司名和人名汉字读音时，可以用日语平假名或片假名来记录。
+
+o. 实在听不清人名，请对方告诉自己对方电话机的电话号码不失为一个好办法。
+
+p. 在记录栏内作记录文字可以简练，但事情要让人看一眼就明白。
+
+q. 将写好的记录放在关系人一眼就能看到的办公桌上的某个显眼的位置。
+
+## English (biên tập)
+
+m. Take accurate messages!
+Don't take slapdash messages. If you couldn't catch what was said or aren't sure, ask politely that the customer repeat himself.
+
+n. If you don't know the kanji for the company name or caller's name, write it in hiragana or katakana.
+
+o. Even if you can't understand the name of the caller, at least take down the phone number.
+
+p. You can keep the message simple; just make it understandable.
+
+q. Place the message on the person's desk in a conspicuous spot so he can find it.
+
+Ghi chú nối trang (biên tập): Bản Nhật của m in trên PDF p0102.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 104
+
+<a id="p0104"></a>
+
+<a id="p0104-b001"></a>
+
+- Trang in: 102
+- Đường dẫn nội dung: Unit 16 / ビジネスEメール
+
+## Unit 16 ビジネスEメール
+
+文字はずっと、相手の所に残るもの。
+話すときよりも注意しましょう。
+
+## 確認クイズ
+
+### 第1問
+
+BCCはどういうときに使いますか？
+
+1…メールのコピーを送ることを、宛先の人に知られたくないとき
+
+Furigana (nguồn): 宛先＝あてさき
+
+2…メールのコピーを送ることを、宛先の人に知ってほしいとき
+
+3…すべてのメールは上司にBCCで送る
+
+### 第2問
+
+メールを転送するときの注意点で、正しいものは？
+
+1…転送する理由を、いちばん上に付け加えて書いておく
+
+2…転送する理由は書いてはいけない
+
+3…転送したことは、元々の送信者には知られてはいけない
+
+### 解答
+
+第1問　1　→　① ビジネスEメールの基本　参照
+
+第2問　1　→　③ ビジネスEメールの注意点　参照
+
+## PDF page 105
+
+<a id="p0105"></a>
+
+<a id="p0105-b001"></a>
+
+- Trang in: 103
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 16 / ビジネスEメール / ① ビジネスEメールの基本
+
+## ① ビジネスEメールの基本
+
+## 基本テンプレート
+
+Mô tả hình (biên tập): Cửa sổ soạn email. Các mũi tên ①–⑨ chỉ lần lượt các trường và phần nội dung dưới đây.
+
+Chữ giao diện (biên tập): メッセージの作成／ファイル／編集／挿入／書式／ツール／メッセージ／ヘルプ／送信／確認／ABC スペルチェック
+
+① 宛先　○○@xx.co.jp
+
+② CC　△△@xx.co.jp
+
+③ 件名　□□に関するお問い合わせについて
+
+④ 添付　`Sample.gif(159kb)`
+
+⑤
+
+××株式会社　○○様  
+（CC: ××株式会社　△△様）
+
+⑥
+
+いつもお世話になっております。  
+○×株式会社　◎◎と申します。
+
+⑦
+
+・・・・・・・・・・・・・  
+・・・・・・・・・・・・・
+
+⑧
+
+以上、取り急ぎ用件のみ失礼いたします。
+
+⑨
+
+◎◎太郎  
+○×株式会社 営業部  
+〒111-111 東京都○○区○○町1-1-1  
+TEL: 030-XXX-XXXX  
+FAX: 030-XXX-XXXX  
+E-mail: xx@xx.ne.jp
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 106
+
+<a id="p0106"></a>
+
+- Trang in: 106
+- Đường dẫn nội dung: Unit 16 / ビジネスEメール / ② 便利なフレーズ
+
+## ② 便利なフレーズ
+
+## あいさつ文
+
+◆ いつもお世話になっております。（いつでも使えるので便利）
+
+◆ 先日はお時間をいただき、ありがとうございました。（訪問後のメールで）
+
+◆ 先日は大変お世話になり、ありがとうございました。
+
+◆ ご無沙汰しております。（最近連絡を取っていなかった人へ）
+
+◆ お疲れさまです。（社内メールで使う）
+
+## 結びの文
+
+◆ 以上／では／今後とも　＋（どうぞ）よろしくお願いいたします。
+
+◆ 以上／取り急ぎ　＋　ご連絡まで／お知らせいたします／用件のみ失礼いたします。
+
+## 5W3H
+
+用件を書くときは、5W3Hを意識して書きましょう。
+
+◆ Who（誰が）
+
+◆ What（何を）
+
+◆ When（いつ）
+
+◆ Where（どこで）
+
+◆ Why（なぜ）
+
+◆ How（どのように）
+
+◆ How many（どれくらい）
+
+◆ How much（いくらで）
+
+Mô tả hình (biên tập): Người đàn ông dùng máy tính xách tay, bóng thoại ghi ♪.
+
+<a id="p0106-b002"></a>
+
+## 中文 (biên tập)
+
+a. 转送邮件时要写明转送邮件的原因。
+
+b. 不要擅自更改转送邮件内容。
+
+c. 不可以全文引用邮件内容，但可以部分引用邮件内容。
+
+d. 可以直接引用邮件内容，但不可以对引用邮件内容进行加工。
+
+## English (biên tập)
+
+a. When forwarding a message, give your reason.
+
+b. Don't alter the text of a forwarded message.
+
+c. Quote only the pertinent sections and not the entire text.
+
+d. Do not alter the section to be quoted.
+
+Ghi chú nối trang (biên tập): Bản Nhật của a–d in trên PDF p0107.
+
+## PDF page 107
+
+<a id="p0107"></a>
+
+- Trang in: 107
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 16 / ビジネスEメール / ③ ビジネスメールを送るときの注意点
+
+## ③ ビジネスメールを送るときの注意点
+
+## 転送する
+
+自分に送られてきたメールの情報を、ほかの人にも知っておいてほしい場合などに、そのメールをそのまま送ることもよくあります。件名にFw:のマークが付きます。
+
+a. 転送するときは、なぜ転送するのか、理由をひと言書くこと。
+
+例）「会議日程について質問が来ましたので、転送します。」
+
+b. 転送メールそのものは、自分で内容を変えたりしないこと。
+
+## 引用する
+
+メールに返信するときに、相手が書いた内容をそのまま引用したほうが内容がわかりやすい場合もあります。引用部分には＞などのマークが付きます。
+
+c. 全文引用するのではなく、必要な部分だけを引用します。
+
+d. 引用する文面は、手を加えずにそのまま使いましょう。
+
+e. 引用部分と返信文は、どちらが返信文かわかるように書きましょう。
+
+例）＞次の会議ですが、9月10日と14日のどちらがよろしいでしょうか。  
+9月10日（月）でよろしくお願いいたします。
+
+## 添付ファイルとウイルス
+
+添付ファイルを通じてウイルスに感染することが多いので、添付ファイルの扱いには十分注意してください。
+
+f. 添付ファイルを送ることを、相手に本文で伝えること。
+
+例）「○○のファイルを添付いたしました。ご確認ください。」
+
+g. 容量の大きなファイルは、分けて送るか、圧縮して送ること。
+
+h. 相手が読めるファイル形式かを、確認してから送ること。
+
+Mô tả hình (biên tập): Người đàn ông nhìn máy tính xách tay, bóng thoại ghi ！.
+
+<a id="p0107-b002"></a>
+
+## 中文 (biên tập)
+
+e. 引用部分和回信内容应当一目了然。
+
+f. 邮件如果附有附件，应该在邮件正文中写明。
+
+g. 容量大的邮件应分开发送或压缩发送。
+
+h. 发送邮件之前，有必要确认一下该邮件形式对方能否打开阅读。
+
+## English (biên tập)
+
+e. Clarify whether the text is the original message or your return message.
+
+f. Write in the main text that you are sending an attachment.
+
+g. Either divide up a long attachment into more than one file or shrink it.
+
+h. Confirm with the recipient that he can read the file format you want to send before sending the file.
+
+Ghi chú nối trang (biên tập): Bản Trung/Anh của a–d in trên PDF p0106.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 108
+
+<a id="p0108"></a>
+
+<a id="p0108-b001"></a>
+
+- Trang in: 108
+- Đường dẫn nội dung: Unit 17 / 指示を受ける
+
+## Unit 17 指示を受ける
+
+頼まれた仕事は、なるべく気持ちよく
+引き受けたいものですね！
+
+## 確認クイズ
+
+### 第1問
+
+指示を受けるときに、言ってはいけない言葉は？
+
+1…「わかりました」
+
+2…「無理です」
+
+3…「明日まででいいですか？」
+
+### 第2問
+
+注意を受けるときに、言ってはいけない言葉は？
+
+1…「仕方なかったんです」
+
+2…「申し訳ありませんでした」
+
+3…「以後、気を付けます」
+
+### 解答
+
+第1問　2　→　① 指示を受ける　参照
+
+第2問　1　→　④ 注意を受ける　参照
+
+## PDF page 109
+
+<a id="p0109"></a>
+
+- Trang in: 109
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 17 / 指示を受ける / ① 指示を受ける
+
+## ① 指示を受ける
+
+### a
+
+Mô tả hình (biên tập): Người phụ nữ đang xử lý nhiều giấy tờ; cấp trên đeo kính gọi từ cửa: 「野村さん、ちょっと来てくれる？」. Mũi tên sang hai ví dụ: × người phụ nữ vẫn làm việc, nói 「あ、はーい」; ○ người phụ nữ ngừng việc, cầm giấy ghi chú và bút, nói 「はい」.
+
+a. 仕事中に上司に呼ばれたら、どんなに忙しくても、とりあえず仕事の手を止めて、上司の指示を聞きに行きましょう。そのときはメモとペンを忘れずに。
+
+### b
+
+Mô tả hình (biên tập): Người phụ nữ ngồi trước máy tính xách tay; cấp trên đến gọi 「野村さん、ちょっといいかな？」. Mũi tên sang hai ví dụ: × người phụ nữ chỉ ngoảnh mặt lại, tay vẫn ở máy tính, nói 「はい？」; ○ người phụ nữ xoay người đối diện, cầm giấy ghi chú và bút, nói 「はい、何でしょうか？」.
+
+b. 上司が自分の席の所まで来た場合は、顔だけ振り返るのは少し失礼です。上司ときちんと対面するようにしてください。場合によっては、立って指示を聞いたほうが、より丁寧な印象になります。
+
+<a id="p0109-b002"></a>
+
+## 中文 (biên tập)
+
+a. 工作中上司因故找自己的时候，手头工作再忙也要停下手来，先听上司有什么新的工作安排。此时一定要准备好笔和笔记本。
+
+b. 上司走到自己办公桌旁时，不能只回一下头，这样太失礼。注意要把头转过来，和上司脸对着脸。有些场合，还需站起身来做好聆听上司指示的准备，只有这样才能给上司留下好印象。
+
+## English (biên tập)
+
+a. No matter how busy you are, if your boss calls you, put down your work and follow his directives. Don't forget your memo pad and pen.
+
+b. If your boss comes to your seat, it would be somewhat rude if you simply turned your face toward him. Face him directly. In some cases it is more polite to stand up and listen to his direc-tives.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 110
+
+<a id="p0110"></a>
+
+- Trang in: 110
+- Đường dẫn nội dung: Unit 17 / 指示を受ける / ② 確認・質問する
+
+## ② 確認・質問する
+
+指示を受けたとき、わからないことがあれば、必ず質問するようにしてください。仕事をしやすいように、きちんとした質問ができるように心掛けましょう。
+
+### c. 質問は、最後まで聞いてから
+
+質問したいことが思い浮かんでも、上司がまだ全部説明していない場合もあるので、割り込んで質問しないように。メモを取りながら指示を最後まで聞いて、その後にまとめて質問するようにしましょう。
+
+### d. 期限を確認する
+
+例えば、「明日の午後までに」と言われても、午後1時までなのか午後5時までなのかで、仕事の段取りが違ってきます。期限はなるべく詳しく聞くようにしましょう。
+
+### e. 優先順位を確認する
+
+指示を受けたとき、あなたには今やっている仕事があるはずです。急ぎの仕事もあるかもしれません。どちらを先にすればいいか、優先順位を確認しましょう。
+
+### f. 数字・固有名詞を確認する
+
+指示の中に、数字や会社の名前、人の名前などが出てきたら、日本語の聞き間違いがあると大変なので、念のためもう一度確認しましょう。
+
+### g. 復唱する
+
+いろいろと質問したり、確認した後、もう一度最後にメモの内容を復唱して、最終確認してください。
+
+ここまでできたら、指示の受け方は完璧です！
+
+Mô tả hình (biên tập): Người đàn ông giơ tay, phía trên tay có dấu ？.
+
+<a id="p0110-b002"></a>
+
+## 中文 (biên tập)
+
+c. 提问应当在上司讲完话之后
+上司讲话中间，即便有什么疑问也不要插话提问，应当边听边作记录，最后将问题归纳起来一块儿提问。
+
+d. 确认任务期限
+如上司说“明天下午以前……”，这“下午以前”指的是下午1点以前呢，还是下午5点以前呢，因为所要求的任务完成时间直接关系到工作计划的具体安排，故有必要问清完成任务的最后期限。
+
+e. 确认具体任务完成的先后顺序
+司安排工作时，你肯定有正在处理中的工作。而且也很可能有要求你急于完成的工作。哪些工作应该先做，哪些工作应该后做，一定要问清楚。
+
+## English (biên tập)
+
+c. Don't ask questions until the explanation is over.
+Don't interrupt with questions that come to mind before your boss has a chance to explain everything. Take notes while you listen and save your questions for when he's done speaking.
+
+d. Check deadlines.
+For example, “by tomorrow afternoon” can mean “by 1:00” or “by 5:00;” the difference can affect how you plan your work sched-ule. Ask for details on deadlines.
+
+e. Check order of priority.
+You probably are already doing work when you receive a new assignment. You might have work to finish in a hurry. Check to see what has highest priority.
+
+Ghi chú nối trang (biên tập): Bản Trung/Anh của f và g in trên PDF p0111.
+
+## PDF page 111
+
+<a id="p0111"></a>
+
+- Trang in: 111
+- Đường dẫn nội dung: 第二章 日本のビジネスマナー / Unit 17 / 指示を受ける / ③ 依頼を受ける
+
+## ③ 依頼を受ける
+
+〜コピー取ってきて〜
+
+Nhân vật (biên tập): 劉さん／先輩社員 原さん
+
+### 1
+
+Mô tả hình (biên tập): 原 đưa tập giấy cho 劉.
+
+**原さん:** 劉さん、これ大至急コピーとってきて。10部ね
+
+**劉さん:** はい、わかりました
+
+### 2
+
+Mô tả hình (biên tập): 劉 ở máy photocopy, cầm bản gốc lên xem.
+
+**劉さん (suy nghĩ):** なんかこれ、両面に印刷してある・・・・片方ずつコピーすれば大丈夫だよね
+
+### 3
+
+Mô tả hình (biên tập): 劉 cầm hai tờ giấy, nhìn chúng.
+
+Chữ ngoài bóng thoại (biên tập): ちょっと字が読みにくいかなぁ？
+
+**劉さん:** ま、いっか！
+
+### 4
+
+Mô tả hình (biên tập): 劉 đứng giữa nhiều tờ giấy rời quanh máy photocopy.
+
+**劉さん (suy nghĩ):** あれ？どういう順番だったっけ？ま、いっか・・・
+
+### 5
+
+Mô tả hình (biên tập): 劉 mang tập bản sao đến 原 đang ngồi tại bàn.
+
+**劉さん:** 原さん、コピーできました
+
+**原さん:** あ、ありがとう
+
+### 6
+
+Mô tả hình (biên tập): 原 nhìn các tờ bản sao, toát mồ hôi; 劉 quay lại nhìn, cạnh đầu có dấu ？.
+
+**原さん:** あれ？これどうなってんの？
+
+劉さんのコピーの取り方は、どこが悪かったのでしょう？
+
+<a id="p0111-b002"></a>
+
+## 中文 (biên tập)
+
+f. 确认数字和固有名词
+上司讲话中如出现数字、公司名称和人名，为了慎重，你应该向上司再确认一遍。这是日语中最容易听错的地方，听错了后果不堪设想。
+
+g. 复述
+提问、确认后复述一遍笔记内容，然后再做最后确认。
+
+## English (biên tập)
+
+f. Check numbers and proper nouns.
+If there are numbers, names of companies or people in the direc-tive, recheck just in case because it will cause you problems if you misunderstand the Japanese.
+
+g. Repeat the instructions.
+After asking various questions and reconfirming, repeat what you have written down for a last check.
+
+Ghi chú nối trang (biên tập): Bản Nhật của f và g in trên PDF p0110.
+
+Tiêu đề lề (biên tập): 第一章 日本の一般マナー／第二章 日本のビジネスマナー／確認問題
+
+## PDF page 112
+
+<a id="p0112"></a>
+
+- Trang in: 112
+- Đường dẫn nội dung: Unit 17 / 指示を受ける / ③ 依頼を受ける
+
+## ポイント
+
+h. 両面印刷の原稿を渡されたときは、そのまま両面コピーするのか、片面ずつ2枚にするのか、必ず確認してください。
+
+i. 原稿の文字が読みにくい場合などは、1枚コピーしてみて、薄いようであれば、コピー機で濃度の調節をしてみましょう。
+
+j. 原稿の順番は絶対に間違えないように。わからなくならないように、注意してください。
+
+k. 同じ原稿のコピーをまとめて渡す場合もありますが、10部のセットにして渡すと、依頼した人もそのまま配ることができて、使いやすいことが多いでしょう。
+
+l. コピーした原稿はバラバラのままではなく、クリップで止めたりして、受け渡ししやすいようにするといいでしょう。指示があればホチキス止めもしてください。横書きの書類は左上の端を止めるのが基本です。
+
+m. きちんとコピーできているかどうか、白紙などが交ざっていないかどうか、最後に確認してから、依頼した人に持って行きましょう。
+
+Mô tả hình (biên tập): Hình phía trên: một người phụ nữ cầm bản giấy, chỉ vào giấy trong khi nói với người phụ nữ còn lại. Hình phía dưới: tập giấy được ghim bằng dập ghim ở góc trên bên trái; trên giấy chỉ có các nét mô phỏng dòng chữ và hình chữ nhật, không có văn bản đọc được.
+
+<a id="p0112-b002"></a>
+
+## 中文 (biên tập)
+
+h. 接到两面印刷的原稿时，一定要确认是照原样两面印刷还是分两张印刷。
+
+i. 如原稿字迹看不太清，可以复印一张看一看效果，字迹太淡，可以调整一下复印机印刷浓度。
+
+j. 不要将原稿页码顺序搞错。搞错页码顺序会给阅读原稿造成困难。
+
+k. 有时需要交付同一原稿的全部影印件，为便于分发人分发该影印件，复印原稿时，你可以考虑将每10份作为一个单位进行复印。
+
+l. 为了防止原稿复印件交付后页码次序错乱，应将原稿复印件用曲别针固定好。如果有要求的话，要用订书器订好。横写的文件，应把书钉订在文件的左上方。
+
+m. 复印效果是否理想，复印件中是否夹有白页，交给对方之前应再仔细检查一遍。
+
+## English (biên tập)
+
+h. When given a double-sided document, always check whether you should make a double-sided copy or single copies front and back.
+
+i. If the script in the manuscript is difficult to read, make a test copy. If too light, adjust the contrast to make it darker.
+
+j. Don't make a mistake on the order of the pages. Make sure you don't get it all confused.
+
+k. It is common to make many copies of each page, but it is often easier for the person who requested the copies to distribute them if you collate the pages into sets of ten.
+
+l. It is more convenient for the recipient if you clip the sets of cop-ies together rather than leave them loose. Use a stapler if asked to do so. Usually, documents written horizontally are stapled in the upper-left hand corner.
+
+m. Give the copies to the person who requested them after you've checked that each page is properly copied and that no blank
+
+Ghi chú nối trang (biên tập): Câu tiếng Anh m tiếp trên PDF p0113: “pages are mixed in.”
+
