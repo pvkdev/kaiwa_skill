@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.6 — 2026-11-11
+
+- Cập nhật kế hoạch pilot theo rà bảo toàn: giữ trang mở PART1 và mã CD01–03, hội thoại trước giải thích, MEMO đúng thứ tự nguồn. Chín unit trong cùng scope PDF7–12; review mới tách khỏi lịch sử cũ, không đổi thành full sách.
+
 ## 0.3.5 — 2026-11-11
 
 - Validator chấp nhận vai Nhật được dịch/phiên âm trong lượt Việt liền kề và số ví dụ không lặp ở nhãn vai. Kiểm sai vai A/B, thiếu lượt Việt và nhầm tag vẫn giữ; parser không xác minh ngữ nghĩa tên vai đã dịch.
