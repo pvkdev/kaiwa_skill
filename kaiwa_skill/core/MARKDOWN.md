@@ -18,6 +18,8 @@ Nội dung nguyên văn...
 
 Không dùng placeholder trong output thật. Metadata điều phối, trạng thái và review nằm ngoài nguyên văn. Nội dung nguồn phải được phân biệt với nhãn cấu trúc do người chuyển đổi thêm.
 
+Ký hiệu nguồn phải còn nhìn thấy khi render Markdown. Dấu sao chú thích viết `\*` (một dấu gạch chéo ngược trước sao) để không bị hiểu nhầm là italic; giữ `**...**` hoặc `*...*` khi đó thật sự là nhấn mạnh có trong nguồn. Sửa escape chỉ thay markup, không thay chữ nguồn; đối chiếu phần thay đổi và ghi rõ phạm vi review trong evidence.
+
 Nhãn mô tả không in trên sách phải ghi rõ `(biên tập)`, kể cả nhãn bằng tiếng Nhật. Ví dụ: `Chữ trong hình (biên tập): 営業部`, `Tiêu đề lề (biên tập): 電話を受ける／第一声`. Nếu trang sau không lặp lại tiêu đề ノート, có thể đặt `## Ghi chú tiếp từ trang trước (biên tập)`; không trình bày tiêu đề tự thêm như nguyên văn nguồn. Các trường metadata quy định sẵn ở đầu trang đã là metadata, không cần lặp nhãn.
 
 ## Tiếng Nhật và hội thoại
