@@ -6,6 +6,7 @@
 - Điểm vào điều phối: `.agents/skills/kaiwa-ingest/SKILL.md`. Worker: `.agents/skills/kaiwa-pdf-markdown/SKILL.md`.
 - Một worker sở hữu một PDF tại một thời điểm; checkpoint xuống đĩa theo trang. Tác nhân mới có thể tiếp quản từ trạng thái đã kiểm tra.
 - Root trực tiếp điều phối, QA và dùng Git; chạy tối đa ba worker Sol/high cùng lúc, không tạo sub điều phối riêng. Chỉ root stage/commit; worker báo trực tiếp root.
+- Khi người dùng yêu cầu chạy toàn hàng đợi và giữ chat sống: root giữ lượt điều phối hoạt động, chờ worker và giao lượt/sách kế tiếp ngay sau bàn giao; không gửi final chỉ để thông báo đã khởi chạy. Chỉ kết thúc khi đạt phạm vi được giao, người dùng yêu cầu dừng, hoặc có giới hạn thực sự ngăn tiếp tục (phải báo rõ và lưu handoff).
 - Chỉ gọi một trang là verified sau khi thực sự mở ảnh trang gốc và đối chiếu. Script không chứng minh việc đọc ảnh hay tính đúng ngữ nghĩa.
 - Đầu ra nguồn và bài luyện kaiwa chỉ có text: Markdown/JSON/JSONL, không nhúng hoặc bàn giao hình. Ảnh render/crop chỉ là cache tạm để đọc PDF, không commit. Chuyển chữ/bảng/quan hệ có nghĩa trong hình thành text có nhãn biên tập; hình trang trí có thể bỏ qua.
 - Mọi sửa đổi nội dung sau xác nhận đều làm xác nhận cũ hết hiệu lực. Không sửa metadata để che lỗi.

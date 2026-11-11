@@ -22,6 +22,7 @@ Dùng `collaboration.spawn_agent` với `model="gpt-6-sol"`, `reasoning_effort="
 
 ## Giám sát và bàn giao
 
+- Root giữ lượt hoạt động trong đợt chạy được yêu cầu: sau spawn/followup tiếp tục QA và `collaboration.wait_agent` (tối đa 60 giây mỗi lần để vẫn trao đổi với người dùng). Worker hoàn tất lượt mà sách còn trang thì kiểm tra đã release claim rồi nối việc từ checkpoint; hết phần xử lý được thì lấy sách tiếp. Báo tiến độ bằng commentary, không gửi final "đang chạy" khi root còn phải giao việc. Final chỉ dùng khi kết thúc phạm vi, người dùng yêu cầu dừng hoặc gặp blocker thực sự đã lưu handoff.
 - Tiến độ đếm riêng bản nháp và trang verified; sách partial không phải sách completed.
 - Worker checkpoint từng trang; lô 3–5 trang chỉ là kích thước công việc, không phải đơn vị lưu.
 - Sau gián đoạn, kiểm tra tác nhân cũ đã dừng trước khi thu hồi quyền sở hữu; never chạy worker thay thế trong khi worker cũ còn ghi.
