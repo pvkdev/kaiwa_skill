@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "bulk_clean_and_direct",
-  "updated_at_utc": "2026-11-11T10:42:49.905305+00:00",
+  "updated_at_utc": "2026-11-11T11:01:29.859470+00:00",
   "authorization": "User requested raw-complete to clean; unstarted PDF direct to knowledge; pilot then autonomous scaling; 1 coordinator + 3 worker roles Sol/high, rotated under runtime cap.",
   "worker_model": "gpt-6-sol",
   "worker_reasoning_effort": "high",
@@ -17,19 +17,19 @@
       "role": "worker_1",
       "worker": "/root/clean_keigo",
       "stage": "full_pdf_direct_active",
-      "book_id": "125-extended-patterns-for-japanese-conversation-4863922-95f1ac587f24",
-      "source_pdf": "kaiwa_skill/book/Kaiwa/125-extended-patterns-for-japanese-conversation-4863922442-9784863922440_compress.pdf",
-      "title": "わかる！話せる！日本語会話 発展文型125",
-      "scope_pdf_pages": 225
+      "book_id": "180-common-native-japanese-figures-of-speech-in-regular-8eeff5021caa",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/180-common-native-japanese-figures-of-speech-in-regular-conversation-9784863923256-4863923256_compress.pdf",
+      "title": "日本人がよく使う 日本語会話お決まり表現180",
+      "scope_pdf_pages": 209
     },
     {
       "role": "worker_2",
       "worker": "/root/clean_namachuukei_sho",
       "stage": "full_pdf_direct_active",
-      "book_id": "shigoto-no-nihongo-denwa-outai-kisohen-dfdb0e2b61e0",
-      "source_pdf": "kaiwa_skill/book/BJT/Shigoto_no_nihongo_Denwa_Outai_Kisohen.pdf",
-      "title": "しごとの日本語 電話応対 基礎編",
-      "scope_pdf_pages": 162
+      "book_id": "30-f497459c2a83",
+      "source_pdf": "kaiwa_skill/book/BJT/にほんごで働く!ビジネス日本語30時間.pdf",
+      "title": "にほんごで働く！ビジネス日本語30時間",
+      "scope_pdf_pages": 181
     },
     {
       "role": "worker_3",
@@ -171,11 +171,12 @@
         "Build page hashes incomplete",
         "Page 1: Markdown/evidence missing"
       ],
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
       "owner": "/root/clean_namachuukei_sho",
       "title": "しごとの日本語 電話応対 基礎編",
-      "knowledge_dir": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編"
+      "knowledge_dir": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編",
+      "knowledge_commit": "49b0926"
     },
     {
       "book_id": "wakaru-bijinesu-nihongo-c0c4bc000a34",
@@ -201,8 +202,11 @@
       "source_sha256": "f497459c2a8324ee59114e03bee6bbef58e54d44d763d9169e170f6d840a905e",
       "page_count": 181,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_namachuukei_sho",
+      "title": "にほんごで働く！ビジネス日本語30時間",
+      "knowledge_dir": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間"
     },
     {
       "book_id": "remake-ad35b87b708d",
@@ -248,12 +252,13 @@
       "source_sha256": "95f1ac587f2442dfb9794eb65e175d2b718ac073f08f0a96d76fdc86f9ad869f",
       "page_count": 225,
       "route": "pdf_direct",
-      "state": "full_direct_active",
+      "state": "complete_author_checked_root_sampled",
       "raw_initialization_allowed": false,
       "owner": "/root/clean_keigo",
       "title": "わかる！話せる！日本語会話 発展文型125",
       "knowledge_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125",
-      "known_source_issue": "PDF120/unit67: final A turn only in English/Chinese, no Japanese/romaji counterpart; retained VI, no invented JP."
+      "known_source_issue": "PDF120/unit67: final A turn only in English/Chinese, no Japanese/romaji counterpart; retained VI, no invented JP.",
+      "knowledge_commit": "89f4c0f"
     },
     {
       "book_id": "180-common-native-japanese-figures-of-speech-in-regular-8eeff5021caa",
@@ -261,8 +266,11 @@
       "source_sha256": "8eeff5021caa8ac4c21e27ad494e70a8ce91392f151182deb7f711c497267719",
       "page_count": 209,
       "route": "pdf_direct",
-      "state": "queued_direct_after_pilot_pass",
-      "raw_initialization_allowed": false
+      "state": "full_direct_active",
+      "raw_initialization_allowed": false,
+      "owner": "/root/clean_keigo",
+      "title": "日本人がよく使う 日本語会話お決まり表現180",
+      "knowledge_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話お決まり表現180"
     },
     {
       "book_id": "200-quick-and-easy-phrases-for-japanese-conversation-97-09f743ddc922",
@@ -696,6 +704,16 @@
       "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
       "commit": "dca0eff",
       "coordinator_review": "author full; root34 sampled source pages; 411 dialogues/950 pairs; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編",
+      "commit": "49b0926",
+      "coordinator_review": "author full; root27 sampled source pages; see _meta/coordinator-review.md"
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125",
+      "commit": "89f4c0f",
+      "coordinator_review": "author full; root29 sampled source pages; see _meta/coordinator-review.md"
     }
   ],
   "pilot_preservation_recheck": {
@@ -752,10 +770,10 @@
     "commit": "f6c9298",
     "fork_tests_passed": 80,
     "direct_tests_passed": 17,
-    "regression_book_count": 15,
+    "regression_book_count": 18,
     "regression_errors": 0,
-    "regression_warnings": 29,
-    "warning_scope": "Known Nameraka/Manners/88/Nama2 source warnings plus9 reviewed placeholder layout warnings inNama2. Validator does not certify semantic completeness."
+    "regression_warnings": 33,
+    "warning_scope": "Known source warnings in Nameraka/Manners/88/Nama2/Denwa/125 plus9 reviewed placeholder layout warnings inNama2; 18 released books validated, no errors. Validator does not certify semantic completeness."
   },
   "knowledge_outputs": [
     {
@@ -840,18 +858,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 162,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issue",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 154,
-        "needs_review": 1,
-        "pending": 7
+        "author_checked": 161,
+        "needs_review": 1
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 35,
-        "needs_review": 1,
-        "pending": 2
-      }
+        "author_checked": 37,
+        "needs_review": 1
+      },
+      "knowledge_commit": "49b0926"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/なめらか日本語会話",
@@ -901,18 +918,17 @@
       "metadata_status": "full",
       "scope_pdf_page_count": 225,
       "audio_inventory_present": true,
-      "acceptance": null,
+      "acceptance": "full_author_checked_with_root_sampled_qa_and_unresolved_source_issue",
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 222,
-        "needs_review": 1,
-        "pending": 2
+        "author_checked": 224,
+        "needs_review": 1
       },
       "chapter_checkpoint_counts": {
-        "author_checked": 28,
-        "needs_review": 1,
-        "pending": 1
-      }
+        "author_checked": 29,
+        "needs_review": 1
+      },
+      "knowledge_commit": "89f4c0f"
     },
     {
       "book_dir": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版",
@@ -1053,12 +1069,50 @@
       "acceptance": null,
       "full_completion_requires_review_not_status_alone": true,
       "page_checkpoint_counts": {
-        "author_checked": 12,
-        "pending": 124
+        "author_checked": 31,
+        "needs_review": 17,
+        "pending": 88
       },
       "chapter_checkpoint_counts": {
         "author_checked": 1,
-        "pending": 8
+        "needs_review": 1,
+        "pending": 7
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間",
+      "title": "にほんごで働く！ビジネス日本語30時間",
+      "source_pdf": "kaiwa_skill/book/BJT/にほんごで働く!ビジネス日本語30時間.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 181,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "author_checked": 18,
+        "pending": 163
+      },
+      "chapter_checkpoint_counts": {
+        "author_checked": 1,
+        "pending": 14
+      }
+    },
+    {
+      "book_dir": "kaiwa_skill/knowledge/日本人がよく使う 日本語会話お決まり表現180",
+      "title": "日本人がよく使う 日本語会話お決まり表現180",
+      "source_pdf": "kaiwa_skill/book/Kaiwa/180-common-native-japanese-figures-of-speech-in-regular-conversation-9784863923256-4863923256_compress.pdf",
+      "source_mode": "pdf_direct",
+      "metadata_status": "full",
+      "scope_pdf_page_count": 209,
+      "audio_inventory_present": true,
+      "acceptance": null,
+      "full_completion_requires_review_not_status_alone": true,
+      "page_checkpoint_counts": {
+        "pending": 209
+      },
+      "chapter_checkpoint_counts": {
+        "pending": 31
       }
     }
   ],
@@ -1079,7 +1133,7 @@
     "raw_corpus_and_claim_files_unchanged": true,
     "reason": "Avoid restarting whole raw pass for knowledge production; reuse existing raw as auxiliary only."
   },
-  "completed_full_books": 16,
-  "completed_full_source_pages": 1771,
-  "completion_count_definition": "16 released supplied-PDF scopes/1771 pages: initial7 independently reviewed in full; later9 author full/root sampled. Explicit source issues remain; full scope is not flawless-source certification."
+  "completed_full_books": 18,
+  "completed_full_source_pages": 2158,
+  "completion_count_definition": "18 released supplied-PDF scopes/2158 pages: initial7 independently reviewed in full; later11 author full/root sampled. Source defects remain explicit; full scope does not certify flawless content."
 }

@@ -1,11 +1,11 @@
 # Clean hàng loạt — đang điều phối
 
-Đã chốt **16/30 bản đọc**, bao phủ **1.771/4.597 trang PDF đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi; chín bản sau tác giả đối chiếu toàn nguồn và root QA mẫu. Xem [bản đọc và hồ sơ](../knowledge/README.md).
+Đã chốt **18/30 bản đọc**, bao phủ **2.158/4.597 trang PDF đầu vào**. Bảy bản đầu được rà độc lập toàn phạm vi; mười một bản sau tác giả đối chiếu toàn nguồn và root QA mẫu. [Bản đọc và hồ sơ](../knowledge/README.md).
 
-Vừa chốt Shadowing 初～中級編 bản Indonesia–Thai–Việt, commit dca0eff:145 trang,8 chương,42 section/**411 hội thoại**,950 lượt Nhật–Việt. Root mở34 trang mẫu, kiểm lại các sửa nghĩa Việt và tên sách bằng crop lớn. Số420 trong bàn giao trước đã đính chính theo mục thật; không thiếu hội thoại. Validate0/0. Inventory42 nhãn CD02–43, chưa xác nhận số đĩa/file nghe.
+Ba bản vừa chốt: Shadowing 初～中級編145 trang (dca0eff,411 hội thoại/950 lượt Nhật–Việt,root34 trang mẫu); 電話応対 基礎編162 trang (49b0926,root27 trang, nguồn83 cắt ghi chú); 発展文型125225 trang (89f4c0f,root29 trang và bảng125 dòng, nguồn120 thiếu một lượt Nhật). Mạch bài, chức năng bài nghe, bản Việt và tham chiếu đã được sửa qua QA; các lỗi nguồn vẫn được cảnh báo.
 
-Ba worker Sol/high tiếp: 発展文型125 (225 trang, index và rà mạch cuối), 電話応対 基礎編 (162 trang, Unit cuối),5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày (136 trang spread, mới bắt đầu direct). Còn11 PDF chưa giao; giao tiếp ngay khi bàn giao. Runtime4 active tính root, sub điều phối idle trong lúc ba worker viết.
+Ba worker Sol/high tiếp **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** (136 trang spread), **にほんごで働く！ビジネス日本語30時間** (181 trang), **日本人がよく使う 日本語会話お決まり表現180** (209 trang). Còn9 PDF chưa giao. Runtime4 active tính root nên sub điều phối idle trong lúc ba worker viết.
 
-Công cụ0.4.10:80 test fork+17 direct PASS. Regression15 bản trước0errors/29warnings; Shadowing mới validate riêng0/0. Skill thêm kiểm nghĩa bản Việt in sẵn trong cùng lượt biên tập, không thêm vòng dịch toàn sách. Validator không chứng minh đúng nghĩa/đủ kiến thức.
+Công cụ0.4.10:80 test fork+17 direct PASS. Regression mới18 bản đã chốt: **0 lỗi/33 cảnh báo**, gồm vấn đề nguồn và9 cảnh báo bố cục ô trống đã kiểm củaNama2. Skill đã thêm kiểm bản Việt in sẵn và giữ mô tả giọng của script ở sau đề nghe. Validator không chứng minh đúng nghĩa hoặc đủ kiến thức.
 
-[CD, băng và nguồn nghe](../knowledge/AUDIO_INDEX.md): inventory và tình trạng file tách riêng; chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) giữ hàng đợi; [HANDOFF](HANDOFF.md) giúp tiếp quản. Checkpoint giúp khôi phục sau gián đoạn; không có daemon chạy khi đóng ứng dụng. Lượt điều phối còn tiếp tục.
+[CD, băng và nguồn nghe](../knowledge/AUDIO_INDEX.md) có inventory và tình trạng file tách riêng; chưa tìm/tải audio. [COORDINATOR](COORDINATOR.json) giữ hàng đợi; [HANDOFF](HANDOFF.md) giúp tiếp quản. Checkpoint giúp nối sau gián đoạn; không có daemon khi đóng ứng dụng. Lượt điều phối còn tiếp tục.

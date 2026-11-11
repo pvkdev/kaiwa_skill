@@ -32,11 +32,15 @@ Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát v
 
 - [シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版](<シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版/book.md>) — 145 trang,8 chương,66 unit;42 section/**411 hội thoại**,950 lượt Nhật–Việt. Root kiểm34 trang mẫu; tác giả rà toàn PDF. [Giới hạn QA](<シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版/_meta/coordinator-review.md>).42 nhãn CD02–43, số đĩa chưa xác nhận, file chưa kiểm.
 
+- [しごとの日本語 電話応対 基礎編](<しごとの日本語 電話応対 基礎編/book.md>) — 162 trang/38 chương/259 unit; tác giả rà toàn PDF, root QA27 trang mẫu. [Giới hạn QA và nguồn](<しごとの日本語 電話応対 基礎編/_meta/coordinator-review.md>).
+
+- [わかる！話せる！日本語会話 発展文型125](<わかる！話せる！日本語会話 発展文型125/book.md>) — 225 trang/30 chương/143 unit; tác giả rà toàn PDF, root QA29 trang mẫu. [Giới hạn QA và nguồn](<わかる！話せる！日本語会話 発展文型125/_meta/coordinator-review.md>).
+
 ## Đang clean
 
-- **わかる！話せる！日本語会話 発展文型125** — full scope 225 trang, đang viết PDF-direct; chưa nghiệm thu toàn sách.
-- **しごとの日本語 電話応対 基礎編** — full scope 162 trang, đang viết PDF-direct; chưa nghiệm thu toàn sách.
-- **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — full scope136 trang spread, đang viết PDF-direct; chưa nghiệm thu toàn sách.
+- **日本人がよく使う 日本語会話お決まり表現180** — full scope209 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+- **にほんごで働く！ビジネス日本語30時間** — full scope181 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
+- **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — full scope136 trang, đang PDF-direct; chưa nghiệm thu toàn sách.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 
