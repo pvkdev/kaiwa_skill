@@ -8,10 +8,10 @@ Tạo tầng `kaiwa_skill/knowledge/` từ Markdown ingest đã có, đọc đ�
 
 - PDF trong `book/`, `vocab/` và corpus ingest chỉ đọc. Các công việc ingest đang chạy tiếp tục độc lập.
 - Tên thư mục lấy từ tên sách được đọc trên bìa/trang nhan đề, không lấy mã tải xuống hoặc tên file PDF. Lưu tên chính thức đầy đủ trong metadata; chỉ thay ký tự không hợp lệ với hệ điều hành khi cần và ghi lại cách thay.
-- Giữ kiến thức, ví dụ, hội thoại, sắc thái, chức năng giao tiếp và quan hệ có ý nghĩa trong hình. Gộp các bản giải thích đa ngữ tương đương; không cắt nội dung chỉ vì muốn ngắn.
+- Giữ đầy đủ nội dung học và đặc trưng từng sách: kiến thức, ví dụ, hội thoại, bài tập, dữ kiện, đáp án nguồn, ghi chú, cột riêng, câu chuyện, văn hóa, phụ lục và quan hệ có ý nghĩa trong hình. Giữ thứ tự triển khai và chức năng bài tập. Chỉ gộp lớp dịch đa ngữ tương đương hoặc phần lặp do dàn trang đã xác nhận; không tóm tắt, tuyển chọn hay áp template bài học chung.
 - Nội dung học chỉ dùng tiếng Nhật và tiếng Việt, ngoại trừ tên riêng/ký hiệu hoặc đối tượng ngôn ngữ thực sự đang được giảng. Bỏ ruby/furigana, romaji phụ trợ, bản dịch tiếng Trung và bản dịch ngoại ngữ dư. Giữ kanji Nhật.
 - Dịch giải thích sang tiếng Việt; mỗi ví dụ và lượt thoại Nhật có bản dịch Việt tương ứng. Dùng tiếng Nhật để kiểm ý nghĩa; tiếng Anh là nguồn hỗ trợ, không mặc định đúng hơn bản Nhật.
-- Loại header/footer, số trang, chỉ dẫn dàn trang, mô tả tô màu, mô tả ảnh trang trí. Chuyển thông tin thực sự cần từ hình thành kiến thức bằng chữ, không để chỉ dẫn đọc ảnh trong bài.
+- Loại header/footer, số trang và chỉ dẫn thuần dàn trang, mô tả tô màu, mô tả ảnh trang trí. Giữ tiêu đề học, tham chiếu bài tập, mã track cần cho thực hành và sự nhắc lại có chủ đích. Chuyển đủ dữ kiện học từ hình thành chữ, không làm mất đầu vào để giải bài.
 - Không sáng tác ví dụ, đoán audio, tự thêm topic hoặc gán level. Phần chưa rõ đi vào hồ sơ cần kiểm tra, không lấp bằng suy đoán.
 
 ## Sản phẩm
@@ -55,7 +55,7 @@ Root trực tiếp chốt hợp đồng, kiểm nguồn và bản dịch, ghép 
 
 - Đã mở ảnh mọi trang PDF dùng để biên soạn; vùng chữ nhỏ/quan hệ mơ hồ được kiểm đủ rõ. Script không thay việc đọc trang.
 - Không còn rác dàn trang, ruby, mô tả ảnh hoặc bản dịch ngoại ngữ dư trong chapters/book.
-- Các mục kiến thức và hội thoại khác nhau trong phạm vi không bị mất; việc gộp hoặc bỏ có căn cứ.
+- Từng phần nguồn có vị trí tương ứng trong bản clean, gồm phần riêng của sách, bài tập, đáp án và ghi chú. Mạch bài và chức năng bài tập được giữ; việc gộp hoặc bỏ chỉ áp dụng phần rác/lớp dịch trùng và có căn cứ.
 - Mỗi câu/lượt thoại Nhật có bản dịch Việt; bản dịch giữ tình thái, vai nói và ý nghĩa ngữ cảnh.
 - Mỗi unit có nguồn kiểm tra được; mọi vấn đề chưa giải quyết được công bố.
 - Checker qua các kiểm cấu trúc và kiểm âm tính có ý nghĩa. Kết quả checker không được gọi là chứng nhận ngữ nghĩa.

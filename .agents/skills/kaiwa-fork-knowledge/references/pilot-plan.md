@@ -27,12 +27,12 @@ kaiwa_skill/knowledge/<tên sách xác nhận trên bìa>/
     independent-review.md          # reviewer độc lập
 ```
 
-Anchor của bốn đơn vị lần lượt là `u-intro-01`, `u-part1-01`, `u-part1-02`, `u-part1-03`; khớp `unit_id` trong `_meta/units.jsonl`. `_meta/book.json` có `scope.pdf_pages: [7,8,9,10,11,12]`, `scope.chapters` theo thứ tự bốn file trên, `status: "pilot_partial"`. Trang in/panel có thể thêm vào metadata sau khi đối chiếu ảnh; nếu khác raw, ghi nguyên nhân.
+Pilot hiện có tám unit: `u-intro-01`–`u-intro-05`, `u-part1-01`, `u-part1-02`, `u-part1-03`; khớp `unit_id` trong `_meta/units.jsonl`. `_meta/book.json` có `scope.pdf_pages: [7,8,9,10,11,12]`, `scope.chapters` theo thứ tự bốn file trên, `status: "pilot_partial"`. Trang in/panel có thể thêm vào metadata sau khi đối chiếu ảnh; nếu khác raw, ghi nguyên nhân. Các unit chỉ dùng tra cứu, không cho phép đổi thứ tự dạy của sách.
 
 ## Rà soát theo nội dung
 
 - Mở đầu: giữ các cách mở lời, khoảng cách, kiểu câu nói chưa trọn, phong cách và biến đổi phát âm đúng nguồn. Không biến nhận xét của sách thành quy tắc phổ quát mới.
-- Bài 1–3: giữ hội thoại Nhật, ví dụ Nhật, mẫu, A/B/C và phân biệt sắc thái `ね`, `よ`, `よね`. Dịch từng lời thoại/ví dụ cần học sang Việt; nếu bản dịch Anh/Trung trong sách mâu thuẫn câu Nhật, ưu tiên câu Nhật/PDF và ghi quyết định vào log.
+- Bài 1–3: giữ hội thoại Nhật, ví dụ Nhật, mẫu, A/B/C, phần thực hành, MEMO và phân biệt sắc thái `ね`, `よ`, `よね`. Giữ mạch nguồn: hội thoại mở đầu, phần ý nghĩa/cách dùng, mẫu, điểm lưu ý rồi bài thực hành; không chuyển giải thích lên trước hội thoại vì template. Dịch từng lời thoại/ví dụ sang Việt; nếu bản dịch Anh/Trung trong sách mâu thuẫn câu Nhật, ưu tiên câu Nhật/PDF và ghi quyết định vào log. Mã track có chức năng luyện nghe được giữ hoặc dẫn rõ, không bỏ như dấu trang trí.
 - Hình có ý nghĩa: diễn đạt bối cảnh hoặc quan hệ mà hình bổ sung cho câu/mẫu. Không chép mô tả hình thô kiểu vị trí trái/phải, màu sắc, hoặc lệnh nhìn hình khi chi tiết ấy không giúp hiểu kaiwa.
 - PDF p0009 in công thức `～では→～ちゃ` nhưng ví dụ `来てはだめ→来ちゃだめ`. Đây là mâu thuẫn trong nguồn, không phải lỗi OCR nếu ảnh xác nhận như vậy; giữ ví dụ và ghi issue, không lặp công thức đáng nghi như quy tắc chắc chắn.
 - Kết thúc pilot: root chạy builder rồi validator theo [hợp đồng đầu ra](output-contract.md), đọc cảnh báo và kiểm lại bằng mắt. Validator không thay thế đối chiếu ngữ nghĩa.

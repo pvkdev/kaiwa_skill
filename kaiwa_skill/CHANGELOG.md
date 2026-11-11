@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2 — 2026-11-11
+
+- Làm rõ clean là biên tập dễ đọc, giữ đầy đủ nội dung, mạch triển khai, bài tập và các phần đặc trưng từng sách; không tuyển chọn kiến thức hoặc ép khuôn bài học.
+- Tách quy ước file/provenance khỏi hình thức trình bày; JP/VI là một cách trình bày, không phải template bắt buộc. Giữ mã track, dữ kiện, đáp án nguồn và sự lặp có chủ đích; QA kiểm cả mạch và độ đầy đủ.
+
 ## 0.3.1 — 2026-11-11
 
 - Bổ sung workflow clean song song ingest: phát hiện nguồn sẵn sàng, snapshot văn bản và checkpoint từng chương.
