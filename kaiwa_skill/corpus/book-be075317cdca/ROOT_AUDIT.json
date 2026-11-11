@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "reviewer_agent": "/root",
+  "reviewer_model": "gpt-6.1-sol",
+  "source_sha256": "be075317cdcab1bad0245126bf7c4fe9bb066fcb714bc19aa841f5373b612869",
+  "state": "in_progress",
+  "samples": {
+    "1": {
+      "reviewed_at": "2026-11-11T01:26:37.130791+00:00",
+      "markdown_sha256": "d02d2859afe7be826945a037cc5f56fff2195d6c1706cd931ea640d8c86d6419",
+      "render_sha256": "596a48b53977fc5c5bdf6a5d0209029f4956cd35ca8354c4a8265169f7eee977",
+      "scope": "Opened original full cover and entire Markdown; compared Shadowing title and Japanese/Indonesian/Thai/Vietnamese visible lines. Decorative headphones omitted as permitted.",
+      "result": "no_known_text_difference_in_sample"
+    },
+    "8": {
+      "reviewed_at": "2026-11-11T01:26:37.131785+00:00",
+      "markdown_sha256": "1565b72beac0ad43425aa897cc85cf4d753696b4fe7c60c5538119132218cbf0",
+      "render_sha256": "accb3b905bbedfa86152d1b522d149767da3356278b4df5fb711571258c5bba8",
+      "scope": "Opened full original page and entire Markdown. Sampled main Japanese prose, explanatory callouts and5-unit table with study hours/grammar and old JLPT column. Embedded miniature multilingual dialogue not confidently readable; agree needs_review. Full miniature transcription not independently validated.",
+      "result": "source_uncertainty_confirmed_in_sample"
+    },
+    "15": {
+      "reviewed_at": "2026-11-11T01:36:37.619819+00:00",
+      "markdown_sha256": "e1d44de384a47eeecfa2e37e5aa648886d76c711d94fe641eec6cd02ee2a1d91",
+      "render_sha256": "c135a018c632f783ecdda7912f482ea42e431f2599f7200ba95a97d75f546b62",
+      "scope": "Opened full original Thai introduction page and current draft. Source visibly readable; worker draft has headings but body paragraphs not transcribed because reviewer/OCR cannot attest Thai marks. This is a transcription/reviewer capability limitation, not proven source damage. Root has not verified the Thai body; keep needs_review.",
+      "result": "transcription_capability_review_required"
+    },
+    "73": {
+      "reviewed_at": "2026-11-11T02:48:11.806917+00:00",
+      "markdown_sha256": "d8690f1d3cb101307684baa70ae326c986ab809ac53db3a05a24235e9d63e0ca",
+      "render_sha256": "53a6964350d47340e5419beb2c6f5948865153a1bd574df82a1bde82b1d818a8",
+      "scope": "Opened full original Japanese page and read entire MD. Compared all10 dialogue pairs, D/C speaker-style markers, CD24, references8/9, printed ruby where visible and printed72. No independent full tight-ruby crop audit.",
+      "result": "no_known_text_difference_in_sample"
+    },
+    "74": {
+      "reviewed_at": "2026-11-11T02:48:11.806917+00:00",
+      "markdown_sha256": "4bd73fff33b5a8c09e856c4a65d909485b53c7d8406e8519b4ee1d8aba829d05",
+      "render_sha256": "ad309858ec481c65bbb972f0efe3d790ecb4860dd4a9aa63ec23f59506aa48ff",
+      "scope": "Opened full multilingual original and read entire MD. Sampled Indonesian/Vietnamese text and preserved source errors/meaning differences. Root questioned Thai row2 B as possibly missing นี่; owning worker opened3x crop and rejected the hypothesis. Root independently opened p0074-thai2-crop.png: visible ก็เป็นการ, matching MD, so no requested change. This does not validate every Thai mark; needs_review remains.",
+      "result": "thai_exactness_review_still_required"
+    }
+  },
+  "updated_at": "2026-11-11T02:48:11.806917+00:00",
+  "diagnostics": [
+    {
+      "at": "2026-11-11T02:06:59.855932+00:00",
+      "page": 15,
+      "method": "Local installed Tesseract with existing tha.traineddata, puretha psm6 full/body and psm7 single physical line, ignored cache only",
+      "observation": "Wholepage/body mode separates or drops tone/vowel marks. Single-line mode recovers more marks but still omits source tone in พร้อม and adds a character in ซึ่งมี. OCR output is draft only, not proof.",
+      "corpus_mutated": false
+    }
+  ]
+}
