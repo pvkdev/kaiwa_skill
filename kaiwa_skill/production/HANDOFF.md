@@ -1,5 +1,15 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
+## Book13 nối từ88 — 2026-11-11T03:03:46.992878+00:00
+
+- Worker cũ release sạch tại87:44verified,43needs_review,3rendered88–90,55pending91–145; build current. Root kiểm file/hash và lưu WIP `23c8f85`; đã spawn Sol/high `/root/production_book_13_root_cont2` tiếp88–145, nhận riêng QA rubyJPp85 và Thai exactness. Không làm lại verified prefix.
+- Root giữ lượt điều phối, tối đa3workers với sách11cont5/sách12cont3/sách13cont2. Luồng clean/knowledge song song không thuộc phạm vi ingest.
+
+## Book11 qua100 — 2026-11-11T02:55:58.910051+00:00
+
+- Root kiểm hash/build/claim sau worker cont4 release:100/138verified,101rendered,37pending,0issue. WIP commit `959063a`. Đã spawn Sol/high `/root/production_book_11_root_cont5` để tiếp101–138. p101 là sơ đồ nội các thời sách, không sửa theo cơ quan hiện nay.
+- Sách12 `/root/production_book_12_root_cont3` và13 `/root/production_book_13_sol` vẫn chạy. Root giữ lượt điều phối, QA và nối việc ngay; counts hiện tại xem CLI/roster thực.
+
 ## Checkpoint root mới nhất — 2026-11-11T02:48Z
 
 - Root vẫn giữ lượt, ba worker Sol/high thật đang chạy: sách11 `/root/production_book_11_root_cont4` từ95 sau WIP94 commit `7616377`; sách12 `/root/production_book_12_root_cont3` từ89 sau WIP88 commit `53b44e6`; sách13 `/root/production_book_13_sol` tiếp tục nguồn145trang. Prefix verified giữ nguyên, mỗi lượt claim mới sau release thật.
