@@ -1,20 +1,13 @@
-# Kiểm nguồn sớm — chưa QA bản clean
+# Nghiệm thu phạm vi PDF và giới hạn kiểm tra
 
-Root mở ảnhPDF105/106/136. Xác nhậnPDF105 in103, PDF106 in106: thiếu trang in104–105 trong nguồn, giữaUnit16. Không phục dựng. PDF105 còn mẫuemail9điểm; PDF106 còn便利なフレーズ/5W3H và các chúgiải a–d English/Chinese dù phầnNhật được dẫn có thể nằm trong trang thiếu. Phải chuyển những kiến thức còn lại sangViệt, không loại hết nhưdịchtrùng hoặc dựngJP.
+Bản đọc có đủ 136 trang PDF được cung cấp, 25 chương và 124 unit. Tác giả đối chiếu toàn sách; 131 trang author_checked và năm trang needs_review do giới hạn nguồn. Không còn pending, draft hoặc stale. Root chạy validator với --allow-source-issues: 0 lỗi, 10 cảnh báo cho năm page/unit tương ứng; đây không phải chứng nhận nguồn hoàn hảo.
 
-PDF136 có đáp án○×100, thôngtin tácgiả釜渕優子, tênしごとの日本語 ビジネスマナー編, 初版2008-10-01/第6刷2015-03-05,ISBN978-4-7574-1467-9,アルク. Chưa đốichiếu bảnclean các mục này. Đây chỉ là sourcepreflight của root, không nghiệm thu nội dung/coverage toàn136trang.
+Root mở 17 trang mẫu: 12–17, 23, 28–29, 44–45, 69, 93, 97, 105–106, 136. Đã so toàn Unit1, bảng cách gọi/12 động từ/32 cặp trang trọng/15 cụm đệm tại 44–45, sơ đồ phòng tiếp khách 93 và mọi thứ tự ghế trong đáp án 97. Mô tả vị trí, hướng nhìn, cửa, cửa sổ, hướng tàu và ô chưa điền được giữ trong bản text. Các sơ đồ đề ở những trang khác chưa được root rà độc lập toàn bộ.
 
-## QA chương đầu đã viết
+Root đọc độc lập toàn bộ 100 ký hiệu đáp án ở PDF136 qua hai crop rồi đối chiếu Markdown: đủ 100, không sai khác (44○, 56×). Chi tiết ở answer-key-root-check.json. Root không xác nhận lại toàn bộ ngữ nghĩa 100 câu quiz; tác giả đã đối chiếu và giữ mỗi câu Nhật, bản Việt cùng ô □, đáp án đặt sau đề.
 
-Root đọc toàn chươngUnit1 và mở cả sáu ảnhPDF12–17, đối chiếu2câuquiz/6lựa chọn/đápán in ngay sau đề;3hình biểu cảm; tư thế tay nam/nữ;3góc15/30/45độ và tên nguồn; điểm i–j gồm độ dài2giây;6ô manga đủ lờiNhật/Việt, thứ tự/vai/hành động, chúýk–p và bài viết về ra về trước. Trong phạm vi này chưa phát hiện phần cần sửa. Các glossEnglish/Chinese cuối trang lặp đúng kiến thứcNhật hiện hữu, đã chuyển nghĩa sangViệt ở phần tương ứng; không bỏ một loại từ điển riêng như lỗi đã gặp ở workbook.
+Đã sửa theo QA: vai cấp trên ở ô5 PDF23, câu ngập ngừng ちょっとね ở ô6; lời dẫn tìm tranh PDF28 đổi thành phép so sánh text tự đủ, excerpt Nhật bị dừng được giữ ở metadata; divider PDF73 có unit/anchor khớp evidence. Root không sửa nội dung nguồn hoặc điền đáp án vào đề.
 
-Root chưa QA toànfront1–10 hoặc Unit2trở đi. Việc mở105/106/136 phía trên chỉ là kiểm nguồn, chưa kiểm bảnclean của Unit16 hoặc100câu○×. Chưa nghiệm thu full136trang.
+Giới hạn nguồn vẫn còn: phụ đề rất nhạt ở 23 và 69; câu dẫn tại 28 kết thúc はずで mà không tiếp ở 29; PDF105/106 nhảy từ trang in103 sang106, thiếu trang in104–105 của Unit16. Root đã mở những trang này. Giữ phần rõ và không dựng phần mất. Các khác biệt chú giải/những tên nghe nhầm được ghi trong editorial-log; không chuẩn hóa chúng theo suy đoán.
 
-ChapterSHA256: d155e87d255c60e31734de9b16f848cb8ef4da44e3baa025634d654fdc601067
-Thời điểmUTC: 2026-11-11T07:20:13.433427+00:00
-
-## Mẫu Unit2 và lỗi nguồn Unit3
-
-Root mởPDF23/crop6× phụđề vàcrop ô5–6. Phụđề mờ chưa xác nhận chắc; giữissue hẹp. Sửa lỗi bảnclean: ô5 nói bởi上司 (nam đeo kính), không phải同僚; ô6 inちょっとね, không phảiそれにね. Tác giả đã báo sửa/refreshedcheckpoint; root cần đọc lại bản hiện hành trước release. Root mởPDF28–29, xác nhận lời dẫn dưới tranh kết thúcはずで và không tiếp ở29. Tác giả đã chuyển so sánh trước/sau thànhtext tự đủ, excerptJapanese bị cắt giữ ởmeta, không nốiす. Chưa QA toànUnit2/3 hoặc bài sau.
-
-Root đã mởPDF44–45 và đọc toàn các bảng tương ứngUnit6: cách gọi mình/đối phương,12động từ với3cột,32cặp trang trọng,15cụm đệm vàđiểm f–i. Chưa thấy fix trong hai trang này. Không mở/đối chiếu toànUnit6 ởphần manga46–47. Các cách đọc minhnhật/đêmtrước thuộc mục từ cần giữ, không phảihelperfurigana.
+Audio: tác giả đã rà toàn PDF và ghi not_seen về thông tin nghe; actual_files vẫn not_checked. Metadata giữ đúng ISBN/ấn bản2008, in lần6 năm2015 theo colophon. Các lời khuyên văn hóa, luật hoặc công nghệ được giữ theo bối cảnh sách. Đây chưa phải full independent semantic review hoặc tài liệu đã cập nhật cho hiện tại.
