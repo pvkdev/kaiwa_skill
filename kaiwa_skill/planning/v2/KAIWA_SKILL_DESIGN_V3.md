@@ -6,6 +6,8 @@ Trạng thái: cập nhật skill và hợp đồng nháp theo feedback về g�
 
 Skill tạo **nội dung**. App lo học từ vựng, phát audio, shadowing toàn tình huống, shadowing chia vai rồi đổi vai, Live AI. Không thiết kế điểm phát âm, đánh giá người học, bài kiểm tra, khóa bài, số buổi hay thời lượng bắt buộc. Người học chọn tự do.
 
+Ưu tiên mới nhất: **lộ trình tốt quan trọng hơn dùng hết tài nguyên**. Tìm chất liệu trong toàn kho nhưng không bắt đạt 100%, không nhồi bài hoặc từ để tăng tỷ lệ dùng sách. Theo dõi nguồn giúp tra cứu, tránh lặp không cần thiết và tìm cơ hội nâng cấp; phần chưa chọn không tự tạo backlog bắt buộc. Kiểm kê chi tiết có thể làm dần, không cần hoàn tất toàn kho trước pilot.
+
 Chặng có một chủ đề lớn, nhiều cụm sự kiện; trong đó xen kẽ kiến thức, danh sách từ, tên ngữ pháp và nhiều tình huống hội thoại. Không có công thức bảy bước áp cho mọi chặng. Mỗi cấp có thể quay lại cùng chủ đề, nhưng khác phạm vi việc cần làm, quan hệ và độ phức tạp của cuộc trao đổi.
 
 ## Bài sau gối đầu bài trước
@@ -49,7 +51,7 @@ Hạt giống V4.1 là danh sách định hướng. Chặng mới phải tra l�
 - Tượng thanh, quán ngữ, cảm xúc, rút gọn đi vào tình huống phù hợp như chất liệu ngôn ngữ.
 - Memo web giúp phát hiện chủ đề/góc mới; mục lục không được coi là nguồn nguyên văn cho hội thoại.
 
-Tận dụng tất cả sách trên toàn lộ trình, không nhét mọi sách vào mỗi chặng. Theo dõi đóng góp thật ở `sources.json`; phân biệt đã đọc, mới thấy chỉ mục, chuyển soạn và viết mở rộng. Ghi CD/track khi có bằng chứng nhưng không gắn audio cũ vào lời đã viết lại.
+Khai thác chọn lọc thế mạnh các sách trên toàn lộ trình; không bắt dùng hết mọi phần của mỗi cuốn. Theo dõi đóng góp thật ở `sources.json`; phân biệt đã đọc, mới thấy chỉ mục, chuyển soạn và viết mở rộng. Ghi CD/track khi có bằng chứng nhưng không gắn audio cũ vào lời đã viết lại.
 
 ## Ngữ pháp N5–N4 / Minna
 
@@ -71,7 +73,7 @@ Helper thực thi: `.agents/skills/kaiwa-stage-content/scripts/stage_work.py`. C
 
 1. Chọn ba chặng đại diện: một đời sống sơ cấp, một công việc trung cấp có nhánh từ chối/điều kiện, một thượng cấp có sắc thái và triển khai ý. Viết chậm, đủ sâu rồi người dùng xem chất lượng và độ tiện import.
 2. Điều chỉnh hợp đồng dữ liệu sau pilot; không chốt cứng schema vì chưa biết đủ dạng nội dung thực tế.
-3. Khi được giao chạy hàng loạt, làm từng chặng, checkpoint đều đặn. Tổng hợp độ bao phủ nguồn từ các revision đã chốt để tìm cuốn/góc còn ít được tận dụng.
+3. Khi được giao chạy hàng loạt, làm từng chặng, checkpoint đều đặn. Rà đóng góp nguồn và khoảng trống mục tiêu học từ các revision đã chốt; chỉ bổ sung phần chưa dùng khi có ích cho lộ trình, không chạy theo tỷ lệ phủ sách.
 4. Khi yêu cầu nâng cấp một chặng, đọc revision và sổ biên tập trước, bổ sung có mục tiêu; không tái sinh cả lộ trình.
 
 V4.1 đã có [gói sửa nguồn và thống kê](V4_1_SOURCE_FIXES.md); khi nhận chặng vẫn phải đọc phần nguồn dùng thật. Token pool hiện có chỉ là nơi bắt đầu tìm, không giới hạn nơi được đưa Speak Japanese/nguồn shadowing vào. Khung topic, 194 UID và thứ tự không cần đổi cho feedback này; cần đổi cách bố trí bài **bên trong** chặng và nối các bài với nhau. Skill không coi `fact_check` hoặc `kind: book` của hạt giống là chứng nhận ngữ nghĩa.

@@ -201,7 +201,7 @@ Ghi chú nhịp: Đ = chặng đời sống, C = chặng công việc, theo th�
 - **B09/B13/B14:** なめらか và Shadowing: câu mẫu/hội thoại phù hợp cấp độ, giữ ngữ cảnh và sắc thái.
 - **B25/B26/B27:** Nama Chuukei: hội thoại/câu thực hành, giữ ý định, phản hồi và xác nhận.
 
-Đây là chính sách bố trí nội dung, chưa phải các node đã được biên soạn hoặc video đã tồn tại. Giữ nguyên 194 UID, topic và thứ tự; phân bổ bài nguồn cụ thể khi đọc sâu từng chặng.
+Đây là chính sách bố trí nội dung, chưa phải các node đã được biên soạn hoặc video đã tồn tại. Giữ nguyên 194 UID, topic và thứ tự; phân bổ bài nguồn cụ thể khi đọc sâu từng chặng. Ưu tiên chất lượng và mục tiêu giao tiếp, không bắt dùng 100% tài nguyên. Phần nguồn chưa chọn là thông tin tham khảo, không mặc nhiên là lỗi hoặc backlog phải hoàn thành.
 
 ### Level Sơ
 
@@ -678,7 +678,7 @@ Ghi chú nhịp: Đ = chặng đời sống, C = chặng công việc, theo th�
 
 ## 5. Báo cáo phủ nguồn
 
-| Nguồn | Mục tiêu chỉ mục | Đã gắn | Chưa gắn |
+| Nguồn | Tập chỉ mục theo dõi | Đã gắn | Chưa gắn |
 |---|---|---|---|
 | S01 | 60 | 60 | — |
 | NHK 48 | 48 | 48 | — |
@@ -729,6 +729,8 @@ Ghi chú nhịp: Đ = chặng đời sống, C = chặng công việc, theo th�
 | B27 | 10 | 10 | — |
 
 Tính từ token của tình huống **và** ngân hàng. Mẫu số là tập nhãn chỉ mục được khai báo trong `KAIWA_CHANG_V4_1_META.json`, không phải số trang, số đoạn đã đọc hoặc tỷ lệ nội dung đã tận dụng. Token con quy về mục cha trước khi đếm; không cộng trùng vì có nhiều scene/STAGE. Các phần/mục con khác độ sâu giữa các sách không dùng để so sánh lượng kiến thức.
+
+Độ phủ là thông tin tra cứu và cân nhắc nâng cấp, không phải chỉ tiêu phải đạt 100% để hoàn thành lộ trình. Ưu tiên bài học hữu ích, đúng cấp và có mạch; phần chưa chọn không mặc nhiên cần bổ sung.
 
 B03 bỏ U2–U4 và U16 khỏi tập mục tiêu nói. B08 đếm 61 nhãn (gồm 33 cảnh P4), sửa con số 58 cũ. B14 có đủ U1–U5 ở mức ngân hàng, chưa có định vị section. B21/B22/B23 cùng số bài nhưng có vai trò khác nhau. S04 chỉ là T4–T9 đã nhận trong memo; S15 cơ sở nằm trong tập S14 cùng chủ đề. NHK công sở chỉ có 43 tập trong memo, không giả định #31/#32/#34.
 

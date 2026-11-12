@@ -174,8 +174,9 @@ def sections(rows, meta, original):
         expected = target["units"]
         missing = [u for u in expected if u not in used[target["id"]]]
         coverage.append([target["label"], len(expected), len(expected) - len(missing), ", ".join(missing) or "—"])
-    result[5] = "## 5. Báo cáo phủ nguồn\n\n" + table(["Nguồn", "Mục tiêu chỉ mục", "Đã gắn", "Chưa gắn"], coverage)
+    result[5] = "## 5. Báo cáo phủ nguồn\n\n" + table(["Nguồn", "Tập chỉ mục theo dõi", "Đã gắn", "Chưa gắn"], coverage)
     result[5] += "\n\nTính từ token của tình huống **và** ngân hàng. Mẫu số là tập nhãn chỉ mục được khai báo trong `KAIWA_CHANG_V4_1_META.json`, không phải số trang, số đoạn đã đọc hoặc tỷ lệ nội dung đã tận dụng. Token con quy về mục cha trước khi đếm; không cộng trùng vì có nhiều scene/STAGE. Các phần/mục con khác độ sâu giữa các sách không dùng để so sánh lượng kiến thức."
+    result[5] += "\n\nĐộ phủ là thông tin tra cứu và cân nhắc nâng cấp, không phải chỉ tiêu phải đạt 100% để hoàn thành lộ trình. Ưu tiên bài học hữu ích, đúng cấp và có mạch; phần chưa chọn không mặc nhiên cần bổ sung."
     result[5] += "\n\nB03 bỏ U2–U4 và U16 khỏi tập mục tiêu nói. B08 đếm 61 nhãn (gồm 33 cảnh P4), sửa con số 58 cũ. B14 có đủ U1–U5 ở mức ngân hàng, chưa có định vị section. B21/B22/B23 cùng số bài nhưng có vai trò khác nhau. S04 chỉ là T4–T9 đã nhận trong memo; S15 cơ sở nằm trong tập S14 cùng chủ đề. NHK công sở chỉ có 43 tập trong memo, không giả định #31/#32/#34."
     book_table = []
     for i in range(1, 28):
