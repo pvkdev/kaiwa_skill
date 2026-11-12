@@ -1,4 +1,4 @@
-# Dữ liệu nội dung chặng — bản nháp V3
+# Dữ liệu nội dung chặng — bản nháp V3.1
 
 Đây là hợp đồng biên soạn độc lập với engine app. Chỉ chốt giao diện import sau khi người dùng xem các chặng pilot. Không thêm field chấm điểm hoặc cơ chế học chỉ vì engine có thể hỗ trợ.
 
@@ -10,7 +10,9 @@ knowledge/<node_id>.md    nội dung giải thích, ví dụ và cách dùng
 vocabulary/<node_id>.json danh sách từ
 grammar/<node_id>.json    tên mẫu ngữ pháp và tham chiếu
 situations/<node_id>.json hội thoại của một tình huống cụ thể
+shadowing/<node_id>.json  nhóm câu mẫu/hội thoại luyện, hoặc trỏ tình huống
 live/<node_id>.json       danh mục context cho một node Live AI
+learning-map.json         các bài, điều mới, bài trước đã đọc và nội dung dùng lại
 sources.json             sổ nguồn và quá trình đọc/áp dụng
 editorial.md              phạm vi, độ bao phủ, quyết định, phần thiếu, lịch sử sửa
 live-context.md          bản context đầy đủ do helper ghép từ các node, không sửa tay
@@ -22,7 +24,7 @@ Ví dụ rút gọn cấu trúc, không phải một chặng đã biên soạn:
 
 ```json
 {
-  "schema_version": "3.0-draft",
+  "schema_version": "3.1-draft",
   "stage_uid": "<UUID từ registry>",
   "display_code": "T-xx",
   "title": "Xin phép trong công việc",
@@ -45,12 +47,67 @@ Ví dụ rút gọn cấu trúc, không phải một chặng đã biên soạn:
 
 Không phải mọi chặng đều cần đúng bộ node như ví dụ. Một chặng có thể có nhiều node kiến thức/từ/ngữ pháp, một hoặc nhiều sự kiện; có đúng **một node Live AI**. Node ngữ pháp chỉ xuất hiện nếu hữu ích. Quan hệ `supports` hoặc `related_ids` là liên kết nội dung, không phải điều kiện mở khóa.
 
+V3.1 thêm nhóm bài/gối đầu và loại node `shadowing`. Helper vẫn đọc bản 3.0 cũ; khi nâng cấp thì tạo draft/revision mới, giữ ID, thêm sổ bài và các trường mới, không sửa snapshot cũ.
+
+## Nhóm bài và gối đầu
+
+`learning-map.json` là sổ biên soạn, không phải trạng thái người học. Các `node_ids` của bài phân chia toàn bộ node trừ Live đúng một lần, theo thứ tự trong `stage.json`. Danh sách từ chung có thể được đặt ở một bài rồi tham chiếu từ nhiều bài khác. Live không tính thành một bài để chọn hai bài gần nhất.
+
+```json
+{"schema_version":"1.0","stage_uid":"<UUID chặng>","lessons":[
+  {"id":"l01","summary":"Xin phép và xác nhận phạm vi cho phép",
+   "node_ids":["k01","v01","g01","s01"],"lookback":[],"reuse":[],
+   "pending_previous":[],"reason_no_reuse":"Bài đầu tiên trong ví dụ cấu trúc này."},
+  {"id":"l02","summary":"Đáp lại lời từ chối và chọn phương án khác",
+   "node_ids":["k02","s02"],
+   "lookback":[{"stage_uid":"<cùng UUID>","revision":null,"lesson_id":"l01"}],
+   "reuse":[{"from":{"stage_uid":"<cùng UUID>","revision":null,"lesson_id":"l01","node_id":"k01"},
+             "in":[{"node_id":"s02","item_id":"s02-t01"}],"purpose":"Dùng lại cách xin phép trước phản hồi từ chối."}],
+   "pending_previous":[]}
+]}
+```
+
+Đây là ví dụ nối liên kết, không chứng minh đã biên soạn bài. Trước bài 3, `lookback` thường có l01 và l02; thêm bài xa hơn khi phù hợp. Nếu không dùng lại gì, ghi lý do; không có tỷ lệ ôn hay số từ cũ bắt buộc. Phần còn thiếu do chưa có bài trước nằm trong `pending_previous` và nhật ký, không bịa thành đã học.
+
+Tham chiếu nội bộ dùng `revision: null`; `lesson_id` phải đứng trước. Khác chặng dùng UUID + revision `r0001`… đã chốt + lesson ID, và `from` chỉ rõ node/item được tái sử dụng. `item_id` có thể là ID từ, mẫu câu, ví dụ hoặc lượt nói; bỏ field đó nếu dùng lại ý kiến thức của cả node. `in` chỉ rõ nơi tái xuất hiện ở bài hiện tại. Chưa có bài trước thì chỉ ghi pending, không trỏ draft khác.
+
+Helper kiểm vị trí/ID, đọc các file của bài trước, pin hash và so revision hiện hành khi kiểm draft. Nó không xác minh rằng câu mới thực sự vận dụng đúng ý cũ. Xem [quy trình gối đầu](progression.md) để chọn kiến thức, mở rộng từ vựng và xử lý nâng cấp.
+
 ## Kiến thức Markdown
 
 - Tiêu đề rõ; giải thích Việt có chiều sâu vừa đủ cho vấn đề, ví dụ Nhật kèm nghĩa Việt. Giải thích ai nói với ai, ý định, sắc thái, phản ứng và cách tiếp nối khi nguồn có chất liệu.
 - Giữ những phần hay của sách: tổ chức lượt nói, phản hồi, lược âm, chiến lược lịch sự, văn hóa, lỗi dễ hiểu sai. Không ép mọi bài thành cùng một bộ heading, không giới hạn cứng số chữ.
 - Ví dụ, gợi ý luyện nói, biến thể hội thoại của sách có ích thì chuyển thành nội dung học/nhánh nói thích hợp. Không bê bài viết, bài thi, đáp án kiểm tra vào app.
 - Dẫn nguồn bằng ID trong sổ nguồn; không nhồi đường dẫn file, ghi chú OCR hoặc nhận xét kỹ thuật vào phần người học đọc.
+
+Với bài mới lấy từ B11/B12 Speak Japanese, node có dạng:
+
+```json
+{"id":"k03","type":"knowledge","title":"Tên bài kiến thức",
+ "path":"knowledge/k03.md","source_family":"speak_japanese",
+ "source_refs":["src_sj03"],"video":{"status":"planned","asset_ref":null},
+ "practice_node_id":"sh03"}
+```
+
+Trong `stage.nodes`, `sh03` phải đứng **ngay sau** k03. MD chứa bài giảng thực sự chứ không chỉ tên mẫu; video để người dùng làm sau. Các ví dụ dùng để luyện nối bằng anchor `example_id`, ví dụ `<a id="ex03-01"></a>` trong MD. Phần ví dụ sách và phần mở rộng có gối đầu phải phân biệt nguồn/viết mới.
+
+## Bài shadowing
+
+```json
+{"id":"sh03","knowledge_ids":["k03"],"source_refs":["src_sj03"],"items":[
+  {"id":"sh03-e01","kind":"sentence","example_id":"ex03-01",
+   "ja":"この料理、おいしいですね。","vi":"Món này ngon nhỉ.","authorship":"original_extension"},
+  {"id":"sh03-d01","kind":"dialogue","example_id":"ex03-02",
+   "speakers":[{"id":"A","role":"Người hỏi"},{"id":"B","role":"Người đáp"}],
+   "turns":[{"id":"sh03-d01-t01","speaker":"A","ja":"これ、辛いですか。","vi":"Món này cay không?"},
+            {"id":"sh03-d01-t02","speaker":"B","ja":"少し辛いですよ。","vi":"Hơi cay đấy."}],
+   "authorship":"original_extension"}
+]}
+```
+
+Các câu trên chỉ minh họa dữ liệu viết mới, không gán cho sách. Mỗi bài luyện phải thực hành đúng điểm kiến thức vừa giảng, điều này do biên tập kiểm lại. Nếu `knowledge_ids` chứa node Speak Japanese, mỗi item cần `example_id` tồn tại trong MD liên quan. Anchor chứng minh liên kết, không chứng minh nội dung khớp về nghĩa.
+
+Để dùng lại tình huống đã có mà không sao chép lời, item có thể là `{"id":"sh05-r01","kind":"situation_ref","situation_id":"s01"}`. Helper đưa cả tình huống gốc vào context chặng qua node situation. Hội thoại mini dùng hai vai A/B; câu độc lập chỉ có Nhật–Việt, không bịa vai thứ hai. Các nhóm 5500/必須700/Nama/なめらか/Shadowing dùng loại node này với nguồn thật, không bắt có video.
 
 ## Một tình huống
 
@@ -89,11 +146,11 @@ Hai vai phải thực sự có lời nói. Sự kiện nhiều người được
 
 ```json
 {"id":"v01","scope":{"event_ids":["e01"]},"items":[
-  {"id":"v01-w01","ja":"会議室","reading":"かいぎしつ","vi":"phòng họp","source_refs":["src01"]}
+  {"id":"v01-w01","ja":"会議室","reading":"かいぎしつ","vi":"phòng họp","exposure":"new","source_refs":["src01"]}
 ]}
 ```
 
-`scope` có thể dùng `stage_uid`, `event_ids` hoặc `situation_ids`. Chọn theo mức liên quan, không chia vụn nếu từ được dùng xuyên suốt. Reading là dữ liệu tùy chọn, không nhúng furigana vào hội thoại. Không thêm dạng bài vocabulary engine, lịch ôn hay ngưỡng đạt.
+`scope` có thể dùng `stage_uid`, `lesson_ids`, `event_ids` hoặc `situation_ids`. Chọn theo mức liên quan, không chia vụn nếu từ được dùng xuyên suốt. Danh sách bao phủ các nhóm từ thực tế trong phạm vi topic, không chỉ những từ đang có trong hội thoại. V3.1 đánh dấu `exposure: new|review` cho từng item; từ review có liên kết `reuse` từ item cũ đến item hiện tại trong sổ bài. Xét đúng nghĩa/cách dùng. Reading là dữ liệu tùy chọn, không nhúng furigana vào hội thoại. Không thêm dạng bài vocabulary engine, lịch ôn hay ngưỡng đạt.
 
 ```json
 {"id":"g01","items":[
@@ -129,4 +186,4 @@ Lưu thông tin audio biết được dưới `audio_evidence`: sách/ấn bản
  "context_export":"live-context.md"}
 ```
 
-Danh sách phải bao gồm mọi node còn lại của chặng. Helper ghép nguyên nội dung các node đó theo thứ tự, giữ toàn bộ hội thoại/từ/ngữ pháp, thêm bối cảnh chặng và sổ nguồn để app có thể lấy context. Không tạo đề kiểm tra, rubric, máy trạng thái AI hoặc bắt AI chỉ được hỏi một tập câu. App quyết định cách nạp/lọc context và cách người học mở rộng free talk.
+Danh sách phải bao gồm mọi node còn lại của chặng, kể cả shadowing. Helper ghép nguyên nội dung các node đó theo thứ tự, giữ toàn bộ hội thoại/từ/ngữ pháp, thêm bối cảnh chặng, sổ gối đầu và sổ nguồn. Ví dụ `context_node_ids` phải bổ sung các node shadowing nếu chúng có mặt; không chỉ chép danh sách rút gọn phía trên. Không nạp đệ quy toàn bộ lịch sử các chặng vào context; nội dung cũ được chọn đã đi vào bài hiện tại, còn tham chiếu giúp tra ngược. Không tạo đề kiểm tra, rubric, máy trạng thái AI hoặc bắt AI chỉ được hỏi một tập câu. App quyết định cách nạp/lọc context và cách người học mở rộng free talk.

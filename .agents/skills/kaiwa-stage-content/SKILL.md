@@ -1,6 +1,6 @@
 ---
 name: kaiwa-stage-content
-description: Biên soạn hoặc nâng cấp nội dung một chặng Kaiwa từ 27 sách đã clean và memo web; tạo kiến thức, hội thoại đa tình huống, danh sách từ, tên ngữ pháp và context Live AI, có checkpoint để tiếp tục an toàn.
+description: Biên soạn hoặc nâng cấp chặng Kaiwa từ 27 sách và memo; nội dung gối đầu, Speak Japanese thành kiến thức dành cho video kèm shadowing, các nguồn luyện nói thành bài shadowing theo chủ đề, có checkpoint.
 ---
 
 # Biên soạn chặng Kaiwa
@@ -31,12 +31,14 @@ Mục tiêu là một lộ trình chung tận dụng chiều sâu và vai trò k
 2. Xác định phạm vi chủ đề và cách nói phù hợp cấp độ. Xem hạt giống như gợi ý; token nguồn V4.1 có thể sai. Kiểm lại nội dung nguồn thực tế trước khi sử dụng.
 3. Quét chỉ mục của đủ 27 sách để tìm nguồn liên quan; đọc trọn các phần liên quan được chọn. Ghi rõ `index_only` hay `read` trong sổ nguồn. Không đọc lại toàn bộ 27 sách cho mỗi chặng, không gọi việc tìm thấy heading là đã đọc nội dung.
 4. Dừng để thiết kế bản đồ sự kiện/tình huống: mục đích, quan hệ, diễn biến, kết quả, chỗ hiểu nhầm và cách xử lý. Ghi cả những lỗ hổng chưa có nguồn. Không áp số lượng node, từ, tình huống hay độ dài hội thoại cố định.
-5. Lập thứ tự node xen kẽ kiến thức, danh sách từ, tên ngữ pháp và hội thoại. Đặt kiến thức ngay nơi nó giúp người học hiểu tình huống. Không dồn tất cả sách thành các nhánh học riêng.
-6. Biên soạn từng cụm sự kiện. Một kết quả khác có ý nghĩa giao tiếp cần hội thoại riêng: đồng ý, từ chối, có điều kiện, chờ xác nhận, đề nghị phương án khác… Không nhân bản chỉ để tăng số lượng.
-7. Mỗi tình huống có hội thoại hoàn chỉnh hai vai, nghĩa Việt từng lượt. Cùng một dữ liệu phục vụ shadowing toàn bộ và đổi vai A/B; không cần viết thêm các chế độ luyện.
-8. Tạo một node Live AI cho cả chặng, trỏ tới toàn bộ nội dung có nghĩa của chặng. Xuất context đầy đủ; bản tóm tắt chỉ là phần mở đầu, không thay nội dung.
-9. Đọc lại tiếng Nhật, độ tự nhiên, dịch nghĩa, khác biệt cấp độ, các nhánh và chứng cứ nguồn. Đây là kiểm tra biên tập của tác giả, không phải bài kiểm tra người học. Script chỉ kiểm tra cấu trúc; không chứng minh chất lượng hay đọc nguồn.
-10. Ghi checkpoint sau mỗi phần đáng kể. Chỉ chốt revision khi nội dung đã được đọc lại; giữ các khoảng trống có chủ ý trong `editorial.md`, không che bằng nhãn hoàn thành.
+5. Trước khi viết ví dụ/hội thoại, làm theo [gối đầu và phân loại bài học](references/progression.md): đọc hai bài gần nhất đã có, tìm thêm bài cũ liên quan; chọn kiến thức/từ/ngữ pháp dùng lại và ghi vị trí áp dụng trong `learning-map.json`. Không coi nội dung chưa biên soạn là đã dạy.
+6. Lập thứ tự node xen kẽ kiến thức, danh sách từ, tên ngữ pháp, shadowing và tình huống. **B11/B12 Speak Japanese phải thành cặp kiến thức Markdown dành cho video → shadowing các ví dụ tương ứng ngay sau nó.** Hiện chỉ tạo MD và dữ liệu luyện, người dùng làm video sau. B08 必須700 là ngoại lệ: nhóm theo topic thành shadowing, không bắt làm video kiến thức.
+7. Biên soạn từng cụm sự kiện. Một kết quả khác có ý nghĩa giao tiếp cần hội thoại riêng: đồng ý, từ chối, có điều kiện, chờ xác nhận, đề nghị phương án khác… Không nhân bản chỉ để tăng số lượng.
+8. Mỗi tình huống có hội thoại hoàn chỉnh hai vai, nghĩa Việt từng lượt. Bài shadowing riêng có thể chứa câu mẫu, hội thoại ngắn hoặc tham chiếu tình huống; không bịa vai B cho một câu độc lập. Dùng Nama Chuukei, なめらか, Shadowing, 5500 theo nhóm và 必須700 theo topic như **nội dung luyện thực sự**, không chỉ ghi token ngân hàng.
+9. Soạn nhóm từ đủ cho lĩnh vực và những biến thể thực tế của topic, không chỉ các từ tình cờ có trong hội thoại. Đánh dấu từ mới/từ ôn; đưa từ đã học vào câu và cuộc thoại mới một cách tự nhiên. Kiểm tên ngữ pháp cần dùng trước và sau khi viết; gối đầu cũng áp dụng cho ví dụ Speak Japanese.
+10. Tạo một node Live AI cho cả chặng, trỏ tới toàn bộ nội dung có nghĩa của chặng, gồm shadowing. Xuất context đầy đủ; bản tóm tắt không thay nội dung.
+11. Đọc lại tiếng Nhật, độ tự nhiên, dịch nghĩa, khác biệt cấp độ, các nhánh, sự gối đầu và chứng cứ nguồn. Đây là kiểm tra biên tập của tác giả, không phải bài kiểm tra người học. Script không chứng minh chất lượng hay đọc nguồn.
+12. Ghi checkpoint sau mỗi bài/cụm đáng kể, gồm sổ gối đầu và việc còn thiếu. Chỉ chốt revision sau khi đọc lại; giữ các khoảng trống có chủ ý trong `editorial.md`.
 
 ## Pause, tiếp tục, sửa chặng
 

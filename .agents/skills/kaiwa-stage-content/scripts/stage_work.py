@@ -84,10 +84,156 @@ def source_pins(repo, draft):
     return pins
 
 
+def item_ids(value):
+    """IDs of sentence/list items and dialogue turns, for content references."""
+    if isinstance(value, dict):
+        return ({value["id"]} if value.get("id") else set()) | set().union(*(item_ids(v) for v in value.values()))
+    if isinstance(value, list):
+        return set().union(*(item_ids(v) for v in value))
+    return set()
+
+
+def lesson_key(ref):
+    return (ref["stage_uid"], ref.get("revision"), ref["lesson_id"])
+
+
+def prior_lesson(ref, draft, stage, repo):
+    uid, revision, lid = lesson_key(ref)
+    if uid == stage["stage_uid"]:
+        if revision is not None:
+            raise ValueError("Local lesson references must use revision null")
+        content, pins = draft, {}
+    else:
+        uid = str(uuid.UUID(uid))
+        if not revision or not re.fullmatch(r"r\d{4,}", revision):
+            raise ValueError("Earlier stage lesson needs a finalized revision")
+        registry = read(repo / "kaiwa_skill/planning/v2/chang_registry.json")
+        roadmap = repo / "kaiwa_skill/planning/v2/KAIWA_CHANG_V4_1.jsonl"
+        order = [json.loads(s)["uid"] for s in roadmap.read_text(encoding="utf-8-sig").splitlines() if s.strip()] if roadmap.exists() else list(registry)
+        if uid not in registry or uid not in order or order.index(uid) >= order.index(stage["stage_uid"]):
+            raise ValueError("Lookback must point to an earlier curriculum stage")
+        previous = repo / "kaiwa_skill/courseware" / uid
+        pointer = previous / "current.json"
+        if read(pointer)["revision"] != revision:
+            raise ValueError("Earlier lesson revision changed; reread and update lookback: " + uid)
+        revision_root = previous / "revisions" / revision
+        content = revision_root / "content"
+        manifest_path = revision_root / "manifest.json"
+        manifest = read(manifest_path)
+        pins = {pointer.relative_to(repo).as_posix(): sha(pointer), manifest_path.relative_to(repo).as_posix(): sha(manifest_path)}
+        for name in ["stage.json", "learning-map.json"]:
+            path = content / name
+            if manifest["files"].get(name) != sha(path):
+                raise ValueError("Previous revision content changed: " + str(path))
+            pins[path.relative_to(repo).as_posix()] = sha(path)
+    previous_map = read(content / "learning-map.json")
+    lesson = next((l for l in previous_map["lessons"] if l["id"] == lid), None)
+    if lesson is None:
+        raise ValueError("Unknown earlier lesson: " + lid)
+    previous_stage = read(content / "stage.json")
+    if previous_stage["stage_uid"] != uid or previous_map["stage_uid"] != uid:
+        raise ValueError("Previous lesson stage UID mismatch")
+    nodes = {n["id"]: n for n in previous_stage["nodes"]}
+    if uid != stage["stage_uid"]:
+        for nid in lesson["node_ids"]:
+            path = inside(content, nodes[nid]["path"])
+            if manifest["files"].get(nodes[nid]["path"]) != sha(path):
+                raise ValueError("Previous lesson file changed: " + str(path))
+            pins[path.relative_to(repo).as_posix()] = sha(path)
+    return lesson, nodes, content, pins
+
+
+def learning_pins(repo, draft):
+    path = draft / "learning-map.json"
+    if not path.exists():
+        return {}
+    stage = read(draft / "stage.json")
+    pins, seen = {}, set()
+    for lesson in read(path)["lessons"]:
+        for ref in lesson.get("lookback", []):
+            key = lesson_key(ref)
+            if key not in seen:
+                pins.update(prior_lesson(ref, draft, stage, repo)[3])
+                seen.add(key)
+    return pins
+
+
+def validate_learning(draft, stage, repo, errors):
+    learning = read(draft / "learning-map.json")
+    lessons = learning.get("lessons", [])
+    lids = [l["id"] for l in lessons]
+    if learning.get("schema_version") != "1.0" or learning.get("stage_uid") != stage["stage_uid"]:
+        errors.append("learning-map schema/stage UID mismatch")
+    if not lessons or len(set(lids)) != len(lids):
+        errors.append("Learning map needs distinct lessons")
+    expected = [n["id"] for n in stage["nodes"] if n["type"] != "live_context"]
+    if [nid for l in lessons for nid in l["node_ids"]] != expected:
+        errors.append("Lesson node groups must partition all non-live nodes in order")
+    nodes = {n["id"]: n for n in stage["nodes"]}
+    review_targets = set()
+    for i, lesson in enumerate(lessons):
+        if not lesson.get("summary"):
+            errors.append("Lesson needs a summary of new content: " + lesson["id"])
+        if not lesson.get("reuse") and not lesson.get("reason_no_reuse") and not lesson.get("pending_previous"):
+            errors.append("Missing reuse or an editorial reason: " + lesson["id"])
+        looked = {}
+        for ref in lesson.get("lookback", []):
+            if ref["stage_uid"] == stage["stage_uid"] and (ref["lesson_id"] not in lids or lids.index(ref["lesson_id"]) >= i):
+                errors.append("Lookback cannot point to the same/future lesson: " + lesson["id"])
+                continue
+            looked[lesson_key(ref)] = prior_lesson(ref, draft, stage, repo)
+        for reuse in lesson.get("reuse", []):
+            ref = reuse["from"]
+            if lesson_key(ref) not in looked:
+                errors.append("Reuse source must be in reviewed lookback: " + lesson["id"])
+                continue
+            old_lesson, old_nodes, old_content, _ = looked[lesson_key(ref)]
+            if ref["node_id"] not in old_lesson["node_ids"]:
+                errors.append("Reuse source node not in earlier lesson")
+                continue
+            old_node = old_nodes[ref["node_id"]]
+            if ref.get("item_id"):
+                if old_node["type"] == "knowledge" or ref["item_id"] not in item_ids(read(inside(old_content, old_node["path"]))):
+                    errors.append("Unknown earlier vocabulary/example/turn ID")
+            if not reuse.get("purpose") or not reuse.get("in"):
+                errors.append("Reuse needs a purpose and actual target")
+            for use in reuse.get("in", []):
+                nid = use["node_id"]
+                if nid not in lesson["node_ids"] or nid not in nodes:
+                    errors.append("Reuse target must be in its current lesson")
+                    continue
+                target = nodes[nid]
+                if use.get("item_id") and (target["type"] == "knowledge" or use["item_id"] not in item_ids(read(inside(draft, target["path"])))):
+                    errors.append("Unknown reuse target item/turn ID")
+                if old_node["type"] == "vocabulary" and ref.get("item_id"):
+                    review_targets.add((nid, use.get("item_id")))
+    for n in stage["nodes"]:
+        if n["type"] == "vocabulary":
+            for word in read(inside(draft, n["path"]))["items"]:
+                if word.get("exposure") not in {"new", "review"}:
+                    errors.append("Vocabulary item needs new/review exposure: " + word["id"])
+                if word.get("exposure") == "review" and (n["id"], word["id"]) not in review_targets:
+                    errors.append("Review word needs a link to its earlier vocabulary item: " + word["id"])
+
+
+def check_dialogue(data, seen, label, errors):
+    speakers = data.get("speakers", [])
+    if len(speakers) != 2 or {s["id"] for s in speakers} != {"A", "B"}:
+        errors.append("Dialogue must have exactly speakers A and B: " + label)
+    turns = data.get("turns", [])
+    if {t.get("speaker") for t in turns} != {"A", "B"}:
+        errors.append("Both roles need speech: " + label)
+    for turn in turns:
+        tid = turn.get("id")
+        if not tid or tid in seen or not turn.get("ja") or not turn.get("vi"):
+            errors.append("Missing/duplicate turn ID or text: " + label)
+        seen.add(tid)
+
+
 def check(draft, uid, repo):
     errors = []
     stage = read(draft / "stage.json")
-    if stage.get("stage_uid") != uid or stage.get("schema_version") != "3.0-draft":
+    if stage.get("stage_uid") != uid or stage.get("schema_version") not in {"3.0-draft", "3.1-draft"}:
         errors.append("stage_uid/schema_version mismatch")
     nodes = stage.get("nodes", [])
     ids = [n["id"] for n in nodes]
@@ -134,8 +280,16 @@ def check(draft, uid, repo):
         if n["type"] == "knowledge":
             if p.suffix != ".md":
                 errors.append("Knowledge must be Markdown")
+            if n.get("source_family") == "speak_japanese":
+                index = ids.index(n["id"])
+                practice = n.get("practice_node_id")
+                if index + 1 >= len(nodes) or ids[index + 1] != practice or types.get(practice) != "shadowing":
+                    errors.append("Speak Japanese knowledge must be immediately followed by its shadowing: " + n["id"])
+                video = n.get("video", {})
+                if video.get("status") not in {"planned", "available"} or (video.get("status") == "planned" and video.get("asset_ref") is not None) or (video.get("status") == "available" and not video.get("asset_ref")):
+                    errors.append("Speak Japanese knowledge needs honest planned/available video metadata")
             continue
-        if n["type"] not in {"vocabulary", "grammar", "situation", "live_context"}:
+        if n["type"] not in {"vocabulary", "grammar", "situation", "shadowing", "live_context"}:
             errors.append("Unknown node type: " + n["type"])
             continue
         data = read(p)
@@ -168,28 +322,49 @@ def check(draft, uid, repo):
                 event = next(e for e in events if e["id"] == data["event_id"])
                 if n["id"] not in event.get("situation_ids", []):
                     errors.append("Situation not listed in its event: " + n["id"])
-            speakers = data.get("speakers", [])
-            if len(speakers) != 2 or {s["id"] for s in speakers} != {"A", "B"}:
-                errors.append("Situation must have exactly speakers A and B: " + n["id"])
-            turns = data.get("turns", [])
-            if {t.get("speaker") for t in turns} != {"A", "B"}:
-                errors.append("Both roles need speech: " + n["id"])
-            for turn in turns:
-                tid = turn.get("id")
-                if not tid or tid in turns_seen or not turn.get("ja") or not turn.get("vi"):
-                    errors.append("Missing/duplicate turn ID or text: " + n["id"])
-                turns_seen.add(tid)
+            check_dialogue(data, turns_seen, n["id"], errors)
             if data.get("authorship") not in {"source_adaptation", "original_extension"}:
                 errors.append("Situation needs truthful authorship: " + n["id"])
             for field, wanted in [("knowledge_ids", "knowledge"), ("vocabulary_ids", "vocabulary"), ("grammar_ids", "grammar"), ("alternative_to", "situation"), ("follows", "situation")]:
                 for target in data.get(field, []):
                     if types.get(target) != wanted or target == n["id"]:
                         errors.append("Broken situation relation: " + n["id"] + "/" + target)
+        if n["type"] == "shadowing":
+            items = data.get("items", [])
+            if not items or len({x["id"] for x in items}) != len(items):
+                errors.append("Shadowing needs distinct nonempty items: " + n["id"])
+            knowledge = data.get("knowledge_ids", [])
+            for kid in knowledge:
+                if types.get(kid) != "knowledge":
+                    errors.append("Unknown shadowing knowledge reference: " + kid)
+            paired = [k for k in nodes if k.get("source_family") == "speak_japanese" and k.get("practice_node_id") == n["id"]]
+            for k in paired:
+                if k["id"] not in knowledge:
+                    errors.append("Speak Japanese shadowing needs its knowledge backlink")
+            for item in items:
+                if item["kind"] == "sentence":
+                    if not item.get("ja") or not item.get("vi"):
+                        errors.append("Shadowing sentence needs Japanese and Vietnamese")
+                elif item["kind"] == "dialogue":
+                    check_dialogue(item, turns_seen, item["id"], errors)
+                elif item["kind"] == "situation_ref":
+                    if types.get(item.get("situation_id")) != "situation":
+                        errors.append("Shadowing references unknown situation")
+                else:
+                    errors.append("Unknown shadowing item kind")
+                if item["kind"] != "situation_ref" and item.get("authorship") not in {"source_adaptation", "original_extension"}:
+                    errors.append("Shadowing item needs truthful authorship")
+                for k in paired:
+                    example = item.get("example_id", "")
+                    if not example or not re.search(r'''id=["']''' + re.escape(example) + r'''["']''', inside(draft, k["path"]).read_text(encoding="utf-8")):
+                        errors.append("Speak Japanese shadowing example missing from knowledge Markdown")
     if not any(n["type"] == "situation" for n in nodes):
         errors.append("A stage needs situations")
     if not (draft / "editorial.md").read_text(encoding="utf-8").strip():
         errors.append("Missing editorial record")
     source_pins(repo, draft)
+    if stage.get("schema_version") == "3.1-draft":
+        validate_learning(draft, stage, repo, errors)
     if errors:
         raise ValueError("\n".join(errors))
     return stage
@@ -199,6 +374,8 @@ def export_context(draft, stage):
     chunks = ["# " + stage["title"], json.dumps({k: v for k, v in stage.items() if k != "nodes"}, ensure_ascii=False, indent=2)]
     for node in stage["nodes"]:
         chunks.extend(["\n## " + node["title"] + " [" + node["id"] + "]", inside(draft, node["path"]).read_text(encoding="utf-8")])
+    if (draft / "learning-map.json").exists():
+        chunks.extend(["\n## Bài học và nội dung gối đầu", (draft / "learning-map.json").read_text(encoding="utf-8")])
     chunks.extend(["\n## Nguồn và phạm vi chứng cứ", (draft / "sources.json").read_text(encoding="utf-8")])
     (draft / "live-context.md").write_text("\n\n".join(chunks) + "\n", encoding="utf-8")
 
@@ -276,21 +453,26 @@ def main():
             else:
                 draft.mkdir(parents=True)
                 info = registry[uid]
-                atomic(draft / "stage.json", {"schema_version": "3.0-draft", "stage_uid": uid,
+                atomic(draft / "stage.json", {"schema_version": "3.1-draft", "stage_uid": uid,
                        "display_code": info["display_code"], "title": info["title"], "level": info["level"],
                        "scope": "", "nodes": [], "events": [], "retired_ids": [], "source_refs": []})
                 atomic(draft / "sources.json", {"scan": [], "entries": []})
+                atomic(draft / "learning-map.json", {"schema_version": "1.0", "stage_uid": uid, "lessons": []})
                 (draft / "editorial.md").write_text("# Nhật ký biên tập\n\nChưa biên soạn.\n", encoding="utf-8")
             spec_paths = [registry_path, Path(__file__).resolve(),
                           Path(__file__).resolve().parents[1] / "SKILL.md",
-                          Path(__file__).resolve().parents[1] / "references/content-contract.md"]
+                          Path(__file__).resolve().parents[1] / "references/content-contract.md",
+                          Path(__file__).resolve().parents[1] / "references/progression.md",
+                          Path(__file__).resolve().parents[1] / "references/editorial-workflow.md",
+                          repo / "kaiwa_skill/planning/v2/KAIWA_CHANG_V4_1_META.json"]
             state = {"run": run, "stage_uid": uid, "status": "drafting", "created_at": now(),
                      "base_revision": current["revision"] if current else None,
                      "recovered_from": previous["run"] if previous else None,
                      "next_action": args.next or (previous["next_action"] if previous else "Đọc phạm vi và tra nguồn"),
                      "checkpoints": [], "files": hashes(draft),
                      "source_pins": previous["source_pins"] if previous else {},
-                     "spec_pins": {p.relative_to(repo).as_posix(): sha(p) for p in spec_paths if p.is_relative_to(repo)}}
+                     "context_pins": previous.get("context_pins", {}) if previous else {},
+                     "spec_pins": {p.relative_to(repo).as_posix(): sha(p) for p in spec_paths if p.is_relative_to(repo) and p.exists()}}
             atomic(stage / "runs" / (run + ".json"), state)
             atomic(owner_path, {"run": run, "claimed_at": now()})
             if previous:
@@ -314,7 +496,7 @@ def main():
                 raise ValueError("Resume requires a paused run and no other owner")
             if hashes(draft) != state["files"]:
                 raise ValueError("Draft changed since pause; recover to preserve/inspect changes")
-            for path, digest in {**state["source_pins"], **state["spec_pins"]}.items():
+            for path, digest in {**state["source_pins"], **state.get("context_pins", {}), **state["spec_pins"]}.items():
                 if sha(inside(repo, path)) != digest:
                     raise ValueError("Pinned source/spec changed: " + path)
             atomic(owner_path, {"run": run, "claimed_at": now()})
@@ -328,6 +510,10 @@ def main():
             content = check(draft, uid, repo)
             if args.command == "validate":
                 print("Structure OK; language, source reading and coverage still require editorial review")
+                if (draft / "learning-map.json").exists():
+                    pending = sum(len(l.get("pending_previous", [])) for l in read(draft / "learning-map.json")["lessons"])
+                    if pending:
+                        print("Editorial continuity pending: " + str(pending) + " unresolved predecessor notes")
                 return
             if not args.editor_reviewed or not args.note.strip():
                 raise ValueError("Finalize needs --editor-reviewed and an actual editorial summary via --note")
@@ -342,16 +528,19 @@ def main():
             shutil.copytree(draft, revision / "content")
             manifest = {"revision": revision_id, "run": run, "stage_uid": uid,
                         "created_at": now(), "files": hashes(revision / "content"),
-                        "source_pins": source_pins(repo, draft), "editorial_summary": args.note}
+                        "source_pins": source_pins(repo, draft), "context_pins": learning_pins(repo, draft),
+                        "continuity_pending": sum(len(l.get("pending_previous", [])) for l in read(draft / "learning-map.json")["lessons"]) if (draft / "learning-map.json").exists() else 0,
+                        "editorial_summary": args.note}
             if manifest["files"] != hashes(draft):
                 raise ValueError("Draft changed during snapshot; revision not published")
             atomic(revision / "manifest.json", manifest)
             atomic(current_path, {"revision": revision_id, "run": run, "stage_uid": uid, "updated_at": now()})
             state["status"] = "finalized"
             state["revision"] = revision_id
+            state["continuity_pending"] = manifest["continuity_pending"]
             atomic(state_path, state)
             owner_path.unlink()
-            print(json.dumps({"revision": revision_id, "content": str(revision / "content")}, ensure_ascii=False))
+            print(json.dumps({"revision": revision_id, "content": str(revision / "content"), "continuity_pending": manifest["continuity_pending"]}, ensure_ascii=False))
             return
         if args.command not in {"checkpoint", "pause"}:
             raise ValueError("Unsupported command")
@@ -364,16 +553,22 @@ def main():
         except (ValueError, OSError, KeyError, TypeError) as exc:
             # Save incomplete editorial work too; finalization remains strict.
             state["source_warning"] = str(exc)
+        try:
+            state["context_pins"] = learning_pins(repo, draft)
+            state["context_warning"] = None
+        except (ValueError, OSError, KeyError, TypeError) as exc:
+            state["context_warning"] = str(exc)
         state["next_action"] = args.next
         state["checkpoints"].append({"at": now(), "note": args.note, "next_action": args.next,
-                                     "files": state["files"], "source_pins": state["source_pins"]})
+                                     "files": state["files"], "source_pins": state["source_pins"],
+                                     "context_pins": state.get("context_pins", {}), "context_warning": state.get("context_warning")})
         if args.command == "pause":
             state["status"] = "paused"
         atomic(state_path, state)
         if args.command == "pause":
             owner_path.unlink()
         print(json.dumps({"run": run, "status": state["status"], "next_action": args.next,
-                          "source_warning": state.get("source_warning")}, ensure_ascii=False))
+                          "source_warning": state.get("source_warning"), "context_warning": state.get("context_warning")}, ensure_ascii=False))
 
 
 if __name__ == "__main__":
