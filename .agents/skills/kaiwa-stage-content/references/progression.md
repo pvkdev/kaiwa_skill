@@ -30,7 +30,7 @@ Node đánh dấu `source_family: speak_japanese`, có `video: {status: planned,
 
 Bài shadowing bao gồm các ví dụ/hội thoại tương ứng với những điểm thực sự vừa giải thích, không phải một đoạn bất kỳ cùng topic. Dùng `example_id` ổn định để nối ví dụ trong MD với item luyện; có thể đặt anchor trong MD. Phân biệt ví dụ chuyển soạn từ sách với ví dụ viết mới lồng nội dung cũ. Phần viết mới vẫn phải thực hành điểm mới của bài. Nếu thay ví dụ ở một bên, đối chiếu và cập nhật bên còn lại; không gắn audio sách vào câu đã sửa.
 
-Không gom cả 88/125 mẫu vào vài node khổng lồ chỉ vì khung hiện có ít token pool. Phân bổ bài kiến thức đến topic/cấp độ phù hợp, giữ quan hệ nền tảng và rải ôn sau đó. Khi gán một bài nguồn, ghi bài đó đã đi vào node kiến thức và shadowing nào; nếu tách một bài nguồn cho hai topic, ghi rõ phần nào được dùng ở đâu, tránh đếm trùng thành hai bài nguồn đã khai thác độc lập.
+Không gom 88/125 mẫu vào vài node khổng lồ chỉ vì khung hiện có ít token pool; cũng không có chỉ tiêu phải dùng hết chúng. Phân bổ các bài/mục được chọn đến topic/cấp độ phù hợp, giữ quan hệ nền tảng và rải ôn sau đó. Khi gán một bài nguồn, ghi bài đó đã đi vào node kiến thức và shadowing nào; nếu tách một bài nguồn cho hai topic, ghi rõ phần nào được dùng ở đâu, tránh đếm trùng thành hai bài nguồn đã khai thác độc lập. Chọn lọc nguồn không làm giảm yêu cầu giải thích rõ và luyện đúng những điểm đã chọn để dạy.
 
 ## Các nguồn xuất hiện thành bài shadowing
 

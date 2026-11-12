@@ -176,6 +176,8 @@ Chỉ cần tên và tham chiếu. Nếu có metadata bunpou phù hợp thì dù
 
 Đường dẫn tính từ repo. Giữ hash file nguồn lúc đọc; line/heading giúp tìm lại, không phải lời khẳng định nguyên văn. Memo dùng `kind: memo`, đúng số bài, `read_status: index_only`; web đọc toàn phần dùng `kind: web`, URL/ngày truy cập. Chất liệu tự mở rộng ghi `kind: original`, căn cứ và giới hạn. Có thể dẫn một nguồn hỗ trợ chức năng giao tiếp mà vẫn ghi hội thoại là viết mới. Không biến memo hoặc nguồn ngân hàng ngôn ngữ thành chứng cứ cho cả tình huống cụ thể.
 
+`scan` là rà chỉ mục 27 sách để tìm chất liệu, không phải yêu cầu dùng đủ 27 sách trong chặng hoặc kiểm kê chi tiết mọi câu. `entries` ghi phần được dùng thật. Nếu bổ sung báo cáo độ phủ, phải ghi rõ đơn vị đếm/phạm vi; đó là thông tin hỗ trợ quyết định, không có ngưỡng 100% để chốt revision. Tài nguyên chưa dùng không mặc nhiên là lỗi hoặc nội dung bắt buộc bổ sung. Chỉ các lỗ hổng ảnh hưởng mục tiêu chặng mới cần xử lý để hoàn thiện bài; giữ nguồn chính xác cho phần đã chọn.
+
 Lưu thông tin audio biết được dưới `audio_evidence`: sách/ấn bản, nhãn CD/track, vị trí bằng chứng, URL nếu đã thấy; `availability: unknown|inventory_only|file_verified`. Không gán audio gốc cho hội thoại đã viết lại.
 
 ## Node Live AI

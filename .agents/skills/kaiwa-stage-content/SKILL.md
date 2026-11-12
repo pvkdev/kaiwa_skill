@@ -7,6 +7,8 @@ description: Biên soạn hoặc nâng cấp chặng Kaiwa từ 27 sách và mem
 
 Mục tiêu là một lộ trình chung tận dụng chiều sâu và vai trò khác nhau của các sách. Mỗi chặng là một chủ đề có nhiều kiến thức và nhiều tình huống thực tế; không phải một bản tóm tắt sách hay một bộ hội thoại do AI tự nghĩ rồi gắn nguồn.
 
+**Ưu tiên chất lượng lộ trình:** chọn chất liệu giúp người học giao tiếp tốt, hợp cấp và nối mạch học. Không bắt dùng 100% tài nguyên hay hoàn tất mọi phần của từng sách. Độ phủ nguồn là thông tin để tra cứu/cân nhắc, không phải KPI hoặc điều kiện chốt bài. Phần chưa chọn có thể để dành, gộp hoặc không đưa vào; chỉ coi là thiếu khi ảnh hưởng mục tiêu học. Không nhồi nội dung hoặc buộc kiểm kê chi tiết toàn kho trước pilot.
+
 ## Phạm vi
 
 - Chỉ tạo dữ liệu nội dung. App đã có học từ vựng, shadowing toàn hội thoại, shadowing đổi vai và Live Kaiwa AI.

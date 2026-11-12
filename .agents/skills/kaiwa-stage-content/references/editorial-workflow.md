@@ -17,7 +17,9 @@ Mỗi lần chọn nguồn phải trả lời: nguồn này giúp phần nào c�
 - **Ba sách từ vựng tham chiếu:** chỉ bổ trợ chọn từ và nghĩa, không tính vào 27 giáo trình hay mở thêm ba lộ trình.
 - **Memo web:** tìm góc còn thiếu, tên sự kiện/chức năng. Mục lục không cung cấp lời thoại. Nếu chưa đọc tài liệu đầy đủ, hội thoại mở rộng phải được ghi là viết mới.
 
-Mục tiêu tận dụng tất cả sách được đánh giá trên **toàn lộ trình**, không phải ép 27 nguồn vào mỗi chặng. Tích lũy các `used_for` theo revision để xem sách nào ít được dùng và tìm chặng phù hợp. Không gọi một cuốn đã được tận dụng chỉ vì đã xuất hiện một source token.
+Chủ động tìm chất liệu trong toàn kho, tuyển chọn theo ích lợi cho **lộ trình**. Không có chỉ tiêu dùng hết sách, hết 88/125 mẫu hoặc đạt 100% tài nguyên. Tích lũy `used_for` để tra ngược và nhận diện cơ hội bổ sung, không dùng số lượng trích dẫn làm thước đo chất lượng. Sách/mục ít dùng không tự tạo ra việc phải làm thêm; không gọi một cuốn đã được khai thác đầy đủ chỉ vì có source token.
+
+Khi rà phần chưa dùng, phân biệt **lỗ hổng mục tiêu giao tiếp** với **chất liệu tùy chọn chưa chọn**. Chỉ bổ sung khi giúp mạch học, độ sâu, sự đa dạng thực tế hoặc khả năng ôn ứng dụng tốt hơn. Có thể gộp phần tương đương, để dành hoặc không đưa vào nội dung không phù hợp. Ghi các quyết định biên tập đáng kể, không bắt giải trình từng câu bỏ qua. Kiểm kê chi tiết làm dần cùng việc đọc/soạn, không phải điều kiện phải hoàn thành toàn kho trước pilot.
 
 Khi được giao chạy nhiều chặng, lấy danh sách UID từ registry và trạng thái trên đĩa: có `current.json` thì giữ revision đã chốt, có run dở thì phục hồi đúng run sau khi kiểm chủ sở hữu, chưa có mới `begin`. Không lấy việc có thư mục hoặc số node làm dấu hiệu hoàn thành. Chỉ mục tiến độ toàn lộ trình có thể dựng lại từ các trạng thái này; không để một bảng tổng hợp riêng trở thành bản gốc thứ hai.
 
@@ -50,6 +52,6 @@ Tận dụng nội dung sâu của sách nhưng xây lại mạch học theo ch�
 - Speak Japanese có MD kiến thức đủ nghĩa và bài shadowing ví dụ theo sát; nguồn luyện nói khác đã thành dữ liệu luyện cụ thể. Từ vựng đủ các nhóm cần thiết trong phạm vi chủ đề, có từ mới/từ ôn được chỉ ra đúng nơi dùng lại.
 - Mở lại phần được dùng từ bài trước để kiểm mức độ gối đầu, nghĩa/cách dùng và vị trí tái xuất hiện. Ghi pending nếu chưa có bài trước; không gọi bản pilot rời là mạch đã nối hoàn chỉnh.
 - Nguồn đã đọc hỗ trợ đúng điều được gắn. Tách nguồn kiến thức, nhãn mục lục và phần tự viết. Câu viết lại không dùng track audio gốc như thể khớp lời.
-- Ghi trong `editorial.md`: phạm vi được bao phủ, các góc chưa có/không phù hợp, lý do dừng ở revision này, những nguồn quan trọng đã dùng và phần cần nâng cấp. Không tuyên bố bao phủ vô hạn hay “đầy đủ mọi tình huống”.
+- Ghi trong `editorial.md`: phạm vi mục tiêu đã đáp ứng, lỗ hổng ảnh hưởng việc học nếu có, các lựa chọn biên tập chính và nguồn quan trọng đã dùng. Phần nguồn chưa chọn không tự trở thành backlog bắt buộc. Không tuyên bố bao phủ vô hạn hay “đầy đủ mọi tình huống”.
 
 Đây là quyết định biên tập của tác giả. Không có bài thi, điểm đạt, điều kiện hoàn thành hay hạn chế quyền chọn bài của người học.
