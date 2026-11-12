@@ -4,6 +4,8 @@ Phiên bản đề xuất: **0.1**. Đây là bản thiết kế để thống n
 
 **Trạng thái sau phản hồi người dùng:** đề xuất này được lập trước khi có thống kê 27 sách, chưa đủ cơ sở để khóa topic/lộ trình. Giữ làm tài liệu thảo luận lịch sử; không dùng 16 topic dưới đây làm khuôn ép nguồn. Dùng [chỉ mục metadata 27 sách](catalog27/README.md) làm điểm xuất phát cho lần thiết kế tiếp theo.
 
+**Đề xuất tiếp nối từ thống kê:** [khung hợp nhất 25 topic và tình huống sơ–trung–thượng](curriculum_outline/ROADMAP_OUTLINE.md), kèm gom nhãn và phân vai đủ 27 sách. Bản mới vẫn ở mức khung, chưa biên soạn bài học.
+
 Giả định bản đầu dành cho người lớn Việt Nam muốn giao tiếp tiếng Nhật trong sinh hoạt, quan hệ xã hội và công việc. App có luyện phát âm theo câu, đóng vai một bên audio/một bên người học và Live Kaiwa AI. Thời lượng, số câu và lịch ôn trong tài liệu là cấu hình pilot, cần điều chỉnh từ thực tế sử dụng.
 
 Nguồn đầu vào: [memo 22 nhóm nguồn](WEB_COURSE_TOPICS_MEMO.md), [thư viện knowledge](../knowledge/README.md), [kiểm kê 30 PDF](../clean/FINAL_INVENTORY.json), kho `bunpou_skill/` được đọc dưới dạng nguồn tham chiếu.
