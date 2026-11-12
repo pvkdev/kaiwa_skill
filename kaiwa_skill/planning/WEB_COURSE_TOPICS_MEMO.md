@@ -1,6 +1,6 @@
-# Memo topic và tình huống từ các khóa học trên web
+# Memo topic và tình huống từ khóa học web và sách kaiwa
 
-Ngày ghi nhận đợt đầu: **2026-11-12**. Trạng thái: **đang bổ sung theo ảnh người dùng gửi**.
+Ngày ghi nhận đợt đầu: **2026-11-12**. Trạng thái: **đang bổ sung theo ảnh và nội dung người dùng gửi**.
 
 Tài liệu dùng để gom bằng chứng cho bước lập lộ trình kaiwa, song song với base sách trong `../knowledge/`. Đây là danh sách theo từng nguồn; chưa hợp nhất thành hệ thống topic, chưa xếp lại độ khó và chưa gán level ngoài thông tin hiện trên ảnh.
 
@@ -9,17 +9,18 @@ Tài liệu dùng để gom bằng chứng cho bước lập lộ trình kaiwa, 
 - Giữ thứ tự, số scene/bài/tập và tên hiện trong nguồn. Với tiêu đề Nhật, thêm nghĩa Việt để dễ tra; với NHK, giữ tiêu đề Việt trên ảnh.
 - Phân biệt **topic lớn**, **tình huống** và **chức năng giao tiếp**. Các nguồn đang dùng những đơn vị khác nhau, không cộng tất cả thành một con số “topic”.
 - Topic trùng giữa các khóa vẫn giữ ở từng nguồn để sau so cách chia, độ sâu và level. Ảnh trùng cùng nội dung không tạo thêm mục.
-- Chỉ ghi nhận nội dung nhìn thấy trong ảnh; chưa mở website, video hay bài học chi tiết. Danh sách trên ảnh không tự chứng minh toàn bộ khóa hiện có trên web.
+- Chỉ ghi nhận nội dung nhìn thấy trong ảnh hoặc có trong phần người dùng cung cấp; chưa mở website, video hay bài học chi tiết. Danh sách trên ảnh không tự chứng minh toàn bộ khóa hiện có trên web hoặc toàn bộ nội dung từng bài trong sách.
 - Tham chiếu khi plan bằng mã nguồn + nhóm + số gốc, ví dụ `S01/A2/09`, `S02/#28`, `S04/topic-4/bài-7`.
 - Ảnh tiếp theo sẽ được nối vào nguồn tương ứng. Chỗ thiếu tên khóa, level, URL hoặc phần chưa chụp được giữ trong mục cần bổ sung.
 
-## Nguồn và phạm vi ảnh đã nhận
+## Nguồn và phạm vi đã nhận
 
 - **S01 — Danh sách scene với nhóm tiện ích, A1, A2, B1.** Ảnh #1: `codex-clipboard-88caf0f6-e007-4a01-991d-8245da0c9f7f.png`. Chưa thấy tên website/khóa và URL. Ghi được 6 scene tiện ích, 12 scene A1, 19 scene A2, 23 scene B1.
 - **S02 — NHK WORLD-JAPAN, Cùng nhau học tiếng Nhật: Hội thoại tiếng Nhật.** Ảnh #2: `www3.nhk.or.jp_nhkworld_lesson_vi_lessons_.png`. Có 48 thẻ bài, #1–#48. Đầu trang ghi phát sóng đầu tiên vào năm 2019. Không thấy nhãn A1/A2/B1 hoặc JLPT.
 - **S03 — NHK WORLD-JAPAN, Easy Japanese for Work.** Ảnh #3: `www3.nhk.or.jp_nhkworld_vi_shows_easyjapaneseforwork_.png`. Có 43 thẻ tập: #1–#30, #33, #35–#46. Không có #31, #32, #34 trong danh sách trên ảnh; không điền tên cho những số này. Không thấy nhãn level.
 - **S04 — MARUGOTO Plus, 入門 A1.** Ảnh #4: `codex-clipboard-fd3adb96-6ddc-4678-bf20-1983f3538f77.png`; ảnh #5: `codex-clipboard-3956d383-4cbf-4588-81ba-16f1a7fa06fe.png`; ảnh #6: `codex-clipboard-5c1f4632-d8d7-4336-9934-3d39e425f2a8.png`. Ảnh #4 và #5 trùng hoàn toàn, cùng SHA256, chỉ ghi một lần. Thấy topic 4–9 và bài 7–18; nhãn A1 hiện trên phần đầu ảnh #4/#5.
 - **S05 — Menu 9 topic, chưa thấy tên khóa/level.** Ảnh #7: `codex-clipboard-a9c24397-069b-4fac-a466-529a52e1f035.png`. Thấy đủ 9 tên topic trong menu; không thấy tên bài bên trong. Chưa gộp vào S04 hoặc gán level theo hình thức giao diện.
+- **S06 — 日常会話で親しくなれる！ 日本語会話 中上級.** Đợt 02: phần giới thiệu và mục lục người dùng dán, cùng ảnh `codex-clipboard-41f6ed44-8692-4ccb-b1a2-611edc4997e8.png`. Ghi được 10 chương/chủ đề với 20 scene và trang in tương ứng. Level **中上級** được nêu trong phần giới thiệu. Chưa có toàn văn sách hoặc URL trang sản phẩm cụ thể trong đợt này.
 
 Hai URL sau được suy ra từ tên ảnh tải về, chỉ dùng làm đầu mối tra lại, **chưa được mở hoặc xác minh**:
 
@@ -261,12 +262,101 @@ Nguồn ảnh #7. Các tên Nhật/Anh dưới đây hiện trực tiếp trên 
 
 Ghi chú khi plan: topic 6 có tiêu đề Anh **Eating Outdoors** và hình ăn ngoài trời; chưa diễn giải thành toàn bộ chủ đề ăn nhà hàng. Topic 7 có tên đi công tác; chưa suy ra các tình huống đặt vé/khách sạn/báo cáo nếu chưa xem bài.
 
+## S06 — 日常会話で親しくなれる！ 日本語会話 中上級
+
+Tên Việt để tra: **Trở nên thân thiết qua hội thoại hằng ngày! Hội thoại tiếng Nhật trung–cao cấp**.
+
+Nguồn: phần giới thiệu/mục lục người dùng gửi và ảnh mục lục của đợt 02. Các số trang bên dưới là **trang in trong sách**, không phải số trang PDF. Tham chiếu khi plan, ví dụ: `S06/chương-4/scene-1`.
+
+### Level, bối cảnh và đặc trưng học liệu
+
+- **Level nguồn công bố:** 中上級 — trung–cao cấp. Các nhãn 中級/上級/会話/英語/中国語 trong nội dung gửi là liên kết danh mục; không tự quy đổi sang JLPT hoặc CEFR.
+- **Nhu cầu được nêu:** muốn nói tiếng Nhật tự nhiên hơn với đồng nghiệp và bạn bè.
+- **Bối cảnh xuyên suốt:** câu chuyện xoay quanh bốn người sống trong một share house. Sách có 10 bài, mỗi bài hai scene; memo giữ nguyên cấu trúc này.
+- **Các điểm ngôn ngữ được giới thiệu:** 普通体 — thể thông thường; 縮約形 — dạng rút gọn; 助詞の省略 — lược bỏ trợ từ; cách diễn đạt tự nhiên và triển khai mạch hội thoại.
+- **Mỗi scene được mô tả là có:** task, hội thoại chính, cách diễn đạt, điểm giao tiếp giúp xây dựng quan hệ tốt và luyện triển khai hội thoại. Đây là mô tả của phần giới thiệu, chưa phải kết quả đọc chi tiết 20 scene.
+- **Hỗ trợ học:** có bản dịch Anh/Trung và furigana cho toàn bộ kanji; phần giới thiệu nói có thể dùng trong lớp hoặc tự học.
+- **Âm thanh:** phần giới thiệu ghi công bố trên website. Chưa có URL audio cụ thể, chưa kiểm hoặc tải file; không suy ra có CD.
+
+### Chương 1 — シェアハウスで新生活: Bắt đầu cuộc sống mới ở nhà ở chung
+
+- **Scene 1 — 初顔合わせ** — Gặp gỡ lần đầu. **Trang 1.**
+- **Scene 2 — 共同生活のルールを決める** — Thống nhất quy tắc sống chung. **Trang 9.**
+
+### Chương 2 — 仲間と寿司パーティー: Tiệc sushi cùng bạn bè
+
+- **Scene 1 — 相手について興味を持って尋ねる** — Hỏi về người kia với sự quan tâm. **Trang 17.**
+- **Scene 2 — 二次会でもう少し相手を知る** — Tìm hiểu thêm về người kia trong buổi gặp tiếp theo sau tiệc, “tăng hai”. **Trang 25.**
+
+### Chương 3 — 休日に気分転換: Đổi không khí vào ngày nghỉ
+
+- **Scene 1 — 行きつけの店でヘアスタイルを変える** — Đổi kiểu tóc tại tiệm quen. **Trang 33.**
+- **Scene 2 — 谷根千ぶらぶら** — Dạo chơi ở Yanesen (谷根千). **Trang 41.**
+
+### Chương 4 — 同僚と客先回り: Cùng đồng nghiệp đi thăm khách hàng
+
+- **Scene 1 — 訪問前の不安を解消する** — Giải tỏa lo lắng trước khi đến thăm khách hàng. **Trang 49.**
+- **Scene 2 — うわさ話をする** — Nói chuyện đồn đại. **Trang 57.**
+
+### Chương 5 — ジムでストレス解消: Giải tỏa căng thẳng ở phòng gym
+
+- **Scene 1 — 筋トレで汗を流す** — Đổ mồ hôi khi tập luyện cơ bắp. **Trang 65.**
+- **Scene 2 — サウナで健康談義** — Trò chuyện về sức khỏe trong phòng xông hơi. **Trang 73.**
+
+### Chương 6 — ワークライフバランス: Cân bằng công việc và cuộc sống
+
+- **Scene 1 — 趣味が副業に？** — Sở thích trở thành nghề tay trái? **Trang 81.**
+- **Scene 2 — ボランティアをする** — Tham gia hoạt động tình nguyện. **Trang 89.**
+
+### Chương 7 — 腕利きの名医にかかる: Đến khám một bác sĩ giỏi
+
+- **Scene 1 — 名医を紹介してもらう** — Được giới thiệu một bác sĩ giỏi. **Trang 97.**
+- **Scene 2 — 診察を受ける** — Được khám bệnh. **Trang 105.**
+
+Ghi chú nguồn: phần tiếng Anh trong ảnh dùng từ **dentist**, còn tên Nhật nêu 名医/診察 mà không ghi chuyên khoa. Memo giữ tên Nhật và nghĩa Việt khái quát; chưa chốt phân nhánh nha khoa khi chưa đọc bài.
+
+### Chương 8 — 富士山にツーリング: Đi phượt xe máy đến núi Phú Sĩ
+
+- **Scene 1 — 新しい仲間と出会う** — Gặp những người bạn mới. **Trang 115.**
+- **Scene 2 — 仲間とご飯** — Ăn cùng bạn bè. **Trang 123.**
+
+### Chương 9 — 久しぶりのデート: Hẹn hò trở lại sau một thời gian
+
+- **Scene 1 — 映画館で話題作を見る** — Xem bộ phim đang được chú ý tại rạp. **Trang 131.**
+- **Scene 2 — カフェで批評会** — Cùng bình luận, đánh giá bộ phim tại quán cà phê. **Trang 139.**
+
+### Chương 10 — 新しい道: Hướng đi mới
+
+- **Scene 1 — タクシーで金沢観光** — Tham quan Kanazawa bằng taxi. **Trang 147.**
+- **Scene 2 — 新居について話す** — Nói về nơi ở mới. **Trang 155.**
+
+### Các phần khác có trong mục lục
+
+- **本書の使い方** — Cách dùng sách, bản Nhật: **trang (6)**.
+- **How to use this book** — Cách dùng sách, bản Anh: **trang (8)**.
+- **本书的使用方法** — Cách dùng sách, bản Trung: **trang (10)**.
+- **登場人物** — Giới thiệu nhân vật: **trang (12)**.
+- **別冊 解答例** — Tập đáp án mẫu riêng; ảnh không ghi số trang. Không có nội dung đáp án trong dữ liệu đã gửi.
+
+Các số trang mở đầu được đặt trong ngoặc đúng cách ghi trên ảnh, tách với trang 1–155 của các scene.
+
+### Liên kết đi kèm nội dung người dùng gửi
+
+Đây là các **trang danh mục**, không phải URL chi tiết đã xác minh của cuốn sách:
+
+- [中級 — Trung cấp](https://www.3anet.co.jp/np/list.html?g=4)
+- [上級 — Cao cấp](https://www.3anet.co.jp/np/list.html?g=5)
+- [会話 — Hội thoại](https://www.3anet.co.jp/np/list.html?g=8)
+- [英語 — Tiếng Anh](https://www.3anet.co.jp/np/list.html?g=33)
+- [中国語 — Tiếng Trung](https://www.3anet.co.jp/np/list.html?g=34)
+
 ## Ghi chú phục vụ bước plan sau này
 
 - **S01** cho một ví dụ về các tình huống sinh sống/làm việc được nguồn phân theo A1/A2/B1. Có thể đối chiếu cách mở rộng cùng miền chủ đề qua các level, chẳng hạn mua sắm, chào hỏi hoặc giao tiếp tại nơi làm việc.
 - **S02** chủ yếu đặt tên bài theo việc người học có thể nói/làm: hỏi, xác nhận, xin phép, đề nghị, giải thích, kể lại. Khi dựng lộ trình, đây là nguồn để tra chức năng giao tiếp trong các topic, không mặc định mỗi chức năng là một topic lớn.
 - **S03** ghi rõ nhiều quan hệ vai và tình huống khó trong công việc: với cấp trên, đồng nghiệp, hậu bối, khách hàng; xin phép, từ chối, xử lý hiểu lầm, than phiền, làm rõ chỉ thị. Cần giữ những khác biệt này khi so với sách.
 - **S04** thể hiện trực tiếp cấu trúc topic → hai bài có tiêu đề cụ thể. **S05** mới có tầng topic, cần bổ sung tầng bài/tình huống từ ảnh sau.
+- **S06** bổ sung một nguồn mục lục sách với cấu trúc chương → hai scene. Mục lục cho thấy các bối cảnh sinh hoạt, kết bạn, công việc, sức khỏe và giải trí có thể cùng phục vụ mục tiêu xây dựng quan hệ. Khi đối chiếu sách sau này, cần tra cả mục lục lẫn nội dung scene để lấy chức năng giao tiếp; chưa suy thêm ví dụ, ngữ pháp cụ thể hoặc mức độ của từng scene chỉ từ tiêu đề.
 - Các nhận xét này chỉ mô tả danh sách đã thấy. Chưa quyết định cây topic chung, thứ tự zero → hero, điều kiện tiên quyết, hoặc đối chiếu từng mục với sách knowledge.
 
 ## Cần bổ sung từ các ảnh tiếp theo
@@ -276,8 +366,10 @@ Ghi chú khi plan: topic 6 có tiêu đề Anh **Eating Outdoors** và hình ăn
 - [ ] S03: level do nguồn công bố, nếu có; chỉ bổ sung #31/#32/#34 khi có bằng chứng mới, không mặc định những tập này tồn tại hoặc còn truy cập được.
 - [ ] S04: topic 1–3 và tên bài tương ứng; URL của trang đang chụp.
 - [ ] S05: tên khóa, level, URL và các bài/tình huống bên trong 9 topic.
+- [ ] S06: URL trang sản phẩm, ISBN/ấn bản và URL audio cụ thể; nội dung scene khi cần làm rõ các điểm ngôn ngữ, quan hệ vai và chuyên khoa ở chương 7.
 - [ ] Những khóa hoặc level khác người dùng gửi thêm.
 
 ## Nhật ký bổ sung
 
 - **Đợt 01 — 2026-11-12:** nhận 7 ảnh, gồm 1 cặp ảnh trùng; ghi 5 nhóm nguồn. Đã mở crop ảnh gốc của hai trang NHK để đọc tiêu đề nhỏ và xác nhận số tập công việc nhảy từ #30 sang #33 rồi #35. Phạm vi ghi được: S01 có 60 scene; S02 có 48 bài; S03 có 43 tập; S04 có 6 topic với 12 bài; S05 có 9 topic. Chưa tra web và chưa dựng lộ trình mới.
+- **Đợt 02:** thêm S06 từ phần giới thiệu/mục lục được dán và một ảnh mục lục sách; đủ 10 chương, 20 scene, tên Nhật–Việt và trang in, cùng đặc trưng học liệu, thông tin audio ở mức phần giới thiệu. Mở rộng phạm vi memo để nhận cả mục lục sách kaiwa, giữ nguyên mã và nội dung S01–S05.
