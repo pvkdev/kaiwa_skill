@@ -190,6 +190,19 @@ Ghi chú nhịp: Đ = chặng đời sống, C = chặng công việc, theo th�
 
 ĐS = đời sống; CV = công việc; [AI] = chưa có nguồn trong tình huống. `N` = NHK 48; `W` = NHK công sở; `Sxx` = memo; `Bxx` = sách. FC = cần kiểm tra dữ kiện hiện hành khi viết nội dung.
 
+**Cách đóng gói bài trong các chặng — 3.1-draft:**
+
+- **Gối đầu:** Bài sau đọc hai bài gần nhất và tìm thêm bài cũ liên quan; ôn chọn lọc trong ví dụ, hội thoại và danh sách từ. Ghi lookback/reuse trong learning-map.json; đây là quan hệ biên soạn, không phải cổng học.
+- **Speak Japanese:** B11/B12 được biên soạn thành bài kiến thức Markdown dành cho video người dùng sẽ làm; node kế tiếp là shadowing các ví dụ/hội thoại tương ứng. Ví dụ mới có gối đầu. Token pool hiện có không giới hạn nơi được phân bổ bài kiến thức.
+- **Từ vựng:** Danh sách đủ các nhóm từ cần cho phạm vi topic và biến thể thực tế, không chỉ từ trong hội thoại; phân biệt mới/ôn và chỉ rõ lần học trước. Chia theo bài, nhóm tình huống hoặc cả chặng tùy mức liên quan.
+
+- **B01:** 5500: gom theo nhóm câu/đối đáp có cùng mục đích trong topic.
+- **B08:** 必須700: ghép theo topic/chức năng; không bắt có video kiến thức riêng.
+- **B09/B13/B14:** なめらか và Shadowing: câu mẫu/hội thoại phù hợp cấp độ, giữ ngữ cảnh và sắc thái.
+- **B25/B26/B27:** Nama Chuukei: hội thoại/câu thực hành, giữ ý định, phản hồi và xác nhận.
+
+Đây là chính sách bố trí nội dung, chưa phải các node đã được biên soạn hoặc video đã tồn tại. Giữ nguyên 194 UID, topic và thứ tự; phân bổ bài nguồn cụ thể khi đọc sâu từng chặng.
+
 ### Level Sơ
 
 #### Cụm: Mở miệng lần đầu: chào hỏi, giới thiệu, ngày đầu
@@ -759,11 +772,11 @@ B03 bỏ U2–U4 và U16 khỏi tập mục tiêu nói. B08 đếm 61 nhãn (g�
 - Quan hệ kiến thức giữa các cụm (ví dụ S-30 có tình huống nghe điện thoại trước cụm điện thoại công sở): cần gợi ý hỗ trợ phù hợp, không biến thành cổng mở khóa.
 - Ranh giới các chặng cùng dùng B13: phân định theo mục đích giao tiếp và phần nguồn thực sự phù hợp khi đọc sâu; không coi một token Unit là bằng chứng bao phủ mọi tình huống trong topic.
 - Tình huống do AI đề xuất ở nhiều chặng đang là các bước của một hội thoại hơn là các tình huống độc lập; skill sẽ định nghĩa lại theo 'vai + đích + điều kiện + kết thúc quan sát được'.
-- Các mục chấm điểm, R3, vượt cổng và điều khiển Live trong thiết kế V2 là lịch sử, đã được thay bằng phạm vi dữ liệu nội dung của V3 theo yêu cầu mới. V3 đang chờ feedback; lượt sửa khung này không thay skill hoặc triển khai engine.
+- Các mục chấm điểm, R3, vượt cổng và điều khiển Live trong thiết kế V2 là lịch sử, đã được thay bằng phạm vi dữ liệu nội dung. Thiết kế hiện hành V3.1 bổ sung gối đầu và cách đóng gói Speak Japanese/shadowing theo feedback; không triển khai engine.
 
 ## 8. Trạng thái trước pilot
 
-1. Người dùng đã chấp nhận V4.1 làm khung đi tiếp; giữ nguyên 194 chặng. Lượt hiện tại chỉ sửa nguồn và thống kê.
+1. Người dùng đã chấp nhận V4.1 làm khung đi tiếp; giữ nguyên 194 chặng. Gói sửa nguồn/thống kê đã hoàn thành; cập nhật V3.1 bổ sung cách bố trí nội dung, không tổ chức lại các chặng.
 2. Chưa chạy pilot hoặc sinh hàng loạt tình huống. Đề xuất pilot trước đây vẫn để tham khảo; cấu trúc dữ liệu nháp sẽ được xem lại sau feedback và pilot.
-3. Skill/thiết kế V3 chờ người dùng xem và bổ sung yêu cầu; không thêm bài kiểm tra, chấm điểm hoặc cổng học.
+3. Skill/thiết kế V3.1 đã cập nhật yêu cầu gối đầu, cặp kiến thức/video → shadowing của Speak Japanese, các nguồn luyện nói thành bài shadowing và từ vựng theo miền chủ đề. Chưa chạy pilot; không thêm bài kiểm tra, chấm điểm hoặc cổng học.
 4. Danh sách tên ngữ pháp Minna 50 bài đã có ở `kaiwa_skill/reference/grammar/`; chưa ghi bài N5/N4 vào bunpou. Chọn tên mẫu trước khi viết hội thoại và đối chiếu cách dùng sau khi viết, theo phạm vi nội dung đã thống nhất.

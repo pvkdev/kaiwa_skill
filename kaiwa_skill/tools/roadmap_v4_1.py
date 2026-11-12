@@ -145,6 +145,14 @@ def sections(rows, meta, original):
         topics[row["master_topic"]][row["level"]].append(row["id"])
     result[3] = "## 3. Chủ đề gốc và các level xuất hiện\n\n" + table(["Chủ đề gốc", *LEVELS], [[topic, *[", ".join(levels[lv]) or "—" for lv in LEVELS]] for topic, levels in topics.items()])
     result[4] = "## 4. Danh sách chặng theo cụm (theo thứ tự học)\n\nĐS = đời sống; CV = công việc; [AI] = chưa có nguồn trong tình huống. `N` = NHK 48; `W` = NHK công sở; `Sxx` = memo; `Bxx` = sách. FC = cần kiểm tra dữ kiện hiện hành khi viết nội dung."
+    policy = meta.get("learning_design")
+    if policy:
+        result[4] += "\n\n**Cách đóng gói bài trong các chặng — " + policy["version"] + ":**\n\n"
+        result[4] += "- **Gối đầu:** " + policy["progression"] + "\n"
+        result[4] += "- **Speak Japanese:** " + policy["speak_japanese"] + "\n"
+        result[4] += "- **Từ vựng:** " + policy["vocabulary"] + "\n"
+        result[4] += "\n" + "\n".join("- **" + "/".join(p["book_ids"]) + ":** " + p["grouping"] for p in policy["source_delivery"] if p["delivery"] == "shadowing")
+        result[4] += "\n\n" + policy["scope_note"]
     for lv in LEVELS:
         result[4] += "\n\n### Level " + lv
         for key, selected in groups:
