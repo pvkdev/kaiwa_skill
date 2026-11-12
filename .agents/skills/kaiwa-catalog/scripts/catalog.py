@@ -224,7 +224,7 @@ def build(root):
                     if topic:
                         topics[key(topic)].append((topic, b['book_id'], c, ac['levels']))
         guide.append('')
-    (out / 'BOOK_GUIDE.md').write_text('\n'.join(guide) + '\n', encoding='utf-8')
+    (out / 'BOOK_GUIDE.md').write_text('\n'.join(guide).rstrip() + '\n', encoding='utf-8')
     tt = ['# Topic tổng hợp từ 27 sách', '', f'Có **{len(topics)} nhãn topic/chức năng metadata** được hợp theo chữ sau chuẩn hóa khoảng trắng/Unicode; nhãn gần nghĩa có thể còn đứng riêng. Đây chưa phải taxonomy cuối hoặc mọi khái niệm ngầm trong từng câu.', '', 'Mỗi nhãn dẫn đến sách/chương có liên quan. Mã Bxx là sách, Cxx là file chương/phần; [tra tên sách](BOOK_GUIDE.md#tra-theo-ten-sach). [Tất cả nhãn nguồn chi tiết](SOURCE_LABELS.md) và `source_index.jsonl` bổ sung tình huống nhỏ, biểu đạt, bài tập; [mục lục sách](BOOK_GUIDE.md) mô tả công dụng/cách học.', '']
     for _, vals in sorted(topics.items()):
         label = vals[0][0]

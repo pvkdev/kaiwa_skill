@@ -869,4 +869,3 @@ Metadata ngắn để chọn sách và tìm chương/phần. Có 486 file chươ
 - **B27-C24 — [別冊 スクリプト 第10課 抱負 — Lời thoại Bài 10](<../../knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/23-script-bai-10.md>)**: Lời thoại về dự định và câu nghe chép của bài cuối. · `reference` · sơ, trung
 - **B27-C25 — [別冊 単語表 — Bảng từ theo bài và skit](<../../knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/24-bessatsu-tuvung.md>)**: Bảng từ vựng được nhóm theo từng bài và từng đoạn thoại. · `reference`
 - **B27-C26 — [別冊 解答 — Đáp án in trong sách](<../../knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/25-bessatsu-dapan.md>)**: Đáp án cho các bài luyện nghe và câu hỏi trong sách chính. · `answers`
-
