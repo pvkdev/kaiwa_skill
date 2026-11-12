@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T03:53:17.821772+00:00",
+  "updated_at": "2026-11-11T04:27:37.854193+00:00",
   "run_status": "active",
   "source_path_base": "kaiwa_skill/",
   "coordinator": {
@@ -15,10 +15,11 @@
   "total_books": 30,
   "total_pages": 4597,
   "counts": {
-    "verified": 1150,
-    "rendered": 3,
-    "pending": 3340,
-    "needs_review": 104
+    "verified": 1196,
+    "draft": 1,
+    "pending": 3273,
+    "needs_review": 120,
+    "rendered": 7
   },
   "books": [
     {
@@ -300,23 +301,24 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_11",
-      "agent_id": "/root/production_book_11_root_cont7",
-      "status": "in_progress",
+      "agent_id": "/root/production_book_11_anchor_repair",
+      "status": "accepted",
       "counts": {
-        "verified": 124,
-        "rendered": 2,
-        "pending": 12
+        "verified": 138
       },
       "issue_count": 0,
-      "coordinator_acceptance": "pending",
-      "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
+      "coordinator_acceptance": "accepted",
+      "pending_work": "None for the accepted build",
       "corpus_path": "kaiwa_skill/corpus/01-yuukibui-b12c61270c7b",
-      "build_current": false,
-      "claim_owner": "production_book_11_root_cont7",
+      "build_current": true,
+      "claim_owner": null,
       "status_error": null,
-      "pending_pages": "126-138",
-      "current_build_sha256": null,
-      "worker_state": "running"
+      "pending_pages": "",
+      "current_build_sha256": "cacbcdac230be18ae9405f8f93b0c9b269ddcb15a93b684d61873862f9c10401",
+      "worker_state": "finished",
+      "accepted_build_sha256": "cacbcdac230be18ae9405f8f93b0c9b269ddcb15a93b684d61873862f9c10401",
+      "accepted_commit": "e0d33d8",
+      "acceptance_path": "D:/CODE/git/kaiwa_skill/kaiwa_skill/corpus/01-yuukibui-b12c61270c7b/acceptance.json"
     },
     {
       "queue_order": 12,
@@ -358,19 +360,18 @@
       "agent_id": "/root/production_book_13_root_cont3",
       "status": "needs_review",
       "counts": {
-        "verified": 57,
-        "needs_review": 60,
-        "rendered": 1,
-        "pending": 27
+        "verified": 66,
+        "needs_review": 76,
+        "rendered": 3
       },
-      "issue_count": 60,
+      "issue_count": 76,
       "coordinator_acceptance": "pending",
       "pending_work": "Resolve recorded errors or issues; finish remaining pages; rebuild and coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/book-be075317cdca",
       "build_current": false,
       "claim_owner": "production_book_13_root_cont3",
       "status_error": null,
-      "pending_pages": "8,12,15-18,20,24,26,28,30,32,34,36,38,40,42,44-46,48,50,52,54,56,58,60,62,64-66,68,70,72,74,76,78,80,82-86,88,90,92,94,96,98,100,102-106,108,110,112,114,116,118-145",
+      "pending_pages": "8,12,15-18,20,24,26,28,30,32,34,36,38,40,42,44-46,48,50,52,54,56,58,60,62,64-66,68,70,72,74,76,78,80,82-86,88,90,92,94,96,98,100,102-106,108,110,112,114,116,118,120,122,124,126,128,130,132,134-139,141-145",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -383,19 +384,21 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_14",
-      "agent_id": "/root/production_book_14_sol",
+      "agent_id": "/root/production_book_14_root_cont2",
       "status": "in_progress",
       "counts": {
-        "pending": 148
+        "verified": 19,
+        "draft": 1,
+        "pending": 128
       },
       "issue_count": 0,
       "coordinator_acceptance": "pending",
       "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/02-yuukibui-3e66906b7e05",
       "build_current": false,
-      "claim_owner": null,
+      "claim_owner": "production_book_14_root_cont2",
       "status_error": null,
-      "pending_pages": "1-148",
+      "pending_pages": "21-148",
       "current_build_sha256": null,
       "worker_state": "running"
     },
@@ -408,20 +411,23 @@
       "model": "gpt-6-sol",
       "reasoning_effort": "high",
       "worker_id": "production_book_15",
-      "agent_id": null,
-      "status": "queued",
+      "agent_id": "/root/production_book_15_sol",
+      "status": "in_progress",
       "counts": {
-        "pending": 152
+        "verified": 4,
+        "rendered": 4,
+        "pending": 144
       },
       "issue_count": 0,
       "coordinator_acceptance": "pending",
       "pending_work": "Visually inspect every unverified physical page; preserve source languages in text; build and sampled coordinator audit",
       "corpus_path": "kaiwa_skill/corpus/namachuukei-shochuukyuu-2-b5b793947c13",
       "build_current": false,
-      "claim_owner": null,
+      "claim_owner": "production_book_15_sol",
       "status_error": null,
-      "pending_pages": "1-152",
-      "current_build_sha256": null
+      "pending_pages": "5-152",
+      "current_build_sha256": null,
+      "worker_state": "running"
     },
     {
       "queue_order": 16,
@@ -785,5 +791,5 @@
       "current_build_sha256": null
     }
   ],
-  "issue_count": 104
+  "issue_count": 120
 }

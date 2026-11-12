@@ -1,0 +1,38 @@
+# namachuukei-shochuukyuu-2-b5b793947c13 — PDF p0001
+
+- Trang in: không có
+- Đường dẫn nội dung: Bìa trước (biên tập)
+
+<a id="p0001-b001"></a>
+Speaking Skills Learned through Listening
+
+Japanese “Live”
+
+聞いて覚える話し方
+
+# 日本語生中継
+
+CD2枚付き
+
+Pre-Intermediate & Intermediate Level
+
+Volume 2
+
+初中級編 2
+
+ボイクマン 総子
+
+宮谷 敦美
+
+小室 リー 郁子
+
+日本語能力試験 3級レベル以上
+
+- 「聞く力」と「話す力」をつける
+- 生き生きとした会話のCD（2枚組）
+- 英語・中国語・韓国語・ポルトガル語の別冊単語訳
+- 自習もできるルビつきスクリプト
+
+KUROSIO
+
+くろしお出版

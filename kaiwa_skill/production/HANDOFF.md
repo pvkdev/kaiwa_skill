@@ -1,5 +1,18 @@
 # Production — tiếp tục toàn bộ hàng đợi
 
+## Sách 11 đã accepted, ba nguồn 13/14/15 đang chạy — 2026-11-11T04:26:34.010598+00:00
+
+- Root đọc lại bốn sửa anchor11–14, mở ảnh nguồn, kiểm byte equality đối với13c8bb0 và source/render hashes không đổi, currentMD/evidence khớp. Đã đóng pending QA và nghiệm thu toàn138trang sách11; commit `e0d33d8`. ROOT_REVIEW/ROOT_AUDIT/acceptance.json ghi scope:20mẫu nội dung,4mẫu sửa anchor,4mẫu coordinator cũ còn khớp rawhash; hợp28trang. Không giả coi review lịch sử đã đổi hash là review mới. Kho hiện9sách accepted,779trang.
+- Ba worker Sol/high thật: `/root/production_book_13_root_cont3` tiếp nguồn13 (mốc140đãxửlý,66verified/74needs_review,5ads cònlại); `/root/production_book_14_root_cont2` tiếp sách14 từ12 sauWIP11 commit`a763cff`; `/root/production_book_15_sol` bắt đầu nguồn15 Namachuukei Shochuukyuu2,152trang.
+- Sách13 Thai rõ nhưng cần exact-script review là capability issue; mini8/12/16/20 tách riêng source resolution. Sau khi hết145physicalpages, chưa được tựaccepted nếu cònflags. Root sẽ tiếp xử lý chất lượng thay vì nâng trạng thái vì đã có draft.
+- Root giữ lượt điều phối/QA/Git và nối ngay khi worker hếtcontext. Chỉ commit ingest bằng `git commit --only` theo đường dẫn riêng; clean/knowledge do chatkhác dùng chungrepo/index.
+
+## Bàn giao mới nhất: sửa anchor trước acceptance sách 11 — 2026-11-11T04:17:31.681020+00:00
+
+- Sách 11 đã đủ 138 trang verified và worker cont7 đã release. Root mở và so cuối137/138, nhưng chặn acceptance vì thiếu b001 đầu khối ở11/12/13/14. Đã spawn Sol/high `/root/production_book_11_anchor_repair` chỉ thêm4anchor, giữ nguyên mọi byte nội dung khác, reverify/build/release; root phải đọc lại trước nghiệm thu. ROOT_AUDIT có pending QA. Tám sách accepted hiện tại đã được rà cùng điều kiện b001 và đều đạt.
+- Sách 14 WIP1–11 verified,12rendered,136pending,0issue,currentbuild,claimrelease; commit `a763cff`. Root đã so3crops p4 và yêu cầu bổ sung口=くち, worker sửa/reverify, root readback đóng QA. Đã spawn `/root/production_book_14_root_cont2` tiếp12–148.
+- Sách 13 `/root/production_book_13_root_cont3` vẫn đang tiếp sau130; các issue Thai/mini giữ riêng. Root giữ lượt điều phối/QA/Git. Sách15 chưa giao, sẽ dùng slot sách11 sau khi xong anchor/acceptance.
+
 ## Sách12 accepted, sách14 đã mở — 2026-11-11T03:52:22.259194+00:00
 
 - Sách 12 `remake-ad35b87b708d`: 140/140 trang verified, không issue hoặc pending QA; build hiện hành, claim đã release. Root kiểm 20 mẫu nội dung và các phạm vi marker/icon; hợp các phạm vi là 34 trang, mức độ kiểm ghi rõ trong ledger. Acceptance, báo cáo và ledger gắn hash đã commit `3f59b9c`. Kho có 8 sách accepted, tổng 641 trang. Phạm vi nghiệm thu là toàn PDF được cung cấp, gồm phụ lục đáp án p130–140.
