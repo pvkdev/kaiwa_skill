@@ -44,6 +44,20 @@ def inside(root, relative):
     return path
 
 
+def curriculum_spec(repo, pinned=None):
+    """Resolve the published curriculum, or a draft's explicitly pinned version."""
+    pointer = repo / "kaiwa_skill/planning/CURRENT_ROADMAP.json"
+    spec = pinned or (read(pointer) if pointer.exists() else {
+        "version": "4.1", "registry": "kaiwa_skill/planning/v2/chang_registry.json",
+        "roadmap": "kaiwa_skill/planning/v2/KAIWA_CHANG_V4_1.jsonl",
+        "policy": "kaiwa_skill/planning/v2/KAIWA_CHANG_V4_1_META.json"})
+    for field in ["registry", "roadmap", "policy"]:
+        if not isinstance(spec.get(field), str):
+            raise ValueError("Curriculum pointer needs " + field)
+        inside(repo, spec[field])
+    return {k: spec[k] for k in ["version", "registry", "roadmap", "policy"]}
+
+
 def hashes(draft):
     result = {}
     for path in sorted(draft.rglob("*")):
@@ -107,10 +121,11 @@ def prior_lesson(ref, draft, stage, repo):
         uid = str(uuid.UUID(uid))
         if not revision or not re.fullmatch(r"r\d{4,}", revision):
             raise ValueError("Earlier stage lesson needs a finalized revision")
-        registry = read(repo / "kaiwa_skill/planning/v2/chang_registry.json")
-        roadmap = repo / "kaiwa_skill/planning/v2/KAIWA_CHANG_V4_1.jsonl"
+        curriculum = curriculum_spec(repo, stage.get("curriculum"))
+        registry = read(inside(repo, curriculum["registry"]))
+        roadmap = inside(repo, curriculum["roadmap"])
         order = [json.loads(s)["uid"] for s in roadmap.read_text(encoding="utf-8-sig").splitlines() if s.strip()] if roadmap.exists() else list(registry)
-        if uid not in registry or uid not in order or order.index(uid) >= order.index(stage["stage_uid"]):
+        if uid not in registry or uid not in order or stage["stage_uid"] not in order or order.index(uid) >= order.index(stage["stage_uid"]):
             raise ValueError("Lookback must point to an earlier curriculum stage")
         previous = repo / "kaiwa_skill/courseware" / uid
         pointer = previous / "current.json"
@@ -395,7 +410,8 @@ def main():
     args = parser.parse_args()
     repo = args.repo_root.resolve()
     uid = str(uuid.UUID(args.stage))
-    registry_path = repo / "kaiwa_skill/planning/v2/chang_registry.json"
+    curriculum = curriculum_spec(repo)
+    registry_path = inside(repo, curriculum["registry"])
     registry = read(registry_path)
     if uid not in registry:
         raise ValueError("Unknown stage UUID")
@@ -455,7 +471,8 @@ def main():
                 info = registry[uid]
                 atomic(draft / "stage.json", {"schema_version": "3.1-draft", "stage_uid": uid,
                        "display_code": info["display_code"], "title": info["title"], "level": info["level"],
-                       "scope": "", "nodes": [], "events": [], "retired_ids": [], "source_refs": []})
+                        "scope": "", "nodes": [], "events": [], "retired_ids": [], "source_refs": [],
+                        "curriculum": curriculum})
                 atomic(draft / "sources.json", {"scan": [], "entries": []})
                 atomic(draft / "learning-map.json", {"schema_version": "1.0", "stage_uid": uid, "lessons": []})
                 (draft / "editorial.md").write_text("# Nhật ký biên tập\n\nChưa biên soạn.\n", encoding="utf-8")
@@ -464,7 +481,9 @@ def main():
                           Path(__file__).resolve().parents[1] / "references/content-contract.md",
                           Path(__file__).resolve().parents[1] / "references/progression.md",
                           Path(__file__).resolve().parents[1] / "references/editorial-workflow.md",
-                          repo / "kaiwa_skill/planning/v2/KAIWA_CHANG_V4_1_META.json"]
+                           Path(__file__).resolve().parents[1] / "references/situation-coverage.md",
+                           inside(repo, curriculum["roadmap"]), inside(repo, curriculum["policy"]),
+                           repo / "kaiwa_skill/planning/CURRENT_ROADMAP.json"]
             state = {"run": run, "stage_uid": uid, "status": "drafting", "created_at": now(),
                      "base_revision": current["revision"] if current else None,
                      "recovered_from": previous["run"] if previous else None,

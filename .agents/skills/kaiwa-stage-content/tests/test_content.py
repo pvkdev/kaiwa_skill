@@ -187,6 +187,33 @@ class ContentRegression(unittest.TestCase):
         WORK.check(self.draft, UIDS[0], self.root)
         self.assertEqual(WORK.read(self.draft / "stage.json")["schema_version"], "3.0-draft")
 
+    def test_begin_uses_published_v5_registry_and_pins_curriculum(self):
+        new_uid = "9d98dd08-a68c-5fa9-99e6-053b65ba98c1"
+        pointer = {"version": "5.0", "registry": "kaiwa_skill/planning/v5/chang_registry.json",
+                   "roadmap": "kaiwa_skill/planning/v5/KAIWA_CHANG_V5.jsonl",
+                   "policy": "kaiwa_skill/planning/v5/KAIWA_CHANG_V5_META.json"}
+        put(self.root / pointer["registry"], {
+            new_uid: {"display_code": "T-101", "title": "Fictional new V5 stage", "level": "Trung"}})
+        roadmap = self.root / pointer["roadmap"]
+        roadmap.write_text(json.dumps({"uid": new_uid}) + "\n", encoding="utf-8")
+        put(self.root / pointer["policy"], {"version": "5.0"})
+        put(self.root / "kaiwa_skill/planning/CURRENT_ROADMAP.json", pointer)
+        result = self.cli("begin", new_uid)
+        stage = WORK.read(Path(result["draft"]) / "stage.json")
+        self.assertEqual(stage["title"], "Fictional new V5 stage")
+        self.assertEqual(stage["curriculum"], pointer)
+        state = WORK.read(self.root / "kaiwa_skill/courseware" / new_uid / "runs" / (result["run"] + ".json"))
+        self.assertIn(pointer["roadmap"], state["spec_pins"])
+        changed = {**pointer, "version": "future", "roadmap": "kaiwa_skill/planning/future.jsonl"}
+        put(self.root / "kaiwa_skill/planning/CURRENT_ROADMAP.json", changed)
+        self.assertEqual(WORK.curriculum_spec(self.root, stage["curriculum"]), pointer)
+
+    def test_curriculum_pointer_cannot_escape_repo(self):
+        pointer = {"version": "5.0", "registry": "../../outside.json", "roadmap": "r.jsonl", "policy": "p.json"}
+        put(self.root / "kaiwa_skill/planning/CURRENT_ROADMAP.json", pointer)
+        with self.assertRaisesRegex(ValueError, "outside"):
+            WORK.curriculum_spec(self.root)
+
 
 if __name__ == "__main__":
     unittest.main()

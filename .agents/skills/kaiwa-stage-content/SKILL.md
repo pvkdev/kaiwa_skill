@@ -1,11 +1,11 @@
 ---
 name: kaiwa-stage-content
-description: Biên soạn hoặc nâng cấp chặng Kaiwa từ 27 sách và memo; nội dung gối đầu, Speak Japanese thành kiến thức dành cho video kèm shadowing, các nguồn luyện nói thành bài shadowing theo chủ đề, có checkpoint.
+description: Biên soạn hoặc nâng cấp chặng Kaiwa từ sách, nghiên cứu ngoài và AI viết mới; tình huống nhiều sự kiện/nhánh, nội dung gối đầu, Speak Japanese kèm shadowing, có checkpoint.
 ---
 
 # Biên soạn chặng Kaiwa
 
-Mục tiêu là một lộ trình chung tận dụng chiều sâu và vai trò khác nhau của các sách. Mỗi chặng là một chủ đề có nhiều kiến thức và nhiều tình huống thực tế; không phải một bản tóm tắt sách hay một bộ hội thoại do AI tự nghĩ rồi gắn nguồn.
+**“Bạn chỉ giỏi kaiwa khi bạn nói đủ nhiều.”** Mục tiêu là một lộ trình chung có chiều sâu, nhiều kiến thức và nhiều tình huống nói thực tế trong mỗi chặng. 27 sách là nền tài nguyên quý, không phải giới hạn tri thức. Nghiên cứu ngoài và AI biên soạn kiến thức/hội thoại mới là thành phần thiết yếu để làm nội dung tốt; giữ nguồn trung thực, không gán phần tự viết cho sách.
 
 **Ưu tiên chất lượng lộ trình:** chọn chất liệu giúp người học giao tiếp tốt, hợp cấp và nối mạch học. Không bắt dùng 100% tài nguyên hay hoàn tất mọi phần của từng sách. Độ phủ nguồn là thông tin để tra cứu/cân nhắc, không phải KPI hoặc điều kiện chốt bài. Phần chưa chọn có thể để dành, gộp hoặc không đưa vào; chỉ coi là thiếu khi ảnh hưởng mục tiêu học. Không nhồi nội dung hoặc buộc kiểm kê chi tiết toàn kho trước pilot.
 
@@ -21,7 +21,7 @@ Mục tiêu là một lộ trình chung tận dụng chiều sâu và vai trò k
 
 Đường dẫn dưới đây tính từ gốc repo:
 
-- Hạt giống: `kaiwa_skill/planning/v2/KAIWA_CHANG_V4_1.jsonl`, `chang_registry.json` cùng thư mục. Giữ UID của chặng; display code có thể thay đổi.
+- Hạt giống: tra `kaiwa_skill/planning/CURRENT_ROADMAP.json` để lấy lộ trình/registry hiện hành; nếu chưa có dùng V4.1 trong `planning/v2`. V5 ở `planning/v5`; bản `BUILD_MANIFEST.json` đang dựng không thay đầu ra đã chốt. Giữ UID của chặng; display code có thể thay đổi. Chặng đã gộp phải theo bản chuyển tiếp, không dựng lại alias cũ thành chặng mới.
 - Tra nguồn: `kaiwa_skill/planning/catalog27/BOOK_GUIDE.md`, `manifest.json`, `annotations/Bxx.json`; tìm vị trí bằng `kaiwa_skill/planning/v2/index/HEADINGS_27.jsonl` hoặc `catalog27/source_index.jsonl`.
 - Memo: `kaiwa_skill/planning/WEB_COURSE_TOPICS_MEMO.md`. Mục lục memo chỉ chứng minh tên/chủ đề, không chứng minh nội dung hội thoại.
 - Ngữ pháp Minna: `kaiwa_skill/reference/grammar/MINNA_01_50_GRAMMAR.json` và bản MD. Ngữ pháp bunpou có sẵn: tra metadata trong `bunpou_skill/work/`, chỉ đọc tên/nghĩa/ID khi cần.
@@ -32,7 +32,7 @@ Mục tiêu là một lộ trình chung tận dụng chiều sâu và vai trò k
 1. Đọc [hợp đồng dữ liệu](references/content-contract.md) khi bắt đầu; đọc [cách phối hợp sách và biên tập](references/editorial-workflow.md) trước khi chọn nguồn.
 2. Xác định phạm vi chủ đề và cách nói phù hợp cấp độ. Xem hạt giống như gợi ý; token nguồn V4.1 có thể sai. Kiểm lại nội dung nguồn thực tế trước khi sử dụng.
 3. Quét chỉ mục của đủ 27 sách để tìm nguồn liên quan; đọc trọn các phần liên quan được chọn. Ghi rõ `index_only` hay `read` trong sổ nguồn. Không đọc lại toàn bộ 27 sách cho mỗi chặng, không gọi việc tìm thấy heading là đã đọc nội dung.
-4. Dừng để thiết kế bản đồ sự kiện/tình huống: mục đích, quan hệ, diễn biến, kết quả, chỗ hiểu nhầm và cách xử lý. Ghi cả những lỗ hổng chưa có nguồn. Không áp số lượng node, từ, tình huống hay độ dài hội thoại cố định.
+4. Dừng để thiết kế bản đồ sự kiện/tình huống theo [độ bao phủ tình huống](references/situation-coverage.md): đa dạng sự kiện, mục đích, quan hệ, diễn biến, kết quả và các cuộc nói tiếp theo. Chủ động nghiên cứu ngoài và viết mới, không dừng vì sách chưa có mẫu. Ghi phần chưa kiểm dữ kiện; không áp số lượng node, từ, tình huống hay độ dài hội thoại cố định.
 5. Trước khi viết ví dụ/hội thoại, làm theo [gối đầu và phân loại bài học](references/progression.md): đọc hai bài gần nhất đã có, tìm thêm bài cũ liên quan; chọn kiến thức/từ/ngữ pháp dùng lại và ghi vị trí áp dụng trong `learning-map.json`. Không coi nội dung chưa biên soạn là đã dạy.
 6. Lập thứ tự node xen kẽ kiến thức, danh sách từ, tên ngữ pháp, shadowing và tình huống. **B11/B12 Speak Japanese phải thành cặp kiến thức Markdown dành cho video → shadowing các ví dụ tương ứng ngay sau nó.** Hiện chỉ tạo MD và dữ liệu luyện, người dùng làm video sau. B08 必須700 là ngoại lệ: nhóm theo topic thành shadowing, không bắt làm video kiến thức.
 7. Biên soạn từng cụm sự kiện. Một kết quả khác có ý nghĩa giao tiếp cần hội thoại riêng: đồng ý, từ chối, có điều kiện, chờ xác nhận, đề nghị phương án khác… Không nhân bản chỉ để tăng số lượng.
@@ -49,4 +49,4 @@ Mục tiêu là một lộ trình chung tận dụng chiều sâu và vai trò k
 - Một lượt sở hữu một chặng. Không giao cùng draft cho hai worker. Không tự khởi chạy tác nhân nếu yêu cầu hiện tại chưa cho phép; khi có phân công, giao mỗi worker một UID riêng theo cấu hình repo.
 - Khi phục hồi, giữ draft cũ, tạo draft tiếp quản riêng; không reset hoặc viết đè revision đã chốt. Đọc `next_action` trước khi làm tiếp.
 - Nâng cấp có mục tiêu: giữ ID node/tình huống/lượt nói không đổi nếu vẫn là cùng đối tượng, ghi thay đổi và cập nhật các liên kết/context liên quan. Tình huống bị bỏ phải có bản ghi thay thế, không tái sử dụng ID.
-- Không tự chuyển từ làm một chặng sang chạy toàn bộ 194 chặng. Phạm vi chạy theo yêu cầu điều phối hiện tại.
+- Không tự chuyển từ làm một chặng sang chạy toàn lộ trình. Phạm vi chạy theo yêu cầu điều phối hiện tại.

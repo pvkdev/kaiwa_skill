@@ -1,5 +1,11 @@
 # Phối hợp nguồn và biên tập từng chủ đề
 
+## Sách là nền, không là trần
+
+Chủ động dùng nguồn ngoài và AI viết mới để làm một khóa nói tốt, không chỉ để vá khi hết chất liệu sách. Có thể thêm sự kiện, kiến thức giao tiếp và hội thoại mà 27 sách không có. Tài nguyên ngoài giúp hiểu hoàn cảnh thực tế; AI tổng hợp và sáng tạo cuộc thoại đúng mục tiêu/cấp/quan hệ. Tách ba việc: nguồn xác nhận dữ kiện; chất liệu gợi cách nói; tác giả tạo lời thoại. Một website về thủ tục không làm hội thoại tự viết thành nguyên văn của website.
+
+Khi có quy trình/điều kiện/chi phí/quyền lợi/an toàn cần trình bày như dữ kiện, đọc nguồn phù hợp và ghi thời điểm/phạm vi. Lời kể cộng đồng gợi nhu cầu, không chứng minh tần suất hay quy định. Phần chưa có nguồn trực tiếp vẫn có thể được biên soạn như cuộc nói giả định; không gán nó thành lời khuyên chuyên môn. Không tạo nhiệm vụ viết mail/điền form: nếu giấy tờ liên quan thì người học luyện hỏi, giải thích, xác nhận và nhờ hỗ trợ bằng lời.
+
 ## Tra rộng, đọc sâu đúng chỗ
 
 Đọc profile/chỉ mục đủ 27 sách một lần khi nhận chặng, ghi cuốn nào có khả năng đóng góp. Tìm bằng cả tên topic, chức năng giao tiếp, quan hệ và các từ Nhật gần nghĩa; ví dụ chủ đề nhà hàng còn liên quan 注文、予約、変更、断る、苦情、会計. Mục lục chỉ giúp định vị. Đọc toàn bộ phần được chọn, cả lời giải thích và các lượt đáp, thay vì chỉ lấy một câu tìm được qua `rg`.
@@ -24,6 +30,8 @@ Khi rà phần chưa dùng, phân biệt **lỗ hổng mục tiêu giao tiếp**
 Khi được giao chạy nhiều chặng, lấy danh sách UID từ registry và trạng thái trên đĩa: có `current.json` thì giữ revision đã chốt, có run dở thì phục hồi đúng run sau khi kiểm chủ sở hữu, chưa có mới `begin`. Không lấy việc có thư mục hoặc số node làm dấu hiệu hoàn thành. Chỉ mục tiến độ toàn lộ trình có thể dựng lại từ các trạng thái này; không để một bảng tổng hợp riêng trở thành bản gốc thứ hai.
 
 ## Thiết kế sự đa dạng có ý nghĩa
+
+Đọc [khung bao phủ](situation-coverage.md). Sáu seed của preview hoặc số seed từ sách không là giới hạn đầu ra. Xem kỹ từng topic để mở các họ sự kiện và nhánh có diễn biến sau đó, không lấy một ma trận chung rải lên mọi chặng.
 
 Với từng chủ đề, viết ngắn bản đồ trước khi viết hội thoại:
 
