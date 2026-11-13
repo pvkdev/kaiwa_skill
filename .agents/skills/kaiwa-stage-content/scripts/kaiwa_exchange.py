@@ -35,7 +35,8 @@ def schemas():
     """Generate the two strict JSON Schemas; generated files are mirrored in Harumi."""
     ids = array(ID, unique=True)
     texts = array(TEXT)
-    grammar = obj({"catalog": {"enum": ["minna", "bunpou"]}, "name_ja": TEXT})
+    grammar = obj({"catalog": {"enum": ["minna", "bunpou"]},
+                   "jlpt_level": {"enum": ["N5", "N4", "N3", "N2", "N1"]}, "name_ja": TEXT})
     defs = {
         "utterance": obj({"id": ID, "ja": TEXT, "vi": TEXT}),
         "speaker": obj({"id": {"enum": ["A", "B"]}, "label_vi": TEXT, "role_vi": TEXT}),
@@ -258,16 +259,22 @@ def material_text(data, node_ids):
             chunks.append(re.sub(r"\{\{utterance:([a-zA-Z0-9_-]+)\}\}",
                                  lambda match: sentence(match[1]), content["body_md"]))
         else:
-            chunks.append(dumps(content))
+            if node["type"] == "vocabulary":
+                chunks.append("、".join(content["terms_ja"]))
+            elif node["type"] == "grammar":
+                chunks.append("\n".join("- " + p["jlpt_level"] + " · " + p["name_ja"] for p in content["patterns"]))
+            elif node["type"] == "situation":
+                chunks.append(content["setting_vi"] + "\n\nMục đích: " + content["goal_vi"])
+                roles = {s["id"]: s["label_vi"] for s in content["speakers"]}
+                chunks.extend("**" + t["speaker_id"] + " — " + roles[t["speaker_id"]] + "**\n\n" + sentence(t["utterance_id"])
+                              for t in content["turns"])
             refs = []
-            if node["type"] == "situation":
-                refs.extend(t["utterance_id"] for t in content["turns"])
             if node["type"] == "shadowing":
                 for item in content["items"]:
                     if item["kind"] == "sentence":
                         refs.append(item["utterance_id"])
                     else:
-                        refs.extend(t["utterance_id"] for t in nodes[item["situation_node_id"]]["data"]["turns"])
+                        chunks.append(material_text(data, [item["situation_node_id"]]))
             chunks.extend(sentence(uid) for uid in refs)
     return "\n\n".join(chunks)
 
@@ -279,6 +286,18 @@ def pack(data, output):
     name = data["kind"] + ".json"
     (output / name).write_text(dumps(data), encoding="utf-8", newline="\n")
     if data["kind"] == "stage":
+        preview = ["# " + data["display_code"] + " — " + data["title_vi"], data["scope_vi"]]
+        for node in data["nodes"]:
+            if node["type"] not in {"live_challenge", "free_talk"}:
+                preview.append(material_text(data, [node["id"]]))
+            else:
+                preview.append("## " + node["title_vi"] + " [" + node["id"] + "]")
+                if node["type"] == "free_talk":
+                    preview.append(node["data"]["learner_intro_vi"])
+                else:
+                    brief = node["data"]["learner_brief"]
+                    preview.extend([brief["scene_vi"], "\n".join("- " + goal for goal in brief["goals_vi"])])
+        (output / "stage-preview.md").write_text("\n\n".join(preview) + "\n", encoding="utf-8", newline="\n")
         for node in data["nodes"]:
             content = node["data"]
             if node["type"] == "knowledge":

@@ -2,7 +2,7 @@
 
 Quyết định ngày 2026-11-13 theo yêu cầu chủ app. Đây là **hợp đồng đầu ra của skill và đầu vào của feature Kaiwa Curriculum mới**, không phải mô tả API/DB hiện đã triển khai. Không thay đổi 289 chặng V5. Thiết kế không có bài thi, điểm, điều kiện mở khóa hoặc ép người học theo thứ tự.
 
-Nguồn chuẩn ở repo skill: `kaiwa_skill/contracts/harumii-kaiwa/v1/`. Harumi giữ bản sao schema/example tại `design/kaiwa-curriculum/contracts/v1/`. Schema được sinh từ `kaiwa_exchange.py::schemas()`; thay cấu trúc phải cập nhật generator, sinh lại schema, kiểm cả hai repo. Không duy trì hai thiết kế độc lập.
+Nguồn chuẩn ở repo skill: `kaiwa_skill/contracts/harumii-kaiwa/v1/`. Schema được sinh từ `kaiwa_exchange.py::schemas()`; thay cấu trúc phải cập nhật generator, schema và fixture tại đây. Mirror Harumi trước đó chỉ là bản bàn giao; theo phạm vi mới, không cập nhật repo app trong task lộ trình. Khi build app sau này lấy lại bản chuẩn này. Bổ sung trước pilot: grammar bắt buộc có `jlpt_level` N5–N1; đây là điều chỉnh hợp đồng chưa phát hành production, không phải migration dữ liệu người học.
 
 ## 1. Ranh giới và đơn vị chuyển dữ liệu
 
@@ -44,7 +44,7 @@ Schema version 1.0.0 độc lập với curriculum V5 và hợp đồng biên t�
 
 Harumii dùng list này để tạo draft danh sách từ qua hệ thống sẵn có; enrichment và xác nhận thuộc app. Lưu binding của node/list và từng term ở phía app. Import lại không sinh lại list nếu dữ liệu không đổi; thay list tạo revision/bản nháp mới, không xóa SRS hoặc danh sách người học đã lưu.
 
-`grammar.data.patterns` chỉ có `{catalog: minna|bunpou, name_ja}`. Không cần giải thích, ví dụ hoặc ID DB. Admin chọn mục tương ứng trong Harumii và lưu binding riêng. Chỉ đưa tên khi đã tra được nguồn thật; không bịa bunpou ID. Một tên có thể có nhiều kết quả tìm; không tự chọn kết quả đầu tiên.
+`grammar.data.patterns` có `{catalog: minna|bunpou, jlpt_level: N5|N4|N3|N2|N1, name_ja}`. Không cần giải thích, ví dụ hoặc ID DB. Admin tìm theo level + tên và lưu binding riêng. Chỉ đưa tên khi đã tra được nguồn thật; không bịa bunpou ID. Một tên có thể có nhiều kết quả tìm; không tự chọn kết quả đầu tiên. Level ưu tiên metadata đã xác minh; mapping biên tập từ Minna phải ghi căn cứ ở sổ nguồn, không gọi là danh mục JLPT chính thức và không quy đổi cứng từ số bài.
 
 Mapping ngữ pháp chờ admin là `pending`, không coi là lỗi dịch hoặc tự tạo grammar mới bằng AI. Khi text tên đổi, mapping cũ chuyển `needs_review` thay vì âm thầm áp vào tên mới. Không khóa cả chặng/người học vì mapping chưa xong; admin có thể tạm chưa bật node grammar, các node nội dung khác vẫn dùng được.
 

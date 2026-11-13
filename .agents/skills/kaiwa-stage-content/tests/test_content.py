@@ -41,7 +41,7 @@ class ContentRegression(unittest.TestCase):
         return json.loads(result.stdout) if result.stdout.startswith("{") else result.stdout + result.stderr
 
     def bundle(self, uid):
-        opened = self.cli("begin", uid)
+        opened = self.cli("begin", uid, args=["--authoring-format", "legacy"])
         draft, run = Path(opened["draft"]), opened["run"]
         stage = WORK.read(draft / "stage.json")
         stage.pop("harumii_export", None)  # This fixture intentionally exercises the legacy editorial format.

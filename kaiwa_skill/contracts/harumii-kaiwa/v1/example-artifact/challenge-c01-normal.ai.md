@@ -6,26 +6,11 @@ Tài liệu tham khảo, không phải lời user đã nói:
 
 ## Từ dùng khi gọi món [v01]
 
-{
-  "terms_ja": [
-    "メニュー",
-    "おすすめ",
-    "料理"
-  ]
-}
-
+メニュー、おすすめ、料理
 
 ## Mẫu đề nghị [g01]
 
-{
-  "patterns": [
-    {
-      "catalog": "minna",
-      "name_ja": "〜ていただけませんか"
-    }
-  ]
-}
-
+- N4 · 〜ていただけませんか
 
 ## Đề nghị lịch sự — kiến thức dành cho video [k01]
 
@@ -41,73 +26,29 @@ Bạn có thể cho tôi xem thực đơn được không?
 
 ## Luyện câu vừa học [sh01]
 
-{
-  "knowledge_node_ids": [
-    "k01"
-  ],
-  "items": [
-    {
-      "id": "item01",
-      "kind": "sentence",
-      "utterance_id": "u01"
-    }
-  ]
-}
-
-
 メニューを見せていただけませんか。
 
 Bạn có thể cho tôi xem thực đơn được không?
 
 ## Xin xem thực đơn [s01]
 
-{
-  "event_id": "e01",
-  "setting_vi": "Khách vừa ngồi vào bàn trong quán.",
-  "goal_vi": "Xin thực đơn và đáp lại khi nhận được.",
-  "relationship_vi": "Khách và nhân viên, lịch sự.",
-  "outcome": "received",
-  "speakers": [
-    {
-      "id": "A",
-      "label_vi": "Khách",
-      "role_vi": "Người gọi món"
-    },
-    {
-      "id": "B",
-      "label_vi": "Nhân viên",
-      "role_vi": "Nhân viên phục vụ"
-    }
-  ],
-  "turns": [
-    {
-      "id": "t01",
-      "speaker_id": "A",
-      "utterance_id": "u01"
-    },
-    {
-      "id": "t02",
-      "speaker_id": "B",
-      "utterance_id": "u02"
-    },
-    {
-      "id": "t03",
-      "speaker_id": "A",
-      "utterance_id": "u03"
-    }
-  ],
-  "follows": [],
-  "alternative_to": []
-}
+Khách vừa ngồi vào bàn trong quán.
 
+Mục đích: Xin thực đơn và đáp lại khi nhận được.
+
+**A — Khách**
 
 メニューを見せていただけませんか。
 
 Bạn có thể cho tôi xem thực đơn được không?
 
+**B — Nhân viên**
+
 はい、どうぞ。
 
 Vâng, mời bạn xem.
+
+**A — Khách**
 
 ありがとうございます。
 

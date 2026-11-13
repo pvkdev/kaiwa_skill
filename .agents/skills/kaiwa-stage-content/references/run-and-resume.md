@@ -1,0 +1,35 @@
+# Chạy và phục hồi biên soạn nội dung
+
+Phạm vi: lộ trình, nội dung và gói dữ liệu xuất. Không làm feature/DB/engine Harumii. Chất lượng ưu tiên hơn tốc độ/quota; không giảm độ phủ hoặc bỏ nguồn cần thiết để vừa một lượt chat. Chia lượt và checkpoint, giữ phần chưa làm rõ trong next action.
+
+## Một bản nội dung gốc
+
+Lượt mới dùng canonical mode mặc định. **Chỉ soạn lời bài học trong `harumii-stage.json`.** Nguồn/nguồn gốc nội dung ở `sources.json`, `source-map.json`; bằng chứng đọc bài trước và tái dùng ở `learning-map.json`; quyết định/chỗ còn thiếu ở `editorial.md`.
+
+`stage_work.py sync/validate/finalize` tự sinh `stage.json` và các file knowledge/vocabulary/grammar/situation/shadowing/live. Không viết lại cùng lời thoại ở những file dẫn xuất. Vocabulary item ID dẫn xuất là hash từ theo node, không đổi vì sắp lại list. Turn ID dẫn xuất có prefix node; review metadata có thể tham chiếu whole node nếu không cần pin từng lượt.
+
+`source-map.json.nodes` có đúng một mục cho mỗi material node: `{authorship: source_adaptation|original_extension, source_refs: [...]}`. Có thể thêm `word_exposure` và ghi chú ngữ pháp/biên tập. Phần chuyển soạn phải có nguồn đã đọc trong sổ nguồn; phần AI viết mới không gán thành nguyên văn sách. Compiler không chứng minh tiếng Nhật hoặc bản dịch đúng.
+
+## Trình tự
+
+1. Đọc AGENTS, SKILL và các reference được chỉ định; xác định UID/phạm vi được giao.
+2. `status` kiểm owner/current trước; không mở trùng một chặng. `begin` cho chặng mới; `begin --from-current` cho nâng cấp.
+3. Đọc chỉ mục 27 sách, phần nguồn được chọn, hai bài trước thực có; ghi nguồn và khoảng trống trước khi viết. Không gọi chưa tồn tại là đã học.
+4. Viết từng cụm trong canonical source, giữ ID, nghĩa Việt, nhánh và gối đầu. Chạy `sync` khi JSON/schema đã đủ; bản nháp chưa parse được vẫn được checkpoint/recover giữ nguyên byte.
+5. Checkpoint sau cụm đáng kể: ghi node/sự kiện vừa xong, nguồn vừa đọc, điều cần đọc lại và next action cụ thể. Pause khi cần nghỉ; không chốt bài để né quota.
+6. Đọc lại toàn chặng, kiểm các nhánh, độ vừa sức, dịch, gối đầu, nguồn, challenge và free talk. `validate`, rồi `finalize --editor-reviewed` với nhận xét thật. Script không thay review.
+7. `kaiwa_exchange.py pack` từ canonical file của snapshot chốt, vào thư mục xuất mới. Có `stage-preview.md`, knowledge MD, hai phần challenge theo variant, free talk, manifest. Không chạy DB/TTS.
+
+## Tác nhân khác, Codex hoặc Claude Code tiếp tục
+
+Không cần lịch sử chat còn nguyên. Prompt khởi động phải chỉ rõ repo, SKILL, UID và run; không giả định công cụ tự đọc đúng folder skill. Model/reasoning là cấu hình của runner, không phải điều kiện giải mã checkpoint. Không tự spawn hoặc đổi model nếu chưa được yêu cầu.
+
+Đọc `stage_work.py status`, checkpoint, `editorial.md`, source canonical, nguồn/spec đã pin. Nếu paused và file/spec không đổi, dùng `resume`. Nếu tiến trình cũ chết, quota hết hoặc file/spec đã đổi, xác nhận nó đã dừng rồi `recover --run RUN --ack-stopped`; bản cũ được giữ, run mới có draft riêng. Không xóa owner/lock để chạy nhanh; không sửa hash để che thay đổi nguồn.
+
+Sau recovery, đọc phần chưa checkpoint, sửa JSON dở nếu có, tái đối chiếu phần spec/nguồn thay đổi rồi tiếp từ next action. `--clear-stale-guard` chỉ dùng khi guard còn lại từ tiến trình đã dừng. Bảo đảm chỉ một tác nhân đang viết UID đó.
+
+Byte chưa từng ghi xuống đĩa không thể cứu. Checkpoint/status là trạng thái biên soạn, không là bằng chứng nội dung đạt chất lượng; không tự đánh finalized hoặc editor-reviewed khi chỉ thấy script chạy thành công.
+
+Prompt mẫu:
+
+> Làm tại D:\CODE\git\kaiwa_skill. Đọc AGENTS.md và .agents/skills/kaiwa-stage-content/SKILL.md, đặc biệt references/run-and-resume.md. Tiếp chặng UID …, run …, từ checkpoint/next_action thực tế. Tác nhân cũ đã dừng. Giữ nội dung đã ghi, không làm lại từ đầu, không sửa bunpou/knowledge/PDF hoặc repo Harumi. Review nguồn và gối đầu; chỉ chốt phạm vi được giao sau khi đọc lại nội dung.

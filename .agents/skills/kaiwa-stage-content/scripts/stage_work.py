@@ -460,11 +460,12 @@ def export_context(draft, stage):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("command", choices=["begin", "status", "checkpoint", "pause", "resume", "recover", "validate", "finalize"])
+    parser.add_argument("command", choices=["begin", "status", "checkpoint", "pause", "resume", "recover", "sync", "validate", "finalize"])
     parser.add_argument("--repo-root", type=Path, default=Path(__file__).resolve().parents[4])
     parser.add_argument("--stage", required=True, help="Immutable UUID from chang_registry.json")
     parser.add_argument("--run", help="Run UUID returned by begin/recover")
     parser.add_argument("--from-current", action="store_true", help="Begin an upgrade from current revision")
+    parser.add_argument("--authoring-format", choices=["canonical", "legacy"], default="canonical")
     parser.add_argument("--next", default="", help="Concrete next action for next worker")
     parser.add_argument("--note", default="")
     parser.add_argument("--editor-reviewed", action="store_true", help="Author has actually completed the editorial review")
@@ -536,11 +537,32 @@ def main():
                        "display_code": info["display_code"], "title": info["title"], "level": info["level"],
                         "scope": "", "nodes": [], "events": [], "retired_ids": [], "source_refs": [],
                         "curriculum": curriculum, "harumii_export": "harumii-stage.json"})
+                if args.authoring_format == "canonical":
+                    wrapper = read(draft / "stage.json")
+                    wrapper["authoring_mode"] = "canonical"
+                    atomic(draft / "stage.json", wrapper)
+                    levels = {"Sơ": "beginner", "Trung": "intermediate", "Thượng": "advanced"}
+                    numbers = [int(p.name[1:]) for p in (stage / "revisions").glob("r*") if re.fullmatch(r"r\d{4,}", p.name)]
+                    atomic(draft / "harumii-stage.json", {"schema_version": "1.0.0", "kind": "stage", "course_id": "kaiwa-main",
+                           "stage_uid": uid, "revision": max(numbers, default=0) + 1,
+                           "display_code": info["display_code"], "title_vi": info["title"], "level": levels[info["level"]],
+                           "scope_vi": "", "nodes": [], "utterances": [], "events": [], "lessons": [], "review_links": [], "retired": []})
+                    atomic(draft / "source-map.json", {"nodes": {}})
                 atomic(draft / "sources.json", {"scan": [], "entries": []})
                 atomic(draft / "learning-map.json", {"schema_version": "1.0", "stage_uid": uid, "lessons": []})
                 (draft / "editorial.md").write_text("# Nhật ký biên tập\n\nChưa biên soạn.\n", encoding="utf-8")
+            if current and not previous and read(draft / "stage.json").get("authoring_mode") == "canonical":
+                payload = read(draft / "harumii-stage.json")
+                numbers = [int(p.name[1:]) for p in (stage / "revisions").glob("r*") if re.fullmatch(r"r\d{4,}", p.name)]
+                payload["revision"] = max(numbers, default=0) + 1
+                for link in payload["review_links"]:
+                    if link["from_stage_uid"] == uid:
+                        link["from_revision"] = payload["revision"]
+                atomic(draft / "harumii-stage.json", payload)
             spec_paths = [registry_path, Path(__file__).resolve(),
+                          repo / "AGENTS.md", repo / "CLAUDE.md",
                           Path(__file__).with_name("kaiwa_exchange.py"),
+                          Path(__file__).with_name("stage_compile.py"),
                           Path(__file__).resolve().parents[1] / "SKILL.md",
                           Path(__file__).resolve().parents[1] / "references/content-contract.md",
                           Path(__file__).resolve().parents[1] / "references/progression.md",
@@ -592,6 +614,14 @@ def main():
             return
         if not owner or owner["run"] != run or state["status"] != "drafting":
             raise ValueError("Run does not own this stage")
+        if args.command in {"sync", "validate", "finalize"} and read(draft / "stage.json").get("authoring_mode") == "canonical":
+            spec = importlib.util.spec_from_file_location("stage_compile", Path(__file__).with_name("stage_compile.py"))
+            compiler = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(compiler)
+            compiler.compile_stage(draft)
+        if args.command == "sync":
+            print("Derived editorial files synchronized; canonical source preserved")
+            return
         if args.command in {"validate", "finalize"}:
             content = check(draft, uid, repo)
             if args.command == "validate":

@@ -35,6 +35,15 @@ class ExchangeRegression(unittest.TestCase):
         with self.assertRaises(ValueError):
             EXCHANGE.validate(self.data)
 
+    def test_grammar_requires_searchable_jlpt_level(self):
+        pattern = self.node("grammar")["data"]["patterns"][0]
+        del pattern["jlpt_level"]
+        with self.assertRaises(ValueError):
+            EXCHANGE.validate(self.data)
+        pattern["jlpt_level"] = "beginner"
+        with self.assertRaises(ValueError):
+            EXCHANGE.validate(self.data)
+
     def test_audio_dictionary_fields_and_furigana_are_not_exchange_fields(self):
         for field in ["audio_url", "furigana", "harumi_dictionary_id"]:
             data = copy.deepcopy(self.data)

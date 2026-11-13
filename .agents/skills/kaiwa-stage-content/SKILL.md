@@ -12,7 +12,7 @@ description: Biên soạn, nâng cấp và xuất chặng Kaiwa cho Harumii; ph�
 ## Phạm vi
 
 - Chỉ tạo dữ liệu nội dung. App đã có học từ vựng, shadowing toàn hội thoại, shadowing đổi vai và Live Kaiwa AI.
-- Đầu ra cho feature Harumii phải theo [hợp đồng trao đổi](references/harumii-exchange.md): từ vựng chỉ list Nhật; ngữ pháp chỉ tên Minna/bunpou để admin pick; mọi câu luyện Nhật có nghĩa Việt. App tự furigana và TTS, gói app không cần CD/audio sách hoặc ID DB.
+- Đầu ra phải theo [hợp đồng trao đổi](references/harumii-exchange.md): từ vựng chỉ list Nhật; ngữ pháp gồm level N5–N1 và tên Minna/bunpou để admin pick; mọi câu luyện Nhật có nghĩa Việt. App tự furigana và TTS, gói app không cần CD/audio sách hoặc ID DB. Phạm vi chỉ ở repo lộ trình; không tiếp tục làm feature/DB/code Harumi.
 - Không tạo bài kiểm tra người học, điểm số, điều kiện đạt/mở khóa, thời lượng bắt buộc hay kịch bản điều khiển engine.
 - Thứ tự node là gợi ý đọc/học. Người học được chọn tự do; không biến quan hệ kiến thức thành khóa truy cập.
 - Giữ tiếng Nhật không furigana; giải thích và nghĩa hội thoại bằng tiếng Việt. Giữ nguồn/CD/track ở metadata nếu có bằng chứng, không khẳng định đã có file nghe.
@@ -30,7 +30,7 @@ description: Biên soạn, nâng cấp và xuất chặng Kaiwa cho Harumii; ph�
 
 ## Quy trình cho từng chặng
 
-1. Đọc [hợp đồng biên tập](references/content-contract.md) và [hợp đồng đầu ra Harumii](references/harumii-exchange.md) khi bắt đầu; đọc [cách phối hợp sách và biên tập](references/editorial-workflow.md) trước khi chọn nguồn. Workspace và wire JSON app là hai lớp; không import cấu trúc workspace thẳng vào DB.
+1. Đọc [chạy và phục hồi](references/run-and-resume.md), [hợp đồng biên tập](references/content-contract.md) và [hợp đồng đầu ra](references/harumii-exchange.md) khi bắt đầu; đọc [cách phối hợp sách và biên tập](references/editorial-workflow.md) trước chọn nguồn. Canonical mode chỉ soạn nội dung trong `harumii-stage.json`; workspace/MD được compiler sinh, không viết bài hai lần.
 2. Xác định phạm vi chủ đề và cách nói phù hợp cấp độ. Xem hạt giống như gợi ý; token nguồn V4.1 có thể sai. Kiểm lại nội dung nguồn thực tế trước khi sử dụng.
 3. Quét chỉ mục của đủ 27 sách để tìm nguồn liên quan; đọc trọn các phần liên quan được chọn. Ghi rõ `index_only` hay `read` trong sổ nguồn. Không đọc lại toàn bộ 27 sách cho mỗi chặng, không gọi việc tìm thấy heading là đã đọc nội dung.
 4. Dừng để thiết kế bản đồ sự kiện/tình huống theo [độ bao phủ tình huống](references/situation-coverage.md): đa dạng sự kiện, mục đích, quan hệ, diễn biến, kết quả và các cuộc nói tiếp theo. Chủ động nghiên cứu ngoài và viết mới, không dừng vì sách chưa có mẫu. Ghi phần chưa kiểm dữ kiện; không áp số lượng node, từ, tình huống hay độ dài hội thoại cố định.
