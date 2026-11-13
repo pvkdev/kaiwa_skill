@@ -1,0 +1,57 @@
+## Phản hồi điều vừa nghe: へー và ああ [k70]
+
+# Phản hồi khi nghe một điều mới
+
+Trong bài 70, lời người kia mở ra tin mới: sắp chuyển khỏi ký túc xá để ở riêng. Lời đáp 「へー」 cho thấy thông tin làm mình chú ý; 「ああ」 thường báo rằng giờ mình đã hiểu lý do. Chỉ đáp 「そうですか」 (ra vậy ạ) rồi chuyển câu hỏi có thể khô; phản hồi ngắn trước, sau đó mới hỏi vào điều họ vừa kể.
+
+## Hội thoại mở đầu và cách lịch sự hơn
+
+来月、寮を出て、一人暮らしを始めることにしたんです。
+
+Tháng tới tôi đã quyết định rời ký túc xá và bắt đầu sống một mình.
+
+へー、そうなんだ。
+
+Ồ, ra vậy.
+
+Sách đối chiếu cách nói lịch sự hơn:
+
+へー、そうなのですね
+
+Ồ, ra là thế ạ.
+
+Không đem 「へー、そうなんだ」 (ồ, ra vậy) vào mọi cuộc gặp mới: giọng thân mật có thể quá gần. Với người mới gặp, 「そうなんですか」 (vậy ạ), 「ああ、そうだったんですか」 (à, ra là thế ạ) an toàn hơn. 「へー」 kéo dài không đúng chỗ cũng dễ thành phản ứng thiếu nghiêm túc.
+
+## Ba cặp tình huống của bài nguồn
+
+**Điều làm mình ngạc nhiên vì chưa biết:**
+
+ここは昔、海だったんだよ。
+
+Xưa kia chỗ này từng là biển đấy.
+
+へー、知らなかった。
+
+Ồ, tớ không biết.
+
+**Hiểu vì sao người kia đã về trước:**
+
+あの日は体調が悪くて、先に帰ったんです。
+
+Hôm ấy tôi không khỏe nên về trước.
+
+ああ、そうだったんですか。
+
+À, ra là vậy ạ.
+
+**Nhận xét một thay đổi được mời góp ý:**
+
+ここの色を変えてみたんだけど、どう？
+
+Tớ thử đổi màu chỗ này, cậu thấy sao?
+
+ああ、いいと思いますよ。
+
+À, tôi thấy được đấy.
+
+Bài nguồn đi từ tin mới → lời giải thích → lời xin ý kiến. Với người lạ, đáp một nhịp rồi hỏi một câu nối đúng chi tiết, đừng bắn liên tiếp câu hỏi riêng tư. Ví dụ ứng dụng mới của chặng nằm ở các hội thoại lớp học và sự kiện sau bài luyện gốc.
