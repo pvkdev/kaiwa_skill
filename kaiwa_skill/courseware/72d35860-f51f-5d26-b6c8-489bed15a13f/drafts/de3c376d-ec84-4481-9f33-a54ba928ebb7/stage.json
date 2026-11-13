@@ -1,0 +1,338 @@
+{
+  "schema_version": "3.2-draft",
+  "stage_uid": "72d35860-f51f-5d26-b6c8-489bed15a13f",
+  "display_code": "S-031",
+  "title": "Nhà hàng và quán ăn",
+  "level": "Sơ",
+  "scope": "Vào quán, hỏi bàn và món, gọi đúng số suất, xử lý thay đổi nhỏ trong bữa, kiểm hóa đơn và liên hệ lại khi để quên đồ. Chỉ luyện nghe và nói.",
+  "nodes": [
+    {
+      "id": "v01",
+      "type": "vocabulary",
+      "title": "Từ để vào quán và chọn món",
+      "path": "vocabulary/v01.json",
+      "source_refs": []
+    },
+    {
+      "id": "g01",
+      "type": "grammar",
+      "title": "Mẫu hỏi và nhờ khi vào quán",
+      "path": "grammar/g01.json",
+      "source_refs": [
+        "grammar_m"
+      ]
+    },
+    {
+      "id": "k01",
+      "type": "knowledge",
+      "title": "Vào quán: nói số người và hỏi chỗ",
+      "path": "knowledge/k01.md",
+      "source_refs": [
+        "b01_seat"
+      ],
+      "source_family": "general"
+    },
+    {
+      "id": "g_ref",
+      "type": "grammar",
+      "title": "Nhận diện cách nói trang trọng của nhân viên",
+      "path": "grammar/g_ref.json",
+      "source_refs": [
+        "grammar_m"
+      ]
+    },
+    {
+      "id": "sh01",
+      "type": "shadowing",
+      "title": "Luyện đủ câu khi gọi món và dùng bữa",
+      "path": "shadowing/sh01.json",
+      "source_refs": [
+        "b08_05",
+        "b08_06"
+      ]
+    },
+    {
+      "id": "s01",
+      "type": "situation",
+      "title": "Nói số người và nhận bàn",
+      "path": "situations/s01.json",
+      "source_refs": []
+    },
+    {
+      "id": "s22",
+      "type": "situation",
+      "title": "Gọi điện đặt bàn hai người",
+      "path": "situations/s22.json",
+      "source_refs": []
+    },
+    {
+      "id": "s02",
+      "type": "situation",
+      "title": "Hỏi bàn yên hơn",
+      "path": "situations/s02.json",
+      "source_refs": []
+    },
+    {
+      "id": "s03",
+      "type": "situation",
+      "title": "Nhận bàn có giới hạn giờ",
+      "path": "situations/s03.json",
+      "source_refs": []
+    },
+    {
+      "id": "s04",
+      "type": "situation",
+      "title": "Hết bàn và hỏi giờ quay lại",
+      "path": "situations/s04.json",
+      "source_refs": []
+    },
+    {
+      "id": "s05",
+      "type": "situation",
+      "title": "Xác nhận bàn sau khi quay lại",
+      "path": "situations/s05.json",
+      "source_refs": []
+    },
+    {
+      "id": "v02",
+      "type": "vocabulary",
+      "title": "Từ để chọn và gọi món",
+      "path": "vocabulary/v02.json",
+      "source_refs": []
+    },
+    {
+      "id": "g02",
+      "type": "grammar",
+      "title": "Mẫu chọn món và hỏi thành phần",
+      "path": "grammar/g02.json",
+      "source_refs": [
+        "grammar_m"
+      ]
+    },
+    {
+      "id": "k02",
+      "type": "knowledge",
+      "title": "Chọn món: hỏi một điều mỗi lượt",
+      "path": "knowledge/k02.md",
+      "source_refs": [
+        "b08_05",
+        "b08_06"
+      ],
+      "source_family": "general"
+    },
+    {
+      "id": "s06",
+      "type": "situation",
+      "title": "Hỏi tên món trong ảnh",
+      "path": "situations/s06.json",
+      "source_refs": []
+    },
+    {
+      "id": "s07",
+      "type": "situation",
+      "title": "Hỏi một suất có đủ cho hai người",
+      "path": "situations/s07.json",
+      "source_refs": []
+    },
+    {
+      "id": "s08",
+      "type": "situation",
+      "title": "Gọi món và số suất",
+      "path": "situations/s08.json",
+      "source_refs": []
+    },
+    {
+      "id": "s09",
+      "type": "situation",
+      "title": "Sửa khi nhân viên nghe nhầm số suất",
+      "path": "situations/s09.json",
+      "source_refs": []
+    },
+    {
+      "id": "s10",
+      "type": "situation",
+      "title": "Nhắc lại toàn bộ món đã gọi",
+      "path": "situations/s10.json",
+      "source_refs": []
+    },
+    {
+      "id": "s11",
+      "type": "situation",
+      "title": "Hỏi món có thịt lợn không",
+      "path": "situations/s11.json",
+      "source_refs": []
+    },
+    {
+      "id": "s12",
+      "type": "situation",
+      "title": "Hết món và chọn món khác",
+      "path": "situations/s12.json",
+      "source_refs": []
+    },
+    {
+      "id": "v03",
+      "type": "vocabulary",
+      "title": "Từ dùng trong bữa và khi thanh toán",
+      "path": "vocabulary/v03.json",
+      "source_refs": []
+    },
+    {
+      "id": "g03",
+      "type": "grammar",
+      "title": "Mẫu để hỏi lại và giải quyết",
+      "path": "grammar/g03.json",
+      "source_refs": [
+        "grammar_m"
+      ]
+    },
+    {
+      "id": "k03",
+      "type": "knowledge",
+      "title": "Trong bữa: báo việc cụ thể, chờ bước xử lý",
+      "path": "knowledge/k03.md",
+      "source_refs": [
+        "b08_06"
+      ],
+      "source_family": "general"
+    },
+    {
+      "id": "s13",
+      "type": "situation",
+      "title": "Xin thêm nước và đũa",
+      "path": "situations/s13.json",
+      "source_refs": []
+    },
+    {
+      "id": "s14",
+      "type": "situation",
+      "title": "Hỏi món còn đang chờ",
+      "path": "situations/s14.json",
+      "source_refs": []
+    },
+    {
+      "id": "s15",
+      "type": "situation",
+      "title": "Nhận món khác với món đã gọi",
+      "path": "situations/s15.json",
+      "source_refs": []
+    },
+    {
+      "id": "s16",
+      "type": "situation",
+      "title": "Nhận đúng món sau khi quán kiểm tra",
+      "path": "situations/s16.json",
+      "source_refs": []
+    },
+    {
+      "id": "k04",
+      "type": "knowledge",
+      "title": "Thanh toán: nghe lại số tiền và kiểm món",
+      "path": "knowledge/k04.md",
+      "source_refs": [
+        "b08_06",
+        "b01_pay"
+      ],
+      "source_family": "general"
+    },
+    {
+      "id": "s17",
+      "type": "situation",
+      "title": "Hỏi thanh toán riêng",
+      "path": "situations/s17.json",
+      "source_refs": []
+    },
+    {
+      "id": "s18",
+      "type": "situation",
+      "title": "Quán không thể tính riêng",
+      "path": "situations/s18.json",
+      "source_refs": []
+    },
+    {
+      "id": "s19",
+      "type": "situation",
+      "title": "Chỉ ra món không gọi trên hóa đơn",
+      "path": "situations/s19.json",
+      "source_refs": []
+    },
+    {
+      "id": "s20",
+      "type": "situation",
+      "title": "Thanh toán sau khi sửa hóa đơn",
+      "path": "situations/s20.json",
+      "source_refs": []
+    },
+    {
+      "id": "s21",
+      "type": "situation",
+      "title": "Gọi quán hỏi đồ để quên",
+      "path": "situations/s21.json",
+      "source_refs": []
+    },
+    {
+      "id": "ft01",
+      "type": "live_context",
+      "title": "Trò chuyện tự do về một bữa ăn ngoài",
+      "path": "live/ft01.json",
+      "source_refs": []
+    }
+  ],
+  "events": [
+    {
+      "id": "e01",
+      "title": "Vào quán và nhận chỗ",
+      "situation_ids": [
+        "s01",
+        "s22",
+        "s02",
+        "s03",
+        "s04",
+        "s05"
+      ]
+    },
+    {
+      "id": "e02",
+      "title": "Xem và gọi món",
+      "situation_ids": [
+        "s06",
+        "s07",
+        "s08",
+        "s09",
+        "s10",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "id": "e03",
+      "title": "Trong bữa ăn",
+      "situation_ids": [
+        "s13",
+        "s14",
+        "s15",
+        "s16"
+      ]
+    },
+    {
+      "id": "e04",
+      "title": "Thanh toán và liên hệ lại",
+      "situation_ids": [
+        "s17",
+        "s18",
+        "s19",
+        "s20",
+        "s21"
+      ]
+    }
+  ],
+  "retired_ids": [],
+  "source_refs": [],
+  "curriculum": {
+    "version": "5.0",
+    "registry": "kaiwa_skill/planning/v5/chang_registry.json",
+    "roadmap": "kaiwa_skill/planning/v5/KAIWA_CHANG_V5.jsonl",
+    "policy": "kaiwa_skill/planning/v5/KAIWA_CHANG_V5_META.json"
+  },
+  "harumii_export": "harumii-stage.json",
+  "authoring_mode": "canonical"
+}
