@@ -127,7 +127,8 @@ def validate(data):
     try:
         from jsonschema import Draft202012Validator, FormatChecker
     except ImportError as exc:
-        raise ValueError("Validation requires the Python jsonschema package") from exc
+        # An old jsonschema imports fine but lacks the 2020-12 validator this contract uses.
+        raise ValueError("Validation requires the Python jsonschema package, version 4.0 or newer") from exc
     name = {"catalog": "catalog.schema.json", "artifact_manifest": "manifest.schema.json"}.get(data.get("kind"), "stage.schema.json")
     errors = sorted(Draft202012Validator(schemas()[name], format_checker=FormatChecker()).iter_errors(data),
                     key=lambda error: str(list(error.path)))
@@ -307,17 +308,23 @@ def material_text(data, node_ids):
                 chunks.extend("**" + t["speaker_id"] + " — " + roles[t["speaker_id"]] + "**\n\n" + sentence(t["utterance_id"])
                               for t in content["turns"])
             if node["type"] == "shadowing":
+                in_reference = False  # One note opens each run of reference items instead of repeating per line.
                 for item in content["items"]:
                     if item["kind"] == "sentence":
-                        if utterances[item["utterance_id"]].get("learning_scope") == "source_reference":
+                        reference = utterances[item["utterance_id"]].get("learning_scope") == "source_reference"
+                        if reference and not in_reference:
                             chunks.append(reference_note)
+                        in_reference = reference
                         chunks.append(sentence(item["utterance_id"]))
                     elif item["kind"] == "dialogue_ref":
+                        in_reference = False
                         chunks.append(material_text(data, [item["situation_node_id"]]))
                     else:
                         chunks.append("### " + item["title_vi"])
-                        if item.get("learning_scope") == "source_reference":
+                        reference = item.get("learning_scope") == "source_reference"
+                        if reference and not in_reference:
                             chunks.append(reference_note)
+                        in_reference = reference
                         roles = {s["id"]: s["label_vi"] for s in item["speakers"]}
                         chunks.extend("**" + t["speaker_id"] + " — " + roles[t["speaker_id"]] + "**\n\n" + sentence(t["utterance_id"])
                                       for t in item["turns"])

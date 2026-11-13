@@ -8,17 +8,18 @@ Lượt mới dùng canonical mode mặc định. **Chỉ soạn lời bài họ
 
 `stage_work.py sync/validate/finalize` tự sinh `stage.json` và các file knowledge/vocabulary/grammar/situation/shadowing/live. Không viết lại cùng lời thoại ở những file dẫn xuất. Vocabulary item ID dẫn xuất là hash từ theo node, không đổi vì sắp lại list. Turn ID dẫn xuất có prefix node; review metadata có thể tham chiếu whole node nếu không cần pin từng lượt.
 
-`source-map.json.nodes` có đúng một mục cho mỗi material node: `{authorship: source_adaptation|original_extension, source_refs: [...]}`. Có thể thêm `word_exposure` và ghi chú ngữ pháp/biên tập. Phần chuyển soạn phải có nguồn đã đọc trong sổ nguồn; phần AI viết mới không gán thành nguyên văn sách. Compiler không chứng minh tiếng Nhật hoặc bản dịch đúng.
+`source-map.json.nodes` có đúng một mục cho mỗi material node: `{authorship: source_quote|source_adaptation|original_extension, source_refs: [...]}`; nhãn từng câu nằm trong canonical. `vocabulary_evidence` ghi dấu vết trích từ; `sequence_units` khai báo đơn vị sách đã chọn; `audio_packs` liên kết lời Nhật với pack/CD/track. Phần giữ nguyên/chuyển soạn phải có nguồn đã đọc trong sổ nguồn; phần AI viết mới không gán thành nguyên văn sách. Compiler không chứng minh tiếng Nhật hoặc bản dịch đúng.
 
 ## Trình tự
 
 1. Đọc AGENTS, SKILL và các reference được chỉ định; xác định UID/phạm vi được giao.
 2. `status` kiểm owner/current trước; không mở trùng một chặng. `begin` cho chặng mới; `begin --from-current` cho nâng cấp.
-3. Đọc chỉ mục 27 sách và phần nguồn được chọn; cân nhắc kiến thức cũ phù hợp khi viết mới. Không bắt đọc/tái dùng đủ hai bài trước hoặc ghi debt nếu chúng chưa có. Nếu ghi đã tham khảo thì phải đọc thật.
-4. Viết từng cụm trong canonical source, giữ ID, nghĩa Việt, nhánh và gối đầu tự nhiên nếu phù hợp. Gói mới có source_registry và authorship/source_refs từng utterance; từ vựng trích ngược ở dạng từ điển, ghi một vài dấu vết trong source-map.vocabulary_evidence. Chạy `sync` khi JSON/schema đủ; bản nháp chưa parse được vẫn checkpoint/recover giữ nguyên byte.
-5. Checkpoint sau cụm đáng kể: ghi node/sự kiện vừa xong, nguồn vừa đọc, điều cần đọc lại và next action cụ thể. Pause khi cần nghỉ; không chốt bài để né quota.
-6. Đọc lại toàn chặng, kiểm các nhánh, độ vừa sức, dịch, gối đầu, nguồn, challenge và free talk. `validate`, rồi `finalize --editor-reviewed` với nhận xét thật. Script không thay review.
-7. `kaiwa_exchange.py pack` từ canonical file của snapshot chốt, vào thư mục xuất mới. Có `stage-preview.md`, knowledge MD, hai phần challenge theo variant, free talk, manifest. Không chạy DB/TTS.
+3. Xem chỉ mục và các gợi ý phân bổ nếu có. Chọn theo topic và cấp, đọc phần nguồn và ghi tra cứu CD của pack đã chọn. Có thể bắt đầu từ bất kỳ bài nguồn phù hợp nào.
+4. Đọc chỉ mục 27 sách và phần nguồn được chọn theo topic; cân nhắc kiến thức cũ phù hợp khi viết mới. Không bắt đọc/tái dùng đủ hai bài trước hoặc ghi debt nếu chúng chưa có. Nếu ghi đã tham khảo thì phải đọc thật.
+5. Viết từng cụm trong canonical source, giữ ID, nghĩa Việt, nhánh và gối đầu tự nhiên nếu phù hợp. Gói mới có source_registry và authorship/source_refs từng utterance; từ vựng trích ngược ở dạng từ điển, ghi một vài dấu vết trong source-map.vocabulary_evidence. Chạy `sync` khi JSON/schema đủ; bản nháp chưa parse được vẫn checkpoint/recover giữ nguyên byte.
+6. Checkpoint sau cụm đáng kể: ghi node/sự kiện vừa xong, nguồn vừa đọc, điều cần đọc lại và next action cụ thể. Pause khi cần nghỉ; không chốt bài để né quota.
+7. Đọc lại toàn chặng theo danh sách “Trước khi chốt” của `editorial-workflow.md`: hội thoại, độ vừa sức, dịch, nguồn từng câu, pack CD, challenge và free talk. `validate` (đọc cả các dòng `Note:` về kế hoạch), rồi `finalize --editor-reviewed` với nhận xét thật. Script không thay review.
+8. `kaiwa_exchange.py pack` từ canonical file của snapshot chốt, vào thư mục xuất mới. Có `stage-preview.md`, knowledge MD, hai phần challenge theo variant, free talk, manifest. Không chạy DB/TTS.
 
 ## Tác nhân khác, Codex hoặc Claude Code tiếp tục
 
@@ -32,4 +33,4 @@ Byte chưa từng ghi xuống đĩa không thể cứu. Checkpoint/status là tr
 
 Prompt mẫu:
 
-> Làm tại D:\CODE\git\kaiwa_skill. Đọc AGENTS.md và .agents/skills/kaiwa-stage-content/SKILL.md, đặc biệt references/run-and-resume.md. Tiếp chặng UID …, run …, từ checkpoint/next_action thực tế. Tác nhân cũ đã dừng. Giữ nội dung đã ghi, không làm lại từ đầu, không sửa bunpou/knowledge/PDF hoặc repo Harumi. Review nguồn và gối đầu; chỉ chốt phạm vi được giao sau khi đọc lại nội dung.
+> Làm tại D:\CODE\git\kaiwa_skill. Đọc AGENTS.md và .agents/skills/kaiwa-stage-content/SKILL.md, đặc biệt references/run-and-resume.md. Tiếp chặng UID …, run …, từ checkpoint/next_action thực tế. Tác nhân cũ đã dừng. Giữ nội dung đã ghi, không làm lại từ đầu, không sửa bunpou/knowledge/PDF hoặc repo Harumi. Chọn pack theo chủ đề và cấp. Giữ nguyên lời Nhật, thứ tự trong track và thông tin tra CD. Review nguồn; chỉ chốt phạm vi được giao sau khi đọc lại nội dung.

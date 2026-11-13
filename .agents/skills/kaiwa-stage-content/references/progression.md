@@ -6,7 +6,7 @@ Một chặng có nhiều bài. Một bài là nhóm node có cùng mục đích
 
 Khi tạo hội thoại hoặc ví dụ mới, **cân nhắc** dùng kiến thức Speak Japanese, từ vựng và ngữ pháp đã xuất hiện nếu chúng hợp ngữ cảnh. Hai bài gần nhất là gợi ý tra cứu thuận tiện, không phải danh sách buộc phải đọc/áp dụng cho mọi bài. Có thể tìm xa hơn trong lộ trình hiện hành; không ép một nội dung cũ vào lời thoại để có “gối đầu”.
 
-Khi cần tra bài cũ, dùng thứ tự node/sổ bài và `current.json`. Nội dung chưa tồn tại không được gọi là đã học. Nếu bài cũ chưa có, vẫn soạn được bài mới; không tự tạo một món nợ “phải nối đủ hai bài trước”. Khi chuyển soạn ví dụ Speak Japanese, cũng cân nhắc ứng dụng kiến thức cũ như với hội thoại khác.
+Khi cần tra bài cũ, dùng thứ tự node/sổ bài và `current.json`. Nội dung chưa tồn tại không được gọi là đã học. Nếu bài cũ chưa có, vẫn soạn được bài mới; không tự tạo một món nợ “phải nối đủ hai bài trước”. Khi viết ví dụ ứng dụng mới cho Speak Japanese, cũng cân nhắc ứng dụng kiến thức cũ như với hội thoại khác.
 
 Không nạp lại cả lịch sử lộ trình. Khi chọn dùng nguồn cũ thì mở phần thực định dùng. Có thể ghi ngắn:
 
@@ -24,22 +24,31 @@ Nếu chưa có bài trước, không bịa tham chiếu hoặc tuyên bố đã
 
 ## Speak Japanese: kiến thức → shadowing
 
-Hai sách hiện có là B11 **基本文型88** và B12 **発展文型125**. Đọc trọn bài/mục được chọn. Giữ mạch bài nguồn, các chức năng, đối chiếu thân mật/lịch sự, hội thoại mở đầu và những nhóm ví dụ làm rõ bài đó; viết lại giải thích cho dễ hiểu và dịch Việt. Không thay cả bài bằng vài câu mới cùng topic. Nếu chỉ khai thác một phần, phải gọi rõ là trích phần và có lý do phù hợp, không nhận là đã đưa toàn bài vào. Nội dung ứng dụng topic do AI viết là phần bổ sung sau chất liệu nguồn.
+B11 基本文型88 dùng ở Sơ/Trung, B12 発展文型125 ở Trung/Thượng. Chọn đoạn gần chủ đề, mục tiêu nói và vừa trình độ chặng. Có thể lấy bài 8 trước bài 1. Chọn cả pack theo ranh giới CD; giữ nguyên mọi track và mọi lượt liền nhau trong một node shadowing. Nếu pack chỉ hợp một phần thì chọn pack khác.
 
-Node đánh dấu `source_family: speak_japanese`, có `video: {status: planned, asset_ref: null}` và `practice_node_id`. Chưa tạo video, không đặt URL giả. **Node kế tiếp trong thứ tự học là shadowing** liên kết ngược bằng `knowledge_ids`; danh sách từ/ngữ pháp nếu cần đặt trước cặp hoặc dùng danh sách chung, không chen vào giữa video và luyện.
+Đọc trọn bài được chọn. Giữ mạch bài nguồn, các chức năng, đối chiếu thân mật/lịch sự, hội thoại mở đầu và những nhóm ví dụ làm rõ bài đó; viết lại giải thích cho dễ hiểu và dịch Việt. Không thay cả bài bằng vài câu mới cùng topic. Mỗi bài Speak Japanese phải có đủ pack gốc đúng bài trong MD và trong shadowing kế tiếp. Nội dung ứng dụng topic do AI viết là phần bổ sung sau chất liệu nguồn; nó nối bài với topic của chặng khi tự nhiên, không ép.
+
+Node đánh dấu `source_family: speak_japanese`, có `video: {status: planned, asset_ref: null}` và `practice_node_id`. Chưa tạo video, không đặt URL giả. **Node kế tiếp trong thứ tự học là shadowing** liên kết ngược bằng `knowledge_ids`; danh sách từ/ngữ pháp nếu cần đặt trước cặp hoặc dùng danh sách chung, không chen vào giữa video và luyện. Khi chặng có nhiều bài, mỗi bài là một cặp riêng và các cặp xếp theo mạch chặng; không gộp hai bài vào một node kiến thức. Khai báo bài nguồn của từng node trong `source-map.json.sequence_units`.
 
 Bài shadowing sau video luyện **các hội thoại/ví dụ nguồn đã đưa vào bài**, rồi mới có thể thêm ví dụ topic viết mới. Không chỉ luyện vài câu AI thay thế. Dùng chung utterance ID để không có hai bản phải sửa đồng thời. Mỗi câu ghi `source_quote`, `source_adaptation` hoặc `original_extension` và nguồn tương ứng. Các ví dụ nguồn vượt phần ngữ pháp chủ động hiện tại phải được nhận diện rõ là tham khảo, có tên ngữ pháp hỗ trợ khi cần; không coi một đoạn khó là Sơ chỉ vì ngắn hoặc xuất phát từ sách cơ bản.
 
-Không gom 88/125 mẫu vào vài node khổng lồ chỉ vì khung hiện có ít token pool; cũng không có chỉ tiêu phải dùng hết chúng. Phân bổ các bài/mục được chọn đến topic/cấp độ phù hợp, giữ quan hệ nền tảng và rải ôn sau đó. Khi gán một bài nguồn, ghi bài đó đã đi vào node kiến thức và shadowing nào; nếu tách một bài nguồn cho hai topic, ghi rõ phần nào được dùng ở đâu, tránh đếm trùng thành hai bài nguồn đã khai thác độc lập. Chọn lọc nguồn không làm giảm yêu cầu giải thích rõ và luyện đúng những điểm đã chọn để dạy.
+`learning_scope: source_reference` chỉ dành cho **câu nguồn thực sự vượt cấp** của chặng. Xét từng câu: câu nguồn chỉ dùng cấu trúc người học ở chặng này đã có thì là `core`, dù nó lấy nguyên văn từ sách. Không gắn nhãn tham khảo cho cả một nhóm chỉ vì nhóm đó đến từ sách, và không trỏ mọi câu nguồn về cùng một danh sách ngữ pháp: `grammar_node_ids` chỉ nêu danh sách chứa mẫu mà chính câu đó dùng. Câu viết mới không bao giờ là `source_reference`; nếu khó quá thì viết lại cho vừa sức.
+
+Rải các bài 88/125 mẫu theo nhu cầu thực của từng chặng. Ghi chính xác phần được chọn để khi tra cứu biết bài nào đã dùng và ở đâu.
 
 ## Các nguồn xuất hiện thành bài shadowing
 
-- **B25–B27 Nama Chuukei:** chuyển cảnh nghe/cách phản hồi thành hội thoại/câu thực hành; giữ bối cảnh và ý định. Không biến thành bài thi nghe.
-- **B09 なめらか:** các ví dụ, đối đáp và cách nói tự nhiên thành câu/hội thoại luyện; thêm giải thích ngắn khi cần hiểu rút gọn hoặc sắc thái.
-- **B13–B14 Shadowing:** dùng các đoạn/cụm phù hợp trong topic và level; không bỏ nhịp đáp, mức thân mật hoặc cách chuyển lượt quan trọng.
+Chọn theo topic và cấp. Ghi vị trí pack theo [hướng dẫn tra CD](source-sequence.md).
+
+- **B14/B13 Shadowing.** Chọn cả pack phù hợp. Giữ lời và nhịp đối đáp của cụm audio.
+- **B27 Nama Chuukei:** chỉ lấy hội thoại trong phụ lục script (các chương `script-bai-NN`), ưu tiên skit của 聞き取り練習. Giữ nguyên script; nếu quá khó thì chọn một pack khác. Không biến thành bài thi nghe; bảng chọn đáp án và câu hỏi nghe không phải nội dung luyện nói. B25/B26 đang bị loại vì bản knowledge không có script.
+- **B09 なめらか:** chỉ lấy phần 用例 có hội thoại mẫu; thêm giải thích ngắn khi cần hiểu rút gọn hoặc sắc thái. Mục không có 用例 thì không thành bài luyện.
+- **B11/B12:** bài luyện ví dụ là shadowing, đặt ngay sau kiến thức/video tương ứng như trên.
+
+Chọn theo topic của chặng:
+
 - **B01 5500:** gom câu thành các nhóm giao tiếp có mục đích trong topic, ví dụ gọi món, hỏi thành phần, nhận xét món; không dồn hàng trăm câu không liên hệ vào một node.
 - **B08 どんどん話せる！日本語会話フレーズ大特訓 必須700:** nhóm theo topic/chức năng thành shadowing. Đây là ngoại lệ với cách đóng gói video của Speak Japanese; không bắt mọi nhóm 必須700 có bài video riêng.
-- **B11/B12:** bài luyện ví dụ là shadowing, đặt ngay sau kiến thức/video tương ứng như trên.
 
 Một bài shadowing có thể gồm câu đơn, hội thoại ngắn hoặc tham chiếu tình huống hoàn chỉnh. Các câu cùng nhóm cần quan hệ rõ về hành động giao tiếp/chủ đề; đừng ráp những câu không có quan hệ thành hội thoại giả. Chọn và nhóm theo chất liệu nguồn, không gọi việc ghi tên sách trong `banks` là đã đưa sách vào bài luyện.
 

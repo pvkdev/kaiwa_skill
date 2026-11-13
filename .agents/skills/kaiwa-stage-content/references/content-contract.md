@@ -14,6 +14,7 @@ shadowing/<node_id>.json  nhóm câu mẫu/hội thoại luyện, hoặc trỏ t
 live/<node_id>.json       context và tình huống đã biên soạn cho free talk cuối chặng
 learning-map.json         các bài, điều mới, bài trước đã đọc và nội dung dùng lại
 sources.json             sổ nguồn và quá trình đọc/áp dụng
+source-map.json          nguồn gốc từng node, dấu vết trích từ, đơn vị sách và bảng tra CD
 editorial.md              phạm vi, độ bao phủ, quyết định, phần thiếu, lịch sử sửa
 live-context.md          bản context đầy đủ do helper ghép từ các node, không sửa tay
 free-talk-situation.md   tình huống free talk sẵn dùng kèm nội dung học, không sửa tay
@@ -54,7 +55,7 @@ V3.2 thêm phần free talk do tác giả soạn sẵn và file dẫn xuất `fr
 
 ## Nhóm bài và gối đầu
 
-`learning-map.json` là sổ biên soạn, không phải trạng thái người học. Các `node_ids` của bài phân chia toàn bộ node trừ Live đúng một lần, theo thứ tự trong `stage.json`. Danh sách từ chung có thể được đặt ở một bài rồi tham chiếu từ nhiều bài khác. Live không tính thành một bài để chọn hai bài gần nhất.
+`learning-map.json` là sổ biên soạn, không phải trạng thái người học. Các `node_ids` của bài phân chia toàn bộ node trừ Live đúng một lần, theo thứ tự trong `stage.json`. Danh sách từ chung có thể được đặt ở một bài rồi tham chiếu từ nhiều bài khác. Node Live không thuộc bài nào.
 
 ```json
 {"schema_version":"1.0","stage_uid":"<UUID chặng>","lessons":[
@@ -72,7 +73,7 @@ V3.2 thêm phần free talk do tác giả soạn sẵn và file dẫn xuất `fr
 
 Đây là ví dụ liên kết tự chọn, không chứng minh đã biên soạn bài. Khi viết mới, cân nhắc kiến thức cũ phù hợp để vận dụng tự nhiên. Không bắt đọc/tái dùng hai bài trước, không yêu cầu giải trình việc không tái dùng hoặc ghi pending cho bài chưa có. `lookback`, `reuse`, `pending_previous` có thể để rỗng; không bịa thành đã học.
 
-Tham chiếu nội bộ dùng `revision: null`; `lesson_id` phải đứng trước. Khác chặng dùng UUID + revision `r0001`… đã chốt + lesson ID, và `from` chỉ rõ node/item được tái sử dụng. `item_id` có thể là ID từ, mẫu câu, ví dụ hoặc lượt nói; bỏ field đó nếu dùng lại ý kiến thức của cả node. `in` chỉ rõ nơi tái xuất hiện ở bài hiện tại. Chưa có bài trước thì chỉ ghi pending, không trỏ draft khác.
+Tham chiếu nội bộ dùng `revision: null`; `lesson_id` phải đứng trước. Khác chặng dùng UUID + revision `r0001`… đã chốt + lesson ID, và `from` chỉ rõ node/item được tái sử dụng. `item_id` có thể là ID từ, mẫu câu, ví dụ hoặc lượt nói; bỏ field đó nếu dùng lại ý kiến thức của cả node. `in` chỉ rõ nơi tái xuất hiện ở bài hiện tại. Chưa có bài trước thì để trống, không trỏ draft khác.
 
 Helper kiểm vị trí/ID, đọc các file của bài trước, pin hash và so revision hiện hành khi kiểm draft. Nó không xác minh rằng câu mới thực sự vận dụng đúng ý cũ. Xem [quy trình gối đầu](progression.md) để chọn kiến thức, mở rộng từ vựng và xử lý nâng cấp.
 
@@ -92,7 +93,7 @@ Với bài mới lấy từ B11/B12 Speak Japanese, node có dạng:
  "practice_node_id":"sh03"}
 ```
 
-Trong `stage.nodes`, `sh03` phải đứng **ngay sau** k03. MD chứa bài giảng thực sự chứ không chỉ tên mẫu; video để người dùng làm sau. Các ví dụ dùng để luyện nối bằng anchor `example_id`, ví dụ `<a id="ex03-01"></a>` trong MD. Phần ví dụ sách và phần mở rộng có gối đầu phải phân biệt nguồn/viết mới.
+Trong `stage.nodes`, `sh03` phải đứng **ngay sau** k03. MD chứa bài giảng thực sự chứ không chỉ tên mẫu; video để người dùng làm sau. Trong canonical mode, ví dụ của bài và mục luyện dùng chung utterance ID; compiler tự sinh anchor `example_id` trong MD (workspace legacy tự đặt anchor như `<a id="ex03-01"></a>`). Phần ví dụ sách và phần ứng dụng viết mới phải phân biệt bằng nhãn nguồn của từng câu. Chọn B11/B12 theo topic và cấp của chặng.
 
 ## Bài shadowing
 
@@ -164,6 +165,24 @@ Hai vai phải thực sự có lời nói. Sự kiện nhiều người được
 ```
 
 Chỉ cần tên và tham chiếu. Nếu có metadata bunpou phù hợp thì dùng ID/path thật; nếu chưa có thì giữ tên, không bịa ID và không khóa nội dung. Không tự nhân một ngữ pháp thành ba mức JLPT. Minna bài 1–25/26–50 là hai phần sơ cấp, không phải ranh giới JLPT được cơ quan khảo thí xác nhận.
+
+## Source-map trong canonical mode
+
+`source-map.json` là sổ biên tập đi cùng `harumii-stage.json`; nó không vào gói app.
+
+```json
+{"nodes": {"k02": {"authorship": "source_adaptation", "source_refs": ["src-b11"],
+                   "source_scope": "Toàn bài: hội thoại mở đầu, dạng lịch sự, đủ tám ví dụ; thêm ba câu ứng dụng viết mới"}},
+ "vocabulary_evidence": {"v01": [{"term": "乗り換える", "kind": "verb", "dictionary_form_reviewed": true,
+                                  "evidence": [{"utterance_id": "k01-ex02", "surface": "乗り換えます"}]}]},
+ "sequence_units": {"k02": [{"book_id": "B11", "unit": "u-part1-01"}],
+                    "sh02": [{"book_id": "B11", "unit": "u-part1-01"}]}}
+```
+
+- `nodes` có đúng một mục cho mỗi node học (không gồm node Live): nhãn nguồn chung của node và nguồn đã đọc. Nhãn node không thay nhãn từng câu trong canonical.
+- `vocabulary_evidence` liệt kê từ theo đúng thứ tự `terms_ja` của từng danh sách, mỗi từ có ít nhất một chỗ xuất hiện thật trong lời nói của chặng.
+- `sequence_units` ghi book_id và anchor đã chọn cho node. `audio_packs` liên kết utterance ID với ấn bản, bài/cảnh và track. Xem [cách ghi và ví dụ](source-sequence.md).
+- Có thể thêm ghi chú biên tập tự do (ví dụ cân nhắc gối đầu); helper không đọc chúng.
 
 ## Nguồn
 

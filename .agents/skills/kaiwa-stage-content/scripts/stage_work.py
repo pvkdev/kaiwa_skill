@@ -96,6 +96,16 @@ def source_pins(repo, draft):
             if entry.get("sha256") != actual:
                 raise ValueError("Source missing/stale hash: " + entry["path"])
             pins[entry["path"]] = actual
+    audit = draft / "source-map.json"
+    for pack in read(audit).get("audio_packs", []) if audit.exists() else []:
+        key = pack.get("pack_id", "")
+        if not re.fullmatch(r"B[0-9]{2}/[a-zA-Z0-9_-]+", key):
+            raise ValueError("Missing or invalid catalog pack_id")
+        rel = "kaiwa_skill/planning/catalog27/audio_packs/" + key + ".json"
+        actual = sha(inside(repo, rel))
+        if actual != pack.get("manifest_sha256"):
+            raise ValueError("Stale CD inventory: " + rel)
+        pins[rel] = actual
     return pins
 
 
@@ -558,6 +568,7 @@ def main():
                           repo / "AGENTS.md", repo / "CLAUDE.md",
                           Path(__file__).with_name("kaiwa_exchange.py"),
                           Path(__file__).with_name("stage_compile.py"),
+                          Path(__file__).with_name("source_sequence.py"),
                           Path(__file__).resolve().parents[1] / "SKILL.md",
                           Path(__file__).resolve().parents[1] / "references/content-contract.md",
                           Path(__file__).resolve().parents[1] / "references/progression.md",
@@ -613,7 +624,10 @@ def main():
             spec = importlib.util.spec_from_file_location("stage_compile", Path(__file__).with_name("stage_compile.py"))
             compiler = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(compiler)
-            compiler.compile_stage(draft, repo)
+            remarks = []
+            compiler.compile_stage(draft, repo, remarks)
+            for remark in remarks:
+                print("Note: " + remark, file=sys.stderr)  # stdout stays machine-readable
         if args.command == "sync":
             print("Derived editorial files synchronized; canonical source preserved")
             return

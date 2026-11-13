@@ -20,6 +20,10 @@ class CanonicalLifecycle(unittest.TestCase):
         p = self.root / "kaiwa_skill/planning/v2/chang_registry.json"
         p.parent.mkdir(parents=True)
         self.data = json.loads((ROOT / "kaiwa_skill/contracts/harumii-kaiwa/v1/example-stage.json").read_text(encoding="utf-8"))
+        # This fixture exercises the lifecycle using an original, general lesson.
+        lesson = next(n["data"] for n in self.data["nodes"] if n["type"] == "knowledge")
+        lesson.update(source_family="general", video_status="none")
+        lesson.pop("practice_node_id")
         p.write_text(json.dumps({UID: {"display_code": self.data["display_code"], "title": self.data["title_vi"], "level": "Sơ"}}), encoding="utf-8")
         opened = self.cli("begin")
         self.run, self.draft = opened["run"], Path(opened["draft"])

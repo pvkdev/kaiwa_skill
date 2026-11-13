@@ -14,12 +14,15 @@ Mỗi lần chọn nguồn phải trả lời: nguồn này giúp phần nào c�
 
 ## Vai trò của các nhóm sách
 
+Bốn nhóm đầu dùng quy tắc [chọn pack và tra CD](source-sequence.md). Chọn đoạn gần chủ đề, mục tiêu nói và vừa trình độ chặng. Có thể lấy bài 8 trước bài 1. Trong một pack phù hợp, giữ cả cụm và thứ tự các lượt như CD.
+
+- **B11–B12 Speak Japanese:** mỗi bài được xếp thành kiến thức Markdown có đủ nội dung giảng, hội thoại và ví dụ của bài nguồn, đánh dấu dành cho video người dùng sẽ làm; ngay sau là shadowing chính các mẫu đó. B11 dùng ở Sơ/Trung, B12 ở Trung/Thượng. Một chặng có thể có nhiều bài. Ví dụ mở rộng vận dụng chọn lọc kiến thức/từ đã học theo [gối đầu](progression.md).
+- **B14, B13 Shadowing:** Section được chọn thành bài shadowing, giữ quan hệ, nhịp lượt nói, câu đáp và khẩu ngữ. Mọi hội thoại được app hỗ trợ shadowing; không phải chỉ đoạn lấy từ hai sách này mới được luyện.
+- **B27 Nama Chuukei (chỉ phần script):** hội thoại trong phụ lục script thành bài shadowing; giữ những lượt hỏi lại, xác nhận, phản hồi theo thông tin. Không tạo bài thi nghe. B25/B26 đang bị loại khỏi nội dung luyện vì bản knowledge không có script.
+- **B09 なめらか (chỉ phần 用例):** hội thoại mẫu thành bài shadowing, thêm giải thích sắc thái/rút gọn khi cần.
 - **B01 (5500), B08 (必須700):** nhóm các câu/đối đáp theo topic và mục đích thành bài shadowing thực sự. 5500 chia theo nhóm giao tiếp; 必須700 theo topic/chức năng, không bắt có video kiến thức riêng. B05/B06/B07 tiếp tục bổ sung bối cảnh, cách nói và phản hồi phù hợp.
 - **B02–B04, B10, B15–B18, B21–B23:** quan hệ công việc, điện thoại, roleplay, kính ngữ, diễn biến nhiệm vụ. B21/B22/B23 là các phần đồng hành, đối chiếu chứ không tính thành ba lần độ bao phủ độc lập. B03 phần quy tắc chỉ lấy điều cần hiểu/nói; không bê bài viết vào lộ trình nói.
-- **B11–B12 Speak Japanese:** mỗi bài/mục được chọn thành kiến thức Markdown có nội dung giảng và ví dụ, đánh dấu dành cho video người dùng sẽ làm; ngay sau là shadowing các ví dụ tương ứng. Phân bổ theo chức năng/topic/cấp, không nhốt toàn bộ 88/125 mẫu vào vài pool hiện có. Ví dụ mở rộng vận dụng chọn lọc kiến thức/từ đã học theo [gối đầu](progression.md).
-- **B13–B14 Shadowing:** đưa đoạn/cụm thích hợp thành bài shadowing, giữ quan hệ, nhịp lượt nói, câu đáp và khẩu ngữ. Mọi hội thoại được app hỗ trợ shadowing; không phải chỉ đoạn lấy từ hai sách này mới được luyện.
-- **B25–B27 Nama Chuukei:** đưa hội thoại/câu có bối cảnh và ý định thành bài shadowing; giữ những lượt hỏi lại, xác nhận, phản hồi theo thông tin. Không chỉ mượn ý rồi để toàn bộ nguồn đứng ở ngân hàng, không tạo bài thi nghe.
-- **B09 なめらか:** nhóm ví dụ/cách nói tự nhiên thành bài shadowing, thêm giải thích sắc thái/rút gọn khi cần. **B19/B20/B24:** tượng thanh, quán ngữ, cảm xúc rải vào nơi thực sự tự nhiên; không bắt dùng mọi cuộc thoại, không tạo topic giả chỉ từ một cách nói.
+- **B19/B20/B24:** tượng thanh, quán ngữ, cảm xúc rải vào nơi thực sự tự nhiên; không bắt dùng mọi cuộc thoại, không tạo topic giả chỉ từ một cách nói.
 - **Ba sách từ vựng tham chiếu:** chỉ bổ trợ chọn từ và nghĩa, không tính vào 27 giáo trình hay mở thêm ba lộ trình.
 - **Memo web:** tìm góc còn thiếu, tên sự kiện/chức năng. Mục lục không cung cấp lời thoại. Nếu chưa đọc tài liệu đầy đủ, hội thoại mở rộng phải được ghi là viết mới.
 
@@ -48,18 +51,39 @@ Không tạo tích Descartes của mọi vai × kênh × kết quả. Không có
 
 Một cách bố trí có thể là: hiểu tình huống → nhóm từ dùng ngay → hội thoại cơ bản → kiến thức giải thích phản hồi → nhánh từ chối → nhánh thương lượng điều kiện → cụm tình huống tiếp theo → Live AI. Có thể đặt tên ngữ pháp ngay trước cụm cần nó hoặc gom một danh sách ngắn cho cả chặng. Không lặp bài kiến thức đầy đủ mỗi lần xuất hiện cùng một mẫu; dùng liên kết và nhắc lại có chọn lọc.
 
-Khi có bài Speak Japanese, bố trí phần chuẩn bị trước cặp **kiến thức/video → shadowing ví dụ**, không chen node khác vào giữa cặp. Gom node thành bài trong `learning-map.json`; cân nhắc tra bài cũ phù hợp khi viết mới, không bắt đọc hoặc tái dùng đủ hai bài trước. Các lần ôn đi vào câu, hội thoại và danh sách từ mới, không chỉ là link “xem lại”.
+Khi có bài Speak Japanese, bố trí phần chuẩn bị trước cặp **kiến thức/video → shadowing ví dụ**, không chen node khác vào giữa cặp. Gom node thành bài trong `learning-map.json`; cân nhắc tra bài cũ phù hợp khi viết mới, không bắt đọc hoặc tái dùng đủ hai bài trước. Các lần ôn đi vào câu và hội thoại mới một cách tự nhiên, không chỉ là link “xem lại”.
+
+Thứ tự node là đường đi trên bản đồ học của app, nên sắp có chủ ý: phần chuẩn bị đứng trước phần dùng nó, cụm tình huống đi theo diễn biến sự kiện, challenge đứng sau chất liệu nó cần. Người học vẫn có thể mở thẳng một tình huống bất kỳ; `setting`, quan hệ và mục đích của tình huống phải đủ để hiểu mà không cần học cảnh trước. Cảnh nối tiếp thì nêu ngắn điều đã xảy ra ở cảnh trước ngay trong bối cảnh.
 
 Tận dụng nội dung sâu của sách nhưng xây lại mạch học theo chủ đề. Khi trộn nguồn, giữ nhất quán nhân vật, vai, mức thân mật, thời điểm, thông tin đã biết và mục đích. Không chắp nửa đoạn lễ phép với nửa đoạn suồng sã mà không giải thích sự đổi quan hệ.
 
 ## Trước khi chốt một chặng
 
+Hội thoại:
+
 - Đọc hội thoại thành một cuộc trao đổi: có lý do mở lời, phản hồi phù hợp, tiếp nối và kết thúc/thống nhất bước tiếp theo không?
-- Tiếng Nhật tự nhiên; nghĩa Việt đúng cả ý định, phủ định, điều kiện, sắc thái. Không đưa furigana, header/footer, bản dịch Trung/Anh, chỉ dẫn hình ảnh còn sót vào bài.
-- Kiến thức/từ/ngữ pháp có ích cho các tình huống đã viết; không phải danh sách trang trí. Các nhánh đủ khác nhau và không mâu thuẫn sự kiện.
-- Speak Japanese có MD kiến thức đủ nghĩa và bài shadowing ví dụ theo sát; nguồn luyện nói khác đã thành dữ liệu luyện cụ thể. Từ vựng đủ các nhóm cần thiết trong phạm vi chủ đề, có từ mới/từ ôn được chỉ ra đúng nơi dùng lại.
-- Mở lại phần được dùng từ bài trước để kiểm mức độ gối đầu, nghĩa/cách dùng và vị trí tái xuất hiện. Ghi pending nếu chưa có bài trước; không gọi bản pilot rời là mạch đã nối hoàn chỉnh.
-- Nguồn đã đọc hỗ trợ đúng điều được gắn. Tách nguồn kiến thức, nhãn mục lục và phần tự viết. Câu viết lại không dùng track audio gốc như thể khớp lời.
-- Ghi trong `editorial.md`: phạm vi mục tiêu đã đáp ứng, lỗ hổng ảnh hưởng việc học nếu có, các lựa chọn biên tập chính và nguồn quan trọng đã dùng. Phần nguồn chưa chọn không tự trở thành backlog bắt buộc. Không tuyên bố bao phủ vô hạn hay “đầy đủ mọi tình huống”.
+- Mỗi lượt có lý do trong mạch. Không hỏi lại điều người kia vừa trả lời rõ, không chèn một câu chỉ để dùng mẫu vừa dạy. Nếu mẫu không có chỗ tự nhiên trong cảnh này thì để nó ở cảnh khác.
+- Lời kết đa dạng và đúng cảnh. Nếu phần lớn hội thoại cùng kết bằng một công thức cảm ơn/chào, bỏ lượt kết thừa hoặc đổi theo diễn biến thật.
+- Tiếng Nhật tự nhiên; nghĩa Việt đúng cả ý định, phủ định, điều kiện, sắc thái, và **cùng mức lịch sự với câu Nhật** trong từng lượt. Không đưa furigana, header/footer, bản dịch Trung/Anh, chỉ dẫn hình ảnh còn sót vào bài.
+- Tên người, vai và dữ kiện giả định (ga, tuyến, giá, giờ) nhất quán giữa các cảnh nối tiếp, challenge và free talk.
+- Các nhánh đủ khác nhau về hành động giao tiếp và không mâu thuẫn sự kiện.
+
+Độ vừa sức:
+
+- Rà từng cấu trúc trong hội thoại viết mới: mẫu nào chưa có trong danh sách ngữ pháp của chặng hoặc chưa hợp vị trí của chặng trong cấp thì giản hóa câu, không lặng lẽ để lại. Danh sách ngữ pháp phải phủ các cấu trúc thực sự được dùng.
+- Câu nguồn vừa sức là `core`; chỉ câu nguồn thực sự vượt cấp mới là `source_reference`, kèm danh sách ngữ pháp chứa đúng mẫu của câu đó. Không gắn nhãn tham khảo cho cả nhóm vì nó đến từ sách.
+- Kiến thức/từ/ngữ pháp có ích cho các tình huống đã viết; không phải danh sách trang trí. Từ vựng được trích ngược từ lời nói thực có, ở dạng từ điển.
+
+Nguồn và audio của pack:
+
+- Mỗi bài Speak Japanese có MD kiến thức giữ đủ hội thoại/ví dụ của bài nguồn và bài shadowing ngay sau luyện chính các mẫu đó; phần ứng dụng viết mới đứng riêng và được ghi là viết mới.
+- Kiểm từng pack trong sequence_units/audio_packs: cùng topic, vừa cấp, lời Nhật khớp từng vai và đúng trật tự trong script, có ghi vị trí CD hoặc track chưa rõ. Nama Chuukei và なめらか chỉ lấy phần có script.
+- Bài shadowing có chất liệu luyện thực của sách, không chỉ lặp các ví dụ của bài kiến thức.
+- Nếu ghi đã vận dụng nội dung của bài trước thì mở lại phần đó để kiểm nghĩa/cách dùng. Không gọi bản pilot rời là mạch đã nối hoàn chỉnh.
+- Nguồn đã đọc hỗ trợ đúng điều được gắn; nhãn từng câu đúng với việc giữ nguyên, chuyển soạn hay viết mới. Câu viết lại không dùng track audio gốc như thể khớp lời.
+
+Ghi lại:
+
+- Trong `editorial.md`: phạm vi mục tiêu đã đáp ứng, lỗ hổng ảnh hưởng việc học nếu có, các lựa chọn biên tập chính và nguồn quan trọng đã dùng. Phần nguồn chưa chọn không tự trở thành backlog bắt buộc. Không tuyên bố bao phủ vô hạn hay “đầy đủ mọi tình huống”.
 
 Đây là quyết định biên tập của tác giả. Không có bài thi, điểm đạt, điều kiện hoàn thành hay hạn chế quyền chọn bài của người học.
