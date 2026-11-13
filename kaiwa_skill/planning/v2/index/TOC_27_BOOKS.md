@@ -1,0 +1,4150 @@
+# Chỉ mục đầu mục 27 sách (sinh bằng script, không qua AI)
+
+Mỗi dòng: `Bxx-file#dòng` · cấp đầu mục · tiêu đề. Dùng để truy ngược về đúng chỗ trong `knowledge/`. Đường dẫn tính từ `kaiwa_skill/knowledge/`.
+
+
+## B01 — 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+
+- `B01-00-bia-muc-luc-loi-noi-dau#1` # 5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày
+- `B01-00-bia-muc-luc-loi-noi-dau#4` ## Nhan đề và thông tin sử dụng
+- `B01-00-bia-muc-luc-loi-noi-dau#11` ## Mục lục
+- `B01-00-bia-muc-luc-loi-noi-dau#32` ## Lời nói đầu
+- `B01-01-cam-xuc.md#1` # Chương I — Biểu hiện cảm xúc của bản thân
+- `B01-01-cam-xuc.md#4` ## I. Thể hiện cảm xúc
+- `B01-01-cam-xuc.md#1405` ## TỪ VỰNG QUAN TRỌNG
+- `B01-02-nguyen-vong.md#1` # Chương I — Biểu hiện cảm xúc của bản thân
+- `B01-02-nguyen-vong.md#3` ## II. Thể hiện nguyện vọng
+- `B01-02-nguyen-vong.md#1262` ## TỪ VỰNG QUAN TRỌNG
+- `B01-03-y-kien-quan-diem.md#1` # Chương I — Biểu hiện cảm xúc của bản thân
+- `B01-03-y-kien-quan-diem.md#3` ## III. Thể hiện ý kiến và quan điểm
+- `B01-04-van-dong.md#2` # Chương II — Sinh hoạt thường ngày
+- `B01-04-van-dong.md#4` ## I. Vận động
+- `B01-05-am-thuc.md#1` # Chương II — Sinh hoạt thường ngày
+- `B01-05-am-thuc.md#3` ## II. Ẩm thực
+- `B01-05-am-thuc.md#418` ## TỪ VỰNG QUAN TRỌNG
+- `B01-06-dien-thoai.md#1` # Chương III — Liên lạc qua điện thoại
+- `B01-06-dien-thoai.md#3` ## III. Liên lạc qua điện thoại
+- `B01-06-dien-thoai.md#206` ## TỪ VỰNG QUAN TRỌNG
+- `B01-07-phuong-tien-van-chuyen.#1` # Chương II — Sinh hoạt thường ngày
+- `B01-07-phuong-tien-van-chuyen.#3` ## IV. Phương tiện vận chuyển
+- `B01-08-xuat-ban.md#1` # Thông tin xuất bản
+
+## B02 — 「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語（新装版）
+
+- `B02-01-書誌.md#1` # 「BJTビジネス日本語能力テスト」入門 わかるビジネス日本語
+- `B02-01-書誌.md#4` ## Thông tin trên bìa
+- `B02-01b-前書き・本書について・解答欄.md#1` # Trang nhan đề, lời nói đầu, hướng dẫn và bảng trả lời
+- `B02-01b-前書き・本書について・解答欄.md#4` ## Trang nhan đề
+- `B02-01b-前書き・本書について・解答欄.md#9` ## 発刊にあたって — Lời nói đầu
+- `B02-01b-前書き・本書について・解答欄.md#20` ## 目次 — Mục lục
+- `B02-01b-前書き・本書について・解答欄.md#42` ## 本書について — Hướng dẫn sử dụng sách
+- `B02-01b-前書き・本書について・解答欄.md#71` ## 解答欄 — Phiếu ghi đáp án khi nghe
+- `B02-01c-紹介する-扉.md#1` # 紹介する — Giới thiệu
+- `B02-02-Scene-1-はじめまして.md#1` # 紹介する — Scene 1 はじめまして
+- `B02-02-Scene-1-はじめまして.md#4` ## Dialogue · CD ký hiệu ② trên trang in 16
+- `B02-02-Scene-1-はじめまして.md#40` ## Vocabulary
+- `B02-02-Scene-1-はじめまして.md#49` ## Expressions
+- `B02-02-Scene-1-はじめまして.md#72` ## Coffee Break — お土産（おみやげ）1
+- `B02-02b-紹介する-Scene2-3.md#1` # 紹介する — Scene 2–3
+- `B02-02b-紹介する-Scene2-3.md#4` ## Scene 2 よろしくお願いします · CD ký hiệu ③ · trang in 18
+- `B02-02b-紹介する-Scene2-3.md#85` ## Scene 3 がんばりたいと思います · CD ký hiệu ④ · trang in 20
+- `B02-03-紹介する-復習.md#1` # 紹介する — 復習【Review】
+- `B02-03-紹介する-復習.md#4` ## ①
+- `B02-03-紹介する-復習.md#33` ## ②
+- `B02-04-答え.md#1` # 答え — Đáp án in ở cuối sách
+- `B02-04-答え.md#6` ## 会話質問の正答 — Đáp án câu hỏi hội thoại
+- `B02-04-答え.md#29` ## ドリル正解 — Đáp án bài luyện
+- `B02-04-答え.md#137` ## 復習解答例 — Đáp án mẫu bài ôn
+- `B02-05-意思を表明する.md#1` # 意思を表明する — Bày tỏ ý định
+- `B02-05-意思を表明する.md#7` ## Scene 4 またかけます · CD ký hiệu ⑤ · trang in 24
+- `B02-05-意思を表明する.md#60` ## Scene 5 説明させていただきます · CD ký hiệu ⑥ · trang in 26
+- `B02-05-意思を表明する.md#133` ## Scene 6 聞くつもりです · CD ký hiệu ⑦ · trang in 28
+- `B02-05-意思を表明する.md#219` ## 復習 — Bài ôn nhóm 意思を表明する · ①
+- `B02-05-意思を表明する.md#239` ## 復習 — ②
+- `B02-06-質問する.md#1` # 質問する — Hỏi
+- `B02-06-質問する.md#7` ## Scene 7 どうすればいいですか · CD ký hiệu ⑧ · trang in 32
+- `B02-06-質問する.md#89` ## Scene 8 何かあったんですか · CD ký hiệu ⑨ · trang in 34
+- `B02-06-質問する.md#159` ## Scene 9 教えていただけますか · CD ký hiệu ⑩ · trang in 36
+- `B02-06-質問する.md#218` ## Scene 10 ご都合はいかがでしょうか · CD ký hiệu ⑪ · trang in 38
+- `B02-06-質問する.md#295` ## Scene 11 失礼ですが · CD ký hiệu ⑫ · trang in 40
+- `B02-06-質問する.md#364` ## 復習 — Bài ôn nhóm 質問する · ①
+- `B02-06-質問する.md#387` ## 復習 — ②
+- `B02-07-話しかける.md#1` # 話しかける — Bắt chuyện
+- `B02-07-話しかける.md#7` ## Scene 12 すみません · CD ký hiệu ⑬ · trang in 44
+- `B02-07-話しかける.md#69` ## Scene 13 あのう · CD ký hiệu ⑭ · trang in 46
+- `B02-07-話しかける.md#150` ## Scene 14 ねえ · CD ký hiệu ⑮ · trang in 48
+- `B02-07-話しかける.md#236` ## Scene 15 ちょっとよろしいですか · CD ký hiệu ⑯ · trang in 50
+- `B02-07-話しかける.md#313` ## 復習 — Bài ôn nhóm 話しかける · ①
+- `B02-07-話しかける.md#333` ## 復習 — ②
+- `B02-08-依頼する.md#1` # 依頼する — Nhờ vả
+- `B02-08-依頼する.md#7` ## Scene 16 小林さん、お願いします · CD ký hiệu ⑰ · trang in 54
+- `B02-08-依頼する.md#74` ## Scene 17 では、お願いします · CD ký hiệu ⑱ · trang in 56
+- `B02-08-依頼する.md#151` ## Scene 18 グラフを作りなおしてくれませんか · CD ký hiệu ⑲ · trang in 58
+- `B02-08-依頼する.md#222` ## Scene 19 支店長にわたしていただけませんか · CD ký hiệu ⑳ · trang in 60
+- `B02-08-依頼する.md#299` ## Scene 20 この日本語の書類、見てくれる？ · CD ký hiệu ㉑ · trang in 62
+- `B02-08-依頼する.md#369` ## 復習 — Bài ôn nhóm 依頼する · ①
+- `B02-08-依頼する.md#383` ## 復習 — ②
+- `B02-09-了解する.md#1` # 了解する — Hiểu và nhận lời
+- `B02-09-了解する.md#7` ## Scene 21 わかりました · CD ký hiệu ㉒ · trang in 66
+- `B02-09-了解する.md#78` ## Scene 22 かしこまりました · CD ký hiệu ㉓ · trang in 68
+- `B02-09-了解する.md#138` ## Scene 23 私でよろしければ · CD ký hiệu ㉔ · trang in 70
+- `B02-09-了解する.md#210` ## 復習 — Bài ôn nhóm 了解する · ①
+- `B02-09-了解する.md#230` ## 復習 — ②
+- `B02-10-断る.md#1` # 断る — Từ chối
+- `B02-10-断る.md#7` ## Scene 24 すみません · CD ký hiệu ㉕ · trang in 74
+- `B02-10-断る.md#84` ## Scene 25 実は · CD ký hiệu ㉖ · trang in 76
+- `B02-10-断る.md#164` ## Scene 26 今日はちょっと · CD ký hiệu ㉗ · trang in 78
+- `B02-10-断る.md#243` ## Scene 27 結構です · CD ký hiệu ㉘ · trang in 80
+- `B02-10-断る.md#315` ## Scene 28 ゴルフは苦手なんです · CD ký hiệu ㉙ · trang in 82
+- `B02-10-断る.md#388` ## 復習 · Ôn tập nhóm 断る · trang in 84
+- `B02-11-相談する.md#1` # 相談する · Hỏi ý kiến (PDF86–93)
+- `B02-11-相談する.md#7` ## Scene 29 席はどうしましょうか · CD ký hiệu ㉚ · trang in 86
+- `B02-11-相談する.md#92` ## Scene 30 いかがいたしましょうか · CD ký hiệu ㉛ · trang in 88
+- `B02-11-相談する.md#169` ## Scene 31 ご相談したいことがあるんですが · CD ký hiệu ㉜ · trang in 90
+- `B02-11-相談する.md#246` ## 復習 · Ôn tập nhóm 相談する · trang in 92
+- `B02-12-許可を求める.md#1` # 許可を求める · Xin phép (PDF94–101)
+- `B02-12-許可を求める.md#7` ## Scene 32 休ませていただきたいんですが · CD ký hiệu ㉝ · trang in 94
+- `B02-12-許可を求める.md#88` ## Scene 33 質問してもよろしいでしょうか · CD ký hiệu ㉞ · trang in 96
+- `B02-12-許可を求める.md#153` ## Scene 34 使いたいんですけど、よろしいですか · CD ký hiệu ㉟ · trang in 98
+- `B02-12-許可を求める.md#223` ## 復習 · Ôn tập nhóm 許可を求める · trang in 100
+- `B02-13-確認する.md#1` # 確認する · Xác nhận (PDF102–109)
+- `B02-13-確認する.md#7` ## Scene 35 確か第３会議室でしたよね？ · CD ký hiệu ㊱ · trang in 102
+- `B02-13-確認する.md#81` ## Scene 36 というと · CD ký hiệu ㊲ · trang in 104
+- `B02-13-確認する.md#149` ## Scene 37 つまり · CD ký hiệu ㊳ · trang in 106
+- `B02-13-確認する.md#221` ## 復習 · Ôn tập nhóm 確認する · trang in 108
+- `B02-14-助言する.md#1` # 助言する · Góp ý (PDF110–119)
+- `B02-14-助言する.md#7` ## Scene 38 遅れないでくださいね · CD ký hiệu ㊴ · trang in 110
+- `B02-14-助言する.md#80` ## Scene 39 両手でもらったほうがいいですよ · CD ký hiệu ㊵ · trang in 112
+- `B02-14-助言する.md#167` ## Scene 40 来たほうがいいんじゃないかな · CD ký hiệu ㊶ · trang in 114
+- `B02-14-助言する.md#236` ## Scene 41 次回にしたらどうですか · CD ký hiệu ㊷ · trang in 116
+- `B02-14-助言する.md#308` ## 復習 · Ôn tập nhóm 助言する · trang in 118
+- `B02-15-挨拶する.md#1` # 挨拶する · Chào hỏi, cảm ơn và phát biểu (PDF120–129)
+- `B02-15-挨拶する.md#7` ## Scene 42 いつもお世話になっております · CD ký hiệu ㊸ · trang in 120
+- `B02-15-挨拶する.md#65` ## Scene 43 今日はありがとうございました · CD ký hiệu ㊹ · trang in 122
+- `B02-15-挨拶する.md#137` ## Scene 44 お世話になりました · CD ký hiệu ㊺ · trang in 124
+- `B02-15-挨拶する.md#222` ## Scene 45 お体に気をつけて · CD ký hiệu ㊻ · trang in 126
+- `B02-15-挨拶する.md#291` ## 復習 · Ôn tập nhóm 挨拶する · trang in 128
+- `B02-16-便利な表現.md#1` # 便利な表現 · Năm cách nói thường dùng (PDF130–134)
+- `B02-16-便利な表現.md#4` ## 1 お願いします · Xin nhờ / làm ơn · CD ký hiệu ㊼ · trang in 129
+- `B02-16-便利な表現.md#51` ## 2 どうぞ · Xin mời · CD ký hiệu ㊽ · trang in 130
+- `B02-16-便利な表現.md#100` ## 3 すみません · Xin lỗi / cảm ơn · CD ký hiệu ㊾ · trang in 131
+- `B02-16-便利な表現.md#133` ## 4 失礼します · Xin phép / chào · CD ký hiệu ㊿ · trang in 132
+- `B02-16-便利な表現.md#182` ## 5 どうも · Chào / cảm ơn · CD ký hiệu số 51 trong vòng tròn · trang in 133
+- `B02-17-状況一覧表.md#1` # 状況一覧表 · Bảng tình huống 45 Scene (PDF135–136)
+- `B02-17-状況一覧表.md#6` ## Scene 1–28 · trang in 134
+- `B02-17-状況一覧表.md#40` ## Scene 29–45 · trang in 135
+- `B02-18-索引.md#1` # 索引 · Chỉ mục biểu hiện và từ vựng (PDF139–148)
+- `B02-18-索引.md#6` ## 日本語表現索引 · trang in 138
+- `B02-18-索引.md#58` ## 日本語表現索引 · trang in 139
+- `B02-18-索引.md#110` ## 日本語表現索引 · trang in 140
+- `B02-18-索引.md#166` ## 日本語語彙索引 · trang in 144
+- `B02-18-索引.md#255` ## 日本語語彙索引 · trang in 145
+
+## B03 — しごとの日本語 ビジネスマナー編
+
+- `B03-00-書誌・前書き・本書の使い方・目次.md#1` # しごとの日本語 ビジネスマナー編
+- `B03-00-書誌・前書き・本書の使い方・目次.md#4` ## Bìa và trang tên
+- `B03-00-書誌・前書き・本書の使い方・目次.md#9` ## はじめに — Lời nói đầu (trang in 3)
+- `B03-00-書誌・前書き・本書の使い方・目次.md#20` ## 本書の使い方 — Cách dùng sách (trang in 4–5)
+- `B03-00-書誌・前書き・本書の使い方・目次.md#33` ## 目次 — Mục lục (trang in 6–7)
+- `B03-01-日本の一般マナー.md#1` # 第1章　日本の一般マナー — Phép ứng xử thông thường ở Nhật
+- `B03-02-Unit01-あいさつの基本.md#1` # Unit 1　あいさつの基本 — Những điều cơ bản về chào hỏi
+- `B03-02-Unit01-あいさつの基本.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 10)
+- `B03-02-Unit01-あいさつの基本.md#27` ## ① あいさつのときの表情 — Nét mặt khi chào (trang in 11)
+- `B03-02-Unit01-あいさつの基本.md#49` ## ② おじぎ — Cúi chào (trang in 12–13)
+- `B03-02-Unit01-あいさつの基本.md#74` ## ③ 出社・退社のときのあいさつ — Chào lúc đến và rời công ty (trang in 14–15)
+- `B03-03-Unit02-身だしなみ１.md#1` # Unit 2　身だしなみ（1） — Trang phục và vẻ ngoài (1)
+- `B03-03-Unit02-身だしなみ１.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 16)
+- `B03-03-Unit02-身だしなみ１.md#23` ## ① 身だしなみについて — Bài nhìn tranh (trang in 17)
+- `B03-03-Unit02-身だしなみ１.md#33` ## ここがダメだった！ — Những điểm chưa phù hợp (trang in 18–19)
+- `B03-03-Unit02-身だしなみ１.md#56` ## 身だしなみ、これなら大丈夫！ — Ví dụ trang phục phù hợp (trang in 20)
+- `B03-03-Unit02-身だしなみ１.md#61` ## ② カジュアルデーについて — Ngày mặc thoải mái (trang in 21)
+- `B03-04-Unit03-身だしなみ２.md#1` # Unit 3　身だしなみ（2） — Vẻ ngoài và sự chỉn chu (2)
+- `B03-04-Unit03-身だしなみ２.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 22)
+- `B03-04-Unit03-身だしなみ２.md#23` ## ① 顔や手の身だしなみについて — Quan sát mặt và tay (trang in 23)
+- `B03-04-Unit03-身だしなみ２.md#33` ## ここがダメだった！ — Lời giải của tranh (trang in 24–25)
+- `B03-04-Unit03-身だしなみ２.md#58` ## 顔と手の身だしなみ、これなら大丈夫！ — Khi mặt và tay đã gọn sạch (trang in 26)
+- `B03-04-Unit03-身だしなみ２.md#63` ## ② 身だしなみの重要性 — Vì sao vẻ ngoài chỉn chu lại quan trọng? (trang in 27)
+- `B03-05-Unit04-入室・退室.md#1` # Unit 4　入室・退室 — Vào và rời phòng
+- `B03-05-Unit04-入室・退室.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 28)
+- `B03-05-Unit04-入室・退室.md#23` ## ① ドアの開け閉め — Mở và đóng cửa (trang in 29)
+- `B03-05-Unit04-入室・退室.md#42` ## ② 座ったときの姿勢 — Tư thế khi ngồi (trang in 30–31)
+- `B03-05-Unit04-入室・退室.md#53` ## ③ エレベーターの乗り降り — Ra vào thang máy (trang in 32)
+- `B03-06-Unit05-話し方.md#1` # Unit 5　話し方 — Cách nói chuyện
+- `B03-06-Unit05-話し方.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 34)
+- `B03-06-Unit05-話し方.md#23` ## ① 話し方 — Nói thế nào để gây ấn tượng tốt? (trang in 35)
+- `B03-06-Unit05-話し方.md#36` ## ② あいづち — Cách đáp lời khi nghe (trang in 36–37)
+- `B03-06-Unit05-話し方.md#46` ## ③ 返事の仕方 — Cách trả lời (trang in 38)
+- `B03-07-Unit06-敬語の使い方.md#1` # Unit 6　敬語の使い方 — Cách dùng kính ngữ
+- `B03-07-Unit06-敬語の使い方.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 40)
+- `B03-07-Unit06-敬語の使い方.md#23` ## ① 敬語の使い方 — Thử tìm chỗ dùng sai (trang in 41)
+- `B03-07-Unit06-敬語の使い方.md#37` ## ② 敬語の知識 — Các cách nói hữu ích trong công việc (trang in 42)
+- `B03-07-Unit06-敬語の使い方.md#151` ## ③ 若者言葉 — Lối nói của giới trẻ (trang in 44)
+- `B03-08-Unit07-整理整頓.md#1` # Unit 7　整理整頓 — Sắp xếp và giữ ngăn nắp
+- `B03-08-Unit07-整理整頓.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 46)
+- `B03-08-Unit07-整理整頓.md#23` ## ① 自分のデスクをきれいに！ — Giữ bàn làm việc gọn sạch (trang in 47)
+- `B03-08-Unit07-整理整頓.md#35` ## ② オフィスの共用部分 — Khu dùng chung trong văn phòng (trang in 48)
+- `B03-08-Unit07-整理整頓.md#79` ## ③ 会社の備品の使い方 — Dùng vật tư, thiết bị công ty (trang in 50)
+- `B03-08-Unit07-整理整頓.md#93` ## ④ 書類の整理 — Sắp xếp tài liệu (trang in 51)
+- `B03-09-Unit08-携帯電話のマナー.md#1` # Unit 8　携帯電話のマナー — Phép lịch sự khi dùng điện thoại di động
+- `B03-09-Unit08-携帯電話のマナー.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 52)
+- `B03-09-Unit08-携帯電話のマナー.md#23` ## ① 携帯電話の騒音について — Tiếng ồn từ điện thoại (trang in 53)
+- `B03-09-Unit08-携帯電話のマナー.md#37` ## ② 携帯電話のマナーとは — Quy tắc dùng điện thoại (trang in 54–55)
+- `B03-09-Unit08-携帯電話のマナー.md#58` ## 社内での私用携帯電話について — Điện thoại riêng tại nơi làm (trang in 56)
+- `B03-09-Unit08-携帯電話のマナー.md#65` ## 「日本人は携帯メールが大好き」 — “Người Nhật rất thích tin nhắn điện thoại” (trang in 57)
+- `B03-10-Unit09-社会人として、してはいけないこと#1` # Unit 9　社会人として、してはいけないこと — Điều người đi làm cần tránh
+- `B03-10-Unit09-社会人として、してはいけないこと#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 58)
+- `B03-10-Unit09-社会人として、してはいけないこと#23` ## ① 遅刻・欠勤・外出などの連絡 — Báo khi đến muộn, nghỉ hoặc ra ngoài (trang in 59)
+- `B03-10-Unit09-社会人として、してはいけないこと#38` ## ② ミスは必ず報告しよう — Nhất định báo cáo sai sót (trang in 60)
+- `B03-10-Unit09-社会人として、してはいけないこと#68` ## ③ 勤務時間中の私用外出 — Ra ngoài vì việc riêng trong giờ làm (trang in 62)
+- `B03-10-Unit09-社会人として、してはいけないこと#85` ## ④ 勤務中のインターネット — Dùng Internet trong giờ làm (trang in 63)
+- `B03-11-Unit10-社会人らしい行動と言葉遣い.md#1` # Unit 10　社会人らしい行動と言葉遣い — Hành động và lời nói của người đi làm
+- `B03-11-Unit10-社会人らしい行動と言葉遣い.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 64)
+- `B03-11-Unit10-社会人らしい行動と言葉遣い.md#23` ## ① 社会人らしい行動 — Hành động phù hợp (trang in 65)
+- `B03-11-Unit10-社会人らしい行動と言葉遣い.md#61` ## ② 社会人らしい言葉遣い — Cách dùng lời phù hợp (trang in 67)
+- `B03-12-日本のビジネスマナー.md#1` # 第二章　日本のビジネスマナー — Chương hai: Phép ứng xử trong công việc ở Nhật
+- `B03-13-Unit11-名刺.md#1` # Unit 11　名刺 — Danh thiếp
+- `B03-13-Unit11-名刺.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 72)
+- `B03-13-Unit11-名刺.md#23` ## ① 名刺を交換する — Trao đổi danh thiếp (trang in 73)
+- `B03-14-Unit12-接客・訪問.md#1` # Unit 12　接客・訪問 — Đón tiếp khách và đi thăm đối tác
+- `B03-14-Unit12-接客・訪問.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 78)
+- `B03-14-Unit12-接客・訪問.md#23` ## ① 接客 — Đón tiếp khách (trang in 79)
+- `B03-14-Unit12-接客・訪問.md#67` ## ② 訪問 — Đến thăm đối tác (trang in 82)
+- `B03-15-Unit13-接待・会食.md#1` # Unit 13　接待・会食 — Tiếp đãi và dùng bữa cùng khách
+- `B03-15-Unit13-接待・会食.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 84)
+- `B03-15-Unit13-接待・会食.md#23` ## ① 食事の席で — Trong bữa ăn (trang in 85)
+- `B03-15-Unit13-接待・会食.md#43` ## ② お酒の席で — Khi dùng đồ uống có cồn (trang in 87)
+- `B03-16-Unit14-席次.md#1` # Unit 14　席次 — Thứ tự vị trí ngồi, đứng
+- `B03-16-Unit14-席次.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 90)
+- `B03-16-Unit14-席次.md#23` ## どこに座る（立つ）のが正しいでしょう？クイズ！ — Bài điền thứ tự (trang in 91)
+- `B03-16-Unit14-席次.md#73` ## 解答 — Đáp án sách in (trang in 95)
+- `B03-17-Unit15-電話応対.md#1` # Unit 15　電話応対 — Ứng đối qua điện thoại
+- `B03-17-Unit15-電話応対.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 96)
+- `B03-17-Unit15-電話応対.md#23` ## ① 電話応対の基本 — Các bước cơ bản (trang in 97)
+- `B03-17-Unit15-電話応対.md#35` ## ② 外線・内線 — Cuộc gọi bên ngoài và nội bộ (trang in 98)
+- `B03-17-Unit15-電話応対.md#50` ## ③ 電話を取り次ぐ — Chuyển lời nhắn (trang in 99)
+- `B03-17-Unit15-電話応対.md#87` ## ④ メモの取り方 — Cách ghi giấy nhắn (trang in 101)
+- `B03-18-Unit16-ビジネスEメール.md#1` # Unit 16　ビジネスEメール — Email công việc
+- `B03-18-Unit16-ビジネスEメール.md#8` ## 確認クイズ — Câu hỏi kiểm tra (trang in 102)
+- `B03-18-Unit16-ビジネスEメール.md#25` ## ① ビジネスEメールの基本 — Mẫu email cơ bản (trang in 103)
+- `B03-18-Unit16-ビジネスEメール.md#42` ## ② 便利なフレーズ — Những câu tiện dùng (trang in 106)
+- `B03-18-Unit16-ビジネスEメール.md#75` ## ③ ビジネスメールを送るときの注意点 — Lưu ý khi gửi email công việc (trang in 107)
+- `B03-19-Unit17-指示を受ける.md#1` # Unit 17　指示を受ける — Nhận chỉ thị và việc được giao
+- `B03-19-Unit17-指示を受ける.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 108)
+- `B03-19-Unit17-指示を受ける.md#23` ## ① 指示を受ける — Khi được cấp trên gọi giao việc (trang in 109)
+- `B03-19-Unit17-指示を受ける.md#38` ## ② 確認・質問する — Xác nhận và hỏi (trang in 110)
+- `B03-19-Unit17-指示を受ける.md#51` ## ③ 依頼を受ける — Nhận việc nhờ: sao chép tài liệu (trang in 111)
+- `B03-19-Unit17-指示を受ける.md#77` ## ④ 注意を受ける — Khi bị nhắc nhở (trang in 113)
+- `B03-20-Unit18-報告・連絡・相談.md#1` # Unit 18　報告・連絡・相談 — Báo cáo, liên lạc, trao đổi để xin ý kiến
+- `B03-20-Unit18-報告・連絡・相談.md#6` ## 確認クイズ — Câu hỏi kiểm tra (trang in 114)
+- `B03-20-Unit18-報告・連絡・相談.md#23` ## 「ほう・れん・そう」とは？ — ほう・れん・そう là gì? (trang in 115)
+- `B03-20-Unit18-報告・連絡・相談.md#27` ## ① 報告 — Báo cáo
+- `B03-20-Unit18-報告・連絡・相談.md#35` ## ② 連絡 — Liên lạc, thông báo (trang in 116)
+- `B03-20-Unit18-報告・連絡・相談.md#63` ## ③ 相談 — Trao đổi để xin ý kiến (trang in 119)
+- `B03-21-Unit19-社内でのコミュニケーション.md#1` # Unit 19　社内でのコミュニケーション — Giao tiếp trong công ty
+- `B03-21-Unit19-社内でのコミュニケーション.md#6` ## 確認クイズ — Kiểm tra trước bài (trang in 120)
+- `B03-21-Unit19-社内でのコミュニケーション.md#23` ## ① 上司・先輩 — Cấp trên, người đi trước (trang in 121)
+- `B03-21-Unit19-社内でのコミュニケーション.md#33` ## ② 同僚 — Đồng nghiệp (trang in 122)
+- `B03-21-Unit19-社内でのコミュニケーション.md#43` ## ③ 食事をする — Cùng ăn uống: truyện sáu ô (trang in 123)
+- `B03-21-Unit19-社内でのコミュニケーション.md#64` ## ④ アフターファイブのお付き合い — Giao lưu sau giờ làm (trang in 125)
+- `B03-22-Unit20-日本人の仕事観.md#1` # Unit 20　日本人の仕事観 — Quan niệm về công việc của người Nhật
+- `B03-22-Unit20-日本人の仕事観.md#6` ## 確認クイズ — Kiểm tra trước bài (trang in 126)
+- `B03-22-Unit20-日本人の仕事観.md#23` ## ① 日本人の仕事観 — Quan niệm về công việc (trang in 127)
+- `B03-22-Unit20-日本人の仕事観.md#33` ## ② 日本企業のシステム — Hệ thống trong công ty Nhật (trang in 128)
+- `B03-22-Unit20-日本人の仕事観.md#40` ## ③ 愛社精神 — Tinh thần gắn bó với công ty: truyện sáu ô (trang in 129)
+- `B03-22-Unit20-日本人の仕事観.md#61` ## ④ 役職名一覧 — Danh sách chức danh (trang in 131)
+- `B03-23-ビジネスマナー○×確認問題100.md#1` # ビジネスマナー○×確認問題100 — 100 câu kiểm tra ○×
+- `B03-23-ビジネスマナー○×確認問題100.md#6` ## Câu 1–25 (trang in 132)
+- `B03-23-ビジネスマナー○×確認問題100.md#35` ## Câu 26–50 (trang in 133)
+- `B03-23-ビジネスマナー○×確認問題100.md#64` ## Câu 51–75 (trang in 134)
+- `B03-23-ビジネスマナー○×確認問題100.md#93` ## Câu 76–100 (trang in 135)
+- `B03-24-解答・著者紹介・奥付.md#1` # 解答・著者紹介・奥付 — Đáp án, tác giả và thông tin xuất bản
+- `B03-24-解答・著者紹介・奥付.md#4` ## ビジネスマナー○×確認問題100　解答 — Đáp án 100 câu ○× (PDF 136)
+- `B03-24-解答・著者紹介・奥付.md#62` ## 著者紹介 — Giới thiệu tác giả (PDF 136)
+- `B03-24-解答・著者紹介・奥付.md#69` ## 奥付 — Thông tin ấn hành (PDF 136)
+
+## B04 — しごとの日本語 電話応対 基礎編
+
+- `B04-00-前付け.md#1` # しごとの日本語 電話応対 基礎編 — Đầu sách
+- `B04-00-前付け.md#4` ## Bìa và trang tên (PDF 1, 3)
+- `B04-00-前付け.md#9` ## はじめに — Lời nói đầu (PDF 5; trang in 3)
+- `B04-00-前付け.md#20` ## 本書の使い方 — Cách dùng sách, phần 1 (PDF 6; trang in 4)
+- `B04-00-前付け.md#31` ## 本書の使い方 — Cách dùng sách, phần 2 (PDF 7; trang in 5)
+- `B04-00-前付け.md#41` ## 目次 — Mục lục (PDF 8–11; trang in 6–9)
+- `B04-01-ビジネス電話応対の基本.md#1` # ビジネス電話応対 — Những điều cần biết trước
+- `B04-01-ビジネス電話応対の基本.md#6` ## 心構え — Tâm thế khi nghe/gọi điện (PDF 12; trang in 10)
+- `B04-01-ビジネス電話応対の基本.md#11` ## 基本の4ポイント và cách gọi tên (PDF 13; trang in 11)
+- `B04-01-ビジネス電話応対の基本.md#46` ## 改まった言い方 — Các cách nói trang trọng hơn (PDF 14; trang in 12)
+- `B04-01-ビジネス電話応対の基本.md#108` ## 正しい姿勢・準備するもの và 伝言メモ (PDF 15; trang in 13)
+- `B04-01-ビジネス電話応対の基本.md#130` ## マナーの基本 — Nền tảng phép ứng xử (PDF 16–18; trang in 14–16)
+- `B04-01-ビジネス電話応対の基本.md#175` ## Unit 1–35 (PDF 19)
+- `B04-02-Unit01-第一声.md#1` # Unit 1　第一声 — Lời đầu tiên khi nhận điện thoại
+- `B04-02-Unit01-第一声.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 20; trang in 18)
+- `B04-02-Unit01-第一声.md#28` ## チェック2　リスニング — Nghe và chọn (CD **1**; PDF 21, trang in 19)
+- `B04-02-Unit01-第一声.md#42` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 21; trang in 19)
+- `B04-02-Unit01-第一声.md#52` ## 解答・解説 — Đáp án và giải thích sách in (PDF 22; trang in 20)
+- `B04-02-Unit01-第一声.md#66` ## スクリプト・録音例・ノート (CD **1**; PDF 22; trang in 20)
+- `B04-02-Unit01-第一声.md#81` ## ロールプレイ録音例・ノート (CD **2**; PDF 23; trang in 21)
+- `B04-02-Unit01-第一声.md#92` ## 語彙 — Từ trong Unit (PDF 23; trang in 21)
+- `B04-03-Unit02-用件確認.md#1` # Unit 2　用件確認 — Xác nhận nội dung cuộc gọi
+- `B04-03-Unit02-用件確認.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 24; trang in 22)
+- `B04-03-Unit02-用件確認.md#28` ## チェック2　リスニング — Nghe và chọn (CD **3**; PDF 25; trang in 23)
+- `B04-03-Unit02-用件確認.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 25; trang in 23)
+- `B04-03-Unit02-用件確認.md#54` ## 解答・解説 — Đáp án và giải thích sách in (PDF 26; trang in 24)
+- `B04-03-Unit02-用件確認.md#68` ## スクリプト・ノート — Bản thoại in cho CD 3 (PDF 26; trang in 24)
+- `B04-03-Unit02-用件確認.md#89` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 27; trang in 25)
+- `B04-03-Unit02-用件確認.md#108` ## 語彙 — Từ trong Unit (PDF 27; trang in 25)
+- `B04-04-Unit03-自分への用事のとき.md#1` # Unit 3　自分への用事のとき — Khi người gọi muốn gặp chính mình
+- `B04-04-Unit03-自分への用事のとき.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 28; trang in 26)
+- `B04-04-Unit03-自分への用事のとき.md#28` ## チェック2　リスニング — Nghe và chọn (CD **5**; PDF 29; trang in 27)
+- `B04-04-Unit03-自分への用事のとき.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 29; trang in 27)
+- `B04-04-Unit03-自分への用事のとき.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 30; trang in 28)
+- `B04-04-Unit03-自分への用事のとき.md#64` ## スクリプト・ノート — Bản thoại in cho CD 5 (PDF 30; trang in 28)
+- `B04-04-Unit03-自分への用事のとき.md#85` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 31; trang in 29)
+- `B04-04-Unit03-自分への用事のとき.md#105` ## 語彙 — Từ trong Unit (PDF 31; trang in 29)
+- `B04-05-Unit04-担当者へ取り次ぐ.md#1` # Unit 4　担当者へ取り次ぐ — Chuyển máy cho người phụ trách
+- `B04-05-Unit04-担当者へ取り次ぐ.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 32; trang in 30)
+- `B04-05-Unit04-担当者へ取り次ぐ.md#28` ## チェック2　リスニング — Nghe và chọn (CD **7**; PDF 33; trang in 31)
+- `B04-05-Unit04-担当者へ取り次ぐ.md#42` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 33; trang in 31)
+- `B04-05-Unit04-担当者へ取り次ぐ.md#52` ## 解答・解説 — Đáp án và giải thích sách in (PDF 34; trang in 32)
+- `B04-05-Unit04-担当者へ取り次ぐ.md#66` ## スクリプト・ノート — Bản thoại in cho CD 7 (PDF 34; trang in 32)
+- `B04-05-Unit04-担当者へ取り次ぐ.md#87` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 35; trang in 33)
+- `B04-05-Unit04-担当者へ取り次ぐ.md#108` ## 語彙 — Từ trong Unit (PDF 35; trang in 33)
+- `B04-06-Unit05-担当者が電話中のときの対応.md#1` # Unit 5　担当者が電話中のときの対応 — Khi người cần gặp đang có cuộc gọi khác
+- `B04-06-Unit05-担当者が電話中のときの対応.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 36; trang in 34)
+- `B04-06-Unit05-担当者が電話中のときの対応.md#28` ## チェック2　リスニング — Nghe và chọn (CD **9**; PDF 37; trang in 35)
+- `B04-06-Unit05-担当者が電話中のときの対応.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 37; trang in 35)
+- `B04-06-Unit05-担当者が電話中のときの対応.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 38; trang in 36)
+- `B04-06-Unit05-担当者が電話中のときの対応.md#64` ## スクリプト・ノート — Bản thoại in cho CD 9 (PDF 38–39; trang in 36–37)
+- `B04-06-Unit05-担当者が電話中のときの対応.md#84` ## 録音例 — Ví dụ nói và đóng vai (PDF 39; trang in 37)
+- `B04-06-Unit05-担当者が電話中のときの対応.md#102` ## 語彙 — Từ trong Unit (PDF 39; trang in 37)
+- `B04-07-Unit06-担当者が離席中のときの対応.md#1` # Unit 6　担当者が離席中のときの対応 — Khi người phụ trách rời chỗ
+- `B04-07-Unit06-担当者が離席中のときの対応.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 40; trang in 38)
+- `B04-07-Unit06-担当者が離席中のときの対応.md#28` ## チェック2　リスニング — Nghe và chọn (CD **11**; PDF 41; trang in 39)
+- `B04-07-Unit06-担当者が離席中のときの対応.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 41; trang in 39)
+- `B04-07-Unit06-担当者が離席中のときの対応.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 42; trang in 40)
+- `B04-07-Unit06-担当者が離席中のときの対応.md#64` ## スクリプト・ノート — Bản thoại in cho CD 11 (PDF 42; trang in 40)
+- `B04-07-Unit06-担当者が離席中のときの対応.md#84` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 43; trang in 41)
+- `B04-07-Unit06-担当者が離席中のときの対応.md#103` ## 語彙 — Từ trong Unit (PDF 43; trang in 41)
+- `B04-08-Unit07-担当者が不在のときの対応.md#1` # Unit 7　担当者が不在のときの対応 — Khi người phụ trách vắng mặt
+- `B04-08-Unit07-担当者が不在のときの対応.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 44; trang in 42)
+- `B04-08-Unit07-担当者が不在のときの対応.md#28` ## チェック2　リスニング — Nghe và chọn (CD **13**; PDF 45; trang in 43)
+- `B04-08-Unit07-担当者が不在のときの対応.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 45; trang in 43)
+- `B04-08-Unit07-担当者が不在のときの対応.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 46; trang in 44)
+- `B04-08-Unit07-担当者が不在のときの対応.md#64` ## スクリプト・ノート — Bản thoại in cho CD 13 (PDF 46–47; trang in 44–45)
+- `B04-08-Unit07-担当者が不在のときの対応.md#83` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 47; trang in 45)
+- `B04-08-Unit07-担当者が不在のときの対応.md#101` ## 語彙 — Từ trong Unit (PDF 47; trang in 45)
+- `B04-09-Unit08-ほかの番号へかけ直してもらう.m#1` # Unit 8　ほかの番号へかけ直してもらう — Nhờ gọi lại số khác
+- `B04-09-Unit08-ほかの番号へかけ直してもらう.m#6` ## キーセンテンス・ポイント・チェック1 (PDF 48; trang in 46)
+- `B04-09-Unit08-ほかの番号へかけ直してもらう.m#28` ## チェック2　リスニング — Nghe và chọn (CD **15**; PDF 49; trang in 47)
+- `B04-09-Unit08-ほかの番号へかけ直してもらう.m#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 49; trang in 47)
+- `B04-09-Unit08-ほかの番号へかけ直してもらう.m#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 50; trang in 48)
+- `B04-09-Unit08-ほかの番号へかけ直してもらう.m#64` ## スクリプト・ノート — Bản thoại in cho CD 15 (PDF 50; trang in 48)
+- `B04-09-Unit08-ほかの番号へかけ直してもらう.m#83` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 51; trang in 49)
+- `B04-09-Unit08-ほかの番号へかけ直してもらう.m#105` ## 語彙 — Từ trong Unit (PDF 51; trang in 49)
+- `B04-10-Unit09-該当者がいないときの対応.md#1` # Unit 9　該当者がいないときの対応 — Khi không có người đúng như tên được hỏi
+- `B04-10-Unit09-該当者がいないときの対応.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 52; trang in 50)
+- `B04-10-Unit09-該当者がいないときの対応.md#28` ## チェック2　リスニング — Nghe và chọn (CD **17**; PDF 53; trang in 51)
+- `B04-10-Unit09-該当者がいないときの対応.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 53; trang in 51)
+- `B04-10-Unit09-該当者がいないときの対応.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 54; trang in 52)
+- `B04-10-Unit09-該当者がいないときの対応.md#64` ## スクリプト・ノート — Bản thoại in cho CD 17 (PDF 54; trang in 52)
+- `B04-10-Unit09-該当者がいないときの対応.md#83` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 55; trang in 53)
+- `B04-10-Unit09-該当者がいないときの対応.md#103` ## 語彙 — Từ trong Unit (PDF 55; trang in 53)
+- `B04-11-Unit10-間違い電話を受けたとき.md#1` # Unit 10　間違い電話を受けたとき — Khi nhận cuộc gọi nhầm
+- `B04-11-Unit10-間違い電話を受けたとき.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 56; trang in 54)
+- `B04-11-Unit10-間違い電話を受けたとき.md#28` ## チェック2　リスニング — Nghe và chọn (CD **19**; PDF 57; trang in 55)
+- `B04-11-Unit10-間違い電話を受けたとき.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 57; trang in 55)
+- `B04-11-Unit10-間違い電話を受けたとき.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 58; trang in 56)
+- `B04-11-Unit10-間違い電話を受けたとき.md#64` ## スクリプト・ノート — Bản thoại in cho CD 19 (PDF 58; trang in 56)
+- `B04-11-Unit10-間違い電話を受けたとき.md#83` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 59; trang in 57)
+- `B04-11-Unit10-間違い電話を受けたとき.md#108` ## 語彙 — Từ trong Unit (PDF 59; trang in 57)
+- `B04-12-Unit11-コールバックすることを伝える.m#1` # Unit 11　コールバックすることを伝える — Báo sẽ gọi lại
+- `B04-12-Unit11-コールバックすることを伝える.m#6` ## キーセンテンス・ポイント・チェック1 (PDF 60; trang in 58)
+- `B04-12-Unit11-コールバックすることを伝える.m#28` ## チェック2　リスニング — Nghe và chọn (CD **21**; PDF 61; trang in 59)
+- `B04-12-Unit11-コールバックすることを伝える.m#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 61; trang in 59)
+- `B04-12-Unit11-コールバックすることを伝える.m#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 62; trang in 60)
+- `B04-12-Unit11-コールバックすることを伝える.m#64` ## スクリプト・ノート — Bản thoại in cho CD 21 (PDF 62; trang in 60)
+- `B04-12-Unit11-コールバックすることを伝える.m#85` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 63; trang in 61)
+- `B04-12-Unit11-コールバックすることを伝える.m#114` ## 語彙 — Từ trong Unit (PDF 63; trang in 61)
+- `B04-13-Unit12-コールバックしてもらう.md#1` # Unit 12　コールバックしてもらう — Nhờ người gọi gọi lại
+- `B04-13-Unit12-コールバックしてもらう.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 64; trang in 62)
+- `B04-13-Unit12-コールバックしてもらう.md#28` ## チェック2　リスニング — Nghe và chọn (CD **23**; PDF 65; trang in 63)
+- `B04-13-Unit12-コールバックしてもらう.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 65; trang in 63)
+- `B04-13-Unit12-コールバックしてもらう.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 66; trang in 64)
+- `B04-13-Unit12-コールバックしてもらう.md#64` ## スクリプト・ノート — Bản thoại in cho CD 23 (PDF 66; trang in 64)
+- `B04-13-Unit12-コールバックしてもらう.md#82` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 67; trang in 65)
+- `B04-13-Unit12-コールバックしてもらう.md#106` ## 語彙 — Từ trong Unit (PDF 67; trang in 65)
+- `B04-14-Unit13-伝言を受ける.md#1` # Unit 13　伝言を受ける — Nhận lời nhắn
+- `B04-14-Unit13-伝言を受ける.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 68; trang in 66)
+- `B04-14-Unit13-伝言を受ける.md#28` ## チェック2　リスニング — Nghe và chọn (CD **25**; PDF 69; trang in 67)
+- `B04-14-Unit13-伝言を受ける.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 69; trang in 67)
+- `B04-14-Unit13-伝言を受ける.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 70; trang in 68)
+- `B04-14-Unit13-伝言を受ける.md#64` ## スクリプト・ノート — Bản thoại in cho CD 25 (PDF 70; trang in 68)
+- `B04-14-Unit13-伝言を受ける.md#82` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 70–71; trang in 68–69)
+- `B04-14-Unit13-伝言を受ける.md#109` ## 語彙 — Từ trong Unit (PDF 71; trang in 69)
+- `B04-15-Unit14-伝言を伝える.md#1` # Unit 14　伝言を伝える — Chuyển lời nhắn
+- `B04-15-Unit14-伝言を伝える.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 72; trang in 70)
+- `B04-15-Unit14-伝言を伝える.md#28` ## チェック2　リスニング — Nghe và chọn (CD **27**; PDF 73; trang in 71)
+- `B04-15-Unit14-伝言を伝える.md#40` ## チャレンジ1・2 — Tự nói và đóng vai (PDF 73; trang in 71)
+- `B04-15-Unit14-伝言を伝える.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 74; trang in 72)
+- `B04-15-Unit14-伝言を伝える.md#64` ## スクリプト・ノート — Bản thoại in cho CD 27 (PDF 74; trang in 72)
+- `B04-15-Unit14-伝言を伝える.md#82` ## 録音例・ノート — Ví dụ nói và đóng vai (PDF 75; trang in 73)
+- `B04-15-Unit14-伝言を伝える.md#104` ## 語彙 — Từ trong Unit (PDF 75; trang in 73)
+- `B04-16-Unit15-復唱する（数字など）.md#1` # Unit 15　復唱する（数字など） — Nhắc lại để xác nhận số và chữ
+- `B04-16-Unit15-復唱する（数字など）.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 76; trang in 74)
+- `B04-16-Unit15-復唱する（数字など）.md#28` ## チェック2　リスニング — Nghe và chọn (CD **29**; PDF 77; trang in 75)
+- `B04-16-Unit15-復唱する（数字など）.md#40` ## チャレンジ1・2 — Nhắc lại thông tin và đóng vai (PDF 77; trang in 75)
+- `B04-16-Unit15-復唱する（数字など）.md#54` ## 解答・解説 — Đáp án và giải thích sách in (PDF 78; trang in 76)
+- `B04-16-Unit15-復唱する（数字など）.md#68` ## スクリプト・ノート — Bản thoại in cho CD 29 (PDF 78; trang in 76)
+- `B04-16-Unit15-復唱する（数字など）.md#87` ## 録音例・ノート — Ví dụ nhắc lại và đóng vai (PDF 79; trang in 77)
+- `B04-16-Unit15-復唱する（数字など）.md#111` ## 語彙 — Từ trong Unit (PDF 79; trang in 77)
+- `B04-17-Unit16-自分の名前を名乗る.md#1` # Unit 16　自分の名前を名乗る — Tự xưng tên
+- `B04-17-Unit16-自分の名前を名乗る.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 80; trang in 78)
+- `B04-17-Unit16-自分の名前を名乗る.md#28` ## チェック2　リスニング — Nghe và chọn (CD **31**; PDF 81; trang in 79)
+- `B04-17-Unit16-自分の名前を名乗る.md#40` ## チャレンジ1・2 — Giải thích tên và đóng vai (PDF 81; trang in 79)
+- `B04-17-Unit16-自分の名前を名乗る.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 82; trang in 80)
+- `B04-17-Unit16-自分の名前を名乗る.md#64` ## スクリプト・ノート — Bản thoại in cho CD 31 (PDF 82; trang in 80)
+- `B04-17-Unit16-自分の名前を名乗る.md#84` ## 録音例・ノート — Ví dụ giải thích tên và đóng vai (PDF 83; trang in 81)
+- `B04-17-Unit16-自分の名前を名乗る.md#113` ## 語彙 — Từ trong Unit (PDF 83; trang in 81)
+- `B04-18-Unit17-Fax番号・メールアドレスを伝え#1` # Unit 17　Fax番号・メールアドレスを伝える — Báo số fax và địa chỉ email
+- `B04-18-Unit17-Fax番号・メールアドレスを伝え#6` ## キーセンテンス・ポイント・チェック1 (PDF 84; trang in 82)
+- `B04-18-Unit17-Fax番号・メールアドレスを伝え#28` ## チェック2　リスニング — Nghe và chọn (CD **33**; PDF 85; trang in 83)
+- `B04-18-Unit17-Fax番号・メールアドレスを伝え#40` ## チャレンジ1・2 — Giải thích cách gửi fax và đóng vai (PDF 85; trang in 83)
+- `B04-18-Unit17-Fax番号・メールアドレスを伝え#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 86; trang in 84)
+- `B04-18-Unit17-Fax番号・メールアドレスを伝え#64` ## スクリプト・ノート — Bản thoại in cho CD 33 (PDF 86; trang in 84)
+- `B04-18-Unit17-Fax番号・メールアドレスを伝え#87` ## 録音例・ノート — Ví dụ cách gửi fax và đóng vai (PDF 87; trang in 85)
+- `B04-18-Unit17-Fax番号・メールアドレスを伝え#114` ## 語彙 — Từ trong Unit (PDF 87; trang in 85)
+- `B04-19-Unit18-相手を待たせているとき.md#1` # Unit 18　相手を待たせているとき — Khi để người gọi đợi
+- `B04-19-Unit18-相手を待たせているとき.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 88; trang in 86)
+- `B04-19-Unit18-相手を待たせているとき.md#28` ## チェック2　リスニング — Nghe và chọn (CD **35**; PDF 89; trang in 87)
+- `B04-19-Unit18-相手を待たせているとき.md#40` ## チャレンジ1・2 — Nói lý do chọn công việc và đóng vai (PDF 89; trang in 87)
+- `B04-19-Unit18-相手を待たせているとき.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 90; trang in 88)
+- `B04-19-Unit18-相手を待たせているとき.md#64` ## スクリプト・ノート — Bản thoại in cho CD 35 (PDF 90; trang in 88)
+- `B04-19-Unit18-相手を待たせているとき.md#86` ## 録音例・ノート — Ví dụ và đóng vai (PDF 91; trang in 89)
+- `B04-19-Unit18-相手を待たせているとき.md#109` ## 語彙 — Từ trong Unit (PDF 91; trang in 89)
+- `B04-20-Unit19-怒っている相手に謝る.md#1` # Unit 19　怒っている相手に謝る — Xin lỗi người gọi đang giận
+- `B04-20-Unit19-怒っている相手に謝る.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 92; trang in 90)
+- `B04-20-Unit19-怒っている相手に謝る.md#28` ## チェック2　リスニング — Nghe và chọn (CD **37**; PDF 93; trang in 91)
+- `B04-20-Unit19-怒っている相手に謝る.md#40` ## チャレンジ1・2 — Kể tình huống và đóng vai (PDF 93; trang in 91)
+- `B04-20-Unit19-怒っている相手に謝る.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 94; trang in 92)
+- `B04-20-Unit19-怒っている相手に謝る.md#64` ## スクリプト・ノート — Bản thoại in cho CD 37 (PDF 94; trang in 92)
+- `B04-20-Unit19-怒っている相手に謝る.md#85` ## 録音例・ノート — Ví dụ và đóng vai (PDF 95; trang in 93)
+- `B04-20-Unit19-怒っている相手に謝る.md#117` ## 語彙 — Từ trong Unit (PDF 95; trang in 93)
+- `B04-21-Unit20-自分で対応できないとき.md#1` # Unit 20　自分で対応できないとき — Khi không thể tự xử lý
+- `B04-21-Unit20-自分で対応できないとき.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 96; trang in 94)
+- `B04-21-Unit20-自分で対応できないとき.md#28` ## チェック2　リスニング — Nghe và chọn (CD **39**; PDF 97; trang in 95)
+- `B04-21-Unit20-自分で対応できないとき.md#40` ## チャレンジ1・2 — Kể lần nhờ hỗ trợ và đóng vai (PDF 97; trang in 95)
+- `B04-21-Unit20-自分で対応できないとき.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 98; trang in 96)
+- `B04-21-Unit20-自分で対応できないとき.md#64` ## スクリプト・ノート — Bản thoại in cho CD 39 (PDF 98–99; trang in 96–97)
+- `B04-21-Unit20-自分で対応できないとき.md#89` ## 録音例・ノート — Ví dụ và đóng vai (PDF 99; trang in 97)
+- `B04-21-Unit20-自分で対応できないとき.md#117` ## 語彙 — Từ trong Unit (PDF 99; trang in 97)
+- `B04-22-Unit21-取り次ぎを頼む.md#1` # Unit 21　取り次ぎを頼む — Nhờ chuyển cuộc gọi
+- `B04-22-Unit21-取り次ぎを頼む.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 100; trang in 98)
+- `B04-22-Unit21-取り次ぎを頼む.md#28` ## チェック2　リスニング — Nghe và chọn (CD **41**; PDF 101; trang in 99)
+- `B04-22-Unit21-取り次ぎを頼む.md#40` ## チャレンジ1・2 — Nói về người nghe máy và đóng vai (PDF 101; trang in 99)
+- `B04-22-Unit21-取り次ぎを頼む.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 102; trang in 100)
+- `B04-22-Unit21-取り次ぎを頼む.md#64` ## スクリプト・ノート — Bản thoại in cho CD 41 (PDF 102; trang in 100)
+- `B04-22-Unit21-取り次ぎを頼む.md#85` ## 録音例・ノート — Ví dụ và đóng vai (PDF 103; trang in 101)
+- `B04-22-Unit21-取り次ぎを頼む.md#111` ## 語彙 — Từ trong Unit (PDF 103; trang in 101)
+- `B04-23-Unit22-アポイントをとる.md#1` # Unit 22　アポイントをとる — Hẹn gặp
+- `B04-23-Unit22-アポイントをとる.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 104; trang in 102)
+- `B04-23-Unit22-アポイントをとる.md#28` ## チェック2　リスニング — Nghe và chọn (CD **43**; PDF 105; trang in 103)
+- `B04-23-Unit22-アポイントをとる.md#40` ## チャレンジ1・2 — Nói về quy định công ty và đóng vai (PDF 105; trang in 103)
+- `B04-23-Unit22-アポイントをとる.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 106; trang in 104)
+- `B04-23-Unit22-アポイントをとる.md#64` ## スクリプト・ノート — Bản thoại in cho CD 43 (PDF 106; trang in 104)
+- `B04-23-Unit22-アポイントをとる.md#86` ## 録音例・ノート — Ví dụ và đóng vai (PDF 107; trang in 105)
+- `B04-23-Unit22-アポイントをとる.md#115` ## 語彙 — Từ trong Unit (PDF 107; trang in 105)
+- `B04-24-Unit23-問い合わせをする.md#1` # Unit 23　問い合わせをする — Gọi hỏi thông tin
+- `B04-24-Unit23-問い合わせをする.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 108; trang in 106)
+- `B04-24-Unit23-問い合わせをする.md#28` ## チェック2　リスニング — Nghe và chọn (CD **45**; PDF 109; trang in 107)
+- `B04-24-Unit23-問い合わせをする.md#40` ## チャレンジ1・2 — Kể lần hỏi bộ phận hỗ trợ và đóng vai (PDF 109; trang in 107)
+- `B04-24-Unit23-問い合わせをする.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 110; trang in 108)
+- `B04-24-Unit23-問い合わせをする.md#64` ## スクリプト・ノート — Bản thoại in cho CD 45 (PDF 110; trang in 108)
+- `B04-24-Unit23-問い合わせをする.md#85` ## 録音例・ノート — Ví dụ và đóng vai (PDF 111; trang in 109)
+- `B04-24-Unit23-問い合わせをする.md#113` ## 語彙 — Từ trong Unit (PDF 111; trang in 109)
+- `B04-25-Unit24-伝言を頼む.md#1` # Unit 24　伝言を頼む — Nhờ chuyển lời
+- `B04-25-Unit24-伝言を頼む.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 112; trang in 110)
+- `B04-25-Unit24-伝言を頼む.md#28` ## チェック2　リスニング — Nghe và chọn (CD **47**; PDF 113; trang in 111)
+- `B04-25-Unit24-伝言を頼む.md#40` ## チャレンジ1・2 — Kể về sai sót khi chuyển lời và đóng vai (PDF 113; trang in 111)
+- `B04-25-Unit24-伝言を頼む.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 114; trang in 112)
+- `B04-25-Unit24-伝言を頼む.md#64` ## スクリプト・ノート — Bản thoại in cho CD 47 (PDF 114; trang in 112)
+- `B04-25-Unit24-伝言を頼む.md#86` ## 録音例・ノート — Ví dụ và đóng vai (PDF 115; trang in 113)
+- `B04-25-Unit24-伝言を頼む.md#118` ## 語彙 — Từ trong Unit (PDF 115; trang in 113)
+- `B04-26-Unit25-コールバックすることを伝える.m#1` # Unit 25　コールバックすることを伝える — Báo sẽ gọi lại
+- `B04-26-Unit25-コールバックすることを伝える.m#6` ## キーセンテンス・ポイント・チェック1 (PDF 116; trang in 114)
+- `B04-26-Unit25-コールバックすることを伝える.m#28` ## チェック2　リスニング — Nghe và chọn (CD **49**; PDF 117; trang in 115)
+- `B04-26-Unit25-コールバックすることを伝える.m#40` ## チャレンジ1・2 — Kể khác biệt tập quán và đóng vai (PDF 117; trang in 115)
+- `B04-26-Unit25-コールバックすることを伝える.m#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 118; trang in 116)
+- `B04-26-Unit25-コールバックすることを伝える.m#64` ## スクリプト・ノート — Bản thoại in cho CD 49 (PDF 118; trang in 116)
+- `B04-26-Unit25-コールバックすることを伝える.m#85` ## 録音例・ノート — Ví dụ và đóng vai (PDF 119; trang in 117)
+- `B04-26-Unit25-コールバックすることを伝える.m#109` ## 語彙 — Từ trong Unit (PDF 119; trang in 117)
+- `B04-27-Unit26-コールバックしてもらう.md#1` # Unit 26　コールバックしてもらう — Nhờ gọi lại
+- `B04-27-Unit26-コールバックしてもらう.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 120; trang in 118)
+- `B04-27-Unit26-コールバックしてもらう.md#28` ## チェック2　リスニング — Nghe và chọn (CD **51**; PDF 121; trang in 119)
+- `B04-27-Unit26-コールバックしてもらう.md#40` ## チャレンジ1・2 — Nói về niềm vui nhỏ và đóng vai (PDF 121; trang in 119)
+- `B04-27-Unit26-コールバックしてもらう.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 122; trang in 120)
+- `B04-27-Unit26-コールバックしてもらう.md#64` ## スクリプト・ノート — Bản thoại in cho CD 51 (PDF 122; trang in 120)
+- `B04-27-Unit26-コールバックしてもらう.md#85` ## 録音例・ノート — Ví dụ và đóng vai (PDF 123; trang in 121)
+- `B04-27-Unit26-コールバックしてもらう.md#111` ## 語彙 — Từ trong Unit (PDF 123; trang in 121)
+- `B04-28-Unit27-至急のとき.md#1` # Unit 27　至急のとき — Khi cần liên lạc gấp
+- `B04-28-Unit27-至急のとき.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 124; trang in 122)
+- `B04-28-Unit27-至急のとき.md#28` ## チェック2　リスニング — Nghe và chọn (CD **53**; PDF 125; trang in 123)
+- `B04-28-Unit27-至急のとき.md#40` ## チャレンジ1・2 — Kể tình huống khẩn cấp và đóng vai (PDF 125; trang in 123)
+- `B04-28-Unit27-至急のとき.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 126; trang in 124)
+- `B04-28-Unit27-至急のとき.md#64` ## スクリプト・ノート — Bản thoại in cho CD 53 (PDF 126; trang in 124)
+- `B04-28-Unit27-至急のとき.md#84` ## 録音例・ノート — Ví dụ và đóng vai (PDF 127; trang in 125)
+- `B04-28-Unit27-至急のとき.md#109` ## 語彙 — Từ trong Unit (PDF 127; trang in 125)
+- `B04-29-Unit28-留守番電話に伝言を残す.md#1` # Unit 28　留守番電話に伝言を残す — Để lại lời nhắn trong hộp thư thoại
+- `B04-29-Unit28-留守番電話に伝言を残す.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 128; trang in 126)
+- `B04-29-Unit28-留守番電話に伝言を残す.md#28` ## チェック2　リスニング — Nghe lời nhắn và chọn (CD **55**; PDF 129; trang in 127)
+- `B04-29-Unit28-留守番電話に伝言を残す.md#40` ## チャレンジ1・2 — Nói về ghi lời nhắn và đóng vai (PDF 129; trang in 127)
+- `B04-29-Unit28-留守番電話に伝言を残す.md#49` ## 解答・解説 — Đáp án và giải thích sách in (PDF 130; trang in 128)
+- `B04-29-Unit28-留守番電話に伝言を残す.md#63` ## スクリプト・ノート — Lời nhắn in cho CD 55 (PDF 130; trang in 128)
+- `B04-29-Unit28-留守番電話に伝言を残す.md#86` ## 録音例・ノート — Ví dụ và lời nhắn (PDF 131; trang in 129)
+- `B04-29-Unit28-留守番電話に伝言を残す.md#109` ## 語彙 — Từ trong Unit (PDF 131; trang in 129)
+- `B04-30-Unit29-間違い電話をしたとき.md#1` # Unit 29　間違い電話をしたとき — Khi gọi nhầm số
+- `B04-30-Unit29-間違い電話をしたとき.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 132; trang in 130)
+- `B04-30-Unit29-間違い電話をしたとき.md#28` ## チェック2　リスニング — Nghe và chọn (CD **57**; PDF 133; trang in 131)
+- `B04-30-Unit29-間違い電話をしたとき.md#40` ## チャレンジ1・2 — Kể một sai lầm và đóng vai (PDF 133; trang in 131)
+- `B04-30-Unit29-間違い電話をしたとき.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 134; trang in 132)
+- `B04-30-Unit29-間違い電話をしたとき.md#64` ## スクリプト・ノート — Bản thoại in cho CD 57 (PDF 134; trang in 132)
+- `B04-30-Unit29-間違い電話をしたとき.md#85` ## 録音例・ノート — Ví dụ và đóng vai (PDF 135; trang in 133)
+- `B04-30-Unit29-間違い電話をしたとき.md#109` ## 語彙 — Từ trong Unit (PDF 135; trang in 133)
+- `B04-31-Unit30-名前の漢字を尋ねる.md#1` # Unit 30　名前の漢字を尋ねる — Hỏi chữ Hán viết tên
+- `B04-31-Unit30-名前の漢字を尋ねる.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 136; trang in 134)
+- `B04-31-Unit30-名前の漢字を尋ねる.md#28` ## チェック2　リスニング — Nghe và chọn (CD **59**; PDF 137; trang in 135)
+- `B04-31-Unit30-名前の漢字を尋ねる.md#40` ## チャレンジ1・2 — Giải thích tên và đóng vai (PDF 137; trang in 135)
+- `B04-31-Unit30-名前の漢字を尋ねる.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 138; trang in 136)
+- `B04-31-Unit30-名前の漢字を尋ねる.md#64` ## スクリプト・ノート — Bản thoại in cho CD 59 (PDF 138; trang in 136)
+- `B04-31-Unit30-名前の漢字を尋ねる.md#84` ## 録音例・ノート — Ví dụ và đóng vai (PDF 139; trang in 137)
+- `B04-31-Unit30-名前の漢字を尋ねる.md#113` ## 語彙 — Từ trong Unit (PDF 139; trang in 137)
+- `B04-32-Unit31-名前などを確認する（聞き取れてい#1` # Unit 31　名前などを確認する（聞き取れているとき） — Xác nhận tên và thông tin khi đã nghe rõ
+- `B04-32-Unit31-名前などを確認する（聞き取れてい#6` ## キーセンテンス・ポイント・チェック1 (PDF 140; trang in 138)
+- `B04-32-Unit31-名前などを確認する（聞き取れてい#28` ## チェック2　リスニング — Nghe và chọn (CD **61**; PDF 141; trang in 139)
+- `B04-32-Unit31-名前などを確認する（聞き取れてい#40` ## チャレンジ1・2 — Báo cáo và đóng vai (PDF 141; trang in 139)
+- `B04-32-Unit31-名前などを確認する（聞き取れてい#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 142; trang in 140)
+- `B04-32-Unit31-名前などを確認する（聞き取れてい#64` ## スクリプト・ノート — Bản thoại in cho CD 61 (PDF 142; trang in 140)
+- `B04-32-Unit31-名前などを確認する（聞き取れてい#85` ## 録音例・ノート — Ví dụ và đóng vai (PDF 143; trang in 141)
+- `B04-32-Unit31-名前などを確認する（聞き取れてい#111` ## 語彙 — Từ trong Unit (PDF 143; trang in 141)
+- `B04-33-Unit32-よく聞き取れないとき（電波障害な#1` # Unit 32　よく聞き取れないとき（電波障害など） — Khi khó nghe vì sóng điện thoại hoặc tiếng ồn
+- `B04-33-Unit32-よく聞き取れないとき（電波障害な#6` ## キーセンテンス・ポイント・チェック1 (PDF 144; trang in 142)
+- `B04-33-Unit32-よく聞き取れないとき（電波障害な#28` ## チェック2　リスニング — Nghe và chọn (CD **63**; PDF 145; trang in 143)
+- `B04-33-Unit32-よく聞き取れないとき（電波障害な#40` ## チャレンジ1・2 — Lợi và bất lợi của di động; đóng vai (PDF 145; trang in 143)
+- `B04-33-Unit32-よく聞き取れないとき（電波障害な#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 146; trang in 144)
+- `B04-33-Unit32-よく聞き取れないとき（電波障害な#64` ## スクリプト・ノート — Bản thoại in cho CD 63 (PDF 146; trang in 144)
+- `B04-33-Unit32-よく聞き取れないとき（電波障害な#84` ## 録音例・ノート — Ví dụ và đóng vai (PDF 147; trang in 145)
+- `B04-33-Unit32-よく聞き取れないとき（電波障害な#112` ## 語彙 — Từ trong Unit (PDF 147; trang in 145)
+- `B04-34-Unit33-よく聞き取れないとき（リスニング#1` # Unit 33　よく聞き取れないとき（リスニング力不足） — Khi bản thân nghe hiểu chưa đủ
+- `B04-34-Unit33-よく聞き取れないとき（リスニング#6` ## キーセンテンス・ポイント・チェック1 (PDF 148; trang in 146)
+- `B04-34-Unit33-よく聞き取れないとき（リスニング#28` ## チェック2　リスニング — Nghe và chọn (CD **65**; PDF 149; trang in 147)
+- `B04-34-Unit33-よく聞き取れないとき（リスニング#40` ## チャレンジ1・2 — Kinh nghiệm nghe không rõ; đóng vai (PDF 149; trang in 147)
+- `B04-34-Unit33-よく聞き取れないとき（リスニング#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 150; trang in 148)
+- `B04-34-Unit33-よく聞き取れないとき（リスニング#64` ## スクリプト・ノート — Bản thoại in cho CD 65 (PDF 150; trang in 148)
+- `B04-34-Unit33-よく聞き取れないとき（リスニング#88` ## 録音例・ノート — Ví dụ và đóng vai (PDF 151; trang in 149)
+- `B04-34-Unit33-よく聞き取れないとき（リスニング#111` ## 語彙 — Từ trong Unit (PDF 151; trang in 149)
+- `B04-35-Unit34-相手が名乗らないとき.md#1` # Unit 34　相手が名乗らないとき — Khi người gọi không xưng tên
+- `B04-35-Unit34-相手が名乗らないとき.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 152; trang in 150)
+- `B04-35-Unit34-相手が名乗らないとき.md#28` ## チェック2　リスニング — Nghe và chọn (CD **67**; PDF 153; trang in 151)
+- `B04-35-Unit34-相手が名乗らないとき.md#40` ## チャレンジ1・2 — Cách nói tế nhị và đóng vai (PDF 153; trang in 151)
+- `B04-35-Unit34-相手が名乗らないとき.md#50` ## 解答・解説 — Đáp án và giải thích sách in (PDF 154; trang in 152)
+- `B04-35-Unit34-相手が名乗らないとき.md#64` ## スクリプト・ノート — Bản thoại in cho CD 67 (PDF 154; trang in 152)
+- `B04-35-Unit34-相手が名乗らないとき.md#85` ## 録音例・ノート — Ví dụ và đóng vai (PDF 155; trang in 153)
+- `B04-35-Unit34-相手が名乗らないとき.md#114` ## 語彙 — Từ trong Unit (PDF 155; trang in 153)
+- `B04-36-Unit35-電話を切る.md#1` # Unit 35　電話を切る — Kết thúc cuộc gọi
+- `B04-36-Unit35-電話を切る.md#6` ## キーセンテンス・ポイント・チェック1 (PDF 156; trang in 154)
+- `B04-36-Unit35-電話を切る.md#28` ## チェック2　リスニング — Nghe và chọn (CD **69**; PDF 157; trang in 155)
+- `B04-36-Unit35-電話を切る.md#41` ## チャレンジ1・2 — Lời nhắn và đóng vai (PDF 157; trang in 155)
+- `B04-36-Unit35-電話を切る.md#51` ## 解答・解説 — Đáp án và giải thích sách in (PDF 158; trang in 156)
+- `B04-36-Unit35-電話を切る.md#65` ## スクリプト・ノート — Bản thoại in cho CD 69 (PDF 158; trang in 156)
+- `B04-36-Unit35-電話を切る.md#81` ## 録音例・ノート — Ví dụ và đóng vai (PDF 159; trang in 157)
+- `B04-36-Unit35-電話を切る.md#103` ## 語彙 — Từ trong Unit (PDF 159; trang in 157)
+- `B04-37-著者紹介・奥付・裏表紙.md#1` # 著者紹介・奥付・裏表紙 — Tác giả, thông tin xuất bản và bìa sau
+- `B04-37-著者紹介・奥付・裏表紙.md#4` ## 著者紹介 — Tác giả (PDF 160)
+- `B04-37-著者紹介・奥付・裏表紙.md#11` ## 奥付 — Thông tin ấn bản (PDF 160)
+- `B04-37-著者紹介・奥付・裏表紙.md#23` ## 裏表紙 — Bìa sau (PDF 162)
+
+## B05 — すぐに使える 接客日本語会話大特訓［英語版］決まり文句700
+
+- `B05-00-front.md#1` # すぐに使える 接客日本語会話大特訓［英語版］決まり文句700
+- `B05-00-front.md#4` ## Sách và cách luyện
+- `B05-00-front.md#9` ## はじめに — Lời đầu
+- `B05-00-front.md#20` ## 目次 — Mục lục (1)
+- `B05-00-front.md#43` ## 目次 — Mục lục (2)
+- `B05-00-front.md#80` ## 目次 — Mục lục (3)
+- `B05-00-front.md#118` ## 目次 — Mục lục (4)
+- `B05-00-front.md#147` ## 本書の使い方 — Cách dùng sách (tr. 8)
+- `B05-00-front.md#154` ## 付属のCD — CD đi kèm và cách tập (tr. 9)
+- `B05-01-jo.md#1` # 序章 日本式接客サービスの心がまえ — Tâm thế phục vụ khách theo cách Nhật
+- `B05-01-jo.md#7` ## 1. おもてなしの心 — Tinh thần đón tiếp chu đáo
+- `B05-01-jo.md#12` ## 2. お客様に対する言葉遣い — Cách nói với khách
+- `B05-01-jo.md#35` ## 3. お客様に対する態度 — Thái độ với khách
+- `B05-01-jo.md#47` ## 4. 感じのよい接し方 — Cách tiếp xúc tạo thiện cảm
+- `B05-02-ch1-keigo.md#1` # 第1章 敬語の基本パターンと接客の基本表現 — Mẫu kính ngữ và cách nói cơ bản khi phục vụ khách
+- `B05-02-ch1-keigo.md#7` ## Unit 1 敬語① — お／ご～ください
+- `B05-02-ch1-keigo.md#38` ## Unit 2 敬語② — お／ご～になる
+- `B05-02-ch1-keigo.md#67` ## Unit 3 敬語③ — Những cách nói đặc biệt
+- `B05-02-ch1-keigo.md#96` ## Unit 4 敬語④ — れる／られる và なさる／される
+- `B05-02-ch1-keigo.md#125` ## Unit 5 敬語⑤ — Khiêm nhường ngữ
+- `B05-02-ch1-keigo.md#154` ## Unit 6 敬語⑥ — Cách nói lịch sự
+- `B05-02-ch1-keigo.md#183` ## Unit 7 客を迎える・客を見送る — Đón và tiễn khách
+- `B05-02-ch1-keigo.md#212` ## Unit 8 営業時間 — Giờ kinh doanh
+- `B05-02-ch1-keigo.md#241` ## Unit 9 トイレの案内 — Chỉ nhà vệ sinh
+- `B05-02-ch1-keigo.md#270` ## Unit 10 よく聞き取れない・わからない — Khi nghe không rõ hoặc không hiểu
+- `B05-02-ch1-keigo.md#297` ## Unit 11 よく使うひとこと表現① — Câu ngắn thường dùng 1
+- `B05-02-ch1-keigo.md#326` ## Unit 12 よく使うひとこと表現② — Câu ngắn thường dùng 2
+- `B05-02-ch1-keigo.md#355` ## Unit 13 会計① — Thanh toán bằng thẻ
+- `B05-02-ch1-keigo.md#384` ## Unit 14 会計② — Thanh toán bằng tiền mặt
+- `B05-02-ch1-keigo.md#413` ## Unit 15 会計③ — Những cách nói khác khi thanh toán
+- `B05-02-ch1-keigo.md#442` ## Unit 16 謝る — Xin lỗi
+- `B05-02-ch1-keigo.md#471` ## Một lựa chọn thứ ba: 「～になります」 (tr. 48)
+- `B05-03-ch2-inshokuten.md#1` # 第2章 飲食店 — Nhà hàng, quán ăn
+- `B05-03-ch2-inshokuten.md#7` ## Unit 1 飲食店の基本① — Đặt bàn qua điện thoại
+- `B05-03-ch2-inshokuten.md#36` ## Unit 2 飲食店の基本② — Hướng dẫn khách vào chỗ 1
+- `B05-03-ch2-inshokuten.md#65` ## Unit 3 飲食店の基本③ — Hướng dẫn khách vào chỗ 2
+- `B05-03-ch2-inshokuten.md#92` ## Unit 4 飲食店の基本④ — Khi nhà hàng kín chỗ
+- `B05-03-ch2-inshokuten.md#121` ## Unit 5 飲食店の基本⑤ — Nhận món 1
+- `B05-03-ch2-inshokuten.md#150` ## Unit 6 飲食店の基本⑥ — Nhận món 2
+- `B05-03-ch2-inshokuten.md#179` ## Unit 7 飲食店の基本⑦ — Nhận món 3
+- `B05-03-ch2-inshokuten.md#208` ## Unit 8 飲食店の基本⑧ — Mang món ăn ra
+- `B05-03-ch2-inshokuten.md#237` ## Unit 9 飲食店の基本⑨ — Những việc phục vụ nhỏ
+- `B05-03-ch2-inshokuten.md#266` ## Unit 10 飲食店の基本⑩ — Nhờ khách đợi một chút
+- `B05-03-ch2-inshokuten.md#295` ## Unit 11 飲食店の基本⑪ — Đổi món đã gọi
+- `B05-03-ch2-inshokuten.md#322` ## Unit 12 飲食店の基本⑫ — Xử lý phàn nàn 1
+- `B05-03-ch2-inshokuten.md#351` ## Unit 13 飲食店の基本⑬ — Xử lý phàn nàn 2
+- `B05-03-ch2-inshokuten.md#378` ## Unit 14 飲食店の基本⑭ — Các trường hợp khác
+- `B05-03-ch2-inshokuten.md#405` ## Unit 15 ファーストフード店① — Quán thức ăn nhanh 1
+- `B05-03-ch2-inshokuten.md#434` ## Unit 16 ファーストフード店② — Quán thức ăn nhanh 2
+- `B05-03-ch2-inshokuten.md#463` ## Unit 17 ファーストフード店③ — Udon, soba, cơm bò
+- `B05-03-ch2-inshokuten.md#492` ## Unit 18 居酒屋① — Gọi đồ uống 1
+- `B05-03-ch2-inshokuten.md#521` ## Unit 19 居酒屋② — Gọi đồ uống 2
+- `B05-03-ch2-inshokuten.md#550` ## Unit 20 居酒屋③ — Gọi món và giải thích món 1
+- `B05-03-ch2-inshokuten.md#579` ## Unit 21 居酒屋④ — Gọi món và giải thích món 2
+- `B05-03-ch2-inshokuten.md#608` ## Unit 22 居酒屋⑤ — Cách ăn, gọi thêm và gói đồ uống
+- `B05-03-ch2-inshokuten.md#637` ## Unit 23 パブ — Gọi đồ uống tại quán pub
+- `B05-03-ch2-inshokuten.md#666` ## 単語＆ミニフレーズ — Từ vựng và cụm ngắn về ăn uống (tr. 96–98)
+- `B05-04-ch3-hanbaiten.md#1` # 第3章 販売店 — Cửa hàng bán lẻ
+- `B05-04-ch3-hanbaiten.md#4` ## Các phần của chương (tr. 99)
+- `B05-04-ch3-hanbaiten.md#9` ## Unit 1 販売店の基本① — Câu thường dùng trên sàn bán hàng
+- `B05-04-ch3-hanbaiten.md#38` ## Unit 2 販売店の基本② — Hàng hóa và dịch vụ
+- `B05-04-ch3-hanbaiten.md#67` ## Unit 3 販売店の基本③ — Hàng tồn kho
+- `B05-04-ch3-hanbaiten.md#96` ## Unit 4 販売店の基本④ — Gói hàng
+- `B05-04-ch3-hanbaiten.md#125` ## Unit 5 販売店の基本⑤ — Gửi hàng
+- `B05-04-ch3-hanbaiten.md#154` ## Unit 6 販売店の基本⑥ — Các câu khác tại quầy thu ngân
+- `B05-04-ch3-hanbaiten.md#183` ## Unit 7 販売店の基本⑦ — Yêu cầu trả hàng hoặc giảm giá
+- `B05-04-ch3-hanbaiten.md#212` ## Unit 8 アパレル① — Giới thiệu quần áo
+- `B05-04-ch3-hanbaiten.md#241` ## Unit 9 アパレル② — Chất liệu
+- `B05-04-ch3-hanbaiten.md#270` ## Unit 10 アパレル③ — Thử quần áo
+- `B05-04-ch3-hanbaiten.md#299` ## Unit 11 アパレル④ — Màu và kiểu dáng
+- `B05-04-ch3-hanbaiten.md#328` ## Unit 12 アパレル⑤ — Giày
+- `B05-04-ch3-hanbaiten.md#357` ## Unit 13 アパレル⑥ — Túi xách
+- `B05-04-ch3-hanbaiten.md#386` ## Unit 14 雑貨店 — Cửa hàng tạp phẩm
+- `B05-04-ch3-hanbaiten.md#415` ## Unit 15 ドラッグストア① — Hỏi triệu chứng
+- `B05-04-ch3-hanbaiten.md#444` ## Unit 16 ドラッグストア② — Hỏi về thuốc
+- `B05-04-ch3-hanbaiten.md#473` ## Unit 17 ドラッグストア③ — Giải thích thuốc
+- `B05-04-ch3-hanbaiten.md#502` ## Unit 18 ドラッグストア④ — Các câu khác tại drugstore
+- `B05-04-ch3-hanbaiten.md#531` ## Unit 19 化粧品店 — Cửa hàng mỹ phẩm
+- `B05-04-ch3-hanbaiten.md#560` ## Unit 20 スーパー① — Tại quầy thu ngân siêu thị
+- `B05-04-ch3-hanbaiten.md#589` ## Unit 21 スーパー② — Tính tiền tại siêu thị
+- `B05-04-ch3-hanbaiten.md#616` ## Unit 22 スーパー③ — Vị trí hàng và giảm giá
+- `B05-04-ch3-hanbaiten.md#645` ## Unit 23 家電量販店① — Giải thích thiết bị điện tử
+- `B05-04-ch3-hanbaiten.md#674` ## Unit 24 家電量販店② — Bảo hành và dịch vụ khách hàng
+- `B05-04-ch3-hanbaiten.md#703` ## 単語＆ミニフレーズ — Từ vựng và cụm ngắn tại cửa hàng (tr. 148–150)
+- `B05-05-ch4-konbini.md#1` # 第4章 コンビニ — Cửa hàng tiện lợi
+- `B05-05-ch4-konbini.md#4` ## Các phần của chương (tr. 151)
+- `B05-05-ch4-konbini.md#9` ## Unit 1 コンビニ① — Quầy thu ngân 1
+- `B05-05-ch4-konbini.md#38` ## Unit 2 コンビニ② — Quầy thu ngân 2
+- `B05-05-ch4-konbini.md#65` ## Unit 3 コンビニ③ — Thanh toán bằng thẻ
+- `B05-05-ch4-konbini.md#94` ## Unit 4 コンビニ④ — Đồ ăn và thức uống
+- `B05-05-ch4-konbini.md#121` ## Unit 5 コンビニ⑤ — Gửi hàng và photocopy
+- `B05-05-ch4-konbini.md#150` ## 単語＆ミニフレーズ — Từ vựng và cụm ngắn cửa hàng tiện lợi (tr. 162)
+- `B05-06-ch5-shukuhaku.md#1` # 第5章 宿泊施設 — Cơ sở lưu trú
+- `B05-06-ch5-shukuhaku.md#4` ## Các phần của chương (tr. 163)
+- `B05-06-ch5-shukuhaku.md#9` ## Unit 1 宿泊施設① — Đặt phòng qua điện thoại 1
+- `B05-06-ch5-shukuhaku.md#38` ## Unit 2 宿泊施設② — Đặt phòng qua điện thoại 2
+- `B05-06-ch5-shukuhaku.md#67` ## Unit 3 宿泊施設③ — Nhận phòng
+- `B05-06-ch5-shukuhaku.md#96` ## Unit 4 宿泊施設④ — Khách gọi từ phòng báo sự cố
+- `B05-06-ch5-shukuhaku.md#125` ## Unit 5 宿泊施設⑤ — Yêu cầu từ phòng khách
+- `B05-06-ch5-shukuhaku.md#154` ## Unit 6 宿泊施設⑥ — Các yêu cầu khác
+- `B05-06-ch5-shukuhaku.md#183` ## 単語＆ミニフレーズ — Từ vựng và cụm ngắn cơ sở lưu trú (tr. 176)
+- `B05-07-ch6-sonota.md#1` # 第6章 その他のさまざまなサービス — Những dịch vụ khác
+- `B05-07-ch6-sonota.md#4` ## Các phần của chương (tr. 177)
+- `B05-07-ch6-sonota.md#9` ## Unit 1 カラオケ店① — Tiếp khách tại quán karaoke
+- `B05-07-ch6-sonota.md#38` ## Unit 2 カラオケ店② — Cách sử dụng phòng karaoke
+- `B05-07-ch6-sonota.md#67` ## Unit 3 レンタルビデオ店① — Tìm hàng và làm thẻ
+- `B05-07-ch6-sonota.md#96` ## Unit 4 レンタルビデオ店② — Kỳ hạn thuê và thanh toán
+- `B05-07-ch6-sonota.md#123` ## Unit 5 講座① — Dạy ngôn ngữ
+- `B05-07-ch6-sonota.md#152` ## Unit 6 講座② — Hướng dẫn thực hành 1
+- `B05-07-ch6-sonota.md#181` ## Unit 7 講座③ — Hướng dẫn thực hành 2
+- `B05-07-ch6-sonota.md#210` ## 単語＆ミニフレーズ — Từ vựng và cụm ngắn (tr. 192)
+- `B05-08-ch7-denwa.md#1` # 第7章 電話基本会話 — Hội thoại cơ bản qua điện thoại
+- `B05-08-ch7-denwa.md#4` ## Các phần của chương (tr. 193)
+- `B05-08-ch7-denwa.md#9` ## Unit 1 電話応対① — Đặt bàn qua điện thoại
+- `B05-08-ch7-denwa.md#38` ## Unit 2 電話応対② — Đặt phòng khách sạn
+- `B05-08-ch7-denwa.md#67` ## Unit 3 電話応対③ — Khi người được gọi vắng mặt
+- `B05-08-ch7-denwa.md#96` ## Unit 4 電話応対④ — Nhận lời nhắn
+- `B05-08-ch7-denwa.md#125` ## Unit 5 電話応対⑤ — Các cách xử lý cuộc gọi khác
+- `B05-08-ch7-denwa.md#154` ## 単語＆ミニフレーズ — Từ và câu ngắn (tr. 204)
+- `B05-09-ch8-kinkyu.md#1` # 第8章 緊急・トラブル — Trường hợp khẩn cấp và sự cố
+- `B05-09-ch8-kinkyu.md#4` ## Các phần của chương (tr. 205)
+- `B05-09-ch8-kinkyu.md#9` ## Unit 1 急病人① — Hỏi tình trạng người bị bệnh
+- `B05-09-ch8-kinkyu.md#38` ## Unit 2 急病人② — Xác nhận tình trạng và người liên hệ
+- `B05-09-ch8-kinkyu.md#67` ## Unit 3 地震 — Khi xảy ra động đất
+- `B05-09-ch8-kinkyu.md#94` ## Unit 4 火災 — Khi có hỏa hoạn
+- `B05-09-ch8-kinkyu.md#119` ## Unit 5 避難 — Hướng dẫn sơ tán
+- `B05-09-ch8-kinkyu.md#146` ## Unit 6 落とし物・忘れ物 — Đồ đánh rơi và bỏ quên
+- `B05-09-ch8-kinkyu.md#175` ## 単語＆ミニフレーズ — Từ và câu ngắn (tr. 218)
+- `B05-10-teinei-hyou.md#1` # 丁寧表現早見表 — Bảng tra cách nói lịch sự
+- `B05-10-teinei-hyou.md#4` ## 1. 尊敬語 — Kính ngữ tôn người nghe/người được nhắc đến (tr. 219–220)
+- `B05-10-teinei-hyou.md#55` ## 2. 謙譲語 — Khiêm nhường ngữ (tr. 221–222)
+- `B05-10-teinei-hyou.md#89` ## 3. さまざまな丁寧表現 — Những cách nói lịch sự khác (tr. 222–223)
+- `B05-10-teinei-hyou.md#166` ## 4. 「お～」「ご～」の表現 — Các cách nói với お～ và ご～ (tr. 223)
+- `B05-11-colophon.md#1` # Thông tin ấn bản
+- `B05-11-colophon.md#4` ## Nhan đề và những người thực hiện (tr. 224)
+- `B05-11-colophon.md#13` ## Bìa sau (tr. 225)
+
+## B06 — すぐに使える 日本語会話 超ミニフレーズ 発展210
+
+- `B06-00-front.md#1` # すぐに使える 日本語会話 超ミニフレーズ 発展210 — Đầu sách (PDF1–15)
+- `B06-00-front.md#4` ## Nhan đề và ấn bản (PDF1, 15)
+- `B06-00-front.md#9` ## Lời đầu — はじめに (PDF2–3)
+- `B06-00-front.md#20` ## Mục lục — 目次 (PDF4–9)
+- `B06-00-front.md#264` ## 学習の流れ — Trình tự học (PDF10–11)
+- `B06-00-front.md#274` ## この本の使い方 — Cách dùng sách (PDF12–13)
+- `B06-00-front.md#281` ## CDの使い方 — Cách dùng CD (PDF14)
+- `B06-01-a-01-10.md#1` # あ — Biểu đạt 1–10 (PDF16–25)
+- `B06-01-a-01-10.md#4` ## 1. あきれる — Ngán ngẩm, sửng sốt đến thất vọng (PDF16; CD-1 1)
+- `B06-01-a-01-10.md#15` ## 2. 焦った — Cuống lên, hoảng hốt (PDF17; CD-1 2)
+- `B06-01-a-01-10.md#25` ## 3. 当たり前です — Đương nhiên, có gì lạ đâu (PDF18; CD-1 3)
+- `B06-01-a-01-10.md#36` ## 4. あっという間 — Trong chớp mắt (PDF19; CD-1 4)
+- `B06-01-a-01-10.md#47` ## 5. あと一歩 — Chỉ còn một bước nữa (PDF20; CD-1 5)
+- `B06-01-a-01-10.md#58` ## 6. あやしい — Đáng ngờ (PDF21; CD-1 6)
+- `B06-01-a-01-10.md#69` ## 7. あり得ない — Không thể nào có chuyện đó (PDF22; CD-1 7)
+- `B06-01-a-01-10.md#80` ## 8. あわてなくていい — Không cần vội (PDF23; CD-1 8)
+- `B06-01-a-01-10.md#93` ## 9. いい加減だなあ — Thật cẩu thả / vô trách nhiệm (PDF24; CD-1 9)
+- `B06-01-a-01-10.md#103` ## 10. いい加減にして — Thôi đủ rồi / dừng lại đi (PDF25; CD-1 10)
+- `B06-02-a-11-24.md#1` # あ — Biểu đạt 11–24 (PDF26–39)
+- `B06-02-a-11-24.md#4` ## 11. いい線いってる — Khá đúng hướng / gần đúng rồi (PDF26; CD-1 11)
+- `B06-02-a-11-24.md#14` ## 12. いいな — Thích thật, ghen tị quá (PDF27; CD-1 12)
+- `B06-02-a-11-24.md#24` ## 13. 言いにくいんですが — Khó nói điều này, nhưng… (PDF28; CD-1 13)
+- `B06-02-a-11-24.md#34` ## 14. 言い訳はいい — Không cần viện cớ nữa (PDF29; CD-1 14)
+- `B06-02-a-11-24.md#44` ## 15. 言えてる — Nói đúng đấy (PDF30; CD-1 15)
+- `B06-02-a-11-24.md#54` ## 16. 意外 — Bất ngờ, không ngờ (PDF31; CD-1 16)
+- `B06-02-a-11-24.md#65` ## 17. 一応 — Tạm coi là / trước mắt (PDF32; CD-1 17)
+- `B06-02-a-11-24.md#77` ## 18. 一か八か — Được ăn cả, ngã về không (PDF33; CD-1 18)
+- `B06-02-a-11-24.md#88` ## 19. 言ってくれればよかったのに — Giá cậu nói cho tôi biết (PDF34; CD-1 19)
+- `B06-02-a-11-24.md#102` ## 20. いつでも言ってください — Khi nào cần cứ nói với tôi (PDF35; CD-1 20)
+- `B06-02-a-11-24.md#115` ## 21. いつものこと — Chuyện vẫn thường xảy ra (PDF36; CD-1 21)
+- `B06-02-a-11-24.md#125` ## 22. 今一つ — Còn thiếu một chút, chưa thật đạt (PDF37; CD-1 22)
+- `B06-02-a-11-24.md#136` ## 23. 意味がわからない — Tôi không hiểu nổi (PDF38; CD-1 23)
+- `B06-02-a-11-24.md#146` ## 24. いやだ — Tôi không muốn (PDF39; CD-1 24)
+- `B06-03-a-25-39.md#1` # あ — Biểu đạt 25–39 (PDF40–54)
+- `B06-03-a-25-39.md#4` ## 25. イライラする — Bực bội, sốt ruột (PDF40; CD-1 25)
+- `B06-03-a-25-39.md#14` ## 26. うっかりしてた — Tôi đã bất cẩn / lỡ quên (PDF41; CD-1 26)
+- `B06-03-a-25-39.md#27` ## 27. うまく言えない — Khó diễn đạt thành lời (PDF42; CD-1 27)
+- `B06-03-a-25-39.md#37` ## 28. うまくいってる — Đang tiến triển tốt (PDF43; CD-1 28)
+- `B06-03-a-25-39.md#47` ## 29. うんざり — Ngán ngẩm, chán ngấy (PDF44; CD-1 29)
+- `B06-03-a-25-39.md#57` ## 30. 偉い — Giỏi thật, đáng khâm phục (PDF45; CD-1 30)
+- `B06-03-a-25-39.md#68` ## 31. お言葉に甘えて — Xin nhận lòng tốt của anh/chị (PDF46; CD-1 31)
+- `B06-03-a-25-39.md#79` ## 32. お先に — Tôi xin đi/làm trước (PDF47; CD-1 32)
+- `B06-03-a-25-39.md#89` ## 33. おしゃれですね — Sành điệu quá nhỉ (PDF48; CD-1 33)
+- `B06-03-a-25-39.md#99` ## 34. 落ち込む — Buồn chán, suy sụp (PDF49; CD-1 34)
+- `B06-03-a-25-39.md#109` ## 35. おっしゃるとおりです — Đúng như anh/chị nói (PDF50; CD-1 35)
+- `B06-03-a-25-39.md#119` ## 36. 追ってご連絡します — Tôi sẽ liên hệ lại sau (PDF51; CD-1 36)
+- `B06-03-a-25-39.md#129` ## 37. お手数をおかけします — Xin lỗi vì làm phiền anh/chị (PDF52; CD-1 37)
+- `B06-03-a-25-39.md#142` ## 38. 思ったとおり — Đúng như tôi nghĩ (PDF53; CD-1 38)
+- `B06-03-a-25-39.md#152` ## 39. 恩に着る — Tôi mang ơn (PDF54; CD-1 39)
+- `B06-04-k-40-60.md#1` # か — Biểu đạt 40–60 (PDF55–75)
+- `B06-04-k-40-60.md#4` ## 40. カチンと来る — Chạm tự ái, bực mình (PDF55; CD-1 40)
+- `B06-04-k-40-60.md#14` ## 41. がっくり — Hụt hẫng, suy sụp (PDF56; CD-1 41)
+- `B06-04-k-40-60.md#24` ## 42. かっこ悪い — Kém đẹp, không hay (PDF57; CD-1 42)
+- `B06-04-k-40-60.md#34` ## 43. 勝手にやれば？ — Cứ tự làm theo ý cậu đi? (PDF58; CD-1 43)
+- `B06-04-k-40-60.md#47` ## 44. 勝手を言ってすみません — Xin lỗi vì đã đưa ra yêu cầu riêng (PDF59; CD-1 44)
+- `B06-04-k-40-60.md#60` ## 45. 変わらないです — Vẫn như cũ, không thay đổi (PDF60; CD-1 45)
+- `B06-04-k-40-60.md#70` ## 46. 考えられない — Không thể tưởng tượng/chấp nhận được (PDF61; CD-1 46)
+- `B06-04-k-40-60.md#80` ## 47. 関係ない — Không liên quan / không thành vấn đề (PDF62; CD-1 47)
+- `B06-04-k-40-60.md#91` ## 48. 感心する — Khâm phục (PDF63; CD-1 48)
+- `B06-04-k-40-60.md#101` ## 49. 勘弁して（ほしい） — Tha cho tôi với / làm ơn đừng nữa (PDF64; CD-1 49)
+- `B06-04-k-40-60.md#114` ## 50. 聞いてない — Tôi chưa nghe chuyện đó (PDF65; CD-1 50)
+- `B06-04-k-40-60.md#125` ## 51. 気が重い — Nặng lòng, ngại phải làm (PDF66; CD-1 51)
+- `B06-04-k-40-60.md#135` ## 52. 気が利くね — Chu đáo quá nhỉ (PDF67; CD-1 52)
+- `B06-04-k-40-60.md#148` ## 53. 気が気じゃなかった — Đứng ngồi không yên (PDF68; CD-1 53)
+- `B06-04-k-40-60.md#158` ## 54. 気が進まない — Không muốn lắm, thấy ngại (PDF69; CD-1 54)
+- `B06-04-k-40-60.md#171` ## 55. 聞かなかったことにして — Cứ coi như chưa nghe nhé (PDF70; CD-1 55)
+- `B06-04-k-40-60.md#184` ## 56. 気が向いたら（でいい） — Khi nào hứng thì làm cũng được (PDF71; CD-1 56)
+- `B06-04-k-40-60.md#194` ## 57. 期待してたんだけど — Tôi đã kỳ vọng, nhưng… (PDF72; CD-1 57)
+- `B06-04-k-40-60.md#207` ## 58. きついです — Khó chịu đựng / chật (PDF73; CD-1 58)
+- `B06-04-k-40-60.md#217` ## 59. 気に入った — Thích, ưng ý (PDF74; CD-1 59)
+- `B06-04-k-40-60.md#231` ## 60. 気に障ったらごめんなさい — Xin lỗi nếu tôi làm anh/chị phật ý (PDF75; CD-1 60)
+- `B06-05-k-61-81.md#1` # か — Biểu đạt 61–81 (PDF76–96)
+- `B06-05-k-61-81.md#4` ## 61. 気になる — Bận tâm, tò mò, lo lắng (PDF76; CD-1 61)
+- `B06-05-k-61-81.md#14` ## 62. 気のせい — Chắc chỉ là cảm giác thôi (PDF77; CD-1 62)
+- `B06-05-k-61-81.md#24` ## 63. 決まってる — Tất nhiên rồi (PDF78; CD-1 63)
+- `B06-05-k-61-81.md#34` ## 64. 気持ちいい — Dễ chịu, sảng khoái (PDF79; CD-1 64)
+- `B06-05-k-61-81.md#47` ## 65. 気持ち悪い — Khó chịu, buồn nôn / ghê (PDF80; CD-1 65)
+- `B06-05-k-61-81.md#58` ## 66. 急な話で恐縮ですが — Xin lỗi vì nói chuyện đột ngột, nhưng… (PDF81; CD-1 66)
+- `B06-05-k-61-81.md#71` ## 67. 急に言われても困る — Nói đột ngột thế tôi khó xử (PDF82; CD-1 67)
+- `B06-05-k-61-81.md#84` ## 68. 今日はここまでにしましょう — Hôm nay dừng ở đây nhé (PDF83; CD-1 68)
+- `B06-05-k-61-81.md#97` ## 69. 気楽に — Thoải mái đi / đừng căng thẳng (PDF84; CD-1 69)
+- `B06-05-k-61-81.md#107` ## 70. きりがない — Không có điểm dừng (PDF85; CD-1 70)
+- `B06-05-k-61-81.md#117` ## 71. 具合はどう？ — Tình hình thế nào? / Khỏe hơn chưa? (PDF86; CD-1 71)
+- `B06-05-k-61-81.md#131` ## 72. くよくよしないで — Đừng lo nghĩ mãi (PDF87; CD-1 72)
+- `B06-05-k-61-81.md#144` ## 73. 検討します — Tôi sẽ xem xét (PDF88; CD-1 73)
+- `B06-05-k-61-81.md#154` ## 74. 誤解です — Anh/chị hiểu lầm rồi (PDF89; CD-1 74)
+- `B06-05-k-61-81.md#164` ## 75. ここだけの話ですが — Chuyện này chỉ giữa chúng ta thôi (PDF90; CD-1 75)
+- `B06-05-k-61-81.md#177` ## 76. 言葉も出ない — Không thốt nên lời (PDF91; CD-1 76)
+- `B06-05-k-61-81.md#191` ## 77. 子どもじゃないんだから — Đâu còn là trẻ con nữa (PDF92; CD-1 77)
+- `B06-05-k-61-81.md#201` ## 78. ご迷惑じゃないですか — Tôi có làm phiền anh/chị không? (PDF93; CD-1 78)
+- `B06-05-k-61-81.md#214` ## 79. これでいい？ — Thế này được chưa? (PDF94; CD-1 79)
+- `B06-05-k-61-81.md#228` ## 80. こんなチャンスはめったにない — Cơ hội như thế này hiếm lắm (PDF95; CD-1 80)
+- `B06-05-k-61-81.md#241` ## 81. こんなもんじゃない？ — Cũng chỉ đến mức ấy thôi chứ? (PDF96; CD-1 81)
+- `B06-06-s-82-98.md#1` # さ — Biểu đạt 82–98 (PDF97–113)
+- `B06-06-s-82-98.md#4` ## 82. 最高 — Tuyệt nhất (PDF97; CD-1 82)
+- `B06-06-s-82-98.md#15` ## 83. 最低 — Tệ nhất (PDF98; CD-1 83)
+- `B06-06-s-82-98.md#25` ## 84. さっぱりわからない — Chẳng hiểu gì cả (PDF99; CD-1 84)
+- `B06-06-s-82-98.md#36` ## 85. 至急、お願いします — Xin làm gấp giúp tôi (PDF100; CD-1 85)
+- `B06-06-s-82-98.md#46` ## 86. 失礼だなあ — Thật bất lịch sự (PDF101; CD-1 86)
+- `B06-06-s-82-98.md#59` ## 87. 死ぬほど — Đến chết / cực kỳ (PDF102; CD-1 87)
+- `B06-06-s-82-98.md#70` ## 88. しばらく様子を見ましょう — Tạm thời theo dõi tình hình đã (PDF103; CD-1 88)
+- `B06-06-s-82-98.md#83` ## 89. 冗談じゃない — Đùa gì vậy / không thể chấp nhận (PDF104; CD-1 89)
+- `B06-06-s-82-98.md#93` ## 90. 知らない — Có chuyện gì thì tự chịu đấy (PDF105; CD-1 90)
+- `B06-06-s-82-98.md#103` ## 91. 素晴らしい — Tuyệt vời (PDF106; CD-1 91)
+- `B06-06-s-82-98.md#114` ## 92. ずるい — Không công bằng, gian (PDF107; CD-1 92)
+- `B06-06-s-82-98.md#125` ## 93. 鋭いなあ — Tinh ý thật (PDF108; CD-1 93)
+- `B06-06-s-82-98.md#136` ## 94. 全然 — Chẳng chút nào (PDF109; CD-1 94)
+- `B06-06-s-82-98.md#147` ## 95. そういうわけにはいかない — Không thể làm như thế được (PDF110; CD-1 94)
+- `B06-06-s-82-98.md#158` ## 96. そう思わない？ — Cậu không nghĩ vậy sao? (PDF111; CD-1 95)
+- `B06-06-s-82-98.md#168` ## 97. そこをなんとか（お願いします） — Xin hãy cố thu xếp giúp (PDF112; CD-1 95)
+- `B06-06-s-82-98.md#178` ## 98. そっか — À ra vậy (PDF113; CD-1 96)
+- `B06-07-s-99-115.md#1` # さ — Biểu đạt 99–115 (PDF114–130)
+- `B06-07-s-99-115.md#4` ## 99. それじゃ — Vậy thì (PDF114; CD-1 96)
+- `B06-07-s-99-115.md#14` ## 100. それでか — Ra là vì thế (PDF115; CD-1 97)
+- `B06-07-s-99-115.md#24` ## 101. それどころじゃない — Đâu phải lúc cho chuyện ấy (PDF116; CD-1 97)
+- `B06-07-s-99-115.md#34` ## 102. それなりに — Ở mức tương xứng / cũng tạm được (PDF117; CD-1 98)
+- `B06-07-s-99-115.md#45` ## 103. それは痛い — Thế thì thiệt hại lớn / đau thật (PDF118; CD-1 98)
+- `B06-07-s-99-115.md#55` ## 104. それはそうだ — Đúng là vậy (PDF119; CD-1 99)
+- `B06-07-s-99-115.md#65` ## 105. それはそうと — Mà thôi, chuyện khác (PDF120; CD-1 99)
+- `B06-07-s-99-115.md#75` ## 106. それはないよ — Không thể thế được (PDF121; CD-2 1)
+- `B06-07-s-99-115.md#88` ## 107. それはよかった — Tốt quá rồi (PDF122; CD-2 2)
+- `B06-07-s-99-115.md#99` ## 108. それほどでもないです — Cũng không đến mức ấy đâu (PDF123; CD-2 3)
+- `B06-07-s-99-115.md#110` ## 109. それを聞いて安心した — Nghe vậy tôi yên tâm rồi (PDF124; CD-2 4)
+- `B06-07-s-99-115.md#124` ## 110. そんな感じです — Đại khái là như vậy (PDF125; CD-2 5)
+- `B06-07-s-99-115.md#134` ## 111. そんなに（あんまり）急かさないで — Đừng giục tôi nhiều thế (PDF126; CD-2 6)
+- `B06-07-s-99-115.md#144` ## 112. そんなばかな — Vô lý thế sao được (PDF127; CD-2 7)
+- `B06-07-s-99-115.md#154` ## 113. そんなはずはない — Không thể như vậy (PDF128; CD-2 8)
+- `B06-07-s-99-115.md#164` ## 114. そんな日もあるよ — Cũng có những ngày như thế (PDF129; CD-2 9)
+- `B06-07-s-99-115.md#177` ## 115. そんなもんだよ — Thực tế là vậy thôi (PDF130; CD-2 10)
+- `B06-08-t-116-137.md#1` # た — Biểu đạt 116–137 (PDF131–152)
+- `B06-08-t-116-137.md#4` ## 116. 大したことない — Không có gì ghê gớm (PDF131; CD-2 11)
+- `B06-08-t-116-137.md#15` ## 117. 大したもんだ — Đáng nể thật (PDF132; CD-2 12)
+- `B06-08-t-116-137.md#25` ## 118. 耐えられない — Không chịu nổi (PDF133; CD-2 13)
+- `B06-08-t-116-137.md#36` ## 119. だから言ったのに — Tôi đã bảo rồi mà (PDF134; CD-2 14)
+- `B06-08-t-116-137.md#49` ## 120. だよね — Đúng thế nhỉ (PDF135; CD-2 15)
+- `B06-08-t-116-137.md#59` ## 121. 頼りにしてます — Tôi trông cậy vào anh/chị (PDF136; CD-2 16)
+- `B06-08-t-116-137.md#70` ## 122. 違う — Không đúng / khác (PDF137; CD-2 17)
+- `B06-08-t-116-137.md#81` ## 123. 力が出ない — Không có sức / không có tinh thần (PDF138; CD-2 18)
+- `B06-08-t-116-137.md#91` ## 124. 調子はどう？ — Tình hình thế nào? (PDF139; CD-2 19)
+- `B06-08-t-116-137.md#102` ## 125. 冷たいなあ — Lạnh lùng quá (PDF140; CD-2 20)
+- `B06-08-t-116-137.md#112` ## 126. つらい — Khổ, vất vả (PDF141; CD-2 21)
+- `B06-08-t-116-137.md#122` ## 127. 同感です — Tôi đồng ý (PDF142; CD-2 22)
+- `B06-08-t-116-137.md#133` ## 128. 同情するよ — Tôi thông cảm với cậu (PDF143; CD-2 23)
+- `B06-08-t-116-137.md#144` ## 129. どうってことない — Không có gì đáng lo (PDF144; CD-2 24)
+- `B06-08-t-116-137.md#155` ## 130. どうでもいい — Sao cũng được / chẳng quan tâm (PDF145; CD-2 25)
+- `B06-08-t-116-137.md#165` ## 131. どうなってる？ — Chuyện này thế nào rồi? (PDF146; CD-2 26)
+- `B06-08-t-116-137.md#178` ## 132. どうやって？ — Bằng cách nào? (PDF147; CD-2 27)
+- `B06-08-t-116-137.md#191` ## 133. 道理で — Thảo nào (PDF148; CD-2 28)
+- `B06-08-t-116-137.md#201` ## 134. 特にない／特には — Không có gì đặc biệt (PDF149; CD-2 29)
+- `B06-08-t-116-137.md#212` ## 135. 特に問題ない — Không có vấn đề gì đáng kể (PDF150; CD-2 30)
+- `B06-08-t-116-137.md#223` ## 136. どっちもどっちだ — Hai bên cũng như nhau thôi (PDF151; CD-2 31)
+- `B06-08-t-116-137.md#236` ## 137. 取り返しがつかない — Không thể cứu vãn (PDF152; CD-2 32)
+- `B06-09-n-138-154.md#1` # N: mục 138–154
+- `B06-09-n-138-154.md#4` ## 138. なかなか — Khá lắm, hơn mong đợi (PDF153; CD-2 33)
+- `B06-09-n-138-154.md#14` ## 139. 泣きたくなる — Muốn khóc (PDF154; CD-2 34)
+- `B06-09-n-138-154.md#25` ## 140. 情けない — Thật đáng buồn, đáng xấu hổ (PDF155; CD-2 35)
+- `B06-09-n-138-154.md#36` ## 141. 納得いかない — Không thể chấp nhận, thấy vô lý (PDF156; CD-2 36)
+- `B06-09-n-138-154.md#47` ## 142. 何？ — Gì vậy? (PDF157; CD-2 37)
+- `B06-09-n-138-154.md#58` ## 143. 何が言いたいの？ — Rốt cuộc cậu muốn nói gì? (PDF158; CD-2 38)
+- `B06-09-n-138-154.md#71` ## 144. 何もなければいいけど — Mong là không có chuyện gì (PDF159; CD-2 39)
+- `B06-09-n-138-154.md#81` ## 145. 何やってるの？ — Cậu đang làm gì vậy? (PDF160; CD-2 40)
+- `B06-09-n-138-154.md#91` ## 146. 何よ／何だよ — Gì cơ? / Sao lại thế? (PDF161; CD-2 41)
+- `B06-09-n-138-154.md#103` ## 147. 何を考えているんですか — Anh/chị đang nghĩ gì vậy? (PDF162; CD-2 42)
+- `B06-09-n-138-154.md#117` ## 148. 悩む — Phân vân, khó quyết định (PDF163; CD-2 43)
+- `B06-09-n-138-154.md#128` ## 149. なんかあったの？ — Có chuyện gì à? (PDF164; CD-2 44)
+- `B06-09-n-138-154.md#142` ## 150. なんだかなあ — Cứ thấy sao ấy (PDF165; CD-2 45)
+- `B06-09-n-138-154.md#152` ## 151. 何て言ったらいいか — Không biết nói sao cho đúng (PDF166; CD-2 46)
+- `B06-09-n-138-154.md#166` ## 152. 何てことだ — Không thể tin nổi (PDF167; CD-2 47)
+- `B06-09-n-138-154.md#179` ## 153. 何でもない — Không có gì (PDF168; CD-2 48)
+- `B06-09-n-138-154.md#190` ## 154. 何とも言えない — Không biết nói sao, chưa thể khẳng định (PDF169; CD-2 49)
+- `B06-10-h-155-171.md#1` # H: mục 155–171
+- `B06-10-h-155-171.md#4` ## 155. ばかばかしい — Vô nghĩa, ngớ ngẩn (PDF170; CD-2 50)
+- `B06-10-h-155-171.md#15` ## 156. ばかみたい — Thật ngớ ngẩn (PDF171; CD-2 51)
+- `B06-10-h-155-171.md#29` ## 157. 恥ずかしい — Xấu hổ, ngượng (PDF172; CD-2 52)
+- `B06-10-h-155-171.md#39` ## 158. はっきりして — Nói cho rõ đi (PDF173; CD-2 53)
+- `B06-10-h-155-171.md#52` ## 159. 初耳です — Lần đầu tôi nghe chuyện này (PDF174; CD-2 54)
+- `B06-10-h-155-171.md#63` ## 160. 話が違う — Không giống điều đã nghe / thỏa thuận (PDF175; CD-2 55)
+- `B06-10-h-155-171.md#75` ## 161. ひどくない？ — Chẳng quá đáng sao? (PDF176; CD-2 56)
+- `B06-10-h-155-171.md#86` ## 162. 他人事じゃない — Không phải chuyện của riêng người khác (PDF177; CD-2 57)
+- `B06-10-h-155-171.md#96` ## 163. 一言多い — Nói thừa một câu (PDF178; CD-2 58)
+- `B06-10-h-155-171.md#109` ## 164. 凹む — Chán nản, suy sụp (PDF179; CD-2 59)
+- `B06-10-h-155-171.md#119` ## 165. 別に怒ってない — Đâu có giận đâu (PDF180; CD-2 60)
+- `B06-10-h-155-171.md#130` ## 166. 勉強になる — Học hỏi được nhiều, bổ ích (PDF181; CD-2 61)
+- `B06-10-h-155-171.md#141` ## 167. ぼちぼち — Cũng tàm tạm, đang dần khá lên (PDF182; CD-2 62)
+- `B06-10-h-155-171.md#152` ## 168. ほっとく — Cứ để yên, đừng lo (PDF183; CD-2 63)
+- `B06-10-h-155-171.md#162` ## 169. ほっとしました — Tôi thấy nhẹ cả người (PDF184; CD-2 64)
+- `B06-10-h-155-171.md#173` ## 170. ほどほどにね — Vừa phải thôi nhé (PDF185; CD-2 65)
+- `B06-10-h-155-171.md#183` ## 171. 本気で言ってるの？ — Cậu nói thật đấy à? (PDF186; CD-2 66)
+- `B06-11-m-172-194.md#1` # M: mục 172–194
+- `B06-11-m-172-194.md#4` ## 172. 任せた — Giao cho cậu đấy (PDF187; CD-2 67)
+- `B06-11-m-172-194.md#14` ## 173. またー — Lại thế nữa rồi (PDF188; CD-2 68)
+- `B06-11-m-172-194.md#28` ## 174. また頑張ろう — Lần sau lại cố gắng nhé (PDF189; CD-2 69)
+- `B06-11-m-172-194.md#42` ## 175. またにしよう — Để lần khác nhé (PDF190; CD-2 70)
+- `B06-11-m-172-194.md#56` ## 176. まだまだこれからです — Mọi chuyện mới chỉ bắt đầu (PDF191; CD-2 71)
+- `B06-11-m-172-194.md#67` ## 177. 間違ってたらごめんなさい — Xin lỗi nếu tôi nhầm (PDF192; CD-2 72)
+- `B06-11-m-172-194.md#78` ## 178. まったく — Thật tình! (PDF193; CD-2 73)
+- `B06-11-m-172-194.md#88` ## 179. まねできない — Không thể làm được như thế (PDF194; CD-2 74)
+- `B06-11-m-172-194.md#98` ## 180. 見損なった — Tôi đã đánh giá nhầm người (PDF195; CD-2 75)
+- `B06-11-m-172-194.md#108` ## 181. みっともない — Khó coi, mất mặt (PDF196; CD-2 76)
+- `B06-11-m-172-194.md#118` ## 182. 見てられない — Không nỡ nhìn (PDF197; CD-2 77)
+- `B06-11-m-172-194.md#128` ## 183. 見直した — Tôi nhìn nhận lại theo hướng tốt hơn (PDF198; CD-2 78)
+- `B06-11-m-172-194.md#138` ## 184. 難しいです — Khó đấy (PDF199; CD-2 79)
+- `B06-11-m-172-194.md#148` ## 185. 無責任だなあ — Thật vô trách nhiệm (PDF200; CD-2 80)
+- `B06-11-m-172-194.md#159` ## 186. 無茶です — Vô lý quá / không thể làm được (PDF201; CD-2 81)
+- `B06-11-m-172-194.md#168` ## 187. 無理しなくていい — Không cần cố quá (PDF202; CD-2 82)
+- `B06-11-m-172-194.md#179` ## 188. 迷惑です — Phiền quá / thật phiền phức (PDF203; CD-2 83)
+- `B06-11-m-172-194.md#190` ## 189. めんどくさい — Phiền, ngại làm (PDF204; CD-2 84)
+- `B06-11-m-172-194.md#200` ## 190. もう限界 — Đã đến giới hạn rồi (PDF205; CD-2 85)
+- `B06-11-m-172-194.md#211` ## 191. 申し分ない — Không chê vào đâu được (PDF206; CD-2 86)
+- `B06-11-m-172-194.md#221` ## 192. もうだめだ — Không cố tiếp được nữa (PDF207; CD-2 87)
+- `B06-11-m-172-194.md#234` ## 193. もっともです — Đúng như vậy (PDF208; CD-2 88)
+- `B06-11-m-172-194.md#247` ## 194. 物足りない — Chưa đủ, còn thiếu gì đó (PDF209; CD-2 89)
+- `B06-12-y-195-206.md#1` # Y: mục 195–206
+- `B06-12-y-195-206.md#4` ## 195. やった — Làm được rồi! (PDF210; CD-2 90)
+- `B06-12-y-195-206.md#14` ## 196. やっと一段落する — Cuối cùng cũng tạm xong một giai đoạn (PDF211; CD-2 91)
+- `B06-12-y-195-206.md#24` ## 197. やめとく — Thôi, không làm nữa (PDF212; CD-2 92)
+- `B06-12-y-195-206.md#37` ## 198. やるしかない — Chỉ còn cách làm thôi (PDF213; CD-2 93)
+- `B06-12-y-195-206.md#47` ## 199. やるね — Giỏi thật! (PDF214; CD-2 94)
+- `B06-12-y-195-206.md#57` ## 200. やればできる — Cố làm thì làm được (PDF215; CD-2 94)
+- `B06-12-y-195-206.md#68` ## 201. 許せない — Không thể tha thứ (PDF216; CD-2 95)
+- `B06-12-y-195-206.md#79` ## 202. よくあること — Chuyện thường xảy ra (PDF217; CD-2 95)
+- `B06-12-y-195-206.md#89` ## 203. よく言うよ — Cậu mà cũng nói được à (PDF218; CD-2 96)
+- `B06-12-y-195-206.md#100` ## 204. 読めない — Khó đoán trước (PDF219; CD-2 96)
+- `B06-12-y-195-206.md#110` ## 205. 余裕がある — Có thời gian/điều kiện thong thả (PDF220; CD-2 97)
+- `B06-12-y-195-206.md#127` ## 206. 余裕がない — Không có dư thời gian/điều kiện (PDF221; CD-2 97)
+- `B06-13-w-207-210.md#1` # W: mục 207–210
+- `B06-13-w-207-210.md#4` ## 207. わかる — Tôi hiểu (PDF222; CD-2 98)
+- `B06-13-w-207-210.md#15` ## 208. わざとらしい — Giả tạo, gượng ép (PDF223; CD-2 98)
+- `B06-13-w-207-210.md#25` ## 209. 悪いね（感謝の気持ち） — Ngại quá, cảm ơn cậu (PDF224; CD-2 99)
+- `B06-13-w-207-210.md#36` ## 210. 悪いね（謝罪の気持ち） — Xin lỗi nhé (PDF225; CD-2 99)
+- `B06-14-index.md#1` # さくいん（英語） — Chỉ mục theo khóa tiếng Anh (PDF226–231)
+- `B06-14-index.md#6` ## PDF226 — A–F
+- `B06-14-index.md#83` ## PDF227 — F–I
+- `B06-14-index.md#155` ## PDF228 — I–J
+- `B06-14-index.md#222` ## PDF229 — J–P
+- `B06-14-index.md#293` ## PDF230 — P–T
+- `B06-14-index.md#361` ## PDF231 — T–Y
+- `B06-15-colophon-back.md#1` # Thông tin xuất bản và bìa sau (PDF232–233)
+- `B06-15-colophon-back.md#4` ## Thông tin ấn bản (PDF232)
+- `B06-15-colophon-back.md#16` ## Bìa sau (PDF233)
+
+## B07 — すぐに使える 日本語会話 超ミニフレーズ200
+
+- `B07-00-front.md#1` # すぐに使える 日本語会話 超ミニフレーズ200
+- `B07-00-front.md#4` ## Bìa và thông tin sách (PDF1)
+- `B07-00-front.md#9` ## はじめに — Lời đầu (PDF2–3)
+- `B07-00-front.md#18` ## 目次 — Mục lục (PDF4–9)
+- `B07-00-front.md#41` ## 学習の流れ — Trình tự học (PDF10–11)
+- `B07-00-front.md#53` ## この本の使い方 — Cách đọc trang bài (PDF12–13)
+- `B07-00-front.md#62` ## CD の使い方 — Cách dùng CD (PDF14)
+- `B07-01-part1-surprise.md#1` # Part 1 — コミュニケーションを豊かにする一言フレーズ
+- `B07-01-part1-surprise.md#4` ## Những câu ngắn làm phong phú giao tiếp (PDF15)
+- `B07-01-part1-surprise.md#9` ## 1. おお。／おっ。 — Ồ! (PDF16; CD-1 1)
+- `B07-01-part1-surprise.md#20` ## 2. おかしいなあ。 — Lạ thật (PDF17; CD-1 2)
+- `B07-01-part1-surprise.md#33` ## 3. がっかりだよ。 — Thất vọng quá (PDF18; CD-1 3)
+- `B07-01-part1-surprise.md#46` ## 4. さすがですね。 — Quả là giỏi như mong đợi (PDF19; CD-1 4)
+- `B07-01-part1-surprise.md#59` ## 5. 信じられない！ — Không thể tin được! (PDF20; CD-1 5)
+- `B07-01-part1-surprise.md#72` ## 6. そうかなあ。 — Không biết có đúng thế không (PDF21; CD-1 6)
+- `B07-01-part1-surprise.md#85` ## 7. どうしよう。 — Làm sao đây? (PDF22; CD-1 7)
+- `B07-01-part1-surprise.md#98` ## 8. 何て言っていいか、わからない。 — Không biết nói gì cho phải (PDF23; CD-1 8)
+- `B07-01-part1-surprise.md#107` ## 9. まさか。 — Không thể nào! (PDF24; CD-1 9)
+- `B07-01-part1-surprise.md#121` ## 10. まじで？／まじ？ — Thật đấy à? (PDF25; CD-1 10)
+- `B07-01-part1-surprise.md#134` ## 11. また？ — Lại nữa à? (PDF26; CD-1 11)
+- `B07-01-part1-surprise.md#147` ## 12. よくわかんない。 — Tôi không rõ lắm (PDF27; CD-1 12)
+- `B07-01-part1-surprise.md#160` ## 13. わけがわからない。 — Chẳng hiểu ra sao cả (PDF28; CD-1 13)
+- `B07-02-part1-questions.md#1` # Part 1 · Section 2 — 質問や確認: Hỏi và xác nhận
+- `B07-02-part1-questions.md#4` ## 14. ～はどう？ — … thì sao? (PDF29; CD-1 14)
+- `B07-02-part1-questions.md#16` ## 15. いいんですか。／いいの？ — Thật sự được sao? (PDF30; CD-1 15)
+- `B07-02-part1-questions.md#30` ## 16. ちょっとお伺いしたいんですが。 — Xin hỏi một chút ạ (PDF31; CD-1 16)
+- `B07-02-part1-questions.md#47` ## 17. できた？ — Xong chưa? (PDF32; CD-1 17)
+- `B07-02-part1-questions.md#61` ## 18. どういうことですか？ — Nghĩa là sao ạ? (PDF33; CD-1 18)
+- `B07-02-part1-questions.md#76` ## 19. どうしたんですか？ — Có chuyện gì vậy ạ? (PDF34; CD-1 19)
+- `B07-02-part1-questions.md#91` ## 20. どちらの田中様ですか？ — Xin hỏi anh/chị Tanaka thuộc bên nào ạ? (PDF35; CD-1 20)
+- `B07-02-part1-questions.md#104` ## 21. 何、それ？ — Gì thế? (PDF36; CD-1 21)
+- `B07-03-part1-feelings.md#1` # Part 1 — Comment and feeling: Cảm nhận và bày tỏ cảm xúc (PDF37–66)
+- `B07-03-part1-feelings.md#4` ## 22. 頭が痛いよ。 — Đau đầu quá (PDF37; CD-1 22)
+- `B07-03-part1-feelings.md#18` ## 23. 危なかった。 — Suýt nữa thì nguy (PDF38; CD-1 23)
+- `B07-03-part1-feelings.md#32` ## 24. ありがたいです。 — Thật đáng cảm kích (PDF39; CD-1 24)
+- `B07-03-part1-feelings.md#44` ## 25. 惜しかったね。 — Tiếc thật nhỉ (PDF40; CD-1 25)
+- `B07-03-part1-feelings.md#58` ## 26. お互い様です。 — Chúng ta đều vậy, đừng ngại (PDF41; CD-1 26)
+- `B07-03-part1-feelings.md#72` ## 27. 体がだるい。 — Người uể oải (PDF42; CD-1 27)
+- `B07-03-part1-feelings.md#86` ## 28. かわいそうに。 — Tội nghiệp quá (PDF43; CD-1 28)
+- `B07-03-part1-feelings.md#97` ## 29. 気分が悪い。 — Tôi thấy không khỏe / Tôi thấy khó chịu (PDF44; CD-1 29)
+- `B07-03-part1-feelings.md#108` ## 30. ぎりぎり間に合った。 — Vừa kịp sát giờ (PDF45; CD-1 30)
+- `B07-03-part1-feelings.md#122` ## 31. 困ったなあ。 — Khó xử quá (PDF46; CD-1 31)
+- `B07-03-part1-feelings.md#137` ## 32. しまった！ — Chết rồi! (PDF47; CD-1 32)
+- `B07-03-part1-feelings.md#148` ## 33. せっかくなのに。 — Uổng công quá (PDF48; CD-1 33)
+- `B07-03-part1-feelings.md#164` ## 34. それは残念でしたね。 — Nghe vậy thật tiếc (PDF49; CD-1 34)
+- `B07-03-part1-feelings.md#178` ## 35. それはまずいよ。 — Thế thì không ổn đâu (PDF50; CD-1 35)
+- `B07-03-part1-feelings.md#192` ## 36. そんなこと（は）ないですよ。 — Đâu đến mức thế đâu (PDF51; CD-1 36)
+- `B07-03-part1-feelings.md#203` ## 37. 大変ですね。 — Vất vả quá nhỉ (PDF52; CD-1 37)
+- `B07-03-part1-feelings.md#218` ## 38. 助かります。 — Thế thì giúp tôi nhiều lắm (PDF53; CD-1 38)
+- `B07-03-part1-feelings.md#233` ## 39. 楽しみです。 — Tôi mong chờ lắm (PDF54; CD-1 39)
+- `B07-03-part1-feelings.md#247` ## 40. だめだ。 — Hết cách rồi (PDF55; CD-1 40)
+- `B07-03-part1-feelings.md#262` ## 41. ついてないなあ。 — Xui quá (PDF56; CD-1 41)
+- `B07-03-part1-feelings.md#276` ## 42. 疲れました。 — Tôi mệt rồi (PDF57; CD-1 42)
+- `B07-03-part1-feelings.md#290` ## 43. なんだ。 — Ồ, hóa ra là vậy (PDF58; CD-1 43)
+- `B07-03-part1-feelings.md#304` ## 44. なんとなく。 — Không rõ vì sao / tự nhiên thấy vậy (PDF59; CD-1 44)
+- `B07-03-part1-feelings.md#315` ## 45. ～はちょっと…。 — ... thì hơi khó (PDF60; CD-1 45)
+- `B07-03-part1-feelings.md#329` ## 46. ひどい話ですね。 — Chuyện tệ quá nhỉ (PDF61; CD-1 46)
+- `B07-03-part1-feelings.md#343` ## 47. 平気です。 — Tôi không sao (PDF62; CD-1 47)
+- `B07-03-part1-feelings.md#357` ## 48. まあね。 — Cũng có thể nói vậy (PDF63; CD-1 48)
+- `B07-03-part1-feelings.md#368` ## 49. まいったなあ。 — Phiền thật đấy (PDF64; CD-1 49)
+- `B07-03-part1-feelings.md#382` ## 50. やっぱり。 — Đúng như tôi nghĩ / nghĩ đi nghĩ lại thì (PDF65; CD-1 50)
+- `B07-03-part1-feelings.md#396` ## 51. やばい。 — Nguy rồi (PDF66; CD-1 51)
+- `B07-04-part1-explanation.md#1` # Part 1 — Explanation: Giải thích (PDF67–74)
+- `B07-04-part1-explanation.md#4` ## 52. 相変わらずです。 — Vẫn như mọi khi (PDF67; CD-1 52)
+- `B07-04-part1-explanation.md#19` ## 53. うっかりしてました。 — Tôi sơ ý quên mất (PDF68; CD-1 53)
+- `B07-04-part1-explanation.md#34` ## 54. 運がよかったです。 — May mắn thật (PDF69; CD-1 54)
+- `B07-04-part1-explanation.md#51` ## 55. 冗談だよ。 — Tôi đùa thôi (PDF70; CD-1 55)
+- `B07-04-part1-explanation.md#65` ## 56. せっかくだから — Nhân dịp hiếm có này (PDF71; CD-1 56)
+- `B07-04-part1-explanation.md#80` ## 57. そんなつもりじゃなかったんです。 — Tôi không có ý đó (PDF72; CD-1 57)
+- `B07-04-part1-explanation.md#91` ## 58. たまたまです。 — Chỉ tình cờ thôi (PDF73; CD-1 58)
+- `B07-04-part1-explanation.md#104` ## 59. 私のせいです。 — Đó là lỗi của tôi (PDF74; CD-1 59)
+- `B07-05-part1-evaluation.md#1` # Part 1 — Evaluation and judgment: Đánh giá và nhận định (PDF75–98)
+- `B07-05-part1-evaluation.md#4` ## 60. いいですね。 — Hay đấy nhỉ (PDF75; CD-1 60)
+- `B07-05-part1-evaluation.md#16` ## 61. いいんじゃないですか？ — Tôi nghĩ cũng được đấy (PDF76; CD-1 61)
+- `B07-05-part1-evaluation.md#30` ## 62. いまいちです。 — Chưa được như mong đợi (PDF77; CD-1 62)
+- `B07-05-part1-evaluation.md#41` ## 63. お任せします。 — Tôi để anh/chị quyết định (PDF78; CD-1 63)
+- `B07-05-part1-evaluation.md#52` ## 64. しかたない。 — Đành vậy thôi (PDF79; CD-1 64)
+- `B07-05-part1-evaluation.md#64` ## 65. しょうがない。 — Biết sao được (PDF80; CD-1 65)
+- `B07-05-part1-evaluation.md#76` ## 66. すごい。 — Ghê thật! / Giỏi quá! (PDF81; CD-1 66)
+- `B07-05-part1-evaluation.md#87` ## 67. そうでもないよ。 — Cũng không hẳn đâu (PDF82; CD-1 67)
+- `B07-05-part1-evaluation.md#98` ## 68. 確かに。 — Đúng thật (PDF83; CD-1 68)
+- `B07-05-part1-evaluation.md#109` ## 69. ちょうどいいです。 — Vừa đúng lúc / vừa vặn (PDF84; CD-1 69)
+- `B07-05-part1-evaluation.md#120` ## 70. 当然です。 — Đương nhiên rồi (PDF85; CD-1 70)
+- `B07-05-part1-evaluation.md#130` ## 71. どちらかと言うと — Nếu phải nói thì / thiên về (PDF86; CD-1 71)
+- `B07-05-part1-evaluation.md#144` ## 72. なかなか難しいですね。 — Khá là khó nhỉ (PDF87; CD-1 72)
+- `B07-05-part1-evaluation.md#155` ## 73. 微妙です。 — Khó nói lắm (PDF88; CD-1 73)
+- `B07-05-part1-evaluation.md#166` ## 74. ひょっとしたら — Biết đâu (PDF89; CD-1 74)
+- `B07-05-part1-evaluation.md#180` ## 75. まあまあです。 — Cũng tạm được (PDF90; CD-1 75)
+- `B07-05-part1-evaluation.md#191` ## 76. 間違いない。 — Chắc chắn, không sai đâu (PDF91; CD-1 76)
+- `B07-05-part1-evaluation.md#205` ## 77. 無理です。 — Không thể được (PDF92; CD-1 77)
+- `B07-05-part1-evaluation.md#219` ## 78. もったいない。 — Phí quá (PDF93; CD-1 78)
+- `B07-05-part1-evaluation.md#231` ## 79. 問題ない。 — Không vấn đề gì (PDF94; CD-1 79)
+- `B07-05-part1-evaluation.md#246` ## 80. よくやった。 — Làm tốt lắm (PDF95; CD-1 80)
+- `B07-05-part1-evaluation.md#257` ## 81. 了解です。 — Rõ rồi (PDF96; CD-1 81)
+- `B07-05-part1-evaluation.md#271` ## 82. わかりました。 — Tôi hiểu rồi (PDF97; CD-1 82)
+- `B07-05-part1-evaluation.md#285` ## 83. 悪くないと思う。 — Tôi nghĩ cũng không tệ (PDF98; CD-1 83)
+- `B07-06-part1-requests.md#1` # Part 1 — Request: Lời nhờ và yêu cầu (PDF99–107)
+- `B07-06-part1-requests.md#4` ## 84. ～でお願いします。 — Xin cho theo cách/điều kiện... (PDF99; CD-1 84)
+- `B07-06-part1-requests.md#18` ## 85. お願いします。 — Xin nhờ anh/chị (PDF100; CD-1 85)
+- `B07-06-part1-requests.md#30` ## 86. ご一緒して（も）いいですか。 — Tôi đi cùng được không ạ? (PDF101; CD-1 86)
+- `B07-06-part1-requests.md#44` ## 87. 頼みます。 — Nhờ anh/chị đấy (PDF102; CD-1 87)
+- `B07-06-part1-requests.md#58` ## 88. ちょっといいですか？ — Cho tôi xin một chút được không? (PDF103; CD-1 88)
+- `B07-06-part1-requests.md#70` ## 89. ちょっと待ってください。 — Xin chờ một chút (PDF104; CD-1 89)
+- `B07-06-part1-requests.md#81` ## 90. できれば。 — Nếu có thể (PDF105; CD-1 90)
+- `B07-06-part1-requests.md#96` ## 91. 悪いんだけど — Phiền cậu, nhưng... (PDF106; CD-1 91)
+- `B07-06-part1-requests.md#110` ## 92. 何とかしてください。 — Xin hãy tìm cách giúp (PDF107; CD-1 92)
+- `B07-07-part1-will.md#1` # Part 1 — Will and attitude: Ý định và thái độ (PDF108–133)
+- `B07-07-part1-will.md#4` ## 93. いいです。（No thanks） — Thôi, không cần đâu (PDF108; CD-1 93)
+- `B07-07-part1-will.md#15` ## 94. 遠慮しときます。 — Tôi xin phép không tham gia (PDF109; CD-1 94)
+- `B07-07-part1-will.md#29` ## 95. 恐縮です。 — Tôi thật áy náy / xin cảm ơn ạ (PDF110; CD-1 95)
+- `B07-07-part1-will.md#43` ## 96. 今日は私におごらせてください。 — Hôm nay để tôi mời (PDF111; CD-1 96)
+- `B07-07-part1-will.md#57` ## 97. 気をつけます。 — Tôi sẽ chú ý hơn (PDF112; CD-1 97)
+- `B07-07-part1-will.md#71` ## 98. 結構です。（No） — Không, xin cảm ơn (PDF113; CD-1 98)
+- `B07-07-part1-will.md#85` ## 99. 結構です。（Yes） — Được ạ, như thế ổn (PDF114; CD-1 99)
+- `B07-07-part1-will.md#99` ## 100. また今度でいい。 — Để lần sau cũng được (PDF115)
+- `B07-07-part1-will.md#113` ## 101. 賛成。 — Tôi đồng ý (PDF116; CD-2 01)
+- `B07-07-part1-will.md#127` ## 102. そのままで結構です。 — Cứ để như vậy là được (PDF117; CD-2 02)
+- `B07-07-part1-will.md#138` ## 103. 大丈夫です。 — Không sao / ổn (PDF118; CD-2 03)
+- `B07-07-part1-will.md#153` ## 104. 大体でいいです。 — Chỉ cần đại khái thôi (PDF119; CD-2 04)
+- `B07-07-part1-will.md#165` ## 105. ちょっと考えます。 — Tôi sẽ suy nghĩ thêm (PDF120; CD-2 05)
+- `B07-07-part1-will.md#179` ## 106. 適当でいいです。 — Chỉ cần vừa đủ là được (PDF121; CD-2 06)
+- `B07-07-part1-will.md#193` ## 107. どっちでもいい。 — Bên nào cũng được (PDF122; CD-2 07)
+- `B07-07-part1-will.md#204` ## 108. とりあえず — Trước mắt thì (PDF123; CD-2 08)
+- `B07-07-part1-will.md#215` ## 109. とんでもないです。 — Không hề như vậy ạ (PDF124; CD-2 09)
+- `B07-07-part1-will.md#226` ## 110. 念のため — Để chắc ăn (PDF125; CD-2 10)
+- `B07-07-part1-will.md#240` ## 111. 反対。 — Tôi phản đối (PDF126; CD-2 11)
+- `B07-07-part1-will.md#251` ## 112. 別に。 — Cũng không hẳn / không có gì (PDF127; CD-2 12)
+- `B07-07-part1-will.md#262` ## 113. 別にいいんじゃない？ — Tôi thấy cũng được mà? (PDF128; CD-2 13)
+- `B07-07-part1-will.md#272` ## 114. まあ、いいか。 — Thôi, cũng được (PDF129; CD-2 14)
+- `B07-07-part1-will.md#284` ## 115. 任せてください。 — Cứ giao cho tôi (PDF130; CD-2 15)
+- `B07-07-part1-will.md#295` ## 116. もういいよ。 — Đủ rồi / thôi được rồi (PDF131; CD-2 16)
+- `B07-07-part1-will.md#306` ## 117. もちろんです。 — Tất nhiên rồi (PDF132; CD-2 17)
+- `B07-07-part1-will.md#317` ## 118. 私はいいです。 — Tôi xin thôi / tôi không cần (PDF133; CD-2 18)
+- `B07-08-part1-advice.md#1` # Part 1 — Lời khuyên và nỗi lo (PDF134–146; mục119–130)
+- `B07-08-part1-advice.md#4` ## 119. うまくいくといいですね。 — Mong mọi việc suôn sẻ (PDF134; CD-2 19)
+- `B07-08-part1-advice.md#15` ## 120. おすすめです。 — Tôi gợi ý món/cách này (PDF135; CD-2 20)
+- `B07-08-part1-advice.md#29` ## 121. 落ち着いて。 — Bình tĩnh nào (PDF136; CD-2 21)
+- `B07-08-part1-advice.md#44` ## 122. 考えすぎだよ。 — Cậu nghĩ nhiều quá (PDF137; CD-2 22)
+- `B07-08-part1-advice.md#60` ## 123. 頑張ってください。 — Hãy cố gắng nhé (PDF138; CD-2 23)
+- `B07-08-part1-advice.md#71` ## 124. 気にしないでください。 — Xin đừng bận tâm (PDF139; CD-2 24)
+- `B07-08-part1-advice.md#85` ## 125. 元気出してください。 — Hãy phấn chấn lên (PDF140; CD-2 25)
+- `B07-08-part1-advice.md#98` ## 126. しっかりして。 — Tỉnh táo lên / vững vàng lên (PDF141; CD-2 26)
+- `B07-08-part1-advice.md#111` ## 127. 心配しなくていいよ。 — Đừng lo (PDF142; CD-2 27)
+- `B07-08-part1-advice.md#125` ## 128. 何かあったら言ってください。 — Có chuyện gì thì cứ nói với tôi (PDF143; CD-2 28)
+- `B07-08-part1-advice.md#138` ## 129. よかったね。 — Mừng cho cậu quá (PDF144; CD-2 29)
+- `B07-08-part1-advice.md#152` ## 130. よかったらどうぞ。 — Nếu thích, xin cứ dùng / mời (PDF145; CD-2 30)
+- `B07-08-part1-advice.md#166` ## Lời ngắn bày tỏ tình cảm — 短い一言に気持ちを表す (PDF146)
+- `B07-09-part2-response.md#1` # Part 2 — Những câu quen dùng làm phong phú giao tiếp (PDF147–163)
+- `B07-09-part2-response.md#6` ## Mở Part 2 (PDF147)
+- `B07-09-part2-response.md#11` ## 131. いえいえ。 — Không đâu / không phải vậy (PDF148; CD-2 31)
+- `B07-09-part2-response.md#25` ## 132. うーん。 — Ừm… (PDF149; CD-2 32)
+- `B07-09-part2-response.md#36` ## 133. うそ。 — Thật không? / đùa đấy à? (PDF150; CD-2 33)
+- `B07-09-part2-response.md#50` ## 134. えー。 — Thật á? / ơ? (PDF151; CD-2 34)
+- `B07-09-part2-response.md#61` ## 135. そう？ — Thật à? / vậy sao? (PDF152; CD-2 35)
+- `B07-09-part2-response.md#71` ## 136. そうそう。 — Đúng rồi, đúng rồi (PDF153; CD-2 36)
+- `B07-09-part2-response.md#82` ## 137. そうですね。 — Để tôi nghĩ xem (PDF154; CD-2 37)
+- `B07-09-part2-response.md#93` ## 138. そうですね。 — Đúng vậy nhỉ (PDF155; CD-2 38)
+- `B07-09-part2-response.md#103` ## 139. そうなんだ。 — Ra vậy (PDF156; CD-2 39)
+- `B07-09-part2-response.md#118` ## 140. その通りです。 — Chính xác như vậy (PDF157; CD-2 40)
+- `B07-09-part2-response.md#132` ## 141. でしょ？ — Thấy chưa? / đúng không? (PDF158; CD-2 41)
+- `B07-09-part2-response.md#143` ## 142. なるほど。 — Ra là vậy (PDF159; CD-2 42)
+- `B07-09-part2-response.md#157` ## 143. 話は変わりますが — Nhân đổi chủ đề (PDF160; CD-2 43)
+- `B07-09-part2-response.md#173` ## 144. へー。 — Ồ, thật vậy à (PDF161; CD-2 44)
+- `B07-09-part2-response.md#185` ## 145. ほら。 — Nhìn kìa / thấy chưa (PDF162; CD-2 45)
+- `B07-09-part2-response.md#199` ## 146. もう一度いいですか。 — Xin nhắc lại một lần nữa được không? (PDF163; CD-2 46)
+- `B07-10-part2-routines.md#1` # Part 2 — Câu nói thường ngày (PDF164–217; mục147–200)
+- `B07-10-part2-routines.md#6` ## 147. いただきます。 — Xin nhận / xin dùng bữa (PDF164; CD-2 47)
+- `B07-10-part2-routines.md#20` ## 148. 行ってきます。 — Tôi đi đây (PDF165; CD-2 48)
+- `B07-10-part2-routines.md#34` ## 149. いつもお世話になっております。 — Cảm ơn anh/chị luôn giúp đỡ (PDF166; CD-2 49)
+- `B07-10-part2-routines.md#48` ## 150. いらっしゃい。／いらっしゃいませ。 — Chào mừng, mời vào (PDF167; CD-2 50)
+- `B07-10-part2-routines.md#60` ## 151. 遠慮しないでください。 — Xin đừng ngại (PDF168; CD-2 51)
+- `B07-10-part2-routines.md#75` ## 152. お帰りなさい。 — Mừng anh/chị về (PDF169; CD-2 52)
+- `B07-10-part2-routines.md#86` ## 153. おかげさまで。 — Nhờ anh/chị giúp đỡ (PDF170; CD-2 53)
+- `B07-10-part2-routines.md#99` ## 154. どうぞ、おかまいなく。 — Xin đừng bận tâm đến tôi (PDF171; CD-2 54)
+- `B07-10-part2-routines.md#111` ## 155. お元気で。 — Giữ gìn sức khỏe nhé (PDF172; CD-2 55)
+- `B07-10-part2-routines.md#128` ## 156. お先に失礼します。 — Tôi xin phép đi trước (PDF173; CD-2 56)
+- `B07-10-part2-routines.md#139` ## 157. お邪魔します。 — Xin phép làm phiền / xin vào nhà (PDF174; CD-2 57)
+- `B07-10-part2-routines.md#155` ## 158. お世話さまです。 — Cảm ơn anh/chị luôn giúp đỡ (PDF175; CD-2 58)
+- `B07-10-part2-routines.md#164` ## 159. お世話になります。 — Mong được anh/chị giúp đỡ (PDF176; CD-2 59)
+- `B07-10-part2-routines.md#178` ## 160. お大事に。 — Chúc anh/chị mau khỏe (PDF177; CD-2 60)
+- `B07-10-part2-routines.md#192` ## 161. お疲れ様です。 — Anh/chị vất vả rồi (PDF178; CD-2 61)
+- `B07-10-part2-routines.md#204` ## 162. お待たせしました。 — Xin lỗi đã để anh/chị đợi (PDF179; CD-2 62)
+- `B07-10-part2-routines.md#217` ## 163. おめでとうございます。 — Xin chúc mừng (PDF180; CD-2 63)
+- `B07-10-part2-routines.md#231` ## 164. お気の毒です。 — Tôi rất tiếc khi nghe vậy (PDF181; CD-2 64)
+- `B07-10-part2-routines.md#244` ## 165. かしこまりました。 — Vâng, tôi đã hiểu (PDF182; CD-2 65)
+- `B07-10-part2-routines.md#255` ## 166. 変わりないですか。 — Dạo này vẫn ổn chứ? (PDF183; CD-2 66)
+- `B07-10-part2-routines.md#268` ## 167. 乾杯。 — Cạn ly! (PDF184; CD-2 67)
+- `B07-10-part2-routines.md#282` ## 168. 気を付けてください。 — Xin cẩn thận (PDF185; CD-2 68)
+- `B07-10-part2-routines.md#296` ## 169. ご苦労様です。 — Cảm ơn đã vất vả (PDF186; CD-2 69)
+- `B07-10-part2-routines.md#310` ## 170. ごちそうさまです。 — Cảm ơn bữa ăn (PDF187; CD-2 70)
+- `B07-10-part2-routines.md#319` ## 171. こちらこそ。 — Chính tôi mới phải nói vậy (PDF188; CD-2 71)
+- `B07-10-part2-routines.md#333` ## 172. ご迷惑をおかけしました。 — Xin lỗi đã gây phiền phức (PDF189; CD-2 72)
+- `B07-10-part2-routines.md#347` ## 173. ごめんください。 — Có ai ở nhà không ạ? (PDF190; CD-2 73)
+- `B07-10-part2-routines.md#360` ## 174. ご面倒をおかけします。 — Xin lỗi vì làm phiền anh/chị (PDF191; CD-2 74)
+- `B07-10-part2-routines.md#373` ## 175. 今度遊びに来てください。 — Lần tới hãy đến chơi nhé (PDF192; CD-2 75)
+- `B07-10-part2-routines.md#387` ## 176. ご親切にありがとうございます。 — Cảm ơn anh/chị đã tử tế giúp đỡ (PDF193; CD-2 76)
+- `B07-10-part2-routines.md#400` ## 177. 最近どうですか。 — Dạo này thế nào? (PDF194; CD-2 77)
+- `B07-10-part2-routines.md#417` ## 178. 失礼しました。 — Tôi xin lỗi vì đã thất lễ (PDF195; CD-2 78)
+- `B07-10-part2-routines.md#431` ## 179. 失礼します。 — Xin phép / xin làm phiền (PDF196; CD-2 79)
+- `B07-10-part2-routines.md#445` ## 180. 失礼ですが…。 — Xin lỗi, nhưng… (PDF197; CD-2 80)
+- `B07-10-part2-routines.md#457` ## 181. じゃ、また。 — Vậy hẹn gặp lại (PDF198; CD-2 81)
+- `B07-10-part2-routines.md#471` ## 182. 承知しました。 — Vâng, tôi đã hiểu (PDF199; CD-2 82)
+- `B07-10-part2-routines.md#480` ## 183. すみません — Xin lỗi / cảm ơn / cho hỏi (PDF200; CD-2 83)
+- `B07-10-part2-routines.md#494` ## 184. 先日はありがとうございました。 — Cảm ơn anh/chị về hôm trước (PDF201; CD-2 84)
+- `B07-10-part2-routines.md#508` ## 185. そろそろ失礼します — Đã đến lúc tôi xin phép về (PDF202; CD-2 85)
+- `B07-10-part2-routines.md#518` ## 186. ただいま。 — Tôi về rồi / ngay bây giờ (PDF203; CD-2 86)
+- `B07-10-part2-routines.md#527` ## 187. つまらないものですが。 — Có chút quà mọn xin tặng (PDF204; CD-2 87)
+- `B07-10-part2-routines.md#540` ## 188. 遠慮なく。 — Cứ tự nhiên, đừng khách sáo (PDF205; CD-2 88)
+- `B07-10-part2-routines.md#555` ## 189. どういたしまして。 — Không có gì (PDF206; CD-2 89)
+- `B07-10-part2-routines.md#565` ## 190. どうぞ。 — Xin mời / cứ dùng (PDF207; CD-2 90)
+- `B07-10-part2-routines.md#575` ## 191. どうも。 — Chào / cảm ơn (PDF208; CD-2 91)
+- `B07-10-part2-routines.md#586` ## 192. ～のおかげです。 — Đó là nhờ… (PDF209; CD-2 92)
+- `B07-10-part2-routines.md#600` ## 193. また誘ってください。 — Lần sau lại mời tôi nhé (PDF210; CD-2 93)
+- `B07-10-part2-routines.md#614` ## 194. 申し訳ありません。 — Tôi thành thật xin lỗi (PDF211; CD-2 94)
+- `B07-10-part2-routines.md#627` ## 195. ゆっくりしていってください。 — Xin cứ ở lại thư thả (PDF212; CD-2 95)
+- `B07-10-part2-routines.md#640` ## 196. よい週末を。／よいお年を。 — Chúc cuối tuần vui vẻ / chúc năm mới tốt lành (PDF213; CD-2 96)
+- `B07-10-part2-routines.md#654` ## 197. 喜んで。 — Rất sẵn lòng (PDF214; CD-2 97)
+- `B07-10-part2-routines.md#665` ## 198. よろしくお伝えください。 — Xin gửi lời thăm giúp tôi (PDF215; CD-2 98)
+- `B07-10-part2-routines.md#678` ## 199. よろしくお願いします。 — Rất mong được anh/chị giúp đỡ (PDF216; CD-2 99)
+- `B07-10-part2-routines.md#692` ## 200. わざわざすみません。 — Xin lỗi đã làm anh/chị mất công (PDF217)
+- `B07-11-index.md#1` # さくいん — Chỉ mục (PDF218–223)
+- `B07-11-index.md#4` ## さくいん（英語） — Chỉ mục tiếng Anh, PDF218
+- `B07-11-index.md#88` ## さくいん（英語） — Chỉ mục tiếng Anh, PDF219
+- `B07-11-index.md#174` ## さくいん（英語） — Chỉ mục tiếng Anh, PDF220
+- `B07-11-index.md#264` ## さくいん（日本語） — Chỉ mục tiếng Nhật, PDF221
+- `B07-11-index.md#353` ## さくいん（日本語） — Chỉ mục tiếng Nhật, PDF222
+- `B07-11-index.md#442` ## さくいん（日本語） — Chỉ mục tiếng Nhật, PDF223
+- `B07-12-colophon-back.md#1` # Ấn bản và bìa sau (PDF224–225)
+- `B07-12-colophon-back.md#4` ## Thông tin xuất bản (PDF224)
+- `B07-12-colophon-back.md#23` ## Bìa sau (PDF225)
+
+## B08 — どんどん話せる！日本語会話フレーズ大特訓 必須700
+
+- `B08-00-front.md#1` # どんどん話せる！日本語会話フレーズ大特訓 必須700
+- `B08-00-front.md#4` ## Bìa và cách dùng âm thanh (PDF1)
+- `B08-00-front.md#9` ## Lời mở đầu còn trong PDF (PDF2, trang in 3)
+- `B08-00-front.md#16` ## Mục lục (PDF3–8; số trang in trong sách)
+- `B08-00-front.md#130` ## 学習の流れ — Quy trình học (PDF9–10)
+- `B08-00-front.md#141` ## Cách dùng trang bài học (PDF11–12)
+- `B08-00-front.md#170` ## CDの使い方 — Cách dùng CD (PDF13)
+- `B08-01-part1-shoho.md#1` # Part 1 — 初歩編 / Bước đầu
+- `B08-01-part1-shoho.md#4` ## Mở phần (PDF14)
+- `B08-01-part1-shoho.md#9` ## 01 あいさつ — Chào hỏi (trang in 16–17)
+- `B08-01-part1-shoho.md#40` ## 02 生活 — Sinh hoạt hằng ngày (trang in 18–19)
+- `B08-01-part1-shoho.md#71` ## 03 緊急 — Trường hợp khẩn cấp (trang in 20–21)
+- `B08-01-part1-shoho.md#102` ## Lời nói tự nhiên trong tiếng Nhật 1 (PDF21, trang in 22)
+- `B08-02-part2-kinou.md#1` # Part 2 — 機能編 / Chức năng giao tiếp
+- `B08-02-part2-kinou.md#4` ## Mở phần (PDF22)
+- `B08-02-part2-kinou.md#9` ## 01 あいさつをする — Chào hỏi (trang in 24–25)
+- `B08-02-part2-kinou.md#40` ## 02 自己紹介をする — Tự giới thiệu (trang in 26–27)
+- `B08-02-part2-kinou.md#69` ## 03 お礼を言う・謝る — Cảm ơn và xin lỗi (trang in 28–29)
+- `B08-02-part2-kinou.md#100` ## 04 依頼する — Nhờ vả (trang in 30–31)
+- `B08-02-part2-kinou.md#129` ## 05 誘う — Mời (trang in 32–33)
+- `B08-02-part2-kinou.md#160` ## 06 誘いを受ける・断る — Nhận và từ chối lời mời (trang in 34–35)
+- `B08-02-part2-kinou.md#189` ## 07 質問する — Đặt câu hỏi (trang in 36–37)
+- `B08-02-part2-kinou.md#220` ## 08 提案する — Đề xuất (trang in 38–39)
+- `B08-02-part2-kinou.md#249` ## 09 申し出る — Đề nghị giúp đỡ (trang in 40–41)
+- `B08-02-part2-kinou.md#278` ## 10 心配する — Bày tỏ quan tâm (trang in 42–43)
+- `B08-02-part2-kinou.md#309` ## 11 励ます — Động viên (trang in 44–45)
+- `B08-02-part2-kinou.md#338` ## 12 感想を言う — Nói cảm tưởng (trang in 46–47)
+- `B08-02-part2-kinou.md#369` ## 13 不満・苦情を言う — Nêu bất mãn, phàn nàn (trang in 48–49)
+- `B08-02-part2-kinou.md#400` ## 14 予約する — Đặt chỗ (trang in 50–51)
+- `B08-02-part2-kinou.md#431` ## 15 希望を言う — Nói điều mong muốn (trang in 52–53)
+- `B08-02-part2-kinou.md#462` ## Đặc trưng khẩu ngữ Nhật 2 (PDF53; trang in 54)
+- `B08-03-part3-bunpou.md#1` # Part 3 — 文法編 / Mẫu ngữ pháp
+- `B08-03-part3-bunpou.md#4` ## Mở phần (PDF54)
+- `B08-03-part3-bunpou.md#9` ## 01 ～は～です — N₁ wa N₂ desu / N₁ wa A desu (trang in 56–57)
+- `B08-03-part3-bunpou.md#40` ## 02 好き・嫌い・得意・下手 — Thích, ghét và mức thành thạo (trang in 58–59)
+- `B08-03-part3-bunpou.md#69` ## 03 形容詞 — Tính từ (trang in 60–61)
+- `B08-03-part3-bunpou.md#98` ## 04 ある・いる — Diễn đạt sự tồn tại (trang in 62–63)
+- `B08-03-part3-bunpou.md#127` ## 05 ～がほしい／～たい／たがる — Mong muốn và ý muốn làm (trang in 64–65)
+- `B08-03-part3-bunpou.md#158` ## 06 連体修飾節 — Mệnh đề bổ nghĩa danh từ (trang in 66–67)
+- `B08-03-part3-bunpou.md#187` ## 07 ～てください／～ないでください — Yêu cầu làm hoặc đừng làm (trang in 68–69)
+- `B08-03-part3-bunpou.md#216` ## 08 ～ませんか／～ましょうか — Mời, gợi ý và đề nghị (trang in 70–71)
+- `B08-03-part3-bunpou.md#245` ## 09 着脱動詞 — Động từ mặc và tháo (trang in 72–73)
+- `B08-03-part3-bunpou.md#274` ## 10 Vている — Hành động đang diễn ra và trạng thái (trang in 74–75)
+- `B08-03-part3-bunpou.md#303` ## 11 Vてから／Vた後／Vたら — Sau khi làm (trang in 76–77)
+- `B08-03-part3-bunpou.md#332` ## 12 Vてしまう／～ちゃう — Hoàn tất, lỡ làm (trang in 78–79)
+- `B08-03-part3-bunpou.md#361` ## 13 Vたまま／～っぱなし — Giữ nguyên trạng thái, bỏ mặc (trang in 80–81)
+- `B08-03-part3-bunpou.md#390` ## 14 Vながら／Vし — Vừa làm… vừa làm…, liệt kê lý do (trang in 82–83)
+- `B08-03-part3-bunpou.md#419` ## 15 ～てもいい／～ないでください／～てはいけません — Cho phép và không cho phép (trang in 84–85)
+- `B08-03-part3-bunpou.md#448` ## 16 Vたことがあります — Từng làm việc gì (trang in 86–87)
+- `B08-03-part3-bunpou.md#477` ## 17 可能表現 — Khả năng và cảm nhận bằng giác quan (trang in 88–89)
+- `B08-03-part3-bunpou.md#508` ## 18 疑問詞 — Từ để hỏi (trang in 90–91)
+- `B08-03-part3-bunpou.md#537` ## 19 ～ておきます／～てあります／～ています — Chuẩn bị và trạng thái kết quả (trang in 92–93)
+- `B08-03-part3-bunpou.md#566` ## 20 ～ようと思う／～たいと思う — Dự định và mong muốn (trang in 94–95)
+- `B08-03-part3-bunpou.md#597` ## 21 条件表現 — Cách nói điều kiện (trang in 96–97)
+- `B08-03-part3-bunpou.md#628` ## 22 ～て／～ので／～から — Nêu lý do (trang in 98–99)
+- `B08-03-part3-bunpou.md#657` ## 23 あげる／もらう／くれる — Cho và nhận (trang in 100–101)
+- `B08-03-part3-bunpou.md#688` ## 24 ～のに — Dù… nhưng… (trang in 102–103)
+- `B08-03-part3-bunpou.md#717` ## 25 ～らしい／～みたい／～っぽい — Nghe nói, trông như và có vẻ (trang in 104–105)
+- `B08-03-part3-bunpou.md#746` ## 26 ～そう／～って — Thuật lại điều nghe được (trang in 106–107)
+- `B08-03-part3-bunpou.md#775` ## 27 ～そう — Trông có vẻ, sắp (trang in 108–109)
+- `B08-03-part3-bunpou.md#804` ## 28 ～ようになる／～くなる／～になる — Diễn đạt sự thay đổi (trang in 110–111)
+- `B08-03-part3-bunpou.md#833` ## 29 受け身／使役 — Bị động và sai khiến (trang in 112–113)
+- `B08-03-part3-bunpou.md#862` ## 30 敬語 — Kính ngữ (trang in 114–115)
+- `B08-03-part3-bunpou.md#896` ## Đặc trưng khẩu ngữ Nhật 3 (PDF115; trang in 116)
+- `B08-04-part4-bamen.md#1` # Part 4 — 場面編 / Hội thoại theo tình huống
+- `B08-04-part4-bamen.md#4` ## Mở phần (PDF116)
+- `B08-04-part4-bamen.md#9` ## 01 電車に乗る — Đi tàu điện (trang in 118–119)
+- `B08-04-part4-bamen.md#38` ## 02 バス・タクシーを使う — Đi xe buýt, taxi (trang in 120–121)
+- `B08-04-part4-bamen.md#67` ## 03 道をたずねる — Hỏi đường (trang in 122–123)
+- `B08-04-part4-bamen.md#96` ## 04 ホテルで — Ở khách sạn (trang in 124–125)
+- `B08-04-part4-bamen.md#125` ## 05 レストラン・喫茶店で① — Ở nhà hàng hoặc quán cà phê ① (trang in 126–127)
+- `B08-04-part4-bamen.md#152` ## 06 レストラン・喫茶店で② — Ở nhà hàng hoặc quán cà phê ② (trang in 128–129)
+- `B08-04-part4-bamen.md#181` ## 07 デパートで① — Ở trung tâm thương mại ① (trang in 130–131)
+- `B08-04-part4-bamen.md#210` ## 08 デパートで② — Ở trung tâm thương mại ② (trang in 132–133)
+- `B08-04-part4-bamen.md#239` ## 09 スーパー・コンビニで — Ở siêu thị, cửa hàng tiện lợi (trang in 134–135)
+- `B08-04-part4-bamen.md#268` ## 10 家電量販店などで — Ở cửa hàng điện máy và cửa hàng tương tự (trang in 136–137)
+- `B08-04-part4-bamen.md#297` ## 11 薬局で — Ở hiệu thuốc (trang in 138–139)
+- `B08-04-part4-bamen.md#326` ## 12 病院で — Ở bệnh viện (trang in 140–141)
+- `B08-04-part4-bamen.md#357` ## 13 郵便局・銀行・役所で① — Ở bưu điện, ngân hàng hoặc cơ quan hành chính ① (trang in 142–143)
+- `B08-04-part4-bamen.md#386` ## 14 郵便局・銀行・役所で② — Ở bưu điện, ngân hàng hoặc cơ quan hành chính ② (trang in 144–145)
+- `B08-04-part4-bamen.md#415` ## 15 大学で① — Ở trường đại học ① (trang in 146–147)
+- `B08-04-part4-bamen.md#442` ## 16 大学で② — Ở trường đại học ② (trang in 148–149)
+- `B08-04-part4-bamen.md#471` ## 17 会社で① — Ở nơi làm việc ① (trang in 150–151)
+- `B08-04-part4-bamen.md#498` ## 18 会社で② — Ở nơi làm việc ② (trang in 152–153)
+- `B08-04-part4-bamen.md#525` ## 19 友達・先生の家を訪ねる — Đến nhà bạn hoặc thầy cô (trang in 154–155)
+- `B08-04-part4-bamen.md#554` ## 20 ホストファミリーと — Với gia đình chủ nhà (trang in 156–157)
+- `B08-04-part4-bamen.md#583` ## 21 不動産屋で — Ở văn phòng môi giới nhà đất (trang in 158–159)
+- `B08-04-part4-bamen.md#612` ## 22 近所の人と話す — Nói chuyện với hàng xóm (trang in 160–161)
+- `B08-04-part4-bamen.md#639` ## 23 電話で話す①～友達・先生と — Nói chuyện điện thoại với bạn bè, thầy cô (trang in 162–163)
+- `B08-04-part4-bamen.md#670` ## 24 電話で話す②～職場で — Nói chuyện điện thoại ở nơi làm việc ② (trang in 164–165)
+- `B08-04-part4-bamen.md#697` ## 25 電話で話す③～職場で — Nói chuyện điện thoại ở nơi làm việc ③ (trang in 166–167)
+- `B08-04-part4-bamen.md#724` ## 26 電話で話す④～配達の依頼 — Gọi điện đặt hàng và yêu cầu giao hàng (trang in 168–169)
+- `B08-04-part4-bamen.md#753` ## 27 電話で話す⑤～予約や問い合わせ — Gọi điện đặt chỗ và hỏi thông tin (trang in 170–171)
+- `B08-04-part4-bamen.md#780` ## 28 デートに行く — Đi hẹn hò (trang in 172–173)
+- `B08-04-part4-bamen.md#809` ## 29 警察・交番で — Ở đồn cảnh sát hoặc chốt cảnh sát (trang in 174–175)
+- `B08-04-part4-bamen.md#836` ## 30 旅行の計画をたてる — Lập kế hoạch đi du lịch (trang in 176–177)
+- `B08-04-part4-bamen.md#865` ## 31 旅行会社で — Ở công ty du lịch (trang in 178–179)
+- `B08-04-part4-bamen.md#892` ## 32 美容院で — Ở tiệm làm tóc (trang in 180–181)
+- `B08-04-part4-bamen.md#919` ## 33 アルバイトの面接 — Phỏng vấn việc làm thêm (trang in 182–183)
+- `B08-04-part4-bamen.md#948` ## Features of the Japanese Spoken Language 4 — Kính ngữ trong giao tiếp (PDF183, trang in 184)
+- `B08-05-part5-topic.md#1` # PART 5 — Topic / Chủ đề
+- `B08-05-part5-topic.md#7` ## 01 スポーツ — Thể thao (trang in 186–187)
+- `B08-05-part5-topic.md#34` ## 02 映画 — Phim ảnh (trang in 188–189)
+- `B08-05-part5-topic.md#61` ## 03 家族 — Gia đình (trang in 190–191)
+- `B08-05-part5-topic.md#88` ## 04 健康 — Sức khỏe (trang in 192–193)
+- `B08-05-part5-topic.md#115` ## 05 趣味 — Sở thích (trang in 194–195)
+- `B08-05-part5-topic.md#142` ## 06 週末 — Cuối tuần (trang in 196–197)
+- `B08-05-part5-topic.md#169` ## 07 天気 — Thời tiết (trang in 198–199)
+- `B08-05-part5-topic.md#196` ## 08 日本 — Nhật Bản (trang in 200–201)
+- `B08-05-part5-topic.md#223` ## 09 本 — Sách (trang in 202–203)
+- `B08-05-part5-topic.md#250` ## 10 旅行 — Du lịch (trang in 204–205)
+- `B08-06-basic70.md#1` # Basic phrases 70 — 70 câu cơ bản (trang in 206–207)
+- `B08-06-basic70.md#6` ## PDF205, trang in 206 — cột trái
+- `B08-06-basic70.md#27` ## PDF205, trang in 206 — cột phải
+- `B08-06-basic70.md#48` ## PDF206, trang in 207 — cột trái
+- `B08-06-basic70.md#68` ## PDF206, trang in 207 — cột phải
+- `B08-07-colophon.md#1` # Ấn bản và thông tin xuất bản (PDF207–208)
+- `B08-07-colophon.md#4` ## Người biên soạn và cộng tác (PDF207)
+- `B08-07-colophon.md#11` ## Nhan đề, lần in và nhà xuất bản (PDF207–208)
+
+## B09 — なめらか日本語会話
+
+- `B09-01-前書きと使い方.md#1` # なめらか日本語会話
+- `B09-01-前書きと使い方.md#4` ## Sách và tác giả
+- `B09-01-前書きと使い方.md#9` ## 前書き — Lời nói đầu
+- `B09-01-前書きと使い方.md#24` ## 目次 — Mục lục theo sách
+- `B09-01-前書きと使い方.md#63` ## 構成と使い方 — Cấu trúc và cách dùng
+- `B09-01-前書きと使い方.md#88` ## 学習者のみなさんへ — Gửi người học
+- `B09-02-01-てる・てく・とく.md#1` # PART 1 音の変化 — §1 てる／てく／とく
+- `B09-02-01-てる・てく・とく.md#4` ## Các dạng rút ngắn trong lời nói
+- `B09-02-01-てる・てく・とく.md#33` ## 用例 — Tám hội thoại mẫu
+- `B09-02-01-てる・てく・とく.md#154` ## 練習 I–III — Bài luyện (trang in 14)
+- `B09-02-01-てる・てく・とく.md#202` ## 練習 IV–V — Bài luyện (trang in 15)
+- `B09-02-01-てる・てく・とく.md#238` ## 聞きとり練習 — Bài nghe (trang in 16, ký hiệu băng trong sách)
+- `B09-03-02-ちゃ・じゃ・きゃ.md#1` # PART 1 音の変化 — §2 ちゃ／じゃ／きゃ
+- `B09-03-02-ちゃ・じゃ・きゃ.md#4` ## Cách rút ngắn
+- `B09-03-02-ちゃ・じゃ・きゃ.md#20` ## 用例 — Sáu hội thoại mẫu
+- `B09-03-02-ちゃ・じゃ・きゃ.md#113` ## 練習 I–II — Bài luyện (trang in 19)
+- `B09-03-02-ちゃ・じゃ・きゃ.md#151` ## 練習 III–IV — Bài luyện (trang in 20)
+- `B09-03-02-ちゃ・じゃ・きゃ.md#202` ## 聞きとり練習 — Bài nghe (trang in 21, biểu tượng băng)
+- `B09-04-03-たって・だって.md#1` # PART 1 音の変化 — §3 たって／だって
+- `B09-04-03-たって・だって.md#4` ## Dạng nói たって／だって
+- `B09-04-03-たって・だって.md#30` ## 用例 — Sáu hội thoại mẫu
+- `B09-04-03-たって・だって.md#99` ## 練習 I–II
+- `B09-04-03-たって・だって.md#127` ## 練習 III–IV
+- `B09-04-03-たって・だって.md#171` ## 練習 V–VI
+- `B09-04-03-たって・だって.md#219` ## 聞きとり練習 — Hai bài nghe
+- `B09-05-04-って・て.md#1` # PART 1 音の変化 — §4 って／て
+- `B09-05-04-って・て.md#4` ## Những cách dùng của 「って」 trong lời nói
+- `B09-05-04-って・て.md#41` ## 用例 — Sáu hội thoại mẫu
+- `B09-05-04-って・て.md#106` ## 練習 I–II
+- `B09-05-04-って・て.md#154` ## 練習 III–V
+- `B09-05-04-って・て.md#213` ## 練習 VI–VIII
+- `B09-05-04-って・て.md#293` ## 聞きとり練習 — Hai bài nghe
+- `B09-06-05-ん.md#1` # PART 1 音の変化 — §5 ん
+- `B09-06-05-ん.md#4` ## Những âm chuyển thành 「ん」
+- `B09-06-05-ん.md#41` ## 用例 — Bảy hội thoại mẫu
+- `B09-06-05-ん.md#109` ## 練習 I–III
+- `B09-06-05-ん.md#154` ## 聞きとり練習 — Hai bài nghe
+- `B09-07-06-変化した言葉.md#1` # PART 1 音の変化 — §6 変化した言葉
+- `B09-07-06-変化した言葉.md#4` ## Từ ngữ đổi âm trong hội thoại thân mật
+- `B09-07-06-変化した言葉.md#74` ## 用例 — Bảy hội thoại mẫu
+- `B09-07-06-変化した言葉.md#142` ## 練習 I — Đổi phần gạch dưới về lối nói thường
+- `B09-07-06-変化した言葉.md#189` ## 練習 II–III
+- `B09-07-06-変化した言葉.md#226` ## 聞きとり練習 — Hai bài nghe
+- `B09-08-07-助詞の省略.md#1` # PART 2 会話の形式 — §7 助詞の省略
+- `B09-08-07-助詞の省略.md#4` ## PART 2: Hình thức hội thoại
+- `B09-08-07-助詞の省略.md#9` ## Những trợ từ có thể bị lược
+- `B09-08-07-助詞の省略.md#14` ## 用例 — Năm hội thoại mẫu
+- `B09-08-07-助詞の省略.md#60` ## 練習 I — Điền trợ từ bị lược vào（　）
+- `B09-08-07-助詞の省略.md#110` ## 練習 II — Điền trợ từ bị lược vào chỗ thích hợp
+- `B09-08-07-助詞の省略.md#186` ## 聞きとり練習 — Hai bài nghe
+- `B09-09-08-短縮句.md#1` # PART 2 会話の形式 — §8 短縮句
+- `B09-09-08-短縮句.md#4` ## Cụm nói rút ngắn khi nhờ và gợi ý
+- `B09-09-08-短縮句.md#24` ## Cụm nói rút ngắn khi nói điều bắt buộc, thuật lại và hỏi lại
+- `B09-09-08-短縮句.md#55` ## 用例 — Hội thoại mẫu 1–6
+- `B09-09-08-短縮句.md#119` ## 用例 — Hội thoại mẫu 7–10
+- `B09-09-08-短縮句.md#172` ## 練習 I–II — Chọn động từ và chia cho đúng
+- `B09-09-08-短縮句.md#219` ## 練習 III–IV
+- `B09-09-08-短縮句.md#264` ## 練習 V–VI
+- `B09-09-08-短縮句.md#311` ## 聞きとり練習 — Hai bài nghe
+- `B09-10-09-決まり文句.md#1` # PART 2 会話の形式 — §9 決まり文句
+- `B09-10-09-決まり文句.md#4` ## Những cách nói cố định có thể lược phần cuối
+- `B09-10-09-決まり文句.md#47` ## 用例 — Hội thoại mẫu 1–5
+- `B09-10-09-決まり文句.md#96` ## 用例 — Hội thoại mẫu 6–10
+- `B09-10-09-決まり文句.md#144` ## 練習 I–II — Ghép lời và xác định vai trên/dưới
+- `B09-10-09-決まり文句.md#172` ## 練習 III–IV — Bổ sung lời và chọn cụm
+- `B09-10-09-決まり文句.md#226` ## 練習 V — Hoàn thành hội thoại
+- `B09-10-09-決まり文句.md#244` ## 聞きとり練習 — Bài nghe
+- `B09-11-10-くり返し.md#1` # PART 2 会話の形式 — §10 くり返し
+- `B09-11-10-くり返し.md#4` ## Lặp từ trong lời nói
+- `B09-11-10-くり返し.md#41` ## 用例 — Hội thoại mẫu 1–6
+- `B09-11-10-くり返し.md#94` ## 練習 I — Chọn lời cho các bong bóng thoại trong tranh
+- `B09-11-10-くり返し.md#114` ## 練習 II — Chọn từ và viết dạng lặp thích hợp
+- `B09-11-10-くり返し.md#147` ## 練習 III–IV — Chọn động từ lặp và chọn cụm đáp
+- `B09-11-10-くり返し.md#195` ## 練習 V — Chọn từ rồi viết dạng lặp như ví dụ
+- `B09-11-10-くり返し.md#231` ## 聞きとり練習 — Bài nghe
+- `B09-12-11-あいまい表現.md#1` # PART 2 会話の形式 — §11 あいまい表現
+- `B09-12-11-あいまい表現.md#4` ## Lời nói để ngỏ: ～なんか・～でも
+- `B09-12-11-あいまい表現.md#40` ## ～とか・～たり・～し
+- `B09-12-11-あいまい表現.md#94` ## 練習 I — Nối hai phía thành hội thoại
+- `B09-12-11-あいまい表現.md#107` ## 練習 II — Hoàn thành hội thoại
+- `B09-12-11-あいまい表現.md#122` ## 練習 III–IV — Tự hoàn thành và chọn ～とか／～なんか／～でも
+- `B09-12-11-あいまい表現.md#163` ## 練習 V–VI — Chọn dạng và trả lời câu hỏi
+- `B09-12-11-あいまい表現.md#189` ## 聞きとり練習 — Bài nghe
+- `B09-13-12-語順の変化.md#1` # PART 2 会話の形式 — §12 語順の変化
+- `B09-13-12-語順の変化.md#4` ## Đưa thông tin cần nói lên đầu câu
+- `B09-13-12-語順の変化.md#30` ## Nói phần tác động tới người nghe trước; đưa trạng ngữ ra sau
+- `B09-13-12-語順の変化.md#61` ## 用例 — Hội thoại mẫu 1–9
+- `B09-13-12-語順の変化.md#101` ## 練習 I–II — Ghép hai phía và chọn dạng thích hợp
+- `B09-13-12-語順の変化.md#142` ## 練習 III–IV — Chọn câu mở đầu và đưa về trật tự thường
+- `B09-13-12-語順の変化.md#178` ## 練習 V–VI — Điền vế câu và trạng từ
+- `B09-13-12-語順の変化.md#222` ## 聞きとり練習 — Bài nghe
+- `B09-14-13-会話を進める.md#1` # PART 3 会話の目的 — Mục đích của hội thoại
+- `B09-14-13-会話を進める.md#6` # §13 会話を進める — Duy trì hội thoại
+- `B09-14-13-会話を進める.md#9` ## Gây chú ý và dẫn vào câu chuyện
+- `B09-14-13-会話を進める.md#32` ## Vào chủ đề, đổi chủ đề và kết thúc
+- `B09-14-13-会話を進める.md#61` ## 練習 I–II — Ghép lượt và chọn cách mở lời
+- `B09-14-13-会話を進める.md#97` ## 練習 III — Dùng các câu cho sẵn để hoàn thành hội thoại
+- `B09-14-13-会話を進める.md#158` ## 聞きとり練習 — Bài nghe
+- `B09-15-14-話を切り出す.md#1` # PART 3 会話の目的 — §14 話を切り出す
+- `B09-15-14-話を切り出す.md#4` ## Mở lời một vấn đề bằng ～けど…／～が…／～まして…
+- `B09-15-14-話を切り出す.md#26` ## 練習 I–II — Ghép câu đáp và xác định người nghe
+- `B09-15-14-話を切り出す.md#51` ## 練習 III–IV — Chọn nội dung để mở chuyện
+- `B09-15-14-話を切り出す.md#103` ## 練習 V — Tự hoàn thành hội thoại bằng ～が／～けど…
+- `B09-15-14-話を切り出す.md#132` ## 聞きとり練習 — Hai cuộc trò chuyện mở lời
+- `B09-16-15-答える.md#1` # PART 3 会話の目的 — §15 答える
+- `B09-16-15-答える.md#4` ## Trả lời bằng ～けど…／～が…
+- `B09-16-15-答える.md#27` ## 練習 I — Chọn từ và biến đổi đúng dạng
+- `B09-16-15-答える.md#49` ## 練習 II — Hoàn thành câu đáp bằng ～が／～けど
+- `B09-16-15-答える.md#74` ## 練習 III — Hoàn thành năm hội thoại trong tình huống
+- `B09-16-15-答える.md#121` ## 聞きとり練習 — Công ty du lịch và đặt khách sạn
+- `B09-17-16-反応を見ながら話す.md#1` # PART 3 会話の目的 — §16 反応を見ながら話す
+- `B09-17-16-反応を見ながら話す.md#4` ## ね／な／さ và phản ứng của người nghe
+- `B09-17-16-反応を見ながら話す.md#11` ## 用例 — Năm hội thoại minh họa
+- `B09-17-16-反応を見ながら話す.md#57` ## 練習 I–II — Chèn ね／ですね
+- `B09-17-16-反応を見ながら話す.md#74` ## 聞きとり練習 — Nhờ trông nhà và mượn phòng
+- `B09-18-17-あいづち.md#1` # PART 3 会話の目的 — §17 あいづち
+- `B09-18-17-あいづち.md#4` ## Lời hưởng ứng của người nghe
+- `B09-18-17-あいづち.md#24` ## 用例 — Năm hội thoại về lời hưởng ứng
+- `B09-18-17-あいづち.md#83` ## 練習 I — Chọn lời hưởng ứng thích hợp
+- `B09-18-17-あいづち.md#121` ## 練習 II–III — Điền ký hiệu của câu phù hợp
+- `B09-18-17-あいづち.md#167` ## 練習 IV–V — Tự đặt lời hưởng ứng
+- `B09-18-17-あいづち.md#191` ## 聞きとり練習 — Hỏi giáo viên và tư vấn sức khỏe
+- `B09-19-18-確かめる.md#1` # PART 3 会話の目的 — §18 確かめる
+- `B09-19-18-確かめる.md#4` ## Xác nhận bằng ね
+- `B09-19-18-確かめる.md#9` ## 用例 — Sáu hội thoại xác nhận
+- `B09-19-18-確かめる.md#53` ## 練習 I–II — Chọn lời để xác nhận
+- `B09-19-18-確かめる.md#92` ## 練習 III–IV — Hỏi và nhắc lại đường đi, thao tác
+- `B09-19-18-確かめる.md#129` ## 聞きとり練習 — Rửa ảnh và thanh toán NHK
+- `B09-20-19-主張を伝える.md#1` # PART 3 会話の目的 — §19 主張を伝える
+- `B09-20-19-主張を伝える.md#4` ## よ — Nói điều mình biết và khẳng định ý mình
+- `B09-20-19-主張を伝える.md#14` ## 用例 — Mười một hội thoại mẫu
+- `B09-20-19-主張を伝える.md#60` ## 練習 I–II — Ghép lời và dùng đúng dạng
+- `B09-20-19-主張を伝える.md#86` ## 練習 III–IV — Tự điền lời khẳng định và xác định vai
+- `B09-20-19-主張を伝える.md#112` ## 練習 V–VII — Chọn cách đáp và phân biệt よ／ね
+- `B09-20-19-主張を伝える.md#174` ## 聞きとり練習 — Chỗ đỗ xe và đi bar sau giờ làm
+- `B09-21-20-お礼を言う・あやまる.md#1` # PART 3 会話の目的 — §20 お礼を言う／あやまる
+- `B09-21-20-お礼を言う・あやまる.md#4` ## まして…／でして… — Cảm ơn và xin lỗi bằng câu để ngỏ
+- `B09-21-20-お礼を言う・あやまる.md#9` ## Hai nhóm lời cảm ơn và xin lỗi
+- `B09-21-20-お礼を言う・あやまる.md#32` ## 練習 I–II — Biến đổi câu và chọn lời đáp
+- `B09-21-20-お礼を言う・あやまる.md#59` ## 練習 III–IV — Chọn lời nối cho hội thoại
+- `B09-21-20-お礼を言う・あやまる.md#111` ## 練習 V — Mở đầu lời cảm ơn hoặc xin lỗi
+- `B09-21-20-お礼を言う・あやまる.md#127` ## 聞きとり練習 — Nhầm chỗ trên tàu và gọi cảm ơn
+- `B09-22-21-文句を言う・断る.md#1` # PART 3 会話の目的 — §21 文句を言う／断る
+- `B09-22-21-文句を言う・断る.md#4` ## ちょっと…／どうも…／あんまり…
+- `B09-22-21-文句を言う・断る.md#9` ## 用例 — Ba hội thoại mẫu
+- `B09-22-21-文句を言う・断る.md#41` ## 練習 I–II — Ghép lời và nhận ra nghĩa của ちょっと
+- `B09-22-21-文句を言う・断る.md#85` ## 練習 III–IV — Từ chối lời mời và chọn câu hội thoại
+- `B09-22-21-文句を言う・断る.md#122` ## 練習 V — Hoàn thành lời từ chối và phàn nàn tế nhị
+- `B09-22-21-文句を言う・断る.md#149` ## 聞きとり練習 — Đi câu cá và tiếng tivi nhà bên
+- `B09-23-22-申し出を断る.md#1` # PART 3 会話の目的 — §22 申し出を断る
+- `B09-23-22-申し出を断る.md#4` ## から／ので — Nêu lý do khi khước từ lời đề nghị
+- `B09-23-22-申し出を断る.md#9` ## 用例 — Bốn hội thoại mẫu
+- `B09-23-22-申し出を断る.md#28` ## 練習 I–II — Ghép câu và chọn lý do
+- `B09-23-22-申し出を断る.md#70` ## 練習 III–IV — Hoàn thành lời từ chối và chỉ đường
+- `B09-23-22-申し出を断る.md#102` ## 練習 V–VI — Từ chối trong tranh và người bán hàng
+- `B09-23-22-申し出を断る.md#131` ## 聞きとり練習 — Mua hàng và người khách ở ga
+- `B09-24-23-問いかける.md#1` # PART 3 会話の目的 — §23 問いかける
+- `B09-24-23-問いかける.md#4` ## かな／かしら／っけ — Hỏi gián tiếp
+- `B09-24-23-問いかける.md#20` ## 用例 — Tám hội thoại mẫu
+- `B09-24-23-問いかける.md#63` ## 練習 I–II — Ghép câu và chọn cách tự hỏi
+- `B09-24-23-問いかける.md#106` ## 練習 III–IV — Ở quán rượu và hoàn thành hội thoại
+- `B09-24-23-問いかける.md#144` ## 練習 V–VI — Nói ý kiến nhẹ nhàng
+- `B09-24-23-問いかける.md#168` ## 聞きとり練習 — Trận bóng và đời sống đại học
+- `B09-25-会話表現の索引.md#1` # 会話表現の索引 — Chỉ mục cách nói hội thoại
+- `B09-25-会話表現の索引.md#6` ## あ・い・う — Trang in 147 (PDF146)
+- `B09-25-会話表現の索引.md#26` ## お・か・き・く・け・こ — Trang in 148 (PDF147)
+- `B09-25-会話表現の索引.md#48` ## こ・さ・し — Trang in 149 (PDF148)
+- `B09-25-会話表現の索引.md#72` ## す・せ・そ・た・ち — Trang in 150 (PDF149)
+- `B09-25-会話表現の索引.md#95` ## ち・つ・て・と・な — Trang in 151 (PDF150)
+- `B09-25-会話表現の索引.md#118` ## は・ひ・ふ・へ・ほ — Trang in 152 (PDF151)
+- `B09-25-会話表現の索引.md#140` ## ま・み・め・も・や・ゆ — Trang in 153 (PDF152)
+- `B09-25-会話表現の索引.md#160` ## よ・れ・わ — Trang in 154 (PDF153)
+- `B09-26-解答.md#1` # 解答 — Đáp án in trong sách
+- `B09-26-解答.md#6` ## Trang in 155 (PDF154): §1–§3
+- `B09-26-解答.md#35` ## Trang in 156 (PDF155): §3–§5
+- `B09-26-解答.md#63` ## Trang in 157 (PDF156): §5–§8
+- `B09-26-解答.md#86` ## Trang in 158 (PDF157): §8–§11
+- `B09-26-解答.md#114` ## Trang in 159 (PDF158): §11–§14
+- `B09-26-解答.md#139` ## Trang in 160 (PDF159): §14–§16
+- `B09-26-解答.md#161` ## Trang in 161 (PDF160): §17–§19
+- `B09-26-解答.md#184` ## Trang in 162 (PDF161): §20–§22
+- `B09-26-解答.md#207` ## Trang in 163 (PDF162): §22–§23
+- `B09-27-奥付.md#1` # 著者・奥付 — Tác giả và thông tin xuất bản
+- `B09-27-奥付.md#4` ## 著者 — Tác giả
+- `B09-27-奥付.md#9` ## 奥付 — Ấn bản và người thực hiện
+
+## B10 — にほんごで働く！ビジネス日本語30時間
+
+- `B10-00-前付け.md#1` # にほんごで働く！ビジネス日本語30時間 — Phần đầu sách
+- `B10-00-前付け.md#4` ## Nhan đề và thông tin sách
+- `B10-00-前付け.md#11` ## はじめに — Lời mở đầu
+- `B10-00-前付け.md#24` ## 本書の使い方（教える方へ） — Dành cho người dạy
+- `B10-00-前付け.md#47` ## 本書の使い方（学習する方へ） — Dành cho người học
+- `B10-00-前付け.md#62` ## 目次 — Mục lục
+- `B10-01-紹介する.md#1` # 1 紹介する — Giới thiệu
+- `B10-01-紹介する.md#4` ## 目的・クイズ — Mục tiêu và câu hỏi mở đầu (trang in 1)
+- `B10-01-紹介する.md#11` ## 表現 — Cách nói (trang in 2)
+- `B10-01-紹介する.md#34` ## ことば — Từ ngữ (trang in 3–4)
+- `B10-01-紹介する.md#154` ## 談話 1 自己紹介する — Tự giới thiệu (trang in 5; CD 01, 02)
+- `B10-01-紹介する.md#188` ## 談話 2–3 — Chào người công ty khác; giới thiệu đồng nghiệp (trang in 6; CD 03, 04)
+- `B10-01-紹介する.md#221` ## 会話 1 入社のあいさつ — Chào khi vào công ty (trang in 7; CD 05)
+- `B10-01-紹介する.md#233` ## 会話 2 担当交代のあいさつ — Chào khi đổi người phụ trách (trang in 8; CD 06)
+- `B10-01-紹介する.md#247` ## 会話 3 上司の紹介 — Giới thiệu cấp trên (trang in 9; CD 07)
+- `B10-01-紹介する.md#260` ## ロールプレイ — Đóng vai (trang in 10–11)
+- `B10-01-紹介する.md#277` ## 練習 1 敬語 [A] 特別な形 — Kính ngữ, dạng đặc biệt (trang in 12)
+- `B10-01-紹介する.md#313` ## 練習 1 敬語 [B] ～（ら）れる・お～になる — Kính ngữ (trang in 13–14)
+- `B10-01-紹介する.md#338` ## 練習 1 敬語 [C] お／ご～します — Khiêm nhường ngữ (trang in 15–16)
+- `B10-01-紹介する.md#354` ## 練習 2 ～（さ）せていただきます — Xin được làm (trang in 16–17)
+- `B10-01-紹介する.md#370` ## ビジネスコラム 名刺交換 — Trao danh thiếp (trang in 18)
+- `B10-02-あいさつをする.md#1` # 2 あいさつをする — Chào hỏi
+- `B10-02-あいさつをする.md#4` ## 目的・クイズ — Mục tiêu và câu hỏi mở đầu (trang in 19)
+- `B10-02-あいさつをする.md#35` ## 表現 — Cách nói (trang in 20)
+- `B10-02-あいさつをする.md#66` ## ことば — Từ ngữ (trang in 21)
+- `B10-02-あいさつをする.md#119` ## 談話 1 休んだり、早退したりした時 — Khi nghỉ hoặc về sớm (trang in 22; CD 08)
+- `B10-02-あいさつをする.md#136` ## 談話 2 久しぶりに会った時 — Gặp lại sau lâu ngày (trang in 22; CD 09)
+- `B10-02-あいさつをする.md#158` ## 談話 3 お祝いを言う — Nói lời chúc mừng (trang in 23; CD 10)
+- `B10-02-あいさつをする.md#175` ## 談話 4 会社を辞めたり、転勤したりする時 — Khi nghỉ việc hoặc chuyển công tác (trang in 23; CD 11)
+- `B10-02-あいさつをする.md#194` ## 会話 1 風邪で会社を休んだ時 — Quay lại công ty sau khi nghỉ vì cảm (trang in 24; CD 12)
+- `B10-02-あいさつをする.md#209` ## 会話 2 昇進のお祝い — Chúc mừng thăng chức (trang in 25; CD 13)
+- `B10-02-あいさつをする.md#224` ## 会話 3 帰国のあいさつ — Chào trước khi về nước (trang in 26; CD 14)
+- `B10-02-あいさつをする.md#241` ## ロールプレイ — Đóng vai (trang in 27–29)
+- `B10-02-あいさつをする.md#260` ## 練習 1 ～ものですね — Bày tỏ cảm nhận (trang in 30)
+- `B10-02-あいさつをする.md#277` ## 練習 2 ～が～だから — Vì tình hình/thời điểm… (trang in 31–32)
+- `B10-02-あいさつをする.md#291` ## ビジネスコラム おじぎ／ていねいな気持ちは何度？ — Cúi chào: độ sâu bao nhiêu? (trang in 33)
+- `B10-03-電話をかける・受ける.md#1` # 3 電話をかける・受ける — Gọi và nhận điện thoại
+- `B10-03-電話をかける・受ける.md#4` ## 目的・クイズ — Mục tiêu và bài nghe mở đầu (trang in 35; CD 15)
+- `B10-03-電話をかける・受ける.md#22` ## 表現 電話をかける — Cách nói khi gọi (trang in 36)
+- `B10-03-電話をかける・受ける.md#33` ## 表現 電話を受ける — Cách nói khi nhận (trang in 37)
+- `B10-03-電話をかける・受ける.md#49` ## 電話会話のチャート — Sơ đồ trình tự cuộc gọi (trang in 38)
+- `B10-03-電話をかける・受ける.md#66` ## ことば — Từ ngữ (trang in 39)
+- `B10-03-電話をかける・受ける.md#122` ## 談話 1 不在を伝える — Báo người cần gặp vắng mặt (trang in 40; CD 16)
+- `B10-03-電話をかける・受ける.md#143` ## 談話 2 伝言を頼む — Nhờ chuyển lời nhắn (trang in 40; CD 17)
+- `B10-03-電話をかける・受ける.md#154` ## 談話 3 伝言を確認する — Xác nhận lời nhắn (trang in 41; CD 18)
+- `B10-03-電話をかける・受ける.md#172` ## 談話 4 相手の社名や名前を聞き返す — Hỏi lại tên công ty/người gọi (trang in 41; CD 19)
+- `B10-03-電話をかける・受ける.md#192` ## 会話 1 伝言を受ける — Nhận lời nhắn (trang in 42–43; CD 20)
+- `B10-03-電話をかける・受ける.md#218` ## 会話 2 わかりにくい名前を聞く — Hỏi lại tên khó nghe (trang in 43; CD 21)
+- `B10-03-電話をかける・受ける.md#233` ## ロールプレイ 1 — Gọi và nhận lời nhắn (trang in 44)
+- `B10-03-電話をかける・受ける.md#242` ## ★電話メモの書き方 — Cách ghi lời nhắn điện thoại (trang in 45)
+- `B10-03-電話をかける・受ける.md#257` ## ロールカード — Thẻ vai luyện thêm (trang in 46)
+- `B10-03-電話をかける・受ける.md#270` ## 練習 1 ～たら、お／ご～いたします — Khi xong…, tôi sẽ… (trang in 47–48)
+- `B10-03-電話をかける・受ける.md#289` ## 練習 2 ただいま～中でございますが… — Báo tình trạng người được gọi (trang in 48–49)
+- `B10-03-電話をかける・受ける.md#308` ## 練習 3 ～ていただけますでしょうか — Nhờ người khác làm việc (trang in 49–50)
+- `B10-03-電話をかける・受ける.md#327` ## ビジネスコラム 電話のルール／いつもお世話になっております — Lời chào đầu cuộc gọi (trang in 51)
+- `B10-04-注意をする・注意を受ける.md#1` # 4 注意をする・注意を受ける — Nhắc nhở và nhận lời nhắc
+- `B10-04-注意をする・注意を受ける.md#4` ## 目的・クイズ — Mục tiêu và bài hỏi mở đầu (trang in 53)
+- `B10-04-注意をする・注意を受ける.md#13` ## 表現 — Cách nói khi nhắc và nhận lời nhắc (trang in 54)
+- `B10-04-注意をする・注意を受ける.md#26` ## ことば — Từ ngữ (trang in 55–56)
+- `B10-04-注意をする・注意を受ける.md#102` ## 談話 1 注意をする・あやまる — Nhắc nhở và xin lỗi (trang in 57; CD 22)
+- `B10-04-注意をする・注意を受ける.md#121` ## 談話 2 婉曲的に注意をする — Nhắc một cách gián tiếp (trang in 57; CD 23)
+- `B10-04-注意をする・注意を受ける.md#136` ## 談話 3 他社の人に苦情を言う・あやまる — Phàn nàn với công ty khác và xin lỗi (trang in 58; CD 24)
+- `B10-04-注意をする・注意を受ける.md#153` ## 会話 1 注意を受ける — あいづち — Nhận lời nhắc và đáp lời (trang in 59; CD 25)
+- `B10-04-注意をする・注意を受ける.md#169` ## 会話 2 アドバイスを受ける — 書類作成 — Nhận góp ý về tài liệu (trang in 60; CD 26)
+- `B10-04-注意をする・注意を受ける.md#181` ## 会話 3 苦情を受ける — サンプルの手配 — Nhận phàn nàn về mẫu sản phẩm (trang in 60; CD 27)
+- `B10-04-注意をする・注意を受ける.md#195` ## ロールプレイ 1 — Nhắc cấp dưới khi tiếp khách (trang in 61)
+- `B10-04-注意をする・注意を受ける.md#202` ## ロールプレイ 2 — Phàn nàn về số tiền trên hóa đơn (trang in 62)
+- `B10-04-注意をする・注意を受ける.md#209` ## 練習 1 ～（の）必要がある — Nêu việc cần làm (trang in 63–64)
+- `B10-04-注意をする・注意を受ける.md#226` ## 練習 2 お／ご～いたします — Nhận phàn nàn rồi nói sẽ xử lý (trang in 64–65)
+- `B10-04-注意をする・注意を受ける.md#245` ## 練習 3 ～ば、～ — Nói điều kiện và hệ quả (trang in 65–66)
+- `B10-04-注意をする・注意を受ける.md#269` ## ビジネスコラム ホウレンソウ — Báo cáo, liên lạc, trao đổi (trang in 67)
+- `B10-05-頼む・断る.md#1` # 5 頼む・断る — Nhờ vả và từ chối
+- `B10-05-頼む・断る.md#4` ## 目的・クイズ — Mục tiêu và bài hỏi mở đầu (trang in 69)
+- `B10-05-頼む・断る.md#21` ## 表現 — Cách mở lời, nhờ và từ chối (trang in 70)
+- `B10-05-頼む・断る.md#50` ## 相手に合わせた依頼の表現 — Cách nhờ tùy người nghe (trang in 71)
+- `B10-05-頼む・断る.md#74` ## ことば — Từ ngữ (trang in 72)
+- `B10-05-頼む・断る.md#130` ## 談話1 上司に依頼する — Nhờ cấp trên (CD29, trang in 73)
+- `B10-05-頼む・断る.md#149` ## 談話2 依頼されたことを確認する — Xác nhận việc được nhờ (CD30, trang in 73)
+- `B10-05-頼む・断る.md#166` ## 談話3 上司の依頼を断る〔1〕 — Từ chối lời nhờ của cấp trên, phần 1 (CD31, trang in 74)
+- `B10-05-頼む・断る.md#184` ## 談話3 上司の依頼を断る〔2〕 — Từ chối lời nhờ của cấp trên, phần 2 (CD32, trang in 74)
+- `B10-05-頼む・断る.md#202` ## 談話4 値段の交渉をする — Thương lượng giá (CD33, trang in 75)
+- `B10-05-頼む・断る.md#219` ## 談話5 勧誘を断る — Từ chối lời mời chào (CD34, trang in 75)
+- `B10-05-頼む・断る.md#236` ## 会話1 上司に急な依頼をする — 書類のチェック (CD35, trang in 76)
+- `B10-05-頼む・断る.md#251` ## 会話2 上司の依頼を断る — 資料の作成 (CD36, trang in 77)
+- `B10-05-頼む・断る.md#264` ## ロールプレイ1 — Nhờ cấp trên cùng dự cuộc họp (trang in 78)
+- `B10-05-頼む・断る.md#281` ## ロールプレイ2 — Nhờ cấp dưới làm việc cuối tuần (trang in 79)
+- `B10-05-頼む・断る.md#298` ## 練習1 ～ところです — Đúng lúc sắp/đang/vừa làm (trang in 80–81)
+- `B10-05-頼む・断る.md#311` ## 練習2 実は～んです — Nêu lý do thật (trang in 81–82)
+- `B10-05-頼む・断る.md#332` ## 練習3 ～に～てもらってください — Nhờ người khác làm thay (trang in 82–83)
+- `B10-05-頼む・断る.md#345` ## ビジネスコラム 新入社員のタイプ／今年は何型？ — Kiểu nhân viên mới: năm nay là kiểu gì? (trang in 84)
+- `B10-06-許可をもらう.md#1` # 6 許可をもらう — Xin phép
+- `B10-06-許可をもらう.md#4` ## 目的・クイズ — Mục tiêu và bài nghe mở đầu (trang in 85)
+- `B10-06-許可をもらう.md#15` ## 表現 許可を求める — Cách xin phép (trang in 86)
+- `B10-06-許可をもらう.md#26` ## ことば — Từ ngữ (trang in 87)
+- `B10-06-許可をもらう.md#89` ## 談話1 上司に許可を求める〔1〕 — Xin phép cấp trên, phần 1 (CD38, trang in 88)
+- `B10-06-許可をもらう.md#109` ## 談話1 上司に許可を求める〔2〕 — Xin phép cấp trên, phần 2 (CD39, trang in 89)
+- `B10-06-許可をもらう.md#129` ## 談話2 他社の人に許可を求める — Xin phép người công ty khác (CD40, trang in 89)
+- `B10-06-許可をもらう.md#147` ## 会話1 早退する — Xin về sớm (CD41, trang in 90)
+- `B10-06-許可をもらう.md#160` ## 会話2 社用車を借りる — Xin dùng xe công ty (CD42, trang in 91)
+- `B10-06-許可をもらう.md#177` ## 会話3 後でファクスで送る — Xin gửi fax sau (CD43, trang in 92)
+- `B10-06-許可をもらう.md#190` ## ロールプレイ1 — Gọi cấp trên xin nghỉ vì sức khỏe (trang in 93)
+- `B10-06-許可をもらう.md#197` ## ロールプレイ2 — Xin phép sao chép tài liệu của công ty khác (trang in 94)
+- `B10-06-許可をもらう.md#204` ## 練習1 ～たら、～て… — Giải thích việc đã xảy ra (trang in 95–96)
+- `B10-06-許可をもらう.md#217` ## 練習2 ～ことになっています — Hỏi quy định công ty (trang in 96–97)
+- `B10-06-許可をもらう.md#241` ## ビジネスコラム 日本人の労働時間 — Thời gian làm việc của người Nhật (trang in 98)
+- `B10-07-アポイントをとる.md#1` # 7 アポイントをとる — Hẹn gặp trước
+- `B10-07-アポイントをとる.md#4` ## 目的・クイズ — Mục tiêu và bài nghe mở đầu (trang in 99)
+- `B10-07-アポイントをとる.md#17` ## 表現 — Cách xin hẹn và đề xuất thời gian (trang in 100)
+- `B10-07-アポイントをとる.md#31` ## ことば — Từ ngữ (trang in 101)
+- `B10-07-アポイントをとる.md#83` ## 談話1 自社の人にアポイントをとる — Hẹn người trong công ty (CD45, trang in 102)
+- `B10-07-アポイントをとる.md#102` ## 談話2 他社の人にアポイントをとる〔1〕許可を求める (CD46, trang in 102)
+- `B10-07-アポイントをとる.md#121` ## 談話2 他社の人にアポイントをとる〔2〕提案する (CD47, trang in 103)
+- `B10-07-アポイントをとる.md#136` ## 談話3 面識のない人にアポイントをとる — Hẹn người chưa từng gặp (CD48, trang in 103)
+- `B10-07-アポイントをとる.md#156` ## 談話4 約束を変更する — Đổi lịch đã hẹn (CD49, trang in 104)
+- `B10-07-アポイントをとる.md#175` ## 会話1 知り合いに紹介してもらった人にアポイントをとる — Hẹn gặp người được người quen giới thiệu (CD50, trang in 105–106)
+- `B10-07-アポイントをとる.md#197` ## 会話2 上司の都合を聞く — Hỏi lịch của cấp trên (CD51, trang in 106)
+- `B10-07-アポイントをとる.md#213` ## 会話3 訪問の日を変更する — Đổi ngày đến thăm (CD52, trang in 107)
+- `B10-07-アポイントをとる.md#226` ## ロールプレイ 1 — Nhờ cấp trên đi cùng (trang in 108)
+- `B10-07-アポイントをとる.md#243` ## ロールプレイ 2 — Gọi Công ty Y hẹn gặp (trang in 109)
+- `B10-07-アポイントをとる.md#270` ## ロールプレイ 3 — Gọi đổi lịch đã hẹn (trang in 110)
+- `B10-07-アポイントをとる.md#281` ## 練習1 ～（さ）せていただけないかと思いまして — Xin phép một cách dè dặt (trang in 111)
+- `B10-07-アポイントをとる.md#295` ## 練習2 ～（の）件 — Nói về việc đã trao đổi (trang in 112–113)
+- `B10-07-アポイントをとる.md#314` ## ビジネスコラム 飛び込み — Ghé thăm đột xuất không hẹn trước (trang in 114)
+- `B10-08-訪問する.md#1` # 8 訪問する — Đến thăm công ty khác
+- `B10-08-訪問する.md#4` ## 目的・クイズ — Mục tiêu và câu hỏi mở đầu (trang in 115)
+- `B10-08-訪問する.md#15` ## 表現 — Mẫu nói trong chuyến thăm (trang in 116)
+- `B10-08-訪問する.md#52` ## ことば — Từ của Bài 8 (trang in 117)
+- `B10-08-訪問する.md#116` ## 談話1 取り次ぎを頼む — Nhờ quầy lễ tân báo giúp (CD53, trang in 118)
+- `B10-08-訪問する.md#135` ## 談話2 名前の読み方を聞く — Hỏi cách đọc tên (CD54, trang in 118)
+- `B10-08-訪問する.md#155` ## 談話3 辞去する — Xin phép ra về (CD55, trang in 119)
+- `B10-08-訪問する.md#173` ## 会話1 受付で取り次ぎを頼む — Nhờ quầy lễ tân báo người có hẹn (CD56, trang in 120)
+- `B10-08-訪問する.md#189` ## 会話2 応接室で面会する — Gặp trong phòng tiếp khách (CD57, trang in 121–122)
+- `B10-08-訪問する.md#215` ## ロールプレイ 1 — Chào quầy lễ tân và nhận thẻ khách (trang in 123)
+- `B10-08-訪問する.md#232` ## ロールプレイ 2 — Chào người phụ trách mới (trang in 124)
+- `B10-08-訪問する.md#239` ## 練習1 お／ご～いただく — Cách nhờ người khác làm (trang in 125–126)
+- `B10-08-訪問する.md#256` ## 練習2 ～の上では — Xét về một phương diện (trang in 127)
+- `B10-08-訪問する.md#268` ## 練習3 ～まではなかなか… — Nói điều mình chưa đạt tới (trang in 128)
+- `B10-08-訪問する.md#281` ## ビジネスコラム 訪問のマナー — Phép lịch sự khi đến thăm (trang in 129)
+- `B10-09-会社で使うことば.md#1` # 巻末：会社で使うことば — Từ dùng trong công ty
+- `B10-09-会社で使うことば.md#4` ## 巻末 — Các phần cuối sách (PDF 139)
+- `B10-09-会社で使うことば.md#9` ## 会社で使うことば (trang in 132; PDF 140)
+- `B10-10-敬語表.md#1` # 巻末：敬語表 — Bảng kính ngữ
+- `B10-10-敬語表.md#4` ## 特別な形の敬語 — Các dạng kính ngữ đặc biệt (trang in 133; PDF 141)
+- `B10-10-敬語表.md#31` ## 敬語の形 — Các mẫu tạo kính ngữ (trang in 134; PDF 142)
+- `B10-11-解答とスクリプト.md#1` # 巻末：解答とスクリプト — Đáp án và lời thoại
+- `B10-11-解答とスクリプト.md#6` ## 1 紹介する — Giới thiệu (trang in 135; PDF 143)
+- `B10-11-解答とスクリプト.md#31` ## Tiếp Bài 1 và Bài 2 (trang in 136; PDF 144)
+- `B10-11-解答とスクリプト.md#57` ## 2 あいさつをする — Chào hỏi
+- `B10-11-解答とスクリプト.md#78` ## 3 電話をかける・受ける — Gọi và nhận điện thoại (trang in 137; PDF 145)
+- `B10-11-解答とスクリプト.md#132` ## Tiếp Bài 3 và Bài 4 (trang in 138; PDF 146)
+- `B10-11-解答とスクリプト.md#148` ## 4 注意をする・注意を受ける — Nhắc nhở và tiếp nhận lời nhắc
+- `B10-11-解答とスクリプト.md#176` ## Tiếp Bài 4 và Bài 5 (trang in 139; PDF 147)
+- `B10-11-解答とスクリプト.md#185` ## 5 頼む・断る — Nhờ vả và từ chối
+- `B10-11-解答とスクリプト.md#215` ## Tiếp Bài 5 (trang in 140; PDF 148)
+- `B10-11-解答とスクリプト.md#267` ## 6 許可をもらう — Xin phép (trang in 141; PDF 149)
+- `B10-11-解答とスクリプト.md#288` ## Tiếp Bài 6 (trang in 142; PDF 150)
+- `B10-11-解答とスクリプト.md#328` ## 7 アポイントをとる — Hẹn gặp (trang in 143; PDF 151)
+- `B10-11-解答とスクリプト.md#364` ## Tiếp Bài 7 và Bài 8 (trang in 144; PDF 152)
+- `B10-11-解答とスクリプト.md#401` ## 8 訪問する — Đến thăm công ty khác
+- `B10-11-解答とスクリプト.md#415` ## Tiếp Bài 8 (trang in 145; PDF 153)
+- `B10-12-索引.md#1` # 巻末：索引 — Chỉ mục
+- `B10-12-索引.md#6` ## あ–き (trang in 146; PDF 154)
+- `B10-12-索引.md#84` ## き–し (trang in 147; PDF 155)
+- `B10-12-索引.md#170` ## し–つ (trang in 148; PDF 156)
+- `B10-12-索引.md#255` ## て–ふ (trang in 149; PDF 157)
+- `B10-12-索引.md#337` ## ふ–れ (trang in 150; PDF 158)
+- `B10-12-索引.md#416` ## わ (trang in 151; PDF 159)
+- `B10-13-著者・奥付・広告.md#1` # 著者・奥付 — Tác giả và thông tin xuất bản
+- `B10-13-著者・奥付・広告.md#4` ## 著者 — Tác giả (PDF 160)
+- `B10-13-著者・奥付・広告.md#16` ## 奥付 — Thông tin ấn bản
+- `B10-14-別冊ことば.md#1` # 別冊 ことば — Tập từ riêng
+- `B10-14-別冊ことば.md#4` ## Bìa tập từ (PDF 162)
+- `B10-14-別冊ことば.md#9` ## 1 紹介する — Giới thiệu (trang in biệt sách 2; PDF 163)
+- `B10-14-別冊ことば.md#54` ## 1 紹介する — tiếp (trang in biệt sách 3; PDF 164)
+- `B10-14-別冊ことば.md#103` ## 1 紹介する — hết; 2 あいさつをする — bắt đầu (trang in biệt sách 4; PDF 165)
+- `B10-14-別冊ことば.md#128` ## 2 あいさつをする — Chào hỏi
+- `B10-14-別冊ことば.md#148` ## 2 あいさつをする — tiếp (trang in biệt sách 5; PDF 166)
+- `B10-14-別冊ことば.md#192` ## 2 あいさつをする — hết; 3 電話をかける・受ける — bắt đầu (trang in biệt sách 6; PDF 167)
+- `B10-14-別冊ことば.md#214` ## 3 電話をかける・受ける — Gọi và nhận điện thoại
+- `B10-14-別冊ことば.md#233` ## 3 電話をかける・受ける — tiếp (trang in biệt sách 7; PDF 168)
+- `B10-14-別冊ことば.md#280` ## 3 電話をかける・受ける — hết; 4 注意をする・注意を受ける — bắt đầu (trang in biệt sách 8; PDF 169)
+- `B10-14-別冊ことば.md#299` ## 4 注意をする・注意を受ける — Nhắc nhở và tiếp nhận lời nhắc
+- `B10-14-別冊ことば.md#326` ## 4 注意をする・注意を受ける — tiếp (trang in biệt sách 9; PDF 170)
+- `B10-14-別冊ことば.md#376` ## 4 注意をする・注意を受ける — hết (trang in biệt sách 10; PDF 171)
+- `B10-14-別冊ことば.md#419` ## 5 頼む・断る — Nhờ vả và từ chối (trang in biệt sách 11; PDF 172)
+- `B10-14-別冊ことば.md#462` ## 5 頼む・断る — hết (trang in biệt sách 12; PDF 173)
+- `B10-14-別冊ことば.md#502` ## 6 許可をもらう — Xin phép (trang in biệt sách 13; PDF 174)
+- `B10-14-別冊ことば.md#545` ## 6 許可をもらう — hết (trang in biệt sách 14; PDF 175)
+- `B10-14-別冊ことば.md#593` ## 7 アポイントをとる — Hẹn gặp (trang in biệt sách 15; PDF 176)
+- `B10-14-別冊ことば.md#637` ## 7 アポイントをとる — hết; 8 訪問する — bắt đầu (trang in biệt sách 16; PDF 177)
+- `B10-14-別冊ことば.md#675` ## 8 訪問する — Đến thăm công ty khác
+- `B10-14-別冊ことば.md#684` ## 8 訪問する — tiếp (trang in biệt sách 17; PDF 178)
+- `B10-14-別冊ことば.md#730` ## 8 訪問する — hết (trang in biệt sách 18; PDF 179)
+- `B10-14-別冊ことば.md#768` ## 会社で使うことば — Từ dùng trong công ty (trang in biệt sách 19; PDF 180)
+- `B10-14-別冊ことば.md#812` ## 会社で使うことば — hết (trang in biệt sách 20; PDF 181)
+
+## B11 — わかる！話せる！日本語会話 基本文型88
+
+- `B11-00-mo-dau.md#2` # 序章 日本語会話の基本パターン
+- `B11-00-mo-dau.md#7` # Mở đầu: Cách bắt đầu và duy trì hội thoại tiếng Nhật
+- `B11-00-mo-dau.md#9` ## 1. Bắt chuyện: 「どう話しかけるか」が問題
+- `B11-00-mo-dau.md#30` ## 2. Giữ khoảng cách: 「適当な距離をとる」
+- `B11-00-mo-dau.md#41` ## 3. Thói quen diễn đạt và văn phong: 「日本語のくせと文体」
+- `B11-00-mo-dau.md#74` ## 4. Dạng nói trong hội thoại: 「話し言葉の形」
+- `B11-00-mo-dau.md#147` ## 5. Biến âm trong lời nói: 「話し言葉の発音」
+- `B11-00a-dau-sach-va-cach-hoc.m#2` # わかる！話せる！日本語会話 基本文型88
+- `B11-00a-dau-sach-va-cach-hoc.m#7` ## はじめに — Lời đầu
+- `B11-00a-dau-sach-va-cach-hoc.m#20` ## 目次 — Mục lục theo trang in
+- `B11-00a-dau-sach-va-cach-hoc.m#41` ## 学習の流れ — Luồng học
+- `B11-00a-dau-sach-va-cach-hoc.m#51` ## この本の使い方 — Cách đọc trang bài
+- `B11-00a-dau-sach-va-cach-hoc.m#67` ## CDの使い方 — Cách dùng CD
+- `B11-01-ne.md#6` # Bài 1. このドーナツ、おいしいね — ～ね
+- `B11-01-ne.md#10` ## Hội thoại mở đầu
+- `B11-01-ne.md#28` ## Ý nghĩa, mẫu và điểm lưu ý
+- `B11-01-ne.md#32` ## A. Nhẹ nhàng tìm sự đồng tình
+- `B11-01-ne.md#74` ## B. Xác nhận lại
+- `B11-01-ne.md#96` ## C. Nhắc nhở, dặn dò
+- `B11-02-yo.md#2` # Bài 2. もう帰ったよ — ～よ
+- `B11-02-yo.md#6` ## Hội thoại mở đầu
+- `B11-02-yo.md#16` ## Ý nghĩa, mẫu và điểm lưu ý
+- `B11-02-yo.md#32` ## A. Truyền đạt thông tin mới
+- `B11-02-yo.md#94` ## B. Nhấn mạnh chỉ dẫn hoặc lời cảnh báo
+- `B11-03-yone.md#2` # Bài 3. お祭り行くよね — ～よね
+- `B11-03-yone.md#6` ## Hội thoại mở đầu
+- `B11-03-yone.md#26` ## Ý nghĩa, mẫu và điểm lưu ý
+- `B11-03-yone.md#32` ## A. Kiểm tra sự thống nhất
+- `B11-03-yone.md#84` ## B. Báo thông tin mới
+- `B11-03-yone.md#96` ## C. Hưởng ứng lời người kia
+- `B11-04-part1-mau-04-08.md#2` # PART1 — 4. それ、コピーしようか。 — ～か
+- `B11-04-part1-mau-04-08.md#6` ## Hội thoại mở đầu
+- `B11-04-part1-mau-04-08.md#18` ## Ý nghĩa, mẫu và điểm lưu ý
+- `B11-04-part1-mau-04-08.md#24` ## 会話練習 — A. 疑問・問いかけ (nghi vấn, hỏi)
+- `B11-04-part1-mau-04-08.md#56` ## B. 提案・申し出 (đề xuất, ngỏ ý)
+- `B11-04-part1-mau-04-08.md#78` ## C. 再確認 (xác nhận lại)
+- `B11-04-part1-mau-04-08.md#111` # 5. もう予約したの？ — ～の？／～の
+- `B11-04-part1-mau-04-08.md#115` ## Hội thoại mở đầu
+- `B11-04-part1-mau-04-08.md#127` ## Ý nghĩa, mẫu và điểm lưu ý
+- `B11-04-part1-mau-04-08.md#137` ## 会話練習 — A. 質問・確認 (hỏi, xác nhận)
+- `B11-04-part1-mau-04-08.md#209` ## B. 事情説明 (giải thích tình hình)
+- `B11-04-part1-mau-04-08.md#224` # 6. これ、苦手なんだ — ～んだ／～んです
+- `B11-04-part1-mau-04-08.md#228` ## Hội thoại mở đầu
+- `B11-04-part1-mau-04-08.md#240` ## Ý nghĩa, mẫu và điểm lưu ý
+- `B11-04-part1-mau-04-08.md#250` ## 会話練習
+- `B11-04-part1-mau-04-08.md#335` # 7. 彼が入院したの、知ってる？ — ～の（名詞的用法）
+- `B11-04-part1-mau-04-08.md#339` ## Hội thoại mở đầu
+- `B11-04-part1-mau-04-08.md#351` ## Ý nghĩa, mẫu và điểm lưu ý
+- `B11-04-part1-mau-04-08.md#361` ## 会話練習 — A. [文／Vる／Vた／A] + の
+- `B11-04-part1-mau-04-08.md#433` ## B. [NA／N + な] + の
+- `B11-04-part1-mau-04-08.md#446` # 8. ちょっと遅れるって — ～って（引用・強調）
+- `B11-04-part1-mau-04-08.md#450` ## Hội thoại mở đầu
+- `B11-04-part1-mau-04-08.md#462` ## Ý nghĩa, mẫu và điểm lưu ý
+- `B11-04-part1-mau-04-08.md#468` ## 会話練習 — A. ～とV
+- `B11-04-part1-mau-04-08.md#500` ## B. ～というN
+- `B11-04-part1-mau-04-08.md#522` ## C. ～と思う／～と言っていた
+- `B11-05-warming-up-va-doumo.md#2` # ウォーミングアップ — Ôn lại tám mẫu quan trọng nhất
+- `B11-05-warming-up-va-doumo.md#7` ## 第１回 — Lượt 1 (trang in 34)
+- `B11-05-warming-up-va-doumo.md#27` ## 第２回 — Lượt 2 (trang in 35)
+- `B11-05-warming-up-va-doumo.md#47` ## 第３回 — Lượt 3 (trang in 36)
+- `B11-05-warming-up-va-doumo.md#67` ## 第４回 — Lượt 4 (trang in 37)
+- `B11-05-warming-up-va-doumo.md#87` ## 第５回 — Lượt 5 (trang in 38)
+- `B11-05-warming-up-va-doumo.md#107` ## 第６回 — Lượt 6 (trang in 39)
+- `B11-05-warming-up-va-doumo.md#127` # 日本語会話 ワンポイント・レッスン — いつでもどこでも―便利な言葉「どうも」
+- `B11-05-warming-up-va-doumo.md#131` ## ① 感謝する — bày tỏ cảm ơn
+- `B11-05-warming-up-va-doumo.md#135` ## ② 謝る — xin lỗi
+- `B11-05-warming-up-va-doumo.md#139` ## ③ あいさつをする — chào hỏi
+- `B11-05-warming-up-va-doumo.md#143` ## ④ 丁寧な「どうも」 — cách nói lịch sự
+- `B11-05-warming-up-va-doumo.md#148` # ウォーミングアップの答え — Đáp án sáu lượt
+- `B11-05-warming-up-va-doumo.md#152` ## 第１回
+- `B11-05-warming-up-va-doumo.md#161` ## 第２回
+- `B11-05-warming-up-va-doumo.md#170` ## 第３回
+- `B11-05-warming-up-va-doumo.md#178` ## 第４回
+- `B11-05-warming-up-va-doumo.md#189` ## 第５回
+- `B11-05-warming-up-va-doumo.md#198` ## 第６回
+- `B11-06-part2-dong-tu.md#2` # PART2 日本語会話の基本文型80 — 80 mẫu câu cơ bản trong hội thoại tiếng Nhật
+- `B11-06-part2-dong-tu.md#6` ## 主に動詞につくもの — Các mẫu chủ yếu nối với động từ (9–24)
+- `B11-07-part2-danh-tu.md#1` # PART2 — Những mẫu chủ yếu gắn với danh từ (25–37)
+- `B11-07-part2-danh-tu.md#4` ## 25. 田中先生って、独身？ — ～って（話題）
+- `B11-07-part2-danh-tu.md#39` ## 26. 今度の旅行のことだけど — ～が／～けど（話題）
+- `B11-07-part2-danh-tu.md#74` ## 27. 秋はいいね — ～はいい／～がいい／～もいい
+- `B11-07-part2-danh-tu.md#113` ## 28. のどにいいんだって — ～にいい／～にはいい／～にもいい
+- `B11-07-part2-danh-tu.md#149` ## 29. 返事は明日でもいい？ — ～でいい／～でもいい
+- `B11-07-part2-danh-tu.md#184` ## 30. はっきり言うしかないよ — ～しか～ない／～しかない
+- `B11-07-part2-danh-tu.md#217` ## 31. テニスとか — ～とか
+- `B11-07-part2-danh-tu.md#249` ## 32. スーパー行くなら — ～なら
+- `B11-07-part2-danh-tu.md#288` ## 33. これなんか、どう？ — ～なんか／～など
+- `B11-07-part2-danh-tu.md#320` ## 34. けんかばかりしてるね — ～ばかり
+- `B11-07-part2-danh-tu.md#352` ## 35. サルみたいな子だね — ～みたい（似ていること）
+- `B11-07-part2-danh-tu.md#383` ## 36. モリさんっていう女性 — ～というN／～っていうN／～ってN
+- `B11-07-part2-danh-tu.md#409` ## 37. 別れたいってこと — ～ということ／～っていうこと／～ってこと
+- `B11-08-part2-tinh-tu.md#1` # PART2 — Những mẫu chủ yếu gắn với tính từ (38–40)
+- `B11-08-part2-tinh-tu.md#4` ## 38. 明るくていいね — ～ていい／～でいい
+- `B11-08-part2-tinh-tu.md#37` ## 39. けっこう忙しい — けっこう
+- `B11-08-part2-tinh-tu.md#73` ## 40. ほんと、うれしい — ほんと／ほんとに
+- `B11-09-part2-dau-cau.md#1` # PART2 — Những mẫu đặt ở đầu câu (41–47)
+- `B11-09-part2-dau-cau.md#4` ## 41. あのう、ちょっと伺いますが — あのう
+- `B11-09-part2-dau-cau.md#33` ## 42. ねえ、聞いた？ — ねえ
+- `B11-09-part2-dau-cau.md#58` ## 43. ほら、これだよ — ほら
+- `B11-09-part2-dau-cau.md#83` ## 44. あれ？ 雨が降ってる — あれ？
+- `B11-09-part2-dau-cau.md#108` ## 45. さあ、どうだろう — さあ
+- `B11-09-part2-dau-cau.md#133` ## 46. まあ、大丈夫でしょ — まあ
+- `B11-09-part2-dau-cau.md#158` ## 47. そしたら、ボウリングでもする？ — そしたら／だったら
+- `B11-10-part2-cuoi-cau.md#1` # PART2 — Những mẫu đặt ở cuối câu (48–67)
+- `B11-10-part2-cuoi-cau.md#4` ## 48. 彼女に嫌われるな — ～な
+- `B11-10-part2-cuoi-cau.md#40` ## 49. 困ったなあ — ～なあ
+- `B11-10-part2-cuoi-cau.md#73` ## 50. 紅茶にしようかな — ～かな
+- `B11-10-part2-cuoi-cau.md#109` ## 51. 明日は晴れるかなあ — ～かなあ
+- `B11-10-part2-cuoi-cau.md#141` ## 52. 間に合うかも — ～かも
+- `B11-10-part2-cuoi-cau.md#176` ## 53. 勝てる気がする — ～気がする
+- `B11-10-part2-cuoi-cau.md#205` ## 54. 知ってるでしょ？ — ～でしょ
+- `B11-10-part2-cuoi-cau.md#240` ## 55. 大変じゃない？ — ～じゃない？
+- `B11-10-part2-cuoi-cau.md#280` ## 56. 無理なんじゃない？ — ～んじゃない？
+- `B11-10-part2-cuoi-cau.md#318` ## 57. 遅れてるみたい — ～みたい
+- `B11-10-part2-cuoi-cau.md#354` ## 58. きっとできると思う — ～と思う
+- `B11-10-part2-cuoi-cau.md#388` ## 59. いつだっけ？ — ～っけ
+- `B11-10-part2-cuoi-cau.md#421` ## 60. おいしかったし、雰囲気もよかったし… — ～し～し／～し
+- `B11-10-part2-cuoi-cau.md#461` ## 61. ちょっと聞きたいんだけど — ～が／～けど（婉曲）
+- `B11-10-part2-cuoi-cau.md#493` ## 62. コンビニに行くけど… — ～が／～けど（単純接続）
+- `B11-10-part2-cuoi-cau.md#526` ## 63. もう用意できてるから — ～ので／～から
+- `B11-10-part2-cuoi-cau.md#559` ## 64. 毎日練習してるのに — ～のに
+- `B11-10-part2-cuoi-cau.md#591` ## 65. 旅行に行こうと思って — ～って／～で
+- `B11-10-part2-cuoi-cau.md#624` ## 66. いろんな趣味があるもんだね — ～もの（だ）／～もん（だ）
+- `B11-10-part2-cuoi-cau.md#656` ## 67. 日本の食べ物はどう？ — ～どう？
+- `B11-11-part2-noi-thoai.md#1` # 会話をつなぐもの — Nối tiếp hội thoại (68–74)
+- `B11-11-part2-noi-thoai.md#6` ## 68. うん、だいぶよくなったよ — うん
+- `B11-11-part2-noi-thoai.md#30` ## 69. うーん、どうだろう — うーん
+- `B11-11-part2-noi-thoai.md#51` ## 70. へー、そうなんだ — へー／ああ
+- `B11-11-part2-noi-thoai.md#72` ## 71. えっ？ 明日じゃなかった？ — えっ？
+- `B11-11-part2-noi-thoai.md#96` ## 72. なるほど。頭いい！ — なるほど／ふーん
+- `B11-11-part2-noi-thoai.md#117` ## 73. で、どうなったの？ — で、～
+- `B11-11-part2-noi-thoai.md#141` ## 74. あのさ、今週の土曜さ — ～さ／～ね
+- `B11-12-part2-kosoado.md#1` # こそあど — Các cách chỉ gần, xa và hỏi (75–82)
+- `B11-12-part2-kosoado.md#6` ## 75. この辺に喫茶店なかった？ — この／その／あの／どの
+- `B11-12-part2-kosoado.md#34` ## 76. こっちにするよ — こっち／そっち／あっち／どっち
+- `B11-12-part2-kosoado.md#62` ## 77. こちらにお入りください — こちら／そちら／あちら／どちら
+- `B11-12-part2-kosoado.md#89` ## 78. こうすれば、開くんだよ — こう／ああ／どう（副詞）
+- `B11-12-part2-kosoado.md#117` ## 79. そんな話、初めて聞いた — こんな／そんな／あんな／どんな
+- `B11-12-part2-kosoado.md#143` ## 80. そういうかばんが欲しい — こういう／そういう／ああいう／どういう
+- `B11-12-part2-kosoado.md#169` ## 81. それは心配だね — それ
+- `B11-12-part2-kosoado.md#206` ## 82. そう。それはよかった — そう
+- `B11-13-part2-nhieu-dang.md#1` # いろいろな形につくもの — Cách nói đi với nhiều dạng (83–88)
+- `B11-13-part2-nhieu-dang.md#6` ## 83. かさはいいよ — ～はいい（不要）
+- `B11-13-part2-nhieu-dang.md#35` ## 84. 何か書くものある？ — なにか
+- `B11-13-part2-nhieu-dang.md#65` ## 85. なんか寒くない？ — なんか／なんだか
+- `B11-13-part2-nhieu-dang.md#100` ## 86. 何て答える？ — 何と／何て・何という／何ていう
+- `B11-13-part2-nhieu-dang.md#128` ## 87. 辛いほうが好き — ～ほう
+- `B11-13-part2-nhieu-dang.md#157` ## 88. やっぱりバスで行かない？ — やっぱり
+- `B11-14-tra-cuu.md#2` # 文型リスト — Danh sách 88 mẫu câu
+- `B11-14-tra-cuu.md#98` # さくいん — Chỉ mục
+- `B11-14-tra-cuu.md#103` ## あ
+- `B11-14-tra-cuu.md#118` ## か
+- `B11-14-tra-cuu.md#141` ## さ
+- `B11-14-tra-cuu.md#161` ## た
+- `B11-14-tra-cuu.md#202` ## な
+- `B11-14-tra-cuu.md#233` ## は
+- `B11-14-tra-cuu.md#249` ## ま
+- `B11-14-tra-cuu.md#259` ## や
+
+## B12 — わかる！話せる！日本語会話 発展文型125
+
+- `B12-00-front.md#2` # わかる！話せる！日本語会話 発展文型125
+- `B12-00-front.md#9` ## はじめに — Lời đầu
+- `B12-00-front.md#20` ## 目次 — Mục lục theo mạch sách
+- `B12-00-front.md#72` ## 学習の流れ — Tiến trình học
+- `B12-00-front.md#83` ## 本書の使い方 — Cách dùng sách
+- `B12-00-front.md#90` ## CDの使い方 — Cách dùng CD
+- `B12-01-josho.md#2` # 序章 会話をより豊かなものに
+- `B12-01-josho.md#7` ## Năm điểm để trò chuyện có chiều sâu
+- `B12-02-part1-bun-setsuzoku.md#2` # PART1 形でとらえる基本表現
+- `B12-02-part1-bun-setsuzoku.md#7` ## 1. これ、何かの間違いかと思うんですけど — ～かと
+- `B12-02-part1-bun-setsuzoku.md#30` ## 2. 疲れてるからって、休むわけにいかないよ — ～からって
+- `B12-02-part1-bun-setsuzoku.md#55` ## 3. 田中さんの考え方は古いというか… — ～というか／～っていうか
+- `B12-02-part1-bun-setsuzoku.md#76` ## 4. おかずというより、おかしだね — ～というより／～っていうより
+- `B12-03-part1-doushi-setsuzoku.#1` # PART1 ②動詞に接続する形 — Dạng nối với động từ
+- `B12-03-part1-doushi-setsuzoku.#4` ## 5. 行けないことはないんですけど… — ～ないことはない
+- `B12-03-part1-doushi-setsuzoku.#25` ## 6. なくさないようご注意ください — ～よう
+- `B12-04-part1-tekei.md#1` # PART1 ③よく使う「て形」接続の形 — Các dạng thường nối với 「て形」
+- `B12-04-part1-tekei.md#4` ## 7. ちょっと考えてみるよ — ～てみる
+- `B12-04-part1-tekei.md#24` ## 8. じゃ、食べてあげるよ — ～てあげる／～てやる
+- `B12-04-part1-tekei.md#44` ## 9. ちょっと聞いてくれる？ — ～てくれる／～てもらう
+- `B12-05-part1-shouryaku.md#1` # PART1 ④省略型 — Dạng nói rút gọn
+- `B12-05-part1-shouryaku.md#4` ## 10. 明日の予定は？ — ～は？
+- `B12-05-part1-shouryaku.md#26` ## 11. 土曜日はどう？ — ～はどう？
+- `B12-05-part1-shouryaku.md#48` ## 12. 電話で聞いてみれば？ — ～ば？
+- `B12-05-part1-shouryaku.md#70` ## 13. パソコンが変なんだけど… — ～んだけど／～んですけど
+- `B12-06-part1-henkei.md#1` # PART1 ⑤変形型 — Dạng biến đổi trong lời nói
+- `B12-06-part1-henkei.md#4` ## 14. 誰にも言っちゃだめだよ — ～ちゃ
+- `B12-06-part1-henkei.md#24` ## 15. ちょっとわかんないです — 「ら行の音→ん」の変化
+- `B12-07-part1-kosoado.md#1` # PART1 ⑥こそあど — Các cách nói với こ・そ・あ・ど
+- `B12-07-part1-kosoado.md#4` ## 16. 例のあれ、うまくいってる？ — あれ
+- `B12-07-part1-kosoado.md#27` ## 17. これは困ったな — これ
+- `B12-07-part1-kosoado.md#50` ## 18. えっ、何、それ？ — それ
+- `B12-07-part1-kosoado.md#71` ## 19. うん、そこだよね — そこ
+- `B12-07-part1-kosoado.md#92` ## 20. そんなの変だと思います — そんなの
+- `B12-07-part1-kosoado.md#113` ## 21. どうだろう — どう
+- `B12-07-part1-kosoado.md#134` ## 22. どうやって資金を集めるつもり？ — どうやって
+- `B12-07-part1-kosoado.md#155` ## 23. どうも風邪ひいたみたいで — どうも／どうやら
+- `B12-07-part1-kosoado.md#178` ## コラム：「ら行の音→ん」の例
+- `B12-08-part2-a-hanou.md#1` # PART2 目的別でとらえる基本表現 — Nắm cách nói cơ bản theo mục đích
+- `B12-08-part2-a-hanou.md#6` ## Trang mở PART2
+- `B12-08-part2-a-hanou.md#11` ## 24. 確かにそうかもしれません — 確かに
+- `B12-08-part2-a-hanou.md#32` ## 25. そのとおり。こんなこと、絶対許せない。 — そのとおり
+- `B12-08-part2-a-hanou.md#51` ## 26. おっしゃるとおりです — おっしゃるとおり
+- `B12-08-part2-a-hanou.md#70` ## 27. そうか、足りないか — そうか
+- `B12-08-part2-a-hanou.md#93` ## 28. はあ — はあ
+- `B12-08-part2-a-hanou.md#114` ## 29. ほう、そうですか。 — ほう
+- `B12-09-part2-a-hajimeru.md#1` # PART2 A② 話を始める・話を続ける — Bắt đầu và nối tiếp câu chuyện
+- `B12-09-part2-a-hajimeru.md#4` ## 30. いやあ、まいったね — いやあ
+- `B12-09-part2-a-hajimeru.md#23` ## 31. 実は私もそうなんです — 実は
+- `B12-09-part2-a-hajimeru.md#42` ## 32. ところで、森さん、来なかったね — ところで
+- `B12-09-part2-a-hajimeru.md#61` ## 33. そう言えば、５月は京都に行ったんですか — そう言えば
+- `B12-09-part2-a-hajimeru.md#81` ## 34. でも、よく頑張ったよ、日本 — でも
+- `B12-09-part2-a-hajimeru.md#102` ## 35. それで考えたんだけど — それで
+- `B12-09-part2-a-hajimeru.md#123` ## 36. というわけで、来週の発表会は延期だって — というわけで
+- `B12-09-part2-a-hajimeru.md#140` ## 37. とすると、明日には間に合わない？ — とすると
+- `B12-10-part2-a-tsuketasu.md#1` # PART2 A③ 内容を付け足す — Bổ sung điều muốn nói
+- `B12-10-part2-a-tsuketasu.md#4` ## 38. あと、中間報告をしてくださいね — あと／あとは
+- `B12-10-part2-a-tsuketasu.md#25` ## 39. ちなみに、集合場所は同じね — ちなみに
+- `B12-10-part2-a-tsuketasu.md#47` ## 40. しかも、礼儀正しくて感じがいいんだ — しかも
+- `B12-10-part2-a-tsuketasu.md#68` ## 41. といっても、仕上がりが雑だと困るけど — といっても
+- `B12-10-part2-a-tsuketasu.md#89` ## 42. それに、食事も値段の割にまあまあ — それに
+- `B12-11-part2-a-uketsugu.md#1` # PART2 A④ 相手の話を受けて続ける — Nối tiếp lời người đối thoại
+- `B12-11-part2-a-uketsugu.md#4` ## 43. それが、もうだめになったんだって — それが
+- `B12-11-part2-a-uketsugu.md#27` ## 44. それよりお昼にしよう — それより
+- `B12-11-part2-a-uketsugu.md#50` ## 45. それなら、すぐにでも就職活動始めたほうがいいよ — それなら
+- `B12-11-part2-a-uketsugu.md#71` ## 46. そうじゃなくて、電球が１つ切れてるんだ — そうじゃなくて
+- `B12-12-part2-a-ma.md#1` # PART2 A⑤ 間（ま）をとる — Dừng một nhịp khi nói
+- `B12-12-part2-a-ma.md#4` ## 47. えーっと、ちょっと待ってよ、今言うから — えーっと
+- `B12-12-part2-a-ma.md#25` ## 48. そのう…鍵をなくしちゃって… — そのう
+- `B12-12-part2-a-ma.md#48` ## 49. まあ、食べられないことはないけど — まあ／ま
+- `B12-12-part2-a-ma.md#69` ## 50. そうですね、ちょっと厳しいかもしれませんね — そうですね
+- `B12-13-part2-a-hitei.md#1` # PART2 A⑥ 軽く否定する — Phủ định nhẹ
+- `B12-13-part2-a-hitei.md#4` ## 51. そんなことない。 — そんなことない
+- `B12-13-part2-a-hitei.md#24` ## 52. 違いますよ — 違います／違う
+- `B12-13-part2-a-hitei.md#44` ## 53. いえ、次の角です — いえ
+- `B12-13-part2-a-hitei.md#64` ## 54. いえいえ、それは恐縮です — いえいえ
+- `B12-13-part2-a-hitei.md#84` ## 55. いやいや、うちからは割と近いんですよ — いやいや
+- `B12-14-part2-a-oeru.md#1` # PART2 A⑦ 話を終える — Kết thúc câu chuyện
+- `B12-14-part2-a-oeru.md#4` ## 56. じゃ、そういうことで、今日は終わりにします — そういうことで
+- `B12-14-part2-a-oeru.md#26` ## 57. 大体以上です — 以上です
+- `B12-14-part2-a-oeru.md#46` ## 58. …そういうわけなんです — そういうわけです
+- `B12-15-part2-b-anshin.md#1` # PART2 B 気持ちを表す ①安心・喜び — Bày tỏ sự an tâm và vui mừng
+- `B12-15-part2-b-anshin.md#4` ## 59. よかったね — よかった
+- `B12-15-part2-b-anshin.md#25` ## 60. 助かった！ — 助かった／助かる
+- `B12-16-part2-b-warui.md#1` # PART2 B② よくない状況 — Khi tình hình không thuận lợi
+- `B12-16-part2-b-warui.md#4` ## 61. 困ったなあ、計算が合わない — 困った
+- `B12-16-part2-b-warui.md#22` ## 62. まいったなあ — まいった
+- `B12-16-part2-b-warui.md#41` ## 63. 弱ったなあ — 弱った
+- `B12-16-part2-b-warui.md#61` ## 64. どうしよう — どうしよう
+- `B12-17-part2-b-kyouchou.md#1` # PART2 B③ 強調 — Nhấn mạnh điều muốn nói
+- `B12-17-part2-b-kyouchou.md#4` ## 65. また買いに来ればいいって — ～って
+- `B12-17-part2-b-kyouchou.md#24` ## 66. だめだってば — ～てば
+- `B12-17-part2-b-kyouchou.md#44` ## 67. 集合時間が早すぎるんだもの — ～だもの
+- `B12-17-part2-b-kyouchou.md#64` ## 68. そんなに早く起きられないったら — ～たら
+- `B12-18-part2-b-akirame.md#1` # PART2 B④ あきらめ — Khi đành bỏ cuộc
+- `B12-18-part2-b-akirame.md#4` ## 69. しょうがないよ、直せないんだもの — しょうがない／仕方がない
+- `B12-18-part2-b-akirame.md#25` ## 70. いくら工夫してみてもだめなんだ — いくら～ても
+- `B12-18-part2-b-akirame.md#46` ## 71. どうせ断られるよ — どうせ
+- `B12-19-part2-b-hyouka.md#1` # PART2 B⑤ 軽い扱い・低い評価 — Coi nhẹ hoặc đánh giá thấp
+- `B12-19-part2-b-hyouka.md#4` ## 72. それくらいなら、あきらめられるでしょう — ～くらい／ぐらい
+- `B12-19-part2-b-hyouka.md#24` ## 73. 洗ったぐらいじゃ、この汚れは落ちないよ — ～じゃ
+- `B12-19-part2-b-hyouka.md#44` ## 74. でも、哲学なんか役に立つの？ — ～なんか／なんて
+- `B12-20-part2-b-teinei.md#1` # PART2 B⑥ 丁寧さ・控えめさ — Lịch sự và dè dặt
+- `B12-20-part2-b-teinei.md#4` ## 75. 悪いけど、今晩はもう帰らせてもらうよ — ～（さ）せてもらう／（さ）せていただく
+- `B12-20-part2-b-teinei.md#27` ## 76. よろしいでしょうか — よろしい
+- `B12-21-part2-b-fuman.md#1` # PART2 B⑦ 不満・注文・主張・理由 — Bất mãn, yêu cầu, khẳng định và lý do
+- `B12-21-part2-b-fuman.md#4` ## 77. ただ、引用が多すぎるって、先生が注意してた — ただ
+- `B12-21-part2-b-fuman.md#25` ## 78. ただし、次回はもうだめですからね — ただし
+- `B12-21-part2-b-fuman.md#46` ## 79. だって、道が混んでたんだもん — だって
+- `B12-21-part2-b-fuman.md#69` ## 80. だから、早めに予約しようって言ったのに！ — だから
+- `B12-21-part2-b-fuman.md#90` ## 81. いやになっちゃうな、もう — もう
+- `B12-21-part2-b-fuman.md#111` ## 82. は？　５名で予約したはずですが — は？／はあ？
+- `B12-22-part2-b-odoroki.md#1` # PART2 B⑧ 驚き・感心 — Ngạc nhiên và cảm thán
+- `B12-22-part2-b-odoroki.md#4` ## 83. よくそんなことが言えるなあ — よく
+- `B12-22-part2-b-odoroki.md#25` ## 84. まったく、近頃の学生は勝手ですね — まったく
+- `B12-22-part2-b-odoroki.md#46` ## 85. これはまた、どうしたんですか、二人で？ — また
+- `B12-23-part2-c-homeru.md#1` # PART2 C① ほめる・評価する・励ます — Khen, đánh giá và khích lệ
+- `B12-23-part2-c-homeru.md#4` ## 86. 森さんには感心する — 感心する
+- `B12-23-part2-c-homeru.md#29` ## 87. 連続勝利、素晴らしいね — 素晴らしい
+- `B12-23-part2-c-homeru.md#52` ## 88. こんな賞をもらうなんて、大したもんだ — 大したものだ／大したもんだ
+- `B12-23-part2-c-homeru.md#73` ## 89. すごいニュース！ — すごい
+- `B12-23-part2-c-homeru.md#94` ## 90. これはなかなかいい — なかなか
+- `B12-23-part2-c-homeru.md#115` ## 91. わりと易しかったよ — わりと
+- `B12-23-part2-c-homeru.md#133` ## 92. 駅から案外、遠いんだね — 案外
+- `B12-24-part2-c-kakunin.md#1` # PART2 C② 確認を促す・相手を促す — Xác nhận và thúc giục người đối thoại
+- `B12-24-part2-c-kakunin.md#4` ## 93. おい、早く行こうぜ — ～ぜ
+- `B12-24-part2-c-kakunin.md#27` ## 94. あとで怒られても知らないぞ — ～ぞ
+- `B12-24-part2-c-kakunin.md#47` ## 95. しっかり謝ったほうがいいよ — しっかり
+- `B12-24-part2-c-kakunin.md#68` ## 96. はい、ちゃんと出しましたよ — ちゃんと
+- `B12-24-part2-c-kakunin.md#89` ## 97. これでいいじゃん — ～じゃん
+- `B12-25-part2-c-shitsumon.md#1` # PART2 C③ さらに質問する — Hỏi tiếp
+- `B12-25-part2-c-shitsumon.md#4` ## 98. それで、帰りはいつごろ？ — それで？
+- `B12-25-part2-c-shitsumon.md#27` ## 99. へー。それから？ — それから？
+- `B12-26-part3-kaiwa-kotoba.md#1` # PART3 説明に使う言葉 — Những từ dùng để giải thích
+- `B12-26-part3-kaiwa-kotoba.md#7` ## 100. こんな具合です — 具合
+- `B12-26-part3-kaiwa-kotoba.md#30` ## 101. 軽く押さえる感じで拭き取ってください — 感じ
+- `B12-26-part3-kaiwa-kotoba.md#54` ## 102. ゼミの発表はどういう形で進めたらいいでしょうか — 形
+- `B12-26-part3-kaiwa-kotoba.md#75` ## 103. その右にあるやつ — やつ
+- `B12-26-part3-kaiwa-kotoba.md#99` ## 104. わけわかんない — わけ
+- `B12-26-part3-kaiwa-kotoba.md#120` ## 105. なかなかいい線行ってると思う — 線
+- `B12-26-part3-kaiwa-kotoba.md#141` ## 106. お休みのところ、ごめんなさい — ～ところ
+- `B12-26-part3-kaiwa-kotoba.md#163` ## 107. そういうつもり — ～つもり
+- `B12-26-part3-kaiwa-kotoba.md#181` ## 108. 仕事が少し大変だけど — 大変
+- `B12-26-part3-kaiwa-kotoba.md#199` ## 109. 日曜はちょっと… — ちょっと
+- `B12-26-part3-kaiwa-kotoba.md#222` ## 110. いろいろとお世話になりました — いろいろ
+- `B12-26-part3-kaiwa-kotoba.md#245` ## 111. さっき部長が探してたよ — さっき
+- `B12-26-part3-kaiwa-kotoba.md#263` ## 112. 前に一度会ったことがある — 前に
+- `B12-26-part3-kaiwa-kotoba.md#281` ## 113. どうも道に迷ったみたいですね — どうも
+- `B12-26-part3-kaiwa-kotoba.md#304` ## 114. 今日はだめなんだ — だめ
+- `B12-26-part3-kaiwa-kotoba.md#325` ## 115. ああいうの、いやだよね — いや（嫌）
+- `B12-26-part3-kaiwa-kotoba.md#345` ## 116. 自分だってしないことが多いじゃない — 自分
+- `B12-26-part3-kaiwa-kotoba.md#365` ## 117. じゃ、そのテーブルをお願いします — お願いします
+- `B12-26-part3-kaiwa-kotoba.md#383` ## 118. 森さんに頼んでみたら？ — 頼む
+- `B12-26-part3-kaiwa-kotoba.md#401` ## 119. あ、すみません — ごめん／すみません／申し訳ない
+- `B12-27-part3-nani.md#1` # PART3 ②「何」を含む表現 — Các cách nói chứa 「何」
+- `B12-27-part3-nani.md#4` ## 120. さっきから何、怒ってるんですか — 何
+- `B12-27-part3-nani.md#26` ## 121. なんだ、もっと大きい額かと思った — なんだ（何だ）
+- `B12-27-part3-nani.md#51` ## 122. 昨日はなんで練習、来なかったの？ — なんで（何で）
+- `B12-27-part3-nani.md#71` ## 123. なんと10万円なんです — なんと（何と）
+- `B12-27-part3-nani.md#89` ## 124. なんてひどいこと — なんて／なんてこと
+- `B12-27-part3-nani.md#108` ## 125. 何とかなるよ — 何とか／どうにか
+- `B12-28-bunkei-list.md#1` # 文型リスト — Bảng tra mẫu câu
+- `B12-28-bunkei-list.md#6` ## Trang in 220 — Mẫu 1–33
+- `B12-28-bunkei-list.md#43` ## Trang in 221 — Mẫu 34–64
+- `B12-28-bunkei-list.md#78` ## Trang in 222 — Mẫu 65–97
+- `B12-28-bunkei-list.md#115` ## Trang in 223 — Mẫu 98–125
+- `B12-29-colophon-back.md#1` # Ấn bản và thông tin sách
+- `B12-29-colophon-back.md#4` ## 奥付 — Trang thông tin xuất bản (PDF224)
+- `B12-29-colophon-back.md#17` ## Bìa sau (PDF225)
+
+## B13 — シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版
+
+- `B13-00-bia-muc-luc-huong-dan.m#1` # シャドーイング 日本語を話そう！ 中～上級編
+- `B13-00-bia-muc-luc-huong-dan.m#4` ## Nhan đề và ấn bản
+- `B13-00-bia-muc-luc-huong-dan.m#12` ## はじめに — Lời đầu
+- `B13-00-bia-muc-luc-huong-dan.m#23` ## CONTENTS — Mục lục
+- `B13-00-bia-muc-luc-huong-dan.m#36` ## シャドーイングについて — Về shadowing
+- `B13-00-bia-muc-luc-huong-dan.m#52` ## 本書の構成 — Cấu trúc sách
+- `B13-00-bia-muc-luc-huong-dan.m#61` ## 本書の特徴 — Đặc điểm sách
+- `B13-00-bia-muc-luc-huong-dan.m#80` ## シャドーイングの進め方 — Bước 1–2
+- `B13-00-bia-muc-luc-huong-dan.m#89` ## シャドーイングの進め方 — Bước 3–4
+- `B13-00-bia-muc-luc-huong-dan.m#102` ## シャドーイングの進め方 — Bước 5–6
+- `B13-00-bia-muc-luc-huong-dan.m#113` ## Nếu muốn dành thời gian dài hơn mỗi ngày để luyện shadowing
+- `B13-00-bia-muc-luc-huong-dan.m#118` ## この教材をお使いになる教師の皆さんへ — Dành cho giáo viên (1)
+- `B13-00-bia-muc-luc-huong-dan.m#132` ## Dành cho giáo viên (2)
+- `B13-00-bia-muc-luc-huong-dan.m#149` ## Dành cho giáo viên (3)
+- `B13-01-unit-1-gia-dinh-vo-chon#1` # Unit 1 — 家族・夫婦・恋人との会話
+- `B13-01-unit-1-gia-dinh-vo-chon#4` ## Mở Unit — Hội thoại với người thân, vợ chồng, người yêu
+- `B13-01-unit-1-gia-dinh-vo-chon#16` ## Section ① — Trung cấp · DISK 1 / 02
+- `B13-01-unit-1-gia-dinh-vo-chon#85` ## Section ① — Tiếp · DISK 1 / 03
+- `B13-01-unit-1-gia-dinh-vo-chon#155` ## Section ① — Tiếp · DISK 1 / 04
+- `B13-01-unit-1-gia-dinh-vo-chon#188` ## Section ② — Cao cấp · DISK 1 / 05
+- `B13-01-unit-1-gia-dinh-vo-chon#261` ## Section ② — Cao cấp · DISK 1 / 06
+- `B13-01-unit-1-gia-dinh-vo-chon#319` ## Section ② — Cao cấp · DISK 1 / 07
+- `B13-01-unit-1-gia-dinh-vo-chon#388` ## Section ② — Cao cấp · DISK 1 / 08
+- `B13-01-unit-1-gia-dinh-vo-chon#458` ## Section ② — Cao cấp · DISK 1 / 09
+- `B13-01-unit-1-gia-dinh-vo-chon#506` ## 解説 — Giải thích (trang 36–37)
+- `B13-02-unit-2-ban-than.md#1` # Unit 2 — 親しい友人との会話
+- `B13-02-unit-2-ban-than.md#4` ## Mở Unit — Hội thoại với bạn thân
+- `B13-02-unit-2-ban-than.md#16` ## Section ① — Trung cấp · DISK 1 / 10
+- `B13-02-unit-2-ban-than.md#85` ## Section ① — Trung cấp · DISK 1 / 11
+- `B13-02-unit-2-ban-than.md#150` ## Section ① — Trung cấp · DISK 1 / 12
+- `B13-02-unit-2-ban-than.md#213` ## Section ① — Trung cấp · DISK 1 / 13
+- `B13-02-unit-2-ban-than.md#248` ## Section ② — Cao cấp · DISK 1 / 14
+- `B13-02-unit-2-ban-than.md#317` ## Section ② — Cao cấp · DISK 1 / 15
+- `B13-02-unit-2-ban-than.md#386` ## Section ② — Cao cấp · DISK 1 / 16
+- `B13-02-unit-2-ban-than.md#446` ## Section ② — Cao cấp · DISK 1 / 17
+- `B13-02-unit-2-ban-than.md#503` ## Section ② — Cao cấp · DISK 1 / 18
+- `B13-02-unit-2-ban-than.md#536` ## 解説 — Giải thích (trang 58–59)
+- `B13-03-unit-3-nguoi-quen-hang-#1` # Unit 3 — 知人や近所の人などとの会話
+- `B13-03-unit-3-nguoi-quen-hang-#4` ## Mở Unit — Hội thoại với người quen, hàng xóm
+- `B13-03-unit-3-nguoi-quen-hang-#15` ## Section ① — Trung cấp · DISK 1 / 19
+- `B13-03-unit-3-nguoi-quen-hang-#84` ## Section ① — Trung cấp · DISK 1 / 20
+- `B13-03-unit-3-nguoi-quen-hang-#153` ## Section ① — Trung cấp · DISK 1 / 21
+- `B13-03-unit-3-nguoi-quen-hang-#186` ## Section ② — Cao cấp · DISK 1 / 22
+- `B13-03-unit-3-nguoi-quen-hang-#246` ## Section ② — Cao cấp · DISK 1 / 23
+- `B13-03-unit-3-nguoi-quen-hang-#306` ## Section ② — Cao cấp · DISK 1 / 24
+- `B13-03-unit-3-nguoi-quen-hang-#381` ## Section ② — Cao cấp · DISK 1 / 25
+- `B13-03-unit-3-nguoi-quen-hang-#429` ## Section ② — Cao cấp · DISK 1 / 26
+- `B13-03-unit-3-nguoi-quen-hang-#496` ## Section ② — Cao cấp · DISK 1 / 27
+- `B13-03-unit-3-nguoi-quen-hang-#529` ## 解説 — Giải thích (trang 80)
+- `B13-04-unit-4-bac-si-cua-hang.#1` # Unit 4 — 医者や店員などとの会話
+- `B13-04-unit-4-bac-si-cua-hang.#4` ## Mở Unit — Hội thoại với bác sĩ, nhân viên cửa hàng và người cung cấp dịch vụ
+- `B13-04-unit-4-bac-si-cua-hang.#17` ## Section ① — Trung cấp · DISK 1 / 28
+- `B13-04-unit-4-bac-si-cua-hang.#91` ## Section ① — Trung cấp · DISK 1 / 29
+- `B13-04-unit-4-bac-si-cua-hang.#146` ## Section ② — Cao cấp · DISK 1 / 30
+- `B13-04-unit-4-bac-si-cua-hang.#203` ## Section ② — Cao cấp · DISK 1 / 31
+- `B13-04-unit-4-bac-si-cua-hang.#251` ## Section ② — Cao cấp · DISK 1 / 32
+- `B13-04-unit-4-bac-si-cua-hang.#299` ## Section ② — Cao cấp · DISK 1 / 33
+- `B13-04-unit-4-bac-si-cua-hang.#355` ## 解説 — Giải thích (trang 94)
+- `B13-05-unit-5-dong-nghiep.md#1` # Unit 5 — 同僚との会話
+- `B13-05-unit-5-dong-nghiep.md#4` ## Mở Unit — Hội thoại với đồng nghiệp
+- `B13-05-unit-5-dong-nghiep.md#17` ## Section ① — Trung cấp · DISK 2 / 02
+- `B13-05-unit-5-dong-nghiep.md#86` ## Section ① — Trung cấp · DISK 2 / 03 (tiếp)
+- `B13-05-unit-5-dong-nghiep.md#141` ## Section ① — Trung cấp · DISK 2 / 04 (tiếp)
+- `B13-05-unit-5-dong-nghiep.md#189` ## Section ① — Trung cấp · DISK 2 / 05 (tiếp)
+- `B13-05-unit-5-dong-nghiep.md#237` ## Section ② — Cao cấp · DISK 2 / 06
+- `B13-05-unit-5-dong-nghiep.md#306` ## Section ② — Cao cấp · DISK 2 / 07 (tiếp)
+- `B13-05-unit-5-dong-nghiep.md#375` ## Section ② — Cao cấp · DISK 2 / 08 (tiếp)
+- `B13-05-unit-5-dong-nghiep.md#425` ## Section ② — Cao cấp · DISK 2 / 09 (tiếp)
+- `B13-05-unit-5-dong-nghiep.md#483` ## Section ② — Cao cấp · DISK 2 / 10 (tiếp)
+- `B13-05-unit-5-dong-nghiep.md#531` ## Section ② — Cao cấp · DISK 2 / 11 (tiếp)
+- `B13-05-unit-5-dong-nghiep.md#581` ## 解説 — Giải thích biểu đạt (PDF116–117)
+- `B13-06-unit-6-cap-tren-cap-duo#1` # Unit 6 — 上司や部下との会話
+- `B13-06-unit-6-cap-tren-cap-duo#4` ## Mở Unit — Hội thoại giữa cấp trên và cấp dưới
+- `B13-06-unit-6-cap-tren-cap-duo#17` ## Section ① — Trung cấp · DISK 2 / 12
+- `B13-06-unit-6-cap-tren-cap-duo#79` ## Section ① — Trung cấp · DISK 2 / 13 (tiếp)
+- `B13-06-unit-6-cap-tren-cap-duo#142` ## Section ① — Trung cấp · DISK 2 / 14 (tiếp)
+- `B13-06-unit-6-cap-tren-cap-duo#173` ## Section ② — Cao cấp · DISK 2 / 15
+- `B13-06-unit-6-cap-tren-cap-duo#233` ## Section ② — Cao cấp · DISK 2 / 16 (tiếp)
+- `B13-06-unit-6-cap-tren-cap-duo#302` ## Section ② — Cao cấp · DISK 2 / 17 (tiếp)
+- `B13-06-unit-6-cap-tren-cap-duo#360` ## Section ② — Cao cấp · DISK 2 / 18 (tiếp)
+- `B13-06-unit-6-cap-tren-cap-duo#410` ## 解説 — Giải thích biểu đạt (PDF134)
+- `B13-07-unit-7-nguoi-ngoai-cong#1` # Unit 7 — 社外の人や面接官などとの会話
+- `B13-07-unit-7-nguoi-ngoai-cong#4` ## Mở Unit — Hội thoại với người ngoài công ty và người phỏng vấn
+- `B13-07-unit-7-nguoi-ngoai-cong#17` ## Section ① — Trung cấp · DISK 2 / 19
+- `B13-07-unit-7-nguoi-ngoai-cong#72` ## Section ① — Trung cấp · DISK 2 / 20 (tiếp)
+- `B13-07-unit-7-nguoi-ngoai-cong#108` ## Section ② — Cao cấp · DISK 2 / 21
+- `B13-07-unit-7-nguoi-ngoai-cong#177` ## Section ② — Cao cấp · DISK 2 / 22 (tiếp)
+- `B13-07-unit-7-nguoi-ngoai-cong#230` ## Section ② — Cao cấp · DISK 2 / 23 (tiếp)
+- `B13-07-unit-7-nguoi-ngoai-cong#274` ## Section ② — Cao cấp · DISK 2 / 23 (tiếp)
+- `B13-07-unit-7-nguoi-ngoai-cong#303` ## 解説 — Giải thích biểu đạt (PDF148)
+- `B13-08-unit-8-hoi-thoai-dai.md#1` # Unit 8 — 長い会話・スピーチなど
+- `B13-08-unit-8-hoi-thoai-dai.md#4` ## Mở Unit — Hội thoại dài và bài phát biểu
+- `B13-08-unit-8-hoi-thoai-dai.md#20` ## Section ① — Cao cấp · クレーム (khiếu nại) · DISK 2 / 24
+- `B13-08-unit-8-hoi-thoai-dai.md#60` ## Section ② — Cao cấp · 恋愛トーク (chuyện tình cảm) · DISK 2 / 25
+- `B13-08-unit-8-hoi-thoai-dai.md#112` ## Section ③ — Cao cấp · 野球観戦 (xem bóng chày) · DISK 2 / 26
+- `B13-08-unit-8-hoi-thoai-dai.md#145` ## Section ④ — Cao cấp · 上司と部下 (cấp trên và cấp dưới) · DISK 2 / 27
+- `B13-08-unit-8-hoi-thoai-dai.md#193` ## Section ⑤ — Cao cấp · 就職面接 (phỏng vấn xin việc) · DISK 2 / 28
+- `B13-08-unit-8-hoi-thoai-dai.md#225` ## Section ⑥ — Cao cấp · テレフォンショッピング (mua sắm qua điện thoại) · DISK 2 / 29
+- `B13-08-unit-8-hoi-thoai-dai.md#243` ## Section ⑦ — Cao cấp · 結婚式 新郎のスピーチ (lời chú rể tại lễ cưới) · DISK 2 / 30
+- `B13-08-unit-8-hoi-thoai-dai.md#261` ## Section ⑧ — Cao cấp · プレゼンテーション (thuyết trình) · DISK 2 / 31
+- `B13-08-unit-8-hoi-thoai-dai.md#279` ## 解説 — Giải thích biểu đạt (PDF166–167)
+- `B13-09-thong-tin-xuat-ban.md#1` # Thông tin ấn bản và người thực hiện
+- `B13-09-thong-tin-xuat-ban.md#11` ## Tác giả và giới thiệu in trong sách
+
+## B14 — シャドーイング 日本語を話そう！ 初～中級編 インドネシア語・タイ語・ベトナム語版
+
+- `B14-00-bia-loi-noi-dau-muc-luc#1` # シャドーイング 日本語を話そう！ 初～中級編
+- `B14-00-bia-loi-noi-dau-muc-luc#4` ## Nhan đề
+- `B14-00-bia-loi-noi-dau-muc-luc#13` ## はじめに — Lời nói đầu
+- `B14-00-bia-loi-noi-dau-muc-luc#28` ## Mục lục — phần mở đầu
+- `B14-00-bia-loi-noi-dau-muc-luc#38` ## Mục lục — năm Unit
+- `B14-01-gioi-thieu-huong-dan.md#1` # Introduction — Giới thiệu và hướng dẫn
+- `B14-01-gioi-thieu-huong-dan.md#4` ## シャドーイングについて — Về shadowing
+- `B14-01-gioi-thieu-huong-dan.md#17` ## 本書の構成 — Cấu trúc sách
+- `B14-01-gioi-thieu-huong-dan.md#32` ## 本書の特徴 — Đặc trưng của sách
+- `B14-01-gioi-thieu-huong-dan.md#64` ## この教材をお使いになる学習者の皆さんへ — Gửi người học
+- `B14-01-gioi-thieu-huong-dan.md#88` ## この教材をお使いになる教師の皆さんへ — Gửi giáo viên
+- `B14-02-unit-1.md#1` # Unit 1
+- `B14-02-unit-1.md#4` ## Mở đầu Unit 1
+- `B14-02-unit-1.md#14` ## Section 1
+- `B14-02-unit-1.md#89` ## Section 2
+- `B14-02-unit-1.md#166` ## Section 3
+- `B14-02-unit-1.md#243` ## Section 4
+- `B14-02-unit-1.md#324` ## Section 5
+- `B14-02-unit-1.md#399` ## Section 6
+- `B14-02-unit-1.md#474` ## Section 7
+- `B14-02-unit-1.md#557` ## Section 8
+- `B14-02-unit-1.md#640` ## Section 9
+- `B14-02-unit-1.md#721` ## Section 10
+- `B14-02-unit-1.md#798` ## 解説 — Giải thích cuối Unit 1
+- `B14-03-unit-2.md#1` # Unit 2
+- `B14-03-unit-2.md#4` ## Mở đầu Unit 2
+- `B14-03-unit-2.md#14` ## Section 1
+- `B14-03-unit-2.md#91` ## Section 2
+- `B14-03-unit-2.md#166` ## Section 3
+- `B14-03-unit-2.md#241` ## Section 4
+- `B14-03-unit-2.md#318` ## Section 5
+- `B14-03-unit-2.md#395` ## Section 6
+- `B14-03-unit-2.md#472` ## Section 7
+- `B14-03-unit-2.md#547` ## Section 8
+- `B14-03-unit-2.md#624` ## Section 9
+- `B14-03-unit-2.md#688` ## 解説 — Giải thích cuối Unit 2
+- `B14-04-unit-3.md#1` # Unit 3
+- `B14-04-unit-3.md#4` ## Mở đầu Unit 3
+- `B14-04-unit-3.md#14` ## Section 1
+- `B14-04-unit-3.md#91` ## Section 2
+- `B14-04-unit-3.md#168` ## Section 3
+- `B14-04-unit-3.md#245` ## Section 4
+- `B14-04-unit-3.md#322` ## Section 5
+- `B14-04-unit-3.md#401` ## Section 6
+- `B14-04-unit-3.md#478` ## Section 7
+- `B14-04-unit-3.md#555` ## Section 8
+- `B14-04-unit-3.md#618` ## 解説 — Giải thích cuối Unit 3
+- `B14-04-unit-3.md#636` ## コラム① 待遇表現 — Chọn cách nói theo người nghe
+- `B14-05-unit-4.md#1` # Unit 4
+- `B14-05-unit-4.md#4` ## Mở đầu Unit 4
+- `B14-05-unit-4.md#14` ## Section 1
+- `B14-05-unit-4.md#91` ## Section 2
+- `B14-05-unit-4.md#168` ## Section 3
+- `B14-05-unit-4.md#245` ## Section 4
+- `B14-05-unit-4.md#322` ## Section 5
+- `B14-05-unit-4.md#397` ## Section 6
+- `B14-05-unit-4.md#474` ## Section 7
+- `B14-05-unit-4.md#551` ## Section 8
+- `B14-05-unit-4.md#628` ## 解説 — Giải thích cuối Unit 4
+- `B14-05-unit-4.md#645` ## コラム② 相手がいると楽しい — Có người cùng luyện sẽ vui hơn
+- `B14-06-unit-5.md#1` # Unit 5
+- `B14-06-unit-5.md#4` ## Mở đầu Unit 5
+- `B14-06-unit-5.md#14` ## Section 1
+- `B14-06-unit-5.md#113` ## Section 2
+- `B14-06-unit-5.md#214` ## Section 3
+- `B14-06-unit-5.md#317` ## Section 4
+- `B14-06-unit-5.md#428` ## Section 5
+- `B14-06-unit-5.md#535` ## Section 6
+- `B14-06-unit-5.md#642` ## Section 7
+- `B14-06-unit-5.md#747` ## 解説 — Giải thích cuối Unit 5
+- `B14-06-unit-5.md#767` ## コラム③ 日本語学習者にインタビューしました！ — Phỏng vấn người học tiếng Nhật
+- `B14-07-xuat-ban-phu-luc.md#1` # 著者紹介・奥付 — Tác giả và thông tin xuất bản
+- `B14-07-xuat-ban-phu-luc.md#4` ## 著者紹介 — Giới thiệu tác giả
+- `B14-07-xuat-ban-phu-luc.md#13` ## 奥付 — Thông tin ấn bản
+
+## B15 — 上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―
+
+- `B15-00-huong-dan.md#1` # 上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―
+- `B15-00-huong-dan.md#4` ## Nhan đề và thông tin sách
+- `B15-00-huong-dan.md#11` ## はじめに — Lời đầu
+- `B15-00-huong-dan.md#20` ## 目次 — Mục lục
+- `B15-00-huong-dan.md#45` ## 本書のねらい — Mục tiêu của sách
+- `B15-00-huong-dan.md#56` ## 本書の構成・特徴 — Cấu trúc và đặc điểm
+- `B15-00-huong-dan.md#78` ## 本書の使い方 — Cách dùng sách
+- `B15-00-huong-dan.md#93` ## 授業展開の具体例 — Ví dụ triển khai phần hội thoại thương mại (90 phút)
+- `B15-00-huong-dan.md#114` ## Ví dụ triển khai phần văn hóa doanh nghiệp (90 phút)
+- `B15-00-huong-dan.md#128` ## 本書に登場する会社と人物 — Công ty và nhân vật xuất hiện
+- `B15-00-huong-dan.md#157` ## モデル会話の内容 — Diễn tiến hội thoại mẫu
+- `B15-01-bai-01.md#1` # 1課 — 自己紹介を行う（社内） · Tự giới thiệu trong công ty
+- `B15-01-bai-01.md#4` ## Dòng hội thoại thương mại
+- `B15-01-bai-01.md#11` ## モデル会話 CD 01 — Hội thoại mẫu
+- `B15-01-bai-01.md#22` ## 語彙・表現 — Từ và cách diễn đạt
+- `B15-01-bai-01.md#62` ## コラム｜自己紹介 — Cột học về tự giới thiệu
+- `B15-01-bai-01.md#69` ## ロールプレイ — Thẻ vai
+- `B15-01-bai-01.md#92` ## 企業文化について考えよう — ケーススタディ「私の言い分」
+- `B15-01-bai-01.md#108` ## 異文化ロールプレイ「自慢話と自己アピール」
+- `B15-02-bai-02.md#1` # 2課 — 自己紹介を行う（社外） · Tự giới thiệu với người ngoài công ty
+- `B15-02-bai-02.md#4` ## ビジネス会話の流れを学ぼう
+- `B15-02-bai-02.md#12` ## モデル会話 CD 02 — Hội thoại mẫu
+- `B15-02-bai-02.md#47` ## 語彙・表現 — 練習しましょう 01｜承る
+- `B15-02-bai-02.md#116` ## 確認しましょう — Kiểm tra cách dùng
+- `B15-02-bai-02.md#152` ## コラム｜雑談（世間話）の話題 — Chủ đề chuyện phiếm
+- `B15-02-bai-02.md#172` ## ロールプレイ ❶ — Tại siêu thị ピークス
+- `B15-02-bai-02.md#199` ## ロールプレイ ❷ — Tại trụ sở nhà hàng サニーズ
+- `B15-02-bai-02.md#214` ## 企業文化について考えよう — ケーススタディ「私の言い分」
+- `B15-02-bai-02.md#238` ## 異文化ロールプレイ「仕事の範囲」 — Phạm vi công việc
+- `B15-03-bai-03.md#1` # 3課 — 電話を受ける · Nhận điện thoại
+- `B15-03-bai-03.md#4` ## ビジネス会話の流れを学ぼう 1｜担当者に取り次ぐ
+- `B15-03-bai-03.md#9` ## モデル会話 CD 03 — Chuyển cuộc gọi
+- `B15-03-bai-03.md#27` ## 2｜伝言を受ける — Nhận lời nhắn
+- `B15-03-bai-03.md#32` ## モデル会話 CD 04 — Nhận lời nhắn
+- `B15-03-bai-03.md#68` ## 語彙・表現 — 練習しましょう 01｜インフォーマル／フォーマルの言葉の使い分け
+- `B15-03-bai-03.md#127` ## 確認しましょう — Ôn lại cách dùng
+- `B15-03-bai-03.md#154` ## コラム｜電話対応の基本 — Cơ bản khi nghe điện thoại
+- `B15-03-bai-03.md#165` ## ロールプレイ 1｜担当者に取り次ぐ・伝言を受ける
+- `B15-03-bai-03.md#188` ## ロールプレイ 2｜Khi không nghe rõ lời nhắn
+- `B15-03-bai-03.md#199` ## 企業文化について考えよう｜ケーススタディ 私の言い分 — 「家庭と仕事、どっちが大事？」
+- `B15-03-bai-03.md#230` ## 異文化ロールプレイ「休暇の申請」 — Xin nghỉ phép
+- `B15-04-bai-04.md#1` # 4課 — アポイントを取る · Hẹn và đổi lịch hẹn
+- `B15-04-bai-04.md#4` ## ビジネス会話の流れを学ぼう｜1. アポイントを取る
+- `B15-04-bai-04.md#17` ## モデル会話 CD 05 — Hẹn thăm đối tác
+- `B15-04-bai-04.md#50` ## 2. アポイントを変更する — Đổi lịch hẹn
+- `B15-04-bai-04.md#61` ## モデル会話 CD 06 — Đổi lịch hẹn
+- `B15-04-bai-04.md#97` ## 語彙・表現｜練習しましょう 01 — （予定が）詰まっている
+- `B15-04-bai-04.md#156` ## 確認しましょう — Ôn cách diễn đạt
+- `B15-04-bai-04.md#189` ## ロールプレイ 1｜アポイントを取る・変更する — Hẹn và đổi lịch với Sunny's
+- `B15-04-bai-04.md#208` ## ロールプレイ 2｜Hẹn và đổi lịch với Nakadaya
+- `B15-04-bai-04.md#227` ## 企業文化について考えよう｜ケーススタディ 私の言い分 — 「会議で使う資料はいつまでに作ればいい？」
+- `B15-04-bai-04.md#245` ## 異文化ロールプレイ「指示の仕方」 — Cách đưa chỉ thị
+- `B15-05-bai-05.md#1` # 5課 — 会議に参加する · Tham gia cuộc họp
+- `B15-05-bai-05.md#4` ## ビジネス会話の流れを学ぼう｜会議に参加する
+- `B15-05-bai-05.md#15` ## モデル会話 CD 07 — Bàn về kỳ tuyển dụng nhân viên nước ngoài
+- `B15-05-bai-05.md#45` ## 語彙・表現｜練習しましょう 01 — ～んじゃないでしょうか
+- `B15-05-bai-05.md#102` ## 確認しましょう — Ôn lại bốn cách nói
+- `B15-05-bai-05.md#129` ## ロールプレイ 1｜外国人社員採用試験 — Kỳ tuyển dụng nhân viên nước ngoài
+- `B15-05-bai-05.md#141` ## ロールプレイ 2｜外国人社員活用方法 — Cách phát huy nhân viên nước ngoài
+- `B15-05-bai-05.md#150` ## 企業文化について考えよう｜ケーススタディ 私の言い分 — 「沈黙は金？」
+- `B15-05-bai-05.md#162` ## 異文化ロールプレイ「ミーティングでの発言」 — Phát biểu trong cuộc họp
+- `B15-06-bai-06.md#1` # 6課 — クレームを受ける · Tiếp nhận khiếu nại
+- `B15-06-bai-06.md#4` ## ビジネス会話の流れを学ぼう｜クレームを受ける
+- `B15-06-bai-06.md#17` ## モデル会話 CD 08 — Mẫu tiếp nhận khiếu nại
+- `B15-06-bai-06.md#59` ## 語彙・表現｜練習しましょう 01 — 本当ですか
+- `B15-06-bai-06.md#107` ## 確認しましょう 01 — 万全にする
+- `B15-06-bai-06.md#151` ## コラム｜クレーム対応の表現 — Cách nói khi xử lý khiếu nại
+- `B15-06-bai-06.md#170` ## ロールプレイ｜Hai tình huống khiếu nại
+- `B15-06-bai-06.md#194` ## 企業文化について考えよう｜ケーススタディ 私の言い分 — 「どうして謝らなきゃいけないの？」
+- `B15-06-bai-06.md#212` ## 異文化ロールプレイ「謝罪」 — Xin lỗi
+- `B15-07-bai-07.md#1` # 7課 — クレームを報告する · Báo cáo khiếu nại
+- `B15-07-bai-07.md#4` ## ビジネス会話の流れを学ぼう｜クレームを報告する
+- `B15-07-bai-07.md#16` ## モデル会話 CD 09 — Báo cáo với trưởng phòng
+- `B15-07-bai-07.md#48` ## 語彙・表現｜練習しましょう 01 — まずい
+- `B15-07-bai-07.md#90` ## 確認しましょう — Ôn lại các cách nói
+- `B15-07-bai-07.md#125` ## ロールプレイ 1｜Báo khiếu nại của Peaks
+- `B15-07-bai-07.md#143` ## ロールプレイ 2｜Báo khiếu nại của Nakadaya
+- `B15-07-bai-07.md#162` ## 企業文化について考えよう｜ケーススタディ 私の言い分 — 「もう解決したんじゃないの？」
+- `B15-07-bai-07.md#180` ## 異文化ロールプレイ「報告～解決済みの小さなトラブル」 — Báo cáo một lỗi nhỏ đã xử lý
+- `B15-08-bai-08.md#1` # 8課 — クレームを処理する · Xử lý khiếu nại
+- `B15-08-bai-08.md#4` ## ビジネス会話の流れを学ぼう｜クレームを処理する
+- `B15-08-bai-08.md#25` ## モデル会話 CD 10 — Lâm xử lý khiếu nại về logo túi
+- `B15-08-bai-08.md#75` ## 語彙・表現｜練習しましょう 01 — いやあ
+- `B15-08-bai-08.md#127` ## 確認しましょう — Ôn lại cách nói
+- `B15-08-bai-08.md#154` ## ロールプレイ 1 — 「ピークス」で、その後の電話
+- `B15-08-bai-08.md#173` ## ロールプレイ 2 — 「ナカダ屋」の túi rác giao sai
+- `B15-08-bai-08.md#182` ## 企業文化について考えよう｜ケーススタディ 私の言い分 — 「報連相は大事？」
+- `B15-08-bai-08.md#201` ## 異文化ロールプレイ「報告・連絡・相談」 — Báo cáo, liên lạc, trao đổi
+- `B15-09-bai-09.md#1` # 9課 — 会議で提案する（販売促進） · Đề xuất trong cuộc họp
+- `B15-09-bai-09.md#4` ## ビジネス会話の流れを学ぼう｜会議で提案する（販売促進）
+- `B15-09-bai-09.md#20` ## モデル会話 CD 11 — Đề xuất tìm khách hàng mới
+- `B15-09-bai-09.md#47` ## 語彙・表現｜練習しましょう 01 — 余地がある
+- `B15-09-bai-09.md#93` ## 確認しましょう — Ôn lại cách nói
+- `B15-09-bai-09.md#126` ## コラム｜人を呼ぶ時の「君、さん」使い分け
+- `B15-09-bai-09.md#145` ## ロールプレイ 1 — Đề xuất khách hàng mới trong cuộc họp
+- `B15-09-bai-09.md#157` ## ロールプレイ 2 — Tự xây đề xuất sản phẩm mới
+- `B15-09-bai-09.md#169` ## 企業文化について考えよう｜ケーススタディ 私の言い分 — 「情報の共有って？」
+- `B15-09-bai-09.md#185` ## 異文化ロールプレイ「メールでの情報の共有」 — Chia sẻ thông tin qua email
+- `B15-10-bai-10.md#1` # 10課 — 新規顧客を開拓する · Tìm khách hàng mới
+- `B15-10-bai-10.md#4` ## ビジネス会話の流れを学ぼう｜新規顧客を開拓する
+- `B15-10-bai-10.md#18` ## モデル会話 CD 12 — Nhờ đối tác giới thiệu
+- `B15-10-bai-10.md#54` ## 語彙・表現｜練習しましょう 01 — 確か～
+- `B15-10-bai-10.md#104` ## 確認しましょう — Ôn lại cách nói
+- `B15-10-bai-10.md#127` ## ロールプレイ 1 — Xin người quen giới thiệu
+- `B15-10-bai-10.md#136` ## ロールプレイ 2 — Lời từ chối lời nhờ giới thiệu
+- `B15-10-bai-10.md#145` ## 企業文化について考えよう｜ケーススタディ 私の言い分 — 「人前で怒るなんて！」
+- `B15-10-bai-10.md#166` ## 異文化ロールプレイ「メンツ～人前での叱責」 — Thể diện và mắng trước mặt người khác
+- `B15-11-bai-11.md#1` # 11課 — 新規顧客とアポイントを取る · Hẹn gặp khách hàng mới
+- `B15-11-bai-11.md#4` ## ビジネス会話の流れを学ぼう｜新規顧客とアポイントを取る
+- `B15-11-bai-11.md#18` ## モデル会話 CD 13 — Hẹn gặp Watanabe
+- `B15-11-bai-11.md#81` ## 語彙・表現｜練習しましょう 01 — はい／はいはい／はあ（返事）
+- `B15-11-bai-11.md#146` ## 確認しましょう — Ôn lại cách đáp
+- `B15-11-bai-11.md#171` ## ロールプレイ — Gọi điện để xin hẹn gặp
+- `B15-11-bai-11.md#194` ## 企業文化について考えよう — ケーススタディ「私の言い分――『目標は高いほうがいいに決まっているじゃない？』」
+- `B15-11-bai-11.md#214` ## 異文化ロールプレイ「目標設定と評価」
+- `B15-12-bai-12.md#1` # 12課 — 商品を売り込む · Chào bán sản phẩm
+- `B15-12-bai-12.md#4` ## ビジネス会話の流れを学ぼう｜商品を売り込む
+- `B15-12-bai-12.md#20` ## モデル会話 CD 14 — 林 chào bán túi rác cho 渡辺
+- `B15-12-bai-12.md#85` ## 語彙・表現｜練習しましょう 01 — ま／まあ
+- `B15-12-bai-12.md#152` ## 確認しましょう — Ôn lại cách nói
+- `B15-12-bai-12.md#179` ## コラム｜会社名等に付ける敬称「さん」
+- `B15-12-bai-12.md#188` ## ロールプレイ — Chào bán túi rác hoặc vật phẩm quảng bá
+- `B15-12-bai-12.md#211` ## 企業文化について考えよう — ケーススタディ「私の言い分――『能力だけじゃいけないの？』」
+- `B15-12-bai-12.md#233` ## 異文化ロールプレイ「同僚の昇進と不満」
+- `B15-13-bai-13.md#1` # 13課 — 催促の電話をかける · Gọi điện nhắc phản hồi
+- `B15-13-bai-13.md#4` ## ビジネス会話の流れを学ぼう｜催促の電話をかける
+- `B15-13-bai-13.md#19` ## モデル会話 CD 15 — 林 gọi lại cho 渡辺
+- `B15-13-bai-13.md#46` ## 語彙・表現｜練習しましょう 01 — ～ておきながら
+- `B15-13-bai-13.md#96` ## 確認しましょう — Ôn lại cách nói
+- `B15-13-bai-13.md#117` ## ロールプレイ — Gọi hỏi kết quả xem xét giao dịch
+- `B15-13-bai-13.md#140` ## 企業文化について考えよう — ケーススタディ「私の言い分――『縁故採用のどこが問題？』」
+- `B15-13-bai-13.md#162` ## 異文化ロールプレイ「コネ～縁故採用」
+- `B15-14-bai-14.md#1` # 14課 — 交渉を進める · Tiến hành đàm phán
+- `B15-14-bai-14.md#4` ## ビジネス会話の流れを学ぼう｜交渉を進める
+- `B15-14-bai-14.md#22` ## モデル会話 CD 16 — Đàm phán với 北川
+- `B15-14-bai-14.md#81` ## 語彙・表現｜練習しましょう 01 — わざわざ
+- `B15-14-bai-14.md#147` ## 確認しましょう — Ôn lại cách nói
+- `B15-14-bai-14.md#182` ## ロールプレイ — Đàm phán với trưởng ban đối tác
+- `B15-14-bai-14.md#213` ## 企業文化について考えよう — ケーススタディ「私の言い分――『残業は当たり前？』」
+- `B15-14-bai-14.md#237` ## 異文化ロールプレイ「残業」
+- `B15-15-bai-15.md#1` # 15課 — 受注に成功する · Chốt được đơn hàng
+- `B15-15-bai-15.md#4` ## ビジネス会話の流れを学ぼう｜受注に成功する
+- `B15-15-bai-15.md#21` ## モデル会話 CD 17 — Hai cuộc gọi chốt giao dịch
+- `B15-15-bai-15.md#76` ## 語彙・表現｜練習しましょう 01 — おかげ／おかげさま
+- `B15-15-bai-15.md#114` ## 確認しましょう — Ôn lại cách nói
+- `B15-15-bai-15.md#143` ## ロールプレイ — Nhận đơn đặt hàng
+- `B15-15-bai-15.md#166` ## 企業文化について考えよう — ケーススタディ「私の言い分――『最高の接待はお腹がすくもの？』」
+- `B15-15-bai-15.md#196` ## 異文化ロールプレイ「接待」
+- `B15-16-dap-an.md#1` # 別冊 解答 — Đáp án in trong sách
+- `B15-16-dap-an.md#6` ## Bìa biệt sách
+- `B15-16-dap-an.md#11` ## 1課 — Bài 1
+- `B15-16-dap-an.md#21` ## 2課 — Bài 2
+- `B15-16-dap-an.md#62` ## 3課 — Bài 3
+- `B15-16-dap-an.md#96` ## 4課 — Bài 4
+- `B15-16-dap-an.md#131` ## 5課 — Bài 5
+- `B15-16-dap-an.md#170` ## 6課 — Bài 6
+- `B15-16-dap-an.md#203` ## 7課 — Bài 7
+- `B15-16-dap-an.md#231` ## 8課 — Bài 8
+- `B15-16-dap-an.md#270` ## 9課 — Bài 9
+- `B15-16-dap-an.md#298` ## 10課 — Bài 10
+- `B15-16-dap-an.md#330` ## 11課 — Bài 11
+- `B15-16-dap-an.md#371` ## 12課 — Bài 12
+- `B15-16-dap-an.md#408` ## 13課 — Bài 13
+- `B15-16-dap-an.md#438` ## 14課 — Bài 14
+- `B15-16-dap-an.md#479` ## 15課 — Bài 15
+
+## B16 — 中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―
+
+- `B16-01-はじめに・本書の構成.md#1` # 中級レベル ロールプレイで学ぶ ビジネス日本語 ―就活から入社まで―
+- `B16-01-はじめに・本書の構成.md#7` ## はじめに — Lời mở đầu
+- `B16-01-はじめに・本書の構成.md#20` ## 目次 — Mục lục nguồn
+- `B16-01-はじめに・本書の構成.md#40` ## 本書の構成 — Cách tổ chức và sử dụng sách
+- `B16-01-はじめに・本書の構成.md#68` ## モデル会話の内容 — Tình huống của các hội thoại mẫu
+- `B16-01-はじめに・本書の構成.md#81` ## 本書で教える先生方へ — Gợi ý dành cho giảng viên
+- `B16-02-Unit1-就活の準備.md#1` # Unit1　就活（就職活動）の準備 — Chuẩn bị tìm việc
+- `B16-02-Unit1-就活の準備.md#13` ## 1課　インターンシップ情報を得る — Tìm thông tin thực tập
+- `B16-02-Unit1-就活の準備.md#162` ## 2課　インターンシップに応募する — Ứng tuyển thực tập
+- `B16-02-Unit1-就活の準備.md#350` ## ケーススタディ1　カラスの集団？　就活ルックって？ — Cả đàn quạ? Trang phục tìm việc là gì?
+- `B16-03-Unit2-インターンシップ.md#1` # Unit2　インターンシップ — Thực tập
+- `B16-03-Unit2-インターンシップ.md#13` ## 3課　インターンシップに参加する－1 — Dự đợt thực tập ngắn
+- `B16-03-Unit2-インターンシップ.md#153` ## 4課　インターンシップに参加する－2 — Làm việc trong đợt thực tập
+- `B16-03-Unit2-インターンシップ.md#294` ## ケーススタディ2　「ほうれんそう」って必要？ — Có cần “báo cáo, liên lạc, trao đổi” không?
+- `B16-04-Unit3-就職の面接.md#1` # Unit3　就職の面接 — Phỏng vấn tuyển dụng
+- `B16-04-Unit3-就職の面接.md#11` ## 5課　面接を受ける－1 — Phỏng vấn, phần 1
+- `B16-04-Unit3-就職の面接.md#130` ## 6課　面接を受ける－2 — Phỏng vấn, phần 2
+- `B16-04-Unit3-就職の面接.md#268` ## ケーススタディ3　私の意見は正しいのに…… — Ý kiến của tôi đúng mà…
+- `B16-05-Unit4-初めての仕事.md#1` # Unit4　初めての仕事 — Công việc đầu tiên
+- `B16-05-Unit4-初めての仕事.md#11` ## 7課　報告書を書く — Viết báo cáo
+- `B16-05-Unit4-初めての仕事.md#235` ## 8課　データをまとめる — Tổng hợp dữ liệu
+- `B16-05-Unit4-初めての仕事.md#384` ## ケーススタディ4　「例の」、「あれ」って何？ — “Cái lần trước”, “cái đó” là gì?
+- `B16-06-Unit5-電話対応.md#1` # Unit5　電話対応 — Ứng xử qua điện thoại
+- `B16-06-Unit5-電話対応.md#13` ## 9課　電話を取り次ぐ — Chuyển cuộc gọi cho người khác
+- `B16-06-Unit5-電話対応.md#172` ## 10課　伝言を受ける — Nhận lời nhắn
+- `B16-06-Unit5-電話対応.md#344` ## ケーススタディ5　「（さ）せていただく」の洪水？ — Quá nhiều 「（さ）せていただく」?
+- `B16-07-Unit6-社外の交渉.md#1` # Unit6　社外の交渉 — Trao đổi với đối tác ngoài công ty
+- `B16-07-Unit6-社外の交渉.md#13` ## 11課　アポを取る — Hẹn gặp
+- `B16-07-Unit6-社外の交渉.md#235` ## 12課　謝罪をする — Xin lỗi
+- `B16-07-Unit6-社外の交渉.md#370` ## ケーススタディ6　ダメならダメと早く言って！ — Nếu không được thì hãy nói sớm!
+- `B16-08-Unit7-社内の交渉.md#1` # Unit7　社内の交渉 — Trao đổi trong công ty
+- `B16-08-Unit7-社内の交渉.md#11` ## 13課　誘いを断る — Từ chối lời mời
+- `B16-08-Unit7-社内の交渉.md#145` ## 14課　許可を得る — Xin phép
+- `B16-08-Unit7-社内の交渉.md#295` ## ケーススタディ7　10分遅れただけなのに…… — Chỉ trễ mười phút mà…
+- `B16-09-敬語表現・奥付.md#1` # 敬語表現・奥付
+- `B16-09-敬語表現・奥付.md#4` ## 敬語表現 — Bảng kính ngữ
+- `B16-09-敬語表現・奥付.md#36` ## 著者・奥付 — Tác giả và thông tin xuất bản
+- `B16-10-練習問題解答例.md#1` # 練習問題 解答例 — Ví dụ đáp án bài tập
+- `B16-10-練習問題解答例.md#7` ## 1課　p.003
+- `B16-10-練習問題解答例.md#37` ## 2課　p.009
+- `B16-10-練習問題解答例.md#62` ## 3課　p.019
+- `B16-10-練習問題解答例.md#92` ## 4課　p.025
+- `B16-10-練習問題解答例.md#122` ## 5課　p.033
+- `B16-10-練習問題解答例.md#152` ## 6課　p.039
+- `B16-10-練習問題解答例.md#182` ## 7課　p.047
+- `B16-10-練習問題解答例.md#212` ## 8課　p.055
+- `B16-10-練習問題解答例.md#242` ## 9課　p.063
+- `B16-10-練習問題解答例.md#272` ## 10課　p.068
+- `B16-10-練習問題解答例.md#302` ## 11課　p.077
+- `B16-10-練習問題解答例.md#332` ## 12課　p.083
+- `B16-10-練習問題解答例.md#364` ## 13課　p.093
+- `B16-10-練習問題解答例.md#394` ## 14課　p.098
+
+## B17 — 初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―
+
+- `B17-00-前書き・構成・会社.md#1` # 初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―
+- `B17-00-前書き・構成・会社.md#11` ## はじめに — Lời mở đầu
+- `B17-00-前書き・構成・会社.md#26` ## 目次 — Mục lục
+- `B17-00-前書き・構成・会社.md#63` ## 本書の構成 — Cách dùng và cấu trúc sách
+- `B17-00-前書き・構成・会社.md#86` ## 本書で教える先生方へ — Gửi giáo viên
+- `B17-00-前書き・構成・会社.md#105` ## YMYソリューションズ会社概要 — Công ty YMY Solutions
+- `B17-00-前書き・構成・会社.md#112` ## YMYソリューションズ組織図 — Sơ đồ tổ chức
+- `B17-00-前書き・構成・会社.md#117` ## 主な登場人物 — Những nhân vật chính và quan hệ
+- `B17-01-新任のあいさつ.md#1` # 1課　新任のあいさつ — Lời chào khi mới nhận việc
+- `B17-01-新任のあいさつ.md#6` ## 聞くタスク — Bài nghe (01)
+- `B17-01-新任のあいさつ.md#19` ## モデル会話 — Hội thoại mẫu (02)
+- `B17-01-新任のあいさつ.md#52` ## 練習問題 — Bài luyện tập, phần 1
+- `B17-01-新任のあいさつ.md#197` ## 話すタスク — Bài nói
+- `B17-01-新任のあいさつ.md#254` ## 応用タスク — Nhận biết sự khác nhau trong cách diễn đạt
+- `B17-02-電話がこわい.md#1` # 2課　電話がこわい — Sợ nghe điện thoại
+- `B17-02-電話がこわい.md#6` ## 聞くタスク — Bài nghe (03)
+- `B17-02-電話がこわい.md#17` ## モデル会話 — Hội thoại mẫu
+- `B17-02-電話がこわい.md#48` ## 練習問題 — Bài luyện tập
+- `B17-02-電話がこわい.md#165` ## 話すタスク — Bài nói
+- `B17-02-電話がこわい.md#230` ## 応用タスク　正しい言い方をマスターしよう！ — Chọn cách nói phù hợp
+- `B17-03-ミスをして謝る.md#1` # 3課　ミスをして謝る — Xin lỗi vì làm sai
+- `B17-03-ミスをして謝る.md#6` ## 聞くタスク — Bài nghe (06)
+- `B17-03-ミスをして謝る.md#19` ## モデル会話 — Hội thoại mẫu (07)
+- `B17-03-ミスをして謝る.md#42` ## 練習問題 — Bài luyện tập
+- `B17-03-ミスをして謝る.md#165` ## 練習（4）～し、（～し）～
+- `B17-03-ミスをして謝る.md#205` ## 話すタスク — Đóng vai
+- `B17-03-ミスをして謝る.md#256` ## 応用タスク　言い方に気をつけよう！ — Chú ý cách nói
+- `B17-04-仕事が山積み.md#1` # 4課　仕事が山積み — Công việc chất đống
+- `B17-04-仕事が山積み.md#6` ## 聞くタスク — Bài nghe (08)
+- `B17-04-仕事が山積み.md#19` ## モデル会話 — Hội thoại mẫu (09)
+- `B17-04-仕事が山積み.md#41` ## 練習問題（1）～んです
+- `B17-04-仕事が山積み.md#82` ## 練習問題（2）～れる／られる（受身）
+- `B17-04-仕事が山積み.md#122` ## 練習問題（3）～のに
+- `B17-04-仕事が山積み.md#163` ## 練習問題（4）～てみる
+- `B17-04-仕事が山積み.md#203` ## 話すタスク — Đóng vai
+- `B17-04-仕事が山積み.md#238` ## 応用タスク　「ね」「よ」に気をつけよう！ — Chú ý 「ね」 và 「よ」
+- `B17-05-総合タスク1.md#1` # 総合タスク1 — Nhiệm vụ tổng hợp 1
+- `B17-05-総合タスク1.md#6` ## 1　YMYソリューションズの応接室で — Ở phòng tiếp khách của YMY Solutions
+- `B17-05-総合タスク1.md#23` ## 2　YMYソリューションズの応接室で、田川課長が帰ったあとに — Sau khi trưởng nhóm Tagawa ra về
+- `B17-05-総合タスク1.md#34` ## 3　YMYソリューションズITサービス課、ダットの机で — Bên bàn Đạt ở bộ phận IT
+- `B17-06-飲みニケーション.md#1` # 5課　飲みニケーション — Giao tiếp khi cùng đi uống
+- `B17-06-飲みニケーション.md#6` ## 聞くタスク — Bài nghe (12)
+- `B17-06-飲みニケーション.md#19` ## モデル会話 — Hội thoại mẫu (13)
+- `B17-06-飲みニケーション.md#49` ## 練習問題（1）～ようだ／～みたいだ
+- `B17-06-飲みニケーション.md#87` ## 練習問題（2）何か～／どこか～／いつか～／だれか～
+- `B17-06-飲みニケーション.md#127` ## 練習問題（3）～える／られる（可能）
+- `B17-06-飲みニケーション.md#167` ## 練習問題（4）（～える／られる）ようになる
+- `B17-06-飲みニケーション.md#207` ## 話すタスク — Đóng vai
+- `B17-06-飲みニケーション.md#242` ## 応用タスク　アドバイスや提案をしてみよう！ — Thử khuyên và đề xuất
+- `B17-07-夏休みはいつ取る.md#1` # 6課　夏休みはいつ取る？ — Khi nào nghỉ hè?
+- `B17-07-夏休みはいつ取る.md#6` ## 聞くタスク — Bài nghe (14)
+- `B17-07-夏休みはいつ取る.md#19` ## モデル会話 — Hội thoại mẫu (15)
+- `B17-07-夏休みはいつ取る.md#39` ## 練習問題（1）～（よ）うと思う
+- `B17-07-夏休みはいつ取る.md#78` ## 練習問題（2）～によって
+- `B17-07-夏休みはいつ取る.md#118` ## 練習問題（3）～ないと
+- `B17-07-夏休みはいつ取る.md#158` ## 練習問題（4）～の（động từ danh từ hóa）
+- `B17-07-夏休みはいつ取る.md#198` ## 話すタスク — Đóng vai
+- `B17-07-夏休みはいつ取る.md#233` ## 応用タスク　あいづちをマスターしよう！ — Luyện lời đáp ngắn khi nghe
+- `B17-08-いとこを空港まで迎えに.md#1` # 7課　いとこを空港まで迎えに — Đón anh/chị/em họ ở sân bay
+- `B17-08-いとこを空港まで迎えに.md#6` ## 聞くタスク — Bài nghe (17)
+- `B17-08-いとこを空港まで迎えに.md#19` ## モデル会話 — Hội thoại mẫu (18)
+- `B17-08-いとこを空港まで迎えに.md#41` ## 練習問題（1）～てもいいですか
+- `B17-08-いとこを空港まで迎えに.md#81` ## 練習問題（2）～そうだ（伝聞）
+- `B17-08-いとこを空港まで迎えに.md#121` ## 練習問題（3）～（さ）せていただきたいんですが
+- `B17-08-いとこを空港まで迎えに.md#162` ## 練習問題（4）～ておく
+- `B17-08-いとこを空港まで迎えに.md#202` ## 話すタスク — Đóng vai
+- `B17-08-いとこを空港まで迎えに.md#239` ## 応用タスク　表現のちがいを知ろう！ — Phân biệt cách diễn đạt
+- `B17-09-総合タスク2.md#1` # 総合タスク2 — Nhiệm vụ tổng hợp 2
+- `B17-09-総合タスク2.md#6` ## 1　ある日、居酒屋で — Một hôm ở quán rượu
+- `B17-09-総合タスク2.md#17` ## 2　別の日に、居酒屋で — Hôm khác ở quán rượu
+- `B17-09-総合タスク2.md#28` ## 3　YMYソリューションズITサービス課、村山課長の机で — Bên bàn trưởng nhóm Murayama
+- `B17-10-Can-doチェックリスト1.md#1` # Can-doチェックリスト（1） — Bảng tự đánh giá 1
+- `B17-10-Can-doチェックリスト1.md#6` ## 1課・4月　新任のあいさつ
+- `B17-10-Can-doチェックリスト1.md#14` ## 2課・4月　電話がこわい
+- `B17-10-Can-doチェックリスト1.md#22` ## 3課・5月　ミスをして謝る
+- `B17-10-Can-doチェックリスト1.md#30` ## 4課・6月　仕事が山積み
+- `B17-10-Can-doチェックリスト1.md#38` ## 5課・7月　飲みニケーション
+- `B17-10-Can-doチェックリスト1.md#46` ## 6課・8月　夏休みはいつ取る？
+- `B17-10-Can-doチェックリスト1.md#54` ## 7課・9月　いとこを空港まで迎えに
+- `B17-11-食欲の秋.md#1` # 8課　食欲の秋 — Mùa thu ăn ngon miệng
+- `B17-11-食欲の秋.md#6` ## 聞くタスク — Bài nghe (19)
+- `B17-11-食欲の秋.md#19` ## モデル会話 — Hội thoại mẫu (20)
+- `B17-11-食欲の秋.md#47` ## 練習問題（1）～そうだ（様態）
+- `B17-11-食欲の秋.md#88` ## 練習問題（2）～くて／で（理由・原因）
+- `B17-11-食欲の秋.md#126` ## 練習問題（3）～すぎる
+- `B17-11-食欲の秋.md#166` ## 練習問題（4）～くて～／～で～（並列）
+- `B17-11-食欲の秋.md#206` ## 話すタスク — Đóng vai
+- `B17-11-食欲の秋.md#245` ## 応用タスク　上手に断ってみよう！ — Từ chối khéo
+- `B17-12-旅行に行くなら.md#1` # 9課　旅行に行くなら — Nếu đi du lịch
+- `B17-12-旅行に行くなら.md#6` ## 聞くタスク — Bài nghe (21)
+- `B17-12-旅行に行くなら.md#19` ## モデル会話 — Hội thoại mẫu (22)
+- `B17-12-旅行に行くなら.md#51` ## 練習問題（1）～てもらえますか
+- `B17-12-旅行に行くなら.md#89` ## 練習問題（2）～なら
+- `B17-12-旅行に行くなら.md#127` ## 練習問題（3）～って
+- `B17-12-旅行に行くなら.md#165` ## 練習問題（4）～てある
+- `B17-12-旅行に行くなら.md#205` ## 話すタスク — Đóng vai
+- `B17-12-旅行に行くなら.md#259` ## 応用タスク　上手に頼んでみよう！ — Nhờ vả khéo
+- `B17-13-忘年会の幹事.md#1` # 10課　忘年会の幹事 — Người tổ chức tiệc tất niên
+- `B17-13-忘年会の幹事.md#6` ## 聞くタスク — Bài nghe (23)
+- `B17-13-忘年会の幹事.md#19` ## モデル会話 — Hội thoại mẫu (24)
+- `B17-13-忘年会の幹事.md#45` ## 練習問題（1）お～する
+- `B17-13-忘年会の幹事.md#85` ## 練習問題（2）疑問詞＋～たらいいか
+- `B17-13-忘年会の幹事.md#125` ## 練習問題（3）こ／そ／あ
+- `B17-13-忘年会の幹事.md#166` ## 練習問題（4）～はずだ
+- `B17-13-忘年会の幹事.md#206` ## 話すタスク — Đóng vai
+- `B17-13-忘年会の幹事.md#250` ## 応用タスク　上手にYes・Noの返事をしてみよう！ — Trả lời có hoặc không phù hợp
+- `B17-14-総合タスク3.md#1` # 総合タスク3 — Bài tổng hợp 3
+- `B17-14-総合タスク3.md#6` ## Tranh dẫn — Lời cấp trên và cách Đạt hiểu
+- `B17-14-総合タスク3.md#29` ## 1　居酒屋で — Cảnh 1, tại quán nhậu
+- `B17-14-総合タスク3.md#44` ## 2　翌日YMYソリューションズ　石川の机で — Cảnh 2, hôm sau tại bàn Ishikawa
+- `B17-15-新年のあいさつ.md#1` # 11課　新年のあいさつ — Lời chào năm mới
+- `B17-15-新年のあいさつ.md#6` ## 聞くタスク — Bài nghe (25)
+- `B17-15-新年のあいさつ.md#19` ## モデル会話 — Hội thoại mẫu (26)
+- `B17-15-新年のあいさつ.md#35` ## 練習問題（1）～ていく
+- `B17-15-新年のあいさつ.md#75` ## 練習問題（2）～やすい
+- `B17-15-新年のあいさつ.md#115` ## 練習問題（3）～くらい～
+- `B17-15-新年のあいさつ.md#155` ## 練習問題（4）～として
+- `B17-15-新年のあいさつ.md#195` ## 話すタスク — Đóng vai
+- `B17-15-新年のあいさつ.md#232` ## 応用タスク　相手にわかるように話そう！ — Nói sao cho người nghe hiểu
+- `B17-16-雪による交通マヒ.md#1` # 12課　雪による交通マヒ — Giao thông tê liệt do tuyết
+- `B17-16-雪による交通マヒ.md#6` ## 聞くタスク — Bài nghe (27)
+- `B17-16-雪による交通マヒ.md#19` ## モデル会話 — Hội thoại mẫu (28)
+- `B17-16-雪による交通マヒ.md#43` ## 練習問題（1）～までに
+- `B17-16-雪による交通マヒ.md#83` ## 練習問題（2）～なくちゃいけない／なきゃいけない＝～なくてはいけない／なければいけない
+- `B17-16-雪による交通マヒ.md#121` ## 練習問題（3）～ましょうか
+- `B17-16-雪による交通マヒ.md#161` ## 練習問題（4）～ば
+- `B17-16-雪による交通マヒ.md#199` ## 話すタスク — Đóng vai
+- `B17-16-雪による交通マヒ.md#244` ## 応用タスク　自慢大会をしよう！ — Hoạt động nói về điểm mạnh của mình
+- `B17-17-趣味も大切.md#1` # 13課　趣味も大切 — Sở thích cũng quan trọng
+- `B17-17-趣味も大切.md#6` ## 聞くタスク — Bài nghe (31)
+- `B17-17-趣味も大切.md#19` ## モデル会話 — Hội thoại mẫu (32)
+- `B17-17-趣味も大切.md#43` ## 練習問題（1）よく～ていた
+- `B17-17-趣味も大切.md#84` ## 練習問題（2）（名詞）ばかり～
+- `B17-17-趣味も大切.md#124` ## 練習問題（3）～ませんか
+- `B17-17-趣味も大切.md#164` ## 練習問題（4）～ことになっている
+- `B17-17-趣味も大切.md#202` ## 話すタスク — Đóng vai
+- `B17-17-趣味も大切.md#245` ## 応用タスク　言いたいことは何だろう？ — Người nói định truyền đạt điều gì?
+- `B17-18-上司の転勤.md#1` # 14課　上司の転勤 — Cấp trên chuyển công tác
+- `B17-18-上司の転勤.md#6` ## 聞くタスク — Bài nghe (33)
+- `B17-18-上司の転勤.md#17` ## モデル会話 — Hội thoại mẫu (34)
+- `B17-18-上司の転勤.md#45` ## 練習問題（1）～ことになった
+- `B17-18-上司の転勤.md#85` ## 練習問題（2）～なくて～（理由）
+- `B17-18-上司の転勤.md#125` ## 練習問題（3）～たことがある
+- `B17-18-上司の転勤.md#165` ## 練習問題（4）～ていただく
+- `B17-18-上司の転勤.md#205` ## 話すタスク — Đóng vai
+- `B17-18-上司の転勤.md#246` ## 応用タスク　お礼を言おう！ — Nói lời cảm ơn
+- `B17-19-総合タスク4.md#1` # 総合タスク4 — Ôn tập Bài 11–14 (tháng 1–3)
+- `B17-19-総合タスク4.md#6` ## 1　ホテル山田屋で — Tại Khách sạn Yamada-ya
+- `B17-19-総合タスク4.md#27` ## 2　ホテル山田屋本社で — Tại trụ sở Khách sạn Yamada-ya
+- `B17-19-総合タスク4.md#48` ## 3　電話で — Qua điện thoại
+- `B17-20-Can-doチェックリスト2.md#1` # Can-doチェックリスト（2）— Bảng tự đánh giá (2)
+- `B17-21-敬語表.md#1` # 敬語表 — Bảng kính ngữ
+- `B17-22-索引・奥付.md#1` # 索引 — Chỉ mục từ vựng
+- `B17-22-索引・奥付.md#237` ## 奥付 — Thông tin xuất bản
+- `B17-23-解答例.md#1` # 別冊　解答例 — Ví dụ đáp án
+- `B17-23-解答例.md#8` ## 1課
+- `B17-23-解答例.md#34` ## 2課
+- `B17-23-解答例.md#57` ## 3課
+- `B17-23-解答例.md#85` ## 4課
+- `B17-23-解答例.md#115` ## 5課
+- `B17-23-解答例.md#143` ## 6課
+- `B17-23-解答例.md#171` ## 7課
+- `B17-23-解答例.md#199` ## 8課
+- `B17-23-解答例.md#227` ## 9課
+- `B17-23-解答例.md#255` ## 10課
+- `B17-23-解答例.md#283` ## 11課
+- `B17-23-解答例.md#311` ## 12課
+- `B17-23-解答例.md#339` ## 13課
+- `B17-23-解答例.md#367` ## 14課
+- `B17-24-聞くタスク・スクリプト.md#1` # 別冊　聞くタスク スクリプト — Bài đọc và câu hỏi nghe
+- `B17-24-聞くタスク・スクリプト.md#6` ## 1課　4月　新任のあいさつ（01）
+- `B17-24-聞くタスク・スクリプト.md#19` ## 2課　4月　電話がこわい（03）
+- `B17-24-聞くタスク・スクリプト.md#30` ## 3課　5月　ミスをして謝る（06）
+- `B17-24-聞くタスク・スクリプト.md#41` ## 4課　6月　仕事が山積み（08）
+- `B17-24-聞くタスク・スクリプト.md#52` ## 5課　7月　飲みニケーション（12）
+- `B17-24-聞くタスク・スクリプト.md#63` ## 6課　8月　夏休みはいつ取る？（14）
+- `B17-24-聞くタスク・スクリプト.md#74` ## 7課　9月　いとこを空港まで迎えに（17）
+- `B17-24-聞くタスク・スクリプト.md#85` ## 8課　10月　食欲の秋（19）
+- `B17-24-聞くタスク・スクリプト.md#96` ## 9課　11月　旅行に行くなら（21）
+- `B17-24-聞くタスク・スクリプト.md#107` ## 10課　12月　忘年会の幹事（23）
+- `B17-24-聞くタスク・スクリプト.md#118` ## 11課　1月　新年のあいさつ（25）
+- `B17-24-聞くタスク・スクリプト.md#129` ## 12課　2月　雪による交通マヒ（27）
+- `B17-24-聞くタスク・スクリプト.md#140` ## 13課　3月　趣味も大切（31）
+- `B17-24-聞くタスク・スクリプト.md#151` ## 14課　3月　上司の転勤（33）
+
+## B18 — 外国人のための日本語敬語の使い方 基本表現85
+
+- `B18-01-はじめに・本書の使い方.md#2` # 外国人のための日本語敬語の使い方 基本表現85
+- `B18-01-はじめに・本書の使い方.md#7` ## はじめに
+- `B18-01-はじめに・本書の使い方.md#18` ## 本書の使い方 — Cách dùng sách
+- `B18-01-はじめに・本書の使い方.md#72` ## 音声ダウンロードのご案内 — Cách lấy âm thanh
+- `B18-02-序章-敬語の世界.md#1` # 序章　敬語の世界 — Thế giới kính ngữ
+- `B18-02-序章-敬語の世界.md#4` ## ウチとソト
+- `B18-02-序章-敬語の世界.md#31` ## いつ、どこで、だれに敬語を使うのか？
+- `B18-03-PART1-丁寧語・美化語.md#1` # PART1　基礎編 — §1 丁寧語・美化語
+- `B18-03-PART1-丁寧語・美化語.md#4` ## 1　名詞、形容詞などの丁寧語：お～　〔音声 2〕
+- `B18-03-PART1-丁寧語・美化語.md#40` ## 2　名詞、形容詞などの丁寧語：ご～　〔音声 3〕
+- `B18-03-PART1-丁寧語・美化語.md#76` ## 3　「あります」の丁寧語：ございます①　〔音声 4〕
+- `B18-03-PART1-丁寧語・美化語.md#109` ## 4　「～です」の丁寧語：～でございます　〔音声 5〕
+- `B18-03-PART1-丁寧語・美化語.md#142` ## 5　「これ」「こっち」の丁寧語：こちら　〔音声 6〕
+- `B18-03-PART1-丁寧語・美化語.md#177` ## 6　「いい」「OKだ」の丁寧語：よろしい　〔音声 7〕
+- `B18-03-PART1-丁寧語・美化語.md#216` ## 7　「いい」「OKだ」の丁寧語：結構だ①　〔音声 8〕
+- `B18-03-PART1-丁寧語・美化語.md#250` ## 8　「要らない」の丁寧語：結構だ②　〔音声 9〕
+- `B18-03-PART1-丁寧語・美化語.md#283` ## 9　「～です」の丁寧語：～になります　〔音声 10〕
+- `B18-03-PART1-丁寧語・美化語.md#318` ## 10　「どう」の丁寧語：いかが　〔音声 11〕
+- `B18-03-PART1-丁寧語・美化語.md#352` ## 11　「わたし」の丁寧語：わたくし　〔音声 12〕
+- `B18-03-PART1-丁寧語・美化語.md#387` ## 12　「今日」の丁寧語：本日　〔音声 13〕
+- `B18-03-PART1-丁寧語・美化語.md#420` ## 13　「どこ」の丁寧な表現：どちら　〔音声 14〕
+- `B18-03-PART1-丁寧語・美化語.md#445` ## 14　「だれ」の丁寧な表現：どなた　〔音声 15〕
+- `B18-03-PART1-丁寧語・美化語.md#470` ## 15　「人」の丁寧な表現：方／方々　〔音声 16〕
+- `B18-03-PART1-丁寧語・美化語.md#495` ## 16　「さん」の丁寧な表現：～様　〔音声 17〕
+- `B18-03-PART1-丁寧語・美化語.md#524` ## 17　「あなた（たち）の会社」の丁寧な表現：御社／貴社　〔音声 18〕
+- `B18-03-PART1-丁寧語・美化語.md#551` ## 18　「私（たち）の会社」の丁寧な表現：弊社／小社／当社　〔音声 19〕
+- `B18-03-PART1-丁寧語・美化語.md#576` ## 19　指導者などへの敬称：先生　〔音声 20〕
+- `B18-03-PART1-丁寧語・美化語.md#603` ## 確認ドリル — Ôn tập §1　〔音声 5: câu ⑦〕
+- `B18-04-PART1-尊敬語.md#1` # PART1　基礎編 — §2 尊敬語
+- `B18-04-PART1-尊敬語.md#3` ## (1) 特定のことば
+- `B18-04-PART1-尊敬語.md#882` ## (2) 一般的な形
+- `B18-04-PART1-尊敬語.md#1169` ## 確認ドリル — Ôn tập §2
+- `B18-05-PART1-謙譲語・丁重語.md#1` # PART1　基礎編 — §3 謙譲語・丁重語
+- `B18-05-PART1-謙譲語・丁重語.md#3` ## (1) 特定のことば
+- `B18-05-PART1-謙譲語・丁重語.md#1054` ## (2) 一般的な形 — Dạng thông dụng
+- `B18-05-PART1-謙譲語・丁重語.md#1370` ## 確認ドリル — Bài kiểm tra củng cố
+- `B18-06-PART2-機能別.md#1` # PART2 実践編 — Phần thực hành
+- `B18-06-PART2-機能別.md#6` ## §1 機能別
+- `B18-06-PART2-機能別.md#11` ## 1　(1) 確認 — ～でしょうか　〔音声 77〕
+- `B18-06-PART2-機能別.md#36` ## 2　(2) 依頼 — ～ていただけないでしょうか　〔音声 78〕
+- `B18-06-PART2-機能別.md#60` ## 3　(2) 依頼 — 恐縮ですが…／恐れ入りますが…　〔音声 79〕
+- `B18-06-PART2-機能別.md#82` ## 4　(3) 相手の了解を得る — ちょっとよろしいでしょうか　〔音声 80〕
+- `B18-06-PART2-機能別.md#106` ## 5　(4) 勧誘 — よろしかったら　〔音声 81〕
+- `B18-06-PART2-機能別.md#131` ## 6　(5) 断り — 申し訳ないのですが　〔音声 82〕
+- `B18-06-PART2-機能別.md#152` ## 7　(6) 謝罪 — 失礼いたしました　〔音声 83〕
+- `B18-06-PART2-機能別.md#174` ## 8　(7) 断り — 申し訳ありません　〔音声 84〕
+- `B18-06-PART2-機能別.md#196` ## 9　(2) 依頼 — ～たいと思う　〔音声 85〕
+- `B18-06-PART2-機能別.md#218` ## 10　～てもよろしいでしょうか　〔音声 86〕
+- `B18-07-PART2-場面別.md#1` # PART2 実践編 — §2 場面別
+- `B18-07-PART2-場面別.md#6` ## (1) 学校で～先生との会話 — Ở trường: nói chuyện với thầy/cô　〔音声 87〕
+- `B18-07-PART2-場面別.md#58` ## (2) 図書館で～職員との会話 — Ở thư viện: nói chuyện với nhân viên　〔音声 88〕
+- `B18-07-PART2-場面別.md#94` ## (3) アルバイトの応募～会社の人との会話 — Gọi điện ứng tuyển việc làm thêm　〔音声 89〕
+- `B18-07-PART2-場面別.md#113` ## (4) オフィスで～上司との会話 — Ở văn phòng: nói chuyện với cấp trên　〔音声 90〕
+- `B18-07-PART2-場面別.md#168` ## (5) オフィスで～社内外の人との会話 — Ở văn phòng: trao đổi với người trong và ngoài công ty　〔音声 91〕
+- `B18-07-PART2-場面別.md#227` ## (6) 飲食店で～客との会話 — Ở nhà hàng: nói chuyện với khách　〔音声 92〕
+- `B18-07-PART2-場面別.md#266` ## (7) コンビニ店で～客との会話 — Ở cửa hàng tiện lợi: nói chuyện với khách　〔音声 93〕
+- `B18-07-PART2-場面別.md#301` ## (8) 洋服店で～客との会話 — Ở cửa hàng quần áo: nói chuyện với khách　〔音声 94〕
+- `B18-07-PART2-場面別.md#343` ## (9) 工場で～責任者との会話 — Ở nhà máy: nói chuyện với người phụ trách　〔音声 95〕
+- `B18-07-PART2-場面別.md#376` ## (10) 自己紹介～初対面の人との会話 — Tự giới thiệu với người mới gặp　〔音声 96〕
+- `B18-07-PART2-場面別.md#397` ## (11) 道案内～通行人との会話 — Hỏi đường người qua lại　〔音声 97〕
+- `B18-08-練習の答え.md#1` # 「練習」の答え — Đáp án bài luyện
+- `B18-08-練習の答え.md#8` ## §2 尊敬語　(1) 特定のことば
+- `B18-08-練習の答え.md#187` ## §2 尊敬語　(2) 一般的な形
+- `B18-08-練習の答え.md#223` ## §3 謙譲語・丁重語　(1) 特定のことば
+- `B18-08-練習の答え.md#439` ## §3 謙譲語・丁重語　(2) 一般的な形
+- `B18-09-敬語ノート・資料・さくいん.md#1` # かんたん便利☆敬語ノート・資料・さくいん
+- `B18-09-敬語ノート・資料・さくいん.md#4` ## かんたん便利☆敬語ノート
+- `B18-09-敬語ノート・資料・さくいん.md#9` ## 敬語の動詞活用（一般的な語形）
+- `B18-09-敬語ノート・資料・さくいん.md#145` ## Chia động từ kính ngữ — bản romaji đi kèm
+- `B18-09-敬語ノート・資料・さくいん.md#281` ## よく使う丁寧表現 — Những cách nói lịch sự thường dùng
+- `B18-09-敬語ノート・資料・さくいん.md#314` ## 敬語早見表（かな版） — Bảng tra nhanh
+- `B18-09-敬語ノート・資料・さくいん.md#351` ## 敬語早見表（ローマ字版） — Bản tra bằng romaji
+- `B18-09-敬語ノート・資料・さくいん.md#388` ## さくいん — Chỉ mục
+
+## B19 — 日本人がよく使う 日本語会話 オノマトペ基本表現180
+
+- `B19-00-front.md#1` # 日本人がよく使う 日本語会話 オノマトペ基本表現180 — Bìa, lời đầu, mục lục và cách dùng
+- `B19-00-front.md#4` ## Nhan đề và thông tin trên bìa
+- `B19-00-front.md#9` ## はじめに — Lời đầu của tác giả
+- `B19-00-front.md#20` ## 目次 — Mục lục
+- `B19-00-front.md#94` ## この本の使い方 — Cách dùng sách
+- `B19-00-front.md#112` ## CDの使い方 — Cách dùng CD
+- `B19-01-jo-sho.md#1` # 序章 — 日本語会話に欠かせないオノマトペ
+- `B19-01-jo-sho.md#3` ## Từ tượng thanh, tượng hình không thể thiếu trong hội thoại Nhật
+- `B19-02-part1.md#1` # PART 1 — 動詞と一緒に使う · Dùng cùng động từ
+- `B19-02-part1.md#7` ## 話す・しゃべる・言う｜1 ペラペラ · Perapera
+- `B19-02-part1.md#21` ## 話す・しゃべる・言う｜2 ぶつぶつ · Butsubutsu
+- `B19-02-part1.md#33` ## 泣く｜3 シクシク · Shikushiku
+- `B19-02-part1.md#47` ## 泣く｜4 わんわん · Wanwan
+- `B19-02-part1.md#61` ## 見る｜5 ちらっと／ちらりと · Chiratto / Chirarito
+- `B19-02-part1.md#75` ## 見る｜6 ちらちら · Chirachira
+- `B19-02-part1.md#87` ## 見る｜7 じっと · Jitto
+- `B19-02-part1.md#103` ## 見る｜8 じろじろ · Jirojiro
+- `B19-02-part1.md#115` ## 飲む｜9 ごくごく · Gokugoku
+- `B19-02-part1.md#127` ## 飲む｜10 がぶがぶ · Gabugabu
+- `B19-02-part1.md#139` ## 笑う｜11 ゲラゲラ · Geragera
+- `B19-02-part1.md#153` ## 笑う｜12 クスクス · Kusukusu
+- `B19-02-part1.md#167` ## 笑う｜13 にこにこ · Nikoniko
+- `B19-02-part1.md#181` ## 笑う｜14 にっこり · Nikkori
+- `B19-02-part1.md#195` ## 笑う｜15 ニヤニヤ · Niyaniya
+- `B19-02-part1.md#209` ## 回す・回る｜16 くるくる · Kurukuru
+- `B19-02-part1.md#225` ## 回す・回る｜17 コロコロ · Korokoro
+- `B19-02-part1.md#241` ## 回す・回る｜18 ぐるっと · Gurutto
+- `B19-02-part1.md#253` ## 寝る｜19 ぐっすり · Gussuri
+- `B19-02-part1.md#265` ## 寝る｜20 スヤスヤ · Suyasuya
+- `B19-02-part1.md#279` ## 降る｜21 ザーザー · Zāzā
+- `B19-02-part1.md#295` ## 降る｜22 しとしと · Shitoshito
+- `B19-02-part1.md#309` ## 降る｜23 ポツポツ · Potsupotsu
+- `B19-02-part1.md#323` ## 降る｜24 パラパラ · Parapara
+- `B19-03-part2.md#1` # Part 2　動作や変化の特徴を表す — Diễn tả đặc điểm của động tác hoặc sự thay đổi
+- `B19-03-part2.md#7` ## やり方｜1 さっと · Satto
+- `B19-03-part2.md#21` ## やり方｜2 ざっと · Zatto
+- `B19-03-part2.md#33` ## やり方｜3 すっと · Sutto
+- `B19-03-part2.md#47` ## やり方｜4 そっと · Sotto
+- `B19-03-part2.md#59` ## やり方｜5 てきぱき · Tekipaki
+- `B19-03-part2.md#71` ## やり方｜6 わざわざ · Wazawaza
+- `B19-03-part2.md#85` ## 正しく、確実に｜7 きちんと · Kichinto
+- `B19-03-part2.md#99` ## 正しく、確実に｜8 ちゃんと · Chanto
+- `B19-03-part2.md#111` ## 正しく、確実に｜9 しっかり · Shikkari
+- `B19-03-part2.md#125` ## 正しく、確実に｜10 じっくり · Jikkuri
+- `B19-03-part2.md#137` ## 正しく、確実に｜11 きっぱり · Kippari
+- `B19-03-part2.md#149` ## 勢い｜12 どんどん · Dondon
+- `B19-03-part2.md#161` ## 勢い｜13 グングン · Gungun
+- `B19-03-part2.md#173` ## スムーズ｜14 すらすら · Surasura
+- `B19-03-part2.md#185` ## スムーズ｜15 サクサク · Sakusaku
+- `B19-03-part2.md#197` ## 一斉に、一気に｜16 がらりと／がらっと · Gararito / Garatto
+- `B19-03-part2.md#209` ## 一斉に、一気に｜17 ずらりと／ずらっと · Zurarito / Zuratto
+- `B19-03-part2.md#221` ## 一斉に、一気に｜18 どっと · Dotto
+- `B19-03-part2.md#235` ## 一斉に、一気に｜19 パッと · Patto
+- `B19-03-part2.md#249` ## 少しずつ｜20 コツコツ · Kotsukotsu
+- `B19-03-part2.md#261` ## 少しずつ｜21 じわじわ · Jiwajiwa
+- `B19-03-part2.md#273` ## 少しずつ｜22 ぞろぞろ · Zorozoro
+- `B19-03-part2.md#285` ## 遅い｜23 のろのろ · Noronoro
+- `B19-03-part2.md#299` ## 遅い｜24 グズグズ · Guzuguzu
+- `B19-03-part2.md#313` ## 遅い｜25 だらだら · Daradara
+- `B19-03-part2.md#325` ## 音｜26 トントン · Tonton
+- `B19-03-part2.md#339` ## 音｜27 ドンドン · Dondon
+- `B19-03-part2.md#353` ## 音｜28 ガンガン · Gangan
+- `B19-03-part2.md#367` ## 音｜29 バタバタ · Batabata
+- `B19-03-part2.md#381` ## 音｜30 ガタガタ · Gatagata
+- `B19-03-part2.md#395` ## 不安定｜31 うろうろ · Urouro
+- `B19-03-part2.md#409` ## 不安定｜32 キョロキョロ · Kyorokyoro
+- `B19-03-part2.md#421` ## 不安定｜33 グラグラ · Guragura
+- `B19-03-part2.md#437` ## 不安定｜34 ゆらゆら · Yurayura
+- `B19-03-part2.md#449` ## 不安定｜35 ふらふら · Furafura
+- `B19-03-part2.md#465` ## 不安定｜36 ぶらぶら · Burabura
+- `B19-03-part2.md#477` ## 隠れて｜37 ひそひそ · Hisohiso
+- `B19-03-part2.md#491` ## 隠れて｜38 こそこそ · Kosokoso
+- `B19-03-part2.md#505` ## その他｜39 イチャイチャ · Ichaicha
+- `B19-04-part3.md#1` # Part 3　ものの状態を表す・強調する — Diễn tả và nhấn mạnh trạng thái của sự vật
+- `B19-04-part3.md#7` ## 水、油｜1 びしょびしょ · Bishobisho
+- `B19-04-part3.md#21` ## 水、油｜2 ベトベト · Betobeto
+- `B19-04-part3.md#37` ## 水、油｜3 ぬるぬる · Nurunuru
+- `B19-04-part3.md#49` ## 水、油｜4 ネバネバ · Nebaneba
+- `B19-04-part3.md#61` ## 触った感触、見た感じ｜5 ざらざら · Zarazara
+- `B19-04-part3.md#73` ## 触った感触、見た感じ｜6 すべすべ · Subesube
+- `B19-04-part3.md#87` ## 触った感触、見た感じ｜7 つやつや · Tsuyatsuya
+- `B19-04-part3.md#99` ## 触った感触、見た感じ｜8 ツルツル · Tsurutsuru
+- `B19-04-part3.md#111` ## 触った感触、見た感じ｜9 しっとり · Shittori
+- `B19-04-part3.md#125` ## 触った感触、見た感じ｜10 さらさら · Sarasara
+- `B19-04-part3.md#137` ## 触った感触、見た感じ｜11 パサパサ · Pasapasa
+- `B19-04-part3.md#149` ## 輝き｜12 ピカピカ · Pikapika
+- `B19-04-part3.md#163` ## 輝き｜13 キラキラ · Kirakira
+- `B19-04-part3.md#177` ## 元の形を失う｜14 くしゃくしゃ · Kushakusha
+- `B19-04-part3.md#189` ## 元の形を失う｜15 ボロボロ · Boroboro
+- `B19-04-part3.md#205` ## 元の形を失う｜16 バラバラ · Barabara
+- `B19-04-part3.md#217` ## 混乱｜17 ぐちゃぐちゃ · Guchagucha
+- `B19-04-part3.md#233` ## 混乱｜18 めちゃくちゃ／めちゃめちゃ · Mechakucha / Mechamecha
+- `B19-04-part3.md#247` ## 混乱｜19 ごちゃごちゃ · Gochagocha
+- `B19-04-part3.md#261` ## 柔らかさ｜20 ふわふわ · Fuwafuwa
+- `B19-04-part3.md#275` ## 柔らかさ｜21 ふかふか · Fukafuka
+- `B19-04-part3.md#287` ## つくり｜22 ほっそり · Hossori
+- `B19-04-part3.md#301` ## つくり｜23 ぽっちゃり · Pocchari
+- `B19-04-part3.md#313` ## つくり｜24 がっしり · Gasshiri
+- `B19-04-part3.md#327` ## サイズ｜25 だぶだぶ · Dabudabu
+- `B19-04-part3.md#339` ## サイズ｜26 ぶかぶか · Bukabuka
+- `B19-04-part3.md#351` ## サイズ｜27 キツキツ · Kitsukitsu
+- `B19-04-part3.md#365` ## サイズ｜28 ぴったり · Pittari
+- `B19-04-part3.md#379` ## 密度、程度｜29 がらがら · Garagara
+- `B19-04-part3.md#391` ## 密度、程度｜30 すかすか · Sukasuka
+- `B19-04-part3.md#403` ## いっぱい｜31 ぎっしり · Gisshiri
+- `B19-04-part3.md#415` ## いっぱい｜32 びっしり · Bisshiri
+- `B19-04-part3.md#427` ## 多少｜33 たっぷり · Tappuri
+- `B19-04-part3.md#441` ## 多少｜34 ちょこっと · Chokotto
+- `B19-04-part3.md#457` ## 密度｜35 ぎゅっと · Gyutto
+- `B19-04-part3.md#469` ## 密度｜36 ぎゅうぎゅう · Gyūgyū
+- `B19-04-part3.md#481` ## 限界｜37 ぎりぎり · Girigiri
+- `B19-04-part3.md#493` ## 限界｜38 パンパン · Panpan
+- `B19-04-part3.md#505` ## 温度｜39 ポカポカ · Pokapoka
+- `B19-04-part3.md#519` ## 温度｜40 アツアツ · Atsuatsu
+- `B19-04-part3.md#531` ## 温度｜41 ひんやり · Hin’yari
+- `B19-04-part3.md#543` ## 料理・味｜42 こってり · Kotteri
+- `B19-04-part3.md#559` ## 料理・味｜43 あっさり · Assari
+- `B19-04-part3.md#573` ## 料理・味｜44 さっぱり · Sappari
+- `B19-04-part3.md#585` ## 料理・味｜45 ピリッと · Piritto
+- `B19-04-part3.md#599` ## 料理・味｜46 コトコト · Kotokoto
+- `B19-04-part3.md#611` ## 料理・味｜47 がっつり · Gattsuri
+- `B19-04-part3.md#623` ## 余裕｜48 ゆっくり · Yukkuri
+- `B19-04-part3.md#635` ## 余裕｜49 のんびり · Nonbiri
+- `B19-04-part3.md#647` ## 余裕｜50 ゆったり · Yuttari
+- `B19-04-part3.md#659` ## 天気｜51 どんより · Don’yori
+- `B19-04-part3.md#675` ## 天気｜52 ジメジメ · Jimejime
+- `B19-04-part3.md#689` ## 人の状態｜53 しーん · Shīn
+- `B19-04-part3.md#701` ## 人の状態｜54 ざわざわ · Zawazawa
+- `B19-04-part3.md#715` ## 体調｜55 カラカラ · Karakara
+- `B19-04-part3.md#731` ## 体調｜56 ペコペコ · Pekopeko
+- `B19-04-part3.md#747` ## 体調｜57 シクシク · Shikushiku
+- `B19-04-part3.md#759` ## 体調｜58 ゴロゴロ · Gorogoro
+- `B19-04-part3.md#771` ## 体調｜59 ムカムカ · Mukamuka
+- `B19-04-part3.md#785` ## 体調｜60 チカチカ · Chikachika
+- `B19-04-part3.md#799` ## 体調｜61 ガンガン · Gangan
+- `B19-04-part3.md#813` ## 体調｜62 クラクラ · Kurakura
+- `B19-04-part3.md#827` ## 体調｜63 ゾクゾク · Zokuzoku
+- `B19-04-part3.md#841` ## 体調｜64 ブルブル · Buruburu
+- `B19-04-part3.md#853` ## 体調｜65 へとへと · Hetoheto
+- `B19-04-part3.md#865` ## 体調｜66 ぐったり · Guttari
+- `B19-04-part3.md#879` ## 全部クリア｜67 はっきり · Hakkiri
+- `B19-04-part3.md#891` ## 全部クリア｜68 くっきり · Kukkiri
+- `B19-04-part3.md#903` ## 全部クリア｜69 すっきり · Sukkiri
+- `B19-04-part3.md#915` ## 全部クリア｜70 さっぱり · Sappari
+- `B19-04-part3.md#927` ## 全部クリア｜71 すっかり · Sukkari
+- `B19-04-part3.md#939` ## 全部クリア｜72 バッチリ · Bacchiri
+- `B19-04-part3.md#951` ## 程度｜73 めちゃくちゃ／めっちゃ · Mechakucha / Meccha
+- `B19-04-part3.md#963` ## 程度｜74 うんと · Unto
+- `B19-04-part3.md#975` ## その他｜75 そっくり · Sokkuri
+- `B19-04-part3.md#987` ## その他｜76 そろそろ · Sorosoro
+- `B19-04-part3.md#999` ## その他｜77 でこぼこ（凸凹） · Dekoboko
+- `B19-05-part4.md#1` # Part 4｜心の状態を表す — Diễn tả trạng thái tâm lý, cảm xúc
+- `B19-05-part4.md#7` ## 楽しい｜1 ワクワク · Wakuwaku
+- `B19-05-part4.md#19` ## 楽しい｜2 ウキウキ · Ukiuki
+- `B19-05-part4.md#31` ## 楽しい｜3 そわそわ · Sowasowa
+- `B19-05-part4.md#45` ## 楽しい｜4 ルンルン · Runrun
+- `B19-05-part4.md#59` ## 緊張・不安｜5 ドキドキ · Dokidoki
+- `B19-05-part4.md#71` ## 緊張・不安｜6 ハラハラ · Harahara
+- `B19-05-part4.md#83` ## 緊張・不安｜7 ヒヤヒヤ · Hiyahiya
+- `B19-05-part4.md#97` ## 緊張・不安｜8 ビクビク · Bikubiku
+- `B19-05-part4.md#111` ## 緊張・不安｜9 おどおど · Odoodo
+- `B19-05-part4.md#123` ## 感動｜10 グッと · Gutto
+- `B19-05-part4.md#137` ## 感動｜11 キュンと · Kyunto
+- `B19-05-part4.md#149` ## 感動｜12 じーんと · Jīnto
+- `B19-05-part4.md#161` ## 感動｜13 しみじみ · Shimijimi
+- `B19-05-part4.md#173` ## 感動｜14 ウルウル · Uruuru
+- `B19-05-part4.md#185` ## 失望｜15 がっかり · Gakkari
+- `B19-05-part4.md#197` ## 失望｜16 がっくり · Gakkuri
+- `B19-05-part4.md#211` ## 失望｜17 しょんぼり · Shonbori
+- `B19-05-part4.md#223` ## 不確か｜18 ぼうっと · Bōtto
+- `B19-05-part4.md#235` ## 不確か｜19 ぼんやり · Bon-yari
+- `B19-05-part4.md#249` ## 不確か｜20 うとうと · Utouto
+- `B19-05-part4.md#261` ## 不確か｜21 うっとり · Uttori
+- `B19-05-part4.md#275` ## 不確か｜22 うっかり · Ukkari
+- `B19-05-part4.md#287` ## 驚き｜23 びっくり · Bikkuri
+- `B19-05-part4.md#299` ## 驚き｜24 ドッキリ／ドキッ · Dokkiri / Dokitt
+- `B19-05-part4.md#311` ## 我慢の限界｜25 イライラ · Iraira
+- `B19-05-part4.md#323` ## 我慢の限界｜26 イラッと · Iratto
+- `B19-05-part4.md#335` ## 我慢の限界｜27 ピリピリ · Piripiri
+- `B19-05-part4.md#347` ## 我慢の限界｜28 うんざり · Unzari
+- `B19-05-part4.md#359` ## 混乱｜29 あたふた · Atafuta
+- `B19-05-part4.md#373` ## 混乱｜30 オロオロ · Orooro
+- `B19-05-part4.md#385` ## 後悔・不満｜31 もやもや · Moyamoya
+- `B19-05-part4.md#397` ## 後悔・不満｜32 くよくよ · Kuyokuyo
+- `B19-05-part4.md#411` ## 心の変化｜33 ホッと · Hotto
+- `B19-05-part4.md#423` ## 心の変化｜34 スッと · Sutto
+- `B19-05-part4.md#437` ## 心の変化｜35 ハッと · Hatto
+- `B19-05-part4.md#449` ## 心の変化｜36 ふと · Futo
+- `B19-05-part4.md#461` ## 心の変化｜37 ゾッと · Zotto
+- `B19-05-part4.md#475` ## 心の変化｜38 ピンと · Pinto
+- `B19-05-part4.md#487` ## 気分｜39 さっぱり · Sappari
+- `B19-05-part4.md#499` ## 気分｜40 すっきり · Sukkiri
+- `B19-05-part4.md#511` ## 怒り｜41 カッと · Katto
+- `B19-05-part4.md#523` ## 怒り｜42 カチンと · Kachinto
+- `B19-05-part4.md#535` ## 怒り｜43 ムッと · Mutto
+- `B19-05-part4.md#547` ## 怒り｜44 ムカムカ · Mukamuka
+- `B19-05-part4.md#559` ## 怒り｜45 カンカン · Kankan
+- `B19-06-index.md#1` # Chỉ mục — 英語さくいん・日本語さくいん
+- `B19-06-index.md#5` ## 英語さくいん — Chỉ mục theo từ khóa tiếng Anh
+- `B19-06-index.md#216` ## 日本語さくいん — Chỉ mục romaji của từ Nhật
+- `B19-07-colophon-audio.md#1` # 著者・奥付・音声ダウンロード — Tác giả, xuất bản và hướng dẫn âm thanh
+- `B19-07-colophon-audio.md#4` ## 著者 — Tác giả
+- `B19-07-colophon-audio.md#11` ## 奥付 — Thông tin xuất bản
+- `B19-07-colophon-audio.md#18` ## 音声ダウンロードの手順 — Cách tải âm thanh theo sách in
+
+## B20 — 日本人がよく使う 日本語会話お決まり表現180
+
+- `B20-00-front.md#1` # 日本人がよく使う 日本語会話お決まり表現180 — Bìa, lời đầu và cách dùng sách
+- `B20-00-front.md#4` ## Bìa (PDF1)
+- `B20-00-front.md#14` ## はじめに — Lời đầu (PDF2–3)
+- `B20-00-front.md#21` ## 目次 — Mục lục (PDF4–9)
+- `B20-00-front.md#55` ## この本の使い方 — Cách dùng sách (PDF10–11)
+- `B20-00-front.md#74` ## CDの使い方 — Cách dùng CD (PDF12)
+- `B20-01-introduction.md#1` # 序章◆たった一言でニュアンスが伝わる日本語のレトリック表現
+- `B20-01-introduction.md#4` ## Mở đầu (PDF13)
+- `B20-01-introduction.md#9` ## 会話に欠かせない便利な表現 — Những cách nói hữu ích không thể thiếu trong hội thoại (PDF14–15)
+- `B20-01-introduction.md#16` ## 会話が楽しく、豊かなものになる — Hội thoại sinh động và phong phú hơn (PDF16–17, đoạn đầu)
+- `B20-01-introduction.md#23` ## 日本語の表現力が高まる — Năng lực biểu đạt tiếng Nhật tăng lên (PDF17–18)
+- `B20-02-section-a.md#1` # Section A — 順調な様子、ラッキーなこと
+- `B20-02-section-a.md#7` ## 1. 楽勝 — Dễ dàng, không thành vấn đề (PDF20; CD 1)
+- `B20-02-section-a.md#24` ## 2. 朝飯前 — Dễ ợt, chuyện nhỏ (PDF21)
+- `B20-02-section-a.md#45` ## 3. 棚ぼた — May mắn bất ngờ (PDF22; CD 2)
+- `B20-02-section-a.md#64` ## 4. お安い御用 — Có gì khó đâu (PDF23)
+- `B20-02-section-a.md#83` ## 5. トントン拍子 — Thuận buồm xuôi gió (PDF24; CD 3)
+- `B20-02-section-a.md#102` ## 6. 一番乗り — Người đến đầu tiên (PDF25)
+- `B20-03-section-b.md#1` # Section B — 効率的なこと、効率的に事を進める
+- `B20-03-section-b.md#6` ## 7. 一石二鳥 — Một công đôi việc (PDF26; CD 4)
+- `B20-03-section-b.md#24` ## 8. 善は急げ — Việc tốt thì làm ngay (PDF27)
+- `B20-03-section-b.md#42` ## 9. 先手を打つ — Ra tay trước, đi trước một bước (PDF28; CD 5)
+- `B20-03-section-b.md#61` ## 10. 根回し — Dàn xếp, tạo đồng thuận trước (PDF29)
+- `B20-04-section-c.md#1` # Section C — 強い関心を持つ、本気になる
+- `B20-04-section-c.md#6` ## 11. ハマる — Mê, bị cuốn vào (PDF30; CD 6)
+- `B20-04-section-c.md#26` ## 12. 目がない — Mê không cưỡng được (PDF31)
+- `B20-04-section-c.md#45` ## 13. 病みつき — Mê đến không dứt ra được (PDF32; CD 7)
+- `B20-04-section-c.md#63` ## 14. 我を忘れる — Quên mình, mất tự chủ vì mải mê (PDF33)
+- `B20-04-section-c.md#82` ## 15. 首を突っ込む — Xen sâu vào chuyện gì (PDF34; CD 8)
+- `B20-04-section-c.md#102` ## 16. 本腰を入れる — Thật sự dốc sức bắt tay vào (PDF35)
+- `B20-05-section-d.md#1` # Section D — 本当のことがわかる、状況を理解する
+- `B20-05-section-d.md#4` ## 17. 目からウロコ — Sáng mắt ra, vỡ lẽ (PDF36; CD 9)
+- `B20-05-section-d.md#22` ## 18. 空気を読む — Biết nhìn tình hình, hiểu ý người quanh mình (PDF37)
+- `B20-06-section-e.md#1` # Section E — 気にしない、心配がない、安心
+- `B20-06-section-e.md#4` ## 19. ダメ元 — Cứ thử, không mất gì (PDF38; CD 10)
+- `B20-06-section-e.md#23` ## 20. 安全パイ — Phương án/người an toàn (PDF39)
+- `B20-06-section-e.md#44` ## 21. 痛くもかゆくもない — Chẳng hề hấn gì (PDF40; CD 11)
+- `B20-06-section-e.md#63` ## 22. 肩の荷が下りる — Trút được gánh nặng (PDF41)
+- `B20-07-section-f.md#1` # Section F — 懇切丁寧、親切、着実に何かをする
+- `B20-07-section-f.md#6` ## 23. 手とり足とり — Cầm tay chỉ việc (PDF42; CD 12)
+- `B20-07-section-f.md#24` ## 24. 一から十まで — Từ đầu đến cuối, mọi chi tiết (PDF43)
+- `B20-07-section-f.md#43` ## 25. かゆいところに手が届く — Chu đáo đến từng điều nhỏ (PDF44; CD 13)
+- `B20-07-section-f.md#64` ## 26. コツコツ — Kiên trì, từng bước đều đặn (PDF45)
+- `B20-08-section-g.md#1` # Section G — 強く望む、渇望する
+- `B20-08-section-g.md#6` ## 27. ～に飢える — Khao khát, thiếu thốn điều gì (PDF46; CD 14)
+- `B20-08-section-g.md#25` ## 28. 喉から手が出るほど欲しい — Thèm muốn đến mức không chịu nổi (PDF47)
+- `B20-08-section-g.md#46` ## 29. 首を長くして待つ — Mong ngóng mãi (PDF48; CD 15)
+- `B20-08-section-g.md#65` ## 30. 待ちに待った — Chờ đợi đã lâu (PDF49)
+- `B20-09-section-h.md#1` # Section H — 自分の都合のいいようにごまかす
+- `B20-09-section-h.md#6` ## 31. ごまをする — Nịnh nọt để được lợi (PDF50; CD 16)
+- `B20-09-section-h.md#25` ## 32. サバを読む — Khai sai con số cho lợi mình (PDF51)
+- `B20-09-section-h.md#46` ## 33. 手を抜く — Làm qua loa, bớt công cần thiết (PDF52; CD 17)
+- `B20-09-section-h.md#65` ## 34. お茶をにごす — Nói lảng, trả lời né tránh (PDF53)
+- `B20-09-section-h.md#86` ## 35. 見て見ぬふりをする — Thấy mà làm ngơ (PDF54; CD 18)
+- `B20-09-section-h.md#105` ## 36. 口先だけ — Chỉ nói miệng, chẳng làm (PDF55)
+- `B20-10-section-i.md#1` # Section I — 働きかける
+- `B20-10-section-i.md#6` ## 37. 口説く — Thuyết phục tha thiết; tán tỉnh (PDF56; CD 19)
+- `B20-10-section-i.md#25` ## 38. 一か八か — Đánh liều một phen (PDF57)
+- `B20-11-section-j.md#1` # Section J — 人の評価、人のタイプ分け
+- `B20-11-section-j.md#6` ## 39. 頑張り屋 — Người chăm chỉ, kiên trì (PDF58; CD 20)
+- `B20-11-section-j.md#27` ## 40. 頭が切れる — Đầu óc sắc bén (PDF59)
+- `B20-11-section-j.md#48` ## 41. 人気者 — Người được nhiều người yêu mến (PDF60; CD 21)
+- `B20-11-section-j.md#67` ## 42. おっちょこちょい — Người hấp tấp, đãng trí (PDF61)
+- `B20-11-section-j.md#86` ## 43. 腰が低い — Khiêm nhường (PDF62; CD 22)
+- `B20-11-section-j.md#105` ## 44. 口が堅い — Biết giữ kín chuyện (PDF63)
+- `B20-11-section-j.md#126` ## 45. 一匹狼 — Người thích làm một mình (PDF64; CD 23)
+- `B20-11-section-j.md#145` ## 46. 寂しがり屋 — Người dễ thấy cô đơn (PDF65)
+- `B20-11-section-j.md#166` ## 47. 負けず嫌い — Không chịu thua (PDF66; CD 24)
+- `B20-11-section-j.md#185` ## 48. 恥ずかしがり屋 — Người nhút nhát, hay ngượng (PDF67)
+- `B20-11-section-j.md#204` ## 49. 泣き虫 — Người hay khóc (PDF68; CD 25)
+- `B20-11-section-j.md#223` ## 50. 気分屋 — Người tính khí thất thường (PDF69)
+- `B20-11-section-j.md#242` ## 51. 甘えん坊 — Người hay nhõng nhẽo, ỷ lại (PDF70; CD 26)
+- `B20-11-section-j.md#263` ## 52. お人好し — Người tốt bụng đến mức dễ bị lợi dụng (PDF71)
+- `B20-11-section-j.md#284` ## 53. おしゃべり — Người lắm lời, hay buôn chuyện (PDF72; CD 27)
+- `B20-11-section-j.md#303` ## 54. ノリがいい・悪い — Dễ hòa vào không khí sôi nổi / không hào hứng (PDF73)
+- `B20-11-section-j.md#322` ## 55. お調子者 — Người dễ bị tâng bốc, hùa theo (PDF74; CD 28)
+- `B20-11-section-j.md#341` ## 56. ひねくれ者 — Người hay nghĩ ngược, ngang bướng (PDF75)
+- `B20-11-section-j.md#360` ## 57. 頭が固い — Cứng nhắc, cố chấp (PDF76; CD 29)
+- `B20-11-section-j.md#381` ## 58. 頭が下がる — Kính phục, nể phục (PDF77)
+- `B20-12-section-k.md#1` # Section K — とても忙しい、慌てて物事をする
+- `B20-12-section-k.md#6` ## 59. パニクる — Hoảng lên, cuống lên (PDF78; CD 30)
+- `B20-12-section-k.md#25` ## 60. バタバタする — Tất bật, chạy ngược chạy xuôi (PDF79)
+- `B20-12-section-k.md#44` ## 61. ぶっつけ本番 — Làm ngay không tập trước (PDF80; CD 31)
+- `B20-12-section-k.md#63` ## 62. 目が回る — Bận đến chóng mặt (PDF81)
+- `B20-12-section-k.md#84` ## 63. 息つく暇もない — Bận đến không có lúc lấy hơi (PDF82; CD 32)
+- `B20-12-section-k.md#103` ## 64. 一夜漬け — Học hoặc làm dồn trong một đêm (PDF83)
+- `B20-13-section-l.md#1` # Section L — 緊張感、心配する
+- `B20-13-section-l.md#6` ## 65. 手に汗握る — Hồi hộp đến toát mồ hôi tay (PDF84; CD 33)
+- `B20-13-section-l.md#27` ## 66. 気が気でない — Đứng ngồi không yên vì lo (PDF85)
+- `B20-13-section-l.md#46` ## 67. 居てもたってもいられない — Bồn chồn không thể ngồi yên (PDF86; CD 34)
+- `B20-13-section-l.md#65` ## 68. 食事がのどを通らない — Lo đến ăn không nổi (PDF87)
+- `B20-14-section-m.md#1` # Section M — 差がある
+- `B20-14-section-m.md#6` ## 69. 月とスッポン — Khác nhau một trời một vực (PDF88; CD 35)
+- `B20-14-section-m.md#25` ## 70. ピンからキリまで — Đủ mọi mức, từ thấp nhất đến cao nhất (PDF89)
+- `B20-14-section-m.md#44` ## 71. 雲泥の差 — Khác biệt một trời một vực (PDF90; CD 36)
+- `B20-14-section-m.md#63` ## 72. 足元にも及ばない — Không thể sánh bằng (PDF91)
+- `B20-14-section-m.md#82` ## 73. 上には上がある — Giỏi đến đâu vẫn có người giỏi hơn (PDF92; CD 37)
+- `B20-14-section-m.md#101` ## 74. 勝ち組・負け組 — Nhóm thắng cuộc / nhóm thua cuộc (PDF93)
+- `B20-15-section-n.md#1` # Section N — 相手を励ます
+- `B20-15-section-n.md#6` ## 75. 肩を持つ — Đứng về phía, bênh vực (PDF94; CD 38)
+- `B20-15-section-n.md#25` ## 76. 尻を叩く — Thúc giục mạnh để người khác hành động (PDF95)
+- `B20-16-section-o.md#1` # Section O — 厳しい態度で臨む、ソフトな態度で臨む
+- `B20-16-section-o.md#6` ## 77. 水に流す — Bỏ qua chuyện cũ (PDF96; CD 39)
+- `B20-16-section-o.md#25` ## 78. なかったことにする — Coi như chưa từng xảy ra (PDF97)
+- `B20-16-section-o.md#44` ## 79. 大目に見る — Nương nhẹ, bỏ qua lỗi (PDF98; CD 40)
+- `B20-16-section-o.md#64` ## 80. 長い目で見る — Xem xét về lâu dài (PDF99)
+- `B20-16-section-o.md#83` ## 81. 心を鬼にして — Cứng lòng vì điều tốt cho người khác (PDF100; CD 41)
+- `B20-16-section-o.md#104` ## 82. 百歩譲って — Cho dù nhượng bộ rất nhiều (PDF101)
+- `B20-17-section-p.md#1` # Section P — 批判や非難、攻撃を受ける
+- `B20-17-section-p.md#6` ## 83. 叩かれる — Bị chỉ trích (PDF102; CD 42)
+- `B20-17-section-p.md#25` ## 84. 風当たりが強い — Bị phản ứng và chỉ trích gay gắt (PDF103)
+- `B20-17-section-p.md#44` ## 85. 後ろ指を指される — Bị người ta nói xấu sau lưng (PDF104; CD 43)
+- `B20-17-section-p.md#65` ## 86. 出る杭は打たれる — Người nổi bật dễ bị dập xuống (PDF105)
+- `B20-17-section-p.md#84` ## 87. 白い目で見る — Nhìn bằng ánh mắt lạnh nhạt (PDF106; CD 44)
+- `B20-17-section-p.md#103` ## 88. 仲間はずれ — Bị gạt ra khỏi nhóm (PDF107)
+- `B20-17-section-p.md#122` ## 89. 村八分 — Bị cả nhóm tẩy chay (PDF108; CD 45)
+- `B20-17-section-p.md#141` ## 90. 根も葉もない — Hoàn toàn vô căn cứ (PDF109)
+- `B20-18-section-q.md#1` # Section Q — 横柄な態度、傲慢な態度、頑固な態度
+- `B20-18-section-q.md#6` ## 91. 大きな顔をする — Ra vẻ ta đây quan trọng (PDF110; CD 46)
+- `B20-18-section-q.md#27` ## 92. 大きな口をきく — Ăn nói lớn lối (PDF111)
+- `B20-18-section-q.md#48` ## 93. ふんぞりかえる — Ngả người vênh váo (PDF112; CD 47)
+- `B20-18-section-q.md#67` ## 94. 鼻で笑う — Cười khẩy (PDF113)
+- `B20-18-section-q.md#86` ## 95. あぐらをかく — Ỷ vào vị thế mà không cố gắng (PDF114; CD 48)
+- `B20-18-section-q.md#104` ## 96. あごで使う — Sai khiến người khác bằng thái độ hách dịch (PDF115)
+- `B20-18-section-q.md#125` ## 97. 格好をつける — Làm ra vẻ, cố tỏ ra oai (PDF116; CD 49)
+- `B20-18-section-q.md#146` ## 98. 聞く耳をもたない — Không chịu lắng nghe (PDF117)
+- `B20-18-section-q.md#165` ## 99. 足元をみる — Lợi dụng điểm yếu của người khác (PDF118; CD 50)
+- `B20-18-section-q.md#184` ## 100. 井の中の蛙 — Ếch ngồi đáy giếng (PDF119)
+- `B20-18-section-q.md#203` ## 101. 甘い汁を吸う — Hưởng lợi dễ dàng trên công sức người khác (PDF120; CD 51)
+- `B20-18-section-q.md#222` ## 102. 目のかたきにする — Xem ai đó như kẻ thù (PDF121)
+- `B20-19-section-r.md#1` # Section R — 合わない、うんざりする、あきれる
+- `B20-19-section-r.md#6` ## 103. 水と油 — Như nước với dầu, không hợp nhau (PDF122; CD 52)
+- `B20-19-section-r.md#25` ## 104. 犬猿の仲 — Quan hệ như chó với khỉ, rất bất hòa (PDF123)
+- `B20-19-section-r.md#44` ## 105. アレルギー — Dị ứng; phản cảm mạnh (PDF124; CD 53)
+- `B20-19-section-r.md#63` ## 106. 耳にタコができる — Nghe mãi đến phát chán (PDF125)
+- `B20-19-section-r.md#82` ## 107. 鼻につく — Chán ghét vì lặp mãi (PDF126; CD 54)
+- `B20-19-section-r.md#101` ## 108. 大きなお世話 — Việc của tôi, đừng can thiệp (PDF127)
+- `B20-19-section-r.md#122` ## 109. 開いた口がふさがらない — Kinh ngạc đến há hốc miệng (PDF128; CD 55)
+- `B20-19-section-r.md#141` ## 110. 手に負えない — Vượt quá khả năng xoay xở (PDF129)
+- `B20-20-section-s.md#1` # Section S — 放心状態、集中力がない、気持ちが乗らない
+- `B20-20-section-s.md#6` ## 111. 手につかない — Không thể chú tâm làm việc (PDF130; CD 56)
+- `B20-20-section-s.md#25` ## 112. 心ここにあらず — Để tâm trí ở nơi khác (PDF131)
+- `B20-20-section-s.md#44` ## 113. 身が入らない — Không toàn tâm vào việc (PDF132; CD 57)
+- `B20-20-section-s.md#65` ## 114. 煮え切らない — Lưỡng lự, không dứt khoát (PDF133)
+- `B20-21-section-t.md#1` # Section T — 問題を抱える、状況や結果が好ましくない、ピンチ
+- `B20-21-section-t.md#6` ## 115. ネックになる — Thành nút thắt, trở ngại (PDF134; CD 58)
+- `B20-21-section-t.md#25` ## 116. 壁にぶつかる — Gặp bức tường cản trở (PDF135)
+- `B20-21-section-t.md#44` ## 117. お手上げ — Bó tay, hết cách (PDF136; CD 59)
+- `B20-21-section-t.md#63` ## 118. 手も足も出ない — Không xoay xở được gì (PDF137)
+- `B20-21-section-t.md#84` ## 119. 板ばさみ — Kẹt giữa hai phía (PDF138; CD 60)
+- `B20-21-section-t.md#103` ## 120. 裏目に出る — Phản tác dụng (PDF139)
+- `B20-21-section-t.md#124` ## 121. 頭が痛い — Đau đầu vì chuyện khó giải quyết (PDF140; CD 61)
+- `B20-21-section-t.md#145` ## 122. 心が折れる — Nản lòng, suy sụp (PDF141)
+- `B20-21-section-t.md#164` ## 123. 死にそう — Như sắp chết, khổ sở quá mức (PDF142; CD 62)
+- `B20-21-section-t.md#185` ## 124. 煮詰まる — Đi vào bế tắc; tiến gần kết luận (PDF143)
+- `B20-22-section-u.md#1` # Section U — 恥じる、反省する
+- `B20-22-section-u.md#6` ## 125. 顔から火が出る — Xấu hổ đến đỏ bừng mặt (PDF144; CD 63)
+- `B20-22-section-u.md#25` ## 126. 穴があったら入りたい — Chỉ muốn chui xuống lỗ vì xấu hổ (PDF145)
+- `B20-22-section-u.md#44` ## 127. 耳が痛い — Nghe mà nhói vì đúng điểm yếu của mình (PDF146; CD 64)
+- `B20-22-section-u.md#63` ## 128. 合わせる顔がない — Xấu hổ không dám gặp mặt (PDF147)
+- `B20-22-section-u.md#82` ## 129. 大人げない — Trẻ con, thiếu chín chắn (PDF148; CD 65)
+- `B20-22-section-u.md#103` ## 130. 頭を冷やす — Hạ hỏa, bình tĩnh lại (PDF149)
+- `B20-22-section-u.md#122` ## 131. 肩身が狭い — Cảm thấy lép vế, ngượng ngập (PDF150; CD 66)
+- `B20-22-section-u.md#141` ## 132. お騒がせする — Gây phiền hoặc lo lắng cho nhiều người (PDF151)
+- `B20-22-section-u.md#160` ## 133. 顔に泥を塗る — Làm ai đó mất mặt (PDF152; CD 67)
+- `B20-22-section-u.md#179` ## 134. 虫がいい — Chỉ nghĩ lợi cho mình (PDF153)
+- `B20-22-section-u.md#199` ## 135. 一からやり直す — Làm lại từ đầu (PDF154; CD 68)
+- `B20-22-section-u.md#218` ## 136. 三日坊主 — Người nhanh chán, bỏ cuộc sớm (PDF155)
+- `B20-23-section-v.md#1` # Section V — 我慢する、困難に耐える、犠牲を払う、リスクを冒す
+- `B20-23-section-v.md#6` ## 137. やせ我慢をする — Cố chịu đựng, giả vờ không sao (PDF156; CD 69)
+- `B20-23-section-v.md#27` ## 138. 歯を食いしばる — Nghiến răng chịu đựng (PDF157)
+- `B20-23-section-v.md#46` ## 139. お預け — Phải chờ, tạm hoãn (PDF158; CD 70)
+- `B20-23-section-v.md#65` ## 140. 自腹を切る — Tự bỏ tiền túi (PDF159)
+- `B20-23-section-v.md#86` ## 141. 危ない橋を渡る — Liều chấp nhận rủi ro (PDF160; CD 71)
+- `B20-23-section-v.md#105` ## 142. 涙をのむ — Nuốt nước mắt, nén nỗi buồn (PDF161)
+- `B20-23-section-v.md#126` ## 143. 砂をかむ — Nhạt nhẽo, buồn tẻ đến phải chịu đựng (PDF162; CD 72)
+- `B20-23-section-v.md#145` ## 144. 息が詰まる — Ngột ngạt đến nghẹt thở (PDF163)
+- `B20-24-section-w.md#1` # Section W — 非常に驚く、恐怖を感じる
+- `B20-24-section-w.md#6` ## 145. ゾッとする — Rùng mình (PDF164; CD 73)
+- `B20-24-section-w.md#27` ## 146. 鳥肌が立つ — Nổi da gà (PDF165)
+- `B20-24-section-w.md#46` ## 147. 血の気が引く — Mặt tái đi vì sợ (PDF166; CD 74)
+- `B20-24-section-w.md#65` ## 148. 寝耳に水 — Tin đột ngột khiến sửng sốt (PDF167)
+- `B20-25-section-x.md#1` # Section X — 災難を被る、裏切られる、ダメになる
+- `B20-25-section-x.md#6` ## 149. 踏んだり蹴ったり — Họa vô đơn chí (PDF168; CD 75)
+- `B20-25-section-x.md#27` ## 150. とばっちりを食う・とばっちりを受ける — Bị vạ lây (PDF169)
+- `B20-25-section-x.md#46` ## 151. 痛い目にあう — Gặp chuyện khổ sở (PDF170; CD 76)
+- `B20-25-section-x.md#67` ## 152. 台無し — Hỏng hết, tiêu tan (PDF171)
+- `B20-25-section-x.md#86` ## 153. 一杯食わされる — Bị lừa một vố (PDF172; CD 77)
+- `B20-25-section-x.md#105` ## 154. 飼い犬に手をかまれる — Bị người mình tin cậy phản bội (PDF173)
+- `B20-26-section-y.md#1` # Y — Điều kiện, diễn biến tốt và xấu
+- `B20-26-section-y.md#4` ## 155. 右肩上がり — Tăng đều (PDF174; CD 78)
+- `B20-26-section-y.md#25` ## 156. うなぎ上り — Tăng vọt (PDF175)
+- `B20-26-section-y.md#44` ## 157. 頭打ち — Chạm mức trần, không tăng thêm (PDF176; CD 79)
+- `B20-26-section-y.md#65` ## 158. 足踏み — Giậm chân tại chỗ (PDF177)
+- `B20-26-section-y.md#86` ## 159. 追い風 — Thuận lợi, gió xuôi (PDF178; CD 80)
+- `B20-26-section-y.md#105` ## 160. 逆風 — Bất lợi, gió ngược (PDF179)
+- `B20-26-section-y.md#124` ## 161. 空回り — Cố gắng mà không hiệu quả (PDF180; CD 81)
+- `B20-26-section-y.md#143` ## 162. 痛しかゆし — Tiến thoái lưỡng nan (PDF181)
+- `B20-27-section-z.md#1` # Z — Những cách nói khác
+- `B20-27-section-z.md#4` ## 163. ご機嫌斜め — Không vui, khó ở (PDF182; CD 82)
+- `B20-27-section-z.md#23` ## 164. へそを曲げる — Dỗi, giận dỗi (PDF183)
+- `B20-27-section-z.md#42` ## 165. 首を縦に振る — Gật đầu đồng ý (PDF184; CD 83)
+- `B20-27-section-z.md#61` ## 166. 鬼のように — Cực kỳ, như quỷ (PDF185)
+- `B20-27-section-z.md#80` ## 167. 耳を傾ける — Chú ý lắng nghe (PDF186; CD 84)
+- `B20-27-section-z.md#99` ## 168. 目を通す — Xem lướt, đọc qua (PDF187)
+- `B20-27-section-z.md#118` ## 169. ドタキャン — Hủy vào phút chót (PDF188; CD 85)
+- `B20-27-section-z.md#139` ## 170. 朝一・午後一 — Đầu giờ sáng / đầu giờ chiều (PDF189)
+- `B20-27-section-z.md#160` ## 171. すし詰め — Chật ních, chen kín (PDF190; CD 86)
+- `B20-27-section-z.md#179` ## 172. いもづる式 — Nối tiếp thành chuỗi (PDF191)
+- `B20-27-section-z.md#198` ## 173. しわ寄せ — Hệ quả xấu lan sang chỗ khác (PDF192; CD 87)
+- `B20-27-section-z.md#217` ## 174. 二番煎じ — Lặp lại cái cũ, thiếu mới mẻ (PDF193)
+- `B20-27-section-z.md#238` ## 175. 盲点 — Điểm mù, chỗ bỏ sót (PDF194; CD 88)
+- `B20-27-section-z.md#259` ## 176. 落とし穴 — Cạm bẫy, điểm dễ mắc sai lầm (PDF195)
+- `B20-27-section-z.md#278` ## 177. 思うツボ — Đúng như tính toán của ai đó (PDF196; CD 89)
+- `B20-27-section-z.md#297` ## 178. ふるいにかける — Sàng lọc (PDF197)
+- `B20-27-section-z.md#317` ## 179. 山のようにある — Nhiều như núi (PDF198; CD 90)
+- `B20-27-section-z.md#338` ## 180. 雲をつかむ — Mơ hồ, không nắm bắt được (PDF199)
+- `B20-28-index-english.md#1` # Index (English version) — Tra theo cụm tiếng Anh
+- `B20-28-index-english.md#6` ## Trang 200
+- `B20-28-index-english.md#53` ## Trang 201
+- `B20-28-index-english.md#100` ## Trang 202
+- `B20-28-index-english.md#146` ## Trang 203
+- `B20-28-index-english.md#195` ## Trang 204
+- `B20-29-index-japanese.md#1` # Index (Japanese version) — Tra theo biểu thức Nhật
+- `B20-29-index-japanese.md#6` ## Trang 205
+- `B20-29-index-japanese.md#70` ## Trang 206
+- `B20-29-index-japanese.md#147` ## Trang 207
+- `B20-30-colophon-back.md#1` # Tác giả, ấn bản và bìa sau
+- `B20-30-colophon-back.md#4` ## Tác giả và thông tin xuất bản (PDF208)
+- `B20-30-colophon-back.md#15` ## Bìa sau: một câu diễn đạt sắc thái (PDF209)
+
+## B21 — 日本語でビジネス会話 中級編 本文冊
+
+- `B21-00-mo-dau.md#1` # 日本語でビジネス会話 ― 中級編 ― 本文冊
+- `B21-00-mo-dau.md#11` ## まえがき — Lời tựa
+- `B21-00-mo-dau.md#26` ## 特徴と内容 — Đặc điểm và nội dung
+- `B21-00-mo-dau.md#62` ## 本書の使い方 — Cách dùng sách
+- `B21-00-mo-dau.md#99` ## 目次 — Mục lục các bài
+- `B21-01-jiko-shoukai.md#1` # 第一課 自己紹介
+- `B21-01-jiko-shoukai.md#8` ## 談話型 — Tự nói về mình
+- `B21-01-jiko-shoukai.md#29` ## 本文会話 — Bài phát biểu tự giới thiệu
+- `B21-01-jiko-shoukai.md#60` ## 語句の使い方 — Cách dùng từ và cách nói trong 本文会話
+- `B21-02-wakaranai-nihongo.md#1` # 第二課 わからない日本語を聞く
+- `B21-02-wakaranai-nihongo.md#8` ## 談話型 — Những đoạn hỏi mẫu
+- `B21-02-wakaranai-nihongo.md#57` ## 本文会話 — 漢字の読み方と意味を聞く
+- `B21-02-wakaranai-nihongo.md#101` ## 類話 — Các tình huống tương tự
+- `B21-02-wakaranai-nihongo.md#228` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-03-irai.md#1` # 第三課 依頼
+- `B21-03-irai.md#8` ## 談話型 — Những đoạn nhờ vả mẫu
+- `B21-03-irai.md#57` ## 本文会話
+- `B21-03-irai.md#126` ## 類話 — Những tình huống nhờ vả khác
+- `B21-03-irai.md#203` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-04-kotowari.md#1` # 第四課 断り
+- `B21-04-kotowari.md#8` ## 談話型
+- `B21-04-kotowari.md#47` ## 本文会話
+- `B21-04-kotowari.md#85` ## 類話
+- `B21-04-kotowari.md#193` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-05-michi-o-kiku.md#1` # 第五課 道を聞く
+- `B21-05-michi-o-kiku.md#8` ## 談話型
+- `B21-05-michi-o-kiku.md#43` ## 本文会話
+- `B21-05-michi-o-kiku.md#92` ## 類話
+- `B21-05-michi-o-kiku.md#145` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-06-aisatsu.md#1` # 第六課 あいさつ
+- `B21-06-aisatsu.md#8` ## 談話型
+- `B21-06-aisatsu.md#61` ## 本文会話
+- `B21-06-aisatsu.md#148` ## 類話
+- `B21-06-aisatsu.md#318` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-06-aisatsu.md#477` ## 日本人に多いみょう字
+- `B21-07-shagai-denwa.md#1` # 第七課 社外からかかって来た電話
+- `B21-07-shagai-denwa.md#8` ## 談話型
+- `B21-07-shagai-denwa.md#63` ## 本文会話
+- `B21-07-shagai-denwa.md#172` ## 類話
+- `B21-07-shagai-denwa.md#314` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-08-shain-ryokou.md#1` # 第八課 社員旅行
+- `B21-08-shain-ryokou.md#8` ## 談話型
+- `B21-08-shain-ryokou.md#55` ## 本文会話
+- `B21-08-shain-ryokou.md#118` ## 類話
+- `B21-08-shain-ryokou.md#196` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-09-yoyaku.md#1` # 第九課 予約
+- `B21-09-yoyaku.md#8` ## 談話型
+- `B21-09-yoyaku.md#38` ## 本文会話
+- `B21-09-yoyaku.md#83` ## 類話
+- `B21-09-yoyaku.md#124` ## 応用会話
+- `B21-09-yoyaku.md#193` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-10-omiyage.md#1` # 第十課 お土産
+- `B21-10-omiyage.md#8` ## 談話型
+- `B21-10-omiyage.md#39` ## 本文会話
+- `B21-10-omiyage.md#96` ## 類話
+- `B21-10-omiyage.md#205` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-10-omiyage.md#399` ## 年中行事 — Các sự kiện trong năm
+- `B21-11-renraku.md#1` # 第十一課 連絡
+- `B21-11-renraku.md#8` ## 談話型
+- `B21-11-renraku.md#57` ## 本文会話
+- `B21-11-renraku.md#106` ## 類話
+- `B21-11-renraku.md#171` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-12-owabi.md#1` # 第十二課 おわび
+- `B21-12-owabi.md#8` ## 談話型
+- `B21-12-owabi.md#39` ## 本文会話
+- `B21-12-owabi.md#92` ## 類話
+- `B21-12-owabi.md#157` ## 語句の使い方 — Cách dùng từ và cách nói
+- `B21-12-owabi.md#267` ## 都道府県名（ⓐ）と県庁所在地名（ⓑ）
+- `B21-13-hyougen-yarikata.md#1` # 第十三課 表現、やり方を聞く
+- `B21-13-hyougen-yarikata.md#8` ## 談話型
+- `B21-13-hyougen-yarikata.md#31` ## 本文会話
+- `B21-13-hyougen-yarikata.md#98` ## 類話
+- `B21-13-hyougen-yarikata.md#112` ## 語句の使い方
+- `B21-13-hyougen-yarikata.md#211` ## 会社組織図（一例）
+- `B21-13-hyougen-yarikata.md#236` ## 役職名
+- `B21-14-shotaimen.md#1` # 第十四課 初対面の人と
+- `B21-14-shotaimen.md#8` ## 談話型
+- `B21-14-shotaimen.md#45` ## 本文会話
+- `B21-14-shotaimen.md#124` ## 類話
+- `B21-14-shotaimen.md#179` ## 語句の使い方
+- `B21-14-shotaimen.md#309` ## 内閣の組織図
+- `B21-15-toiawase.md#1` # 第十五課 問い合わせ
+- `B21-15-toiawase.md#8` ## 談話型
+- `B21-15-toiawase.md#45` ## 本文会話
+- `B21-15-toiawase.md#164` ## 語句の使い方
+- `B21-16-houmon.md#1` # 第十六課 訪問
+- `B21-16-houmon.md#8` ## 談話型
+- `B21-16-houmon.md#69` ## 本文会話
+- `B21-16-houmon.md#263` ## 類話
+- `B21-16-houmon.md#328` ## 語句の使い方
+- `B21-17-keigo.md#1` # 第十七課 敬語
+- `B21-17-keigo.md#8` ## 談話型
+- `B21-17-keigo.md#45` ## 本文会話
+- `B21-17-keigo.md#199` ## 語句の使い方
+- `B21-18-apointmento.md#1` # 第十八課 アポイントメント
+- `B21-18-apointmento.md#8` ## 談話型
+- `B21-18-apointmento.md#65` ## 本文会話
+- `B21-18-apointmento.md#191` ## 類話
+- `B21-18-apointmento.md#229` ## 語句の使い方
+- `B21-19-chuui-o-ukeru.md#1` # 第十九課 注意を受ける
+- `B21-19-chuui-o-ukeru.md#8` ## 談話型
+- `B21-19-chuui-o-ukeru.md#47` ## 本文会話
+- `B21-19-chuui-o-ukeru.md#112` ## 語句の使い方
+- `B21-20-mensetsu-shiken.md#1` # 第二十課 面接試験
+- `B21-20-mensetsu-shiken.md#8` ## 談話型
+- `B21-20-mensetsu-shiken.md#39` ## 本文会話
+- `B21-20-mensetsu-shiken.md#239` ## 語句の使い方
+- `B21-21-atogaki.md#1` # あとがき
+
+## B22 — 日本語でビジネス会話 中級編 練習冊
+
+- `B22-00-mo-dau.md#1` # 日本語でビジネス会話 中級編〈練習冊〉
+- `B22-00-mo-dau.md#15` ## 学習者へ — Gửi người học
+- `B22-00-mo-dau.md#42` ## 目次 — Mục lục
+- `B22-01-jiko-shoukai.md#1` # 第一課 自己紹介
+- `B22-01-jiko-shoukai.md#8` ## 1．＿＿＿＿は＿＿＿＿として知られている（p.2 l.6）
+- `B22-01-jiko-shoukai.md#25` ## 2．＿＿＿＿ことになりました。（p.2 l.9）
+- `B22-01-jiko-shoukai.md#45` ## 3．＿＿＿＿ためには＿＿＿＿ことが必要です。（p.2 l.10）
+- `B22-01-jiko-shoukai.md#62` ## 4．＿＿＿＿たばかりなので＿＿＿＿（p.2 l.12）
+- `B22-01-jiko-shoukai.md#82` ## 5．＿＿＿＿（の）に驚く（p.2 l.12）
+- `B22-01-jiko-shoukai.md#99` ## 6．＿＿＿＿。それに、＿＿＿＿（p.2 l.12）
+- `B22-01-jiko-shoukai.md#119` ## 7．＿＿＿＿たら、＿＿＿＿て下さい。（p.2 l.15）
+- `B22-01-jiko-shoukai.md#136` ## 8．＿＿＿＿（こと）を楽しみにしている（p.2 l.16）
+- `B22-01-jiko-shoukai.md#152` # Chú từ chân trang của Bài 1
+- `B22-02-wakaranai-nihongo.md#1` # 第二課 わからない日本語を聞く
+- `B22-02-wakaranai-nihongo.md#8` ## 1．＿＿＿＿というのは、＿＿＿＿という意味です。（p.6 l.10）
+- `B22-02-wakaranai-nihongo.md#25` ## 2．＿＿＿＿というのは、＿＿＿＿とか＿＿＿＿なんかのことです。（p.6 l.11）
+- `B22-02-wakaranai-nihongo.md#45` ## 3．＿＿＿＿は＿＿＿＿なら＿＿＿＿に当たる（p.6 l.20）
+- `B22-02-wakaranai-nihongo.md#62` ## 4．＿＿＿＿ぐらいしか＿＿＿＿ない（p.7 l.7）
+- `B22-02-wakaranai-nihongo.md#82` ## 5．＿＿＿＿か、それとも＿＿＿＿か（p.7 l.20）
+- `B22-02-wakaranai-nihongo.md#99` ## 6．一般的には＿＿＿＿。もちろん例外もありますが…。（p.8 l.4）
+- `B22-02-wakaranai-nihongo.md#119` ## 〈談話練習〉1．漢字の読み方を聞く
+- `B22-02-wakaranai-nihongo.md#149` ## 〈談話練習〉2．言葉の意味を聞く
+- `B22-02-wakaranai-nihongo.md#171` # Chú từ chân trang của Bài 2
+- `B22-03-irai.md#1` # 第三課 依頼
+- `B22-03-irai.md#8` ## 1．＿＿＿＿ずつ（p.12 l.8）
+- `B22-03-irai.md#25` ## 2．＿＿＿＿ばいいです。（p.12 l.11）
+- `B22-03-irai.md#45` ## 3．＿＿＿＿てくれればいいです。（p.12 l.11）
+- `B22-03-irai.md#62` ## 4．＿＿＿＿ついでに、＿＿＿＿（p.12 l.13）
+- `B22-03-irai.md#82` ## 5．＿＿＿＿か、聞いていただけませんか。（p.13 l.2）
+- `B22-03-irai.md#99` ## 6．さっそく＿＿＿＿てみましょう。（p.13 l.4）
+- `B22-03-irai.md#119` ## 7．すみませんが、＿＿＿＿て下さいませんか。（p.13）
+- `B22-03-irai.md#136` ## 8．おそれいりますが、＿＿＿＿ていただけませんか。（p.13 l.13）
+- `B22-03-irai.md#156` ## 9．＿＿＿＿とも（p.13 l.20）
+- `B22-03-irai.md#173` ## 10．＿＿＿＿ばかり（p.13 l.21）
+- `B22-03-irai.md#193` ## 〈談話練習〉1．用を頼む
+- `B22-03-irai.md#219` ## 〈談話練習〉2．電話で聞いてもらう
+- `B22-03-irai.md#251` # Chú từ chân trang của Bài 3
+- `B22-04-kotowari.md#1` # 第四課 断り
+- `B22-04-kotowari.md#8` ## 1．＿＿＿＿ておく（p.18 l.10）
+- `B22-04-kotowari.md#25` ## 2．＿＿＿＿に＿＿＿＿（p.18 l.12）
+- `B22-04-kotowari.md#45` ## 3．＿＿＿＿について（p.18 l.13）
+- `B22-04-kotowari.md#62` ## 4．＿＿＿＿ば、＿＿＿＿んですが…。（p.18 l.14）
+- `B22-04-kotowari.md#82` ## 5．＿＿＿＿のは無理です。（p.18 l.15）
+- `B22-04-kotowari.md#99` ## 6．（時間）する（p.18 l.22）
+- `B22-04-kotowari.md#119` ## 7．あいにく（p.19 l.5）
+- `B22-04-kotowari.md#136` ## 8．＿＿＿＿といいますと、＿＿＿＿ですか。（p.19 l.19）
+- `B22-04-kotowari.md#156` ## 9．＿＿＿＿ていただければありがたいんですが…。（p.19 l.24）
+- `B22-04-kotowari.md#176` ## 〈談話練習〉依頼を断る
+- `B22-04-kotowari.md#234` # Chú từ chân trang của Bài 4
+- `B22-05-michi-o-kiku.md#1` # 第五課 道を聞く
+- `B22-05-michi-o-kiku.md#8` ## 1．＿＿＿＿へは、どう行ったらいいんでしょうか。（p.24 l.6）
+- `B22-05-michi-o-kiku.md#25` ## 2．＿＿＿＿と＿＿＿＿（p.24 l.10）
+- `B22-05-michi-o-kiku.md#45` ## 3．＿＿＿＿て、＿＿＿＿て下さい。（p.24 l.18）
+- `B22-05-michi-o-kiku.md#62` ## 4．＿＿＿＿て、＿＿＿＿と、＿＿＿＿（p.24）
+- `B22-05-michi-o-kiku.md#86` ## Tám sơ đồ cho Bài 4 (trang in 27)
+- `B22-05-michi-o-kiku.md#102` ## 5．＿＿＿＿から＿＿＿＿て下さい。（p.24 l.14）
+- `B22-05-michi-o-kiku.md#119` ## 6．＿＿＿＿と、＿＿＿＿から、＿＿＿＿て下さい。（p.24 l.14）
+- `B22-05-michi-o-kiku.md#146` ## 7．＿＿＿＿たら＿＿＿＿て下さい。（p.24 l.21）
+- `B22-05-michi-o-kiku.md#166` ## 〈談話練習〉道を聞く
+- `B22-05-michi-o-kiku.md#243` # Chú từ chân trang của Bài 5
+- `B22-06-aisatsu.md#1` # 第六課 あいさつ
+- `B22-06-aisatsu.md#8` ## 1．＿＿＿＿すぎる（p.30 l.11）
+- `B22-06-aisatsu.md#25` ## 2．＿＿＿＿すぎて、＿＿＿＿ません。
+- `B22-06-aisatsu.md#45` ## 3．どうも＿＿＿＿ようです。（p.30 l.11）
+- `B22-06-aisatsu.md#62` ## 4．＿＿＿＿うちに（p.30 l.16）
+- `B22-06-aisatsu.md#82` ## 5．お＿＿＿＿下さい。
+- `B22-06-aisatsu.md#99` ## 6．そろそろ＿＿＿＿にしましょう。（p.30 l.19）
+- `B22-06-aisatsu.md#119` ## 7．＿＿＿＿（さ）せていただく（p.30 l.21）
+- `B22-06-aisatsu.md#136` ## 8．＿＿＿＿ものだ（p.31 l.11）
+- `B22-06-aisatsu.md#156` ## 9．＿＿＿＿ことにする（p.32 l.5）
+- `B22-06-aisatsu.md#173` ## 10．＿＿＿＿ぶりに（p.32 l.9）
+- `B22-06-aisatsu.md#193` ## 11．＿＿＿＿（ら）れる（尊敬）（p.33 l.17）
+- `B22-06-aisatsu.md#213` ## 〈談話練習〉1．職場を去る時
+- `B22-06-aisatsu.md#271` ## 〈談話練習〉2．お祝い
+- `B22-06-aisatsu.md#336` # Chú từ chân trang của Bài 6
+- `B22-07-shagai-denwa.md#1` # 第七課 社外からかかって来た電話
+- `B22-07-shagai-denwa.md#8` ## 1．失礼ですが、＿＿＿＿（p.38 l.9）
+- `B22-07-shagai-denwa.md#25` ## 2．ただいま、ちょっと、＿＿＿＿中なんですが…。（p.38 l.19）
+- `B22-07-shagai-denwa.md#45` ## 3．＿＿＿＿には＿＿＿＿（の）予定です。（p.38 l.21）
+- `B22-07-shagai-denwa.md#62` ## 4．＿＿＿＿たら＿＿＿＿ましょうか。（p.38 l.24）
+- `B22-07-shagai-denwa.md#82` ## 5．おそれいりますが、＿＿＿＿ていただけますか。（p.39 l.2）
+- `B22-07-shagai-denwa.md#99` ## 6．念のため＿＿＿＿ておきます。（p.39 l.2）
+- `B22-07-shagai-denwa.md#119` ## 7．＿＿＿＿ように伝える（p.39 l.6）
+- `B22-07-shagai-denwa.md#136` ## 8．＿＿＿＿に＿＿＿＿（こと）を伝えておきます。（p.40 l.12）
+- `B22-07-shagai-denwa.md#156` ## 〈談話練習〉1．社外からかかって来た電話に出る
+- `B22-07-shagai-denwa.md#226` ## 〈談話練習〉2．相手の電話番号を聞く
+- `B22-07-shagai-denwa.md#264` # Chú từ chân trang của Bài 7
+- `B22-08-shain-ryokou.md#1` # 第八課 社員旅行
+- `B22-08-shain-ryokou.md#8` ## 1．＿＿＿＿についてお聞きしたいんですが…。（p.44 l.6）
+- `B22-08-shain-ryokou.md#25` ## 2．たしか＿＿＿＿だったと思います。（p.44 l.15）
+- `B22-08-shain-ryokou.md#45` ## 3．使役受身（p.44 l.17）
+- `B22-08-shain-ryokou.md#85` ## 4．使役受身（p.44 l.17）
+- `B22-08-shain-ryokou.md#102` ## 5．＿＿＿＿といっても（p.44 l.20）
+- `B22-08-shain-ryokou.md#122` ## 6．＿＿＿＿ているうちに（p.44 l.21）
+- `B22-08-shain-ryokou.md#139` ## 7．＿＿＿＿ぐらいのことですから＿＿＿＿てもいいです。（p.44 l.20）
+- `B22-08-shain-ryokou.md#159` ## 8．＿＿＿＿に＿＿＿＿ので、よろしくお願いします。（p.45 l.13）
+- `B22-08-shain-ryokou.md#179` ## 〈談話練習〉詳しい情報を得る
+- `B22-08-shain-ryokou.md#249` # Chú từ chân trang của Bài 8
+- `B22-09-yoyaku.md#1` # 第九課 予約
+- `B22-09-yoyaku.md#8` ## 1．＿＿＿＿でしたら、私がお／ご＿＿＿＿します。（p.50 l.8）
+- `B22-09-yoyaku.md#25` ## 2．＿＿＿＿（の）場合は、いかがいたしましょうか。（p.50 l.16）
+- `B22-09-yoyaku.md#45` ## 3．むしろ（p.50 l.20）
+- `B22-09-yoyaku.md#62` ## 4．＿＿＿＿しかない（p.50 l.21）
+- `B22-09-yoyaku.md#82` ## 5．じゃ、＿＿＿＿で＿＿＿＿か（p.51 l.10）
+- `B22-09-yoyaku.md#99` ## 6．＿＿＿＿は＿＿＿＿が、＿＿＿＿なら（p.51 l.11）
+- `B22-09-yoyaku.md#119` ## 7．＿＿＿＿が、＿＿＿＿ので（p.51 l.16）
+- `B22-09-yoyaku.md#146` ## 8．＿＿＿＿きれない（p.50 l.16）
+- `B22-09-yoyaku.md#166` ## 〈談話練習〉予約をする
+- `B22-09-yoyaku.md#230` # Chú từ chân trang của Bài 9
+- `B22-10-omiyage.md#1` # 第十課 お土産
+- `B22-10-omiyage.md#8` ## 1．＿＿＿＿となると（p.56 l.12）
+- `B22-10-omiyage.md#25` ## 2．＿＿＿＿と比べると、ずっと＿＿＿＿（p.56 l.13）
+- `B22-10-omiyage.md#45` ## 3．＿＿＿＿。それでも…（p.56 l.13）
+- `B22-10-omiyage.md#62` ## 4．＿＿＿＿ので、＿＿＿＿に＿＿＿＿を預かってもらいました。（p.57）
+- `B22-10-omiyage.md#82` ## 5．＿＿＿＿ていただいては困ります。（p.57 l.18）
+- `B22-10-omiyage.md#99` ## 6．＿＿＿＿といっても、＿＿＿＿わけではない（p.57 l.19）
+- `B22-10-omiyage.md#119` ## 7．＿＿＿＿といっても、＿＿＿＿ないわけではない
+- `B22-10-omiyage.md#136` ## 8．＿＿＿＿と、かえって＿＿＿＿（p.57 l.23）
+- `B22-10-omiyage.md#156` ## 9．＿＿＿＿たら、かえって＿＿＿＿
+- `B22-10-omiyage.md#176` ## 〈談話練習〉お礼
+- `B22-10-omiyage.md#202` # Chú từ chân trang của Bài 10
+- `B22-11-renraku.md#1` # 第十一課 連絡
+- `B22-11-renraku.md#8` ## 1．今、＿＿＿＿ところです。（p.64 l.12）
+- `B22-11-renraku.md#25` ## 2．＿＿＿＿たところ、＿＿＿＿（p.64 l.11）
+- `B22-11-renraku.md#45` ## 3．＿＿＿＿たら＿＿＿＿ないで、そのまま＿＿＿＿（p.64 l.18）
+- `B22-11-renraku.md#62` ## 4．＿＿＿＿んだったら、＿＿＿＿（p.64 l.20）
+- `B22-11-renraku.md#82` ## 5．＿＿＿＿まして…。すみませんが、＿＿＿＿ていただけないでしょうか。（p.65 l.3, l.7）
+- `B22-11-renraku.md#99` ## 6．＿＿＿＿限り（p.65 l.18）
+- `B22-11-renraku.md#119` ## 7．無理して＿＿＿＿ことはありませんよ。（p.65 l.20）
+- `B22-11-renraku.md#136` ## 8．あまり＿＿＿＿ようだったら、＿＿＿＿（p.65 l.20）
+- `B22-11-renraku.md#156` ## 〈談話練習〉1．電話連絡
+- `B22-11-renraku.md#208` # Chú từ chân trang của Bài 11
+- `B22-12-owabi.md#1` # 第十二課 おわび
+- `B22-12-owabi.md#8` ## 1．＿＿＿＿ことになっていたんですが、（p.70 l.9）
+- `B22-12-owabi.md#25` ## 2．＿＿＿＿じゃなかったんですか。（p.70 l.10）
+- `B22-12-owabi.md#45` ## 3．＿＿＿＿はずがない（p.70 l.11）
+- `B22-12-owabi.md#62` ## 4．＿＿＿＿ないはずはない
+- `B22-12-owabi.md#82` ## 5．つい＿＿＿＿てしまう（p.70 l.14）
+- `B22-12-owabi.md#99` ## 6．＿＿＿＿ばよかった（p.70 l.15）
+- `B22-12-owabi.md#121` ## 7．＿＿＿＿なければよかった
+- `B22-12-owabi.md#138` ## 8．＿＿＿＿なければならなくなってしまった（p.71 l.6）
+- `B22-12-owabi.md#158` ## 9．＿＿＿＿ていただければと思いまして…。（p.71 l.10）
+- `B22-12-owabi.md#178` ## 〈談話練習〉おわびを言う
+- `B22-12-owabi.md#231` # Các chú từ chân trang còn lại của Bài 12
+- `B22-13-hyougen-yarikata.md#1` # 第十三課 表現、やり方を聞く
+- `B22-13-hyougen-yarikata.md#8` ## 1．（ら）れる（尊敬）（p.76 l.8）
+- `B22-13-hyougen-yarikata.md#25` ## 2．どのように＿＿＿＿たらいいでしょうか。（p.77 l.1）
+- `B22-13-hyougen-yarikata.md#47` ## 3．＿＿＿＿たらいいですか。（p.76 l.8）
+- `B22-13-hyougen-yarikata.md#64` ## 4．＿＿＿＿に対して（p.76 l.12）
+- `B22-13-hyougen-yarikata.md#86` ## 5．＿＿＿＿ば、＿＿＿＿てもかまいません（p.76 l.13）
+- `B22-13-hyougen-yarikata.md#103` ## 6．＿＿＿＿たら、＿＿＿＿た（p.76 l.21）
+- `B22-13-hyougen-yarikata.md#125` ## 7．＿＿＿＿ぐらいでいいでしょう。（p.77 l.3）
+- `B22-13-hyougen-yarikata.md#142` ## 8．それぐらいの＿＿＿＿なら＿＿＿＿そうです。（p.77 l.4）
+- `B22-13-hyougen-yarikata.md#164` ## 9．＿＿＿＿んじゃないですか。（p.77 l.11）
+- `B22-13-hyougen-yarikata.md#186` ## 談話練習 — 表現、やり方を聞く
+- `B22-14-shotaimen.md#1` # 第十四課 初対面の人と
+- `B22-14-shotaimen.md#6` ## 1．（さ）せていただきます。（p.82 l.7）
+- `B22-14-shotaimen.md#22` ## 2．＿＿＿＿に慣れる（p.82 l.10）
+- `B22-14-shotaimen.md#43` ## 3．＿＿＿＿は何とかなります。（p.82 l.13）
+- `B22-14-shotaimen.md#59` ## 4．＿＿＿＿にしたがって（p.82 l.13）
+- `B22-14-shotaimen.md#80` ## 5．＿＿＿＿は＿＿＿＿とは違う（p.82 l.19）
+- `B22-14-shotaimen.md#96` ## 6．＿＿＿＿（の）は、＿＿＿＿までが大変だ（p.82 l.20）
+- `B22-14-shotaimen.md#117` ## 7．＿＿＿＿と聞いておりますが…。（p.82 l.20）
+- `B22-14-shotaimen.md#133` ## 8．なかなか（p.83 l.1）
+- `B22-14-shotaimen.md#154` ## 9．＿＿＿＿とのことでした。（p.84 l.4）
+- `B22-14-shotaimen.md#175` ## 談話練習 — 共通の知人からの伝言を伝える
+- `B22-15-toiawase.md#1` # 第十五課 問い合わせ
+- `B22-15-toiawase.md#8` ## 談話練習 1．催し物の問い合わせ
+- `B22-15-toiawase.md#100` ## 談話練習 2．施設の利用
+- `B22-16-houmon.md#1` # 第十六課 訪問
+- `B22-16-houmon.md#6` ## 1．お＿＿＿＿下さい。（p.94 l.13）
+- `B22-16-houmon.md#24` ## 2．ずに（p.94 l.17）
+- `B22-16-houmon.md#45` ## 3．＿＿＿＿ほど（p.95 l.17）
+- `B22-16-houmon.md#61` ## 4．＿＿＿＿（動詞）うとする（p.95 l.12）
+- `B22-16-houmon.md#86` ## 5．＿＿＿＿（動詞）うとすると＿＿＿＿た
+- `B22-16-houmon.md#102` ## 6．あまり＿＿＿＿ので（p.96 l.17）
+- `B22-16-houmon.md#123` ## 7．あまり＿＿＿＿ので＿＿＿＿くらいです。（p.96 l.17）
+- `B22-16-houmon.md#139` ## 8．命令形（p.97 l.2）
+- `B22-16-houmon.md#164` ## 9．「＿＿＿＿（命令形）」と言われても無理だ（p.97 l.3）
+- `B22-16-houmon.md#180` ## 10．これ以上＿＿＿＿たら＿＿＿＿てしまう（p.97 l.4）
+- `B22-16-houmon.md#201` ## 11．＿＿＿＿から＿＿＿＿わけにはいかない（p.97 l.10）
+- `B22-16-houmon.md#217` ## 12．＿＿＿＿時は＿＿＿＿もんです。（p.97 l.13）
+- `B22-16-houmon.md#238` ## 談話練習 1．訪問した時、玄関で
+- `B22-16-houmon.md#271` ## 談話練習 2．帰る時のあいさつ
+- `B22-17-keigo.md#1` # 第十七課 敬語
+- `B22-17-keigo.md#6` ## 1．＿＿＿＿がございます。＿＿＿＿でございます。（p.102 l.9）
+- `B22-17-keigo.md#22` ## 2．＿＿＿＿（ら）れる（尊敬）（p.102 l.19）
+- `B22-17-keigo.md#43` ## 3．お＿＿＿＿になる（p.103 l.22）
+- `B22-17-keigo.md#59` ## 4．尊敬の特別動詞
+- `B22-17-keigo.md#88` ## 5．お／ご＿＿＿＿する／いたす（p.102 l.11）
+- `B22-17-keigo.md#111` ## 6．けんそんの特別動詞
+- `B22-17-keigo.md#137` ## 7．けんそんの練習
+- `B22-17-keigo.md#155` ## 8．＿＿＿＿ておられる（p.103 l.7）
+- `B22-17-keigo.md#181` ## 9．＿＿＿＿ので＿＿＿＿させていただく（p.104 l.1）
+- `B22-17-keigo.md#202` ## 談話練習 — 近況を聞く
+- `B22-18-apointmento.md#1` # 第十八課 アポイントメント
+- `B22-18-apointmento.md#6` ## 1．＿＿＿＿て申し訳ございません。（p.108 l.10）
+- `B22-18-apointmento.md#22` ## 2．すでに＿＿＿＿と思いますが、実は…。（p.108 l.16）
+- `B22-18-apointmento.md#43` ## 3．＿＿＿＿とのことです。（p.108 l.19）
+- `B22-18-apointmento.md#59` ## 4．＿＿＿＿かどうかわかりませんが、一応＿＿＿＿ておきましょう。（p.108 l.21）
+- `B22-18-apointmento.md#80` ## 5．＿＿＿＿では何ですから、＿＿＿＿。（p.108 l.23）
+- `B22-18-apointmento.md#96` ## 6A．＿＿＿＿ていただければありがたいです。（p.109 l.1）
+- `B22-18-apointmento.md#115` ## 6B．敬語を使って答えてください
+- `B22-18-apointmento.md#129` ## 7．＿＿＿＿でしたら、＿＿＿＿なら（p.109 l.9）
+- `B22-18-apointmento.md#150` ## 8．＿＿＿＿（さ）せていただきたいと思いますが、よろしいでしょうか。（p.109 l.11）
+- `B22-18-apointmento.md#166` ## 9．＿＿＿＿だと（p.109 l.13）
+- `B22-18-apointmento.md#187` ## 10A．＿＿＿＿ですむ（p.110 l.8）
+- `B22-18-apointmento.md#200` ## 10B．＿＿＿＿ないですむ
+- `B22-18-apointmento.md#218` ## 談話練習 1．紹介してもらった人と電話で会う約束を取りつける
+- `B22-18-apointmento.md#294` ## 談話練習 2．面会の日時を決める
+- `B22-19-chuui-o-ukeru.md#1` # 第十九課 注意を受ける
+- `B22-19-chuui-o-ukeru.md#6` ## 1．＿＿＿＿から仕方がないと思いますが…。（p.114 l.10）
+- `B22-19-chuui-o-ukeru.md#27` ## 2．＿＿＿＿（だ）から＿＿＿＿ておこうと思ってね。（p.114 l.11）
+- `B22-19-chuui-o-ukeru.md#51` ## 3．＿＿＿＿に関することなんですが…。（p.114 l.12）
+- `B22-19-chuui-o-ukeru.md#67` ## 4．＿＿＿＿時＿＿＿＿たでしょう。（p.114 l.15）
+- `B22-19-chuui-o-ukeru.md#88` ## 5．＿＿＿＿というのは＿＿＿＿に対してはちょっとね…。（p.114 l.18）
+- `B22-19-chuui-o-ukeru.md#104` ## 6．＿＿＿＿とか＿＿＿＿とかいうのは知っている（p.114 l.24）
+- `B22-19-chuui-o-ukeru.md#125` ## 7．一度にそんなにたくさん＿＿＿＿（可能形）＿＿＿＿ないと思いますが…。（p.115 l.2）
+- `B22-19-chuui-o-ukeru.md#146` ## 談話練習 — 上司から注意を受ける
+- `B22-20-mensetsu-shiken.md#1` # 第二十課 面接試験
+- `B22-20-mensetsu-shiken.md#6` ## 1．＿＿＿＿ところまではいっていません。（p.118 l.20）
+- `B22-20-mensetsu-shiken.md#22` ## 2．＿＿＿＿にとって（p.119 l.8）
+- `B22-20-mensetsu-shiken.md#43` ## 3．＿＿＿＿じゃないかと思います。（p.119 l.10）
+- `B22-20-mensetsu-shiken.md#64` ## 4．＿＿＿＿によって違いますが、やはり＿＿＿＿ようですね。（p.119 l.18）
+- `B22-20-mensetsu-shiken.md#85` ## 5．もっとも、＿＿＿＿が…。（p.119 l.22）
+- `B22-20-mensetsu-shiken.md#101` ## 6．＿＿＿＿次第（p.119 l.23）
+- `B22-20-mensetsu-shiken.md#122` ## 7．＿＿＿＿がち（p.119 l.23）
+- `B22-20-mensetsu-shiken.md#138` ## 8．＿＿＿＿なら仕方ない（p.119 l.28）
+- `B22-20-mensetsu-shiken.md#159` ## 談話練習 — 面接試験で応募理由と専門について話す
+
+## B23 — 日本語でビジネス会話 中級編 英訳・語い冊
+
+- `B23-00-bia-muc-luc.md#1` # 日本語でビジネス会話 中級編〈英訳・語い冊〉
+- `B23-00-bia-muc-luc.md#5` ## Bìa và trang nhan đề
+- `B23-00-bia-muc-luc.md#13` ## Thông tin ấn bản
+- `B23-00-bia-muc-luc.md#25` ## Mục lục — Bài 1–4
+- `B23-00-bia-muc-luc.md#34` ## Mục lục — Bài 5–9
+- `B23-00-bia-muc-luc.md#44` ## Mục lục — Bài 10–14
+- `B23-00-bia-muc-luc.md#54` ## Mục lục — Bài 15–20
+- `B23-01-bai-1-tu-gioi-thieu.md#1` # Lesson 1 — Tự giới thiệu
+- `B23-01-bai-1-tu-gioi-thieu.md#5` ## Mục tiêu của bài
+- `B23-01-bai-1-tu-gioi-thieu.md#11` ## Hội thoại chính — Tự giới thiệu
+- `B23-01-bai-1-tu-gioi-thieu.md#29` ## Từ vựng — 談話型 (mẫu triển khai lời nói)
+- `B23-01-bai-1-tu-gioi-thieu.md#48` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-01-bai-1-tu-gioi-thieu.md#90` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-02-bai-2-hoi-lai-cho-ro.md#1` # Lesson 2 — Hỏi lại để hiểu rõ
+- `B23-02-bai-2-hoi-lai-cho-ro.md#5` ## Mục tiêu của bài
+- `B23-02-bai-2-hoi-lai-cho-ro.md#11` ## Hội thoại chính — Hỏi cách đọc và nghĩa của chữ Hán
+- `B23-02-bai-2-hoi-lai-cho-ro.md#28` ## Biến thể 1 — Hỏi nghĩa của một từ
+- `B23-02-bai-2-hoi-lai-cho-ro.md#35` ## Biến thể 2 — Hỏi nghĩa của một chữ viết tắt
+- `B23-02-bai-2-hoi-lai-cho-ro.md#42` ## Biến thể 3 — Hỏi về những từ cùng âm đọc
+- `B23-02-bai-2-hoi-lai-cho-ro.md#52` ## Biến thể 4 — Từ mượn
+- `B23-02-bai-2-hoi-lai-cho-ro.md#61` ## Biến thể 5 — Phát âm chữ Hán: nguyên âm dài và âm đục
+- `B23-02-bai-2-hoi-lai-cho-ro.md#70` ## Biến thể 6 — Phát âm chữ Hán: 訓読み và 音読み
+- `B23-02-bai-2-hoi-lai-cho-ro.md#79` ## Biến thể 7 — Hỏi cách đọc tên người
+- `B23-02-bai-2-hoi-lai-cho-ro.md#89` ## Biến thể 8 — Hỏi nghĩa của một câu
+- `B23-02-bai-2-hoi-lai-cho-ro.md#98` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-02-bai-2-hoi-lai-cho-ro.md#114` ## Từ vựng — 類話 (các biến thể)
+- `B23-02-bai-2-hoi-lai-cho-ro.md#197` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-03-bai-3-nho-va.md#1` # Lesson 3 — Nhờ vả
+- `B23-03-bai-3-nho-va.md#5` ## Mục tiêu của bài
+- `B23-03-bai-3-nho-va.md#11` ## Hội thoại chính 1 — Nhờ sao chụp tài liệu ở văn phòng
+- `B23-03-bai-3-nho-va.md#26` ## Hội thoại chính 2 — Nhờ gọi điện thay
+- `B23-03-bai-3-nho-va.md#39` ## Biến thể 1 — Nhờ đồng nghiệp trong văn phòng
+- `B23-03-bai-3-nho-va.md#48` ## Biến thể 2 — Nhờ cấp trên trong văn phòng
+- `B23-03-bai-3-nho-va.md#57` ## Biến thể 3 — Mượn sách của bạn
+- `B23-03-bai-3-nho-va.md#70` ## Từ vựng — 本文会話, hội thoại chính 1
+- `B23-03-bai-3-nho-va.md#99` ## Từ vựng — 本文会話, hội thoại chính 2
+- `B23-03-bai-3-nho-va.md#126` ## Từ vựng — 類話, ba biến thể
+- `B23-03-bai-3-nho-va.md#166` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-04-bai-4-tu-choi-loi-nho.m#1` # Lesson 4 — Từ chối lời nhờ hoặc lời mời
+- `B23-04-bai-4-tu-choi-loi-nho.m#5` ## Mục tiêu của bài
+- `B23-04-bai-4-tu-choi-loi-nho.m#11` ## Hội thoại chính — Từ chối lời mời dạy kèm tiếng Anh
+- `B23-04-bai-4-tu-choi-loi-nho.m#26` ## Biến thể 1 — Đang bận ngay lúc được nhờ
+- `B23-04-bai-4-tu-choi-loi-nho.m#37` ## Biến thể 2 — Từ chối lời rủ đi xem bóng chày
+- `B23-04-bai-4-tu-choi-loi-nho.m#49` ## Biến thể 3 — Từ chối vì không thích hoạt động được rủ
+- `B23-04-bai-4-tu-choi-loi-nho.m#60` ## Biến thể 4 — Từ chối lời mời vì đã có việc
+- `B23-04-bai-4-tu-choi-loi-nho.m#71` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-04-bai-4-tu-choi-loi-nho.m#94` ## Từ vựng — 類話 (các biến thể)
+- `B23-04-bai-4-tu-choi-loi-nho.m#140` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-05-bai-5-hoi-duong.md#1` # Lesson 5 — Hỏi và chỉ đường
+- `B23-05-bai-5-hoi-duong.md#5` ## Mục tiêu của bài
+- `B23-05-bai-5-hoi-duong.md#11` ## Hội thoại chính — Đường đến nhà trưởng phòng
+- `B23-05-bai-5-hoi-duong.md#28` ## Biến thể — Hẹn địa điểm gặp nhau
+- `B23-05-bai-5-hoi-duong.md#46` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-05-bai-5-hoi-duong.md#74` ## Từ vựng — 類話 (biến thể)
+- `B23-05-bai-5-hoi-duong.md#97` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-06-bai-6-chao-hoi.md#1` # Lesson 6 — Chào hỏi
+- `B23-06-bai-6-chao-hoi.md#5` ## Mục tiêu của bài
+- `B23-06-bai-6-chao-hoi.md#11` ## Hội thoại chính — Chào hỏi ở văn phòng sáng và tối
+- `B23-06-bai-6-chao-hoi.md#44` ## Biến thể 1 — Về nước
+- `B23-06-bai-6-chao-hoi.md#58` ## Biến thể 2 — Chuyển công tác và được thăng chức
+- `B23-06-bai-6-chao-hoi.md#72` ## Biến thể 3 — Gặp lại sau năm năm
+- `B23-06-bai-6-chao-hoi.md#83` ## Biến thể 4 — Chuyện trò ngắn với hàng xóm
+- `B23-06-bai-6-chao-hoi.md#93` ## Biến thể 5 — Chuyển đến nhà mới
+- `B23-06-bai-6-chao-hoi.md#112` ## Biến thể 6 — Chia buồn
+- `B23-06-bai-6-chao-hoi.md#125` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-06-bai-6-chao-hoi.md#153` ## Từ vựng — 類話 (các biến thể)
+- `B23-06-bai-6-chao-hoi.md#227` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-07-bai-7-nhan-dien-thoai-n#1` # Lesson 7 — Nhận cuộc gọi từ bên ngoài
+- `B23-07-bai-7-nhan-dien-thoai-n#5` ## Mục tiêu của bài
+- `B23-07-bai-7-nhan-dien-thoai-n#11` ## Hội thoại chính — Nhận lời nhắn
+- `B23-07-bai-7-nhan-dien-thoai-n#44` ## Biến thể 1 — Người được tìm không có ở bàn
+- `B23-07-bai-7-nhan-dien-thoai-n#55` ## Biến thể 2 — Người được tìm đang ở đường dây khác
+- `B23-07-bai-7-nhan-dien-thoai-n#63` ## Biến thể 3 — Vẫn đang bận ở đường dây khác
+- `B23-07-bai-7-nhan-dien-thoai-n#72` ## Biến thể 4 — Người gọi nói sẽ tự gọi lại
+- `B23-07-bai-7-nhan-dien-thoai-n#82` ## Biến thể 5 — Người gọi chưa xưng tên và công ty
+- `B23-07-bai-7-nhan-dien-thoai-n#93` ## Biến thể 6 — Xác nhận tên người gọi
+- `B23-07-bai-7-nhan-dien-thoai-n#107` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-07-bai-7-nhan-dien-thoai-n#150` ## Từ vựng — 類話 (sáu biến thể)
+- `B23-07-bai-7-nhan-dien-thoai-n#204` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-08-bai-8-chuyen-di-cong-ty#1` # Lesson 8 — Chuyến đi của công ty
+- `B23-08-bai-8-chuyen-di-cong-ty#5` ## Mục tiêu của bài
+- `B23-08-bai-8-chuyen-di-cong-ty#11` ## Hội thoại chính — Chuyến đi chơi của công ty
+- `B23-08-bai-8-chuyen-di-cong-ty#32` ## Biến thể — Dùng nhà nghỉ của công ty: hỏi và đăng ký
+- `B23-08-bai-8-chuyen-di-cong-ty#70` ## Từ vựng — 談話型 (mẫu triển khai lời nói)
+- `B23-08-bai-8-chuyen-di-cong-ty#79` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-08-bai-8-chuyen-di-cong-ty#114` ## Từ vựng — 類話 (biến thể)
+- `B23-08-bai-8-chuyen-di-cong-ty#154` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-09-bai-9-dat-cho.md#1` # Lesson 9 — Đặt chỗ
+- `B23-09-bai-9-dat-cho.md#5` ## Mục tiêu của bài
+- `B23-09-bai-9-dat-cho.md#11` ## Hội thoại chính — Tại đại lý du lịch
+- `B23-09-bai-9-dat-cho.md#27` ## Biến thể 1 — Hết vé
+- `B23-09-bai-9-dat-cho.md#39` ## Biến thể 2 — Đổi ngày đã đặt
+- `B23-09-bai-9-dat-cho.md#48` ## Luyện nghe — Đặt chỗ ở nhà hàng
+- `B23-09-bai-9-dat-cho.md#70` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-09-bai-9-dat-cho.md#106` ## Từ vựng — 類話 (hai biến thể)
+- `B23-09-bai-9-dat-cho.md#142` ## Từ vựng — ききとり (luyện nghe)
+- `B23-09-bai-9-dat-cho.md#162` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-10-bai-10-qua-tang.md#1` # Lesson 10 — Quà tặng
+- `B23-10-bai-10-qua-tang.md#5` ## Mục tiêu của bài
+- `B23-10-bai-10-qua-tang.md#11` ## Hội thoại chính — Sau vài ngày nghỉ
+- `B23-10-bai-10-qua-tang.md#30` ## Biến thể 1 — Chia quà được gửi từ quê nhà
+- `B23-10-bai-10-qua-tang.md#45` ## Biến thể 2 — Quà cảm ơn vì được giúp tìm việc
+- `B23-10-bai-10-qua-tang.md#58` ## Biến thể 3 — Quà cuối năm hoặc quà giữa mùa hè
+- `B23-10-bai-10-qua-tang.md#74` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-10-bai-10-qua-tang.md#117` ## Từ vựng — 類話 (các biến thể)
+- `B23-10-bai-10-qua-tang.md#171` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-11-bai-11-de-lai-loi-nhan.#1` # Lesson 11 — Để lại lời nhắn
+- `B23-11-bai-11-de-lai-loi-nhan.#5` ## Mục tiêu của bài
+- `B23-11-bai-11-de-lai-loi-nhan.#11` ## Hội thoại chính — Gọi về công ty từ bên ngoài
+- `B23-11-bai-11-de-lai-loi-nhan.#28` ## Biến thể 1 — Gọi báo có thể đến muộn
+- `B23-11-bai-11-de-lai-loi-nhan.#39` ## Biến thể 2 — Báo nghỉ làm
+- `B23-11-bai-11-de-lai-loi-nhan.#52` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-11-bai-11-de-lai-loi-nhan.#87` ## Từ vựng — 類話 (hai biến thể)
+- `B23-11-bai-11-de-lai-loi-nhan.#132` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-12-bai-12-xin-loi.md#1` # Lesson 12 — Xin lỗi
+- `B23-12-bai-12-xin-loi.md#5` ## Mục tiêu của bài
+- `B23-12-bai-12-xin-loi.md#11` ## Hội thoại chính — Nhớ nhầm ngày hẹn
+- `B23-12-bai-12-xin-loi.md#29` ## Biến thể 1 — Đổi ngày hẹn
+- `B23-12-bai-12-xin-loi.md#42` ## Biến thể 2 — Làm mất sách mượn
+- `B23-12-bai-12-xin-loi.md#56` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-12-bai-12-xin-loi.md#88` ## Từ vựng — 類話 (hai biến thể)
+- `B23-12-bai-12-xin-loi.md#126` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-13-bai-13-phong-tuc-cach-n#1` # Lesson 13 — Hỏi về phong tục và cách nói của người Nhật
+- `B23-13-bai-13-phong-tuc-cach-n#5` ## Mục tiêu của bài
+- `B23-13-bai-13-phong-tuc-cach-n#11` ## Hội thoại chính 1 — “OTSUKARESAMA DE GOZAIMASHITA”
+- `B23-13-bai-13-phong-tuc-cach-n#25` ## Hội thoại chính 2 — Lời chào theo mùa trong thư
+- `B23-13-bai-13-phong-tuc-cach-n#39` ## Biến thể — Có cần tặng quà đáp lễ không?
+- `B23-13-bai-13-phong-tuc-cach-n#48` ## Từ vựng — 談話型 (mẫu triển khai lời nói)
+- `B23-13-bai-13-phong-tuc-cach-n#59` ## Từ vựng — 本文会話 (hai hội thoại chính)
+- `B23-13-bai-13-phong-tuc-cach-n#100` ## Từ vựng — 類話 (biến thể)
+- `B23-13-bai-13-phong-tuc-cach-n#116` ## 語句の使い方 — Từ dùng trong phần cách dùng từ
+- `B23-14-bai-14-gap-lan-dau.md#1` # Lesson 14 — Gặp người lần đầu
+- `B23-14-bai-14-gap-lan-dau.md#5` ## Mục tiêu của bài
+- `B23-14-bai-14-gap-lan-dau.md#11` ## Hội thoại chính — Gặp giám đốc công ty
+- `B23-14-bai-14-gap-lan-dau.md#35` ## Biến thể 1 — Nhắc đến người quen chung
+- `B23-14-bai-14-gap-lan-dau.md#43` ## Biến thể 2 — Chuyển lời nhắn của cấp trên
+- `B23-14-bai-14-gap-lan-dau.md#52` ## Biến thể 3 — Chuyển lời nhắn của người quen
+- `B23-14-bai-14-gap-lan-dau.md#60` ## Từ vựng — 談話型 và 本文会話
+- `B23-14-bai-14-gap-lan-dau.md#118` ## Từ vựng — 類話 (các biến thể)
+- `B23-14-bai-14-gap-lan-dau.md#154` ## Từ vựng — 語句の使い方 (cách dùng từ/cụm)
+- `B23-15-bai-15-hoi-thong-tin.md#1` # Lesson 15 — Hỏi thông tin
+- `B23-15-bai-15-hoi-thong-tin.md#5` ## Mục tiêu của bài
+- `B23-15-bai-15-hoi-thong-tin.md#11` ## Hội thoại chính — Hỏi cách sử dụng thư viện
+- `B23-15-bai-15-hoi-thong-tin.md#49` ## Từ vựng — 談話型 (mẫu triển khai lời nói)
+- `B23-15-bai-15-hoi-thong-tin.md#86` ## Từ vựng — 語句の使い方 (cách dùng từ/cụm)
+- `B23-16-bai-16-tham-nha.md#1` # Lesson 16 — Đến thăm nhà
+- `B23-16-bai-16-tham-nha.md#5` ## Mục tiêu của bài
+- `B23-16-bai-16-tham-nha.md#11` ## Hội thoại chính — Đến nhà trưởng bộ phận
+- `B23-16-bai-16-tham-nha.md#82` ## Biến thể 1 — Khen món ăn
+- `B23-16-bai-16-tham-nha.md#98` ## Biến thể 2 — Từ chối lời mời uống thêm
+- `B23-16-bai-16-tham-nha.md#113` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-16-bai-16-tham-nha.md#164` ## Từ vựng — 類話 (các biến thể)
+- `B23-16-bai-16-tham-nha.md#206` ## Từ vựng — 語句の使い方 (cách dùng từ/cụm)
+- `B23-17-bai-17-kinh-ngu.md#1` # Lesson 17 — Cách nói kính trọng, lịch sự
+- `B23-17-bai-17-kinh-ngu.md#5` ## Mục tiêu của bài
+- `B23-17-bai-17-kinh-ngu.md#11` ## Hội thoại chính — Tiệc kỷ niệm công ty
+- `B23-17-bai-17-kinh-ngu.md#50` ## Từ vựng — 談話型 và 本文会話
+- `B23-17-bai-17-kinh-ngu.md#129` ## Từ vựng — 語句の使い方 (cách dùng từ/cụm)
+- `B23-18-bai-18-hen-gap.md#1` # Lesson 18 — Hẹn gặp
+- `B23-18-bai-18-hen-gap.md#5` ## Mục tiêu của bài
+- `B23-18-bai-18-hen-gap.md#11` ## Hội thoại chính — Xin hẹn qua điện thoại và đến quầy lễ tân
+- `B23-18-bai-18-hen-gap.md#50` ## Biến thể — Xin trưởng bộ phận dành thời gian ở hành lang
+- `B23-18-bai-18-hen-gap.md#65` ## Từ vựng — 談話型 và 本文会話
+- `B23-18-bai-18-hen-gap.md#123` ## Từ vựng — 類話 (biến thể)
+- `B23-18-bai-18-hen-gap.md#140` ## Từ vựng — 語句の使い方 (cách dùng từ/cụm)
+- `B23-19-bai-19-tiep-nhan-phe-bi#1` # Lesson 19 — Tiếp nhận lời nhắc nhở
+- `B23-19-bai-19-tiep-nhan-phe-bi#5` ## Mục tiêu của bài
+- `B23-19-bai-19-tiep-nhan-phe-bi#11` ## Hội thoại chính — Khác biệt về tập quán
+- `B23-19-bai-19-tiep-nhan-phe-bi#35` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-19-bai-19-tiep-nhan-phe-bi#63` ## Từ vựng — 語句の使い方 (cách dùng từ/cụm)
+- `B23-20-bai-20-phong-van.md#1` # Lesson 20 — Phỏng vấn xin việc
+- `B23-20-bai-20-phong-van.md#5` ## Mục tiêu của bài
+- `B23-20-bai-20-phong-van.md#11` ## Hội thoại chính — Ứng tuyển vị trí viết nội dung quảng cáo
+- `B23-20-bai-20-phong-van.md#64` ## Từ vựng — 本文会話 (hội thoại chính)
+- `B23-20-bai-20-phong-van.md#148` ## Từ vựng — 語句の使い方 (cách dùng từ/cụm)
+
+## B24 — 気持ちが伝わる 日本語会話 基本表現180
+
+- `B24-00-front.md#1` # 気持ちが伝わる 日本語会話 基本表現180
+- `B24-00-front.md#4` ## Bìa và mục đích của sách
+- `B24-00-front.md#15` ## はじめに — Lời đầu
+- `B24-00-front.md#23` ## 目次 — Mục lục
+- `B24-00-front.md#141` ## この本の使い方 — Cách dùng sách
+- `B24-00-front.md#166` ## CDの使い方 — Cách dùng CD
+- `B24-01-introduction.md#1` # 序章 — 日本人の感情表現と日本の社会
+- `B24-01-introduction.md#7` ## スクランブル交差点が象徴する日本社会 — Ngã tư đông người như một hình ảnh thu nhỏ của xã hội Nhật
+- `B24-01-introduction.md#14` ## 控えめをよしとする傾向 — Xu hướng quý trọng sự khiêm nhường
+- `B24-01-introduction.md#23` ## 説明より情緒的、感覚的な表現で相手に伝える — Truyền cảm xúc bằng cách nói giàu cảm giác hơn lời phân tích
+- `B24-01-introduction.md#32` ## 日本人はあまりフレンドリーじゃない？ — Người Nhật có ít thân thiện không?
+- `B24-02-section-a.md#1` # A — 喜び・感動 · Niềm vui và xúc động
+- `B24-02-section-a.md#6` ## Unit 1 — 泣きそう／やった！〔CD 1〕
+- `B24-02-section-a.md#47` ## Unit 2 — めちゃめちゃ／よし！〔CD 2〕
+- `B24-02-section-a.md#88` ## Unit 3 — じーんとする／じーんとくる・ウルウルする〔CD 3〕
+- `B24-02-section-a.md#128` ## Unit 4 — 感激！／ワクワクする〔CD 4〕
+- `B24-02-section-a.md#168` ## Unit 5 — 言葉にできない／泣ける〔CD 5〕
+- `B24-02-section-a.md#206` ## Unit 6 — そのままズバリ／胸を打つ〔CD 6〕
+- `B24-03-section-b.md#1` # B — 驚き · Sự bất ngờ
+- `B24-03-section-b.md#3` ## Unit 7 — かっこいい／すごい〔CD 7〕
+- `B24-03-section-b.md#43` ## Unit 8 — びっくり／ほんと〔CD 8〕
+- `B24-03-section-b.md#83` ## Unit 9 — そんな／まじ〔CD 9〕
+- `B24-03-section-b.md#122` ## Unit 10 — ～なんて／うそ〔CD 10〕
+- `B24-03-section-b.md#160` ## Unit 11 — まさか／信じられない〔CD 11〕
+- `B24-04-section-c.md#1` # C — 感謝 · Lòng biết ơn
+- `B24-04-section-c.md#3` ## Unit 12 — いいんですか／ありがたい〔CD 12〕
+- `B24-04-section-c.md#45` ## Unit 13 — おかげさまで／助かります〔CD 13〕
+- `B24-04-section-c.md#83` ## Unit 14 — 至れり尽くせり／感謝の気持ちでいっぱい〔CD 14〕
+- `B24-04-section-c.md#121` ## Unit 15 — ～てもらって／お世話様〔CD 15〕
+- `B24-04-section-c.md#161` ## Unit 16 — 何から何まで／身にしみる〔CD 16〕
+- `B24-05-section-d.md#1` # D — 希望・期待 · Hy vọng và mong chờ
+- `B24-05-section-d.md#3` ## Unit 17 — 面白そう／楽しみ〔CD 17〕
+- `B24-05-section-d.md#43` ## Unit 18 — 首を長くして／待ち遠しい〔CD 18〕
+- `B24-05-section-d.md#81` ## Unit 19 — ソワソワ（する）／待ちきれない〔CD 19〕
+- `B24-06-section-e.md#1` # E — 願望・欲求 · Mong ước và nguyện vọng
+- `B24-06-section-e.md#3` ## Unit 20 — ～ますように／どうか〔CD 20〕
+- `B24-06-section-e.md#41` ## Unit 21 — ありがたい（んだ）けど／～たら・れば・と＋うれしい〔CD 21〕
+- `B24-06-section-e.md#81` ## Unit 22 — 何とか／～たいな〔CD 22〕
+- `B24-06-section-e.md#121` ## Unit 23 — なるべく／できれば〔CD 23〕
+- `B24-07-section-f.md#1` # F — 興味・関心 · Hứng thú và quan tâm
+- `B24-07-section-f.md#3` ## Unit 24 — どっぷり／～にハマる〔CD 24〕
+- `B24-07-section-f.md#39` ## Unit 25 — どれどれ／ひかれる〔CD 25〕
+- `B24-07-section-f.md#80` ## Unit 26 — のめり込む／オタク〔CD 26〕
+- `B24-08-section-g.md#1` # G — 強い意志 · Ý chí mạnh
+- `B24-08-section-g.md#3` ## Unit 27 — 絶対／ちゃんと〔CD 27〕
+- `B24-08-section-g.md#43` ## Unit 28 — 真面目に／しっかり〔CD 28〕
+- `B24-08-section-g.md#82` ## Unit 29 — 燃える／本気〔CD 29〕
+- `B24-08-section-g.md#123` ## Unit 30 — きっちり／がぜん〔CD 30〕
+- `B24-08-section-g.md#161` ## Unit 31 — きっぱり／はっきり〔CD 31〕
+- `B24-09-section-h.md#1` # H — 安心・快適・楽 · An tâm và dễ chịu
+- `B24-09-section-h.md#3` ## Unit 32 — どうにか／やっと〔CD 32〕
+- `B24-09-section-h.md#41` ## Unit 33 — 落ち着く／すっきりする〔CD 33〕
+- `B24-09-section-h.md#79` ## Unit 34 — のんびり／ほっとする〔CD 34〕
+- `B24-09-section-h.md#117` ## Unit 35 — なごむ／癒される〔CD 35〕
+- `B24-09-section-h.md#155` ## Unit 36 — ゆったり／くつろげる〔CD 36〕
+- `B24-10-section-i.md#1` # I — 不安・心配 · Bất an và lo lắng
+- `B24-10-section-i.md#3` ## Unit 37 — 見てられない／ハラハラ（する）〔CD 37〕
+- `B24-10-section-i.md#41` ## Unit 38 — ドキドキ（する）／気になる〔CD 38〕
+- `B24-10-section-i.md#81` ## Unit 39 — まずい／困ったなあ〔CD 39〕
+- `B24-10-section-i.md#121` ## Unit 40 — 気が気じゃない／まいった〔CD 40〕
+- `B24-11-section-j.md#1` # J — ピンチ・余裕のなさ · Tình thế khó và thiếu dư dả
+- `B24-11-section-j.md#3` ## Unit 41 — 焦る／テンパってる〔CD 41〕
+- `B24-11-section-j.md#43` ## Unit 42 — 四苦八苦（する）／必死〔CD 42〕
+- `B24-11-section-j.md#81` ## Unit 43 — ぎりぎり／せっぱ詰まって〔CD 43〕
+- `B24-11-section-j.md#121` ## Unit 44 — 手が回らない／身動きがとれない〔CD 44〕
+- `B24-11-section-j.md#159` ## Unit 45 — どうにかこうにか／泣きたくなる〔CD 45〕
+- `B24-12-section-k.md#1` # K — 嫌悪・不快 · Khó chịu và bất bình
+- `B24-12-section-k.md#3` ## Unit 46 — 何それ？／イラっとする〔CD 46〕
+- `B24-12-section-k.md#41` ## Unit 47 — よく言う／勘弁〔CD 47〕
+- `B24-12-section-k.md#80` ## Unit 48 — それはない（これはない／あれはない）／うっとうしい〔CD 48〕
+- `B24-12-section-k.md#121` ## Unit 49 — 最悪／～（の）ほうがまし〔CD 49〕
+- `B24-12-section-k.md#159` ## Unit 50 — 話にならない／ありえない〔CD 50〕
+- `B24-12-section-k.md#199` ## Unit 51 — ふざけないで／最低〔CD 51〕
+- `B24-13-section-l.md#1` # L — 怒り · Tức giận
+- `B24-13-section-l.md#3` ## Unit 52 — ムカッと来る／むかつく〔CD 52〕
+- `B24-13-section-l.md#41` ## Unit 53 — どういうこと／頭に来る〔CD 53〕
+- `B24-13-section-l.md#79` ## Unit 54 — かんかん／腹が立つ〔CD 54〕
+- `B24-13-section-l.md#115` ## Unit 55 — しゃくにさわる／カチンと来る〔CD 55〕
+- `B24-13-section-l.md#153` ## Unit 56 — まったく／冗談じゃない〔CD 56〕
+- `B24-13-section-l.md#191` ## Unit 57 — ふざけるな／許せない〔CD 57〕
+- `B24-14-section-m.md#1` # M — 失望・落胆 · Thất vọng và chán nản
+- `B24-14-section-m.md#3` ## Unit 58 — がっくり／落ち込む〔CD 58〕
+- `B24-14-section-m.md#43` ## Unit 59 — 力が出ない／凹む〔CD 59〕
+- `B24-14-section-m.md#83` ## Unit 60 — あーあ／心が折れる〔CD 60〕
+- `B24-14-section-m.md#121` ## Unit 61 — どうでもいい／もうだめだ〔CD 61〕
+- `B24-14-section-m.md#159` ## Unit 62 — がっかり／しょんぼり（する）〔CD 62〕
+- `B24-15-section-n.md#1` # N — 後悔・反省 · Hối tiếc và tự nhìn lại
+- `B24-15-section-n.md#3` ## Unit 63 — くよくよ（する）／～んじゃなかった〔CD 63〕
+- `B24-15-section-n.md#43` ## Unit 64 — ～ばよかった／しまった！〔CD 64〕
+- `B24-15-section-n.md#81` ## Unit 65 — 悪かった／私のせい〔CD 65〕
+- `B24-15-section-n.md#121` ## Unit 66 — ～のに／なんで～んだろう〔CD 66〕
+- `B24-15-section-n.md#159` ## Unit 67 — 悔やむ／反省している〔CD 67〕
+- `B24-16-section-o.md#1` # O — 不満・抗議 · Bất mãn và phản đối
+- `B24-16-section-o.md#3` ## Unit 68 — ～ばかり／うんざり〔CD 68〕
+- `B24-16-section-o.md#43` ## Unit 69 — ～てくれない／せっかく〔CD 69〕
+- `B24-16-section-o.md#81` ## Unit 70 — わざわざ／～ばいいのに〔CD 70〕
+- `B24-16-section-o.md#119` ## Unit 71 — もうちょっと／なんだかなあ〔CD 71〕
+- `B24-16-section-o.md#159` ## Unit 72 — なんか違う／そうじゃなくて〔CD 72〕
+- `B24-17-section-p.md#1` # P — 諦め · Đành chịu, từ bỏ
+- `B24-17-section-p.md#3` ## Unit 73 — ～わけない／どうせ〔CD 73〕
+- `B24-17-section-p.md#41` ## Unit 74 — ～とは思えない／～に決まって（い）る〔CD 74〕
+- `B24-17-section-p.md#81` ## Unit 75 — ～はず（が）ない／今さら〔CD 75〕
+- `B24-17-section-p.md#123` ## Unit 76 — 所詮（は）／～っこない〔CD 76〕
+- `B24-18-section-q.md#1` # Q — 思い込み・不注意 · Cho là chắc và sơ ý
+- `B24-18-section-q.md#3` ## Unit 77 — 思い込む／てっきり〔CD 77〕
+- `B24-18-section-q.md#43` ## Unit 78 — 早合点／～とばかり思って（い）た〔CD 78〕
+- `B24-18-section-q.md#81` ## Unit 79 — 鵜呑み（にする）／すっかり〔CD 79〕
+- `B24-18-section-q.md#119` ## Unit 80 — ポカ／うっかり〔CD 80〕
+- `B24-18-section-q.md#159` ## Unit 81 — うわの空／うかつ〔CD 81〕
+- `B24-19-section-r.md#1` # R — 疑問・不明 · Hoài nghi và chưa rõ
+- `B24-19-section-r.md#3` ## Unit 82 — 謎／微妙〔CD 82〕
+- `B24-19-section-r.md#43` ## Unit 83 — 五分五分／どっちもあり〔CD 83〕
+- `B24-19-section-r.md#83` ## Unit 84 — なんか変／あやしい〔CD 84〕
+- `B24-19-section-r.md#126` ## Unit 85 — おかしくない？／どうかと思う〔CD 85〕
+- `B24-20-section-s.md#1` # S — 低い評価・軽視 · Đánh giá thấp và xem nhẹ
+- `B24-20-section-s.md#3` ## Unit 86 — この（その／あの）程度／～ぽっち〔CD 86〕
+- `B24-20-section-s.md#44` ## Unit 87 — ～しか／～なんか〔CD 87〕
+- `B24-20-section-s.md#82` ## Unit 88 — こんな（そんな／あんな）／たった〔CD 88〕
+- `B24-20-section-s.md#123` ## Unit 89 — ～でも／ほんの〔CD 89〕
+- `B24-20-section-s.md#163` ## Unit 90 — せめて／イマイチ〔CD 90〕
+- `B24-21-index-english.md#1` # 英語さくいん — Bảng tra theo khóa English
+- `B24-21-index-english.md#6` ## Trang 200
+- `B24-21-index-english.md#48` ## Trang 201
+- `B24-21-index-english.md#92` ## Trang 202
+- `B24-21-index-english.md#137` ## Trang 203
+- `B24-21-index-english.md#182` ## Trang 204
+- `B24-22-index-japanese.md#1` # 日本語さくいん — Bảng tra theo cách đọc Nhật
+- `B24-22-index-japanese.md#6` ## Trang 205
+- `B24-22-index-japanese.md#65` ## Trang 206
+- `B24-22-index-japanese.md#137` ## Trang 207
+- `B24-23-colophon.md#1` # Thông tin xuất bản và bìa sau
+- `B24-23-colophon.md#4` ## Tác giả
+- `B24-23-colophon.md#8` ## Ấn bản và người thực hiện
+- `B24-23-colophon.md#19` ## Bìa sau
+
+## B25 — 聞いて覚える話し方 日本語生中継 中～上級編
+
+- `B25-00-bia-muc-luc.md#1` # 聞いて覚える話し方 日本語生中継 中～上級編
+- `B25-00-bia-muc-luc.md#11` ## 目次 — Mục lục
+- `B25-01-huong-dan-su-dung.md#1` # このテキストをお使いになる教師のみなさんへ — Dành cho giáo viên
+- `B25-01-huong-dan-su-dung.md#5` ## このテキストの目的 — Mục đích của sách
+- `B25-01-huong-dan-su-dung.md#15` ## このテキストの特徴 — Đặc điểm của sách
+- `B25-01-huong-dan-su-dung.md#24` ## このテキストの対象となる学習者 — Người học mà sách hướng đến
+- `B25-01-huong-dan-su-dung.md#33` ## このテキストの全体構成 — Cấu trúc toàn sách
+- `B25-01-huong-dan-su-dung.md#52` ## 各課の構成 — Các phần trong mỗi bài
+- `B25-01-huong-dan-su-dung.md#102` ## 授業での使い方のヒント — Gợi ý dùng trong lớp
+- `B25-01-huong-dan-su-dung.md#133` # このテキストをお使いになる学習者のみなさんへ — Dành cho người học
+- `B25-02-bai-1-dengon.md#1` # 第1課「今、いないんですけど」―伝言―
+- `B25-02-bai-1-dengon.md#3` ## こんなとき、どう言いますか
+- `B25-02-bai-1-dengon.md#43` ## 聞き取り練習 I
+- `B25-02-bai-1-dengon.md#158` ## 聞き取り練習 II
+- `B25-02-bai-1-dengon.md#213` ## ポイントリスニング
+- `B25-02-bai-1-dengon.md#225` ## 重要表現
+- `B25-02-bai-1-dengon.md#473` ## ロールプレイ — Đóng vai
+- `B25-03-bai-2-kanyuu.md#1` # 第2課「一緒に行ってみない？」―勧誘―
+- `B25-03-bai-2-kanyuu.md#3` ## こんなとき、どう言いますか
+- `B25-03-bai-2-kanyuu.md#43` ## 聞き取り練習 I
+- `B25-03-bai-2-kanyuu.md#152` ## 聞き取り練習 II
+- `B25-03-bai-2-kanyuu.md#194` ## ポイントリスニング
+- `B25-03-bai-2-kanyuu.md#206` ## 重要表現
+- `B25-03-bai-2-kanyuu.md#446` ## ロールプレイ — Đóng vai
+- `B25-04-bai-3-kyoka.md#1` # 第3課「これ、使わせてもらってもいいかなって」―許可―
+- `B25-04-bai-3-kyoka.md#3` ## こんなとき、どう言いますか
+- `B25-04-bai-3-kyoka.md#45` ## 聞き取り練習 I
+- `B25-04-bai-3-kyoka.md#153` ## 聞き取り練習 II
+- `B25-04-bai-3-kyoka.md#195` ## ポイントリスニング
+- `B25-04-bai-3-kyoka.md#207` ## 重要表現
+- `B25-04-bai-3-kyoka.md#475` ## ロールプレイ — Đóng vai
+- `B25-05-bai-4-jouhou.md#1` # 第4課「渋滞してるらしいですよ」―確かな情報・不確かな情報―
+- `B25-05-bai-4-jouhou.md#5` ## こんなとき、どう言いますか
+- `B25-05-bai-4-jouhou.md#53` ## 聞き取り練習 I
+- `B25-05-bai-4-jouhou.md#160` ## 聞き取り練習 II
+- `B25-05-bai-4-jouhou.md#205` ## ポイントリスニング
+- `B25-05-bai-4-jouhou.md#217` ## 重要表現
+- `B25-05-bai-4-jouhou.md#418` ## ロールプレイ — Đóng vai
+- `B25-06-bai-5-irai-shiji.md#1` # 第5課「そこをなんとか」―依頼・指示―
+- `B25-06-bai-5-irai-shiji.md#5` ## こんなとき、どう言いますか
+- `B25-06-bai-5-irai-shiji.md#45` ## 聞き取り練習 I
+- `B25-06-bai-5-irai-shiji.md#153` ## 聞き取り練習 II
+- `B25-06-bai-5-irai-shiji.md#196` ## ポイントリスニング
+- `B25-06-bai-5-irai-shiji.md#207` ## 重要表現
+- `B25-06-bai-5-irai-shiji.md#455` ## ロールプレイ — Đóng vai
+- `B25-07-bai-6-monku.md#1` # 第6課「予約しておいたはずなんですけど」―文句―
+- `B25-07-bai-6-monku.md#5` ## こんなとき、どう言いますか
+- `B25-07-bai-6-monku.md#63` ## 聞き取り練習 I
+- `B25-07-bai-6-monku.md#183` ## 聞き取り練習 II
+- `B25-07-bai-6-monku.md#221` ## ポイントリスニング
+- `B25-07-bai-6-monku.md#232` ## 重要表現
+- `B25-07-bai-6-monku.md#465` ## ロールプレイ — Đóng vai
+- `B25-08-bai-7-teian.md#1` # 第7課「中華のほうがいいんじゃない？」―提案―
+- `B25-08-bai-7-teian.md#5` ## こんなとき、どういいますか
+- `B25-08-bai-7-teian.md#58` ## 聞き取り練習 I
+- `B25-08-bai-7-teian.md#165` ## 聞き取り練習 II
+- `B25-08-bai-7-teian.md#205` ## ポイントリスニング
+- `B25-08-bai-7-teian.md#216` ## 重要表現
+- `B25-08-bai-7-teian.md#429` ## ロールプレイ — Đóng vai
+- `B25-09-bai-8-kansou.md#1` # 第8課「給料は悪くないんだけどね」―感想―
+- `B25-09-bai-8-kansou.md#5` ## こんなとき、どう言いますか
+- `B25-09-bai-8-kansou.md#58` ## 聞き取り練習 I
+- `B25-09-bai-8-kansou.md#164` ## 聞き取り練習 II
+- `B25-09-bai-8-kansou.md#204` ## ポイントリスニング
+- `B25-09-bai-8-kansou.md#215` ## 重要表現
+- `B25-09-bai-8-kansou.md#418` ## ロールプレイ — Đóng vai
+- `B25-10-atogaki.md#1` # あとがき — Lời bạt
+- `B25-10-atogaki.md#5` ## 執筆分担 — Phân công viết sách
+- `B25-10-atogaki.md#45` ## 謝辞 — Lời cảm ơn
+- `B25-10-atogaki.md#59` ## Ghi nhận hỗ trợ
+- `B25-10-atogaki.md#65` ## 著者紹介 — Giới thiệu tác giả
+- `B25-10-atogaki.md#97` ## 奥付 — Thông tin ấn bản
+
+## B26 — 聞いて覚える話し方 日本語生中継 初中級編 1
+
+- `B26-00-loi-gui-hoc-vien.md#1` # このテキストをお使いになる学習者のみなさんへ
+- `B26-01-bai-1.md#1` # 1. 貸してもらう
+- `B26-01-bai-1.md#8` ## ウォーミングアップ
+- `B26-01-bai-1.md#68` ## 聞き取り練習
+- `B26-01-bai-1.md#170` ## ポイントリスニング　CD 1-7
+- `B26-01-bai-1.md#183` ## 重要表現
+- `B26-01-bai-1.md#326` ## もういっぱい!?
+- `B26-01-bai-1.md#389` ## ロールプレイ
+- `B26-01-huong-dan-giao-vien.md#1` # このテキストをお使いになる教師のみなさんへ
+- `B26-01-huong-dan-giao-vien.md#3` ## このテキストの目的
+- `B26-01-huong-dan-giao-vien.md#24` ## このテキストの特徴
+- `B26-01-huong-dan-giao-vien.md#37` ## このテキストの対象となる学習者
+- `B26-01-huong-dan-giao-vien.md#50` ## 各課の構成
+- `B26-01-huong-dan-giao-vien.md#130` ## 授業での使い方のヒント
+- `B26-02-bai-2.md#1` # 2. 予定を変更する
+- `B26-02-bai-2.md#8` ## ウォーミングアップ
+- `B26-02-bai-2.md#44` ## 聞き取り練習
+- `B26-02-bai-2.md#141` ## ポイントリスニング　CD 1-15
+- `B26-02-bai-2.md#154` ## 重要表現
+- `B26-02-bai-2.md#298` ## もういっぱい!?
+- `B26-02-bai-2.md#338` ## ロールプレイ
+- `B26-03-bai-3.md#1` # 3. レストランで
+- `B26-03-bai-3.md#8` ## ウォーミングアップ
+- `B26-03-bai-3.md#44` ## 聞き取り練習
+- `B26-03-bai-3.md#141` ## ポイントリスニング　CD 1-23
+- `B26-03-bai-3.md#154` ## 重要表現
+- `B26-03-bai-3.md#302` ## もういっぱい!?
+- `B26-03-bai-3.md#381` ## ロールプレイ
+- `B26-04-bai-4.md#1` # 4. 旅行の感想
+- `B26-04-bai-4.md#8` ## ウォーミングアップ
+- `B26-04-bai-4.md#71` ## 聞き取り練習
+- `B26-04-bai-4.md#168` ## ポイントリスニング　CD 1-31
+- `B26-04-bai-4.md#181` ## 重要表現
+- `B26-04-bai-4.md#337` ## もういっぱい!?
+- `B26-04-bai-4.md#414` ## ロールプレイ
+- `B26-05-bai-5.md#1` # 5. 買い物
+- `B26-05-bai-5.md#8` ## ウォーミングアップ
+- `B26-05-bai-5.md#52` ## 聞き取り練習
+- `B26-05-bai-5.md#142` ## ポイントリスニング　●1-39
+- `B26-05-bai-5.md#152` ## 重要表現
+- `B26-05-bai-5.md#300` ## もういっぱい!?
+- `B26-05-bai-5.md#342` ## ロールプレイ
+- `B26-06-bai-6.md#1` # 6. アルバイトを探す
+- `B26-06-bai-6.md#8` ## ウォーミングアップ
+- `B26-06-bai-6.md#63` ## 聞き取り練習
+- `B26-06-bai-6.md#153` ## ポイントリスニング　●2-7
+- `B26-06-bai-6.md#168` ## 重要表現
+- `B26-06-bai-6.md#270` ## もういっぱい!?
+- `B26-06-bai-6.md#304` ## ロールプレイ
+- `B26-07-bai-7.md#1` # 7. ほめられて
+- `B26-07-bai-7.md#8` ## ウォーミングアップ
+- `B26-07-bai-7.md#51` ## 聞き取り練習
+- `B26-07-bai-7.md#141` ## ポイントリスニング　●2-15
+- `B26-07-bai-7.md#153` ## 重要表現
+- `B26-07-bai-7.md#273` ## もういっぱい!?
+- `B26-07-bai-7.md#307` ## ロールプレイ
+- `B26-08-bai-8.md#1` # 8. 交通手段
+- `B26-08-bai-8.md#8` ## ウォーミングアップ
+- `B26-08-bai-8.md#51` ## 聞き取り練習
+- `B26-08-bai-8.md#141` ## ポイントリスニング　●2-23
+- `B26-08-bai-8.md#156` ## 重要表現
+- `B26-08-bai-8.md#302` ## もういっぱい!?
+- `B26-08-bai-8.md#334` ## ロールプレイ
+- `B26-09-bai-9.md#1` # 9. ゆずります
+- `B26-09-bai-9.md#8` ## ウォーミングアップ
+- `B26-09-bai-9.md#51` ## 聞き取り練習
+- `B26-09-bai-9.md#141` ## ポイントリスニング　●2-32
+- `B26-09-bai-9.md#151` ## 重要表現
+- `B26-09-bai-9.md#256` ## もういっぱい!?
+- `B26-09-bai-9.md#292` ## ロールプレイ
+- `B26-10-bai-10.md#1` # 10. マンション
+- `B26-10-bai-10.md#8` ## ウォーミングアップ
+- `B26-10-bai-10.md#51` ## 聞き取り練習
+- `B26-10-bai-10.md#139` ## ポイントリスニング　●2-40
+- `B26-10-bai-10.md#149` ## 重要表現
+- `B26-10-bai-10.md#251` ## もういっぱい!?
+- `B26-10-bai-10.md#299` ## ロールプレイ
+- `B26-11-loi-bat.md#1` # あとがき・著者紹介
+- `B26-11-loi-bat.md#6` ## あとがき
+- `B26-11-loi-bat.md#59` ## 著者紹介
+
+## B27 — 聞いて覚える話し方 日本語生中継 初中級編２
+
+- `B27-00-bia-muc-luc.md#1` # 聞いて覚える話し方 日本語生中継 初中級編２ — Bìa và mục lục
+- `B27-00-bia-muc-luc.md#4` ## Nhan đề và thông tin trên bìa
+- `B27-00-bia-muc-luc.md#15` ## Trang nhan đề
+- `B27-00-bia-muc-luc.md#22` ## 目次 — Mục lục sách chính, phần đầu
+- `B27-00-bia-muc-luc.md#37` ## 目次 — Mục lục sách chính, phần tiếp
+- `B27-01-huong-dan.md#1` # Hướng dẫn dùng sách
+- `B27-01-huong-dan.md#4` ## このテキストをお使いになる学習者のみなさんへ — Gửi người học
+- `B27-01-huong-dan.md#21` ## このテキストをお使いになる教師のみなさんへ — Gửi giáo viên: mục đích
+- `B27-01-huong-dan.md#74` ## 各課の構成 — Cấu trúc mỗi bài: phần đầu
+- `B27-01-huong-dan.md#146` ## 授業での使い方のヒント — Gợi ý tổ chức giờ học
+- `B27-02-bai-01-deai.md#1` # 第１課 出会い — Bài 1: Gặp gỡ
+- `B27-02-bai-01-deai.md#3` ## ウォーミングアップ — Khởi động
+- `B27-02-bai-01-deai.md#42` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-02-bai-01-deai.md#120` ## ポイントリスニング — Nghe điểm mấu chốt, CD **1-7**
+- `B27-02-bai-01-deai.md#126` ## 重要表現 — Cách diễn đạt quan trọng
+- `B27-02-bai-01-deai.md#203` ## もういっぱい!? — Thêm nữa!?
+- `B27-02-bai-01-deai.md#232` ## ロールプレイ — Đóng vai
+- `B27-03-bai-02-hoteru-de.md#1` # 第２課 ホテルで — Bài 2: Ở khách sạn
+- `B27-03-bai-02-hoteru-de.md#3` ## ウォーミングアップ — Khởi động
+- `B27-03-bai-02-hoteru-de.md#36` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-03-bai-02-hoteru-de.md#116` ## ポイントリスニング — Nghe điểm mấu chốt, CD **1-15**
+- `B27-03-bai-02-hoteru-de.md#122` ## 重要表現 — Cách diễn đạt quan trọng
+- `B27-03-bai-02-hoteru-de.md#194` ## もういっぱい!? — Thêm nữa!?
+- `B27-03-bai-02-hoteru-de.md#225` ## ロールプレイ — Đóng vai
+- `B27-04-bai-03-uwasa.md#1` # 第３課 うわさ — Bài 3: Tin đồn
+- `B27-04-bai-03-uwasa.md#3` ## ウォーミングアップ — Khởi động
+- `B27-04-bai-03-uwasa.md#42` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-04-bai-03-uwasa.md#113` ## ポイントリスニング — Nghe điểm mấu chốt, CD **1-23**
+- `B27-04-bai-03-uwasa.md#119` ## 重要表現 — Cách diễn đạt quan trọng
+- `B27-04-bai-03-uwasa.md#194` ## もういっぱい!? — Thêm nữa!?
+- `B27-04-bai-03-uwasa.md#229` ## ロールプレイ — Đóng vai
+- `B27-05-bai-04-kikai-no-torabur#1` # 第４課 機械のトラブル — Bài 4: Trục trặc máy móc
+- `B27-05-bai-04-kikai-no-torabur#3` ## ウォーミングアップ — Khởi động
+- `B27-05-bai-04-kikai-no-torabur#43` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-05-bai-04-kikai-no-torabur#119` ## ポイントリスニング 1-31 — Nghe ý chính
+- `B27-05-bai-04-kikai-no-torabur#129` ## 重要表現 — Cách diễn đạt trọng tâm
+- `B27-05-bai-04-kikai-no-torabur#203` ## もういっぱい!? — Luyện thêm
+- `B27-05-bai-04-kikai-no-torabur#240` ## ロールプレイ — Đóng vai
+- `B27-06-bai-05-shippai.md#1` # 第５課 失敗 — Bài 5: Sai sót
+- `B27-06-bai-05-shippai.md#3` ## ウォーミングアップ — Khởi động
+- `B27-06-bai-05-shippai.md#43` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-06-bai-05-shippai.md#117` ## ポイントリスニング 1-39 — Nghe ý chính
+- `B27-06-bai-05-shippai.md#127` ## 重要表現 — Cách diễn đạt trọng tâm
+- `B27-06-bai-05-shippai.md#207` ## もういっぱい!? — Luyện thêm
+- `B27-06-bai-05-shippai.md#244` ## ロールプレイ — Đóng vai
+- `B27-07-bai-06-denwa-o-kakeru.m#1` # 第６課 電話をかける — Bài 6: Gọi điện thoại
+- `B27-07-bai-06-denwa-o-kakeru.m#3` ## ウォーミングアップ — Khởi động
+- `B27-07-bai-06-denwa-o-kakeru.m#37` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-07-bai-06-denwa-o-kakeru.m#111` ## ポイントリスニング 2-7 — Nghe ý chính
+- `B27-07-bai-06-denwa-o-kakeru.m#121` ## 重要表現 — Cách diễn đạt trọng tâm
+- `B27-07-bai-06-denwa-o-kakeru.m#186` ## もういっぱい!? — Luyện thêm
+- `B27-07-bai-06-denwa-o-kakeru.m#214` ## ロールプレイ — Đóng vai
+- `B27-08-bai-07-kenkou-no-tame-n#1` # 第７課 健康のために — Bài 7: Vì sức khỏe
+- `B27-08-bai-07-kenkou-no-tame-n#3` ## ウォーミングアップ — Khởi động
+- `B27-08-bai-07-kenkou-no-tame-n#43` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-08-bai-07-kenkou-no-tame-n#117` ## ポイントリスニング 2-15 — Nghe ý chính
+- `B27-08-bai-07-kenkou-no-tame-n#127` ## 重要表現 — Cách diễn đạt trọng tâm
+- `B27-08-bai-07-kenkou-no-tame-n#196` ## もういっぱい!? — Luyện thêm
+- `B27-08-bai-07-kenkou-no-tame-n#239` ## ロールプレイ — Đóng vai
+- `B27-09-bai-08-eki-de.md#1` # 第８課 駅で — Bài 8: Ở ga
+- `B27-09-bai-08-eki-de.md#3` ## ウォーミングアップ — Khởi động
+- `B27-09-bai-08-eki-de.md#34` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-09-bai-08-eki-de.md#106` ## ポイントリスニング 2-23 — Nghe ý chính
+- `B27-09-bai-08-eki-de.md#116` ## 重要表現 — Cách diễn đạt trọng tâm
+- `B27-09-bai-08-eki-de.md#214` ## もういっぱい!? — Luyện thêm
+- `B27-09-bai-08-eki-de.md#246` ## ロールプレイ — Đóng vai
+- `B27-10-bai-09-shumi.md#1` # 第９課 趣味 — Bài 9: Sở thích
+- `B27-10-bai-09-shumi.md#3` ## ウォーミングアップ — Khởi động
+- `B27-10-bai-09-shumi.md#38` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-10-bai-09-shumi.md#112` ## ポイントリスニング 2-32 — Nghe ý chính
+- `B27-10-bai-09-shumi.md#122` ## 重要表現 — Cách diễn đạt trọng tâm
+- `B27-10-bai-09-shumi.md#221` ## もういっぱい!? — Luyện thêm
+- `B27-10-bai-09-shumi.md#248` ## ロールプレイ — Đóng vai
+- `B27-11-bai-10-houfu.md#1` # 第10課 抱負 — Bài 10: Dự định và quyết tâm
+- `B27-11-bai-10-houfu.md#3` ## ウォーミングアップ — Khởi động
+- `B27-11-bai-10-houfu.md#39` ## 聞き取り練習 — Luyện nghe hiểu
+- `B27-11-bai-10-houfu.md#96` ## ディクテーション — Nghe chép **2-40**
+- `B27-11-bai-10-houfu.md#111` ## ポイントリスニング — Nghe ý chính **2-41**
+- `B27-11-bai-10-houfu.md#121` ## 重要表現 — Cách diễn đạt quan trọng
+- `B27-11-bai-10-houfu.md#196` ## もういっぱい!? — Luyện thêm
+- `B27-11-bai-10-houfu.md#234` ## ロールプレイ — Đóng vai
+- `B27-12-atogaki-shuppan.md#1` # あとがき・著者紹介・奥付 — Lời cuối, tác giả và thông tin xuất bản
+- `B27-12-atogaki-shuppan.md#4` ## あとがき — Lời cuối (PDF92, trang in 88)
+- `B27-12-atogaki-shuppan.md#33` ## 著者紹介 — Giới thiệu tác giả (PDF93)
+- `B27-12-atogaki-shuppan.md#42` ## 奥付 — Thông tin xuất bản (PDF94)
+- `B27-13-bessatsu-bia-muc-luc.md#1` # 別冊 — Tập rời: script, từ vựng, đáp án
+- `B27-13-bessatsu-bia-muc-luc.md#4` ## 表紙 — Trang tên (PDF95)
+- `B27-13-bessatsu-bia-muc-luc.md#11` ## 目次 — Mục lục tập rời (PDF96)
+- `B27-14-script-bai-01.md#1` # 別冊 スクリプト 第１課 出会い — Lời thoại Bài 1
+- `B27-14-script-bai-01.md#6` ## 聞き取り練習 — Skit ① **1-2** (PDF97, trang rời 1)
+- `B27-14-script-bai-01.md#25` ## 聞き取り練習 — Skit ② **1-3** (PDF97, trang rời 1)
+- `B27-14-script-bai-01.md#46` ## 聞き取り練習 — Skit ③ **1-4** (PDF98, trang rời 2)
+- `B27-14-script-bai-01.md#64` ## 聞き取り練習 — Skit ④ **1-5** (PDF98, trang rời 2)
+- `B27-14-script-bai-01.md#87` ## ディクテーション **1-6** — Năm câu nghe chép (PDF99, trang rời 3)
+- `B27-14-script-bai-01.md#97` ## ポイントリスニング **1-7** — Sáu cặp lời chào (PDF99)
+- `B27-14-script-bai-01.md#114` ## 重要表現１ 練習 名のる **1-8** — Tự giới thiệu (PDF99–100)
+- `B27-14-script-bai-01.md#131` ## 重要表現３ 練習 相手について知っていることを述べる **1-9** — Nói điều đã biết về người đối thoại (PDF100, trang rời 4)
+- `B27-15-script-bai-02.md#1` # 別冊 スクリプト 第２課 ホテルで — Lời thoại Bài 2
+- `B27-15-script-bai-02.md#4` ## 聞き取り練習 — ① **1-10** (PDF101, trang rời 5)
+- `B27-15-script-bai-02.md#24` ## 聞き取り練習 — ② **1-11** (PDF101)
+- `B27-15-script-bai-02.md#40` ## 聞き取り練習 — ③ **1-12** (PDF101–102)
+- `B27-15-script-bai-02.md#62` ## 聞き取り練習 — ④ **1-13** (PDF102)
+- `B27-15-script-bai-02.md#75` ## ディクテーション **1-14** — Năm câu (PDF102)
+- `B27-15-script-bai-02.md#85` ## ポイントリスニング **1-15** — Sáu cách mở lời (PDF102)
+- `B27-15-script-bai-02.md#97` ## 重要表現１ 練習 これから質問をするときの前置き **1-16** — Mở lời trước khi hỏi (PDF103, trang rời 7)
+- `B27-15-script-bai-02.md#119` ## 重要表現２ 練習 あるかどうか／できるかどうか、たずねる **1-17** — Hỏi có/được hay không (PDF103–104)
+- `B27-16-script-bai-03.md#1` # 別冊 スクリプト 第３課 うわさ — Lời thoại Bài 3
+- `B27-16-script-bai-03.md#4` ## 聞き取り練習 ① **1-18** (PDF105, trang rời 9)
+- `B27-16-script-bai-03.md#22` ## 聞き取り練習 ② **1-19** (PDF105)
+- `B27-16-script-bai-03.md#36` ## 聞き取り練習 ③ **1-20** (PDF105–106)
+- `B27-16-script-bai-03.md#57` ## 聞き取り練習 ④ **1-21** (PDF106)
+- `B27-16-script-bai-03.md#71` ## ディクテーション **1-22** (PDF106)
+- `B27-16-script-bai-03.md#81` ## ポイントリスニング **1-23** (PDF106)
+- `B27-16-script-bai-03.md#99` ## 重要表現１ 練習 聞いた話を切り出す **1-24** — Mở đầu chuyện đã nghe (PDF107, trang rời 11)
+- `B27-16-script-bai-03.md#120` ## 重要表現２ 練習 相手からの情報に反応する **1-25** — Đáp lại thông tin nghe được (PDF107)
+- `B27-17-script-bai-04.md#1` # 別冊 スクリプト 第４課 機械のトラブル — Lời thoại Bài 4
+- `B27-17-script-bai-04.md#4` ## 聞き取り練習 ① **1-26** (PDF108, trang rời 12)
+- `B27-17-script-bai-04.md#19` ## 聞き取り練習 ② **1-27** (PDF108)
+- `B27-17-script-bai-04.md#35` ## 聞き取り練習 ③ **1-28** (PDF108–109)
+- `B27-17-script-bai-04.md#56` ## 聞き取り練習 ④ **1-29** (PDF109)
+- `B27-17-script-bai-04.md#76` ## ディクテーション **1-30** (PDF109)
+- `B27-17-script-bai-04.md#87` ## ポイントリスニング **1-31** (PDF110, trang rời 14)
+- `B27-17-script-bai-04.md#98` ## 重要表現１ 練習 能力について述べる **1-32** — Nói về khả năng (PDF110)
+- `B27-17-script-bai-04.md#117` ## 重要表現２ 練習 申し出る **1-33** — Đề nghị giúp (PDF110–111)
+- `B27-18-script-bai-05.md#1` # 別冊 スクリプト 第５課 失敗 — Lời thoại Bài 5
+- `B27-18-script-bai-05.md#4` ## 聞き取り練習 ① **1-34** (PDF112, trang rời 16)
+- `B27-18-script-bai-05.md#23` ## 聞き取り練習 ② **1-35** (PDF112)
+- `B27-18-script-bai-05.md#43` ## 聞き取り練習 ③ **1-36** (PDF113, trang rời 17)
+- `B27-18-script-bai-05.md#59` ## 聞き取り練習 ④ **1-37** (PDF113)
+- `B27-18-script-bai-05.md#86` ## ディクテーション **1-38** (PDF114, trang rời 18)
+- `B27-18-script-bai-05.md#96` ## ポイントリスニング **1-39** (PDF114)
+- `B27-18-script-bai-05.md#107` ## 重要表現１ 練習 自分の失敗をほかの人に伝える **1-40** — Kể lại lỗi của mình (PDF114–115)
+- `B27-18-script-bai-05.md#137` ## 重要表現２ 練習 悪い結果を心配していることを伝える **1-41** — Nói nỗi lo về kết quả (PDF115)
+- `B27-19-script-bai-06.md#1` # 別冊 スクリプト 第６課 電話をかける — Lời thoại Bài 6
+- `B27-19-script-bai-06.md#4` ## 聞き取り練習 ① **2-2** (PDF116, trang rời 20)
+- `B27-19-script-bai-06.md#18` ## 聞き取り練習 ② **2-3** (PDF116)
+- `B27-19-script-bai-06.md#36` ## 聞き取り練習 ③ **2-4** (PDF116–117)
+- `B27-19-script-bai-06.md#57` ## 聞き取り練習 ④ **2-5** (PDF117)
+- `B27-19-script-bai-06.md#84` ## ディクテーション **2-6** (PDF117)
+- `B27-19-script-bai-06.md#95` ## ポイントリスニング **2-7** — Sáu tình huống hỏi người qua điện thoại (PDF118, trang rời 22)
+- `B27-19-script-bai-06.md#112` ## 重要表現１ 練習 用件を伝える **2-8** — Nêu việc muốn nói qua điện thoại (PDF118–119)
+- `B27-19-script-bai-06.md#145` ## 重要表現２ 練習 伝言をする **2-9** — Nhờ nhắn lời (PDF119)
+- `B27-20-script-bai-07.md#1` # 別冊 スクリプト 第７課 健康のために — Lời thoại Bài 7
+- `B27-20-script-bai-07.md#4` ## 聞き取り練習 ① **2-10** (PDF120, trang rời 24)
+- `B27-20-script-bai-07.md#25` ## 聞き取り練習 ② **2-11** (PDF120–121)
+- `B27-20-script-bai-07.md#51` ## 聞き取り練習 ③ **2-12** (PDF121)
+- `B27-20-script-bai-07.md#69` ## 聞き取り練習 ④ **2-13** (PDF121)
+- `B27-20-script-bai-07.md#93` ## ディクテーション **2-14** (PDF122, trang rời 26)
+- `B27-20-script-bai-07.md#103` ## ポイントリスニング **2-15** (PDF122)
+- `B27-20-script-bai-07.md#114` ## 重要表現１ 練習 相手にいいと思うことを教える **2-16** — Gợi ý điều có ích (PDF122–123)
+- `B27-20-script-bai-07.md#144` ## 重要表現２ 練習 自分の体の状態の変化について話す **2-17** — Nói thay đổi của cơ thể (PDF123)
+- `B27-21-script-bai-08.md#1` # 別冊 スクリプト 第８課 駅で — Lời thoại Bài 8
+- `B27-21-script-bai-08.md#4` ## 聞き取り練習 ① **2-18** (PDF124, trang rời 28)
+- `B27-21-script-bai-08.md#26` ## 聞き取り練習 ② **2-19** (PDF124)
+- `B27-21-script-bai-08.md#40` ## 聞き取り練習 ③ **2-20** (PDF124–125)
+- `B27-21-script-bai-08.md#65` ## 聞き取り練習 ④ **2-21** (PDF125)
+- `B27-21-script-bai-08.md#83` ## ディクテーション **2-22** (PDF125)
+- `B27-21-script-bai-08.md#94` ## ポイントリスニング **2-23** (PDF126, trang rời 30)
+- `B27-21-script-bai-08.md#105` ## 重要表現１ 練習 情報が確かかどうかたずねる **2-24** — Hỏi xác nhận thông tin (PDF126)
+- `B27-21-script-bai-08.md#128` ## 重要表現２ 練習 確信はないが可能性があると言う **2-25** — Nói khả năng khi chưa chắc (PDF126–127)
+- `B27-21-script-bai-08.md#149` ## 重要表現３ 練習 自分の責任を回避するためにやわらげて言う **2-26** — Nói giảm nhẹ trách nhiệm (PDF127)
+- `B27-22-script-bai-09.md#1` # 別冊 スクリプト 第９課 趣味 — Lời thoại Bài 9
+- `B27-22-script-bai-09.md#4` ## 聞き取り練習 ① **2-27** (PDF128, trang rời 32)
+- `B27-22-script-bai-09.md#23` ## 聞き取り練習 ② **2-28** (PDF128)
+- `B27-22-script-bai-09.md#43` ## 聞き取り練習 ③ **2-29** (PDF129, trang rời 33)
+- `B27-22-script-bai-09.md#61` ## 聞き取り練習 ④ **2-30** (PDF129)
+- `B27-22-script-bai-09.md#80` ## 書き取り練習 **2-31** (PDF129–130)
+- `B27-22-script-bai-09.md#95` ## ポイントリスニング **2-32** (PDF130)
+- `B27-22-script-bai-09.md#106` ## 重要表現１ 練習 誘う **2-33** (PDF130)
+- `B27-22-script-bai-09.md#131` ## 重要表現２ 練習 誘いに興味を示す **2-34** (PDF131, trang rời 35)
+- `B27-22-script-bai-09.md#149` ## 重要表現３ 練習 誘いに興味があまりないことを示す **2-35** (PDF131)
+- `B27-23-script-bai-10.md#1` # 別冊 スクリプト 第10課 抱負 — Lời thoại Bài 10
+- `B27-23-script-bai-10.md#4` ## 聞き取り練習 ① **2-36** (PDF132, trang rời 36)
+- `B27-23-script-bai-10.md#24` ## 聞き取り練習 ② **2-37** (PDF132)
+- `B27-23-script-bai-10.md#44` ## 聞き取り練習 ③ **2-38** (PDF133, trang rời 37)
+- `B27-23-script-bai-10.md#62` ## 聞き取り練習 ④ **2-39** (PDF133–134)
+- `B27-23-script-bai-10.md#86` ## ディクテーション **2-40** (PDF134, trang rời 38)
+- `B27-23-script-bai-10.md#96` ## ポイントリスニング **2-41** (PDF134)
+- `B27-23-script-bai-10.md#107` ## 重要表現１ 練習 抱負を述べる **2-42** (PDF134–135)
+- `B27-23-script-bai-10.md#135` ## 重要表現２ 練習 はげます／応援する **2-43** (PDF135, trang rời 39)
+- `B27-24-bessatsu-tuvung.md#1` # 別冊 単語表 — Bảng từ theo bài và skit
+- `B27-24-bessatsu-tuvung.md#6` ## 第１課 出会い (PDF136, trang rời 40)
+- `B27-24-bessatsu-tuvung.md#51` ## 第２課 ホテルで (PDF136–137)
+- `B27-24-bessatsu-tuvung.md#95` ## 第３課 うわさ (PDF137, trang rời 41)
+- `B27-24-bessatsu-tuvung.md#138` ## 第４課 機械のトラブル (PDF137)
+- `B27-24-bessatsu-tuvung.md#186` ## 第５課 失敗 (PDF138, trang rời 42)
+- `B27-24-bessatsu-tuvung.md#232` ## 第６課 電話をかける (PDF139, trang rời 43)
+- `B27-24-bessatsu-tuvung.md#269` ## 第７課 健康のために (PDF139)
+- `B27-24-bessatsu-tuvung.md#321` ## 第８課 駅で (PDF140, trang rời 44)
+- `B27-24-bessatsu-tuvung.md#363` ## 第９課 趣味 (PDF140–141)
+- `B27-24-bessatsu-tuvung.md#412` ## 第10課 抱負 (PDF141, trang rời 45)
+- `B27-25-bessatsu-dapan.md#1` # 別冊 解答 — Đáp án in trong sách
+- `B27-25-bessatsu-dapan.md#6` ## 第１課 出会い (PDF142, trang rời 46)
+- `B27-25-bessatsu-dapan.md#41` ## 第２課 ホテルで (PDF143, trang rời 47)
+- `B27-25-bessatsu-dapan.md#76` ## 第３課 うわさ (PDF144, trang rời 48)
+- `B27-25-bessatsu-dapan.md#111` ## 第４課 機械のトラブル (PDF145, trang rời 49)
+- `B27-25-bessatsu-dapan.md#146` ## 第５課 失敗 (PDF146, trang rời 50)
+- `B27-25-bessatsu-dapan.md#181` ## 第６課 電話をかける (PDF147, trang rời 51)
+- `B27-25-bessatsu-dapan.md#216` ## 第７課 健康のために (PDF148, trang rời 52)
+- `B27-25-bessatsu-dapan.md#251` ## 第８課 駅で (PDF149, trang rời 53)
+- `B27-25-bessatsu-dapan.md#288` ## 第９課 趣味 (PDF150, trang rời 54)
+- `B27-25-bessatsu-dapan.md#325` ## 第１０課 抱負 (PDF151, trang rời 55)

@@ -126,7 +126,7 @@ Giữ UID của **185** chặng cũ, phân lại nội dung **9** chặng quá r
 - **S-073 — Ý kiến, lời khuyên & tin đồn** · Đời sống · 4 sự kiện / 20 tình huống · key `S-53`
 - **S-074 — Thời tiết, mùa & lễ hội** · Đời sống · 4 sự kiện / 20 tình huống · key `S-55`
 
-### S11 — Đi chơi, đón người thân và học mỗi ngày
+### S11 — Đi chơi, đón người thân và học mỗi ngày 
 
 - **S-075 — Du lịch & khách sạn** · Đời sống · 5 sự kiện / 25 tình huống · key `S-56`
 - **S-076 — Đi máy bay nội địa và xử lý hành trình tại sân bay** · Đời sống · 4 sự kiện / 16 tình huống · key `V5P-127`
