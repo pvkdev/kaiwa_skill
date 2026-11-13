@@ -1,5 +1,7 @@
 # Kế hoạch bổ sung Live AI Challenge vào skill biên soạn chặng
 
+**Cập nhật hợp đồng đầu ra:** cấu trúc wire JSON cho challenge/free talk và cả chặng đã chốt tại `kaiwa_skill/contracts/harumii-kaiwa/v1/CONTRACT.md` (Exchange 1.0.0); phía Harumi có mirror và `design/kaiwa-curriculum/IMPLEMENTATION_CONTRACT_V1.md`. Dùng hợp đồng đó khi soạn/export hoặc build feature. Các schema nháp và danh sách triển khai bên dưới là lịch sử plan; tool hiện đã kiểm/đóng gói payload đủ bảy loại node, nhưng chưa build importer/DB feature hoặc chạy pilot nội dung thật.
+
 Ngày: 2026-11-13. Trạng thái: **thiết kế challenge để duyệt; phần free talk đã bổ sung vào skill/hợp đồng V3.2. Chưa sửa Harumi**.
 
 Người dùng chốt bổ sung: free talk cuối chặng phải có sẵn tình huống/context tổng hợp kiến thức trong chặng. **Giới hạn 1.000 ký tự chỉ dành cho tình huống user tự nhập trong app, không áp cho challenge hoặc free talk của lộ trình do tác giả biên soạn.** Harumi sẽ tích hợp luồng nội dung lộ trình phù hợp; không thiết kế nội dung quanh giới hạn nhập tay.
