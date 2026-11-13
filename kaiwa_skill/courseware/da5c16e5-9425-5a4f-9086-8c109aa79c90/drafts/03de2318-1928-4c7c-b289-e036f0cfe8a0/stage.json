@@ -1,0 +1,473 @@
+{
+  "schema_version": "3.2-draft",
+  "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+  "display_code": "S-011",
+  "title": "Tàu điện & xe buýt",
+  "level": "Sơ",
+  "scope": "Tự hỏi và xác nhận tuyến, điểm đổi tàu, cửa lên xe buýt và lối cần hỗ trợ. Ga あおば・さくら・みどり, tuyến, sân ga, xe buýt và thời gian trong ví dụ là giả định để luyện nói; không dùng làm hướng dẫn hành trình thật.",
+  "nodes": [
+    {
+      "id": "v01",
+      "type": "vocabulary",
+      "title": "Tuyến, sân ga và hướng đi",
+      "path": "vocabulary/v01.json",
+      "source_refs": []
+    },
+    {
+      "id": "g01",
+      "type": "grammar",
+      "title": "Hỏi vị trí, điểm đến và nơi thực hiện hành động",
+      "path": "grammar/g01.json",
+      "source_refs": [
+        "src-minna"
+      ]
+    },
+    {
+      "id": "k01",
+      "type": "knowledge",
+      "title": "Hỏi từng thông tin để tự chọn được tàu",
+      "path": "knowledge/k01.md",
+      "source_refs": [
+        "src-b08"
+      ],
+      "source_family": "general"
+    },
+    {
+      "id": "sh01",
+      "type": "shadowing",
+      "title": "Hỏi tuyến: câu lõi và tám mẫu tàu điện từ 必須700",
+      "path": "shadowing/sh01.json",
+      "source_refs": [
+        "src-b08"
+      ]
+    },
+    {
+      "id": "vSJ",
+      "type": "vocabulary",
+      "title": "Từ trong hội thoại nguồn của bài ね",
+      "path": "vocabulary/vSJ.json",
+      "source_refs": []
+    },
+    {
+      "id": "gSJ",
+      "type": "grammar",
+      "title": "Tra cứu ngữ pháp trong ví dụ nguồn",
+      "path": "grammar/gSJ.json",
+      "source_refs": [
+        "src-minna"
+      ]
+    },
+    {
+      "id": "k02",
+      "type": "knowledge",
+      "title": "Xác nhận và báo ý định nhẹ nhàng với ね",
+      "path": "knowledge/k02.md",
+      "source_refs": [
+        "src-b11"
+      ],
+      "source_family": "speak_japanese",
+      "practice_node_id": "sh02",
+      "video": {
+        "status": "planned",
+        "asset_ref": null
+      }
+    },
+    {
+      "id": "sh02",
+      "type": "shadowing",
+      "title": "Sau video: hội thoại nguồn, mức lịch sự và ứng dụng mới",
+      "path": "shadowing/sh02.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-opening",
+      "type": "situation",
+      "title": "Hội thoại mở đầu: cùng ăn donut",
+      "path": "situations/sj-opening.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-example-01",
+      "type": "situation",
+      "title": "Tìm đồng tình: ảnh gia đình",
+      "path": "situations/sj-example-01.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-example-02",
+      "type": "situation",
+      "title": "Chia sẻ thời tiết",
+      "path": "situations/sj-example-02.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-example-03",
+      "type": "situation",
+      "title": "Bày tỏ sự tiếc nuối",
+      "path": "situations/sj-example-03.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-example-04",
+      "type": "situation",
+      "title": "Hẹn cùng quay lại quán",
+      "path": "situations/sj-example-04.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-example-05",
+      "type": "situation",
+      "title": "Kiểm lại giờ họp",
+      "path": "situations/sj-example-05.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-example-06",
+      "type": "situation",
+      "title": "Báo mình đi trước",
+      "path": "situations/sj-example-06.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-example-07",
+      "type": "situation",
+      "title": "Dặn giữ gìn sức khỏe",
+      "path": "situations/sj-example-07.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "sj-example-08",
+      "type": "situation",
+      "title": "Nhắc ăn rau",
+      "path": "situations/sj-example-08.json",
+      "source_refs": [
+        "src-b11"
+      ]
+    },
+    {
+      "id": "S001",
+      "type": "situation",
+      "title": "Hỏi tàu này có tới ga cần không",
+      "path": "situations/S001.json",
+      "source_refs": []
+    },
+    {
+      "id": "S002",
+      "type": "situation",
+      "title": "Hỏi phải đổi ở ga nào",
+      "path": "situations/S002.json",
+      "source_refs": []
+    },
+    {
+      "id": "S003",
+      "type": "situation",
+      "title": "Hỏi sân ga của tuyến tiếp theo",
+      "path": "situations/S003.json",
+      "source_refs": []
+    },
+    {
+      "id": "k03",
+      "type": "knowledge",
+      "title": "Khi phát hiện đi nhầm: hỏi lại đúng chỗ rồi chốt lại",
+      "path": "knowledge/k03.md",
+      "source_refs": [
+        "src-b27",
+        "src-b14"
+      ],
+      "source_family": "general"
+    },
+    {
+      "id": "sh03",
+      "type": "shadowing",
+      "title": "Hỏi lại thật: ba đoạn Shadowing nguồn và một skit Nama chuyển soạn",
+      "path": "shadowing/sh03.json",
+      "source_refs": [
+        "src-b14",
+        "src-b27-script"
+      ]
+    },
+    {
+      "id": "b14-distance",
+      "type": "situation",
+      "title": "Shadowing nguồn: hỏi khoảng cách đến ga",
+      "path": "situations/b14-distance.json",
+      "source_refs": [
+        "src-b14"
+      ]
+    },
+    {
+      "id": "b14-location",
+      "type": "situation",
+      "title": "Shadowing nguồn: hỏi ga ở đâu",
+      "path": "situations/b14-location.json",
+      "source_refs": [
+        "src-b14"
+      ]
+    },
+    {
+      "id": "b14-lasttrain",
+      "type": "situation",
+      "title": "Shadowing nguồn: nhắc lại một từ chưa hiểu",
+      "path": "situations/b14-lasttrain.json",
+      "source_refs": [
+        "src-b14"
+      ]
+    },
+    {
+      "id": "b27-repair",
+      "type": "situation",
+      "title": "Nama chuyển soạn: hỏi từ chưa hiểu rồi đổi phương án",
+      "path": "situations/b27-repair.json",
+      "source_refs": [
+        "src-b27-script"
+      ]
+    },
+    {
+      "id": "S004",
+      "type": "situation",
+      "title": "Đứng sai chiều, nhờ chỉ sang đúng bên",
+      "path": "situations/S004.json",
+      "source_refs": []
+    },
+    {
+      "id": "S005",
+      "type": "situation",
+      "title": "Sau khi được sửa: nhắc lại tuyến và sân ga",
+      "path": "situations/S005.json",
+      "source_refs": []
+    },
+    {
+      "id": "v02",
+      "type": "vocabulary",
+      "title": "Bến xe, cách lên xuống và khi lỡ bến",
+      "path": "vocabulary/v02.json",
+      "source_refs": []
+    },
+    {
+      "id": "g02",
+      "type": "grammar",
+      "title": "Lúc lên hoặc xuống xe: とき",
+      "path": "grammar/g02.json",
+      "source_refs": [
+        "src-minna"
+      ]
+    },
+    {
+      "id": "k04",
+      "type": "knowledge",
+      "title": "Đi xe buýt: hỏi đúng tuyến, cách lên và bước tiếp theo",
+      "path": "knowledge/k04.md",
+      "source_refs": [
+        "src-b01",
+        "src-b08",
+        "src-kyoto"
+      ],
+      "source_family": "general"
+    },
+    {
+      "id": "sh04",
+      "type": "shadowing",
+      "title": "Xe buýt: nhóm 5500, 必須700 và câu ứng dụng",
+      "path": "shadowing/sh04.json",
+      "source_refs": [
+        "src-b01",
+        "src-b08"
+      ]
+    },
+    {
+      "id": "S006",
+      "type": "situation",
+      "title": "Hỏi xe có dừng gần nơi cần đến",
+      "path": "situations/S006.json",
+      "source_refs": []
+    },
+    {
+      "id": "S007",
+      "type": "situation",
+      "title": "Hỏi cửa lên xe và lúc trả tiền",
+      "path": "situations/S007.json",
+      "source_refs": []
+    },
+    {
+      "id": "S008",
+      "type": "situation",
+      "title": "Không đi thẳng: hỏi bến chuyển xe",
+      "path": "situations/S008.json",
+      "source_refs": []
+    },
+    {
+      "id": "S009",
+      "type": "situation",
+      "title": "Lỡ bến: hỏi cách quay lại",
+      "path": "situations/S009.json",
+      "source_refs": []
+    },
+    {
+      "id": "S010",
+      "type": "situation",
+      "title": "Báo người đợi rằng mình sẽ đến muộn",
+      "path": "situations/S010.json",
+      "source_refs": []
+    },
+    {
+      "id": "v03",
+      "type": "vocabulary",
+      "title": "Lối đi, hành lý và quầy hỗ trợ",
+      "path": "vocabulary/v03.json",
+      "source_refs": []
+    },
+    {
+      "id": "g03",
+      "type": "grammar",
+      "title": "Hỏi có thể chờ ở đâu",
+      "path": "grammar/g03.json",
+      "source_refs": [
+        "src-minna"
+      ]
+    },
+    {
+      "id": "k05",
+      "type": "knowledge",
+      "title": "Nhờ chỉ lối phù hợp và giữ rõ điểm chờ/điểm gặp",
+      "path": "knowledge/k05.md",
+      "source_refs": [
+        "src-jr",
+        "src-b08"
+      ],
+      "source_family": "general"
+    },
+    {
+      "id": "sh05",
+      "type": "shadowing",
+      "title": "Luyện nói nhu cầu, xin chờ và xác nhận địa điểm",
+      "path": "shadowing/sh05.json",
+      "source_refs": [
+        "src-b08"
+      ]
+    },
+    {
+      "id": "S011",
+      "type": "situation",
+      "title": "Mang nhiều hành lý: hỏi thang máy",
+      "path": "situations/S011.json",
+      "source_refs": []
+    },
+    {
+      "id": "S012",
+      "type": "situation",
+      "title": "Đi cùng người khó dùng cầu thang: nhờ chỉ lối",
+      "path": "situations/S012.json",
+      "source_refs": []
+    },
+    {
+      "id": "S013",
+      "type": "situation",
+      "title": "Cần kiểm tra hỗ trợ ở ga đổi: hỏi nơi chờ",
+      "path": "situations/S013.json",
+      "source_refs": []
+    },
+    {
+      "id": "S014",
+      "type": "situation",
+      "title": "Sau khi xác nhận được: hỏi rõ điểm gặp ở ga đổi",
+      "path": "situations/S014.json",
+      "source_refs": []
+    },
+    {
+      "id": "S015",
+      "type": "situation",
+      "title": "Vé không qua cổng: tìm đúng chỗ hỏi",
+      "path": "situations/S015.json",
+      "source_refs": []
+    },
+    {
+      "id": "ft01",
+      "type": "live_context",
+      "title": "Tự trò chuyện: chuyến đi và những điều cần hỏi",
+      "path": "live/ft01.json",
+      "source_refs": []
+    }
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "title": "Chọn tàu và chuyển tuyến",
+      "situation_ids": [
+        "S001",
+        "S002",
+        "S003",
+        "b14-distance",
+        "b14-location",
+        "b14-lasttrain",
+        "b27-repair",
+        "S004",
+        "S005"
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "Đi xe buýt",
+      "situation_ids": [
+        "S006",
+        "S007",
+        "S008",
+        "S009",
+        "S010"
+      ]
+    },
+    {
+      "id": "E03",
+      "title": "Nhờ hỗ trợ ở ga",
+      "situation_ids": [
+        "S011",
+        "S012",
+        "S013",
+        "S014",
+        "S015"
+      ]
+    },
+    {
+      "id": "E-SJ",
+      "title": "Các hội thoại ví dụ của bài nguồn ね",
+      "situation_ids": [
+        "sj-opening",
+        "sj-example-01",
+        "sj-example-02",
+        "sj-example-03",
+        "sj-example-04",
+        "sj-example-05",
+        "sj-example-06",
+        "sj-example-07",
+        "sj-example-08"
+      ]
+    }
+  ],
+  "retired_ids": [],
+  "source_refs": [],
+  "curriculum": {
+    "version": "5.0",
+    "registry": "kaiwa_skill/planning/v5/chang_registry.json",
+    "roadmap": "kaiwa_skill/planning/v5/KAIWA_CHANG_V5.jsonl",
+    "policy": "kaiwa_skill/planning/v5/KAIWA_CHANG_V5_META.json"
+  },
+  "harumii_export": "harumii-stage.json",
+  "authoring_mode": "canonical"
+}
