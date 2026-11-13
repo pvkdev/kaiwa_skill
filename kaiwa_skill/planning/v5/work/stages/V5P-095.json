@@ -1,0 +1,231 @@
+{
+  "stage_key": "V5P-095",
+  "uid": "0eb7c76e-b3b4-5911-9d6e-8df61b525f76",
+  "objective": "Báo sự cố tai nạn tại nơi làm và phối hợp thông tin sau hỗ trợ tức thời.",
+  "knowledge_focus": [
+    "nói mốc/địa điểm",
+    "phân biệt quan sát và suy đoán",
+    "bàn giao người phụ trách",
+    "theo dõi việc làm khi vắng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Báo người phụ trách",
+      "roles": [
+        "người học",
+        "trưởng ca"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trao đổi sau sự cố",
+      "roles": [
+        "người học",
+        "HR/quản lý"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bàn giao công việc",
+      "roles": [
+        "người học",
+        "đồng nghiệp/quản lý"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thông tin y tế và lịch trở lại chưa rõ",
+      "roles": [
+        "người học",
+        "HR/quản lý"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói nơi, giờ và điều thấy sau tai nạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Trưởng ca hỏi ai đang được hỗ trợ, trả lời phần biết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Có nguy cơ khác chưa chắc, nói cần người chuyên môn kiểm",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Báo nhầm vị trí, sửa ngay để đội tới đúng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hỏi ai tiếp quản thông tin khi mình rời hiện trường",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Kể trình tự công việc trước sự cố bằng việc mình thấy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Một đồng nghiệp kể khác, tách hai nguồn thông tin",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên hỏi giấy y tế, hỏi cách chuyển thông tin bằng lời",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa thể xác nhận ngày trở lại, nói sẽ cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Sửa lời kể khi có mốc mới được xác minh",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói việc đang dở và phần cần người khác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người thay chưa rõ quy trình, giới thiệu người hướng dẫn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Kế hoạch nghỉ thay đổi, cập nhật lịch nhóm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Một yêu cầu về bồi thường vượt HR quầy này, xin đầu mối phù hợp",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt ai liên hệ khi có quyết định mới",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói đã được chuyên viên hẹn gặp lại nhưng chưa có ngày làm bình thường",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Quản lý hiểu là nghỉ đến ngày cố định, sửa điều chưa chắc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Một nhiệm vụ cũ cần bàn giao trước khi có kết luận, chọn người phụ trách tạm",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau cuộc hẹn chuyên môn, cập nhật phần lịch làm được xác nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Cấp cứu tức thời V5P-058; không hướng dẫn bồi thường.",
+  "cross_stage_refs": [
+    "V5P-058",
+    "V5P-096"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

@@ -1,0 +1,241 @@
+{
+  "stage_key": "T-73",
+  "uid": "e16b50bc-752f-523d-be31-b04d38b6c153",
+  "objective": "Phục vụ khách trong karaoke, cho thuê đồ hoặc lớp học: giải thích lựa chọn, thời hạn và đổi kế hoạch.",
+  "knowledge_focus": [
+    "Nêu điều kiện dịch vụ theo cơ sở",
+    "Xác nhận giờ bắt đầu/kết thúc và đồ kèm",
+    "Đưa phương án khi khách đổi nhu cầu"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Karaoke: chọn phòng/giờ",
+      "roles": [
+        "nhân viên karaoke",
+        "khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Karaoke: đổi/thiết bị lỗi",
+      "roles": [
+        "nhân viên karaoke",
+        "khách"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thuê đồ/dụng cụ",
+      "roles": [
+        "nhân viên cho thuê",
+        "khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Lớp học: hỏi lịch và mức phù hợp",
+      "roles": [
+        "nhân viên lớp học",
+        "khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Kết thúc hoặc thay đổi dịch vụ",
+      "roles": [
+        "nhân viên dịch vụ",
+        "khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi số người, thời gian hát và loại phòng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Chỉ còn phòng lớn hơn, nêu khác biệt giá",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Khách muốn kết lúc mười giờ chứ không bắt đầu lúc mười",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Khách nhận phòng, nhắc giờ kết và cách gọi hỗ trợ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Khách báo mic không hoạt động, hỏi phòng/số mic",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đổi mic vẫn lỗi, đề nghị chuyển phòng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Phòng khác chỉ còn ngắn giờ, hỏi khách nhận không",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chuyển xong, xác nhận giờ tính lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi món cần thuê, cỡ và thời điểm trả",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách tưởng mượn qua đêm, giải thích giờ trả",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chỉ còn cỡ gần, hỏi khách có muốn thử",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Khách quay lại báo đồ có lỗi sẵn, xin người phụ trách kiểm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi người học đã có kinh nghiệm chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Lớp hiện tại khó hơn dự kiến, gợi ý buổi thử",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Lịch mới chưa chốt, hẹn giờ báo",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Có lịch, xác nhận khách còn muốn tham gia",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Khách muốn kéo dài giờ, kiểm chỗ còn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Hết chỗ, giải thích giờ phải kết",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Gợi ý đặt lần sau",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Hỏi khách cần hỗ trợ khi trả đồ/ra quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Ba nghề minh họa chung kỹ năng hỏi/xác nhận; không gộp thuật ngữ nghiệp vụ vào cùng cuộc thoại.",
+  "cross_stage_refs": [
+    "T-17"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

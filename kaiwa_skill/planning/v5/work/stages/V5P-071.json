@@ -1,0 +1,237 @@
+{
+  "stage_key": "V5P-071",
+  "uid": "4b6016cd-a0d1-5500-9081-0b8ab16f0bb3",
+  "objective": "Liên hệ nhiều bên khi đứng ra lo tang, hỏi dịch vụ/dự toán và phối hợp mong muốn gia đình.",
+  "knowledge_focus": [
+    "nói vai trò và nhu cầu",
+    "hỏi từng phần dịch vụ",
+    "điều phối thời gian người xa",
+    "nhắc lại ai phụ trách"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Liên hệ ban đầu",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Phối hợp gia đình",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chốt việc với các đơn vị",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ/cơ quan"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Gia đình đổi người đại diện giữa chừng",
+      "roles": [
+        "người học",
+        "người thân và đơn vị dịch vụ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mình là người đại diện gia đình và xin người tư vấn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mong muốn tôn giáo/ngôn ngữ mà không giả định dịch vụ có sẵn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhân viên chưa xác nhận được, hỏi lúc nào gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không hiểu tên gói, xin tách từng phần",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Gia đình muốn bàn trước, xin giữ lịch tạm nếu có thể",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi giờ người ở xa có thể tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Một người muốn nghi thức khác, nghe lý do và hỏi ưu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Lịch người thân đổi, gọi đơn vị dịch vụ xin điều chỉnh",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không đổi được giờ, đề xuất cách người ở xa tham gia",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Xác nhận ai báo tin cho nhóm nào",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi dự toán theo từng phần và điều chưa gồm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Một giấy hoặc bước chưa hiểu, hỏi quầy phụ trách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhận hai hướng dẫn khác, xin xác nhận lại mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Dịch vụ từ chối một yêu cầu, hỏi phương án phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại giờ, nơi và người liên hệ cho bước kế",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Người đại diện ban đầu không tiếp tục được, giới thiệu người mới",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đơn vị vẫn gọi số cũ, nhắc lại người liên hệ chính",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người mới chưa biết khoản đã đồng ý, xin đơn vị tóm tắt bằng lời",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Một quyết định chưa được gia đình chốt, hẹn giờ trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Sau khi chốt, xác nhận ai nói với từng bên còn lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Không áp nghi thức/giá chuẩn; H-31 là người đến chia buồn hoặc phát biểu.",
+  "cross_stage_refs": [
+    "H-31"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

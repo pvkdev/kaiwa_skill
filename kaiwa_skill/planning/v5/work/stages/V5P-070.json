@@ -1,0 +1,229 @@
+{
+  "stage_key": "V5P-070",
+  "uid": "62ab5d29-ea70-5a5b-9112-022a8422edcd",
+  "objective": "Tìm hỗ trợ riêng khi ly thân hoặc hoàn cảnh gia đình đổi, hỏi đầu mối và cách liên hệ an toàn.",
+  "knowledge_focus": [
+    "nêu mục tiêu trước mắt",
+    "phân biệt điều chắc và lo lắng",
+    "hỏi vai chuyên viên",
+    "giữ quyền không kể chi tiết"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin tư vấn kín",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trình bày hoàn cảnh",
+      "roles": [
+        "người học",
+        "chuyên viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phối hợp nhiều đầu mối",
+      "roles": [
+        "người học",
+        "chuyên viên/quầy khác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Liên hệ lại an toàn",
+      "roles": [
+        "người học",
+        "người hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xin cuộc nói riêng về thay đổi gia đình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người tiếp nhận hỏi trước đám đông, xin chuyển nơi khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không có lịch sớm, nói vấn đề cần giải quyết ngay và hỏi kênh khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi phạm vi bảo mật/thông tin sẽ được chia sẻ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Cách liên hệ do quầy đề nghị không an toàn, yêu cầu đổi",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói ai đang sống cùng và việc vừa thay đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói mục tiêu trước mắt: chỗ ở, lịch con, liên hệ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chưa muốn kể một chi tiết riêng, nói có thể bàn sau",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chuyên viên hiểu sai mốc ly thân, sửa lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Không biết giấy nào cần, hỏi chuyên viên trước cuộc gặp kế",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Được giới thiệu tư vấn pháp lý/gia đình, hỏi mục tiêu nơi đó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Một quầy không nhận trường hợp, xin người giới thiệu liên hệ lại",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Ngày gặp trùng việc đưa con, thương lượng giờ khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Hai nơi hướng dẫn khác nhau, tóm tắt và xin làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chưa quyết phương án, xác nhận bước chỉ để tìm hiểu thêm",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo số/giờ liên hệ an toàn mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Có thay đổi nguy cơ, xin đánh giá lại hỗ trợ trước mắt",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người nhà hỏi thông tin chưa muốn nói, đặt giới hạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau buổi tư vấn, nhắc lại nơi đến và người cần gặp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    }
+  ],
+  "coverage_note": "Không viết thỏa thuận quyền nuôi con/cư trú; nếu có bạo lực, liên kết V5P-061.",
+  "cross_stage_refs": [
+    "V5P-061",
+    "V5P-028"
+  ],
+  "source_refs": [
+    "W11",
+    "W14",
+    "W17"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

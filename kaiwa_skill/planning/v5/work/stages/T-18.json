@@ -1,0 +1,252 @@
+{
+  "stage_key": "T-18",
+  "uid": "c47a0e45-09cf-520c-b5e9-f48b99531204",
+  "objective": "Chọn, trao và đáp quà trong nhiều quan hệ, xử lý từ chối hoặc điều kiện mà không gây áp lực.",
+  "knowledge_focus": [
+    "Nói lý do tặng, dịp và mức thân mật",
+    "Đáp lời cảm ơn/từ chối, hỏi trước khi tặng món có ràng buộc"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn quà cho dịp",
+      "roles": [
+        "người học",
+        "bạn tư vấn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trao quà",
+      "roles": [
+        "người học",
+        "người nhận"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhận quà",
+      "roles": [
+        "người học",
+        "người tặng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Quà đến muộn hoặc sai",
+      "roles": [
+        "người học",
+        "người nhận hoặc người tặng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Quà trong nhóm",
+      "roles": [
+        "người học",
+        "bạn cùng góp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi món nào phù hợp khi thăm nhà lần đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói người nhận thích gì và có hạn chế gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bạn không biết rõ khẩu vị, chọn món dễ chia sẻ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hiểu nhầm quà chung thành quà riêng một người",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt người nhận và dịp tặng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói quà là lời cảm ơn sau khi được giúp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Tặng món nhỏ khi thăm nhà và nói không cần đáp lễ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người nhận vui, đáp lời cảm ơn mà không hạ thấp món",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người nhận không tiện nhận, tôn trọng và giữ quà",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Người nhận chỉ nhận cho cả nhóm, đồng ý cách chia",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Cảm ơn và hỏi món dùng thế nào khi chưa rõ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói điều cụ thể mình thích ở món nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Món không dùng được vì thành phần, nói thật nhẹ và hỏi có thể chia cho người khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không thể nhận món đắt tiền, giải thích giới hạn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Giữ quan hệ sau câu trả lời khó",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo món đặt chưa đến, trao lời chúc trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người kia nghĩ mình quên dịp, giải thích ngắn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đề nghị cùng chọn trải nghiệm thay cho món đã hết",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Người kia đồng ý nhận sau, chốt cách trao",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gặp lại để đưa món và nhắc cuộc nói trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi mọi người muốn góp quà chung hay riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nêu ngân sách mình thoải mái",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Nhóm chọn mức cao hơn, nêu mức mình có thể góp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Không tham gia quà chung, đề nghị lời chúc riêng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt ai trao quà và nói điều gì",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "Quà và quan hệ, không ép nghi thức cố định; lời mời thăm nhà T-20, phát biểu nghi lễ H-31.",
+  "cross_stage_refs": [
+    "T-20",
+    "H-31"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

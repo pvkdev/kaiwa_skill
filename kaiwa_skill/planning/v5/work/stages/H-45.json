@@ -1,0 +1,269 @@
+{
+  "stage_key": "H-45",
+  "uid": "4b79024e-04b0-5d26-bf9d-51a4fe964edf",
+  "objective": "Chủ trì họp để nhiều bên được nghe, kết luận đúng mức đồng thuận và dẫn tới quyết định.",
+  "knowledge_focus": [
+    "Mở mục tiêu và điều cần quyết",
+    "Phân bổ lượt nói giữa vai",
+    "Tóm tắt bất đồng không làm phẳng",
+    "Chốt owner, mốc và điều còn chờ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở và đặt phạm vi",
+      "roles": [
+        "chủ trì",
+        "người dự"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Mời nhiều phía nói",
+      "roles": [
+        "chủ trì",
+        "đại diện bộ phận"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giữ nhịp khi tranh luận",
+      "roles": [
+        "chủ trì",
+        "người tranh luận"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chốt quyết định",
+      "roles": [
+        "chủ trì",
+        "người tham dự"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Thay đổi trong cuộc họp",
+      "roles": [
+        "chủ trì",
+        "người tham dự"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau cuộc họp",
+      "roles": [
+        "chủ trì",
+        "người nhận việc"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu quyết định cần hôm nay và việc chỉ để thu ý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người dự tưởng mọi mục đã được duyệt, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi có thông tin mới cần đưa trước khi bàn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Có dữ liệu trễ, đổi thứ tự mục",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Mời bộ phận vận hành nói ràng buộc trước khi chốt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi người ít phát biểu có tác động nào chưa nêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người đó không phản đối, chỉ muốn làm rõ nguồn lực",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bảo vệ lượt nói khi một bên ngắt lời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nhắc lại hai quan điểm bằng ngôn ngữ trung tính",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Tranh luận chuyển sang cá nhân, đưa về tiêu chí",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chưa đủ dữ liệu, tách việc có thể quyết",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Giao người xác minh rồi hẹn quyết phần còn lại",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói lựa chọn đã được người có quyền duyệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Một người tưởng mới là khuyến nghị, nhắc rõ mức quyết",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi ai chịu phần việc đầu và mốc báo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Điểm chi phí chưa duyệt, đánh dấu chưa chốt bằng lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Có tin khách đổi hạn, nói tác động tới mục tiêu họp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Chỉ quyết ứng phó ngắn hạn, việc dài hạn hẹn sau",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hỏi bên nào bị ảnh hưởng mà chưa có mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Liên hệ sau họp để lấy ý",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Xác nhận người nhận đã hiểu đầu ra và giới hạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Người đó không có nguồn lực, phân lại trước khi kết",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Đến mốc kiểm, hỏi kết quả và quyết định tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    }
+  ],
+  "coverage_note": "T-53/H-06 là vai người tham gia; H-45 là người dẫn dắt quyết định. Không viết biên bản.",
+  "cross_stage_refs": [
+    "T-53",
+    "H-06"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

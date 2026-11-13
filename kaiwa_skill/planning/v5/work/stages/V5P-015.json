@@ -1,0 +1,249 @@
+{
+  "stage_key": "V5P-015",
+  "uid": "e727fa96-8d49-512a-97b4-c28334d6b8ca",
+  "objective": "Đăng ký và tham gia phòng tập, trao đổi mục tiêu vận động với huấn luyện viên và điều chỉnh buổi tập.",
+  "knowledge_focus": [
+    "Nói mục tiêu vừa phải, lịch và khả năng hiện tại",
+    "Hỏi quy tắc, hiểu chỉ dẫn, báo không thoải mái và đổi cường độ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn nơi tập",
+      "roles": [
+        "người học",
+        "nhân viên gym"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Buổi đầu và quy tắc",
+      "roles": [
+        "người học",
+        "nhân viên gym"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trao đổi với huấn luyện viên",
+      "roles": [
+        "người học",
+        "huấn luyện viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khi kế hoạch tập không hợp",
+      "roles": [
+        "người học",
+        "huấn luyện viên"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau một thời gian",
+      "roles": [
+        "người học",
+        "huấn luyện viên hoặc nhân viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi có buổi tham quan/thử không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói ngày giờ mình thường rảnh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi phí tháng gồm buổi hướng dẫn không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ có lớp thử giờ khác, đổi lịch",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Điều kiện không hợp, xin thời gian nghĩ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi khu thay đồ và nơi để vật cá nhân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Xin chỉ cách dùng một thiết bị bằng lời và mẫu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hiểu nhầm phải đặt trước mọi máy, hỏi rõ khu nào cần đặt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Máy đang có người dùng, hỏi lượt chờ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại quy tắc dùng và dọn sau buổi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói mục tiêu chung và mức kinh nghiệm hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi động tác nào phù hợp buổi đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Động tác làm mình khó chịu, báo và dừng để hỏi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đề nghị bài dễ hơn thay vì cố làm",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt phần mình sẽ tập hôm nay",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói lịch mới khiến mình không tới buổi đã đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Huấn luyện viên chỉ còn giờ khác, chọn hoặc đổi người",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hai người hiểu khác số buổi trong gói, nhờ giải thích",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Không nhận gói dài khi chưa chắc lịch",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt số buổi, giờ và phần cần chuẩn bị",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói điều mình làm được và điều còn khó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi nên đổi mục tiêu hay thời gian buổi tập",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chưa quyết định tiếp tục gói, hỏi hạn báo",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Gọi lại theo hẹn để xác nhận lựa chọn",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Kết thúc hoặc gia hạn với điều kiện đã hiểu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Giao tiếp vận động, không kê bài tập/điều trị. Sở thích thể thao S-48, căng thẳng T-30.",
+  "cross_stage_refs": [
+    "S-48",
+    "T-30"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

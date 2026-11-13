@@ -1,0 +1,300 @@
+{
+  "stage_key": "H-17",
+  "uid": "2fbfe235-9cff-5820-8073-202b8c5f0f5a",
+  "objective": "Đàm phán với dịch vụ du lịch khi hành trình hỏng, phối hợp nhóm và giữ lựa chọn có thể thực hiện.",
+  "knowledge_focus": [
+    "Tường thuật chuỗi đặt–xác nhận–sự cố–ảnh hưởng",
+    "So phương án về giờ, tiền, an toàn, nhu cầu nhóm; hỏi đầu mối và hạn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xác định sự cố và ưu tiên",
+      "roles": [
+        "người học",
+        "người đi cùng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Liên hệ quầy dịch vụ",
+      "roles": [
+        "người học",
+        "nhân viên vận chuyển",
+        "lưu trú"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "So phương án tại chỗ",
+      "roles": [
+        "người học",
+        "nhân viên phụ trách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Phối hợp hai đầu mối",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ thứ hai"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sự cố lặp trong hành trình",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau chuyến",
+      "roles": [
+        "người học",
+        "nhân viên hậu mãi"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói chính xác phần đặt nào bị ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ai trong nhóm có ràng buộc giờ/nhu cầu đặc biệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhóm tưởng mọi chặng đều hủy, tách phần vẫn dùng được",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Có người phải về trước, xác định ưu tiên chung",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt yêu cầu mang tới quầy",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nêu mã đặt và điều đã xác nhận bằng lời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói dịch vụ hôm nay khác điều đã hẹn thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Quầy cần kiểm với bộ phận khác, hỏi thời gian phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chỉ đổi được một phần, hỏi phần còn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Phương án đầu không đáp hành trình nhóm, xin phương án khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi giờ đi mới, chỗ đến và khoản thêm mỗi phương án",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nêu người cần về sớm nên không thể chờ quá lâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chấp nhận đổi tuyến nếu hành lý/nhóm đi được",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Phòng thay có điều kiện khác, hỏi phần giá và tiện ích",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại phương án mình chọn và điều kiện",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Giải thích đơn vị đầu đã đồng ý phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đơn vị thứ hai chưa nhận thông tin, xin hai bên xác nhận",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Một bên hiểu ngày mới là ngày trả, sửa mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chưa có quyết định chung, hỏi ai chịu gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Liên hệ lại cả nhóm với kết quả mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói phương án thay thế vừa chọn cũng không thực hiện được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi lựa chọn còn hiệu lực tại thời điểm này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chỉ có phương án làm nhóm tách ra, bàn với người đi cùng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Không nhận phương án không đáp nhu cầu tối thiểu, xin người phụ trách",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt chỗ ở/đi tiếp an toàn và đầu mối sau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Tóm tắt các lần thay đổi và khoản đã trả thật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hỏi trạng thái phần hoàn/điều chỉnh đã được hứa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Cần kiểm chứng từ, chốt mốc phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Gọi lại sau mốc, nhắc người nhận trước",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Báo nhóm kết quả và việc còn tự xử lý",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Đàm phán sự cố du lịch, khác khách sạn S-56 và bàn kế hoạch T-67. Chính sách bồi hoàn từng đơn vị phải kiểm.",
+  "cross_stage_refs": [
+    "S-56",
+    "T-67",
+    "V5P-042"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

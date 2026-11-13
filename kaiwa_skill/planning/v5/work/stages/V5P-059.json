@@ -1,0 +1,247 @@
+{
+  "stage_key": "V5P-059",
+  "uid": "094099fd-43d3-582c-ad02-517959c88556",
+  "objective": "Báo cháy rõ vị trí và quan sát, cập nhật khi di chuyển, làm theo người phụ trách tại chỗ.",
+  "knowledge_focus": [
+    "mô tả khói/lửa quan sát",
+    "địa chỉ tầng lối vào",
+    "hỏi lại hướng dẫn",
+    "thông báo vị trí mới"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Phát hiện và báo",
+      "roles": [
+        "người học",
+        "người tiếp nhận 119"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nghe hướng dẫn",
+      "roles": [
+        "người học",
+        "người tiếp nhận 119"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thông báo cho người liên quan",
+      "roles": [
+        "người học",
+        "người quản lý tòa"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau khi được hướng dẫn",
+      "roles": [
+        "người học",
+        "người phụ trách tại chỗ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Thông tin đổi khi người gọi rời vị trí cũ",
+      "roles": [
+        "người học",
+        "người tiếp nhận 119"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo thấy khói ở tầng hai và nói địa chỉ tòa nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Không chắc là lửa hay khói bếp, nói điều thực thấy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Tên tòa phát âm chưa rõ, đánh vần/nhắc lại mốc gần đó",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người tiếp nhận hỏi có người bên trong, nói phần mình biết",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi lại lối nào cần dùng khi chưa nghe rõ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Xác nhận đã ra khỏi khu có khói và nơi đang đứng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Lối dự kiến không dùng được, báo thay đổi thay vì im lặng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhờ người gần đó giúp chỉ lối an toàn theo chỉ dẫn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo vị trí cháy/khói đã thấy và việc đã gọi hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Người quản lý hỏi chuông có reo không, trả lời đúng điều nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Một người vẫn chưa liên lạc được, nói điều chưa xác nhận",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Cập nhật đã gặp người phụ trách tại chỗ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói mình ở khu tập trung nào để được kiểm người",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hỏi có cần chờ tại điểm này khi chưa rõ thông báo",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nhầm tòa cần quay lại, hỏi lại địa chỉ và không tự vào",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo với người thân mình đang an toàn và nơi gặp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Báo mình vừa ra ngoài và khói lan sang lối khác",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Không còn thấy tầng cháy, nói rõ thông tin hiện chỉ là từ trước",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Người tiếp nhận hỏi còn ai bên trong, trả lời không biết và chỉ người có thể hỏi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Chốt nơi sẽ đứng để gặp nhân viên phụ trách sau đó",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Tách khỏi y tế khẩn cấp; không hướng dẫn tự chữa cháy. B05 vai nhân viên cơ sở khác vai người gọi.",
+  "cross_stage_refs": [
+    "S-34",
+    "V5P-062"
+  ],
+  "source_refs": [
+    "W08",
+    "W09",
+    "B05:ch8-U4-U5"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

@@ -1,0 +1,303 @@
+{
+  "stage_key": "H-57",
+  "uid": "ffad0ada-0cfc-5a3a-a99b-7a90df69d629",
+  "objective": "Duy trì một ngày giao tiếp nhiều việc không có kịch bản: ưu tiên, chuyển kênh, xử lý sự cố và theo tới cuối.",
+  "knowledge_focus": [
+    "Tóm bối cảnh cho từng người mới mà không kể quá dài",
+    "Chuyển ưu tiên khi điều kiện đổi, giữ lời hứa và kiểm việc còn mở"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Buổi sáng: kế hoạch và ưu tiên",
+      "roles": [
+        "người học",
+        "người thân hoặc bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Việc đầu tiên bị vướng",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thông báo cho người liên quan",
+      "roles": [
+        "người học",
+        "người đang chờ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Một đầu mối khác tiếp quản",
+      "roles": [
+        "người học",
+        "nhân viên ca sau"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Quan hệ cá nhân bị ảnh hưởng",
+      "roles": [
+        "người học",
+        "bạn hoặc người thân"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Cuối ngày và ngày sau",
+      "roles": [
+        "người học",
+        "người ở cùng hoặc đầu mối dịch vụ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói ba việc cần làm và giờ cố định trong ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi người thân việc nào cần mình có mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hai lịch trùng, thương lượng ai đổi phần nào",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người thân tưởng mình đã nhận cả hai việc, làm rõ cam kết",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt kế hoạch đầu ngày và cách báo nếu đổi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói lịch đã hẹn và điều kiện nay khác thực tế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi phương án sửa tại chỗ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Họ cần hỏi quản lý, chốt khi nào có câu trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Phương án khiến lỡ việc quan trọng khác, từ chối và đề nghị lựa chọn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt việc hoàn thành được hôm nay và việc chuyển ngày",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Tóm ngắn sự cố và giờ mới dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi người kia có thể chờ hoặc đổi điểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Họ chỉ chờ được đến giờ nhất định, chọn ưu tiên",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Họ tưởng việc đầu đã xong, nói rõ chỉ tạm xử lý",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Cập nhật lần hai khi mốc dự kiến đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Kể ai đã đồng ý điều gì và điều còn chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nhân viên mới không thấy thông tin, xin kiểm với người trước",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chỉ xử lý một phần ngay, quyết phần nào ưu tiên",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Hẹn mốc trả lời cuối thay vì chờ vô hạn",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc lại tên đầu mối và bước tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Xin lỗi vì hủy hẹn và nói ảnh hưởng mình biết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nghe họ đã phải đổi việc gì, không chỉ giải thích mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Đề nghị buổi khác theo lịch của họ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Họ chưa muốn hẹn lại, tôn trọng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt điều mình có thể bù/không thể bù rõ ràng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Liệt kê bằng lời việc đã xong và chưa xong cho người cần biết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hỏi việc nào phải làm sáng mai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Hai người tưởng bên kia sẽ gọi quầy, phân lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Sáng hôm sau gọi đúng mốc về việc còn chờ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Khép chuỗi khi đã nhận câu trả lời hoặc có bước tiếp xác định",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Bài tổng hợp ứng dụng, không dạy mới mọi miền. Mỗi cảnh là cuộc nói hai vai với hệ quả nối tiếp; không tạo bài kiểm tra.",
+  "cross_stage_refs": [
+    "S-60",
+    "H-13",
+    "H-17",
+    "H-28"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

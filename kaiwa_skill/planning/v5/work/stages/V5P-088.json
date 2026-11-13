@@ -1,0 +1,183 @@
+{
+  "stage_key": "V5P-088",
+  "uid": "d3e31bd5-f91a-5c61-9a87-f3affddae49e",
+  "objective": "Tìm hỗ trợ và trở lại thị trường việc làm sau khi mất việc, kể hoàn cảnh ở mức cần thiết.",
+  "knowledge_focus": [
+    "nói tình trạng việc vừa kết thúc",
+    "hỏi đầu mối hỗ trợ",
+    "định lại điều kiện tìm việc",
+    "theo dõi cơ hội"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Sau khi việc kết thúc",
+      "roles": [
+        "người học",
+        "HR/đơn vị cũ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tìm nơi hỗ trợ",
+      "roles": [
+        "người học",
+        "tư vấn viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tìm lại nhịp làm việc",
+      "roles": [
+        "người học",
+        "tư vấn viên/recruiter"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi ngày cuối và người giải thích việc còn dở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Lý do kết thúc chưa rõ, xin nói lại bằng câu cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chưa có thông tin từ HR, hẹn ngày nhận câu trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nói điều muốn giữ riêng khi kể với người khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Bàn giao một việc còn dang dở",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói mới mất việc và muốn hỏi việc làm phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Tư vấn viên hỏi kinh nghiệm, trả lời theo nhiệm vụ đã làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi hỗ trợ nào có thể tư vấn, không giả định được nhận",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Quầy không giải quyết phần hỏi, xin giới thiệu nơi khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt ngày gặp tiếp và điều cần kiểm trước",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói mục tiêu giờ/nơi làm sau thay đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Cơ hội có việc nhưng không hợp giờ, hỏi lựa chọn khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đi phỏng vấn rồi chưa nghe tin, hỏi mốc phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Sau tư vấn, đổi tiêu chí tìm và giải thích vì sao",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhận cơ hội mới, xác nhận người liên hệ ngày đầu",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Không hứa trợ cấp/điều kiện; phỏng vấn chuyển ngành V5P-083 khác.",
+  "cross_stage_refs": [
+    "V5P-081",
+    "V5P-083"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

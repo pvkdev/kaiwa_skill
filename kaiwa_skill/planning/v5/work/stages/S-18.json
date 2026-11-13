@@ -1,0 +1,206 @@
+{
+  "stage_key": "S-18",
+  "uid": "72d35860-f51f-5d26-b6c8-489bed15a13f",
+  "objective": "Gọi món và dùng bữa ở nhà hàng, hỏi rõ món và xử lý thay đổi nhỏ ngay tại bàn.",
+  "knowledge_focus": [
+    "Đặt bàn/nhận chỗ, hỏi món và khẩu phần",
+    "Xác nhận món, yêu cầu đơn giản, thanh toán và cảm ơn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Vào quán và ngồi",
+      "roles": [
+        "người học",
+        "nhân viên đón khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chọn và gọi món",
+      "roles": [
+        "người học",
+        "nhân viên phục vụ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trong bữa",
+      "roles": [
+        "người học",
+        "nhân viên phục vụ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thanh toán và rời quán",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói số người và hỏi còn chỗ không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi có thể ngồi khu yên hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ còn bàn có giờ dùng giới hạn, xác nhận mình có thể ăn kịp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không còn bàn, hỏi giờ quay lại",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Được dẫn bàn và xác nhận số người",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi món trong ảnh là món nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi một suất có đủ cho hai người không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói món mình muốn và số phần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhân viên nghe nhầm số phần",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại toàn bộ món đã gọi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin thêm nước hoặc dụng cụ ăn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi món đang chờ còn bao lâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Món mang tới không giống món đã gọi, chỉ ra điểm khác",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Quán hết món, chọn món thay thế",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhận đúng món và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi có thể thanh toán riêng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nêu món trên hóa đơn mà nhóm không gọi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Cùng kiểm hóa đơn và trả đúng phần",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhận tiền thừa và cảm ơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gọi quán vì để quên đồ sau bữa",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Nhà hàng căn bản; kiêng ăn, phàn nàn phức tạp T-70. Quán cà phê gọi nhanh S-20.",
+  "cross_stage_refs": [
+    "T-70",
+    "S-20"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

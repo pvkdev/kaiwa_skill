@@ -1,0 +1,206 @@
+{
+  "stage_key": "S-51",
+  "uid": "a274fb72-1934-5329-93da-2be8b08cdc7d",
+  "objective": "Kể một trải nghiệm gần đây có thứ tự rõ và trao đổi tiếp với người nghe.",
+  "knowledge_focus": [
+    "Mốc thời gian, nơi và người liên quan",
+    "Nêu điều bất ngờ, cảm nhận và hỏi trải nghiệm người kia"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Kể việc thường ngày",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Kể chuyến đi ngắn",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nghe chuyện người khác",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Kết nối sang hiện tại",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Kể đường đến trường sáng nay có điều lạ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói cuối tuần đã làm gì theo hai bước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói một món mới mình đã thử",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người nghe hiểu là hôm nay, sửa thành hôm qua",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại thứ tự việc đã xảy ra",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói mình đi đâu và cùng ai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Kể một việc kế hoạch đổi giữa chừng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi bạn muốn nghe phần nào của chuyến đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Bạn chưa có thời gian, hẹn kể sau",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gặp lại và kể phần đã hẹn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi chuyện của bạn bắt đầu từ lúc nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhắc lại điều làm bạn ngạc nhiên để chắc hiểu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hiểu sai ai là người làm việc đó",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đính chính vai người trong chuyện rồi hỏi tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nói phản ứng phù hợp sau khi nghe kết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói trải nghiệm làm mình đổi dự định tuần này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi bạn đã từng gặp việc tương tự chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Bạn không muốn kể chuyện riêng, chuyển sang đề tài chung",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chốt ý ngắn trước khi đổi đề tài",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Hẹn cùng thử hoạt động liên quan lần sau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Kể trải nghiệm Sơ; chuyện đời sâu T-29 và hồi ức có điểm chốt H-36.",
+  "cross_stage_refs": [
+    "T-29",
+    "H-36"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,203 @@
+{
+  "stage_key": "V5P-073",
+  "uid": "e3bfe8be-939c-5b2c-a745-e007b1a44ad4",
+  "objective": "Tìm người hỗ trợ khi chưa biết cơ quan nào giải quyết một vấn đề đời sống.",
+  "knowledge_focus": [
+    "tóm tắt vấn đề bằng mốc chính",
+    "xin hỗ trợ ngôn ngữ",
+    "nói mục tiêu trước mắt",
+    "nhắc lại đầu mối được giới thiệu"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở cuộc tư vấn",
+      "roles": [
+        "người học",
+        "nhân viên trung tâm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chọn đúng đầu mối",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chờ tư vấn phù hợp",
+      "roles": [
+        "người học",
+        "nhân viên đặt lịch"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Theo dõi sau giới thiệu",
+      "roles": [
+        "người học",
+        "nhân viên trung tâm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói một khó khăn và điều mình muốn hỏi trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên hỏi ngày, nơi xảy ra để phân loại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không biết từ chuyên môn, mô tả bằng sự việc đơn giản",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Xin người hỗ trợ ngôn ngữ hoặc tiếng Nhật dễ hiểu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Mang thông báo nhưng chưa biết do cơ quan nào gửi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhân viên chỉ quầy chuyên môn, nhắc lại tên và nơi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Cơ quan được gợi ý không nhận trường hợp, quay lại xin đường khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Vấn đề có hai phần, hỏi phần nào cần giải quyết trước",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Xin hẹn có người nói ngôn ngữ phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Lịch gần nhất quá muộn, nói điều cần giải quyết sớm",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhân viên chưa xác nhận được lịch, hỏi cách nhận tin",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Đổi giờ đã hẹn và xác nhận người hỗ trợ vẫn có mặt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Tóm tắt lại lời vừa được tư vấn bằng câu của mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Tại quầy khác còn thiếu thông tin, gọi trung tâm hỏi lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nói một lời giới thiệu chưa rõ là khuyến nghị hay yêu cầu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Chốt tên người/cơ quan để liên hệ tiếp và thời điểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Trung tâm làm định tuyến và giải thích ban đầu, không thay quầy chuyên môn.",
+  "cross_stage_refs": [
+    "S-44"
+  ],
+  "source_refs": [
+    "W02",
+    "W04"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

@@ -1,0 +1,180 @@
+{
+  "stage_key": "T-07",
+  "uid": "c91eb224-b07e-555c-8387-b0f9d9114c47",
+  "objective": "Thực hiện phỏng vấn tuyển dụng đầu nghề: kể kinh nghiệm, hỏi công việc và xử lý câu chưa rõ.",
+  "knowledge_focus": [
+    "trả lời có ví dụ",
+    "xin làm rõ câu hỏi",
+    "hỏi vai và kỳ vọng",
+    "khép buổi phỏng vấn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở buổi phỏng vấn",
+      "roles": [
+        "người học",
+        "người phỏng vấn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Kể bằng chứng",
+      "roles": [
+        "người học",
+        "người phỏng vấn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cuối buổi và bước sau",
+      "roles": [
+        "người học",
+        "người phỏng vấn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Tự giới thiệu ngắn và nêu việc gần đây",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người phỏng vấn hỏi quá nhanh, xin nhắc câu hỏi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Tên bộ phận khác thông tin trước, hỏi xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đến trễ do tàu, báo ngay và hỏi còn được gặp không",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt lại mình đang phỏng vấn vị trí nào",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói một việc mình làm và phần trách nhiệm thực",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Bị hỏi kết quả, phân biệt phần nhóm và phần mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chưa có kinh nghiệm một kỹ năng, nói cách đang học",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người phỏng vấn tưởng mình làm quản lý, sửa vai",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Hỏi tiêu chí thành công của vị trí",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi công việc tuần đầu và người hướng dẫn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Có hai địa điểm làm, hỏi mức thường xuyên của từng nơi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không còn thời gian hỏi hết, xin đầu mối để hỏi sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhắc lại ngày dự kiến có phản hồi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau buổi, gọi recruiter làm rõ điều chưa hiểu",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Không chuẩn hóa câu trả lời theo điểm; chuyển ngành/chặng nghỉ V5P-083.",
+  "cross_stage_refs": [
+    "T-06",
+    "V5P-083"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

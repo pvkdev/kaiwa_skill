@@ -1,0 +1,180 @@
+{
+  "stage_key": "H-38",
+  "uid": "d7036909-625c-5e38-9f82-2fb9cdc92f17",
+  "objective": "Dùng kính ngữ đối ngoại và chuyển lời xã giao đúng chủ thể, mức chắc chắn và quan hệ.",
+  "knowledge_focus": [
+    "Nói về hành động của mình/bên mình và bên khách đúng hướng",
+    "Chuyển lời mà không làm tăng mức cam kết",
+    "Sửa kính ngữ hoặc danh xưng khi đã nói sai"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chào và giới thiệu đối ngoại",
+      "roles": [
+        "nhân viên",
+        "khách hoặc đối tác"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chuyển lời từ người vắng",
+      "roles": [
+        "nhân viên",
+        "người nhận lời"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nghe và hỏi lại lời gián tiếp",
+      "roles": [
+        "nhân viên",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sửa lời và kết thúc",
+      "roles": [
+        "nhân viên",
+        "đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Giới thiệu cấp trên đi cùng và mời khách vào việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhầm chức danh của khách, xin lỗi và xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi khách có tiện trao đổi lúc này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Khách chỉ có ít thời gian, chọn ý chính",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Truyền lời cấp trên cảm ơn buổi thăm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Lời cấp trên là hy vọng, khách hiểu thành đồng ý, sửa mức chắc chắn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi khách muốn nhắn lại điều gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Truyền đúng lời về nội bộ và nhắc người chịu phản hồi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Đối tác nói sẽ \"xem xét\", hỏi mốc có thể liên hệ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Chưa có mốc, xin phép gọi sau một thời gian",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi họ đã nhận được lời của người quyết chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người quyết chỉ biết thông tin, chưa phê duyệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Tự sửa cách gọi người trong công ty khi nói với khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nói lại tên người nhận trách nhiệm sau khi lỡ dùng đại từ mơ hồ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Gọi sau gặp, xác nhận khách hiểu đúng đầu mối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Kính ngữ là công cụ giữ quan hệ và độ chính xác, không làm mọi câu dài hơn. H-40 xử lý ngầm ý chiến lược.",
+  "cross_stage_refs": [
+    "H-40"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

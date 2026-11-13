@@ -1,0 +1,256 @@
+{
+  "stage_key": "T-28",
+  "uid": "394abfbc-1058-5cab-81b3-a7d251a69f00",
+  "objective": "Nhận hàng tại cửa, phối hợp khi vắng, giao nhầm hoặc nhận thay và liên hệ lại đúng đầu mối.",
+  "knowledge_focus": [
+    "Xác nhận tên, phòng, kiện và thời gian giao",
+    "Nói rõ khi chưa thể nhận, khi nhầm hoặc thiếu và kiểm kết quả"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hẹn giao đến nhà",
+      "roles": [
+        "người học",
+        "nhân viên giao hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tại cửa nhận hàng",
+      "roles": [
+        "người học",
+        "người giao hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Không có mặt đúng giờ",
+      "roles": [
+        "người học",
+        "người giao hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Giao nhầm/thiếu",
+      "roles": [
+        "người học",
+        "đơn vị giao hàng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Nhận thay và bàn giao",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xác nhận khoảng giờ sẽ có mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói lối vào khó tìm và mốc cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người giao chỉ đến sớm hơn, hỏi có đổi ngày được không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa có giờ chính xác, hỏi cách nhận cập nhật bằng lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại địa chỉ, khoảng giờ và số kiện",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi tên người nhận trước khi nhận kiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Kiểm số kiện và món lớn trước khi người giao rời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người giao nói phòng gần giống, chỉ đúng số phòng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Kiện không dành cho mình, không nhận và nhờ kiểm lại",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhận đúng kiện, cảm ơn và kết thúc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo mình sẽ về muộn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi đổi khung giờ thay vì nhờ hàng xóm",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hàng xóm đồng ý nhận thay một lần, xác nhận với người giao",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người giao đã rời trước khi mình gọi, hỏi lịch giao lại",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Gọi quầy giao lại để xác nhận ngày mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói kiện nhận có tên người khác, chưa mở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Thiếu một trong hai kiện được báo, cung cấp mã/đặc điểm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đơn vị cần kiểm xe, hỏi mốc phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Liên hệ lại khi chưa có kết quả, nhắc cuộc nói trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhận kiện đúng hoặc chốt cách trả kiện nhầm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi trước khi nhận thay kiện của hàng xóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Chỉ giữ được đến tối, nói rõ giờ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Người kia tưởng mình đã mở kiện, nói rõ chỉ giữ nguyên",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Giao lại đúng người, xác nhận số kiện",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Nhắn miệng khi gặp lại rằng việc đã xong",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Cửa nhà và giao nhầm; bưu kiện quốc tế V5P-123, hàng lớn gắn mua điện máy/chuyển nhà.",
+  "cross_stage_refs": [
+    "V5P-123",
+    "V5P-005",
+    "V5P-020"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

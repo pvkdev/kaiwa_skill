@@ -1,0 +1,204 @@
+{
+  "stage_key": "S-55",
+  "uid": "1b28ed78-c3a5-570c-aa77-b5d3dc2a589d",
+  "objective": "Dùng thời tiết, mùa và lễ hội để mở chuyện rồi hỏi thông tin tham gia ở mức cơ bản.",
+  "knowledge_focus": [
+    "Nói thời tiết/mùa ảnh hưởng kế hoạch",
+    "Hỏi lễ hội ở đâu, khi nào và cách tham gia"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trò chuyện thời tiết",
+      "roles": [
+        "người học",
+        "hàng xóm hoặc bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Mùa và sinh hoạt",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hỏi lễ hội địa phương",
+      "roles": [
+        "người học",
+        "nhân viên thông tin hoặc cư dân"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Ở sự kiện",
+      "roles": [
+        "người học",
+        "tình nguyện viên hoặc bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhận xét trời lạnh hơn hôm qua",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ngày mai có mưa không khi hẹn đi chơi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói nắng nóng khiến mình muốn nghỉ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bạn hiểu mình muốn hủy, đính chính chỉ muốn đổi giờ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt giờ mới phù hợp thời tiết",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi vùng này thường có hoa vào tháng nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói mình chưa quen mùa mưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi nên mặc gì cho buổi ngoài trời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia nói thời tiết đổi nhanh, chuẩn bị phương án trong nhà",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gặp lại và kể kế hoạch đã đổi ra sao",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi lễ hội bắt đầu lúc mấy giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi nơi xem phù hợp khi đi cùng trẻ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Khu mình muốn tới đã kín, hỏi khu khác",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhầm ngày chuẩn bị với ngày diễn ra",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại ngày, địa điểm và việc cần mang",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi hàng nào là lối vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi có thể thử hoạt động này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hoạt động hết lượt, hỏi buổi sau",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Lạc bạn trong đám đông, hẹn một mốc rõ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gặp lại và kể phần vừa xem",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Mở chuyện và tham dự cơ bản. T-68/H-50 đi sâu ý nghĩa/phong tục, H-46 tổ chức.",
+  "cross_stage_refs": [
+    "T-68",
+    "H-50",
+    "H-46"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

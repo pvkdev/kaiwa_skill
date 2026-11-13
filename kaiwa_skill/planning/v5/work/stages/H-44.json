@@ -1,0 +1,270 @@
+{
+  "stage_key": "H-44",
+  "uid": "f674a0d8-8cdf-5c8d-b686-349530f1e159",
+  "objective": "Bàn giao việc/trách nhiệm khi thay người, xác nhận trạng thái và hỗ trợ sau chuyển giao.",
+  "knowledge_focus": [
+    "Nói lịch sử quyết định và điểm đang chờ",
+    "Phân biệt hoàn tất, đang xử lý và rủi ro",
+    "Người nhận nhắc lại ưu tiên và đầu mối",
+    "Hẹn hỗ trợ sau bàn giao"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuẩn bị cuộc bàn giao",
+      "roles": [
+        "người cũ",
+        "người mới"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bàn việc đang chạy",
+      "roles": [
+        "người cũ",
+        "người mới"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bàn quan hệ và lời hứa",
+      "roles": [
+        "người cũ",
+        "người mới"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Người nhận hỏi lại",
+      "roles": [
+        "người mới",
+        "người cũ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sự cố sau bàn giao",
+      "roles": [
+        "người mới",
+        "người cũ"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Kết bàn giao",
+      "roles": [
+        "người mới",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi người mới cần hiểu điều gì để bắt đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nêu ba việc đang mở theo mức gấp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người mới tưởng một việc đã duyệt, sửa trạng thái",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi khách/đồng nghiệp nào cần giới thiệu trực tiếp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói kết quả đã có và việc chưa xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi ai có quyền duyệt điểm còn treo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người duyệt vắng, chốt mốc cần hỏi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói quyết định cũ nào không còn hiệu lực",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nêu khách đã được hứa mốc nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Lời nói trong tiệc bị hiểu như cam kết, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi khách nào cần gọi giới thiệu người thay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Cùng gọi để chuyển đầu mối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nhắc lại hai ưu tiên và người hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nói sai thứ tự, người cũ sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi tình huống ngoại lệ hay xảy ra",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi khi nào nên liên hệ lại người cũ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Phát hiện thiếu thông tin quan trọng, gọi hỏi cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Người cũ cần kiểm, hẹn trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Có thông tin, người mới báo người liên quan",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Khách gọi người cũ, hai bên thống nhất chuyển liên hệ",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Báo đã nhận những phần nào và còn rủi ro nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Leader giữ hỗ trợ của người cũ thêm một tuần",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Sau tuần đầu kiểm việc đang mở đã rõ owner",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Hỏi quyền quyết của người mới trong giai đoạn chuyển",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Giao quyền mới V5P-107; chào chia tay H-30 thuộc owner support. Không viết tài liệu bàn giao.",
+  "cross_stage_refs": [
+    "V5P-107",
+    "H-30"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,278 @@
+{
+  "stage_key": "H-25",
+  "uid": "c1a37223-0d58-582c-aa1f-066bbf9efd99",
+  "objective": "Phục vụ cấp cao với sự chú ý bối cảnh, quyền riêng tư và xử lý yêu cầu khác thường trong giới hạn cơ sở.",
+  "knowledge_focus": [
+    "Hỏi nhu cầu tinh tế nhưng không tự suy đoán",
+    "Giải thích khả năng/giới hạn chính xác",
+    "Phối hợp hậu trường và trở lại đúng mốc"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đón khách quen hoặc khách đặc biệt",
+      "roles": [
+        "nhân viên dịch vụ",
+        "khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Yêu cầu không nói thẳng",
+      "roles": [
+        "nhân viên dịch vụ",
+        "khách"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đòi hỏi vượt quy trình",
+      "roles": [
+        "nhân viên dịch vụ",
+        "khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Phối hợp hậu trường",
+      "roles": [
+        "nhân viên dịch vụ",
+        "đồng nghiệp hoặc quản lý"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Khi dịch vụ sai kỳ vọng",
+      "roles": [
+        "nhân viên dịch vụ",
+        "khách"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau phục vụ",
+      "roles": [
+        "nhân viên dịch vụ",
+        "khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Chào khách đã từng đến và xác nhận nhu cầu hôm nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Khách không muốn nhắc sở thích cũ trước người đi cùng, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi họ muốn không gian riêng hay hỗ trợ thêm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không còn không gian đó, đưa lựa chọn khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Khách nói phòng \"hơi ồn\", hỏi điều nào làm phiền nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Tưởng khách muốn đổi phòng, thực ra muốn giảm âm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi muốn thử cách khắc phục trước không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Sau điều chỉnh hỏi đã thoải mái hơn chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Khách xin ưu tiên ngoài lượt, nói giới hạn và hỏi lý do gấp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Có thể hỗ trợ phần nhỏ nhưng cần quản lý duyệt",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không thể đáp ứng, gợi ý dịch vụ khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Quản lý phản hồi, nhân viên nói quyết định rõ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói khách có nhu cầu yên tĩnh mà không kể đời tư",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Đồng nghiệp tưởng cần đổi tất cả lịch, làm rõ chỉ một khu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi ai chuẩn bị phần thay thế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Trước khi khách tới, kiểm đã sẵn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nghe khách nói trải nghiệm khác lần trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Không dựa vào hồ sơ cũ để bác, hỏi kỳ vọng hôm nay",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Nói điều có thể sửa ngay và điều cần hỏi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Hẹn giờ quản lý trao đổi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Hỏi một điều đã được cải thiện đủ chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Khách vẫn chưa hài lòng, mời người có quyền quyết",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Có phương án mới, xác nhận khách chấp nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Cảm ơn phản hồi và nhắc đầu mối khi cần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Omotenashi không đồng nghĩa đoán ý hoặc hứa vô hạn. T-69/T-74 phục vụ theo ngành ở mức Trung.",
+  "cross_stage_refs": [
+    "T-69",
+    "T-74"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

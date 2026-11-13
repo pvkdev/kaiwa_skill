@@ -1,0 +1,231 @@
+{
+  "stage_key": "T-50",
+  "uid": "a254eb31-43de-5c2c-94e3-c34d859d9a2b",
+  "objective": "Bàn việc chăm con hằng ngày trong gia đình và tìm nơi hỗ trợ khi cần.",
+  "knowledge_focus": [
+    "nói thói quen/nếp sinh hoạt của trẻ",
+    "phân việc giữa người lớn",
+    "hỏi chuyên viên về mối lo",
+    "hẹn theo dõi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Lịch gia đình",
+      "roles": [
+        "người học",
+        "bạn đời/người thân"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Con ốm hoặc khó chịu",
+      "roles": [
+        "người học",
+        "nhân viên y tế/người thân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tìm hỗ trợ nuôi con",
+      "roles": [
+        "người học",
+        "nhân viên trung tâm gia đình"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tư vấn khi gia đình chưa biết tìm ai",
+      "roles": [
+        "người học",
+        "trung tâm hỗ trợ gia đình"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Bàn giờ đưa đón và giờ làm của từng người",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người giữ trẻ đột xuất bận, tìm phương án tạm",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Một người thấy phân việc không đều, nghe và điều chỉnh",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Thử lịch mới rồi xem lại cuối tuần",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nói nhu cầu nghỉ của người chăm chính",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Mô tả triệu chứng quan sát và mốc bắt đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi cơ sở nào phù hợp để được tư vấn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người nhà muốn tự đoán bệnh, xin hỏi người chuyên môn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Lịch khám không còn, hỏi lựa chọn khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Sau khám, giải thích lịch chăm cho người nhà",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói gia đình đang khó sắp lịch và hỏi dịch vụ hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhân viên hỏi nhu cầu cụ thể, phân biệt chăm thường và tình huống gấp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Dịch vụ chưa có chỗ, hỏi thời điểm và lựa chọn khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không hiểu điều kiện, xin ví dụ trường hợp tương tự",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Cùng bạn đời chọn một bước có thể thử trước",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi ai có thể tư vấn chuyện chăm con khi không có người thân gần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hai nhu cầu: người trông tạm và tư vấn nuôi con, xin tách đúng đầu mối",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Dịch vụ chỉ có lịch sau, hỏi việc gia đình tự phối hợp trong lúc chờ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau buổi đầu, báo phần đã giải quyết và phần còn khó",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Nhà trẻ V5P-065, trường T-51, hỗ trợ phát triển V5P-068.",
+  "cross_stage_refs": [
+    "V5P-065",
+    "T-51",
+    "V5P-068"
+  ],
+  "source_refs": [
+    "W11"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

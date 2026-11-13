@@ -1,0 +1,195 @@
+{
+  "stage_key": "V5P-128",
+  "uid": "86aa58d7-9cda-5807-a6eb-337958ed7369",
+  "objective": "Đón và hỗ trợ người thân đến chơi, phối hợp điểm gặp, nhu cầu đi lại và đổi kế hoạch.",
+  "knowledge_focus": [
+    "thống nhất điểm gặp",
+    "diễn đạt nhu cầu người đi cùng",
+    "giải thích lại hướng dẫn",
+    "đổi lịch nhóm"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Thống nhất trước khi đến",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tìm nhau tại ga/sân bay",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hỗ trợ người đi cùng",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đổi lịch cả nhà",
+      "roles": [
+        "người học",
+        "người thân và nhân viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói điểm gặp bằng cửa ra/tầng dễ nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người thân chưa có mạng, thống nhất phương án nếu lạc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Ngày đến đổi, gọi xác nhận giờ đón mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người thân nghe nhầm sân bay, sửa bằng tên đầy đủ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói đang tìm người nhà và điểm cuối liên lạc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhân viên chỉ khu khác, xác nhận lối đi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người thân ở cửa khác, gọi mô tả cột/màu biển",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không nghe rõ loa, nhờ nhân viên nói chậm lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói người lớn tuổi đi chậm và cần chỗ nghỉ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hỏi dịch vụ hỗ trợ hành lý hoặc phương tiện di chuyển",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Dịch vụ không sẵn, hỏi nơi có thể chờ an toàn",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Giải thích lại cho người nhà điều nhân viên vừa dặn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Cả nhà mệt, đề nghị rút ngắn lịch tham quan",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Người thân muốn đi tiếp, nghe mong muốn và thương lượng nghỉ trước",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Gọi đổi giờ đặt dịch vụ khi tàu đến muộn",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Xác nhận điểm đón mới và ai sẽ liên hệ nếu lại đổi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy lại toàn bộ mua vé; vai chính là người hỗ trợ gia đình.",
+  "cross_stage_refs": [
+    "S-11",
+    "V5P-127"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

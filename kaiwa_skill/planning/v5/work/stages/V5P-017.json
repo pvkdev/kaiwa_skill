@@ -1,0 +1,258 @@
+{
+  "stage_key": "V5P-017",
+  "uid": "2c61afe7-1cd7-5266-89de-46fcc6c5fac0",
+  "objective": "Mở, chuyển hoặc ngừng điện, nước, gas bằng lời nói với đơn vị cung cấp và điều phối ngày chuyển nhà.",
+  "knowledge_focus": [
+    "Nói địa chỉ, mốc bắt đầu/kết thúc, người có mặt",
+    "Kiểm tình trạng hoạt động, chi phí/đầu mối khi lịch không khớp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở dịch vụ trước khi vào",
+      "roles": [
+        "người học",
+        "nhân viên tiện ích"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chuyển giữa hai nhà",
+      "roles": [
+        "người học",
+        "nhân viên tiện ích"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Ngày thực hiện",
+      "roles": [
+        "người học",
+        "kỹ thuật viên hoặc nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chi phí và hiểu nhầm",
+      "roles": [
+        "người học",
+        "nhân viên tổng đài"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Ngừng hoặc tạm dừng",
+      "roles": [
+        "người học",
+        "nhân viên tiện ích"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói địa chỉ mới và ngày bắt đầu cần điện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi nước đã dùng được khi nhận nhà chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Gas cần có người ở nhà, chọn khoảng giờ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không còn lịch ngày mong muốn, hỏi lịch gần nhất",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại loại dịch vụ, ngày và địa chỉ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói ngày rời nhà cũ và vào nhà mới khác nhau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi có cần hai cuộc hẹn riêng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên ghi nhầm địa chỉ cũ thành mới, sửa số phòng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Ngày giao nhà đổi, xin điều chỉnh một bên",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại mốc dừng và mốc mở riêng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xác nhận người đến đúng lịch gas đã hẹn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người học kẹt đường, báo không có ai mở cửa",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hỏi có thể dời trong ngày hay phải hẹn lại",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Vào nhà nhưng điện chưa có, gọi đúng đầu mối",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Đơn vị đang kiểm, hỏi thời gian trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi khoản phí kỳ cuối của nhà cũ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nhân viên nghĩ hỏi hóa đơn nhà mới, nêu mốc địa chỉ rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chỉ ước tính được hôm nay, hỏi khi nào có số cuối",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Không thể xử lý khoản này ở tổng đài, nhờ chuyển đầu mối",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc lại khoản sẽ hỏi tiếp và ai gọi lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Báo ngày rời nhà dài hạn và hỏi khi nào ngừng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi cần có mặt khi ngừng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chưa có ngày trả nhà chắc chắn, hỏi hạn báo thay đổi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Gọi lại khi ngày chốt, nhắc yêu cầu cũ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Xác nhận mọi dịch vụ của địa chỉ cũ đã được ghi đúng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Tiện ích nhà, không internet V5P-036. Quy trình và phí tùy đơn vị/địa phương.",
+  "cross_stage_refs": [
+    "V5P-020",
+    "V5P-036"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

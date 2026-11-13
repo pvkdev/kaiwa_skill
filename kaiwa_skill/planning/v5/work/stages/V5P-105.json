@@ -1,0 +1,273 @@
+{
+  "stage_key": "V5P-105",
+  "uid": "6ec3ce05-79e0-5486-9f86-1503e21525e5",
+  "objective": "Làm leader trong cuộc trao đổi riêng: nghe, phản hồi và hỗ trợ thành viên qua nhiều lần.",
+  "knowledge_focus": [
+    "Đặt không gian trao đổi an toàn và mục tiêu",
+    "Hỏi bằng ví dụ thay vì suy diễn",
+    "Phân biệt hỗ trợ công việc với chuyện riêng",
+    "Chốt việc leader làm và thời điểm xem lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở buổi 1:1",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khó khăn trong việc",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phản hồi hiệu quả làm việc",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Mong muốn phát triển",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Căng thẳng và ranh giới",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Theo dõi lần sau",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi thành viên muốn ưu tiên chủ đề nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Họ chưa muốn nói việc riêng, tập trung việc",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói mục tiêu nghe trước khi đánh giá",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi việc tuần qua làm họ mất thời gian nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi nhiệm vụ nào chưa rõ tiêu chí",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Leader tưởng thiếu kỹ năng, thực ra thiếu quyền quyết",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi hỗ trợ nào cụ thể hữu ích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Leader gỡ một đầu mối và hẹn xem lại",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nêu ví dụ việc làm tốt và tác động",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nêu một điểm cần đổi bằng hành vi quan sát",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Thành viên nghe như đánh giá con người, sửa rõ việc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi họ thấy rào cản nào khi đổi cách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi loại việc họ muốn thử trong quý tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chưa có vị trí mới, đề xuất nhiệm vụ nhỏ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Mong muốn chưa phù hợp mục tiêu nhóm, giải thích tiêu chí",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Sau nhiệm vụ thử, hỏi điều họ học",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Thành viên nói quá tải, hỏi phần việc và hạn cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Họ không muốn nói lý do cá nhân, tôn trọng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hỏi cần đổi ưu tiên hay nhờ hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Đổi việc xong, hỏi mức tải đã cải thiện",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Nhắc điều hai bên đã hứa làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Leader chưa làm phần của mình, nhận trách nhiệm và hẹn mới",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Hoàn thành hỗ trợ, hỏi hiệu quả",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Hỏi có điều gì cần đổi trong cách 1:1",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "H-41 nguồn lực/ngân sách, V5P-107 giao quyền; đây là quan hệ leader–thành viên trong cuộc riêng.",
+  "cross_stage_refs": [
+    "H-41",
+    "V5P-107"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

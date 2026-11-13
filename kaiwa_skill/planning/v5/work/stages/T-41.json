@@ -1,0 +1,148 @@
+{
+  "stage_key": "T-41",
+  "uid": "8ebaea54-1e1d-5263-9bb2-2d03d374c11f",
+  "objective": "Bắt đầu cuộc nói để bày tỏ ý định hoặc hỏi mục đích của người khác trong công việc.",
+  "knowledge_focus": [
+    "Xin một khoảng thời gian nói chuyện",
+    "Nêu ý định có điều kiện",
+    "Hỏi lại khi lời mời/ý định mơ hồ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở lời về ý định",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi ý định người khác",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chuyển chủ đề khó",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xin vài phút để bàn việc nhóm mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói muốn thử tham gia dự án nhưng chưa chắc thời gian",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đồng nghiệp khuyên hỏi leader về lịch",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Sau khi hỏi leader, nói mình có thể tham gia phần nào",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi lời gợi ý \"sẽ xem\" nghĩa là chưa quyết hay cần thêm thông tin",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hiểu nhầm sự im lặng là đồng ý, xin xác nhận lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi người kia muốn mình giúp phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia không cần giúp, kết chuyện lịch sự",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Xin cuộc nói riêng về việc đang gặp khó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Leader bận, hẹn giờ khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Đến giờ hẹn, nêu đúng vấn đề và việc muốn hỏi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói chưa thể quyết ngay và đề nghị bàn lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Kỹ năng mở lời chung; phản ánh tổn hại ở V5P-094 do owner support.",
+  "cross_stage_refs": [
+    "V5P-094"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

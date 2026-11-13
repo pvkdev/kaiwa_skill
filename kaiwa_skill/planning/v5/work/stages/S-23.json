@@ -1,0 +1,200 @@
+{
+  "stage_key": "S-23",
+  "uid": "896b059b-46bd-541e-9ccb-4a8587e5517c",
+  "objective": "Tìm việc làm thêm và thực hiện cuộc hỏi/phỏng vấn đầu tiên bằng lời đơn giản.",
+  "knowledge_focus": [
+    "nói lịch rảnh và khả năng",
+    "hỏi ca và việc cụ thể",
+    "trả lời phỏng vấn ngắn",
+    "xin giải thích điều kiện chưa rõ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hỏi chỗ làm",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Sắp lịch gặp",
+      "roles": [
+        "người học",
+        "người tuyển"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phỏng vấn ngắn",
+      "roles": [
+        "người học",
+        "người tuyển"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nghe kết quả",
+      "roles": [
+        "người học",
+        "người tuyển"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi còn tuyển người làm thêm không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hết chỗ, xin hỏi lúc nào có thể liên hệ lại",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi công việc chủ yếu và giờ làm trước khi xin phỏng vấn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không hiểu tên vị trí, xin ví dụ việc thường làm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói ngày và giờ mình có thể đến phỏng vấn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Lịch nhà tuyển không khớp, đề xuất hai giờ khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Được hẹn nhưng không nghe rõ địa điểm, hỏi lại cửa vào",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Có việc đột xuất, gọi báo và xin đổi giờ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Tự giới thiệu và nói kinh nghiệm gần nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nói lịch học và giờ có thể đi làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Được hỏi việc chưa từng làm, nói chưa có kinh nghiệm và sẵn sàng học",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không thể làm ca được đề nghị, từ chối ca ấy và hỏi ca khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nhận lời mời, hỏi ngày đầu cần tới ai",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chưa có kết quả, xác nhận khi nào được báo",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Được đề xuất chỗ khác, hỏi việc và địa điểm mới",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Không nhận việc, cảm ơn và kết thúc lịch sự",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Chuyện cư trú và quyền làm việc phải hỏi đầu mối chính thức; nghề dài hạn T-04/T-07.",
+  "cross_stage_refs": [
+    "T-04",
+    "T-07"
+  ],
+  "source_refs": [
+    "W01"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

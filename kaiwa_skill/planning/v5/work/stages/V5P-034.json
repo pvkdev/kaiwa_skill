@@ -1,0 +1,204 @@
+{
+  "stage_key": "V5P-034",
+  "uid": "1131e482-85aa-5aff-9970-2a16b1a86ef7",
+  "objective": "Hỏi dịch vụ chuyển tiền quốc tế và theo dõi khi giao dịch chờ, sai thông tin hoặc người nhận chưa nhận.",
+  "knowledge_focus": [
+    "xác nhận người nhận và tên",
+    "hỏi tổng phí bằng lời",
+    "trả lời mục đích theo câu hỏi",
+    "dùng mã tham chiếu để theo dõi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trước khi chuyển",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Giải thích giao dịch",
+      "roles": [
+        "người học",
+        "nhân viên ngân hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Người nhận chưa có tiền",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sai dữ liệu hoặc đổi ý",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi dịch vụ có chuyển tới nơi người thân ở không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đọc tên người nhận, xin đối chiếu phiên âm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi tổng phí và người nhận dự kiến nhận bao nhiêu để cân nhắc",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không hiểu một loại phí, xin tách từng khoản",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Trả lời mục đích chuyển theo câu hỏi của đơn vị",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Một thông tin người nhận chưa chắc, xin tạm dừng để kiểm",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhân viên hỏi thêm nguồn tiền, nói điều mình biết và xin giải thích câu hỏi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Giao dịch không được tiếp nhận, hỏi lý do và lựa chọn phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói mốc gửi, người nhận chưa thấy và số tham chiếu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nhân viên báo đang tra soát, hỏi khi nào nhận tin",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người nhận báo tên khác, kiểm lại với đơn vị và sửa điều nói trước",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Có yêu cầu từ ngân hàng nhận, hỏi ai liên hệ với ai",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Phát hiện tên nhận sai trước khi giao dịch hoàn tất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hỏi có thể sửa/dừng theo quy trình của đơn vị không",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đơn vị không thể sửa tại quầy, xin đầu mối khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Sau khi được xử lý, xác nhận trạng thái và cách thông báo người nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Không đưa tỷ giá, phí, thời gian hay điều kiện chuyển làm sự thật chung.",
+  "cross_stage_refs": [
+    "V5P-033",
+    "V5P-035"
+  ],
+  "source_refs": [
+    "W16",
+    "W21"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

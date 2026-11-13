@@ -1,0 +1,211 @@
+{
+  "stage_key": "S-21",
+  "uid": "b21b966f-6596-59f0-a4a4-72fc81bb65bf",
+  "objective": "Mua nhanh ở konbini, hiểu câu hỏi tại quầy và nhờ xử lý một dịch vụ đơn giản.",
+  "knowledge_focus": [
+    "Hỏi vị trí hàng và số lượng",
+    "Nghe câu hỏi túi, hâm nóng, thanh toán và nhận đồ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn món nhanh",
+      "roles": [
+        "người học",
+        "nhân viên konbini"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tại quầy thanh toán",
+      "roles": [
+        "người học",
+        "thu ngân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhận dịch vụ nhanh",
+      "roles": [
+        "người học",
+        "nhân viên konbini"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Rời quầy và quay lại",
+      "roles": [
+        "người học",
+        "thu ngân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi món ăn nhanh còn ở khu nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi loại không cay trong hai món có sẵn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Giá trên kệ không rõ là một hay hai món",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhân viên chỉ đúng nhãn, người học xác nhận món chọn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hàng hết, hỏi món thay thế cùng giá",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói cần hâm nóng món ăn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Từ chối túi vì đã mang túi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Xin đũa hoặc muỗng cho đúng món",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Thu ngân định hâm món ăn lạnh",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nói lại món nào cần hâm và món nào không",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi có thể nhận kiện hàng đã được báo đến không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói tên và thông tin cần để nhân viên tìm món",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hàng chưa vào cửa hàng, hỏi khi nào nên hỏi lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Quay lại nhận hàng, kiểm đúng tên người nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hỏi quầy nào nhận một dịch vụ khác nhưng chưa dùng máy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Kiểm tiền thừa ngay tại quầy khi thấy khác số",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Ra khỏi cửa hàng mới thấy thiếu món đã trả tiền",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Trở lại, kể ngắn giao dịch và nhờ kiểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Cửa hàng không tìm được món, hỏi đầu mối tiếp theo",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Cảm ơn và kết thúc sau khi hai bên xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Konbini mua nhanh và dịch vụ tại quầy; siêu thị lo bữa ăn V5P-001, bưu kiện sâu V5P-123.",
+  "cross_stage_refs": [
+    "V5P-001",
+    "V5P-123"
+  ],
+  "source_refs": [],
+  "source_findings": [
+    "Đã đọc B05 Unit 20–22 cho câu hỏi túi/thu ngân; tình huống konbini do AI biên soạn."
+  ],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

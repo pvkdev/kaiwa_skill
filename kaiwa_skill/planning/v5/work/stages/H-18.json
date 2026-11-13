@@ -1,0 +1,244 @@
+{
+  "stage_key": "H-18",
+  "uid": "787f9d8a-9ce3-5c7b-b786-263706df0d2b",
+  "objective": "Báo sự cố cho cấp trên trực tiếp, đề xuất ứng phó và nói với người lo ngại đúng mức chắc.",
+  "knowledge_focus": [
+    "Nói tin xấu sớm và phân biệt điều chắc/chưa",
+    "Đề nghị hành động trước mắt",
+    "Xin quyết khi vượt quyền",
+    "Theo dõi lời hứa cập nhật"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Phát hiện vấn đề",
+      "roles": [
+        "nhân viên",
+        "cấp trên trực tiếp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đề xuất khắc phục",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giải thích nguyên nhân chưa chắc",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nói với khách/người bị ảnh hưởng",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau khi xử lý",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo một mốc khách có nguy cơ trễ và lý do đang kiểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Sếp tưởng đã trễ thật, nói mới là nguy cơ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi có cần báo khách ngay không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Sếp muốn xác minh thêm trước một giờ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Đưa hai cách giảm ảnh hưởng khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Sếp chọn cách một nếu có thêm người",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Cách một không an toàn, hỏi phương án khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Có người hỗ trợ, cập nhật mốc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói dấu hiệu liên quan nhưng chưa đủ kết luận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đồng nghiệp bị coi là nguyên nhân, sửa thành điều cần kiểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi ai có dữ liệu xác minh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Có dữ liệu, nói nguyên nhân thực",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói ảnh hưởng hiện tại và việc đang làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chưa thể hứa giờ khôi phục, hẹn giờ cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Khách cần ưu tiên một phần, xin nội bộ kiểm",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Có quyết định, gọi báo phần sẽ làm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Báo phần đã xong và rủi ro còn theo dõi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Giải pháp tạm tạo việc mới, xin ưu tiên",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Chọn cách xử lý việc mới",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Sau mốc kiểm, báo tình trạng cuối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "H-19 báo lên cấp cao; H-16 khiếu nại hàng lỗi; V5P-111 là leader phân việc cả nhóm.",
+  "cross_stage_refs": [
+    "H-19",
+    "H-16",
+    "V5P-111"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

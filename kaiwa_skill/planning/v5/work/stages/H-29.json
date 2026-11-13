@@ -1,0 +1,298 @@
+{
+  "stage_key": "H-29",
+  "uid": "6fc8d22f-2efc-58b3-84c7-3f62b156cedb",
+  "objective": "Nhờ người thân làm việc khó, nêu giới hạn và phối hợp trách nhiệm mà không dựa vào nghĩa vụ gia đình để ép.",
+  "knowledge_focus": [
+    "Nói bối cảnh, điều cần giúp và điều mình vẫn tự làm",
+    "Nghe khả năng người thân, xử lý từ chối, điều kiện, mệt mỏi và theo lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở lời về việc khó",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thỏa thuận khi được giúp",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khi người thân từ chối",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Việc lớn hơn dự tính",
+      "roles": [
+        "người học",
+        "người thân đang giúp"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Nhiều người trong gia đình",
+      "roles": [
+        "người học",
+        "người thân khác"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau khi việc xong/chưa xong",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi người thân có thời gian nghe một việc quan trọng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói vì sao mình cần họ và phần việc cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi họ đang có ràng buộc nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ không thể nhận, cảm ơn vì đã nghe và tìm nguồn khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt chỉ đang bàn khả năng, chưa mặc nhiên giao việc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nêu thời hạn và quyền quyết của mỗi người",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người thân chỉ giúp ngày đầu, chia phần còn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Họ nhận việc, hỏi cách liên hệ khi có vướng",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ tưởng phải chịu toàn bộ chi phí, làm rõ mình chịu phần nào",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại phạm vi và người chịu khoản cụ thể",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi lý do chỉ nếu họ muốn nói",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Chấp nhận câu không mà không gợi cảm giác mắc nợ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Xin một góp ý ngắn thay cho trực tiếp làm",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Họ chỉ giúp từ xa, xét có hữu ích không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt mình sẽ liên hệ đầu mối khác",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo phát sinh mới và hỏi họ có còn làm được không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Họ cần giảm phần việc, chia lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người thân đã quá tải nhưng chưa nói, chủ động hỏi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Đưa một người khác vào nếu người thân đồng ý",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt mốc kết thúc mới để không kéo dài mơ hồ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Tóm tắt điều người đầu đã đồng ý nhưng không nói thay ý họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi người thứ hai có thể nhận phần riêng nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hai người tưởng bên kia làm một việc, kiểm lại trực tiếp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chỉ chia sẻ thông tin riêng được phép",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt ai là đầu mối cập nhật cho cả nhà",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Cảm ơn phần hỗ trợ cụ thể và nói tác động của nó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Phần còn lại chưa xong, hỏi ai sẽ tiếp thay vì quy lỗi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Hẹn ngày kiểm lại phần đã bàn giao",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Người thân cần nghỉ trước khi việc kế tiếp, tôn trọng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Khép cam kết cũ và không tự tạo nghĩa vụ mới",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Người thân và quan hệ dài hạn; H-34 nhờ khó ngoài gia đình hoặc giới hạn quyền từ chối chung.",
+  "cross_stage_refs": [
+    "T-33",
+    "H-34"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

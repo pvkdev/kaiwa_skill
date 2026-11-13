@@ -1,0 +1,183 @@
+{
+  "stage_key": "V5P-075",
+  "uid": "3338e7c0-e360-5adf-bfd2-b6ce004552af",
+  "objective": "Tham gia đào tạo nghề khi đã đi làm: chọn chương trình, phối hợp giờ và xin hỗ trợ khi khó theo.",
+  "knowledge_focus": [
+    "nói mục tiêu nâng/đổi nghề",
+    "hỏi điều kiện/lịch",
+    "thương lượng việc đang làm",
+    "nhờ giải thích phần thực hành"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm chương trình",
+      "roles": [
+        "người học",
+        "tư vấn viên đào tạo"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bàn giờ với nơi làm",
+      "roles": [
+        "người học",
+        "quản lý"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trong và sau khóa",
+      "roles": [
+        "người học",
+        "người hướng dẫn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói kinh nghiệm hiện tại và kỹ năng muốn học",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Chương trình đòi nền chưa có, hỏi lớp chuẩn bị",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Lịch học trùng ca, hỏi lớp khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Một điều kiện chưa hiểu, xin diễn giải bằng việc thực tế",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Đăng ký buổi trao đổi với giáo viên phụ trách",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói vì sao khóa học liên quan công việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Xin điều chỉnh một khung giờ và nêu việc bàn giao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không đổi được ca, đề xuất học đợt khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Quản lý muốn kết quả nhanh, thống nhất mốc thực tế",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Khi lịch khóa đổi, cập nhật kế hoạch nhóm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói phần thực hành mình chưa theo kịp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Xin làm mẫu lại một bước hoặc đổi cách giải thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Buổi tiếp trùng việc, xin cách bù bằng cuộc trao đổi",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Sau khóa hỏi nơi có thể tiếp tục được hướng dẫn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nói với quản lý kỹ năng đã học và điều cần thử",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Khác T-04 chọn ngành/thực tập; H-56 học thuật/ngôn ngữ sâu.",
+  "cross_stage_refs": [
+    "T-04",
+    "H-56"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

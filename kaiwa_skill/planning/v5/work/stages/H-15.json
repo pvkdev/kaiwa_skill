@@ -1,0 +1,367 @@
+{
+  "stage_key": "H-15",
+  "uid": "8abe4006-8e8a-550a-8168-d8b10604270b",
+  "objective": "Quyết định mua dịch vụ hoặc hàng giá trị cao, làm rõ thiết kế/điều kiện và xử lý kết quả khó đổi trả.",
+  "knowledge_focus": [
+    "Nêu yêu cầu cá nhân hóa, tiêu chí chấp nhận và giới hạn ngân sách",
+    "Phân biệt thay đổi yêu cầu của mình và sai khác phía dịch vụ; bàn cách xử lý"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đặt may hoặc dịch vụ cá nhân hóa",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Làm rõ hợp đồng dịch vụ",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trước khi bắt đầu thực hiện",
+      "roles": [
+        "người học",
+        "người thực hiện"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trong quá trình",
+      "roles": [
+        "người học",
+        "đầu mối dịch vụ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Nhận kết quả",
+      "roles": [
+        "người học",
+        "người thực hiện"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Tranh chấp sau nhận",
+      "roles": [
+        "người học",
+        "người quản lý dịch vụ"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Gói dịch vụ làm đẹp và cam kết dài hạn",
+      "roles": [
+        "khách hàng",
+        "tư vấn viên hoặc người xử lý hợp đồng dịch vụ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu dịp dùng, dáng mong và điểm cần thoải mái",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi phần nào có thể sửa sau khi đo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chất liệu mong muốn thiếu, hỏi loại thay và ảnh hưởng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không đặt khi chưa xem mẫu/giá cuối",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt bản mô tả và tiêu chí kiểm khi nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi tổng tiền và các lần thanh toán qua lời nói",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi điều kiện đổi lịch, hủy hoặc sửa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hiểu buổi tư vấn là miễn phí nhưng có phí, nhờ tách rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Ưu đãi kèm cam kết dài, hỏi giá không cam kết",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại phạm vi dịch vụ và điều kiện quan trọng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Kiểm mẫu/số đo lần cuối trước khi làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Báo nhu cầu mới xuất hiện và hỏi còn kịp đổi không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đổi làm tăng tiền/thời gian, cân nhắc",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không đổi nếu ảnh hưởng phần quan trọng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt phiên bản đang được thực hiện",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi tiến độ theo mốc đã hẹn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nhận thông báo vật liệu bị thay, hỏi lý do và tác động",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chọn đợi nguyên liệu cũ hoặc chấp nhận thay có điều kiện",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Đầu mối cần xác nhận với thợ, hẹn phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gọi lại khi chưa có quyết định",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Thử món đặt may và chỉ điểm không đúng số đo đã chốt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Thợ nghĩ mình đổi ý về kiểu, phân biệt với lỗi hiện trạng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chỉnh được nhưng qua ngày cần dùng, bàn phương án",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Nhận tạm phần dùng được hoặc sửa tiếp",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt phần cần chỉnh và ngày kiểm lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nêu lịch sử tư vấn/đổi mẫu và điểm còn khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Không đồng ý kết luận mình đã chấp nhận toàn bộ, hỏi bằng chứng cuộc bàn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Họ hoàn phần phí nhưng không sửa, đánh giá nhu cầu",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Hai bên chưa thống nhất, xin đầu mối giải quyết tiếp",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Quay lại kiểm phần đã cam kết sau cuộc nói",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    },
+    {
+      "id": "S031",
+      "event_id": "E07",
+      "title": "Đối chiếu điều được tư vấn trong buổi thử với điều kiện của gói dài hạn đang được đề nghị",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S032",
+      "event_id": "E07",
+      "title": "Tư vấn viên nhấn mạnh ưu đãi chỉ hôm nay, nói mình chưa quyết và hỏi giá không kèm cam kết",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S031"
+      ]
+    },
+    {
+      "id": "S033",
+      "event_id": "E07",
+      "title": "Muốn giảm phạm vi gói sau khi nhu cầu đổi, hỏi các lựa chọn và khoản cần xác nhận",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S031"
+      ]
+    },
+    {
+      "id": "S034",
+      "event_id": "E07",
+      "title": "Hai đầu mối nói khác nhau về điều kiện dừng, trình bày lại mốc trao đổi và xin người có thẩm quyền làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S035",
+      "event_id": "E07",
+      "title": "Chưa thống nhất khoản còn lại, tóm tắt điều đã đồng ý và điều vẫn chờ xác nhận",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S034"
+      ]
+    },
+    {
+      "id": "S036",
+      "event_id": "E07",
+      "title": "Gọi lại theo hẹn để kiểm phương án đã thống nhất có được ghi nhận đúng không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S035"
+      ]
+    }
+  ],
+  "coverage_note": "Đặt may/hợp đồng dịch vụ có cá nhân hóa; đổi trả thông thường T-58, quyền lợi kéo dài H-13. AI012 được mở bằng một họ dịch vụ ngoài đặt may; tập trung thương lượng điều kiện, không khẳng định quyền hủy/hoàn tiền.",
+  "cross_stage_refs": [
+    "T-58",
+    "H-13"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily",
+  "editorial_contributors": [
+    "daily",
+    "root"
+  ]
+}

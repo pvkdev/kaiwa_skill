@@ -1,0 +1,216 @@
+{
+  "stage_key": "S-17",
+  "uid": "69b6ea4c-5fa0-5209-b276-404ab770dd0d",
+  "objective": "Đi xa cơ bản bằng tàu nhanh hoặc taxi và hỏi quầy hướng dẫn khi đổi phương tiện.",
+  "knowledge_focus": [
+    "Nói điểm đến, thời gian, chỗ lên và hành lý",
+    "Hỏi lại điều kiện vé/đặt chỗ ở mức sơ cấp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tàu đi xa",
+      "roles": [
+        "người học",
+        "nhân viên vé"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đi taxi",
+      "roles": [
+        "người học",
+        "tài xế"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tìm quầy và chuyển phương tiện",
+      "roles": [
+        "người học",
+        "nhân viên hướng dẫn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đi xe buýt đường dài hoặc xe đêm",
+      "roles": [
+        "hành khách",
+        "nhân viên bến hoặc tài xế"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói ga đến và ngày đi, hỏi chuyến phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi chỗ ngồi cần đặt trước không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chuyến mong muốn hết chỗ, chọn giờ khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nghe nhầm giờ đi và giờ đến",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại ngày, chuyến và ga đến",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói điểm đến bằng địa chỉ hoặc mốc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi khoảng thời gian dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đường kẹt, tài xế gợi lối khác, xác nhận nơi xuống",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Gần đến nhưng địa chỉ chưa đúng cửa, nhờ dừng ở mốc cụ thể",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Kiểm mình đã xuống đúng nơi và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi quầy cho tuyến đi xa ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi từ ga đến bến taxi hay xe buýt thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Quầy đóng, hỏi ai hỗ trợ lúc này",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Hỏi chỗ gửi hành lý trong lúc đợi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Báo người đón chuyến mới sau khi đổi phương tiện",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi đúng điểm tập trung của xe đêm khi bến có nhiều chỗ đón",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nhân viên báo điểm lên xe đã đổi, nhắc lại nơi và giờ phải có mặt",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nói có hành lý lớn và hỏi để ở đâu khi lên xe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Hỏi điểm nghỉ tiếp theo và giờ cần trở lại xe bằng câu ngắn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Không chắc đang ở điểm dừng của mình, nhờ tài xế xác nhận trước khi xuống",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E04",
+      "title": "Báo cho người đón rằng xe đến muộn và nói lại điểm gặp",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Cơ bản shinkansen/taxi/quầy. Vé IC V5P-041; chuyến bay V5P-127, xe thuê V5P-126, gara V5P-047. Bổ sung bối cảnh xe đường dài/đêm từ AI044; giữ mức Sơ và không khẳng định quy tắc của mọi hãng.",
+  "cross_stage_refs": [
+    "V5P-041",
+    "V5P-127",
+    "V5P-126",
+    "V5P-047"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily",
+  "editorial_contributors": [
+    "daily",
+    "root"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "stage_key": "S-19",
+  "uid": "c609703d-fb0b-5073-a2cd-7ca8890f061b",
+  "objective": "Tham gia bữa trưa đồng nghiệp, hỏi món và kết thúc cuộc trò chuyện tự nhiên.",
+  "knowledge_focus": [
+    "Nhận hoặc từ chối lời rủ ăn trưa",
+    "Nói khẩu vị và giới hạn ăn uống",
+    "Bắt chuyện nhẹ nhưng giữ quyền riêng tư"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Rủ và hẹn ăn trưa",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chọn quán và gọi món",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trò chuyện và quay lại làm",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhận lời rủ và hỏi giờ rời văn phòng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đã có hẹn, đề nghị hôm khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ có nửa giờ, hỏi quán nhanh gần đây",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hôm sau đồng nghiệp rủ lại và chốt giờ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói món mình muốn thử và hỏi món người kia thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đồng nghiệp tưởng ăn cay được, sửa lại mức cay",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi quán có món không có thành phần mình tránh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không có món phù hợp, chọn quán khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi đồng nghiệp đã làm ở nhóm bao lâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nói ngắn một việc vui cuối tuần rồi hỏi lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không muốn nói chuyện riêng, chuyển sang chủ đề món ăn",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Báo sắp tới giờ họp và xin đứng dậy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Về văn phòng cảm ơn lời gợi ý món",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    }
+  ],
+  "coverage_note": "Bữa trưa thường ngày; tiếp đãi đối tác H-23 và tiệc công ty T-22 khác quan hệ.",
+  "cross_stage_refs": [
+    "H-23",
+    "T-22"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

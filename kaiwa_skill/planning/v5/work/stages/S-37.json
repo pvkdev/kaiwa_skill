@@ -1,0 +1,156 @@
+{
+  "stage_key": "S-37",
+  "uid": "9e5b1a57-ab8c-5523-b47a-1b3a0643ff90",
+  "objective": "Nghe điện thoại công sở và chuyển đến đúng người bằng lời nói rõ ràng.",
+  "knowledge_focus": [
+    "Nêu tên công ty và mình khi nhận máy",
+    "Hỏi lại tên/người cần gặp",
+    "Thông báo ngắn trước khi chuyển máy"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận và chuyển máy",
+      "roles": [
+        "nhân viên",
+        "người gọi ngoài công ty"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Người cần gặp chưa nghe được",
+      "roles": [
+        "nhân viên",
+        "người gọi ngoài công ty"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Gọi sai hoặc chuyển sai",
+      "roles": [
+        "nhân viên",
+        "người gọi ngoài công ty"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhấc máy, nghe tên công ty và người cần gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tên khách nghe chưa rõ, xin nhắc lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người cần gặp có mặt, báo sẽ chuyển máy",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người phụ trách nhận máy, nhắc tên khách đã xác nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói người cần gặp đang họp và hỏi có cần nhắn lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Khách muốn chờ ít phút, xác nhận lại mong muốn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách muốn gọi lại, hỏi giờ thuận tiện",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không rõ người kia về lúc nào, hứa xác minh rồi báo",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Người gọi nhầm phòng, nói đúng đầu mối nếu biết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Mình nghe nhầm tên bộ phận, hỏi lại trước chuyển",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chuyển máy bị ngắt, gọi lại và xin lỗi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Kết nối lại đúng người và báo chuyện vừa ngắt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Sơ: nhận và chuyển cuộc gọi. T-12–15 đi sâu xác nhận, lời nhắn nhiều thông tin.",
+  "cross_stage_refs": [
+    "T-12",
+    "T-14",
+    "T-15"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

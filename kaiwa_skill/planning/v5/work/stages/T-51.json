@@ -1,0 +1,339 @@
+{
+  "stage_key": "T-51",
+  "uid": "174901ba-fb54-53c3-8eef-56ad6cfdab12",
+  "objective": "Trao đổi với trường/giáo viên về sinh hoạt và việc học của con.",
+  "knowledge_focus": [
+    "hỏi lịch/lớp",
+    "nghe thông báo của giáo viên",
+    "trình bày điều con kể",
+    "phối hợp xem lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bắt đầu năm học",
+      "roles": [
+        "người học",
+        "giáo viên/nhân viên trường"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Việc hằng ngày của con",
+      "roles": [
+        "người học",
+        "giáo viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cuộc gặp phụ huynh",
+      "roles": [
+        "người học",
+        "giáo viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhập học và chuyển trường",
+      "roles": [
+        "người học",
+        "giáo viên/nhân viên trường"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sự kiện trường và chuẩn bị hằng ngày",
+      "roles": [
+        "người học",
+        "giáo viên/nhân viên trường"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Quan hệ bạn bè ở lớp",
+      "roles": [
+        "người học",
+        "giáo viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi lịch gặp giáo viên và phòng học",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tên con trên danh sách khác giấy, xin đối chiếu",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không hiểu một thông báo, xin thầy/cô nói phần chính",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bận buổi họp, xin cách trao đổi trực tiếp khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Xác nhận ai là người liên hệ khi con vắng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Gọi báo con vắng và hỏi phần sinh hoạt quan trọng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Giáo viên nói con quên đồ, hỏi cụ thể để giúp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Con kể bị bỏ ngoài nhóm, hỏi giáo viên điều đã thấy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hai bên có thông tin khác, tách điều chắc và điều cần hỏi thêm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Hẹn cập nhật sau khi giáo viên trao đổi với lớp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi điểm mạnh và điều con đang khó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói một thay đổi ở nhà ảnh hưởng việc học nhưng giữ riêng tư",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đề xuất cách gia đình và lớp phối hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Giáo viên chưa thể xác nhận, hẹn bước kiểm tiếp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Lần gặp sau, xem điều đã thử có giúp không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi buổi đầu con cần đến cửa nào và gặp ai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Tên lớp trên hướng dẫn khác lời giáo viên, xin đối chiếu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chuyển nhà giữa năm, hỏi trường cũ và trường mới ai phụ trách phần nào",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Con chưa có lớp mới xác nhận, hỏi cách được cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Sau khi chuyển, giới thiệu điều con cần hỗ trợ với giáo viên mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi đồ cần mang cho buổi dã ngoại và ai đi cùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Trời mưa khiến ensoku đổi lịch, gọi xác nhận buổi học thay thế",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hỏi kyuushoku có phần nào cần báo trước về nhu cầu ăn uống",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Không đến được undoukai, hỏi con cần chuẩn bị gì ở nhà",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Nghe thông báo lễ nhập học khác lịch đã biết, xác nhận giờ và địa điểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Con kể không được chơi cùng, hỏi giáo viên đã quan sát gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Giáo viên kể xích mích một lần, hỏi mốc và các bên mà không kết luận bắt nạt",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Thông tin từ con và lớp khác nhau, xin cuộc nói tiếp sau khi kiểm",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Con không muốn người lớn nói trước lớp, nêu mong muốn riêng tư",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Sau thời gian theo dõi, hỏi điều gì đã thay đổi và cách tiếp tục",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    }
+  ],
+  "coverage_note": "Juku V5P-067 là dịch vụ ngoài trường; hỗ trợ phát triển V5P-068 riêng.",
+  "cross_stage_refs": [
+    "V5P-067",
+    "V5P-068"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

@@ -1,0 +1,234 @@
+{
+  "stage_key": "H-19",
+  "uid": "d14d40ce-ec31-5139-91ec-a9e16eaca721",
+  "objective": "Báo cáo lên cấp cao về tiến độ, tin xấu và quyết định cần lãnh đạo đưa ra.",
+  "knowledge_focus": [
+    "Mở bằng kết luận và tác động",
+    "Tách điều đã kiểm/đang kiểm",
+    "Đưa lựa chọn có hệ quả",
+    "Nói lại kỳ vọng và cập nhật sau quyết"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Báo tiến độ thường kỳ",
+      "roles": [
+        "người phụ trách dự án",
+        "giám đốc"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Báo tin xấu sớm",
+      "roles": [
+        "người phụ trách dự án",
+        "giám đốc"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Xin quyết định",
+      "roles": [
+        "người phụ trách dự án",
+        "giám đốc"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhận phản hồi khó nghe",
+      "roles": [
+        "người phụ trách dự án",
+        "giám đốc"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Báo sau xử lý",
+      "roles": [
+        "người phụ trách dự án",
+        "giám đốc"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu mốc đã đạt và mốc có rủi ro",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Giám đốc tưởng rủi ro thành trễ chắc chắn, phân biệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi lãnh đạo cần thấy chỉ số nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Vòng sau báo theo chỉ số ấy",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói sự cố và tác động khách đã biết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi điều lãnh đạo cần biết ngay trước nguyên nhân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chưa xác định nguyên nhân, hẹn giờ cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Có kết quả điều tra, báo điều đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Đưa hai phương án và tradeoff",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Giám đốc chọn phương án nếu tài chính đồng ý",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không chọn cả hai, hỏi tiêu chí còn thiếu",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi ai cần được báo sau quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nghe phê bình về việc báo muộn, nhận phần mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Lãnh đạo nghĩ khách chưa biết, sửa bằng thời điểm đã báo",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi kỳ vọng cho mốc cập nhật tiếp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Đúng mốc báo kết quả",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nói điều đã khôi phục và phần còn mở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách vẫn chưa chấp nhận, nói rõ trạng thái",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hỏi có cần gặp khách cùng lãnh đạo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Sau cuộc gặp, báo quyết định tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "H-18 báo sự cố cho cấp trực tiếp; H-19 trình bày cấp cao và xin quyết định.",
+  "cross_stage_refs": [
+    "H-18",
+    "V5P-111"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

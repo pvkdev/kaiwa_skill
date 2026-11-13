@@ -1,0 +1,250 @@
+{
+  "stage_key": "V5P-033",
+  "uid": "1d7f2357-631b-55ab-a983-4b0bba54f293",
+  "objective": "Làm rõ lý do tài khoản bị hạn chế hoặc giao dịch chưa phản ánh với ngân hàng qua quầy/điện thoại.",
+  "knowledge_focus": [
+    "xác minh danh tính an toàn",
+    "nêu tình trạng tài khoản",
+    "đối chiếu tên/địa chỉ",
+    "hỏi bộ phận và lần liên hệ tiếp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tài khoản không dùng được",
+      "roles": [
+        "người học",
+        "nhân viên ngân hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thông tin cá nhân khác",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khoản chuyển chưa hiện",
+      "roles": [
+        "người học",
+        "nhân viên ngân hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Theo dõi sau buổi đầu",
+      "roles": [
+        "người học",
+        "nhân viên ngân hàng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Cuộc gọi xác minh lại sau lần đến quầy",
+      "roles": [
+        "người học",
+        "nhân viên ngân hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mình không thực hiện được giao dịch hôm nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên cần kiểm danh tính, hỏi kênh và giấy phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không nhận được lý do ngay, hỏi lúc nào sẽ có trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi lại vì tưởng máy hỏng nhưng tài khoản bị hạn chế",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói tên trên giấy cũ và mới khác phiên âm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Địa chỉ ngân hàng còn nơi ở cũ, xin hướng dẫn trao đổi cập nhật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Thiếu giấy xác nhận, hẹn quay lại và nhắc vật cần mang",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Quầy chưa xử lý được, xin tên bộ phận phụ trách",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói ngày/số tiền khoản chuyển mình đang hỏi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nhân viên nói vẫn chờ xử lý, hỏi cách theo dõi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người học đọc nhầm ngày, sửa thông tin tham chiếu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Giao dịch liên quan ngân hàng khác, hỏi ai nên liên hệ",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Gọi lại với số tham chiếu đã nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Tình trạng thay đổi, hỏi bước tiếp trước khi thử lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Vẫn chưa giải quyết, xin cuộc trao đổi với bộ phận phù hợp",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nhắc lại việc ngân hàng sẽ làm và việc mình cần làm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Ngân hàng gọi lại nhưng người học không chắc đó là kênh chính thức, xin cách kiểm",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Nhân viên quầy và tổng đài nói khác về giấy cần, xin đối chiếu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Một bộ phận còn chờ xác nhận, hỏi người chịu trách nhiệm phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Khi tài khoản dùng lại được, hỏi giao dịch cũ còn cần theo dõi không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "S-42 giữ mở/gửi/rút cơ bản; giao dịch quốc tế V5P-034, thẻ V5P-035.",
+  "cross_stage_refs": [
+    "V5P-034",
+    "V5P-035"
+  ],
+  "source_refs": [
+    "W16",
+    "W21",
+    "B08:U13-U14"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

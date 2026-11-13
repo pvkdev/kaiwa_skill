@@ -1,0 +1,251 @@
+{
+  "stage_key": "V5P-030",
+  "uid": "89d49b4a-dc66-51e9-9d6d-bae9f201b9f8",
+  "objective": "Hỏi hiểu thông báo thuế và chuyển đúng quầy theo loại thuế/hoàn cảnh cá nhân.",
+  "knowledge_focus": [
+    "nêu kỳ và khoản trên thông báo",
+    "phân biệt thuế địa phương/quốc gia",
+    "trình bày thu nhập theo mốc",
+    "hỏi giấy và người tư vấn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đọc hiểu thông báo bằng lời",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Kể hoàn cảnh thu nhập",
+      "roles": [
+        "người học",
+        "nhân viên thuế"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bổ sung thông tin",
+      "roles": [
+        "người học",
+        "nhân viên thuế"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Xác nhận kết quả trao đổi",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Thông báo thứ hai sau cuộc tư vấn",
+      "roles": [
+        "người học",
+        "nhân viên thuế"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói vừa nhận thông báo, hỏi khoản này thuộc kỳ nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên hỏi cơ quan phát hành, người học đọc tên cơ quan",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đến sai quầy thuế quốc gia cho khoản địa phương, xin đúng nơi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không hiểu từ chỉ loại thuế, xin giải thích dễ hơn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói đổi việc giữa năm và hai nơi trả thu nhập",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Một khoản trên thông báo không khớp giấy mình có, xin đối chiếu",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chưa chắc một khoản thuộc năm nào, nói cần kiểm lại",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Câu hỏi quá chi tiết, xin hẹn tư vấn riêng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi chứng từ nào giúp nhân viên xem trường hợp mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Thiếu giấy, xác nhận có thể quay lại khi lấy được",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Được chỉ liên hệ nơi trả lương, hỏi nên hỏi điều gì",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Quay lại, nhắc nội dung buổi trước và giấy bổ sung",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nhắc lại phần đã hiểu và phần vẫn cần chuyên viên xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nhận hai cách giải thích khác, xin làm rõ sự khác nhau",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nhân viên chưa kết luận, hỏi mốc liên hệ tiếp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi tên quầy/đầu mối nếu có thông báo mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nhận thêm thông báo từ cơ quan khác, hỏi có liên quan khoản cũ không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Hai thông báo dùng tên khoản gần giống, nhờ phân biệt phạm vi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Nhân viên chưa thể đối chiếu qua điện thoại, xin hẹn mang theo hai giấy",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Sau cuộc hẹn, nói lại phần cần hỏi nơi trả thu nhập",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Chỉ giao tiếp với người có thẩm quyền, không dạy tính thuế hay mức phải nộp.",
+  "cross_stage_refs": [
+    "V5P-031",
+    "V5P-032"
+  ],
+  "source_refs": [
+    "W20"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

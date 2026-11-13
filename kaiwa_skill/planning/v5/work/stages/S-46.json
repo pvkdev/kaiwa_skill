@@ -1,0 +1,209 @@
+{
+  "stage_key": "S-46",
+  "uid": "fc909d53-7e48-5392-9f3b-c227dd7779ab",
+  "objective": "Rủ người khác làm một việc cuối tuần, hẹn được thời gian/địa điểm và ứng phó thay đổi đơn giản.",
+  "knowledge_focus": [
+    "Lời rủ, nhận lời và từ chối ngắn",
+    "Chốt ngày giờ, điểm gặp, ai liên hệ lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đề nghị hoạt động",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chốt hẹn",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đổi trước buổi gặp",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đang đi cùng nhau",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Rủ bạn uống cà phê sau giờ học",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Rủ người mới quen đi dạo chỗ công cộng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi bạn muốn đi xem phim hay ở nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bạn không muốn hoạt động đó, gợi lựa chọn khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Bạn đồng ý, hỏi giờ thuận tiện",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chọn điểm gặp dễ nhận gần ga",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi ai sẽ đặt chỗ trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bạn chỉ đi được một giờ, thu ngắn kế hoạch",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hai bên nói khác thứ bảy tuần này và tuần sau",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại cả ngày tháng, giờ và điểm gặp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo mình sẽ đến trễ vì việc đột xuất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Đề nghị gặp ở nơi gần bạn hơn",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Bạn không còn đi được, chấp nhận và hẹn dịp khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Bạn chưa biết lịch, hẹn thời điểm xác nhận",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Liên hệ đúng lúc đã hẹn để chốt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi bạn có muốn nghỉ một chút không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Bạn mệt, đổi hoạt động ngắn hơn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Điểm định tới đóng, cùng chọn chỗ khác",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chốt nơi mới và cách đi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Hẹn lần sau dựa trên điều cả hai thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Lời rủ/hẹn Sơ; điều phối chuyến đi và ngân sách T-67, quan hệ sâu T-24.",
+  "cross_stage_refs": [
+    "T-67",
+    "T-24"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,208 @@
+{
+  "stage_key": "V5P-016",
+  "uid": "158ee20c-5cbe-57af-8a76-4c355732851a",
+  "objective": "Hỏi và sử dụng sento/sauna/cơ sở tắm công cộng một cách phù hợp quy tắc riêng của nơi đó.",
+  "knowledge_focus": [
+    "Hỏi giá, khu sử dụng, vật cần chuẩn bị",
+    "Nghe lời hướng dẫn, hỏi khi chưa rõ, đáp khi được nhắc"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trước khi vào",
+      "roles": [
+        "người học",
+        "nhân viên cơ sở"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi nội quy cụ thể",
+      "roles": [
+        "người học",
+        "nhân viên cơ sở"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trong lúc dùng",
+      "roles": [
+        "người học",
+        "nhân viên hoặc khách khác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Rời cơ sở",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi hôm nay cơ sở còn mở không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi giá và có cần mang khăn không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói mình đến lần đầu và xin chỉ khu đúng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Một khu đang đóng, hỏi lựa chọn còn dùng được",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại nơi thay đồ và giờ đóng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi nơi để đồ cá nhân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi có thể dùng khu sauna riêng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên nói không được mang vật đó vào, hỏi chỗ cất",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hiểu nhầm giờ vào cuối là giờ đóng cửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại hai mốc giờ khác nhau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhờ chỉ vòi nước đang dùng được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Vật dụng thuê không có trong ngăn, báo nhân viên",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người khác cần dùng khu chung, nhường lượt theo hướng dẫn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Bị nhắc vì dùng sai khu, hỏi lại quy tắc và sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Cảm ơn người đã chỉ rồi tiếp tục",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi cách trả khăn/đồ mượn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Không thấy món mình gửi, mô tả và nhờ tìm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nhân viên cần kiểm, hỏi chờ ở đâu",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Quay lại quầy với số ngăn/tên món",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhận lại đúng đồ và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Nội quy từng nơi, không tư vấn sức khỏe/sauna; ryokan qua đêm V5P-131.",
+  "cross_stage_refs": [
+    "V5P-131"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

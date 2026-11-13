@@ -1,0 +1,433 @@
+{
+  "stage_key": "T-35",
+  "uid": "6fb64c21-ccf2-5e28-96b6-96759cfd8f57",
+  "objective": "Xin phép thay đổi kế hoạch công việc và xác nhận điều kiện thực hiện.",
+  "knowledge_focus": [
+    "Nói lý do cần thay đổi và tác động",
+    "Nghe giới hạn cho phép",
+    "Báo lại nếu điều kiện không còn đúng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin dùng thời gian/nguồn lực",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xin đổi cách làm",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Xác nhận lại sau thay đổi",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Xin nghỉ một khoảng theo kế hoạch và ra ngoài trong giờ",
+      "roles": [
+        "nhân viên cần điều chỉnh lịch",
+        "leader phụ trách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Xin dùng phòng, thiết bị và nguồn lực chung cho việc cụ thể",
+      "roles": [
+        "người phụ trách việc",
+        "người quản lý phòng/nguồn lực"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Xin cho khách hoặc người ngoài vào khu có kiểm soát",
+      "roles": [
+        "nhân viên mời khách",
+        "người phụ trách ra vào"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Xin đổi phương án khi đang thực hiện",
+      "roles": [
+        "nhân viên phụ trách việc",
+        "leader hoặc người có quyền duyệt"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xin rời buổi họp sớm để gặp khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Được đồng ý, chốt người cập nhật phần bỏ lỡ",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không thể rời, hỏi người khác đi thay",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Được rời sau phần báo cáo của mình",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Xin dùng bản demo thay bản đầy đủ cho buổi đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Leader cần hỏi khách, hẹn giờ quyết",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách cần bản đầy đủ, hỏi có thể giảm phạm vi khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Được dùng demo, xác nhận điểm phải nói rõ cho khách",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nhắc lại quyết định trong cuộc nói riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hai bên hiểu khác thời hạn cho phép, sửa ngay",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Điều kiện khách đổi, xin quyết định mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Leader chốt cách mới, nhân viên nói lại bước tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Xin nghỉ nửa ngày để giải quyết việc riêng đã hẹn, nêu việc cần bàn giao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Leader đồng ý khi việc khách được chuyển đúng người, nhân viên xác nhận người nhận và giờ trở lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Leader không cho nghỉ đúng ngày vì mốc khách, nhân viên đề nghị giờ khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Leader chưa biết lịch nhóm, hẹn trả lời trước ngày cần nghỉ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đến hạn chưa có câu trả lời, nhân viên hỏi lại và chốt lịch bàn giao",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Trong giờ làm cần ra ngoài gấp, xin rời chỗ và nêu thời điểm sẽ cập nhật mà không buộc kể chuyện riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Việc ra ngoài kéo dài hơn dự kiến, gọi báo để người khác nhận phần đang chờ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Xin phòng họp cho buổi demo khách, nêu số người và thiết bị cần có",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Phòng được duyệt nhưng chỉ tới giờ cố định, xác nhận cách kết thúc đúng giờ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S020"
+      ]
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Phòng đã có lịch, hỏi phòng khác đủ thiết bị hoặc đổi giờ",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S020"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Người quản lý chờ xác nhận lịch lãnh đạo, nhân viên hẹn mốc trước khi mời khách",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S020"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Lịch được duyệt sau đó, nhân viên nhắc lại số người, giờ và người trả phòng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Xin thêm một người hỗ trợ demo vì khách tăng số người tham dự",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E05",
+      "title": "Không được thêm người, xin giảm phạm vi demo và báo khách đúng mức",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Nêu khách nào tới, mục đích và khu cần vào trước khi xin phép",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Được phép vào khi có người đi cùng, xác nhận ai đón ở cổng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Khu đó không tiếp khách, hỏi nơi khác có thể demo",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Chưa thể duyệt vì thiếu thông tin người đến, hỏi cần xác nhận gì",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S031",
+      "event_id": "E06",
+      "title": "Khách đổi người đi cùng sát giờ, gọi lại kiểm phép vào mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    },
+    {
+      "id": "S032",
+      "event_id": "E06",
+      "title": "Khách tới sớm, hỏi điểm chờ phù hợp khi chưa được vào khu",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S030"
+      ]
+    },
+    {
+      "id": "S033",
+      "event_id": "E07",
+      "title": "Đề nghị thay thứ tự hai bước để kịp hạn, nói ảnh hưởng và phần mình tự quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S034",
+      "event_id": "E07",
+      "title": "Leader chấp nhận trong phạm vi thử và yêu cầu báo sau bước đầu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S035",
+      "event_id": "E07",
+      "title": "Leader từ chối vì ảnh hưởng nhóm khác, hỏi lý do và lựa chọn khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S036",
+      "event_id": "E07",
+      "title": "Leader cần hỏi khách trước, nhân viên tạm giữ kế hoạch cũ và hẹn mốc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S037",
+      "event_id": "E07",
+      "title": "Khách đồng ý phương án mới, nhân viên nhắc lại phạm vi thực hiện và người cần báo",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S036"
+      ]
+    },
+    {
+      "id": "S038",
+      "event_id": "E07",
+      "title": "Điều kiện đã được duyệt thay đổi giữa chừng, nhân viên xin quyết lại trước khi làm tiếp",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S034"
+      ]
+    }
+  ],
+  "coverage_note": "Xin phép điều chỉnh thời gian/ra ngoài, phòng và nguồn lực, khách vào khu có kiểm soát, đổi phương án trong quyền; gồm đồng ý, từ chối, có điều kiện, chờ và liên hệ lại. S-26 chỉ nhờ/mượn đồ cơ bản; S-32 báo ốm không trùng xin nghỉ có kế hoạch. Không dạy viết form hoặc hứa quy định của mọi công ty.",
+  "cross_stage_refs": [
+    "S-26",
+    "S-32",
+    "V5P-107"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

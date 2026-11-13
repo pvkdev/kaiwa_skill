@@ -1,0 +1,261 @@
+{
+  "stage_key": "V5P-019",
+  "uid": "0b403022-3067-532d-98cc-38ab40e33c37",
+  "objective": "Hỏi đúng cách bỏ đồ lớn ở địa phương, hẹn thu gom và giải quyết khi đồ chưa được nhận.",
+  "knowledge_focus": [
+    "Mô tả vật, kích thước, số lượng và chỗ đặt",
+    "Xác nhận lịch/điều kiện, sửa khi phân loại sai, theo việc sau ngày gom"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xác định loại đồ",
+      "roles": [
+        "người học",
+        "nhân viên quầy địa phương"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hẹn và chuẩn bị thu gom",
+      "roles": [
+        "người học",
+        "nhân viên đặt lịch"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thay đổi trước ngày hẹn",
+      "roles": [
+        "người học",
+        "nhân viên đặt lịch"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bị hàng xóm nhắc",
+      "roles": [
+        "người học",
+        "hàng xóm hoặc quản lý"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Ngày gom và sau đó",
+      "roles": [
+        "người học",
+        "đơn vị thu gom"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Mô tả chiếc ghế cũ và hỏi thuộc loại nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi đồ điện có đi cùng luồng đồ cồng kềnh không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người nghe hiểu nhầm là đồ còn dùng để trao lại, đính chính muốn bỏ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Vật cần xử lý theo luồng khác, xin tên đầu mối",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại cách phân loại của đúng địa phương",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói số lượng, kích thước và địa chỉ nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi ngày gần nhất và chỗ để đồ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Ngày mình chọn đã kín, cân nhắc ngày khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhầm điểm đặt trước tòa và điểm chung ở góc phố, xác nhận lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc ngày, giờ, vật và điểm đặt",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo thêm một món mới sau khi đã đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không thể thêm vào lịch này, hỏi lịch cho món mới",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Báo không thể mang đồ xuống đúng ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đổi ngày hoặc tự mang theo hướng dẫn",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Gọi lại chốt lịch đã đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nghe nhắc đồ đặt quá sớm, hỏi thời điểm được đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Mình tưởng đồ của nhà khác, kiểm lại trước khi đáp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chuyển đồ ngay và cảm ơn đã nhắc",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Đồ quá nặng, xin ít thời gian và báo người hỗ trợ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Báo đã dời đồ đúng vị trí",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi vì sao món đã đăng ký vẫn ở lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Đồ bị từ chối vì khác mô tả, nói lại kích thước thật",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hỏi cách đăng ký lại đúng loại",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Đơn vị cần kiểm xe đã đến chưa, chốt giờ gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Liên hệ lại, nhắc mã/lịch đã nói và xác nhận bước tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Hỏi/đặt/giao đồ lớn, không bài đọc lịch rác; quy định theo địa phương và loại vật. Quan hệ hàng xóm S-09/T-27.",
+  "cross_stage_refs": [
+    "S-09",
+    "T-27",
+    "V5P-020"
+  ],
+  "source_refs": [
+    "DW07",
+    "DW10"
+  ],
+  "source_findings": [
+    "Đã đọc B08 Unit 22 và B26 bài マンション; quy trình rác cồng kềnh cụ thể cần kiểm địa phương."
+  ],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

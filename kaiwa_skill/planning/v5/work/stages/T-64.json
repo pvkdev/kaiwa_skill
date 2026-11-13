@@ -1,0 +1,195 @@
+{
+  "stage_key": "T-64",
+  "uid": "9cb3e9cf-516f-5dd1-b1d6-0a33e2c43e28",
+  "objective": "Ở vai nhân viên, báo cấp cứu/sự cố/đồ bỏ quên và chuyển đúng người chịu trách nhiệm.",
+  "knowledge_focus": [
+    "Ưu tiên thông tin vị trí, người và trạng thái",
+    "Gọi đúng người hỗ trợ theo quy trình tại chỗ",
+    "Không tự hướng dẫn sơ cứu",
+    "Báo diễn biến sau khi đã chuyển đầu mối"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khách hoặc đồng nghiệp cần hỗ trợ khẩn",
+      "roles": [
+        "nhân viên",
+        "trưởng ca"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Sự cố dịch vụ tại chỗ",
+      "roles": [
+        "nhân viên",
+        "trưởng ca"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đồ khách bỏ quên",
+      "roles": [
+        "nhân viên",
+        "khách hoặc trưởng ca"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau sự cố",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo người không khỏe ở quầy nào và còn phản hồi không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Có thêm người cần hỗ trợ, cập nhật vị trí",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi ai gọi đầu mối y tế theo quy trình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người phụ trách tới, tóm tắt điều đã thấy",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Báo khu vực mất điện hoặc nước ảnh hưởng khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Trưởng ca yêu cầu dừng nhận khách mới, nhắc lại phạm vi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi ai thông báo cho khách đang chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Có giờ dự kiến, cập nhật cho khách",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Khách hỏi đồ thất lạc, hỏi mô tả/vị trí cuối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Chưa tìm thấy, nêu mốc kiểm và người liên hệ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Có món giống nhưng khác đặc điểm, không giao nhầm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Tìm thấy, chỉ người phụ trách xác nhận trả",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói thứ tự việc đã xảy ra và ai được báo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Người nghe tưởng nguyên nhân đã rõ, nói mới là quan sát",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi còn khách nào cần liên hệ lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Đã liên hệ, cập nhật kết quả và việc còn mở",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Chỉ giao tiếp nhân viên và yêu cầu trợ giúp; không viết quy trình cấp cứu hoặc điều tra.",
+  "cross_stage_refs": [
+    "S-35",
+    "V5P-095"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

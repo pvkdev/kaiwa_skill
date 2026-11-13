@@ -1,0 +1,252 @@
+{
+  "stage_key": "H-49",
+  "uid": "c1a56594-b23e-5ad2-9ebe-0d8f8fdf16ce",
+  "objective": "Trao đổi sâu về manga, anime, thể thao hoặc biểu diễn như một người cùng quan tâm, xử lý gu khác và nguồn tin chưa chắc.",
+  "knowledge_focus": [
+    "Dẫn ví dụ cụ thể để giải thích gu/đánh giá",
+    "Đối chiếu bản chuyển thể, sự kiện, fan culture mà không giả định người kia cùng hiểu"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khám phá gu của người đối diện",
+      "roles": [
+        "người học",
+        "người cùng sở thích"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Phân tích tác phẩm",
+      "roles": [
+        "người học",
+        "người cùng xem"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Theo thể thao trực tiếp",
+      "roles": [
+        "người học",
+        "người cùng xem"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tin cộng đồng/người hâm mộ",
+      "roles": [
+        "người học",
+        "người trong nhóm fan"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Khi khác gu hoặc quá nhiệt",
+      "roles": [
+        "người học",
+        "người cùng sở thích"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi họ thích nhân vật/đội vì yếu tố nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói điều mình thích dù không phổ biến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia mới biết tác phẩm, tránh tiết lộ kết",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hai người nói về bản chuyển thể khác, xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chọn điểm chung để bàn sâu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nêu một cảnh cho thấy nhân vật đổi quan điểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi người kia đọc đoạn đó khác thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Họ đồng ý về cảnh nhưng khác về động cơ, bàn bằng chi tiết",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ không thích kết, không phủ định cảm nhận",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt phần hai người còn muốn xem lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói trận vừa rồi đổi thế ở thời điểm nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi người kia nghĩ quyết định huấn luyện viên ra sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhầm trận gần đây với mùa trước, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người kia chỉ theo dõi đội khác, tìm dữ kiện chung",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hẹn xem trận tiếp theo nếu cả hai muốn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói thông tin về buổi biểu diễn vẫn là tin chưa xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi nguồn chính thức trước khi quyết mua vé",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hai tài khoản cùng tên gây nhầm sự kiện, phân biệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chưa có thông báo, hẹn kiểm lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Quay lại với tin đã xác minh",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói không thích một bộ mà không hạ người thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nhận ra lời đùa về đội khác làm người kia khó chịu, sửa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Không tham gia tranh cãi công kích tác giả/vận động viên",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Đồng ý bàn bằng tác phẩm/trận cụ thể",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Khép cuộc nói còn hứng thú gặp lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Bàn văn hóa đại chúng/giải trí; T-43 nhận xét tác phẩm, V5P-130 đi xem sự kiện tại venue.",
+  "cross_stage_refs": [
+    "T-43",
+    "V5P-130"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

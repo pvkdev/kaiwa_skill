@@ -1,0 +1,272 @@
+{
+  "stage_key": "S-38",
+  "uid": "d8b0c4c9-2da6-596f-a6e5-0f2a4d740bf3",
+  "objective": "Đặt một dịch vụ cơ bản qua điện thoại, làm rõ yêu cầu, giờ và xác nhận lại sau khi đặt.",
+  "knowledge_focus": [
+    "Nêu dịch vụ, địa chỉ, thời gian và số người",
+    "Hỏi giá/điều kiện đơn giản, sửa thông tin nghe nhầm"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm đúng dịch vụ",
+      "roles": [
+        "người học",
+        "nhân viên nhận cuộc gọi"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói thông tin đặt",
+      "roles": [
+        "người học",
+        "nhân viên nhận đặt"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đổi hoặc hủy trước buổi",
+      "roles": [
+        "người học",
+        "nhân viên đặt lịch"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tại lúc thực hiện",
+      "roles": [
+        "người học",
+        "người cung cấp dịch vụ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Gọi hỗ trợ khi không truy cập được tài khoản dịch vụ",
+      "roles": [
+        "người dùng dịch vụ",
+        "nhân viên hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi nơi này có làm dịch vụ mình cần không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi còn lịch tuần này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không có buổi chiều, hỏi buổi sáng",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Giá cao hơn dự định, nói chưa đặt",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chọn dịch vụ và giờ phù hợp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói tên và số điện thoại để đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đọc địa chỉ kèm mốc dễ tìm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên nghe nhầm số nhà, sửa từng chữ số",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Địa chỉ ngoài khu phục vụ, hỏi có cơ sở khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại toàn bộ thông tin quan trọng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Gọi báo không thể có mặt đúng giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi còn giờ khác cùng ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhân viên cần hỏi người thực hiện, chốt lúc trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Gọi lại nếu chưa nhận xác nhận đổi giờ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nghe giờ mới và nói mình hiểu điều kiện",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Xác nhận người đến đúng dịch vụ đã đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người thực hiện mang sai dụng cụ vì yêu cầu bị ghi nhầm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chọn làm phần có thể làm hôm nay và hẹn phần sau",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhắc lại phạm vi đã hoàn thành",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gọi quầy hỏi bước còn lại sau buổi",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói qua điện thoại rằng tài khoản của dịch vụ không mở được từ sáng nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nhân viên tưởng quên mật khẩu, nói lại rằng mình không nhận được thông tin xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Nghe phải chuyển bộ phận khác, hỏi tên bộ phận và cách liên hệ",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Được hẹn gọi lại, nhắc lại số liên hệ và giờ mình có thể nghe máy",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Khi hỗ trợ gọi lại, nhắc vấn đề cũ và nói đã vào được hay vẫn chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Cuộc gọi đặt dịch vụ chung; tiện ích nhà V5P-017, viễn thông V5P-036, hủy hợp đồng V5P-039. AI037 chỉ thành cuộc nói với hỗ trợ, không bài thao tác app/khôi phục tài khoản từng bước.",
+  "cross_stage_refs": [
+    "V5P-017",
+    "V5P-036",
+    "V5P-039"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily",
+  "editorial_contributors": [
+    "daily",
+    "root"
+  ]
+}

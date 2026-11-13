@@ -1,0 +1,330 @@
+{
+  "stage_key": "H-16",
+  "uid": "f762c2fb-b676-5ccc-82b0-6da2140351ce",
+  "objective": "Báo khiếu nại nội bộ, phối hợp xử lý hàng lỗi và quay lại khách với trạng thái đúng.",
+  "knowledge_focus": [
+    "Đưa sự kiện, chứng cứ và tác động trước suy đoán",
+    "Chia việc giữa khách, nhà máy, lãnh đạo",
+    "Không hứa lịch chưa kiểm",
+    "Theo dõi tới khi khách xác nhận"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhân viên báo sếp",
+      "roles": [
+        "người nhận khiếu nại",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Phân công kiểm nguyên nhân",
+      "roles": [
+        "leader",
+        "nhà máy hoặc QA"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Làm việc với khách tại chỗ",
+      "roles": [
+        "người phụ trách",
+        "khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chọn cách xử lý",
+      "roles": [
+        "leader",
+        "người phụ trách khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Báo khách kết quả kiểm",
+      "roles": [
+        "người phụ trách",
+        "khách"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Hàng sửa và sau giao",
+      "roles": [
+        "người phụ trách",
+        "khách"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Học từ sự cố",
+      "roles": [
+        "leader",
+        "đội"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Tóm tắt khách, lô hàng, lỗi quan sát và hạn sử dụng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Sếp nghe như lỗi đã được xác định, sửa mới là khác mẫu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói điều đã hứa với khách và điều chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi ai cần được báo ngay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi lô nào bị ảnh hưởng và mẫu duyệt ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "QA cần thời gian kiểm, chốt mốc báo",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Có thể nhiều lô, mở rộng phạm vi hỏi",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "QA trả lời, nói điều đã chắc/chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Xin xem hàng thực tế và mẫu khách duyệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách tưởng mình đến lấy hàng toàn bộ, làm rõ mục đích kiểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi khách đang cần ưu tiên lượng nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Khách đồng ý giải pháp tạm cho một nhóm cửa hàng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "So sánh sản xuất lại tại chỗ và nơi khác theo mốc/chi phí",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Leader chọn nơi khác nếu kịp hạn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Không cách nào kịp toàn bộ, hỏi phần ưu tiên",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi ai có quyền chốt khoản phát sinh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nêu nguyên nhân đã xác minh mà không đổ lỗi người không có mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Một điểm còn đang kiểm, hẹn lần sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đưa mốc giao mới với điều kiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Khách không nhận, đưa lên người quyết hai bên",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Hỏi khách đã kiểm lô sửa chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Còn một lỗi khác, ghi nhận và báo nội bộ",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Lỗi được sửa, hỏi khách có chấp nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Sau một thời gian, hỏi việc dùng hàng có ổn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E07",
+      "title": "Tóm tắt bước nào mất kiểm soát trong quy trình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E07",
+      "title": "Một bên bị quy lỗi khi chưa đủ chứng cứ, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S027",
+      "event_id": "E07",
+      "title": "Hỏi thay đổi nào cần thử ở lô sau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E07",
+      "title": "Lô sau kiểm hiệu quả thay đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    }
+  ],
+  "coverage_note": "B15 bài 7 đã đọc trực tiếp về báo sếp/chia việc. H-14 là cuộc xin lỗi với khách; V5P-111 là leader điều phối sự cố nhóm rộng.",
+  "cross_stage_refs": [
+    "H-14",
+    "V5P-111"
+  ],
+  "source_refs": [],
+  "source_findings": [
+    {
+      "kind": "book_read",
+      "book_id": "B15",
+      "path": "kaiwa_skill/knowledge/上級レベル ロールプレイで学ぶ ビジネス日本語 ―グローバル企業でのキャリア構築をめざして―/chapters/07-bai-07.md",
+      "locator": "lines 1-58",
+      "supports": "Nhân viên báo khiếu nại hàng in sai lên sếp, hai bên chia việc kiểm nhà máy và đi gặp khách.",
+      "limit": "Không phủ các nhánh kết quả hoặc xử lý sau đó."
+    }
+  ],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

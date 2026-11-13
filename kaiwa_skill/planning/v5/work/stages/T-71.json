@@ -1,0 +1,231 @@
+{
+  "stage_key": "T-71",
+  "uid": "a178940d-5fb1-58c7-b9d9-516b9eafc46b",
+  "objective": "Phục vụ khách mua hàng/quần áo: tìm sản phẩm, thử, đổi chọn và xử lý sau mua.",
+  "knowledge_focus": [
+    "Hỏi nhu cầu/cỡ/cách dùng",
+    "Nói rõ hàng còn và điều kiện thay",
+    "Không hứa đổi trả ngoài quy định cửa hàng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm hàng theo nhu cầu",
+      "roles": [
+        "nhân viên cửa hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thử và so sánh",
+      "roles": [
+        "nhân viên cửa hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hết hàng/đặt nhận",
+      "roles": [
+        "nhân viên cửa hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đổi món sau mua",
+      "roles": [
+        "nhân viên cửa hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Kết giao dịch",
+      "roles": [
+        "nhân viên cửa hàng",
+        "khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi khách tìm đồ cho dịp nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi cỡ/màu và điều khách ưu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nghe nhầm kích cỡ người dùng với người mua hộ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Có hàng, dẫn tới đúng khu",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Chỉ phòng thử và hỏi cần cỡ khác không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Cỡ vừa nhưng màu hết, gợi ý màu khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách không thích màu, hỏi cửa hàng khác còn không",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi khách cảm thấy chỗ nào chưa vừa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo mẫu không còn trong kho tại chỗ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Có thể đặt từ chi nhánh khác, nêu mốc dự kiến",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Cần kiểm tồn kho, hẹn lúc trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Có kết quả, hỏi khách muốn giữ hàng không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nghe lý do khách muốn đổi và ngày mua",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Khách nói lỗi đường may, không phải đổi ý, hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Có thể đổi nhưng cần kiểm tình trạng, mời người phụ trách",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Không đổi được theo điều kiện đã kiểm, giải thích lựa chọn tiếp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nhắc tổng tiền và đồ kèm theo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách phát hiện thiếu phụ kiện, kiểm trước khi rời",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Tìm được phụ kiện, xin lỗi và giao đủ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Cửa hàng bán lẻ/quần áo; konbini T-72 là quầy tốc độ nhanh và dịch vụ nhiều loại.",
+  "cross_stage_refs": [
+    "T-72"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

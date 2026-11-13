@@ -1,0 +1,193 @@
+{
+  "stage_key": "V5P-104",
+  "uid": "fc19e143-5413-57f9-9dd1-5fe70bae8742",
+  "objective": "Hướng dẫn người mới làm một nhiệm vụ, kiểm hiểu và theo dõi lần làm đầu.",
+  "knowledge_focus": [
+    "Giải thích mục đích và thứ tự bằng lời",
+    "Mời người mới nói lại thay vì chỉ hỏi \"hiểu chưa\"",
+    "Phản hồi cụ thể và tăng dần phần tự làm"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Giao nhiệm vụ học việc",
+      "roles": [
+        "người hướng dẫn",
+        "người mới"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Làm mẫu và hỏi lại",
+      "roles": [
+        "người hướng dẫn",
+        "người mới"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Xem lần làm đầu",
+      "roles": [
+        "người hướng dẫn",
+        "người mới"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Theo dõi sau vài ngày",
+      "roles": [
+        "người hướng dẫn",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói kết quả cần đạt của việc đầu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi người mới đã biết phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người mới hiểu nhầm mẫu là bản đã duyệt, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ giao phần đầu, hẹn xem trước khi làm tiếp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Giải thích bước quan trọng và lý do",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi người mới sẽ làm gì nếu thiếu thông tin",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người mới đoán thay vì hỏi, nêu điểm cần dừng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người mới nhắc lại đầu mối cần hỏi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Khen điểm đúng và chỉ ra một lỗi cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Cho làm tiếp sau khi sửa lỗi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chưa thể tự làm, hẹn thêm lần cùng làm",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Xem bản sửa và giao phần kế",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Báo người mới làm được việc nào và còn cần hỗ trợ gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Leader tưởng đã tự lập hoàn toàn, làm rõ phạm vi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi nên đổi mức nhiệm vụ tuần sau không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Cập nhật kế hoạch hỗ trợ cho người mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Vai người hướng dẫn; người mới nhận việc ở T-09. Không biến đoạn than phiền người mới trong B13 thành mô hình OJT.",
+  "cross_stage_refs": [
+    "T-09"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

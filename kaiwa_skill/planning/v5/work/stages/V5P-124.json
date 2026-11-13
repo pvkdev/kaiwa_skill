@@ -1,0 +1,259 @@
+{
+  "stage_key": "V5P-124",
+  "uid": "0da34853-59b8-55e7-a342-291a9d8237f5",
+  "objective": "Phối hợp việc đời sống khi về Việt Nam tạm thời rồi quay lại Nhật, nói rõ mốc đi/về và ai phụ trách từng việc.",
+  "knowledge_focus": [
+    "Tách tạm vắng khỏi rời Nhật lâu dài",
+    "Thông báo lịch, nhận hỗ trợ, kiểm việc còn mở khi quay về"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chốt kế hoạch với người gần mình",
+      "roles": [
+        "người học",
+        "người ở cùng hoặc bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhà và dịch vụ thường ngày",
+      "roles": [
+        "người học",
+        "người quản lý nhà hoặc nhà cung cấp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hỏi điều kiện chuyến đi",
+      "roles": [
+        "người học",
+        "quầy thông tin có thẩm quyền"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đang ở Việt Nam",
+      "roles": [
+        "người học",
+        "người đang trông nhà"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau khi quay lại Nhật",
+      "roles": [
+        "người học",
+        "người quản lý hoặc nhà cung cấp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói ngày dự định rời và quay lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ai có thể để ý nhà trong lúc vắng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia chỉ giúp một tuần, tìm người cho phần còn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không ai nhận giữ chìa, chọn cách khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt việc cụ thể, thời hạn và cách liên hệ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Báo sẽ vắng nhưng vẫn giữ nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi dịch vụ định kỳ có thể tạm dừng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên hiểu muốn hủy hẳn, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Đã qua hạn đổi kỳ gần nhất, hỏi kỳ sau",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc trạng thái vẫn giữ hay tạm dừng từng dịch vụ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Trình bày tình trạng cư trú và ngày dự kiến về Nhật để hỏi đúng đầu mối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhân viên cần kiểm thông tin cụ thể, chốt nơi và lúc hỏi lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Quầy này không quyết được, xin chỉ cơ quan phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Họ tưởng rời Nhật vĩnh viễn, nói rõ đây là chuyến tạm thời",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại điều cần xác minh trước khi đi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Gọi hỏi nhà có vấn đề gì không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người trông nhà báo kiện được giao sai ngày, bàn cách xử lý",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Họ không tiện tiếp tục giúp, tìm người thay",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Liên hệ người thay, nhắc việc đã bàn giao",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt ai phụ trách đến ngày mình về",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Báo đã về và hỏi dịch vụ tạm dừng mở lại ngày nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Kiện/hóa đơn còn tồn khi vắng, hỏi thông tin",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Đơn vị vẫn ghi mình đã chuyển đi, giải thích tạm vắng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Gọi lại sau khi họ kiểm hồ sơ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt mọi đầu mối đang có trạng thái đúng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Về tạm rồi quay lại khác rời Nhật dài hạn V5P-080; không hứa quyền tái nhập cảnh.",
+  "cross_stage_refs": [
+    "V5P-080",
+    "V5P-017",
+    "V5P-036"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

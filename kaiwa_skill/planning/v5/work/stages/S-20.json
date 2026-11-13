@@ -1,0 +1,206 @@
+{
+  "stage_key": "S-20",
+  "uid": "8c15dd2f-3934-5191-b35f-1ac643c2cc9f",
+  "objective": "Mua đồ uống hoặc bữa nhanh tại quán cà phê/fast-food và chốt đúng cách nhận, dùng tại chỗ hay mang đi.",
+  "knowledge_focus": [
+    "Kích cỡ, lựa chọn đơn giản và tùy chỉnh trong phạm vi quán",
+    "Nghe số thứ tự, kiểm món và thanh toán"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đặt món ở quầy",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Yêu cầu nhỏ",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chờ và nhận món",
+      "roles": [
+        "người học",
+        "nhân viên giao món"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trả tiền và rời quầy",
+      "roles": [
+        "người học",
+        "thu ngân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi đồ uống có loại không cà phê không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói kích cỡ và dùng tại quán",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi set gồm những món nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Loại mong muốn hết, chọn đồ khác",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhân viên nhắc lại món và người học xác nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Xin ít đá hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi món có sữa không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không đổi được thành phần, chọn món khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhân viên hiểu mang đi thay vì dùng tại quán",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Đính chính cách dùng trước khi thanh toán",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi số gọi món của mình đã tới chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhận ly có tên/mã khác, kiểm lại",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đồ uống vừa nhận bị đổ, xin hỗ trợ dọn",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhận đúng món sau khi kiểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Báo bạn đang đợi rằng món cần thêm thời gian",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi tổng cho hai món riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nói cách thanh toán có thể dùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Điểm thưởng bị hiểu là hình thức thanh toán",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chọn lại cách trả và xác nhận số tiền",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Cảm ơn khi nhận hóa đơn và đồ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Quầy gọi nhanh khác bữa nhà hàng S-18. Không dạy thao tác app đặt đồ.",
+  "cross_stage_refs": [
+    "S-18",
+    "T-70"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

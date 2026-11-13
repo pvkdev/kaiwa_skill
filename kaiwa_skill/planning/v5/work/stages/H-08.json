@@ -1,0 +1,228 @@
+{
+  "stage_key": "H-08",
+  "uid": "b65cde5f-f597-5944-a5eb-ac4dc00da449",
+  "objective": "Bàn trách nhiệm và quyết định dài hạn trong gia đình nhiều thế hệ mà vẫn giữ tiếng nói của từng người.",
+  "knowledge_focus": [
+    "lắng nghe ưu tiên từng thế hệ",
+    "thương lượng trách nhiệm và ranh giới",
+    "điều phối bất đồng",
+    "hẹn xem lại quyết định"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Quyết định nơi ở",
+      "roles": [
+        "người học",
+        "bạn đời/cha mẹ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trách nhiệm chăm sóc",
+      "roles": [
+        "người học",
+        "anh chị em/cha mẹ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Con cái và định hướng",
+      "roles": [
+        "người học",
+        "bạn đời/con lớn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Giữ quan hệ khi bất đồng",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu lý do muốn đổi nơi ở và điều chưa chắc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Cha mẹ ưu tiên ở gần người thân, hỏi mối lo cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bạn đời tưởng quyết định đã chốt, làm rõ đang bàn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đề xuất thử ở một giai đoạn trước khi quyết lâu dài",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Sau khi tìm thông tin, họp lại với cả người bị ảnh hưởng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi người cần chăm muốn tự làm phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hai người thân cùng nhận một việc nhưng bỏ sót việc khác, chia lại",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Một người không thể nhận lịch đề nghị, hỏi giới hạn thực",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Cùng quyết khi nào cần chuyên viên tư vấn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Sau một tháng, xem lịch có quá sức ai không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi mong muốn của con trước khi người lớn chọn hộ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hai người lớn bất đồng mức hỗ trợ, tìm điểm chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Con không muốn kể một chuyện riêng, tôn trọng giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Thông tin từ trường khác điều gia đình tưởng, hỏi lại thầy/cô",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Thống nhất điều thử và ngày hỏi lại con",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói một điều mình không đồng ý mà công nhận lo của người kia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Cuộc nói quá căng, xin tạm dừng và hẹn tiếp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Một người bị bỏ ngoài quyết định, mời họ nói trước khi chốt",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau khi sửa phương án, báo lại người đã góp ý",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "T-47 chuyện hằng ngày; V5P-070 hỗ trợ ly thân; V5P-072 dịch vụ chăm sóc người già.",
+  "cross_stage_refs": [
+    "T-47",
+    "V5P-072"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

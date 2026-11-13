@@ -1,0 +1,167 @@
+{
+  "stage_key": "S-09",
+  "uid": "4a8889f8-b866-5ef2-80af-9186770fe19f",
+  "objective": "Nói nhu cầu sinh hoạt cơ bản trong nhà và giữ quan hệ dễ chịu với hàng xóm.",
+  "knowledge_focus": [
+    "Hỏi quy tắc dùng nơi chung và xử lý bất tiện nhỏ",
+    "Chào, nhờ và đáp lời nhắc của hàng xóm"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bắt đầu sống cùng khu",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Sinh hoạt trong nhà",
+      "roles": [
+        "người học",
+        "người ở cùng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phiền toái nhỏ giữa hàng xóm",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Chào khi mới chuyển tới và nói số phòng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi giờ nào có thể dùng máy giặt chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi nơi để xe đạp đúng chỗ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Để đồ ở hành lang vì tưởng là chỗ chung",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nghe lời nhắc và chuyển đồ ngay",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhờ chỉ cách dùng thiết bị chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi trước khi dùng đồ của người khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Được dùng bếp nhưng phải dọn trước giờ nhất định",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Thiết bị không hoạt động khi đang dùng, báo người ở cùng",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Hỏi người ở cùng đã liên hệ quản lý chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin lỗi vì tiếng ồn tối hôm trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhắc lịch sự khi đồ chắn lối đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người kia đồng ý chuyển đồ, cảm ơn và khép chuyện",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đồ vẫn ở lối hôm sau, hỏi lại có khó khăn gì",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hàng xóm xin đợi đến chiều, xác nhận thời điểm",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Nền nhà/hàng xóm Sơ; rác cồng kềnh V5P-019, ban quản lý V5P-022, quan hệ lâu dài H-11.",
+  "cross_stage_refs": [
+    "V5P-019",
+    "V5P-022",
+    "H-11"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

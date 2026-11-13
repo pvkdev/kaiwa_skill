@@ -1,0 +1,197 @@
+{
+  "stage_key": "T-60",
+  "uid": "403e8b4f-86c9-5424-8abc-af3da3665b5e",
+  "objective": "Giới thiệu sản phẩm theo nhu cầu khách và giải thích báo giá bằng lời.",
+  "knowledge_focus": [
+    "Hỏi cách khách sẽ dùng trước khi giới thiệu",
+    "Giải thích lợi ích và điều kiện giá",
+    "Nói rõ điều chưa thể hứa"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khám phá nhu cầu",
+      "roles": [
+        "nhân viên bán hàng",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Giới thiệu lựa chọn",
+      "roles": [
+        "nhân viên bán hàng",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giải thích giá",
+      "roles": [
+        "nhân viên bán hàng",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau lần giới thiệu",
+      "roles": [
+        "nhân viên bán hàng",
+        "khách hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi khách đang gặp khó gì với cách dùng hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên tưởng khách cần thêm tính năng, khách cần dễ vận hành",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi số người dùng và tần suất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Khách chưa biết số, dùng phạm vi dự kiến",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Giới thiệu hai mẫu theo nhu cầu đã nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi khách ưu tiên giá hay thời gian triển khai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách thấy một mẫu quá phức tạp, giới thiệu mẫu gọn",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Khách tưởng tính năng kèm sẵn, làm rõ tùy chọn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nêu giá gồm hạng mục nào và chưa gồm gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Giá đổi theo số lượng, hỏi con số khách muốn xem",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Khoản vận chuyển cần xác nhận, hẹn giờ báo",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Có khoản chính xác, đọc lại tổng và điều kiện",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi khách cần thêm điều gì trước khi quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Khách chưa mua, xin phép liên hệ sau",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Khách muốn xem demo, chốt người tham dự",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Gọi trước demo để xác nhận mục tiêu",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Trọng tâm giới thiệu và giá cơ bản; thương lượng điều kiện T-62/H-32.",
+  "cross_stage_refs": [
+    "T-62",
+    "H-32"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,177 @@
+{
+  "stage_key": "T-49",
+  "uid": "3411a12f-3071-5c8b-8f18-846661f36d5d",
+  "objective": "Bàn cách cân bằng công việc và đời sống với đồng nghiệp/quản lý, chỉnh lịch thực tế.",
+  "knowledge_focus": [
+    "nêu áp lực lịch cụ thể",
+    "xin ưu tiên",
+    "thỏa thuận ranh giới liên lạc",
+    "theo dõi điều chỉnh"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận ra lịch quá tải",
+      "roles": [
+        "người học",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trao đổi với quản lý",
+      "roles": [
+        "người học",
+        "quản lý"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Ranh giới liên lạc",
+      "roles": [
+        "người học",
+        "quản lý/đồng nghiệp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Kể hai việc đang va nhau, không chỉ nói “bận”",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đồng nghiệp tưởng mình từ chối giúp, giải thích ưu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi người khác có thể nhận phần việc nhỏ không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người kia không thể nhận, đề xuất đổi mốc",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Sau tuần thử, báo điều vẫn quá tải",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói khối lượng và giờ làm hiện tại bằng ví dụ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Xin chọn việc cần làm trước khi hết ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Quản lý thêm việc mới, hỏi việc nào lùi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa có quyết định, hẹn lúc xác nhận thứ tự",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Cập nhật khi mốc thay đổi ngoài dự kiến",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi việc nào thật sự cần liên lạc ngoài giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhóm quen gọi tối, đề nghị cách báo việc sáng sau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Có sự cố bất thường, xác nhận đầu mối trực",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Bị hiểu là không hợp tác, làm rõ phạm vi đã thống nhất",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau một thời gian, xem cách làm có phù hợp không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    }
+  ],
+  "coverage_note": "V5P-054 là tìm tư vấn sức khỏe tinh thần, V5P-096 nghỉ dài ngày.",
+  "cross_stage_refs": [
+    "V5P-054",
+    "V5P-096"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

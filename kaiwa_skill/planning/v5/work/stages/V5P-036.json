@@ -1,0 +1,252 @@
+{
+  "stage_key": "V5P-036",
+  "uid": "9929e9a7-fdaf-54de-8b3e-68310352dd58",
+  "objective": "Đăng ký/chuyển và sửa dịch vụ điện thoại, internet bằng cách xác nhận điều kiện, lịch và lỗi với đúng đầu mối.",
+  "knowledge_focus": [
+    "Nhu cầu dùng, gói, tổng phí, điều kiện chuyển",
+    "Mô tả triệu chứng, lúc bắt đầu, kết quả đã thử và theo sự cố"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn dịch vụ",
+      "roles": [
+        "người học",
+        "nhân viên nhà mạng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chuyển mạng hoặc chuyển nhà",
+      "roles": [
+        "người học",
+        "nhân viên nhà mạng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hẹn lắp và sử dụng",
+      "roles": [
+        "người học",
+        "kỹ thuật viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Gọi báo sự cố",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sự cố kéo dài hoặc khoản phí",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói lượng dùng dữ liệu và số người dùng internet nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi phí tháng gồm những khoản nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Giá ưu đãi chỉ áp một thời hạn, hỏi giá sau đó",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Gói đề nghị vượt ngân sách, xin loại đơn giản hơn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại gói, phí và điều kiện chính",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói muốn giữ số khi đổi mạng, hỏi bước cần trao đổi với quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi ngày có thể bắt đầu ở địa chỉ mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Cần kiểm hạ tầng, hẹn ngày trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhân viên ghi địa chỉ cũ là nơi lắp mới, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt ngày ngừng cũ và ngày bắt đầu mới",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xác nhận người tới lắp và giờ đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không thể đi dây theo chỗ đã dự tính, hỏi lựa chọn khác",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Cần được ban quản lý chấp thuận, xin đầu mối và thời gian",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chọn vị trí đặt thiết bị khác nếu dùng được",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Thử kết nối tại chỗ và hỏi khi lỗi trở lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói từ khi nào mạng chập chờn và thiết bị nào bị ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nêu các bước hỗ trợ đã yêu cầu mình thử mà vẫn lỗi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nhân viên nghĩ lỗi chỉ một điện thoại, làm rõ nhiều thiết bị",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Cần kiểm đường truyền, hỏi thời gian cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gọi lại khi không có cập nhật, nhắc mã/đầu mối đã trao đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói đã có lịch thợ nhưng chưa ai đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Thợ chỉ có ngày khác, hỏi cách dùng tạm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hóa đơn có phí không giống điều đã nghe, xin tách khoản",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Hai đầu mối trả lời khác nhau, nhờ xác nhận người chịu trách nhiệm trả lời",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt ngày sửa hoặc người liên hệ tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Viễn thông có dịch vụ và sự cố; S-38 chỉ cuộc gọi đặt dịch vụ ngắn, tiện ích điện/nước/gas V5P-017.",
+  "cross_stage_refs": [
+    "S-38",
+    "V5P-017"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

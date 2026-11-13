@@ -1,0 +1,227 @@
+{
+  "stage_key": "V5P-133",
+  "uid": "7cf689bb-5005-57ab-b0ff-3d6c2a25925d",
+  "objective": "Bàn phạm vi, lịch và thay đổi với khách của dự án cá nhân bằng lời rõ ràng.",
+  "knowledge_focus": [
+    "khai thác nhu cầu",
+    "định phạm vi và số vòng sửa",
+    "hỏi người duyệt",
+    "chốt khi phải lùi hoặc bàn giao"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nghe nhu cầu khách",
+      "roles": [
+        "người học",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bàn thời gian và thay đổi",
+      "roles": [
+        "người học",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giao phần việc và kết thúc",
+      "roles": [
+        "người học",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khách chưa rõ phần nào đã được chấp thuận",
+      "roles": [
+        "người học",
+        "khách hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi mục tiêu và kết quả khách muốn nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Yêu cầu mơ hồ, xin một ví dụ dùng thực tế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Khách tưởng mình nhận cả phần không có trong phạm vi, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa đủ thời gian, đề xuất giai đoạn nhỏ trước",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hỏi ai sẽ duyệt kết quả cuối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói mốc mình làm được cùng việc khách cần cung cấp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách đổi yêu cầu giữa chừng, hỏi ưu tiên mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Mốc cũ không giữ được, đề xuất hai lựa chọn",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Khách không nhận thay đổi mốc, bàn giảm phạm vi",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Xác nhận phần nào đã chốt và phần nào còn chờ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Trình bày phần đã hoàn thành bằng lời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Khách nêu lỗi, hỏi ví dụ và ảnh hưởng thực tế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chỉnh một vòng, xác nhận đã đáp ứng mục tiêu",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không thể tiếp tục phần mới, nói giới hạn và đầu mối khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau bàn giao, hỏi người nhận cần giải thích gì thêm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Khách yêu cầu thêm việc sau buổi bàn phạm vi, hỏi mục tiêu của phần mới",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Khách tưởng câu “để xem” là đồng ý làm, sửa trạng thái",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đề xuất làm phần mới ở giai đoạn sau hoặc đổi phần hiện có",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Trước khi bắt đầu, nhắc lại phần đã chốt và người duyệt",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Không khẳng định quyền nhận việc phụ hay điều kiện pháp lý; không viết hợp đồng.",
+  "cross_stage_refs": [
+    "V5P-084"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

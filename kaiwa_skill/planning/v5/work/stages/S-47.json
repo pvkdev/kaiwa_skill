@@ -1,0 +1,183 @@
+{
+  "stage_key": "S-47",
+  "uid": "a5628393-ffaa-59fd-9447-b86310deae6b",
+  "objective": "Giao lưu trong sự kiện công ty từ vai người tham gia: chào, hỏi và cảm ơn.",
+  "knowledge_focus": [
+    "Nhận lời mời và hỏi thông tin thiết yếu",
+    "Chọn lời chúc/cảm ơn theo dịp",
+    "Nói chuyện ngắn với người mới gặp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận lời mời sự kiện",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp mời"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gặp người trong sự kiện",
+      "roles": [
+        "nhân viên",
+        "người mới hoặc đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tham dự buổi theo mùa",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau sự kiện",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp tổ chức"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi sự kiện mừng người mới diễn ra ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Xác nhận sẽ đến và hỏi giờ",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không đến được, gửi lời chúc qua người mời",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ đến phần đầu, hỏi có được về sớm",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Chào nhân viên mới trong buổi歓迎会 và hỏi nhóm làm việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chúc đồng nghiệp chuyển nhóm ở送別会",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chúc mừng thành viên được thăng chức",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói cảm ơn nhóm sau buổi打ち上げ dự án",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Ở忘年会, cảm ơn sự giúp đỡ trong năm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Ở新年会, chúc năm mới và hỏi kế hoạch đầu năm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhầm tên người vừa giới thiệu, xin hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Từ chối rượu và chọn đồ không cồn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Cảm ơn người phụ trách đã chuẩn bị buổi gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hôm sau hỏi người mới đã quen đường tới nhóm chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Xin lỗi đã rời sớm và nhắc lời chúc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói lại một việc công việc đã hứa trao đổi tại tiệc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Sơ chỉ vai dự/người mới chào hỏi; dự tiệc Trung T-22, 幹事 V5P-118, MC H-46.",
+  "cross_stage_refs": [
+    "T-22",
+    "V5P-118",
+    "H-46"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

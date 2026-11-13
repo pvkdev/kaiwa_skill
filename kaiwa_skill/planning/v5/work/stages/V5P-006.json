@@ -1,0 +1,205 @@
+{
+  "stage_key": "V5P-006",
+  "uid": "58c1dc4c-c367-5a13-87fe-c525a16e98b9",
+  "objective": "Chọn và chỉnh kính ở cửa hàng bằng cách nêu nhu cầu nhìn, độ vừa và điều kiện sử dụng.",
+  "knowledge_focus": [
+    "Mô tả dùng kính khi nào, gọng vừa hay cấn",
+    "Hỏi đo/đặt/nhận và điều chỉnh sau mua"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nói nhu cầu kính",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng kính"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đo và đặt",
+      "roles": [
+        "người học",
+        "nhân viên đo kính"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhận và chỉnh",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng kính"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tìm đúng đầu mối",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng kính"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mình cần kính dùng khi làm việc gần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi hai loại gọng khác nhau ở điểm nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Thử gọng và nói chỗ chạm thái dương",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Gọng đẹp nhưng không hợp tròng cần dùng, hỏi lựa chọn khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chọn gọng phù hợp sau khi thử lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi quy trình đo tại cửa hàng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói kết quả hiện tại không thoải mái, xin kiểm lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Tròng phải đặt, hỏi ngày dự kiến nhận",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nghe nhầm giá gọng là giá cả kính",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhờ nói tổng chi phí trước khi đặt",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Thử kính mới tại quầy và nói điểm nhìn chưa rõ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói gọng trượt khi cúi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhân viên có thể chỉnh gọng nhưng cần thêm thời gian, hỏi lúc quay lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Thử sau chỉnh và xác nhận vừa hơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau vài ngày đeo bị cấn, gọi hẹn kiểm lại",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi khi nào nên hỏi bác sĩ thay vì chỉ chỉnh gọng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Cửa hàng không thể xử lý nhu cầu hiện tại, nhờ giới thiệu nơi phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hỏi giữ thông số mua trước để tham khảo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhân viên hiểu mình muốn thay tròng, đính chính chỉ muốn chỉnh gọng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt yêu cầu thật và bước kế tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Giao tiếp cửa hàng, không chẩn đoán thị lực hoặc tư vấn y tế.",
+  "cross_stage_refs": [
+    "V5P-049"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

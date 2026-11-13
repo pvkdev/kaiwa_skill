@@ -1,0 +1,252 @@
+{
+  "stage_key": "T-32",
+  "uid": "3584bc51-f034-55e2-9b0c-8ffc086a0108",
+  "objective": "Trao đổi mong muốn và ranh giới trong quan hệ hẹn hò đang phát triển, xử lý lệch kỳ vọng tôn trọng nhau.",
+  "knowledge_focus": [
+    "Nói điều mình muốn/không muốn và nghe mong muốn đối diện",
+    "Sửa hiểu nhầm, thương lượng thời gian riêng và thay đổi kế hoạch"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tiếp tục sau vài lần gặp",
+      "roles": [
+        "người học",
+        "người đang hẹn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói kỳ vọng liên lạc",
+      "roles": [
+        "người học",
+        "người đang hẹn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giới hạn cá nhân",
+      "roles": [
+        "người học",
+        "người đang hẹn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Lệch kỳ vọng",
+      "roles": [
+        "người học",
+        "người đang hẹn"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Đổi hoặc kết thúc quan hệ",
+      "roles": [
+        "người học",
+        "người đang hẹn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhắc điều hai người đã thích ở lần trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đề nghị một hoạt động mới phù hợp cả hai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia chỉ rảnh buổi sáng, đổi kiểu hẹn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người kia không muốn hoạt động đó, hỏi gợi ý họ thích",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt kế hoạch theo hai ý kiến",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói mình thích nhắn/gọi với tần suất nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi người kia muốn được báo khi bận không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Im lặng một ngày bị hiểu là giận, giải thích bối cảnh",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hai người có nhịp khác, chốt cách báo ngắn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Sau một tuần hỏi cách mới có thoải mái không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói mình chưa muốn giới thiệu gia đình lúc này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi trước khi đăng ảnh chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người kia không đồng ý đăng, tôn trọng và không đăng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Một lời mời gặp bạn bè bị hiểu là cam kết lớn, làm rõ mục đích",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại điều mỗi bên đã đồng ý",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nêu một việc khiến mình thấy bị bỏ qua mà không quy kết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nghe lý do người kia trước khi đáp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người kia có thể thay đổi một phần, nói phần nào đủ cho mình",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Hai người chưa thống nhất, đề nghị tạm dừng và nói lại",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Quay lại chủ đề đã hẹn khi hai người bình tĩnh",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói mình cần nhiều thời gian riêng hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Người kia muốn tiếp tục với nhịp khác, bàn khả năng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Không muốn tiếp tục hẹn hò, nói rõ và tôn trọng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Người kia hiểu khác về quyết định, nhắc lại một cách nhất quán",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Thống nhất cách xử lý cuộc hẹn chung đã có",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "Tình cảm Trung, không thao túng hoặc thúc ép đồng thuận. Buổi đầu S-49, bất đồng sâu H-28.",
+  "cross_stage_refs": [
+    "S-49",
+    "H-28"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

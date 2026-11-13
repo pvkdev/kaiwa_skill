@@ -1,0 +1,192 @@
+{
+  "stage_key": "T-37",
+  "uid": "2adb4a1e-7cef-5fca-9232-50e8c42421a9",
+  "objective": "Nhận biết quá tải, nói rõ phần việc cần giúp và chủ động hỗ trợ đồng nghiệp.",
+  "knowledge_focus": [
+    "Nêu khối lượng, hạn và hậu quả cụ thể",
+    "Xin giúp một phần xác định",
+    "Đáp lời giúp mà không nhận quá khả năng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin chia việc",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhờ đồng nghiệp",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đề nghị giúp người khác",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau khi chia lại việc",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói hai hạn trùng nhau và xin chọn ưu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Leader chuyển một phần việc cho người khác",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Leader giữ cả hai nhưng dời một hạn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa có người hỗ trợ, hỏi mức tối thiểu cần giao",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nhờ kiểm một bảng trước cuối ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đồng nghiệp chỉ xem được vài mục, chốt mục quan trọng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Không nhận được, cảm ơn và báo lại leader",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhận góp ý, nói mình sẽ sửa và ai nộp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Thấy đồng nghiệp ôm nhiều việc, hỏi phần nào có thể nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nhận một phần, xác nhận tiêu chí",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chỉ giúp được tới ba giờ, nêu giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Việc nhận thêm vượt dự kiến, báo sớm và xin phân lại",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Báo phần đã chuyển và phần mình giữ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hai người cùng tưởng người kia nộp, xác nhận một owner",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Kiểm đúng hạn và cảm ơn người hỗ trợ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Không xem quá tải chỉ là vấn đề cá nhân; điều phối nhiều bộ phận V5P-099.",
+  "cross_stage_refs": [
+    "V5P-099"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

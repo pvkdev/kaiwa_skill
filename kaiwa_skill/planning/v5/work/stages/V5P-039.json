@@ -1,0 +1,202 @@
+{
+  "stage_key": "V5P-039",
+  "uid": "c4b05d53-04a9-5a73-8a3e-81570735f0ef",
+  "objective": "Trao đổi hủy dịch vụ định kỳ, hỏi phí phát sinh và trình bày việc với quầy tư vấn tiêu dùng.",
+  "knowledge_focus": [
+    "nói mốc thử và hủy",
+    "xin giải thích điều kiện",
+    "phân biệt yêu cầu và cam kết",
+    "chuyển tóm tắt cho đầu mối tư vấn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hỏi khoản phí bất ngờ",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Yêu cầu hủy",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Xin tư vấn bên ngoài",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn tiêu dùng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Theo dõi kết quả",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ hoặc tư vấn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói khoản thu sau thời gian dùng thử và hỏi thuộc kỳ nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên nêu điều kiện, xin nhắc bằng ví dụ cụ thể",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Phí đã xuất hiện hai lần, nói mốc từng khoản",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa tra ra, hỏi thời điểm có câu trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói mốc mình từng xin hủy và điều đã được báo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đơn vị đồng ý dừng kỳ tới, xác nhận kỳ hiện tại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đơn vị từ chối hủy ngay, hỏi lý do và lựa chọn",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Thông tin cuộc trước không có trong hệ thống, xin tra lại",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Tóm tắt dịch vụ, mốc đăng ký/hủy và khoản đang tranh luận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nhân viên hỏi giấy chứng minh, nói mình có gì và thiếu gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Vấn đề thuộc nơi khác, hỏi tên/giờ đầu mối phù hợp",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không hiểu lời khuyên, nhắc lại việc mình cần làm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Gọi lại sau thời điểm đơn vị hẹn trả lời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chỉ một khoản được giải thích, hỏi khoản còn lại",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nhận phương án khác, nói cần thời gian cân nhắc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Xác nhận việc hủy đã ghi nhận và cách kiểm kỳ sau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Không hứa hoàn phí, không dạy viết đơn khiếu nại.",
+  "cross_stage_refs": [
+    "V5P-035"
+  ],
+  "source_refs": [
+    "W15"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

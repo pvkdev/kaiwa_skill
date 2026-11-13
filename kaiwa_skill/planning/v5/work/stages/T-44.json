@@ -1,0 +1,148 @@
+{
+  "stage_key": "T-44",
+  "uid": "45025d05-2f3f-5650-a2ed-57429d79f89d",
+  "objective": "Hỏi và xử lý khác biệt trong quy định/văn hóa công ty bằng cuộc nói cụ thể.",
+  "knowledge_focus": [
+    "Tránh quy mọi công ty một chuẩn",
+    "Hỏi lý do/ngoại lệ đúng người",
+    "Nói khi quy tắc xung đột nhu cầu thực tế"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm hiểu quy tắc nội bộ",
+      "roles": [
+        "nhân viên mới",
+        "mentor"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tập quán làm việc và cách gọi",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khi quy định gây vướng",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi cách đặt lịch phòng và ai duyệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tưởng quy tắc cũ vẫn dùng, hỏi phiên bản hiện tại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi khi nào cần báo người quản lý trước khi liên hệ khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ vài loại khách cần duyệt, xác nhận loại mình gặp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi cách xưng hô trong nhóm có người từ nhiều bộ phận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói mình chưa hiểu một câu ngầm ý trong họp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Sau khi hiểu, kiểm lại hành động cần làm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi sự kiện công ty có tự nguyện và hỏi ai tổ chức",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói quy tắc yêu cầu báo trước nhưng khách gọi gấp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Leader kiểm ngoại lệ, hẹn trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Leader chỉ đầu mối trực có thể duyệt",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau lần xử lý, xác nhận cách báo cho lần tới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Nói để hiểu quy tắc nơi mình làm, không dạy văn hóa Nhật như mệnh lệnh phổ quát.",
+  "cross_stage_refs": [
+    "S-10"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

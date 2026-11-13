@@ -1,0 +1,217 @@
+{
+  "stage_key": "H-07",
+  "uid": "b0720164-c051-531a-ad48-5231da4563ea",
+  "objective": "Phỏng vấn để lấy thông tin nghề nghiệp/câu chuyện công việc bằng câu hỏi mở và làm rõ.",
+  "knowledge_focus": [
+    "Xin mục đích/phạm vi nói trước",
+    "Hỏi ví dụ thay cho suy đoán",
+    "Tóm tắt để người kể sửa",
+    "Tôn trọng điều người kể không muốn công khai"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở cuộc phỏng vấn thông tin",
+      "roles": [
+        "người hỏi",
+        "người có kinh nghiệm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khai thác công việc thực tế",
+      "roles": [
+        "người hỏi",
+        "người được hỏi"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chặng chuyển nghề",
+      "roles": [
+        "người hỏi",
+        "người được hỏi"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tóm tắt và kiểm",
+      "roles": [
+        "người hỏi",
+        "người được hỏi"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau cuộc phỏng vấn",
+      "roles": [
+        "người hỏi",
+        "người được hỏi"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói vì sao muốn hỏi về nghề họ đang làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi họ có bao nhiêu thời gian",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Họ chỉ nói về việc chung, không về công ty cụ thể",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi điều gì khiến họ chọn hướng nghề",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi một ngày làm việc tiêu biểu diễn ra thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi ví dụ về tình huống khó gần đây",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Tưởng họ tự quyết toàn bộ, hỏi lại phần cần sếp duyệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi kỹ năng nào mới vào dễ thiếu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi điều gì từ nghề cũ vẫn dùng được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Người kể không muốn nói lý do nghỉ, chuyển sang kỹ năng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi lúc bắt đầu nghề mới họ tìm ai giúp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau khi nghe, hỏi tài nguyên/cơ hội quan sát",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói lại hai điểm mình hiểu từ câu chuyện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Người kể sửa một chi tiết, ghi nhận bằng lời",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi phần nào được phép kể cho người khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Không được chia sẻ, xác nhận giữ riêng",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Cảm ơn và nói một điều hữu ích cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Sau khi thử lời khuyên, báo điều đã học",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hỏi có thể hỏi thêm một điểm sau này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "H-07 không phải phỏng vấn tuyển dụng; V5P-109 là người tuyển đánh giá ứng viên.",
+  "cross_stage_refs": [
+    "V5P-109"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

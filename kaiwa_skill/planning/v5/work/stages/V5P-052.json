@@ -1,0 +1,238 @@
+{
+  "stage_key": "V5P-052",
+  "uid": "7fa1589a-bb87-50dd-9236-c884f0084c29",
+  "objective": "Đi qua các cuộc trao đổi trước, trong và sau nằm viện với nhân viên và người nhà.",
+  "knowledge_focus": [
+    "nêu người liên hệ",
+    "xin giải thích trước quyết định",
+    "báo nhu cầu khi nằm viện",
+    "phối hợp ngày ra viện"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trước nhập viện",
+      "roles": [
+        "người học",
+        "nhân viên bệnh viện"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trong viện",
+      "roles": [
+        "người học",
+        "y tá/bác sĩ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Ra viện và theo dõi",
+      "roles": [
+        "người học",
+        "nhân viên bệnh viện/người nhà"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Người nhà và bệnh viện phối hợp không khớp",
+      "roles": [
+        "người học",
+        "điều phối viên/y tá/người nhà"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xác nhận ngày/giờ và nơi tiếp nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói người nhà có thể liên hệ khi cần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hướng dẫn chuẩn bị chưa rõ, xin nhắc từng phần",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Ngày nhập viện đổi, gọi cập nhật người đón",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Không có người đi cùng, hỏi hỗ trợ phù hợp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Báo khó chịu mới xuất hiện cho nhân viên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhờ làm rõ mục đích một bước điều trị trước khi quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chưa sẵn sàng đồng ý, xin thời gian nói với chuyên viên",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người nhà hiểu sai lịch thăm, nhờ nhân viên xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Có nhu cầu ngôn ngữ/sinh hoạt, hỏi người phụ trách",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi ngày ra viện dự kiến và điều kiện còn chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Ngày thay đổi, gọi người đón và nơi làm",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hỏi cuộc hẹn tái khám và ai cần liên hệ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhu cầu ở nhà chưa sắp được, xin đầu mối hỗ trợ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Trước khi rời, nhắc lại kế hoạch và cách liên lạc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Người nhà được báo ngày ra viện khác người bệnh, xin bệnh viện xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người đón không đến được giờ mới, xin phương án được nhân viên cho phép",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hỗ trợ tại nhà chưa sắp xong, hỏi đầu mối điều phối trước khi ra",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Đơn vị hỗ trợ chỉ tới từ ngày sau, nói rõ khoảng thời gian thiếu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Sau khi các bên chốt, nhắc lịch đón, thuốc và lần gặp tiếp với chuyên viên",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Không cho AI quyết điều trị; chăm sóc ở nhà V5P-072 khác phạm vi.",
+  "cross_stage_refs": [
+    "T-63",
+    "V5P-072"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

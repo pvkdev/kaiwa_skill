@@ -1,0 +1,291 @@
+{
+  "stage_key": "T-69",
+  "uid": "4822bf91-d75a-5732-9a4b-a4ae131f8d7a",
+  "objective": "Phục vụ khách ở nhà hàng từ đón, hỏi món, điều chỉnh, thanh toán tới xử lý phản hồi.",
+  "knowledge_focus": [
+    "Nói theo vai nhân viên mà không đoán nhu cầu",
+    "Xác nhận món, số lượng, thành phần và thứ tự ra",
+    "Xin quản lý khi vượt thẩm quyền"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đón và xếp chỗ",
+      "roles": [
+        "nhân viên nhà hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhận món",
+      "roles": [
+        "nhân viên nhà hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Món hết hoặc thay đổi",
+      "roles": [
+        "nhân viên nhà hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Phục vụ đang diễn ra",
+      "roles": [
+        "nhân viên nhà hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Thanh toán và sau bữa",
+      "roles": [
+        "nhân viên nhà hàng",
+        "khách"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Khách không hài lòng",
+      "roles": [
+        "nhân viên nhà hàng",
+        "khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi số người và có đặt trước không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Có bàn, xác nhận khu ngồi",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hết bàn, hỏi khách có chờ được không",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ còn bàn theo thời hạn, giải thích trước khi khách nhận",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi món chính và đồ uống từng người",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhầm số suất, đọc lại toàn bộ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi mức cay hoặc thành phần khách cần tránh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Cần hỏi bếp về thành phần, hẹn trả lời trước khi gọi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo món khách muốn đã hết và đưa hai lựa chọn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách chọn món thay, nhắc lại giá/giờ",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Khách không chọn được, xin thêm thời gian",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Khách đổi món sau khi bếp bắt đầu, kiểm khả năng đổi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi món có đúng yêu cầu không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Món đến sai hoặc thiếu, xin lỗi và xác nhận món đúng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Mang món đúng, kiểm khách còn cần gì",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi khách có muốn ra món tiếp theo bây giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Hỏi khách muốn thanh toán chung hay riêng nếu quán hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách tưởng đã tính đồ uống, giải thích hóa đơn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Khách báo tính nhầm, gọi quản lý đối chiếu",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Có tổng đúng, nói lại số tiền",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Khách để quên đồ, hỏi mô tả và báo đầu mối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Nghe phản hồi món chậm và hỏi khách có mốc rời không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Có thể ưu tiên một món, xác nhận khách đồng ý",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Khách muốn hủy, xin quản lý quyết và báo lại",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E06",
+      "title": "Quản lý đến, nhân viên tóm tắt chính xác sự việc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Vai nhân viên nhà hàng; khách gọi đặt bàn qua điện thoại T-17, phục vụ cao cấp H-25.",
+  "cross_stage_refs": [
+    "T-17",
+    "H-25"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

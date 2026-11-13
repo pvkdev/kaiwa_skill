@@ -1,0 +1,255 @@
+{
+  "stage_key": "T-38",
+  "uid": "b7a9f04a-07e2-5c87-8e25-bf9ddd384dfd",
+  "objective": "Nêu ý kiến và thuyết phục nhẹ về lựa chọn chung bằng cách nghe ưu tiên của người kia.",
+  "knowledge_focus": [
+    "Tách dữ kiện, sở thích và suy đoán",
+    "Nêu lý do/đánh đổi, kiểm sự đồng thuận và đổi phương án"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Làm rõ quyết định chung",
+      "roles": [
+        "người học",
+        "bạn hoặc người cùng nhà"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đề xuất có lý do",
+      "roles": [
+        "người học",
+        "bạn hoặc người cùng nhà"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khi thông tin chưa chắc",
+      "roles": [
+        "người học",
+        "người cùng quyết"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thuyết phục không ép",
+      "roles": [
+        "người học",
+        "người có ý khác"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau quyết định",
+      "roles": [
+        "người học",
+        "người cùng thực hiện"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi điều người kia ưu tiên trước khi đề xuất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mình muốn chọn nơi gần vì cần về sớm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi họ lo chi phí hay thời gian hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hai người đang so hai ngày khác nhau, xác nhận lựa chọn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt tiêu chí cần dùng để so",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đề nghị chọn phương án A vì một lợi ích cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nêu một bất tiện của chính phương án mình đề nghị",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia đồng ý nếu giảm chi phí, tìm cách điều chỉnh",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia không thích A, hỏi điều chưa hợp",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Đề xuất B đáp đúng lo ngại vừa nghe",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói điều mình biết chắc và điều chỉ nghe kể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi nguồn/đầu mối xác minh một điều ảnh hưởng quyết định",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chưa có giá cuối, hẹn quyết sau khi hỏi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Báo giá đã kiểm rồi mời người kia chọn lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Quyết định với thông tin đã rõ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Tóm tắt lý do người kia thích phương án khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi có điều kiện nào khiến họ thấy ổn hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Họ vẫn không muốn, ngừng gây sức ép",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Họ muốn thử một lần rồi đánh giá, chốt phạm vi thử",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chấp nhận quyết định chung và chia việc tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Kiểm ai làm việc nào sau khi thống nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Điều kiện bên ngoài đổi, báo sớm tác động tới lựa chọn",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Mời xét lại với ưu tiên mới",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Người kia nghĩ quyết định chưa chốt, nói rõ điểm đã thống nhất",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt lại kế hoạch mới và lần kiểm sau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "Thuyết phục nhẹ trong quyết định thường ngày; khác biệt giá trị sâu H-28.",
+  "cross_stage_refs": [
+    "S-53",
+    "H-28"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

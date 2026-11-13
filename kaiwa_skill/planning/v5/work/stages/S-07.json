@@ -1,0 +1,161 @@
+{
+  "stage_key": "S-07",
+  "uid": "1898f652-0310-5555-af05-963595fbf83b",
+  "objective": "Tìm phòng thuê cơ bản, nêu điều kiện thiết yếu và chốt bước xem phòng với người môi giới.",
+  "knowledge_focus": [
+    "Cách nêu ngân sách, vị trí, nhu cầu sống",
+    "Hỏi rõ điều kiện và thời gian xem mà không giả định đã ký thuê"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nói nhu cầu nhà",
+      "roles": [
+        "người học",
+        "nhân viên môi giới"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Sắp xếp xem phòng",
+      "roles": [
+        "người học",
+        "nhân viên môi giới"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sau khi xem",
+      "roles": [
+        "người học",
+        "nhân viên môi giới"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói khu vực và mức thuê mong muốn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nêu muốn ở một mình hay cùng gia đình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi có phòng gần tuyến đi hằng ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không có phòng đúng ngân sách, hỏi lựa chọn xa ga hơn",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Phòng có điều kiện không phù hợp, từ chối xem",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi căn còn xem được không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chốt ngày và điểm gặp để xem",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chủ nhà chưa xác nhận giờ, hỏi lúc nào sẽ biết",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Gọi lại khi chưa nhận tin về lịch xem",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Đến nơi nhưng căn dự định không xem được, hỏi căn khác",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi chi phí ngoài tiền thuê đã nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói điểm thích và điểm cần nghĩ thêm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hiểu nhầm phí hàng tháng là phí một lần",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhờ tách rõ khoản trả một lần và hằng tháng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Xin thời gian cân nhắc và hẹn ngày phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Sơ lo tìm và xem cơ bản. Điều kiện thuê, bảo lãnh/gia hạn ở T-01; tranh chấp ở H-10; chuyển nhà ở V5P-020.",
+  "cross_stage_refs": [
+    "T-01",
+    "H-10",
+    "V5P-020"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

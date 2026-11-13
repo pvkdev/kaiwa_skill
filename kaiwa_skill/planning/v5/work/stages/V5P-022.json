@@ -1,0 +1,255 @@
+{
+  "stage_key": "V5P-022",
+  "uid": "5233493d-b3ac-5039-ae0f-ba13ffbd5019",
+  "objective": "Trao đổi với ban quản lý tòa nhà về lịch vào nhà, tiện ích chung, thông báo vận hành và bất tiện cư dân.",
+  "knowledge_focus": [
+    "Hỏi người phụ trách đúng việc, xác minh người đến",
+    "Nêu ảnh hưởng của việc chung, nghe giới hạn, theo cập nhật"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hiểu thông báo tòa nhà",
+      "roles": [
+        "người học",
+        "nhân viên ban quản lý"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hẹn người vào phòng",
+      "roles": [
+        "người học",
+        "ban quản lý"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tiện ích chung",
+      "roles": [
+        "người học",
+        "ban quản lý"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bất tiện từ công trình",
+      "roles": [
+        "người học",
+        "ban quản lý"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Phối hợp nhiều cư dân",
+      "roles": [
+        "người học",
+        "hàng xóm hoặc ban quản lý"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi thông báo kiểm tra áp phòng mình hay cả tầng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ngày nào lối ra bị đóng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đọc nhầm giờ bắt đầu và giờ kết thúc, nhờ nói lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ một thang máy hoạt động, hỏi lối cho người mang đồ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại ảnh hưởng và nơi xem cập nhật",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi người kiểm tra thuộc đơn vị nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói không thể có mặt giờ đã ấn định",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đề nghị khung khác hoặc người đại diện theo quy định",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Ban quản lý cần hỏi kỹ thuật viên, chốt lúc trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gọi lại xác nhận lịch và tên người đến",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo cửa khu để xe không mở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi khu gửi rác tạm thời khi chỗ cũ đóng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chỗ thay thế chỉ dùng đến ngày cụ thể, nhắc lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Tiện ích vẫn đóng sau giờ được báo, hỏi cập nhật",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Được chỉ nơi sử dụng tạm và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nêu khung giờ tiếng ồn ảnh hưởng sinh hoạt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi công trình dự kiến kéo dài bao lâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chưa đổi được giờ làm, hỏi cách báo cập nhật",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Tiếng ồn ngoài khung đã thông báo, cung cấp thời gian quan sát",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Hỏi ban quản lý đã chuyển thông tin cho đơn vị thi công chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi hàng xóm có nhận cùng thông báo không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hai người nhận thông tin giờ khác nhau, cùng xác minh với quản lý",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Đề nghị ban quản lý giải thích chung tại quầy",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Thống nhất ai sẽ báo lại cho nhóm sau khi nghe",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Quay lại nói rõ điều đã được xác nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Quản lý việc chung; hỏng trong phòng V5P-018, tranh chấp H-10, hội tự trị H-55.",
+  "cross_stage_refs": [
+    "V5P-018",
+    "H-10",
+    "H-55"
+  ],
+  "source_refs": [
+    "DW01"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

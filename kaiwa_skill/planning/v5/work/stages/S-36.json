@@ -1,0 +1,209 @@
+{
+  "stage_key": "S-36",
+  "uid": "f8b20d5f-a6b0-5e77-a582-2d12837969ee",
+  "objective": "Gọi điện ngắn cho bạn, thầy cô hoặc nơi đặt chỗ và xác nhận người nghe, thời điểm, việc tiếp theo.",
+  "knowledge_focus": [
+    "Mở đầu và kiểm đúng người qua điện thoại",
+    "Nói lý do gọi ngắn, nhắc lại giờ/địa điểm và kết thúc"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gọi bạn/người quen",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gọi thầy cô/người lớn tuổi",
+      "roles": [
+        "người học",
+        "thầy cô"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đặt chỗ đơn giản",
+      "roles": [
+        "người học",
+        "nhân viên nhận đặt"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Báo thay đổi ngắn",
+      "roles": [
+        "người học",
+        "người nhận cuộc gọi"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Mở lời và hỏi bạn có tiện nghe không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói lý do gọi về buổi hẹn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nghe nhầm tên người bắt máy, xác nhận lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bạn đang bận, hẹn giờ gọi lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Gọi lại đúng giờ đã hẹn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Giới thiệu tên và nói xin lỗi vì gọi hơi muộn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi người cần gặp có tiện không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người nhà nói thầy cô chưa có, nhờ nhắn mình sẽ gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Gọi lại và nhắc lời nhắn trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nói xong việc, cảm ơn và đợi người kia cúp trước",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi còn chỗ cho hai người lúc bảy giờ không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Chỉ còn giờ khác, chọn hoặc không chọn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhân viên nghe thành ba người, sửa số",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đọc lại ngày, giờ, số người và tên",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Không còn chỗ, cảm ơn và kết thúc",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo sẽ đến muộn mười phút",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi có cần đổi giờ đặt không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Quá giờ giữ chỗ, hỏi lựa chọn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chốt giờ mới và tên đặt chỗ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Đến nơi nhắc đã gọi báo muộn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Điện thoại nền. T-11/13 xử lý chuỗi đời sống/đặt hàng dài hơn.",
+  "cross_stage_refs": [
+    "T-11",
+    "T-13"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

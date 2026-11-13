@@ -1,0 +1,204 @@
+{
+  "stage_key": "S-44",
+  "uid": "bb024da0-3d41-5b59-83d6-86494fa81214",
+  "objective": "Tìm đúng quầy, nêu một việc hành chính và nghe lại bước tiếp bằng tiếng Nhật đơn giản.",
+  "knowledge_focus": [
+    "nêu mục đích đến quầy",
+    "hỏi nơi phụ trách và thời gian",
+    "xin nói chậm hoặc giải thích lại",
+    "nhắc lại vật cần mang"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Vào cơ quan lần đầu",
+      "roles": [
+        "người học",
+        "nhân viên hướng dẫn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nêu yêu cầu đơn giản",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nghe hướng dẫn",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhờ hỗ trợ ngôn ngữ",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mình cần hỏi về địa chỉ nhưng chưa biết quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên chỉ quầy khác tầng, xác nhận đường đi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đến nhầm giờ tiếp nhận, hỏi khi nào quay lại",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Xin nói chậm vì không hiểu tên quầy",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói cần một giấy xác nhận và hỏi quầy này có làm không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Quầy nhận việc, hỏi giấy cần xuất trình",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Quầy không phụ trách, nhờ chỉ đúng bộ phận",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chưa biết tên giấy, giải thích mục đích dùng để được gợi ý",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi cần mang thứ gì vào lần gặp tiếp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hỏi lại một từ trong hướng dẫn, xin cách nói dễ hơn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Thiếu giấy, xác nhận có thể quay lại hôm khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhắc lại giờ và quầy trước khi rời đi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi nơi có người hỗ trợ tiếng Việt hoặc tiếng Nhật dễ hiểu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Không có người hỗ trợ ngay, hỏi lịch có thể hẹn",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Gọi trước để xác nhận buổi hẹn có đúng đầu mối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Đến lại và nói ngắn việc lần trước đang dở",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Nền Sơ về định tuyến; đổi địa chỉ, sai thông tin và nhiều bước ở V5P-025.",
+  "cross_stage_refs": [
+    "V5P-025",
+    "V5P-073"
+  ],
+  "source_refs": [
+    "W01",
+    "W04"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

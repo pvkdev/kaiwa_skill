@@ -1,0 +1,298 @@
+{
+  "stage_key": "T-70",
+  "uid": "1f061c4c-9c47-5561-866e-f48c6db98b47",
+  "objective": "Gọi món với điều kiện ăn uống rõ, xử lý món sai hoặc không phù hợp và phàn nàn ở mức cụ thể.",
+  "knowledge_focus": [
+    "Hỏi thành phần/khả năng điều chỉnh thay vì đoán",
+    "Phân biệt món sai, khẩu vị không hợp, giới hạn phục vụ; chốt bước sửa"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trước khi chọn quán",
+      "roles": [
+        "người học",
+        "bạn đi cùng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi nhân viên về món",
+      "roles": [
+        "người học",
+        "nhân viên phục vụ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đặt món cho nhóm",
+      "roles": [
+        "người học",
+        "nhân viên phục vụ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Món đến bàn khác dự kiến",
+      "roles": [
+        "người học",
+        "nhân viên phục vụ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Phàn nàn về phục vụ",
+      "roles": [
+        "người học",
+        "nhân viên quản lý"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Thanh toán/sau bữa",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói trong nhóm có người cần tránh thành phần cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi bạn muốn gọi quán trước hay hỏi tại cửa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bạn chỉ có ít thời gian, chọn quán có thể trả lời rõ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Quán đầu không đáp ứng, thống nhất quán khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt ai sẽ hỏi và hỏi điều gì",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi thành phần trong nước dùng/chế biến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói rõ thành phần không dùng được và hỏi món phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên cần hỏi bếp, hẹn lúc trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Bếp không thể đảm bảo điều kiện, nói sẽ chọn quán khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại món được xác nhận phù hợp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nêu món của từng người khi có yêu cầu khác nhau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhân viên gắn yêu cầu không cay cho nhầm người, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không thể bỏ một thành phần khỏi món, chọn món khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhờ nhắc lại toàn đơn trước khi bếp làm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Người đến muộn muốn thêm món, hỏi có kịp không",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói món trên bàn không phải món đã gọi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Thành phần cần tránh xuất hiện trong món, yêu cầu ngừng dùng và kiểm với bếp",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Quán đề nghị làm lại hoặc món khác, chọn theo thời gian còn",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Bếp chưa biết mất bao lâu, hỏi mốc cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhận món đúng, kiểm lại yêu cầu và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nêu thời gian đã đợi và điều đã hỏi trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nhân viên nghĩ muốn giảm giá, làm rõ muốn biết món còn tới không",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Quán cần thêm thời gian, quyết định đợi hay hủy món",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Không chấp nhận phương án chưa giải quyết nhu cầu, xin người phụ trách",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt món còn làm và phần nào không tính",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Hỏi món bị hủy có còn trên hóa đơn không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Khoản trên hóa đơn không khớp điều đã chốt, nói rõ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Cùng kiểm và thanh toán số đã giải thích",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Gọi quán về vấn đề phát hiện sau khi về, kể giao dịch trước",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Nói với bạn cảm nhận bữa ăn mà không biến thành phàn nàn quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Nhà hàng sâu, không biến thành tư vấn y tế ăn kiêng. S-18 căn bản, H-13 tranh chấp dịch vụ kéo dài.",
+  "cross_stage_refs": [
+    "S-18",
+    "H-13"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

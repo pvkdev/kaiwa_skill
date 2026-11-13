@@ -1,0 +1,248 @@
+{
+  "stage_key": "V5P-038",
+  "uid": "42eefb91-eeca-5edf-8dcb-7b612a4f88c6",
+  "objective": "Gặp trực tiếp để mua, bán hoặc trao lại đồ cá nhân, kiểm món và bàn giao an toàn rõ ràng.",
+  "knowledge_focus": [
+    "Hẹn nơi/giờ công cộng và xác nhận món/người",
+    "Mô tả tình trạng thật, thử tại chỗ, đổi ý hoặc kết thúc giao dịch"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Sắp gặp trực tiếp",
+      "roles": [
+        "người học",
+        "người mua hoặc bán"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Kiểm và mô tả món",
+      "roles": [
+        "người học",
+        "người đối diện"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Quyết định giao dịch",
+      "roles": [
+        "người học",
+        "người đối diện"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trao đồ không bán",
+      "roles": [
+        "người học",
+        "người nhận đồ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau buổi gặp",
+      "roles": [
+        "người học",
+        "người đã trao đồ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói món nào muốn xem và hỏi còn không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hẹn điểm dễ nhận ở nơi công cộng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia chỉ có khung ngắn, hỏi đủ thời gian thử không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Điểm gặp không phù hợp, đề nghị nơi khác hoặc không gặp",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại món, giá đã nói, giờ và điểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nêu vết xước đã biết trước khi người mua thử",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi còn phụ kiện đi cùng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Một bên tưởng phụ kiện nằm trong giá, nhắc lại phạm vi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Thử tại chỗ thấy chức năng không hoạt động",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Giảm phạm vi mua hoặc dừng giao dịch",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói cần nghĩ lại sau khi thấy món thật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không mua vì tình trạng khác dự kiến, khép lại lịch sự",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chỉ nhận nếu có đủ phụ kiện, để người bán quyết",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Hai bên đồng ý món/giá, kiểm tiền và đồ cùng lúc",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt đã bàn giao xong, không còn món đi kèm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói món tặng lại còn dùng được nhưng có hạn chế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi người nhận có thực sự cần không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người kia không nhận, giữ đồ và tìm cách khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Người kia nhận sau khi có chỗ để, hẹn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gặp lại và kiểm đúng món cần bàn giao",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Phát hiện để quên một phụ kiện của mình, gọi hỏi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Người mua nói món khác điều đã mô tả, hỏi cụ thể điểm khác",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Cần kiểm lại thông tin đã nói, hẹn thời gian phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Hai bên thống nhất cách trả phụ kiện hoặc kiểm món",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Không thể gặp lại, hỏi lựa chọn trao qua đầu mối phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Chỉ cuộc nói trực tiếp, không bài viết tin marketplace. Recycle shop V5P-004 có vai cửa hàng.",
+  "cross_stage_refs": [
+    "V5P-004"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

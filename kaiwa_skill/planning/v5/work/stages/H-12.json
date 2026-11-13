@@ -1,0 +1,306 @@
+{
+  "stage_key": "H-12",
+  "uid": "26cd5e21-056f-5386-8eb8-443696b9ac2c",
+  "objective": "Chăm sóc thú cưng qua cuộc nói với bác sĩ thú y, dịch vụ và khu phố, theo dõi kết quả và trách nhiệm với người khác.",
+  "knowledge_focus": [
+    "Mô tả triệu chứng/hành vi để xin chuyên môn; không tự chẩn đoán",
+    "Hỏi dịch vụ, quy tắc nơi ở, phối hợp khi ảnh hưởng hàng xóm"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuẩn bị nuôi ở nơi ở",
+      "roles": [
+        "người học",
+        "người quản lý nhà"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khám thú y",
+      "roles": [
+        "người học",
+        "bác sĩ thú y"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sau khám và chăm sóc",
+      "roles": [
+        "người học",
+        "bác sĩ thú y"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Dịch vụ trông/chăm sóc",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Bàn giao rồi phát sinh",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Quan hệ khu phố",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi hợp đồng/nội quy cho nuôi loại thú này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói kích thước và số lượng trước khi quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ được nuôi theo giới hạn cụ thể, nhắc lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không được nuôi, không tìm cách lách",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt nơi nào có thể hỏi thêm về quy định",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Kể từ khi nào thú ăn ít và có hành vi khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nêu thức ăn/thuốc đã được dùng theo chỉ dẫn trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bác sĩ hiểu nhầm triệu chứng của thú khác trong nhà, làm rõ con nào",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Cần kiểm thêm, hỏi khi nào có kết quả",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại dấu hiệu nào cần báo lại theo bác sĩ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi cách cho thuốc đã được kê bằng lời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Thú không chịu ăn hoặc uống sau buổi khám, gọi hỏi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Bác sĩ muốn tái khám, hỏi ngày và lý do",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đến tái khám, kể thay đổi từ lần trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại kế hoạch theo dõi tại nhà",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói lịch đi xa và thói quen quan trọng của thú",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi nơi dịch vụ có nhận loại thú này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chỉ còn chỗ vào ngày khác, cân nhắc",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhân viên hiểu thú cần dịch vụ khác, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt giờ bàn giao/nhận và người liên hệ khẩn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Kiểm thú và vật dụng khi gửi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Dịch vụ gọi báo thú không ăn, hỏi tình trạng quan sát và đầu mối chuyên môn",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chưa rõ diễn biến, hẹn giờ cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Gọi lại đúng giờ, nhắc điều đã trao đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Nhận lại thú và hỏi việc cần theo dõi tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Hỏi nơi đi dạo/để thú phù hợp quy tắc khu nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Nghe nhắc thú gây tiếng ồn, hỏi giờ và vị trí",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Hàng xóm nói thú khác, cùng xác nhận trước khi đáp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Đề nghị cách giảm ảnh hưởng và hẹn kiểm lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Gặp lại, hỏi việc đã bớt ảnh hưởng chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "UID H-12 giữ nhưng manifest đặt Trung; đây là vai chủ nuôi, không tâm sự thời gian riêng. Quy tắc phụ thuộc nơi, y tế thú nhờ chuyên gia.",
+  "cross_stage_refs": [
+    "T-27",
+    "V5P-022"
+  ],
+  "source_refs": [
+    "DW01"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

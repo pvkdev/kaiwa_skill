@@ -1,0 +1,208 @@
+{
+  "stage_key": "V5P-004",
+  "uid": "29ae1409-8211-5fc4-9082-88ad7ef5face",
+  "objective": "Mua hoặc bán đồ cũ trực tiếp, kiểm tình trạng và chốt trao đổi rõ ràng.",
+  "knowledge_focus": [
+    "Mô tả tình trạng, phụ kiện và điểm cần thử",
+    "Hỏi định giá, giới hạn nhận hàng, điều kiện sau mua"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm mua đồ cũ",
+      "roles": [
+        "người học",
+        "nhân viên recycle shop"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Giá và bàn giao món mua",
+      "roles": [
+        "người học",
+        "nhân viên thu ngân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Mang đồ đến bán",
+      "roles": [
+        "người học",
+        "nhân viên thu mua"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Liên hệ sau trao đổi",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi món cũ còn hoạt động không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Xin thử nút/khóa/phần chuyển động trước mua",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi món đã có phụ kiện nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không thể thử tại quầy, hỏi cách kiểm khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Tình trạng không hợp nhu cầu, từ chối lịch sự",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi giá đã gồm phí mang về chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "So tình trạng hai món cùng loại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hiểu nhầm nhãn “as is” là đã được bảo hành",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhờ giải thích bằng lời giới hạn hỗ trợ sau mua",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt phụ kiện được giao cùng món",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói món đã dùng bao lâu và lỗi đã biết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi cửa hàng có nhận loại món này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhân viên cần kiểm định giá, hỏi có cần ở lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Giá quá thấp, nói sẽ mang về",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Đồng ý bán và xác nhận món/phụ kiện giao",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Phát hiện quên phụ kiện khi bán, gọi hỏi còn nhận không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đồ vừa mua thiếu một bộ phận đã nêu có, nhờ kiểm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Quầy cần hỏi bộ phận kho, chốt thời gian trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Quay lại nhắc kết quả kiểm kho",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhận đủ món hoặc chốt rõ cách xử lý tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Hai vai mua/bán tại shop, không dựng bài mặc cả không phù hợp hoặc bài nhắn tin marketplace V5P-038.",
+  "cross_stage_refs": [
+    "V5P-038",
+    "T-58"
+  ],
+  "source_refs": [
+    "DW07"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,206 @@
+{
+  "stage_key": "V5P-013",
+  "uid": "e9121b41-5da6-55e9-ba98-65343f646d27",
+  "objective": "Giao và nhận đồ giặt, quần áo hoặc giày cần sửa, nói rõ kết quả mong muốn và giới hạn dịch vụ.",
+  "knowledge_focus": [
+    "Chỉ đúng chỗ bẩn/hỏng, chất liệu và hạn cần",
+    "Nghe điều kiện không chắc chắn, kiểm kết quả và hỏi làm lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Giao đồ giặt khô",
+      "roles": [
+        "người học",
+        "nhân viên tiệm giặt"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhờ sửa quần áo",
+      "roles": [
+        "người học",
+        "thợ sửa"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sửa giày",
+      "roles": [
+        "người học",
+        "thợ sửa giày"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhận lại và liên hệ sau",
+      "roles": [
+        "người học",
+        "nhân viên tiệm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Chỉ vết bẩn và nói đã thử làm sạch chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi chất liệu này có thể xử lý không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Tiệm không hứa sạch hoàn toàn, quyết định vẫn giao",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi ngày nhận vì cần dùng cho sự kiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhân viên cần kiểm nhãn chất liệu, hẹn phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Thử áo và chỉ đoạn tay quá dài",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi cách sửa giữ được kiểu cũ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không kịp ngày mong muốn, chọn sửa phần cần gấp",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Thợ hiểu muốn bó toàn bộ, đính chính chỉ sửa eo",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt vị trí sửa và ngày lấy",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Mô tả đế bong khi đang đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi sửa được hay cần thay phần khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Giày cần để lại qua ngày, hỏi có thể lấy sớm hơn không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chi phí gần bằng mua mới, nói chưa sửa",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Đồng ý sửa và xác nhận phần sẽ được thay",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Kiểm đồ ở quầy và hỏi vết còn thấy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Ống tay vẫn lệch sau sửa, chỉ đúng bên",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Tiệm đề nghị sửa lại, thống nhất ngày",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Gọi hỏi đồ đã sẵn sàng theo ngày hẹn chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Thử lại/nhận lại và xác nhận không còn vướng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Dịch vụ sau mua, không lặp mua quần áo S-22. Chính sách xử lý đồ tùy tiệm.",
+  "cross_stage_refs": [
+    "S-22",
+    "H-13"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

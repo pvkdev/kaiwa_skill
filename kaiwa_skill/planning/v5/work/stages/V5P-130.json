@@ -1,0 +1,182 @@
+{
+  "stage_key": "V5P-130",
+  "uid": "0667dcf5-bccf-5f5b-9788-599d39ac6bc2",
+  "objective": "Tham dự concert, trận đấu hoặc biểu diễn và xử lý vé, chỗ, nhóm đông người.",
+  "knowledge_focus": [
+    "hỏi cửa/giờ vào",
+    "giải thích vấn đề vé",
+    "giữ liên hệ nhóm",
+    "xin trợ giúp ở địa điểm đông"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trước giờ vào",
+      "roles": [
+        "người học",
+        "nhân viên địa điểm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chỗ ngồi và trải nghiệm",
+      "roles": [
+        "người học",
+        "nhân viên/bạn bè"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sau sự kiện",
+      "roles": [
+        "người học",
+        "bạn bè/nhân viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi cửa vào đúng theo loại vé",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Cửa đổi do đông, xác nhận đường mới",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Vé hiện khác ngày tưởng, hỏi quầy giải quyết",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người đi cùng tới muộn, hỏi có thể vào riêng không",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hỏi quy định về đồ mang theo trước khi xếp hàng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Tìm khu ghế theo số trên vé",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Có người ngồi nhầm chỗ, hỏi lịch sự rồi nhờ nhân viên",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người nhà cần chỗ nghỉ, hỏi nhân viên nơi phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không nghe thông báo đổi giờ, xin nhắc ngắn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Muốn ra rồi vào lại, hỏi quy tắc trước khi rời",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Thống nhất điểm gặp khi dòng người tách nhau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Bạn không ra được cửa dự tính, đổi điểm bằng mốc cụ thể",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đồ bỏ quên ở chỗ ngồi, báo nhân viên khu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Tàu cuối sắp đi, bàn phương án về khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hỏi điểm nhận đồ nếu quầy đang đóng",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Sở thích nghệ sĩ ở chặng khác; đây là nhiệm vụ tại sự kiện.",
+  "cross_stage_refs": [
+    "V5P-127"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

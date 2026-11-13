@@ -1,0 +1,194 @@
+{
+  "stage_key": "V5P-076",
+  "uid": "9d19b341-331c-5309-a91e-338616dfa4b1",
+  "objective": "Tham gia một nhóm tình nguyện với vai thành viên, nhận việc vừa sức và báo thay đổi kịp thời.",
+  "knowledge_focus": [
+    "hỏi cách tham gia",
+    "nói thời gian/khả năng",
+    "hỏi lại việc được giao",
+    "báo giới hạn và cảm ơn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tham gia lần đầu",
+      "roles": [
+        "người học",
+        "người phụ trách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhận việc tại chỗ",
+      "roles": [
+        "người học",
+        "người hướng dẫn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Xử lý thay đổi",
+      "roles": [
+        "người học",
+        "người phụ trách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Kết thúc buổi",
+      "roles": [
+        "người học",
+        "người phụ trách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi buổi tới có nhận thành viên mới không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mình chỉ rảnh buổi sáng và hỏi việc phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Việc đề nghị cần kỹ năng chưa có, xin việc khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Buổi đó đủ người, hỏi dịp sau",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi chỗ tập trung và người phụ trách nhóm nhỏ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhận việc phân phát đồ, nhắc lại số lượng/khu vực",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nghe không rõ tên người bàn giao, hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhận thêm việc nhưng thời gian không đủ, xin ưu tiên",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo không tới được buổi đã nhận, nói sớm để sắp lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đến nơi nhưng việc nặng quá sức, xin đổi phần việc",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người thay chưa tới, hỏi mình có nên chờ hay bàn giao ai",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Lịch hoạt động đổi vì thời tiết, xác nhận điểm gặp mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Báo phần việc đã xong và còn gì chưa xong",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Người phụ trách hỏi cảm nhận, góp một đề nghị cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Cảm ơn người hướng dẫn và hỏi buổi sau cần chuẩn bị gì",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Chưa chắc đi tiếp được, nói sẽ xác nhận sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "H-55 giữ điều phối/đại diện cộng đồng; đây là thành viên mới.",
+  "cross_stage_refs": [
+    "H-55"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

@@ -1,0 +1,298 @@
+{
+  "stage_key": "H-52",
+  "uid": "321455e7-7b11-5ed0-83ae-f6a7bb972dd4",
+  "objective": "Trao đổi vấn đề xã hội, chính trị và giáo dục với nguồn rõ, giữ an toàn quan hệ khi quan điểm khác.",
+  "knowledge_focus": [
+    "Phân biệt mô tả chính sách, ý kiến cá nhân, trải nghiệm và tin chưa xác minh",
+    "Hỏi tác động với nhóm khác nhau, nhận giới hạn hiểu biết và ranh giới cuộc nói"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở chủ đề nhạy cảm",
+      "roles": [
+        "người học",
+        "bạn hoặc người quen"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Kiểm thông tin",
+      "roles": [
+        "người học",
+        "người cùng trao đổi"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bàn giáo dục từ nhiều vai",
+      "roles": [
+        "người học",
+        "phụ huynh hoặc giáo viên quen"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khác quan điểm chính sách",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Thảo luận trong nhóm nhiều người",
+      "roles": [
+        "người học",
+        "người điều phối nhóm"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau cuộc nói",
+      "roles": [
+        "người học",
+        "người vừa bất đồng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi người kia có muốn bàn tin xã hội lúc này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mình mới đọc một nguồn nên chưa kết luận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Họ chỉ muốn bàn tác động đời sống, giữ đúng phạm vi",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ không muốn bàn chính trị, đổi chủ đề",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Thống nhất điều hai bên định bàn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi nguồn của con số hoặc nhận định được nêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Tách ngày chính sách được đề xuất và ngày áp dụng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhầm tiêu đề bình luận với thông báo chính thức, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa kiểm được bản gốc, hoãn kết luận",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Quay lại sau khi đọc nguồn chính thức",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi người kia thấy thay đổi ảnh hưởng lớp nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nêu trải nghiệm của mình là một trường hợp, không phải mọi trường",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Giáo viên nói giới hạn nguồn lực, hỏi điều có thể làm tại chỗ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Phụ huynh hiểu mình trách gia đình, làm rõ câu hỏi về hệ thống",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt vấn đề cần hỏi đúng người ở trường",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nhắc lại lý do người kia ưu tiên phương án của họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nêu nhóm người mình lo sẽ chịu tác động khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đồng ý mục tiêu nhưng khác cách triển khai, hỏi điều kiện đánh giá",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Không tiếp khi cuộc nói thành công kích cá nhân",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Khép phần đồng ý, bất đồng và câu hỏi mở",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Mời người ít nói nêu góc nhìn nếu họ muốn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Một người nói thay trải nghiệm của nhóm khác, đề nghị nghe người liên quan",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Thời gian còn ít, tóm hai câu hỏi chính chưa giải",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Ý mình bị kể như ý cả nhóm, sửa phạm vi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt điều nhóm đã thống nhất và điều chưa",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Hỏi có điều gì trong cách nói làm họ khó chịu không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Nói phần ý kiến mình đã đổi sau khi nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Họ không muốn tiếp chủ đề, tôn trọng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Chia sẻ nguồn đã hứa nếu họ vẫn muốn nghe qua cuộc nói sau",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Tiếp quan hệ bình thường dù quan điểm còn khác",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Thảo luận có trách nhiệm, không dạy một lập trường hoặc thông tin luật/chính sách chưa xác minh. Trường học của con T-51 cụ thể.",
+  "cross_stage_refs": [
+    "H-28",
+    "T-51"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,259 @@
+{
+  "stage_key": "T-33",
+  "uid": "50ef9531-2517-520a-930d-4379aff980ab",
+  "objective": "Nhờ, nhận lời hoặc từ chối một việc có trách nhiệm rõ, điều chỉnh khi phạm vi đổi.",
+  "knowledge_focus": [
+    "Nêu mục đích, phạm vi, hạn và quyền từ chối",
+    "Đàm phán điều kiện, theo lại sau nhận lời, giữ quan hệ khi không làm được"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đề nghị một việc vừa sức",
+      "roles": [
+        "người học",
+        "bạn hoặc đồng nghiệp thân"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhận lời giúp người khác",
+      "roles": [
+        "người học",
+        "người nhờ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Từ chối mà giữ quan hệ",
+      "roles": [
+        "người học",
+        "người nhờ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Phạm vi đổi sau khi nhận",
+      "roles": [
+        "người học",
+        "người đã nhận giúp"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Kết thúc việc nhờ",
+      "roles": [
+        "người học",
+        "người đã giúp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu việc cụ thể và thời điểm cần giúp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi người kia có tiện không trước khi kể dài",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Họ nhận lời, xác nhận phần họ làm và phần mình làm",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ chỉ giúp được một nửa, chia lại việc",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Họ không thể giúp, cảm ơn và hỏi người khác phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi kết quả mong muốn là gì trước khi nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhận phần đầu nhưng không thể ở lại tối, nêu giờ kết thúc",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đồng ý việc đã rõ và hẹn báo tiến độ",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Đang làm thấy thiếu thông tin, gọi hỏi thay vì tự đoán",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Báo phần đã xong và phần cần người kia quyết",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói không thể nhận việc vì lịch hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Gợi người/giờ khác nếu thực sự biết",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người kia nghĩ mình chỉ muốn dời, nói rõ lần này không thể",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chỉ có thể giúp mười phút, để họ quyết có hữu ích không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hai bên chốt không có cam kết mơ hồ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo việc lớn hơn điều ban đầu đã nói",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người giúp chỉ tiếp được phần cũ, chốt phần mới ai làm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người giúp phải dừng, cảm ơn phần đã làm",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chia việc thành hai ngày nếu hai bên muốn",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Liên hệ lại để xác nhận phần còn dang dở",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Kiểm đã hiểu đúng kết quả người kia bàn giao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nói lời cảm ơn nêu việc cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Kết quả chưa đúng, hỏi có thể sửa phần nhỏ nào",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Người kia chỉ sửa được sau, chốt lịch",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Báo việc đã hoàn tất để người kia khỏi phải theo",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Trung là nhờ có trách nhiệm vừa phải; H-34 nhờ khó/giới hạn phức tạp, H-29 trong gia đình.",
+  "cross_stage_refs": [
+    "S-25",
+    "H-34",
+    "H-29"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

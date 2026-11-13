@@ -1,0 +1,204 @@
+{
+  "stage_key": "S-48",
+  "uid": "a3b6fc5c-c881-5772-b18e-5b9a12a75c79",
+  "objective": "Nói về sở thích và tìm hoạt động chung qua một cuộc trao đổi ngắn.",
+  "knowledge_focus": [
+    "Tên hoạt động, tần suất, lý do thích",
+    "Hỏi tiếp sở thích người kia và chia sẻ trải nghiệm không áp đặt"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nói mình thích gì",
+      "roles": [
+        "người học",
+        "người mới quen"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi người kia",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bàn trải nghiệm",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tìm bước tiếp theo",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói môn thể thao mình thường chơi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói thể loại phim mình thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói cuốn sách mình đang đọc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người kia hiểu mình chơi chuyên nghiệp, đính chính chỉ chơi cho vui",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nói một lý do ngắn vì sao thích",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi bạn thích chơi hay xem thể thao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi bạn đã xem phim mới chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bạn không thích thể loại mình vừa nêu, hỏi sở thích khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Bạn có hứng thú nhưng chưa từng thử, đề nghị thử cùng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại hoạt động chung hai người chọn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Kể ngắn lần đầu thử một trò chơi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi bạn thích phần nào của phim",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nói mình thấy một đoạn khó hiểu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Hai người nói về hai phiên bản khác nhau, xác nhận tên",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Thống nhất mình đang bàn cùng tác phẩm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi nơi gần đây có thể thử môn đó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi bạn có muốn cho mượn sách không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Bạn chỉ cho mượn sau khi đọc xong, hẹn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Bạn không tiện cho mượn, hỏi nơi có thể tìm",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc cuộc nói trước khi cùng tham gia buổi thử",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "S-48 là nói sở thích; vai thành viên câu lạc bộ V5P-077, bình luận sâu T-43/H-49.",
+  "cross_stage_refs": [
+    "V5P-077",
+    "T-43",
+    "H-49"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,295 @@
+{
+  "stage_key": "H-36",
+  "uid": "7378536f-2807-58cc-9596-5a0e047035ed",
+  "objective": "Kể hồi ức và chuyện dài có điểm chốt, điều chỉnh theo người nghe và xử lý ký ức/diễn giải khác nhau.",
+  "knowledge_focus": [
+    "Chọn chi tiết tạo bối cảnh, bước ngoặt và ý nghĩa",
+    "Dẫn người nghe tham gia, sửa mốc, bảo vệ riêng tư người trong chuyện"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn chuyện và người nghe",
+      "roles": [
+        "người học",
+        "bạn hoặc người thân"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Dựng tiến trình",
+      "roles": [
+        "người học",
+        "người nghe"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhiều góc nhìn về một việc",
+      "roles": [
+        "người học",
+        "người cùng nhớ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Điểm chốt và điều thay đổi",
+      "roles": [
+        "người học",
+        "người nghe"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Kể chuyện có người khác",
+      "roles": [
+        "người học",
+        "người nghe"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau chuyện",
+      "roles": [
+        "người học",
+        "người nghe"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói lý do chuyện cũ liên quan câu hỏi hôm nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi người nghe có muốn nghe bản ngắn hay chi tiết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Họ không biết bối cảnh cũ, bổ sung một mốc cần thiết",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ không muốn nghe chuyện đau buồn, chọn chuyện khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Đặt điểm đầu và nhân vật chính rõ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Kể điều mình tin lúc đó trước khi sự việc đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chọn một chi tiết khiến kết quả bất ngờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người nghe nhầm hai năm khác nhau, sửa mốc không cắt mạch",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ hỏi giữa chừng, tạm dừng và giải thích",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Đưa câu chuyện trở về bước ngoặt",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi họ nhớ đoạn nào khác mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói phần mình tận mắt thấy và phần chỉ nghe kể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hai người bất đồng ai nói câu đó, công nhận chưa chắc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không tranh đúng sai khi điểm ấy không đổi ý chính",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Giữ được cả hai cách nhớ trong cuộc nói",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói điều mình hiểu muộn hơn sau sự việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi người nghe thấy điểm nào đáng nhớ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người nghe đọc ý nghĩa khác, hỏi vì sao",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Họ nghĩ chuyện nhằm dạy đời, làm rõ đây là trải nghiệm mình",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Kết bằng điều cụ thể chứ không khẩu hiệu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Bỏ tên hoặc chi tiết nhận diện khi người trong chuyện không muốn lộ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi người nghe có cần biết vai chứ không tên không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Không kể phần riêng tư dù bị hỏi thêm",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chuyển sang bài học chung không cần chi tiết đó",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Tiếp câu chuyện mà vẫn giữ ý chính",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nhận phản hồi khiến mình nghĩ lại chuyện cũ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Người nghe tưởng mình vẫn muốn quay lại quyết định đó, nói hiện tại khác",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Lần sau bổ sung một mảnh ký ức mình mới nhớ",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Khép chủ đề khi cả hai đã nói đủ",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Hỏi lại một câu về trải nghiệm của người nghe nếu họ muốn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Hồi ức có cấu trúc và tương tác, khác kể gần S-51 và chuyện đời T-29.",
+  "cross_stage_refs": [
+    "S-51",
+    "T-29"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

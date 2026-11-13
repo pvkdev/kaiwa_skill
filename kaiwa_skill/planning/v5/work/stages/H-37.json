@@ -1,0 +1,253 @@
+{
+  "stage_key": "H-37",
+  "uid": "fe9d1c73-4fd0-5ee2-823b-7089ea807e5a",
+  "objective": "Điều chỉnh mức lịch sự và cách nói theo quan hệ, sửa lỡ lời và thương lượng cách xưng hô khi quan hệ thay đổi.",
+  "knowledge_focus": [
+    "Nhận ra khoảng cách xã hội và mục đích trước khi chọn cách nói",
+    "Chuyển mức trang trọng tự nhiên, tránh rập khuôn giới và địa vị"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gặp cùng một người ở bối cảnh khác",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Lỡ lời hoặc sai mức lịch sự",
+      "roles": [
+        "người học",
+        "người đối diện"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nói thay nhóm với người ngoài",
+      "roles": [
+        "người học",
+        "đối tác hoặc người lớn tuổi"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Quan hệ trở nên gần hơn hoặc xa hơn",
+      "roles": [
+        "người học",
+        "người quen lâu"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sắc thái và khác biệt cá nhân",
+      "roles": [
+        "người học",
+        "người cùng nhóm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Chào giáo viên cũ khi gặp ở hội bạn, hỏi cách gọi phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói chuyện với đồng nghiệp thân trước mặt khách, chọn cách gọi rõ vai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Dùng lối quá thân ở quầy rồi thấy người kia lúng túng, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đối diện mời gọi tên riêng, hỏi xem trong buổi chính thức vẫn dùng thế không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Thống nhất cách xưng hô cho bối cảnh hiện tại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhận ra lời nhờ nghe như mệnh lệnh, nói lại mục đích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi người kia điều gì làm họ khó chịu thay vì đoán",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia tưởng mình mỉa mai, giải thích ý định và nhận phần ảnh hưởng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ cần thời gian nguôi, chấp nhận nói lại sau",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gặp lại và kiểm cách nói mới có ổn không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Giới thiệu vai mình và vai những người vắng mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Tóm tắt yêu cầu nhóm mà không dùng biệt danh riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đối diện hiểu mình có quyền quyết toàn bộ, làm rõ phạm vi được giao",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Phải hỏi nhóm rồi mới đồng ý, chốt lúc trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại điểm mình có thể xác nhận ngay",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi có thể gọi tên ngắn hơn khi đã quen",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người kia thích cách gọi cũ, giữ như họ muốn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nói mình muốn giữ cách lịch sự ở nơi đông người",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Bạn thân hiểu sự lịch sự mới là xa cách, giải thích lý do bối cảnh",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Thống nhất cách nói linh hoạt theo nơi gặp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi người kia có thấy cách nói quá trực tiếp không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nêu ý mình trước khi đổi sang cách mềm hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Người kia thích thẳng trong việc nhưng nhẹ trong chuyện riêng, nhắc lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Không dùng cách xưng hô gắn giới mà người kia không muốn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chọn cách gọi trung tính người kia chấp nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy quy tắc nam/nữ cố định. Các chặng công việc có mức lịch sự riêng theo vai; đây là kỹ năng chuyển cảnh.",
+  "cross_stage_refs": [
+    "T-08",
+    "T-24",
+    "H-28"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

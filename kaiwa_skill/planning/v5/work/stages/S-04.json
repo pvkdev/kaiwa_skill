@@ -1,0 +1,156 @@
+{
+  "stage_key": "S-04",
+  "uid": "cf29bea6-0d49-5b67-bb85-3dbfb32c2282",
+  "objective": "Tự giới thiệu trong ngày đầu, hỏi người phụ trách và xác nhận bước tiếp theo.",
+  "knowledge_focus": [
+    "Giới thiệu tên, bộ phận, vai và thời điểm bắt đầu",
+    "Nhờ chỉ đúng người, đúng chỗ",
+    "Xác nhận lịch đào tạo ngắn mà không đoán"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đến nơi và gặp đầu mối",
+      "roles": [
+        "nhân viên mới",
+        "lễ tân hoặc người hướng dẫn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Ra mắt đội",
+      "roles": [
+        "nhân viên mới",
+        "leader hoặc đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bắt đầu việc đầu tiên",
+      "roles": [
+        "nhân viên mới",
+        "người hướng dẫn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói tên và ngày bắt đầu tại quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người hướng dẫn chưa có mặt, hỏi nên chờ ở đâu",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Tên công ty con gần giống làm lễ tân tra sai lịch",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đầu mối tới, xác nhận lịch gặp đầu tiên",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Giới thiệu vai và kinh nghiệm một câu trước cả đội",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi cách gọi người hướng dẫn trực tiếp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói rõ tên mình khi đồng nghiệp nghe nhầm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhận lời mời ăn trưa và hỏi giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không thể đi ăn trưa vì buổi hướng dẫn trùng giờ",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hỏi vị trí ngồi và đồ cần dùng hôm nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi lại thứ tự hai buổi hướng dẫn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Buổi hướng dẫn đổi giờ, xác nhận nơi gặp mới",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Cuối ngày nhắc lại việc đã hiểu và việc mai cần hỏi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    }
+  ],
+  "coverage_note": "Giữ trọng tâm ngày đầu; chỉ thị sâu ở S-43, OJT người hướng dẫn ở V5P-104.",
+  "cross_stage_refs": [
+    "S-43",
+    "V5P-104"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

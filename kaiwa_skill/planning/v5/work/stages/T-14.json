@@ -1,0 +1,152 @@
+{
+  "stage_key": "T-14",
+  "uid": "e8118850-3f3c-5e38-9a2d-e00cac0a3b1b",
+  "objective": "Chuyển máy, xử lý gọi nhầm và để khách chờ với thông tin minh bạch.",
+  "knowledge_focus": [
+    "Xin phép trước khi giữ máy",
+    "Nói lý do chuyển và người nhận",
+    "Quay lại khi chờ lâu thay vì im lặng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuyển đúng người",
+      "roles": [
+        "nhân viên",
+        "người gọi đối tác"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gọi nhầm",
+      "roles": [
+        "nhân viên",
+        "người gọi"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chờ quá lâu hoặc ngắt máy",
+      "roles": [
+        "nhân viên",
+        "người gọi đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi bộ phận khách cần rồi xin chuyển máy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đúng người sẵn sàng, giới thiệu ngắn hai đầu",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người nhận đang bận, xin khách chờ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Quay lại báo chưa nối được và hỏi muốn chờ tiếp không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Người gọi hỏi sai tên người không ở công ty, xác nhận lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chỉ đúng công ty hoặc bộ phận nếu biết chắc",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Tên gần giống nhân viên khác, hỏi thêm chức danh",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói xin lỗi vì mình chuyển nhầm máy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo sẽ mất thêm vài phút, hỏi khách có muốn nhắn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách không chờ, hỏi giờ gọi lại",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Đường dây ngắt khi chuyển, gọi lại tự xưng và xin lỗi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nối lại hoặc xác nhận người sẽ liên hệ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Lời nhắn chi tiết T-15, khách bất bình/khẩn T-16.",
+  "cross_stage_refs": [
+    "T-15",
+    "T-16"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

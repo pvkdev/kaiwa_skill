@@ -1,0 +1,299 @@
+{
+  "stage_key": "T-58",
+  "uid": "c3ff4d9b-f6e8-57d5-97b5-dc52deef0999",
+  "objective": "So sánh để mua đúng món, đặt hàng khi thiếu và xử lý đổi trả bằng lý do, điều kiện và bước tiếp rõ.",
+  "knowledge_focus": [
+    "So tiêu chí giá/chất lượng/thời gian và tổng chi phí",
+    "Phân biệt lỗi hàng, sai món, đổi ý; hỏi chính sách cụ thể"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "So sánh trước mua",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khi không có hàng",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đặt và nhận hàng",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Món lỗi hoặc sai",
+      "roles": [
+        "người học",
+        "nhân viên hậu mãi"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Đổi ý hoặc không hợp",
+      "roles": [
+        "người học",
+        "nhân viên hậu mãi"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau giao dịch thứ hai",
+      "roles": [
+        "người học",
+        "nhân viên hậu mãi"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói ba tiêu chí quan trọng theo nhu cầu dùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi hai mẫu khác nhau ở điều mình quan tâm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi chi phí sử dụng sau mua ngoài giá niêm yết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Mẫu tốt hơn vượt ngân sách, chọn tính năng cần giữ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại lý do chọn một mẫu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi tồn kho ở chi nhánh khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hàng có thể nhập nhưng chưa chắc ngày, hỏi lúc báo lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đề nghị đặt màu khác có ngay",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không muốn đặt khi thời gian giao chưa rõ, cảm ơn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gọi lại kiểm ngày hàng về",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chốt phiên bản, cỡ và số lượng món đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhân viên ghi mã mẫu cũ, sửa trước khi trả tiền",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhận hàng ở cửa khác, hỏi giờ và giấy tờ cần nói tại quầy",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đến nhận thì món không đúng cỡ đã đặt",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Kiểm mã và thống nhất sửa đơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Mô tả lỗi xuất hiện ngay khi dùng và khi nào mua",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nêu món nhận khác món trên hóa đơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nhân viên cần kiểm, hỏi cần giữ món ở cửa hàng không",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Đổi món tương đương hoặc chờ món đúng, cân nhắc",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Liên hệ lại với kết quả kiểm lỗi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói món không hợp nhu cầu dù không hỏng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi chính sách đổi trả áp cho lý do này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Cửa hàng không nhận trả theo điều kiện đã nêu, hỏi lựa chọn khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chỉ đổi cùng loại trong hạn, xác nhận hạn và món hợp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt phương án mà mình thật sự đồng ý",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Kiểm món đổi có đủ phụ kiện không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Món thay vẫn gặp cùng lỗi, kể hai lần trước",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Nhân viên nghĩ đây là giao dịch mới, nêu lịch sử liên hệ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Hai đầu mối đưa hướng xử lý khác nhau, xin người phụ trách thống nhất",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Nhận thời hạn và đầu mối cho bước cuối",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Mua sắm đa ngành ở Trung; V5P-005 điện máy có hậu cần giao/lắp, H-13 khiếu nại kéo dài.",
+  "cross_stage_refs": [
+    "S-22",
+    "V5P-005",
+    "H-13"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

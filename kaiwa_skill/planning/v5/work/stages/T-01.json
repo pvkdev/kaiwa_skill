@@ -1,0 +1,305 @@
+{
+  "stage_key": "T-01",
+  "uid": "3550ede5-5ebd-5d0a-9f69-379642ebc6f9",
+  "objective": "Làm việc với môi giới để chọn, xem, hiểu điều kiện và quyết định thuê nhà phù hợp.",
+  "knowledge_focus": [
+    "Nói ưu tiên và đánh đổi giữa tiền, vị trí, diện tích, quy tắc",
+    "Hỏi khoản phí/điều kiện, sửa hiểu nhầm và theo lại hồ sơ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khoanh nhu cầu với môi giới",
+      "roles": [
+        "người học",
+        "nhân viên môi giới"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xem phòng và khu quanh",
+      "roles": [
+        "người học",
+        "nhân viên môi giới"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Điều kiện thuê",
+      "roles": [
+        "người học",
+        "nhân viên môi giới"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bảo lãnh và thời điểm vào",
+      "roles": [
+        "người học",
+        "nhân viên môi giới"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Quyết định và xác nhận",
+      "roles": [
+        "người học",
+        "nhân viên môi giới"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Gia hạn hoặc đổi điều kiện",
+      "roles": [
+        "người học",
+        "người quản lý hợp đồng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu ba ưu tiên nhà ở và điều có thể nhượng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi khu nào thuận tuyến đi làm thực tế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Ngân sách không đủ cho cả ba tiêu chí, chọn thứ giữ lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhà xa hơn nhưng rộng hơn, hỏi chi phí đi lại",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt tiêu chí để môi giới tìm đúng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi lịch xem trong giờ tối để kiểm tiếng ồn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chỉ điểm phòng khác thông tin đã nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi thiết bị nào thuộc nhà và ai xử lý khi hỏng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hiểu nhầm diện tích phòng với diện tích cả căn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhờ chỉ số đo và phần nào dùng chung",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi tổng khoản cần trả trước khi vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi quy định người ở thêm/thú cưng/nhạc cụ nếu liên quan",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chủ nhà chỉ đồng ý với điều kiện cụ thể, nhắc lại giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Điều kiện quan trọng không đáp ứng được, từ chối căn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại điểm đã rõ và điểm cần hỏi chủ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi bên bảo lãnh cần thông tin gì qua lời nói",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hồ sơ đang chờ chủ nhà xét, hẹn ngày biết",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Gọi lại khi qua ngày hẹn vẫn chưa có tin",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Ngày vào nhà đổi vì căn chưa sẵn, hỏi lựa chọn tạm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chọn ngày khác nếu giữ được điều kiện thuê",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói mình muốn thuê nhưng cần kiểm lại một khoản",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nhân viên hiểu đặt cọc là đồng ý toàn bộ, làm rõ trạng thái",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Điều kiện được chấp nhận, hỏi bước tiếp và mốc thời gian",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Không thuê sau khi nghe điều kiện cuối, cảm ơn và kết thúc",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt căn chọn, ngày và người liên hệ tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Hỏi trước hạn về điều kiện gia hạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Phí hoặc thời hạn đổi, hỏi cách tính và lựa chọn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Chưa có quyết định chủ nhà, hẹn lúc phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Gọi lại theo hẹn, nhắc điều kiện đã trao đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Nhắc lại thỏa thuận mới trước khi đồng ý",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Chọn/thuê/gia hạn ở Trung. Chuyển nhà V5P-020, hỏng V5P-018, tiện ích V5P-017, tranh chấp sâu H-10.",
+  "cross_stage_refs": [
+    "S-07",
+    "V5P-020",
+    "V5P-018",
+    "V5P-017",
+    "H-10"
+  ],
+  "source_refs": [
+    "DW01",
+    "DW02",
+    "DW03"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

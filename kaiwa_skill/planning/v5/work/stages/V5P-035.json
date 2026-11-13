@@ -1,0 +1,201 @@
+{
+  "stage_key": "V5P-035",
+  "uid": "6a4c71aa-9120-5a69-9501-afb7f74d43f9",
+  "objective": "Liên hệ bên phát hành thẻ/đơn vị nhận thanh toán khi thẻ bị từ chối, mất hoặc có khoản lạ.",
+  "knowledge_focus": [
+    "nêu giao dịch theo ngày/số tiền",
+    "phân biệt khoản chờ và đã ghi",
+    "hỏi cách bảo vệ thẻ",
+    "nhắc lại số tham chiếu"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Thẻ bị từ chối khi trả tiền",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng và hỗ trợ thẻ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khoản trùng hoặc lạ",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ thẻ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Mất thẻ",
+      "roles": [
+        "người học",
+        "nhân viên phát hành thẻ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Theo dõi tra soát",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói thanh toán không qua dù trước đó dùng được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người bán đề nghị cách khác, hỏi có giữ hàng lúc kiểm thẻ không",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Gọi bên phát hành và tóm tắt thời điểm/chỗ dùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nghe lý do chưa rõ, xin giải thích tình trạng thẻ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói có hai khoản giống nhau cùng ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhân viên giải thích một khoản đang chờ, hỏi khi nào kiểm lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Báo một khoản mình không nhận ra, tách khỏi khoản trùng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Số tiền đọc nhầm, sửa trước khi nhân viên tra tiếp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói ví mất và thẻ nào ở trong",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hỏi cách xác nhận tình trạng bảo vệ thẻ qua kênh chính thức",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chưa có giấy nhận diện, hỏi phương án xác minh phù hợp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Tìm lại ví, gọi hỏi tình trạng thẻ có thay đổi không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Gọi lại bằng mã tham chiếu cuộc trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Khoản hoàn chưa hiển thị, hỏi trạng thái và mốc kiểm lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Được chuyển đơn vị khác, xác nhận ai đang chịu trách nhiệm trả lời",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nhắc lại việc đang chờ và lần liên hệ tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Không hướng dẫn thao tác bảo mật cụ thể hay hứa hoàn tiền.",
+  "cross_stage_refs": [
+    "V5P-033",
+    "V5P-060"
+  ],
+  "source_refs": [
+    "W19",
+    "W21"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

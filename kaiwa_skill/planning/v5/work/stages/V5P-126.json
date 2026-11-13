@@ -1,0 +1,249 @@
+{
+  "stage_key": "V5P-126",
+  "uid": "3192ff57-85bc-5670-bdf5-16d8fe9e689d",
+  "objective": "Thuê xe du lịch từ hỏi điều kiện tới nhận và trả, nói rõ khi xe/điều kiện khác lúc đặt.",
+  "knowledge_focus": [
+    "Loại xe, số người/đồ, nơi nhận-trả, tổng khoản",
+    "Kiểm xe cùng nhân viên, báo vấn đề khi đi, trả và theo sau"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn xe",
+      "roles": [
+        "người học",
+        "nhân viên thuê xe"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hiểu điều kiện thuê",
+      "roles": [
+        "người học",
+        "nhân viên thuê xe"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhận xe",
+      "roles": [
+        "người học",
+        "nhân viên giao xe"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khi đang đi",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ hãng thuê"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Trả xe và sau đó",
+      "roles": [
+        "người học",
+        "nhân viên nhận xe"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói số người và hành lý để hỏi xe phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi nơi có thể nhận/trả theo hành trình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Loại xe mong muốn hết, cân nhắc cỡ khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Điều kiện không hợp bằng/lịch, hỏi phương án đi khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại loại xe, ngày và nơi trả",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi tổng khoản gồm phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi giới hạn giờ trả và cách xử lý trễ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hiểu khoản tạm giữ là giá cuối, nhờ phân biệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhân viên cần kiểm khả năng trả ở chi nhánh khác",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt các điều kiện mình hiểu trước khi nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Cùng chỉ vết xước đã có trước khi đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi cách dùng một thiết bị cần thiết của xe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Xe giao khác loại đã đặt, nêu điểm không đáp nhu cầu",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chọn xe khác nếu đáp số người/hành lý",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Kiểm tình trạng và giờ nhận với nhân viên",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo đèn cảnh báo hoặc tiếng lạ, nói vị trí hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đơn vị cần hướng dẫn/điều xe, hỏi mình nên chờ ở đâu an toàn",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Không thể tiếp tục xe này, hỏi phương tiện thay theo điều kiện thuê",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Gọi lại khi qua mốc chưa được hỗ trợ",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt đầu mối và bước tiếp theo",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Báo mình sẽ tới muộn hơn giờ đã hẹn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi điểm trả đúng khi bãi đông",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Nhân viên nêu vết đã có trước, nhắc lúc nhận đã cùng kiểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Cần kiểm thêm khoản cuối, hỏi bao giờ có thông tin",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Liên hệ về khoản được báo sau ngày trả",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Thuê xe du lịch, không dạy lái hoặc giải quyết tai nạn; trung tâm bằng lái V5P-046, sự cố xe V5P-048.",
+  "cross_stage_refs": [
+    "V5P-046",
+    "V5P-048"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

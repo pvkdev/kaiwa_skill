@@ -1,0 +1,205 @@
+{
+  "stage_key": "S-49",
+  "uid": "7aeef2b7-849b-5d06-aaf9-3e01908e6cf4",
+  "objective": "Hẹn gặp riêng lần đầu với người mình muốn tìm hiểu, tôn trọng sự thoải mái và giới hạn của cả hai.",
+  "knowledge_focus": [
+    "Mở chuyện tự nhiên và hỏi sở thích vừa phải",
+    "Đề nghị kế hoạch, chấp nhận từ chối, chốt gặp lại nếu cả hai muốn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mời gặp",
+      "roles": [
+        "người học",
+        "người mới quen"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trong lần gặp đầu",
+      "roles": [
+        "người học",
+        "người hẹn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giới hạn và đồng thuận",
+      "roles": [
+        "người học",
+        "người hẹn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau buổi gặp",
+      "roles": [
+        "người học",
+        "người hẹn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Đề nghị uống cà phê ở nơi công cộng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ngày nào người kia tiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia không muốn gặp riêng, cảm ơn vì trả lời rõ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người kia muốn gặp nhóm trước, chấp nhận hình thức đó",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt giờ và nơi dễ tìm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi đồ uống và nơi ngồi người kia thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chia sẻ một sở thích rồi hỏi lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đùa một câu làm người kia khó hiểu, giải thích ngắn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia phải về sớm, đổi kế hoạch",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Khép buổi đúng giờ đã nói",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi trước khi chụp ảnh chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người kia không muốn chụp, cất điện thoại và đổi chủ đề",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nói mình không muốn nói sâu về chuyện riêng lúc này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người kia tôn trọng giới hạn, tiếp tục chuyện khác",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Người kia tưởng mình đã hứa đi tiếp, nói rõ điều mình đã đồng ý",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Cảm ơn vì buổi gặp và nói một điều cụ thể mình thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi người kia có muốn gặp lần nữa không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người kia chưa chắc lịch, để họ có thời gian",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Người kia không muốn tiếp, đáp tôn trọng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Hai bên chọn hoạt động tiếp theo nếu cùng muốn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    }
+  ],
+  "coverage_note": "Cuộc gặp đầu và ranh giới cá nhân, không hướng dẫn thao túng. Quan hệ sâu ở T-32.",
+  "cross_stage_refs": [
+    "T-32"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

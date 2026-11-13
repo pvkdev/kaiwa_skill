@@ -1,0 +1,209 @@
+{
+  "stage_key": "S-28",
+  "uid": "3c412c9d-4f79-5216-a1ac-7dc15b22b61a",
+  "objective": "Xin lỗi hoặc nêu phiền toái nhỏ một cách cụ thể để hai bên sửa việc và kết thúc hòa nhã.",
+  "knowledge_focus": [
+    "Nêu điều đã xảy ra, ảnh hưởng và mong muốn cụ thể",
+    "Nghe lời giải thích, nhận sửa hoặc tự sửa khi mình là bên gây phiền"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mình gây bất tiện",
+      "roles": [
+        "người học",
+        "người bị ảnh hưởng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhận lời xin lỗi",
+      "roles": [
+        "người học",
+        "người vừa xin lỗi"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nêu phiền toái nhỏ",
+      "roles": [
+        "người học",
+        "người phục vụ hoặc hàng xóm"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khi chưa được giải quyết",
+      "roles": [
+        "người học",
+        "người liên quan"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xin lỗi vì đến muộn và nói giờ có mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Xin lỗi vì chặn lối rồi chuyển đồ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia cần mình khắc phục thêm, hỏi việc cụ thể",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Làm xong điều đã hứa và báo lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Gặp lại, hỏi việc cũ đã ổn chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nghe người kia xin lỗi vì lỡ hẹn, hỏi giờ mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chấp nhận lời xin lỗi khi việc đã được sửa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chấp nhận nhưng cần họ báo sớm lần sau",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Việc chưa sửa, nói còn vướng gì",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Hai bên thống nhất bước khắc phục",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói hàng chắn cửa khiến mình không đi qua",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói món nhận không đúng số lượng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người kia tưởng mình muốn hoàn tiền, đính chính chỉ cần món thiếu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người kia nhận sửa, hỏi bao lâu",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Kiểm đã đúng và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nhắc lại sự việc đã báo hôm trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đối diện cần kiểm với người khác, chốt lúc gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Họ không thể sửa theo cách mình đề nghị, hỏi lựa chọn khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Liên hệ lại theo hẹn với thông tin đã bổ sung",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt phương án hai bên đồng ý",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Phiền toái nhỏ và sửa quan hệ Sơ; khiếu nại dịch vụ phức tạp H-13, bất đồng hàng xóm H-11.",
+  "cross_stage_refs": [
+    "H-13",
+    "H-11"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

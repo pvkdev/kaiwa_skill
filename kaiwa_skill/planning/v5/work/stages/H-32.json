@@ -1,0 +1,289 @@
+{
+  "stage_key": "H-32",
+  "uid": "9349c2cb-99d6-5116-aede-edd9fdbcfbe4",
+  "objective": "Đàm phán giá, phạm vi và điều kiện hợp đồng với nhiều người có quyền duyệt.",
+  "knowledge_focus": [
+    "Xác nhận điểm đã thống nhất và điểm mở",
+    "Trao đổi điều kiện có đối ứng",
+    "Không hứa điều chưa được nội bộ duyệt",
+    "Kết thúc bằng bước quyết định rõ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở vòng đàm phán",
+      "roles": [
+        "người đàm phán",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Giá và phạm vi",
+      "roles": [
+        "người đàm phán",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thời hạn và trách nhiệm",
+      "roles": [
+        "người đàm phán",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Người duyệt hai bên",
+      "roles": [
+        "người đàm phán",
+        "leader nội bộ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Bế tắc và nhượng bộ",
+      "roles": [
+        "người đàm phán",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Chốt hoặc chưa chốt",
+      "roles": [
+        "người đàm phán",
+        "đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhắc mục tiêu hai bên và ba điểm còn mở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đối tác nghĩ giá là điểm duy nhất, làm rõ thời hạn/hỗ trợ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi ưu tiên số một của họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi ai bên họ duyệt cuối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói mức giá đang gắn với phạm vi nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nếu giảm giá thì giảm một hạng mục, hỏi họ chọn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đối tác cần đủ phạm vi, đề nghị đổi tiến độ",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Xin nội bộ duyệt mức ngoại lệ, hẹn phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi bên nào cung cấp dữ liệu đầu vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đối tác tưởng bên mình nhập dữ liệu, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nếu họ cấp dữ liệu đúng ngày thì giữ hạn giao",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Dữ liệu đến muộn, bàn mốc mới",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Báo điều đối tác đã chấp nhận có điều kiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Leader không duyệt điều khoản đó, hỏi phương án khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đưa đề nghị khác cho đối tác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Đối tác phản hồi, tách điểm nhận/chưa nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Tóm tắt chỗ bất đồng thật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Đề nghị giai đoạn thử để giảm rủi ro",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đối tác không muốn thử, hỏi điều tối thiểu cần",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Hai bên tạm dừng để hỏi người quyết",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Đọc lại các điều đã thống nhất và điều cần xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Hai bên chốt nguyên tắc, hẹn người xử lý bước tiếp",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Còn điểm chưa thống nhất, ghi bằng lời ai sẽ xem lại",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Đến hạn gọi lại, xác nhận quyết định cuối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "T-62 thương lượng vừa; H-33 giá bán buôn/chi phí; V5P-114 đổi yêu cầu sau cam kết.",
+  "cross_stage_refs": [
+    "T-62",
+    "H-33",
+    "V5P-114"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

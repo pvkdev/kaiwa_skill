@@ -1,0 +1,414 @@
+{
+  "stage_key": "H-58",
+  "uid": "17693f67-6b41-5cb5-8888-6041205e29fa",
+  "objective": "Nối một dự án từ cơ hội tới bàn giao và nhìn lại bằng các cuộc nói với khách, nội bộ và lãnh đạo.",
+  "knowledge_focus": [
+    "Theo dõi mục tiêu, người quyết và lời hứa qua nhiều thời điểm",
+    "Dùng lại hỏi brief, thương lượng, phân việc, báo sự cố, nghiệm thu",
+    "Không coi một cuộc gặp là dự án đã xong"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khách nêu cơ hội",
+      "roles": [
+        "người phụ trách dự án",
+        "khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đề xuất và thương lượng",
+      "roles": [
+        "người phụ trách",
+        "khách"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phân việc nội bộ",
+      "roles": [
+        "người phụ trách",
+        "đội"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thực hiện và báo tiến độ",
+      "roles": [
+        "người phụ trách",
+        "khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Khách đổi yêu cầu",
+      "roles": [
+        "người phụ trách",
+        "khách"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sự cố phát sinh",
+      "roles": [
+        "người phụ trách",
+        "leader"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Demo và chốt nghiệm thu",
+      "roles": [
+        "người phụ trách",
+        "khách"
+      ]
+    },
+    {
+      "id": "E08",
+      "name": "Bàn giao và hỗ trợ",
+      "roles": [
+        "người phụ trách",
+        "người vận hành"
+      ]
+    },
+    {
+      "id": "E09",
+      "name": "Nhìn lại và quan hệ tiếp",
+      "roles": [
+        "leader",
+        "đội hoặc khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi vấn đề khách muốn giải quyết và mốc thực",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Khách nói mong muốn như điều kiện bắt buộc, phân biệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi ai sẽ dùng/duyệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa có người duyệt, hẹn cuộc sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nêu hai phạm vi với thời gian khác nhau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Khách muốn nhanh và đủ, giải thích tradeoff",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách bác giá, hỏi phần ưu tiên",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chia giai đoạn và hẹn người duyệt",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói đầu ra từng người và dependency",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hai người cùng tưởng người khác kiểm mẫu, chốt owner",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi nguồn lực thiếu trước khi hứa khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Đã có nguồn, nhắc mốc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Báo phần đã hoàn thành và phần đang kiểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chưa có mốc chắc, hẹn giờ cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đầu vào khách chậm, nêu tác động",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Khách đồng ý dời một phần mốc",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Hỏi thay đổi nhằm giải quyết vấn đề nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách tưởng thay đổi không ảnh hưởng giá, giải thích cần kiểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đưa cách giữ mốc giảm phạm vi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Nội bộ đã duyệt, xác nhận phương án",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Báo lỗi đã xác nhận và khách bị ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Hỏi việc cần ưu tiên khôi phục",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Chưa rõ nguyên nhân, giao người kiểm và hẹn mốc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Có nguyên nhân, báo khách đúng mức",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E07",
+      "title": "Mời khách thử tình huống đã thống nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E07",
+      "title": "Khách tìm thấy điểm chưa đạt, hỏi tiêu chí",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S027",
+      "event_id": "E07",
+      "title": "Khách nhận nếu sửa một điểm trước ngày dùng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    },
+    {
+      "id": "S028",
+      "event_id": "E07",
+      "title": "Sau sửa, hỏi người duyệt đã chấp nhận chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "event_id": "E08",
+      "title": "Nói trạng thái cuối, đầu mối hỗ trợ và phần còn theo dõi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E08",
+      "title": "Người vận hành tưởng dự án hết hỗ trợ, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    },
+    {
+      "id": "S031",
+      "event_id": "E08",
+      "title": "Hỏi họ có thể tự xử lý bước nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S032",
+      "event_id": "E08",
+      "title": "Tuần đầu hỏi việc sử dụng có vướng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S031"
+      ]
+    },
+    {
+      "id": "S033",
+      "event_id": "E09",
+      "title": "Hỏi điều gì trong phối hợp đã giúp đúng mốc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S034",
+      "event_id": "E09",
+      "title": "Một bước báo tin xấu quá chậm, chọn thay đổi",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S035",
+      "event_id": "E09",
+      "title": "Nói với khách điều đã học từ phản hồi của họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S036",
+      "event_id": "E09",
+      "title": "Dự án sau bắt đầu, kiểm thay đổi có được áp dụng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S035"
+      ]
+    }
+  ],
+  "coverage_note": "Tổng hợp ứng dụng, không bài test/gate. Từng chức năng mới ở chặng riêng H-20/H-32/V5P-114/V5P-115/H-44/V5P-112.",
+  "cross_stage_refs": [
+    "H-20",
+    "H-32",
+    "V5P-114",
+    "V5P-115",
+    "H-44",
+    "V5P-112"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

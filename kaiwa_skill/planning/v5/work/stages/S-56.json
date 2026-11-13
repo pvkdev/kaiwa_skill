@@ -1,0 +1,253 @@
+{
+  "stage_key": "S-56",
+  "uid": "4018562d-44c4-5e72-9274-28b090befd0d",
+  "objective": "Đặt và dùng nơi lưu trú du lịch cơ bản, nói điểm đến và sửa thay đổi nhỏ.",
+  "knowledge_focus": [
+    "Hỏi phòng, ngày, số người, giờ đến",
+    "Giao tiếp quầy khách sạn và hỏi giúp khi nhu cầu thay đổi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Lên chuyến đi",
+      "roles": [
+        "người học",
+        "bạn đi cùng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi phòng cơ bản",
+      "roles": [
+        "người học",
+        "nhân viên khách sạn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đến khách sạn",
+      "roles": [
+        "người học",
+        "nhân viên lễ tân"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trong lúc ở",
+      "roles": [
+        "người học",
+        "nhân viên lễ tân"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Kết thúc chuyến",
+      "roles": [
+        "người học",
+        "nhân viên lễ tân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói nơi muốn đi và thời gian có thể đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi bạn thích nghỉ một hay hai đêm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bạn chỉ rảnh một ngày, đổi lịch ngắn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhầm thứ sáu tuần này với tuần sau",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt ngày đi và ngày về",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi còn phòng cho số người cụ thể không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi giờ nhận và trả phòng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không còn loại phòng đầu, hỏi loại khác",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Giá ngoài dự tính, cảm ơn và chưa đặt",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại tên, ngày, số người trước khi kết thúc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói tên đặt phòng khi tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi nơi gửi hành lý nếu tới sớm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Phòng chưa sẵn sàng, hỏi giờ quay lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không tìm thấy tên đặt, nói lại ngày và cách đặt",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhận phòng và nhắc lại giờ trả",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi cách tới điểm tham quan từ khách sạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Báo thiếu khăn hoặc vật dụng cơ bản",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nhân viên sẽ mang lên sau, hỏi khoảng giờ",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Gọi lại khi chưa nhận món đã hứa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhận hỗ trợ và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi có thể gửi hành lý sau trả phòng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hóa đơn có khoản chưa hiểu, hỏi rõ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Kiểm số tiền rồi thanh toán",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Hỏi đường đến ga sau khi rời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Kể với bạn điều được và chưa được của chuyến đi",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Du lịch/khách sạn cơ bản. Ryokan V5P-131, sự cố thương lượng H-17, kế hoạch nhóm T-67.",
+  "cross_stage_refs": [
+    "V5P-131",
+    "H-17",
+    "T-67"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,245 @@
+{
+  "stage_key": "V5P-046",
+  "uid": "fbfdfd3e-f147-5fc5-b87e-c0969fbc2a76",
+  "objective": "Hỏi và xác nhận lịch học, yêu cầu, phản hồi tại trung tâm bằng lái; xử lý khi cần đổi buổi.",
+  "knowledge_focus": [
+    "Nói mục tiêu học, kinh nghiệm và điều kiện cá nhân",
+    "Nghe chỉ dẫn/nhận xét của người hướng dẫn, hỏi rõ bước tiếp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm khóa phù hợp",
+      "roles": [
+        "người học",
+        "nhân viên trung tâm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đăng ký và lịch",
+      "roles": [
+        "người học",
+        "nhân viên trung tâm"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trong buổi học",
+      "roles": [
+        "người học",
+        "giáo viên hướng dẫn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đổi lịch và tiếp tục",
+      "roles": [
+        "người học",
+        "nhân viên trung tâm"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau một giai đoạn",
+      "roles": [
+        "người học",
+        "giáo viên hoặc nhân viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói muốn học từ đầu hay đã từng lái ở nơi khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi khóa nào phù hợp lịch làm việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Lớp gần nhất đã đầy, hỏi lớp sau",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Điều kiện chưa đáp ứng, hỏi nơi xác minh",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt khóa muốn cân nhắc và ngày bắt đầu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi tổng phí gồm phần nào và lịch dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói ngày mình không thể học",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên hiểu mình muốn học cuối tuần toàn bộ, sửa chỉ một số buổi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa đủ thông tin về giấy tờ, hỏi đầu mối",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lịch đầu tiên và thứ cần mang",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin nhắc lại một chỉ dẫn trước khi thực hiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói mình chưa hiểu vì sao thao tác vừa rồi không đạt ý thầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Thầy muốn luyện thêm một bước, hỏi mục tiêu buổi sau",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không nghe rõ trong xe/khu tập, xin dừng để xác nhận",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại điều sẽ luyện tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo không thể đến buổi đã đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi có thể học bù khi nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chỉ còn giờ khó đi, hỏi hạn đổi",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Không nhận buổi mới chưa hợp, hẹn kiểm lịch",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gọi lại khi đã biết ngày rảnh",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi mình đang cần cải thiện kỹ năng nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hiểu lời nhận xét là kết quả cuối, hỏi rõ mới là bước luyện",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Cần kiểm điều kiện bước tiếp, hỏi khi nào biết",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chọn luyện thêm trước khi đăng ký buổi sau",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt kế hoạch học tiếp theo lời hướng dẫn",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Giao tiếp trung tâm, không dạy lái hay hứa đổi bằng. V5P-047 là sử dụng xe sau đó.",
+  "cross_stage_refs": [
+    "V5P-047"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

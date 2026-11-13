@@ -1,0 +1,159 @@
+{
+  "stage_key": "T-36",
+  "uid": "64a3be69-17eb-526c-8b2c-a877c08d1eb3",
+  "objective": "Báo sai sót, xin lỗi và thương lượng lịch sửa với người bị ảnh hưởng.",
+  "knowledge_focus": [
+    "Đưa sự thật và tác động trước lời biện minh",
+    "Hỏi nhu cầu người bị ảnh hưởng",
+    "Chốt mốc sửa khả thi và cập nhật"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Báo lỗi nội bộ",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xin lỗi người bị ảnh hưởng",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp hoặc đối tác"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đổi lịch hẹn",
+      "roles": [
+        "nhân viên",
+        "đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo đã dùng nhầm bản số liệu trong cuộc họp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Một bộ phận khác đã dùng bản đó, hỏi người cần liên hệ",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Leader yêu cầu kiểm phạm vi trước khi thông báo",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Kiểm xong, báo phạm vi và đề xuất sửa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Xin lỗi vì giao muộn và nói mốc mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Mốc mới không giúp được họ, hỏi hạn tối thiểu",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chuyển phần cần trước, hẹn phần còn lại",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bên kia tưởng hàng đã gửi, làm rõ trạng thái thật",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Gọi xin đổi cuộc gặp vì lỗi chuẩn bị",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đối tác nhận giờ mới, xác nhận địa điểm",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không có giờ mới trong tuần, bàn gọi ngắn thay",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau cuộc gọi ngắn, hẹn lần gặp đầy đủ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Sai sót nhỏ ở S-29; khiếu nại chính thức H-14/H-16.",
+  "cross_stage_refs": [
+    "S-29",
+    "H-14",
+    "H-16"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

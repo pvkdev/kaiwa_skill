@@ -1,0 +1,384 @@
+{
+  "stage_key": "T-22",
+  "uid": "1f7b4c75-29ed-56c1-9c16-fd5206162aac",
+  "objective": "Đi dự tiệc công ty và giao lưu bằng lời phù hợp từng dịp, giữ lựa chọn tham gia và kết nối sau tiệc.",
+  "knowledge_focus": [
+    "Hỏi loại tiệc, giờ, người tham dự và mức tự nguyện",
+    "Phân biệt lời cảm ơn cuối năm, lời chúc đầu năm, lời mừng, lời tiễn",
+    "Từ chối rượu hoặc tăng hai rõ ràng",
+    "Nói tiếp sau tiệc về điều đã hứa"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trước buổi: lời mời và lựa chọn tham dự",
+      "roles": [
+        "người được mời",
+        "đồng nghiệp hoặc 幹事"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "忘年会 và 新年会",
+      "roles": [
+        "người dự",
+        "đồng nghiệp hoặc cấp trên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "歓迎会 và 送別会",
+      "roles": [
+        "người dự",
+        "người mới hoặc người rời nhóm"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "祝賀会, thăng chức và thành tích",
+      "roles": [
+        "người dự",
+        "người được chúc"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "打ち上げ sau dự án",
+      "roles": [
+        "người dự",
+        "đồng đội dự án"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Đồ uống, ăn uống và tăng hai",
+      "roles": [
+        "người dự",
+        "đồng nghiệp mời"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Trong và sau tiệc khi có phát sinh",
+      "roles": [
+        "người dự",
+        "幹事 hoặc đồng nghiệp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi tiệc dành cho ai và có khách bên ngoài không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhận lời và hỏi giờ/địa điểm",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không dự được, nhờ chuyển lời chúc",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ dự phần đầu, nói trước giờ phải về",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Tưởng buổi giao lưu bắt buộc, hỏi lại người tổ chức",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Ở忘年会, cảm ơn đồng nghiệp đã giúp một việc trong năm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Ở忘年会, gặp người khác bộ phận và hỏi họ bận nhất dự án nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Ở新年会, chúc năm mới rồi hỏi việc đầu năm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Lời chúc nghe như hứa nhận việc mới, làm rõ chỉ muốn tìm hiểu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Sau năm mới nhắc lại việc muốn bàn riêng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Ở歓迎会, hỏi người mới muốn được gọi thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người mới được mời phát biểu, chỉ nói ngắn vai và điều muốn học",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Ở送別会, cảm ơn người sắp rời vì hỗ trợ cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người rời nhóm đáp lời mà không hứa giữ liên hệ ngoài ý muốn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Ngày sau chốt bàn giao một việc còn dở với người rời",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Chúc đồng nghiệp thăng chức và nhắc đóng góp thật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Chúc nhóm đạt cột mốc mà không chỉ khen người đứng sân khấu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người được chúc cảm ơn và ghi nhận nhóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Lời chúc bị hiểu như nhờ ưu ái việc sau, sửa ý",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Sau tiệc cảm ơn thành viên hậu trường",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Chúc mừng việc hoàn thành và kể một khó khăn cả nhóm đã vượt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nói rõ vẫn còn phần hỗ trợ khách sau ngày ra mắt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Đồng nghiệp nghĩ mọi việc đã xong, nhắc phần đang chờ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Hỏi người ít được nhắc đến họ đã xử lý phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Hôm sau gọi chốt người nhận việc tồn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Từ chối rượu và gọi đồ không cồn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Người kia vẫn mời, nói lại quyết định không uống",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Từ chối tăng hai vì cần về",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Đề nghị gặp ăn trưa trong tuần",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Món ăn có thành phần cần tránh, hỏi người phục vụ món khác",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S031",
+      "event_id": "E07",
+      "title": "Báo mình sẽ đến muộn và hỏi phần nào đã bắt đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S032",
+      "event_id": "E07",
+      "title": "Không thấy tên mình trong số chỗ, nhờ 幹事 kiểm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S033",
+      "event_id": "E07",
+      "title": "Xin phép về sớm và cảm ơn người được gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S034",
+      "event_id": "E07",
+      "title": "Sáng sau cảm ơn người tổ chức, nhắc việc đã nói sẽ làm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S035",
+      "event_id": "E07",
+      "title": "Lời nói vui ở tiệc bị coi như quyết định, làm rõ trong giờ làm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S034"
+      ]
+    }
+  ],
+  "coverage_note": "Chỉ vai người tham gia/giao lưu; 幹事 V5P-118 lo vận hành, MC H-46 điều phối chương trình, T-23 phụ trách chuyến đi. S-47 là lời chào nền.",
+  "cross_stage_refs": [
+    "V5P-118",
+    "H-46",
+    "T-23",
+    "S-47"
+  ],
+  "source_refs": [
+    "E01",
+    "W07"
+  ],
+  "source_findings": [
+    {
+      "kind": "book_read",
+      "book_id": "B17",
+      "path": "kaiwa_skill/knowledge/初中級レベル ロールプレイで学ぶ ビジネス日本語 ―場面に合わせて適切に話そう―/chapters/13-忘年会の幹事.md",
+      "locator": "lines 19-42",
+      "supports": "Bối cảnh tiệc tất niên, cân nhắc người uống/không uống; giúp phần lựa chọn tham dự.",
+      "limit": "Không phủ các loại tiệc khác, vai người đi dự hay hậu sự kiện."
+    }
+  ],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

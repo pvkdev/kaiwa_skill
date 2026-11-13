@@ -1,0 +1,145 @@
+{
+  "stage_key": "S-32",
+  "uid": "23e7a49a-7876-55d1-8b3a-6773b46c91d7",
+  "objective": "Báo không thể đi làm vì ốm, nói thời điểm cập nhật và việc cần chuyển giao ngắn.",
+  "knowledge_focus": [
+    "Báo tình trạng đủ cho bố trí ca mà không tiết lộ chi tiết y tế",
+    "Nêu thời điểm dự kiến liên hệ lại",
+    "Hỏi đúng quy trình đơn vị"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gọi báo trước ca",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bàn giao việc cấp thiết",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp trực"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cập nhật và quay lại",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo hôm nay không thể tới và xin hướng dẫn báo nghỉ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Chưa biết ngày trở lại, hẹn cập nhật chiều",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Leader nghe nhầm nghỉ hai ngày, sửa lại chỉ hôm nay chắc chắn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi ai cần biết việc đang dở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói việc đang chờ khách và giờ phải gọi lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đồng nghiệp chỉ nhận được một phần, hỏi leader phân lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói vị trí tài liệu cần dùng nhưng không yêu cầu truy cập riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Cập nhật cho leader việc nào vẫn chưa ai nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo ngày mai đã có thể đi làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Chưa rõ sức khỏe ngày mai, hẹn sáng xác nhận",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Sáng sau xác nhận tiếp tục nghỉ và hỏi người tiếp việc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Trở lại, hỏi lịch và thay đổi trong những ngày vắng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Chỉ cuộc báo ốm ngắn; nghỉ dài và trở lại nhiều bước V5P-096 do owner support.",
+  "cross_stage_refs": [
+    "V5P-096"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

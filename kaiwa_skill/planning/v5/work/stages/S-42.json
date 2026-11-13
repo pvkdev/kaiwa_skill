@@ -1,0 +1,206 @@
+{
+  "stage_key": "S-42",
+  "uid": "324e60d1-e9e5-5ba6-99ec-7d2f0747e9f7",
+  "objective": "Thực hiện giao dịch cơ bản tại quầy ngân hàng/bưu điện bằng câu hỏi và xác nhận rõ số, tên, dịch vụ.",
+  "knowledge_focus": [
+    "Nói mục đích đến quầy, số tiền/địa chỉ cơ bản",
+    "Hỏi lại điều kiện và đúng đầu mối khi không làm được ngay"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Ngân hàng giao dịch cơ bản",
+      "roles": [
+        "người học",
+        "nhân viên ngân hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi mở dịch vụ",
+      "roles": [
+        "người học",
+        "nhân viên ngân hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bưu điện gửi căn bản",
+      "roles": [
+        "người học",
+        "nhân viên bưu điện"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhận hỗ trợ sau giao dịch",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói muốn hỏi chỗ gửi/rút tiền tại quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi giờ quầy phục vụ việc mình cần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói số tiền bằng lời và kiểm lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhân viên nghe nhầm số tiền, sửa trước khi xử lý",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Kiểm số vừa được xác nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi có thể mở tài khoản ở quầy này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi cần mang loại giấy tờ nào, chỉ hỏi bằng lời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Thiếu giấy tờ, hỏi ngày quay lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Quầy này không xử lý, nhờ chỉ đúng đầu mối",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Quay lại nói mình đã được hướng dẫn trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói muốn gửi bưu phẩm trong nước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi cách chọn tốc độ giao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Gói quá lớn cho lựa chọn đầu, hỏi loại khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nghe nhầm ngày dự kiến tới là ngày gửi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại phương án và chi phí",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi khoản tiền trên biên nhận là gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nhận nhầm món hoặc thông tin người nhận, báo ngay",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Quầy cần kiểm, hỏi thời gian phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Quay lại nhắc cuộc nói và kết quả kiểm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Hai bên xác nhận đã rõ và kết thúc",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Quầy căn bản, không dạy viết đơn/ATM. Tài khoản có vấn đề V5P-033; gửi quốc tế V5P-123.",
+  "cross_stage_refs": [
+    "V5P-033",
+    "V5P-123"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

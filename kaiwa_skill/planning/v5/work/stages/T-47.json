@@ -1,0 +1,231 @@
+{
+  "stage_key": "T-47",
+  "uid": "340dccf7-b4da-5627-b3d1-618adb0fb0e4",
+  "objective": "Bàn chuyện thường ngày với vợ/chồng/người yêu và xử lý thay đổi kế hoạch bằng lời tôn trọng.",
+  "knowledge_focus": [
+    "nói lịch và nhu cầu",
+    "xin ý kiến thay vì áp đặt",
+    "thương lượng việc nhà",
+    "giải thích hiểu lầm"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Sắp lịch chung",
+      "roles": [
+        "người học",
+        "bạn đời"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Việc nhà và tiền sinh hoạt",
+      "roles": [
+        "người học",
+        "bạn đời"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giữ liên lạc khi xa",
+      "roles": [
+        "người học",
+        "bạn đời"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Hai gia đình có kỳ vọng khác nhau",
+      "roles": [
+        "người học",
+        "bạn đời/người thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi kế hoạch cuối tuần trước khi nhận lời bạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hai lịch va nhau, nêu việc quan trọng và chọn lại",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia chưa quyết được, hẹn giờ xác nhận",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Lỡ hứa thay người kia, nhận lỗi và hỏi lại ý họ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Sau khi đổi lịch, báo người có liên quan",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói phần việc mình làm được tuần này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người kia thấy phân chia không đều, hỏi ví dụ cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đề xuất thử phân chia mới trong một tuần",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chi phí chung tăng, hỏi ưu tiên của cả hai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Một khoản chưa rõ, hẹn kiểm trước khi quyết",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo về muộn và nói giờ dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người kia lo vì không nhận tin, nghe và sửa cách báo",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Xin thời gian riêng mà không hàm ý xa cách",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đồng ý cách liên lạc mới cho tuần bận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Gọi lại khi giờ về tiếp tục đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hai bên gia đình muốn lịch thăm khác nhau, nói giới hạn thực tế",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người thân tưởng một bên không muốn gặp, giải thích lý do lịch",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đề nghị thay đổi cách liên lạc trong tháng bận thay vì hứa lịch không giữ được",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau khi bàn với bạn đời, báo phương án chung cho người thân",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "H-08 đi sâu trách nhiệm gia đình dài hạn; V5P-069 chuyện gia đình quốc tế/kết hôn.",
+  "cross_stage_refs": [
+    "H-08",
+    "V5P-069"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

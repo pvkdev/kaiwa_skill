@@ -1,0 +1,288 @@
+{
+  "stage_key": "H-41",
+  "uid": "e902b136-74af-5d7f-a19a-b24522cfa437",
+  "objective": "Leader bàn ưu tiên, nguồn lực và ngân sách với đội và cấp trên rồi theo dõi quyết định.",
+  "knowledge_focus": [
+    "Nêu năng lực hiện có và giới hạn",
+    "So sánh việc bằng tác động",
+    "Xin quyết định về nguồn lực và nói hậu quả",
+    "Cập nhật khi giả định đổi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xem danh mục việc",
+      "roles": [
+        "leader",
+        "thành viên phụ trách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nguồn lực thiếu",
+      "roles": [
+        "leader",
+        "leader cấp trên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bàn ngân sách",
+      "roles": [
+        "leader",
+        "người duyệt ngân sách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Phân bổ giữa hai nhóm",
+      "roles": [
+        "leader",
+        "leader nhóm khác"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Đổi ưu tiên giữa chừng",
+      "roles": [
+        "leader",
+        "đội"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Xem lại kết quả",
+      "roles": [
+        "leader",
+        "cấp trên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi trạng thái ba việc đang chạy và chỗ bị chặn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Một việc báo \"gần xong\" nhưng còn duyệt khách",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói ưu tiên theo tác động, hỏi ý thành viên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chuyển người nếu hoàn tất bàn giao",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói hai mốc không thể giữ với số người hiện có",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đề nghị cắt một hạng mục thay vì thêm người",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Cấp trên không tăng nguồn, hỏi ưu tiên bắt buộc",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói lại ưu tiên đã chọn cho đội",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Giải thích khoản chi gắn với rủi ro hoặc kết quả nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Người duyệt tưởng là chi lặp, làm rõ phần mới",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chỉ duyệt nửa khoản, chọn phạm vi phù hợp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Cần thêm báo giá, hẹn quyết",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi khi nào có thể mượn một chuyên gia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chỉ có hai ngày, chốt đầu ra ưu tiên",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nhóm kia cũng khẩn, đưa việc lên người quyết chung",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hết hai ngày, báo việc đạt/chưa đạt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nói vì sao việc A lên trước B và ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Thành viên tưởng B hủy hẳn, làm rõ chỉ dời",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hỏi ai cần báo khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Khách đã biết, cập nhật lịch",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Báo việc đã hoàn thành với nguồn lực được duyệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Chi phí vượt dự kiến, nêu nguyên nhân đang xác minh",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Chưa chốt phương án, hẹn vòng quyết",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Có quyết định, báo lại đội",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "V5P-105 1:1 và V5P-107 giao quyền riêng; H-41 cân đối toàn đội và cấp duyệt.",
+  "cross_stage_refs": [
+    "V5P-105",
+    "V5P-107"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

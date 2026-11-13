@@ -1,0 +1,183 @@
+{
+  "stage_key": "V5P-116",
+  "uid": "19f8c650-9596-575b-acd4-16bda06dd4d6",
+  "objective": "Đến nhà máy/nhà cung cấp để hỏi quy trình, xác minh vấn đề và thống nhất bước tiếp.",
+  "knowledge_focus": [
+    "Hỏi quy tắc an toàn tại nơi đến",
+    "Phân biệt điều quan sát với điều suy đoán",
+    "Nói rõ ai sẽ kiểm lỗi và khi nào báo"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hẹn và đến cơ sở",
+      "roles": [
+        "nhân viên đi thăm",
+        "đầu mối nhà cung cấp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tìm hiểu cách sản xuất/giao hàng",
+      "roles": [
+        "nhân viên đi thăm",
+        "người hướng dẫn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bàn lỗi hoặc lệch lô",
+      "roles": [
+        "nhân viên mua hàng",
+        "nhà cung cấp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Kết chuyến thăm",
+      "roles": [
+        "nhân viên đi thăm",
+        "đầu mối nhà cung cấp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xác nhận giờ, cổng và người đón",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tên cơ sở gần giống, hỏi địa chỉ và bộ phận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi quy định ra vào và chụp ảnh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ được vào một khu, điều chỉnh câu hỏi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi công đoạn nào quyết định thời gian giao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi chỗ nào thường cần kiểm chất lượng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nghe mốc sản xuất như mốc giao, phân biệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi ai xác nhận số lượng cuối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói lô nhận có số lượng khác đã xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đối tác nói đã xuất đủ, đề nghị cùng kiểm chứng từ bằng lời",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chỉ kiểm được ngày mai, chốt mốc và người báo",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Có kết quả kiểm, bàn phần bù/đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Tóm tắt điểm đã thấy và điểm chưa được xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Phía nhà máy cần hỏi quản lý, hẹn liên hệ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Gọi lại đúng ngày, hỏi quyết định và người chịu việc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy thao tác máy/quy trình an toàn. V5P-122 là nhân viên nhận việc tại xưởng, đây là người đến trao đổi với nhà cung cấp.",
+  "cross_stage_refs": [
+    "V5P-122"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

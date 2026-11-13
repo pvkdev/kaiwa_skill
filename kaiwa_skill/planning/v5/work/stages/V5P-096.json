@@ -1,0 +1,234 @@
+{
+  "stage_key": "V5P-096",
+  "uid": "cb64db58-1088-51bd-9146-2a0842e21392",
+  "objective": "Trao đổi xin nghỉ dài ngày, bàn giao và trở lại công việc với phạm vi riêng tư tự chọn.",
+  "knowledge_focus": [
+    "nêu thời gian dự kiến",
+    "phân việc bàn giao",
+    "giữ riêng thông tin nhạy cảm",
+    "điều chỉnh khi quay lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin nghỉ dài ngày",
+      "roles": [
+        "người học",
+        "quản lý/HR"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bàn giao trước khi nghỉ",
+      "roles": [
+        "người học",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trở lại",
+      "roles": [
+        "người học",
+        "quản lý/HR"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Kế hoạch trở lại phải sửa",
+      "roles": [
+        "người học",
+        "quản lý/HR"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói cần nghỉ một giai đoạn và mốc dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Quản lý hỏi lý do riêng, nêu phần muốn chia sẻ và nhu cầu công việc",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chưa chắc ngày trở lại, hẹn ngày cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Lịch nghỉ đề nghị không được chấp nhận ngay, hỏi lựa chọn",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Sau tư vấn HR, xác nhận mốc đã đồng ý",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói trạng thái từng việc đang giữ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Việc quan trọng chưa có người nhận, xin quản lý quyết ưu tiên",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người thay hiểu nhầm thời hạn, sửa mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Có việc phát sinh sau ngày nghỉ, chỉ đầu mối liên hệ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại việc còn treo và người phụ trách",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Gọi trước xác nhận ngày trở lại và lịch gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Tình trạng thay đổi, xin điều chỉnh giờ/nhiệm vụ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhóm đổi quy trình khi vắng, xin hướng dẫn cập nhật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chưa thể đảm nhận đủ khối lượng, bàn ưu tiên giai đoạn đầu",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau tuần đầu, phản hồi điều phù hợp và điều cần sửa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Buổi đầu trở lại thấy khối lượng quá cao, nói việc cụ thể không theo kịp",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Quản lý tưởng mình xin nghỉ tiếp, làm rõ muốn điều chỉnh nhiệm vụ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đề xuất thử lịch nhẹ hơn một giai đoạn và ngày xem lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau thời gian thử, báo điều làm được và điều cần thay",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Khác xin nghỉ một buổi; không khẳng định quyền lợi hay điều kiện nghỉ.",
+  "cross_stage_refs": [
+    "T-49",
+    "V5P-054"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

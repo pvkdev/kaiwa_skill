@@ -1,0 +1,342 @@
+{
+  "stage_key": "H-55",
+  "uid": "46765f4e-2845-5531-aa27-efd97c40d6dc",
+  "objective": "Đại diện jichikai/PTA: bàn việc chung, phân nhiệm, xử lý bất đồng và báo lại cộng đồng.",
+  "knowledge_focus": [
+    "nghe nhu cầu nhiều hộ",
+    "giải thích phương án có điều kiện",
+    "điều hành cuộc họp",
+    "đảm bảo người vắng được cập nhật"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận việc đại diện",
+      "roles": [
+        "người học",
+        "người phụ trách khu"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chuẩn bị cuộc họp",
+      "roles": [
+        "người học",
+        "các thành viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trong cuộc họp",
+      "roles": [
+        "người học",
+        "thành viên PTA/jichikai"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau quyết định",
+      "roles": [
+        "người học",
+        "hộ dân/nhóm"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Việc chung phát sinh sau họp",
+      "roles": [
+        "người học",
+        "đại diện các hộ"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Nhận và điều phối một phần việc PTA",
+      "roles": [
+        "phụ huynh đại diện",
+        "giáo viên hoặc các phụ huynh khác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi phạm vi vai và thời hạn mình nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Chỉ có thể nhận một phần, thương lượng người hỗ trợ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người trước chưa bàn giao, xin mốc gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hàng xóm tưởng mình quyết mọi việc, giải thích thẩm quyền",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Sau khi nhận, giới thiệu đầu mối cho các hộ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi từng nhóm vấn đề họ muốn đưa vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Một hộ không tham dự được, xin ý kiến trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hai yêu cầu va nhau về giờ/chi phí, tóm tắt trung lập",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không đủ thông tin, nói phần cần kiểm trước họp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Xác nhận chương trình nói và người trình bày",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Mời người ít nói đưa quan điểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Một người phản đối mạnh, hỏi điều kiện để họ cân nhắc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Cuộc nói lệch chủ đề, nhắc mục tiêu và thời gian",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chưa đạt đồng thuận, tóm tắt hai lựa chọn và người quyết",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhận quyết định, nói rõ ai làm gì trước mốc nào",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo lại quyết định cho người vắng và lý do ngắn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người nghe tưởng ý kiến họ bị bỏ qua, giải thích phần đã cân nhắc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người nhận việc không làm được, phân lại có hỏi ý họ",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau hoạt động, hỏi phản hồi và một điều nên đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Bàn giao vai đại diện cho người mới bằng việc còn mở",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Sau quyết định, một hộ bị ảnh hưởng mới được phát hiện, xin nghe ý kiến họ",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S020"
+      ]
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Không thể tự đổi quyết định đã có, nói rõ ai có quyền xem lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Một thành viên phát biểu rằng mọi người đã đồng ý, sửa mức độ đồng thuận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chốt cuộc họp bổ sung và người báo tới các hộ vắng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E06",
+      "title": "Hỏi rõ trường và PTA mong phụ huynh phụ trách phần nào trong ngày hội thể thao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Một phụ huynh không thể trực giờ đã phân, thương lượng đổi ca và người xác nhận",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Có đề nghị nêu chuyện riêng của một bé ở cuộc họp, xin tách sang trao đổi phù hợp để giữ riêng tư",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Phụ huynh mới chưa hiểu thông báo, bàn cách hỗ trợ ngôn ngữ và người liên hệ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Đại diện lớp tưởng mình có thể đổi lịch chung, làm rõ phần cần nhà trường quyết",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Sau ngày hội, thu nhận phản hồi khác nhau rồi đề xuất một việc cải thiện cho lần tới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    }
+  ],
+  "coverage_note": "Thành viên tình nguyện Sơ ở V5P-076; không dạy luật địa phương làm mẫu chung. AI079 được cụ thể hóa bằng vai PTA; khác cuộc gặp giáo viên về con ở T-51 và khác thành viên tình nguyện Sơ.",
+  "cross_stage_refs": [
+    "V5P-076"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support",
+  "editorial_contributors": [
+    "support",
+    "root"
+  ]
+}

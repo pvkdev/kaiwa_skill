@@ -1,0 +1,148 @@
+{
+  "stage_key": "T-39",
+  "uid": "b5fbba23-9aa7-5367-811c-a9271dff0490",
+  "objective": "Xin lời khuyên cấp trên cho một lựa chọn công việc rồi báo cách đã áp dụng.",
+  "knowledge_focus": [
+    "Trình bày hai lựa chọn và điều lo",
+    "Hỏi lý do đằng sau gợi ý",
+    "Chọn bước thử thay vì buộc cấp trên quyết hết"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin ý kiến trước khi làm",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gặp ý kiến trái chiều",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sau lời khuyên",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu hai cách trình bày cho khách và hỏi cách phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Cấp trên chọn cách nhưng muốn xem thử trước",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nghe gợi ý thành quyết định bắt buộc, hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi người có kinh nghiệm khác nên tham khảo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói đồng nghiệp khác gợi ý cách ngược lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Cấp trên đề nghị thử trên nhóm nhỏ",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Cấp trên cần nghe khách trước, hẹn trao đổi lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi tiêu chí nào quan trọng hơn khi chọn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo đã thử và khách phản ứng thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Kết quả chưa như dự kiến, hỏi nên điều chỉnh gì",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Áp dụng sửa đổi rồi cập nhật",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Cảm ơn cụ thể việc lời khuyên giúp gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Khác xin chỉ thị: nhân viên chủ động đưa phương án; quyết định cấp cao H-42.",
+  "cross_stage_refs": [
+    "H-42"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

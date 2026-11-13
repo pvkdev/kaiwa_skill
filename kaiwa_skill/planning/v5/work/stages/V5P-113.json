@@ -1,0 +1,236 @@
+{
+  "stage_key": "V5P-113",
+  "uid": "0d2e8640-dcbc-555f-bf18-bbf2bbe25d31",
+  "objective": "Làm việc nhiều ngày tại công ty khách: vào việc, phối hợp tại chỗ, báo thay đổi và rời dự án.",
+  "knowledge_focus": [
+    "Phân biệt người giao việc ở công ty mình và đầu mối khách",
+    "Xác nhận quyền vào khu/thiết bị/thông tin",
+    "Báo tiến độ tại chỗ không hứa vượt phạm vi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Ngày đầu đến nơi khách",
+      "roles": [
+        "nhân viên tại khách",
+        "đầu mối khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xác nhận việc tại chỗ",
+      "roles": [
+        "nhân viên tại khách",
+        "người phụ trách phía khách"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phối hợp với công ty mình",
+      "roles": [
+        "nhân viên tại khách",
+        "leader nội bộ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Vấn đề phát sinh tại khách",
+      "roles": [
+        "nhân viên tại khách",
+        "đầu mối khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Kết đợt làm việc",
+      "roles": [
+        "nhân viên tại khách",
+        "đầu mối khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Giới thiệu vai và hỏi người liên hệ hằng ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi khu có thể vào và quy tắc đón khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Khách tưởng mình là người quyết giá, nói rõ vai",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ được dùng một phòng, xác nhận nơi làm khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nhắc mục tiêu tuần và đầu ra mỗi ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Khách yêu cầu thêm việc ngoài phạm vi, hỏi mục đích và nói cần xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi khi dữ liệu khách chưa sẵn thì làm phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Khách hẹn có dữ liệu chiều, đổi thứ tự việc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo khách đề nghị đổi lịch và tác động",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Leader duyệt đổi một phần, nhắc điều cần nói với khách",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không duyệt, hỏi cách giải thích cho khách",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói lại quyết định nội bộ và nhận phản hồi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Báo lỗi truy cập của mình và xin đúng người hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Khách cần kết quả sớm hơn lịch, hỏi ưu tiên phần nào",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đề nghị bản tạm có giới hạn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Bàn bản tạm và chốt phần còn lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Tóm tắt việc đã xong và điểm còn mở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách chưa xem bản cuối, hẹn ngày phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Gọi sau khi về công ty, nhận góp ý và người xử lý",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Cảm ơn người đã hỗ trợ tại chỗ và nêu đầu mối sau này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Khác chuyến thăm một buổi T-21: hiện diện nhiều ngày và hai tuyến báo cáo. Không dạy quy định truy cập của một công ty cụ thể.",
+  "cross_stage_refs": [
+    "T-21",
+    "V5P-114"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

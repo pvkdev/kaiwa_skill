@@ -1,0 +1,248 @@
+{
+  "stage_key": "V5P-049",
+  "uid": "ea501c3d-fcc4-5165-88a6-486ee695ac3e",
+  "objective": "Đi nha sĩ từ cuộc hẹn đầu đến trao đổi phương án, chăm sóc sau khám và tái khám.",
+  "knowledge_focus": [
+    "nói vị trí răng và cảm giác",
+    "hỏi trước về lựa chọn/thời lượng/chi phí",
+    "xin dừng và báo khó chịu",
+    "hẹn lại và theo dõi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đặt hẹn và đến quầy",
+      "roles": [
+        "người học",
+        "nhân viên nha khoa"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Giải thích với nha sĩ",
+      "roles": [
+        "người học",
+        "nha sĩ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trong buổi điều trị",
+      "roles": [
+        "người học",
+        "nha sĩ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau buổi khám",
+      "roles": [
+        "người học",
+        "nhân viên nha khoa"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Điều trị không theo lịch ban đầu",
+      "roles": [
+        "người học",
+        "nha sĩ và nhân viên hẹn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Gọi báo răng đau khi nhai và hỏi lịch",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Lịch gần nhất không phù hợp, hỏi phương án khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đến khám, nói lần trước từng điều trị chỗ đó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đi muộn vì tàu, gọi báo và hỏi có giữ lịch được không",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Chỉ răng đang khó chịu và mốc bắt đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nha sĩ hỏi đau khi nào; người học phân biệt lúc ăn và lúc nghỉ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Không hiểu tên cách điều trị, xin giải thích bằng lời đơn giản",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói điều mình lo trước khi quyết một phương án",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Xin dừng một lúc vì đau hoặc khó thở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nha sĩ hỏi đã sẵn sàng tiếp tục chưa, người học nói giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nghe nhầm bên trái/phải, sửa ngay trước khi bắt đầu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi hôm nay xong phần nào và còn mấy lần cần trao đổi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi lại lời dặn về ăn uống sau khám",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Có vấn đề sau điều trị, gọi mô tả và xin gặp người chuyên môn",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đổi lịch tái khám vì công việc thay đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Xin giải thích dự toán tiếp theo trước khi xác nhận hẹn",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Ở lần tái khám, nha sĩ nói cần thêm buổi, hỏi lý do và mục tiêu",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Dự toán mới khác lần trước, xin đối chiếu phần thay đổi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Chưa thể quyết thêm buổi ngay, xin giữ thông tin và hẹn trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Sau khi quyết, gọi xác nhận lịch và điều phải hỏi bác sĩ trước buổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "B13 chỉ có đổi lịch; nội dung chuyên môn cần nguồn nha khoa trực tiếp, không tự khuyên điều trị.",
+  "cross_stage_refs": [
+    "S-31",
+    "T-63"
+  ],
+  "source_refs": [
+    "B08:U12"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

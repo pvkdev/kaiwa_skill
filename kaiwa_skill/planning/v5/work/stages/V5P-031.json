@@ -1,0 +1,200 @@
+{
+  "stage_key": "V5P-031",
+  "uid": "ca0daa40-ecd0-5570-8ebc-1560fdb3fb44",
+  "objective": "Trao đổi với quầy nenkin về hồ sơ và thông báo khi quá trình làm việc thay đổi.",
+  "knowledge_focus": [
+    "hỏi quá trình ghi nhận",
+    "đối chiếu mốc công việc",
+    "xin giải thích lựa chọn từ chuyên viên",
+    "hẹn và nhắc lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đặt tư vấn",
+      "roles": [
+        "người học",
+        "nhân viên đặt lịch"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đối chiếu quá trình",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hỏi khi hoàn cảnh khó",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Theo dõi hồ sơ",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói có thông báo nenkin chưa hiểu và xin lịch gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Muốn có hỗ trợ ngôn ngữ, hỏi ngày phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hết lịch gần, nói lý do cần hỏi sớm và xin lựa chọn khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nghe nhầm văn phòng, xác nhận lại địa chỉ trước khi đến",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi các giai đoạn tham gia đang ghi nhận thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Một giai đoạn đổi công ty chưa hiện, nói ngày và nơi làm",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Không nhớ ngày chính xác, xin xem lại rồi gọi sau",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên yêu cầu giấy từ công ty, nhắc lại nơi xin",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói hiện khó theo khoản đóng và muốn biết nơi tư vấn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nghe nhiều lựa chọn, xin giải thích điều kiện từng cái",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chưa quyết ngay, hỏi có thể nhận tư vấn lần nữa",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người học tưởng một lựa chọn tự động áp dụng, hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Quay lại với giấy bổ sung, nhắc lần gặp trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nhân viên chưa tra được, hỏi số tham chiếu và ngày gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Thông tin đã cập nhật nhưng còn một mốc sai, nêu cụ thể",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Tóm tắt hướng dẫn và xác nhận đầu mối kế",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Không khẳng định tư cách hay mức hưởng của người học.",
+  "cross_stage_refs": [
+    "V5P-032",
+    "V5P-091"
+  ],
+  "source_refs": [
+    "W06"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

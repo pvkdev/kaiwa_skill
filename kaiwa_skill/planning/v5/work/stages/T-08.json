@@ -1,0 +1,249 @@
+{
+  "stage_key": "T-08",
+  "uid": "2c4afb8d-e518-5c65-989e-076857a6ce9d",
+  "objective": "Làm quen trong nhiều hoàn cảnh, tạo cuộc trao đổi hai chiều và biết khép lại khi người kia không muốn tiếp.",
+  "knowledge_focus": [
+    "Chọn chủ đề mở an toàn theo bối cảnh",
+    "Hỏi tiếp theo điều người kia vừa nói, tự tiết lộ ở mức tương xứng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gặp trong lớp/nhóm",
+      "roles": [
+        "người học",
+        "người mới gặp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gặp ở sự kiện địa phương",
+      "roles": [
+        "người học",
+        "người dự cùng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cân bằng chủ đề riêng tư",
+      "roles": [
+        "người học",
+        "người mới quen"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nối lần gặp thứ hai",
+      "roles": [
+        "người học",
+        "người đã gặp một lần"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Kết thúc có đường tiếp",
+      "roles": [
+        "người học",
+        "người mới gặp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Mở chuyện bằng hoạt động hai người đang cùng làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi người kia đến nhóm từ bao giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Kể một lý do mình chọn tham gia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người kia hiểu nhầm mình là người hướng dẫn, đính chính vai",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Trao đổi tên và hẹn gặp buổi sau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi họ đã từng dự sự kiện này chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhận xét một điểm đang diễn ra rồi hỏi cảm nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia đang chờ bạn, nói ngắn và nhường họ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia không muốn trò chuyện, khép lại không nài",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gợi hỏi nhau khi gặp lại ở khu khác",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Đáp câu hỏi quê quán bằng mức thông tin mình thoải mái",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Chuyển từ câu hỏi công việc sang sở thích chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hỏi sâu làm người kia im lặng, xin lỗi và đổi chủ đề",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người kia muốn hỏi thêm chuyện của mình, chọn phần muốn kể",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hai bên tìm được một chủ đề cùng quan tâm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nhắc lại sở thích họ đã nói lần trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi hoạt động họ định làm đã diễn ra chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nhớ nhầm tên sự kiện, để người kia sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Rủ cùng xem một hoạt động chung sau khi họ có hứng thú",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Họ chưa muốn hẹn riêng, để cuộc gặp tự nhiên",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói mình phải đi và cảm ơn cuộc trò chuyện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Xin phép trao đổi cách liên lạc nếu phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Họ không muốn trao đổi, tôn trọng và chào",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Họ chưa chắc có đi buổi sau, hẹn gặp nếu cùng đến",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Gặp lại và tiếp chuyện từ điểm đã nói",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Làm quen khác tự giới thiệu S-03; kết thân T-24 cần lịch sử gặp và sự tin cậy.",
+  "cross_stage_refs": [
+    "S-03",
+    "T-24"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

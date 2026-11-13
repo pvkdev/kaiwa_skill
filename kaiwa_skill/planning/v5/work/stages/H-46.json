@@ -1,0 +1,424 @@
+{
+  "stage_key": "H-46",
+  "uid": "7b2bec88-c40f-545d-af47-1ef69cf6dcef",
+  "objective": "Dẫn chương trình và điều phối sự kiện công ty bằng lời từ chuẩn bị, chuyển lượt, ứng biến tới khép và theo dõi.",
+  "knowledge_focus": [
+    "Xác nhận chương trình, tên/chức danh và người quyết thay đổi",
+    "Mời phát biểu rõ người và thời lượng",
+    "Ứng biến giữ không khí phù hợp dịp",
+    "Phối hợp 幹事, kỹ thuật, leader và người được chúc",
+    "Nói hậu sự kiện"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuẩn bị với người chủ trì",
+      "roles": [
+        "MC",
+        "leader sự kiện"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Mở 忘年会 và 新年会",
+      "roles": [
+        "MC",
+        "người tham dự"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Dẫn 歓迎会 và 送別会",
+      "roles": [
+        "MC",
+        "người mới hoặc người rời nhóm"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Dẫn 祝賀/昇進/打ち上げ",
+      "roles": [
+        "MC",
+        "người được chúc hoặc nhóm dự án"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Chuyển lượt và giữ giờ",
+      "roles": [
+        "MC",
+        "người phát biểu"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Người phát biểu đến trễ/vắng",
+      "roles": [
+        "MC",
+        "幹事 hoặc leader"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Thiết bị hoặc địa điểm có sự cố",
+      "roles": [
+        "MC",
+        "kỹ thuật hoặc người dự"
+      ]
+    },
+    {
+      "id": "E08",
+      "name": "Tình huống xã hội nhạy",
+      "roles": [
+        "MC",
+        "leader hoặc người dự"
+      ]
+    },
+    {
+      "id": "E09",
+      "name": "Kết và hậu sự kiện",
+      "roles": [
+        "MC",
+        "người tham dự hoặc 幹事"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi mục đích buổi忘年会 và điểm phải cảm ơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi danh sách người phát biểu và cách gọi đúng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chức danh người được mời đã đổi, xác nhận lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi ai có quyền đổi thứ tự khi phát sinh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt tín hiệu kết thúc từng phần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Mở忘年会 bằng mục đích cảm ơn năm đã qua",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Mời leader tổng kết ngắn mà không thay họ phát biểu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Ở新年会, chào năm mới và giới thiệu mục tiêu buổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người nghe tưởng có tuyên bố kế hoạch mới, làm rõ phần chính do leader nói",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chuyển từ chào năm sang giao lưu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Giới thiệu người mới bằng thông tin họ đồng ý công khai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Mời người mới chào ngắn, không ép kể đời tư",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Giới thiệu người rời nhóm và đóng góp cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người rời không muốn phát biểu dài, mời lời chào ngắn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Kết phần tiễn bằng lời cảm ơn và người tiếp quản",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Giới thiệu thành tựu mà không thổi phồng phần chưa hoàn tất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Mời người được thăng chức nói lời cảm ơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nhắc tên các nhóm hậu trường trong lễ mừng dự án",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Một bộ phận bị bỏ sót, bổ sung công khai đúng lúc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chuyển từ chúc mừng sang giao lưu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Mời diễn giả kế tiếp bằng đúng tên và vai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Diễn giả cần thêm hai phút, nói cách giữ chương trình",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hỏi người phụ trách thời gian còn bao lâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Sau khi diễn giả kết, chuyển sang phần tiếp mà không cắt thô",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E06",
+      "title": "Hỏi người đó đang ở đâu và còn bao lâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Chưa rõ, xin chủ trì chọn phần thay",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Dẫn hoạt động giao lưu trước rồi quay lại",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Người tới, giới thiệu đúng vị trí mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "event_id": "E07",
+      "title": "Mic không hoạt động, báo ngắn và mời chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E07",
+      "title": "Chuyển sang mic khác và nói lại tên phần",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    },
+    {
+      "id": "S031",
+      "event_id": "E07",
+      "title": "Phòng phải đổi, hướng dẫn người dự tới vị trí mới",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S032",
+      "event_id": "E07",
+      "title": "Đến nơi mới, nhắc lại phần đang tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S031"
+      ]
+    },
+    {
+      "id": "S033",
+      "event_id": "E08",
+      "title": "Một người không muốn bị gọi lên, hỏi leader cách ghi nhận khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S034",
+      "event_id": "E08",
+      "title": "Không mời họ lên, chuyển lời chúc tập thể",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S035",
+      "event_id": "E08",
+      "title": "Người dự hỏi có bắt buộc nâng ly rượu, nói có lựa chọn không cồn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S036",
+      "event_id": "E08",
+      "title": "Lời nói đùa trên sân khấu làm người khác khó chịu, dừng và chuyển phù hợp",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S037",
+      "event_id": "E09",
+      "title": "Tóm tắt phần đã diễn ra và cảm ơn người giúp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S038",
+      "event_id": "E09",
+      "title": "Hướng dẫn việc ra về/đồ thất lạc qua đúng đầu mối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S039",
+      "event_id": "E09",
+      "title": "Hôm sau cảm ơn 幹事/kỹ thuật cụ thể",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S037"
+      ]
+    },
+    {
+      "id": "S040",
+      "event_id": "E09",
+      "title": "Tên người được chúc nói sai, xin lỗi riêng và báo sửa ở kênh phù hợp",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S041",
+      "event_id": "E09",
+      "title": "Hỏi leader lần sau cần đổi nhịp phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "MC điều phối lời và nhịp, không làm thay 幹事 đặt quán/thu tiền (V5P-118) hay người dự T-22. T-23 phụ trách chuyến.",
+  "cross_stage_refs": [
+    "V5P-118",
+    "T-22",
+    "T-23"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

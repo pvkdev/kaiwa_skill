@@ -1,0 +1,295 @@
+{
+  "stage_key": "H-28",
+  "uid": "2eda52a1-5314-5def-bf50-f6e5d313b877",
+  "objective": "Nói khác quan điểm về giá trị hoặc lựa chọn quan trọng mà vẫn giữ sự tôn trọng và quan hệ.",
+  "knowledge_focus": [
+    "Phân biệt điều thực sự bất đồng với điều chỉ hiểu khác",
+    "Hỏi lý do/ưu tiên, nói ranh giới và hẹn bàn lại khi cần"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận ra khác quan điểm",
+      "roles": [
+        "người học",
+        "bạn hoặc người thân"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói ý kiến khó",
+      "roles": [
+        "người học",
+        "người thân hoặc bạn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Lúc tranh luận nóng lên",
+      "roles": [
+        "người học",
+        "người thân hoặc bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Quyết định có ảnh hưởng chung",
+      "roles": [
+        "người học",
+        "người cùng quyết"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Người thứ ba liên quan",
+      "roles": [
+        "người học",
+        "người trong nhóm"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau bất đồng",
+      "roles": [
+        "người học",
+        "bạn hoặc người thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi người kia đang lo kết quả nào của quyết định",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mình coi trọng một yếu tố khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Họ hiểu mình phủ nhận trải nghiệm của họ, làm rõ điều mình công nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hai bên đồng ý dữ kiện nhưng khác ưu tiên, gọi tên khác biệt",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt điều hai bên hiểu giống trước khi bàn tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Xin phép trình bày lý do mình khác ý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Dùng trải nghiệm của mình thay vì gán động cơ cho họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia muốn nghe sau, hẹn lúc thích hợp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ không muốn bàn thêm, tôn trọng giới hạn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nói rõ quan hệ quan trọng dù chưa đồng ý",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhận mình đã cắt lời và mời người kia nói hết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Một từ nghe như phán xét, giải thích và chọn từ khác",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đề nghị tạm nghỉ vì cả hai đang căng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không tiếp tục nếu có lời xúc phạm, nêu ranh giới",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Quay lại khi đã hẹn, nhắc điểm chung trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nêu điều mình có thể nhượng và điều không thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi hệ quả nếu chọn cách của người kia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đề nghị thử một thời hạn rồi cùng đánh giá",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Đồng ý nếu có mốc kiểm lại và quyền đổi",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chưa đồng thuận, chốt việc nào vẫn phải làm trước",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi người thứ ba muốn được tham gia quyết định mức nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Một bên kể sai ý người vắng mặt, đề nghị hỏi trực tiếp họ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chỉ chia sẻ phần được phép, giữ chuyện riêng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chốt ai sẽ hỏi người thứ ba và câu hỏi gì",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Quay lại nhóm với ý kiến thật đã được xác nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Hỏi quan hệ có bị ảnh hưởng điều gì cần sửa không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Nói điều mình học được từ góc nhìn họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Họ cần thời gian, không ép làm hòa ngay",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Đồng ý tiếp xúc bình thường nhưng tránh chủ đề tạm thời",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Chốt cách nói lần sau nếu chủ đề trở lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Khác biệt giá trị sâu, không là thuyết phục để thắng. T-38 lựa chọn nhẹ; T-32 quan hệ tình cảm.",
+  "cross_stage_refs": [
+    "T-38",
+    "T-32"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,229 @@
+{
+  "stage_key": "H-23",
+  "uid": "edbc7921-4a04-5338-a33a-9a60bf5bf2a8",
+  "objective": "Tiếp đãi/ăn uống với đối tác: giữ quan hệ, điều phối nhiều người và tránh hiểu nhầm cam kết.",
+  "knowledge_focus": [
+    "Hỏi nhu cầu ăn uống và mức thoải mái",
+    "Giới thiệu người, giữ cơ hội nói cho nhiều vai",
+    "Tách thăm dò trong bữa ăn khỏi quyết định thương mại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mời và lên kế hoạch",
+      "roles": [
+        "người tiếp đãi",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đón ở quán",
+      "roles": [
+        "người tiếp đãi",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trò chuyện tại bàn",
+      "roles": [
+        "người tiếp đãi",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đề nghị công việc xuất hiện",
+      "roles": [
+        "người tiếp đãi",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Kết và sau bữa",
+      "roles": [
+        "người tiếp đãi",
+        "đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Mời đối tác ăn sau buổi làm việc và hỏi thời gian",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đối tác không tiện, đề nghị cà phê giờ làm",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đối tác đi cùng đồng nghiệp, hỏi số người và nhu cầu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi giới hạn đồ ăn/đồ uống trước khi chọn quán",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Chào và giới thiệu hai người chưa gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhầm vai người đi cùng, sửa trước khi vào việc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi khách có muốn xem món không cồn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Khách không muốn uống rượu, chuyển sang lựa chọn khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi cảm nhận khách về lần hợp tác trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách nêu một điều chưa hài lòng, nghe mà không phòng thủ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Một chuyện vui bị hiểu là chê người thứ ba, sửa lời",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Mời người ít nói tham gia bằng câu hỏi trong phạm vi họ phụ trách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Khách hỏi giảm giá ngay tại bàn, nói cần xem số và người duyệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hẹn buổi chính thức với dữ liệu",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Khách nói muốn mở rộng dự án, hỏi mục tiêu trước khi đồng ý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Lời hưởng ứng bị coi là cam kết, xác nhận chỉ là hướng sẽ xem",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Cảm ơn thời gian của khách và hỏi cách về thuận tiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Từ chối tăng hai mà vẫn thân thiện",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Ngày sau gọi nhắc điều công việc đã hẹn, phân biệt điều đã duyệt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Nói với đội mình phản hồi khách mà không kể chuyện riêng ở bàn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Không ép khách/nhân viên uống rượu. T-22 tiệc công ty nội bộ; H-47 họp bữa trưa tự nhiên.",
+  "cross_stage_refs": [
+    "T-22",
+    "H-47"
+  ],
+  "source_refs": [
+    "W07"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

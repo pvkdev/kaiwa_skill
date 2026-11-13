@@ -1,0 +1,230 @@
+{
+  "stage_key": "T-66",
+  "uid": "dce2f6d7-7425-50d4-aedc-6b69ce635bc6",
+  "objective": "Phối hợp chuyến công tác xa: lịch đi, gặp đối tác, lưu trú và báo thay đổi.",
+  "knowledge_focus": [
+    "Xác nhận người/địa điểm/giờ gặp",
+    "Báo thay đổi trước khi đối tác chờ",
+    "Chốt việc cần làm sau khi về"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Lên lịch chuyến đi",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xác nhận với đối tác",
+      "roles": [
+        "nhân viên đi công tác",
+        "đầu mối đối tác"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chậm/hủy di chuyển",
+      "roles": [
+        "nhân viên đi công tác",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Lưu trú và lịch giữa ngày",
+      "roles": [
+        "nhân viên đi công tác",
+        "đồng nghiệp cùng chuyến"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Báo sau công tác",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi mục tiêu công tác và người cần gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi mức linh hoạt giờ đi và về",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Leader yêu cầu có mặt sớm, đổi chuyến phù hợp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi ai duyệt nếu phải đổi khách sạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Gọi xác nhận địa chỉ và lối vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hai tòa cùng tên, kiểm tầng và bộ phận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi đối tác muốn chuẩn bị nội dung gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Trước ngày đi nhắc lại giờ hẹn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo tàu/máy bay chậm và giờ dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đối tác không thể chờ, đề nghị gọi trước",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Họ có thể gặp muộn nhưng chỉ 15 phút",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Đến nơi, xác nhận vẫn gặp như đã đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi điểm gặp buổi sáng và ai mang tài liệu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Phòng chưa sẵn, điều chỉnh nơi chuẩn bị",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi sau buổi khách ai đi gặp nhà cung cấp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hai người tưởng cùng đi, phân lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nói điều đối tác đã đồng ý và điều còn chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Cần khách xác nhận thêm, chốt người gọi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Khách trả lời, cập nhật quyết định",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Nói việc phát sinh cần chuyến sau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "S-15 đi ngắn trong ngày; H-03 công tác gấp có nhiều sự cố và chuyển chi nhánh.",
+  "cross_stage_refs": [
+    "S-15",
+    "H-03"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

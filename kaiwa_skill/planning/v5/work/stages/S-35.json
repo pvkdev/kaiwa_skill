@@ -1,0 +1,201 @@
+{
+  "stage_key": "S-35",
+  "uid": "173b5a2f-020c-52b6-a8de-0ff6573cf855",
+  "objective": "Báo nguy cơ và nghe hướng dẫn sơ tán ở nơi làm bằng lời ngắn, rõ.",
+  "knowledge_focus": [
+    "Nêu vị trí/nguy cơ và số người liên quan",
+    "Hỏi lại khi không nghe rõ hướng dẫn",
+    "Báo đã đến điểm tập trung và ai còn thiếu"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Phát hiện và báo nguy cơ",
+      "roles": [
+        "nhân viên",
+        "người phụ trách an toàn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nghe hướng dẫn rời khu",
+      "roles": [
+        "nhân viên",
+        "người hướng dẫn tại chỗ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sau khi ra ngoài",
+      "roles": [
+        "nhân viên",
+        "người phụ trách tập trung"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tham gia diễn tập và xác nhận phần việc",
+      "roles": [
+        "nhân viên tham gia diễn tập",
+        "người phụ trách an toàn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo khói ở khu kho và vị trí cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Có người chưa ra khỏi phòng, báo tên/vị trí cuối biết",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người nhận nghe sai khu, nhắc lại mốc gần cửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi có cần dừng việc đang làm không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi lối ra được chỉ khi lối quen bị chặn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhắc lại lối đi và điểm tập trung",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Không thấy đồng nghiệp đi cùng, báo cho người phụ trách",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đến điểm tập trung và báo có mặt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo một đồng nghiệp còn chưa thấy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Người phụ trách đang kiểm, nhân viên chờ hướng dẫn",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người kia đến, cập nhật ngay",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi khi nào được lấy đồ cá nhân nếu có thông báo an toàn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi buổi diễn tập bắt đầu ở đâu và mình cần có mặt lúc nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nói mình mới vào công ty và nhờ nhắc lại phần việc của người tham gia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Người đi cùng cần trợ giúp, hỏi người phụ trách nên phối hợp với ai",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nghe nhầm điểm tập trung của buổi tập, xác nhận lại trước khi di chuyển",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Sau buổi tập, báo phần chỉ dẫn mình chưa hiểu và hỏi lần sau cần lưu ý gì",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    }
+  ],
+  "coverage_note": "Chỉ thiết kế nói để tìm người phụ trách và làm theo hướng dẫn; không tự viết quy trình chữa cháy/sơ cứu. AI064 bổ sung diễn tập giao tiếp tại nơi làm, không chỉ dẫn người học tự ứng phó kỹ thuật.",
+  "cross_stage_refs": [
+    "V5P-095"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work",
+  "editorial_contributors": [
+    "work",
+    "root"
+  ]
+}

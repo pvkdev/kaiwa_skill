@@ -1,0 +1,277 @@
+{
+  "stage_key": "V5P-107",
+  "uid": "ed2cfc85-1285-5107-a60f-5099aa4a6bc2",
+  "objective": "Leader giao trách nhiệm và quyền quyết định có giới hạn, hỗ trợ mà không lấy lại việc vô cớ.",
+  "knowledge_focus": [
+    "Nêu kết quả, phạm vi tự quyết và ngưỡng phải hỏi",
+    "Xác nhận nguồn lực/thời gian người nhận",
+    "Hẹn nhịp cập nhật",
+    "Xử lý khi phạm vi đổi hoặc thất bại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn và mời người nhận",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xác định trách nhiệm",
+      "roles": [
+        "leader",
+        "thành viên nhận việc"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giao quyền quyết",
+      "roles": [
+        "leader",
+        "thành viên nhận việc"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nguồn lực và nhịp cập nhật",
+      "roles": [
+        "leader",
+        "thành viên nhận việc"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Khi việc đổi hướng",
+      "roles": [
+        "leader",
+        "thành viên nhận việc"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Kết việc và trao lại quyền",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu vì sao giao phần việc này cho họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi họ có đủ thời gian và muốn nhận mức nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Họ chưa thể nhận vì việc khác, bàn đổi ưu tiên",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ nhận nếu có người hỗ trợ kỹ thuật",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói đầu ra cần đạt và tiêu chí xem là xong",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người nhận tưởng phải làm mọi khâu, tách phần các nhóm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi họ sẽ cần quyết những gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi người nào phải được tham vấn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói khoản/loại thay đổi họ tự quyết được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Vượt ngưỡng thì phải hỏi trước, nhắc ví dụ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người nhận tưởng mọi việc cần duyệt, làm rõ phần tự chủ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi họ sẽ báo khi phát sinh rủi ro nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi nguồn lực họ cần để làm tốt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Không thể cấp toàn bộ, cùng giảm phạm vi",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nói mốc cập nhật không phải xin duyệt từng bước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Đến mốc nghe tiến độ, tháo một vướng mắc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Khách đổi yêu cầu vượt phạm vi đã giao, hỏi đề xuất của họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Cho họ quyết phần nhỏ, phần lớn leader đưa lên",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Họ đã hứa vượt quyền, xử lý với khách và sửa ranh giới",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Leader/nhân viên nhắc lại quyền quyết mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Hỏi họ đã học gì từ quyết định tự làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Kết quả chậm bị coi là thất bại, phân biệt rủi ro đã báo",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Cảm ơn và ghi nhận công lao cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Giao việc kế tiếp với mức quyền điều chỉnh",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "H-44 bàn giao giữa người cũ/mới; đây là giao quyền và trách nhiệm từ leader cho người nhận.",
+  "cross_stage_refs": [
+    "H-44",
+    "H-41",
+    "V5P-105"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

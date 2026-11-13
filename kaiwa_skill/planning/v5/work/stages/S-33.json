@@ -1,0 +1,199 @@
+{
+  "stage_key": "S-33",
+  "uid": "36b7df83-3fb3-5528-8551-ee33068e6fa7",
+  "objective": "Hỏi mua thuốc thông dụng và xác nhận cách hiểu lời hướng dẫn của nhân viên.",
+  "knowledge_focus": [
+    "mô tả triệu chứng ngắn",
+    "hỏi có nhân viên chuyên môn không",
+    "hỏi cách dùng bằng lời",
+    "biết nói mình chưa hiểu"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm đúng quầy thuốc",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Mô tả nhu cầu",
+      "roles": [
+        "người học",
+        "dược sĩ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hiểu lời hướng dẫn",
+      "roles": [
+        "người học",
+        "dược sĩ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trở lại sau khi mua",
+      "roles": [
+        "người học",
+        "dược sĩ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói điều mình cần hỏi và nhờ chỉ quầy dược",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Quầy không có người phụ trách loại thuốc hỏi, hỏi lúc khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Món muốn mua hết, nhờ chỉ ai có thể tư vấn lựa chọn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi lại nhân viên khi nhầm mỹ phẩm với thuốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói đau bụng từ hôm nay và hỏi có thể tư vấn không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói đã dùng thuốc khác, xin hỏi trước khi chọn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhân viên bảo nên hỏi cơ sở y tế, xác nhận nơi liên hệ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không nghe rõ tên sản phẩm, hỏi cách nhận đúng hộp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi “uống khi nào” theo hướng dẫn đang cầm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hỏi thuốc có thể gây buồn ngủ hay không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin nhắc lại bằng câu ngắn vì lần đầu chưa hiểu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhắc lại điều nhân viên vừa giải thích trước khi mua",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Mang lại hộp để hỏi câu hướng dẫn còn mơ hồ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hỏi nơi nên liên hệ khi có cảm giác bất thường",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Sản phẩm mua không đúng loại đã hỏi, trao đổi với quầy",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Cảm ơn và xác nhận tên người/cơ sở sẽ tư vấn tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Thuốc theo đơn/lâu dài thuộc V5P-056; không tự chọn liều hay khuyên dùng thuốc.",
+  "cross_stage_refs": [
+    "V5P-056"
+  ],
+  "source_refs": [
+    "B08:U11"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

@@ -1,0 +1,152 @@
+{
+  "stage_key": "T-12",
+  "uid": "b3eb7a7f-38b1-52c1-a2a0-4b2295779e70",
+  "objective": "Mở cuộc gọi công sở, xác nhận tên/số/việc và phục hồi khi nghe không rõ.",
+  "knowledge_focus": [
+    "Tự xưng rõ công ty và bộ phận",
+    "Đọc lại số, ngày, tên riêng",
+    "Xin nhắc lại mà giữ nhịp gọi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở cuộc gọi và xác nhận người",
+      "roles": [
+        "nhân viên",
+        "người gọi đối tác"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thông tin nghe chưa rõ",
+      "roles": [
+        "nhân viên",
+        "người gọi đối tác"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Kết thúc cuộc gọi rõ việc",
+      "roles": [
+        "nhân viên",
+        "người gọi đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhận máy và xác nhận công ty người gọi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tên khách nhiều âm giống, xin đánh vần hoặc nhắc lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi người gọi muốn gặp ai và việc gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người gọi chưa muốn nói chi tiết, chuyển đúng người",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Xin nhắc lại số đơn vì đường truyền nhiễu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đọc lại số và phát hiện sai một chữ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi lại ngày giao là thứ ba hay thứ năm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Xác nhận ngày bằng tháng và số ngày",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Tóm tắt người sẽ gọi lại và lúc nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Chưa chắc giờ, nói sẽ kiểm rồi liên hệ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Gọi lại với giờ đã xác nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói lời kết phù hợp quan hệ đối tác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "S-37/S-39 nền cuộc gọi; T-14–16 xử lý chuyển máy, lời nhắn và khách giận.",
+  "cross_stage_refs": [
+    "S-37",
+    "S-39",
+    "T-14",
+    "T-15",
+    "T-16"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,269 @@
+{
+  "stage_key": "V5P-109",
+  "uid": "c62a0fd8-664a-5cbd-a854-ee0c8f355a00",
+  "objective": "Phỏng vấn tuyển người từ vai người tuyển dụng: hỏi bằng chứng năng lực, giải thích việc và bước tiếp công bằng.",
+  "knowledge_focus": [
+    "Nói rõ vai và mục tiêu cuộc gặp",
+    "Hỏi kinh nghiệm gắn công việc thay vì chuyện riêng",
+    "Cho ứng viên hỏi lại",
+    "Tách đánh giá trong đầu khỏi lời hứa nhận việc"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở buổi phỏng vấn",
+      "roles": [
+        "người tuyển dụng",
+        "ứng viên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi bằng chứng kinh nghiệm",
+      "roles": [
+        "người tuyển dụng",
+        "ứng viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chuyển ngành hoặc khoảng nghỉ",
+      "roles": [
+        "người tuyển dụng",
+        "ứng viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tình huống công việc thật",
+      "roles": [
+        "người tuyển dụng",
+        "ứng viên"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Ứng viên hỏi ngược",
+      "roles": [
+        "người tuyển dụng",
+        "ứng viên"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Kết và liên hệ sau",
+      "roles": [
+        "người tuyển dụng",
+        "ứng viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Giới thiệu những người dự và thời lượng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói ngắn vai tuyển, vai người quản lý công việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi ứng viên đã hiểu vai ứng tuyển ra sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Ứng viên hiểu sai phạm vi công việc, giải thích",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Xin một ví dụ việc ứng viên tự xử lý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi phần ứng viên làm và phần nhóm làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Câu trả lời nói thành tích nhóm, hỏi đóng góp riêng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi kết quả và điều họ học được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi kỹ năng từ ngành cũ có thể chuyển sang việc này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Ứng viên chưa có kinh nghiệm trực tiếp, hỏi cách họ sẽ học",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không ép nêu lý do riêng cho khoảng nghỉ, hỏi năng lực hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi hỗ trợ nào giúp họ bắt đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nêu tình huống khách đổi ưu tiên và hỏi cách ứng viên làm rõ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hỏi ai họ sẽ báo khi vượt quyền",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Ứng viên tưởng chỉ cần một đáp án, giải thích quan tâm tới cách nghĩ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi họ cần thêm dữ kiện nào trước quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Mời ứng viên hỏi về việc hằng ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Câu hỏi lương chi tiết thuộc HR, hẹn đúng đầu mối",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hỏi điều gì khiến ứng viên còn băn khoăn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Có thể chia sẻ lộ trình đào tạo nhưng chưa hứa vị trí khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Nêu bước tuyển tiếp và thời điểm dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Ứng viên tưởng lời khen là offer, làm rõ chưa có quyết định",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Đến mốc có thay đổi, gọi báo trạng thái",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Không phù hợp, nói quyết định rõ và giữ tôn trọng",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    }
+  ],
+  "coverage_note": "T-07/V5P-083 là vai ứng viên owner support; nguồn B16 là ứng viên và không tự biến thành mẫu vai tuyển.",
+  "cross_stage_refs": [
+    "T-07",
+    "V5P-083"
+  ],
+  "source_refs": [
+    "W02"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,283 @@
+{
+  "stage_key": "V5P-114",
+  "uid": "bfce5e6f-3e03-5d55-bb27-9244786e943a",
+  "objective": "Thống nhất thay đổi yêu cầu với khách sau khi việc đã bắt đầu, làm rõ tác động và quyền duyệt.",
+  "knowledge_focus": [
+    "Xác nhận yêu cầu mới so với phạm vi cũ",
+    "Nói tác động tới thời gian/chi phí/việc đã làm",
+    "Tách đề xuất đổi khỏi quyết định đã duyệt",
+    "Theo dõi sau đổi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khách nêu đổi yêu cầu",
+      "roles": [
+        "người phụ trách dự án",
+        "khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đánh giá tác động với nội bộ",
+      "roles": [
+        "người phụ trách",
+        "đội kỹ thuật hoặc leader"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đề xuất phương án cho khách",
+      "roles": [
+        "người phụ trách dự án",
+        "khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Quyền quyết và phê duyệt",
+      "roles": [
+        "người phụ trách dự án",
+        "khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau khi chốt",
+      "roles": [
+        "người phụ trách dự án",
+        "đội nội bộ"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Khách đổi tiếp hoặc rút yêu cầu",
+      "roles": [
+        "người phụ trách dự án",
+        "khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi khách muốn đổi kết quả hay chỉ cách trình bày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Khách nói \"nhỏ thôi\" nhưng ảnh hưởng hệ thống, hỏi ví dụ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhắc lại phần cũ đang làm để thấy chỗ đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi lý do và hạn khách thực sự cần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói yêu cầu mới và phần việc phải làm lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Kỹ thuật chỉ làm được nếu dời mốc",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi chi phí/phần hỗ trợ phát sinh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chưa có ước tính, hẹn giờ có số",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Đưa hai phương án: giữ mốc giảm phạm vi hoặc giữ phạm vi dời mốc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách muốn giữ một chức năng cốt lõi, làm rõ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Khách không nhận cả hai, xin biết ưu tiên không đổi",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Đề nghị giai đoạn tiếp theo cho phần thêm",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi ai phía khách có thể duyệt đổi phạm vi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Đầu mối phải hỏi sếp, không coi như đồng ý",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Một câu \"được đấy\" bị xem như duyệt, xác nhận mức cam kết",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Có người duyệt, đọc lại điều thay đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nói phần việc nào dừng, phần nào bắt đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Một thành viên vẫn làm theo brief cũ, sửa ngay",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hỏi mốc cập nhật đầu sau thay đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Báo tiến độ theo mốc mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Khách muốn quay về yêu cầu ban đầu, hỏi phần đã làm ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Chỉ quay một phần, nêu tác động",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Cần xác minh với đội, hẹn trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Chốt phạm vi thực tế và người xác nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "V5P-098 làm rõ brief trước nhận; đây là thay đổi sau cam kết. Không tạo lời hứa pháp lý/hợp đồng giả.",
+  "cross_stage_refs": [
+    "V5P-098",
+    "H-32",
+    "V5P-115"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

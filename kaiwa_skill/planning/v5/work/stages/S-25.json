@@ -1,0 +1,218 @@
+{
+  "stage_key": "S-25",
+  "uid": "eb72c7c9-57d0-51a3-9260-0dbbc625cdaa",
+  "objective": "Nhờ người khác giúp một việc nhỏ, nói rõ phạm vi và đáp lại theo kết quả.",
+  "knowledge_focus": [
+    "Nêu việc, thời điểm và lý do ngắn",
+    "Nhận lời, điều kiện, từ chối và cảm ơn/đổi người hỗ trợ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhờ bạn/người quen",
+      "roles": [
+        "người học",
+        "bạn hoặc người quen"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhờ người lạ/người phục vụ",
+      "roles": [
+        "người học",
+        "người gần đó"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khi việc thay đổi",
+      "roles": [
+        "người học",
+        "người đã nhận giúp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đáp lời nhờ",
+      "roles": [
+        "người học",
+        "người nhờ mình"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhờ bạn chỉ đường đến nơi mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhờ giữ hộ món đồ trong vài phút",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bạn đồng ý, xác nhận lúc lấy lại",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bạn chỉ giữ được đến giờ cụ thể, đổi kế hoạch",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Bạn không tiện, cảm ơn và tìm cách khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhờ mở cửa khi đang bê đồ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi có thể nhờ chụp một tấm ảnh không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia đang vội, đề nghị một cách nhanh hơn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia từ chối, khép chuyện lịch sự",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Kiểm đã nhận lại điện thoại/đồ và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo món cần giữ lâu hơn dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người giúp không thể ở thêm, hỏi điểm giao lại",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hai bên hiểu khác giờ gặp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chốt giờ và chỗ nhận bằng một câu rõ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Đến nhận lại và cảm ơn người đã giúp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nhận giúp và hỏi việc cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Chỉ giúp được phần đầu, nêu giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Không thể giúp hôm nay, nói ngắn và giữ quan hệ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Đang giúp thì phát sinh thêm việc, hỏi ưu tiên",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Giao lại phần đã làm và nêu phần còn lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Việc nhỏ nền Sơ; nhờ khó và thương lượng giới hạn H-34/H-29.",
+  "cross_stage_refs": [
+    "H-34",
+    "H-29"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

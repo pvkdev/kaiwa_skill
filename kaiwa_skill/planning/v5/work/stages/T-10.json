@@ -1,0 +1,207 @@
+{
+  "stage_key": "T-10",
+  "uid": "b814058e-4e25-513d-8770-07af6d6da73f",
+  "objective": "Dùng thiết bị văn phòng và họp trực tuyến, nhờ hỗ trợ khi ảnh hưởng cuộc trao đổi.",
+  "knowledge_focus": [
+    "Mô tả lỗi nhìn thấy/nghe thấy",
+    "Nêu mức gấp và tác động cuộc họp",
+    "Xác nhận phương án tạm khi chưa sửa xong"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuẩn bị họp trực tuyến",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp phụ trách họp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Sự cố giữa cuộc họp",
+      "roles": [
+        "nhân viên",
+        "người chủ trì"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thiết bị chung và hỗ trợ",
+      "roles": [
+        "nhân viên",
+        "IT hoặc người phụ trách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Phối hợp họp hybrid và giờ làm không trùng nhau",
+      "roles": [
+        "thành viên nhóm",
+        "đồng nghiệp tại chỗ hoặc từ xa"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xác nhận giờ và cách vào buổi họp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Không nghe tiếng khi thử trước giờ, mô tả hiện tượng",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Được hướng dẫn đổi thiết bị, xác nhận tiếng đã rõ",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa tìm ra lỗi, chốt dùng phòng khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Báo âm thanh đứt quãng và xin người nói nhắc lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Mất kết nối, gọi báo sẽ vào lại",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chưa vào lại được, đề nghị đồng nghiệp trình bày phần mình",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Vào lại, hỏi quyết định vừa lỡ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo máy in không nhận lệnh trước buổi khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Người hỗ trợ tưởng hết giấy, nói rõ màn hình báo gì",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chưa sửa được, xin mượn máy phòng khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Thiết bị hoạt động lại, báo người bị ảnh hưởng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi giờ họp đang nói theo múi giờ nào khi có thành viên ở nước ngoài",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Không thể họp cùng giờ, đề nghị cuộc gọi ngắn khác để cập nhật phần mình",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Người ở phòng họp nói chồng lên nhau, xin từng người nhắc phần vừa quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Người từ xa chưa xem được nội dung đang trình bày, đề nghị mô tả hoặc đổi cách trao đổi",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Sau khi kết nối lại, tóm tắt phần đã hiểu và hỏi điểm mình còn bỏ lỡ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy thao tác kỹ thuật cụ thể hoặc viết ticket; S-08 là vị trí đồ cơ bản. AI103 là biến thể phối hợp trong T-10, không tạo chặng chỉ vì dùng công cụ họp khác.",
+  "cross_stage_refs": [
+    "S-08"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work",
+  "editorial_contributors": [
+    "work",
+    "root"
+  ]
+}

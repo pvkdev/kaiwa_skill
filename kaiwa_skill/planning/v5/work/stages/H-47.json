@@ -1,0 +1,188 @@
+{
+  "stage_key": "H-47",
+  "uid": "bbf51edf-691f-5148-8b81-a8f2be616491",
+  "objective": "Bàn chuyện kinh doanh tự nhiên ở bữa trưa mà vẫn xác nhận điều nào là trao đổi và điều nào là quyết định.",
+  "knowledge_focus": [
+    "Mở chuyện theo hoàn cảnh chung",
+    "Thăm dò ý tưởng không ép chốt tại bàn ăn",
+    "Chuyển nội dung quan trọng về người/quy trình quyết phù hợp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bắt đầu bữa trưa",
+      "roles": [
+        "nhân viên",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khách gợi ý hợp tác",
+      "roles": [
+        "nhân viên",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Ý kiến nhạy trong bữa ăn",
+      "roles": [
+        "nhân viên",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau bữa trưa",
+      "roles": [
+        "nhân viên",
+        "đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi khách có món cần tránh trước khi chọn quán",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói chuyện về chuyến đi mà không hỏi đời tư",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Khách tưởng câu hỏi xã giao là điều tra nhu cầu mua, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chuyển nhẹ sang dự án hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi ý khách muốn thử ở quy mô nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Mình chỉ có thể thăm dò, cần cấp trên duyệt",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi ai bên khách cũng cần tham gia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Khách chưa biết, hẹn cuộc nói chính thức",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Khách phàn nàn một đầu mối của mình, nghe và xin ví dụ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách chỉ kể chuyện cũ, không yêu cầu đổi người",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói sẽ hỏi nội bộ mà không hứa kết quả",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau bữa trưa gọi báo đã chuyển đúng người",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nhắc ý tưởng đã bàn là đề xuất chưa duyệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hẹn cuộc họp chính thức để chốt",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đối tác không muốn tiếp, cảm ơn và giữ quan hệ",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi người đi cùng có điều gì cần làm ngay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Tiếp đãi chiến lược H-23; T-19 là xã giao và từ chối lời mời cơ bản.",
+  "cross_stage_refs": [
+    "H-23",
+    "T-19"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

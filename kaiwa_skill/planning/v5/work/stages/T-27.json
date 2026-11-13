@@ -1,0 +1,255 @@
+{
+  "stage_key": "T-27",
+  "uid": "cbb0ebd2-cf98-5a1f-b6b5-6693f7f86eb7",
+  "objective": "Duy trì quan hệ hàng xóm/người quen qua lời mời, nhờ và xử lý phiền toái lặp lại ở mức Trung.",
+  "knowledge_focus": [
+    "Nói điều quan sát được và nhu cầu cụ thể",
+    "Đáp lời nhắc khi mình gây bất tiện, thương lượng cách dùng chung"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Quan hệ đầu vào",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhờ việc gần nhà",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Mình bị nhắc",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Mình cần nói về bất tiện",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sinh hoạt khu chung",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Chào sau khi chuyển đến và hỏi lịch sinh hoạt chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhận lời mời dự buổi gặp khu nhà, hỏi điều cần chuẩn bị",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không dự trọn buổi được, nêu thời gian có thể tham gia",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa thể nhận phần việc, từ chối giữ quan hệ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Gặp lại sau buổi và hỏi diễn biến để bắt nhịp",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhờ trông hộ một món trong ít phút",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi hàng xóm có nhận thay kiện hàng khi mình vắng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Họ chỉ tiện một ngày, điều chỉnh lịch giao",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ không muốn nhận thay, cảm ơn và chọn cách khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhận lại món đúng giờ, cảm ơn và không kéo dài nghĩa vụ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nghe nhắc đồ mình chắn lối rồi hỏi vị trí cần chuyển",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Mình tưởng đó là đồ của người khác, kiểm trước khi đáp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chưa thể di chuyển ngay, nói giờ có thể làm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chuyển xong, báo lại và cảm ơn đã nhắc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Vài ngày sau hỏi việc cũ đã ổn chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nêu thời gian tiếng ồn ảnh hưởng mình, không quy kết động cơ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hàng xóm đồng ý giảm tiếng, nói lời cảm ơn và hẹn kiểm lại",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Họ có việc cố định trong giờ đó, cùng tìm khoảng ít ảnh hưởng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Tiếng ồn lặp lại, nhắc kết quả đã hứa và hỏi khó khăn",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chuyển trao đổi sang quản lý khi nói trực tiếp chưa được, tường thuật trung tính",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi lượt sử dụng khu để xe hoặc nơi phơi chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hai người hiểu khác quy tắc treo thông báo, cùng xác nhận với quản lý",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Đổi ca dùng chung khi một người vắng",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chốt cách báo khi cần đổi lượt",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Hỏi ý kiến về hoạt động khu nhà ở vai cư dân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Không gọi hàng xóm khó tính. Quản lý tòa V5P-022, rác cồng kềnh V5P-019, mâu thuẫn xã hội dài H-11.",
+  "cross_stage_refs": [
+    "V5P-022",
+    "V5P-019",
+    "H-11"
+  ],
+  "source_refs": [],
+  "source_findings": [
+    "Đã đọc B08 Unit 22 và B26 bài マンション cho lời hỏi quy tắc, vai nhắc và người bị nhắc; nhánh quan hệ kéo dài do AI biên soạn."
+  ],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

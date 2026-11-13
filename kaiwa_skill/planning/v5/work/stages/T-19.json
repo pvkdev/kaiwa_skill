@@ -1,0 +1,184 @@
+{
+  "stage_key": "T-19",
+  "uid": "b4081e93-f9d7-5da6-a69c-85e57ae4dd8b",
+  "objective": "Xã giao với khách hàng và từ chối lời mời ngoài phạm vi công việc mà vẫn giữ quan hệ.",
+  "knowledge_focus": [
+    "Chọn chủ đề xã giao an toàn",
+    "Đổi từ xã giao sang việc",
+    "Từ chối/giới hạn lời mời rõ và lịch sự"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bắt chuyện trước việc",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhận lời mời ăn/uống",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Ranh giới khi gặp đối tác",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau lời mời",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi khách chuyến đi đến đây có thuận tiện không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói về khu vực văn phòng mà không kéo quá dài",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Khách tưởng lời gợi ý ăn tối là lời mời chính thức, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chuyển vào mục tiêu buổi gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Khách rủ ăn tối sau họp, hỏi mục đích và người tham dự",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Có thể dự, chốt giờ và người đi cùng",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Không dự được, cảm ơn và đề nghị gặp giờ làm",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chỉ dự bữa trưa, không đi tiếp buổi tối",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Từ chối đồ uống có cồn và chọn đồ khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Từ chối thảo luận thông tin chưa được phép công bố",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hẹn người phụ trách sẽ giải đáp phần được phép",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau khi hỏi nội bộ, nói rõ phần có thể chia sẻ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Cảm ơn cuộc gặp và nhắc bước công việc kế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Khách tưởng sẽ gửi quyết định ngày mai, sửa thành hẹn cập nhật",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đúng mốc gọi báo trạng thái",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Tiếp đãi và chiến lược quan hệ ở H-23; người dự tiệc nội bộ T-22.",
+  "cross_stage_refs": [
+    "H-23",
+    "T-22"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,297 @@
+{
+  "stage_key": "V5P-048",
+  "uid": "0994c582-42d5-5543-ba96-f7deb59c3be5",
+  "objective": "Nói rõ tình huống xe gặp trục trặc hoặc va chạm để tìm hỗ trợ phù hợp và phối hợp các bên sau đó.",
+  "knowledge_focus": [
+    "Ưu tiên báo vị trí, tình trạng người liên quan và xin hỗ trợ chuyên môn",
+    "Tường thuật quan sát, tránh phán lỗi, xác nhận đầu mối và lần liên hệ tiếp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xe hỏng khi đang đi",
+      "roles": [
+        "người học",
+        "đơn vị hỗ trợ xe"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Báo cho người liên quan",
+      "roles": [
+        "người học",
+        "người đang chờ hoặc bên thuê xe"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Va chạm và xin hỗ trợ",
+      "roles": [
+        "người học",
+        "người liên quan hoặc đầu mối khẩn cấp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trao đổi với bên kia",
+      "roles": [
+        "người học",
+        "người liên quan"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Bảo hiểm/đơn vị xe",
+      "roles": [
+        "người học",
+        "nhân viên bảo hiểm hoặc hãng thuê"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau ngày sự cố",
+      "roles": [
+        "người học",
+        "người liên quan hoặc nhân viên hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói vị trí hiện tại bằng mốc, chiều đường và xe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Mô tả xe không đi tiếp được và điều đã xảy ra",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đơn vị cần điều xe, hỏi chờ ở nơi nào theo chỉ dẫn an toàn",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không thể sửa tại chỗ, hỏi phương án kéo xe",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc giờ dự kiến và số liên hệ lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Báo mình sẽ trễ vì xe hỏng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói mình an toàn hay cần hỗ trợ y tế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia cần nhận đồ gấp, bàn người thay",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia tưởng mình đã tiếp tục đi, nói rõ vẫn đang chờ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Cập nhật khi đã có xe hỗ trợ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi người khác có bị thương không và xin hỗ trợ ngay nếu cần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói nơi xảy ra và số xe với người có thẩm quyền",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hai người kể thời điểm khác, nói điều mình trực tiếp thấy",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Được hướng dẫn chờ, xác nhận mình nên ở đâu và ai sẽ tới",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc bước tiếp từ người phụ trách",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói điều mình thấy trước/sau va chạm, không nhận định trách nhiệm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi tên và đầu mối liên hệ theo hướng dẫn tại chỗ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người kia muốn giải quyết ngay, nói cần hỏi bên có thẩm quyền trước",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Hai bên không nhớ giống nhau vị trí, kiểm mốc thực tế",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Không thống nhất diễn biến, ghi nhận khác biệt bằng lời với người phụ trách",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Tóm tắt sự kiện và những người đã liên hệ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi cần trình bày thêm thông tin nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hồ sơ cần kiểm, chốt mốc phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Liên hệ lại khi có thông tin/chi phí mới",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Nhắc ai phụ trách xe, ai liên hệ bên còn lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Báo kết quả kiểm xe hoặc tình trạng mình đã biết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Đơn vị hiểu nhầm xe đã sửa xong, nói phần còn chờ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Có hai phương án đi tiếp, hỏi tác động mỗi cách",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Gọi lại nếu bên phụ trách chưa liên hệ như đã hẹn",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Chốt bước hoàn tất và lời cảm ơn phù hợp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Kế hoạch giao tiếp, không hướng dẫn pháp lý/y tế/lái xe sau va chạm. Câu cầu cứu Sơ nằm ở chặng khẩn cấp.",
+  "cross_stage_refs": [
+    "V5P-047",
+    "V5P-126",
+    "V5P-057",
+    "V5P-058"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

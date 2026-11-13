@@ -1,0 +1,192 @@
+{
+  "stage_key": "H-02",
+  "uid": "90c92180-2bf6-579d-8235-e80f6992e1da",
+  "objective": "Nhận vị trí mới và ra mắt đội: nói kỳ vọng, lắng nghe lo ngại và định cách làm đầu tiên.",
+  "knowledge_focus": [
+    "Nói điều mình biết/chưa biết về đội",
+    "Hỏi công việc đang chạy trước khi đổi cách",
+    "Làm rõ quyền quyết và lịch trao đổi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Thông báo vai mới",
+      "roles": [
+        "leader mới",
+        "đội"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gặp từng thành viên",
+      "roles": [
+        "leader mới",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhận bàn giao từ người cũ",
+      "roles": [
+        "leader mới",
+        "leader tiền nhiệm"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đề xuất nhịp làm việc",
+      "roles": [
+        "leader mới",
+        "đội"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Giới thiệu phạm vi vai mới và người vẫn phụ trách chuyên môn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đội tưởng mọi quyết định phải qua mình, nói rõ mức tự quyết của họ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nêu điều muốn lắng nghe trong hai tuần đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi nhóm điều cần giữ ổn định",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi việc họ đang chịu trách nhiệm và điều đang vướng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người kia chưa muốn chia sẻ lo lắng, hẹn lần sau",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi họ mong leader hỗ trợ quyết định nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Sau tuần đầu cập nhật một hỗ trợ đã thực hiện",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi quyết định nào đang chờ và người bị ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Lời hứa cũ chỉ là đề xuất, xác nhận trạng thái",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi thành viên nào cần liên hệ riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau khi hỏi, báo điều đã rõ và điều cần chuyển tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Đề xuất giờ cập nhật và hỏi có vướng ca/khách không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Giờ không phù hợp, chọn giờ khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Thử trong hai tuần rồi xem lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Sau hai tuần hỏi điều nên đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Khác ngày đầu nhân viên T-09; leader 1:1 sâu V5P-105, bàn giao H-44.",
+  "cross_stage_refs": [
+    "T-09",
+    "V5P-105",
+    "H-44"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

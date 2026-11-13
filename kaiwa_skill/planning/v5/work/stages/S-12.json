@@ -1,0 +1,234 @@
+{
+  "stage_key": "S-12",
+  "uid": "0451e369-ff04-5aa8-9946-5815f12ae2c4",
+  "objective": "Tìm và hỏi cách dùng những tiện ích công cộng trong khu phố.",
+  "knowledge_focus": [
+    "Hỏi vị trí, giờ, điều kiện vào thư viện/cơ sở cộng đồng",
+    "Nói nhu cầu tham gia một hoạt động địa phương ở mức người mới"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khám phá khu phố",
+      "roles": [
+        "người học",
+        "người ở quầy thông tin"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Sử dụng thư viện",
+      "roles": [
+        "người học",
+        "nhân viên thư viện"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tham gia ở cơ sở cộng đồng",
+      "roles": [
+        "người học",
+        "nhân viên cơ sở"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đặt chỗ hoặc phòng ở cơ sở cộng đồng",
+      "roles": [
+        "người dân",
+        "nhân viên trung tâm cộng đồng hoặc thể thao"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi thư viện gần nơi ở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi đường đến trung tâm cộng đồng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi cơ sở nào mở cuối tuần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỗ mình định tới đang đóng, xin nơi tương tự",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại lối đi rồi cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi cách tìm sách theo chủ đề",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi có thể mượn bằng gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chưa mang giấy tờ cần thiết, hỏi có thể xem tại chỗ không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không tìm được cuốn được chỉ, nhờ nhân viên kiểm lại",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Quay lại hỏi sách đã có người trả chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi buổi sinh hoạt dành cho người mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi còn chỗ và giờ đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Buổi đã đủ, hỏi buổi kế tiếp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Hiểu nhầm phải đăng ký trước, nhờ xác nhận cách tham gia",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt mình sẽ đến đúng buổi nào",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói muốn dùng một phòng cho nhóm nhỏ và hỏi còn chỗ không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Giờ muốn dùng đã kín, hỏi một giờ khác cùng ngày",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Có chỗ nhưng cần nói mục đích sử dụng, giải thích ngắn hoạt động của nhóm",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chốt phòng và nhắc lại giờ nhận, trả theo lời nhân viên",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Hôm đến không tìm thấy phòng được chỉ, nhờ dẫn hoặc nói lại tầng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E04",
+      "title": "Báo đã dùng xong và hỏi có cần kiểm lại cùng nhân viên không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Giữ khu phố, thư viện, cơ sở cộng đồng. Tóc/gym/circle và vai tổ chức cộng đồng ở chặng khác. Mở AI074 thành cuộc nói đặt/dùng cơ sở; không chỉ biết tên thư viện hay trung tâm.",
+  "cross_stage_refs": [
+    "V5P-009",
+    "V5P-015",
+    "V5P-077",
+    "H-55"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily",
+  "editorial_contributors": [
+    "daily",
+    "root"
+  ]
+}

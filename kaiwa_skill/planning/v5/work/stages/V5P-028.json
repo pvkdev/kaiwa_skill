@@ -1,0 +1,204 @@
+{
+  "stage_key": "V5P-028",
+  "uid": "7dcd4f2b-b5b2-5119-a7fc-ca9fb593881f",
+  "objective": "Hỏi đúng đầu mối về cư trú của vợ/chồng/con và phối hợp thông tin của nhiều người.",
+  "knowledge_focus": [
+    "nêu ai ở đâu và quan hệ",
+    "đối chiếu tên phiên âm",
+    "hỏi thứ tự liên hệ",
+    "chuyển câu hỏi vượt thẩm quyền"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nói tình trạng gia đình",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tên và giấy quan hệ",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phối hợp giữa cơ quan",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Cập nhật sau tư vấn",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu vợ/chồng ở Nhật, con ở nước ngoài và điều muốn hỏi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên hỏi quan hệ, người học nói bằng thông tin đang có",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Kế hoạch người nhà đến đổi, cập nhật mốc mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Câu hỏi vượt quầy thông tin, xin chuyên viên/đầu mối khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi tên hai thứ tiếng nên đối chiếu ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Tên con viết khác trên hai giấy, nói rõ phần khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chưa có giấy nguồn, hỏi có thể hẹn tư vấn trước không",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhắc lại cơ quan nào xác nhận thông tin gốc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi nên nói với quầy nào trước khi người nhà đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Quầy đầu chỉ sang nơi khác, xác nhận mục đích cuộc gặp kế",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hai nơi hướng dẫn khác nhau, tóm tắt điều đã nghe và xin làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không liên hệ được người nhà để kiểm thông tin, xin hẹn sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Gọi lại với thông tin quan hệ đã xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nhân viên cần xem thêm trường hợp riêng, hỏi cách nhận trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Người nhà không đi đúng ngày dự kiến, hỏi tác động cần kiểm",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Tóm tắt việc từng người sẽ liên hệ tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Kết hôn/gia đình V5P-069 bàn quan hệ và kế hoạch; đây là đầu mối cư trú.",
+  "cross_stage_refs": [
+    "V5P-027",
+    "V5P-069"
+  ],
+  "source_refs": [
+    "W01",
+    "W02"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

@@ -1,0 +1,310 @@
+{
+  "stage_key": "H-10",
+  "uid": "0cdf995e-3b39-5842-b318-bab803f95731",
+  "objective": "Thương lượng trách nhiệm, chi phí và cách giải quyết bất đồng trong quan hệ thuê nhà dài hạn.",
+  "knowledge_focus": [
+    "Đối chiếu cam kết cũ với đề nghị mới, nghe căn cứ từng bên và phân biệt đã nhất trí với còn bất đồng",
+    "Nói tác động của từng phương án, hỏi căn cứ, xác nhận người quyết và mốc"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đối chiếu và thương lượng điều kiện gia hạn",
+      "roles": [
+        "người học",
+        "người quản lý hợp đồng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Sửa chữa có tranh luận",
+      "roles": [
+        "người học",
+        "chủ nhà hoặc quản lý"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thay đổi điều kiện sống",
+      "roles": [
+        "người học",
+        "chủ nhà hoặc quản lý"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chuyển đi và kiểm phòng",
+      "roles": [
+        "người học",
+        "người kiểm phòng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Bàn khoản hoàn trả/khấu trừ",
+      "roles": [
+        "người học",
+        "người quản lý hợp đồng"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Giữ kênh giải quyết",
+      "roles": [
+        "người học",
+        "chủ nhà hoặc đầu mối tư vấn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Đối chiếu cách mình hiểu điều kiện gia hạn đã cam kết lần trước với điều chủ nhà hiện đề nghị",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nghe căn cứ khoản phí và kỳ hạn mới từ chủ nhà, chỉ rõ chỗ khác với lời giải thích cũ mình từng nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đề nghị gói điều kiện: có thể nhận kỳ hạn dài hơn nếu một khoản phí được điều chỉnh",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chủ nhà chỉ nhượng bộ một phần, hỏi giới hạn còn có thể thương lượng và điều kiện đổi lại",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Tóm phần đã nhất trí, phần còn bất đồng và ai sẽ quyết định trước mốc phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Tóm tắt lỗi, lần báo và phần đã sửa tạm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Bên kia nói lỗi do cách dùng, nêu điều mình quan sát và hỏi cơ sở",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chỉ hỗ trợ một phần chi phí, hỏi phạm vi",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa thống nhất ai chịu khoản nào, xin người phụ trách giải thích",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Quay lại sau khi có kết quả kiểm kỹ thuật",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi điều kiện thêm người ở/nuôi thú theo hợp đồng hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nêu nhu cầu thay đổi và thời điểm dự định",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Được chấp nhận nếu đáp điều kiện, hỏi điều kiện cụ thể",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không được phép, hỏi lựa chọn hợp lệ khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt việc mình có thể làm và điều chưa được",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi lịch kiểm và ai có mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Cùng chỉ dấu có từ lúc vào nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Họ ghi một vết như mới, kể lúc đã báo trước",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Cần kiểm thêm một khu, hẹn quay lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc kết quả buổi kiểm và khoản sẽ thông báo sau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi rõ từng khoản trong số tiền cuối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nêu khoản mình không hiểu và điều kiện liên quan",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Bên kia cần kiểm chứng từ, chốt ngày phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Đề nghị xem lại phần cụ thể thay vì tranh toàn bộ",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Không chấp nhận số cuối chưa được giải thích, xin nơi tư vấn phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Tóm tắt các cuộc nói với chủ nhà và điều còn bất đồng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hỏi ai có quyền quyết và ai chỉ chuyển lời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Cần thêm thông tin chuyên môn, hẹn mang đến quầy tư vấn để hỏi",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Quay lại chủ nhà với câu hỏi đã được làm rõ",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Chốt phương án hoặc ghi rõ điểm chưa đồng thuận để tiếp tục",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "H-10 là thương lượng trách nhiệm và điều kiện nhà ở lâu dài; gia hạn cơ bản T-01, báo hỏng/hẹn thợ V5P-018. Không phán quyết luật cá nhân.",
+  "cross_stage_refs": [
+    "T-01",
+    "V5P-018"
+  ],
+  "source_refs": [
+    "DW01",
+    "DW03"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

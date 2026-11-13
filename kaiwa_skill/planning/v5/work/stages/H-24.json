@@ -1,0 +1,284 @@
+{
+  "stage_key": "H-24",
+  "uid": "44afa4c2-5012-52c0-8e9d-26dfc5eb75b1",
+  "objective": "Chốt đơn và giữ quan hệ thương mại qua các đầu mối, kể cả khi giao/điều kiện thay đổi.",
+  "knowledge_focus": [
+    "Phân biệt đồng ý nguyên tắc với đơn đã xác nhận",
+    "Kiểm điều kiện giao và trách nhiệm liên bộ phận",
+    "Nói sau bán để giữ tin cậy"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xác nhận trước chốt",
+      "roles": [
+        "người bán",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khách đồng ý có điều kiện",
+      "roles": [
+        "người bán",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chốt đơn và bàn giao nội bộ",
+      "roles": [
+        "người bán",
+        "đội thực hiện"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Vấn đề giao hàng xuyên biên giới",
+      "roles": [
+        "người bán",
+        "đối tác hoặc vận hành"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau chốt và giữ quan hệ",
+      "roles": [
+        "người bán",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Không chốt được",
+      "roles": [
+        "người bán",
+        "khách hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhắc sản phẩm, số lượng, mốc giao và điều kiện còn mở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Khách tưởng báo giá còn hiệu lực sau đổi lượng, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi ai phía khách xác nhận cuối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người duyệt vắng, hẹn mốc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Khách chấp nhận nếu giao hai đợt, kiểm khả năng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đội vận hành chỉ nhận một phần lịch, đề nghị mốc khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách không nhận lịch khác, hỏi điều ưu tiên",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chia lượng giữa hai nguồn nếu được duyệt",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói điều khách đã xác nhận và điều chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đội tưởng khách đã duyệt mẫu, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi ai theo dõi giao hàng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau bàn giao kiểm mốc đầu",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi đầu mối xử lý chứng từ/giao nhận đang ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chưa rõ mốc thông quan, báo khách trạng thái không chắc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Có thiếu giấy tờ, hỏi bên nào xác minh",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Có thông tin mới, cập nhật lịch giao",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Gọi hỏi lô đầu dùng có ổn không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách báo một lỗi nhỏ, xin chi tiết và đầu mối xử lý",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đội đã sửa, hỏi khách đã dùng lại được chưa",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Nói lời cảm ơn hợp tác và hẹn nhu cầu tiếp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Khách chọn nhà cung cấp khác, hỏi lý do có thể chia sẻ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Khách không muốn giải thích, tôn trọng",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Đề nghị giữ quan hệ cho lô sau",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Chỉ liên hệ khi có đề nghị mới phù hợp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "H-32 thương lượng; H-24 vận hành sau chốt. Phần thông quan chỉ là hỏi đầu mối, không tư vấn thủ tục.",
+  "cross_stage_refs": [
+    "H-32",
+    "H-16"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

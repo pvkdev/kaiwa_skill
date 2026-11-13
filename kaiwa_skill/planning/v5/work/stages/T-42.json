@@ -1,0 +1,183 @@
+{
+  "stage_key": "T-42",
+  "uid": "fc19cbb2-ccaf-5c9c-aadf-f59a4a77edf8",
+  "objective": "An ủi và chia buồn theo mức quan hệ, lắng nghe mà không ép người kia kể.",
+  "knowledge_focus": [
+    "lời hỏi thăm phù hợp",
+    "phản hồi khi người kia chưa muốn nói",
+    "đề nghị giúp cụ thể",
+    "giữ liên hệ về sau"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bạn gặp chuyện buồn",
+      "roles": [
+        "người học",
+        "bạn bè"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đồng nghiệp gặp mất mát",
+      "roles": [
+        "người học",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Lời động viên không đúng lúc",
+      "roles": [
+        "người học",
+        "bạn thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhận tin bạn thất bại, hỏi bạn muốn nói lúc này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Bạn muốn yên tĩnh, nói sẽ sẵn sàng khi họ cần",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bạn muốn kể, phản hồi điều đã nghe thay vì vội khuyên",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nói nhầm chuyện khiến bạn buồn, xin lỗi và sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Vài hôm sau hỏi thăm nhưng cho phép không trả lời",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói lời chia buồn ngắn khi gặp ở cơ quan",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đề nghị giúp một phần công việc có thể làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đồng nghiệp không muốn nói chi tiết, tôn trọng giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Lịch bàn giao thay đổi, hỏi việc nào ưu tiên",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Khi đồng nghiệp trở lại, hỏi cách làm việc họ thấy thoải mái",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Bạn nghe câu “cố lên” như áp lực, nhận ra và sửa lời",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi bạn muốn mình nghe, đi cùng hay chỉ để riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không thể đi cùng, đề nghị gọi sau hoặc người khác giúp",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Bạn đổi ý muốn gặp, xác nhận giờ/địa điểm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Cảm ơn bạn đã nói rõ điều họ cần",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Nghi thức phát biểu H-31; tư vấn sức khỏe tinh thần V5P-054.",
+  "cross_stage_refs": [
+    "S-50",
+    "H-31"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

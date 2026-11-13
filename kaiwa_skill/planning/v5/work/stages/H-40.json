@@ -1,0 +1,276 @@
+{
+  "stage_key": "H-40",
+  "uid": "031495a0-58af-5cf0-8815-a87fe5c9a076",
+  "objective": "Nemawashi: nói trước với người bị ảnh hưởng, sửa phương án và đưa vào cuộc quyết chính thức.",
+  "knowledge_focus": [
+    "Nghe lo ngại riêng của mỗi bên",
+    "Không hứa đồng thuận khi chỉ mới hỏi ý",
+    "Giải thích điều đã đổi và điều chưa thể đổi",
+    "Báo quyết định cuối cho người được hỏi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn người cần hỏi trước",
+      "roles": [
+        "người đề xuất",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói với người vận hành",
+      "roles": [
+        "người đề xuất",
+        "leader vận hành"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nói với người bán/khách",
+      "roles": [
+        "người đề xuất",
+        "đầu mối bán hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sửa đề xuất sau nghe ý",
+      "roles": [
+        "người đề xuất",
+        "leader"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Trước và trong họp quyết",
+      "roles": [
+        "người đề xuất",
+        "chủ trì"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau quyết định",
+      "roles": [
+        "người đề xuất",
+        "người đã được hỏi"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi ai chịu ảnh hưởng nếu đổi quy trình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tưởng chỉ bộ phận mình, leader nhắc nhóm dịch vụ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi ai có quyền phủ quyết/duyệt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chốt thứ tự nói riêng trước họp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nêu ý tưởng chưa chốt và xin lo ngại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Họ đồng ý nếu không tăng ca, hỏi ràng buộc",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Họ phản đối vì thiếu người, xin ví dụ",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Sửa kế hoạch triển khai theo đợt",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi thay đổi có ảnh hưởng lời hứa khách không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Sales tưởng sẽ áp dụng ngay, làm rõ mới là đề xuất",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi thời điểm thông báo khách phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sales cần hỏi khách trước khi phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Tóm tắt ba lo ngại và điều đã sửa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Leader chấp nhận đưa họp nếu có phương án dự phòng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi còn nhóm nào chưa được nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Gặp nhóm còn thiếu, cập nhật kế hoạch",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nói phần đã tham vấn và phần chưa đồng thuận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Chủ trì tưởng mọi bên đồng ý, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hỏi quyết định hôm nay bao gồm giai đoạn nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Quyết thử nhỏ, nhắc điều kiện",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Báo quyết định đúng mức và cảm ơn phản hồi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Người kia vẫn lo, hỏi cách theo dõi rủi ro",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Sau thử, báo điều đã thay đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Nói rõ ý kiến nào chưa được áp dụng và vì sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Khác thuyết phục H-22: quá trình tham vấn trước quyết định, không đồng nhất nghe ý với đồng thuận.",
+  "cross_stage_refs": [
+    "H-22",
+    "H-45"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

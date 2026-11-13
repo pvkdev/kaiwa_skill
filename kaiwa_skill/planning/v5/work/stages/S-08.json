@@ -1,0 +1,159 @@
+{
+  "stage_key": "S-08",
+  "uid": "0d901505-7b5c-5aae-a068-ae9ee1343f19",
+  "objective": "Hỏi và xác nhận vị trí, cách dùng những vật dụng chung trong văn phòng.",
+  "knowledge_focus": [
+    "Dùng câu hỏi vị trí và tên vật",
+    "Xin phép trước khi dùng đồ chung",
+    "Báo vấn đề đơn giản cho người phụ trách"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm phòng và khu dùng chung",
+      "roles": [
+        "nhân viên mới",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Dùng thiết bị chung",
+      "roles": [
+        "nhân viên",
+        "người phụ trách văn phòng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đồ dùng thiếu hoặc mượn nhầm",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi đường tới phòng họp theo số phòng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đi nhầm tầng rồi xác nhận lại mốc chỉ đường",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi khu để đồ cá nhân và đồ dùng chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi nơi nghỉ ngắn trong giờ cho phép",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Xin chỉ cách dùng máy in chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Được hướng dẫn và nhắc lại thao tác chính",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Máy báo lỗi, nói triệu chứng thay vì tự sửa",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi ai giữ chìa khóa tủ vật tư",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chỉ được lấy số lượng nhất định, xác nhận phần còn lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nhờ mượn bút/adapter trong buổi họp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Đồng nghiệp cũng cần dùng, hỏi phương án khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Trả đồ và cảm ơn, nói chỗ đã đặt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đồ giống nhau, xác nhận chủ sở hữu trước khi trả",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    }
+  ],
+  "coverage_note": "Thiết bị họp trực tuyến và lỗi nhiều bước chuyển T-10; an toàn xưởng V5P-122.",
+  "cross_stage_refs": [
+    "T-10",
+    "V5P-122"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

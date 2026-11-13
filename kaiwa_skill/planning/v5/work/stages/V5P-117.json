@@ -1,0 +1,246 @@
+{
+  "stage_key": "V5P-117",
+  "uid": "6955a0dc-a10d-51d8-a459-8e3b03cc633e",
+  "objective": "Đại diện công ty tại triển lãm/hội thảo: mở chuyện, xác định nhu cầu, hẹn trao đổi sau sự kiện.",
+  "knowledge_focus": [
+    "Đặt câu hỏi phân loại nhu cầu mà không ép bán",
+    "Giới thiệu ngắn đúng đối tượng",
+    "Ghi nhớ lời hứa bằng cuộc gọi hậu sự kiện"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đón người tới gian",
+      "roles": [
+        "đại diện công ty",
+        "người tham quan"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Câu hỏi trong buổi trưng bày",
+      "roles": [
+        "đại diện công ty",
+        "người tham quan"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Gặp đối tác khác",
+      "roles": [
+        "đại diện công ty",
+        "đại diện nhà cung cấp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khách không có thời gian",
+      "roles": [
+        "đại diện công ty",
+        "người tham quan"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Hậu triển lãm",
+      "roles": [
+        "đại diện công ty",
+        "người đã gặp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi người tham quan muốn xem sản phẩm hay tìm đối tác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tưởng họ là khách mua, thực ra là nhà báo/người nghiên cứu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Giới thiệu sản phẩm trong một phút theo nhu cầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi họ đang dùng cách nào hiện nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Giải thích một ứng dụng và mời xem demo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Câu hỏi kỹ thuật vượt hiểu biết, hẹn chuyên gia",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Có thể thử nhưng cần lịch sau hội thảo",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Sản phẩm không phù hợp quy mô họ, chỉ điểm thay thế",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi năng lực và phạm vi hợp tác của bên kia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Bên kia muốn làm đại lý, mình tưởng muốn mua trực tiếp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hẹn cuộc gặp với người quyết ở hai bên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Chưa có lịch, chốt ngày liên hệ lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Tóm tắt một điểm đáng xem khi khách chỉ ghé nhanh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Khách nhận cuộc gọi sau, xác nhận chủ đề",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Khách chỉ tham khảo, cảm ơn và không hứa liên hệ",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi buổi diễn thuyết nào họ vừa nghe để nối câu chuyện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Gọi nhắc ngắn vấn đề khách quan tâm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách không nhớ mình, xác nhận ngữ cảnh mà không ép",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Hẹn demo có người kỹ thuật",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Khách cần hỏi nội bộ, hẹn mốc sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Đến mốc hỏi đã có người cần tham dự demo chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Vai đại diện triển lãm; T-22 là người dự tiệc/giao lưu nội bộ, H-20 khai thác khách dài hạn.",
+  "cross_stage_refs": [
+    "T-22",
+    "H-20"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

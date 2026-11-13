@@ -1,0 +1,163 @@
+{
+  "stage_key": "S-13",
+  "uid": "a7e878d8-bc1a-5101-ab8b-ac0b15a70dff",
+  "objective": "Hỏi và chỉ đường đến một địa điểm, xác nhận mốc quan trọng khi chưa thấy lối.",
+  "knowledge_focus": [
+    "Mốc rẽ, khoảng cách, hướng và phương tiện",
+    "Hỏi lại một đoạn đường, sửa khi chỉ sai hoặc đi lạc"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hỏi người qua đường",
+      "roles": [
+        "người học",
+        "người qua đường"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đi giữa đường",
+      "roles": [
+        "người học",
+        "nhân viên gần đó"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chỉ cho người khác",
+      "roles": [
+        "người học",
+        "người hỏi đường"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu địa điểm cần đến và hỏi có gần không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi phải rẽ ở ngã nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhờ nhắc lại tên tòa nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người kia không chắc, hỏi nơi có thể hỏi tiếp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại mốc rẽ rồi cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói mình đang đứng trước mốc cụ thể nhưng chưa thấy lối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đi nhầm phía bắc/phía nam của ga",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chỉ rõ cổng đang đứng và hỏi lối từ đó",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Đường quen đang chắn, hỏi lối đi vòng",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gọi người đang chờ và nêu điểm mình đang ở",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi người kia định đi bộ hay đi tàu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Chỉ đường bằng hai mốc dễ nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nói rõ phần mình không chắc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người kia nhắc lại sai hướng rẽ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sửa ngắn, xác nhận họ tìm được mốc đầu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Hỏi/chỉ đường Sơ, không ôm sự cố chuyến tàu V5P-042 hay lịch trình du lịch.",
+  "cross_stage_refs": [
+    "S-14",
+    "V5P-042"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

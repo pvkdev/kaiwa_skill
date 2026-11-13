@@ -1,0 +1,295 @@
+{
+  "stage_key": "H-50",
+  "uid": "005d5cad-653f-509e-9184-6858b491850b",
+  "objective": "Bàn ẩm thực, thủ công và tập quán như thực hành sống với nhiều cách hiểu, tránh khái quát một vùng/nhà thành cả nước.",
+  "knowledge_focus": [
+    "Hỏi bối cảnh, người thực hiện, ý nghĩa và biến thể",
+    "Giải thích thực hành của mình, xử lý khi bất đồng về cách làm/ý nghĩa"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Ăn món có câu chuyện",
+      "roles": [
+        "người học",
+        "người nấu hoặc chủ nhà"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nấu hoặc làm cùng nhau",
+      "roles": [
+        "người học",
+        "người hướng dẫn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tập quán trong lễ/nhà",
+      "roles": [
+        "người học",
+        "chủ nhà hoặc người lớn tuổi"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khác biệt vùng và thế hệ",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Giữ và thay đổi tập quán",
+      "roles": [
+        "người học",
+        "người cùng nhóm"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau trải nghiệm",
+      "roles": [
+        "người học",
+        "người hướng dẫn hoặc bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi món này nhà họ thường ăn vào dịp nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói món gần giống ở nhà mình khác nguyên liệu ra sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia không chắc nguồn gốc, giữ câu hỏi mở",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ nghĩ mình chê món vì hỏi nhiều, nói rõ thích và tò mò",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt điều thuộc gia đình họ chứ không toàn vùng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi lý do làm bước này trước bước kia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói mình đã làm sai một phần và hỏi cứu thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chọn cách đơn giản hơn khi thiếu dụng cụ",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người hướng dẫn muốn giữ cách truyền thống, hỏi phần nào có thể đổi",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Thống nhất vai mỗi người trong phần còn lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi nên tham gia phần nào với tư cách khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói mình không biết ý nghĩa một hành động và xin giải thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không tham gia phần riêng mà mình chưa hiểu, xin quan sát",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Một cử chỉ của mình bị hiểu là bất kính, xin lỗi và hỏi cách sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Tiếp tục phần công khai theo lời chủ nhà",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi ở vùng khác có làm cùng cách không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nêu gia đình trẻ có thể chọn cách rút gọn thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người kia gắn ý nghĩa riêng, không bác bỏ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Người kia nghĩ mình coi cách mới luôn tốt hơn, làm rõ mình đang so điều kiện",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Phân biệt kinh nghiệm cá nhân và lời khái quát",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi điều gì quan trọng nhất cần giữ khi đổi cách làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Đề nghị biến thể để người có hạn chế ăn uống vẫn tham gia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Người tổ chức muốn giữ nghi thức nhưng đổi món, bàn mức phù hợp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Không ép người khác dùng món/hình thức không thoải mái",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt phương án vừa tôn trọng ý nghĩa vừa phù hợp nhóm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nói điều mình hiểu khác sau khi tự làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hỏi nơi có thể học thêm từ người thực hành",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Người kia tưởng mình định dạy lại nguyên xi, nói rõ sẽ kể như trải nghiệm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Gặp lại, nói phần mình đã thử ở nhà",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Cảm ơn người đã chia sẻ và giữ liên hệ",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Bàn ý nghĩa/thực hành ở Thượng; workshop trực tiếp V5P-129, tham dự mùa T-68. Không đưa khẳng định văn hóa tuyệt đối.",
+  "cross_stage_refs": [
+    "V5P-129",
+    "T-68"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

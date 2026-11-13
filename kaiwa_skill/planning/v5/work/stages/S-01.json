@@ -1,0 +1,160 @@
+{
+  "stage_key": "S-01",
+  "uid": "50993510-7b18-5086-90de-24f6c44efecb",
+  "objective": "Chào đúng thời điểm, mở và khép cuộc gặp ngắn với người lạ hoặc người quen.",
+  "knowledge_focus": [
+    "Chọn lời chào theo thời gian, lần gặp và quan hệ",
+    "Đáp lại cảm ơn, xin lỗi và lời chào chia tay"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gặp mặt lần đầu",
+      "roles": [
+        "người học",
+        "người mới gặp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gặp lại và chuyển cuộc nói",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Kết thúc và đáp xã giao",
+      "roles": [
+        "người học",
+        "người đối diện"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Chào người ngồi cạnh khi mới đến lớp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Chào người phụ trách khi bước vào quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chào như đã quen rồi nhận ra đây là người mới",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Giới thiệu tên ngắn và sửa cách xưng hô",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chào người được bạn giới thiệu rồi nhường lượt cho họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chào hàng xóm lúc cùng ra khỏi nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chào người quen buổi tối sau khi đã gặp sáng nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi có tiện nói một việc ngắn sau lời chào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia đang vội, hẹn nói sau",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gặp lại đúng lúc đã hẹn và mở lại chuyện",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Cảm ơn khi được chỉ chỗ, nghe lời đáp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Xin lỗi vì chắn lối và nhường đường",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhận lời xin lỗi ngắn sau va quệt nhỏ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chào ra về khi chủ nhà còn tiếp khách khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhận lời chúc ngày mới rồi đáp tương xứng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Nền chào hỏi, không dạy tự giới thiệu dài S-03 hoặc điện thoại S-36. Có cả mở, đáp, sửa và kết thúc.",
+  "cross_stage_refs": [
+    "S-03",
+    "S-36"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

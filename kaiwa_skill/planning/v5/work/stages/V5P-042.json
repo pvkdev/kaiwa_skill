@@ -1,0 +1,300 @@
+{
+  "stage_key": "V5P-042",
+  "uid": "b7bc68ba-06d5-5295-a299-519d54acae44",
+  "objective": "Ứng phó chuyến tàu bị gián đoạn hoặc lỡ chuyến cuối, hỏi lựa chọn và phối hợp với người đang chờ.",
+  "knowledge_focus": [
+    "Nói vị trí/chuyến/điểm cần tới, hỏi đoạn còn chạy và lựa chọn",
+    "Đổi phương án, cập nhật người liên quan, kiểm vé/chi phí với nhân viên"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận thông tin gián đoạn",
+      "roles": [
+        "người học",
+        "nhân viên ga"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tìm đường thay thế",
+      "roles": [
+        "người học",
+        "nhân viên ga"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Vé/chặng đang đi",
+      "roles": [
+        "người học",
+        "nhân viên quầy vé"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Báo người đang chờ",
+      "roles": [
+        "người học",
+        "bạn hoặc người đón"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Lỡ chuyến cuối",
+      "roles": [
+        "người học",
+        "nhân viên ga hoặc nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau khi tới hoặc đổi ngày",
+      "roles": [
+        "người học",
+        "người đang chờ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi thông báo đang nói tuyến nào ngừng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói ga mình cần tới và hỏi tàu còn chạy đến đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hiểu giờ dự kiến là giờ chắc chắn, hỏi mức xác định",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa có giờ chạy lại, hỏi nơi xem cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc tình trạng chuyến mình định đi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi tuyến khác tới cùng đích, có cần đổi ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi phương án đi xe buýt/taxi ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đường thay có nhiều đổi, hỏi cách đơn giản hơn khi mang đồ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Phương án quá lâu, quyết định đợi và hỏi khi nào hỏi lại",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt tuyến, điểm chuyển và phí/vé cần hỏi thêm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói mình đã qua cổng bằng vé nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi có thể dùng vé đó cho phương án mới không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhân viên nghĩ mình chưa bắt đầu đi, kể chặng đã đi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Quầy cần kiểm quy định tuyến, chờ câu trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại cách xử lý vé cho trường hợp này",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo tàu ngừng và vị trí hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đưa hai lựa chọn tới nơi hoặc đổi điểm gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người đón chỉ chờ được đến giờ nhất định, chọn phương án",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Hai bên hiểu khác cổng ga mới, đọc lại mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gọi cập nhật khi phương án thay thế cũng trễ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói ga cần tới và hỏi còn phương tiện công cộng nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi điểm taxi hoặc nơi chờ an toàn theo chỉ dẫn tại ga",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Không thể về trong đêm bằng phương án mong muốn, hỏi lựa chọn phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chọn nơi nghỉ/hẹn người đón theo điều kiện của mình",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt cách di chuyển hoặc chỗ chờ và báo người liên quan",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Giải thích ngắn mình đã đổi đường ra sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Nói giờ thực tế tới và xin lỗi vì ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Vẫn còn việc đặt chỗ bị lỡ, gọi nơi đó để hỏi phương án",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Hôm sau hỏi quầy về khoản vé chưa rõ nếu cần",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Chốt cuộc hẹn mới thay vì để hẫng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    }
+  ],
+  "coverage_note": "Tuyến bị phá vỡ, khác hỏi tuyến thường S-14 và IC/vé tháng V5P-041. Không tuyên bố quy định bồi hoàn chung.",
+  "cross_stage_refs": [
+    "S-14",
+    "V5P-041"
+  ],
+  "source_refs": [
+    "DW04"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

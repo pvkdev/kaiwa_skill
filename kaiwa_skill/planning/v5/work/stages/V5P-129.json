@@ -1,0 +1,252 @@
+{
+  "stage_key": "V5P-129",
+  "uid": "2d4648f8-23ae-52be-b0f5-461fb397336a",
+  "objective": "Tham gia workshop văn hóa/thủ công, hỏi và làm theo hướng dẫn, giải quyết khi sản phẩm hoặc dụng cụ có vấn đề.",
+  "knowledge_focus": [
+    "Mô tả kinh nghiệm, mục đích và việc cần được làm mẫu",
+    "Hỏi lại thao tác, báo vướng, nhận phản hồi, tiếp hoạt động"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn và đặt buổi",
+      "roles": [
+        "người học",
+        "nhân viên workshop"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bắt đầu với hướng dẫn viên",
+      "roles": [
+        "người học",
+        "người hướng dẫn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khi không theo kịp",
+      "roles": [
+        "người học",
+        "người hướng dẫn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sản phẩm khác dự kiến",
+      "roles": [
+        "người học",
+        "người hướng dẫn"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Cuối buổi và tiếp nối",
+      "roles": [
+        "người học",
+        "người hướng dẫn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi buổi này phù hợp người mới không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mình đi cùng người chưa nói nhiều tiếng Nhật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Buổi mong muốn đã đầy, hỏi buổi thay",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hoạt động cần kỹ năng mình chưa có, chọn buổi cơ bản",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt giờ, nơi, vật cần mang",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói đây là lần đầu và muốn làm mẫu đơn giản",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi phần nào mình có thể tự làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hiểu một bước là làm ngay, hỏi có cần chờ cả nhóm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Vật liệu giới hạn, hỏi có thể đổi màu/kiểu không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại thứ tự hai bước đầu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin làm mẫu lại phần tay mình chưa thấy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói đã làm tới bước nào trước khi nhờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Dụng cụ không hoạt động, báo để được đổi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chọn bước dễ hơn để vẫn tiếp tục",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Thử lại dưới hướng dẫn và xác nhận đã hiểu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Chỉ phần sản phẩm lệch so với mục tiêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Không sửa hoàn toàn được, hỏi cách giữ phần đã làm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Không muốn làm lại từ đầu, chọn kết thúc ở mức hiện tại",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhận gợi ý biến lỗi thành kiểu khác",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt điều còn làm được trong thời gian còn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi khi nào sản phẩm có thể mang về",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi có được chụp quá trình/sản phẩm theo quy tắc nơi đó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hiểu nhầm phí vật liệu thêm, xin giải thích",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Quay lại nhận sản phẩm hoặc hỏi buổi kế",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Nói một kỹ thuật mình học được và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Vai học viên trực tiếp, khác H-50 bàn văn hóa và H-46 tổ chức. Quy tắc chụp/mang sản phẩm tùy cơ sở.",
+  "cross_stage_refs": [
+    "H-50",
+    "H-46"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

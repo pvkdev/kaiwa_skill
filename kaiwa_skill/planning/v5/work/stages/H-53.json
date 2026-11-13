@@ -1,0 +1,302 @@
+{
+  "stage_key": "H-53",
+  "uid": "744c0ab6-4503-569c-ad10-32a438a526b2",
+  "objective": "Trao đổi kinh tế, công nghệ và vấn đề toàn cầu ở mức người dùng có hiểu biết giới hạn, hỏi nguồn và tác động thực tế.",
+  "knowledge_focus": [
+    "Giải thích khái niệm bằng ví dụ đời sống, không phóng đại",
+    "So lợi ích/rủi ro/đánh đổi, cập nhật khi thông tin mới xuất hiện"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bắt đầu từ tác động đời sống",
+      "roles": [
+        "người học",
+        "bạn hoặc đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Giải thích công nghệ mới",
+      "roles": [
+        "người học",
+        "người ít quen công nghệ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đánh giá một thông tin lan nhanh",
+      "roles": [
+        "người học",
+        "người cùng đọc tin"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bàn đánh đổi chính sách/công nghệ",
+      "roles": [
+        "người học",
+        "người cùng nhóm"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Vấn đề vượt biên giới",
+      "roles": [
+        "người học",
+        "người từ nơi khác"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Khi có thông tin mới",
+      "roles": [
+        "người học",
+        "người từng trao đổi"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu một thay đổi giá cả mình trực tiếp thấy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi người kia có gặp tác động khác không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Họ tưởng mình khái quát toàn nền kinh tế từ một hóa đơn, giới hạn kết luận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hai người có chi phí sống khác, tách hoàn cảnh",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt câu hỏi lớn muốn tìm hiểu thêm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi họ đang muốn giải quyết việc gì trước khi giải thích công cụ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Mô tả một lợi ích và một giới hạn bằng ví dụ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Họ hiểu công cụ luôn đúng, nói rõ cần kiểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ không muốn dùng, tôn trọng lựa chọn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt việc công cụ giúp và phần con người phải quyết",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi nguồn ban đầu và ngày đăng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Tách dự báo khỏi số liệu đã xảy ra",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người kia dẫn lại ảnh không còn bối cảnh, đề nghị xem nguồn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chưa tìm được báo cáo gốc, hoãn chia sẻ kết luận",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Quay lại khi đã kiểm nguồn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nêu lợi ích với nhóm này và chi phí cho nhóm khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi nhóm cần theo dõi tác động xã hội nào trước khi thử một công nghệ mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đề nghị thí điểm nhỏ thay vì áp ngay, chốt cách nhìn kết quả",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Không chấp nhận dùng dữ liệu cá nhân khi chưa rõ ai giữ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt câu hỏi cần mang tới người chuyên môn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi tác động ở nơi họ sống mà không giả định giống mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Kể trải nghiệm địa phương với nhãn cá nhân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Nhầm thời điểm của hai nước, tách mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Thông tin từng nơi chưa đủ, giữ kết luận mở",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt điểm tương đồng và khác cần kiểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nói nguồn mới làm mình sửa nhận định cũ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hỏi họ có điều gì thay đổi trong cách nhìn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Họ chưa muốn bàn tiếp, để đó",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Hẹn một cuộc nói ngắn sau khi cả hai đọc thêm",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Tóm điều đã biết, điều còn chưa biết và lựa chọn thực tế",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Không cài dự báo/giá/chính sách cụ thể không có nguồn. Đây là năng lực trao đổi, không bài báo cáo viết.",
+  "cross_stage_refs": [
+    "H-52",
+    "T-43"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily",
+  "editorial_contributors": [
+    "daily",
+    "root"
+  ]
+}

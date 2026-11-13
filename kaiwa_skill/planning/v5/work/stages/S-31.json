@@ -1,0 +1,197 @@
+{
+  "stage_key": "S-31",
+  "uid": "ab1e1d2e-4c1e-5ca4-8ee3-8f570ee5549e",
+  "objective": "Nói triệu chứng thường gặp, tìm nơi khám và hỏi lại chỉ dẫn cơ bản.",
+  "knowledge_focus": [
+    "tên vùng đau và thời điểm bắt đầu",
+    "đặt lịch khám",
+    "trả lời câu hỏi tiếp nhận ngắn",
+    "xin nhắc lại lời dặn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn nơi và đặt lịch",
+      "roles": [
+        "người học",
+        "nhân viên phòng khám"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói điều đang khó chịu",
+      "roles": [
+        "người học",
+        "bác sĩ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nghe chỉ dẫn",
+      "roles": [
+        "người học",
+        "bác sĩ hoặc y tá"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau buổi khám",
+      "roles": [
+        "người học",
+        "nhân viên phòng khám"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Gọi hỏi hôm nay có khám triệu chứng mình nói không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hết lịch, hỏi ngày gần nhất hoặc nơi có thể hỏi tiếp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đến sớm nhưng chưa rõ quầy tiếp nhận, hỏi đường",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đổi giờ khi không kịp tới, xác nhận lịch mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói đau ở đâu và bắt đầu từ khi nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Bác sĩ hỏi mức độ, trả lời bằng ví dụ đơn giản",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nghe nhầm “hôm qua” thành “hôm nay”, sửa lại thời điểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không biết tên triệu chứng, diễn tả điều mình cảm thấy",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Xin giải thích lại một từ chuyên môn bằng câu dễ hiểu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hỏi khi nào cần liên hệ lại nếu không đỡ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chưa quyết được lịch tái khám, xin xác nhận sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhắc lại lời dặn chính để kiểm mình hiểu đúng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Gọi báo một thắc mắc về lời dặn đã nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nhân viên cần hỏi bác sĩ, xin thời điểm gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Tới tái khám, nói tình trạng đã thay đổi ra sao",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Được chuyển nơi khác, hỏi tên nơi và cách đặt lịch",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Khám ngoại trú cơ bản; điều trị nhiều lựa chọn ở T-63, răng ở V5P-049, khẩn cấp ở V5P-058.",
+  "cross_stage_refs": [
+    "T-63",
+    "V5P-049"
+  ],
+  "source_refs": [
+    "B08:U12"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

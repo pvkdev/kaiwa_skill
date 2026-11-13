@@ -1,0 +1,255 @@
+{
+  "stage_key": "V5P-123",
+  "uid": "435486f2-9c27-5220-9c44-bdcfca5d9d3e",
+  "objective": "Gửi bưu kiện cá nhân và hỏi hàng quốc tế bằng lời nói tại quầy/đơn vị chuyển phát, xử lý khi hành trình không như dự kiến.",
+  "knowledge_focus": [
+    "Mô tả nội dung, kích thước, nơi đến và mức gấp",
+    "Hỏi giới hạn gửi, giá/thời gian, tình trạng, trả về hoặc thiếu"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuẩn bị gửi",
+      "roles": [
+        "người học",
+        "nhân viên quầy bưu chính"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chốt bưu kiện",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thay đổi sau gửi",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Hàng chậm hoặc đứng yên",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Trả về hoặc hỏng",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói gửi quà cá nhân ra nước ngoài và hỏi loại dịch vụ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi món dự định gửi có được nhận không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không nhận một món, hỏi gửi phần còn lại thế nào",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chọn dịch vụ chậm hơn nhưng theo dõi được",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại nội dung được nhận và nơi đến",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói kích thước và trọng lượng ước tính",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi tổng phí và thời gian ước lượng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên nghe nhầm quốc gia đến, đọc lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Địa chỉ chưa đủ chi tiết, hỏi thông tin cần bổ sung",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Kiểm tên/địa chỉ bằng lời trước khi gửi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo người nhận đổi địa chỉ hoặc vắng lâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không chắc còn sửa được, hỏi ai kiểm và khi nào trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không thể đổi tuyến đã đi, hỏi cách người nhận liên hệ bên giao",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chờ phát lại hoặc trả về nếu có tùy dịch vụ",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Gọi lại khi có phản hồi từ đầu mối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nêu ngày gửi và điểm theo dõi cuối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nhân viên nghĩ hỏi kiện nhập khác, xác nhận mã và chiều gửi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Phải hỏi đối tác nước đến, xin mốc cập nhật",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Liên hệ lại sau mốc chưa có tin",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc lại bước cần làm phía người gửi/người nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói kiện bị trả về nhưng chưa hiểu lý do",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi có thể gửi lại sau khi sửa vấn đề không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Kiện nhận bị thiếu/hỏng, mô tả lúc phát hiện",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Đơn vị cần kiểm, hỏi cần mang kiện/vật gì đến quầy",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt đầu mối và hạn phản hồi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Bưu kiện cá nhân, không thương mại quốc tế. S-42 quầy căn bản, T-28 giao tại cửa.",
+  "cross_stage_refs": [
+    "S-42",
+    "T-28"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

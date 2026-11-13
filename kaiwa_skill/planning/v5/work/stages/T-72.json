@@ -1,0 +1,232 @@
+{
+  "stage_key": "T-72",
+  "uid": "2cffc09e-b418-5653-9cdb-507416dacaee",
+  "objective": "Giao tiếp ở quầy konbini từ vai nhân viên khi nhiều loại việc và khách xếp hàng.",
+  "knowledge_focus": [
+    "Hỏi nhanh nhưng rõ nhu cầu",
+    "Đọc lại số tiền/số lượng",
+    "Xin người phụ trách khi giao dịch ngoài khả năng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tính tiền hàng thường",
+      "roles": [
+        "nhân viên konbini",
+        "khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hâm nóng và hàng chế biến",
+      "roles": [
+        "nhân viên konbini",
+        "khách"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Dịch vụ nhiều bước ở quầy",
+      "roles": [
+        "nhân viên konbini",
+        "khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Hàng lỗi hoặc giá khác",
+      "roles": [
+        "nhân viên konbini",
+        "khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Khách đông hoặc cuối ca",
+      "roles": [
+        "nhân viên konbini",
+        "khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi khách có cần túi/đũa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Khách cần hai bộ, không phải hai túi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói tổng tiền và nhận phương thức thanh toán",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Thanh toán không được, hỏi khách muốn thử cách khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi có muốn hâm nóng đồ ăn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Món không hâm theo cách khách muốn, giải thích lựa chọn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi phần nước sốt/đá có cần riêng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Giao món đúng lựa chọn và nhắc món nóng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Khách muốn nhận kiện, hỏi mã/tên cần đối chiếu tại quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Không thấy kiện, xin phép hỏi ca trước",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Khách muốn thanh toán một khoản dịch vụ, nói bước xác nhận trên máy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Khách tưởng đã hoàn tất, làm rõ còn bước cuối",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Khách nói giá trên kệ khác giá tính, xin kiểm nhãn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Kiểm đúng giá, sửa số tiền và xin lỗi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hàng hỏng khi mở, hỏi khách muốn đổi hay gặp quản lý",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Quản lý cần kiểm, xin khách chờ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Báo giao dịch đặc biệt sẽ lâu hơn, hỏi khách có chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Chỉ quầy khác đang nhận khách",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Nói với ca sau về kiện đang chờ xác minh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Ca sau trả lời khách khi có thông tin",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy thao tác POS; bưu kiện cá nhân từ vai gửi/nhận ở track đời sống.",
+  "cross_stage_refs": [
+    "S-24"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,251 @@
+{
+  "stage_key": "S-34",
+  "uid": "6b566f8f-86d4-5f86-9885-c7012e5e0eec",
+  "objective": "Xin trợ giúp ngay bằng câu ngắn và chọn đúng đầu mối khi có nguy hiểm hoặc bất an.",
+  "knowledge_focus": [
+    "gọi người gần đó giúp",
+    "nói vị trí dễ nhận",
+    "nói điều thấy và điều chưa biết",
+    "xin hỗ trợ ngôn ngữ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhờ người gần đó",
+      "roles": [
+        "người học",
+        "người qua đường"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói với đầu mối khẩn cấp",
+      "roles": [
+        "người học",
+        "người tiếp nhận"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giữ liên lạc khi di chuyển",
+      "roles": [
+        "người học",
+        "người tiếp nhận"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chuyển đúng loại hỗ trợ",
+      "roles": [
+        "người học",
+        "nhân viên nơi hỗ trợ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Trợ giúp khi người học tự mình gặp khó",
+      "roles": [
+        "người học",
+        "người ở gần"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói “xin giúp” và chỉ vị trí người bị ngã",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhờ người khác gọi đơn vị cứu trợ khi mình chưa nói rõ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia không hiểu, dùng mốc gần đó và câu ngắn hơn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người đầu tiên không giúp được, nhờ người khác ngay",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói nơi đang đứng bằng tên ga và cửa ra",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói có khói/ai đang đau mà không đoán nguyên nhân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người tiếp nhận hỏi lại, xác nhận từng chi tiết",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Xin nói chậm hoặc cần hỗ trợ ngôn ngữ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo đã chuyển sang chỗ an toàn theo hướng dẫn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Lối gặp ban đầu bị đóng, báo vị trí mới",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhờ người khác ra đón đơn vị đến, nói đặc điểm dễ thấy",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không biết còn ai bên trong, nói rõ mình chưa chắc",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi đây có phải nơi báo đồ thất lạc không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Vấn đề không khẩn cấp, xin chỉ koban/quầy tư vấn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nhận số/đầu mối mới, nhắc lại trước khi kết thúc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Quay lại hỏi khi đầu mối được chỉ không nhận việc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nói mình lạc ở nơi xa lạ và cần tìm quầy hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Không thể giải thích dài vì hoảng, chỉ nêu tên mình và vị trí",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Người được nhờ nói tiếng Nhật quá nhanh, xin từng câu ngắn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Khi đã có người hỗ trợ, nói mình cần gọi ai tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Bộ câu sinh tồn dùng lại trong 057–062; không dạy xử lý kỹ thuật hay yêu cầu học trước chặng chuyên sâu.",
+  "cross_stage_refs": [
+    "V5P-057",
+    "V5P-058",
+    "V5P-059",
+    "V5P-060",
+    "V5P-061",
+    "V5P-062"
+  ],
+  "source_refs": [
+    "W07",
+    "W08",
+    "W18"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

@@ -1,0 +1,180 @@
+{
+  "stage_key": "T-52",
+  "uid": "10ec0dc6-a5f1-5c48-85af-e545d81865cc",
+  "objective": "Hỏi tư vấn học tập/du học và điều chỉnh kế hoạch học qua nhiều cuộc nói.",
+  "knowledge_focus": [
+    "nêu mục tiêu và khả năng",
+    "hỏi chương trình/điều kiện",
+    "gặp giáo viên",
+    "đổi hướng khi thông tin mới"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn chương trình",
+      "roles": [
+        "người học",
+        "tư vấn viên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trao đổi với giáo viên",
+      "roles": [
+        "người học",
+        "giáo viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Kế hoạch đổi",
+      "roles": [
+        "người học",
+        "tư vấn viên/gia đình"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mục tiêu học và thời gian có thể dành",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi sự khác nhau giữa hai chương trình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Một điều kiện chưa hiểu, xin ví dụ trường hợp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chương trình đầu không phù hợp, xin gợi ý khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hỏi lịch cuộc gặp tiếp với người phụ trách",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói môn mình đang mạnh và đang khó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Giáo viên gợi ý hướng khác, hỏi lý do",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Muốn hỏi khả năng học tiếp mà chưa chốt ngành",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không theo kịp lớp hiện tại, xin cách hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Sau khi thử, báo điều đã cải thiện",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Ngày nhập học/lịch gia đình đổi, nói tác động",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không đủ thời gian cho chương trình cũ, xin lịch khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hai bên hiểu khác về mục tiêu du học, làm rõ mong muốn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chưa quyết được, hẹn kiểm thông tin trước khi trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt lựa chọn và người liên hệ bước kế",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Không viết hồ sơ/luận/essay; H-56 trao đổi học thuật sâu.",
+  "cross_stage_refs": [
+    "H-56",
+    "V5P-075"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

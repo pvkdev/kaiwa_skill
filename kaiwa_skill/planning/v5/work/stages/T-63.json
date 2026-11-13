@@ -1,0 +1,242 @@
+{
+  "stage_key": "T-63",
+  "uid": "c68fc9e0-c783-5a79-ada3-f788800c4a64",
+  "objective": "Trao đổi khám ngoại trú/tái khám về triệu chứng và lựa chọn được chuyên viên giải thích.",
+  "knowledge_focus": [
+    "kể diễn biến triệu chứng",
+    "hỏi ý nghĩa lời giải thích",
+    "so sánh lựa chọn qua câu hỏi",
+    "nhắc kế hoạch tái khám"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trình bày bệnh sử ngắn",
+      "roles": [
+        "người học",
+        "bác sĩ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi về giải thích chuyên môn",
+      "roles": [
+        "người học",
+        "bác sĩ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tái khám và điều chỉnh",
+      "roles": [
+        "người học",
+        "bác sĩ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Kết quả ở quầy khác với điều bác sĩ đã nói",
+      "roles": [
+        "người học",
+        "nhân viên quầy và bác sĩ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói triệu chứng kéo dài nhiều ngày và lúc nặng hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Bác sĩ hỏi đã khám trước chưa, nói mốc và nơi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhớ sai ngày bắt đầu, sửa sau khi xem lịch",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Một triệu chứng mới xuất hiện, cập nhật trước khi kết thúc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Không biết tên triệu chứng, mô tả cảm giác và tình huống",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Xin giải thích một thuật ngữ bằng lời dễ hiểu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Có hai phương án, hỏi mục tiêu và điều cần cân nhắc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chưa muốn quyết ngay, hỏi thời gian có thể suy nghĩ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Bác sĩ khuyên nơi chuyên khoa, hỏi lý do và cách hẹn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại lựa chọn mình đã hiểu để bác sĩ sửa nếu sai",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Tới lại, nói phần đã đỡ và phần vẫn khó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Lời dặn trước khác mình nhớ, hỏi xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không theo được lịch hẹn, gọi xin đổi và nói tình trạng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Kết quả chưa có, hỏi lúc nào liên hệ lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau khi có kết quả, hỏi người chuyên môn về bước kế",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Khi lấy kết quả, tên cuộc hẹn khác tên bác sĩ dặn, xin kiểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nhân viên không thể giải thích kết quả, xin lịch hỏi bác sĩ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Bác sĩ giải thích bước mới, hỏi vì sao khác kế hoạch cũ",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chưa quyết được, xác nhận điều gì cần làm ngay và điều gì có thể chờ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Sau khi hỏi gia đình, gọi chốt lịch tái khám mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Không diễn giải/chọn điều trị thay bác sĩ; khám định kỳ, thuốc lâu dài, nhập viện tách riêng.",
+  "cross_stage_refs": [
+    "S-31",
+    "V5P-051",
+    "V5P-056",
+    "V5P-052"
+  ],
+  "source_refs": [
+    "B08:U12"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

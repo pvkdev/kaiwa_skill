@@ -1,0 +1,197 @@
+{
+  "stage_key": "V5P-127",
+  "uid": "26f5411d-33e5-593e-83ca-f51ee4b78f5a",
+  "objective": "Đi chuyến bay nội địa với tư cách hành khách và xử lý thay đổi tại sân bay bằng lời cơ bản.",
+  "knowledge_focus": [
+    "hỏi đúng quầy/cổng",
+    "trình bày vé và hành lý bằng lời",
+    "hỏi lại thông báo",
+    "đổi phương án khi chậm chuyến"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm nơi làm thủ tục",
+      "roles": [
+        "người học",
+        "nhân viên sân bay"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chờ lên máy bay",
+      "roles": [
+        "người học",
+        "nhân viên cửa bay"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chuyến bay đổi lịch",
+      "roles": [
+        "người học",
+        "nhân viên hãng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau khi hạ cánh",
+      "roles": [
+        "người học",
+        "nhân viên sân bay"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi quầy của chuyến bay nội địa mình đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đến nhầm nhà ga, hỏi đường sang khu đúng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi hành lý này gửi hay mang theo được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hành lý cần xử lý khác, nhờ giải thích lựa chọn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Xác nhận cổng sau khi bảng hiển thị đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nghe gọi tên chuyến nhưng không chắc, hỏi nhân viên",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đi cùng người cần hỗ trợ, hỏi cách được hướng dẫn tại cổng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đến cổng muộn, hỏi còn lên được hay phải tìm quầy khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi giờ khởi hành mới khi chuyến bị hoãn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nối chuyến/đón xe bị ảnh hưởng, hỏi phương án cụ thể",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Được đề xuất chuyến khác, xác nhận giờ và sân bay đến",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Chưa có quyết định, hỏi cách nhận thông báo tiếp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi khu nhận hành lý của chuyến vừa đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Không thấy vali, mô tả màu và thẻ hành lý",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Vali giống nhưng khác dấu riêng, báo không phải của mình",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Xác nhận đầu mối liên hệ sau khi rời sân bay",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Chuyến công tác gấp H-03; không trộn thủ tục bay quốc tế.",
+  "cross_stage_refs": [
+    "V5P-128"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

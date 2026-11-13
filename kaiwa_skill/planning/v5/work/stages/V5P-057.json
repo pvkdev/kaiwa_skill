@@ -1,0 +1,249 @@
+{
+  "stage_key": "V5P-057",
+  "uid": "c34eaae5-2700-50ae-87e2-eac5fc56a05f",
+  "objective": "Báo một sự việc cần cảnh sát hỗ trợ ngay, cung cấp điều biết chắc và giữ liên lạc an toàn.",
+  "knowledge_focus": [
+    "phân biệt báo khẩn cấp và tư vấn",
+    "vị trí và mốc dễ nhận",
+    "phân biệt quan sát với suy đoán",
+    "hỏi lại hướng dẫn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin người khác gọi",
+      "roles": [
+        "người học",
+        "người ở gần"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Báo với cảnh sát",
+      "roles": [
+        "người học",
+        "người tiếp nhận"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đợi hỗ trợ an toàn",
+      "roles": [
+        "người học",
+        "người tiếp nhận"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau khi đơn vị đến",
+      "roles": [
+        "người học",
+        "cảnh sát đến hiện trường"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Từ cuộc gọi khẩn đến buổi kể lại",
+      "roles": [
+        "người học",
+        "cảnh sát tiếp nhận"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói có người đe dọa gần mình và xin gọi giúp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người kia hỏi đang ở đâu, chỉ bảng hiệu/cửa ga",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không nghe rõ người kia hỏi, xin nói từng câu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người giúp cần rời đi, xin họ chỉ người khác có thể hỗ trợ",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói địa điểm và việc đang diễn ra",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Trả lời có thấy vũ khí không bằng điều thực thấy, không đoán",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Sửa tên đường/tầng vừa nói sai",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không nói được dài, xin hỗ trợ ngôn ngữ và nói câu chính",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Xác nhận nơi gặp người đến hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Không thể đứng chỗ hẹn ban đầu, báo vị trí mới",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người tiếp nhận dặn ở nơi an toàn, nhắc lại để chắc đã hiểu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Thấy thêm người liên quan, báo điều mới mà không tự tiếp cận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Kể trình tự ngắn từ lúc thấy sự việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hai người nói khác nhau, phân biệt điều tự thấy với nghe kể",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Được hướng dẫn nói tiếp ở quầy khác, hỏi khi nào và với ai",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Còn lo lắng về liên hệ sau, hỏi cách liên lạc an toàn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Sau khi an toàn, cảnh sát hỏi trình tự, người học kể mốc theo điều đã thấy",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Một mốc trong lời kể khác cuộc gọi đầu, chủ động sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Còn thông tin chưa xác nhận, hỏi cách bổ sung sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Xin biết ai sẽ liên hệ lại và bằng cách nào an toàn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Koban đồ mất thuộc V5P-060; không biến cuộc gọi 110 thành tư vấn không khẩn.",
+  "cross_stage_refs": [
+    "S-34",
+    "V5P-060",
+    "V5P-061"
+  ],
+  "source_refs": [
+    "W18"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

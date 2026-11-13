@@ -1,0 +1,188 @@
+{
+  "stage_key": "H-01",
+  "uid": "1122a8a3-cb13-5aee-a897-e369ed5eaaaa",
+  "objective": "Tự giới thiệu vai chuyên môn và cảm ơn người đã giúp trong quan hệ công việc nhiều tầng.",
+  "knowledge_focus": [
+    "Đặt kinh nghiệm đúng nhu cầu người nghe",
+    "Thừa nhận đóng góp cụ thể của người khác",
+    "Giữ lời cảm ơn và đề nghị bước tiếp cân xứng quan hệ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tự giới thiệu ở nhóm mới",
+      "roles": [
+        "người chuyển vai",
+        "leader hoặc đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tự giới thiệu với đối tác",
+      "roles": [
+        "đại diện công ty",
+        "đối tác mới"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cảm ơn người hỗ trợ",
+      "roles": [
+        "nhân viên",
+        "mentor hoặc đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đáp lời cảm ơn/khen",
+      "roles": [
+        "người được cảm ơn",
+        "người cảm ơn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Giới thiệu lĩnh vực mình phụ trách và giới hạn quyền quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người nghe tưởng mình thay toàn bộ quản lý cũ, làm rõ phần tiếp quản",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi kinh nghiệm nhóm để chọn cách phối hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Sau tuần đầu nói điều đã học từ nhóm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói vai trong dự án và đầu mối kỹ thuật đi cùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi bên kia muốn trao đổi ưu tiên nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đối tác muốn người quyết giá, hẹn đưa đúng người",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chốt cách liên hệ sau gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Cảm ơn người đã giúp xử lý một việc khó cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nói điều mình đã áp dụng từ lời khuyên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người kia nghĩ mình nhận hết công lao, ghi rõ phần họ đóng góp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi có thể nhờ xem lại kết quả lần tới không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nhận lời cảm ơn và ghi nhận cả nhóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Được đề nghị giúp tiếp, nói thời gian có thể",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Không thể hỗ trợ lâu dài, chỉ đúng đầu mối khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Kết nối người hỏi với đầu mối mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Giới thiệu sơ cấp S-01/S-04; ghi nhận thành tích đội sâu hơn H-27.",
+  "cross_stage_refs": [
+    "S-04",
+    "H-27"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

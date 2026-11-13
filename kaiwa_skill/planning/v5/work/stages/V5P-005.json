@@ -1,0 +1,311 @@
+{
+  "stage_key": "V5P-005",
+  "uid": "c4cc6ee1-896e-5edc-b625-ccc332777b44",
+  "objective": "Mua điện máy đúng chỗ dùng và phối hợp giao, lắp, bảo hành tới khi vận hành được.",
+  "knowledge_focus": [
+    "Thông số cần mô tả bằng ngôn ngữ người mua: kích thước, kết nối, cách dùng",
+    "Tổng giá và phạm vi giao/lắp/tháo máy cũ, lịch, nghiệm thu và hỗ trợ sau mua"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xác định nhu cầu và chỗ đặt",
+      "roles": [
+        "người học",
+        "nhân viên điện máy"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "So món và tổng chi phí",
+      "roles": [
+        "người học",
+        "nhân viên điện máy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đặt giao/lắp",
+      "roles": [
+        "người học",
+        "nhân viên giao hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thay đổi trước giao",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Tại cửa và trong lắp",
+      "roles": [
+        "người học",
+        "đội giao lắp"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau lắp và bảo hành",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói máy dùng cho số người và chỗ đặt rộng bao nhiêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi máy có hợp ổ cắm/thiết bị đang có không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhân viên hiểu kích thước sản phẩm thay vì lối vào, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Máy hợp chức năng nhưng lớn quá cửa, hỏi mẫu khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt thông số cần mang về đo lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "So hai máy theo điện tiêu thụ và việc dễ vệ sinh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi tổng gồm giao, lắp và mang máy cũ đi chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Giá thấp chỉ khi mua thêm gói, hỏi giá không gói",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không chọn bảo hành mở rộng sau khi nghe điều kiện",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại món, dịch vụ và tổng trước mua",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói tầng nhà, thang máy và khoảng giờ có người nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi có thể lắp ngay lúc giao không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chưa biết ban quản lý cho dùng thang khi nào, hẹn báo lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Địa chỉ giao khác địa chỉ thanh toán, sửa rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt địa chỉ, giờ và người có mặt",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo căn nhà chưa bàn giao kịp ngày giao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đổi ngày phát sinh chi phí, hỏi số và lựa chọn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đề nghị giữ máy ở kho thêm ít ngày",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Không thể giữ đủ lâu, hỏi hủy/đổi phương án theo điều kiện",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Gọi lại chốt ngày nhà sẵn và lịch mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Kiểm đúng mẫu và phụ kiện trước khi mở",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Máy không qua được cửa, cùng kiểm số đo và hỏi giải pháp",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Thợ chỉ lắp một phần hôm nay, hỏi phần chưa xong",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Thiếu bộ nối nên máy chưa chạy, gọi cửa hàng ngay",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Thử chạy máy với thợ và nhắc điều đã bàn giao",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nói máy chạy lỗi từ ngày đầu, kể hiện tượng cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Quầy tưởng lỗi cách dùng, nêu bước đã được thợ hướng dẫn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Cần hãng kiểm, hỏi ai gọi và khi nào",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Gọi lại khi qua hẹn chưa được kiểm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Nghe sửa/đổi/hẹn linh kiện, xác nhận hệ quả mỗi cách",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S031",
+      "event_id": "E06",
+      "title": "Kiểm máy sau lần xử lý và kết thúc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S030"
+      ]
+    }
+  ],
+  "coverage_note": "Điện máy gồm hậu cần/aftercare; T-59 tư vấn nói nhu cầu, T-58 đổi trả đa ngành. B05 Unit 23–24 đã đọc chỉ hỗ trợ vai nhân viên/một phần.",
+  "cross_stage_refs": [
+    "T-58",
+    "T-59",
+    "V5P-020"
+  ],
+  "source_refs": [],
+  "source_findings": [
+    "Đã đọc B05 Unit 23–24 trong knowledge (vai nhân viên, tính năng/bảo hành); chuỗi giao lắp và sau mua do AI biên soạn, không quy cho sách."
+  ],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

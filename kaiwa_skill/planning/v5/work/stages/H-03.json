@@ -1,0 +1,327 @@
+{
+  "stage_key": "H-03",
+  "uid": "b74a7aee-9abf-5bbd-8651-1cac1caa5d72",
+  "objective": "Ứng phó công tác gấp/chuyển chi nhánh khi lịch, giấy tờ, chuyến bay hoặc người gặp thay đổi.",
+  "knowledge_focus": [
+    "Nói ưu tiên công việc và người bị ảnh hưởng",
+    "Hỏi đúng đầu mối tại sân bay/công ty",
+    "Không tự dạy thủ tục xuất nhập cảnh",
+    "Bàn giao lịch mới và gọi lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận lệnh công tác gấp",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thiếu giấy tờ/thông tin trước đi",
+      "roles": [
+        "nhân viên",
+        "người phụ trách công ty"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hỏi tại sân bay/hải quan",
+      "roles": [
+        "người đi công tác",
+        "nhân viên phụ trách tại chỗ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chuyến bay đổi/hủy",
+      "roles": [
+        "người đi công tác",
+        "nhân viên hãng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Hành lý và phương tiện đến nơi",
+      "roles": [
+        "người đi công tác",
+        "nhân viên hãng hoặc chi nhánh"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Đổi lịch gặp",
+      "roles": [
+        "người đi công tác",
+        "đối tác hoặc chi nhánh"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Kết công tác/chuyển người",
+      "roles": [
+        "nhân viên",
+        "leader chi nhánh"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi mục tiêu cần giải quyết tại chi nhánh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ai là đầu mối địa phương và hạn cần tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ cần hỗ trợ từ xa trước khi bay",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi việc hiện tại giao ai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Báo thiếu tài liệu cần cho buổi gặp và hỏi ai có bản đúng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người phụ trách cần kiểm, hẹn mốc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Bản cũ tưởng là bản hiện hành, xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Có bản đúng, báo người ở chi nhánh",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói mình cần đến quầy đúng cho chuyến đã đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hai chuyến cùng đích nhưng hãng khác, xác nhận số chuyến",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi ai có thể giải thích thủ tục liên quan giấy tờ thiếu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Chờ người có thẩm quyền trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi tình trạng chuyến và lựa chọn tới nơi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chuyến thay tới muộn, hỏi mốc chắc",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Không có chuyến trong ngày, hỏi bước hỗ trợ tiếp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Có lịch mới, báo chi nhánh và khách",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Báo hành lý chưa tới, hỏi đầu mối cập nhật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Chưa có giờ, nói vật cần cho họp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Chi nhánh chuẩn bị bản thay thế tạm",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Hành lý tới, chốt nơi nhận",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Báo giờ tới mới và xin đổi cuộc gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Đối tác không thể đổi, đề nghị đồng nghiệp gặp trước",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Đối tác chỉ có 15 phút, chọn việc khẩn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Sau gặp ngắn, hẹn phần còn lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E07",
+      "title": "Nói việc đã giải quyết và việc còn chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E07",
+      "title": "Chi nhánh tưởng mình ở lại thêm, nói rõ ngày về",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S027",
+      "event_id": "E07",
+      "title": "Hỏi ai nhận liên hệ khách sau mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E07",
+      "title": "Về công ty gọi lại kiểm bàn giao",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    }
+  ],
+  "coverage_note": "T-66 công tác có kế hoạch; H-03 thay đổi gấp nhiều đầu mối. Không xác nhận quy định bay/hải quan từ seed B13.",
+  "cross_stage_refs": [
+    "T-66",
+    "H-44"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

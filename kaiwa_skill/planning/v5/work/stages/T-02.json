@@ -1,0 +1,255 @@
+{
+  "stage_key": "T-02",
+  "uid": "a4d369e2-0f96-51af-85a8-586353f06bbe",
+  "objective": "Sống trong sharehouse, thống nhất nếp dùng chung và sửa va chạm nhỏ với bạn cùng nhà.",
+  "knowledge_focus": [
+    "Nêu thói quen và quy tắc chung mà không áp đặt",
+    "Chia việc, nhận nhắc nhở, giải quyết việc lặp lại và đổi người ở"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn và vào sharehouse",
+      "roles": [
+        "người học",
+        "người quản lý sharehouse"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chia bếp, tủ và vệ sinh",
+      "roles": [
+        "người học",
+        "người ở cùng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Lịch trực và vắng nhà",
+      "roles": [
+        "người học",
+        "người ở cùng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhận và nêu lời nhắc",
+      "roles": [
+        "người học",
+        "người ở cùng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Người mới và người rời nhà",
+      "roles": [
+        "người học",
+        "người ở cùng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi số người đang ở và khu dùng chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi quy tắc khách thăm và giờ yên tĩnh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ còn phòng gần bếp, cân nhắc tiếng ồn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Quy tắc không hợp, từ chối phòng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt ngày vào và người giới thiệu nhà",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đề nghị chia ngăn tủ lạnh rõ hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi ai đang dùng dụng cụ chung và lúc nào trả",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Được dùng bếp muộn nhưng phải dọn ngay, xác nhận",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Đồ của mình bị tưởng là đồ chung, giải thích nhãn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Thống nhất chỗ để và cách báo trước khi mượn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi lịch dọn khu chung tuần này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói mình vắng ngày trực và đề nghị đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người kia không đổi được, hỏi nhóm còn ai có thể",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Được đổi, nhắc ngày mình nhận lại",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Đến lượt mới, báo đã dọn phần mình",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nghe người cùng nhà nói mình để đồ chắn lối, hỏi phần cần chuyển",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Chuyển xong và hỏi đã ổn chưa",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nêu tiếng ồn nhiều đêm cùng khung giờ, hỏi có thể đổi cách không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Người kia có lịch làm đêm, chọn khung yên tĩnh chung",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Vấn đề lặp lại, đề nghị nói cùng quản lý",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Giới thiệu quy tắc nhóm với người mới mà không làm như chủ nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi người rời nhà khi nào dọn phần đồ chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hai bên tưởng món đồ là của người khác, cùng kiểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Đề nghị chuyển đồ cho người cần thay vì bỏ",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt phần còn lại sau ngày chuyển",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Sharehouse quan hệ người ở cùng; ký túc xá nhà công ty V5P-024, trách nhiệm hợp đồng H-10.",
+  "cross_stage_refs": [
+    "V5P-024",
+    "H-10"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

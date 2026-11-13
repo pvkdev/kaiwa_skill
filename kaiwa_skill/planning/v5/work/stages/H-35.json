@@ -1,0 +1,234 @@
+{
+  "stage_key": "H-35",
+  "uid": "fbc7ece1-f87d-5ae1-9b20-fda44143321b",
+  "objective": "Phản biện quan điểm và giải quyết tranh luận khó mà giữ thể diện và sự thật.",
+  "knowledge_focus": [
+    "Nêu điểm đồng ý trước khác biệt thật",
+    "Hỏi giả định của đối phương",
+    "Sửa lời khi làm người nghe mất mặt",
+    "Chốt cách kiểm thay vì thắng bằng lời"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khác số liệu",
+      "roles": [
+        "người phản biện",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khác ưu tiên",
+      "roles": [
+        "người phản biện",
+        "leader bộ phận khác"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cuộc nói căng thẳng",
+      "roles": [
+        "người phản biện",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bất đồng trước nhiều người",
+      "roles": [
+        "người phản biện",
+        "chủ trì"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau khi vẫn bất đồng",
+      "roles": [
+        "người phản biện",
+        "đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi cùng một con số lấy từ mốc thời gian nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Bên kia tưởng mình nói họ sai, làm rõ hai nguồn khác",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nêu điều sẽ thay đổi nếu dùng số mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đề nghị cùng kiểm nguồn sau họp",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói mình ưu tiên chất lượng, bên kia ưu tiên ngày giao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi ràng buộc nào không thể đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Giữ hạn nhưng giảm phạm vi thử",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bên kia không nhận, đề nghị người quyết chung",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Dừng khi bị cắt lời, xin hoàn tất một ý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Lời đùa nghe như chê năng lực, xin lỗi và sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi đối phương muốn điều gì để tiếp tục bàn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hai bên cần nghỉ ngắn rồi quay lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nêu điểm rủi ro mà không gán lỗi cá nhân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Chủ trì muốn chuyển chi tiết sang cuộc riêng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Trong cuộc riêng đưa bằng chứng và nghe phản hồi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi cách nêu lại kết quả trước nhóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Tóm tắt phần đã thống nhất và phần chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Hai bên giữ ý khác, chốt tiêu chí/ai quyết",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Có quyết định, xác nhận cách cùng thực hiện",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Nói với người bị ảnh hưởng về thay đổi, không kể xấu người phản biện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "H-06 trong họp đề xuất; V5P-102 là bất đồng đồng đội cụ thể dài hạn.",
+  "cross_stage_refs": [
+    "H-06",
+    "V5P-102"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

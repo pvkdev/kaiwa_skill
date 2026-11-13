@@ -1,0 +1,148 @@
+{
+  "stage_key": "S-45",
+  "uid": "1d1fc916-15b1-5b9f-b7c0-304d53087e02",
+  "objective": "Báo việc đã làm, việc chưa xong và thay đổi cần người khác biết bằng câu ngắn.",
+  "knowledge_focus": [
+    "Tách факт đã xác nhận khỏi điều chưa chắc",
+    "Nói việc gì, lúc nào, ai cần biết",
+    "Hỏi người nhận đã hiểu bước tiếp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Báo bắt đầu và tiến độ",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Liên hệ khi đổi thông tin",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp liên quan"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cuối ca hoặc cuối ngày",
+      "roles": [
+        "nhân viên",
+        "ca sau hoặc leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo đã nhận vật liệu và bắt đầu việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi khi nào cần báo tiến độ lần nữa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đúng giờ báo phần đã xong",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Phát hiện thiếu đầu vào, nêu ảnh hưởng tới mốc",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Báo phòng họp đổi sang tầng khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đồng nghiệp nghe nhầm tầng, nhắc lại số phòng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Báo người nhận hàng đổi giờ tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hàng tới đúng giờ mới, báo người phụ trách",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói phần đã xong và phần chờ xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Ca sau chỉ nhận phần khẩn, hỏi người nhận phần còn lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Sáng hôm sau kiểm việc còn lại đã được xử lý chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói một vấn đề vừa phát hiện trước khi rời ca",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Nền báo–liên–tương ngắn. T-45 xử lý hiện trường, nhiều nguồn và ưu tiên.",
+  "cross_stage_refs": [
+    "T-45"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

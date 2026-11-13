@@ -1,0 +1,200 @@
+{
+  "stage_key": "V5P-080",
+  "uid": "ede857b4-1524-5309-93ac-26c2654cf2fc",
+  "objective": "Điều phối bằng lời các đầu mối khi rời Nhật dài hạn và bàn giao việc còn mở.",
+  "knowledge_focus": [
+    "nêu ngày và tình trạng",
+    "hẹn bàn giao",
+    "hỏi việc đang chờ sẽ liên hệ thế nào",
+    "phân trách nhiệm nhiều bên"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nói kế hoạch rời đi",
+      "roles": [
+        "người học",
+        "quầy hỗ trợ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trả nhà/đồ",
+      "roles": [
+        "người học",
+        "chủ nhà hoặc đơn vị dịch vụ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Dừng dịch vụ",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Hồ sơ còn mở",
+      "roles": [
+        "người học",
+        "nhân viên quầy hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói dự định rời Nhật dài hạn và hỏi việc nào cần tư vấn từng nơi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Được chỉ nhiều đầu mối, hỏi thứ tự liên hệ hợp lý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Ngày bay chưa chắc, nói mốc dự kiến và khi nào xác nhận",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Quầy không phụ trách một phần, xin chuyển đúng nơi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hẹn xem nhà và bàn giao chìa khóa trước ngày đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chủ nhà chỉ có giờ sau ngày bay, thương lượng người thay",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Một món đồ cần chuyển sau, hỏi ai nhận và khi nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bàn giao xong, xác nhận việc còn chờ giải quyết",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói ngày muốn ngừng và hỏi hóa đơn cuối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Dịch vụ không dừng đúng ngày mong muốn, hỏi phương án",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Địa chỉ nhận thông báo cuối thay đổi, xác nhận nơi liên hệ",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Gọi lại khi khoản cuối chưa rõ, nhắc cuộc trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi hồ sơ đang chờ có thể liên hệ sau khi đi thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nhân viên cần thêm thông tin, hỏi cách gọi từ nước ngoài",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Một người hỗ trợ được liên hệ, giới thiệu vai và phạm vi nhờ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Tóm tắt ba việc còn lại và ai phụ trách từng việc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Không là checklist pháp lý chung; V5P-124 chỉ tạm về rồi quay lại.",
+  "cross_stage_refs": [
+    "V5P-124",
+    "V5P-025"
+  ],
+  "source_refs": [
+    "W01"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

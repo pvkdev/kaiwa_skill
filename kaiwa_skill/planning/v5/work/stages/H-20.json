@@ -1,0 +1,234 @@
+{
+  "stage_key": "H-20",
+  "uid": "f374becb-c849-5ec2-a8d8-2ed37bff3ff9",
+  "objective": "Tìm khách mới qua nhiều lần tiếp xúc: nhận biết nhu cầu, xin cuộc gặp và nối đúng người.",
+  "knowledge_focus": [
+    "Thăm dò nhu cầu thay vì tung bài bán hàng cố định",
+    "Xác nhận thời điểm/đầu mối quyết",
+    "Theo dõi lời hứa qua cuộc nói kế tiếp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm đúng đầu mối",
+      "roles": [
+        "đại diện bán hàng",
+        "người giới thiệu"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Cuộc gặp đầu",
+      "roles": [
+        "đại diện bán hàng",
+        "khách tiềm năng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đưa đề nghị giá trị",
+      "roles": [
+        "đại diện bán hàng",
+        "khách tiềm năng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhiều người phía khách",
+      "roles": [
+        "đại diện bán hàng",
+        "đầu mối khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Chưa thành khách",
+      "roles": [
+        "đại diện bán hàng",
+        "khách tiềm năng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi bộ phận nào đang gặp vấn đề mình có thể hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người giới thiệu tưởng mình chào giá ngay, nói mục tiêu là nghe",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Xin giới thiệu người phụ trách thực tế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ chưa muốn kết nối, hỏi khi nào phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi quy trình hiện tại và nơi mất thời gian",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi hệ quả lớn nhất nếu không đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách chưa muốn nêu số, dùng ví dụ định tính",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi ai sẽ dùng/duyệt giải pháp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nối một lợi ích với vấn đề khách vừa nêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách tưởng giải pháp thay toàn bộ hệ thống, làm rõ phạm vi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Đề nghị thử một cuộc demo theo kịch bản của khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Khách chưa có thời gian, hỏi sự kiện làm họ cần xem lại",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi ai phản đối thay đổi và vì sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Đầu mối cần hỏi nhóm dùng, hẹn mốc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nhóm dùng nêu lo khác, cập nhật đề nghị",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi cuộc gặp sau nên mời ai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Khách chọn đối thủ, hỏi một lý do có thể chia sẻ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách không muốn trao đổi, cảm ơn và kết",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đề nghị giữ liên hệ khi nhu cầu đổi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Sau một thời gian chỉ gọi khi có lý do mới rõ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "T-60 là giới thiệu sản phẩm cơ bản, V5P-117 là bối cảnh triển lãm, H-21 là thăm dò hợp tác.",
+  "cross_stage_refs": [
+    "T-60",
+    "V5P-117",
+    "H-21"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,296 @@
+{
+  "stage_key": "T-67",
+  "uid": "82cdb7e1-bdb8-5410-8b0d-0b3179bac810",
+  "objective": "Bàn và điều chỉnh chuyến đi với người thân có nhịp, sở thích và ngân sách khác nhau.",
+  "knowledge_focus": [
+    "Nói ưu tiên của từng người và đánh đổi",
+    "Phân việc đặt dịch vụ, sửa kế hoạch khi điều kiện đổi, giữ quan hệ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mục đích chuyến đi",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Ngân sách và vai",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chốt với nơi cung cấp",
+      "roles": [
+        "người học",
+        "nhân viên lưu trú hoặc vận chuyển"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trước ngày đi có thay đổi",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Trong hành trình",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau chuyến",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi mỗi người muốn nghỉ hay đi nhiều điểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mình cần thời gian nghỉ vì đi cùng người lớn tuổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người thân chỉ rảnh một đêm, thu hành trình",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ tưởng mình phản đối địa điểm, làm rõ mình lo nhịp đi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt mục tiêu chuyến đi chung",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đề nghị mức chi mỗi người thoải mái",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi ai sẽ đặt phòng và ai xem tuyến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Một người có ngân sách thấp hơn, chỉnh loại phòng/di chuyển",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không chọn dịch vụ quá đắt dù được gợi ý",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt ai đặt gì và hạn xác nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói số người, tuổi/nhu cầu liên quan và giờ đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi điều kiện đổi số người/giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chưa có xác nhận gia đình, xin giữ thông tin đến lúc nào",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhân viên nghe nhầm ngày về, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại dịch vụ đã thực sự đặt",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo một người không khỏe nên cần lịch nhẹ hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Chọn tuyến ít chuyển hoặc đổi ngày",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người đặt phòng nói có phí đổi, cùng quyết có chấp nhận",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Một người không đi được, tôn trọng và xử lý phần đặt",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Báo các bên sau khi nhóm chốt phương án",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi nhóm có cần nghỉ trước điểm tiếp không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Điểm định đến đóng, đề nghị nơi gần phù hợp mọi người",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Một người nghĩ đã đồng ý tách nhóm, xác nhận lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Hai nhóm muốn nhịp khác, hẹn điểm và giờ gặp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Nhắc lại ai đi với ai và cách liên hệ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Hỏi phần chi phí chung còn chưa rõ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Nói điều mình biết ơn người đã đặt lịch",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Một dịch vụ chưa hoàn tất/hoàn tiền, phân người liên hệ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Báo kết quả liên hệ cho cả nhóm",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Rút kinh nghiệm lần sau mà không quy trách nhiệm cá nhân",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Chuyến gia đình và quyết định nhóm; ryokan V5P-131/outdoor V5P-132 là bối cảnh chuyên biệt, H-17 sự cố đàm phán.",
+  "cross_stage_refs": [
+    "V5P-131",
+    "V5P-132",
+    "H-17"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

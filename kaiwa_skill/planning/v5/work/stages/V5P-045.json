@@ -1,0 +1,248 @@
+{
+  "stage_key": "V5P-045",
+  "uid": "30ded60f-e864-505e-9e20-5953cb1aebc5",
+  "objective": "Chọn, gửi và xử lý sự cố xe đạp qua lời nói với cửa hàng/bãi xe/đơn vị liên quan.",
+  "knowledge_focus": [
+    "Nêu mục đích đi, cỡ xe, tình trạng hỏng",
+    "Hỏi vị trí để xe, phí, nhận lại hoặc sửa"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mua và nhận xe",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng xe"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gửi xe thường ngày",
+      "roles": [
+        "người học",
+        "nhân viên bãi xe"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hỏng, mất chìa, nghi bị di dời",
+      "roles": [
+        "người học",
+        "nhân viên sửa xe hoặc quầy thu giữ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Gửi xe dài hạn và đổi chỗ",
+      "roles": [
+        "người học",
+        "nhân viên bãi xe"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau lần sửa đầu tiên",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng xe"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói quãng đường đi hằng ngày để được gợi ý xe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Thử độ cao yên và nói chưa vừa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi phụ kiện cần cho mục đích sử dụng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Xe hợp cỡ nhưng hết màu, hỏi khi nào có lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại giá và những gì cửa hàng bàn giao",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi có chỗ gửi theo ngày không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi khu nào dành cho xe thường",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không thấy xe tại vị trí đã để, nhờ kiểm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Xe bị chuyển sang khu khác, xác nhận lý do",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Tìm được xe và hỏi chỗ đúng lần sau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Mô tả lốp xẹp giữa đường và hỏi có sửa trong ngày không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không có linh kiện, hỏi sửa tạm hay hẹn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nói mất chìa và hỏi cách xác minh xe của mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Quầy cần kiểm xe có bị chuyển đi không, xin đầu mối gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Đến đúng nơi nhận xe/sửa xe, xác nhận phí và tình trạng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi có chỗ gửi xe theo tháng gần lối mình dùng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nói sẽ vắng nhiều ngày và hỏi cách giữ hoặc ngừng chỗ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Bãi sắp sửa khu đang dùng, hỏi chỗ tạm cụ thể",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nghe hai khu mới có phí khác nhau, chọn theo giờ mình ra vào",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Quay lại sau ngày đổi khu để xác nhận xe ở đúng vị trí",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Thử xe sau sửa và nói phanh vẫn có tiếng lạ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nhắc lỗi đã báo lần đầu và phần cửa hàng đã thay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Thợ hiểu mình muốn mua xe mới, đính chính chỉ cần kiểm lại xe cũ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Cửa hàng cần một ngày để kiểm, hỏi xe có thể để lại không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Nhận xe lần hai và xác nhận điểm đã sửa cùng khoản phí",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Xe đạp đời sống, không hướng dẫn điều khiển xe hay xử lý va chạm ô tô. Quy trình đăng ký/thu giữ tùy nơi.",
+  "cross_stage_refs": [
+    "V5P-047",
+    "V5P-048"
+  ],
+  "source_refs": [],
+  "source_findings": [
+    "Các chuỗi bãi gửi/sửa xe là AI biên soạn; quy trình và phí cần kiểm nơi cụ thể."
+  ],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

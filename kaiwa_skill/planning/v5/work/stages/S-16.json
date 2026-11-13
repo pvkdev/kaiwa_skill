@@ -1,0 +1,148 @@
+{
+  "stage_key": "S-16",
+  "uid": "f584e001-d3cd-51dc-9547-07c5361f9f36",
+  "objective": "Nói lại lịch và thứ tự việc trong ngày, báo khi lịch thay đổi.",
+  "knowledge_focus": [
+    "Dùng giờ và thứ tự trước/sau",
+    "Xác nhận việc nào làm trước",
+    "Nói một thay đổi và tác động gần nhất"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận lịch đầu ca",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Phối hợp với đồng nghiệp",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cuối ngày và ngày mai",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nghe ba việc trong ngày và nhắc lại thứ tự",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhầm giờ giao hàng với giờ họp, hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi việc nào ưu tiên khi hai việc cùng hạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Leader chọn ưu tiên, nhân viên xác nhận việc còn lại",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi lúc nào đồng nghiệp dùng phòng chung xong",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Phòng có thể dùng muộn hơn, đổi giờ chuẩn bị",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói mình làm phần đầu để đồng nghiệp làm phần sau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đầu vào chưa tới, báo việc sau đang bị chặn",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo việc đã xong và một việc còn lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Cần sếp xác nhận ưu tiên ngày mai",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Sáng sau hỏi lại ưu tiên đã quyết",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi có cần bàn giao việc còn lại cho ca tối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Nền lịch ngày; điều phối phụ thuộc nhiều bộ phận ở V5P-099.",
+  "cross_stage_refs": [
+    "V5P-099"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,299 @@
+{
+  "stage_key": "H-11",
+  "uid": "121a792c-e29f-55b9-8ab1-cb533003554d",
+  "objective": "Duy trì quan hệ khu phố khi có bất đồng nhiều lần, người khác liên quan và cách hiểu xã hội khác nhau.",
+  "knowledge_focus": [
+    "Kể sự kiện không gán động cơ, giữ phần riêng của người khác",
+    "Tìm điểm chung, giới hạn, đầu mối trung gian và lần kiểm lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Quan hệ xã giao kéo dài",
+      "roles": [
+        "người học",
+        "hàng xóm lâu năm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bất tiện tái diễn",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Mình bị phản ánh",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chuyện truyền qua người thứ ba",
+      "roles": [
+        "người học",
+        "người quen trong khu"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Quyết định chung trong tòa/khu",
+      "roles": [
+        "người học",
+        "đại diện cư dân"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Phục hồi sau căng thẳng",
+      "roles": [
+        "người học",
+        "hàng xóm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhắc việc đã cùng làm trước khi nêu đề nghị mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi hàng xóm thấy khu phố đổi thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người kia muốn giữ khoảng cách, điều chỉnh mức mời",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ tưởng mình chỉ liên hệ khi cần nhờ, giải thích và nghe",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt cách giữ liên lạc hai bên thoải mái",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nêu những lần cụ thể không quy kết người gây",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi họ có biết nguyên nhân nào khác không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Họ công nhận ảnh hưởng nhưng chưa đổi được ngay, hẹn mốc",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Sau mốc vấn đề vẫn còn, hỏi điều đã thử",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhờ quản lý/cư dân phụ trách cùng kiểm một thông tin",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nghe hết lời phàn nàn về tiếng ồn/đồ chung rồi nhắc lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Phàn nàn gộp lỗi nhiều nhà, tách phần của mình",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đề nghị thử cách giảm ảnh hưởng một tuần",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không nhận trách nhiệm cho điều chưa xác minh, vẫn đề nghị kiểm",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt phần mình sẽ sửa ngay và cách kiểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi điều họ trực tiếp chứng kiến và điều chỉ nghe lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Không kể chuyện riêng của hàng xóm vắng mặt",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Lời mình bị truyền sai, đề nghị nói trực tiếp với người liên quan",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Người thứ ba muốn đứng giữa, xác nhận họ có thật sự đồng ý",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Giảm hiểu nhầm bằng cuộc nói với đúng người",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi ai được tham gia góp ý về giờ dùng không gian chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nêu nhu cầu của người đi làm ca khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Phương án đa số gây khó cho một nhóm, đề nghị giờ thử",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Không ủng hộ đề xuất khi chưa nghe người bị ảnh hưởng",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt thông tin cần hỏi trước quyết định",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nói điều mình đã thay đổi theo trao đổi trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hỏi phần nào còn gây bất tiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Họ chưa muốn nói thêm, tôn trọng và giữ lời hứa",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Chỉ giao tiếp qua quản lý một thời gian, xác nhận cách đó",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Gặp lại sau vài tuần, hỏi việc chung đã ổn chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Hàng xóm/quan hệ xã hội Thượng, không lặp nhờ/mời T-27 hay quản lý vận hành V5P-022.",
+  "cross_stage_refs": [
+    "T-27",
+    "V5P-022",
+    "H-55"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

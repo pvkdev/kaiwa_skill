@@ -1,0 +1,307 @@
+{
+  "stage_key": "V5P-020",
+  "uid": "ff99432c-a861-5d71-aeaa-b4afbb5064d6",
+  "objective": "Phối hợp với công ty chuyển nhà từ khảo sát/báo giá đến nhận đủ đồ và xử lý sự cố sau bàn giao.",
+  "knowledge_focus": [
+    "Nêu đồ, địa điểm, lối đi, ngày và điều kiện vận chuyển",
+    "Kiểm phạm vi báo giá, thay đổi, mất/hỏng và đầu mối xử lý"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khảo sát và mô tả nhu cầu",
+      "roles": [
+        "người học",
+        "nhân viên chuyển nhà"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "So báo giá và điều kiện",
+      "roles": [
+        "người học",
+        "nhân viên chuyển nhà"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phối hợp tòa nhà hai đầu",
+      "roles": [
+        "người học",
+        "nhân viên quản lý tòa"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đổi lịch trước ngày chuyển",
+      "roles": [
+        "người học",
+        "nhân viên chuyển nhà"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Ngày chuyển",
+      "roles": [
+        "người học",
+        "đội chuyển nhà"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Kiểm và liên hệ sau",
+      "roles": [
+        "người học",
+        "nhân viên chuyển nhà"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói hai địa chỉ và ngày dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Kể đồ lớn, dễ vỡ và đồ tự mang",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi cần khảo sát tại nhà hay qua cuộc gọi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đồ nhiều hơn báo ban đầu, xin sửa ước tính",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại số kiện và ai đóng gói",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi tổng có gồm tháo lắp và vật liệu gói không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "So hai khung giờ theo chi phí và người có mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hiểu giá là trọn gói nhưng một phần tính riêng, nhờ tách",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Giá vượt ngân sách, xin phương án bớt dịch vụ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chọn gói và xác nhận phạm vi",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi giờ xe chuyển được vào và chỗ đỗ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi có cần đặt thang máy trước không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Thang máy chỉ trống một khung, đổi giờ đội chuyển",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Ban quản lý chưa duyệt chỗ đỗ, hẹn thông báo",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Báo công ty chuyển nhà giờ đã được chốt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo căn mới bàn giao muộn, xin dời ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Ngày mới cần phí khác, hỏi chênh lệch",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đơn vị không có xe hôm đó, hỏi phương án giữ đồ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chuyển đồ không cần gấp trước, phần còn lại sau",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt lịch và giá mới bằng lời",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Chỉ món cần mang lên trước để không chắn lối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Tủ không qua cửa, cùng kiểm kích thước và lựa chọn",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Tháo được phần nào, hỏi phí/thời gian trước khi đồng ý",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Xe đến muộn làm lỡ giờ thang máy, báo hai bên",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt lối/giờ mới trước khi tiếp tục",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Kiểm từng món lớn trước khi đội rời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Thiếu một thùng được đánh dấu, nói thông tin nhận diện",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Đơn vị cần hỏi xe và kho, xin mốc trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Gọi lại với kết quả kiểm ở nhà",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Thống nhất món tìm được hoặc bước xử lý hỏng/thiếu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Vận chuyển nhà; tìm thuê T-01, điện máy giao lắp V5P-005, bỏ đồ lớn V5P-019. Không tư vấn nghĩa vụ bảo hiểm.",
+  "cross_stage_refs": [
+    "T-01",
+    "V5P-005",
+    "V5P-019"
+  ],
+  "source_refs": [
+    "DW07"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

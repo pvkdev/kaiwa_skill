@@ -1,0 +1,248 @@
+{
+  "stage_key": "V5P-058",
+  "uid": "328f6ff5-6466-5606-bcf9-b00ac7a57134",
+  "objective": "Gọi hỗ trợ y tế khẩn cấp, trả lời câu hỏi điều phối và bàn giao thông tin cho người đến giúp.",
+  "knowledge_focus": [
+    "nói cần hỗ trợ và vị trí",
+    "mô tả dấu hiệu quan sát",
+    "hỏi lại câu hỏi",
+    "chuyển thông tin giữa người gọi và đội đến"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bắt đầu cuộc gọi",
+      "roles": [
+        "người học",
+        "người tiếp nhận 119"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Mô tả người cần giúp",
+      "roles": [
+        "người học",
+        "người tiếp nhận 119"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phối hợp vị trí đón",
+      "roles": [
+        "người học",
+        "người ở gần"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bàn giao tại chỗ",
+      "roles": [
+        "người học",
+        "nhân viên cứu trợ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Đội hỗ trợ chưa tìm thấy lối vào",
+      "roles": [
+        "người học",
+        "người tiếp nhận và đội đến"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói có người vừa ngã và cần hỗ trợ ở cửa bắc ga",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người tiếp nhận hỏi địa chỉ, bổ sung tên tòa và tầng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không nhớ địa chỉ số, nêu mốc nhìn thấy và xin hướng dẫn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không hiểu câu hỏi đầu, xin nhắc chậm và nói tiếng mình dùng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói người đó có trả lời khi gọi hay không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói thời điểm vừa xảy ra và điều mình chứng kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Có người khác kể khác, nói rõ phần nào do mình thấy",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Tình trạng thay đổi trong khi gọi, báo ngay điều mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nhờ người khác ra cửa dễ thấy để đón đội đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Lối xe vào bị chặn, gọi báo lối khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người được nhờ không tới được, giao lại vị trí cho người khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Xác nhận mình sẽ đứng ở đâu khi đội đến",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói lại điều đã kể qua điện thoại theo trình tự",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Không biết bệnh nền/thuốc, nói mình không biết thay vì đoán",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Người nhà vừa tới, giới thiệu để đội hỏi tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi mình còn cần cung cấp gì trước khi rời chỗ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nghe còi nhưng xe ở lối khác, gọi báo biển/cửa mình đứng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Người tiếp nhận nhắc một lối không tồn tại, xin đối chiếu mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Nhờ người ở gần ra cửa mới trong khi mình ở với người bệnh",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Khi đội tới, nói vị trí người cần giúp và tình trạng vừa thay đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy sơ cứu hay chẩn đoán; B05 vai nhân viên tại cơ sở chỉ hỗ trợ chức năng nói.",
+  "cross_stage_refs": [
+    "S-34",
+    "S-31"
+  ],
+  "source_refs": [
+    "W07",
+    "W08",
+    "W09",
+    "B05:ch8-U1-U2"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

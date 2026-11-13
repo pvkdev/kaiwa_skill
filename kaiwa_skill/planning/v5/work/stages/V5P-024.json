@@ -1,0 +1,166 @@
+{
+  "stage_key": "V5P-024",
+  "uid": "7e8bb5e2-9e23-5e68-821f-03b5d688c10c",
+  "objective": "Vào ký túc xá hoặc nhà công ty, hỏi quy tắc và giải quyết việc sinh hoạt với đúng người phụ trách.",
+  "knowledge_focus": [
+    "Phân biệt người quản lý nhà, công ty và người ở cùng",
+    "Nêu nhu cầu sử dụng không gian chung và xác nhận giới hạn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận chỗ ở",
+      "roles": [
+        "người học",
+        "người quản lý ký túc xá"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Dùng không gian chung",
+      "roles": [
+        "người học",
+        "người ở cùng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Vướng quy định",
+      "roles": [
+        "người học",
+        "người quản lý ký túc xá"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xác nhận phòng, chìa khóa và giờ vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi quy tắc khách tới thăm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi người liên hệ khi thiết bị hỏng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nghe nhầm giờ khóa cửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Đọc lại giờ và hỏi ngoại lệ khi về trễ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Xin chia thời gian dùng bếp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhờ chỉ chỗ để đồ cá nhân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Được dùng phòng sinh hoạt nhưng phải trả sạch trước giờ đóng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Đồ của mình bị chuyển chỗ, hỏi người ở cùng trước khi kết luận",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Hai bên thống nhất một chỗ để mới",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo ca làm khiến mình về muộn thường xuyên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Quản lý không thể cho ngoại lệ, hỏi lựa chọn khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Quản lý cần hỏi công ty, chốt người gọi lại và thời điểm",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Liên hệ lại vì chưa có câu trả lời",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nói lịch chuyển ra và hỏi cách bàn giao chìa khóa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Ký túc xá có quan hệ công ty/quản lý; sharehouse bạn bè ở T-02. Không biến thành hướng dẫn nội quy cố định.",
+  "cross_stage_refs": [
+    "T-02",
+    "V5P-018"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

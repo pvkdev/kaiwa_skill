@@ -1,0 +1,198 @@
+{
+  "stage_key": "T-62",
+  "uid": "c2b08bcf-0226-542f-b1bd-98ff8ea664ff",
+  "objective": "Thương lượng mức vừa với khách về thời gian, phạm vi và điều khách lo.",
+  "knowledge_focus": [
+    "Hỏi nỗi lo thật trước khi đề xuất",
+    "Đặt điều kiện trao đổi hai chiều",
+    "Chốt điều đã đồng ý và điều còn chờ duyệt"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khách nêu lo ngại",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đề nghị điều chỉnh",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giá và phạm vi",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Kết thúc chưa chốt",
+      "roles": [
+        "nhân viên",
+        "khách hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi điều khách lo nhất khi triển khai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tưởng khách lo giá, thực ra lo gián đoạn vận hành",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhắc lại điều đã hiểu và xin khách xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi hậu quả nếu mốc hiện tại trễ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Đề nghị thử nhỏ trước khi ký toàn bộ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Khách đồng ý thử, chốt tiêu chí",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách cần bảo đảm khác, hỏi điều tối thiểu",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Khách thử nếu có hỗ trợ tại chỗ, nói phần có thể đáp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói nếu giảm giá thì cần giảm phạm vi tương ứng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách tưởng giảm giá giữ nguyên tất cả, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin thời gian hỏi người duyệt mức giá",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Báo quyết định được duyệt hoặc phương án khác",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Tóm tắt hai điểm đã gần thống nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Còn một điểm không nhượng được, hẹn người quyết",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đề nghị chia thành hai giai đoạn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Gọi sau khi hai bên xem phương án giai đoạn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "H-32/H-33 là đàm phán chiến lược và giá bán buôn, V5P-114 là thay đổi yêu cầu sau cam kết.",
+  "cross_stage_refs": [
+    "H-32",
+    "H-33",
+    "V5P-114"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

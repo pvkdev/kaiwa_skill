@@ -1,0 +1,361 @@
+{
+  "stage_key": "T-59",
+  "uid": "a458f686-f123-5cdd-a5c8-73cfe6855a32",
+  "objective": "Nói rõ nhu cầu với nhân viên cửa hàng, kiểm lời tư vấn và từ chối gợi ý không hợp mà vẫn giữ cuộc nói hiệu quả.",
+  "knowledge_focus": [
+    "Đặt câu hỏi theo mục đích dùng, ràng buộc và ưu tiên",
+    "Phản hồi tư vấn, từ chối upsell, sửa giả định sai"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở lời tư vấn",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đào sâu lựa chọn",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nghe lời giới thiệu khó hiểu",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Từ chối gợi ý",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Xin thời gian và quay lại",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Khi tư vấn hai người khác nhau",
+      "roles": [
+        "người học",
+        "nhân viên ca sau"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Tư vấn ở cửa hàng cho một sở thích",
+      "roles": [
+        "khách có sở thích",
+        "nhân viên tiệm nhạc, thủ công hoặc cửa hàng chuyên dụng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mình mua cho ai và dùng trong hoàn cảnh nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nêu ngân sách tối đa trước khi nghe gợi ý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi nhân viên cần biết thêm thông tin nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhân viên tưởng mua quà khi mình mua cho mình, đính chính",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt nhu cầu chung trước khi so hàng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi vì sao một mẫu hợp nhu cầu đã nêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói tính năng mình không cần để thu hẹp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Chỉ có mẫu gần đúng, hỏi điểm không đáp ứng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Đề nghị xem loại đơn giản hơn",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại hai lựa chọn còn cân nhắc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin giải thích một thuật ngữ bằng ví dụ dùng hằng ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hiểu độ bền như thời hạn bảo hành, hỏi lại khác nhau",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hỏi nhân viên dựa vào thông tin nào để nói mẫu này tốt hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không có câu trả lời tại quầy, hẹn khi ai có thể giải thích",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Tóm tắt lại tính năng mình đã hiểu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói món thêm không phù hợp ngân sách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nhân viên đề nghị giảm giá nếu mua bộ, hỏi tổng và quyết định",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Từ chối gia hạn bảo hành không cần",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhân viên ghi món thêm như đã đồng ý, sửa trước thanh toán",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc lại chỉ món mình chọn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói cần đo chỗ đặt hoặc hỏi người dùng trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi nhân viên có thể giữ món đến lúc nào",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Quay lại với số đo mới và nhắc mẫu đã xem",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Thông tin mới khiến mình chọn mẫu khác, nêu lý do",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt quyết định hoặc nói chưa mua, cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nhắc điều nhân viên trước đã nói",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hai người giải thích điều kiện khác, hỏi xem thông tin nào áp đúng",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Chưa thể xác nhận, xin gặp người phụ trách sản phẩm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Không muốn quyết khi chưa rõ, hoãn mua",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Nhắc lại thông tin được xác minh trước khi chốt",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    },
+    {
+      "id": "S031",
+      "event_id": "E07",
+      "title": "Nói mình mới bắt đầu và hỏi dụng cụ phù hợp với mục đích tập ở nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S032",
+      "event_id": "E07",
+      "title": "Mang thông tin món đang có để hỏi phụ kiện có tương thích không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S033",
+      "event_id": "E07",
+      "title": "Nhân viên dùng thuật ngữ chưa hiểu, nhờ giải thích bằng việc món đó giúp làm được gì",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S032"
+      ]
+    },
+    {
+      "id": "S034",
+      "event_id": "E07",
+      "title": "Mẫu được gợi ý vượt ngân sách, hỏi phần nào nên ưu tiên và phần nào có thể mua sau",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S031"
+      ]
+    },
+    {
+      "id": "S035",
+      "event_id": "E07",
+      "title": "Được đề nghị thử nhưng chưa muốn mua, xác nhận chỉ thử tìm hiểu lần này",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S034"
+      ]
+    },
+    {
+      "id": "S036",
+      "event_id": "E07",
+      "title": "Sau khi mua về gặp giới hạn khác lời tư vấn, quay lại trình bày cách mình định dùng và xin hỗ trợ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S032"
+      ]
+    }
+  ],
+  "coverage_note": "Kỹ năng nói nhu cầu và từ chối ở mọi cửa hàng, không dạy thêm kiến thức sản phẩm cụ thể; T-58 hậu mua. AI008 hobby shop trở thành biến thể tư vấn có nhu cầu riêng, không thêm chặng mua sắm chung thứ hai.",
+  "cross_stage_refs": [
+    "T-58",
+    "V5P-005"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily",
+  "editorial_contributors": [
+    "daily",
+    "root"
+  ]
+}

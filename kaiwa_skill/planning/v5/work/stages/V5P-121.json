@@ -1,0 +1,206 @@
+{
+  "stage_key": "V5P-121",
+  "uid": "a846871a-5f66-5f30-a0bf-6df2c63d40b6",
+  "objective": "Đổi ca và phối hợp phủ việc khi người trực vắng.",
+  "knowledge_focus": [
+    "Nói ca, khung giờ và lý do ở mức cần thiết",
+    "Xác nhận ai được phân công thay",
+    "Bàn giao việc đang chờ cho ca tiếp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin đổi ca trước lịch",
+      "roles": [
+        "nhân viên",
+        "trưởng ca"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thỏa thuận với đồng nghiệp",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp khác ca"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Vắng đột xuất trong ca",
+      "roles": [
+        "trưởng ca",
+        "nhân viên đang trực"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bàn giao và sau đổi ca",
+      "roles": [
+        "nhân viên",
+        "ca thay"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo không thể trực ca chiều thứ sáu, xin đổi ca",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Trưởng ca chỉ cho đổi nếu tìm được người nhận",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chưa đổi được, hỏi còn phương án nào",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đã tìm được người nhận, báo lại giờ cụ thể",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nhờ đồng nghiệp nhận ca đầu giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Đồng nghiệp nhận được cả ca, nhắc giờ bắt đầu",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đồng nghiệp chỉ nhận nửa ca, hỏi ai nhận phần còn lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đồng nghiệp cũng có lịch, cảm ơn và hỏi người khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hai người chốt điểm giao ca",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Trưởng ca báo một người vắng, hỏi ai hỗ trợ quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhân viên chỉ hỗ trợ tới giờ nghỉ, trưởng ca sắp người tiếp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Không đủ người, trưởng ca nói việc nào ưu tiên",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Khách phải chờ, nhân viên báo thời gian ước tính",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nói khách/đơn đang chờ xử lý khi giao ca",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Ca thay tưởng việc đã xong, làm rõ trạng thái",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Sau ca hỏi một việc tồn có được xử lý chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Báo trưởng ca lịch đã trở lại bình thường",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Điều phối ca bằng lời; không mặc định cách tính giờ, trả công hoặc quyền nghỉ của một công ty.",
+  "cross_stage_refs": [
+    "S-45"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

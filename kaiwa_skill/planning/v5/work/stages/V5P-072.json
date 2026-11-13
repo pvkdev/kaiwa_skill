@@ -1,0 +1,229 @@
+{
+  "stage_key": "V5P-072",
+  "uid": "a92ba206-ab24-596c-be6f-ab60cf759e6b",
+  "objective": "Trao đổi về hỗ trợ chăm sóc người cao tuổi với người cần chăm, gia đình và chuyên viên.",
+  "knowledge_focus": [
+    "kể sinh hoạt cụ thể",
+    "hỏi mong muốn người cần chăm",
+    "hỏi lịch và vai từng bên",
+    "điều chỉnh kế hoạch khi thay đổi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm đầu mối tư vấn",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ địa phương"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bàn nhu cầu thực tế",
+      "roles": [
+        "người học",
+        "người cần chăm/chuyên viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Điều chỉnh sau khi dùng",
+      "roles": [
+        "người học",
+        "care manager/người chăm"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Ý muốn của người cần chăm đổi",
+      "roles": [
+        "người học",
+        "người lớn tuổi và care manager"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói gia đình đang khó sắp chăm sóc và hỏi nơi tư vấn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên hỏi người cần chăm sống ở đâu, trả lời cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đến sai vùng phụ trách, xin nơi đúng",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa có lịch, hỏi hỗ trợ trong lúc chờ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Xin có người lớn tuổi tham gia buổi tư vấn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi người lớn tuổi muốn tự làm phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Kể sinh hoạt khó khăn bằng ví dụ, không chỉ tên bệnh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người lớn tuổi không thích phương án gia đình nêu, nghe lại",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chuyên viên giải thích dịch vụ, hỏi lịch và phần gia đình làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chi phí/điều kiện chưa rõ, xin người chuyên môn giải thích",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người chăm nghỉ đột xuất, hỏi cách phối hợp tạm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người lớn tuổi thấy lịch quá dày, đề nghị giảm/đổi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Tình trạng thay đổi, báo điều quan sát và hỏi đánh giá lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Hai người nhà hiểu khác về trách nhiệm, chốt lại bằng lời",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hẹn xem lại phương án sau thời gian thử",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Người cần chăm không còn muốn người lạ tới buổi sáng, mời họ nói lý do",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Gia đình tưởng đó là từ chối mọi dịch vụ, hỏi rõ phần nào họ không muốn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Care manager đề nghị đổi giờ hoặc loại hỗ trợ, hỏi người lớn tuổi lựa chọn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau tuần thử, hỏi chính người cần chăm phương án mới có hợp không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "H-09 giữ bệnh/điều trị chuyên khoa; đây là dịch vụ và sinh hoạt lâu dài.",
+  "cross_stage_refs": [
+    "H-09"
+  ],
+  "source_refs": [
+    "W12"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

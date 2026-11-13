@@ -1,0 +1,206 @@
+{
+  "stage_key": "S-52",
+  "uid": "e70efa7f-14f4-53c9-a108-91eea9f1afe8",
+  "objective": "Nói cảm xúc và mong muốn trước mắt, giải thích ngắn lý do và nghe phản hồi.",
+  "knowledge_focus": [
+    "Từ cảm xúc và mức độ, lý do đơn giản",
+    "Nói điều muốn làm, kế hoạch gần và thay đổi ý định"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chia sẻ cảm xúc",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói mong muốn",
+      "roles": [
+        "người học",
+        "người đi cùng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nói dự định gần",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đổi ý và báo lại",
+      "roles": [
+        "người học",
+        "người đi cùng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mình vui vì vừa gặp lại bạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mình lo trước buổi đầu ở nơi mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi bạn có thấy thoải mái không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bạn tưởng mình tức giận, giải thích mình chỉ mệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nghe bạn đáp rồi chuyển sang việc cần làm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói hôm nay muốn ăn món nhẹ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi người kia muốn nghỉ hay tiếp tục đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia muốn chỗ khác, tìm điểm chung",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chỗ mình muốn không hợp nhóm, chọn phương án khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt lựa chọn cả hai chấp nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói cuối tuần định đi thư viện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói vì sao muốn thử một lớp mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chưa biết lịch, hẹn lúc nào xác nhận",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Trời đổi nên kế hoạch ngoài trời khó thực hiện",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chọn hoạt động trong nhà",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói mình đổi ý vì đã nghe thêm thông tin",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người kia tưởng mình hủy cả buổi, làm rõ chỉ đổi địa điểm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Đề nghị phương án mới kèm giới hạn thời gian",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Hai bên nhắc lại kế hoạch mới",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Sau buổi nói cảm nhận so với dự định ban đầu",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Cảm xúc/dự định gần, không yêu cầu tiết lộ chuyện nhạy cảm; tâm sự sâu T-26/H-26.",
+  "cross_stage_refs": [
+    "T-26",
+    "H-26"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

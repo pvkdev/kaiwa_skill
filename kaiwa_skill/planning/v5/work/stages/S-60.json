@@ -1,0 +1,212 @@
+{
+  "stage_key": "S-60",
+  "uid": "e94dbc1d-7f5b-5657-920c-d08f29a2180f",
+  "objective": "Nối những việc nhỏ trong một ngày ở Nhật bằng lời nói rõ ràng khi kế hoạch thay đổi.",
+  "knowledge_focus": [
+    "Chuyển từ một cuộc nói sang cuộc tiếp theo và tóm tắt bối cảnh",
+    "Dùng lại hỏi đường, mua đồ, hẹn, gọi điện và xin giúp trong cùng ngày"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Buổi sáng rời nhà",
+      "roles": [
+        "người học",
+        "hàng xóm hoặc bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đi lại và mua bữa",
+      "roles": [
+        "người học",
+        "nhân viên ga hoặc cửa hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Buổi chiều xử lý việc phát sinh",
+      "roles": [
+        "người học",
+        "người nhận cuộc gọi"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Cuối ngày và lần sau",
+      "roles": [
+        "người học",
+        "bạn hoặc người ở cùng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Chào hàng xóm và hỏi ngắn về lối ra đang đóng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nghe nhầm lối thay thế, xác nhận mốc rẽ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Gọi bạn báo mình sẽ đến điểm gặp muộn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bạn đổi nơi gặp, nhắc lại mốc mới",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Gặp bạn và nói gọn điều vừa xảy ra",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi lại tuyến sau khi lỡ một chuyến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi siêu thị còn nguyên liệu cần mua không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nguyên liệu hết, chọn thứ khác cho bữa",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Thanh toán bị tính nhầm một món",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Kiểm lại hóa đơn và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Gọi nơi đặt dịch vụ báo mình đến trễ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Họ chỉ giữ lịch thêm ít phút, quyết định có kịp không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không giữ được, xin lịch khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Gọi bạn báo mình đổi kế hoạch sau dịch vụ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt hoạt động còn lại trong ngày",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Kể lại một thay đổi bất ngờ trong ngày",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Xin lỗi người ở cùng vì về sau giờ đã hẹn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hỏi mai có cần mang lại món đã mượn không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chốt giờ trả và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nói một điều muốn thử khác vào cuối tuần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Bài tổng hợp vận dụng, không dạy mới chủ đề chuyên sâu hoặc khóa học khác. Các tình huống nối một ngày nhưng mỗi cuộc nói là hai vai.",
+  "cross_stage_refs": [
+    "S-13",
+    "S-14",
+    "S-21",
+    "S-36",
+    "S-46"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

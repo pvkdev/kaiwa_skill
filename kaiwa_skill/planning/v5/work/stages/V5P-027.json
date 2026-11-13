@@ -1,0 +1,252 @@
+{
+  "stage_key": "V5P-027",
+  "uid": "38567e9f-f405-5508-a40d-bd4c46c87576",
+  "objective": "Trình bày tình trạng cư trú và hỏi yêu cầu/tiến độ với đúng cơ quan, không tự kết luận hồ sơ.",
+  "knowledge_focus": [
+    "kể tình trạng theo thời gian",
+    "phân biệt tiếp nhận và quyết định",
+    "hỏi giấy bổ sung",
+    "xin giải thích thông báo"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn cuộc tư vấn",
+      "roles": [
+        "người học",
+        "nhân viên thông tin"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trình bày hoàn cảnh",
+      "roles": [
+        "người học",
+        "nhân viên Nyukan"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nghe yêu cầu bổ sung",
+      "roles": [
+        "người học",
+        "nhân viên Nyukan"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Theo dõi thông báo",
+      "roles": [
+        "người học",
+        "nhân viên tư vấn"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Hoàn cảnh đổi trong khi hồ sơ chờ",
+      "roles": [
+        "người học",
+        "nhân viên Nyukan"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói công việc/trường học đổi và hỏi nơi tư vấn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên hỏi loại việc, người học làm rõ mục tiêu hôm nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đến quầy địa phương thay vì Nyukan, nhờ chỉ đúng nơi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không có phiên dịch lúc đó, hỏi lịch khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Kể hai mốc trước và sau đổi việc/học",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Thông tin trên giấy khác lời kể, xin kiểm mục nào sai",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Không biết câu trả lời về một mốc, nói cần xác nhận lại",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nghe câu hỏi dài, xin tách từng phần",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi cần bổ sung tài liệu nào và vì sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Được nhận một phần nhưng còn chờ, xác nhận trạng thái",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không kịp mang thêm giấy vào hẹn cũ, hỏi đổi hẹn",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhắc lại tên giấy và nơi nộp để tránh hiểu nhầm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Gọi hỏi thông báo vừa nhận nói tới bước nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Tưởng đã được chấp thuận nhưng chỉ mới tiếp nhận, sửa hiểu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hoàn cảnh lại đổi, hỏi có cần báo nơi nào",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Chưa có câu trả lời, xác nhận lúc nào nên liên hệ lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Báo công việc mới bắt đầu sớm hơn ngày đã nói trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Nhân viên chưa nói thay đổi ảnh hưởng thế nào, hỏi phần nào phải xác nhận",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Người học hiểu lời hẹn trả lời thành hẹn nhận kết quả, hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Nhận hướng dẫn liên hệ bộ phận khác, nhắc lại đầu mối và mục hỏi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy điều kiện cấp từng diện; gia đình V5P-028 và mất thẻ V5P-125 riêng.",
+  "cross_stage_refs": [
+    "V5P-028",
+    "V5P-125"
+  ],
+  "source_refs": [
+    "W01",
+    "W02"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

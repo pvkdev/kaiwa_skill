@@ -1,0 +1,180 @@
+{
+  "stage_key": "T-05",
+  "uid": "c042c8e0-8567-536d-acb8-a6106fcfebad",
+  "objective": "Gặp tiền bối và tham dự buổi giới thiệu công ty để hỏi rõ công việc/quan hệ.",
+  "knowledge_focus": [
+    "mở lời và xin thời gian",
+    "hỏi vai và môi trường",
+    "phản hồi phần chưa hiểu",
+    "hẹn cuộc gặp tiếp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gặp tiền bối",
+      "roles": [
+        "người học",
+        "tiền bối"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Buổi giới thiệu công ty",
+      "roles": [
+        "người học",
+        "nhân viên công ty"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sau sự kiện",
+      "roles": [
+        "người học",
+        "người phụ trách tuyển dụng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xin vài phút hỏi về công việc của anh/chị",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tiền bối bận, hẹn thời điểm khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi việc lúc mới vào và điều khó nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Một câu hỏi quá riêng, xin lỗi và chuyển sang công việc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Sau buổi nói, cảm ơn và nhắc điều hữu ích",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Tự giới thiệu ngắn và hỏi nhóm đang tuyển",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nghe tên bộ phận chưa rõ, xin ví dụ sản phẩm/việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi vai người mới trong nhóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không có câu trả lời tại buổi, xin người liên hệ sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Xác nhận phần nào là thông tin chung, phần nào còn thay đổi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Gọi hỏi một điều chưa kịp hỏi ở buổi giới thiệu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhân viên chỉ sang bộ phận khác, xác nhận tên người",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Thời gian thực tập/ứng tuyển đổi, hỏi lịch mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không tiếp tục vì công việc chưa hợp, cảm ơn lịch sự",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Muốn tìm hiểu thêm, xin buổi trao đổi ngắn",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Không biến buổi giới thiệu thành cam kết tuyển; T-07 là phỏng vấn.",
+  "cross_stage_refs": [
+    "T-04",
+    "T-06"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

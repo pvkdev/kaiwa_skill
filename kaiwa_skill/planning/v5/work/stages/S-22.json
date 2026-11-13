@@ -1,0 +1,204 @@
+{
+  "stage_key": "S-22",
+  "uid": "e2ddc9aa-369e-5a8a-a342-39134869ac21",
+  "objective": "Chọn, thử và mua quần áo phù hợp với kích cỡ, dịp dùng và ngân sách.",
+  "knowledge_focus": [
+    "Nói màu, cỡ, kiểu và cảm giác mặc",
+    "Hỏi khu thử, tồn hàng, giá và quyết định mua/từ chối"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm quần áo",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thử và điều chỉnh",
+      "roles": [
+        "người học",
+        "nhân viên phòng thử"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Giá và mua",
+      "roles": [
+        "người học",
+        "thu ngân"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau mua căn bản",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói loại áo cần cho mùa lạnh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi khu có cỡ mình thường mặc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "So hai màu với mục đích đi làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Kiểu được gợi ý không hợp, xin xem kiểu khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhân viên dẫn tới đúng khu và người học xác nhận",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi phòng thử còn trống không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói cỡ này chật ở vai nhưng dài ở tay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không còn cỡ vừa, hỏi chi nhánh khác có không",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhân viên mang nhầm cỡ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chỉ cỡ trên nhãn và nhờ lấy lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi giá đã gồm thuế chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi món có giảm khi mua cùng món khác không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Giá ưu đãi chỉ áp hôm khác, quyết định mua theo giá hiện tại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Xin giữ món ngắn hạn để hỏi người đi cùng",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt món, cỡ và số tiền trước thanh toán",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo phát hiện nhầm cỡ ngay sau khi ra quầy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi có thể thử lại trước khi rời cửa hàng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Thiếu phụ kiện đi cùng món, nhờ kiểm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Quay lại đúng quầy, nêu giao dịch trước",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Kiểm món nhận và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Quần áo Sơ; đồ cũ V5P-004, đặt may/dịch vụ cao cấp H-15, đổi trả phức tạp T-58.",
+  "cross_stage_refs": [
+    "V5P-004",
+    "T-58",
+    "H-15"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

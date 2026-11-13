@@ -1,0 +1,206 @@
+{
+  "stage_key": "S-53",
+  "uid": "4fb6b2ca-e48f-5b03-a855-85f9bc14bf3a",
+  "objective": "Bày tỏ ý kiến nhẹ, xin và phản hồi lời khuyên, hỏi lại khi điều nghe được chỉ là tin đồn.",
+  "knowledge_focus": [
+    "Nêu sở thích/ý kiến có lý do ngắn",
+    "Phân biệt điều biết trực tiếp và điều nghe kể; xin xác nhận"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nói ý kiến về lựa chọn",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xin lời khuyên",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cho lời khuyên vừa phải",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tin nghe được",
+      "roles": [
+        "người học",
+        "người cùng nhóm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mình thích phương án gần ga hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nêu một lý do cho ý kiến về quán ăn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi bạn nghĩ sao về hai lựa chọn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bạn không đồng ý, hỏi lý do thay vì tranh cãi",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt điều cả hai cùng ưu tiên",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi nên mang gì cho chuyến đi ngắn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói mình đã thử cách nào rồi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia chỉ biết một phần, hỏi ai biết thêm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhận gợi ý khác kế hoạch đầu, cân nhắc bằng lời",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Cảm ơn và nói mình sẽ thử phần nào",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi bạn muốn ý kiến hay chỉ muốn được nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói kinh nghiệm của mình mà không khẳng định phù hợp mọi người",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Bạn không muốn lời khuyên, dừng lại và nghe",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Bạn tưởng mình đang ra lệnh, nói rõ chỉ là gợi ý",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Để bạn tự chọn và khép chuyện",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói mình nghe sự kiện có thể đổi giờ nhưng chưa chắc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi người kia đã thấy thông báo chính thức chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hai người nhầm hai sự kiện cùng tên",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chưa có xác nhận, thống nhất hỏi người phụ trách",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Quay lại báo thông tin đã được kiểm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Ý kiến/lời khuyên nền, không đưa tin đồn như sự thật. Thuyết phục nhẹ Trung T-38, khác biệt sâu H-28.",
+  "cross_stage_refs": [
+    "T-38",
+    "H-28"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

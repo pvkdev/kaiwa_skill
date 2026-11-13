@@ -1,0 +1,316 @@
+{
+  "stage_key": "T-68",
+  "uid": "79fa1d52-da47-5d41-b864-04afb3503462",
+  "objective": "Tham gia sự kiện theo mùa và hỏi về tập quán một cách tò mò, tôn trọng khác biệt địa phương/gia đình.",
+  "knowledge_focus": [
+    "Hỏi ý nghĩa/thực hành bằng ngôn ngữ không khẳng định cả Nhật giống nhau",
+    "Chọn cách tham gia, đáp lời mời và xử lý lỡ phép"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuẩn bị dự sự kiện",
+      "roles": [
+        "người học",
+        "bạn hoặc người tổ chức"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trong lễ hội địa phương",
+      "roles": [
+        "người học",
+        "tình nguyện viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tập quán ở nhà người quen",
+      "roles": [
+        "người học",
+        "chủ nhà"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "So khác biệt vùng/đời sống",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau sự kiện",
+      "roles": [
+        "người học",
+        "bạn hoặc người tổ chức"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Hẹn chụp ảnh vào dịp gia đình hoặc trưởng thành",
+      "roles": [
+        "thành viên gia đình",
+        "nhân viên studio ảnh"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi buổi lễ ở khu này diễn ra thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói mình chưa từng tham gia và muốn biết nên chuẩn bị gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Trang phục/đồ mang theo tùy buổi, hỏi của buổi cụ thể",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không tiện tham gia nghi thức riêng, xin làm phần công khai",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt giờ đến và vai người tham dự",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi đường vào khu hoạt động",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi có cần chờ lượt mới được thử không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đi vào khu dành cho người biểu diễn, nghe nhắc và xin chỉ lối",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hoạt động chỉ mở giờ sau, chọn xem phần khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Tham gia đúng lượt rồi cảm ơn người hướng dẫn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi món/việc này có ý nghĩa gì với gia đình họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhận lời mời thử một phần mình thoải mái",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không dùng được món vì nhu cầu cá nhân, giải thích nhẹ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Hiểu lời mời là bắt buộc, hỏi lại có thể chỉ quan sát không",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Cảm ơn và kể điều mới hiểu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi họ ở vùng khác có làm giống nơi này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nói ở Việt Nam gia đình mình làm khác mà không đánh giá",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người kia không biết lý do lịch sử, chấp nhận chưa rõ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Họ tưởng mình chê tập quán, nói rõ mình tò mò",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt điều của người này và điều không nên khái quát",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói phần mình thấy thú vị và hỏi tên hoạt động",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Để quên đồ ở nơi tổ chức, hỏi quầy hỗ trợ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Gặp người mời, cảm ơn và kể mình đã thử gì",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Nhận lời mời buổi mùa sau, hỏi phần có thể giúp",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Không nhận vai tổ chức lớn nếu chưa đủ thời gian",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Hỏi studio có buổi chụp phù hợp dịp nhập học, trưởng thành hoặc mốc gia đình mình muốn kỷ niệm không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Nêu số người, trang phục và điều cần hỗ trợ cho trẻ hoặc người lớn tuổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Gói được giới thiệu có phần gia đình không cần, hỏi chọn gói khác và tổng khoản phải trả",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Một thành viên ốm, gọi đổi lịch và hỏi điều kiện của cơ sở",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Đến buổi chụp, nói bố cục mình mong muốn và xin đổi một chi tiết",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S031",
+      "event_id": "E06",
+      "title": "Ảnh nhận khác phần đã chọn, liên hệ lại để đối chiếu và hỏi cách xử lý",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S030"
+      ]
+    }
+  ],
+  "coverage_note": "Người tham dự/tìm hiểu, không tổ chức H-46/H-55; H-50 thảo luận tập quán sâu. AI014 studio ảnh là một họ sự kiện trong mốc gia đình; mọi dịch vụ/quy tắc chỉ là giả định cần hỏi cơ sở, không gán thành thông lệ bắt buộc.",
+  "cross_stage_refs": [
+    "H-46",
+    "H-55",
+    "H-50"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily",
+  "editorial_contributors": [
+    "daily",
+    "root"
+  ]
+}

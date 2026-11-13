@@ -1,0 +1,202 @@
+{
+  "stage_key": "S-50",
+  "uid": "bc7f65fa-332c-58c4-bde3-f2588a1a57d0",
+  "objective": "Hỏi thăm, lắng nghe và động viên bạn bè bằng lời ngắn phù hợp quan hệ.",
+  "knowledge_focus": [
+    "cách mở lời quan tâm",
+    "phản hồi khi người khác vui/buồn",
+    "đề nghị giúp nhỏ",
+    "tôn trọng khi người kia chưa muốn nói"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Thấy bạn không khỏe",
+      "roles": [
+        "người học",
+        "bạn bè"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Động viên trước việc khó",
+      "roles": [
+        "người học",
+        "bạn học"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chia niềm vui",
+      "roles": [
+        "người học",
+        "bạn bè"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhờ và nhận giúp đỡ",
+      "roles": [
+        "người học",
+        "bạn bè"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi bạn có ổn không khi thấy bạn im lặng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Bạn nói muốn nghỉ một mình, tôn trọng và hỏi có cần gì",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bạn muốn nói chuyện, lắng nghe và hỏi muốn mình nghe hay giúp",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không hiểu điều bạn vừa nói, xin hỏi lại nhẹ nhàng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Bạn lo buổi phỏng vấn, hỏi phần nào làm bạn lo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói một lời khích lệ cụ thể thay vì hứa chắc kết quả",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đề nghị cùng luyện nói một lúc, bạn hẹn ngày khác",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Sau buổi gặp, hỏi bạn muốn kể kết quả không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Bạn báo đỗ lớp, chúc mừng và hỏi kế hoạch",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Bạn còn chưa chắc kết quả, sửa lời chúc quá sớm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Được mời ăn mừng nhưng không đi được, đề xuất cách khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Gặp lại và hỏi chuyện buổi đầu đi học",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Bạn cần người đi cùng đến quầy, hỏi giờ và nơi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Mình không đi cùng được, gợi ý người/quầy khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Bạn đổi ý không cần giúp, xác nhận và tôn trọng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Cảm ơn bạn vì đã chia sẻ, không hỏi sâu thêm chuyện riêng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Không ép kể chuyện thật; T-42 chia buồn sâu, V5P-054 xin tư vấn chuyên môn.",
+  "cross_stage_refs": [
+    "T-40",
+    "T-42",
+    "V5P-054"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

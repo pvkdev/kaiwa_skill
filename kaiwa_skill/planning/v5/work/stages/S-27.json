@@ -1,0 +1,209 @@
+{
+  "stage_key": "S-27",
+  "uid": "faa47566-ecba-5453-bf1b-4078c1c54de7",
+  "objective": "Xin phép, hỏi có thể làm gì và ngỏ ý hỗ trợ trong hoàn cảnh thường ngày.",
+  "knowledge_focus": [
+    "Nói việc cụ thể trước khi làm và nghe giới hạn",
+    "Phân biệt được phép, chưa được, chờ hỏi người khác và đề nghị giúp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin dùng không gian/đồ",
+      "roles": [
+        "người học",
+        "người phụ trách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xin làm việc trước người khác",
+      "roles": [
+        "người học",
+        "người ở cùng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Ngỏ ý giúp",
+      "roles": [
+        "người học",
+        "người đang gặp khó"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Quay lại sau thay đổi",
+      "roles": [
+        "người học",
+        "người đã cho phép"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi có thể ngồi chỗ còn trống không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi có thể dùng ổ cắm ở khu chung không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Được đồng ý, xác nhận thời gian dùng",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chỉ được dùng ở khu khác, nhờ chỉ chỗ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Không được dùng, hỏi nơi thay thế",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi có thể mở cửa sổ vì phòng nóng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi có thể đổi giờ dùng bếp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người kia phải hỏi người cùng phòng, hẹn câu trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia tưởng xin đổi luôn cả tuần, sửa chỉ hôm nay",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt phần đã được đồng ý",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi có cần mình mang giúp túi không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người kia không cần, đáp và để họ tự làm",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người kia nhận, hỏi mang đến đâu",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chỉ cần giữ cửa, làm đúng phần được nhờ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hỏi còn gì cần giúp và kết thúc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo mình cần thêm mười phút dùng chỗ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Chỉ được thêm năm phút, quyết định có đủ không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Không được gia hạn, thu dọn và cảm ơn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Trả đồ đúng lúc, báo đã xong",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Đồ đang dùng có trục trặc, báo ngay và hỏi nên dừng không",
+      "branch": "problem",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Nền chức năng xin phép, không nhân một lời xin thành nhiều nhãn. Các dịch vụ chuyên đề có bối cảnh riêng.",
+  "cross_stage_refs": [
+    "S-25",
+    "T-33"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

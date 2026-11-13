@@ -1,0 +1,190 @@
+{
+  "stage_key": "V5P-122",
+  "uid": "e0651dbf-cc8b-50ae-b38d-1d073af8f37f",
+  "objective": "Xác nhận công việc được giao ở xưởng, người hướng dẫn và điều kiện an toàn trước khi bắt đầu.",
+  "knowledge_focus": [
+    "Nói lại công đoạn, số lượng và người nhận",
+    "Hỏi người có thẩm quyền khi chưa chắc",
+    "Báo bất thường và chờ chỉ thị tại chỗ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận ca tại xưởng",
+      "roles": [
+        "nhân viên mới",
+        "người hướng dẫn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xác nhận trước khi thao tác",
+      "roles": [
+        "nhân viên",
+        "người phụ trách xưởng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Vật liệu, máy hoặc chỉ thị khác thực tế",
+      "roles": [
+        "nhân viên",
+        "người phụ trách xưởng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bàn giao cuối ca",
+      "roles": [
+        "nhân viên",
+        "ca sau"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi khu làm việc và người chỉ dẫn hôm nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhắc lại công đoạn được giao và số lượng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Tên chi tiết gần giống, xác nhận bằng mẫu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi vật liệu nào dành cho lô hôm nay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi khu vực nào được phép vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người phụ trách phải kiểm lịch máy, nhân viên chờ xác nhận",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Báo chưa được hướng dẫn thao tác máy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không tự thao tác, xin việc khác trong lúc chờ",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hỏi ai xác nhận lô đầu trước khi tiếp tục",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Báo nhãn vật liệu không giống chỉ thị",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Máy dừng hoặc có âm thanh lạ, báo vị trí và chờ hướng dẫn",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Được chuyển sang công đoạn khác, nhắc lại phạm vi mới",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người phụ trách đến, nhân viên nói điều đã thấy và chưa làm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Nói số lượng đã làm và phần còn chờ kiểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Ca sau tưởng đã duyệt, nói rõ trạng thái chưa duyệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Xác nhận ca sau biết đúng người cần hỏi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "Giao tiếp nhận việc/xác nhận, không dạy vận hành máy hay quy trình an toàn cụ thể. S-35 xử lý báo động/sơ tán.",
+  "cross_stage_refs": [
+    "S-35",
+    "S-43"
+  ],
+  "source_refs": [
+    "W06"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

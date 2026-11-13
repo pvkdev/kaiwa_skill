@@ -1,0 +1,250 @@
+{
+  "stage_key": "V5P-077",
+  "uid": "3f26df2f-7eca-5d3d-bd25-a26fd611c2b8",
+  "objective": "Gia nhập và duy trì sinh hoạt trong circle/câu lạc bộ như một thành viên mới.",
+  "knowledge_focus": [
+    "Hỏi thử, lịch, phí và vai thành viên",
+    "Nhờ hướng dẫn, nhận việc vừa sức, báo vắng và đề nghị lần sau"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm và thử nhóm",
+      "roles": [
+        "người học",
+        "người phụ trách circle"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Buổi đầu tham gia",
+      "roles": [
+        "người học",
+        "thành viên cũ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sinh hoạt thường xuyên",
+      "roles": [
+        "người học",
+        "người phụ trách circle"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Vắng hoặc đổi vai",
+      "roles": [
+        "người học",
+        "người phụ trách circle"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Gắn kết và đề nghị",
+      "roles": [
+        "người học",
+        "thành viên khác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi có thể đến xem buổi này không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói kinh nghiệm còn ít và điều muốn thử",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Buổi thử chỉ có chỗ tuần sau, hẹn ngày",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhóm này cần kinh nghiệm cao hơn, hỏi nhóm phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt điểm gặp và đồ cần mang",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Tự giới thiệu ngắn trong nhóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhờ chỉ quy tắc lượt chơi/luyện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hiểu nhầm mình phải thi đấu ngay, hỏi lại phần quan sát",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chọn vai hỗ trợ thay vì tham gia chính",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Thử một phần và nói mình đã hiểu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi lịch và phí duy trì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhận một phần việc nhỏ cho buổi tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không thể ở đến cuối, nêu giờ phải về",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Được giao việc khác với điều đã hiểu, xin làm rõ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại việc mình nhận và thời hạn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo không đến buổi đã đăng ký",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi ai có thể thay phần việc mình đã nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chưa tìm được người thay, đề nghị tiếp tục hỏi nhóm",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Liên hệ lại khi đã có người thay",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Cảm ơn người thay và xác nhận lần mình quay lại",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi thành viên cũ nên luyện thêm gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Đề nghị một hoạt động dễ cho người mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Nhóm chưa thể thêm hoạt động, hỏi lần nào có thể bàn lại",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Nhóm muốn thử, thống nhất ai chuẩn bị gì",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Sau buổi thử, nói điểm hiệu quả và hỏi điều chỉnh",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Vai thành viên, không lặp nói sở thích S-48 hoặc tổ chức sự kiện H-46/H-55.",
+  "cross_stage_refs": [
+    "S-48",
+    "H-46",
+    "H-55"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

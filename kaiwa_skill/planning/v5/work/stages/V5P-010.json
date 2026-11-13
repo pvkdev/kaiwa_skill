@@ -1,0 +1,252 @@
+{
+  "stage_key": "V5P-010",
+  "uid": "51180487-cb71-560e-bba1-b46284880f40",
+  "objective": "Trao đổi mẫu, mức độ và chăm sóc sau dịch vụ nail/chân mày/mi, phản hồi trong và sau buổi.",
+  "knowledge_focus": [
+    "Mô tả kiểu mong muốn và điều cần tránh",
+    "Kiểm hiểu trước làm, nói khó chịu/khác dự kiến, hỏi chỉnh và lịch sau"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn dịch vụ và đặt giờ",
+      "roles": [
+        "người học",
+        "nhân viên tiệm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thống nhất mẫu trước làm",
+      "roles": [
+        "người học",
+        "kỹ thuật viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trong buổi",
+      "roles": [
+        "người học",
+        "kỹ thuật viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Kết quả ngay sau buổi",
+      "roles": [
+        "người học",
+        "kỹ thuật viên"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau vài ngày",
+      "roles": [
+        "người học",
+        "nhân viên tiệm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói muốn làm nail hay dịch vụ vùng mắt cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi cần bao lâu và giá gồm phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ còn giờ ngắn không đủ mẫu phức tạp, chọn mẫu đơn giản",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không chọn gói thêm khi chưa hiểu điều kiện",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt giờ, dịch vụ và người thực hiện",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Mô tả màu và mức tự nhiên mong muốn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chỉ chi tiết trong ảnh mình muốn giữ, không yêu cầu sao y",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói vùng da nhạy cảm hoặc điều mình muốn tránh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Thợ hiểu muốn độ đậm hơn, sửa trước khi bắt đầu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc màu, độ dài và phần không làm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin xem một bên trước khi làm bên kia",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Cảm thấy cộm/rát, báo ngay và xin dừng kiểm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Thợ gợi đổi phương án nhẹ hơn, hỏi tác động đến giá",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không muốn thêm bước trang trí, giữ mẫu đã chốt",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Thử điều chỉnh nhỏ và xác nhận cảm giác",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói phần nào khác hình dung ban đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Thợ gợi chỉnh phần nhỏ thay vì làm lại toàn bộ",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chỉ sửa được sau một thời gian chờ, hỏi lịch",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Kiểm hai bên trong gương và nhận kết quả",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Giá cuối thêm phí không được hiểu trước, nhờ giải thích",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Gọi báo một bên bong hoặc không đều",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nói buổi trước và người làm nếu biết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Tiệm cần kiểm tình trạng, hẹn giờ tới",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Đến đúng hẹn, chỉ điểm cần kiểm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Thống nhất cách chăm sóc hoặc buổi chỉnh tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Gộp nail/mi/chân mày vì chuỗi quyết định tương tự, không biến mỗi bộ phận thành chặng. Không tư vấn y tế da/mắt.",
+  "cross_stage_refs": [
+    "V5P-009",
+    "H-15"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

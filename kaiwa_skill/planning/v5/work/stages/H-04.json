@@ -1,0 +1,203 @@
+{
+  "stage_key": "H-04",
+  "uid": "446f1748-eaee-5340-a474-5b4b01c0c9ef",
+  "objective": "Gọi đối ngoại để hẹn khách mới, xử lý người trung gian và đổi lịch nhiều bên.",
+  "knowledge_focus": [
+    "Mở cuộc gọi đúng vai công ty",
+    "Nêu giá trị cuộc gặp ngắn",
+    "Xác nhận người có thẩm quyền và điều kiện hẹn"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gọi khách mới",
+      "roles": [
+        "đại diện bán hàng",
+        "lễ tân hoặc người quyết"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hẹn nội dung buổi đầu",
+      "roles": [
+        "đại diện bán hàng",
+        "khách tiềm năng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đổi lịch đối ngoại",
+      "roles": [
+        "đại diện công ty",
+        "đầu mối khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau cuộc gọi chưa thành",
+      "roles": [
+        "đại diện công ty",
+        "đầu mối khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Tự xưng và xin gặp người phụ trách lĩnh vực",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Lễ tân không chuyển máy, hỏi kênh/giờ phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Được nối, nói lý do xin cuộc gặp trong một phút",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Khách tưởng chào hàng khác lĩnh vực, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi khách có vấn đề nào muốn trao đổi trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Khách chỉ có 15 phút, chọn một mục tiêu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Khách cần hỏi đồng nghiệp, chốt ngày gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Gọi lại và xác nhận ai sẽ tham gia",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Báo người chuyên môn bên mình không tới được và đề xuất giờ khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách không đổi được, đề nghị chuyên gia khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chỉ gặp trực tuyến, xác nhận mục tiêu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Gọi trước cuộc gặp để kiểm người tham gia",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Khách chưa quan tâm, hỏi khi nào chủ đề này có thể hữu ích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Khách không muốn liên hệ tiếp, tôn trọng",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đề nghị một lần trao đổi khi họ có nhu cầu",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Không biến lời lịch sự thành hẹn chắc chắn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    }
+  ],
+  "coverage_note": "H-20 phát triển khách dài hạn; T-12 nền xác nhận qua điện thoại.",
+  "cross_stage_refs": [
+    "H-20",
+    "T-12"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

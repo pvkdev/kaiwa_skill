@@ -1,0 +1,298 @@
+{
+  "stage_key": "H-51",
+  "uid": "c3f63fa1-b340-524c-857c-ead760692af3",
+  "objective": "Trò chuyện có chiều sâu về nơi chốn, lịch sử và thiên nhiên bằng cách hỏi nguồn, nối trải nghiệm và sửa khái quát.",
+  "knowledge_focus": [
+    "Tách điều đã thấy, điều đã nghe và điều chưa chắc",
+    "Giải thích quan hệ thời gian/địa hình/mùa mà không biến thành bài kiểm tra kiến thức"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Thăm một địa điểm có lịch sử",
+      "roles": [
+        "người học",
+        "hướng dẫn viên địa phương"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói về quê và nơi ở",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thiên nhiên trong chuyến đi",
+      "roles": [
+        "người học",
+        "người hướng dẫn hoặc bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nguồn kể và ký ức địa phương",
+      "roles": [
+        "người học",
+        "người lớn tuổi trong vùng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Giải thích cho người mới",
+      "roles": [
+        "người học",
+        "bạn mới tới"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Thảo luận về bảo tồn",
+      "roles": [
+        "người học",
+        "người cùng quan tâm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi nơi này từng được dùng vào việc gì theo giới thiệu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói phần mình hiểu từ câu chuyện và xin sửa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhầm thời kỳ xây dựng với thời kỳ tu sửa, hỏi lại mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hướng dẫn viên không chắc một chi tiết, hỏi nơi đọc thêm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Tóm tắt một điểm đã được xác nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Mô tả địa hình quê mình ảnh hưởng sinh hoạt thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi người kia thấy vùng mình ở thay đổi ra sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hai người thuộc những thế hệ khác, tách trải nghiệm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người kia nghĩ mình so hơn kém hai vùng, làm rõ chỉ so bối cảnh",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Tìm một điều hai nơi có thể học từ nhau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi hiện tượng mình thấy có tên gọi nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói thời tiết hôm đó làm nhóm đổi đường",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Người hướng dẫn nói điều kiện thay đổi nhanh, hỏi lựa chọn phù hợp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Một đoạn đường đóng, hỏi lý do và tuyến thay",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt đường đi theo thông tin hiện tại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi họ nhớ sự kiện qua trải nghiệm trực tiếp nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nói điều trong bảng giới thiệu khác lời kể mà không phủ nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hai câu chuyện nói về hai địa điểm gần nhau, xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chưa có nguồn kiểm một chi tiết, giữ ở mức chưa biết",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Ghi nhận sự khác biệt giữa ký ức và thông tin phổ biến",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi họ muốn biết đường đi hay bối cảnh lịch sử trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Kể ngắn lý do một địa điểm có ý nghĩa với mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Họ không có thời gian, chọn một điều chính",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Họ hiểu tập quán địa phương như quy định bắt buộc, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chỉ nơi có thể hỏi hướng dẫn chính thức",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nêu điều mình muốn giữ và nhu cầu sử dụng hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hỏi người kia lo chi phí hay ảnh hưởng đời sống hơn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Hai bên đồng ý mục tiêu nhưng khác cách làm, thử giải pháp nhỏ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Không kết luận thay người dân tại chỗ, xin nghe thêm",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Chốt câu hỏi nên hỏi người có liên quan",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    }
+  ],
+  "coverage_note": "Cuộc nói về lịch sử/địa lý/thiên nhiên, không đưa dữ kiện chưa kiểm vào title. Du lịch tình huống H-17, tập quán H-50.",
+  "cross_stage_refs": [
+    "H-17",
+    "H-50"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

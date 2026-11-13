@@ -1,0 +1,240 @@
+{
+  "stage_key": "H-22",
+  "uid": "c74bcd59-aa7d-510c-8001-149a4d5f2ec5",
+  "objective": "Thuyết phục nhiều bên bằng việc hiểu ưu tiên khác nhau và sửa đề xuất có chứng cứ.",
+  "knowledge_focus": [
+    "Đặt câu hỏi trước lập luận",
+    "Liên kết đề xuất với mục tiêu người nghe",
+    "Thừa nhận tradeoff và nói điều kiện thay đổi quyết định"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hiểu người phản đối",
+      "roles": [
+        "người đề xuất",
+        "người có quyền quyết"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trình bày bằng chứng",
+      "roles": [
+        "người đề xuất",
+        "người có quyền quyết"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thuyết phục bộ phận bị ảnh hưởng",
+      "roles": [
+        "người đề xuất",
+        "leader bộ phận khác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thương lượng điều kiện chấp nhận",
+      "roles": [
+        "người đề xuất",
+        "người quyết"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Khi không thuyết phục được",
+      "roles": [
+        "người đề xuất",
+        "người quyết"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi lý do chính chưa đồng ý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tưởng phản đối vì chi phí, thực ra vì nhân lực",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhắc lại ưu tiên của họ trước khi trả lời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi người phản đối cần thấy lợi ích hoặc bảo đảm nào trước khi thử đề xuất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nêu kết quả thử nhỏ đúng tiêu chí họ hỏi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người nghe muốn kiểm độ tin cậy, nói giới hạn số liệu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đưa so sánh hai phương án theo một tiêu chí",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Số dự kiến bị hiểu như số đã đạt, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi phần việc mới làm họ lo nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đổi thứ tự triển khai để giảm tải cho họ",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Họ vẫn không có nguồn lực, đề nghị dời thử",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Có lịch mới, xác nhận ai hỗ trợ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói điều kiện cần để phương án đạt mục tiêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Người quyết chấp nhận nếu có điểm dừng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi ai theo dõi rủi ro khi thử",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Sau thử, báo tiêu chí đạt/chưa đạt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nhận quyết định chưa triển khai và hỏi yếu tố cần thêm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Cần kết quả quý sau, hẹn mốc",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đề nghị giữ phương án nhỏ không đụng hệ thống",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Có dữ liệu mới, xin xem xét lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "H-35 là phản biện trong tranh luận; H-22 nhắm thay đổi quyết định qua nhiều người.",
+  "cross_stage_refs": [
+    "H-35",
+    "H-21"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work",
+  "editorial_contributors": [
+    "work",
+    "root"
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "stage_key": "T-43",
+  "uid": "b09c86d6-ecc0-5c3c-8c95-2fa1d83aed59",
+  "objective": "Bình luận phim, sách hoặc tin tức với người khác, làm rõ mình đã biết gì và xử lý góc nhìn khác.",
+  "knowledge_focus": [
+    "Nêu ý chính không kể hết nội dung người kia chưa xem",
+    "Phân biệt ý kiến, dữ kiện và nguồn tin"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn nội dung cùng bàn",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhận xét tác phẩm",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bàn tin đang đọc",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Giữ cuộc nói khi bất đồng",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Gợi nội dung tiếp",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi bạn đã xem phim đến phần nào để tránh tiết lộ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tóm tắt không lộ kết của sách mình thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bạn chưa đọc, chỉ bàn bối cảnh chung",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hai người nói về hai phiên bản tác phẩm, xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt phần cả hai đều biết",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nêu cảnh mình thấy mạnh và lý do",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi bạn hiểu nhân vật khác mình ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bạn không thích tác phẩm, hỏi tác phẩm họ thích hơn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Bạn đồng ý một phần nhưng khác về kết, nghe tiếp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Tóm tắt điểm giống và khác trong cảm nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói mình mới đọc tóm tắt nên chưa chắc chi tiết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi nguồn gốc thông tin người kia vừa nêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhầm ngày sự kiện với ngày bài đăng, sửa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chưa kiểm được nguồn, hẹn nói sau khi tra",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Quay lại với thông tin đã xác minh",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói mình hiểu vì sao người kia quan tâm góc đó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nêu ý kiến của mình như cách đọc cá nhân",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Không muốn tranh luận chủ đề này, đổi chủ đề",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Người kia hiểu câu hỏi là phản bác, làm rõ muốn hiểu thêm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Khép bằng điều hai người còn cùng tò mò",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Đề nghị xem một phim dựa trên điều bạn vừa nói",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Bạn muốn đọc sách trước, đổi thứ tự",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Bạn không muốn tác phẩm đó, xin gợi ý khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chọn lúc xem chung và mức được bàn sau",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Gặp lại trao đổi sau khi cả hai đã xem",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Bình luận Trung, không phải bài kiến thức về manga/anime/thể thao H-49 hoặc tranh luận xã hội H-52.",
+  "cross_stage_refs": [
+    "H-49",
+    "H-52"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,182 @@
+{
+  "stage_key": "T-65",
+  "uid": "b0e70ce7-ab12-5c06-b5a6-9f6f10e51ccf",
+  "objective": "Bàn chuẩn bị thiên tai và di chuyển an toàn với người thân, hàng xóm và nơi làm.",
+  "knowledge_focus": [
+    "hỏi thông báo địa phương",
+    "thống nhất điểm gặp",
+    "điều chỉnh đường đi khi gián đoạn",
+    "phân biệt chuẩn bị và sơ tán tức thời"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trước mùa nguy cơ",
+      "roles": [
+        "người học",
+        "hàng xóm/người cùng nhà"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khi có cảnh báo",
+      "roles": [
+        "người học",
+        "nhân viên tòa/địa phương"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Di chuyển và cập nhật",
+      "roles": [
+        "người học",
+        "người đi cùng/người hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi địa điểm tập trung khu phố",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hai nguồn chỉ nơi khác nhau, nhờ xác nhận nguồn hiện hành",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bàn cách liên lạc khi điện thoại không dùng được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người trong nhà cần hỗ trợ đi lại, nói rõ nhu cầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hỏi ai phụ trách thông báo trong tòa nhà",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi thông báo mới nói khu mình hay khu khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đường thường đi bị đóng, xin lối thay theo người phụ trách",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người thân ở nơi khác, xác nhận nơi họ sẽ đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không nghe rõ mức cảnh báo, xin giải thích dễ hiểu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Kế hoạch của gia đình đổi, báo lại điểm gặp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói mình đang ở đâu và định tới điểm nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Một người không đi kịp, xin nhân viên hỗ trợ phù hợp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Điểm đến không còn tiếp nhận, hỏi nơi tiếp theo",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đã tới nơi, báo người nhà để tránh tìm nhầm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau khi an toàn, hỏi khi nào được cập nhật tin khu nhà",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "V5P-062 là sinh hoạt nơi sơ tán; V5P-063 là ổn định sau đó.",
+  "cross_stage_refs": [
+    "V5P-062",
+    "V5P-063"
+  ],
+  "source_refs": [
+    "W10"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

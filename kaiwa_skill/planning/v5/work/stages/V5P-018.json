@@ -1,0 +1,301 @@
+{
+  "stage_key": "V5P-018",
+  "uid": "952c4ca0-ebd5-565a-87b3-15e69803f95f",
+  "objective": "Báo lỗi trong nhà, hẹn người sửa và theo tới khi lỗi đã được giải quyết hoặc có bước tiếp rõ.",
+  "knowledge_focus": [
+    "Mô tả triệu chứng, vị trí, ảnh hưởng và mức khẩn",
+    "Phân biệt quản lý/chủ nhà/thợ; xác nhận lịch, phạm vi, kết quả"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Phát hiện và báo lỗi",
+      "roles": [
+        "người học",
+        "người quản lý nhà"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Xếp mức ảnh hưởng và lịch",
+      "roles": [
+        "người học",
+        "người quản lý nhà"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Trước lúc thợ đến",
+      "roles": [
+        "người học",
+        "kỹ thuật viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trong lúc sửa",
+      "roles": [
+        "người học",
+        "kỹ thuật viên"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau khi thợ rời",
+      "roles": [
+        "người học",
+        "người quản lý nhà"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Chưa thống nhất trách nhiệm",
+      "roles": [
+        "người học",
+        "người quản lý nhà"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Mô tả vòi nước rỉ ở đâu và từ khi nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói máy lạnh không làm mát dù đã thử cách được hướng dẫn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi nên ngừng dùng thiết bị trong khi chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Quản lý hiểu lỗi ở phòng khác, sửa số phòng và vị trí",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại tình trạng đã được ghi nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói lỗi khiến mình không dùng được khu vệ sinh",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chỉ có thợ ngày kia, hỏi cách dùng tạm an toàn theo người phụ trách",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Quản lý phải hỏi chủ nhà, chốt lúc phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Liên hệ lại vì quá giờ vẫn chưa có lịch",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhận lịch thợ và xác nhận người mở cửa",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xác nhận người đến thuộc đơn vị nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói mình chỉ có mặt một khung giờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Thợ báo trễ khi mình sắp phải đi, chọn đổi hẹn",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhờ quản lý mở cửa nếu quy định cho phép và mình đồng ý",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt giờ đến và phần sẽ kiểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Chỉ đúng lúc lỗi xảy ra và cách tái hiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Thợ nghĩ lỗi đã hết vì tạm thời không xuất hiện, kể lần gần nhất",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Thiếu linh kiện, hỏi phần nào sửa tạm được",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Phải đặt món thay, hỏi lịch quay lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc lại phần đã xử lý và phần còn chờ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Thử lại thiết bị và báo hoạt động bình thường",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Lỗi tái diễn tối đó, nêu tình trạng khác trước",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Nhắc lần sửa cũ khi gọi lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Quản lý cần kiểm báo cáo thợ, hỏi mốc trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt khi nào có người quay lại và ai liên hệ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Hỏi khoản nào dự kiến có phí trước khi đồng ý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hai bên hiểu khác lỗi do dùng hay do thiết bị, kể sự kiện quan sát",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Chưa thể quyết phí, xin giải thích từ người phụ trách",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Không đồng ý tự trả khi chưa rõ, xin đầu mối tư vấn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Gọi lại sau khi đã được giải thích điều kiện",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Báo hỏng/hẹn sửa căn bản Trung; H-10 bàn trách nhiệm và tranh chấp sâu. Không đưa chỉ dẫn sửa điện/gas nguy hiểm.",
+  "cross_stage_refs": [
+    "T-01",
+    "V5P-022",
+    "H-10"
+  ],
+  "source_refs": [
+    "DW01"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

@@ -1,0 +1,158 @@
+{
+  "stage_key": "S-15",
+  "uid": "e11281ed-680a-52b6-8cd5-06afd95ba28c",
+  "objective": "Báo thời điểm đến nơi, thay đổi di chuyển và hẹn gặp ngắn trong công việc.",
+  "knowledge_focus": [
+    "Nói giờ dự kiến và vị trí hiện tại",
+    "Báo chậm sớm cho người đang chờ",
+    "Hỏi lại điểm gặp và phương án đi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đi làm đúng giờ và báo chậm",
+      "roles": [
+        "nhân viên",
+        "leader hoặc đồng nghiệp trực"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Ra ngoài làm việc ngắn",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp cùng đi"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thay đổi lịch quay lại",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xác nhận mình đã đến và bắt đầu ca",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Tàu trễ, gọi báo thời gian dự kiến tới",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Tới nơi, báo thực tế và hỏi việc ưu tiên",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người nhận hiểu sai chuyến tàu, nói lại nơi đang đứng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi giờ xuất phát và điểm gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Cuộc gặp đổi tòa, xác nhận lối vào",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Báo đã tới địa điểm đối tác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không thấy người hẹn ở sảnh, gọi hỏi vị trí",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Gặp nhau rồi xác nhận lịch quay về",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Báo công việc ngoài kết thúc sớm và xin nhận việc tiếp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Cuộc hẹn kéo dài, báo không kịp cuộc họp nội bộ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Đề nghị đồng nghiệp nhận phần mở đầu họp",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Quay lại nói phần mình đã bỏ lỡ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    }
+  ],
+  "coverage_note": "Chỉ giao tiếp di chuyển ngắn trong ngày; công tác xa T-66, gián đoạn tàu đời sống ở track khác.",
+  "cross_stage_refs": [
+    "T-66"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

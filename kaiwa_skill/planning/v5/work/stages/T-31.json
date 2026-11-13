@@ -1,0 +1,142 @@
+{
+  "stage_key": "T-31",
+  "uid": "a3b5ddaa-981c-5389-b06d-fc549fdb93c3",
+  "objective": "Động viên, khen và nhận góp ý với ví dụ cụ thể và bước cải thiện.",
+  "knowledge_focus": [
+    "Ghi nhận hành động thay vì đánh giá con người",
+    "Hỏi rõ góp ý mơ hồ",
+    "Nói điều sẽ thử và hẹn phản hồi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khen và đón nhận lời khen",
+      "roles": [
+        "đồng nghiệp",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Động viên khi việc chưa tốt",
+      "roles": [
+        "đồng nghiệp",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhận góp ý",
+      "roles": [
+        "nhân viên",
+        "mentor hoặc leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Khen người kia xử lý khách bình tĩnh bằng ví dụ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nêu đóng góp của người khác khi mình được khen",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Lời khen nghe như mỉa mai, nói rõ điều mình đánh giá cao",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Cảm ơn lời khen và nói điểm còn muốn cải thiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi người mới muốn kể điều gì vừa khó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người kia chưa muốn nói, đề nghị hỗ trợ khi cần",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Kể mình từng gặp lỗi tương tự mà không phủi lo lắng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi có thể cùng luyện lại một bước không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nghe nhận xét chung chung và xin ví dụ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hiểu góp ý thành đổi toàn bộ, kiểm lại phạm vi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói sẽ sửa phần đầu và hẹn xem lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Quay lại với bản đã sửa, hỏi tác động có tốt hơn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Vai đồng nghiệp/nhân viên; leader ghi nhận công sức cấp cao H-27.",
+  "cross_stage_refs": [
+    "H-27"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

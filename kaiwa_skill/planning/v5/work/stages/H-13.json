@@ -1,0 +1,296 @@
+{
+  "stage_key": "H-13",
+  "uid": "c720d1f1-dd0b-5f2c-893a-0df310b80ad3",
+  "objective": "Giải quyết khiếu nại dịch vụ có lịch sử nhiều lần, nêu yêu cầu có căn cứ và theo tới phản hồi rõ.",
+  "knowledge_focus": [
+    "Tách sự kiện quan sát, kỳ vọng đã thống nhất và điều còn tranh cãi",
+    "Hỏi người quyết định, thương lượng phương án, giữ dấu cuộc nói tiếp theo"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuẩn bị cuộc phàn nàn",
+      "roles": [
+        "người học",
+        "người cùng sử dụng dịch vụ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Báo lần đầu với nhân viên",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Lần hai sau lời hứa chưa thực hiện",
+      "roles": [
+        "người học",
+        "nhân viên ca khác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thương lượng phương án",
+      "roles": [
+        "người học",
+        "người quản lý dịch vụ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Khi hai bên hiểu khác cam kết",
+      "roles": [
+        "người học",
+        "người quản lý dịch vụ"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Kết và phục hồi quan hệ",
+      "roles": [
+        "người học",
+        "người quản lý dịch vụ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Tóm tắt giao dịch, ngày, lời đã được giải thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Xác định mình cần sửa, hoàn tiền hay lời giải thích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi người cùng dùng ảnh hưởng thực tế thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hai người nhớ khác thứ tự liên hệ, đối chiếu lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt yêu cầu có thể nói rõ ở quầy",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nêu lỗi cụ thể và thời điểm phát hiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhắc điều được hứa khi đặt/mua mà không cáo buộc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên cần kiểm, xin mốc phản hồi và người liên hệ",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ đề xuất sửa chứ không đổi, hỏi thời gian/tác động",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Phương án không giải quyết nhu cầu, xin lựa chọn khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhắc cuộc nói trước bằng người/ngày/kết quả đã hẹn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hệ thống không ghi nhận, kể lại ngắn và xin người phụ trách",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhân viên nghĩ yêu cầu mới, làm rõ đây là tiếp nối",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đầu mối mới cần kiểm, chốt ai gọi ai",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Liên hệ lại theo mốc vừa thống nhất",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nêu tác động hiện tại và phương án mình mong",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi giới hạn thực tế của mỗi phương án họ đưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Được bù một phần, đánh giá phần còn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chọn sửa nhanh nếu thay mới quá lâu",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Không nhận khoản bù không tương xứng, đề nghị giải thích cơ sở",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Trình bày lời giải thích mình đã nghe và kiểm lại ý của họ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Họ nói điều kiện áp nơi khác, hỏi điều kiện nào áp giao dịch mình",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chưa rõ quyết định, xin tạm dừng phần phát sinh thêm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Vẫn khác cách hiểu, xin đầu mối tư vấn/giải quyết phù hợp",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Quay lại với câu trả lời từ đầu mối đó",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nhắc lại phương án, thời hạn và người chịu liên hệ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Thời hạn đã qua nhưng việc chưa xong, hỏi vì sao và mốc mới",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Kiểm kết quả thật trước khi nói đã hoàn tất",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Giải quyết được phần chính nhưng còn khoản nhỏ, chốt cách theo dõi",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Cảm ơn phần hỗ trợ đã nhận dù chưa đồng ý toàn bộ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Khiếu nại đa dịch vụ; T-58 đổi trả thông thường, T-70 nhà hàng, H-15 hàng/dịch vụ cao cấp. Không đưa kết luận pháp lý.",
+  "cross_stage_refs": [
+    "T-58",
+    "T-70",
+    "H-15"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

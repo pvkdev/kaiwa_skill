@@ -1,0 +1,252 @@
+{
+  "stage_key": "T-13",
+  "uid": "d9759ad0-9e1f-541f-8fa9-fcb58d6cbed0",
+  "objective": "Đặt hàng qua điện thoại, làm rõ món/địa chỉ/giao hàng và xử lý thay đổi trong quá trình giao.",
+  "knowledge_focus": [
+    "Nêu mã/tên, lượng, biến thể và thời gian",
+    "Kiểm tổng giá, điều kiện giao, thiếu/sai và liên hệ lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hỏi và chọn hàng qua điện thoại",
+      "roles": [
+        "người học",
+        "nhân viên nhận đơn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chốt giá và địa chỉ",
+      "roles": [
+        "người học",
+        "nhân viên nhận đơn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đổi đơn trước giao",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ đơn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Lúc giao",
+      "roles": [
+        "người học",
+        "người giao hàng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau giao",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ đơn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Mô tả món cần và hỏi còn màu/cỡ không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi sản phẩm tương tự khi loại đầu hết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ còn hàng ở chi nhánh khác, hỏi cách nhận",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Thời gian nhận không kịp, chưa đặt",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Đọc lại món, biến thể và lượng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi tổng gồm phí giao không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói địa chỉ và mốc tìm nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Địa chỉ bị ghi sai tầng, sửa từng phần",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Vùng giao phải thêm phí, quyết định có tiếp tục",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc tổng tiền, cách trả và khoảng giao",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo cần bớt một món vì số người đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Đơn đã đóng gói, hỏi còn sửa được không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không đổi được, hỏi phương án nhận rồi xử lý",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đổi thời gian thay vì đổi món",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt nội dung đơn cuối và số tiền",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Xác nhận món và số kiện tại cửa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Gói thiếu một món đã đặt, báo tại chỗ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người giao tưởng đã trả tiền, xác nhận hình thức trả",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Người giao cần hỏi quầy, chốt lúc trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhận phần đúng và giữ thông tin về món thiếu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Gọi lại nêu đơn và món thiếu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hết món, chọn giao sau hoặc đổi món",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chỉ giao bổ sung ngày khác, cân nhắc có còn cần",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Liên hệ nếu ngày hẹn vẫn chưa đến",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Kiểm món bổ sung và kết thúc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Đơn hàng qua cuộc gọi, không thao tác app. T-28 nhận kiện ở cửa; T-58 đổi trả/so sánh sau mua.",
+  "cross_stage_refs": [
+    "T-28",
+    "T-58"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

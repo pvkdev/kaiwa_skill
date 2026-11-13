@@ -1,0 +1,292 @@
+{
+  "stage_key": "H-34",
+  "uid": "22840572-0228-51e3-a068-ef0e18149953",
+  "objective": "Xử lý lời nhờ khó và ranh giới trách nhiệm trong quan hệ không phải gia đình, kể cả khi đã lỡ nhận lời.",
+  "knowledge_focus": [
+    "Nói rõ phạm vi, mức rủi ro/thời gian và quyền từ chối",
+    "Thương lượng giảm phạm vi, chuyển người phù hợp, theo sau để giữ tin cậy"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nghe lời nhờ mơ hồ",
+      "roles": [
+        "người học",
+        "người quen hoặc đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Cân nhắc và đáp lời",
+      "roles": [
+        "người học",
+        "người nhờ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khi bị thúc ép",
+      "roles": [
+        "người học",
+        "người nhờ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sau khi đã nhận nhưng phát sinh",
+      "roles": [
+        "người học",
+        "người nhờ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Bàn giao khi dừng",
+      "roles": [
+        "người học",
+        "người nhờ hoặc người tiếp quản"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Giữ quan hệ sau câu không",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi kết quả thật cần chứ không chỉ tên việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi hạn, công sức và ai quyết phần còn lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chưa rõ thông tin, chỉ hứa trả lời sau khi biết",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không nhận khi việc vượt khả năng, nêu giới hạn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt mình chưa cam kết trước khi rời cuộc nói",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói phần mình có thể giúp và thời gian",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhận một bước nhưng cần người kia tự làm bước khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhận việc đã rõ, hẹn cập nhật tiến độ",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Không thể nhận vì trách nhiệm hiện có, không bịa lý do",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Giới thiệu đầu mối khác nếu có sự đồng ý",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhắc lại giới hạn mình đã nêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Họ hiểu lời đề nghị gợi ý là lời nhận làm, đính chính",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Giữ câu từ chối khi họ lặp yêu cầu",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đề nghị bàn lại khi phạm vi giảm thực sự",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Không đạt đồng thuận, kết thúc cuộc nói rõ ràng",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo ngay phần mới vượt phạm vi trước khi làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Đồng ý thêm chỉ nếu được dời hạn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Không nhận phần mới, tiếp phần cũ nếu vẫn phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chia lại với người có thẩm quyền",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt phạm vi mới và việc đã làm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Tóm tắt phần hoàn thành và chỗ chưa quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi người tiếp quản cần biết thông tin nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Người nhờ tưởng toàn việc đã xong, sửa trạng thái",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chỉ hỗ trợ giải thích một lần sau bàn giao",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Xác nhận đầu mối mới đã nhận việc",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Cảm ơn họ đã hỏi mình dù không nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Hỏi chuyện khác mà không giả vờ lời từ chối chưa xảy ra",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Họ nghĩ mình giận, nói rõ giới hạn là về việc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Gặp lại, xác nhận họ đã tìm được cách khác nếu phù hợp",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Tiếp quan hệ bình thường mà không hứa bù vô hạn",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Không khuyến khích nài ép người khác nhận. Người thân H-29, việc vừa sức T-33.",
+  "cross_stage_refs": [
+    "T-33",
+    "H-29"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

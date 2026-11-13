@@ -1,0 +1,252 @@
+{
+  "stage_key": "T-11",
+  "uid": "1e5169b4-48e7-51f8-92d3-3a3c963f7fe7",
+  "objective": "Xử lý cuộc gọi đời sống có nhiều thông tin: đặt chỗ, hỏi điều kiện, báo vắng và theo lại.",
+  "knowledge_focus": [
+    "Mở đúng đầu mối, tóm tắt bối cảnh",
+    "Kiểm giờ/tên/điều kiện, sửa hiểu nhầm và gọi lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đặt chỗ có điều kiện",
+      "roles": [
+        "người học",
+        "nhân viên nhận đặt"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi thông tin trước khi đi",
+      "roles": [
+        "người học",
+        "nhân viên cơ sở"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Báo vắng/đổi lịch",
+      "roles": [
+        "người học",
+        "nhân viên nhận cuộc gọi"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Được gọi lại",
+      "roles": [
+        "người học",
+        "nhân viên cơ sở"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Tại nơi sau cuộc gọi",
+      "roles": [
+        "người học",
+        "nhân viên tiếp đón"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi chỗ cho nhóm có trẻ nhỏ còn không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói thời gian và nhu cầu quan trọng trước khi đặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ còn bàn giới hạn thời gian, hỏi có phù hợp nhóm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Điều kiện không hợp, không đặt và cảm ơn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc ngày, giờ, số người, yêu cầu và tên",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nêu mình đã đặt chỗ và hỏi lối vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi chỗ gửi đồ có cần đặt trước không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên tưởng hỏi chi nhánh khác, xác nhận địa chỉ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa biết tình trạng chỗ gửi, hỏi lúc nào biết",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Gọi lại khi đã có tin từ nhóm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo một người trong nhóm không đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi có đổi số người mà giữ chỗ được không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Giữ chỗ nhưng đổi bàn, nói có chấp nhận không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không còn chỗ giờ mới, hỏi ngày khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt thay đổi và khoản phí nếu có được giải thích",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nghe cuộc gọi xác nhận nhưng đang ở chỗ ồn, xin nhắc lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hai bên nghe sai ngày, đọc lại cả ngày/thứ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người học cần hỏi nhóm, hẹn giờ trả lời",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Gọi lại đúng hẹn và nói quyết định",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc lại thông tin cuối trước khi cúp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói mình đã gọi đổi số người hôm qua",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Quầy chưa thấy thay đổi, nêu giờ và người đã nói",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chọn bàn khác nếu vẫn đáp nhu cầu",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Thông tin còn khác, xin người phụ trách kiểm",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Được nhận đúng chỗ và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Cuộc gọi đời sống có nhiều bước. S-36 là nền, T-13 cho đặt hàng/giao.",
+  "cross_stage_refs": [
+    "S-36",
+    "T-13"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

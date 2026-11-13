@@ -1,0 +1,180 @@
+{
+  "stage_key": "H-30",
+  "uid": "eb40b988-d45c-5095-87dd-b9df0e4b0a2d",
+  "objective": "Chào chia tay công ty theo từng quan hệ và giữ liên hệ sau chuyển việc.",
+  "knowledge_focus": [
+    "điều chỉnh mức trang trọng",
+    "ghi nhận giúp đỡ cụ thể",
+    "tránh hứa quá khả năng",
+    "phối hợp quan hệ sau rời"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nói với đồng nghiệp gần",
+      "roles": [
+        "người học",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nói với đối tác/quản lý",
+      "roles": [
+        "người học",
+        "đối tác hoặc cấp trên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sau ngày cuối",
+      "roles": [
+        "người học",
+        "đồng nghiệp cũ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Báo ngày cuối sau khi được phép công bố",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Cảm ơn người từng hướng dẫn bằng một ví dụ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đồng nghiệp tưởng mình chuyển nội bộ, làm rõ mức thông tin muốn chia sẻ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người kia muốn gặp trước khi đi, chọn giờ phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Không có giờ gặp, đề xuất cuộc gọi ngắn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Cảm ơn sự hợp tác và giới thiệu đầu mối mới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đối tác hỏi việc đang mở, nói trạng thái và người phụ trách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Một việc chưa thể bàn giao, không hứa đã xong",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Sếp đề nghị phát biểu, xin phạm vi/giờ để chuẩn bị nói",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Khi vai người thay đổi đổi, cập nhật lại đối tác",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nhận lời chúc, giữ liên hệ theo cách cả hai muốn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người cũ hỏi thông tin nội bộ, chỉ đúng người hiện phụ trách",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Được mời buổi gặp mặt, nhận hoặc từ chối lịch sự",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Vô tình hứa giúp một việc chưa có thời gian, sửa lời",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Gọi cảm ơn sau khi nhận hỗ trợ chuyển việc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Xin nghỉ riêng V5P-086; chuyển nội bộ T-46. Đây là lời chào và quan hệ.",
+  "cross_stage_refs": [
+    "V5P-086",
+    "T-46"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

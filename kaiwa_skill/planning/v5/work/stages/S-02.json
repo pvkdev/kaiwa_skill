@@ -1,0 +1,157 @@
+{
+  "stage_key": "S-02",
+  "uid": "8e4f2dbd-74ad-5332-a86e-ea63c1949286",
+  "objective": "Chào, đáp lời và mở chuyện ngắn với đồng nghiệp/khách trong một ngày đi làm.",
+  "knowledge_focus": [
+    "Phân biệt lời chào đầu ngày, lúc rời chỗ và khi gặp lại",
+    "Chọn mức lịch sự theo đồng nghiệp, cấp trên, khách",
+    "Dùng câu hỏi xã giao ngắn rồi nhường nhịp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bắt đầu và kết thúc ngày làm",
+      "roles": [
+        "nhân viên mới",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gặp người ở hành lang và khu chung",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp khác bộ phận"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chào người ngoài công ty",
+      "roles": [
+        "nhân viên",
+        "khách đến văn phòng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Chào đồng nghiệp ở cửa khi vừa tới ca",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhận lời hỏi thăm khi hôm nay đến sớm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nói với người còn ở lại rằng mình ra về trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Sáng hôm sau giải thích đã nhận lời nhắn lúc về",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chào người vừa quay lại sau vài ngày vắng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhắc tên và chào người đã gặp một lần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Gọi nhầm tên rồi xin lỗi và hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói ngắn về thời tiết rồi chuyển vào việc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Kết thúc chuyện khi bên kia sắp vào họp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Hỏi một câu vừa đủ khi thấy đồng nghiệp mang nhiều đồ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chào và hỏi khách đang tìm bộ phận nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người cần gặp chưa tới, xin khách chờ và báo đầu mối",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chào khách đã từng đến mà chưa chắc tên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Người phụ trách đến, giới thiệu lại khách và việc chờ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    }
+  ],
+  "coverage_note": "Nền chào hỏi công sở; ngày đầu ra mắt đội ở S-04, tiếp khách/danh thiếp ở S-40.",
+  "cross_stage_refs": [
+    "S-04",
+    "S-40"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

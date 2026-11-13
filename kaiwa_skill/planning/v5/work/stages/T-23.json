@@ -1,0 +1,339 @@
+{
+  "stage_key": "T-23",
+  "uid": "e0919099-7532-533c-995d-e83a34f47052",
+  "objective": "Phụ trách chuyến du lịch công ty bằng các cuộc nói trước, trong và sau chuyến.",
+  "knowledge_focus": [
+    "Nói mục đích chuyến và lựa chọn tự nguyện",
+    "Xác nhận lịch di chuyển/điểm gặp/đầu mối",
+    "Xử lý đổi tuyến và người cần hỗ trợ",
+    "Thu phản hồi bằng nói sau chuyến"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận vai phụ trách chuyến",
+      "roles": [
+        "người phụ trách",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi nhu cầu người tham dự",
+      "roles": [
+        "người phụ trách",
+        "nhân viên được mời"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Làm việc với nhà cung cấp",
+      "roles": [
+        "người phụ trách",
+        "nhân viên công ty du lịch hoặc khách sạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Trước giờ đi",
+      "roles": [
+        "người phụ trách",
+        "người tham gia"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Trong chuyến có thay đổi",
+      "roles": [
+        "người phụ trách",
+        "nhân viên nhà cung cấp hoặc người dự"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau chuyến",
+      "roles": [
+        "người phụ trách",
+        "leader hoặc người tham gia"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Ranh giới vai trò",
+      "roles": [
+        "người phụ trách",
+        "người tham gia"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi mục đích chuyến và đối tượng mời",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ngân sách, người duyệt và phạm vi mình tự quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Leader muốn hoạt động nhóm nhưng cần lựa chọn nghỉ riêng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi ai phụ trách an toàn/liên hệ đơn vị đi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi có thể tham gia thời gian nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người kia không thể đi, xác nhận không cần nêu lý do",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chỉ tham gia ngày đầu, hỏi điểm rời",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi nhu cầu ăn uống/di chuyển cần báo đơn vị cung cấp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Có lịch phù hợp, xác nhận lần cuối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Xác nhận số người, điểm đón và giờ khởi hành",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Giờ ghi theo điểm xuất phát khác, sửa lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Khách sạn đổi loại phòng, hỏi ảnh hưởng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Cần hỏi người duyệt trước khi chấp nhận",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Duyệt xong, xác nhận phương án",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Nhắc điểm gặp bằng mốc dễ nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Một người báo đến muộn, hỏi vị trí và dự kiến",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Không thể chờ lâu, nói điểm gặp sau",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Hai cổng gần nhau, gọi xác nhận đúng cổng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Báo lịch hoạt động đổi vì thời tiết, nêu lựa chọn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Một số muốn nghỉ, thống nhất cách gặp lại",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Xe đến nhầm điểm, gọi nhà cung cấp kiểm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Xe đến đúng, cập nhật giờ tới nơi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Hỏi người không khỏe có cần liên hệ đầu mối hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Cảm ơn người hỗ trợ điều phối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E06",
+      "title": "Hỏi người dự hoạt động nào phù hợp và chưa phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Có đồ để quên ở khách sạn, gọi hỏi quy trình nhận",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Báo người mất đồ kết quả và đầu mối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Bàn với leader điều nên đổi chuyến sau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E07",
+      "title": "Người tham gia hỏi chuyện ngoài phạm vi, chỉ đúng đầu mối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E07",
+      "title": "Họ tưởng hoạt động tùy chọn là bắt buộc, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S029"
+      ]
+    },
+    {
+      "id": "S031",
+      "event_id": "E07",
+      "title": "Nói với 幹事 tiệc trong chuyến về hai lịch riêng không nên lẫn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "T-23/H-46 giữ UID; đây là phụ trách chuyến, không nhân thành chặng khác chỉ vì vai tổ chức. Tiệc riêng V5P-118; người đi du lịch đời sống thuộc track khác.",
+  "cross_stage_refs": [
+    "V5P-118",
+    "H-46"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

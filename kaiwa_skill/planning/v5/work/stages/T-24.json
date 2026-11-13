@@ -1,0 +1,246 @@
+{
+  "stage_key": "T-24",
+  "uid": "ea72c710-687a-5d7b-8192-6a9c0cb7426b",
+  "objective": "Chuyển từ quen biết sang bạn bè qua những lần trò chuyện và hoạt động chung, giữ nhịp hai chiều.",
+  "knowledge_focus": [
+    "Nhớ và theo lại chuyện cũ, chia sẻ vừa phải",
+    "Đề nghị gặp, nhận ranh giới và sửa hiểu nhầm nhỏ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gặp lại có ký ức chung",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Gợi hoạt động chung",
+      "roles": [
+        "người học",
+        "người quen"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tăng sự tin cậy",
+      "roles": [
+        "người học",
+        "bạn đang kết thân"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Ranh giới và khác nhịp",
+      "roles": [
+        "người học",
+        "bạn đang kết thân"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Duy trì sau một khoảng xa",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhắc chuyện hai người nói tuần trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi kết quả việc người kia đang chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chia sẻ một việc tương tự của mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhớ sai chi tiết riêng của họ, nhận sửa không chống chế",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chuyển sang kế hoạch gần mà họ muốn nói",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Rủ đi hoạt động dựa trên sở thích họ đã kể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi họ muốn đi hai người hay nhóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Họ thích nhóm nhưng không rảnh ngày đó, đề nghị ngày khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Họ không muốn tham gia, giữ cuộc nói thoải mái",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt ai báo lại khi biết lịch",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xin ý kiến về một lựa chọn đời sống nhỏ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi trước khi kể chuyện hơi riêng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Họ chưa muốn nói về đề tài ấy, đổi chủ đề",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Họ chia sẻ, hỏi muốn mình nghe hay góp ý",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Cảm ơn vì đã tin tưởng mà không kể lại cho người khác",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói mình không thể trả lời ngay mọi cuộc gọi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người kia tưởng mình tránh họ, giải thích lịch và đề nghị cách liên hệ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Họ cần tin gấp trong một việc, thỏa thuận cách báo gấp",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Buổi hẹn chung bị hủy sát giờ, nói ảnh hưởng và nghe lý do",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Hai bên chốt cách báo thay đổi sớm hơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi thăm sau vài tuần không gặp, nhắc một kỷ niệm chung",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nói lý do mình ít liên lạc mà không quá dài",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Bạn đang bận việc riêng, hẹn gọi dịp khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Gọi lại khi họ đã nói tiện",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chọn một hoạt động nhẹ để gặp lại",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "T-24 là xây quan hệ; chuyện đời/tâm sự sâu T-26, gặp người mới T-08.",
+  "cross_stage_refs": [
+    "T-08",
+    "T-26"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

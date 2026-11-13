@@ -1,0 +1,152 @@
+{
+  "stage_key": "T-34",
+  "uid": "3f3e7b7e-5b1f-5a4e-9f7e-3e8da07c54b0",
+  "objective": "Nhờ cấp trên hỗ trợ hoặc quyết định, nhận chỉ thị nhiều điều kiện và xác nhận ưu tiên.",
+  "knowledge_focus": [
+    "Nêu lý do và quyết định cần cấp trên",
+    "Phân biệt yêu cầu, đề xuất và chỉ thị đã duyệt",
+    "Nhắc lại phạm vi/hạn sau khi nghe"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xin cấp trên hỗ trợ",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhận chỉ thị phức hơn",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khi chỉ thị thay đổi",
+      "roles": [
+        "nhân viên",
+        "cấp trên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Xin cấp trên giới thiệu đúng người có dữ liệu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Được giới thiệu, xác nhận mình sẽ nói gì với người đó",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Cấp trên chưa thể can thiệp, hỏi hướng tự làm",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Cấp trên giúp sau khi nhân viên tự kiểm một bước",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nhắc lại mục tiêu, thứ tự và người nhận kết quả",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hai thời hạn được nói lẫn, hỏi mốc nào là bản nháp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi điều gì có thể tự quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Cấp trên sẽ hỏi khách rồi trả lời phạm vi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói việc mới xung đột việc đang làm, xin ưu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Cấp trên chuyển việc cũ cho người khác, xác nhận bàn giao",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo đã bàn giao và bắt đầu việc mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Thấy quyết định chưa rõ với bộ phận khác, xin cấp trên thống nhất",
+      "branch": "problem",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "S-43 là hỏi lại chỉ thị ngắn; brief và tiêu chí chuyên sâu V5P-098.",
+  "cross_stage_refs": [
+    "S-43",
+    "V5P-098"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,247 @@
+{
+  "stage_key": "V5P-060",
+  "uid": "931a94ca-5b02-5ca6-882f-fbe97ea7dd4f",
+  "objective": "Trao đổi ở koban về đồ mất/nhặt được, mô tả và theo dõi kết quả.",
+  "knowledge_focus": [
+    "mốc cuối còn đồ",
+    "đặc điểm nhận diện",
+    "hỏi cách liên hệ sau",
+    "báo riêng đơn vị phát hành nếu có thẻ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Báo đồ bị mất",
+      "roles": [
+        "người học",
+        "cảnh sát koban"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Theo dõi món đồ",
+      "roles": [
+        "người học",
+        "cảnh sát koban"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bảo vệ giấy tờ/tài khoản",
+      "roles": [
+        "người học",
+        "nhân viên phát hành thẻ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Giao hoặc nhận đồ",
+      "roles": [
+        "người học",
+        "cảnh sát koban"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Mất nhiều món ở nhiều nơi",
+      "roles": [
+        "người học",
+        "cảnh sát koban và nhân viên ga"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói mất ví sau khi xuống tàu, giờ cuối còn thấy",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Kể những thứ trong ví, phân biệt chắc chắn và có thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không biết mất ở ga hay trên đường, nói cả hai mốc",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Cảnh sát hỏi màu/kích thước, mô tả vật dễ nhận",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi cách liên hệ nếu có đồ phù hợp được giao tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chưa có đồ, hỏi khi nào có thể hỏi lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đồ giống được tìm thấy nhưng màu khác, xác nhận chưa phải của mình",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhận thông tin mới, gọi lại số tham chiếu trước đó",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Ví mất có thẻ ngân hàng, gọi hỏi cách ngăn sử dụng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Nhân viên yêu cầu xác minh, nói thông tin theo kênh chính thức",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không nghe rõ trạng thái thẻ, hỏi lại đã khóa hay còn chờ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau khi tìm lại ví, hỏi trạng thái thẻ và việc cần làm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Mang đồ nhặt được và nói chính xác chỗ nhặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Đến nhận đồ được báo, đối chiếu dấu riêng của mình",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Không có giấy nhận diện đang mang, hỏi hẹn lại và thứ cần đem",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Cảm ơn và xác nhận việc bàn giao đã hoàn tất",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nhận ra ví có thể rơi ở ga thay vì ngoài đường, cập nhật nơi cuối thấy",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Quầy ga giữ một đồ giống mô tả, hỏi dấu nhận diện trước khi đi nhận",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đồ tìm thấy thiếu thẻ, nói rõ phần còn mất để tiếp tục liên hệ phát hành",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Sau khi gặp cả ga và koban, nhắc lại số tiếp nhận tương ứng từng nơi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Không dùng 110 cho đồ mất thông thường; khác báo nguy hiểm V5P-057.",
+  "cross_stage_refs": [
+    "V5P-057",
+    "V5P-125"
+  ],
+  "source_refs": [
+    "W19",
+    "B08:U29",
+    "B05:ch8-U6"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

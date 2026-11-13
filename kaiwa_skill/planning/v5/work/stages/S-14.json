@@ -1,0 +1,160 @@
+{
+  "stage_key": "S-14",
+  "uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+  "objective": "Đi tuyến tàu hoặc xe buýt cơ bản và biết hỏi khi thông tin trên biển chưa đủ.",
+  "knowledge_focus": [
+    "Hỏi chiều đi, tuyến chuyển, điểm lên/xuống",
+    "Xác nhận cách lên xe buýt và xử lý đi nhầm ở mức Sơ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn tàu và chuyển tuyến",
+      "roles": [
+        "người học",
+        "nhân viên ga"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đi xe buýt",
+      "roles": [
+        "người học",
+        "lái xe hoặc nhân viên bến"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhờ hỗ trợ ở ga",
+      "roles": [
+        "người học",
+        "nhân viên ga"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi tàu này có tới ga cần không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi phải đổi ở ga nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi sân ga của tuyến tiếp theo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đứng ở sân ga chiều ngược, nhờ chỉ đúng bên",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại ga đổi và sân ga mới",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi xe này có dừng trước địa điểm cần đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi lên cửa nào và trả tiền lúc nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Xe không đi thẳng, hỏi điểm chuyển xe",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nhỡ bến, hỏi điểm xuống tiếp theo phù hợp",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Báo người đợi rằng mình sẽ đến muộn",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi lối thang máy khi mang nhiều hành lý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói mình đi cùng người khó đi cầu thang và cần chỉ lối",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhân viên cần kiểm việc hỗ trợ ở ga chuyển, hỏi chờ ở đâu",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhắc lại điểm nhân viên ga sau sẽ gặp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hỏi quầy phù hợp khi vé không qua cổng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "S-14 là nền tuyến đi. Vé/IC V5P-041 và gián đoạn nhiều bước V5P-042. Hỗ trợ đi cùng người khác là biến thể có ngay từ Sơ.",
+  "cross_stage_refs": [
+    "V5P-041",
+    "V5P-042"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

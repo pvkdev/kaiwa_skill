@@ -1,0 +1,250 @@
+{
+  "stage_key": "T-26",
+  "uid": "2b1e3574-b63a-5ee5-b19e-295d61901897",
+  "objective": "Trò chuyện chuyện đời với bạn thân, lắng nghe và lựa chọn hỗ trợ mà không tự quyết thay bạn.",
+  "knowledge_focus": [
+    "Nghe cảm xúc trước khi khuyên, hỏi mức muốn chia sẻ",
+    "Kể chuyện của mình có ranh giới, giữ bí mật và liên hệ lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bạn mở chuyện khó",
+      "roles": [
+        "người học",
+        "bạn thân"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Mình cần tâm sự",
+      "roles": [
+        "người học",
+        "bạn thân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Góp ý khi được mời",
+      "roles": [
+        "người học",
+        "bạn thân"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chuyện liên quan nhiều người",
+      "roles": [
+        "người học",
+        "bạn thân"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Theo lại sau cuộc nói",
+      "roles": [
+        "người học",
+        "bạn thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi bạn muốn nói ngay hay cần yên lặng một lúc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhắc lại điều mình hiểu để bạn sửa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hiểu bạn muốn giải pháp trong khi bạn chỉ muốn kể, xin lỗi và nghe tiếp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bạn chỉ muốn kể một phần, tôn trọng phần còn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hỏi bạn muốn mình làm gì sau cuộc nói",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Xin hỏi bạn có thời gian nghe không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói một sự việc và cảm xúc thay vì đổ lỗi người vắng mặt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Bạn chỉ có mười phút, chọn phần quan trọng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Bạn hôm nay không đủ sức nghe, cảm ơn và tìm lúc khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nói rõ mình muốn được nghe hay xin ý kiến",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi bạn đã nghĩ đến những lựa chọn nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nêu kinh nghiệm của mình với điều kiện khác bạn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Lời góp ý nghe thành phán xét, giải thích lại ý",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Bạn không chọn gợi ý, tôn trọng quyết định",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Hỏi có phần nhỏ nào mình giúp được",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi bạn có muốn giữ chuyện giữa hai người không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Bạn muốn nhờ người chuyên môn, hỏi mình có thể đi cùng không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Người khác hỏi chuyện bạn đã kể, nói mình không tiện chia sẻ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Bạn nghĩ mình đã kể ra, hỏi rõ họ nghe từ đâu trước khi đáp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Xác nhận giới hạn chia sẻ hai người đồng ý",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Gọi hỏi hôm nay bạn muốn nói tiếp hay nghỉ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi việc bạn định làm đã có gì mới chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Bạn chưa muốn nói, cho họ không gian",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Bạn xin giúp một việc cụ thể, chốt phạm vi",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Việc vẫn khó, hỏi có cần thêm người hỗ trợ phù hợp không",
+      "branch": "unresolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Không yêu cầu trải nghiệm cá nhân thật hay đóng vai trị liệu. Khủng hoảng/nguồn hỗ trợ chuyên môn ở chặng chăm sóc sức khỏe.",
+  "cross_stage_refs": [
+    "T-24",
+    "H-26",
+    "V5P-054"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

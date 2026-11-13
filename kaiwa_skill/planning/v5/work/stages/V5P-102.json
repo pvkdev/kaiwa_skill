@@ -1,0 +1,279 @@
+{
+  "stage_key": "V5P-102",
+  "uid": "02274e7c-dd76-58a5-b066-29542601c44f",
+  "objective": "Giải quyết bất đồng giữa đồng đội về công việc, phân biệt xung đột có thể thương lượng với tổn hại cần hỗ trợ.",
+  "knowledge_focus": [
+    "Nêu sự kiện chứ không gán động cơ",
+    "Nghe ưu tiên hai bên và nhắc lại",
+    "Thử phương án nhỏ hoặc xin người điều phối",
+    "Theo dõi sau quyết"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khác cách làm",
+      "roles": [
+        "đồng đội A",
+        "đồng đội B"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khác về trách nhiệm",
+      "roles": [
+        "đồng đội A",
+        "đồng đội B"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khác ưu tiên hạn/chất lượng",
+      "roles": [
+        "đồng đội A",
+        "đồng đội B"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khi cuộc nói nóng lên",
+      "roles": [
+        "đồng đội A",
+        "đồng đội B"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau thử hoặc sau quyết",
+      "roles": [
+        "đồng đội A",
+        "đồng đội B"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Khi không còn là bất đồng thông thường",
+      "roles": [
+        "nhân viên",
+        "đầu mối hỗ trợ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu bước mình muốn đổi và tác động cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Bên kia tưởng mình chê năng lực, làm rõ quy trình",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi vì sao họ chọn cách hiện tại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Đề nghị thử hai cách trên một phần việc",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi ai đã nhận phần việc trước mốc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hai người đều tưởng người kia báo khách, xác nhận lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói phần mình nhận và phần chưa có owner",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đã có owner, báo khách đúng người",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói mốc khách cần và rủi ro nếu bỏ kiểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Bên kia chấp nhận giao bản tạm có nhãn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Không chấp nhận bản tạm, xin leader chọn ưu tiên",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Leader quyết, hai người chốt cách phối hợp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói muốn dừng vài phút rồi bàn lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Im lặng bị coi là đồng ý, nói rõ chưa đồng ý",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi có thể nhờ người điều phối trung lập",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Người điều phối chỉ nghe hai bên trước khi đề xuất",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Hỏi phương án thử có giảm lỗi không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Vẫn có lỗi, chọn điều chỉnh khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Cách mới ổn, thống nhất dùng lần sau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Nói lời cảm ơn về việc bên kia đã nhượng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Nói hành vi lặp lại khiến mình không an toàn và xin kênh hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Đầu mối cần nghe thêm sự việc, hẹn cuộc riêng",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Hỏi cách giữ khoảng cách trong lúc chờ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Đến cuộc hẹn, chỉ kể điều mình muốn chia sẻ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    }
+  ],
+  "coverage_note": "Nhánh tổn hại chỉ để nhận diện và chuyển đúng đầu mối; V5P-094 owner support xử lý sâu.",
+  "cross_stage_refs": [
+    "V5P-094",
+    "H-35"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

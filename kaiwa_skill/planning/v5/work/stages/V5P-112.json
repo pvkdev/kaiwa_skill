@@ -1,0 +1,270 @@
+{
+  "stage_key": "V5P-112",
+  "uid": "7fd50b1e-8afd-5de0-ae60-4ecf6c89839d",
+  "objective": "Dẫn họp nhìn lại để học từ việc đã làm và chọn một cải tiến kiểm được trong dự án sau.",
+  "knowledge_focus": [
+    "Mở mục đích cải tiến, không quy lỗi",
+    "Phân biệt sự kiện và cách hiểu",
+    "Chọn thử thay đổi nhỏ với owner/mốc",
+    "Theo dõi tác dụng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở buổi nhìn lại",
+      "roles": [
+        "người điều phối",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Nhận diện điều tốt",
+      "roles": [
+        "người điều phối",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nói chỗ khó",
+      "roles": [
+        "người điều phối",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Hai góc nhìn khác",
+      "roles": [
+        "người điều phối",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Chọn cải tiến",
+      "roles": [
+        "người điều phối",
+        "đội"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Theo dõi sau buổi",
+      "roles": [
+        "người điều phối",
+        "owner cải tiến"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói cuộc họp tập trung cách làm và đầu ra",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi mỗi người nêu một việc thuận lợi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Một người tưởng là họp tìm lỗi cá nhân, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nêu phạm vi dự án/đợt được bàn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi hành động nào đã giúp vượt mốc gấp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi ai/nhóm nào ít được thấy đã hỗ trợ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Điều tốt chỉ xảy ra nhờ may mắn, tìm phần có thể lặp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Ghi nhận khác biệt giữa hai ca",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Mời kể trình tự đầu vào đến trễ bằng mốc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Một bên nói \"không báo\" nhưng bên kia đã báo người khác, làm rõ kênh",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi điểm nào có thể phát hiện sớm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi người bị ảnh hưởng muốn được báo ra sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Tóm tắt hai cách hiểu mà không chọn lỗi ngay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Cần số liệu để biết bên nào đúng, hẹn kiểm",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Thử một cách báo mới thay vì tranh luận nguyên nhân",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi người im lặng có thấy rủi ro nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Đề nghị một thay đổi có thể thử ở dự án kế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Đội thấy quá tốn nguồn, giảm phạm vi thử",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Chọn thử nhỏ, xác nhận owner và mốc",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Hỏi dấu hiệu nào cho thấy thử có ích",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Đến mốc hỏi đã thử đúng như hẹn chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Không thử được vì thiếu người, bàn đổi mốc",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Có kết quả, nêu điều nên giữ/đổi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Nói lại với cả nhóm điều quyết cho lần tới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "Bàn giao H-44 và tiệc 打ち上げ T-22 khác mục tiêu; đây là thay đổi cách làm sau sự kiện.",
+  "cross_stage_refs": [
+    "H-44",
+    "T-22"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

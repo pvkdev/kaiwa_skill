@@ -1,0 +1,249 @@
+{
+  "stage_key": "T-29",
+  "uid": "165b5fcf-63f2-593d-affa-19b0f679636f",
+  "objective": "Kể một chuyện đời có bối cảnh, biến chuyển và điều mình hiểu sau đó, rồi đối thoại với người nghe.",
+  "knowledge_focus": [
+    "Sắp xếp mốc thời gian, nguyên nhân và kết quả",
+    "Điều chỉnh chi tiết theo mức thân, hỏi và đón phản ứng người nghe"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở chuyện có lý do",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Kể bước ngoặt",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Mở chỗ cho người nghe",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đón cách hiểu khác",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Nối chuyện tới hiện tại",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói vì sao chuyện cũ liên quan điều đang bàn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Chỉ rõ khi nào và với ai sự việc bắt đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Người nghe ít thời gian, kể phiên bản ngắn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Họ tưởng chuyện của người khác, sửa vai mình trong chuyện",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Người nghe hiểu bối cảnh để theo tiếp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói điều mình dự đoán trước khi việc xảy ra",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Kể chi tiết làm kế hoạch thay đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nói lúc ấy mình đã chọn làm gì và vì sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Người nghe nhầm nguyên nhân với kết quả, sửa trình tự",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Đưa một mốc cụ thể giúp họ theo kịp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Dừng hỏi người kia có biết bối cảnh liên quan không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nghe câu hỏi về một nhân vật rồi chỉ nói phần phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Không muốn kể chi tiết riêng của người khác, nói rõ giới hạn",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đưa ví dụ chung thay vì tiết lộ danh tính",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Trở lại mạch chuyện sau câu hỏi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi người kia nghĩ điểm khó nhất là gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Họ hiểu mình tự hào trong khi mình chỉ thấy nhẹ nhõm, làm rõ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Họ có trải nghiệm khác, công nhận khác biệt",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Họ không muốn bàn sâu, khép chuyện",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nói điều mình rút ra mà không áp lên họ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói chuyện cũ ảnh hưởng lựa chọn hiện nay ra sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Hỏi người kia có muốn kể chuyện tương tự không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Họ không muốn chia sẻ, chuyển đề tài",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Lần sau nhắc ngắn điều họ đã phản hồi",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Kết bằng một câu nêu ý chính trước khi đổi chuyện",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Kể chuyện đời Trung; S-51 kể trải nghiệm gần, H-36 xây hồi ức có điểm chốt tinh tế.",
+  "cross_stage_refs": [
+    "S-51",
+    "H-36"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

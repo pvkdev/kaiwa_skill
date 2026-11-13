@@ -1,0 +1,248 @@
+{
+  "stage_key": "V5P-032",
+  "uid": "0e0ac61f-72e7-560f-9fd7-56a6ab38b039",
+  "objective": "Hỏi đúng nơi về bảo hiểm y tế khi đổi trạng thái làm việc/gia đình và khi cần đi khám.",
+  "knowledge_focus": [
+    "nêu mốc đổi trạng thái",
+    "hỏi tình trạng bảo hiểm hiện tại",
+    "giải thích thông báo phí",
+    "phối hợp quầy và cơ sở khám"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đổi công việc/trạng thái",
+      "roles": [
+        "người học",
+        "nhân viên bảo hiểm"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Thông tin gia đình",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Cần khám khi hồ sơ chờ",
+      "roles": [
+        "người học",
+        "nhân viên tiếp nhận y tế"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Hiểu thông báo phí",
+      "roles": [
+        "người học",
+        "nhân viên bảo hiểm"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Thông tin giữa nơi làm và quầy chưa khớp",
+      "roles": [
+        "người học",
+        "HR và nhân viên bảo hiểm"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói vừa vào/rời công ty và hỏi quầy phụ trách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nhân viên hỏi ngày kết thúc ở công ty cũ, xác nhận mốc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Quầy chỉ sang nơi khác cho trường hợp này, hỏi đúng đầu mối",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Thông tin công ty báo chưa lên, hỏi khi nào kiểm lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói người trong gia đình vừa chuyển đến ở cùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Tên người nhà sai phiên âm, xin kiểm nguồn sửa",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chưa có giấy quan hệ, hỏi có thể tư vấn trước không",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi lại đối tượng nào đang được nói tới để tránh nhầm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói hồ sơ bảo hiểm đang chờ và hôm nay có hẹn khám",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hỏi nhân viên cách xác nhận tình trạng với quầy bảo hiểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chưa kiểm được, hỏi bước tiếp và chi phí cần được giải thích",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Gọi lại quầy sau khi có thông tin từ cơ sở khám",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi thông báo nói về kỳ nào và người nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Số ghi khác kỳ mình nghĩ, xin giải thích cách đối chiếu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Chưa có câu trả lời, xin lịch tư vấn chi tiết",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nhắc lại việc mình cần hỏi công ty và việc quầy sẽ kiểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "HR nói đã chuyển dữ liệu nhưng quầy chưa có, nêu mốc mỗi bên báo",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Hai bên dùng ngày bắt đầu khác, hỏi ai xác nhận nguồn đúng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Cần khám trước khi họ trả lời, hỏi đúng nơi về cách tiếp nhận",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Sau khi có dữ liệu, gọi cơ sở khám cập nhật trạng thái",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Không tự kết luận quyền lợi hay tiền người học phải trả.",
+  "cross_stage_refs": [
+    "S-31",
+    "V5P-031"
+  ],
+  "source_refs": [
+    "W05"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

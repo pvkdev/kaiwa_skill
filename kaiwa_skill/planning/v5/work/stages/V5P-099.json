@@ -1,0 +1,190 @@
+{
+  "stage_key": "V5P-099",
+  "uid": "49d90ae6-c80a-53a9-b656-64d9d56a91d2",
+  "objective": "Điều phối tiến độ khi các việc phụ thuộc nhau và thay đổi một mốc kéo theo mốc khác.",
+  "knowledge_focus": [
+    "Nói chuỗi phụ thuộc và mốc chắc/dự kiến",
+    "Báo ảnh hưởng của chậm tiến độ",
+    "Xin quyết định ưu tiên khi không thể giữ mọi mốc"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Vẽ tiến độ bằng lời",
+      "roles": [
+        "người phụ trách việc A",
+        "người phụ trách việc B"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Một việc trễ",
+      "roles": [
+        "người phụ trách tiến độ",
+        "leader"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phụ thuộc không rõ chủ",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chốt mốc mới",
+      "roles": [
+        "người phụ trách tiến độ",
+        "nhóm liên quan"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói phần mình chỉ bắt đầu sau khi có bản thiết kế",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi bản nào đủ dùng để bắt đầu thử",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Bên kia tưởng cần bản cuối, phân biệt bản thử",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Bản thử có trước, chốt phần sẽ thử",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Báo đầu vào trễ một ngày và việc nào bị ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Leader chấp nhận đổi thứ tự làm",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Không thể dời mốc khách, hỏi phần có thể cắt",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Sau đổi thứ tự, báo mốc mới và rủi ro còn lại",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi ai sẽ xác nhận dữ liệu để nhóm khác dùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Chưa ai được phân, xin leader chỉ người chịu trách nhiệm",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Có owner, nhắc lại mốc cập nhật",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Owner vắng, hỏi người thay",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói mốc dự kiến và điều kiện để giữ mốc",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Người nghe coi mốc dự kiến là cam kết, sửa lời",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Điều kiện đã rõ, xác nhận mốc cuối với các bên",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Lịch ngày S-16, phối hợp đầu mối V5P-097; stage này tập trung chain dependency.",
+  "cross_stage_refs": [
+    "S-16",
+    "V5P-097"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

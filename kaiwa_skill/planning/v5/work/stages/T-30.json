@@ -1,0 +1,293 @@
+{
+  "stage_key": "T-30",
+  "uid": "06ca91fa-fb39-5781-a3a4-c7499a1f0259",
+  "objective": "Sắp cuối tuần vui chơi cùng bạn, điều chỉnh hoạt động thể thao/phượt/tiệc theo sức, ngân sách và thời tiết.",
+  "knowledge_focus": [
+    "Lên hoạt động chung và chia việc vừa phải",
+    "Nêu giới hạn, đổi kế hoạch, xử lý người vắng và tổng kết"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn hoạt động",
+      "roles": [
+        "người học",
+        "nhóm bạn"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Phân việc trước buổi",
+      "roles": [
+        "người học",
+        "bạn tổ chức cùng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Khi thành viên đổi lịch",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đang vui chơi",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Tiệc bạn bè",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Sau cuối tuần",
+      "roles": [
+        "người học",
+        "bạn"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi ai muốn chơi thể thao và ai chỉ muốn xem",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nêu mức chi phí mình thoải mái",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nhóm chọn hoạt động xa, đề nghị điểm gần hơn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Một bạn không muốn tiệc đông, tìm cách khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt hoạt động hợp phần lớn nhóm mà không ép người còn lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi ai đặt sân/đặt bàn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nhận phần mua đồ ăn phù hợp số người",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hai người cùng đặt một chỗ, kiểm và hủy phần trùng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa biết số người, hẹn hạn chốt",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại ai làm việc nào trước buổi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo mình đến muộn và phần đồ mình giữ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Bạn khác đi được nhưng phải về sớm, đổi thứ tự hoạt động",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Một người rút, hỏi nhóm còn muốn giữ kế hoạch không",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Giảm quy mô hoặc đổi địa điểm",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Gọi lại cho nơi đã đặt để cập nhật số người",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi người trong nhóm muốn nghỉ chưa",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Trời mưa khi đang đi ngoài trời, đề xuất nơi trú và kế hoạch thay",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Bạn tưởng mình muốn về hẳn, làm rõ chỉ muốn nghỉ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhóm muốn tiếp nhưng một người mệt, phân nhóm/hẹn lại",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt điểm gặp an toàn trước khi tách",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Hỏi trước khi gọi thêm đồ uống cho nhóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Không muốn uống, nói rõ mà không phải giải thích dài",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Người trong nhóm không thoải mái, hỏi có muốn rời sớm",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Đổi sang không gian yên hơn hoặc kết thúc",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Thanh toán phần mình và cảm ơn nhóm",
+      "branch": "resolved",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Nói điều thích và điều lần sau nên đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Người kia nghĩ mình chê công tổ chức, làm rõ góp ý cụ thể",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Lần sau chỉ đi nếu lịch nhẹ hơn, nêu giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Hỏi phần tiền/đồ còn chưa trả đã được chốt chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Chốt một ý tưởng lần sau theo kinh nghiệm vừa có",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S028"
+      ]
+    }
+  ],
+  "coverage_note": "Bạn bè cuối tuần; chuyến gia đình T-67, vai tổ chức sự kiện lớn H-46, công ty T-23.",
+  "cross_stage_refs": [
+    "T-67",
+    "H-46",
+    "T-23"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

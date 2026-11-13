@@ -1,0 +1,236 @@
+{
+  "stage_key": "H-21",
+  "uid": "d831b8f0-b333-5dac-ac20-4162c8fb30b2",
+  "objective": "Thăm dò ý định hợp tác giữa hai tổ chức mà không coi quan tâm ban đầu là đồng ý.",
+  "knowledge_focus": [
+    "Đặt mục tiêu chung, lợi ích và giới hạn mỗi bên",
+    "Nhận diện người ảnh hưởng/người quyết",
+    "Giữ mức cam kết chính xác qua các cuộc gặp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Mở đề nghị hợp tác",
+      "roles": [
+        "đại diện công ty",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tìm lợi ích và rủi ro",
+      "roles": [
+        "đại diện công ty",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thăm dò người có quyền",
+      "roles": [
+        "đại diện công ty",
+        "đầu mối đối tác"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bị từ chối hoặc đổi hướng",
+      "roles": [
+        "đại diện công ty",
+        "đối tác"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau thăm dò",
+      "roles": [
+        "đại diện công ty",
+        "đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi chiến lược bên kia năm tới và điểm có thể gặp nhau",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nêu một lĩnh vực hợp tác cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đối tác tưởng đề nghị độc quyền, làm rõ đang thăm dò",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hỏi ai bên họ cần được tham gia từ đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi bên kia kỳ vọng lợi ích đo bằng gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi rủi ro họ lo nhất khi cùng làm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Đối tác muốn thử nhỏ trước khi cam kết",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đề nghị dự án thử có mốc nhìn lại",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi quyết định cần qua những bộ phận nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Đầu mối chưa biết ý lãnh đạo, hẹn tìm hiểu",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Có ý kiến ban đầu, phân biệt quan tâm và phê duyệt",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi mốc nào phù hợp để trình phương án",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Đối tác chưa ưu tiên lĩnh vực đó, hỏi lý do có thể chia sẻ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Họ không muốn tiếp, cảm ơn và kết",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đề nghị trao đổi lĩnh vực khác phù hợp hơn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Lĩnh vực khác cần người chuyên môn, hẹn cuộc gặp",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Tóm tắt điều hai bên muốn tìm hiểu thêm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Nội bộ mình gọi đó là thỏa thuận, sửa lại là thăm dò",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đúng ngày gặp lại, hỏi điều đối tác đã kiểm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Chọn dự án thử và người thiết kế phạm vi",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "H-20 tìm khách mua; H-21 là hợp tác hai chiều; H-32 chốt điều khoản khi đã rõ ý.",
+  "cross_stage_refs": [
+    "H-20",
+    "H-32"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

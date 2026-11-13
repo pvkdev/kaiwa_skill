@@ -1,0 +1,146 @@
+{
+  "stage_key": "T-09",
+  "uid": "106854a6-346f-55ab-a972-b52340cce5ae",
+  "objective": "Ổn định trong những tuần đầu nhận việc: hỏi nhiệm vụ, kết nối người hỗ trợ và phản hồi khó khăn.",
+  "knowledge_focus": [
+    "Phân biệt vai leader, mentor và người phụ trách hành chính",
+    "Nói mức hiểu, mức tự làm được",
+    "Xin phản hồi sớm và báo tiến triển"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tuần đầu vào nhóm",
+      "roles": [
+        "nhân viên mới",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Làm việc với người hướng dẫn",
+      "roles": [
+        "nhân viên mới",
+        "mentor"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Bàn khó khăn và kỳ vọng",
+      "roles": [
+        "nhân viên mới",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nhắc lại vai trò và việc dự kiến trong tháng đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi điều gì được ưu tiên học trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chức danh và việc thực tế chưa khớp, hỏi phạm vi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Leader cho thử việc nhỏ trước khi tham gia dự án",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi khi nào nên tự xử lý và khi nào hỏi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Gặp từ nội bộ không hiểu, nhờ giải nghĩa bằng ví dụ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Làm thử rồi báo kết quả và điều còn vướng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi người liên hệ khi mentor vắng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nói khối lượng việc đang chậm hơn dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Leader giảm phạm vi, nhân viên xác nhận mốc mới",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nêu một kỹ năng muốn học từ dự án tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau một tuần báo phần đã tiến bộ và xin việc tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Sau ngày đầu S-04; việc hướng dẫn từ vai mentor ở V5P-104.",
+  "cross_stage_refs": [
+    "S-04",
+    "V5P-104"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

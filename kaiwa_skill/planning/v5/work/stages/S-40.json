@@ -1,0 +1,152 @@
+{
+  "stage_key": "S-40",
+  "uid": "1e87aabe-65d1-53cd-92f6-f88f4829a298",
+  "objective": "Hẹn thăm công ty khác, chào tại quầy và xác nhận người sẽ gặp.",
+  "knowledge_focus": [
+    "Tự giới thiệu tên và công ty",
+    "Nói thời gian hẹn và mục đích ngắn",
+    "Hỏi lại cách đến phòng/người tiếp"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hẹn và xác nhận cuộc thăm",
+      "roles": [
+        "nhân viên",
+        "người nhận lịch đối tác"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đến quầy tiếp tân",
+      "roles": [
+        "nhân viên đi thăm",
+        "lễ tân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Gặp người tiếp",
+      "roles": [
+        "nhân viên đi thăm",
+        "đối tác"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Gọi đề nghị giờ gặp ngắn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Đối tác nhận giờ, nhắc lại địa điểm",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Giờ đó không tiện, hỏi giờ khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chốt giờ khác và người sẽ tiếp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói tên công ty, tên mình và người có hẹn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Tên người hẹn gần giống, xác nhận lại bộ phận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người hẹn đang trong cuộc họp, hỏi nơi chờ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Được dẫn lên phòng, cảm ơn và xác nhận tầng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Chào và trao danh thiếp bằng lời giới thiệu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Hỏi cách gọi đối tác và thời lượng có thể nói",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Người tiếp khác người đã hẹn, nhắc lại mục đích",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Kết thúc, cảm ơn và xác nhận lần liên hệ tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Chặng Sơ về đến đúng người; tiếp khách/quan hệ đối tác sâu hơn T-21/T-61.",
+  "cross_stage_refs": [
+    "T-21",
+    "T-61"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,191 @@
+{
+  "stage_key": "H-27",
+  "uid": "03e96090-e8f1-52e6-9621-79700133d170",
+  "objective": "Ghi nhận đóng góp của nhiều người và đáp lời khen mà không làm mất công sức ít thấy.",
+  "knowledge_focus": [
+    "Khen hành động, tác động và bối cảnh",
+    "Phân bổ công lao đúng người",
+    "Nhận lời khen rồi chuyển thành học hỏi/việc sau"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Khen thành viên sau việc khó",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Ghi nhận người hậu trường",
+      "roles": [
+        "leader",
+        "nhóm hoặc cá nhân"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đáp lời khen từ cấp trên/khách",
+      "roles": [
+        "nhân viên",
+        "người khen"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Khen trong tiệc thành công",
+      "roles": [
+        "leader",
+        "nhân viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu việc thành viên đã xử lý tốt và ảnh hưởng cho khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Thành viên nghĩ chỉ được khen vì làm thêm giờ, nói rõ chất lượng quyết định",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi họ muốn phát triển phần nào từ kết quả này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Lần sau giao cơ hội phù hợp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nêu đóng góp của người chuẩn bị dữ liệu không lên sân khấu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Một người quan trọng bị bỏ sót, xin lỗi và ghi nhận trực tiếp",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi có ai khác đã hỗ trợ qua bộ phận khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Liên hệ bộ phận đó để cảm ơn cụ thể",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Cảm ơn và nêu phần nhóm đã góp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Lời khiêm tốn làm người nghe tưởng không có nỗ lực, ghi nhận việc thực",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi người khen điều gì có giá trị nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Dùng phản hồi đó để cải thiện phần sau",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Chúc mừng cột mốc mà không coi mọi việc đã kết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Hỏi người chưa muốn được chúc công khai muốn ghi nhận thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Họ muốn cảm ơn riêng, tôn trọng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Sau tiệc hỏi nhóm còn phần hỗ trợ khách nào",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "T-31 là khen/góp ý đồng nghiệp; H-27 là ghi công nhiều vai và thành tích. Tiệc người dự T-22.",
+  "cross_stage_refs": [
+    "T-31",
+    "T-22"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

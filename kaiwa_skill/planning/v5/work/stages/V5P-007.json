@@ -1,0 +1,252 @@
+{
+  "stage_key": "V5P-007",
+  "uid": "3a502b8c-56fe-5ab4-9e0f-6fcb1f58e316",
+  "objective": "Sử dụng dịch vụ giao thực phẩm theo chu kỳ, nói rõ nhu cầu gia đình và đổi lịch/sản phẩm khi hoàn cảnh thay đổi.",
+  "knowledge_focus": [
+    "Chu kỳ, số phần, thành phần không dùng và chỗ giao",
+    "Xác nhận thay đổi trước hạn, thiếu hàng, tạm ngừng và nối lại"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn gói thường xuyên",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Tuần giao đầu",
+      "roles": [
+        "người học",
+        "người giao hàng"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Thay đổi nhu cầu",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Kỳ giao có vấn đề",
+      "roles": [
+        "người học",
+        "nhân viên hỗ trợ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Tạm ngừng và nối lại",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói số người và tần suất nấu ở nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi gói có đổi nguyên liệu mỗi tuần không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Gói chỉ giao một ngày cố định, kiểm lịch nhà",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không hợp thành phần, hỏi gói khác",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc số phần, chu kỳ và tổng phí",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chỉ chỗ nhận ở tòa khi mình không ở nhà",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi khoảng giờ giao và cách bảo quản trước khi nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Giao tới lúc mình vắng trái lịch đã chốt, gọi quầy",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Đơn vị hiểu địa chỉ chỗ làm, sửa địa chỉ nhà",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhận hàng và kiểm số phần",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Báo gia đình có thêm người trong tháng tới",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi có bỏ một nguyên liệu không dùng được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Thay đổi chỉ áp từ kỳ sau, hỏi kỳ này có giải pháp không",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chọn phần nhỏ hơn khi đi công tác",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt kỳ nào bắt đầu áp thay đổi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo hộp thiếu một món so danh sách đã nói",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hàng tới muộn và không còn dùng kịp bữa, nói nhu cầu hiện tại",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Quầy cần kiểm kho, hỏi lúc phản hồi",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhận món thay thế hoặc lùi kỳ tiếp theo",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Kiểm kết quả thay đổi ở lần giao sau",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Báo đi xa hai tuần, hỏi hạn tạm ngừng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Nhân viên hiểu hủy vĩnh viễn, sửa chỉ tạm dừng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Đã quá hạn đổi kỳ này, hỏi kỳ nào bắt đầu ngừng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Trước khi về, gọi xác nhận kỳ giao lại",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Nhắc địa chỉ, ngày và số phần sau khi nối",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Chu kỳ thực phẩm khác đặt hàng một lần T-13 và siêu thị V5P-001. Điều kiện dịch vụ tùy nhà cung cấp.",
+  "cross_stage_refs": [
+    "T-13",
+    "V5P-001"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

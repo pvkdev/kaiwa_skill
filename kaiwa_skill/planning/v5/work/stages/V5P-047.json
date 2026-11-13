@@ -1,0 +1,255 @@
+{
+  "stage_key": "V5P-047",
+  "uid": "c184671f-e96f-5cd1-a356-a945f3a6f28e",
+  "objective": "Làm việc với bãi đỗ và gara trong quá trình dùng ô tô, hỏi rõ dịch vụ, lịch, chi phí và kết quả.",
+  "knowledge_focus": [
+    "Nêu xe, triệu chứng/mục đích bảo dưỡng bằng ngôn ngữ người dùng",
+    "So phạm vi sửa, dự toán, thời gian và kiểm sau nhận"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm và dùng bãi đỗ",
+      "roles": [
+        "người học",
+        "nhân viên bãi xe"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bãi xe có vấn đề",
+      "roles": [
+        "người học",
+        "nhân viên bãi xe"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Gọi gara",
+      "roles": [
+        "người học",
+        "nhân viên gara"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nghe chẩn đoán và quyết định",
+      "roles": [
+        "người học",
+        "thợ hoặc cố vấn dịch vụ"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Nhận xe và theo lại",
+      "roles": [
+        "người học",
+        "nhân viên gara"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi còn chỗ theo giờ hoặc tháng không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Nói kích thước xe để hỏi chỗ phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ còn chỗ xa lối ra, cân nhắc",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Hiểu phí theo giờ thành phí cả ngày, hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt chỗ và cách liên hệ khi không vào được",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Báo vé bãi không được nhận ở cổng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Xe mình bị chắn lối, nhờ nhân viên xử lý",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên tìm chủ xe khác, hỏi chờ ở đâu",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chọn lối ra khác theo chỉ dẫn",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Ra được và hỏi cách tránh lặp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Mô tả âm thanh lạ, từ khi nào và lúc nào nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi có thể kiểm trong ngày không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Phải để xe qua đêm, hỏi phương án di chuyển",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Không sửa khi chưa có dự toán, xin kiểm trước",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt lịch, xe và việc cần kiểm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi phần nào cần làm ngay theo chuyên viên và phần nào có thể hẹn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Nghe nhầm thay cả bộ với thay một linh kiện, hỏi phạm vi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Giá cuối còn phụ thuộc kiểm thêm, xin mốc xin phép trước khi làm",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chọn sửa phần cần thiết trước",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc phần được ủy quyền và giá ước tính",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Kiểm lỗi được nói đã hết khi nhận xe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Triệu chứng lặp lại trên đường về, gọi lại",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Gara cần xem lại, hẹn giờ mang xe",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Đến lại và kể lần sửa trước",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Chốt việc đã sửa, việc cần theo dõi và khoản cuối",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    }
+  ],
+  "coverage_note": "Bãi xe/gara không dạy cơ khí. Va chạm và sự cố trên đường V5P-048, thuê xe V5P-126.",
+  "cross_stage_refs": [
+    "V5P-048",
+    "V5P-126"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

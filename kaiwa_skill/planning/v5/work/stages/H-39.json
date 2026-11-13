@@ -1,0 +1,225 @@
+{
+  "stage_key": "H-39",
+  "uid": "46b1d5c2-5641-59da-bc79-3235b47edacc",
+  "objective": "Diễn đạt và nhận ra bất mãn, đành chịu, hoài nghi hoặc coi nhẹ trong quan hệ mà không làm đứt cuộc nói.",
+  "knowledge_focus": [
+    "phân biệt thái độ ngầm và lời nói",
+    "hỏi rõ thay vì suy diễn",
+    "phản hồi bất đồng",
+    "đổi giọng theo quan hệ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Bất mãn có căn cứ",
+      "roles": [
+        "người học",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hoài nghi và kiểm chứng",
+      "roles": [
+        "người học",
+        "bạn bè/đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đành chịu hay coi nhẹ",
+      "roles": [
+        "người học",
+        "người thân"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Người đối diện nói vòng để từ chối",
+      "roles": [
+        "người học",
+        "đồng nghiệp/bạn thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nêu việc bị đổi lịch nhiều lần và tác động",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người kia nghe thành công kích cá nhân, sửa trọng tâm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi điều gì có thể đổi, điều gì chưa thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không đổi được mốc, nói điều mình có thể chấp nhận có điều kiện",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Sau lần thử, báo còn vướng gì",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nghe một lời hứa mơ hồ, hỏi ai và khi nào xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Người kia tưởng mình không tin họ, giải thích cần thông tin",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Có tin khác nhau từ hai người, hỏi nguồn mà không buộc tội",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa có chứng cứ, nói sẽ chờ trước khi kết luận",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Khi rõ hơn, cập nhật cách nhìn của mình",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói mình đồng ý tạm thời nhưng còn một băn khoăn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người thân coi nhẹ việc mình lo, đưa ví dụ ảnh hưởng thực",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Mình lỡ coi nhẹ cảm xúc họ, nhận ra và xin lỗi",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nếu chưa giải quyết, hẹn nói tiếp khi cả hai bình tĩnh",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau đó nói rõ phần đã chấp nhận và phần vẫn cần bàn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nghe “để xem” nhiều lần, hỏi có khó khăn cụ thể nào khiến việc chưa thể chốt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Người kia nói mình quá nghi ngờ, giải thích cần lịch để phối hợp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nếu họ không thể nhận, xin câu trả lời rõ để tìm người khác",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau khi có câu trả lời, cảm ơn và đổi kế hoạch không trách móc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Không ép dùng mẫu cứng trong mọi quan hệ; T-40 là chia sẻ cảm xúc cơ bản.",
+  "cross_stage_refs": [
+    "T-40",
+    "H-26"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

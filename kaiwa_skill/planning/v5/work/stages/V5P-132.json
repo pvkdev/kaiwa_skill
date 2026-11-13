@@ -1,0 +1,182 @@
+{
+  "stage_key": "V5P-132",
+  "uid": "5383dcce-3ea8-5f09-bc34-f8d2fd568773",
+  "objective": "Phối hợp nhóm cắm trại/BBQ từ đặt chỗ, phân việc đến đổi kế hoạch ngoài trời.",
+  "knowledge_focus": [
+    "hỏi điều kiện địa điểm",
+    "phân đồ và người mang",
+    "đổi khi thời tiết/xung đột",
+    "gọi đúng người hỗ trợ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn nơi và đặt",
+      "roles": [
+        "người học",
+        "nhân viên khu cắm trại"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Phân việc nhóm",
+      "roles": [
+        "người học",
+        "bạn bè"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tại chỗ và kế hoạch B",
+      "roles": [
+        "người học",
+        "nhân viên/bạn bè"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi chỗ còn trống cho số người dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Khu chỉ nhận giờ khác, bàn với nhóm rồi trả lời",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi thiết bị có sẵn và thứ cần tự mang",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không được dùng lửa ở khu chọn, hỏi khu/hoạt động khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Xác nhận người liên hệ nếu số người đổi",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chia ai mang đồ ăn, ai lo phương tiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Một người ăn kiêng, sửa thực đơn sau khi hỏi cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người nhận việc bận, chuyển phần cần thiết cho người khác",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hai người cùng nghĩ người kia đặt chỗ, xác nhận lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Trước ngày đi, gọi kiểm các việc còn thiếu",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi điểm tập trung và quy tắc tại khu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Thời tiết đổi, hỏi nhân viên phương án an toàn theo quy định",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Nhóm quyết về sớm, phân việc dọn và trả đồ",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Thiếu thiết bị đã thuê, báo quầy và hỏi thay thế",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau chuyến, trao đổi đồ chung còn ở ai",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy sinh tồn; là nhánh tự chọn theo nhu cầu.",
+  "cross_stage_refs": [
+    "T-65"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

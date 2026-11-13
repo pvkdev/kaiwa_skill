@@ -1,0 +1,183 @@
+{
+  "stage_key": "T-55",
+  "uid": "228c614d-c7ec-524a-a603-82ea9b4de0ff",
+  "objective": "Thuyết trình ngắn bằng lời với luận điểm, lý do và bước đề nghị.",
+  "knowledge_focus": [
+    "Mở bằng mục tiêu người nghe",
+    "Nêu luận điểm rồi chứng cứ đơn giản",
+    "Kết bằng câu hỏi/quyết định cần người nghe"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chuẩn bị với người phụ trách",
+      "roles": [
+        "người trình bày",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Trình bày và phản hồi",
+      "roles": [
+        "người trình bày",
+        "người nghe"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Hỏi đáp sau trình bày",
+      "roles": [
+        "người trình bày",
+        "người hỏi"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sửa cho lần sau",
+      "roles": [
+        "người trình bày",
+        "mentor"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi buổi trình bày dành cho ai và dài bao lâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Chỉ còn ba phút, chọn hai ý chính",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi người nghe cần quyết gì sau khi nghe",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhắc lại cách kết thúc vào quyết định đó",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Nói mục tiêu và một kết quả quan trọng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người nghe tưởng số là kế hoạch, nói rõ số thực tế",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi người nghe có muốn nghe ví dụ cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Người nghe muốn nghe tác động chi phí trước",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nghe câu hỏi chưa rõ và xin nhắc trọng tâm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Chưa có số chính xác, hẹn xác nhận rồi gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Có số, trả lời và nêu nguồn đã kiểm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Chốt bước tiếp người nghe đã đồng ý",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Hỏi đoạn nào khó theo dõi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Mentor không phản đối kết luận mà phản đối thứ tự, xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Đổi thứ tự rồi nói thử lại phần mở",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Chỉ lời nói, không soạn slide; H-48 trình bày cấp cao nhiều bên.",
+  "cross_stage_refs": [
+    "H-48"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

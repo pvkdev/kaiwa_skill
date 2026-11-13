@@ -1,0 +1,179 @@
+{
+  "stage_key": "V5P-067",
+  "uid": "10c72cfa-88d0-55a1-938f-2c0111febceb",
+  "objective": "Trao đổi chọn juku/ngoại khóa cho con, học thử, lịch và quyết định tiếp tục hay dừng.",
+  "knowledge_focus": [
+    "nêu tuổi/mục tiêu của con",
+    "hỏi lịch phí và cam kết",
+    "phản hồi sau học thử",
+    "đổi lịch hoặc nghỉ"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn và học thử",
+      "roles": [
+        "người học",
+        "nhân viên lớp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Điều kiện tham gia",
+      "roles": [
+        "người học",
+        "nhân viên lớp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Sau buổi thử",
+      "roles": [
+        "người học",
+        "giáo viên/người thân"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi lớp phù hợp tuổi và điều con muốn thử",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Lớp đầu đã đầy, hỏi ngày/nhóm khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đặt buổi thử, xác nhận con có cần người lớn đi cùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Mục tiêu của lớp khác điều mình tưởng, hỏi lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Con không muốn thử ngay, xin hẹn sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi học phí và các khoản ngoài phí chính",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi nếu nghỉ một thời gian thì xử lý lịch thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Không nghe rõ mốc cam kết, xin ví dụ theo tháng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Giờ học va lịch gia đình, xin đổi buổi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Không có giờ phù hợp, cảm ơn và tìm lớp khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi giáo viên con đã tham gia phần nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Con nói không thích, trao đổi lý do mà không ép",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Gia đình muốn thử thêm một lần, hỏi còn lịch không",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chọn không tham gia, nói lời cảm ơn lịch sự",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chọn tiếp tục, xác nhận buổi đầu và người liên hệ",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    }
+  ],
+  "coverage_note": "Không biến lớp thêm thành nhu cầu bắt buộc; khác trường chính quy T-51.",
+  "cross_stage_refs": [
+    "T-51"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

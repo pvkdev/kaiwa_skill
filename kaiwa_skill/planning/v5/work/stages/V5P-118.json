@@ -1,0 +1,420 @@
+{
+  "stage_key": "V5P-118",
+  "uid": "f56a0c07-8162-52e7-ad03-57543e160b60",
+  "objective": "Làm 幹事 cho tiệc công ty từ nhận nhiệm vụ, hỏi nhu cầu, đặt chỗ, xử lý phát sinh tới trao đổi hậu sự kiện.",
+  "knowledge_focus": [
+    "Phân biệt mong muốn cá nhân, điều kiện quán và khoản được công ty duyệt",
+    "Hỏi tham dự trên cơ sở tự nguyện, có lựa chọn không rượu",
+    "Nói lại số người/giờ/điều kiện với quán và nhóm",
+    "Xử lý đổi kế hoạch, thanh toán và phản hồi sau buổi"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Nhận vai 幹事 và xác nhận phạm vi",
+      "roles": [
+        "幹事",
+        "leader giao việc"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Chọn ngày, người dự và quán",
+      "roles": [
+        "幹事",
+        "đồng nghiệp tham dự"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đặt và xác nhận với quán",
+      "roles": [
+        "幹事",
+        "nhân viên quán"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thông báo và chuẩn bị từng dịp",
+      "roles": [
+        "幹事",
+        "người tham dự hoặc người được vinh danh"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Thay đổi sát giờ",
+      "roles": [
+        "幹事",
+        "nhân viên quán hoặc đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Điều phối tại buổi tiệc",
+      "roles": [
+        "幹事",
+        "người dự hoặc nhân viên quán"
+      ]
+    },
+    {
+      "id": "E07",
+      "name": "Hóa đơn và việc sau buổi",
+      "roles": [
+        "幹事",
+        "nhân viên quán hoặc leader"
+      ]
+    },
+    {
+      "id": "E08",
+      "name": "Ranh giới với MC và người dự",
+      "roles": [
+        "幹事",
+        "MC hoặc người được mời"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi mục đích và đối tượng của buổi忘年会",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ngân sách, người duyệt và khoản công ty chi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Tưởng bao hết nhưng chỉ có ngân sách một phần, xác nhận",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Leader muốn có lời cảm ơn cuối năm nhưng không ép ai phát biểu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hỏi ai dẫn chương trình nếu quy mô lớn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi lịch và việc ai có thể đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Một người không dự, ghi nhận không hỏi ép lý do",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Một người chỉ tới muộn, xác nhận chỗ giữ",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Hỏi nhu cầu không uống, món ăn cần tránh và phương tiện về",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nêu hai quán gần công ty, hỏi ưu tiên nhóm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Gọi hỏi còn chỗ cho số người dự kiến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Còn chỗ, xác nhận giờ, bàn, thực đơn và giới hạn đổi số",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Hết chỗ, hỏi ngày/giờ khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Chỉ có phòng nhỏ, hỏi có đủ cho nhóm không",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau khi nhóm chốt, gọi xác nhận số người cuối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Với新年会, nói lịch và phần chào đầu năm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Với歓迎会, hỏi người mới muốn được giới thiệu ở mức nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Với送別会, hỏi người rời có muốn phát biểu hay chỉ chào ngắn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Với祝賀会/thăng chức, hỏi người được chúc có thoải mái với phần chúc công khai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Với打ち上げ dự án, xác nhận nhóm cộng tác và người hậu trường không bị bỏ sót",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Có người ốm báo không dự, gọi quán hỏi đổi số",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Quán chỉ giảm được một suất, nói rõ khoản phát sinh với người duyệt",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Quán báo phòng đã đặt có sự cố, hỏi lựa chọn thay",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Chọn phòng khác nhưng cần thông báo lối vào",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Gọi người dự đến trễ để chỉ điểm gặp mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S024"
+      ]
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Chào người mới đến và dẫn tới chỗ còn trống",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Món cho người có giới hạn ăn uống bị giao nhầm, hỏi nhân viên quán đổi",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Từ chối yêu cầu ép uống một người dự, đề nghị đồ không cồn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Hỏi người chuẩn bị về sớm có cần hỗ trợ gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S030",
+      "event_id": "E06",
+      "title": "Người phát biểu chưa đến, báo MC/leader đổi thứ tự",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S031",
+      "event_id": "E07",
+      "title": "Hỏi quán giải thích khoản trên hóa đơn chưa khớp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S032",
+      "event_id": "E07",
+      "title": "Quán sửa khoản, xác nhận tổng mới",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S031"
+      ]
+    },
+    {
+      "id": "S033",
+      "event_id": "E07",
+      "title": "Nói với leader phần chi thực tế và phần cần xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S034",
+      "event_id": "E07",
+      "title": "Có người để quên đồ, gọi quán hỏi giữ và giờ nhận",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S035",
+      "event_id": "E07",
+      "title": "Hôm sau cảm ơn người hỗ trợ, hỏi điểm cần sửa lần tổ chức tới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S036",
+      "event_id": "E07",
+      "title": "Người dự tưởng phải đóng khoản chưa duyệt, giải thích trạng thái",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S033"
+      ]
+    },
+    {
+      "id": "S037",
+      "event_id": "E08",
+      "title": "Nói với MC thứ tự, tên người và thời lượng đã xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S038",
+      "event_id": "E08",
+      "title": "MC tưởng 幹事 đã duyệt bài phát biểu, làm rõ ai duyệt",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S037"
+      ]
+    },
+    {
+      "id": "S039",
+      "event_id": "E08",
+      "title": "Hỏi người không dự có muốn gửi lời chúc hay không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S040",
+      "event_id": "E08",
+      "title": "Họ không muốn, tôn trọng và không nhắc công khai",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S039"
+      ]
+    }
+  ],
+  "coverage_note": "Khung B17 trực tiếp hỗ trợ hỏi gợi ý quán; các khâu còn lại là AI biên soạn. Không mặc định tiệc bắt buộc, rượu bắt buộc hoặc kiểu chia tiền. T-22 luyện vai dự, H-46 vai MC.",
+  "cross_stage_refs": [
+    "T-22",
+    "H-46",
+    "T-23"
+  ],
+  "source_refs": [
+    "E01",
+    "W07"
+  ],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

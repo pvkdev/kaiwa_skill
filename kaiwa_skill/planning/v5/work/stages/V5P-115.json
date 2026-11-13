@@ -1,0 +1,232 @@
+{
+  "stage_key": "V5P-115",
+  "uid": "22fdbd07-daf8-520f-8bc4-578660e4d0b3",
+  "objective": "Demo cho khách, nghe phản hồi và xác nhận tiêu chí nghiệm thu bằng lời.",
+  "knowledge_focus": [
+    "Dẫn khách qua tình huống sử dụng",
+    "Hỏi khách quan sát được gì",
+    "Phân biệt thích, cần sửa và đã chấp nhận"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Trước buổi demo",
+      "roles": [
+        "người demo",
+        "đầu mối khách"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Cho khách thử",
+      "roles": [
+        "người demo",
+        "người dùng phía khách"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhận phản hồi và sửa",
+      "roles": [
+        "người demo",
+        "đầu mối khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Bàn nghiệm thu",
+      "roles": [
+        "người phụ trách",
+        "khách có quyền duyệt"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Sau demo/đợt sửa",
+      "roles": [
+        "người phụ trách",
+        "đầu mối khách"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi khách muốn kiểm tác vụ nào đầu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Khách chỉ có 20 phút, chọn chức năng cốt lõi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi ai có quyền kết luận sau demo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người dự chỉ góp ý, người duyệt vắng",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Giới thiệu mục đích bước đầu và mời khách thử",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Khách không làm được bước vừa chỉ, hỏi chỗ vướng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Giải thích bằng cách khác và khách thử lại",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi khách dùng tình huống thực tế nào còn chưa xem",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi điểm nào cần sửa trước khi dùng thật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Khách nói \"khó dùng\" nhưng nguyên nhân là tên nút, hỏi cụ thể",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Khách chỉ nhận nếu đổi một bước, xác nhận tiêu chí",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhóm mình phải kiểm thời gian sửa, hẹn trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nhắc lại tiêu chí đã thống nhất và kết quả vừa xem",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Khách xác nhận đạt, hỏi bước bàn giao/hỗ trợ",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Chưa đạt, hỏi đúng điểm và cách kiểm lại",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Khách muốn thêm người xem, hẹn lần sau",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Gọi lại báo phần đã sửa và mời thử lại",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Khách tưởng đã triển khai, giải thích mới là bản thử",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Khách thử xong, chốt ai sẽ quyết cuối",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Review nội bộ V5P-101; thay đổi yêu cầu sau cam kết V5P-114. Không gọi lời khen là nghiệm thu.",
+  "cross_stage_refs": [
+    "V5P-101",
+    "V5P-114"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

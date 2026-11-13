@@ -1,0 +1,192 @@
+{
+  "stage_key": "S-11",
+  "uid": "7e123726-1655-5175-8cba-36c64682c8e2",
+  "objective": "Giới thiệu gia đình và phối hợp sinh hoạt hằng ngày với người cùng nhà bằng lời ngắn, lịch sự.",
+  "knowledge_focus": [
+    "cách gọi người thân và quan hệ",
+    "hỏi giờ và vị trí trong nhà",
+    "xin phép và cảm ơn",
+    "hỏi lại quy tắc chưa hiểu"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Làm quen gia đình chủ nhà",
+      "roles": [
+        "người học mới đến",
+        "người cùng nhà"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Bữa ăn và giờ sinh hoạt",
+      "roles": [
+        "người học",
+        "người nấu bữa ăn"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Quy tắc dùng chung",
+      "roles": [
+        "người học",
+        "người cùng nhà"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nhờ giúp và giữ liên hệ",
+      "roles": [
+        "người học",
+        "người cùng nhà"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Tự giới thiệu và hỏi nên gọi từng người thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Giới thiệu ngắn về gia đình mình khi người khác hỏi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Không nghe rõ tên người thân nên hỏi lại cách gọi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Người mới trong nhà đến sau, giới thiệu lại với vai trò rõ ràng",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Hỏi giờ ăn và nơi ngồi trong bữa đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói một món mình chưa ăn được mà không chê người nấu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Về muộn nên gọi báo trước, hỏi còn bữa hay tự lo",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhận lời mời ăn thêm hoặc từ chối nhẹ rồi cảm ơn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi cách dùng phòng tắm và thời gian phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Xin phép dùng đồ chung, chấp nhận khi chủ nhà cần trước",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Lỡ để đồ sai chỗ, nghe nhắc và xác nhận chỗ để đúng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Một quy tắc nói nhanh chưa hiểu, xin ví dụ cụ thể",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nhờ chỉ cách gọi về nhà khi mới đến",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Người cùng nhà bận, hỏi lúc khác có thể giúp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Báo sẽ vắng một tối và hỏi cách liên lạc nếu cần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Sau khi được giúp, cảm ơn và báo việc đã xong",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    }
+  ],
+  "coverage_note": "Giữ đời sống gia đình/homestay ở mức Sơ; chuyện quan hệ sâu thuộc T-47 và H-08.",
+  "cross_stage_refs": [],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

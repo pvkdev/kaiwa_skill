@@ -1,0 +1,248 @@
+{
+  "stage_key": "V5P-041",
+  "uid": "64e65132-a40a-5191-b35d-a2f60785a973",
+  "objective": "Sử dụng IC và vé tháng cho đi lại hằng ngày, giải thích sự cố tại quầy để tiếp tục đi.",
+  "knowledge_focus": [
+    "Phân biệt loại thẻ/vé và phạm vi tuyến",
+    "Kể lại chặng vừa đi, hỏi phí/chênh lệch và bước khôi phục"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Chọn vé đi thường xuyên",
+      "roles": [
+        "người học",
+        "nhân viên quầy vé"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Cổng vé không mở",
+      "roles": [
+        "người học",
+        "nhân viên ga"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Mất hoặc quên thẻ",
+      "roles": [
+        "người học",
+        "nhân viên ga"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Đổi tuyến đi thường xuyên",
+      "roles": [
+        "người học",
+        "nhân viên quầy vé"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Theo dõi bất thường sau vài lượt đi",
+      "roles": [
+        "người học",
+        "nhân viên ga"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói tuyến đi làm và hỏi vé tháng phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi ngày bắt đầu và phạm vi ga",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Đổi tuyến dự kiến, hỏi vé nào hợp hơn",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa chốt ngày đi làm, hỏi có thể mua sau không",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại tuyến và ngày hiệu lực trước khi trả tiền",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Báo thẻ không qua cổng lúc vào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nói ga xuất phát và đường đã đi khi ra không được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Nhân viên hiểu là thẻ hết tiền, người học nói đã nạp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nghe cần trả phần đường ngoài phạm vi vé tháng và hỏi số tiền",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Chốt đã xử lý được cổng và xin cách tránh lặp",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói mình quên vé tháng nhưng cần đi ngay",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nói mình mất thẻ và hỏi cần xác định loại thẻ thế nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Thẻ có tên có thể có thủ tục riêng, hỏi giấy tờ cần mang",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Loại thẻ hiện có không cấp lại được, hỏi lựa chọn đi hôm nay",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Quay lại quầy theo hướng dẫn và xác nhận thẻ/giá trị còn lại",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Báo nơi làm mới khiến tuyến vé tháng cũ không còn hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi phần vé còn hiệu lực có thể xử lý thế nào theo loại vé đang dùng",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nhân viên đề nghị một tuyến khác, hỏi có đi qua ga cần hằng ngày không",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chưa chốt ngày bắt đầu tuyến mới, hỏi hạn quyết định",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Quay lại sau khi biết lịch làm và chốt phạm vi vé mới",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói hai lần gần đây thẻ bị trừ số tiền khác nhau dù đi cùng tuyến",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Kể ga lên, ga xuống và ngày cụ thể để nhân viên kiểm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Nhân viên nghĩ là một chuyến khác, chỉ rõ chuyến đang hỏi",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Quầy cần xem lịch sử giao dịch, hỏi thời điểm nhận kết quả",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Liên hệ lại và nhắc đúng lượt đi đã được kiểm",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Không khẳng định mọi IC giống nhau; JR East phân biệt registered, Welcome, mobile. S-14 chỉ tuyến; V5P-042 xử lý gián đoạn.",
+  "cross_stage_refs": [
+    "S-14",
+    "V5P-042"
+  ],
+  "source_refs": [
+    "DW04",
+    "DW05"
+  ],
+  "source_findings": [
+    "JR East FAQ/rules đã đọc cho phân biệt loại thẻ; các chuỗi tuyến và giao dịch bất thường do AI biên soạn, cần kiểm từng nhà vận hành."
+  ],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

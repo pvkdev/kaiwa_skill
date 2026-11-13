@@ -1,0 +1,281 @@
+{
+  "stage_key": "V5P-111",
+  "uid": "6aa8916d-8f94-5446-9f50-0c5315912b97",
+  "objective": "Leader điều phối sự cố trong nhóm qua các lượt thu thập, phân việc, báo ngoài và khôi phục.",
+  "knowledge_focus": [
+    "Tách điều biết/chưa biết",
+    "Giao owner xác minh và mốc",
+    "Nói với người bị ảnh hưởng đúng mức chắc",
+    "Xin duyệt khi vượt quyền",
+    "Đặt cuộc nhìn lại sau khôi phục"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Phát hiện sự cố",
+      "roles": [
+        "leader",
+        "thành viên báo"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Phân người xác minh",
+      "roles": [
+        "leader",
+        "thành viên kỹ thuật"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Ưu tiên khôi phục",
+      "roles": [
+        "leader",
+        "đội"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Báo cho cấp trên/khách",
+      "roles": [
+        "leader",
+        "cấp trên hoặc đầu mối khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Vượt quyền quyết",
+      "roles": [
+        "leader",
+        "cấp trên"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Khôi phục và bàn sau",
+      "roles": [
+        "leader",
+        "thành viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi điều đã quan sát và thời điểm đầu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Thành viên nêu phỏng đoán như nguyên nhân, tách lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi người/khách nào đang bị ảnh hưởng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nói việc phải ngừng ngay trong phạm vi an toàn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Giao một người kiểm phạm vi lỗi, một người kiểm bản gần nhất",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Người nhận thiếu quyền truy cập, chỉ đầu mối cấp quyền",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi mốc có dữ kiện đầu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Đến mốc nhận kết quả và điều vẫn chưa rõ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nêu mục tiêu trước mắt: giảm ảnh hưởng khách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Chọn cách tạm an toàn hơn nhưng chưa sửa gốc",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Đội nói cách tạm có rủi ro khác, đổi hướng",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S010"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi ai giám sát khi thử khôi phục",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói ảnh hưởng đã xác nhận và mốc cập nhật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Người nghe tưởng đã có nguyên nhân, làm rõ chưa",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Chưa thể hứa giờ khôi phục, hẹn giờ báo tiếp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Có mốc tin cậy hơn, cập nhật cả hai bên",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nêu phương án cần chi phí/gián đoạn vượt quyền",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Cấp trên duyệt một phần, nhắc giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Không duyệt, xin phương án ưu tiên khác",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Đội thực hiện trong giới hạn mới",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Hỏi việc đã hoạt động lại ở đâu, còn kiểm gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Một chức năng hoạt động không nghĩa toàn hệ thống ổn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Nói với khách phần đã trở lại và phần còn theo dõi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Hẹn họp nhìn lại sau khi ổn định",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "H-18/H-19 báo lên; V5P-111 là leader điều phối nhóm. Họp nhìn lại chi tiết V5P-112.",
+  "cross_stage_refs": [
+    "H-18",
+    "H-19",
+    "V5P-112"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

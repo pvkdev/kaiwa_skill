@@ -1,0 +1,276 @@
+{
+  "stage_key": "V5P-093",
+  "uid": "55bf527a-5352-5970-b0e7-22916fbdc967",
+  "objective": "Trình bày vấn đề lao động với quầy tư vấn, nói điều biết/không biết và hỏi đầu mối tiếp.",
+  "knowledge_focus": [
+    "kể mốc và người liên quan",
+    "phân biệt chứng kiến/suy đoán",
+    "hỏi phạm vi quầy",
+    "nhắc lại bước sau"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Đặt cuộc tư vấn",
+      "roles": [
+        "người học",
+        "nhân viên quầy"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Kể sự việc",
+      "roles": [
+        "người học",
+        "tư vấn viên"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nghe hướng dẫn",
+      "roles": [
+        "người học",
+        "tư vấn viên"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thông tin mới sau cuộc tư vấn lao động",
+      "roles": [
+        "người học",
+        "tư vấn viên"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Người học đổi mục tiêu sau khi hiểu lựa chọn",
+      "roles": [
+        "người học",
+        "tư vấn viên"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói muốn hỏi về giờ/lương/cách đối xử và xin nơi phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Xin tư vấn bằng ngôn ngữ dễ hiểu hoặc phiên dịch",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chỉ có lịch muộn, nói điều đang cần giải quyết trước",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Quầy này không phụ trách, hỏi nơi đúng",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Hỏi cuộc nói có ai tham gia và thông tin được dùng thế nào",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói ngày, nơi và người đã trao đổi trước",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Tách điều tự thấy khỏi điều đồng nghiệp kể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Câu hỏi chưa hiểu, xin giải thích bằng ví dụ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Thiếu dữ liệu giờ làm, nói sẽ kiểm lại",
+      "branch": "unresolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Sửa một mốc mình nói sai sau khi nhớ ra",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi quầy có thể giúp phần nào và phần nào cần nơi khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Nhận vài lựa chọn, hỏi điều kiện của từng hướng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Chưa muốn chọn ngay, xin cuộc tư vấn tiếp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đầu mối được giới thiệu không nhận, gọi hỏi cách chuyển",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Nhắc lại người cần liên hệ và mốc tiếp theo",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Sau buổi đầu nhận thêm dữ liệu giờ làm, gọi bổ sung mốc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Quầy nhớ sai điều người học yêu cầu, làm rõ chỉ muốn hiểu lựa chọn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Vụ việc có phần khác thẩm quyền, xin giới thiệu đúng nơi",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Trước khi kết thúc, xác nhận việc quầy đã/ chưa hứa làm",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Ban đầu hỏi lương, sau thấy cần nói về lịch làm, xin đổi trọng tâm",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Chuyên viên tưởng muốn tố cáo ngay, làm rõ hiện chỉ cần hiểu lựa chọn",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Một hướng cần nhiều thông tin hơn, hỏi cách chuẩn bị cho lần gặp tới",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Nếu không theo hướng đó, hỏi lựa chọn khác và hậu quả cần chuyên viên giải thích",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Không biến thành tư vấn quyền lợi hay kết luận vụ việc.",
+  "cross_stage_refs": [
+    "V5P-091",
+    "V5P-094"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

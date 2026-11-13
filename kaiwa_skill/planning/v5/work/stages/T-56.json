@@ -1,0 +1,186 @@
+{
+  "stage_key": "T-56",
+  "uid": "b38ca133-2bc2-55ef-a940-3fdedbc4f4c8",
+  "objective": "Giải thích kết quả khảo sát hoặc so sánh hai phương án trong cuộc nói dễ theo dõi.",
+  "knowledge_focus": [
+    "Nêu đối tượng và cách hiểu số",
+    "So sánh cùng một tiêu chí",
+    "Nói giới hạn dữ liệu trước kết luận"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Giới thiệu kết quả",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "So sánh hai lựa chọn",
+      "roles": [
+        "nhân viên",
+        "đồng nghiệp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Người nghe nghi ngờ",
+      "roles": [
+        "nhân viên",
+        "người phản biện"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Báo kết quả để hành động",
+      "roles": [
+        "nhân viên",
+        "leader"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói khảo sát hỏi ai và về vấn đề gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Leader tưởng mẫu gồm toàn khách, làm rõ chỉ khách mới",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Nêu kết quả nổi bật và điều còn chưa rõ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Leader muốn kiểm thêm, chốt nguồn cần hỏi",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "So sánh A/B theo thời gian thực hiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "B nhanh hơn nhưng tốn nguồn lực, hỏi ưu tiên",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi tiêu chí người kia cho là quan trọng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Theo tiêu chí mới, đề xuất chọn B",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Nghe nghi ngờ về số mẫu và xác nhận điểm đúng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Người kia tưởng đây là dự báo, nói rõ dữ liệu quá khứ",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Cần kiểm thêm một nhóm người dùng",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Sau kiểm, nói kết luận đổi hay giữ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Đề nghị thử phương án được dữ liệu ủng hộ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Leader chưa muốn đổi, hỏi điều kiện để thử",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Sau khi có điều kiện, hẹn ngày thử nhỏ",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    }
+  ],
+  "coverage_note": "Không làm bài viết/báo cáo; chỉ trình bày và phản hồi bằng lời.",
+  "cross_stage_refs": [
+    "T-55"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

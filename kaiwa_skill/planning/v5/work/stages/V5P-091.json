@@ -1,0 +1,231 @@
+{
+  "stage_key": "V5P-091",
+  "uid": "270ee36b-e3d5-5829-9c90-b8e1723f6c87",
+  "objective": "Hỏi bảng lương, giờ chấm công và khoản làm thêm với HR bằng dữ liệu cụ thể.",
+  "knowledge_focus": [
+    "nêu kỳ/ca",
+    "đối chiếu điều mình ghi với thông tin HR",
+    "hỏi giải thích khoản",
+    "theo dõi chỉnh sửa"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Một ca không khớp",
+      "roles": [
+        "người học",
+        "HR"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Khoản trên bảng lương",
+      "roles": [
+        "người học",
+        "HR"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Chỉnh và theo dõi",
+      "roles": [
+        "người học",
+        "HR/quản lý"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Chấm công hai địa điểm",
+      "roles": [
+        "người học",
+        "quản lý hai nơi/HR"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói ngày và giờ ca mình nhớ khác hệ thống",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "HR hỏi ai xác nhận ca, nói tên người phụ trách",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chưa có thông tin, xin HR kiểm và hẹn trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Mình nhầm ngày, sửa trước khi HR tra tiếp",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Sau khi quản lý xác nhận, gọi lại cập nhật",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi khoản phụ cấp/khấu trừ này thuộc kỳ nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Nghe giải thích nhưng còn thiếu một ca, hỏi riêng ca đó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Một khoản làm thêm chưa hiện, cung cấp mốc đã làm",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "HR chuyển qua quản lý chấm công, hỏi ai trả lời cuối",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S008"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Nhắc lại phần đã rõ, phần vẫn chờ đối chiếu",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi khi nào thông tin sẽ được cập nhật",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Đã qua mốc nhưng chưa đổi, nhắc số tham chiếu",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "HR không đồng ý cách tính mình nghĩ, xin giải thích căn cứ",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Cần tư vấn bên ngoài vì vẫn không hiểu, hỏi đầu mối",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Chốt mốc phản hồi và người liên hệ",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Một ca làm ở địa điểm khách chưa xuất hiện, nêu nơi và người giao việc",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hai quản lý nói khác ai xác nhận giờ, xin họ chỉ đầu mối cuối",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "HR chưa cập nhật kỳ này, hỏi kỳ nào sẽ đối chiếu tiếp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Sau khi giờ được sửa, xác nhận khoản liên quan có được kiểm chưa",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S018"
+      ]
+    }
+  ],
+  "coverage_note": "Không dạy tính lương hay kết luận vi phạm; quầy tư vấn V5P-093 nếu cần.",
+  "cross_stage_refs": [
+    "V5P-093",
+    "V5P-090"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support"
+}

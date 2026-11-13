@@ -1,0 +1,340 @@
+{
+  "stage_key": "H-09",
+  "uid": "c1fbfdfc-8d11-5ae8-a4c1-855b65ad5b8e",
+  "objective": "Trao đổi với chuyên khoa về nhiều lựa chọn điều trị và tác động đời sống, đưa ra quyết định sau khi hiểu.",
+  "knowledge_focus": [
+    "kể lịch sử liên quan",
+    "hỏi mục tiêu/rủi ro/lựa chọn từ chuyên viên",
+    "đặt giới hạn riêng tư",
+    "phối hợp gia đình khi được đồng ý"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Gặp chuyên khoa",
+      "roles": [
+        "người học",
+        "bác sĩ chuyên khoa"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hiểu lựa chọn",
+      "roles": [
+        "người học",
+        "bác sĩ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Gia đình và riêng tư",
+      "roles": [
+        "người học",
+        "người thân/bác sĩ"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Theo dõi quyết định",
+      "roles": [
+        "người học",
+        "bác sĩ/điều phối viên"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Người nhà và chuyên viên hiểu khác mục tiêu",
+      "roles": [
+        "người học",
+        "người thân/bác sĩ"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Trao đổi riêng trong khám liên quan sinh sản hoặc nhu cầu cá nhân",
+      "roles": [
+        "người bệnh hư cấu",
+        "chuyên viên y tế"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Tóm tắt các lần khám trước và điều còn khó",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Bác sĩ hỏi thông tin chưa có, xin kiểm rồi bổ sung",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Một chẩn đoán cũ bị hiểu là hiện tại, sửa mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Xin giải thích vì sao được giới thiệu tới chuyên khoa này",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Một triệu chứng mới xuất hiện, báo trước khi quyết kế hoạch",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi mục tiêu của hai phương án được nêu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Hỏi tác động từng phương án tới công việc/sinh hoạt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Một phần lời giải thích quá chuyên môn, xin ví dụ dễ hiểu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa sẵn sàng quyết, xin thời gian và mốc cần trả lời",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Bác sĩ đề nghị thêm ý kiến, hỏi cách liên hệ chuyên viên khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Nói với bác sĩ ai được tham gia cuộc trao đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Người thân hỏi chi tiết mình chưa muốn chia sẻ, nói giới hạn",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Gia đình muốn phương án khác, nêu điều mình ưu tiên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Hai bên nghe khác lời bác sĩ, xin buổi giải thích lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau khi quyết, thông báo kế hoạch cho người cần phối hợp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi điều kiện cần kiểm trước bước đã chọn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Lịch chuyên viên đổi, hỏi tác động kế hoạch",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Một tác dụng/khó khăn mới, báo và xin tư vấn điều chỉnh",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Điều chưa rõ vượt cuộc hẹn hiện tại, xin lịch hỏi tiếp",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Nhắc lại ai liên hệ, khi nào và về vấn đề gì",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Người nhà muốn ưu tiên nhanh, người bệnh ưu tiên giữ sinh hoạt, nêu cả hai",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Bác sĩ hỏi ai quyết định, nói rõ vai mỗi người trong cuộc trao đổi",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Một người tưởng hỏi thêm là từ chối điều trị, sửa hiểu lầm",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Hẹn buổi tiếp để mỗi bên hỏi phần còn mơ hồ",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    },
+    {
+      "id": "S025",
+      "event_id": "E06",
+      "title": "Xin trao đổi riêng với chuyên viên và hỏi cách sắp xếp hỗ trợ ngôn ngữ phù hợp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S026",
+      "event_id": "E06",
+      "title": "Chuyên viên dự định giải thích cùng người nhà, nói phần mình muốn bàn riêng trước",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S025"
+      ]
+    },
+    {
+      "id": "S027",
+      "event_id": "E06",
+      "title": "Nhờ giải thích các lựa chọn đã được chuyên viên nêu và điều mình cần cân nhắc trước khi quyết",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S028",
+      "event_id": "E06",
+      "title": "Chưa sẵn sàng chọn ngay, hỏi điều gì cần biết thêm và lúc nào có thể trao đổi lại",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S027"
+      ]
+    },
+    {
+      "id": "S029",
+      "event_id": "E06",
+      "title": "Sau cuộc nói riêng, thống nhất ai được biết phần nào để phối hợp chăm sóc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S026"
+      ]
+    }
+  ],
+  "coverage_note": "Không chẩn đoán/khuyên điều trị. Nhập viện V5P-052 và chăm sóc lâu dài V5P-072 riêng. AI055 là mô-đun riêng tư tùy nhu cầu trong H-09; không tư vấn điều trị hoặc yêu cầu người học tiết lộ thông tin thật.",
+  "cross_stage_refs": [
+    "T-63",
+    "V5P-052",
+    "V5P-072"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support",
+  "editorial_contributors": [
+    "support",
+    "root"
+  ]
+}

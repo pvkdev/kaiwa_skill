@@ -1,0 +1,236 @@
+{
+  "stage_key": "T-06",
+  "uid": "e31a9807-a3ce-5f63-8ab9-b3ae93f28e7e",
+  "objective": "Trao đổi bằng lời với recruiter về kinh nghiệm, động cơ và phạm vi việc trước phỏng vấn.",
+  "knowledge_focus": [
+    "giới thiệu kinh nghiệm ngắn",
+    "nói lý do ứng tuyển",
+    "hỏi vai trò cụ thể",
+    "đặt giới hạn chuyện riêng"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Cuộc gọi đầu",
+      "roles": [
+        "người học",
+        "recruiter"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Giải thích đường nghề",
+      "roles": [
+        "người học",
+        "recruiter"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Phối hợp các bước",
+      "roles": [
+        "người học",
+        "recruiter"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Thống nhất phạm vi recruiter được chia sẻ",
+      "roles": [
+        "ứng viên",
+        "người giới thiệu nhân sự"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Nói thời gian có thể trao đổi và lĩnh vực quan tâm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Recruiter mô tả vị trí quá rộng, hỏi nhiệm vụ chính",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Công việc khác mong đợi, nói phần nào không phù hợp",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chưa có đủ thông tin, xin cuộc gọi với người phụ trách",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S002"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại lịch phỏng vấn được đề xuất",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nói kinh nghiệm gần nhất bằng kết quả cụ thể",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Bị hỏi lý do rời việc trước, trả lời trong phạm vi muốn chia sẻ",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Recruiter hiểu nhầm số năm làm, sửa mốc",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S006"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Nói vì sao vai này hợp mục tiêu tiếp theo",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Xin hỏi lại tiêu chí họ đang ưu tiên",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Hỏi vòng tiếp theo có ai và sẽ nói về gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Ngày hẹn không khớp, đề xuất hai lịch khác",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Vị trí tạm dừng tuyển, hỏi lựa chọn gần mục tiêu",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Nhận thêm mô tả khác, xác nhận có muốn được giới thiệu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Sau buổi gặp, gọi phản hồi điều mình hiểu về việc",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Hỏi thông tin về công việc hiện tại sẽ được nói cho bên tuyển ở bước nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Chỉ đồng ý chia sẻ một phần kinh nghiệm, giải thích phần cần giữ riêng",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Recruiter định giới thiệu công ty không nằm trong tiêu chí, từ chối lần này và nhắc lại ưu tiên",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhận cuộc hẹn với một bên chưa đồng ý, gọi lại để làm rõ trước khi xác nhận tham dự",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Sau khi chọn giới thiệu, nhắc lại điều được chia sẻ và mốc nghe phản hồi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    }
+  ],
+  "coverage_note": "Không viết CV/ES/email; phỏng vấn chính T-07, chuyển ngành V5P-083. AI082 có nhánh chuyển việc và quyền chọn phạm vi chia sẻ, không chỉ nói lại CV bằng lời.",
+  "cross_stage_refs": [
+    "T-07",
+    "V5P-083"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "support",
+  "editorial_contributors": [
+    "support",
+    "root"
+  ]
+}

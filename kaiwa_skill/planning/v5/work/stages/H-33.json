@@ -1,0 +1,287 @@
+{
+  "stage_key": "H-33",
+  "uid": "6347a04c-648a-5a61-b940-e2c046221d04",
+  "objective": "Thương lượng giá bán buôn và giảm chi phí mà vẫn giữ chất lượng, tiến độ và quan hệ nhà cung cấp.",
+  "knowledge_focus": [
+    "Phân tách đơn giá, lượng, mốc giao, chi phí ẩn",
+    "Đổi điều kiện có đối ứng",
+    "Nói tác động tới chuỗi cung ứng và người duyệt"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Xem cấu phần giá",
+      "roles": [
+        "người mua",
+        "nhà cung cấp"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đề nghị giảm chi phí",
+      "roles": [
+        "người mua",
+        "nhà cung cấp"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Tác động chất lượng/tiến độ",
+      "roles": [
+        "người mua",
+        "nhà cung cấp"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Nội bộ người dùng và tài chính",
+      "roles": [
+        "người mua",
+        "leader bộ phận dùng"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Đàm phán không thành",
+      "roles": [
+        "người mua",
+        "nhà cung cấp"
+      ]
+    },
+    {
+      "id": "E06",
+      "name": "Chốt điều kiện mới",
+      "roles": [
+        "người mua",
+        "nhà cung cấp"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi yếu tố nào làm đơn giá tăng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Người mua tưởng phí vận chuyển đã gồm, xác nhận lại",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S001"
+      ]
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Hỏi mức giá đổi theo sản lượng ra sao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Nhà cung cấp cần tính lại, hẹn ngày",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S005",
+      "event_id": "E02",
+      "title": "Đề nghị giá thấp hơn nếu đặt đều nhiều đợt",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Nhà cung cấp giảm nếu tăng lượng tối thiểu",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Không giảm được vì nguyên liệu, hỏi lựa chọn giao hàng",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S005"
+      ]
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Gộp chuyến giao để giảm phí",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S007"
+      ]
+    },
+    {
+      "id": "S009",
+      "event_id": "E03",
+      "title": "Hỏi nếu đổi vật liệu thì tiêu chí nào đổi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E03",
+      "title": "Mẫu mới cần kiểm thử, không chốt ngay",
+      "branch": "conditional",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Cắt phí làm trễ giao, nói rủi ro cho bộ phận dùng",
+      "branch": "problem",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hai bên chọn phương án giữ mốc và giảm hạng khác",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S011"
+      ]
+    },
+    {
+      "id": "S013",
+      "event_id": "E04",
+      "title": "Nói giá giảm gắn với thay đổi lô",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E04",
+      "title": "Leader tưởng chất lượng y hệt, làm rõ chưa được thử",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E04",
+      "title": "Hỏi bộ phận dùng chấp nhận điều kiện nào",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Chờ thử mẫu, hẹn quyết",
+      "branch": "pending",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S015"
+      ]
+    },
+    {
+      "id": "S017",
+      "event_id": "E05",
+      "title": "Nói mức hiện tại chưa được duyệt, hỏi phương án khác",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E05",
+      "title": "Nhà cung cấp không nhượng, giữ cuộc nói tôn trọng",
+      "branch": "declined",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S019",
+      "event_id": "E05",
+      "title": "Đề nghị xem lại sau quý tới",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S017"
+      ]
+    },
+    {
+      "id": "S020",
+      "event_id": "E05",
+      "title": "Sau dữ liệu mới, hỏi giá có thể đổi",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E06",
+      "title": "Đọc lại đơn giá, lượng, mốc và người xác nhận",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E06",
+      "title": "Một bên tính giá trước thuế, sửa cách hiểu",
+      "branch": "misunderstanding",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S021"
+      ]
+    },
+    {
+      "id": "S023",
+      "event_id": "E06",
+      "title": "Hai bên đồng ý con số sau khi rõ",
+      "branch": "accepted",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S022"
+      ]
+    },
+    {
+      "id": "S024",
+      "event_id": "E06",
+      "title": "Đợt giao đầu, hỏi điều kiện có thực hiện đúng không",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S023"
+      ]
+    }
+  ],
+  "coverage_note": "H-32 đàm phán hợp đồng chung; H-33 đi vào đơn vị giá và tradeoff chuỗi cung ứng.",
+  "cross_stage_refs": [
+    "H-32",
+    "V5P-116"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "work"
+}

@@ -1,0 +1,209 @@
+{
+  "stage_key": "V5P-003",
+  "uid": "0312d356-1e44-589f-9c8c-c303ba61b667",
+  "objective": "Mua đồ dùng cho căn nhà theo kích thước và mục đích, nói rõ khi cần cắt, giao hoặc tư vấn dùng.",
+  "knowledge_focus": [
+    "Kích thước, chất liệu và vị trí lắp dùng",
+    "Dịch vụ cắt/giao/đặt hàng và kiểm món khi nhận"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Tìm món cho căn nhà",
+      "roles": [
+        "người học",
+        "nhân viên home center"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Hỏi dịch vụ tại cửa hàng",
+      "roles": [
+        "người học",
+        "nhân viên dịch vụ"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Nhận hoặc lắp tại nhà",
+      "roles": [
+        "người học",
+        "người giao hàng"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Tìm giải pháp sau mua",
+      "roles": [
+        "người học",
+        "nhân viên cửa hàng"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Mô tả chỗ cần đặt kệ và kích thước gần đúng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi vật liệu nào hợp nơi ẩm",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "So hai loại dụng cụ theo mức dễ dùng",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Không có đúng kích thước, hỏi loại có thể cắt",
+      "branch": "alternative",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Chốt mã món và số lượng",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S004"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Hỏi cửa hàng có cắt tấm theo số đo không",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Chỉ cắt theo độ dài nhất định, điều chỉnh yêu cầu",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hỏi có thể giao món lớn vào cuối tuần",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chưa biết phí giao, xin tính tổng trước khi quyết định",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Phí vượt ngân sách, chọn tự mang món nhỏ",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Xác nhận cửa và khoảng giờ giao",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Gói hàng quá lớn để qua cửa, cùng nêu số đo thực tế",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Đề nghị giao phần khác trước và hẹn phương án cho món lớn",
+      "branch": "alternative",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S012"
+      ]
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Kiểm đúng số món đã nhận",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S013"
+      ]
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Gọi cửa hàng về phụ kiện thiếu sau khi mở hộp",
+      "branch": "follow_up",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Nói món không vừa vì số đo mình đưa sai",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Hỏi còn vật liệu nào thay được",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Chỉ nhận đổi theo điều kiện của cửa hàng, nhờ giải thích",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Nhân viên cần kiểm hàng tồn, hẹn lúc gọi lại",
+      "branch": "pending",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Chốt giải pháp được hai bên hiểu giống nhau",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S019"
+      ]
+    }
+  ],
+  "coverage_note": "Home center phục vụ đồ nhà; điện máy có giao/lắp sâu V5P-005, nhà thuê T-01.",
+  "cross_stage_refs": [
+    "V5P-005",
+    "T-01"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}

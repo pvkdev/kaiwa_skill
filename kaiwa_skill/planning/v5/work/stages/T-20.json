@@ -1,0 +1,249 @@
+{
+  "stage_key": "T-20",
+  "uid": "aed96216-42cc-57a6-8126-3279bc4ff368",
+  "objective": "Thăm nhà hoặc đón khách, giao tiếp phù hợp quan hệ từ lúc hẹn đến khi ra về.",
+  "knowledge_focus": [
+    "Hỏi thời điểm, quy tắc nhà và quà mang theo mà không suy diễn",
+    "Mời, nhận/đáp lời mời, xử lý thay đổi để giữ thoải mái"
+  ],
+  "events": [
+    {
+      "id": "E01",
+      "name": "Hẹn thăm nhà",
+      "roles": [
+        "người học",
+        "chủ nhà"
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "Đến nhà người khác",
+      "roles": [
+        "người học",
+        "chủ nhà"
+      ]
+    },
+    {
+      "id": "E03",
+      "name": "Đón khách tại nhà mình",
+      "roles": [
+        "người học",
+        "khách"
+      ]
+    },
+    {
+      "id": "E04",
+      "name": "Sự cố nhỏ trong buổi thăm",
+      "roles": [
+        "người học",
+        "chủ nhà hoặc khách"
+      ]
+    },
+    {
+      "id": "E05",
+      "name": "Ra về và nối quan hệ",
+      "roles": [
+        "người học",
+        "chủ nhà"
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "id": "S001",
+      "event_id": "E01",
+      "title": "Hỏi giờ nào chủ nhà tiện",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S002",
+      "event_id": "E01",
+      "title": "Hỏi có cần mang gì cho bữa gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S003",
+      "event_id": "E01",
+      "title": "Chủ nhà chỉ rảnh một khoảng ngắn, điều chỉnh giờ",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S004",
+      "event_id": "E01",
+      "title": "Chủ nhà chưa tiện tiếp, hẹn dịp khác không ép",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S005",
+      "event_id": "E01",
+      "title": "Nhắc lại địa chỉ, giờ và số người",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S003"
+      ]
+    },
+    {
+      "id": "S006",
+      "event_id": "E02",
+      "title": "Chào lúc tới và hỏi để giày/đồ ở đâu",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S007",
+      "event_id": "E02",
+      "title": "Trao món quà nhỏ và nói lý do chọn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S008",
+      "event_id": "E02",
+      "title": "Hiểu lời mời dùng món như bắt buộc, hỏi nhẹ khi mình không dùng được",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S009",
+      "event_id": "E02",
+      "title": "Chủ nhà mời ở lại ăn nhưng mình có hẹn, nêu giờ phải về",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S010",
+      "event_id": "E02",
+      "title": "Tham gia phần được mời và cảm ơn",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S009"
+      ]
+    },
+    {
+      "id": "S011",
+      "event_id": "E03",
+      "title": "Chỉ chỗ để đồ và mời ngồi",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S012",
+      "event_id": "E03",
+      "title": "Hỏi khách muốn uống gì",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S013",
+      "event_id": "E03",
+      "title": "Khách cần tránh một thành phần, tìm đồ khác",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S014",
+      "event_id": "E03",
+      "title": "Đồ định chuẩn bị chưa xong, báo và xin chờ",
+      "branch": "problem",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S015",
+      "event_id": "E03",
+      "title": "Đưa lựa chọn sẵn có và tiếp cuộc nói",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S014"
+      ]
+    },
+    {
+      "id": "S016",
+      "event_id": "E04",
+      "title": "Vô ý làm đổ nước, xin lỗi và hỏi cách dọn",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S017",
+      "event_id": "E04",
+      "title": "Chủ nhà tưởng mình không thích món, giải thích lý do thật",
+      "branch": "misunderstanding",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S018",
+      "event_id": "E04",
+      "title": "Nhận đề nghị giúp dọn sau bữa, hỏi phần cần làm",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S019",
+      "event_id": "E04",
+      "title": "Chủ nhà không cần mình giúp, cảm ơn rồi trở lại chuyện",
+      "branch": "declined",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S020",
+      "event_id": "E04",
+      "title": "Kiểm không còn việc cần khắc phục",
+      "branch": "resolved",
+      "origin": "ai_authored",
+      "continues_from": [
+        "S016"
+      ]
+    },
+    {
+      "id": "S021",
+      "event_id": "E05",
+      "title": "Nói giờ phải về trước khi đứng lên",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S022",
+      "event_id": "E05",
+      "title": "Cảm ơn một điều cụ thể trong buổi gặp",
+      "branch": "routine",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S023",
+      "event_id": "E05",
+      "title": "Chủ nhà đề nghị ở thêm, nhắc lịch sau và khéo từ chối",
+      "branch": "conditional",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S024",
+      "event_id": "E05",
+      "title": "Gặp lại, nhắc món hoặc chuyện hai người cùng thích",
+      "branch": "follow_up",
+      "origin": "ai_authored"
+    },
+    {
+      "id": "S025",
+      "event_id": "E05",
+      "title": "Mời đáp lại nhà mình ở dịp phù hợp",
+      "branch": "accepted",
+      "origin": "ai_authored"
+    }
+  ],
+  "coverage_note": "Thăm nhà/đón khách, không thành bài phép tắc cứng hoặc tổ chức tiệc T-30.",
+  "cross_stage_refs": [
+    "T-30",
+    "T-18"
+  ],
+  "source_refs": [],
+  "source_findings": [],
+  "status": "authored_needs_root_review",
+  "worker": "daily"
+}
