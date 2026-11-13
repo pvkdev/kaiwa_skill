@@ -1,6 +1,8 @@
 # Kế hoạch bổ sung Live AI Challenge vào skill biên soạn chặng
 
-Ngày: 2026-11-13. Trạng thái: **đề xuất để duyệt, chưa sửa skill hoặc Harumi**.
+Ngày: 2026-11-13. Trạng thái: **thiết kế challenge để duyệt; phần free talk đã bổ sung vào skill/hợp đồng V3.2. Chưa sửa Harumi**.
+
+Người dùng chốt bổ sung: free talk cuối chặng phải có sẵn tình huống/context tổng hợp kiến thức trong chặng. **Giới hạn 1.000 ký tự chỉ dành cho tình huống user tự nhập trong app, không áp cho challenge hoặc free talk của lộ trình do tác giả biên soạn.** Harumi sẽ tích hợp luồng nội dung lộ trình phù hợp; không thiết kế nội dung quanh giới hạn nhập tay.
 
 Giữ lộ trình V5 hiện hành: **289 chặng, Sơ 80 / Trung 145 / Thượng 64**. Không thêm chặng cho đủ 300. Challenge là nội dung bên trong chặng, không phải chặng mới hoặc bài kiểm tra.
 
@@ -11,7 +13,7 @@ Skill cần bổ sung loại node `live_challenge`, xuất **hai phần nội du
 1. **Phần người học:** bối cảnh, vai, việc cần trao đổi, gợi ý các bước và kiến thức/cách nói có thể dùng.
 2. **Phần AI:** tình huống nhập vai, thông tin của nhân vật, cách phản ứng và nhánh diễn biến để người học thực sự phải hỏi, giải thích, xác nhận, thương lượng…
 
-Một chặng có một hoặc vài challenge phù hợp, xen sau những cụm kiến thức và tình huống liên quan. Không ấn định số lượng giống nhau cho mọi chặng. Giữ node **free talk cuối chặng** như một lựa chọn riêng.
+Một chặng có một hoặc vài challenge phù hợp, xen sau những cụm kiến thức và tình huống liên quan. Không ấn định số lượng giống nhau cho mọi chặng. Giữ node **free talk cuối chặng** như một lựa chọn riêng. Skill phải soạn cả tình huống free talk và context học đầy đủ, không chỉ tên topic hoặc danh sách con trỏ.
 
 Mạch học gợi ý:
 
@@ -41,7 +43,7 @@ Vì vậy skill có thể xuất text để gắn đúng chỗ tình huống hi�
 - `Shared/KaiwaModerationService.cs:91` kiểm độ dài theo runtime settings và có thể từ chối nội dung quá dài. `Shared/KaiwaPartTreeResolver.cs:518` dùng lại text đã được moderation xác nhận; đường fallback gọi `SanitizeFreeText`, có khả năng cắt theo giới hạn node. Không được giả định mọi đường đều cắt, hoặc mọi đường đều từ chối như nhau.
 - `Shared/KaiwaPromptComposer.cs:35` kiểm độ dài prompt learner sau ghép. Độ dài ở đây là chuỗi .NET/UTF-16, **không phải số token**.
 
-Thiết kế exporter phải kiểm cả giới hạn trường tình huống và ngân sách prompt tổng, theo cấu hình mục tiêu. Không cắt âm thầm phần cuối. Giới hạn 1000 chỉ là profile tương thích với mẫu/seed hiện đã đọc, không phải sự thật đã xác minh trong production.
+Đây là quan sát về **luồng user nhập tay hiện có**, không phải trần biên soạn lộ trình. Không cắt/rút kiến thức để vừa trường này. Khi tích hợp nội dung lộ trình, app cần cách nạp riêng và ngân sách context phù hợp; giữ bản đầy đủ, không cắt âm thầm. Chưa xác minh config DB production.
 
 ### Prompt gốc đặt một số ranh giới hữu ích
 
@@ -197,9 +199,9 @@ Brief và AI prompt phục vụ hai đối tượng; không dán toàn bộ brie
 
 ## 7. Cách dùng với Harumi hiện có
 
-Profile tương thích đầu tiên: xuất một `ai-situation.txt` đủ ngắn cho cấu hình customize mục tiêu. Phần learner brief app hiển thị riêng.
+Nội dung lộ trình dùng **luồng do tác giả chuẩn bị**, tách với tình huống user nhập tay. Skill xuất đầy đủ tình huống challenge, brief cho người học và tình huống/context free talk. Không áp trần 1.000 ký tự hoặc bắt rút gọn để chạy qua form hiện tại.
 
-Luồng adapter dùng helper hiện có, về ý tưởng:
+Helper hiện có minh họa vị trí tình huống đi vào prompt; đây **không phải hợp đồng import cuối cùng cho lộ trình**:
 
 ```text
 answers = buildScenarioLaunchAnswers(activeLearnerConfig, "customize", {
@@ -214,22 +216,23 @@ startCall({ characterId: nhân vật phù hợp, quickStart: false, answers, ...
 - Không truyền prompt tự do trực tiếp thành `systemInstruction`, không bịa part `challengePrompt` mà config chưa khai báo.
 - Lượt mới không dùng `resume_last`, `reuse_recent_setup` hoặc `continueFromSummaryId` của bài khác. Nếu tiếp tục đúng một challenge thì cần giữ định danh/revision/variant; cơ chế ràng buộc này là đề xuất tích hợp sau, chưa có trường dedicated trong request hiện đã kiểm.
 - Chọn nhân vật có vai phù hợp. Chưa thể khẳng định thêm text “bạn là nhân viên ga” sẽ luôn thắng quan hệ/mô tả của một nhân vật người yêu hoặc sếp.
-- Kiểm chuỗi gốc, chuỗi sau chuẩn hóa và prompt ghép theo chính sách learner. Nếu không đủ chỗ: rút gọn có biên tập, tách nhiệm vụ hoặc đề xuất thay đổi hợp đồng app; không dùng quyền admin để lách giới hạn learner.
-- Không đưa toàn bộ hàng chục hội thoại của chặng vào ô 1000 ký tự. Challenge chỉ cần phần ngữ cảnh đã tuyển chọn cho nhiệm vụ; kho đầy đủ vẫn được giữ để tra cứu.
+- App sẽ phân biệt nội dung lộ trình đã biên soạn và text user tự nhập; không lấy quyền admin làm cách phát nội dung cho learner. Điều chỉnh giới hạn/adapter ở Harumi là phần tích hợp riêng.
+- Challenge dùng ngữ cảnh phù hợp nhiệm vụ; free talk có phần tổng hợp và tài liệu toàn chặng. Giữ hai mục đích này, không rút cả hai thành một prompt ngắn chung.
+- Kiểm ngân sách context thực tế khi tích hợp model/vận chuyển; nếu cần chọn lọc hoặc chia gói, giữ bản đầy đủ và ghi rõ lựa chọn. Không coi 1.000 ký tự là quy tắc tác giả hoặc tiêu chí nghiệm thu nội dung.
 
-Nếu cần nội dung dài hơn hoặc tự động chọn nhân vật/đồng bộ brief–prompt, có thể thiết kế adapter nội dung khóa học phía Harumi ở bước riêng. Chưa đề xuất tên bảng/endpoint mới hoặc buộc app thay engine trong lượt này.
+Thiết kế adapter nội dung khóa học phía Harumi ở bước riêng, hỗ trợ context lộ trình và đồng bộ brief–prompt. Chưa đề xuất tên bảng/endpoint mới hoặc sửa engine trong lượt cập nhật skill này.
 
 ## 8. Những phần skill cần sửa sau khi duyệt
 
 Trong `.agents/skills/kaiwa-stage-content/`:
 
 1. **`SKILL.md`:** thêm bước thiết kế challenge sau cụm bài phù hợp; sửa bước 10 từ “một Live AI” thành “các challenge theo nhu cầu + một free talk cuối chặng”. Giữ toàn bộ quy tắc Speak Japanese, shadowing, gối đầu, nguồn và học tự do.
-2. **`references/content-contract.md`:** thêm `live_challenge`, hợp đồng hai phần, variant, placement, provenance; phân biệt với `live_context` hiện có.
+2. **`references/content-contract.md`:** thêm `live_challenge`, hợp đồng hai phần, variant, placement, provenance; phân biệt với `live_context` hiện có. Phần free talk đã nâng V3.2: `free_talk` do tác giả soạn + `free-talk-situation.md` kèm tài liệu toàn chặng.
 3. **Thêm `references/live-challenges.md`:** cách xây nhiệm vụ tổng hợp, khoảng trống thông tin, độ khó, phản ứng, hướng dẫn tương thích Harumi và ví dụ.
 4. **`references/progression.md`:** challenge sử dụng kiến thức hai bài trước nhưng không tự tính thành một bài kiến thức mới làm trượt cửa sổ ôn. Kết quả ôn phải chỉ tới nội dung thực tế và revision đã đọc.
 5. **`references/editorial-workflow.md` và `situation-coverage.md`:** đưa việc chọn/tổng hợp nhiệm vụ vào sau bản đồ tình huống; ghi phần được luyện qua challenge và phần có chủ ý chỉ giữ bài mẫu. Không ép phủ 100%.
 6. **`references/checkpoint.md`:** checkpoint tới từng challenge/variant; sửa một bài đánh dấu các challenge phụ thuộc cần đọc lại, không sinh lại toàn chặng.
-7. **`scripts/stage_work.py`:** nhận type mới; kiểm liên kết/ID/placement; xuất hai phần; phân loại node trong learning-map; kiểm ngân sách của profile mục tiêu. Giữ migration cho bản nội dung cũ.
+7. **`scripts/stage_work.py`:** nhận type challenge mới; kiểm liên kết/ID/placement; xuất hai phần; phân loại node trong learning-map. Phần free talk V3.2 đã có kiểm trường/thứ tự cuối chặng và exporter; vẫn đọc V3.0/V3.1. Không có trần 1.000 ký tự cho dữ liệu lộ trình.
 
 **Điểm phải sửa đặc biệt:** hợp đồng hiện bắt `live-context.md` ghép mọi node khác. Khi có nhiều challenge, không được ghép mọi AI instruction vào cùng prompt free talk, gây xung đột vai và nhiệm vụ. Kho context đầy đủ có thể chứa kiến thức, từ, ngữ pháp, mẫu luyện và mô tả challenge dưới dạng tài liệu; các chỉ dẫn nhập vai executable phải tách riêng. Prompt một challenge chỉ chọn một cảnh/variant, không nạp lệnh của challenge khác.
 
@@ -254,7 +257,7 @@ Kiểm pilot:
 - Brief đủ rõ nhưng không lộ hết đáp án; user có việc để tự động não và hỏi tiếp.
 - AI nhận đủ thông tin, phản ứng được với cách nói khác và nhánh đã chọn; không giả làm nhiều người.
 - Câu gợi ý và yêu cầu ngôn ngữ đúng chất liệu đã học; nhiệm vụ giải được mà không bắt thuộc mẫu.
-- Hai bản xuất đồng nhất, không quá giới hạn mục tiêu; không lỗi khi tiếp tục cùng bài hoặc bắt đầu bài khác.
+- Hai bản xuất đồng nhất và không bị cắt; luồng tích hợp lộ trình đáp ứng ngân sách context thực tế, không áp giới hạn nhập tay 1.000 ký tự. Không lỗi khi tiếp tục cùng bài hoặc bắt đầu bài khác.
 - Thử người học hỏi lại, bí từ, hiểu nhầm, đề xuất khác và xin dừng. Không có đạt/trượt hoặc khóa bài.
 - Offline có thể kiểm nội dung/hợp đồng trước; khả năng nói thực tế chỉ kết luận sau khi thử Live với cấu hình active phù hợp.
 
@@ -273,4 +276,4 @@ Theo dõi ngắn gọn: chặng đã có blueprint/challenge đã duyệt, sự 
 
 ## Phạm vi hoàn thành của lượt lập plan này
 
-Đã điều tra code/config liên quan và viết đề xuất kèm ví dụ hai đầu ra. **Chưa sửa skill, chưa tạo nội dung courseware, chưa đổi V5, chưa sửa Harumi hoặc gọi API Live.** Các bước triển khai nằm ở mục 8–9 để duyệt trước.
+Đã điều tra code/config liên quan và viết đề xuất kèm ví dụ hai đầu ra. Sau góp ý của người dùng, đã bổ sung free talk biên soạn sẵn vào skill, hợp đồng V3.2 và helper xuất dữ liệu; bỏ giới hạn nhập tay khỏi thiết kế nội dung lộ trình. Hợp đồng/helper challenge vẫn là bước tiếp theo, chưa triển khai. **Chưa tạo nội dung courseware, chưa đổi V5, chưa sửa Harumi hoặc gọi API Live.**
