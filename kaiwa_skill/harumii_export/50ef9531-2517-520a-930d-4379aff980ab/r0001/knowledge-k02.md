@@ -1,0 +1,15 @@
+## Nói rõ việc trước khi chờ câu trả lời
+
+# Nhờ một việc cụ thể
+
+Trước khi hỏi, nói ngắn lý do và việc muốn nhờ: vật gì, ở đâu, đến lúc nào. 「ちょっとお願いがあるんだけど」 mở lời thân mật, nhưng sau đó vẫn phải nêu việc. Để người kia có chỗ từ chối, có thể thêm 「無理なら言ってね」. Nếu họ hỏi thời hạn, trả lời đúng thời hạn; đừng thay bằng “càng sớm càng tốt”.
+
+ちょっとお願いがあるんだけど、明日の午後、この箱を運ぶのを手伝ってもらえる？
+
+Tớ muốn nhờ một việc: chiều mai cậu giúp tớ chuyển những thùng này được không?
+
+無理なら言ってね。小さい箱だけでも助かるよ。
+
+Nếu không tiện thì cứ nói nhé. Chỉ giúp mấy thùng nhỏ cũng quý rồi.
+
+Khi người kia nhận một phần, nhắc lại phần ấy và tự nhận phần còn lại. 「助かる」 bày tỏ rằng sự giúp đỡ hữu ích; nó không thay cho xác nhận công việc.
