@@ -57,6 +57,13 @@ Thứ tự node là đường đi trên bản đồ học của app, nên sắp 
 
 Tận dụng nội dung sâu của sách nhưng xây lại mạch học theo chủ đề. Khi trộn nguồn, giữ nhất quán nhân vật, vai, mức thân mật, thời điểm, thông tin đã biết và mục đích. Không chắp nửa đoạn lễ phép với nửa đoạn suồng sã mà không giải thích sự đổi quan hệ.
 
+## Tiếng Việt trong bài học
+
+1. Đọc riêng phần tiếng Việt theo đúng thứ tự người học thấy, từ tên bài tới ví dụ, lời hai vai và gợi ý Live. Tiêu đề cho biết người học sẽ nói gì hoặc làm gì. Viết như đang hướng dẫn một người trong cảnh cụ thể. Ví dụ, khi hai người đứng trước bàn nguyên liệu, có thể viết “Bạn có thể hỏi người bên cạnh xem hai người có dùng chung nguyên liệu không.” Tránh lối diễn đạt như “mở một cuộc nói có chỗ bám”, mã node và lời bàn nội bộ về thiết kế khóa.
+2. Đọc lại từng cặp Nhật–Việt trong cả cuộc thoại. Kiểm ai nói với ai, hành động nào xảy ra trước, lời mời có được nhận hay còn để ngỏ. Chọn cách xưng hô nhất quán theo quan hệ, lược đại từ khi tiếng Việt tự nhiên hơn. Chẳng hạn, với 来月、寮を出て、一人暮らしを始めることにしたんです。, “Tôi quyết định tháng tới sẽ dọn ra khỏi ký túc xá để ở riêng” đặt đúng thời điểm chuyển nhà. Sửa nghĩa Việt ngay trong utterance để mọi nơi dùng lại cùng nhận bản sửa. Giữ nguyên lời Nhật trong pack CD.
+
+Rà cả phạm vi chặng, tiêu đề, nội dung kiến thức, bối cảnh, lựa chọn và chỉ dẫn Live. Thay lời như “ở mức Trung” bằng hành động cụ thể, chẳng hạn “hỏi tiếp về điều người kia vừa kể”. Với AI, mô tả độ dài lượt nói, cách hỗ trợ và cách xưng hô. Khi nhân vật thực sự hỏi về trình độ của một lớp học hay kỳ thi JLPT, dịch trung thành theo ngữ cảnh. Nguồn sách và trường phân loại phục vụ tra cứu giữ tên gốc. Compiler chỉ gợi vị trí cần đọc lại; người biên tập quyết định theo nghĩa.
+
 ## Trước khi chốt một chặng
 
 Hội thoại:

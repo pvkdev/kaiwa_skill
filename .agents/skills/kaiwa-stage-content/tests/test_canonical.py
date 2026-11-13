@@ -48,6 +48,18 @@ class CanonicalLifecycle(unittest.TestCase):
         self.assertEqual(result.returncode == 0, ok, result.stdout + result.stderr)
         return json.loads(result.stdout) if result.stdout.startswith("{") else result.stdout + result.stderr
 
+    def test_level_mentions_in_prose_are_reviewed_separately_from_metadata(self):
+        grammar = next(n for n in self.data["nodes"] if n["type"] == "grammar")
+        grammar["data"]["patterns"][0]["jlpt_level"] = "N4"
+        self.data["scope_vi"] = "Ở mức Trung, bắt đầu bằng một câu hỏi."
+        free = next(n for n in self.data["nodes"] if n["type"] == "free_talk")
+        free["data"]["conversation_starters_vi"] = ["Bạn định thi N4 à?"]
+        self.put("harumii-stage.json", self.data)
+        result = self.cli("validate", self.run)
+        self.assertIn("stage.scope_vi", result)
+        self.assertIn("conversation_starters_vi[0]", result)
+        self.assertNotIn("jlpt_level", result)
+
     def test_generate_validate_pause_resume_finalize_and_upgrade(self):
         before = (self.draft / "harumii-stage.json").read_bytes()
         self.cli("validate", self.run)

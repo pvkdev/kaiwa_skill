@@ -151,6 +151,29 @@ def check_audio_packs(repo, data, audit, sources, source_texts):
     return inventory
 
 
+# Editorial hints: course labels in prose can also be legitimate topics of conversation.
+COURSE_LABEL = re.compile(
+    r"\b(?:(?:trình độ|cấp độ|ở cấp|ở mức|người học|lộ trình|chặng|level)\s+"
+    r"(?:sơ|trung|thượng|cao)(?:\s+cấp)?|(?:sơ|trung|thượng) cấp|"
+    r"beginner|intermediate|advanced|JLPT|N[1-5])\b", re.IGNORECASE
+)
+
+
+def level_mentions(value, path="stage", prose=False):
+    if isinstance(value, dict):
+        for key, child in value.items():
+            if key not in {"source_registry", "retired"}:
+                yield from level_mentions(child, f"{path}.{key}",
+                                          key.endswith("_vi") or key in {"body_md", "vi"})
+    elif isinstance(value, list):
+        for index, child in enumerate(value):
+            yield from level_mentions(child, f"{path}[{index}]", prose)
+    elif prose and isinstance(value, str):
+        match = COURSE_LABEL.search(value)
+        if match:
+            yield f"{path}: {match[0]!r} — kiểm tra tên cấp trong lời bài hoặc prompt Live."
+
+
 def compile_stage(draft, repo=None, notes=None):
     """Derive workspace files; `notes` collects non-blocking remarks for the author."""
     repo = (repo or Path(__file__).resolve().parents[4]).resolve()
@@ -163,6 +186,8 @@ def compile_stage(draft, repo=None, notes=None):
     data = load(source)
     exchange = sibling("kaiwa_exchange")
     exchange.validate(data)
+    if notes is not None:
+        notes.extend(level_mentions(data))
     if data["stage_uid"] != wrapper["stage_uid"]:
         raise ValueError("Canonical stage UID mismatch")
     audit = load(draft / "source-map.json")
