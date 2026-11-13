@@ -1,0 +1,23 @@
+## Khi phát hiện đi nhầm: hỏi lại đúng chỗ rồi chốt lại [k03]
+
+# Đi nhầm vẫn có thể tiếp tục cuộc nói
+
+Nhận ra mình đứng sai sân ga không có nghĩa phải nghe lại từ đầu một chỉ dẫn dài. Nói ngắn mình muốn đến đâu và điều đang không khớp. Khi nhân viên sửa, hỏi lại đúng từ hoặc con số chưa rõ, rồi kiểm tra phương án mới.
+
+反対側ですか。
+
+Ở phía đối diện phải không ạ?
+
+Hỏi lại một từ vừa nghe là một cách giữ cuộc nói. Đừng chỉ lặp lại vì muốn bắt chước âm: cần chờ phần giải thích hoặc xác nhận. Nếu bối rối giữa hai con số, nêu cả hai lựa chọn để đối tác biết mình đang cần làm rõ điều gì.
+
+二番線ですか、三番線ですか。
+
+Sân ga số 2 hay số 3 ạ?
+
+Không phải lời chỉ dẫn nào cũng chắc chắn: có người chỉ nói theo trí nhớ hoặc đang đoán. Hãy phân biệt điều đã được xác nhận với điều còn chưa rõ. Nếu người đang hỏi cũng không chắc, có thể nhờ họ chỉ tới nhân viên phù hợp, thay vì tiếp tục đoán theo.
+
+すみません、よく分かりません。もう一度、お願いします。
+
+Xin lỗi, tôi chưa hiểu rõ. Xin hãy nói lại một lần nữa.
+
+Sau khi đã được sửa, dùng cách nhắc lại vừa luyện trong các câu hỏi tuyến: ga nào, sân ga nào, hướng nào. Cuộc thoại tiếp nối bên dưới cho thấy việc nhắc lại giúp nhân viên phát hiện hoặc xác nhận phần hiểu của mình. Giữ tên ga/số sân ga đủ rõ; không cần lặp toàn bộ lời giải thích.
