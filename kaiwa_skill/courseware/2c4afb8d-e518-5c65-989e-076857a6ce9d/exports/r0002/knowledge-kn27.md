@@ -1,9 +1,0 @@
-## Từ câu hỏi về chỗ ngồi đến lời rủ ăn trưa [kn27]
-
-# Làm quen với bạn cùng lớp
-
-Trong đoạn hội thoại đầu tiên của bài 出会い (Gặp gỡ), một sinh viên xin ngồi cạnh người bạn mới rồi hỏi môn này có khó không. Khi biết cả hai đều học năm nhất khoa kinh tế, họ mới hỏi tên nhau. Sau đó, một người hỏi bạn đã hẹn ăn trưa với ai chưa rồi mới rủ ăn cùng.
-
-Hãy nghe cách họ dần nói thân mật hơn. 「名前聞いてもいい？」 nghĩa là “Mình hỏi tên cậu được không?”. Với người lớn tuổi hoặc người chưa thân, bạn có thể tiếp tục dùng cách hỏi lịch sự. Bạn cũng sẽ nghe 「なんか」 (kiểu như) và 「そーお」 (vậy à) trong cuộc trò chuyện giữa hai sinh viên.
-
-Người bạn trong đoạn này nhận lời ăn trưa. Nếu người bạn vừa làm quen đã có hẹn, bạn chỉ cần chào và hẹn gặp lại ở buổi học sau.
