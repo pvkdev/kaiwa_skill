@@ -254,6 +254,18 @@ def compile_stage(draft, repo=None, notes=None):
                     uid = occurrence["utterance_id"]
                     if uid not in spoken or not occurrence["surface"] or occurrence["surface"] not in utterances[uid]["ja"]:
                         raise ValueError("Vocabulary evidence must occur in an actual spoken example: " + term)
+    exchange.check_public_copy(data)
+    # Validate the actual import metadata before a revision can be finalized.
+    # Augment only the in-memory representation. The authored JSON remains untouched.
+    exchange.attach_knowledge_credits(data, audit, inventory)
+    registry = {src["id"]: src for src in data.get("source_registry", [])}
+    for node in data["nodes"]:
+        if node["type"] == "knowledge":
+            for sid in node["data"]["admin_provenance"]["source_refs"]:
+                source = registry[sid]
+                if sid not in source_by_id or source.get("book_id") != source_by_id[sid].get("book_id"):
+                    raise ValueError("Knowledge source does not match the editorial ledger: " + sid)
+    exchange.validate(data)
     write(draft / "audio-index.json", inventory)
     nodes = []
     for node in data["nodes"]:

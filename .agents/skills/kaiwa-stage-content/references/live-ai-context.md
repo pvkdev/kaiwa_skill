@@ -24,7 +24,7 @@ Tác giả phải tổng hợp thực sự theo nội dung chặng, không dùng
 
 ## Hai bản xuất
 
-- `live-context.md`: kho context đầy đủ để tra cứu, gồm nội dung node, sổ gối đầu và sổ nguồn.
+- `live-context.md` là hồ sơ biên tập có sổ nguồn. Khi tích hợp Live, dùng context học đã render trong gói export. Viết prompt theo vai và tình huống để AI trò chuyện trực tiếp. Đặt tên sách, mã tài liệu và thông tin CD vào metadata quản trị, tránh để AI đọc những nhãn này cho người học.
 - `free-talk-situation.md`: tình huống đã soạn + phần giới thiệu/gợi ý tùy chọn + toàn bộ kiến thức/từ/ngữ pháp/tình huống/shadowing trong chặng để app sử dụng làm context free talk. Không nạp đệ quy toàn kho 27 sách hoặc lịch sử chặng trước.
 
 Hai file là dẫn xuất từ JSON/MD gốc; không sửa tay. Khi cập nhật kiến thức hoặc hội thoại, phải xuất lại và đọc lại phần tổng hợp để tránh prompt cũ mô tả sai bài mới. Bản đã chốt giữ snapshot/revision như nội dung chặng.

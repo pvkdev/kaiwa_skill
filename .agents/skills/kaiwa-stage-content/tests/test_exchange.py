@@ -22,6 +22,54 @@ class ExchangeRegression(unittest.TestCase):
     def node(self, kind):
         return next(node for node in self.data["nodes"] if node["type"] == kind)
 
+    def test_public_copy_blocks_source_labels_across_student_surfaces(self):
+        self.data["source_registry"] = [{"id": "textbook", "kind": "book", "book_id": "B27",
+                                         "title": "聞いて覚える話し方", "locator": "Bài 1"}]
+        EXCHANGE.check_public_copy(self.data)
+        for owner, key, text in [
+            (self.node("knowledge")["data"], "body_md", "Trong skit B27, câu mở là hỏi chỗ ngồi."),
+            (self.data["lessons"][0], "title_vi", "Luyện nghe với Speak Japanese"),
+            (self.node("live_challenge")["data"]["variants"][0], "learner_addendum_vi", "Nghe track 12."),
+            (self.data["utterances"][0], "ja", "聞いて覚える話し方"),
+        ]:
+            with self.subTest(key=key):
+                old = owner[key]
+                owner[key] = text
+                with self.assertRaisesRegex(ValueError, "Learner copy"):
+                    EXCHANGE.check_public_copy(self.data)
+                owner[key] = old
+
+    def test_new_pack_needs_knowledge_metadata_but_legacy_json_still_valid(self):
+        lesson = self.node("knowledge")["data"]
+        del lesson["admin_provenance"]
+        EXCHANGE.validate(self.data)
+        with tempfile.TemporaryDirectory() as temp:
+            dest = Path(temp) / "out"
+            with self.assertRaisesRegex(ValueError, "admin_provenance"):
+                EXCHANGE.pack(self.data, dest)
+            self.assertFalse(dest.exists())
+
+    def test_knowledge_cd_is_searchable_and_private_after_packing(self):
+        src = {"id": "a", "kind": "book", "book_id": "B11", "title": "Tên sách thử", "locator": "Bài 3"}
+        self.data["source_registry"] = [src]
+        self.data["utterances"][0]["source_refs"] = ["a"]
+        audit = {"nodes": {"k01": {"authorship": "source_adaptation", "source_refs": ["a"]}}}
+        tracks = [{"disc": "2", "track": t, "locator": "Phụ lục trang 10"} for t in ["4", "5"]]
+        pack = {"pack_id": "B11/example", "edition": "Ấn bản thử", "shadowing_node_id": "sh01",
+                "utterance_ids": ["u01"], "tracks": tracks}
+        EXCHANGE.attach_knowledge_credits(self.data, audit, [pack])
+        with tempfile.TemporaryDirectory() as temp:
+            dest = Path(temp) / "out"
+            EXCHANGE.pack(self.data, dest)
+            exported = EXCHANGE.verify(dest)
+            knowledge = next(n for n in exported["nodes"] if n["type"] == "knowledge")
+            cds = knowledge["data"]["admin_provenance"]["cd_refs"]
+            self.assertEqual([(c["source_ref"], c["disc"], c["track"]) for c in cds], [("a", "2", "4"), ("a", "2", "5")])
+            self.assertTrue(all("Tên sách thử" not in p.read_text(encoding="utf-8") for p in dest.glob("*.md")))
+        self.node("knowledge")["data"]["admin_provenance"]["cd_refs"][0]["pack_id"] = "B27/wrong"
+        with self.assertRaisesRegex(ValueError, "CD pack and book disagree"):
+            EXCHANGE.validate(self.data)
+
     def test_full_seven_node_example(self):
         EXCHANGE.validate(self.data)
         self.assertEqual(len({node["type"] for node in self.data["nodes"]}), 7)

@@ -60,9 +60,15 @@ def schemas():
         "retired": obj({"kind": {"enum": ["node", "utterance"]}, "id": ID,
                         "reason_vi": TEXT, "replaced_by": ids}),
     }
+    # Private import metadata. Historical exports may omit it; every newly packed lesson needs it.
+    credit = obj({"authorship": {"enum": ["source_quote", "source_adaptation", "original_extension"]},
+                  "source_refs": ids, "cd_refs": array(obj({
+                      "source_ref": ID, "disc": TEXT, "track": TEXT, "locator": TEXT,
+                      "pack_id": TEXT, "edition": TEXT
+                  }, ["source_ref", "disc", "track", "locator"]), unique=True)})
     payloads = {
         "knowledge": obj({"body_md": TEXT, "utterance_ids": ids,
-                          "source_family": {"enum": ["general", "speak_japanese"]},
+                          "admin_provenance": credit, "source_family": {"enum": ["general", "speak_japanese"]},
                           "video_status": {"enum": ["none", "planned"]}, "practice_node_id": ID},
                          ["body_md", "utterance_ids", "source_family", "video_status"]),
         "vocabulary": obj({"terms_ja": array(TEXT, 1, True)}),
@@ -256,6 +262,9 @@ def validate(data):
             if utterance["authorship"] != "original_extension" and not utterance["source_refs"]:
                 raise ValueError("Source quote/adaptation needs actual source reference")
             node_refs(utterance.get("grammar_node_ids", []), {"grammar"})
+    for node in nodes:
+        if node["type"] == "knowledge" and "admin_provenance" in node["data"]:
+            validate_credit(node, data.get("source_registry", []))
     for link in data["review_links"]:
         node_refs(link["to_node_ids"], material_types)
         if link["from_stage_uid"] == data["stage_uid"]:
@@ -276,6 +285,98 @@ def validate(data):
             raise ValueError("Invalid retired/replacement identity")
 
 
+def validate_credit(node, registry):
+    credit = node["data"]["admin_provenance"]
+    sources = {source["id"]: source for source in registry}
+    refs = credit["source_refs"]
+    if credit["authorship"] != "original_extension" and not refs:
+        raise ValueError("Knowledge source material needs a source: " + node["id"])
+    for sid in refs:
+        source = sources.get(sid)
+        if source is None:
+            raise ValueError("Unknown knowledge source: " + sid)
+        if source["kind"] == "book" and (not re.fullmatch(r"B[0-9]{2}", source.get("book_id", "")) or
+                source["title"].strip().casefold() in {sid.casefold(), source["book_id"].casefold()}):
+            raise ValueError("Knowledge book source needs a book ID and full title: " + sid)
+    for cd in credit["cd_refs"]:
+        if not isinstance(cd, dict) or "source_ref" not in cd:
+            raise ValueError("CD lookup needs a source_ref for its book: " + node["id"])
+        sid = cd["source_ref"]
+        if sid not in refs or sources[sid]["kind"] != "book":
+            raise ValueError("CD must resolve to its book through the lesson source_refs: " + sid)
+        if "pack_id" in cd and cd["pack_id"].split("/")[0] != sources[sid]["book_id"]:
+            raise ValueError("CD pack and book disagree: " + cd["pack_id"])
+
+
+def attach_knowledge_credits(data, audit, inventory):
+    """Build import-only credits from the same revision's node audit and checked CD inventory."""
+    utterances = {u["id"]: u for u in data["utterances"]}
+    registry = {s["id"]: s for s in data.get("source_registry", [])}
+    practice_links = {n["id"]: n["data"]["knowledge_node_ids"] for n in data["nodes"] if n["type"] == "shadowing"}
+    for node in data["nodes"]:
+        if node["type"] != "knowledge":
+            continue
+        content = node["data"]
+        entry = audit["nodes"][node["id"]]
+        refs = list(entry["source_refs"])
+        examples = set(content["utterance_ids"])
+        for uid in content["utterance_ids"]:
+            for sid in utterances[uid].get("source_refs", []):
+                if sid not in refs:
+                    refs.append(sid)
+        cds = list(entry.get("cd_refs", []))  # Documented audio outside a selected practice pack.
+        for pack in inventory:
+            practice_id = pack["shadowing_node_id"]
+            if (examples.isdisjoint(pack["utterance_ids"]) and practice_id != content.get("practice_node_id")
+                    and node["id"] not in practice_links.get(practice_id, [])):
+                continue
+            book = pack["pack_id"].split("/")[0]
+            used = [sid for uid in pack["utterance_ids"] for sid in utterances[uid].get("source_refs", [])]
+            sid = next((r for r in used if registry.get(r, {}).get("book_id") == book), None)
+            if not sid:
+                raise ValueError("Missing book in source_registry for CD pack " + pack["pack_id"])
+            if sid not in refs:
+                refs.append(sid)
+            for track in pack["tracks"]:
+                cd = {k: track[k] for k in ("disc", "track", "locator")}
+                cd.update(source_ref=sid, pack_id=pack["pack_id"], edition=pack["edition"])
+                if cd not in cds:
+                    cds.append(cd)
+        content["admin_provenance"] = {"authorship": entry["authorship"], "source_refs": refs, "cd_refs": cds}
+        validate_credit(node, registry.values())
+
+
+CITATION = re.compile(
+    r"\b(?:B(?:0[1-9]|1\d|2[0-7])|skit\s+[①-⑳0-9]|Speak Japanese|Nama Ch[uū]+kei|"
+    r"Minna no Nihongo|Bunpou|bài nguồn|sách gốc|theo giáo trình|trích từ sách|skit nguồn|"
+    r"(?:trong|theo) (?:skit|sách|giáo trình) (?:B?\d+|shadowing|nama|nameraka)|"
+    r"(?:bộ|sách|giáo trình) (?:5500|必須700|shadowing|なめらか)|"
+    r"(?:CD|track)\s*[-:#]?\s*\d+)\b|https?://", re.I
+)
+
+
+def check_public_copy(data):
+    """Look for editorial citations only in text displayed to learners."""
+    titles = [s["title"].casefold() for s in data.get("source_registry", []) if len(s["title"].strip()) >= 4]
+    def visit(value, path, public=False):
+        if isinstance(value, dict):
+            for key, child in value.items():
+                if key in {"source_registry", "admin_provenance", "retired", "ai_situation_vi", "ai_addendum_vi"}:
+                    continue
+                visible = key.endswith("_vi") or key in {"vi", "ja", "body_md", "terms_ja", "name_ja", "outcome"}
+                visit(child, f"{path}.{key}", visible)
+        elif isinstance(value, list):
+            for index, child in enumerate(value):
+                visit(child, f"{path}[{index}]", public)
+        elif public and isinstance(value, str):
+            prose = re.sub(r"\{\{utterance:[\w-]+\}\}", "", value)
+            match = CITATION.search(prose)
+            title = next((t for t in titles if t in prose.casefold()), None)
+            if match or title:
+                raise ValueError(f"Learner copy contains a source citation at {path}: {match[0] if match else title}")
+    visit(data, "stage")
+
+
 def dumps(data):
     return json.dumps(data, ensure_ascii=False, indent=2) + "\n"
 
@@ -286,14 +387,14 @@ def material_text(data, node_ids):
     def sentence(uid):
         value = utterances[uid]
         return value["ja"] + "\n\n" + value["vi"]
-    reference_note = "*Mẫu tham khảo từ nguồn; có thể có cấu trúc ngoài phần luyện chủ động của chặng.*"
+    reference_note = "*Câu luyện nghe thêm.*"
     chunks = []
     for nid in node_ids:
         node = nodes[nid]
         content = node["data"]
-        chunks.append("## " + node["title_vi"] + " [" + nid + "]")
+        chunks.append("## " + node["title_vi"])
         if node.get("learning_scope") == "source_reference":
-            chunks.append("*Phần tham khảo từ nguồn; không mặc định mọi cấu trúc ở đây đã thuộc phần luyện chủ động.*")
+            chunks.append("*Phần luyện nghe thêm.*")
         if node["type"] == "knowledge":
             chunks.append(re.sub(r"\{\{utterance:([a-zA-Z0-9_-]+)\}\}",
                                  lambda match: sentence(match[1]), content["body_md"]))
@@ -301,7 +402,7 @@ def material_text(data, node_ids):
             if node["type"] == "vocabulary":
                 chunks.append("、".join(content["terms_ja"]))
             elif node["type"] == "grammar":
-                chunks.append("\n".join("- " + p["jlpt_level"] + " · " + p["name_ja"] for p in content["patterns"]))
+                chunks.append("\n".join("- " + p["name_ja"] for p in content["patterns"]))
             elif node["type"] == "situation":
                 chunks.append(content["setting_vi"] + "\n\nMục đích: " + content["goal_vi"])
                 roles = {s["id"]: s["label_vi"] for s in content["speakers"]}
@@ -333,6 +434,11 @@ def material_text(data, node_ids):
 
 def pack(data, output):
     validate(data)
+    if data["kind"] == "stage":
+        check_public_copy(data)
+        for node in data["nodes"]:
+            if node["type"] == "knowledge" and "admin_provenance" not in node["data"]:
+                raise ValueError("New exports need admin_provenance for every knowledge lesson: " + node["id"])
     # A new directory prevents overwriting a reviewed or interrupted export.
     output.mkdir(parents=True, exist_ok=False)
     name = data["kind"] + ".json"
@@ -343,7 +449,7 @@ def pack(data, output):
             if node["type"] not in {"live_challenge", "free_talk"}:
                 preview.append(material_text(data, [node["id"]]))
             else:
-                preview.append("## " + node["title_vi"] + " [" + node["id"] + "]")
+                preview.append("## " + node["title_vi"])
                 if node["type"] == "free_talk":
                     preview.append(node["data"]["learner_intro_vi"])
                 else:
@@ -446,6 +552,10 @@ def main():
         if args.command == "pack":
             if not args.output:
                 raise ValueError("--output required; directory must not already exist")
+            if data["kind"] == "stage" and args.file.name == "harumii-stage.json":
+                def sidecar(name):
+                    return json.loads((args.file.parent / name).read_text(encoding="utf-8-sig"))
+                attach_knowledge_credits(data, sidecar("source-map.json"), sidecar("audio-index.json"))
             print(dumps(pack(data, args.output)))
     print("OK")
 

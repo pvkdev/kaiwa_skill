@@ -924,7 +924,7 @@
           '<div class="utterance" data-utterance="' +
           esc(uid) +
           '">' +
-          (u.learning_scope === "source_reference"
+          (state.technical && u.learning_scope === "source_reference"
             ? '<div class="note">Câu tham khảo từ sách</div>'
             : "") +
           '<div class="jp" lang="ja">' +
@@ -1209,7 +1209,7 @@
           ]),
         ]);
         section.append(title);
-        if (node.learning_scope === "source_reference") {
+        if (state.technical && node.learning_scope === "source_reference") {
           section.append(
             el("p", {
               class: "note",
@@ -1244,14 +1244,11 @@
           section.append(
             ...c.patterns.map((p) =>
               el("div", { class: "pattern" }, [
-                el("span", { class: "level-tag", text: p.jlpt_level }),
-                el("div", {}, [
-                  el("div", { class: "jp", lang: "ja", text: p.name_ja }),
-                  el("div", {
-                    class: "note",
-                    text: p.catalog === "minna" ? "Minna no Nihongo" : "Bunpou",
-                  }),
-                ]),
+                el("div", { class: "jp", lang: "ja", text: p.name_ja }),
+                ...(state.technical ? [
+                  el("span", { class: "level-tag", text: p.jlpt_level }),
+                  el("span", { class: "note", text: p.catalog }),
+                ] : []),
               ]),
             ),
           );

@@ -119,4 +119,4 @@ class CanonicalLifecycle(unittest.TestCase):
         spec = importlib.util.spec_from_file_location("inline_exchange", SCRIPT.with_name("kaiwa_exchange.py"))
         exchange = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(exchange)
-        self.assertIn("Mẫu tham khảo từ nguồn", exchange.material_text(self.data, [shadow["id"]]))
+        self.assertIn("Câu luyện nghe thêm", exchange.material_text(self.data, [shadow["id"]]))

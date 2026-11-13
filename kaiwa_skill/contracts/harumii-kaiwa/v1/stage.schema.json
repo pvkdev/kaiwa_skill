@@ -542,6 +542,79 @@
                   "minItems": 0,
                   "uniqueItems": true
                 },
+                "admin_provenance": {
+                  "type": "object",
+                  "properties": {
+                    "authorship": {
+                      "enum": [
+                        "source_quote",
+                        "source_adaptation",
+                        "original_extension"
+                      ]
+                    },
+                    "source_refs": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "cd_refs": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "source_ref": {
+                            "type": "string",
+                            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                          },
+                          "disc": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          },
+                          "track": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          },
+                          "locator": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          },
+                          "pack_id": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          },
+                          "edition": {
+                            "type": "string",
+                            "minLength": 1,
+                            "pattern": "\\S"
+                          }
+                        },
+                        "required": [
+                          "source_ref",
+                          "disc",
+                          "track",
+                          "locator"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "authorship",
+                    "source_refs",
+                    "cd_refs"
+                  ],
+                  "additionalProperties": false
+                },
                 "source_family": {
                   "enum": [
                     "general",

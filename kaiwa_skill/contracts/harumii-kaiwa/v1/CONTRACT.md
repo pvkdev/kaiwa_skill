@@ -9,7 +9,7 @@ Nguồn chuẩn ở repo skill: `kaiwa_skill/contracts/harumii-kaiwa/v1/`. Schem
 - **Catalog** mô tả thứ tự/chặng/cụm/cấp độ của lộ trình; không chứng minh chặng đã có nội dung.
 - **Stage** là một snapshot nội dung đầy đủ của **một chặng**, gồm nhiều node có thứ tự, các câu Nhật–Việt dùng chung và các liên kết. Import từng chặng, không phải đưa toàn bộ 289 chặng vào một transaction.
 - **Manifest** có SHA-256 của các file trong artifact; entrypoint là `catalog.json` hoặc `stage.json`. DB importer đọc entrypoint; các MD là preview/context dẫn xuất, không là dữ liệu gốc thứ hai.
-- Sổ nguồn, CD/track, sổ đọc, checkpoint, đường dẫn PDF và metadata biên tập giữ trong repo skill; không nằm trong payload học của app. **Không yêu cầu tìm hoặc nhập CD/audio sách.** Nếu bản nguồn clean có danh mục CD thì vẫn giữ nguyên nguồn, không xóa vì app dùng TTS.
+- JSON import có nguồn và chỉ dẫn tra CD dành riêng cho admin. Sổ biên tập, checkpoint, script gốc và file âm thanh nằm ngoài gói import.
 
 Thư mục xuất dự kiến:
 
@@ -67,6 +67,12 @@ Một utterance là một đơn vị nói tự nhiên để phát/check; tránh 
 ## 5. Bảy loại node
 
 ### Knowledge
+
+Mỗi node kiến thức trong gói xuất mới có `data.admin_provenance`. Trường này chỉ phục vụ tra cứu trong admin/import, tách khỏi mọi chữ người học thấy và ngữ liệu Live. Đọc snapshot trước thay đổi vẫn được khi trường vắng mặt.
+
+- `authorship` mô tả phần giảng. `source_refs` liệt kê nguồn của bài và ví dụ; tra từng ID trong `source_registry` để lấy loại, tên sách đầy đủ, mã sách và vị trí. Bài hoàn toàn tự soạn dùng `original_extension` và hai mảng rỗng.
+- `cd_refs` chứa các mục gồm `source_ref` của đúng sách, `disc`, `track` và `locator`; có thêm `pack_id` và `edition` với pack đã kiểm kê. Giá trị `unknown` ghi nhận phần chưa xác định trong một CD có bằng chứng. Mảng rỗng nghĩa là chưa có chỉ dẫn CD áp dụng cho bài này.
+- API cho người học chỉ chọn trường cần hiển thị. Không gửi nguyên snapshot quản trị vào màn hình học hay prompt Live. Chế độ kỹ thuật của HTML preview dành cho chủ dự án xem JSON.
 
 `body_md` là bài kiến thức Markdown tiếng Việt. Chèn ví dụ qua token `{{utterance:u01}}`; renderer thay token bằng câu Nhật + nghĩa Việt và có thể gắn nút TTS/furigana. `utterance_ids` khai báo đúng các token dùng trong bài. Không cài HTML tùy ý để nhúng media; app render Markdown an toàn. Tên mẫu/từ Nhật trong diễn giải vẫn có thể viết trực tiếp, nhưng không viết câu ví dụ Nhật nằm ngoài kho câu.
 
