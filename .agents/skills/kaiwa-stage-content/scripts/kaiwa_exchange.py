@@ -38,7 +38,11 @@ def schemas():
     grammar = obj({"catalog": {"enum": ["minna", "bunpou"]},
                    "jlpt_level": {"enum": ["N5", "N4", "N3", "N2", "N1"]}, "name_ja": TEXT})
     defs = {
-        "utterance": obj({"id": ID, "ja": TEXT, "vi": TEXT}),
+        "utterance": obj({"id": ID, "ja": TEXT, "vi": TEXT,
+                          "authorship": {"enum": ["source_quote", "source_adaptation", "original_extension"]},
+                          "source_refs": ids, "source_locator": TEXT,
+                          "learning_scope": {"enum": ["core", "source_reference"]},
+                          "grammar_node_ids": ids}, ["id", "ja", "vi"]),
         "speaker": obj({"id": {"enum": ["A", "B"]}, "label_vi": TEXT, "role_vi": TEXT}),
         "turn": obj({"id": ID, "speaker_id": {"enum": ["A", "B"]}, "utterance_id": ID}),
         "shadow_item": {"oneOf": [
@@ -73,7 +77,9 @@ def schemas():
         "free_talk": obj({"learner_intro_vi": TEXT, "ai_situation_vi": TEXT,
                           "conversation_starters_vi": texts, "context_node_ids": array(ID, 1, True)}),
     }
-    defs["node"] = {"oneOf": [obj({"id": ID, "type": {"const": kind}, "title_vi": TEXT, "data": payload})
+    defs["node"] = {"oneOf": [obj({"id": ID, "type": {"const": kind}, "title_vi": TEXT,
+                                  "learning_scope": {"enum": ["core", "source_reference"]}, "data": payload},
+                                 ["id", "type", "title_vi", "data"])
                               for kind, payload in payloads.items()]}
     stage = obj({
         "schema_version": {"const": VERSION}, "kind": {"const": "stage"}, "course_id": ID,
@@ -82,7 +88,10 @@ def schemas():
         "scope_vi": TEXT, "nodes": array(ref("node"), 1), "utterances": array(ref("utterance"), 1),
         "events": array(obj({"id": ID, "title_vi": TEXT}), 1), "lessons": array(ref("lesson"), 1),
         "review_links": array(ref("review_link")), "retired": array(ref("retired")),
-    })
+        "source_registry": array(obj({"id": ID, "kind": {"enum": ["book", "web", "reference"]},
+                                      "book_id": ID, "title": TEXT, "locator": TEXT}, ["id", "kind", "title", "locator"]))
+    }, ["schema_version", "kind", "course_id", "stage_uid", "revision", "display_code", "title_vi", "level", "scope_vi",
+        "nodes", "utterances", "events", "lessons", "review_links", "retired"])
     stage.update({"$schema": "https://json-schema.org/draft/2020-12/schema", "$defs": defs,
                   "title": "Harumii Kaiwa stage exchange 1.0.0"})
     catalog = obj({
@@ -169,6 +178,10 @@ def validate(data):
             used = re.findall(r"\{\{utterance:([a-zA-Z0-9_-]+)\}\}", content["body_md"])
             if set(used) != set(content["utterance_ids"]):
                 raise ValueError("Knowledge sentence tokens must match utterance_ids")
+            source_books = {s.get("book_id") for s in data.get("source_registry", [])
+                            if any(s["id"] in utterances[uid].get("source_refs", []) for uid in content["utterance_ids"])}
+            if source_books & {"B11", "B12"} and content["source_family"] != "speak_japanese":
+                raise ValueError("B11/B12 knowledge must be Speak Japanese")
             if content["source_family"] == "speak_japanese":
                 pid = content.get("practice_node_id")
                 if index + 1 >= len(nodes) or nodes[index + 1]["id"] != pid or nodes[index + 1]["type"] != "shadowing":
@@ -220,6 +233,17 @@ def validate(data):
                 unique(content["variants"], "id", "challenge variant ID")
                 if content["default_variant_id"] not in {v["id"] for v in content["variants"]}:
                     raise ValueError("Unknown default challenge variant")
+    if "source_registry" in data:
+        unique(data["source_registry"], "id", "source registry ID")
+        source_ids = {s["id"] for s in data["source_registry"]}
+        for utterance in data["utterances"]:
+            if "authorship" not in utterance or "source_refs" not in utterance:
+                raise ValueError("New provenance packages need authorship/source_refs for every utterance")
+            if any(sid not in source_ids for sid in utterance["source_refs"]):
+                raise ValueError("Unknown utterance source reference")
+            if utterance["authorship"] != "original_extension" and not utterance["source_refs"]:
+                raise ValueError("Source quote/adaptation needs actual source reference")
+            node_refs(utterance.get("grammar_node_ids", []), {"grammar"})
     for link in data["review_links"]:
         node_refs(link["to_node_ids"], material_types)
         if link["from_stage_uid"] == data["stage_uid"]:
@@ -255,6 +279,8 @@ def material_text(data, node_ids):
         node = nodes[nid]
         content = node["data"]
         chunks.append("## " + node["title_vi"] + " [" + nid + "]")
+        if node.get("learning_scope") == "source_reference":
+            chunks.append("*Phần tham khảo từ nguồn; không mặc định mọi cấu trúc ở đây đã thuộc phần luyện chủ động.*")
         if node["type"] == "knowledge":
             chunks.append(re.sub(r"\{\{utterance:([a-zA-Z0-9_-]+)\}\}",
                                  lambda match: sentence(match[1]), content["body_md"]))

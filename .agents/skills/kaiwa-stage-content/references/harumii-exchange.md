@@ -6,13 +6,15 @@
 
 - Giữ 289 UID V5; `schema_version=1.0.0` của gói app độc lập với V5 hoặc workspace 3.2.
 - App nhận đúng wire JSON snake_case của schema, không cần đoán field hoặc đọc đường dẫn PDF trên máy tác giả.
-- Vocabulary xuất duy nhất `terms_ja: string[]`; không soạn thêm nghĩa, reading, ví dụ, audio hoặc furigana cho list. Metadata ID/ôn trong workspace chỉ phục vụ biên tập.
+- Vocabulary xuất duy nhất `terms_ja: string[]`, trích ngược từ hội thoại/câu luyện đã soạn; động từ thể từ điển, tính từ dạng cơ bản. Không thêm từ chỉ vì cùng topic. `source-map.vocabulary_evidence` ghi mục từ đã rà và một vài surface/utterance thật; không yêu cầu mapping mọi lần xuất hiện. Không soạn thêm nghĩa/reading/audio cho list.
 - Grammar xuất `patterns: [{catalog: minna|bunpou, jlpt_level: N5|N4|N3|N2|N1, name_ja}]`; admin pick theo level + tên. Lấy level từ metadata đã đối chiếu; nếu Minna cần mapping biên tập thì ghi căn cứ trong source-map, không gọi đó là danh mục JLPT chính thức hoặc suy máy móc từ số bài. Mục chưa rõ level phải rà trước export, không bịa ID DB hoặc level.
 - Mọi câu Nhật luyện tập/ví dụ/hint có `ja` + `vi` trong `utterances`. Chia sẻ ID câu giữa bài kiến thức, shadowing, dialogue và hint khi cùng nghĩa. Từ, tên mẫu ngữ pháp và tên riêng không phải câu luyện, không bắt dịch riêng từng chuỗi này.
+- Gói mới thêm `source_registry` và mỗi utterance có `authorship: source_quote|source_adaptation|original_extension`, `source_refs`, locator khi có ích. Nguồn giữ nguyên và câu AI mới không dùng chung một nhãn node để che khác biệt. `learning_scope: source_reference` phân biệt ví dụ nguồn khó hơn với phần chủ động core; grammar refs có thể trỏ danh sách ngữ pháp tham khảo.
 - Không tạo furigana, CD/track/audio file, TTS URL hoặc voice vendor trong gói app. Harumii tự furigana/TTS; không chọn giọng thay app. Metadata CD vốn có trong nguồn clean vẫn giữ ở nguồn, không xóa hoặc bắt truy tìm thêm.
 - Knowledge giữ Markdown, ví dụ chèn `{{utterance:ID}}`; đọc lại cả bản MD đã hydrate Nhật–Việt. Không để câu ví dụ Nhật nằm ngoài kho câu. Speak Japanese vẫn là kiến thức/video planned → shadowing ngay sau, dùng chung câu.
 - Mỗi situation chỉ có một bộ turns cho cả hai chế độ shadowing. Shadowing tham chiếu câu hoặc tình huống, không copy lại dialogue. Ghi metadata nguồn/viết mới trong sổ nguồn workspace.
 - Challenge có brief user + tình huống AI + biến thể; free talk cuối chặng có tình huống đã soạn và context đủ tài liệu. Không trần 1.000 ký tự, không trộn lệnh các challenge vào free talk. Không có test/điểm/gate.
+- `review_links` chỉ là metadata tùy chọn. Có thể để `[]`; không xuất link từng từ ôn, không ép đối chiếu một-một với `learning-map.reuse`. Nếu chọn ghi link thì phải thật, không trỏ tương lai. Gối đầu là cân nhắc khi viết, không điều kiện hoàn thành.
 
 ## Quy trình biên soạn và đóng gói
 

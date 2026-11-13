@@ -6,7 +6,7 @@ Tài liệu tham khảo, không phải lời user đã nói:
 
 ## Từ dùng khi gọi món [v01]
 
-メニュー、おすすめ、料理
+メニュー
 
 ## Mẫu đề nghị [g01]
 

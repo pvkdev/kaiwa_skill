@@ -186,12 +186,9 @@ def validate_learning(draft, stage, repo, errors):
     if [nid for l in lessons for nid in l["node_ids"]] != expected:
         errors.append("Lesson node groups must partition all non-live nodes in order")
     nodes = {n["id"]: n for n in stage["nodes"]}
-    review_targets = set()
     for i, lesson in enumerate(lessons):
         if not lesson.get("summary"):
             errors.append("Lesson needs a summary of new content: " + lesson["id"])
-        if not lesson.get("reuse") and not lesson.get("reason_no_reuse") and not lesson.get("pending_previous"):
-            errors.append("Missing reuse or an editorial reason: " + lesson["id"])
         looked = {}
         for ref in lesson.get("lookback", []):
             if ref["stage_uid"] == stage["stage_uid"] and (ref["lesson_id"] not in lids or lids.index(ref["lesson_id"]) >= i):
@@ -201,8 +198,10 @@ def validate_learning(draft, stage, repo, errors):
         for reuse in lesson.get("reuse", []):
             ref = reuse["from"]
             if lesson_key(ref) not in looked:
-                errors.append("Reuse source must be in reviewed lookback: " + lesson["id"])
-                continue
+                if ref["stage_uid"] == stage["stage_uid"] and (ref["lesson_id"] not in lids or lids.index(ref["lesson_id"]) >= i):
+                    errors.append("Explicit reuse cannot point to same/future lesson")
+                    continue
+                looked[lesson_key(ref)] = prior_lesson(ref, draft, stage, repo)
             old_lesson, old_nodes, old_content, _ = looked[lesson_key(ref)]
             if ref["node_id"] not in old_lesson["node_ids"]:
                 errors.append("Reuse source node not in earlier lesson")
@@ -221,15 +220,11 @@ def validate_learning(draft, stage, repo, errors):
                 target = nodes[nid]
                 if use.get("item_id") and (target["type"] == "knowledge" or use["item_id"] not in item_ids(read(inside(draft, target["path"])))):
                     errors.append("Unknown reuse target item/turn ID")
-                if old_node["type"] == "vocabulary" and ref.get("item_id"):
-                    review_targets.add((nid, use.get("item_id")))
     for n in stage["nodes"]:
         if n["type"] == "vocabulary":
             for word in read(inside(draft, n["path"]))["items"]:
-                if word.get("exposure") not in {"new", "review"}:
-                    errors.append("Vocabulary item needs new/review exposure: " + word["id"])
-                if word.get("exposure") == "review" and (n["id"], word["id"]) not in review_targets:
-                    errors.append("Review word needs a link to its earlier vocabulary item: " + word["id"])
+                if "exposure" in word and word["exposure"] not in {"new", "review"}:
+                    errors.append("Invalid optional vocabulary exposure: " + word["id"])
 
 
 def check_dialogue(data, seen, label, errors):
@@ -381,7 +376,7 @@ def check(draft, uid, repo):
                 if n["id"] not in event.get("situation_ids", []):
                     errors.append("Situation not listed in its event: " + n["id"])
             check_dialogue(data, turns_seen, n["id"], errors)
-            if data.get("authorship") not in {"source_adaptation", "original_extension"}:
+            if data.get("authorship") not in {"source_quote", "source_adaptation", "original_extension"}:
                 errors.append("Situation needs truthful authorship: " + n["id"])
             for field, wanted in [("knowledge_ids", "knowledge"), ("vocabulary_ids", "vocabulary"), ("grammar_ids", "grammar"), ("alternative_to", "situation"), ("follows", "situation")]:
                 for target in data.get(field, []):
@@ -410,7 +405,7 @@ def check(draft, uid, repo):
                         errors.append("Shadowing references unknown situation")
                 else:
                     errors.append("Unknown shadowing item kind")
-                if item["kind"] != "situation_ref" and item.get("authorship") not in {"source_adaptation", "original_extension"}:
+                if item["kind"] != "situation_ref" and item.get("authorship") not in {"source_quote", "source_adaptation", "original_extension"}:
                     errors.append("Shadowing item needs truthful authorship")
                 for k in paired:
                     example = item.get("example_id", "")
@@ -546,7 +541,7 @@ def main():
                     atomic(draft / "harumii-stage.json", {"schema_version": "1.0.0", "kind": "stage", "course_id": "kaiwa-main",
                            "stage_uid": uid, "revision": max(numbers, default=0) + 1,
                            "display_code": info["display_code"], "title_vi": info["title"], "level": levels[info["level"]],
-                           "scope_vi": "", "nodes": [], "utterances": [], "events": [], "lessons": [], "review_links": [], "retired": []})
+                           "scope_vi": "", "nodes": [], "utterances": [], "events": [], "lessons": [], "review_links": [], "retired": [], "source_registry": []})
                     atomic(draft / "source-map.json", {"nodes": {}})
                 atomic(draft / "sources.json", {"scan": [], "entries": []})
                 atomic(draft / "learning-map.json", {"schema_version": "1.0", "stage_uid": uid, "lessons": []})
@@ -618,7 +613,7 @@ def main():
             spec = importlib.util.spec_from_file_location("stage_compile", Path(__file__).with_name("stage_compile.py"))
             compiler = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(compiler)
-            compiler.compile_stage(draft)
+            compiler.compile_stage(draft, repo)
         if args.command == "sync":
             print("Derived editorial files synchronized; canonical source preserved")
             return

@@ -4,11 +4,11 @@
 
 Một chặng có nhiều bài. Một bài là nhóm node có cùng mục đích học, khai báo bằng `lessons[].id` trong `learning-map.json` và tham chiếu qua `lesson_id`; không thêm một loại màn hình bắt buộc cho app. Ví dụ một bài Speak Japanese gồm node kiến thức dành cho video và node shadowing theo ngay sau, có thể được chuẩn bị từ vựng/ngữ pháp trước cặp đó. ID bài/node giữ nguyên khi sửa; không lấy số thứ tự làm danh tính.
 
-Trước bài 3, đọc lại bài 1 và 2 đã biên soạn. Tương tự ở bài sau: hai bài gần nhất là điểm bắt đầu, không phải giới hạn trí nhớ. Tìm thêm nội dung cũ liên quan trong các chặng trước theo thứ tự V4.1. Gối đầu đi xuyên ranh giới chặng và áp dụng cho Speak Japanese, tình huống, câu mẫu lẫn danh sách từ.
+Khi tạo hội thoại hoặc ví dụ mới, **cân nhắc** dùng kiến thức Speak Japanese, từ vựng và ngữ pháp đã xuất hiện nếu chúng hợp ngữ cảnh. Hai bài gần nhất là gợi ý tra cứu thuận tiện, không phải danh sách buộc phải đọc/áp dụng cho mọi bài. Có thể tìm xa hơn trong lộ trình hiện hành; không ép một nội dung cũ vào lời thoại để có “gối đầu”.
 
-Tìm bài trước bằng thứ tự node trong sổ bài hiện tại, rồi lần ngược các chặng trước trong JSONL, mở `current.json` và sổ bài của revision đã chốt. Nếu chặng ngay trước chưa soạn, ghi khoảng trống đó; không âm thầm nhảy qua rồi gọi hai bài tìm thấy là hai bài liền trước. Khi soạn Speak Japanese, tra thêm các bài Speak Japanese đã có liên quan đến mẫu đang dạy, bên cạnh hai bài gần nhất của lộ trình chung.
+Khi cần tra bài cũ, dùng thứ tự node/sổ bài và `current.json`. Nội dung chưa tồn tại không được gọi là đã học. Nếu bài cũ chưa có, vẫn soạn được bài mới; không tự tạo một món nợ “phải nối đủ hai bài trước”. Khi chuyển soạn ví dụ Speak Japanese, cũng cân nhắc ứng dụng kiến thức cũ như với hội thoại khác.
 
-Đọc sổ bài để chọn nội dung, rồi mở MD/JSON gốc của phần định dùng. Không nạp lại cả lịch sử lộ trình vào mỗi lượt. Ghi ba điều:
+Không nạp lại cả lịch sử lộ trình. Khi chọn dùng nguồn cũ thì mở phần thực định dùng. Có thể ghi ngắn:
 
 - Điều mới của bài, tóm tắt trong `summary`.
 - Những bài trước đã tham khảo (`lookback`).
@@ -16,19 +16,19 @@ Tìm bài trước bằng thứ tự node trong sổ bài hiện tại, rồi l�
 
 Ưu tiên kiến thức vừa học và nội dung cũ phù hợp ngữ cảnh: từ về món ăn có thể trở lại trong đặt bàn, hỏi thành phần, đổi món; cách chia sẻ cảm nhận đã học có thể đi vào ví dụ mới về ăn uống. Có thể quay lại xa hơn để ôn, không ép đưa mọi từ/mẫu của hai bài trước vào cuộc thoại mới. Giữ mục tiêu mới rõ ràng và độ khó hợp cấp.
 
-Mặc định có ôn ứng dụng khi đã có chất liệu phù hợp. Chỉ bỏ phần tái sử dụng khi có lý do biên tập cụ thể; không dùng một lý do chung để soạn mọi bài độc lập. `lookback` ghi đã tham khảo, còn `reuse` phải chỉ tới nơi nội dung cũ thật sự xuất hiện trong bài mới.
+`lookback`, `reuse` và `review_links` là ghi chú tùy chọn, không KPI, không điều kiện chốt bài và không cần giải trình việc không tái sử dụng. Không tạo link cho từng từ chỉ vì nó xuất hiện lại. Nếu ghi liên kết cụ thể thì nó phải có thật. Ưu tiên ghi theo nhóm kiến thức khi có ích; gói app có thể để `review_links: []`, không xuất sổ biên tập thành luật học.
 
 Chỉ nội dung **đã tồn tại và đã đọc** mới được ghi là ôn lại. Cần dùng mẫu chưa giới thiệu thì bổ sung hỗ trợ/giải thích thích hợp hoặc ghi là chất liệu mới; không giả vờ nó đã học vì có trong sách nguồn. Chọn đoạn sách hợp cấp; không làm sai sắc thái hay xóa mất điểm hay của ví dụ chỉ để ép nó khớp danh sách ngữ pháp.
 
-Nếu chưa có bài trước (ví dụ pilot riêng một chặng), ghi `pending_previous` và lý do; vẫn được làm bản nháp độc lập. Không bịa tham chiếu, không tuyên bố mạch gối đầu đã hoàn chỉnh. Bài đầu tiên của lộ trình ghi rõ chưa có tiền lệ. Đây là trạng thái biên tập, không là cổng học.
+Nếu chưa có bài trước, không bịa tham chiếu hoặc tuyên bố đã ôn. Có thể ghi chú để cân nhắc khi nâng cấp sau; không bắt `pending_previous` hoặc coi đó là công việc bắt buộc còn thiếu.
 
 ## Speak Japanese: kiến thức → shadowing
 
-Hai sách hiện có là B11 **基本文型88** và B12 **発展文型125**. Đọc bài/mục cụ thể, không dùng token pool P1/P2 thay việc đọc. Biên soạn nội dung như một **bài kiến thức Markdown**: nghĩa, chức năng, ngữ cảnh/quan hệ, cách dùng, đối chiếu và lưu ý đặc trưng có trong bài; giữ ví dụ có ích, có nghĩa Việt. Không chỉ lấy tên mẫu làm danh sách ngữ pháp.
+Hai sách hiện có là B11 **基本文型88** và B12 **発展文型125**. Đọc trọn bài/mục được chọn. Giữ mạch bài nguồn, các chức năng, đối chiếu thân mật/lịch sự, hội thoại mở đầu và những nhóm ví dụ làm rõ bài đó; viết lại giải thích cho dễ hiểu và dịch Việt. Không thay cả bài bằng vài câu mới cùng topic. Nếu chỉ khai thác một phần, phải gọi rõ là trích phần và có lý do phù hợp, không nhận là đã đưa toàn bài vào. Nội dung ứng dụng topic do AI viết là phần bổ sung sau chất liệu nguồn.
 
 Node đánh dấu `source_family: speak_japanese`, có `video: {status: planned, asset_ref: null}` và `practice_node_id`. Chưa tạo video, không đặt URL giả. **Node kế tiếp trong thứ tự học là shadowing** liên kết ngược bằng `knowledge_ids`; danh sách từ/ngữ pháp nếu cần đặt trước cặp hoặc dùng danh sách chung, không chen vào giữa video và luyện.
 
-Bài shadowing bao gồm các ví dụ/hội thoại tương ứng với những điểm thực sự vừa giải thích, không phải một đoạn bất kỳ cùng topic. Dùng `example_id` ổn định để nối ví dụ trong MD với item luyện; có thể đặt anchor trong MD. Phân biệt ví dụ chuyển soạn từ sách với ví dụ viết mới lồng nội dung cũ. Phần viết mới vẫn phải thực hành điểm mới của bài. Nếu thay ví dụ ở một bên, đối chiếu và cập nhật bên còn lại; không gắn audio sách vào câu đã sửa.
+Bài shadowing sau video luyện **các hội thoại/ví dụ nguồn đã đưa vào bài**, rồi mới có thể thêm ví dụ topic viết mới. Không chỉ luyện vài câu AI thay thế. Dùng chung utterance ID để không có hai bản phải sửa đồng thời. Mỗi câu ghi `source_quote`, `source_adaptation` hoặc `original_extension` và nguồn tương ứng. Các ví dụ nguồn vượt phần ngữ pháp chủ động hiện tại phải được nhận diện rõ là tham khảo, có tên ngữ pháp hỗ trợ khi cần; không coi một đoạn khó là Sơ chỉ vì ngắn hoặc xuất phát từ sách cơ bản.
 
 Không gom 88/125 mẫu vào vài node khổng lồ chỉ vì khung hiện có ít token pool; cũng không có chỉ tiêu phải dùng hết chúng. Phân bổ các bài/mục được chọn đến topic/cấp độ phù hợp, giữ quan hệ nền tảng và rải ôn sau đó. Khi gán một bài nguồn, ghi bài đó đã đi vào node kiến thức và shadowing nào; nếu tách một bài nguồn cho hai topic, ghi rõ phần nào được dùng ở đâu, tránh đếm trùng thành hai bài nguồn đã khai thác độc lập. Chọn lọc nguồn không làm giảm yêu cầu giải thích rõ và luyện đúng những điểm đã chọn để dạy.
 
@@ -45,9 +45,9 @@ Một bài shadowing có thể gồm câu đơn, hội thoại ngắn hoặc tha
 
 ## Từ vựng theo miền chủ đề và ôn tích lũy
 
-Danh sách ăn uống nên bao gồm các nhóm cần dùng như món/nguyên liệu, đồ uống, vị/cách nấu, khẩu phần, đồ dùng và thao tác gọi món/thanh toán, tùy phạm vi chặng. Từ phục vụ thực hành trực tiếp là phần đầu; từ giúp mở rộng lựa chọn và diễn đạt thực tế là phần tiếp. Không cần ép mọi chặng vào cùng một bộ tiểu mục hoặc số từ.
+Soạn và rà hội thoại/câu luyện trước, rồi **trích ngược từ nội dung thực sự xuất hiện** để lập danh sách. Chọn từ/cụm hữu ích cho việc hiểu và nói, không thêm một ngân hàng từ độc lập để làm list dài. Có thể chia theo cụm tình huống hoặc bài nguồn. Tên riêng không nhất thiết phải biến thành thẻ từ.
 
-Giữ sự chọn lọc theo cấp và nhu cầu, không thêm thuật ngữ xa chủ đề chỉ để có danh sách dài. Có thể chia danh sách theo cụm sự kiện. Mỗi item đánh dấu `exposure: new|review`; từ ôn trỏ về lần học trước bằng `reuse`, xét đúng nghĩa/cách dùng chứ không chỉ trùng chữ Nhật. Người học có thể mở mọi danh sách tự do. Engine app tự lo bài tập và lịch ôn; skill lo lựa chọn từ và sự tái xuất hiện trong câu/hội thoại.
+Động từ ở thể từ điển, tính từ ở dạng cơ bản: 行きます → 行く, 降りて → 降りる, 多かった → 多い; danh từ/cụm cố định dùng dạng mục từ phù hợp. Không sửa câu hội thoại thành thể từ điển theo list. Ghi một vài ví dụ xuất hiện và quyết định chuẩn hóa trong sổ biên tập, không cần mapping từng lần xuất hiện. `exposure` là tùy chọn; không buộc link từng từ ôn. Engine app tự lo bài tập/lịch ôn, người học được mở danh sách tự do.
 
 ## Chạy dài, phối hợp và nâng cấp
 

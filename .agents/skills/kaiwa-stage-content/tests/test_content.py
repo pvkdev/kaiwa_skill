@@ -188,12 +188,19 @@ class ContentRegression(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "earlier curriculum stage"):
             WORK.check(self.draft, UIDS[0], self.root)
 
-    def test_new_word_cannot_claim_review_without_link(self):
+    def test_optional_review_label_does_not_require_item_links(self):
         data = WORK.read(self.draft / "vocabulary/v01.json")
         data["items"][0]["exposure"] = "review"
         put(self.draft / "vocabulary/v01.json", data)
-        with self.assertRaisesRegex(ValueError, "Review word needs"):
-            WORK.check(self.draft, UIDS[0], self.root)
+        WORK.check(self.draft, UIDS[0], self.root)
+
+    def test_cumulative_review_is_advisory_not_a_completion_gate(self):
+        learning = WORK.read(self.draft / "learning-map.json")
+        for lesson in learning["lessons"]:
+            lesson.update(lookback=[], reuse=[], pending_previous=[])
+            lesson.pop("reason_no_reuse", None)
+        put(self.draft / "learning-map.json", learning)
+        WORK.check(self.draft, UIDS[0], self.root)
 
     def test_pause_resume_keeps_learning_map(self):
         before = (self.draft / "learning-map.json").read_bytes()

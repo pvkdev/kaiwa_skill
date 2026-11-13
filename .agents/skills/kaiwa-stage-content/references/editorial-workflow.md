@@ -48,7 +48,7 @@ Không tạo tích Descartes của mọi vai × kênh × kết quả. Không có
 
 Một cách bố trí có thể là: hiểu tình huống → nhóm từ dùng ngay → hội thoại cơ bản → kiến thức giải thích phản hồi → nhánh từ chối → nhánh thương lượng điều kiện → cụm tình huống tiếp theo → Live AI. Có thể đặt tên ngữ pháp ngay trước cụm cần nó hoặc gom một danh sách ngắn cho cả chặng. Không lặp bài kiến thức đầy đủ mỗi lần xuất hiện cùng một mẫu; dùng liên kết và nhắc lại có chọn lọc.
 
-Khi có bài Speak Japanese, bố trí phần chuẩn bị trước cặp **kiến thức/video → shadowing ví dụ**, không chen node khác vào giữa cặp. Gom node thành bài trong `learning-map.json`; đọc hai bài gần nhất rồi tìm thêm bài cũ liên quan trước khi viết bài mới. Các lần ôn đi vào câu, hội thoại và danh sách từ mới, không chỉ là link “xem lại”.
+Khi có bài Speak Japanese, bố trí phần chuẩn bị trước cặp **kiến thức/video → shadowing ví dụ**, không chen node khác vào giữa cặp. Gom node thành bài trong `learning-map.json`; cân nhắc tra bài cũ phù hợp khi viết mới, không bắt đọc hoặc tái dùng đủ hai bài trước. Các lần ôn đi vào câu, hội thoại và danh sách từ mới, không chỉ là link “xem lại”.
 
 Tận dụng nội dung sâu của sách nhưng xây lại mạch học theo chủ đề. Khi trộn nguồn, giữ nhất quán nhân vật, vai, mức thân mật, thời điểm, thông tin đã biết và mục đích. Không chắp nửa đoạn lễ phép với nửa đoạn suồng sã mà không giải thích sự đổi quan hệ.
 

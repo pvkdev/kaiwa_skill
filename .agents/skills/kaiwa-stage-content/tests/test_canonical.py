@@ -25,7 +25,9 @@ class CanonicalLifecycle(unittest.TestCase):
         self.run, self.draft = opened["run"], Path(opened["draft"])
         self.put("harumii-stage.json", self.data)
         self.put("source-map.json", {"nodes": {n["id"]: {"authorship": "original_extension", "source_refs": []}
-                                                for n in self.data["nodes"] if n["type"] not in {"live_challenge", "free_talk"}}})
+                                                for n in self.data["nodes"] if n["type"] not in {"live_challenge", "free_talk"}},
+                                     "vocabulary_evidence": {"v01": [{"term": "メニュー", "kind": "other", "dictionary_form_reviewed": True,
+                                                                        "evidence": [{"utterance_id": "u01", "surface": "メニュー"}]}]}})
         self.put("sources.json", {"scan": [{"book_id": f"B{i:02}", "status": "index_only", "note": "Fixture"} for i in range(1, 28)], "entries": []})
         self.put("learning-map.json", {"schema_version": "1.0", "stage_uid": UID, "lessons": [
             {"id": l["id"], "summary": l["title_vi"], "node_ids": l["node_ids"], "lookback": [], "reuse": [],
@@ -65,3 +67,19 @@ class CanonicalLifecycle(unittest.TestCase):
 
     def test_foreign_owner_cannot_compile(self):
         self.cli("sync", "00000000-0000-4000-8000-000000000099", ok=False)
+
+    def test_dictionary_form_is_not_polite_form(self):
+        node = next(n for n in self.data["nodes"] if n["type"] == "vocabulary")
+        node["data"]["terms_ja"] = ["行きます"]
+        self.put("harumii-stage.json", self.data)
+        audit = json.loads((self.draft / "source-map.json").read_text(encoding="utf-8"))
+        audit["vocabulary_evidence"]["v01"] = [{"term": "行きます", "kind": "verb", "dictionary_form_reviewed": True,
+                                                "evidence": [{"utterance_id": "u01", "surface": "行きます"}]}]
+        self.put("source-map.json", audit)
+        self.assertIn("dictionary form", self.cli("validate", self.run, ok=False))
+
+    def test_vocabulary_must_come_from_actual_spoken_material(self):
+        audit = json.loads((self.draft / "source-map.json").read_text(encoding="utf-8"))
+        audit["vocabulary_evidence"]["v01"][0]["evidence"][0]["surface"] = "not-in-dialogue"
+        self.put("source-map.json", audit)
+        self.assertIn("actual spoken example", self.cli("validate", self.run, ok=False))

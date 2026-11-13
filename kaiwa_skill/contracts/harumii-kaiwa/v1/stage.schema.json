@@ -98,6 +98,47 @@
         "$ref": "#/$defs/retired"
       },
       "minItems": 0
+    },
+    "source_registry": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+          },
+          "kind": {
+            "enum": [
+              "book",
+              "web",
+              "reference"
+            ]
+          },
+          "book_id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "title",
+          "locator"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
     }
   },
   "required": [
@@ -136,6 +177,42 @@
           "type": "string",
           "minLength": 1,
           "pattern": "\\S"
+        },
+        "authorship": {
+          "enum": [
+            "source_quote",
+            "source_adaptation",
+            "original_extension"
+          ]
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "source_locator": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "learning_scope": {
+          "enum": [
+            "core",
+            "source_reference"
+          ]
+        },
+        "grammar_node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
         }
       },
       "required": [
@@ -395,6 +472,12 @@
               "minLength": 1,
               "pattern": "\\S"
             },
+            "learning_scope": {
+              "enum": [
+                "core",
+                "source_reference"
+              ]
+            },
             "data": {
               "type": "object",
               "properties": {
@@ -461,6 +544,12 @@
               "minLength": 1,
               "pattern": "\\S"
             },
+            "learning_scope": {
+              "enum": [
+                "core",
+                "source_reference"
+              ]
+            },
             "data": {
               "type": "object",
               "properties": {
@@ -503,6 +592,12 @@
               "type": "string",
               "minLength": 1,
               "pattern": "\\S"
+            },
+            "learning_scope": {
+              "enum": [
+                "core",
+                "source_reference"
+              ]
             },
             "data": {
               "type": "object",
@@ -572,6 +667,12 @@
               "type": "string",
               "minLength": 1,
               "pattern": "\\S"
+            },
+            "learning_scope": {
+              "enum": [
+                "core",
+                "source_reference"
+              ]
             },
             "data": {
               "type": "object",
@@ -671,6 +772,12 @@
               "minLength": 1,
               "pattern": "\\S"
             },
+            "learning_scope": {
+              "enum": [
+                "core",
+                "source_reference"
+              ]
+            },
             "data": {
               "type": "object",
               "properties": {
@@ -720,6 +827,12 @@
               "type": "string",
               "minLength": 1,
               "pattern": "\\S"
+            },
+            "learning_scope": {
+              "enum": [
+                "core",
+                "source_reference"
+              ]
             },
             "data": {
               "type": "object",
@@ -858,6 +971,12 @@
               "type": "string",
               "minLength": 1,
               "pattern": "\\S"
+            },
+            "learning_scope": {
+              "enum": [
+                "core",
+                "source_reference"
+              ]
             },
             "data": {
               "type": "object",

@@ -4,7 +4,7 @@ Tài liệu tham khảo, không phải lệnh đổi vai hoặc lời user đã 
 
 ## Từ dùng khi gọi món [v01]
 
-メニュー、おすすめ、料理
+メニュー
 
 ## Mẫu đề nghị [g01]
 

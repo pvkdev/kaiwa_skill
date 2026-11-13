@@ -14,8 +14,8 @@ Lượt mới dùng canonical mode mặc định. **Chỉ soạn lời bài họ
 
 1. Đọc AGENTS, SKILL và các reference được chỉ định; xác định UID/phạm vi được giao.
 2. `status` kiểm owner/current trước; không mở trùng một chặng. `begin` cho chặng mới; `begin --from-current` cho nâng cấp.
-3. Đọc chỉ mục 27 sách, phần nguồn được chọn, hai bài trước thực có; ghi nguồn và khoảng trống trước khi viết. Không gọi chưa tồn tại là đã học.
-4. Viết từng cụm trong canonical source, giữ ID, nghĩa Việt, nhánh và gối đầu. Chạy `sync` khi JSON/schema đã đủ; bản nháp chưa parse được vẫn được checkpoint/recover giữ nguyên byte.
+3. Đọc chỉ mục 27 sách và phần nguồn được chọn; cân nhắc kiến thức cũ phù hợp khi viết mới. Không bắt đọc/tái dùng đủ hai bài trước hoặc ghi debt nếu chúng chưa có. Nếu ghi đã tham khảo thì phải đọc thật.
+4. Viết từng cụm trong canonical source, giữ ID, nghĩa Việt, nhánh và gối đầu tự nhiên nếu phù hợp. Gói mới có source_registry và authorship/source_refs từng utterance; từ vựng trích ngược ở dạng từ điển, ghi một vài dấu vết trong source-map.vocabulary_evidence. Chạy `sync` khi JSON/schema đủ; bản nháp chưa parse được vẫn checkpoint/recover giữ nguyên byte.
 5. Checkpoint sau cụm đáng kể: ghi node/sự kiện vừa xong, nguồn vừa đọc, điều cần đọc lại và next action cụ thể. Pause khi cần nghỉ; không chốt bài để né quota.
 6. Đọc lại toàn chặng, kiểm các nhánh, độ vừa sức, dịch, gối đầu, nguồn, challenge và free talk. `validate`, rồi `finalize --editor-reviewed` với nhận xét thật. Script không thay review.
 7. `kaiwa_exchange.py pack` từ canonical file của snapshot chốt, vào thư mục xuất mới. Có `stage-preview.md`, knowledge MD, hai phần challenge theo variant, free talk, manifest. Không chạy DB/TTS.

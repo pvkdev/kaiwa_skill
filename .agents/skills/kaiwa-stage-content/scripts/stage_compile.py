@@ -22,7 +22,8 @@ def item_id(node_id, text, kind="w"):
     return node_id + "-" + kind + "-" + hashlib.sha256(text.encode("utf-8")).hexdigest()[:12]
 
 
-def compile_stage(draft):
+def compile_stage(draft, repo=None):
+    repo = (repo or Path(__file__).resolve().parents[4]).resolve()
     wrapper = load(draft / "stage.json")
     if wrapper.get("authoring_mode") != "canonical":
         raise ValueError("Compilation requires canonical authoring mode")
@@ -38,11 +39,51 @@ def compile_stage(draft):
     if data["stage_uid"] != wrapper["stage_uid"]:
         raise ValueError("Canonical stage UID mismatch")
     audit = load(draft / "source-map.json")
-    source_ids = {entry["id"] for entry in load(draft / "sources.json").get("entries", [])}
+    source_entries = load(draft / "sources.json").get("entries", [])
+    source_ids = {entry["id"] for entry in source_entries}
+    source_by_id = {entry["id"]: entry for entry in source_entries}
     utterances = {u["id"]: u for u in data["utterances"]}
+    source_texts = {}
+    for utterance in data["utterances"]:
+        if utterance.get("authorship") != "source_quote":
+            continue
+        matched = False
+        for sid in utterance.get("source_refs", []):
+            entry = source_by_id.get(sid, {})
+            if entry.get("path"):
+                path = (repo / entry["path"]).resolve()
+                if not path.is_relative_to(repo):
+                    raise ValueError("Quote source outside repository")
+                if sid not in source_texts:
+                    source_texts[sid] = path.read_text(encoding="utf-8-sig")
+                matched |= utterance["ja"] in source_texts[sid]
+        if not matched:
+            raise ValueError("Source_quote Japanese must match a registered local source: " + utterance["id"])
     material = {n["id"] for n in data["nodes"] if n["type"] not in {"live_challenge", "free_talk"}}
     if set(audit.get("nodes", {})) != material:
         raise ValueError("source-map must describe every material node exactly once")
+    if "source_registry" in data:
+        spoken = {t["utterance_id"] for n in data["nodes"] if n["type"] == "situation" for t in n["data"]["turns"]}
+        spoken.update(i["utterance_id"] for n in data["nodes"] if n["type"] == "shadowing"
+                      for i in n["data"]["items"] if i["kind"] == "sentence")
+        for node in data["nodes"]:
+            if node["type"] != "vocabulary":
+                continue
+            evidence = audit.get("vocabulary_evidence", {}).get(node["id"], [])
+            if [entry["term"] for entry in evidence] != node["data"]["terms_ja"]:
+                raise ValueError("Vocabulary needs backward evidence in term order: " + node["id"])
+            for entry in evidence:
+                term = entry["term"]
+                if not entry.get("dictionary_form_reviewed") or not entry.get("evidence"):
+                    raise ValueError("Vocabulary needs dictionary-form review and spoken evidence: " + term)
+                if entry.get("kind") == "verb" and (term[-1] not in "うくぐすつぬぶむる" or re.search(r"ます$|ました$|ません$", term)):
+                    raise ValueError("Vocabulary verb must be dictionary form: " + term)
+                if entry.get("kind") == "adjective_i" and not term.endswith("い"):
+                    raise ValueError("Vocabulary i-adjective must be base form: " + term)
+                for occurrence in entry["evidence"]:
+                    uid = occurrence["utterance_id"]
+                    if uid not in spoken or not occurrence["surface"] or occurrence["surface"] not in utterances[uid]["ja"]:
+                        raise ValueError("Vocabulary evidence must occur in an actual spoken example: " + term)
     nodes = []
     for node in data["nodes"]:
         nid, kind, content = node["id"], node["type"], node["data"]
@@ -51,10 +92,13 @@ def compile_stage(draft):
         metadata = audit.get("nodes", {}).get(nid, {})
         refs = metadata.get("source_refs", [])
         authorship = metadata.get("authorship", "original_extension")
-        if kind != "free_talk" and authorship not in {"source_adaptation", "original_extension"}:
+        if kind != "free_talk" and authorship not in {"source_quote", "source_adaptation", "original_extension"}:
             raise ValueError("Invalid source-map authorship: " + nid)
-        if any(ref not in source_ids for ref in refs) or (authorship == "source_adaptation" and not refs):
+        if any(ref not in source_ids for ref in refs) or (authorship in {"source_quote", "source_adaptation"} and not refs):
             raise ValueError("Source adaptation needs registered source references: " + nid)
+        if kind == "knowledge":
+            if any(s["id"] in refs and s.get("book_id") in {"B11", "B12"} for s in source_entries) and content["source_family"] != "speak_japanese":
+                raise ValueError("Knowledge teaching B11/B12 needs Speak Japanese video/practice structure")
         relative = ("knowledge/" + nid + ".md" if kind == "knowledge" else
                     ("live/" if kind == "free_talk" else kind + "/") + nid + ".json")
         # Keep existing plural workspace directory names.
@@ -75,9 +119,9 @@ def compile_stage(draft):
             if content["video_status"] == "planned":
                 desc["video"] = {"status": "planned", "asset_ref": None}
         elif kind == "vocabulary":
-            value["items"] = [{"id": item_id(nid, term), "ja": term,
-                               "exposure": metadata.get("word_exposure", {}).get(term, "new"),
-                               "source_refs": refs} for term in content["terms_ja"]]
+            value["items"] = [{"id": item_id(nid, term), "ja": term, "source_refs": refs,
+                               **({"exposure": metadata["word_exposure"][term]} if term in metadata.get("word_exposure", {}) else {})}
+                              for term in content["terms_ja"]]
         elif kind == "grammar":
             value["items"] = [{"id": item_id(nid, p["catalog"] + ":" + p["name_ja"], "g"),
                                "name_ja": p["name_ja"], "jlpt_level": p["jlpt_level"],
@@ -98,7 +142,8 @@ def compile_stage(draft):
                 else:
                     u = utterances[item["utterance_id"]]
                     value["items"].append({"id": item["id"], "kind": "sentence", "example_id": u["id"],
-                                           "ja": u["ja"], "vi": u["vi"], "authorship": authorship})
+                                           "ja": u["ja"], "vi": u["vi"], "authorship": u.get("authorship", authorship),
+                                           "source_refs": u.get("source_refs", refs)})
         elif kind == "free_talk":
             value.update(context_node_ids=content["context_node_ids"], overview_vi=data["scope_vi"], optional_extensions=[],
                          context_export="live-context.md", free_talk={**{k: v for k, v in content.items() if k != "context_node_ids"},

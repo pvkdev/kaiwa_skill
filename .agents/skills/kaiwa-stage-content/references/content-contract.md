@@ -153,7 +153,7 @@ Hai vai phải thực sự có lời nói. Sự kiện nhiều người được
 ]}
 ```
 
-`scope` có thể dùng `stage_uid`, `lesson_ids`, `event_ids` hoặc `situation_ids`. Chọn theo mức liên quan, không chia vụn nếu từ được dùng xuyên suốt. Danh sách bao phủ các nhóm từ thực tế trong phạm vi topic, không chỉ những từ đang có trong hội thoại. V3.1 đánh dấu `exposure: new|review` cho từng item; từ review có liên kết `reuse` từ item cũ đến item hiện tại trong sổ bài. Xét đúng nghĩa/cách dùng. Theo yêu cầu mới, chỉ cần từ Nhật; ID/exposure/source là metadata biên tập. Không bắt soạn reading/nghĩa/ví dụ từ; dữ liệu cũ có thể giữ nhưng gói app chỉ xuất `terms_ja`. Không thêm dạng bài vocabulary engine, lịch ôn hay ngưỡng đạt.
+`scope` chọn theo nhóm nội dung. Danh sách trích ngược từ hội thoại/câu luyện thực đã soạn, chọn từ hữu ích; động từ dạng từ điển, tính từ dạng cơ bản. Chỉ cần từ Nhật, không bắt soạn reading/nghĩa/ví dụ từ. `exposure` và ghi chú tái sử dụng là tùy chọn, không bắt tạo link từng từ. Gói app chỉ xuất `terms_ja`; dấu vết trích và chuẩn hóa ở source-map. Không tạo bài vocabulary engine hoặc ngưỡng đạt.
 
 ```json
 {"id":"g01","items":[

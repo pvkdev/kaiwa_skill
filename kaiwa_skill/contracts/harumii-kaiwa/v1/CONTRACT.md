@@ -42,6 +42,8 @@ Schema version 1.0.0 độc lập với curriculum V5 và hợp đồng biên t�
 
 `vocabulary.data.terms_ja` **chỉ là mảng chuỗi Nhật**: ví dụ `["会議室", "予約", "変更"]`. Không cần nghĩa, reading, Hán Việt, ảnh, audio, example hoặc ID dictionary. Cắt khoảng trắng hai đầu, giữ dạng từ người biên soạn đã chọn; không tự gộp đồng âm/đồng nghĩa khác cách dùng. Chặn trùng chuỗi trong cùng danh sách; từ xuất hiện lại ở chặng/bài khác có thể là ôn có chủ ý.
 
+Từ được trích ngược từ hội thoại/câu luyện thực có trong chặng; động từ dùng thể từ điển, tính từ dùng dạng cơ bản. Không sửa lời thoại theo mục từ. Dấu vết surface → lemma và nơi xuất hiện lưu ở metadata biên tập; app vẫn chỉ cần list Nhật.
+
 Harumii dùng list này để tạo draft danh sách từ qua hệ thống sẵn có; enrichment và xác nhận thuộc app. Lưu binding của node/list và từng term ở phía app. Import lại không sinh lại list nếu dữ liệu không đổi; thay list tạo revision/bản nháp mới, không xóa SRS hoặc danh sách người học đã lưu.
 
 `grammar.data.patterns` có `{catalog: minna|bunpou, jlpt_level: N5|N4|N3|N2|N1, name_ja}`. Không cần giải thích, ví dụ hoặc ID DB. Admin tìm theo level + tên và lưu binding riêng. Chỉ đưa tên khi đã tra được nguồn thật; không bịa bunpou ID. Một tên có thể có nhiều kết quả tìm; không tự chọn kết quả đầu tiên. Level ưu tiên metadata đã xác minh; mapping biên tập từ Minna phải ghi căn cứ ở sổ nguồn, không gọi là danh mục JLPT chính thức và không quy đổi cứng từ số bài.
@@ -53,6 +55,8 @@ Mapping ngữ pháp chờ admin là `pending`, không coi là lỗi dịch hoặ
 ## 4. Mọi câu Nhật luyện tập có nghĩa Việt, dùng một kho câu
 
 `utterances` chứa `{id, ja, vi}`. Hai chuỗi bắt buộc, không furigana/HTML ruby, không audio field. Nội dung Nhật là dạng hiển thị/TTS chính; app tự xử lý furigana và TTS.
+
+Gói mới có `source_registry` nhẹ (ID, loại, tên sách/nguồn, locator), và từng câu có `authorship: source_quote|source_adaptation|original_extension`, `source_refs`, có thể thêm `source_locator`. `source_quote` nói về chữ Nhật giữ đúng nguồn; nghĩa Việt vẫn được biên tập cho đúng. Không gán câu viết mới thành trích nguyên nguồn. Node/câu có thể đánh dấu `learning_scope: core|source_reference`; ví dụ nguồn khó hơn được nhận diện là tham khảo, kèm `grammar_node_ids` nếu cần tra. Các trường mới tùy chọn để đọc snapshot cũ; nếu có source_registry thì validator bắt đủ nguồn gốc từng câu.
 
 Một câu được dùng trong kiến thức, shadowing, hội thoại và gợi ý challenge thì **tham chiếu cùng ID** khi đúng là cùng câu/cùng nghĩa. Không chép lại hai bản phải sửa song song. Cùng Nhật nhưng nghĩa/ngữ cảnh Việt khác có thể là hai câu riêng; không tự dedupe theo chữ Nhật hoặc gộp mọi câu giống nhau xuyên chặng. App có thể tái dùng cache TTS theo chữ Nhật mà không gộp nội dung học.
 
@@ -100,7 +104,7 @@ Không coi user đã học thuộc mọi node. Theo hướng user muốn nói, c
 
 Catalog khai báo đủ 289 chặng có thể import trước khi soạn nội dung; app phân biệt `outline_only` với `content_available`. Không sinh bài placeholder hoặc giả có kiến thức.
 
-`lessons` chia các node tài liệu theo thứ tự để biết bài 1/2/3, không lấy challenge hoặc free talk thành bài kiến thức mới. Ví dụ bài 3 đọc lại hai bài gần nhất có thật; `review_links` trỏ stage UID/revision/node cũ tới node mới, kèm mục đích. Cùng chặng thì `from_stage_uid` là UID hiện tại, `from_revision` là revision hiện tại và node nguồn phải đứng trước node đích. Khác chặng phải có revision đã chốt, nguồn trước trong catalog và có bằng chứng đọc trong sổ biên tập. App import kiểm sự tồn tại liên kết; chưa có bản nguồn có thể lưu pending để admin xử lý, không bịa là đã có.
+`lessons` chia node tài liệu theo thứ tự, không lấy Live thành bài kiến thức mới. Gối đầu là cân nhắc vận dụng kiến thức/từ/ngữ pháp cũ vào lời thoại mới nếu tự nhiên, không yêu cầu đọc/tái dùng đủ hai bài trước. `review_links` có thể để `[]`; không cần xuất sổ từ ôn hoặc đồng bộ từng dòng với learning-map.reuse. Nếu ghi liên kết cụ thể thì source/node/revision phải có thật và đứng trước; không giả vờ đã đọc hoặc đã dạy. Không bắt ghi debt khi bài trước chưa tồn tại.
 
 Không import `learning-map.json` như tiến độ user. Tiến độ người học là dữ liệu riêng của app, không có trong file nguồn.
 

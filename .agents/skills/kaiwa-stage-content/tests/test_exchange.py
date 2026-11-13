@@ -35,6 +35,22 @@ class ExchangeRegression(unittest.TestCase):
         with self.assertRaises(ValueError):
             EXCHANGE.validate(self.data)
 
+    def test_each_new_utterance_has_truthful_source_category(self):
+        utterance = self.data["utterances"][0]
+        utterance["authorship"] = "source_quote"
+        with self.assertRaisesRegex(ValueError, "actual source reference"):
+            EXCHANGE.validate(self.data)
+        utterance["source_refs"] = ["missing"]
+        with self.assertRaisesRegex(ValueError, "Unknown utterance source"):
+            EXCHANGE.validate(self.data)
+
+    def test_b11_knowledge_cannot_hide_as_general(self):
+        self.data["source_registry"] = [{"id": "b11", "kind": "book", "book_id": "B11", "title": "Fixture source", "locator": "Fixture section"}]
+        self.data["utterances"][0]["source_refs"] = ["b11"]
+        self.node("knowledge")["data"]["source_family"] = "general"
+        with self.assertRaisesRegex(ValueError, "B11/B12 knowledge"):
+            EXCHANGE.validate(self.data)
+
     def test_grammar_requires_searchable_jlpt_level(self):
         pattern = self.node("grammar")["data"]["patterns"][0]
         del pattern["jlpt_level"]

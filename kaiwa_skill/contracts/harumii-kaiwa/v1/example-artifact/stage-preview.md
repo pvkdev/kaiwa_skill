@@ -4,7 +4,7 @@ Fixture kiểm hợp đồng, không phải chặng V5 đã biên soạn hoặc 
 
 ## Từ dùng khi gọi món [v01]
 
-メニュー、おすすめ、料理
+メニュー
 
 ## Mẫu đề nghị [g01]
 
