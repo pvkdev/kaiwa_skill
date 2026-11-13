@@ -1,6 +1,6 @@
 # Dữ liệu nội dung chặng — bản nháp V3.2
 
-Đây là hợp đồng biên soạn độc lập với engine app. Chỉ chốt giao diện import sau khi người dùng xem các chặng pilot. Không thêm field chấm điểm hoặc cơ chế học chỉ vì engine có thể hỗ trợ.
+Đây là hợp đồng **workspace biên tập/checkpoint**, không phải DTO import app. Giao diện trao đổi cho feature Harumii mới đã chốt riêng tại `kaiwa_skill/contracts/harumii-kaiwa/v1/CONTRACT.md`; đọc [hướng dẫn xuất](harumii-exchange.md). Không thêm field chấm điểm hoặc cơ chế học chỉ vì engine có thể hỗ trợ. Không dùng workspace 3.2 để import thẳng vào DB.
 
 ## Bộ dữ liệu một revision
 
@@ -149,11 +149,11 @@ Hai vai phải thực sự có lời nói. Sự kiện nhiều người được
 
 ```json
 {"id":"v01","scope":{"event_ids":["e01"]},"items":[
-  {"id":"v01-w01","ja":"会議室","reading":"かいぎしつ","vi":"phòng họp","exposure":"new","source_refs":["src01"]}
+  {"id":"v01-w01","ja":"会議室","exposure":"new","source_refs":["src01"]}
 ]}
 ```
 
-`scope` có thể dùng `stage_uid`, `lesson_ids`, `event_ids` hoặc `situation_ids`. Chọn theo mức liên quan, không chia vụn nếu từ được dùng xuyên suốt. Danh sách bao phủ các nhóm từ thực tế trong phạm vi topic, không chỉ những từ đang có trong hội thoại. V3.1 đánh dấu `exposure: new|review` cho từng item; từ review có liên kết `reuse` từ item cũ đến item hiện tại trong sổ bài. Xét đúng nghĩa/cách dùng. Reading là dữ liệu tùy chọn, không nhúng furigana vào hội thoại. Không thêm dạng bài vocabulary engine, lịch ôn hay ngưỡng đạt.
+`scope` có thể dùng `stage_uid`, `lesson_ids`, `event_ids` hoặc `situation_ids`. Chọn theo mức liên quan, không chia vụn nếu từ được dùng xuyên suốt. Danh sách bao phủ các nhóm từ thực tế trong phạm vi topic, không chỉ những từ đang có trong hội thoại. V3.1 đánh dấu `exposure: new|review` cho từng item; từ review có liên kết `reuse` từ item cũ đến item hiện tại trong sổ bài. Xét đúng nghĩa/cách dùng. Theo yêu cầu mới, chỉ cần từ Nhật; ID/exposure/source là metadata biên tập. Không bắt soạn reading/nghĩa/ví dụ từ; dữ liệu cũ có thể giữ nhưng gói app chỉ xuất `terms_ja`. Không thêm dạng bài vocabulary engine, lịch ôn hay ngưỡng đạt.
 
 ```json
 {"id":"g01","items":[

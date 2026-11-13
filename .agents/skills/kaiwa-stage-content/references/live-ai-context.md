@@ -2,7 +2,7 @@
 
 ## Phân biệt ba loại dữ liệu
 
-- **Challenge:** nhiệm vụ cụ thể; có brief cho người học và tình huống cho AI. Chọn phần kiến thức/tình huống phù hợp để luyện tổng hợp. Thiết kế chi tiết hiện ở `kaiwa_skill/planning/LIVE_AI_CHALLENGE_PLAN.md`; hợp đồng/helper challenge triển khai ở bước riêng.
+- **Challenge:** nhiệm vụ cụ thể; có brief cho người học và tình huống cho AI. Chọn phần kiến thức/tình huống phù hợp để luyện tổng hợp. Hợp đồng xuất app đã chốt ở `kaiwa_skill/contracts/harumii-kaiwa/v1/CONTRACT.md`, được `kaiwa_exchange.py` kiểm và xuất hai phần theo variant. Bản plan trước ở `kaiwa_skill/planning/LIVE_AI_CHALLENGE_PLAN.md` giữ lập luận thiết kế, không thay schema chuẩn mới.
 - **Free talk:** đúng một node cuối chặng; trò chuyện tự do dựa trên toàn bộ chất liệu đã biên soạn của chặng. Phải biên soạn sẵn tình huống/context, không chờ user tự nhập.
 - **Tình huống do user nhập trong app:** luồng riêng của Harumi, hiện có giới hạn nhập tay. Không lấy giới hạn đó làm trần cho hai loại nội dung lộ trình trên.
 

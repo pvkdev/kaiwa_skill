@@ -1,0 +1,905 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "const": "stage"
+    },
+    "course_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+    },
+    "stage_uid": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "display_code": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "title_vi": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "level": {
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ]
+    },
+    "scope_vi": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/node"
+      },
+      "minItems": 1
+    },
+    "utterances": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/utterance"
+      },
+      "minItems": 1
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+          },
+          "title_vi": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "id",
+          "title_vi"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lesson"
+      },
+      "minItems": 1
+    },
+    "review_links": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/review_link"
+      },
+      "minItems": 0
+    },
+    "retired": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/retired"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "course_id",
+    "stage_uid",
+    "revision",
+    "display_code",
+    "title_vi",
+    "level",
+    "scope_vi",
+    "nodes",
+    "utterances",
+    "events",
+    "lessons",
+    "review_links",
+    "retired"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "utterance": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+        },
+        "ja": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "vi": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "id",
+        "ja",
+        "vi"
+      ],
+      "additionalProperties": false
+    },
+    "speaker": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "enum": [
+            "A",
+            "B"
+          ]
+        },
+        "label_vi": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "role_vi": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "id",
+        "label_vi",
+        "role_vi"
+      ],
+      "additionalProperties": false
+    },
+    "turn": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+        },
+        "speaker_id": {
+          "enum": [
+            "A",
+            "B"
+          ]
+        },
+        "utterance_id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+        }
+      },
+      "required": [
+        "id",
+        "speaker_id",
+        "utterance_id"
+      ],
+      "additionalProperties": false
+    },
+    "shadow_item": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "kind": {
+              "const": "sentence"
+            },
+            "utterance_id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "utterance_id"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "kind": {
+              "const": "dialogue_ref"
+            },
+            "situation_node_id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "situation_node_id"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "variant": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+        },
+        "title_vi": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "learner_addendum_vi": {
+          "type": "string"
+        },
+        "ai_addendum_vi": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "id",
+        "title_vi",
+        "learner_addendum_vi",
+        "ai_addendum_vi"
+      ],
+      "additionalProperties": false
+    },
+    "lesson": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+        },
+        "title_vi": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "title_vi",
+        "node_ids"
+      ],
+      "additionalProperties": false
+    },
+    "review_link": {
+      "type": "object",
+      "properties": {
+        "from_stage_uid": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "from_revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "from_node_id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+        },
+        "to_node_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "purpose_vi": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "from_stage_uid",
+        "from_revision",
+        "from_node_id",
+        "to_node_ids",
+        "purpose_vi"
+      ],
+      "additionalProperties": false
+    },
+    "retired": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "node",
+            "utterance"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+        },
+        "reason_vi": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "replaced_by": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "kind",
+        "id",
+        "reason_vi",
+        "replaced_by"
+      ],
+      "additionalProperties": false
+    },
+    "node": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "type": {
+              "const": "knowledge"
+            },
+            "title_vi": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "body_md": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "utterance_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                  },
+                  "minItems": 0,
+                  "uniqueItems": true
+                },
+                "source_family": {
+                  "enum": [
+                    "general",
+                    "speak_japanese"
+                  ]
+                },
+                "video_status": {
+                  "enum": [
+                    "none",
+                    "planned"
+                  ]
+                },
+                "practice_node_id": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                }
+              },
+              "required": [
+                "body_md",
+                "utterance_ids",
+                "source_family",
+                "video_status"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "title_vi",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "type": {
+              "const": "vocabulary"
+            },
+            "title_vi": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "terms_ja": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "terms_ja"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "title_vi",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "type": {
+              "const": "grammar"
+            },
+            "title_vi": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "patterns": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "catalog": {
+                        "enum": [
+                          "minna",
+                          "bunpou"
+                        ]
+                      },
+                      "name_ja": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      }
+                    },
+                    "required": [
+                      "catalog",
+                      "name_ja"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "patterns"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "title_vi",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "type": {
+              "const": "situation"
+            },
+            "title_vi": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "event_id": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                },
+                "setting_vi": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "goal_vi": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "relationship_vi": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "outcome": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "speakers": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/speaker"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                },
+                "turns": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/turn"
+                  },
+                  "minItems": 2
+                },
+                "follows": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                  },
+                  "minItems": 0,
+                  "uniqueItems": true
+                },
+                "alternative_to": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                  },
+                  "minItems": 0,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "event_id",
+                "setting_vi",
+                "goal_vi",
+                "relationship_vi",
+                "outcome",
+                "speakers",
+                "turns",
+                "follows",
+                "alternative_to"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "title_vi",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "type": {
+              "const": "shadowing"
+            },
+            "title_vi": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "knowledge_node_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                  },
+                  "minItems": 0,
+                  "uniqueItems": true
+                },
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/shadow_item"
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "knowledge_node_ids",
+                "items"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "title_vi",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "type": {
+              "const": "live_challenge"
+            },
+            "title_vi": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "learner_brief": {
+                  "type": "object",
+                  "properties": {
+                    "scene_vi": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "learner_role_vi": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "ai_role_vi": {
+                      "type": "string",
+                      "minLength": 1,
+                      "pattern": "\\S"
+                    },
+                    "goals_vi": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "minItems": 1
+                    },
+                    "optional_steps_vi": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1,
+                        "pattern": "\\S"
+                      },
+                      "minItems": 0
+                    },
+                    "hint_utterance_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "vocabulary_node_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    },
+                    "grammar_node_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                      },
+                      "minItems": 0,
+                      "uniqueItems": true
+                    }
+                  },
+                  "required": [
+                    "scene_vi",
+                    "learner_role_vi",
+                    "ai_role_vi",
+                    "goals_vi",
+                    "optional_steps_vi",
+                    "hint_utterance_ids",
+                    "vocabulary_node_ids",
+                    "grammar_node_ids"
+                  ],
+                  "additionalProperties": false
+                },
+                "ai_situation_vi": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "context_node_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                },
+                "variants": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/$defs/variant"
+                  },
+                  "minItems": 1
+                },
+                "default_variant_id": {
+                  "type": "string",
+                  "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                }
+              },
+              "required": [
+                "learner_brief",
+                "ai_situation_vi",
+                "context_node_ids",
+                "variants",
+                "default_variant_id"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "title_vi",
+            "data"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "type": {
+              "const": "free_talk"
+            },
+            "title_vi": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "data": {
+              "type": "object",
+              "properties": {
+                "learner_intro_vi": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "ai_situation_vi": {
+                  "type": "string",
+                  "minLength": 1,
+                  "pattern": "\\S"
+                },
+                "conversation_starters_vi": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "pattern": "\\S"
+                  },
+                  "minItems": 0
+                },
+                "context_node_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "learner_intro_vi",
+                "ai_situation_vi",
+                "conversation_starters_vi",
+                "context_node_ids"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "id",
+            "type",
+            "title_vi",
+            "data"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    }
+  },
+  "title": "Harumii Kaiwa stage exchange 1.0.0"
+}

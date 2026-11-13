@@ -1,6 +1,6 @@
 ---
 name: kaiwa-stage-content
-description: Biên soạn hoặc nâng cấp chặng Kaiwa từ sách, nghiên cứu ngoài và AI viết mới; tình huống nhiều sự kiện/nhánh, nội dung gối đầu, Speak Japanese kèm shadowing, có checkpoint.
+description: Biên soạn, nâng cấp và xuất chặng Kaiwa cho Harumii; phối hợp sách và nội dung mới, gối đầu, Speak Japanese kèm shadowing, Live challenge/free talk và checkpoint.
 ---
 
 # Biên soạn chặng Kaiwa
@@ -12,6 +12,7 @@ description: Biên soạn hoặc nâng cấp chặng Kaiwa từ sách, nghiên c
 ## Phạm vi
 
 - Chỉ tạo dữ liệu nội dung. App đã có học từ vựng, shadowing toàn hội thoại, shadowing đổi vai và Live Kaiwa AI.
+- Đầu ra cho feature Harumii phải theo [hợp đồng trao đổi](references/harumii-exchange.md): từ vựng chỉ list Nhật; ngữ pháp chỉ tên Minna/bunpou để admin pick; mọi câu luyện Nhật có nghĩa Việt. App tự furigana và TTS, gói app không cần CD/audio sách hoặc ID DB.
 - Không tạo bài kiểm tra người học, điểm số, điều kiện đạt/mở khóa, thời lượng bắt buộc hay kịch bản điều khiển engine.
 - Thứ tự node là gợi ý đọc/học. Người học được chọn tự do; không biến quan hệ kiến thức thành khóa truy cập.
 - Giữ tiếng Nhật không furigana; giải thích và nghĩa hội thoại bằng tiếng Việt. Giữ nguồn/CD/track ở metadata nếu có bằng chứng, không khẳng định đã có file nghe.
@@ -29,7 +30,7 @@ description: Biên soạn hoặc nâng cấp chặng Kaiwa từ sách, nghiên c
 
 ## Quy trình cho từng chặng
 
-1. Đọc [hợp đồng dữ liệu](references/content-contract.md) khi bắt đầu; đọc [cách phối hợp sách và biên tập](references/editorial-workflow.md) trước khi chọn nguồn.
+1. Đọc [hợp đồng biên tập](references/content-contract.md) và [hợp đồng đầu ra Harumii](references/harumii-exchange.md) khi bắt đầu; đọc [cách phối hợp sách và biên tập](references/editorial-workflow.md) trước khi chọn nguồn. Workspace và wire JSON app là hai lớp; không import cấu trúc workspace thẳng vào DB.
 2. Xác định phạm vi chủ đề và cách nói phù hợp cấp độ. Xem hạt giống như gợi ý; token nguồn V4.1 có thể sai. Kiểm lại nội dung nguồn thực tế trước khi sử dụng.
 3. Quét chỉ mục của đủ 27 sách để tìm nguồn liên quan; đọc trọn các phần liên quan được chọn. Ghi rõ `index_only` hay `read` trong sổ nguồn. Không đọc lại toàn bộ 27 sách cho mỗi chặng, không gọi việc tìm thấy heading là đã đọc nội dung.
 4. Dừng để thiết kế bản đồ sự kiện/tình huống theo [độ bao phủ tình huống](references/situation-coverage.md): đa dạng sự kiện, mục đích, quan hệ, diễn biến, kết quả và các cuộc nói tiếp theo. Chủ động nghiên cứu ngoài và viết mới, không dừng vì sách chưa có mẫu. Ghi phần chưa kiểm dữ kiện; không áp số lượng node, từ, tình huống hay độ dài hội thoại cố định.
@@ -40,7 +41,7 @@ description: Biên soạn hoặc nâng cấp chặng Kaiwa từ sách, nghiên c
 9. Soạn nhóm từ đủ cho lĩnh vực và những biến thể thực tế của topic, không chỉ các từ tình cờ có trong hội thoại. Đánh dấu từ mới/từ ôn; đưa từ đã học vào câu và cuộc thoại mới một cách tự nhiên. Kiểm tên ngữ pháp cần dùng trước và sau khi viết; gối đầu cũng áp dụng cho ví dụ Speak Japanese.
 10. Giữ một node **free talk cuối chặng**, riêng với các challenge có nhiệm vụ. Đọc [context Live AI](references/live-ai-context.md): biên soạn sẵn tình huống free talk tổng hợp kiến thức, cách nói, từ/ngữ pháp và các cụm tình huống; thêm hướng dẫn trò chuyện tự do, gợi ý mở chuyện và xuất cả context đầy đủ lẫn `free-talk-situation.md` để app dùng. Không chỉ ghi danh sách ID hoặc một mô tả chung. Nội dung lộ trình do tác giả biên soạn **không chịu trần 1.000 ký tự của tình huống user tự nhập**; không rút mất kiến thức để vừa luồng nhập tay. Harumi tích hợp luồng nội dung lộ trình riêng; skill chỉ lo dữ liệu.
 11. Đọc lại tiếng Nhật, độ tự nhiên, dịch nghĩa, khác biệt cấp độ, các nhánh, sự gối đầu và chứng cứ nguồn. Đây là kiểm tra biên tập của tác giả, không phải bài kiểm tra người học. Script không chứng minh chất lượng hay đọc nguồn.
-12. Ghi checkpoint sau mỗi bài/cụm đáng kể, gồm sổ gối đầu và việc còn thiếu. Chỉ chốt revision sau khi đọc lại; giữ các khoảng trống có chủ ý trong `editorial.md`.
+12. Ghi checkpoint sau mỗi bài/cụm đáng kể, gồm sổ gối đầu và việc còn thiếu. Chuẩn bị `harumii-stage.json` đúng schema 1.0.0; helper kiểm đầu ra khai báo trước khi chốt. Chỉ chốt revision sau khi đọc lại, giữ khoảng trống có chủ ý trong `editorial.md`; đóng gói từ snapshot đã chốt bằng `kaiwa_exchange.py pack`. Gói có manifest hash để app preview/import theo version, không tự đẩy DB hoặc gọi TTS.
 
 ## Pause, tiếp tục, sửa chặng
 

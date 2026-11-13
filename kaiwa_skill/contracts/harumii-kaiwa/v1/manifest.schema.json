@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "const": "artifact_manifest"
+    },
+    "entrypoint": {
+      "enum": [
+        "stage.json",
+        "catalog.json"
+      ]
+    },
+    "files": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "pattern": "^[a-zA-Z0-9_-]+(?:\\.(ai|learner))?\\.(json|md)$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "entrypoint",
+    "files"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Harumii artifact manifest 1.0.0"
+}

@@ -1,7 +1,8 @@
-"""Local, single-writer stage drafts and immutable revisions. Python standard library."""
+"""Single-writer drafts/revisions; Harumii exchange validation also uses jsonschema."""
 import argparse
 import contextlib
 import hashlib
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -245,6 +246,31 @@ def check_dialogue(data, seen, label, errors):
         seen.add(tid)
 
 
+def check_harumii_export(draft, stage):
+    path = stage.get("harumii_export")
+    if not path:
+        return None  # Legacy editorial snapshots remain readable.
+    data = read(inside(draft, path))
+    script = Path(__file__).with_name("kaiwa_exchange.py")
+    spec = importlib.util.spec_from_file_location("kaiwa_exchange", script)
+    exchange = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(exchange)
+    exchange.validate(data)
+    levels = {"Sơ": "beginner", "Trung": "intermediate", "Thượng": "advanced"}
+    for key, expected in {"kind": "stage", "course_id": "kaiwa-main", "stage_uid": stage["stage_uid"], "title_vi": stage["title"],
+                          "display_code": stage["display_code"], "level": levels[stage["level"]]}.items():
+        if data.get(key) != expected:
+            raise ValueError("Harumii export does not match editorial stage: " + key)
+    expected_nodes = {n["id"] for n in stage["nodes"]}
+    exported_nodes = {n["id"] for n in data["nodes"] if n["type"] != "live_challenge"}
+    if expected_nodes != exported_nodes:
+        raise ValueError("Harumii export must preserve all editorial node IDs; only challenge nodes may be additional")
+    types = {node["id"]: node["type"] for node in data["nodes"]}
+    if any(types[node["id"]] != ("free_talk" if node["type"] == "live_context" else node["type"]) for node in stage["nodes"]):
+        raise ValueError("Harumii export must preserve editorial node types")
+    return data
+
+
 def check(draft, uid, repo):
     errors = []
     stage = read(draft / "stage.json")
@@ -317,7 +343,7 @@ def check(draft, uid, repo):
             items = data.get("items", [])
             if not items or len({i["id"] for i in items}) != len(items):
                 errors.append("Empty/duplicate list items: " + n["id"])
-            fields = ["ja", "vi"] if n["type"] == "vocabulary" else ["name_ja"]
+            fields = ["ja"] if n["type"] == "vocabulary" else ["name_ja"]
             if any(not i.get(k) for i in items for k in fields):
                 errors.append("Missing vocabulary/grammar names: " + n["id"])
         if n["type"] == "live_context":
@@ -399,6 +425,7 @@ def check(draft, uid, repo):
         validate_learning(draft, stage, repo, errors)
     if errors:
         raise ValueError("\n".join(errors))
+    check_harumii_export(draft, stage)
     return stage
 
 
@@ -508,11 +535,12 @@ def main():
                 atomic(draft / "stage.json", {"schema_version": "3.2-draft", "stage_uid": uid,
                        "display_code": info["display_code"], "title": info["title"], "level": info["level"],
                         "scope": "", "nodes": [], "events": [], "retired_ids": [], "source_refs": [],
-                        "curriculum": curriculum})
+                        "curriculum": curriculum, "harumii_export": "harumii-stage.json"})
                 atomic(draft / "sources.json", {"scan": [], "entries": []})
                 atomic(draft / "learning-map.json", {"schema_version": "1.0", "stage_uid": uid, "lessons": []})
                 (draft / "editorial.md").write_text("# Nhật ký biên tập\n\nChưa biên soạn.\n", encoding="utf-8")
             spec_paths = [registry_path, Path(__file__).resolve(),
+                          Path(__file__).with_name("kaiwa_exchange.py"),
                           Path(__file__).resolve().parents[1] / "SKILL.md",
                           Path(__file__).resolve().parents[1] / "references/content-contract.md",
                           Path(__file__).resolve().parents[1] / "references/progression.md",
@@ -520,6 +548,9 @@ def main():
                            Path(__file__).resolve().parents[1] / "references/situation-coverage.md",
                            inside(repo, curriculum["roadmap"]), inside(repo, curriculum["policy"]),
                            repo / "kaiwa_skill/planning/CURRENT_ROADMAP.json"]
+            spec_paths.extend((Path(__file__).resolve().parents[1] / "references").glob("*.md"))
+            spec_paths.extend((repo / "kaiwa_skill/contracts/harumii-kaiwa/v1").glob("*.json"))
+            spec_paths.append(repo / "kaiwa_skill/contracts/harumii-kaiwa/v1/CONTRACT.md")
             state = {"run": run, "stage_uid": uid, "status": "drafting", "created_at": now(),
                      "base_revision": current["revision"] if current else None,
                      "recovered_from": previous["run"] if previous else None,
@@ -579,6 +610,9 @@ def main():
             revisions = stage / "revisions"
             numbers = [int(p.name[1:]) for p in revisions.glob("r*") if re.fullmatch(r"r\d+", p.name)] if revisions.exists() else []
             revision_id = "r" + str(max(numbers, default=0) + 1).zfill(4)
+            exported = check_harumii_export(draft, content)
+            if exported is not None and exported["revision"] != int(revision_id[1:]):
+                raise ValueError("Harumii export revision must match new snapshot " + revision_id)
             revision = revisions / revision_id
             shutil.copytree(draft, revision / "content")
             manifest = {"revision": revision_id, "run": run, "stage_uid": uid,

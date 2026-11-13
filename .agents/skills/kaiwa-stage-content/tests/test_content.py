@@ -44,6 +44,7 @@ class ContentRegression(unittest.TestCase):
         opened = self.cli("begin", uid)
         draft, run = Path(opened["draft"]), opened["run"]
         stage = WORK.read(draft / "stage.json")
+        stage.pop("harumii_export", None)  # This fixture intentionally exercises the legacy editorial format.
         stage.update(scope="Fixture, not course material", events=[{"id": "e01", "title": "Event", "situation_ids": ["s01"]}], nodes=[
             {"id": "v01", "type": "vocabulary", "title": "Words", "path": "vocabulary/v01.json"},
             {"id": "k01", "type": "knowledge", "title": "Knowledge", "path": "knowledge/k01.md", "source_family": "speak_japanese", "video": {"status": "planned", "asset_ref": None}, "practice_node_id": "sh01"},
@@ -126,6 +127,13 @@ class ContentRegression(unittest.TestCase):
         put(live_path, data)
         with self.assertRaisesRegex(ValueError, "Missing authored free talk field"):
             WORK.check(self.draft, UIDS[0], self.root)
+
+    def test_vocabulary_does_not_require_app_enrichment(self):
+        path = self.draft / "vocabulary/v01.json"
+        data = WORK.read(path)
+        del data["items"][0]["vi"]
+        put(path, data)
+        WORK.check(self.draft, UIDS[0], self.root)
 
     def test_free_talk_must_stay_at_stage_end(self):
         stage = WORK.read(self.draft / "stage.json")

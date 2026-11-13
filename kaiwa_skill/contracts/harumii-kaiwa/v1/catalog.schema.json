@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "kind": {
+      "const": "catalog"
+    },
+    "course_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+    },
+    "roadmap_version": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "title_vi": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stage_uid": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "display_code": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "title_vi": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "level": {
+            "enum": [
+              "beginner",
+              "intermediate",
+              "advanced"
+            ]
+          },
+          "track_vi": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "cluster_id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "cluster_title_vi": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "order": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "stage_uid",
+          "display_code",
+          "title_vi",
+          "level",
+          "track_vi",
+          "cluster_id",
+          "cluster_title_vi",
+          "order"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "course_id",
+    "roadmap_version",
+    "title_vi",
+    "stages"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Harumii Kaiwa roadmap catalog exchange 1.0.0"
+}

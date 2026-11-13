@@ -1,6 +1,6 @@
 # Checkpoint và revision
 
-Chạy từ gốc repo bằng Python 3.10+. Helper chỉ dùng thư viện chuẩn, không gọi model, không tiêu token để sinh nội dung. Một worker biên soạn một chặng tại một thời điểm. Không có điểm hay trạng thái hoàn thành của người học trong dữ liệu này.
+Chạy từ gốc repo bằng Python 3.10+. Lõi checkpoint dùng thư viện chuẩn; kiểm gói Harumii dùng thêm `jsonschema`. Helper không gọi model, không tiêu token để sinh nội dung. Một worker biên soạn một chặng tại một thời điểm. Không có điểm hay trạng thái hoàn thành của người học trong dữ liệu này.
 
 ## Lệnh
 
@@ -17,6 +17,8 @@ py -B -X utf8 .agents/skills/kaiwa-stage-content/scripts/stage_work.py finalize 
 ```
 
 `begin` trả đường dẫn draft V3.2 và tạo `learning-map.json` rỗng. Tác giả viết trực tiếp trong draft đó. Đây **không phải chặng đã hoàn thành**. `checkpoint` và `pause` cần chỉ dẫn tiếp theo đủ cụ thể cho người mới nhận việc, gồm bài/nhánh tiếp theo và nội dung cũ cần ôn. Nếu sổ nguồn/sổ bài đang viết dở hoặc hash chưa khớp, vẫn lưu với `source_warning`/`context_warning`; phải sửa trước khi chốt phần liên quan.
+
+Lượt mới khai báo `harumii_export: harumii-stage.json`; chuẩn bị payload Exchange 1.0.0 theo [hướng dẫn xuất](harumii-exchange.md). `validate` kiểm gói app và ID/loại node/metadata khớp workspace; `finalize` còn yêu cầu revision gói bằng revision snapshot mới. Các challenge có thể được thêm ở gói app, nhưng không được làm mất ID node biên tập. Workspace legacy không có khai báo vẫn đọc được; muốn import feature mới thì nâng cấp draft, không bỏ khai báo chỉ để vượt kiểm tra. Sau khi chốt, dùng `kaiwa_exchange.py pack` từ file snapshot để tạo artifact có manifest; không lấy file preview sửa tay làm nguồn nhập.
 
 `resume` yêu cầu draft không thay đổi từ lúc pause và các nguồn/spec/context đã pin còn khớp. Nếu có thay đổi, không reset: kiểm lý do rồi dùng recovery. Pin gồm registry, skill, các reference của skill, script và metadata khung nếu có; nguồn từ `sources.json`; context các bài trước từ `learning-map.json`, kèm con trỏ revision hiện hành và các file của bài đã tham khảo. Thay đổi phải đọc lại phần liên quan, ghi tái đối chiếu; không chỉ đổi hash hoặc revision để làm lệnh chạy qua.
 

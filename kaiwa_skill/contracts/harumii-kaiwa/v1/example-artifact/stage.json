@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "stage",
+  "course_id": "kaiwa-main",
+  "stage_uid": "00000000-0000-4000-8000-000000000001",
+  "revision": 1,
+  "display_code": "DEMO-001",
+  "title_vi": "Ví dụ kỹ thuật: hỏi thực đơn ở quán",
+  "level": "beginner",
+  "scope_vi": "Fixture kiểm hợp đồng, không phải chặng V5 đã biên soạn hoặc trích sách. Cặp kiến thức/video và shadowing minh họa cấu trúc dành cho Speak Japanese.",
+  "nodes": [
+    {
+      "id": "v01",
+      "type": "vocabulary",
+      "title_vi": "Từ dùng khi gọi món",
+      "data": {
+        "terms_ja": [
+          "メニュー",
+          "おすすめ",
+          "料理"
+        ]
+      }
+    },
+    {
+      "id": "g01",
+      "type": "grammar",
+      "title_vi": "Mẫu đề nghị",
+      "data": {
+        "patterns": [
+          {
+            "catalog": "minna",
+            "name_ja": "〜ていただけませんか"
+          }
+        ]
+      }
+    },
+    {
+      "id": "k01",
+      "type": "knowledge",
+      "title_vi": "Đề nghị lịch sự — kiến thức dành cho video",
+      "data": {
+        "body_md": "# Đề nghị lịch sự\n\nNêu điều mình muốn nhờ, rồi chờ người kia phản hồi. Với nhân viên cửa hàng, có thể dùng cách đề nghị lịch sự.\n\n{{utterance:u01}}\n\nĐây là ví dụ tự viết để kiểm cấu trúc, không phải câu trích từ sách.",
+        "utterance_ids": [
+          "u01"
+        ],
+        "source_family": "speak_japanese",
+        "video_status": "planned",
+        "practice_node_id": "sh01"
+      }
+    },
+    {
+      "id": "sh01",
+      "type": "shadowing",
+      "title_vi": "Luyện câu vừa học",
+      "data": {
+        "knowledge_node_ids": [
+          "k01"
+        ],
+        "items": [
+          {
+            "id": "item01",
+            "kind": "sentence",
+            "utterance_id": "u01"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s01",
+      "type": "situation",
+      "title_vi": "Xin xem thực đơn",
+      "data": {
+        "event_id": "e01",
+        "setting_vi": "Khách vừa ngồi vào bàn trong quán.",
+        "goal_vi": "Xin thực đơn và đáp lại khi nhận được.",
+        "relationship_vi": "Khách và nhân viên, lịch sự.",
+        "outcome": "received",
+        "speakers": [
+          {
+            "id": "A",
+            "label_vi": "Khách",
+            "role_vi": "Người gọi món"
+          },
+          {
+            "id": "B",
+            "label_vi": "Nhân viên",
+            "role_vi": "Nhân viên phục vụ"
+          }
+        ],
+        "turns": [
+          {
+            "id": "t01",
+            "speaker_id": "A",
+            "utterance_id": "u01"
+          },
+          {
+            "id": "t02",
+            "speaker_id": "B",
+            "utterance_id": "u02"
+          },
+          {
+            "id": "t03",
+            "speaker_id": "A",
+            "utterance_id": "u03"
+          }
+        ],
+        "follows": [],
+        "alternative_to": []
+      }
+    },
+    {
+      "id": "c01",
+      "type": "live_challenge",
+      "title_vi": "Tự xin thực đơn và hỏi món gợi ý",
+      "data": {
+        "learner_brief": {
+          "scene_vi": "Bạn lần đầu đến quán và muốn xem thực đơn rồi hỏi món được gợi ý.",
+          "learner_role_vi": "Khách",
+          "ai_role_vi": "Nhân viên quán",
+          "goals_vi": [
+            "Xin xem thực đơn",
+            "Hỏi món được gợi ý và xác nhận giá",
+            "Cảm ơn hoặc hỏi tiếp điều mình cần"
+          ],
+          "optional_steps_vi": [
+            "Mở lời",
+            "Nhờ đưa thực đơn",
+            "Hỏi món gợi ý",
+            "Xác nhận rồi kết thúc"
+          ],
+          "hint_utterance_ids": [
+            "u01"
+          ],
+          "vocabulary_node_ids": [
+            "v01"
+          ],
+          "grammar_node_ids": [
+            "g01"
+          ]
+        },
+        "ai_situation_vi": "Chỉ đóng vai một nhân viên quán. Người học là khách mới đến. Trả lời tiếng Nhật ngắn, dễ hiểu; chờ khách hỏi, không tự nói hết đáp án, không nói thay khách. Khi khách bí, hỗ trợ nhỏ trong vai. Phản ứng theo ý nghĩa, không bắt đọc câu chuẩn. Dữ kiện quán giả định được xác định trong biến thể. Khi việc đã rõ, đáp tự nhiên; không chấm điểm hoặc tự đóng cuộc gọi.",
+        "context_node_ids": [
+          "v01",
+          "g01",
+          "k01",
+          "sh01",
+          "s01"
+        ],
+        "variants": [
+          {
+            "id": "normal",
+            "title_vi": "Có thực đơn tiếng Việt",
+            "learner_addendum_vi": "Bạn có thể hỏi quán có thực đơn tiếng Việt không.",
+            "ai_addendum_vi": "Quán có thực đơn tiếng Việt. Nếu được hỏi, món gợi ý là cơm gà 800 yên. Đây là dữ kiện giả định; chỉ cung cấp khi khách hỏi liên quan."
+          },
+          {
+            "id": "alternative",
+            "title_vi": "Chỉ có thực đơn tiếng Nhật",
+            "learner_addendum_vi": "Nếu không có thực đơn tiếng Việt, hãy hỏi cách khác để hiểu và chọn món.",
+            "ai_addendum_vi": "Quán chỉ có thực đơn tiếng Nhật, nhưng có ảnh món ăn. Nếu khách hỏi, có thể giải thích món gợi ý là cơm gà 800 yên hoặc đưa thực đơn có ảnh. Không giả vờ có bản tiếng Việt. Đây là dữ kiện giả định."
+          }
+        ],
+        "default_variant_id": "normal"
+      }
+    },
+    {
+      "id": "ft01",
+      "type": "free_talk",
+      "title_vi": "Trò chuyện tự do về ăn ngoài",
+      "data": {
+        "learner_intro_vi": "Cùng trò chuyện về gọi món hoặc những trải nghiệm ăn ngoài. Bạn có thể hỏi thêm hay đổi chủ đề.",
+        "ai_situation_vi": "Trò chuyện tự do về ăn ngoài với người học. Vận dụng cách nhờ xem thực đơn, hỏi món gợi ý và cảm ơn đã có trong tài liệu. Gợi chuyện vừa sức rồi theo điều người học muốn nói; giúp khi họ bí. Giữ vai một đối tác phù hợp, không lần lượt diễn mọi vai trong hội thoại mẫu. Tài liệu không chứng minh user đã học thuộc. Không kiểm tra, không bắt dùng câu chuẩn; cho phép mở rộng ngoài chặng.",
+        "conversation_starters_vi": [
+          "Bạn thích gọi món quen hay thử món mới?",
+          "Bạn thường hỏi nhân viên điều gì trước khi gọi món?"
+        ],
+        "context_node_ids": [
+          "v01",
+          "g01",
+          "k01",
+          "sh01",
+          "s01"
+        ]
+      }
+    }
+  ],
+  "utterances": [
+    {
+      "id": "u01",
+      "ja": "メニューを見せていただけませんか。",
+      "vi": "Bạn có thể cho tôi xem thực đơn được không?"
+    },
+    {
+      "id": "u02",
+      "ja": "はい、どうぞ。",
+      "vi": "Vâng, mời bạn xem."
+    },
+    {
+      "id": "u03",
+      "ja": "ありがとうございます。",
+      "vi": "Cảm ơn bạn."
+    }
+  ],
+  "events": [
+    {
+      "id": "e01",
+      "title_vi": "Trao đổi khi bắt đầu gọi món"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "l01",
+      "title_vi": "Cách đề nghị và luyện ví dụ",
+      "node_ids": [
+        "v01",
+        "g01",
+        "k01",
+        "sh01"
+      ]
+    },
+    {
+      "id": "l02",
+      "title_vi": "Vận dụng vào hội thoại",
+      "node_ids": [
+        "s01"
+      ]
+    }
+  ],
+  "review_links": [],
+  "retired": []
+}
