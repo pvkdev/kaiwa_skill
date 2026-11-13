@@ -656,6 +656,7 @@ def main():
             atomic(current_path, {"revision": revision_id, "run": run, "stage_uid": uid, "updated_at": now()})
             state["status"] = "finalized"
             state["revision"] = revision_id
+            state["next_action"] = "Finalized: await user feedback or an explicitly requested upgrade; use begin --from-current, not resume/recover."
             state["continuity_pending"] = manifest["continuity_pending"]
             atomic(state_path, state)
             owner_path.unlink()

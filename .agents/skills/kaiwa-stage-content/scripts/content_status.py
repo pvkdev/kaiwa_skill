@@ -35,7 +35,8 @@ def main():
         rows.append({"stage_uid": uid, "display_code": info["display_code"], "title": info["title"],
                      "status": status, "current_revision": current["revision"] if current else None,
                      "run": owner["run"] if owner else latest["run"] if latest else None,
-                     "next_action": latest.get("next_action") if latest else None})
+                     "next_action": "Đã chốt; chờ feedback. Nâng cấp bằng begin --from-current khi được giao." if status == "finalized"
+                                    else latest.get("next_action") if latest else None})
     summary = dict(Counter(row["status"] for row in rows))
     output = {"generated_at": datetime.now(timezone.utc).isoformat(), "derived_not_authoritative": True,
               "roadmap_version": pointer["version"], "counts": summary, "stages": rows}
