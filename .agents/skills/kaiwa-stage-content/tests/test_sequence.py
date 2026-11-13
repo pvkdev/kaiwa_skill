@@ -298,6 +298,28 @@ class SequenceInAuthoring(PlanFixture):
         self.put("source-map.json", audit)
         self.assertIn("every source turn", self.cli("validate", uid, self.run_id, ok=False))
 
+    def test_catalog_pack_from_another_book_is_checked(self):
+        spec = importlib.util.spec_from_file_location("stage_compile_pack", SCRIPTS / "stage_compile.py")
+        compiler = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(compiler)
+        path = self.root / "kaiwa_skill/planning/catalog27/audio_packs/B15/model.json"
+        path.parent.mkdir(parents=True)
+        manifest = {"pack_id": "B15/model", "edition": "fixture", "boundary_evidence": "complete fixture",
+                    "tracks": [{"disc": "1", "track": "7", "locator": "model", "parts": [
+                        {"path": "script.md", "sha256": "fixture", "unit": "model", "turns": [[2, 0, 3]]}]}]}
+        path.write_text(json.dumps(manifest), encoding="utf-8")
+        source = {"src": {"book_id": "B15", "path": "script.md", "sha256": "fixture"}}
+        texts = {"src": '<a id="model"></a>\nはい。'}
+        data = {"utterances": [{"id": "u", "ja": "はい。", "authorship": "source_quote", "source_refs": ["src"]}],
+                "nodes": [{"id": "sh", "type": "shadowing", "data": {
+                    "items": [{"kind": "sentence", "utterance_id": "u"}]}}]}
+        audit = {"audio_packs": [{"pack_id": "B15/model", "manifest_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                                 "shadowing_node_id": "sh", "utterance_ids": ["u"]}]}
+        self.assertEqual(len(compiler.check_audio_packs(self.root, data, audit, source, texts)), 1)
+        data["nodes"][0]["data"]["items"].append({"kind": "sentence", "utterance_id": "u"})
+        with self.assertRaisesRegex(ValueError, "declared order"):
+            compiler.check_audio_packs(self.root, data, audit, source, texts)
+
     def test_new_writing_cannot_be_labelled_source_reference(self):
         self.assign("B11", "u-part1-01", 1)
         uid = self.open(1, {"k01": [{"book_id": "B11", "unit": "u-part1-01"}]})

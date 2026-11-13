@@ -118,7 +118,7 @@ def check_audio_packs(repo, data, audit, sources, source_texts):
             raise ValueError("CD pack must contain every source turn: " + key)
         for uid, (script_refs, ja) in zip(ids, turns):
             u = utterances[uid]
-            if uid not in required or set(script_refs).isdisjoint(u["source_refs"]) or u["ja"] != ja:
+            if u.get("authorship") != "source_quote" or set(script_refs).isdisjoint(u["source_refs"]) or u["ja"] != ja:
                 raise ValueError("CD pack must reproduce each catalog turn verbatim in order: " + key)
         covered.update(ids)
         by_shadow.setdefault(nid, []).append((key.split("/")[0], units, ids))
@@ -128,7 +128,7 @@ def check_audio_packs(repo, data, audit, sources, source_texts):
     # of the source pack in another shadowing node or surround it with extra copies.
     for n in nodes.values():
         if n["type"] == "shadowing":
-            actual = [uid for uid in shadow_sequence(n, nodes) if uid in required]
+            actual = [uid for uid in shadow_sequence(n, nodes) if uid in required or uid in covered]
             expected = [uid for _, _, ids in by_shadow.get(n["id"], []) for uid in ids]
             if actual != expected:
                 raise ValueError("Shadowing must use complete catalog packs in declared order: " + n["id"])
