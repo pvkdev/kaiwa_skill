@@ -4,6 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Harumii · Lộ trình Kaiwa</title>
+    <script>
+      // Apply the saved preference before the first paint, including local-file previews.
+      try {
+        const savedTheme = localStorage.getItem("harumii-preview-theme");
+        document.documentElement.dataset.theme =
+          savedTheme === "dark" || savedTheme === "light"
+            ? savedTheme
+            : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      } catch {
+        document.documentElement.dataset.theme =
+          matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+    </script>
     <style>
       :root {
         color-scheme: light;
@@ -15,8 +28,63 @@
         --accent: #7460c4;
         --soft: #f0ebfc;
         --green: #35866d;
+        --tab: #faf8fe;
+        --status: #f4f1fa;
+        --success: #e9f5ee;
+        --danger: #a5324a;
+        --danger-bg: #fff3f4;
+        --danger-line: #efd5db;
+        --sentence: #f8f7fb;
+        --bubble-a: #f6f3fc;
+        --bubble-b: #f2f7f4;
+        --avatar-a: #eee8fa;
+        --avatar-b: #e5f1ed;
+        --word: #fdfcfa;
+        --video-bg: #faf7ff;
+        --video-ink: #7d689e;
+        --finish: #eeebf7;
+        --icon-knowledge: #f0eaff;
+        --icon-vocabulary: #fff1dc;
+        --icon-grammar: #e6f4ed;
+        --icon-situation: #e6f0ff;
+        --icon-shadowing: #fff0ee;
+        --icon-live: #f8e8f6;
+        --icon-free: #e6f5f3;
         --radius: 18px;
         font-family: Inter, "Segoe UI", sans-serif;
+      }
+      :root[data-theme="dark"] {
+        color-scheme: dark;
+        --paper: #15151d;
+        --surface: #1f1f2a;
+        --ink: #eceaf4;
+        --muted: #b4b0c4;
+        --line: #3b384c;
+        --accent: #b9a5ff;
+        --soft: #322943;
+        --green: #91d5b8;
+        --tab: #252130;
+        --status: #211d2b;
+        --success: #233c32;
+        --danger: #ffb0bb;
+        --danger-bg: #3d242d;
+        --danger-line: #76404f;
+        --sentence: #292636;
+        --bubble-a: #2d273c;
+        --bubble-b: #24342e;
+        --avatar-a: #3d3152;
+        --avatar-b: #2c473b;
+        --word: #282631;
+        --video-bg: #2b2338;
+        --video-ink: #c5b1ed;
+        --finish: #2c263a;
+        --icon-knowledge: #3d3054;
+        --icon-vocabulary: #483a27;
+        --icon-grammar: #284034;
+        --icon-situation: #2a3b55;
+        --icon-shadowing: #4b302f;
+        --icon-live: #452d43;
+        --icon-free: #23413c;
       }
       * {
         box-sizing: border-box;
@@ -41,6 +109,10 @@
       button {
         cursor: pointer;
         color: inherit;
+      }
+      input, select {
+        color: var(--ink);
+        accent-color: var(--accent);
       }
       button:disabled {
         cursor: wait;
@@ -93,7 +165,7 @@
       }
       .btn {
         border: 1px solid var(--line);
-        background: #fff;
+        background: var(--surface);
         padding: 8px 13px;
         border-radius: 10px;
         font-size: 13px;
@@ -131,7 +203,7 @@
         border-bottom-color: var(--accent);
       }
       .tab.pilot {
-        background: #faf8fe;
+        background: var(--tab);
         border-radius: 10px 10px 0 0;
       }
       .tabs .tab:nth-child(4) {
@@ -143,7 +215,7 @@
       }
       .statusbar {
         padding: 9px 4vw;
-        background: #f4f1fa;
+        background: var(--status);
         border-bottom: 1px solid var(--line);
         display: flex;
         justify-content: space-between;
@@ -151,9 +223,9 @@
       }
       .layout {
         display: grid;
-        grid-template-columns: 250px minmax(0, 1fr);
-        max-width: 1560px;
-        margin: auto;
+        grid-template-columns: clamp(320px, 23vw, 380px) minmax(0, 1fr);
+        width: 100%;
+        margin: 0;
         min-height: 75vh;
       }
       .sidebar {
@@ -210,6 +282,8 @@
       main {
         padding: 35px clamp(18px, 4vw, 58px) 80px;
         min-width: 0;
+        width: 100%;
+        max-width: 1280px;
       }
       h1 {
         font-size: clamp(25px, 3vw, 36px);
@@ -243,7 +317,7 @@
       }
       .filters input,
       .filters select {
-        background: white;
+        background: var(--surface);
         border: 1px solid var(--line);
         border-radius: 11px;
         padding: 10px 13px;
@@ -298,7 +372,7 @@
         font-size: 19px;
       }
       .stage-card.ready .orb {
-        background: #e9f5ee;
+        background: var(--success);
         color: var(--green);
       }
       .stage-title {
@@ -325,7 +399,7 @@
         border-radius: 20px;
         padding: 35px;
         text-align: center;
-        background: #fff;
+        background: var(--surface);
         max-width: 730px;
         margin: 35px auto;
       }
@@ -337,9 +411,9 @@
         font-size: 14px;
       }
       .error {
-        color: #a5324a;
-        background: #fff3f4;
-        border: 1px solid #efd5db;
+        color: var(--danger);
+        background: var(--danger-bg);
+        border: 1px solid var(--danger-line);
         border-radius: 12px;
         padding: 14px;
         margin: 12px 0;
@@ -375,7 +449,7 @@
       }
       .node {
         scroll-margin-top: 155px;
-        background: white;
+        background: var(--surface);
         border: 1px solid var(--line);
         border-radius: var(--radius);
         padding: 25px;
@@ -406,25 +480,25 @@
         margin-bottom: 2px;
       }
       .knowledge .icon {
-        background: #f0eaff;
+        background: var(--icon-knowledge);
       }
       .vocabulary .icon {
-        background: #fff1dc;
+        background: var(--icon-vocabulary);
       }
       .grammar .icon {
-        background: #e6f4ed;
+        background: var(--icon-grammar);
       }
       .situation .icon {
-        background: #e6f0ff;
+        background: var(--icon-situation);
       }
       .shadowing .icon {
-        background: #fff0ee;
+        background: var(--icon-shadowing);
       }
       .live_challenge .icon {
-        background: #f8e8f6;
+        background: var(--icon-live);
       }
       .free_talk .icon {
-        background: #e6f5f3;
+        background: var(--icon-free);
       }
       .md {
         font-size: 15px;
@@ -479,7 +553,7 @@
         display: none;
       }
       .utterance {
-        background: #f8f7fb;
+        background: var(--sentence);
         border-radius: 11px;
         padding: 14px 17px;
         margin: 10px 0;
@@ -496,25 +570,25 @@
         height: 29px;
         flex-shrink: 0;
         border-radius: 50%;
-        background: #eee8fa;
+        background: var(--avatar-a);
         color: var(--accent);
         font-size: 12px;
         font-weight: 700;
         margin-top: 4px;
       }
       .turn[data-speaker="B"] .avatar {
-        background: #e5f1ed;
+        background: var(--avatar-b);
         color: var(--green);
       }
       .turn .bubble {
         flex: 1;
         min-width: 0;
-        background: #f6f3fc;
+        background: var(--bubble-a);
         border-radius: 0 14px 14px;
         padding: 12px 16px;
       }
       .turn[data-speaker="B"] .bubble {
-        background: #f2f7f4;
+        background: var(--bubble-b);
       }
       .speaker {
         font-size: 11px;
@@ -539,7 +613,7 @@
         border-radius: 10px;
         padding: 9px 14px;
         font-size: 19px;
-        background: #fdfcfa;
+        background: var(--word);
       }
       .pattern {
         display: flex;
@@ -555,7 +629,7 @@
         font-size: 18px;
       }
       .level-tag {
-        background: #e9f3ed;
+        background: var(--success);
         color: var(--green);
         font-size: 12px;
         padding: 3px 8px;
@@ -563,10 +637,10 @@
       }
       .video {
         border: 1px dashed #d4c7e9;
-        background: #faf7ff;
+        background: var(--video-bg);
         border-radius: 12px;
         padding: 17px;
-        color: #7d689e;
+        color: var(--video-ink);
         font-size: 13px;
         margin-bottom: 20px;
       }
@@ -583,7 +657,7 @@
         border: 1px solid var(--line);
         border-radius: 8px;
         padding: 6px;
-        background: #fff;
+        background: var(--surface);
       }
       .goal-list li {
         margin: 8px 0;
@@ -621,7 +695,7 @@
         padding: 16px;
       }
       .finish {
-        background: #eeebf7;
+        background: var(--finish);
         border-radius: 16px;
         text-align: center;
         padding: 24px;
@@ -659,7 +733,7 @@
       }
       .load-progress {
         height: 3px;
-        background: #eee7fc;
+        background: var(--soft);
         overflow: hidden;
       }
       .load-progress::after {
@@ -677,7 +751,7 @@
       }
       @media (max-width: 1050px) {
         .layout {
-          grid-template-columns: 210px minmax(0, 1fr);
+          grid-template-columns: 280px minmax(0, 1fr);
         }
         .sidebar {
           padding: 25px 12px;
@@ -769,6 +843,7 @@
       <div class="topbar">
         <div class="brand">harumii <small>KAIWA</small></div>
         <div class="tools">
+          <button class="btn" id="theme" type="button" aria-pressed="false">☾ Chế độ đêm</button>
           <button class="btn" id="folder">Chọn thư mục dữ liệu</button
           ><button class="btn" id="refresh">↻ Tải lại</button>
         </div>
@@ -1961,6 +2036,19 @@
           };
         });
       }
+      const themeButton = $("#theme");
+      function showThemeButton() {
+        const dark = document.documentElement.dataset.theme === "dark";
+        themeButton.setAttribute("aria-pressed", String(dark));
+        themeButton.textContent = dark ? "☀ Chế độ sáng" : "☾ Chế độ đêm";
+      }
+      themeButton.onclick = () => {
+        const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+        document.documentElement.dataset.theme = theme;
+        try { localStorage.setItem("harumii-preview-theme", theme); } catch {}
+        showThemeButton();
+      };
+      showThemeButton();
       let remembered = null;
       $("#folder").onclick = async () => {
         try {
