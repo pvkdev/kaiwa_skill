@@ -51,6 +51,6 @@ Soạn và rà hội thoại/câu luyện trước, rồi **trích ngược từ
 
 ## Chạy dài, phối hợp và nâng cấp
 
-Mạch gối đầu là quan hệ biên soạn. Worker có thể tìm nguồn/làm nháp song song; trước khi chốt phần nối tiếp phải đọc các bài trước thực có, cập nhật `lookback/reuse`, không trỏ draft của worker khác như một bản đã chốt. Với bài khác chặng, pin UUID, revision và các file của bài đã tham khảo. Khi pause/resume, giữ cả sổ này trong checkpoint.
+Mạch gối đầu là cân nhắc biên soạn. Worker có thể tìm nguồn/làm nháp song song; nếu ghi đã tham khảo một bài trước thì phải đọc phần liên quan thực có, không trỏ draft của worker khác như một bản đã chốt. Không bắt tạo `lookback/reuse` để chốt bài. Với liên kết khác chặng được chọn ghi, pin UUID, revision và các file đã tham khảo. Khi pause/resume, giữ sổ này trong checkpoint.
 
 Khi nâng cấp một bài cũ, không đổi ID. Tìm các `lookback/reuse` dùng UID/bài đó trong những chặng sau, so revision và đọc lại phần thực sự ảnh hưởng. Bản đã chốt vẫn giữ snapshot; cập nhật bài sau theo phạm vi ảnh hưởng thay vì tự sinh lại cả lộ trình. Helper phát hiện con trỏ revision cũ khi kiểm draft để tác giả xem lại; không tự sửa nội dung hoặc khóa bài người học.

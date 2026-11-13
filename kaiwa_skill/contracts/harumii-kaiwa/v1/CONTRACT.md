@@ -84,7 +84,7 @@ App lấy cùng hội thoại để shadowing toàn bộ hoặc đóng một vai
 
 ### Shadowing
 
-`items` là câu đơn (`utterance_id`) hoặc tham chiếu tình huống (`situation_node_id`). Hội thoại mini cũng là một node situation có ID, có thể tham chiếu nhiều lần; không chép dialogue inline thêm một bản. B01 5500/必須700/Nama/なめらか/Shadowing được nhóm vào đây. B11/B12 dùng sau kiến thức dành cho video.
+`items` có câu đơn (`utterance_id`), tham chiếu tình huống (`situation_node_id`) hoặc hội thoại luyện ngắn `kind=dialogue` gồm title, hai speakers và turns trỏ utterance IDs. Đoạn nguồn chỉ phục vụ một nhóm shadowing có thể đặt ngay trong nhóm, không tạo thêm bước học riêng để đáp ứng cấu trúc kỹ thuật. Nếu đã có tình huống độc lập thì dùng ref thay vì copy. Lời Nhật–Việt vẫn chỉ có một bản trong utterance bank. B01/必須700/Nama/なめらか/Shadowing dùng đúng chất liệu luyện ở đây; B11/B12 nối ngay sau kiến thức/video.
 
 ### Live challenge
 

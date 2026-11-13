@@ -319,6 +319,53 @@
             "situation_node_id"
           ],
           "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_-]*$"
+            },
+            "kind": {
+              "const": "dialogue"
+            },
+            "title_vi": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            "learning_scope": {
+              "enum": [
+                "core",
+                "source_reference"
+              ]
+            },
+            "speakers": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/speaker"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "turns": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/turn"
+              },
+              "minItems": 2
+            }
+          },
+          "required": [
+            "id",
+            "kind",
+            "title_vi",
+            "learning_scope",
+            "speakers",
+            "turns"
+          ],
+          "additionalProperties": false
         }
       ]
     },

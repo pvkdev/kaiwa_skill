@@ -83,3 +83,24 @@ class CanonicalLifecycle(unittest.TestCase):
         audit["vocabulary_evidence"]["v01"][0]["evidence"][0]["surface"] = "not-in-dialogue"
         self.put("source-map.json", audit)
         self.assertIn("actual spoken example", self.cli("validate", self.run, ok=False))
+
+    def test_speak_shadowing_can_reference_a_full_dialogue(self):
+        node = next(n for n in self.data["nodes"] if n["type"] == "shadowing")
+        node["data"]["items"] = [{"id": "source-dialogue", "kind": "dialogue_ref", "situation_node_id": "s01"}]
+        self.put("harumii-stage.json", self.data)
+        self.cli("validate", self.run)
+
+    def test_source_dialogue_can_live_inside_shadowing_without_extra_lesson_node(self):
+        original = next(n for n in self.data["nodes"] if n["type"] == "situation")["data"]
+        shadow = next(n for n in self.data["nodes"] if n["type"] == "shadowing")
+        shadow["data"]["items"] = [{"id": "source-mini", "kind": "dialogue", "title_vi": "Source mini dialogue",
+                                      "learning_scope": "source_reference", "speakers": original["speakers"], "turns": original["turns"]}]
+        self.put("harumii-stage.json", self.data)
+        self.cli("validate", self.run)
+        compiled = json.loads((self.draft / "shadowing/sh01.json").read_text(encoding="utf-8"))
+        self.assertEqual(compiled["items"][0]["kind"], "dialogue")
+        self.assertEqual(len(self.data["nodes"]), 7)
+        spec = importlib.util.spec_from_file_location("inline_exchange", SCRIPT.with_name("kaiwa_exchange.py"))
+        exchange = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(exchange)
+        self.assertIn("Mẫu tham khảo từ nguồn", exchange.material_text(self.data, [shadow["id"]]))

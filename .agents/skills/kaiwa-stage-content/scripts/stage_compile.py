@@ -66,6 +66,8 @@ def compile_stage(draft, repo=None):
         spoken = {t["utterance_id"] for n in data["nodes"] if n["type"] == "situation" for t in n["data"]["turns"]}
         spoken.update(i["utterance_id"] for n in data["nodes"] if n["type"] == "shadowing"
                       for i in n["data"]["items"] if i["kind"] == "sentence")
+        spoken.update(t["utterance_id"] for n in data["nodes"] if n["type"] == "shadowing"
+                      for i in n["data"]["items"] if i["kind"] == "dialogue" for t in i["turns"])
         for node in data["nodes"]:
             if node["type"] != "vocabulary":
                 continue
@@ -138,7 +140,18 @@ def compile_stage(draft, repo=None):
             value.update(knowledge_ids=content["knowledge_node_ids"], items=[])
             for item in content["items"]:
                 if item["kind"] == "dialogue_ref":
-                    value["items"].append({"id": item["id"], "kind": "situation_ref", "situation_id": item["situation_node_id"]})
+                    target = next(n for n in data["nodes"] if n["id"] == item["situation_node_id"])
+                    value["items"].append({"id": item["id"], "kind": "situation_ref", "situation_id": item["situation_node_id"],
+                                           "example_id": target["data"]["turns"][0]["utterance_id"]})
+                elif item["kind"] == "dialogue":
+                    ids = [t["utterance_id"] for t in item["turns"]]
+                    categories = {utterances[uid].get("authorship", authorship) for uid in ids}
+                    category = next(iter(categories)) if len(categories) == 1 else "source_adaptation"
+                    value["items"].append({"id": item["id"], "kind": "dialogue", "example_id": ids[0],
+                                           "speakers": [{"id": s["id"], "role": s["role_vi"]} for s in item["speakers"]],
+                                           "turns": [{"id": nid + "--" + item["id"] + "--" + t["id"], "speaker": t["speaker_id"],
+                                                      "ja": utterances[t["utterance_id"]]["ja"], "vi": utterances[t["utterance_id"]]["vi"]}
+                                                     for t in item["turns"]], "authorship": category})
                 else:
                     u = utterances[item["utterance_id"]]
                     value["items"].append({"id": item["id"], "kind": "sentence", "example_id": u["id"],

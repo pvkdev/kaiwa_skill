@@ -19,7 +19,7 @@ live-context.md          bản context đầy đủ do helper ghép từ các no
 free-talk-situation.md   tình huống free talk sẵn dùng kèm nội dung học, không sửa tay
 ```
 
-`stage.json` là mục lục chính. JSON nội dung và Markdown kiến thức là bản gốc biên soạn; `live-context.md` là bản dẫn xuất. Không duy trì thêm bản MD hội thoại phải sửa đồng thời với JSON.
+Trong canonical mode, `harumii-stage.json` là bản nội dung gốc; `stage.json`, JSON nội dung, Markdown kiến thức và các context là bản dẫn xuất. Các ví dụ workspace dưới đây dùng để hiểu cấu trúc legacy, không phải yêu cầu viết thêm một bản nội dung. Không sửa song song các bản dẫn xuất.
 
 Ví dụ rút gọn cấu trúc, không phải một chặng đã biên soạn:
 
@@ -70,7 +70,7 @@ V3.2 thêm phần free talk do tác giả soạn sẵn và file dẫn xuất `fr
 ]}
 ```
 
-Đây là ví dụ nối liên kết, không chứng minh đã biên soạn bài. Trước bài 3, `lookback` thường có l01 và l02; thêm bài xa hơn khi phù hợp. Nếu không dùng lại gì, ghi lý do; không có tỷ lệ ôn hay số từ cũ bắt buộc. Phần còn thiếu do chưa có bài trước nằm trong `pending_previous` và nhật ký, không bịa thành đã học.
+Đây là ví dụ liên kết tự chọn, không chứng minh đã biên soạn bài. Khi viết mới, cân nhắc kiến thức cũ phù hợp để vận dụng tự nhiên. Không bắt đọc/tái dùng hai bài trước, không yêu cầu giải trình việc không tái dùng hoặc ghi pending cho bài chưa có. `lookback`, `reuse`, `pending_previous` có thể để rỗng; không bịa thành đã học.
 
 Tham chiếu nội bộ dùng `revision: null`; `lesson_id` phải đứng trước. Khác chặng dùng UUID + revision `r0001`… đã chốt + lesson ID, và `from` chỉ rõ node/item được tái sử dụng. `item_id` có thể là ID từ, mẫu câu, ví dụ hoặc lượt nói; bỏ field đó nếu dùng lại ý kiến thức của cả node. `in` chỉ rõ nơi tái xuất hiện ở bài hiện tại. Chưa có bài trước thì chỉ ghi pending, không trỏ draft khác.
 

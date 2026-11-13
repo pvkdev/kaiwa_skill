@@ -47,7 +47,11 @@ def schemas():
         "turn": obj({"id": ID, "speaker_id": {"enum": ["A", "B"]}, "utterance_id": ID}),
         "shadow_item": {"oneOf": [
             obj({"id": ID, "kind": {"const": "sentence"}, "utterance_id": ID}),
-            obj({"id": ID, "kind": {"const": "dialogue_ref"}, "situation_node_id": ID})]},
+            obj({"id": ID, "kind": {"const": "dialogue_ref"}, "situation_node_id": ID}),
+            obj({"id": ID, "kind": {"const": "dialogue"}, "title_vi": TEXT,
+                 "learning_scope": {"enum": ["core", "source_reference"]},
+                 "speakers": {"type": "array", "items": ref("speaker"), "minItems": 2, "maxItems": 2},
+                 "turns": array(ref("turn"), 2)})]},
         "variant": obj({"id": ID, "title_vi": TEXT, "learner_addendum_vi": {"type": "string"},
                         "ai_addendum_vi": TEXT}),
         "lesson": obj({"id": ID, "title_vi": TEXT, "node_ids": array(ID, 1, True)}),
@@ -194,6 +198,8 @@ def validate(data):
                     if item["kind"] == "dialogue_ref":
                         target = by_id.get(item["situation_node_id"], {})
                         practiced.update(turn["utterance_id"] for turn in target.get("data", {}).get("turns", []))
+                    elif item["kind"] == "dialogue":
+                        practiced.update(turn["utterance_id"] for turn in item["turns"])
                 if not set(content["utterance_ids"]).issubset(practiced):
                     raise ValueError("Speak Japanese examples need corresponding shadowing")
             elif "practice_node_id" in content:
@@ -216,8 +222,13 @@ def validate(data):
             for item in content["items"]:
                 if item["kind"] == "sentence":
                     utterance_refs([item["utterance_id"]])
-                else:
+                elif item["kind"] == "dialogue_ref":
                     node_refs([item["situation_node_id"]], {"situation"})
+                else:
+                    unique(item["turns"], "id", "inline shadowing turn ID")
+                    if {s["id"] for s in item["speakers"]} != {"A", "B"} or {t["speaker_id"] for t in item["turns"]} != {"A", "B"}:
+                        raise ValueError("Inline shadowing dialogue needs both roles")
+                    utterance_refs([t["utterance_id"] for t in item["turns"]])
         if kind in {"live_challenge", "free_talk"}:
             node_refs(content["context_node_ids"], material_types)
             if kind == "free_talk" and content["context_node_ids"] != material_ids:
@@ -274,6 +285,7 @@ def material_text(data, node_ids):
     def sentence(uid):
         value = utterances[uid]
         return value["ja"] + "\n\n" + value["vi"]
+    reference_note = "*Mẫu tham khảo từ nguồn; có thể có cấu trúc ngoài phần luyện chủ động của chặng.*"
     chunks = []
     for nid in node_ids:
         node = nodes[nid]
@@ -294,14 +306,21 @@ def material_text(data, node_ids):
                 roles = {s["id"]: s["label_vi"] for s in content["speakers"]}
                 chunks.extend("**" + t["speaker_id"] + " — " + roles[t["speaker_id"]] + "**\n\n" + sentence(t["utterance_id"])
                               for t in content["turns"])
-            refs = []
             if node["type"] == "shadowing":
                 for item in content["items"]:
                     if item["kind"] == "sentence":
-                        refs.append(item["utterance_id"])
-                    else:
+                        if utterances[item["utterance_id"]].get("learning_scope") == "source_reference":
+                            chunks.append(reference_note)
+                        chunks.append(sentence(item["utterance_id"]))
+                    elif item["kind"] == "dialogue_ref":
                         chunks.append(material_text(data, [item["situation_node_id"]]))
-            chunks.extend(sentence(uid) for uid in refs)
+                    else:
+                        chunks.append("### " + item["title_vi"])
+                        if item.get("learning_scope") == "source_reference":
+                            chunks.append(reference_note)
+                        roles = {s["id"]: s["label_vi"] for s in item["speakers"]}
+                        chunks.extend("**" + t["speaker_id"] + " — " + roles[t["speaker_id"]] + "**\n\n" + sentence(t["utterance_id"])
+                                      for t in item["turns"])
     return "\n\n".join(chunks)
 
 
