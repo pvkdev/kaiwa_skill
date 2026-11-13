@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0",
+  "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+  "lessons": [
+    {
+      "id": "l01",
+      "summary": "Điểm đến → ga đổi → sân ga; hỏi lại khi cần.",
+      "node_ids": [
+        "v01",
+        "g01",
+        "k01",
+        "sh01"
+      ],
+      "lookback": [],
+      "reuse": [],
+      "reason_no_reuse": "Bài đầu của pilot; các chặng trước chưa biên soạn, chưa có nguồn để tuyên bố đã ôn.",
+      "pending_previous": [
+        {
+          "note": "S-011 là pilot độc lập; hai chặng gợi ý trước chưa có nội dung đã chốt. Sẽ đối chiếu khi chúng tồn tại."
+        }
+      ]
+    },
+    {
+      "id": "l02",
+      "summary": "ね để xác nhận; ba cuộc trao đổi tìm tàu, ga đổi và sân ga.",
+      "node_ids": [
+        "k02",
+        "sh02",
+        "S001",
+        "S002",
+        "S003"
+      ],
+      "lookback": [
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l01"
+        }
+      ],
+      "reuse": [
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "k01"
+          },
+          "in": [
+            {
+              "node_id": "S001"
+            },
+            {
+              "node_id": "S002"
+            },
+            {
+              "node_id": "S003"
+            }
+          ],
+          "purpose": "Dùng lại cách hỏi điểm đến/đổi tàu/sân ga trong các cuộc nói có lượt đáp."
+        }
+      ],
+      "pending_previous": []
+    },
+    {
+      "id": "l03",
+      "summary": "Hỏi lại dữ kiện chưa rõ; xử lý nhầm chiều và kết lại bằng xác nhận.",
+      "node_ids": [
+        "k03",
+        "sh03",
+        "S004",
+        "S005"
+      ],
+      "lookback": [
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l01"
+        },
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l02"
+        }
+      ],
+      "reuse": [
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "k01"
+          },
+          "in": [
+            {
+              "node_id": "S004"
+            },
+            {
+              "node_id": "S005"
+            }
+          ],
+          "purpose": "Nhắc lại điểm đến và xin nói lại."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l02",
+            "node_id": "k02"
+          },
+          "in": [
+            {
+              "node_id": "S005"
+            }
+          ],
+          "purpose": "Ứng dụng xác nhận với ね sau khi đã được sửa thông tin."
+        }
+      ],
+      "pending_previous": []
+    },
+    {
+      "id": "l04",
+      "summary": "Tuyến buýt, cửa lên/trả tiền, chuyển xe, lỡ bến và báo muộn.",
+      "node_ids": [
+        "v02",
+        "g02",
+        "k04",
+        "sh04",
+        "S006",
+        "S007",
+        "S008",
+        "S009",
+        "S010"
+      ],
+      "lookback": [
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l02"
+        },
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l03"
+        },
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l01"
+        }
+      ],
+      "reuse": [
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l02",
+            "node_id": "k02"
+          },
+          "in": [
+            {
+              "node_id": "S006"
+            },
+            {
+              "node_id": "S007"
+            },
+            {
+              "node_id": "S008"
+            },
+            {
+              "node_id": "S009"
+            }
+          ],
+          "purpose": "Nhắc lại dữ kiện mới sau khi nghe câu trả lời."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l03",
+            "node_id": "k03"
+          },
+          "in": [
+            {
+              "node_id": "S008"
+            },
+            {
+              "node_id": "S009"
+            }
+          ],
+          "purpose": "Duy trì cuộc trao đổi khi phải đổi phương án."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "v01"
+          },
+          "in": [
+            {
+              "node_id": "v02"
+            },
+            {
+              "node_id": "S008"
+            }
+          ],
+          "purpose": "Ôn có nghĩa các từ bến, lối vào/ra, đổi xe và tiếp theo."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "v01",
+            "item_id": "v01-w-1a7930272017"
+          },
+          "in": [
+            {
+              "node_id": "v02",
+              "item_id": "v02-w-1a7930272017"
+            }
+          ],
+          "purpose": "Ôn cùng nghĩa từ 入口 trong nhóm xe buýt."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "v01",
+            "item_id": "v01-w-7016090059bd"
+          },
+          "in": [
+            {
+              "node_id": "v02",
+              "item_id": "v02-w-7016090059bd"
+            }
+          ],
+          "purpose": "Ôn cùng nghĩa từ 出口 trong nhóm xe buýt."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "v01",
+            "item_id": "v01-w-6e724a72699e"
+          },
+          "in": [
+            {
+              "node_id": "v02",
+              "item_id": "v02-w-6e724a72699e"
+            }
+          ],
+          "purpose": "Ôn cùng nghĩa từ 乗り換え trong nhóm xe buýt."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "v01",
+            "item_id": "v01-w-172fb7e67b9b"
+          },
+          "in": [
+            {
+              "node_id": "v02",
+              "item_id": "v02-w-172fb7e67b9b"
+            }
+          ],
+          "purpose": "Ôn cùng nghĩa từ 次 trong nhóm xe buýt."
+        }
+      ],
+      "pending_previous": []
+    },
+    {
+      "id": "l05",
+      "summary": "Nói nhu cầu, hỏi lối, chờ phối hợp và kiểm đúng điểm gặp/quầy.",
+      "node_ids": [
+        "v03",
+        "g03",
+        "k05",
+        "sh05",
+        "S011",
+        "S012",
+        "S013",
+        "S014",
+        "S015"
+      ],
+      "lookback": [
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l03"
+        },
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l04"
+        },
+        {
+          "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+          "revision": null,
+          "lesson_id": "l01"
+        }
+      ],
+      "reuse": [
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l03",
+            "node_id": "k03"
+          },
+          "in": [
+            {
+              "node_id": "S013"
+            },
+            {
+              "node_id": "S014"
+            },
+            {
+              "node_id": "S015"
+            }
+          ],
+          "purpose": "Hỏi lại đúng vị trí/dữ kiện còn thiếu rồi xác nhận."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l04",
+            "node_id": "g02"
+          },
+          "in": [
+            {
+              "node_id": "S011"
+            },
+            {
+              "node_id": "S012"
+            },
+            {
+              "node_id": "S013"
+            }
+          ],
+          "purpose": "Nghe Vてください và dùng cụm trình bày hoàn cảnh."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "g01"
+          },
+          "in": [
+            {
+              "node_id": "S011"
+            },
+            {
+              "node_id": "S012"
+            }
+          ],
+          "purpose": "Dùng lại điểm đến, vị trí và mong muốn."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l01",
+            "node_id": "v01",
+            "item_id": "v01-w-2f0ba088d763"
+          },
+          "in": [
+            {
+              "node_id": "v03",
+              "item_id": "v03-w-2f0ba088d763"
+            }
+          ],
+          "purpose": "Ôn cùng nghĩa từ 改札 khi hỏi hỗ trợ ở ga."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l04",
+            "node_id": "v02",
+            "item_id": "v02-w-6044e9f095e0"
+          },
+          "in": [
+            {
+              "node_id": "v03",
+              "item_id": "v03-w-6044e9f095e0"
+            }
+          ],
+          "purpose": "Ôn cùng nghĩa từ 前 khi hỏi hỗ trợ ở ga."
+        },
+        {
+          "from": {
+            "stage_uid": "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+            "revision": null,
+            "lesson_id": "l04",
+            "node_id": "v02",
+            "item_id": "v02-w-45720855fc5e"
+          },
+          "in": [
+            {
+              "node_id": "v03",
+              "item_id": "v03-w-45720855fc5e"
+            }
+          ],
+          "purpose": "Ôn cùng nghĩa từ 待ちます khi hỏi hỗ trợ ở ga."
+        }
+      ],
+      "pending_previous": []
+    }
+  ]
+}
