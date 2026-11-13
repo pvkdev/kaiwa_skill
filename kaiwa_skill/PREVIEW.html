@@ -1,0 +1,2050 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harumii · Lộ trình Kaiwa</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #faf9f6;
+        --surface: #fff;
+        --ink: #242338;
+        --muted: #737183;
+        --line: #e9e6ef;
+        --accent: #7460c4;
+        --soft: #f0ebfc;
+        --green: #35866d;
+        --radius: 18px;
+        font-family: Inter, "Segoe UI", sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        line-height: 1.65;
+      }
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+      button,
+      a,
+      input,
+      select {
+        touch-action: manipulation;
+      }
+      button {
+        cursor: pointer;
+        color: inherit;
+      }
+      button:disabled {
+        cursor: wait;
+        opacity: 0.6;
+      }
+      a {
+        color: var(--accent);
+      }
+      button:focus-visible,
+      a:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid #b3a0ed;
+        outline-offset: 3px;
+      }
+      header {
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+        padding: 19px 4vw 0;
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 15px;
+      }
+      .brand {
+        font-size: 25px;
+        font-weight: 750;
+        letter-spacing: -1px;
+        color: var(--accent);
+      }
+      .brand small {
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+        color: var(--muted);
+        margin-left: 14px;
+      }
+      .tools {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .btn {
+        border: 1px solid var(--line);
+        background: #fff;
+        padding: 8px 13px;
+        border-radius: 10px;
+        font-size: 13px;
+      }
+      .btn:hover {
+        border-color: var(--accent);
+        background: var(--soft);
+      }
+      .primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #fff;
+      }
+      .primary:hover {
+        background: #6551b4;
+        color: #fff;
+      }
+      .tabs {
+        display: flex;
+        gap: 5px;
+        overflow: auto;
+      }
+      .tab {
+        white-space: nowrap;
+        border: 0;
+        background: transparent;
+        padding: 12px 18px;
+        border-bottom: 3px solid transparent;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .tab[aria-selected="true"] {
+        color: var(--accent);
+        font-weight: 700;
+        border-bottom-color: var(--accent);
+      }
+      .tab.pilot {
+        background: #faf8fe;
+        border-radius: 10px 10px 0 0;
+      }
+      .tabs .tab:nth-child(4) {
+        margin-left: 22px;
+      }
+      #status {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .statusbar {
+        padding: 9px 4vw;
+        background: #f4f1fa;
+        border-bottom: 1px solid var(--line);
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 250px minmax(0, 1fr);
+        max-width: 1560px;
+        margin: auto;
+        min-height: 75vh;
+      }
+      .sidebar {
+        padding: 30px 20px 40px 28px;
+        border-right: 1px solid var(--line);
+      }
+      .sidebar-inner {
+        position: sticky;
+        top: 140px;
+        max-height: calc(100vh - 160px);
+        overflow: auto;
+      }
+      .eyebrow {
+        font-size: 11px;
+        font-weight: 750;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 15px;
+      }
+      .section-link,
+      .node-link {
+        display: flex;
+        text-align: left;
+        width: 100%;
+        gap: 10px;
+        background: transparent;
+        border: 0;
+        border-radius: 10px;
+        padding: 10px 11px;
+        font-size: 13px;
+        margin: 3px 0;
+      }
+      .section-link:hover,
+      .node-link:hover {
+        background: var(--soft);
+      }
+      .section-link.active {
+        background: var(--soft);
+        color: var(--accent);
+      }
+      .section-link span {
+        flex: 1;
+      }
+      .count {
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .node-link.current {
+        background: var(--soft);
+        color: var(--accent);
+      }
+      main {
+        padding: 35px clamp(18px, 4vw, 58px) 80px;
+        min-width: 0;
+      }
+      h1 {
+        font-size: clamp(25px, 3vw, 36px);
+        line-height: 1.25;
+        letter-spacing: -0.8px;
+        margin: 8px 0 14px;
+      }
+      h2 {
+        font-size: 21px;
+        line-height: 1.4;
+        margin: 0;
+      }
+      h3 {
+        font-size: 17px;
+        margin: 15px 0 8px;
+      }
+      .intro {
+        color: var(--muted);
+        max-width: 740px;
+        margin: 0 0 22px;
+        font-size: 15px;
+      }
+      .filters {
+        display: flex;
+        gap: 10px;
+        margin: 23px 0 30px;
+      }
+      .filters input {
+        flex: 1;
+        min-width: 100px;
+      }
+      .filters input,
+      .filters select {
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 11px;
+        padding: 10px 13px;
+        font-size: 14px;
+      }
+      .section {
+        scroll-margin-top: 155px;
+        margin: 0 0 36px;
+      }
+      .section-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 18px;
+        margin-bottom: 15px;
+      }
+      .section-head h2 {
+        font-size: 18px;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .stage-card {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 19px;
+        text-align: left;
+        display: flex;
+        gap: 15px;
+        align-items: flex-start;
+        width: 100%;
+        transition:
+          border-color 0.15s,
+          transform 0.15s;
+      }
+      .stage-card:hover {
+        border-color: #ae9ddc;
+        transform: translateY(-2px);
+      }
+      .stage-card .orb {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+        width: 43px;
+        height: 43px;
+        border-radius: 15px;
+        background: var(--soft);
+        color: var(--accent);
+        font-size: 19px;
+      }
+      .stage-card.ready .orb {
+        background: #e9f5ee;
+        color: var(--green);
+      }
+      .stage-title {
+        font-size: 15px;
+        font-weight: 650;
+        line-height: 1.5;
+        display: block;
+        margin: 4px 0 8px;
+      }
+      .stage-code {
+        font-size: 11px;
+        color: var(--muted);
+        letter-spacing: 0.5px;
+      }
+      .availability {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .stage-card.ready .availability {
+        color: var(--green);
+      }
+      .empty {
+        border: 1px dashed #d8d0e7;
+        border-radius: 20px;
+        padding: 35px;
+        text-align: center;
+        background: #fff;
+        max-width: 730px;
+        margin: 35px auto;
+      }
+      .empty h2 {
+        margin-bottom: 12px;
+      }
+      .empty p {
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .error {
+        color: #a5324a;
+        background: #fff3f4;
+        border: 1px solid #efd5db;
+        border-radius: 12px;
+        padding: 14px;
+        margin: 12px 0;
+        overflow-wrap: anywhere;
+      }
+      .error:empty {
+        display: none;
+      }
+      .back {
+        margin-bottom: 22px;
+      }
+      .stage-meta {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        color: var(--muted);
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+      .pill {
+        background: var(--soft);
+        color: var(--accent);
+        border-radius: 20px;
+        padding: 3px 10px;
+        font-size: 12px;
+      }
+      .lesson-heading {
+        font-size: 13px;
+        font-weight: 750;
+        color: var(--muted);
+        margin: 30px 0 12px;
+        letter-spacing: 0.3px;
+      }
+      .node {
+        scroll-margin-top: 155px;
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 25px;
+        margin: 13px 0 20px;
+      }
+      .node-head {
+        display: flex;
+        align-items: flex-start;
+        gap: 13px;
+        margin-bottom: 19px;
+      }
+      .node-head h2 {
+        font-size: 19px;
+      }
+      .icon {
+        display: grid;
+        place-items: center;
+        border-radius: 12px;
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+        font-size: 20px;
+        background: var(--soft);
+      }
+      .type-label {
+        font-size: 11px;
+        color: var(--muted);
+        margin-bottom: 2px;
+      }
+      .knowledge .icon {
+        background: #f0eaff;
+      }
+      .vocabulary .icon {
+        background: #fff1dc;
+      }
+      .grammar .icon {
+        background: #e6f4ed;
+      }
+      .situation .icon {
+        background: #e6f0ff;
+      }
+      .shadowing .icon {
+        background: #fff0ee;
+      }
+      .live_challenge .icon {
+        background: #f8e8f6;
+      }
+      .free_talk .icon {
+        background: #e6f5f3;
+      }
+      .md {
+        font-size: 15px;
+        overflow-wrap: anywhere;
+      }
+      .md h1 {
+        font-size: 22px;
+        letter-spacing: -0.3px;
+      }
+      .md h2 {
+        font-size: 19px;
+        margin-top: 25px;
+      }
+      .md h3 {
+        font-size: 17px;
+      }
+      .md p {
+        margin: 12px 0;
+      }
+      .md ul,
+      .md ol {
+        padding-left: 24px;
+      }
+      .md blockquote {
+        margin: 15px 0;
+        border-left: 3px solid #c9bbe8;
+        padding: 2px 15px;
+        color: var(--muted);
+      }
+      .md code {
+        background: var(--soft);
+        padding: 2px 5px;
+        border-radius: 4px;
+      }
+      .md pre {
+        overflow: auto;
+        background: var(--paper);
+        padding: 15px;
+      }
+      .jp {
+        font-family: "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
+        font-size: 19px;
+        line-height: 1.85;
+        overflow-wrap: anywhere;
+      }
+      .vi {
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 5px;
+      }
+      .hide-vi .vi {
+        display: none;
+      }
+      .utterance {
+        background: #f8f7fb;
+        border-radius: 11px;
+        padding: 14px 17px;
+        margin: 10px 0;
+      }
+      .turn {
+        display: flex;
+        gap: 11px;
+        margin: 14px 0;
+      }
+      .avatar {
+        display: grid;
+        place-items: center;
+        width: 29px;
+        height: 29px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        background: #eee8fa;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 4px;
+      }
+      .turn[data-speaker="B"] .avatar {
+        background: #e5f1ed;
+        color: var(--green);
+      }
+      .turn .bubble {
+        flex: 1;
+        min-width: 0;
+        background: #f6f3fc;
+        border-radius: 0 14px 14px;
+        padding: 12px 16px;
+      }
+      .turn[data-speaker="B"] .bubble {
+        background: #f2f7f4;
+      }
+      .speaker {
+        font-size: 11px;
+        font-weight: 650;
+        color: var(--muted);
+        margin-bottom: 5px;
+      }
+      .scene {
+        border-left: 3px solid #b7a5e3;
+        padding-left: 15px;
+        font-size: 14px;
+        color: var(--muted);
+        margin-bottom: 22px;
+      }
+      .word-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px;
+      }
+      .word {
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 9px 14px;
+        font-size: 19px;
+        background: #fdfcfa;
+      }
+      .pattern {
+        display: flex;
+        gap: 14px;
+        border-bottom: 1px solid var(--line);
+        padding: 14px 0;
+        align-items: center;
+      }
+      .pattern:last-child {
+        border: 0;
+      }
+      .pattern .jp {
+        font-size: 18px;
+      }
+      .level-tag {
+        background: #e9f3ed;
+        color: var(--green);
+        font-size: 12px;
+        padding: 3px 8px;
+        border-radius: 6px;
+      }
+      .video {
+        border: 1px dashed #d4c7e9;
+        background: #faf7ff;
+        border-radius: 12px;
+        padding: 17px;
+        color: #7d689e;
+        font-size: 13px;
+        margin-bottom: 20px;
+      }
+      .modebar {
+        display: flex;
+        gap: 7px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 15px 0;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .modebar select {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 6px;
+        background: #fff;
+      }
+      .goal-list li {
+        margin: 8px 0;
+      }
+      .variant-picker {
+        width: 100%;
+        padding: 11px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--paper);
+        margin: 10px 0 20px;
+      }
+      .note {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .sample {
+        margin-top: 9px;
+      }
+      .sample summary {
+        font-size: 12px;
+        color: var(--accent);
+        cursor: pointer;
+      }
+      .raw {
+        margin-top: 24px;
+        font-size: 12px;
+      }
+      .raw pre {
+        max-height: 400px;
+        overflow: auto;
+        white-space: pre-wrap;
+        word-break: break-word;
+        background: var(--paper);
+        padding: 16px;
+      }
+      .finish {
+        background: #eeebf7;
+        border-radius: 16px;
+        text-align: center;
+        padding: 24px;
+        margin-top: 28px;
+      }
+      .hidden,
+      [hidden] {
+        display: none !important;
+      }
+      #openFiles {
+        display: none;
+      }
+      .notice {
+        font-size: 12px;
+        color: var(--muted);
+        max-width: 650px;
+      }
+      .switch {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .read-actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 18px 0;
+      }
+      .node-nav-title {
+        font-size: 11px;
+        color: var(--muted);
+        padding: 6px 10px;
+      }
+      .load-progress {
+        height: 3px;
+        background: #eee7fc;
+        overflow: hidden;
+      }
+      .load-progress::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 40%;
+        background: var(--accent);
+        animation: loading 1.2s infinite;
+      }
+      @keyframes loading {
+        to {
+          transform: translateX(260%);
+        }
+      }
+      @media (max-width: 1050px) {
+        .layout {
+          grid-template-columns: 210px minmax(0, 1fr);
+        }
+        .sidebar {
+          padding: 25px 12px;
+        }
+        .cards {
+          grid-template-columns: 1fr;
+        }
+        .brand small {
+          display: none;
+        }
+      }
+      @media (max-width: 720px) {
+        header {
+          position: static;
+          padding: 15px 16px 0;
+        }
+        .topbar {
+          align-items: flex-start;
+          gap: 12px;
+        }
+        .brand {
+          font-size: 22px;
+        }
+        .tools {
+          justify-content: flex-end;
+          gap: 5px;
+        }
+        .tools .btn {
+          font-size: 12px;
+          padding: 6px 9px;
+        }
+        .tab {
+          padding: 10px 13px;
+        }
+        .tabs .tab:nth-child(4) {
+          margin-left: 10px;
+        }
+        .statusbar {
+          padding: 8px 16px;
+          flex-direction: column;
+          gap: 3px;
+        }
+        .layout {
+          display: block;
+        }
+        .sidebar {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+          padding: 12px 16px;
+        }
+        .sidebar-inner {
+          position: static;
+          max-height: 150px;
+        }
+        .sidebar .eyebrow {
+          display: none;
+        }
+        main {
+          padding: 24px 16px 55px;
+        }
+        .node {
+          padding: 19px 16px;
+        }
+        .node-head h2 {
+          font-size: 17px;
+        }
+        .jp {
+          font-size: 18px;
+        }
+        .filters {
+          flex-wrap: wrap;
+        }
+        .node,
+        .section {
+          scroll-margin-top: 15px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="brand">harumii <small>KAIWA</small></div>
+        <div class="tools">
+          <button class="btn" id="folder">Chọn thư mục dữ liệu</button
+          ><button class="btn" id="refresh">↻ Tải lại</button>
+        </div>
+      </div>
+      <nav class="tabs" role="tablist" aria-label="Cấp độ và pilot"></nav>
+    </header>
+    <div class="statusbar">
+      <span id="status" role="status" aria-live="polite">Đang mở dữ liệu…</span
+      ><span class="note" id="connection"></span>
+    </div>
+    <div id="progress" class="load-progress" hidden></div>
+    <div class="layout">
+      <aside class="sidebar"><div class="sidebar-inner" id="side"></div></aside>
+      <main id="main" tabindex="-1"></main>
+    </div>
+    <input type="file" id="openFiles" webkitdirectory multiple />
+    <script>
+      "use strict";
+      // One renderer. Lesson content is read from the exported JSON entrypoints.
+      const PILOTS = {
+        beginner: "da5c16e5-9425-5a4f-9086-8c109aa79c90",
+        intermediate: "2c4afb8d-e518-5c65-989e-076857a6ce9d",
+        advanced: "cba953ce-d3d0-5e71-acb8-419cd0e708a1",
+      };
+      const LEVELS = {
+        beginner: "Sơ cấp",
+        intermediate: "Trung cấp",
+        advanced: "Thượng cấp",
+      };
+      const TYPES = {
+        knowledge: ["📖", "Kiến thức"],
+        vocabulary: ["🗂", "Từ vựng"],
+        grammar: ["🧩", "Ngữ pháp"],
+        situation: ["💬", "Tình huống"],
+        shadowing: ["🎧", "Shadowing"],
+        live_challenge: ["⚡", "Challenge Live AI"],
+        free_talk: ["✦", "Free talk"],
+      };
+      const TABS = [
+        ...Object.keys(LEVELS),
+        ...Object.keys(LEVELS).map((x) => "pilot-" + x),
+      ];
+      const state = {
+        catalog: null,
+        stages: new Map(),
+        errors: new Map(),
+        paths: new Map(),
+        tab: "beginner",
+        stage: null,
+        query: "",
+        track: "",
+        source: null,
+        busy: false,
+        epoch: 0,
+        vi: true,
+        technical: false,
+      };
+      const $ = (s) => document.querySelector(s);
+      const esc = (value) =>
+        String(value ?? "").replace(
+          /[&<>"']/g,
+          (c) =>
+            ({
+              "&": "&amp;",
+              "<": "&lt;",
+              ">": "&gt;",
+              '"': "&quot;",
+              "'": "&#39;",
+            })[c],
+        );
+      const normalize = (s) =>
+        String(s)
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .replace(/đ/g, "d")
+          .toLowerCase();
+      function el(tag, attrs = {}, children = []) {
+        const node = document.createElement(tag);
+        for (const [key, value] of Object.entries(attrs)) {
+          if (key === "class") node.className = value;
+          else if (key === "text") node.textContent = value;
+          else node.setAttribute(key, value);
+        }
+        node.append(...children);
+        return node;
+      }
+      function message(text) {
+        $("#status").textContent = text;
+      }
+      function problem(text) {
+        return el("div", { class: "error", text });
+      }
+      function tabLabel(tab) {
+        return tab.startsWith("pilot-")
+          ? "Pilot " + LEVELS[tab.slice(6)]
+          : LEVELS[tab];
+      }
+      function currentLevel() {
+        return state.tab.replace("pilot-", "");
+      }
+      function setHash() {
+        history.replaceState(
+          null,
+          "",
+          "#" + state.tab + (state.stage ? "/" + state.stage : ""),
+        );
+      }
+      function readHash() {
+        const [tab, uid] = location.hash.slice(1).split("/");
+        if (TABS.includes(tab)) state.tab = tab;
+        state.stage = uid || null;
+      }
+      function renderTabs() {
+        const nav = $(".tabs");
+        nav.replaceChildren(
+          ...TABS.map((tab) => {
+            const button = el("button", {
+              class: "tab" + (tab.startsWith("pilot-") ? " pilot" : ""),
+              role: "tab",
+              "aria-selected": String(state.tab === tab),
+              text: tabLabel(tab),
+            });
+            button.onclick = () => {
+              state.tab = tab;
+              state.stage = null;
+              state.query = "";
+              state.track = "";
+              setHash();
+              render();
+            };
+            button.onkeydown = (e) => {
+              if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key))
+                return;
+              e.preventDefault();
+              const i = TABS.indexOf(tab);
+              const j =
+                e.key === "Home"
+                  ? 0
+                  : e.key === "End"
+                    ? 5
+                    : (i + (e.key === "ArrowRight" ? 1 : 5)) % 6;
+              nav.children[j].click();
+              nav.children[j].focus();
+            };
+            return button;
+          }),
+        );
+      }
+      function sentence(data, uid) {
+        const u = data.utterances.find((x) => x.id === uid);
+        if (!u) throw Error("Thiếu câu " + uid);
+        return (
+          '<div class="utterance" data-utterance="' +
+          esc(uid) +
+          '">' +
+          (u.learning_scope === "source_reference"
+            ? '<div class="note">Câu tham khảo từ sách</div>'
+            : "") +
+          '<div class="jp" lang="ja">' +
+          esc(u.ja) +
+          '</div><div class="vi">' +
+          esc(u.vi) +
+          "</div></div>"
+        );
+      }
+      // Escape before formatting. Raw HTML from Markdown and model output is never executed.
+      function inline(text) {
+        return esc(text)
+          .replace(
+            /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+            '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>',
+          )
+          .replace(/`([^`]+)`/g, "<code>$1</code>")
+          .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+          .replace(/\*([^*]+)\*/g, "<em>$1</em>");
+      }
+      function markdown(text, data) {
+        const lines = String(text).replace(/\r/g, "").split("\n");
+        let html = "",
+          paragraph = [],
+          list = null,
+          code = null;
+        function flush() {
+          if (paragraph.length) {
+            html += "<p>" + paragraph.map(inline).join("<br>") + "</p>";
+            paragraph = [];
+          }
+          if (list) {
+            html += "</" + list + ">";
+            list = null;
+          }
+        }
+        for (const line of lines) {
+          if (line.startsWith("```")) {
+            flush();
+            if (code === null) code = [];
+            else {
+              html += "<pre><code>" + esc(code.join("\n")) + "</code></pre>";
+              code = null;
+            }
+            continue;
+          }
+          if (code !== null) {
+            code.push(line);
+            continue;
+          }
+          const token = line
+            .trim()
+            .match(/^\{\{utterance:([a-zA-Z0-9_-]+)\}\}$/);
+          if (token) {
+            flush();
+            html += sentence(data, token[1]);
+            continue;
+          }
+          const heading = line.match(/^(#{1,6})\s+(.+)/);
+          if (heading) {
+            flush();
+            const depth = Math.min(heading[1].length, 4);
+            html +=
+              "<h" + depth + ">" + inline(heading[2]) + "</h" + depth + ">";
+            continue;
+          }
+          const li = line.match(/^\s*(?:([-*])|\d+\.)\s+(.+)/);
+          if (li) {
+            if (paragraph.length) flush();
+            const kind = li[1] ? "ul" : "ol";
+            if (list !== kind) {
+              flush();
+              html += "<" + kind + ">";
+              list = kind;
+            }
+            html += "<li>" + inline(li[2]) + "</li>";
+            continue;
+          }
+          if (!line.trim()) {
+            flush();
+            continue;
+          }
+          if (line.startsWith("> ")) {
+            flush();
+            html += "<blockquote>" + inline(line.slice(2)) + "</blockquote>";
+            continue;
+          }
+          if (list) flush();
+          paragraph.push(line);
+        }
+        flush();
+        if (code !== null)
+          html += "<pre><code>" + esc(code.join("\n")) + "</code></pre>";
+        return html.replace(/\{\{utterance:([a-zA-Z0-9_-]+)\}\}/g, (_, uid) =>
+          sentence(data, uid),
+        );
+      }
+      function textList(title, values) {
+        if (!values?.length) return "";
+        return (
+          "<h3>" +
+          esc(title) +
+          '</h3><ul class="goal-list">' +
+          values.map((x) => "<li>" + esc(x) + "</li>").join("") +
+          "</ul>"
+        );
+      }
+      function dialogue(data, content, mode = "all") {
+        const speakers = new Map(content.speakers.map((s) => [s.id, s]));
+        return content.turns
+          .map((turn) => {
+            const speaker = speakers.get(turn.speaker_id);
+            const u = data.utterances.find((x) => x.id === turn.utterance_id);
+            if (!speaker || !u)
+              throw Error("Lượt thoại tham chiếu không tồn tại");
+            const utterance =
+              '<div class="jp" lang="ja">' +
+              esc(u.ja) +
+              '</div><div class="vi">' +
+              esc(u.vi) +
+              "</div>";
+            return (
+              '<div class="turn" data-speaker="' +
+              esc(speaker.id) +
+              '"><div class="avatar">' +
+              esc(speaker.id) +
+              '</div><div class="bubble"><div class="speaker">' +
+              esc(speaker.label_vi) +
+              " · " +
+              esc(speaker.role_vi) +
+              "</div>" +
+              (mode === speaker.id
+                ? '<div class="note">Lượt của bạn</div><details class="sample"><summary>Xem câu mẫu</summary>' +
+                  utterance +
+                  "</details>"
+                : utterance) +
+              "</div></div>"
+            );
+          })
+          .join("");
+      }
+      function dialogueWidget(data, content) {
+        const wrap = el("div");
+        const modebar = el("label", {
+          class: "modebar",
+          text: "Xem hội thoại",
+        });
+        const select = el("select", { "aria-label": "Vai luyện tập" });
+        select.append(
+          el("option", { value: "all", text: "Toàn bộ hai vai" }),
+          ...content.speakers.map((s) =>
+            el("option", {
+              value: s.id,
+              text: "Tôi là " + s.id + " · " + s.label_vi,
+            }),
+          ),
+        );
+        modebar.append(select);
+        const body = el("div");
+        body.innerHTML = dialogue(data, content);
+        select.onchange = () => {
+          body.innerHTML = dialogue(data, content, select.value);
+        };
+        wrap.append(modebar, body);
+        return wrap;
+      }
+      function rawDetails(title, value) {
+        const details = el("details", { class: "raw" });
+        details.append(
+          el("summary", { text: title }),
+          el("pre", {
+            text:
+              typeof value === "string"
+                ? value
+                : JSON.stringify(value, null, 2),
+          }),
+        );
+        return details;
+      }
+      function shadowing(data, content) {
+        const wrap = el("div");
+        for (const item of content.items) {
+          if (item.kind === "sentence") {
+            const row = el("div");
+            row.innerHTML = sentence(data, item.utterance_id);
+            wrap.append(row);
+          } else {
+            const source =
+              item.kind === "dialogue_ref"
+                ? data.nodes.find((n) => n.id === item.situation_node_id)
+                : null;
+            const dialogueData = source ? source.data : item;
+            wrap.append(
+              el("h3", { text: source ? source.title_vi : item.title_vi }),
+              dialogueWidget(data, dialogueData),
+            );
+          }
+        }
+        return wrap;
+      }
+      function challenge(data, content) {
+        const wrap = el("div");
+        const picker = el("select", {
+          class: "variant-picker",
+          "aria-label": "Biến thể challenge",
+        });
+        picker.append(
+          ...content.variants.map((v) =>
+            el("option", { value: v.id, text: v.title_vi }),
+          ),
+        );
+        picker.value = content.default_variant_id;
+        const body = el("div");
+        function draw() {
+          const variant = content.variants.find((v) => v.id === picker.value);
+          const brief = content.learner_brief;
+          body.replaceChildren();
+          const intro = el("div", { class: "scene" });
+          intro.append(
+            el("p", { text: brief.scene_vi }),
+            el("p", { text: brief.learner_role_vi + " ↔ " + brief.ai_role_vi }),
+            el("p", { text: variant.learner_addendum_vi }),
+          );
+          const goals = el("div");
+          goals.innerHTML =
+            textList("Nhiệm vụ của bạn", brief.goals_vi) +
+            textList("Gợi ý từng bước", brief.optional_steps_vi);
+          const hints = el("div");
+          if (brief.hint_utterance_ids.length) {
+            hints.innerHTML =
+              "<h3>Gợi ý cách nói</h3>" +
+              brief.hint_utterance_ids
+                .map((uid) => sentence(data, uid))
+                .join("");
+          }
+          body.append(intro, goals, hints);
+          const supporting = [
+            ...brief.vocabulary_node_ids,
+            ...brief.grammar_node_ids,
+          ];
+          for (const id of supporting) {
+            const node = data.nodes.find((x) => x.id === id);
+            if (node) {
+              const link = el("button", {
+                class: "btn",
+                text: TYPES[node.type][0] + " " + node.title_vi,
+              });
+              link.onclick = () => jump(id);
+              body.append(link);
+            }
+          }
+          if (state.technical) {
+            const context = content.context_node_ids.map((id) =>
+              data.nodes.find((n) => n.id === id),
+            );
+            body.append(
+              rawDetails(
+                "Tình huống dành cho AI",
+                content.ai_situation_vi + "\n\n" + variant.ai_addendum_vi,
+              ),
+              rawDetails("Các node được nạp làm context", context),
+            );
+          }
+        }
+        picker.onchange = draw;
+        draw();
+        wrap.append(picker, body);
+        return wrap;
+      }
+      function nodeView(data, node) {
+        const section = el("article", {
+          class: "node " + node.type,
+          id: "node-" + node.id,
+          "data-node-id": node.id,
+        });
+        const [icon, label] = TYPES[node.type];
+        const title = el("div", { class: "node-head" }, [
+          el("div", { class: "icon", "aria-hidden": "true", text: icon }),
+          el("div", {}, [
+            el("div", { class: "type-label", text: label }),
+            el("h2", { text: node.title_vi }),
+          ]),
+        ]);
+        section.append(title);
+        if (node.learning_scope === "source_reference") {
+          section.append(
+            el("p", {
+              class: "note",
+              text: "Phần tham khảo bổ sung từ nguồn sách.",
+            }),
+          );
+        }
+        const c = node.data;
+        if (node.type === "knowledge") {
+          if (c.video_status === "planned")
+            section.append(
+              el("div", {
+                class: "video",
+                text: "▻ Video bài giảng · đang chuẩn bị",
+              }),
+            );
+          const md = el("div", { class: "md" });
+          md.innerHTML = markdown(c.body_md, data);
+          section.append(md);
+        }
+        if (node.type === "vocabulary")
+          section.append(
+            el(
+              "div",
+              { class: "word-list" },
+              c.terms_ja.map((w) =>
+                el("span", { class: "word", lang: "ja", text: w }),
+              ),
+            ),
+          );
+        if (node.type === "grammar")
+          section.append(
+            ...c.patterns.map((p) =>
+              el("div", { class: "pattern" }, [
+                el("span", { class: "level-tag", text: p.jlpt_level }),
+                el("div", {}, [
+                  el("div", { class: "jp", lang: "ja", text: p.name_ja }),
+                  el("div", {
+                    class: "note",
+                    text: p.catalog === "minna" ? "Minna no Nihongo" : "Bunpou",
+                  }),
+                ]),
+              ]),
+            ),
+          );
+        if (node.type === "situation") {
+          section.append(
+            el("div", { class: "scene" }, [
+              el("p", { text: c.setting_vi }),
+              el("p", { text: c.relationship_vi }),
+              el("p", { text: "Mục tiêu · " + c.goal_vi }),
+            ]),
+            dialogueWidget(data, c),
+          );
+          for (const [key, label] of [
+            ["follows", "Tiếp từ"],
+            ["alternative_to", "Nhánh khác của"],
+          ])
+            for (const id of c[key] || []) {
+              const target = data.nodes.find((n) => n.id === id);
+              if (target) {
+                const b = el("button", {
+                  class: "btn",
+                  text: label + " · " + target.title_vi,
+                });
+                b.onclick = () => jump(id);
+                section.append(b);
+              }
+            }
+        }
+        if (node.type === "shadowing") section.append(shadowing(data, c));
+        if (node.type === "live_challenge") section.append(challenge(data, c));
+        if (node.type === "free_talk") {
+          section.append(el("p", { text: c.learner_intro_vi }));
+          const starters = el("div");
+          starters.innerHTML = textList(
+            "Bạn có thể bắt đầu từ…",
+            c.conversation_starters_vi,
+          );
+          section.append(starters);
+          if (state.technical)
+            section.append(
+              rawDetails("Tình huống dành cho AI", c.ai_situation_vi),
+              rawDetails("Các node được nạp làm context", c.context_node_ids),
+            );
+        }
+        if (state.technical) section.append(rawDetails("JSON của node", node));
+        return section;
+      }
+      function jump(id) {
+        document
+          .getElementById("node-" + id)
+          ?.scrollIntoView({ behavior: "smooth", block: "start" });
+        document
+          .querySelectorAll(".node-link")
+          .forEach((n) => n.classList.toggle("current", n.dataset.id === id));
+      }
+      function openStage(uid) {
+        state.stage = uid;
+        setHash();
+        render();
+        window.scrollTo({ top: 0 });
+        $("#main").focus({ preventScroll: true });
+      }
+      function stageReader(row) {
+        const main = $("#main");
+        main.replaceChildren();
+        const back = el("button", {
+          class: "btn back",
+          text: "← " + tabLabel(state.tab),
+        });
+        back.onclick = () => {
+          state.stage = null;
+          setHash();
+          render();
+        };
+        main.append(
+          back,
+          el("div", { class: "stage-meta" }, [
+            el("span", { text: row.display_code }),
+            el("span", { text: LEVELS[row.level] }),
+            el("span", { text: row.track_vi }),
+          ]),
+          el("h1", { text: row.title_vi }),
+        );
+        const data = state.stages.get(row.stage_uid);
+        $("#side").replaceChildren(
+          el("p", { class: "eyebrow", text: "Trong chặng này" }),
+        );
+        if (!data) {
+          main.append(
+            el("div", { class: "empty" }, [
+              el("h2", { text: "Chặng đang chờ biên soạn" }),
+              el("p", {
+                text: "Nội dung sẽ xuất hiện ở đây khi có gói stage.json được export.",
+              }),
+            ]),
+          );
+          if (state.errors.has(row.stage_uid))
+            main.append(problem(state.errors.get(row.stage_uid)));
+          return;
+        }
+        main.append(el("p", { class: "intro", text: data.scope_vi }));
+        const actions = el("div", { class: "read-actions" });
+        const vi = el("input", { type: "checkbox" });
+        vi.checked = state.vi;
+        vi.onchange = () => {
+          state.vi = vi.checked;
+          main.classList.toggle("hide-vi", !state.vi);
+        };
+        const tech = el("input", { type: "checkbox" });
+        tech.checked = state.technical;
+        tech.onchange = () => {
+          state.technical = tech.checked;
+          stageReader(row);
+        };
+        actions.append(
+          el("label", { class: "switch" }, [
+            vi,
+            document.createTextNode("Hiện nghĩa tiếng Việt"),
+          ]),
+          el("label", { class: "switch" }, [
+            tech,
+            document.createTextNode("Xem dữ liệu xuất"),
+          ]),
+          el("span", {
+            class: "note",
+            text:
+              "Revision " + data.revision + " · " + data.nodes.length + " bài",
+          }),
+        );
+        main.append(actions);
+        main.classList.toggle("hide-vi", !state.vi);
+        if (state.errors.has(row.stage_uid))
+          main.append(problem(state.errors.get(row.stage_uid)));
+        const lessonStart = new Map(
+          data.lessons
+            .filter((l) => l.node_ids.length)
+            .map((l) => [l.node_ids[0], l.title_vi]),
+        );
+        for (const node of data.nodes) {
+          if (lessonStart.has(node.id))
+            main.append(
+              el("div", {
+                class: "lesson-heading",
+                text: lessonStart.get(node.id),
+              }),
+            );
+          main.append(nodeView(data, node));
+          const link = el("button", { class: "node-link" }, [
+            el("span", { "aria-hidden": "true", text: TYPES[node.type][0] }),
+            el("span", { text: node.title_vi }),
+          ]);
+          link.dataset.id = node.id;
+          link.onclick = () => jump(node.id);
+          $("#side").append(link);
+        }
+        main.append(
+          el("div", {
+            class: "finish",
+            text: "Bạn muốn luyện lại phần nào? Chọn một bài trong chặng để tiếp tục.",
+          }),
+        );
+        if (state.technical) {
+          main.append(
+            rawDetails("Đường dẫn gói export", state.paths.get(row.stage_uid)),
+            rawDetails("Toàn bộ stage.json", data),
+          );
+        }
+      }
+      function groupsForTab() {
+        const rows = state.catalog.stages.filter(
+          (r) =>
+            r.level === currentLevel() &&
+            (!state.tab.startsWith("pilot-") ||
+              PILOTS[r.level] === r.stage_uid),
+        );
+        const groups = new Map();
+        for (const row of rows) {
+          if (!groups.has(row.cluster_id))
+            groups.set(row.cluster_id, {
+              id: row.cluster_id,
+              title: row.cluster_title_vi,
+              rows: [],
+            });
+          groups.get(row.cluster_id).rows.push(row);
+        }
+        return [...groups.values()];
+      }
+      function roadmap() {
+        const main = $("#main");
+        main.classList.remove("hide-vi");
+        main.replaceChildren(
+          el("p", { class: "eyebrow", text: "Luyện nói mỗi ngày" }),
+          el("h1", {
+            text: state.tab.startsWith("pilot-")
+              ? "Pilot " + LEVELS[currentLevel()]
+              : LEVELS[currentLevel()],
+          }),
+        );
+        const groups = groupsForTab();
+        const rows = groups.flatMap((g) => g.rows);
+        main.append(
+          el("p", {
+            class: "intro",
+            text: state.tab.startsWith("pilot-")
+              ? "Khám phá một chặng đã biên soạn, từ phần chuẩn bị đến hội thoại và luyện tập tổng hợp."
+              : "Bạn chỉ giỏi kaiwa khi bạn nói đủ nhiều.",
+          }),
+          el("div", {
+            class: "note",
+            text:
+              rows.length +
+              " chặng · " +
+              rows.filter((r) => state.stages.has(r.stage_uid)).length +
+              " chặng có nội dung",
+          }),
+        );
+        const filters = el("div", { class: "filters" });
+        const search = el("input", {
+          type: "search",
+          placeholder: "Tìm chặng hoặc chủ đề…",
+          "aria-label": "Tìm chặng",
+        });
+        search.value = state.query;
+        const select = el("select", {
+          "aria-label": "Lọc đời sống hoặc công việc",
+        });
+        select.append(
+          el("option", { value: "", text: "Mọi chủ đề" }),
+          ...[...new Set(rows.map((r) => r.track_vi))].map((t) =>
+            el("option", { value: t, text: t }),
+          ),
+        );
+        select.value = state.track;
+        filters.append(search, select);
+        main.append(filters);
+        const body = el("div");
+        main.append(body);
+        function draw() {
+          state.query = search.value;
+          state.track = select.value;
+          const side = $("#side");
+          side.replaceChildren(
+            el("p", { class: "eyebrow", text: "Các chặng đường" }),
+          );
+          body.replaceChildren();
+          let found = 0;
+          for (const group of groups) {
+            const filtered = group.rows.filter(
+              (r) =>
+                (!state.track || r.track_vi === state.track) &&
+                normalize(
+                  r.display_code + " " + r.title_vi + " " + group.title,
+                ).includes(normalize(state.query)),
+            );
+            if (!filtered.length) continue;
+            found += filtered.length;
+            const section = el("section", {
+              class: "section",
+              id: "cluster-" + group.id,
+            });
+            section.append(
+              el("div", { class: "section-head" }, [
+                el("h2", { text: group.title }),
+                el("span", {
+                  class: "count",
+                  text: filtered.length + " chặng",
+                }),
+              ]),
+            );
+            const cards = el("div", { class: "cards" });
+            for (const row of filtered) {
+              const data = state.stages.get(row.stage_uid);
+              const err = state.errors.has(row.stage_uid);
+              const card = el(
+                "button",
+                {
+                  class: "stage-card" + (data ? " ready" : ""),
+                  "data-stage-uid": row.stage_uid,
+                },
+                [
+                  el("span", {
+                    class: "orb",
+                    "aria-hidden": "true",
+                    text: data ? "💬" : "○",
+                  }),
+                  el("span", {}, [
+                    el("span", {
+                      class: "stage-code",
+                      text: row.display_code + " · " + row.track_vi,
+                    }),
+                    el("span", { class: "stage-title", text: row.title_vi }),
+                    el("span", {
+                      class: "availability",
+                      text: data
+                        ? data.nodes.length + " bài · Mở chặng"
+                        : err
+                          ? "Cần kiểm tra gói dữ liệu"
+                          : "Chờ biên soạn",
+                    }),
+                  ]),
+                ],
+              );
+              card.onclick = () => openStage(row.stage_uid);
+              cards.append(card);
+            }
+            section.append(cards);
+            body.append(section);
+            const nav = el("button", { class: "section-link" }, [
+              el("span", { text: group.title }),
+              el("small", { class: "count", text: filtered.length }),
+            ]);
+            nav.onclick = () =>
+              section.scrollIntoView({ behavior: "smooth", block: "start" });
+            side.append(nav);
+          }
+          if (!found)
+            body.append(
+              el("div", {
+                class: "empty",
+                text: "Chưa tìm thấy chặng phù hợp.",
+              }),
+            );
+        }
+        search.oninput = draw;
+        select.onchange = draw;
+        draw();
+      }
+      function render() {
+        renderTabs();
+        if (!state.catalog) {
+          $("#side").replaceChildren();
+          $("#main").replaceChildren(
+            el("div", { class: "empty" }, [
+              el("h2", { text: "Mở lộ trình Kaiwa" }),
+              el("p", {
+                text: "Chọn thư mục kaiwa_skill hoặc thư mục repo chứa kaiwa_skill. Trang sẽ đọc catalog và các gói JSON export mới nhất.",
+              }),
+              el("p", {
+                class: "notice",
+                text: "Trên Chrome hoặc Edge, thư mục được ghi nhớ. Khi trình duyệt yêu cầu, bấm Cho phép đọc để tải lại dữ liệu.",
+              }),
+            ]),
+          );
+          return;
+        }
+        const row = state.catalog.stages.find(
+          (r) =>
+            r.stage_uid === state.stage &&
+            r.level === currentLevel() &&
+            (!state.tab.startsWith("pilot-") ||
+              PILOTS[r.level] === r.stage_uid),
+        );
+        if (row) stageReader(row);
+        else {
+          state.stage = null;
+          roadmap();
+        }
+      }
+      function safePath(path) {
+        const parts = path.split("/");
+        if (
+          parts.some((p) => !p || p === "." || p === ".." || p.includes("\\"))
+        )
+          throw Error("Đường dẫn dữ liệu không hợp lệ");
+        return parts;
+      }
+      async function folderSource(handle) {
+        let root = handle;
+        try {
+          root = await handle.getDirectoryHandle("kaiwa_skill");
+        } catch (error) {
+          if (error.name !== "NotFoundError") throw error;
+        }
+        return {
+          label: root.name,
+          async bytes(path) {
+            const parts = safePath(path);
+            let dir = root;
+            for (const name of parts.slice(0, -1))
+              dir = await dir.getDirectoryHandle(name);
+            return new Uint8Array(
+              await (
+                await dir.getFileHandle(parts.at(-1))
+              )
+                .getFile()
+                .then((f) => f.arrayBuffer()),
+            );
+          },
+          async dirs(path) {
+            let dir = root;
+            try {
+              for (const name of safePath(path))
+                dir = await dir.getDirectoryHandle(name);
+            } catch (e) {
+              if (e.name === "NotFoundError") return [];
+              throw e;
+            }
+            const names = [];
+            for await (const [name, entry] of dir.entries())
+              if (entry.kind === "directory") names.push(name);
+            return names;
+          },
+        };
+      }
+      function httpSource() {
+        const base = new URL("./", location.href);
+        return {
+          label: "JSON tại " + base.pathname,
+          async bytes(path) {
+            safePath(path);
+            const response = await fetch(new URL(path, base), {
+              cache: "no-store",
+            });
+            if (response.status === 404)
+              throw new DOMException("Không tìm thấy " + path, "NotFoundError");
+            if (!response.ok)
+              throw Error("HTTP " + response.status + " · " + path);
+            return new Uint8Array(await response.arrayBuffer());
+          },
+          async dirs(path) {
+            safePath(path);
+            const directory = new URL(path + "/", base);
+            const response = await fetch(directory, { cache: "no-store" });
+            if (!response.ok) return [];
+            const doc = new DOMParser().parseFromString(
+              await response.text(),
+              "text/html",
+            );
+            return [...doc.querySelectorAll("a[href]")]
+              .map((a) => {
+                const url = new URL(a.getAttribute("href"), directory);
+                if (
+                  url.origin !== directory.origin ||
+                  !url.pathname.startsWith(directory.pathname)
+                )
+                  return null;
+                const name = decodeURIComponent(
+                  url.pathname.slice(directory.pathname.length),
+                );
+                return /^[^/]+\/$/.test(name) ? name.slice(0, -1) : null;
+              })
+              .filter(Boolean);
+          },
+        };
+      }
+      function filesSource(files) {
+        const map = new Map();
+        for (const file of files) {
+          const parts = file.webkitRelativePath.split("/");
+          const index = parts.indexOf("kaiwa_skill");
+          if (index >= 0) map.set(parts.slice(index + 1).join("/"), file);
+          else map.set(parts.slice(1).join("/"), file);
+        }
+        return {
+          label: "Thư mục đã chọn",
+          async bytes(path) {
+            if (!map.has(path))
+              throw new DOMException("Không tìm thấy " + path, "NotFoundError");
+            return new Uint8Array(await map.get(path).arrayBuffer());
+          },
+          async dirs(path) {
+            return [
+              ...new Set(
+                [...map.keys()]
+                  .filter((k) => k.startsWith(path + "/"))
+                  .map((k) => k.slice(path.length + 1).split("/")[0]),
+              ),
+            ];
+          },
+        };
+      }
+      const decode = (bytes) =>
+        new TextDecoder("utf-8", { fatal: true })
+          .decode(bytes)
+          .replace(/^\uFEFF/, "");
+      async function json(path) {
+        return JSON.parse(decode(await state.source.bytes(path)));
+      }
+      async function artifact(path, kind) {
+        const manifest = await json(path + "/manifest.json");
+        if (
+          manifest.kind !== "artifact_manifest" ||
+          manifest.schema_version !== "1.0.0"
+        )
+          throw Error("Manifest chưa hỗ trợ tại " + path);
+        const entry = manifest.entrypoint;
+        if (
+          !["catalog.json", "stage.json"].includes(entry) ||
+          !manifest.files?.[entry]
+        )
+          throw Error("Manifest thiếu entrypoint hợp lệ");
+        const bytes = await state.source.bytes(path + "/" + entry);
+        if (!crypto.subtle)
+          throw Error(
+            "Trình duyệt chưa hỗ trợ kiểm SHA-256; mở bằng Chrome/Edge hoặc localhost.",
+          );
+        const digest = Array.from(
+          new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)),
+          (x) => x.toString(16).padStart(2, "0"),
+        ).join("");
+        if (digest !== manifest.files[entry])
+          throw Error("Checksum JSON sai tại " + path);
+        const data = JSON.parse(decode(bytes));
+        if (data.kind !== kind || data.schema_version !== "1.0.0")
+          throw Error("Gói " + kind + " chưa hỗ trợ tại " + path);
+        return data;
+      }
+      function validateStage(d, row) {
+        if (
+          d.stage_uid !== row.stage_uid ||
+          d.course_id !== state.catalog.course_id ||
+          d.level !== row.level ||
+          d.display_code !== row.display_code ||
+          !Number.isInteger(d.revision) ||
+          d.revision < 1
+        )
+          throw Error("Gói chặng không khớp catalog");
+        if (
+          !Array.isArray(d.nodes) ||
+          !Array.isArray(d.utterances) ||
+          !Array.isArray(d.lessons)
+        )
+          throw Error("Thiếu nodes, utterances hoặc lessons");
+        const ids = new Set(d.nodes.map((n) => n.id));
+        const utterances = new Set(d.utterances.map((u) => u.id));
+        if (
+          ids.size !== d.nodes.length ||
+          utterances.size !== d.utterances.length
+        )
+          throw Error("ID bị trùng trong gói");
+        for (const u of d.utterances)
+          if (typeof u.ja !== "string" || typeof u.vi !== "string")
+            throw Error("Câu thiếu Nhật–Việt");
+        for (const n of d.nodes) {
+          if (!TYPES[n.type] || !n.data)
+            throw Error("Loại bài chưa hỗ trợ " + n.type);
+          if (n.type === "knowledge")
+            for (const match of n.data.body_md.matchAll(
+              /\{\{utterance:([a-zA-Z0-9_-]+)\}\}/g,
+            ))
+              if (!utterances.has(match[1]))
+                throw Error("Thiếu câu " + match[1]);
+          if (n.type === "free_talk" || n.type === "live_challenge")
+            for (const id of n.data.context_node_ids)
+              if (!ids.has(id)) throw Error("Thiếu context " + id);
+        }
+        return d;
+      }
+      async function loadStage(row) {
+        const roots = [
+          "harumii_export/" + row.stage_uid,
+          "courseware/" + row.stage_uid + "/exports",
+        ];
+        let current = null;
+        try {
+          current = await json("courseware/" + row.stage_uid + "/current.json");
+        } catch (e) {
+          if (e.name !== "NotFoundError") throw e;
+        }
+        const candidates = [];
+        for (const root of roots) {
+          const dirs = await state.source.dirs(root);
+          for (const rev of dirs)
+            if (/^r\d{4,}$/.test(rev))
+              candidates.push({
+                path: root + "/" + rev,
+                rev: Number(rev.slice(1)),
+              });
+          if (current?.revision && /^r\d{4,}$/.test(current.revision))
+            candidates.push({
+              path: root + "/" + current.revision,
+              rev: Number(current.revision.slice(1)),
+            });
+        }
+        candidates.sort((a, b) => b.rev - a.rev);
+        const tried = new Set();
+        let failure = null;
+        for (const candidate of candidates) {
+          if (tried.has(candidate.path)) continue;
+          tried.add(candidate.path);
+          try {
+            const data = validateStage(
+              await artifact(candidate.path, "stage"),
+              row,
+            );
+            if (data.revision !== candidate.rev)
+              throw Error("Revision trong gói khác thư mục");
+            state.stages.set(row.stage_uid, data);
+            state.paths.set(row.stage_uid, candidate.path + "/stage.json");
+            if (failure)
+              state.errors.set(
+                row.stage_uid,
+                "Đang hiển thị revision " +
+                  data.revision +
+                  ". Gói mới hơn cần kiểm tra: " +
+                  failure,
+              );
+            return;
+          } catch (e) {
+            if (e.name !== "NotFoundError") failure = e.message;
+          }
+        }
+        if (failure) state.errors.set(row.stage_uid, failure);
+      }
+      async function reload() {
+        if (!state.source) return;
+        const epoch = ++state.epoch;
+        state.busy = true;
+        $("#refresh").disabled = true;
+        $("#folder").disabled = true;
+        $("#progress").hidden = false;
+        message("Đang đọc catalog và kiểm checksum các gói export…");
+        state.stages.clear();
+        state.paths.clear();
+        state.errors.clear();
+        try {
+          const catalogFolders = (await state.source.dirs("harumii_export"))
+            .filter((name) => /^catalog(?:[-_].+)?$/.test(name))
+            .sort((a, b) => b.localeCompare(a, "en", { numeric: true }));
+          // Static web hosts can disable directory listing. Keep the established
+          // catalog path usable there as well as on a local file server.
+          if (!catalogFolders.length) catalogFolders.push("catalog-v5");
+          const catalog = await artifact(
+            "harumii_export/" + catalogFolders[0],
+            "catalog",
+          );
+          if (
+            !Array.isArray(catalog.stages) ||
+            new Set(catalog.stages.map((r) => r.stage_uid)).size !==
+              catalog.stages.length
+          )
+            throw Error("Catalog thiếu danh sách chặng hoặc trùng UID");
+          for (const row of catalog.stages)
+            if (
+              !LEVELS[row.level] ||
+              !row.cluster_id ||
+              !Number.isFinite(row.order)
+            )
+              throw Error("Catalog có cấp độ, cụm hoặc thứ tự không hợp lệ");
+          state.catalog = {
+            ...catalog,
+            stages: [...catalog.stages].sort((a, b) => a.order - b.order),
+          };
+          let cursor = 0;
+          const workers = Array.from({ length: 6 }, async () => {
+            while (cursor < catalog.stages.length) {
+              const row = state.catalog.stages[cursor++];
+              try {
+                await loadStage(row);
+              } catch (e) {
+                state.errors.set(row.stage_uid, e.message);
+              }
+            }
+          });
+          await Promise.all(workers);
+          if (epoch !== state.epoch) return;
+          render();
+          message(
+            state.catalog.stages.length +
+              " chặng · " +
+              state.stages.size +
+              " gói nội dung · đọc lúc " +
+              new Date().toLocaleTimeString("vi-VN") +
+              (state.errors.size
+                ? " · " + state.errors.size + " chặng cần kiểm tra"
+                : ""),
+          );
+          $("#connection").textContent = state.source.label;
+        } catch (e) {
+          state.catalog = null;
+          render();
+          $("#main").append(problem("Không đọc được dữ liệu: " + e.message));
+          message(
+            "Chưa tải được lộ trình. Kiểm tra thư mục và catalog export.",
+          );
+        } finally {
+          state.busy = false;
+          $("#refresh").disabled = false;
+          $("#folder").disabled = false;
+          $("#progress").hidden = true;
+        }
+      }
+      async function storedHandle(value) {
+        return new Promise((resolve, reject) => {
+          const request = indexedDB.open("harumii-kaiwa-preview", 1);
+          request.onupgradeneeded = () =>
+            request.result.createObjectStore("settings");
+          request.onerror = () => reject(request.error);
+          request.onsuccess = () => {
+            const db = request.result;
+            const transaction = db.transaction(
+              "settings",
+              value ? "readwrite" : "readonly",
+            );
+            const operation = value
+              ? transaction.objectStore("settings").put(value, "folder")
+              : transaction.objectStore("settings").get("folder");
+            let result;
+            operation.onsuccess = () => {
+              result = operation.result;
+            };
+            transaction.oncomplete = () => {
+              db.close();
+              resolve(result);
+            };
+            transaction.onerror = () => {
+              db.close();
+              reject(transaction.error);
+            };
+          };
+        });
+      }
+      let remembered = null;
+      $("#folder").onclick = async () => {
+        try {
+          if (!window.showDirectoryPicker) {
+            $("#openFiles").click();
+            return;
+          }
+          const handle = await showDirectoryPicker({
+            mode: "read",
+            id: "harumii-kaiwa",
+          });
+          remembered = handle;
+          try {
+            await storedHandle(handle);
+          } catch (e) {
+            message(
+              "Trình duyệt chưa lưu được thư mục; vẫn có thể đọc lần này.",
+            );
+          }
+          state.source = await folderSource(handle);
+          await reload();
+        } catch (e) {
+          if (e.name !== "AbortError")
+            message("Không mở được thư mục: " + e.message);
+        }
+      };
+      $("#openFiles").onchange = async (e) => {
+        state.source = filesSource(e.target.files);
+        await reload();
+        $("#connection").textContent +=
+          " · Chọn lại thư mục để đọc các file được sửa hoặc thêm mới.";
+      };
+      $("#refresh").onclick = async () => {
+        try {
+          if (remembered) {
+            const permission = await remembered.requestPermission({
+              mode: "read",
+            });
+            if (permission !== "granted") {
+              message("Cần quyền đọc thư mục để cập nhật dữ liệu.");
+              return;
+            }
+            state.source = await folderSource(remembered);
+          }
+          await reload();
+        } catch (e) {
+          message("Không tải lại được: " + e.message);
+        }
+      };
+      window.addEventListener("hashchange", () => {
+        readHash();
+        render();
+      });
+      async function start() {
+        readHash();
+        render();
+        if (location.protocol === "http:" || location.protocol === "https:") {
+          state.source = httpSource();
+          await reload();
+          return;
+        }
+        try {
+          remembered = await storedHandle();
+          if (
+            remembered &&
+            (await remembered.queryPermission({ mode: "read" })) === "granted"
+          ) {
+            state.source = await folderSource(remembered);
+            await reload();
+            return;
+          }
+          if (remembered) {
+            message("Bấm Tải lại và cho phép đọc thư mục đã ghi nhớ.");
+            return;
+          }
+        } catch (e) {
+          /* Folder selection remains available when browser storage is disabled. */
+        }
+        message("Chọn thư mục dữ liệu để mở lộ trình.");
+      }
+      start();
+    </script>
+  </body>
+</html>
