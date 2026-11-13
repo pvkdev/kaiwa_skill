@@ -16,7 +16,7 @@ py -B -X utf8 .agents/skills/kaiwa-stage-content/scripts/stage_work.py validate 
 py -B -X utf8 .agents/skills/kaiwa-stage-content/scripts/stage_work.py finalize --stage UID --run RUN --editor-reviewed --note 'Đã đọc lại nội dung, xác minh nguồn dùng và ghi các giới hạn trong editorial.md'
 ```
 
-`begin` trả đường dẫn draft V3.1 và tạo `learning-map.json` rỗng. Tác giả viết trực tiếp trong draft đó. Đây **không phải chặng đã hoàn thành**. `checkpoint` và `pause` cần chỉ dẫn tiếp theo đủ cụ thể cho người mới nhận việc, gồm bài/nhánh tiếp theo và nội dung cũ cần ôn. Nếu sổ nguồn/sổ bài đang viết dở hoặc hash chưa khớp, vẫn lưu với `source_warning`/`context_warning`; phải sửa trước khi chốt phần liên quan.
+`begin` trả đường dẫn draft V3.2 và tạo `learning-map.json` rỗng. Tác giả viết trực tiếp trong draft đó. Đây **không phải chặng đã hoàn thành**. `checkpoint` và `pause` cần chỉ dẫn tiếp theo đủ cụ thể cho người mới nhận việc, gồm bài/nhánh tiếp theo và nội dung cũ cần ôn. Nếu sổ nguồn/sổ bài đang viết dở hoặc hash chưa khớp, vẫn lưu với `source_warning`/`context_warning`; phải sửa trước khi chốt phần liên quan.
 
 `resume` yêu cầu draft không thay đổi từ lúc pause và các nguồn/spec/context đã pin còn khớp. Nếu có thay đổi, không reset: kiểm lý do rồi dùng recovery. Pin gồm registry, skill, các reference của skill, script và metadata khung nếu có; nguồn từ `sources.json`; context các bài trước từ `learning-map.json`, kèm con trỏ revision hiện hành và các file của bài đã tham khảo. Thay đổi phải đọc lại phần liên quan, ghi tái đối chiếu; không chỉ đổi hash hoặc revision để làm lệnh chạy qua.
 
@@ -44,12 +44,14 @@ Lệnh sao chép revision hiện tại vào draft mới sau khi đối chiếu m
 
 V3.0 cũ vẫn đọc được. Nâng lên 3.1 trong draft mới: giữ ID, bổ sung nhóm bài/gối đầu, loại shadowing, metadata cặp kiến thức/video và nhãn từ mới/ôn; không sửa snapshot cũ. Khi bài trước được nâng cấp, con trỏ trong draft bài sau cần đọc lại và cập nhật. Dùng UID/lesson ID tìm các chặng phụ thuộc; không tự sửa hoặc tái sinh tất cả bài sau.
 
+Nâng lên 3.2 trong draft mới: giữ ID, thêm `free_talk` do tác giả soạn cho node `live_context` ở cuối chặng; xuất cả `live-context.md` và `free-talk-situation.md`. Helper vẫn đọc 3.0/3.1 mà không tự sửa snapshot. Khi nâng cấp kiến thức, phải đọc lại phần tổng hợp free talk, sửa nếu cần rồi xuất lại; không chỉ ghép tài liệu mới vào một lời dẫn đã lỗi thời. File free talk không chịu giới hạn 1.000 ký tự của luồng user nhập tay.
+
 Pilot rời có thể ghi `pending_previous` nếu bài trước chưa tồn tại. Helper giữ số pending trong kết quả validate và manifest revision (`continuity_pending`) thay vì tuyên bố đã nối xong. Đây là ghi chú biên tập; không có cổng người học.
 
 ## Bảo đảm và giới hạn
 
 - Owner theo chặng ngăn helper mở hai lượt đồng thời. Guard tạo độc quyền bảo vệ các lần cập nhật metadata; mọi mutating command kiểm RUN hiện còn sở hữu chặng.
 - Draft cũ và revisions không bị helper ghi đè. Revision mới được sao chép, băm, viết manifest trước khi đổi `current.json` bằng atomic replace. Bản snapshot dang dở không trở thành current; lần sau dùng số revision mới.
-- `validate` kiểm node/file/ID, hai vai khi có hội thoại, Nhật–Việt, quan hệ sự kiện, cặp Speak Japanese liền nhau, anchor ví dụ, nhóm bài, liên kết ôn đúng bài trước, từ review có nguồn trước, và Live có đủ node. Không kiểm được tiếng Nhật tự nhiên, đã đọc thật, dịch đúng hoặc ví dụ thực hành đúng ý kiến thức. Người biên tập phải làm phần đó trước `--editor-reviewed`.
+- `validate` kiểm node/file/ID, hai vai khi có hội thoại, Nhật–Việt, quan hệ sự kiện, cặp Speak Japanese liền nhau, anchor ví dụ, nhóm bài, liên kết ôn đúng bài trước, từ review có nguồn trước, Live có đủ node và free talk V3.2 có dữ liệu biên soạn/đứng cuối chặng. `finalize` ghép hai bản context; không tự viết phần tổng hợp. Không kiểm được tiếng Nhật tự nhiên, đã đọc thật, dịch đúng hoặc ví dụ thực hành đúng ý kiến thức. Người biên tập phải làm phần đó trước `--editor-reviewed`.
 - Helper không khóa quyền sửa file bằng tay, không phải cơ chế bảo mật và không bảo đảm nhiều máy/ổ mạng. Không cho hai tiến trình dùng chung RUN/draft. Trước recovery phải dừng tiến trình cũ; không làm takeover giữa lúc người cũ vẫn viết.
 - Atomic replace giảm metadata bị ghi nửa chừng; không thay thế backup/Git và không hứa chống mất dữ liệu do hỏng ổ đĩa. Checkpoint đều đặn, lưu handoff trước khi hết quota. Không thể cứu phần chưa từng được ghi xuống đĩa.

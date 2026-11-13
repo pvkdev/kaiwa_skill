@@ -67,7 +67,12 @@ class ContentRegression(unittest.TestCase):
             {"id": "sh03-e01", "kind": "sentence", "ja": "メニューを見せてください。", "vi": "Cho tôi xem thực đơn.", "authorship": "original_extension"},
             {"id": "sh03-d01", "kind": "dialogue", "speakers": speakers, "turns": [{**t, "id": "sh03-" + t["id"]} for t in turns], "authorship": "original_extension"},
             {"id": "sh03-r01", "kind": "situation_ref", "situation_id": "s01"}]})
-        put(draft / "live/live01.json", {"id": "live01", "context_node_ids": [n["id"] for n in stage["nodes"][:-1]], "context_export": "live-context.md"})
+        put(draft / "live/live01.json", {"id": "live01", "context_node_ids": [n["id"] for n in stage["nodes"][:-1]], "context_export": "live-context.md",
+            "free_talk": {"mode": "free_talk", "content_origin": "curriculum_authored",
+                          "learner_intro_vi": "Trò chuyện tùy ý về ăn uống.",
+                          "ai_situation_vi": "Trò chuyện về thực đơn, nhận xét món và xin xem thực đơn. Theo ý người học, không kiểm tra.",
+                          "conversation_starters_vi": ["Bạn thích ăn món gì?"],
+                          "situation_export": "free-talk-situation.md"}})
         put(draft / "sources.json", {"scan": [{"book_id": f"B{i:02}", "status": "index_only", "note": "Fixture only"} for i in range(1, 28)], "entries": []})
         def ref(lid, nid=None, item=None):
             value = {"stage_uid": uid, "revision": None, "lesson_id": lid}
@@ -98,6 +103,56 @@ class ContentRegression(unittest.TestCase):
         put(self.draft / "stage.json", stage)
         with self.assertRaisesRegex(ValueError, "immediately followed"):
             WORK.check(self.draft, UIDS[0], self.root)
+
+    def test_free_talk_export_includes_authored_scenario_and_full_material_without_1000_cap(self):
+        live_path = self.draft / "live/live01.json"
+        data = WORK.read(live_path)
+        data["free_talk"]["ai_situation_vi"] += " Cách triển khai hội thoại tùy nhu cầu." * 60
+        put(live_path, data)
+        stage = WORK.check(self.draft, UIDS[0], self.root)
+        WORK.export_context(self.draft, stage)
+        output = (self.draft / "free-talk-situation.md").read_text(encoding="utf-8")
+        self.assertGreater(len(data["free_talk"]["ai_situation_vi"]), 1000)
+        self.assertIn(data["free_talk"]["ai_situation_vi"], output)
+        for node in stage["nodes"]:
+            if node["type"] != "live_context":
+                self.assertIn((self.draft / node["path"]).read_text(encoding="utf-8"), output)
+        self.assertNotIn('"context_export"', output)
+
+    def test_free_talk_requires_actual_authored_text(self):
+        live_path = self.draft / "live/live01.json"
+        data = WORK.read(live_path)
+        data["free_talk"]["ai_situation_vi"] = " "
+        put(live_path, data)
+        with self.assertRaisesRegex(ValueError, "Missing authored free talk field"):
+            WORK.check(self.draft, UIDS[0], self.root)
+
+    def test_free_talk_must_stay_at_stage_end(self):
+        stage = WORK.read(self.draft / "stage.json")
+        stage["nodes"].insert(-1, stage["nodes"].pop())
+        put(self.draft / "stage.json", stage)
+        with self.assertRaisesRegex(ValueError, "Free talk node must be last"):
+            WORK.check(self.draft, UIDS[0], self.root)
+
+    def test_free_talk_export_refreshes_material_on_revision(self):
+        stage = WORK.check(self.draft, UIDS[0], self.root)
+        WORK.export_context(self.draft, stage)
+        p = self.draft / "knowledge/k03.md"
+        p.write_text("# Điểm mới đã chỉnh sửa\n", encoding="utf-8")
+        WORK.export_context(self.draft, WORK.check(self.draft, UIDS[0], self.root))
+        self.assertIn(p.read_text(encoding="utf-8"), (self.draft / "free-talk-situation.md").read_text(encoding="utf-8"))
+
+    def test_legacy_31_without_authored_free_talk_still_exports_archive(self):
+        stage = WORK.read(self.draft / "stage.json")
+        stage["schema_version"] = "3.1-draft"
+        put(self.draft / "stage.json", stage)
+        live_path = self.draft / "live/live01.json"
+        data = WORK.read(live_path)
+        del data["free_talk"]
+        put(live_path, data)
+        WORK.export_context(self.draft, WORK.check(self.draft, UIDS[0], self.root))
+        self.assertTrue((self.draft / "live-context.md").exists())
+        self.assertFalse((self.draft / "free-talk-situation.md").exists())
 
     def test_speak_example_requires_knowledge_anchor(self):
         (self.draft / "knowledge/k01.md").write_text("# Missing example", encoding="utf-8")
