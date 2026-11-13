@@ -789,9 +789,9 @@
       "use strict";
       // One renderer. Lesson content is read from the exported JSON entrypoints.
       const PILOTS = {
-        beginner: "da5c16e5-9425-5a4f-9086-8c109aa79c90",
-        intermediate: "2c4afb8d-e518-5c65-989e-076857a6ce9d",
-        advanced: "cba953ce-d3d0-5e71-acb8-419cd0e708a1",
+        beginner: ["da5c16e5-9425-5a4f-9086-8c109aa79c90", "72d35860-f51f-5d26-b6c8-489bed15a13f"],
+        intermediate: ["2c4afb8d-e518-5c65-989e-076857a6ce9d", "50ef9531-2517-520a-930d-4379aff980ab"],
+        advanced: ["cba953ce-d3d0-5e71-acb8-419cd0e708a1", "22840572-0228-51e3-a068-ef0e18149953"],
       };
       const LEVELS = {
         beginner: "Sơ cấp",
@@ -1422,7 +1422,7 @@
           (r) =>
             r.level === currentLevel() &&
             (!state.tab.startsWith("pilot-") ||
-              PILOTS[r.level] === r.stage_uid),
+              PILOTS[r.level].includes(r.stage_uid)),
         );
         const groups = new Map();
         for (const row of rows) {
@@ -1599,7 +1599,7 @@
             r.stage_uid === state.stage &&
             r.level === currentLevel() &&
             (!state.tab.startsWith("pilot-") ||
-              PILOTS[r.level] === r.stage_uid),
+              PILOTS[r.level].includes(r.stage_uid)),
         );
         if (row) stageReader(row);
         else {
