@@ -120,6 +120,7 @@ def check(decision):
         for key in ("pack_id", "title_ja", "fit_vi", "difficulty_vi", "boundary", "audio_note"):
             text_field(s, key)
         require(s.get("read_status") == "whole_unit_read", "Ứng viên chưa đọc trọn")
+        learner_title(s)
         check_part(s, book)
         excerpt = source_bytes(s).decode("utf8")
         heading = next((line.lstrip("# ").strip() for line in excerpt.splitlines()
@@ -209,7 +210,15 @@ def markdown_renderer():
     return MarkdownIt("commonmark", {"html": False}).disable(["link", "image", "autolink"]).enable("table")
 
 
-def render_excerpt(content):
+def learner_title(selection):
+    title = selection["title_ja"]
+    prefix = selection.get("source_number_prefix", "")
+    require(isinstance(prefix, str) and title.startswith(prefix) and title[len(prefix):].strip(),
+            "Tiền tố số mục không khớp tiêu đề nguồn: " + title)
+    return title[len(prefix):]
+
+
+def render_excerpt(content, selection):
     # The downloadable snapshot stays verbatim. Hide print locators in the learner view.
     text = content.decode("utf8")
     text = re.sub(r'^<a id="[^"]+"></a>[ \t]*$', "", text, flags=re.MULTILINE)
@@ -217,6 +226,10 @@ def render_excerpt(content):
     text = re.sub(r"\s*〔(?:CD|音声)\s*[\d /–-]+〕", "", text)
     text = re.sub(r"[ \t]*\((?:PDF\s*\d+|trang in \d+)[^()\n]*\)", "", text)
     text = re.sub(r"[ \t]*\*\*CD-\d+ / \d+\*\*\.?", "", text)
+    # Strip the declared locator from the unit heading only, preserving numbers in Japanese text.
+    title = selection["title_ja"]
+    text = re.sub(r"^(#{1,6} )" + re.escape(title),
+                  lambda match: match[1] + learner_title(selection), text, count=1, flags=re.MULTILINE)
     return markdown_renderer().render(text)
 
 
@@ -225,7 +238,8 @@ def blocks(stage, decision):
         return {"type": kind, **fields}
     result = [node("vocabulary_topics", topics=decision["vocabulary_topics"] if decision else [])]
     for s in decision["selections"] if decision else []:
-        ref = {k: s[k] for k in ("book_id", "pack_id", "title_ja", "material_path")}
+        ref = {k: s[k] for k in ("book_id", "pack_id", "material_path")}
+        ref["title_ja"] = learner_title(s)
         if s["kind"] == "speak_japanese":
             result.extend([node("speak_japanese_video", video_status="placeholder", **ref), node("speak_japanese_examples", **ref)])
         else:
@@ -246,7 +260,7 @@ def selected_md(s, stage):
     aud = " · ".join(" ".join(str(x) for x in (a["disc"], a["track"]) if x is not None)
                      + " (" + a["locator"] + ")" for a in s["audio"])
     lead = ["Video bài giảng · Chờ gắn video", ""] if s["kind"] == "speak_japanese" else []
-    return [f"##### {s['title_ja']}", "", *lead, f"[Mở bài shadowing đầy đủ]({s['material_path']})", "", f"**{s['book_id']} · {s['book_title']}** — {s['title_ja']}", "",
+    return [f"##### {learner_title(s)}", "", *lead, f"[Mở bài shadowing đầy đủ]({s['material_path']})", "", f"**{s['book_id']} · {s['book_title']}** — {s['title_ja']}", "",
             s["fit_vi"], "", "**Độ khó.** " + s["difficulty_vi"], "",
             "**Tình huống.** " + " · ".join(f"{i} {situations[i]}" for i in s["situation_ids"]), "",
             "**Phạm vi.** " + s["boundary"], "", "**Tra sách.** " +
@@ -303,12 +317,12 @@ def preview(course, materials):
             page.append('<h3>Từ vựng theo topic</h3><p>' + e(" · ".join(d["vocabulary_topics"])) + '</p>')
             for x in d["selections"]:
                 pair = x["kind"] == "speak_japanese"
-                page.append('<section class="material"><h3 lang="ja">' + e(x["title_ja"]) + '</h3>')
+                page.append('<section class="material"><h3 lang="ja">' + e(learner_title(x)) + '</h3>')
                 if pair:
                     page.append('<p class="video">Video bài giảng · Chờ gắn video</p>')
                 src = x["material_path"]
                 page.append('<details class="excerpt"><summary>Shadowing · Xem nội dung bài</summary><div class="reading">'
-                            + render_excerpt(materials[src]) + '</div><p><a href="' + e(src) +
+                            + render_excerpt(materials[src], x) + '</div><p><a href="' + e(src) +
                             '" download>Tải bản Markdown</a></p></details>')
                 page.append('<details><summary>Nguồn và lý do chọn</summary><p>' +
                             e(x["book_id"]+" · "+x["book_title"]+" · "+x["title_ja"]) + '</p><p>' +
