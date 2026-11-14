@@ -260,8 +260,8 @@ def learner_title(selection):
 
 def render_excerpt(content, selection):
     # The downloadable snapshot stays verbatim. Hide print locators in the learner view.
-    text = content.decode("utf8")
-    text = re.sub(r'^<a id="[^"]+"></a>[ \t]*$', "", text, flags=re.MULTILINE)
+    text = content.decode("utf-8-sig").replace("\r\n", "\n").replace("\r", "\n")
+    text = re.sub(r'^[ \t]*<a id="[^"]+"></a>[ \t]*$', "", text, flags=re.MULTILINE)
     text = re.sub(r"^\*\*(?:CD|DISC|DISK)\s+[\d /–-]+\*\*[ \t]*$", "", text, flags=re.MULTILINE)
     text = re.sub(r"^\*\*Mã CD[^\n]*$|^#+ DISC \d+ / \d+[ \t]*$", "", text, flags=re.MULTILINE)
     text = re.sub(r"\s*〔(?:CD|音声)\s*[\d /–-]+〕", "", text)
