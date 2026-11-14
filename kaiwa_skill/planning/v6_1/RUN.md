@@ -13,3 +13,7 @@ Mỗi shell dùng $env:KAIWA_ROADMAP_DIR='D:/CODE/git/kaiwa_skill/kaiwa_skill/pl
 Nguồn và nội dung V5 chỉ đọc. Chưa viết bài giảng, hội thoại mới, challenge. Tên bài gốc và prefix đánh số nội bộ được lưu riêng. App preview bỏ prefix khi hiển thị. Giữ đủ bài/pack và các track. Một nguồn được tái dùng trong nhiều chặng hoặc cấp khi có ích.
 
 Sau đủ 289 quyết định, kiểm toàn bộ bằng chứng/hashes, ranh giới pack đồng nhất, tiêu đề, các trường hợp rỗng, bản JSON đúng nguyên V5, và đọc preview. Commit quyết định và bản xuất riêng với skill. Chỉ phát hành con trỏ sau nghiệm thu.
+
+## Hoàn tất
+
+Cả ba worker đã bàn giao, 289 quyết định kiểm xong. Xem NGHIEM_THU.md và STATUS.json. Con trỏ CURRENT_ROADMAP.json đã trỏ tới V6.1.
