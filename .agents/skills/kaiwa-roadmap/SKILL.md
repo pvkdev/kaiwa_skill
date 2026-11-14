@@ -20,3 +20,7 @@ Làm việc từ gốc repo. Yêu cầu gốc ở `kaiwa_skill/planning/v6/CHECK
 ## Nâng cấp một chặng
 
 Mở decision đúng mã, giữ nguyên stage_uid, lưu lịch sử qua Git. Khi đổi một bài, xem cả chặng khác dùng cùng pack trong chỉ mục ngược. Tái kiểm hash, tình huống và thứ tự ở chặng sửa rồi dựng lại các bản dẫn xuất. Đổi chủ đề lộ trình hoặc sản xuất bài học là công việc riêng với một lần điều chỉnh nguồn.
+
+## Release V6.1 đã được giao
+
+Người dùng chốt mỗi worker một cấp và đi tuần tự theo QUEUE_so.json, QUEUE_trung.json, QUEUE_thuong.json trong planning/v6_1. Ba worker Sol/high. Các chặng pilot kế thừa. Trước khi chạy helper, đặt KAIWA_ROADMAP_DIR trỏ tuyệt đối tới kaiwa_skill/planning/v6_1. SOURCE_POLICY.json trong release ghi scope đầy đủ. Lưu từng decision đã check-one; draft trong work/<cấp>. Điều phối build/verify các bản đọc và nội dung cục bộ sau các lượt bàn giao. Chỉ đánh dấu hoàn tất khi có đủ 289 decision hợp lệ. V6.0 tiếp tục là snapshot pilot.

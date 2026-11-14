@@ -15,7 +15,7 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 PLANNING = ROOT / "kaiwa_skill/planning"
-V6 = PLANNING / "v6"
+V6 = Path(os.environ.get("KAIWA_ROADMAP_DIR", str(PLANNING / "v6"))).resolve()
 V5 = PLANNING / "v5"
 POLICY_PATH = V6 / "SOURCE_POLICY.json"
 FILES = {"Sơ": "SO_CAP.md", "Trung": "TRUNG_CAP.md", "Thượng": "THUONG_CAP.md"}
@@ -101,7 +101,7 @@ def check(decision):
     code = text_field(decision, "display_code")
     stage = next((row for row in course if row["display_code"] == code), None)
     require(stage and stage["uid"] == decision.get("stage_uid"), "UID hoặc mã chặng sai: " + code)
-    require(code in policy["pilot"], "Ngoài phạm vi quyết định của bản pilot: " + code)
+    require(code in policy.get("scope", policy["pilot"]), "Ngoài phạm vi quyết định của bản pilot: " + code)
     for key in ("vocabulary_topics", "search_notes"):
         require(all(isinstance(x, str) and x.strip() for x in list_field(decision, key, True)),
                 f"{code}: {key} cần nội dung")
@@ -283,7 +283,7 @@ def stage_md(stage):
             if not selected:
                 lines += ["Đã xét nguồn. Chưa chọn bài cho phần này.", ""]
     else:
-        lines += ["*Chưa phân bổ nguồn ở V6.0.*", ""]
+        lines += ["*Chưa phân bổ nguồn.*", ""]
     lines += ["**Video bài giảng tổng hợp của chặng** · Chờ gắn video.", ""]
     for event in stage["events"]:
         lines += [f"#### {event['id']} — {event['name']}", "", "Vai: " + " ↔ ".join(event["roles"]), ""]
@@ -308,7 +308,7 @@ def preview(course, materials):
             '<h1>Lộ trình Kaiwa V6.0</h1><p>Chọn chặng để xem theo thứ tự học. Mở mục nguồn để đối chiếu sách và CD.</p>',
             '<label>Cấp <select id="level"><option value="">Tất cả</option>' +
             ''.join('<option>'+escape(l)+'</option>' for l in FILES) + '</select></label>',
-            '<label><input id="only" type="checkbox" checked>Chỉ chặng pilot</label>']
+            '<label><input id="only" type="checkbox" >Chỉ chặng đã phân bổ</label>']
     for s in course:
         d = s["v6"]["decision"]
         e = escape
@@ -330,7 +330,7 @@ def preview(course, materials):
                             e(" · ".join(str(a.get("disc") or "")+" "+str(a.get("track") or "")+" "+a["locator"] for a in x["audio"])) +
                             ' ' + e(x["audio_note"]) + '</p><p>' + e(", ".join(x["situation_ids"])) + '</p></details></section>')
         else:
-            page.append('<p>Chưa phân bổ nguồn ở V6.0.</p>')
+            page.append('<p>Chưa phân bổ nguồn.</p>')
         page.append('<h3>Video bài giảng tổng hợp của chặng</h3><p class="video">Chờ gắn video</p>')
         for ev in s["events"]:
             page.append('<h3>' + e(ev["name"]) + '</h3><ul>')
@@ -351,7 +351,9 @@ def artifacts():
         check(d)
         require(path.stem == d["display_code"], "Tên file sai mã chặng")
         decisions[path.stem] = d
-    require(set(decisions) == set(policy["pilot"]), "Chưa đủ chính xác tập pilot đã giao.")
+    require(set(decisions) <= set(policy.get("scope", policy["pilot"])), "Quyết định ngoài phạm vi.")
+    if policy["phase"] == "pilot":
+        require(set(decisions) == set(policy["pilot"]), "Thiếu pilot.")
     course, reverse = [], defaultdict(list)
     boundaries = {}
     pack_by_location = {}
@@ -375,7 +377,7 @@ def artifacts():
             reverse[key].append(code)
             counts[s["kind"]] += 1
     files = {"KAIWA_CHANG_V6_0.jsonl": "\n".join(dumps(s) for s in course)}
-    pilot_reader = ["# Pilot phân bổ nguồn Kaiwa V6.0", "", "Ba chặng để duyệt trước khi phân bổ đại trà. Mỗi bài Speak Japanese đi kèm một node luyện ví dụ. Mỗi pack độc lập là một node.", ""]
+    pilot_reader = ["# Pilot phân bổ nguồn Kaiwa V6.0", "", "Mỗi bài Speak Japanese đi kèm một node luyện ví dụ. Mỗi pack độc lập là một node.", ""]
     for level, filename in FILES.items():
         lines = ["# Kaiwa V6.0 — " + level, "", "Lộ trình nghe nói · bản phân bổ pilot. Các UID và tình huống kế thừa từ V5.", ""]
         prev = None
@@ -389,7 +391,7 @@ def artifacts():
                 pilot_reader += detail
         files[filename] = "\n".join(lines)
     files["PILOT.md"] = "\n".join(pilot_reader)
-    index = ["# Tra từ sách đến chặng · V6.0", "", "Chỉ phản ánh các chặng đã đọc ở pilot.", ""]
+    index = ["# Tra từ sách đến chặng · V6.0", "", "Phản ánh những chặng đã kiểm trong release.", ""]
     for bid in dict.fromkeys(policy["speak_japanese"] + policy["shadowing_pack"]):
         index += ["## " + bid + " — " + books[bid]["title"], ""]
         entries = [(key, codes) for key, codes in sorted(reverse.items()) if key[0] == bid]
@@ -405,7 +407,7 @@ def artifacts():
         "", "[Sơ](SO_CAP.md) · [Trung](TRUNG_CAP.md) · [Thượng](THUONG_CAP.md)",
         "", "[Yêu cầu gốc](CHECKPOINT_YEU_CAU.md) · [Tra ngược theo sách](TRA_THEO_SACH.md) · [Trạng thái](STATUS.json)",
         "", "Hai bước Speak Japanese và shadowing là quyết định chọn nội dung. Các bài giảng và nhiệm vụ Live sẽ được thiết kế ở giai đoạn sau.",
-        "", *[f"- {code} — {next(row['title'] for row in course if row['display_code']==code)}" for code in policy["pilot"]]
+        "", *[f"- {code} — {next(row['title'] for row in course if row['display_code']==code)}" for code in policy.get("scope", policy["pilot"])]
     ])
     files["TRA_THEO_SACH.md"] = "\n".join(index)
     files["ROADMAP.html"] = preview(course, materials)
@@ -417,7 +419,22 @@ def artifacts():
                                   "reviewed": list(decisions), "not_reviewed": len(course)-len(decisions),
                                   "local_markdown_files": sum(n.endswith(".md") for n in materials),
                                   "assignment_occurrences": dict(counts), "unique_book_pack_keys": len(reverse),
-                                  "next_action": "Chờ người dùng duyệt pilot trước khi giao ba worker Sol/high cho V6.1."}, True)
+                                  "next_action": "Tiếp hàng đợi từng cấp đến đủ 289 chặng, sau đó nghiệm thu."}, True)
+    if policy["version"] != "6.0":
+        replacements = {"V6.0": "V6.1", "KAIWA_CHANG_V6_0": "KAIWA_CHANG_V6_1",
+                        "Khung lộ trình và pilot phân bổ nguồn": "Khung lộ trình và phân bổ nguồn",
+                        "Pilot phân bổ nguồn": "Phân bổ nguồn",
+                        "Mở pilot theo thứ tự học": "Mở các chặng đã phân bổ",
+                        "bản phân bổ pilot": "bản phân bổ nguồn"}
+        updated = {}
+        for name, value in files.items():
+            for old, new in replacements.items():
+                value = value.replace(old, new)
+            updated[name.replace("V6_0", "V6_1")] = value
+        files = updated
+        status = json.loads(files["STATUS.json"])
+        status["state"] = "allocation_complete" if len(decisions) == len(base) else "allocation_in_progress"
+        files["STATUS.json"] = dumps(status, True)
     return {name: (value.rstrip()+"\n").encode("utf8") for name, value in files.items()} | materials
 
 
@@ -442,6 +459,8 @@ def main():
     if args.cmd == "build":
         # Validate the full set before writing. Interruption is recoverable with build + verify.
         for name, contents in outputs.items():
+            if (V6 / name).exists() and (V6 / name).read_bytes() == contents:
+                continue
             (V6 / name).parent.mkdir(parents=True, exist_ok=True)
             with tempfile.NamedTemporaryFile(dir=V6, delete=False) as f:
                 f.write(contents)
@@ -449,7 +468,7 @@ def main():
             os.replace(tmp, V6 / name)
     for name, contents in outputs.items():
         require((V6 / name).read_bytes() == contents, "Cần dựng lại " + name)
-    actual = rows(V6 / "KAIWA_CHANG_V6_0.jsonl")
+    actual = rows(V6 / ("KAIWA_CHANG_V6_1.jsonl" if inputs()[0]["version"] == "6.1" else "KAIWA_CHANG_V6_0.jsonl"))
     for s in actual:
         del s["v6"]
     require(actual == inputs()[1], "Nội dung hoặc thứ tự V5 sai lệch")
