@@ -129,6 +129,22 @@ def check(decision):
         require(s["title_ja"] in heading, "Tiêu đề phải có trong đầu mục nguồn: " + s["title_ja"])
         for p in s.get("extra_parts", []):
             check_part(p, book)
+        if bid == "B19":
+            lines = (ROOT / s["path"]).read_text(encoding="utf-8-sig").splitlines()
+            anchors = [(i, line) for i, line in enumerate(lines) if re.match(r'^<a id=', line)]
+            groups = []
+            for j, (start, _) in enumerate(anchors):
+                end = anchors[j+1][0] if j+1 < len(anchors) else len(lines)
+                if any(re.search(r"\*\*CD:\s*\d+\*\*", line) for line in lines[start:end]):
+                    groups.append(start)
+            selected = [i for i in groups if s["start_line"]-1 <= i < s["end_line"]]
+            require(len(selected) == 1, "B19 cần trọn một nhóm audio.")
+            start = selected[0]
+            end = next((i for i in groups if i > start), len(lines))
+            normalize = lambda ls: re.sub(r'^<a id="[^"]+"></a>[ \t]*$', "",
+                                          "\n".join(ls), flags=re.MULTILINE).strip()
+            require(normalize(lines[s["start_line"]-1:s["end_line"]]) == normalize(lines[start:end]),
+                    "B19: thiếu mục liền nhau cùng nhãn CD.")
         if bid == "INTERVIEW":
             labels = []
             for part in [s, *s.get("extra_parts", [])]:
@@ -215,13 +231,21 @@ def learner_title(selection):
     prefix = selection.get("source_number_prefix", "")
     require(isinstance(prefix, str) and title.startswith(prefix) and title[len(prefix):].strip(),
             "Tiền tố số mục không khớp tiêu đề nguồn: " + title)
-    return title[len(prefix):]
+    visible = title[len(prefix):]
+    visible = re.sub(r"^(?:Cao cấp|Trung cấp|Sơ cấp|Sơ–Trung cấp|Trung–Thượng cấp)\s*·\s*", "", visible)
+    visible = re.sub(r"\s*·\s*(?:DISK|DISC|CD)\s*[\d /–-]+$", "", visible, flags=re.IGNORECASE)
+    visible = re.sub(r"\s*〔(?:CD|音声)\s*[\d /–-]+〕", "", visible)
+    if re.fullmatch(r"(?:Section|Unit|PART)\s*[\d①-⑳Ⅰ-Ⅹ]+", visible, flags=re.IGNORECASE):
+        return "Shadowing"
+    visible = re.sub(r"(｜)\d+\s+", r"\1", visible)
+    return visible
 
 
 def render_excerpt(content, selection):
     # The downloadable snapshot stays verbatim. Hide print locators in the learner view.
     text = content.decode("utf8")
     text = re.sub(r'^<a id="[^"]+"></a>[ \t]*$', "", text, flags=re.MULTILINE)
+    text = re.sub(r"^\*\*(?:CD|DISC|DISK)\s+[\d /–-]+\*\*[ \t]*$", "", text, flags=re.MULTILINE)
     text = re.sub(r"^\*\*Mã CD[^\n]*$|^#+ DISC \d+ / \d+[ \t]*$", "", text, flags=re.MULTILINE)
     text = re.sub(r"\s*〔(?:CD|音声)\s*[\d /–-]+〕", "", text)
     text = re.sub(r"[ \t]*\((?:PDF\s*\d+|trang in \d+)[^()\n]*\)", "", text)
@@ -230,6 +254,7 @@ def render_excerpt(content, selection):
     title = selection["title_ja"]
     text = re.sub(r"^(#{1,6} )" + re.escape(title),
                   lambda match: match[1] + learner_title(selection), text, count=1, flags=re.MULTILINE)
+    text = re.sub(r"\*\*CD:\s*\d+\*\*\.?", "", text)
     return markdown_renderer().render(text)
 
 
@@ -436,6 +461,12 @@ def artifacts():
         files = updated
         status = json.loads(files["STATUS.json"])
         status["state"] = "allocation_complete" if len(decisions) == len(base) else "allocation_in_progress"
+        status["levels"] = {level: {"total": sum(s["level"] == level for s in base),
+                                   "reviewed": sum(s["level"] == level and s["display_code"] in decisions for s in base)}
+                            for level in FILES}
+        status["stages_without_selected_units"] = [code for code, d in decisions.items() if not d["selections"]]
+        if len(decisions) == len(base):
+            status["next_action"] = "Đọc báo cáo nguồn và các chặng chưa chọn bài; nghiệm thu V6.1."
         files["STATUS.json"] = dumps(status, True)
     return {name: (value.rstrip()+"\n").encode("utf8") for name, value in files.items()} | materials
 
