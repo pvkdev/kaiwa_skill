@@ -1,0 +1,47 @@
+<a id="u-keigo-kenjo-017-sasete-itadaku"></a>
+### 17　「させてもらう」の謙譲語：させていただく　〔音声 62〕
+
+**JP:** これからご説明をさせていただきます。
+
+**VI:** Sau đây tôi xin phép giải thích ạ.
+
+#### 意味と使い方
+
+「させていただく」 là cách nói khiêm nhường cho việc mình được người đối thoại hoặc người thứ ba cho phép làm một việc. Cách diễn đạt như nhận sự cho phép này thể hiện thái độ nhún nhường. Tranh người phụ nữ cầm micro trước bảng chỉ minh họa câu mở.
+
+#### 基本パターン
+
+Khi nói với người ở vị thế trên:
+
+（私の方で）＋［N］を＋させていただきます。
+
+Từ gợi ý: ご紹介 (giới thiệu), ご挨拶 (chào hỏi), ご案内 (hướng dẫn), ご報告 (báo cáo), ご提案 (đề xuất), お電話 (gọi điện), お返事 (hồi âm).
+
+#### 練習
+
+**例のように文を作ってみましょう。** Hãy tạo câu theo mẫu:
+
+- 例　皆様／紹介／する ⇒ 皆様にご紹介をさせていただきます。
+- ① 簡単に／報告／する ⇒ __________
+- ② 私から／電話／する ⇒ __________
+- ③ １週間以内／返事／する ⇒ __________
+- ④ しっかりと／準備／する ⇒ __________
+
+#### 会話練習
+
+**1 サービスカウンターで — Ở quầy dịch vụ**
+
+**客 (JP):** 申し込みの方法がよくわからないんですが…。
+
+**Khách (VI):** Tôi chưa rõ cách đăng ký…
+
+**店員 (JP):** わかりました。では、最初からご説明をさせていただきます。
+
+**Nhân viên (VI):** Tôi hiểu rồi ạ. Vậy xin phép giải thích từ đầu.
+
+**2 開会のあいさつ — Lời chào mở đầu buổi họp**
+
+**司会 (JP):** 本日の司会をさせていただきますルイスです。どうぞよろしくお願いいたします。
+
+**Người dẫn chương trình (VI):** Tôi là Louis, xin phép đảm nhiệm vai trò điều phối hôm nay. Rất mong được quý vị giúp đỡ.
+

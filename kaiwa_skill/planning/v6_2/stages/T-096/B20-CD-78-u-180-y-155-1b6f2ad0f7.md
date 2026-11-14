@@ -1,0 +1,42 @@
+# Y — Điều kiện, diễn biến tốt và xấu
+
+<a id="u-180-y-155"></a>
+## 155. 右肩上がり — Tăng đều (PDF174; CD 78)
+
+Tình hình càng về sau càng tốt lên, như đường biểu diễn số liệu đi lên về phía phải. Thường dùng với các con số, chẳng hạn tình hình kinh tế.
+
+**Listen & Speak 1**
+
+- **A (JP):** この前出た新商品の売り上げはどうですか。 **A (VI):** Doanh số sản phẩm mới ra lần trước thế nào?
+- **B (JP):** おかげさまで、右肩上がりで伸びてます。 **B (VI):** Nhờ mọi người, doanh số đang tăng đều.
+
+Chú từ: **おかげさまで** — nhờ anh/chị, may mắn là.
+
+**Listen & Speak 2**
+
+- **A (JP):** 最近、売り上げ成績がずっと右肩上がりじゃない？ **A (VI):** Gần đây thành tích bán hàng cứ tăng đều đấy nhỉ?
+- **B (JP):** ありがとうございます。 **B (VI):** Xin cảm ơn.
+
+Chú từ: **成績** — thành tích, kết quả.
+
+**Useful One-word Expressions in Japanese 42 — つぶす:** Ngoài nghĩa “đè nát”, còn là dùng thời gian rảnh để làm gì đó, thường là “giết thời gian”. **出発まで時間をつぶした。／一人で時間をつぶすのは大変だ。** — Tôi giết thời gian cho tới lúc khởi hành. / Giết thời gian một mình thật khó.
+
+<a id="u-180-y-156"></a>
+## 156. うなぎ上り — Tăng vọt (PDF175)
+
+Giá cả, mức đánh giá hoặc nhiệt độ tăng nhanh do một nguyên nhân nào đó. Hình ảnh bắt nguồn từ con lươn lao thẳng lên khi cố thoát khỏi tay người bắt.
+
+**Listen & Speak 1**
+
+- **A (JP):** 給料は上がらないのに、消費税が上がって物価もうなぎ上り。苦しいよ。 **A (VI):** Lương không tăng, trong khi thuế tiêu dùng tăng, giá cả cũng leo vọt. Khổ quá.
+- **B (JP):** ほんとにそうだよね。 **B (VI):** Đúng là thế thật.
+
+Chú từ: **物価** — giá cả hàng hóa.
+
+**Listen & Speak 2**
+
+- **A (JP):** 彼女が出ている映画、今、すごくヒットしてるね。 **A (VI):** Bộ phim cô ấy đóng hiện đang rất ăn khách nhỉ.
+- **B (JP):** うん。彼女の人気もうなぎ上りなんだって。 **B (VI):** Ừ. Nghe nói độ nổi tiếng của cô ấy cũng đang tăng vọt.
+
+Chú từ: **人気** — sự nổi tiếng, mức được ưa chuộng.
+

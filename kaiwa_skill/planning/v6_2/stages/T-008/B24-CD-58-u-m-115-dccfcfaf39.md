@@ -1,0 +1,41 @@
+# M — 失望・落胆 · Thất vọng và chán nản
+
+## Unit 58 — がっくり／落ち込む〔CD 58〕
+
+<a id="u-m-115"></a>
+### 115. がっくり
+
+**Nghĩa và cách dùng:** Rũ người, mất sức vì thất vọng.
+
+**Listen & Speak**
+
+1. - A: 少しは給料が上がると思っていたのに、全然上がらなくて、がっくり。  
+     VI: Tôi cứ tưởng lương sẽ tăng được chút ít, thế mà chẳng tăng chút nào, thất vọng quá.
+   - B: そう…。元気出して。  
+     VI: Vậy à… Cố lên nhé.
+2. - A: 大切な家族を亡くして、皆がっくりしてました。  
+     VI: Mất đi một người thân yêu trong gia đình, mọi người đều suy sụp.
+   - B: 気の毒にね。  
+     VI: Thật tội nghiệp.
+
+**Từ và cách nói:** 全然～ない — hoàn toàn không…; 亡くす — mất người thân; 気の毒 — tội nghiệp, đáng thương.
+
+<a id="u-m-116"></a>
+### 116. 落ち込む
+
+**Nghĩa và cách dùng:** Sa sút tinh thần, buồn chán.
+
+**Listen & Speak**
+
+1. - A: 彼女の様子、どうだった？  
+     VI: Tình hình cô ấy thế nào?
+   - B: かなり落ち込んでたね。合格する自信あったみたいで。  
+     VI: Cô ấy suy sụp khá nhiều. Có vẻ cô ấy từng tự tin là mình sẽ thi đỗ.
+2. - A: なんか落ち込んでる？  
+     VI: Hình như cậu đang buồn à?
+   - B: まあ、ちょっとね。がっくり来ちゃって。  
+     VI: Ừ, một chút. Tôi thất vọng quá.
+
+**Từ và cách nói:** 自信 — sự tự tin; なんか — hình như, cảm giác không rõ vì sao.
+
+**50 Hints for Understanding Japanese People 31 — Dễ chán nản.** Cột sách nêu giả định rằng vì người Nhật khó bộc lộ cảm xúc thẳng thắn nên người bi quan có thể nhiều hơn người lạc quan. Đặc biệt, theo cột sách, người trẻ ít quen bị người trên quở trách, nên có người dễ suy sụp dù chỉ bị nhắc nhẹ.
