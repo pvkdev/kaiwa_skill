@@ -1,0 +1,60 @@
+# PART1　基礎編 — §3 謙譲語・丁重語
+
+## (1) 特定のことば
+
+<a id="u-keigo-kenjo-001-ukagau-visit"></a>
+### 1　「訪問する」「訪ねる」の謙譲語：伺う①　〔音声 46〕
+
+**JP:** 一度、ご挨拶に伺いたいと思います。
+
+**VI:** Tôi muốn đến chào hỏi một lần.
+
+#### 意味と使い方
+
+「伺う」 trong nghĩa này là cách nói khiêm nhường cho hành động đến thăm của mình. Sách lưu ý đối tượng đi đến là **nơi chốn**, không phải người; cũng có thể nêu **hành động làm mục đích**. Dùng trợ từ 「に」 thay vì 「を」.
+
+#### 基本パターン
+
+Khi nói với người ở vị thế trên:
+
+- ① （私は／が）＋［nơi chốn hoặc mục đích］に＋伺います。
+- ② （私は／が）＋Nを＋（お）＋［Vます, bỏ ます］＋に＋伺いました。
+
+Từ gợi ý cho ①: そちら (nơi đó), 御社 (quý công ty), ご自宅 (nhà của quý vị), 面接 (phỏng vấn), 見学 (tham quan), ごあいさつ (chào hỏi), ご説明 (giải thích), 修理 (sửa chữa). Động từ gợi ý cho ②: 受け取り（ます） (nhận), 届け（ます） (giao đến).
+
+#### 練習
+
+**例のように文を作ってみましょう。** Hãy tạo câu theo mẫu:
+
+- 例　明日／あいさつ／訪問する ⇒ 明日、ごあいさつに伺います。
+- ① 午後／そちら／訪問する ⇒ __________
+- ② これから／研究室／訪問する ⇒ __________
+- ③ 午後３時ごろ／修理／訪問する ⇒ __________
+- ④ 説明／訪問したい／と思う ⇒ __________
+
+#### 会話練習
+
+**1 取引先の青木さんと — Với anh Aoki ở đối tác**
+
+**青木 (JP):** 弊社にいらっしゃったことはありますか。
+
+**Aoki (VI):** Anh đã từng đến công ty chúng tôi chưa?
+
+**ルイス (JP):** いえ、まだ伺ったことがありません。
+
+**ルイス (VI):** Chưa, tôi chưa từng đến ạ.
+
+**2 花の配達 — Giao hoa**
+
+**花屋 (JP):** どちらに伺えばよろしいでしょうか。
+
+**Người giao hoa (VI):** Tôi nên đến đâu ạ?
+
+**客 (JP):** ５階の受付にいらっしゃってください。
+
+**Khách (VI):** Xin hãy đến quầy lễ tân tầng 5.
+
+**花屋 (JP):** わかりました。
+
+**Người giao hoa (VI):** Tôi hiểu rồi ạ.
+

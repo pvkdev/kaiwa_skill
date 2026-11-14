@@ -1,0 +1,301 @@
+# Kaiwa V6.3 — Khung lộ trình và phân bổ nguồn
+
+289 chặng · 289 chặng đã xét · 0 chặng chờ phân bổ.
+
+[Mở các chặng đã phân bổ](PILOT.md) · [Xem lộ trình trên trình duyệt](ROADMAP.html)
+
+[Sơ](SO_CAP.md) · [Trung](TRUNG_CAP.md) · [Thượng](THUONG_CAP.md)
+
+[Yêu cầu gốc](CHECKPOINT_YEU_CAU.md) · [Tra ngược theo sách](TRA_THEO_SACH.md) · [Trạng thái](STATUS.json)
+
+Hai bước Speak Japanese và shadowing là quyết định chọn nội dung. Các bài giảng và nhiệm vụ Live sẽ được thiết kế ở giai đoạn sau.
+
+- S-001 — Chào hỏi theo thời điểm & hoàn cảnh
+- S-002 — Tự giới thiệu & hỏi về người khác
+- S-003 — Nghe không rõ, hỏi lại & giữ nhịp hội thoại
+- S-004 — Đồ vật, số, giờ, ngày tháng & tiền
+- S-005 — Tìm & thuê nhà
+- S-006 — Gia đình & sống cùng gia đình chủ nhà
+- S-007 — Sinh hoạt trong nhà & với hàng xóm
+- S-008 — Vào và sống trong ký túc xá, nhà công ty
+- S-009 — Khu phố, thư viện và cơ sở cộng đồng
+- S-010 — Hỏi đường & chỉ đường
+- S-011 — Tàu điện & xe buýt
+- S-012 — Đi tàu hằng ngày: IC, vé tháng và quầy hỗ trợ
+- S-013 — Mua, gửi và xử lý sự cố xe đạp
+- S-014 — Đi xa: shinkansen, taxi và quầy hướng dẫn
+- S-015 — Chào hỏi & trò chuyện hằng ngày ở công sở
+- S-016 — Ngày đầu ở công ty
+- S-017 — Tìm chỗ & dùng đồ trong văn phòng
+- S-018 — Nội quy & phép tắc nơi làm việc
+- S-019 — Đi làm đúng giờ & công tác ngắn
+- S-020 — Lịch trình & chỉ thị trong ngày
+- S-021 — Nhận chỉ thị & hỏi lại
+- S-022 — Nhận việc tại xưởng và xác nhận trước khi làm
+- S-023 — Konbini và dịch vụ nhanh hằng ngày
+- S-024 — Đi siêu thị và lo bữa ăn hằng ngày
+- S-025 — Quần áo: chọn, thử và so sánh
+- S-026 — Đi trung tâm thương mại và quầy thông tin
+- S-027 — Đi home center và mua đồ cho căn nhà
+- S-028 — Mua và bán tại recycle shop
+- S-029 — Đi cửa hàng kính và chọn kính phù hợp
+- S-030 — Giặt khô, sửa quần áo và sửa giày
+- S-031 — Nhà hàng & quán ăn
+- S-032 — Quán cà phê, fast-food & thanh toán
+- S-033 — Ăn trưa cùng đồng nghiệp
+- S-034 — Đi cắt tóc và trao đổi kiểu tóc
+- S-035 — Nhờ vả & đề nghị lịch sự
+- S-036 — Xin phép, hỏi khả năng & ngỏ ý giúp
+- S-037 — Nhờ hỗ trợ và xin phép ở công ty
+- S-038 — Xin lỗi & phàn nàn
+- S-039 — Xin lỗi & báo vấn đề ở công ty
+- S-040 — Báo ốm & xin nghỉ
+- S-041 — Báo – liên – tương & báo cáo ngắn
+- S-042 — Gọi điện cho bạn, thầy cô & đặt chỗ
+- S-043 — Điện thoại công sở: nghe & chuyển máy
+- S-044 — Điện thoại công sở: gọi đi & lời nhắn
+- S-045 — Gọi đặt dịch vụ và xác nhận yêu cầu cơ bản
+- S-046 — Ngân hàng và bưu điện: giao dịch cơ bản tại quầy
+- S-047 — Đến quầy hành chính và xin giải thích dễ hiểu
+- S-048 — Đến trung tâm hỗ trợ người nước ngoài
+- S-049 — Nói về sức khỏe & đi bệnh viện
+- S-050 — Hiệu thuốc & giữ gìn sức khỏe
+- S-051 — Đi nha sĩ từ đặt lịch đến tái khám
+- S-052 — Nhờ giúp khi khẩn cấp và tìm đúng đầu mối
+- S-053 — Báo sự việc khẩn cấp với cảnh sát
+- S-054 — Gọi hỗ trợ y tế khẩn cấp
+- S-055 — Báo cháy và phối hợp khi được hướng dẫn
+- S-056 — Đến koban báo mất, nhận và trả đồ thất lạc
+- S-057 — Đến nơi sơ tán và sống tạm trong cộng đồng
+- S-058 — An toàn & sơ tán nơi làm việc
+- S-059 — Việc làm thêm: tìm việc & phỏng vấn baito
+- S-060 — Làm theo ca: xếp ca, đổi ca và hỗ trợ người vắng
+- S-061 — Làm thêm ở quầy: phục vụ khách cơ bản
+- S-062 — Hẹn gặp, thăm công ty khác & danh thiếp
+- S-063 — Họp & nêu ý kiến
+- S-064 — Rủ rê, hẹn & cuối tuần
+- S-065 — Sự kiện công ty & trò chuyện nội bộ
+- S-066 — Sở thích: thể thao, phim ảnh & sách
+- S-067 — Gia nhập và sinh hoạt cùng circle, câu lạc bộ
+- S-068 — Tham gia tình nguyện với vai thành viên
+- S-069 — Hẹn hò đầu tiên
+- S-070 — Quan tâm & động viên bạn bè
+- S-071 — Kể chuyện đã làm & trải nghiệm
+- S-072 — Cảm xúc, mong muốn & dự định
+- S-073 — Ý kiến, lời khuyên & tin đồn
+- S-074 — Thời tiết, mùa & lễ hội
+- S-075 — Du lịch & khách sạn
+- S-076 — Đi máy bay nội địa và xử lý hành trình tại sân bay
+- S-077 — Đón và hỗ trợ người thân đến chơi ở Nhật
+- S-078 — Đi sento, sauna và cơ sở tắm công cộng
+- S-079 — Trường học & học tiếng Nhật
+- S-080 — Tổng hợp: một ngày ở Nhật
+- T-001 — Làm quen & trò chuyện với người mới
+- T-002 — Thăm nhà & chào hỏi theo hoàn cảnh
+- T-003 — Kết thân & trò chuyện
+- T-004 — Bạn thân: chuyện đời & tâm sự
+- T-005 — Người quen & hàng xóm: mời, nhờ & xã giao
+- T-006 — Kể chuyện đời & trải nghiệm
+- T-007 — Chia sẻ cảm xúc với bạn bè & đồng nghiệp
+- T-008 — An ủi, đồng cảm & chia buồn
+- T-009 — Gia đình, vợ chồng & người yêu: chuyện hằng ngày
+- T-010 — Hẹn hò & tình cảm
+- T-011 — Quà tặng & lễ nghi tặng quà
+- T-012 — Nhờ vả, nhận lời & từ chối khéo
+- T-013 — Ý kiến, lời khuyên & thuyết phục nhẹ
+- T-014 — Tìm, xem và thuê nhà phù hợp
+- T-015 — Share house & sống chung
+- T-016 — Mở, chuyển và ngừng điện, nước, gas
+- T-017 — Báo hỏng trong nhà và hẹn người sửa
+- T-018 — Phân loại, đăng ký và giao rác cồng kềnh
+- T-019 — Làm việc với công ty chuyển nhà
+- T-020 — Làm việc với ban quản lý tòa nhà
+- T-021 — Nhận hàng tại nhà và xử lý giao nhầm
+- T-022 — Đăng ký, chuyển mạng và sửa dịch vụ điện thoại, internet
+- T-023 — Gặp để mua bán và trao lại đồ cá nhân
+- T-024 — Điện thoại đời sống: đặt chỗ, hỏi thông tin, báo vắng
+- T-025 — Điện thoại: đặt hàng, nhờ giao hàng & hỏi thông tin
+- T-026 — Mua sắm nâng cao: so sánh, đổi trả, đặt hàng
+- T-027 — Nói rõ ý mình với nhân viên cửa hàng: nhờ tư vấn & từ chối khéo
+- T-028 — Mua điện máy, giao hàng và lắp đặt
+- T-029 — Dùng dịch vụ giao thực phẩm định kỳ
+- T-030 — Đi làm nail và dịch vụ chân mày, mi
+- T-031 — Đăng ký phòng gym và tập cùng huấn luyện viên
+- T-032 — Sống cùng thú cưng: bác sĩ thú y, dịch vụ và khu phố
+- T-033 — Đến shiyakusho khi chuyển đến hoặc đổi thông tin
+- T-034 — Trao đổi tại Nyukan về tình trạng cư trú
+- T-035 — Hỏi thủ tục cư trú cho vợ chồng và con
+- T-036 — Trao đổi về thuế tại quầy tư vấn
+- T-037 — Làm việc với quầy nenkin
+- T-038 — Chuyển đổi và hỏi về bảo hiểm y tế
+- T-039 — Xử lý vấn đề tài khoản tại ngân hàng
+- T-040 — Gửi tiền quốc tế và hỏi giao dịch bị vướng
+- T-041 — Liên hệ về thanh toán thẻ và giao dịch lạ
+- T-042 — Hủy dịch vụ định kỳ và nhờ tư vấn tiêu dùng
+- T-043 — Mất thẻ cư trú hoặc hộ chiếu khi đang sống ở Nhật
+- T-044 — Gửi bưu kiện cá nhân và hỏi hàng quốc tế
+- T-045 — Về Việt Nam tạm thời rồi quay lại sinh hoạt ở Nhật
+- T-046 — Rời Nhật dài hạn và bàn giao các việc còn lại
+- T-047 — Khám và tái khám: giải thích triệu chứng, hỏi điều trị
+- T-048 — Khám sức khỏe định kỳ và trao đổi kết quả
+- T-049 — Nhận thuốc theo đơn và dùng thuốc lâu dài
+- T-050 — Nhập viện, nằm viện và ra viện
+- T-051 — Xin tư vấn khi căng thẳng và sức khỏe tinh thần bị ảnh hưởng
+- T-052 — Mang thai & sinh con
+- T-053 — Nuôi con: chăm sóc hằng ngày và tìm hỗ trợ
+- T-054 — Gửi con ở nhà trẻ và trao đổi hằng ngày
+- T-055 — Trường học của con
+- T-056 — Đăng ký juku và lớp ngoại khóa cho con
+- T-057 — Xin tư vấn hỗ trợ phát triển và học tập cho con
+- T-058 — Trao đổi khi kết hôn và xây dựng gia đình quốc tế
+- T-059 — Đứng ra lo việc tang và liên hệ các bên
+- T-060 — Trao đổi dịch vụ chăm sóc người cao tuổi
+- T-061 — Chọn ngành, thực tập & tự phân tích bản thân
+- T-062 — Gặp tiền bối & dự buổi giới thiệu công ty
+- T-063 — Đến Hello Work để tìm việc phù hợp
+- T-064 — Trao đổi với recruiter và nói lý do ứng tuyển
+- T-065 — Phỏng vấn tuyển dụng
+- T-066 — Phỏng vấn chuyển ngành và giải thích chặng nghỉ nghề
+- T-067 — Trao đổi offer và quyết định nhận việc
+- T-068 — Những ngày đầu nhận việc
+- T-069 — Văn phòng: thiết bị, họp trực tuyến & nhờ hỗ trợ
+- T-070 — Đồng nghiệp: chuyện công ty & nhờ giúp
+- T-071 — Động viên, khen & nhận góp ý
+- T-072 — Nhờ vả, đề nghị cấp trên & nhận chỉ thị
+- T-073 — Xin phép & xác nhận lại
+- T-074 — Xin lỗi, xử lý sai sót & đổi lịch hẹn
+- T-075 — Quá tải: nhờ giúp & chủ động giúp đồng nghiệp
+- T-076 — Hỏi ý kiến & xin lời khuyên của cấp trên
+- T-077 — Bày tỏ ý định & bắt chuyện, hỏi đáp
+- T-078 — Văn hóa & quy định công ty Nhật
+- T-079 — Báo – liên – tương nâng cao & hiện trường
+- T-080 — Làm rõ brief và tiêu chí trước khi nhận việc
+- T-081 — Phối hợp công việc giữa các bộ phận
+- T-082 — Phối hợp tiến độ và việc phụ thuộc lẫn nhau
+- T-083 — Hướng dẫn người mới và theo dõi OJT
+- T-084 — Review sản phẩm và phản hồi để sửa
+- T-085 — Điện thoại công sở: câu đầu, xác nhận & nghe không rõ
+- T-086 — Chuyển máy, gọi nhầm & để khách chờ
+- T-087 — Nhận & chuyển lời nhắn, gọi lại
+- T-088 — Điện thoại khách hàng: khách giận, khẩn cấp & đàm phán
+- T-089 — Điện thoại tiếp khách dịch vụ
+- T-090 — Tiếp khách, danh thiếp & thăm đối tác
+- T-091 — Gặp đối tác & khách hàng: mở đầu, hỏi lại, hẹn & kết thúc
+- T-092 — Hỏi thông tin & hỏi cách làm với khách
+- T-093 — Xã giao với khách hàng & từ chối lời mời
+- T-094 — Họp: nghe, hỏi & phát biểu
+- T-095 — Thuyết trình ngắn & giải thích logic
+- T-096 — Giải thích, so sánh & báo cáo kết quả khảo sát
+- T-097 — Động não ý tưởng & nêu cảm nhận về sản phẩm
+- T-098 — Bán hàng cơ bản: giới thiệu sản phẩm & báo giá
+- T-099 — Thương lượng mức vừa & điều khách lo lắng
+- T-100 — Làm việc nhiều ngày tại công ty khách hàng
+- T-101 — Đến nhà máy hoặc nhà cung cấp để trao đổi công việc
+- T-102 — Demo, nghiệm thu và hướng dẫn khách sử dụng
+- T-103 — Đại diện công ty tại triển lãm và hội thảo
+- T-104 — Cân bằng công việc & cuộc sống
+- T-105 — Làm việc qua haken và phối hợp hai đầu mối
+- T-106 — Trao đổi gia hạn hợp đồng và thay đổi điều kiện làm việc
+- T-107 — Hỏi bảng lương, chấm công và khoản làm thêm
+- T-108 — Trao đổi đánh giá và phát triển nghề với quản lý
+- T-109 — Trình bày vấn đề với quầy tư vấn lao động
+- T-110 — Phản ánh hành vi gây tổn hại và xin hỗ trợ ở nơi làm
+- T-111 — Báo và phối hợp sau tai nạn tại nơi làm việc
+- T-112 — Xin nghỉ dài ngày và trở lại công việc
+- T-113 — Xin nghỉ việc và xử lý cuộc trao đổi với sếp
+- T-114 — Tìm hỗ trợ và quay lại việc làm sau khi mất việc
+- T-115 — Chuyển công tác & lời chia tay
+- T-116 — Đi dự nomikai, tiệc công ty và giao lưu
+- T-117 — Làm 幹事 cho nomikai và tiệc đón tiễn
+- T-118 — Làm người phụ trách chuyến du lịch công ty
+- T-119 — Nhà hàng: phục vụ từ phía nhân viên
+- T-120 — Cửa hàng bán lẻ & quần áo
+- T-121 — Konbini & quầy thu ngân
+- T-122 — Dịch vụ khác phía nhân viên: karaoke, thuê đồ, lớp học
+- T-123 — Khách sạn: đón khách và xử lý yêu cầu lưu trú
+- T-124 — Cấp cứu, sự cố & đồ bỏ quên (góc nhân viên)
+- T-125 — Nhà hàng nâng cao: kiêng ăn, món sai, phàn nàn
+- T-126 — Cuối tuần: thể thao, phượt & tiệc
+- T-127 — Du lịch cùng người thân: bàn kế hoạch và điều chỉnh
+- T-128 — Ở ryokan và trải nghiệm lưu trú kiểu Nhật
+- T-129 — Thuê xe du lịch từ nhận đến trả
+- T-130 — Học lái và làm việc tại trung tâm bằng lái
+- T-131 — Sử dụng ô tô: bãi đỗ, gara và bảo dưỡng
+- T-132 — Cắm trại hoặc BBQ theo nhóm
+- T-133 — Công tác xa: phối hợp lịch đi, lưu trú và báo lại
+- T-134 — Tàu ngừng chạy, lỡ chuyến cuối và đổi đường
+- T-135 — Trao đổi sau va chạm và khi xe gặp sự cố
+- T-136 — Tham gia workshop văn hóa và làm đồ thủ công
+- T-137 — Đi xem concert, sân vận động và biểu diễn trực tiếp
+- T-138 — Bình luận phim, sách & tin tức
+- T-139 — Phong tục & sự kiện theo mùa
+- T-140 — Phòng chống thiên tai & di chuyển an toàn
+- T-141 — Xin hỗ trợ khi bị đe dọa, theo dõi hoặc bạo lực
+- T-142 — Trao đổi để ổn định cuộc sống sau thiên tai
+- T-143 — Tư vấn học tập & du học
+- T-144 — Tham gia đào tạo nghề và học lại khi đi làm
+- T-145 — Tổng hợp: một tuần ở công ty & ngoài đời
+- H-001 — Tự giới thiệu & chào cảm ơn người giúp đỡ
+- H-002 — Nhận vị trí mới & ra mắt đội
+- H-003 — Điện thoại đối ngoại & hẹn gặp khách mới
+- H-004 — Kính ngữ đối ngoại & chuyển lời xã giao
+- H-005 — Đổi cách nói theo quan hệ và hoàn cảnh
+- H-006 — Ghi nhận công sức, khen & đáp lời khen
+- H-007 — Chào chia tay công ty và giữ quan hệ sau chuyển việc
+- H-008 — Họp bữa trưa & bàn chuyện kinh doanh tự nhiên
+- H-009 — Tiếp đãi & ăn uống với đối tác
+- H-010 — Khai thác khách mới & chào bán
+- H-011 — Đề nghị hợp tác & thăm dò ý định
+- H-012 — Thuyết phục bằng chiến lược
+- H-013 — Đàm phán, giá cả & hợp đồng
+- H-014 — Thương lượng giá bán buôn & giảm chi phí
+- H-015 — Thống nhất thay đổi yêu cầu với khách hàng
+- H-016 — Chốt đơn, thương mại quốc tế & giữ quan hệ
+- H-017 — Bàn công việc phụ và dự án cá nhân có khách hàng
+- H-018 — Phỏng vấn lấy thông tin và khai thác câu chuyện
+- H-019 — Phỏng vấn tuyển người từ vai người tuyển dụng
+- H-020 — Họp: tham gia, đề xuất & phản biện
+- H-021 — Phản biện, tranh luận & giữ thể diện
+- H-022 — Lãnh đạo họp, kết luận & dẫn dắt quyết định
+- H-023 — Thuyết trình: mở đầu, nội dung, kết
+- H-024 — Nemawashi: trao đổi trước để tạo đồng thuận
+- H-025 — Làm leader: trao đổi riêng và hỗ trợ thành viên
+- H-026 — Làm leader: ưu tiên, nguồn lực và ngân sách
+- H-027 — Làm leader: giao trách nhiệm và quyền quyết định
+- H-028 — Bàn giao công việc và trách nhiệm khi thay người
+- H-029 — Giải quyết bất đồng giữa đồng đội
+- H-030 — Với cấp trên: xin chỉ đạo, ký duyệt & nhận phê bình
+- H-031 — Làm leader khi xảy ra sự cố trong nhóm
+- H-032 — Họp nhìn lại và đề xuất cải tiến công việc
+- H-033 — Báo cáo lên cấp cao & phản hồi dự án
+- H-034 — Nhận khiếu nại & xin lỗi chính thức
+- H-035 — Báo cáo khiếu nại, xử lý sự cố & hàng lỗi
+- H-036 — Báo sự cố cho cấp trên & giải tỏa lo ngại
+- H-037 — Nghề dịch vụ cao cấp & omotenashi
+- H-038 — Công tác gấp & chuyển chi nhánh: sân bay, hải quan, hủy chuyến
+- H-039 — Phàn nàn dịch vụ & lấy lại quyền lợi
+- H-040 — Mua sắm & dịch vụ cao cấp: đặt may, hợp đồng, đổi trả khó
+- H-041 — Du lịch: sự cố & đàm phán dịch vụ
+- H-042 — Nhà ở lâu dài: thương lượng trách nhiệm và giải quyết bất đồng
+- H-043 — Khai báo sự việc và hỏi hồ sơ bồi thường bảo hiểm
+- H-044 — Khám chuyên khoa và trao đổi quyết định điều trị
+- H-045 — Tìm hỗ trợ khi ly thân và thay đổi hoàn cảnh gia đình
+- H-046 — Gia đình: vợ chồng, cha mẹ & con cái
+- H-047 — Tâm sự: tình cảm, sức khỏe & giấc ngủ
+- H-048 — Khác biệt quan điểm & giữ quan hệ
+- H-049 — Nhờ việc khó với người thân & nêu điều kiện
+- H-050 — Nhờ việc khó, từ chối và thương lượng giới hạn
+- H-051 — Cảm xúc tinh tế: bất mãn, đành chịu, hoài nghi, coi nhẹ
+- H-052 — Cưới hỏi, tang lễ & phát biểu nghi thức
+- H-053 — Dẫn chương trình và điều phối sự kiện công ty
+- H-054 — Hàng xóm, người quen & chuyện xã hội
+- H-055 — Jichikai, PTA và điều phối việc cộng đồng
+- H-056 — Kể chuyện có điểm chốt & hồi ức
+- H-057 — Văn hóa đại chúng & giải trí: manga, anime, thể thao
+- H-058 — Ẩm thực, thủ công & tập quán
+- H-059 — Lịch sử, địa lý & thiên nhiên
+- H-060 — Xã hội, chính trị & giáo dục
+- H-061 — Kinh tế, công nghệ & vấn đề toàn cầu
+- H-062 — Trao đổi học thuật và học tập lâu dài
+- H-063 — Tổng hợp A: một ngày ở Nhật không kịch bản
+- H-064 — Tổng hợp B: một dự án từ đầu đến cuối
