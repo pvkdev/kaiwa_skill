@@ -117,10 +117,15 @@ def check(decision):
         require(bid in policy[kind] and bid in books, f"Nguồn {bid} không dùng cho {kind}")
         book = books[bid]
         require(s.get("book_title") == book["title"], f"{bid}: sai tên sách")
-        for key in ("pack_id", "title_ja", "title_vi", "fit_vi", "difficulty_vi", "boundary", "audio_note"):
+        for key in ("pack_id", "title_ja", "fit_vi", "difficulty_vi", "boundary", "audio_note"):
             text_field(s, key)
         require(s.get("read_status") == "whole_unit_read", "Ứng viên chưa đọc trọn")
         check_part(s, book)
+        excerpt = source_bytes(s).decode("utf8")
+        heading = next((line.lstrip("# ").strip() for line in excerpt.splitlines()
+                        if re.match(r"^#{1,6} ", line)), "")
+        require("title_vi" not in s, "Lưu tiêu đề nguyên gốc; bỏ tên viết lại theo chặng.")
+        require(s["title_ja"] in heading, "Tiêu đề phải có trong đầu mục nguồn: " + s["title_ja"])
         for p in s.get("extra_parts", []):
             check_part(p, book)
         if bid == "INTERVIEW":
@@ -165,17 +170,67 @@ def find_units(keyword, book_id):
                 print(bid, unit["unit_id"], unit["heading"], unit["chapter"], sep=" | ")
 
 
+def source_bytes(part):
+    data = (ROOT / part["path"]).read_bytes()
+    require(digest(data) == part["sha256"], "Chương đã đổi: " + part["path"])
+    return b"".join(data.splitlines(keepends=True)[part["start_line"]-1:part["end_line"]])
+
+
+def stage_materials(stage, decision):
+    folder = "stages/" + stage["display_code"]
+    entries, files = [], {}
+    for selection in decision["selections"]:
+        parts = [selection, *selection.get("extra_parts", [])]
+        content = b"\n\n".join(source_bytes(part) for part in parts)
+        # Stable across stages, including if the learning order changes.
+        slug = re.sub(r"[^A-Za-z0-9_-]+", "-", selection["pack_id"]).strip("-")[:80]
+        filename = f"{slug}-{digest(selection['pack_id'].encode())[:10]}.md"
+        relative = folder + "/" + filename
+        require(relative not in files, "Tên file học liệu trùng: " + relative)
+        files[relative] = content
+        selection["material_path"] = relative
+        entry = {k: selection[k] for k in ("book_id", "book_title", "kind", "pack_id", "title_ja",
+                                            "boundary", "audio", "audio_note", "situation_ids")}
+        entry.update(file=filename, sha256=digest(content),
+                     parts=[{k: p[k] for k in ("path", "unit_id", "start_line", "end_line", "sha256")}
+                            for p in parts])
+        entries.append(entry)
+    manifest = {"stage_uid": stage["uid"], "display_code": stage["display_code"],
+                "paths_relative_to": {"file": "manifest directory", "parts.path": "repository root"},
+                "materials": entries}
+    files[folder + "/manifest.json"] = (dumps(manifest, True)+"\n").encode("utf8")
+    return files
+
+
+@lru_cache(maxsize=1)
+def markdown_renderer():
+    from markdown_it import MarkdownIt
+    # Source text is untrusted; keep formatting but never activate embedded HTML, URLs or images.
+    return MarkdownIt("commonmark", {"html": False}).disable(["link", "image", "autolink"]).enable("table")
+
+
+def render_excerpt(content):
+    # The downloadable snapshot stays verbatim. Hide print locators in the learner view.
+    text = content.decode("utf8")
+    text = re.sub(r'^<a id="[^"]+"></a>[ \t]*$', "", text, flags=re.MULTILINE)
+    text = re.sub(r"^\*\*Mã CD[^\n]*$|^#+ DISC \d+ / \d+[ \t]*$", "", text, flags=re.MULTILINE)
+    text = re.sub(r"\s*〔(?:CD|音声)\s*[\d /–-]+〕", "", text)
+    text = re.sub(r"[ \t]*\((?:PDF\s*\d+|trang in \d+)[^()\n]*\)", "", text)
+    text = re.sub(r"[ \t]*\*\*CD-\d+ / \d+\*\*\.?", "", text)
+    return markdown_renderer().render(text)
+
+
 def blocks(stage, decision):
     def node(kind, **fields):
         return {"type": kind, **fields}
     result = [node("vocabulary_topics", topics=decision["vocabulary_topics"] if decision else [])]
     for s in decision["selections"] if decision else []:
-        ref = {"book_id": s["book_id"], "pack_id": s["pack_id"]}
+        ref = {k: s[k] for k in ("book_id", "pack_id", "title_ja", "material_path")}
         if s["kind"] == "speak_japanese":
-            result.extend([node("speak_japanese_video", **ref), node("speak_japanese_examples", **ref)])
+            result.extend([node("speak_japanese_video", video_status="placeholder", **ref), node("speak_japanese_examples", **ref)])
         else:
             result.append(node("independent_shadowing", **ref))
-    result.extend([node("stage_lecture", status="planned"),
+    result.extend([node("stage_lecture", video_status="placeholder"),
                    node("v5_situations", situation_ids=[s["id"] for s in stage["situations"]]),
                    node("live_challenges", status="deferred"), node("free_kaiwa", status="planned")])
     return result
@@ -190,7 +245,8 @@ def selected_md(s, stage):
     situations = {c["id"]: c["title"] for c in stage["situations"]}
     aud = " · ".join(" ".join(str(x) for x in (a["disc"], a["track"]) if x is not None)
                      + " (" + a["locator"] + ")" for a in s["audio"])
-    return [f"##### {s['title_vi']}", "", f"**{s['book_id']} · {s['book_title']}** — {s['title_ja']}", "",
+    lead = ["Video bài giảng · Chờ gắn video", ""] if s["kind"] == "speak_japanese" else []
+    return [f"##### {s['title_ja']}", "", *lead, f"[Mở bài shadowing đầy đủ]({s['material_path']})", "", f"**{s['book_id']} · {s['book_title']}** — {s['title_ja']}", "",
             s["fit_vi"], "", "**Độ khó.** " + s["difficulty_vi"], "",
             "**Tình huống.** " + " · ".join(f"{i} {situations[i]}" for i in s["situation_ids"]), "",
             "**Phạm vi.** " + s["boundary"], "", "**Tra sách.** " +
@@ -203,7 +259,7 @@ def stage_md(stage):
     lines = [f"### {stage['display_code']} — {stage['title']}", "", stage["objective"], ""]
     decision = a["decision"]
     if decision:
-        lines += ["**Nhóm từ theo topic.** " + " · ".join(decision["vocabulary_topics"]), ""]
+        lines += [f"[Mở danh mục nguồn và CD của chặng](stages/{stage['display_code']}/manifest.json)", "", "**Nhóm từ theo topic.** " + " · ".join(decision["vocabulary_topics"]), ""]
         for kind, title in (("speak_japanese", "Speak Japanese · mỗi bài có video rồi luyện nguyên ví dụ"),
                             ("shadowing_pack", "Shadowing độc lập · một pack một node")):
             lines += ["#### " + title, ""]
@@ -214,7 +270,7 @@ def stage_md(stage):
                 lines += ["Đã xét nguồn. Chưa chọn bài cho phần này.", ""]
     else:
         lines += ["*Chưa phân bổ nguồn ở V6.0.*", ""]
-    lines += ["**Trọng tâm cho bài giảng.** " + " · ".join(stage["knowledge_focus"]), ""]
+    lines += ["**Video bài giảng tổng hợp của chặng** · Chờ gắn video.", ""]
     for event in stage["events"]:
         lines += [f"#### {event['id']} — {event['name']}", "", "Vai: " + " ↔ ".join(event["roles"]), ""]
         for c in stage["situations"]:
@@ -231,10 +287,10 @@ def stage_md(stage):
     return lines
 
 
-def preview(course):
+def preview(course, materials):
     # No server or external resources needed on mobile. Details open on demand.
     page = ['<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">',
-            '<title>Lộ trình Kaiwa V6.0</title><style>html{color-scheme:light dark}body{max-width:58rem;margin:auto;padding:1rem;font:1rem/1.6 system-ui}summary{cursor:pointer;font-weight:650;padding:.7rem 0}details{border-bottom:1px solid #8886}article{padding-left:1rem}small{opacity:.85}select,input{font:inherit;margin:.3rem;padding:.45rem;max-width:90%}h3{margin-bottom:0}</style>',
+            '<title>Lộ trình Kaiwa V6.0</title><style>html{color-scheme:light dark}body{max-width:58rem;margin:auto;padding:1rem;font:1rem/1.6 system-ui}summary{cursor:pointer;font-weight:650;padding:.7rem 0}details{border-bottom:1px solid #8886}article{padding-left:1rem}small{opacity:.85}select,input{font:inherit;margin:.3rem;padding:.45rem;max-width:90%}h3{margin-bottom:0}.material{padding:.7rem 0}.video{padding:.45rem .8rem;border-left:3px solid #9080c8}.reading{overflow-wrap:anywhere;max-width:45rem}.reading table,.reading pre{display:block;overflow-x:auto}.reading h1,.reading h2{font-size:1.15rem}.excerpt summary{font-weight:600}article{min-width:0}</style>',
             '<h1>Lộ trình Kaiwa V6.0</h1><p>Chọn chặng để xem theo thứ tự học. Mở mục nguồn để đối chiếu sách và CD.</p>',
             '<label>Cấp <select id="level"><option value="">Tất cả</option>' +
             ''.join('<option>'+escape(l)+'</option>' for l in FILES) + '</select></label>',
@@ -247,17 +303,21 @@ def preview(course):
             page.append('<h3>Từ vựng theo topic</h3><p>' + e(" · ".join(d["vocabulary_topics"])) + '</p>')
             for x in d["selections"]:
                 pair = x["kind"] == "speak_japanese"
-                page.append('<h3>' + ('Video · ' if pair else 'Shadowing · ') + e(x["title_vi"]) + '</h3>')
+                page.append('<section class="material"><h3 lang="ja">' + e(x["title_ja"]) + '</h3>')
                 if pair:
-                    page.append('<p>Tiếp theo · Shadowing toàn bộ ví dụ của bài</p>')
+                    page.append('<p class="video">Video bài giảng · Chờ gắn video</p>')
+                src = x["material_path"]
+                page.append('<details class="excerpt"><summary>Shadowing · Xem nội dung bài</summary><div class="reading">'
+                            + render_excerpt(materials[src]) + '</div><p><a href="' + e(src) +
+                            '" download>Tải bản Markdown</a></p></details>')
                 page.append('<details><summary>Nguồn và lý do chọn</summary><p>' +
                             e(x["book_id"]+" · "+x["book_title"]+" · "+x["title_ja"]) + '</p><p>' +
                             e(x["fit_vi"]+" "+x["difficulty_vi"]) + '</p><p>' + e(x["boundary"]) + '</p><p>' +
                             e(" · ".join(str(a.get("disc") or "")+" "+str(a.get("track") or "")+" "+a["locator"] for a in x["audio"])) +
-                            ' ' + e(x["audio_note"]) + '</p><p>' + e(", ".join(x["situation_ids"])) + '</p></details>')
+                            ' ' + e(x["audio_note"]) + '</p><p>' + e(", ".join(x["situation_ids"])) + '</p></details></section>')
         else:
             page.append('<p>Chưa phân bổ nguồn ở V6.0.</p>')
-        page.append('<h3>Bài giảng tổng hợp · dự kiến</h3><p>' + e(" · ".join(s["knowledge_focus"])) + '</p>')
+        page.append('<h3>Video bài giảng tổng hợp của chặng</h3><p class="video">Chờ gắn video</p>')
         for ev in s["events"]:
             page.append('<h3>' + e(ev["name"]) + '</h3><ul>')
             for c in s["situations"]:
@@ -282,9 +342,12 @@ def artifacts():
     boundaries = {}
     pack_by_location = {}
     counts = Counter()
+    materials = {}
     for original in base:
         code = original["display_code"]
         d = decisions.get(code)
+        if d:
+            materials.update(stage_materials(original, d))
         stage = {**original, "v6": {"version": policy["version"],
                                     "assignment_status": "reviewed" if d else "not_reviewed",
                                     "decision": d, "learning_order": blocks(original, d)}}
@@ -331,16 +394,17 @@ def artifacts():
         "", *[f"- {code} — {next(row['title'] for row in course if row['display_code']==code)}" for code in policy["pilot"]]
     ])
     files["TRA_THEO_SACH.md"] = "\n".join(index)
-    files["ROADMAP.html"] = preview(course)
+    files["ROADMAP.html"] = preview(course, materials)
     files["STATUS.json"] = dumps({"version": policy["version"], "state": "awaiting_pilot_review",
                                   "basis_sha256": policy["basis_sha256"], "stages": len(course),
                                   "clusters": len({s["cluster_id"] for s in course}),
                                   "events": sum(len(s["events"]) for s in course),
                                   "situations": sum(len(s["situations"]) for s in course),
                                   "reviewed": list(decisions), "not_reviewed": len(course)-len(decisions),
+                                  "local_markdown_files": sum(n.endswith(".md") for n in materials),
                                   "assignment_occurrences": dict(counts), "unique_book_pack_keys": len(reverse),
                                   "next_action": "Chờ người dùng duyệt pilot trước khi giao ba worker Sol/high cho V6.1."}, True)
-    return {name: (value.rstrip()+"\n").encode("utf8") for name, value in files.items()}
+    return {name: (value.rstrip()+"\n").encode("utf8") for name, value in files.items()} | materials
 
 
 def main():
@@ -364,6 +428,7 @@ def main():
     if args.cmd == "build":
         # Validate the full set before writing. Interruption is recoverable with build + verify.
         for name, contents in outputs.items():
+            (V6 / name).parent.mkdir(parents=True, exist_ok=True)
             with tempfile.NamedTemporaryFile(dir=V6, delete=False) as f:
                 f.write(contents)
                 tmp = f.name
