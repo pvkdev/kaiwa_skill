@@ -1,6 +1,6 @@
 # Các bản sách đã clean
 
-Đã hoàn tất **30/30 PDF, 4.597 trang nguồn** theo phạm vi được cung cấp. Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát và những vấn đề còn trong nguồn. Chưa sắp thành lộ trình mới.
+Đã có bản đọc đủ **31/31 PDF, 4.753 trang nguồn** theo phạm vi được cung cấp. Mở `book.md` để đọc từng bản; hồ sơ ghi rõ phạm vi rà soát và những vấn đề còn trong nguồn. Chưa sắp thành lộ trình mới.
 
 [Tra CD, băng và nguồn nghe](AUDIO_INDEX.md) — có trạng thái inventory và trạng thái file âm thanh riêng; một số hồ sơ mới kiểm một phần, phạm vi được ghi rõ trong từng inventory.
 
@@ -60,9 +60,11 @@
 
 - [すぐに使える 日本語会話 超ミニフレーズ 発展210](<すぐに使える 日本語会話 超ミニフレーズ 発展210/book.md>) — 233 trang/16 chương/224 unit; tác giả rà toàn PDF, root QA32 trang mẫu. [Giới hạn QA và nguồn](<すぐに使える 日本語会話 超ミニフレーズ 発展210/_meta/coordinator-review.md>).
 
+- [シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版](<シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版/book.md>) — 156 trang/20 chương/219 unit; ba worker đối chiếu toàn phạm vi, root và kiểm chéo rà mẫu 66 trang độc lập. [Giới hạn QA và nguồn](<シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版/_meta/coordinator-review.md>). PDF thiếu phần trước trang in 25, còn 2 cảnh báo nguồn tại PDF 32/106; 2 DISC/55 mã nghe, chưa kiểm file thực tế.
+
 ## Đang clean
 
-Không còn sách đang viết hoặc chờ QA trong phạm vi 30 PDF này.
+Không còn phần chuyển văn bản đang viết hoặc chờ QA trong phạm vi 31 PDF; các vấn đề ngay trong nguồn được giữ rõ ở hồ sơ từng sách.
 
 Pilot Wakaru và88 đã được mở rộng; báo cáo/hash cũ chỉ áp dụng phạm vi lịch sử.
 

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "task": "New PDF direct knowledge conversion",
+  "phase": "converted_with_source_warnings",
+  "coordinator": "root",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "source_pdf_sha256": "4c9087b3dc4c80db29208d93f53e4ee272c0848e68f7240eb13cb5cb33d74679",
+  "parallel_exception": "User explicitly requested 3 subagents on one PDF. Workers own isolated cache shards; root exclusively writes canonical metadata and Git. Full authoring waits for independent pilot PASS.",
+  "assignments": [
+    {
+      "worker": "mensetsu_pilot",
+      "pages": [
+        1,
+        50
+      ],
+      "shard": "kaiwa_skill/.cache/mensetsu-work/part-a",
+      "phase": "conversion_finished_with_recorded_source_issues"
+    },
+    {
+      "worker": "mensetsu_unit2",
+      "pages": [
+        51,
+        105
+      ],
+      "shard": "kaiwa_skill/.cache/mensetsu-work/part-b",
+      "phase": "conversion_finished"
+    },
+    {
+      "worker": "mensetsu_unit3",
+      "pages": [
+        106,
+        152
+      ],
+      "shard": "kaiwa_skill/.cache/mensetsu-work/part-c",
+      "phase": "conversion_finished_with_recorded_source_issues"
+    },
+    {
+      "worker": "root",
+      "pages": [
+        153,
+        156
+      ],
+      "shard": "kaiwa_skill/.cache/mensetsu-work/part-root",
+      "phase": "conversion_finished"
+    }
+  ],
+  "updated_at": "2026-11-14T11:52:23.827033+00:00",
+  "pilot_pass": "_meta/pilot-review.json",
+  "final_counts": {
+    "physical_pages": 156,
+    "chapters": 20,
+    "units": 219,
+    "author_checked_pages": 154,
+    "source_issue_pages": [
+      32,
+      106
+    ],
+    "unique_audio_codes": 55
+  },
+  "next_action": "No unfinished transcription. Resolve only recorded source issues if a clearer/corrected edition becomes available."
+}

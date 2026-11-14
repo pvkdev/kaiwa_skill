@@ -1,6 +1,6 @@
 # CD, băng và nguồn nghe theo sách
 
-Snapshot 2026-11-11T23:04:11.590050+00:00. Hồ sơ đang viết còn cập nhật. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
+Đã bổ sung sách phỏng vấn ngày 2026-11-14; các mục trước giữ hồ sơ đã có. Thông tin in về CD/băng không chứng minh đã có file nghe; xem phạm vi và bằng chứng từng inventory.
 
 - **5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày** — [Ghi chú nghe](<5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **Danh sách 1160 từ vựng MINATO DORIMU** — [Ghi chú nghe](<Danh sách 1160 từ vựng MINATO DORIMU/_meta/audio.md>); `unknown`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
@@ -32,3 +32,5 @@ Snapshot 2026-11-11T23:04:11.590050+00:00. Hồ sơ đang viết còn cập nh�
 - **聞いて覚える話し方 日本語生中継 中～上級編** — [Ghi chú nghe](<聞いて覚える話し方 日本語生中継 中～上級編/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **聞いて覚える話し方 日本語生中継 初中級編 1** — [Ghi chú nghe](<聞いて覚える話し方 日本語生中継 初中級編 1/_meta/audio.md>); `documented`, 0 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
 - **聞いて覚える話し方 日本語生中継 初中級編２** — [Ghi chú nghe](<聞いて覚える話し方 日本語生中継 初中級編２/_meta/audio.md>); `documented`, 82 mục mã/track; file thực tế `not_checked`. Xem phạm vi và bằng chứng trong hồ sơ.
+
+- **シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版** — [Ghi chú nghe](<シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版/_meta/audio.md>); `documented`, 2 nhãn DISC/55 mã phân biệt được quan sát trong PDF; file thực tế `not_checked`.
