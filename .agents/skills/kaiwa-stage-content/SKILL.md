@@ -9,7 +9,13 @@ description: Biên soạn, nâng cấp và xuất chặng Kaiwa cho Harumii; ph�
 
 **Ưu tiên chất lượng lộ trình:** chọn chất liệu giúp người học giao tiếp tốt, hợp cấp và nối mạch học. Không bắt dùng 100% tài nguyên hay hoàn tất mọi phần của từng sách. Độ phủ nguồn là thông tin để tra cứu/cân nhắc, không phải KPI hoặc điều kiện chốt bài. Phần chưa chọn có thể để dành, gộp hoặc không đưa vào; chỉ coi là thiếu khi ảnh hưởng mục tiêu học. Không nhồi nội dung hoặc buộc kiểm kê chi tiết toàn kho trước pilot.
 
-## Phạm vi
+## Chọn phiên bản trước khi làm
+
+Với yêu cầu **lộ trình hoặc pilot phân bổ V6**, đọc [kaiwa-roadmap](../kaiwa-roadmap/SKILL.md) và [kaiwa-source-assignment](../kaiwa-source-assignment/SKILL.md). Gốc dữ liệu là `kaiwa_skill/planning/v6/`. Khi tiếp nhận chặng V6 đã phân bổ, lấy đúng các mục trong `v6.decision` và thứ tự trong `v6.learning_order`. Muốn thay pack thì trả thay đổi về decision của chặng và kiểm lại. V6 ưu tiên topic; cho phép nhiều bài, nhiều pack và dùng lại ở nhiều cấp. Chặng chưa phân bổ có trạng thái riêng.
+
+V6 soạn từ theo topic, ngữ pháp nằm trong bài giảng chặng. Bài Speak Japanese đi liền phần luyện ví dụ, mỗi pack độc lập có một node. Challenge tương lai có một bối cảnh và nhiều nhiệm vụ cùng cuộc thoại. Hai skill bài giảng và việc viết challenge sẽ thiết kế sau khi duyệt lộ trình. Quy trình Exchange v1 và các hướng dẫn chi tiết bên dưới áp dụng cho workspace nội dung V5 và các pilot cũ; không dùng chúng để sinh bài học V6 trong bước phân bổ.
+
+## Phạm vi sản xuất nội dung V5
 
 - Chỉ tạo dữ liệu nội dung. App đã có học từ vựng, shadowing toàn hội thoại, shadowing đổi vai và Live Kaiwa AI.
 - Đầu ra phải theo [hợp đồng trao đổi](references/harumii-exchange.md): từ vựng chỉ list Nhật; ngữ pháp gồm level N5–N1 và tên Minna/bunpou để admin pick; mọi câu luyện Nhật có nghĩa Việt. App tự furigana và TTS, gói app chứa chỉ dẫn tra CD riêng cho admin, không chứa file âm thanh hoặc ID DB. Phạm vi chỉ ở repo lộ trình; không tiếp tục làm feature/DB/code Harumi.
@@ -30,7 +36,7 @@ description: Biên soạn, nâng cấp và xuất chặng Kaiwa cho Harumii; ph�
 - Tra nguồn: `kaiwa_skill/planning/catalog27/BOOK_GUIDE.md`, `manifest.json`, `annotations/Bxx.json`; tìm vị trí bằng `kaiwa_skill/planning/v2/index/HEADINGS_27.jsonl` hoặc `catalog27/source_index.jsonl`.
 - Memo: `kaiwa_skill/planning/WEB_COURSE_TOPICS_MEMO.md`. Mục lục memo chỉ chứng minh tên/chủ đề, không chứng minh nội dung hội thoại.
 - Ngữ pháp Minna: `kaiwa_skill/reference/grammar/MINNA_01_50_GRAMMAR.json` và bản MD. Ngữ pháp bunpou có sẵn: tra metadata trong `bunpou_skill/work/`, chỉ đọc tên/nghĩa/ID khi cần.
-- Đầu ra: `kaiwa_skill/courseware/<stage_uid>/`. Chỉ dùng tên sách/chặng ở tiêu đề; dùng ID bất biến cho liên kết.
+- Đầu ra: `kaiwa_skill/courseware/<stage_uid>/`. Tên sách chỉ ở metadata admin; dùng ID bất biến cho liên kết.
 
 ## Hai loại nguồn sách
 
