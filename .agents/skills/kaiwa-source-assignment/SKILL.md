@@ -25,3 +25,11 @@ Tạo `<display_code>.json` trong thư mục decisions được chỉ định. D
 - considerations là mảng ứng viên cụ thể chưa chọn, mỗi mục có book_id, locator, reason, status (deferred hoặc unsuitable). Chỉ ghi nguồn thực sự đã xét. Trình dựng dùng locator và hash để sao nguyên phần Markdown được chọn vào thư mục từng chặng. Phải bao gồm đầy đủ bài, lời giảng và mọi ví dụ theo thứ tự trong nguồn clean. Fit theo topic chỉ giải thích trong metadata. Tiêu đề bài và câu luyện giữ nguyên.
 
 Checkpoint sau mỗi cụm nguồn vào draft riêng. Chạy `py -X utf8 tools/roadmap_v6.py check-one <file>` trước bàn giao. Điều phối đọc lại các vị trí, rà lý do, nhóm giáp ranh và thứ tự. Validator không chứng minh đã đọc hay khớp nghĩa.
+
+## Chế độ bao phủ toàn sách từ V6.2
+
+Chủ dự án yêu cầu tận dụng toàn bộ nội dung học của chín sách Speak Japanese ở V6.2, rồi phần B01/shadowing còn lại ở V6.3. Trong chế độ coverage_mode, tìm chặng gần topic hoặc chức năng nói, cho phép các ví dụ khác bối cảnh cùng pack. Một bài là kiến thức bổ trợ có giá trị độc lập. Giữ trọn pack và nhiều bài trong chặng. Quy tắc tuyển chọn có thể bỏ vì chưa khớp toàn pack của release trước nhường cho yêu cầu bao phủ mới này.
+
+Kiểm kê trước theo từng sách và từng chương. Mọi nội dung học (lời giải thích, sơ đồ, bảng mẫu, mini-column, phần mở đầu có kiến thức, ví dụ và bài luyện) phải có vị trí trong pack hoặc bài bổ trợ. Chỉ loại bìa, thông tin xuất bản, mục lục/chỉ mục, bibliographic và phần lặp không có kiến thức mới. Ghi từng phạm vi loại với lý do. Phần kiến thức bổ trợ không gắn audio có pack_scope=educational_support, audio=[], audio_note giải thích; không bịa số CD.
+
+Worker sở hữu nhóm sách và xuất catalog coverage/<book_id>.json, root ghép vào decisions để tránh nhiều worker cùng sửa một chặng. Catalog có chapters (path/hash), packs (stage_code/selection), exclusions (path/start_line/end_line/category/reason). Kiểm phủ dòng và kiểm con trỏ thực sự có trong quyết định, cộng trạng thái nội dung nguồn chưa chắc. Bao phủ nguồn clean có sẵn không chứng minh đã khôi phục các trang thiếu của PDF hoặc nghe lại audio.

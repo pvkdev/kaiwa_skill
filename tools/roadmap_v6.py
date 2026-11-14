@@ -126,19 +126,26 @@ def check(decision):
         learner_title(s)
         check_part(s, book)
         excerpt = source_bytes(s).decode("utf8")
-        heading = next((line.lstrip("# ").strip() for line in excerpt.splitlines()
-                        if re.match(r"^#{1,6} ", line)), "")
+        headings = [line.lstrip("# ").strip() for line in excerpt.splitlines()
+                    if re.match(r"^#{1,6} ", line)]
         require("title_vi" not in s, "Lưu tiêu đề nguyên gốc; bỏ tên viết lại theo chặng.")
-        require(s["title_ja"] in heading, "Tiêu đề phải có trong đầu mục nguồn: " + s["title_ja"])
+        require(any(s["title_ja"] in heading for heading in headings), "Tiêu đề phải có trong đầu mục nguồn: " + s["title_ja"])
         for p in s.get("extra_parts", []):
             check_part(p, book)
-        if bid == "B19":
+        if bid == "B19" and s.get("pack_scope") != "educational_support":
             lines = (ROOT / s["path"]).read_text(encoding="utf-8-sig").splitlines()
             anchors = [(i, line) for i, line in enumerate(lines) if re.match(r'^<a id=', line)]
+            metadata = ROOT / book["directory"] / "_meta"
+            printed_pages = {t["pdf_page"] for t in read(metadata / "audio.json")["tracks"]}
+            chapter_name = "chapters/" + Path(s["path"]).name
+            source_units = {u["unit_id"]: u for u in rows(metadata / "units.jsonl")
+                     if u.get("chapter") == chapter_name}
             groups = []
-            for j, (start, _) in enumerate(anchors):
+            for j, (start, anchor) in enumerate(anchors):
                 end = anchors[j+1][0] if j+1 < len(anchors) else len(lines)
-                if any(re.search(r"\*\*CD:\s*\d+\*\*", line) for line in lines[start:end]):
+                aid = re.search(r'id="([^"]+)"', anchor)[1]
+                recorded = any(p.get("pdf_page") in printed_pages for p in source_units.get(aid, {}).get("source", []))
+                if recorded or any(re.search(r"\*\*CD:\s*\d+\*\*", line) for line in lines[start:end]):
                     groups.append(start)
             selected = [i for i in groups if s["start_line"]-1 <= i < s["end_line"]]
             require(len(selected) == 1, "B19 cần trọn một nhóm audio.")
@@ -146,7 +153,7 @@ def check(decision):
             end = next((i for i in groups if i > start), len(lines))
             normalize = lambda ls: re.sub(r'^<a id="[^"]+"></a>[ \t]*$', "",
                                           "\n".join(ls), flags=re.MULTILINE).strip()
-            require(normalize(lines[s["start_line"]-1:s["end_line"]]) == normalize(lines[start:end]),
+            require(normalize(lines[start:end]) in normalize(lines[s["start_line"]-1:s["end_line"]]),
                     "B19: thiếu mục liền nhau cùng nhãn CD.")
         if bid == "INTERVIEW":
             labels = []
@@ -211,6 +218,9 @@ def stage_materials(stage, decision):
         selection["material_path"] = relative
         entry = {k: selection[k] for k in ("book_id", "book_title", "kind", "pack_id", "title_ja",
                                             "boundary", "audio", "audio_note", "situation_ids")}
+        for field in ("source_quality_note", "pack_scope"):
+            if field in selection:
+                entry[field] = selection[field]
         entry.update(file=filename, sha256=digest(content),
                      parts=[{k: p[k] for k in ("path", "unit_id", "start_line", "end_line", "sha256")}
                             for p in parts])
@@ -268,6 +278,8 @@ def blocks(stage, decision):
     for s in decision["selections"] if decision else []:
         ref = {k: s[k] for k in ("book_id", "pack_id", "material_path")}
         ref["title_ja"] = learner_title(s)
+        if s.get("pack_scope"):
+            ref["pack_scope"] = s["pack_scope"]
         if s["kind"] == "speak_japanese":
             result.extend([node("speak_japanese_video", video_status="placeholder", **ref), node("speak_japanese_examples", **ref)])
         else:
@@ -349,7 +361,7 @@ def preview(course, materials):
                 if pair:
                     page.append('<p class="video">Video bài giảng · Chờ gắn video</p>')
                 src = x["material_path"]
-                page.append('<details class="excerpt"><summary>Shadowing · Xem nội dung bài</summary><div class="reading">'
+                page.append('<details class="excerpt"><summary>' + ('Tài liệu bổ trợ · Xem nội dung' if x.get("pack_scope") == "educational_support" else 'Shadowing · Xem nội dung bài') + '</summary><div class="reading">'
                             + render_excerpt(materials[src], x) + '</div><p><a href="' + e(src) +
                             '" download>Tải bản Markdown</a></p></details>')
                 page.append('<details><summary>Nguồn và lý do chọn</summary><p>' +
@@ -451,7 +463,7 @@ def artifacts():
                                   "assignment_occurrences": dict(counts), "unique_book_pack_keys": len(reverse),
                                   "next_action": "Tiếp hàng đợi từng cấp đến đủ 289 chặng, sau đó nghiệm thu."}, True)
     if policy["version"] != "6.0":
-        replacements = {"V6.0": "V6.1", "KAIWA_CHANG_V6_0": "KAIWA_CHANG_V6_1",
+        replacements = {"V6.0": "V" + policy["version"], "KAIWA_CHANG_V6_0": "KAIWA_CHANG_V" + policy["version"].replace(".", "_"),
                         "Khung lộ trình và pilot phân bổ nguồn": "Khung lộ trình và phân bổ nguồn",
                         "Pilot phân bổ nguồn": "Phân bổ nguồn",
                         "Mở pilot theo thứ tự học": "Mở các chặng đã phân bổ",
@@ -460,7 +472,7 @@ def artifacts():
         for name, value in files.items():
             for old, new in replacements.items():
                 value = value.replace(old, new)
-            updated[name.replace("V6_0", "V6_1")] = value
+            updated[name.replace("V6_0", "V" + policy["version"].replace(".", "_"))] = value
         files = updated
         status = json.loads(files["STATUS.json"])
         status["state"] = "allocation_complete" if len(decisions) == len(base) else "allocation_in_progress"
@@ -469,7 +481,7 @@ def artifacts():
                             for level in FILES}
         status["stages_without_selected_units"] = [code for code, d in decisions.items() if not d["selections"]]
         if len(decisions) == len(base):
-            status["next_action"] = "Đọc báo cáo nguồn và các chặng chưa chọn bài; nghiệm thu V6.1."
+            status["next_action"] = "Đọc báo cáo nguồn và nghiệm thu V" + policy["version"] + "."
         files["STATUS.json"] = dumps(status, True)
     return {name: (value.rstrip()+"\n").encode("utf8") for name, value in files.items()} | materials
 
@@ -504,7 +516,7 @@ def main():
             os.replace(tmp, V6 / name)
     for name, contents in outputs.items():
         require((V6 / name).read_bytes() == contents, "Cần dựng lại " + name)
-    actual = rows(V6 / ("KAIWA_CHANG_V6_1.jsonl" if inputs()[0]["version"] == "6.1" else "KAIWA_CHANG_V6_0.jsonl"))
+    actual = rows(V6 / ("KAIWA_CHANG_V" + inputs()[0]["version"].replace(".", "_") + ".jsonl"))
     for s in actual:
         del s["v6"]
     require(actual == inputs()[1], "Nội dung hoặc thứ tự V5 sai lệch")
