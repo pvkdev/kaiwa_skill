@@ -3015,7 +3015,7 @@ Xử lý lời nhờ khó và ranh giới trách nhiệm trong quan hệ không 
 
 #### Speak Japanese · mỗi bài có video rồi luyện nguyên ví dụ
 
-##### 105. ちょっと考えます。
+##### ちょっと考えます。
 
 Video bài giảng · Chờ gắn video
 
@@ -3035,7 +3035,7 @@ Khi lời nhờ còn mơ hồ hoặc người kia muốn câu trả lời ngay, 
 
 **Audio.** CD-2 05 (Bài 105, PDF120; nhãn CD-2 05 trong clean). Đã xác minh nhãn CD-2 05 và trọn chữ Nhật của bài trong clean; chưa nghe file CD.
 
-##### 91. 悪いんだけど
+##### 悪いんだけど
 
 Video bài giảng · Chờ gắn video
 
@@ -3055,7 +3055,7 @@ Người học nghe được dấu hiệu mở lời nhờ trước khi biết y
 
 **Audio.** CD-1 91 (Bài 91, PDF106; nhãn CD-1 91 trong clean). Đã đọc đủ 5 ví dụ và nhãn CD trong clean; chưa nghe file CD.
 
-##### 77. 無理です。
+##### 無理です。
 
 Video bài giảng · Chờ gắn video
 
@@ -3075,7 +3075,7 @@ Ví dụ từ chối phiên dịch vì vượt khả năng và làm mẫu trong 
 
 **Audio.** CD-1 77 (Bài 77, PDF92; nhãn CD-1 77 trong clean). Nhãn CD và toàn bài đã kiểm trong clean, chưa nghe file CD.
 
-##### 184. 難しいです
+##### 難しいです
 
 Video bài giảng · Chờ gắn video
 
@@ -3095,7 +3095,7 @@ Video bài giảng · Chờ gắn video
 
 **Audio.** CD-2 79 (Bài 184, PDF199; nhãn CD-2 79 trong clean). Nhãn in và cả 4 ví dụ đã kiểm trong clean; chưa nghe file CD.
 
-##### 6　(5) 断り — 申し訳ないのですが
+##### 断り — 申し訳ないのですが
 
 Video bài giảng · Chờ gắn video
 
@@ -3115,7 +3115,7 @@ Mẫu vừa mở lời từ chối vừa nói rõ phần không thể làm, phù
 
 **Audio.** 音声 82 (Mục 6 (5) 断り, nhãn 音声 82 trong clean; không thấy số đĩa). Xác minh nhãn 音声 82 và toàn mục từ clean; không đồng nhất số 音声 với số track trên file, chưa nghe audio.
 
-##### 187. 無理しなくていい
+##### 無理しなくていい
 
 Video bài giảng · Chờ gắn video
 
@@ -3137,7 +3137,7 @@ Học cả vai người nhờ: thấy người kia khó đáp ứng thì giảm 
 
 #### Shadowing độc lập · một pack một node
 
-##### 04 依頼する
+##### 依頼する
 
 [Mở bài shadowing đầy đủ](stages/H-050/B08-u-part2-unit04-0c4e3f67ae.md)
 

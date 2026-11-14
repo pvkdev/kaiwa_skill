@@ -645,7 +645,7 @@ Nhờ, nhận lời hoặc từ chối một việc có trách nhiệm rõ, đi�
 
 #### Speak Japanese · mỗi bài có video rồi luyện nguyên ví dụ
 
-##### 61. ちょっと聞きたいんだけど — ～が／～けど（婉曲）
+##### ちょっと聞きたいんだけど — ～が／～けど（婉曲）
 
 Video bài giảng · Chờ gắn video
 
@@ -665,7 +665,7 @@ Cho người học hỏi người kia có tiện nghe, mở phần việc cần 
 
 **Audio.** CD 61 (trang in 138–139; chương 10 dòng 461–491; _meta/audio.json: unit u-88-part2-61). Nhãn CD 61 và phạm vi bài thấy trong clean cùng _meta/audio; số đĩa và file nghe thực tế chưa xác minh.
 
-##### 91. 悪いんだけど
+##### 悪いんだけど
 
 Video bài giảng · Chờ gắn video
 
@@ -685,7 +685,7 @@ Một bài vừa có lời nhờ bạn/đồng nghiệp và câu từ chối đ�
 
 **Audio.** CD-1 91 (PDF106; chương 06 dòng 95–108; _meta/audio.json: CD-1 91). Nhãn CD-1 91 in ở heading và được kiểm kê _meta/audio; chưa kiểm file nghe.
 
-##### 10. コピーしといてくれない？ — ～とく
+##### コピーしといてくれない？ — ～とく
 
 Video bài giảng · Chờ gắn video
 
@@ -705,7 +705,7 @@ Nói rõ việc cần làm trước cuộc họp/lịch hẹn, xác nhận ai l�
 
 **Audio.** CD 10 (trang in 46–47; chương 06 dòng 45–76; _meta/audio.json: u-88-part2-10). Mã CD 10, trang và mô tả CD thu mẫu + luyện tập có trong _meta/audio; chưa rõ số đĩa, chưa nghe file.
 
-##### 105. ちょっと考えます。
+##### ちょっと考えます。
 
 Video bài giảng · Chờ gắn video
 
@@ -725,7 +725,7 @@ Khi chưa rõ kết quả cần làm hoặc phạm vi vừa đổi, người nh�
 
 **Audio.** CD-2 05 (PDF120; chương 07 dòng 164–177; _meta/audio.json: CD-2 05). CD-2 05 từ heading và _meta/audio; file nghe thực tế chưa kiểm.
 
-##### 115. 任せてください。
+##### 任せてください。
 
 Video bài giảng · Chờ gắn video
 
@@ -745,7 +745,7 @@ Người học nhận phần việc đã rõ, hoặc chủ động đề nghị 
 
 **Audio.** CD-2 15 (PDF130; chương 07 dòng 283–293; _meta/audio.json: CD-2 15). CD-2 15 từ heading và _meta/audio; chưa kiểm file nghe.
 
-##### 67. 急に言われても困る
+##### 急に言われても困る
 
 Video bài giảng · Chờ gắn video
 
@@ -765,7 +765,7 @@ Trả lời khi một việc được nhờ quá gấp hoặc phần việc tăn
 
 **Audio.** CD-1 67 (PDF82; chương 05 dòng 70–82; _meta/audio.json: CD-1 67). CD-1 67 được nêu tại heading/kiểm kê; file nghe chưa kiểm.
 
-##### Unit 44 — 手が回らない／身動きがとれない
+##### 手が回らない／身動きがとれない
 
 Video bài giảng · Chờ gắn video
 
@@ -787,7 +787,7 @@ Giải thích giới hạn vì đang ôm nhiều việc, rồi tách phần cũ 
 
 #### Shadowing độc lập · một pack một node
 
-##### 04 依頼する
+##### 依頼する
 
 [Mở bài shadowing đầy đủ](stages/T-012/B08-u-part2-unit04-0c4e3f67ae.md)
 
@@ -805,7 +805,7 @@ Tám lời nhờ trải từ mở lời, hỏi giúp, nói việc cụ thể, h�
 
 **Audio.** CD-1 8 (Part 2 Unit 04, trang in 30–31, PDF29–30, chương 02 dòng 100–127; _meta/audio.json: CD-1 / 8). Nhãn CD-1 / 8 và tám câu in đã đối chiếu ở chapter, _meta/audio ghi PDF30; chưa đối chiếu file nghe hoặc lượt lặp slow/natural.
 
-##### 09 申し出る
+##### 申し出る
 
 [Mở bài shadowing đầy đủ](stages/T-012/B08-u-part2-unit09-012b522cb0.md)
 

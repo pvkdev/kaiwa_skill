@@ -2839,7 +2839,7 @@ Tìm việc làm thêm và thực hiện cuộc hỏi/phỏng vấn đầu tiên
 
 #### Speak Japanese · mỗi bài có video rồi luyện nguyên ví dụ
 
-##### (3) アルバイトの応募～会社の人との会話
+##### アルバイトの応募～会社の人との会話
 
 Video bài giảng · Chờ gắn video
 
@@ -2859,7 +2859,7 @@ Bổ sung hai cách tự giới thiệu, nói đã thấy thông báo tuyển v�
 
 **Audio.** 89 (PART2 (3), hai シーン, nhãn 音声 89 tại dòng 94). Mã 89 có trên clean; _meta/audio.json chưa có inventory track tương ứng và không có bằng chứng disc. Chưa kiểm tệp nghe thực tế.
 
-##### 45. ～はちょっと…。
+##### ～はちょっと…。
 
 Video bài giảng · Chờ gắn video
 
@@ -2881,7 +2881,7 @@ Video bài giảng · Chờ gắn video
 
 #### Shadowing độc lập · một pack một node
 
-##### 33 アルバイトの面接
+##### アルバイトの面接
 
 [Mở bài shadowing đầy đủ](stages/S-059/B08-u-part4-unit33-3e813dfd98.md)
 
@@ -2899,7 +2899,7 @@ Tám câu đi theo mạch gọi từ quảng cáo, hỏi còn tuyển, xác nh�
 
 **Audio.** CD-2 36 (Part 4 Unit 33, câu Nhật 1–8, PDF181–182; nhãn CD-2 / 36 tại dòng 921). Đã xác minh nhãn CD-2 / 36 và tám câu Nhật trong clean; chưa nghe/đối chiếu tệp âm thanh hoặc các lượt tiếng Anh/chậm/tốc độ tự nhiên.
 
-##### 1-2　電話アポイントメント
+##### 電話アポイントメント
 
 [Mở bài shadowing đầy đủ](stages/S-059/INTERVIEW-u1-2-phone-appointment-c7269e8c49.md)
 
