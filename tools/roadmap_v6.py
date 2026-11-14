@@ -85,8 +85,11 @@ def check_part(part, book):
         directory = ROOT / book["directory"]
         state = read(directory / "_meta/direct-state.json")["chapters"]
         entry = state.get(path.relative_to(directory).as_posix(), {})
-        require(entry.get("chapter_sha256") == part["sha256"] and entry.get("status") in
-                {"author_checked", "verified"}, "Chương nguồn bổ sung chưa ổn định: " + path.name)
+        stable = entry.get("status") in {"author_checked", "verified"}
+        documented_review = (inputs()[0].get("allow_review_source_with_note") and
+                             entry.get("status") == "needs_review" and part.get("source_quality_note"))
+        require(entry.get("chapter_sha256") == part["sha256"] and (stable or documented_review),
+                "Chương nguồn bổ sung chưa ổn định hoặc thiếu ghi chú: " + path.name)
     lines = data.decode("utf-8-sig").splitlines()
     lo, hi = part.get("start_line"), part.get("end_line")
     require(type(lo) is int and type(hi) is int and 1 <= lo <= hi <= len(lines),
@@ -96,7 +99,8 @@ def check_part(part, book):
         require(not any(line.strip() for line in lines[:lo-1] + lines[hi:]),
                 "Sách phỏng vấn: chọn trọn mục in có nhiều track.")
     marker = 'id="' + text_field(part, "unit_id") + '"'
-    require(any(marker in line for line in lines[max(0, lo-4):hi]), f"Anchor xa đoạn đã chọn: {marker}")
+    anchor_scope = lines if part.get("pack_scope") == "educational_support" else lines[max(0, lo-4):hi]
+    require(any(marker in line for line in anchor_scope), f"Anchor không có trong phạm vi nguồn: {marker}")
 
 
 def check(decision):
@@ -155,7 +159,7 @@ def check(decision):
                                           "\n".join(ls), flags=re.MULTILINE).strip()
             require(normalize(lines[start:end]) in normalize(lines[s["start_line"]-1:s["end_line"]]),
                     "B19: thiếu mục liền nhau cùng nhãn CD.")
-        if bid == "INTERVIEW":
+        if bid == "INTERVIEW" and s.get("pack_scope") != "educational_support":
             labels = []
             for part in [s, *s.get("extra_parts", [])]:
                 source = (ROOT / part["path"]).read_text(encoding="utf-8-sig").splitlines()

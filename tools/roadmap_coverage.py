@@ -42,11 +42,27 @@ def merge(selected_books=None):
     for _, cat in catalog_list:
         for pack in cat["packs"]:
             complete_packs[cat["book_id"]].append(pack["selection"])
+    line_cache, required_cache = {}, {}
     def contains(container, fragment):
         parent_parts = [container, *container.get("extra_parts", [])]
-        return all(any(p["path"] == q["path"] and p["start_line"] <= q["start_line"]
-                       and p["end_line"] >= q["end_line"] for p in parent_parts)
-                   for q in [fragment, *fragment.get("extra_parts", [])])
+        for child in [fragment, *fragment.get("extra_parts", [])]:
+            matching = [p for p in parent_parts if p["path"] == child["path"]]
+            if not matching:
+                return False
+            key = (child["path"], child["start_line"], child["end_line"])
+            if key not in required_cache:
+                if child["path"] not in line_cache:
+                    line_cache[child["path"]] = (ROOT / child["path"]).read_text("utf-8-sig").splitlines()
+                lines = line_cache[child["path"]]
+                required_cache[key] = [i for i in range(child["start_line"], child["end_line"]+1)
+                                       if lines[i-1].strip() and not lines[i-1].startswith('<a id=')]
+            required = required_cache[key]
+            if required and any(p["start_line"] <= required[0] and p["end_line"] >= required[-1]
+                                for p in matching):
+                continue
+            if not all(any(p["start_line"] <= i <= p["end_line"] for p in matching) for i in required):
+                return False
+        return True
     # Upgrade historical single-anchor selections to the actual complete audio unit.
     for decision in decisions.values():
         upgraded = []
@@ -57,7 +73,10 @@ def merge(selected_books=None):
                            for p in [s, *s.get("extra_parts", [])]))
                 revised = full.copy()
                 revised["situation_ids"] = old["situation_ids"]
-                revised["fit_vi"] = old["fit_vi"] + " Học trọn đơn vị bổ trợ, gồm các ví dụ khác bối cảnh trong cùng pack."
+                note = " Học trọn đơn vị bổ trợ, gồm các ví dụ khác bối cảnh trong cùng pack."
+                revised["fit_vi"] = old["fit_vi"].replace(note, "")
+                if note in old["fit_vi"] or signature(full) != signature(old):
+                    revised["fit_vi"] += note
             else:
                 revised = old
             previous = next((s for s in upgraded if signature(s) == signature(revised)), None)

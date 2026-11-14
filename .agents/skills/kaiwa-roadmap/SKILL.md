@@ -24,3 +24,7 @@ Mở decision đúng mã, giữ nguyên stage_uid, lưu lịch sử qua Git. Khi
 ## Release V6.1 đã được giao
 
 Người dùng chốt mỗi worker một cấp và đi tuần tự theo QUEUE_so.json, QUEUE_trung.json, QUEUE_thuong.json trong planning/v6_1. Ba worker Sol/high. Các chặng pilot kế thừa. Trước khi chạy helper, đặt KAIWA_ROADMAP_DIR trỏ tuyệt đối tới kaiwa_skill/planning/v6_1. SOURCE_POLICY.json trong release ghi scope đầy đủ. Lưu từng decision đã check-one; draft trong work/<cấp>. Điều phối build/verify các bản đọc và nội dung cục bộ sau các lượt bàn giao. Chỉ đánh dấu hoàn tất khi có đủ 289 decision hợp lệ. V6.0 tiếp tục là snapshot pilot.
+
+## Kiểm kê mọi nội dung học V6.2 và V6.3
+
+V6.2 kiểm kê chín sách Speak Japanese, V6.3 kế thừa và kiểm kê thêm B01/B08/B13/B14/INTERVIEW. Đọc REQUIREMENTS.md trong release và chế độ coverage ở kaiwa-source-assignment. Ba worker sở hữu nhóm sách tách biệt, root ghép catalog. KAIWA_ROADMAP_DIR phải trỏ đúng release khi chạy helper. tools/roadmap_coverage.py merge [--books ...] nâng lựa chọn một phần cũ thành cả pack, dùng lại danh tính pack tương đương và chống nhân bản khi tiếp tục. Sau merge chạy report để kiểm đủ tập chương, hash, phạm vi dòng học, phạm vi hành chính và vị trí pack thực tế. Rồi build/verify lộ trình, kiểm byte bản trích và preview. Mẫu số bao phủ là nguồn clean hiện có; giới hạn PDF thiếu trang/nhãn phải ghi trong báo cáo và source_quality_note. V6.2 phải commit trước khi bắt đầu V6.3, hai báo cáo và snapshot riêng.
