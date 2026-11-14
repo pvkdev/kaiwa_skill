@@ -15,7 +15,10 @@ from urllib.parse import quote
 
 ROOT = Path(__file__).resolve().parents[1]
 PLANNING = ROOT / "kaiwa_skill/planning"
-V6 = Path(os.environ.get("KAIWA_ROADMAP_DIR", str(PLANNING / "v6"))).resolve()
+CURRENT = PLANNING / "CURRENT_ROADMAP.json"
+_current = json.loads(CURRENT.read_text(encoding="utf-8-sig")) if CURRENT.exists() else {}
+_default = (ROOT / _current["roadmap"]).parent if str(_current.get("version", "")).startswith("6.") else PLANNING / "v6"
+V6 = Path(os.environ.get("KAIWA_ROADMAP_DIR", str(_default))).resolve()
 V5 = PLANNING / "v5"
 POLICY_PATH = V6 / "SOURCE_POLICY.json"
 FILES = {"Sơ": "SO_CAP.md", "Trung": "TRUNG_CAP.md", "Thượng": "THUONG_CAP.md"}
@@ -377,8 +380,8 @@ def artifacts():
         require(path.stem == d["display_code"], "Tên file sai mã chặng")
         decisions[path.stem] = d
     require(set(decisions) <= set(policy.get("scope", policy["pilot"])), "Quyết định ngoài phạm vi.")
-    if policy["phase"] == "pilot":
-        require(set(decisions) == set(policy["pilot"]), "Thiếu pilot.")
+    if policy["phase"] in {"pilot", "published"}:
+        require(set(decisions) == set(policy.get("scope", policy["pilot"])), "Chưa đủ tập chặng của release.")
     course, reverse = [], defaultdict(list)
     boundaries = {}
     pack_by_location = {}
