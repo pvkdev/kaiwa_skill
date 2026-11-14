@@ -370,7 +370,9 @@ def artifacts():
         course.append(stage)
         for s in d["selections"] if d else []:
             key = (s["book_id"], s["pack_id"])
-            location = tuple((p["path"], p["unit_id"], p["start_line"], p["end_line"])
+            location = tuple((p["path"], p["unit_id"],
+                              re.sub(r'^<a id="[^"]+"></a>[ \t]*$', "", source_bytes(p).decode("utf8").replace("\r\n", "\n"),
+                                     flags=re.MULTILINE).strip())
                              for p in [s, *s.get("extra_parts", [])])
             require(boundaries.setdefault(key, location) == location, f"Pack trùng ID khác ranh giới: {key}")
             require(pack_by_location.setdefault(location, key) == key, f"Cùng phần nguồn bị gán hai ID: {key}")
