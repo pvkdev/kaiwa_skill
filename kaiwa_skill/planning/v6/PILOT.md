@@ -6,11 +6,17 @@ Ba chặng để duyệt trước khi phân bổ đại trà. Mỗi bài Speak J
 
 Tìm việc làm thêm và thực hiện cuộc hỏi/phỏng vấn đầu tiên bằng lời đơn giản.
 
+[Mở danh mục nguồn và CD của chặng](stages/S-059/manifest.json)
+
 **Nhóm từ theo topic.** Tìm việc làm thêm và hỏi còn tuyển hay không · Tên vị trí, việc thường làm và kinh nghiệm gần nhất · Ngày giờ phỏng vấn, lịch học, lịch rảnh và cách đổi hẹn · Số ngày làm mỗi tuần, ca làm và thời điểm bắt đầu · Hỏi lại khi chưa nghe rõ hoặc chưa hiểu điều kiện · Kết quả tuyển dụng, bước tiếp theo và lời cảm ơn
 
 #### Speak Japanese · mỗi bài có video rồi luyện nguyên ví dụ
 
-##### Hai cách mở lời khi gọi ứng tuyển làm thêm
+##### (3) アルバイトの応募～会社の人との会話
+
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/S-059/B18-u-keigo-situation-job-03-c61374b5c1.md)
 
 **B18 · 外国人のための日本語敬語の使い方 基本表現85** — (3) アルバイトの応募～会社の人との会話
 
@@ -26,7 +32,11 @@ Bổ sung hai cách tự giới thiệu, nói đã thấy thông báo tuyển v�
 
 **Audio.** 89 (PART2 (3), hai シーン, nhãn 音声 89 tại dòng 94). Mã 89 có trên clean; _meta/audio.json chưa có inventory track tương ứng và không có bằng chứng disc. Chưa kiểm tệp nghe thực tế.
 
-##### Từ chối một ca không tiện bằng lời mềm
+##### 45. ～はちょっと…。
+
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/S-059/B07-u-200-045-28ea4a4c67.md)
 
 **B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 45. ～はちょっと…。
 
@@ -44,7 +54,9 @@ Bổ sung hai cách tự giới thiệu, nói đã thấy thông báo tuyển v�
 
 #### Shadowing độc lập · một pack một node
 
-##### Từ cuộc gọi hỏi việc đến buổi phỏng vấn làm thêm
+##### 33 アルバイトの面接
+
+[Mở bài shadowing đầy đủ](stages/S-059/B08-u-part4-unit33-3e813dfd98.md)
 
 **B08 · どんどん話せる！日本語会話フレーズ大特訓 必須700** — 33 アルバイトの面接
 
@@ -60,9 +72,11 @@ Tám câu đi theo mạch gọi từ quảng cáo, hỏi còn tuyển, xác nh�
 
 **Audio.** CD-2 36 (Part 4 Unit 33, câu Nhật 1–8, PDF181–182; nhãn CD-2 / 36 tại dòng 921). Đã xác minh nhãn CD-2 / 36 và tám câu Nhật trong clean; chưa nghe/đối chiếu tệp âm thanh hoặc các lượt tiếng Anh/chậm/tốc độ tự nhiên.
 
-##### Gọi hỏi việc và hẹn phỏng vấn làm thêm
+##### 1-2　電話アポイントメント
 
-**INTERVIEW · シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版** — 1-2 電話アポイントメント
+[Mở bài shadowing đầy đủ](stages/S-059/INTERVIEW-u1-2-phone-appointment-c7269e8c49.md)
+
+**INTERVIEW · シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版** — 1-2　電話アポイントメント
 
 Toàn phần theo tiến trình đặt hẹn: hỏi còn tuyển, xin gặp người phụ trách, thỏa thuận lịch khi vướng giờ học, nhắc lại giờ/giấy tờ, hỏi nghĩa từ chưa hiểu, nghe tin đã đủ người, xác nhận tên và báo trễ vì tàu dừng. Mỗi tình huống ngắn, có lời nhà tuyển và ứng viên, giúp phản xạ qua nhiều nhánh cuộc gọi.
 
@@ -74,9 +88,9 @@ Toàn phần theo tiến trình đặt hẹn: hỏi còn tuyển, xin gặp ngư
 
 **Tra sách.** [u-m-p0006-d01, dòng 1–277](../../knowledge/%E3%82%B7%E3%83%A3%E3%83%89%E3%83%BC%E3%82%A4%E3%83%B3%E3%82%B0%20%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E8%A9%B1%E3%81%9D%E3%81%86%20%E5%B0%B1%E8%81%B7%E3%83%BB%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88%E3%83%BB%E9%80%B2%E5%AD%A6%E9%9D%A2%E6%8E%A5%E7%B7%A8%20%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E%E3%83%BB%E3%82%BF%E3%82%A4%E8%AA%9E%E3%83%BB%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E8%AA%9E%E8%A8%B3%E7%89%88/chapters/03-unit1-2.md#u-m-p0006-d01)
 
-**Audio.** DISC 1 03 (1-2, hội thoại 1–7, PDF6–7; nhãn dòng 5) · DISC 1 04 (1-2, hội thoại 8–11, PDF8–9; nhãn dòng 97) · DISC 1 05 (1-2, hội thoại 12–15, PDF10–11; nhãn dòng 187). Ba mã DISC 1 / 03–05 và ranh giới hội thoại đọc trên chương clean author_checked, chapter hash trùng direct-state. _meta/audio.json hiện chỉ ghi inventory pilot 01–02, nên chưa có xác nhận tập trung cho 03–05; chưa kiểm tệp nghe thực tế.
+**Audio.** DISC 1 03 (1-2, hội thoại 1–7, PDF6–7; nhãn dòng 5) · DISC 1 04 (1-2, hội thoại 8–11, PDF8–9; nhãn dòng 97) · DISC 1 05 (1-2, hội thoại 12–15, PDF10–11; nhãn dòng 187). DISC 1, track 03–05 đã đối chiếu giữa chương clean và _meta/audio.json. Chưa nghe file audio.
 
-**Trọng tâm cho bài giảng.** nói lịch rảnh và khả năng · hỏi ca và việc cụ thể · trả lời phỏng vấn ngắn · xin giải thích điều kiện chưa rõ
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Hỏi chỗ làm
 
@@ -123,7 +137,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 - Đọc đủ 16 tình huống S001–S016 của UID này trong V5: hỏi tuyển dụng/việc cụ thể, hẹn và đổi lịch, phỏng vấn ngắn, nhận hoặc chờ kết quả. Quét heading có từ アルバイト・面接・募集・予定・確認・電話 và các cách nói hỏi lại trong catalog27/source_index.jsonl; đối chiếu manifest, annotations và các chương nguồn được nêu dưới đây. Không khảo sát chặng khác.
 - Đã đọc trọn B08 Part 4 Unit 33, tám câu Nhật và phần gợi ý/trình bày kề nhau (B08-C05:918–946) để dùng làm pack shadowing độc lập; đọc trọn B18 PART2 (3), hai cảnh gọi ứng tuyển (B18-C07:93–111) để dùng làm cặp giảng–shadowing. Chapter SHA-256 khớp manifest. B08 có CD-2 / 36 in tại đơn vị; B18 có 音声 89 in tại đơn vị, còn _meta/audio.json của B18 chưa kê track riêng.
 - Đọc thêm trọn B07 mục 45 ～はちょっと… (B07-C04:314–327): năm ví dụ cùng chức năng từ chối mềm, trong đó ví dụ 5 là không nhận ca baito thứ Bảy. Chọn làm cặp Speak Japanese thứ hai sau B18; đây là bài bổ sung chức năng từ chối ca, không thay thế đối thoại ứng tuyển. Đọc trọn B07 mục 16 và 18 trong B07-C03:30–74 để xét cách hỏi; mục 16 trùng chức năng mở lời B18, mục 18 mang sắc thái bực bội/tra hỏi không thích hợp khi nhờ giải thích điều kiện tuyển.
-- Đọc toàn bộ lượt Nhật theo thứ tự và ranh giới in trong INTERVIEW Unit 1: 1-2 電話アポイントメント DISC 1 / 03–05, 1-3 アルバイト面接 DISC 1 / 06–08, 1-4 通し練習 DISC 1 / 09–10; các file chương 03–05 khớp hash author_checked ở _meta/direct-state.json và PDF6–26 có trạng thái author_checked. Chọn nguyên phần 1-2 với cả ba track 03–05 trong một node; nguyên phần 1-3 (06–08) và 1-4 (09–10) đã cân nhắc nhưng nặng hơn cho Sơ. Metadata _meta/audio.json và audio.md vẫn chỉ ghi pilot DISC 1 / 01–02; mã 03–10 dựa vào nhãn in trên chương clean, không nhận đã kiểm file âm thanh thực tế.
+- Đọc toàn bộ lượt Nhật theo thứ tự và ranh giới in trong INTERVIEW Unit 1: 1-2 電話アポイントメント DISC 1 / 03–05, 1-3 アルバイト面接 DISC 1 / 06–08, 1-4 通し練習 DISC 1 / 09–10; các file chương 03–05 khớp hash author_checked ở _meta/direct-state.json và PDF6–26 có trạng thái author_checked. Chọn nguyên phần 1-2 với cả ba track 03–05 trong một node; nguyên phần 1-3 (06–08) và 1-4 (09–10) đã cân nhắc nhưng nặng hơn cho Sơ. Nhãn của ba track đã chọn khớp danh mục audio cập nhật. Chưa nghe file audio.
 - Quét các nhóm Speak Japanese được phép B05/B06/B07/B11/B12/B18/B19/B20/B24 qua source_index và annotations. Đọc trọn B07 mục 146 (B07-C10:198–209) và B05 chương 1 Unit 10 (B05-C03:269–295) làm ứng viên hỏi lại; cả hai trọn đơn vị có phần lệch vai hoặc bối cảnh. B06/B12 thiên biểu đạt trung–thượng, B11 mục hỏi/xác nhận phần lớn thân mật; B19/B20/B24 không thấy đơn vị trọn bài về ứng tuyển baito qua mục lục/chỉ mục. Đây là sàng lọc chỉ mục, không phải xác nhận đã đọc trọn mọi mục trong các sách đó.
 - Quét nguồn shadowing được phép B01/B08/B13/B14 và INTERVIEW. B01 nhóm điện thoại là câu đời sống rộng; B14 Unit 3 Section 5–6 có một câu về baito nhưng các câu còn lại áo len, tóc, rác và tiệc (đã đọc các đoạn quanh câu baito, chưa đọc trọn mọi section B14); B13 Unit 7–8 là phỏng vấn/người ngoài công ty ở mức trung–thượng. INTERVIEW Unit 1 gần chủ đề và có ranh giới DISC rõ nhất. B08 Unit 33 được chọn làm shadowing độc lập; không coi B26 hay sách bổ trợ V5 là nguồn node audio độc lập.
 
@@ -141,13 +155,19 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 Nhờ, nhận lời hoặc từ chối một việc có trách nhiệm rõ, điều chỉnh khi phạm vi đổi.
 
+[Mở danh mục nguồn và CD của chặng](stages/T-012/manifest.json)
+
 **Nhóm từ theo topic.** Cách mở lời và hỏi người kia có tiện · Việc cần giúp, kết quả mong muốn, phần việc mỗi người · Thời hạn, lịch bận và thời gian có thể giúp · Nhận lời, nhận có điều kiện và xin thời gian cân nhắc · Từ chối, gợi phương án khác và giữ quan hệ · Tiến độ, thay đổi phạm vi, bàn giao và cảm ơn cụ thể
 
 #### Speak Japanese · mỗi bài có video rồi luyện nguyên ví dụ
 
-##### Mở lời để hỏi hoặc nhờ mà không áp đặt
+##### 61. ちょっと聞きたいんだけど — ～が／～けど（婉曲）
 
-**B11 · わかる！話せる！日本語会話 基本文型88** — ちょっと聞きたいんだけど
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/T-012/B11-u-88-part2-61-1b22d340b2.md)
+
+**B11 · わかる！話せる！日本語会話 基本文型88** — 61. ちょっと聞きたいんだけど — ～が／～けど（婉曲）
 
 Cho người học hỏi người kia có tiện nghe, mở phần việc cần nhờ, và hỏi lại khi thiếu thông tin; phần B dạy để người nghe có cơ hội phản hồi trước khi cam kết.
 
@@ -161,9 +181,13 @@ Cho người học hỏi người kia có tiện nghe, mở phần việc cần 
 
 **Audio.** CD 61 (trang in 138–139; chương 10 dòng 461–491; _meta/audio.json: unit u-88-part2-61). Nhãn CD 61 và phạm vi bài thấy trong clean cùng _meta/audio; số đĩa và file nghe thực tế chưa xác minh.
 
-##### Phiền cậu, nhưng…
+##### 91. 悪いんだけど
 
-**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 悪いんだけど
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/T-012/B07-u-200-091-9004308592.md)
+
+**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 91. 悪いんだけど
 
 Một bài vừa có lời nhờ bạn/đồng nghiệp và câu từ chối đổi ca; giúp phân biệt nhờ và nói không bằng cùng phần mở đầu, nhất là khi yêu cầu đến gấp.
 
@@ -177,9 +201,13 @@ Một bài vừa có lời nhờ bạn/đồng nghiệp và câu từ chối đ�
 
 **Audio.** CD-1 91 (PDF106; chương 06 dòng 95–108; _meta/audio.json: CD-1 91). Nhãn CD-1 91 in ở heading và được kiểm kê _meta/audio; chưa kiểm file nghe.
 
-##### Nhờ chuẩn bị một việc trước thời hạn
+##### 10. コピーしといてくれない？ — ～とく
 
-**B11 · わかる！話せる！日本語会話 基本文型88** — コピーしといてくれない？
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/T-012/B11-u-88-part2-10-a80eccc2cf.md)
+
+**B11 · わかる！話せる！日本語会話 基本文型88** — 10. コピーしといてくれない？ — ～とく
 
 Nói rõ việc cần làm trước cuộc họp/lịch hẹn, xác nhận ai làm, và báo thay đổi giờ cho mọi người; ví dụ giữ nguyên trạng thái giúp người học nghe ra giới hạn của lời nhờ.
 
@@ -193,9 +221,13 @@ Nói rõ việc cần làm trước cuộc họp/lịch hẹn, xác nhận ai l�
 
 **Audio.** CD 10 (trang in 46–47; chương 06 dòng 45–76; _meta/audio.json: u-88-part2-10). Mã CD 10, trang và mô tả CD thu mẫu + luyện tập có trong _meta/audio; chưa rõ số đĩa, chưa nghe file.
 
-##### Để tôi cân nhắc rồi trả lời
+##### 105. ちょっと考えます。
 
-**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — ちょっと考えます
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/T-012/B07-u-200-105-c7c6698037.md)
+
+**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 105. ちょっと考えます。
 
 Khi chưa rõ kết quả cần làm hoặc phạm vi vừa đổi, người nhận lời có thể xin thời gian cân nhắc thay vì lỡ hứa; ví dụ 2 và 4 là lời nhờ thật.
 
@@ -209,9 +241,13 @@ Khi chưa rõ kết quả cần làm hoặc phạm vi vừa đổi, người nh�
 
 **Audio.** CD-2 05 (PDF120; chương 07 dòng 164–177; _meta/audio.json: CD-2 05). CD-2 05 từ heading và _meta/audio; file nghe thực tế chưa kiểm.
 
-##### Cứ giao phần này cho tôi
+##### 115. 任せてください。
 
-**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 任せてください
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/T-012/B07-u-200-115-8600bf133a.md)
+
+**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 115. 任せてください。
 
 Người học nhận phần việc đã rõ, hoặc chủ động đề nghị làm phần mình có khả năng; ví dụ tìm địa điểm tiệc và đáp nhờ cuối bài dùng được để nói rõ trách nhiệm.
 
@@ -225,9 +261,13 @@ Người học nhận phần việc đã rõ, hoặc chủ động đề nghị 
 
 **Audio.** CD-2 15 (PDF130; chương 07 dòng 283–293; _meta/audio.json: CD-2 15). CD-2 15 từ heading và _meta/audio; chưa kiểm file nghe.
 
-##### Được nhờ đột ngột và cần đặt giới hạn
+##### 67. 急に言われても困る
 
-**B06 · すぐに使える 日本語会話 超ミニフレーズ 発展210** — 急に言われても困る
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/T-012/B06-u-210-067-85db522a91.md)
+
+**B06 · すぐに使える 日本語会話 超ミニフレーズ 発展210** — 67. 急に言われても困る
 
 Trả lời khi một việc được nhờ quá gấp hoặc phần việc tăng bất chợt, nêu khó khăn của mình trước khi bàn lại; ví dụ 2 đúng quan hệ bạn và lời nhờ có điều kiện.
 
@@ -241,9 +281,13 @@ Trả lời khi một việc được nhờ quá gấp hoặc phần việc tăn
 
 **Audio.** CD-1 67 (PDF82; chương 05 dòng 70–82; _meta/audio.json: CD-1 67). CD-1 67 được nêu tại heading/kiểm kê; file nghe chưa kiểm.
 
-##### Không còn sức hoặc thời gian để nhận thêm
+##### Unit 44 — 手が回らない／身動きがとれない
 
-**B24 · 気持ちが伝わる 日本語会話 基本表現180** — 手が回らない／身動きがとれない
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/T-012/B24-u-j-unit44-20fd6da686.md)
+
+**B24 · 気持ちが伝わる 日本語会話 基本表現180** — Unit 44 — 手が回らない／身動きがとれない
 
 Giải thích giới hạn vì đang ôm nhiều việc, rồi tách phần cũ và phần mới hoặc từ chối phần thêm; ví dụ thứ hai của 88 trực tiếp nói không thể nhận việc mới.
 
@@ -259,9 +303,11 @@ Giải thích giới hạn vì đang ôm nhiều việc, rồi tách phần cũ 
 
 #### Shadowing độc lập · một pack một node
 
-##### Nhờ người khác giúp một việc cụ thể
+##### 04 依頼する
 
-**B08 · どんどん話せる！日本語会話フレーズ大特訓 必須700** — 依頼する
+[Mở bài shadowing đầy đủ](stages/T-012/B08-u-part2-unit04-0c4e3f67ae.md)
+
+**B08 · どんどん話せる！日本語会話フレーズ大特訓 必須700** — 04 依頼する
 
 Tám lời nhờ trải từ mở lời, hỏi giúp, nói việc cụ thể, hỏi cách làm đến nhờ liên lạc; hỗ trợ chọn mức thân/lịch sự và nói thời điểm rõ.
 
@@ -275,9 +321,11 @@ Tám lời nhờ trải từ mở lời, hỏi giúp, nói việc cụ thể, h�
 
 **Audio.** CD-1 8 (Part 2 Unit 04, trang in 30–31, PDF29–30, chương 02 dòng 100–127; _meta/audio.json: CD-1 / 8). Nhãn CD-1 / 8 và tám câu in đã đối chiếu ở chapter, _meta/audio ghi PDF30; chưa đối chiếu file nghe hoặc lượt lặp slow/natural.
 
-##### Chủ động đề nghị giúp và để người kia chọn
+##### 09 申し出る
 
-**B08 · どんどん話せる！日本語会話フレーズ大特訓 必須700** — 申し出る
+[Mở bài shadowing đầy đủ](stages/T-012/B08-u-part2-unit09-012b522cb0.md)
+
+**B08 · どんどん話せる！日本語会話フレーズ大特訓 必須700** — 09 申し出る
 
 Luyện chiều ngược lại của lời nhờ: tự ngỏ ý giúp, hỏi người kia có muốn mình làm không, nhận phần vừa sức; よかったら giúp không ép người nhận.
 
@@ -291,7 +339,7 @@ Luyện chiều ngược lại của lời nhờ: tự ngỏ ý giúp, hỏi ng�
 
 **Audio.** CD-1 13 (Part 2 Unit 09, trang in 40–41, PDF39–40, chương 02 dòng 249–276; _meta/audio.json: CD-1 / 13). Nhãn CD-1 / 13 và tám câu in đã đối chiếu ở chapter, _meta/audio ghi PDF40; chưa kiểm file nghe hay lặp slow/natural.
 
-**Trọng tâm cho bài giảng.** Nêu mục đích, phạm vi, hạn và quyền từ chối · Đàm phán điều kiện, theo lại sau nhận lời, giữ quan hệ khi không làm được
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đề nghị một việc vừa sức
 
@@ -372,13 +420,19 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 Xử lý lời nhờ khó và ranh giới trách nhiệm trong quan hệ không phải gia đình, kể cả khi đã lỡ nhận lời.
 
+[Mở danh mục nguồn và CD của chặng](stages/H-050/manifest.json)
+
 **Nhóm từ theo topic.** Lời nhờ và phạm vi việc cần làm · Thời hạn, công sức, rủi ro và trách nhiệm · Tạm hoãn quyết định và hỏi lại điều kiện · Từ chối, giảm phạm vi và đề xuất người khác · Báo phát sinh, bàn giao và giữ quan hệ sau lời từ chối
 
 #### Speak Japanese · mỗi bài có video rồi luyện nguyên ví dụ
 
-##### Xin suy nghĩ thêm trước khi trả lời
+##### 105. ちょっと考えます。
 
-**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — ちょっと考えます。
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/H-050/B07-u-200-105-c7c6698037.md)
+
+**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 105. ちょっと考えます。
 
 Khi lời nhờ còn mơ hồ hoặc người kia muốn câu trả lời ngay, người học giữ quyền cân nhắc mà không biến câu 'để nghĩ' thành lời nhận. Hai ví dụ nhờ giúp/phát biểu nằm trong trọn bài.
 
@@ -392,9 +446,13 @@ Khi lời nhờ còn mơ hồ hoặc người kia muốn câu trả lời ngay, 
 
 **Audio.** CD-2 05 (Bài 105, PDF120; nhãn CD-2 05 trong clean). Đã xác minh nhãn CD-2 05 và trọn chữ Nhật của bài trong clean; chưa nghe file CD.
 
-##### Mở lời khi nhờ việc khó hoặc từ chối
+##### 91. 悪いんだけど
 
-**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 悪いんだけど
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/H-050/B07-u-200-091-9004308592.md)
+
+**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 91. 悪いんだけど
 
 Người học nghe được dấu hiệu mở lời nhờ trước khi biết yêu cầu cụ thể; ví dụ đổi ca làm cho thấy cùng cụm có thể mở lời từ chối. Dùng để dạy đáp lời mà không để sắc thái xin lỗi làm mờ giới hạn.
 
@@ -408,9 +466,13 @@ Người học nghe được dấu hiệu mở lời nhờ trước khi biết y
 
 **Audio.** CD-1 91 (Bài 91, PDF106; nhãn CD-1 91 trong clean). Đã đọc đủ 5 ví dụ và nhãn CD trong clean; chưa nghe file CD.
 
-##### Nói rõ việc vượt khả năng
+##### 77. 無理です。
 
-**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 無理です。
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/H-050/B07-u-200-077-a0fe673ccc.md)
+
+**B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 77. 無理です。
 
 Ví dụ từ chối phiên dịch vì vượt khả năng và làm mẫu trong một tuần vì thiếu thời gian sát các nhánh nêu giới hạn thật, không bịa lý do. Câu này làm rõ từ chối khi 'hơi khó' chưa đủ rõ.
 
@@ -424,9 +486,13 @@ Ví dụ từ chối phiên dịch vì vượt khả năng và làm mẫu trong 
 
 **Audio.** CD-1 77 (Bài 77, PDF92; nhãn CD-1 77 trong clean). Nhãn CD và toàn bài đã kiểm trong clean, chưa nghe file CD.
 
-##### Báo khéo một việc khó nhận
+##### 184. 難しいです
 
-**B06 · すぐに使える 日本語会話 超ミニフレーズ 発展210** — 難しいです
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/H-050/B06-u-210-184-ed032b1774.md)
+
+**B06 · すぐに使える 日本語会話 超ミニフレーズ 発展210** — 184. 難しいです
 
 Đối chiếu 'khó thực hiện' với 'tôi từ chối' để người học nghe đúng tín hiệu và nêu điều kiện cụ thể khi cần. Bài có ví dụ khả năng sửa và từ chối lời mời; hai ví dụ còn lại giúp nhận ra sắc thái khác của cùng cụm.
 
@@ -440,9 +506,13 @@ Ví dụ từ chối phiên dịch vì vượt khả năng và làm mẫu trong 
 
 **Audio.** CD-2 79 (Bài 184, PDF199; nhãn CD-2 79 trong clean). Nhãn in và cả 4 ví dụ đã kiểm trong clean; chưa nghe file CD.
 
-##### Từ chối lịch sự mà nói rõ nội dung
+##### 6　(5) 断り — 申し訳ないのですが
 
-**B18 · 外国人のための日本語敬語の使い方 基本表現85** — 申し訳ないのですが
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/H-050/B18-u-keigo-function-06-moshiwakenai-no-desu-ga-8a833f2973.md)
+
+**B18 · 外国人のための日本語敬語の使い方 基本表現85** — 6　(5) 断り — 申し訳ないのですが
 
 Mẫu vừa mở lời từ chối vừa nói rõ phần không thể làm, phù hợp giữ quan hệ mà không để người kia tưởng đã nhận. Bài còn có cách xin lỗi vì lời nhờ đột ngột và xin chờ tới ngày mai, hỗ trợ nghe hai chiều.
 
@@ -456,9 +526,13 @@ Mẫu vừa mở lời từ chối vừa nói rõ phần không thể làm, phù
 
 **Audio.** 音声 82 (Mục 6 (5) 断り, nhãn 音声 82 trong clean; không thấy số đĩa). Xác minh nhãn 音声 82 và toàn mục từ clean; không đồng nhất số 音声 với số track trên file, chưa nghe audio.
 
-##### Tôn trọng quyền từ chối của người được nhờ
+##### 187. 無理しなくていい
 
-**B06 · すぐに使える 日本語会話 超ミニフレーズ 発展210** — 無理しなくていい
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/H-050/B06-u-210-187-86b24c30e2.md)
+
+**B06 · すぐに使える 日本語会話 超ミニフレーズ 発展210** — 187. 無理しなくていい
 
 Học cả vai người nhờ: thấy người kia khó đáp ứng thì giảm đòi hỏi, dời hạn hoặc chấp nhận câu không. Ví dụ báo cáo dời sang tuần sau và lời mời chờ câu trả lời cho thấy thương lượng/giữ quan hệ mà không thúc ép.
 
@@ -474,9 +548,11 @@ Học cả vai người nhờ: thấy người kia khó đáp ứng thì giảm 
 
 #### Shadowing độc lập · một pack một node
 
-##### Nghe và nhận diện tám cách nhờ vả
+##### 04 依頼する
 
-**B08 · どんどん話せる！日本語会話フレーズ大特訓 必須700** — 依頼する
+[Mở bài shadowing đầy đủ](stages/H-050/B08-u-part2-unit04-0c4e3f67ae.md)
+
+**B08 · どんどん話せる！日本語会話フレーズ大特訓 必須700** — 04 依頼する
 
 Tám cách nhờ bao gồm mở lời chưa nói hết, nhờ giúp, hỏi cách làm, chờ, liên lạc hộ và mượn vở. Người học luyện nghe đủ dạng yêu cầu để hỏi rõ phần việc và không tự suy lời nhờ thành cam kết làm hết.
 
@@ -490,7 +566,7 @@ Tám cách nhờ bao gồm mở lời chưa nói hết, nhờ giúp, hỏi cách
 
 **Audio.** CD-1 8 (Mục 04 依頼する, trang in 30–31; nhãn CD-1 / 8 trong clean). Ranh giới và nhãn CD-1/8 xác minh trên chapter clean; chưa đối chiếu file CD hoặc âm thanh thực. Lúc sản xuất chỉ lấy câu Nhật nguồn theo thứ tự, không đọc prompt tiếng Việt/Anh.
 
-**Trọng tâm cho bài giảng.** Nói rõ phạm vi, mức rủi ro/thời gian và quyền từ chối · Thương lượng giảm phạm vi, chuyển người phù hợp, theo sau để giữ tin cậy
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nghe lời nhờ mơ hồ
 

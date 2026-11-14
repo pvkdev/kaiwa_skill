@@ -10,7 +10,7 @@ Chào đúng thời điểm, mở và khép cuộc gặp ngắn với người l
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Chọn lời chào theo thời gian, lần gặp và quan hệ · Đáp lại cảm ơn, xin lỗi và lời chào chia tay
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Gặp mặt lần đầu
 
@@ -52,7 +52,7 @@ Giới thiệu bản thân vừa đủ và tìm hiểu người khác mà không
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Tên, nơi đến, công việc/sở thích với mức chi tiết tùy quan hệ · Hỏi đáp hai chiều và giới thiệu người thứ ba có xin phép
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tự giới thiệu trong nhóm mới
 
@@ -94,7 +94,7 @@ Giữ cuộc nói tiếp tục khi nghe thiếu, nghe nhầm hoặc chưa hiểu
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Cách xin nhắc lại/chậm lại và chỉ đúng phần chưa rõ · Xác nhận bằng cách nói lại thông tin rồi tiếp tục việc
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Âm thanh và tốc độ
 
@@ -136,7 +136,7 @@ Nói và xác nhận đồ vật, lượng, ngày giờ và tiền trong một g
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Từ chỉ vật, lượng, đơn vị và vị trí · Đọc và nghe số, giá, ngày giờ; kiểm lại khi hai bên không khớp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhận diện đồ và số lượng
 
@@ -180,7 +180,7 @@ Tìm phòng thuê cơ bản, nêu điều kiện thiết yếu và chốt bướ
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Cách nêu ngân sách, vị trí, nhu cầu sống · Hỏi rõ điều kiện và thời gian xem mà không giả định đã ký thuê
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nói nhu cầu nhà
 
@@ -222,7 +222,7 @@ Giới thiệu gia đình và phối hợp sinh hoạt hằng ngày với ngư�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** cách gọi người thân và quan hệ · hỏi giờ và vị trí trong nhà · xin phép và cảm ơn · hỏi lại quy tắc chưa hiểu
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Làm quen gia đình chủ nhà
 
@@ -270,7 +270,7 @@ Nói nhu cầu sinh hoạt cơ bản trong nhà và giữ quan hệ dễ chịu 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi quy tắc dùng nơi chung và xử lý bất tiện nhỏ · Chào, nhờ và đáp lời nhắc của hàng xóm
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Bắt đầu sống cùng khu
 
@@ -312,7 +312,7 @@ Vào ký túc xá hoặc nhà công ty, hỏi quy tắc và giải quyết việ
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Phân biệt người quản lý nhà, công ty và người ở cùng · Nêu nhu cầu sử dụng không gian chung và xác nhận giới hạn
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhận chỗ ở
 
@@ -354,7 +354,7 @@ Tìm và hỏi cách dùng những tiện ích công cộng trong khu phố.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi vị trí, giờ, điều kiện vào thư viện/cơ sở cộng đồng · Nói nhu cầu tham gia một hoạt động địa phương ở mức người mới
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Khám phá khu phố
 
@@ -409,7 +409,7 @@ Hỏi và chỉ đường đến một địa điểm, xác nhận mốc quan tr
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Mốc rẽ, khoảng cách, hướng và phương tiện · Hỏi lại một đoạn đường, sửa khi chỉ sai hoặc đi lạc
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Hỏi người qua đường
 
@@ -451,7 +451,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi chiều đi, tuyến chuyển, điểm lên/xuống · Xác nhận cách lên xe buýt và xử lý đi nhầm ở mức Sơ
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Chọn tàu và chuyển tuyến
 
@@ -493,7 +493,7 @@ Sử dụng IC và vé tháng cho đi lại hằng ngày, giải thích sự c�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Phân biệt loại thẻ/vé và phạm vi tuyến · Kể lại chặng vừa đi, hỏi phí/chênh lệch và bước khôi phục
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Chọn vé đi thường xuyên
 
@@ -555,7 +555,7 @@ Chọn, gửi và xử lý sự cố xe đạp qua lời nói với cửa hàng/
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nêu mục đích đi, cỡ xe, tình trạng hỏng · Hỏi vị trí để xe, phí, nhận lại hoặc sửa
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Mua và nhận xe
 
@@ -617,7 +617,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói điểm đến, thời gian, chỗ lên và hành lý · Hỏi lại điều kiện vé/đặt chỗ ở mức sơ cấp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tàu đi xa
 
@@ -672,7 +672,7 @@ Chào, đáp lời và mở chuyện ngắn với đồng nghiệp/khách trong 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Phân biệt lời chào đầu ngày, lúc rời chỗ và khi gặp lại · Chọn mức lịch sự theo đồng nghiệp, cấp trên, khách · Dùng câu hỏi xã giao ngắn rồi nhường nhịp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Bắt đầu và kết thúc ngày làm
 
@@ -713,7 +713,7 @@ Tự giới thiệu trong ngày đầu, hỏi người phụ trách và xác nh�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Giới thiệu tên, bộ phận, vai và thời điểm bắt đầu · Nhờ chỉ đúng người, đúng chỗ · Xác nhận lịch đào tạo ngắn mà không đoán
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đến nơi và gặp đầu mối
 
@@ -753,7 +753,7 @@ Hỏi và xác nhận vị trí, cách dùng những vật dụng chung trong v�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Dùng câu hỏi vị trí và tên vật · Xin phép trước khi dùng đồ chung · Báo vấn đề đơn giản cho người phụ trách
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm phòng và khu dùng chung
 
@@ -793,7 +793,7 @@ Nghe và hỏi rõ quy tắc sinh hoạt công sở trước khi làm.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi ai phụ trách một quy định · Tách điều đã nghe và điều chưa chắc · Xác nhận cách báo khi không thể làm đúng lịch
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Giờ, khu vực và cách báo
 
@@ -833,7 +833,7 @@ Báo thời điểm đến nơi, thay đổi di chuyển và hẹn gặp ngắn 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói giờ dự kiến và vị trí hiện tại · Báo chậm sớm cho người đang chờ · Hỏi lại điểm gặp và phương án đi
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đi làm đúng giờ và báo chậm
 
@@ -873,7 +873,7 @@ Nói lại lịch và thứ tự việc trong ngày, báo khi lịch thay đổi
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Dùng giờ và thứ tự trước/sau · Xác nhận việc nào làm trước · Nói một thay đổi và tác động gần nhất
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhận lịch đầu ca
 
@@ -912,7 +912,7 @@ Nhận chỉ thị ngắn và hỏi lại điều chưa rõ trước khi làm.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nhắc lại việc, số lượng, hạn và người nhận · Nói rõ phần chưa nghe/không hiểu · Báo ngay khi phát hiện điều kiện khác chỉ thị
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nghe nhiệm vụ mới
 
@@ -959,7 +959,7 @@ Xác nhận công việc được giao ở xưởng, người hướng dẫn và
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói lại công đoạn, số lượng và người nhận · Hỏi người có thẩm quyền khi chưa chắc · Báo bất thường và chờ chỉ thị tại chỗ
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhận ca tại xưởng
 
@@ -1009,7 +1009,7 @@ Mua nhanh ở konbini, hiểu câu hỏi tại quầy và nhờ xử lý một d
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi vị trí hàng và số lượng · Nghe câu hỏi túi, hâm nóng, thanh toán và nhận đồ
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Chọn món nhanh
 
@@ -1061,7 +1061,7 @@ Tự chọn nguyên liệu và hoàn tất việc mua bữa ăn ở siêu thị 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Mô tả nguyên liệu, khẩu phần, thành phần và bảo quản · Xử lý hết hàng, giá/nhãn khác nhau và vấn đề sau thanh toán
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Lập bữa ăn tại quầy
 
@@ -1113,7 +1113,7 @@ Chọn, thử và mua quần áo phù hợp với kích cỡ, dịp dùng và ng
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói màu, cỡ, kiểu và cảm giác mặc · Hỏi khu thử, tồn hàng, giá và quyết định mua/từ chối
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm quần áo
 
@@ -1165,7 +1165,7 @@ Tìm đúng cửa hàng và dịch vụ trong trung tâm thương mại, phối 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi tòa, tầng, khu, lối nối và quầy · Nói vị trí hiện tại, mô tả người/vật cần tìm, hẹn lại điểm gặp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Định vị trong khu lớn
 
@@ -1217,7 +1217,7 @@ Mua đồ dùng cho căn nhà theo kích thước và mục đích, nói rõ khi
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Kích thước, chất liệu và vị trí lắp dùng · Dịch vụ cắt/giao/đặt hàng và kiểm món khi nhận
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm món cho căn nhà
 
@@ -1269,7 +1269,7 @@ Mua hoặc bán đồ cũ trực tiếp, kiểm tình trạng và chốt trao đ
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Mô tả tình trạng, phụ kiện và điểm cần thử · Hỏi định giá, giới hạn nhận hàng, điều kiện sau mua
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm mua đồ cũ
 
@@ -1321,7 +1321,7 @@ Chọn và chỉnh kính ở cửa hàng bằng cách nêu nhu cầu nhìn, đ�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Mô tả dùng kính khi nào, gọng vừa hay cấn · Hỏi đo/đặt/nhận và điều chỉnh sau mua
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nói nhu cầu kính
 
@@ -1373,7 +1373,7 @@ Giao và nhận đồ giặt, quần áo hoặc giày cần sửa, nói rõ kế
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Chỉ đúng chỗ bẩn/hỏng, chất liệu và hạn cần · Nghe điều kiện không chắc chắn, kiểm kết quả và hỏi làm lại
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Giao đồ giặt khô
 
@@ -1425,7 +1425,7 @@ Gọi món và dùng bữa ở nhà hàng, hỏi rõ món và xử lý thay đ�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Đặt bàn/nhận chỗ, hỏi món và khẩu phần · Xác nhận món, yêu cầu đơn giản, thanh toán và cảm ơn
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Vào quán và ngồi
 
@@ -1477,7 +1477,7 @@ Mua đồ uống hoặc bữa nhanh tại quán cà phê/fast-food và chốt đ
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Kích cỡ, lựa chọn đơn giản và tùy chỉnh trong phạm vi quán · Nghe số thứ tự, kiểm món và thanh toán
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đặt món ở quầy
 
@@ -1529,7 +1529,7 @@ Tham gia bữa trưa đồng nghiệp, hỏi món và kết thúc cuộc trò ch
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nhận hoặc từ chối lời rủ ăn trưa · Nói khẩu vị và giới hạn ăn uống · Bắt chuyện nhẹ nhưng giữ quyền riêng tư
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Rủ và hẹn ăn trưa
 
@@ -1569,7 +1569,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Độ dài, phần muốn giữ, hình dung kiểu và mức chăm sóc · Xác nhận điều chỉnh giữa chừng, phản hồi kết quả mà vẫn lịch sự
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đặt hẹn và chuẩn bị
 
@@ -1632,7 +1632,7 @@ Nhờ người khác giúp một việc nhỏ, nói rõ phạm vi và đáp lạ
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nêu việc, thời điểm và lý do ngắn · Nhận lời, điều kiện, từ chối và cảm ơn/đổi người hỗ trợ
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhờ bạn/người quen
 
@@ -1684,7 +1684,7 @@ Xin phép, hỏi có thể làm gì và ngỏ ý hỗ trợ trong hoàn cảnh t
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói việc cụ thể trước khi làm và nghe giới hạn · Phân biệt được phép, chưa được, chờ hỏi người khác và đề nghị giúp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Xin dùng không gian/đồ
 
@@ -1736,7 +1736,7 @@ Nhờ giúp, xin dùng nguồn lực chung và nhận đồ/giấy tờ bằng l
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nêu nhu cầu ngắn và đúng người · Nghe điều kiện được giúp · Cảm ơn và báo đã trả hoặc nhận
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhờ đồng nghiệp giúp một việc
 
@@ -1776,7 +1776,7 @@ Xin lỗi hoặc nêu phiền toái nhỏ một cách cụ thể để hai bên 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nêu điều đã xảy ra, ảnh hưởng và mong muốn cụ thể · Nghe lời giải thích, nhận sửa hoặc tự sửa khi mình là bên gây phiền
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Mình gây bất tiện
 
@@ -1828,7 +1828,7 @@ Xin lỗi về sai sót nhỏ, báo điều đã xảy ra và hỏi việc cần
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói ngắn sự thật trước khi giải thích · Xin lỗi đúng người · Đề xuất bước sửa trong phạm vi được phép
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đi muộn hoặc lỡ một việc
 
@@ -1867,7 +1867,7 @@ Báo không thể đi làm vì ốm, nói thời điểm cập nhật và việc
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Báo tình trạng đủ cho bố trí ca mà không tiết lộ chi tiết y tế · Nêu thời điểm dự kiến liên hệ lại · Hỏi đúng quy trình đơn vị
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Gọi báo trước ca
 
@@ -1906,7 +1906,7 @@ Báo việc đã làm, việc chưa xong và thay đổi cần người khác bi
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Tách факт đã xác nhận khỏi điều chưa chắc · Nói việc gì, lúc nào, ai cần biết · Hỏi người nhận đã hiểu bước tiếp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Báo bắt đầu và tiến độ
 
@@ -1947,7 +1947,7 @@ Gọi điện ngắn cho bạn, thầy cô hoặc nơi đặt chỗ và xác nh�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Mở đầu và kiểm đúng người qua điện thoại · Nói lý do gọi ngắn, nhắc lại giờ/địa điểm và kết thúc
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Gọi bạn/người quen
 
@@ -1999,7 +1999,7 @@ Nghe điện thoại công sở và chuyển đến đúng người bằng lời
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nêu tên công ty và mình khi nhận máy · Hỏi lại tên/người cần gặp · Thông báo ngắn trước khi chuyển máy
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhận và chuyển máy
 
@@ -2038,7 +2038,7 @@ Gọi đi công việc đơn giản, hỏi đúng người và để lại lời
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Mở đầu nêu tên/đơn vị và mục đích · Nói thời điểm, số và tên rõ · Kết thúc bằng xác nhận việc gọi lại
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Gọi đồng nghiệp ở bộ phận khác
 
@@ -2077,7 +2077,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nêu dịch vụ, địa chỉ, thời gian và số người · Hỏi giá/điều kiện đơn giản, sửa thông tin nghe nhầm
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm đúng dịch vụ
 
@@ -2139,7 +2139,7 @@ Thực hiện giao dịch cơ bản tại quầy ngân hàng/bưu điện bằng
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói mục đích đến quầy, số tiền/địa chỉ cơ bản · Hỏi lại điều kiện và đúng đầu mối khi không làm được ngay
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Ngân hàng giao dịch cơ bản
 
@@ -2191,7 +2191,7 @@ Tìm đúng quầy, nêu một việc hành chính và nghe lại bước tiếp
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** nêu mục đích đến quầy · hỏi nơi phụ trách và thời gian · xin nói chậm hoặc giải thích lại · nhắc lại vật cần mang
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Vào cơ quan lần đầu
 
@@ -2239,7 +2239,7 @@ Tìm người hỗ trợ khi chưa biết cơ quan nào giải quyết một v�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** tóm tắt vấn đề bằng mốc chính · xin hỗ trợ ngôn ngữ · nói mục tiêu trước mắt · nhắc lại đầu mối được giới thiệu
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Mở cuộc tư vấn
 
@@ -2289,7 +2289,7 @@ Nói triệu chứng thường gặp, tìm nơi khám và hỏi lại chỉ dẫ
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** tên vùng đau và thời điểm bắt đầu · đặt lịch khám · trả lời câu hỏi tiếp nhận ngắn · xin nhắc lại lời dặn
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Chọn nơi và đặt lịch
 
@@ -2337,7 +2337,7 @@ Hỏi mua thuốc thông dụng và xác nhận cách hiểu lời hướng dẫ
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** mô tả triệu chứng ngắn · hỏi có nhân viên chuyên môn không · hỏi cách dùng bằng lời · biết nói mình chưa hiểu
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm đúng quầy thuốc
 
@@ -2385,7 +2385,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** nói vị trí răng và cảm giác · hỏi trước về lựa chọn/thời lượng/chi phí · xin dừng và báo khó chịu · hẹn lại và theo dõi
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đặt hẹn và đến quầy
 
@@ -2442,7 +2442,7 @@ Xin trợ giúp ngay bằng câu ngắn và chọn đúng đầu mối khi có n
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** gọi người gần đó giúp · nói vị trí dễ nhận · nói điều thấy và điều chưa biết · xin hỗ trợ ngôn ngữ
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhờ người gần đó
 
@@ -2499,7 +2499,7 @@ Báo một sự việc cần cảnh sát hỗ trợ ngay, cung cấp điều bi�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** phân biệt báo khẩn cấp và tư vấn · vị trí và mốc dễ nhận · phân biệt quan sát với suy đoán · hỏi lại hướng dẫn
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Xin người khác gọi
 
@@ -2556,7 +2556,7 @@ Gọi hỗ trợ y tế khẩn cấp, trả lời câu hỏi điều phối và 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** nói cần hỗ trợ và vị trí · mô tả dấu hiệu quan sát · hỏi lại câu hỏi · chuyển thông tin giữa người gọi và đội đến
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Bắt đầu cuộc gọi
 
@@ -2613,7 +2613,7 @@ Báo cháy rõ vị trí và quan sát, cập nhật khi di chuyển, làm theo 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** mô tả khói/lửa quan sát · địa chỉ tầng lối vào · hỏi lại hướng dẫn · thông báo vị trí mới
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Phát hiện và báo
 
@@ -2670,7 +2670,7 @@ Trao đổi ở koban về đồ mất/nhặt được, mô tả và theo dõi k
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** mốc cuối còn đồ · đặc điểm nhận diện · hỏi cách liên hệ sau · báo riêng đơn vị phát hành nếu có thẻ
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Báo đồ bị mất
 
@@ -2727,7 +2727,7 @@ Giao tiếp tại nơi sơ tán để được tiếp nhận, hỏi quy tắc v�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** nói số người đi cùng và nhu cầu · hỏi nơi sinh hoạt · xin vật thiết yếu · thông báo di chuyển và liên hệ người thân
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đến nơi tiếp nhận
 
@@ -2784,7 +2784,7 @@ Báo nguy cơ và nghe hướng dẫn sơ tán ở nơi làm bằng lời ngắn
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nêu vị trí/nguy cơ và số người liên quan · Hỏi lại khi không nghe rõ hướng dẫn · Báo đã đến điểm tập trung và ai còn thiếu
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Phát hiện và báo nguy cơ
 
@@ -2833,11 +2833,17 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 Tìm việc làm thêm và thực hiện cuộc hỏi/phỏng vấn đầu tiên bằng lời đơn giản.
 
+[Mở danh mục nguồn và CD của chặng](stages/S-059/manifest.json)
+
 **Nhóm từ theo topic.** Tìm việc làm thêm và hỏi còn tuyển hay không · Tên vị trí, việc thường làm và kinh nghiệm gần nhất · Ngày giờ phỏng vấn, lịch học, lịch rảnh và cách đổi hẹn · Số ngày làm mỗi tuần, ca làm và thời điểm bắt đầu · Hỏi lại khi chưa nghe rõ hoặc chưa hiểu điều kiện · Kết quả tuyển dụng, bước tiếp theo và lời cảm ơn
 
 #### Speak Japanese · mỗi bài có video rồi luyện nguyên ví dụ
 
-##### Hai cách mở lời khi gọi ứng tuyển làm thêm
+##### (3) アルバイトの応募～会社の人との会話
+
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/S-059/B18-u-keigo-situation-job-03-c61374b5c1.md)
 
 **B18 · 外国人のための日本語敬語の使い方 基本表現85** — (3) アルバイトの応募～会社の人との会話
 
@@ -2853,7 +2859,11 @@ Bổ sung hai cách tự giới thiệu, nói đã thấy thông báo tuyển v�
 
 **Audio.** 89 (PART2 (3), hai シーン, nhãn 音声 89 tại dòng 94). Mã 89 có trên clean; _meta/audio.json chưa có inventory track tương ứng và không có bằng chứng disc. Chưa kiểm tệp nghe thực tế.
 
-##### Từ chối một ca không tiện bằng lời mềm
+##### 45. ～はちょっと…。
+
+Video bài giảng · Chờ gắn video
+
+[Mở bài shadowing đầy đủ](stages/S-059/B07-u-200-045-28ea4a4c67.md)
 
 **B07 · すぐに使える 日本語会話 超ミニフレーズ200** — 45. ～はちょっと…。
 
@@ -2871,7 +2881,9 @@ Bổ sung hai cách tự giới thiệu, nói đã thấy thông báo tuyển v�
 
 #### Shadowing độc lập · một pack một node
 
-##### Từ cuộc gọi hỏi việc đến buổi phỏng vấn làm thêm
+##### 33 アルバイトの面接
+
+[Mở bài shadowing đầy đủ](stages/S-059/B08-u-part4-unit33-3e813dfd98.md)
 
 **B08 · どんどん話せる！日本語会話フレーズ大特訓 必須700** — 33 アルバイトの面接
 
@@ -2887,9 +2899,11 @@ Tám câu đi theo mạch gọi từ quảng cáo, hỏi còn tuyển, xác nh�
 
 **Audio.** CD-2 36 (Part 4 Unit 33, câu Nhật 1–8, PDF181–182; nhãn CD-2 / 36 tại dòng 921). Đã xác minh nhãn CD-2 / 36 và tám câu Nhật trong clean; chưa nghe/đối chiếu tệp âm thanh hoặc các lượt tiếng Anh/chậm/tốc độ tự nhiên.
 
-##### Gọi hỏi việc và hẹn phỏng vấn làm thêm
+##### 1-2　電話アポイントメント
 
-**INTERVIEW · シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版** — 1-2 電話アポイントメント
+[Mở bài shadowing đầy đủ](stages/S-059/INTERVIEW-u1-2-phone-appointment-c7269e8c49.md)
+
+**INTERVIEW · シャドーイング 日本語を話そう 就職・アルバイト・進学面接編 インドネシア語・タイ語・ベトナム語訳版** — 1-2　電話アポイントメント
 
 Toàn phần theo tiến trình đặt hẹn: hỏi còn tuyển, xin gặp người phụ trách, thỏa thuận lịch khi vướng giờ học, nhắc lại giờ/giấy tờ, hỏi nghĩa từ chưa hiểu, nghe tin đã đủ người, xác nhận tên và báo trễ vì tàu dừng. Mỗi tình huống ngắn, có lời nhà tuyển và ứng viên, giúp phản xạ qua nhiều nhánh cuộc gọi.
 
@@ -2901,9 +2915,9 @@ Toàn phần theo tiến trình đặt hẹn: hỏi còn tuyển, xin gặp ngư
 
 **Tra sách.** [u-m-p0006-d01, dòng 1–277](../../knowledge/%E3%82%B7%E3%83%A3%E3%83%89%E3%83%BC%E3%82%A4%E3%83%B3%E3%82%B0%20%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E8%A9%B1%E3%81%9D%E3%81%86%20%E5%B0%B1%E8%81%B7%E3%83%BB%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88%E3%83%BB%E9%80%B2%E5%AD%A6%E9%9D%A2%E6%8E%A5%E7%B7%A8%20%E3%82%A4%E3%83%B3%E3%83%89%E3%83%8D%E3%82%B7%E3%82%A2%E8%AA%9E%E3%83%BB%E3%82%BF%E3%82%A4%E8%AA%9E%E3%83%BB%E3%83%99%E3%83%88%E3%83%8A%E3%83%A0%E8%AA%9E%E8%A8%B3%E7%89%88/chapters/03-unit1-2.md#u-m-p0006-d01)
 
-**Audio.** DISC 1 03 (1-2, hội thoại 1–7, PDF6–7; nhãn dòng 5) · DISC 1 04 (1-2, hội thoại 8–11, PDF8–9; nhãn dòng 97) · DISC 1 05 (1-2, hội thoại 12–15, PDF10–11; nhãn dòng 187). Ba mã DISC 1 / 03–05 và ranh giới hội thoại đọc trên chương clean author_checked, chapter hash trùng direct-state. _meta/audio.json hiện chỉ ghi inventory pilot 01–02, nên chưa có xác nhận tập trung cho 03–05; chưa kiểm tệp nghe thực tế.
+**Audio.** DISC 1 03 (1-2, hội thoại 1–7, PDF6–7; nhãn dòng 5) · DISC 1 04 (1-2, hội thoại 8–11, PDF8–9; nhãn dòng 97) · DISC 1 05 (1-2, hội thoại 12–15, PDF10–11; nhãn dòng 187). DISC 1, track 03–05 đã đối chiếu giữa chương clean và _meta/audio.json. Chưa nghe file audio.
 
-**Trọng tâm cho bài giảng.** nói lịch rảnh và khả năng · hỏi ca và việc cụ thể · trả lời phỏng vấn ngắn · xin giải thích điều kiện chưa rõ
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Hỏi chỗ làm
 
@@ -2950,7 +2964,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 - Đọc đủ 16 tình huống S001–S016 của UID này trong V5: hỏi tuyển dụng/việc cụ thể, hẹn và đổi lịch, phỏng vấn ngắn, nhận hoặc chờ kết quả. Quét heading có từ アルバイト・面接・募集・予定・確認・電話 và các cách nói hỏi lại trong catalog27/source_index.jsonl; đối chiếu manifest, annotations và các chương nguồn được nêu dưới đây. Không khảo sát chặng khác.
 - Đã đọc trọn B08 Part 4 Unit 33, tám câu Nhật và phần gợi ý/trình bày kề nhau (B08-C05:918–946) để dùng làm pack shadowing độc lập; đọc trọn B18 PART2 (3), hai cảnh gọi ứng tuyển (B18-C07:93–111) để dùng làm cặp giảng–shadowing. Chapter SHA-256 khớp manifest. B08 có CD-2 / 36 in tại đơn vị; B18 có 音声 89 in tại đơn vị, còn _meta/audio.json của B18 chưa kê track riêng.
 - Đọc thêm trọn B07 mục 45 ～はちょっと… (B07-C04:314–327): năm ví dụ cùng chức năng từ chối mềm, trong đó ví dụ 5 là không nhận ca baito thứ Bảy. Chọn làm cặp Speak Japanese thứ hai sau B18; đây là bài bổ sung chức năng từ chối ca, không thay thế đối thoại ứng tuyển. Đọc trọn B07 mục 16 và 18 trong B07-C03:30–74 để xét cách hỏi; mục 16 trùng chức năng mở lời B18, mục 18 mang sắc thái bực bội/tra hỏi không thích hợp khi nhờ giải thích điều kiện tuyển.
-- Đọc toàn bộ lượt Nhật theo thứ tự và ranh giới in trong INTERVIEW Unit 1: 1-2 電話アポイントメント DISC 1 / 03–05, 1-3 アルバイト面接 DISC 1 / 06–08, 1-4 通し練習 DISC 1 / 09–10; các file chương 03–05 khớp hash author_checked ở _meta/direct-state.json và PDF6–26 có trạng thái author_checked. Chọn nguyên phần 1-2 với cả ba track 03–05 trong một node; nguyên phần 1-3 (06–08) và 1-4 (09–10) đã cân nhắc nhưng nặng hơn cho Sơ. Metadata _meta/audio.json và audio.md vẫn chỉ ghi pilot DISC 1 / 01–02; mã 03–10 dựa vào nhãn in trên chương clean, không nhận đã kiểm file âm thanh thực tế.
+- Đọc toàn bộ lượt Nhật theo thứ tự và ranh giới in trong INTERVIEW Unit 1: 1-2 電話アポイントメント DISC 1 / 03–05, 1-3 アルバイト面接 DISC 1 / 06–08, 1-4 通し練習 DISC 1 / 09–10; các file chương 03–05 khớp hash author_checked ở _meta/direct-state.json và PDF6–26 có trạng thái author_checked. Chọn nguyên phần 1-2 với cả ba track 03–05 trong một node; nguyên phần 1-3 (06–08) và 1-4 (09–10) đã cân nhắc nhưng nặng hơn cho Sơ. Nhãn của ba track đã chọn khớp danh mục audio cập nhật. Chưa nghe file audio.
 - Quét các nhóm Speak Japanese được phép B05/B06/B07/B11/B12/B18/B19/B20/B24 qua source_index và annotations. Đọc trọn B07 mục 146 (B07-C10:198–209) và B05 chương 1 Unit 10 (B05-C03:269–295) làm ứng viên hỏi lại; cả hai trọn đơn vị có phần lệch vai hoặc bối cảnh. B06/B12 thiên biểu đạt trung–thượng, B11 mục hỏi/xác nhận phần lớn thân mật; B19/B20/B24 không thấy đơn vị trọn bài về ứng tuyển baito qua mục lục/chỉ mục. Đây là sàng lọc chỉ mục, không phải xác nhận đã đọc trọn mọi mục trong các sách đó.
 - Quét nguồn shadowing được phép B01/B08/B13/B14 và INTERVIEW. B01 nhóm điện thoại là câu đời sống rộng; B14 Unit 3 Section 5–6 có một câu về baito nhưng các câu còn lại áo len, tóc, rác và tiệc (đã đọc các đoạn quanh câu baito, chưa đọc trọn mọi section B14); B13 Unit 7–8 là phỏng vấn/người ngoài công ty ở mức trung–thượng. INTERVIEW Unit 1 gần chủ đề và có ranh giới DISC rõ nhất. B08 Unit 33 được chọn làm shadowing độc lập; không coi B26 hay sách bổ trợ V5 là nguồn node audio độc lập.
 
@@ -2970,7 +2984,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói ca, khung giờ và lý do ở mức cần thiết · Xác nhận ai được phân công thay · Bàn giao việc đang chờ cho ca tiếp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Xin đổi ca trước lịch
 
@@ -3019,7 +3033,7 @@ Phục vụ yêu cầu cơ bản ở quầy theo vai nhân viên, xác nhận v�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Chào khách và hỏi nhu cầu · Xác nhận số lượng/giá/điểm nhận · Xin hỗ trợ khi quá thẩm quyền
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Khách tìm một món/dịch vụ
 
@@ -3058,7 +3072,7 @@ Hẹn thăm công ty khác, chào tại quầy và xác nhận người sẽ g�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Tự giới thiệu tên và công ty · Nói thời gian hẹn và mục đích ngắn · Hỏi lại cách đến phòng/người tiếp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Hẹn và xác nhận cuộc thăm
 
@@ -3097,7 +3111,7 @@ Tham gia họp ngắn, hỏi lại phần chưa rõ và nêu một ý kiến c�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Xin lượt nói lịch sự · Tóm tắt điều đã hiểu · Nêu ý kiến với một lý do ngắn
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Bắt đầu và theo dõi họp
 
@@ -3138,7 +3152,7 @@ Rủ người khác làm một việc cuối tuần, hẹn được thời gian/
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Lời rủ, nhận lời và từ chối ngắn · Chốt ngày giờ, điểm gặp, ai liên hệ lại
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Đề nghị hoạt động
 
@@ -3190,7 +3204,7 @@ Giao lưu trong sự kiện công ty từ vai người tham gia: chào, hỏi v�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nhận lời mời và hỏi thông tin thiết yếu · Chọn lời chúc/cảm ơn theo dịp · Nói chuyện ngắn với người mới gặp
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nhận lời mời sự kiện
 
@@ -3238,7 +3252,7 @@ Nói về sở thích và tìm hoạt động chung qua một cuộc trao đổi
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Tên hoạt động, tần suất, lý do thích · Hỏi tiếp sở thích người kia và chia sẻ trải nghiệm không áp đặt
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nói mình thích gì
 
@@ -3290,7 +3304,7 @@ Gia nhập và duy trì sinh hoạt trong circle/câu lạc bộ như một thà
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi thử, lịch, phí và vai thành viên · Nhờ hướng dẫn, nhận việc vừa sức, báo vắng và đề nghị lần sau
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm và thử nhóm
 
@@ -3352,7 +3366,7 @@ Tham gia một nhóm tình nguyện với vai thành viên, nhận việc vừa 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** hỏi cách tham gia · nói thời gian/khả năng · hỏi lại việc được giao · báo giới hạn và cảm ơn
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tham gia lần đầu
 
@@ -3400,7 +3414,7 @@ Hẹn gặp riêng lần đầu với người mình muốn tìm hiểu, tôn tr
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Mở chuyện tự nhiên và hỏi sở thích vừa phải · Đề nghị kế hoạch, chấp nhận từ chối, chốt gặp lại nếu cả hai muốn
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Mời gặp
 
@@ -3452,7 +3466,7 @@ Hỏi thăm, lắng nghe và động viên bạn bè bằng lời ngắn phù h�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** cách mở lời quan tâm · phản hồi khi người khác vui/buồn · đề nghị giúp nhỏ · tôn trọng khi người kia chưa muốn nói
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Thấy bạn không khỏe
 
@@ -3500,7 +3514,7 @@ Kể một trải nghiệm gần đây có thứ tự rõ và trao đổi tiếp
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Mốc thời gian, nơi và người liên quan · Nêu điều bất ngờ, cảm nhận và hỏi trải nghiệm người kia
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Kể việc thường ngày
 
@@ -3552,7 +3566,7 @@ Nói cảm xúc và mong muốn trước mắt, giải thích ngắn lý do và 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Từ cảm xúc và mức độ, lý do đơn giản · Nói điều muốn làm, kế hoạch gần và thay đổi ý định
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Chia sẻ cảm xúc
 
@@ -3604,7 +3618,7 @@ Bày tỏ ý kiến nhẹ, xin và phản hồi lời khuyên, hỏi lại khi �
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nêu sở thích/ý kiến có lý do ngắn · Phân biệt điều biết trực tiếp và điều nghe kể; xin xác nhận
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Nói ý kiến về lựa chọn
 
@@ -3656,7 +3670,7 @@ Dùng thời tiết, mùa và lễ hội để mở chuyện rồi hỏi thông 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Nói thời tiết/mùa ảnh hưởng kế hoạch · Hỏi lễ hội ở đâu, khi nào và cách tham gia
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Trò chuyện thời tiết
 
@@ -3710,7 +3724,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi phòng, ngày, số người, giờ đến · Giao tiếp quầy khách sạn và hỏi giúp khi nhu cầu thay đổi
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Lên chuyến đi
 
@@ -3772,7 +3786,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** hỏi đúng quầy/cổng · trình bày vé và hành lý bằng lời · hỏi lại thông báo · đổi phương án khi chậm chuyến
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm nơi làm thủ tục
 
@@ -3820,7 +3834,7 @@ Sau thực hành: challenge tổng hợp → một free Kaiwa cuối chặng.
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** thống nhất điểm gặp · diễn đạt nhu cầu người đi cùng · giải thích lại hướng dẫn · đổi lịch nhóm
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Thống nhất trước khi đến
 
@@ -3868,7 +3882,7 @@ Hỏi và sử dụng sento/sauna/cơ sở tắm công cộng một cách phù h
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Hỏi giá, khu sử dụng, vật cần chuẩn bị · Nghe lời hướng dẫn, hỏi khi chưa rõ, đáp khi được nhắc
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Trước khi vào
 
@@ -3920,7 +3934,7 @@ Hỏi về trường/lớp tiếng Nhật, theo kịp sinh hoạt lớp và xin 
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** nói mục tiêu học đơn giản · hỏi lịch và nơi học · xin nhắc lại trong lớp · trao đổi vắng mặt
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Tìm lớp phù hợp
 
@@ -3968,7 +3982,7 @@ Nối những việc nhỏ trong một ngày ở Nhật bằng lời nói rõ r�
 
 *Chưa phân bổ nguồn ở V6.0.*
 
-**Trọng tâm cho bài giảng.** Chuyển từ một cuộc nói sang cuộc tiếp theo và tóm tắt bối cảnh · Dùng lại hỏi đường, mua đồ, hẹn, gọi điện và xin giúp trong cùng ngày
+**Video bài giảng tổng hợp của chặng** · Chờ gắn video.
 
 #### E01 — Buổi sáng rời nhà
 
