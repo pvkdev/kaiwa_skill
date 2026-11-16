@@ -39,3 +39,7 @@
 ## Còn mở
 
 - Biên tập độc lập chưa thực hiện.
+
+## Rà độc lập — /root/dc_all_trung (2026-11-16)
+
+Đọc 20 cảnh Nhật/Việt và mọi nhánh; đọc lại B08 U13–U14, đối chiếu các trang Japan Post Bank nêu trên. S004 nối việc thử ATM sau lỗi ứng dụng S001; S006 nói giấy địa chỉ ở nhà để nối S007; S010 tránh gửi lặp; S011 sửa ghi chú nhầm ngày nhưng giữ ngày đã báo đúng S009. Các bản Việt 本人確認 được chỉnh thành “xác minh danh tính”. Không còn lỗi mở.

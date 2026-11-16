@@ -38,3 +38,7 @@
 ## Còn mở
 
 - Biên tập độc lập chưa thực hiện.
+
+## Rà độc lập — /root/dc_all_trung (2026-11-16)
+
+Đọc đủ 16 cảnh Nhật/Việt và mọi nhánh E01–E04; đọc B08 U13–U14, B04 U23, đối chiếu các trang Japan Post Bank nêu trên như tiền lệ nghiên cứu, không áp sang dịch vụ さくら送金 hư cấu. S009 u02 sửa 本人確認 trong bản Việt thành “xác minh danh tính”. Các nhánh đều giữ riêng trạng thái đơn, yêu cầu sửa và tiền đến. Không còn lỗi mở.

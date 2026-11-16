@@ -38,3 +38,7 @@
 ## Còn mở
 
 - Biên tập độc lập chưa thực hiện.
+
+## Rà độc lập — /root/dc_all_trung (2026-11-16)
+
+Đọc đủ 20 cảnh Nhật/Việt, năm sự kiện và mọi nhánh tiếp nối; đối chiếu Shinjuku, MHLW, Kyokai Kenpo nêu trên. S009 u04 làm rõ bệnh nhân hỏi bên bảo hiểm, phòng khám giải thích tiếp nhận và phí. S012 u03 sửa lời kể để khớp S009: phòng khám giải thích khoản trả hôm nay, bên bảo hiểm cùng tham gia xử lý sau. Không còn lỗi mở.

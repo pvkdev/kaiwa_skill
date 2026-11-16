@@ -34,3 +34,7 @@
 ## Còn mở
 
 - Biên tập độc lập chưa thực hiện.
+
+## Rà độc lập — /root/dc_all_trung (2026-11-16)
+
+Đọc đủ 16 cảnh Nhật/Việt và mọi nhánh; đọc B04 U23, B08 U13–U14, đối chiếu NCC và CAA nêu trên. S006 làm rõ cuộc gọi xin hủy 6/10 chưa chốt: kỳ sau có thể dừng, khoản 8/10 vẫn phải đối chiếu riêng. S012 sửa lượt hỏi theo số tư vấn đã có thành hỏi kết quả xử lý lần trước. Không còn lỗi mở.

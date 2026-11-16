@@ -36,3 +36,7 @@
 ## Còn mở
 
 - Biên tập độc lập chưa thực hiện.
+
+## Rà độc lập — /root/dc_all_trung (2026-11-16)
+
+Đọc 16 cảnh Nhật/Việt và mọi nhánh; đọc B08 U13–U14, B04 U23, đối chiếu Visa/JCB nêu trên như nguồn tham khảo cho thẻ みどり hư cấu. S003/S009/S010 sửa 本人確認 trong bản Việt; S010 u05 sửa JA tránh mặc định thẻ còn dùng trước khi biết trạng thái dừng. Không còn lỗi mở.
