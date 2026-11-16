@@ -1,0 +1,1469 @@
+{
+  "stage_uid": "89d49b4a-dc66-51e9-9d6d-bae9f201b9f8",
+  "admin_sources": {
+    "city_tax": {
+      "kind": "web",
+      "title": "Shinjuku: 納付のご案内",
+      "url": "https://www.city.shinjuku.lg.jp/hoken/file04_04_00001.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 189–201 và 231–247: thuế cư dân dựa thu nhập năm trước, cách thu có thể khác sau đổi việc; không suy ra số tiền cá nhân."
+    },
+    "city_counter": {
+      "kind": "web",
+      "title": "Shinjuku: 税に関するお問い合わせ先",
+      "url": "https://www.city.shinjuku.lg.jp/hoken/file04_08_00001.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 195–218 tách quầy nội dung thông báo thuế cư dân, thu nộp và tư vấn; cảnh 青葉 chỉ mô phỏng việc hỏi đầu mối."
+    },
+    "nta": {
+      "kind": "web",
+      "title": "NTA: 税務署での相談をご希望の方",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/sodan/denwa-sodan/case1.htm",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 141–160: vấn đề quốc thuế cần xem tài liệu có thể hẹn tư vấn tại sở thuế; không áp dụng cho thuế địa phương."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "284d7d45-7be2-55ea-a924-8820be93f00f",
+      "event_id": "E01",
+      "context_vi": "Bạn vừa nhận thông báo thuế cư dân từ thành phố 青葉 hư cấu và muốn biết thông báo nói về kỳ nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "284d7d45-7be2-55ea-a924-8820be93f00f-u01",
+          "speaker_id": "a",
+          "ja": "この通知が届きました。どの年の所得に関するものか、どこを見れば分かりますか。",
+          "vi": "Tôi vừa nhận thông báo này. Xem ở đâu để biết nó liên quan thu nhập năm nào?"
+        },
+        {
+          "id": "284d7d45-7be2-55ea-a924-8820be93f00f-u02",
+          "speaker_id": "b",
+          "ja": "まず発行元と、表に書かれた年度を一緒に確認しましょう。",
+          "vi": "Trước hết ta cùng xem nơi phát hành và năm ghi trên mặt giấy."
+        },
+        {
+          "id": "284d7d45-7be2-55ea-a924-8820be93f00f-u03",
+          "speaker_id": "a",
+          "ja": "青葉市からで、今年度と書いてあります。働いた期間と結びつけて理解したいです。",
+          "vi": "Do thành phố Aoba gửi, ghi năm tài chính này. Tôi muốn hiểu nó liên hệ với thời gian tôi làm việc ra sao."
+        },
+        {
+          "id": "284d7d45-7be2-55ea-a924-8820be93f00f-u04",
+          "speaker_id": "b",
+          "ja": "この通知の対象と計算の中身は担当係が確認します。こちらで窓口を案内します。",
+          "vi": "Bộ phận phụ trách sẽ kiểm đối tượng và chi tiết tính trên giấy. Tôi sẽ chỉ quầy."
+        },
+        {
+          "id": "284d7d45-7be2-55ea-a924-8820be93f00f-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。まだ金額の理由は分からないので、担当に聞きます。",
+          "vi": "Nhờ anh/chị. Tôi chưa hiểu lý do số tiền nên sẽ hỏi người phụ trách."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_tax",
+          "city_counter"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "284d7d45-7be2-55ea-a924-8820be93f00f-u01": {
+            "kind": "original_extension"
+          },
+          "284d7d45-7be2-55ea-a924-8820be93f00f-u02": {
+            "kind": "original_extension"
+          },
+          "284d7d45-7be2-55ea-a924-8820be93f00f-u03": {
+            "kind": "original_extension"
+          },
+          "284d7d45-7be2-55ea-a924-8820be93f00f-u04": {
+            "kind": "original_extension"
+          },
+          "284d7d45-7be2-55ea-a924-8820be93f00f-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "39ad2db0-c124-56ce-8f76-6da28b39c95d",
+      "event_id": "E01",
+      "context_vi": "Nhân viên tư vấn hỏi ai phát hành thông báo thuế bạn đang cầm để chỉ đúng quầy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "39ad2db0-c124-56ce-8f76-6da28b39c95d-u01",
+          "speaker_id": "b",
+          "ja": "封筒の差出人はどこですか。市役所ですか、税務署ですか。",
+          "vi": "Người gửi trên phong bì là đâu? Tòa thị chính hay sở thuế?"
+        },
+        {
+          "id": "39ad2db0-c124-56ce-8f76-6da28b39c95d-u02",
+          "speaker_id": "a",
+          "ja": "『青葉市税務課』と書いてあります。中には住民税という言葉があります。",
+          "vi": "Ghi “Bộ phận thuế thành phố Aoba”. Bên trong có từ thuế cư dân."
+        },
+        {
+          "id": "39ad2db0-c124-56ce-8f76-6da28b39c95d-u03",
+          "speaker_id": "b",
+          "ja": "では、この市の通知として税務課の担当へおつなぎします。",
+          "vi": "Vậy tôi sẽ chuyển đến bộ phận phụ trách của thành phố cho thông báo này."
+        },
+        {
+          "id": "39ad2db0-c124-56ce-8f76-6da28b39c95d-u04",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。通知そのものを見せて質問します。",
+          "vi": "Cảm ơn. Tôi sẽ cho xem chính thông báo rồi hỏi."
+        },
+        {
+          "id": "39ad2db0-c124-56ce-8f76-6da28b39c95d-u05",
+          "speaker_id": "b",
+          "ja": "はい。個別の内容は担当が確認します。",
+          "vi": "Đúng. Người phụ trách sẽ xem nội dung riêng."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_counter"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "39ad2db0-c124-56ce-8f76-6da28b39c95d-u01": {
+            "kind": "original_extension"
+          },
+          "39ad2db0-c124-56ce-8f76-6da28b39c95d-u02": {
+            "kind": "original_extension"
+          },
+          "39ad2db0-c124-56ce-8f76-6da28b39c95d-u03": {
+            "kind": "original_extension"
+          },
+          "39ad2db0-c124-56ce-8f76-6da28b39c95d-u04": {
+            "kind": "original_extension"
+          },
+          "39ad2db0-c124-56ce-8f76-6da28b39c95d-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5baaad2f-8386-529c-b099-9f11b18fd722",
+      "event_id": "E01",
+      "context_vi": "Sau khi nhận thông báo thuế cư dân của 青葉市 hư cấu, bạn tới sở thuế quốc gia để hỏi nhầm quầy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5baaad2f-8386-529c-b099-9f11b18fd722-u01",
+          "speaker_id": "a",
+          "ja": "青葉市から来た住民税の通知について聞きたいです。こちらで見られますか。",
+          "vi": "Tôi muốn hỏi thông báo thuế cư dân thành phố Aoba gửi. Ở đây xem được không?"
+        },
+        {
+          "id": "5baaad2f-8386-529c-b099-9f11b18fd722-u02",
+          "speaker_id": "b",
+          "ja": "こちらは国税の相談窓口です。市の住民税通知の内容は、発行した市の税務担当に確認してください。",
+          "vi": "Đây là quầy quốc thuế. Nội dung thông báo thuế cư dân xin hỏi bộ phận thuế của thành phố phát hành."
+        },
+        {
+          "id": "5baaad2f-8386-529c-b099-9f11b18fd722-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。所得税の相談と住民税の通知は、窓口が別なんですね。",
+          "vi": "Tôi hiểu. Hỏi thuế thu nhập và thông báo thuế cư dân ở hai quầy khác nhau nhỉ."
+        },
+        {
+          "id": "5baaad2f-8386-529c-b099-9f11b18fd722-u04",
+          "speaker_id": "b",
+          "ja": "はい。通知にある問い合わせ先を確認してください。",
+          "vi": "Đúng. Xin xem đầu mối ghi trên thông báo."
+        },
+        {
+          "id": "5baaad2f-8386-529c-b099-9f11b18fd722-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。市の番号へ連絡します。",
+          "vi": "Cảm ơn. Tôi sẽ gọi số của thành phố."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "nta",
+          "city_counter"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5baaad2f-8386-529c-b099-9f11b18fd722-u01": {
+            "kind": "original_extension"
+          },
+          "5baaad2f-8386-529c-b099-9f11b18fd722-u02": {
+            "kind": "original_extension"
+          },
+          "5baaad2f-8386-529c-b099-9f11b18fd722-u03": {
+            "kind": "original_extension"
+          },
+          "5baaad2f-8386-529c-b099-9f11b18fd722-u04": {
+            "kind": "original_extension"
+          },
+          "5baaad2f-8386-529c-b099-9f11b18fd722-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6",
+      "event_id": "E01",
+      "context_vi": "Nhân viên 青葉市 hư cấu dùng từ “普通徴収” trên thông báo thuế, bạn chưa hiểu ý nghĩa trong trường hợp mình.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u01",
+          "speaker_id": "b",
+          "ja": "この通知には普通徴収と書いてあります。",
+          "vi": "Thông báo này ghi “thu trực tiếp”."
+        },
+        {
+          "id": "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u02",
+          "speaker_id": "a",
+          "ja": "その言葉が分かりません。給与から引かれる方法と、どう違うのか簡単に説明していただけますか。",
+          "vi": "Tôi chưa hiểu từ đó. Xin giải thích đơn giản khác gì với cách trừ vào lương?"
+        },
+        {
+          "id": "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u03",
+          "speaker_id": "b",
+          "ja": "この通知では、市から本人へ納付書を送る方法を指しています。給与からの差し引きとは別です。",
+          "vi": "Trong thông báo này, đó là cách thành phố gửi phiếu nộp trực tiếp cho người nhận. Nó khác với trừ qua lương."
+        },
+        {
+          "id": "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u04",
+          "speaker_id": "a",
+          "ja": "今の私がなぜその方法になったかは、通知と会社の情報を見て確認するんですね。",
+          "vi": "Lý do trường hợp tôi dùng cách đó thì cần xem thông báo và thông tin công ty, đúng không?"
+        },
+        {
+          "id": "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u05",
+          "speaker_id": "b",
+          "ja": "はい。担当に確認してから答えます。",
+          "vi": "Đúng. Tôi sẽ hỏi người phụ trách rồi trả lời."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_tax"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u01": {
+            "kind": "original_extension"
+          },
+          "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u02": {
+            "kind": "original_extension"
+          },
+          "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u03": {
+            "kind": "original_extension"
+          },
+          "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u04": {
+            "kind": "original_extension"
+          },
+          "40c169c9-c3a5-5924-b8fc-7f7c5708b3c6-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "94757c3d-8175-595c-b515-068fdcc29d17",
+      "event_id": "E02",
+      "context_vi": "Bạn hỏi quầy thuế 青葉市 hư cấu về thông báo sau khi chuyển việc giữa năm và nhận lương từ hai công ty.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "94757c3d-8175-595c-b515-068fdcc29d17-u01",
+          "speaker_id": "a",
+          "ja": "今年の六月に会社を変えました。前の会社と今の会社の二か所から給与を受けています。",
+          "vi": "Tháng 6 năm nay tôi đổi việc. Tôi nhận lương từ công ty cũ và công ty hiện tại."
+        },
+        {
+          "id": "94757c3d-8175-595c-b515-068fdcc29d17-u02",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。通知の対象年度と、どの収入の年を見ているか確認しましょう。",
+          "vi": "Cảm ơn. Ta kiểm năm trên thông báo và năm thu nhập được dùng."
+        },
+        {
+          "id": "94757c3d-8175-595c-b515-068fdcc29d17-u03",
+          "speaker_id": "a",
+          "ja": "今年の転職がこの通知に関係するのか、私には分かりません。",
+          "vi": "Tôi chưa biết việc đổi làm năm nay có liên quan thông báo này không."
+        },
+        {
+          "id": "94757c3d-8175-595c-b515-068fdcc29d17-u04",
+          "speaker_id": "b",
+          "ja": "通知と給与の資料を見て、担当が説明します。金額はここで推測しません。",
+          "vi": "Người phụ trách sẽ xem thông báo và giấy lương rồi giải thích. Tôi chưa đoán số tiền ở đây."
+        },
+        {
+          "id": "94757c3d-8175-595c-b515-068fdcc29d17-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。二社の書類を持ってきます。",
+          "vi": "Tôi hiểu. Tôi sẽ mang giấy của cả hai công ty."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_tax"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "94757c3d-8175-595c-b515-068fdcc29d17-u01": {
+            "kind": "original_extension"
+          },
+          "94757c3d-8175-595c-b515-068fdcc29d17-u02": {
+            "kind": "original_extension"
+          },
+          "94757c3d-8175-595c-b515-068fdcc29d17-u03": {
+            "kind": "original_extension"
+          },
+          "94757c3d-8175-595c-b515-068fdcc29d17-u04": {
+            "kind": "original_extension"
+          },
+          "94757c3d-8175-595c-b515-068fdcc29d17-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "49e8281d-587a-5688-981f-8bb047b6c383",
+      "event_id": "E02",
+      "context_vi": "Bạn có hai giấy về lương và thấy một khoản trên thông báo 青葉市 hư cấu khác tổng mình tự cộng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "49e8281d-587a-5688-981f-8bb047b6c383-u01",
+          "speaker_id": "a",
+          "ja": "この欄の額と、手元の給与の紙を足した額が違います。どの欄同士を比べるべきですか。",
+          "vi": "Số ở mục này khác tổng tôi cộng từ giấy lương. Tôi nên so những mục nào với nhau?"
+        },
+        {
+          "id": "49e8281d-587a-5688-981f-8bb047b6c383-u02",
+          "speaker_id": "b",
+          "ja": "まず対象の年と、書類が示す金額の種類を確認します。紙を見せてください。",
+          "vi": "Trước hết tôi kiểm năm và loại số tiền mà từng giấy thể hiện. Xin cho xem."
+        },
+        {
+          "id": "49e8281d-587a-5688-981f-8bb047b6c383-u03",
+          "speaker_id": "a",
+          "ja": "こちらが前の会社、こちらが今の会社です。自分の計算を正しいと決めつけたくありません。",
+          "vi": "Đây là công ty cũ, đây là công ty hiện nay. Tôi không muốn tự coi phép cộng của mình là đúng."
+        },
+        {
+          "id": "49e8281d-587a-5688-981f-8bb047b6c383-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。記載内容を照合し、必要なら発行元にも確認します。",
+          "vi": "Tôi hiểu. Tôi sẽ đối chiếu nội dung, nếu cần sẽ hỏi nơi cấp."
+        },
+        {
+          "id": "49e8281d-587a-5688-981f-8bb047b6c383-u05",
+          "speaker_id": "a",
+          "ja": "理由が分かるまで、この額について確認を続けます。",
+          "vi": "Tôi sẽ tiếp tục kiểm khoản này cho đến khi rõ lý do."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_tax"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "49e8281d-587a-5688-981f-8bb047b6c383-u01": {
+            "kind": "original_extension"
+          },
+          "49e8281d-587a-5688-981f-8bb047b6c383-u02": {
+            "kind": "original_extension"
+          },
+          "49e8281d-587a-5688-981f-8bb047b6c383-u03": {
+            "kind": "original_extension"
+          },
+          "49e8281d-587a-5688-981f-8bb047b6c383-u04": {
+            "kind": "original_extension"
+          },
+          "49e8281d-587a-5688-981f-8bb047b6c383-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b",
+      "event_id": "E02",
+      "context_vi": "Trong buổi hỏi thuế ở 青葉市 hư cấu, bạn chưa chắc một khoản thưởng trên giấy lương thuộc năm nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u01",
+          "speaker_id": "a",
+          "ja": "この賞与がいつの収入として記録されたか、今は分かりません。支払日を会社に確認します。",
+          "vi": "Tôi chưa biết khoản thưởng này được ghi là thu nhập năm nào. Tôi sẽ hỏi công ty ngày trả."
+        },
+        {
+          "id": "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。日付を推測せず、会社の資料を見てから教えてください。",
+          "vi": "Tôi hiểu. Xin đừng đoán ngày, hãy xem tài liệu công ty rồi báo."
+        },
+        {
+          "id": "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u03",
+          "speaker_id": "a",
+          "ja": "今日は未確認としてメモしてください。税額への影響も、日付が分かってから聞きます。",
+          "vi": "Hôm nay xin ghi là chưa xác nhận. Ảnh hưởng đến số thuế tôi sẽ hỏi sau khi biết ngày."
+        },
+        {
+          "id": "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u04",
+          "speaker_id": "b",
+          "ja": "はい。こちらでは現時点でその判断を保留します。",
+          "vi": "Đúng. Chúng tôi sẽ tạm để phần đánh giá đó."
+        },
+        {
+          "id": "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。確認できたら戻ります。",
+          "vi": "Tôi hiểu. Khi kiểm được tôi sẽ quay lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u01": {
+            "kind": "original_extension"
+          },
+          "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u02": {
+            "kind": "original_extension"
+          },
+          "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u03": {
+            "kind": "original_extension"
+          },
+          "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u04": {
+            "kind": "original_extension"
+          },
+          "6fcb748b-a8ee-56eb-8e80-3e3c24465d1b-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e05f573b-ff49-55e6-b531-01eecc09eb42",
+      "event_id": "E02",
+      "context_vi": "Câu hỏi của bạn về hai công ty và một khoản chưa khớp cần chuyên viên thuế 青葉市 hư cấu xem nhiều giấy hơn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e05f573b-ff49-55e6-b531-01eecc09eb42-u01",
+          "speaker_id": "a",
+          "ja": "この場では説明に時間がかかりそうです。資料を見てもらう相談の時間を予約できますか。",
+          "vi": "Việc này có vẻ cần nhiều thời gian. Tôi có thể hẹn buổi tư vấn xem giấy tờ không?"
+        },
+        {
+          "id": "e05f573b-ff49-55e6-b531-01eecc09eb42-u02",
+          "speaker_id": "b",
+          "ja": "担当の相談枠と、持参する書類を確認します。",
+          "vi": "Tôi sẽ kiểm lịch chuyên viên và giấy cần mang."
+        },
+        {
+          "id": "e05f573b-ff49-55e6-b531-01eecc09eb42-u03",
+          "speaker_id": "a",
+          "ja": "通知、二社の給与の紙、自分のメモを持って行きたいです。ほかに必要なら教えてください。",
+          "vi": "Tôi muốn mang thông báo, giấy lương hai công ty và ghi chú của tôi. Cần thêm gì xin báo."
+        },
+        {
+          "id": "e05f573b-ff49-55e6-b531-01eecc09eb42-u04",
+          "speaker_id": "b",
+          "ja": "担当に確認して一覧をお渡しします。今日ここで金額の結論は出しません。",
+          "vi": "Tôi sẽ hỏi chuyên viên rồi đưa danh sách. Hôm nay chưa kết luận số tiền."
+        },
+        {
+          "id": "e05f573b-ff49-55e6-b531-01eecc09eb42-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。予約の日時を待ちます。",
+          "vi": "Tôi hiểu. Tôi sẽ đợi giờ hẹn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_counter"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e05f573b-ff49-55e6-b531-01eecc09eb42-u01": {
+            "kind": "original_extension"
+          },
+          "e05f573b-ff49-55e6-b531-01eecc09eb42-u02": {
+            "kind": "original_extension"
+          },
+          "e05f573b-ff49-55e6-b531-01eecc09eb42-u03": {
+            "kind": "original_extension"
+          },
+          "e05f573b-ff49-55e6-b531-01eecc09eb42-u04": {
+            "kind": "original_extension"
+          },
+          "e05f573b-ff49-55e6-b531-01eecc09eb42-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "49ce914e-755e-5375-9deb-f3d0c230a4e1",
+      "event_id": "E03",
+      "context_vi": "Tại quầy thuế 青葉市 hư cấu, bạn hỏi giấy gì giúp chuyên viên xem khoản trên thông báo thuế cư dân.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "49ce914e-755e-5375-9deb-f3d0c230a4e1-u01",
+          "speaker_id": "a",
+          "ja": "この通知の金額について相談するには、どの資料を持ってくればいいですか。",
+          "vi": "Để hỏi về số tiền trên thông báo này, tôi cần mang giấy gì?"
+        },
+        {
+          "id": "49ce914e-755e-5375-9deb-f3d0c230a4e1-u02",
+          "speaker_id": "b",
+          "ja": "まず通知そのものと、対象の年の給与資料を確認します。ほかに必要な物は担当が案件を見て案内します。",
+          "vi": "Trước hết cần xem chính thông báo và giấy lương của năm liên quan. Giấy khác người phụ trách sẽ báo sau khi xem hồ sơ."
+        },
+        {
+          "id": "49ce914e-755e-5375-9deb-f3d0c230a4e1-u03",
+          "speaker_id": "a",
+          "ja": "二社からの給与があるので、両方の資料を探します。",
+          "vi": "Tôi có lương từ hai công ty nên sẽ tìm giấy của cả hai."
+        },
+        {
+          "id": "49ce914e-755e-5375-9deb-f3d0c230a4e1-u04",
+          "speaker_id": "b",
+          "ja": "はい。どの資料が足りないか、一覧にしてお渡しします。",
+          "vi": "Đúng. Tôi sẽ đưa danh sách giấy còn thiếu."
+        },
+        {
+          "id": "49ce914e-755e-5375-9deb-f3d0c230a4e1-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。年を間違えないよう確認します。",
+          "vi": "Cảm ơn. Tôi sẽ kiểm kỹ năm để không nhầm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_tax"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "49ce914e-755e-5375-9deb-f3d0c230a4e1-u01": {
+            "kind": "original_extension"
+          },
+          "49ce914e-755e-5375-9deb-f3d0c230a4e1-u02": {
+            "kind": "original_extension"
+          },
+          "49ce914e-755e-5375-9deb-f3d0c230a4e1-u03": {
+            "kind": "original_extension"
+          },
+          "49ce914e-755e-5375-9deb-f3d0c230a4e1-u04": {
+            "kind": "original_extension"
+          },
+          "49ce914e-755e-5375-9deb-f3d0c230a4e1-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9341b5e4-aa28-5caf-8706-41da39a3d79f",
+      "event_id": "E03",
+      "context_vi": "Bạn chưa tìm được giấy lương của công ty cũ để nhân viên 青葉市 hư cấu đối chiếu thông báo thuế.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9341b5e4-aa28-5caf-8706-41da39a3d79f-u01",
+          "speaker_id": "a",
+          "ja": "前の会社の給与の紙がまだ見つかりません。入手してから、また相談できますか。",
+          "vi": "Tôi chưa tìm thấy giấy lương công ty cũ. Sau khi lấy được tôi quay lại hỏi được không?"
+        },
+        {
+          "id": "9341b5e4-aa28-5caf-8706-41da39a3d79f-u02",
+          "speaker_id": "b",
+          "ja": "はい。今日は不足している資料と質問を記録します。金額の確認は資料がそろってからです。",
+          "vi": "Được. Hôm nay tôi ghi giấy còn thiếu và câu hỏi. Việc kiểm số tiền là sau khi đủ giấy."
+        },
+        {
+          "id": "9341b5e4-aa28-5caf-8706-41da39a3d79f-u03",
+          "speaker_id": "a",
+          "ja": "会社に再発行できるか聞きます。次回、相談番号を伝えれば続きから話せますか。",
+          "vi": "Tôi sẽ hỏi công ty có cấp lại được không. Lần sau báo số tư vấn thì trao đổi tiếp được chứ?"
+        },
+        {
+          "id": "9341b5e4-aa28-5caf-8706-41da39a3d79f-u04",
+          "speaker_id": "b",
+          "ja": "この窓口ではその番号で記録を確認します。来る前に日時も電話で確認してください。",
+          "vi": "Ở quầy này, chúng tôi sẽ tra hồ sơ theo số đó. Trước khi đến xin gọi kiểm giờ."
+        },
+        {
+          "id": "9341b5e4-aa28-5caf-8706-41da39a3d79f-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。今日は結論が出ていないと控えます。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi hôm nay chưa có kết luận."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9341b5e4-aa28-5caf-8706-41da39a3d79f-u01": {
+            "kind": "original_extension"
+          },
+          "9341b5e4-aa28-5caf-8706-41da39a3d79f-u02": {
+            "kind": "original_extension"
+          },
+          "9341b5e4-aa28-5caf-8706-41da39a3d79f-u03": {
+            "kind": "original_extension"
+          },
+          "9341b5e4-aa28-5caf-8706-41da39a3d79f-u04": {
+            "kind": "original_extension"
+          },
+          "9341b5e4-aa28-5caf-8706-41da39a3d79f-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0a75891d-53f7-5b0c-a56b-47a1e70a0f67",
+      "event_id": "E03",
+      "context_vi": "Quầy thuế 青葉市 hư cấu bảo bạn hỏi công ty cũ về một khoản lương không khớp giấy họ đã cấp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u01",
+          "speaker_id": "b",
+          "ja": "この欄の金額は、給与を支払った会社の記録を先に確認したいです。",
+          "vi": "Với số tiền ở mục này, trước hết cần kiểm hồ sơ công ty trả lương."
+        },
+        {
+          "id": "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u02",
+          "speaker_id": "a",
+          "ja": "会社には、どの年の、どの欄について聞けばいいですか。",
+          "vi": "Tôi nên hỏi công ty về năm nào, mục nào?"
+        },
+        {
+          "id": "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u03",
+          "speaker_id": "b",
+          "ja": "この通知の対象年と、会社の紙にある支払額の欄です。違う理由を説明できる資料があるか聞いてください。",
+          "vi": "Là năm liên quan thông báo này và mục số đã trả trên giấy công ty. Xin hỏi có giấy giải thích chênh lệch không."
+        },
+        {
+          "id": "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。会社の答えを持って、こちらへ戻ります。",
+          "vi": "Tôi hiểu. Tôi sẽ mang câu trả lời của công ty trở lại đây."
+        },
+        {
+          "id": "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u05",
+          "speaker_id": "b",
+          "ja": "はい。その後に市の記録と照合します。",
+          "vi": "Đúng. Sau đó chúng tôi đối chiếu với hồ sơ thành phố."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_tax"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u01": {
+            "kind": "original_extension"
+          },
+          "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u02": {
+            "kind": "original_extension"
+          },
+          "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u03": {
+            "kind": "original_extension"
+          },
+          "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u04": {
+            "kind": "original_extension"
+          },
+          "0a75891d-53f7-5b0c-a56b-47a1e70a0f67-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "16e5c2f3-9680-5727-9450-bf8625e6eeb8",
+      "event_id": "E03",
+      "context_vi": "Bạn lấy được giấy lương của công ty cũ và quay lại quầy thuế 青葉市 hư cấu theo số tư vấn trước.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u01",
+          "speaker_id": "a",
+          "ja": "前回、会社の給与資料が足りず、確認が止まりました。相談番号はこちらです。今日は資料を持ってきました。",
+          "vi": "Lần trước thiếu giấy lương công ty nên chưa kiểm tiếp. Đây là số tư vấn. Hôm nay tôi mang giấy."
+        },
+        {
+          "id": "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u02",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。前回の記録と、新しい資料の年を照らし合わせます。",
+          "vi": "Cảm ơn. Tôi sẽ đối chiếu ghi chú lần trước với năm trên giấy mới."
+        },
+        {
+          "id": "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u03",
+          "speaker_id": "a",
+          "ja": "会社には、この欄が実際の支払額だと確認しました。市の通知とどこが違うか見ていただけますか。",
+          "vi": "Công ty xác nhận mục này là số đã trả thực tế. Xin kiểm khác thông báo thành phố ở đâu."
+        },
+        {
+          "id": "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u04",
+          "speaker_id": "b",
+          "ja": "はい。担当が内容を確認します。必要なら後日、結果をご連絡します。",
+          "vi": "Được. Người phụ trách sẽ kiểm nội dung. Nếu cần, chúng tôi sẽ báo kết quả sau."
+        },
+        {
+          "id": "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。今日の資料を受け取った控えもお願いします。",
+          "vi": "Tôi hiểu. Xin cho tôi giấy ghi đã nhận tài liệu hôm nay."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u01": {
+            "kind": "original_extension"
+          },
+          "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u02": {
+            "kind": "original_extension"
+          },
+          "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u03": {
+            "kind": "original_extension"
+          },
+          "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u04": {
+            "kind": "original_extension"
+          },
+          "16e5c2f3-9680-5727-9450-bf8625e6eeb8-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fedd2d92-6d8d-5172-80ed-a9dcbf662733",
+      "event_id": "E04",
+      "context_vi": "Sau tư vấn ở 青葉市 hư cấu, bạn nhắc lại điều đã hiểu về thông báo thuế và điều còn cần chuyên viên xác nhận.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u01",
+          "speaker_id": "a",
+          "ja": "通知は市が出した住民税のもので、対象の所得の年は紙に書かれています。ここまでは理解しました。",
+          "vi": "Thông báo là thuế cư dân thành phố gửi, năm thu nhập liên quan ghi trên giấy. Phần này tôi đã hiểu."
+        },
+        {
+          "id": "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u02",
+          "speaker_id": "b",
+          "ja": "はい。どの点がまだ不明ですか。",
+          "vi": "Đúng. Còn điểm nào chưa rõ?"
+        },
+        {
+          "id": "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u03",
+          "speaker_id": "a",
+          "ja": "二社の給与資料と、市のこの金額が違う理由です。計算の内訳は担当に確認していただけますか。",
+          "vi": "Lý do giấy lương hai công ty khác số thành phố ghi. Xin nhờ người phụ trách kiểm chi tiết tính."
+        },
+        {
+          "id": "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。資料を照合してからお答えします。今ここで訂正の要否は判断しません。",
+          "vi": "Tôi hiểu. Sau khi đối chiếu giấy chúng tôi sẽ trả lời. Giờ chưa quyết có cần sửa không."
+        },
+        {
+          "id": "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。確認中として控えます。",
+          "vi": "Cảm ơn. Tôi sẽ ghi là đang kiểm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_tax"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u01": {
+            "kind": "original_extension"
+          },
+          "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u02": {
+            "kind": "original_extension"
+          },
+          "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u03": {
+            "kind": "original_extension"
+          },
+          "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u04": {
+            "kind": "original_extension"
+          },
+          "fedd2d92-6d8d-5172-80ed-a9dcbf662733-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "dccea1f8-4c2a-5476-8a6d-c84074f08b63",
+      "event_id": "E04",
+      "context_vi": "Bạn nghe một nhân viên 青葉市 nói “năm ghi trên thông báo”, nhân viên khác nói “năm thu nhập trước đó”, nên tưởng hai người giải thích trái nhau.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u01",
+          "speaker_id": "a",
+          "ja": "一人は通知の年度、もう一人は所得の年を言いました。同じ年を指していますか。",
+          "vi": "Một người nói năm tài chính trên giấy, người kia nói năm thu nhập. Có phải cùng một năm không?"
+        },
+        {
+          "id": "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u02",
+          "speaker_id": "b",
+          "ja": "いいえ。この通知では、税の年度と、計算の対象になった所得の年を分けて表示しています。",
+          "vi": "Không. Trên giấy này, năm thuế và năm thu nhập dùng để tính được ghi riêng."
+        },
+        {
+          "id": "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u03",
+          "speaker_id": "a",
+          "ja": "では、私が比べる給与資料は、所得の年の方に合わせますね。",
+          "vi": "Vậy giấy lương tôi đem so phải theo năm thu nhập, đúng không?"
+        },
+        {
+          "id": "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u04",
+          "speaker_id": "b",
+          "ja": "はい。ただし、どの欄の額を比べるかは担当が資料を見て説明します。",
+          "vi": "Đúng. Nhưng so mục số nào, người phụ trách sẽ xem giấy rồi giải thích."
+        },
+        {
+          "id": "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。二つの年を別々にメモします。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi riêng hai năm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_tax"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u01": {
+            "kind": "original_extension"
+          },
+          "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u02": {
+            "kind": "original_extension"
+          },
+          "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u03": {
+            "kind": "original_extension"
+          },
+          "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u04": {
+            "kind": "original_extension"
+          },
+          "dccea1f8-4c2a-5476-8a6d-c84074f08b63-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7",
+      "event_id": "E04",
+      "context_vi": "Chuyên viên 青葉市 hư cấu đang đối chiếu giấy lương và thông báo, chưa thể kết luận trong buổi tư vấn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u01",
+          "speaker_id": "a",
+          "ja": "今日は金額の確認が終わらないんですね。次はいつ、どの番号で聞けばいいですか。",
+          "vi": "Hôm nay chưa kiểm xong số tiền nhỉ. Lần sau tôi hỏi khi nào, bằng số nào?"
+        },
+        {
+          "id": "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u02",
+          "speaker_id": "b",
+          "ja": "この相談番号で、来週の火曜午後に税務課へお問い合わせください。結果が早ければこちらから電話します。",
+          "vi": "Xin dùng số tư vấn này hỏi bộ phận thuế chiều thứ Ba tuần tới. Nếu rõ sớm chúng tôi sẽ gọi."
+        },
+        {
+          "id": "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。今の通知を自己判断で破棄したり、額を変更したりしません。",
+          "vi": "Tôi hiểu. Tôi sẽ không tự vứt thông báo hay thay số tiền."
+        },
+        {
+          "id": "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u04",
+          "speaker_id": "b",
+          "ja": "はい。納付期限が近い場合は、その点も担当に先に伝えてください。",
+          "vi": "Đúng. Nếu gần hạn nộp, xin báo điều đó sớm cho người phụ trách."
+        },
+        {
+          "id": "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u05",
+          "speaker_id": "a",
+          "ja": "期限も確認して伝えます。",
+          "vi": "Tôi sẽ xem hạn và báo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_counter"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u01": {
+            "kind": "original_extension"
+          },
+          "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u02": {
+            "kind": "original_extension"
+          },
+          "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u03": {
+            "kind": "original_extension"
+          },
+          "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u04": {
+            "kind": "original_extension"
+          },
+          "fe33b902-0b28-5993-a0cc-1ff5a69a9ec7-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f3fe2735-4981-5736-a399-27ca9dd67e08",
+      "event_id": "E04",
+      "context_vi": "Sau cuộc tư vấn thuế cư dân ở 青葉市 hư cấu, bạn hỏi nếu nhận thêm thông báo thì liên hệ đầu mối nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f3fe2735-4981-5736-a399-27ca9dd67e08-u01",
+          "speaker_id": "a",
+          "ja": "もし別の税の通知が届いたら、今回の相談番号で同じ係に聞いてもいいですか。",
+          "vi": "Nếu tôi nhận thông báo thuế khác, có dùng số tư vấn này hỏi cùng bộ phận được không?"
+        },
+        {
+          "id": "f3fe2735-4981-5736-a399-27ca9dd67e08-u02",
+          "speaker_id": "b",
+          "ja": "まず新しい通知の発行元と税の種類を見てください。同じ市の件ならこちらで確認します。",
+          "vi": "Trước hết xin xem nơi phát hành và loại thuế trên giấy mới. Nếu cũng là việc của thành phố này thì bên tôi sẽ kiểm."
+        },
+        {
+          "id": "f3fe2735-4981-5736-a399-27ca9dd67e08-u03",
+          "speaker_id": "a",
+          "ja": "税務署からなら、市の担当では判断できませんね。",
+          "vi": "Nếu do sở thuế gửi thì bộ phận thành phố không quyết được nhỉ."
+        },
+        {
+          "id": "f3fe2735-4981-5736-a399-27ca9dd67e08-u04",
+          "speaker_id": "b",
+          "ja": "はい。その通知に書かれた問い合わせ先へ確認してください。迷えば、発行元を一緒に見ます。",
+          "vi": "Đúng. Xin hỏi đầu mối ghi trên thông báo đó. Nếu phân vân, ta cùng xem nơi phát hành."
+        },
+        {
+          "id": "f3fe2735-4981-5736-a399-27ca9dd67e08-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。紙を残し、発行元を先に見ます。",
+          "vi": "Tôi hiểu. Tôi sẽ giữ giấy và xem nơi phát hành trước."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_counter",
+          "nta"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f3fe2735-4981-5736-a399-27ca9dd67e08-u01": {
+            "kind": "original_extension"
+          },
+          "f3fe2735-4981-5736-a399-27ca9dd67e08-u02": {
+            "kind": "original_extension"
+          },
+          "f3fe2735-4981-5736-a399-27ca9dd67e08-u03": {
+            "kind": "original_extension"
+          },
+          "f3fe2735-4981-5736-a399-27ca9dd67e08-u04": {
+            "kind": "original_extension"
+          },
+          "f3fe2735-4981-5736-a399-27ca9dd67e08-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a9fb8184-124d-579f-88f0-886fe7f77e19",
+      "event_id": "E05",
+      "context_vi": "Trong lúc chờ kết quả đối chiếu thuế cư dân ở 青葉市 hư cấu, bạn nhận thêm thông báo từ sở thuế quốc gia.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a9fb8184-124d-579f-88f0-886fe7f77e19-u01",
+          "speaker_id": "a",
+          "ja": "市の金額について回答を待っている間に、税務署からも封書が来ました。前の通知と同じ件ですか。",
+          "vi": "Trong khi chờ trả lời về số tiền của thành phố, tôi nhận thư từ sở thuế. Có cùng việc với thông báo trước không?"
+        },
+        {
+          "id": "a9fb8184-124d-579f-88f0-886fe7f77e19-u02",
+          "speaker_id": "b",
+          "ja": "二通の発行元と税の名前を確認します。この場で同じ請求だとは決められません。",
+          "vi": "Ta kiểm nơi phát hành và tên loại thuế trên hai giấy. Ở đây chưa thể quyết đó là cùng khoản đòi nộp."
+        },
+        {
+          "id": "a9fb8184-124d-579f-88f0-886fe7f77e19-u03",
+          "speaker_id": "a",
+          "ja": "こちらが市の住民税、こちらが税務署の所得税と書いてあります。",
+          "vi": "Giấy này ghi thuế cư dân của thành phố, giấy kia ghi thuế thu nhập của sở thuế."
+        },
+        {
+          "id": "a9fb8184-124d-579f-88f0-886fe7f77e19-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。市の通知は私たちが確認し、税務署の内容は発行元に問い合わせてください。",
+          "vi": "Tôi hiểu. Chúng tôi kiểm thông báo thành phố; nội dung sở thuế xin hỏi nơi phát hành."
+        },
+        {
+          "id": "a9fb8184-124d-579f-88f0-886fe7f77e19-u05",
+          "speaker_id": "a",
+          "ja": "二つを別々に保管して、番号も混ぜないようにします。",
+          "vi": "Tôi sẽ giữ riêng hai giấy và không lẫn số hồ sơ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_counter",
+          "nta"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a9fb8184-124d-579f-88f0-886fe7f77e19-u01": {
+            "kind": "original_extension"
+          },
+          "a9fb8184-124d-579f-88f0-886fe7f77e19-u02": {
+            "kind": "original_extension"
+          },
+          "a9fb8184-124d-579f-88f0-886fe7f77e19-u03": {
+            "kind": "original_extension"
+          },
+          "a9fb8184-124d-579f-88f0-886fe7f77e19-u04": {
+            "kind": "original_extension"
+          },
+          "a9fb8184-124d-579f-88f0-886fe7f77e19-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "37d2e746-3d48-51f4-9e38-a11a885c9f58",
+      "event_id": "E05",
+      "context_vi": "Hai thông báo bạn cầm đều nhắc đến thu nhập, khiến bạn tưởng cùng một khoản thuế.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "37d2e746-3d48-51f4-9e38-a11a885c9f58-u01",
+          "speaker_id": "a",
+          "ja": "両方に所得と書いてあります。同じ金額を二回払うという意味ですか。",
+          "vi": "Cả hai đều có chữ thu nhập. Có nghĩa tôi phải nộp cùng khoản hai lần ạ?"
+        },
+        {
+          "id": "37d2e746-3d48-51f4-9e38-a11a885c9f58-u02",
+          "speaker_id": "b",
+          "ja": "その言葉だけでは判断できません。一つは市の住民税通知、もう一つは税務署からの所得税の書類です。",
+          "vi": "Chỉ từ đó không thể kết luận. Một giấy là thông báo thuế cư dân của thành phố; giấy kia là giấy về thuế thu nhập từ sở thuế."
+        },
+        {
+          "id": "37d2e746-3d48-51f4-9e38-a11a885c9f58-u03",
+          "speaker_id": "a",
+          "ja": "税の種類と対象の年、今求められている行動を、それぞれ確認する必要がありますね。",
+          "vi": "Tôi cần kiểm riêng loại thuế, năm liên quan và việc mỗi giấy yêu cầu làm, đúng không?"
+        },
+        {
+          "id": "37d2e746-3d48-51f4-9e38-a11a885c9f58-u04",
+          "speaker_id": "b",
+          "ja": "はい。税務署の紙の内容は、その連絡先に確認してください。市の紙はここで見ます。",
+          "vi": "Đúng. Nội dung giấy sở thuế xin hỏi số ghi trên giấy đó. Giấy thành phố bên tôi xem."
+        },
+        {
+          "id": "37d2e746-3d48-51f4-9e38-a11a885c9f58-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。同じという前提では話しません。",
+          "vi": "Tôi hiểu. Tôi sẽ không nói với giả định hai giấy là một."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_counter",
+          "nta"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "37d2e746-3d48-51f4-9e38-a11a885c9f58-u01": {
+            "kind": "original_extension"
+          },
+          "37d2e746-3d48-51f4-9e38-a11a885c9f58-u02": {
+            "kind": "original_extension"
+          },
+          "37d2e746-3d48-51f4-9e38-a11a885c9f58-u03": {
+            "kind": "original_extension"
+          },
+          "37d2e746-3d48-51f4-9e38-a11a885c9f58-u04": {
+            "kind": "original_extension"
+          },
+          "37d2e746-3d48-51f4-9e38-a11a885c9f58-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "00bc9d78-6890-592a-b28d-9fea85df8c66",
+      "event_id": "E05",
+      "context_vi": "Bạn gọi quầy 青葉市 hư cấu về hai thông báo nhưng nhân viên chưa thể đối chiếu các mục qua điện thoại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "00bc9d78-6890-592a-b28d-9fea85df8c66-u01",
+          "speaker_id": "a",
+          "ja": "二通の表にある年と金額を電話でうまく説明できません。両方持って相談できる日時はありますか。",
+          "vi": "Qua điện thoại tôi khó giải thích năm và số tiền trên hai giấy. Có giờ nào tôi mang cả hai đến hỏi được không?"
+        },
+        {
+          "id": "00bc9d78-6890-592a-b28d-9fea85df8c66-u02",
+          "speaker_id": "b",
+          "ja": "市の通知については面談で確認できます。税務署の通知は、その発行元の判断が必要です。",
+          "vi": "Với giấy thành phố, có thể đến trao đổi. Giấy sở thuế cần nơi phát hành đánh giá."
+        },
+        {
+          "id": "00bc9d78-6890-592a-b28d-9fea85df8c66-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。面談では二通の発行元と、市の紙の疑問を整理したいです。",
+          "vi": "Tôi hiểu. Trong buổi gặp tôi muốn phân loại nơi gửi hai giấy và làm rõ câu hỏi về giấy thành phố."
+        },
+        {
+          "id": "00bc9d78-6890-592a-b28d-9fea85df8c66-u04",
+          "speaker_id": "b",
+          "ja": "では、木曜の午後に市の担当と話す時間を取ります。税務署へ聞く項目も整理しましょう。",
+          "vi": "Vậy hẹn chiều thứ Năm với người phụ trách thành phố. Ta cũng sắp mục cần hỏi sở thuế."
+        },
+        {
+          "id": "00bc9d78-6890-592a-b28d-9fea85df8c66-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。二通と給与資料を持参します。",
+          "vi": "Cảm ơn. Tôi sẽ mang hai giấy và giấy lương."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_counter",
+          "nta"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "00bc9d78-6890-592a-b28d-9fea85df8c66-u01": {
+            "kind": "original_extension"
+          },
+          "00bc9d78-6890-592a-b28d-9fea85df8c66-u02": {
+            "kind": "original_extension"
+          },
+          "00bc9d78-6890-592a-b28d-9fea85df8c66-u03": {
+            "kind": "original_extension"
+          },
+          "00bc9d78-6890-592a-b28d-9fea85df8c66-u04": {
+            "kind": "original_extension"
+          },
+          "00bc9d78-6890-592a-b28d-9fea85df8c66-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bb981421-d528-523f-a5a8-b4bdefc1b5df",
+      "event_id": "E05",
+      "context_vi": "Sau buổi hẹn tại quầy 青葉市 hư cấu, nhân viên đã phân loại hai thông báo; khoản lương trên giấy công ty cũ vẫn cần nơi trả lương xác nhận.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên thuế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bb981421-d528-523f-a5a8-b4bdefc1b5df-u01",
+          "speaker_id": "a",
+          "ja": "今日の整理を確認します。市の通知の給与欄は、前の会社に支払年と金額を聞きます。",
+          "vi": "Xin nhắc lại phần đã thống nhất: với mục lương trên giấy thành phố, tôi sẽ hỏi công ty cũ năm trả và số tiền."
+        },
+        {
+          "id": "bb981421-d528-523f-a5a8-b4bdefc1b5df-u02",
+          "speaker_id": "b",
+          "ja": "はい。その回答を持って市の担当へ戻ってください。市の計算について、こちらで再確認します。",
+          "vi": "Đúng. Xin mang câu trả lời trở lại người phụ trách thành phố. Bên tôi sẽ kiểm lại phần tính của thành phố."
+        },
+        {
+          "id": "bb981421-d528-523f-a5a8-b4bdefc1b5df-u03",
+          "speaker_id": "a",
+          "ja": "税務署の通知は、そこに書かれた問い合わせ先へ、種類と必要な行動を別に聞きます。",
+          "vi": "Giấy sở thuế tôi sẽ hỏi riêng đầu mối trên đó về loại giấy và việc cần làm."
+        },
+        {
+          "id": "bb981421-d528-523f-a5a8-b4bdefc1b5df-u04",
+          "speaker_id": "b",
+          "ja": "そのとおりです。市の相談番号は市の件にだけ使ってください。",
+          "vi": "Đúng vậy. Số tư vấn thành phố chỉ dùng cho việc thành phố."
+        },
+        {
+          "id": "bb981421-d528-523f-a5a8-b4bdefc1b5df-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。どちらも、まだ額の結論を自分で出しません。",
+          "vi": "Tôi hiểu. Với cả hai, tôi chưa tự kết luận về số tiền."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city_counter",
+          "nta"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bb981421-d528-523f-a5a8-b4bdefc1b5df-u01": {
+            "kind": "original_extension"
+          },
+          "bb981421-d528-523f-a5a8-b4bdefc1b5df-u02": {
+            "kind": "original_extension"
+          },
+          "bb981421-d528-523f-a5a8-b4bdefc1b5df-u03": {
+            "kind": "original_extension"
+          },
+          "bb981421-d528-523f-a5a8-b4bdefc1b5df-u04": {
+            "kind": "original_extension"
+          },
+          "bb981421-d528-523f-a5a8-b4bdefc1b5df-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

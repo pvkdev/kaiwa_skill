@@ -1,0 +1,1429 @@
+{
+  "stage_uid": "0e0ac61f-72e7-560f-9fd7-56a6ab38b039",
+  "admin_sources": {
+    "city": {
+      "kind": "web",
+      "title": "Shinjuku: 国民健康保険の届出について",
+      "url": "https://www.city.shinjuku.lg.jp/hoken/file02_02_00001.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 203–208, 222–268: đổi từ bảo hiểm công ty sang quốc bảo và ngược lại cần xác minh/dựng hồ sơ riêng; không áp cho mọi người."
+    },
+    "mhlw": {
+      "kind": "web",
+      "title": "MHLW: 資格確認書について（マイナ保険証を使わない場合の受診方法）",
+      "url": "https://www.mhlw.go.jp/stf/newpage_45470.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 260–297: loại giấy hiện hành, hình thức/hạn tùy bảo hiểm, hỏi bên đang tham gia."
+    },
+    "kyokai": {
+      "kind": "web",
+      "title": "Kyokai Kenpo: マイナ保険証等での受診",
+      "url": "https://www.kyoukaikenpo.or.jp/benefit/mynumber_insurance_card/001/",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 112–130, 166–175: マイナ保険証 hoặc 資格確認書 khi khám, 資格情報のお知らせ một mình không dùng được."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "400e1729-b52f-52c0-9eaa-ffc2ff2a6370",
+      "event_id": "E01",
+      "context_vi": "Bạn vừa rời công ty cũ và chuẩn bị vào công ty mới, hỏi quầy bảo hiểm của thành phố 青葉 hư cấu cần liên hệ nơi nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u01",
+          "speaker_id": "a",
+          "ja": "先月末に前の会社を辞め、来月から新しい会社に入ります。間の健康保険について、どちらに相談すればいいですか。",
+          "vi": "Cuối tháng trước tôi rời công ty cũ, tháng sau vào công ty mới. Về bảo hiểm y tế trong khoảng giữa, tôi hỏi nơi nào?"
+        },
+        {
+          "id": "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u02",
+          "speaker_id": "b",
+          "ja": "まず前の保険の終了日と、新しい会社の加入予定を確認します。市の国民健康保険が関係するかは、その後に判断します。",
+          "vi": "Trước hết tôi kiểm ngày kết thúc bảo hiểm cũ và dự kiến tham gia bên công ty mới. Sau đó mới xác định có liên quan quốc bảo thành phố không."
+        },
+        {
+          "id": "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u03",
+          "speaker_id": "a",
+          "ja": "退職日だけで保険の状態を決めず、証明を見てほしいです。",
+          "vi": "Xin xem giấy xác nhận, đừng chỉ từ ngày nghỉ việc mà chốt tình trạng bảo hiểm."
+        },
+        {
+          "id": "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u04",
+          "speaker_id": "b",
+          "ja": "はい。会社の保険担当にも日付を確認してください。市の手続きはこの窓口で個別にご案内します。",
+          "vi": "Đúng. Xin hỏi cả bộ phận bảo hiểm công ty về ngày. Thủ tục thành phố sẽ được quầy này hướng dẫn theo trường hợp."
+        },
+        {
+          "id": "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。両方に確認します。",
+          "vi": "Tôi hiểu. Tôi sẽ hỏi cả hai nơi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-09-b18-547"
+        ],
+        "turn_origins": {
+          "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u01": {
+            "kind": "original_extension"
+          },
+          "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u02": {
+            "kind": "original_extension"
+          },
+          "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u03": {
+            "kind": "original_extension"
+          },
+          "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u04": {
+            "kind": "original_extension"
+          },
+          "400e1729-b52f-52c0-9eaa-ffc2ff2a6370-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "916f6f2f-f846-50cf-be77-99294ac4d4f9",
+      "event_id": "E01",
+      "context_vi": "Quầy bảo hiểm 青葉 hư cấu hỏi ngày kết thúc bảo hiểm công ty cũ; bạn có giấy xác nhận riêng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "916f6f2f-f846-50cf-be77-99294ac4d4f9-u01",
+          "speaker_id": "b",
+          "ja": "前の会社の保険資格が終わった日は、資料で分かりますか。",
+          "vi": "Ngày kết thúc tư cách bảo hiểm công ty cũ có trên giấy không?"
+        },
+        {
+          "id": "916f6f2f-f846-50cf-be77-99294ac4d4f9-u02",
+          "speaker_id": "a",
+          "ja": "退職日は九月三十日です。資格喪失の書類には十月一日と書かれています。",
+          "vi": "Ngày nghỉ việc là 30 tháng 9. Giấy mất tư cách ghi 1 tháng 10."
+        },
+        {
+          "id": "916f6f2f-f846-50cf-be77-99294ac4d4f9-u03",
+          "speaker_id": "b",
+          "ja": "分かりました。二つの日付を分けて記録します。新しい会社の加入日は確認できていますか。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi riêng hai ngày. Ngày tham gia công ty mới đã xác nhận chưa?"
+        },
+        {
+          "id": "916f6f2f-f846-50cf-be77-99294ac4d4f9-u04",
+          "speaker_id": "a",
+          "ja": "まだです。人事に聞いてから、間の期間を相談します。",
+          "vi": "Chưa. Tôi sẽ hỏi nhân sự rồi trao đổi về khoảng giữa."
+        },
+        {
+          "id": "916f6f2f-f846-50cf-be77-99294ac4d4f9-u05",
+          "speaker_id": "b",
+          "ja": "はい。その資料を見て次の手続きを説明します。",
+          "vi": "Đúng. Sau khi xem giấy đó tôi sẽ giải thích bước tiếp."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "916f6f2f-f846-50cf-be77-99294ac4d4f9-u01": {
+            "kind": "original_extension"
+          },
+          "916f6f2f-f846-50cf-be77-99294ac4d4f9-u02": {
+            "kind": "original_extension"
+          },
+          "916f6f2f-f846-50cf-be77-99294ac4d4f9-u03": {
+            "kind": "original_extension"
+          },
+          "916f6f2f-f846-50cf-be77-99294ac4d4f9-u04": {
+            "kind": "original_extension"
+          },
+          "916f6f2f-f846-50cf-be77-99294ac4d4f9-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "71d77b63-5875-5055-9226-ee489b3fc603",
+      "event_id": "E01",
+      "context_vi": "Sau khi hỏi quầy quốc bảo thành phố 青葉 hư cấu, bạn phát hiện mình đang cần kiểm hồ sơ tham gia bảo hiểm do công ty mới quản lý.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "71d77b63-5875-5055-9226-ee489b3fc603-u01",
+          "speaker_id": "a",
+          "ja": "新しい会社の保険に入る日が分からないのですが、市の窓口で確認できますか。",
+          "vi": "Tôi chưa biết ngày vào bảo hiểm công ty mới. Quầy thành phố kiểm được không?"
+        },
+        {
+          "id": "71d77b63-5875-5055-9226-ee489b3fc603-u02",
+          "speaker_id": "b",
+          "ja": "会社側の加入日と保険者は、まず会社の保険担当に確認してください。市では国保の届出が必要か、資料を見て案内します。",
+          "vi": "Ngày tham gia và bên bảo hiểm của công ty xin hỏi bộ phận bảo hiểm công ty trước. Thành phố sẽ xem giấy để hướng dẫn có cần khai quốc bảo không."
+        },
+        {
+          "id": "71d77b63-5875-5055-9226-ee489b3fc603-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。会社に日付を聞き、その後こちらで市の手続きを相談します。",
+          "vi": "Tôi hiểu. Tôi sẽ hỏi công ty ngày rồi trở lại đây hỏi thủ tục thành phố."
+        },
+        {
+          "id": "71d77b63-5875-5055-9226-ee489b3fc603-u04",
+          "speaker_id": "b",
+          "ja": "はい。二つの窓口の役割を分けて確認してください。",
+          "vi": "Đúng. Xin kiểm hai đầu mối theo từng vai trò."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "71d77b63-5875-5055-9226-ee489b3fc603-u01": {
+            "kind": "original_extension"
+          },
+          "71d77b63-5875-5055-9226-ee489b3fc603-u02": {
+            "kind": "original_extension"
+          },
+          "71d77b63-5875-5055-9226-ee489b3fc603-u03": {
+            "kind": "original_extension"
+          },
+          "71d77b63-5875-5055-9226-ee489b3fc603-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1b15be38-7e52-5328-8081-6222b816b14e",
+      "event_id": "E01",
+      "context_vi": "Công ty mới nói đã gửi thông tin bảo hiểm, nhưng quầy 青葉 hư cấu chưa thấy dữ liệu; bạn hỏi thời điểm kiểm lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1b15be38-7e52-5328-8081-6222b816b14e-u01",
+          "speaker_id": "a",
+          "ja": "会社は月曜に届けたと言いましたが、こちらではまだ確認できないんですね。いつもう一度聞けばいいですか。",
+          "vi": "Công ty nói đã gửi hôm thứ Hai, nhưng ở đây chưa kiểm được nhỉ. Khi nào tôi hỏi lại?"
+        },
+        {
+          "id": "1b15be38-7e52-5328-8081-6222b816b14e-u02",
+          "speaker_id": "b",
+          "ja": "今は市の画面で確認できません。会社の受付状況と保険者を確認したうえで、こちらへ連絡してください。",
+          "vi": "Hiện màn hình thành phố chưa kiểm được. Xin hỏi công ty tình trạng tiếp nhận và bên bảo hiểm rồi liên hệ lại."
+        },
+        {
+          "id": "1b15be38-7e52-5328-8081-6222b816b14e-u03",
+          "speaker_id": "a",
+          "ja": "では、送ったという話だけで市の手続きが終わったとは考えません。",
+          "vi": "Vậy tôi sẽ không coi việc thành phố đã xong chỉ vì công ty nói đã gửi."
+        },
+        {
+          "id": "1b15be38-7e52-5328-8081-6222b816b14e-u04",
+          "speaker_id": "b",
+          "ja": "はい。今週の金曜以降、この相談番号で状況を聞いてください。",
+          "vi": "Đúng. Từ thứ Sáu tuần này xin dùng số tư vấn để hỏi trạng thái."
+        },
+        {
+          "id": "1b15be38-7e52-5328-8081-6222b816b14e-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。会社にも受付日を確認します。",
+          "vi": "Tôi hiểu. Tôi cũng hỏi công ty ngày được nhận."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1b15be38-7e52-5328-8081-6222b816b14e-u01": {
+            "kind": "original_extension"
+          },
+          "1b15be38-7e52-5328-8081-6222b816b14e-u02": {
+            "kind": "original_extension"
+          },
+          "1b15be38-7e52-5328-8081-6222b816b14e-u03": {
+            "kind": "original_extension"
+          },
+          "1b15be38-7e52-5328-8081-6222b816b14e-u04": {
+            "kind": "original_extension"
+          },
+          "1b15be38-7e52-5328-8081-6222b816b14e-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2817dd97-d6ff-57ae-9665-170af1b36947",
+      "event_id": "E02",
+      "context_vi": "Chồng bạn vừa chuyển đến sống cùng tại thành phố 青葉 hư cấu; bạn hỏi quầy bảo hiểm về thông tin của anh ấy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2817dd97-d6ff-57ae-9665-170af1b36947-u01",
+          "speaker_id": "a",
+          "ja": "夫が今月から私と同じ住所に住み始めました。健康保険について、夫の分も確認したいです。",
+          "vi": "Chồng tôi từ tháng này sống cùng địa chỉ. Tôi muốn hỏi cả phần bảo hiểm của anh ấy."
+        },
+        {
+          "id": "2817dd97-d6ff-57ae-9665-170af1b36947-u02",
+          "speaker_id": "b",
+          "ja": "住民登録と、今どの保険に入っているかを別々に確認します。ご主人の状況を教えてください。",
+          "vi": "Tôi sẽ kiểm riêng địa chỉ đã khai và hiện anh ấy tham gia bảo hiểm nào. Xin cho biết tình trạng của chồng."
+        },
+        {
+          "id": "2817dd97-d6ff-57ae-9665-170af1b36947-u03",
+          "speaker_id": "a",
+          "ja": "会社で働いていますが、加入先は本人に確認中です。同じ住所になっただけで私の保険に入ったとは思っていません。",
+          "vi": "Anh ấy đang làm ở công ty nhưng tôi còn hỏi nơi tham gia. Tôi không nghĩ cùng địa chỉ thì tự vào bảo hiểm của tôi."
+        },
+        {
+          "id": "2817dd97-d6ff-57ae-9665-170af1b36947-u04",
+          "speaker_id": "b",
+          "ja": "そのとおりです。資料がそろったら、対象者ごとに案内します。",
+          "vi": "Đúng. Khi đủ giấy, chúng tôi sẽ hướng dẫn theo từng người."
+        },
+        {
+          "id": "2817dd97-d6ff-57ae-9665-170af1b36947-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。本人にも連絡します。",
+          "vi": "Tôi hiểu. Tôi sẽ hỏi trực tiếp chồng."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2817dd97-d6ff-57ae-9665-170af1b36947-u01": {
+            "kind": "original_extension"
+          },
+          "2817dd97-d6ff-57ae-9665-170af1b36947-u02": {
+            "kind": "original_extension"
+          },
+          "2817dd97-d6ff-57ae-9665-170af1b36947-u03": {
+            "kind": "original_extension"
+          },
+          "2817dd97-d6ff-57ae-9665-170af1b36947-u04": {
+            "kind": "original_extension"
+          },
+          "2817dd97-d6ff-57ae-9665-170af1b36947-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8ac24df5-a3e8-57c8-98bf-286bca268d9c",
+      "event_id": "E02",
+      "context_vi": "Bạn thấy tên chồng trên một giấy bảo hiểm ghi phiên âm sai so với hộ chiếu và muốn hỏi nguồn sửa.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8ac24df5-a3e8-57c8-98bf-286bca268d9c-u01",
+          "speaker_id": "a",
+          "ja": "夫の名前がこの通知では『グエン・ホアン』、旅券では『グエン・フアン』に近い読みです。どの記録を確認すればいいですか。",
+          "vi": "Tên chồng trên giấy này đọc “Nguyen Hoan”, còn hộ chiếu gần với “Nguyen Huan”. Tôi nên kiểm hồ sơ nào?"
+        },
+        {
+          "id": "8ac24df5-a3e8-57c8-98bf-286bca268d9c-u02",
+          "speaker_id": "b",
+          "ja": "まず通知の発行元と、登録された氏名を確認します。会社の保険なら会社の担当にも聞く必要があります。",
+          "vi": "Trước hết tôi kiểm nơi phát hành giấy và tên đã ghi. Nếu là bảo hiểm công ty thì cũng cần hỏi người phụ trách công ty."
+        },
+        {
+          "id": "8ac24df5-a3e8-57c8-98bf-286bca268d9c-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。私が勝手に書き換えず、原資料と発行元を示します。",
+          "vi": "Tôi hiểu. Tôi sẽ không tự đổi, mà cho xem giấy gốc và nơi phát hành."
+        },
+        {
+          "id": "8ac24df5-a3e8-57c8-98bf-286bca268d9c-u04",
+          "speaker_id": "b",
+          "ja": "はい。訂正先は確認後に案内します。",
+          "vi": "Đúng. Sau khi kiểm chúng tôi sẽ báo nơi sửa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8ac24df5-a3e8-57c8-98bf-286bca268d9c-u01": {
+            "kind": "original_extension"
+          },
+          "8ac24df5-a3e8-57c8-98bf-286bca268d9c-u02": {
+            "kind": "original_extension"
+          },
+          "8ac24df5-a3e8-57c8-98bf-286bca268d9c-u03": {
+            "kind": "original_extension"
+          },
+          "8ac24df5-a3e8-57c8-98bf-286bca268d9c-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "146c0da9-42a4-5c70-9481-12387caad23d",
+      "event_id": "E02",
+      "context_vi": "Bạn chưa có giấy chứng minh quan hệ vợ chồng trong tay nhưng muốn hỏi trước quầy bảo hiểm 青葉 hư cấu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "146c0da9-42a4-5c70-9481-12387caad23d-u01",
+          "speaker_id": "a",
+          "ja": "夫との関係を示す書類は今、家にあります。今日は必要な手続きだけ相談できますか。",
+          "vi": "Giấy chứng minh quan hệ với chồng đang ở nhà. Hôm nay tôi có thể chỉ hỏi thủ tục không?"
+        },
+        {
+          "id": "146c0da9-42a4-5c70-9481-12387caad23d-u02",
+          "speaker_id": "b",
+          "ja": "相談はできます。加入や家族の扱いは、現在の保険者と資料を確認してから判断します。",
+          "vi": "Có thể tư vấn. Việc tham gia và xử lý thành viên gia đình sẽ được xem sau khi kiểm bên bảo hiểm hiện tại và giấy."
+        },
+        {
+          "id": "146c0da9-42a4-5c70-9481-12387caad23d-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。今日は書類の一覧を聞き、届出は後で確認します。",
+          "vi": "Tôi hiểu. Hôm nay tôi nghe danh sách giấy, việc khai sẽ kiểm sau."
+        },
+        {
+          "id": "146c0da9-42a4-5c70-9481-12387caad23d-u04",
+          "speaker_id": "b",
+          "ja": "はい。保険の種類も先にご主人へ確認してください。",
+          "vi": "Đúng. Trước hết xin hỏi chồng loại bảo hiểm đang có."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "146c0da9-42a4-5c70-9481-12387caad23d-u01": {
+            "kind": "original_extension"
+          },
+          "146c0da9-42a4-5c70-9481-12387caad23d-u02": {
+            "kind": "original_extension"
+          },
+          "146c0da9-42a4-5c70-9481-12387caad23d-u03": {
+            "kind": "original_extension"
+          },
+          "146c0da9-42a4-5c70-9481-12387caad23d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa",
+      "event_id": "E02",
+      "context_vi": "Bạn và quầy 青葉 hư cấu đang nói về bảo hiểm hai vợ chồng, nhưng nhân viên nhắc “người tham gia” mà bạn không rõ là ai.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa-u01",
+          "speaker_id": "a",
+          "ja": "今おっしゃった『加入している方』は、私ですか、夫ですか。",
+          "vi": "Người anh/chị vừa gọi là “người đang tham gia” là tôi hay chồng?"
+        },
+        {
+          "id": "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa-u02",
+          "speaker_id": "b",
+          "ja": "失礼しました。今はご主人の会社の保険について聞いています。あなたの市の保険とは別です。",
+          "vi": "Xin lỗi. Hiện tôi đang hỏi bảo hiểm công ty của chồng. Nó riêng với bảo hiểm thành phố của chị."
+        },
+        {
+          "id": "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa-u03",
+          "speaker_id": "a",
+          "ja": "では、夫の加入日と保険者を夫に確認し、私の分はこの通知で見ます。",
+          "vi": "Vậy tôi sẽ hỏi chồng ngày tham gia và bên bảo hiểm của anh ấy, còn phần tôi xem giấy này."
+        },
+        {
+          "id": "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa-u04",
+          "speaker_id": "b",
+          "ja": "はい。お二人の情報を分けて記録します。",
+          "vi": "Đúng. Tôi sẽ ghi riêng thông tin hai người."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa-u01": {
+            "kind": "original_extension"
+          },
+          "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa-u02": {
+            "kind": "original_extension"
+          },
+          "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa-u03": {
+            "kind": "original_extension"
+          },
+          "a33e5c27-2e9d-5777-b3f2-00d9ad9d52fa-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "950a8f8f-a0e3-5653-8dcc-55360707a774",
+      "event_id": "E03",
+      "context_vi": "Bạn có lịch khám hôm nay ở phòng khám 青葉 hư cấu, trong khi tình trạng bảo hiểm sau chuyển việc vẫn đang chờ xác nhận.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiếp nhận y tế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "950a8f8f-a0e3-5653-8dcc-55360707a774-u01",
+          "speaker_id": "a",
+          "ja": "今日、診察の予約があります。転職後の保険資格を確認中で、まだ資格確認書を受け取っていません。",
+          "vi": "Hôm nay tôi có lịch khám. Tư cách bảo hiểm sau đổi việc đang được kiểm và tôi chưa nhận giấy xác nhận tư cách."
+        },
+        {
+          "id": "950a8f8f-a0e3-5653-8dcc-55360707a774-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。マイナ保険証は使えますか。今ある資料も確認します。",
+          "vi": "Tôi hiểu. Anh/chị có dùng được thẻ My Number làm bảo hiểm không? Tôi cũng sẽ xem giấy hiện có."
+        },
+        {
+          "id": "950a8f8f-a0e3-5653-8dcc-55360707a774-u03",
+          "speaker_id": "a",
+          "ja": "マイナ保険証の登録はしていません。会社からの資格情報のお知らせだけあります。",
+          "vi": "Tôi chưa đăng ký My Number làm bảo hiểm. Tôi chỉ có giấy thông tin tư cách từ công ty."
+        },
+        {
+          "id": "950a8f8f-a0e3-5653-8dcc-55360707a774-u04",
+          "speaker_id": "b",
+          "ja": "その紙だけでは資格確認の方法になりません。保険者に現状を確認し、今日の受付と費用を説明します。",
+          "vi": "Chỉ giấy đó chưa đủ làm phương thức xác nhận tư cách. Xin hỏi bên bảo hiểm về tình trạng, chúng tôi sẽ giải thích cách tiếp nhận và chi phí hôm nay."
+        },
+        {
+          "id": "950a8f8f-a0e3-5653-8dcc-55360707a774-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。診察前に費用の扱いを聞きます。",
+          "vi": "Tôi hiểu. Tôi sẽ hỏi cách tính chi phí trước khi khám."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw",
+          "kyokai"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "950a8f8f-a0e3-5653-8dcc-55360707a774-u01": {
+            "kind": "original_extension"
+          },
+          "950a8f8f-a0e3-5653-8dcc-55360707a774-u02": {
+            "kind": "original_extension"
+          },
+          "950a8f8f-a0e3-5653-8dcc-55360707a774-u03": {
+            "kind": "original_extension"
+          },
+          "950a8f8f-a0e3-5653-8dcc-55360707a774-u04": {
+            "kind": "original_extension"
+          },
+          "950a8f8f-a0e3-5653-8dcc-55360707a774-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "09e0fb7d-bae2-5494-8ced-5f5463639cef",
+      "event_id": "E03",
+      "context_vi": "Tại quầy phòng khám 青葉 hư cấu, bạn hỏi nhân viên cách xác nhận tư cách bảo hiểm với cơ quan phụ trách.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiếp nhận y tế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "09e0fb7d-bae2-5494-8ced-5f5463639cef-u01",
+          "speaker_id": "a",
+          "ja": "保険の状態を確認したいのですが、病院から分かる範囲と、私が保険者に聞くことを教えてください。",
+          "vi": "Tôi muốn kiểm tư cách bảo hiểm. Xin cho biết phòng khám kiểm được đến đâu, và tôi cần hỏi bên bảo hiểm gì."
+        },
+        {
+          "id": "09e0fb7d-bae2-5494-8ced-5f5463639cef-u02",
+          "speaker_id": "b",
+          "ja": "受付で確認できる情報を調べます。加入日や資格確認書の発行は保険者に直接聞いてください。",
+          "vi": "Quầy sẽ tra phần thông tin kiểm được. Ngày tham gia và việc cấp giấy xác nhận xin hỏi trực tiếp bên bảo hiểm."
+        },
+        {
+          "id": "09e0fb7d-bae2-5494-8ced-5f5463639cef-u03",
+          "speaker_id": "a",
+          "ja": "今、加入先が会社か市かも確認中です。両方の連絡先を控えています。",
+          "vi": "Hiện tôi còn đang kiểm bên tham gia là công ty hay thành phố. Tôi có số liên hệ hai bên."
+        },
+        {
+          "id": "09e0fb7d-bae2-5494-8ced-5f5463639cef-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。今日の受付を進める前に、確認できたことと費用をお伝えします。",
+          "vi": "Tôi hiểu. Trước khi tiếp nhận hôm nay, tôi sẽ báo điều đã kiểm và chi phí."
+        },
+        {
+          "id": "09e0fb7d-bae2-5494-8ced-5f5463639cef-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。分からないまま支払い方法を決めたくありません。",
+          "vi": "Nhờ anh/chị. Tôi không muốn chọn cách thanh toán khi chưa hiểu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw",
+          "kyokai"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "09e0fb7d-bae2-5494-8ced-5f5463639cef-u01": {
+            "kind": "original_extension"
+          },
+          "09e0fb7d-bae2-5494-8ced-5f5463639cef-u02": {
+            "kind": "original_extension"
+          },
+          "09e0fb7d-bae2-5494-8ced-5f5463639cef-u03": {
+            "kind": "original_extension"
+          },
+          "09e0fb7d-bae2-5494-8ced-5f5463639cef-u04": {
+            "kind": "original_extension"
+          },
+          "09e0fb7d-bae2-5494-8ced-5f5463639cef-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "457205ec-6510-5e98-b421-6912e642bcbb",
+      "event_id": "E03",
+      "context_vi": "Quầy phòng khám 青葉 hư cấu chưa xác nhận được tư cách bảo hiểm của bạn trước lịch khám hôm nay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiếp nhận y tế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "457205ec-6510-5e98-b421-6912e642bcbb-u01",
+          "speaker_id": "b",
+          "ja": "今、受付のシステムでは資格を確認できません。診察を受ける場合の今日の支払いを説明します。",
+          "vi": "Hiện hệ thống quầy chưa xác nhận được tư cách. Tôi sẽ giải thích khoản cần trả hôm nay nếu anh/chị khám."
+        },
+        {
+          "id": "457205ec-6510-5e98-b421-6912e642bcbb-u02",
+          "speaker_id": "a",
+          "ja": "お願いします。今日支払う額はどのように決まり、後で資格が確認された場合はどこへ相談しますか。",
+          "vi": "Xin giải thích khoản hôm nay tính thế nào, và nếu sau này tư cách được xác nhận thì hỏi nơi nào."
+        },
+        {
+          "id": "457205ec-6510-5e98-b421-6912e642bcbb-u03",
+          "speaker_id": "b",
+          "ja": "診療内容が決まってから金額をお知らせします。後日の扱いは保険者の確認結果と当院の手順を合わせて案内します。",
+          "vi": "Khi nội dung khám rõ, chúng tôi sẽ báo số tiền. Xử lý sau đó sẽ theo kết quả bên bảo hiểm và quy trình phòng khám."
+        },
+        {
+          "id": "457205ec-6510-5e98-b421-6912e642bcbb-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。今の段階では、払い戻しがあると決めつけません。",
+          "vi": "Tôi hiểu. Lúc này tôi không mặc định sẽ được hoàn tiền."
+        },
+        {
+          "id": "457205ec-6510-5e98-b421-6912e642bcbb-u05",
+          "speaker_id": "b",
+          "ja": "はい。受付番号と領収書は保管してください。",
+          "vi": "Đúng. Xin giữ số tiếp nhận và hóa đơn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw",
+          "kyokai"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "457205ec-6510-5e98-b421-6912e642bcbb-u01": {
+            "kind": "original_extension"
+          },
+          "457205ec-6510-5e98-b421-6912e642bcbb-u02": {
+            "kind": "original_extension"
+          },
+          "457205ec-6510-5e98-b421-6912e642bcbb-u03": {
+            "kind": "original_extension"
+          },
+          "457205ec-6510-5e98-b421-6912e642bcbb-u04": {
+            "kind": "original_extension"
+          },
+          "457205ec-6510-5e98-b421-6912e642bcbb-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "40ce5085-343e-560c-bd33-dcf8c8454d27",
+      "event_id": "E03",
+      "context_vi": "Sau khi hỏi phòng khám 青葉 hư cấu về cách tiếp nhận, bạn gọi lại quầy bảo hiểm thành phố để báo điều cơ sở khám đã kiểm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "40ce5085-343e-560c-bd33-dcf8c8454d27-u01",
+          "speaker_id": "a",
+          "ja": "今日の診察で、病院の受付では私の資格を確認できませんでした。現在の加入先と開始日を確認したいです。",
+          "vi": "Trong buổi khám hôm nay, quầy phòng khám chưa xác nhận được tư cách. Tôi muốn kiểm nơi đang tham gia và ngày bắt đầu."
+        },
+        {
+          "id": "40ce5085-343e-560c-bd33-dcf8c8454d27-u02",
+          "speaker_id": "b",
+          "ja": "相談番号と、会社の資料を確認します。病院では何と言われましたか。",
+          "vi": "Xin cho số tư vấn và giấy công ty. Phòng khám đã nói gì?"
+        },
+        {
+          "id": "40ce5085-343e-560c-bd33-dcf8c8454d27-u03",
+          "speaker_id": "a",
+          "ja": "資格情報のお知らせだけでは確認できず、今日の費用と後日の扱いは保険者に聞くよう言われました。",
+          "vi": "Họ nói giấy thông tin tư cách một mình chưa đủ xác nhận, và tôi nên hỏi bên bảo hiểm về chi phí hôm nay và xử lý sau."
+        },
+        {
+          "id": "40ce5085-343e-560c-bd33-dcf8c8454d27-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。市の記録を見て、会社の保険者にも確認が必要かご案内します。",
+          "vi": "Tôi hiểu. Tôi sẽ xem dữ liệu thành phố và báo có cần hỏi thêm bên bảo hiểm công ty không."
+        },
+        {
+          "id": "40ce5085-343e-560c-bd33-dcf8c8454d27-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。病院の領収書も保管しています。",
+          "vi": "Nhờ anh/chị. Tôi đã giữ hóa đơn phòng khám."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city",
+          "kyokai"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "40ce5085-343e-560c-bd33-dcf8c8454d27-u01": {
+            "kind": "original_extension"
+          },
+          "40ce5085-343e-560c-bd33-dcf8c8454d27-u02": {
+            "kind": "original_extension"
+          },
+          "40ce5085-343e-560c-bd33-dcf8c8454d27-u03": {
+            "kind": "original_extension"
+          },
+          "40ce5085-343e-560c-bd33-dcf8c8454d27-u04": {
+            "kind": "original_extension"
+          },
+          "40ce5085-343e-560c-bd33-dcf8c8454d27-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3196a623-80cb-5621-979e-ff7080f42375",
+      "event_id": "E04",
+      "context_vi": "Bạn nhận thông báo phí quốc bảo từ thành phố 青葉 hư cấu và hỏi kỳ cùng người được ghi trên giấy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3196a623-80cb-5621-979e-ff7080f42375-u01",
+          "speaker_id": "a",
+          "ja": "国民健康保険の通知が届きました。どの期間と、誰についてのものか教えてください。",
+          "vi": "Tôi nhận thông báo phí quốc bảo. Xin cho biết nó liên quan giai đoạn nào và người nào."
+        },
+        {
+          "id": "3196a623-80cb-5621-979e-ff7080f42375-u02",
+          "speaker_id": "b",
+          "ja": "通知の年度、対象期間、世帯の欄を一緒に見ます。",
+          "vi": "Ta cùng xem năm, giai đoạn và mục hộ trên thông báo."
+        },
+        {
+          "id": "3196a623-80cb-5621-979e-ff7080f42375-u03",
+          "speaker_id": "a",
+          "ja": "夫も同じ住所に住んでいますが、二人分なのか私には分かりません。",
+          "vi": "Chồng cũng cùng địa chỉ, nhưng tôi chưa rõ có phải phần hai người không."
+        },
+        {
+          "id": "3196a623-80cb-5621-979e-ff7080f42375-u04",
+          "speaker_id": "b",
+          "ja": "氏名と加入状況を確認してから、対象者を説明します。",
+          "vi": "Sau khi kiểm tên và tình trạng tham gia, tôi sẽ giải thích người liên quan."
+        },
+        {
+          "id": "3196a623-80cb-5621-979e-ff7080f42375-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。金額の理由も、その後に聞きます。",
+          "vi": "Nhờ anh/chị. Lý do số tiền tôi sẽ hỏi sau."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3196a623-80cb-5621-979e-ff7080f42375-u01": {
+            "kind": "original_extension"
+          },
+          "3196a623-80cb-5621-979e-ff7080f42375-u02": {
+            "kind": "original_extension"
+          },
+          "3196a623-80cb-5621-979e-ff7080f42375-u03": {
+            "kind": "original_extension"
+          },
+          "3196a623-80cb-5621-979e-ff7080f42375-u04": {
+            "kind": "original_extension"
+          },
+          "3196a623-80cb-5621-979e-ff7080f42375-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "299d6c0f-96f8-5aeb-8ede-ecceecca846d",
+      "event_id": "E04",
+      "context_vi": "Thông báo phí quốc bảo 青葉 hư cấu ghi tháng bạn tưởng đã vào bảo hiểm công ty mới, nên bạn hỏi cách đối chiếu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u01",
+          "speaker_id": "a",
+          "ja": "この通知には四月分があります。私は四月から会社で働いたので、重なっていると思いました。",
+          "vi": "Thông báo có phần tháng 4. Tôi làm ở công ty từ tháng 4 nên tưởng bị tính trùng."
+        },
+        {
+          "id": "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u02",
+          "speaker_id": "b",
+          "ja": "働き始めた日と、会社の保険に加入した日は同じとは限りません。まず両方の日付を確認します。",
+          "vi": "Ngày bắt đầu làm và ngày tham gia bảo hiểm công ty không nhất thiết trùng. Trước hết cần kiểm cả hai."
+        },
+        {
+          "id": "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u03",
+          "speaker_id": "a",
+          "ja": "会社には加入日が分かる資料を頼みます。市では、通知の対象月を確認していただけますか。",
+          "vi": "Tôi sẽ xin công ty giấy ghi ngày tham gia. Bên thành phố xin kiểm các tháng trên thông báo."
+        },
+        {
+          "id": "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u04",
+          "speaker_id": "b",
+          "ja": "はい。二つの資料がそろってから、この額が正しいか確認します。",
+          "vi": "Được. Sau khi đủ hai giấy, chúng tôi mới kiểm số tiền có đúng không."
+        },
+        {
+          "id": "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。今は二重請求と決めつけません。",
+          "vi": "Tôi hiểu. Hiện tôi chưa kết luận bị tính trùng."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u01": {
+            "kind": "original_extension"
+          },
+          "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u02": {
+            "kind": "original_extension"
+          },
+          "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u03": {
+            "kind": "original_extension"
+          },
+          "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u04": {
+            "kind": "original_extension"
+          },
+          "299d6c0f-96f8-5aeb-8ede-ecceecca846d-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e50780a0-2ec7-529b-9fb9-000347e82115",
+      "event_id": "E04",
+      "context_vi": "Quầy bảo hiểm 青葉 hư cấu chưa giải thích được khoản phí trên thông báo vì thiếu ngày tham gia từ công ty.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e50780a0-2ec7-529b-9fb9-000347e82115-u01",
+          "speaker_id": "a",
+          "ja": "今日は会社の加入日を示す資料がないので、詳しい確認はまだですね。次の相談をいつできますか。",
+          "vi": "Hôm nay chưa có giấy ghi ngày tham gia công ty nên chưa kiểm chi tiết được nhỉ. Khi nào tôi hỏi tiếp?"
+        },
+        {
+          "id": "e50780a0-2ec7-529b-9fb9-000347e82115-u02",
+          "speaker_id": "b",
+          "ja": "資料が届いたら、この相談番号で連絡してください。通知の納付期限が近いので、その点は今日担当へ相談しましょう。",
+          "vi": "Khi có giấy xin liên hệ bằng số tư vấn này. Hạn ghi trên thông báo đã gần, nên hôm nay ta hỏi người phụ trách về hạn."
+        },
+        {
+          "id": "e50780a0-2ec7-529b-9fb9-000347e82115-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。確認中だからといって、自分で期限を延ばしたことにはしません。",
+          "vi": "Tôi hiểu. Tôi không tự coi hạn đã được dời chỉ vì đang kiểm."
+        },
+        {
+          "id": "e50780a0-2ec7-529b-9fb9-000347e82115-u04",
+          "speaker_id": "b",
+          "ja": "はい。担当が今の状況で取れる手順を説明します。",
+          "vi": "Đúng. Người phụ trách sẽ giải thích bước có thể làm với tình trạng hiện nay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e50780a0-2ec7-529b-9fb9-000347e82115-u01": {
+            "kind": "original_extension"
+          },
+          "e50780a0-2ec7-529b-9fb9-000347e82115-u02": {
+            "kind": "original_extension"
+          },
+          "e50780a0-2ec7-529b-9fb9-000347e82115-u03": {
+            "kind": "original_extension"
+          },
+          "e50780a0-2ec7-529b-9fb9-000347e82115-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "342fcca6-19b2-5bfa-aaf0-d8369d414555",
+      "event_id": "E04",
+      "context_vi": "Sau khi đối chiếu thông báo phí quốc bảo 青葉 hư cấu, bạn nhắc lại phần công ty cần xác nhận và phần quầy thành phố sẽ kiểm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "342fcca6-19b2-5bfa-aaf0-d8369d414555-u01",
+          "speaker_id": "a",
+          "ja": "会社には保険の加入日と保険者名を確認します。市では、この通知の対象月と私の届出を調べていただくんですね。",
+          "vi": "Tôi hỏi công ty ngày tham gia và tên bên bảo hiểm. Thành phố kiểm các tháng trên thông báo và đơn của tôi, đúng không?"
+        },
+        {
+          "id": "342fcca6-19b2-5bfa-aaf0-d8369d414555-u02",
+          "speaker_id": "b",
+          "ja": "はい。会社の資料を受け取ったら、市の記録と照らし合わせます。",
+          "vi": "Đúng. Sau khi nhận giấy công ty, chúng tôi sẽ đối chiếu dữ liệu thành phố."
+        },
+        {
+          "id": "342fcca6-19b2-5bfa-aaf0-d8369d414555-u03",
+          "speaker_id": "a",
+          "ja": "金額の修正が必要かどうかは、その後に判断されますね。",
+          "vi": "Việc có cần sửa số tiền sẽ được quyết sau đó, đúng không?"
+        },
+        {
+          "id": "342fcca6-19b2-5bfa-aaf0-d8369d414555-u04",
+          "speaker_id": "b",
+          "ja": "そのとおりです。今はまだ修正すると決まっていません。",
+          "vi": "Đúng. Hiện chưa quyết sẽ sửa."
+        },
+        {
+          "id": "342fcca6-19b2-5bfa-aaf0-d8369d414555-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。資料を取って、相談番号で戻ります。",
+          "vi": "Tôi hiểu. Tôi sẽ lấy giấy rồi quay lại theo số tư vấn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "342fcca6-19b2-5bfa-aaf0-d8369d414555-u01": {
+            "kind": "original_extension"
+          },
+          "342fcca6-19b2-5bfa-aaf0-d8369d414555-u02": {
+            "kind": "original_extension"
+          },
+          "342fcca6-19b2-5bfa-aaf0-d8369d414555-u03": {
+            "kind": "original_extension"
+          },
+          "342fcca6-19b2-5bfa-aaf0-d8369d414555-u04": {
+            "kind": "original_extension"
+          },
+          "342fcca6-19b2-5bfa-aaf0-d8369d414555-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4",
+      "event_id": "E05",
+      "context_vi": "Sau khi quầy 青葉市 bảo hỏi ngày tham gia bảo hiểm công ty, bạn liên hệ HR; HR nói đã gửi dữ liệu nhưng quầy thành phố chưa thấy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên nhân sự",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u01",
+          "speaker_id": "a",
+          "ja": "市の窓口では会社の加入日が確認できませんでした。人事ではいつ、どこに情報を出しましたか。",
+          "vi": "Quầy thành phố chưa kiểm được ngày tham gia bảo hiểm công ty. Nhân sự đã gửi thông tin khi nào, cho nơi nào?"
+        },
+        {
+          "id": "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u02",
+          "speaker_id": "b",
+          "ja": "こちらの記録では月曜に保険者へ届けました。ただ、市の画面への反映は確認できません。",
+          "vi": "Theo hồ sơ bên tôi, thứ Hai đã gửi bên bảo hiểm. Nhưng tôi chưa kiểm được dữ liệu hiện trên hệ thống thành phố."
+        },
+        {
+          "id": "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u03",
+          "speaker_id": "a",
+          "ja": "『送った日』と『受け付けられた日』は別ですね。受付の控えか番号を確認できますか。",
+          "vi": "Ngày gửi và ngày được nhận là khác nhau nhỉ. Có thể kiểm giấy nhận hoặc số hồ sơ không?"
+        },
+        {
+          "id": "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u04",
+          "speaker_id": "b",
+          "ja": "保険者の受付状況を確認し、分かり次第お知らせします。",
+          "vi": "Tôi sẽ kiểm tình trạng bên bảo hiểm đã nhận và báo khi rõ."
+        },
+        {
+          "id": "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。その結果を市の相談番号と一緒に伝えます。",
+          "vi": "Cảm ơn. Tôi sẽ báo kết quả cùng số tư vấn cho thành phố."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u01": {
+            "kind": "original_extension"
+          },
+          "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u02": {
+            "kind": "original_extension"
+          },
+          "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u03": {
+            "kind": "original_extension"
+          },
+          "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u04": {
+            "kind": "original_extension"
+          },
+          "5bb47ccd-4bc9-5d4d-a226-e1ab5976f0a4-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5fcbe28b-8cb7-5c29-895b-d25dae4481c6",
+      "event_id": "E05",
+      "context_vi": "HR cho biết bạn bắt đầu làm ngày 1 tháng 4, còn giấy bảo hiểm công ty ghi ngày tham gia 3 tháng 4; bạn hỏi ai xác nhận nguồn ngày.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên nhân sự",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u01",
+          "speaker_id": "a",
+          "ja": "入社は四月一日ですが、加入日の紙は三日です。市の通知を確認するため、どちらの日付が保険の記録ですか。",
+          "vi": "Tôi vào làm 1 tháng 4, còn giấy tham gia bảo hiểm ghi ngày 3. Để kiểm thông báo thành phố, ngày nào là dữ liệu bảo hiểm?"
+        },
+        {
+          "id": "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u02",
+          "speaker_id": "b",
+          "ja": "人事の勤務開始記録は一日です。保険者の資格取得日は、こちらの届出と保険者の記録を照合します。",
+          "vi": "Hồ sơ nhân sự ghi bắt đầu làm ngày 1. Với ngày có tư cách bảo hiểm, tôi sẽ đối chiếu đơn công ty gửi và hồ sơ bên bảo hiểm."
+        },
+        {
+          "id": "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u03",
+          "speaker_id": "a",
+          "ja": "では、私が一日を加入日として市へ伝える前に、保険者の確認結果を待ちます。",
+          "vi": "Vậy trước khi tôi báo thành phố ngày 1 là ngày tham gia, tôi sẽ chờ kết quả từ bên bảo hiểm."
+        },
+        {
+          "id": "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u04",
+          "speaker_id": "b",
+          "ja": "はい。確認できた日付を、出所とともにお伝えします。",
+          "vi": "Đúng. Tôi sẽ báo ngày đã xác nhận cùng nguồn dữ liệu."
+        },
+        {
+          "id": "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。二つの日付を混ぜずにメモします。",
+          "vi": "Cảm ơn. Tôi sẽ ghi riêng hai ngày."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "city"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u01": {
+            "kind": "original_extension"
+          },
+          "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u02": {
+            "kind": "original_extension"
+          },
+          "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u03": {
+            "kind": "original_extension"
+          },
+          "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u04": {
+            "kind": "original_extension"
+          },
+          "5fcbe28b-8cb7-5c29-895b-d25dae4481c6-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3799e8d4-6cbf-5a71-bb11-47f7754617ea",
+      "event_id": "E05",
+      "context_vi": "Sau khi biết HR và bên bảo hiểm còn đối chiếu ngày tham gia, bạn có lịch khám trước lúc họ trả lời và hỏi quầy bảo hiểm nên làm gì.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u01",
+          "speaker_id": "a",
+          "ja": "加入日の確認がまだ終わりませんが、明日、病院の予約があります。今日の資格状態はどこで確認できますか。",
+          "vi": "Ngày tham gia chưa kiểm xong, nhưng mai tôi có hẹn khám. Hôm nay tôi kiểm tư cách ở đâu?"
+        },
+        {
+          "id": "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u02",
+          "speaker_id": "b",
+          "ja": "保険者側の記録を照会します。受診日の資格が分からなければ、病院の受付にも現在の状況を伝えてください。",
+          "vi": "Tôi sẽ tra dữ liệu bên bảo hiểm. Nếu chưa rõ tư cách vào ngày khám, xin báo tình trạng hiện tại cho quầy bệnh viện."
+        },
+        {
+          "id": "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u03",
+          "speaker_id": "a",
+          "ja": "資格確認書もまだありません。病院での受付と支払いは、病院に聞くんですね。",
+          "vi": "Tôi cũng chưa có giấy xác nhận tư cách. Cách nhận khám và trả tiền sẽ hỏi bệnh viện, đúng không?"
+        },
+        {
+          "id": "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u04",
+          "speaker_id": "b",
+          "ja": "はい。こちらでは資格の確認を続けますが、病院の費用や後日の扱いは病院と保険者の確認が必要です。",
+          "vi": "Đúng. Bên tôi tiếp tục kiểm tư cách, còn chi phí và xử lý sau cần bệnh viện cùng bên bảo hiểm xác nhận."
+        },
+        {
+          "id": "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。明日、受付に事前に状況を話します。",
+          "vi": "Tôi hiểu. Ngày mai tôi sẽ báo tình trạng trước ở quầy tiếp nhận."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw",
+          "kyokai"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u01": {
+            "kind": "original_extension"
+          },
+          "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u02": {
+            "kind": "original_extension"
+          },
+          "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u03": {
+            "kind": "original_extension"
+          },
+          "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u04": {
+            "kind": "original_extension"
+          },
+          "3799e8d4-6cbf-5a71-bb11-47f7754617ea-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5",
+      "event_id": "E05",
+      "context_vi": "Sau khi bên bảo hiểm xác nhận dữ liệu ngày tham gia, bạn gọi phòng khám 青葉 hư cấu để cập nhật trước buổi khám.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiếp nhận y tế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u01",
+          "speaker_id": "a",
+          "ja": "先ほど保険者から、加入日の確認結果を聞きました。明日の予約について、受付でどう伝えればいいですか。",
+          "vi": "Vừa rồi tôi được bên bảo hiểm báo kết quả kiểm ngày tham gia. Với lịch khám ngày mai, tôi nên báo quầy thế nào?"
+        },
+        {
+          "id": "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u02",
+          "speaker_id": "b",
+          "ja": "加入先と確認された日付、使えるマイナ保険証か資格確認書の有無を教えてください。受付でも資格を確認します。",
+          "vi": "Xin cho biết bên bảo hiểm, ngày đã được xác nhận và có My Number dùng bảo hiểm hoặc giấy xác nhận tư cách không. Quầy cũng sẽ kiểm tư cách."
+        },
+        {
+          "id": "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u03",
+          "speaker_id": "a",
+          "ja": "マイナ保険証は使っておらず、資格確認書はまだ届いていません。保険者の連絡内容と番号を控えています。",
+          "vi": "Tôi không dùng My Number làm bảo hiểm và giấy xác nhận tư cách chưa đến. Tôi đã ghi nội dung cùng số liên hệ từ bên bảo hiểm."
+        },
+        {
+          "id": "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。明日、その内容を持って来てください。受付方法と費用は、その場で確認して説明します。",
+          "vi": "Tôi hiểu. Mai xin mang nội dung đó đến. Cách tiếp nhận và chi phí chúng tôi sẽ kiểm và giải thích tại quầy."
+        },
+        {
+          "id": "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。確認後に診察の受付を進めます。",
+          "vi": "Cảm ơn. Sau khi kiểm, tôi sẽ làm thủ tục khám."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw",
+          "kyokai"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u01": {
+            "kind": "original_extension"
+          },
+          "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u02": {
+            "kind": "original_extension"
+          },
+          "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u03": {
+            "kind": "original_extension"
+          },
+          "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u04": {
+            "kind": "original_extension"
+          },
+          "bb2ece65-d630-5fbb-80a1-6e6d10ed44d5-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

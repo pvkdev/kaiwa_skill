@@ -1,0 +1,1178 @@
+{
+  "stage_uid": "ca0daa40-ecd0-5570-8ebc-1560fdb3fb44",
+  "admin_sources": {
+    "jps_appt": {
+      "kind": "web",
+      "title": "Japan Pension Service: 予約相談について",
+      "url": "https://www.nenkin.go.jp/section/guidance/yoyaku.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 173–194 và 256–266: có tư vấn hẹn, kiểm lịch sử ghi nhận và thông báo; không phải mọi việc đều cần hẹn."
+    },
+    "jps_lang": {
+      "kind": "web",
+      "title": "Japan Pension Service: Consultations in multiple languages",
+      "url": "https://www.nenkin.go.jp/international/english/consult/interpretation_eg.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 55–123: có hỗ trợ tiếng Việt, chủ đề và kênh hỏi; cần hỏi khả dụng theo buổi."
+    },
+    "jps_relief": {
+      "kind": "web",
+      "title": "Japan Pension Service: 国民年金保険料の免除制度・納付猶予制度",
+      "url": "https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 173–240: miễn/hoãn đóng quốc dân cần hồ sơ và phê duyệt, điều kiện khác nhau; không hứa đương sự đủ điều kiện."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "017c65ae-bdeb-5597-b90f-13afb8d5ea73",
+      "event_id": "E01",
+      "context_vi": "Bạn nhận một thông báo nenkin chưa hiểu và gọi văn phòng Japan Pension Service để xin buổi trao đổi.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên đặt lịch",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u01",
+          "speaker_id": "a",
+          "ja": "年金の通知が届きましたが、内容が分かりません。資料を持って相談する時間を取れますか。",
+          "vi": "Tôi nhận thông báo nenkin nhưng chưa hiểu. Tôi có thể hẹn mang giấy đến hỏi không?"
+        },
+        {
+          "id": "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u02",
+          "speaker_id": "b",
+          "ja": "通知の種類を確認します。表題と、何を知りたいか教えてください。",
+          "vi": "Tôi sẽ kiểm loại giấy. Xin cho biết tiêu đề và điều anh/chị muốn biết."
+        },
+        {
+          "id": "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u03",
+          "speaker_id": "a",
+          "ja": "加入の記録についてと書いてあります。転職した時期がどう載っているか確認したいです。",
+          "vi": "Giấy ghi về lịch sử tham gia. Tôi muốn kiểm giai đoạn đổi công ty được ghi thế nào."
+        },
+        {
+          "id": "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u04",
+          "speaker_id": "b",
+          "ja": "記録確認の相談ですね。窓口と予約可能な時間を確認します。",
+          "vi": "Là tư vấn kiểm lịch sử. Tôi sẽ xem quầy và giờ có thể hẹn."
+        },
+        {
+          "id": "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。持参する物も教えてください。",
+          "vi": "Nhờ anh/chị. Xin báo giấy cần mang."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u01": {
+            "kind": "original_extension"
+          },
+          "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u02": {
+            "kind": "original_extension"
+          },
+          "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u03": {
+            "kind": "original_extension"
+          },
+          "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u04": {
+            "kind": "original_extension"
+          },
+          "017c65ae-bdeb-5597-b90f-13afb8d5ea73-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9",
+      "event_id": "E01",
+      "context_vi": "Bạn muốn hỏi nenkin bằng tiếng Việt và gọi trước để kiểm thời điểm có thể dùng hỗ trợ ngôn ngữ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên đặt lịch",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u01",
+          "speaker_id": "a",
+          "ja": "年金の相談をベトナム語でできますか。使える時間を確認したいです。",
+          "vi": "Tôi có thể hỏi nenkin bằng tiếng Việt không? Tôi muốn kiểm thời gian hỗ trợ."
+        },
+        {
+          "id": "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u02",
+          "speaker_id": "b",
+          "ja": "通訳サービスの対象言語です。相談内容と希望の日時を教えてください。",
+          "vi": "Tiếng Việt là ngôn ngữ được hỗ trợ phiên dịch. Xin cho biết nội dung và giờ muốn hỏi."
+        },
+        {
+          "id": "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u03",
+          "speaker_id": "a",
+          "ja": "加入記録についてです。来週の水曜の午前が希望ですが、通訳を使えるか確認できますか。",
+          "vi": "Tôi muốn hỏi lịch sử tham gia. Tôi muốn sáng thứ Tư tuần tới; xin kiểm có phiên dịch không."
+        },
+        {
+          "id": "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u04",
+          "speaker_id": "b",
+          "ja": "その日時と窓口の状況を確認します。確定したら連絡します。",
+          "vi": "Tôi sẽ kiểm giờ đó và tình trạng quầy. Khi chốt sẽ báo."
+        },
+        {
+          "id": "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。確定の連絡を待ちます。",
+          "vi": "Tôi hiểu. Tôi sẽ chờ thông báo xác nhận."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_lang",
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u01": {
+            "kind": "original_extension"
+          },
+          "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u02": {
+            "kind": "original_extension"
+          },
+          "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u03": {
+            "kind": "original_extension"
+          },
+          "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u04": {
+            "kind": "original_extension"
+          },
+          "6a084f1d-d2a1-5b3d-bdb7-e5b08389caf9-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0913157b-7a6a-590d-95e3-673f8882fa5e",
+      "event_id": "E01",
+      "context_vi": "Sau khi bạn xin tư vấn về thông báo nenkin, văn phòng được gọi đã hết lịch gần; bạn cần hỏi sớm vì ngày ghi trên giấy sắp đến.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên đặt lịch",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0913157b-7a6a-590d-95e3-673f8882fa5e-u01",
+          "speaker_id": "b",
+          "ja": "今週の予約枠は埋まっています。次は再来週です。",
+          "vi": "Lịch hẹn tuần này đã đầy. Lượt tiếp theo là tuần sau nữa."
+        },
+        {
+          "id": "0913157b-7a6a-590d-95e3-673f8882fa5e-u02",
+          "speaker_id": "a",
+          "ja": "通知に来週までの返事と書かれています。その前に内容を確認したいのですが、別の相談方法はありますか。",
+          "vi": "Thông báo ghi cần trả lời trước tuần tới. Tôi muốn hiểu trước lúc đó; có cách tư vấn khác không?"
+        },
+        {
+          "id": "0913157b-7a6a-590d-95e3-673f8882fa5e-u03",
+          "speaker_id": "b",
+          "ja": "通知の種類と期限を確認して、電話で聞ける窓口や別の拠点を案内します。",
+          "vi": "Tôi sẽ kiểm loại giấy và hạn, rồi chỉ nơi có thể hỏi qua điện thoại hoặc cơ sở khác."
+        },
+        {
+          "id": "0913157b-7a6a-590d-95e3-673f8882fa5e-u04",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。予約が取れないまま期限を過ぎたくありません。",
+          "vi": "Cảm ơn. Tôi không muốn quá hạn trong lúc chờ lịch."
+        },
+        {
+          "id": "0913157b-7a6a-590d-95e3-673f8882fa5e-u05",
+          "speaker_id": "b",
+          "ja": "まず通知の問い合わせ先にも、期限について相談してください。",
+          "vi": "Trước hết xin hỏi cả đầu mối trên thông báo về thời hạn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_appt",
+          "jps_lang"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0913157b-7a6a-590d-95e3-673f8882fa5e-u01": {
+            "kind": "original_extension"
+          },
+          "0913157b-7a6a-590d-95e3-673f8882fa5e-u02": {
+            "kind": "original_extension"
+          },
+          "0913157b-7a6a-590d-95e3-673f8882fa5e-u03": {
+            "kind": "original_extension"
+          },
+          "0913157b-7a6a-590d-95e3-673f8882fa5e-u04": {
+            "kind": "original_extension"
+          },
+          "0913157b-7a6a-590d-95e3-673f8882fa5e-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "08511961-38f0-5580-b634-d9c9efe09529",
+      "event_id": "E01",
+      "context_vi": "Sau khi đặt tư vấn nenkin, bạn nghe nhầm tên hai văn phòng gần nhau nên gọi xác nhận trước ngày hẹn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên đặt lịch",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "08511961-38f0-5580-b634-d9c9efe09529-u01",
+          "speaker_id": "a",
+          "ja": "予約したのは青葉年金事務所でしょうか。案内のメモには青葉東とあります。",
+          "vi": "Tôi hẹn ở Văn phòng Nenkin Aoba phải không? Ghi chú lại có Aoba East."
+        },
+        {
+          "id": "08511961-38f0-5580-b634-d9c9efe09529-u02",
+          "speaker_id": "b",
+          "ja": "予約番号を確認します。こちらの記録は青葉東年金事務所です。",
+          "vi": "Tôi kiểm số hẹn. Hồ sơ bên tôi ghi Văn phòng Nenkin Aoba East."
+        },
+        {
+          "id": "08511961-38f0-5580-b634-d9c9efe09529-u03",
+          "speaker_id": "a",
+          "ja": "住所と最寄り駅をもう一度教えてください。別の建物へ行きたくありません。",
+          "vi": "Xin nhắc lại địa chỉ và ga gần nhất. Tôi không muốn đến nhầm tòa."
+        },
+        {
+          "id": "08511961-38f0-5580-b634-d9c9efe09529-u04",
+          "speaker_id": "b",
+          "ja": "予約票の住所を読み上げます。公式の案内図も確認してください。",
+          "vi": "Tôi sẽ đọc địa chỉ trên phiếu hẹn. Xin xem thêm sơ đồ chính thức."
+        },
+        {
+          "id": "08511961-38f0-5580-b634-d9c9efe09529-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。青葉東の住所を予約票と照合します。",
+          "vi": "Tôi hiểu. Tôi sẽ đối chiếu địa chỉ Aoba East với phiếu hẹn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "08511961-38f0-5580-b634-d9c9efe09529-u01": {
+            "kind": "original_extension"
+          },
+          "08511961-38f0-5580-b634-d9c9efe09529-u02": {
+            "kind": "original_extension"
+          },
+          "08511961-38f0-5580-b634-d9c9efe09529-u03": {
+            "kind": "original_extension"
+          },
+          "08511961-38f0-5580-b634-d9c9efe09529-u04": {
+            "kind": "original_extension"
+          },
+          "08511961-38f0-5580-b634-d9c9efe09529-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "96ec5a99-0cd3-5dbf-883f-20655b7f92c2",
+      "event_id": "E02",
+      "context_vi": "Tại quầy nenkin, bạn hỏi quá trình tham gia được ghi thế nào qua giai đoạn đổi công ty.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u01",
+          "speaker_id": "a",
+          "ja": "昨年、会社を変えました。前の会社と今の会社の期間が、記録にどう載っているか一緒に見たいです。",
+          "vi": "Năm ngoái tôi đổi công ty. Tôi muốn cùng xem thời gian ở công ty cũ và hiện tại được ghi ra sao."
+        },
+        {
+          "id": "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u02",
+          "speaker_id": "b",
+          "ja": "本人確認をしてから、記録の期間を順に見ます。会社の名前と、おおよその時期を教えてください。",
+          "vi": "Sau khi xác minh người, ta xem từng giai đoạn. Xin cho tên công ty và thời điểm khoảng chừng."
+        },
+        {
+          "id": "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u03",
+          "speaker_id": "a",
+          "ja": "前の会社は三月まで、今の会社は四月からです。正確な日は書類を持ってきました。",
+          "vi": "Công ty cũ đến tháng 3, công ty mới từ tháng 4. Tôi mang giấy ghi ngày chính xác."
+        },
+        {
+          "id": "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u04",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。ご本人の資料と、こちらの表示を照らし合わせます。",
+          "vi": "Cảm ơn. Tôi sẽ đối chiếu giấy của anh/chị với dữ liệu bên này."
+        },
+        {
+          "id": "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u05",
+          "speaker_id": "a",
+          "ja": "違いがあれば、その箇所を教えてください。",
+          "vi": "Nếu có khác, xin chỉ đúng phần đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u01": {
+            "kind": "original_extension"
+          },
+          "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u02": {
+            "kind": "original_extension"
+          },
+          "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u03": {
+            "kind": "original_extension"
+          },
+          "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u04": {
+            "kind": "original_extension"
+          },
+          "96ec5a99-0cd3-5dbf-883f-20655b7f92c2-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "afb717e0-9941-5046-96b3-db8845220d73",
+      "event_id": "E02",
+      "context_vi": "Tại quầy nenkin, bạn thấy tháng đầu ở công ty mới chưa hiện trong lịch sử ghi nhận và nêu mốc cụ thể.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "afb717e0-9941-5046-96b3-db8845220d73-u01",
+          "speaker_id": "a",
+          "ja": "新しい会社で四月から働きましたが、この画面には五月からと出ています。四月を確認したいです。",
+          "vi": "Tôi làm ở công ty mới từ tháng 4, nhưng màn hình hiện từ tháng 5. Tôi muốn kiểm tháng 4."
+        },
+        {
+          "id": "afb717e0-9941-5046-96b3-db8845220d73-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。会社の書類と、こちらの記録を確認します。今は記録が誤りと決められません。",
+          "vi": "Tôi hiểu. Tôi sẽ xem giấy công ty và dữ liệu bên này. Giờ chưa thể kết luận hồ sơ sai."
+        },
+        {
+          "id": "afb717e0-9941-5046-96b3-db8845220d73-u03",
+          "speaker_id": "a",
+          "ja": "こちらが入社日を示す紙です。加入の扱いは別に確認が必要でしょうか。",
+          "vi": "Đây là giấy ghi ngày vào làm. Việc tham gia có cần kiểm riêng không?"
+        },
+        {
+          "id": "afb717e0-9941-5046-96b3-db8845220d73-u04",
+          "speaker_id": "b",
+          "ja": "はい。勤務開始日と記録の開始日を区別して、担当に照会します。",
+          "vi": "Đúng. Tôi sẽ tách ngày bắt đầu làm và ngày bắt đầu ghi nhận để hỏi người phụ trách."
+        },
+        {
+          "id": "afb717e0-9941-5046-96b3-db8845220d73-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。四月の状態を確認したいと記録してください。",
+          "vi": "Tôi hiểu. Xin ghi tôi muốn kiểm trạng thái tháng 4."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "afb717e0-9941-5046-96b3-db8845220d73-u01": {
+            "kind": "original_extension"
+          },
+          "afb717e0-9941-5046-96b3-db8845220d73-u02": {
+            "kind": "original_extension"
+          },
+          "afb717e0-9941-5046-96b3-db8845220d73-u03": {
+            "kind": "original_extension"
+          },
+          "afb717e0-9941-5046-96b3-db8845220d73-u04": {
+            "kind": "original_extension"
+          },
+          "afb717e0-9941-5046-96b3-db8845220d73-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "68aefdb2-702a-5030-a73e-c1e779f15f31",
+      "event_id": "E02",
+      "context_vi": "Nhân viên nenkin hỏi chính xác ngày rời công ty cũ, nhưng bạn chỉ nhớ là cuối tháng 3.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "68aefdb2-702a-5030-a73e-c1e779f15f31-u01",
+          "speaker_id": "b",
+          "ja": "前の会社の終了日は何日ですか。",
+          "vi": "Ngày kết thúc ở công ty cũ là ngày nào?"
+        },
+        {
+          "id": "68aefdb2-702a-5030-a73e-c1e779f15f31-u02",
+          "speaker_id": "a",
+          "ja": "三月の終わりごろですが、正確な日は覚えていません。会社の書類を見てから答えたいです。",
+          "vi": "Khoảng cuối tháng 3, nhưng tôi không nhớ ngày chính xác. Tôi muốn xem giấy công ty rồi trả lời."
+        },
+        {
+          "id": "68aefdb2-702a-5030-a73e-c1e779f15f31-u03",
+          "speaker_id": "b",
+          "ja": "分かりました。今は日付を確定せず、ほかの期間だけ確認します。",
+          "vi": "Tôi hiểu. Giờ chưa chốt ngày, ta kiểm các giai đoạn khác trước."
+        },
+        {
+          "id": "68aefdb2-702a-5030-a73e-c1e779f15f31-u04",
+          "speaker_id": "a",
+          "ja": "確認した後、相談番号で電話して伝えられますか。",
+          "vi": "Sau khi kiểm, tôi gọi báo theo số tư vấn được không?"
+        },
+        {
+          "id": "68aefdb2-702a-5030-a73e-c1e779f15f31-u05",
+          "speaker_id": "b",
+          "ja": "この窓口の連絡方法を紙でお渡しします。",
+          "vi": "Tôi sẽ đưa giấy ghi cách liên hệ của quầy này."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "68aefdb2-702a-5030-a73e-c1e779f15f31-u01": {
+            "kind": "original_extension"
+          },
+          "68aefdb2-702a-5030-a73e-c1e779f15f31-u02": {
+            "kind": "original_extension"
+          },
+          "68aefdb2-702a-5030-a73e-c1e779f15f31-u03": {
+            "kind": "original_extension"
+          },
+          "68aefdb2-702a-5030-a73e-c1e779f15f31-u04": {
+            "kind": "original_extension"
+          },
+          "68aefdb2-702a-5030-a73e-c1e779f15f31-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5e327891-f821-5b47-b4ac-8ca4680386da",
+      "event_id": "E02",
+      "context_vi": "Sau khi bạn hỏi vì tháng 4 chưa hiện, nhân viên nenkin cần tài liệu từ công ty mới để kiểm thời điểm tham gia.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5e327891-f821-5b47-b4ac-8ca4680386da-u01",
+          "speaker_id": "b",
+          "ja": "四月の扱いを調べるため、会社側の加入に関する記録を確認したいです。",
+          "vi": "Để xem tháng 4 được xử lý ra sao, tôi muốn kiểm hồ sơ tham gia phía công ty."
+        },
+        {
+          "id": "5e327891-f821-5b47-b4ac-8ca4680386da-u02",
+          "speaker_id": "a",
+          "ja": "会社のどの部署に、何という資料を頼めばよいですか。",
+          "vi": "Tôi nên hỏi bộ phận nào ở công ty, xin tài liệu tên gì?"
+        },
+        {
+          "id": "5e327891-f821-5b47-b4ac-8ca4680386da-u03",
+          "speaker_id": "b",
+          "ja": "人事または保険担当に、加入日が分かる資料があるか聞いてください。具体的な書類名は会社の形式によります。",
+          "vi": "Xin hỏi nhân sự hoặc người phụ trách bảo hiểm có giấy ghi ngày tham gia không. Tên giấy cụ thể tùy dạng công ty dùng."
+        },
+        {
+          "id": "5e327891-f821-5b47-b4ac-8ca4680386da-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。入社日だけでなく、加入日の記録を確認して持ってきます。",
+          "vi": "Tôi hiểu. Tôi sẽ kiểm ngày tham gia, không chỉ ngày vào làm, rồi mang đến."
+        },
+        {
+          "id": "5e327891-f821-5b47-b4ac-8ca4680386da-u05",
+          "speaker_id": "b",
+          "ja": "はい。受け取った資料を見て、次の確認を進めます。",
+          "vi": "Đúng. Sau khi xem giấy đó, chúng tôi sẽ kiểm tiếp."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5e327891-f821-5b47-b4ac-8ca4680386da-u01": {
+            "kind": "original_extension"
+          },
+          "5e327891-f821-5b47-b4ac-8ca4680386da-u02": {
+            "kind": "original_extension"
+          },
+          "5e327891-f821-5b47-b4ac-8ca4680386da-u03": {
+            "kind": "original_extension"
+          },
+          "5e327891-f821-5b47-b4ac-8ca4680386da-u04": {
+            "kind": "original_extension"
+          },
+          "5e327891-f821-5b47-b4ac-8ca4680386da-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "4780d9c1-640e-53d7-ab55-b4d378dbc951",
+      "event_id": "E03",
+      "context_vi": "Bạn nhận giấy về khoản đóng nenkin trong thời gian tạm nghỉ việc và đang khó xoay tiền; bạn hỏi quầy tư vấn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "4780d9c1-640e-53d7-ab55-b4d378dbc951-u01",
+          "speaker_id": "a",
+          "ja": "仕事を休んでいた時期の年金の通知が来ました。今、支払いが難しく、どこで相談すればいいですか。",
+          "vi": "Tôi nhận giấy nenkin cho thời gian nghỉ việc. Hiện tôi khó đóng, có thể hỏi ở đâu?"
+        },
+        {
+          "id": "4780d9c1-640e-53d7-ab55-b4d378dbc951-u02",
+          "speaker_id": "b",
+          "ja": "まず通知の種類と、対象の月を確認します。国民年金の保険料についての相談かを見ます。",
+          "vi": "Trước hết tôi kiểm loại giấy và tháng liên quan, xem có phải hỏi khoản đóng quốc dân không."
+        },
+        {
+          "id": "4780d9c1-640e-53d7-ab55-b4d378dbc951-u03",
+          "speaker_id": "a",
+          "ja": "こちらが通知です。自分で未納のまま放置したくないので、相談したいです。",
+          "vi": "Đây là giấy. Tôi không muốn để chưa đóng mà không hỏi gì."
+        },
+        {
+          "id": "4780d9c1-640e-53d7-ab55-b4d378dbc951-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。該当する相談窓口と、利用できる申請があるか個別に説明します。",
+          "vi": "Tôi hiểu. Tôi sẽ chỉ quầy phù hợp và giải thích theo trường hợp có đơn nào có thể dùng."
+        },
+        {
+          "id": "4780d9c1-640e-53d7-ab55-b4d378dbc951-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。今日は条件を聞き、必要な資料を確認します。",
+          "vi": "Nhờ anh/chị. Hôm nay tôi muốn nghe điều kiện và kiểm giấy cần."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_lang",
+          "jps_relief"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "4780d9c1-640e-53d7-ab55-b4d378dbc951-u01": {
+            "kind": "original_extension"
+          },
+          "4780d9c1-640e-53d7-ab55-b4d378dbc951-u02": {
+            "kind": "original_extension"
+          },
+          "4780d9c1-640e-53d7-ab55-b4d378dbc951-u03": {
+            "kind": "original_extension"
+          },
+          "4780d9c1-640e-53d7-ab55-b4d378dbc951-u04": {
+            "kind": "original_extension"
+          },
+          "4780d9c1-640e-53d7-ab55-b4d378dbc951-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1ac29e16-f18f-54a6-b974-bc8a1c9f850f",
+      "event_id": "E03",
+      "context_vi": "Quầy nenkin giải thích có các đường hỏi về khoản đóng và đơn miễn hoặc hoãn; bạn muốn hiểu từng điều kiện trước khi chọn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u01",
+          "speaker_id": "a",
+          "ja": "免除、納付猶予、通常の納付という言葉を聞きました。私の場合の条件を一つずつ説明していただけますか。",
+          "vi": "Tôi nghe các từ miễn, hoãn đóng và nộp bình thường. Xin giải thích từng điều kiện với trường hợp tôi được không?"
+        },
+        {
+          "id": "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u02",
+          "speaker_id": "b",
+          "ja": "まず年齢、所得、世帯の状況と対象期間を確認します。制度ごとに審査の条件が違います。",
+          "vi": "Trước hết tôi kiểm tuổi, thu nhập, tình trạng hộ và giai đoạn liên quan. Mỗi chế độ có điều kiện xét khác nhau."
+        },
+        {
+          "id": "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u03",
+          "speaker_id": "a",
+          "ja": "今日は失業した時期を示す紙と通知を持っています。これで判断できますか。",
+          "vi": "Hôm nay tôi có giấy ghi thời gian nghỉ việc và thông báo. Đủ để đánh giá chưa?"
+        },
+        {
+          "id": "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u04",
+          "speaker_id": "b",
+          "ja": "資料を見て、追加が必要か案内します。相談しただけではどれも適用されません。",
+          "vi": "Tôi sẽ xem giấy rồi báo có cần thêm không. Chỉ tư vấn chưa làm chế độ nào áp dụng."
+        },
+        {
+          "id": "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。申請が必要なら、その手順も聞きます。",
+          "vi": "Tôi hiểu. Nếu cần nộp đơn, tôi sẽ hỏi cách làm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_relief"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u01": {
+            "kind": "original_extension"
+          },
+          "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u02": {
+            "kind": "original_extension"
+          },
+          "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u03": {
+            "kind": "original_extension"
+          },
+          "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u04": {
+            "kind": "original_extension"
+          },
+          "1ac29e16-f18f-54a6-b974-bc8a1c9f850f-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3d041f7e-87ce-5c18-8b8c-4defae2dca27",
+      "event_id": "E03",
+      "context_vi": "Sau khi nghe các lựa chọn ở quầy nenkin, bạn chưa quyết nộp đơn nào vì còn cần kiểm thu nhập trong hộ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u01",
+          "speaker_id": "a",
+          "ja": "今日は申請を決めず、家の収入に関する資料を確認してから、もう一度相談したいです。",
+          "vi": "Hôm nay tôi chưa chọn nộp đơn, muốn kiểm giấy thu nhập trong hộ rồi hỏi lần nữa."
+        },
+        {
+          "id": "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。必要な期間と、確認したい資料を書いてお渡しします。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi giai đoạn và giấy cần kiểm cho anh/chị."
+        },
+        {
+          "id": "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u03",
+          "speaker_id": "a",
+          "ja": "次の相談はどう予約できますか。通知の期限があれば、それも先に知りたいです。",
+          "vi": "Buổi tư vấn tiếp tôi hẹn thế nào? Nếu thông báo có hạn, tôi muốn biết trước."
+        },
+        {
+          "id": "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u04",
+          "speaker_id": "b",
+          "ja": "通知を見て期限を確認し、相談窓口と日時をご案内します。",
+          "vi": "Tôi sẽ xem giấy kiểm hạn rồi báo quầy và giờ tư vấn."
+        },
+        {
+          "id": "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。判断を先延ばしにする前に、期限を控えます。",
+          "vi": "Tôi hiểu. Trước khi dời quyết định, tôi sẽ ghi hạn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_relief",
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u01": {
+            "kind": "original_extension"
+          },
+          "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u02": {
+            "kind": "original_extension"
+          },
+          "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u03": {
+            "kind": "original_extension"
+          },
+          "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u04": {
+            "kind": "original_extension"
+          },
+          "3d041f7e-87ce-5c18-8b8c-4defae2dca27-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3e334f00-6044-58a9-8772-c5bd08893728",
+      "event_id": "E03",
+      "context_vi": "Sau khi nghe về miễn hoặc hoãn đóng nenkin, bạn tưởng nghỉ việc thì tự động được miễn khoản đóng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3e334f00-6044-58a9-8772-c5bd08893728-u01",
+          "speaker_id": "a",
+          "ja": "失業したと伝えたので、もう保険料は自動で免除されていますか。",
+          "vi": "Tôi đã nói mình nghỉ việc, vậy khoản đóng tự được miễn rồi ạ?"
+        },
+        {
+          "id": "3e334f00-6044-58a9-8772-c5bd08893728-u02",
+          "speaker_id": "b",
+          "ja": "いいえ。相談だけでは免除や猶予は決まりません。申請と審査が必要です。",
+          "vi": "Không. Chỉ tư vấn chưa quyết định miễn hay hoãn. Cần nộp đơn và xét."
+        },
+        {
+          "id": "3e334f00-6044-58a9-8772-c5bd08893728-u03",
+          "speaker_id": "a",
+          "ja": "では、私の対象期間と必要書類を確認してから申請するか決めます。",
+          "vi": "Vậy tôi sẽ kiểm giai đoạn của mình và giấy cần rồi mới quyết có nộp đơn không."
+        },
+        {
+          "id": "3e334f00-6044-58a9-8772-c5bd08893728-u04",
+          "speaker_id": "b",
+          "ja": "はい。承認の可否も、出した後の審査で決まります。",
+          "vi": "Đúng. Việc được duyệt hay không cũng do xét sau khi nộp."
+        },
+        {
+          "id": "3e334f00-6044-58a9-8772-c5bd08893728-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。通知を放置せず、申請方法を聞きます。",
+          "vi": "Tôi hiểu. Tôi sẽ không bỏ qua thông báo và hỏi cách nộp."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_relief"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3e334f00-6044-58a9-8772-c5bd08893728-u01": {
+            "kind": "original_extension"
+          },
+          "3e334f00-6044-58a9-8772-c5bd08893728-u02": {
+            "kind": "original_extension"
+          },
+          "3e334f00-6044-58a9-8772-c5bd08893728-u03": {
+            "kind": "original_extension"
+          },
+          "3e334f00-6044-58a9-8772-c5bd08893728-u04": {
+            "kind": "original_extension"
+          },
+          "3e334f00-6044-58a9-8772-c5bd08893728-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94",
+      "event_id": "E04",
+      "context_vi": "Bạn trở lại quầy nenkin với giấy của công ty mới ghi ngày tham gia, sau buổi hỏi vì tháng 4 chưa hiện.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u01",
+          "speaker_id": "a",
+          "ja": "前回、四月の加入記録を確認したいと相談しました。会社から加入日が書かれた資料を受け取りました。",
+          "vi": "Lần trước tôi hỏi tháng 4 chưa hiện trong lịch sử tham gia. Tôi đã nhận giấy công ty ghi ngày tham gia."
+        },
+        {
+          "id": "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u02",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。前回の相談番号と、資料を確認します。",
+          "vi": "Cảm ơn. Tôi sẽ kiểm số tư vấn trước và giấy này."
+        },
+        {
+          "id": "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u03",
+          "speaker_id": "a",
+          "ja": "この日付が、今の記録とどう違うか見ていただけますか。",
+          "vi": "Xin xem ngày này khác dữ liệu hiện tại thế nào."
+        },
+        {
+          "id": "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u04",
+          "speaker_id": "b",
+          "ja": "はい。照合し、訂正の要否は担当が判断します。",
+          "vi": "Được. Tôi sẽ đối chiếu; người phụ trách sẽ quyết có cần sửa không."
+        },
+        {
+          "id": "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。資料を渡した控えもお願いします。",
+          "vi": "Tôi hiểu. Xin cho tôi giấy ghi đã nhận tài liệu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u01": {
+            "kind": "original_extension"
+          },
+          "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u02": {
+            "kind": "original_extension"
+          },
+          "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u03": {
+            "kind": "original_extension"
+          },
+          "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u04": {
+            "kind": "original_extension"
+          },
+          "fcd0c713-15a4-5cb2-be4e-164ee5fe8b94-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e7546744-4801-5d51-bb65-4ac8b06f2101",
+      "event_id": "E04",
+      "context_vi": "Quầy nenkin đã nhận giấy công ty nhưng chưa tra xong lý do tháng 4 chưa hiện trong dữ liệu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e7546744-4801-5d51-bb65-4ac8b06f2101-u01",
+          "speaker_id": "b",
+          "ja": "会社の資料は受け取りましたが、記録の照会はまだ終わっていません。",
+          "vi": "Chúng tôi đã nhận giấy công ty, nhưng chưa tra xong lịch sử."
+        },
+        {
+          "id": "e7546744-4801-5d51-bb65-4ac8b06f2101-u02",
+          "speaker_id": "a",
+          "ja": "では、この相談の番号と、次に状態を聞ける日を教えてください。",
+          "vi": "Vậy xin cho số tư vấn và ngày tôi có thể hỏi trạng thái tiếp."
+        },
+        {
+          "id": "e7546744-4801-5d51-bb65-4ac8b06f2101-u03",
+          "speaker_id": "b",
+          "ja": "この番号です。来週の木曜以降に、この窓口へ連絡してください。",
+          "vi": "Đây là số. Từ thứ Năm tuần tới xin liên hệ quầy này."
+        },
+        {
+          "id": "e7546744-4801-5d51-bb65-4ac8b06f2101-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。四月の扱いはまだ未確認としておきます。",
+          "vi": "Tôi hiểu. Phần tháng 4 vẫn để chưa xác nhận."
+        },
+        {
+          "id": "e7546744-4801-5d51-bb65-4ac8b06f2101-u05",
+          "speaker_id": "b",
+          "ja": "はい。照会の結果が出たら、必要な次の手順も案内します。",
+          "vi": "Đúng. Khi có kết quả tra, chúng tôi sẽ hướng dẫn bước tiếp nếu cần."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e7546744-4801-5d51-bb65-4ac8b06f2101-u01": {
+            "kind": "original_extension"
+          },
+          "e7546744-4801-5d51-bb65-4ac8b06f2101-u02": {
+            "kind": "original_extension"
+          },
+          "e7546744-4801-5d51-bb65-4ac8b06f2101-u03": {
+            "kind": "original_extension"
+          },
+          "e7546744-4801-5d51-bb65-4ac8b06f2101-u04": {
+            "kind": "original_extension"
+          },
+          "e7546744-4801-5d51-bb65-4ac8b06f2101-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8a072025-5f45-590b-a105-31244db134d9",
+      "event_id": "E04",
+      "context_vi": "Sau khi quầy nenkin cập nhật một phần lịch sử, bạn thấy tháng 4 đã hiện nhưng ngày bắt đầu lại lệch giấy công ty.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8a072025-5f45-590b-a105-31244db134d9-u01",
+          "speaker_id": "a",
+          "ja": "四月の記録は表示されました。ただ、開始日が会社の資料より一日遅くなっています。",
+          "vi": "Tháng 4 đã hiện rồi. Nhưng ngày bắt đầu muộn hơn giấy công ty một ngày."
+        },
+        {
+          "id": "8a072025-5f45-590b-a105-31244db134d9-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。表示と資料の日付をもう一度照合します。",
+          "vi": "Tôi hiểu. Tôi sẽ đối chiếu lại ngày trên màn hình và giấy."
+        },
+        {
+          "id": "8a072025-5f45-590b-a105-31244db134d9-u03",
+          "speaker_id": "a",
+          "ja": "この資料は四月二日、画面は四月三日です。どの記録を基にしているか確認できますか。",
+          "vi": "Giấy này ghi 2 tháng 4, màn hình ghi 3 tháng 4. Có thể kiểm dữ liệu gốc nào được dùng không?"
+        },
+        {
+          "id": "8a072025-5f45-590b-a105-31244db134d9-u04",
+          "speaker_id": "b",
+          "ja": "担当に確認します。今はどちらが正しいか断定しません。",
+          "vi": "Tôi sẽ hỏi người phụ trách. Hiện chưa kết luận ngày nào đúng."
+        },
+        {
+          "id": "8a072025-5f45-590b-a105-31244db134d9-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。差のある一日だけ、別に記録してください。",
+          "vi": "Cảm ơn. Xin ghi riêng chỗ lệch một ngày."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8a072025-5f45-590b-a105-31244db134d9-u01": {
+            "kind": "original_extension"
+          },
+          "8a072025-5f45-590b-a105-31244db134d9-u02": {
+            "kind": "original_extension"
+          },
+          "8a072025-5f45-590b-a105-31244db134d9-u03": {
+            "kind": "original_extension"
+          },
+          "8a072025-5f45-590b-a105-31244db134d9-u04": {
+            "kind": "original_extension"
+          },
+          "8a072025-5f45-590b-a105-31244db134d9-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "536f4485-0dc4-57f6-93b8-6d429500f03f",
+      "event_id": "E04",
+      "context_vi": "Sau buổi quầy nenkin nhận giấy công ty, bạn tóm tắt trạng thái hồ sơ và người cần liên hệ tiếp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "536f4485-0dc4-57f6-93b8-6d429500f03f-u01",
+          "speaker_id": "a",
+          "ja": "確認します。会社の加入日の資料は今日受け取られ、四月の記録は担当が照会中ですね。",
+          "vi": "Xin nhắc lại: giấy công ty ghi ngày tham gia đã được nhận hôm nay, còn lịch sử tháng 4 người phụ trách đang tra, đúng không?"
+        },
+        {
+          "id": "536f4485-0dc4-57f6-93b8-6d429500f03f-u02",
+          "speaker_id": "b",
+          "ja": "はい。会社の原資料について追加で必要なら、こちらからお知らせします。",
+          "vi": "Đúng. Nếu cần thêm tài liệu gốc từ công ty, chúng tôi sẽ báo."
+        },
+        {
+          "id": "536f4485-0dc4-57f6-93b8-6d429500f03f-u03",
+          "speaker_id": "a",
+          "ja": "私は相談番号を保管し、来週木曜以降にこの窓口へ状態を聞きます。",
+          "vi": "Tôi giữ số tư vấn và từ thứ Năm tuần tới hỏi trạng thái ở quầy này."
+        },
+        {
+          "id": "536f4485-0dc4-57f6-93b8-6d429500f03f-u04",
+          "speaker_id": "b",
+          "ja": "そのとおりです。照会が終わるまで、記録が訂正されたとは言えません。",
+          "vi": "Đúng. Đến khi tra xong, chưa thể nói lịch sử đã được sửa."
+        },
+        {
+          "id": "536f4485-0dc4-57f6-93b8-6d429500f03f-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。会社からも連絡があれば持ってきます。",
+          "vi": "Tôi hiểu. Nếu công ty có thông tin thêm tôi sẽ mang đến."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jps_appt"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "536f4485-0dc4-57f6-93b8-6d429500f03f-u01": {
+            "kind": "original_extension"
+          },
+          "536f4485-0dc4-57f6-93b8-6d429500f03f-u02": {
+            "kind": "original_extension"
+          },
+          "536f4485-0dc4-57f6-93b8-6d429500f03f-u03": {
+            "kind": "original_extension"
+          },
+          "536f4485-0dc4-57f6-93b8-6d429500f03f-u04": {
+            "kind": "original_extension"
+          },
+          "536f4485-0dc4-57f6-93b8-6d429500f03f-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
