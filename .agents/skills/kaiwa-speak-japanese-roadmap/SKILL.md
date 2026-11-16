@@ -18,6 +18,10 @@ V7 hướng tới hai loại chặng trong cùng một lộ trình. Chặng topi
 
 ## Gom bài và chọn vị trí
 
+Mục tiêu bao phủ toàn bộ kiến thức dạy được của chín sách trong nguồn hiện có. Tìm nơi dạy cho từng nghĩa, sắc thái, cặp đối chiếu, cách đáp, ghi chú mở rộng và bài tập có đóng góp riêng. Khi hai sách dạy cùng ý, liên kết cả hai về chỗ học và giữ sắc thái riêng của mỗi sách. Tận dụng tài liệu hỗ trợ ở nơi người học hoặc người soạn thực sự dùng được. Nếu một ý chưa hợp các topic hiện tại, thử chuyên đề độc lập hoặc vị trí khác. Chỉ loại khi đã đọc và có lý do cụ thể khiến việc đưa vào lộ trình bất hợp lý. Ghi ngoại lệ và cách đã cân nhắc xử lý vào báo cáo.
+
+Ưu tiên giữ nguyên mạch **bài kiến thức** cùng ví dụ và bài luyện của nó. Pack là đơn vị truy nguồn. Khi nhiều ý chung một track, có thể chia theo ranh giới sư phạm nếu ghi được đích cho từng phần. Một chuyên đề có thể nhận nhiều bài còn nguyên mạch từ các sách khác nhau. Các ví dụ đổi bối cảnh vẫn dùng được trong chuyên đề. Flow đề xuất để chủ dự án duyệt ở [kế hoạch V7](../../../kaiwa_skill/planning/v7/PLAN.md#flow-đề-xuất-để-duyệt).
+
 - Viết thử một câu mục tiêu quan sát được, chẳng hạn *khi nghe lời nhờ chưa rõ phạm vi, người học biết hỏi lại mà vẫn thể hiện thiện chí*. Thử giải thích mỗi bài nguồn đóng góp gì cho mục tiêu. Có thể gom khác sách, khác bối cảnh hoặc giữ chuyên đề một sách khi bài gốc đã đủ mạch. Tên learner bằng tiếng Việt tự nhiên, diễn tả được việc người học làm được.
 - Khi hai ứng viên cùng tên, đối chiếu vai, mức thân mật, hậu quả khi dùng sai và thao tác nghe–đáp. Gộp nếu học chung giúp thấy khác biệt cần thiết. Tách khi người học phải chuyển sang một năng lực khác hoặc một quan hệ vượt xa độ khó hiện tại. Chuyên đề sau được dùng lại nguồn nếu thêm một nhiệm vụ giao tiếp hoặc sắc thái có ý nghĩa. Ghi sự tiến triển trong quyết định nội bộ.
 - Tra các chặng từng dùng bài và các chặng khác có tình huống thích hợp. Mở tình huống cụ thể, thử hình dung một lượt nói mà người học có thể dùng kiến thức mới. Ghi UID chặng cùng ID tình huống tại chặng. Một cụm từ giống nhau trong tiêu đề chưa đủ chứng minh hợp vị trí.

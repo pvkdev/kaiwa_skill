@@ -34,6 +34,18 @@ B08 必須700 tiếp tục thuộc nguồn shadowing topic. [Dữ liệu V6.5](.
 - **Quanh T-012**, B07 mục 91 悪いんだけど và B11 mục 61 về ～が／～けど có thể hỗ trợ mở lời nhờ. Xem thêm tình huống người nhận cần hỏi rõ phạm vi. Chỉ gom hai phía của cuộc nhờ vả khi người học nhìn thấy được mạch đối đáp.
 - **Quanh H-050**, B06 mục 184 難しいです và B18 mục về lời từ chối 申し訳ないのですが là ứng viên cho cách báo giới hạn mà giữ quan hệ. So với nguồn B07 dùng ở chặng trước để xác định điều mới cần dạy, chẳng hạn từ chối yêu cầu của đối tác và mở đường thương lượng. Cả ba ví dụ đều là giả thuyết phân bổ dựa trên hồ sơ cũ. Pilot sẽ kiểm tra bằng việc đọc bài và tình huống thực tế.
 
+## Bao phủ kiến thức
+
+Yêu cầu bao phủ áp dụng đến từng ý học trong nguồn clean. Mục tiêu là mọi kiến thức dạy được của chín sách đều có chỗ học, kể cả nghĩa phụ, sắc thái và ví dụ mở rộng. Có thể ghép cùng ý qua nhiều sách. Mỗi ngoại lệ phải chỉ ra phần bị bỏ và vì sao đưa vào không hợp lý. Số lượt lưu trong kho và số pack đã gắn vào chuyên đề chỉ là số liệu kiểm kê.
+
+## Flow đề xuất để duyệt
+
+1. Mở chặng bằng một mục tiêu nói cụ thể và một lượt thoại ngắn cho thấy người học cần chọn cách nói ở đâu. Có thể dùng chính hội thoại mở đầu của sách trong phần đầu video.
+2. Xem video kiến thức dựa trên bài nguồn. Giảng các cách dùng, đối chiếu quan hệ và sắc thái, giữ ví dụ và ghi chú có ý riêng. Nên cho đọc được phần giảng Nhật–Việt khi video chưa sẵn sàng.
+3. Ngay sau video, vào shadowing ví dụ tương ứng. Luyện các câu rồi các đoạn đủ ngữ cảnh theo mạch kiến thức vừa học. Hội thoại cho phép nghe/nói toàn đoạn hoặc luyện một vai rồi đổi vai. Câu Nhật có nghĩa Việt, vai và giọng TTS do dữ liệu mô tả. Ví dụ vẫn có thể nằm ở nhà, ở lớp hay ở công ty trong cùng một bài.
+4. Một chuyên đề nhỏ có thể có đúng một cặp video → shadowing. Nếu nhiều bài bổ sung cùng mục tiêu nhưng cần hai lần giải thích riêng, có thể lặp cặp này. Nếu giảng liền và đối chiếu trực tiếp dễ hiểu hơn, có thể gom nhiều nguồn vào một cặp. Chỉ rõ bài và ví dụ thuộc cặp nào trong bản thiết kế nội dung sau này.
+5. Cuối chuyên đề, gợi chặng topic kế tiếp có cơ hội dùng ngay. Đưa kiến thức vào hội thoại tình huống và Live của chặng topic theo ngữ cảnh. Người học được tự chọn học tiếp hoặc quay lại luyện một vai. Đây là phương án flow để bàn, chưa phải schema node đã chốt.
+
 ## Quyết định cần xem ở bản pilot
 
 Xem mục tiêu có vừa một chuyên đề, các bài trong nhóm bổ sung cho nhau ở đâu, người học có sớm gặp dịp dùng lại hay không, và hai cấp liền nhau có khác biệt đáng học hay không. Khi xem phần admin, kiểm khả năng tìm lại toàn bộ ví dụ và kiến thức gốc kể cả những tiểu mục tách ra. Số lượng chuyên đề theo cấp, nhịp xen giữa các topic và cách trình bày bài giảng bên trong vẫn mở cho chủ dự án quyết định dựa trên bản review.

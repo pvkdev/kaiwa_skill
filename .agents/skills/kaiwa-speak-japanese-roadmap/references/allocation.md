@@ -12,6 +12,8 @@
 
 ## Ghép bản học và kiểm
 
+Mỗi ý học hoặc nhóm ví dụ có cùng đóng góp cần có locator và kết quả phân bổ. Ghi chặng tiếp nhận và vị trí dự kiến (phần giảng, nhóm ví dụ luyện, bài tập hoặc tài liệu bổ trợ có công dụng rõ). Khi gộp ý tương đương, dẫn tới mục tiêu đã dạy và đối chiếu sắc thái còn riêng. Với ngoại lệ, ghi đoạn cụ thể, lý do và phương án đã xem xét. Tách giới hạn nguồn vật lý khỏi ngoại lệ biên tập. Trong pilot có thể còn pending ngoài phạm vi. Khi nghiệm thu toàn bộ, số ý dạy được chưa có đích hoặc lý do ngoại lệ phải bằng 0. Báo cáo riêng số ý được phân bổ và số ngoại lệ; chỉ gọi là đã dạy khi phần nội dung thực tế đã được biên soạn.
+
 Đọc tuần tự các topic V6.5 theo level. Tại mỗi topic, chèn các chuyên đề có before_topic_uid tương ứng theo rank_at_anchor rồi xuất topic. Chọn cả hai khóa từ quyết định đã lưu để dựng lại được cùng thứ tự. Tính số thứ tự hiển thị sau cùng. UID của chuyên đề độc lập với tên, level và số thứ tự. Với từng topic, giữ UID, cụm, thứ tự tương đối và toàn bộ nội dung học V6.5, gồm cả các chặng có shadowing rỗng.
 
 Preview pilot có ba tab level, hiển thị hai loại chặng trong cùng thanh điều hướng. Dùng tiêu đề, mục tiêu và vị trí thật cho chuyên đề dự kiến. Hồ sơ admin cho phép reviewer mở chính xác các bài nguồn và tình huống sẽ dùng. Payload learner chỉ chứa trường hiển thị. Mã sách, ghi chú phân vai, hash, locator và lý do xếp chặng chỉ có ở admin. Kiểm cả dữ liệu nhúng trong HTML. Giữ từ Speak Japanese ở nhãn loại chặng theo yêu cầu sản phẩm. Tên chặng và câu mục tiêu không đề cập mã sách hoặc tên cấp.
