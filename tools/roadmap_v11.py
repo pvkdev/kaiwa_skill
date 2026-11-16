@@ -1,4 +1,4 @@
-"""Validate and merge the three authorized dialogue pilots into the V10 reader."""
+"""Validate and merge the authorized dialogue pilots into the V10 reader."""
 import argparse
 import copy
 import hashlib
@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "kaiwa_skill/planning/v11"
 BASE = ROOT / "kaiwa_skill/planning/v10"
-CODES = ("S-011", "T-044", "H-004")
+CODES = ("S-011", "T-044", "H-004", "S-021", "T-027", "H-020")
 HELPER = runpy.run_path(str(ROOT / ".agents/skills/kaiwa-topic-dialogue/scripts/dialogue.py"))
 
 
@@ -29,10 +29,12 @@ def build(publish=False):
     payload["version"] = "11.0-pilot"
     seen_ids, scripts = set(), set()
     totals = []
+    expected_dialogues = 0
     for code in CODES:
         path = OUT / "pilot" / code / "dialogues.json"
         draft = read(path)
         context = HELPER["brief"](code)
+        expected_dialogues += len(context["situations"])
         HELPER["validate"](draft, context)
         stage = next(s for s in payload["stages"] if s["uid"] == draft["stage_uid"])
         turns = 0
@@ -50,7 +52,7 @@ def build(publish=False):
         totals.append({"code": code, "uid": stage["uid"], "level": stage["level"],
                        "dialogues": len(draft["dialogues"]), "turns": turns,
                        "draft_sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
-    assert sum(t["dialogues"] for t in totals) == 55
+    assert sum(t["dialogues"] for t in totals) == expected_dialogues
     payload["pilot_stages"] = [t["uid"] for t in totals]
     write(OUT / "pilot/learner.json", payload)
     template = (ROOT / "tools/review_site.html").read_text("utf8")
@@ -60,7 +62,8 @@ def build(publish=False):
     write(OUT / "pilot/BUILD.json", {
         "version": "11.0-pilot", "base": "kaiwa_skill/planning/v10/learner.json",
         "base_sha256": hashlib.sha256((BASE / "learner.json").read_bytes()).hexdigest(),
-        "stages": totals, "dialogues": 55, "turns": sum(t["turns"] for t in totals)})
+        "stages": totals, "dialogues": expected_dialogues,
+        "turns": sum(t["turns"] for t in totals)})
     if publish:
         (ROOT / "docs/index.html").write_text(html, encoding="utf8")
     print(json.dumps(totals, ensure_ascii=False))
