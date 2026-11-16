@@ -297,11 +297,11 @@ const types = {
   challenge: { label: "Challenge Live AI", icon: "ϟ" },
   free: { label: "Free Kaiwa", icon: "✦" }
 };
-if (["6.4", "6.5"].includes(course.version)) {
+if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
 }
-if (course.version === "6.5") delete types.reading;
+if (["6.5", "8.0"].includes(course.version)) delete types.reading;
 if (course.version === "7.0") {
   delete types.speak_video;
   delete types.speak_shadow;

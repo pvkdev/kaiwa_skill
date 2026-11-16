@@ -9,8 +9,34 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "docs"
 
 
+def build_v8(source):
+    entries = []
+    for stage in roadmap.rows(source):
+        data = stage["v6"]
+        entries.append({
+            "uid": stage["uid"], "code": stage["display_code"], "level": stage["level"],
+            "number": stage["level_order"], "title": stage["title"],
+            "cluster": stage["cluster_title"], "cluster_id": stage["cluster_id"],
+            "objective": stage["objective"], "events": stage["events"], "situations": stage["situations"],
+            "vocabulary": data["decision"]["vocabulary_topics"], "selections": [],
+            "order": data["learning_order"], "shadowing": data["shadowing"],
+        })
+    payload = {"version": "8.0", "stages": entries, "content": {}, "branches": roadmap.BRANCH}
+    directory = source.parent
+    (directory / "learner.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf8", newline="\n")
+    template = (ROOT / "tools/review_site.html").read_text("utf8")
+    encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
+    html = template.replace("__COURSE_DATA__", encoded)
+    for path in (directory / "ROADMAP.html", OUTPUT / "index.html"):
+        path.write_text(html, encoding="utf8", newline="\n")
+
+
 def build():
     pointer = roadmap.read(ROOT / "kaiwa_skill/planning/CURRENT_ROADMAP.json")
+    if pointer["version"] == "8.0":
+        build_v8(ROOT / pointer["roadmap"])
+        return
     if pointer['version'] == '7.0':
         from roadmap_v7 import build as build_v7
         build_v7(publish=True)
