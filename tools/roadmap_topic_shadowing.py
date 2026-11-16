@@ -188,7 +188,7 @@ def build(version, publish=False):
         text += 'Mỗi chặng bên dưới có thống kê riêng để review. Trống là quyết định tuyển chọn, không phải bài lỗi hoặc nhiệm vụ phải lấp đầy.\n\n'
         for a in admin:
             items = a['curation']['items']
-            text += f"- {a['display_code']}: {len(items)} câu/đoạn, {sum(len(i['turns']) for i in items)} lượt nói.\n"
+            text += f"- [{a['display_code']}](admin/{a['display_code']}.json): {len(items)} câu/đoạn, {sum(len(i['turns']) for i in items)} lượt nói.\n"
         text += '\n'
     text += 'Kiến thức kèm shadowing lưu ở admin; learner preview không nhúng metadata nguồn. Giới tính không có căn cứ gốc được phân giọng biên tập và ghi editorial_cast. Video chặng và các phần tình huống/challenge/free talk vẫn là khung. V7 chưa triển khai.\n'
     (directory / ('REPORT_V' + version.replace('.', '_') + '.md')).write_text(text, encoding='utf8')
