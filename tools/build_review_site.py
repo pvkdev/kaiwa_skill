@@ -34,6 +34,10 @@ def build_v8(source):
 
 def build():
     pointer = roadmap.read(ROOT / "kaiwa_skill/planning/CURRENT_ROADMAP.json")
+    if pointer["version"] == "9.1":
+        from roadmap_v9_1 import build as build_v9_1
+        build_v9_1(publish=True)
+        return
     if pointer["version"] == "9.0":
         from roadmap_v9 import build as build_v9
         build_v9(publish=True)

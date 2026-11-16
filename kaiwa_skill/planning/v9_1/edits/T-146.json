@@ -1,0 +1,144 @@
+{
+  "after": "T-110",
+  "title": "Bị đe dọa, hành hung hoặc ép buộc ở nơi làm việc",
+  "objective": "Nói rõ hành vi của người có quyền giao việc hoặc phân ca, yêu cầu được trao đổi riêng và chốt cách làm việc an toàn trước ca kế tiếp.",
+  "vocabulary": [
+    "Xô đẩy, chặn lối, nắm tay và lời đe dọa",
+    "Ca làm, giờ đã ghi và yêu cầu ký xác nhận",
+    "Người giao việc, công ty phái cử và người chứng kiến"
+  ],
+  "scope": "T-110 theo dõi phản ánh qua HR, T-111 xử lý tai nạn. Chặng này đặt người học ngay trước sức ép thực tế của quản lý hoặc người giao ca.",
+  "sources": [
+    "https://www.mhlw.go.jp/content/11900000/001225659.pdf"
+  ],
+  "events": [
+    {
+      "name": "Bị xô khi đang làm việc",
+      "roles": [
+        "người lao động",
+        "đồng nghiệp chứng kiến"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Sau khi bị trưởng ca đẩy vào kệ, nhờ đồng nghiệp ở lại cùng mình tại phòng nghỉ"
+        },
+        {
+          "branch": "misunderstanding",
+          "title": "Đồng nghiệp tưởng mình vấp ngã, nói rõ ai đã đẩy, mình đập vai vào đâu"
+        },
+        {
+          "branch": "conditional",
+          "title": "Đồng nghiệp chỉ nghe tiếng va, nhờ họ kể đúng tiếng đã nghe và lúc họ bước vào"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Được hỏi có tiếp tục ca được không, nói cánh tay đang đau và xin một người khác tới hỗ trợ"
+        }
+      ]
+    },
+    {
+      "name": "Bị ép xác nhận sai giờ làm",
+      "roles": [
+        "người làm theo ca",
+        "quản lý",
+        "nhân sự"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Quản lý đưa bảng giờ ra và giục ký ngay, nêu ngày mình ở lại đóng cửa muộn hơn giờ ghi"
+        },
+        {
+          "branch": "problem",
+          "title": "Bị nói ai cũng ký rồi, nhắc lại phần chưa đồng ý và xin đối chiếu với lịch đóng ca"
+        },
+        {
+          "branch": "conditional",
+          "title": "Người giao việc nói sẽ cắt ca nếu chưa ký, kể lại nguyên ý câu vừa nghe với người phụ trách khác"
+        },
+        {
+          "branch": "alternative",
+          "title": "Được giải thích quá nhanh trước cả nhóm, xin thời gian xem lại cùng phiên dịch mình hiểu được"
+        }
+      ]
+    },
+    {
+      "name": "Bị hạ nhục và dọa cắt ca",
+      "roles": [
+        "nhân viên",
+        "người tiếp nhận"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Kể lời miệt thị về tiếng Nhật mà quản lý đã nói trước khách, nêu ai có mặt lúc đó"
+        },
+        {
+          "branch": "misunderstanding",
+          "title": "Người tiếp nhận tưởng mình phàn nàn vì bị sửa phát âm, phân biệt lần góp ý riêng với lần bị lăng mạ trước mọi người"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Sau khi lên tiếng thì ca cuối tuần biến mất, đưa hai mốc và hỏi ai có thể kiểm tra lý do đổi lịch"
+        },
+        {
+          "branch": "declined",
+          "title": "Được đề nghị để chính trưởng ca phiên dịch, giải thích người đó có liên quan và xin người khác"
+        }
+      ]
+    },
+    {
+      "name": "Người được bảo phải báo lại chính là người gây sức ép",
+      "roles": [
+        "người lao động",
+        "quản lý ca khác",
+        "nhân sự"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Khi được chỉ về tổ trưởng, nói chính tổ trưởng đã chặn cửa lúc mình định ra về"
+        },
+        {
+          "branch": "problem",
+          "title": "Người liên quan vẫn đang ở trong phòng, xin nói ở chỗ khác trước khi kể tên nhân chứng"
+        },
+        {
+          "branch": "conditional",
+          "title": "Được hỏi có thể gặp trực tiếp để hòa giải ngay không, nói hiện chưa thể và xin nghe riêng từng bên"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Người tiếp nhận hẹn tuần tới nhưng mai đã phải trực một mình với tổ trưởng, nói rõ nhu cầu cho riêng ca ngày mai"
+        }
+      ]
+    },
+    {
+      "name": "Hai công ty đều tưởng bên kia đang xử lý",
+      "roles": [
+        "lao động phái cử",
+        "đầu mối công ty phái cử",
+        "đầu mối nơi làm"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Gọi về công ty phái cử, phân biệt người ký hợp đồng với người trực tiếp đe dọa tại xưởng khách hàng"
+        },
+        {
+          "branch": "misunderstanding",
+          "title": "Hai đầu mối đều nghĩ bên kia đã nói chuyện với mình, nhắc lại đã kể cho ai và việc nào vẫn chưa có người nhận"
+        },
+        {
+          "branch": "pending",
+          "title": "Chưa chốt được vị trí làm an toàn, xin tên người sẽ gọi trước giờ bắt đầu ca"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Được đổi tổ nhưng hai tổ dùng chung phòng thay đồ, báo thời điểm vẫn phải gặp người kia và hỏi phương án cho lần giao ca"
+        }
+      ]
+    }
+  ]
+}

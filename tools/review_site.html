@@ -302,7 +302,7 @@ if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (["6.5", "8.0"].includes(course.version)) delete types.reading;
-if (["7.0", "9.0"].includes(course.version)) {
+if (["7.0", "9.0", "9.1"].includes(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
   types.reading.label = "Kiến thức Speak Japanese";
@@ -558,7 +558,7 @@ function renderLessons() {
     detail.dataset.kind = node.kind;
     const summary = make("summary");
     const title = make("div");
-    const lessonLabel = course.version === "9.0" && node.selection?.section_title ?
+    const lessonLabel = node.selection?.section_title ?
       node.selection.section_title : types[node.kind].label;
     title.append(make("div", "lesson-label", lessonLabel), make("h3", "", node.title));
     summary.append(icon(node.kind), title);

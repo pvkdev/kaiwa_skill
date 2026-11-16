@@ -1,0 +1,73 @@
+{
+  "extend": true,
+  "title": "Ngân hàng, bưu điện và điểm gửi hàng trong nước",
+  "objective": "Trao đổi giao dịch cơ bản tại ngân hàng, chọn nơi gửi bưu phẩm và xác nhận cách giao tại bưu điện, Yamato hoặc konbini có nhận gửi.",
+  "vocabulary": [
+    "Điểm gửi Yamato, konbini nhận gửi, hàng thường và hàng cần giữ lạnh",
+    "Người trả cước, khung giờ nhận và giờ lấy kiện"
+  ],
+  "sources": [
+    "https://faq.kuronekoyamato.co.jp/app/answers/detail/a_id/5488",
+    "https://faq.kuronekoyamato.co.jp/app/answers/detail/a_id/7390"
+  ],
+  "events": [
+    {
+      "name": "Mang kiện đến quầy Yamato",
+      "roles": [
+        "người gửi",
+        "nhân viên Yamato"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Đưa kiện quà tại điểm Yamato, nói địa chỉ người nhận và hỏi liệu có kịp trước sinh nhật không"
+        },
+        {
+          "branch": "misunderstanding",
+          "title": "Nhân viên tưởng người nhận sẽ trả cước, nói mình sẽ trả ngay tại quầy vì đây là quà"
+        },
+        {
+          "branch": "conditional",
+          "title": "Người nhận chỉ có nhà buổi tối, hỏi có thể chọn khung giờ nào và nhắc lại ngày giao dự kiến"
+        },
+        {
+          "branch": "problem",
+          "title": "Món quà cần giữ lạnh, mô tả món và hỏi nhân viên cần chuẩn bị thế nào trước khi quầy nhận"
+        },
+        {
+          "branch": "resolved",
+          "title": "Trước khi rời quầy, hỏi số nào trên biên nhận để báo người thân theo dõi đúng kiện"
+        }
+      ]
+    },
+    {
+      "name": "Gửi từ konbini gần nhà",
+      "roles": [
+        "người gửi",
+        "nhân viên konbini"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Hỏi cửa hàng này có nhận gửi kiện nội địa qua Yamato không trước khi mang thùng vào"
+        },
+        {
+          "branch": "alternative",
+          "title": "Cửa hàng không nhận dịch vụ giữ lạnh, hỏi đường tới quầy Yamato hoặc cách liên hệ để hỏi nhận hàng tại nhà"
+        },
+        {
+          "branch": "conditional",
+          "title": "Đã qua lượt lấy kiện trong ngày, hỏi giờ lấy tiếp theo rồi quyết định gửi ở đây hay mang đến quầy khác"
+        },
+        {
+          "branch": "problem",
+          "title": "Có hai kiện trả cước khác nhau, chỉ từng kiện và xác nhận người trả tiền trước khi nhân viên nhận"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Vừa rời quầy mới thấy số phòng ghi thiếu, quay lại hỏi kiện đã bàn giao cho Yamato chưa và cần liên hệ ai"
+        }
+      ]
+    }
+  ]
+}
