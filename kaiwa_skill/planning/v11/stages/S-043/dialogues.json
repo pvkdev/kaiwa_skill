@@ -1,0 +1,809 @@
+{
+  "stage_uid": "9e5b1a57-ab8c-5523-b47a-1b3a0643ff90",
+  "admin_sources": {
+    "transfer": {
+      "kind": "book",
+      "book_id": "B04",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編/chapters/05-Unit04-担当者へ取り次ぐ.md",
+      "start_line": 5,
+      "end_line": 74,
+      "use_vi": "Xác nhận ai gọi, người cần gặp, báo chuyển và thông tin cho người nhận."
+    },
+    "away": {
+      "kind": "book",
+      "book_id": "B04",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編/chapters/08-Unit07-担当者が不在のときの対応.md",
+      "start_line": 5,
+      "end_line": 10,
+      "use_vi": "Nói người cần gặp chưa nghe được và hỏi cách xử lý tiếp."
+    },
+    "callback": {
+      "kind": "book",
+      "book_id": "B04",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編/chapters/08-Unit07-担当者が不在のときの対応.md",
+      "start_line": 58,
+      "end_line": 80,
+      "use_vi": "Người gọi tự gọi lại hay bên nhận sẽ liên hệ; không hoán trách nhiệm."
+    },
+    "wrong": {
+      "kind": "book",
+      "book_id": "B04",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編/chapters/11-Unit10-間違い電話を受けたとき.md",
+      "start_line": 5,
+      "end_line": 37,
+      "use_vi": "Nói rõ đây là bộ phận nào và hỏi lại khi nối sai."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "079c0f95-14ae-58df-930d-76075c5d77f4",
+      "event_id": "E01",
+      "context_vi": "Tại công ty Tsuki hư cấu, bạn trực điện thoại. Người gọi từ Morita Shōji muốn gặp chị Tanaka ở phòng kinh doanh; tiếng tên người gọi hơi nhiễu, bạn cần nghe rõ trước khi chuyển.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "079c0f95-14ae-58df-930d-76075c5d77f4-u01",
+          "speaker_id": "a",
+          "ja": "はい、月商事でございます。",
+          "vi": "Vâng, công ty Tsuki xin nghe ạ."
+        },
+        {
+          "id": "079c0f95-14ae-58df-930d-76075c5d77f4-u02",
+          "speaker_id": "b",
+          "ja": "森田商事の伊藤です。営業の田中さんをお願いします。",
+          "vi": "Tôi là Ito của Morita Shōji. Xin cho gặp chị Tanaka phòng kinh doanh."
+        },
+        {
+          "id": "079c0f95-14ae-58df-930d-76075c5d77f4-u03",
+          "speaker_id": "a",
+          "ja": "森田商事様から、営業の田中ですね。恐れ入りますが、お名前をもう一度伺えますか。",
+          "vi": "Từ Morita Shōji, cần gặp chị Tanaka phòng kinh doanh nhỉ. Xin lỗi, anh nhắc lại tên giúp tôi được không ạ?"
+        },
+        {
+          "id": "079c0f95-14ae-58df-930d-76075c5d77f4-u04",
+          "speaker_id": "b",
+          "ja": "伊藤です。",
+          "vi": "Tôi là Ito ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "transfer"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "079c0f95-14ae-58df-930d-76075c5d77f4-u01": {
+            "kind": "original_extension"
+          },
+          "079c0f95-14ae-58df-930d-76075c5d77f4-u02": {
+            "kind": "original_extension"
+          },
+          "079c0f95-14ae-58df-930d-76075c5d77f4-u03": {
+            "kind": "original_extension"
+          },
+          "079c0f95-14ae-58df-930d-76075c5d77f4-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "cfe1962b-e579-508b-bf04-4c6004088170",
+      "event_id": "E01",
+      "context_vi": "Sau cuộc gọi từ Morita Shōji tới Tsuki, bạn chưa nghe rõ tên khách. Người gọi nhắc lại là Ito; bạn đọc lại đủ tên công ty, người gọi và người cần gặp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "cfe1962b-e579-508b-bf04-4c6004088170-u01",
+          "speaker_id": "b",
+          "ja": "森田商事の伊藤です。",
+          "vi": "Tôi là Ito của Morita Shōji."
+        },
+        {
+          "id": "cfe1962b-e579-508b-bf04-4c6004088170-u02",
+          "speaker_id": "a",
+          "ja": "森田商事の伊藤様ですね。営業の田中へおつなぎします。",
+          "vi": "Anh Ito của Morita Shōji phải không ạ? Tôi sẽ chuyển cho chị Tanaka phòng kinh doanh."
+        },
+        {
+          "id": "cfe1962b-e579-508b-bf04-4c6004088170-u03",
+          "speaker_id": "b",
+          "ja": "はい、お願いします。",
+          "vi": "Vâng, nhờ chị."
+        },
+        {
+          "id": "cfe1962b-e579-508b-bf04-4c6004088170-u04",
+          "speaker_id": "a",
+          "ja": "少々お待ちください。",
+          "vi": "Xin anh chờ chút ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "transfer"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "cfe1962b-e579-508b-bf04-4c6004088170-u01": {
+            "kind": "original_extension"
+          },
+          "cfe1962b-e579-508b-bf04-4c6004088170-u02": {
+            "kind": "original_extension"
+          },
+          "cfe1962b-e579-508b-bf04-4c6004088170-u03": {
+            "kind": "original_extension"
+          },
+          "cfe1962b-e579-508b-bf04-4c6004088170-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "038543c0-935e-59cf-8d86-1e1548eadd77",
+      "event_id": "E01",
+      "context_vi": "Ở Tsuki hư cấu, người gọi Ito của Morita Shōji muốn gặp Tanaka phòng kinh doanh. Bạn đã nghe rõ thông tin, xác nhận Tanaka có thể nhận và báo sẽ chuyển.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "038543c0-935e-59cf-8d86-1e1548eadd77-u01",
+          "speaker_id": "a",
+          "ja": "森田商事の伊藤様ですね。営業の田中は今、電話に出られます。",
+          "vi": "Anh Ito của Morita Shōji phải không ạ? Chị Tanaka phòng kinh doanh hiện nghe máy được."
+        },
+        {
+          "id": "038543c0-935e-59cf-8d86-1e1548eadd77-u02",
+          "speaker_id": "b",
+          "ja": "はい。つないでいただけますか。",
+          "vi": "Vâng. Chị chuyển máy giúp tôi được không?"
+        },
+        {
+          "id": "038543c0-935e-59cf-8d86-1e1548eadd77-u03",
+          "speaker_id": "a",
+          "ja": "承知しました。田中へおつなぎしますので、少々お待ちください。",
+          "vi": "Vâng. Tôi sẽ chuyển cho chị Tanaka, xin anh chờ một chút."
+        },
+        {
+          "id": "038543c0-935e-59cf-8d86-1e1548eadd77-u04",
+          "speaker_id": "b",
+          "ja": "お願いします。",
+          "vi": "Nhờ chị ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "transfer"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "038543c0-935e-59cf-8d86-1e1548eadd77-u01": {
+            "kind": "original_extension"
+          },
+          "038543c0-935e-59cf-8d86-1e1548eadd77-u02": {
+            "kind": "original_extension"
+          },
+          "038543c0-935e-59cf-8d86-1e1548eadd77-u03": {
+            "kind": "original_extension"
+          },
+          "038543c0-935e-59cf-8d86-1e1548eadd77-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c7d6cc60-939a-523d-8793-6dfff9ed045d",
+      "event_id": "E01",
+      "context_vi": "Sau khi báo với Ito của Morita Shōji rằng sẽ chuyển máy, bạn gọi nội bộ cho Tanaka ở phòng kinh doanh. Bạn nhắc lại tên khách và công ty trước khi nối.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách nhận máy",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c7d6cc60-939a-523d-8793-6dfff9ed045d-u01",
+          "speaker_id": "a",
+          "ja": "田中さん、森田商事の伊藤様からお電話です。おつなぎしてよろしいですか。",
+          "vi": "Chị Tanaka, anh Ito từ Morita Shōji gọi. Tôi chuyển máy cho chị được không?"
+        },
+        {
+          "id": "c7d6cc60-939a-523d-8793-6dfff9ed045d-u02",
+          "speaker_id": "b",
+          "ja": "はい、お願いします。",
+          "vi": "Được, chuyển cho tôi nhé."
+        },
+        {
+          "id": "c7d6cc60-939a-523d-8793-6dfff9ed045d-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。今おつなぎします。",
+          "vi": "Vâng, tôi chuyển ngay."
+        },
+        {
+          "id": "c7d6cc60-939a-523d-8793-6dfff9ed045d-u04",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。",
+          "vi": "Cảm ơn nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "transfer"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c7d6cc60-939a-523d-8793-6dfff9ed045d-u01": {
+            "kind": "original_extension"
+          },
+          "c7d6cc60-939a-523d-8793-6dfff9ed045d-u02": {
+            "kind": "original_extension"
+          },
+          "c7d6cc60-939a-523d-8793-6dfff9ed045d-u03": {
+            "kind": "original_extension"
+          },
+          "c7d6cc60-939a-523d-8793-6dfff9ed045d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1",
+      "event_id": "E02",
+      "context_vi": "Tại Tsuki hư cấu, khách gọi muốn gặp chị Sato nhưng chị đang họp. Bạn nói tình trạng hiện tại và hỏi khách có muốn để lại lời nhắn không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1-u01",
+          "speaker_id": "a",
+          "ja": "申し訳ありません。佐藤はただ今、会議中です。ご伝言をお預かりしましょうか。",
+          "vi": "Xin lỗi, chị Sato hiện đang họp. Tôi nhận lời nhắn giúp anh được không ạ?"
+        },
+        {
+          "id": "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1-u02",
+          "speaker_id": "b",
+          "ja": "そうですか。いつ終わるか分かりますか。",
+          "vi": "Vậy à. Chị có biết khi nào họp xong không?"
+        },
+        {
+          "id": "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1-u03",
+          "speaker_id": "a",
+          "ja": "今は終了時刻を確認できていません。確認してからお伝えできます。",
+          "vi": "Hiện tôi chưa xác nhận giờ kết thúc. Tôi có thể kiểm rồi báo lại."
+        },
+        {
+          "id": "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。少し考えます。",
+          "vi": "Tôi hiểu. Để tôi nghĩ một chút."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "away"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1-u01": {
+            "kind": "original_extension"
+          },
+          "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1-u02": {
+            "kind": "original_extension"
+          },
+          "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1-u03": {
+            "kind": "original_extension"
+          },
+          "e1f96a31-0b83-57ea-b5a6-8d8cd649caa1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "54b92424-5828-5b86-ab37-47cb7503d6d1",
+      "event_id": "E02",
+      "context_vi": "Sau khi nghe Sato đang họp ở Tsuki và giờ kết thúc chưa rõ, người gọi muốn chờ trên máy ít phút. Bạn xác nhận rằng không thể hứa Sato sẽ nghe ngay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "54b92424-5828-5b86-ab37-47cb7503d6d1-u01",
+          "speaker_id": "b",
+          "ja": "少し待ってみてもいいですか。",
+          "vi": "Tôi chờ máy một chút được không?"
+        },
+        {
+          "id": "54b92424-5828-5b86-ab37-47cb7503d6d1-u02",
+          "speaker_id": "a",
+          "ja": "はい。ただ、いつ会議が終わるかはまだ分かりません。",
+          "vi": "Được ạ. Nhưng tôi vẫn chưa biết khi nào cuộc họp kết thúc."
+        },
+        {
+          "id": "54b92424-5828-5b86-ab37-47cb7503d6d1-u03",
+          "speaker_id": "b",
+          "ja": "では、一分だけ待ちます。",
+          "vi": "Vậy tôi chờ một phút thôi."
+        },
+        {
+          "id": "54b92424-5828-5b86-ab37-47cb7503d6d1-u04",
+          "speaker_id": "a",
+          "ja": "承知しました。一分後、まだ会議中ならお声をかけます。",
+          "vi": "Vâng. Sau một phút nếu chị ấy vẫn họp, tôi sẽ báo anh."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "away"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "54b92424-5828-5b86-ab37-47cb7503d6d1-u01": {
+            "kind": "original_extension"
+          },
+          "54b92424-5828-5b86-ab37-47cb7503d6d1-u02": {
+            "kind": "original_extension"
+          },
+          "54b92424-5828-5b86-ab37-47cb7503d6d1-u03": {
+            "kind": "original_extension"
+          },
+          "54b92424-5828-5b86-ab37-47cb7503d6d1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "467d0852-6bfb-52ab-99fb-48b148dc55a6",
+      "event_id": "E02",
+      "context_vi": "Sau khi nghe Sato đang họp ở Tsuki, người gọi chọn tự gọi lại thay vì để lời nhắn. Bạn hỏi giờ họ dự tính gọi, không hứa Sato sẽ rảnh lúc đó.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "467d0852-6bfb-52ab-99fb-48b148dc55a6-u01",
+          "speaker_id": "b",
+          "ja": "伝言は大丈夫です。私からかけ直します。",
+          "vi": "Không cần nhắn đâu. Tôi sẽ tự gọi lại."
+        },
+        {
+          "id": "467d0852-6bfb-52ab-99fb-48b148dc55a6-u02",
+          "speaker_id": "a",
+          "ja": "承知しました。何時ごろおかけ直しになりますか。",
+          "vi": "Vâng. Khoảng mấy giờ anh dự định gọi lại ạ?"
+        },
+        {
+          "id": "467d0852-6bfb-52ab-99fb-48b148dc55a6-u03",
+          "speaker_id": "b",
+          "ja": "三時ごろにします。",
+          "vi": "Khoảng 3 giờ."
+        },
+        {
+          "id": "467d0852-6bfb-52ab-99fb-48b148dc55a6-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。三時ごろにお電話があると佐藤に伝えます。",
+          "vi": "Tôi hiểu. Tôi sẽ nhắn chị Sato rằng khoảng 3 giờ anh sẽ gọi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "callback"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "467d0852-6bfb-52ab-99fb-48b148dc55a6-u01": {
+            "kind": "original_extension"
+          },
+          "467d0852-6bfb-52ab-99fb-48b148dc55a6-u02": {
+            "kind": "original_extension"
+          },
+          "467d0852-6bfb-52ab-99fb-48b148dc55a6-u03": {
+            "kind": "original_extension"
+          },
+          "467d0852-6bfb-52ab-99fb-48b148dc55a6-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "4d53acce-c7c4-5e77-a419-b23e67adc520",
+      "event_id": "E02",
+      "context_vi": "Tại Tsuki hư cấu, Sato không thể nghe máy và bạn chưa biết khi nào chị ấy xong việc. Người gọi muốn biết thời điểm; bạn xin phép xác minh rồi báo, không đoán giờ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "4d53acce-c7c4-5e77-a419-b23e67adc520-u01",
+          "speaker_id": "b",
+          "ja": "佐藤さんは何時に戻りますか。",
+          "vi": "Mấy giờ chị Sato quay lại ạ?"
+        },
+        {
+          "id": "4d53acce-c7c4-5e77-a419-b23e67adc520-u02",
+          "speaker_id": "a",
+          "ja": "まだ確認できていません。確認してからご連絡してもよろしいですか。",
+          "vi": "Tôi chưa xác nhận được. Tôi kiểm rồi liên hệ lại anh được không ạ?"
+        },
+        {
+          "id": "4d53acce-c7c4-5e77-a419-b23e67adc520-u03",
+          "speaker_id": "b",
+          "ja": "はい。会社の代表番号にお願いします。",
+          "vi": "Được. Xin gọi về số tổng đài công ty tôi."
+        },
+        {
+          "id": "4d53acce-c7c4-5e77-a419-b23e67adc520-u04",
+          "speaker_id": "a",
+          "ja": "承知しました。番号を確認してから折り返します。",
+          "vi": "Vâng. Tôi sẽ xác nhận số rồi gọi lại."
+        },
+        {
+          "id": "4d53acce-c7c4-5e77-a419-b23e67adc520-u05",
+          "speaker_id": "b",
+          "ja": "お願いします。",
+          "vi": "Nhờ chị ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "away",
+          "callback"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "4d53acce-c7c4-5e77-a419-b23e67adc520-u01": {
+            "kind": "original_extension"
+          },
+          "4d53acce-c7c4-5e77-a419-b23e67adc520-u02": {
+            "kind": "original_extension"
+          },
+          "4d53acce-c7c4-5e77-a419-b23e67adc520-u03": {
+            "kind": "original_extension"
+          },
+          "4d53acce-c7c4-5e77-a419-b23e67adc520-u04": {
+            "kind": "original_extension"
+          },
+          "4d53acce-c7c4-5e77-a419-b23e67adc520-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3551e361-aab9-529c-b8b8-b0fb38c4b255",
+      "event_id": "E03",
+      "context_vi": "Ở Tsuki hư cấu, khách gọi đến phòng kinh doanh nhưng muốn gặp người ở phòng tổng vụ. Bạn biết mình đang ở phòng kinh doanh, chưa chắc số máy tổng vụ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3551e361-aab9-529c-b8b8-b0fb38c4b255-u01",
+          "speaker_id": "a",
+          "ja": "はい、月商事営業部です。",
+          "vi": "Vâng, phòng kinh doanh công ty Tsuki xin nghe ạ."
+        },
+        {
+          "id": "3551e361-aab9-529c-b8b8-b0fb38c4b255-u02",
+          "speaker_id": "b",
+          "ja": "総務の方をお願いします。",
+          "vi": "Xin cho gặp người phòng tổng vụ."
+        },
+        {
+          "id": "3551e361-aab9-529c-b8b8-b0fb38c4b255-u03",
+          "speaker_id": "a",
+          "ja": "こちらは営業部です。総務へのつなぎ方を確認しますので、少々お待ちいただけますか。",
+          "vi": "Đây là phòng kinh doanh. Tôi kiểm cách chuyển sang tổng vụ, anh chờ một chút được không ạ?"
+        },
+        {
+          "id": "3551e361-aab9-529c-b8b8-b0fb38c4b255-u04",
+          "speaker_id": "b",
+          "ja": "はい、お願いします。",
+          "vi": "Vâng, nhờ chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "wrong"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3551e361-aab9-529c-b8b8-b0fb38c4b255-u01": {
+            "kind": "original_extension"
+          },
+          "3551e361-aab9-529c-b8b8-b0fb38c4b255-u02": {
+            "kind": "original_extension"
+          },
+          "3551e361-aab9-529c-b8b8-b0fb38c4b255-u03": {
+            "kind": "original_extension"
+          },
+          "3551e361-aab9-529c-b8b8-b0fb38c4b255-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "502df01e-243e-57fa-b25a-3bd70a613167",
+      "event_id": "E03",
+      "context_vi": "Sau khi bạn nghe khách nói cần phòng tổng vụ, bạn định kiểm cách chuyển. Khách nhắc lại họ thực ra cần phòng kế toán; bạn xác nhận tên bộ phận trước khi chuyển.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "502df01e-243e-57fa-b25a-3bd70a613167-u01",
+          "speaker_id": "b",
+          "ja": "すみません、総務ではなく経理の方です。",
+          "vi": "Xin lỗi, tôi cần phòng kế toán, không phải tổng vụ."
+        },
+        {
+          "id": "502df01e-243e-57fa-b25a-3bd70a613167-u02",
+          "speaker_id": "a",
+          "ja": "経理ですね。私が先ほど聞き違えました。申し訳ありません。",
+          "vi": "Phòng kế toán ạ. Tôi đã nghe nhầm lúc nãy, xin lỗi anh."
+        },
+        {
+          "id": "502df01e-243e-57fa-b25a-3bd70a613167-u03",
+          "speaker_id": "b",
+          "ja": "はい、経理です。",
+          "vi": "Đúng, kế toán."
+        },
+        {
+          "id": "502df01e-243e-57fa-b25a-3bd70a613167-u04",
+          "speaker_id": "a",
+          "ja": "つなげるか確認します。まだお切りにならずにお待ちください。",
+          "vi": "Tôi kiểm xem có chuyển được không. Xin anh đừng cúp máy, chờ chút ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "wrong"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "502df01e-243e-57fa-b25a-3bd70a613167-u01": {
+            "kind": "original_extension"
+          },
+          "502df01e-243e-57fa-b25a-3bd70a613167-u02": {
+            "kind": "original_extension"
+          },
+          "502df01e-243e-57fa-b25a-3bd70a613167-u03": {
+            "kind": "original_extension"
+          },
+          "502df01e-243e-57fa-b25a-3bd70a613167-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2951a304-aa9e-5c78-b3c6-55bae5dbc78d",
+      "event_id": "E03",
+      "context_vi": "Tại Tsuki hư cấu, khi bạn thử chuyển cuộc gọi của Ito từ Morita Shōji sang Tanaka, đường dây bị ngắt. Bạn có số công ty Ito đã cung cấp và gọi lại, xin lỗi, xác nhận người nghe.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người gọi ngoài công ty",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2951a304-aa9e-5c78-b3c6-55bae5dbc78d-u01",
+          "speaker_id": "a",
+          "ja": "森田商事の伊藤様でしょうか。月商事です。先ほど電話が切れてしまい、申し訳ありません。",
+          "vi": "Anh Ito của Morita Shōji phải không ạ? Tôi gọi từ Tsuki. Xin lỗi, lúc nãy đường dây bị ngắt."
+        },
+        {
+          "id": "2951a304-aa9e-5c78-b3c6-55bae5dbc78d-u02",
+          "speaker_id": "b",
+          "ja": "はい、伊藤です。田中さんと話せますか。",
+          "vi": "Vâng, Ito đây. Tôi nói chuyện với chị Tanaka được không?"
+        },
+        {
+          "id": "2951a304-aa9e-5c78-b3c6-55bae5dbc78d-u03",
+          "speaker_id": "a",
+          "ja": "もう一度、田中へつなぎます。先に本人の都合を確認します。",
+          "vi": "Tôi sẽ chuyển lại cho chị Tanaka. Trước hết tôi kiểm xem chị ấy có nhận máy được không."
+        },
+        {
+          "id": "2951a304-aa9e-5c78-b3c6-55bae5dbc78d-u04",
+          "speaker_id": "b",
+          "ja": "お願いします。",
+          "vi": "Nhờ chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "transfer"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2951a304-aa9e-5c78-b3c6-55bae5dbc78d-u01": {
+            "kind": "original_extension"
+          },
+          "2951a304-aa9e-5c78-b3c6-55bae5dbc78d-u02": {
+            "kind": "original_extension"
+          },
+          "2951a304-aa9e-5c78-b3c6-55bae5dbc78d-u03": {
+            "kind": "original_extension"
+          },
+          "2951a304-aa9e-5c78-b3c6-55bae5dbc78d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "43a80171-39e9-5baf-8804-c818a05498f1",
+      "event_id": "E03",
+      "context_vi": "Sau khi bạn gọi lại xin lỗi Ito vì đường dây bị ngắt, bạn đã xác nhận anh ấy vẫn muốn gặp Tanaka. Bạn gọi nội bộ cho Tanaka, báo người gọi và sự cố rồi nối lại khi chị đồng ý.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "nhân viên",
+          "gender": "male"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách nhận máy",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "43a80171-39e9-5baf-8804-c818a05498f1-u01",
+          "speaker_id": "a",
+          "ja": "田中さん、森田商事の伊藤様から再度お電話です。先ほど転送中に切れました。今おつなぎしてよろしいですか。",
+          "vi": "Chị Tanaka, anh Ito của Morita Shōji đang gọi lại. Lúc nãy đường dây ngắt khi chuyển. Giờ tôi nối máy cho chị được không?"
+        },
+        {
+          "id": "43a80171-39e9-5baf-8804-c818a05498f1-u02",
+          "speaker_id": "b",
+          "ja": "はい、今なら出られます。お願いします。",
+          "vi": "Được, giờ tôi nghe được. Chuyển giúp tôi nhé."
+        },
+        {
+          "id": "43a80171-39e9-5baf-8804-c818a05498f1-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。伊藤様をおつなぎします。",
+          "vi": "Cảm ơn chị. Tôi chuyển anh Ito cho chị."
+        },
+        {
+          "id": "43a80171-39e9-5baf-8804-c818a05498f1-u04",
+          "speaker_id": "b",
+          "ja": "はい。",
+          "vi": "Ừ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "transfer"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "43a80171-39e9-5baf-8804-c818a05498f1-u01": {
+            "kind": "original_extension"
+          },
+          "43a80171-39e9-5baf-8804-c818a05498f1-u02": {
+            "kind": "original_extension"
+          },
+          "43a80171-39e9-5baf-8804-c818a05498f1-u03": {
+            "kind": "original_extension"
+          },
+          "43a80171-39e9-5baf-8804-c818a05498f1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
