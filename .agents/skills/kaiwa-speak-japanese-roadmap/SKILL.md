@@ -1,6 +1,6 @@
 ---
 name: kaiwa-speak-japanese-roadmap
-description: Phân bổ trọn pack của tám sách Speak Japanese vào các chặng chuyên đề V7 có tên, cấp độ, thứ tự pack và vị trí trong lộ trình Kaiwa. Dùng khi lập kế hoạch, pilot, phân bổ hoặc chỉnh một chuyên đề.
+description: Tra cứu hoặc tái lập phân bổ nguyên pack của tám sách Speak Japanese cho bản lịch sử V7. Chuyên đề mới trên nền V8 dùng kaiwa-chuyen-de.
 ---
 
 # Xếp pack Speak Japanese vào lộ trình
