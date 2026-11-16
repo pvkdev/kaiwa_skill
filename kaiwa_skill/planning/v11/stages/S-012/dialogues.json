@@ -35,10 +35,10 @@
     },
     "w_rule": {
       "kind": "web",
-      "title": "PASMO — Rules for Using PASMO",
-      "url": "https://www.pasmo.co.jp/en/condition/",
+      "title": "PASMO — PASMOの紛失再発行",
+      "url": "https://www.pasmo.co.jp/ic-card/procedure/lose/",
       "accessed": "2026-11-16",
-      "use_vi": "Người xin cấp lại thẻ có tên cần giấy tờ chứng minh là chủ thẻ; trường hợp cụ thể vẫn do quầy kiểm."
+      "use_vi": "Thẻ có tên bị mất: mang giấy tờ báo mất, nhận phiếu cấp lại, từ ngày sau quay lại trong hạn với phiếu và giấy tờ; phí và đặt cọc hiện là 1.020 yên; thẻ vô danh không cấp lại."
     },
     "w_hist": {
       "kind": "web",
@@ -46,6 +46,13 @@
       "url": "https://www.pasmo.co.jp/ic-card/use/history/",
       "accessed": "2026-11-16",
       "use_vi": "Máy có thể hiển thị/in lịch sử số dư, ngày và chặng bị trừ; không kết luận nguyên nhân chênh lệch khi chưa kiểm."
+    },
+    "w_fare": {
+      "kind": "web",
+      "title": "Tokyo Metro — 主要区間の運賃・所要時間（2026-04-01）",
+      "url": "https://www.tokyometro.jp/info/files/20260414_jp.pdf",
+      "accessed": "2026-11-16",
+      "use_vi": "Bảng Tokyo Metro ghi IC 209 yên cho Ginza Line từ Ginza tới Shibuya, hiệu lực bảng 2026-04-01; màn hình trong cảnh hiển thị mức này, giá chuyến khác cần kiểm lại."
     }
   },
   "dialogues": [
@@ -515,20 +522,21 @@
         {
           "id": "5ebc159b-d5aa-56d6-9764-a23375b77165-u03",
           "speaker_id": "b",
-          "ja": "この画面では、百九十円です。",
-          "vi": "Trên màn hình lượt này là 190 yên."
+          "ja": "この画面では、二百九円です。",
+          "vi": "Trên màn hình lượt này là 209 yên."
         },
         {
           "id": "5ebc159b-d5aa-56d6-9764-a23375b77165-u04",
           "speaker_id": "a",
-          "ja": "百九十円ですね。払います。",
-          "vi": "190 yên nhỉ. Tôi trả ạ."
+          "ja": "二百九円ですね。払います。",
+          "vi": "209 yên nhỉ. Tôi trả ạ."
         }
       ],
       "admin": {
         "source_refs": [
           "w_pass",
-          "w_pasmo"
+          "w_pasmo",
+          "w_fare"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -550,7 +558,7 @@
     {
       "situation_uid": "787b0554-3eab-5945-b258-3fb32d88288c",
       "event_id": "E02",
-      "context_vi": "Sau khi trả khoản thêm 190 yên hiển thị cho lượt đi ngoài chặng vé tháng giả định, cổng ra đã xử lý. Bạn hỏi cách kiểm phạm vi trước chuyến sau.",
+      "context_vi": "Sau khi trả khoản thêm 209 yên hiển thị cho lượt đi ngoài chặng vé tháng giả định, cổng ra đã xử lý. Bạn hỏi cách kiểm phạm vi trước chuyến sau.",
       "speakers": [
         {
           "id": "a",
@@ -585,7 +593,8 @@
       ],
       "admin": {
         "source_refs": [
-          "w_pass"
+          "w_pass",
+          "w_fare"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -744,14 +753,14 @@
         {
           "id": "ce504d6d-3af3-566d-9110-abc7b7174f5c-u02",
           "speaker_id": "b",
-          "ja": "ご本人だとわかる公的な書類をお持ちください。",
-          "vi": "Chị mang giấy tờ chính thức chứng minh mình là chủ thẻ nhé."
+          "ja": "公的な身分証を持って、まず紛失を届けてください。整理票をお渡しします。",
+          "vi": "Chị mang giấy tờ tùy thân chính thức đến báo mất trước. Chúng tôi sẽ đưa phiếu cấp lại."
         },
         {
           "id": "ce504d6d-3af3-566d-9110-abc7b7174f5c-u03",
           "speaker_id": "a",
-          "ja": "わかりました。書類を持って来ます。",
-          "vi": "Tôi hiểu. Tôi sẽ mang giấy tờ."
+          "ja": "わかりました。身分証を持って来ます。",
+          "vi": "Tôi hiểu. Tôi sẽ mang giấy tờ tùy thân."
         }
       ],
       "admin": {
@@ -839,7 +848,7 @@
     {
       "situation_uid": "dedda12e-effb-5512-b3de-0ffb5330b5ea",
       "event_id": "E03",
-      "context_vi": "Bạn quay lại quầy Tokyo Metro theo hướng dẫn về thẻ PASMO có tên đã mất. Bạn đã mang giấy tờ chứng minh và hỏi cách xác nhận số dư trước khi tiếp tục thủ tục.",
+      "context_vi": "Hôm sau, sau khi đã báo mất thẻ PASMO có tên và nhận phiếu cấp lại, bạn quay lại quầy Tokyo Metro với phiếu, giấy tờ tùy thân và tiền phí để kiểm số dư cũ rồi làm thủ tục.",
       "speakers": [
         {
           "id": "a",
@@ -856,8 +865,8 @@
         {
           "id": "dedda12e-effb-5512-b3de-0ffb5330b5ea-u01",
           "speaker_id": "a",
-          "ja": "書類を持って来ました。前のカードの残額も確認できますか。",
-          "vi": "Tôi đã mang giấy tờ. Có thể kiểm số dư thẻ cũ không ạ?"
+          "ja": "再発行整理票と身分証を持って来ました。前のカードの残額も確認できますか。",
+          "vi": "Tôi đã mang phiếu cấp lại và giấy tờ tùy thân. Có thể kiểm số dư thẻ cũ không ạ?"
         },
         {
           "id": "dedda12e-effb-5512-b3de-0ffb5330b5ea-u02",
@@ -868,8 +877,14 @@
         {
           "id": "dedda12e-effb-5512-b3de-0ffb5330b5ea-u03",
           "speaker_id": "a",
-          "ja": "千円ですね。再発行の手続きをお願いします。",
-          "vi": "1.000 yên nhỉ. Nhờ anh hướng dẫn thủ tục cấp lại."
+          "ja": "千円ですね。再発行もお願いします。",
+          "vi": "1.000 yên nhỉ. Nhờ anh làm thủ tục cấp lại ạ."
+        },
+        {
+          "id": "dedda12e-effb-5512-b3de-0ffb5330b5ea-u04",
+          "speaker_id": "b",
+          "ja": "はい。手数料とデポジットで千二十円です。",
+          "vi": "Vâng. Phí cấp lại và tiền đặt cọc là 1.020 yên."
         }
       ],
       "admin": {
@@ -886,6 +901,9 @@
             "kind": "original_extension"
           },
           "dedda12e-effb-5512-b3de-0ffb5330b5ea-u03": {
+            "kind": "original_extension"
+          },
+          "dedda12e-effb-5512-b3de-0ffb5330b5ea-u04": {
             "kind": "original_extension"
           }
         }
@@ -977,7 +995,7 @@
         {
           "id": "6ab0c4cc-03a3-55a5-8fd5-193eee8881a7-u03",
           "speaker_id": "a",
-          "ja": "わかりました。カードをお願いします。",
+          "ja": "わかりました。お願いします。こちらです。",
           "vi": "Tôi hiểu. Nhờ anh xem thẻ."
         }
       ],
@@ -1190,7 +1208,7 @@
         {
           "id": "57478d80-f4a7-5b8e-989e-8648affc0b1f-u01",
           "speaker_id": "a",
-          "ja": "同じ道を行ったつもりですが、二回の引かれたお金が違います。",
+          "ja": "同じ区間に乗ったつもりですが、引かれた金額が違います。",
           "vi": "Tôi nghĩ hai lần mình đi cùng chặng, nhưng số tiền bị trừ khác nhau."
         },
         {
@@ -1244,8 +1262,8 @@
         {
           "id": "9e5ca611-e80e-5614-a8fd-87a371fc8b8c-u01",
           "speaker_id": "a",
-          "ja": "火曜日と木曜日です。どちらも浅草から渋谷に行きました。",
-          "vi": "Là thứ Ba và thứ Năm. Cả hai lần tôi đi từ Asakusa tới Shibuya."
+          "ja": "火曜日と木曜日です。どちらも浅草から渋谷まで乗ったと思います。",
+          "vi": "Là thứ Ba và thứ Năm. Tôi nhớ cả hai lần đều đi từ Asakusa tới Shibuya."
         },
         {
           "id": "9e5ca611-e80e-5614-a8fd-87a371fc8b8c-u02",
@@ -1304,8 +1322,8 @@
         {
           "id": "84606ab6-2abd-5b13-a499-bac4e6350b39-u02",
           "speaker_id": "a",
-          "ja": "いいえ、火曜日と木曜日です。浅草から渋谷までです。",
-          "vi": "Không, thứ Ba và thứ Năm ạ. Từ Asakusa tới Shibuya."
+          "ja": "いいえ、火曜日と木曜日です。浅草から渋谷までだったと思います。",
+          "vi": "Không, thứ Ba và thứ Năm ạ. Tôi nhớ là từ Asakusa tới Shibuya."
         },
         {
           "id": "84606ab6-2abd-5b13-a499-bac4e6350b39-u03",
