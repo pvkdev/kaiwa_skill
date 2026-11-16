@@ -95,8 +95,8 @@ button { border: 0; }
 #search:focus { outline: none; }
 .search-wrap:focus-within { border-color: var(--accent); outline: 2px solid var(--accent-soft); }
 .stage-list { padding: 0 12px 32px; overflow-y: auto; overscroll-behavior: contain; flex: 1; scrollbar-width: thin; }
-.nav-group { margin-top: 9px; }
-.nav-group > summary { list-style: none; cursor: pointer; padding: 13px 10px; color: var(--muted); font-size: 11px; line-height: 1.6; font-weight: 750; letter-spacing: .3px; display: flex; gap: 10px; align-items: center; }
+.nav-group { margin-top: 18px; }
+.nav-group > summary { list-style: none; cursor: pointer; padding: 13px 12px; color: var(--text); background: var(--soft); border-left: 3px solid var(--accent); border-radius: 0 9px 9px 0; margin-bottom: 7px; font-size: 13px; line-height: 1.6; font-weight: 750; display: flex; gap: 10px; align-items: center; }
 .nav-group > summary::before { content: "⌄"; font-size: 14px; }
 .nav-group:not([open]) > summary::before { content: "›"; }
 .nav-group > summary::-webkit-details-marker { display: none; }
@@ -104,6 +104,7 @@ button { border: 0; }
 .stage-button:hover { background: var(--soft); }
 .stage-button[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 650; }
 .stage-number { font-size: 11px; color: var(--muted); min-width: 23px; font-variant-numeric: tabular-nums; }
+.specialty-marker { color: var(--accent); font-size: 18px; line-height: 1; }
 .stage-button[aria-current="page"] .stage-number { color: var(--accent); }
 .no-results { color: var(--muted); padding: 25px 12px; font-size: 13px; }
 .sidebar-foot { padding: 14px 22px; border-top: 1px solid var(--line); font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; }
@@ -151,6 +152,16 @@ h1 { margin: 0; max-width: 850px; font-size: clamp(26px, 2.8vw, 39px); font-weig
 .lesson[open] { border-color: color-mix(in srgb, var(--accent) 36%, var(--line)); }
 .lesson[open] > summary { border-bottom: 1px solid var(--line); }
 .lesson-label { font-size: 10px; color: var(--muted); margin-bottom: 5px; letter-spacing: .3px; }
+.lesson-heading { min-width: 0; flex: 1; }
+.specialty-caption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 5px 12px; margin-bottom: 7px; }
+.specialty-caption .lesson-label { margin: 0; }
+.specialty-badge { --badge: var(--accent); display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border-radius: 7px; font-size: 11px; font-weight: 650; line-height: 1.5; color: color-mix(in srgb, var(--badge) 80%, var(--text)); background: color-mix(in srgb, var(--badge) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--badge) 25%, var(--line)); }
+.specialty-patterns { --badge: #507ea0; }
+.specialty-mini { --badge: #328575; }
+.specialty-keigo { --badge: #8a65b7; }
+.specialty-idioms { --badge: #b18131; }
+.specialty-emotion { --badge: #b67a9d; }
+:root[data-theme="dark"] .specialty-badge { color: color-mix(in srgb, var(--badge) 55%, #fff); }
 .lesson h3 { font-size: 16px; line-height: 1.6; font-weight: 650; margin: 0; overflow-wrap: anywhere; }
 .lesson-body { padding: 25px; line-height: 1.85; }
 .lesson-body > :first-child { margin-top: 0; }
@@ -302,12 +313,19 @@ if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (["6.5", "8.0"].includes(course.version)) delete types.reading;
-if (["7.0", "9.0", "9.1"].includes(course.version)) {
+if (["7.0", "9.0", "9.1", "9.2"].includes(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
   types.reading.label = "Kiến thức Speak Japanese";
 }
 const byId = new Map(course.stages.map(stage => [stage.uid, stage]));
+const specialtyCategories = {
+  patterns: { label: "Mẫu câu thông dụng", icon: "型" },
+  mini: { label: "Cụm từ ngắn dùng ngay", icon: "↗" },
+  keigo: { label: "Kính ngữ", icon: "礼" },
+  idioms: { label: "Câu quán ngữ", icon: "結" },
+  emotion: { label: "Truyền đạt cảm xúc", icon: "♡" }
+};
 const stageLists = Object.fromEntries(levels.map(level => [level, course.stages.filter(s => s.level === level)]));
 const $ = id => document.getElementById(id);
 function make(tag, className, text) {
@@ -407,6 +425,7 @@ function selectLevel(level) {
 }
 function renderNavigation() {
   const nav = $("stage-list");
+  const previousScroll = nav.scrollTop;
   const query = fold($("search").value.trim());
   const stages = stageLists[current.level].filter(stage => !query || fold([
     stage.title, stage.cluster, stage.code,
@@ -424,15 +443,22 @@ function renderNavigation() {
       cluster = stage.cluster_id;
     }
     const item = button("", () => navigate(stage.uid), "stage-button");
-    item.append(make("span", "stage-number", stage.stage_kind === "speak_japanese" ? "♫" : String(stage.number).padStart(2, "0")), make("span", "", stage.title));
+    const specialty = stage.stage_kind === "speak_japanese";
+    const marker = make("span", "stage-number" + (specialty ? " specialty-marker" : ""),
+      specialty ? "◈" : String(stage.number).padStart(2, "0"));
+    if (specialty) marker.setAttribute("aria-label", "Chặng chuyên đề");
+    item.append(marker, make("span", "", stage.title));
     if (stage.uid === current.uid) item.setAttribute("aria-current", "page");
     group.append(item);
   }
   if (!stages.length) nav.append(make("p", "no-results", "Không tìm thấy chặng phù hợp. Thử từ khóa khác."));
+  nav.scrollTop = previousScroll;
   const selected = nav.querySelector('[aria-current="page"]');
   if (selected) {
-    const top = selected.getBoundingClientRect().top - nav.getBoundingClientRect().top + nav.scrollTop;
-    nav.scrollTop = Math.max(0, top - nav.clientHeight * .35);
+    const bounds = nav.getBoundingClientRect();
+    const item = selected.getBoundingClientRect();
+    if (item.top < bounds.top) nav.scrollTop += item.top - bounds.top;
+    else if (item.bottom > bounds.bottom) nav.scrollTop += item.bottom - bounds.bottom;
   }
 }
 function renderHeading() {
@@ -557,10 +583,21 @@ function renderLessons() {
     detail.id = node.id;
     detail.dataset.kind = node.kind;
     const summary = make("summary");
-    const title = make("div");
+    const title = make("div", "lesson-heading");
     const lessonLabel = node.selection?.section_title ?
       node.selection.section_title : types[node.kind].label;
-    title.append(make("div", "lesson-label", lessonLabel), make("h3", "", node.title));
+    const label = make("div", "lesson-label", lessonLabel);
+    const category = specialtyCategories[node.selection?.category];
+    if (category) {
+      const caption = make("div", "specialty-caption");
+      const badge = make("span", "specialty-badge specialty-" + node.selection.category);
+      const glyph = make("span", "", category.icon);
+      glyph.setAttribute("aria-hidden", "true");
+      badge.append(glyph, make("span", "", category.label));
+      caption.append(label, badge);
+      title.append(caption);
+    } else title.append(label);
+    title.append(make("h3", "", node.title));
     summary.append(icon(node.kind), title);
     const body = make("div", "lesson-body");
     let loaded = false;
