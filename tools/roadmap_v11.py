@@ -11,6 +11,7 @@ OUT = ROOT / "kaiwa_skill/planning/v11"
 BASE = ROOT / "kaiwa_skill/planning/v10"
 CODES = ("S-011", "T-044", "H-004", "S-021", "T-027", "H-020", "S-035", "T-008", "H-047")
 HELPER = runpy.run_path(str(ROOT / ".agents/skills/kaiwa-topic-dialogue/scripts/dialogue.py"))
+REVIEW = runpy.run_path(str(ROOT / ".agents/skills/kaiwa-dialogue-double-check/scripts/review.py"))
 
 
 def read(path):
@@ -22,6 +23,32 @@ def write(path, value):
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf8")
     temporary.replace(path)
+
+
+def review_state(code):
+    path = OUT / "reviews" / code / "review.json"
+    if path.is_file():
+        expected, turns = REVIEW["snapshot"](code)
+        errors = list(REVIEW["issues"](read(path), expected, turns))
+        status = read(OUT / "stages" / code / "status.json") if code not in CODES else read(
+            OUT / "pilot" / code / "status.json")
+        completed = not errors and status.get("independent_review") == "completed"
+        return "completed" if completed else "needs_review"
+    if code in CODES:
+        folder = OUT / "pilot" / code
+        review = read(folder / "status.json").get("root_review", {})
+        draft = read(folder / "dialogues.json")
+        if review.get("state") != "complete":
+            return "needs_review"
+        for scene in draft["dialogues"]:
+            record = review.get("scenes", {}).get(scene["situation_uid"], {})
+            hashes = {hashlib.sha256(json.dumps(scene, ensure_ascii=False, sort_keys=True,
+                       **options).encode("utf8")).hexdigest()
+                      for options in ({}, {"separators": (",", ":")})}
+            if record.get("content_sha256", record.get("sha256")) not in hashes:
+                return "needs_review"
+        return "completed"
+    return "pending"
 
 
 def build(publish=False, batch=None):
@@ -73,7 +100,7 @@ def build(publish=False, batch=None):
         totals.append({"code": code, "uid": stage["uid"], "level": stage["level"],
                        "dialogues": len(draft["dialogues"]), "turns": turns,
                        **({"draft_path": path.relative_to(ROOT).as_posix(),
-                           "independent_review": "pending" if code not in CODES else "completed"}
+                           "independent_review": review_state(code)}
                           if batch else {}),
                        "draft_sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
     assert sum(t["dialogues"] for t in totals) == expected_dialogues
