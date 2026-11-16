@@ -1,0 +1,142 @@
+{
+  "after": "T-141",
+  "title": "Bị quấy rối hoặc bám theo trên đường, ở ga và trên tàu",
+  "objective": "Nhờ một người cụ thể giúp ngay trên hành trình, chuyển lời cho nhân viên ga và mô tả điều đã xảy ra dù thông tin còn thiếu.",
+  "vocabulary": [
+    "Đụng chạm ngoài ý muốn và khoảng cách trên tàu",
+    "Toa, cửa, sân ga, cổng soát vé và hướng đi",
+    "Đi theo, chờ bên ngoài và nhờ có người ở cạnh"
+  ],
+  "scope": "T-141 có kỹ năng xin hỗ trợ chung. Ở đây mỗi lượt nói gắn với chuyển toa, xuống ga, bàn giao cho nhân viên hoặc làm chứng.",
+  "sources": [
+    "https://www.keishicho.metro.tokyo.lg.jp/sodan/madoguchi/chikan.html"
+  ],
+  "events": [
+    {
+      "name": "Bị sờ chạm trên toa đông",
+      "roles": [
+        "người bị quấy rối",
+        "hành khách đứng cạnh"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Không thể nói dài trên toa đông, nhờ hành khách cạnh cửa đứng sát bên mình vì đang bị đụng chạm"
+        },
+        {
+          "branch": "misunderstanding",
+          "title": "Người giúp tưởng do tàu phanh, giải thích việc đó đã lặp lại sau khi mình dịch chỗ"
+        },
+        {
+          "branch": "alternative",
+          "title": "Chưa nhìn thấy mặt người chạm, nhờ người giúp cùng xuống ga tới mà không chỉ nhầm ai"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Người giúp sắp phải đổi tuyến, xin họ cùng đi tới chỗ nhân viên trước khi chia tay"
+        }
+      ]
+    },
+    {
+      "name": "Người kia theo ra khỏi ga",
+      "roles": [
+        "hành khách",
+        "nhân viên cổng soát vé"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Vừa qua cổng thấy người trên tàu vẫn theo sau, quay lại nói mình muốn đứng cùng nhân viên"
+        },
+        {
+          "branch": "problem",
+          "title": "Người kia đang đợi gần lối về nhà, chỉ lối ra đó và giải thích vì sao mình chưa muốn rời ga"
+        },
+        {
+          "branch": "misunderstanding",
+          "title": "Nhân viên nghĩ đó là người quen tới đón, nói mình không hẹn và không muốn họ biết mình về đâu"
+        },
+        {
+          "branch": "conditional",
+          "title": "Nhân viên không nhìn thấy ai ở lối vừa chỉ, mô tả lần cuối thấy người đó và hỏi có thể chờ ở đâu"
+        }
+      ]
+    },
+    {
+      "name": "Kể lại chuyến tàu khi không nhớ số toa",
+      "roles": [
+        "người bị quấy rối",
+        "nhân viên ga"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Nhớ mình xuống gần thang cuốn hơn là số toa, dùng vị trí đó để mô tả cửa đã bước ra"
+        },
+        {
+          "branch": "misunderstanding",
+          "title": "Bị hiểu là sự việc xảy ra trên sân ga, phân biệt chỗ bị chạm với chỗ trông thấy người đó lần cuối"
+        },
+        {
+          "branch": "conditional",
+          "title": "Chỉ thấy áo khoác và túi đeo, nói rõ phần nào mình nhìn thấy và vì sao không nhận diện được khuôn mặt"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Nhớ lúc đó vừa nghe thông báo tên ga, bổ sung mốc này thay cho giờ mình đã ước chừng"
+        }
+      ]
+    },
+    {
+      "name": "Trên đường về có người đi theo nhiều lần",
+      "roles": [
+        "người đi bộ",
+        "nhân viên cửa hàng"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Rẽ vào cửa hàng có người, nói mình đã đổi hướng mà người phía sau vẫn đi theo và xin giúp"
+        },
+        {
+          "branch": "problem",
+          "title": "Người kia chờ ngoài cửa kính, nhờ nhân viên nói chuyện ở chỗ khuất tầm nhìn"
+        },
+        {
+          "branch": "conditional",
+          "title": "Điện thoại đang đổ chuông từ số lạ, nói mình chưa biết người gọi là ai và xin dùng cách liên hệ khác"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Hôm sau gặp lại gần cùng lối ra, kể riêng hai lần và chi tiết nào khiến mình nghĩ có liên quan"
+        }
+      ]
+    },
+    {
+      "name": "Làm chứng theo ý người cần giúp",
+      "roles": [
+        "người chứng kiến",
+        "hành khách cần giúp",
+        "nhân viên ga"
+      ],
+      "situations": [
+        {
+          "branch": "routine",
+          "title": "Thấy một hành khách cố tránh người đứng sát, hỏi nhỏ họ muốn mình ở cạnh hay gọi nhân viên"
+        },
+        {
+          "branch": "accepted",
+          "title": "Họ muốn xuống cùng, thống nhất sẽ đợi nhau bên cửa nào và hướng tới quầy nào"
+        },
+        {
+          "branch": "declined",
+          "title": "Họ chưa muốn kể trước đám đông, hỏi có muốn mình nhường chỗ gần cửa và đứng cạnh không"
+        },
+        {
+          "branch": "follow_up",
+          "title": "Khi nhân viên hỏi, kể phần mình trực tiếp thấy rồi để người trong cuộc tự nói điều họ muốn chia sẻ"
+        }
+      ]
+    }
+  ]
+}

@@ -189,6 +189,12 @@ h1 { margin: 0; max-width: 850px; font-size: clamp(26px, 2.8vw, 39px); font-weig
 .provenance .quality { border-left: 3px solid #bd8b43; padding-left: 12px; }
 .shadowing-item + .shadowing-item { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 16px; }
 .shadowing-item .roles { margin-bottom: 4px; }
+.extra-practice { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); }
+.extra-practice > h4 { margin: 0 0 14px; font-size: 15px; }
+.practice-example { padding: 16px; margin: 12px 0; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); }
+.practice-example .practice-context { margin: 0 0 14px; font-size: 13px; font-weight: 650; }
+.practice-turn + .practice-turn { margin-top: 16px; }
+.practice-turn p { margin: 5px 0; }
 .event { border: 1px solid var(--line); border-radius: 10px; margin: 12px 0; padding: 0 16px; }
 .event > summary { cursor: pointer; padding: 13px 0; font-weight: 650; font-size: 14px; }
 .roles { color: var(--muted); font-size: 12px; margin: 0 0 14px; }
@@ -313,7 +319,7 @@ if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (["6.5", "8.0"].includes(course.version)) delete types.reading;
-if (["7.0", "9.0", "9.1", "9.2"].includes(course.version)) {
+if (["7.0", "9.0", "9.1", "9.2", "10.0"].includes(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
   types.reading.label = "Kiến thức Speak Japanese";
@@ -508,6 +514,24 @@ function placeholder(glyph, text) {
   container.append(make("span", "placeholder-icon", glyph), make("span", "", text));
   return container;
 }
+function renderPractice(examples) {
+  const section = make("section", "extra-practice");
+  section.append(make("h4", "", "Luyện thêm qua ví dụ"));
+  for (const example of examples) {
+    const article = make("article", "practice-example");
+    article.append(make("p", "practice-context", example.context_vi));
+    const speakers = new Map(example.speakers.map(s => [s.id, s]));
+    for (const turn of example.turns) {
+      const speaker = speakers.get(turn.speaker_id);
+      const line = make("div", "practice-turn");
+      line.append(make("p", "roles", speaker.role_vi + " · " + (speaker.gender === "male" ? "Giọng nam" : "Giọng nữ")),
+        make("p", "", turn.ja), make("p", "quiet", turn.vi));
+      article.append(line);
+    }
+    section.append(article);
+  }
+  return section;
+}
 function renderBody(node, body) {
   switch (node.kind) {
     case "vocabulary": {
@@ -540,7 +564,9 @@ function renderBody(node, body) {
       }
       const reading = make("div", "reading");
       reading.innerHTML = course.content[node.selection.content_key];
-      body.append(reading, renderProvenance(node.selection));
+      body.append(reading);
+      if (node.selection.practice?.length) body.append(renderPractice(node.selection.practice));
+      body.append(renderProvenance(node.selection));
       break;
     }
     case "lecture":
