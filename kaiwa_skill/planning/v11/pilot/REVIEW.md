@@ -1,33 +1,25 @@
-# V11 · Ba pilot hội thoại
+# V11 · Nghiệm thu lại ba chặng pilot
 
-Trạng thái bàn giao là chờ chủ dự án duyệt. Phạm vi gồm S-011, T-044, H-004 với 55 hội thoại Nhật–Việt. Mỗi chặng có dialogues.json, status.json và RESEARCH.md. BUILD.json ghi số lượng và hash của bản đã ghép vào preview.
+Có 55 hội thoại và 314 lượt nói Nhật–Việt trong [HTML preview](ROADMAP.html). Trạng thái hiện tại là chờ chủ dự án duyệt ba pilot.
 
-## Nội dung đã đọc và sửa
+## Các cảnh nên mở khi đối chiếu
 
-Root đã đọc đủ 15 hội thoại S-011, 25 hội thoại T-044 và 15 hội thoại H-004 bằng cả hai ngôn ngữ. Các worker tự đọc lại chặng của mình; sau đó có lượt đọc chéo Sơ → Thượng và Trung, Thượng → Sơ. Root quyết định sửa và đọc lại các lượt liên quan sau góp ý.
+- **S-011 · Tàu điện và xe buýt** có 15 cảnh, 77 lượt. Ở cảnh 4–5, nhân viên chỉ đúng phía rồi hành khách tự nhắc cả ga đổi tàu lẫn sân ga. Ở cảnh 13–14, hành khách hỏi chờ ở đâu khi đi cùng mẹ. Chỉ khi nhân viên quay lại, họ mới biết nơi nhân viên ga sau sẽ đón. [Ghi nhận từng cảnh Sơ](S-011/RESEARCH.md)
+- **T-044 · Gửi bưu kiện cá nhân và hỏi hàng quốc tế** có 25 cảnh, 145 lượt. Cảnh 13 tập hỏi phía nào có thể xử lý sau khi kiện rời Nhật. Cảnh 15 tập nghe cuộc gọi lại, xin người nói nhắc chậm rồi đọc lại cả tên đơn vị và cách dùng mã theo dõi. Cảnh 18–19 có cuộc hẹn hỏi tiến độ sau hai tuần và lượt người gửi thực sự đọc mã khi gọi lại. Mốc đó là thời điểm hai nhân vật thỏa thuận hỏi tiến độ. [Ghi nhận từng cảnh Trung](T-044/RESEARCH.md)
+- **H-004 · Kính ngữ đối ngoại và chuyển lời xã giao** có 15 cảnh, 92 lượt. Cảnh 1 để chủ nhà giới thiệu trưởng bộ phận rồi mời khách vào việc. Cảnh 5–6 sửa hiểu lầm giữa lời mong được trao đổi tiếp và sự đồng thuận của hai công ty. Cảnh 7–8 giữ đúng ý khách khi chuyển lời ra ngoài và về nội bộ. Cảnh 11–12 tách việc đã xem tài liệu, đã phản hồi và đã phê duyệt. [Ghi nhận từng cảnh Thượng](H-004/RESEARCH.md)
 
-- S-011 có 77 lượt nói. Các cảnh phân biệt hỏi tàu, đổi tuyến, đứng sai phía, đi quá bến, báo muộn cho bạn và nhờ hỗ trợ đi cùng mẹ. Đã sửa cách gọi người đi cùng, trình tự hỏi quầy kiểm vé và dịch 番線 thành sân ga để người học hiểu đúng nơi lên tàu. Đã đọc lại các cảnh tiếp nối cùng hành trình. Các ga và chỉ dẫn cụ thể là giả định cho bài luyện; riêng cảnh lên/trả tiền xe buýt nêu rõ phạm vi Toei Bus trong 23 quận Tokyo.
-- T-044 có 151 lượt nói. Đã sửa bốn cảnh nhân viên mở lời bị đảo ID vai; thêm câu trả lời về phí và thời gian để khách chọn được cách gửi; phân biệt bưu kiện từ Nhật đi Canada với kiện hỏng từ Canada đến Nhật. Đã sửa cách giữ bao bì và hẹn kiểm tra tại nơi nhận, mức chắc chắn về việc bắt đầu điều tra và cách dịch trạng thái theo dõi. Thời gian tới Toronto là ước lượng trong tình huống. Bảng giá được ghim theo tài liệu Japan Post đã tra, có nguồn và ngày đọc ở hồ sơ nội bộ.
-- H-004 có 92 lượt nói. Đã sửa chỗ nhân vật phía đối tác dùng kính ngữ cho cấp trên của chính mình, sự khác nhau giữa đã nhận tài liệu/đã đọc/đã có ý kiến/đã phê duyệt, và lời dịch có thể khiến người học hiểu việc phê duyệt chắc chắn sẽ tới. Cảnh chuyển lời về nội bộ giữ cách gọi phù hợp quan hệ mới. Đã bổ sung mốc tháng vào lời mong muốn để tình huống hiểu nhầm tiếp theo có căn cứ.
+## Cách rà và kiểm preview
 
-Các mã cảnh nội bộ trong bối cảnh hiển thị được đổi thành tên tình huống. JA và VI nằm ở hai trường riêng, speaker_id nối tới vai có gender male/female. Nguồn sách được ghi cả mã, tên, đường dẫn và dải dòng. Các hội thoại mới có ghi nhận viết mới ở từng lượt, cùng căn cứ tham khảo cấp cảnh.
+Áp dụng ba lượt rà cho từng cảnh theo [skill V11](../../../../.agents/skills/kaiwa-topic-dialogue/SKILL.md). Đối chiếu lời của từng vai với việc cần làm và kết quả của tình huống. Đọc liền các cặp hỏi–đáp bằng cả hai ngôn ngữ và kiểm lại thông tin truyền sang cảnh sau. Sau đó đọc theo từng vai, kiểm độ khó khi đổi vai và những cuộc trao đổi dễ bị lặp trong cùng sự kiện. Bảng ở từng hồ sơ nghiên cứu ghi UID và lượt đối chiếu. Tệp status.json cạnh bản thảo gắn kết quả rà với dấu vân tay của từng cảnh.
 
-## Nguồn được đối chiếu
+Bộ kiểm cấu trúc đã kiểm 55 UID tình huống theo đúng thứ tự, 314 ID lượt duy nhất, hai trường Nhật–Việt, vai, giới tính và nguồn nội bộ. Đã đối chiếu từng hội thoại trong JSON xuất với bản tác giả, đối chiếu JSON nhúng trong HTML với learner.json, và so phần còn lại của lộ trình với V10.
 
-Worker tra chỉ mục trên phạm vi 27 sách rồi mở các đoạn phù hợp và bài chuyên đề gần trước để đọc. RESEARCH.md của từng chặng ghi phạm vi đọc thật, những đoạn không dùng và lý do. Root đối chiếu các đoạn nguồn chính và mở lại hướng dẫn của Cơ quan Văn hóa về quan hệ trong–ngoài, Toei Bus về cách lên/trả tiền và Japan Post về thay đổi địa chỉ, hàng cấm, kiện hỏng. Lượt đọc chéo còn kiểm bảng cước Zone 3 của Japan Post.
+Đã mở ba liên kết pilot trong Chrome headless ở hai kích thước 1280 × 800 và 390 × 844. Ở mỗi kích thước, mở phần thực hành và các sự kiện, so từng bối cảnh, câu Nhật, bản dịch Việt và nhãn vai/giọng trong DOM với JSON xuất. Hai file HTML preview và docs/index.html trùng nội dung.
 
-- [Cơ quan Văn hóa · ウチとソト](https://www.bunka.go.jp/seisaku/kokugo_nihongo/kokugo_shisaku/keigo/chapter7/detail.html)
-- [Toei Bus · cách sử dụng](https://www.kotsu.metro.tokyo.jp/bus/kanren/riyo.html)
-- [Japan Post · bưu kiện bị hỏng](https://www.post.japanpost.jp/question/oversea/16_en.html)
-- [Japan Post · giới hạn sửa địa chỉ EMS](https://www.post.japanpost.jp/question/oversea/135_en.html)
-- [Japan Post · cước bưu kiện Zone 3](https://www.post.japanpost.jp/send/oversea/charge/list-parcel/zone3_en.html)
+## Nguồn đối chiếu
 
-## Preview và kiểm kỹ thuật
+Hồ sơ từng chặng ghi tên sách, vị trí tra cứu và căn cứ cho các dữ kiện thực tế. Tên ga, người và mã bưu kiện phục vụ tình huống luyện. Cảnh xe buýt có phạm vi Toei Bus trong 23 quận Tokyo. Cảnh báo giá cho kiện 1,8 kg từ Tokyo tới Toronto phân biệt cước tại quầy với thời gian đến dự kiến. [Hướng dẫn Toei Bus](https://www.kotsu.metro.tokyo.jp/bus/kanren/riyo.html) · [Cước Japan Post](https://www.post.japanpost.jp/send/oversea/charge/list-parcel/zone3_en.html)
 
-ROADMAP.html nhúng đúng nội dung pilot/learner.json. docs/index.html dùng cùng bản dựng. Ba liên kết Pilot ở đầu nội dung mở đúng chặng; các tab Sơ/Trung/Thượng vẫn duyệt được toàn bộ nền V10 để xem chuyên đề và vị trí học. Hội thoại nằm trong mục Thực hành tình huống, phân nhóm theo sự kiện.
+Trong cảnh gọi lại, Canada Post cung cấp nơi tra hành trình bằng mã theo dõi. Việc thay đổi địa chỉ phải hỏi riêng theo kiện và dịch vụ. Cảnh kiện hỏng khi đến Nhật dựa trên hướng dẫn về giữ nguyên bao bì và liên hệ bưu cục phụ trách phát. [Tra kiện trên Canada Post](https://www.canadapost-postescanada.ca/track-reperage/en) · [Japan Post về kiện hỏng](https://www.post.japanpost.jp/question/oversea/16_en.html)
 
-Đã kiểm đủ UID/thứ tự của 55 cảnh, 320 ID lượt duy nhất, JA–VI, hai vai, gender, con trỏ sách và liên kết chuyên đề. Đã kiểm trùng nguyên kịch bản giữa ba pilot. Kiểm hàm render bằng DOM giả lập xác nhận các bối cảnh, 320 lời Nhật và 320 bản dịch được tạo vào phần tình huống; kiểm cú pháp JavaScript đạt. Kiểm lại dữ liệu xuất sau sửa và dựng lại để xác nhận ID giữ nguyên.
-
-**Giới hạn nghiệm thu giao diện.** Công cụ browser chặn URL file cục bộ khi mở ROADMAP.html. Lượt này đã kiểm dữ liệu nhúng và đường render bằng mã, chưa quan sát giao diện thật trên PC/mobile. Có thể mở trực tiếp file preview hoặc dùng docs/index.html khi đưa lên GitHub Pages để duyệt.
-
-Skill được bổ sung hướng dẫn kiểm thông tin từng vai thực sự biết, rà kính ngữ của cả hai phía và cho cảnh hỏi giá/điều kiện có câu trả lời đủ để luyện bước tiếp. Token thực không được runtime cung cấp nên báo cáo này không quy đổi thành quota hay dự báo chính xác chi phí hàng loạt.
+H-004 đối chiếu cách nhắc đến cấp trên của công ty mình khi chuyển lời cho đối tác và cách xưng hô khi quay về nội bộ. [Hướng dẫn ウチとソト của Cơ quan Văn hóa Nhật Bản](https://www.bunka.go.jp/seisaku/kokugo_nihongo/kokugo_shisaku/keigo/chapter7/detail.html)

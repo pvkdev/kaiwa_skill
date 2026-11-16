@@ -53,3 +53,27 @@ Các URL trên đã tra bằng tìm kiếm web ngày 2026-11-16. Chúng chỉ l�
 ## Tự rà tác giả
 
 Đã đọc liền 15 cảnh theo thứ tự, đọc riêng toàn bộ JA và VI, kiểm hai vai, hậu quả nhánh, vai người đợi ở S010, nhất quán Aoba/Sakura/đường ray 2, Thư viện/Hội trường Thành phố và mẹ ở S012–S014. Đã sửa sau lần đọc đầu: S001 làm rõ tàu không đến thẳng Sakura nhưng đi Aoba; S012/S013 dùng “mẹ” và câu ngắn tự nhiên; S014 giữ quan hệ đó; S015 hỏi quầy trước khi đưa vé; S009 đặt câu hỏi khi xe tạm dừng; S010 rút lời báo muộn xuống mức Sơ. Lời nhân viên có vài cụm nghe cố định lịch sự (`お待ちください`, `ご案内します`); người học nói ngắn. Không có khẳng định y tế/quyền lợi, giờ hay phí. `dialogue.py --check` chỉ xác nhận cấu trúc, không thay việc root review ngôn ngữ và preview.
+
+## Rà vòng hai từng cảnh — tác giả, 2026-11-16
+
+Quy ước bảng: `u01–u06` là hậu tố turn ID đầy đủ `<situation_uid>-u01` đến `<situation_uid>-u06`. Đã đọc lượt liên tiếp theo JA rồi VI, đọc cả lượt A và B để thử đổi vai; cột cuối ghi quyết định sau ba phép rà: hành vi/kết quả, ngôi-nghĩa/gối đầu, và sức nói–nghe mức Sơ. Đây là tự rà tác giả, không phải root nghiệm thu.
+
+| UID tình huống | Turn ID đã rà | Kết quả và ghi nhận cụ thể |
+|---|---|---|
+| `519f0e38-bbc1-5164-a0a0-bd370a5e996d` (S001) | u01–u06 | A hỏi tàu đến Sakura, B nói không đến Sakura nhưng đi Aoba; A xác nhận lên tàu hiện tại đến Aoba. Hai vai rõ, VI không biến thành tàu đi thẳng. Giữ. |
+| `ae9d1408-aae7-5398-85ba-a2c7f29a45d6` (S002) | u01–u05 | A hỏi ga đổi, B nhắc Aoba và nơi xuống; A nhắc lại. Bối cảnh chỉ cho biết người học nghe nói phải đổi, chưa biết ga nào; không lấy đáp án từ S001. Giữ lời thoại. |
+| `c86d5282-a8f9-5db3-9a55-2ded9d0541b0` (S003) | u01–u05 | A hỏi phía tàu tới Sakura, B chỉ số 2; A trỏ nhầm cầu thang, B sửa, A nhận ra. `こちら/あちら` đúng điểm nhìn, VI giữ đúng cầu thang phía trước. Giữ. |
+| `2f02b243-cae3-5107-bff3-aa7a1e38f18c` (S004) | u01–u05 | A ở chiều ngược và hỏi lại hướng; B chỉ sân ga 2 đối diện. Sửa u04 thành `あちらのホームへどうぞ` / “Mời chị sang sân ga đó”, rõ nơi đến và lịch sự hơn “Bạn đi phía kia”; A nhắc lại. |
+| `68b27ce2-cdc7-550e-a748-0b7dfe400a8c` (S005) | u01–u05 | Tiếp S004: A nay hỏi chính Aoba là ga đổi ở u01 **và** xác nhận sân ga 2 hướng Sakura ở u03; B đáp từng dữ kiện, A đi. Không chỉ hỏi tên ga; không đổi kết quả S004. |
+| `25ad555b-8021-5d65-8c3b-e53b723c403a` (S006) | u01–u05 | A hỏi xe có dừng Thư viện, rồi số bến; B nói bến thứ ba, A nhắc lại. Không lẫn “bến thứ ba” với số tuyến. Giữ. |
+| `52f40bb7-9557-5778-a222-b3e2006859b0` (S007) | u01–u05 | A hỏi cửa và lúc trả, B đáp cửa trước/trả khi lên; A thực hiện. Chỉ áp dụng Toei Bus trong 23 quận Tokyo như bối cảnh; không phổ quát cho Tama. Giữ. |
+| `ea8e465e-3b20-539c-8168-255b71403c65` (S008) | u01–u06 | B từ chối xe đi thẳng Bệnh viện, A hỏi điểm đổi, B chỉ Công viên Trung tâm và yêu cầu kiểm chỗ đón kế tiếp. VI không hứa có sẵn bến/tuyến thật. Giữ. |
+| `0c09f777-1f73-55e3-b5a5-c365485eb552` (S009) | u01–u05 | A biết vừa quá bến Thư viện, hỏi bến có thể xuống tiếp; B chỉ Hội trường Thành phố; A bấm nút. Cảnh đặt lúc xe tạm dừng, không xin xuống giữa đường. Giữ. |
+| `82d2a9aa-d6d8-54cc-9fbd-dbb23b49a236` (S010) | u01–u05 | Tiếp S009: A gọi bạn nam bằng giọng thân, nêu bến sẽ xuống và chỉ báo “muộn một chút”; B chờ trước thư viện, A hứa gọi lại sau khi xuống. Không tự hứa giờ đến. Giữ. |
+| `4e5556ca-92ca-5164-95fa-96f682da6aea` (S011) | u01–u05 | A mang nhiều hành lý hỏi thang máy; B chỉ mốc bên phải cổng, A xác nhận. Mốc là ví dụ ga không định danh, không tuyên bố mọi ga giống nhau. Giữ. |
+| `add40c3f-065e-5f08-9731-8961e5ccf623` (S012) | u01–u05 | A nêu mẹ khó đi cầu thang rồi hỏi lối đang chỉ; B chỉ đường qua thang máy; A nhắc điểm rẽ. Hai vai ngắn, `母`/“mẹ” nhất quán với S013–S014. Giữ. |
+| `ef5dae70-6a18-50f5-a57c-0fb6506894dc` (S013) | u01–u05 | A nêu đổi ở Aoba và mẹ khó đi cầu thang; B nói cần kiểm hỗ trợ; **A tự hỏi đâu để đợi ở u03**, B mới chỉ cạnh cổng ở u04, A nhắc mốc ở u05. Bối cảnh không cho trước đáp án chờ. |
+| `14c7db18-06fa-519f-9b65-1872108db28d` (S014) | u01–u05 | Tiếp S013 sau khi B đã kiểm Aoba: B báo nhân viên đợi trước thang máy sân ga bằng câu ngắn hơn; A nhắc điểm gặp; B chỉ bước sau khi xuống, A nói sẽ đi cùng mẹ. Không hứa hỗ trợ trước lúc xác nhận. |
+| `2393a507-1d7c-5210-8725-49c28f0ed7ae` (S015) | u01–u05 | A nói vé không qua cổng rồi hỏi quầy; B chỉ quầy và xin vé; A nhờ kiểm. Rút u02 thành `窓口で確認します` cho nhân viên đang nói tại cổng; không kết luận nguyên nhân vé. |
+
+Rà thêm bối cảnh/ngôi: S004 chỉ cho biết người học **chưa rõ** chiều tàu, S008 chưa nói trước xe có đi thẳng hay bến cần đổi, S013 chưa cho biết câu đáp hoặc chỗ chờ, S014 chỉ cho biết nhân viên vừa quay lại. S005 mở bằng việc đã được báo sai chiều ở S004, không dùng cụm khó hiểu “được chỉ khỏi sân ga”. S003 nêu rõ hỏi lối đến sân ga. Bỏ “trong hành trình minh họa” khỏi bối cảnh học viên ở S001/S003; tuyến và bến giả định vẫn được giải thích ở phần quản trị đầu file này. Khi nhân viên nam nói trực tiếp với người học nữ, VI dùng “chị” nếu cần đại từ; người học cảm ơn “anh” ở S006, cùng giọng với các cảnh ga/buýt khác. Đã đọc lại trọn E01, E02, E03 sau chỉnh, kể cả S004→S005, S009→S010 và S013→S014; lời đáp vẫn tiết lộ thông tin theo đúng lượt.
