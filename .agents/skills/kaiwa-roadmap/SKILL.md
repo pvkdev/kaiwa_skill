@@ -5,7 +5,7 @@ description: Dựng, phục hồi, kiểm và xuất khung lộ trình Kaiwa V6 
 
 # Điều phối lộ trình Kaiwa
 
-V7 dùng [kaiwa-speak-japanese-roadmap](../kaiwa-speak-japanese-roadmap/SKILL.md) để gom và xen chuyên đề từ chín sách vào khung topic V6.5. Kế hoạch thực hiện ở `kaiwa_skill/planning/v7/PLAN.md`.
+V7 dùng [kaiwa-speak-japanese-roadmap](../kaiwa-speak-japanese-roadmap/SKILL.md) để xếp nguyên pack của tám sách thành chuyên đề có tên, rồi xen các chặng này vào khung topic V6.5. Kế hoạch thực hiện ở `kaiwa_skill/planning/v7/PLAN.md`.
 
 V6.4/V6.5 chuyển sang [kaiwa-shadowing-curation](../kaiwa-shadowing-curation/SKILL.md) và tools/roadmap_topic_shadowing.py. Chạy `py -X utf8 tools/roadmap_topic_shadowing.py 6.4 --publish` để ẩn mềm, commit riêng; sau 289 decision đã duyệt chạy cùng lệnh với 6.5 rồi commit riêng. Dữ liệu admin/ và learner.json tách riêng. Nội dung MD giữ snapshot V6.3 bằng đường dẫn tương đối và hash. Không dùng helper build/verify lịch sử V6.0–V6.3 cho release mới. build_review_site.py tự route theo CURRENT_ROADMAP.json. V7 chưa triển khai.
 

@@ -1,43 +1,28 @@
 ---
 name: kaiwa-speak-japanese-roadmap
-description: Lập bản đồ chuyên đề Speak Japanese V7 cho Harumii. Đọc tám sách, gom bài theo năng lực nói, đặt chuyên đề trước các tình huống sẽ dùng và đối soát với khung topic V6.5. Áp dụng khi lập kế hoạch, chạy pilot, phân bổ toàn bộ hoặc chỉnh vị trí một chuyên đề.
+description: Phân bổ trọn pack của tám sách Speak Japanese vào các chặng chuyên đề V7 có tên, cấp độ, thứ tự pack và vị trí trong lộ trình Kaiwa. Dùng khi lập kế hoạch, pilot, phân bổ hoặc chỉnh một chuyên đề.
 ---
 
-# Xây chặng chuyên đề Speak Japanese
+# Xếp pack Speak Japanese vào lộ trình
 
-V7 hướng tới hai loại chặng trong cùng một lộ trình. Chặng topic cho người học một việc cần giải quyết trong đời sống hoặc công việc. Chặng chuyên đề giúp người học biết chọn cách nói theo ý định, quan hệ và phản ứng của người nghe. Kết quả biên tập ở pha này là bản đồ chặng, nguồn kiến thức và cơ hội vận dụng. Chủ dự án sẽ quyết định cấu trúc bài bên trong chuyên đề ở pha sau.
+Đọc [kế hoạch V7](../../../kaiwa_skill/planning/v7/PLAN.md) và [hợp đồng phân bổ](references/allocation.md). Sản phẩm của pha này là từng chặng chuyên đề có tên và danh sách pack theo thứ tự. Việc phối hợp nội dung, dựng flow giảng, viết hội thoại và sản xuất video thuộc pha biên soạn sau.
 
-Đọc [kế hoạch V7](../../../kaiwa_skill/planning/v7/PLAN.md) để xác định mốc đang làm và [quy ước dữ liệu](references/allocation.md) trước khi ghi quyết định. Lệnh chỉ yêu cầu thiết kế kết thúc ở kế hoạch và skill. Lệnh pilot chỉ chạy phạm vi pilot. Lệnh triển khai đầy đủ cho phép đi tiếp tới bản release đã nghiệm thu.
+## Đọc và phân cấp từng pack
 
-## Nhận diện chất liệu trong sách
+1. Kiểm kê từ tám catalog V6.3 của B06, B07, B11, B12, B18, B19, B20, B24. Một khóa gồm book_id và pack_id. Ghim nguồn, dải dòng, extra_parts và hash. V6.4 cung cấp lịch sử gán. V6.5 cung cấp thứ tự topic hiện hành. B05 dành cho kiến thức tình huống dịch vụ, B08 thuộc nguồn shadowing topic.
+2. Mở toàn bộ pack, kể cả tài liệu bổ trợ, ghi chú, cặp cách nói và ví dụ ở bối cảnh khác. Giữ nguyên đơn vị, lời Nhật và thứ tự nội dung trong từng phần. Ghi một nhận xét ngắn về kiến thức chính, sắc thái, người nói/người nghe và độ khó thực tế. Một pack có nhiều nghĩa vẫn đi nguyên vẹn tới nơi học.
+3. Đề xuất level phù hợp với lần học đầu. Xét độ khó của cả pack, độ tinh tế khi nghe và quan hệ giữa người nói. Nhãn sơ–trung của B07/B11, trung–thượng của B06/B12 là gợi ý tìm vùng đặt. Có thể đưa cùng pack nguyên vẹn vào nhiều level khi lần học sau giúp ôn đúng lúc hoặc nhận ra sắc thái mới. Mỗi lượt đặt có lý do, dùng chung khóa nguồn.
 
-1. Làm việc ở gốc repo. Đối chiếu tám catalog (B06, B07, B11, B12, B18, B19, B20, B24) trong `kaiwa_skill/planning/v6_3/coverage` và `hidden_speak_japanese` trong `planning/v6_4/admin` dưới kaiwa_skill. Tra chặng và tình huống trong JSONL V6.5. Ghim hash đầu vào. Đọc bài hoặc dải dòng từ Markdown clean một lần rồi tái dùng ghi chú khi bài có nhiều vị trí cũ. Mã pack cũ dùng để tìm nguồn.
-2. Với mỗi đơn vị, đọc lời giảng, ví dụ tương phản, hội thoại và ghi chú cần thiết để hiểu người Nhật dùng cách nói đó khi nào. Tóm tắt ngắn bằng tiếng Việt hành động người nói, điều người nghe hiểu, quan hệ, sắc thái và trường hợp dễ dùng sai. Gắn vị trí đủ chính xác để sau này mở được toàn bộ kiến thức và ví dụ. Metadata cũ có thể gợi ý, chỉ ghi đã đọc sau khi thực sự mở nội dung.
-3. Nhận diện phần có giá trị sư phạm bên trong bảng, lời dẫn, cặp thành ngữ, từ tượng thanh hoặc mục chung track. Nếu một đơn vị chứa nhiều mục đích nói khác nhau, tách liên kết theo tiểu mục/dải dòng và giữ đường dẫn về toàn đơn vị. Nếu một ý được giảng qua nhiều ví dụ liền nhau, giữ quan hệ giữa chúng. Danh mục học, lời dẫn sử dụng, giới hạn do thiếu trang và chỗ scan đáng ngờ đều có trạng thái riêng trong báo cáo.
-4. Gợi ý khi tìm chức năng qua sách: B05 接客 được chuyển sang nguồn kiến thức cho tình huống phục vụ khách. B18 có quan hệ trong/ngoài và chiều kính ngữ, B19 giúp mô tả bằng từ tượng thanh, B20 có cách nói cố định, B24 có cách diễn đạt cảm xúc. B07/B11 gợi ý vùng sau Sơ tới đầu Trung, B06/B12 gợi ý sau Trung tới Thượng. Đọc yêu cầu thực của từng mục để quyết định. B08 必須700 đã dùng cho shadowing topic V6.5 và nằm ngoài tám sách V7.
+## Nhóm, đặt tên và chọn vị trí
 
-## Gom bài và chọn vị trí
+- Nhóm các pack có điểm chung có thể gọi tên được, chẳng hạn cùng cách mở lời, cùng quan hệ giao tiếp, hoặc hai cách biểu đạt đáng đặt cạnh nhau. Có thể dùng một hay nhiều sách, hoặc để một pack thành chuyên đề riêng. Đánh giá độ phù hợp của toàn pack. Chấp nhận những ví dụ phụ thuộc các topic khác.
+- Xếp thứ tự giữa các pack theo lý do người học hiểu được, như cách dùng quen thuộc trước rồi tới biến thể tinh tế, hoặc trường hợp cơ bản trước rồi mới đối chiếu cách dùng. Giữ mỗi pack thành một mục riêng trong danh sách. Chỉ cần ghi lý do sắp xếp ở cấp nhóm.
+- Đặt tên tiếng Việt cụ thể, tự nhiên, bao được điểm chung của các pack. Đọc tên rồi kiểm từng pack có thực sự thuộc tên đó. Nếu tên chỉ đúng với ví dụ mở đầu hoặc quá rộng như “Các cách nói hay”, thử tên khác hoặc đổi nhóm. Giữ mã, tên sách và số mục trong admin.
+- Chọn cấp và vị trí cụ thể trong thứ tự 289 topic. Xem cả hàng xóm trước và sau. Ưu tiên đặt trước topic sẽ dùng được khi vừa tầm. Ghi liên kết tới tình huống cụ thể nếu có căn cứ. Chuyên đề độc lập có thể đặt theo vốn kiến thức đã có, độ khó, nhu cầu ôn hoặc nhịp học của cụm. Một vị trí hợp lý với danh sách ứng dụng rỗng là hợp lệ.
+- Khi review, đọc liên tiếp các tiêu đề topic và chuyên đề rồi mở danh sách pack của từng chuyên đề. Chỉnh vị trí có thể chỉ cần đổi điểm chèn. Tên, UID và nguồn có thể quản lý độc lập với thứ tự hiển thị.
 
-Mục tiêu bao phủ toàn bộ kiến thức dạy được của tám sách trong nguồn hiện có. Tìm nơi dạy cho từng nghĩa, sắc thái, cặp đối chiếu, cách đáp, ghi chú mở rộng và bài tập có đóng góp riêng. Khi hai sách dạy cùng ý, liên kết cả hai về chỗ học và giữ sắc thái riêng của mỗi sách. Tận dụng tài liệu hỗ trợ ở nơi người học hoặc người soạn thực sự dùng được. Nếu một ý chưa hợp các topic hiện tại, thử chuyên đề độc lập hoặc vị trí khác. Chỉ loại khi đã đọc và có lý do cụ thể khiến việc đưa vào lộ trình bất hợp lý. Ghi ngoại lệ và cách đã cân nhắc xử lý vào báo cáo.
+## Bao phủ, phân công và phục hồi
 
-Chọn chất liệu ở mức ý học, cặp tương phản hoặc đoạn đối đáp đủ nghĩa. Pack là đơn vị truy nguồn. Xây một mạch giảng theo các quyết định người nói phải đưa ra trong cuộc thoại. Đặt lời giảng và ví dụ của các sách ngay ở bước chúng giải thích được; giữ liền các lượt phụ thuộc nhau. Khi chia một mục, ghi đích riêng cho các nghĩa, sắc thái, ví dụ hoặc bài tập còn lại. Ghi rõ tác quyền biên soạn ở đoạn nối hoặc hội thoại minh họa mới. Xem [khảo sát và bài minh họa](../../../kaiwa_skill/planning/v7/NGHIEN_CUU_8_SACH.md). Các ví dụ đổi bối cảnh vẫn dùng được trong chuyên đề. Flow đề xuất để chủ dự án duyệt ở [kế hoạch V7](../../../kaiwa_skill/planning/v7/PLAN.md#flow-đề-xuất-để-duyệt).
+Mục tiêu là đặt toàn bộ tài nguyên hiện có của tám sách. Pack bổ trợ cần có nơi dùng cụ thể. Nếu cách nhóm ban đầu không hợp, thử đổi nhóm, đổi level hoặc để chuyên đề độc lập. Ngoại lệ chỉ dùng khi đưa vào thực sự bất hợp lý; ghi khóa, lý do và phương án đã cân nhắc. Phân biệt ngoại lệ với trang nguồn thiếu và với quyết định còn dở. Một pack có thể xuất hiện nhiều lần nhưng chỉ tính một lần khi báo độ phủ.
 
-- Viết thử một câu mục tiêu quan sát được, chẳng hạn *khi nghe lời nhờ chưa rõ phạm vi, người học biết hỏi lại mà vẫn thể hiện thiện chí*. Thử giải thích mỗi bài nguồn đóng góp gì cho mục tiêu. Có thể gom khác sách, khác bối cảnh hoặc giữ chuyên đề một sách khi bài gốc đã đủ mạch. Tên learner bằng tiếng Việt tự nhiên, diễn tả được việc người học làm được.
-- Khi hai ứng viên cùng tên, đối chiếu vai, mức thân mật, hậu quả khi dùng sai và thao tác nghe–đáp. Gộp nếu học chung giúp thấy khác biệt cần thiết. Tách khi người học phải chuyển sang một năng lực khác hoặc một quan hệ vượt xa độ khó hiện tại. Chuyên đề sau được dùng lại nguồn nếu thêm một nhiệm vụ giao tiếp hoặc sắc thái có ý nghĩa. Ghi sự tiến triển trong quyết định nội bộ.
-- Tra các chặng từng dùng bài và các chặng khác có tình huống thích hợp. Mở tình huống cụ thể, thử hình dung một lượt nói mà người học có thể dùng kiến thức mới. Ghi UID chặng cùng ID tình huống tại chặng. Một cụm từ giống nhau trong tiêu đề chưa đủ chứng minh hợp vị trí.
-- Đặt chuyên đề trước lần vận dụng thích hợp, khi người học đã có đủ chất liệu để hiểu. So với chặng topic ngay trước và ngay sau. Nếu nhiều chuyên đề dồn trước cùng một chặng, đọc cả đoạn lộ trình để cân nhắc gộp, dời sang cơ hội dùng tiếp theo hoặc giữ thứ tự từ nền tảng tới tinh tế. Không ấn định nhịp cứ N topic thêm một chuyên đề. Tên cấp của sách chỉ giúp tìm ứng viên.
-- Chặng topic có thể tham khảo chuyên đề đã học khi AI soạn hội thoại ở pha sau. Ghi gợi ý dạng *ở lượt nào, người nói có thể vận dụng điều gì*. Đây là liên kết biên tập tùy chọn. Các ví dụ nguồn của chuyên đề vẫn có thể thuộc nhiều chủ đề đời sống.
-
-## Phân công và phục hồi
-
-Trước khi chốt vị trí, đọc ngược từ các tình huống của topic kế tiếp. Chỉ ra người nói, người nghe, việc cần làm và ý cụ thể trong chuyên đề giúp xử lý lượt đó. Nếu ví dụ trong sách là đổi ca nhưng năng lực thực tế là nhờ và báo giới hạn, hãy đặt tên chuyên đề theo năng lực và dùng đổi ca làm cảnh mở. Khi chỉ một phần kiến thức có ích ngay, có thể giữ phần giúp hiểu trọn sắc thái, hoặc dời ý độc lập sang chuyên đề phù hợp hơn. Thử vị trí khác khi cơ hội dùng đầu tiên ở quá xa. Kiến thức chuyên biệt vẫn được giữ để tìm vị trí hoặc làm chuyên đề độc lập có lý do.
-
-Phân biệt tình huống áp dụng trực tiếp tại topic kế tiếp với cơ hội ôn tự nhiên ở các topic sau. Đọc cả những topic xen giữa để tránh ép liên kết. Khi soạn hội thoại sau này, cho AI tra các liên kết theo chiều topic → tình huống → chuyên đề đã học. Đó là gợi ý biên tập theo vai và ngữ cảnh, không phải điều kiện mở bài.
-
-Khi được giao chạy nhiều worker, lượt đọc chia theo sách để giảm số lần đọc lại. Root đối chiếu ứng viên cả tám sách trước khi chia lượt bố trí theo level. Mỗi worker ghi vào phạm vi riêng. Root sở hữu registry, thứ tự xen chặng, build và Git. Lưu quyết định hoàn tất bằng tệp tạm rồi thay thế nguyên tử. Khôi phục bằng cách đối chiếu trạng thái và hash, làm tiếp phần còn thiếu hoặc bị ảnh hưởng.
-
-Khi chỉnh một chuyên đề, dùng UID để tìm nguồn và các chặng vận dụng, cập nhật lý do và so lại các hàng xóm ở cả vị trí cũ lẫn mới. Khi nguồn thay đổi, rà các chuyên đề cùng tham chiếu nguồn đó. Dựng lại thứ tự và chỉ mục từ quyết định đã lưu.
-
-## Nghiệm thu
-
-Kiểm tự động theo [quy ước dữ liệu](references/allocation.md). Đọc duyệt theo ba chiều: mở từ sách để tìm kiến thức chưa có nơi dùng, mở từ chuyên đề để kiểm mạch học của các nguồn gộp lại, mở từ đoạn lộ trình để kiểm cơ hội vận dụng sớm. Ghi rõ phần nào đã kiểm bằng máy, phần nào đã đọc. Bàn giao vị trí và nguồn cho người thiết kế nội dung chuyên đề. Video, cách triển khai shadowing bên trong chuyên đề, TTS và hội thoại mới thuộc lượt thiết kế nội dung riêng.
+Khi được giao chạy nhiều worker, chia lượt đọc theo sách, lưu từng phiếu theo khóa nguồn. Root đối chiếu các ứng viên toàn kho rồi điều phối lượt đặt theo cấp, tránh hai worker ghi chung registry hoặc thứ tự. Lưu checkpoint nguyên tử, kèm hash đầu vào và danh sách cần duyệt. Sau gián đoạn, đọc tiếp phiếu dở hoặc nguồn đã đổi. Root kiểm toàn vẹn nguồn, UID, thứ tự, tên chuyên đề và ngoại lệ rồi build, kiểm preview và commit release. Lệnh thiết kế hoặc pilot chỉ triển khai đến phạm vi được giao.

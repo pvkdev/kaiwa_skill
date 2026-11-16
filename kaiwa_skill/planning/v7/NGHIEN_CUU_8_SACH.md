@@ -15,23 +15,6 @@
 | B20, mục 147–148 血の気が引く／寝耳に水 | Giải nghĩa cách nói cố định, hai đoạn Listen & Speak mỗi mục và chú từ | Cho nghe hai phản ứng để phân biệt sợ tái mặt với sửng sốt trước tin bất ngờ. |
 | B24, Unit 44 手が回らない／身動きがとれない | Hai cách diễn tả trạng thái, mỗi cách có giải thích, đối đáp và từ đi kèm | Bổ sung lý do cụ thể khi người nói đã quá tải. Giữ nét khác biệt giữa lo không xuể và bị vướng đến mức không xoay xở được. |
 
-## Bài minh họa trước T-012 · Nhờ đổi ca và trả lời khi đã kín lịch
+## Dùng khảo sát khi phân bổ
 
-**Mục tiêu** là người nhờ nói được mình cần giúp việc gì, còn người được nhờ có thể báo rõ liệu mình có nhận được hay không. T-012 có sẵn S001 nêu việc và thời điểm, S002 hỏi người kia có tiện, S005 ứng xử khi họ không thể giúp. Phạm vi quan hệ trong bài minh họa là hai đồng nghiệp đã quen nhau.
-
-**Nghe cảnh trước.** Dùng nguyên cặp lời đổi ca ở B07 mục 91. Người học nghe lời nhờ rồi nghe câu đáp bắt đầu bằng 悪いんだけど. Cho họ nghe đến 明日は予定があるの để hiểu người kia đang từ chối. Trở lại ví dụ nhờ giúp trong cùng mục, lần này chính người nhờ mở bằng 悪いんだけど. Nhờ hai ví dụ đó, người học nhận ra nghe ba chữ đầu vẫn chưa đủ để biết ai định nhờ ai.
-
-**Giảng ngay chỗ cần hiểu.** Dùng B11 mẫu 61 để soi một hiện tượng gần đó. Trong cặp ちょっと聞きたいんだけど。／うん、何？, người nói ngừng và nhường lượt để người kia mời nói tiếp. Quay về B07 để thấy sau lời mở, người nhờ nói rõ việc và ngày, người đáp nói lý do. Không đồng nhất mọi けど với từ chối.
-
-**Đổi một điều kiện rồi luyện lại.** Nếu người đáp thực sự đang ôm quá nhiều việc, đưa nghĩa 手が回らない từ B24 vào đúng lượt giải thích. Đoạn của sách kể chuyện một người không lo xuể khi khách tăng lên có thể luyện như một cảnh riêng. Nếu dựng lại cảnh đổi ca với lý do mới thì lưu là hội thoại biên soạn, kèm các nguồn của từng ý.
-
-Ví dụ hai lượt sau là **minh họa biên soạn mới** để thử tính liền mạch:
-
-- Đồng nghiệp A · 急で悪いんだけど、明日のシフト、代わってもらえる？ — Ngại quá, nhờ cậu gấp thế này. Mai cậu làm thay ca cho tớ được không?
-- Đồng nghiệp B · ごめん、明日は自分の仕事だけで手いっぱいで、そっちまで手が回らないんだ。 — Xin lỗi nhé, mai riêng việc của tớ đã kín rồi, tớ không xoay xở làm thêm ca đó được.
-
-**Shadowing ngay sau video.** Nghe và nói lại cặp mở lời ngắn của B11, tiếp đến luyện đủ hai vai trong cảnh đổi ca của B07, cuối cùng đổi lý do và luyện toàn cuộc thoại minh họa. Học viên vẫn có thể trở về từng ví dụ. Ở cảnh thương lượng trang trọng về sau, B18 có thể giúp đổi quan hệ và B06 giúp nghe ra mức độ từ chối. Đặt hai phần đó vào chặng phù hợp hơn giữ được một mục tiêu vừa sức cho bài hiện tại.
-
-**Đối soát sau khi tách.** Ghi tới tiểu mục và ví dụ nào đã dùng ở bước nào. Nghĩa còn lại như 身動きがとれない ở B24 vẫn cần vị trí dạy hoặc ôn thích hợp. Một lượt tham chiếu cả Unit 44 chưa đủ để tính cả hai ý đã được phân bổ. Các trường hợp chưa tìm được nơi học tiếp tục nằm trong hàng đợi.
-
-Nguồn của mạch minh họa: [B07, mục 91](<../../knowledge/すぐに使える 日本語会話 超ミニフレーズ200/chapters/06-part1-requests.md#u-200-091>) · [B11, mẫu 61](<../../knowledge/わかる！話せる！日本語会話 基本文型88/chapters/10-part2-cuoi-cau.md#u-88-part2-61>) · [B24, mục 87–88](<../../knowledge/気持ちが伝わる 日本語会話 基本表現180/chapters/11-section-j.md#u-j-87>)
+Các nhận xét trong bảng mô tả những nét đáng chú ý khi đọc và có thể dùng cho pha video. V7 xếp nguyên pack, kể cả khi một track có hai mục hoặc có ví dụ ở nhiều bối cảnh. Bản ghi phân bổ trỏ tới toàn bộ pack. Xem [ví dụ đặt tên và xếp hai pack trước T-012](PLAN.md#ví-dụ-một-quyết-định-để-review).
