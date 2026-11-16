@@ -1,0 +1,1179 @@
+{
+  "stage_uid": "c4b05d53-04a9-5a73-8a3e-81570735f0ef",
+  "admin_sources": {
+    "ncc_sub": {
+      "kind": "web",
+      "title": "国民生活センター: 予期せぬサブスクの請求トラブル",
+      "url": "https://www.kokusen.go.jp/news/data/n-20211007_1.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 19–33, 45–61: thời gian thử và đổi sang trả phí phụ thuộc điều kiện đăng ký; giữ thông tin đăng ký, kiểm sao kê và hỏi trung tâm khi gặp rắc rối."
+    },
+    "caa_188": {
+      "kind": "web",
+      "title": "消費者庁: 消費者からの問合せ窓口",
+      "url": "https://www.caa.go.jp/about_us/about/contact/",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 146–155: 188 dẫn tới quầy tư vấn tiêu dùng địa phương; hỏi giờ và đầu mối cụ thể."
+    },
+    "b04": {
+      "kind": "book",
+      "book_id": "B04",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編/chapters/24-Unit23-問い合わせをする.md",
+      "start_line": 1,
+      "end_line": 75,
+      "use_vi": "Cách gọi hỏi, nhắc mã tham chiếu và yêu cầu trả lời cụ thể."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "2a9d588f-8612-55ba-97cd-1bfe33f32b82",
+      "event_id": "E01",
+      "context_vi": "Bạn dùng thử dịch vụ video そら hư cấu và thấy một khoản thu sau thời gian thử; bạn gọi bên dịch vụ để hỏi kỳ nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u01",
+          "speaker_id": "a",
+          "ja": "お試しの後に千二百円の請求が出ました。これはいつの利用期間の料金ですか。",
+          "vi": "Sau thời gian dùng thử, tôi thấy khoản 1.200 yên. Khoản này tính cho kỳ dùng nào?"
+        },
+        {
+          "id": "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u02",
+          "speaker_id": "b",
+          "ja": "登録情報を確認して、その請求の対象期間を調べます。登録した日を覚えていますか。",
+          "vi": "Tôi sẽ kiểm hồ sơ đăng ký và kỳ mà khoản ấy tính cho. Anh/chị nhớ ngày đăng ký không?"
+        },
+        {
+          "id": "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u03",
+          "speaker_id": "a",
+          "ja": "十月一日です。お試しが終わる日を私が勘違いしたかもしれません。",
+          "vi": "Ngày 1 tháng 10. Có thể tôi hiểu nhầm ngày hết thử."
+        },
+        {
+          "id": "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u04",
+          "speaker_id": "b",
+          "ja": "画面に表示された条件と請求日を照らしてご説明します。今は理由を決めつけません。",
+          "vi": "Tôi sẽ đối chiếu điều kiện trên màn hình với ngày tính tiền rồi giải thích. Hiện chưa kết luận lý do."
+        },
+        {
+          "id": "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。対象期間と、次の請求予定も別々に教えてください。",
+          "vi": "Nhờ anh/chị. Xin báo riêng kỳ được tính và lịch khoản tiếp theo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u01": {
+            "kind": "original_extension"
+          },
+          "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u02": {
+            "kind": "original_extension"
+          },
+          "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u03": {
+            "kind": "original_extension"
+          },
+          "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u04": {
+            "kind": "original_extension"
+          },
+          "2a9d588f-8612-55ba-97cd-1bfe33f32b82-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "623f8889-ecf7-58f8-84ef-1b632cac953a",
+      "event_id": "E01",
+      "context_vi": "Bạn đang hỏi dịch vụ video そら hư cấu về khoản 1.200 yên sau thời gian thử; nhân viên nêu điều kiện gia hạn nhưng bạn chưa hiểu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "623f8889-ecf7-58f8-84ef-1b632cac953a-u01",
+          "speaker_id": "b",
+          "ja": "登録時の条件では、お試し終了後に月額プランへ移る設定です。",
+          "vi": "Theo điều kiện lúc đăng ký, sau khi hết thử sẽ chuyển sang gói tháng."
+        },
+        {
+          "id": "623f8889-ecf7-58f8-84ef-1b632cac953a-u02",
+          "speaker_id": "a",
+          "ja": "その説明を、私の日付で言い直していただけますか。十月一日に始めた場合、いつから有料ですか。",
+          "vi": "Xin nói lại theo ngày của tôi được không? Nếu bắt đầu ngày 1 tháng 10, từ lúc nào tính tiền?"
+        },
+        {
+          "id": "623f8889-ecf7-58f8-84ef-1b632cac953a-u03",
+          "speaker_id": "b",
+          "ja": "この契約画面では十月八日から有料と表示されています。千二百円は十月八日からの一か月分です。",
+          "vi": "Màn hình hợp đồng này ghi tính phí từ 8 tháng 10. Khoản 1.200 yên là một tháng bắt đầu ngày 8 tháng 10."
+        },
+        {
+          "id": "623f8889-ecf7-58f8-84ef-1b632cac953a-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。私が見た申込画面にもその日付が出ていたか、記録を確認したいです。",
+          "vi": "Tôi hiểu. Tôi muốn xem lại hồ sơ màn hình đăng ký để biết lúc ấy có hiện ngày đó không."
+        },
+        {
+          "id": "623f8889-ecf7-58f8-84ef-1b632cac953a-u05",
+          "speaker_id": "b",
+          "ja": "確認できる申込記録を案内します。今の説明だけで納得する必要はありません。",
+          "vi": "Tôi sẽ hướng dẫn phần hồ sơ đăng ký xem được. Anh/chị chưa cần quyết ngay chỉ dựa vào giải thích này."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "623f8889-ecf7-58f8-84ef-1b632cac953a-u01": {
+            "kind": "original_extension"
+          },
+          "623f8889-ecf7-58f8-84ef-1b632cac953a-u02": {
+            "kind": "original_extension"
+          },
+          "623f8889-ecf7-58f8-84ef-1b632cac953a-u03": {
+            "kind": "original_extension"
+          },
+          "623f8889-ecf7-58f8-84ef-1b632cac953a-u04": {
+            "kind": "original_extension"
+          },
+          "623f8889-ecf7-58f8-84ef-1b632cac953a-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a285001b-b12f-589b-b08d-a3391e3be4af",
+      "event_id": "E01",
+      "context_vi": "Bạn hỏi dịch vụ video そら hư cấu về phí sau dùng thử và thấy hai khoản 1.200 yên ở hai ngày khác nhau.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a285001b-b12f-589b-b08d-a3391e3be4af-u01",
+          "speaker_id": "a",
+          "ja": "千二百円が十月八日と十一月八日の二回出ています。それぞれ何月分か確認してください。",
+          "vi": "Có hai khoản 1.200 yên ngày 8 tháng 10 và 8 tháng 11. Xin kiểm mỗi khoản thuộc kỳ nào."
+        },
+        {
+          "id": "a285001b-b12f-589b-b08d-a3391e3be4af-u02",
+          "speaker_id": "b",
+          "ja": "二件を別々に調べます。画面ではどちらも確定した請求ですか。",
+          "vi": "Tôi sẽ tra riêng hai khoản. Trên màn hình cả hai đã là khoản chính thức chưa?"
+        },
+        {
+          "id": "a285001b-b12f-589b-b08d-a3391e3be4af-u03",
+          "speaker_id": "a",
+          "ja": "はい、カードの明細には二件とも載っています。サービス側の請求記録も照らしてほしいです。",
+          "vi": "Vâng, cả hai đều lên sao kê thẻ. Xin đối chiếu cả sổ tính tiền phía dịch vụ."
+        },
+        {
+          "id": "a285001b-b12f-589b-b08d-a3391e3be4af-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。対象期間と契約状態を確認し、説明できる範囲をお伝えします。",
+          "vi": "Tôi hiểu. Tôi sẽ kiểm kỳ tính và trạng thái hợp đồng rồi báo phần có thể giải thích."
+        },
+        {
+          "id": "a285001b-b12f-589b-b08d-a3391e3be4af-u05",
+          "speaker_id": "a",
+          "ja": "返金があるかどうかも、調査結果が出てから聞きます。",
+          "vi": "Việc có hoàn hay không tôi sẽ hỏi sau khi có kết quả tra."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a285001b-b12f-589b-b08d-a3391e3be4af-u01": {
+            "kind": "original_extension"
+          },
+          "a285001b-b12f-589b-b08d-a3391e3be4af-u02": {
+            "kind": "original_extension"
+          },
+          "a285001b-b12f-589b-b08d-a3391e3be4af-u03": {
+            "kind": "original_extension"
+          },
+          "a285001b-b12f-589b-b08d-a3391e3be4af-u04": {
+            "kind": "original_extension"
+          },
+          "a285001b-b12f-589b-b08d-a3391e3be4af-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3",
+      "event_id": "E01",
+      "context_vi": "Dịch vụ video そら hư cấu chưa tra xong khoản 1.200 yên sau dùng thử, bạn cần mốc nhận câu trả lời.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u01",
+          "speaker_id": "b",
+          "ja": "申込記録と請求記録を照合中で、今は理由を確定できません。",
+          "vi": "Chúng tôi đang đối chiếu hồ sơ đăng ký và tính phí, hiện chưa xác định được lý do."
+        },
+        {
+          "id": "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u02",
+          "speaker_id": "a",
+          "ja": "いつ、どの方法で結果を聞けますか。今日の相談番号もください。",
+          "vi": "Khi nào và bằng cách nào tôi nhận kết quả? Xin cho số tư vấn hôm nay."
+        },
+        {
+          "id": "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u03",
+          "speaker_id": "b",
+          "ja": "番号をお伝えします。この件では金曜までにメールで回答する予定です。",
+          "vi": "Tôi sẽ báo số. Với việc này chúng tôi dự kiến trả lời qua email trước thứ Sáu."
+        },
+        {
+          "id": "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。回答が来なければ、その番号でこちらから連絡します。",
+          "vi": "Tôi hiểu. Nếu chưa nhận thư, tôi sẽ liên hệ lại theo số đó."
+        },
+        {
+          "id": "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u05",
+          "speaker_id": "b",
+          "ja": "お願いします。調査中で、請求の取消しはまだ決まっていません。",
+          "vi": "Vâng. Hiện đang tra, chưa quyết hủy khoản thu."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u01": {
+            "kind": "original_extension"
+          },
+          "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u02": {
+            "kind": "original_extension"
+          },
+          "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u03": {
+            "kind": "original_extension"
+          },
+          "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u04": {
+            "kind": "original_extension"
+          },
+          "cddd2c8b-0835-5063-ace7-f55ec2d7f4c3-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "60d1238e-d7df-5b23-9464-5fa0fac59b32",
+      "event_id": "E02",
+      "context_vi": "Bạn từng gọi dịch vụ video そら hư cấu xin hủy ngày 6 tháng 10 nhưng chưa có xác nhận; nay bạn gọi lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "60d1238e-d7df-5b23-9464-5fa0fac59b32-u01",
+          "speaker_id": "a",
+          "ja": "十月六日に解約したいと電話し、確認して返事すると言われました。まだ完了の連絡は来ていません。",
+          "vi": "Ngày 6 tháng 10 tôi gọi xin hủy, được báo sẽ kiểm rồi trả lời. Tôi vẫn chưa nhận xác nhận hoàn tất."
+        },
+        {
+          "id": "60d1238e-d7df-5b23-9464-5fa0fac59b32-u02",
+          "speaker_id": "b",
+          "ja": "前回の相談番号はありますか。記録と現在の契約状態を確認します。",
+          "vi": "Anh/chị có số tư vấn lần trước không? Tôi sẽ kiểm hồ sơ và trạng thái hợp đồng hiện tại."
+        },
+        {
+          "id": "60d1238e-d7df-5b23-9464-5fa0fac59b32-u03",
+          "speaker_id": "a",
+          "ja": "番号はこちらです。電話したことと、解約が成立したことを分けて教えてください。",
+          "vi": "Đây là số. Xin báo riêng việc tôi đã gọi và việc hủy đã có hiệu lực chưa."
+        },
+        {
+          "id": "60d1238e-d7df-5b23-9464-5fa0fac59b32-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。前回の記録と処理結果を調べてご案内します。",
+          "vi": "Tôi hiểu. Tôi sẽ tra ghi chép lần trước và kết quả xử lý rồi báo."
+        },
+        {
+          "id": "60d1238e-d7df-5b23-9464-5fa0fac59b32-u05",
+          "speaker_id": "a",
+          "ja": "次の請求予定も確認したいです。",
+          "vi": "Tôi cũng muốn kiểm lịch khoản tính tiếp theo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "60d1238e-d7df-5b23-9464-5fa0fac59b32-u01": {
+            "kind": "original_extension"
+          },
+          "60d1238e-d7df-5b23-9464-5fa0fac59b32-u02": {
+            "kind": "original_extension"
+          },
+          "60d1238e-d7df-5b23-9464-5fa0fac59b32-u03": {
+            "kind": "original_extension"
+          },
+          "60d1238e-d7df-5b23-9464-5fa0fac59b32-u04": {
+            "kind": "original_extension"
+          },
+          "60d1238e-d7df-5b23-9464-5fa0fac59b32-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "14bc1060-ff01-59ee-8b09-f4ee65c9b768",
+      "event_id": "E02",
+      "context_vi": "Bạn gọi lại dịch vụ video そら hư cấu về yêu cầu hủy ngày 6 tháng 10; nhân viên nói có thể dừng kỳ tới.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u01",
+          "speaker_id": "b",
+          "ja": "この契約は次の更新から停止できます。現在の利用期間は十一月七日までです。",
+          "vi": "Hợp đồng này có thể dừng từ kỳ gia hạn tiếp. Kỳ sử dụng hiện tại đến ngày 7 tháng 11."
+        },
+        {
+          "id": "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u02",
+          "speaker_id": "a",
+          "ja": "では、今の期間の料金は残り、十一月八日からは新しい請求を出さない、という理解で合っていますか。",
+          "vi": "Vậy tôi hiểu phí kỳ hiện tại vẫn còn, từ 8 tháng 11 không phát sinh khoản mới, đúng không?"
+        },
+        {
+          "id": "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u03",
+          "speaker_id": "b",
+          "ja": "はい。この契約ではその扱いです。停止処理を確定したら、番号と終了日をメールで送ります。",
+          "vi": "Đúng, với hợp đồng này là vậy. Khi chốt dừng, chúng tôi sẽ gửi số và ngày kết thúc qua email."
+        },
+        {
+          "id": "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u04",
+          "speaker_id": "a",
+          "ja": "今はまだ確定前ですね。メールが来たら、契約状態をもう一度確認します。",
+          "vi": "Giờ vẫn chưa chốt nhỉ. Khi có email tôi sẽ kiểm lại trạng thái hợp đồng."
+        },
+        {
+          "id": "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u05",
+          "speaker_id": "b",
+          "ja": "お願いします。処理の結果もこちらで確認します。",
+          "vi": "Vâng. Bên tôi cũng sẽ kiểm kết quả xử lý."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u01": {
+            "kind": "original_extension"
+          },
+          "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u02": {
+            "kind": "original_extension"
+          },
+          "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u03": {
+            "kind": "original_extension"
+          },
+          "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u04": {
+            "kind": "original_extension"
+          },
+          "14bc1060-ff01-59ee-8b09-f4ee65c9b768-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e035680d-dd3f-5565-88ea-39ab8aa8e70b",
+      "event_id": "E02",
+      "context_vi": "Bạn gọi lại dịch vụ video そら hư cấu về yêu cầu hủy ngày 6 tháng 10; quầy nói chưa thể hủy ngay trong ngày.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u01",
+          "speaker_id": "b",
+          "ja": "この契約では、今日付けですぐ終了する処理は受けられません。",
+          "vi": "Với hợp đồng này, chúng tôi không nhận kết thúc ngay trong hôm nay."
+        },
+        {
+          "id": "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u02",
+          "speaker_id": "a",
+          "ja": "どの条件が理由ですか。申込時に示された箇所と、次にできる方法を教えてください。",
+          "vi": "Điều kiện nào dẫn đến vậy? Xin chỉ phần đã hiển thị lúc đăng ký và cách tôi có thể làm tiếp."
+        },
+        {
+          "id": "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u03",
+          "speaker_id": "b",
+          "ja": "契約記録を確認して、終了可能日と申請方法を書いてお伝えします。",
+          "vi": "Tôi sẽ kiểm hồ sơ hợp đồng rồi ghi ngày có thể kết thúc và cách yêu cầu."
+        },
+        {
+          "id": "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。今日の希望も記録し、次の請求がどうなるか別に説明してください。",
+          "vi": "Tôi hiểu. Xin ghi lại mong muốn hôm nay và giải thích riêng khoản tính tiếp theo sẽ thế nào."
+        },
+        {
+          "id": "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u05",
+          "speaker_id": "b",
+          "ja": "承知しました。確認前に料金の扱いは断定しません。",
+          "vi": "Tôi hiểu. Tôi chưa kết luận cách xử lý phí trước khi kiểm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u01": {
+            "kind": "original_extension"
+          },
+          "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u02": {
+            "kind": "original_extension"
+          },
+          "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u03": {
+            "kind": "original_extension"
+          },
+          "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u04": {
+            "kind": "original_extension"
+          },
+          "e035680d-dd3f-5565-88ea-39ab8aa8e70b-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e4fe3919-c985-5bc9-b49b-b7b8afb448c4",
+      "event_id": "E02",
+      "context_vi": "Bạn gọi lại dịch vụ video そら hư cấu về yêu cầu hủy ngày 6 tháng 10 nhưng nhân viên không tìm thấy ghi chép cuộc trước.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u01",
+          "speaker_id": "b",
+          "ja": "今の画面では、十月六日の解約相談が見つかりません。",
+          "vi": "Trên màn hình hiện tại tôi chưa thấy ghi chép việc hỏi hủy ngày 6 tháng 10."
+        },
+        {
+          "id": "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u02",
+          "speaker_id": "a",
+          "ja": "通話履歴と、その時に控えた番号があります。別の窓口の記録も調べてもらえますか。",
+          "vi": "Tôi có lịch sử cuộc gọi và số đã ghi lúc ấy. Anh/chị tra cả hồ sơ quầy khác giúp được không?"
+        },
+        {
+          "id": "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u03",
+          "speaker_id": "b",
+          "ja": "番号をもとに担当へ照会します。まだ解約済みとは確認できません。",
+          "vi": "Tôi sẽ hỏi bộ phận phụ trách theo số ấy. Hiện chưa xác nhận đã hủy."
+        },
+        {
+          "id": "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。今日の新しい相談番号と、回答予定を教えてください。",
+          "vi": "Tôi hiểu. Xin cho số tư vấn mới hôm nay và lúc dự kiến trả lời."
+        },
+        {
+          "id": "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u05",
+          "speaker_id": "b",
+          "ja": "番号を発行し、明日中に調査結果をご連絡します。",
+          "vi": "Tôi sẽ tạo số và báo kết quả tra trong ngày mai."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u01": {
+            "kind": "original_extension"
+          },
+          "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u02": {
+            "kind": "original_extension"
+          },
+          "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u03": {
+            "kind": "original_extension"
+          },
+          "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u04": {
+            "kind": "original_extension"
+          },
+          "e4fe3919-c985-5bc9-b49b-b7b8afb448c4-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "14aac1d4-1252-5124-b19d-39c4a553a484",
+      "event_id": "E03",
+      "context_vi": "Bạn đến quầy tư vấn tiêu dùng địa phương vì còn tranh luận khoản phí với dịch vụ video そら hư cấu và chưa rõ việc hủy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn tiêu dùng",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "14aac1d4-1252-5124-b19d-39c4a553a484-u01",
+          "speaker_id": "a",
+          "ja": "動画サービスを十月一日に試し、六日に解約を電話で頼みました。でも八日に千二百円が請求され、解約の確認もありません。",
+          "vi": "Tôi dùng thử dịch vụ video từ ngày 1 tháng 10, gọi xin hủy ngày 6. Nhưng ngày 8 bị tính 1.200 yên và chưa có xác nhận hủy."
+        },
+        {
+          "id": "14aac1d4-1252-5124-b19d-39c4a553a484-u02",
+          "speaker_id": "b",
+          "ja": "経緯を一緒に整理します。登録時の条件と、六日の連絡記録はありますか。",
+          "vi": "Ta sẽ sắp lại diễn biến. Anh/chị có điều kiện lúc đăng ký và ghi chép cuộc gọi ngày 6 không?"
+        },
+        {
+          "id": "14aac1d4-1252-5124-b19d-39c4a553a484-u03",
+          "speaker_id": "a",
+          "ja": "登録メールと通話履歴があります。料金がどの期間のものか、サービス側にまだ確認中です。",
+          "vi": "Tôi có email đăng ký và lịch sử gọi. Tôi vẫn đang hỏi bên dịch vụ khoản ấy thuộc kỳ nào."
+        },
+        {
+          "id": "14aac1d4-1252-5124-b19d-39c4a553a484-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。事実と未確認の点を分けて、次に何を問い合わせるか考えましょう。",
+          "vi": "Tôi hiểu. Ta tách điều đã biết với điều chưa rõ, rồi xác định cần hỏi gì tiếp."
+        },
+        {
+          "id": "14aac1d4-1252-5124-b19d-39c4a553a484-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。返金できると決めつけず、相談したいです。",
+          "vi": "Nhờ anh/chị. Tôi muốn tư vấn, chưa mặc định sẽ được hoàn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub",
+          "caa_188"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "14aac1d4-1252-5124-b19d-39c4a553a484-u01": {
+            "kind": "original_extension"
+          },
+          "14aac1d4-1252-5124-b19d-39c4a553a484-u02": {
+            "kind": "original_extension"
+          },
+          "14aac1d4-1252-5124-b19d-39c4a553a484-u03": {
+            "kind": "original_extension"
+          },
+          "14aac1d4-1252-5124-b19d-39c4a553a484-u04": {
+            "kind": "original_extension"
+          },
+          "14aac1d4-1252-5124-b19d-39c4a553a484-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a5cc03b8-e936-5b55-ae4e-19fffc6153a5",
+      "event_id": "E03",
+      "context_vi": "Bạn muốn hỏi quầy tư vấn tiêu dùng địa phương về phí và hủy dịch vụ video そら hư cấu; nhân viên hỏi bạn có chứng cứ gì.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn tiêu dùng",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u01",
+          "speaker_id": "b",
+          "ja": "申込画面や請求の記録、事業者とのやり取りを持っていますか。",
+          "vi": "Anh/chị có màn hình đăng ký, hồ sơ tính phí và trao đổi với doanh nghiệp không?"
+        },
+        {
+          "id": "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u02",
+          "speaker_id": "a",
+          "ja": "登録メール、カード明細、電話の発信履歴はあります。最後の申込画面の画像はありません。",
+          "vi": "Tôi có email đăng ký, sao kê thẻ và lịch sử gọi. Tôi không có ảnh màn hình đăng ký cuối."
+        },
+        {
+          "id": "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u03",
+          "speaker_id": "b",
+          "ja": "分かりました。ある資料から時系列を作ります。ない画面については、事業者に記録を確認できるか聞きましょう。",
+          "vi": "Tôi hiểu. Ta lập dòng thời gian từ giấy đang có. Với màn hình còn thiếu, ta hỏi doanh nghiệp có cho kiểm hồ sơ không."
+        },
+        {
+          "id": "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u04",
+          "speaker_id": "a",
+          "ja": "資料を日付順に並べます。ほかに必要な物があれば教えてください。",
+          "vi": "Tôi sẽ xếp giấy theo ngày. Nếu cần thêm gì xin báo."
+        },
+        {
+          "id": "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u05",
+          "speaker_id": "b",
+          "ja": "契約名と相談番号も分かる範囲で控えてください。",
+          "vi": "Xin ghi thêm tên hợp đồng và số tư vấn trong phạm vi anh/chị biết."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u01": {
+            "kind": "original_extension"
+          },
+          "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u02": {
+            "kind": "original_extension"
+          },
+          "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u03": {
+            "kind": "original_extension"
+          },
+          "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u04": {
+            "kind": "original_extension"
+          },
+          "a5cc03b8-e936-5b55-ae4e-19fffc6153a5-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "00121b45-08de-5559-8908-d813749b87a8",
+      "event_id": "E03",
+      "context_vi": "Bạn kể tại quầy tư vấn tiêu dùng địa phương về việc hủy dịch vụ video そら hư cấu, nhưng câu hỏi mới của bạn là thẻ có bị ghi sai khoản tiền không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn tiêu dùng",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "00121b45-08de-5559-8908-d813749b87a8-u01",
+          "speaker_id": "a",
+          "ja": "サービスとの解約相談とは別に、カード明細の金額自体が違うかもしれません。ここでカードの記録も調べられますか。",
+          "vi": "Ngoài việc hủy với dịch vụ, có thể số trên sao kê thẻ bị sai. Ở đây có kiểm hồ sơ thẻ được không?"
+        },
+        {
+          "id": "00121b45-08de-5559-8908-d813749b87a8-u02",
+          "speaker_id": "b",
+          "ja": "この窓口ではカード会社の取引記録を直接確認できません。カード発行会社にも明細を照会してください。",
+          "vi": "Quầy này không trực tiếp kiểm được hồ sơ giao dịch của công ty thẻ. Xin hỏi thêm bên phát hành về sao kê."
+        },
+        {
+          "id": "00121b45-08de-5559-8908-d813749b87a8-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。サービス側には契約と請求の理由、カード会社には明細の状態を聞きます。",
+          "vi": "Tôi hiểu. Với dịch vụ tôi hỏi hợp đồng và lý do thu; với bên thẻ tôi hỏi trạng thái sao kê."
+        },
+        {
+          "id": "00121b45-08de-5559-8908-d813749b87a8-u04",
+          "speaker_id": "b",
+          "ja": "はい。カード会社の公式の連絡先を使い、二つの回答を持ってまた相談してください。",
+          "vi": "Đúng. Hãy dùng đầu mối chính thức của bên thẻ, rồi mang hai câu trả lời tới tư vấn tiếp."
+        },
+        {
+          "id": "00121b45-08de-5559-8908-d813749b87a8-u05",
+          "speaker_id": "a",
+          "ja": "受付時間も自分で確認してから連絡します。",
+          "vi": "Tôi sẽ tự kiểm giờ tiếp nhận rồi liên hệ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "caa_188"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "00121b45-08de-5559-8908-d813749b87a8-u01": {
+            "kind": "original_extension"
+          },
+          "00121b45-08de-5559-8908-d813749b87a8-u02": {
+            "kind": "original_extension"
+          },
+          "00121b45-08de-5559-8908-d813749b87a8-u03": {
+            "kind": "original_extension"
+          },
+          "00121b45-08de-5559-8908-d813749b87a8-u04": {
+            "kind": "original_extension"
+          },
+          "00121b45-08de-5559-8908-d813749b87a8-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3771fbd5-ff9e-5655-a099-8da9ffa96cc0",
+      "event_id": "E03",
+      "context_vi": "Quầy tư vấn tiêu dùng địa phương đã nghe bạn kể khoản phí và cuộc xin hủy dịch vụ video そら hư cấu; bạn chưa hiểu lời khuyên về việc liên hệ lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tư vấn tiêu dùng",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u01",
+          "speaker_id": "a",
+          "ja": "すみません。「記録を確認する」というのは、私がもう一度解約を申し込むという意味ですか。",
+          "vi": "Xin lỗi, “kiểm hồ sơ” có nghĩa là tôi cần xin hủy lần nữa ạ?"
+        },
+        {
+          "id": "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u02",
+          "speaker_id": "b",
+          "ja": "まずは前回の電話がどう処理されたか、事業者に確認することです。新しい申込みが必要かは、その回答を見て考えます。",
+          "vi": "Trước hết là hỏi doanh nghiệp cuộc gọi trước đã được xử lý thế nào. Có cần yêu cầu mới hay không ta xét sau khi có câu trả lời."
+        },
+        {
+          "id": "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u03",
+          "speaker_id": "a",
+          "ja": "では、十月六日の通話番号と、今の契約状態を聞きます。請求の対象期間も別に聞きます。",
+          "vi": "Vậy tôi hỏi số cuộc gọi ngày 6 tháng 10 và trạng thái hợp đồng hiện tại. Tôi hỏi riêng kỳ tính phí."
+        },
+        {
+          "id": "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u04",
+          "speaker_id": "b",
+          "ja": "その順でいいです。返事の内容と日時を控えてください。",
+          "vi": "Thứ tự ấy được. Xin ghi nội dung và lúc họ trả lời."
+        },
+        {
+          "id": "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。まだ解約済みとは書きません。",
+          "vi": "Tôi hiểu. Tôi chưa ghi là đã hủy xong."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u01": {
+            "kind": "original_extension"
+          },
+          "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u02": {
+            "kind": "original_extension"
+          },
+          "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u03": {
+            "kind": "original_extension"
+          },
+          "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u04": {
+            "kind": "original_extension"
+          },
+          "3771fbd5-ff9e-5655-a099-8da9ffa96cc0-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "575e7038-c14a-5502-9a48-9345842a4e30",
+      "event_id": "E04",
+      "context_vi": "Dịch vụ video そら hư cấu từng hẹn trả lời về khoản phí sau dùng thử; đã qua thời điểm hẹn nên bạn gọi lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ hoặc tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "575e7038-c14a-5502-9a48-9345842a4e30-u01",
+          "speaker_id": "a",
+          "ja": "先週、千二百円の請求について金曜までに返事をいただく予定でした。相談番号で状況を確認したいです。",
+          "vi": "Tuần trước tôi được hẹn trả lời về khoản 1.200 yên trước thứ Sáu. Tôi muốn kiểm tiến độ bằng số tư vấn."
+        },
+        {
+          "id": "575e7038-c14a-5502-9a48-9345842a4e30-u02",
+          "speaker_id": "b",
+          "ja": "番号をお願いします。前回の調査記録を開きます。",
+          "vi": "Xin số. Tôi sẽ mở hồ sơ tra lần trước."
+        },
+        {
+          "id": "575e7038-c14a-5502-9a48-9345842a4e30-u03",
+          "speaker_id": "a",
+          "ja": "こちらです。請求の対象期間と、解約の状態を分けて教えてください。",
+          "vi": "Đây. Xin báo riêng kỳ tính phí và trạng thái hủy."
+        },
+        {
+          "id": "575e7038-c14a-5502-9a48-9345842a4e30-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。二点をそれぞれ確認して、分かったことからお伝えします。",
+          "vi": "Tôi hiểu. Tôi sẽ kiểm từng việc và báo phần đã rõ."
+        },
+        {
+          "id": "575e7038-c14a-5502-9a48-9345842a4e30-u05",
+          "speaker_id": "a",
+          "ja": "まだ結論がない点も、そのまま教えてください。",
+          "vi": "Phần nào chưa có kết luận cũng xin nói rõ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "b04"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "575e7038-c14a-5502-9a48-9345842a4e30-u01": {
+            "kind": "original_extension"
+          },
+          "575e7038-c14a-5502-9a48-9345842a4e30-u02": {
+            "kind": "original_extension"
+          },
+          "575e7038-c14a-5502-9a48-9345842a4e30-u03": {
+            "kind": "original_extension"
+          },
+          "575e7038-c14a-5502-9a48-9345842a4e30-u04": {
+            "kind": "original_extension"
+          },
+          "575e7038-c14a-5502-9a48-9345842a4e30-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c360a873-2a37-5c65-80d8-039c61f118ce",
+      "event_id": "E04",
+      "context_vi": "Bạn gọi lại dịch vụ video そら hư cấu theo số tư vấn; họ đã giải thích khoản tháng 10 nhưng chưa giải thích khoản tháng 11.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ hoặc tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c360a873-2a37-5c65-80d8-039c61f118ce-u01",
+          "speaker_id": "b",
+          "ja": "十月八日の千二百円は十月分として確認できました。",
+          "vi": "Khoản 1.200 yên ngày 8 tháng 10 được xác nhận là phí kỳ tháng 10."
+        },
+        {
+          "id": "c360a873-2a37-5c65-80d8-039c61f118ce-u02",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。十一月八日の千二百円は、まだ説明をいただいていません。こちらも調べてください。",
+          "vi": "Cảm ơn. Khoản 1.200 yên ngày 8 tháng 11 tôi chưa được giải thích. Xin tra cả khoản ấy."
+        },
+        {
+          "id": "c360a873-2a37-5c65-80d8-039c61f118ce-u03",
+          "speaker_id": "b",
+          "ja": "分かりました。十一月分の請求と解約処理の日付を照合します。",
+          "vi": "Tôi hiểu. Tôi sẽ đối chiếu khoản tháng 11 với ngày xử lý hủy."
+        },
+        {
+          "id": "c360a873-2a37-5c65-80d8-039c61f118ce-u04",
+          "speaker_id": "a",
+          "ja": "十月の説明だけで全件解決としないでください。次の回答日と同じ相談番号を確認したいです。",
+          "vi": "Xin đừng coi giải thích tháng 10 là giải quyết cả việc. Tôi muốn kiểm ngày trả lời tiếp và số tư vấn còn dùng."
+        },
+        {
+          "id": "c360a873-2a37-5c65-80d8-039c61f118ce-u05",
+          "speaker_id": "b",
+          "ja": "同じ番号で、月曜までに十一月分を回答します。",
+          "vi": "Dùng cùng số, chúng tôi sẽ trả lời khoản tháng 11 trước thứ Hai."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c360a873-2a37-5c65-80d8-039c61f118ce-u01": {
+            "kind": "original_extension"
+          },
+          "c360a873-2a37-5c65-80d8-039c61f118ce-u02": {
+            "kind": "original_extension"
+          },
+          "c360a873-2a37-5c65-80d8-039c61f118ce-u03": {
+            "kind": "original_extension"
+          },
+          "c360a873-2a37-5c65-80d8-039c61f118ce-u04": {
+            "kind": "original_extension"
+          },
+          "c360a873-2a37-5c65-80d8-039c61f118ce-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d3c9da96-0794-5b43-bfd1-259e511b7275",
+      "event_id": "E04",
+      "context_vi": "Bạn gọi lại dịch vụ video そら hư cấu về phí và hủy; nhân viên đưa phương án chuyển sang gói rẻ hơn nhưng bạn chưa muốn nhận ngay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ hoặc tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d3c9da96-0794-5b43-bfd1-259e511b7275-u01",
+          "speaker_id": "b",
+          "ja": "別の月額プランに変更する方法もあります。料金はこの案内に書いてあります。",
+          "vi": "Có phương án đổi sang gói tháng khác. Giá ghi trong bản hướng dẫn này."
+        },
+        {
+          "id": "d3c9da96-0794-5b43-bfd1-259e511b7275-u02",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。ただ、私は解約と請求の確認を先にしたいので、今は変更を申し込みません。",
+          "vi": "Cảm ơn. Nhưng tôi muốn kiểm việc hủy và khoản thu trước, nên giờ chưa đăng ký đổi."
+        },
+        {
+          "id": "d3c9da96-0794-5b43-bfd1-259e511b7275-u03",
+          "speaker_id": "b",
+          "ja": "承知しました。提案内容はお渡ししますが、変更処理はしません。",
+          "vi": "Tôi hiểu. Tôi sẽ đưa đề nghị, nhưng chưa xử lý đổi gói."
+        },
+        {
+          "id": "d3c9da96-0794-5b43-bfd1-259e511b7275-u04",
+          "speaker_id": "a",
+          "ja": "検討する期限があれば教えてください。選ばない場合、今の解約相談は続きますか。",
+          "vi": "Nếu có hạn cân nhắc xin báo. Nếu không chọn, việc hỏi hủy hiện tại vẫn tiếp tục chứ?"
+        },
+        {
+          "id": "d3c9da96-0794-5b43-bfd1-259e511b7275-u05",
+          "speaker_id": "b",
+          "ja": "この案件では相談は続けます。回答予定を記した紙もお渡しします。",
+          "vi": "Với việc này, tư vấn vẫn tiếp tục. Tôi sẽ đưa giấy ghi lịch trả lời."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d3c9da96-0794-5b43-bfd1-259e511b7275-u01": {
+            "kind": "original_extension"
+          },
+          "d3c9da96-0794-5b43-bfd1-259e511b7275-u02": {
+            "kind": "original_extension"
+          },
+          "d3c9da96-0794-5b43-bfd1-259e511b7275-u03": {
+            "kind": "original_extension"
+          },
+          "d3c9da96-0794-5b43-bfd1-259e511b7275-u04": {
+            "kind": "original_extension"
+          },
+          "d3c9da96-0794-5b43-bfd1-259e511b7275-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "284b2c40-8c6f-5212-a33e-1f74fd35949d",
+      "event_id": "E04",
+      "context_vi": "Bạn gọi lại dịch vụ video そら hư cấu sau cuộc hỏi phí; nhân viên đã kiểm hồ sơ và ghi nhận hủy kỳ tiếp theo.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên dịch vụ hoặc tư vấn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "284b2c40-8c6f-5212-a33e-1f74fd35949d-u01",
+          "speaker_id": "a",
+          "ja": "解約の処理結果を確認したいです。次の更新は止まっていますか。",
+          "vi": "Tôi muốn kiểm kết quả xử lý hủy. Kỳ gia hạn tiếp theo đã dừng chưa?"
+        },
+        {
+          "id": "284b2c40-8c6f-5212-a33e-1f74fd35949d-u02",
+          "speaker_id": "b",
+          "ja": "この契約では、次回更新を停止したと記録されています。利用は今の期間の終わりまでです。",
+          "vi": "Trong hợp đồng này, hệ thống ghi đã dừng lần gia hạn tiếp. Dịch vụ dùng đến hết kỳ hiện tại."
+        },
+        {
+          "id": "284b2c40-8c6f-5212-a33e-1f74fd35949d-u03",
+          "speaker_id": "a",
+          "ja": "終了日と確認番号を教えてください。次の請求がないか、いつ明細を見ればいいですか。",
+          "vi": "Xin cho ngày kết thúc và số xác nhận. Khi nào tôi xem sao kê để kiểm không có khoản tiếp?"
+        },
+        {
+          "id": "284b2c40-8c6f-5212-a33e-1f74fd35949d-u04",
+          "speaker_id": "b",
+          "ja": "終了日は十一月七日、番号はこちらです。次の請求予定日を過ぎたら明細をご確認ください。",
+          "vi": "Ngày kết thúc là 7 tháng 11, số ở đây. Xin xem sao kê sau ngày dự kiến tính kỳ tiếp."
+        },
+        {
+          "id": "284b2c40-8c6f-5212-a33e-1f74fd35949d-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。今の期間の料金と、次回更新の停止を分けて控えます。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi riêng phí kỳ hiện tại và việc dừng gia hạn tiếp."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncc_sub"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "284b2c40-8c6f-5212-a33e-1f74fd35949d-u01": {
+            "kind": "original_extension"
+          },
+          "284b2c40-8c6f-5212-a33e-1f74fd35949d-u02": {
+            "kind": "original_extension"
+          },
+          "284b2c40-8c6f-5212-a33e-1f74fd35949d-u03": {
+            "kind": "original_extension"
+          },
+          "284b2c40-8c6f-5212-a33e-1f74fd35949d-u04": {
+            "kind": "original_extension"
+          },
+          "284b2c40-8c6f-5212-a33e-1f74fd35949d-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

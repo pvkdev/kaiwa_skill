@@ -1,0 +1,1195 @@
+{
+  "stage_uid": "6a4c71aa-9120-5a69-9501-afb7f74d43f9",
+  "admin_sources": {
+    "visa_help": {
+      "kind": "web",
+      "title": "Visa: 消費者サポート",
+      "url": "https://www.visa.co.jp/support.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 23–32: vấn đề từ chối thanh toán hoặc tranh chấp nên hỏi nhà phát hành về giao dịch cụ thể."
+    },
+    "b04": {
+      "kind": "book",
+      "book_id": "B04",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編/chapters/24-Unit23-問い合わせをする.md",
+      "start_line": 1,
+      "end_line": 75,
+      "use_vi": "Nêu số tham chiếu và tóm tắt sự cố qua điện thoại."
+    },
+    "jcb_double": {
+      "kind": "web",
+      "title": "JCB FAQ: 同じお店から二重で請求",
+      "url": "https://j-faq.jcb.co.jp/faq/show/1603?back=front%2Fcategory%3Ashow&category_id=119&page=2&site_domain=default&sort=sort_access&sort_order=desc",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 23–77: cần xem tình trạng hai khoản và có thể hỏi nơi bán hoặc bên phát hành; không hứa hoàn tiền trước tra soát."
+    },
+    "visa_loss": {
+      "kind": "web",
+      "title": "Visa: カード紛失/停止手続き",
+      "url": "https://www.visa.co.jp/support/consumer/lost-stolen-card.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 0–3, 46–59: khi mất thẻ liên hệ bên phát hành và hỏi bảo vệ; cách xử lý theo từng thẻ."
+    },
+    "jcb_loss": {
+      "kind": "web",
+      "title": "JCB: カードの紛失・盗難",
+      "url": "https://www.jcb.co.jp/support/lost-and-stolen.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Dòng 97–105: sau báo mất, thẻ tìm lại có thể không dùng được theo JCB; không khái quát cho みどり."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "f902b57f-af11-59dd-874d-04fbd150f75a",
+      "event_id": "E01",
+      "context_vi": "Bạn thử trả tiền ở tiệm văn phòng phẩm hư cấu nhưng thẻ みどり bị từ chối, dù hôm qua vẫn dùng được.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên cửa hàng",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f902b57f-af11-59dd-874d-04fbd150f75a-u01",
+          "speaker_id": "a",
+          "ja": "すみません。このカードは昨日まで使えたのですが、今は支払いが通らないようです。",
+          "vi": "Xin lỗi, thẻ này hôm qua còn dùng được, nhưng giờ thanh toán không qua."
+        },
+        {
+          "id": "f902b57f-af11-59dd-874d-04fbd150f75a-u02",
+          "speaker_id": "b",
+          "ja": "端末には「承認されませんでした」と出ています。もう一度試しますか。",
+          "vi": "Máy hiện “không được chấp thuận”. Anh/chị muốn thử lại không?"
+        },
+        {
+          "id": "f902b57f-af11-59dd-874d-04fbd150f75a-u03",
+          "speaker_id": "a",
+          "ja": "同じ支払いが二重にならないか心配です。まず取引が成立していないか確認できますか。",
+          "vi": "Tôi lo trả trùng. Trước tiên anh/chị kiểm giao dịch vừa rồi đã thành công chưa?"
+        },
+        {
+          "id": "f902b57f-af11-59dd-874d-04fbd150f75a-u04",
+          "speaker_id": "b",
+          "ja": "店の端末では売上は成立していません。カード側の理由は発行会社へ確認してください。",
+          "vi": "Máy của cửa hàng cho thấy chưa ghi nhận thanh toán. Lý do phía thẻ xin hỏi bên phát hành."
+        },
+        {
+          "id": "f902b57f-af11-59dd-874d-04fbd150f75a-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。いったん別の支払い方法を考えます。",
+          "vi": "Tôi hiểu. Tôi sẽ tính cách trả khác trước."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "visa_help"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f902b57f-af11-59dd-874d-04fbd150f75a-u01": {
+            "kind": "original_extension"
+          },
+          "f902b57f-af11-59dd-874d-04fbd150f75a-u02": {
+            "kind": "original_extension"
+          },
+          "f902b57f-af11-59dd-874d-04fbd150f75a-u03": {
+            "kind": "original_extension"
+          },
+          "f902b57f-af11-59dd-874d-04fbd150f75a-u04": {
+            "kind": "original_extension"
+          },
+          "f902b57f-af11-59dd-874d-04fbd150f75a-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "96c3af2a-aa40-5690-93aa-9330f5bd3c15",
+      "event_id": "E01",
+      "context_vi": "Ở tiệm văn phòng phẩm hư cấu, thẻ みどり của bạn không qua; nhân viên gợi ý cách trả khác trong lúc bạn hỏi bên phát hành.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên cửa hàng",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u01",
+          "speaker_id": "b",
+          "ja": "現金か別のカードでもお支払いいただけます。",
+          "vi": "Anh/chị có thể trả tiền mặt hoặc thẻ khác."
+        },
+        {
+          "id": "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u02",
+          "speaker_id": "a",
+          "ja": "発行会社に確認する間、この商品を少し預かってもらえますか。いつまで可能ですか。",
+          "vi": "Trong lúc tôi hỏi bên phát hành, cửa hàng giữ món này giúp một chút được không? Đến lúc nào?"
+        },
+        {
+          "id": "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u03",
+          "speaker_id": "b",
+          "ja": "この店では閉店までお取り置きできます。お名前を伺ってもよろしいですか。",
+          "vi": "Cửa hàng này có thể giữ đến giờ đóng. Xin tên anh/chị được không?"
+        },
+        {
+          "id": "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u04",
+          "speaker_id": "a",
+          "ja": "リンです。戻れなければ、取り置きは取り消してください。",
+          "vi": "Tôi là Linh. Nếu tôi không quay lại, xin bỏ phần giữ hàng."
+        },
+        {
+          "id": "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u05",
+          "speaker_id": "b",
+          "ja": "承知しました。お支払いはまだ済んでいませんので、戻った時にご案内します。",
+          "vi": "Tôi hiểu. Anh/chị chưa thanh toán, khi quay lại tôi sẽ hướng dẫn."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u01": {
+            "kind": "original_extension"
+          },
+          "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u02": {
+            "kind": "original_extension"
+          },
+          "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u03": {
+            "kind": "original_extension"
+          },
+          "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u04": {
+            "kind": "original_extension"
+          },
+          "96c3af2a-aa40-5690-93aa-9330f5bd3c15-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "55c069dd-8ce1-55b0-901d-730dad86989e",
+      "event_id": "E01",
+      "context_vi": "Bạn gọi số chính thức của công ty phát hành thẻ みどり hư cấu sau khi thẻ bị từ chối ở tiệm văn phòng phẩm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "55c069dd-8ce1-55b0-901d-730dad86989e-u01",
+          "speaker_id": "a",
+          "ja": "今日の午後三時ごろ、文房具店でカード払いが通りませんでした。昨日は使えました。",
+          "vi": "Khoảng 3 giờ chiều nay, tôi không trả bằng thẻ được ở tiệm văn phòng phẩm. Hôm qua còn dùng được."
+        },
+        {
+          "id": "55c069dd-8ce1-55b0-901d-730dad86989e-u02",
+          "speaker_id": "b",
+          "ja": "ご本人確認の後、利用状況を調べます。店の端末には何と出ましたか。",
+          "vi": "Sau khi xác minh người, tôi sẽ tra trạng thái sử dụng. Máy của cửa hàng hiện gì?"
+        },
+        {
+          "id": "55c069dd-8ce1-55b0-901d-730dad86989e-u03",
+          "speaker_id": "a",
+          "ja": "「承認されませんでした」と言われました。店では売上が成立していないそうです。",
+          "vi": "Họ nói máy hiện “không được chấp thuận”. Cửa hàng bảo chưa ghi nhận thanh toán."
+        },
+        {
+          "id": "55c069dd-8ce1-55b0-901d-730dad86989e-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。カード側の状態を確認します。原因は調べるまで断定できません。",
+          "vi": "Tôi hiểu. Tôi sẽ kiểm trạng thái phía thẻ. Chưa thể kết luận nguyên nhân trước khi tra."
+        },
+        {
+          "id": "55c069dd-8ce1-55b0-901d-730dad86989e-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。同じ決済を繰り返す前に結果を聞きたいです。",
+          "vi": "Nhờ anh/chị. Tôi muốn biết kết quả trước khi thử trả lại nhiều lần."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "visa_help",
+          "b04"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "55c069dd-8ce1-55b0-901d-730dad86989e-u01": {
+            "kind": "original_extension"
+          },
+          "55c069dd-8ce1-55b0-901d-730dad86989e-u02": {
+            "kind": "original_extension"
+          },
+          "55c069dd-8ce1-55b0-901d-730dad86989e-u03": {
+            "kind": "original_extension"
+          },
+          "55c069dd-8ce1-55b0-901d-730dad86989e-u04": {
+            "kind": "original_extension"
+          },
+          "55c069dd-8ce1-55b0-901d-730dad86989e-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6046c818-2284-5b20-8719-93b9cbbb549e",
+      "event_id": "E01",
+      "context_vi": "Sau khi bạn gọi về thẻ みどり bị từ chối ở tiệm văn phòng phẩm, bên phát hành nói đang kiểm nhưng bạn hiểu nhầm thẻ đã bị khóa.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6046c818-2284-5b20-8719-93b9cbbb549e-u01",
+          "speaker_id": "a",
+          "ja": "「確認中」は、カード全体が止まっているという意味ですか。",
+          "vi": "“Đang kiểm” có nghĩa là cả thẻ đã bị khóa ạ?"
+        },
+        {
+          "id": "6046c818-2284-5b20-8719-93b9cbbb549e-u02",
+          "speaker_id": "b",
+          "ja": "いいえ。今はその取引が通らなかったことだけ確認できています。カード全体の状態は別に調べます。",
+          "vi": "Không. Hiện chỉ xác nhận giao dịch đó không qua. Tôi sẽ kiểm riêng trạng thái cả thẻ."
+        },
+        {
+          "id": "6046c818-2284-5b20-8719-93b9cbbb549e-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。今使えるかどうかと、理由が分かる時期を分けて教えてください。",
+          "vi": "Tôi hiểu. Xin báo riêng thẻ hiện dùng được không và khi nào biết lý do."
+        },
+        {
+          "id": "6046c818-2284-5b20-8719-93b9cbbb549e-u04",
+          "speaker_id": "b",
+          "ja": "担当に照会します。回答まで、この相談番号を控えてください。",
+          "vi": "Tôi sẽ hỏi người phụ trách. Xin ghi số tư vấn này để chờ trả lời."
+        },
+        {
+          "id": "6046c818-2284-5b20-8719-93b9cbbb549e-u05",
+          "speaker_id": "a",
+          "ja": "承知しました。止まったと決めつけず、回答を待ちます。",
+          "vi": "Tôi hiểu. Tôi sẽ chờ trả lời, chưa tự coi thẻ đã bị khóa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "visa_help"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6046c818-2284-5b20-8719-93b9cbbb549e-u01": {
+            "kind": "original_extension"
+          },
+          "6046c818-2284-5b20-8719-93b9cbbb549e-u02": {
+            "kind": "original_extension"
+          },
+          "6046c818-2284-5b20-8719-93b9cbbb549e-u03": {
+            "kind": "original_extension"
+          },
+          "6046c818-2284-5b20-8719-93b9cbbb549e-u04": {
+            "kind": "original_extension"
+          },
+          "6046c818-2284-5b20-8719-93b9cbbb549e-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "db5fcd00-358d-589d-a844-e702eaa4a637",
+      "event_id": "E02",
+      "context_vi": "Trong ứng dụng thẻ みどり hư cấu, bạn thấy hai dòng cùng tên cửa hàng và cùng số tiền trong một ngày.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "db5fcd00-358d-589d-a844-e702eaa4a637-u01",
+          "speaker_id": "a",
+          "ja": "十月九日に同じ店の二千円が二件表示されています。一回しか買っていません。",
+          "vi": "Ngày 9 tháng 10 hiện hai dòng 2.000 yên ở cùng cửa hàng. Tôi chỉ mua một lần."
+        },
+        {
+          "id": "db5fcd00-358d-589d-a844-e702eaa4a637-u02",
+          "speaker_id": "b",
+          "ja": "それぞれの表示時刻と状態を確認します。画面には「処理中」などの表示がありますか。",
+          "vi": "Tôi sẽ kiểm giờ hiện và trạng thái từng dòng. Màn hình có ghi “đang xử lý” không?"
+        },
+        {
+          "id": "db5fcd00-358d-589d-a844-e702eaa4a637-u03",
+          "speaker_id": "a",
+          "ja": "一件は確定、もう一件は処理中です。二回請求されたのか調べてください。",
+          "vi": "Một dòng đã xác nhận, một dòng đang xử lý. Xin kiểm tôi có bị tính hai lần không."
+        },
+        {
+          "id": "db5fcd00-358d-589d-a844-e702eaa4a637-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。二件の記録を分けて調べます。今は二重請求と断定しません。",
+          "vi": "Tôi hiểu. Tôi sẽ tra riêng hai dòng. Hiện chưa kết luận là bị tính hai lần."
+        },
+        {
+          "id": "db5fcd00-358d-589d-a844-e702eaa4a637-u05",
+          "speaker_id": "a",
+          "ja": "結果と次に確認する日を教えてください。",
+          "vi": "Xin báo kết quả và ngày tôi cần kiểm lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jcb_double"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "db5fcd00-358d-589d-a844-e702eaa4a637-u01": {
+            "kind": "original_extension"
+          },
+          "db5fcd00-358d-589d-a844-e702eaa4a637-u02": {
+            "kind": "original_extension"
+          },
+          "db5fcd00-358d-589d-a844-e702eaa4a637-u03": {
+            "kind": "original_extension"
+          },
+          "db5fcd00-358d-589d-a844-e702eaa4a637-u04": {
+            "kind": "original_extension"
+          },
+          "db5fcd00-358d-589d-a844-e702eaa4a637-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64",
+      "event_id": "E02",
+      "context_vi": "Bạn đã báo hai dòng 2.000 yên cùng ngày ở thẻ みどり hư cấu; nhân viên nói một dòng còn chờ xử lý.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u01",
+          "speaker_id": "b",
+          "ja": "二件目はまだ処理中で、請求として確定していません。",
+          "vi": "Dòng thứ hai còn đang xử lý, chưa thành khoản tính tiền chính thức."
+        },
+        {
+          "id": "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u02",
+          "speaker_id": "a",
+          "ja": "では、消えたと決まったわけでもありませんね。いつ画面を見直せばいいですか。",
+          "vi": "Vậy cũng chưa chắc sẽ biến mất nhỉ. Khi nào tôi nên xem lại màn hình?"
+        },
+        {
+          "id": "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u03",
+          "speaker_id": "b",
+          "ja": "この取引については三日後に状態を確認してください。変わらなければ相談番号でご連絡ください。",
+          "vi": "Với giao dịch này xin kiểm lại sau ba ngày. Nếu không đổi, xin liên hệ bằng số tư vấn."
+        },
+        {
+          "id": "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。店のレシートも保管します。",
+          "vi": "Tôi hiểu. Tôi sẽ giữ hóa đơn cửa hàng."
+        },
+        {
+          "id": "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u05",
+          "speaker_id": "b",
+          "ja": "お願いします。確定後の内容によって次の対応をご案内します。",
+          "vi": "Vâng. Chúng tôi sẽ hướng dẫn tiếp theo nội dung sau khi trạng thái xác định."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jcb_double"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u01": {
+            "kind": "original_extension"
+          },
+          "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u02": {
+            "kind": "original_extension"
+          },
+          "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u03": {
+            "kind": "original_extension"
+          },
+          "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u04": {
+            "kind": "original_extension"
+          },
+          "7fccd13e-5d0a-5d56-8ed0-4c3533e46f64-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff",
+      "event_id": "E02",
+      "context_vi": "Trong lúc hỏi hai dòng cùng cửa hàng trên thẻ みどり hư cấu, bạn thấy thêm một khoản từ nơi mình không nhận ra.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u01",
+          "speaker_id": "a",
+          "ja": "二千円の二件とは別に、知らない店の五千円もあります。こちらは使った覚えがありません。",
+          "vi": "Ngoài hai dòng 2.000 yên, còn khoản 5.000 yên ở cửa hàng tôi không biết. Tôi không nhớ dùng khoản này."
+        },
+        {
+          "id": "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u02",
+          "speaker_id": "b",
+          "ja": "別の件として記録します。表示された店名、日付、金額を教えてください。",
+          "vi": "Tôi sẽ ghi thành việc riêng. Xin cho tên cửa hàng hiển thị, ngày và số tiền."
+        },
+        {
+          "id": "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u03",
+          "speaker_id": "a",
+          "ja": "画面を見ながら読みます。この件ではカードの利用をどう守ればいいですか。",
+          "vi": "Tôi sẽ đọc theo màn hình. Với việc này, tôi cần bảo vệ thẻ thế nào?"
+        },
+        {
+          "id": "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u04",
+          "speaker_id": "b",
+          "ja": "ご本人確認後、カードの状態と必要な対応を担当が案内します。今は不正利用と断定できません。",
+          "vi": "Sau khi xác minh, người phụ trách sẽ hướng dẫn trạng thái thẻ và việc cần làm. Hiện chưa kết luận là dùng trái phép."
+        },
+        {
+          "id": "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。二重表示の調査番号とは別に控えます。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi riêng khỏi số tra hai dòng trùng."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "visa_help",
+          "jcb_double"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u01": {
+            "kind": "original_extension"
+          },
+          "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u02": {
+            "kind": "original_extension"
+          },
+          "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u03": {
+            "kind": "original_extension"
+          },
+          "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u04": {
+            "kind": "original_extension"
+          },
+          "7140dda5-f64e-50c0-9bf7-1ea3582fa4ff-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "be12d276-f5b9-52ba-a1b2-327daad2bf16",
+      "event_id": "E02",
+      "context_vi": "Khi báo hai dòng cùng ngày của thẻ みどり hư cấu, bạn phát hiện mình đọc nhầm số tiền ở dòng thứ hai.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "be12d276-f5b9-52ba-a1b2-327daad2bf16-u01",
+          "speaker_id": "a",
+          "ja": "すみません。二件とも二千円と言いましたが、画面では二件目は二百円でした。読み違えました。",
+          "vi": "Xin lỗi, tôi nói cả hai là 2.000 yên, nhưng màn hình cho thấy dòng thứ hai là 200 yên. Tôi đọc nhầm."
+        },
+        {
+          "id": "be12d276-f5b9-52ba-a1b2-327daad2bf16-u02",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。二千円と二百円として記録を直します。同じ取引かどうか、改めて確認します。",
+          "vi": "Cảm ơn. Tôi sửa hồ sơ thành 2.000 và 200 yên. Chúng tôi sẽ kiểm lại có phải cùng giao dịch không."
+        },
+        {
+          "id": "be12d276-f5b9-52ba-a1b2-327daad2bf16-u03",
+          "speaker_id": "a",
+          "ja": "先ほどの「二重請求かも」という説明も、今の金額で見直してください。",
+          "vi": "Xin xem lại cả điều tôi nói lúc nãy là “có thể bị tính trùng” theo số đúng."
+        },
+        {
+          "id": "be12d276-f5b9-52ba-a1b2-327daad2bf16-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。二件の明細を別々に照合します。",
+          "vi": "Tôi hiểu. Tôi sẽ đối chiếu hai dòng riêng."
+        },
+        {
+          "id": "be12d276-f5b9-52ba-a1b2-327daad2bf16-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。レシートの額も確かめます。",
+          "vi": "Nhờ anh/chị. Tôi cũng sẽ xem lại số trên hóa đơn."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "be12d276-f5b9-52ba-a1b2-327daad2bf16-u01": {
+            "kind": "original_extension"
+          },
+          "be12d276-f5b9-52ba-a1b2-327daad2bf16-u02": {
+            "kind": "original_extension"
+          },
+          "be12d276-f5b9-52ba-a1b2-327daad2bf16-u03": {
+            "kind": "original_extension"
+          },
+          "be12d276-f5b9-52ba-a1b2-327daad2bf16-u04": {
+            "kind": "original_extension"
+          },
+          "be12d276-f5b9-52ba-a1b2-327daad2bf16-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fb989077-6b4f-54df-a725-c50498e9d14e",
+      "event_id": "E03",
+      "context_vi": "Bạn phát hiện ví bị mất trên đường về và bên trong có thẻ tín dụng みどり hư cấu; bạn gọi bên phát hành.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên phát hành thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fb989077-6b4f-54df-a725-c50498e9d14e-u01",
+          "speaker_id": "a",
+          "ja": "財布をなくしました。中に御社のクレジットカードがあります。最後に見たのは今日の昼です。",
+          "vi": "Tôi mất ví. Trong đó có thẻ tín dụng của công ty. Lần cuối tôi thấy ví là trưa nay."
+        },
+        {
+          "id": "fb989077-6b4f-54df-a725-c50498e9d14e-u02",
+          "speaker_id": "b",
+          "ja": "すぐ状況を確認します。カードを守る手続きのため、ご本人確認をさせてください。",
+          "vi": "Tôi sẽ kiểm ngay. Để làm thủ tục bảo vệ thẻ, xin xác minh người."
+        },
+        {
+          "id": "fb989077-6b4f-54df-a725-c50498e9d14e-u03",
+          "speaker_id": "a",
+          "ja": "カード番号は手元にありません。名前と登録情報で進められる方法を教えてください。",
+          "vi": "Tôi không có số thẻ ở đây. Xin cho cách làm bằng tên và thông tin đã đăng ký."
+        },
+        {
+          "id": "fb989077-6b4f-54df-a725-c50498e9d14e-u04",
+          "speaker_id": "b",
+          "ja": "このカードで使える確認方法を案内します。確認後、停止など必要な対応をお伝えします。",
+          "vi": "Tôi sẽ hướng dẫn cách xác minh áp dụng cho thẻ này. Sau đó báo việc cần làm như dừng thẻ."
+        },
+        {
+          "id": "fb989077-6b4f-54df-a725-c50498e9d14e-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。手続きが終わったかも最後に確認したいです。",
+          "vi": "Nhờ anh/chị. Cuối cùng tôi muốn kiểm thủ tục đã xong chưa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "visa_loss"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fb989077-6b4f-54df-a725-c50498e9d14e-u01": {
+            "kind": "original_extension"
+          },
+          "fb989077-6b4f-54df-a725-c50498e9d14e-u02": {
+            "kind": "original_extension"
+          },
+          "fb989077-6b4f-54df-a725-c50498e9d14e-u03": {
+            "kind": "original_extension"
+          },
+          "fb989077-6b4f-54df-a725-c50498e9d14e-u04": {
+            "kind": "original_extension"
+          },
+          "fb989077-6b4f-54df-a725-c50498e9d14e-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "532a1980-6b54-5af5-8ee8-5085706731dd",
+      "event_id": "E03",
+      "context_vi": "Bạn gọi số chính thức của công ty thẻ みどり hư cấu vì nghi thẻ thất lạc; bạn muốn kiểm thẻ đã được bảo vệ chưa.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên phát hành thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "532a1980-6b54-5af5-8ee8-5085706731dd-u01",
+          "speaker_id": "a",
+          "ja": "カードをなくしたかもしれません。公式の番号にかけています。今、利用を止める手続きはできますか。",
+          "vi": "Có thể tôi đã mất thẻ. Tôi đang gọi số chính thức. Giờ có thể làm thủ tục dừng sử dụng không?"
+        },
+        {
+          "id": "532a1980-6b54-5af5-8ee8-5085706731dd-u02",
+          "speaker_id": "b",
+          "ja": "ご本人確認後、このカードに合う方法を案内します。先に登録のお名前を確認します。",
+          "vi": "Sau xác minh người, tôi sẽ hướng dẫn cách phù hợp với thẻ này. Trước tiên xin kiểm tên đăng ký."
+        },
+        {
+          "id": "532a1980-6b54-5af5-8ee8-5085706731dd-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。手続き後に、停止が反映されたかと受付番号を教えてください。",
+          "vi": "Tôi hiểu. Sau thủ tục, xin báo đã dừng có hiệu lực chưa và số tham chiếu."
+        },
+        {
+          "id": "532a1980-6b54-5af5-8ee8-5085706731dd-u04",
+          "speaker_id": "b",
+          "ja": "はい。処理結果を確認してから、状態と番号をお伝えします。",
+          "vi": "Vâng. Sau khi kiểm kết quả xử lý, tôi sẽ báo trạng thái và số."
+        },
+        {
+          "id": "532a1980-6b54-5af5-8ee8-5085706731dd-u05",
+          "speaker_id": "a",
+          "ja": "それまでは使えるままだと考えて、急いで確認します。",
+          "vi": "Đến lúc ấy tôi sẽ coi chưa chắc đã dừng và kiểm ngay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "visa_loss"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "532a1980-6b54-5af5-8ee8-5085706731dd-u01": {
+            "kind": "original_extension"
+          },
+          "532a1980-6b54-5af5-8ee8-5085706731dd-u02": {
+            "kind": "original_extension"
+          },
+          "532a1980-6b54-5af5-8ee8-5085706731dd-u03": {
+            "kind": "original_extension"
+          },
+          "532a1980-6b54-5af5-8ee8-5085706731dd-u04": {
+            "kind": "original_extension"
+          },
+          "532a1980-6b54-5af5-8ee8-5085706731dd-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5d29f7b2-426c-55ea-af15-a91e879d4169",
+      "event_id": "E03",
+      "context_vi": "Bạn đang gọi công ty thẻ みどり hư cấu để hỏi dừng thẻ thất lạc nhưng không có giấy định danh trong người.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên phát hành thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5d29f7b2-426c-55ea-af15-a91e879d4169-u01",
+          "speaker_id": "a",
+          "ja": "身分証も財布に入っていて、今は手元にありません。別の本人確認方法はありますか。",
+          "vi": "Giấy định danh cũng ở trong ví, giờ tôi không có. Có cách xác minh khác không?"
+        },
+        {
+          "id": "5d29f7b2-426c-55ea-af15-a91e879d4169-u02",
+          "speaker_id": "b",
+          "ja": "このカードで利用できる確認方法を調べます。今の通話で必要な情報を順にご案内します。",
+          "vi": "Tôi sẽ tra cách xác minh dùng được với thẻ này. Tôi sẽ hướng dẫn từng thông tin cần trong cuộc gọi."
+        },
+        {
+          "id": "5d29f7b2-426c-55ea-af15-a91e879d4169-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。確認できない場合でも、紛失の相談を記録して、次に連絡する窓口を教えてください。",
+          "vi": "Tôi hiểu. Nếu chưa xác minh được, xin vẫn ghi nhận việc báo mất và cho quầy cần liên hệ tiếp."
+        },
+        {
+          "id": "5d29f7b2-426c-55ea-af15-a91e879d4169-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。まず可能な確認を進め、処理結果を明確にお伝えします。",
+          "vi": "Tôi hiểu. Trước hết tôi làm phần xác minh có thể và sẽ báo rõ kết quả xử lý."
+        },
+        {
+          "id": "5d29f7b2-426c-55ea-af15-a91e879d4169-u05",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。停止済みか未処理かを聞き違えないようにします。",
+          "vi": "Cảm ơn. Tôi sẽ nghe rõ là đã dừng hay chưa xử lý."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "visa_loss"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5d29f7b2-426c-55ea-af15-a91e879d4169-u01": {
+            "kind": "original_extension"
+          },
+          "5d29f7b2-426c-55ea-af15-a91e879d4169-u02": {
+            "kind": "original_extension"
+          },
+          "5d29f7b2-426c-55ea-af15-a91e879d4169-u03": {
+            "kind": "original_extension"
+          },
+          "5d29f7b2-426c-55ea-af15-a91e879d4169-u04": {
+            "kind": "original_extension"
+          },
+          "5d29f7b2-426c-55ea-af15-a91e879d4169-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1948140b-9900-5f8f-a667-df42978092f4",
+      "event_id": "E03",
+      "context_vi": "Bạn đã báo mất ví có thẻ みどり hư cấu, sau đó tìm lại ví trong nhà và gọi lại công ty phát hành.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên phát hành thẻ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1948140b-9900-5f8f-a667-df42978092f4-u01",
+          "speaker_id": "a",
+          "ja": "先ほど財布をなくしたと連絡しましたが、家で見つかりました。カードの状態を確認したいです。",
+          "vi": "Lúc nãy tôi báo mất ví, giờ tìm thấy ở nhà. Tôi muốn kiểm trạng thái thẻ."
+        },
+        {
+          "id": "1948140b-9900-5f8f-a667-df42978092f4-u02",
+          "speaker_id": "b",
+          "ja": "受付番号を教えてください。停止の手続きがどこまで進んだか確認します。",
+          "vi": "Xin cho số tham chiếu. Tôi sẽ kiểm thủ tục dừng đã đến bước nào."
+        },
+        {
+          "id": "1948140b-9900-5f8f-a667-df42978092f4-u03",
+          "speaker_id": "a",
+          "ja": "番号はこちらです。見つかったカードをそのまま使っていいか、改めて教えてください。",
+          "vi": "Đây là số. Xin cho biết tôi có thể dùng ngay thẻ tìm lại không."
+        },
+        {
+          "id": "1948140b-9900-5f8f-a667-df42978092f4-u04",
+          "speaker_id": "b",
+          "ja": "このカードの処理結果を見てお答えします。今は利用を再開しないでください。",
+          "vi": "Tôi sẽ xem kết quả xử lý của thẻ này rồi trả lời. Giờ xin chưa dùng lại."
+        },
+        {
+          "id": "1948140b-9900-5f8f-a667-df42978092f4-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。必要なら再発行の方法も聞きます。",
+          "vi": "Tôi hiểu. Nếu cần, tôi sẽ hỏi cách cấp lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jcb_loss"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1948140b-9900-5f8f-a667-df42978092f4-u01": {
+            "kind": "original_extension"
+          },
+          "1948140b-9900-5f8f-a667-df42978092f4-u02": {
+            "kind": "original_extension"
+          },
+          "1948140b-9900-5f8f-a667-df42978092f4-u03": {
+            "kind": "original_extension"
+          },
+          "1948140b-9900-5f8f-a667-df42978092f4-u04": {
+            "kind": "original_extension"
+          },
+          "1948140b-9900-5f8f-a667-df42978092f4-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "108e3e27-d0a3-587d-8f5a-7232c554eb65",
+      "event_id": "E04",
+      "context_vi": "Bạn gọi lại công ty thẻ みどり hư cấu về hai dòng giao dịch cùng cửa hàng đã báo trước, mang theo số tham chiếu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "108e3e27-d0a3-587d-8f5a-7232c554eb65-u01",
+          "speaker_id": "a",
+          "ja": "先週、同じ店の二件の表示について相談しました。受付番号で調査状況を聞きたいです。",
+          "vi": "Tuần trước tôi hỏi hai dòng cùng cửa hàng. Tôi muốn hỏi tiến độ tra bằng số tham chiếu."
+        },
+        {
+          "id": "108e3e27-d0a3-587d-8f5a-7232c554eb65-u02",
+          "speaker_id": "b",
+          "ja": "本人確認後に記録を開きます。番号をお願いします。",
+          "vi": "Sau xác minh tôi sẽ mở hồ sơ. Xin cho số."
+        },
+        {
+          "id": "108e3e27-d0a3-587d-8f5a-7232c554eb65-u03",
+          "speaker_id": "a",
+          "ja": "こちらです。一件は確定、もう一件は処理中でした。今もそうですか。",
+          "vi": "Đây ạ. Một dòng đã xác nhận, dòng kia đang xử lý. Giờ còn vậy không?"
+        },
+        {
+          "id": "108e3e27-d0a3-587d-8f5a-7232c554eb65-u04",
+          "speaker_id": "b",
+          "ja": "現在の二件を別々に照合します。結果を見てお答えします。",
+          "vi": "Tôi sẽ đối chiếu hai dòng hiện tại riêng rồi trả lời."
+        },
+        {
+          "id": "108e3e27-d0a3-587d-8f5a-7232c554eb65-u05",
+          "speaker_id": "a",
+          "ja": "お願いします。返金の有無も、確認できた範囲で教えてください。",
+          "vi": "Nhờ anh/chị. Xin báo cả việc có hoàn tiền hay không trong phạm vi đã kiểm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jcb_double",
+          "b04"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "108e3e27-d0a3-587d-8f5a-7232c554eb65-u01": {
+            "kind": "original_extension"
+          },
+          "108e3e27-d0a3-587d-8f5a-7232c554eb65-u02": {
+            "kind": "original_extension"
+          },
+          "108e3e27-d0a3-587d-8f5a-7232c554eb65-u03": {
+            "kind": "original_extension"
+          },
+          "108e3e27-d0a3-587d-8f5a-7232c554eb65-u04": {
+            "kind": "original_extension"
+          },
+          "108e3e27-d0a3-587d-8f5a-7232c554eb65-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2b7217bd-81c8-5454-8ab9-df37c5b96b86",
+      "event_id": "E04",
+      "context_vi": "Bạn gọi lại về hai dòng cùng cửa hàng trên thẻ みどり hư cấu; nhân viên nói có yêu cầu điều chỉnh nhưng chưa thấy khoản hoàn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u01",
+          "speaker_id": "b",
+          "ja": "一件について調整の依頼は受けていますが、返金の表示はまだ確認できません。",
+          "vi": "Với một dòng, bên tôi đã nhận yêu cầu điều chỉnh, nhưng chưa thấy hiển thị khoản hoàn."
+        },
+        {
+          "id": "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u02",
+          "speaker_id": "a",
+          "ja": "依頼を受けたことと、返金が終わったことは別ですね。次はいつ確認できますか。",
+          "vi": "Nhận yêu cầu và hoàn tiền xong là hai việc khác nhỉ. Khi nào tôi kiểm lại?"
+        },
+        {
+          "id": "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u03",
+          "speaker_id": "b",
+          "ja": "この件では来週の火曜に明細を見てください。変わらなければこの番号でご連絡ください。",
+          "vi": "Với việc này, thứ Ba tuần tới xin xem sao kê. Nếu không đổi, xin gọi theo số này."
+        },
+        {
+          "id": "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。今は返金済みと記録しません。",
+          "vi": "Tôi hiểu. Tôi sẽ chưa ghi là đã được hoàn."
+        },
+        {
+          "id": "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u05",
+          "speaker_id": "b",
+          "ja": "はい。状況が変われば、その内容を確認してお伝えします。",
+          "vi": "Đúng. Nếu tình trạng đổi, tôi sẽ kiểm rồi báo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jcb_double"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u01": {
+            "kind": "original_extension"
+          },
+          "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u02": {
+            "kind": "original_extension"
+          },
+          "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u03": {
+            "kind": "original_extension"
+          },
+          "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u04": {
+            "kind": "original_extension"
+          },
+          "2b7217bd-81c8-5454-8ab9-df37c5b96b86-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e741f26f-f765-5ee6-bb00-beec41176e5b",
+      "event_id": "E04",
+      "context_vi": "Bạn gọi lại công ty thẻ みどり hư cấu về hai dòng cùng cửa hàng nhưng hồ sơ đã chuyển sang bộ phận tra soát.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e741f26f-f765-5ee6-bb00-beec41176e5b-u01",
+          "speaker_id": "b",
+          "ja": "この件は調査担当へ引き継ぎました。こちらでは結論をお答えできません。",
+          "vi": "Việc này đã chuyển sang bộ phận tra soát. Quầy này chưa thể trả lời kết luận."
+        },
+        {
+          "id": "e741f26f-f765-5ee6-bb00-beec41176e5b-u02",
+          "speaker_id": "a",
+          "ja": "では、今はどなたが回答を担当しますか。私からかける番号も教えてください。",
+          "vi": "Vậy hiện ai chịu trách nhiệm trả lời? Xin cho số tôi có thể gọi."
+        },
+        {
+          "id": "e741f26f-f765-5ee6-bb00-beec41176e5b-u03",
+          "speaker_id": "b",
+          "ja": "調査担当です。連絡先と同じ受付番号を書いてお伝えします。",
+          "vi": "Là bộ phận tra soát. Tôi sẽ đưa đầu mối và số tham chiếu vẫn dùng."
+        },
+        {
+          "id": "e741f26f-f765-5ee6-bb00-beec41176e5b-u04",
+          "speaker_id": "a",
+          "ja": "こちらから店へも聞く必要がありますか。それとも担当から案内を待ちますか。",
+          "vi": "Tôi có cần hỏi cửa hàng nữa không, hay đợi bộ phận ấy hướng dẫn?"
+        },
+        {
+          "id": "e741f26f-f765-5ee6-bb00-beec41176e5b-u05",
+          "speaker_id": "b",
+          "ja": "この案件では担当が先に確認しています。追加で必要なら連絡します。",
+          "vi": "Trong hồ sơ này, bộ phận ấy đang kiểm trước. Nếu cần thêm, họ sẽ liên hệ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jcb_double"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e741f26f-f765-5ee6-bb00-beec41176e5b-u01": {
+            "kind": "original_extension"
+          },
+          "e741f26f-f765-5ee6-bb00-beec41176e5b-u02": {
+            "kind": "original_extension"
+          },
+          "e741f26f-f765-5ee6-bb00-beec41176e5b-u03": {
+            "kind": "original_extension"
+          },
+          "e741f26f-f765-5ee6-bb00-beec41176e5b-u04": {
+            "kind": "original_extension"
+          },
+          "e741f26f-f765-5ee6-bb00-beec41176e5b-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "659650c1-6ca1-594a-b5aa-deeb08722b99",
+      "event_id": "E04",
+      "context_vi": "Sau khi gọi về hai dòng cùng cửa hàng trên thẻ みどり hư cấu, bạn nhắc lại việc bộ phận tra soát còn đang làm và lần liên hệ tới.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "659650c1-6ca1-594a-b5aa-deeb08722b99-u01",
+          "speaker_id": "a",
+          "ja": "確認します。調査担当が二件の明細を照合し、結果を私に知らせるんですね。",
+          "vi": "Xin nhắc lại: bộ phận tra soát đối chiếu hai dòng rồi báo kết quả cho tôi, đúng không?"
+        },
+        {
+          "id": "659650c1-6ca1-594a-b5aa-deeb08722b99-u02",
+          "speaker_id": "b",
+          "ja": "はい。今は一件が処理中で、返金の結論はまだ出ていません。",
+          "vi": "Đúng. Hiện một dòng còn xử lý, chưa có kết luận hoàn tiền."
+        },
+        {
+          "id": "659650c1-6ca1-594a-b5aa-deeb08722b99-u03",
+          "speaker_id": "a",
+          "ja": "私はレシートを保管し、来週の火曜に明細を見て、変わらなければ受付番号で連絡します。",
+          "vi": "Tôi giữ hóa đơn, thứ Ba tuần tới xem sao kê; nếu không đổi thì gọi theo số tham chiếu."
+        },
+        {
+          "id": "659650c1-6ca1-594a-b5aa-deeb08722b99-u04",
+          "speaker_id": "b",
+          "ja": "その順でお願いします。追加資料が必要なら、こちらから具体的にご案内します。",
+          "vi": "Xin làm theo thứ tự đó. Nếu cần thêm giấy, chúng tôi sẽ báo rõ."
+        },
+        {
+          "id": "659650c1-6ca1-594a-b5aa-deeb08722b99-u05",
+          "speaker_id": "a",
+          "ja": "分かりました。調査中のままと記録します。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi là vẫn đang tra."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jcb_double"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "659650c1-6ca1-594a-b5aa-deeb08722b99-u01": {
+            "kind": "original_extension"
+          },
+          "659650c1-6ca1-594a-b5aa-deeb08722b99-u02": {
+            "kind": "original_extension"
+          },
+          "659650c1-6ca1-594a-b5aa-deeb08722b99-u03": {
+            "kind": "original_extension"
+          },
+          "659650c1-6ca1-594a-b5aa-deeb08722b99-u04": {
+            "kind": "original_extension"
+          },
+          "659650c1-6ca1-594a-b5aa-deeb08722b99-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
