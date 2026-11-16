@@ -37,6 +37,16 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def prune_generated(directory, expected_names):
+    if not directory.exists():
+        return
+    for path in directory.iterdir():
+        if path.is_file() and path.name not in expected_names:
+            assert path.parent.resolve() == directory.resolve()
+            assert path.name.startswith("sj-") and path.suffix in (".json", ".md")
+            path.unlink()
+
+
 def build(publish=False):
     topics = old.rows(P / "v8/KAIWA_CHANG_V8.jsonl")
     learner_base = old.read(P / "v8/learner.json")
@@ -46,6 +56,11 @@ def build(publish=False):
     decisions = [old.read(f) for f in sorted((OUT / "decisions").glob("*.json"))]
     assert decisions, "No specialties"
     assert len({d["key"] for d in decisions}) == len(decisions)
+    source_hashes = {book: digest((ROOT / "kaiwa_skill/knowledge" / title / "book.md").read_bytes())
+                     for book, title in BOOKS.items()}
+    manifest_path = OUT / "SOURCE_HASHES.json"
+    if manifest_path.exists():
+        assert old.read(manifest_path) == source_hashes, "Source changed; review affected decisions before rebuilding"
     anchors = defaultdict(list)
     content, reverse, admin = {}, [], []
     renderer = MarkdownIt("commonmark", {"html": False}).enable("table")
@@ -149,7 +164,10 @@ def build(publish=False):
     write(OUT / "learner.json", payload)
     for record in admin:
         write(OUT / "admin" / (record["decision"]["key"] + ".json"), record)
+    prune_generated(OUT / "admin", {r["decision"]["key"] + ".json" for r in admin})
+    prune_generated(OUT / "materials", {Path(m["file"]).name for r in admin for m in r["materials"]})
     write(OUT / "SOURCE_INDEX.json", reverse)
+    write(manifest_path, source_hashes)
     write(OUT / "QA_WARNINGS.json", warnings)
     status = {"version": "9.0", "topic_stages": len(topics), "specialty_stages": len(decisions),
               "total_stages": len(entries), "levels": dict(numbers), "source_spans_by_book": dict(used),
