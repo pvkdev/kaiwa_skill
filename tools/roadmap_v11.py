@@ -1,4 +1,4 @@
-"""Validate and merge the authorized dialogue pilots into the V10 reader."""
+"""Validate and merge authorized V11 dialogue drafts into the V10 reader."""
 import argparse
 import copy
 import hashlib
@@ -24,14 +24,27 @@ def write(path, value):
     temporary.replace(path)
 
 
-def build(publish=False):
+def build(publish=False, batch=None):
     payload = read(BASE / "learner.json")
-    payload["version"] = "11.0-pilot"
+    destination = OUT / "pilot"
+    inputs = [(code, OUT / "pilot" / code / "dialogues.json") for code in CODES]
+    if batch:
+        plan_path = OUT / "batches" / batch / "PLAN.json"
+        plan = read(plan_path)
+        base_hash = hashlib.sha256((BASE / "KAIWA_CHANG_V10.jsonl").read_bytes()).hexdigest()
+        if plan["base_sha256"] != base_hash:
+            raise ValueError("V10 changed since batch assignment")
+        assigned = [stage for stages in plan["levels"].values() for stage in stages]
+        codes = [stage["code"] for stage in assigned]
+        if len(codes) != len(set(codes)) or set(codes).intersection(CODES):
+            raise ValueError("Repeated batch assignment or overlap with existing pilots")
+        inputs.extend((code, OUT / "stages" / code / "dialogues.json") for code in codes)
+        destination = OUT
+    payload["version"] = "11.0-" + (batch or "pilot")
     seen_ids, scripts = set(), set()
     totals = []
     expected_dialogues = 0
-    for code in CODES:
-        path = OUT / "pilot" / code / "dialogues.json"
+    for code, path in inputs:
         draft = read(path)
         context = HELPER["brief"](code)
         expected_dialogues += len(context["situations"])
@@ -41,7 +54,7 @@ def build(publish=False):
         for scene, dialogue in zip(stage["situations"], draft["dialogues"]):
             assert scene["uid"] == dialogue["situation_uid"]
             script = tuple("".join(t["ja"].split()) for t in dialogue["turns"])
-            assert script not in scripts, "Duplicate dialogue across pilots"
+            assert script not in scripts, "Duplicate dialogue across V11 stages: " + code
             scripts.add(script)
             for turn in dialogue["turns"]:
                 assert turn["id"] not in seen_ids, "Duplicate turn ID"
@@ -51,16 +64,19 @@ def build(publish=False):
                 ("context_vi", "speakers", "turns")})
         totals.append({"code": code, "uid": stage["uid"], "level": stage["level"],
                        "dialogues": len(draft["dialogues"]), "turns": turns,
+                       **({"draft_path": path.relative_to(ROOT).as_posix(),
+                           "independent_review": "pending" if code not in CODES else "completed"}
+                          if batch else {}),
                        "draft_sha256": hashlib.sha256(path.read_bytes()).hexdigest()})
     assert sum(t["dialogues"] for t in totals) == expected_dialogues
-    payload["pilot_stages"] = [t["uid"] for t in totals]
-    write(OUT / "pilot/learner.json", payload)
+    payload["pilot_stages"] = [t["uid"] for t in totals if t["code"] in CODES]
+    write(destination / "learner.json", payload)
     template = (ROOT / "tools/review_site.html").read_text("utf8")
     encoded = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     html = template.replace("__COURSE_DATA__", encoded)
-    (OUT / "pilot/ROADMAP.html").write_text(html, encoding="utf8")
-    write(OUT / "pilot/BUILD.json", {
-        "version": "11.0-pilot", "base": "kaiwa_skill/planning/v10/learner.json",
+    (destination / "ROADMAP.html").write_text(html, encoding="utf8")
+    write(destination / "BUILD.json", {
+        "version": payload["version"], "base": "kaiwa_skill/planning/v10/learner.json",
         "base_sha256": hashlib.sha256((BASE / "learner.json").read_bytes()).hexdigest(),
         "stages": totals, "dialogues": expected_dialogues,
         "turns": sum(t["turns"] for t in totals)})
@@ -72,4 +88,6 @@ def build(publish=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--publish", action="store_true")
-    build(parser.parse_args().publish)
+    parser.add_argument("--batch", choices=("batch01",))
+    args = parser.parse_args()
+    build(args.publish, args.batch)
