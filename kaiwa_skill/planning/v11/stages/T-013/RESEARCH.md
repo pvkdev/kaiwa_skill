@@ -5,3 +5,10 @@
 - Phòng A/B, báo giá và lịch là dữ kiện giả định từ trao đổi giữa nhân vật và người phụ trách trong truyện. S015/S025 vẫn hỏi còn chỗ và chờ xác nhận trước khi báo cho nhóm. Không đưa ra giá thị trường hoặc quy định cơ sở.
 - Tự rà vai, Nhật–Việt, tính đã biết/chưa biết của từng câu. S005 so cùng Chủ nhật; S010 đáp lo ngại phòng chật; S014 nói giá trong báo giá giả định và S015 hỏi chỗ trước khi đăng ký; S020 chỉ chuyển sang B sau khi thử A; S025 không báo địa chỉ khi B chưa xác nhận.
 - Chờ biên tập độc lập.
+
+## Rà độc lập V11 — /root/dc_all_trung
+
+- Đọc 25 cảnh Nhật–Việt và các nối S004→S005, S009→S010, S013→S014→S015, S019→S020, S023→S025. Đối chiếu B25-C09 dòng 1–56 về mức độ đề xuất; lời thoại chọn phòng A/B là lời mới, giữ báo giá và tình trạng chỗ như dữ kiện của truyện, chưa báo với người tham dự khi chưa xác nhận.
+- S001, S004, S009, S016, S017, S021, S025: tên Latin “Yuta” trong lời phát Nhật đổi thành 「ユウタ」. S003 bỏ một chữ “lại” lặp trong Việt. S013 đổi “để việc chọn lại” thiếu tự nhiên thành “khoan chốt”, đúng 「今日は決めない」.
+- S025: Việt thêm đối tượng nhận tin ở u02. Cả hai ngôn ngữ giữ điều kiện người phụ trách xác nhận trước khi Yuta gửi chỉ đường.
+- Ghi chú tự rà trên là lịch sử bản trước; phiếu reviews/T-013/review.json ghi lượt độc lập trên bản đã sửa.
