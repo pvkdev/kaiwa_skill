@@ -15,10 +15,10 @@ Mỗi dòng ghi (1) lượt người học thực hiện mục tiêu và lời �
 | Cảnh | Lượt việc đích và kết quả tự rà |
 |---|---|
 | S001 | Người học u01 nhờ chỉ đường; bạn u02/u04 cho tầng, lối rẽ. u03 hỏi đúng chi tiết thiếu, u05 xác nhận rẽ phải; hai ngôn ngữ đều chưa ngụ ý đã đến nơi. |
-| S002 | Người học u01 nhờ trông đúng năm phút lúc 2:55; bạn u02 chỉ xin xem lịch, u03 chờ. Kết mở nên S003/4/5 đều có thể là đáp tiếp; Việt không biến thành nhận lời. Bối cảnh học viên không nhắc các nhánh biên tập. |
+| S002 | u01 nhờ trông túi năm phút thôi. Ở u02 và u03 hai bên vẫn đang đợi kết quả xem lịch. |
 | S003 | Bạn u01 nhận trông năm phút; người học u02 tự chốt 3:00, bạn u03 nhắc lại. u04 giao việc sau khi đã nhận lời; không lặp lời xin ở S002. |
-| S004 | Bạn u01 chỉ ở đến 2:58; người học u02 tự mang túi, không ép nhận giúp ngắn hơn. Nhật–Việt thống nhất 2:58 sớm hơn hạn năm phút; lời kết giữ quan hệ. |
-| S005 | Bạn u01 từ chối do phải đi; người học u02 chuyển sang tự mang túi, u04 cảm ơn. Không còn túi nào giao cho bạn. |
+| S004 | Bạn phải đi lúc 2:58. Người học u05 hỏi có thể để túi đến 2:57 để sang đặt tờ giấy. Bạn u06 nhận lời, người học u07 xác nhận quay lại ngay. |
+| S005 | Bạn u01 phải đi ngay. Người học u02 tự mang túi theo. Hai bạn chào nhau ở u05 và u04. |
 | S006 | Người học u01 nói rõ mở cửa và lý do đang bê hộp; người kia u02 mở, u03 cảm ơn. Vai người lạ dùng lịch sự, không thêm quy tắc địa điểm. |
 | S007 | Người học u01 nhờ đúng một ảnh, u03 chỉ vị trí; người kia u04 bắt đầu chụp. Điện thoại chưa được trả trong cảnh này, để S010 xử lý. |
 | S008 | Người học u01 nhờ ảnh; người kia u02 có điều kiện làm nhanh. u03 thu hẹp còn một tấm và u04 nhận đúng phạm vi; không suy là người kia rảnh lâu. |

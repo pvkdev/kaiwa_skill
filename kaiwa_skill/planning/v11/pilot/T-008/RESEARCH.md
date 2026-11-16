@@ -34,7 +34,7 @@ Mỗi hàng ghi lượt người học tự thực hiện mục tiêu, lời đ�
 | S003 | u02 nhắc lại điều nghe, u04 hỏi cảm giác còn đọng; u05 bạn nói khoảnh khắc im lặng | Người học không đưa lời khuyên phỏng vấn. |
 | S004 | u01 lỡ khuyên chuẩn bị kỹ hơn; u03 nhận lời mình làm như thể bạn chưa chuẩn bị, u05 sửa cách hiểu; u06 bạn xác nhận | S003 đã nói rõ có chuẩn bị. 準備はした đối ứng “đã chuẩn bị”; vấn đề là căng thẳng nên không nói ra. |
 | S005 | u01 gọi hỏi thăm và cho phép không đáp, u05 chấp nhận lời từ chối hẹn; u06 bạn cảm ơn | Nói qua điện thoại; 答えなくていい không phải không cần nhắn lại. |
-| S006 | u01 gửi lời chia buồn, u05 khép cuộc gặp; đồng nghiệp cảm ơn | Không dùng 残念 cho tang sự, không hỏi thêm chi tiết. |
+| S006 | u01 chia buồn khi gặp đồng nghiệp, u02 đồng nghiệp cảm ơn và nói mình còn bàng hoàng. | Khép ở lời đáp ấy. S008 là nhánh đồng nghiệp chủ động nói giới hạn. |
 | S007 | u02 nhận đúng phần tài liệu, u04 nhắc ranh giới; u05 đồng nghiệp chỉ nơi file | Phần trình bày vẫn do đồng nghiệp phụ trách. |
 | S008 | u02 tôn trọng riêng tư, u04 hỏi kênh việc; u05 đồng nghiệp chọn chat | Không xin lỗi vì câu hỏi chưa hề xảy ra ở cảnh tiền nhiệm. |
 | S009 | u01 hỏi ưu tiên khi chỉ làm được một việc; u02 đồng nghiệp chọn tài liệu | Ghi chú họp chậm nhất 13:00 hôm sau; cả hai ngôn ngữ cùng mốc. |
