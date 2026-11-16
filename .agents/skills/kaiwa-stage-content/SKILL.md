@@ -11,6 +11,8 @@ description: Biên soạn, nâng cấp và xuất chặng Kaiwa cho Harumii; ph�
 
 ## Chọn phiên bản trước khi làm
 
+V11 soạn hội thoại cho từng tình huống trong chặng topic trên nền V10. Dùng [kaiwa-topic-dialogue](../kaiwa-topic-dialogue/SKILL.md) cho nguồn, cách vận dụng chuyên đề, dữ liệu lượt nói và QA pilot.
+
 V6.4/V6.5 lấy chính sách mới trong [kaiwa-shadowing-curation](../kaiwa-shadowing-curation/SKILL.md) và `kaiwa_skill/planning/v6_5/DATA_CONTRACT.md`. Chín sách Speak Japanese ở nội bộ để làm V7 sau; mỗi chặng topic có tối đa một shadowing đã tuyển theo câu/đối đáp, có thể không có. Đọc `v6.shadowing`/decision V6.5, không khôi phục các node pack cũ. Metadata giới tính phục vụ TTS, CD không chi phối nội dung mới. Phần kiến thức shadowing ẩn, video giảng chưa sản xuất. Quy tắc nhiều pack và Speak Japanese trong topic bên dưới chỉ thuộc V6.0–V6.3.
 
 Với yêu cầu **lộ trình hoặc pilot phân bổ V6**, đọc [kaiwa-roadmap](../kaiwa-roadmap/SKILL.md) và [kaiwa-source-assignment](../kaiwa-source-assignment/SKILL.md). Gốc dữ liệu là `kaiwa_skill/planning/v6/`. Khi tiếp nhận chặng V6 đã phân bổ, lấy đúng các mục trong `v6.decision` và thứ tự trong `v6.learning_order`. Nếu có material_path, đọc Markdown cục bộ và stages/<mã chặng>/manifest.json của V6 trước. Giữ tên bài nguồn khi chuyển sang dữ liệu học. Dùng vị trí chờ gắn video cho bài Speak Japanese và bài giảng tổng hợp trong giai đoạn phân bổ. Muốn thay pack thì trả thay đổi về decision của chặng và kiểm lại. V6 ưu tiên topic; cho phép nhiều bài, nhiều pack và dùng lại ở nhiều cấp. Chặng chưa phân bổ có trạng thái riêng.
