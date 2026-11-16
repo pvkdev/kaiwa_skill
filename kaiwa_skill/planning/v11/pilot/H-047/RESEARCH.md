@@ -1,0 +1,36 @@
+# H-047 — Nguồn và rà biên tập
+
+Đọc ngày 2026-11-16. 15 cuộc thoại mới. Aya là người học; Ken là bạn thân ở E01/E03, Yuta là bạn đời ở E02. Hai quan hệ không chuyển lẫn. Cảnh tiếp nối chỉ dựa trên điều đã được nói; hai nhánh S002/S009 có lịch hẹn riêng của từng sự kiện. Mỗi cảnh mở riêng đủ bối cảnh và có hành vi đích do Aya thực hiện. Không có lời Nhật nào nhận là nguyên văn nguồn.
+
+## Tìm và đọc nguồn
+
+- Đã đọc `catalog27/BOOK_GUIDE.md`, `source_index.jsonl`, `manifest.json`; tra `相談`, `聞く`, `眠れない`, `心配`, `なんかあったの`, `そうじゃなくて`, `気がする`, `距離`, `恋人`, `助言` trong kho 27 sách. Đọc đoạn có cả lời trước/sau. B02 phần 相談 chủ yếu là sắp xếp việc trong công ty, B13 có hội thoại gia đình/cặp đôi nhưng sắc thái vài cảnh kịch tính hơn mục tiêu tâm sự có giới hạn. Vì vậy chọn B06/B12/B24 để định sắc thái, không đưa đối thoại sách sang câu mới.
+- **B06**, `chapters/09-n-138-154.md` dòng 128–139: câu hỏi なんかあったの？ có thể mở cửa cho người kia kể hoặc hẹn kể sau. S001/S002/S005/S011–S013 khai triển quyền quyết định có kể hay không và gánh nặng người nghe.
+- **B12**, `chapters/11-part2-a-uketsugu.md` dòng 71–89: そうじゃなくて dùng để sửa suy đoán bằng một giải thích cụ thể; ví dụ có cả cảnh đi ngủ sớm vẫn khó ngủ. S003/S004 dùng trạng thái kể và sửa hiểu lầm nhưng không chép lời mẫu hay gán nguyên nhân.
+- **B24**, `chapters/16-section-o.md` dòng 159–193: なんか違う và そうじゃなくて cho cảm giác chưa rõ rồi nói cụ thể hơn. S004/S006–S008/S010 tránh biến cảm xúc của Aya thành kết tội Yuta.
+- Chuyên đề liền trước `sj-thuong-13`: đã đọc `lesson.md` và các mẫu practice dẫn H-047. Chỉ gắn item khi câu thực dùng mẫu: `なんかあったの？` ở S001, `そうじゃなくて` ở S004/S007, `というか` ở S007. Những cảnh khác để mảng rỗng.
+- [厚生労働省, 健康づくりのための睡眠ガイド2023](https://www.mhlw.go.jp/content/10904750/001222166.pdf): nếu vấn đề ngủ tiếp diễn và ảnh hưởng đời sống ban ngày thì nên hỏi bác sĩ. Chỉ dùng làm nền cho Aya nói điều kiện tự tìm giúp đỡ ở S014; S015 chỉ kể cô đã đi hỏi bác sĩ, không nêu chẩn đoán, thuốc hay kết quả. Trang được truy cập 2026-11-16, phạm vi hướng dẫn sức khỏe tại Nhật.
+
+## Ba lượt rà theo UID
+
+Mỗi dòng ghi hành vi người học và lời đáp trong lượt rà 1. Lượt rà 2 đọc liền Nhật và riêng Việt, so phủ định, độ chắc, ý muốn và mốc hẹn. Lượt rà 3 đổi vai phát lại, kiểm người nghe hiểu được chấp thuận, trì hoãn và giới hạn nào. Tất cả cảnh đã rà gắn hash nội dung ở `status.json`. `uNN` là hậu tố turn ID thuộc UID cảnh.
+
+- **S001 `a7d1aaff-c21b-51d0-b675-b4015a5d16c7`** — A u01 xin nghe chuyện riêng; u03 nêu lúc muốn nói; u05 cho quyền từ chối và xin giữ kín; B u02 hỏi mốc giờ; u04 hẹn kiểm lịch; u06 nhận giữ kín và báo lại chiều nay. Rà ba lượt: mở riêng đúng hành vi, đọc nối JA và riêng VI, đổi vai; mốc hẹn chỉ là lời chờ phản hồi, không bị diễn thành đã đồng ý.
+- **S002 `366b4238-841f-50d4-a8e1-ba4377454259`** — A u02 không ép nghe ngay; u04 xin hẹn ngày mai kèm lựa chọn đổi ngày; B u01 báo bận đúng sau khi kiểm lịch; u03/u05 đề xuất chiều mai và hẹn báo đổi lịch. Rà ba lượt: mở riêng đúng hành vi, đọc nối JA và riêng VI, đổi vai; mốc hẹn chỉ là lời chờ phản hồi, không bị diễn thành đã đồng ý.
+- **S003 `81961426-4e00-53cd-8bbf-b7004b2442f1`** — A u01, u03, u05: kể khó ngủ và lo mà chưa quy nguyên nhân; B u02, u04, u06: Ken nhận nghe trước khi tìm nguyên nhân. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+- **S004 `206eb305-f89e-5f9c-aa72-976e097ed106`** — A u02, u04, u06: sửa suy đoán công việc; B u01, u03, u05: Ken xác nhận chưa biết hai chuyện liên hệ ra sao. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+- **S005 `b85f1094-5c5c-5c42-8373-85c2e52114cb`** — A u01 hỏi rõ nghe tiếp hay nghỉ; u03 chấp nhận dừng; B u02 chọn nghỉ; u04 để Aya chủ động kể tiếp lần sau. Rà ba lượt: mở riêng đúng hành vi, đọc nối JA và riêng VI, đổi vai; câu đáp giữ đúng điều người nghe đã chấp nhận.
+- **S006 `19eda502-1a65-5175-82e6-b98f06599a0e`** — A u01, u03, u05: nói cảm giác xa cách qua bữa tối cụ thể; B u02, u04, u06: Yuta nhận việc báo một câu lần tới. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+- **S007 `4bae3851-dd6f-5b74-a001-c74483fdc204`** — A u02 sửa lời kết tội; u04 dùng というか để nói cảm giác chính xác; B u03 hỏi lại phạm vi; u05 xác nhận đã hiểu và nhận phần mình. Rà ba lượt: mở riêng đúng hành vi, đọc nối JA và riêng VI, đổi vai; câu đáp giữ đúng điều người nghe đã chấp nhận.
+- **S008 `71a90041-e903-5c41-966d-b12eb1297fdb`** — A u01 mời nói riêng; u03 muốn nghe hai phía; u05 để ngày khác nếu cần; B u02 hỏi mục đích; u04/u06 chỉ hẹn phản hồi sau, chưa chốt thứ Bảy. Rà ba lượt: mở riêng đúng hành vi, đọc nối JA và riêng VI, đổi vai; mốc hẹn chỉ là lời chờ phản hồi, không bị diễn thành đã đồng ý.
+- **S009 `6e00c908-5030-5cea-a02f-6c03c328c152`** — A u02 chấp nhận chưa sẵn sàng; u04 xin phép hỏi lại cuối tuần sau; B u01 báo không thể thứ Bảy; u03 giải thích; u05 sẽ chủ động nói khi sẵn sàng. Rà ba lượt: mở riêng đúng hành vi, đọc nối JA và riêng VI, đổi vai; mốc hẹn chỉ là lời chờ phản hồi, không bị diễn thành đã đồng ý.
+- **S010 `5e5de60f-b52a-5621-a104-923fefe4bce1`** — A u01, u03, u05: cảm ơn và kiểm lại điều đã hiểu; B u02, u04, u06: Yuta đồng ý báo nhau khi không thể trò chuyện. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+- **S011 `182adbf6-18c1-506f-a644-c5280de7f54a`** — A u02, u04, u06: nói rõ chỉ cần được nghe; B u01, u03, u05: Ken xin lỗi và chuyển sang lắng nghe. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+- **S012 `e4b3c626-d6b4-5e09-8c39-871404d80463`** — A u01, u03, u05: chọn một gợi ý, không hứa làm hết; B u02, u04, u06: Ken nhận lựa chọn chỉ ghi lại suy nghĩ. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+- **S013 `f058d9e1-1178-5d0f-9761-8cdb8cbcf1a9`** — A u02, u04, u06: giữ riêng chi tiết sức khỏe; B u01, u03, u05: Ken dừng hỏi sâu và để Aya tự nói khi sẵn sàng. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+- **S014 `a32abec9-6e15-5b20-8814-63bd8dcbd543`** — A u02, u04, u06: tự nói điều kiện tìm chuyên môn; B u01, u03, u05, u07: Ken nghe được kế hoạch hỏi bác sĩ mà vẫn tôn trọng riêng tư. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+- **S015 `ecf67d87-fc42-52a9-916b-bbd7684f0737`** — A u02, u04, u06: cập nhật trong phạm vi thoải mái; B u01, u03, u05: Ken chấp nhận cập nhật có giới hạn và lời mời đi dạo. Đã đọc liên tiếp Nhật, riêng Việt, đổi vai và đối chiếu cảnh liền trước; lời đáp giữ đúng mức đồng ý, riêng tư và điều đã biết.
+
+## Checkpoint
+
+`status.json` lưu hash V10, skill, đoạn sách, bản JSON và từng cảnh. `release_state` là pilot đã rà phía tác giả, còn root QA preview và đối chiếu độc lập. `bulk_run_authorized: false`. Lệnh `dialogue.py H-047 --check` phải trả `OK H-047 15`.

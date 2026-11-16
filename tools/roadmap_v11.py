@@ -9,7 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "kaiwa_skill/planning/v11"
 BASE = ROOT / "kaiwa_skill/planning/v10"
-CODES = ("S-011", "T-044", "H-004", "S-021", "T-027", "H-020")
+CODES = ("S-011", "T-044", "H-004", "S-021", "T-027", "H-020", "S-035", "T-008", "H-047")
 HELPER = runpy.run_path(str(ROOT / ".agents/skills/kaiwa-topic-dialogue/scripts/dialogue.py"))
 
 
