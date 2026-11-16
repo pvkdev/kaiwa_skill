@@ -47,4 +47,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 30 cảnh Nhật–Việt và sáu sự kiện, gồm các nhánh nối S005/S010/S015/S025/S030. Đối chiếu B26 và trang 国民生活センター `https://www.cht.kokusen.go.jp/ja/faq/000004.html`: mua tại cửa hàng rồi đổi ý không mặc nhiên có quyền trả; chính sách đổi cỡ của くらし屋 chỉ là điều kiện cửa hàng hư cấu.
+- S029 context: sửa “ấm đổi lần hai” thành “ấm đã đổi một lần nhưng lại gặp cùng lỗi”. Lời thoại u02, u03 và S030 đều nói lần đổi thứ hai còn chờ quyết định sau kiểm; bản cũ khiến người học hiểu sai lịch sử giao dịch.
+- Checker xác nhận bản thoại 30 cảnh và phiếu rà 30 cảnh/6 sự kiện; cập nhật hash thoại, cảnh sửa và nguồn web trong `status.json`.

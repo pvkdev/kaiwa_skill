@@ -42,3 +42,9 @@
 ## Còn mở
 
 - Biên tập độc lập chưa thực hiện.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc đủ 25 cảnh Nhật–Việt và năm sự kiện, gồm năm nhánh nối. Đối chiếu B04 dòng 27–47 và khuyến cáo của 国民生活センター `https://www.kokusen.go.jp/mimamori/mj_mailmag/mj-shinsen538.html` về xem giấy hợp đồng, phí tháng, phí lắp, tùy chọn và điều kiện hủy trước khi chọn gói.
+- S013: làm rõ `仮の枠` là lịch quay lại tạm giữ sau khi chờ ban quản lý cho phép đi dây; bản cũ không nói slot nào. S020: đổi `記録を確認します` thành `記録を確認しました` để khớp lời Việt “đã kiểm hồ sơ” và kết quả đang điều tra được báo ngay sau đó.
+- Checker xác nhận bản thoại 25 cảnh và phiếu rà 25 cảnh/5 sự kiện; cập nhật hash thoại, hai cảnh sửa và nguồn web trong `status.json`.

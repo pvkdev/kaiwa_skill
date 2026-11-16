@@ -41,3 +41,9 @@
 ## Còn mở
 
 - Biên tập độc lập chưa thực hiện.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc đủ 25 cảnh Nhật–Việt và năm sự kiện, gồm bốn nhánh nối. Đối chiếu khuyến cáo của 国民生活センター `https://www.kokusen.go.jp/news/data/n-20250902_2.html` về hỏi rõ tình trạng món và giải quyết tranh chấp giữa các bên; không đưa quyền hoàn tiền mặc định vào thoại.
+- S004: nêu chiếc đèn trắng ngay trong nhánh đổi nơi gặp để S005 xác nhận món có căn cứ. S023: hẹn báo cả giờ cùng kiểm lại loa trước 8 giờ; S024: sửa mô tả thành hai bên âm lượng tương đương, nên tiếng bên phải nhỏ sau khi thử dây khác mới thực sự trái mô tả. Bản cũ chỉ nói hai bên có tiếng, vốn vẫn đúng nếu một bên nhỏ.
+- Checker xác nhận bản thoại 25 cảnh và phiếu rà 25 cảnh/5 sự kiện; cập nhật hash thoại, ba cảnh sửa và nguồn web trong `status.json`.

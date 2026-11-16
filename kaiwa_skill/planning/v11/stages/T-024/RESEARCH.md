@@ -42,4 +42,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 25 cảnh Nhật–Việt và năm sự kiện, gồm bốn nhánh nối. Đối chiếu B21, B04 và hướng dẫn của 国民生活センター về điều khoản hủy đặt chỗ; phí trong thoại chỉ thuộc lượt đặt hư cấu, không phải mức chung.
+- S021 u05: sửa tiếng Nhật “thời gian đã thay đổi” thành “giờ cuộc gọi xin đổi”, khớp việc khách cung cấp thông tin để quầy tra lại lịch. Các cảnh còn lại đạt mục tiêu và giữ nguyên lời thoại.
+- Checker xác nhận bản thoại 25 cảnh và phiếu rà 25 cảnh/5 sự kiện; cập nhật hash thoại, cảnh sửa và nguồn web trong `status.json`.

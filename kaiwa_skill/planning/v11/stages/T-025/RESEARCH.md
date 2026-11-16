@@ -42,4 +42,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 25 cảnh Nhật–Việt và năm sự kiện, gồm bốn nhánh nối. Đối chiếu B26, B04 và hướng dẫn kiểm hàng khi nhận của 国民生活センター `https://www.kokusen.go.jp/t_box/data/t_box-faq_qa2015_20.html`; chỉ dùng nguyên tắc đối chiếu món/số lượng thực tế, không áp quyền trả hàng trực tuyến vào đơn điện thoại.
+- Không có lỗi cần sửa. Các cảnh bớt hàng, đổi lịch, nhận thiếu kiện và thanh toán giữ đúng trạng thái chưa xác nhận cho đến khi cửa hàng kiểm; số tiền 6.300/7.800 yên nhất quán theo từng đơn hư cấu.
+- Checker xác nhận bản thoại 25 cảnh và phiếu rà 25 cảnh/5 sự kiện; cập nhật hash nguồn web trong `status.json`.
