@@ -1,0 +1,19 @@
+### ちなみに、集合場所は同じね — ちなみに
+
+**モデル会話**
+
+**A (JP):** 明日の集合時間、１時間早くなったけど、いい？ **A (VI):** Giờ tập trung ngày mai sớm hơn một tiếng, được chứ?
+
+**B (JP):** いいよ。 **B (VI):** Được.
+
+**A (JP):** ちなみに、集合場所は同じね。 **A (VI):** Tiện nói thêm, địa điểm tập trung vẫn như cũ nhé.
+
+**B (JP):** わかった。 **B (VI):** Biết rồi.
+
+Dùng sau câu chuyện để truyền đạt thông tin có liên quan. **基本パターン:** ［文］＋**ちなみに**＋［文など（前の文の補足的な情報）］.
+
+**会話練習**
+
+1. **A (JP):** うちの部署にもやっと新人が入った。 **A (VI):** Cuối cùng phòng mình cũng có nhân viên mới. **B (JP):** よかったじゃない。少しは楽になるね。 **B (VI):** Tốt quá. Cậu sẽ đỡ vất vả hơn chút nhỉ. **A (JP):** うん。ちなみに、田中さんの大学の後輩。 **A (VI):** Ừ. Tiện nói thêm, cậu ấy là đàn em cùng trường của anh Tanaka. **B (JP):** そうなんだ。じゃ、優しくしてあげてね。 **B (VI):** Vậy à. Thế nhớ đối xử tốt với cậu ấy nhé.
+
+2. **A (JP):** このお店、ペット連れて入ってもいいんだって。 **A (VI):** Nghe nói quán này cho mang thú cưng vào. **B (JP):** へー。じゃ、今度行ってみよう。 **B (VI):** Ồ. Vậy lần sau thử đến nhé. **A (JP):** ちなみに、おとなしいペットに限るって。 **A (VI):** Nhưng tiện nói thêm, nghe nói chỉ cho thú cưng hiền thôi. **B (JP):** おとなしい？ うちのラッキーは微妙だなあ。 **B (VI):** Hiền à? Con Lucky nhà tớ thì khó nói đấy.

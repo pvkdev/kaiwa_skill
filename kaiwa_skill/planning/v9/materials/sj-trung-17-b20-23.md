@@ -1,0 +1,17 @@
+### 手とり足とり — Cầm tay chỉ việc
+
+Chăm lo từng chi tiết, dạy hoặc xử lý thật kỹ, tử tế và đúng cách. Hình ảnh như nắm tay chân người học để hướng dẫn từng động tác.
+
+**Ví dụ 1**
+
+- **A (JP):** あそこのパソコン教室、どう？ **A (VI):** Lớp máy tính ở đằng kia thế nào?
+
+- **B (JP):** うん、先生が親切だよ。手とり足とり教えてくれるからね。 **B (VI):** Ừ, giáo viên rất tận tình. Thầy/cô cầm tay chỉ việc cho mình.
+
+Chú từ: **パソコン** — máy tính cá nhân.
+
+**Ví dụ 2**
+
+- **JP:** 私が日本に来たばかりの頃、ホストファミリーがいろいろ手とり足とり教えてくれました。そのおかげで早く日本の生活に慣れることができました。 **VI:** Khi tôi vừa đến Nhật, gia đình bản xứ đã tận tình hướng dẫn tôi đủ điều. Nhờ vậy tôi nhanh chóng quen với cuộc sống ở Nhật.
+
+Chú từ: **～（し）たばかり** — vừa mới làm; **～のおかげで** — nhờ vào…

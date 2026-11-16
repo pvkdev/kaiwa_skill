@@ -1,0 +1,17 @@
+### 落ち着いて。 — Bình tĩnh nào
+
+Khuyên người đang hoảng hốt đừng mất bình tĩnh, nhất là khi có chuyện khẩn cấp.
+
+1. **Mất ví.** A (JP): あれ、財布がない！ どうしよう！ — A (VI): Ơ, mất ví rồi! Làm sao đây! B (JP): 落ち着いて。探したらあるよ、きっと。 — B (VI): Bình tĩnh đi. Tìm thì chắc sẽ thấy thôi.
+
+2. **Sợ muộn giờ.** A (JP): だめだ、もう間に合わない！ あー、どうしよう！ — A (VI): Không được rồi, không kịp nữa! Ôi, làm sao đây! B (JP): ちょっと落ち着いて。まだわからないよ。 — B (VI): Bình tĩnh chút đã. Chưa chắc đâu.
+
+3. **Ghi sai hóa đơn.** A (JP): しまった！ 請求書の金額、間違ってた！ — A (VI): Chết rồi! Tôi ghi sai số tiền trên hóa đơn! B (JP): 落ち着いて。すぐ電話して謝れば大丈夫だから。 — B (VI): Bình tĩnh. Gọi điện xin lỗi ngay là được.
+
+**Words and expressions often used with the phrase — とにかく／まあ／まあまあ:**
+
+4. **とにかく — trước hết, dù sao thì.** A (JP): どうしよう。すごく緊張してる。 — A (VI): Làm sao đây. Tôi hồi hộp quá. B (JP): とにかく落ち着いて。呼吸をゆっくり。 — B (VI): Trước hết bình tĩnh đã. Thở chậm lại.
+
+5. **まあ — nào, thôi nào.** A (JP): 先生、熱が39度もあるんです！ — A (VI): Bác sĩ ơi, em ấy sốt đến 39 độ! B (JP): まあ、落ち着いてください。大丈夫ですから。 — B (VI): Nào, xin bình tĩnh. Sẽ ổn thôi.
+
+6. **まあまあ — thôi nào, nào nào.** A (JP): こんな会社、もう辞めるよ！ — A (VI): Tôi sẽ nghỉ ở công ty này! B (JP): まあまあ、落ち着いて。 — B (VI): Thôi nào, bình tĩnh đi.

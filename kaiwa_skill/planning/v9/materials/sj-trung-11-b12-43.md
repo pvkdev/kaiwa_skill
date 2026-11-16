@@ -1,0 +1,21 @@
+### それが、もうだめになったんだって — それが
+
+**モデル会話**
+
+**A (JP):** 山下さん、婚約したんだって？ **A (VI):** Nghe nói anh Yamashita đính hôn rồi à?
+
+**B (JP):** それが、もうだめになったんだって。 **B (VI):** Thật ra nghe nói chuyện ấy đã hủy rồi.
+
+**A (JP):** えっ、何、それ!? **A (VI):** Hả, sao lại thế!?
+
+**B (JP):** 私もよくわからないんだけどね。 **B (VI):** Tớ cũng không rõ lắm.
+
+Tiếp nhận điều đối phương nói rồi đưa ra thông tin liên quan có thể khiến họ ngạc nhiên; sắc thái “chuyện là thế này, thực ra…”. **基本パターン:** ［相手の話］＋**それが**＋［文（相手が意外に思うこと）］.
+
+**会話練習**
+
+1. **A (JP):** 今度の担当の人、おとなしそうな人だね。 **A (VI):** Người phụ trách mới trông hiền nhỉ. **B (JP):** それがおとなしいどころか、すごいんだよ。 **B (VI):** Thật ra không hiền chút nào, ghê lắm đấy. **A (JP):** へえ、どんなふうに？ **A (VI):** Ồ, thế nào cơ? **B (JP):** ボクシングのプロの資格を持ってるんだって。 **B (VI):** Nghe nói người ấy có giấy phép thi đấu quyền anh chuyên nghiệp.
+
+2. **A (JP):** 展覧会、どうだった？ **A (VI):** Triển lãm thế nào? **B (JP):** それがさ、人が多すぎて、なかなか絵の近くまで行けなかったんだよ。ゆっくり見（ら）れないし。 **B (VI):** Chuyện là đông người quá, tớ mãi không đến gần tranh được. Cũng chẳng xem thong thả được. **A (JP):** それは残念だったね。 **A (VI):** Tiếc thật. **B (JP):** だから今度、朝早く行ってみるよ。 **B (VI):** Vì thế lần tới tớ sẽ thử đi sớm vào buổi sáng.
+
+3. **A (JP):** 今度の部屋、駅から近いんだって？ **A (VI):** Phòng mới của cậu gần ga à? **B (JP):** それが、駅から近すぎて…。 **B (VI):** Thật ra nó lại quá gần ga… **A (JP):** え？ どういうこと？ **A (VI):** Hả? Ý cậu là sao? **B (JP):** 電車が通るたびにゆれるんだよ。 **B (VI):** Mỗi lần tàu chạy qua là phòng rung lên.

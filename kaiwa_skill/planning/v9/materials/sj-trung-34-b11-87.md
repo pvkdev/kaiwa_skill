@@ -1,0 +1,31 @@
+### 辛いほうが好き — ～ほう
+
+**Hội thoại mở đầu**
+
+**A (JP):** カレーは甘いのと辛いの、どっちが好き？ **A (VI):** Cà ri vị dịu và vị cay, cậu thích loại nào?
+
+**B (JP):** 私は辛いほうが好き。田中さんは？ **B (VI):** Tôi thích loại cay hơn. Còn chị Tanaka?
+
+Đối chiếu 「辛いほうが好きです」 — “Tôi thích loại cay hơn ạ”.
+
+**Ý nghĩa và mẫu:** Khi so sánh từ hai lựa chọn trở lên và chọn một, dùng 「ほう」 (**A. so sánh**). 「～のほう」 cũng có thể giúp tránh nhắc trực tiếp một việc (**B. nói vòng**). Mẫu A: **[N] + の + ほう／[Vる] + ほう + (が + nhận xét tích cực)**; mẫu B: **[N] + の + ほう**. Khi nói thẳng 「嫌いです」「いやです」 — “tôi ghét/không thích” có thể khiến quan hệ xấu đi, có thể từ chối gián tiếp bằng 「好きなほうじゃない」 — “tôi không thích lắm”. Cách nói vòng còn được dùng với đề tài khó nói.
+
+**会話練習 — A. So sánh**
+
+1. **A (JP):** 土曜と日曜、どっちがいい？ **A (VI):** Thứ Bảy hay Chủ nhật thì tốt hơn? **B (JP):** どっちでもいいけど、土曜のほうがいいかな。 **B (VI):** Ngày nào cũng được, nhưng chắc thứ Bảy thì tốt hơn.
+
+2. **A (JP):** ８月は暑くて嫌だなあ。 **A (VI):** Tháng Tám nóng quá, khó chịu thật. **B (JP):** そうね。でも私は、６月とか７月とかのほうが蒸し暑くていや。 **B (VI):** Ừ. Nhưng tôi thấy tháng Sáu hay tháng Bảy oi bức hơn, khó chịu hơn.
+
+3. **A (JP):** 朝早く起きて勉強すると頭に入るよ。 **A (VI):** Dậy sớm học thì dễ nhớ bài đấy. **B (JP):** ぼくは夜勉強するほうが集中できるな。 **B (VI):** Tớ học buổi tối thì tập trung hơn.
+
+4. **A (JP):** ボールを使うスポーツは？ **A (VI):** Còn các môn thể thao dùng bóng thì sao? **B (JP):** どっちかっていうと苦手なほう。走るほうが得意。 **B (VI):** Nếu phải nói thì tớ không giỏi lắm. Tớ giỏi chạy hơn.
+
+5. **A (JP):** この赤いの、かわいくない？ **A (VI):** Cái màu đỏ này dễ thương nhỉ? **B (JP):** そう？ ぼくは、こっちの青いほうがいいな。 **B (VI):** Vậy à? Tớ thích cái màu xanh này hơn.
+
+**B. Nói vòng**
+
+6. **A (JP):** お支払いのほうは、どうなさいますか。 **A (VI):** Về việc thanh toán, anh/chị muốn thanh toán thế nào ạ? **B (JP):** カードでお願いします。 **B (VI):** Cho tôi thanh toán bằng thẻ.
+
+7. **A (JP):** お仕事のほうは順調ですか。 **A (VI):** Công việc của anh/chị có thuận lợi không? **B (JP):** まあ、なんとかやってます。 **B (VI):** Vâng, cũng xoay xở được.
+
+8. **A (JP):** で、おけがのほうは、どうだったんですか。 **A (VI):** Thế còn vết thương của anh/chị thì sao? **B (JP):** ああ、大したけがじゃなかったんです。心配をおかけしました。 **B (VI):** À, không bị thương nặng đâu. Xin lỗi đã khiến anh/chị lo lắng.

@@ -1,0 +1,13 @@
+### もう一度いいですか。 — Xin nhắc lại một lần nữa được không?
+
+Hỏi xem mình hoặc người kia có thể làm lại điều gì một lần nữa. **Lưu ý:** Thường dùng khi nghe câu nói quá nhanh hoặc khó nghe, muốn người kia lặp lại.
+
+1. **Xin nhắc số điện thoại.** A (JP): 電話番号は544-9988です。 — A (VI): Số điện thoại là 544-9988. B (JP): すみません、もう一度いいですか。 — B (VI): Xin lỗi, anh/chị nhắc lại một lần nữa được không?
+
+2. **Xin thử lại.** A (JP): 今度はうまくいくと思うんです。もう一度いいですか。 — A (VI): Tôi nghĩ lần này sẽ làm được. Tôi thử lại một lần nữa được không? B (JP): ああ、いいですよ。 — B (VI): Ừ, được chứ.
+
+3. **Lớp học múa.** A (JP): 先生、今のところ、もう一度いいですか。 — A (VI): Thưa thầy/cô, đoạn vừa rồi làm lại một lần nữa được không ạ? B (JP): いいですよ。 — B (VI): Được chứ.
+
+**Related phrase — もう一回いい？**
+
+4. **Xin nhắc lại.** A (JP): ごめん、もう一回いい？ — A (VI): Xin lỗi, cậu nói lại một lần được không? B (JP): 今度はそのテーブルを動かすんだね。 — B (VI): Tiếp theo ta chuyển cái bàn đó nhé.

@@ -1,0 +1,19 @@
+### でも、よく頑張ったよ、日本 — でも
+
+**モデル会話**
+
+**A (JP):** でも、よく頑張ったよ、日本。 **A (VI):** Nhưng đội Nhật cũng đã cố gắng hết sức rồi.
+
+**B (JP):** そうだね。実力的にはだいぶ差があるのにね。 **B (VI):** Đúng vậy. Dù thực lực hai đội chênh lệch khá nhiều.
+
+**A (JP):** うん。一瞬、勝てるかなって思っちゃったよ。 **A (VI):** Ừ. Có lúc tớ còn nghĩ biết đâu họ thắng.
+
+「でも」 không nhất thiết chấm dứt đề tài; dùng để nối thêm điều mình muốn nói: nêu góc nhìn khác với ý kiến/tình hình vừa bàn, phản đối nhẹ hoặc nhấn mạnh lại điều gì. Không phải cách khẳng định mạnh, nên nói với giọng nhẹ. **基本パターン:** （これまでの話の流れに続けて）**でも**＋文.
+
+**会話練習**
+
+1. **A (JP):** 彼女、留学をあきらめて就職するって、ほんと？ **A (VI):** Nghe nói cô ấy bỏ kế hoạch du học để đi làm, thật à? **B (JP):** でもね、まだはっきり決めたわけでもないらしいんだ。 **B (VI):** Nhưng nghe đâu cô ấy vẫn chưa quyết định hẳn. **A (JP):** そう。 **A (VI):** Vậy à.
+
+2. **A (JP):** 料理研究会の計画、変更はないんだろう？ **A (VI):** Kế hoạch của hội nghiên cứu ẩm thực không đổi chứ? **B (JP):** でもね、人数がだいぶ減っちゃったんだ。 **B (VI):** Nhưng số người tham gia đã giảm khá nhiều. **A (JP):** そう。残念だね。 **A (VI):** Vậy à. Tiếc nhỉ.
+
+3. **A (JP):** 焼きものって面白いですね。 **A (VI):** Làm đồ gốm thú vị nhỉ. **B (JP):** ええ。でも、まだよくわからないんです。 **B (VI):** Vâng. Nhưng tôi vẫn chưa hiểu rõ lắm. **A (JP):** 私もよくわかってないけど、好きですよ。 **A (VI):** Tôi cũng chưa hiểu nhiều, nhưng tôi thích.

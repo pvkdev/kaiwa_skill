@@ -1,0 +1,19 @@
+### えーっと、ちょっと待ってよ、今言うから — えーっと
+
+**モデル会話**
+
+**A (JP):** で、それから、どうなったの？ **A (VI):** Rồi sau đó thế nào?
+
+**B (JP):** えーっと、ちょっと待ってよ、今言うから。 **B (VI):** Ừm, chờ một chút, tớ nói ngay đây.
+
+**A (JP):** 早く。 **A (VI):** Nhanh lên.
+
+Khi đang giải thích mà chưa tìm ra từ thích hợp, dùng 「えーっと」 để ngừng một nhịp. **基本パターン:** （答えや説明を求められて）**えーっと**.
+
+**会話練習**
+
+1. **A (JP):** 例の件、社長に言ってくれたんでしょう？ どんな反応だった？ **A (VI):** Chuyện ấy cậu đã nói với giám đốc rồi chứ? Ông ấy phản ứng thế nào? **B (JP):** ああ、あれね。いろいろ言われたよ。えーっと…。 **B (VI):** À, chuyện ấy. Ông ấy nói nhiều thứ. Ừm… **A (JP):** 何？ 何て言われたの？ **A (VI):** Sao? Ông ấy nói gì?
+
+2. **A (JP):** 結局、いくらの損になったんですか。 **A (VI):** Rốt cuộc thiệt hại bao nhiêu tiền? **B (JP):** えーっと、それがはっきりとは言えないんです。 **B (VI):** Ừm, điều đó chúng tôi chưa thể nói chính xác. **A (JP):** でも、損害は損害なんですね。 **A (VI):** Nhưng có thiệt hại là thật, đúng không?
+
+3. **A (JP):** それ、報告書のどこに書いてあるの？ **A (VI):** Điều ấy viết ở đâu trong báo cáo? **B (JP):** 終わりのほうにあるんですが。えーっと…。 **B (VI):** Ở gần cuối ạ. Ừm… **A (JP):** 何ページだか言ってよ。 **A (VI):** Cho tôi biết là trang mấy. **B (JP):** はい。ちょっとお待ちください。 **B (VI):** Vâng. Xin chờ một chút.

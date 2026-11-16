@@ -1,0 +1,15 @@
+### 遠慮しときます。 — Tôi xin phép không tham gia
+
+Từ chối lời mời hoặc đề nghị một cách mềm hơn. **Lưu ý:** Gần **いえ、結構です／いいです** nhưng nghe nhẹ nhàng hơn. **しときます** là dạng hội thoại của **しておきます**.
+
+1. **Từ chối lời mời dự tiệc.** A (JP): 田中さんの家でまたホームパーティーするんだって。どうする？ — A (VI): Nghe nói lại có tiệc tại nhà anh/chị Tanaka. Cậu đi không? B (JP): 今回は遠慮しとく。 — B (VI): Lần này tôi xin không đi.
+
+2. **Từ chối làm trưởng nhóm.** A (JP): 森さん、リーダーやりませんか。 — A (VI): Anh Mori, anh làm trưởng nhóm nhé? B (JP): 私はそういうの苦手なんです。遠慮しときます。 — B (VI): Tôi không giỏi việc đó. Xin để người khác làm ạ.
+
+3. **Từ chối sô cô la.** A (JP): チョコレート、食べない？ — A (VI): Cậu ăn sô cô la không? B (JP): 最近太りすぎなんで、遠慮しときます。 — B (VI): Gần đây tôi tăng cân quá nên xin thôi.
+
+**Words and expressions often used with the phrase — ちょっと／今回は:**
+
+4. **ちょっと — hơi, xin phép.** A (JP): 森さんも１曲歌ってくださいよ。 — A (VI): Anh Mori hát một bài đi. B (JP): 私はちょっと遠慮しときます。 — B (VI): Tôi xin phép không hát ạ.
+
+5. **今回は — lần này.** A (JP): よかったら食事に行きませんか。 — A (VI): Nếu tiện, ta đi ăn nhé? B (JP): すみません。今回は遠慮しときます。また誘ってください。 — B (VI): Xin lỗi, lần này tôi xin không đi. Lần sau lại rủ tôi nhé.

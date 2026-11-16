@@ -1,0 +1,15 @@
+### ご迷惑をおかけしました。 — Xin lỗi đã gây phiền phức
+
+Xin lỗi người chịu bất tiện do mình gây ra, trực tiếp hoặc gián tiếp.
+
+1. **Xin lỗi vì chuyện trước.** A (JP): 先日はご迷惑をおかけしました。 — A (VI): Hôm trước tôi đã gây phiền phức cho anh/chị, xin lỗi. B (JP): まあ、今後、気をつけてください。 — B (VI): Ừ, từ nay hãy cẩn thận.
+
+2. **Xin lỗi khách.** A (JP): 大変ご迷惑をおかけしました。 — A (VI): Tôi thành thật xin lỗi vì đã gây nhiều phiền phức. B (JP): しっかり頼みますよ、ほんとに。 — B (VI): Thật đấy, lần sau phải làm cho cẩn thận.
+
+3. **Sai sót của bên mình.** A (JP): こちらのミスでご迷惑をおかけしました。 — A (VI): Xin lỗi vì lỗi của phía chúng tôi đã gây bất tiện cho anh/chị. B (JP): 困りますよ、ほんとに。 — B (VI): Thật sự khó xử đấy.
+
+**Variations:**
+
+4. **Xin lỗi vì làm phiền nhờ giúp.** A (JP): これを一人でやり直すのは大変だなあ。ちょっと手伝うよ。 — A (VI): Làm lại việc này một mình khó quá nhỉ. Tôi giúp một chút. B (JP): ご迷惑をおかけしてすみません。 — B (VI): Xin lỗi đã làm phiền anh/chị.
+
+5. **Xin lỗi trang trọng hơn.** A (JP): ご迷惑をおかけして申し訳ありません。 — A (VI): Tôi thành thật xin lỗi vì đã gây phiền phức. B (JP): 今度から気をつけてくださいね。 — B (VI): Lần sau xin chú ý nhé.

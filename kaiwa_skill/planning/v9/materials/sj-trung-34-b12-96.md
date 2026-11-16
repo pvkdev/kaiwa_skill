@@ -1,0 +1,19 @@
+### はい、ちゃんと出しましたよ — ちゃんと
+
+**モデル会話**
+
+**A (JP):** そう言えば、会合の通知、忘れてないよね？ **A (VI):** Nhân tiện, cậu không quên gửi thông báo cuộc họp chứ?
+
+**B (JP):** はい、ちゃんと出しましたよ。 **B (VI):** Vâng, tôi đã gửi đầy đủ rồi ạ.
+
+**A (JP):** なら、いいけど。 **A (VI):** Vậy thì được.
+
+Diễn đạt “đúng đắn, thích hợp” và hàm ý không làm qua loa hoặc bỏ mặc. Dùng trong lời nói thân mật, không dùng ở tình huống lịch sự. **基本パターン:** **ちゃんと**＋する／Vする.
+
+**会話練習**
+
+1. **A (JP):** じゃ、行ってきます。 **A (VI):** Vậy con đi đây. **B (JP):** あっちへ行ったら、ちゃんとみんなに挨拶するんだよ。 **B (VI):** Đến đó thì nhớ chào hỏi mọi người cho đàng hoàng nhé. **A (JP):** わかっています。 **A (VI):** Con biết rồi ạ.
+
+2. **A (JP):** 服装、ちゃんとしろって、課長がうるさいんだ。 **A (VI):** Trưởng bộ phận cứ càm ràm bảo tớ ăn mặc cho chỉnh tề. **B (JP):** そりゃ、あなたがだらしないからじゃない？ **B (VI):** Chẳng phải vì cậu ăn mặc luộm thuộm sao? **A (JP):** そうじゃなくて、この暑いのに上着着ろって言われるんだよ。もう勘弁してほしい。 **A (VI):** Không phải vậy. Trời nóng thế này mà ông ấy bắt mặc áo khoác. Tớ chịu hết nổi rồi.
+
+3. **A (JP):** また探し物？ **A (VI):** Lại tìm đồ à? **B (JP):** うん、ちょっと。 **B (VI):** Ừ, một chút. **A (JP):** 普段からちゃんと整理してればいいのに。 **A (VI):** Giá mà bình thường cậu sắp xếp đồ cho gọn. **B (JP):** それはわかってるんだけど、忙しくてなかなかできないんだよ。 **B (VI):** Tớ biết chứ, nhưng bận quá nên khó mà làm được.

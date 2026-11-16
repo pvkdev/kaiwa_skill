@@ -1,0 +1,13 @@
+### 頼りにしてます — Tôi trông cậy vào anh/chị
+
+Mong sự hợp tác hoặc công việc của người kia sẽ giúp mình rất nhiều. **Lưu ý:** Bao hàm sự kỳ vọng, tin tưởng và hy vọng đặt vào họ.
+
+1. **Giúp chuyển nhà.** A (JP): 引っ越し手伝うから、何でも言って。 — A (VI): Tôi sẽ giúp cậu chuyển nhà, cần gì cứ nói. B (JP): 頼りにしてます。 — B (VI): Tôi trông cậy vào cậu đấy.
+
+2. **Hy vọng của mọi người.** A (JP): 頑張りますので、これからもよろしくお願いします。 — A (VI): Tôi sẽ cố gắng, mong mọi người tiếp tục giúp đỡ. B (JP): みんな頼りにしてますよ。 — B (VI): Mọi người đều trông cậy vào anh/chị.
+
+3. **Năng lực ngôn ngữ.** A (JP): 中国語がわかるのはワンさんだけだから、頼りにしてますよ。 — A (VI): Chỉ có anh/chị Wang hiểu tiếng Trung nên chúng tôi trông cậy vào anh/chị. B (JP): そうか。私だけか。 — B (VI): Vậy à, chỉ mình tôi sao.
+
+4. **Người có kinh nghiệm.** A (JP): もう６、７年この仕事をしています。 — A (VI): Tôi đã làm công việc này sáu, bảy năm rồi. B (JP): じゃ、ベテランですね。頼りにしてます。 — B (VI): Vậy là người có kinh nghiệm rồi. Tôi trông cậy vào anh/chị.
+
+5. **Người giúp đáng tin.** A (JP): しょうがないなあ。じゃ、今回は手伝うよ。 — A (VI): Thôi được. Lần này tôi sẽ giúp. B (JP): やった！ 頼りにしてるよ。 — B (VI): Tuyệt! Tôi trông cậy vào cậu.

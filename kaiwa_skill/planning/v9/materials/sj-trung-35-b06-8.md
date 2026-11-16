@@ -1,0 +1,13 @@
+### あわてなくていい — Không cần vội
+
+Nói với người khác rằng họ không cần gấp gáp. **Lưu ý:** Thường dùng để trấn an hoặc khi làm vội dễ hỏng việc.
+
+1. **Trước khi ra ngoài.** A (JP): もう出ないと間に合わないんじゃない？ — A (VI): Nếu không đi ngay thì không kịp mất? B (JP): あわてなくていいよ。10分くらい余裕あるから。 — B (VI): Không cần vội. Còn dư chừng mười phút mà.
+
+2. **Với nhân viên mới.** A (JP): なかなか仕事が覚えられなくて…。 — A (VI): Tôi mãi vẫn chưa nhớ được công việc… B (JP): あわてなくていいよ。ゆっくり覚えれば。 — B (VI): Không cần vội. Cứ từ từ học là được.
+
+3. **Trước khi rời đi.** A (JP): ちょっと待って。すぐに終わらせるから。 — A (VI): Chờ một lát. Tôi sẽ làm xong ngay. B (JP): そんなにあわてなくていいよ。急いでないから。 — B (VI): Không cần gấp thế đâu. Tôi không vội.
+
+**Variation:**
+
+4. **Ở bến xe buýt.** A (JP): もう、バス、全然来ない。 — A (VI): Ôi, xe buýt mãi chẳng đến. B (JP): あわてなくていいよ。 — B (VI): Không cần vội đâu.

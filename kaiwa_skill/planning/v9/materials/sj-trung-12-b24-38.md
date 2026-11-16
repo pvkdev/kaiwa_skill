@@ -1,0 +1,49 @@
+### ドキドキ（する）／気になる
+
+### ドキドキ（する）
+
+**Nghĩa và cách dùng:** Tim đập thình thịch vì lo, căng thẳng, háo hức hoặc xúc động.
+
+**Ví dụ**
+
+1. - A: 面接の前はドキドキして何も手がつかなかったよ。
+
+     VI: Trước buổi phỏng vấn, tim tôi đập thình thịch, chẳng làm nổi việc gì.
+
+   - B: わかる。私もそうなる。
+
+     VI: Tôi hiểu. Tôi cũng hay như thế.
+
+2. - A: ハラハラ、ドキドキするのも、たまにはいいかもしれないよ。
+
+     VI: Đôi khi hồi hộp lo lắng, tim đập rộn lên cũng có thể là chuyện hay.
+
+   - B: うーん、楽しいことならいいけど。
+
+     VI: Ừm, nếu là chuyện vui thì được.
+
+**Từ và cách nói:** 手がつかない — không tập trung làm việc gì được; たまには — thỉnh thoảng.
+
+### 気になる
+
+**Nghĩa và cách dùng:** Bận tâm, thấy lo về một điều gì.
+
+**Ví dụ**
+
+1. - A: 結果が気になりますか。
+
+     VI: Anh/chị đang lo về kết quả à?
+
+   - B: はい、それはもう。ドキドキして待ってます。
+
+     VI: Vâng, lo lắm chứ. Tôi đang hồi hộp chờ đây.
+
+2. - A: 旅行、明日でしたよね。
+
+     VI: Ngày mai anh/chị đi du lịch phải không?
+
+   - B: そうなんです。天気が気になってしょうがないです。
+
+     VI: Đúng vậy. Tôi cứ lo thời tiết mãi, không yên được.
+
+**Từ và cách nói:** それはもう — rất, nhiều lắm (nhấn mạnh); 天気 — thời tiết.

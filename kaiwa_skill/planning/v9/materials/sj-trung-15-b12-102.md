@@ -1,0 +1,19 @@
+### ゼミの発表はどういう形で進めたらいいでしょうか — 形
+
+**モデル会話**
+
+**A (JP):** 来週のゼミの発表はどういう形で進めたらよろしいでしょうか。 **A (VI):** Buổi thuyết trình seminar tuần tới nên tiến hành theo hình thức nào ạ?
+
+**B (JP):** まず、話題提供の発表を30分くらい。そのあと意見交換にしようか。 **B (VI):** Trước tiên trình bày chủ đề khoảng 30 phút. Sau đó trao đổi ý kiến nhé.
+
+**A (JP):** はい、わかりました。 **A (VI):** Vâng, em hiểu rồi.
+
+Khác với 「形」 nhìn thấy bằng mắt, ở đây chỉ phương pháp, cách làm, trình tự trừu tượng. **基本パターン:** ［Vする／NAな］＋**形**＋で＋～する.
+
+**会話練習**
+
+1. **A (JP):** やっと勝てたね。内容はよくなかったけど。 **A (VI):** Cuối cùng cũng thắng rồi, dù nội dung trận đấu không tốt. **B (JP):** うん。まあ、どんな形でも勝ててよかったよ。 **B (VI):** Ừ. Dù thắng theo cách nào thì cũng mừng.
+
+2. **A (JP):** 会議はどんな感じでやる？ **A (VI):** Cuộc họp sẽ tiến hành thế nào? **B (JP):** 一人ずつ意見を言って、最後に部長にまとめてもらうって形でいいんじゃない？ **B (VI):** Mỗi người nói ý kiến, cuối cùng nhờ trưởng phòng tổng kết, làm theo hình thức đó được chứ? **A (JP):** そうだね。 **A (VI):** Ừ, được đấy.
+
+3. **A (JP):** 当日はどんな感じになりますか。 **A (VI):** Hôm đó sẽ diễn ra thế nào ạ? **B (JP):** 元町駅の改札前に８時に集合して、そこからホテルのバスで移動します。 **B (VI):** Tập trung lúc tám giờ trước cổng soát vé ga Motomachi, rồi đi xe buýt của khách sạn. **A (JP):** 遅れたらどうすればいいんですか。 **A (VI):** Nếu đến muộn thì phải làm sao ạ? **B (JP):** その場合は自分でバスかタクシーで来てもらう形になります。 **B (VI):** Khi đó anh/chị sẽ phải tự đến bằng xe buýt hoặc taxi.

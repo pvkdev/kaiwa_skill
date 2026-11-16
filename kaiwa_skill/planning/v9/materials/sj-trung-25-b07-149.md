@@ -1,0 +1,13 @@
+### いつもお世話になっております。 — Cảm ơn anh/chị luôn giúp đỡ
+
+Lời chào mở đầu khi nói với người quen, nhất là trong quan hệ công việc hay với người thường xuyên giúp mình. **Lưu ý:** Thể hiện lòng biết ơn. 1. **Gọi đối tác.** A (JP): ABC建設の原と申しますが…。 — A (VI): Tôi là Hara của Công ty Xây dựng ABC... B (JP): あっ、原さんですか。いつもお世話になっております。青木です。 — B (VI): À, anh Hara đấy ạ. Cảm ơn anh luôn giúp đỡ. Tôi là Aoki.
+
+2. **Tự giới thiệu khi gọi.** A (JP): いつもお世話になっております。さくら広告の田中と申しますが…。 — A (VI): Cảm ơn anh/chị luôn hỗ trợ. Tôi là Tanaka của Sakura Quảng cáo... B (JP): ああ、田中さんですか。山下です。 — B (VI): À, anh Tanaka đấy à. Tôi là Yamashita.
+
+3. **Nói với giáo viên của con.** A (JP): 息子がいつもお世話になっております。 — A (VI): Cảm ơn thầy/cô luôn giúp đỡ con trai tôi. B (JP): ああ、ひろし君のお母さんですか。 — B (VI): À, cô là mẹ của bé Hiroshi phải không?
+
+4. **Nói với người đi trước.** A (JP): 先輩には、いつもお世話になってます。 — A (VI): Anh/chị lúc nào cũng giúp tôi. Cảm ơn nhiều. B (JP): そんなことないよ。 — B (VI): Đâu có gì.
+
+**Response expression — こちらこそ:**
+
+5. **こちらこそ — chính tôi mới phải nói vậy.** A (JP): いつもお世話になっております。 — A (VI): Cảm ơn anh/chị luôn giúp đỡ. B (JP): いえいえ、こちらこそお世話になっております。 — B (VI): Không đâu, chính tôi mới phải cảm ơn anh/chị.

@@ -1,0 +1,53 @@
+### いいんですか／ありがたい
+
+### いいんですか
+
+**Nghĩa và cách dùng:** “Thật sự được ạ?” — câu nói cố định để tỏ lòng biết ơn khi được đề nghị cho thứ gì hoặc giúp việc gì; ở cách dùng này, người nói không thật sự hỏi liệu việc đó có được phép hay không.
+
+**Ví dụ**
+
+1. 〈家に泊まるように言われて〉 — Khi được mời ở lại nhà.
+
+   - A: えっ、いいんですか。ありがとうございます。
+
+     VI: Ồ, thật sự được ạ? Cảm ơn anh/chị.
+
+   - B: どうぞ、どうぞ。
+
+     VI: Cứ tự nhiên, mời anh/chị.
+
+2. - A: こんなにいろいろいただいてしまって、いいんですか。
+
+     VI: Tôi được nhận nhiều thứ thế này, thật sự có được không ạ?
+
+   - B: もちろん。遠慮なさらないでください。
+
+     VI: Tất nhiên rồi. Xin đừng ngại.
+
+**Từ và cách nói:** どうぞ — mời/cứ tự nhiên; なさる — cách nói tôn kính của “làm”.
+
+### ありがたい
+
+**Nghĩa và cách dùng:** Biết ơn, quý sự giúp đỡ; cách bày tỏ lòng biết ơn với thái độ khiêm nhường.
+
+**Ví dụ**
+
+1. - A: その書類、作りましょうか。
+
+     VI: Để tôi làm bộ giấy tờ đó cho nhé?
+
+   - B: いいんですか。そうしてもらえると、ありがたいです。
+
+     VI: Thật sự được ạ? Nếu anh/chị làm giúp thì tôi biết ơn lắm.
+
+2. 〈先輩に〉 — Nói với người đi trước.
+
+   - A: いつも親切に指導していただいて、本当にありがたいです。
+
+     VI: Anh/chị luôn tận tình chỉ dẫn, tôi thật sự rất biết ơn.
+
+   - B: いやいや、僕もそうしてもらったから。
+
+     VI: Không đâu, trước đây tôi cũng đã được người khác giúp như thế.
+
+**Từ và cách nói:** 書類 — giấy tờ, hồ sơ; 指導する — hướng dẫn, chỉ bảo.

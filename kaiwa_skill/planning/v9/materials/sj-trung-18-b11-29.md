@@ -1,0 +1,37 @@
+### 返事は明日でもいい？ — ～でいい／～でもいい
+
+**Hội thoại mở đầu**
+
+**A (JP):** 返事は明日でもいい？
+
+**A (VI):** Mai trả lời cũng được chứ?
+
+**B (JP):** いいよ、もちろん。
+
+**B (VI):** Được, tất nhiên rồi.
+
+Đối chiếu với 「返事は明日でもいいですか」 — “Ngày mai trả lời được không ạ?”. Dòng trong ngoặc của bản in thiếu dấu ngoặc đóng; ở đây giữ nguyên câu Nhật và diễn nghĩa đầy đủ.
+
+**Ý nghĩa và mẫu:** Dạng khẳng định cho phép; dạng câu hỏi xin phép. Cũng dùng để hỏi khả năng thực hiện, điều kiện hoặc ý muốn của người nghe. Hai mẫu **A. [N など] + でいい**, **B. [N など] + でもいい**. Hai dạng gần nhau, nhưng 「～でいい」 có sắc thái suồng sã hơn và được nhiều người trẻ dùng.
+
+**会話練習 — A. でいい**
+
+1. **A (JP):** 書類はこれでいいですか。 **A (VI):** Giấy tờ như thế này đã được chưa ạ? **B (JP):** はい、けっこうです。 **B (VI):** Vâng, được rồi.
+
+2. **A (JP):** 夕飯はホテルのレストランでいい？ **A (VI):** Bữa tối ăn ở nhà hàng khách sạn được không? **B (JP):** いいよ。そうしよう。 **B (VI):** Được, cứ thế đi.
+
+3. **A (JP):** 待ち合わせ場所は、この前と同じでいいですか。 **A (VI):** Chỗ hẹn giống lần trước được không ạ? **B (JP):** ええ、いいですよ。 **B (VI):** Vâng, được ạ.
+
+4. **A (JP):** ここはコンマじゃなくて、ピリオドでいいの？ **A (VI):** Chỗ này dùng dấu chấm thay vì dấu phẩy được à? **B (JP):** うん、そうだね。 **B (VI):** Ừ, đúng rồi.
+
+5. **A (JP):** ちょっとでいいから、手伝ってくれない？ **A (VI):** Chỉ một chút thôi cũng được, cậu giúp tớ nhé? **B (JP):** じゃ、30分くらいね。 **B (VI):** Vậy khoảng ba mươi phút nhé.
+
+**B. でもいい**
+
+6. **A (JP):** 連絡はメールでもいいですか。 **A (VI):** Tôi liên lạc bằng email được không ạ? **B (JP):** ええ。＊電話でもメールでも、どちらでもけっこうです。 **B (VI):** Được. Gọi điện hay gửi email đều được ạ.
+
+7. **A (JP):** 1000円でもいいから給料を上げてほしい。 **A (VI):** Dù chỉ một nghìn yên cũng được, tôi muốn được tăng lương. **B (JP):** ぼくも。 **B (VI):** Tôi cũng thế.
+
+8. **A (JP):** この仕事、面白そう。学生でもいいのかな？ **A (VI):** Công việc này có vẻ thú vị. Sinh viên cũng ứng tuyển được chứ nhỉ? **B (JP):** いいみたいよ。応募してみたら？ **B (VI):** Có vẻ được đấy. Cậu thử ứng tuyển xem?
+
+**MEMO 6:** 「～でもけっこうです」 là cách nói lịch sự của 「～でもいい」.

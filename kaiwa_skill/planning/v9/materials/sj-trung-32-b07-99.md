@@ -1,0 +1,15 @@
+### 結構です。（Yes） — Được ạ, như thế ổn
+
+Cho biết mình thấy một việc ổn và chấp thuận. **Lưu ý:** Cùng nghĩa khẳng định với **いいです** nhưng trang trọng hơn một chút. Thường đặt **ええ／はい** trước **結構です** để người nghe biết rõ đây là lời đồng ý.
+
+1. **Nói với thầy cô.** A (JP): 資料の提出はいつですか。 — A (VI): Khi nào nộp tài liệu ạ? B (JP): 今週中で結構ですよ。 — B (VI): Nộp trong tuần này là được.
+
+2. **Ở nhà hàng.** A (JP): メニューはお下げしてよろしいですか。 — A (VI): Tôi xin phép cất thực đơn được không ạ? B (JP): はい、結構です。 — B (VI): Vâng, được ạ.
+
+3. **Nhờ thầy cô xem bài.** A (JP): すみません、今日、ちょっと論文を見ていただけませんか。 — A (VI): Xin lỗi, hôm nay thầy/cô xem giúp bài luận của em một chút được không ạ? B (JP): 午後なら結構ですよ。 — B (VI): Buổi chiều thì được.
+
+**Words and expressions often used with the phrase — これで／それで／大変:**
+
+4. **これで／それで — như thế này/như thế đó.** A (JP): 先生、これでいいですか。 — A (VI): Thưa thầy/cô, như thế này được chưa ạ? B (JP): はい、それで結構です。 — B (VI): Vâng, như vậy được rồi.
+
+5. **大変 — rất.** A (JP): 先生、いかがですか。 — A (VI): Thưa thầy/cô, thầy/cô thấy thế nào ạ? B (JP): 大変結構ですよ。 — B (VI): Rất tốt.

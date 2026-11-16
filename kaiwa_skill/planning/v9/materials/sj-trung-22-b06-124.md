@@ -1,0 +1,13 @@
+### 調子はどう？ — Tình hình thế nào?
+
+Hỏi công việc hoặc tình trạng của ai, của máy móc đang tiến triển ra sao. **Lưu ý:** Nhất là để biết điều ấy tốt hay xấu; đối tượng có thể là sức khỏe, công việc, đời sống hoặc thiết bị.
+
+1. **Vết thương.** A (JP): 足の調子はどうですか。 — A (VI): Chân anh/chị thế nào rồi? B (JP): だいぶよくなりました。 — B (VI): Đỡ nhiều rồi.
+
+2. **Ở chỗ làm.** A (JP): 調子はどう？ — A (VI): Công việc thế nào? B (JP): いやあ、忙しいですよ。 — B (VI): Ôi, bận lắm.
+
+3. **Trước trận đấu.** A (JP): 調子はどうですか。 — A (VI): Thể trạng anh/chị thế nào? B (JP): すごくいいですよ。早く試合がしたいです。 — B (VI): Rất tốt. Tôi muốn thi đấu ngay.
+
+4. **Máy photocopy.** A (JP): 修理した後、調子はどう？ — A (VI): Sửa rồi thì máy chạy thế nào? B (JP): 今のところ、問題ないです。 — B (VI): Hiện giờ không có vấn đề gì.
+
+5. **Với bạn.** A (JP): 久しぶり。最近、調子はどう？ — A (VI): Lâu rồi không gặp. Dạo này cậu thế nào? B (JP): うん。まあ、元気にやってるよ。そっちは？ — B (VI): Ừ, tôi vẫn khỏe. Còn cậu?

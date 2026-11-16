@@ -1,0 +1,13 @@
+### 今一つ — Còn thiếu một chút, chưa thật đạt
+
+Bày tỏ sự chưa hài lòng vì một việc chưa đạt điều mình mong. **Lưu ý:** **今一（いまいち）** xuất phát từ **今一つ**, là cách nói thân mật hơn, dùng rộng rãi, đặc biệt ở người trẻ.
+
+1. **Đánh giá bánh.** A (JP): ねえ、このケーキどう？ — A (VI): Này, cái bánh này thế nào? B (JP): うーん。味はおいしいんだけど、見た目が今一つかな。 — B (VI): Ừm, vị ngon nhưng hình thức có vẻ còn thiếu chút gì đó.
+
+2. **Một vấn đề.** A (JP): 無事に解決してよかったね！ — A (VI): Giải quyết ổn thỏa rồi, tốt quá nhỉ! B (JP): うん。でも、今一つすっきりしないんだよね。 — B (VI): Ừ. Nhưng tôi vẫn chưa thấy hoàn toàn nhẹ lòng.
+
+3. **Còn thắc mắc.** A (JP): 質問はありませんか。 — A (VI): Có câu hỏi nào không? B (JP): すみません、このCとDの違いが今一つよくわかりません。 — B (VI): Xin lỗi, tôi vẫn chưa hiểu rõ điểm khác nhau giữa C và D.
+
+4. **Hiệu quả thuốc.** A (JP): 薬の効き目はどう？ — A (VI): Thuốc có tác dụng thế nào? B (JP): うーん。今一つ。 — B (VI): Ừm, chưa thật hiệu quả.
+
+5. **Dễ dùng hay không.** A (JP): 今度のスマホ、今一つ使いにくいんだよな。 — A (VI): Điện thoại thông minh mới này hơi khó dùng. B (JP): そのうち慣れるよ。 — B (VI): Dần dần cậu sẽ quen thôi.

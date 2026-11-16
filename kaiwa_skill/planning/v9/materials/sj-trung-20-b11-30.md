@@ -1,0 +1,35 @@
+### はっきり言うしかないよ — ～しか～ない／～しかない
+
+**Hội thoại mở đầu**
+
+**A (JP):** これ以上残業はできないって、はっきり言うしかないよ。
+
+**A (VI):** Cậu chỉ còn cách nói thẳng rằng không thể làm thêm giờ nữa.
+
+**B (JP):** そうだね。思い切って言ってみるよ。
+
+**B (VI):** Đúng vậy. Tớ sẽ mạnh dạn nói thử.
+
+Đối chiếu với 「はっきり言うしかないですよ」 — “Chỉ còn cách nói thẳng thôi”.
+
+**Ý nghĩa và mẫu:** Khẳng định giới hạn của điều có thể làm hay nghĩ lúc này: không còn gì hơn, không có khả năng nào khác. **A. [N] + しか + [V／A／NA] + ない**, như 「水しか飲まない」 — “chỉ uống nước”. **B. [V／N など] + しかない**, như 「はっきり言うしかない」 — “chỉ còn cách nói thẳng”. A thường chỉ phạm vi hoặc số lượng; B thể hiện nhận định không còn lựa chọn khác, có cả sắc thái đành chấp nhận.
+
+**会話練習 — A. しか…ない**
+
+1. **A (JP):** え？ 千円しか持ってないの？ **A (VI):** Sao? Cậu chỉ có một nghìn yên thôi à? **B (JP):** うん。銀行に行けばあるんだけど。 **B (VI):** Ừ. Nếu đến ngân hàng thì có thêm.
+
+2. **A (JP):** 今、歯の治療中で、柔らかいものしか食べられないんです。 **A (VI):** Giờ tôi đang điều trị răng, chỉ ăn được đồ mềm. **B (JP):** そうですか。残念ですね。 **B (VI):** Vậy à, tiếc thật.
+
+3. **A (JP):** レポート、まだ半分しかできてない。どうしよう。 **A (VI):** Bài báo cáo tớ mới làm được một nửa. Biết làm sao đây? **B (JP):** 来週でいいか、先生に聞いてみたら？ **B (VI):** Cậu thử hỏi thầy xem nộp tuần sau có được không?
+
+4. **A (JP):** この商品はここでしか買えないそうです。 **A (VI):** Nghe nói sản phẩm này chỉ mua được ở đây. **B (JP):** そう言われると買いたくなりますね。 **B (VI):** Nghe thế lại muốn mua nhỉ.
+
+**B. しかない**
+
+5. **A (JP):** 電車、いつ動くんだろう。困ったね。 **A (VI):** Không biết bao giờ tàu chạy lại. Rắc rối thật. **B (JP):** うん。ここで待つしかないね。 **B (VI):** Ừ, chỉ còn cách đợi ở đây.
+
+6. **A (JP):** 明日、カメラが要るね。持ってる？ **A (VI):** Mai cần máy ảnh nhỉ. Cậu có không? **B (JP):** いや、誰かに借りるしかない。 **B (VI):** Không, chỉ còn cách mượn ai đó.
+
+7. **A (JP):** かさ、まだ探してるの？ もうあきらめるしかないよ。 **A (VI):** Cậu vẫn tìm ô à? Chỉ còn cách bỏ cuộc thôi. **B (JP):** うん…。でも、もう一度探してみる。 **B (VI):** Ừ… Nhưng tớ sẽ thử tìm thêm lần nữa.
+
+8. **A (JP):** 最初の試合で去年の優勝チームとやるの!? 運が悪いね。 **A (VI):** Trận đầu đã gặp đội vô địch năm ngoái à!? Xui thật. **B (JP):** ま、頑張るしかないよ。 **B (VI):** Thì chỉ còn cách cố gắng thôi.

@@ -1,0 +1,35 @@
+### そしたら、ボウリングでもする？ — そしたら／だったら
+
+**Hội thoại mở đầu**
+
+**A (JP):** 明日も降りそうだね。山は無理だよ。
+
+**A (VI):** Có vẻ mai lại mưa nhỉ. Không đi núi được rồi.
+
+**B (JP):** そしたら、ボウリングでもする？
+
+**B (VI):** Nếu thế thì mình chơi bowling chẳng hạn nhé?
+
+Đối chiếu 「そうしたら、ボウリングでもしますか」 — “Nếu vậy thì chơi bowling nhé?”.
+
+**Ý nghĩa và mẫu:** 「X。そしたら Y。」「X。だったら Y。」 mang nghĩa “nếu X thì Y”. Khi nhận thông tin mới về kế hoạch hay tình hình X, người nói đưa ra cách ứng phó Y. Sơ đồ lấy **[câu trước: thông tin mới về tình hình hiện tại]**, rồi nối **A. そしたら + [ý kiến, đề xuất, v.v.]** hoặc **B. だったら + [ý kiến, đề xuất, v.v.]**. 「そしたら」 rút từ 「そうしたら」; 「だったら」 rút từ 「それだったら」. Vì cả hai khá thân mật, khi nói với khách trong công việc thường dùng 「そうしましたら」.
+
+**会話練習 — A. そしたら**
+
+1. **A (JP):** 結果がわかるのは今日の夜なんです。 **A (VI):** Tối nay mới biết kết quả ạ. **B (JP):** そしたら、明日連絡をください。 **B (VI):** Nếu vậy, xin liên lạc với tôi ngày mai.
+
+2. **A (JP):** 今日はちょっとお腹の調子が悪いんです。 **A (VI):** Hôm nay bụng tôi hơi khó chịu. **B (JP):** そしたら、何か消化のいいものがいいですね。 **B (VI):** Nếu vậy, nên ăn thứ gì dễ tiêu hóa.
+
+3. **A (JP):** 明日、セミナーに行く時間ないなあ。 **A (VI):** Mai tớ không có thời gian đi dự hội thảo. **B (JP):** そしたら、私が代わりに行きましょうか。 **B (VI):** Nếu vậy, để tôi đi thay nhé?
+
+4. **Bối cảnh (JP):** 〈プレゼントを買う〉 **Bối cảnh (VI):** Mua quà. **A (JP):** さくらちゃんって、６歳でしょ。そしたら、絵本がいいよ。 **A (VI):** Bé Sakura sáu tuổi rồi nhỉ. Thế thì sách tranh hợp đấy. **B (JP):** うん。絵本はいいね。 **B (VI):** Ừ, sách tranh hay đấy.
+
+**B. だったら**
+
+5. **A (JP):** ５時集合だと、コンサートが始まるまでけっこう待つよ。 **A (VI):** Nếu hẹn lúc năm giờ thì phải đợi khá lâu trước khi buổi diễn bắt đầu. **B (JP):** だったら、もう少し遅くする？ **B (VI):** Vậy mình hẹn muộn hơn chút nhé?
+
+6. **A (JP):** 休みは３日しかとれないなあ。 **A (VI):** Tớ chỉ xin nghỉ được ba ngày thôi. **B (JP):** だったら、京都はやめて、近くの温泉にする？ **B (VI):** Vậy bỏ kế hoạch Kyoto, đi suối nước nóng gần đây nhé?
+
+7. **A (JP):** 予算は５万円です。 **A (VI):** Ngân sách là năm mươi nghìn yên. **B (JP):** だったら、その店でも大丈夫だよ。 **B (VI):** Vậy quán đó cũng được.
+
+8. **A (JP):** あ、そうだ。金曜の食事会、行けなくなったんだ。 **A (VI):** À đúng rồi, tớ không đi được bữa ăn tối thứ Sáu nữa. **B (JP):** だったら早く言ってよ。もう予約してあるんだから。 **B (VI):** Nếu vậy cậu phải nói sớm chứ. Đã đặt chỗ rồi mà.

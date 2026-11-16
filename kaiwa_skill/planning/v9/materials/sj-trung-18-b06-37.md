@@ -1,0 +1,13 @@
+### お手数をおかけします — Xin lỗi vì làm phiền anh/chị
+
+Bày tỏ sự áy náy vì người khác phải tốn thời gian và công sức cho mình. **Lưu ý:** Thường dùng với khách hàng hoặc người mình nhờ vả. Đôi khi rút gọn thành **お手数ですが**.
+
+1. **Nhờ chuẩn bị công việc.** A (JP): これを金曜日までに10個用意すればいいんですね。 — A (VI): Tôi chuẩn bị mười cái này chậm nhất vào thứ Sáu là được phải không? B (JP): そうです。お手数をおかけします。 — B (VI): Vâng. Xin lỗi vì làm phiền anh/chị.
+
+2. **Chuyển lời nhắn.** A (JP): じゃ、田中先生にそう伝えておきますね。 — A (VI): Vậy tôi sẽ báo lại với thầy/cô Tanaka. B (JP): はい。お手数をおかけします。 — B (VI): Vâng. Xin lỗi vì làm phiền anh/chị.
+
+3. **Đồ thất lạc.** A (JP): お手数をおかけしますが、もし見つかったらお電話をいただけますか。 — A (VI): Xin lỗi vì làm phiền, nhưng nếu tìm thấy, anh/chị có thể gọi điện cho tôi được không? B (JP): わかりました。 — B (VI): Tôi hiểu rồi.
+
+**Variation — Xác nhận đã nhận:**
+
+4. A (JP): 先ほどFAXをお送りしました。お手数ですが、ご確認のほどよろしくお願いします。 — A (VI): Tôi vừa gửi fax. Phiền anh/chị kiểm tra giúp. B (JP): はい、確かに受け取りました。 — B (VI): Vâng, tôi đã nhận được rồi.

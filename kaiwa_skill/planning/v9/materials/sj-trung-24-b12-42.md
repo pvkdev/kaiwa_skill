@@ -1,0 +1,21 @@
+### それに、食事も値段の割にまあまあ — それに
+
+**モデル会話**
+
+**A (JP):** ホテル、よかったよ。窓からの眺めもいいし。 **A (VI):** Khách sạn tốt lắm. Cảnh nhìn từ cửa sổ cũng đẹp.
+
+**B (JP):** そう。 **B (VI):** Vậy à.
+
+**A (JP):** それに、食事も値段の割にまあまあ。 **A (VI):** Hơn nữa, đồ ăn so với giá tiền cũng khá ổn.
+
+**B (JP):** じゃ、うちの社員旅行もそこにしよう。 **B (VI):** Vậy chuyến du lịch công ty mình cũng chọn nơi ấy nhé.
+
+Dùng sau lời nói để thêm một thông tin bổ sung. **基本パターン:** ①［前の文］＋**それに**＋②［文（前の文に追加する情報）］; ① nêu thông tin cơ bản, ② bổ sung.
+
+**会話練習**
+
+1. **A (JP):** そのスカーフ、色がきれいだね。 **A (VI):** Chiếc khăn ấy màu đẹp nhỉ. **B (JP):** ありがとう。ちょっと奮発したの。 **B (VI):** Cảm ơn. Tớ đã chi mạnh tay một chút đấy. **A (JP):** それに、森さんによく似あってるよ。 **A (VI):** Hơn nữa, nó rất hợp với cô Mori. **B (JP):** そう？ **B (VI):** Thật à?
+
+2. **A (JP):** この製品、意外に売れてないんだって？ **A (VI):** Nghe nói sản phẩm này bán không chạy như tưởng tượng à? **B (JP):** そうなんだよ。営業のほうでも残念がってる。 **B (VI):** Đúng thế. Bên kinh doanh cũng rất thất vọng. **A (JP):** 値段がちょっと高いか…。 **A (VI):** Giá hơi cao chăng… **B (JP):** うん…。それに、宣伝もあまりしてないから。 **B (VI):** Ừ… Hơn nữa, cũng không quảng bá nhiều.
+
+3. **A (JP):** 今度の先生、出欠やかましいんだ。 **A (VI):** Thầy lần này rất khắt khe về điểm danh. **B (JP):** そういうの、困るね。 **B (VI):** Kiểu ấy thì khó thật. **A (JP):** それに、ときどき抜き打ちで試験やるんだって。 **A (VI):** Hơn nữa, nghe nói thầy thỉnh thoảng còn kiểm tra đột xuất.

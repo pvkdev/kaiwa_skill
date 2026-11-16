@@ -1,0 +1,13 @@
+### 初耳です — Lần đầu tôi nghe chuyện này
+
+Dùng khi lần đầu nghe điều người kia vừa nói. **Lưu ý:** Thường thể hiện ngạc nhiên hoặc sốc vì chuyện bất ngờ.
+
+1. **Ở bữa tiệc.** A (JP): あれ？ 資料持ってどこ行くんですか。会議は明日に延期ですよ。 — A (VI): Ủa? Anh/chị mang tài liệu đi đâu vậy? Cuộc họp đã dời sang ngày mai rồi. B (JP): えっ、そうなんですか!? 初耳ですよ。 — B (VI): Hả, vậy sao!? Tôi mới nghe lần đầu đấy.
+
+2. **Đồng nghiệp kết hôn.** A (JP): 森さんの結婚祝い、何にしようか。 — A (VI): Chọn quà mừng cưới cho Mori là gì nhỉ? B (JP): えっ？ 森さん、結婚するの!? 初耳だよー。 — B (VI): Hả? Mori sắp kết hôn à!? Tôi mới nghe lần đầu đấy.
+
+3. **Làm thêm.** A (JP): 明日の勤務シフト変わったの、聞いてる？ — A (VI): Cậu đã nghe chuyện lịch làm ngày mai thay đổi chưa? B (JP): えっ。何それ？ そんなの初耳だよ。 — B (VI): Hả. Chuyện gì thế? Tôi chưa nghe bao giờ.
+
+4. **Quê nhà.** A (JP): これ、実家の青森から送ってきたリンゴです。よかったらどうぞ。 — A (VI): Đây là táo nhà tôi ở Aomori gửi đến. Nếu thích thì mời anh/chị dùng. B (JP): 田中さん、青森出身だったんですか。それは初耳です。 — B (VI): Anh/chị Tanaka quê ở Aomori à? Tôi mới biết đấy.
+
+5. **Chuyển nhà.** A (JP): 来月引っ越すって、話したっけ？ — A (VI): Tôi đã kể chuyện tháng sau sẽ chuyển nhà chưa nhỉ? B (JP): いや、初耳だよ。どこに引っ越すの？ — B (VI): Chưa, tôi mới nghe lần đầu. Cậu chuyển đi đâu?

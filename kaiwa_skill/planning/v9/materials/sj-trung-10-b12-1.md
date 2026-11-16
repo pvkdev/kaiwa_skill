@@ -1,0 +1,21 @@
+### これ、何かの間違いかと思うんですけど — ～かと
+
+**モデル会話 — nhìn phiếu tính tiền**
+
+**A (JP):** 〈会計伝票を見て〉これ、何かの間違いかと思うんですけど。頼んでないです。 **A (VI):** 〈Nhìn phiếu tính tiền〉Tôi nghĩ hình như có nhầm lẫn gì đó. Tôi không gọi món này.
+
+**B (JP):** 申し訳ございません。確認いたしますので、少々お待ちください。 **B (VI):** Thành thật xin lỗi. Tôi sẽ kiểm tra, xin vui lòng chờ một chút.
+
+**A (JP):** お願いします。 **A (VI):** Nhờ anh/chị kiểm tra giúp.
+
+「～かと」 giúp nói ý phỏng đoán một cách vòng và mềm hơn: “tôi nghĩ có lẽ…”.
+
+**Ý nghĩa・使う場面:** Dùng 「～かと（思う）」 khi muốn nói 「～と思う」 một cách gián tiếp: tránh khẳng định dứt khoát và trình bày dưới dạng nghi vấn. So với 「（あなたの）間違いだと思います」 — “Tôi nghĩ đó là lỗi của anh/chị”, 「間違いかと思います」 — “Tôi nghĩ có lẽ có nhầm lẫn” để lại ấn tượng mềm hơn. **基本パターン:** [câu phán đoán hoặc suy đoán] + **かと** + [思うなど].
+
+**会話練習**
+
+1. **A (JP):** ちょっと入院してもらったほうがよろしいかと。 **A (VI):** Tôi nghĩ có lẽ anh/chị nên nhập viện một thời gian. **B (JP):** えっ、そんなに悪いんですか。 **B (VI):** Hả, nghiêm trọng đến thế sao? **A (JP):** いや、まだわからないんです。ですから、詳しい検査をしたいんです。 **A (VI):** Chưa, hiện chưa rõ. Vì vậy tôi muốn kiểm tra kỹ hơn.
+
+2. **Bối cảnh:** 〈タクシーで〉 — trên taxi. **A (JP):** 朝日町に行きたいので、とりあえずこの道をまっすぐ行ってください。 **A (VI):** Tôi muốn đến khu Asahi, trước mắt xin cứ đi thẳng đường này. **B (JP):** 朝日町だったら、さくら通りで行ったほうが早いかと思いますが。 **B (VI):** Nếu đến khu Asahi, tôi nghĩ đi qua đường Sakura có lẽ nhanh hơn ạ. **A (JP):** そうですか。じゃ、そうしてください。 **A (VI):** Vậy sao? Thế thì đi đường đó giúp tôi.
+
+3. **A (JP):** 小さなお子さんが高い熱を出して、さぞご心配かと思います。 **A (VI):** Con nhỏ sốt cao như vậy, hẳn anh/chị rất lo. **B (JP):** はい。こんなに高い熱が出たのは初めてなので…。 **B (VI):** Vâng. Đây là lần đầu cháu sốt cao đến thế nên… **A (JP):** どうぞお大事になさってください。 **A (VI):** Xin hãy chăm sóc cháu cẩn thận. **B (JP):** ありがとうございます。 **B (VI):** Xin cảm ơn.

@@ -1,0 +1,11 @@
+### 検討します — Tôi sẽ xem xét
+
+Cho biết sẽ cân nhắc, không quyết định ngay. **Lưu ý:** Ngay cả khi có ý kiến không thuận, người nói thường không nói thẳng mà trì hoãn quyết định bằng **検討します**. Trang trọng hơn **考えます**.
+
+1. **Ở cửa hàng.** A (JP): 今なら、さらに10％安くなります。 — A (VI): Nếu mua bây giờ sẽ được giảm thêm 10%. B (JP): うーん…ちょっと検討します。 — B (VI): Ừm… tôi sẽ cân nhắc.
+
+2. **Ở đại lý du lịch.** A (JP): この３つのプランはどれもおすすめです。 — A (VI): Cả ba gói này đều đáng chọn. B (JP): わかりました。ちょっと家族と検討します。 — B (VI): Tôi hiểu rồi. Tôi sẽ bàn với gia đình một chút.
+
+3. **Về đề án kinh doanh.** A (JP): 何度もすみませんね。もうちょっと検討させてもらえますか。 — A (VI): Xin lỗi đã hỏi nhiều lần. Anh/chị cho tôi thêm chút thời gian xem xét được không? B (JP): わかりました。では、お返事お待ちしております。 — B (VI): Vâng. Vậy tôi sẽ đợi hồi đáp của anh/chị.
+
+4. **Mua sắm.** A (JP): ちょっと高いけど、これ、買っちゃおうか。 — A (VI): Hơi đắt, nhưng ta mua cái này nhé? B (JP): えー、もうちょっとよく検討してからにしようよ。 — B (VI): Ơ, hãy cân nhắc kỹ thêm rồi hẵng mua.

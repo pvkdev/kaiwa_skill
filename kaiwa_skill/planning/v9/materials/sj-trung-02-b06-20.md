@@ -1,0 +1,13 @@
+### いつでも言ってください — Khi nào cần cứ nói với tôi
+
+Bày tỏ mình sẵn sàng giúp khi người khác cần. **Lưu ý:** Người kia không cần ngại mà cứ nói.
+
+1. **Với đồng nghiệp.** A (JP): ありがとうございます。助かりました。 — A (VI): Cảm ơn anh/chị. Anh/chị giúp tôi nhiều quá. B (JP): いえいえ。困ったときはいつでも言ってください。 — B (VI): Không có gì. Khi gặp khó khăn, cứ nói với tôi bất cứ lúc nào.
+
+2. **Với bạn.** A (JP): 困ったときはいつでも言って。 — A (VI): Khi cần thì cứ nói với tôi. B (JP): うん。またお願いするかもしれない。 — B (VI): Ừ, có lẽ tôi sẽ lại nhờ cậu.
+
+3. **Với đồng nghiệp.** A (JP): 手伝いが必要だったら、いつでも言って。 — A (VI): Nếu cần giúp, cứ nói với tôi bất kỳ lúc nào. B (JP): ありがとうございます。 — B (VI): Cảm ơn anh/chị.
+
+**Related phrase — いつでもどうぞ (“cứ tự nhiên bất kỳ lúc nào”):**
+
+4. A (JP): またお願いしてもいいですか。 — A (VI): Tôi có thể lại nhờ anh/chị không? B (JP): もちろんです。困ったときはいつでもどうぞ。 — B (VI): Tất nhiên. Khi gặp khó khăn cứ nhờ tôi.

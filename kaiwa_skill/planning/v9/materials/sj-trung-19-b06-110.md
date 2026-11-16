@@ -1,0 +1,11 @@
+### そんな感じです — Đại khái là như vậy
+
+Nói khái quát một nội dung hoặc tình huống. **Lưu ý:** Có thể dùng để giải thích **こんな感じ** — như thế này, đồng ý **そんな感じ** — như vậy, hoặc hỏi **どんな感じ？** — như thế nào?
+
+1. **Sau lời giải thích.** A (JP): …休みの日は大体そんな感じです。 — A (VI): …Ngày nghỉ của tôi đại khái là như vậy. B (JP): そうですか。結構忙しいんですね。 — B (VI): Vậy à. Cậu khá bận nhỉ.
+
+2. **Hỏi đơn giản.** A (JP): ニューヨークの生活ってどんな感じ？ — A (VI): Cuộc sống ở New York như thế nào? B (JP): 東京とかなり似てるよ。 — B (VI): Khá giống Tokyo.
+
+3. **Hỏi về phòng ở; B cho xem ảnh.** A (JP): 寮の部屋ってどんな感じ？ — A (VI): Phòng ký túc xá như thế nào? B (JP): 〈写真を見せながら〉こんな感じだよ。 — B (VI): (Cho xem ảnh.) Đại khái thế này.
+
+4. **Nghĩ lại về mình.** A (JP): 最近、全然家族に電話できてないなあ。 — A (VI): Gần đây tôi chẳng gọi điện cho gia đình chút nào. B (JP): ああ、私もそんな感じ。 — B (VI): Ừ, tôi cũng vậy.

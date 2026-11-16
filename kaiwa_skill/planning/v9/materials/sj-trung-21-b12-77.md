@@ -1,0 +1,19 @@
+### ただ、引用が多すぎるって、先生が注意してた — ただ
+
+**モデル会話**
+
+**A (JP):** 山本さんの研究発表、よかったよ。 **A (VI):** Bài thuyết trình nghiên cứu của Yamamoto hay đấy.
+
+**B (JP):** そう。彼女、よく勉強してるもんね。 **B (VI):** Ừ. Cô ấy học rất chăm mà.
+
+**A (JP):** ただ、引用が多すぎるって、先生が注意してた。 **A (VI):** Chỉ có điều thầy/cô đã nhắc rằng cô ấy trích dẫn quá nhiều.
+
+Sau khi nhìn chung đánh giá tích cực, dùng 「ただ」 để nêu một điểm còn thiếu hoặc cần sửa. **基本パターン:** ［文（評価）］＋**ただ**＋［文（不満・気になる点）］.
+
+**会話練習**
+
+1. **A (JP):** パッケージのデザインなんだけど、まあまあおしゃれで、色のバランスもいいと思う。 **A (VI):** Thiết kế bao bì khá đẹp, màu sắc cũng cân đối. **B (JP):** ありがとうございます。 **B (VI):** Xin cảm ơn. **A (JP):** ただ、どこかで見たような感じで、面白くないんだよね。 **A (VI):** Chỉ có điều trông như đã thấy ở đâu rồi, không có gì thú vị.
+
+2. **A (JP):** この小説、面白いね。 **A (VI):** Cuốn tiểu thuyết này hay nhỉ. **B (JP):** うん。評判がいいみたい。 **B (VI):** Ừ, hình như được đánh giá tốt. **A (JP):** ただ、専門用語とかが多くて、ちょっと読むのに疲れるな。 **A (VI):** Chỉ có điều nhiều thuật ngữ chuyên môn nên đọc hơi mệt.
+
+3. **A (JP):** 旅行の準備、できた？ **A (VI):** Chuẩn bị cho chuyến đi xong chưa? **B (JP):** うん。ただ、何か忘れてるような気がするんだよね。 **B (VI):** Rồi. Chỉ có điều tớ cảm thấy như quên thứ gì đó. **A (JP):** 下着とか？ **A (VI):** Đồ lót chẳng hạn? **B (JP):** いや。あ、思い出した！　パジャマだ！ **B (VI):** Không. À, nhớ ra rồi! Đồ ngủ!

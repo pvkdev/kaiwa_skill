@@ -113,7 +113,7 @@ def build(publish=False):
                     excerpts.append(excerpt)
                     spans.append(dict(span, sha256=digest(raw), excerpt_sha256=digest(excerpt.encode("utf8"))))
                     used[book] += 1
-                md = item["learner_md"]
+                md = "\n".join(line.rstrip() for line in item["learner_md"].splitlines()).strip()
                 if re.search(r"<a\s|CD[- －]*\d|PDF\s*\d|Lưu ý nguồn|Trang in:|はじめに|この本の使い方|さくいん", md, re.I):
                     raise ValueError("Learner metadata or front matter: " + decision["key"] + "/" + item["key"])
                 key = digest(md.encode("utf8"))
@@ -218,7 +218,7 @@ def build(publish=False):
             if e["level"] == level:
                 text += f"## {e['number']}. {e['title']}\n\n{e['objective']}\n\n"
                 text += "\n".join("- " + s["title"] for s in e["selections"] + e["situations"]) + "\n\n"
-        (OUT / name).write_text(text, encoding="utf8")
+        (OUT / name).write_text(text.rstrip() + "\n", encoding="utf8")
     template = (ROOT / "tools/review_site.html").read_text("utf8")
     html = template.replace("__COURSE_DATA__", json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c"))
     (OUT / "ROADMAP.html").write_text(html, encoding="utf8")

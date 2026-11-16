@@ -1,0 +1,11 @@
+### 至急、お願いします — Xin làm gấp giúp tôi
+
+Dùng khi cần nhờ xử lý rất nhanh một việc khẩn. **Lưu ý:** **大至急** nhấn mạnh mức gấp hơn. Đừng lạm dụng **至急**, vì dùng thường xuyên sẽ làm lời nhờ mất sức nặng, khó được tin là thật sự khẩn.
+
+1. **Cấm đỗ xe.** A (JP): ここ駐車禁止ですよ。 — A (VI): Ở đây cấm đỗ xe. B (JP): あ、すみません。移動します。 — B (VI): À, xin lỗi. Tôi sẽ chuyển xe. A (JP): 至急、お願いしますね。 — A (VI): Xin chuyển ngay giúp tôi nhé.
+
+2. **Qua điện thoại.** A (JP): はい、ＡＢＣタクシーです。 — A (VI): Vâng, hãng taxi ABC xin nghe. B (JP): すみません、中央病院の玄関前まで至急お願いします。 — B (VI): Xin lỗi, cho xe đến trước cổng bệnh viện Chūō ngay giúp tôi.
+
+3. **Qua điện thoại.** A (JP): スミスと申しますが、森さんはいらっしゃいますか。 — A (VI): Tôi là Smith, anh/chị Mori có ở đó không ạ? B (JP): ちょっと席をはずしているんですが、戻ったら電話させましょうか。 — B (VI): Hiện anh/chị ấy không ở chỗ ngồi; khi quay lại tôi nhờ gọi cho anh/chị nhé? A (JP): はい。至急お願いします。 — A (VI): Vâng. Xin nhờ báo gấp.
+
+4. **Qua điện thoại.** A (JP): 資料をＦＡＸで送ればいいんですね。 — A (VI): Tôi gửi tài liệu bằng fax là được phải không? B (JP): はい。それで、お忙しいところすみませんが、至急でお願いします。 — B (VI): Vâng. Xin lỗi vì làm phiền lúc anh/chị bận, nhưng xin gửi gấp giúp tôi.

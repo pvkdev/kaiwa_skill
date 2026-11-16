@@ -1,0 +1,15 @@
+### 悪いんだけど — Phiền cậu, nhưng...
+
+Mở lời khi sắp nhờ điều gây phiền hoặc khó cho người kia. **Lưu ý:** Cũng có thể dùng để mở đầu lời từ chối lịch sự.
+
+1. **Nhờ bạn cho mượn tiền.** A (JP): 悪いんだけど、1000円貸してくれない？ — A (VI): Phiền cậu, cho tôi mượn 1.000 yên được không? B (JP): いいよ。 — B (VI): Được thôi.
+
+2. **Nhờ cấp dưới làm thêm.** A (JP): 悪いんだけど、今日ちょっと残業してくれないかなあ。 — A (VI): Phiền cậu, hôm nay làm thêm giờ một chút được không? B (JP): わかりました。 — B (VI): Tôi hiểu rồi.
+
+3. **Từ chối đổi ca làm.** A (JP): 明日のバイト、代わってもらえないかなあ。 — A (VI): Ngày mai cậu làm thay ca cho tôi được không? B (JP): 悪いんだけど、明日は予定があるの。 — B (VI): Xin lỗi, nhưng ngày mai tôi có kế hoạch rồi.
+
+**Words and expressions often used with the phrase — ちょっと／急で:**
+
+4. **ちょっと — hơi, một chút.** A (JP): ちょっと悪いんだけど、これ手伝ってもらえない？ — A (VI): Hơi phiền cậu, giúp tôi việc này được không? B (JP): いいよ。 — B (VI): Được chứ.
+
+5. **急で — gấp gáp.** A (JP): 急で悪いんだけど、今日泊めてくれない？ — A (VI): Xin lỗi vì nhờ gấp, tối nay cho tôi ở lại được không? B (JP): えっ、いいけど…。 — B (VI): Hả, được thì được, nhưng...
