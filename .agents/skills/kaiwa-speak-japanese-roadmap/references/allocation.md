@@ -14,6 +14,8 @@ B05 là nguồn tham khảo cho kiến thức tình huống dịch vụ. Tập k
 
 ## Ghép bản học và kiểm
 
+Trong `applications[]`, dùng `relation=direct|reuse` và `source_key` hoặc danh sách khóa cho ý sẽ vận dụng. `use_vi` nêu rõ ai nói với ai, ở lượt nào và dùng kiến thức để làm gì. Với vị trí đề xuất dựa trên ứng dụng ngay, liên kết direct phải trỏ tới tình huống của chính before_topic_uid. Khi duyệt, hiển thị chuyên đề cạnh topic ấy và cho mở tình huống đã dẫn. Tính khoảng cách bằng thứ tự lộ trình đã ghép. Nếu chuyên đề được đặt độc lập vì giá trị riêng, ghi lý do và khoảng cách tới lần dùng dự kiến khi có. Báo cáo riêng trường hợp đó. Liên kết reuse ở xa không chứng minh hiệu quả của vị trí chèn trước mắt.
+
 Mỗi ý học hoặc nhóm ví dụ có cùng đóng góp cần có locator và kết quả phân bổ. Ghi chặng tiếp nhận và vị trí dự kiến (phần giảng, nhóm ví dụ luyện, bài tập hoặc tài liệu bổ trợ có công dụng rõ). Khi gộp ý tương đương, dẫn tới mục tiêu đã dạy và đối chiếu sắc thái còn riêng. Với ngoại lệ, ghi đoạn cụ thể, lý do và phương án đã xem xét. Tách giới hạn nguồn vật lý khỏi ngoại lệ biên tập. Trong pilot có thể còn pending ngoài phạm vi. Khi nghiệm thu toàn bộ, số ý dạy được chưa có đích hoặc lý do ngoại lệ phải bằng 0. Báo cáo riêng số ý được phân bổ và số ngoại lệ; chỉ gọi là đã dạy khi phần nội dung thực tế đã được biên soạn.
 
 Đọc tuần tự các topic V6.5 theo level. Tại mỗi topic, chèn các chuyên đề có before_topic_uid tương ứng theo rank_at_anchor rồi xuất topic. Chọn cả hai khóa từ quyết định đã lưu để dựng lại được cùng thứ tự. Tính số thứ tự hiển thị sau cùng. UID của chuyên đề độc lập với tên, level và số thứ tự. Với từng topic, giữ UID, cụm, thứ tự tương đối và toàn bộ nội dung học V6.5, gồm cả các chặng có shadowing rỗng.

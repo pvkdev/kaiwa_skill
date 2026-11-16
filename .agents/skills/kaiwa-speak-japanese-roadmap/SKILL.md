@@ -30,6 +30,10 @@ Chọn chất liệu ở mức ý học, cặp tương phản hoặc đoạn đ�
 
 ## Phân công và phục hồi
 
+Trước khi chốt vị trí, đọc ngược từ các tình huống của topic kế tiếp. Chỉ ra người nói, người nghe, việc cần làm và ý cụ thể trong chuyên đề giúp xử lý lượt đó. Nếu ví dụ trong sách là đổi ca nhưng năng lực thực tế là nhờ và báo giới hạn, hãy đặt tên chuyên đề theo năng lực và dùng đổi ca làm cảnh mở. Khi chỉ một phần kiến thức có ích ngay, có thể giữ phần giúp hiểu trọn sắc thái, hoặc dời ý độc lập sang chuyên đề phù hợp hơn. Thử vị trí khác khi cơ hội dùng đầu tiên ở quá xa. Kiến thức chuyên biệt vẫn được giữ để tìm vị trí hoặc làm chuyên đề độc lập có lý do.
+
+Phân biệt tình huống áp dụng trực tiếp tại topic kế tiếp với cơ hội ôn tự nhiên ở các topic sau. Đọc cả những topic xen giữa để tránh ép liên kết. Khi soạn hội thoại sau này, cho AI tra các liên kết theo chiều topic → tình huống → chuyên đề đã học. Đó là gợi ý biên tập theo vai và ngữ cảnh, không phải điều kiện mở bài.
+
 Khi được giao chạy nhiều worker, lượt đọc chia theo sách để giảm số lần đọc lại. Root đối chiếu ứng viên cả tám sách trước khi chia lượt bố trí theo level. Mỗi worker ghi vào phạm vi riêng. Root sở hữu registry, thứ tự xen chặng, build và Git. Lưu quyết định hoàn tất bằng tệp tạm rồi thay thế nguyên tử. Khôi phục bằng cách đối chiếu trạng thái và hash, làm tiếp phần còn thiếu hoặc bị ảnh hưởng.
 
 Khi chỉnh một chuyên đề, dùng UID để tìm nguồn và các chặng vận dụng, cập nhật lý do và so lại các hàng xóm ở cả vị trí cũ lẫn mới. Khi nguồn thay đổi, rà các chuyên đề cùng tham chiếu nguồn đó. Dựng lại thứ tự và chỉ mục từ quyết định đã lưu.

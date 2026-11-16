@@ -49,6 +49,8 @@ Yêu cầu bao phủ áp dụng đến từng ý học trong nguồn clean. Mụ
 
 ## Quyết định cần xem ở bản pilot
 
+Đọc bản pilot như một đoạn đường học. Ngay dưới mỗi chuyên đề, bản review cần cho thấy topic kế tiếp, tình huống cụ thể và lượt nói nào dễ xử lý hơn nhờ chuyên đề. Các topic về sau có thể ôn lại kiến thức trong quan hệ khác. Ví dụ trước T-012, chuyên đề “Mở lời nhờ và nói rõ khi mình không thể giúp” dùng đổi ca làm cảnh mở. Ở T-012/S001 người nhờ nêu việc cụ thể và lúc cần giúp; ở T-012/S011 người được nhờ từ chối vì lịch hiện tại. T-013/S003 có thể tận dụng cách mở lời trước khi hỏi người kia lo chi phí hay thời gian. Đến T-015/S012–S014, cùng kỹ năng nhờ và đáp được ôn khi đổi lịch dọn nhà. Mỗi liên kết có giá trị ở một lượt thoại cụ thể; trong preview cần phân biệt đề xuất vận dụng với hội thoại đã được soạn.
+
 Xem mục tiêu có vừa một chuyên đề, các bài trong nhóm bổ sung cho nhau ở đâu, người học có sớm gặp dịp dùng lại hay không, và hai cấp liền nhau có khác biệt đáng học hay không. Khi xem phần admin, kiểm khả năng tìm lại toàn bộ ví dụ và kiến thức gốc kể cả những tiểu mục tách ra. Số lượng chuyên đề theo cấp, nhịp xen giữa các topic và cách trình bày bài giảng bên trong vẫn mở cho chủ dự án quyết định dựa trên bản review.
 
 [Skill phân bổ V7](../../../.agents/skills/kaiwa-speak-japanese-roadmap/SKILL.md) · [Quy ước dữ liệu và nghiệm thu](../../../.agents/skills/kaiwa-speak-japanese-roadmap/references/allocation.md)
