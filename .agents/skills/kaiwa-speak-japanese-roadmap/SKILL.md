@@ -1,6 +1,6 @@
 ---
 name: kaiwa-speak-japanese-roadmap
-description: Lập bản đồ chuyên đề Speak Japanese V7 cho Harumii. Đọc chín sách, gom bài theo năng lực nói, đặt chuyên đề trước các tình huống sẽ dùng và đối soát với khung topic V6.5. Áp dụng khi lập kế hoạch, chạy pilot, phân bổ toàn bộ hoặc chỉnh vị trí một chuyên đề.
+description: Lập bản đồ chuyên đề Speak Japanese V7 cho Harumii. Đọc tám sách, gom bài theo năng lực nói, đặt chuyên đề trước các tình huống sẽ dùng và đối soát với khung topic V6.5. Áp dụng khi lập kế hoạch, chạy pilot, phân bổ toàn bộ hoặc chỉnh vị trí một chuyên đề.
 ---
 
 # Xây chặng chuyên đề Speak Japanese
@@ -11,16 +11,16 @@ V7 hướng tới hai loại chặng trong cùng một lộ trình. Chặng topi
 
 ## Nhận diện chất liệu trong sách
 
-1. Làm việc ở gốc repo. Đối chiếu chín catalog trong `kaiwa_skill/planning/v6_3/coverage` và `hidden_speak_japanese` trong `planning/v6_4/admin` dưới kaiwa_skill. Tra chặng và tình huống trong JSONL V6.5. Ghim hash đầu vào. Đọc bài hoặc dải dòng từ Markdown clean một lần rồi tái dùng ghi chú khi bài có nhiều vị trí cũ. Mã pack cũ dùng để tìm nguồn.
+1. Làm việc ở gốc repo. Đối chiếu tám catalog (B06, B07, B11, B12, B18, B19, B20, B24) trong `kaiwa_skill/planning/v6_3/coverage` và `hidden_speak_japanese` trong `planning/v6_4/admin` dưới kaiwa_skill. Tra chặng và tình huống trong JSONL V6.5. Ghim hash đầu vào. Đọc bài hoặc dải dòng từ Markdown clean một lần rồi tái dùng ghi chú khi bài có nhiều vị trí cũ. Mã pack cũ dùng để tìm nguồn.
 2. Với mỗi đơn vị, đọc lời giảng, ví dụ tương phản, hội thoại và ghi chú cần thiết để hiểu người Nhật dùng cách nói đó khi nào. Tóm tắt ngắn bằng tiếng Việt hành động người nói, điều người nghe hiểu, quan hệ, sắc thái và trường hợp dễ dùng sai. Gắn vị trí đủ chính xác để sau này mở được toàn bộ kiến thức và ví dụ. Metadata cũ có thể gợi ý, chỉ ghi đã đọc sau khi thực sự mở nội dung.
 3. Nhận diện phần có giá trị sư phạm bên trong bảng, lời dẫn, cặp thành ngữ, từ tượng thanh hoặc mục chung track. Nếu một đơn vị chứa nhiều mục đích nói khác nhau, tách liên kết theo tiểu mục/dải dòng và giữ đường dẫn về toàn đơn vị. Nếu một ý được giảng qua nhiều ví dụ liền nhau, giữ quan hệ giữa chúng. Danh mục học, lời dẫn sử dụng, giới hạn do thiếu trang và chỗ scan đáng ngờ đều có trạng thái riêng trong báo cáo.
-4. Gợi ý khi tìm chức năng qua sách: B05 có vai nhân viên phục vụ, B18 có quan hệ trong/ngoài và chiều kính ngữ, B19 giúp mô tả bằng từ tượng thanh, B20 có cách nói cố định, B24 có cách diễn đạt cảm xúc. B07/B11 gợi ý vùng sau Sơ tới đầu Trung, B06/B12 gợi ý sau Trung tới Thượng. Đọc yêu cầu thực của từng mục để quyết định. B08 必須700 đã dùng cho shadowing topic V6.5 và nằm ngoài chín sách V7.
+4. Gợi ý khi tìm chức năng qua sách: B05 接客 được chuyển sang nguồn kiến thức cho tình huống phục vụ khách. B18 có quan hệ trong/ngoài và chiều kính ngữ, B19 giúp mô tả bằng từ tượng thanh, B20 có cách nói cố định, B24 có cách diễn đạt cảm xúc. B07/B11 gợi ý vùng sau Sơ tới đầu Trung, B06/B12 gợi ý sau Trung tới Thượng. Đọc yêu cầu thực của từng mục để quyết định. B08 必須700 đã dùng cho shadowing topic V6.5 và nằm ngoài tám sách V7.
 
 ## Gom bài và chọn vị trí
 
-Mục tiêu bao phủ toàn bộ kiến thức dạy được của chín sách trong nguồn hiện có. Tìm nơi dạy cho từng nghĩa, sắc thái, cặp đối chiếu, cách đáp, ghi chú mở rộng và bài tập có đóng góp riêng. Khi hai sách dạy cùng ý, liên kết cả hai về chỗ học và giữ sắc thái riêng của mỗi sách. Tận dụng tài liệu hỗ trợ ở nơi người học hoặc người soạn thực sự dùng được. Nếu một ý chưa hợp các topic hiện tại, thử chuyên đề độc lập hoặc vị trí khác. Chỉ loại khi đã đọc và có lý do cụ thể khiến việc đưa vào lộ trình bất hợp lý. Ghi ngoại lệ và cách đã cân nhắc xử lý vào báo cáo.
+Mục tiêu bao phủ toàn bộ kiến thức dạy được của tám sách trong nguồn hiện có. Tìm nơi dạy cho từng nghĩa, sắc thái, cặp đối chiếu, cách đáp, ghi chú mở rộng và bài tập có đóng góp riêng. Khi hai sách dạy cùng ý, liên kết cả hai về chỗ học và giữ sắc thái riêng của mỗi sách. Tận dụng tài liệu hỗ trợ ở nơi người học hoặc người soạn thực sự dùng được. Nếu một ý chưa hợp các topic hiện tại, thử chuyên đề độc lập hoặc vị trí khác. Chỉ loại khi đã đọc và có lý do cụ thể khiến việc đưa vào lộ trình bất hợp lý. Ghi ngoại lệ và cách đã cân nhắc xử lý vào báo cáo.
 
-Ưu tiên giữ nguyên mạch **bài kiến thức** cùng ví dụ và bài luyện của nó. Pack là đơn vị truy nguồn. Khi nhiều ý chung một track, có thể chia theo ranh giới sư phạm nếu ghi được đích cho từng phần. Một chuyên đề có thể nhận nhiều bài còn nguyên mạch từ các sách khác nhau. Các ví dụ đổi bối cảnh vẫn dùng được trong chuyên đề. Flow đề xuất để chủ dự án duyệt ở [kế hoạch V7](../../../kaiwa_skill/planning/v7/PLAN.md#flow-đề-xuất-để-duyệt).
+Chọn chất liệu ở mức ý học, cặp tương phản hoặc đoạn đối đáp đủ nghĩa. Pack là đơn vị truy nguồn. Xây một mạch giảng theo các quyết định người nói phải đưa ra trong cuộc thoại. Đặt lời giảng và ví dụ của các sách ngay ở bước chúng giải thích được; giữ liền các lượt phụ thuộc nhau. Khi chia một mục, ghi đích riêng cho các nghĩa, sắc thái, ví dụ hoặc bài tập còn lại. Ghi rõ tác quyền biên soạn ở đoạn nối hoặc hội thoại minh họa mới. Xem [khảo sát và bài minh họa](../../../kaiwa_skill/planning/v7/NGHIEN_CUU_8_SACH.md). Các ví dụ đổi bối cảnh vẫn dùng được trong chuyên đề. Flow đề xuất để chủ dự án duyệt ở [kế hoạch V7](../../../kaiwa_skill/planning/v7/PLAN.md#flow-đề-xuất-để-duyệt).
 
 - Viết thử một câu mục tiêu quan sát được, chẳng hạn *khi nghe lời nhờ chưa rõ phạm vi, người học biết hỏi lại mà vẫn thể hiện thiện chí*. Thử giải thích mỗi bài nguồn đóng góp gì cho mục tiêu. Có thể gom khác sách, khác bối cảnh hoặc giữ chuyên đề một sách khi bài gốc đã đủ mạch. Tên learner bằng tiếng Việt tự nhiên, diễn tả được việc người học làm được.
 - Khi hai ứng viên cùng tên, đối chiếu vai, mức thân mật, hậu quả khi dùng sai và thao tác nghe–đáp. Gộp nếu học chung giúp thấy khác biệt cần thiết. Tách khi người học phải chuyển sang một năng lực khác hoặc một quan hệ vượt xa độ khó hiện tại. Chuyên đề sau được dùng lại nguồn nếu thêm một nhiệm vụ giao tiếp hoặc sắc thái có ý nghĩa. Ghi sự tiến triển trong quyết định nội bộ.
@@ -30,7 +30,7 @@ Mục tiêu bao phủ toàn bộ kiến thức dạy được của chín sách 
 
 ## Phân công và phục hồi
 
-Khi được giao chạy nhiều worker, lượt đọc chia theo sách để giảm số lần đọc lại. Root đối chiếu ứng viên cả chín sách trước khi chia lượt bố trí theo level. Mỗi worker ghi vào phạm vi riêng. Root sở hữu registry, thứ tự xen chặng, build và Git. Lưu quyết định hoàn tất bằng tệp tạm rồi thay thế nguyên tử. Khôi phục bằng cách đối chiếu trạng thái và hash, làm tiếp phần còn thiếu hoặc bị ảnh hưởng.
+Khi được giao chạy nhiều worker, lượt đọc chia theo sách để giảm số lần đọc lại. Root đối chiếu ứng viên cả tám sách trước khi chia lượt bố trí theo level. Mỗi worker ghi vào phạm vi riêng. Root sở hữu registry, thứ tự xen chặng, build và Git. Lưu quyết định hoàn tất bằng tệp tạm rồi thay thế nguyên tử. Khôi phục bằng cách đối chiếu trạng thái và hash, làm tiếp phần còn thiếu hoặc bị ảnh hưởng.
 
 Khi chỉnh một chuyên đề, dùng UID để tìm nguồn và các chặng vận dụng, cập nhật lý do và so lại các hàng xóm ở cả vị trí cũ lẫn mới. Khi nguồn thay đổi, rà các chuyên đề cùng tham chiếu nguồn đó. Dựng lại thứ tự và chỉ mục từ quyết định đã lưu.
 
