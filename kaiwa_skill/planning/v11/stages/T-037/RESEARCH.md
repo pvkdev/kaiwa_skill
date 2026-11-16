@@ -34,3 +34,7 @@
 ## Còn mở
 
 - Biên tập độc lập chưa thực hiện.
+
+## Rà độc lập — /root/dc_all_trung (2026-11-16)
+
+Đọc lại đủ 16 cảnh Nhật/Việt và các nhánh E01–E04; đối chiếu ba trang Japan Pension Service nêu trên. S005 sửa “xác minh người” thành “xác minh danh tính”; S010/S012 sửa bản Việt của 失業 thành “thất nghiệp”, tránh nhầm với tạm nghỉ. S009 là tình huống tạm nghỉ riêng; S011/S012 nối S010. Không còn lỗi mở.

@@ -38,4 +38,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 20 cảnh Nhật–Việt và năm sự kiện, gồm các nhánh nối. Đối chiếu B08 và hướng dẫn chính thức của Shinjuku về khai chuyển đến `https://www.foreign.city.shinjuku.lg.jp/en/wp-content/uploads/sites/3/2025/03/2todoke_e2025.pdf`, thủ tục bảo hiểm `https://www.city.shinjuku.lg.jp/hoken/file02_02_00001.html` và hai giấy cư trú `https://www.foreign.city.shinjuku.lg.jp/jp/kurashi/jyuminhyoutsushi/`; quầy và khung giờ trong thoại chỉ là 青葉 hư cấu.
+- S006 u02 VI: làm rõ tên trên hồ sơ viết đúng nhưng nhân viên đọc nhầm; trước đây câu “chữ viết đúng, cách đọc là Nguyễn Anh” dễ hiểu thành đổi chữ viết, không phải sửa cách gọi.
+- Checker xác nhận bản thoại 20 cảnh và phiếu rà 20 cảnh/5 sự kiện; cập nhật hash thoại, cảnh sửa và ba nguồn web trong `status.json`.

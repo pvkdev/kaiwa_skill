@@ -37,4 +37,10 @@ Rà catalog27 SOURCE_LABELS về 窓口/問い合わせ, đọc B04 Unit23 dòng
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 20 cảnh Nhật–Việt và năm sự kiện. Đối chiếu B04 và hướng dẫn 出入国在留管理庁 về trạng thái hồ sơ `https://www.moj.go.jp/isa/content/001369280.pdf`, yêu cầu bổ sung `https://www.moj.go.jp/isa/content/001452663.pdf`, và việc không trả lời hỏi tiến độ cá nhân `https://www.moj.go.jp/isa/10_00210.html`. Cập nhật nguồn bổ sung sang tài liệu hiện truy xuất được, thêm nguồn tiến độ chính thức.
+- S016: sửa tình huống hỏi quầy về tiến độ riêng thành người nộp trực tuyến tự xem “審査中” rồi hỏi ý nghĩa; quầy giải thích đang xét và chờ thông báo, không hứa ngày hay coi đó là được phép. Các nhánh bổ sung giấy vẫn tách việc nhận giấy với kết quả.
+- Checker xác nhận bản thoại 20 cảnh và phiếu rà 20 cảnh/5 sự kiện; cập nhật hash thoại, cảnh sửa và nguồn web trong `status.json`.

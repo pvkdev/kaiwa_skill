@@ -33,4 +33,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 16 cảnh Nhật–Việt và bốn sự kiện, gồm nhánh khác tên giấy và phân biệt hồ sơ trước sang với khai địa chỉ sau sang. Đối chiếu B04, danh sách giấy 家族滞在 của ISA `https://www.moj.go.jp/isa/content/001404137.pdf` và hướng dẫn Shinjuku `https://www.foreign.city.shinjuku.lg.jp/en/wp-content/uploads/sites/3/2025/03/2todoke_e2025.pdf`; hồ sơ cụ thể vẫn cần nơi phụ trách xác định.
+- S013 u04–u05: trong cuộc gọi, nhân viên chỉ ghi thông tin và hẹn xem giấy ở lần sau, không nói đã xem tài liệu vật lý ngay qua điện thoại. S015 u02: sửa “giấy đã nộp” thành giấy đang chuẩn bị; S012 và S016 khẳng định chưa nộp đơn.
+- Checker xác nhận bản thoại 16 cảnh và phiếu rà 16 cảnh/4 sự kiện; cập nhật hash thoại, hai cảnh sửa và hai nguồn web trong `status.json`.

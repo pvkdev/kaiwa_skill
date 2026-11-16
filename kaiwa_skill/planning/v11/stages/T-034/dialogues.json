@@ -12,10 +12,10 @@
     },
     "isa_add": {
       "kind": "web",
-      "title": "ISA: 8 申請の後に行うこと",
-      "url": "https://www.moj.go.jp/isa/content/001452665.pdf",
+      "title": "ISA: 7 申請の後に行うこと — 追加資料・修正依頼",
+      "url": "https://www.moj.go.jp/isa/content/001452663.pdf",
       "accessed": "2026-11-16",
-      "use_vi": "Mục 8.2: khi được yêu cầu sửa/bổ sung, làm theo thông báo và kênh nêu trong đó; áp dụng minh họa thận trọng."
+      "use_vi": "Mục 7.2: khi có yêu cầu bổ sung/sửa, làm theo thông báo; không suy ra việc đã nhận tài liệu là đã xét xong."
     },
     "isa_status": {
       "kind": "web",
@@ -23,6 +23,13 @@
       "url": "https://www.moj.go.jp/isa/content/001369280.pdf",
       "accessed": "2026-11-16",
       "use_vi": "Phần 4, trạng thái 申請完了 là đã gửi và sẽ xét, 審査中 đang xét; không suy nhận chấp thuận từ tiếp nhận."
+    },
+    "isa_progress": {
+      "kind": "web",
+      "title": "ISA: 在留諸申請の進捗状況の確認について",
+      "url": "https://www.moj.go.jp/isa/10_00210.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Không hỏi tiến độ riêng bằng điện thoại; nếu nộp trực tuyến, tự xem trạng thái hệ thống và đợi thông báo kết quả."
     }
   },
   "dialogues": [
@@ -1103,7 +1110,7 @@
     {
       "situation_uid": "888f5084-4489-5916-8ea6-a9a21d07d633",
       "event_id": "E04",
-      "context_vi": "Bạn hỏi quầy tư vấn Nyukan về hồ sơ đã được nhận nhưng vẫn chưa có thông báo kết quả.",
+      "context_vi": "Bạn đã nộp hồ sơ Nyukan trực tuyến và thấy trạng thái “đang xét” nhưng chưa có thông báo kết quả; bạn hỏi quầy tư vấn ý nghĩa của trạng thái này.",
       "speakers": [
         {
           "id": "a",
@@ -1120,32 +1127,32 @@
         {
           "id": "888f5084-4489-5916-8ea6-a9a21d07d633-u01",
           "speaker_id": "a",
-          "ja": "受付番号の案件について、まだ結果の通知がありません。今、確認できる状態と、次に連絡する目安を教えてください。",
-          "vi": "Hồ sơ số này tôi chưa nhận thông báo kết quả. Xin cho biết hiện kiểm được trạng thái nào và khi nào nên hỏi lại."
+          "ja": "在留申請オンラインシステムに「審査中」とあります。まだ結果の通知がありませんが、これはどういう段階ですか。",
+          "vi": "Hệ thống nộp hồ sơ trực tuyến ghi “đang xét”. Tôi chưa có thông báo kết quả; đây là bước nào ạ?"
         },
         {
           "id": "888f5084-4489-5916-8ea6-a9a21d07d633-u02",
           "speaker_id": "b",
-          "ja": "本人確認後、案内できる範囲の状況を確認します。結果の日付はここでは約束できません。",
-          "vi": "Sau khi xác minh người, tôi sẽ kiểm phần trạng thái có thể báo. Ở đây không hứa ngày có kết quả."
+          "ja": "審査中は、入管が申請内容を確認している段階です。結果の日付はここでは約束できません。",
+          "vi": "“Đang xét” nghĩa là cơ quan đang xem hồ sơ. Ở đây chúng tôi không thể hứa ngày có kết quả."
         },
         {
           "id": "888f5084-4489-5916-8ea6-a9a21d07d633-u03",
           "speaker_id": "a",
-          "ja": "分かりました。確認できる範囲で、追加連絡が必要かも教えてください。",
-          "vi": "Tôi hiểu. Trong phạm vi kiểm được, xin báo tôi có cần liên hệ thêm không."
+          "ja": "分かりました。結果はどのように知らせてもらえますか。",
+          "vi": "Tôi hiểu. Kết quả sẽ được báo bằng cách nào?"
         },
         {
           "id": "888f5084-4489-5916-8ea6-a9a21d07d633-u04",
           "speaker_id": "b",
-          "ja": "今は審査中と表示されています。通知が届かないまま状況が変われば、受付番号を持ってお問い合わせください。",
-          "vi": "Hiện hiển thị đang xét. Nếu tình hình đổi mà chưa có thông báo, xin hỏi kèm số hồ sơ."
+          "ja": "申請方法に応じて、はがきやメールなどで通知されます。通知が届くまでお待ちください。",
+          "vi": "Tùy cách nộp, kết quả sẽ được báo bằng bưu thiếp hoặc email. Xin chờ thông báo."
         },
         {
           "id": "888f5084-4489-5916-8ea6-a9a21d07d633-u05",
           "speaker_id": "a",
-          "ja": "分かりました。結果はまだ待ちます。",
-          "vi": "Tôi hiểu. Tôi sẽ tiếp tục chờ kết quả."
+          "ja": "分かりました。「審査中」を許可と考えず、通知を待ちます。",
+          "vi": "Tôi hiểu. Tôi sẽ không coi “đang xét” là đã được chấp thuận mà chờ thông báo."
         }
       ],
       "admin": {

@@ -37,4 +37,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 20 cảnh Nhật–Việt và năm sự kiện, gồm các nhánh nối. Đối chiếu thông tin chính thức Shinjuku về năm thu nhập trước và 普通徴収 `https://www.city.shinjuku.lg.jp/hoken/file04_04_00001.html`, phân công đầu mối thuế thành phố `https://www.city.shinjuku.lg.jp/hoken/file04_08_00001.html`, và hướng dẫn 国税庁 về quốc thuế/địa phương `https://www.nta.go.jp/taxes/shiraberu/sodan/denwa-sodan/case1.htm`.
+- Không có lỗi cần sửa. Các cảnh tách năm tài chính khỏi năm thu nhập, thuế cư dân khỏi thuế thu nhập, và không tự kết luận số tiền khi thiếu giấy lương công ty cũ.
+- Checker xác nhận bản thoại 20 cảnh và phiếu rà 20 cảnh/5 sự kiện; cập nhật hash ba nguồn web trong `status.json`.
