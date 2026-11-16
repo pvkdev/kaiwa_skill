@@ -1,5 +1,7 @@
 # Dữ liệu phân bổ V7
 
+Bộ dựng hiện có ở `tools/roadmap_v7.py`. Sau khi đã phát hành, đọc `DECISION_REGISTRY.json`, các decision và inventory đã commit. Sửa chuyên đề qua tệp decision có UID rồi chạy `py -X utf8 tools/roadmap_v7.py --publish`; `tools/build_review_site.py` cũng route theo CURRENT_ROADMAP.json. Các bản trích nguyên pack ở `materials/`, manifest nguồn trong `admin/`, chỉ mục ngược `SOURCE_INDEX.json`. Tham số `--from-workers` dành cho lượt ghép từ checkpoint worker; khi tiếp quản release đã chốt dùng dữ liệu canonical đã commit.
+
 Đây là thiết kế cho pha chạy V7. Trong các đường dẫn dưới đây, `planning/` nằm trong `kaiwa_skill/`. Đường dẫn nguồn lưu trong dữ liệu dùng đường dẫn tương đối từ gốc repo, UTF-8.
 
 B05 là nguồn tham khảo cho kiến thức tình huống dịch vụ. Tập khóa kiểm kê chuyên đề V7 lấy từ B06/B07/B11/B12/B18/B19/B20/B24. Lọc bằng book_id trước khi đối chiếu với hồ sơ V6.4.

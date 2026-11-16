@@ -302,6 +302,11 @@ if (["6.4", "6.5"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (course.version === "6.5") delete types.reading;
+if (course.version === "7.0") {
+  delete types.speak_video;
+  delete types.speak_shadow;
+  types.reading.label = "Kiến thức Speak Japanese";
+}
 const byId = new Map(course.stages.map(stage => [stage.uid, stage]));
 const stageLists = Object.fromEntries(levels.map(level => [level, course.stages.filter(s => s.level === level)]));
 const $ = id => document.getElementById(id);
@@ -351,13 +356,15 @@ function nodesFor(stage) {
   const selections = new Map(stage.selections.map(s => [s.book_id + "/" + s.pack_id, s]));
   const result = [];
   for (const item of stage.order) {
-    const selection = item.pack_id ? selections.get(item.book_id + "/" + item.pack_id) : null;
+    const selection = item.selection_id ? stage.selections.find(s => s.id === item.selection_id) :
+      item.pack_id ? selections.get(item.book_id + "/" + item.pack_id) : null;
     let kind, title;
     switch (item.type) {
       case "vocabulary_topics": kind = "vocabulary"; title = "Từ vựng theo chủ đề"; break;
       case "speak_japanese_video": kind = "speak_video"; title = selection.title; break;
       case "speak_japanese_examples": kind = selection.support ? "reading" : "speak_shadow"; title = selection.title; break;
       case "independent_shadowing": kind = selection.support ? "reading" : "shadowing"; title = selection.title; break;
+      case "source_pack": kind = "reading"; title = selection.title; break;
       case "merged_shadowing": kind = "shadowing"; title = "Shadowing tổng hợp"; break;
       case "stage_lecture": kind = "lecture"; title = "Kiến thức tổng hợp của chặng"; break;
       case "v5_situations": kind = "situations"; title = "Các tình huống thực hành"; break;
@@ -417,7 +424,7 @@ function renderNavigation() {
       cluster = stage.cluster_id;
     }
     const item = button("", () => navigate(stage.uid), "stage-button");
-    item.append(make("span", "stage-number", String(stage.number).padStart(2, "0")), make("span", "", stage.title));
+    item.append(make("span", "stage-number", stage.stage_kind === "speak_japanese" ? "♫" : String(stage.number).padStart(2, "0")), make("span", "", stage.title));
     if (stage.uid === current.uid) item.setAttribute("aria-current", "page");
     group.append(item);
   }
@@ -434,7 +441,7 @@ function renderHeading() {
   const breadcrumb = make("div", "breadcrumb");
   breadcrumb.append(document.createTextNode("Lộ trình"), make("span", "", "/"), document.createTextNode(current.cluster));
   const hero = make("section", "stage-hero");
-  hero.append(make("p", "stage-kicker", "Chặng " + String(current.number).padStart(2, "0")));
+  hero.append(make("p", "stage-kicker", (current.stage_kind === "speak_japanese" ? "Speak Japanese · Chặng " : "Chặng ") + String(current.number).padStart(2, "0")));
   hero.append(make("h1", "", current.title), make("p", "objective", current.objective));
   const meta = make("div", "stage-meta");
   meta.append(button("Đọc chặng này ↗", () => {
@@ -442,8 +449,10 @@ function renderHeading() {
       !section.hidden && ["reading", "shadowing", "speak_shadow"].includes(section.dataset.kind));
     if (first) { first.open = true; first.scrollIntoView({ behavior: "smooth", block: "start" }); }
   }, "accent-button"));
-  const materialCount = current.shadowing ? current.shadowing.items.length + " câu / đoạn shadowing" : current.selections.length + " bài bổ trợ";
-  meta.append(make("span", "", materialCount), make("span", "", current.situations.length + " tình huống"));
+  const materialCount = current.shadowing ? current.shadowing.items.length + " câu / đoạn shadowing" :
+    current.selections.length + (current.stage_kind === "speak_japanese" ? " pack kiến thức" : " bài bổ trợ");
+  meta.append(make("span", "", materialCount));
+  if (current.stage_kind !== "speak_japanese") meta.append(make("span", "", current.situations.length + " tình huống"));
   const link = make("a", "", "Liên kết chặng");
   link.href = "#stage=" + current.uid;
   meta.append(link);
