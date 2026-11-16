@@ -26,6 +26,8 @@ Viết từng sự kiện. Chọn đúng hai vai trong số những người có
 
 Dịch Việt theo ý, mức lịch sự và quan hệ. Đọc nguyên bản Việt một lần độc lập. Bỏ văn viết, xưng hô mơ hồ, dịch sát chữ làm lệch ý hoặc biến lời lưỡng lự thành cam kết. Tiếng Nhật dành cho hiển thị/TTS, giữ kanji tự nhiên. Mỗi câu nói có hai chuỗi riêng `ja`, `vi`. Nguồn, mã nội bộ và tên level nằm trong dữ liệu quản trị.
 
+Khi đọc lại, kiểm tra những gì mỗi người thực sự biết tại lượt đang nói. “Đã chuyển tài liệu” chỉ xác nhận việc chuyển; cần có thông tin người nhận đã xem trước khi suy ra họ đã đọc. Trong cuộc thoại có chuyển lời hoặc đổi quan hệ nội bộ–đối ngoại, rà kính ngữ của cả hai nhân vật. Nếu cảnh hỏi giá, lịch hoặc điều kiện, cho người học nhận đủ câu trả lời để thực hiện bước của cảnh đó. Có thể dùng mức giá hay giờ giả định được ghi rõ trong bối cảnh. Cảnh đang chờ trả lời cần chốt đầu mối hoặc cách hỏi lại. Giữ địa bàn và dịch vụ thực tế trong bối cảnh để học viên hiểu phạm vi của lời nhân viên.
+
 ## Dữ liệu, checkpoint và nghiệm thu
 
 Đọc [hợp đồng bản thảo](references/draft.md) khi tạo hoặc sửa file. Mỗi chặng có một worker sở hữu. Lưu bản thảo và tiến độ sau từng sự kiện, ghi UID đã soạn, UID đã rà, dấu vân tay của đầu vào, điều còn nghi ngờ và việc tiếp theo. Ghi vào file tạm rồi thay thế nguyên tử. Khi phục hồi, mở lại file, so đầu vào, giữ phần đã duyệt và rà lại các cảnh phụ thuộc đoạn nguồn vừa đổi. Lệnh `--check` dùng cho chặng đã soạn đủ.
