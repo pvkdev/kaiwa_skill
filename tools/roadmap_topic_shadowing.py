@@ -3,6 +3,8 @@ import argparse
 import copy
 import hashlib
 import json
+import re
+import unicodedata
 from pathlib import Path
 
 import roadmap_v6 as old
@@ -43,7 +45,7 @@ def validate(stage, decision):
             assert speaker['gender'] in ('male', 'female') and speaker['role_vi']
             assert speaker['gender_basis'] in ('source', 'editorial_cast')
         turns = item['turns']
-        assert len(turns) == 1 if item['type'] == 'single_sentence' else len(turns) >= 2
+        assert (len(turns) == 1 if item['type'] == 'single_sentence' else len(turns) >= 2)
         assert len({t['speaker_id'] for t in turns}) >= (1 if item['type'] == 'single_sentence' else 2)
         for turn in turns:
             assert turn['speaker_id'] in speakers and turn['ja'].strip() and turn['vi'].strip()
@@ -52,16 +54,41 @@ def validate(stage, decision):
                 path = ref['material_path']
                 assert path in materials, f'{code}: unexpected material {path}'
                 assert ref['book_id'] == materials[path]['book_id'] and ref['book_title'] == materials[path]['book_title']
+                original = materials[path]
+                parts = [original, *original.get('extra_parts', [])]
+                assert any(ref['source_path'] == p['path'] and
+                           ref['source_start_line'] == p['start_line'] and
+                           ref['source_end_line'] == p['end_line'] for p in parts), f'{code}: locator mismatch'
                 raw = (BASE / path).read_text(encoding='utf-8-sig')
                 assert ref['quote_ja'] and ref['quote_ja'] in raw, f'{code}: quote not found {ref["quote_ja"]}'
-        key = tuple(t['ja'].strip() for t in turns)
+            assert not re.search(r'<[^>]+>|\{\{|[／/]', turn['ja']), f'{code}: TTS markup or alternative'
+        key = tuple(''.join(c for c in unicodedata.normalize('NFKC', t['ja'])
+                            if not c.isspace() and not unicodedata.category(c).startswith('P')) for t in turns)
         assert key not in seen_text, f'{code}: duplicate item'
         seen_text.add(key)
     for review in reviews:
         assert review['disposition'] in ('selected', 'knowledge_only', 'off_topic', 'unusable')
         assert review.get('reason')
         assert set(review.get('item_ids', [])) <= seen_ids
+        used = {i['id'] for i in decision['items'] for t in i['turns'] for r in t['source_refs'] if r['material_path'] == review['material_path']}
+        assert used == set(review.get('item_ids', [])), f'{code}: review item mapping'
+        assert (review['disposition'] == 'selected') == bool(used), f'{code}: disposition mismatch'
     return True
+
+
+def audit():
+    stages = {s['display_code']: s for s in old.rows(BASE / 'KAIWA_CHANG_V6_3.jsonl')}
+    errors = []
+    paths = sorted((PLANNING/'v6_5/decisions').glob('*.json'))
+    for path in paths:
+        try:
+            validate(stages[path.stem], old.read(path))
+        except Exception as error:
+            errors.append({'stage': path.stem, 'error': str(error), 'type': type(error).__name__})
+    result = {'checked': len(paths), 'missing': sorted(set(stages) - {p.stem for p in paths}), 'errors': errors}
+    write(PLANNING/'v6_5/AUDIT.json', result)
+    print(json.dumps({'checked': len(paths), 'missing_count': len(result['missing']), 'errors': errors}, ensure_ascii=False))
+    return result
 
 
 def learner_items(decision):
@@ -83,6 +110,10 @@ def build(version, publish=False):
         code = stage['display_code']
         data = stage['v6']
         selections = data['decision']['selections']
+        snapshot_manifest = old.read(BASE / 'stages' / code / 'manifest.json') if selections else {'materials': []}
+        snapshot_hashes = {m['file']: m['sha256'] for m in snapshot_manifest['materials']}
+        for selection in selections:
+            assert digest(BASE / selection['material_path']) == snapshot_hashes[Path(selection['material_path']).name], f'{code}: snapshot hash changed'
         record = {'stage_uid': stage['uid'], 'display_code': code,
                   'baseline': '../v6_3/KAIWA_CHANG_V6_3.jsonl',
                   'hidden_speak_japanese': [s for s in selections if s['book_id'] in SJ],
@@ -145,6 +176,20 @@ def build(version, publish=False):
     text += f"Ẩn mềm {report['hidden_speak_japanese_placements']} lượt Speak Japanese; hồ sơ admin giữ nguồn, nội dung cũ qua đường dẫn tương đối V6.3 và hash.\n\n"
     if version == '6.5':
         text += f'{active} chặng có một node shadowing; {len(stages)-active} chặng không có nội dung phù hợp. Tổng {total_items} câu/đoạn, {total_turns} lượt nói Nhật–Việt có vai và giọng male/female.\n\n'
+        counts = {}
+        for a in admin:
+            for r in a['curation']['source_review']:
+                disposition = r['disposition']
+                counts[disposition] = counts.get(disposition, 0) + 1
+        report['material_review'] = counts
+        report['editorial_gender_casting'] = sum(s['gender_basis'] == 'editorial_cast' for a in admin for i in a['curation']['items'] for s in i['speakers'])
+        write(directory / 'STATUS.json', report)
+        text += 'Kết quả rà material: ' + ', '.join(f'{k} {v}' for k, v in counts.items()) + '.\n\n'
+        text += 'Mỗi chặng bên dưới có thống kê riêng để review. Trống là quyết định tuyển chọn, không phải bài lỗi hoặc nhiệm vụ phải lấp đầy.\n\n'
+        for a in admin:
+            items = a['curation']['items']
+            text += f"- {a['display_code']}: {len(items)} câu/đoạn, {sum(len(i['turns']) for i in items)} lượt nói.\n"
+        text += '\n'
     text += 'Kiến thức kèm shadowing lưu ở admin; learner preview không nhúng metadata nguồn. Giới tính không có căn cứ gốc được phân giọng biên tập và ghi editorial_cast. Video chặng và các phần tình huống/challenge/free talk vẫn là khung. V7 chưa triển khai.\n'
     (directory / ('REPORT_V' + version.replace('.', '_') + '.md')).write_text(text, encoding='utf8')
     payload = {'version': version, 'stages': entries, 'content': rendered, 'branches': old.BRANCH}
@@ -161,7 +206,10 @@ def build(version, publish=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('version', choices=['6.4', '6.5'])
+    parser.add_argument('version', choices=['6.4', '6.5', 'audit'])
     parser.add_argument('--publish', action='store_true')
     args = parser.parse_args()
-    build(args.version, args.publish)
+    if args.version == 'audit':
+        audit()
+    else:
+        build(args.version, args.publish)

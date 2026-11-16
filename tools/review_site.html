@@ -295,6 +295,11 @@ const types = {
   challenge: { label: "Challenge Live AI", icon: "ϟ" },
   free: { label: "Free Kaiwa", icon: "✦" }
 };
+if (["6.4", "6.5"].includes(course.version)) {
+  delete types.speak_video;
+  delete types.speak_shadow;
+}
+if (course.version === "6.5") delete types.reading;
 const byId = new Map(course.stages.map(stage => [stage.uid, stage]));
 const stageLists = Object.fromEntries(levels.map(level => [level, course.stages.filter(s => s.level === level)]));
 const $ = id => document.getElementById(id);
@@ -435,7 +440,8 @@ function renderHeading() {
       !section.hidden && ["reading", "shadowing", "speak_shadow"].includes(section.dataset.kind));
     if (first) { first.open = true; first.scrollIntoView({ behavior: "smooth", block: "start" }); }
   }, "accent-button"));
-  meta.append(make("span", "", current.selections.length + " bài bổ trợ"), make("span", "", current.situations.length + " tình huống"));
+  const materialCount = current.shadowing ? current.shadowing.items.length + " câu / đoạn shadowing" : current.selections.length + " bài bổ trợ";
+  meta.append(make("span", "", materialCount), make("span", "", current.situations.length + " tình huống"));
   const link = make("a", "", "Liên kết chặng");
   link.href = "#stage=" + current.uid;
   meta.append(link);
