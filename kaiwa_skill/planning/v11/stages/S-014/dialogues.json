@@ -1,0 +1,1225 @@
+{
+  "stage_uid": "69b6ea4c-5fa0-5209-b276-404ab770dd0d",
+  "admin_sources": {
+    "rail": {
+      "kind": "book",
+      "book_id": "B27",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "path": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/09-bai-08-eki-de.md",
+      "start_line": 19,
+      "end_line": 85,
+      "use_vi": "Cách hỏi vé, giờ tàu, ga và chỗ ngồi tại quầy."
+    },
+    "direction": {
+      "kind": "book",
+      "book_id": "B08",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "path": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700/chapters/04-part4-bamen.md",
+      "start_line": 8,
+      "end_line": 35,
+      "use_vi": "Hỏi hướng đi, nơi lên và nơi chuyển phương tiện."
+    },
+    "taxi": {
+      "kind": "book",
+      "book_id": "B08",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "path": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700/chapters/04-part4-bamen.md",
+      "start_line": 37,
+      "end_line": 64,
+      "use_vi": "Nói điểm xuống, mốc đường và nhờ tài xế dừng."
+    },
+    "hayabusa": {
+      "kind": "web",
+      "title": "JR East — Tohoku Shinkansen train configuration",
+      "url": "https://www.jreast.co.jp/multi/routemaps/tohokushinkansen.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Mục Hayabusa/Hayate ghi toàn bộ ghế đặt trước; áp dụng riêng dịch vụ này."
+    },
+    "sendai": {
+      "kind": "web",
+      "title": "JR East — Sendai Station information",
+      "url": "https://www.jreast.co.jp/estation/station/info.aspx?StationCd=913",
+      "accessed": "2026-11-16",
+      "use_vi": "Trang ga xác nhận có quầy hỗ trợ và tủ gửi đồ; đường đi chi tiết trong thoại là chỉ dẫn của nhân vật."
+    },
+    "bus": {
+      "kind": "web",
+      "title": "JR Bus Kanto — FAQ",
+      "url": "https://www.jrbuskanto.co.jp/jwp/faq",
+      "accessed": "2026-11-16",
+      "use_vi": "Giờ khởi hành sau điểm nghỉ do tài xế thông báo; các giờ trong thoại là chuyến hư cấu."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "6361581b-7360-58ab-88a1-5c80efbbe827",
+      "event_id": "E01",
+      "context_vi": "Tại quầy JR East ở ga Tokyo, bạn muốn đến Sendai vào ngày 20 tháng 11. Bạn hỏi chuyến Hayabusa buổi sáng; giờ trong đoạn là ví dụ, không phải lịch chạy thật.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên vé",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6361581b-7360-58ab-88a1-5c80efbbe827-u01",
+          "speaker_id": "a",
+          "ja": "二十日に仙台へ行きたいです。朝のはやぶさはありますか。",
+          "vi": "Tôi muốn đi Sendai ngày 20. Có chuyến Hayabusa buổi sáng không ạ?"
+        },
+        {
+          "id": "6361581b-7360-58ab-88a1-5c80efbbe827-u02",
+          "speaker_id": "b",
+          "ja": "はい。九時半の便はいかがですか。",
+          "vi": "Có. Chuyến 9 giờ rưỡi được không ạ?"
+        },
+        {
+          "id": "6361581b-7360-58ab-88a1-5c80efbbe827-u03",
+          "speaker_id": "a",
+          "ja": "その便を見せてください。",
+          "vi": "Cho tôi xem chuyến đó ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rail",
+          "hayabusa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6361581b-7360-58ab-88a1-5c80efbbe827-u01": {
+            "kind": "original_extension"
+          },
+          "6361581b-7360-58ab-88a1-5c80efbbe827-u02": {
+            "kind": "original_extension"
+          },
+          "6361581b-7360-58ab-88a1-5c80efbbe827-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c6a852d2-2006-5ee0-a98d-1bcb2666c3eb",
+      "event_id": "E01",
+      "context_vi": "Tại quầy JR East, bạn định đi Hayabusa từ Tokyo đến Sendai và muốn biết có phải đặt ghế không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên vé",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c6a852d2-2006-5ee0-a98d-1bcb2666c3eb-u01",
+          "speaker_id": "a",
+          "ja": "はやぶさは、席の予約がいりますか。",
+          "vi": "Đi Hayabusa có cần đặt ghế không ạ?"
+        },
+        {
+          "id": "c6a852d2-2006-5ee0-a98d-1bcb2666c3eb-u02",
+          "speaker_id": "b",
+          "ja": "はい、全席指定です。",
+          "vi": "Vâng, toàn bộ là ghế đặt trước."
+        },
+        {
+          "id": "c6a852d2-2006-5ee0-a98d-1bcb2666c3eb-u03",
+          "speaker_id": "a",
+          "ja": "では、一席お願いします。",
+          "vi": "Vậy cho tôi đặt một ghế."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rail",
+          "hayabusa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c6a852d2-2006-5ee0-a98d-1bcb2666c3eb-u01": {
+            "kind": "original_extension"
+          },
+          "c6a852d2-2006-5ee0-a98d-1bcb2666c3eb-u02": {
+            "kind": "original_extension"
+          },
+          "c6a852d2-2006-5ee0-a98d-1bcb2666c3eb-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3489c6a5-341a-5401-b5f1-2e892192568f",
+      "event_id": "E01",
+      "context_vi": "Trong tình huống vé giả định, chuyến Hayabusa 9:30 bạn muốn đã hết chỗ. Nhân viên gợi chuyến 10:00 và bạn chọn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên vé",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3489c6a5-341a-5401-b5f1-2e892192568f-u01",
+          "speaker_id": "b",
+          "ja": "九時半は満席です。十時なら空いています。",
+          "vi": "Chuyến 9 giờ rưỡi đã hết ghế. Chuyến 10 giờ còn chỗ."
+        },
+        {
+          "id": "3489c6a5-341a-5401-b5f1-2e892192568f-u02",
+          "speaker_id": "a",
+          "ja": "十時の便にします。仙台まで一枚お願いします。",
+          "vi": "Tôi lấy chuyến 10 giờ. Cho tôi một vé đến Sendai."
+        },
+        {
+          "id": "3489c6a5-341a-5401-b5f1-2e892192568f-u03",
+          "speaker_id": "b",
+          "ja": "かしこまりました。",
+          "vi": "Vâng ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rail",
+          "hayabusa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3489c6a5-341a-5401-b5f1-2e892192568f-u01": {
+            "kind": "original_extension"
+          },
+          "3489c6a5-341a-5401-b5f1-2e892192568f-u02": {
+            "kind": "original_extension"
+          },
+          "3489c6a5-341a-5401-b5f1-2e892192568f-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a3309c2f-0cff-5e51-906a-98ed65fd8026",
+      "event_id": "E01",
+      "context_vi": "Nhân viên vé nói trong ví dụ chuyến Hayabusa rời Tokyo lúc 10:00 và đến Sendai lúc 11:30. Bạn nghe nhầm giờ đến là giờ khởi hành.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên vé",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a3309c2f-0cff-5e51-906a-98ed65fd8026-u01",
+          "speaker_id": "b",
+          "ja": "東京を十時に出て、仙台に十一時半に着きます。",
+          "vi": "Tàu rời Tokyo lúc 10 giờ, đến Sendai lúc 11 giờ rưỡi."
+        },
+        {
+          "id": "a3309c2f-0cff-5e51-906a-98ed65fd8026-u02",
+          "speaker_id": "a",
+          "ja": "すみません。十一時半に東京を出ますか。",
+          "vi": "Xin lỗi, tàu rời Tokyo lúc 11 giờ rưỡi ạ?"
+        },
+        {
+          "id": "a3309c2f-0cff-5e51-906a-98ed65fd8026-u03",
+          "speaker_id": "b",
+          "ja": "いいえ、出るのは十時です。十一時半は着く時間です。",
+          "vi": "Không, tàu đi lúc 10 giờ. 11 giờ rưỡi là giờ đến."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rail"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a3309c2f-0cff-5e51-906a-98ed65fd8026-u01": {
+            "kind": "original_extension"
+          },
+          "a3309c2f-0cff-5e51-906a-98ed65fd8026-u02": {
+            "kind": "original_extension"
+          },
+          "a3309c2f-0cff-5e51-906a-98ed65fd8026-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0035bd32-4026-5c00-9732-745ed9700647",
+      "event_id": "E01",
+      "context_vi": "Tiếp ngay sau khi bạn nhầm giờ đi với giờ đến của vé giả định. Bạn nhắc lại ngày 20, giờ rời Tokyo và ga đến để chốt.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên vé",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0035bd32-4026-5c00-9732-745ed9700647-u01",
+          "speaker_id": "a",
+          "ja": "二十日、十時に東京を出て、仙台に行く便ですね。",
+          "vi": "Ngày 20, chuyến rời Tokyo lúc 10 giờ và đi Sendai nhỉ?"
+        },
+        {
+          "id": "0035bd32-4026-5c00-9732-745ed9700647-u02",
+          "speaker_id": "b",
+          "ja": "はい。仙台には十一時半に着きます。",
+          "vi": "Đúng. Tàu đến Sendai lúc 11 giờ rưỡi."
+        },
+        {
+          "id": "0035bd32-4026-5c00-9732-745ed9700647-u03",
+          "speaker_id": "a",
+          "ja": "わかりました。お願いします。",
+          "vi": "Tôi rõ rồi. Nhờ anh làm vé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rail"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0035bd32-4026-5c00-9732-745ed9700647-u01": {
+            "kind": "original_extension"
+          },
+          "0035bd32-4026-5c00-9732-745ed9700647-u02": {
+            "kind": "original_extension"
+          },
+          "0035bd32-4026-5c00-9732-745ed9700647-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8dbe2e4e-41e2-5c1b-98db-ce5906556d81",
+      "event_id": "E02",
+      "context_vi": "Bạn lên taxi ở Sendai và đưa tài xế địa chỉ một khách sạn hư cấu gần ga, đồng thời cho xem màn hình điện thoại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "tài xế taxi",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8dbe2e4e-41e2-5c1b-98db-ce5906556d81-u01",
+          "speaker_id": "a",
+          "ja": "青葉ホテルまでお願いします。住所はここです。",
+          "vi": "Cho tôi đến khách sạn Aoba. Địa chỉ ở đây ạ."
+        },
+        {
+          "id": "8dbe2e4e-41e2-5c1b-98db-ce5906556d81-u02",
+          "speaker_id": "b",
+          "ja": "はい、見ました。駅の近くですね。",
+          "vi": "Vâng, tôi xem rồi. Gần ga nhỉ."
+        },
+        {
+          "id": "8dbe2e4e-41e2-5c1b-98db-ce5906556d81-u03",
+          "speaker_id": "a",
+          "ja": "お願いします。",
+          "vi": "Nhờ anh."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "taxi"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8dbe2e4e-41e2-5c1b-98db-ce5906556d81-u01": {
+            "kind": "original_extension"
+          },
+          "8dbe2e4e-41e2-5c1b-98db-ce5906556d81-u02": {
+            "kind": "original_extension"
+          },
+          "8dbe2e4e-41e2-5c1b-98db-ce5906556d81-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a3f88581-7c6c-5806-bbce-fbd3644d3dd7",
+      "event_id": "E02",
+      "context_vi": "Bạn đi taxi trong Sendai đến khách sạn Aoba hư cấu, hỏi tài xế ước lượng riêng của chuyến này vì cần báo người đón.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "tài xế taxi",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a3f88581-7c6c-5806-bbce-fbd3644d3dd7-u01",
+          "speaker_id": "a",
+          "ja": "ここから、何分ぐらいですか。",
+          "vi": "Từ đây khoảng bao nhiêu phút ạ?"
+        },
+        {
+          "id": "a3f88581-7c6c-5806-bbce-fbd3644d3dd7-u02",
+          "speaker_id": "b",
+          "ja": "今の道なら、十五分ぐらいです。",
+          "vi": "Theo đường lúc này thì khoảng 15 phút."
+        },
+        {
+          "id": "a3f88581-7c6c-5806-bbce-fbd3644d3dd7-u03",
+          "speaker_id": "a",
+          "ja": "わかりました。友達に連絡します。",
+          "vi": "Tôi rõ rồi. Tôi sẽ báo bạn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "taxi"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a3f88581-7c6c-5806-bbce-fbd3644d3dd7-u01": {
+            "kind": "original_extension"
+          },
+          "a3f88581-7c6c-5806-bbce-fbd3644d3dd7-u02": {
+            "kind": "original_extension"
+          },
+          "a3f88581-7c6c-5806-bbce-fbd3644d3dd7-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "28a371d5-9819-529d-a726-413798be33fb",
+      "event_id": "E02",
+      "context_vi": "Trên chuyến taxi giả định, đường chính đang kẹt. Tài xế gợi đường khác tới khách sạn Aoba; bạn xác nhận vẫn xuống trước cửa chính.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "tài xế taxi",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "28a371d5-9819-529d-a726-413798be33fb-u01",
+          "speaker_id": "b",
+          "ja": "この道は混んでいます。別の道から行きましょうか。",
+          "vi": "Đường này đang đông. Tôi đi đường khác nhé?"
+        },
+        {
+          "id": "28a371d5-9819-529d-a726-413798be33fb-u02",
+          "speaker_id": "a",
+          "ja": "はい。ホテルの正面で降りられますか。",
+          "vi": "Vâng. Tôi vẫn xuống trước cửa chính khách sạn được chứ ạ?"
+        },
+        {
+          "id": "28a371d5-9819-529d-a726-413798be33fb-u03",
+          "speaker_id": "b",
+          "ja": "はい、正面まで行きます。",
+          "vi": "Được, tôi sẽ đi tới cửa chính."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "taxi"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "28a371d5-9819-529d-a726-413798be33fb-u01": {
+            "kind": "original_extension"
+          },
+          "28a371d5-9819-529d-a726-413798be33fb-u02": {
+            "kind": "original_extension"
+          },
+          "28a371d5-9819-529d-a726-413798be33fb-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5a7a724f-aa06-505e-b986-0b7871a39f3c",
+      "event_id": "E02",
+      "context_vi": "Taxi sắp đến khách sạn Aoba hư cấu nhưng bản đồ chỉ cửa sau. Bạn thấy biển cửa chính bên kia góc đường và nhờ tài xế dừng ở mốc đó.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "tài xế taxi",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5a7a724f-aa06-505e-b986-0b7871a39f3c-u01",
+          "speaker_id": "a",
+          "ja": "あ、ここは裏口です。あの青い看板の前で止めてください。",
+          "vi": "À, đây là cửa sau. Anh dừng trước tấm biển xanh kia nhé."
+        },
+        {
+          "id": "5a7a724f-aa06-505e-b986-0b7871a39f3c-u02",
+          "speaker_id": "b",
+          "ja": "角の向こうの看板ですね。",
+          "vi": "Tấm biển qua góc đường nhỉ?"
+        },
+        {
+          "id": "5a7a724f-aa06-505e-b986-0b7871a39f3c-u03",
+          "speaker_id": "a",
+          "ja": "はい、そこです。",
+          "vi": "Vâng, chỗ đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "taxi"
+        ],
+        "specialty_item_ids": [
+          "sj-so-03-b11-75"
+        ],
+        "turn_origins": {
+          "5a7a724f-aa06-505e-b986-0b7871a39f3c-u01": {
+            "kind": "original_extension"
+          },
+          "5a7a724f-aa06-505e-b986-0b7871a39f3c-u02": {
+            "kind": "original_extension"
+          },
+          "5a7a724f-aa06-505e-b986-0b7871a39f3c-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ae139b3a-f011-5dcd-9686-bc9ff5243434",
+      "event_id": "E02",
+      "context_vi": "Tiếp ngay sau khi tài xế cho bạn xuống trước biển xanh của khách sạn Aoba hư cấu. Bạn nhìn biển tên và xác nhận nơi xuống.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "tài xế taxi",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ae139b3a-f011-5dcd-9686-bc9ff5243434-u01",
+          "speaker_id": "b",
+          "ja": "こちらでよろしいですか。",
+          "vi": "Chỗ này được chứ ạ?"
+        },
+        {
+          "id": "ae139b3a-f011-5dcd-9686-bc9ff5243434-u02",
+          "speaker_id": "a",
+          "ja": "はい、青葉ホテルの正面ですね。ありがとうございます。",
+          "vi": "Vâng, đây là cửa chính khách sạn Aoba. Cảm ơn anh."
+        },
+        {
+          "id": "ae139b3a-f011-5dcd-9686-bc9ff5243434-u03",
+          "speaker_id": "b",
+          "ja": "お気をつけて。",
+          "vi": "Chị đi cẩn thận nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "taxi"
+        ],
+        "specialty_item_ids": [
+          "sj-so-03-b11-77"
+        ],
+        "turn_origins": {
+          "ae139b3a-f011-5dcd-9686-bc9ff5243434-u01": {
+            "kind": "original_extension"
+          },
+          "ae139b3a-f011-5dcd-9686-bc9ff5243434-u02": {
+            "kind": "original_extension"
+          },
+          "ae139b3a-f011-5dcd-9686-bc9ff5243434-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "419a47e3-e866-54fd-bd5d-363ad06fab97",
+      "event_id": "E03",
+      "context_vi": "Tại ga Sendai, bạn muốn tìm quầy hỏi xe buýt đường dài. Bạn hỏi nhân viên ga hướng đi, không giả định quầy của một hãng cụ thể.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hướng dẫn ga",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "419a47e3-e866-54fd-bd5d-363ad06fab97-u01",
+          "speaker_id": "a",
+          "ja": "長距離バスの案内はどちらですか。",
+          "vi": "Quầy hỏi xe buýt đường dài ở đâu ạ?"
+        },
+        {
+          "id": "419a47e3-e866-54fd-bd5d-363ad06fab97-u02",
+          "speaker_id": "b",
+          "ja": "東口のほうです。まず、あちらの出口へどうぞ。",
+          "vi": "Về phía cửa đông. Trước tiên chị đi ra lối kia."
+        },
+        {
+          "id": "419a47e3-e866-54fd-bd5d-363ad06fab97-u03",
+          "speaker_id": "a",
+          "ja": "東口ですね。ありがとうございます。",
+          "vi": "Cửa đông nhỉ. Cảm ơn anh."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "direction",
+          "sendai"
+        ],
+        "specialty_item_ids": [
+          "sj-so-03-b18-13"
+        ],
+        "turn_origins": {
+          "419a47e3-e866-54fd-bd5d-363ad06fab97-u01": {
+            "kind": "original_extension"
+          },
+          "419a47e3-e866-54fd-bd5d-363ad06fab97-u02": {
+            "kind": "original_extension"
+          },
+          "419a47e3-e866-54fd-bd5d-363ad06fab97-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "78f3f01c-7fc0-5966-aea1-c7e36bf72f70",
+      "event_id": "E03",
+      "context_vi": "Ở sảnh ga Sendai, bạn hỏi nhân viên cách ra bến taxi và điểm hỏi xe buýt, để chọn phương tiện đi tiếp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên hướng dẫn ga",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "78f3f01c-7fc0-5966-aea1-c7e36bf72f70-u01",
+          "speaker_id": "a",
+          "ja": "タクシー乗り場とバスの案内は、どちらですか。",
+          "vi": "Bến taxi và chỗ hỏi xe buýt ở phía nào ạ?"
+        },
+        {
+          "id": "78f3f01c-7fc0-5966-aea1-c7e36bf72f70-u02",
+          "speaker_id": "b",
+          "ja": "タクシーは右、バスの案内は東口のほうです。",
+          "vi": "Taxi ở bên phải, chỗ hỏi xe buýt về phía cửa đông."
+        },
+        {
+          "id": "78f3f01c-7fc0-5966-aea1-c7e36bf72f70-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。まず東口へ行きます。",
+          "vi": "Cảm ơn anh. Tôi sẽ ra cửa đông trước."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "direction",
+          "sendai"
+        ],
+        "specialty_item_ids": [
+          "sj-so-03-b18-13"
+        ],
+        "turn_origins": {
+          "78f3f01c-7fc0-5966-aea1-c7e36bf72f70-u01": {
+            "kind": "original_extension"
+          },
+          "78f3f01c-7fc0-5966-aea1-c7e36bf72f70-u02": {
+            "kind": "original_extension"
+          },
+          "78f3f01c-7fc0-5966-aea1-c7e36bf72f70-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "af2fa0f5-b2c3-5339-818e-fa8967a1e39f",
+      "event_id": "E03",
+      "context_vi": "Quầy thông tin xe buýt mà bạn định hỏi đã đóng trong câu chuyện. Bạn gặp nhân viên ga còn làm việc và hỏi ai có thể chỉ giúp lối ra.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên ga",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "af2fa0f5-b2c3-5339-818e-fa8967a1e39f-u01",
+          "speaker_id": "a",
+          "ja": "バスの案内が閉まっています。今、誰に聞けばいいですか。",
+          "vi": "Quầy hỏi xe buýt đóng rồi. Bây giờ tôi hỏi ai được ạ?"
+        },
+        {
+          "id": "af2fa0f5-b2c3-5339-818e-fa8967a1e39f-u02",
+          "speaker_id": "b",
+          "ja": "出口のことなら、私に聞いてください。",
+          "vi": "Nếu hỏi lối ra, chị cứ hỏi tôi."
+        },
+        {
+          "id": "af2fa0f5-b2c3-5339-818e-fa8967a1e39f-u03",
+          "speaker_id": "a",
+          "ja": "東口はどちらですか。",
+          "vi": "Cửa đông ở đâu ạ?"
+        },
+        {
+          "id": "af2fa0f5-b2c3-5339-818e-fa8967a1e39f-u04",
+          "speaker_id": "b",
+          "ja": "あちらの階段を下りてください。",
+          "vi": "Chị xuống cầu thang đằng kia nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "direction",
+          "sendai"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "af2fa0f5-b2c3-5339-818e-fa8967a1e39f-u01": {
+            "kind": "original_extension"
+          },
+          "af2fa0f5-b2c3-5339-818e-fa8967a1e39f-u02": {
+            "kind": "original_extension"
+          },
+          "af2fa0f5-b2c3-5339-818e-fa8967a1e39f-u03": {
+            "kind": "original_extension"
+          },
+          "af2fa0f5-b2c3-5339-818e-fa8967a1e39f-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "82b68946-5b62-51a2-bb2d-0cedb34c454d",
+      "event_id": "E03",
+      "context_vi": "Trong lúc chờ chuyến tiếp tại ga Sendai, bạn có vali và hỏi nhân viên ga nơi có tủ gửi đồ. Bạn chỉ hỏi vị trí, chưa giả định còn chỗ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên ga",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "82b68946-5b62-51a2-bb2d-0cedb34c454d-u01",
+          "speaker_id": "a",
+          "ja": "荷物を少し預けたいです。コインロッカーはどちらですか。",
+          "vi": "Tôi muốn gửi đồ một lúc. Tủ gửi đồ ở đâu ạ?"
+        },
+        {
+          "id": "82b68946-5b62-51a2-bb2d-0cedb34c454d-u02",
+          "speaker_id": "b",
+          "ja": "この階の中央口の近くにあります。空きはそこで見てください。",
+          "vi": "Gần cửa trung tâm tầng này. Chị xem còn ô trống tại đó nhé."
+        },
+        {
+          "id": "82b68946-5b62-51a2-bb2d-0cedb34c454d-u03",
+          "speaker_id": "a",
+          "ja": "中央口の近くですね。",
+          "vi": "Gần cửa trung tâm nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "direction",
+          "sendai"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "82b68946-5b62-51a2-bb2d-0cedb34c454d-u01": {
+            "kind": "original_extension"
+          },
+          "82b68946-5b62-51a2-bb2d-0cedb34c454d-u02": {
+            "kind": "original_extension"
+          },
+          "82b68946-5b62-51a2-bb2d-0cedb34c454d-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "37c3ed1d-1d36-5d8d-9839-5a49e4c6db19",
+      "event_id": "E03",
+      "context_vi": "Sau khi đổi từ taxi sang chuyến xe buýt hư cấu khác, bạn gọi cho người bạn nam đang đón ở điểm hẹn để báo mình sẽ tới muộn hơn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bạn đón qua điện thoại",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "37c3ed1d-1d36-5d8d-9839-5a49e4c6db19-u01",
+          "speaker_id": "a",
+          "ja": "バスに変えたので、着くのが少し遅くなります。",
+          "vi": "Tôi đổi sang xe buýt nên sẽ đến muộn một chút."
+        },
+        {
+          "id": "37c3ed1d-1d36-5d8d-9839-5a49e4c6db19-u02",
+          "speaker_id": "b",
+          "ja": "わかった。どこで待てばいい？",
+          "vi": "Tôi hiểu. Tôi đợi ở đâu?"
+        },
+        {
+          "id": "37c3ed1d-1d36-5d8d-9839-5a49e4c6db19-u03",
+          "speaker_id": "a",
+          "ja": "駅の東口で待っていてください。着いたら電話します。",
+          "vi": "Cậu đợi ở cửa đông nhà ga nhé. Tới nơi tôi sẽ gọi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "direction"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "37c3ed1d-1d36-5d8d-9839-5a49e4c6db19-u01": {
+            "kind": "original_extension"
+          },
+          "37c3ed1d-1d36-5d8d-9839-5a49e4c6db19-u02": {
+            "kind": "original_extension"
+          },
+          "37c3ed1d-1d36-5d8d-9839-5a49e4c6db19-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c534947f-19c1-521b-a1c9-a08d8eaf8b61",
+      "event_id": "E04",
+      "context_vi": "Tại bến xe đêm giả định có nhiều điểm đón, bạn cầm vé tuyến do JR Bus Kanto vận hành trong câu chuyện và hỏi điểm tập trung ghi trên vé.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bến",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c534947f-19c1-521b-a1c9-a08d8eaf8b61-u01",
+          "speaker_id": "a",
+          "ja": "今夜のバスは、どこで待ちますか。乗り場が多くて。",
+          "vi": "Xe tối nay tôi đợi ở đâu ạ? Ở đây nhiều điểm lên quá."
+        },
+        {
+          "id": "c534947f-19c1-521b-a1c9-a08d8eaf8b61-u02",
+          "speaker_id": "b",
+          "ja": "切符を見せてください。こちらの三番乗り場です。",
+          "vi": "Cho tôi xem vé. Chị đợi ở điểm lên số 3 bên này."
+        },
+        {
+          "id": "c534947f-19c1-521b-a1c9-a08d8eaf8b61-u03",
+          "speaker_id": "a",
+          "ja": "三番ですね。",
+          "vi": "Số 3 nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "direction",
+          "bus"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c534947f-19c1-521b-a1c9-a08d8eaf8b61-u01": {
+            "kind": "original_extension"
+          },
+          "c534947f-19c1-521b-a1c9-a08d8eaf8b61-u02": {
+            "kind": "original_extension"
+          },
+          "c534947f-19c1-521b-a1c9-a08d8eaf8b61-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "50cedf57-9928-5b41-a7e8-8e1c83b96eae",
+      "event_id": "E04",
+      "context_vi": "Tiếp ngay sau khi bạn hỏi điểm lên số 3. Nhân viên bến của chuyến giả định báo đổi sang điểm số 5 và yêu cầu có mặt lúc 21:20.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên bến",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "50cedf57-9928-5b41-a7e8-8e1c83b96eae-u01",
+          "speaker_id": "b",
+          "ja": "すみません。今夜は五番乗り場に変わりました。九時二十分に来てください。",
+          "vi": "Xin lỗi. Tối nay đổi sang điểm số 5. Chị đến lúc 9 giờ 20 nhé."
+        },
+        {
+          "id": "50cedf57-9928-5b41-a7e8-8e1c83b96eae-u02",
+          "speaker_id": "a",
+          "ja": "五番乗り場に、九時二十分ですね。",
+          "vi": "Điểm số 5, lúc 9 giờ 20 nhỉ."
+        },
+        {
+          "id": "50cedf57-9928-5b41-a7e8-8e1c83b96eae-u03",
+          "speaker_id": "b",
+          "ja": "はい。ここから左にあります。",
+          "vi": "Vâng. Từ đây đi bên trái là tới."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "direction",
+          "bus"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "50cedf57-9928-5b41-a7e8-8e1c83b96eae-u01": {
+            "kind": "original_extension"
+          },
+          "50cedf57-9928-5b41-a7e8-8e1c83b96eae-u02": {
+            "kind": "original_extension"
+          },
+          "50cedf57-9928-5b41-a7e8-8e1c83b96eae-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f3da79d5-0b85-5e4a-9fed-2272c6399244",
+      "event_id": "E04",
+      "context_vi": "Khi lên một chuyến xe đêm giả định, bạn mang vali lớn và hỏi tài xế nơi để; tài xế chỉ cho bạn chỗ trên xe cụ thể.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "tài xế xe buýt",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f3da79d5-0b85-5e4a-9fed-2272c6399244-u01",
+          "speaker_id": "a",
+          "ja": "大きいスーツケースがあります。どこに置きますか。",
+          "vi": "Tôi có vali lớn. Tôi để ở đâu ạ?"
+        },
+        {
+          "id": "f3da79d5-0b85-5e4a-9fed-2272c6399244-u02",
+          "speaker_id": "b",
+          "ja": "私が下の荷物室に入れます。ここで渡してください。",
+          "vi": "Tôi sẽ để vào khoang đồ bên dưới. Chị đưa ở đây nhé."
+        },
+        {
+          "id": "f3da79d5-0b85-5e4a-9fed-2272c6399244-u03",
+          "speaker_id": "a",
+          "ja": "お願いします。",
+          "vi": "Nhờ anh."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bus"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f3da79d5-0b85-5e4a-9fed-2272c6399244-u01": {
+            "kind": "original_extension"
+          },
+          "f3da79d5-0b85-5e4a-9fed-2272c6399244-u02": {
+            "kind": "original_extension"
+          },
+          "f3da79d5-0b85-5e4a-9fed-2272c6399244-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a952621e-0a65-51cd-91a5-eedb431a3b34",
+      "event_id": "E04",
+      "context_vi": "Trên chuyến xe đêm giả định do JR Bus Kanto vận hành trong câu chuyện, tài xế vừa báo có điểm nghỉ. Bạn hỏi lại giờ xe rời chỗ nghỉ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "tài xế xe buýt",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a952621e-0a65-51cd-91a5-eedb431a3b34-u01",
+          "speaker_id": "a",
+          "ja": "次の休憩はどこですか。",
+          "vi": "Điểm nghỉ tiếp theo ở đâu ạ?"
+        },
+        {
+          "id": "a952621e-0a65-51cd-91a5-eedb431a3b34-u02",
+          "speaker_id": "b",
+          "ja": "次のサービスエリアです。十五分休みます。",
+          "vi": "Ở trạm dịch vụ tiếp theo. Nghỉ 15 phút."
+        },
+        {
+          "id": "a952621e-0a65-51cd-91a5-eedb431a3b34-u03",
+          "speaker_id": "a",
+          "ja": "バスに戻る時間を、もう一度お願いします。",
+          "vi": "Anh nhắc lại giờ trở lên xe giúp tôi."
+        },
+        {
+          "id": "a952621e-0a65-51cd-91a5-eedb431a3b34-u04",
+          "speaker_id": "b",
+          "ja": "十一時半までに戻ってください。",
+          "vi": "Chị trở lại trước 11 giờ rưỡi nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bus"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a952621e-0a65-51cd-91a5-eedb431a3b34-u01": {
+            "kind": "original_extension"
+          },
+          "a952621e-0a65-51cd-91a5-eedb431a3b34-u02": {
+            "kind": "original_extension"
+          },
+          "a952621e-0a65-51cd-91a5-eedb431a3b34-u03": {
+            "kind": "original_extension"
+          },
+          "a952621e-0a65-51cd-91a5-eedb431a3b34-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e154f2f4-d4bf-5623-b5c1-0a72ab4ee39b",
+      "event_id": "E04",
+      "context_vi": "Xe đêm giả định vừa dừng, bạn tưởng đây là Sendai nhưng bảng ngoài cửa ghi tên một điểm khác. Bạn hỏi tài xế trước khi xuống.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "tài xế xe buýt",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e154f2f4-d4bf-5623-b5c1-0a72ab4ee39b-u01",
+          "speaker_id": "a",
+          "ja": "ここは仙台ですか。降りてもいいですか。",
+          "vi": "Đây là Sendai ạ? Tôi xuống được chưa?"
+        },
+        {
+          "id": "e154f2f4-d4bf-5623-b5c1-0a72ab4ee39b-u02",
+          "speaker_id": "b",
+          "ja": "いいえ、ここは福島です。仙台は次です。",
+          "vi": "Chưa, đây là Fukushima. Sendai là điểm kế tiếp."
+        },
+        {
+          "id": "e154f2f4-d4bf-5623-b5c1-0a72ab4ee39b-u03",
+          "speaker_id": "a",
+          "ja": "あ、ありがとうございます。次まで乗ります。",
+          "vi": "À, cảm ơn anh. Tôi đi tiếp đến điểm sau."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bus"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e154f2f4-d4bf-5623-b5c1-0a72ab4ee39b-u01": {
+            "kind": "original_extension"
+          },
+          "e154f2f4-d4bf-5623-b5c1-0a72ab4ee39b-u02": {
+            "kind": "original_extension"
+          },
+          "e154f2f4-d4bf-5623-b5c1-0a72ab4ee39b-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "91c04f78-cbaf-58c0-8b1f-168c43a8eb38",
+      "event_id": "E04",
+      "context_vi": "Xe đêm giả định sắp đến Sendai muộn hơn giờ hẹn trong câu chuyện. Bạn gọi cho người đón nam, báo muộn và chốt lại điểm gặp ở cửa đông.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người đón qua điện thoại",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "91c04f78-cbaf-58c0-8b1f-168c43a8eb38-u01",
+          "speaker_id": "a",
+          "ja": "バスが遅れています。着くのは十時ごろです。",
+          "vi": "Xe đang trễ. Khoảng 10 giờ tôi mới đến."
+        },
+        {
+          "id": "91c04f78-cbaf-58c0-8b1f-168c43a8eb38-u02",
+          "speaker_id": "b",
+          "ja": "わかった。どこで会おうか。",
+          "vi": "Tôi hiểu. Gặp ở đâu đây?"
+        },
+        {
+          "id": "91c04f78-cbaf-58c0-8b1f-168c43a8eb38-u03",
+          "speaker_id": "a",
+          "ja": "駅の東口でお願いします。着いたら連絡します。",
+          "vi": "Mình gặp ở cửa đông ga nhé. Đến nơi tôi sẽ báo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bus",
+          "direction"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "91c04f78-cbaf-58c0-8b1f-168c43a8eb38-u01": {
+            "kind": "original_extension"
+          },
+          "91c04f78-cbaf-58c0-8b1f-168c43a8eb38-u02": {
+            "kind": "original_extension"
+          },
+          "91c04f78-cbaf-58c0-8b1f-168c43a8eb38-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

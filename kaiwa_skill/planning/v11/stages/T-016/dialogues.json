@@ -1,0 +1,1618 @@
+{
+  "stage_uid": "2c61afe7-1cd7-5266-89de-46fcc6c5fac0",
+  "admin_sources": {
+    "book": {
+      "kind": "book",
+      "book_id": "B12",
+      "title": "わかる！話せる！日本語会話 発展文型125",
+      "path": "kaiwa_skill/knowledge/わかる！話せる！日本語会話 発展文型125/book.md",
+      "start_line": 411,
+      "end_line": 428,
+      "use_vi": "Đọc lối mở nêu sự cố ～んですけど để trình bày vấn đề qua điện thoại; câu mới hoàn toàn."
+    },
+    "tepco": {
+      "kind": "web",
+      "title": "東京電力エナジーパートナー — お引越しの手続き",
+      "url": "https://www.tepco.co.jp/ep/private/moving/index-j.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Kiểm các mốc mở, dừng điện và thông tin cần cho chuyển nhà. Ngày, căn hộ và kết quả trong hội thoại là tình huống giả định."
+    },
+    "gas": {
+      "kind": "web",
+      "title": "東京ガス — 引越しの手続き（使用開始・停止）や作業の流れ",
+      "url": "https://support.tokyo-gas.co.jp/faq/show/10231?site_domain=open",
+      "accessed": "2026-11-16",
+      "use_vi": "Gas mở cần có mặt; dừng thường không cần nhưng có ngoại lệ. Giờ hẹn và tình trạng đăng ký trong cảnh là giả định."
+    },
+    "water": {
+      "kind": "web",
+      "title": "東京都水道局 — 使用開始・中止について",
+      "url": "https://www.waterworks.metro.tokyo.lg.jp/faq/qa-4",
+      "accessed": "2026-11-16",
+      "use_vi": "Ngày bắt đầu và kết thúc nước theo ngày đã chỉ định sau khi đăng ký hoàn tất; nếu không có nước thì hỏi trung tâm."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "5130954e-9e64-5fa6-8983-d8c82b2c9259",
+      "event_id": "E01",
+      "context_vi": "Bạn gọi công ty điện đã chọn trước ngày dọn đến căn 302. Bạn nêu địa chỉ mới và ngày muốn dùng điện.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5130954e-9e64-5fa6-8983-d8c82b2c9259-u01",
+          "speaker_id": "a",
+          "ja": "来月五日から新居で電気を使いたいんですけど、申し込みをお願いします。",
+          "vi": "Tôi muốn dùng điện ở nhà mới từ mùng năm tháng sau, xin đăng ký giúp."
+        },
+        {
+          "id": "5130954e-9e64-5fa6-8983-d8c82b2c9259-u02",
+          "speaker_id": "b",
+          "ja": "新しいご住所と部屋番号をお願いします。",
+          "vi": "Xin cho biết địa chỉ mới và số phòng."
+        },
+        {
+          "id": "5130954e-9e64-5fa6-8983-d8c82b2c9259-u03",
+          "speaker_id": "a",
+          "ja": "杉並区南町二丁目の三〇二号室です。五日からで受け付けられますか。",
+          "vi": "Ở khu Minamimachi 2, quận Suginami, phòng 302. Bên anh nhận cho ngày mùng năm được không?"
+        },
+        {
+          "id": "5130954e-9e64-5fa6-8983-d8c82b2c9259-u04",
+          "speaker_id": "b",
+          "ja": "空き状況を確認します。お名前も伺ってよろしいですか。",
+          "vi": "Tôi sẽ kiểm tình trạng tiếp nhận. Xin tên chị nữa ạ?"
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "book",
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5130954e-9e64-5fa6-8983-d8c82b2c9259-u01": {
+            "kind": "original_extension"
+          },
+          "5130954e-9e64-5fa6-8983-d8c82b2c9259-u02": {
+            "kind": "original_extension"
+          },
+          "5130954e-9e64-5fa6-8983-d8c82b2c9259-u03": {
+            "kind": "original_extension"
+          },
+          "5130954e-9e64-5fa6-8983-d8c82b2c9259-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7ef08d38-b58a-55a4-8688-041393538b8d",
+      "event_id": "E01",
+      "context_vi": "Bạn hỏi trung tâm nước Tokyo về ngày nhận nhà mùng năm và tình trạng nước tại căn 302.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7ef08d38-b58a-55a4-8688-041393538b8d-u01",
+          "speaker_id": "a",
+          "ja": "五日に入居します。使用開始を申し込めば、その日から水を使えますか。",
+          "vi": "Tôi vào nhà ngày mùng năm. Nếu đăng ký bắt đầu dùng, hôm đó có nước không ạ?"
+        },
+        {
+          "id": "7ef08d38-b58a-55a4-8688-041393538b8d-u02",
+          "speaker_id": "b",
+          "ja": "お申し込みが完了すれば、指定した開始日からご利用いただけます。",
+          "vi": "Khi đăng ký hoàn tất, chị có thể dùng từ ngày đã chọn."
+        },
+        {
+          "id": "7ef08d38-b58a-55a4-8688-041393538b8d-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。もし当日水が出なければ、こちらに連絡すればいいですか。",
+          "vi": "Tôi hiểu. Nếu hôm đó không có nước, tôi liên hệ bên này phải không?"
+        },
+        {
+          "id": "7ef08d38-b58a-55a4-8688-041393538b8d-u04",
+          "speaker_id": "b",
+          "ja": "はい、お客さまセンターにご連絡ください。",
+          "vi": "Vâng, xin liên hệ trung tâm khách hàng."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "water"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7ef08d38-b58a-55a4-8688-041393538b8d-u01": {
+            "kind": "original_extension"
+          },
+          "7ef08d38-b58a-55a4-8688-041393538b8d-u02": {
+            "kind": "original_extension"
+          },
+          "7ef08d38-b58a-55a4-8688-041393538b8d-u03": {
+            "kind": "original_extension"
+          },
+          "7ef08d38-b58a-55a4-8688-041393538b8d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6810ddca-bfd7-5c82-8c59-0d47516c3d9d",
+      "event_id": "E01",
+      "context_vi": "Bạn đặt lịch mở gas với Tokyo Gas; cần có người tại nhà để kiểm tra và giải thích an toàn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6810ddca-bfd7-5c82-8c59-0d47516c3d9d-u01",
+          "speaker_id": "b",
+          "ja": "ガスの使用開始には、ご自宅でのお立会いをお願いします。五日の午後はいかがですか。",
+          "vi": "Khi mở gas cần có người ở nhà. Chiều mùng năm chị có tiện không?"
+        },
+        {
+          "id": "6810ddca-bfd7-5c82-8c59-0d47516c3d9d-u02",
+          "speaker_id": "a",
+          "ja": "午後なら私がいます。何時ごろ来られますか。",
+          "vi": "Chiều đó tôi ở nhà. Anh có thể đến khoảng mấy giờ?"
+        },
+        {
+          "id": "6810ddca-bfd7-5c82-8c59-0d47516c3d9d-u03",
+          "speaker_id": "b",
+          "ja": "今ご案内できる枠を確認します。",
+          "vi": "Tôi kiểm khung giờ hiện còn nhé."
+        },
+        {
+          "id": "6810ddca-bfd7-5c82-8c59-0d47516c3d9d-u04",
+          "speaker_id": "a",
+          "ja": "お願いします。予定を空けておきます。",
+          "vi": "Vâng, nhờ anh. Tôi sẽ để trống lịch."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gas"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6810ddca-bfd7-5c82-8c59-0d47516c3d9d-u01": {
+            "kind": "original_extension"
+          },
+          "6810ddca-bfd7-5c82-8c59-0d47516c3d9d-u02": {
+            "kind": "original_extension"
+          },
+          "6810ddca-bfd7-5c82-8c59-0d47516c3d9d-u03": {
+            "kind": "original_extension"
+          },
+          "6810ddca-bfd7-5c82-8c59-0d47516c3d9d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "254d423e-c510-5337-982a-f4ad2dd4c953",
+      "event_id": "E01",
+      "context_vi": "Khung giờ bạn muốn mở gas ngày mùng năm không còn; bạn hỏi lịch gần nhất.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "254d423e-c510-5337-982a-f4ad2dd4c953-u01",
+          "speaker_id": "b",
+          "ja": "五日の午後は埋まっています。",
+          "vi": "Chiều mùng năm đã kín lịch."
+        },
+        {
+          "id": "254d423e-c510-5337-982a-f4ad2dd4c953-u02",
+          "speaker_id": "a",
+          "ja": "そうですか。五日の午前か、六日で空いている時間はありますか。",
+          "vi": "Vậy à. Sáng mùng năm hoặc ngày mùng sáu có giờ nào trống không?"
+        },
+        {
+          "id": "254d423e-c510-5337-982a-f4ad2dd4c953-u03",
+          "speaker_id": "b",
+          "ja": "六日の午前でしたらご案内できます。",
+          "vi": "Sáng mùng sáu thì còn lịch."
+        },
+        {
+          "id": "254d423e-c510-5337-982a-f4ad2dd4c953-u04",
+          "speaker_id": "a",
+          "ja": "では、六日の午前でお願いします。立ち会います。",
+          "vi": "Vậy xin đặt sáng mùng sáu. Tôi sẽ có mặt."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gas"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "254d423e-c510-5337-982a-f4ad2dd4c953-u01": {
+            "kind": "original_extension"
+          },
+          "254d423e-c510-5337-982a-f4ad2dd4c953-u02": {
+            "kind": "original_extension"
+          },
+          "254d423e-c510-5337-982a-f4ad2dd4c953-u03": {
+            "kind": "original_extension"
+          },
+          "254d423e-c510-5337-982a-f4ad2dd4c953-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "85c81f3f-fa0a-583c-9c6f-3cf0e116be46",
+      "event_id": "E01",
+      "context_vi": "Tiếp cuộc gọi trước, bạn nhắc lại lịch mở gas mùng sáu và địa chỉ căn 302 để tránh nhầm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "85c81f3f-fa0a-583c-9c6f-3cf0e116be46-u01",
+          "speaker_id": "a",
+          "ja": "確認ですが、ガスの使用開始は六日の午前、杉並区南町二丁目の三〇二号室ですね。",
+          "vi": "Cho tôi xác nhận: mở gas sáng mùng sáu ở phòng 302, Minamimachi 2, Suginami, đúng không?"
+        },
+        {
+          "id": "85c81f3f-fa0a-583c-9c6f-3cf0e116be46-u02",
+          "speaker_id": "b",
+          "ja": "はい、その内容で受け付けました。",
+          "vi": "Vâng, chúng tôi đã nhận theo thông tin ấy."
+        },
+        {
+          "id": "85c81f3f-fa0a-583c-9c6f-3cf0e116be46-u03",
+          "speaker_id": "a",
+          "ja": "五日ではなく六日ですね。私が部屋にいます。",
+          "vi": "Là mùng sáu chứ không phải mùng năm. Tôi sẽ ở nhà."
+        },
+        {
+          "id": "85c81f3f-fa0a-583c-9c6f-3cf0e116be46-u04",
+          "speaker_id": "b",
+          "ja": "はい。変更があれば早めにご連絡ください。",
+          "vi": "Vâng. Nếu cần đổi, xin báo sớm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gas"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "85c81f3f-fa0a-583c-9c6f-3cf0e116be46-u01": {
+            "kind": "original_extension"
+          },
+          "85c81f3f-fa0a-583c-9c6f-3cf0e116be46-u02": {
+            "kind": "original_extension"
+          },
+          "85c81f3f-fa0a-583c-9c6f-3cf0e116be46-u03": {
+            "kind": "original_extension"
+          },
+          "85c81f3f-fa0a-583c-9c6f-3cf0e116be46-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "274dec4b-d80b-5889-bd9c-4fdfc6b8be47",
+      "event_id": "E02",
+      "context_vi": "Bạn chuyển từ nhà cũ ngày mùng bảy nhưng vào nhà mới ngày mùng năm; bạn nói rõ hai mốc với công ty điện.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u01",
+          "speaker_id": "a",
+          "ja": "新居では五日から電気を使い、今の部屋は七日まで使います。日にちが違うんです。",
+          "vi": "Nhà mới tôi dùng điện từ mùng năm, nhà cũ dùng đến hết mùng bảy. Hai ngày khác nhau ạ."
+        },
+        {
+          "id": "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u02",
+          "speaker_id": "b",
+          "ja": "承知しました。まず現在のお住まいの住所を確認します。",
+          "vi": "Tôi hiểu. Trước hết xin xác nhận địa chỉ nhà hiện tại."
+        },
+        {
+          "id": "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u03",
+          "speaker_id": "a",
+          "ja": "中野区中央一丁目の二〇一号室です。新居は杉並区南町二丁目の三〇二号室です。",
+          "vi": "Nhà cũ ở phòng 201, Chuo 1, Nakano. Nhà mới ở phòng 302, Minamimachi 2, Suginami."
+        },
+        {
+          "id": "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u04",
+          "speaker_id": "b",
+          "ja": "二つの住所と日付を別々に確認します。",
+          "vi": "Tôi sẽ kiểm riêng hai địa chỉ và ngày."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u01": {
+            "kind": "original_extension"
+          },
+          "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u02": {
+            "kind": "original_extension"
+          },
+          "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u03": {
+            "kind": "original_extension"
+          },
+          "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "4ab4b17c-1f67-50c8-a63b-227d2053058f",
+      "event_id": "E02",
+      "context_vi": "Bạn hỏi công ty điện liệu việc dừng nhà cũ và mở nhà mới cần hai lịch làm thủ tục riêng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "4ab4b17c-1f67-50c8-a63b-227d2053058f-u01",
+          "speaker_id": "a",
+          "ja": "旧居を止める手続きと新居で始める手続きは、別々に申し込む必要がありますか。",
+          "vi": "Dừng điện nhà cũ và mở ở nhà mới có cần đăng ký riêng không?"
+        },
+        {
+          "id": "4ab4b17c-1f67-50c8-a63b-227d2053058f-u02",
+          "speaker_id": "b",
+          "ja": "同じ契約先なら、この電話で両方の内容を確認できます。",
+          "vi": "Nếu cùng bên cung cấp, chúng tôi có thể kiểm cả hai trong cuộc gọi này."
+        },
+        {
+          "id": "4ab4b17c-1f67-50c8-a63b-227d2053058f-u03",
+          "speaker_id": "a",
+          "ja": "では、旧居は七日まで、新居は五日からでお願いします。",
+          "vi": "Vậy nhà cũ đến mùng bảy, nhà mới từ mùng năm nhé."
+        },
+        {
+          "id": "4ab4b17c-1f67-50c8-a63b-227d2053058f-u04",
+          "speaker_id": "b",
+          "ja": "それぞれの受付結果をこの後お伝えします。",
+          "vi": "Tôi sẽ báo kết quả tiếp nhận từng bên ngay sau đây."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "4ab4b17c-1f67-50c8-a63b-227d2053058f-u01": {
+            "kind": "original_extension"
+          },
+          "4ab4b17c-1f67-50c8-a63b-227d2053058f-u02": {
+            "kind": "original_extension"
+          },
+          "4ab4b17c-1f67-50c8-a63b-227d2053058f-u03": {
+            "kind": "original_extension"
+          },
+          "4ab4b17c-1f67-50c8-a63b-227d2053058f-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "687d1f72-a4ba-53d7-8442-b4804c9e2a77",
+      "event_id": "E02",
+      "context_vi": "Nhân viên điện đọc nhầm số phòng 201 của nhà cũ thành số phòng nhà mới; bạn sửa cụ thể.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "687d1f72-a4ba-53d7-8442-b4804c9e2a77-u01",
+          "speaker_id": "b",
+          "ja": "新居は杉並区南町二丁目、二〇一号室ですね。",
+          "vi": "Nhà mới ở Minamimachi 2, Suginami, phòng 201 đúng không ạ?"
+        },
+        {
+          "id": "687d1f72-a4ba-53d7-8442-b4804c9e2a77-u02",
+          "speaker_id": "a",
+          "ja": "すみません、違います。二〇一号室は旧居です。新居は三〇二号室です。",
+          "vi": "Xin lỗi, không đúng. Phòng 201 là nhà cũ, nhà mới là phòng 302."
+        },
+        {
+          "id": "687d1f72-a4ba-53d7-8442-b4804c9e2a77-u03",
+          "speaker_id": "b",
+          "ja": "失礼しました。新居は三〇二号室に直します。",
+          "vi": "Tôi xin lỗi. Tôi sửa nhà mới thành phòng 302."
+        },
+        {
+          "id": "687d1f72-a4ba-53d7-8442-b4804c9e2a77-u04",
+          "speaker_id": "a",
+          "ja": "旧居のほうは中野区中央一丁目の二〇一号室です。",
+          "vi": "Nhà cũ là phòng 201, Chuo 1, Nakano ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "book",
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "687d1f72-a4ba-53d7-8442-b4804c9e2a77-u01": {
+            "kind": "original_extension"
+          },
+          "687d1f72-a4ba-53d7-8442-b4804c9e2a77-u02": {
+            "kind": "original_extension"
+          },
+          "687d1f72-a4ba-53d7-8442-b4804c9e2a77-u03": {
+            "kind": "original_extension"
+          },
+          "687d1f72-a4ba-53d7-8442-b4804c9e2a77-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "09fbdffc-680e-55dc-8e95-a3a30d389a45",
+      "event_id": "E02",
+      "context_vi": "Ngày bàn giao nhà cũ dời từ mùng bảy sang mùng tám. Bạn xin đổi riêng ngày dừng điện nhà cũ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "09fbdffc-680e-55dc-8e95-a3a30d389a45-u01",
+          "speaker_id": "a",
+          "ja": "旧居の引き渡しが一日延びました。電気を止める日だけ、七日から八日に変えられますか。",
+          "vi": "Ngày giao nhà cũ dời thêm một ngày. Tôi chỉ muốn đổi ngày dừng điện từ mùng bảy sang mùng tám, được không?"
+        },
+        {
+          "id": "09fbdffc-680e-55dc-8e95-a3a30d389a45-u02",
+          "speaker_id": "b",
+          "ja": "受付内容を確認します。新居の開始日は五日のままでよろしいですか。",
+          "vi": "Tôi kiểm thông tin đã nhận. Ngày mở điện nhà mới vẫn là mùng năm chứ ạ?"
+        },
+        {
+          "id": "09fbdffc-680e-55dc-8e95-a3a30d389a45-u03",
+          "speaker_id": "a",
+          "ja": "はい。新居は変えず、旧居だけ八日まで使いたいです。",
+          "vi": "Vâng. Nhà mới không đổi, chỉ nhà cũ dùng đến hết mùng tám."
+        },
+        {
+          "id": "09fbdffc-680e-55dc-8e95-a3a30d389a45-u04",
+          "speaker_id": "b",
+          "ja": "変更できるか確認してお伝えします。",
+          "vi": "Tôi sẽ kiểm có đổi được không rồi báo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "09fbdffc-680e-55dc-8e95-a3a30d389a45-u01": {
+            "kind": "original_extension"
+          },
+          "09fbdffc-680e-55dc-8e95-a3a30d389a45-u02": {
+            "kind": "original_extension"
+          },
+          "09fbdffc-680e-55dc-8e95-a3a30d389a45-u03": {
+            "kind": "original_extension"
+          },
+          "09fbdffc-680e-55dc-8e95-a3a30d389a45-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bc0f0894-a54a-509a-abc9-5f3313bda407",
+      "event_id": "E02",
+      "context_vi": "Tiếp việc đổi ngày, công ty điện đã nhận thay đổi. Bạn xác nhận riêng ngày dừng và mở.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bc0f0894-a54a-509a-abc9-5f3313bda407-u01",
+          "speaker_id": "b",
+          "ja": "旧居の停止日を八日に変更できました。",
+          "vi": "Chúng tôi đã đổi ngày dừng ở nhà cũ sang mùng tám."
+        },
+        {
+          "id": "bc0f0894-a54a-509a-abc9-5f3313bda407-u02",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。新居の三〇二号室は五日から、旧居の二〇一号室は八日までですね。",
+          "vi": "Cảm ơn anh. Phòng 302 nhà mới dùng từ mùng năm; phòng 201 nhà cũ dùng đến hết mùng tám, đúng không?"
+        },
+        {
+          "id": "bc0f0894-a54a-509a-abc9-5f3313bda407-u03",
+          "speaker_id": "b",
+          "ja": "はい。その二件で受け付けています。",
+          "vi": "Vâng, chúng tôi ghi hai việc đúng như vậy."
+        },
+        {
+          "id": "bc0f0894-a54a-509a-abc9-5f3313bda407-u04",
+          "speaker_id": "a",
+          "ja": "変更したのは旧居だけと分かりました。",
+          "vi": "Tôi rõ rồi, chỉ nhà cũ được đổi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bc0f0894-a54a-509a-abc9-5f3313bda407-u01": {
+            "kind": "original_extension"
+          },
+          "bc0f0894-a54a-509a-abc9-5f3313bda407-u02": {
+            "kind": "original_extension"
+          },
+          "bc0f0894-a54a-509a-abc9-5f3313bda407-u03": {
+            "kind": "original_extension"
+          },
+          "bc0f0894-a54a-509a-abc9-5f3313bda407-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "cbe484d5-8cf7-5bca-95b5-14c83649517e",
+      "event_id": "E03",
+      "context_vi": "Sáng mùng sáu, nhân viên Tokyo Gas đến phòng 302. Bạn xác nhận người đến đúng lịch rồi mời vào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "kỹ thuật viên hoặc nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "cbe484d5-8cf7-5bca-95b5-14c83649517e-u01",
+          "speaker_id": "a",
+          "ja": "本日ガスの開栓を予約した者です。お名前とご用件を確認してもいいですか。",
+          "vi": "Tôi là người hẹn mở gas hôm nay. Cho tôi xác nhận tên anh và việc đến được không?"
+        },
+        {
+          "id": "cbe484d5-8cf7-5bca-95b5-14c83649517e-u02",
+          "speaker_id": "b",
+          "ja": "東京ガスの作業担当、山田です。開栓と安全確認に来ました。",
+          "vi": "Tôi là Yamada, nhân viên phụ trách của Tokyo Gas. Tôi đến mở gas và kiểm tra an toàn."
+        },
+        {
+          "id": "cbe484d5-8cf7-5bca-95b5-14c83649517e-u03",
+          "speaker_id": "a",
+          "ja": "六日の午前、三〇二号室の予約ですね。どうぞ。",
+          "vi": "Lịch sáng mùng sáu ở phòng 302 đúng rồi. Xin mời anh."
+        },
+        {
+          "id": "cbe484d5-8cf7-5bca-95b5-14c83649517e-u04",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。まず機器の場所を確認します。",
+          "vi": "Cảm ơn chị. Trước hết xin kiểm vị trí thiết bị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gas"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "cbe484d5-8cf7-5bca-95b5-14c83649517e-u01": {
+            "kind": "original_extension"
+          },
+          "cbe484d5-8cf7-5bca-95b5-14c83649517e-u02": {
+            "kind": "original_extension"
+          },
+          "cbe484d5-8cf7-5bca-95b5-14c83649517e-u03": {
+            "kind": "original_extension"
+          },
+          "cbe484d5-8cf7-5bca-95b5-14c83649517e-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2051d012-77f8-5be0-bd80-f8418cf9d1ba",
+      "event_id": "E03",
+      "context_vi": "Bạn kẹt xe khi đang đến căn 302, không ai ở đó để đón nhân viên mở gas. Bạn gọi ngay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "kỹ thuật viên hoặc nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u01",
+          "speaker_id": "a",
+          "ja": "今日の開栓に立ち会う予定ですが、道路が混んでいて到着が遅れます。部屋にはまだ誰もいません。",
+          "vi": "Hôm nay tôi dự định có mặt lúc mở gas, nhưng kẹt đường nên đến muộn. Hiện chưa có ai ở căn hộ."
+        },
+        {
+          "id": "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u02",
+          "speaker_id": "b",
+          "ja": "ご連絡ありがとうございます。到着予定は何時ごろですか。",
+          "vi": "Cảm ơn chị đã báo. Khoảng mấy giờ chị đến?"
+        },
+        {
+          "id": "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u03",
+          "speaker_id": "a",
+          "ja": "おそらく十一時半です。今の予約に間に合わない場合、どうしたらいいですか。",
+          "vi": "Có lẽ mười một rưỡi. Nếu trễ lịch hiện tại, tôi phải làm sao?"
+        },
+        {
+          "id": "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u04",
+          "speaker_id": "b",
+          "ja": "担当に確認します。折り返しご連絡します。",
+          "vi": "Tôi sẽ hỏi người phụ trách rồi gọi lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gas"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u01": {
+            "kind": "original_extension"
+          },
+          "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u02": {
+            "kind": "original_extension"
+          },
+          "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u03": {
+            "kind": "original_extension"
+          },
+          "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "431625f6-38ed-5125-91e5-2f6e6557e3ae",
+      "event_id": "E03",
+      "context_vi": "Tiếp cuộc gọi báo kẹt xe, bạn hỏi còn dời trong ngày được hay phải đặt ngày khác.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "kỹ thuật viên hoặc nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "431625f6-38ed-5125-91e5-2f6e6557e3ae-u01",
+          "speaker_id": "a",
+          "ja": "先ほど遅れると連絡した三〇二号室です。今日の遅い時間に変更できますか。それとも別の日になりますか。",
+          "vi": "Tôi ở phòng 302, vừa báo sẽ đến trễ. Có đổi sang giờ muộn hơn hôm nay được không hay phải hẹn ngày khác?"
+        },
+        {
+          "id": "431625f6-38ed-5125-91e5-2f6e6557e3ae-u02",
+          "speaker_id": "b",
+          "ja": "今日の枠はもうありません。明日の午後なら空いています。",
+          "vi": "Hôm nay hết khung giờ rồi. Chiều mai còn trống."
+        },
+        {
+          "id": "431625f6-38ed-5125-91e5-2f6e6557e3ae-u03",
+          "speaker_id": "a",
+          "ja": "では、明日の午後に変更をお願いします。今度は部屋で待ちます。",
+          "vi": "Vậy xin đổi sang chiều mai. Lần này tôi sẽ đợi ở nhà."
+        },
+        {
+          "id": "431625f6-38ed-5125-91e5-2f6e6557e3ae-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。変更後の時間を確認してお知らせします。",
+          "vi": "Vâng. Tôi kiểm giờ sau khi đổi rồi báo chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gas"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "431625f6-38ed-5125-91e5-2f6e6557e3ae-u01": {
+            "kind": "original_extension"
+          },
+          "431625f6-38ed-5125-91e5-2f6e6557e3ae-u02": {
+            "kind": "original_extension"
+          },
+          "431625f6-38ed-5125-91e5-2f6e6557e3ae-u03": {
+            "kind": "original_extension"
+          },
+          "431625f6-38ed-5125-91e5-2f6e6557e3ae-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9074d8c9-cf7c-5670-828f-404654c9d3ce",
+      "event_id": "E03",
+      "context_vi": "Bạn vào nhà mới đúng ngày mở điện nhưng đèn không sáng. Bạn gọi công ty điện đang ký hợp đồng và nêu tình trạng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "kỹ thuật viên hoặc nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9074d8c9-cf7c-5670-828f-404654c9d3ce-u01",
+          "speaker_id": "a",
+          "ja": "今日から電気を使う申し込みをしたんですが、部屋の電気がつきません。",
+          "vi": "Tôi đã đăng ký dùng điện từ hôm nay, nhưng đèn trong căn hộ không sáng."
+        },
+        {
+          "id": "9074d8c9-cf7c-5670-828f-404654c9d3ce-u02",
+          "speaker_id": "b",
+          "ja": "ご不便をおかけしています。ご住所と、今どこまで確認されたか教えてください。",
+          "vi": "Xin lỗi vì bất tiện. Xin cho biết địa chỉ và chị đã kiểm những gì."
+        },
+        {
+          "id": "9074d8c9-cf7c-5670-828f-404654c9d3ce-u03",
+          "speaker_id": "a",
+          "ja": "杉並区南町二丁目、三〇二号室です。部屋のスイッチは確認しました。",
+          "vi": "Phòng 302, Minamimachi 2, Suginami. Tôi đã kiểm công tắc trong phòng."
+        },
+        {
+          "id": "9074d8c9-cf7c-5670-828f-404654c9d3ce-u04",
+          "speaker_id": "b",
+          "ja": "受付と供給状況をこちらで確認します。",
+          "vi": "Tôi sẽ kiểm đăng ký và tình trạng cấp điện bên này."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "book",
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9074d8c9-cf7c-5670-828f-404654c9d3ce-u01": {
+            "kind": "original_extension"
+          },
+          "9074d8c9-cf7c-5670-828f-404654c9d3ce-u02": {
+            "kind": "original_extension"
+          },
+          "9074d8c9-cf7c-5670-828f-404654c9d3ce-u03": {
+            "kind": "original_extension"
+          },
+          "9074d8c9-cf7c-5670-828f-404654c9d3ce-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "dd4f98f0-c95f-5c2f-bc18-b110899729f8",
+      "event_id": "E03",
+      "context_vi": "Tiếp cuộc gọi mất điện nhà mới, công ty điện vẫn đang kiểm. Bạn hỏi khi nào nhận câu trả lời và cách liên hệ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "kỹ thuật viên hoặc nhân viên hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u01",
+          "speaker_id": "a",
+          "ja": "三〇二号室の件、まだ調査中とのことですが、いつごろ結果を聞けますか。",
+          "vi": "Vụ phòng 302 còn đang kiểm tra, khoảng khi nào tôi biết kết quả?"
+        },
+        {
+          "id": "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u02",
+          "speaker_id": "b",
+          "ja": "確認して、今日中にこちらから電話します。",
+          "vi": "Chúng tôi sẽ kiểm và gọi lại cho chị trong hôm nay."
+        },
+        {
+          "id": "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。もし夕方までに連絡がなければ、どの番号にかければいいですか。",
+          "vi": "Tôi hiểu. Nếu đến chiều chưa có tin, tôi gọi số nào?"
+        },
+        {
+          "id": "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u04",
+          "speaker_id": "b",
+          "ja": "この窓口へお電話ください。受付番号もお伝えします。",
+          "vi": "Xin gọi lại số này. Tôi cũng sẽ cho chị mã tiếp nhận."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u01": {
+            "kind": "original_extension"
+          },
+          "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u02": {
+            "kind": "original_extension"
+          },
+          "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u03": {
+            "kind": "original_extension"
+          },
+          "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "68450fc2-293a-5b39-a648-6eecce0e9335",
+      "event_id": "E04",
+      "context_vi": "Bạn hỏi tổng đài công ty điện về hóa đơn cuối của căn 201 sau khi ngừng dịch vụ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tổng đài",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "68450fc2-293a-5b39-a648-6eecce0e9335-u01",
+          "speaker_id": "a",
+          "ja": "先月まで使っていた中野区の部屋について、最後の電気料金を確認したいです。",
+          "vi": "Tôi muốn kiểm tiền điện kỳ cuối của căn ở Nakano dùng đến tháng trước."
+        },
+        {
+          "id": "68450fc2-293a-5b39-a648-6eecce0e9335-u02",
+          "speaker_id": "b",
+          "ja": "お客さま番号か、旧居の住所をお願いします。",
+          "vi": "Xin mã khách hàng hoặc địa chỉ nhà cũ."
+        },
+        {
+          "id": "68450fc2-293a-5b39-a648-6eecce0e9335-u03",
+          "speaker_id": "a",
+          "ja": "中野区中央一丁目、二〇一号室です。八日まで使いました。",
+          "vi": "Phòng 201, Chuo 1, Nakano. Tôi đã dùng đến hết mùng tám."
+        },
+        {
+          "id": "68450fc2-293a-5b39-a648-6eecce0e9335-u04",
+          "speaker_id": "b",
+          "ja": "その契約の請求状況を確認します。",
+          "vi": "Tôi sẽ kiểm tình trạng hóa đơn của hợp đồng đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "68450fc2-293a-5b39-a648-6eecce0e9335-u01": {
+            "kind": "original_extension"
+          },
+          "68450fc2-293a-5b39-a648-6eecce0e9335-u02": {
+            "kind": "original_extension"
+          },
+          "68450fc2-293a-5b39-a648-6eecce0e9335-u03": {
+            "kind": "original_extension"
+          },
+          "68450fc2-293a-5b39-a648-6eecce0e9335-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fe7c411a-614e-5c65-b13f-1cbf30ef6b71",
+      "event_id": "E04",
+      "context_vi": "Nhân viên nghĩ bạn hỏi hóa đơn nhà mới. Bạn xác định lại địa chỉ và mốc dùng của nhà cũ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tổng đài",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fe7c411a-614e-5c65-b13f-1cbf30ef6b71-u01",
+          "speaker_id": "b",
+          "ja": "杉並区の三〇二号室、今月の請求ですね。",
+          "vi": "Hóa đơn tháng này của phòng 302, Suginami đúng không ạ?"
+        },
+        {
+          "id": "fe7c411a-614e-5c65-b13f-1cbf30ef6b71-u02",
+          "speaker_id": "a",
+          "ja": "いえ、違います。杉並区は新居です。聞きたいのは中野区の二〇一号室、八日まで使った分です。",
+          "vi": "Không ạ. Suginami là nhà mới. Tôi hỏi phần đã dùng đến mùng tám tại phòng 201 ở Nakano."
+        },
+        {
+          "id": "fe7c411a-614e-5c65-b13f-1cbf30ef6b71-u03",
+          "speaker_id": "b",
+          "ja": "失礼しました。旧居の最終分ですね。確認し直します。",
+          "vi": "Xin lỗi. Là kỳ cuối của nhà cũ. Tôi sẽ kiểm lại."
+        },
+        {
+          "id": "fe7c411a-614e-5c65-b13f-1cbf30ef6b71-u04",
+          "speaker_id": "a",
+          "ja": "お願いします。新居の請求とは分けて教えてください。",
+          "vi": "Nhờ anh. Xin nói riêng với hóa đơn nhà mới."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "book",
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fe7c411a-614e-5c65-b13f-1cbf30ef6b71-u01": {
+            "kind": "original_extension"
+          },
+          "fe7c411a-614e-5c65-b13f-1cbf30ef6b71-u02": {
+            "kind": "original_extension"
+          },
+          "fe7c411a-614e-5c65-b13f-1cbf30ef6b71-u03": {
+            "kind": "original_extension"
+          },
+          "fe7c411a-614e-5c65-b13f-1cbf30ef6b71-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464",
+      "event_id": "E04",
+      "context_vi": "Tổng đài chỉ có số tiền ước tính của nhà cũ trong hôm nay. Bạn hỏi ngày có số chính thức.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tổng đài",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u01",
+          "speaker_id": "b",
+          "ja": "本日お伝えできる金額は概算です。",
+          "vi": "Hôm nay tôi chỉ báo được số tiền ước tính."
+        },
+        {
+          "id": "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u02",
+          "speaker_id": "a",
+          "ja": "確定した金額は、いつ、どこで確認できますか。",
+          "vi": "Số tiền đã chốt thì khi nào và ở đâu tôi xem được?"
+        },
+        {
+          "id": "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u03",
+          "speaker_id": "b",
+          "ja": "確定後にご登録の方法でご案内します。時期は今確認します。",
+          "vi": "Sau khi chốt, chúng tôi báo theo cách chị đã đăng ký. Tôi kiểm thời điểm ngay."
+        },
+        {
+          "id": "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u04",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。今の金額は確定ではないとメモします。",
+          "vi": "Cảm ơn anh. Tôi ghi rõ số vừa rồi chưa phải số cuối."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u01": {
+            "kind": "original_extension"
+          },
+          "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u02": {
+            "kind": "original_extension"
+          },
+          "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u03": {
+            "kind": "original_extension"
+          },
+          "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b326cd63-e9df-51bd-a27d-d42efeaea3b9",
+      "event_id": "E04",
+      "context_vi": "Bạn hỏi về khoản thanh toán trùng ở nhà cũ nhưng tổng đài này không xử lý. Bạn xin đầu mối phù hợp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tổng đài",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u01",
+          "speaker_id": "a",
+          "ja": "旧居の最後の支払いが二回記録されているようで、確認をお願いしたいです。",
+          "vi": "Có vẻ khoản thanh toán cuối của nhà cũ được ghi hai lần, xin kiểm giúp."
+        },
+        {
+          "id": "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u02",
+          "speaker_id": "b",
+          "ja": "申し訳ありません。この窓口では入金の照合ができません。",
+          "vi": "Rất tiếc, bộ phận này không đối chiếu khoản tiền nhận."
+        },
+        {
+          "id": "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。担当部署につないでいただけますか。難しければ連絡先を教えてください。",
+          "vi": "Tôi hiểu. Anh chuyển máy cho bộ phận phụ trách được không? Nếu không, xin cho tôi cách liên hệ."
+        },
+        {
+          "id": "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u04",
+          "speaker_id": "b",
+          "ja": "担当に確認し、折り返しの手配をします。",
+          "vi": "Tôi sẽ hỏi bộ phận phụ trách và sắp xếp gọi lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u01": {
+            "kind": "original_extension"
+          },
+          "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u02": {
+            "kind": "original_extension"
+          },
+          "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u03": {
+            "kind": "original_extension"
+          },
+          "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9b32db1e-071e-5686-a1d6-dcbf55cb9d22",
+      "event_id": "E04",
+      "context_vi": "Tiếp việc chuyển đầu mối, bạn chốt khoản cần đối chiếu và ai sẽ gọi lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tổng đài",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u01",
+          "speaker_id": "a",
+          "ja": "確認したいのは中野区二〇一号室の最後の支払いが二回あるかどうかです。担当の方から電話が来ますか。",
+          "vi": "Tôi cần kiểm khoản trả kỳ cuối của phòng 201 ở Nakano có bị ghi hai lần không. Bộ phận phụ trách sẽ gọi tôi chứ?"
+        },
+        {
+          "id": "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u02",
+          "speaker_id": "b",
+          "ja": "はい。担当からご登録の番号に折り返します。",
+          "vi": "Vâng. Người phụ trách sẽ gọi lại số chị đã đăng ký."
+        },
+        {
+          "id": "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u03",
+          "speaker_id": "a",
+          "ja": "いつまでに連絡がなければ、こちらにかけ直せばいいですか。",
+          "vi": "Nếu chưa có cuộc gọi thì đến lúc nào tôi nên gọi lại số này?"
+        },
+        {
+          "id": "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u04",
+          "speaker_id": "b",
+          "ja": "明日の夕方までに連絡がなければ、この受付番号でお問い合わせください。",
+          "vi": "Nếu đến chiều mai chưa có cuộc gọi, xin hỏi lại với mã tiếp nhận này."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u01": {
+            "kind": "original_extension"
+          },
+          "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u02": {
+            "kind": "original_extension"
+          },
+          "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u03": {
+            "kind": "original_extension"
+          },
+          "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "517bcb08-62db-5ccb-98fd-3396353f6b1d",
+      "event_id": "E05",
+      "context_vi": "Bạn sẽ vắng căn 201 lâu và định ngừng nước. Bạn hỏi trung tâm nước Tokyo ngày cần ghi.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "517bcb08-62db-5ccb-98fd-3396353f6b1d-u01",
+          "speaker_id": "a",
+          "ja": "来月十日に部屋を出て、しばらく戻りません。水道の使用中止日はいつにすればいいですか。",
+          "vi": "Mùng mười tháng sau tôi rời căn hộ và lâu mới quay lại. Nên ghi ngày ngừng nước là ngày nào?"
+        },
+        {
+          "id": "517bcb08-62db-5ccb-98fd-3396353f6b1d-u02",
+          "speaker_id": "b",
+          "ja": "最後に水を使う日を確認して、希望日をお申し出ください。",
+          "vi": "Xin xác định ngày cuối dùng nước rồi báo ngày chị muốn ngừng."
+        },
+        {
+          "id": "517bcb08-62db-5ccb-98fd-3396353f6b1d-u03",
+          "speaker_id": "a",
+          "ja": "掃除で十日にも使います。では、十日を希望します。",
+          "vi": "Mùng mười tôi còn dùng để dọn. Vậy tôi muốn ngừng ngày mùng mười."
+        },
+        {
+          "id": "517bcb08-62db-5ccb-98fd-3396353f6b1d-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。お申し込み内容を確認します。",
+          "vi": "Tôi hiểu. Tôi sẽ kiểm nội dung đăng ký."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "water"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "517bcb08-62db-5ccb-98fd-3396353f6b1d-u01": {
+            "kind": "original_extension"
+          },
+          "517bcb08-62db-5ccb-98fd-3396353f6b1d-u02": {
+            "kind": "original_extension"
+          },
+          "517bcb08-62db-5ccb-98fd-3396353f6b1d-u03": {
+            "kind": "original_extension"
+          },
+          "517bcb08-62db-5ccb-98fd-3396353f6b1d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "80768e2b-6773-5641-906b-746a1bbdc308",
+      "event_id": "E05",
+      "context_vi": "Bạn hỏi riêng công ty gas về việc có cần ở nhà lúc ngừng dịch vụ ở căn 201.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "80768e2b-6773-5641-906b-746a1bbdc308-u01",
+          "speaker_id": "a",
+          "ja": "旧居のガスを止める日、私が部屋にいる必要はありますか。",
+          "vi": "Ngày dừng gas nhà cũ, tôi có cần ở nhà không?"
+        },
+        {
+          "id": "80768e2b-6773-5641-906b-746a1bbdc308-u02",
+          "speaker_id": "b",
+          "ja": "通常は立会い不要ですが、建物の状況によって必要な場合があります。住所を確認しますね。",
+          "vi": "Thông thường không cần có mặt, nhưng tùy tình trạng tòa nhà có thể cần. Xin cho tôi kiểm địa chỉ."
+        },
+        {
+          "id": "80768e2b-6773-5641-906b-746a1bbdc308-u03",
+          "speaker_id": "a",
+          "ja": "中野区中央一丁目の二〇一号室です。入口はオートロックです。",
+          "vi": "Phòng 201, Chuo 1, Nakano. Cổng vào có khóa tự động."
+        },
+        {
+          "id": "80768e2b-6773-5641-906b-746a1bbdc308-u04",
+          "speaker_id": "b",
+          "ja": "その場合の立会い要否を担当に確認してお伝えします。",
+          "vi": "Tôi sẽ hỏi người phụ trách xem trường hợp này có cần chị hiện diện không rồi báo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gas"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "80768e2b-6773-5641-906b-746a1bbdc308-u01": {
+            "kind": "original_extension"
+          },
+          "80768e2b-6773-5641-906b-746a1bbdc308-u02": {
+            "kind": "original_extension"
+          },
+          "80768e2b-6773-5641-906b-746a1bbdc308-u03": {
+            "kind": "original_extension"
+          },
+          "80768e2b-6773-5641-906b-746a1bbdc308-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "81d3698a-848a-5eba-8e9c-23291a99660f",
+      "event_id": "E05",
+      "context_vi": "Ngày bàn giao căn 201 chưa chắc; bạn hỏi công ty điện khi nào cần báo nếu đổi ngày dừng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "81d3698a-848a-5eba-8e9c-23291a99660f-u01",
+          "speaker_id": "a",
+          "ja": "退去日がまだ決まっていません。停止日の変更が必要になったら、いつまでに連絡すればいいですか。",
+          "vi": "Tôi chưa chốt ngày rời nhà. Nếu cần đổi ngày dừng điện thì chậm nhất khi nào tôi phải báo?"
+        },
+        {
+          "id": "81d3698a-848a-5eba-8e9c-23291a99660f-u02",
+          "speaker_id": "b",
+          "ja": "お申し込み方法によって確認が必要です。受付番号はお持ちですか。",
+          "vi": "Cần kiểm theo cách chị đã đăng ký. Chị có mã tiếp nhận không?"
+        },
+        {
+          "id": "81d3698a-848a-5eba-8e9c-23291a99660f-u03",
+          "speaker_id": "a",
+          "ja": "はい、あります。期限を確認してから日付を決めたいです。",
+          "vi": "Có ạ. Tôi muốn kiểm hạn rồi mới chốt ngày."
+        },
+        {
+          "id": "81d3698a-848a-5eba-8e9c-23291a99660f-u04",
+          "speaker_id": "b",
+          "ja": "番号を伺い、今回の変更期限をお調べします。",
+          "vi": "Xin đọc mã, tôi sẽ tìm hạn đổi cho đăng ký này."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "81d3698a-848a-5eba-8e9c-23291a99660f-u01": {
+            "kind": "original_extension"
+          },
+          "81d3698a-848a-5eba-8e9c-23291a99660f-u02": {
+            "kind": "original_extension"
+          },
+          "81d3698a-848a-5eba-8e9c-23291a99660f-u03": {
+            "kind": "original_extension"
+          },
+          "81d3698a-848a-5eba-8e9c-23291a99660f-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "cff04644-ed3d-5831-9c38-d27f8e859659",
+      "event_id": "E05",
+      "context_vi": "Sau khi chốt ngày bàn giao căn 201 là mùng mười hai, bạn gọi lại công ty điện, nhắc mã tiếp nhận và ngày cũ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "cff04644-ed3d-5831-9c38-d27f8e859659-u01",
+          "speaker_id": "a",
+          "ja": "先日、停止日を相談した者です。受付番号は四五六七です。",
+          "vi": "Tôi đã hỏi về ngày dừng điện hôm trước. Mã tiếp nhận là 4567."
+        },
+        {
+          "id": "cff04644-ed3d-5831-9c38-d27f8e859659-u02",
+          "speaker_id": "b",
+          "ja": "確認します。現在は十日で受け付けていますね。",
+          "vi": "Tôi kiểm. Hiện đang ghi ngày mùng mười."
+        },
+        {
+          "id": "cff04644-ed3d-5831-9c38-d27f8e859659-u03",
+          "speaker_id": "a",
+          "ja": "引き渡しが十二日に決まったので、旧居の電気を十二日まで使いたいです。変更できますか。",
+          "vi": "Giờ đã chốt giao nhà ngày mười hai. Tôi muốn dùng điện nhà cũ đến hết ngày mười hai. Có đổi được không?"
+        },
+        {
+          "id": "cff04644-ed3d-5831-9c38-d27f8e859659-u04",
+          "speaker_id": "b",
+          "ja": "受付状況を見て、変更結果をお伝えします。",
+          "vi": "Tôi sẽ kiểm rồi báo kết quả đổi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "cff04644-ed3d-5831-9c38-d27f8e859659-u01": {
+            "kind": "original_extension"
+          },
+          "cff04644-ed3d-5831-9c38-d27f8e859659-u02": {
+            "kind": "original_extension"
+          },
+          "cff04644-ed3d-5831-9c38-d27f8e859659-u03": {
+            "kind": "original_extension"
+          },
+          "cff04644-ed3d-5831-9c38-d27f8e859659-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c29604f9-b737-5cc7-b0ef-e8486ea04588",
+      "event_id": "E05",
+      "context_vi": "Sau cuộc gọi đổi ngày điện, bạn phân biệt điện, nước và gas ở căn 201; tổng đài điện chỉ xác nhận điện, bạn tự liên hệ hai nơi còn lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiện ích",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c29604f9-b737-5cc7-b0ef-e8486ea04588-u01",
+          "speaker_id": "b",
+          "ja": "電気の停止日は十二日に変更できました。",
+          "vi": "Ngày dừng điện đã đổi sang mười hai."
+        },
+        {
+          "id": "c29604f9-b737-5cc7-b0ef-e8486ea04588-u02",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。こちらで確認できたのは電気だけですね。水道とガスは各窓口へ別に確認します。",
+          "vi": "Cảm ơn anh. Ở đây chỉ xác nhận được điện thôi nhỉ. Tôi sẽ kiểm nước và gas với từng nơi."
+        },
+        {
+          "id": "c29604f9-b737-5cc7-b0ef-e8486ea04588-u03",
+          "speaker_id": "b",
+          "ja": "はい。当社の受付は旧居の電気、十二日までです。",
+          "vi": "Vâng. Bên chúng tôi ghi điện nhà cũ dùng đến hết ngày mười hai."
+        },
+        {
+          "id": "c29604f9-b737-5cc7-b0ef-e8486ea04588-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。三つを同じ住所で混同しないよう、手元のメモも分けます。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi riêng từng dịch vụ để khỏi nhầm dù cùng địa chỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "tepco",
+          "water",
+          "gas"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c29604f9-b737-5cc7-b0ef-e8486ea04588-u01": {
+            "kind": "original_extension"
+          },
+          "c29604f9-b737-5cc7-b0ef-e8486ea04588-u02": {
+            "kind": "original_extension"
+          },
+          "c29604f9-b737-5cc7-b0ef-e8486ea04588-u03": {
+            "kind": "original_extension"
+          },
+          "c29604f9-b737-5cc7-b0ef-e8486ea04588-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

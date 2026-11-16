@@ -1,0 +1,923 @@
+{
+  "stage_uid": "e0651dbf-cc8b-50ae-b38d-1d073af8f37f",
+  "admin_sources": {
+    "instructions": {
+      "kind": "book",
+      "book_id": "B03",
+      "title": "しごとの日本語 ビジネスマナー編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編/chapters/19-Unit17-指示を受ける.md",
+      "start_line": 37,
+      "end_line": 46,
+      "use_vi": "Xác nhận số lượng, tên chi tiết, thời hạn và thứ tự thao tác trước khi bắt đầu."
+    },
+    "report": {
+      "kind": "book",
+      "book_id": "B03",
+      "title": "しごとの日本語 ビジネスマナー編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編/chapters/20-Unit18-報告・連絡・相談.md",
+      "start_line": 27,
+      "end_line": 40,
+      "use_vi": "Nêu tình trạng hiện tại, phần chưa xong và đổi kế hoạch."
+    },
+    "machine": {
+      "kind": "book",
+      "book_id": "B27",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "path": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/05-bai-04-kikai-no-toraburu.md",
+      "start_line": 75,
+      "end_line": 95,
+      "use_vi": "Từ vựng nói sự cố máy và hỏi người xử lý; không dùng bài như hướng dẫn vận hành."
+    },
+    "mhlw_train": {
+      "kind": "web",
+      "title": "MHLW — 外国人労働者の安全衛生管理",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000186714.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Nguồn chính thức về hướng dẫn an toàn phù hợp ngôn ngữ cho lao động nước ngoài; không suy thành quyền vận hành máy cụ thể."
+    },
+    "mhlw_abnormal": {
+      "kind": "web",
+      "title": "MHLW — Common workplace safety material, chapter 6",
+      "url": "https://www.mhlw.go.jp/content/001499691.pdf",
+      "accessed": "2026-11-16",
+      "use_vi": "Khi thấy bất thường, dừng công việc và báo người liên quan; đoạn hội thoại không chỉ thao tác sửa máy."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "3d91a408-4c4a-5c6d-94db-dfd88768d524",
+      "event_id": "E01",
+      "context_vi": "Ngày đầu tại xưởng Aoba hư cấu, bạn là công nhân nữ Linh. Bạn hỏi giám sát nam Mori khu làm việc hôm nay và ai trực tiếp chỉ mình.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3d91a408-4c4a-5c6d-94db-dfd88768d524-u01",
+          "speaker_id": "a",
+          "ja": "今日はどこで働きますか。誰に聞けばいいですか。",
+          "vi": "Hôm nay tôi làm ở đâu? Tôi hỏi ai ạ?"
+        },
+        {
+          "id": "3d91a408-4c4a-5c6d-94db-dfd88768d524-u02",
+          "speaker_id": "b",
+          "ja": "Aの作業台です。今日は私が説明します。",
+          "vi": "Ở bàn làm việc A. Hôm nay tôi sẽ hướng dẫn chị."
+        },
+        {
+          "id": "3d91a408-4c4a-5c6d-94db-dfd88768d524-u03",
+          "speaker_id": "a",
+          "ja": "Aの台で、森さんに聞きます。",
+          "vi": "Bàn A, tôi hỏi anh Mori nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions",
+          "mhlw_train"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3d91a408-4c4a-5c6d-94db-dfd88768d524-u01": {
+            "kind": "original_extension"
+          },
+          "3d91a408-4c4a-5c6d-94db-dfd88768d524-u02": {
+            "kind": "original_extension"
+          },
+          "3d91a408-4c4a-5c6d-94db-dfd88768d524-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8929d022-135d-581f-9beb-18751e50acdc",
+      "event_id": "E01",
+      "context_vi": "Mori giao bạn ở bàn A kiểm 20 chi tiết loại P trong lô hư cấu hôm nay. Bạn nhắc lại công đoạn và số lượng trước khi làm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8929d022-135d-581f-9beb-18751e50acdc-u01",
+          "speaker_id": "b",
+          "ja": "今日はPの部品を二十個、見てください。",
+          "vi": "Hôm nay chị kiểm 20 chi tiết loại P."
+        },
+        {
+          "id": "8929d022-135d-581f-9beb-18751e50acdc-u02",
+          "speaker_id": "a",
+          "ja": "Pの部品を二十個、確認するんですね。",
+          "vi": "Tôi kiểm 20 chi tiết loại P nhỉ."
+        },
+        {
+          "id": "8929d022-135d-581f-9beb-18751e50acdc-u03",
+          "speaker_id": "b",
+          "ja": "はい。まず見本を見ましょう。",
+          "vi": "Đúng. Trước tiên xem mẫu nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8929d022-135d-581f-9beb-18751e50acdc-u01": {
+            "kind": "original_extension"
+          },
+          "8929d022-135d-581f-9beb-18751e50acdc-u02": {
+            "kind": "original_extension"
+          },
+          "8929d022-135d-581f-9beb-18751e50acdc-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "90704231-e874-5a56-b657-12825e2f2c75",
+      "event_id": "E01",
+      "context_vi": "Tiếp việc kiểm 20 chi tiết P: khay có nhãn P và B nhìn gần giống. Mori đưa mẫu P cho bạn so, bạn hỏi lại trước khi chạm lô.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "90704231-e874-5a56-b657-12825e2f2c75-u01",
+          "speaker_id": "a",
+          "ja": "PとBの箱があります。今日の部品は、この見本と同じPですか。",
+          "vi": "Có hộp P và B. Chi tiết hôm nay là loại P giống mẫu này ạ?"
+        },
+        {
+          "id": "90704231-e874-5a56-b657-12825e2f2c75-u02",
+          "speaker_id": "b",
+          "ja": "はい、Pです。Bは今日は使いません。",
+          "vi": "Đúng, P. Hôm nay không dùng B."
+        },
+        {
+          "id": "90704231-e874-5a56-b657-12825e2f2c75-u03",
+          "speaker_id": "a",
+          "ja": "Pだけ二十個ですね。",
+          "vi": "Chỉ 20 chi tiết P nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "90704231-e874-5a56-b657-12825e2f2c75-u01": {
+            "kind": "original_extension"
+          },
+          "90704231-e874-5a56-b657-12825e2f2c75-u02": {
+            "kind": "original_extension"
+          },
+          "90704231-e874-5a56-b657-12825e2f2c75-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b4a74c62-aafd-595a-af71-61b265dd05a1",
+      "event_id": "E01",
+      "context_vi": "Ở bàn A của xưởng Aoba hư cấu, có hai khay vật liệu xanh và trắng. Bạn hỏi Mori khay nào dành cho lô hôm nay trước khi lấy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b4a74c62-aafd-595a-af71-61b265dd05a1-u01",
+          "speaker_id": "a",
+          "ja": "今日の材料は、青い箱ですか、白い箱ですか。",
+          "vi": "Vật liệu hôm nay ở khay xanh hay khay trắng ạ?"
+        },
+        {
+          "id": "b4a74c62-aafd-595a-af71-61b265dd05a1-u02",
+          "speaker_id": "b",
+          "ja": "青い箱です。白い箱は別の仕事です。",
+          "vi": "Khay xanh. Khay trắng cho việc khác."
+        },
+        {
+          "id": "b4a74c62-aafd-595a-af71-61b265dd05a1-u03",
+          "speaker_id": "a",
+          "ja": "青い箱ですね。",
+          "vi": "Khay xanh nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b4a74c62-aafd-595a-af71-61b265dd05a1-u01": {
+            "kind": "original_extension"
+          },
+          "b4a74c62-aafd-595a-af71-61b265dd05a1-u02": {
+            "kind": "original_extension"
+          },
+          "b4a74c62-aafd-595a-af71-61b265dd05a1-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "419d9f66-df62-5662-9d60-8f1c7e831b93",
+      "event_id": "E02",
+      "context_vi": "Trong xưởng Aoba hư cấu, bạn thấy biển khu B nhưng chưa được nói có thể vào không. Bạn hỏi Mori phạm vi mình được vào hôm nay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "419d9f66-df62-5662-9d60-8f1c7e831b93-u01",
+          "speaker_id": "a",
+          "ja": "今日はBの場所に入ってもいいですか。",
+          "vi": "Hôm nay tôi vào khu B được không ạ?"
+        },
+        {
+          "id": "419d9f66-df62-5662-9d60-8f1c7e831b93-u02",
+          "speaker_id": "b",
+          "ja": "まだ確認中です。今はAの場所で待ってください。",
+          "vi": "Tôi còn đang kiểm tra. Giờ chị đợi ở khu A nhé."
+        },
+        {
+          "id": "419d9f66-df62-5662-9d60-8f1c7e831b93-u03",
+          "speaker_id": "a",
+          "ja": "わかりました。Aで待ちます。",
+          "vi": "Tôi hiểu. Tôi đợi ở khu A."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions",
+          "mhlw_train"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "419d9f66-df62-5662-9d60-8f1c7e831b93-u01": {
+            "kind": "original_extension"
+          },
+          "419d9f66-df62-5662-9d60-8f1c7e831b93-u02": {
+            "kind": "original_extension"
+          },
+          "419d9f66-df62-5662-9d60-8f1c7e831b93-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3569ada8-bfc7-59e9-8497-7142a23db772",
+      "event_id": "E02",
+      "context_vi": "Tiếp khi Mori chưa cho câu trả lời về khu B: anh cần kiểm lịch máy ở khu đó và sẽ quay lại nói. Bạn không vào trước.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3569ada8-bfc7-59e9-8497-7142a23db772-u01",
+          "speaker_id": "b",
+          "ja": "Bの機械の予定を見てから伝えます。",
+          "vi": "Tôi sẽ xem lịch máy ở khu B rồi báo chị."
+        },
+        {
+          "id": "3569ada8-bfc7-59e9-8497-7142a23db772-u02",
+          "speaker_id": "a",
+          "ja": "はい。確認が終わるまで、Aにいます。",
+          "vi": "Vâng. Tôi ở khu A tới khi anh kiểm xong."
+        },
+        {
+          "id": "3569ada8-bfc7-59e9-8497-7142a23db772-u03",
+          "speaker_id": "b",
+          "ja": "お願いします。",
+          "vi": "Nhờ chị nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3569ada8-bfc7-59e9-8497-7142a23db772-u01": {
+            "kind": "original_extension"
+          },
+          "3569ada8-bfc7-59e9-8497-7142a23db772-u02": {
+            "kind": "original_extension"
+          },
+          "3569ada8-bfc7-59e9-8497-7142a23db772-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2d9c0d68-f660-5758-bae3-34c8dd7b99c1",
+      "event_id": "E02",
+      "context_vi": "Ở Aoba, bạn được chỉ tới một máy nhưng chưa từng được Mori hướng dẫn cách dùng. Bạn nói rõ điều này và xin người chỉ, không thao tác thử.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u01",
+          "speaker_id": "a",
+          "ja": "この機械の使い方は、まだ聞いていません。教えてください。",
+          "vi": "Tôi chưa được hướng dẫn dùng máy này. Anh chỉ giúp tôi."
+        },
+        {
+          "id": "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u02",
+          "speaker_id": "b",
+          "ja": "わかりました。先に説明します。今は触らないでください。",
+          "vi": "Tôi hiểu. Tôi sẽ hướng dẫn trước. Giờ chị chưa chạm vào máy nhé."
+        },
+        {
+          "id": "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u03",
+          "speaker_id": "a",
+          "ja": "はい、待ちます。",
+          "vi": "Vâng, tôi chờ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions",
+          "mhlw_train"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u01": {
+            "kind": "original_extension"
+          },
+          "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u02": {
+            "kind": "original_extension"
+          },
+          "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3",
+      "event_id": "E02",
+      "context_vi": "Tiếp khi Mori bảo chưa chạm vào máy trước buổi hướng dẫn. Bạn hỏi có thể nhận việc khác trong lúc chờ; anh giao kiểm nhãn trên bàn A.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u01",
+          "speaker_id": "a",
+          "ja": "機械はまだ使いません。待つ間、ほかの仕事はありますか。",
+          "vi": "Tôi chưa dùng máy. Trong lúc chờ có việc khác không ạ?"
+        },
+        {
+          "id": "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u02",
+          "speaker_id": "b",
+          "ja": "Aの台で、ラベルを十枚数えてください。",
+          "vi": "Ở bàn A, chị đếm 10 nhãn nhé."
+        },
+        {
+          "id": "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u03",
+          "speaker_id": "a",
+          "ja": "Aの台で十枚ですね。",
+          "vi": "10 nhãn ở bàn A nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions",
+          "mhlw_train"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u01": {
+            "kind": "original_extension"
+          },
+          "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u02": {
+            "kind": "original_extension"
+          },
+          "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0",
+      "event_id": "E02",
+      "context_vi": "Ở xưởng Aoba hư cấu, bạn đã kiểm một lô đầu nhưng chưa biết ai duyệt trước khi tiếp tục. Bạn hỏi Mori người xác nhận lô đó.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u01",
+          "speaker_id": "a",
+          "ja": "最初の分は終わりました。次を始める前に、誰が確認しますか。",
+          "vi": "Tôi đã xong lô đầu. Trước khi làm tiếp, ai kiểm lô này ạ?"
+        },
+        {
+          "id": "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u02",
+          "speaker_id": "b",
+          "ja": "私が確認します。ここに置いてください。",
+          "vi": "Tôi sẽ kiểm. Chị để ở đây nhé."
+        },
+        {
+          "id": "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u03",
+          "speaker_id": "a",
+          "ja": "はい。確認を待ちます。",
+          "vi": "Vâng. Tôi chờ anh kiểm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions",
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u01": {
+            "kind": "original_extension"
+          },
+          "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u02": {
+            "kind": "original_extension"
+          },
+          "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d4443e64-b3ec-589d-ae18-b5c50f9552d8",
+      "event_id": "E03",
+      "context_vi": "Bạn được giao dùng vật liệu nhãn P ở Aoba, nhưng khay đang trước mặt ghi B. Bạn báo Mori sự lệch nhãn và chưa bắt đầu lô.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d4443e64-b3ec-589d-ae18-b5c50f9552d8-u01",
+          "speaker_id": "a",
+          "ja": "指示はPですが、この箱にはBと書いてあります。まだ使っていません。",
+          "vi": "Chỉ dẫn là P nhưng hộp này ghi B. Tôi chưa dùng."
+        },
+        {
+          "id": "d4443e64-b3ec-589d-ae18-b5c50f9552d8-u02",
+          "speaker_id": "b",
+          "ja": "教えてくれてありがとう。私が確認します。",
+          "vi": "Cảm ơn chị đã báo. Tôi sẽ kiểm tra."
+        },
+        {
+          "id": "d4443e64-b3ec-589d-ae18-b5c50f9552d8-u03",
+          "speaker_id": "a",
+          "ja": "ここで待ちます。",
+          "vi": "Tôi chờ ở đây."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions",
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d4443e64-b3ec-589d-ae18-b5c50f9552d8-u01": {
+            "kind": "original_extension"
+          },
+          "d4443e64-b3ec-589d-ae18-b5c50f9552d8-u02": {
+            "kind": "original_extension"
+          },
+          "d4443e64-b3ec-589d-ae18-b5c50f9552d8-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e4ac798b-1ded-5080-bf17-402200ccc03a",
+      "event_id": "E03",
+      "context_vi": "Ở khu A xưởng Aoba hư cấu, chiếc máy đang chạy phát tiếng khác thường. Bạn đã dừng công việc và báo Mori vị trí; bạn chưa mở hay sửa máy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u01",
+          "speaker_id": "a",
+          "ja": "Aの機械から、いつもと違う音がします。作業を止めました。",
+          "vi": "Máy ở khu A phát tiếng khác thường. Tôi đã dừng việc."
+        },
+        {
+          "id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u02",
+          "speaker_id": "b",
+          "ja": "わかりました。近づかず、そこから離れて待ってください。私が見ます。",
+          "vi": "Tôi rõ rồi. Chị đừng lại gần, hãy rời khỏi đó và chờ. Tôi sẽ xem."
+        },
+        {
+          "id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u03",
+          "speaker_id": "a",
+          "ja": "はい。機械には触りません。",
+          "vi": "Vâng. Tôi sẽ không chạm vào máy."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "machine",
+          "report",
+          "mhlw_abnormal"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e4ac798b-1ded-5080-bf17-402200ccc03a-u01": {
+            "kind": "original_extension"
+          },
+          "e4ac798b-1ded-5080-bf17-402200ccc03a-u02": {
+            "kind": "original_extension"
+          },
+          "e4ac798b-1ded-5080-bf17-402200ccc03a-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "47db297c-5a09-502b-a1aa-7c8f5f54f6bf",
+      "event_id": "E03",
+      "context_vi": "Tiếp khi bạn báo hộp ghi B thay vì P. Mori đã kiểm, bảo để hộp đó riêng và chuyển bạn sang việc đếm 10 nhãn ở bàn A; bạn nhắc lại phạm vi mới.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "47db297c-5a09-502b-a1aa-7c8f5f54f6bf-u01",
+          "speaker_id": "b",
+          "ja": "その箱は使わないでください。Aの台でラベルを十枚数えてください。",
+          "vi": "Đừng dùng hộp đó. Chị đếm 10 nhãn ở bàn A nhé."
+        },
+        {
+          "id": "47db297c-5a09-502b-a1aa-7c8f5f54f6bf-u02",
+          "speaker_id": "a",
+          "ja": "箱は使わず、Aの台でラベル十枚ですね。",
+          "vi": "Không dùng hộp đó, đếm 10 nhãn ở bàn A nhỉ."
+        },
+        {
+          "id": "47db297c-5a09-502b-a1aa-7c8f5f54f6bf-u03",
+          "speaker_id": "b",
+          "ja": "はい。それだけお願いします。",
+          "vi": "Đúng. Chỉ việc đó thôi nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "instructions",
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "47db297c-5a09-502b-a1aa-7c8f5f54f6bf-u01": {
+            "kind": "original_extension"
+          },
+          "47db297c-5a09-502b-a1aa-7c8f5f54f6bf-u02": {
+            "kind": "original_extension"
+          },
+          "47db297c-5a09-502b-a1aa-7c8f5f54f6bf-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "21ccfaab-0d52-5667-b1dd-14906c7f6608",
+      "event_id": "E03",
+      "context_vi": "Tiếp sau khi máy khu A phát tiếng lạ và bạn đã dừng việc, rời khỏi máy. Mori đến; bạn nêu đúng điều nghe thấy và nói mình chưa mở máy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "giám sát Mori",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "21ccfaab-0d52-5667-b1dd-14906c7f6608-u01",
+          "speaker_id": "b",
+          "ja": "どの機械ですか。何がありましたか。",
+          "vi": "Máy nào? Có chuyện gì?"
+        },
+        {
+          "id": "21ccfaab-0d52-5667-b1dd-14906c7f6608-u02",
+          "speaker_id": "a",
+          "ja": "Aの機械です。変な音がしました。作業を止めて、何も開けていません。",
+          "vi": "Máy khu A. Nó phát tiếng lạ. Tôi đã dừng việc và chưa mở gì cả."
+        },
+        {
+          "id": "21ccfaab-0d52-5667-b1dd-14906c7f6608-u03",
+          "speaker_id": "b",
+          "ja": "わかりました。ここで待ってください。",
+          "vi": "Tôi rõ rồi. Chị đợi ở đây."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "machine",
+          "report",
+          "mhlw_abnormal"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "21ccfaab-0d52-5667-b1dd-14906c7f6608-u01": {
+            "kind": "original_extension"
+          },
+          "21ccfaab-0d52-5667-b1dd-14906c7f6608-u02": {
+            "kind": "original_extension"
+          },
+          "21ccfaab-0d52-5667-b1dd-14906c7f6608-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e16c63ef-4ff6-56a3-a6e1-0a8359da4ca4",
+      "event_id": "E04",
+      "context_vi": "Cuối ca ở xưởng Aoba hư cấu, bạn đã kiểm 20 chi tiết P, nhưng lô đầu vẫn chờ Mori duyệt. Bạn báo người ca sau nam hai trạng thái riêng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người ca sau",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e16c63ef-4ff6-56a3-a6e1-0a8359da4ca4-u01",
+          "speaker_id": "a",
+          "ja": "Pの部品を二十個見ました。最初の分は森さんの確認待ちです。",
+          "vi": "Tôi đã kiểm 20 chi tiết P. Lô đầu còn chờ anh Mori duyệt."
+        },
+        {
+          "id": "e16c63ef-4ff6-56a3-a6e1-0a8359da4ca4-u02",
+          "speaker_id": "b",
+          "ja": "二十個終わって、確認はまだですね。",
+          "vi": "20 chi tiết đã xong, còn phần duyệt thì chưa nhỉ."
+        },
+        {
+          "id": "e16c63ef-4ff6-56a3-a6e1-0a8359da4ca4-u03",
+          "speaker_id": "a",
+          "ja": "はい、まだです。",
+          "vi": "Đúng, chưa duyệt."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e16c63ef-4ff6-56a3-a6e1-0a8359da4ca4-u01": {
+            "kind": "original_extension"
+          },
+          "e16c63ef-4ff6-56a3-a6e1-0a8359da4ca4-u02": {
+            "kind": "original_extension"
+          },
+          "e16c63ef-4ff6-56a3-a6e1-0a8359da4ca4-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6e2dbe83-fa52-5013-8fe8-b4c68141684b",
+      "event_id": "E04",
+      "context_vi": "Tiếp bàn giao lô P: người ca sau tưởng 20 chi tiết đã được Mori duyệt. Bạn sửa ngay, phân biệt “đã kiểm” và “đã duyệt”.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người ca sau",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6e2dbe83-fa52-5013-8fe8-b4c68141684b-u01",
+          "speaker_id": "b",
+          "ja": "森さんの確認も終わりましたか。",
+          "vi": "Anh Mori đã duyệt xong luôn rồi à?"
+        },
+        {
+          "id": "6e2dbe83-fa52-5013-8fe8-b4c68141684b-u02",
+          "speaker_id": "a",
+          "ja": "いいえ。私が二十個見ただけです。森さんの確認はまだです。",
+          "vi": "Chưa. Tôi mới kiểm 20 chi tiết thôi. Anh Mori chưa duyệt."
+        },
+        {
+          "id": "6e2dbe83-fa52-5013-8fe8-b4c68141684b-u03",
+          "speaker_id": "b",
+          "ja": "わかりました。まだ次は始めません。",
+          "vi": "Tôi rõ rồi. Tôi chưa làm lô tiếp theo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6e2dbe83-fa52-5013-8fe8-b4c68141684b-u01": {
+            "kind": "original_extension"
+          },
+          "6e2dbe83-fa52-5013-8fe8-b4c68141684b-u02": {
+            "kind": "original_extension"
+          },
+          "6e2dbe83-fa52-5013-8fe8-b4c68141684b-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "4843e7a7-8342-5f91-9e47-60d2ed0d37bf",
+      "event_id": "E04",
+      "context_vi": "Tiếp sau khi bạn sửa hiểu nhầm về duyệt lô P. Bạn hỏi người ca sau sẽ hỏi Mori trước khi làm tiếp không; anh ấy xác nhận đúng đầu mối.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người ca sau",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "4843e7a7-8342-5f91-9e47-60d2ed0d37bf-u01",
+          "speaker_id": "a",
+          "ja": "次を始める前に、森さんに確認しますね。",
+          "vi": "Trước khi làm tiếp, anh sẽ hỏi anh Mori nhỉ."
+        },
+        {
+          "id": "4843e7a7-8342-5f91-9e47-60d2ed0d37bf-u02",
+          "speaker_id": "b",
+          "ja": "はい。森さんに聞いてから始めます。",
+          "vi": "Đúng. Tôi hỏi anh Mori rồi mới làm."
+        },
+        {
+          "id": "4843e7a7-8342-5f91-9e47-60d2ed0d37bf-u03",
+          "speaker_id": "a",
+          "ja": "お願いします。お疲れさまでした。",
+          "vi": "Nhờ anh. Anh vất vả rồi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "4843e7a7-8342-5f91-9e47-60d2ed0d37bf-u01": {
+            "kind": "original_extension"
+          },
+          "4843e7a7-8342-5f91-9e47-60d2ed0d37bf-u02": {
+            "kind": "original_extension"
+          },
+          "4843e7a7-8342-5f91-9e47-60d2ed0d37bf-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
