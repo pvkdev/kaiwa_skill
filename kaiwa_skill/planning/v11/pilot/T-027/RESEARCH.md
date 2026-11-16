@@ -10,7 +10,9 @@ Các tiệm, mẫu máy/sợi và số tiền/giờ/thông số trong bối cả
 
 Nguồn ngoài đã mở và đọc ngày 2026-11-16: [クロバー株式会社 — ゲージを測る](https://clover.co.jp/seihin/amimonoyouhin.html) giải thích thử đan khoảng 15 cm, đếm mũi/hàng trong 10 cm và cân nhắc chỉnh cỡ kim khi kết quả lệch. [Trang sản phẩm gauge](https://clover.co.jp/products/55803) cho biết dụng cụ đo gauge, không phải bằng chứng cho nhãn sợi giả định. Chỉ áp dụng nguyên lý cho S032/S033/S036; lời nhân viên rằng nhãn sợi tại quầy có 6 mm là dữ kiện hư cấu của cảnh.
 
-## Rà từng cảnh
+## Rà từng cảnh — lịch sử trước lượt sửa 2026-11-16
+
+Các số lượt và hash dưới đây ghi lại bản trước khi sửa S010, S028–S030, S033–S034 và S036; chúng không còn là dấu vân tay hiện hành. Bản rà mới của đủ 36 cảnh, với lượt người học, cách hiểu của người đối diện, điểm quyết định JA/VI và hash từng cảnh, nằm ở `status.json` → `worker_reassessment_2026_11_16`. Root sẽ cập nhật `root_review` sau QA cuối.
 
 Mỗi dòng ghi ba lượt: (1) lượt người học làm việc đích và đáp lời chốt, (2) mạch JA/VI và trạng thái biết/không biết qua lượt kề, (3) thử nói cả hai vai cùng khác biệt của nhánh. Nội dung và trạng thái gắn với hash từng cảnh trong `status.json`.
 
