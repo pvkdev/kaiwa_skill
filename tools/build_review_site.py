@@ -11,6 +11,10 @@ OUTPUT = ROOT / "docs"
 
 def build():
     pointer = roadmap.read(ROOT / "kaiwa_skill/planning/CURRENT_ROADMAP.json")
+    if pointer['version'] in ('6.4', '6.5'):
+        from roadmap_topic_shadowing import build as build_topic
+        build_topic(pointer['version'], publish=True)
+        return
     source = ROOT / pointer["roadmap"]
     stages = roadmap.rows(source)
     directory = source.parent

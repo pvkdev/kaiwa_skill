@@ -5,6 +5,8 @@ description: Tuyển bài Speak Japanese và pack shadowing từ kho sách clean
 
 # Gán bài và pack vào chặng
 
+V6.4/V6.5 dùng [kaiwa-shadowing-curation](../kaiwa-shadowing-curation/SKILL.md). Quy tắc nguyên pack/CD và phủ hết tài nguyên bên dưới chỉ áp dụng V6.0–V6.3. V6.5 tuyển câu/đối đáp sát topic, tối đa một node hoặc không có shadowing, giữ Speak Japanese nội bộ để làm V7 sau.
+
 Nhận một UID/display code và thư mục làm việc do điều phối cấp. Đọc SOURCE_POLICY.json tại release được điều phối giao (hiện là kaiwa_skill/planning/v6_1). Đặt KAIWA_ROADMAP_DIR trỏ thư mục đó khi dùng helper. V6.0 trong planning/v6 dành cho pilot lịch sử. Đọc tất cả sự kiện, tình huống, mục tiêu và trọng tâm của đúng chặng trong JSONL V5. Quyết định theo topic, vai, hành vi nghe/nói và độ khó của cả đơn vị. Nhãn cấp sách và thứ tự bài chỉ gợi ý.
 
 Tìm theo hai chiều. Tra topic, đồng nghĩa Việt/Nhật trong catalog27/source_index.jsonl, annotations, knowledge/*/_meta/units.jsonl, mục lục và tiêu đề. Xem cả những bài có chức năng bổ sung cho tình huống (mở lời, hỏi lại, sửa hiểu lầm, thương lượng, kết thúc). Xem lại các nhóm bài/pack có triển vọng trong danh mục đã phép để tránh bỏ sót do từ khóa. Đọc nguyên đơn vị tại nguồn clean trước khi chọn. Nhãn mục lục là bằng chứng ứng viên. Phân biệt “tìm qua chỉ mục”, “đã đọc trọn”, và “chưa đủ căn cứ”. Báo phạm vi quét thực tế. Không tự quét/gán các chặng ngoài phân công.

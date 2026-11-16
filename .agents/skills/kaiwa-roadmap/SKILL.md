@@ -5,6 +5,8 @@ description: Dựng, phục hồi, kiểm và xuất khung lộ trình Kaiwa V6 
 
 # Điều phối lộ trình Kaiwa
 
+V6.4/V6.5 chuyển sang [kaiwa-shadowing-curation](../kaiwa-shadowing-curation/SKILL.md) và tools/roadmap_topic_shadowing.py. Chạy `py -X utf8 tools/roadmap_topic_shadowing.py 6.4 --publish` để ẩn mềm, commit riêng; sau 289 decision đã duyệt chạy cùng lệnh với 6.5 rồi commit riêng. Dữ liệu admin/ và learner.json tách riêng. Nội dung MD giữ snapshot V6.3 bằng đường dẫn tương đối và hash. Không dùng helper build/verify lịch sử V6.0–V6.3 cho release mới. build_review_site.py tự route theo CURRENT_ROADMAP.json. V7 chưa triển khai.
+
 Làm việc từ gốc repo. Yêu cầu gốc ở `kaiwa_skill/planning/v6/CHECKPOINT_YEU_CAU.md`, chính sách đọc bằng máy ở cùng thư mục trong `SOURCE_POLICY.json`. V5 có 289 UID với sự kiện, tình huống, liên kết tiếp nối, thứ tự và cấp do người dùng chốt. V6.0 xuất mỗi hàng V5 nguyên nội dung, thêm đối tượng v6 chứa trạng thái, quyết định và thứ tự học. Phạm vi pilot được đọc từ policy. V5 tiếp tục là con trỏ sản xuất trong thời gian duyệt pilot.
 
 ## Từ phân công đến bản review

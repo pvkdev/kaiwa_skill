@@ -351,6 +351,7 @@ function nodesFor(stage) {
       case "speak_japanese_video": kind = "speak_video"; title = selection.title; break;
       case "speak_japanese_examples": kind = selection.support ? "reading" : "speak_shadow"; title = selection.title; break;
       case "independent_shadowing": kind = selection.support ? "reading" : "shadowing"; title = selection.title; break;
+      case "merged_shadowing": kind = "shadowing"; title = "Shadowing tổng hợp"; break;
       case "stage_lecture": kind = "lecture"; title = "Kiến thức tổng hợp của chặng"; break;
       case "v5_situations": kind = "situations"; title = "Các tình huống thực hành"; break;
       case "live_challenges": kind = "challenge"; title = "Vận dụng cùng Live AI"; break;
@@ -444,6 +445,7 @@ function renderHeading() {
 function renderProvenance(selection) {
   const p = selection.provenance;
   const detail = make("details", "provenance");
+  if (!p) { detail.hidden = true; return detail; }
   detail.append(make("summary", "", "Nguồn & ghi chú biên tập"));
   detail.append(make("p", "", selection.book_id + " · " + p.book_title), make("p", "", p.title_ja));
   detail.append(make("p", "", p.boundary));
@@ -477,6 +479,22 @@ function renderBody(node, body) {
     case "speak_shadow":
     case "shadowing":
     case "reading": {
+      if (current.shadowing && !node.selection) {
+        const list = make("div", "reading");
+        for (const item of current.shadowing.items) {
+          const group = make("section", "shadowing-item");
+          group.append(make("p", "quiet", item.type === "single_sentence" ? "Câu đơn" : "Hội thoại"));
+          const speakers = new Map(item.speakers.map(s => [s.id, s]));
+          for (const turn of item.turns) {
+            const speaker = speakers.get(turn.speaker_id);
+            group.append(make("p", "roles", speaker.role_vi + " · " + (speaker.gender === "male" ? "Giọng nam" : "Giọng nữ")),
+              make("p", "", turn.ja), make("p", "quiet", turn.vi));
+          }
+          list.append(group);
+        }
+        body.append(list);
+        break;
+      }
       const reading = make("div", "reading");
       reading.innerHTML = course.content[node.selection.content_key];
       body.append(reading, renderProvenance(node.selection));
