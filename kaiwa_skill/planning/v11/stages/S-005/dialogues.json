@@ -1,0 +1,967 @@
+{
+  "stage_uid": "1898f652-0310-5555-af05-963595fbf83b",
+  "admin_sources": {
+    "housing": {
+      "kind": "book",
+      "book_id": "B08",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "path": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700/chapters/04-part4-bamen.md",
+      "start_line": 583,
+      "end_line": 609,
+      "use_vi": "Nêu nhu cầu ở một mình, gần ga, xem phòng; đoạn sách nhắc hỏi khoản ngoài tiền thuê."
+    },
+    "repeat": {
+      "kind": "book",
+      "book_id": "B07",
+      "title": "すぐに使える 日本語会話 超ミニフレーズ200",
+      "path": "kaiwa_skill/knowledge/すぐに使える 日本語会話 超ミニフレーズ200/chapters/09-part2-response.md",
+      "start_line": 198,
+      "end_line": 209,
+      "use_vi": "Hỏi lại khoản nghe chưa rõ; vận dụng ở phí hằng tháng."
+    },
+    "w_mlit": {
+      "kind": "web",
+      "title": "国土交通省 — Support for Foreign Nationals in Looking for Rental Housing",
+      "url": "https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk3_000017.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Trang hướng dẫn quốc gia liệt kê các khoản cần hỏi khi tìm và ký thuê nhà; số tiền cụ thể của căn trong bài là giả định."
+    },
+    "w_ur": {
+      "kind": "web",
+      "title": "UR賃貸住宅 — 賃貸借契約の初期費用の相場は？",
+      "url": "https://www.ur-net.go.jp/chintai/college/202504/000581.html",
+      "accessed": "2026-11-16",
+      "use_vi": "Giải thích khoản ban đầu và 管理費/共益費 có thể tính ngoài tiền thuê; cần xác nhận theo căn cụ thể, không suy phí phổ quát."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "12973094-d6e4-52cc-9279-1c12793753d4",
+      "event_id": "E01",
+      "context_vi": "Tại văn phòng môi giới, bạn muốn ở gần ga Aoba. Bạn có thể trả tối đa 70.000 yên mỗi tháng tiền thuê và hỏi xem có phòng phù hợp không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "12973094-d6e4-52cc-9279-1c12793753d4-u01",
+          "speaker_id": "a",
+          "ja": "青葉駅の近くで部屋を探しています。家賃は七万円までです。",
+          "vi": "Tôi đang tìm phòng gần ga Aoba. Tiền thuê tối đa 70.000 yên một tháng ạ."
+        },
+        {
+          "id": "12973094-d6e4-52cc-9279-1c12793753d4-u02",
+          "speaker_id": "b",
+          "ja": "わかりました。駅から近い部屋を見ますね。",
+          "vi": "Tôi hiểu rồi. Để tôi tìm phòng gần ga nhé."
+        },
+        {
+          "id": "12973094-d6e4-52cc-9279-1c12793753d4-u03",
+          "speaker_id": "a",
+          "ja": "はい、お願いします。",
+          "vi": "Vâng, nhờ anh."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "12973094-d6e4-52cc-9279-1c12793753d4-u01": {
+            "kind": "original_extension"
+          },
+          "12973094-d6e4-52cc-9279-1c12793753d4-u02": {
+            "kind": "original_extension"
+          },
+          "12973094-d6e4-52cc-9279-1c12793753d4-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "02816a04-fab4-50e8-9ef5-b8a1a687eaff",
+      "event_id": "E01",
+      "context_vi": "Nhân viên hỏi bạn sẽ ở một mình hay cùng người khác. Bạn dự định sống một mình.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "02816a04-fab4-50e8-9ef5-b8a1a687eaff-u01",
+          "speaker_id": "b",
+          "ja": "何人で住みますか。",
+          "vi": "Chị sẽ ở mấy người ạ?"
+        },
+        {
+          "id": "02816a04-fab4-50e8-9ef5-b8a1a687eaff-u02",
+          "speaker_id": "a",
+          "ja": "一人で住みます。",
+          "vi": "Tôi ở một mình ạ."
+        },
+        {
+          "id": "02816a04-fab4-50e8-9ef5-b8a1a687eaff-u03",
+          "speaker_id": "b",
+          "ja": "わかりました。一人用の部屋を探します。",
+          "vi": "Tôi hiểu. Để tôi tìm phòng cho một người."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "02816a04-fab4-50e8-9ef5-b8a1a687eaff-u01": {
+            "kind": "original_extension"
+          },
+          "02816a04-fab4-50e8-9ef5-b8a1a687eaff-u02": {
+            "kind": "original_extension"
+          },
+          "02816a04-fab4-50e8-9ef5-b8a1a687eaff-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "06e9eb1c-74bc-54b9-8630-5581c7fb892b",
+      "event_id": "E01",
+      "context_vi": "Bạn đi tàu hằng ngày trên tuyến đi qua ga Aoba. Ở văn phòng môi giới, bạn muốn biết có phòng gần ga đó không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "06e9eb1c-74bc-54b9-8630-5581c7fb892b-u01",
+          "speaker_id": "a",
+          "ja": "毎日、青葉駅を使います。駅の近くに部屋はありますか。",
+          "vi": "Ngày nào tôi cũng đi qua ga Aoba. Có phòng gần ga không ạ?"
+        },
+        {
+          "id": "06e9eb1c-74bc-54b9-8630-5581c7fb892b-u02",
+          "speaker_id": "b",
+          "ja": "一つあります。駅から歩いて十分です。",
+          "vi": "Có một phòng. Đi bộ từ ga mất mười phút."
+        },
+        {
+          "id": "06e9eb1c-74bc-54b9-8630-5581c7fb892b-u03",
+          "speaker_id": "a",
+          "ja": "その部屋を見たいです。",
+          "vi": "Tôi muốn xem phòng đó ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "06e9eb1c-74bc-54b9-8630-5581c7fb892b-u01": {
+            "kind": "original_extension"
+          },
+          "06e9eb1c-74bc-54b9-8630-5581c7fb892b-u02": {
+            "kind": "original_extension"
+          },
+          "06e9eb1c-74bc-54b9-8630-5581c7fb892b-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1ccf940a-fa72-5202-8968-073eea0cbd0b",
+      "event_id": "E01",
+      "context_vi": "Ở văn phòng môi giới, bạn tìm phòng gần ga Aoba dưới 70.000 yên tiền thuê mỗi tháng nhưng không có. Bạn có nuôi mèo, nên muốn hỏi phòng xa ga hơn mà vẫn có thể xem.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1ccf940a-fa72-5202-8968-073eea0cbd0b-u01",
+          "speaker_id": "b",
+          "ja": "駅の近くで七万円以下の部屋はありません。",
+          "vi": "Gần ga không có phòng nào tiền thuê dưới 70.000 yên ạ."
+        },
+        {
+          "id": "1ccf940a-fa72-5202-8968-073eea0cbd0b-u02",
+          "speaker_id": "a",
+          "ja": "少し遠い部屋はありますか。",
+          "vi": "Có phòng nào xa ga hơn một chút không ạ?"
+        },
+        {
+          "id": "1ccf940a-fa72-5202-8968-073eea0cbd0b-u03",
+          "speaker_id": "b",
+          "ja": "一つあります。でも、その部屋はペットはだめです。",
+          "vi": "Có một phòng. Nhưng phòng đó không nhận người nuôi thú cưng."
+        },
+        {
+          "id": "1ccf940a-fa72-5202-8968-073eea0cbd0b-u04",
+          "speaker_id": "a",
+          "ja": "そうですか。私は猫がいます。",
+          "vi": "Vậy à. Tôi có nuôi mèo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1ccf940a-fa72-5202-8968-073eea0cbd0b-u01": {
+            "kind": "original_extension"
+          },
+          "1ccf940a-fa72-5202-8968-073eea0cbd0b-u02": {
+            "kind": "original_extension"
+          },
+          "1ccf940a-fa72-5202-8968-073eea0cbd0b-u03": {
+            "kind": "original_extension"
+          },
+          "1ccf940a-fa72-5202-8968-073eea0cbd0b-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6933bfcc-26fe-59bd-a232-1a5cf824d04e",
+      "event_id": "E01",
+      "context_vi": "Tiếp trao đổi ở văn phòng môi giới: phòng xa ga hơn vừa được giới thiệu không nhận người nuôi thú cưng, trong khi bạn có mèo. Bạn từ chối xem và hỏi hướng tìm tiếp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6933bfcc-26fe-59bd-a232-1a5cf824d04e-u01",
+          "speaker_id": "a",
+          "ja": "猫がいますから、その部屋は見ません。",
+          "vi": "Tôi có mèo nên sẽ không xem phòng đó ạ."
+        },
+        {
+          "id": "6933bfcc-26fe-59bd-a232-1a5cf824d04e-u02",
+          "speaker_id": "b",
+          "ja": "わかりました。ほかの部屋を探します。",
+          "vi": "Tôi hiểu. Tôi sẽ tìm phòng khác."
+        },
+        {
+          "id": "6933bfcc-26fe-59bd-a232-1a5cf824d04e-u03",
+          "speaker_id": "a",
+          "ja": "ペットと住める部屋があれば、教えてください。",
+          "vi": "Nếu có phòng cho nuôi thú cưng, anh báo giúp tôi nhé."
+        },
+        {
+          "id": "6933bfcc-26fe-59bd-a232-1a5cf824d04e-u04",
+          "speaker_id": "b",
+          "ja": "はい、確認してからご連絡します。",
+          "vi": "Vâng, tôi kiểm rồi sẽ liên lạc với chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6933bfcc-26fe-59bd-a232-1a5cf824d04e-u01": {
+            "kind": "original_extension"
+          },
+          "6933bfcc-26fe-59bd-a232-1a5cf824d04e-u02": {
+            "kind": "original_extension"
+          },
+          "6933bfcc-26fe-59bd-a232-1a5cf824d04e-u03": {
+            "kind": "original_extension"
+          },
+          "6933bfcc-26fe-59bd-a232-1a5cf824d04e-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6",
+      "event_id": "E02",
+      "context_vi": "Bạn gọi cho môi giới về căn phòng đã thấy trong tin đăng. Bạn chưa biết căn còn nhận lịch xem hay không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6-u01",
+          "speaker_id": "a",
+          "ja": "先ほど見た部屋は、まだ見られますか。",
+          "vi": "Căn phòng tôi vừa xem trên tin đăng còn xem được không ạ?"
+        },
+        {
+          "id": "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6-u02",
+          "speaker_id": "b",
+          "ja": "部屋の番号を教えてください。",
+          "vi": "Chị cho tôi mã phòng nhé."
+        },
+        {
+          "id": "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6-u03",
+          "speaker_id": "a",
+          "ja": "二〇一号室です。",
+          "vi": "Phòng 201 ạ."
+        },
+        {
+          "id": "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6-u04",
+          "speaker_id": "b",
+          "ja": "確認します。はい、まだ見られます。",
+          "vi": "Để tôi kiểm. Vâng, phòng đó vẫn xem được."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [
+          "sj-so-01-b11-41"
+        ],
+        "turn_origins": {
+          "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6-u01": {
+            "kind": "original_extension"
+          },
+          "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6-u02": {
+            "kind": "original_extension"
+          },
+          "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6-u03": {
+            "kind": "original_extension"
+          },
+          "a186d05c-37d6-5cd4-a23e-c8ac29dbccd6-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0a33c77f-9a7b-540f-89ed-9e07ce789090",
+      "event_id": "E02",
+      "context_vi": "Môi giới đã xác nhận căn 201 có thể xem. Bạn muốn chốt một cuộc gặp giả định vào thứ Ba lúc ba giờ chiều tại cửa bắc ga Aoba.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0a33c77f-9a7b-540f-89ed-9e07ce789090-u01",
+          "speaker_id": "a",
+          "ja": "火曜日の午後三時に見られますか。",
+          "vi": "Chiều thứ Ba lúc ba giờ tôi đến xem được không ạ?"
+        },
+        {
+          "id": "0a33c77f-9a7b-540f-89ed-9e07ce789090-u02",
+          "speaker_id": "b",
+          "ja": "はい。青葉駅の北口で会いましょう。",
+          "vi": "Vâng. Mình gặp ở cửa bắc ga Aoba nhé."
+        },
+        {
+          "id": "0a33c77f-9a7b-540f-89ed-9e07ce789090-u03",
+          "speaker_id": "a",
+          "ja": "火曜日の三時、北口ですね。",
+          "vi": "Thứ Ba ba giờ, cửa bắc nhỉ."
+        },
+        {
+          "id": "0a33c77f-9a7b-540f-89ed-9e07ce789090-u04",
+          "speaker_id": "b",
+          "ja": "はい、お待ちしています。",
+          "vi": "Vâng, tôi đợi chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0a33c77f-9a7b-540f-89ed-9e07ce789090-u01": {
+            "kind": "original_extension"
+          },
+          "0a33c77f-9a7b-540f-89ed-9e07ce789090-u02": {
+            "kind": "original_extension"
+          },
+          "0a33c77f-9a7b-540f-89ed-9e07ce789090-u03": {
+            "kind": "original_extension"
+          },
+          "0a33c77f-9a7b-540f-89ed-9e07ce789090-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d1f6e669-f664-5a8f-87a8-5bf99324f631",
+      "event_id": "E02",
+      "context_vi": "Bạn muốn xem căn 201 nhưng chủ nhà chưa xác nhận giờ. Môi giới nói sẽ hỏi; bạn cần biết khi nào nên chờ tin.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d1f6e669-f664-5a8f-87a8-5bf99324f631-u01",
+          "speaker_id": "b",
+          "ja": "まだ時間が決まっていません。大家さんに聞きます。",
+          "vi": "Giờ vẫn chưa chốt. Tôi sẽ hỏi chủ nhà."
+        },
+        {
+          "id": "d1f6e669-f664-5a8f-87a8-5bf99324f631-u02",
+          "speaker_id": "a",
+          "ja": "いつごろわかりますか。",
+          "vi": "Khoảng khi nào tôi biết được ạ?"
+        },
+        {
+          "id": "d1f6e669-f664-5a8f-87a8-5bf99324f631-u03",
+          "speaker_id": "b",
+          "ja": "今日の六時までに、一度ご連絡します。",
+          "vi": "Trước sáu giờ hôm nay, tôi sẽ liên lạc một lần để báo tình hình."
+        },
+        {
+          "id": "d1f6e669-f664-5a8f-87a8-5bf99324f631-u04",
+          "speaker_id": "a",
+          "ja": "わかりました。連絡を待ちます。",
+          "vi": "Tôi hiểu rồi. Tôi sẽ chờ tin."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d1f6e669-f664-5a8f-87a8-5bf99324f631-u01": {
+            "kind": "original_extension"
+          },
+          "d1f6e669-f664-5a8f-87a8-5bf99324f631-u02": {
+            "kind": "original_extension"
+          },
+          "d1f6e669-f664-5a8f-87a8-5bf99324f631-u03": {
+            "kind": "original_extension"
+          },
+          "d1f6e669-f664-5a8f-87a8-5bf99324f631-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5698b2d3-ff11-572d-bffb-7e0727d7e15e",
+      "event_id": "E02",
+      "context_vi": "Sau sáu giờ tối, bạn chưa nhận được cuộc gọi cập nhật như môi giới đã hẹn về giờ xem căn 201. Bạn gọi lại để hỏi tình hình.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u01",
+          "speaker_id": "a",
+          "ja": "リンです。六時までに連絡をいただく予定でした。見学の時間は決まりましたか。",
+          "vi": "Tôi là Linh. Anh hẹn báo trước sáu giờ. Giờ xem phòng đã chốt chưa ạ?"
+        },
+        {
+          "id": "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u02",
+          "speaker_id": "b",
+          "ja": "連絡が遅くなり、すみません。まだ決まっていません。",
+          "vi": "Xin lỗi vì báo muộn. Giờ vẫn chưa chốt ạ."
+        },
+        {
+          "id": "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u03",
+          "speaker_id": "a",
+          "ja": "では、いつまた聞けばいいですか。",
+          "vi": "Vậy khi nào tôi nên hỏi lại ạ?"
+        },
+        {
+          "id": "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u04",
+          "speaker_id": "b",
+          "ja": "明日の昼に、もう一度ご連絡します。",
+          "vi": "Trưa mai tôi sẽ liên lạc lại ạ."
+        },
+        {
+          "id": "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u05",
+          "speaker_id": "a",
+          "ja": "わかりました。明日の昼ですね。",
+          "vi": "Tôi hiểu rồi. Trưa mai nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing",
+          "repeat"
+        ],
+        "specialty_item_ids": [
+          "sj-so-01-b07-146"
+        ],
+        "turn_origins": {
+          "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u01": {
+            "kind": "original_extension"
+          },
+          "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u02": {
+            "kind": "original_extension"
+          },
+          "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u03": {
+            "kind": "original_extension"
+          },
+          "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u04": {
+            "kind": "original_extension"
+          },
+          "5698b2d3-ff11-572d-bffb-7e0727d7e15e-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1ad577f6-ed86-504d-85b2-cb40d80002a4",
+      "event_id": "E02",
+      "context_vi": "Bạn đã đến văn phòng môi giới để xem căn 201, nhưng lúc này căn đó không thể xem. Bạn muốn hỏi có căn khác xem được ngay không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1ad577f6-ed86-504d-85b2-cb40d80002a4-u01",
+          "speaker_id": "b",
+          "ja": "すみません。二〇一号室は今、見られません。",
+          "vi": "Xin lỗi chị. Giờ không xem được phòng 201."
+        },
+        {
+          "id": "1ad577f6-ed86-504d-85b2-cb40d80002a4-u02",
+          "speaker_id": "a",
+          "ja": "ほかに、今見られる部屋はありますか。",
+          "vi": "Có phòng khác xem được ngay bây giờ không ạ?"
+        },
+        {
+          "id": "1ad577f6-ed86-504d-85b2-cb40d80002a4-u03",
+          "speaker_id": "b",
+          "ja": "二〇三号室なら、今見られます。",
+          "vi": "Phòng 203 thì xem được ngay ạ."
+        },
+        {
+          "id": "1ad577f6-ed86-504d-85b2-cb40d80002a4-u04",
+          "speaker_id": "a",
+          "ja": "では、二〇三号室を見たいです。",
+          "vi": "Vậy tôi muốn xem phòng 203 ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1ad577f6-ed86-504d-85b2-cb40d80002a4-u01": {
+            "kind": "original_extension"
+          },
+          "1ad577f6-ed86-504d-85b2-cb40d80002a4-u02": {
+            "kind": "original_extension"
+          },
+          "1ad577f6-ed86-504d-85b2-cb40d80002a4-u03": {
+            "kind": "original_extension"
+          },
+          "1ad577f6-ed86-504d-85b2-cb40d80002a4-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "95fb1914-13c7-5108-a674-3c6358adfe5f",
+      "event_id": "E03",
+      "context_vi": "Sau khi xem một căn giả định có tiền thuê 70.000 yên mỗi tháng, bạn muốn biết còn khoản nào trả thêm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "95fb1914-13c7-5108-a674-3c6358adfe5f-u01",
+          "speaker_id": "a",
+          "ja": "家賃のほかに、毎月払うお金はありますか。",
+          "vi": "Ngoài tiền thuê, có khoản nào phải trả hằng tháng không ạ?"
+        },
+        {
+          "id": "95fb1914-13c7-5108-a674-3c6358adfe5f-u02",
+          "speaker_id": "b",
+          "ja": "この部屋は管理費が毎月五千円です。",
+          "vi": "Căn này có phí quản lý 5.000 yên mỗi tháng."
+        },
+        {
+          "id": "95fb1914-13c7-5108-a674-3c6358adfe5f-u03",
+          "speaker_id": "a",
+          "ja": "では、毎月七万五千円ですね。",
+          "vi": "Vậy mỗi tháng là 75.000 yên nhỉ."
+        },
+        {
+          "id": "95fb1914-13c7-5108-a674-3c6358adfe5f-u04",
+          "speaker_id": "b",
+          "ja": "はい、家賃と管理費で七万五千円です。",
+          "vi": "Vâng, tiền thuê và phí quản lý là 75.000 yên."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing",
+          "w_mlit",
+          "w_ur"
+        ],
+        "specialty_item_ids": [
+          "sj-so-01-b11-61"
+        ],
+        "turn_origins": {
+          "95fb1914-13c7-5108-a674-3c6358adfe5f-u01": {
+            "kind": "original_extension"
+          },
+          "95fb1914-13c7-5108-a674-3c6358adfe5f-u02": {
+            "kind": "original_extension"
+          },
+          "95fb1914-13c7-5108-a674-3c6358adfe5f-u03": {
+            "kind": "original_extension"
+          },
+          "95fb1914-13c7-5108-a674-3c6358adfe5f-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8c8ff405-11c1-5775-8324-6aa838d9917f",
+      "event_id": "E03",
+      "context_vi": "Sau khi xem một căn phòng, bạn thích phòng sáng nhưng thấy nó hơi xa ga. Bạn muốn nói cả hai ý trước khi quyết định.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8c8ff405-11c1-5775-8324-6aa838d9917f-u01",
+          "speaker_id": "a",
+          "ja": "部屋は明るくて、いいですね。でも、駅から少し遠いです。",
+          "vi": "Phòng sáng, tôi thích. Nhưng hơi xa ga."
+        },
+        {
+          "id": "8c8ff405-11c1-5775-8324-6aa838d9917f-u02",
+          "speaker_id": "b",
+          "ja": "そうですね。もう少し近い部屋も探しますか。",
+          "vi": "Vâng. Tôi tìm thêm phòng gần ga hơn nhé?"
+        },
+        {
+          "id": "8c8ff405-11c1-5775-8324-6aa838d9917f-u03",
+          "speaker_id": "a",
+          "ja": "はい、お願いします。",
+          "vi": "Vâng, nhờ anh."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8c8ff405-11c1-5775-8324-6aa838d9917f-u01": {
+            "kind": "original_extension"
+          },
+          "8c8ff405-11c1-5775-8324-6aa838d9917f-u02": {
+            "kind": "original_extension"
+          },
+          "8c8ff405-11c1-5775-8324-6aa838d9917f-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "88e4092e-4749-5fa5-984b-db8f7f4d3d1d",
+      "event_id": "E03",
+      "context_vi": "Bạn xem một căn có tiền thuê 70.000 yên và phí quản lý 5.000 yên. Bạn tưởng phí quản lý chỉ trả một lần nên hỏi lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "88e4092e-4749-5fa5-984b-db8f7f4d3d1d-u01",
+          "speaker_id": "a",
+          "ja": "管理費の五千円は、最初だけですか。",
+          "vi": "Phí quản lý 5.000 yên chỉ trả lúc đầu thôi ạ?"
+        },
+        {
+          "id": "88e4092e-4749-5fa5-984b-db8f7f4d3d1d-u02",
+          "speaker_id": "b",
+          "ja": "いいえ、この部屋では毎月です。",
+          "vi": "Không, với căn này thì trả hằng tháng ạ."
+        },
+        {
+          "id": "88e4092e-4749-5fa5-984b-db8f7f4d3d1d-u03",
+          "speaker_id": "a",
+          "ja": "あ、毎月ですか。",
+          "vi": "À, hằng tháng ạ?"
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing",
+          "w_ur",
+          "repeat"
+        ],
+        "specialty_item_ids": [
+          "sj-so-01-b07-18"
+        ],
+        "turn_origins": {
+          "88e4092e-4749-5fa5-984b-db8f7f4d3d1d-u01": {
+            "kind": "original_extension"
+          },
+          "88e4092e-4749-5fa5-984b-db8f7f4d3d1d-u02": {
+            "kind": "original_extension"
+          },
+          "88e4092e-4749-5fa5-984b-db8f7f4d3d1d-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7",
+      "event_id": "E03",
+      "context_vi": "Tiếp lời giải thích rằng phí quản lý 5.000 yên của căn này tính hằng tháng. Bạn muốn môi giới tách rõ tiền trả mỗi tháng và một khoản đặt cọc lúc đầu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u01",
+          "speaker_id": "a",
+          "ja": "毎月のお金と、最初のお金を分けて教えてください。",
+          "vi": "Anh tách giúp tôi khoản trả hằng tháng và khoản trả lúc đầu nhé."
+        },
+        {
+          "id": "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u02",
+          "speaker_id": "b",
+          "ja": "毎月は家賃七万円と管理費五千円です。",
+          "vi": "Hằng tháng là 70.000 yên tiền thuê và 5.000 yên phí quản lý."
+        },
+        {
+          "id": "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u03",
+          "speaker_id": "a",
+          "ja": "最初に払うお金は？",
+          "vi": "Còn khoản trả lúc đầu ạ?"
+        },
+        {
+          "id": "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u04",
+          "speaker_id": "b",
+          "ja": "この部屋の敷金は七万円です。ほかの費用も確認します。",
+          "vi": "Tiền đặt cọc của căn này là 70.000 yên. Tôi sẽ kiểm thêm các khoản khác."
+        },
+        {
+          "id": "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u05",
+          "speaker_id": "a",
+          "ja": "毎月七万五千円、敷金は最初ですね。",
+          "vi": "Mỗi tháng 75.000 yên, còn đặt cọc trả lúc đầu nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing",
+          "w_mlit",
+          "w_ur",
+          "repeat"
+        ],
+        "specialty_item_ids": [
+          "sj-so-01-b07-18"
+        ],
+        "turn_origins": {
+          "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u01": {
+            "kind": "original_extension"
+          },
+          "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u02": {
+            "kind": "original_extension"
+          },
+          "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u03": {
+            "kind": "original_extension"
+          },
+          "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u04": {
+            "kind": "original_extension"
+          },
+          "fd2e2940-b78f-50c5-9dcb-bef0ea543ef7-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f8ec13bc-c59b-590b-a45d-19a4f5e97db9",
+      "event_id": "E03",
+      "context_vi": "Sau khi xem căn phòng, bạn chưa quyết định. Bạn muốn suy nghĩ đến thứ Sáu rồi liên lạc lại; bạn hiểu căn chưa được giữ chỗ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên môi giới",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f8ec13bc-c59b-590b-a45d-19a4f5e97db9-u01",
+          "speaker_id": "a",
+          "ja": "金曜日まで考えてもいいですか。",
+          "vi": "Cho tôi suy nghĩ đến thứ Sáu được không ạ?"
+        },
+        {
+          "id": "f8ec13bc-c59b-590b-a45d-19a4f5e97db9-u02",
+          "speaker_id": "b",
+          "ja": "はい。金曜日にご連絡ください。その時、空きも確認します。",
+          "vi": "Được ạ. Thứ Sáu chị liên lạc lại nhé. Lúc đó tôi cũng sẽ kiểm tra xem căn còn trống không."
+        },
+        {
+          "id": "f8ec13bc-c59b-590b-a45d-19a4f5e97db9-u03",
+          "speaker_id": "a",
+          "ja": "わかりました。金曜日に電話します。",
+          "vi": "Tôi hiểu rồi. Thứ Sáu tôi sẽ gọi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "housing",
+          "w_mlit"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f8ec13bc-c59b-590b-a45d-19a4f5e97db9-u01": {
+            "kind": "original_extension"
+          },
+          "f8ec13bc-c59b-590b-a45d-19a4f5e97db9-u02": {
+            "kind": "original_extension"
+          },
+          "f8ec13bc-c59b-590b-a45d-19a4f5e97db9-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
