@@ -29,6 +29,7 @@ try {
   --header: 78px;
   font-family: Inter, "Noto Sans JP", "Segoe UI", system-ui, sans-serif;
 }
+#pilot-links[hidden] { display: none !important; }
 :root[data-theme="dark"] {
   color-scheme: dark;
   --bg: #101b18;
@@ -286,6 +287,7 @@ h1 { margin: 0; max-width: 850px; font-size: clamp(26px, 2.8vw, 39px); font-weig
   <div class="sidebar-foot"><span>289 chặng · luyện nghe & nói</span><span id="nav-version"></span></div>
 </aside>
 <main id="main" tabindex="-1"><div class="reader">
+  <nav id="pilot-links" aria-label="Hội thoại pilot" hidden style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px"></nav>
   <div id="stage-heading"></div>
   <div class="toolbar">
     <div><h2>Nội dung chặng</h2><small id="visible-count" aria-live="polite"></small></div>
@@ -319,12 +321,24 @@ if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (["6.5", "8.0"].includes(course.version)) delete types.reading;
-if (["7.0", "9.0", "9.1", "9.2", "10.0"].includes(course.version)) {
+if (["7.0", "9.0", "9.1", "9.2", "10.0", "11.0-pilot"].includes(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
   types.reading.label = "Kiến thức Speak Japanese";
 }
 const byId = new Map(course.stages.map(stage => [stage.uid, stage]));
+if (course.pilot_stages?.length) {
+  const links = document.getElementById("pilot-links");
+  links.hidden = false;
+  for (const uid of course.pilot_stages) {
+    const stage = byId.get(uid);
+    const link = document.createElement("a");
+    link.href = "#stage=" + uid;
+    link.textContent = "Pilot " + stage.level + " · " + stage.title;
+    link.className = "text-button";
+    links.append(link);
+  }
+}
 const specialtyCategories = {
   patterns: { label: "Mẫu câu thông dụng", icon: "型" },
   mini: { label: "Cụm từ ngắn dùng ngay", icon: "↗" },
@@ -374,7 +388,7 @@ let currentNodes = [];
 let drawerReturnFocus = null;
 function readStageId() {
   const hashId = new URLSearchParams(location.hash.slice(1)).get("stage");
-  return byId.has(hashId) ? hashId : readPreference("lastStage", null);
+  return byId.has(hashId) ? hashId : course.pilot_stages?.[0] || readPreference("lastStage", null);
 }
 function nodesFor(stage) {
   const selections = new Map(stage.selections.map(s => [s.book_id + "/" + s.pack_id, s]));
@@ -514,9 +528,9 @@ function placeholder(glyph, text) {
   container.append(make("span", "placeholder-icon", glyph), make("span", "", text));
   return container;
 }
-function renderPractice(examples) {
+function renderPractice(examples, heading = "Luyện thêm qua ví dụ") {
   const section = make("section", "extra-practice");
-  section.append(make("h4", "", "Luyện thêm qua ví dụ"));
+  section.append(make("h4", "", heading));
   for (const example of examples) {
     const article = make("article", "practice-example");
     article.append(make("p", "practice-context", example.context_vi));
@@ -573,7 +587,12 @@ function renderBody(node, body) {
       body.append(placeholder("▣", "Video kiến thức tổng hợp · Chờ biên soạn"));
       break;
     case "situations":
-      body.append(make("p", "quiet", current.situations.length + " tình huống đã lên khung. Hội thoại thực hành sẽ được biên soạn ở bước tiếp theo."));
+      {
+        const ready = current.situations.filter(s => s.dialogue).length;
+        body.append(make("p", "quiet", ready
+          ? ready + "/" + current.situations.length + " tình huống có hội thoại Nhật–Việt."
+          : current.situations.length + " tình huống đã lên khung. Hội thoại thực hành sẽ được biên soạn ở bước tiếp theo."));
+      }
       for (const event of current.events) {
         const details = make("details", "event");
         details.append(make("summary", "", event.name), make("p", "roles", event.roles.join(" ↔ ")));
@@ -587,6 +606,9 @@ function renderBody(node, body) {
             meta.append(make("span", "", "Tiếp từ " + scenario.continues_from.join(", ")));
           }
           item.append(meta);
+          if (scenario.dialogue) {
+            item.append(renderPractice([scenario.dialogue], "Hội thoại mẫu"));
+          }
           list.append(item);
         }
         details.append(list);
