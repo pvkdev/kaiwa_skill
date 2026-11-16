@@ -52,3 +52,7 @@
 - **S024 06d1bedd-c666-5080-81a7-190547071ea1** (follow_up, từ S023): Nam báo phần kinh doanh chưa bắt đầu. Kato xin trở về phạm vi kế hoạch, chờ trưởng bộ phận. Nối S023: chưa chốt cuối khi thiếu xác nhận.
 
 ### E06 đã checkpoint
+
+## Tra cứu và điểm nối
+
+Tra catalog27 bằng `変更`, `納期`, `確認`, `承認`, `検討`, đọc B15-C09 và C15 cùng `sj-thuong-04`. Đối chiếu nhánh giữ ngày 20/giảm phạm vi, thêm quyền xem/dời mốc, và rút lại phần kinh doanh. `よさそう` chỉ là ấn tượng, không thành phê duyệt; quyền xem khác quyền sửa.

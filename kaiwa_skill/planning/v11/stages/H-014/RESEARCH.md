@@ -1,6 +1,6 @@
 # H-014 — Nguồn và tự rà biên tập
 
-Đọc catalog27/BOOK_GUIDE.md, source_index.jsonl và manifest.json; tra theo chức năng nói, quan hệ và cụm Nhật. Đọc các đoạn Markdown bên dưới gồm lời trước và sau. Mọi lời thoại trong stage do tác giả viết mới; nguồn sách chỉ định hướng ngữ dụng và trình tự. Không có khẳng định chính sách, phí hay thủ tục thực tế cần xác minh web.
+Đọc catalog27/BOOK_GUIDE.md, source_index.jsonl và manifest.json; tra theo chức năng nói, quan hệ và cụm Nhật. Đọc các đoạn Markdown bên dưới gồm lời trước và sau. Mọi lời thoại trong stage do tác giả viết mới; nguồn sách chỉ định hướng ngữ dụng và trình tự. Các chi tiết thực tế hẹp được kiểm qua nguồn web cơ quan chính thức nêu dưới; mọi giá, lịch và điều kiện còn lại là của tình huống hư cấu.
 
 ## Nguồn đã đọc
 
@@ -52,3 +52,7 @@
 - **S024 5e8381ef-6a51-53f6-9ca7-9d34dd9561f2** (follow_up, từ S023): Nam hỏi số xuất và đơn giá chứng từ. Kato cho 500 hộp và 1.100 yên đã thuế, cước riêng. Nối S023: chất lượng và số nhận thực tế chỉ biết khi kiểm hàng.
 
 ### E06 đã checkpoint
+
+## Tra cứu và điểm nối
+
+Tra catalog27 bằng `価格`, `値引き`, `数量`, `送料`, `見積もり`, đọc B15-C15 và chuyên đề `sj-thuong-04`. Kiểm mức thuế chuẩn 10% trên trang 国税庁 No.6303 (truy cập 2026-11-16) trước khi viết ví dụ hộp nhựa bán trong nước 1.000→1.100 yên; cước vẫn riêng. Đọc các nối về 500/800 hộp, giá 950 chỉ ứng với 800, và báo giá chưa duyệt.

@@ -51,3 +51,7 @@
 - **S024 6aa6ff65-f904-5df3-814a-c7c0f4fb2f22** (follow_up, từ S023): Nam báo chỉ đáp được câu hỏi quy trình hai tuần. Kato hỏi xử lý sự cố; Nam giữ là điểm còn mở. Nối S023: chưa coi điều kiện cuối đã ký hoặc sự cố đã nằm trong giá.
 
 ### E06 đã checkpoint
+
+## Tra cứu và điểm nối
+
+Tra catalog27 bằng `交渉`, `契約`, `条件`, `費用`, `承認`, đọc nguồn B15 được liệt kê và chuyên đề trước `sj-thuong-03`. Trong thoại, điều khoản là đề xuất/điều kiện của hai bên trong trường hợp hư cấu; không đưa khẳng định về hiệu lực pháp lý chung. Đã đối chiếu lời hứa trả lời đúng hẹn với các nhánh chờ và từ chối.

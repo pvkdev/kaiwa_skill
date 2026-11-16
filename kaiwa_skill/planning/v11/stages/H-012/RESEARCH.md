@@ -45,3 +45,7 @@
 - **S020 5ce19c9b-e693-5068-af86-22efcd77024e** (follow_up, từ S019): Nam xin xem một dữ liệu mới về gánh nặng. Aki chỉ nhận tài liệu ở phạm vi một cuộc họp. Nối S019: không mở rộng kết quả đơn lẻ.
 
 ### E05 đã checkpoint
+
+## Tra cứu và điểm nối
+
+Tra catalog27 bằng `提案`, `説得`, `検討`, `条件`, `反対`, đọc nguồn B15 được liệt kê và chuyên đề trước `sj-thuong-03`. Đọc riêng các nối tiếp, giữ khác biệt giữa đồng ý xem xét, thử có điều kiện và quyết định đã duyệt. Các con số của phương án chỉ là tình huống hư cấu.

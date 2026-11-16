@@ -1,6 +1,6 @@
 # H-016 — Nguồn và tự rà biên tập
 
-Đọc catalog27/BOOK_GUIDE.md, source_index.jsonl và manifest.json; tra theo chức năng nói, quan hệ và cụm Nhật. Đọc các đoạn Markdown bên dưới gồm lời trước và sau. Mọi lời thoại trong stage do tác giả viết mới; nguồn sách chỉ định hướng ngữ dụng và trình tự. Không có khẳng định chính sách, phí hay thủ tục thực tế cần xác minh web.
+Đọc catalog27/BOOK_GUIDE.md, source_index.jsonl và manifest.json; tra theo chức năng nói, quan hệ và cụm Nhật. Đọc các đoạn Markdown bên dưới gồm lời trước và sau. Mọi lời thoại trong stage do tác giả viết mới; nguồn sách chỉ định hướng ngữ dụng và trình tự. Các chi tiết thực tế hẹp được kiểm qua nguồn web cơ quan chính thức nêu dưới; mọi giá, lịch và điều kiện còn lại là của tình huống hư cấu.
 
 ## Nguồn đã đọc
 
@@ -54,3 +54,7 @@
 - **S024 508001e2-3885-5fa2-9f04-5d744a1b5bfc** (follow_up, từ S023): Nam hỏi nhu cầu mới đúng một lần. Kato nói chưa có, sẽ chủ động liên hệ. Nối S023: không tiếp tục thúc ép.
 
 ### E06 đã checkpoint
+
+## Tra cứu và điểm nối
+
+Tra catalog27 bằng `納期`, `発注`, `クレーム`, `交渉`, `輸入`, đọc B15-C09/C15 cùng `sj-thuong-04`. Kiểm Japan Customs FAQ 1107 (invoice ghi tên, lượng, trị giá) và FAQ 1101 (hàng tới, khai/kiểm, phép nhập là các bước khác nhau), truy cập 2026-11-16. Cảnh chỉ hỏi trạng thái lô hàng giả định; không nói sửa invoice là đủ thông quan hay bảo đảm ngày giao. Đọc nhánh 300/400 túi, mẫu nguồn thứ hai, lỗi năm chiếc và sự từ chối lô sau.

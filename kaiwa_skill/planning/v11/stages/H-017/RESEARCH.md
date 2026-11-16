@@ -40,3 +40,7 @@
 - **S019 83036bad-819b-5023-aa2f-5948e29706da** (resolved, từ S018): Nam nhắc lại nội dung và hai người duyệt. Aki xin bản xem trước. Nối S018: chưa ấn ngày làm khi chưa có phản hồi.
 
 ### E04 đã checkpoint
+
+## Tra cứu và điểm nối
+
+Tra catalog27 bằng `交渉`, `確認`, `範囲`, `断る`, đọc B16-C07 và chuyên đề `sj-thuong-04`. Đọc nối yêu cầu thêm nhóm, phương án giữ ngày, thông báo gửi trùng, rồi trang giới thiệu mới sau bàn giao. Thanh toán chưa trong phạm vi; `確認します` không phải nhận việc.
