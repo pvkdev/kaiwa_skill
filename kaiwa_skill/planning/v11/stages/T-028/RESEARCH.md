@@ -48,4 +48,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 31 cảnh Nhật–Việt và sáu sự kiện, gồm nhánh nối S005/S010/S015/S020/S025/S031. Đối chiếu B05, hướng dẫn đo lối mang máy của Yodobashi `https://www.yodobashi.com/ec/support/beginner/setup/index.html` và thông tin phí tái chế/thu gom của METI `https://www.meti.go.jp/policy/it_policy/kaden_recycle/faq/faq.html`; giá cụ thể chỉ thuộc cửa hàng hư cấu.
+- S025 u04: sửa lời bàn giao. Máy đã ở nhà từ lượt giao trước, nên kỹ thuật chỉ bổ sung bộ nối còn thiếu, hoàn tất lắp và chạy thử; không nói hôm nay mới giao cả máy.
+- Checker xác nhận bản thoại 31 cảnh và phiếu rà 31 cảnh/6 sự kiện; cập nhật hash thoại, cảnh sửa và hai nguồn web trong `status.json`.

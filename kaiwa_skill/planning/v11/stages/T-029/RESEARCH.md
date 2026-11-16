@@ -42,4 +42,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 25 cảnh Nhật–Việt và năm sự kiện, gồm nhánh nối S005/S010/S015/S020/S025. Đối chiếu B01, B26 và khuyến nghị 国民生活センター `https://www.kokusen.go.jp/news/data/n-20241106_2.html` về số phần, lịch giao và điều kiện đổi/tạm nghỉ gói định kỳ; các hạn và giá ở đây thuộc dịch vụ hư cấu.
+- S015 u03: làm rõ 1.500 yên là tổng của tuần nhận một bữa cho hai người, không phải một phần ăn đơn lẻ; giữ mốc trở lại ba bữa và tổng 4.000 yên tuần sau.
+- Checker xác nhận bản thoại 25 cảnh và phiếu rà 25 cảnh/5 sự kiện; cập nhật hash thoại, cảnh sửa và nguồn web trong `status.json`.

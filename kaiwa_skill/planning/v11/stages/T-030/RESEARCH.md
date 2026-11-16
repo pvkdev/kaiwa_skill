@@ -41,4 +41,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 25 cảnh Nhật–Việt và năm sự kiện, gồm các nhánh nối. Đối chiếu B08 và hướng dẫn 厚生労働省 `https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000124086.html`: khi mắt hoặc vùng quanh mắt bất thường trong lúc nối mi, cần đi khám ngay và nói đã làm dịch vụ.
+- S002 u02: “lượt hẹn này” thành “gói này”, vì khách đang hỏi giá và chưa đặt. S012 u04–u05: sửa hướng dẫn chờ triệu chứng kéo dài thành dừng buổi nối mi và đi khám mắt ngay; nhân viên không chẩn đoán.
+- Checker xác nhận bản thoại 25 cảnh và phiếu rà 25 cảnh/5 sự kiện; cập nhật hash thoại, hai cảnh sửa và nguồn web trong `status.json`.

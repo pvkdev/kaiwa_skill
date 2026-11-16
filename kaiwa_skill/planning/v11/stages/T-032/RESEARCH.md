@@ -47,4 +47,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 30 cảnh Nhật–Việt và sáu sự kiện, gồm các nhánh nối. Đối chiếu B26, hướng dẫn nuôi chó trong nhà ở của 環境省 `https://www.env.go.jp/nature/dobutsu/aigo/2_data/pamph/h2202.pdf` và mục quan sát sức khỏe của 日本獣医師会 `https://jvma-vet.jp/mag/05511/06_2c.htm`; mục sau viết cho chó hỗ trợ nên chỉ dùng nguyên tắc ghi nhận triệu chứng, không dùng phác đồ điều trị.
+- S019 context: sửa “cắt tỉa lông” thành “tắm”, đúng lời nhân viên u01 và sự sửa hiểu nhầm u02. S020 nối chính nhánh trông qua đêm này, không nối nhánh hết chỗ thứ Sáu S018.
+- Checker xác nhận bản thoại 30 cảnh và phiếu rà 30 cảnh/6 sự kiện; cập nhật hash thoại, cảnh sửa và hai nguồn web trong `status.json`.

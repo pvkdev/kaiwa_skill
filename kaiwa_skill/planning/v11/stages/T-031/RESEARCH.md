@@ -43,4 +43,10 @@
 
 ## Còn mở
 
-- Biên tập độc lập chưa thực hiện.
+- Không còn vấn đề sau rà độc lập.
+
+## Rà độc lập — 2026-11-16
+
+- Đã đọc 25 cảnh Nhật–Việt và năm sự kiện, gồm các nhánh nối. Đối chiếu B08, B27, ví dụ tham quan/trải nghiệm của Konami `https://www.konami.com/sportsclub/riyo/fitness/taiken/` và hướng dẫn vận động an toàn của 厚生労働省 `https://kennet.mhlw.go.jp/information/information/exercise/s-00-008.html`; mọi phí/lịch là điều kiện gym hư cấu.
+- Không có lỗi cần sửa. S013 dừng động tác khi đau gối và không để huấn luyện viên chẩn đoán; S015 là nhánh giảm độ khó riêng, không nối sau đau. S018–S020 đối chiếu đúng gói bốn buổi.
+- Checker xác nhận bản thoại 25 cảnh và phiếu rà 25 cảnh/5 sự kiện; cập nhật hash hai nguồn web trong `status.json`.
