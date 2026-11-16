@@ -38,6 +38,8 @@ Tra các biểu đạt đã chọn ở những sách và chặng khác. Nếu c�
 
 ## 5. Bàn giao và nghiệm thu
 
+V9 chạy theo [hợp đồng worker](../../../kaiwa_skill/planning/v9/WORKER_CONTRACT.md). Root dùng `py -X utf8 tools/roadmap_v9.py` để dựng bản review từ các decision. Sau khi đọc rà và kiểm preview, chạy cùng lệnh với `--publish` để cập nhật con trỏ hiện hành và trang docs. Checkpoint mỗi cấp nằm trong planning/v9/work, quyết định và nội dung học viên nằm trong planning/v9/decisions. Dùng registry UID topic V8 và UID chuyên đề sinh ổn định từ key, giữ nguyên key khi sửa.
+
 - **Bước lập bản đồ** tạo danh sách điểm chèn theo cấp, UID topic liền sau, tên tạm, mục tiêu nói và các tình huống làm căn cứ. Ở bước này có thể nêu hướng tìm nguồn. Chỉ đánh dấu bài nguồn đã chọn sau bước đọc.
 - **Bước pilot** thử cụm có tình huống thực từ mỗi cấp khi được giao. Bàn giao cho từng chuyên đề một phiếu gồm vị trí, việc sẽ nói được, tình huống hỗ trợ, danh sách phần chọn theo thứ tự, trọng tâm/biến thể và dẫn nguồn nội bộ. Mở phần học viên để so với phiếu, xem người học có hiểu khi tách khỏi sách và có gặp lại đúng việc đó trong các topic sau hay không.
 - **Bước phân bổ toàn tuyến** lưu tiến độ sau từng cụm. Phân biệt ứng viên chưa đọc, đã chọn, đã đọc để dành, trùng, tài liệu phụ và nguồn thiếu. Có thể ghi một quyết định cho cả phần phụ liên tục. Khi tiếp tục, chỉ mở lại phần đang dở hoặc nguồn đã thay đổi. Trước bàn giao, rà từng sách để tìm kiến thức còn dùng được, đối chiếu các chặng liền kề để gộp/tách và báo phân bố, khoảng cách, lý do để dành. Kiểm 289 UID topic theo đúng thứ tự V8, nguồn của mọi phần đã chọn và nội dung thực trong preview. Kiểm đếm hoặc quét từ khóa chỉ hỗ trợ lượt đọc biên tập.

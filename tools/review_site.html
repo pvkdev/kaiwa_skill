@@ -302,7 +302,7 @@ if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (["6.5", "8.0"].includes(course.version)) delete types.reading;
-if (course.version === "7.0") {
+if (["7.0", "9.0"].includes(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
   types.reading.label = "Kiến thức Speak Japanese";
@@ -450,7 +450,7 @@ function renderHeading() {
     if (first) { first.open = true; first.scrollIntoView({ behavior: "smooth", block: "start" }); }
   }, "accent-button"));
   const materialCount = current.shadowing ? current.shadowing.items.length + " câu / đoạn shadowing" :
-    current.selections.length + (current.stage_kind === "speak_japanese" ? " pack kiến thức" : " bài bổ trợ");
+    current.selections.length + (current.stage_kind === "speak_japanese" ? " mục kiến thức" : " bài bổ trợ");
   meta.append(make("span", "", materialCount));
   if (current.stage_kind !== "speak_japanese") meta.append(make("span", "", current.situations.length + " tình huống"));
   const link = make("a", "", "Liên kết chặng");
@@ -558,7 +558,9 @@ function renderLessons() {
     detail.dataset.kind = node.kind;
     const summary = make("summary");
     const title = make("div");
-    title.append(make("div", "lesson-label", types[node.kind].label), make("h3", "", node.title));
+    const lessonLabel = course.version === "9.0" && node.selection?.section_title ?
+      node.selection.section_title : types[node.kind].label;
+    title.append(make("div", "lesson-label", lessonLabel), make("h3", "", node.title));
     summary.append(icon(node.kind), title);
     const body = make("div", "lesson-body");
     let loaded = false;
