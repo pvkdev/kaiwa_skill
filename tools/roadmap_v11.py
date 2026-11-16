@@ -32,9 +32,17 @@ def build(publish=False, batch=None):
         plan_path = OUT / "batches" / batch / "PLAN.json"
         plan = read(plan_path)
         base_hash = hashlib.sha256((BASE / "KAIWA_CHANG_V10.jsonl").read_bytes()).hexdigest()
-        if plan["base_sha256"] != base_hash:
+        previous_names = plan.get("previous_batches", [])
+        if len(previous_names) != len(set(previous_names)) or batch in previous_names:
+            raise ValueError("Repeated batch in cumulative build")
+        plans = [read(OUT / "batches" / name / "PLAN.json") for name in previous_names]
+        if any(previous["state"] != "production_complete" for previous in plans):
+            raise ValueError("Previous batch production is incomplete")
+        plans.append(plan)
+        if any(assigned_plan["base_sha256"] != base_hash for assigned_plan in plans):
             raise ValueError("V10 changed since batch assignment")
-        assigned = [stage for stages in plan["levels"].values() for stage in stages]
+        assigned = [stage for assigned_plan in plans
+                    for stages in assigned_plan["levels"].values() for stage in stages]
         codes = [stage["code"] for stage in assigned]
         if len(codes) != len(set(codes)) or set(codes).intersection(CODES):
             raise ValueError("Repeated batch assignment or overlap with existing pilots")
@@ -88,6 +96,6 @@ def build(publish=False, batch=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--publish", action="store_true")
-    parser.add_argument("--batch", choices=("batch01",))
+    parser.add_argument("--batch", choices=("batch01", "batch02"))
     args = parser.parse_args()
     build(args.publish, args.batch)
