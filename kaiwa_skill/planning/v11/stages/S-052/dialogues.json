@@ -1,0 +1,952 @@
+{
+  "stage_uid": "6b566f8f-86d4-5f86-9885-c7012e5e0eec",
+  "admin_sources": {
+    "main": {
+      "kind": "book",
+      "book_id": "B08",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "path": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700/chapters/01-part1-shoho.md",
+      "start_line": 75,
+      "end_line": 99,
+      "use_vi": "Câu ngắn nhờ giúp, gọi cứu thương/cảnh sát, xin nhắc lại trong khẩn cấp."
+    },
+    "fdma": {
+      "kind": "web",
+      "title": "総務省消防庁 119番緊急通報",
+      "url": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
+      "accessed": "2026-11-17",
+      "use_vi": "119 hỏi địa điểm, mốc gần đó, tên/số người gọi và tình trạng; trả lời từng câu, báo nơi mới."
+    },
+    "npa": {
+      "kind": "web",
+      "title": "警察庁 ご意見・相談・情報提供",
+      "url": "https://www.npa.go.jp/goiken_index.html",
+      "accessed": "2026-11-17",
+      "use_vi": "110 dành cho vụ việc khẩn cấp; việc không khẩn cấp có đầu mối cảnh sát địa phương hoặc #9110."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "324d243f-e54e-505e-bdb0-e267a35443ec",
+      "event_id": "E01",
+      "context_vi": "Ở ga Aoi hư cấu, một người vừa ngã cạnh cầu thang. Bạn gọi người đứng gần để nhờ giúp ngay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người qua đường",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "324d243f-e54e-505e-bdb0-e267a35443ec-u01",
+          "speaker_id": "a",
+          "ja": "助けてください。あそこで人が倒れています。",
+          "vi": "Xin giúp với. Có người ngã ở chỗ kia."
+        },
+        {
+          "id": "324d243f-e54e-505e-bdb0-e267a35443ec-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。近くへ行きます。",
+          "vi": "Tôi hiểu. Tôi sẽ tới gần."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "324d243f-e54e-505e-bdb0-e267a35443ec-u01": {
+            "kind": "original_extension"
+          },
+          "324d243f-e54e-505e-bdb0-e267a35443ec-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0e716c11-043e-5fa1-a200-7c0d60e0d0a3",
+      "event_id": "E01",
+      "context_vi": "Một người vừa ngã ở ga Aoi. Bạn chưa đủ tiếng Nhật để tự báo rõ; bạn nhờ người gần đó gọi 119 ngay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người qua đường",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0e716c11-043e-5fa1-a200-7c0d60e0d0a3-u01",
+          "speaker_id": "a",
+          "ja": "あの人が倒れました。私は日本語がまだ上手ではありません。119に電話してください。",
+          "vi": "Người kia vừa ngã. Tôi chưa nói tiếng Nhật tốt. Nhờ anh gọi 119 ngay."
+        },
+        {
+          "id": "0e716c11-043e-5fa1-a200-7c0d60e0d0a3-u02",
+          "speaker_id": "b",
+          "ja": "はい、今かけます。",
+          "vi": "Vâng, tôi gọi ngay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0e716c11-043e-5fa1-a200-7c0d60e0d0a3-u01": {
+            "kind": "original_extension"
+          },
+          "0e716c11-043e-5fa1-a200-7c0d60e0d0a3-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d28bf1a0-fb1a-595a-86fd-42665edf08f2",
+      "event_id": "E01",
+      "context_vi": "Sau khi đã nhờ người ở gần giúp người bị ngã, bạn chỉ rõ cửa tây ga Aoi và bảng đỏ làm mốc.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người qua đường",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d28bf1a0-fb1a-595a-86fd-42665edf08f2-u01",
+          "speaker_id": "a",
+          "ja": "駅の西口です。赤い案内板の前に人が倒れています。",
+          "vi": "Ở cửa tây nhà ga, trước bảng hướng dẫn màu đỏ có người ngã."
+        },
+        {
+          "id": "d28bf1a0-fb1a-595a-86fd-42665edf08f2-u02",
+          "speaker_id": "b",
+          "ja": "西口の赤い案内板ですね。",
+          "vi": "Cửa tây, bảng màu đỏ phải không?"
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d28bf1a0-fb1a-595a-86fd-42665edf08f2-u01": {
+            "kind": "original_extension"
+          },
+          "d28bf1a0-fb1a-595a-86fd-42665edf08f2-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ce7a704c-b591-5a70-9701-fe307291db28",
+      "event_id": "E01",
+      "context_vi": "Người đầu tiên định gọi 119 nhưng điện thoại không kết nối. Bạn quay sang một người khác ở ga Aoi để nhờ gọi ngay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người qua đường thứ hai",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ce7a704c-b591-5a70-9701-fe307291db28-u01",
+          "speaker_id": "a",
+          "ja": "先ほどの方の電話がつながりませんでした。119に電話してもらえますか。",
+          "vi": "Điện thoại của người lúc nãy không kết nối. Nhờ anh gọi 119 giúp tôi ngay được không?"
+        },
+        {
+          "id": "ce7a704c-b591-5a70-9701-fe307291db28-u02",
+          "speaker_id": "b",
+          "ja": "はい、私が今かけます。",
+          "vi": "Được, tôi gọi ngay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ce7a704c-b591-5a70-9701-fe307291db28-u01": {
+            "kind": "original_extension"
+          },
+          "ce7a704c-b591-5a70-9701-fe307291db28-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "56408789-f5b7-549d-a9ef-b7352fa863f3",
+      "event_id": "E02",
+      "context_vi": "Bạn đang nói với 119 về người bị ngã trước bảng đỏ ở cửa tây ga Aoi hư cấu. Người tiếp nhận hỏi vị trí.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "56408789-f5b7-549d-a9ef-b7352fa863f3-u01",
+          "speaker_id": "b",
+          "ja": "119です。場所はどこですか。",
+          "vi": "Tổng đài 119. Bạn đang ở đâu ạ?"
+        },
+        {
+          "id": "56408789-f5b7-549d-a9ef-b7352fa863f3-u02",
+          "speaker_id": "a",
+          "ja": "あおい駅の西口、赤い案内板の前です。",
+          "vi": "Trước bảng màu đỏ ở cửa tây ga Aoi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "56408789-f5b7-549d-a9ef-b7352fa863f3-u01": {
+            "kind": "original_extension"
+          },
+          "56408789-f5b7-549d-a9ef-b7352fa863f3-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "797bdfe1-e8e6-510d-a9fd-136c002b5325",
+      "event_id": "E02",
+      "context_vi": "Trong cuộc gọi 119 ở ga Aoi, bạn nhìn thấy khói gần cầu thang nhưng chưa thấy lửa. Bạn chỉ kể điều thấy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "797bdfe1-e8e6-510d-a9fd-136c002b5325-u01",
+          "speaker_id": "b",
+          "ja": "何が起きていますか。",
+          "vi": "Đang xảy ra việc gì ạ?"
+        },
+        {
+          "id": "797bdfe1-e8e6-510d-a9fd-136c002b5325-u02",
+          "speaker_id": "a",
+          "ja": "階段の近くに煙が見えます。火は見えません。",
+          "vi": "Tôi thấy khói gần cầu thang. Tôi không thấy lửa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "797bdfe1-e8e6-510d-a9fd-136c002b5325-u01": {
+            "kind": "original_extension"
+          },
+          "797bdfe1-e8e6-510d-a9fd-136c002b5325-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "61322f7c-0ee2-58cf-ae5e-02fdc1f79d2c",
+      "event_id": "E02",
+      "context_vi": "Người tiếp nhận 119 nghe nhầm cửa tây thành cửa đông ga Aoi. Bạn sửa mốc ngay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "61322f7c-0ee2-58cf-ae5e-02fdc1f79d2c-u01",
+          "speaker_id": "b",
+          "ja": "あおい駅の東口ですか。",
+          "vi": "Bạn ở cửa đông ga Aoi phải không?"
+        },
+        {
+          "id": "61322f7c-0ee2-58cf-ae5e-02fdc1f79d2c-u02",
+          "speaker_id": "a",
+          "ja": "いいえ、西口です。赤い案内板の前です。",
+          "vi": "Không, cửa tây, trước bảng màu đỏ ạ."
+        },
+        {
+          "id": "61322f7c-0ee2-58cf-ae5e-02fdc1f79d2c-u03",
+          "speaker_id": "b",
+          "ja": "西口ですね。",
+          "vi": "Cửa tây ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "61322f7c-0ee2-58cf-ae5e-02fdc1f79d2c-u01": {
+            "kind": "original_extension"
+          },
+          "61322f7c-0ee2-58cf-ae5e-02fdc1f79d2c-u02": {
+            "kind": "original_extension"
+          },
+          "61322f7c-0ee2-58cf-ae5e-02fdc1f79d2c-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "03debe24-3d4c-5189-9117-f43972ff18e1",
+      "event_id": "E02",
+      "context_vi": "Người tiếp nhận 119 nói quá nhanh sau khi bạn sửa cửa ga. Bạn xin từng câu ngắn để còn trả lời đúng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "03debe24-3d4c-5189-9117-f43972ff18e1-u01",
+          "speaker_id": "a",
+          "ja": "すみません。日本語をゆっくり話してください。一つずつお願いします。",
+          "vi": "Xin lỗi, xin nói tiếng Nhật chậm lại, từng câu một ạ."
+        },
+        {
+          "id": "03debe24-3d4c-5189-9117-f43972ff18e1-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。今いる場所をもう一度教えてください。",
+          "vi": "Được. Bạn nói lại chỗ đang đứng nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "03debe24-3d4c-5189-9117-f43972ff18e1-u01": {
+            "kind": "original_extension"
+          },
+          "03debe24-3d4c-5189-9117-f43972ff18e1-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0b99ad79-0e1c-53e2-b698-8ca2a0fa7c0c",
+      "event_id": "E03",
+      "context_vi": "Sau khi làm theo hướng dẫn trong cuộc gọi 119, bạn đã ra khu ngoài cửa tây ga Aoi và cập nhật vị trí.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0b99ad79-0e1c-53e2-b698-8ca2a0fa7c0c-u01",
+          "speaker_id": "a",
+          "ja": "案内に従って外に出ました。今は駅の西口にいます。",
+          "vi": "Tôi đã ra ngoài theo hướng dẫn. Giờ tôi ở cửa tây nhà ga."
+        },
+        {
+          "id": "0b99ad79-0e1c-53e2-b698-8ca2a0fa7c0c-u02",
+          "speaker_id": "b",
+          "ja": "西口ですね。今の場所を確認します。",
+          "vi": "Cửa tây. Tôi sẽ xác nhận vị trí hiện tại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0b99ad79-0e1c-53e2-b698-8ca2a0fa7c0c-u01": {
+            "kind": "original_extension"
+          },
+          "0b99ad79-0e1c-53e2-b698-8ca2a0fa7c0c-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d966bf21-597d-57fe-a1fe-ef39dcc3a907",
+      "event_id": "E03",
+      "context_vi": "Lối cửa tây vừa đóng. Bạn chuyển ra ngoài cửa nam ga Aoi và báo ngay cho người tiếp nhận 119.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d966bf21-597d-57fe-a1fe-ef39dcc3a907-u01",
+          "speaker_id": "a",
+          "ja": "西口の通路が閉まりました。今は南口の外にいます。",
+          "vi": "Lối cửa tây đã đóng. Giờ tôi ở ngoài cửa nam."
+        },
+        {
+          "id": "d966bf21-597d-57fe-a1fe-ef39dcc3a907-u02",
+          "speaker_id": "b",
+          "ja": "南口の外ですね。位置を伝えます。",
+          "vi": "Ngoài cửa nam. Tôi sẽ báo vị trí đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d966bf21-597d-57fe-a1fe-ef39dcc3a907-u01": {
+            "kind": "original_extension"
+          },
+          "d966bf21-597d-57fe-a1fe-ef39dcc3a907-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "58b8bfef-513b-5021-b8e3-2ee9ead0d850",
+      "event_id": "E03",
+      "context_vi": "Bạn vẫn ở cửa tây, trước bảng đỏ đã báo cho 119. Bạn nhờ nhân viên ga ra đó đón đội tới, còn mình ở với người cần giúp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên ga",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "58b8bfef-513b-5021-b8e3-2ee9ead0d850-u01",
+          "speaker_id": "a",
+          "ja": "駅員さん、救急の人が来ます。西口の赤い看板で待ってもらえますか。",
+          "vi": "Anh nhân viên ga ơi, đội cứu hộ sắp tới. Anh ra đợi ở biển đỏ cửa tây giúp tôi được không?"
+        },
+        {
+          "id": "58b8bfef-513b-5021-b8e3-2ee9ead0d850-u02",
+          "speaker_id": "b",
+          "ja": "はい、そこへ行きます。",
+          "vi": "Được, tôi sẽ ra đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "58b8bfef-513b-5021-b8e3-2ee9ead0d850-u01": {
+            "kind": "original_extension"
+          },
+          "58b8bfef-513b-5021-b8e3-2ee9ead0d850-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "37810d14-04ba-52ed-a890-f8f730df35e3",
+      "event_id": "E03",
+      "context_vi": "Từ bên ngoài cửa nam ga Aoi, bạn không nhìn vào được bên trong. Người tiếp nhận hỏi còn ai ở đó không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "37810d14-04ba-52ed-a890-f8f730df35e3-u01",
+          "speaker_id": "a",
+          "ja": "中にまだ人がいるかは分かりません。私には見えません。",
+          "vi": "Tôi không biết còn ai ở bên trong không. Từ đây tôi không nhìn thấy."
+        },
+        {
+          "id": "37810d14-04ba-52ed-a890-f8f730df35e3-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。不明として伝えます。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi là chưa rõ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "37810d14-04ba-52ed-a890-f8f730df35e3-u01": {
+            "kind": "original_extension"
+          },
+          "37810d14-04ba-52ed-a890-f8f730df35e3-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9ed36260-5a32-576a-a139-fa818bb9b441",
+      "event_id": "E04",
+      "context_vi": "Bạn đến quầy hỗ trợ tại ga Aoi để hỏi về một món thất lạc không khẩn cấp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên nơi hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9ed36260-5a32-576a-a139-fa818bb9b441-u01",
+          "speaker_id": "a",
+          "ja": "すみません。落とし物はここで聞けますか。",
+          "vi": "Xin lỗi, tôi có thể hỏi về đồ thất lạc ở đây không ạ?"
+        },
+        {
+          "id": "9ed36260-5a32-576a-a139-fa818bb9b441-u02",
+          "speaker_id": "b",
+          "ja": "はい、まず何をなくしたか教えてください。",
+          "vi": "Được. Trước tiên bạn cho biết mất gì."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9ed36260-5a32-576a-a139-fa818bb9b441-u01": {
+            "kind": "original_extension"
+          },
+          "9ed36260-5a32-576a-a139-fa818bb9b441-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6dd03d1c-b0e8-52d5-82ae-9839b8dc5f38",
+      "event_id": "E04",
+      "context_vi": "Sau khi biết quầy ga nhận câu hỏi thất lạc, bạn muốn hỏi thêm chốt cảnh sát cho chiếc ví mình đang tìm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên nơi hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6dd03d1c-b0e8-52d5-82ae-9839b8dc5f38-u01",
+          "speaker_id": "a",
+          "ja": "緊急の事件ではありません。財布を探しています。交番はどこですか。",
+          "vi": "Đây không phải vụ khẩn cấp. Tôi đang tìm ví. Chốt cảnh sát ở đâu ạ?"
+        },
+        {
+          "id": "6dd03d1c-b0e8-52d5-82ae-9839b8dc5f38-u02",
+          "speaker_id": "b",
+          "ja": "駅の前に交番があります。",
+          "vi": "Có chốt cảnh sát trước ga."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "npa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6dd03d1c-b0e8-52d5-82ae-9839b8dc5f38-u01": {
+            "kind": "original_extension"
+          },
+          "6dd03d1c-b0e8-52d5-82ae-9839b8dc5f38-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c",
+      "event_id": "E04",
+      "context_vi": "Nhân viên nói có chốt cảnh sát trước ga. Bạn hỏi lối đi từ quầy đang đứng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên nơi hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u01",
+          "speaker_id": "a",
+          "ja": "駅前の交番ですね。入口はどちらですか。",
+          "vi": "Chốt cảnh sát trước ga phải không ạ? Lối vào ở đâu?"
+        },
+        {
+          "id": "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u02",
+          "speaker_id": "b",
+          "ja": "東口を出て左です。",
+          "vi": "Ra cửa đông rồi rẽ trái."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "npa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u01": {
+            "kind": "original_extension"
+          },
+          "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "23ca3710-b5ea-53ad-a7cf-3714bf81a1af",
+      "event_id": "E04",
+      "context_vi": "Bạn đã tới chốt cảnh sát được chỉ, nhưng họ không biết chính xác vị trí cần tìm. Bạn quay lại quầy ga hỏi đầu mối khác.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên nơi hỗ trợ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "23ca3710-b5ea-53ad-a7cf-3714bf81a1af-u01",
+          "speaker_id": "a",
+          "ja": "教えてもらった交番では、この場所のことは分からないそうです。次はどこに聞けますか。",
+          "vi": "Chốt cảnh sát được chỉ không biết về địa điểm này. Tôi có thể hỏi tiếp ở đâu ạ?"
+        },
+        {
+          "id": "23ca3710-b5ea-53ad-a7cf-3714bf81a1af-u02",
+          "speaker_id": "b",
+          "ja": "駅の案内所でも場所を確認してみましょう。",
+          "vi": "Ta thử hỏi quầy hướng dẫn của ga về địa điểm nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "npa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "23ca3710-b5ea-53ad-a7cf-3714bf81a1af-u01": {
+            "kind": "original_extension"
+          },
+          "23ca3710-b5ea-53ad-a7cf-3714bf81a1af-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "215cef7a-615c-5559-9bad-0536f83957c9",
+      "event_id": "E05",
+      "context_vi": "Bạn bị lạc gần ga Aoi hư cấu và hỏi người đứng gần đường tới quầy hướng dẫn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người ở gần",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "215cef7a-615c-5559-9bad-0536f83957c9-u01",
+          "speaker_id": "a",
+          "ja": "道に迷いました。案内所を探しています。",
+          "vi": "Tôi bị lạc đường. Tôi đang tìm quầy hỗ trợ."
+        },
+        {
+          "id": "215cef7a-615c-5559-9bad-0536f83957c9-u02",
+          "speaker_id": "b",
+          "ja": "この先の右側にあります。",
+          "vi": "Ở phía trước bên phải."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "215cef7a-615c-5559-9bad-0536f83957c9-u01": {
+            "kind": "original_extension"
+          },
+          "215cef7a-615c-5559-9bad-0536f83957c9-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "4027c33f-baeb-5313-bb23-989b92a9583b",
+      "event_id": "E05",
+      "context_vi": "Bạn hoảng nên không kể dài được. Sau khi người gần đó chỉ đường, bạn nói tên và vị trí hiện tại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người ở gần",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "4027c33f-baeb-5313-bb23-989b92a9583b-u01",
+          "speaker_id": "a",
+          "ja": "すみません。私はリンです。今、あおい駅の西口にいます。助けてください。",
+          "vi": "Xin lỗi, tôi là Linh. Tôi đang ở cửa tây ga Aoi. Xin giúp tôi với."
+        },
+        {
+          "id": "4027c33f-baeb-5313-bb23-989b92a9583b-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。ここに一緒にいます。",
+          "vi": "Tôi hiểu. Tôi sẽ đứng cùng bạn ở đây."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "4027c33f-baeb-5313-bb23-989b92a9583b-u01": {
+            "kind": "original_extension"
+          },
+          "4027c33f-baeb-5313-bb23-989b92a9583b-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0cecd912-1048-51b6-9abd-fdf175994afc",
+      "event_id": "E05",
+      "context_vi": "Người đang giúp nói quá nhanh. Bạn xin câu ngắn để hiểu được điều cần làm tiếp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người ở gần",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0cecd912-1048-51b6-9abd-fdf175994afc-u01",
+          "speaker_id": "a",
+          "ja": "日本語が速くて分かりません。一つずつ、短く話してください。",
+          "vi": "Anh nói nhanh quá, tôi không hiểu. Xin nói từng câu ngắn thôi."
+        },
+        {
+          "id": "0cecd912-1048-51b6-9abd-fdf175994afc-u02",
+          "speaker_id": "b",
+          "ja": "はい。まず、誰に電話したいですか。",
+          "vi": "Được. Trước tiên, bạn muốn gọi cho ai?"
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0cecd912-1048-51b6-9abd-fdf175994afc-u01": {
+            "kind": "original_extension"
+          },
+          "0cecd912-1048-51b6-9abd-fdf175994afc-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "cd8d92d9-2ae5-5752-8649-6c788d54037a",
+      "event_id": "E05",
+      "context_vi": "Người giúp đã hỏi bạn muốn liên hệ ai. Bạn muốn gọi gia đình để báo mình ở cửa tây ga Aoi.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người ở gần",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "cd8d92d9-2ae5-5752-8649-6c788d54037a-u01",
+          "speaker_id": "a",
+          "ja": "家族に電話したいです。ここにいることを伝えたいです。",
+          "vi": "Tôi muốn gọi cho gia đình, báo rằng mình đang ở đây."
+        },
+        {
+          "id": "cd8d92d9-2ae5-5752-8649-6c788d54037a-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。電話をかける場所をご案内します。",
+          "vi": "Tôi hiểu. Tôi sẽ chỉ chỗ bạn có thể gọi điện."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "cd8d92d9-2ae5-5752-8649-6c788d54037a-u01": {
+            "kind": "original_extension"
+          },
+          "cd8d92d9-2ae5-5752-8649-6c788d54037a-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

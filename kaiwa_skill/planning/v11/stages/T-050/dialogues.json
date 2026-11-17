@@ -1,0 +1,1276 @@
+{
+  "stage_uid": "7fa1589a-bb87-50dd-9236-c884f0084c29",
+  "admin_sources": {
+    "ncgm_admission": {
+      "kind": "web",
+      "title": "国立国際医療研究センター病院: 入院について",
+      "url": "https://hosp.ncgm.go.jp/inpatient/index.html",
+      "accessed": "2026-11-17",
+      "use_vi": "Bệnh viện có bước chốt ngày nhập viện, tiếp nhận và hướng dẫn trước nhập viện; kịch bản đặt tại bệnh viện giả định nên giờ/nơi cụ thể là ví dụ."
+    },
+    "mhlw_msw": {
+      "kind": "web",
+      "title": "厚生労働省: 医療ソーシャルワーカー業務指針",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tc8764&dataType=1&pageNo=1",
+      "accessed": "2026-11-17",
+      "use_vi": "Người phụ trách hỗ trợ ra viện có thể trao đổi với bệnh nhân/gia đình về vấn đề sinh hoạt và liên kết nguồn hỗ trợ; không hứa dịch vụ cụ thể đủ điều kiện."
+    },
+    "b08": {
+      "kind": "book",
+      "book_id": "B08",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "path": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700/chapters/04-part4-bamen.md",
+      "start_line": 325,
+      "end_line": 354,
+      "use_vi": "Cách nói triệu chứng ở bệnh viện và hỏi lại tình trạng; không dùng lời khuyên về tuyến khám trong sách làm khẳng định hiện hành."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff",
+      "event_id": "E01",
+      "context_vi": "Tại bệnh viện giả định, bạn xác nhận lịch nhập viện để làm xét nghiệm và điều trị; ngày giờ là giả định.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "staff",
+          "role_vi": "nhân viên nhập viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff-u01",
+          "speaker_id": "a",
+          "ja": "入院は十二日の午前十時と聞いています。受付はどちらですか。",
+          "vi": "Tôi nghe lịch nhập viện là 10 giờ sáng ngày 12. Tôi đến quầy nào?"
+        },
+        {
+          "id": "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff-u02",
+          "speaker_id": "staff",
+          "ja": "はい、十二日十時です。一階の入退院受付へお越しください。",
+          "vi": "Đúng, 10 giờ ngày 12. Chị đến quầy nhập và ra viện ở tầng một."
+        },
+        {
+          "id": "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff-u03",
+          "speaker_id": "a",
+          "ja": "到着したら名前を伝えて、入院の案内を受ければいいですね。",
+          "vi": "Khi đến, tôi báo tên rồi nhận hướng dẫn nhập viện đúng không?"
+        },
+        {
+          "id": "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff-u04",
+          "speaker_id": "staff",
+          "ja": "はい。持ち物の案内もお手元で確認してください。",
+          "vi": "Đúng. Chị cũng kiểm tờ hướng dẫn đồ cần mang."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncgm_admission"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff-u01": {
+            "kind": "original_extension"
+          },
+          "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff-u02": {
+            "kind": "original_extension"
+          },
+          "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff-u03": {
+            "kind": "original_extension"
+          },
+          "6aef3fb3-c9bb-5e3c-be6e-3957c24582ff-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bca2af55-c387-5f05-9f03-9bd92515bce5",
+      "event_id": "E01",
+      "context_vi": "Trước nhập viện, bạn cho bệnh viện thông tin người nhà có thể liên hệ khi cần.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "staff",
+          "role_vi": "nhân viên nhập viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bca2af55-c387-5f05-9f03-9bd92515bce5-u01",
+          "speaker_id": "a",
+          "ja": "緊急の連絡先は兄にしたいです。兄は日本語で電話を受けられます。",
+          "vi": "Tôi muốn để anh trai làm người liên hệ khi khẩn cấp. Anh ấy nghe điện thoại tiếng Nhật được."
+        },
+        {
+          "id": "bca2af55-c387-5f05-9f03-9bd92515bce5-u02",
+          "speaker_id": "staff",
+          "ja": "お名前と電話番号を確認します。ご本人への連絡先も変わりませんか。",
+          "vi": "Tôi sẽ xác nhận tên và số điện thoại. Số liên hệ trực tiếp của chị không thay đổi chứ?"
+        },
+        {
+          "id": "bca2af55-c387-5f05-9f03-9bd92515bce5-u03",
+          "speaker_id": "a",
+          "ja": "はい、私の番号は同じです。兄に連絡する場合、先に私にも知らせてもらえますか。",
+          "vi": "Vâng, số của tôi giữ nguyên. Nếu cần gọi anh trai, bệnh viện có thể báo tôi trước được không?"
+        },
+        {
+          "id": "bca2af55-c387-5f05-9f03-9bd92515bce5-u04",
+          "speaker_id": "staff",
+          "ja": "状況によりますので、病棟の担当者にもその希望を伝えておきます。",
+          "vi": "Tùy tình huống, tôi sẽ báo mong muốn đó cho người phụ trách ở khoa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncgm_admission"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bca2af55-c387-5f05-9f03-9bd92515bce5-u01": {
+            "kind": "original_extension"
+          },
+          "bca2af55-c387-5f05-9f03-9bd92515bce5-u02": {
+            "kind": "original_extension"
+          },
+          "bca2af55-c387-5f05-9f03-9bd92515bce5-u03": {
+            "kind": "original_extension"
+          },
+          "bca2af55-c387-5f05-9f03-9bd92515bce5-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8b0408a7-f8b4-5832-a2f6-93ea52a295f1",
+      "event_id": "E01",
+      "context_vi": "Sau khi nhận lịch, bạn chưa rõ hướng dẫn mang đồ; xin nhân viên nhắc từng phần.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "staff",
+          "role_vi": "nhân viên nhập viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8b0408a7-f8b4-5832-a2f6-93ea52a295f1-u01",
+          "speaker_id": "a",
+          "ja": "案内の持ち物が多くて分からなくなりました。まず受付で必要なものから教えてください。",
+          "vi": "Danh sách cần mang nhiều quá, tôi hơi rối. Xin anh nói trước những thứ cần ở quầy tiếp nhận."
+        },
+        {
+          "id": "8b0408a7-f8b4-5832-a2f6-93ea52a295f1-u02",
+          "speaker_id": "staff",
+          "ja": "この病院では、診察券、本人確認の書類、入院案内をお持ちください。日用品は別の欄です。",
+          "vi": "Ở bệnh viện này, chị mang thẻ khám, giấy xác minh danh tính và tờ hướng dẫn nhập viện. Đồ dùng hằng ngày ở mục riêng."
+        },
+        {
+          "id": "8b0408a7-f8b4-5832-a2f6-93ea52a295f1-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。薬の情報はどこで見せますか。",
+          "vi": "Tôi hiểu. Thông tin thuốc đang dùng tôi đưa ở đâu?"
+        },
+        {
+          "id": "8b0408a7-f8b4-5832-a2f6-93ea52a295f1-u04",
+          "speaker_id": "staff",
+          "ja": "病棟で看護師にお薬手帳と薬を見せてください。",
+          "vi": "Tại khoa, chị đưa sổ thuốc và thuốc cho điều dưỡng xem."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncgm_admission"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8b0408a7-f8b4-5832-a2f6-93ea52a295f1-u01": {
+            "kind": "original_extension"
+          },
+          "8b0408a7-f8b4-5832-a2f6-93ea52a295f1-u02": {
+            "kind": "original_extension"
+          },
+          "8b0408a7-f8b4-5832-a2f6-93ea52a295f1-u03": {
+            "kind": "original_extension"
+          },
+          "8b0408a7-f8b4-5832-a2f6-93ea52a295f1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "05df6ca1-4b78-55a0-bf5c-3f576c182cc9",
+      "event_id": "E01",
+      "context_vi": "Bệnh viện giả định đổi lịch nhập viện từ ngày 12 sang 13; bạn báo người nhà đang định đưa đến.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "relative",
+          "role_vi": "người nhà",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "05df6ca1-4b78-55a0-bf5c-3f576c182cc9-u01",
+          "speaker_id": "a",
+          "ja": "病院から連絡があって、入院が十二日から十三日の午前十時に変わった。送ってくれる予定も変えられる？",
+          "vi": "Bệnh viện vừa báo lịch nhập viện chuyển từ ngày 12 sang 10 giờ sáng ngày 13. Anh đổi lịch đưa em được không?"
+        },
+        {
+          "id": "05df6ca1-4b78-55a0-bf5c-3f576c182cc9-u02",
+          "speaker_id": "relative",
+          "ja": "十三日の朝は仕事があるけど、昼前なら行けるよ。病院の受付は何時まで？",
+          "vi": "Sáng ngày 13 anh có việc, nhưng gần trưa thì đi được. Quầy bệnh viện nhận đến mấy giờ?"
+        },
+        {
+          "id": "05df6ca1-4b78-55a0-bf5c-3f576c182cc9-u03",
+          "speaker_id": "a",
+          "ja": "十時に来てくださいと言われた。私が先に行くから、無理に合わせなくて大丈夫。",
+          "vi": "Họ dặn đến lúc 10 giờ. Em sẽ tự đến trước, anh không cần cố theo lịch đó."
+        },
+        {
+          "id": "05df6ca1-4b78-55a0-bf5c-3f576c182cc9-u04",
+          "speaker_id": "relative",
+          "ja": "分かった。到着したら連絡して。午後に必要な物を届けるよ。",
+          "vi": "Được. Đến nơi thì báo anh. Chiều anh sẽ mang đồ cần thiết đến."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncgm_admission"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "05df6ca1-4b78-55a0-bf5c-3f576c182cc9-u01": {
+            "kind": "original_extension"
+          },
+          "05df6ca1-4b78-55a0-bf5c-3f576c182cc9-u02": {
+            "kind": "original_extension"
+          },
+          "05df6ca1-4b78-55a0-bf5c-3f576c182cc9-u03": {
+            "kind": "original_extension"
+          },
+          "05df6ca1-4b78-55a0-bf5c-3f576c182cc9-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6",
+      "event_id": "E01",
+      "context_vi": "Bạn không có người đi cùng lúc nhập viện; hỏi bệnh viện về hỗ trợ khi tới, không giả định bắt buộc phải có người nhà.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "staff",
+          "role_vi": "nhân viên nhập viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6-u01",
+          "speaker_id": "a",
+          "ja": "当日は一人で行きます。受付から病棟まで、案内していただけますか。",
+          "vi": "Hôm đó tôi đến một mình. Từ quầy tiếp nhận đến khoa, có người chỉ giúp tôi được không?"
+        },
+        {
+          "id": "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6-u02",
+          "speaker_id": "staff",
+          "ja": "はい。受付が終わったら、担当者が病棟までの道をご案内します。",
+          "vi": "Được. Làm tiếp nhận xong, người phụ trách sẽ chỉ đường đến khoa."
+        },
+        {
+          "id": "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6-u03",
+          "speaker_id": "a",
+          "ja": "家族に説明が必要な場面があれば、電話で参加できるか相談したいです。",
+          "vi": "Nếu có lúc cần giải thích cho gia đình, tôi muốn hỏi liệu anh trai có thể tham gia qua điện thoại không."
+        },
+        {
+          "id": "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6-u04",
+          "speaker_id": "staff",
+          "ja": "その場面になったら、病棟の看護師に希望を伝えてください。",
+          "vi": "Khi đến bước đó, chị hãy nói mong muốn với điều dưỡng của khoa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "ncgm_admission"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6-u01": {
+            "kind": "original_extension"
+          },
+          "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6-u02": {
+            "kind": "original_extension"
+          },
+          "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6-u03": {
+            "kind": "original_extension"
+          },
+          "d1127808-6a62-5151-aa6d-2ce0ee6bf6a6-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "312b72c5-235a-502d-833e-bda60f55c3aa",
+      "event_id": "E02",
+      "context_vi": "Trong viện, bạn mới thấy buồn nôn sau một bước điều trị; báo điều dưỡng ngay để được đánh giá.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "nurse",
+          "role_vi": "điều dưỡng",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "312b72c5-235a-502d-833e-bda60f55c3aa-u01",
+          "speaker_id": "a",
+          "ja": "さっきから吐き気が出てきました。治療の後からです。",
+          "vi": "Từ lúc nãy tôi thấy buồn nôn. Cảm giác này xuất hiện sau buổi điều trị."
+        },
+        {
+          "id": "312b72c5-235a-502d-833e-bda60f55c3aa-u02",
+          "speaker_id": "nurse",
+          "ja": "分かりました。いつからか、ほかに痛みや息苦しさがあるか確認します。",
+          "vi": "Tôi hiểu. Tôi sẽ hỏi bắt đầu từ khi nào và có đau hay khó thở không."
+        },
+        {
+          "id": "312b72c5-235a-502d-833e-bda60f55c3aa-u03",
+          "speaker_id": "a",
+          "ja": "十分ほど前からです。今は息苦しくありませんが、少しふらつきます。",
+          "vi": "Từ khoảng mười phút trước. Giờ tôi không khó thở, nhưng hơi choáng."
+        },
+        {
+          "id": "312b72c5-235a-502d-833e-bda60f55c3aa-u04",
+          "speaker_id": "nurse",
+          "ja": "今の状態を見ます。必要なら担当医にもすぐ伝えます。",
+          "vi": "Tôi sẽ kiểm tình trạng hiện tại. Nếu cần, tôi sẽ báo bác sĩ phụ trách ngay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "b08"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "312b72c5-235a-502d-833e-bda60f55c3aa-u01": {
+            "kind": "original_extension"
+          },
+          "312b72c5-235a-502d-833e-bda60f55c3aa-u02": {
+            "kind": "original_extension"
+          },
+          "312b72c5-235a-502d-833e-bda60f55c3aa-u03": {
+            "kind": "original_extension"
+          },
+          "312b72c5-235a-502d-833e-bda60f55c3aa-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "897976c3-034f-5888-80bd-a2ca36fe8e31",
+      "event_id": "E02",
+      "context_vi": "Bác sĩ đề nghị thêm một bước kiểm tra trong viện; bạn hỏi mục đích trước khi quyết.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "doctor",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "897976c3-034f-5888-80bd-a2ca36fe8e31-u01",
+          "speaker_id": "a",
+          "ja": "追加の検査は、何を確認するためですか。今の治療との関係も知りたいです。",
+          "vi": "Xét nghiệm thêm nhằm kiểm điều gì? Tôi cũng muốn biết liên quan thế nào đến điều trị hiện nay."
+        },
+        {
+          "id": "897976c3-034f-5888-80bd-a2ca36fe8e31-u02",
+          "speaker_id": "doctor",
+          "ja": "今日の変化の原因を考える材料にするためです。結果を見てから次の方針を相談します。",
+          "vi": "Đó là thêm dữ kiện để tìm nguyên nhân thay đổi hôm nay. Khi có kết quả, ta sẽ bàn hướng tiếp."
+        },
+        {
+          "id": "897976c3-034f-5888-80bd-a2ca36fe8e31-u03",
+          "speaker_id": "a",
+          "ja": "検査を受ける前に、どんな準備が必要かも教えてください。",
+          "vi": "Trước khi làm, xin bác sĩ cho biết tôi phải chuẩn bị gì."
+        },
+        {
+          "id": "897976c3-034f-5888-80bd-a2ca36fe8e31-u04",
+          "speaker_id": "doctor",
+          "ja": "看護師から手順を説明します。分からない点はその場で聞いてください。",
+          "vi": "Điều dưỡng sẽ giải thích các bước. Nếu chưa rõ, chị cứ hỏi ngay lúc đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "897976c3-034f-5888-80bd-a2ca36fe8e31-u01": {
+            "kind": "original_extension"
+          },
+          "897976c3-034f-5888-80bd-a2ca36fe8e31-u02": {
+            "kind": "original_extension"
+          },
+          "897976c3-034f-5888-80bd-a2ca36fe8e31-u03": {
+            "kind": "original_extension"
+          },
+          "897976c3-034f-5888-80bd-a2ca36fe8e31-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9d0ce40c-0330-54ff-8278-2ac073452b22",
+      "event_id": "E02",
+      "context_vi": "Sau khi nghe mục đích kiểm tra, bạn chưa sẵn sàng đồng ý; xin thời gian trao đổi với bác sĩ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "doctor",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9d0ce40c-0330-54ff-8278-2ac073452b22-u01",
+          "speaker_id": "a",
+          "ja": "説明は分かりましたが、今すぐ決めるのは不安です。もう少し質問してから返事をしてもいいですか。",
+          "vi": "Tôi hiểu lời giải thích, nhưng vẫn lo nếu phải quyết ngay. Tôi hỏi thêm rồi trả lời được không?"
+        },
+        {
+          "id": "9d0ce40c-0330-54ff-8278-2ac073452b22-u02",
+          "speaker_id": "doctor",
+          "ja": "もちろんです。今日中に判断が必要かも含めてお話しします。何が一番気になりますか。",
+          "vi": "Được. Tôi sẽ giải thích cả việc có cần quyết trong hôm nay không. Chị lo nhất điểm nào?"
+        },
+        {
+          "id": "9d0ce40c-0330-54ff-8278-2ac073452b22-u03",
+          "speaker_id": "a",
+          "ja": "検査をしないで待つ場合と、今受ける場合の違いです。",
+          "vi": "Tôi lo sự khác nhau giữa chờ chưa làm và làm ngay."
+        },
+        {
+          "id": "9d0ce40c-0330-54ff-8278-2ac073452b22-u04",
+          "speaker_id": "doctor",
+          "ja": "今受ければ、今日の体調の変化を調べる材料が増えます。待つ場合は、その情報がないまま経過を見ることになります。",
+          "vi": "Nếu làm ngay, chúng tôi có thêm dữ kiện để xem thay đổi hôm nay. Nếu chờ, ta sẽ theo dõi diễn tiến mà chưa có thông tin ấy."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9d0ce40c-0330-54ff-8278-2ac073452b22-u01": {
+            "kind": "original_extension"
+          },
+          "9d0ce40c-0330-54ff-8278-2ac073452b22-u02": {
+            "kind": "original_extension"
+          },
+          "9d0ce40c-0330-54ff-8278-2ac073452b22-u03": {
+            "kind": "original_extension"
+          },
+          "9d0ce40c-0330-54ff-8278-2ac073452b22-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bdaf007c-6932-555f-b064-e4aa172ced22",
+      "event_id": "E02",
+      "context_vi": "Sau khi bạn báo buồn nôn, người nhà hiểu nhầm giờ thăm của bệnh viện giả định; bạn nhờ điều dưỡng xác nhận.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "nurse",
+          "role_vi": "điều dưỡng",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bdaf007c-6932-555f-b064-e4aa172ced22-u01",
+          "speaker_id": "a",
+          "ja": "兄は夕方六時に来ると言っています。面会できる時間を確認してもらえますか。",
+          "vi": "Anh trai tôi nói sẽ đến lúc 6 giờ tối. Chị kiểm giúp giờ thăm được không?"
+        },
+        {
+          "id": "bdaf007c-6932-555f-b064-e4aa172ced22-u02",
+          "speaker_id": "nurse",
+          "ja": "この病棟の今日の面会は午後二時から五時までです。六時には入れません。",
+          "vi": "Hôm nay khoa này cho thăm từ 2 đến 5 giờ chiều. Sáu giờ thì không vào được."
+        },
+        {
+          "id": "bdaf007c-6932-555f-b064-e4aa172ced22-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。兄に五時までと伝えます。荷物だけなら別に預けられますか。",
+          "vi": "Tôi hiểu. Tôi sẽ báo anh ấy phải đến trước 5 giờ. Nếu chỉ gửi đồ, có cách gửi riêng không?"
+        },
+        {
+          "id": "bdaf007c-6932-555f-b064-e4aa172ced22-u04",
+          "speaker_id": "nurse",
+          "ja": "荷物の受け渡しは窓口が違います。病棟の受付で時間を確認してください。",
+          "vi": "Việc gửi đồ qua quầy khác. Chị hãy kiểm giờ ở quầy của khoa."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bdaf007c-6932-555f-b064-e4aa172ced22-u01": {
+            "kind": "original_extension"
+          },
+          "bdaf007c-6932-555f-b064-e4aa172ced22-u02": {
+            "kind": "original_extension"
+          },
+          "bdaf007c-6932-555f-b064-e4aa172ced22-u03": {
+            "kind": "original_extension"
+          },
+          "bdaf007c-6932-555f-b064-e4aa172ced22-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5365dfec-2068-52ca-ac95-1da3edcae017",
+      "event_id": "E02",
+      "context_vi": "Trong viện, bạn cần hỗ trợ ngôn ngữ khi giải thích điều trị và có nhu cầu ăn uống cá nhân; hỏi điều dưỡng đúng đầu mối.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "nurse",
+          "role_vi": "điều dưỡng",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5365dfec-2068-52ca-ac95-1da3edcae017-u01",
+          "speaker_id": "a",
+          "ja": "治療の説明で難しい言葉が出るので、通訳の相談はできますか。食事のことも伝えたいです。",
+          "vi": "Phần giải thích điều trị có nhiều từ khó, tôi có thể hỏi về thông dịch không? Tôi cũng muốn báo về bữa ăn."
+        },
+        {
+          "id": "5365dfec-2068-52ca-ac95-1da3edcae017-u02",
+          "speaker_id": "nurse",
+          "ja": "通訳は病院の担当窓口に相談できます。食事については、今私が内容を伺います。",
+          "vi": "Về thông dịch, tôi có thể liên hệ bộ phận phụ trách của bệnh viện. Còn bữa ăn, giờ chị nói với tôi được."
+        },
+        {
+          "id": "5365dfec-2068-52ca-ac95-1da3edcae017-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。食べられないものを先に伝えます。通訳の方法は確認後に教えてください。",
+          "vi": "Cảm ơn chị. Tôi sẽ báo món không ăn được trước. Về cách thông dịch, xin báo sau khi kiểm."
+        },
+        {
+          "id": "5365dfec-2068-52ca-ac95-1da3edcae017-u04",
+          "speaker_id": "nurse",
+          "ja": "はい。食事の情報を記録し、通訳の担当にも連絡します。",
+          "vi": "Được. Tôi sẽ ghi thông tin bữa ăn và liên hệ bộ phận thông dịch."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5365dfec-2068-52ca-ac95-1da3edcae017-u01": {
+            "kind": "original_extension"
+          },
+          "5365dfec-2068-52ca-ac95-1da3edcae017-u02": {
+            "kind": "original_extension"
+          },
+          "5365dfec-2068-52ca-ac95-1da3edcae017-u03": {
+            "kind": "original_extension"
+          },
+          "5365dfec-2068-52ca-ac95-1da3edcae017-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "daae3bb1-85a7-5777-85a4-1f16b9046c37",
+      "event_id": "E03",
+      "context_vi": "Bác sĩ nói ngày ra viện dự kiến là thứ Sáu, còn chờ đánh giá sức khỏe; bạn hỏi điều kiện cụ thể.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "doctor",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "daae3bb1-85a7-5777-85a4-1f16b9046c37-u01",
+          "speaker_id": "a",
+          "ja": "退院は金曜日の予定と聞きました。まだ何を確認してから決まりますか。",
+          "vi": "Tôi nghe dự kiến ra viện thứ Sáu. Còn cần kiểm gì mới chốt được ạ?"
+        },
+        {
+          "id": "daae3bb1-85a7-5777-85a4-1f16b9046c37-u02",
+          "speaker_id": "doctor",
+          "ja": "明日の診察で体調を確認し、退院後の薬と通院方法を説明してから決めます。",
+          "vi": "Ngày mai tôi sẽ khám lại tình trạng, giải thích thuốc và cách tái khám rồi mới quyết."
+        },
+        {
+          "id": "daae3bb1-85a7-5777-85a4-1f16b9046c37-u03",
+          "speaker_id": "a",
+          "ja": "家族に迎えを頼むので、決まったら何時ごろ出られるかも教えてください。",
+          "vi": "Tôi phải nhờ người nhà đón, nên khi chốt xin báo cả khoảng giờ có thể rời viện."
+        },
+        {
+          "id": "daae3bb1-85a7-5777-85a4-1f16b9046c37-u04",
+          "speaker_id": "doctor",
+          "ja": "分かりました。明日の診察後に看護師から予定をお伝えします。",
+          "vi": "Được. Sau buổi khám ngày mai, điều dưỡng sẽ báo lịch."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "daae3bb1-85a7-5777-85a4-1f16b9046c37-u01": {
+            "kind": "original_extension"
+          },
+          "daae3bb1-85a7-5777-85a4-1f16b9046c37-u02": {
+            "kind": "original_extension"
+          },
+          "daae3bb1-85a7-5777-85a4-1f16b9046c37-u03": {
+            "kind": "original_extension"
+          },
+          "daae3bb1-85a7-5777-85a4-1f16b9046c37-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "832f7f74-d05a-57f7-80b4-c3435fafe790",
+      "event_id": "E03",
+      "context_vi": "Ngày ra viện đổi từ thứ Sáu sang thứ Bảy; bạn gọi người nhà đón và nói sẽ tự báo nơi làm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "relative",
+          "role_vi": "người nhà",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "832f7f74-d05a-57f7-80b4-c3435fafe790-u01",
+          "speaker_id": "a",
+          "ja": "退院が金曜日から土曜日に変わった。土曜日の午後、迎えに来られる？ 職場にはもう連絡したよ。",
+          "vi": "Ngày ra viện đổi từ thứ Sáu sang thứ Bảy. Chiều thứ Bảy anh đến đón được không? Em đã báo nơi làm rồi."
+        },
+        {
+          "id": "832f7f74-d05a-57f7-80b4-c3435fafe790-u02",
+          "speaker_id": "relative",
+          "ja": "土曜日の午後なら行ける。何時ごろか分かった？",
+          "vi": "Chiều thứ Bảy anh đến được. Em biết khoảng mấy giờ chưa?"
+        },
+        {
+          "id": "832f7f74-d05a-57f7-80b4-c3435fafe790-u03",
+          "speaker_id": "a",
+          "ja": "まだ診察後に決まるそう。午前中に分かったら、すぐ電話するね。",
+          "vi": "Họ nói sau buổi khám mới chốt. Sáng đó khi biết em sẽ gọi ngay."
+        },
+        {
+          "id": "832f7f74-d05a-57f7-80b4-c3435fafe790-u04",
+          "speaker_id": "relative",
+          "ja": "分かった。時間が決まったら知らせてね。",
+          "vi": "Được. Khi chốt giờ thì báo anh nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "832f7f74-d05a-57f7-80b4-c3435fafe790-u01": {
+            "kind": "original_extension"
+          },
+          "832f7f74-d05a-57f7-80b4-c3435fafe790-u02": {
+            "kind": "original_extension"
+          },
+          "832f7f74-d05a-57f7-80b4-c3435fafe790-u03": {
+            "kind": "original_extension"
+          },
+          "832f7f74-d05a-57f7-80b4-c3435fafe790-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d",
+      "event_id": "E03",
+      "context_vi": "Trước ra viện, bạn hỏi lịch tái khám đã có và ai xác nhận cuối cùng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "staff",
+          "role_vi": "nhân viên xuất viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d-u01",
+          "speaker_id": "a",
+          "ja": "退院後の診察はいつですか。予約票を確認したいです。",
+          "vi": "Buổi khám sau khi ra viện là khi nào? Tôi muốn kiểm phiếu hẹn."
+        },
+        {
+          "id": "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d-u02",
+          "speaker_id": "staff",
+          "ja": "予約票には来週火曜日の午前十時とあります。診療科は内科です。",
+          "vi": "Phiếu hẹn ghi 10 giờ sáng thứ Ba tuần sau, khoa nội."
+        },
+        {
+          "id": "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d-u03",
+          "speaker_id": "a",
+          "ja": "退院時の薬の説明はどなたから聞きますか。",
+          "vi": "Lời dặn về thuốc khi ra viện tôi nghe từ ai?"
+        },
+        {
+          "id": "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d-u04",
+          "speaker_id": "staff",
+          "ja": "病棟の薬剤師が説明します。帰る前に看護師が持ち物も確認します。",
+          "vi": "Dược sĩ của khoa sẽ giải thích. Trước khi về, điều dưỡng cũng sẽ kiểm đồ của chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d-u01": {
+            "kind": "original_extension"
+          },
+          "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d-u02": {
+            "kind": "original_extension"
+          },
+          "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d-u03": {
+            "kind": "original_extension"
+          },
+          "c1db72e0-8b9f-5ae6-8363-bfd83d0c333d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bead21b3-6876-5b69-a696-37b544298509",
+      "event_id": "E03",
+      "context_vi": "Ngày ra viện dự kiến sắp tới nhưng bạn chưa sắp được hỗ trợ sinh hoạt ở nhà; xin đầu mối của bệnh viện.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "coordinator",
+          "role_vi": "điều phối viên xuất viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bead21b3-6876-5b69-a696-37b544298509-u01",
+          "speaker_id": "a",
+          "ja": "退院後、最初の一日は家で一人です。移動や食事の準備が心配で、相談できる方はいますか。",
+          "vi": "Sau khi ra viện, ngày đầu tôi ở nhà một mình. Tôi lo việc di chuyển và chuẩn bị bữa ăn. Tôi có thể hỏi ai?"
+        },
+        {
+          "id": "bead21b3-6876-5b69-a696-37b544298509-u02",
+          "speaker_id": "coordinator",
+          "ja": "退院支援の担当と話しましょう。今できることと、家族や地域に頼めることを一緒に整理します。",
+          "vi": "Ta sẽ trao đổi với người phụ trách hỗ trợ ra viện. Cùng xem việc chị làm được và có thể nhờ gia đình hay dịch vụ địa phương."
+        },
+        {
+          "id": "bead21b3-6876-5b69-a696-37b544298509-u03",
+          "speaker_id": "a",
+          "ja": "今日、担当の方と話せますか。退院日はまだ仮です。",
+          "vi": "Hôm nay tôi có gặp người phụ trách được không? Ngày ra viện vẫn đang dự kiến."
+        },
+        {
+          "id": "bead21b3-6876-5b69-a696-37b544298509-u04",
+          "speaker_id": "coordinator",
+          "ja": "午後三時に面談できます。その内容を主治医と病棟にも共有します。",
+          "vi": "Ba giờ chiều có thể gặp. Tôi sẽ chia sẻ nội dung với bác sĩ và khoa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_msw"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bead21b3-6876-5b69-a696-37b544298509-u01": {
+            "kind": "original_extension"
+          },
+          "bead21b3-6876-5b69-a696-37b544298509-u02": {
+            "kind": "original_extension"
+          },
+          "bead21b3-6876-5b69-a696-37b544298509-u03": {
+            "kind": "original_extension"
+          },
+          "bead21b3-6876-5b69-a696-37b544298509-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "855e081c-9563-556c-9a4c-137b0a039bbd",
+      "event_id": "E03",
+      "context_vi": "Trước khi rời viện theo lịch ban đầu, bạn nhắc ngày, thuốc và lần tái khám với nhân viên.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "staff",
+          "role_vi": "nhân viên xuất viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "855e081c-9563-556c-9a4c-137b0a039bbd-u01",
+          "speaker_id": "a",
+          "ja": "確認します。今日は金曜日に退院し、薬の説明を聞いてから帰ります。再診は火曜日十時ですね。",
+          "vi": "Để tôi xác nhận: hôm nay thứ Sáu tôi ra viện, nghe dặn thuốc rồi mới về. Tái khám là 10 giờ thứ Ba, đúng không?"
+        },
+        {
+          "id": "855e081c-9563-556c-9a4c-137b0a039bbd-u02",
+          "speaker_id": "staff",
+          "ja": "はい。薬は薬剤師から説明済みですか。",
+          "vi": "Đúng. Chị đã nghe dược sĩ giải thích thuốc chưa?"
+        },
+        {
+          "id": "855e081c-9563-556c-9a4c-137b0a039bbd-u03",
+          "speaker_id": "a",
+          "ja": "まだです。説明を聞いて、予約票と連絡先を受け取ってから帰ります。",
+          "vi": "Chưa. Tôi sẽ nghe giải thích và nhận phiếu hẹn, liên hệ rồi mới về."
+        },
+        {
+          "id": "855e081c-9563-556c-9a4c-137b0a039bbd-u04",
+          "speaker_id": "staff",
+          "ja": "分かりました。薬剤師を呼びます。説明後にもう一度確認しましょう。",
+          "vi": "Tôi hiểu. Tôi sẽ gọi dược sĩ. Sau khi giải thích, ta kiểm lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_msw"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "855e081c-9563-556c-9a4c-137b0a039bbd-u01": {
+            "kind": "original_extension"
+          },
+          "855e081c-9563-556c-9a4c-137b0a039bbd-u02": {
+            "kind": "original_extension"
+          },
+          "855e081c-9563-556c-9a4c-137b0a039bbd-u03": {
+            "kind": "original_extension"
+          },
+          "855e081c-9563-556c-9a4c-137b0a039bbd-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a07bda81-425e-5d73-84d1-0b33532a5f35",
+      "event_id": "E04",
+      "context_vi": "Sau khi ra viện dự kiến thứ Sáu, người nhà nghe thành thứ Bảy; bạn hỏi điều phối viên bệnh viện ngày đã chốt.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "coordinator",
+          "role_vi": "điều phối viên xuất viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a07bda81-425e-5d73-84d1-0b33532a5f35-u01",
+          "speaker_id": "a",
+          "ja": "私は今日退院と聞きましたが、兄には土曜日と伝わっています。今、病院で決まっている日はどちらですか。",
+          "vi": "Tôi nghe mình ra viện hôm nay, nhưng anh trai lại nghe là thứ Bảy. Hiện bệnh viện chốt ngày nào?"
+        },
+        {
+          "id": "a07bda81-425e-5d73-84d1-0b33532a5f35-u02",
+          "speaker_id": "coordinator",
+          "ja": "記録を確認します。主治医が今朝、退院日を土曜日に変更しています。ご本人への連絡が遅れてすみません。",
+          "vi": "Tôi kiểm hồ sơ nhé. Sáng nay bác sĩ đã đổi ngày ra viện sang thứ Bảy. Xin lỗi vì báo chị chậm."
+        },
+        {
+          "id": "a07bda81-425e-5d73-84d1-0b33532a5f35-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。兄には土曜日と伝えます。時間はもう決まっていますか。",
+          "vi": "Tôi hiểu. Tôi sẽ báo anh ấy thứ Bảy. Giờ ra viện đã chốt chưa?"
+        },
+        {
+          "id": "a07bda81-425e-5d73-84d1-0b33532a5f35-u04",
+          "speaker_id": "coordinator",
+          "ja": "土曜日の午前十一時を予定しています。診察後に最終確認します。",
+          "vi": "Dự kiến 11 giờ sáng thứ Bảy. Sau buổi khám sẽ xác nhận cuối."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_msw"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a07bda81-425e-5d73-84d1-0b33532a5f35-u01": {
+            "kind": "original_extension"
+          },
+          "a07bda81-425e-5d73-84d1-0b33532a5f35-u02": {
+            "kind": "original_extension"
+          },
+          "a07bda81-425e-5d73-84d1-0b33532a5f35-u03": {
+            "kind": "original_extension"
+          },
+          "a07bda81-425e-5d73-84d1-0b33532a5f35-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ff75faf9-be44-50e5-b28c-4730e8b009b2",
+      "event_id": "E04",
+      "context_vi": "Sau khi biết ra viện thứ Bảy 11 giờ, người đón không tới được; bạn hỏi điều phối viên phương án phù hợp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "coordinator",
+          "role_vi": "điều phối viên xuất viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ff75faf9-be44-50e5-b28c-4730e8b009b2-u01",
+          "speaker_id": "a",
+          "ja": "兄は土曜日十一時に来られません。午後三時なら来られますが、病院では待てますか。",
+          "vi": "Anh trai tôi không đến được 11 giờ thứ Bảy. Ba giờ chiều thì đến được; tôi có thể đợi trong bệnh viện không?"
+        },
+        {
+          "id": "ff75faf9-be44-50e5-b28c-4730e8b009b2-u02",
+          "speaker_id": "coordinator",
+          "ja": "病棟に退室時間を確認します。午後まで待てるか、別の迎えが必要かを相談しましょう。",
+          "vi": "Tôi sẽ hỏi khoa về giờ rời phòng. Ta xem chị có thể đợi đến chiều hay phải tìm người đón khác."
+        },
+        {
+          "id": "ff75faf9-be44-50e5-b28c-4730e8b009b2-u03",
+          "speaker_id": "a",
+          "ja": "もし待てないなら、友人に頼むか、帰り方を相談したいです。",
+          "vi": "Nếu không thể đợi, tôi sẽ nhờ bạn hoặc bàn cách về khác."
+        },
+        {
+          "id": "ff75faf9-be44-50e5-b28c-4730e8b009b2-u04",
+          "speaker_id": "coordinator",
+          "ja": "分かりました。まず病棟の回答を確認し、今日中にお伝えします。",
+          "vi": "Tôi hiểu. Tôi sẽ hỏi khoa và báo chị trong hôm nay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_msw"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ff75faf9-be44-50e5-b28c-4730e8b009b2-u01": {
+            "kind": "original_extension"
+          },
+          "ff75faf9-be44-50e5-b28c-4730e8b009b2-u02": {
+            "kind": "original_extension"
+          },
+          "ff75faf9-be44-50e5-b28c-4730e8b009b2-u03": {
+            "kind": "original_extension"
+          },
+          "ff75faf9-be44-50e5-b28c-4730e8b009b2-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9385d915-b6d9-5966-bcac-c0ad48ef4a11",
+      "event_id": "E04",
+      "context_vi": "Sau khi hỏi phương án đón, hỗ trợ sinh hoạt ở nhà chưa được chốt; bạn hỏi đầu mối trước ra viện.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "coordinator",
+          "role_vi": "điều phối viên xuất viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9385d915-b6d9-5966-bcac-c0ad48ef4a11-u01",
+          "speaker_id": "a",
+          "ja": "家での支援もまだ決まっていません。土曜日に帰る前に、誰と相談できますか。",
+          "vi": "Việc hỗ trợ ở nhà vẫn chưa chốt. Trước khi về thứ Bảy, tôi có thể bàn với ai?"
+        },
+        {
+          "id": "9385d915-b6d9-5966-bcac-c0ad48ef4a11-u02",
+          "speaker_id": "coordinator",
+          "ja": "退院支援の担当者です。今日の午後、あなたとお兄さんを交えて話せます。",
+          "vi": "Là người phụ trách hỗ trợ ra viện. Chiều nay có thể nói chuyện cùng chị và anh trai."
+        },
+        {
+          "id": "9385d915-b6d9-5966-bcac-c0ad48ef4a11-u03",
+          "speaker_id": "a",
+          "ja": "兄は電話なら参加できます。迎えの時間と、家での最初の夜を一緒に確認したいです。",
+          "vi": "Anh ấy tham gia qua điện thoại được. Tôi muốn kiểm cùng giờ đón và đêm đầu ở nhà."
+        },
+        {
+          "id": "9385d915-b6d9-5966-bcac-c0ad48ef4a11-u04",
+          "speaker_id": "coordinator",
+          "ja": "分かりました。午後四時に三者で話す時間を取ります。",
+          "vi": "Được. Tôi sẽ xếp buổi nói chuyện ba bên lúc 4 giờ chiều."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_msw"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9385d915-b6d9-5966-bcac-c0ad48ef4a11-u01": {
+            "kind": "original_extension"
+          },
+          "9385d915-b6d9-5966-bcac-c0ad48ef4a11-u02": {
+            "kind": "original_extension"
+          },
+          "9385d915-b6d9-5966-bcac-c0ad48ef4a11-u03": {
+            "kind": "original_extension"
+          },
+          "9385d915-b6d9-5966-bcac-c0ad48ef4a11-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "325bbd66-77f5-50e2-8048-ade445adecb3",
+      "event_id": "E04",
+      "context_vi": "Buổi điều phối xác định dịch vụ hỗ trợ sinh hoạt giả định chỉ đến từ Chủ nhật, còn tối thứ Bảy chưa có; bạn nêu khoảng trống.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "coordinator",
+          "role_vi": "điều phối viên xuất viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "325bbd66-77f5-50e2-8048-ade445adecb3-u01",
+          "speaker_id": "a",
+          "ja": "支援の方が来られるのは日曜日からなんですね。土曜日の夜は誰にも頼めていません。",
+          "vi": "Người hỗ trợ chỉ đến từ Chủ nhật à. Tối thứ Bảy tôi chưa nhờ được ai."
+        },
+        {
+          "id": "325bbd66-77f5-50e2-8048-ade445adecb3-u02",
+          "speaker_id": "coordinator",
+          "ja": "その時間が空いていますね。お兄さんに土曜日の夜をお願いできるか、今ここで確認しましょう。",
+          "vi": "Vậy tối thứ Bảy còn trống. Ta hỏi ngay anh trai chị có giúp được tối đó không."
+        },
+        {
+          "id": "325bbd66-77f5-50e2-8048-ade445adecb3-u03",
+          "speaker_id": "a",
+          "ja": "電話してみます。もし無理なら、退院前に別の方法を相談したいです。",
+          "vi": "Tôi sẽ gọi hỏi. Nếu anh ấy không được, tôi muốn bàn cách khác trước khi ra viện."
+        },
+        {
+          "id": "325bbd66-77f5-50e2-8048-ade445adecb3-u04",
+          "speaker_id": "coordinator",
+          "ja": "お兄さんの返事を聞いてから、土曜日の退院準備を確定しましょう。",
+          "vi": "Ta đợi câu trả lời của anh trai chị rồi mới chốt việc chuẩn bị ra viện thứ Bảy."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_msw"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "325bbd66-77f5-50e2-8048-ade445adecb3-u01": {
+            "kind": "original_extension"
+          },
+          "325bbd66-77f5-50e2-8048-ade445adecb3-u02": {
+            "kind": "original_extension"
+          },
+          "325bbd66-77f5-50e2-8048-ade445adecb3-u03": {
+            "kind": "original_extension"
+          },
+          "325bbd66-77f5-50e2-8048-ade445adecb3-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4",
+      "event_id": "E04",
+      "context_vi": "Sau khi anh trai nhận đón và ở lại tối thứ Bảy, bạn nhắc kế hoạch ra viện, thuốc và tái khám với điều phối viên.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "coordinator",
+          "role_vi": "điều phối viên xuất viện",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4-u01",
+          "speaker_id": "a",
+          "ja": "兄が土曜日の午後三時に迎えに来て、その夜も家にいてくれます。日曜日からは支援の方にお願いします。",
+          "vi": "Anh trai sẽ đón tôi 3 giờ chiều thứ Bảy và ở lại tối đó. Từ Chủ nhật tôi nhờ người hỗ trợ."
+        },
+        {
+          "id": "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4-u02",
+          "speaker_id": "coordinator",
+          "ja": "病棟が午後三時まで待てることも確認しました。薬の説明は土曜日の退院前です。",
+          "vi": "Khoa đã xác nhận chị có thể đợi đến 3 giờ chiều. Việc giải thích thuốc sẽ diễn ra trước khi ra viện thứ Bảy."
+        },
+        {
+          "id": "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4-u03",
+          "speaker_id": "a",
+          "ja": "再診は火曜日十時ですね。薬の説明を聞いたら、連絡先も一緒に確認します。",
+          "vi": "Tái khám là 10 giờ thứ Ba đúng không? Sau khi nghe dặn thuốc, tôi sẽ kiểm cả số liên hệ."
+        },
+        {
+          "id": "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4-u04",
+          "speaker_id": "coordinator",
+          "ja": "はい。その予定で病棟とお兄さんにも共有します。",
+          "vi": "Đúng. Tôi sẽ chia sẻ kế hoạch đó với khoa và anh trai chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_msw"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4-u01": {
+            "kind": "original_extension"
+          },
+          "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4-u02": {
+            "kind": "original_extension"
+          },
+          "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4-u03": {
+            "kind": "original_extension"
+          },
+          "43e8e2bf-f999-5e9b-af90-e5b89cfb78f4-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
