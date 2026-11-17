@@ -123,6 +123,6 @@ def build(publish=False, batch=None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--publish", action="store_true")
-    parser.add_argument("--batch", choices=("batch01", "batch02"))
+    parser.add_argument("--batch", choices=("batch01", "batch02", "batch03"))
     args = parser.parse_args()
     build(args.publish, args.batch)
