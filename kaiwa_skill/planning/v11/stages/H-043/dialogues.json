@@ -23,13 +23,20 @@
       "url": "https://www.sonpo.or.jp/about/efforts/adr/",
       "accessed": "2026-11-17",
       "use_vi": "Đầu mối tư vấn/tranh chấp bảo hiểm phi nhân thọ; không áp dụng tự động cho vụ giả định."
+    },
+    "police": {
+      "kind": "web",
+      "title": "警察庁 自転車の交通ルール",
+      "url": "https://www.npa.go.jp/bureau/traffic/bicycle/portal/rule.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Báo cảnh sát về tai nạn xe đạp. S001 đặt cuộc gọi bảo hiểm sau khi nhân vật đã báo cảnh sát."
     }
   },
   "dialogues": [
     {
       "situation_uid": "c226fe25-12ec-5a7d-abe1-d6cd22947295",
       "event_id": "E01",
-      "context_vi": "Minh gọi cho hãng bảo hiểm của mình để báo chiếc xe đạp bị hư trong vụ va chạm ở Yokohama tối 12/11; anh chưa rõ nguyên nhân.",
+      "context_vi": "Minh đã báo cảnh sát về vụ va chạm ở Yokohama tối 12/11. Giờ anh gọi cho hãng bảo hiểm để báo chiếc xe đạp bị hư và trình bày những gì mình đã thấy.",
       "speakers": [
         {
           "id": "A",
@@ -71,7 +78,8 @@
       "admin": {
         "source_refs": [
           "verify",
-          "claim"
+          "claim",
+          "police"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -116,20 +124,20 @@
         {
           "id": "d4bb3c1c-5c63-5c23-be51-3d694e60f24b-u02",
           "speaker_id": "A",
-          "ja": "二件あるので、手元の証券を確認します。自転車の件として問い合わせる契約番号は、末尾が四二七です。",
-          "vi": "Tôi có hai hợp đồng nên sẽ kiểm giấy đang cầm. Hợp đồng tôi muốn hỏi cho vụ xe đạp có số cuối 427."
+          "ja": "二件あるので、手元の保険証券を確認します。自転車の件で確認したい契約は、番号の末尾が一四二です。",
+          "vi": "Tôi có hai hợp đồng nên để tôi xem lại giấy chứng nhận bảo hiểm. Hợp đồng tôi muốn kiểm tra cho vụ xe đạp có ba số cuối là 142."
         },
         {
           "id": "d4bb3c1c-5c63-5c23-be51-3d694e60f24b-u03",
           "speaker_id": "B",
-          "ja": "四二七ですね。契約内容を照合してから、担当部署をご案内します。",
-          "vi": "Số cuối 427. Tôi sẽ đối chiếu hợp đồng rồi báo bộ phận phụ trách."
+          "ja": "末尾が一四二ですね。契約内容を照合してから、担当部署をご案内します。",
+          "vi": "Ba số cuối là 142, đúng không ạ? Tôi sẽ đối chiếu hợp đồng rồi cho anh biết bộ phận nào phụ trách."
         },
         {
           "id": "d4bb3c1c-5c63-5c23-be51-3d694e60f24b-u04",
           "speaker_id": "A",
-          "ja": "照合前に、もう一件で受け付けたことにはしないでください。",
-          "vi": "Trước khi đối chiếu, xin đừng ghi nhận theo hợp đồng còn lại."
+          "ja": "はい。まずはその契約で、今回の事故が対象になるか確認をお願いします。",
+          "vi": "Vâng. Trước hết, xin chị kiểm tra xem vụ này có thuộc phạm vi của hợp đồng đó không."
         }
       ],
       "admin": {
@@ -321,7 +329,7 @@
           "id": "4af3596f-45fc-5c6a-ad36-13e68de03098-u01",
           "speaker_id": "B",
           "ja": "こちらは医療保険の窓口で、自転車の損害については担当外です。",
-          "vi": "Đây là bộ phận bảo hiểm y tế, không phụ trách thiệt hại xe đạp."
+          "vi": "Đây là bộ phận phụ trách bảo hiểm y tế tư của hãng. Vụ thiệt hại xe đạp do bộ phận khác phụ trách ạ."
         },
         {
           "id": "4af3596f-45fc-5c6a-ad36-13e68de03098-u02",
@@ -333,7 +341,7 @@
           "id": "4af3596f-45fc-5c6a-ad36-13e68de03098-u03",
           "speaker_id": "B",
           "ja": "この窓口では相談履歴だけです。契約番号を確認したうえで、損害保険の担当窓口をご案内します。",
-          "vi": "Bên này mới ghi lịch sử cuộc hỏi. Tôi sẽ xác nhận số hợp đồng rồi chỉ đầu mối bảo hiểm thiệt hại."
+          "vi": "Bộ phận tôi chỉ lưu thông tin cuộc gọi này. Tôi sẽ kiểm số hợp đồng rồi chỉ cho anh đầu mối bảo hiểm phi nhân thọ."
         },
         {
           "id": "4af3596f-45fc-5c6a-ad36-13e68de03098-u04",
@@ -384,7 +392,7 @@
         {
           "id": "7bea94c5-491d-5a2f-a33e-6336e41019f4-u01",
           "speaker_id": "A",
-          "ja": "事故の状況と写真はお伝えしました。私の案件を確認するため、次に何が必要か、優先順に教えてください。",
+          "ja": "事故の状況はお伝えしました。写真も手元にあります。この件で次に何を用意すればいいか、優先順位を教えていただけますか。",
           "vi": "Tôi đã trình bày sự việc và có ảnh. Với hồ sơ của tôi, xin cho biết tiếp theo cần gì, theo thứ tự ưu tiên."
         },
         {
@@ -559,7 +567,7 @@
     {
       "situation_uid": "0876418b-e080-5fb5-878f-76f014ec160b",
       "event_id": "E02",
-      "context_vi": "Sau khi đã hỏi hồ sơ, Minh nhớ ra một chi tiết về người chứng kiến; anh tách điều biết trực tiếp và điều nghe kể.",
+      "context_vi": "Sau khi hỏi cần nộp giấy tờ gì, Minh nhớ đã thấy nhân viên một cửa hàng đi ra ngay sau va chạm. Anh chưa biết người đó có thấy lúc hai xe chạm nhau không.",
       "speakers": [
         {
           "id": "A",
@@ -646,8 +654,8 @@
         {
           "id": "0a7f6975-810c-5098-891f-e911531fec13-u02",
           "speaker_id": "A",
-          "ja": "接触は港通りです。曲がった前輪を安全な場所へ押してから、一本先で写真を撮りました。",
-          "vi": "Va chạm ở đường Minato. Tôi dắt chiếc xe bánh cong đến chỗ an toàn rồi mới chụp ảnh ở đoạn kế tiếp."
+          "ja": "接触したのは港通りの交差点です。前輪が曲がった自転車を安全な場所まで押して、一本先の信号のところで撮りました。",
+          "vi": "Va chạm ở ngã tư đường Minato. Tôi dắt chiếc xe bị cong bánh trước đến chỗ an toàn rồi chụp ở chỗ đèn tín hiệu kế tiếp."
         },
         {
           "id": "0a7f6975-810c-5098-891f-e911531fec13-u03",
@@ -658,7 +666,7 @@
         {
           "id": "0a7f6975-810c-5098-891f-e911531fec13-u04",
           "speaker_id": "A",
-          "ja": "ありがとうございます。写真だけで現場を移したことにならないようお願いします。",
+          "ja": "ありがとうございます。写真の場所が事故現場と混同されないよう、お願いします。",
           "vi": "Cảm ơn. Xin đừng suy từ ảnh rằng vụ việc xảy ra ở chỗ chụp."
         }
       ],
@@ -716,7 +724,7 @@
         {
           "id": "17196e95-9e67-5867-92db-a342c9efbc1b-u03",
           "speaker_id": "A",
-          "ja": "受領と審査中は分かりました。今、私に不足している資料はありますか。",
+          "ja": "資料は届いていて、契約内容の確認はまだ続いているんですね。今の時点で、私から追加で出すものはありますか。",
           "vi": "Tôi hiểu là đã nhận tài liệu và đang xem xét. Hiện còn thiếu tài liệu gì từ phía tôi không?"
         },
         {
@@ -1104,7 +1112,7 @@
           "id": "3c234d18-6888-5313-9afc-06570e2cfa54-u02",
           "speaker_id": "B",
           "ja": "届いていないと断定せず、担当の受信記録を確認します。修理店が使った受付番号は分かりますか。",
-          "vi": "Tôi sẽ kiểm hộp nhận của người phụ trách, chưa kết luận là chưa đến. Anh biết số tiếp nhận tiệm đã dùng không?"
+          "vi": "Tôi sẽ kiểm nhật ký thư đến của bộ phận phụ trách rồi mới xác nhận. Anh biết tiệm đã dùng số tiếp nhận nào không?"
         },
         {
           "id": "3c234d18-6888-5313-9afc-06570e2cfa54-u03",
@@ -1144,7 +1152,7 @@
     {
       "situation_uid": "d10413c2-a05d-5ca9-b084-94fba97ce69e",
       "event_id": "E04",
-      "context_vi": "Sau khi hai bên so số, nhân viên phát hiện tiệm dùng mã nội bộ khác; Minh xin cách đối chiếu cụ thể.",
+      "context_vi": "Aya tra được thư của tiệm. Số tiệm đọc cho Minh trùng số hồ sơ bảo hiểm, nhưng trong thư lại ghi mã nội bộ của tiệm nên tài liệu chưa vào đúng hồ sơ.",
       "speakers": [
         {
           "id": "A",
@@ -1161,8 +1169,8 @@
         {
           "id": "d10413c2-a05d-5ca9-b084-94fba97ce69e-u01",
           "speaker_id": "B",
-          "ja": "修理店の控えには別の管理番号がありました。こちらの受付番号と混同していたようです。",
-          "vi": "Phiếu lưu của tiệm có mã quản lý khác. Có vẻ hai bên đã nhầm với số tiếp nhận của chúng tôi."
+          "ja": "受信記録を調べたところ、メール本文にあったのは修理店の管理番号でした。お電話で伺った当社の受付番号とは別の番号です。",
+          "vi": "Tôi đã tìm được thư. Trong thư ghi mã quản lý của tiệm, khác với số tiếp nhận của hãng mà anh đọc lúc nãy."
         },
         {
           "id": "d10413c2-a05d-5ca9-b084-94fba97ce69e-u02",
@@ -1173,8 +1181,8 @@
         {
           "id": "d10413c2-a05d-5ca9-b084-94fba97ce69e-u03",
           "speaker_id": "B",
-          "ja": "当社の受付番号四二七と、修理日を添えて再送してもらうようお願いできますか。",
-          "vi": "Anh có thể nhờ tiệm gửi lại kèm số tiếp nhận 427 của chúng tôi và ngày sửa không?"
+          "ja": "当社の受付番号四二七と見積書の日付を添えて、同じ宛先に再送するようお願いできますか。",
+          "vi": "Anh nhờ tiệm gửi lại vào cùng địa chỉ, ghi kèm số tiếp nhận 427 của hãng và ngày trên báo giá được không?"
         },
         {
           "id": "d10413c2-a05d-5ca9-b084-94fba97ce69e-u04",
