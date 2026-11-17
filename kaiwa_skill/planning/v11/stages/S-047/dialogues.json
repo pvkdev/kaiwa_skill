@@ -9,6 +9,20 @@
       "start_line": 381,
       "end_line": 412,
       "use_vi": "Cách hỏi quầy, xin giải thích từ chỉ giấy tờ và hỏi hỗ trợ ngôn ngữ."
+    },
+    "resident_cert": {
+      "kind": "web",
+      "title": "横浜市 住民票の写し・住民票記載事項証明書を窓口で請求する",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/todokede/koseki-juminhyo/shoumei/jyuminhyou/mado.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Mẫu tên giấy và xác minh danh tính khi xin 住民票の写し tại quầy. Hội thoại ở Midori không nêu loại giấy bắt buộc hay công nhận từ phía công ty."
+    },
+    "language_help": {
+      "kind": "web",
+      "title": "出入国在留管理庁 外国人のための生活相談窓口（やさしい日本語）",
+      "url": "https://www.moj.go.jp/isa/support/consultation/japanese?lang=fy",
+      "accessed": "2026-11-18",
+      "use_vi": "Các đầu mối có hỗ trợ đời sống và ngôn ngữ. Ngôn ngữ và lịch cụ thể thay đổi theo nơi. Lịch Midori là dữ kiện của tình huống."
     }
   },
   "dialogues": [
@@ -32,14 +46,14 @@
         {
           "id": "14e3f1c1-e0a3-5121-9626-8274542531a0-u01",
           "speaker_id": "a",
-          "ja": "住所のことで聞きたいです。どちらの窓口ですか。",
+          "ja": "住所のことで相談したいです。どの窓口に行けばいいですか。",
           "vi": "Tôi muốn hỏi về địa chỉ cư trú. Tôi nên đến quầy nào ạ?"
         },
         {
           "id": "14e3f1c1-e0a3-5121-9626-8274542531a0-u02",
           "speaker_id": "b",
           "ja": "二階の住民窓口です。",
-          "vi": "Quầy cư dân ở tầng hai ạ."
+          "vi": "Quầy cư trú ở tầng hai ạ."
         }
       ],
       "admin": {
@@ -60,7 +74,7 @@
     {
       "situation_uid": "5d433196-c08d-5a38-beae-7699ad4cd89f",
       "event_id": "E01",
-      "context_vi": "Nhân viên sảnh vừa chỉ quầy cư dân ở tầng hai. Bạn hỏi lối cầu thang để tìm đúng quầy.",
+      "context_vi": "Nhân viên sảnh vừa chỉ quầy cư trú ở tầng hai. Bạn hỏi lối lên tầng hai.",
       "speakers": [
         {
           "id": "a",
@@ -77,14 +91,14 @@
         {
           "id": "5d433196-c08d-5a38-beae-7699ad4cd89f-u01",
           "speaker_id": "a",
-          "ja": "二階の住民窓口は、どこから行きますか。",
-          "vi": "Tôi đi lên quầy cư dân ở tầng hai bằng lối nào ạ?"
+          "ja": "二階へはどうやって行けばいいですか。",
+          "vi": "Tôi lên tầng hai bằng lối nào ạ?"
         },
         {
           "id": "5d433196-c08d-5a38-beae-7699ad4cd89f-u02",
           "speaker_id": "b",
-          "ja": "右の階段からどうぞ。",
-          "vi": "Mời đi cầu thang bên phải."
+          "ja": "右の階段を上がってください。",
+          "vi": "Mời chị lên cầu thang bên phải ạ."
         }
       ],
       "admin": {
@@ -105,7 +119,7 @@
     {
       "situation_uid": "c20dfd84-4178-5f0b-884d-264d1a79e912",
       "event_id": "E01",
-      "context_vi": "Bạn đến lại quầy cư dân ở tầng hai nhưng hôm nay đã hết giờ tiếp nhận. Bạn hỏi giờ quay lại.",
+      "context_vi": "Ở sảnh tòa thị chính, nhân viên cho biết quầy cư trú trên tầng hai đã hết giờ tiếp nhận. Bạn hỏi khi nào quay lại.",
       "speakers": [
         {
           "id": "a",
@@ -128,8 +142,8 @@
         {
           "id": "c20dfd84-4178-5f0b-884d-264d1a79e912-u02",
           "speaker_id": "a",
-          "ja": "何時に来ればいいですか。",
-          "vi": "Tôi nên quay lại lúc mấy giờ ạ?"
+          "ja": "明日は何時に来ればいいですか。",
+          "vi": "Ngày mai tôi nên quay lại lúc mấy giờ ạ?"
         },
         {
           "id": "c20dfd84-4178-5f0b-884d-264d1a79e912-u03",
@@ -159,7 +173,7 @@
     {
       "situation_uid": "7cc19fb7-1cf0-5531-9f1a-29df9db0a6bc",
       "event_id": "E01",
-      "context_vi": "Nhân viên sảnh nói tên quầy bằng tiếng Nhật quá nhanh. Bạn muốn nghe rõ chữ 住民窓口.",
+      "context_vi": "Nhân viên sảnh vừa chỉ quầy ở tầng hai, nhưng bạn chưa nghe kịp tên quầy. Bạn xin nghe lại chậm hơn.",
       "speakers": [
         {
           "id": "a",
@@ -176,14 +190,14 @@
         {
           "id": "7cc19fb7-1cf0-5531-9f1a-29df9db0a6bc-u01",
           "speaker_id": "a",
-          "ja": "すみません。「住民窓口」をゆっくり言ってください。",
-          "vi": "Xin lỗi, anh nói chậm lại từ “quầy cư dân” được không ạ?"
+          "ja": "すみません。窓口の名前を、もう一度ゆっくりお願いします。",
+          "vi": "Xin lỗi, anh nói chậm lại tên quầy giúp tôi được không ạ?"
         },
         {
           "id": "7cc19fb7-1cf0-5531-9f1a-29df9db0a6bc-u02",
           "speaker_id": "b",
           "ja": "じゅうみん、まどぐち、です。住所の相談をする窓口です。",
-          "vi": "Là “jūmin madoguchi”, quầy hỏi về địa chỉ cư trú."
+          "vi": "Quầy cư trú ạ. Đó là quầy để hỏi về địa chỉ cư trú."
         }
       ],
       "admin": {
@@ -221,8 +235,8 @@
         {
           "id": "c909322d-9cf2-503c-8137-7666698a348d-u01",
           "speaker_id": "a",
-          "ja": "会社に出す住所の証明が必要です。こちらで相談できますか。",
-          "vi": "Tôi cần giấy xác nhận địa chỉ để nộp cho công ty. Tôi hỏi tại đây được không ạ?"
+          "ja": "会社に出す住所の証明が必要です。こちらで取れますか。",
+          "vi": "Tôi cần giấy xác nhận địa chỉ để nộp cho công ty. Tôi xin giấy đó ở quầy này được không ạ?"
         },
         {
           "id": "c909322d-9cf2-503c-8137-7666698a348d-u02",
@@ -272,19 +286,20 @@
         {
           "id": "1d2e9f74-a6cc-5511-a09b-0d29d38c5987-u02",
           "speaker_id": "a",
-          "ja": "見せるものは何ですか。",
-          "vi": "Tôi cần xuất trình gì ạ?"
+          "ja": "何を見せればいいですか。",
+          "vi": "Tôi cần đưa giấy tờ gì ạ?"
         },
         {
           "id": "1d2e9f74-a6cc-5511-a09b-0d29d38c5987-u03",
           "speaker_id": "b",
-          "ja": "本人確認ができるものを見せてください。",
-          "vi": "Bạn cho tôi xem giấy tờ tùy thân nhé."
+          "ja": "本人確認書類を見せてください。",
+          "vi": "Chị cho tôi xem giấy tờ tùy thân nhé."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "resident_cert"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -357,7 +372,7 @@
     {
       "situation_uid": "d86e0ea2-1b19-51a9-b1d8-bde4cbde1ba3",
       "event_id": "E02",
-      "context_vi": "Bạn không biết chính xác tên giấy xác nhận địa chỉ công ty muốn. Bạn giải thích mục đích để nhân viên gợi ý tên.",
+      "context_vi": "Mẫu hướng dẫn của công ty không ghi tên giấy, chỉ nói cần giấy xác nhận địa chỉ hiện tại. Bạn nêu lại mục đích để nhân viên gợi ý.",
       "speakers": [
         {
           "id": "a",
@@ -374,25 +389,26 @@
         {
           "id": "d86e0ea2-1b19-51a9-b1d8-bde4cbde1ba3-u01",
           "speaker_id": "a",
-          "ja": "書類の名前が分かりません。会社に住所を伝えるための証明です。",
-          "vi": "Tôi không biết tên giấy tờ. Tôi cần giấy xác nhận địa chỉ để nộp cho công ty."
+          "ja": "書類の名前は分かりません。会社に、今の住所が分かる書類を出すように言われました。",
+          "vi": "Tôi không biết tên giấy ạ. Công ty bảo tôi nộp giấy tờ có ghi địa chỉ hiện tại."
         },
         {
           "id": "d86e0ea2-1b19-51a9-b1d8-bde4cbde1ba3-u02",
           "speaker_id": "b",
           "ja": "住民票の写しのことでしょうか。会社に必要な内容も確認してください。",
-          "vi": "Có phải bạn cần bản sao phiếu cư trú không ạ? Bạn hỏi công ty xem họ cần ghi những nội dung gì nhé."
+          "vi": "Có thể là bản sao phiếu cư trú ạ. Chị hỏi lại công ty xem họ cần giấy ghi những mục nào nhé."
         },
         {
           "id": "d86e0ea2-1b19-51a9-b1d8-bde4cbde1ba3-u03",
           "speaker_id": "a",
-          "ja": "その名前を会社に確認します。",
-          "vi": "Tôi sẽ hỏi công ty về tên giấy đó."
+          "ja": "分かりました。住民票の写しでいいか、会社に聞きます。",
+          "vi": "Tôi hiểu rồi. Tôi sẽ hỏi công ty xem bản sao phiếu cư trú có được không ạ."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "resident_cert"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -411,7 +427,7 @@
     {
       "situation_uid": "87c4d9d1-f22e-5507-bb3a-0769c41c1748",
       "event_id": "E03",
-      "context_vi": "Bạn cần quay lại quầy hành chính hư cấu lần nữa. Bạn hỏi cần mang gì và tới quầy nào, lúc mấy giờ.",
+      "context_vi": "Bạn mới mang bản sao của một giấy tờ liên quan đến hồ sơ. Nhân viên hẹn quay lại, nên bạn hỏi lần tới cần mang gì.",
       "speakers": [
         {
           "id": "a",
@@ -434,8 +450,8 @@
         {
           "id": "87c4d9d1-f22e-5507-bb3a-0769c41c1748-u02",
           "speaker_id": "b",
-          "ja": "明日の九時に三番窓口へ、本人確認ができるものと書類の原本を持って来てください。",
-          "vi": "Ngày mai lúc 9 giờ, bạn mang giấy tờ tùy thân và bản gốc giấy này tới quầy số 3 nhé."
+          "ja": "本人確認書類と、この書類の原本をお持ちください。明日の午前九時に三番窓口へ来てください。",
+          "vi": "Chị mang giấy tờ tùy thân và bản gốc của giấy này nhé. Sáng mai lúc 9 giờ, chị đến quầy số 3 ạ."
         }
       ],
       "admin": {
@@ -480,7 +496,7 @@
           "id": "355f0c9a-7938-5314-a926-895f96e0de32-u02",
           "speaker_id": "b",
           "ja": "コピーではなく、元の書類です。",
-          "vi": "Là bản gốc, không phải bản sao ạ."
+          "vi": "Là tờ giấy gốc trước khi mang đi sao chụp ạ."
         }
       ],
       "admin": {
@@ -501,7 +517,7 @@
     {
       "situation_uid": "6f5a0d48-d5e2-582a-8b18-9c60e429cabc",
       "event_id": "E03",
-      "context_vi": "Bạn thiếu bản gốc được yêu cầu cho lần đến tiếp. Bạn hỏi có thể quay lại ngày khác không.",
+      "context_vi": "Nhân viên hẹn bạn mang bản gốc vào sáng mai, nhưng bạn chưa lấy được giấy trước ngày đó. Bạn xin quay lại thứ Hai tuần sau.",
       "speakers": [
         {
           "id": "a",
@@ -518,14 +534,14 @@
         {
           "id": "6f5a0d48-d5e2-582a-8b18-9c60e429cabc-u01",
           "speaker_id": "a",
-          "ja": "今日は原本がありません。来週の月曜日に来てもいいですか。",
-          "vi": "Hôm nay tôi không có bản gốc. Thứ Hai tuần sau tôi quay lại được không ạ?"
+          "ja": "明日までに原本を用意できません。来週の月曜日に来てもいいですか。",
+          "vi": "Tôi chưa chuẩn bị kịp bản gốc cho ngày mai. Thứ Hai tuần sau tôi đến được không ạ?"
         },
         {
           "id": "6f5a0d48-d5e2-582a-8b18-9c60e429cabc-u02",
           "speaker_id": "b",
-          "ja": "はい。月曜日は九時から、三番窓口で伺います。",
-          "vi": "Được. Thứ Hai quầy số 3 tiếp nhận từ 9 giờ."
+          "ja": "はい。月曜日も朝九時から、三番窓口でお受けします。",
+          "vi": "Được ạ. Thứ Hai quầy số 3 cũng tiếp nhận từ 9 giờ sáng."
         }
       ],
       "admin": {
@@ -563,8 +579,8 @@
         {
           "id": "22fb5f1d-4dc5-5941-b24f-bded5096f969-u01",
           "speaker_id": "a",
-          "ja": "明日の九時に、三番窓口ですね。",
-          "vi": "Ngày mai lúc 9 giờ, tại quầy số 3, đúng không ạ?"
+          "ja": "明日の朝九時に、三番窓口ですね。",
+          "vi": "Sáng mai lúc 9 giờ, tại quầy số 3, đúng không ạ?"
         },
         {
           "id": "22fb5f1d-4dc5-5941-b24f-bded5096f969-u02",
@@ -591,7 +607,7 @@
     {
       "situation_uid": "49d6468a-ab71-579d-a743-937f491ad624",
       "event_id": "E04",
-      "context_vi": "Bạn muốn được hỗ trợ tiếng Việt, hoặc ít nhất là tiếng Nhật dễ hiểu, tại quầy hỗ trợ của tòa thị chính hư cấu.",
+      "context_vi": "Bạn tới bàn hỗ trợ ở sảnh tòa thị chính Midori và cần hỏi về giấy xác nhận địa chỉ. Bạn muốn tìm người hỗ trợ bằng tiếng Việt hoặc xin nghe tiếng Nhật dễ hiểu.",
       "speakers": [
         {
           "id": "a",
@@ -608,8 +624,8 @@
         {
           "id": "49d6468a-ab71-579d-a743-937f491ad624-u01",
           "speaker_id": "a",
-          "ja": "ベトナム語で相談できますか。難しければ、やさしい日本語でお願いします。",
-          "vi": "Tôi có thể trao đổi bằng tiếng Việt không ạ? Nếu không được, xin nói tiếng Nhật dễ hiểu."
+          "ja": "ベトナム語で相談できる窓口はありますか。なければ、やさしい日本語でお願いします。",
+          "vi": "Có quầy nào hỗ trợ tiếng Việt không ạ? Nếu không có, xin anh nói bằng tiếng Nhật dễ hiểu giúp tôi."
         },
         {
           "id": "49d6468a-ab71-579d-a743-937f491ad624-u02",
@@ -620,7 +636,8 @@
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "language_help"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -666,7 +683,7 @@
           "id": "2c171db5-2a34-5dd7-b417-bacfd0ccfd3c-u03",
           "speaker_id": "b",
           "ja": "来週の火曜日、十時に予約できます。",
-          "vi": "Bạn có thể hẹn lúc 10 giờ thứ Ba tuần sau."
+          "vi": "Chị có thể hẹn lúc 10 giờ sáng thứ Ba tuần sau ạ."
         },
         {
           "id": "2c171db5-2a34-5dd7-b417-bacfd0ccfd3c-u04",
@@ -699,7 +716,7 @@
     {
       "situation_uid": "03bed172-145a-5f52-afc3-bc7f64613b54",
       "event_id": "E04",
-      "context_vi": "Bạn gọi trước ngày hẹn thứ Ba lúc 10 giờ để xác nhận quầy hỗ trợ có thể giúp chuyện địa chỉ.",
+      "context_vi": "Bạn có lịch tư vấn lúc 10 giờ sáng thứ Ba về giấy xác nhận địa chỉ. Bạn gọi trước để kiểm đúng quầy.",
       "speakers": [
         {
           "id": "a",
@@ -716,14 +733,14 @@
         {
           "id": "03bed172-145a-5f52-afc3-bc7f64613b54-u01",
           "speaker_id": "a",
-          "ja": "火曜日の十時の相談は、住所の件で合っていますか。どの窓口ですか。",
-          "vi": "Lịch 10 giờ thứ Ba đúng là để hỏi về địa chỉ chứ ạ? Tôi đến quầy nào?"
+          "ja": "火曜日の朝十時に予約したリンです。住所の証明の相談は、どの窓口ですか。",
+          "vi": "Tôi là Linh, có lịch lúc 10 giờ sáng thứ Ba. Tôi đến quầy nào để hỏi về giấy xác nhận địa chỉ ạ?"
         },
         {
           "id": "03bed172-145a-5f52-afc3-bc7f64613b54-u02",
           "speaker_id": "b",
-          "ja": "はい。住所の件で、一階の相談窓口です。",
-          "vi": "Đúng, về việc địa chỉ, ở quầy tư vấn tầng một."
+          "ja": "はい。住所の証明は一階の相談窓口です。",
+          "vi": "Vâng, chị đến quầy tư vấn tầng một để hỏi về giấy xác nhận địa chỉ ạ."
         }
       ],
       "admin": {
@@ -744,7 +761,7 @@
     {
       "situation_uid": "00215832-79a1-5d09-b9e0-7600f46934f5",
       "event_id": "E04",
-      "context_vi": "Đến quầy hỗ trợ đúng lịch thứ Ba, bạn nhắc ngắn việc địa chỉ đã hỏi trước để tiếp tục.",
+      "context_vi": "Đến 10 giờ sáng thứ Ba, bạn tới quầy tư vấn tầng một. Bạn giới thiệu tên và nhắc việc về giấy xác nhận địa chỉ đã hỏi trước.",
       "speakers": [
         {
           "id": "a",
@@ -761,14 +778,14 @@
         {
           "id": "00215832-79a1-5d09-b9e0-7600f46934f5-u01",
           "speaker_id": "a",
-          "ja": "先週、住所の証明のことで相談しました。今日は続きを聞きに来ました。",
-          "vi": "Tuần trước tôi đã hỏi về giấy xác nhận địa chỉ. Hôm nay tôi đến hỏi tiếp."
+          "ja": "十時に予約したリンです。先日、電話で住所の証明のことを聞きました。",
+          "vi": "Tôi là Linh, có lịch lúc 10 giờ. Hôm trước tôi đã gọi hỏi về giấy xác nhận địa chỉ ạ."
         },
         {
           "id": "00215832-79a1-5d09-b9e0-7600f46934f5-u02",
           "speaker_id": "b",
-          "ja": "確認しました。住所の証明の続きですね。こちらへどうぞ。",
-          "vi": "Tôi đã kiểm lại. Bạn muốn hỏi tiếp về giấy xác nhận địa chỉ. Mời bạn vào đây."
+          "ja": "リンさんですね。住所の証明のご相談ですね。こちらへどうぞ。",
+          "vi": "Chị Linh phải không ạ? Chị tới hỏi về giấy xác nhận địa chỉ. Mời chị vào đây."
         }
       ],
       "admin": {

@@ -16,13 +16,27 @@
       "url": "https://www.moj.go.jp/isa/support/portal/index.html",
       "accessed": "2026-11-17",
       "use_vi": "Cơ quan nhà nước có cổng giới thiệu đầu mối hỗ trợ người nước ngoài; hỗ trợ địa phương phải hỏi trực tiếp."
+    },
+    "medical_form": {
+      "kind": "web",
+      "title": "厚生労働省 外国人患者の受入れのための医療機関向けマニュアル 問診票の作成依頼・確認",
+      "url": "https://www.mhlw.go.jp/content/10800000/000487008.pdf",
+      "accessed": "2026-11-18",
+      "use_vi": "Căn cứ mô tả chức năng phiếu hỏi bệnh trước khi khám. Nhân viên trung tâm chỉ giúp hiểu tờ giấy đã xem."
+    },
+    "language_help": {
+      "kind": "web",
+      "title": "出入国在留管理庁 外国人のための生活相談窓口（やさしい日本語）",
+      "url": "https://www.moj.go.jp/isa/support/consultation/japanese?lang=fy",
+      "accessed": "2026-11-18",
+      "use_vi": "Các đầu mối tư vấn hỗ trợ đời sống và ngôn ngữ. Nơi và lịch theo từng trung tâm. Số giờ và sắp xếp trong thoại theo tình huống."
     }
   },
   "dialogues": [
     {
       "situation_uid": "b69b420d-ca4f-5aa0-9dde-d44e9b3c6a97",
       "event_id": "E01",
-      "context_vi": "Bạn đến trung tâm hỗ trợ cư dân nước ngoài Midori hư cấu vì không hiểu lời ở phòng khám gần nhà. Bạn muốn hỏi trước nơi có thể được giải thích.",
+      "context_vi": "Bạn tới trung tâm hỗ trợ cư dân nước ngoài Midori vì không hiểu lời giải thích ở bệnh viện gần ga. Bạn muốn hỏi trung tâm có thể giúp mình tìm nơi hỏi rõ hơn không.",
       "speakers": [
         {
           "id": "a",
@@ -39,8 +53,8 @@
         {
           "id": "b69b420d-ca4f-5aa0-9dde-d44e9b3c6a97-u01",
           "speaker_id": "a",
-          "ja": "家の近くの病院で、説明が分かりませんでした。どこに相談できますか。",
-          "vi": "Tôi không hiểu lời giải thích ở phòng khám gần nhà. Tôi có thể hỏi ở đâu ạ?"
+          "ja": "病院で説明を聞きましたが、よく分かりませんでした。どこに相談すればいいか、教えてください。",
+          "vi": "Ở bệnh viện tôi có nghe giải thích nhưng chưa hiểu. Anh chỉ giúp tôi có thể hỏi ở đâu được không ạ?"
         },
         {
           "id": "b69b420d-ca4f-5aa0-9dde-d44e9b3c6a97-u02",
@@ -57,8 +71,8 @@
         {
           "id": "b69b420d-ca4f-5aa0-9dde-d44e9b3c6a97-u04",
           "speaker_id": "b",
-          "ja": "では、まずこの相談センターでお話を聞きます。",
-          "vi": "Vậy trước tiên trung tâm này sẽ nghe bạn trình bày."
+          "ja": "それでは、まずここでお話を聞かせてください。",
+          "vi": "Vậy trước tiên chị kể cho tôi nghe ở đây nhé."
         }
       ],
       "admin": {
@@ -109,8 +123,8 @@
         {
           "id": "79ca37e9-2920-5635-81d3-24f826e1bc3c-u02",
           "speaker_id": "a",
-          "ja": "昨日、駅の近くの病院で、言葉が分かりませんでした。",
-          "vi": "Hôm qua, ở bệnh viện gần ga, tôi không hiểu người ta nói."
+          "ja": "昨日、駅の近くの病院で、説明がよく分かりませんでした。",
+          "vi": "Hôm qua ở bệnh viện gần ga, tôi nghe giải thích mà chưa hiểu lắm."
         }
       ],
       "admin": {
@@ -132,7 +146,7 @@
     {
       "situation_uid": "13a89393-4261-5eb9-8d72-ea5ed81dad21",
       "event_id": "E01",
-      "context_vi": "Bạn không biết từ chuyên môn trên tờ giấy phòng khám đưa. Bạn kể lại bằng việc đã xảy ra với mình.",
+      "context_vi": "Ở trung tâm, bạn đưa tờ giấy đã nhận tại bệnh viện gần ga. Bạn không biết tên giấy, nên kể nhân viên bệnh viện đã nhờ mình làm gì.",
       "speakers": [
         {
           "id": "a",
@@ -149,20 +163,21 @@
         {
           "id": "13a89393-4261-5eb9-8d72-ea5ed81dad21-u01",
           "speaker_id": "a",
-          "ja": "難しい言葉は分かりません。受付で紙を渡されて、名前と体のことを書いてくださいと言われました。",
-          "vi": "Tôi không biết từ chuyên môn. Quầy đưa tôi một tờ giấy và bảo ghi tên cùng tình trạng sức khỏe."
+          "ja": "名前は分かりません。病院の受付でこの紙をもらいました。名前と、体のどこが悪いかを書くように言われました。",
+          "vi": "Tôi không biết tên giấy này. Quầy tiếp nhận của bệnh viện đưa cho tôi rồi bảo ghi tên và chỗ nào trong người thấy không khỏe."
         },
         {
           "id": "13a89393-4261-5eb9-8d72-ea5ed81dad21-u02",
           "speaker_id": "b",
-          "ja": "それは診察前に書く質問の紙です。分からない所を一緒に確認しましょう。",
-          "vi": "Đó là tờ hỏi thông tin trước khi khám. Ta cùng xem phần bạn chưa hiểu nhé."
+          "ja": "これは問診票です。診察の前に、体のことを書く紙です。分からないところを一緒に見ましょう。",
+          "vi": "Đây là phiếu hỏi bệnh. Người bệnh ghi tình trạng sức khỏe trước khi khám. Chị chưa hiểu chỗ nào, ta xem cùng nhau nhé."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "portal"
+          "portal",
+          "medical_form"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -195,8 +210,8 @@
         {
           "id": "01656c83-70f7-5e39-aa06-ea78583531f1-u01",
           "speaker_id": "a",
-          "ja": "ベトナム語で相談できますか。難しければ、やさしい日本語でお願いします。",
-          "vi": "Tôi có thể trao đổi bằng tiếng Việt không ạ? Nếu không được, xin nói tiếng Nhật dễ hiểu."
+          "ja": "ベトナム語で話せますか。日本語なら、簡単な言葉でゆっくりお願いします。",
+          "vi": "Tôi có thể trao đổi bằng tiếng Việt không ạ? Nếu nói bằng tiếng Nhật, xin anh dùng từ dễ và nói chậm giúp tôi."
         },
         {
           "id": "01656c83-70f7-5e39-aa06-ea78583531f1-u02",
@@ -208,13 +223,14 @@
           "id": "01656c83-70f7-5e39-aa06-ea78583531f1-u03",
           "speaker_id": "a",
           "ja": "それでお願いします。",
-          "vi": "Vậy nhờ anh giúp tôi theo cách đó."
+          "vi": "Vâng, vậy nhờ anh nói chậm giúp tôi ạ."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "portal"
+          "portal",
+          "language_help"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -250,8 +266,8 @@
         {
           "id": "cff585a6-7c36-513a-b547-c363a28b5112-u01",
           "speaker_id": "a",
-          "ja": "この通知を持って来ました。どこから来たものか分かりません。",
-          "vi": "Tôi mang thông báo này tới. Tôi không biết cơ quan nào gửi."
+          "ja": "このお知らせは、どこから来たのか分かりません。見てもらえますか。",
+          "vi": "Tôi không biết cơ quan nào gửi thông báo này. Anh xem giúp tôi được không ạ?"
         },
         {
           "id": "cff585a6-7c36-513a-b547-c363a28b5112-u02",
@@ -279,7 +295,7 @@
     {
       "situation_uid": "d9d1594e-650f-50ad-bdc1-e49fc723c877",
       "event_id": "E02",
-      "context_vi": "Nhân viên vừa xác định thông báo của tòa thị chính Midori và chỉ quầy phụ trách ở tầng một; bạn nhắc lại.",
+      "context_vi": "Nhân viên xác định thư gửi từ tòa thị chính Midori. Anh chỉ nơi hỏi đầu tiên để tìm ra bộ phận phụ trách. Bạn nhắc lại đúng tên và tầng.",
       "speakers": [
         {
           "id": "a",
@@ -296,14 +312,14 @@
         {
           "id": "d9d1594e-650f-50ad-bdc1-e49fc723c877-u01",
           "speaker_id": "b",
-          "ja": "みどり市役所からの通知です。相談窓口は一階です。",
-          "vi": "Thông báo này từ tòa thị chính Midori. Quầy tư vấn ở tầng một."
+          "ja": "このお知らせのことは、市役所の一階の総合案内で聞いてみてください。",
+          "vi": "Chị thử hỏi về thông báo này ở bàn hướng dẫn chung tầng một của tòa thị chính nhé."
         },
         {
           "id": "d9d1594e-650f-50ad-bdc1-e49fc723c877-u02",
           "speaker_id": "a",
-          "ja": "市役所の一階の相談窓口ですね。",
-          "vi": "Quầy tư vấn tầng một của tòa thị chính, đúng không ạ?"
+          "ja": "市役所の一階の総合案内ですね。",
+          "vi": "Bàn hướng dẫn chung ở tầng một của tòa thị chính, đúng không ạ?"
         },
         {
           "id": "d9d1594e-650f-50ad-bdc1-e49fc723c877-u03",
@@ -334,7 +350,7 @@
     {
       "situation_uid": "fe5b06cc-ea2c-5334-ad5f-228516c932f5",
       "event_id": "E02",
-      "context_vi": "Bạn đã tới quầy tầng một được giới thiệu nhưng họ không nhận trường hợp của mình. Bạn quay lại trung tâm hỏi đường khác.",
+      "context_vi": "Bạn đã tới bàn hướng dẫn tầng một của tòa thị chính. Họ bảo cần hỏi bộ phận ghi trên thông báo, nhưng bạn chưa rõ bộ phận đó ở đâu nên quay lại trung tâm.",
       "speakers": [
         {
           "id": "a",
@@ -351,20 +367,20 @@
         {
           "id": "fe5b06cc-ea2c-5334-ad5f-228516c932f5-u01",
           "speaker_id": "a",
-          "ja": "一階に行きましたが、この件は受けられないと言われました。次はどこに聞けますか。",
-          "vi": "Tôi đã đến quầy tầng một, nhưng họ không nhận việc này. Tôi nên hỏi tiếp ở đâu ạ?"
+          "ja": "一階の総合案内に行きました。通知に書いてある窓口に行くように言われましたが、どこか分かりません。",
+          "vi": "Tôi đã đến bàn hướng dẫn tầng một. Họ bảo đến quầy ghi trên thông báo, nhưng tôi không biết quầy đó ở đâu ạ."
         },
         {
           "id": "fe5b06cc-ea2c-5334-ad5f-228516c932f5-u02",
           "speaker_id": "b",
-          "ja": "市役所の案内係へ一緒に電話して、担当を確認しましょう。",
-          "vi": "Ta cùng gọi bộ phận hướng dẫn của tòa thị chính để hỏi đúng người phụ trách."
+          "ja": "では、この通知を見ながら、市役所に電話して担当の窓口を聞きましょう。",
+          "vi": "Vậy ta xem thông báo này rồi gọi tòa thị chính hỏi quầy phụ trách nhé."
         },
         {
           "id": "fe5b06cc-ea2c-5334-ad5f-228516c932f5-u03",
           "speaker_id": "a",
-          "ja": "はい、一緒に確認したいです。",
-          "vi": "Vâng, tôi muốn cùng xác nhận."
+          "ja": "はい、一緒に電話してもらえますか。",
+          "vi": "Vâng, anh gọi cùng tôi được không ạ?"
         }
       ],
       "admin": {
@@ -406,14 +422,14 @@
         {
           "id": "56453ef2-4c19-55e5-8de6-81103ff3f5dd-u01",
           "speaker_id": "a",
-          "ja": "通知と住所のことがあります。どちらを先に聞けばいいですか。",
-          "vi": "Tôi có việc về thông báo và địa chỉ nhà. Tôi nên hỏi việc nào trước ạ?"
+          "ja": "この通知のことと、家の住所のことで相談があります。どちらを先に聞けばいいですか。",
+          "vi": "Tôi muốn hỏi về thông báo này và một việc về địa chỉ nhà. Tôi nên hỏi việc nào trước ạ?"
         },
         {
           "id": "56453ef2-4c19-55e5-8de6-81103ff3f5dd-u02",
           "speaker_id": "b",
           "ja": "通知には木曜日までとあります。まず通知について聞き、住所はその後にしましょう。",
-          "vi": "Trên thông báo ghi hạn thứ Năm. Ta hỏi việc này trước, rồi tới chuyện địa chỉ."
+          "vi": "Thông báo ghi hạn thứ Năm. Chị hỏi việc này trước rồi hỏi về địa chỉ sau nhé."
         },
         {
           "id": "56453ef2-4c19-55e5-8de6-81103ff3f5dd-u03",
@@ -467,14 +483,14 @@
         {
           "id": "11c6770e-eb3d-56e7-90d6-daee9b472efa-u02",
           "speaker_id": "b",
-          "ja": "来週の火曜日、十時が候補です。担当者を確認して、今日の四時までにお返事します。",
-          "vi": "10 giờ thứ Ba tuần sau là một lịch có thể. Tôi sẽ hỏi người phụ trách rồi trả lời trước 4 giờ hôm nay."
+          "ja": "来週の火曜日の朝十時なら、空いているかもしれません。担当者に聞いて、今日の午後四時までにお知らせします。",
+          "vi": "10 giờ sáng thứ Ba tuần sau có thể còn trống. Tôi sẽ hỏi người phụ trách rồi báo chị chậm nhất 4 giờ chiều nay."
         },
         {
           "id": "11c6770e-eb3d-56e7-90d6-daee9b472efa-u03",
           "speaker_id": "a",
-          "ja": "まだ確定ではないですね。四時までの連絡を待ちます。",
-          "vi": "Vậy lịch chưa được xác nhận. Tôi sẽ chờ tin trước 4 giờ."
+          "ja": "分かりました。午後四時までに連絡をいただけるんですね。",
+          "vi": "Vâng, vậy tôi sẽ nhận được tin chậm nhất 4 giờ chiều nay, đúng không ạ?"
         }
       ],
       "admin": {
@@ -499,7 +515,7 @@
     {
       "situation_uid": "9d766471-12bb-5ba6-9ce2-7bf05aa83281",
       "event_id": "E03",
-      "context_vi": "Thứ Ba tuần sau có thể quá muộn vì thông báo hư cấu phải hỏi trong tuần này. Bạn nói rõ mức gấp.",
+      "context_vi": "Trung tâm chưa xác nhận được giờ thứ Ba tuần sau, mà thông báo yêu cầu bạn trả lời trong tuần này. Bạn nói rõ hạn và xin một buổi tư vấn sớm hơn.",
       "speakers": [
         {
           "id": "a",
@@ -516,14 +532,14 @@
         {
           "id": "9d766471-12bb-5ba6-9ce2-7bf05aa83281-u01",
           "speaker_id": "a",
-          "ja": "来週では遅いかもしれません。通知に今週の期限があります。",
-          "vi": "Tuần sau có thể muộn. Trên thông báo ghi hạn trong tuần này."
+          "ja": "この通知は今週中に返事が必要です。もっと早く相談できますか。",
+          "vi": "Thông báo này cần trả lời trong tuần. Tôi có thể được tư vấn sớm hơn không ạ?"
         },
         {
           "id": "9d766471-12bb-5ba6-9ce2-7bf05aa83281-u02",
           "speaker_id": "b",
-          "ja": "今日は二時に、やさしい日本語で相談できます。よろしいですか。",
-          "vi": "Hôm nay lúc 2 giờ có thể tư vấn bằng tiếng Nhật dễ hiểu. Bạn thấy được không?"
+          "ja": "今日の午後二時なら、やさしい日本語で相談できます。いかがですか。",
+          "vi": "Hôm nay lúc 2 giờ chiều có thể tư vấn bằng tiếng Nhật dễ hiểu. Chị thấy giờ đó được không ạ?"
         },
         {
           "id": "9d766471-12bb-5ba6-9ce2-7bf05aa83281-u03",
@@ -571,14 +587,14 @@
         {
           "id": "d1691601-dee4-5d63-a982-1eb628c1822a-u01",
           "speaker_id": "a",
-          "ja": "まだ予約が決まらないなら、どうやって、いつ連絡をもらえますか。",
-          "vi": "Nếu lịch hẹn chưa chốt, tôi sẽ nhận tin bằng cách nào, lúc nào ạ?"
+          "ja": "今日の午後四時まででしたね。電話で知らせてもらえますか。",
+          "vi": "Chậm nhất 4 giờ chiều nay đúng không ạ? Anh báo cho tôi qua điện thoại được không?"
         },
         {
           "id": "d1691601-dee4-5d63-a982-1eb628c1822a-u02",
           "speaker_id": "b",
-          "ja": "今日の四時までに電話します。番号を確認してもいいですか。",
-          "vi": "Tôi sẽ gọi trước 4 giờ hôm nay. Cho tôi kiểm lại số nhé."
+          "ja": "はい、午後四時までに電話します。お電話番号をお願いします。",
+          "vi": "Vâng, tôi sẽ gọi chậm nhất 4 giờ chiều. Cho tôi xin số điện thoại của chị ạ."
         },
         {
           "id": "d1691601-dee4-5d63-a982-1eb628c1822a-u03",
@@ -618,7 +634,7 @@
     {
       "situation_uid": "117e9bd9-483b-524d-b6a6-50a81c277a87",
       "event_id": "E03",
-      "context_vi": "Trước khi lịch thứ Ba được chốt, bạn muốn hỏi liệu có thể đổi sang thứ Năm mà vẫn có hỗ trợ tiếng Việt không.",
+      "context_vi": "Trung tâm đã gọi lại chốt lịch thứ Ba lúc 10 giờ. Bạn bận giờ đó nên gọi xin đổi sang thứ Năm và muốn chắc hôm đó vẫn có hỗ trợ tiếng Việt.",
       "speakers": [
         {
           "id": "a",
@@ -635,14 +651,14 @@
         {
           "id": "117e9bd9-483b-524d-b6a6-50a81c277a87-u01",
           "speaker_id": "a",
-          "ja": "火曜日が候補と聞きました。木曜日にできますか。ベトナム語の担当者もいますか。",
-          "vi": "Tôi được báo thứ Ba là ngày dự kiến. Có thể đổi sang thứ Năm không ạ? Hôm đó có người hỗ trợ tiếng Việt chứ?"
+          "ja": "火曜日の十時に予約したリンです。木曜日に変えられますか。その日もベトナム語で相談できますか。",
+          "vi": "Tôi là Linh, có lịch thứ Ba lúc 10 giờ. Tôi đổi sang thứ Năm được không ạ? Hôm đó tôi vẫn có thể trao đổi bằng tiếng Việt chứ?"
         },
         {
           "id": "117e9bd9-483b-524d-b6a6-50a81c277a87-u02",
           "speaker_id": "b",
-          "ja": "木曜日の十時なら、ベトナム語の担当者がいます。予約しますか。",
-          "vi": "Thứ Năm lúc 10 giờ có người hỗ trợ tiếng Việt. Bạn muốn đặt lịch chứ?"
+          "ja": "木曜日の朝十時なら、ベトナム語の担当者がいます。その時間にしますか。",
+          "vi": "10 giờ sáng thứ Năm có người hỗ trợ tiếng Việt. Chị muốn đổi sang giờ đó không ạ?"
         },
         {
           "id": "117e9bd9-483b-524d-b6a6-50a81c277a87-u03",
@@ -690,14 +706,14 @@
         {
           "id": "cfa4f17c-8fa0-5cf4-b085-389afee011b4-u01",
           "speaker_id": "a",
-          "ja": "つまり、まず市役所の相談窓口に聞くのですね。",
-          "vi": "Vậy trước hết tôi đến quầy tư vấn của tòa thị chính phải không ạ?"
+          "ja": "まず、このお知らせを市役所の相談窓口に持っていけばいいんですね。",
+          "vi": "Vậy trước hết tôi mang thông báo này đến quầy tư vấn ở tòa thị chính, đúng không ạ?"
         },
         {
           "id": "cfa4f17c-8fa0-5cf4-b085-389afee011b4-u02",
           "speaker_id": "b",
-          "ja": "はい。通知を見せて相談してください。",
-          "vi": "Đúng. Bạn đưa thông báo cho họ xem rồi trao đổi."
+          "ja": "はい。そこでお知らせを見せて聞いてみてください。",
+          "vi": "Đúng ạ. Chị đưa thông báo cho họ xem rồi hỏi nhé."
         }
       ],
       "admin": {
@@ -719,7 +735,7 @@
     {
       "situation_uid": "12e9ece6-5475-5f60-affe-a38edcd472a1",
       "event_id": "E04",
-      "context_vi": "Bạn đã tới quầy tòa thị chính, nhưng không đọc được tên nơi gửi trên thông báo. Bạn gọi lại trung tâm Midori để hỏi.",
+      "context_vi": "Tại quầy tư vấn tòa thị chính, nhân viên hỏi thông báo do bộ phận nào gửi. Bạn không đọc được tên bộ phận nên gọi trung tâm để hỏi lại.",
       "speakers": [
         {
           "id": "a",
@@ -736,20 +752,20 @@
         {
           "id": "12e9ece6-5475-5f60-affe-a38edcd472a1-u01",
           "speaker_id": "a",
-          "ja": "市役所に行きましたが、通知の差出人が読めませんでした。もう一度教えてください。",
-          "vi": "Tôi đã đến tòa thị chính nhưng không đọc được tên nơi gửi trên thông báo. Anh nói lại giúp tôi được không ạ?"
+          "ja": "市役所で、どの窓口から来た通知か聞かれました。名前が読めません。教えてもらえますか。",
+          "vi": "Ở tòa thị chính họ hỏi thông báo do quầy nào gửi. Tôi không đọc được tên quầy. Anh chỉ giúp tôi được không ạ?"
         },
         {
           "id": "12e9ece6-5475-5f60-affe-a38edcd472a1-u02",
           "speaker_id": "b",
           "ja": "差出人は「みどり市役所の住民窓口」です。",
-          "vi": "Nơi gửi ghi “Quầy cư dân của Tòa thị chính Midori”."
+          "vi": "Nơi gửi là quầy cư trú của Tòa thị chính Midori ạ."
         },
         {
           "id": "12e9ece6-5475-5f60-affe-a38edcd472a1-u03",
           "speaker_id": "a",
-          "ja": "住民窓口ですね。もう一度その名を伝えます。",
-          "vi": "Quầy cư dân ạ. Tôi sẽ nói lại đúng tên ấy."
+          "ja": "住民窓口ですね。相談窓口の人に伝えます。",
+          "vi": "Quầy cư trú ạ. Tôi sẽ báo lại với người ở quầy tư vấn."
         }
       ],
       "admin": {
@@ -791,14 +807,14 @@
         {
           "id": "566780b0-3d85-5153-b78a-bdd3f965f1b5-u01",
           "speaker_id": "a",
-          "ja": "先ほどの案内は、必ず行くという意味ですか。それとも相談先の一つですか。",
-          "vi": "Lời hướng dẫn lúc nãy là tôi bắt buộc phải đến đó, hay chỉ là một nơi có thể hỏi ạ?"
+          "ja": "さっき教えてもらった窓口には、必ず行かないといけませんか。",
+          "vi": "Tôi có bắt buộc phải đến quầy anh vừa chỉ không ạ?"
         },
         {
           "id": "566780b0-3d85-5153-b78a-bdd3f965f1b5-u02",
           "speaker_id": "b",
-          "ja": "まず相談できる場所としてお伝えしました。",
-          "vi": "Tôi giới thiệu đó là một nơi bạn có thể hỏi trước."
+          "ja": "手続きが必要か分からないので、まずそこで相談してみてください。",
+          "vi": "Chưa rõ chị có cần làm thủ tục gì không. Tôi gợi ý chị đến đó hỏi trước ạ."
         }
       ],
       "admin": {
@@ -849,8 +865,8 @@
         {
           "id": "9f0a84e6-05cc-517c-87e3-b7d235fc5615-u03",
           "speaker_id": "a",
-          "ja": "水曜日までに、この代表番号へかけます。",
-          "vi": "Tôi sẽ gọi số tổng đài này chậm nhất thứ Tư."
+          "ja": "水曜日までに、この番号に電話して、相談窓口につないでもらいます。",
+          "vi": "Tôi sẽ gọi số này chậm nhất thứ Tư và nhờ nối máy đến quầy tư vấn."
         }
       ],
       "admin": {

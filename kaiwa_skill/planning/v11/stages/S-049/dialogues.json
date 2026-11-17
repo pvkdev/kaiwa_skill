@@ -9,6 +9,20 @@
       "start_line": 326,
       "end_line": 355,
       "use_vi": "Nói thời điểm triệu chứng, hỏi lịch khám và giải thích từ tại bệnh viện."
+    },
+    "navii": {
+      "kind": "web",
+      "title": "厚生労働省 医療情報ネット（ナビイ） 現在診療中の医療機関",
+      "url": "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2320/initialize",
+      "accessed": "2026-11-18",
+      "use_vi": "Mục tìm cơ sở đang mở theo khu vực, dùng để tìm đầu mối hỏi tiếp. Việc nhận ca và giờ hẹn được từng phòng khám xác nhận."
+    },
+    "abdominal_urgent": {
+      "kind": "web",
+      "title": "総務省消防庁 救急車利用ガイド",
+      "url": "https://www.fdma.go.jp/publication/portal/items/portal001_pamphiet_english.pdf",
+      "accessed": "2026-11-18",
+      "use_vi": "Dấu hiệu đau bụng dữ dội đột ngột ở người lớn cần gọi cấp cứu. Mốc liên hệ phòng khám nếu đau giữ nguyên theo hướng dẫn của bác sĩ trong cảnh."
     }
   },
   "dialogues": [
@@ -38,8 +52,8 @@
         {
           "id": "f2516f08-c7b5-5e99-a97b-07d1dcf3d75a-u02",
           "speaker_id": "b",
-          "ja": "はい、発熱の相談を受けています。今日の予約は空きを確認します。",
-          "vi": "Có, chúng tôi tiếp nhận người hỏi khám vì sốt. Tôi sẽ kiểm tra lịch trống hôm nay."
+          "ja": "はい、熱のある方の診察もしています。今日の空きをお調べします。",
+          "vi": "Vâng, phòng khám có tiếp nhận bệnh nhân bị sốt. Để tôi kiểm tra hôm nay còn giờ nào ạ."
         }
       ],
       "admin": {
@@ -83,14 +97,14 @@
         {
           "id": "6fccf7ed-b499-55dd-81ad-f608958d9569-u02",
           "speaker_id": "a",
-          "ja": "一番早く空くのはいつですか。ほかに相談できる所もありますか。",
-          "vi": "Ngày sớm nhất còn lịch là khi nào? Có nơi nào tôi có thể hỏi tiếp không ạ?"
+          "ja": "いちばん早い時間はいつですか。今日診てもらえるところも探せますか。",
+          "vi": "Sớm nhất thì khi nào còn lịch ạ? Tôi có thể tìm nơi khám được trong hôm nay không?"
         },
         {
           "id": "6fccf7ed-b499-55dd-81ad-f608958d9569-u03",
           "speaker_id": "b",
-          "ja": "明日の午前十時なら空いています。今日中の相談先も受付でお伝えできます。",
-          "vi": "Ngày mai lúc 10 giờ sáng còn lịch. Quầy cũng có thể cho bạn đầu mối hỏi trong hôm nay."
+          "ja": "こちらの空きは明日の午前十時です。今日開いている医院は、医療情報ネットで探せます。",
+          "vi": "Phòng khám còn lịch lúc 10 giờ sáng mai. Chị có thể tìm nơi đang mở hôm nay trên trang Thông tin Y tế Navii."
         },
         {
           "id": "6fccf7ed-b499-55dd-81ad-f608958d9569-u04",
@@ -101,7 +115,8 @@
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "navii"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -185,14 +200,14 @@
         {
           "id": "6d21bb55-02ed-5f10-a1d8-f33cb09fd568-u01",
           "speaker_id": "a",
-          "ja": "三時の予約に間に合いません。時間を変えられますか。",
-          "vi": "Tôi không kịp lịch hẹn 3 giờ. Có thể đổi giờ không ạ?"
+          "ja": "午後三時に予約したリンです。間に合いそうにないのですが、時間を変えられますか。",
+          "vi": "Tôi là Linh, có lịch lúc 3 giờ chiều. Có lẽ tôi không đến kịp. Tôi đổi giờ được không ạ?"
         },
         {
           "id": "6d21bb55-02ed-5f10-a1d8-f33cb09fd568-u02",
           "speaker_id": "b",
-          "ja": "今日の四時が空いています。変更しますか。",
-          "vi": "Hôm nay 4 giờ còn trống. Bạn muốn đổi sang giờ đó chứ?"
+          "ja": "今日の午後四時なら空いています。変更しますか。",
+          "vi": "Hôm nay lúc 4 giờ chiều còn trống. Chị muốn chuyển sang giờ đó không ạ?"
         },
         {
           "id": "6d21bb55-02ed-5f10-a1d8-f33cb09fd568-u03",
@@ -248,8 +263,8 @@
         {
           "id": "9207ac27-7cfa-57cd-b157-6f1aea48e397-u01",
           "speaker_id": "a",
-          "ja": "右のお腹が昨日の夜から痛いです。",
-          "vi": "Từ tối qua tôi đau bụng bên phải."
+          "ja": "昨日の夜から、お腹の右側が痛いです。",
+          "vi": "Từ tối qua tôi đau bên phải bụng ạ."
         },
         {
           "id": "9207ac27-7cfa-57cd-b157-6f1aea48e397-u02",
@@ -261,7 +276,7 @@
           "id": "9207ac27-7cfa-57cd-b157-6f1aea48e397-u03",
           "speaker_id": "a",
           "ja": "ここです。歩くと痛みます。",
-          "vi": "Chỗ này ạ. Đi lại thì đau hơn."
+          "vi": "Chỗ này ạ. Đi lại thì tôi thấy đau."
         }
       ],
       "admin": {
@@ -308,8 +323,8 @@
         {
           "id": "7fd9e227-8b8e-56cf-9fa3-7a868f7fefa7-u02",
           "speaker_id": "a",
-          "ja": "歩く時に強くなります。座ると少し楽です。",
-          "vi": "Khi đi lại tôi đau hơn. Ngồi xuống thì đỡ một chút."
+          "ja": "歩くと、立ち止まりたくなるくらい痛いです。座ると少し楽です。",
+          "vi": "Khi đi lại thì tôi đau đến mức muốn dừng lại. Ngồi xuống thì đỡ một chút ạ."
         }
       ],
       "admin": {
@@ -401,14 +416,14 @@
         {
           "id": "c945c7a7-a99d-507c-8f1c-32d8adc6cfa3-u01",
           "speaker_id": "a",
-          "ja": "症状の名前は分かりません。でも、食べると気持ちが悪くなります。",
-          "vi": "Tôi không biết tên triệu chứng, nhưng cứ ăn vào là thấy buồn nôn."
+          "ja": "食べると、吐きそうになります。",
+          "vi": "Cứ ăn vào là tôi thấy buồn nôn ạ."
         },
         {
           "id": "c945c7a7-a99d-507c-8f1c-32d8adc6cfa3-u02",
           "speaker_id": "b",
-          "ja": "食べる時に気持ちが悪くなるのですね。いつからですか。",
-          "vi": "Bạn thấy buồn nôn khi ăn. Việc này bắt đầu từ khi nào?"
+          "ja": "食べると吐きそうになるんですね。いつからですか。",
+          "vi": "Cứ ăn vào là chị thấy buồn nôn đúng không ạ? Chị thấy vậy từ khi nào?"
         },
         {
           "id": "c945c7a7-a99d-507c-8f1c-32d8adc6cfa3-u03",
@@ -447,7 +462,7 @@
         },
         {
           "id": "b",
-          "role_vi": "bác sĩ hoặc y tá",
+          "role_vi": "bác sĩ",
           "gender": "male"
         }
       ],
@@ -455,14 +470,14 @@
         {
           "id": "e39b7b35-eb9a-5847-9b6e-6740c13e5542-u01",
           "speaker_id": "a",
-          "ja": "すみません。「検査」は何をすることですか。やさしく教えてください。",
-          "vi": "Xin lỗi, “kensa” là làm gì ạ? Bác sĩ giải thích đơn giản giúp tôi."
+          "ja": "すみません。「検査」って何ですか。簡単な言葉で教えてください。",
+          "vi": "Xin lỗi bác sĩ, “kensa” là làm gì ạ? Bác sĩ giải thích bằng từ dễ hiểu giúp tôi."
         },
         {
           "id": "e39b7b35-eb9a-5847-9b6e-6740c13e5542-u02",
           "speaker_id": "b",
           "ja": "体の状態を調べることです。今日の内容も、始める前に説明します。",
-          "vi": "Là kiểm tra tình trạng cơ thể. Tôi sẽ giải thích việc hôm nay trước khi bắt đầu."
+          "vi": "Là kiểm tra xem cơ thể đang thế nào. Trước khi làm, tôi sẽ giải thích cụ thể hôm nay kiểm tra gì."
         }
       ],
       "admin": {
@@ -483,7 +498,7 @@
     {
       "situation_uid": "eb272fd4-964e-5c64-a830-97c98a184450",
       "event_id": "E03",
-      "context_vi": "Trong buổi khám ở Midori, bạn hỏi bác sĩ khi nào cần liên hệ nếu tình trạng không đỡ.",
+      "context_vi": "Bác sĩ vừa khám cơn đau bụng của bạn. Bạn muốn biết nếu đến ngày mai cơn đau vẫn không đỡ thì liên hệ lúc nào.",
       "speakers": [
         {
           "id": "a",
@@ -492,7 +507,7 @@
         },
         {
           "id": "b",
-          "role_vi": "bác sĩ hoặc y tá",
+          "role_vi": "bác sĩ",
           "gender": "male"
         }
       ],
@@ -500,19 +515,20 @@
         {
           "id": "eb272fd4-964e-5c64-a830-97c98a184450-u01",
           "speaker_id": "a",
-          "ja": "よくならない時は、いつ連絡すればいいですか。",
-          "vi": "Nếu không đỡ, khi nào tôi cần liên hệ lại ạ?"
+          "ja": "明日もお腹の痛みがよくならなかったら、いつ連絡すればいいですか。",
+          "vi": "Nếu ngày mai vẫn chưa đỡ đau bụng, tôi nên liên hệ lúc nào ạ?"
         },
         {
           "id": "eb272fd4-964e-5c64-a830-97c98a184450-u02",
           "speaker_id": "b",
-          "ja": "よくならなければ、次の受診を待たずにこの医院へ電話してください。急に悪くなった時はすぐに知らせてください。",
-          "vi": "Nếu không đỡ, bạn hãy gọi phòng khám này trước lịch khám tiếp. Nếu đột ngột nặng lên, hãy báo ngay."
+          "ja": "同じ痛みが明日も続いたら、診療時間にここへ電話してください。急に激しく痛くなったら、救急車を呼んでください。",
+          "vi": "Nếu ngày mai vẫn đau như hôm nay, chị gọi phòng khám trong giờ làm việc. Nếu đột ngột đau dữ dội, chị gọi xe cấp cứu nhé."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "abdominal_urgent"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -528,7 +544,7 @@
     {
       "situation_uid": "2e1dd2e7-b90a-5b80-9c61-060c93498755",
       "event_id": "E03",
-      "context_vi": "Bạn vừa hỏi bác sĩ cách liên hệ lại. Bạn chưa biết lịch của mình nên muốn tự gọi quầy hẹn sau.",
+      "context_vi": "Sau khi hỏi cách liên hệ nếu cơn đau không đỡ, bác sĩ hỏi ngày tái khám. Bạn chưa biết lịch rảnh và muốn gọi quầy hẹn sau.",
       "speakers": [
         {
           "id": "a",
@@ -537,7 +553,7 @@
         },
         {
           "id": "b",
-          "role_vi": "bác sĩ hoặc y tá",
+          "role_vi": "bác sĩ",
           "gender": "male"
         }
       ],
@@ -545,14 +561,14 @@
         {
           "id": "2e1dd2e7-b90a-5b80-9c61-060c93498755-u01",
           "speaker_id": "a",
-          "ja": "次の予定は今決められません。後で電話してもいいですか。",
-          "vi": "Bây giờ tôi chưa chốt được lịch lần sau. Tôi gọi lại sau được không ạ?"
+          "ja": "次に来る日は、まだ決められません。後で予約の電話をしてもいいですか。",
+          "vi": "Tôi chưa chọn được ngày tái khám. Tôi gọi đặt lịch sau được không ạ?"
         },
         {
           "id": "2e1dd2e7-b90a-5b80-9c61-060c93498755-u02",
           "speaker_id": "b",
           "ja": "はい。決まったら、この診察券にある予約番号へ電話してください。",
-          "vi": "Được. Khi quyết được, bạn gọi số đặt lịch in trên thẻ khám này."
+          "vi": "Được ạ. Khi biết lịch, chị gọi số đặt hẹn trên thẻ khám này nhé."
         }
       ],
       "admin": {
@@ -582,7 +598,7 @@
         },
         {
           "id": "b",
-          "role_vi": "bác sĩ hoặc y tá",
+          "role_vi": "bác sĩ",
           "gender": "male"
         }
       ],
@@ -590,8 +606,8 @@
         {
           "id": "eb10aaa1-abc3-5afd-bd11-b0a55793cc9f-u01",
           "speaker_id": "a",
-          "ja": "体の状態を調べる検査ですね。内容を聞いてから決められますか。",
-          "vi": "“Kensa” là kiểm tra tình trạng cơ thể. Tôi được nghe nội dung trước khi quyết định chứ ạ?"
+          "ja": "検査は、体のことを調べるんですね。何をするか先に聞いてもいいですか。",
+          "vi": "Vậy “kensa” là kiểm tra tình trạng cơ thể. Tôi có thể nghe trước sẽ kiểm tra những gì không ạ?"
         },
         {
           "id": "eb10aaa1-abc3-5afd-bd11-b0a55793cc9f-u02",
@@ -641,8 +657,8 @@
         {
           "id": "9e886675-7a34-5c19-9340-e85cfc2b095b-u02",
           "speaker_id": "b",
-          "ja": "その言葉の意味を医師に確認して、こちらからお電話します。",
-          "vi": "Tôi sẽ hỏi bác sĩ chữ đó có nghĩa gì trong trường hợp của bạn rồi gọi lại."
+          "ja": "いつ連絡する必要があるか、医師に確認して折り返します。",
+          "vi": "Để tôi hỏi bác sĩ khi nào chị cần gọi lại, rồi tôi gọi báo chị ạ."
         }
       ],
       "admin": {
@@ -692,8 +708,8 @@
         {
           "id": "338725d9-c0d9-584f-82ce-1a9df05c11f1-u03",
           "speaker_id": "b",
-          "ja": "今日の五時までに、この番号へご連絡します。",
-          "vi": "Trong hôm nay, chúng tôi sẽ gọi vào số này trước 5 giờ."
+          "ja": "今日の午後五時までに、この番号にお電話します。",
+          "vi": "Tôi sẽ gọi cho chị vào số này chậm nhất 5 giờ chiều nay ạ."
         }
       ],
       "admin": {
@@ -717,7 +733,7 @@
     {
       "situation_uid": "bd005ef3-0055-54dc-9b54-9e1047578420",
       "event_id": "E04",
-      "context_vi": "Trong lần tái khám ở Midori sau đó, bạn nói với nhân viên rằng cơn đau khi đi lại đã giảm so với lần trước.",
+      "context_vi": "Sau cuộc gọi về tờ dặn, phòng khám đã hẹn bạn tái khám. Khi tới, bạn nói với nhân viên cơn đau lúc đi lại đã giảm so với lần trước.",
       "speakers": [
         {
           "id": "a",
@@ -734,14 +750,14 @@
         {
           "id": "bd005ef3-0055-54dc-9b54-9e1047578420-u01",
           "speaker_id": "a",
-          "ja": "前にお腹の痛みで診てもらいました。今は歩く時の痛みが少なくなりました。",
-          "vi": "Lần trước tôi khám vì đau bụng. Giờ khi đi lại tôi ít đau hơn."
+          "ja": "前にお腹が痛くて来ました。今は、歩くときの痛みが前より弱くなりました。",
+          "vi": "Lần trước tôi đến vì đau bụng. Giờ khi đi lại, tôi đỡ đau hơn trước ạ."
         },
         {
           "id": "bd005ef3-0055-54dc-9b54-9e1047578420-u02",
           "speaker_id": "b",
-          "ja": "分かりました。別の医療機関での診察についても、医師から説明があります。",
-          "vi": "Tôi hiểu. Bác sĩ cũng sẽ trao đổi với bạn về việc khám tiếp ở cơ sở khác."
+          "ja": "分かりました。今のお話は医師にも伝えておきます。",
+          "vi": "Vâng, tôi sẽ báo lại với bác sĩ những điều chị vừa nói ạ."
         }
       ],
       "admin": {
@@ -762,7 +778,7 @@
     {
       "situation_uid": "17c25138-5c8f-5d0c-af81-4ded6ce90d23",
       "event_id": "E04",
-      "context_vi": "Sau khi nghe bạn báo tình trạng mới, bác sĩ ở Midori giới thiệu một Trung tâm Y tế Aoi hư cấu để khám tiếp. Bạn hỏi tên nơi đó và cách đặt lịch.",
+      "context_vi": "Trong buổi tái khám, bác sĩ giới thiệu Trung tâm Y tế Aoi để khám tiếp. Trước khi về, bạn hỏi nhân viên quầy cách đặt lịch và xin nhắc lại tên nơi đó.",
       "speakers": [
         {
           "id": "a",
@@ -779,8 +795,8 @@
         {
           "id": "17c25138-5c8f-5d0c-af81-4ded6ce90d23-u01",
           "speaker_id": "b",
-          "ja": "次はあおい医療センターで相談してください。",
-          "vi": "Lần tới bạn hãy hỏi ở Trung tâm Y tế Aoi."
+          "ja": "先生がお話しした次の受診先は、あおい医療センターです。",
+          "vi": "Chỗ bác sĩ vừa nói chị nên đến khám tiếp là Trung tâm Y tế Aoi ạ."
         },
         {
           "id": "17c25138-5c8f-5d0c-af81-4ded6ce90d23-u02",
@@ -797,8 +813,8 @@
         {
           "id": "17c25138-5c8f-5d0c-af81-4ded6ce90d23-u04",
           "speaker_id": "a",
-          "ja": "あおい医療センターの代表電話ですね。",
-          "vi": "Tổng đài Trung tâm Y tế Aoi ạ."
+          "ja": "あおい医療センターの代表電話にかけて、予約のことを聞くんですね。",
+          "vi": "Vậy tôi gọi số tổng đài của Trung tâm Y tế Aoi để hỏi chuyện đặt lịch, đúng không ạ?"
         }
       ],
       "admin": {

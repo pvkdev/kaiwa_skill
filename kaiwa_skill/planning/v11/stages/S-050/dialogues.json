@@ -16,6 +16,34 @@
       "url": "https://www.mhlw.go.jp/content/11120000/000987892.pdf",
       "accessed": "2026-11-17",
       "use_vi": "Dược sĩ kiểm thuốc đang dùng, tác dụng phụ và tương tác; người bệnh cần trình bày thuốc khác đang dùng."
+    },
+    "otc_rules": {
+      "kind": "web",
+      "title": "厚生労働省 医薬品の販売制度",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000082514.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Việc tư vấn/bán được phân theo loại thuốc và người đủ tư cách. Giờ dược sĩ có mặt là giờ riêng của ca trong tình huống."
+    },
+    "medical_search": {
+      "kind": "web",
+      "title": "厚生労働省 医療情報ネット（ナビイ）",
+      "url": "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2300/initialize",
+      "accessed": "2026-11-18",
+      "use_vi": "Đầu mối tra cơ sở y tế theo khu vực. Hỏi trực tiếp về điều kiện tiếp nhận, cảnh không tự xác định bệnh hay chọn thuốc."
+    },
+    "pmda_label": {
+      "kind": "web",
+      "title": "PMDA くすりの使用中に車の運転をしていいかどうかはどうしたらわかりますか",
+      "url": "https://www.pmda.go.jp/safety/consultation-for-patients/on-drugs/qa/0018.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Kiểm cảnh báo của thuốc mua không đơn ở nhãn và hỏi người có chuyên môn. Lời cảnh báo của hộp trong cảnh chỉ dùng để luyện đối thoại."
+    },
+    "pmda_consult": {
+      "kind": "web",
+      "title": "PMDA 全国のくすり相談窓口",
+      "url": "https://www.pmda.go.jp/safety/consultation-for-patients/on-drugs/0001.html",
+      "accessed": "2026-11-18",
+      "use_vi": "PMDA chỉ người lo về thuốc trao đổi bác sĩ đang theo dõi hoặc nhà thuốc/dược sĩ. Không dùng tình huống luyện để xử trí cấp cứu hoặc tự chẩn đoán."
     }
   },
   "dialogues": [
@@ -39,14 +67,14 @@
         {
           "id": "fd3908d7-0b64-5e2c-9e53-957b8da1019f-u01",
           "speaker_id": "a",
-          "ja": "薬のことで聞きたいです。薬剤師さんはどちらですか。",
-          "vi": "Tôi muốn hỏi về thuốc. Dược sĩ ở đâu ạ?"
+          "ja": "薬のことで相談したいです。薬剤師さんにはどこで聞けますか。",
+          "vi": "Tôi muốn hỏi về thuốc. Tôi gặp dược sĩ để hỏi ở đâu ạ?"
         },
         {
           "id": "fd3908d7-0b64-5e2c-9e53-957b8da1019f-u02",
           "speaker_id": "b",
-          "ja": "奥の相談カウンターにいます。",
-          "vi": "Ở quầy tư vấn phía trong ạ."
+          "ja": "薬のご相談は、奥のカウンターへどうぞ。",
+          "vi": "Để hỏi về thuốc, mời chị đến quầy tư vấn phía trong ạ."
         }
       ],
       "admin": {
@@ -67,7 +95,7 @@
     {
       "situation_uid": "92c7aa97-e595-5682-96b4-fde94a04cd61",
       "event_id": "E01",
-      "context_vi": "Bạn hỏi mua một loại thuốc tại hiệu thuốc Midori hư cấu, nhưng người phụ trách loại đó hiện vắng. Bạn hỏi lúc nào có thể quay lại.",
+      "context_vi": "Bạn đã đến quầy tư vấn, nhưng dược sĩ phụ trách loại thuốc bạn định hỏi đang vắng. Bạn hỏi lúc nào có thể gặp.",
       "speakers": [
         {
           "id": "a",
@@ -84,8 +112,8 @@
         {
           "id": "92c7aa97-e595-5682-96b4-fde94a04cd61-u01",
           "speaker_id": "b",
-          "ja": "今、この薬を相談できる担当者はいません。",
-          "vi": "Hiện người phụ trách tư vấn loại thuốc này không có mặt ạ."
+          "ja": "この薬についてお答えできる薬剤師が、今は席を外しています。",
+          "vi": "Dược sĩ có thể tư vấn loại thuốc này hiện đang vắng mặt ạ."
         },
         {
           "id": "92c7aa97-e595-5682-96b4-fde94a04cd61-u02",
@@ -96,13 +124,14 @@
         {
           "id": "92c7aa97-e595-5682-96b4-fde94a04cd61-u03",
           "speaker_id": "b",
-          "ja": "今日は午後二時から担当者がいます。",
-          "vi": "Hôm nay từ 2 giờ chiều người phụ trách có mặt."
+          "ja": "今日の午後二時から薬剤師が戻ります。",
+          "vi": "Dược sĩ sẽ có mặt từ 2 giờ chiều nay ạ."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "otc_rules"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -138,8 +167,8 @@
         {
           "id": "082e8338-68bb-5e7f-bf80-31186557f90c-u01",
           "speaker_id": "a",
-          "ja": "探している商品がありません。ほかの選び方を誰に相談できますか。",
-          "vi": "Tôi không thấy sản phẩm mình tìm. Tôi nên hỏi ai về lựa chọn khác ạ?"
+          "ja": "いつもの薬が売り切れでした。ほかの薬のことは、誰に聞けばいいですか。",
+          "vi": "Loại thuốc tôi hay mua đã hết. Tôi nên hỏi ai về loại khác ạ?"
         },
         {
           "id": "082e8338-68bb-5e7f-bf80-31186557f90c-u02",
@@ -166,7 +195,7 @@
     {
       "situation_uid": "b7ce67ee-fdac-5597-b040-6cfdf528f656",
       "event_id": "E01",
-      "context_vi": "Bạn đang đứng trước kệ mỹ phẩm nhưng tưởng là kệ thuốc ở hiệu thuốc Midori. Bạn hỏi nhân viên để đi đúng kệ.",
+      "context_vi": "Trên đường ra quầy tư vấn, bạn thấy một hộp mình tưởng là thuốc nhưng không chắc. Bạn hỏi nhân viên đang đứng gần kệ.",
       "speakers": [
         {
           "id": "a",
@@ -183,14 +212,14 @@
         {
           "id": "b7ce67ee-fdac-5597-b040-6cfdf528f656-u01",
           "speaker_id": "a",
-          "ja": "これは薬ではなく、化粧品ですか。",
-          "vi": "Đây không phải thuốc mà là mỹ phẩm phải không ạ?"
+          "ja": "これは薬ですか。それとも、化粧品ですか。",
+          "vi": "Đây là thuốc hay mỹ phẩm ạ?"
         },
         {
           "id": "b7ce67ee-fdac-5597-b040-6cfdf528f656-u02",
           "speaker_id": "b",
           "ja": "はい、化粧品です。薬はこちらの棚です。",
-          "vi": "Đúng, là mỹ phẩm. Thuốc ở kệ bên này."
+          "vi": "Đây là mỹ phẩm ạ. Thuốc ở kệ bên này."
         }
       ],
       "admin": {
@@ -234,14 +263,14 @@
         {
           "id": "7a5db36f-57fa-504e-a65e-218c3ba09d69-u02",
           "speaker_id": "b",
-          "ja": "はい。痛む場所と、今の様子を教えてください。",
-          "vi": "Được. Bạn cho tôi biết chỗ đau và hiện giờ thấy thế nào."
+          "ja": "はい。どの辺りが痛みますか。ずっと痛いですか。",
+          "vi": "Được ạ. Chị đau ở chỗ nào? Đau liên tục à chị?"
         },
         {
           "id": "7a5db36f-57fa-504e-a65e-218c3ba09d69-u03",
           "speaker_id": "a",
-          "ja": "お腹の真ん中です。今は歩けます。",
-          "vi": "Tôi đau giữa bụng. Bây giờ tôi vẫn đi lại được."
+          "ja": "お腹の真ん中です。痛くなったり、少し楽になったりします。",
+          "vi": "Tôi đau ở giữa bụng. Lúc thì đau, lúc lại đỡ một chút ạ."
         }
       ],
       "admin": {
@@ -282,14 +311,14 @@
         {
           "id": "d915875d-f139-5125-904f-7325318f7e05-u01",
           "speaker_id": "a",
-          "ja": "別の薬も飲んでいます。この商品と一緒に使えるか、先に確認してください。",
-          "vi": "Tôi còn đang dùng thuốc khác. Nhờ anh kiểm tra trước xem có dùng cùng sản phẩm này được không."
+          "ja": "今、別の薬も飲んでいます。この薬と一緒に飲んでも大丈夫ですか。",
+          "vi": "Tôi đang uống một loại thuốc khác. Tôi có thể uống cùng thuốc này được không ạ?"
         },
         {
           "id": "d915875d-f139-5125-904f-7325318f7e05-u02",
           "speaker_id": "b",
-          "ja": "はい。お薬手帳か薬の名前を見せてください。確認するまで、選ばないでおきましょう。",
-          "vi": "Được. Bạn cho tôi xem sổ thuốc hoặc tên thuốc. Ta chưa chọn sản phẩm trước khi kiểm tra."
+          "ja": "お薬手帳か、今飲んでいる薬の名前が分かるものを見せてください。確認します。",
+          "vi": "Chị cho tôi xem sổ theo dõi thuốc hoặc giấy ghi tên thuốc đang uống nhé. Để tôi kiểm tra ạ."
         },
         {
           "id": "d915875d-f139-5125-904f-7325318f7e05-u03",
@@ -337,25 +366,26 @@
         {
           "id": "03be73d2-16be-55ec-952a-e24b1936a9b6-u01",
           "speaker_id": "b",
-          "ja": "今のお話なら、医療機関に相談してください。",
-          "vi": "Với điều bạn vừa kể, bạn nên liên hệ cơ sở y tế ạ."
+          "ja": "今のお話なら、まず医療機関で相談したほうがいいです。",
+          "vi": "Với tình trạng chị vừa kể, chị nên hỏi cơ sở y tế trước ạ."
         },
         {
           "id": "03be73d2-16be-55ec-952a-e24b1936a9b6-u02",
           "speaker_id": "a",
-          "ja": "どこに連絡できますか。",
-          "vi": "Tôi có thể liên hệ nơi nào ạ?"
+          "ja": "近くでは、どこに聞けばいいですか。",
+          "vi": "Ở gần đây tôi nên hỏi chỗ nào ạ?"
         },
         {
           "id": "03be73d2-16be-55ec-952a-e24b1936a9b6-u03",
           "speaker_id": "b",
-          "ja": "駅前のみどりクリニックに電話して、今の症状を相談できます。",
-          "vi": "Bạn có thể gọi phòng khám Midori trước ga để kể triệu chứng hiện giờ."
+          "ja": "駅前のみどりクリニックに電話して、今の症状を伝えてください。診てもらえるか聞いてみてください。",
+          "vi": "Chị gọi phòng khám Midori trước ga, nói các triệu chứng hiện tại rồi hỏi họ có thể khám cho chị không nhé."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "medical_search"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -428,7 +458,7 @@
     {
       "situation_uid": "de82c323-cd7b-530f-a2e2-eb9f737ec602",
       "event_id": "E03",
-      "context_vi": "Bạn cầm một hộp thuốc giả định tại quầy. Trên nhãn có ghi 朝食後 nhưng bạn chưa hiểu lúc nào dùng.",
+      "context_vi": "Bạn đưa một hộp thuốc chưa mua cho dược sĩ. Bạn chỉ vào cách dùng trên nhãn và hỏi khi nào uống.",
       "speakers": [
         {
           "id": "a",
@@ -445,14 +475,14 @@
         {
           "id": "de82c323-cd7b-530f-a2e2-eb9f737ec602-u01",
           "speaker_id": "a",
-          "ja": "この箱には、いつ飲むと書いてありますか。",
-          "vi": "Trên hộp này ghi uống khi nào ạ?"
+          "ja": "この薬はいつ飲めばいいですか。",
+          "vi": "Thuốc này tôi nên uống khi nào ạ?"
         },
         {
           "id": "de82c323-cd7b-530f-a2e2-eb9f737ec602-u02",
           "speaker_id": "b",
-          "ja": "「朝食後」と書いてあります。",
-          "vi": "Trên hộp ghi “sau bữa sáng”."
+          "ja": "こちらには、「朝食後」と書いてあります。",
+          "vi": "Trên nhãn này ghi uống sau bữa sáng ạ."
         }
       ],
       "admin": {
@@ -473,7 +503,7 @@
     {
       "situation_uid": "37cf564c-2b65-570d-a3b3-bb5fe1e48b1d",
       "event_id": "E03",
-      "context_vi": "Bạn cầm một hộp thuốc giả định có phần cảnh báo buồn ngủ. Bạn hỏi dược sĩ đọc đúng thông tin trên hộp.",
+      "context_vi": "Bạn muốn biết thuốc đang cầm có thể làm mình buồn ngủ không. Dược sĩ xem mục lưu ý trên hộp.",
       "speakers": [
         {
           "id": "a",
@@ -490,8 +520,8 @@
         {
           "id": "37cf564c-2b65-570d-a3b3-bb5fe1e48b1d-u01",
           "speaker_id": "a",
-          "ja": "この薬の箱には、眠気の注意はありますか。",
-          "vi": "Trên hộp thuốc này có cảnh báo buồn ngủ không ạ?"
+          "ja": "この薬を飲むと、眠くなることがありますか。",
+          "vi": "Uống thuốc này có thể bị buồn ngủ không ạ?"
         },
         {
           "id": "37cf564c-2b65-570d-a3b3-bb5fe1e48b1d-u02",
@@ -502,7 +532,8 @@
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "pmda_label"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -535,8 +566,8 @@
         {
           "id": "8864bbd4-7515-5c9f-aabc-c0c35ac69d10-u01",
           "speaker_id": "a",
-          "ja": "すみません。「朝食後」を短い言葉で言ってください。",
-          "vi": "Xin lỗi, anh giải thích ngắn gọn “sau bữa sáng” được không ạ?"
+          "ja": "すみません。「朝食後」は、いつのことですか。簡単な言葉でお願いします。",
+          "vi": "Xin lỗi, “chōshokugo” là lúc nào ạ? Anh giải thích bằng từ dễ hiểu giúp tôi."
         },
         {
           "id": "8864bbd4-7515-5c9f-aabc-c0c35ac69d10-u02",
@@ -563,7 +594,7 @@
     {
       "situation_uid": "0a50e153-83cf-5133-b635-8223b98e7cbd",
       "event_id": "E03",
-      "context_vi": "Trước khi mua hộp thuốc giả định, bạn nhắc lại rằng nhãn ghi dùng sau bữa sáng.",
+      "context_vi": "Dược sĩ vừa chỉ chữ 朝食後 trên hộp. Trước khi mua, bạn kiểm lại bằng lời của mình rằng thuốc này uống sau khi ăn sáng.",
       "speakers": [
         {
           "id": "a",
@@ -580,14 +611,14 @@
         {
           "id": "0a50e153-83cf-5133-b635-8223b98e7cbd-u01",
           "speaker_id": "a",
-          "ja": "箱には朝ごはんのあとと書いてあるのですね。",
-          "vi": "Vậy trên hộp ghi dùng sau bữa sáng, đúng không ạ?"
+          "ja": "この薬は、朝ごはんを食べたあとに飲むんですね。",
+          "vi": "Vậy thuốc này uống sau khi ăn sáng, đúng không ạ?"
         },
         {
           "id": "0a50e153-83cf-5133-b635-8223b98e7cbd-u02",
           "speaker_id": "b",
-          "ja": "はい。その商品についてはそうです。",
-          "vi": "Đúng. Riêng sản phẩm này ghi như vậy."
+          "ja": "はい、この薬は朝ごはんのあとです。",
+          "vi": "Đúng ạ, thuốc này uống sau bữa sáng."
         }
       ],
       "admin": {
@@ -608,7 +639,7 @@
     {
       "situation_uid": "81849603-06ec-5091-97b2-f9c0a688cd3b",
       "event_id": "E04",
-      "context_vi": "Bạn quay lại hiệu thuốc Midori với hộp đã mua. Trên nhãn có cụm 一日一回 mà bạn chưa hiểu.",
+      "context_vi": "Bạn quay lại với hộp thuốc đã mua. Trên nhãn ghi 一日一回, nhưng bạn chưa chắc tổng cộng uống mấy lần một ngày.",
       "speakers": [
         {
           "id": "a",
@@ -625,14 +656,14 @@
         {
           "id": "81849603-06ec-5091-97b2-f9c0a688cd3b-u01",
           "speaker_id": "a",
-          "ja": "この箱の「一日一回」は、どういう意味ですか。",
-          "vi": "Trên hộp ghi “ichinichi ikkai”. Nghĩa là gì ạ?"
+          "ja": "ここに「一日一回」とあります。朝と夜に一回ずつですか。",
+          "vi": "Ở đây ghi “ichinichi ikkai”. Có phải uống một lần sáng và một lần tối không ạ?"
         },
         {
           "id": "81849603-06ec-5091-97b2-f9c0a688cd3b-u02",
           "speaker_id": "b",
-          "ja": "一日に一回という意味です。この商品のほかの注意も一緒に見ましょう。",
-          "vi": "Nghĩa là một lần trong ngày. Ta cùng xem các lưu ý khác riêng của sản phẩm này."
+          "ja": "いいえ、この薬は一日の間に一回という意味です。",
+          "vi": "Không ạ. Với thuốc này, dòng đó nghĩa là trong cả ngày uống một lần."
         }
       ],
       "admin": {
@@ -653,7 +684,7 @@
     {
       "situation_uid": "959c401a-57f5-52d1-b1e5-4f4764f55b17",
       "event_id": "E04",
-      "context_vi": "Bạn vẫn ở hiệu thuốc Midori và hỏi dược sĩ nên liên hệ ai nếu sau dùng thuốc thấy điều bất thường.",
+      "context_vi": "Bạn đang ở hiệu thuốc Midori và hỏi nơi nên liên hệ nếu thấy khó chịu sau khi dùng thuốc. Gần đây bạn đã khám ở phòng khám Midori.",
       "speakers": [
         {
           "id": "a",
@@ -670,20 +701,21 @@
         {
           "id": "959c401a-57f5-52d1-b1e5-4f4764f55b17-u01",
           "speaker_id": "a",
-          "ja": "使ってから変わったことがあれば、どこに相談すればいいですか。",
-          "vi": "Nếu sau khi dùng có thay đổi trong người, tôi nên hỏi ở đâu ạ?"
+          "ja": "この薬を飲んで、具合が悪くなったら、どこに相談すればいいですか。",
+          "vi": "Nếu uống thuốc này rồi thấy trong người khó chịu, tôi nên hỏi ở đâu ạ?"
         },
         {
           "id": "959c401a-57f5-52d1-b1e5-4f4764f55b17-u02",
           "speaker_id": "b",
-          "ja": "この薬局か、診てもらった医療機関にご相談ください。",
-          "vi": "Bạn có thể hỏi nhà thuốc này hoặc nơi đã khám cho bạn."
+          "ja": "薬について心配なことがあれば、こちらの薬局か、診てもらった先生に相談してください。",
+          "vi": "Nếu có điều gì lo về thuốc, chị hỏi nhà thuốc này hoặc bác sĩ đã khám cho chị nhé."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "mhlw"
+          "mhlw",
+          "pmda_consult"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -716,14 +748,14 @@
         {
           "id": "db088552-831c-595f-ac3f-051f2120bb8a-u01",
           "speaker_id": "a",
-          "ja": "買った箱が、先ほど相談したものと違います。確認してください。",
-          "vi": "Hộp tôi mua khác với sản phẩm vừa được tư vấn. Nhờ anh kiểm tra lại."
+          "ja": "買った薬の名前が、さっき相談した薬と違います。この箱を見てもらえますか。",
+          "vi": "Tên thuốc tôi mua khác với tên thuốc tôi hỏi lúc nãy. Anh xem giúp hộp này được không ạ?"
         },
         {
           "id": "db088552-831c-595f-ac3f-051f2120bb8a-u02",
           "speaker_id": "b",
           "ja": "名前が違いますね。こちらで購入時の内容を確認します。まだ使わずにお待ちください。",
-          "vi": "Tên sản phẩm khác thật. Tôi sẽ kiểm tra thông tin lúc mua. Bạn chưa dùng hộp này nhé."
+          "vi": "Tên đúng là khác. Để tôi kiểm lại thông tin lúc mua. Chị chờ một chút và khoan dùng thuốc này nhé."
         },
         {
           "id": "db088552-831c-595f-ac3f-051f2120bb8a-u03",
@@ -770,8 +802,8 @@
         {
           "id": "1bf2f647-abed-5c00-ab57-d7b516657219-u01",
           "speaker_id": "a",
-          "ja": "次は誰に相談すればいいですか。名前をもう一度お願いします。",
-          "vi": "Tiếp theo tôi nên hỏi ai ạ? Anh nhắc lại tên giúp tôi."
+          "ja": "こちらに電話するときは、どなたに相談すればいいですか。お名前を聞いてもいいですか。",
+          "vi": "Khi gọi nhà thuốc, tôi nên hỏi ai ạ? Cho tôi xin tên anh được không?"
         },
         {
           "id": "1bf2f647-abed-5c00-ab57-d7b516657219-u02",
