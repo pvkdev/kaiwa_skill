@@ -1,0 +1,33 @@
+# H-062 — Nguồn và tự rà
+
+Nghiên cứu, trung tâm, dữ liệu sáu người, ngày họp và giảng viên đều hư cấu. Mẫu nhỏ chỉ là thử quy trình, không đại diện hay chứng minh quan hệ nhân quả. Không kết luận về kiểm định chưa làm.
+
+## Nguồn
+
+- B25 `kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 中～上級編/chapters/08-bai-7-teian.md` dòng 220–269: cách đề xuất và mời phản hồi. Đã dò catalog27 về ゼミ, 研究テーマ, 議論, 調査, 仮説.
+
+## Chuyên đề trước
+
+Đã đọc `sj-thuong-17/lesson.md` và `practice.json`; ẩn dụ xu hướng không gắn vào mẫu sáu người vì dễ quá mức.
+
+## Tự rà từng cảnh
+
+- **S001 5ad419c9-9ba4-5786-b28e-471fd8f1774e** (routine): Nêu điều mình muốn tìm hiểu và vì sao. Linh: Em muốn tìm hiểu cách viết thông báo sự kiện để người đọc dễ thấy thông tin cần thiết. Em từng bỏ sót hạn đăng ký nên nảy ra ý này. Đáp: Hay đấy. Em đang nghĩ người nào cần tìm thông tin gì? Đọc JA/VI riêng, kiểm vai và đường mở riêng.
+- **S002 7677668c-efdb-5109-90b8-84a8ed563c73** (routine): Giảng viên thấy phạm vi quá rộng, hỏi cách thu hẹp. Linh: Em sẽ chọn thông báo lớp học công khai của trung tâm. Em muốn so hai cách đặt tiêu đề cho cùng nội dung. Đáp: “Thông báo dễ hiểu” nói chung rộng quá. Em định chọn loại nào? Đọc JA/VI riêng, kiểm vai và đường mở riêng.
+- **S003 2ed335d8-d598-5acf-b184-b3d50118f4a6** (misunderstanding): Một thuật ngữ dùng khác nhau, thống nhất nghĩa trước khi bàn. Linh: Em đang nghĩ đến vế sau. Em dùng từ chưa rõ ạ. Đáp: Từ “dễ hiểu” lúc nãy là hiểu nội dung, hay tìm giờ nhanh? Đọc JA/VI riêng, kiểm vai và đường S001.
+- **S004 a6f3c5b1-da4a-5ef9-8c80-eefede4c2e9b** (pending): Chưa đủ dữ liệu, nói điều cần kiểm thêm. Linh: Hiện em mới có hai mẫu thông báo. Chưa thể nói tiêu đề có tác dụng thế nào. Đáp: Bước tiếp em kiểm gì? Đọc JA/VI riêng, kiểm vai và đường S001.
+- **S005 e5ef76b5-f44c-5bea-86bd-7353829526d6** (follow_up): Sau khi đọc thêm, trình bày câu hỏi đã sửa. Linh: Em đã đọc thêm hai nghiên cứu liên quan. Em sửa câu hỏi thành “vị trí tiêu đề có làm thay đổi thời gian tìm giờ và hạn không”. Đáp: Rõ thứ cần đo hơn rồi. Em có xem cả độ chính xác không? Đọc JA/VI riêng, kiểm vai và đường S002.
+- **S006 05f7ccbc-11bb-5594-b20f-cc52b8cf86d6** (routine): Tóm tắt luận điểm của người khác trước khi hỏi. Linh: Ý cậu là đặt tiêu đề lên trên sẽ giúp người đọc tìm giờ bắt đầu dễ hơn, đúng không? Đáp: Đúng. Bốn người thử đều tìm nhanh hơn ở bản có tiêu đề trên cùng. Đọc JA/VI riêng, kiểm vai và đường mở riêng.
+- **S007 ce2461e6-9a39-5060-8d7f-5c8354e8ccca** (routine): Xin ví dụ cho một giả định chưa rõ. Linh: “Quen” là thường xuyên đọc đúng kiểu thông báo này à? Cậu cho một ví dụ được không? Đáp: Ví dụ người mỗi tháng đều xem thông báo lớp của trung tâm và biết hạn đăng ký thường ở phía dưới. Đọc JA/VI riêng, kiểm vai và đường mở riêng.
+- **S008 f6a7aadc-1781-53dc-81e9-1f05b5a404f5** (routine): Phản biện bằng bằng chứng, tách người và ý. Linh: Kết quả đáng chú ý. Nhưng cả bốn đều đọc bản có tiêu đề ở trên trong lượt hai. Có thể họ đã quen với nội dung. Đáp: Cả bốn người đều nhanh hơn nên tớ nghĩ do đặt tiêu đề lên trên. Đọc JA/VI riêng, kiểm vai và đường mở riêng.
+- **S009 7d99db34-2066-5c1d-9e5e-8e5136519ca4** (misunderstanding): Người khác hiểu thành phủ định toàn bộ, làm rõ phần mình đồng ý. Linh: Không phải. Việc bốn người tìm nhanh hơn vẫn là dữ liệu. Tớ chỉ muốn đổi thứ tự để kiểm trước khi quy hết cho vị trí tiêu đề. Đáp: Vậy kết quả của tớ hoàn toàn không dùng được à? Đọc JA/VI riêng, kiểm vai và đường S008.
+- **S010 a2f92b42-2eab-5fb7-843a-6df826dc4734** (pending): Chủ trì hết giờ, xin ghi lại điểm cần bàn tiếp. Linh: Vậy ghi “hỏi kinh nghiệm đọc thông báo như thế nào” thành mục buổi sau được không? Đáp: Người chủ trì ra hiệu sắp hết giờ, phải chuyển chủ đề rồi. Đọc JA/VI riêng, kiểm vai và đường S007.
+- **S011 377821de-e2ad-5e70-b905-5caf50ec4134** (routine): Báo việc đã thử và phát hiện khác dự đoán. Linh: Em thử với sáu người. Em dự đoán bản có tiêu đề trên cùng sẽ nhanh hơn, nhưng hai người lại ngược lại. Đáp: Hai người ấy đọc có điểm gì giống nhau không? Đọc JA/VI riêng, kiểm vai và đường mở riêng.
+- **S012 39036a2b-b102-5b47-805a-7c639f24f0e5** (routine): Một phương pháp không còn phù hợp, xin ý kiến điều chỉnh. Linh: Cách bấm giờ hiện không ổn. Hai người bắt đầu đọc trước hiệu lệnh nên mốc bắt đầu không đồng nhất. Đáp: Thời gian của hai người ấy khó đưa vào so sánh. Em muốn sửa thế nào? Đọc JA/VI riêng, kiểm vai và đường mở riêng.
+- **S013 d3d17cdc-b5c7-5d3a-ae37-b653b5833adf** (conditional): Giảng viên đề nghị hướng khác, hỏi chi phí thời gian. Linh: Nếu thêm phần ấy, cần dự trù bao lâu để hỏi sáu người ở đợt thử tiếp theo ạ? Tuần này em còn có lớp. Đáp: Ngoài ghi thời gian, em có thể hỏi từng người sau khi làm xong họ đã đọc thế nào. Đọc JA/VI riêng, kiểm vai và đường S012.
+- **S014 f131d044-82bf-597b-869b-8d49005cb5d1** (unresolved): Chưa thể kết luận, nói phần chắc và phần còn mở. Linh: Đúng là hai trong sáu người có kết quả ngược dự đoán. Nhưng cũng có lượt bấm giờ không cùng mốc; em chưa biết nguyên nhân khác biệt. Đáp: Vậy khi trình bày, em nói được đến đâu? Đọc JA/VI riêng, kiểm vai và đường S011.
+- **S015 2371d897-e4bf-5f3a-95cc-3c7db713c501** (resolved): Chốt bước tới và ngày trao đổi lại. Linh: Ngày mai em thử quy trình mới với hai người, kiểm mốc bắt đầu và câu hướng dẫn. Đáp: Xem kết quả rồi mới thử chính thức. Khi nào mình bàn lại? Đọc JA/VI riêng, kiểm vai và đường S012.
+- **S016 d7affd3b-dbb4-5794-9983-4d1d052a59be** (routine): Phân vai trình bày và phản hồi trong buổi tới. Linh: Buổi sau tớ trình bày câu hỏi và cách làm trong năm phút. Cậu nói bảng kết quả và giới hạn được không? Đáp: Được. Phần hỏi đáp, nếu ai hỏi về ảnh hưởng của thứ tự thì tớ trả lời. Đọc JA/VI riêng, kiểm vai và đường mở riêng.
+- **S017 5ecda3d8-f232-5946-98b4-a45aedcbe17f** (problem): Người chủ chốt vắng, đổi thứ tự nói. Linh: Được. Tớ nói câu hỏi và cách làm trước, rồi trình bảng của cậu. Cho tớ kiểm phần chú thích với cậu nhé? Đáp: Tớ sốt nên hôm nay không đến được. Cậu nói phần kết quả giúp nhé? Đọc JA/VI riêng, kiểm vai và đường S016.
+- **S018 e0ab9d3c-8f19-5df0-8053-bbbc22b2fbba** (alternative): Khách mời hỏi ngoài phạm vi, chuyển người phù hợp. Linh: Ừ. Tớ sẽ nói lần này chưa làm kiểm định. Cách chọn phương pháp thì hỏi cô Mori rồi trả lời buổi sau, được chứ? Đáp: Khách hỏi “dùng phép kiểm định ý nghĩa nào”. Mình mới thử quy trình với sáu người thôi nhỉ. Đọc JA/VI riêng, kiểm vai và đường S016.
+- **S019 877d1b20-4815-5956-ae48-54011c34dea7** (follow_up): Sau buổi, trao đổi điều nhóm học được và điều phải sửa. Linh: Câu hỏi và cách làm đã rõ, nhưng chú thích bảng nhỏ quá nên điểm thứ tự cố định khó thấy. Đáp: Lần sau đặt điều kiện ấy trên đầu bảng. Phần hỏi đáp cũng thiếu hai phút. Đọc JA/VI riêng, kiểm vai và đường S016.
