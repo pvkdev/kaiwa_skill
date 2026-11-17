@@ -68,11 +68,13 @@ def validate(data, ctx):
             date.fromisoformat(src["accessed"])
     previous = {i["id"] for i in ctx["previous_items"]}
     turn_ids, scripts = set(), set()
+    internal_scene_id = re.compile(r"\b(?:" + "|".join(re.escape(s["id"]) for s in expected) + r")\b")
     for d, s in zip(data["dialogues"], expected):
         uid = s["uid"]
         require(d["event_id"] == s["event_id"] and filled(d["context_vi"]), uid + " event/context")
         require(re.search(r"[A-Za-z\u00c0-\u024f\u1e00-\u1eff]", d["context_vi"]),
                 uid + " context_vi needs Vietnamese prose")
+        require(not internal_scene_id.search(d["context_vi"]), uid + " internal scene ID in context_vi")
         cast = {p["id"]: p for p in d["speakers"]}
         require(len(d["speakers"]) == len(cast) == 2 and all(filled(p["id"]) and filled(p["role_vi"]) and
                 p["gender"] in ("male", "female") for p in cast.values()), uid + " cast")
