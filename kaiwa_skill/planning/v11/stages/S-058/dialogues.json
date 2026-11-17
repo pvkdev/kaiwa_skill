@@ -1,0 +1,837 @@
+{
+  "stage_uid": "173b5a2f-020c-52b6-a8de-0ff6573cf855",
+  "admin_sources": {
+    "main": {
+      "kind": "book",
+      "book_id": "B05",
+      "title": "すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "path": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700/chapters/09-ch8-kinkyu.md",
+      "start_line": 103,
+      "end_line": 143,
+      "use_vi": "Mẫu báo nguy hiểm, chỉ dẫn lối đi và nhắc lại nơi tập trung."
+    },
+    "fdma": {
+      "kind": "web",
+      "title": "消防庁 火災発生時に備えましょう",
+      "url": "https://www.fdma.go.jp/laws/tutatsu/items/250625_yobou_266.pdf",
+      "accessed": "2026-11-17",
+      "use_vi": "Báo vị trí, gọi 119, thông báo và sơ tán theo hướng dẫn."
+    },
+    "fdma_return": {
+      "kind": "web",
+      "title": "消防庁 もしも火災警報が鳴ったら",
+      "url": "https://www.fdma.go.jp/relocation/html/life/yobou_contents/materials/pdf/30_keihoki_ja.pdf",
+      "accessed": "2026-11-17",
+      "use_vi": "Sau khi ra ngoài không tự quay vào nơi cháy, ưu tiên an toàn."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "40d4bb60-29ff-5cf4-9daf-fe91bc431783",
+      "event_id": "E01",
+      "context_vi": "Trong lúc làm việc, bạn thấy khói ở góc phía bắc của kho. Bạn báo ngay cho người phụ trách, nêu vị trí có mốc cửa.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách an toàn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "40d4bb60-29ff-5cf4-9daf-fe91bc431783-u01",
+          "speaker_id": "a",
+          "ja": "倉庫の北側、青いドアの近くで煙が見えます。",
+          "vi": "Tôi thấy khói ở phía bắc kho, gần cửa màu xanh."
+        },
+        {
+          "id": "40d4bb60-29ff-5cf4-9daf-fe91bc431783-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。119に連絡し、館内にも知らせます。安全な場所へ移動してください。",
+          "vi": "Tôi hiểu. Tôi sẽ báo 119 và thông báo trong tòa. Bạn di chuyển tới nơi an toàn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "40d4bb60-29ff-5cf4-9daf-fe91bc431783-u01": {
+            "kind": "original_extension"
+          },
+          "40d4bb60-29ff-5cf4-9daf-fe91bc431783-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3bcde796-cc85-5b76-838f-e2a403cc2d99",
+      "event_id": "E01",
+      "context_vi": "Bạn đã ra khỏi khu kho nhưng chưa thấy đồng nghiệp Yamada rời phòng đóng gói. Bạn báo vị trí cuối biết, không quay lại tìm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách an toàn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3bcde796-cc85-5b76-838f-e2a403cc2d99-u01",
+          "speaker_id": "a",
+          "ja": "山田さんがまだ見えません。最後に見たのは倉庫の横の包装室です。",
+          "vi": "Tôi chưa thấy anh Yamada. Lần cuối tôi thấy anh ấy ở phòng đóng gói cạnh kho."
+        },
+        {
+          "id": "3bcde796-cc85-5b76-838f-e2a403cc2d99-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。消防の人にその場所を伝えます。戻らないでください。",
+          "vi": "Tôi hiểu. Tôi sẽ báo vị trí đó cho đội cứu hỏa. Bạn đừng quay lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3bcde796-cc85-5b76-838f-e2a403cc2d99-u01": {
+            "kind": "original_extension"
+          },
+          "3bcde796-cc85-5b76-838f-e2a403cc2d99-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8600bc9f-fd9e-5746-a086-dd196f03cbef",
+      "event_id": "E01",
+      "context_vi": "Bạn đã báo khói ở phía bắc kho, nhưng người phụ trách nhắc lại thành phía nam. Bạn sửa bằng mốc cửa xanh.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách an toàn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8600bc9f-fd9e-5746-a086-dd196f03cbef-u01",
+          "speaker_id": "b",
+          "ja": "倉庫の南側ですね。",
+          "vi": "Ở phía nam kho, đúng không ạ?"
+        },
+        {
+          "id": "8600bc9f-fd9e-5746-a086-dd196f03cbef-u02",
+          "speaker_id": "a",
+          "ja": "いいえ、北側です。青いドアの近くです。",
+          "vi": "Không, phía bắc, gần cửa màu xanh."
+        },
+        {
+          "id": "8600bc9f-fd9e-5746-a086-dd196f03cbef-u03",
+          "speaker_id": "b",
+          "ja": "北側の青いドアですね。直して伝えます。",
+          "vi": "Phía bắc, gần cửa xanh. Tôi sẽ sửa thông tin."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8600bc9f-fd9e-5746-a086-dd196f03cbef-u01": {
+            "kind": "original_extension"
+          },
+          "8600bc9f-fd9e-5746-a086-dd196f03cbef-u02": {
+            "kind": "original_extension"
+          },
+          "8600bc9f-fd9e-5746-a086-dd196f03cbef-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ca0cb73c-12fa-5684-a48a-5d65be23584d",
+      "event_id": "E01",
+      "context_vi": "Chuông báo cháy vừa reo trong nơi làm việc. Bạn đang xếp hàng và hỏi có cần dừng việc để rời khu vực không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách an toàn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ca0cb73c-12fa-5684-a48a-5d65be23584d-u01",
+          "speaker_id": "a",
+          "ja": "今の作業を止めて、避難しますか。",
+          "vi": "Tôi có dừng việc đang làm để sơ tán ngay không ạ?"
+        },
+        {
+          "id": "ca0cb73c-12fa-5684-a48a-5d65be23584d-u02",
+          "speaker_id": "b",
+          "ja": "はい。作業を止めて、放送と誘導に従って出てください。",
+          "vi": "Có. Bạn dừng việc, rồi ra ngoài theo thông báo và hướng dẫn tại chỗ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ca0cb73c-12fa-5684-a48a-5d65be23584d-u01": {
+            "kind": "original_extension"
+          },
+          "ca0cb73c-12fa-5684-a48a-5d65be23584d-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "730d514f-b5a4-5cbb-a7a3-0aa276f8a296",
+      "event_id": "E02",
+      "context_vi": "Lối ra thường dùng ở kho đã bị chặn do khói. Bạn hỏi người hướng dẫn một lối khác đang an toàn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người hướng dẫn sơ tán",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "730d514f-b5a4-5cbb-a7a3-0aa276f8a296-u01",
+          "speaker_id": "a",
+          "ja": "いつもの出口は煙で通れません。どこから出ますか。",
+          "vi": "Lối ra thường dùng có khói nên không đi qua được. Tôi ra bằng lối nào ạ?"
+        },
+        {
+          "id": "730d514f-b5a4-5cbb-a7a3-0aa276f8a296-u02",
+          "speaker_id": "b",
+          "ja": "今は西側の階段を使ってください。煙がなければ、そこから外へ出られます。",
+          "vi": "Hiện bạn dùng cầu thang phía tây. Nếu lối đó không có khói, bạn có thể ra ngoài."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "730d514f-b5a4-5cbb-a7a3-0aa276f8a296-u01": {
+            "kind": "original_extension"
+          },
+          "730d514f-b5a4-5cbb-a7a3-0aa276f8a296-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "664f6b60-85ac-5ba6-8d2a-85eb5a7c4b56",
+      "event_id": "E02",
+      "context_vi": "Bạn vừa được chỉ cầu thang phía tây. Bạn nhắc lại lối đi và hỏi điểm tập trung để không đi nhầm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người hướng dẫn sơ tán",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "664f6b60-85ac-5ba6-8d2a-85eb5a7c4b56-u01",
+          "speaker_id": "a",
+          "ja": "西側の階段ですね。外に出たら、どこに集まりますか。",
+          "vi": "Cầu thang phía tây. Sau khi ra ngoài tôi tập trung ở đâu ạ?"
+        },
+        {
+          "id": "664f6b60-85ac-5ba6-8d2a-85eb5a7c4b56-u02",
+          "speaker_id": "b",
+          "ja": "北の広場です。階段の先の案内に従ってください。",
+          "vi": "Ở sân phía bắc. Bạn theo chỉ dẫn ở cuối cầu thang nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "664f6b60-85ac-5ba6-8d2a-85eb5a7c4b56-u01": {
+            "kind": "original_extension"
+          },
+          "664f6b60-85ac-5ba6-8d2a-85eb5a7c4b56-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8c5a3ebb-3127-54df-ab23-37991eedc0f3",
+      "event_id": "E02",
+      "context_vi": "Trên đường tới điểm tập trung, bạn không còn thấy đồng nghiệp đi cùng. Bạn báo cho người phụ trách vị trí cuối thấy.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách an toàn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8c5a3ebb-3127-54df-ab23-37991eedc0f3-u01",
+          "speaker_id": "a",
+          "ja": "一緒にいたリーさんが見えません。西側の階段の前で最後に見ました。",
+          "vi": "Tôi không thấy chị Ly đi cùng. Lần cuối tôi thấy chị ấy trước cầu thang phía tây."
+        },
+        {
+          "id": "8c5a3ebb-3127-54df-ab23-37991eedc0f3-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。確認します。あなたは安全な場所へ進んでください。",
+          "vi": "Tôi hiểu. Tôi sẽ kiểm tra. Bạn tiếp tục đến nơi an toàn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8c5a3ebb-3127-54df-ab23-37991eedc0f3-u01": {
+            "kind": "original_extension"
+          },
+          "8c5a3ebb-3127-54df-ab23-37991eedc0f3-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b6855ba9-75aa-5b42-9349-042a54613409",
+      "event_id": "E02",
+      "context_vi": "Bạn đã đi theo cầu thang phía tây tới sân phía bắc. Bạn báo có mặt tại điểm tập trung.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách điểm tập trung",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b6855ba9-75aa-5b42-9349-042a54613409-u01",
+          "speaker_id": "a",
+          "ja": "西側の階段から出ました。今、北の広場にいます。リンです。",
+          "vi": "Tôi đã ra bằng cầu thang phía tây. Giờ tôi ở sân phía bắc. Tôi là Linh."
+        },
+        {
+          "id": "b6855ba9-75aa-5b42-9349-042a54613409-u02",
+          "speaker_id": "b",
+          "ja": "リンさんですね。ここで人数に入れました。",
+          "vi": "Chị Linh. Tôi đã ghi bạn có mặt ở đây."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b6855ba9-75aa-5b42-9349-042a54613409-u01": {
+            "kind": "original_extension"
+          },
+          "b6855ba9-75aa-5b42-9349-042a54613409-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f947646f-c9fb-50a2-a0be-ee0e223aef73",
+      "event_id": "E03",
+      "context_vi": "Tại điểm tập trung, bạn nhận thấy đồng nghiệp Yamada chưa được ghi có mặt. Bạn báo riêng, không đoán họ đang ở đâu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách điểm tập trung",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f947646f-c9fb-50a2-a0be-ee0e223aef73-u01",
+          "speaker_id": "a",
+          "ja": "山田さんがまだここにいません。今どこにいるかは分かりません。",
+          "vi": "Anh Yamada chưa có mặt ở đây. Tôi không biết hiện anh ấy ở đâu."
+        },
+        {
+          "id": "f947646f-c9fb-50a2-a0be-ee0e223aef73-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。未確認として記録して確認します。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi là chưa xác nhận được và kiểm tra."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f947646f-c9fb-50a2-a0be-ee0e223aef73-u01": {
+            "kind": "original_extension"
+          },
+          "f947646f-c9fb-50a2-a0be-ee0e223aef73-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "147f6f39-7201-520c-8066-4864a38925ec",
+      "event_id": "E03",
+      "context_vi": "Người phụ trách đang kiểm tra Yamada. Bạn hỏi mình nên chờ ở đâu, không tự quay vào trong.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách điểm tập trung",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "147f6f39-7201-520c-8066-4864a38925ec-u01",
+          "speaker_id": "a",
+          "ja": "山田さんの確認中ですね。私はどこで待てばいいですか。",
+          "vi": "Mọi người đang kiểm tra anh Yamada. Tôi nên chờ ở đâu ạ?"
+        },
+        {
+          "id": "147f6f39-7201-520c-8066-4864a38925ec-u02",
+          "speaker_id": "b",
+          "ja": "この広場で待ってください。分かり次第、こちらで知らせます。",
+          "vi": "Bạn chờ ở sân này. Khi có tin, chúng tôi sẽ báo ở đây."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "147f6f39-7201-520c-8066-4864a38925ec-u01": {
+            "kind": "original_extension"
+          },
+          "147f6f39-7201-520c-8066-4864a38925ec-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7cf3b069-7759-58ff-92ce-88f589835582",
+      "event_id": "E03",
+      "context_vi": "Trong lúc chờ tin tại sân, bạn thấy Yamada vừa tới. Bạn báo ngay để cập nhật danh sách.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách điểm tập trung",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7cf3b069-7759-58ff-92ce-88f589835582-u01",
+          "speaker_id": "a",
+          "ja": "山田さんが今、広場に来ました。あちらにいます。",
+          "vi": "Anh Yamada vừa đến sân. Anh ấy ở phía kia."
+        },
+        {
+          "id": "7cf3b069-7759-58ff-92ce-88f589835582-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。本人を確認して、名簿を直します。",
+          "vi": "Tôi hiểu. Tôi sẽ xác nhận anh ấy rồi cập nhật danh sách."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7cf3b069-7759-58ff-92ce-88f589835582-u01": {
+            "kind": "original_extension"
+          },
+          "7cf3b069-7759-58ff-92ce-88f589835582-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d0854893-389c-50d4-803e-a54fea49c68d",
+      "event_id": "E03",
+      "context_vi": "Bạn đã ra ngoài an toàn, còn túi cá nhân trong tòa nhà. Bạn hỏi khi nào có thể lấy sau thông báo an toàn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách an toàn",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d0854893-389c-50d4-803e-a54fea49c68d-u01",
+          "speaker_id": "a",
+          "ja": "荷物が中にあります。安全の案内が出たら、いつ取りに行けますか。",
+          "vi": "Túi đồ của tôi còn ở trong. Khi có thông báo an toàn, lúc nào tôi được vào lấy ạ?"
+        },
+        {
+          "id": "d0854893-389c-50d4-803e-a54fea49c68d-u02",
+          "speaker_id": "b",
+          "ja": "まだ戻らないでください。入れる時は責任者から案内します。",
+          "vi": "Hiện đừng quay lại. Khi được vào, người phụ trách sẽ hướng dẫn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main",
+          "fdma",
+          "fdma_return"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d0854893-389c-50d4-803e-a54fea49c68d-u01": {
+            "kind": "original_extension"
+          },
+          "d0854893-389c-50d4-803e-a54fea49c68d-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a6788eab-fee9-5502-94b7-9c80a223594b",
+      "event_id": "E04",
+      "context_vi": "Công ty tổ chức diễn tập sơ tán vào thứ Sáu. Bạn hỏi nơi bắt đầu và giờ cần có mặt.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách diễn tập",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a6788eab-fee9-5502-94b7-9c80a223594b-u01",
+          "speaker_id": "a",
+          "ja": "金曜日の避難訓練はどこから始まりますか。何時に行けばいいですか。",
+          "vi": "Buổi diễn tập sơ tán thứ Sáu bắt đầu ở đâu? Tôi cần có mặt lúc mấy giờ ạ?"
+        },
+        {
+          "id": "a6788eab-fee9-5502-94b7-9c80a223594b-u02",
+          "speaker_id": "b",
+          "ja": "九時に一階の入口へ来てください。そこから始めます。",
+          "vi": "Bạn có mặt ở lối vào tầng một lúc 9 giờ. Ta bắt đầu từ đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a6788eab-fee9-5502-94b7-9c80a223594b-u01": {
+            "kind": "original_extension"
+          },
+          "a6788eab-fee9-5502-94b7-9c80a223594b-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "cb5a6d79-2369-51d1-a5fb-36bd509913e0",
+      "event_id": "E04",
+      "context_vi": "Bạn mới vào công ty, lần đầu tham gia diễn tập. Bạn xin người phụ trách nói lại phần việc mình phải làm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách diễn tập",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "cb5a6d79-2369-51d1-a5fb-36bd509913e0-u01",
+          "speaker_id": "a",
+          "ja": "私は新しく入りました。訓練の時、何をすればいいか、もう一度教えてください。",
+          "vi": "Tôi mới vào công ty. Xin nói lại tôi cần làm gì khi diễn tập ạ?"
+        },
+        {
+          "id": "cb5a6d79-2369-51d1-a5fb-36bd509913e0-u02",
+          "speaker_id": "b",
+          "ja": "合図を聞いたら作業を止め、係の案内で集合場所へ行ってください。",
+          "vi": "Khi nghe hiệu lệnh, bạn dừng việc và theo người hướng dẫn tới điểm tập trung."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "cb5a6d79-2369-51d1-a5fb-36bd509913e0-u01": {
+            "kind": "original_extension"
+          },
+          "cb5a6d79-2369-51d1-a5fb-36bd509913e0-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9520aa2d-7db6-559c-9f70-619d29dccdba",
+      "event_id": "E04",
+      "context_vi": "Một người cùng nhóm cần hỗ trợ khi diễn tập. Bạn hỏi người phụ trách nên phối hợp với ai trước khi bắt đầu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách diễn tập",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9520aa2d-7db6-559c-9f70-619d29dccdba-u01",
+          "speaker_id": "a",
+          "ja": "一緒の人が歩く時に手伝いを必要としています。誰と一緒に動けばいいですか。",
+          "vi": "Người đi cùng tôi cần được hỗ trợ khi đi. Tôi nên phối hợp với ai ạ?"
+        },
+        {
+          "id": "9520aa2d-7db6-559c-9f70-619d29dccdba-u02",
+          "speaker_id": "b",
+          "ja": "今日は誘導係の田中さんが一緒に行きます。入口で紹介します。",
+          "vi": "Hôm nay anh Tanaka phụ trách hướng dẫn sẽ đi cùng. Tôi sẽ giới thiệu ở cửa vào."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9520aa2d-7db6-559c-9f70-619d29dccdba-u01": {
+            "kind": "original_extension"
+          },
+          "9520aa2d-7db6-559c-9f70-619d29dccdba-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5322eeaf-07a2-590e-bf72-34c08c39092d",
+      "event_id": "E04",
+      "context_vi": "Bạn có lịch diễn tập 9 giờ ở lối vào tầng một. Bạn nghe nhầm điểm tập trung và xin xác nhận trước khi di chuyển.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách diễn tập",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5322eeaf-07a2-590e-bf72-34c08c39092d-u01",
+          "speaker_id": "a",
+          "ja": "集合場所は東の広場でしたか。",
+          "vi": "Điểm tập trung là sân phía đông phải không ạ?"
+        },
+        {
+          "id": "5322eeaf-07a2-590e-bf72-34c08c39092d-u02",
+          "speaker_id": "b",
+          "ja": "いいえ、北の広場です。訓練の案内図にも書いてあります。",
+          "vi": "Không, là sân phía bắc. Sơ đồ diễn tập cũng ghi vậy."
+        },
+        {
+          "id": "5322eeaf-07a2-590e-bf72-34c08c39092d-u03",
+          "speaker_id": "a",
+          "ja": "北の広場ですね。",
+          "vi": "Sân phía bắc ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5322eeaf-07a2-590e-bf72-34c08c39092d-u01": {
+            "kind": "original_extension"
+          },
+          "5322eeaf-07a2-590e-bf72-34c08c39092d-u02": {
+            "kind": "original_extension"
+          },
+          "5322eeaf-07a2-590e-bf72-34c08c39092d-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fad949c5-6cb9-5f43-ac67-dd0beab0b41e",
+      "event_id": "E04",
+      "context_vi": "Sau buổi diễn tập, bạn nói mình không hiểu ký hiệu lối ra thứ hai và hỏi lần sau nên xem ở đâu trước.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "người phụ trách diễn tập",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fad949c5-6cb9-5f43-ac67-dd0beab0b41e-u01",
+          "speaker_id": "a",
+          "ja": "二つ目の出口の印が分かりませんでした。次は先にどこを見ればいいですか。",
+          "vi": "Tôi không hiểu ký hiệu lối ra thứ hai. Lần sau tôi nên xem trước ở đâu ạ?"
+        },
+        {
+          "id": "fad949c5-6cb9-5f43-ac67-dd0beab0b41e-u02",
+          "speaker_id": "b",
+          "ja": "一階の案内図です。あとで一緒に印を確認しましょう。",
+          "vi": "Bạn xem sơ đồ tầng một. Lát nữa ta cùng kiểm lại ký hiệu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "main"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fad949c5-6cb9-5f43-ac67-dd0beab0b41e-u01": {
+            "kind": "original_extension"
+          },
+          "fad949c5-6cb9-5f43-ac67-dd0beab0b41e-u02": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
