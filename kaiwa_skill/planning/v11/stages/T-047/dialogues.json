@@ -1,0 +1,1295 @@
+{
+  "stage_uid": "c68fc9e0-c783-5a79-ada3-f788800c4a64",
+  "admin_sources": {
+    "mhlw_explain": {
+      "kind": "web",
+      "title": "厚生労働省: 診療情報の提供等に関する指針",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb3403&dataType=1",
+      "accessed": "2026-11-17",
+      "use_vi": "Người bệnh có thể hỏi để hiểu triệu chứng, phương án điều trị và lựa chọn thay thế; hội thoại không đưa chẩn đoán hay lời hứa điều trị chung."
+    },
+    "aichi_symptoms": {
+      "kind": "web",
+      "title": "愛知県医師会: 医師や看護師に自分の病気のことをもっと相談したい",
+      "url": "https://www.aichi.med.or.jp/webcms/wp-content/uploads/2025/10/%E3%81%93%E3%82%8C%E3%81%A3%E3%81%A6%E3%81%A9%E3%81%86%E3%81%AA%E3%81%AE%EF%BC%9F%E2%91%A0%EF%BC%88HP%E6%8E%B2%E8%BC%89%E3%83%87%E3%83%BC%E3%82%BF%EF%BC%89.pdf",
+      "accessed": "2026-11-17",
+      "use_vi": "Mốc khi bắt đầu, vị trí, kiểu triệu chứng và thuốc đang dùng cần kể rõ cho bác sĩ; sổ thuốc có thể hỗ trợ."
+    },
+    "b13": {
+      "kind": "book",
+      "book_id": "B13",
+      "title": "シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版",
+      "path": "kaiwa_skill/knowledge/シャドーイング 日本語を話そう！ 中～上級編 インドネシア語・タイ語・ベトナム語翻訳版/chapters/04-unit-4-bac-si-cua-hang.md",
+      "start_line": 17,
+      "end_line": 49,
+      "use_vi": "Hỏi triệu chứng ở buổi khám, bác sĩ hỏi lại một dấu hiệu cụ thể; lời thoại V11 mới, không trích nguyên."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8",
+      "event_id": "E01",
+      "context_vi": "Nội khoa giả định: bạn đau đầu năm ngày, nặng hơn về chiều; trình bày mốc và thay đổi cho bác sĩ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8-u01",
+          "speaker_id": "a",
+          "ja": "五日前から頭が痛くて、特に午後になると強くなります。今日は仕事中も続きました。",
+          "vi": "Tôi đau đầu từ năm ngày trước, nhất là về chiều thì nặng hơn. Hôm nay lúc làm việc cũng đau liên tục."
+        },
+        {
+          "id": "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8-u02",
+          "speaker_id": "b",
+          "ja": "痛む場所はどこですか。熱や吐き気はありますか。",
+          "vi": "Chị đau ở đâu? Có sốt hoặc buồn nôn không?"
+        },
+        {
+          "id": "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8-u03",
+          "speaker_id": "a",
+          "ja": "こめかみの辺りです。熱は測っていません。吐き気はありません。",
+          "vi": "Ở vùng thái dương. Tôi chưa đo nhiệt độ. Tôi không buồn nôn."
+        },
+        {
+          "id": "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。強くなる時間と、ほかの症状も一緒に確認しましょう。",
+          "vi": "Tôi hiểu. Ta sẽ xem lúc nào đau tăng và các triệu chứng khác."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms",
+          "b13"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8-u01": {
+            "kind": "original_extension"
+          },
+          "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8-u02": {
+            "kind": "original_extension"
+          },
+          "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8-u03": {
+            "kind": "original_extension"
+          },
+          "a4ea5cac-2a8e-5d0a-a0c3-beced642cda8-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa",
+      "event_id": "E01",
+      "context_vi": "Trong lần khám này, bác sĩ hỏi bạn đã đi khám trước đó chưa; bạn nêu nơi và mốc.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa-u01",
+          "speaker_id": "b",
+          "ja": "この頭痛で、ほかの医療機関にかかりましたか。",
+          "vi": "Vì cơn đau đầu này, chị đã khám nơi nào khác chưa?"
+        },
+        {
+          "id": "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa-u02",
+          "speaker_id": "a",
+          "ja": "三日前に駅前のクリニックへ行きました。検査はまだ受けていません。",
+          "vi": "Ba ngày trước tôi đến phòng khám gần ga. Tôi chưa làm xét nghiệm."
+        },
+        {
+          "id": "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa-u03",
+          "speaker_id": "b",
+          "ja": "そのときに薬を処方されましたか。",
+          "vi": "Lần đó chị có được kê thuốc không?"
+        },
+        {
+          "id": "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa-u04",
+          "speaker_id": "a",
+          "ja": "はい。名前を正確に言えないので、お薬手帳を見せてもいいですか。",
+          "vi": "Có. Tôi không nhớ chính xác tên thuốc; tôi đưa sổ thuốc cho bác sĩ xem được không?"
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms",
+          "b13"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa-u01": {
+            "kind": "original_extension"
+          },
+          "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa-u02": {
+            "kind": "original_extension"
+          },
+          "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa-u03": {
+            "kind": "original_extension"
+          },
+          "8cc62f9b-c824-5aee-9462-2aa1ca8f8efa-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "178b6b82-363e-5baf-b565-a403258d2c8d",
+      "event_id": "E01",
+      "context_vi": "Sau khi nói đau đầu năm ngày, bạn xem lịch và nhận ra ngày bắt đầu sớm hơn một ngày.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "178b6b82-363e-5baf-b565-a403258d2c8d-u01",
+          "speaker_id": "a",
+          "ja": "さっき五日前からと言いましたが、予定表を見たら六日前の夜からでした。訂正します。",
+          "vi": "Lúc nãy tôi nói năm ngày, nhưng xem lịch thì là từ tối sáu ngày trước. Tôi xin sửa lại."
+        },
+        {
+          "id": "178b6b82-363e-5baf-b565-a403258d2c8d-u02",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。最初の日も今と同じくらい痛みましたか。",
+          "vi": "Cảm ơn chị. Ngày đầu cơn đau cũng mạnh như bây giờ sao?"
+        },
+        {
+          "id": "178b6b82-363e-5baf-b565-a403258d2c8d-u03",
+          "speaker_id": "a",
+          "ja": "いいえ、最初は軽くて、三日前から午後に強くなるようになりました。",
+          "vi": "Không, ban đầu nhẹ, từ ba ngày trước mới đau tăng vào buổi chiều."
+        },
+        {
+          "id": "178b6b82-363e-5baf-b565-a403258d2c8d-u04",
+          "speaker_id": "b",
+          "ja": "経過が分かりました。記録を直しておきます。",
+          "vi": "Tôi nắm được diễn tiến rồi. Tôi sẽ sửa ghi chép."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms",
+          "b13"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "178b6b82-363e-5baf-b565-a403258d2c8d-u01": {
+            "kind": "original_extension"
+          },
+          "178b6b82-363e-5baf-b565-a403258d2c8d-u02": {
+            "kind": "original_extension"
+          },
+          "178b6b82-363e-5baf-b565-a403258d2c8d-u03": {
+            "kind": "original_extension"
+          },
+          "178b6b82-363e-5baf-b565-a403258d2c8d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "086a71bf-936c-5214-b541-1192e4925cf6",
+      "event_id": "E01",
+      "context_vi": "Trước khi kết thúc khám, bạn nhớ thêm gần đây thỉnh thoảng chóng mặt; báo bác sĩ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "086a71bf-936c-5214-b541-1192e4925cf6-u01",
+          "speaker_id": "a",
+          "ja": "もう一つあります。昨日から立ち上がったとき、少しふらつくことがあります。",
+          "vi": "Tôi còn một điều nữa. Từ hôm qua, đôi lúc đứng dậy tôi thấy hơi choáng."
+        },
+        {
+          "id": "086a71bf-936c-5214-b541-1192e4925cf6-u02",
+          "speaker_id": "b",
+          "ja": "どのくらい続きますか。倒れたりはしましたか。",
+          "vi": "Cảm giác đó kéo dài bao lâu? Chị có ngã không?"
+        },
+        {
+          "id": "086a71bf-936c-5214-b541-1192e4925cf6-u03",
+          "speaker_id": "a",
+          "ja": "数秒ほどで、倒れてはいません。頭痛とは別かもしれませんが、伝えておきたいです。",
+          "vi": "Khoảng vài giây, tôi chưa ngã. Có thể không liên quan đến đau đầu, nhưng tôi muốn báo bác sĩ."
+        },
+        {
+          "id": "086a71bf-936c-5214-b541-1192e4925cf6-u04",
+          "speaker_id": "b",
+          "ja": "伝えてくれて助かります。診察の中で一緒に確認します。",
+          "vi": "Cảm ơn chị đã nói. Tôi sẽ kiểm cả điều đó trong buổi khám."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms",
+          "b13"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "086a71bf-936c-5214-b541-1192e4925cf6-u01": {
+            "kind": "original_extension"
+          },
+          "086a71bf-936c-5214-b541-1192e4925cf6-u02": {
+            "kind": "original_extension"
+          },
+          "086a71bf-936c-5214-b541-1192e4925cf6-u03": {
+            "kind": "original_extension"
+          },
+          "086a71bf-936c-5214-b541-1192e4925cf6-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9492464a-071b-574a-b4d7-72b210b713e1",
+      "event_id": "E01",
+      "context_vi": "Bạn không biết gọi tên cảm giác ở đầu; mô tả cụ thể khi nào và như thế nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9492464a-071b-574a-b4d7-72b210b713e1-u01",
+          "speaker_id": "a",
+          "ja": "うまく言えないんですが、頭の片側が締めつけられるような感じです。",
+          "vi": "Tôi không biết diễn đạt sao, nhưng một bên đầu có cảm giác như bị siết lại."
+        },
+        {
+          "id": "9492464a-071b-574a-b4d7-72b210b713e1-u02",
+          "speaker_id": "b",
+          "ja": "ズキズキする痛みとは違いますか。光や音で変わりますか。",
+          "vi": "Có khác kiểu đau nhói theo nhịp không? Ánh sáng hay âm thanh có làm thay đổi không?"
+        },
+        {
+          "id": "9492464a-071b-574a-b4d7-72b210b713e1-u03",
+          "speaker_id": "a",
+          "ja": "ズキズキではありません。静かな場所でも続きますが、夕方に強くなります。",
+          "vi": "Không phải đau nhói theo nhịp. Ở chỗ yên tĩnh vẫn đau, nhưng chiều thì nặng hơn."
+        },
+        {
+          "id": "9492464a-071b-574a-b4d7-72b210b713e1-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。今の言い方で十分伝わっています。",
+          "vi": "Tôi hiểu. Chị mô tả như vậy là đủ rõ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms",
+          "b13"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9492464a-071b-574a-b4d7-72b210b713e1-u01": {
+            "kind": "original_extension"
+          },
+          "9492464a-071b-574a-b4d7-72b210b713e1-u02": {
+            "kind": "original_extension"
+          },
+          "9492464a-071b-574a-b4d7-72b210b713e1-u03": {
+            "kind": "original_extension"
+          },
+          "9492464a-071b-574a-b4d7-72b210b713e1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b2709d7f-3fe7-5424-935e-92ee2673335e",
+      "event_id": "E02",
+      "context_vi": "Bác sĩ dùng từ 経過観察; bạn xin giải thích dễ hiểu để biết phải theo dõi gì.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b2709d7f-3fe7-5424-935e-92ee2673335e-u01",
+          "speaker_id": "a",
+          "ja": "先生の『経過観察』は、今は何を見ながら待つという意味ですか。",
+          "vi": "Bác sĩ nói '経過観察' là trong lúc này tôi cần theo dõi điều gì ạ?"
+        },
+        {
+          "id": "b2709d7f-3fe7-5424-935e-92ee2673335e-u02",
+          "speaker_id": "b",
+          "ja": "この場合は、頭痛がいつ、どの程度出るかを記録し、次の診察で変化を比べることです。",
+          "vi": "Với trường hợp này, chị ghi lại lúc đau đầu và mức độ đau, rồi so thay đổi ở lần khám sau."
+        },
+        {
+          "id": "b2709d7f-3fe7-5424-935e-92ee2673335e-u03",
+          "speaker_id": "a",
+          "ja": "ふらつきも同じ記録に入れたほうがいいですか。",
+          "vi": "Tôi cũng ghi cả lúc chóng mặt vào đó được không?"
+        },
+        {
+          "id": "b2709d7f-3fe7-5424-935e-92ee2673335e-u04",
+          "speaker_id": "b",
+          "ja": "はい。気になる変化があれば、次の予約を待たずに相談してください。",
+          "vi": "Được. Nếu có thay đổi làm chị lo, hãy liên hệ hỏi trước lịch hẹn tiếp."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b2709d7f-3fe7-5424-935e-92ee2673335e-u01": {
+            "kind": "original_extension"
+          },
+          "b2709d7f-3fe7-5424-935e-92ee2673335e-u02": {
+            "kind": "original_extension"
+          },
+          "b2709d7f-3fe7-5424-935e-92ee2673335e-u03": {
+            "kind": "original_extension"
+          },
+          "b2709d7f-3fe7-5424-935e-92ee2673335e-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7504e72f-eb55-586a-8eff-c2a7ce2eeb29",
+      "event_id": "E02",
+      "context_vi": "Bác sĩ nêu hai hướng cho trường hợp giả định: ghi diễn tiến rồi tái khám hoặc trao đổi với chuyên khoa; bạn hỏi mục tiêu mỗi hướng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7504e72f-eb55-586a-8eff-c2a7ce2eeb29-u01",
+          "speaker_id": "a",
+          "ja": "一週間記録してからまた診てもらう方法と、専門の先生に相談する方法は、何が違いますか。",
+          "vi": "Ghi triệu chứng một tuần rồi tái khám và gặp bác sĩ chuyên khoa khác nhau ở điểm nào?"
+        },
+        {
+          "id": "7504e72f-eb55-586a-8eff-c2a7ce2eeb29-u02",
+          "speaker_id": "b",
+          "ja": "前者は変化を見て判断するため、後者は専門的な評価が必要か相談するためです。どちらがよいか、今の症状も踏まえて話しましょう。",
+          "vi": "Cách đầu là xem diễn tiến rồi quyết định; cách sau là xin đánh giá chuyên môn. Ta cùng bàn dựa trên triệu chứng hiện tại của chị."
+        },
+        {
+          "id": "7504e72f-eb55-586a-8eff-c2a7ce2eeb29-u03",
+          "speaker_id": "a",
+          "ja": "仕事を休む必要や、予約までの待ち時間も知ってから決めたいです。",
+          "vi": "Tôi muốn biết có cần nghỉ làm và phải chờ lịch bao lâu rồi mới quyết."
+        },
+        {
+          "id": "7504e72f-eb55-586a-8eff-c2a7ce2eeb29-u04",
+          "speaker_id": "b",
+          "ja": "今の予約状況では専門外来の候補は来週木曜日です。仕事を休めるか、受付で空き時間も確認できます。",
+          "vi": "Hiện lịch chuyên khoa có thể hẹn vào thứ Năm tuần sau. Chị có thể hỏi quầy về giờ còn trống để tính chuyện nghỉ làm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7504e72f-eb55-586a-8eff-c2a7ce2eeb29-u01": {
+            "kind": "original_extension"
+          },
+          "7504e72f-eb55-586a-8eff-c2a7ce2eeb29-u02": {
+            "kind": "original_extension"
+          },
+          "7504e72f-eb55-586a-8eff-c2a7ce2eeb29-u03": {
+            "kind": "original_extension"
+          },
+          "7504e72f-eb55-586a-8eff-c2a7ce2eeb29-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0a559938-cfcd-5fbe-8961-4d6c47df8088",
+      "event_id": "E02",
+      "context_vi": "Sau khi nghe hai hướng, bạn chưa muốn quyết ngay; hỏi khi nào cần trả lời và có việc gì phải làm trước.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0a559938-cfcd-5fbe-8961-4d6c47df8088-u01",
+          "speaker_id": "a",
+          "ja": "説明を持ち帰って考えてもいいですか。いつまでに返事をすればいいでしょう。",
+          "vi": "Tôi mang thông tin về suy nghĩ thêm được không? Tôi cần trả lời trước khi nào?"
+        },
+        {
+          "id": "0a559938-cfcd-5fbe-8961-4d6c47df8088-u02",
+          "speaker_id": "b",
+          "ja": "今の診察内容を踏まえ、次の相談日を決めましょう。急に状態が変わったら、その日を待たずに連絡してください。",
+          "vi": "Dựa trên lần khám hôm nay, ta sẽ chốt ngày trao đổi tiếp. Nếu tình trạng thay đổi đột ngột, hãy liên hệ trước ngày đó."
+        },
+        {
+          "id": "0a559938-cfcd-5fbe-8961-4d6c47df8088-u03",
+          "speaker_id": "a",
+          "ja": "では、来週の水曜日にもう一度相談したいです。それまで記録をつけます。",
+          "vi": "Vậy tôi muốn trao đổi lại vào thứ Tư tuần sau. Trong lúc đó tôi sẽ ghi triệu chứng."
+        },
+        {
+          "id": "0a559938-cfcd-5fbe-8961-4d6c47df8088-u04",
+          "speaker_id": "b",
+          "ja": "その予定で受付に伝えます。気になる点はメモしておいてください。",
+          "vi": "Tôi sẽ báo lịch đó với quầy. Chị ghi lại điều muốn hỏi nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0a559938-cfcd-5fbe-8961-4d6c47df8088-u01": {
+            "kind": "original_extension"
+          },
+          "0a559938-cfcd-5fbe-8961-4d6c47df8088-u02": {
+            "kind": "original_extension"
+          },
+          "0a559938-cfcd-5fbe-8961-4d6c47df8088-u03": {
+            "kind": "original_extension"
+          },
+          "0a559938-cfcd-5fbe-8961-4d6c47df8088-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "150a58dd-160e-5807-8219-a033d5c312a0",
+      "event_id": "E02",
+      "context_vi": "Sau khi bác sĩ giải thích theo dõi, bác sĩ gợi ý chuyên khoa cho triệu chứng còn kéo dài; bạn hỏi lý do và cách hẹn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "150a58dd-160e-5807-8219-a033d5c312a0-u01",
+          "speaker_id": "b",
+          "ja": "頭痛が続いているので、専門外来にも相談することを提案します。",
+          "vi": "Vì đau đầu vẫn kéo dài, tôi đề nghị chị trao đổi thêm với phòng khám chuyên khoa."
+        },
+        {
+          "id": "150a58dd-160e-5807-8219-a033d5c312a0-u02",
+          "speaker_id": "a",
+          "ja": "どういう点を専門の先生に見ていただきたいのですか。予約はここで取れますか。",
+          "vi": "Bác sĩ muốn chuyên khoa đánh giá điểm nào? Tôi có đặt lịch tại đây được không?"
+        },
+        {
+          "id": "150a58dd-160e-5807-8219-a033d5c312a0-u03",
+          "speaker_id": "b",
+          "ja": "痛みの経過と、ふらつきとの関係です。紹介状を作りますので、受付で紹介先と予約方法を確認してください。",
+          "vi": "Là diễn tiến cơn đau và mối liên hệ với lúc choáng. Tôi sẽ làm giấy giới thiệu; chị hỏi quầy về nơi được giới thiệu và cách đặt lịch."
+        },
+        {
+          "id": "150a58dd-160e-5807-8219-a033d5c312a0-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。紹介状を受け取って、受付で予約の取り方を聞きます。",
+          "vi": "Tôi hiểu. Tôi sẽ nhận giấy giới thiệu rồi hỏi quầy cách đặt lịch."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "150a58dd-160e-5807-8219-a033d5c312a0-u01": {
+            "kind": "original_extension"
+          },
+          "150a58dd-160e-5807-8219-a033d5c312a0-u02": {
+            "kind": "original_extension"
+          },
+          "150a58dd-160e-5807-8219-a033d5c312a0-u03": {
+            "kind": "original_extension"
+          },
+          "150a58dd-160e-5807-8219-a033d5c312a0-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7c7ff4ad-1373-5d31-8925-eef71cfe699d",
+      "event_id": "E02",
+      "context_vi": "Sau khi nghe hai phương án, bạn nhắc lại lựa chọn định làm và nhờ bác sĩ sửa nếu hiểu sai.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7c7ff4ad-1373-5d31-8925-eef71cfe699d-u01",
+          "speaker_id": "a",
+          "ja": "今は一週間、頭痛とふらつきを記録して、次回それを見ながら専門外来を考える、という理解で合っていますか。",
+          "vi": "Tôi hiểu là giờ ghi đau đầu và choáng một tuần, lần tới xem bản ghi rồi tính đến chuyên khoa, đúng không?"
+        },
+        {
+          "id": "7c7ff4ad-1373-5d31-8925-eef71cfe699d-u02",
+          "speaker_id": "b",
+          "ja": "はい。ただし、症状が急に変わった場合は予定より早く連絡してください。",
+          "vi": "Đúng. Nhưng nếu triệu chứng thay đổi đột ngột, chị hãy liên hệ sớm hơn lịch."
+        },
+        {
+          "id": "7c7ff4ad-1373-5d31-8925-eef71cfe699d-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。次の診察は水曜日にお願いします。",
+          "vi": "Tôi hiểu. Xin hẹn khám tiếp vào thứ Tư."
+        },
+        {
+          "id": "7c7ff4ad-1373-5d31-8925-eef71cfe699d-u04",
+          "speaker_id": "b",
+          "ja": "受付に予約を確認してもらいましょう。",
+          "vi": "Ta sẽ nhờ quầy kiểm lịch hẹn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7c7ff4ad-1373-5d31-8925-eef71cfe699d-u01": {
+            "kind": "original_extension"
+          },
+          "7c7ff4ad-1373-5d31-8925-eef71cfe699d-u02": {
+            "kind": "original_extension"
+          },
+          "7c7ff4ad-1373-5d31-8925-eef71cfe699d-u03": {
+            "kind": "original_extension"
+          },
+          "7c7ff4ad-1373-5d31-8925-eef71cfe699d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc",
+      "event_id": "E03",
+      "context_vi": "Tái khám sau một tuần, bạn nói đau đầu bớt nhưng vẫn chóng mặt khi đứng; đã có xét nghiệm máu theo chỉ định giả định.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc-u01",
+          "speaker_id": "a",
+          "ja": "頭痛は午後も少し軽くなりました。でも、立ち上がるときのふらつきはまだあります。",
+          "vi": "Đau đầu về chiều đã nhẹ hơn một chút. Nhưng lúc đứng dậy tôi vẫn thấy choáng."
+        },
+        {
+          "id": "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc-u02",
+          "speaker_id": "b",
+          "ja": "記録を見せてください。ふらつく回数に変化はありますか。",
+          "vi": "Cho tôi xem bản ghi nhé. Số lần choáng có thay đổi không?"
+        },
+        {
+          "id": "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc-u03",
+          "speaker_id": "a",
+          "ja": "この一週間は三回です。前回より回数は少ないですが、気になります。",
+          "vi": "Tuần này có ba lần. Ít hơn lần trước nhưng tôi vẫn lo."
+        },
+        {
+          "id": "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。前回の検査結果と合わせて確認します。",
+          "vi": "Tôi hiểu. Tôi sẽ xem cùng kết quả xét nghiệm lần trước."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc-u01": {
+            "kind": "original_extension"
+          },
+          "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc-u02": {
+            "kind": "original_extension"
+          },
+          "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc-u03": {
+            "kind": "original_extension"
+          },
+          "9ed9a8b9-9451-5dfd-b1b9-4126b060e7bc-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "27f38958-f7cb-5054-99c7-f067b6172439",
+      "event_id": "E03",
+      "context_vi": "Trong lần tái khám, bạn nhớ lời dặn trước khác ghi chép; hỏi lại mà không tự đổi cách dùng thuốc.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "27f38958-f7cb-5054-99c7-f067b6172439-u01",
+          "speaker_id": "a",
+          "ja": "前回は毎日記録すると聞いたと思ったのですが、手元の紙には『痛むとき』とあります。どちらでしょうか。",
+          "vi": "Tôi nhớ lần trước bác sĩ dặn ghi hằng ngày, nhưng giấy tôi giữ ghi 'khi đau'. Vậy tôi nên theo cách nào?"
+        },
+        {
+          "id": "27f38958-f7cb-5054-99c7-f067b6172439-u02",
+          "speaker_id": "b",
+          "ja": "見せてください。痛みがない日も分かると比較しやすいので、この一週間は毎日記録してください。",
+          "vi": "Cho tôi xem. Có cả ngày không đau sẽ dễ so hơn, nên tuần này chị ghi hằng ngày."
+        },
+        {
+          "id": "27f38958-f7cb-5054-99c7-f067b6172439-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。痛みがない日も『なし』と書きます。",
+          "vi": "Tôi hiểu. Ngày không đau tôi cũng ghi 'không đau'."
+        },
+        {
+          "id": "27f38958-f7cb-5054-99c7-f067b6172439-u04",
+          "speaker_id": "b",
+          "ja": "はい。薬について疑問があれば、別に確認しましょう。",
+          "vi": "Đúng. Nếu có thắc mắc về thuốc, ta sẽ kiểm riêng."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "27f38958-f7cb-5054-99c7-f067b6172439-u01": {
+            "kind": "original_extension"
+          },
+          "27f38958-f7cb-5054-99c7-f067b6172439-u02": {
+            "kind": "original_extension"
+          },
+          "27f38958-f7cb-5054-99c7-f067b6172439-u03": {
+            "kind": "original_extension"
+          },
+          "27f38958-f7cb-5054-99c7-f067b6172439-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0",
+      "event_id": "E03",
+      "context_vi": "Bạn gọi phòng khám đổi lịch tái khám vì không thể đến, đồng thời báo tình trạng hiện tại để được nối bác sĩ nếu cần.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "clerk",
+          "role_vi": "nhân viên phòng khám",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0-u01",
+          "speaker_id": "a",
+          "ja": "来週水曜日の再診に行けなくなりました。頭痛は少し軽いですが、ふらつきは残っています。予約を変えられますか。",
+          "vi": "Tôi không đến tái khám thứ Tư tuần sau được. Đau đầu hơi nhẹ hơn, nhưng vẫn còn choáng. Tôi đổi lịch được không?"
+        },
+        {
+          "id": "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0-u02",
+          "speaker_id": "clerk",
+          "ja": "予約を確認します。症状については私から判断できないので、必要なら診療側へつなぎます。",
+          "vi": "Tôi sẽ kiểm lịch. Về triệu chứng, tôi không thể tự đánh giá; nếu cần tôi sẽ nối bên khám."
+        },
+        {
+          "id": "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。変更できる日を聞いたうえで、遅くなるなら先生にも相談したいです。",
+          "vi": "Cảm ơn anh. Tôi muốn nghe ngày có thể đổi; nếu phải lùi xa thì tôi muốn hỏi bác sĩ."
+        },
+        {
+          "id": "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0-u04",
+          "speaker_id": "clerk",
+          "ja": "来週金曜日の午前なら空きがあります。今のふらつきについては看護師にも伝えますね。",
+          "vi": "Sáng thứ Sáu tuần sau còn lịch. Tôi cũng sẽ báo điều chị nói về chóng mặt cho điều dưỡng."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0-u01": {
+            "kind": "original_extension"
+          },
+          "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0-u02": {
+            "kind": "original_extension"
+          },
+          "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0-u03": {
+            "kind": "original_extension"
+          },
+          "80fc9d67-ee5a-5ae9-aaea-1ac27a0596d0-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "353dddd3-c129-53cf-8f1e-d4d7414fe772",
+      "event_id": "E03",
+      "context_vi": "Ở lần tái khám, kết quả xét nghiệm giả định chưa về; bạn hỏi mốc liên hệ và cách nhận thông tin.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "353dddd3-c129-53cf-8f1e-d4d7414fe772-u01",
+          "speaker_id": "a",
+          "ja": "前回の検査結果は、もう分かりますか。",
+          "vi": "Kết quả xét nghiệm lần trước đã có chưa ạ?"
+        },
+        {
+          "id": "353dddd3-c129-53cf-8f1e-d4d7414fe772-u02",
+          "speaker_id": "b",
+          "ja": "まだ全部そろっていません。そろったら説明する予定です。",
+          "vi": "Chưa có đủ. Khi đủ, chúng tôi dự định giải thích cho chị."
+        },
+        {
+          "id": "353dddd3-c129-53cf-8f1e-d4d7414fe772-u03",
+          "speaker_id": "a",
+          "ja": "いつごろ確認できますか。結果だけ先に見て、自分で判断するのは避けたいです。",
+          "vi": "Khoảng khi nào tôi hỏi lại được? Tôi muốn được bác sĩ giải thích, chứ không tự xem kết quả rồi kết luận."
+        },
+        {
+          "id": "353dddd3-c129-53cf-8f1e-d4d7414fe772-u04",
+          "speaker_id": "b",
+          "ja": "来週初めに当院へお電話ください。診察が必要かも、そのときにご案内します。",
+          "vi": "Đầu tuần sau chị gọi phòng khám. Khi đó chúng tôi sẽ báo có cần buổi khám để giải thích không."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "353dddd3-c129-53cf-8f1e-d4d7414fe772-u01": {
+            "kind": "original_extension"
+          },
+          "353dddd3-c129-53cf-8f1e-d4d7414fe772-u02": {
+            "kind": "original_extension"
+          },
+          "353dddd3-c129-53cf-8f1e-d4d7414fe772-u03": {
+            "kind": "original_extension"
+          },
+          "353dddd3-c129-53cf-8f1e-d4d7414fe772-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ea113391-beb7-5913-a1bc-21f26e23e136",
+      "event_id": "E03",
+      "context_vi": "Đầu tuần sau, bạn được báo đã có đủ kết quả; hỏi bác sĩ về bước tiếp, không tự diễn giải chỉ số.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ea113391-beb7-5913-a1bc-21f26e23e136-u01",
+          "speaker_id": "a",
+          "ja": "検査結果がそろったと聞いて来ました。今の症状と合わせて、次に何をするか伺いたいです。",
+          "vi": "Tôi nghe nói đã đủ kết quả nên đến. Tôi muốn hỏi, xét cùng triệu chứng hiện nay, bước tiếp là gì."
+        },
+        {
+          "id": "ea113391-beb7-5913-a1bc-21f26e23e136-u02",
+          "speaker_id": "b",
+          "ja": "数値だけで決めず、診察で経過も確認します。ふらつきは続いていますか。",
+          "vi": "Tôi sẽ không quyết chỉ dựa vào con số mà xem cả diễn tiến khi khám. Chị còn choáng không?"
+        },
+        {
+          "id": "ea113391-beb7-5913-a1bc-21f26e23e136-u03",
+          "speaker_id": "a",
+          "ja": "はい、週に二、三回あります。頭痛は前より軽いです。",
+          "vi": "Có, khoảng hai ba lần mỗi tuần. Đau đầu đã nhẹ hơn trước."
+        },
+        {
+          "id": "ea113391-beb7-5913-a1bc-21f26e23e136-u04",
+          "speaker_id": "b",
+          "ja": "専門外来で頭痛とふらつきを評価してもらい、その結果をもとに当院で今後の方針を相談しましょう。",
+          "vi": "Chị sẽ được chuyên khoa đánh giá đau đầu và chóng mặt, rồi ta bàn hướng tiếp theo ở phòng khám này dựa trên kết quả đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "aichi_symptoms"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ea113391-beb7-5913-a1bc-21f26e23e136-u01": {
+            "kind": "original_extension"
+          },
+          "ea113391-beb7-5913-a1bc-21f26e23e136-u02": {
+            "kind": "original_extension"
+          },
+          "ea113391-beb7-5913-a1bc-21f26e23e136-u03": {
+            "kind": "original_extension"
+          },
+          "ea113391-beb7-5913-a1bc-21f26e23e136-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8e4e8093-6294-5e11-ba6a-9342dd0cee24",
+      "event_id": "E04",
+      "context_vi": "Ở quầy lấy lịch sau khi bác sĩ gợi ý chuyên khoa, tên lịch hiện khác điều bạn nghe; bạn xin kiểm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "clerk",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8e4e8093-6294-5e11-ba6a-9342dd0cee24-u01",
+          "speaker_id": "a",
+          "ja": "先生からは専門外来への相談と聞きましたが、予約票には内科の再診とあります。確認していただけますか。",
+          "vi": "Bác sĩ nói sẽ trao đổi với chuyên khoa, nhưng phiếu hẹn ghi tái khám nội khoa. Anh kiểm giúp được không?"
+        },
+        {
+          "id": "8e4e8093-6294-5e11-ba6a-9342dd0cee24-u02",
+          "speaker_id": "clerk",
+          "ja": "失礼しました。内科の再診枠が仮に残っています。専門外来の予約は紹介先で取る必要があります。",
+          "vi": "Xin lỗi chị. Lịch tái khám nội khoa vẫn còn ở trạng thái tạm. Lịch chuyên khoa cần đặt tại nơi được giới thiệu."
+        },
+        {
+          "id": "8e4e8093-6294-5e11-ba6a-9342dd0cee24-u03",
+          "speaker_id": "a",
+          "ja": "お願いします。どちらの診察なのか分かってから予定を調整したいです。",
+          "vi": "Nhờ anh. Tôi muốn biết là khám ở khoa nào rồi mới sắp xếp lịch."
+        },
+        {
+          "id": "8e4e8093-6294-5e11-ba6a-9342dd0cee24-u04",
+          "speaker_id": "clerk",
+          "ja": "まず内科の仮予約をどうするか先生に確認します。紹介先の連絡先はこちらです。",
+          "vi": "Trước hết tôi sẽ hỏi bác sĩ xử lý lịch nội khoa tạm thế nào. Đây là liên hệ của nơi được giới thiệu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8e4e8093-6294-5e11-ba6a-9342dd0cee24-u01": {
+            "kind": "original_extension"
+          },
+          "8e4e8093-6294-5e11-ba6a-9342dd0cee24-u02": {
+            "kind": "original_extension"
+          },
+          "8e4e8093-6294-5e11-ba6a-9342dd0cee24-u03": {
+            "kind": "original_extension"
+          },
+          "8e4e8093-6294-5e11-ba6a-9342dd0cee24-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785",
+      "event_id": "E04",
+      "context_vi": "Quầy chưa thể giải thích kết quả; bạn xin lịch trao đổi với bác sĩ đúng người.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "clerk",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785-u01",
+          "speaker_id": "a",
+          "ja": "結果の意味をここで教えていただけますか。次に何をするかまだ分からなくて。",
+          "vi": "Anh giải thích ý nghĩa kết quả tại quầy được không? Tôi vẫn chưa rõ bước tiếp."
+        },
+        {
+          "id": "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785-u02",
+          "speaker_id": "clerk",
+          "ja": "申し訳ありません。結果の解釈は医師から説明します。診察の時間を確認します。",
+          "vi": "Xin lỗi chị. Việc giải thích kết quả do bác sĩ thực hiện. Tôi sẽ kiểm giờ khám."
+        },
+        {
+          "id": "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785-u03",
+          "speaker_id": "a",
+          "ja": "では、担当の先生に直接質問できる最も早い時間を教えてください。",
+          "vi": "Vậy xin cho giờ sớm nhất tôi có thể hỏi trực tiếp bác sĩ phụ trách."
+        },
+        {
+          "id": "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785-u04",
+          "speaker_id": "clerk",
+          "ja": "担当医に明日の午後三時の空きがあります。結果についてはその診察で質問できます。",
+          "vi": "Bác sĩ phụ trách còn lịch lúc ba giờ chiều mai. Chị có thể hỏi về kết quả trong buổi khám đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785-u01": {
+            "kind": "original_extension"
+          },
+          "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785-u02": {
+            "kind": "original_extension"
+          },
+          "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785-u03": {
+            "kind": "original_extension"
+          },
+          "7f9b3e1a-ca3f-5ba4-887f-1c0a9a635785-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c9700ada-32dc-5fa5-8601-a75bb51dda82",
+      "event_id": "E04",
+      "context_vi": "Được gặp bác sĩ sau khi quầy xác nhận nhầm loại lịch, bạn hỏi vì sao kế hoạch khác trước.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "doctor",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c9700ada-32dc-5fa5-8601-a75bb51dda82-u01",
+          "speaker_id": "a",
+          "ja": "前回は内科で経過を見ると聞きました。今は専門外来への相談が先になったのは、何が変わったからですか。",
+          "vi": "Lần trước tôi nghe là theo dõi tại nội khoa. Vì sao giờ lại ưu tiên trao đổi với chuyên khoa? Có gì đã thay đổi ạ?"
+        },
+        {
+          "id": "c9700ada-32dc-5fa5-8601-a75bb51dda82-u02",
+          "speaker_id": "doctor",
+          "ja": "ふらつきが続いていることと、今回の結果を一緒に見て、専門の意見も聞きたいと考えました。診断が確定したという意味ではありません。",
+          "vi": "Vì cảm giác choáng còn tiếp diễn và kết quả lần này, tôi muốn nghe thêm ý kiến chuyên khoa. Điều đó không có nghĩa đã chốt chẩn đoán."
+        },
+        {
+          "id": "c9700ada-32dc-5fa5-8601-a75bb51dda82-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。専門外来では、どの点を相談する予定ですか。",
+          "vi": "Tôi hiểu. Ở chuyên khoa, dự định trao đổi điểm nào?"
+        },
+        {
+          "id": "c9700ada-32dc-5fa5-8601-a75bb51dda82-u04",
+          "speaker_id": "doctor",
+          "ja": "頭痛とふらつきの経過を中心に相談します。紹介状にもその点を記します。",
+          "vi": "Chủ yếu là diễn tiến đau đầu và choáng. Tôi sẽ ghi điều đó trong giấy giới thiệu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c9700ada-32dc-5fa5-8601-a75bb51dda82-u01": {
+            "kind": "original_extension"
+          },
+          "c9700ada-32dc-5fa5-8601-a75bb51dda82-u02": {
+            "kind": "original_extension"
+          },
+          "c9700ada-32dc-5fa5-8601-a75bb51dda82-u03": {
+            "kind": "original_extension"
+          },
+          "c9700ada-32dc-5fa5-8601-a75bb51dda82-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d97aa26c-91f2-52fa-820a-8392bb0decfb",
+      "event_id": "E04",
+      "context_vi": "Sau khi bác sĩ đề nghị bước mới, bạn chưa quyết lịch; hỏi điều cần làm ngay và điều có thể chờ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "doctor",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d97aa26c-91f2-52fa-820a-8392bb0decfb-u01",
+          "speaker_id": "a",
+          "ja": "家族とも予定を相談したいです。今日決める必要があることと、あとで決められることを分けて教えてください。",
+          "vi": "Tôi muốn bàn lịch với gia đình. Bác sĩ cho biết việc nào cần chốt hôm nay, việc nào có thể chốt sau được không?"
+        },
+        {
+          "id": "d97aa26c-91f2-52fa-820a-8392bb0decfb-u02",
+          "speaker_id": "doctor",
+          "ja": "今日は紹介先と連絡方法を確認しましょう。予約日は後で決められます。体調が変われば、その前に当院へ連絡してください。",
+          "vi": "Hôm nay ta xác nhận nơi giới thiệu và cách liên hệ. Ngày hẹn có thể quyết sau. Nếu sức khỏe thay đổi, chị hãy liên hệ phòng khám trước."
+        },
+        {
+          "id": "d97aa26c-91f2-52fa-820a-8392bb0decfb-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。紹介状を受け取り、予約日は家族と相談してから電話します。",
+          "vi": "Tôi hiểu. Tôi sẽ nhận giấy giới thiệu, rồi bàn với gia đình trước khi gọi chốt lịch."
+        },
+        {
+          "id": "d97aa26c-91f2-52fa-820a-8392bb0decfb-u04",
+          "speaker_id": "doctor",
+          "ja": "はい。連絡先を受付からお渡しします。",
+          "vi": "Được. Quầy sẽ đưa thông tin liên hệ cho chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d97aa26c-91f2-52fa-820a-8392bb0decfb-u01": {
+            "kind": "original_extension"
+          },
+          "d97aa26c-91f2-52fa-820a-8392bb0decfb-u02": {
+            "kind": "original_extension"
+          },
+          "d97aa26c-91f2-52fa-820a-8392bb0decfb-u03": {
+            "kind": "original_extension"
+          },
+          "d97aa26c-91f2-52fa-820a-8392bb0decfb-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "704fda2b-9d10-5a0c-8bbc-e1f813156705",
+      "event_id": "E04",
+      "context_vi": "Sau khi bàn với gia đình, bạn gọi quầy chốt lịch trao đổi chuyên khoa; tình trạng có thay đổi thì báo riêng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "clerk",
+          "role_vi": "nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "704fda2b-9d10-5a0c-8bbc-e1f813156705-u01",
+          "speaker_id": "a",
+          "ja": "先日、専門外来への紹介について先生と相談しました。家族と予定を合わせたので、予約可能な日を教えてください。",
+          "vi": "Hôm trước tôi đã trao đổi với bác sĩ về giới thiệu sang chuyên khoa. Tôi đã thu xếp với gia đình, xin cho biết ngày có thể hẹn."
+        },
+        {
+          "id": "704fda2b-9d10-5a0c-8bbc-e1f813156705-u02",
+          "speaker_id": "clerk",
+          "ja": "紹介状の内容を確認します。来週木曜日の午前に空きがあります。",
+          "vi": "Tôi sẽ kiểm giấy giới thiệu. Sáng thứ Năm tuần sau còn lịch trống."
+        },
+        {
+          "id": "704fda2b-9d10-5a0c-8bbc-e1f813156705-u03",
+          "speaker_id": "a",
+          "ja": "その時間でお願いします。紹介状と症状の記録を持って行けばいいですか。",
+          "vi": "Xin hẹn giờ đó. Tôi mang giấy giới thiệu và bản ghi triệu chứng là được chứ?"
+        },
+        {
+          "id": "704fda2b-9d10-5a0c-8bbc-e1f813156705-u04",
+          "speaker_id": "clerk",
+          "ja": "紹介状、お薬手帳、症状の記録をお持ちください。予約は来週木曜日の午前で確定しました。",
+          "vi": "Chị mang giấy giới thiệu, sổ thuốc và bản ghi triệu chứng. Lịch đã chốt vào sáng thứ Năm tuần sau."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_explain"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "704fda2b-9d10-5a0c-8bbc-e1f813156705-u01": {
+            "kind": "original_extension"
+          },
+          "704fda2b-9d10-5a0c-8bbc-e1f813156705-u02": {
+            "kind": "original_extension"
+          },
+          "704fda2b-9d10-5a0c-8bbc-e1f813156705-u03": {
+            "kind": "original_extension"
+          },
+          "704fda2b-9d10-5a0c-8bbc-e1f813156705-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

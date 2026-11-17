@@ -1,0 +1,1232 @@
+{
+  "stage_uid": "a4150987-8d50-5a62-a836-a8ad9f17704c",
+  "admin_sources": {
+    "pmda_rx": {
+      "kind": "web",
+      "title": "PMDA: 医師から処方されたくすりを使用する場合の注意",
+      "url": "https://www.pmda.go.jp/safety/consultation-for-patients/on-drugs/qa/0001.html",
+      "accessed": "2026-11-17",
+      "use_vi": "Báo mọi thuốc đang dùng, hỏi bác sĩ/dược sĩ khi có triệu chứng lạ, tuân hướng dẫn thuốc theo đơn riêng."
+    },
+    "mhlw_pharmacy": {
+      "kind": "web",
+      "title": "厚生労働省: 薬局業務運営ガイドライン",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00ta7194&dataType=1",
+      "accessed": "2026-11-17",
+      "use_vi": "Khi đơn có điểm nghi vấn, dược sĩ xác nhận với bác sĩ kê đơn trước khi phát thuốc; lời thoại ở E04 thể hiện trạng thái đang chờ."
+    },
+    "b05": {
+      "kind": "book",
+      "book_id": "B05",
+      "title": "すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "path": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700/chapters/04-ch3-hanbaiten.md",
+      "start_line": 420,
+      "end_line": 441,
+      "use_vi": "Cách hỏi triệu chứng và mô tả cảm giác ở quầy thuốc; chỉ dùng cách diễn đạt, không dùng gợi ý OTC làm lời khuyên cho thuốc kê đơn."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "fe6a80b3-24bd-5065-9e18-481460b3a318",
+      "event_id": "E01",
+      "context_vi": "Tại nhà thuốc giả định, bạn đưa đơn mới và nói đang dùng thuốc khác để dược sĩ kiểm trùng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fe6a80b3-24bd-5065-9e18-481460b3a318-u01",
+          "speaker_id": "a",
+          "ja": "今日の処方箋です。前から飲んでいる薬もあるので、一緒に確認していただけますか。",
+          "vi": "Đây là đơn hôm nay. Tôi còn dùng thuốc từ trước, nhờ anh kiểm cùng được không?"
+        },
+        {
+          "id": "fe6a80b3-24bd-5065-9e18-481460b3a318-u02",
+          "speaker_id": "b",
+          "ja": "はい。お薬手帳か、今飲んでいる薬の名前が分かるものはありますか。",
+          "vi": "Được. Chị có sổ thuốc hoặc thông tin tên thuốc đang dùng không?"
+        },
+        {
+          "id": "fe6a80b3-24bd-5065-9e18-481460b3a318-u03",
+          "speaker_id": "a",
+          "ja": "お薬手帳があります。先週も別の病院で薬をもらいました。",
+          "vi": "Tôi có sổ thuốc. Tuần trước tôi cũng nhận thuốc ở bệnh viện khác."
+        },
+        {
+          "id": "fe6a80b3-24bd-5065-9e18-481460b3a318-u04",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。今日の処方と照らしてから、ご説明します。",
+          "vi": "Cảm ơn chị. Tôi sẽ đối chiếu với đơn hôm nay rồi giải thích."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fe6a80b3-24bd-5065-9e18-481460b3a318-u01": {
+            "kind": "original_extension"
+          },
+          "fe6a80b3-24bd-5065-9e18-481460b3a318-u02": {
+            "kind": "original_extension"
+          },
+          "fe6a80b3-24bd-5065-9e18-481460b3a318-u03": {
+            "kind": "original_extension"
+          },
+          "fe6a80b3-24bd-5065-9e18-481460b3a318-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bda24443-6da1-5b18-b618-8f85d327994b",
+      "event_id": "E01",
+      "context_vi": "Dược sĩ hỏi tên thuốc cũ; bạn có vỏ thuốc và sổ, không đoán tên.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bda24443-6da1-5b18-b618-8f85d327994b-u01",
+          "speaker_id": "b",
+          "ja": "前から飲んでいる薬の名前を教えていただけますか。",
+          "vi": "Chị cho biết tên thuốc đang dùng từ trước được không?"
+        },
+        {
+          "id": "bda24443-6da1-5b18-b618-8f85d327994b-u02",
+          "speaker_id": "a",
+          "ja": "発音に自信がないので、こちらの箱とお薬手帳を見てください。毎朝飲んでいます。",
+          "vi": "Tôi không chắc cách đọc tên, nên anh xem hộp và sổ thuốc này giúp. Tôi uống mỗi sáng."
+        },
+        {
+          "id": "bda24443-6da1-5b18-b618-8f85d327994b-u03",
+          "speaker_id": "b",
+          "ja": "確認できました。飲み始めた日は分かりますか。",
+          "vi": "Tôi đã xem được. Chị nhớ bắt đầu uống từ ngày nào không?"
+        },
+        {
+          "id": "bda24443-6da1-5b18-b618-8f85d327994b-u04",
+          "speaker_id": "a",
+          "ja": "先月の十日です。量は箱に書いてあるとおりで、変更していません。",
+          "vi": "Từ ngày 10 tháng trước. Liều dùng vẫn như trên hộp, tôi chưa thay đổi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bda24443-6da1-5b18-b618-8f85d327994b-u01": {
+            "kind": "original_extension"
+          },
+          "bda24443-6da1-5b18-b618-8f85d327994b-u02": {
+            "kind": "original_extension"
+          },
+          "bda24443-6da1-5b18-b618-8f85d327994b-u03": {
+            "kind": "original_extension"
+          },
+          "bda24443-6da1-5b18-b618-8f85d327994b-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "90a60953-6c95-592d-b7ce-8716c4dc46de",
+      "event_id": "E01",
+      "context_vi": "Dược sĩ đọc tên giống thuốc bạn đang dùng, bạn xin đối chiếu đơn thay vì tự khẳng định là cùng loại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "90a60953-6c95-592d-b7ce-8716c4dc46de-u01",
+          "speaker_id": "a",
+          "ja": "今の薬と名前が似て聞こえました。同じ薬かどうか、処方箋と手帳で確認していただけますか。",
+          "vi": "Tên thuốc anh vừa nói nghe giống loại tôi đang dùng. Anh đối chiếu đơn với sổ xem có phải cùng loại không?"
+        },
+        {
+          "id": "90a60953-6c95-592d-b7ce-8716c4dc46de-u02",
+          "speaker_id": "b",
+          "ja": "はい。名前だけでなく成分と量を照合します。箱もお借りしていいですか。",
+          "vi": "Được. Tôi sẽ đối chiếu thành phần và hàm lượng, không chỉ tên. Cho tôi xem hộp nhé?"
+        },
+        {
+          "id": "90a60953-6c95-592d-b7ce-8716c4dc46de-u03",
+          "speaker_id": "a",
+          "ja": "どうぞ。もし違う薬なら、違いも簡単に教えてください。",
+          "vi": "Vâng. Nếu là thuốc khác, xin giải thích ngắn gọn điểm khác."
+        },
+        {
+          "id": "90a60953-6c95-592d-b7ce-8716c4dc46de-u04",
+          "speaker_id": "b",
+          "ja": "確認した結果を、薬をお渡しする前に説明します。",
+          "vi": "Tôi sẽ giải thích kết quả kiểm tra trước khi giao thuốc."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "90a60953-6c95-592d-b7ce-8716c4dc46de-u01": {
+            "kind": "original_extension"
+          },
+          "90a60953-6c95-592d-b7ce-8716c4dc46de-u02": {
+            "kind": "original_extension"
+          },
+          "90a60953-6c95-592d-b7ce-8716c4dc46de-u03": {
+            "kind": "original_extension"
+          },
+          "90a60953-6c95-592d-b7ce-8716c4dc46de-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5836fb01-a397-50f2-8885-7aa7313f3498",
+      "event_id": "E01",
+      "context_vi": "Sau khi đưa sổ thuốc, bạn nhớ còn một thuốc nhưng không có thông tin; nói sẽ xác nhận với bác sĩ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5836fb01-a397-50f2-8885-7aa7313f3498-u01",
+          "speaker_id": "a",
+          "ja": "手帳に載っていない薬も一つ飲んでいますが、名前を思い出せません。",
+          "vi": "Tôi còn uống một thuốc không có trong sổ, nhưng không nhớ tên."
+        },
+        {
+          "id": "5836fb01-a397-50f2-8885-7aa7313f3498-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。色や形だけで薬を決めつけられません。どこで処方されましたか。",
+          "vi": "Tôi hiểu. Không thể xác định thuốc chỉ bằng màu hay hình dạng. Chị được kê ở đâu?"
+        },
+        {
+          "id": "5836fb01-a397-50f2-8885-7aa7313f3498-u03",
+          "speaker_id": "a",
+          "ja": "先月、駅前の医院です。いったん家で箱を確認し、必要なら医院にも聞いて連絡します。",
+          "vi": "Tháng trước ở phòng khám gần ga. Tôi sẽ về xem hộp, cần thì hỏi lại phòng khám rồi báo anh."
+        },
+        {
+          "id": "5836fb01-a397-50f2-8885-7aa7313f3498-u04",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。分かるまでは、飲み合わせの確認が終わったとは言えません。",
+          "vi": "Cảm ơn chị. Trước khi rõ thuốc đó, tôi chưa thể nói đã kiểm xong việc dùng chung."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5836fb01-a397-50f2-8885-7aa7313f3498-u01": {
+            "kind": "original_extension"
+          },
+          "5836fb01-a397-50f2-8885-7aa7313f3498-u02": {
+            "kind": "original_extension"
+          },
+          "5836fb01-a397-50f2-8885-7aa7313f3498-u03": {
+            "kind": "original_extension"
+          },
+          "5836fb01-a397-50f2-8885-7aa7313f3498-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "819e020e-deb4-5d85-9174-bda7a9e34b71",
+      "event_id": "E01",
+      "context_vi": "Nhà thuốc chưa có đủ thuốc trong đơn; bạn hỏi phần nào nhận hôm nay và phần nào chờ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "819e020e-deb4-5d85-9174-bda7a9e34b71-u01",
+          "speaker_id": "a",
+          "ja": "今日の処方箋の薬は、全部今日受け取れますか。",
+          "vi": "Thuốc trong đơn hôm nay tôi nhận đủ ngay được không?"
+        },
+        {
+          "id": "819e020e-deb4-5d85-9174-bda7a9e34b71-u02",
+          "speaker_id": "b",
+          "ja": "一種類だけ在庫が足りません。ほかの二種類は今日お渡しできます。",
+          "vi": "Có một loại thiếu hàng. Hai loại còn lại có thể giao hôm nay."
+        },
+        {
+          "id": "819e020e-deb4-5d85-9174-bda7a9e34b71-u03",
+          "speaker_id": "a",
+          "ja": "足りない一種類はいつ受け取れますか。先に医師へ確認が必要なことはありますか。",
+          "vi": "Loại thiếu tôi nhận khi nào? Có việc gì cần hỏi bác sĩ trước không?"
+        },
+        {
+          "id": "819e020e-deb4-5d85-9174-bda7a9e34b71-u04",
+          "speaker_id": "b",
+          "ja": "入荷見込みは明日の午後です。処方内容に疑問が出た場合は、こちらから医師に確認します。",
+          "vi": "Dự kiến hàng về chiều mai. Nếu có điểm nghi vấn trong đơn, phía chúng tôi sẽ hỏi bác sĩ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "819e020e-deb4-5d85-9174-bda7a9e34b71-u01": {
+            "kind": "original_extension"
+          },
+          "819e020e-deb4-5d85-9174-bda7a9e34b71-u02": {
+            "kind": "original_extension"
+          },
+          "819e020e-deb4-5d85-9174-bda7a9e34b71-u03": {
+            "kind": "original_extension"
+          },
+          "819e020e-deb4-5d85-9174-bda7a9e34b71-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "281fbff4-697b-5905-b15d-13ddd403135a",
+      "event_id": "E02",
+      "context_vi": "Dược sĩ đã đối chiếu đơn giả định ghi một viên sau bữa sáng mỗi ngày; bạn hỏi lại thời điểm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "281fbff4-697b-5905-b15d-13ddd403135a-u01",
+          "speaker_id": "a",
+          "ja": "この薬は『朝食後、一日一回』とあります。朝ごはんを食べ終わってから一回、という意味ですか。",
+          "vi": "Thuốc này ghi 'sau bữa sáng, ngày một lần'. Nghĩa là uống một lần sau khi ăn sáng xong phải không?"
+        },
+        {
+          "id": "281fbff4-697b-5905-b15d-13ddd403135a-u02",
+          "speaker_id": "b",
+          "ja": "はい、この処方箋ではそうです。一回に一錠です。",
+          "vi": "Đúng, theo đơn này là vậy. Mỗi lần một viên."
+        },
+        {
+          "id": "281fbff4-697b-5905-b15d-13ddd403135a-u03",
+          "speaker_id": "a",
+          "ja": "朝の薬がもう一つあります。一緒に飲むかどうかも確認してください。",
+          "vi": "Tôi còn một thuốc uống buổi sáng. Xin kiểm giúp có uống cùng được không."
+        },
+        {
+          "id": "281fbff4-697b-5905-b15d-13ddd403135a-u04",
+          "speaker_id": "b",
+          "ja": "手帳と照合してからお答えします。名前をもう一度見せてください。",
+          "vi": "Tôi sẽ đối chiếu với sổ rồi trả lời. Cho tôi xem lại tên thuốc nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "281fbff4-697b-5905-b15d-13ddd403135a-u01": {
+            "kind": "original_extension"
+          },
+          "281fbff4-697b-5905-b15d-13ddd403135a-u02": {
+            "kind": "original_extension"
+          },
+          "281fbff4-697b-5905-b15d-13ddd403135a-u03": {
+            "kind": "original_extension"
+          },
+          "281fbff4-697b-5905-b15d-13ddd403135a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b6842af6-2235-5353-a37b-308ae89ed09f",
+      "event_id": "E02",
+      "context_vi": "Sau khi nghe cách dùng, bạn nhớ bác sĩ nói khác; xin dược sĩ hỏi bác sĩ trước khi dùng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b6842af6-2235-5353-a37b-308ae89ed09f-u01",
+          "speaker_id": "a",
+          "ja": "先生からは夜と聞いた気がしますが、紙には朝とあります。飲む前に確認していただけますか。",
+          "vi": "Tôi nhớ bác sĩ nói uống buổi tối, nhưng giấy ghi buổi sáng. Anh kiểm trước khi tôi uống được không?"
+        },
+        {
+          "id": "b6842af6-2235-5353-a37b-308ae89ed09f-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。処方した医師に確認します。今は朝か夜か断定しません。",
+          "vi": "Được. Tôi sẽ hỏi bác sĩ kê đơn. Hiện tôi chưa kết luận là sáng hay tối."
+        },
+        {
+          "id": "b6842af6-2235-5353-a37b-308ae89ed09f-u03",
+          "speaker_id": "a",
+          "ja": "確認結果はここで待って聞けますか。",
+          "vi": "Tôi chờ ở đây để nghe kết quả được không?"
+        },
+        {
+          "id": "b6842af6-2235-5353-a37b-308ae89ed09f-u04",
+          "speaker_id": "b",
+          "ja": "はい。医師につながるまで少々お待ちください。時間がかかる場合は先にお伝えします。",
+          "vi": "Được. Xin chị chờ đến khi tôi liên hệ được bác sĩ. Nếu mất thời gian, tôi sẽ báo trước."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b6842af6-2235-5353-a37b-308ae89ed09f-u01": {
+            "kind": "original_extension"
+          },
+          "b6842af6-2235-5353-a37b-308ae89ed09f-u02": {
+            "kind": "original_extension"
+          },
+          "b6842af6-2235-5353-a37b-308ae89ed09f-u03": {
+            "kind": "original_extension"
+          },
+          "b6842af6-2235-5353-a37b-308ae89ed09f-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f8288404-1f6a-53df-a40c-96d98da48687",
+      "event_id": "E02",
+      "context_vi": "Bạn chưa hiểu chữ 'trước bữa' và 'sau bữa' trên hai loại khác nhau; xin ví dụ cụ thể theo đơn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f8288404-1f6a-53df-a40c-96d98da48687-u01",
+          "speaker_id": "a",
+          "ja": "こちらは『食前』、もう一つは『食後』ですね。私の処方では、朝にどう分ければいいですか。",
+          "vi": "Loại này ghi 'trước bữa', loại kia ghi 'sau bữa'. Theo đơn của tôi, buổi sáng tôi chia thế nào?"
+        },
+        {
+          "id": "f8288404-1f6a-53df-a40c-96d98da48687-u02",
+          "speaker_id": "b",
+          "ja": "この処方では、一つ目は朝食の前、二つ目は朝食を終えた後です。説明書の該当箇所を指しますね。",
+          "vi": "Theo đơn này, loại thứ nhất trước bữa sáng, loại thứ hai sau khi ăn sáng xong. Tôi chỉ đúng chỗ trên tờ hướng dẫn nhé."
+        },
+        {
+          "id": "f8288404-1f6a-53df-a40c-96d98da48687-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。食事を取れない日も同じかどうか、別に確認したいです。",
+          "vi": "Tôi hiểu. Tôi muốn hỏi riêng nếu hôm nào không ăn sáng thì có làm như vậy không."
+        },
+        {
+          "id": "f8288404-1f6a-53df-a40c-96d98da48687-u04",
+          "speaker_id": "b",
+          "ja": "その場合は薬ごとに違うので、今それぞれ確認します。",
+          "vi": "Trường hợp đó tùy từng thuốc, tôi sẽ kiểm riêng từng loại ngay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f8288404-1f6a-53df-a40c-96d98da48687-u01": {
+            "kind": "original_extension"
+          },
+          "f8288404-1f6a-53df-a40c-96d98da48687-u02": {
+            "kind": "original_extension"
+          },
+          "f8288404-1f6a-53df-a40c-96d98da48687-u03": {
+            "kind": "original_extension"
+          },
+          "f8288404-1f6a-53df-a40c-96d98da48687-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "925d2e8e-4022-5e0c-a249-50f62159f77c",
+      "event_id": "E02",
+      "context_vi": "Sau khi được giải thích đơn hiện tại, bạn nhắc cách dùng để dược sĩ kiểm lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "925d2e8e-4022-5e0c-a249-50f62159f77c-u01",
+          "speaker_id": "a",
+          "ja": "確認します。一つ目は朝食前、二つ目は朝食後に一錠ずつ、ということですね。",
+          "vi": "Để tôi nhắc lại: loại thứ nhất trước bữa sáng, loại thứ hai sau bữa sáng, mỗi loại một viên, đúng không?"
+        },
+        {
+          "id": "925d2e8e-4022-5e0c-a249-50f62159f77c-u02",
+          "speaker_id": "b",
+          "ja": "はい、今お渡しする処方の記載はそうです。名前も袋に書いてあります。",
+          "vi": "Đúng, đơn đang giao ghi như vậy. Tên thuốc cũng có trên túi."
+        },
+        {
+          "id": "925d2e8e-4022-5e0c-a249-50f62159f77c-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。前の薬と重ならないかの確認結果も聞かせてください。",
+          "vi": "Cảm ơn anh. Xin nói cả kết quả kiểm thuốc cũ có trùng không."
+        },
+        {
+          "id": "925d2e8e-4022-5e0c-a249-50f62159f77c-u04",
+          "speaker_id": "b",
+          "ja": "お薬手帳にある薬は確認済みです。ほかにも飲んでいる薬があれば、名前を教えてください。",
+          "vi": "Thuốc ghi trong sổ tôi đã kiểm. Nếu chị còn uống thuốc khác, xin cho biết tên."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "925d2e8e-4022-5e0c-a249-50f62159f77c-u01": {
+            "kind": "original_extension"
+          },
+          "925d2e8e-4022-5e0c-a249-50f62159f77c-u02": {
+            "kind": "original_extension"
+          },
+          "925d2e8e-4022-5e0c-a249-50f62159f77c-u03": {
+            "kind": "original_extension"
+          },
+          "925d2e8e-4022-5e0c-a249-50f62159f77c-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6aa45f38-fd50-57b1-a679-04a9037972f3",
+      "event_id": "E02",
+      "context_vi": "Về nhà sau khi nhận thuốc, bạn hỏi nhà thuốc ai nhận câu hỏi về cách dùng nếu có thắc mắc.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6aa45f38-fd50-57b1-a679-04a9037972f3-u01",
+          "speaker_id": "a",
+          "ja": "帰ってから飲み方が分からなくなったら、こちらの薬局に電話していいですか。",
+          "vi": "Về nhà nếu tôi không rõ cách uống, tôi gọi nhà thuốc này được không?"
+        },
+        {
+          "id": "6aa45f38-fd50-57b1-a679-04a9037972f3-u02",
+          "speaker_id": "b",
+          "ja": "はい。薬袋にある当店の番号へお電話ください。処方日と薬の名前を教えてください。",
+          "vi": "Được. Chị gọi số của nhà thuốc trên túi thuốc, cho ngày kê đơn và tên thuốc."
+        },
+        {
+          "id": "6aa45f38-fd50-57b1-a679-04a9037972f3-u03",
+          "speaker_id": "a",
+          "ja": "夜に気づいた場合は、翌朝まで待ってよいかも相談できますか。",
+          "vi": "Nếu tôi thắc mắc vào buổi tối, tôi có thể hỏi xem có đợi đến sáng được không?"
+        },
+        {
+          "id": "6aa45f38-fd50-57b1-a679-04a9037972f3-u04",
+          "speaker_id": "b",
+          "ja": "営業時間外の連絡先も袋にあります。急ぎの体調の変化なら、医療機関にも連絡してください。",
+          "vi": "Trên túi có cả liên hệ ngoài giờ. Nếu sức khỏe thay đổi cần xử lý sớm, chị cũng hãy liên hệ cơ sở y tế."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6aa45f38-fd50-57b1-a679-04a9037972f3-u01": {
+            "kind": "original_extension"
+          },
+          "6aa45f38-fd50-57b1-a679-04a9037972f3-u02": {
+            "kind": "original_extension"
+          },
+          "6aa45f38-fd50-57b1-a679-04a9037972f3-u03": {
+            "kind": "original_extension"
+          },
+          "6aa45f38-fd50-57b1-a679-04a9037972f3-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff",
+      "event_id": "E03",
+      "context_vi": "Thuốc dùng dài hạn sắp hết trước lịch tái khám; bạn hỏi dược sĩ đầu mối, không tự xin cấp tiếp không đơn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff-u01",
+          "speaker_id": "a",
+          "ja": "薬があと三日分ですが、次の診察は来週です。どう相談すればいいですか。",
+          "vi": "Thuốc còn ba ngày, nhưng tuần sau tôi mới tái khám. Tôi nên hỏi thế nào?"
+        },
+        {
+          "id": "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff-u02",
+          "speaker_id": "b",
+          "ja": "処方した医院へ、残りの日数と予約日を伝えてください。こちらでは次の処方を決められません。",
+          "vi": "Chị hãy báo phòng khám đã kê thuốc số ngày còn lại và ngày hẹn. Nhà thuốc không quyết định đơn tiếp theo."
+        },
+        {
+          "id": "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff-u03",
+          "speaker_id": "a",
+          "ja": "今日、医院に電話して、診察を早められるか聞きます。",
+          "vi": "Hôm nay tôi sẽ gọi phòng khám hỏi có thể khám sớm hơn không."
+        },
+        {
+          "id": "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff-u04",
+          "speaker_id": "b",
+          "ja": "はい。医院からの案内が分かったら、必要に応じて当店にも知らせてください。",
+          "vi": "Vâng. Khi có hướng dẫn của phòng khám, nếu cần chị hãy báo nhà thuốc."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff-u01": {
+            "kind": "original_extension"
+          },
+          "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff-u02": {
+            "kind": "original_extension"
+          },
+          "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff-u03": {
+            "kind": "original_extension"
+          },
+          "f148e37f-0bc1-5e39-8dc2-1f34c7d9d1ff-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b5f9e83b-e536-52b8-8ee5-003d125eda5d",
+      "event_id": "E03",
+      "context_vi": "Nhà thuốc giả định thiếu thuốc trong đơn tiếp theo; bạn hỏi cách nhận hoặc nơi khác theo chuyên môn.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b5f9e83b-e536-52b8-8ee5-003d125eda5d-u01",
+          "speaker_id": "a",
+          "ja": "必要な薬が今日そろわないなら、いつ入りますか。別の薬局で受け取れるかも相談したいです。",
+          "vi": "Nếu hôm nay không đủ thuốc, khi nào hàng về? Tôi cũng muốn hỏi có thể nhận ở nhà thuốc khác không."
+        },
+        {
+          "id": "b5f9e83b-e536-52b8-8ee5-003d125eda5d-u02",
+          "speaker_id": "b",
+          "ja": "この薬は明日の午後に入荷予定です。別の薬局の在庫は、こちらから確認できます。",
+          "vi": "Loại này dự kiến về chiều mai. Chúng tôi có thể hỏi tồn kho ở nhà thuốc khác."
+        },
+        {
+          "id": "b5f9e83b-e536-52b8-8ee5-003d125eda5d-u03",
+          "speaker_id": "a",
+          "ja": "明日まで待つ場合と、別の薬局へ行く場合で、私が何をすればいいか教えてください。",
+          "vi": "Nếu chờ đến mai hoặc đến nhà thuốc khác, tôi cần làm gì trong mỗi trường hợp?"
+        },
+        {
+          "id": "b5f9e83b-e536-52b8-8ee5-003d125eda5d-u04",
+          "speaker_id": "b",
+          "ja": "まず処方箋の扱いを確認します。今日渡せる分と未交付の分を分けて説明します。",
+          "vi": "Trước hết tôi sẽ kiểm cách xử lý đơn. Tôi sẽ nói rõ phần giao hôm nay và phần chưa giao."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b5f9e83b-e536-52b8-8ee5-003d125eda5d-u01": {
+            "kind": "original_extension"
+          },
+          "b5f9e83b-e536-52b8-8ee5-003d125eda5d-u02": {
+            "kind": "original_extension"
+          },
+          "b5f9e83b-e536-52b8-8ee5-003d125eda5d-u03": {
+            "kind": "original_extension"
+          },
+          "b5f9e83b-e536-52b8-8ee5-003d125eda5d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "188696f0-5661-50c9-9519-b1694d53441a",
+      "event_id": "E03",
+      "context_vi": "Bạn dùng thuốc lâu dài và vừa thấy phát ban; báo dược sĩ để được đánh giá, không tự kết luận tác dụng phụ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "188696f0-5661-50c9-9519-b1694d53441a-u01",
+          "speaker_id": "a",
+          "ja": "昨日から腕に赤い発疹が出ました。薬との関係は分かりませんが、飲んでいる薬を見ていただけますか。",
+          "vi": "Từ hôm qua tay tôi nổi ban đỏ. Tôi không biết có liên quan thuốc không, nhưng anh xem các thuốc đang uống giúp tôi được không?"
+        },
+        {
+          "id": "188696f0-5661-50c9-9519-b1694d53441a-u02",
+          "speaker_id": "b",
+          "ja": "いつから飲んでいる薬か確認します。息苦しさや顔の腫れはありますか。",
+          "vi": "Tôi sẽ kiểm thuốc chị uống từ khi nào. Chị có khó thở hoặc sưng mặt không?"
+        },
+        {
+          "id": "188696f0-5661-50c9-9519-b1694d53441a-u03",
+          "speaker_id": "a",
+          "ja": "今はありません。発疹の写真と、お薬手帳を持ってきました。",
+          "vi": "Hiện không có. Tôi có ảnh ban và sổ thuốc đây."
+        },
+        {
+          "id": "188696f0-5661-50c9-9519-b1694d53441a-u04",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。薬のことを確認し、必要なら処方医にも連絡します。症状が急に変わればすぐ医療機関へ連絡してください。",
+          "vi": "Cảm ơn chị. Tôi sẽ kiểm thuốc và liên hệ bác sĩ kê đơn nếu cần. Nếu triệu chứng thay đổi đột ngột, chị hãy liên hệ cơ sở y tế ngay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx",
+          "b05"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "188696f0-5661-50c9-9519-b1694d53441a-u01": {
+            "kind": "original_extension"
+          },
+          "188696f0-5661-50c9-9519-b1694d53441a-u02": {
+            "kind": "original_extension"
+          },
+          "188696f0-5661-50c9-9519-b1694d53441a-u03": {
+            "kind": "original_extension"
+          },
+          "188696f0-5661-50c9-9519-b1694d53441a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40",
+      "event_id": "E03",
+      "context_vi": "Lịch tái khám đổi khiến thuốc có thể hết trước lần nhận tiếp; bạn hỏi dược sĩ nên báo ai.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u01",
+          "speaker_id": "a",
+          "ja": "再診が一週間延びました。今の薬はその前に終わります。医院と薬局のどちらに先に連絡すればいいですか。",
+          "vi": "Lịch tái khám lùi một tuần. Thuốc hiện tại sẽ hết trước đó. Tôi nên liên hệ phòng khám hay nhà thuốc trước?"
+        },
+        {
+          "id": "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u02",
+          "speaker_id": "b",
+          "ja": "まず処方した医院に残りの日数と新しい予約日を伝えてください。新しい処方の要否は医師に確認します。",
+          "vi": "Trước hết chị báo phòng khám đã kê thuốc số ngày thuốc còn và ngày hẹn mới. Việc có cần đơn mới do bác sĩ quyết."
+        },
+        {
+          "id": "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。医院に電話してから、薬局へ必要な連絡をします。",
+          "vi": "Tôi hiểu. Tôi sẽ gọi phòng khám rồi liên hệ nhà thuốc nếu cần."
+        },
+        {
+          "id": "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u04",
+          "speaker_id": "b",
+          "ja": "はい。今日の相談内容は当店でも記録します。",
+          "vi": "Vâng. Nhà thuốc cũng sẽ ghi lại cuộc trao đổi hôm nay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u01": {
+            "kind": "original_extension"
+          },
+          "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u02": {
+            "kind": "original_extension"
+          },
+          "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u03": {
+            "kind": "original_extension"
+          },
+          "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e9e69b7d-6940-50b4-9420-20a740ef988a",
+      "event_id": "E03",
+      "context_vi": "Sau khi hỏi phòng khám, bạn báo dược sĩ lịch liên hệ mới và xác nhận chưa có đơn tiếp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e9e69b7d-6940-50b4-9420-20a740ef988a-u01",
+          "speaker_id": "a",
+          "ja": "医院に連絡しました。明日の午後、医師から折り返しがあるそうです。今は新しい処方はまだ出ていません。",
+          "vi": "Tôi đã liên hệ phòng khám. Họ nói bác sĩ sẽ gọi lại chiều mai. Hiện chưa có đơn mới."
+        },
+        {
+          "id": "e9e69b7d-6940-50b4-9420-20a740ef988a-u02",
+          "speaker_id": "b",
+          "ja": "分かりました。では、医師の案内を待ってから次の受け取りを相談しましょう。",
+          "vi": "Tôi hiểu. Vậy ta đợi hướng dẫn của bác sĩ rồi bàn lần nhận thuốc tiếp."
+        },
+        {
+          "id": "e9e69b7d-6940-50b4-9420-20a740ef988a-u03",
+          "speaker_id": "a",
+          "ja": "電話が来なければ、明日の夕方に医院へもう一度確認します。",
+          "vi": "Nếu chưa có cuộc gọi, chiều tối mai tôi sẽ hỏi lại phòng khám."
+        },
+        {
+          "id": "e9e69b7d-6940-50b4-9420-20a740ef988a-u04",
+          "speaker_id": "b",
+          "ja": "分かりました。新しい処方箋が出たら、お持ちください。",
+          "vi": "Tôi hiểu. Khi có đơn mới, chị hãy mang đến nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e9e69b7d-6940-50b4-9420-20a740ef988a-u01": {
+            "kind": "original_extension"
+          },
+          "e9e69b7d-6940-50b4-9420-20a740ef988a-u02": {
+            "kind": "original_extension"
+          },
+          "e9e69b7d-6940-50b4-9420-20a740ef988a-u03": {
+            "kind": "original_extension"
+          },
+          "e9e69b7d-6940-50b4-9420-20a740ef988a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "442e9a55-7361-5b48-ab62-b79f5706a0f9",
+      "event_id": "E04",
+      "context_vi": "Sau lần khám mới, đơn ghi thời điểm khác lời bạn nhớ; bạn xin đối chiếu đơn cũ và mới.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "442e9a55-7361-5b48-ab62-b79f5706a0f9-u01",
+          "speaker_id": "a",
+          "ja": "前回は夕食後でしたが、新しい処方箋には朝食後とあります。変更されたのか確認していただけますか。",
+          "vi": "Lần trước tôi uống sau bữa tối, nhưng đơn mới ghi sau bữa sáng. Anh kiểm giúp có phải đã đổi không?"
+        },
+        {
+          "id": "442e9a55-7361-5b48-ab62-b79f5706a0f9-u02",
+          "speaker_id": "b",
+          "ja": "前回の記録と新しい処方を見比べます。変更理由は処方医に確認します。",
+          "vi": "Tôi sẽ so ghi chép lần trước với đơn mới. Lý do đổi tôi sẽ hỏi bác sĩ kê đơn."
+        },
+        {
+          "id": "442e9a55-7361-5b48-ab62-b79f5706a0f9-u03",
+          "speaker_id": "a",
+          "ja": "では、確認が終わるまで受け取りを待ちます。",
+          "vi": "Vậy tôi sẽ đợi đến khi kiểm xong mới nhận thuốc."
+        },
+        {
+          "id": "442e9a55-7361-5b48-ab62-b79f5706a0f9-u04",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。確認結果をお伝えしてからお渡しします。",
+          "vi": "Cảm ơn chị. Tôi sẽ báo kết quả kiểm rồi mới giao thuốc."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx",
+          "mhlw_pharmacy"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "442e9a55-7361-5b48-ab62-b79f5706a0f9-u01": {
+            "kind": "original_extension"
+          },
+          "442e9a55-7361-5b48-ab62-b79f5706a0f9-u02": {
+            "kind": "original_extension"
+          },
+          "442e9a55-7361-5b48-ab62-b79f5706a0f9-u03": {
+            "kind": "original_extension"
+          },
+          "442e9a55-7361-5b48-ab62-b79f5706a0f9-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6",
+      "event_id": "E04",
+      "context_vi": "Dược sĩ đang hỏi bác sĩ về giờ dùng; bạn xin đầu mối và thời điểm hỏi lại nếu không chờ được.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6-u01",
+          "speaker_id": "a",
+          "ja": "医師への確認がまだなら、私はいったん外に出てもいいですか。結果は誰から、いつごろ聞けますか。",
+          "vi": "Nếu anh vẫn chưa hỏi được bác sĩ, tôi ra ngoài một lát được không? Ai sẽ báo kết quả và khoảng khi nào?"
+        },
+        {
+          "id": "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6-u02",
+          "speaker_id": "b",
+          "ja": "私からこの携帯番号に電話します。医院には今問い合わせ中で、返事の見込みを十分以内にお知らせします。",
+          "vi": "Tôi sẽ gọi vào số di động này. Tôi đang hỏi phòng khám và sẽ báo trong vòng mười phút xem khi nào họ trả lời."
+        },
+        {
+          "id": "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。薬を受け取る前に、使い方を聞きに戻ります。",
+          "vi": "Tôi hiểu. Trước khi nhận thuốc, tôi sẽ quay lại nghe cách dùng."
+        },
+        {
+          "id": "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6-u04",
+          "speaker_id": "b",
+          "ja": "はい。お電話がつくようにしておいてください。",
+          "vi": "Vâng. Xin để điện thoại có thể nhận cuộc gọi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx",
+          "mhlw_pharmacy"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6-u01": {
+            "kind": "original_extension"
+          },
+          "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6-u02": {
+            "kind": "original_extension"
+          },
+          "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6-u03": {
+            "kind": "original_extension"
+          },
+          "d5e1d849-7fb2-5b54-aa6a-0d7172d48ba6-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "404eb474-5845-57b3-a1d3-13b1c4cfbb47",
+      "event_id": "E04",
+      "context_vi": "Hôm nay nhà thuốc chỉ giao một phần đơn vì còn thiếu hàng và đang hỏi bác sĩ; bạn xác nhận phần nhận/đang chờ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u01",
+          "speaker_id": "a",
+          "ja": "今日受け取れるのはどれですか。確認中の薬と、在庫がない薬を分けて教えてください。",
+          "vi": "Hôm nay tôi nhận được loại nào? Xin tách thuốc đang chờ bác sĩ xác nhận và thuốc thiếu hàng."
+        },
+        {
+          "id": "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u02",
+          "speaker_id": "b",
+          "ja": "今日お渡しできるのはこの一種類です。用法を確認中の一種類と、入荷待ちの一種類はまだお渡ししません。",
+          "vi": "Hôm nay tôi giao loại này. Một loại còn hỏi cách dùng và một loại chờ hàng thì chưa giao."
+        },
+        {
+          "id": "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。未交付の二種類について、次に誰から連絡がありますか。",
+          "vi": "Tôi hiểu. Về hai loại chưa giao, ai sẽ liên hệ tôi tiếp?"
+        },
+        {
+          "id": "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u04",
+          "speaker_id": "b",
+          "ja": "医師の回答と入荷状況を私から電話します。今日渡した分だけ、袋の説明を今確認しましょう。",
+          "vi": "Tôi sẽ gọi báo câu trả lời của bác sĩ và tình trạng hàng. Giờ ta kiểm hướng dẫn trên túi của loại đã giao hôm nay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx",
+          "mhlw_pharmacy"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u01": {
+            "kind": "original_extension"
+          },
+          "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u02": {
+            "kind": "original_extension"
+          },
+          "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u03": {
+            "kind": "original_extension"
+          },
+          "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "974b564c-02fb-5f3d-bedd-cf92d33c198e",
+      "event_id": "E04",
+      "context_vi": "Sau khi bác sĩ trả lời, bạn quay lại nhà thuốc để xác nhận giờ dùng mới và phần còn chờ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "dược sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "974b564c-02fb-5f3d-bedd-cf92d33c198e-u01",
+          "speaker_id": "a",
+          "ja": "先生からの回答は、新しい処方では朝食後に変更した、という内容でしたか。",
+          "vi": "Bác sĩ trả lời rằng đơn mới đã đổi sang uống sau bữa sáng, đúng không?"
+        },
+        {
+          "id": "974b564c-02fb-5f3d-bedd-cf92d33c198e-u02",
+          "speaker_id": "b",
+          "ja": "はい。今回の処方については朝食後、一日一回です。前回の記録と違う点も説明します。",
+          "vi": "Đúng. Với đơn lần này là sau bữa sáng, ngày một lần. Tôi cũng sẽ giải thích điểm khác với lần trước."
+        },
+        {
+          "id": "974b564c-02fb-5f3d-bedd-cf92d33c198e-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。今日受け取れなかったもう一種類は、入荷後に別に連絡をいただけますか。",
+          "vi": "Tôi hiểu. Còn loại chưa nhận vì thiếu hàng, anh sẽ báo riêng khi về hàng chứ?"
+        },
+        {
+          "id": "974b564c-02fb-5f3d-bedd-cf92d33c198e-u04",
+          "speaker_id": "b",
+          "ja": "はい。入荷したら当店から電話します。今お渡しする薬の名前と量を一緒に確認しましょう。",
+          "vi": "Đúng. Hàng về nhà thuốc sẽ gọi. Ta kiểm tên và lượng thuốc tôi giao bây giờ nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "pmda_rx",
+          "mhlw_pharmacy"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "974b564c-02fb-5f3d-bedd-cf92d33c198e-u01": {
+            "kind": "original_extension"
+          },
+          "974b564c-02fb-5f3d-bedd-cf92d33c198e-u02": {
+            "kind": "original_extension"
+          },
+          "974b564c-02fb-5f3d-bedd-cf92d33c198e-u03": {
+            "kind": "original_extension"
+          },
+          "974b564c-02fb-5f3d-bedd-cf92d33c198e-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

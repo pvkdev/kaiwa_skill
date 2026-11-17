@@ -1,0 +1,1222 @@
+{
+  "stage_uid": "6baf1e4c-71cc-5976-ad7f-89af5f19e9e8",
+  "admin_sources": {
+    "mhlw_periodic": {
+      "kind": "web",
+      "title": "厚生労働省: 一般定期健康診断のしくみ",
+      "url": "https://www.mhlw.go.jp/content/11303000/001509787.pdf",
+      "accessed": "2026-11-17",
+      "use_vi": "Khám định kỳ của doanh nghiệp, thông báo kết quả cho người lao động, hỏi bác sĩ về kết quả và bước tiếp."
+    },
+    "mhlw_healthinfo": {
+      "kind": "web",
+      "title": "厚生労働省: 健康診断やストレスチェックの情報管理は大丈夫？",
+      "url": "https://www.check-roudou.mhlw.go.jp/qa/roudousya/sonota/q17.html",
+      "accessed": "2026-11-17",
+      "use_vi": "Thông tin sức khỏe là nhạy cảm; đối thoại với quản lý chỉ về thời gian vắng, việc cần bàn giao và sắp xếp công việc, không khẳng định công ty không được biết kết quả."
+    },
+    "b10": {
+      "kind": "book",
+      "book_id": "B10",
+      "title": "にほんごで働く！ビジネス日本語30時間",
+      "path": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間/chapters/06-許可をもらう.md",
+      "start_line": 228,
+      "end_line": 237,
+      "use_vi": "Bài nói về khám sức khỏe định kỳ trong công ty; phát triển thành hỏi lịch và xin vắng đi khám, không dùng số liệu cũ về lao động."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "ebf2a721-6e17-509a-a699-ba421af631c8",
+      "event_id": "E01",
+      "context_vi": "Bạn gọi cơ sở khám giả định để hẹn khám sức khỏe định kỳ do công ty sắp xếp; mọi lịch trong cảnh là giả định.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên cơ sở khám",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ebf2a721-6e17-509a-a699-ba421af631c8-u01",
+          "speaker_id": "a",
+          "ja": "会社の定期健康診断を予約したいです。今月、空いている日はありますか。",
+          "vi": "Tôi muốn đặt lịch khám sức khỏe định kỳ của công ty. Tháng này còn ngày nào?"
+        },
+        {
+          "id": "ebf2a721-6e17-509a-a699-ba421af631c8-u02",
+          "speaker_id": "b",
+          "ja": "会社名と対象の健診を確認します。一般の定期健診なら、二十四日の午前が空いています。",
+          "vi": "Tôi kiểm tên công ty và loại khám áp dụng. Nếu là khám định kỳ thông thường thì sáng ngày 24 còn lịch."
+        },
+        {
+          "id": "ebf2a721-6e17-509a-a699-ba421af631c8-u03",
+          "speaker_id": "a",
+          "ja": "会社の案内には『一般定期健診』とあります。二十四日の午前でお願いします。",
+          "vi": "Hướng dẫn công ty ghi 'khám định kỳ thông thường'. Xin hẹn sáng ngày 24."
+        },
+        {
+          "id": "ebf2a721-6e17-509a-a699-ba421af631c8-u04",
+          "speaker_id": "b",
+          "ja": "承りました。受付は九時です。詳しい案内を登録先に送ります。",
+          "vi": "Tôi nhận lịch. Giờ tiếp nhận là 9 giờ. Tôi sẽ gửi hướng dẫn chi tiết đến địa chỉ đã đăng ký."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic",
+          "b10"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ebf2a721-6e17-509a-a699-ba421af631c8-u01": {
+            "kind": "original_extension"
+          },
+          "ebf2a721-6e17-509a-a699-ba421af631c8-u02": {
+            "kind": "original_extension"
+          },
+          "ebf2a721-6e17-509a-a699-ba421af631c8-u03": {
+            "kind": "original_extension"
+          },
+          "ebf2a721-6e17-509a-a699-ba421af631c8-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "dc95947c-d288-58e7-b4b8-f9e849113f6a",
+      "event_id": "E01",
+      "context_vi": "Sau khi nhận hướng dẫn từ cơ sở khám giả định, bạn chưa rõ chỉ dẫn trước buổi khám; hỏi lại chính cơ sở.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên cơ sở khám",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "dc95947c-d288-58e7-b4b8-f9e849113f6a-u01",
+          "speaker_id": "a",
+          "ja": "案内の『飲食については検査ごとの指示に従う』という部分が分かりません。私の予約ではどうすればいいですか。",
+          "vi": "Tôi chưa rõ chỗ hướng dẫn 'ăn uống theo chỉ dẫn từng xét nghiệm'. Với lịch của tôi thì cần làm gì?"
+        },
+        {
+          "id": "dc95947c-d288-58e7-b4b8-f9e849113f6a-u02",
+          "speaker_id": "b",
+          "ja": "ご予約の項目を確認します。今回の案内では、朝食は取らず、水については同封の指示を確認してください。",
+          "vi": "Tôi kiểm các mục đã hẹn. Hướng dẫn của lịch này ghi không ăn sáng; về nước uống, chị xem chỉ dẫn đi kèm."
+        },
+        {
+          "id": "dc95947c-d288-58e7-b4b8-f9e849113f6a-u03",
+          "speaker_id": "a",
+          "ja": "同封の紙を見ながら確認します。いつもの薬はどうすればいいでしょう。",
+          "vi": "Tôi sẽ xem giấy kèm theo. Còn thuốc thường uống thì sao?"
+        },
+        {
+          "id": "dc95947c-d288-58e7-b4b8-f9e849113f6a-u04",
+          "speaker_id": "b",
+          "ja": "薬は種類によって異なるので、自己判断で止めず、飲んでいる薬を医療担当者に伝えてください。",
+          "vi": "Việc đó tùy loại thuốc, chị đừng tự ngừng; hãy báo thuốc đang dùng cho nhân viên y tế."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic",
+          "b10"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "dc95947c-d288-58e7-b4b8-f9e849113f6a-u01": {
+            "kind": "original_extension"
+          },
+          "dc95947c-d288-58e7-b4b8-f9e849113f6a-u02": {
+            "kind": "original_extension"
+          },
+          "dc95947c-d288-58e7-b4b8-f9e849113f6a-u03": {
+            "kind": "original_extension"
+          },
+          "dc95947c-d288-58e7-b4b8-f9e849113f6a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2202244e-8150-5b94-919c-7ebf4091a230",
+      "event_id": "E01",
+      "context_vi": "Bạn không thể đến lịch sáng 24; hỏi ngày khác và chốt lịch mới với cơ sở giả định.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên cơ sở khám",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2202244e-8150-5b94-919c-7ebf4091a230-u01",
+          "speaker_id": "a",
+          "ja": "二十四日の九時には行けなくなりました。午後か別の日に変更できますか。",
+          "vi": "Tôi không đến được 9 giờ ngày 24. Có thể đổi sang buổi chiều hoặc ngày khác không?"
+        },
+        {
+          "id": "2202244e-8150-5b94-919c-7ebf4091a230-u02",
+          "speaker_id": "b",
+          "ja": "この健診は午後枠がありません。二十六日の午前九時なら空いています。",
+          "vi": "Loại khám này không có ca chiều. Sáng ngày 26 lúc 9 giờ còn lịch."
+        },
+        {
+          "id": "2202244e-8150-5b94-919c-7ebf4091a230-u03",
+          "speaker_id": "a",
+          "ja": "では二十六日に変更してください。前の予約は取り消しになりますね。",
+          "vi": "Vậy xin đổi sang ngày 26. Lịch cũ sẽ được hủy đúng không?"
+        },
+        {
+          "id": "2202244e-8150-5b94-919c-7ebf4091a230-u04",
+          "speaker_id": "b",
+          "ja": "はい。二十四日を取り消し、二十六日九時で確定しました。",
+          "vi": "Đúng. Lịch ngày 24 đã hủy; lịch mới là 9 giờ ngày 26."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic",
+          "b10"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2202244e-8150-5b94-919c-7ebf4091a230-u01": {
+            "kind": "original_extension"
+          },
+          "2202244e-8150-5b94-919c-7ebf4091a230-u02": {
+            "kind": "original_extension"
+          },
+          "2202244e-8150-5b94-919c-7ebf4091a230-u03": {
+            "kind": "original_extension"
+          },
+          "2202244e-8150-5b94-919c-7ebf4091a230-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "dc2563f2-13f9-5865-b0db-9ab2830ebb7d",
+      "event_id": "E01",
+      "context_vi": "Thông báo công ty ghi ngày khác với cơ sở khám giả định; bạn xin đối chiếu theo hồ sơ đang có.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên cơ sở khám",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "dc2563f2-13f9-5865-b0db-9ab2830ebb7d-u01",
+          "speaker_id": "a",
+          "ja": "会社の紙には二十四日、こちらの案内には二十六日とあります。今の予約日はどちらですか。",
+          "vi": "Giấy công ty ghi ngày 24, còn hướng dẫn của cơ sở ghi ngày 26. Lịch hiện tại là ngày nào?"
+        },
+        {
+          "id": "dc2563f2-13f9-5865-b0db-9ab2830ebb7d-u02",
+          "speaker_id": "b",
+          "ja": "こちらの予約記録では二十六日九時です。会社の紙は変更前のものかもしれません。",
+          "vi": "Hồ sơ hẹn ở đây ghi 9 giờ ngày 26. Có thể giấy công ty là bản trước khi đổi."
+        },
+        {
+          "id": "dc2563f2-13f9-5865-b0db-9ab2830ebb7d-u03",
+          "speaker_id": "a",
+          "ja": "では、二十六日の予約を確認できるものを送っていただけますか。会社にも伝えます。",
+          "vi": "Vậy anh gửi giúp xác nhận lịch ngày 26 được không? Tôi sẽ báo công ty."
+        },
+        {
+          "id": "dc2563f2-13f9-5865-b0db-9ab2830ebb7d-u04",
+          "speaker_id": "b",
+          "ja": "はい。変更済みの案内を登録先へ送ります。",
+          "vi": "Được. Tôi sẽ gửi hướng dẫn đã cập nhật tới địa chỉ đăng ký."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic",
+          "b10"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "dc2563f2-13f9-5865-b0db-9ab2830ebb7d-u01": {
+            "kind": "original_extension"
+          },
+          "dc2563f2-13f9-5865-b0db-9ab2830ebb7d-u02": {
+            "kind": "original_extension"
+          },
+          "dc2563f2-13f9-5865-b0db-9ab2830ebb7d-u03": {
+            "kind": "original_extension"
+          },
+          "dc2563f2-13f9-5865-b0db-9ab2830ebb7d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b0c9158b-d242-5430-adb3-2efd6aad9187",
+      "event_id": "E01",
+      "context_vi": "Sau khi đặt lịch, bạn chốt người liên hệ khi cơ sở khám đổi lịch; số liên hệ giả định đã được đăng ký.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên cơ sở khám",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b0c9158b-d242-5430-adb3-2efd6aad9187-u01",
+          "speaker_id": "a",
+          "ja": "もし健診の時間が変わったら、どこから連絡が来ますか。私の連絡先も確認したいです。",
+          "vi": "Nếu giờ khám thay đổi, ai sẽ liên hệ tôi? Tôi cũng muốn kiểm thông tin liên lạc."
+        },
+        {
+          "id": "b0c9158b-d242-5430-adb3-2efd6aad9187-u02",
+          "speaker_id": "b",
+          "ja": "当センターから登録済みの携帯番号に電話します。下四桁は五八二一です。",
+          "vi": "Trung tâm sẽ gọi số di động đã đăng ký, bốn số cuối là 5821."
+        },
+        {
+          "id": "b0c9158b-d242-5430-adb3-2efd6aad9187-u03",
+          "speaker_id": "a",
+          "ja": "その番号で合っています。私から変更を相談するときは、こちらの予約窓口ですね。",
+          "vi": "Đúng số đó. Khi tôi cần đổi lịch, tôi gọi lại quầy đặt hẹn này phải không?"
+        },
+        {
+          "id": "b0c9158b-d242-5430-adb3-2efd6aad9187-u04",
+          "speaker_id": "b",
+          "ja": "はい。予約日とお名前をお伝えください。",
+          "vi": "Đúng. Xin cho ngày hẹn và tên của chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic",
+          "b10"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b0c9158b-d242-5430-adb3-2efd6aad9187-u01": {
+            "kind": "original_extension"
+          },
+          "b0c9158b-d242-5430-adb3-2efd6aad9187-u02": {
+            "kind": "original_extension"
+          },
+          "b0c9158b-d242-5430-adb3-2efd6aad9187-u03": {
+            "kind": "original_extension"
+          },
+          "b0c9158b-d242-5430-adb3-2efd6aad9187-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "533c0572-6327-5aa6-82bb-36ee425b1190",
+      "event_id": "E02",
+      "context_vi": "Đến cơ sở khám giả định, bạn báo tên/lịch và hỏi quầy đầu tiên.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "533c0572-6327-5aa6-82bb-36ee425b1190-u01",
+          "speaker_id": "a",
+          "ja": "九時に健康診断を予約したグエンです。最初にどちらへ行けばいいですか。",
+          "vi": "Tôi là Nguyễn, có lịch khám sức khỏe lúc 9 giờ. Tôi đến quầy nào trước?"
+        },
+        {
+          "id": "533c0572-6327-5aa6-82bb-36ee425b1190-u02",
+          "speaker_id": "b",
+          "ja": "予約を確認しました。まずこちらで受付を済ませ、それから採血の場所をご案内します。",
+          "vi": "Tôi đã thấy lịch. Chị làm tiếp nhận ở đây trước, rồi tôi sẽ chỉ nơi lấy máu."
+        },
+        {
+          "id": "533c0572-6327-5aa6-82bb-36ee425b1190-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。手元の案内を見せますので、今日の項目も確認してください。",
+          "vi": "Tôi hiểu. Tôi đưa tờ hướng dẫn để anh kiểm các mục hôm nay."
+        },
+        {
+          "id": "533c0572-6327-5aa6-82bb-36ee425b1190-u04",
+          "speaker_id": "b",
+          "ja": "はい。予約の項目と照合します。",
+          "vi": "Vâng. Tôi sẽ đối chiếu với lịch."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "533c0572-6327-5aa6-82bb-36ee425b1190-u01": {
+            "kind": "original_extension"
+          },
+          "533c0572-6327-5aa6-82bb-36ee425b1190-u02": {
+            "kind": "original_extension"
+          },
+          "533c0572-6327-5aa6-82bb-36ee425b1190-u03": {
+            "kind": "original_extension"
+          },
+          "533c0572-6327-5aa6-82bb-36ee425b1190-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3c02f07a-6f08-5ec6-999a-dee43dfca000",
+      "event_id": "E02",
+      "context_vi": "Sau tiếp nhận, bạn được chỉ sang quầy khác; hỏi đường và thứ tự các mục.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên y tế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3c02f07a-6f08-5ec6-999a-dee43dfca000-u01",
+          "speaker_id": "a",
+          "ja": "採血が終わりました。次はどこへ行けばいいですか。",
+          "vi": "Tôi đã lấy máu xong. Tiếp theo tôi đến đâu?"
+        },
+        {
+          "id": "3c02f07a-6f08-5ec6-999a-dee43dfca000-u02",
+          "speaker_id": "b",
+          "ja": "次は廊下の奥の計測室です。番号札を見せてください。",
+          "vi": "Tiếp theo là phòng đo ở cuối hành lang. Xin đưa phiếu số."
+        },
+        {
+          "id": "3c02f07a-6f08-5ec6-999a-dee43dfca000-u03",
+          "speaker_id": "a",
+          "ja": "その後に診察という順番ですか。",
+          "vi": "Sau đó mới đến buổi bác sĩ khám, đúng không?"
+        },
+        {
+          "id": "3c02f07a-6f08-5ec6-999a-dee43dfca000-u04",
+          "speaker_id": "b",
+          "ja": "はい。計測が終わったら、診察室前の待合へ進んでください。",
+          "vi": "Đúng. Khi đo xong, chị qua khu chờ trước phòng bác sĩ."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3c02f07a-6f08-5ec6-999a-dee43dfca000-u01": {
+            "kind": "original_extension"
+          },
+          "3c02f07a-6f08-5ec6-999a-dee43dfca000-u02": {
+            "kind": "original_extension"
+          },
+          "3c02f07a-6f08-5ec6-999a-dee43dfca000-u03": {
+            "kind": "original_extension"
+          },
+          "3c02f07a-6f08-5ec6-999a-dee43dfca000-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8a22b771-14a5-5da7-b3a4-7b47585cbd90",
+      "event_id": "E02",
+      "context_vi": "Tại tiếp nhận, bạn có điều kiện sức khỏe riêng muốn báo cho nhân viên chuyên môn trước một hạng mục khám; xin nói riêng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên tiếp nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u01",
+          "speaker_id": "a",
+          "ja": "検査前に、今飲んでいる薬と体調について医療担当の方に個別に話せますか。",
+          "vi": "Trước khi làm xét nghiệm, tôi trao đổi riêng với nhân viên y tế về thuốc đang uống và tình trạng sức khỏe được không?"
+        },
+        {
+          "id": "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u02",
+          "speaker_id": "b",
+          "ja": "はい。ここでは詳しく伺わず、看護師と話せる場所へご案内します。",
+          "vi": "Được. Tôi sẽ không hỏi chi tiết ở quầy; tôi đưa chị đến nơi có thể trao đổi với điều dưỡng."
+        },
+        {
+          "id": "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。検査を始める前に伝えたいです。",
+          "vi": "Cảm ơn. Tôi muốn báo trước khi bắt đầu xét nghiệm."
+        },
+        {
+          "id": "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u04",
+          "speaker_id": "b",
+          "ja": "順番を調整して、先に看護師へおつなぎします。",
+          "vi": "Tôi sẽ điều chỉnh thứ tự để chị gặp điều dưỡng trước."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u01": {
+            "kind": "original_extension"
+          },
+          "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u02": {
+            "kind": "original_extension"
+          },
+          "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u03": {
+            "kind": "original_extension"
+          },
+          "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0f8ac1a7-4da0-5616-a435-96aaafeac10f",
+      "event_id": "E02",
+      "context_vi": "Tại khu chờ sau tiếp nhận, người ta gọi số khác; bạn nghi mình bị gọi nhầm và xác nhận.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên y tế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0f8ac1a7-4da0-5616-a435-96aaafeac10f-u01",
+          "speaker_id": "a",
+          "ja": "今『三二番』と聞こえましたが、私の札は『二三番』です。私の番でしょうか。",
+          "vi": "Tôi nghe gọi số 32, nhưng phiếu của tôi là số 23. Đã đến lượt tôi chưa?"
+        },
+        {
+          "id": "0f8ac1a7-4da0-5616-a435-96aaafeac10f-u02",
+          "speaker_id": "b",
+          "ja": "失礼しました。今は三二番の方です。二三番の方は次にお呼びします。",
+          "vi": "Xin lỗi chị. Hiện là số 32. Số 23 sẽ được gọi tiếp theo."
+        },
+        {
+          "id": "0f8ac1a7-4da0-5616-a435-96aaafeac10f-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。ここで待ちます。名前も確認してから入ります。",
+          "vi": "Tôi hiểu. Tôi đợi ở đây. Khi được gọi tôi sẽ xác nhận cả tên rồi vào."
+        },
+        {
+          "id": "0f8ac1a7-4da0-5616-a435-96aaafeac10f-u04",
+          "speaker_id": "b",
+          "ja": "はい、お呼びするときに番号とお名前をお伝えします。",
+          "vi": "Vâng, lúc gọi tôi sẽ nêu số và tên."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0f8ac1a7-4da0-5616-a435-96aaafeac10f-u01": {
+            "kind": "original_extension"
+          },
+          "0f8ac1a7-4da0-5616-a435-96aaafeac10f-u02": {
+            "kind": "original_extension"
+          },
+          "0f8ac1a7-4da0-5616-a435-96aaafeac10f-u03": {
+            "kind": "original_extension"
+          },
+          "0f8ac1a7-4da0-5616-a435-96aaafeac10f-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "17d63cce-0035-56b8-bb37-8ee76b8eddeb",
+      "event_id": "E02",
+      "context_vi": "Một hạng mục khám giả định bị hoãn sau khi bạn đã qua phòng đo; bạn hỏi lúc nào quay lại và có cần làm lại mục trước.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "nhân viên y tế",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "17d63cce-0035-56b8-bb37-8ee76b8eddeb-u01",
+          "speaker_id": "a",
+          "ja": "診察だけ午後に変更になったと聞きました。何時に戻ればいいですか。計測はやり直しですか。",
+          "vi": "Tôi nghe chỉ buổi bác sĩ khám chuyển sang chiều. Tôi quay lại lúc mấy giờ? Phần đo có cần làm lại không?"
+        },
+        {
+          "id": "17d63cce-0035-56b8-bb37-8ee76b8eddeb-u02",
+          "speaker_id": "b",
+          "ja": "今日の診察は午後二時です。今朝の計測は記録済みなので、やり直しは不要です。",
+          "vi": "Buổi bác sĩ khám hôm nay là 2 giờ chiều. Phần đo sáng nay đã lưu, không cần làm lại."
+        },
+        {
+          "id": "17d63cce-0035-56b8-bb37-8ee76b8eddeb-u03",
+          "speaker_id": "a",
+          "ja": "では、一時に戻って受付に声をかければいいですか。",
+          "vi": "Vậy 1 giờ tôi quay lại báo quầy tiếp nhận được không?"
+        },
+        {
+          "id": "17d63cce-0035-56b8-bb37-8ee76b8eddeb-u04",
+          "speaker_id": "b",
+          "ja": "はい。一時以降にこの番号札を見せてください。",
+          "vi": "Đúng. Từ 1 giờ trở đi, chị đưa phiếu số này."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "17d63cce-0035-56b8-bb37-8ee76b8eddeb-u01": {
+            "kind": "original_extension"
+          },
+          "17d63cce-0035-56b8-bb37-8ee76b8eddeb-u02": {
+            "kind": "original_extension"
+          },
+          "17d63cce-0035-56b8-bb37-8ee76b8eddeb-u03": {
+            "kind": "original_extension"
+          },
+          "17d63cce-0035-56b8-bb37-8ee76b8eddeb-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8c4fe7b5-f271-53e2-be91-2470cdcd527a",
+      "event_id": "E03",
+      "context_vi": "Sau khi nhận kết quả khám định kỳ giả định, bạn hỏi bác sĩ về một mục mình không hiểu, không tự diễn giải bệnh.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "doctor",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u01",
+          "speaker_id": "a",
+          "ja": "結果表の『要相談』とは、すぐ病気と決まったという意味ですか。",
+          "vi": "Trên phiếu kết quả ghi 'cần trao đổi'. Có nghĩa là đã xác định tôi mắc bệnh ngay sao?"
+        },
+        {
+          "id": "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u02",
+          "speaker_id": "doctor",
+          "ja": "いいえ、この表示だけで病名は決まりません。どの項目かを見て、必要な確認を一緒に考えます。",
+          "vi": "Không. Chỉ dòng đó chưa xác định bệnh. Ta xem mục nào rồi bàn việc cần kiểm tiếp."
+        },
+        {
+          "id": "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u03",
+          "speaker_id": "a",
+          "ja": "この血液検査の欄です。数値より、次に何をすべきかを知りたいです。",
+          "vi": "Là mục xét nghiệm máu này. Tôi muốn biết bước cần làm tiếp hơn là tự đọc con số."
+        },
+        {
+          "id": "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u04",
+          "speaker_id": "doctor",
+          "ja": "分かりました。前回の結果と今の体調を確認してから、再検査が必要か説明します。",
+          "vi": "Tôi hiểu. Tôi sẽ so với kết quả trước và tình trạng hiện nay rồi giải thích có cần xét nghiệm lại không."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u01": {
+            "kind": "original_extension"
+          },
+          "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u02": {
+            "kind": "original_extension"
+          },
+          "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u03": {
+            "kind": "original_extension"
+          },
+          "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c1251c64-652f-580e-9e74-eb12b81944dc",
+      "event_id": "E03",
+      "context_vi": "Sau khi xem kết quả, bác sĩ đề nghị cuộc trao đổi thêm; bạn hỏi lịch, mục đích và giấy cần mang.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "doctor",
+          "role_vi": "bác sĩ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c1251c64-652f-580e-9e74-eb12b81944dc-u01",
+          "speaker_id": "a",
+          "ja": "結果について、もう一度相談したいです。次の診察では何を確認しますか。",
+          "vi": "Tôi muốn trao đổi lại về kết quả. Lần khám tới ta sẽ kiểm điều gì?"
+        },
+        {
+          "id": "c1251c64-652f-580e-9e74-eb12b81944dc-u02",
+          "speaker_id": "doctor",
+          "ja": "前回の結果との違いと、今の体調を確認します。来週火曜日の午後に予約できます。",
+          "vi": "Ta sẽ xem khác biệt với kết quả trước và tình trạng hiện nay. Chiều thứ Ba tuần sau có lịch."
+        },
+        {
+          "id": "c1251c64-652f-580e-9e74-eb12b81944dc-u03",
+          "speaker_id": "a",
+          "ja": "その時間でお願いします。結果表を持って行けばいいですか。",
+          "vi": "Xin hẹn giờ đó. Tôi mang phiếu kết quả đến là được chứ?"
+        },
+        {
+          "id": "c1251c64-652f-580e-9e74-eb12b81944dc-u04",
+          "speaker_id": "doctor",
+          "ja": "はい。以前の結果が手元にあれば、それもお持ちください。",
+          "vi": "Đúng. Nếu còn phiếu kết quả cũ, chị mang theo nữa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c1251c64-652f-580e-9e74-eb12b81944dc-u01": {
+            "kind": "original_extension"
+          },
+          "c1251c64-652f-580e-9e74-eb12b81944dc-u02": {
+            "kind": "original_extension"
+          },
+          "c1251c64-652f-580e-9e74-eb12b81944dc-u03": {
+            "kind": "original_extension"
+          },
+          "c1251c64-652f-580e-9e74-eb12b81944dc-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "139bfd29-b258-5162-ab54-8709a1a68821",
+      "event_id": "E03",
+      "context_vi": "Bạn cần hẹn trao đổi thêm về kết quả khám định kỳ nhưng chưa chốt ngày; báo quản lý thời gian có thể vắng và cách bàn giao.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "manager",
+          "role_vi": "quản lý",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "139bfd29-b258-5162-ab54-8709a1a68821-u01",
+          "speaker_id": "a",
+          "ja": "健診の結果について医師と話す予約を取る予定です。日付はまだ決まっていませんが、決まったら半日ほど外したいです。",
+          "vi": "Tôi định đặt lịch hỏi bác sĩ về kết quả khám. Ngày chưa chốt, nhưng khi có lịch tôi xin vắng khoảng nửa ngày."
+        },
+        {
+          "id": "139bfd29-b258-5162-ab54-8709a1a68821-u02",
+          "speaker_id": "manager",
+          "ja": "分かりました。日付が決まったら知らせてください。担当の作業はどうしますか。",
+          "vi": "Được. Khi chốt ngày, chị báo tôi. Công việc chị phụ trách sẽ xử lý thế nào?"
+        },
+        {
+          "id": "139bfd29-b258-5162-ab54-8709a1a68821-u03",
+          "speaker_id": "a",
+          "ja": "午前中に集計を終え、午後の問い合わせは森さんにお願いできるか確認します。",
+          "vi": "Tôi sẽ làm xong phần tổng hợp trong buổi sáng, rồi hỏi anh Mori có nhận giúp các cuộc hỏi chiều không."
+        },
+        {
+          "id": "139bfd29-b258-5162-ab54-8709a1a68821-u04",
+          "speaker_id": "manager",
+          "ja": "了解です。森さんが引き受けられるか分かってから、予定を調整しましょう。",
+          "vi": "Được. Khi biết anh Mori có nhận được không, ta sẽ điều chỉnh lịch."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_healthinfo"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "139bfd29-b258-5162-ab54-8709a1a68821-u01": {
+            "kind": "original_extension"
+          },
+          "139bfd29-b258-5162-ab54-8709a1a68821-u02": {
+            "kind": "original_extension"
+          },
+          "139bfd29-b258-5162-ab54-8709a1a68821-u03": {
+            "kind": "original_extension"
+          },
+          "139bfd29-b258-5162-ab54-8709a1a68821-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bf3c41a4-b025-584f-ab28-f3d8761ec935",
+      "event_id": "E03",
+      "context_vi": "Sau khi báo quản lý, kết quả đầy đủ của cơ sở khám vẫn chưa tới nên bạn chưa thể chốt ngày khám thêm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "manager",
+          "role_vi": "quản lý",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bf3c41a4-b025-584f-ab28-f3d8761ec935-u01",
+          "speaker_id": "a",
+          "ja": "追加の結果がまだ届いていないため、次の受診日は決まっていません。勤務予定が変わる可能性があります。",
+          "vi": "Kết quả bổ sung vẫn chưa đến nên tôi chưa chốt được ngày khám tiếp. Lịch làm có thể cần đổi."
+        },
+        {
+          "id": "bf3c41a4-b025-584f-ab28-f3d8761ec935-u02",
+          "speaker_id": "manager",
+          "ja": "分かりました。いつごろ分かりそうですか。",
+          "vi": "Tôi hiểu. Khoảng khi nào chị biết?"
+        },
+        {
+          "id": "bf3c41a4-b025-584f-ab28-f3d8761ec935-u03",
+          "speaker_id": "a",
+          "ja": "健診センターに金曜日に確認します。予約が決まったら、その日のうちに必要な時間だけ連絡します。",
+          "vi": "Tôi sẽ hỏi trung tâm khám vào thứ Sáu. Khi chốt lịch, tôi báo ngay trong ngày số giờ cần vắng."
+        },
+        {
+          "id": "bf3c41a4-b025-584f-ab28-f3d8761ec935-u04",
+          "speaker_id": "manager",
+          "ja": "了解です。今はシフトを変えずに、金曜日の連絡を待ちます。",
+          "vi": "Được. Hiện tôi giữ nguyên ca, chờ tin chị vào thứ Sáu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_healthinfo"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bf3c41a4-b025-584f-ab28-f3d8761ec935-u01": {
+            "kind": "original_extension"
+          },
+          "bf3c41a4-b025-584f-ab28-f3d8761ec935-u02": {
+            "kind": "original_extension"
+          },
+          "bf3c41a4-b025-584f-ab28-f3d8761ec935-u03": {
+            "kind": "original_extension"
+          },
+          "bf3c41a4-b025-584f-ab28-f3d8761ec935-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c",
+      "event_id": "E03",
+      "context_vi": "Sau khi bác sĩ xác nhận lịch trao đổi, bạn báo quản lý ngày và khoảng giờ vắng, đồng thời thu xếp người bàn giao.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "manager",
+          "role_vi": "quản lý",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u01",
+          "speaker_id": "a",
+          "ja": "医師との相談が来週火曜日の午後二時に決まりました。午後一時から四時まで外したいです。",
+          "vi": "Lịch trao đổi với bác sĩ đã chốt lúc 2 giờ chiều thứ Ba tuần sau. Tôi xin vắng từ 1 đến 4 giờ chiều."
+        },
+        {
+          "id": "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u02",
+          "speaker_id": "manager",
+          "ja": "分かりました。その時間に必要な業務の引き継ぎはどうしますか。",
+          "vi": "Được. Công việc trong khung đó chị bàn giao thế nào?"
+        },
+        {
+          "id": "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u03",
+          "speaker_id": "a",
+          "ja": "午前中に集計を終えて、午後の問い合わせは森さんにお願いできるか今日確認します。",
+          "vi": "Tôi sẽ hoàn tất phần tổng hợp trong buổi sáng, và hôm nay hỏi anh Mori có nhận các cuộc hỏi chiều được không."
+        },
+        {
+          "id": "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u04",
+          "speaker_id": "manager",
+          "ja": "森さんと話せたら、また教えてください。予定は仮に空けておきます。",
+          "vi": "Khi đã trao đổi với anh Mori, báo tôi nhé. Tôi sẽ để trống khung đó trước."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_healthinfo"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u01": {
+            "kind": "original_extension"
+          },
+          "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u02": {
+            "kind": "original_extension"
+          },
+          "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u03": {
+            "kind": "original_extension"
+          },
+          "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9c12f9ca-d1ce-5f4b-9231-7385c20ee414",
+      "event_id": "E04",
+      "context_vi": "Sau khi nhận phiếu có mục cần hỏi thêm, bạn gọi cơ sở khám để xin buổi trao đổi riêng với bác sĩ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "clerk",
+          "role_vi": "nhân viên cơ sở khám",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u01",
+          "speaker_id": "a",
+          "ja": "結果表に『要相談』とあるので、医師と直接話せる時間を取りたいです。個別に相談できますか。",
+          "vi": "Phiếu kết quả ghi 'cần trao đổi', nên tôi muốn đặt giờ nói trực tiếp với bác sĩ. Có buổi riêng được không?"
+        },
+        {
+          "id": "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u02",
+          "speaker_id": "clerk",
+          "ja": "はい、結果説明の予約枠があります。来週水曜日の午後三時はいかがですか。",
+          "vi": "Có, chúng tôi có lịch giải thích kết quả. Ba giờ chiều thứ Tư tuần sau được không?"
+        },
+        {
+          "id": "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u03",
+          "speaker_id": "a",
+          "ja": "その時間でお願いします。相談する項目を先に伝えたほうがいいですか。",
+          "vi": "Xin hẹn giờ đó. Tôi có cần báo trước mục muốn hỏi không?"
+        },
+        {
+          "id": "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u04",
+          "speaker_id": "clerk",
+          "ja": "結果表の該当箇所を受付時に示してください。内容は医師がお話しします。",
+          "vi": "Khi tiếp nhận, chị chỉ mục đó trên phiếu. Phần chuyên môn bác sĩ sẽ trao đổi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u01": {
+            "kind": "original_extension"
+          },
+          "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u02": {
+            "kind": "original_extension"
+          },
+          "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u03": {
+            "kind": "original_extension"
+          },
+          "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "00e94a10-5506-5f43-80a8-9ff81439e5c8",
+      "event_id": "E04",
+      "context_vi": "Quầy chỉ giải thích được lịch hẹn, bạn xin người chuyên môn trả lời về kết quả.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "clerk",
+          "role_vi": "nhân viên cơ sở khám",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "00e94a10-5506-5f43-80a8-9ff81439e5c8-u01",
+          "speaker_id": "a",
+          "ja": "この数値の意味を、今ここで聞けますか。",
+          "vi": "Ý nghĩa con số này tôi hỏi ngay ở quầy được không?"
+        },
+        {
+          "id": "00e94a10-5506-5f43-80a8-9ff81439e5c8-u02",
+          "speaker_id": "clerk",
+          "ja": "申し訳ありません。私は予約の説明までです。来週水曜日三時の診察で医師にお尋ねください。",
+          "vi": "Xin lỗi chị. Tôi chỉ giải thích lịch hẹn. Chị hãy hỏi bác sĩ trong buổi khám 3 giờ chiều thứ Tư tuần sau."
+        },
+        {
+          "id": "00e94a10-5506-5f43-80a8-9ff81439e5c8-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。気になる点をメモして持って行きます。予約は確定していますね。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi câu hỏi rồi mang đến. Lịch đã chốt rồi đúng không?"
+        },
+        {
+          "id": "00e94a10-5506-5f43-80a8-9ff81439e5c8-u04",
+          "speaker_id": "clerk",
+          "ja": "はい、確定しています。受付は十五分前です。",
+          "vi": "Đúng, đã chốt. Xin đến quầy trước 15 phút."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_periodic"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "00e94a10-5506-5f43-80a8-9ff81439e5c8-u01": {
+            "kind": "original_extension"
+          },
+          "00e94a10-5506-5f43-80a8-9ff81439e5c8-u02": {
+            "kind": "original_extension"
+          },
+          "00e94a10-5506-5f43-80a8-9ff81439e5c8-u03": {
+            "kind": "original_extension"
+          },
+          "00e94a10-5506-5f43-80a8-9ff81439e5c8-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03",
+      "event_id": "E04",
+      "context_vi": "Công ty hỏi vì sao bạn cần vắng để gặp bác sĩ sau buổi đặt lịch; bạn nêu đúng thời gian và nhu cầu công việc.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "manager",
+          "role_vi": "quản lý",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u01",
+          "speaker_id": "manager",
+          "ja": "水曜日の午後は、どんな検査で休むの？",
+          "vi": "Chiều thứ Tư cậu nghỉ để làm xét nghiệm gì vậy?"
+        },
+        {
+          "id": "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u02",
+          "speaker_id": "a",
+          "ja": "検査結果について医師に相談する予約です。午後二時半から四時まで外したいです。",
+          "vi": "Tôi có lịch hỏi bác sĩ về kết quả khám. Tôi xin vắng từ 2 giờ rưỡi đến 4 giờ chiều."
+        },
+        {
+          "id": "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u03",
+          "speaker_id": "manager",
+          "ja": "業務で配慮が必要なことは、今の段階である？",
+          "vi": "Ở thời điểm này, công việc có cần sắp xếp gì đặc biệt không?"
+        },
+        {
+          "id": "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u04",
+          "speaker_id": "a",
+          "ja": "今はありません。医師と話して必要なことが分かれば、改めて相談します。",
+          "vi": "Hiện chưa có. Sau khi nói với bác sĩ, nếu biết cần sắp xếp gì tôi sẽ trao đổi lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_healthinfo"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u01": {
+            "kind": "original_extension"
+          },
+          "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u02": {
+            "kind": "original_extension"
+          },
+          "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u03": {
+            "kind": "original_extension"
+          },
+          "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "afc4096c-8395-5754-8d8c-df3cf4475265",
+      "event_id": "E04",
+      "context_vi": "Lịch gặp bác sĩ được đổi từ thứ Tư sang thứ Năm trong cơ sở giả định; bạn cập nhật quản lý ngay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "người học",
+          "gender": "female"
+        },
+        {
+          "id": "manager",
+          "role_vi": "quản lý",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "afc4096c-8395-5754-8d8c-df3cf4475265-u01",
+          "speaker_id": "a",
+          "ja": "健診センターから連絡があり、医師との予約が木曜日の午後三時に変わりました。水曜日は通常どおり働けます。",
+          "vi": "Trung tâm khám vừa báo lịch bác sĩ chuyển sang 3 giờ chiều thứ Năm. Thứ Tư tôi làm bình thường."
+        },
+        {
+          "id": "afc4096c-8395-5754-8d8c-df3cf4475265-u02",
+          "speaker_id": "manager",
+          "ja": "分かりました。木曜日は何時から外しますか。",
+          "vi": "Được. Thứ Năm cậu cần vắng từ mấy giờ?"
+        },
+        {
+          "id": "afc4096c-8395-5754-8d8c-df3cf4475265-u03",
+          "speaker_id": "a",
+          "ja": "午後二時半から四時までです。水曜日の予定を戻して、木曜日だけ空けていただけますか。",
+          "vi": "Từ 2 giờ rưỡi đến 4 giờ chiều. Anh trả lịch thứ Tư về như cũ và chỉ để trống khung thứ Năm giúp tôi được không?"
+        },
+        {
+          "id": "afc4096c-8395-5754-8d8c-df3cf4475265-u04",
+          "speaker_id": "manager",
+          "ja": "了解。予定を入れ替え、森さんにも木曜日だと伝えます。",
+          "vi": "Được. Tôi sẽ đổi lịch và báo anh Mori là thứ Năm."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "mhlw_healthinfo"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "afc4096c-8395-5754-8d8c-df3cf4475265-u01": {
+            "kind": "original_extension"
+          },
+          "afc4096c-8395-5754-8d8c-df3cf4475265-u02": {
+            "kind": "original_extension"
+          },
+          "afc4096c-8395-5754-8d8c-df3cf4475265-u03": {
+            "kind": "original_extension"
+          },
+          "afc4096c-8395-5754-8d8c-df3cf4475265-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
