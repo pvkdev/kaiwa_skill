@@ -45,3 +45,35 @@
 - eb76ce0b-59e0-56da-8e3f-4ed426bd3a12 (S018). A u02 đưa lựa chọn quán ven sông, B u03 ưu tiên chỗ ngồi ngoài. A u04 còn cần làm rõ đường đi.
 - 22b1b3cf-e6d4-5bd6-afb4-2ee4c012c80b (S019). A u01 kiểm có qua cầu không, B u02 chỉ cách đi bộ khoảng năm phút. A u03 chốt quán và nhắc đúng hướng.
 - 3c4f01a5-61c4-5739-867d-19ad1ea7e43d (S020). A u01 hỏi có muốn đi nữa không và u03 đề xuất Chủ nhật đầu tháng. B u04 đồng ý và xin được báo giờ.
+
+### Kiểm độc lập E01
+
+S001 nhận lời đi cà phê trước ga rồi S005 mới hỏi giờ, gặp 12 giờ 30 sau khi bạn ghé nhà. S003 cân nhắc phim hay ở nhà, S004 chọn đi dạo Chủ nhật. S002 độc lập, người mới quen chỉ rảnh khoảng mười phút.
+
+- Đọc B27 dòng 2272–2293 về lời rủ theo quan hệ, 2338–2358 về đáp dè dặt và 2037–2042 về kiểm điểm hẹn.
+
+- S001 (49225882-4d10-5fca-9d88-49cda19b641b), 03. Giữ lời rủ thân mật sau khi nghe bạn chưa có kế hoạch. Sửa câu đáp để người Việt hiểu bạn thuận tiện ghé trước ga.
+
+- S002 (c9a4fe00-2e60-50c7-9317-b83be060845e), 01. Giữ lời rủ lịch sự với người mới quen, chọn đi gần hồ và tôn trọng mười phút bạn có thể đi.
+
+### Kiểm độc lập E02
+
+S006 lối Tây và tấm biển ngoài ga, S007 bàn ăn thứ Bảy, S008 chỉ xem triển lãm từ 11 đến 12 giờ là ba cuộc hẹn riêng. S009 dời hiệu sách từ thứ Bảy ngày 8 sang ngày 15. S010 chốt lúc 14 giờ ở cửa Đông.
+
+- S006 (b512b1cd-5e9b-5766-814a-e0d06df64341), 01. Sửa câu hỏi mở thành mẫu hỏi chỗ hẹn tự nhiên. Người học nêu điểm nhận dễ thấy ngoài cửa Tây.
+
+- S007 (c28aaabf-8851-5728-802d-383ffef13ca4), 03. Người học nhắc tối thứ Bảy và hai người. Thêm 夜 để câu Nhật khớp với giờ tối trong lời Việt. Bạn mới nhận gọi đặt chỗ.
+
+### Kiểm độc lập E03
+
+S011 báo muộn khoảng 15 giờ 20, S012 đổi quán nhưng giữ giờ, S013 hủy phim và hẹn dịp khác. S014 hoãn quyết định đến khi biết ca làm. S015 gọi đúng 20 giờ thứ Sáu rồi chốt 10 giờ Chủ nhật ở cổng công viên.
+
+- Đọc B27 dòng 1627–1632 về cuộc gọi báo đến muộn có lý do và mốc ước tính.
+
+- S011 (ecab7954-0bf1-557f-807a-1e8f737e39b1), 03. Người học giải thích việc đột xuất và đưa giờ dự kiến để bạn quyết định vào quán chờ. Câu liên lạc khi đến giữ cách báo mở như JA.
+
+### Kiểm độc lập E04
+
+S016 nghỉ chân, S017 bỏ đoạn dốc là hai lượt xử lý riêng. S018 quán bánh đóng, hai người chọn quán ven sông có ghế ngoài. S019 xác nhận đi thẳng khoảng năm phút, quán bên phải, không qua cầu. S020 hẹn chợ sách vào Chủ nhật đầu tháng, còn giờ sẽ báo sau.
+
+- S016 (bdaa026f-5a7a-52d7-b57a-fe7848112397), 01. Đổi lời rủ nghỉ sang cách nói Việt thường dùng. Bạn nghe, nói chân mỏi và chọn ngồi năm phút.

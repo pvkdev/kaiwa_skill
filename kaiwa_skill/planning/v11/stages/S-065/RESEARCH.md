@@ -41,3 +41,37 @@ Bốn dịp độc lập. Lời chào người mới mở sang câu hỏi bộ p
 - 51d6f625-ca11-54d2-9088-59c997bee240 (S014). A u01 hỏi người mới, B u02 còn nhầm cầu thang. A u03 chỉ cầu thang và đề nghị đưa đến, B u04 nhận.
 - e392f4e5-7e3b-5913-9caa-bd3c1aa54edf (S015). A u01 xin lỗi và u03 gửi lời chúc còn thiếu, B u02 xác nhận đã gặp nhau lúc đầu và u04 cảm ơn.
 - 1ecd5743-319c-5904-a15e-5bf076756b65 (S016). A u01 nhắc việc và hỏi hạn. B u02 nêu cần trước trưa để họp 13 giờ, A u03 chọn 11 giờ và B u04 nhận.
+
+### Kiểm độc lập E01
+
+Từ lời chỉ quán Sakura sau S001, mỗi nhánh bắt đầu với nơi tổ chức đã biết. S002 xác nhận dự lúc 18 giờ, S003 xin vắng và chuyển lời chúc. S004 được phép dự phần đầu rồi rời quán trước hay đúng 19 giờ.
+
+- Đọc B17 dòng 2821–2844 về địa điểm tổ chức và cân nhắc người không uống; đọc B07 dòng 1607–1615, câu 2 về nhận lời dự tiệc chia tay.
+
+- S003 (075b5679-79a0-5d89-8401-b188e5fba3f2), 03. Thay lời chuyển hộ ようこそ đứng lẻ bằng lời chúc gia nhập công ty có thể chuyển cho Sato tự nhiên. Tanaka đồng ý chuyển lời.
+
+- S004 (af22c4bc-345b-57f0-a471-3928c634e06e), 02. Nói rõ mốc rời quán là 19 giờ tối và đặt câu hỏi chỉ dự phần đầu. Người tổ chức đồng ý và cho biết phần giới thiệu ở đầu buổi.
+
+### Kiểm độc lập E02
+
+Bốn cảnh mở riêng với bốn quan hệ. Chào Sato hỏi nhóm kinh doanh, chúc người chuyển nhóm, chúc tân trưởng nhóm và gửi lời cảm ơn cả nhóm qua một đồng nghiệp.
+
+- Đọc B24 dòng 1474–1487, ví dụ chúc mừng thành quả; B27 dòng 2272–2293, ví dụ thay cách nói theo quan hệ. Lời Nhật của các cảnh là lời soạn mới.
+
+- S005 (0ad06810-6417-5eaa-ac56-3908db5f4ea7), 03. Người học tự giới thiệu và hỏi Sato thuộc nhóm nào. Làm rõ chính phòng hành chính nằm bên cạnh phòng kinh doanh để nối lời đáp sau khi Sato nói sẽ bắt đầu thứ Hai.
+
+- S006 (c8eadc77-98cb-5478-b303-8471ba01f8fd), 03. Sau lời cảm ơn việc chỉ dẫn, người học chúc đồng nghiệp ở nhóm mới. Câu kết Việt dùng lời hẹn gặp lại trong cùng tòa nhà.
+
+### Kiểm độc lập E03
+
+S009 cảm ơn hướng dẫn báo cáo trong năm. S010 chúc năm mới, Matsuda nói nhóm sẽ thử ứng dụng cuối tháng. S011 hỏi lại họ người vừa chào, sửa Matsui thành Matsuda. S012 độc lập, từ chối rượu và gọi trà ô long.
+
+- S011 (a97f24d2-db34-5de1-a0b0-1a6a3a36ce79), 01. Giữ mẫu hỏi lại họ sau khi nghe tên không chắc. Lời người đáp nêu cả cách đọc nghe nhầm và cách đọc đúng để phân biệt khi nghe TTS.
+
+### Kiểm độc lập E04
+
+S013 người tổ chức nhớ Sato vui trong buổi chào mừng. S014 sáng hôm sau đổi vai B sang chính Sato và hỏi đường đi đến phòng kinh doanh. S015 là lời chúc ở tiệc chia tay riêng. S016 nối một lời hứa công việc đã nêu trong bối cảnh, chốt 11 giờ trước cuộc họp 13 giờ.
+
+- S014 (51d6f625-ca11-54d2-9088-59c997bee240), 01. Thay lời hỏi đi mà không lạc bằng cách hỏi đã biết đường đến phòng chưa, vừa sức hơn. Sato chưa biết cầu thang nào và nhận lời đi cùng.
+
+- S016 (1ecd5743-319c-5904-a15e-5bf076756b65), 03. Chốt gửi lúc 11 giờ hoặc sớm hơn. Lời Nhật và Việt đều xác định cuộc họp lúc 13 giờ, người nhận sẽ xem trước khi họp.

@@ -40,3 +40,23 @@
 - S010 → S011. Đã xác nhận đúng KT-281, chưa có kết quả kho. Fujii tra được dòng đơn, nói mốc 14:30 cập nhật và cách xử lý nếu chưa chắc.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+
+Điểm nối. S001 khách đọc máy lẻ 6248, S002 nghe thiếu số cuối và xác nhận lại đúng cùng máy lẻ. S003 xác nhận hàng đến sáng đủ thùng, không có việc gấp. S004 khách dặn thêm không cần gọi xác nhận.
+
+Đã đọc B04 Unit 11, 13, 14 và 32 dòng 5–23. Vận dụng xin nhận lời nhắn, thời giờ và địa chỉ gọi lại, truyền đúng người/việc/hạn và hỏi lại phần nghe thiếu.
+
+## Rà độc lập Batch04 · E02
+
+- S005 · `0de25fee-6b7f-5864-aad3-14df59ab557a-u04`. Sửa cách nhắc lại từ xuất hàng sang hàng đến nơi. Noda cần biết có thể nhận thứ Năm trước cuộc họp 15 giờ.
+- S007 · `c3d81f14-c180-5009-afaa-2a4158085250-u01`. Hỏi kho để kiểm khả năng giao tới nơi thứ Năm. Fujii gọi khách trước 15 giờ, Watanabe nhận lại kết quả. Sửa shippable thành deliverable và diễn đạt thông tin liên hệ tự nhiên ở Việt.
+
+Điểm nối. S005 chuyển yêu cầu hỏi khả năng giao thứ Năm và hạn 15 giờ, chưa chốt. S006 giữ ngày cũ đến khi có phản hồi sau khi kiểm; từ cùng gốc S007 phân công Fujii kiểm và gọi trước 15 giờ. S008 lúc 14:45 kho chưa trả, phân vai Watanabe báo 14:55 nếu cần và Fujii vẫn trả kết quả.
+
+## Rà độc lập Batch04 · E03
+
+- S011 · `d3b1397b-0767-59fd-b371-13a4af8bd9f0-u03`. Giờ gọi 14:30 độc lập với kết quả, trước hạn họp 15 giờ. Sửa 出せる để khớp việc đến nơi thứ Năm đã hỏi từ đầu.
+
+Điểm nối. S009 Noda yêu cầu dời cả phần giao thứ Sáu; S010 dùng email xác nhận KT-281; S011 tìm đúng sáu thùng, hẹn 14:30 để kịp họp 15 giờ. S012 là tình huống riêng, khách ra ngoài 15 giờ và chọn email nếu trễ.

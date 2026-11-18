@@ -49,3 +49,9 @@ S015→S016: Kato đã thu xếp trao đổi trước bài thực hành; ở đ�
 - S017 · `ac30e40f-4781-5632-ac92-a0fd5e421923` · u01, u03, u05. Mai nói cụ thể điểm tương đồng, chủ động chỉ ra trạng thái lỗi là điểm chưa biết; Ueda nhận định phạm vi có thể dùng lại.
 - S018 · `9e671032-7fe5-5981-b625-a3890c846324` · u01, u03, u05. Ueda nêu cụ thể hai tuần cùng bản ghi nháp và ai kiểm. Mai hỏi tiêu chí tự bàn giao; xác nhận là cách phối hợp khi vào làm, chưa suy ra kết quả tuyển.
 - S019 · `ad5d040c-04f8-50f4-80db-1654f9f32646` · u02, u04, u05. Ứng viên phân biệt kỳ vọng nhập theo mẫu và chưa rõ tiêu chí chọn bài. Kato nhắc đúng chỗ cần xác nhận, không đánh đồng với phê duyệt.
+
+## Rà độc lập V11 batch04
+
+Đọc B16 Unit 3 dòng 222–234, thẻ phỏng vấn hỏi lý do và phần ví dụ kết nối kinh nghiệm với điều muốn làm cho công ty. Đầu ra dùng lời nói của ứng viên kiểm thử, phần tập viết là nội dung của sách.
+
+Ngày 2026-11-18 đọc hai mục FAQ của Bộ Lao động dành cho doanh nghiệp và ứng viên. Phần hỏi nhà ở, gia đình, nghề của cha mẹ giải thích nguy cơ dùng thông tin không liên quan tới năng lực. S007 cho Ishii dừng hỏi sâu và hỏi lịch làm của đúng vị trí. https://kouseisaiyou.mhlw.go.jp/question.html

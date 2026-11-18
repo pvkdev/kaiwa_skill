@@ -40,3 +40,23 @@
 - S011 → S012. Hara tự xưng, xin lỗi, khách xác nhận gọi lại đúng người và còn thời gian; đến nhánh sau mới biết người nhận vừa ra ngoài.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+
+Điểm nối. S001 xin phép giữ máy rồi rẽ từ cùng trạng thái chưa kiểm: S002 Takada nghe được, S003 Takada đang nghe máy khác. S004 tiếp từ lời hẹn một phút của S003, quay lại hỏi ý khách rồi ghi yêu cầu gọi trong 15 phút.
+
+Đã đọc B04 Unit 04, 05 và 10 dòng 5–25. Áp dụng xác nhận ai gọi ai về việc gì, quay lại khi còn phải chờ và tự giới thiệu nơi nhận khi nghi gọi nhầm. Khoảng một phút là thời lượng Hara xin trong cảnh.
+
+## Rà độc lập Batch04 · E02
+
+- S006 · `0618e5fb-2d29-541d-9e97-76f953dc4383-u02`. Đổi quầy thành đầu mối và cho lời Việt giữ mức chắc của と思います. Cặp số cuối xác nhận số tổng đài trên hóa đơn Aoba Logistics.
+- S008 · `320c32b2-29a9-5010-abba-aa9b24edfaae-u04`. Hara nhận lỗi và tự báo lý do chuyển sang kế toán. Ghi đích danh số hóa đơn ở lời Nhật để người gọi biết cần chuẩn bị thông tin nào.
+
+Điểm nối. Từ S005 chưa rõ gọi sai công ty hay nhầm họ. S006 mở bằng hóa đơn ghi Aoba Logistics; trở lại S005 ở S007, khách xác nhận đúng Aoba và tìm Hashiguchi qua chức vụ. S008 là ca chuyển nhầm bộ phận độc lập.
+
+## Rà độc lập Batch04 · E03
+
+- S011 · `48f282a0-4715-563f-985c-c08d52e6a8b0-u03`. Bỏ cách nói lặp báo mình gọi lại ngay trong cuộc gọi lại. Hara vẫn tự xưng, xin lỗi vì ngắt và xác nhận khách tiện nghe.
+
+Điểm nối. S009 chuyển từ chờ sang nhận lời nhắn; S010 mới ghi hạn 12 giờ thứ Năm và giờ gọi hôm nay từ 15:30. S011 gọi lại trên số đã để; S012 vừa nối lại cuộc gọi với khách, Takada rời bàn nên hẹn gọi trước 16 giờ nếu sắp được và dùng email nếu trễ.

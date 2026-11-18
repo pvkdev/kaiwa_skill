@@ -40,3 +40,9 @@ S011→S013→S015: biết người kèm Kobayashi, đến thứ Sáu thử tr�
 - S013 · `1339683b-2567-55f0-81eb-32e025410b13` · u02, u04, u05. Minh nêu vấn đề cụ thể, Mori chỉ đúng đầu mối trung gian và nhận chuyển câu hỏi sang người xếp ca, chưa nói giờ ca.
 - S014 · `c093ae00-e4ca-5f15-a472-4045f914829c` · u02, u04, u05. Thứ Sáu là mốc doanh nghiệp dự kiến báo Sato, không phải ngày Minh chắc nhận kết quả. Mori đồng ý xin hỏi Sato vào thứ Hai nếu chưa có tin.
 - S015 · `f7d06b71-e16d-593a-acc0-1bf03193414b` · u01, u03, u05. Sato chỉ đọc từ tin vị trí khung đến 19 giờ; Minh chỉ ra chưa rõ có trực ở văn phòng tới mốc đó không và nhờ kiểm đúng hai điểm.
+
+## Rà độc lập V11 batch04
+
+Đọc B16 Unit 3 dòng 13–30, phần tự PR của Nguyễn và hỏi nối về SPI. Hai ví dụ ở kho/đổi địa chỉ là tình huống mới, cách nêu kết quả cụ thể giữ được mô hình của sách.
+
+Đọc trang Bộ Lao động ngày 2026-11-18, mục 適性・能力に基づいた採用基準とする và 適性・能力に関係のない事項の把握. Các câu hỏi bám vào việc và năng lực làm việc. Hình thức học việc, lịch và đường gửi phản hồi là điều người phỏng vấn nói về công ty trong cảnh. https://kouseisaiyou.mhlw.go.jp/basic.html

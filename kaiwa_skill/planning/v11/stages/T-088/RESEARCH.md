@@ -52,3 +52,24 @@
 - S013 → S014. Matsui đã nói rõ gọi lại 16 giờ; gửi chuyến riêng chỉ là điều đang xem. Ishida nhầm phần khách nghe với đồng ý.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S004 · `96cfab83-deb1-5852-a522-77d153b96f50-u01`. Lời mở cuộc gọi Nhật tự nhiên hơn, vẫn đúng 15 giờ và báo rõ đã kiểm khả năng in bằng máy dự phòng, nguyên nhân máy chính chưa rõ.
+
+Điểm nối. S001 đơn vẫn xem được, thiếu nhãn cho ít nhất mười thùng trước xe 16 giờ. S002 thêm máy số hai và lỗi hết giấy; S003 kỹ thuật đang bận, phát sinh máy dự phòng và mốc báo 15 giờ. S004 giữ đúng giờ, kiểm được loại máy dự phòng, máy số hai còn điều tra.
+
+Đã mở B04 Unit 19 dòng 5–25 (nghe và xin lỗi trước khi xử lý), B15 bài 7 dòng 18–42 (phân biệt tình hình, ảnh hưởng và mốc đã báo) và B10 bài 5 dòng 201–216 (đưa và giới hạn phương án mềm). Các mốc giao, chi phí và quyền chọn chuyến thuộc đơn hàng giả định.
+
+## Rà độc lập Batch04 · E02
+
+- S006 · `7ca601ff-1a11-5d7e-9832-44a2d39706bc-u04`. Giữ hẹn cập nhật 16 giờ theo dữ kiện có được. Lời trước dễ nghe thành cam kết chắc chắn biết kết quả và đã có phương án. Sửa để đồng nhất với lời khách chỉ cần phần đã rõ.
+- S007 · `a68a669f-3bee-57d3-8043-bfaa8cf1a06a-u03`. Khách có thể lấy riêng mười bộ, ba mươi bộ vẫn chờ kiểm thời điểm nhận. Làm rõ đó là kiểm xem sáng mai có nhận được không, chưa chắc có cách giao khác.
+
+Điểm nối. S005 kết ở 40 bộ và hạn 9:30 mai. S006 làm rõ lịch hôm nay chỉ dự kiến rồi hẹn tiến độ 16 giờ, S007 rẽ về S005 và chỉ có mười bộ tại cửa hàng. S008 vẫn cần đủ 40 bộ một lần và chuyển Ishida quyết chuyến riêng.
+
+## Rà độc lập Batch04 · E04
+
+- S014 · `b94a3002-737c-539a-89f0-025d9ce238b7-u02`. Bỏ lời thuật khách đã nói sẽ quyết sau khi có chi phí vì cảnh trước mới chỉ hẹn kiểm chuyến. Matsui sửa hiểu nhầm và đề xuất lấy thông tin rồi hỏi ý khách.
+
+Điểm nối. S013 cô chỉ báo đang kiểm chuyến riêng và hẹn tiến độ 16 giờ. S014 sửa hiểu nhầm thành chưa duyệt chuyến nào, phải lấy phí và giờ dự kiến rồi hỏi khách. S015 đứng riêng nhưng cùng quyền hạn, giờ đến kiểm trước, phí do trưởng bộ phận kinh doanh duyệt.

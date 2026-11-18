@@ -33,3 +33,21 @@
 - 6a1f5033-7ef9-50f2-954e-8aa93ca587e7 (S012). A u01 hỏi người nhận, u03 kiểm thêm có cần báo phòng kinh doanh không. B xác nhận hai người nhận, A chốt lại đích gửi.
 
 - Rà lại df77a954-1ae4-5077-9681-cb1f217520f0 lượt 1. Điều phối nói trực tiếp với Lan. Đổi lời để Lan biết cần nhờ Mori xem chứ không gọi tới Mori vắng mặt. Rà nối từ câu hỏi ở S010 và phần Lan nhắc lại trong S011.
+
+### Kiểm độc lập E01
+
+S001 chốt tài liệu xanh trang hai, hạn góp ý thứ Ba. S002 nghe nhầm thành thứ Năm và sửa ngay trước khi đổi mục. S003 giải nghĩa định dạng, S004 xác nhận PDF đủ dùng cho tệp này.
+
+- Đọc B16 dòng 688–707 về nhắc lại bằng ですね và 1131–1139 về kiểm lại chi tiết nghe chưa chắc. Đọc B01 dòng 2933–2953 về lời xin hỏi và xin phép.
+
+### Kiểm độc lập E02
+
+Tách từng nhánh sau S005. S006 đã duyệt và giao thêm sơ đồ ở trang cuối trong ngày. S007 chờ chủ trì hỏi người làm tài liệu rồi mới biết có thêm được. S008 bỏ sơ đồ lần này và chỉ sửa giờ tập trung.
+
+- S007 (c4c15f8a-301c-58b9-87d3-5da04b90bcd3), 02. Nêu rõ 午後 để cố định 15 giờ trong cả hai thứ tiếng. Sửa câu sau cho rõ người học chưa cần sửa tài liệu vì vẫn đợi quyết định.
+
+### Kiểm độc lập E03
+
+S009 Lan nghĩ mình gửi, còn Mori chỉ biết phải xem trước và chưa nghe rõ ai gửi. S010 đổi vai sang người chủ trì để tra ghi chú. S011 người chủ trì xác nhận Lan nhờ Mori xem rồi tự gửi vào thứ Sáu hoặc sớm hơn. S012 hỏi người nhận ở một việc khác.
+
+- S011 (df77a954-1ae4-5077-9681-cb1f217520f0), 02. Rút câu hỏi về hạn xuống một cụm dễ nói sau lời giao việc. Lan vẫn nhắc lại cả hạn thứ Sáu và thứ tự nhờ Mori xem rồi gửi.

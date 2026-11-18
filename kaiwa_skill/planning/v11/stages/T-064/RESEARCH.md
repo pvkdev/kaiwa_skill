@@ -51,3 +51,9 @@ S016→S017: ứng viên chỉ thống nhất nguyên tắc và phạm vi thông
 - S018 · `ea98df00-6e0d-5f3f-9e39-9f99bf76776d` · u02, u04, u05. Lan ưu tiên nội dung, linh hoạt lương trong khoảng đã trao đổi; Sato xác nhận bỏ công ty này và sàng lọc theo hướng hỗ trợ sau ký.
 - S019 · `7fc20d73-70d4-5860-ae61-5b1590e004b0` · u01, u03, u04, u05. Sato kiểm tra rồi phân biệt lịch nháp do sai thao tác với dữ liệu đã gửi. Lan chưa bấm xác nhận, xin gỡ lịch; vẫn giữ quyền chọn và xác nhận nội dung.
 - S020 · `d9313b0e-4e89-5526-a896-63fc7a5d4f7a` · u01, u03, u05. Phạm vi có tên ứng viên cùng kinh nghiệm theo bản đã duyệt; ba mục giữ riêng vẫn áp dụng. Friday 17 giờ là mốc Sato báo tình hình cả khi chưa có phản hồi.
+
+## Rà độc lập V11 batch04
+
+Đọc lại B16 Unit 6, dòng 15–44, lượt chốt 11 giờ thứ Hai ngày 12 sau khi hỏi hai khung. Đọc B16 Unit 3, dòng 13–30, câu tự PR của Nguyễn theo khó khăn, việc đã làm và kết quả. Các cảnh đã chuyển sang môi giới và tình huống phần mềm, giữ bản chất lời chuyển soạn.
+
+Ngày 2026-11-18, mở và đọc được mục 4(1)へ và đầu mục (2) trong bản PDF qua chỉ mục Bộ Lao động, áp dụng từ 2026-10-01. Bộ yêu cầu công bố cụ thể điều xin chấp thuận, sự đồng ý rõ ràng và tự nguyện trong trường hợp cần xin, cùng kiểm soát truy cập và rò rỉ. Việc Sato hỏi từng bên nhận và từng phần dự định chuyển là phương thức của công ty trong cảnh. https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000172486.html · https://www.mhlw.go.jp/content/11600000/001749102.pdf

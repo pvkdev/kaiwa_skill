@@ -45,3 +45,39 @@ Bốn tình huống mượn, tìm hoặc thử độc lập. Lời hẹn cho mư
 - d5667fb9-3676-5b7f-9af1-f8586ebeeb65 (S018). A u01 xin mượn, B u02 đặt điều kiện đọc xong. A u03 hỏi lại Chủ nhật, B u04 nhận lịch hỏi và chưa hứa giao sách hôm đó.
 - 56eaf54f-1335-5f81-8fad-c641cf47209a (S019). B u01 nêu lý do không cho mượn. A u02 tôn trọng lời từ chối và hỏi nơi mua, B u03 chỉ cửa hàng từng mua, A sẽ tới xem.
 - 00048c8b-aa18-5b12-be29-8cbaabad83af (S020). A u01 nhắc hoạt động và thời lượng, B u02 kiểm xem tiếp theo làm gì, A u03 xác nhận kế hoạch và chỉ sân.
+
+### Kiểm độc lập E01
+
+S001 nói tần suất bóng chuyền, S002 tìm điểm chung phim hoạt hình và S003 mô tả tiểu thuyết là ba cuộc nói chuyện riêng. S004 đính chính chơi bóng bàn vì sở thích. S005 nối đúng môn đó và lý do thích đánh qua lại lâu.
+
+- Đọc B08 dòng 2802–2812 về hỏi sở thích và cách dùng 好き, 2725–2731 về phim, 2914–2920 về hỏi sách đang đọc.
+
+- S003 (39c752e4-b55c-5f6c-90b9-00884046aca3), 04. Phân biệt sách có nội dung ngắn và thể loại truyện ngắn. Tiếng Việt giữ đây là một cuốn tiểu thuyết với câu kể dễ hiểu.
+
+- S005 (77dcb90c-7936-5c9d-8587-bf2905588988), 02. Giữ lý do thích bóng bàn là thích đánh qua lại được lâu. Sửa lời người mới quen thành nói hay đánh lỗi, rồi đáp của người học chỉ rõ đánh chậm để giữ loạt bóng.
+
+### Kiểm độc lập E02
+
+S006 chọn xem thay vì chơi bóng đá, S007 hỏi phim mèo không muốn biết kết, S008 đổi từ kinh dị sang phim hài. S009 bạn nhận lời thử bóng bàn và được người học hứa chỉ cầm vợt. S010 bạn hỏi có thể chỉ đánh nhẹ, sau đó hai bên chọn thứ Bảy.
+
+- Đọc B27 dòng 2308–2327 về tỏ hứng thú, hỏi người mới có tham gia được và nhận lời thử.
+
+- S008 (ebc84f8b-d005-5952-b174-a353b2096ec8), 02. Dùng câu hỏi sở thích trực tiếp, thân thiện sau khi bạn nói ngại phim kinh dị. Hai người tìm thấy sở thích chung là phim hài.
+
+- S010 (a03ab169-2633-5925-95eb-32cffb21fbb1), 02. Bạn hỏi về việc chỉ đánh nhẹ như một điều kiện mới, vì bản trước chưa bàn mức tập. Người học đồng ý rồi đề nghị thứ Bảy.
+
+### Kiểm độc lập E03
+
+S011 kể bóng bowling lăn vào rãnh rồi lần sau đổ ba ky. S012 bàn cảnh gặp lại. S013 nghe một cách hiểu, cả hai giữ mức phỏng đoán. S014 xác định cùng tựa nhưng một bên đọc truyện tranh, một bên xem phim. S015 chọn phim để bàn và mô tả cảnh mở đầu ở bến tàu.
+
+- S011 (4a848e18-edfb-52bd-9de3-bf6b4747befa), 01. Nêu rõ rãnh bowling trong lời Nhật như lời Việt. Người chưa chơi phản hồi vào niềm vui làm đổ ba ky mà không giả làm người từng chơi.
+
+- S013 (239fc15b-b884-559b-bcf4-2c75cb3f5015), 03. Sửa lời nối để người học nhận ra cuộc gọi là một manh mối nhưng vẫn chỉ đoán cô gái đi đón anh trai. Cả hai cùng hiểu ở mức phỏng đoán.
+
+- S014 (d7d7f3eb-7b60-5754-93b0-38e9ce48dd5c), 02. Hỏi có phải bản phim của đúng tựa vừa nhắc. Bạn nói mình đọc manga nên giải được vì sao hai đoạn mở đầu khác nhau.
+
+### Kiểm độc lập E04
+
+S016 hỏi chỗ đánh cầu lông và việc mang vợt. S017 mượn được sách về mèo tới thứ Hai. S018 chỉ hẹn hỏi lại vào Chủ nhật về sách nấu ăn. S019 chuyển sang tìm hiệu sách cho cuốn truyện tranh không mượn được. S020 có bối cảnh riêng xác lập đánh thử hai mươi phút rồi xem luyện.
+
+- S020 (00048c8b-aa18-5b12-be29-8cbaabad83af), 01. Làm rõ phần đánh thử chỉ hai mươi phút và diễn ra trước khi xem nhóm tập. Sau khi kiểm với bạn, người học mới đề nghị ra sân trống.

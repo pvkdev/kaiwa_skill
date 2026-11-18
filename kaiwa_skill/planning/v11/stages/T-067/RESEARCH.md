@@ -53,3 +53,11 @@ Bất thường brief S015→S016: S015 chắc chắn đã nhận Aoi Systems v�
 - S018 · `3ffac3f6-6d51-59dd-98bc-7bf66cf953d6` · u01, u03, u05. Muộn nhất thứ Ba nhận thì Phúc có thể trả lời trưa thứ Năm; nếu tài liệu chậm, báo tiến độ và tính lại. Chưa có quyết định nhận.
 - S019 · `9119e091-ba03-5d4a-b436-9b681592f7ce` · u02, u04, u05. Phúc xin tối thiểu đến thứ Tư 15 giờ sau khi có tài liệu 17 giờ thứ Ba. Kondo chuyển phương án này, không tự nới thay doanh nghiệp.
 - S020 · `75efb967-ae01-51fa-a31e-1485b972ff87` · u01, u03, u05. Phúc trả lời nhận rõ, nhắc trần hai ngày/tuần sau tập huấn và yêu cầu người quản lý duyệt; ngày 1/10 thuộc Hinode Soft, không nhầm 3/7 của Aoi Systems.
+
+## Rà độc lập V11 batch04
+
+Đọc lại B06 mục 73 dòng 143–151, nhất là ví dụ về đề án xin thêm thời gian rồi người nghe đợi hồi đáp. Ở S004/S018 cần thêm mốc để đối thoại có hành động tiếp theo.
+
+Ngày 2026-11-18 đọc mục 労働条件の明示事項 ở trang Bộ Lao động về ngày giờ, tiền lương, nơi làm, phạm vi thay đổi và trách nhiệm nêu điều kiện khi giao kết. Đọc mục (2) của Hello Work về làm rõ thay đổi so với tin tuyển trước giao kết. Đọc bảng lương PDF trang 1 tách lương cơ bản, định mức cố định và trả thêm phần vượt. Đọc phần FAQ phân biệt hiệu lực nội định theo hoàn cảnh, nhất là mục từ chối khi đã có hợp đồng. Những câu nhận, chưa quyết, hoặc từ chối trong chặng chỉ nêu quyết định nói với người giới thiệu theo tình huống; không dạy một mốc chung hình thành hay hủy hợp đồng. https://roukeiseminar.mhlw.go.jp/contract.html · https://www.hellowork.mhlw.go.jp/enterprise/laborlaw.html · https://www.mhlw.go.jp/content/001114110.pdf · https://www.check-roudou.mhlw.go.jp/qa/roudousya/koyou/q4.html
+
+Kiểm đường S011→S015→S016: buổi làm đầu của Aoi Systems vẫn được xác nhận; bối cảnh S016 mở bằng hai năm đã qua sau khi Phúc vào làm Aoi và gọi tên Hinode Soft. S016 và các cảnh sau đang giải quyết duy nhất offer mới. S014 giữ riêng nhánh giờ đến 10:00.
