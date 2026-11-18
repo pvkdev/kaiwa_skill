@@ -1,0 +1,1974 @@
+{
+  "stage_uid": "0994c582-42d5-5543-ba96-f7deb59c3be5",
+  "admin_sources": {
+    "jaf": {
+      "kind": "web",
+      "title": "ロードサービスご利用時の確認事項 | JAF",
+      "url": "https://jaf.or.jp/common/call-road-service/before-calling",
+      "accessed": "2026-11-18",
+      "use_vi": "Cần tên xe, biển/màu, hiện tượng, địa chỉ/mốc/hướng; chờ ở nơi an toàn, cao tốc ở ngoài lan can hoặc vị trí an toàn."
+    },
+    "symptom": {
+      "kind": "book",
+      "book_id": "B27",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "path": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/17-script-bai-04.md",
+      "start_line": 4,
+      "end_line": 17,
+      "use_vi": "Hỏi hiện tượng nhìn thấy và tách hiện tượng khỏi chẩn đoán."
+    },
+    "phone": {
+      "kind": "book",
+      "book_id": "B27",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "path": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/19-script-bai-06.md",
+      "start_line": 4,
+      "end_line": 16,
+      "use_vi": "Xác nhận người phụ trách chưa có mặt, hỏi mốc và nhắn chuyển lời."
+    },
+    "isa": {
+      "kind": "web",
+      "title": "生活・就労ガイドブック 交通 | 出入国在留管理庁",
+      "url": "https://www.moj.go.jp/isa/content/930004447.pdf",
+      "accessed": "2026-11-18",
+      "use_vi": "Phần 4 tai nạn giao thông, ưu tiên an toàn và cứu người, báo công an, nghe người điều phối cấp cứu; không yêu cầu người bị thương tự dịch chuyển."
+    },
+    "police": {
+      "kind": "web",
+      "title": "こんなときこそ110番 | 警視庁",
+      "url": "https://www.keishicho.metro.tokyo.lg.jp/jiken_jiko/110/110_110.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Báo địa điểm/mốc, tình trạng người bị thương, sự việc và thông tin liên lạc để điều phối."
+    },
+    "observe": {
+      "kind": "book",
+      "book_id": "B08",
+      "title": "どんどん話せる！日本語会話フレーズ大特訓 必須700",
+      "path": "kaiwa_skill/knowledge/どんどん話せる！日本語会話フレーズ大特訓 必須700/chapters/04-part4-bamen.md",
+      "start_line": 823,
+      "end_line": 833,
+      "use_vi": "Phân biệt điều mình thấy, mốc thời gian và điều chưa rõ khi trình bày việc bất thường."
+    },
+    "insurance": {
+      "kind": "web",
+      "title": "問25 交通事故対応等 | 日本損害保険協会",
+      "url": "https://soudanguide.sonpo.or.jp/car/q025.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Xử lý ở hiện trường trước rồi báo hãng bảo hiểm; trao đổi thông tin, không tự hứa bồi thường khi sẽ hoặc có thể dùng bảo hiểm."
+    },
+    "rent": {
+      "kind": "web",
+      "title": "万一の事故のときは | トヨタレンタカー",
+      "url": "https://rent.toyota.co.jp/static/guide/irregular/index.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Tham khảo luồng báo và hỏi nơi thuê, không áp dụng mức phí của hãng cho tình huống giả định."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "7904df6b-9a30-5973-97d7-520fba9e1dad",
+      "event_id": "E01",
+      "context_vi": "Xe bạn đã dừng ở bãi rộng của điểm nghỉ Aoba giả định ven Quốc lộ 16. Bạn gọi cứu hộ và cần giúp họ nhận ra đúng đường vào và chiếc xe.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Tài xế Mori",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên cứu hộ xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7904df6b-9a30-5973-97d7-520fba9e1dad-u01",
+          "speaker_id": "A",
+          "ja": "国道16号を千葉方面に走っていて、道の駅あおばに入りました。車が動かなくなって、今は駐車場にいます。",
+          "vi": "Tôi đang đi Quốc lộ 16 hướng Chiba thì vào điểm nghỉ Aoba. Xe không đi tiếp được, hiện tôi ở bãi đỗ xe."
+        },
+        {
+          "id": "7904df6b-9a30-5973-97d7-520fba9e1dad-u02",
+          "speaker_id": "B",
+          "ja": "入口が二つあります。お車はどちらの入口に近いですか。",
+          "vi": "Có hai lối vào. Xe chị gần lối nào ạ?"
+        },
+        {
+          "id": "7904df6b-9a30-5973-97d7-520fba9e1dad-u03",
+          "speaker_id": "A",
+          "ja": "千葉方面の車線から入るほうです。入口から見て右手に、白い軽自動車が止まっています。ナンバーの下４桁は27-41です。",
+          "vi": "Lối vào từ làn hướng Chiba ạ. Nhìn từ cổng vào, phía tay phải có xe cỡ nhỏ màu trắng. Bốn số cuối biển là 27-41."
+        },
+        {
+          "id": "7904df6b-9a30-5973-97d7-520fba9e1dad-u04",
+          "speaker_id": "B",
+          "ja": "白い軽で、27-41ですね。千葉方面側の入口から入るよう、担当に伝えます。",
+          "vi": "Xe nhỏ màu trắng, 27-41 ạ. Tôi sẽ bảo người phụ trách vào từ lối phía hướng Chiba."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jaf"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "7904df6b-9a30-5973-97d7-520fba9e1dad-u01": {
+            "kind": "original_extension"
+          },
+          "7904df6b-9a30-5973-97d7-520fba9e1dad-u02": {
+            "kind": "original_extension"
+          },
+          "7904df6b-9a30-5973-97d7-520fba9e1dad-u03": {
+            "kind": "original_extension"
+          },
+          "7904df6b-9a30-5973-97d7-520fba9e1dad-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d0c04c2a-7128-585f-bf47-2a703e9d48f8",
+      "event_id": "E01",
+      "context_vi": "Bạn đã đỗ xe an toàn ở bãi cửa hàng. Bạn gọi cứu hộ và kể những gì chiếc xe vừa làm.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Tài xế Mori",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên cứu hộ xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d0c04c2a-7128-585f-bf47-2a703e9d48f8-u01",
+          "speaker_id": "A",
+          "ja": "走っていたら警告灯がついて、アクセルを踏んでも速度が出なくなりました。駐車場に入れてエンジンを切ったところです。",
+          "vi": "Đang chạy thì đèn cảnh báo bật, đạp ga cũng không lên tốc độ. Tôi vừa đưa xe vào bãi đỗ và tắt máy."
+        },
+        {
+          "id": "d0c04c2a-7128-585f-bf47-2a703e9d48f8-u02",
+          "speaker_id": "B",
+          "ja": "エンジンが止まったというより、ご自分で切ったんですね。そのとき煙や焦げたにおいはありましたか。",
+          "vi": "Tức là chị tự tắt máy, máy không tự chết nhỉ. Lúc đó có khói hay mùi khét không ạ?"
+        },
+        {
+          "id": "d0c04c2a-7128-585f-bf47-2a703e9d48f8-u03",
+          "speaker_id": "A",
+          "ja": "煙もにおいもありませんでした。原因は分からないので、動かさずに見てもらえますか。",
+          "vi": "Tôi không thấy khói hay ngửi thấy mùi gì. Tôi không biết nguyên nhân, anh cho người tới xem khi xe đang đỗ được không ạ?"
+        },
+        {
+          "id": "d0c04c2a-7128-585f-bf47-2a703e9d48f8-u04",
+          "speaker_id": "B",
+          "ja": "はい。今のお話を作業員に伝えますので、そのまま安全な場所でお待ちください。",
+          "vi": "Vâng. Tôi sẽ báo lại cho nhân viên kỹ thuật. Chị cứ đợi ở nơi an toàn ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "symptom",
+          "jaf"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d0c04c2a-7128-585f-bf47-2a703e9d48f8-u01": {
+            "kind": "original_extension"
+          },
+          "d0c04c2a-7128-585f-bf47-2a703e9d48f8-u02": {
+            "kind": "original_extension"
+          },
+          "d0c04c2a-7128-585f-bf47-2a703e9d48f8-u03": {
+            "kind": "original_extension"
+          },
+          "d0c04c2a-7128-585f-bf47-2a703e9d48f8-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a62e5956-13f2-559f-8703-d67cdbbf48ad",
+      "event_id": "E01",
+      "context_vi": "Xe hỏng trên cao tốc. Bạn và người đi cùng đã ra chỗ an toàn sau lan can rồi mới gọi, và đang chờ cứu hộ được điều đến.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Tài xế Mori",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên cứu hộ xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a62e5956-13f2-559f-8703-d67cdbbf48ad-u01",
+          "speaker_id": "B",
+          "ja": "救援車を手配しています。今、お二人ともガードレールの外にいらっしゃいますか。",
+          "vi": "Chúng tôi đang điều xe cứu hộ. Cả hai người đang ở phía ngoài lan can phải không ạ?"
+        },
+        {
+          "id": "a62e5956-13f2-559f-8703-d67cdbbf48ad-u02",
+          "speaker_id": "A",
+          "ja": "はい、二人とも外にいます。ここで待っていればいいですか。それとも別の場所に移ったほうがいいですか。",
+          "vi": "Vâng, cả hai đã ra ngoài. Chúng tôi đợi tại đây hay nên sang chỗ khác ạ?"
+        },
+        {
+          "id": "a62e5956-13f2-559f-8703-d67cdbbf48ad-u03",
+          "speaker_id": "B",
+          "ja": "今いる安全な場所でお待ちください。救援車が近づいたら、こちらからこの番号に連絡します。車には戻らないでください。",
+          "vi": "Hai người đợi ở vị trí an toàn hiện tại nhé. Khi xe đến gần, chúng tôi gọi vào số này. Xin đừng quay lại xe."
+        },
+        {
+          "id": "a62e5956-13f2-559f-8703-d67cdbbf48ad-u04",
+          "speaker_id": "A",
+          "ja": "わかりました。車には戻らず、ここで電話を取れるようにしておきます。",
+          "vi": "Tôi hiểu rồi. Chúng tôi sẽ ở đây, không quay lại xe, và để điện thoại sẵn để nghe."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jaf"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a62e5956-13f2-559f-8703-d67cdbbf48ad-u01": {
+            "kind": "original_extension"
+          },
+          "a62e5956-13f2-559f-8703-d67cdbbf48ad-u02": {
+            "kind": "original_extension"
+          },
+          "a62e5956-13f2-559f-8703-d67cdbbf48ad-u03": {
+            "kind": "original_extension"
+          },
+          "a62e5956-13f2-559f-8703-d67cdbbf48ad-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6d4d0e85-5b4f-5749-92ad-3800728acdbe",
+      "event_id": "E01",
+      "context_vi": "Xe đã dừng trong bãi đỗ. Kỹ thuật viên báo không sửa được tại bãi và bạn gọi đơn vị cứu hộ để hỏi kéo xe.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Tài xế Mori",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên cứu hộ xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6d4d0e85-5b4f-5749-92ad-3800728acdbe-u01",
+          "speaker_id": "A",
+          "ja": "作業員の方から、ここでは直せないと言われました。いつも使っている南町の整備工場まで運んでもらえますか。",
+          "vi": "Nhân viên kỹ thuật bảo ở đây không sửa được. Các anh kéo xe tới xưởng tôi vẫn dùng ở Minamimachi được không ạ?"
+        },
+        {
+          "id": "6d4d0e85-5b4f-5749-92ad-3800728acdbe-u02",
+          "speaker_id": "B",
+          "ja": "工場が今日受け入れできるなら手配できます。今、工場と連絡は取れますか。",
+          "vi": "Nếu hôm nay xưởng nhận được xe thì chúng tôi có thể sắp xếp. Chị liên lạc được với xưởng không ạ?"
+        },
+        {
+          "id": "6d4d0e85-5b4f-5749-92ad-3800728acdbe-u03",
+          "speaker_id": "A",
+          "ja": "さっき電話したら、今日受け入れられるそうです。住所も手元にあります。費用は手配する前に確認できますか。",
+          "vi": "Tôi vừa gọi, họ nói hôm nay nhận được. Tôi cũng có địa chỉ đây. Tôi xem chi phí trước khi điều xe được không ạ?"
+        },
+        {
+          "id": "6d4d0e85-5b4f-5749-92ad-3800728acdbe-u04",
+          "speaker_id": "B",
+          "ja": "はい。住所を伺って、距離と料金を調べます。そのあと車が来る時間もお伝えします。",
+          "vi": "Được ạ. Tôi xin địa chỉ để tính quãng đường và kiểm giá. Sau đó tôi báo cả giờ dự kiến xe đến."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jaf"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6d4d0e85-5b4f-5749-92ad-3800728acdbe-u01": {
+            "kind": "original_extension"
+          },
+          "6d4d0e85-5b4f-5749-92ad-3800728acdbe-u02": {
+            "kind": "original_extension"
+          },
+          "6d4d0e85-5b4f-5749-92ad-3800728acdbe-u03": {
+            "kind": "original_extension"
+          },
+          "6d4d0e85-5b4f-5749-92ad-3800728acdbe-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c",
+      "event_id": "E01",
+      "context_vi": "Đơn vị đã tra đường tới xưởng Minamimachi sau khi báo xe không sửa tại chỗ. Bạn vừa đồng ý với giá được báo, giờ xác nhận mốc và số gọi lại.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Tài xế Mori",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên cứu hộ xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c-u01",
+          "speaker_id": "B",
+          "ja": "では、南町の整備工場までのレッカー車を手配しました。到着は15時半ごろです。折り返しは今お使いの番号でよろしいですか。",
+          "vi": "Vậy tôi đã điều xe kéo tới xưởng Minamimachi. Xe dự kiến tới khoảng 15 giờ 30. Chúng tôi gọi lại số chị đang dùng được chứ ạ?"
+        },
+        {
+          "id": "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c-u02",
+          "speaker_id": "A",
+          "ja": "はい、この番号で受けられます。逆に、15時半を過ぎても連絡がなければ、私からはどこに電話すればいいですか。",
+          "vi": "Vâng, tôi nghe được ở số này. Còn nếu quá 15 giờ 30 mà chưa có tin, tôi gọi ở đâu ạ?"
+        },
+        {
+          "id": "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c-u03",
+          "speaker_id": "B",
+          "ja": "今おかけの受付窓口の電話番号で大丈夫です。担当につなぎますので、受付番号の54をお伝えください。",
+          "vi": "Chị gọi lại số tổng đài này là được. Chị đọc mã tiếp nhận 54 để tôi nối người phụ trách."
+        },
+        {
+          "id": "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c-u04",
+          "speaker_id": "A",
+          "ja": "15時半ごろ到着予定で、連絡がなければこの窓口に電話して54ですね。",
+          "vi": "Dự kiến xe đến khoảng 15 giờ 30. Nếu chưa có tin thì tôi gọi lại tổng đài này và đọc mã 54 nhỉ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "jaf",
+          "phone"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c-u01": {
+            "kind": "original_extension"
+          },
+          "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c-u02": {
+            "kind": "original_extension"
+          },
+          "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c-u03": {
+            "kind": "original_extension"
+          },
+          "0f69ed90-ccb1-5f83-ba92-b6f86d5a497c-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "39b2db23-51b6-51fe-bc75-86ebec6cbf6e",
+      "event_id": "E02",
+      "context_vi": "Bạn đang chờ đơn vị cứu hộ vì xe hỏng, còn bạn mình sắp tới chỗ hẹn ăn trưa.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori gọi báo trễ",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Bạn đang chờ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "39b2db23-51b6-51fe-bc75-86ebec6cbf6e-u01",
+          "speaker_id": "A",
+          "ja": "ごめん、来る途中で車が動かなくなっちゃって。今、駐車場でロードサービスを待ってる。",
+          "vi": "Xin lỗi, xe tớ hỏng giữa đường. Giờ tớ đang ở bãi đỗ chờ cứu hộ."
+        },
+        {
+          "id": "39b2db23-51b6-51fe-bc75-86ebec6cbf6e-u02",
+          "speaker_id": "B",
+          "ja": "じゃあ、お昼の予約には間に合わなさそう？ お店に伝えようか。",
+          "vi": "Vậy chắc không kịp giờ đặt ăn trưa nhỉ? Để tớ báo quán nhé?"
+        },
+        {
+          "id": "39b2db23-51b6-51fe-bc75-86ebec6cbf6e-u03",
+          "speaker_id": "A",
+          "ja": "うん、到着時間がまだ出てないから、私の分は待たなくていいって伝えて。あとで行けそうなら連絡する。",
+          "vi": "Ừ, tớ chưa biết giờ xe cứu hộ tới. Cậu bảo quán không cần đợi phần tớ nhé. Lát nữa nếu đến được tớ sẽ báo."
+        },
+        {
+          "id": "39b2db23-51b6-51fe-bc75-86ebec6cbf6e-u04",
+          "speaker_id": "B",
+          "ja": "わかった。先に入るね。今日会うのが無理なら、また別の日にしよう。",
+          "vi": "Ừ. Tớ vào trước nhé. Nếu cậu không tới được thì để dịp khác gặp."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [
+          "sj-trung-33-b11-65"
+        ],
+        "turn_origins": {
+          "39b2db23-51b6-51fe-bc75-86ebec6cbf6e-u01": {
+            "kind": "original_extension"
+          },
+          "39b2db23-51b6-51fe-bc75-86ebec6cbf6e-u02": {
+            "kind": "original_extension"
+          },
+          "39b2db23-51b6-51fe-bc75-86ebec6cbf6e-u03": {
+            "kind": "original_extension"
+          },
+          "39b2db23-51b6-51fe-bc75-86ebec6cbf6e-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ae379f2c-4a3b-5367-8346-916cfe3ae552",
+      "event_id": "E02",
+      "context_vi": "Sau va chạm, bạn đã gọi báo sự việc. Bạn đang ở vị trí an toàn nhưng cổ tay đau tăng nên báo người nhà rằng mình cần được hỗ trợ.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori vừa va chạm",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Người nhà",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ae379f2c-4a3b-5367-8346-916cfe3ae552-u01",
+          "speaker_id": "B",
+          "ja": "電話できるところにいる？ けがはない？",
+          "vi": "Cậu đang ở chỗ gọi điện được chứ? Có bị thương không?"
+        },
+        {
+          "id": "ae379f2c-4a3b-5367-8346-916cfe3ae552-u02",
+          "speaker_id": "A",
+          "ja": "歩道の安全な所にいるよ。でも右手首の痛みが強くなってきた。迎えより、先に救急の指示を聞くね。",
+          "vi": "Tớ đang ở chỗ an toàn trên vỉa hè. Nhưng cổ tay phải đau tăng lên. Tớ sẽ hỏi bên cấp cứu trước, cậu khoan tới đón."
+        },
+        {
+          "id": "ae379f2c-4a3b-5367-8346-916cfe3ae552-u03",
+          "speaker_id": "B",
+          "ja": "わかった。じゃあ、この電話は切るね。そっちを優先して。",
+          "vi": "Ừ. Vậy tớ cúp máy nhé, cậu lo gọi bên đó trước đi."
+        },
+        {
+          "id": "ae379f2c-4a3b-5367-8346-916cfe3ae552-u04",
+          "speaker_id": "A",
+          "ja": "うん。落ち着いてから、どこに向かうか連絡する。",
+          "vi": "Ừ. Khi ổn rồi tớ báo mình sẽ tới đâu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "isa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ae379f2c-4a3b-5367-8346-916cfe3ae552-u01": {
+            "kind": "original_extension"
+          },
+          "ae379f2c-4a3b-5367-8346-916cfe3ae552-u02": {
+            "kind": "original_extension"
+          },
+          "ae379f2c-4a3b-5367-8346-916cfe3ae552-u03": {
+            "kind": "original_extension"
+          },
+          "ae379f2c-4a3b-5367-8346-916cfe3ae552-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "01cf35ee-a0ca-5456-93ff-80e7a683f56d",
+      "event_id": "E02",
+      "context_vi": "Xe bạn hỏng khi đang mang tài liệu đến một cuộc họp. Bạn đã đỗ ở bãi có người trực, còn đồng nghiệp cần tài liệu trước 14 giờ.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori đang giữ đồ",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Đồng nghiệp cần nhận đồ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "01cf35ee-a0ca-5456-93ff-80e7a683f56d-u01",
+          "speaker_id": "B",
+          "ja": "14時の打ち合わせまでに、車に積んである資料が要るんだ。今いる場所まで、誰か取りに行けるかな。",
+          "vi": "Tớ cần tài liệu trên xe trước cuộc họp lúc 14 giờ. Có ai tới chỗ cậu lấy được không?"
+        },
+        {
+          "id": "01cf35ee-a0ca-5456-93ff-80e7a683f56d-u02",
+          "speaker_id": "A",
+          "ja": "私はここを離れられないけど、田中さんなら近くにいるよね。来られるなら、駐車場の受付前で渡せる。",
+          "vi": "Tớ không rời đây được, nhưng Tanaka đang ở gần nhỉ. Nếu Tanaka tới được, tớ giao trước quầy bãi xe."
+        },
+        {
+          "id": "01cf35ee-a0ca-5456-93ff-80e7a683f56d-u03",
+          "speaker_id": "B",
+          "ja": "田中さんに聞いてみる。間に合わないと言われたら、打ち合わせは予備の資料で始めるね。",
+          "vi": "Để tớ hỏi Tanaka. Nếu Tanaka bảo không kịp, tớ sẽ bắt đầu họp với bộ tài liệu dự phòng."
+        },
+        {
+          "id": "01cf35ee-a0ca-5456-93ff-80e7a683f56d-u04",
+          "speaker_id": "A",
+          "ja": "お願い。田中さんが来ることになったら、到着の目安を教えて。受付前に出るから。",
+          "vi": "Nhờ cậu nhé. Nếu Tanaka tới được thì báo tớ khoảng mấy giờ. Tớ sẽ ra trước quầy."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "01cf35ee-a0ca-5456-93ff-80e7a683f56d-u01": {
+            "kind": "original_extension"
+          },
+          "01cf35ee-a0ca-5456-93ff-80e7a683f56d-u02": {
+            "kind": "original_extension"
+          },
+          "01cf35ee-a0ca-5456-93ff-80e7a683f56d-u03": {
+            "kind": "original_extension"
+          },
+          "01cf35ee-a0ca-5456-93ff-80e7a683f56d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1b05ae7b-70f5-5292-8443-1db2967a9209",
+      "event_id": "E02",
+      "context_vi": "Bạn đã vào bãi đỗ an toàn vì xe hỏng và gọi cứu hộ. Người đang chờ nghe tin đã tiếp nhận yêu cầu và tưởng bạn đang đi tiếp.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori chờ cứu hộ",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Người đang chờ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1b05ae7b-70f5-5292-8443-1db2967a9209-u01",
+          "speaker_id": "B",
+          "ja": "手配できたんだね。じゃあ、もうこっちに向かってる？",
+          "vi": "Điều xe được rồi nhỉ. Vậy cậu đang trên đường tới đây à?"
+        },
+        {
+          "id": "1b05ae7b-70f5-5292-8443-1db2967a9209-u02",
+          "speaker_id": "A",
+          "ja": "まだ向かってないよ。受付が済んだだけで、車は道の駅の駐車場にある。救援車はまだ来てない。",
+          "vi": "Tớ vẫn chưa đi. Họ mới tiếp nhận thôi, xe tớ vẫn ở bãi điểm nghỉ. Xe cứu hộ chưa tới."
+        },
+        {
+          "id": "1b05ae7b-70f5-5292-8443-1db2967a9209-u03",
+          "speaker_id": "B",
+          "ja": "そうか、手配と到着を勘違いしてた。じゃあ、時間は決めずに待ってるね。",
+          "vi": "Ra vậy, tớ tưởng điều xe là xe tới rồi. Vậy tớ cứ đợi tin, chưa chốt giờ nhé."
+        },
+        {
+          "id": "1b05ae7b-70f5-5292-8443-1db2967a9209-u04",
+          "speaker_id": "A",
+          "ja": "うん。救援車が着いて、この先どうするか分かったら連絡する。",
+          "vi": "Ừ. Khi xe cứu hộ tới và tớ biết tiếp theo làm gì, tớ báo cậu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "symptom"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1b05ae7b-70f5-5292-8443-1db2967a9209-u01": {
+            "kind": "original_extension"
+          },
+          "1b05ae7b-70f5-5292-8443-1db2967a9209-u02": {
+            "kind": "original_extension"
+          },
+          "1b05ae7b-70f5-5292-8443-1db2967a9209-u03": {
+            "kind": "original_extension"
+          },
+          "1b05ae7b-70f5-5292-8443-1db2967a9209-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ce7d3c33-a093-5d2a-a889-6d359d3e1286",
+      "event_id": "E02",
+      "context_vi": "Bạn đã nhắn rằng mình còn ở điểm nghỉ. Xe cứu hộ vừa đến, kiểm qua và nói phải kéo xe, nên bạn gọi cập nhật.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori chờ xe kéo",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Người đang chờ",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ce7d3c33-a093-5d2a-a889-6d359d3e1286-u01",
+          "speaker_id": "A",
+          "ja": "救援車、今着いたよ。見てもらったら、ここでは直せないって。車は工場に運んでもらうことになった。",
+          "vi": "Xe cứu hộ vừa tới. Họ xem rồi bảo ở đây không sửa được. Họ sẽ kéo xe tới xưởng."
+        },
+        {
+          "id": "ce7d3c33-a093-5d2a-a889-6d359d3e1286-u02",
+          "speaker_id": "B",
+          "ja": "じゃあ、そっちも工場に行くの？ 迎えに行くなら、どこがいい？",
+          "vi": "Vậy cậu cũng tới xưởng à? Nếu tớ ra đón thì đón ở đâu?"
+        },
+        {
+          "id": "ce7d3c33-a093-5d2a-a889-6d359d3e1286-u03",
+          "speaker_id": "A",
+          "ja": "車を引き渡したら、道の駅の入口に行ける。こっちに来られるなら、駐車場に着いてから電話してくれる？",
+          "vi": "Khi giao xe xong, tớ ra lối vào điểm nghỉ được. Nếu cậu tới được, đến bãi đỗ rồi gọi tớ nhé?"
+        },
+        {
+          "id": "ce7d3c33-a093-5d2a-a889-6d359d3e1286-u04",
+          "speaker_id": "B",
+          "ja": "行けるよ。着いたら駐車場から電話する。",
+          "vi": "Tớ tới được. Đến nơi tớ gọi từ bãi đỗ."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ce7d3c33-a093-5d2a-a889-6d359d3e1286-u01": {
+            "kind": "original_extension"
+          },
+          "ce7d3c33-a093-5d2a-a889-6d359d3e1286-u02": {
+            "kind": "original_extension"
+          },
+          "ce7d3c33-a093-5d2a-a889-6d359d3e1286-u03": {
+            "kind": "original_extension"
+          },
+          "ce7d3c33-a093-5d2a-a889-6d359d3e1286-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "899c3bf7-9c9a-5734-9b05-7c5a0f84afec",
+      "event_id": "E03",
+      "context_vi": "Xe của bạn va chạm với xe đạp. Cả hai đang ở vị trí an toàn ngoài luồng xe, người đi xe đạp đang ngồi và chưa rõ bị thương thế nào.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori sau va chạm",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Người đi xe đạp",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "899c3bf7-9c9a-5734-9b05-7c5a0f84afec-u01",
+          "speaker_id": "A",
+          "ja": "けがはありませんか。どこか痛いところはありますか。",
+          "vi": "Anh có bị thương không? Có đau ở đâu không ạ?"
+        },
+        {
+          "id": "899c3bf7-9c9a-5734-9b05-7c5a0f84afec-u02",
+          "speaker_id": "B",
+          "ja": "左の足首が痛いです。立てるかどうか分かりません。",
+          "vi": "Tôi đau mắt cá chân trái. Tôi không biết có đứng dậy được không."
+        },
+        {
+          "id": "899c3bf7-9c9a-5734-9b05-7c5a0f84afec-u03",
+          "speaker_id": "A",
+          "ja": "無理に立たないでください。救急車を呼びますね。意識ははっきりしていますか。",
+          "vi": "Anh đừng cố đứng dậy. Tôi gọi cấp cứu nhé. Anh vẫn tỉnh táo chứ ạ?"
+        },
+        {
+          "id": "899c3bf7-9c9a-5734-9b05-7c5a0f84afec-u04",
+          "speaker_id": "B",
+          "ja": "はい、話はできます。電話をお願いします。",
+          "vi": "Vâng, tôi vẫn nói chuyện được. Chị gọi giúp tôi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "isa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "899c3bf7-9c9a-5734-9b05-7c5a0f84afec-u01": {
+            "kind": "original_extension"
+          },
+          "899c3bf7-9c9a-5734-9b05-7c5a0f84afec-u02": {
+            "kind": "original_extension"
+          },
+          "899c3bf7-9c9a-5734-9b05-7c5a0f84afec-u03": {
+            "kind": "original_extension"
+          },
+          "899c3bf7-9c9a-5734-9b05-7c5a0f84afec-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "70d3ffd1-211b-508b-941a-777c8f49779e",
+      "event_id": "E03",
+      "context_vi": "Bạn gọi báo cảnh sát sau khi hai ô tô va chạm gần ngã tư giả định. Những người liên quan đã ra chỗ an toàn và chưa ai nói mình bị đau.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori gọi báo tai nạn",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên trực cảnh sát",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "70d3ffd1-211b-508b-941a-777c8f49779e-u01",
+          "speaker_id": "A",
+          "ja": "乗用車同士の事故です。青葉町の交差点から駅のほうに少し進んだ所で、車は２台です。",
+          "vi": "Hai ô tô va chạm ạ. Chỗ đó qua ngã tư Aobachō một đoạn về phía ga, có hai xe."
+        },
+        {
+          "id": "70d3ffd1-211b-508b-941a-777c8f49779e-u02",
+          "speaker_id": "B",
+          "ja": "近くに目印はありますか。けが人はいますか。",
+          "vi": "Có mốc nào gần đó không ạ? Có ai bị thương không?"
+        },
+        {
+          "id": "70d3ffd1-211b-508b-941a-777c8f49779e-u03",
+          "speaker_id": "A",
+          "ja": "青葉郵便局の前です。今のところ、痛みを訴えている人はいません。私の車は白で、ナンバーの下４桁は27-41です。",
+          "vi": "Trước bưu điện Aoba. Hiện chưa ai nói bị đau. Xe tôi màu trắng, bốn số cuối biển là 27-41."
+        },
+        {
+          "id": "70d3ffd1-211b-508b-941a-777c8f49779e-u04",
+          "speaker_id": "B",
+          "ja": "郵便局の前で２台ですね。警察官を向かわせます。今いる場所が安全なら、そこでお待ちください。",
+          "vi": "Hai xe trước bưu điện phải không ạ. Chúng tôi sẽ cử cảnh sát tới. Nếu chỗ chị đang đứng an toàn, chị chờ ở đó nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "police",
+          "isa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "70d3ffd1-211b-508b-941a-777c8f49779e-u01": {
+            "kind": "original_extension"
+          },
+          "70d3ffd1-211b-508b-941a-777c8f49779e-u02": {
+            "kind": "original_extension"
+          },
+          "70d3ffd1-211b-508b-941a-777c8f49779e-u03": {
+            "kind": "original_extension"
+          },
+          "70d3ffd1-211b-508b-941a-777c8f49779e-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1c2991ac-c857-5333-999d-0a4755064ea0",
+      "event_id": "E03",
+      "context_vi": "Cảnh sát đang lấy lời trình bày ở nơi an toàn. Người bên kia ước tính va chạm sớm hơn bạn nghe tiếng động.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori trình bày",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Cảnh sát tại hiện trường",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1c2991ac-c857-5333-999d-0a4755064ea0-u01",
+          "speaker_id": "B",
+          "ja": "もう一人の方は、14時前だったとおっしゃっています。森さんは時刻を確認しましたか。",
+          "vi": "Người kia nói trước 14 giờ. Chị Mori có xem giờ không?"
+        },
+        {
+          "id": "1c2991ac-c857-5333-999d-0a4755064ea0-u02",
+          "speaker_id": "A",
+          "ja": "衝突した瞬間は時計を見ていません。音を聞いて車を止めてから、14時２分だと確認しました。",
+          "vi": "Lúc va chạm tôi không nhìn giờ. Sau khi nghe tiếng động và dừng xe, tôi mới xem thì là 14 giờ 02."
+        },
+        {
+          "id": "1c2991ac-c857-5333-999d-0a4755064ea0-u03",
+          "speaker_id": "B",
+          "ja": "14時２分は停車したあとに確認した時刻で、衝突時刻は分からないということですね。",
+          "vi": "Tức 14 giờ 02 là giờ chị xem sau khi dừng xe, còn chính xác lúc va chạm thì chị không biết nhỉ."
+        },
+        {
+          "id": "1c2991ac-c857-5333-999d-0a4755064ea0-u04",
+          "speaker_id": "A",
+          "ja": "はい。私が確かに言えるのは、時計を見た時刻だけです。",
+          "vi": "Vâng. Tôi chỉ chắc giờ lúc nhìn đồng hồ thôi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe",
+          "police"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1c2991ac-c857-5333-999d-0a4755064ea0-u01": {
+            "kind": "original_extension"
+          },
+          "1c2991ac-c857-5333-999d-0a4755064ea0-u02": {
+            "kind": "original_extension"
+          },
+          "1c2991ac-c857-5333-999d-0a4755064ea0-u03": {
+            "kind": "original_extension"
+          },
+          "1c2991ac-c857-5333-999d-0a4755064ea0-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "b4cdd893-aaea-58be-a455-001b7bcc3c26",
+      "event_id": "E03",
+      "context_vi": "Bạn báo hai ô tô va chạm và được dặn chờ. Bạn đứng trước lối vào bưu điện và muốn biết chờ ở đâu an toàn, ai đang đến.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori đang chờ cảnh sát",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên trực cảnh sát",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "b4cdd893-aaea-58be-a455-001b7bcc3c26-u01",
+          "speaker_id": "B",
+          "ja": "警察官がそちらに向かっています。周りの交通に気をつけて、その近くでお待ちください。",
+          "vi": "Cảnh sát đang tới. Chị để ý xe cộ và đợi gần chỗ đó nhé."
+        },
+        {
+          "id": "b4cdd893-aaea-58be-a455-001b7bcc3c26-u02",
+          "speaker_id": "A",
+          "ja": "今は郵便局の入口にいます。車はそこから見えますが、道路に出ず、入口の脇で待てばいいですか。",
+          "vi": "Tôi đang ở lối vào bưu điện. Từ đây nhìn thấy xe. Tôi đứng bên cạnh cửa, không bước xuống đường, được không ạ?"
+        },
+        {
+          "id": "b4cdd893-aaea-58be-a455-001b7bcc3c26-u03",
+          "speaker_id": "B",
+          "ja": "はい、通行の邪魔にならず安全ならそこでお待ちください。到着した警察官に、森さんだとお伝えください。",
+          "vi": "Được ạ, nếu an toàn và không cản lối đi thì chị chờ ở đó. Khi cảnh sát đến, chị nói mình là Mori."
+        },
+        {
+          "id": "b4cdd893-aaea-58be-a455-001b7bcc3c26-u04",
+          "speaker_id": "A",
+          "ja": "わかりました。入口の脇にいて、警察官が来たら名前を伝えます。",
+          "vi": "Tôi hiểu rồi. Tôi chờ bên cạnh cửa và nói tên khi cảnh sát tới."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "police",
+          "isa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "b4cdd893-aaea-58be-a455-001b7bcc3c26-u01": {
+            "kind": "original_extension"
+          },
+          "b4cdd893-aaea-58be-a455-001b7bcc3c26-u02": {
+            "kind": "original_extension"
+          },
+          "b4cdd893-aaea-58be-a455-001b7bcc3c26-u03": {
+            "kind": "original_extension"
+          },
+          "b4cdd893-aaea-58be-a455-001b7bcc3c26-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d0e7952e-8c77-59a4-9d31-c3c8c54bb585",
+      "event_id": "E03",
+      "context_vi": "Bạn đã chờ an toàn bên cửa bưu điện. Cảnh sát vừa đến, bạn xưng tên và hỏi chuẩn bị gì để trình bày sự việc.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori báo tại chỗ",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Cảnh sát vừa đến",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d0e7952e-8c77-59a4-9d31-c3c8c54bb585-u01",
+          "speaker_id": "A",
+          "ja": "連絡した森です。電話で言われたとおり、ここで待っていました。次は何をすればいいですか。",
+          "vi": "Tôi là Mori, người gọi báo. Tôi đã đợi ở đây theo lời dặn qua điện thoại. Giờ tôi cần làm gì ạ?"
+        },
+        {
+          "id": "d0e7952e-8c77-59a4-9d31-c3c8c54bb585-u02",
+          "speaker_id": "B",
+          "ja": "まず、今痛む所がないか伺います。そのあと、安全なここで、事故の前後を順に教えてください。",
+          "vi": "Trước hết tôi hỏi xem giờ chị có đau đâu không. Sau đó mình đứng ở chỗ an toàn này, chị kể lần lượt trước và sau khi va chạm nhé."
+        },
+        {
+          "id": "d0e7952e-8c77-59a4-9d31-c3c8c54bb585-u03",
+          "speaker_id": "A",
+          "ja": "今のところ痛い所はありません。車の位置はここから指せます。先に、どちらから来たかをお話しすればいいですか。",
+          "vi": "Hiện tôi không thấy đau. Từ đây tôi chỉ được vị trí xe. Tôi nói mình đi từ phía nào tới trước phải không ạ?"
+        },
+        {
+          "id": "d0e7952e-8c77-59a4-9d31-c3c8c54bb585-u04",
+          "speaker_id": "B",
+          "ja": "はい、その順でお願いします。分からない点はそのまま分からないと言ってください。",
+          "vi": "Vâng, chị kể theo thứ tự đó nhé. Chỗ nào chưa rõ cứ nói chị chưa rõ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "police",
+          "isa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d0e7952e-8c77-59a4-9d31-c3c8c54bb585-u01": {
+            "kind": "original_extension"
+          },
+          "d0e7952e-8c77-59a4-9d31-c3c8c54bb585-u02": {
+            "kind": "original_extension"
+          },
+          "d0e7952e-8c77-59a4-9d31-c3c8c54bb585-u03": {
+            "kind": "original_extension"
+          },
+          "d0e7952e-8c77-59a4-9d31-c3c8c54bb585-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "af702112-1807-5c12-b7dd-3ee2ea5899b1",
+      "event_id": "E04",
+      "context_vi": "Bạn và người lái xe còn lại đang nói chuyện ở một chỗ an toàn, cảnh sát đã được báo. Người kia muốn biết bạn đã nhìn thấy gì trước lúc hai xe chạm nhau.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori lái xe",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Tài xế bên kia",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "af702112-1807-5c12-b7dd-3ee2ea5899b1-u01",
+          "speaker_id": "B",
+          "ja": "ぶつかる前、私の車が見えていましたか。",
+          "vi": "Trước lúc va, chị có nhìn thấy xe tôi không?"
+        },
+        {
+          "id": "af702112-1807-5c12-b7dd-3ee2ea5899b1-u02",
+          "speaker_id": "A",
+          "ja": "私の車は交差点の手前にいて、右から白い車が来るのは見えました。そのあと音がして、止まりました。",
+          "vi": "Xe tôi ở trước ngã tư, tôi thấy một xe trắng tới từ bên phải. Sau đó có tiếng động và tôi dừng xe."
+        },
+        {
+          "id": "af702112-1807-5c12-b7dd-3ee2ea5899b1-u03",
+          "speaker_id": "B",
+          "ja": "右から来た車の速度も分かりましたか。",
+          "vi": "Chị có biết xe từ bên phải chạy nhanh thế nào không?"
+        },
+        {
+          "id": "af702112-1807-5c12-b7dd-3ee2ea5899b1-u04",
+          "speaker_id": "A",
+          "ja": "速度までは分かりません。見えた位置と、音のあとに止まったことを警察官に伝えます。",
+          "vi": "Tôi không biết tốc độ. Tôi sẽ nói với cảnh sát vị trí tôi nhìn thấy xe và việc tôi dừng sau tiếng động."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "af702112-1807-5c12-b7dd-3ee2ea5899b1-u01": {
+            "kind": "original_extension"
+          },
+          "af702112-1807-5c12-b7dd-3ee2ea5899b1-u02": {
+            "kind": "original_extension"
+          },
+          "af702112-1807-5c12-b7dd-3ee2ea5899b1-u03": {
+            "kind": "original_extension"
+          },
+          "af702112-1807-5c12-b7dd-3ee2ea5899b1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "46e7b3b0-1690-5bd0-b9d4-0a097636106f",
+      "event_id": "E04",
+      "context_vi": "Cảnh sát tại chỗ đã hướng dẫn hai bên trao đổi tên và số có thể liên hệ. Bạn hỏi người lái xe kia cách nói tên và giữ đúng phạm vi đã được hướng dẫn.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori trao đổi thông tin",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Tài xế bên kia",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "46e7b3b0-1690-5bd0-b9d4-0a097636106f-u01",
+          "speaker_id": "A",
+          "ja": "警察官から、名前と連絡先を確認するように言われました。森と申します。お名前と、連絡のつく番号を伺ってもいいですか。",
+          "vi": "Cảnh sát bảo mình xác nhận tên và cách liên lạc. Tôi là Mori. Anh cho tôi xin tên và số có thể liên lạc được không ạ?"
+        },
+        {
+          "id": "46e7b3b0-1690-5bd0-b9d4-0a097636106f-u02",
+          "speaker_id": "B",
+          "ja": "中島といいます。真ん中の「中」に「島」と書きます。日中は仕事で出られないことがあるので、不在なら折り返します。",
+          "vi": "Tôi là Nakajima, viết chữ 中 rồi tới chữ 島. Ban ngày có lúc tôi bận việc không nghe được. Nếu lỡ cuộc gọi tôi sẽ gọi lại."
+        },
+        {
+          "id": "46e7b3b0-1690-5bd0-b9d4-0a097636106f-u03",
+          "speaker_id": "A",
+          "ja": "中島さんですね。私の番号もお伝えします。事故の連絡だと分かるよう、最初に名前を名乗りますね。",
+          "vi": "Anh Nakajima nhỉ. Tôi cũng sẽ đưa số của tôi. Khi gọi, tôi xưng tên trước để anh biết là việc vụ va chạm nhé."
+        },
+        {
+          "id": "46e7b3b0-1690-5bd0-b9d4-0a097636106f-u04",
+          "speaker_id": "B",
+          "ja": "お願いします。番号はここに書きますので、間違っていないか一緒に確認しましょう。",
+          "vi": "Nhờ chị. Tôi ghi số ở đây, mình cùng kiểm cho khỏi sai nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "46e7b3b0-1690-5bd0-b9d4-0a097636106f-u01": {
+            "kind": "original_extension"
+          },
+          "46e7b3b0-1690-5bd0-b9d4-0a097636106f-u02": {
+            "kind": "original_extension"
+          },
+          "46e7b3b0-1690-5bd0-b9d4-0a097636106f-u03": {
+            "kind": "original_extension"
+          },
+          "46e7b3b0-1690-5bd0-b9d4-0a097636106f-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "53d9cb41-6377-5fa9-a5a6-38e4137866ff",
+      "event_id": "E04",
+      "context_vi": "Cả hai đã ở chỗ an toàn và đã báo cảnh sát. Người bên kia muốn hai người chốt chi phí sửa xe ngay tại hiện trường.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori trao đổi sau va chạm",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Tài xế bên kia",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "53d9cb41-6377-5fa9-a5a6-38e4137866ff-u01",
+          "speaker_id": "B",
+          "ja": "大きな傷ではないですし、修理代をどちらが払うか、ここで決めませんか。",
+          "vi": "Vết xước không lớn, mình quyết luôn ai trả tiền sửa ở đây được không?"
+        },
+        {
+          "id": "53d9cb41-6377-5fa9-a5a6-38e4137866ff-u02",
+          "speaker_id": "A",
+          "ja": "今は修理代の約束はできません。まず警察の確認を受けて、それから保険会社に相談します。",
+          "vi": "Lúc này tôi chưa thể hứa về tiền sửa. Trước hết để cảnh sát xác nhận sự việc, rồi tôi hỏi bên bảo hiểm."
+        },
+        {
+          "id": "53d9cb41-6377-5fa9-a5a6-38e4137866ff-u03",
+          "speaker_id": "B",
+          "ja": "じゃあ、今日ここで金額まで決めるのはなしですね。連絡先だけ交換しますか。",
+          "vi": "Vậy hôm nay khoan chốt số tiền tại đây. Mình chỉ trao đổi cách liên lạc thôi nhé?"
+        },
+        {
+          "id": "53d9cb41-6377-5fa9-a5a6-38e4137866ff-u04",
+          "speaker_id": "A",
+          "ja": "はい。警察官の案内に従って、必要な連絡先は確認しましょう。",
+          "vi": "Vâng. Mình xác nhận thông tin liên lạc cần thiết theo hướng dẫn của cảnh sát nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "insurance",
+          "isa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "53d9cb41-6377-5fa9-a5a6-38e4137866ff-u01": {
+            "kind": "original_extension"
+          },
+          "53d9cb41-6377-5fa9-a5a6-38e4137866ff-u02": {
+            "kind": "original_extension"
+          },
+          "53d9cb41-6377-5fa9-a5a6-38e4137866ff-u03": {
+            "kind": "original_extension"
+          },
+          "53d9cb41-6377-5fa9-a5a6-38e4137866ff-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5183fbc7-f74c-5ecf-9a57-11d8a087d585",
+      "event_id": "E04",
+      "context_vi": "Hai người nhớ khác nhau về vị trí xe so với vạch qua đường. Cả hai đang ở vỉa hè an toàn, có thể chỉ các mốc nhìn thấy từ đây.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori mô tả vị trí",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Tài xế bên kia",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5183fbc7-f74c-5ecf-9a57-11d8a087d585-u01",
+          "speaker_id": "B",
+          "ja": "ぶつかったのは横断歩道を過ぎてからでしたよね。",
+          "vi": "Mình va nhau sau khi đã qua vạch sang đường nhỉ?"
+        },
+        {
+          "id": "5183fbc7-f74c-5ecf-9a57-11d8a087d585-u02",
+          "speaker_id": "A",
+          "ja": "私は横断歩道の手前だと思っていました。今言っているのは、郵便局側の横断歩道ですか。",
+          "vi": "Tôi nhớ là trước vạch. Anh đang nói phần vạch ở phía bưu điện phải không?"
+        },
+        {
+          "id": "5183fbc7-f74c-5ecf-9a57-11d8a087d585-u03",
+          "speaker_id": "B",
+          "ja": "あ、私は交差点の反対側のほうを指していました。見ている横断歩道が違ったんですね。",
+          "vi": "À, tôi đang chỉ phần bên kia ngã tư. Hai bên đang nói tới hai vạch khác nhau nhỉ."
+        },
+        {
+          "id": "5183fbc7-f74c-5ecf-9a57-11d8a087d585-u04",
+          "speaker_id": "A",
+          "ja": "じゃあ、郵便局と交差点を目印にして、それぞれどこだと思ったかをここから警察官に示しましょう。",
+          "vi": "Vậy lấy bưu điện và ngã tư làm mốc, rồi mình đứng đây chỉ cho cảnh sát xem mỗi người nhớ vị trí nào nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe",
+          "police"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5183fbc7-f74c-5ecf-9a57-11d8a087d585-u01": {
+            "kind": "original_extension"
+          },
+          "5183fbc7-f74c-5ecf-9a57-11d8a087d585-u02": {
+            "kind": "original_extension"
+          },
+          "5183fbc7-f74c-5ecf-9a57-11d8a087d585-u03": {
+            "kind": "original_extension"
+          },
+          "5183fbc7-f74c-5ecf-9a57-11d8a087d585-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c9d156bb-ee40-5a47-a43e-8c7561fd8f93",
+      "event_id": "E04",
+      "context_vi": "Sau khi nghe cả hai, bạn thấy người kia kể thứ tự sự việc khác mình. Bạn báo riêng phần khác với cảnh sát đang ghi nhận.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori báo lời kể khác nhau",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Cảnh sát ghi nhận",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c9d156bb-ee40-5a47-a43e-8c7561fd8f93-u01",
+          "speaker_id": "A",
+          "ja": "相手の方は、私が先に動いたとおっしゃっています。私が覚えているのは、ブレーキを踏んでいたときに音がしたことです。",
+          "vi": "Người kia nói tôi di chuyển trước. Điều tôi nhớ là khi đang đạp phanh thì nghe tiếng va."
+        },
+        {
+          "id": "c9d156bb-ee40-5a47-a43e-8c7561fd8f93-u02",
+          "speaker_id": "B",
+          "ja": "相手の説明を聞く前から覚えていたことは、その音とブレーキですね。車が完全に止まっていたかは分かりますか。",
+          "vi": "Điều chị nhớ từ trước khi nghe phía bên kia là tiếng va và việc đạp phanh. Chị có biết xe đã dừng hẳn chưa không?"
+        },
+        {
+          "id": "c9d156bb-ee40-5a47-a43e-8c7561fd8f93-u03",
+          "speaker_id": "A",
+          "ja": "完全に止まっていたかまでは自信がありません。そこは、私には分からないと記録していただけますか。",
+          "vi": "Tôi không dám chắc xe đã dừng hẳn. Anh ghi giúp là tôi không biết rõ phần đó được không ạ?"
+        },
+        {
+          "id": "c9d156bb-ee40-5a47-a43e-8c7561fd8f93-u04",
+          "speaker_id": "B",
+          "ja": "わかりました。それぞれのお話と、森さんが確認できていない点を分けて記録します。",
+          "vi": "Được. Tôi sẽ ghi riêng lời của mỗi bên và phần chị Mori chưa xác nhận được."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe",
+          "police"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c9d156bb-ee40-5a47-a43e-8c7561fd8f93-u01": {
+            "kind": "original_extension"
+          },
+          "c9d156bb-ee40-5a47-a43e-8c7561fd8f93-u02": {
+            "kind": "original_extension"
+          },
+          "c9d156bb-ee40-5a47-a43e-8c7561fd8f93-u03": {
+            "kind": "original_extension"
+          },
+          "c9d156bb-ee40-5a47-a43e-8c7561fd8f93-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2c4700b2-db07-5760-a7fb-31368dd58bf3",
+      "event_id": "E05",
+      "context_vi": "Sau va chạm, mọi người đã ra chỗ an toàn và cảnh sát đã đến. Bạn gọi cửa hàng đã cho mình thuê xe để tóm tắt.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori gọi hãng thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên hãng thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2c4700b2-db07-5760-a7fb-31368dd58bf3-u01",
+          "speaker_id": "A",
+          "ja": "今日そちらで車を借りた森です。14時ごろ青葉郵便局の前で車同士の事故があって、警察には連絡済みです。",
+          "vi": "Tôi là Mori, hôm nay thuê xe ở chỗ anh. Khoảng 14 giờ, hai xe va chạm trước bưu điện Aoba. Tôi đã báo cảnh sát rồi ạ."
+        },
+        {
+          "id": "2c4700b2-db07-5760-a7fb-31368dd58bf3-u02",
+          "speaker_id": "B",
+          "ja": "分かりました。今、けがのある方はいらっしゃいますか。お車の場所も分かりますか。",
+          "vi": "Tôi hiểu rồi. Hiện có ai bị thương không ạ? Chị có biết xe đang ở đâu không?"
+        },
+        {
+          "id": "2c4700b2-db07-5760-a7fb-31368dd58bf3-u03",
+          "speaker_id": "A",
+          "ja": "今のところ、痛いと言っている人はいません。車は現場近くの安全な所に止めています。まだレッカーは頼んでいません。",
+          "vi": "Hiện chưa ai nói bị đau. Xe đang đỗ ở chỗ an toàn gần hiện trường. Tôi chưa gọi kéo xe."
+        },
+        {
+          "id": "2c4700b2-db07-5760-a7fb-31368dd58bf3-u04",
+          "speaker_id": "B",
+          "ja": "では、ご契約を確認します。車を動かす前に、今の状況を担当と共有しますね。",
+          "vi": "Vậy tôi kiểm hợp đồng. Trước khi di chuyển xe, tôi sẽ báo người phụ trách tình hình hiện tại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rent",
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2c4700b2-db07-5760-a7fb-31368dd58bf3-u01": {
+            "kind": "original_extension"
+          },
+          "2c4700b2-db07-5760-a7fb-31368dd58bf3-u02": {
+            "kind": "original_extension"
+          },
+          "2c4700b2-db07-5760-a7fb-31368dd58bf3-u03": {
+            "kind": "original_extension"
+          },
+          "2c4700b2-db07-5760-a7fb-31368dd58bf3-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "94541660-d951-5b33-8770-7577e6a01db9",
+      "event_id": "E05",
+      "context_vi": "Cảnh sát đã tiếp nhận vụ va chạm. Bạn gọi bảo hiểm của mình, đã nói ngày và nơi xảy ra, giờ hỏi thông tin nào còn thiếu.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori báo bảo hiểm",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "94541660-d951-5b33-8770-7577e6a01db9-u01",
+          "speaker_id": "A",
+          "ja": "事故の場所と時間は先ほどお伝えしました。相手の方の連絡先のほかに、今すぐ必要な情報はありますか。",
+          "vi": "Lúc nãy tôi báo nơi và giờ xảy ra rồi. Ngoài thông tin liên lạc của người kia, bây giờ anh còn cần gì ngay không ạ?"
+        },
+        {
+          "id": "94541660-d951-5b33-8770-7577e6a01db9-u02",
+          "speaker_id": "B",
+          "ja": "まずお車のナンバーと、警察がどこの署だったかをお願いします。警察の受理番号は、お分かりならお伝えください。",
+          "vi": "Trước hết cho tôi biển số xe và tên đồn cảnh sát tiếp nhận. Mã tiếp nhận của cảnh sát thì chị cho tôi nếu biết ạ."
+        },
+        {
+          "id": "94541660-d951-5b33-8770-7577e6a01db9-u03",
+          "speaker_id": "A",
+          "ja": "ナンバーと署の名前は分かります。受理番号はまだ聞いていないので、分かったら追加で連絡していいですか。",
+          "vi": "Tôi biết biển số và tên đồn. Tôi chưa hỏi mã tiếp nhận, biết rồi tôi báo thêm được không ạ?"
+        },
+        {
+          "id": "94541660-d951-5b33-8770-7577e6a01db9-u04",
+          "speaker_id": "B",
+          "ja": "はい。今分かる情報で受け付け、後から同じ件に追加できます。",
+          "vi": "Được ạ. Tôi tiếp nhận với thông tin hiện có trước, sau đó bổ sung vào cùng hồ sơ được."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "phone",
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "94541660-d951-5b33-8770-7577e6a01db9-u01": {
+            "kind": "original_extension"
+          },
+          "94541660-d951-5b33-8770-7577e6a01db9-u02": {
+            "kind": "original_extension"
+          },
+          "94541660-d951-5b33-8770-7577e6a01db9-u03": {
+            "kind": "original_extension"
+          },
+          "94541660-d951-5b33-8770-7577e6a01db9-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a",
+      "event_id": "E05",
+      "context_vi": "Bạn đã đưa thông tin va chạm cho bảo hiểm. Hãng đang kiểm hợp đồng để xác định ai sắp xếp kéo xe và ai liên hệ người còn lại.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori chờ bảo hiểm phản hồi",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a-u01",
+          "speaker_id": "B",
+          "ja": "レッカーの手配と相手の方への連絡は、ご契約を確認してからご案内します。今の段階では、どちらもまだ手配していません。",
+          "vi": "Tôi sẽ báo cách điều xe kéo và liên hệ người kia sau khi kiểm hợp đồng. Lúc này cả hai việc đều chưa được thu xếp."
+        },
+        {
+          "id": "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a-u02",
+          "speaker_id": "A",
+          "ja": "私は今、安全な場所にいます。今日の何時ごろまでに、確認できたかどうかだけでも教えていただけますか。",
+          "vi": "Tôi đang ở nơi an toàn. Khoảng mấy giờ hôm nay anh có thể báo ít nhất là đã kiểm xong hay chưa ạ?"
+        },
+        {
+          "id": "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a-u03",
+          "speaker_id": "B",
+          "ja": "16時までにこの番号に折り返します。確認が途中でも、その時点で分かっていることをお伝えします。",
+          "vi": "Tôi sẽ gọi lại số này chậm nhất 16 giờ. Nếu vẫn đang kiểm, tôi sẽ báo phần đã rõ lúc đó."
+        },
+        {
+          "id": "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a-u04",
+          "speaker_id": "A",
+          "ja": "わかりました。16時まで待ちます。こちらではまだレッカーを依頼せず、電話を取れるようにしておきます。",
+          "vi": "Tôi hiểu rồi. Tôi đợi đến 16 giờ. Tôi chưa gọi xe kéo và sẽ để điện thoại sẵn để nghe."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "phone",
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a-u01": {
+            "kind": "original_extension"
+          },
+          "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a-u02": {
+            "kind": "original_extension"
+          },
+          "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a-u03": {
+            "kind": "original_extension"
+          },
+          "d4042e30-eb20-5f04-8c82-d2dd60f2ad2a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2ddf4483-c180-52d9-be65-a22f052ce2b0",
+      "event_id": "E05",
+      "context_vi": "Xưởng vừa báo giá sơ bộ và phát hiện có thể còn một hạng mục chưa kiểm. Bạn gọi bảo hiểm trước khi cho sửa xe.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori báo báo giá mới",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2ddf4483-c180-52d9-be65-a22f052ce2b0-u01",
+          "speaker_id": "A",
+          "ja": "車の件で受付番号54の森です。修理工場から、今見えている部分で６万円くらいと言われました。中の部品はまだ確認中です。",
+          "vi": "Tôi là Mori, gọi về xe theo mã tiếp nhận 54. Xưởng nói phần nhìn thấy hiện khoảng 60.000 yên. Linh kiện bên trong vẫn đang kiểm."
+        },
+        {
+          "id": "2ddf4483-c180-52d9-be65-a22f052ce2b0-u02",
+          "speaker_id": "B",
+          "ja": "まだ作業を始めるようには頼んでいないですか。",
+          "vi": "Chị chưa bảo xưởng bắt đầu sửa phải không ạ?"
+        },
+        {
+          "id": "2ddf4483-c180-52d9-be65-a22f052ce2b0-u03",
+          "speaker_id": "A",
+          "ja": "はい、見積もりを頼んだだけです。書面が出たら、どう送ればいいですか。",
+          "vi": "Vâng, tôi mới nhờ báo giá thôi. Có bản báo giá rồi tôi gửi thế nào ạ?"
+        },
+        {
+          "id": "2ddf4483-c180-52d9-be65-a22f052ce2b0-u04",
+          "speaker_id": "B",
+          "ja": "受付番号54を添えて、前にお伝えした窓口へお送りください。追加の見積もりがあれば、一緒に確認します。",
+          "vi": "Chị gửi tới đầu mối đã báo trước, kèm mã 54. Nếu có báo giá bổ sung, chúng tôi sẽ xem cùng luôn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "phone",
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2ddf4483-c180-52d9-be65-a22f052ce2b0-u01": {
+            "kind": "original_extension"
+          },
+          "2ddf4483-c180-52d9-be65-a22f052ce2b0-u02": {
+            "kind": "original_extension"
+          },
+          "2ddf4483-c180-52d9-be65-a22f052ce2b0-u03": {
+            "kind": "original_extension"
+          },
+          "2ddf4483-c180-52d9-be65-a22f052ce2b0-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e3f6842f-c64c-587d-a576-4e9c535104eb",
+      "event_id": "E05",
+      "context_vi": "Bảo hiểm gọi lại trong mốc 16 giờ đã hẹn. Hai việc vẫn chờ ở cuộc gọi trước là xe kéo và liên hệ với người bên kia.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori nhận gọi lại",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e3f6842f-c64c-587d-a576-4e9c535104eb-u01",
+          "speaker_id": "B",
+          "ja": "確認が取れました。この件では、レッカーはこちらで手配します。相手の方への最初の連絡も、当社の担当からいたします。",
+          "vi": "Tôi xác nhận được rồi. Vụ này chúng tôi sẽ thu xếp xe kéo. Người phụ trách bên tôi cũng sẽ liên hệ lần đầu với người kia."
+        },
+        {
+          "id": "e3f6842f-c64c-587d-a576-4e9c535104eb-u02",
+          "speaker_id": "A",
+          "ja": "では、私から別にレッカーを呼んだり、相手の方に費用の話をしたりする必要はないですね。私が次にすることは何ですか。",
+          "vi": "Vậy tôi không cần tự gọi thêm xe kéo hay bàn tiền với người kia nhỉ. Tiếp theo tôi cần làm gì ạ?"
+        },
+        {
+          "id": "e3f6842f-c64c-587d-a576-4e9c535104eb-u03",
+          "speaker_id": "B",
+          "ja": "車の鍵をお手元に置いて、到着時間の連絡をお待ちください。相手の方から連絡があれば、内容をこちらにお知らせください。",
+          "vi": "Chị giữ chìa khóa xe và chờ báo giờ xe tới. Nếu người kia liên lạc, chị báo lại cho chúng tôi nội dung trao đổi."
+        },
+        {
+          "id": "e3f6842f-c64c-587d-a576-4e9c535104eb-u04",
+          "speaker_id": "A",
+          "ja": "わかりました。車と相手への最初の連絡はそちらにお願いして、私は鍵を持って次の電話を待ちます。",
+          "vi": "Tôi hiểu rồi. Tôi nhờ bên anh thu xếp kéo xe và liên hệ người kia lần đầu. Tôi giữ chìa khóa và đợi cuộc gọi sau."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "phone",
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e3f6842f-c64c-587d-a576-4e9c535104eb-u01": {
+            "kind": "original_extension"
+          },
+          "e3f6842f-c64c-587d-a576-4e9c535104eb-u02": {
+            "kind": "original_extension"
+          },
+          "e3f6842f-c64c-587d-a576-4e9c535104eb-u03": {
+            "kind": "original_extension"
+          },
+          "e3f6842f-c64c-587d-a576-4e9c535104eb-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "da2e11bc-408e-5d3d-9209-d3ce800c7142",
+      "event_id": "E06",
+      "context_vi": "Ngày sau sự cố, xưởng báo đã kiểm xong bên ngoài nhưng còn phải kiểm phần dưới xe. Bạn gọi báo người nhà về kế hoạch sáng mai.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori báo tình hình xe",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Người nhà",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "da2e11bc-408e-5d3d-9209-d3ce800c7142-u01",
+          "speaker_id": "A",
+          "ja": "工場から連絡があって、外側にへこみがあるのは分かったって。下回りはこれから確認するそうだよ。",
+          "vi": "Xưởng vừa báo đã thấy chỗ móp bên ngoài. Còn gầm xe thì họ sẽ kiểm tiếp."
+        },
+        {
+          "id": "da2e11bc-408e-5d3d-9209-d3ce800c7142-u02",
+          "speaker_id": "B",
+          "ja": "じゃあ、明日の朝もまだ車は使えない？",
+          "vi": "Vậy sáng mai vẫn chưa dùng xe được à?"
+        },
+        {
+          "id": "da2e11bc-408e-5d3d-9209-d3ce800c7142-u03",
+          "speaker_id": "A",
+          "ja": "うん。直る日がまだ見えない。というわけで、明日の朝は電車で行くことにした。",
+          "vi": "Ừ. Chưa biết ngày nào xe xong. Thế nên sáng mai tớ quyết định đi tàu."
+        },
+        {
+          "id": "da2e11bc-408e-5d3d-9209-d3ce800c7142-u04",
+          "speaker_id": "B",
+          "ja": "分かった。車が使えるつもりで予定は入れないようにするね。",
+          "vi": "Ừ. Tớ sẽ tránh xếp lịch nào cần dùng xe."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "symptom"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-33-b12-36"
+        ],
+        "turn_origins": {
+          "da2e11bc-408e-5d3d-9209-d3ce800c7142-u01": {
+            "kind": "original_extension"
+          },
+          "da2e11bc-408e-5d3d-9209-d3ce800c7142-u02": {
+            "kind": "original_extension"
+          },
+          "da2e11bc-408e-5d3d-9209-d3ce800c7142-u03": {
+            "kind": "original_extension"
+          },
+          "da2e11bc-408e-5d3d-9209-d3ce800c7142-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ee522e66-86d9-5f09-81f2-f36e2013bc28",
+      "event_id": "E06",
+      "context_vi": "Xưởng đã tháo bộ phận để kiểm xe, chưa sửa xong. Bảo hiểm nghe “đã kiểm” và hỏi giờ lấy xe.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori đính chính tiến độ",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ee522e66-86d9-5f09-81f2-f36e2013bc28-u01",
+          "speaker_id": "B",
+          "ja": "工場の確認は済んだと伺いました。もう修理が終わって、お車を引き取れる状態でしょうか。",
+          "vi": "Tôi nghe xưởng đã kiểm xong. Xe đã sửa xong và lấy được rồi phải không ạ?"
+        },
+        {
+          "id": "ee522e66-86d9-5f09-81f2-f36e2013bc28-u02",
+          "speaker_id": "A",
+          "ja": "工場が終えたのは、部品を外して傷を確認するところまでです。交換が必要かと、部品がいつ入るかは、まだ返事待ちです。",
+          "vi": "Xưởng mới tháo linh kiện và kiểm chỗ hỏng xong thôi. Có cần thay hay không và khi nào có linh kiện thì tôi vẫn đang chờ trả lời."
+        },
+        {
+          "id": "ee522e66-86d9-5f09-81f2-f36e2013bc28-u03",
+          "speaker_id": "B",
+          "ja": "なるほど。では、まだ引き取り日は決まっていないと記録します。",
+          "vi": "Tôi hiểu rồi. Vậy tôi sẽ ghi là chưa có ngày lấy xe."
+        },
+        {
+          "id": "ee522e66-86d9-5f09-81f2-f36e2013bc28-u04",
+          "speaker_id": "A",
+          "ja": "お願いします。工場から次の連絡が来たら、日付が決まったかも含めてお伝えします。",
+          "vi": "Nhờ anh nhé. Khi xưởng báo tiếp, tôi sẽ cập nhật cả việc đã chốt được ngày hay chưa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "symptom",
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ee522e66-86d9-5f09-81f2-f36e2013bc28-u01": {
+            "kind": "original_extension"
+          },
+          "ee522e66-86d9-5f09-81f2-f36e2013bc28-u02": {
+            "kind": "original_extension"
+          },
+          "ee522e66-86d9-5f09-81f2-f36e2013bc28-u03": {
+            "kind": "original_extension"
+          },
+          "ee522e66-86d9-5f09-81f2-f36e2013bc28-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d9415afe-f21b-587e-812e-41b584faf0a1",
+      "event_id": "E06",
+      "context_vi": "Xe thuê không dùng được. Bạn đang cân nhắc nhận xe thay hoặc tự đi tàu. Cửa hàng kiểm hợp đồng cụ thể, bạn cần biết thời gian và phần tiền có thể phát sinh.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori cần phương tiện thay",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên hãng thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d9415afe-f21b-587e-812e-41b584faf0a1-u01",
+          "speaker_id": "A",
+          "ja": "このまま電車で行くか、代わりの車を待つか迷っています。代わりの車があるなら、いつ受け取れて、追加料金はかかりますか。",
+          "vi": "Tôi đang phân vân đi tàu luôn hay đợi xe thay. Nếu có xe thay, khi nào tôi nhận được và có phải trả thêm không ạ?"
+        },
+        {
+          "id": "d9415afe-f21b-587e-812e-41b584faf0a1-u02",
+          "speaker_id": "B",
+          "ja": "車は夕方ならご用意できます。料金は契約を見ないと答えられません。電車で行く場合も、残りの料金の扱いは確認が必要です。",
+          "vi": "Nếu tới chiều tối thì có thể chuẩn bị xe. Tôi phải xem hợp đồng mới trả lời được về tiền. Nếu chị đi tàu, tôi cũng cần kiểm cách xử lý tiền phần thời gian còn lại."
+        },
+        {
+          "id": "d9415afe-f21b-587e-812e-41b584faf0a1-u03",
+          "speaker_id": "A",
+          "ja": "15時には先方に着く必要があるので、今は電車で向かいます。元の車の返却扱いと精算だけ、分かったら教えてください。",
+          "vi": "Tôi phải tới chỗ họ trước hoặc đúng 15 giờ nên giờ tôi đi tàu trước. Khi rõ cách tính là đã trả xe cũ hay chưa và quyết toán ra sao, anh báo giúp tôi."
+        },
+        {
+          "id": "d9415afe-f21b-587e-812e-41b584faf0a1-u04",
+          "speaker_id": "B",
+          "ja": "分かりました。代わりの車は押さえず、元のお車の返却扱いと精算を確認してご連絡します。",
+          "vi": "Vâng. Tôi sẽ không giữ xe thay, tôi kiểm việc trả xe cũ và tiền thanh toán rồi báo lại."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rent"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d9415afe-f21b-587e-812e-41b584faf0a1-u01": {
+            "kind": "original_extension"
+          },
+          "d9415afe-f21b-587e-812e-41b584faf0a1-u02": {
+            "kind": "original_extension"
+          },
+          "d9415afe-f21b-587e-812e-41b584faf0a1-u03": {
+            "kind": "original_extension"
+          },
+          "d9415afe-f21b-587e-812e-41b584faf0a1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "89a871e8-bfcf-5aab-97b6-b3c44a528d33",
+      "event_id": "E06",
+      "context_vi": "Nhân viên bảo hiểm hẹn gọi trước 11 giờ về việc lấy xe. Sau 11 giờ, bạn gọi cho quầy vì chưa thấy cuộc gọi.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori gọi hỏi cuộc hẹn",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên tiếp nhận bảo hiểm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "89a871e8-bfcf-5aab-97b6-b3c44a528d33-u01",
+          "speaker_id": "A",
+          "ja": "受付番号54の森です。車の引き取りについて11時までに電話をいただく予定でしたが、まだ来ていません。状況を確認してもらえますか。",
+          "vi": "Tôi là Mori, mã tiếp nhận 54. Tôi có hẹn được gọi chậm nhất 11 giờ về việc lấy xe nhưng chưa thấy cuộc gọi. Anh kiểm tình hình giúp tôi được không ạ?"
+        },
+        {
+          "id": "89a871e8-bfcf-5aab-97b6-b3c44a528d33-u02",
+          "speaker_id": "B",
+          "ja": "担当は今、別の電話に出ています。お待ちいただくか、折り返しをご希望か、どちらがよろしいですか。",
+          "vi": "Người phụ trách đang nghe cuộc khác. Chị muốn giữ máy hay để chúng tôi gọi lại ạ?"
+        },
+        {
+          "id": "89a871e8-bfcf-5aab-97b6-b3c44a528d33-u03",
+          "speaker_id": "A",
+          "ja": "12時半までは出られます。折り返しで、引き取りの日時が決まったかどうかを教えてください。",
+          "vi": "Tôi nghe máy được đến 12 giờ 30. Anh nhắn người phụ trách gọi lại và báo đã có ngày giờ lấy xe chưa giúp tôi."
+        },
+        {
+          "id": "89a871e8-bfcf-5aab-97b6-b3c44a528d33-u04",
+          "speaker_id": "B",
+          "ja": "かしこまりました。12時半までならつながることと、引き取りの日時についてのご質問を担当に伝えます。",
+          "vi": "Vâng. Tôi sẽ báo người phụ trách là có thể gọi chị tới 12 giờ 30 và chị đang hỏi ngày giờ lấy xe."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "phone",
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "89a871e8-bfcf-5aab-97b6-b3c44a528d33-u01": {
+            "kind": "original_extension"
+          },
+          "89a871e8-bfcf-5aab-97b6-b3c44a528d33-u02": {
+            "kind": "original_extension"
+          },
+          "89a871e8-bfcf-5aab-97b6-b3c44a528d33-u03": {
+            "kind": "original_extension"
+          },
+          "89a871e8-bfcf-5aab-97b6-b3c44a528d33-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9dc79fea-0825-5c70-a312-a372caed4147",
+      "event_id": "E06",
+      "context_vi": "Bạn đã gọi nhắc vì quá 11 giờ chưa có tin. Người phụ trách gọi lại trước 12 giờ 30 và đã hỏi xưởng giờ nhận xe, bạn chốt việc còn lại.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Mori nhận lời xác nhận",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên bảo hiểm phụ trách",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9dc79fea-0825-5c70-a312-a372caed4147-u01",
+          "speaker_id": "B",
+          "ja": "お待たせしました。工場に確認できました。明日の15時から17時の間なら、お車をお引き取りいただけます。",
+          "vi": "Cảm ơn chị đã đợi. Tôi đã hỏi xưởng. Mai chị có thể tới lấy xe trong khoảng 15 đến 17 giờ."
+        },
+        {
+          "id": "9dc79fea-0825-5c70-a312-a372caed4147-u02",
+          "speaker_id": "A",
+          "ja": "では、明日の16時ごろ伺います。工場では名前と受付番号54を伝えればいいですか。",
+          "vi": "Vậy mai tôi tới khoảng 16 giờ. Ở xưởng tôi đọc tên và mã tiếp nhận 54 là được phải không ạ?"
+        },
+        {
+          "id": "9dc79fea-0825-5c70-a312-a372caed4147-u03",
+          "speaker_id": "B",
+          "ja": "はい。工場ではお名前と、その番号をお伝えください。費用の件は、工場での明細を確認してから、こちらで引き続き対応します。",
+          "vi": "Vâng. Chị đọc tên và mã đó tại xưởng nhé. Phần tiền thì sau khi xem bảng chi tiết của xưởng, bên tôi sẽ xử lý tiếp."
+        },
+        {
+          "id": "9dc79fea-0825-5c70-a312-a372caed4147-u04",
+          "speaker_id": "A",
+          "ja": "わかりました。明日引き取って、明細が出たらご連絡します。確認していただいて助かりました。",
+          "vi": "Tôi hiểu rồi. Mai tôi lấy xe, nhận bảng chi tiết rồi báo anh. Cảm ơn anh đã kiểm giúp tôi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "phone",
+          "insurance"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9dc79fea-0825-5c70-a312-a372caed4147-u01": {
+            "kind": "original_extension"
+          },
+          "9dc79fea-0825-5c70-a312-a372caed4147-u02": {
+            "kind": "original_extension"
+          },
+          "9dc79fea-0825-5c70-a312-a372caed4147-u03": {
+            "kind": "original_extension"
+          },
+          "9dc79fea-0825-5c70-a312-a372caed4147-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
