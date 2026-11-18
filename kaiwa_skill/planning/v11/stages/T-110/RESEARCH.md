@@ -73,3 +73,7 @@ Giữ kênh điện thoại cá nhân 17:30–18:00, không để nội dung tin
 - S018 → S019. S018 chốt quầy 11:50, lối ra chưa chắc. S019 giữ mốc và chỉ thêm đường báo nối hồ sơ, không coi đã thử lối.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 19 cảnh, 4 sự kiện và 15 cạnh. Đã mở B06 mục 13 về cách mở việc khó nói, B03 Unit 18 về nêu dữ kiện, B21 bài 3 về nêu yêu cầu và lý do. Tài liệu Cục Lao động Saitama, mục ③–⑩, dùng để đối chiếu việc tiếp nhận, xác minh, hỗ trợ và bảo vệ riêng tư tại nơi làm. Tên đầu mối ngoài công ty đối chiếu theo hàng 雇用環境・均等部（室）. Kênh điện thoại riêng, mã hồ sơ, giờ ca, người đi cùng và lối ra là sắp xếp trong câu chuyện. Cô không tự đối chất hoặc tuyên bố vụ việc đã có kết luận. [埼玉労働局](https://jsite.mhlw.go.jp/saitama-roudoukyoku/hourei_seido_tetsuzuki/harassment01.html) [ハラスメント関係｜厚生労働省](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000137888.html)

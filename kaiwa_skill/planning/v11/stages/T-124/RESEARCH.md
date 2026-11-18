@@ -62,3 +62,7 @@ Tra catalog27 với 急病人・119番・反応・停電・避難・落とし物
 - S015 → S016. A nhận gọi hai nhóm đặt lịch, một trả lời muốn dời, một chưa nghe máy. Mốc kiểm chỗ và gọi lại là 17 giờ.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc ba trích đoạn B05 và đối chiếu bốn nguồn chính thức. FDMA hướng dẫn gọi 119 ngay khi cần cấp cứu, nói địa chỉ, vị trí, số người và điều quan sát được, rồi trả lời và thực hiện theo điều phối. S001 và S003 chuyển tiếp hướng dẫn tới nhân viên ở cạnh khách, không chờ chẩn đoán nội bộ. TEPCO nêu sự cố trong tòa nhà có thể không xuất hiện trên bản đồ mất điện. S013–S014 chỉ ghi đèn và máy tắt, chưa kết luận nguyên nhân. NPA hướng dẫn giao đồ nhặt được cho cơ sở quản lý. Việc gọi lại và trả bình ở quầy thuộc tình huống của cơ sở giả định. [FDMA — 119](https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html) · [FDMA — Sổ tay sử dụng xe cấp cứu](https://www.fdma.go.jp/publication/portal/items/portal002_japanese.pdf) · [FDMA — Hướng dẫn từ điều phối](https://www.fdma.go.jp/relocation/kyukyukikaku/oukyu/05kobetsu/01/05_01_12.html) · [TEPCO](https://www.tepco.co.jp/pg/teiden-fukkyu/index-j.html) · [NPA](https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/pickedup-institution.html)

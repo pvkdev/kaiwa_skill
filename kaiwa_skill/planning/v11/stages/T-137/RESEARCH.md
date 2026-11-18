@@ -48,3 +48,15 @@
 Đã đọc Nhật và Việt riêng, đối chiếu hai bản theo vai, đổi vai và kiểm các nhánh đã ghi.
 
 Rà độc lập toàn bộ chặng.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [e+ về phân phối スマチケ](https://support-qa.eplus.jp/hc/ja/articles/360041175494), mục 分配不可の公演, xác nhận cảnh báo trên vé và yêu cầu vào cùng người đi với mình trong trường hợp này. [Tokyo Dome, hướng dẫn khách dự sự kiện](https://www.tokyo-dome.co.jp/dome/guide/caution-event) tách lon, chai bị đông lạnh, chai hơn 1.000 ml và đồ uống có cồn. S001–S005 có sân, số cổng, đường đi, suất và yêu cầu kiểm đồ giả định. Đọc B08 dòng 755–777 về nêu đúng ngày/suất và khu ghế.
+
+## Rà độc lập Batch05 · E02
+
+Đọc B09 dòng 127–145 về kiểm số chỗ và khu/toa. Điều kiện vào lại tùy suất. Hướng dẫn Tokyo Dome ở trên có thủ tục khác trong một số trường hợp, vì vậy S010 chỉ nói quy định của buổi diễn giả định hôm nay.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 xem [Tokyo Dome City, hỏi nơi báo đồ thất lạc](https://www.tokyo-dome.co.jp/faq/service/1269) có đầu mối khác tùy nơi. Quy trình gặp/nhận lại đồ, giờ tàu và quầy học viên hỏi đều thuộc tình huống giả định. Đọc B05 dòng 146–172 về hỏi vị trí, mô tả đồ và xác nhận bước nhận.

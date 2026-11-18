@@ -219,13 +219,18 @@
     },
     "d9415afe-f21b-587e-812e-41b584faf0a1": {
       "state": "reviewed",
-      "sha256": "83a68078846a32061a830d825ce425c8d238e29cc8bc8d57e0d6c43393d903af",
-      "review_note_vi": "Làm rõ tiếng Việt khi hỏi thủ tục trả chiếc xe thuê ban đầu và tiền cần thanh toán, sau khi chọn đi tàu để kịp 15 giờ.",
+      "sha256": "378573965a4c621e6c62ca30d3454a8093eb83bff13e13160c14951ff824e4e5",
+      "review_note_vi": "Dịch rõ khách hỏi hãng sẽ xử lý việc trả chiếc xe thuê ban đầu và tính tiền ra sao. Khách đã chọn tàu để kịp 15 giờ, hai mục vẫn chờ kiểm hợp đồng.",
       "author_review_history": [
         {
           "state": "reviewed",
           "sha256": "a8620473d7c2bbc52da5665ee093de7e88618f02a212ef1dced828221578d8cd",
           "review_note_vi": "Mori u01 hỏi giờ và phí mỗi cách; u03 chọn tàu vì hạn 15 giờ, phần quyết toán vẫn để hãng kiểm."
+        },
+        {
+          "state": "reviewed",
+          "sha256": "83a68078846a32061a830d825ce425c8d238e29cc8bc8d57e0d6c43393d903af",
+          "review_note_vi": "Làm rõ tiếng Việt khi hỏi thủ tục trả chiếc xe thuê ban đầu và tiền cần thanh toán, sau khi chọn đi tàu để kịp 15 giờ."
         }
       ]
     },
@@ -330,6 +335,13 @@
           "continuity": {
             "S029>S030": "S029 chỉ chuyển lời, chưa bảo đảm giờ gọi; thực tế gọi trước 12 giờ 30 và mới có cửa sổ lấy xe mai. Việc lấy xe chốt, phần đối chiếu tiền còn tiếp."
           }
+        },
+        {
+          "state": "reviewed",
+          "continuity": {
+            "S029>S030": "S029 chỉ chuyển lời, chưa bảo đảm giờ gọi; thực tế gọi trước 12 giờ 30 và mới có cửa sổ lấy xe mai. Việc lấy xe chốt, phần đối chiếu tiền còn tiếp."
+          },
+          "independent_branch_note_vi": "S029 → S030: quá 11 giờ chưa có cuộc gọi, Mori nghe được tới 12:30. Xưởng mới xác nhận cửa sổ lấy xe 15–17 giờ ngày mai; Mori chọn khoảng 16 giờ. Khoản chi còn xử lý sau khi có bảng chi tiết. S026–S028 có tình trạng xe và phương án di chuyển riêng."
         }
       ],
       "independent_branch_note_vi": "S029 → S030: quá 11 giờ chưa có cuộc gọi, Mori nghe được tới 12:30. Xưởng mới xác nhận cửa sổ lấy xe 15–17 giờ ngày mai; Mori chọn khoảng 16 giờ. Khoản chi còn xử lý sau khi có bảng chi tiết. S026–S028 có tình trạng xe và phương án di chuyển riêng."
@@ -344,7 +356,7 @@
     "book_excerpt": "UTF-8, nối dòng bằng LF, không thêm LF cuối",
     "web_excerpt": "UTF-8, đoạn nội dung hoặc ghi chú dữ kiện đã đọc theo nguồn và phạm vi"
   },
-  "dialogues_sha256": "0bb027492a8eabdc8b21e4a559af2e451d9386597074954549bc3af9e406236a",
+  "dialogues_sha256": "be8356ccea387b4f0705c4d61cf535cbfb72f7224402915c81b30d231927fc46",
   "next_action": "Điều phối kiểm bản phát hành V11 cùng phiếu rà độc lập.",
   "dialogue_review_revision_history": [
     {
@@ -419,6 +431,20 @@
     },
     {
       "input_dialogues_sha256": "82c2cbdd22a9e625d1f10217355531b1e62a2213b2948a68abfdc82bee07bbbf",
+      "input_source_sha256": {
+        "jaf": "0dba253fb9af44fba60d0b47b58f99e730147352000cb5813aef0566c929d6a7",
+        "symptom": "8e14a4f28e9c5c97cd9e2e51c998d430b2f659cad32b4e4fe6ed1b93e15c5dac",
+        "phone": "fb68c1f46fbe3a89ef8c4ce895aade58619140ec67242f60471335c84e21910d",
+        "isa": "0b5895b1e387fccfbf7941dbd46d51577e8dcaf416df0ac37e69662846aef7cc",
+        "police": "2da8f9ace9c6d2cc8526544e91b336f7926bdacf96f446a18ef9dafe967f07ac",
+        "observe": "78b61f597e6fb498bd3a4eaa539d64b80d9ff2e8d57eb12167c5181bf87c5418",
+        "insurance": "c36ae94d7a8b7c6aa1325852352c99ca6a585789130ff3ad653c5e2088de8ad3",
+        "rent": "c9b485e5c70a6d82eb25cf6476c43106067a3834fc0e02c75ea6f13ea3f2303d"
+      },
+      "event_id": "E06"
+    },
+    {
+      "input_dialogues_sha256": "0bb027492a8eabdc8b21e4a559af2e451d9386597074954549bc3af9e406236a",
       "input_source_sha256": {
         "jaf": "0dba253fb9af44fba60d0b47b58f99e730147352000cb5813aef0566c929d6a7",
         "symptom": "8e14a4f28e9c5c97cd9e2e51c998d430b2f659cad32b4e4fe6ed1b93e15c5dac",

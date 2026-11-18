@@ -67,3 +67,19 @@
 Rà độc lập toàn bộ chặng.
 
 Đọc lại cách mô tả phần mẫu trong S001/S002, xin cọ và nối hướng dẫn ở S009 → S010, lời xem màu và cảm ơn ở S024 → S025.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [龍豊窯, 陶芸体験](https://ryuuhougama.com/workshop/) về các loại khóa và người mới được chỉ dẫn. Giờ Chủ Nhật, số chỗ, cửa vào, tạp dề và phân lớp ứng dụng/cơ bản trong E01 thuộc xưởng giả định. Đọc B05 dòng 152–178 về làm mẫu trong lớp.
+
+## Rà độc lập Batch05 · E02
+
+Ngày 2026-11-18 đọc [龍豊窯, 手びねり体験](https://ryuuhougama.com/workshop/tebineri/) về tạo hình bằng cuộn đất và hỗ trợ của thợ. Nhịp lăn, màu và cọ là thao tác của bài tập, theo mẫu của hướng dẫn viên ở cảnh.
+
+## Rà độc lập Batch05 · E03
+
+Đọc B07 mục 146 dòng 199–209 để phân biệt nhờ người hướng dẫn làm lại và xin tự thử lại. B05 dòng 181–207 về chỉ đúng phần vướng và điều chỉnh lực. Đối chiếu [龍豊窯, 陶芸体験](https://ryuuhougama.com/workshop/) có ví dụ dùng con dấu trang trí đĩa trên đất; tình trạng con dấu và cách kiểm ở S013/S015 là tình huống lớp giả định.
+
+## Rà độc lập Batch05 · E05
+
+Ngày 2026-11-18 đọc [米澤工房, trải nghiệm gốm](https://y-kobo.net/school/item.html) về nhận ở xưởng hoặc chuyển sản phẩm sau khi hoàn thiện, và [龍豊窯, 手びねり体験](https://ryuuhougama.com/workshop/tebineri/) về hong, hoàn thiện và nung. Nội quy ảnh, phí đất, điều kiện giao và mốc nhận thuộc xưởng giả định. Bỏ liên kết chuyên đề 盲点 ở S023 và どれどれ ở S024 sau khi bỏ cách nói tương ứng; các mẫu này vẫn có trong các cảnh phù hợp của E04.

@@ -53,3 +53,7 @@ Nhóm thử cập nhật tiến độ trong một tháng. Vy bàn bỏ bớt ph�
 - S014 → S015. S014 mới xem xét một đề tài và phạm vi, nay chốt thử chủ đề đơn gấp, phân công và hẹn xem kết quả.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 15 cảnh và 9 cạnh. Đã mở B15 bài 11, tình huống mục tiêu và đánh giá, cùng mẫu B12 bài 86 về khen một hành động cụ thể. Tài liệu đánh giá năng lực của Bộ Y tế, Lao động và Phúc lợi Nhật mô tả đối chiếu góc nhìn giữa nhân viên và quản lý, dùng ở đây để định hướng trao đổi và chọn kỹ năng phát triển. Lịch, chỉ số và quyền phân công thuộc nơi làm giả định. [職業能力評価シートについて｜厚生労働省](https://www.mhlw.go.jp/stf/newpage_08021.html)

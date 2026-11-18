@@ -89,3 +89,12 @@ Bốn cảnh rẽ từ bốn điểm trước đó. Mỗi cảnh đặt lại m�
 - S018 → S023. Rẽ từ S018 đã giới thiệu bộ phận chuyên môn, chưa nộp đơn hay liên hệ công ty. Minh giữ lựa chọn hỏi riêng nơi chuyên trách.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 23 cảnh và 17 cạnh, kể cả các nhánh E04 và E05 dùng chung điểm xuất phát. Đã mở B03 Unit 18 về nêu trọng tâm trước và B02 bài 11 về hỏi lại dữ kiện làm thay đổi lời giải. Rà lại S012 và S022 sau khi sửa S023. S012/S022 xét tranh chấp đổi ca theo diện có thể hỏi về あっせん. S023 theo S018 đến quầy chuyên môn và hỏi về hỗ trợ hoặc 調停 nếu thuộc phạm vi luật. Minh vẫn chỉ tư vấn và tự quyết các bước tiếp.
+
+- Nguồn desk và offices. Quầy tổng hợp nghe qua điện thoại hoặc trực tiếp, lưu ý quyền riêng tư và chỉ cơ quan chuyên trách. Dấu hiệu vi phạm về lương thuộc tuyến Thanh tra Tiêu chuẩn Lao động. Vấn đề cách đối xử có thể hỏi bộ phận Môi trường và Bình đẳng Việc làm. S005 hỏi giữ kín tên ở giai đoạn đầu. Đầu mối đã tiếp nhận chỉ đồng ý trong cuộc gọi này. [総合労働相談コーナー](https://www.mhlw.go.jp/general/seido/chihou/kaiketu/soudan.html) [相談窓口等一覧](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/soudanmadogutitou/itiran/index.html) [Cục Lao động Osaka](https://jsite.mhlw.go.jp/osaka-roudoukyoku/roudoukyoku/kanren_shisetsu/corner.html)
+- Nguồn hotline. Có tư vấn tiếng Việt. Lời thoại chỉ cách xem ngày giờ theo cột ngôn ngữ. [労働条件相談ほっとライン](https://www.check-roudou.mhlw.go.jp/lp/hotline/index.html)
+- Nguồn options và participation. Mục 制度の概要 của Cục Lao động Aomori nêu bên thứ ba hỗ trợ trao đổi trong tranh chấp cá nhân và tham gia あっせん là tự nguyện. Dùng cho nhánh đổi ca, giai đoạn tư vấn chưa nộp đơn. URL cũ trả 404, đã thay đường chính thức ngày 18/11/2026. [厚生労働省](https://www.mhlw.go.jp/general/seido/chihou/kaiketu/index.html) [青森労働局](https://jsite.mhlw.go.jp/aomori-roudoukyoku/hourei_seido_tetsuzuki/kobetsu_roudou_funsou/hourei_seido/seido01/seido01_01.html)
+- Nguồn harass_resolution. Ngày 18/11/2026 đối chiếu mục 援助の対象 và 援助の概要. Trong phạm vi tranh chấp dân sự giữa người lao động và người sử dụng lao động về bắt nạt, lạm quyền nơi làm việc theo luật, các lựa chọn gồm hỗ trợ giải quyết tranh chấp của Cục trưởng hoặc 調停. Quầy chuyên môn sẽ giải thích điều kiện, hạn, việc báo công ty và hệ quả tham gia trong từng trường hợp. [職場でのトラブル解決の援助を求める方へ｜厚生労働省](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyoukintou/woman/index.html)

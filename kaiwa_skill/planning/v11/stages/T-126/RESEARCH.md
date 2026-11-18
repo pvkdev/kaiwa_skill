@@ -75,3 +75,7 @@ Tra catalog27 bằng 勧誘・予定を変更・提案・無理・割り勘・�
 - S028 → S030. Giữ đi gần ga, một hoạt động, về trước 15 giờ. Đề nghị đi dạo 11 giờ và ăn trưa tự chọn trước khi hỏi cả nhóm.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đối chiếu B25/B26 về đề xuất lịch, đổi hẹn với bạn và cách gọi nơi nhận đặt bàn. Khuyến cáo JMA là vào nơi kiên cố gần nhất khi nghe sấm, phù hợp S017 vì nhà thi đấu mở cửa ngay cạnh sân. Hướng dẫn MHLW hỗ trợ cách nói từ chối đồ có cồn và tôn trọng lựa chọn của bạn. FAQ Peter Luger Tokyo cho ví dụ cần liên hệ khi đổi cùng ngày. Phí và kết quả đổi bàn ở S008/S015 là của quán giả định. [JMA](https://www.jma.go.jp/jma/kishou/know/toppuu/thunder4-3.html) · [MHLW](https://www.mhlw.go.jp/content/12200000/001211974.pdf) · [Peter Luger Tokyo](https://peterluger.co.jp/pages/faq)

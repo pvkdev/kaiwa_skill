@@ -80,3 +80,7 @@ Tra catalog27 bằng 旅行・乗り換え・予約の変更・人数・提案�
 - S029 → S030. Hồ sơ hoàn tiền đã được nhận, chưa thấy tiền; giữ người kiểm và mốc thứ Tư, bàn lần sau lưu đầu mối và mã.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc ba đoạn B21, B26 và B25. FAQ Toyoko Inn phân biệt kênh đặt và điều kiện từng gói, nên giờ, báo giá, phí đổi và ghi nhận phòng trong các cảnh đều thuộc khách sạn giả định. JR Đông Nhật Bản phân biệt vé, thời điểm và nơi xử lý. S017 và S019–S020 hỏi đúng nơi mua để xác nhận điều kiện đổi hoặc hoàn của vé cụ thể. Đường Kishamichi nối Shinko và Sakuragicho là địa điểm thật, còn việc triển lãm đóng là bối cảnh giả định. [Toyoko Inn](https://www.toyoko-inn.com/faq/cat?cd=15&facility_cd=toyoko-inn-qa&lang=ja&member_id=d15f2eae-15f4-93a8-6efc-734cd019a1b3&size=87.5%25) · [JR Đông Nhật Bản — Đổi vé](https://www.jreast.co.jp/kippu/21.html) · [JR Đông Nhật Bản — Hoàn vé](https://www.jreast.co.jp/kippu/22.html) · [Yokohama — Kishamichi](https://www.city.yokohama.lg.jp/kanko-bunka/minato/taikan/zentai/kisyamiti.html)

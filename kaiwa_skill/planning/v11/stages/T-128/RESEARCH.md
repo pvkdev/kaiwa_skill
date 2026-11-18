@@ -57,3 +57,7 @@ Tra catalog27 bằng 旅館・和室・布団・大浴場・夕食・荷物・�
 - S014 → S015. Đã nhận vali ở lễ tân trước 15 giờ, về rồi mới phát hiện thiếu gói vải từng để trên chiếu phòng. Nhân viên kiểm phòng và đồ lưu lại.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc các đoạn B08/B05 và bốn nguồn web. KAI Hakone có lượt riêng và khu ăn. Tenseien có hạn nhận phòng khác nhau theo gói và vị khách tới trễ có thể không được phục vụ bữa tối. Các mốc 18:30, 19:00 và giờ tắm, gửi đồ trong bài thuộc ryokan giả định. JNTO hướng dẫn bỏ dép trước khi lên tatami, tắm rửa trước khi xuống bồn và để khăn ngoài nước; lịch trải đệm do cơ sở trong bài quy định. [KAI Hakone](https://hoshinoresorts.com/ja/hotels/kaihakone/dining/) · [Tenseien](https://www.tenseien.co.jp/help/) · [JNTO — Phép lịch sự](https://www.japan.travel/en/guide/understanding-and-mastering-japanese-manners-and-etiquette/) · [JNTO — Tắm onsen](https://www.japan.travel/en/guide/how-to-best-enjoy-onsen/)

@@ -84,3 +84,7 @@ Tra catalog27 bằng dị ứng・だし・アレルギー・注文の確認・�
 - S027 → S028. Giữ pizza 1.200, salad 450, hai trà đá mỗi ly 300. Xóa một ly thứ ba nhập nhầm, tổng 2.250 yên.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc các đoạn B05, B26 và B25 về xác nhận đơn, chỉ ra món nhầm và hỏi mốc cập nhật. CAA và Skylark cho thấy thông tin thành phần phải tách khỏi nguy cơ lẫn ngoài ý muốn trong sốt, dụng cụ hoặc dầu dùng chung. S007, S009 và S017 giữ nguyên việc kiểm rồi mới quyết, không cam kết món an toàn. S008→S010 là lựa chọn tránh nguyên liệu từ lợn của một người chấp nhận dụng cụ chung. GO TOKYO minh họa lý do cần hỏi nước dùng từ cá và chiết xuất thịt trong cả món rau. Giờ, giá và cách xử lý hóa đơn thuộc quán giả định. [CAA](https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/efforts/assets/food_labeling_cms204_240509_05.pdf) · [Skylark](https://corp.skylark.co.jp/sustainability/social/customer/safe_and_secure/allergy.html) · [GO TOKYO](https://www.gotokyo.org/en/plan/diverse-culinary-culture/index.html)

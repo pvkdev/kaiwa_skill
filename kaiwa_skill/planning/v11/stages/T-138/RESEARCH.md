@@ -61,3 +61,15 @@
 Đã đọc Nhật và Việt riêng, đối chiếu hai bản theo vai, đổi vai và kiểm các nhánh đã ghi.
 
 Rà độc lập toàn bộ chặng.
+
+## Rà độc lập Batch05 · E01
+
+Đọc B08, mục phim dòng 34–58 về hỏi người kia đã xem và chọn thể loại. Các tác phẩm, phiên bản và cảnh nội dung trong chặng dùng bối cảnh hư cấu.
+
+## Rà độc lập Batch05 · E02
+
+Đọc B24 dòng 189–204 về nói phản ứng cá nhân với tác phẩm. Kiểm bài どれどれ／ひかれる của chuyên đề liền trước. S007 cần tìm hiểu chi tiết làm bạn nghĩ khác, nên bỏ hàm ý người đó thấy nhân vật lôi cuốn; kiểm các dấu liên kết chuyên đề ở cảnh còn dùng trực tiếp.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 HTML tra trực tiếp có phản hồi 403 qua công cụ; mở được [PDF chính phủ ふれあいらしんばん số 98](https://www.gov-online.go.jp/assets/202407/katsuji_vol98_202407.pdf) qua bản chỉ mục và đọc trang in 81–82 về thời điểm, nguồn, người phát và đối chiếu kênh khác. Giờ/tháng, ngày triển lãm và chi nhánh ở E03 thuộc thị trấn giả định. Đọc B27 bài 3 dòng 22–55 về chỉ nguồn lời nghe lại.
