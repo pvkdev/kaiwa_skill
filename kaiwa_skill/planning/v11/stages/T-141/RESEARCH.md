@@ -63,3 +63,19 @@
 Rà độc lập toàn bộ chặng.
 
 Đọc lại mở S001 và ba nhánh từ đó sau khi nhân viên nói có thể gọi ngay. S007 → S008 đã ghi ngay từ lượt đầu rằng giọng giống người cũ. S013 kết đúng phạm vi chuyển đầu mối, không làm người hỏi tưởng bị từ chối tư vấn.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [警視庁, khi gọi 110](https://www.keishicho.metro.tokyo.lg.jp/jiken_jiko/110/110_110.html) mục cuộc gọi khẩn, sự việc, vị trí nhận dạng và người bị thương nếu biết. Đọc B08 dòng 77–99 về lời xin giúp và gọi cảnh sát ngắn. Mọi vị trí và thỏa thuận cửa hàng trong E01 là của tình huống giả định.
+
+## Rà độc lập Batch05 · E02
+
+Ngày 2026-11-18 đọc [danh sách tư vấn cho người nước ngoài của Tokyo, hàng 10](https://www.seikatubunka.metro.tokyo.lg.jp/documents/d/seikatubunka/30_03kyokunaiichiran) về cuộc gọi ba bên, tiếng Việt tùy tình trạng trung tâm phiên dịch. Đọc [警察庁, 被害に悩むあなたへ](https://www.npa.go.jp/cafe-mizen/foryou.html) mục cảnh sát hỏi thông tin để hiểu tình hình. Phòng riêng, phạm vi địa chỉ và cách giới thiệu của E02 là trao đổi tại quầy giả định. Đọc B02 dòng 169–201 về xin nói việc cần hỗ trợ.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 đọc [警察庁, danh mục hỗ trợ khi bị đeo bám](https://www.npa.go.jp/hanzaihigai/portal/search/kensaku/st/index.html) phần điều kiện theo hỗ trợ và mục tư vấn/trình báo. Các bước kết nối, lịch, quầy trung tâm, người đi cùng, kênh gọi và số giả định theo từng nhánh.
+
+## Rà độc lập Batch05 · E04
+
+Ngày 2026-11-18 đối chiếu hướng dẫn ưu tiên an toàn và hỏi cảnh sát trong [警察庁, 被害に悩むあなたへ](https://www.npa.go.jp/cafe-mizen/foryou.html). Người học quyết định kênh và thời điểm gọi, người hỗ trợ đi cùng tới quầy theo lời nhờ. Trao đổi này thuộc nhân vật giả định.

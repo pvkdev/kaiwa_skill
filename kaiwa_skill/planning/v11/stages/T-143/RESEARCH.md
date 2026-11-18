@@ -49,3 +49,15 @@
 Rà độc lập toàn bộ chặng.
 
 Đọc lại S014 → S015. Tiếng Việt không tự gán giới tính cho Tanaka. Việc của Mori là liên hệ đúng người và kiểm hạn, thứ tự thanh toán; hồ sơ chưa được nộp.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [Study in Japan, 日本語教育機関](https://www.studyinjapan.go.jp/ja/planning/learn-about-schools/japanese-language-schools/) phần khóa theo mục đích và từng trường có điều kiện khác. Lịch, chuyên cần và bản ghi của các lớp A/B/thứ Bảy đều giả định. Đọc B08 dòng 415–439 về hỏi điều kiện và hẹn người phụ trách.
+
+## Rà độc lập Batch05 · E02
+
+Đọc B18 dòng 6–39 về xin thầy giải thích phần chưa hiểu và xin hẹn; ở E02 người học có ví dụ và câu hỏi cụ thể. Dùng 国語 cho môn Ngữ văn trong bối cảnh học ở Nhật.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 đọc [Study in Japan, 留学準備 スケジュール](https://www.studyinjapan.go.jp/ja/planning/flow-chart/schedule.html), ba hướng học tiếng riêng, học tiếng rồi học tiếp, và vào thẳng chương trình tiếp theo. E03 chỉ hỏi mục tiêu và chương trình hư cấu, không nêu điều kiện visa, lịch nhập học thật hay tổng phí ngoài tình huống.

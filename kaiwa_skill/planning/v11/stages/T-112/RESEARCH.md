@@ -72,3 +72,7 @@ Sau tuần quay lại đầu tiên, ngày đầu thử kế hoạch sửa lộ k
 - S018 → S019. S018 đã hẹn thứ Sáu tuần hai 11:30 và phân việc. Chốt thay thông báo hạn, vẫn giữ buổi sáng và không trả lại toàn bộ cuộc họp.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 19 cảnh, 4 sự kiện và 15 cạnh. Đã mở B16 Unit 7 về lịch nghỉ và phân việc trong dự án, chỉ lấy chức năng trao đổi. Đã mở B03 Unit 18 về báo tình trạng, đầu mối và thay đổi. Hướng dẫn MHLW áp dụng từ 1/4/2026, mục 3 và 5 về giới hạn thông tin sức khỏe, trao đổi với người lao động, ý kiến chuyên môn và phương án công việc từng trường hợp. Dùng mô hình theo dõi của 両立支援ナビ. Ngày nghỉ, số giờ, người nhận và quyền truy cập trong bản thảo là chi tiết của nơi làm giả định, không dạy phép tính điều kiện nghỉ. S015→S016 giữ thời gian tiến về đầu tuần sau, khi thử cách chuyển email mới. Bối cảnh S016 làm rõ đây là buổi đầu áp dụng phương án sửa sau tuần đầu trở lại. [治療と就業の両立支援指針｜厚生労働省](https://www.mhlw.go.jp/web/t_doc?dataId=75ac0780) [治療と仕事の両立支援ナビ](https://chiryoutoshigoto.mhlw.go.jp/formanagers/)

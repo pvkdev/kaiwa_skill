@@ -67,3 +67,19 @@ Rà độc lập toàn bộ chặng.
 Đọc lại S006 → S008, các nhánh S011 và S017 → S018 → S019 sau khi chỉnh chủ thể báo kết quả, nói chỗ tạm và cuộc gọi lại.
 
 Đọc lại S011 → S014 sau khi thêm đích và điểm chuyển ở tuyến thay. Ca 9 giờ đã báo trễ, mốc 10:30 của cuộc trước vẫn chỉ dự kiến, nhân viên chưa dự báo được giờ tới.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [Yokohama, 罹災証明書](https://www.city.yokohama.lg.jp/bousai-kyukyu-bohan/bousai-saigai/iza/hisaisha/risai.html) và [内閣府, tái thiết nhà ở và cuộc sống tháng 6/2026](https://www.bousai.go.jp/oyakudachi/pdf/202606_kyuujo_d_A2.pdf) về chứng nhận thiệt hại, hồ sơ và đầu mối địa phương. Ngữ cảnh chỉ báo phần đã thấy từ vị trí được tiếp cận. Tầng quầy/địa chỉ/tờ tiếp nhận giả định. Đọc B27 bài 4 dòng 98–112, B04 dòng 85–100 về hỏi đầu mối và phạm vi kiểm.
+
+## Rà độc lập Batch05 · E02
+
+Ngày 2026-11-18 đọc [NITE, 災害復旧時の製品事故](https://www.nite.go.jp/data/000128116.pdf) mục 1-1 về thiết bị bị nước văng/ngập và [政府広報, ứng phó khi thiên tai xảy ra](https://www.gov-online.go.jp/tokusyu/bousai/disaster.html) phần dây điện trong nhà/thiết bị đã ngập. S006/S010 giao việc kiểm điểm vào và ổ điện cho người có trách nhiệm; không dạy thử điện sau ngập. [Yokohama, cảnh báo thiên tai](https://www.city.yokohama.lg.jp/bousai-kyukyu-bohan/bousai-saigai/iza/kodo/fusuigai/taifu/aratanabousai.html) là bối cảnh tra khu vực; điều kiện căn hộ và bàn giao sau ngập do quản lý giả định thông báo.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 mở [MEXT, 学校支援チームハンドブック](https://www.mext.go.jp/a_menu/shisetu/D-EST/gakkoushien/assets/files/d-est_hand_book.pdf) qua bản chỉ mục sau khi lần mở trực tiếp hết giờ. Đọc phần 学校再開支援, trang in 14–16 về học tiếp, đồ dùng và phối hợp giáo dục theo tình huống. S013 đã được trường tại nơi tạm nhận trong bối cảnh, chỉ hỏi cách tiếp tục liên lạc với trường cũ.
+
+## Rà độc lập Batch05 · E04
+
+Tách ghi nhận thiệt hại, hướng dẫn chung, chứng nhận và xét hỗ trợ theo [Yokohama, 罹災証明書](https://www.city.yokohama.lg.jp/bousai-kyukyu-bohan/bousai-saigai/iza/hisaisha/risai.html) và [tờ hướng dẫn tháng 6/2026](https://www.bousai.go.jp/oyakudachi/pdf/202606_kyuujo_d_A2.pdf). Việc chuyển nơi nhận thư trong hồ sơ, giờ kiểm và người báo thuộc đường xử lý giả định, không hàm ý thay địa chỉ cư trú pháp lý.

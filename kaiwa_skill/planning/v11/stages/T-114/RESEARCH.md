@@ -56,3 +56,13 @@ Thảo chọn 9 giờ đến 16:30, đi tối đa 30 phút, công việc hỗ tr
 - S011 → S015. Rẽ từ S011 giữ giờ. Đây là đề nghị đã được chính nơi tuyển đưa ra, không biến tin đang chờ S013 thành kết quả.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 15 cảnh theo tiếng Nhật, tiếng Việt và từng cặp lượt. Kiểm lại 10 nhánh trực tiếp. Ở E01 Thảo còn đang làm việc, còn khi gọi tư vấn ở E02–E03 cô đã nghỉ. Các lượt xác nhận người xử lý, mốc phản hồi, điều kiện và quyền ra quyết định giữa hai giai đoạn.
+
+- Đã mở B12 ことができたら ở mục 45 của nhóm đề xuất, B16 Unit 3 về nêu dẫn chứng khi trình bày kinh nghiệm, B03 Unit 18 về báo cáo và bàn giao. Dùng cho cách nói điều kiện, số liệu và việc đang chờ.
+- Đã đọc ngày 2026-11-18 [MHLW về Hello Work](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/hellowork.html) phần dịch vụ tư vấn việc làm và [hướng dẫn bảo hiểm việc làm của Hello Work](https://www.hellowork.mhlw.go.jp/insurance/insurance_guide.html) phần tiếp nhận/xác định tư cách. S006–S008 chỉ nêu khả năng hỏi dịch vụ, nơi phụ trách địa chỉ và xác minh theo trường hợp. [MHLW về trường hợp lý do thôi việc khác thực tế](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000139508.html) hỗ trợ hỏi cơ quan tiếp nhận, không kết luận lý do.
+- Mục 53 của bảng thuật ngữ đa ngữ MHLW dùng ‘Phiếu thôi việc’ cho 離職票, giấy thuộc thủ tục bảo hiểm việc làm. [Bảng thuật ngữ VI MHLW](https://www.mhlw.go.jp/yougosyu/vietnamese/index.html), mở ngày 2026-11-18. S008 phân biệt 離職票 và giấy xác nhận thôi việc ở chặng trước.
+- Đã đọc [giờ tối/thứ Bảy của Hello Work Shinjuku](https://jsite.mhlw.go.jp/tokyo-hellowork/list/shinjuku/yakan-doyo.html) ngày 2026-11-18. Dùng để rà giới hạn các dịch vụ theo buổi và từng điểm. S009 chỉ xác nhận khung tư vấn nghề của địa điểm nhân vật hỏi, không gán lịch này cho mọi điểm hay cho thủ tục bảo hiểm.
+- E03 kiểm các nhánh còn chờ kết quả và nhánh nhận việc riêng. S014 áp dụng vùng 30 phút một chiều và nới đến 40 phút khi không đổi tàu, còn giờ kết thúc chậm nhất 16:30.

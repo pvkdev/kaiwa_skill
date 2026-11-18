@@ -44,3 +44,23 @@ Rà độc lập toàn bộ chặng.
 Rà lại S004 với con chưa ở cùng mẹ, S006 để người nói tự nêu nhu cầu, và S019/S020 phân biệt hỏi tại chỗ trước 17:00 với cuộc gọi chủ động tới 16:30 trong tình huống khác. Không mang giờ hay kênh của cảnh khác sang.
 
 Đọc lại S020 theo phản hồi từ điều phối. Người mẹ có quyền dùng điện thoại ở nơi đang ở, chỉ hỏi quầy có thể nhận cuộc gọi kiểm lại tới 16:30. Cả hai máy đều không dùng để gọi ngược; kết quả tiếp nhận còn chờ.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [内閣府, DV và bạo hành trẻ](https://www.gender.go.jp/policy/no_violence/dv-child_abuse/) và [こども家庭庁, phân loại/cơ quan tiếp nhận](https://www.cfa.go.jp/policies/jidougyakutai) về nguy cơ có thể đồng thời đối với người lớn và trẻ. Khi cần cảnh sát ngay, [警視庁, 110](https://www.keishicho.metro.tokyo.lg.jp/jiken_jiko/110/110_110.html) hỏi mốc, nơi và thương tích biết được; không chờ cuộc tư vấn thường hay trở lại nhà. Đọc B08 dòng 77–99 về lời xin gọi khẩn ngắn.
+
+## Rà độc lập Batch05 · E02
+
+Ngày 2026-11-18 đọc [男女共同参画局, các cơ quan tư vấn](https://www.gender.go.jp/policy/no_violence/e-vaw/soudankikan.html) và [thông báo năm 2026](https://www.gender.go.jp/policy/no_violence/no_violence_act/) phần chat DV相談プラス có tiếng Việt. Đây là dịch vụ chat cụ thể, không bảo đảm phiên dịch trực tiếp tại quầy giả định. Đọc B02 dòng 169–201 về mở lời xin nói một vấn đề cần hỗ trợ.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 đọc nhóm hỗ trợ kinh tế/chỗ ở tại [男女共同参画局, 相談機関一覧](https://www.gender.go.jp/policy/no_violence/e-vaw/soudankikan.html) để giữ đúng phạm vi hỏi/có thể được giới thiệu. Phương tiện và chi phí, giấy tờ, kênh xác minh trong E03 chờ từng nơi giải thích. Đọc B27 bài 6 dòng 4–16 về xác nhận đầu mối và chủ động gọi lại.
+
+## Rà độc lập Batch05 · E04
+
+Ngày 2026-11-18 đối chiếu [MEXT, khảo sát về việc đi học của con trong gia đình có bạo lực](https://www.mext.go.jp/a_menu/shotou/shugaku/detail/1307468.htm) và [MEXT, Q&A thủ tục đi học khi chuyển nơi ở do bạo lực](https://www.mext.go.jp/a_menu/shotou/shugaku/detail/1422249.htm) về giữ kín chỗ ở và giới hạn người nhận dữ kiện. Nguồn nói về việc đi học/chuyển trường. Cuộc gọi đón trẻ, giấy tờ, giờ và báo nghỉ E04 thuộc trường giả định. Đọc B27 bài 6 dòng 4–16 về xin đúng người trước khi nói nội dung.
+
+## Rà độc lập Batch05 · E05
+
+Ngày 2026-11-18 đọc [男女共同参画局, 相談機関一覧](https://www.gender.go.jp/policy/no_violence/e-vaw/soudankikan.html) về cơ quan tư vấn và bảo vệ tạm thời, cùng điều kiện liên hệ từng dịch vụ. E05 vẫn để cơ sở và khả năng nhận trẻ ở trạng thái chờ. Mốc/địa điểm gọi là thỏa thuận của nhân vật và người hỗ trợ ở từng cảnh.

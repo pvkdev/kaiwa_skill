@@ -106,3 +106,12 @@ Giới hạn chuyện riêng, xin người hỗ trợ tham gia, hỏi nơi tư v
 - S027 → S028. Từ S027 mới có đầu mối ngoài và đang chờ nhân sự. Giữa hai cảnh đã có cuộc tư vấn và cuộc nói có hỗ trợ. Chỉ xác nhận thỏa thuận thực tế.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 28 cảnh, 6 sự kiện và 22 cạnh. Đã mở B09 bài 8 về cuộc báo nghỉ và bài 11 về lời chưa chắc, B25 bài 2 về hẹn trả lời, B10 談話4 về lời cảm ơn lúc chia tay và B03 Unit 18 về bàn giao. Dữ kiện, lời Nhật và lịch trong chặng là của tình huống giả định.
+
+- S015→S016 là cạnh V10 phi tuyến. S015 diễn ra khi Huy đã thôi việc và chỉ Chén hỏi kho qua kênh công ty. S016 quay về lúc ngày cuối chưa chốt, nhóm chưa được báo. S017 xác nhận chưa có thông báo, S018 chỉ chuẩn bị nội dung, S019 mới có ngày cuối 27/11 và phân việc. Bối cảnh và vai đã được làm rõ để mỗi cảnh mở riêng vẫn hiểu được. Các nhánh E05 được đọc độc lập: lịch trả đồ ngày 26 là nhánh thay đổi, lịch 27 vẫn hợp ở nhánh khác.
+- Đối chiếu mục 退職 với phạm vi hợp đồng có hạn và không hạn. Chặng dạy cách nêu quyết định, đề xuất và hỏi thủ tục theo trường hợp. Ngày thôi việc và ngày cuối đến làm là hai mốc riêng của Huy. [退職、解雇、雇止めなど｜厚生労働省](https://www.check-roudou.mhlw.go.jp/study/roudousya_taisyoku.html)
+- S022/S023 dùng mục 退職時の証明 theo Điều 22, người lao động nêu thời gian làm ở công ty và loại công việc muốn ghi. Phân giấy do công ty cấp với giấy về bảo hiểm việc làm, không nêu kết quả trợ cấp. [兵庫労働局](https://jsite.mhlw.go.jp/hyogo-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/kaiko_taishoku.html)
+- S027 hỏi quầy tư vấn tổng hợp để hiểu lựa chọn và đầu mối trong lúc HR đang thu xếp người cùng dự. [総合労働相談コーナー｜厚生労働省](https://www.mhlw.go.jp/general/seido/chihou/kaiketu/soudan.html)

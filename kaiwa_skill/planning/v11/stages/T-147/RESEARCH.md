@@ -42,3 +42,23 @@
 Rà độc lập toàn bộ chặng.
 
 Rà lại hướng và động tác của hai người ở S001/S003/S019, lời nhân viên chỉ chỗ đứng và việc chưa gọi lại số không rõ ở S014/S015. Giữ yêu cầu không chạm, không đoán ai và chủ động dùng kênh khác.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [警察庁, 被害に遭われたときや被害を目撃したときは](https://www.npa.go.jp/bureau/safetylife/bouhan/chikan/chikantaisaku2.html) phần xin trợ giúp xung quanh, ưu tiên an toàn, báo hoặc hỏi cảnh sát. Đọc thêm [警視庁, 痴漢被害相談](https://www.keishicho.metro.tokyo.lg.jp/sodan/madoguchi/chikan.html) về đầu mối tư vấn tại Tokyo. B08 dòng 77–99 cho lời nhờ giúp ngắn, không lấy tình huống ga từ sách.
+
+## Rà độc lập Batch05 · E02
+
+Ngày 2026-11-18 đọc [Tokyo Metro, thông báo chiến dịch 26/05/2022](https://www.tokyometro.jp/news/2022/212826.html) phần khuyến khích hành khách và người chứng kiến báo nhân viên ga. Đây là nguồn cho đầu mối, thời gian chiến dịch thuộc năm 2022. Cổng và quầy trong E02 là của ga giả định.
+
+## Rà độc lập Batch05 · E03
+
+Đọc B27 bài 8 dòng 4–24 về nêu mốc toa/ga khi gặp nhân viên và B11 dòng 351–373 về giới hạn điều đã thấy. Thời gian ước tính, ga Aoba và hai thang cuốn trong thoại được đặt cho bài tập.
+
+## Rà độc lập Batch05 · E04
+
+Ngày 2026-11-18 đối chiếu [警察庁, 被害に悩むあなたへ](https://www.npa.go.jp/cafe-mizen/foryou.html) và [警察庁, 被害者への接し方](https://www.npa.go.jp/hanzaihigai/portal/shiensya/higainiauto/index.html), phần ưu tiên an toàn, chỗ kín và quyền chọn kể. S014 đứng khuất từ cửa cùng nhân viên, các vị trí trong cửa hàng giả định.
+
+## Rà độc lập Batch05 · E05
+
+Ngày 2026-11-18 đọc mục người chứng kiến báo nhân viên/cảnh sát của [警察庁, 痴漢・盗撮事犯対策](https://www.npa.go.jp/bureau/safetylife/bouhan/chikan/chikantaisaku2.html), và mục ý muốn, không ép nói, chọn cách hỗ trợ trong [警察庁, 犯罪被害にあうと](https://www.npa.go.jp/hanzaihigai/portal/shiensya/higainiauto/index.html). S020 phân biệt lời người làm chứng và chuyện người đi cùng có thể kể.

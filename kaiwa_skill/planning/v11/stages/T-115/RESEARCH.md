@@ -52,3 +52,7 @@ Takeda tiếp nhận lịch giao tuần tới. Xác nhận ngoại lệ khi kho 
 - S014 → S015. Từ S014 chỉ hỏi cách đọc hồ sơ cũ, việc mới do bên cũ xác nhận. S015 chốt kênh và cách giữ quan hệ.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc toàn bộ 15 cảnh theo tiếng Nhật, tiếng Việt và cặp lượt, đối chiếu 9 nhánh. Đã mở B17 bài 上司の転勤 về ngày chuyển/vai mới và cảm ơn việc cụ thể, B16 Unit 6 đoạn 実は và giữ kín tin chưa công bố, B10 mục 談話4 về lời chia tay và B03 Unit 18 phần báo cáo/thông báo. S001–S005 phân biệt người báo chính thức, ngày bắt đầu và xác nhận lịch gặp. S011–S015 phân biệt hồ sơ cũ với đầu mối xử lý đơn hiện tại và giữ mốc trả lời riêng của đơn Minato. Các nguồn chỉ dùng làm mẫu ngôn ngữ. Các quyết định và lịch trong hội thoại thuộc tình huống.
