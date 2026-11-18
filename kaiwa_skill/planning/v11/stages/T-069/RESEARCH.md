@@ -48,3 +48,11 @@ S013→S014: giờ họp chính 14 Nhật/12 Hà Nội. Quân bận lúc đó, h
 - S015 · `5f628852-e166-50f4-a090-e429d0ac483b` · u01, u03, u05. Quân đề nghị nhắc từng người theo lượt, Mori có thể nói phần mình trước và chuẩn bị nhường lời. Quân nghe mục 1, bảng còn hai mục nhưng chưa nghe phần sau.
 - S016 · `188080b2-2b1a-55fa-b74b-92ea29445242` · u01, u03, u05. Quân chỉ đúng phần không thấy, xin chuyển bản chung qua chat và nói tên cột. Mori gửi đường dẫn nội bộ thay yêu cầu đoán số liệu.
 - S017 · `da78cb47-8644-54f6-b5b2-3c5a6bdf36de` · u01, u03, u05. Tóm tắt phần đã nghe và nhìn, hỏi ai xác minh số chênh. Arai đối chiếu kho, Quân cập nhật bảng sau khi nghe kết quả, không nhập số đoán.
+
+## Rà độc lập V11 batch04
+
+Đọc đúng B02 Scene 35 dòng 7–33, giữ cách kiểm giờ/phòng khi mới nghe thay đổi. Đọc B04 Unit 32 dòng 92–109, có âm thanh đứt, người nghe xin nhắc và kiểm lại ý trước bước xử lý.
+
+Đọc mục trước họp trong Microsoft Support ngày 2026-11-18: xem thiết bị phát âm được chọn, thử đúng cấu hình và tách sự cố chỉ một người nghe. Các cảnh thử hai người và đổi phòng là cách sắp xếp ở công ty giả định. https://support.microsoft.com/ja-jp/teams/meetings/my-speaker-isn-t-working-in-microsoft-teams
+
+Cùng ngày đọc NICT về JST UTC+9 và bài Trung tâm Lưu trữ quốc gia III dẫn Quyết định 134/2002/QĐ-TTG về múi số 7. Xác nhận Hà Nội chậm hơn Tokyo hai giờ. https://jjy.nict.go.jp/mission/page2.html · https://luutru.gov.vn/quyet-dinh-ve-cach-tinh-lich-va-quan-ly-lich-cua-nha-nuoc.htm

@@ -58,3 +58,49 @@ S022 đưa đề xuất vào buổi bàn của nhóm, S023 trì hoãn tới sau 
 
 - Rà lại 470ff5a9-f57d-587d-ba9b-7260bcbbbcea lượt 1. Rút gọn câu hỏi hạn cho người mới. Sau S014 vẫn chỉ đếm bóng trong hộp và nhắn phụ trách trước hoặc đúng 17 giờ Chủ nhật.
 - Rà lại 647e219c-c2a1-50d6-9829-e7b161fcf5b5 lượt 1. Nói bớt ngại thử, vẫn nhất quán với lời đáp có chờ chia cặp.
+
+### Kiểm độc lập E01
+
+S001 xem tập và S002 tập nhẹ là hai phép riêng. S003 chuyển sang suất 10 giờ sáng Chủ nhật tuần sau và được xác nhận giữ chỗ. S005 nối đúng suất này, xác định cửa chính và giày tập trong nhà, vợt được cho mượn. S004 hỏi nhóm khác do nhóm hiện tại luyện thi đấu.
+
+- Đọc B27 dòng 3982–3994 về xem thử trước khi gia nhập, 437–457 có đề bài tự giới thiệu ngày đầu ở circle, và 2308–2327 về phản hồi khi muốn thử. Đọc B16 dòng 688–707 về xác nhận giờ và số lượng.
+
+- S001 (db85b773-73ae-5e71-86ef-5ce868737839), 03. Sau khi được phép đến xem, người học hỏi giờ đến. Hiện rõ đây là 14 giờ và phải đến trước năm phút.
+
+- S003 (83dc7313-b153-5f33-a987-ef8832fff86c), 04. Sau khi hết chỗ tuần này, người học chọn suất 10 giờ sáng tuần sau. Thêm xác nhận trực tiếp giữ suất để cảnh sau có căn cứ nói đã đặt.
+
+- S005 (261a7175-66e2-5d82-aae4-0edca59ea200), 03. Hỏi xem có cần vợt rồi nghe quy định của nhà thi đấu trong cảnh, vợt cho mượn còn người học mang giày tập trong nhà. Chốt rõ cửa chính lúc 10 giờ sáng.
+
+### Kiểm độc lập E02
+
+S006 tự giới thiệu, S007 hỏi cách xoay lượt, S009 nhận bấm giờ là các cảnh riêng. S008 được xem bên bàn trước, đến S010 mới được mời thử một lần và xác nhận thứ tự bóng nảy.
+
+- Mở trang Liên đoàn Bóng bàn Nhật Bản ngày 2026-11-18, phần 相手コートに返球, mục 1球目（サービス）. Thứ tự bóng nảy được xác nhận. S010 chỉ dạy bước mới xem và thực hành thử. https://jtta.or.jp/rule
+
+- S010 (c25157bf-2104-5904-b911-4f96827263d2), 02. Thay lời mở gượng bằng lời mời thử sau khi xem. Người học xác nhận bóng chạm phần bàn mình trước, người hướng dẫn nối thêm phần bàn đối phương rồi cho thực hành.
+
+### Kiểm độc lập E03
+
+S011 tập 10 giờ sáng Chủ nhật và đóng 500 yên/tháng trong nhóm này. S012 nhận xếp sáu ghế, S013 được về lúc 11 giờ sau khi phụ mang bàn lúc đầu. S014 sửa hiểu nhầm mang bóng thành đếm bóng trong hộp. S015 hỏi hạn và chốt đếm sau buổi tập, nhắn số trước hoặc đúng 17 giờ Chủ nhật.
+
+- S013 (05fc2a5e-c44e-5825-aa54-a663204adff5), 03. Nhắc lại sẽ phụ mang bàn ra lúc đầu để khớp việc người phụ trách yêu cầu, rồi xác nhận rời lúc 11 giờ.
+
+- S014 (b8a9e491-3f16-504b-9ec4-9975ad4b13f5), 02. Người học hỏi lại vì tưởng mang bóng. Sau khi được sửa, lời Nhật và Việt đều nói đếm bóng có sẵn trong hộp.
+
+- S015 (470ff5a9-f57d-587d-ba9b-7260bcbbbcea), 03. Nêu thời điểm đếm là sau buổi tập trong lời người học và nhắc rõ 17 giờ ở cả hai ngôn ngữ. Người phụ trách chỉ cần số quả qua tin nhắn.
+
+### Kiểm độc lập E04
+
+S016 hủy tên mình khỏi danh sách dự, S017 hỏi người có thể trực bàn là hai việc riêng. S018 chưa có người xếp ghế và người học hẹn báo tối thứ Sáu dù kết quả thế nào. S019 tối đó mới xác nhận Mori nhận thay. S020 nói với chính Mori sau buổi vắng và nhận lại phần xếp ghế lần tới.
+
+- S018 (bb11f065-6053-5a23-a11c-695a30fd45ad), 04. Người học tự hẹn báo tối thứ Sáu dù chưa tìm ra. Lời Việt dùng cùng mốc muộn nhất cho người phụ trách.
+
+- S019 (afb847e1-50a3-57c8-ae8a-5bb42b8dccde), 01. Người học báo Mori đã đồng ý, xác nhận sẽ chuyển chỗ xếp ghế và mốc tới trước giờ tập mười phút.
+
+### Kiểm độc lập E05
+
+S021 hỏi cách giữ loạt bóng. S022 mới có phản hồi tích cực ở một người, S023 hoãn đưa ra nhóm đến sau giải. S024 đứng riêng sau khi nhóm đồng ý, Lan chuẩn bị bóng và Mori xếp đôi. S025 đứng riêng sau buổi thử, hai người ghi nhận chờ ghép cặp và chỉ mới đề nghị hỏi thêm.
+
+- S022 (929b11ba-eb96-5195-b61e-d4554773b865), 01. Dùng lời đề nghị ngắn về năm phút đầu có thể đánh chậm cho người mới. Người học còn phải hỏi ý cả nhóm ở lần tới.
+
+- S024 (cae74688-036e-5cf2-a486-d196c5cb5445), 01. Người học nhận chuẩn bị bóng và hỏi ai xếp cặp. Mori xác nhận ghép người mới với người quen chơi và gọi mọi người ở cửa.

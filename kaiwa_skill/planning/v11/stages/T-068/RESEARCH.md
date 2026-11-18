@@ -39,3 +39,7 @@ S009→S010: tổng 12, đã xong 6, trong 6 còn lại có 3 cần xuất ngày
 - S010 · `375dfcd1-ec07-521e-8e13-aa2a17818291` · u02, u04, u05. Tách ba đơn khẩn hôm nay và ba còn lại ngày mai. Hà chốt trước hoặc đúng 15 giờ đưa Hayashi kiểm, cuối ngày báo trưởng nhóm.
 - S011 · `2e6c729f-cef6-5b74-8813-715dd0589aa7` · u01, u03, u05. Hà tình nguyện nhận phạm vi một đơn và bản nháp; biết chưa tự gửi. Chị Nishimura bố trí một lần nghe và một lần thử.
 - S012 · `6bce5198-ee7e-5ec2-9c29-06d0ca6eadbb` · u01, u03, u05. Hà cho thấy tự hỏi kho, minh họa phân biệt chưa chốt. Leader giao một đơn cần hẹn lại, giữ Hayashi kiểm trước gửi.
+
+## Rà độc lập V11 batch04
+
+Đọc B16 Unit 4 các dòng 4–8, 13–45, 235–260 và 384–394. Bối cảnh nhân viên sau đào tạo, đoạn xin xem bài đã thử, đối thoại làm rõ hạn tổng hợp dữ liệu và ca Chloe nghe “例の報告書” cung cấp các cách hỏi phù hợp. Chi tiết nhập đơn, giữ tồn và phân quyền thuộc công ty trong các cảnh.

@@ -45,3 +45,43 @@
 - 67781a7a-79ea-5d7b-a389-5b9457509b9d (S018). A u02 cho phép trả lời sau, u04 để B tự báo. B u03 nhận chủ động nhắn khi có lịch, hai người chưa hẹn ngày.
 - e349ec73-5cc4-57bf-b2d2-6f111d81de4e (S019). B u01 nói không hẹn nữa. A u02 cảm ơn lời đáp, u04 khép cuộc trò chuyện và không để hẹn ngỏ.
 - 63dec97d-4c5d-5da5-8a4e-d4efd48c15fd (S020). A u01 gợi triển lãm theo sở thích chung và u03 chọn sáng Chủ nhật. B u02 và u04 xác nhận muốn đi và nhận ngày.
+
+### Kiểm độc lập E01
+
+Các cảnh S001–S004 thiết lập bốn cuộc lựa chọn. S004 đồng ý gặp nhóm và sẽ hỏi Yamada, Kim. S005 chỉ chốt 14 giờ ở cửa Đông sau khi cả hai đã trả lời rảnh chiều Chủ nhật.
+
+- Đọc B25 dòng 925–943 về lời rủ よかったら và 1060–1076 về lời từ chối và phản hồi nhẹ. Đọc B27 dòng 2037–2042 về xác nhận giờ và cửa ga.
+
+- S002 (4412428e-1127-5434-9d35-b67492ae6d86), 01. Câu hỏi Nhật nêu hai ngày cuối tuần tự nhiên. Người học dựa vào giờ rảnh chiều Chủ nhật để đề nghị 14 giờ.
+
+### Kiểm độc lập E02
+
+Ba cảnh độc lập chọn đồ và chỗ ngồi, hỏi lại sở thích, giải thích đùa về máy lạnh. S009 bỏ ghé cửa hàng vì người hẹn phải đi chậm nhất 16 giờ. S010 báo còn năm phút rồi kết thúc buổi đúng giờ.
+
+- S006 (d63dd6eb-f6d9-5f1d-888d-fc4897875907), 03. Hỏi món trước rồi cho chọn cạnh cửa sổ hoặc phía trong quán. Người học theo lựa chọn chỗ yên hơn.
+
+- S007 (00972c2d-61e4-5e40-82c1-f61726a7f716), 03. Giữ lịch sự nhẹ và bỏ そちら gượng giữa hai người. Người học hỏi lại sở thích ngày nghỉ và nghe là chụp ảnh.
+
+- S009 (88d67a83-7034-572f-af20-1df85069ddb2), 02. Bỏ phần ghé cửa hàng sau khi nghe giới hạn 16 giờ. Tiếng Việt nhắc rõ sẽ báo trước mốc phải đi.
+
+- S010 (d5249712-8baa-5995-af41-601a066c9ad6), 01. Người học chủ động khép buổi trước 16 giờ sau khi báo còn năm phút. Lời cảm ơn sau đó giữ tự nhiên, không lặp đề nghị ra ngoài.
+
+### Kiểm độc lập E03
+
+S011 đồng ý chụp với điều kiện không đăng. S012 từ chối, người học cất điện thoại và bắt chuyện về tranh. S013 nói giới hạn chuyện gia đình, S014 chuyển sang đồ uống. S015 phân biệt đồng ý cà phê với hẹn ăn tối.
+
+- Đọc B01 dòng 2933–2947, gồm câu xin chụp tại chỗ và mẫu てもいいですか. S011–S012 luyện xin phép chụp cùng và nghe câu trả lời của chính người kia.
+
+- S012 (87402f18-00a3-5857-9904-862773b60192), 02. Người học chấp nhận lời từ chối và cất điện thoại theo bối cảnh. Câu nói chuyển sang nhận xét bức tranh.
+
+- S013 (64beac3a-cea0-5b3b-aac8-b4576c266f52), 02. Người học nêu rõ chưa muốn kể chuyện gia đình. Người hỏi đáp nhận và xin lỗi vì đã hỏi, tạo khoảng trống để chuyển chuyện.
+
+- S014 (805b198e-f7cc-5c99-baa0-b43b94da207d), 03. Lời mở của bạn thể hiện có thể để chuyện gia đình lại. Người học đáp nhận xét về trà rồi hỏi cà phê, chuyển chủ đề thực sự.
+
+- S015 (9d33f193-a281-5798-84e5-b7f655bfe9eb), 02. Rút mẫu khẳng định thành câu chỉ hẹn uống cà phê, sau đó tự nói mình sẽ về. Người kia xác nhận kết thúc buổi ở đó.
+
+### Kiểm độc lập E04
+
+S016 nhắc phần nói về sách. S017 hai người cùng muốn gặp lại, S020 chọn triển lãm ảnh sáng Chủ nhật. S018 tách riêng chờ lịch và bạn sẽ báo. S019 nghe người kia muốn dừng rồi kết thúc lịch sự.
+
+- S016 (9bc700b8-0410-57e1-a14b-751470c76911), 01. Cảm ơn và nói cụ thể thích trao đổi sách. Câu đáp Việt giữ kiểu xưng hô tôi, chị ở lần gặp đầu.

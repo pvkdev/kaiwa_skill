@@ -50,3 +50,30 @@
 - S014 → S015. Vẫn chỉ là ước tính, cần khoanh phần tra tồn. Sau khi hai vai làm rõ yêu cầu, dự kiến có quản lý nói chuyện.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S004 · `e452abcf-d8f3-5981-8613-bc7b18a0a1fd-u03`. Lời Nhật trước nói nghe hỏi mã hàng. Đổi thành khách hỏi tồn theo mã hàng để đáp đúng yêu cầu tập xem tình huống tra tồn.
+
+Điểm nối. S001 hỏi thời lượng rồi ưu tiên vấn đề khách. S002 chốt xem tồn trên màn hình hiện hành; S003 từ đó sửa hiểu sang tích hợp và hỏi tên/phiên bản, phí để sau. S004 là riêng, khách chọn xem một tình huống hỏi tồn trước phần hướng dẫn nhân viên.
+
+Đã đọc B10 bài thăm đối tác dòng 189–212 về giới thiệu vai và khép cuộc gặp, cùng bài hẹn dòng 295–311 về nối lại việc cũ, xin thêm thời gian và thống nhất lần trao đổi tiếp.
+
+## Rà độc lập Batch04 · E02
+
+- S006 · `771ce2d0-ba60-5525-a8f9-87cee1f5c304-u02`. Hỏi ví dụ giả để giữ giới hạn của Inoue và đưa được phương án hiện mã, kho, số cùng dòng. Chỉnh Việt của ví dụ kho cho dễ nói.
+- S008 · `b24a4293-b07c-53ec-bde2-0c7271b29dc3-u01`. Phân công thử cho người trực điện thoại và nhân viên kho. Dùng 電話対応 để chỉ rõ nhóm xử lý cuộc gọi trong lời Nhật.
+
+Điểm nối. S005 lỗi ở đọc số giữa hai kho; S006 giữ hạn khai số thật và dựng A: Đông hai, Tây năm. S007 phân biệt tổng đài xem và kho cập nhật khi nhận hàng, S008 phân công bài thử tương ứng và 15 giờ thứ Ba còn chờ người tham gia.
+
+## Rà độc lập Batch04 · E03
+
+- S012 · `998bf84f-d3ba-56c9-9f9d-b26fdc0c9e6c-u03`. Đổi lời xin báo thành xin cập nhật tiến độ, kể cả nếu sếp chưa duyệt. Khớp lời khách nhận mốc 16 giờ thứ Năm.
+
+Điểm nối. S009 chỉ đề nghị 30 phút và đang dò lịch. S010 chọn 15 giờ thứ Ba có người cả hai nhóm. S011 quay về gốc, chưa đặt lịch, chỉ gửi email chiều thứ Tư tuần đầu tháng sau. S012 cũng còn mở, cần xin duyệt người kho và hẹn cập nhật 16 giờ thứ Năm.
+
+## Rà độc lập Batch04 · E04
+
+- S015 · `f6a9ad1f-6d67-5a98-8924-19d150b2fde6-u04`. Kho Đông ba máy chỉ xem. Inoue định mời Endo, chưa xác nhận có mặt; lời chốt giữ điều kiện. Việt tránh suy giới tính Endo.
+
+Điểm nối. S013 giá chỉ ước theo mười máy, chưa biết phạm vi Đông. S014 giải thích cách chuyển lời giá chưa chốt. S015 biết ba thiết bị chỉ xem vùng Đông, Inoue mời Endo có quyền duyệt vào 15 giờ thứ Hai, vẫn cần Endo xác nhận dự.

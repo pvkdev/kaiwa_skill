@@ -51,3 +51,33 @@
 - S014 → S015. Inoue đã nhận tổng hợp từ người thử, Sakurai gọi kiểm người thực nhận ảnh với Inoue. Xác nhận nhận rồi mới phân công dùng bản mới.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S002 · `be9fc70a-a413-5b38-ada0-09d2bda03885-u02`. Rời đây chậm nhất 10:40 là giới hạn cuộc gặp. Dịch cũ có thể hiểu là phải đến chỗ tiếp theo trước 10:40.
+
+Điểm nối. S001 xác nhận Sakurai, Seiwa, Inoue và mẫu. S002 chờ ở sảnh, Inoue muộn khoảng mười phút và Sakurai phải rời 10:40; S003 quay về S001, Miura là khách chưa báo trước và còn xin phép vào. S004 tiếp đúng từ S002, Miyake đã nhắn mốc rời và dẫn khách vào.
+
+Đã đọc B10 bài thăm đối tác dòng 173–184 và 189–212 về tự giới thiệu, xác nhận hẹn, chuyển khách và danh thiếp. Đã đọc B03 Unit 11 dòng 26–39 về trao nhận danh thiếp khi đứng gần nhau. Nghi thức được dùng vào cuộc thoại cùng vai.
+
+## Rà độc lập Batch04 · E02
+
+- S006 · `f70be85d-144a-5a4b-a654-d879448e68af-u01`. Đổi câu hỏi thời lượng thành cách hỏi còn được đối tác dành tới mấy giờ. Inoue nói còn 20 phút và chọn giao hàng trước.
+- S008 · `dfcdf01a-6a1b-5d98-99c2-409822c74b2a-u01`. Mở lời đúng lúc đối tác sắp đi họp và chốt phần còn thiếu. Việt trước nghe thúc hết giờ, đổi nhẹ để giữ phép lịch sự.
+
+Điểm nối. S005 trao danh thiếp và xác nhận đầu mối giao. S006 còn 20 phút, Inoue ưu tiên lô đầu. S007 đề nghị hai điểm chia 10 phút và phần còn lại, để mẫu sang sau. S008 đã bàn hai điểm, chốt video trước chiều tối và Inoue quyết có cần gặp lại.
+
+## Rà độc lập Batch04 · E03
+
+- S009 · `4ed348db-b4ba-5002-b997-60942582219b-u01`. Sakurai để Inoue chọn ưu tiên và hỏi nút phục vụ thao tác nào. Làm tự nhiên lời Việt khi hỏi điều cần làm rõ nhất.
+- S010 · `c092917f-c9f3-5160-9b48-a6182059c120-u04`. Chỉ đúng V2 và mời thử tìm một đơn thật, giữ chữ tìm kiếm nhất quán với nút tìm vừa hỏi.
+
+Điểm nối. S009 tìm ra nút tìm đơn là ưu tiên. S010 đọc góc phải nhận ra V1 và thử trực tiếp V2. S011 mở riêng bằng mục tiêu xem màn hình rồi chốt lịch/người; S012 mời tìm đơn chưa xử lý ngay, và Inoue đòi xem cách mở bộ lọc mỗi lần.
+
+## Rà độc lập Batch04 · E04
+
+- S013 · `7932b627-415b-556e-9c30-b3d6864097fd-u01`. Chỉ ảnh thì không dùng để thử thao tác được. Thêm đường dẫn bản thử ở lời hẹn gửi, giữ hạn trưa thứ Tư và giờ gọi hôm sau.
+- S014 · `7e9bbaa5-ac51-559a-a3ac-72ee17b1326f-u03`. Inoue là người gom ý kiến chứ chưa quyết ai thử. Nhắc cả ảnh và đường dẫn đến Inoue theo lời hẹn trước.
+- S015 · `776a1fc2-337d-5dcf-962b-d5f24c24c762-u02`. Inoue đã chuyển ảnh và đường dẫn. Ono thử được, Suzuki mới xem ảnh. Giữ cam kết Suzuki thử sáng mai và Inoue tổng hợp chiều mai.
+
+Điểm nối. S013 gửi cả ảnh và đường dẫn bản thử trước trưa thứ Tư, 11 giờ thứ Năm gọi dù chưa thử được. S014 xác nhận Inoue nhận cả hai và tổng hợp giúp hai nhân viên. S015 giữ cuộc gọi thứ Năm, Ono đã thao tác bằng bản thử, Suzuki mới xem ảnh và hẹn thử sáng mai.

@@ -36,6 +36,13 @@
       "start_line": 2308,
       "end_line": 2327,
       "use_vi": "Cách phản hồi khi muốn xem thử hoặc tham gia và hỏi chi tiết tiếp theo."
+    },
+    "jtta-service": {
+      "kind": "web",
+      "title": "公益財団法人 日本卓球協会 卓球の基本的なルール",
+      "url": "https://jtta.or.jp/rule",
+      "accessed": "2026-11-18",
+      "use_vi": "Mục giao bóng giải thích bóng nảy phần bàn người giao trước, rồi sang phần bàn đối phương. S010 dùng để xác nhận thứ tự trong buổi thử."
     }
   },
   "dialogues": [
@@ -77,8 +84,8 @@
         {
           "id": "db85b773-73ae-5e71-86ef-5ce868737839-u04",
           "speaker_id": "B",
-          "ja": "練習は二時からです。五分前に来てください。",
-          "vi": "Buổi tập bắt đầu lúc hai giờ. Chị đến trước năm phút nhé."
+          "ja": "練習は午後二時からです。五分前に来てください。",
+          "vi": "Buổi tập bắt đầu lúc hai giờ chiều. Chị đến trước năm phút nhé."
         }
       ],
       "admin": {
@@ -205,6 +212,12 @@
           "speaker_id": "A",
           "ja": "では、十時の回をお願いします。",
           "vi": "Vậy cho tôi đăng ký buổi mười giờ ạ."
+        },
+        {
+          "id": "83dc7313-b153-5f33-a987-ef8832fff86c-u05",
+          "speaker_id": "B",
+          "ja": "はい、来週の日曜の十時ですね。予約しておきます。",
+          "vi": "Được, mười giờ sáng Chủ nhật tuần sau nhé. Tôi giữ chỗ cho chị."
         }
       ],
       "admin": {
@@ -225,6 +238,9 @@
             "kind": "original_extension"
           },
           "83dc7313-b153-5f33-a987-ef8832fff86c-u04": {
+            "kind": "original_extension"
+          },
+          "83dc7313-b153-5f33-a987-ef8832fff86c-u05": {
             "kind": "original_extension"
           }
         }
@@ -325,20 +341,20 @@
         {
           "id": "261a7175-66e2-5d82-aae4-0edca59ea200-u03",
           "speaker_id": "A",
-          "ja": "ラケットは持って行きますか。",
+          "ja": "ラケットは必要ですか。",
           "vi": "Tôi có cần mang vợt không ạ?"
         },
         {
           "id": "261a7175-66e2-5d82-aae4-0edca59ea200-u04",
           "speaker_id": "B",
           "ja": "ラケットは貸します。室内用の靴を持ってきてください。",
-          "vi": "Chúng tôi cho mượn vợt. Chị mang giày đi trong nhà nhé."
+          "vi": "Chúng tôi cho mượn vợt. Chị mang giày tập dùng trong nhà thi đấu nhé."
         },
         {
           "id": "261a7175-66e2-5d82-aae4-0edca59ea200-u05",
           "speaker_id": "A",
-          "ja": "正面入口に十時ですね。室内用の靴を持っていきます。",
-          "vi": "Mười giờ ở cửa chính ạ. Tôi sẽ mang giày đi trong nhà."
+          "ja": "正面入口に午前十時ですね。室内用の靴を持っていきます。",
+          "vi": "Mười giờ sáng ở cửa chính ạ. Tôi sẽ mang giày tập dùng trong nhà thi đấu."
         }
       ],
       "admin": {
@@ -646,20 +662,20 @@
         {
           "id": "c25157bf-2104-5904-b911-4f96827263d2-u01",
           "speaker_id": "B",
-          "ja": "見てくれましたね。サーブを一回やってみますか。",
-          "vi": "Chị xem rồi nhỉ. Chị muốn thử giao bóng một lần không?"
+          "ja": "じゃあ、サーブを一回やってみますか。",
+          "vi": "Vậy chị muốn thử giao bóng một lần không?"
         },
         {
           "id": "c25157bf-2104-5904-b911-4f96827263d2-u02",
           "speaker_id": "A",
-          "ja": "はい。こっちの台に先にボールを当てるんですね。",
+          "ja": "はい。先に自分のほうの台にボールを当てるんですね。",
           "vi": "Vâng. Đầu tiên cho bóng nảy ở bên phần bàn của mình, đúng không ạ?"
         },
         {
           "id": "c25157bf-2104-5904-b911-4f96827263d2-u03",
           "speaker_id": "B",
-          "ja": "そうです。じゃ、一回やってみてください。",
-          "vi": "Đúng rồi. Chị thử một lần nhé."
+          "ja": "そうです。そのあと相手のほうにバウンドさせます。じゃ、一回やってみましょう。",
+          "vi": "Đúng rồi. Sau đó bóng nảy ở phần bàn đối phương. Nào, chị thử một lần nhé."
         },
         {
           "id": "c25157bf-2104-5904-b911-4f96827263d2-u04",
@@ -671,7 +687,8 @@
       "admin": {
         "source_refs": [
           "try",
-          "repeat"
+          "repeat",
+          "jtta-service"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -857,7 +874,7 @@
         {
           "id": "05fc2a5e-c44e-5825-aa54-a663204adff5-u03",
           "speaker_id": "A",
-          "ja": "はい。最初に台を出します。十一時に失礼しますね。",
+          "ja": "はい。最初に台を出すのを手伝います。十一時に失礼しますね。",
           "vi": "Vâng. Tôi sẽ phụ mang bàn ra lúc đầu. Mười một giờ tôi xin phép về trước nhé."
         },
         {
@@ -926,8 +943,8 @@
         {
           "id": "b8a9e491-3f16-504b-9ec4-9975ad4b13f5-u04",
           "speaker_id": "A",
-          "ja": "そうなんですね。箱の中を数えます。",
-          "vi": "Ra vậy. Tôi sẽ đếm trong hộp."
+          "ja": "そうなんですね。箱の中のボールを数えます。",
+          "vi": "Ra vậy. Tôi sẽ đếm bóng trong hộp ạ."
         }
       ],
       "admin": {
@@ -954,7 +971,7 @@
     {
       "situation_uid": "470ff5a9-f57d-587d-ba9b-7260bcbbbcea",
       "event_id": "E03",
-      "context_vi": "Bạn đã biết mình được giao đếm bóng trong hộp sau buổi tập Chủ nhật. Bạn làm rõ cần báo bằng cách nào và chậm nhất lúc mấy giờ.",
+      "context_vi": "Bạn đã biết mình được giao đếm bóng trong hộp vào buổi tập Chủ nhật. Bạn dự định đếm sau khi tập và muốn chốt cách báo kết quả cùng hạn báo.",
       "speakers": [
         {
           "id": "A",
@@ -971,8 +988,8 @@
         {
           "id": "470ff5a9-f57d-587d-ba9b-7260bcbbbcea-u01",
           "speaker_id": "A",
-          "ja": "数えたら、いつまでに連絡すればいいですか。",
-          "vi": "Đếm xong tôi báo anh chậm nhất khi nào ạ?"
+          "ja": "日曜の練習が終わったら数えます。いつまでに連絡すればいいですか。",
+          "vi": "Tập xong Chủ nhật tôi sẽ đếm. Tôi báo anh chậm nhất khi nào ạ?"
         },
         {
           "id": "470ff5a9-f57d-587d-ba9b-7260bcbbbcea-u02",
@@ -983,7 +1000,7 @@
         {
           "id": "470ff5a9-f57d-587d-ba9b-7260bcbbbcea-u03",
           "speaker_id": "A",
-          "ja": "練習のあとで数えて、日曜の五時までにメッセージですね。",
+          "ja": "練習のあとで数えて、日曜の午後五時までにメッセージですね。",
           "vi": "Tôi đếm sau buổi tập rồi nhắn anh chậm nhất lúc năm giờ chiều Chủ nhật, đúng không ạ?"
         },
         {
@@ -1173,7 +1190,7 @@
           "id": "bb11f065-6053-5a23-a11c-695a30fd45ad-u03",
           "speaker_id": "B",
           "ja": "お願いします。金曜の夜までにわかると助かります。",
-          "vi": "Nhờ chị nhé. Biết trước hoặc trong tối thứ Sáu thì tốt quá."
+          "vi": "Nhờ chị nhé. Nếu muộn nhất tối thứ Sáu mà biết được thì tốt quá."
         },
         {
           "id": "bb11f065-6053-5a23-a11c-695a30fd45ad-u04",
@@ -1229,8 +1246,8 @@
         {
           "id": "afb847e1-50a3-57c8-ae8a-5bb42b8dccde-u02",
           "speaker_id": "B",
-          "ja": "助かりました。十分前に来てほしいと伝えてください。",
-          "vi": "May quá. Chị nhắn giúp anh ấy tới sớm mười phút nhé."
+          "ja": "助かりました。練習が始まる十分前に来てほしいと伝えてください。",
+          "vi": "May quá. Chị nhắn giúp anh ấy đến trước giờ tập mười phút nhé."
         },
         {
           "id": "afb847e1-50a3-57c8-ae8a-5bb42b8dccde-u03",
@@ -1412,8 +1429,8 @@
         {
           "id": "929b11ba-eb96-5195-b61e-d4554773b865-u01",
           "speaker_id": "A",
-          "ja": "最初の五分、初心者もゆっくり打つ時間にするのはどうですか。",
-          "vi": "Dành năm phút đầu cho cả người mới tập đánh chậm thì sao ạ?"
+          "ja": "最初の五分は、初心者もゆっくり打てる時間にしませんか。",
+          "vi": "Mình dành năm phút đầu để người mới cũng có thể tập đánh chậm, được không ạ?"
         },
         {
           "id": "929b11ba-eb96-5195-b61e-d4554773b865-u02",
@@ -1546,7 +1563,7 @@
         {
           "id": "cae74688-036e-5cf2-a486-d196c5cb5445-u02",
           "speaker_id": "B",
-          "ja": "私が決めます。初めての人と慣れた人を組ませます。",
+          "ja": "私が決めます。初めての人と慣れた人をペアにします。",
           "vi": "Để tôi xếp. Tôi sẽ ghép người mới với người đã quen chơi."
         },
         {

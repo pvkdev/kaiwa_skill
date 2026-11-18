@@ -40,3 +40,18 @@
 - S011 → S012. Điều kiện chỉ áp dụng phòng thường. Khách nói cần phát ra tiếng nên nhân viên giải thích giới hạn, cho tư vấn phòng tập và chưa nói phòng trống.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S004 · `93840a06-37b4-5921-a949-cfa829d4a281-u01`. Nói rõ cả 1.500 lẫn 2.000 yên là mỗi giờ để khách so được hai loại. Khách chọn mic và được hẹn hướng dẫn ở quầy.
+
+Điểm nối. S001 ngày 12 mới là lời khách nói sẽ tới. S002 hỏi tới hay dùng để chốt 10 giờ ngày 13. S003 hỏi sáu người tại chỗ và cần nghe cả ghế sau; S004 đưa mic để bàn, khách chọn loại 2.000 yên mỗi giờ.
+
+Đã đọc B05 chương điện thoại dòng 24–35 và chương kính ngữ dòng 272–294, B21 bài hỏi đường dòng 43–87. Đối chiếu hỏi ngày/giờ/nhu cầu, xin kiểm với đúng người và đưa mốc nhìn thấy khi chỉ đường. Phí phòng và quy định âm thanh thuộc cơ sở giả định.
+
+## Rà độc lập Batch04 · E03
+
+- S009 · `d6bfb096-2398-5ed1-9391-21bf95abea7d-u01`. Việt trước bám 'cho phát ra tiếng', sửa thành mở nhạc thử bằng loa. Nhân viên vẫn làm rõ phòng thường, nguồn pin và sáu người.
+- S011 · `619bdf6f-8003-5410-9d86-a770b9006928-u01`. Đổi câu Việt cho tự nhiên, giữ phân biệt mang vào và bật loa. Lượt chốt khách cân nhắc phòng khác, để nối đúng khi cần nghe cả sáu người.
+
+Điểm nối. S009 hỏi mang loa chạy pin để mở đoạn nhạc. S010 xác nhận cả mang vào lẫn bật, hẹn 10 phút đúng số. S011 trả lời được mang nhưng không bật trong phòng thường; S012 tìm phòng tập và nhờ quầy đó kiểm chỗ, chưa hứa chắc được dùng loa.

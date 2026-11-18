@@ -41,3 +41,35 @@
 - 112b1e71-7092-50a0-9274-90c5247af302 (S014). A u02 nêu khách hỏi chỗ lấy bản đồ và u03 đề xuất biển ở cửa. B u04 nhận đưa một biển ra vị trí dễ thấy.
 - 6eca1ca7-16ed-5b15-a9e8-021032f43a62 (S015). A u01 cảm ơn, u02 hỏi đồ cần mang. B u03 trả lời găng tay và nước, A u04 nhắc lại theo điều kiện có đi.
 - 7881877f-7bc3-59ff-a44f-6aec54446779 (S016). A u01 báo chưa xác nhận, u02 đề xuất chậm nhất thứ Năm. B u03 nhận mốc và chỉ giữ tên khi A xác nhận đi.
+
+### Kiểm độc lập E01
+
+S001 người mới đủ điều kiện nhưng phải kiểm chỗ. S004 nghe đủ người, xin suất tuần sau và bắt đầu đăng ký. S002 hỏi việc trong ca 9–11 giờ, S003 chuyển từ nhập tên sang bày tờ rơi.
+
+- Đọc B09 dòng 4052–4056 về giờ phù hợp trong việc đăng ký tình nguyện, B25 dòng 945–962 về lời mời lịch sự và B07 dòng 507–516 về báo không đi được. Suất và thời gian là của hội chợ trong cảnh.
+
+### Kiểm độc lập E02
+
+S005 chỉ cửa Đông và Ueda cầm thẻ xanh. S007 sửa Ueno thành Ueda. S006 nhận 20 bản đồ ở lối vào, S008 chỉ còn mười phút nên tiếp tục phát, người hướng dẫn chuyển ghế.
+
+- Đọc B16 dòng 688–707 về ですね để xác nhận giờ, người và số lượng.
+
+- S005 (51bc0711-378e-5ba8-b630-82573b5920c7), 03. Hỏi đủ cửa vào và người cần gặp. Tiếng Việt gọi vật chỉ dấu là thẻ màu xanh.
+
+- S007 (b5935163-dffa-50e8-8cee-94a2d5904ffa), 03. Lời sửa tiếng Việt nêu cả Ueno và Ueda như JA. Người học nhắc đúng Ueda và thẻ xanh.
+
+### Kiểm độc lập E03
+
+S009 hủy ca 9 giờ và có thể phụ từ 13 giờ nhưng chờ gọi nếu cần. S010 đã được gọi ca chiều và đến xin đổi việc. S011 chỉ ghé bàn giao trước ca sáng. S012 được hẹn ca chiều, chuyển sang phòng B vì mưa và giữ 13 giờ.
+
+- S009 (c3444e37-9c6b-57e3-9dee-409103b2b816), 01. Sửa lời báo vắng thành tên công việc và mốc ca cụ thể. Người phụ trách hẹn báo nếu cần trợ giúp buổi chiều.
+
+- S012 (6dcfd853-b660-57db-ba49-1db5493f0f0f), 04. Hỏi giờ hẹn 13 giờ có đổi sau khi nghe phòng B, rồi đọc lại cả giờ và phòng khi chủ trì xác nhận.
+
+### Kiểm độc lập E04
+
+S013 báo đã phát 30 tờ và bàn giao 10 tờ. S015 cảm ơn người nhận rồi hỏi đồ mang nếu đi dọn. S016 hẹn báo thứ Năm hoặc sớm hơn, chỉ ghi tên khi đi được. S014 đứng riêng, đề nghị biển cho lần tới.
+
+- S013 (d14a8970-7a3d-5dc9-9dba-636f8f579f17), 01. Báo đúng số đã phát và chưa phát. Tiếng Việt dùng lượng từ tờ, sau đó giao phần còn lại trên bàn.
+
+- S015 (6eca1ca7-16ed-5b15-a9e8-021032f43a62), 01. Cảm ơn đúng việc người phụ trách vừa nhận số bản đồ còn lại. Câu hỏi về găng tay và nước giữ điều kiện nếu đi.
