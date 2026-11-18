@@ -51,3 +51,25 @@
 - S014 → S015. Giữ bước xem món trước khi xác nhận. Chỉ chuyển vị trí nút cạnh phần tên, thử lại cùng mẫu máy/người.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+
+Điểm nối. S001 chọn xem người lần đầu tự nhận. S002 tự thử thấy mã dễ tìm nhưng không biết tác dụng nút cuối. S003 giữ phần tìm mã và chỉ làm rõ nút, còn S004 là cách đặt riêng người thử từ cửa hàng và không chỉ trước.
+
+Đã đọc B25 bài 7 dòng 250–269, 315–334, 376–401 về đề xuất dưới dạng hỏi, nhận việc sau khi đồng ý và phản hồi khi có giới hạn. B25 bài 8 dòng 325–362 được dùng để nói rõ điểm ổn và điểm vướng từ trải nghiệm thử.
+
+## Rà độc lập Batch04 · E02
+
+- S006 · `85f6d167-6cc4-50eb-bea0-c0f91e4e671d-u02`. Nhãn nút cho biết hành động, vị trí dưới tên món cho phép kiểm rồi bấm. Chỉnh để tách tác dụng của chữ và vị trí trước khi Nishida nhận việc.
+- S007 · `6731036e-5778-51fa-8710-2fce150a6934-u02`. Hỏi giới hạn hiển thị hay ghi dữ liệu để tìm phần còn thử được. Việt nói rõ hệ thống đang dùng thực tế và cập nhật trạng thái đã nhận.
+
+Điểm nối. S005 chỉ giảm chuyển màn hình, vẫn kiểm trước khi nhận. S006 nối thêm tên món và nhãn nút. S007 quay lại đề xuất gộp còn mở, dữ liệu thật vẫn cần trang thứ hai. S008 thử bố cục trên mẫu tách kho với ba người, không ghi nhận hàng thật.
+
+## Rà độc lập Batch04 · E04
+
+- S013 · `515765da-3671-5617-80cb-64d4f839f572-u03`. Chỉnh 画面を動かす thành スクロール để người học gắn đúng động tác. Giữ quan sát một người thấy nút rồi làm được.
+- S014 · `271e363c-9c37-51d2-82df-512ec3fc765d-u03`. Đề nghị cho tên và nút hiện đồng thời nhưng vẫn dưới tên. Dùng cách nói thao tác cuộn khớp cảnh trước.
+- S015 · `d8961c3b-bcd4-535e-ae86-983388daddfd-u03`. Nút đặt sát dưới tên, Việt trước nói đưa xuống trong khi trước đó nút quá thấp. Giữ thứ Sáu và hai việc quan sát.
+
+Điểm nối. S013 tên nút có tác dụng khi thấy, máy nhỏ phải cuộn mới thấy. S014 tách rủi ro cuộn mất tên món và đặt nút lên quá cao, chọn ngay dưới tên. S015 thử lại vào sáng thứ Sáu với máy nhỏ và người cũ, kiểm thấy cùng lúc và đọc trước bấm.

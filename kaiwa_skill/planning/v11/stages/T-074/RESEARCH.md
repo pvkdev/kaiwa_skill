@@ -38,3 +38,7 @@ S009→S010/S011: mốc gốc thứ Năm 14 giờ, hai khung đề xuất thứ 
 - S010 · `281686cc-41da-5072-806f-3942723a4900` · u02, u04, u05. Thứ Sáu 10 giờ, tòa chính 1F quầy lễ tân, mẫu đúng loại điều chỉnh được độ cao, bên Arai đón ở quầy.
 - S011 · `0284a946-557d-5c2a-a762-b40e163cf926` · u02, u04, u05. Giữ 14 giờ thứ Năm cho cuộc gọi mười phút, hủy chuyến đến. Mục tiêu điện thoại xác nhận yêu cầu, đề xuất gặp thêm sau đó.
 - S012 · `44023b3e-dbe3-5177-8725-01eadaef51e4` · u02, u04, u05. Tiếp từ cuộc gọi mười phút, chọn thứ Ba 15 giờ, 30 phút, tòa chính 1F. Arai chuẩn bị kích thước, Ngọc mang đúng mẫu.
+
+## Rà độc lập V11 batch04
+
+Đọc lại B16 Unit 6 dòng 237–266 về đã gửi nhầm và xin người nghe xử lý đúng bản, dòng 15–44 về nhắc mốc hẹn của cuộc gọi thăm khách. Đọc B26 bài 2 dòng 156–175, cách đổi lịch với người gần gũi và người làm dịch vụ. Lời đối tác chọn thể lịch sự, chia yêu cầu thành lịch cũ, lý do, hai giờ có thể thay.

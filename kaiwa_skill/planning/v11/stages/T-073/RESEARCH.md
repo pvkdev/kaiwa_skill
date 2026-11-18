@@ -87,3 +87,9 @@ S033→S034/S035/S036: bất biến là bàn giao báo cáo thứ Năm, dữ li�
 - S036 · `428b628e-9018-534b-9f7d-1ee816927691` · u02, u04, u05. Chỉ chuẩn bị các việc hiện có, chưa gửi khung trước. Ogawa hỏi khách về nhận riêng mẫu trống và hẹn cập nhật 14 giờ.
 - S037 · `9c0841e0-75c7-5fd6-8e93-59c8ebc9fa89` · u02, u04, u05. Khách chỉ xem bố cục, không gửi số chưa kiểm. Vy báo Kinh doanh trước, gửi mẫu trống tới khách sau khi duyệt nội dung khung.
 - S038 · `8e24fb04-a26a-513b-8cfd-f145a06870b5` · u01, u03, u05. Đề xuất mới ảnh hưởng mục, phép chỉ thử bố cục cũ. Ogawa yêu cầu dừng, xác nhận danh sách khu vực, chưa sửa tệp chung; báo tóm tắt 14:30.
+
+## Rà độc lập V11 batch04
+
+Đọc các đoạn B10 dòng 15–23 về xin phép hành động của mình, B03 dòng 37–46 về xác nhận giờ và phạm vi, B02 Scene 32 dòng 7–33 về xin nghỉ trùng lịch khách, B02 Scene 34 dòng 153–170 về tìm phòng sau khi lịch thay đổi và B25 dòng 9–43 về phân biệt ai làm hành động. Các câu chấp thuận của Ogawa/Kuroda/Ito chỉ theo tình huống.
+
+2026-11-18 đọc phần Bộ Lao động trả lời nghỉ phép năm theo ngày, giờ và nửa ngày. Nghỉ nửa ngày có thể được bố trí khi người lao động đề nghị và người sử dụng lao động đồng ý, trong phạm vi không cản trở lấy nghỉ theo ngày. S013–S017 là đề nghị nửa ngày theo hình thức nơi làm trong cảnh, không diễn giải quyền từ chối nghỉ cả ngày. S018–S019 là xin ra ngoài tạm thời, không dạy điều kiện nghỉ phép theo giờ. https://www.startup-roudou.mhlw.go.jp/qa/zigyonushi/yukyu/q3.html

@@ -53,3 +53,31 @@
 - S015 → S016. Đã đặt thứ Sáu lúc 10, hai khách dự. Cuộc gọi trước xác nhận cùng mục tiêu thao tác và đưa nhãn cũ làm mẫu.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S001 · `927a40ae-0818-5b22-a866-2dd570af4f96-u03`. Tách thao tác trước in khỏi tốc độ máy; chỉnh Việt lấy đúng so sánh này thay vì bỏ phần tốc độ in.
+- S004 · `fc4d934b-25e7-5c9b-850c-f3d5cd7f143c-u02`. Số sáu đến tám cần giả định ca chiều là người khác ca sáng. Thêm một cụm xác nhận và giữ kế hoạch một người dùng máy mỗi lần.
+
+Điểm nối. S001 chậm ở ba menu trước khi in. S002 sửa từ cần nhiều loại sang cần hai nút dễ chọn. S003 biết bốn người ca sáng, ba ngày/tuần và dùng luân phiên; S004 thêm ước hai đến bốn ca chiều khác, dự tính tổng sáu đến tám và thử chung một máy.
+
+Đã đọc B15 bài 12 dòng 57–82 về tính theo đơn vị, giả định sử dụng và quyền xem xét, B05 chương cửa hàng dòng 140–151 về phí theo nơi giao. Giá, mẫu máy, cách tính và dịch vụ của người bán là tình tiết giả định.
+
+## Rà độc lập Batch04 · E02
+
+- S007 · `7c8cc3a0-a673-59df-a810-7caaac3dc6eb-u03`. Lượt thử kết bằng giấy in chứ không chỉ thấy nhãn trên màn hình. Gọi đúng nút Nhãn giá và dùng động từ in để JA–VI nhất quán.
+
+Điểm nối. S005 Lite có hai nút và chỉnh ngay trên máy, mẫu lớn có đổi bằng máy tính. S007 tiếp phần mẫu lớn quá nhiều nút, trực tiếp in một nhãn trên Lite. S006 đứng riêng xác nhận thứ Hai quan trọng, nhắm hướng dẫn thứ Sáu; S008 mới nêu tùy chọn 6.000 yên và đề nghị hai mức.
+
+## Rà độc lập Batch04 · E03
+
+- S012 · `5118c59e-4108-57bc-86cc-8e41e183b22d-u01`. Sửa 'đã thuế' thành 'đã gồm thuế'. Giữ phép cộng 60.000 + 2.400 = 62.400 và điều kiện nơi nhận cùng tùy chọn.
+
+Điểm nối. S009 hai Lite 60.000 yên gồm thuế, mỗi máy hai cuộn nhãn và video. S010 giá 27.000/máy từ năm, tổng 135.000 chưa giao; S011 quay lại hai máy, giao chung tầng 1 Kawahara, không hướng dẫn và hẹn 15 giờ. S012 cộng 2.400 thành 62.400 gồm thuế theo các điều kiện đó.
+
+## Rà độc lập Batch04 · E04
+
+- S013 · `5771a970-1dd9-58e8-b488-ea8fd828e424-u03`. Chủ thể thử là người mới như Kobayashi vừa nêu. Sửa câu hỏi 日本語 và Việt để tránh biến thành khách phụ trách tự thử.
+- S016 · `d327b445-ed20-57e0-92c3-2d5ca7fb4111-u03`. Chỉnh người mang mẫu là hai người dự, và việc chuẩn bị mẫu tương tự diễn ra trước khi họ tự thử tại chỗ. Giữ trưởng quầy chỉ quan sát.
+
+Điểm nối. S013 xác định cần xem người mới in được một nhãn. S014 rẽ từ đó sang xem ngân sách và khách cho chiều thứ Tư liên hệ. S015 rẽ về gốc, chọn demo thứ Sáu 10 giờ, hai người. S016 giữ hẹn và nhờ mang nhãn, người mới tự in còn trưởng quầy quan sát.

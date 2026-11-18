@@ -38,3 +38,7 @@ S009→S010→S011: sau một buổi thử dùng ví dụ, 3/5 nhắc đúng bư
 - S010 · `b12b90a8-bb31-5f2f-9bf9-da049ca9e1f8` · u01, u03, u05. Kawamura xác định chỗ thiếu là cách nối ví dụ với số. An nói thử một câu mới, xác thực điều không nên thay toàn bài.
 - S011 · `35c50ee5-0271-5c6a-b490-01fedfb3710d` · u01, u03, u05. An báo đúng hai người mới, không so trực tiếp cùng nhóm hay nói chắc đạt toàn bộ. Kawamura chấp thuận dùng khung, giữ căn cứ số liệu để trả lời.
 - S012 · `934c5688-42af-50b4-bbfe-a25386994919` · u01, u03, u05. An cảm ơn một lời khuyên cụ thể và nêu câu hỏi của khách thay vì thu nhận chung. Chị phản hồi, An chọn khi nào tái dùng.
+
+## Rà độc lập V11 batch04
+
+Đọc B03 Unit 18 dòng 63–67 về cân nhắc phương án trước khi hỏi và dòng 27–32 về báo điều cụ thể, nêu kết luận và điểm bất lợi. Đọc B02 dòng 14–36: chỗ ngồi thay đổi khi người vận hành cần ổ điện, chuyển thành kiểm dữ kiện người nghe trước chọn thứ tự ví dụ/số liệu.

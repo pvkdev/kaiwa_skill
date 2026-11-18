@@ -45,3 +45,39 @@
 - 486f29fe-4f71-57da-882a-fe163585e9fe (S018). A u02 chỉ rõ sự kiện ở trường, B u03 sửa là công viên. A u04 kết luận hai sự kiện riêng dù trùng tên.
 - 7188382b-3a15-5264-905e-3610a7f18b4d (S019). A u02 nhận hỏi thầy sau giờ học ngày mai. B u03 xin báo nhóm khi có lời đáp, A u04 chốt chỉ nhắn giờ đã xác nhận.
 - 22d19b85-b9de-5b88-a4cf-95cc1c7ca36b (S020). A u01 nêu người có thẩm quyền và mốc 14 chuyển 15 giờ. B u02 hỏi nơi, A u03 nói vẫn ở nhà thi đấu và u05 nhắn cả nhóm.
+
+### Kiểm độc lập E01
+
+Ba cảnh đầu chọn gần ga, quán yên và hỏi giữa hai chỗ. S004 từ chối quán lớn vì khó nghe nhau. S005 ưu tiên yên tĩnh và chọn quán nhỏ sau ga khi đáp ứng được cả gần ga.
+
+- Đọc B01 dòng 3133–3146 về hỏi và nêu suy nghĩ, 2227–2237 về xác nhận có chung ý.
+
+- S004 (b0afe0cd-9bd0-51a0-a6b7-bac9d386822b), 02. Giữ lời hỏi lý do không đối đầu. Tiếng Việt dùng lời từ chối tự nhiên trước lý do quán đông.
+
+### Kiểm độc lập E02
+
+S006 hỏi vật mang theo, S007 kể kết quả đã thử thẻ từ, S008 hỏi đúng Mori khi người quen chỉ biết giờ. S009 cân nhắc học sáng thay vì dồn tối, S010 chọn tự thử từ vựng hai mươi phút trong một tuần.
+
+- S006 (8e8c5f9b-e8fc-53a0-8bb1-a7c9650ec6ae), 03. Hỏi tiếp có cần ba lô lớn sau khi biết nên đem nước và áo khoác. Sửa câu Nhật nói hai thứ vừa túi nhỏ.
+
+### Kiểm độc lập E03
+
+S011 bạn muốn nghe ý kiến, S012 nghe kinh nghiệm cá nhân, S013 bạn muốn được lắng nghe. S014 làm rõ chỉ gợi ý tóm tắt một dòng, S015 bạn chọn giữ cách cũ hôm nay và chuyện khép lại.
+
+- S012 (1e523cca-f38d-5598-8826-ef6b189cfa20), 04. Nói hiệu quả chỉ trong trải nghiệm của mình. Chỉnh cách kể Nhật thành thói quen từng làm, khớp tiếng Việt.
+
+- S014 (07013851-9427-5a30-9e48-083cc703a605), 02. Lời đính chính gọi rõ tóm tắt trong một dòng như mục đích gợi ý. Bạn được tự giữ cách đang dùng.
+
+- S015 (a0d764e7-15a4-5ab4-b803-2e9c747bbf90), 02. Bạn nói hôm nay ghi như cũ còn thử sau tùy ý. Người học chấp nhận và kết lại bằng câu ngắn, thân mật.
+
+### Kiểm độc lập E04
+
+S016 nêu người kể tin và chưa kiểm với thầy. S017 phân biệt nghe người khác với thấy thông báo. S018 hai chợ cùng tên nhưng khác nơi. S019 đang chờ hỏi sau giờ học. S020 đã hỏi thầy, chuyển 14 giờ sang 15 giờ, vẫn nhà thi đấu và sẽ nhắn nhóm.
+
+- Đọc B27 dòng 819–834 về dấu hiệu truyền tin và mốc chắc chắn, 3036–3048 về phản hồi nêu ai nói.
+
+- S017 (19c47016-a302-513e-a19d-716a246ef232), 01. Hỏi về thông báo của ban phụ trách. Tiếng Việt nói rõ một người bạn là nguồn tin, không nhầm đối phương.
+
+- S019 (7188382b-3a15-5264-905e-3610a7f18b4d), 02. Sửa lời mở thành hai bạn chưa thấy thông báo. Người học nhận hỏi thầy ngày mai rồi gửi giờ khi có.
+
+- S020 (22d19b85-b9de-5b88-a4cf-95cc1c7ca36b), 01. Xác nhận giờ cũ 14 giờ, giờ mới 15 giờ từ người phụ trách. Diễn đạt tách hai mốc để không nghe nhầm thành khung hai đến ba giờ.

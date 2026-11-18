@@ -51,3 +51,30 @@
 - S014 → S015. Giữ hướng dẫn hiện tại song song, chọn tối đa ba khách và ghi câu hỏi; đã tìm ba khách đồng ý, mới hẹn ngày lúc này.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S004 · `661d57ed-39be-567f-8a90-07beed3e7516-u02`. Mori xem câu hỏi của đúng nhóm khách mới ở nhóm hỗ trợ và phân theo bước. Chỉnh Việt để nói rõ đếm theo từng bước trước khi báo hai chỗ nhiều nhất.
+
+Điểm nối. S001 hỏi 40 khách mới tháng trước, 24 phản hồi. S002 sửa phạm vi từ toàn bộ sang đúng khách mới. S003 16/24 muốn bản ngắn, chưa hỏi chỗ vướng. S004 chọn hồ sơ câu hỏi hỗ trợ đúng kỳ/nhóm và hẹn báo 15 giờ thứ Năm.
+
+Đã đọc B13 Unit 8 dòng 265–276 về phân biệt dữ liệu và phần diễn giải, B15 bài 5 dòng 26–42 về ghi nhận điểm có lý rồi giới hạn kết luận và nêu đề xuất.
+
+## Rà độc lập Batch04 · E02
+
+- S008 · `2e878b10-99d1-51f3-82d0-880bea5ea1d7-u03`. Điều kiện để dùng B là người bổ sung tham gia được cả ba ngày, hiện mới đi hỏi. Làm rõ câu Việt ở chỗ 'khi biết được'.
+
+Điểm nối. S005 cùng 20 bộ, từ thứ Hai A bốn ngày, B ba. S006 nêu cần thêm người và thiếu trực, chưa chọn khi chưa biết khách cần thứ Tư. S007 đứng riêng chốt cả 20 cần thứ Tư. S008 chọn B có điều kiện đủ hai người từ thứ Hai.
+
+## Rà độc lập Batch04 · E03
+
+- S009 · `602a0f69-df74-5130-b509-2f11186b2fd5-u04`. Mori không nói hầu hết khách, chỉ báo 16 trong 24 phản hồi. Việt nêu đầy đủ điều 16 công ty đề nghị để lượt nói đứng rõ.
+
+Điểm nối. S009 nghe giới hạn 24 và thiếu 16 không phản hồi. S010 tách kết quả khảo sát trước khỏi dự báo. S011 quay lại điểm giới hạn, hỏi cùng câu ở tám khách cũ. S012 tách 2/8 cũ và 16/24 mới, giữ phép thử cho khách mới.
+
+## Rà độc lập Batch04 · E04
+
+- S014 · `84aaeddd-b3bf-5d2c-9d11-b351c2ec1431-u03`. Chủ trì yêu cầu ghi lại câu hỏi, không tự nhận ghi. Sửa chủ thể trong Việt và giữ trần ba công ty cùng bản hướng dẫn cũ.
+- S015 · `94e31110-4f50-56ad-b222-3dfd93817558-u03`. Mori nhận cả thu và ghi phản hồi, trả lời đúng ai ghi. Giữ thứ Ba thử và chiều thứ Sáu xem trước khi mở rộng.
+
+Điểm nối. S013 xin thử nhỏ theo 16/24 và đo cài xong, thắc mắc; S014 giữ hướng dẫn cũ, khách mới tối đa ba và ghi chỗ hỏi. S015 đủ ba công ty tình nguyện, chốt thứ Ba, Mori ghi câu hỏi từ hỗ trợ và báo chiều thứ Sáu trước quyết định mở rộng.

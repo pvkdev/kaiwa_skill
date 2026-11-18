@@ -46,3 +46,41 @@ Các cảnh về mùa và sinh hoạt tách mình thấy thế nào khỏi dự 
 - 311aa4bd-de93-5b45-8d5a-b81475edd970 (S018). A u02 hỏi buổi sau, B u03 nói 14 giờ còn chỗ. A u04 xin giữ một suất và B u05 nhận tên.
 - 067b6046-942a-511a-9c56-815524aaef98 (S019). A u01 hỏi vị trí, B u02 gần sân khấu. A u03 đưa bàn thông tin dưới đồng hồ, B u04 nhắc sẽ tới.
 - 5b309bed-d155-5c95-8ac8-be413062ef63 (S020). A u01 xác nhận gặp, u03 kể trống và cảm giác thật. B u04 muốn xem lần sau, không giả định có thêm suất.
+
+### Kiểm độc lập E01
+
+Ba cảnh riêng bắt chuyện lạnh, xử lý dự báo mưa và nghỉ dưới bóng râm. S004 giữ hẹn công viên và chỉ dời khỏi giờ trưa, S005 thống nhất cổng công viên lúc 16 giờ.
+
+- Đọc B08 dòng 2856–2866 về câu nhận xét nhiệt độ và hỏi xu hướng mưa.
+
+- S002 (9c352040-b42f-5267-8ae8-45115974ce52), 03. Lời hỏi Việt tự nhiên hơn khi muốn biết xu hướng mưa. Người học đề nghị buổi sáng, còn mưa sớm thì báo lại.
+
+- S005 (3beb736a-9fb6-50f9-b39f-586af3274690), 03. Chốt đúng giờ chiều trong lời Nhật. Người học nhắc cổng công viên, bạn xác nhận.
+
+### Kiểm độc lập E02
+
+S006 hỏi hoa tại Tokyo, khoảng cuối tháng Ba và xem thông tin trước lúc đi. S007 kể trải nghiệm mùa mưa và phơi đồ. S008 hỏi cách mặc lúc ngắm hoa. S009 và S010 là hai lịch độc lập, dự phòng bảo tàng bên sông và đã đổi bữa trưa sang quán.
+
+- Mở JNTO Japan in March ngày 2026-11-18. Mục Cherry blossom season closes in nêu Tokyo thường có hoa cuối tháng Ba và thay đổi theo năm. Cùng trang nêu nhiệt độ tháng Ba có thể giảm đột ngột. https://www.japan.travel/en/guide/march/
+
+- Mở mục Spring trong JNTO Weather & Geography. Nguồn nêu mùa mưa bắt đầu vào khoảng tháng Năm–Sáu và thời tiết khác theo vùng. S007 chỉ dùng trải nghiệm mưa nhiều và thói quen phơi đồ. https://www.japan.travel/en/plan/weather/
+
+- S008 (645b15aa-c1ce-5b42-9d6a-abec6f82d6ab), 03. Người học nhận đúng gợi ý mang áo khoác mỏng khi chiều có thể lạnh. Bỏ cách nói như chỉ định chiếc áo có thể mặc vào cởi ra.
+
+### Kiểm độc lập E03
+
+S011 dùng lịch đã công bố của lễ hội Koto lần 44, ngày 17 tháng 10 năm 2026 lúc 10–16 giờ ở công viên Kiba. S012 và S013 dùng hai chỗ xem của lễ hội giả định. S014 sửa ngày 13 chuẩn bị thành ngày 14 tại hội trường, S015 chốt 11 giờ sáng và mang giày đi riêng trong nhà.
+
+- Mở trang chính thức của quận Koto ngày 2026-11-18, mục 開催案内 tại dòng 106–118. Xác nhận ngày 17 và 18 tháng 10 năm Reiwa 8, giờ 10:00–16:00, công viên Kiba là một địa điểm. Trang đã ghi kỳ lễ hội này kết thúc. https://www.city.koto.lg.jp/101021/kurashi/komyunitei/kumin/chuo/55.html
+
+- Đọc B11 dòng 534–556 về kiểm ngày lễ hội bằng よね.
+
+- S011 (b2471a0c-87bf-5730-99f1-330c353c7b71), 03. Hỏi cả giờ bắt đầu và kết thúc. Bối cảnh đặt là hội thoại luyện theo ấn bản đã công bố, không gợi đây là lịch sắp tới.
+
+- S015 (5d34cbc7-cbd8-501b-bdaa-baf5a8795234), 03. Đổi sang cách hỏi cần mang gì rõ chủ thể và xác nhận giày riêng đi trong hội trường. Chốt 11 giờ sáng ngày 14.
+
+### Kiểm độc lập E04
+
+S016 phân biệt hàng vào và hàng chơi. S017 được vào gấp giấy ngay, S018 chỉ hỏi chỗ lượt 14 giờ và đang đưa tên. S019 hẹn bàn thông tin dưới đồng hồ lớn, S020 gặp đúng mốc và kể đã xem biểu diễn trống.
+
+- S020 (5b309bed-d155-5c95-8ac8-be413062ef63), 03. Sau khi gặp lại đúng đồng hồ, người học nói đã xem buổi đánh trống và bất ngờ vì tiếng to. Nhật gọi rõ biểu diễn.

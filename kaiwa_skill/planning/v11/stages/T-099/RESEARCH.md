@@ -53,3 +53,30 @@
 - S015 → S016. Hai bên đã xem 2+2, trao đổi trước buổi quyết. Giai đoạn một đồng ý về cách làm, lịch mở rộng và đặt mua vẫn mở.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S004 · `6f0eeadb-3f74-53f9-bcef-4a202d8b1984-u03`. Việc sửa thông báo diễn ra trước thứ Hai. Sửa lượt hỏi để ra quyết định thứ Sáu dựa trên khả năng kiểm kịp, không chờ tới thứ Hai rồi mới hỏi hạn thứ Sáu.
+
+Điểm nối. S001 lo sáng thứ Hai, S002 nối vào nguy cơ dừng nhận đơn, chi phí chỉ là giả định hỏi. S003 riêng chốt thử một đơn trước 9 giờ khi giữ cách cũ. S004 riêng làm rõ hạn đổi thông báo là thứ Sáu 16 giờ nếu chưa thấy khả năng kiểm kịp thứ Hai.
+
+Đã đọc B15 bài 14 dòng 59–78, B10 bài 5 dòng 202–216 và B25 bài 7 dòng 376–401. Lấy cách nghe rào cản thật, thương lượng giá và chuyển sang phương án có điều kiện. Tiền, lịch và vai quyết định thuộc dự án giả định.
+
+## Rà độc lập Batch04 · E02
+
+- S006 · `419b30d5-9501-547e-b853-dab631078c95-u03`. Dùng đối chiếu số đã nhận theo từng ngày và mục tiêu mười trong tuần. Lời cũ dễ hiểu là ngày nào cũng cần có mười đơn.
+- S007 · `ba1e825c-9200-507c-a0ca-8b5911f3209f-u03`. Kawamura đặt điều kiện tư vấn trong 15 phút tính từ cuộc gọi. Việt trước dùng 'người nghe tư vấn' mơ hồ vai, sửa rõ ai cần được hỗ trợ.
+
+Điểm nối. S005 một quầy, một tuần, giữ cách cũ. S006 chấp nhận rồi đối chiếu đủ mười đơn trong tuần. S007 rẽ từ S005 chưa nhận, cần tư vấn trong 15 phút sáng ngày đầu và chờ kiểm. S008 rẽ lại S005, cần hỗ trợ tại chỗ; đề nghị 9–11 rồi hỗ trợ qua điện thoại, khách còn cân nhắc.
+
+## Rà độc lập Batch04 · E03
+
+- S012 · `1baa0d57-fee7-55ec-bbdb-38ed6e1b116f-u01`. Đổi 二十六万円まで để rành đây là mức thấp nhất có một buổi tới. Đổi trực tuyến mới có mức 240.000, khách sẽ đem hai phương án đi bàn.
+
+Điểm nối. S009 giá 300.000 với hai buổi, 260.000 với một, giữ máy và cài đặt; S010 điều chỉnh hiểu sai của khách. S011 rẽ lại S009 hỏi 240.000 với một buổi tới, chờ người duyệt và hẹn 16 giờ thứ Năm. S012 chỉ 240.000 với buổi trực tuyến; 260.000 nếu tới chỗ.
+
+## Rà độc lập Batch04 · E04
+
+- S015 · `cab2421a-53f8-566f-bdc5-9b9da0ad85d6-u03`. Đặt dữ kiện bốn điểm mỗi điểm một máy để câu hỏi hai điểm chưa chuyển rõ. Giữ cách cũ một tuần ở mỗi đợt và khách mới chuyển phương án lên trưởng bộ phận.
+
+Điểm nối. S013 bốn máy và giữ luồng cũ một tuần, lịch chưa chốt. S014 khách cần bốn máy cùng ngày, nhà cung cấp chưa cam kết, hẹn người quyết 14 giờ thứ Sáu. S015 đưa phương án hai và hai đi xem trước, mỗi đợt vẫn giữ cách cũ. S016 trưởng bộ phận chấp nhận thử hai đầu, còn cách đo và ngày hai máy sau để buổi hẹn.

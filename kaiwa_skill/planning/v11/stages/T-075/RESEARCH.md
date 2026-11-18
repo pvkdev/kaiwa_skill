@@ -47,3 +47,7 @@ S013→S014→S015: bảng tình trạng thiết bị, Kataoka đã nhận danh 
 - S013 · `06792559-d28f-5a09-a6f6-d5e07563665b` · u01, u03, u05. Phân biệt Kataoka nhận kiểm thông tin, Đức làm phần số lượng và ghép. Chưa nói người gửi ở điểm này.
 - S014 · `a4cd4556-bf5c-52d1-971e-aa9e8f6866ec` · u01, u03, u05. Đức chỉ đích danh hai cách hiểu, nhận trực tiếp gửi Sato trước 17 giờ; người hỗ trợ không gửi bản song song.
 - S015 · `64685ced-ab4d-5acd-a301-fe9c6cd0f605` · u01, u03, u05. Hai giờ riêng 16:48 gửi và 16:53 người nhận phản hồi. Cảm ơn đúng phần: leader chốt đầu mối, Kataoka kiểm, chưa nhận mình đã cảm ơn đồng nghiệp khi chỉ dự định.
+
+## Rà độc lập V11 batch04
+
+Đọc B24 mục 87 dòng 124–137 về 一人では手が回らない; B03 Unit 17 dòng 37–46 về thứ tự và hạn; B02 Scene 20 dòng 299–322 về xác nhận thời điểm và thu hẹp lời nhờ; B09 mục 22 dòng 54–59 về chủ động mời giúp. Chặng dùng các cách nói cùng phạm vi việc và giờ báo lại cụ thể.
