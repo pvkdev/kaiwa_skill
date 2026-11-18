@@ -65,3 +65,5 @@
 Đã đọc Nhật và Việt riêng, đối chiếu hai bản theo vai, đổi vai và kiểm các nhánh đã ghi.
 
 Rà độc lập toàn bộ chặng.
+
+Đọc lại cách mô tả phần mẫu trong S001/S002, xin cọ và nối hướng dẫn ở S009 → S010, lời xem màu và cảm ơn ở S024 → S025.
