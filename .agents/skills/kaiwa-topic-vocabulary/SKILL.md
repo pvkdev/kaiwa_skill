@@ -27,7 +27,7 @@ Quyết định của chủ dự án ngày 18 tháng 11 năm 2026, theo yêu c�
    - Trang chính thức của dịch vụ, cơ quan hay nhà vận hành cho thuật ngữ thủ tục, y tế, pháp lý, giao thông (ví dụ tên giấy tờ, tên dịch vụ, chữ trên biển và phiếu).
    - Từ điển khi chưa chắc chữ viết, cách đọc hay nghĩa.
 
-   Ghi nguồn vào `admin_sources` khi một mục từ hoặc nghĩa dựa vào nguồn cụ thể, bắt buộc với thuật ngữ thủ tục, y tế, pháp lý. Từ đời thường không cần dẫn nguồn từng từ.
+   Ghi nguồn vào `admin_sources` khi một mục từ hoặc nghĩa dựa vào nguồn cụ thể, bắt buộc với thuật ngữ thủ tục, y tế, pháp lý. Gắn source_refs vào từng mục này và ghi source_domain là procedural, medical hoặc legal. Từ đời thường không cần dẫn nguồn từng từ.
 
 ## Cấu trúc danh sách
 
@@ -40,7 +40,7 @@ Quyết định của chủ dự án ngày 18 tháng 11 năm 2026, theo yêu c�
 
 - **Dạng mục từ.** Động từ thể từ điển (送る, 届ける, 予約する). Tính từ đuôi い dạng cơ bản (重い). Tính từ đuôi な không kèm な/だ (丁寧). Danh từ ở dạng mục từ. Không ghi cả 予約 lẫn 予約する trong một chặng; chọn dạng người học cần dùng nhiều hơn trong chủ đề.
 - **Cụm cố định ngắn** được nhận khi người học cần dùng nguyên khối (お先に失礼します, 着払い, 割れ物注意). Câu hoàn chỉnh dài để cho hội thoại và shadowing, không đưa vào danh sách từ.
-- **Chữ viết.** Viết như người Nhật thường viết: kanji khi thường viết kanji, kana khi thường viết kana (たばこ, ください), katakana cho từ ngoại lai. Kiểm okurigana.
+- **Chữ viết.** Viết như người Nhật thường viết: kanji khi thường viết kanji, kana khi thường viết kana (たばこ, ください), katakana cho từ ngoại lai. Kiểm okurigana. Giữ chữ Latin khi đó là tên hoặc ký hiệu dùng trong tiếng Nhật như EMS và có nguồn xác nhận cách viết. Ghi cách đọc kana và nghĩa Việt như các từ khác.
 - **Cách đọc (`reading`).** Toàn bộ bằng kana: hiragana cho từ Hán và từ thuần Nhật, giữ katakana cho phần ngoại lai.
 - **Nghĩa (`vi`).** Ngắn, đúng nghĩa dùng trong chủ đề. Từ nhiều nghĩa thì ghi nghĩa hợp chủ đề trước, có thể thêm nghĩa thứ hai sau dấu chấm phẩy. Không viết câu ví dụ.
 - **Loại từ (`pos`)** theo [hợp đồng bản thảo](references/draft.md).
@@ -65,8 +65,8 @@ Quyết định của chủ dự án ngày 18 tháng 11 năm 2026, theo yêu c�
 
 ## Ba lượt rà trước khi duyệt
 
-1. **Đủ để tự nói.** Với từng nhóm, thử đặt 3–5 câu về hoàn cảnh của chính mình chỉ bằng từ trong nhóm và ngữ pháp của cấp. Nếu thiếu động từ, tính từ hay từ định lượng để nói trọn câu, bổ sung. Đi qua từng tình huống của chặng và thử làm lại việc đó với chi tiết khác (đổi món, đổi ngày, đổi sự cố). Từ nào cần mà chưa có thì thêm.
-2. **Đúng chữ, đúng đọc, đúng nghĩa.** Đọc từng mục: kanji và okurigana, cách đọc (âm đục, trường âm, âm ngắt), dạng mục từ, nghĩa Việt theo chủ đề. Rà riêng từ đồng âm, cặp tự/tha động từ và từ Hán Việt dễ hiểu sai nghĩa (ví dụ 勉強 khi nói giảm giá). Đối chiếu bảng Mimikara/Minato khi có.
+1. **Đủ để tự nói.** Với từng nhóm, thử đặt 3–5 câu về hoàn cảnh của chính mình bằng từ trong nhóm cùng vốn từ và ngữ pháp nền của cấp. Nếu thiếu động từ, tính từ hay từ định lượng để nói trọn câu, bổ sung. Đi qua từng tình huống của chặng và thử làm lại việc đó với chi tiết khác (đổi món, đổi ngày, đổi sự cố). Từ nào cần mà chưa có thì thêm.
+2. **Đúng chữ, đúng đọc, đúng nghĩa.** Đọc từng mục: kanji và okurigana, cách đọc (âm đục, trường âm, âm ngắt), dạng mục từ, nghĩa Việt theo chủ đề. Rà riêng từ đồng âm, cặp tự/tha động từ và từ Hán Việt dễ hiểu sai nghĩa (ví dụ 勉強 khi nói giảm giá). Đối chiếu từng surface với dạng từ điển và nghĩa trong cả câu. 送りたい là dạng của 送る trong ngữ cảnh gửi hàng; 贈りたい thuộc 贈る khi tặng quà. Đối chiếu bảng Mimikara/Minato khi có.
 3. **Đúng cấp, đúng chủ đề, không thừa.** Bỏ từ sách vở hoặc hiếm khi dùng trong chủ đề, từ trùng ý không có khác biệt dùng, từ chỉ “có liên quan” mà người học khó cần nói. Kiểm từ vượt trần có lý do thật. Cân đối số mục giữa các nhóm.
 
 Sau khi sửa một nhóm, đọc lại cả nhóm và các nhóm có từ liên quan. Ghi kết quả rà theo nhóm trong `status.json`.
@@ -75,6 +75,6 @@ Sau khi sửa một nhóm, đọc lại cả nhóm và các nhóm có từ liên
 
 Đọc [hợp đồng bản thảo](references/draft.md) khi tạo hoặc sửa file. Mỗi chặng có một người sở hữu tại một thời điểm. Lưu bản thảo sau từng nhóm bằng file tạm rồi thay thế nguyên tử, sau đó cập nhật `status.json`. Khi tiếp một chặng dở, kiểm owner và trạng thái, so hash đầu vào, giữ nhóm đã `reviewed` có hash khớp, làm tiếp nhóm còn lại.
 
-Kiểm từ gốc repo bằng `py -X utf8 .agents/skills/kaiwa-topic-vocabulary/scripts/vocab.py <stage_code> --check <vocabulary.json>`. Lệnh kiểm cấu trúc, ID, dạng mục từ cơ bản, kana của cách đọc, trùng lặp, phủ nhóm V10, lý do vượt trần, bằng chứng hội thoại có thật và nguồn sách có thật. Các dòng `Note:` là nhắc việc, không chặn. Lệnh `--export` in gói `terms_ja` theo nhóm cho Exchange. Script không xác minh từ có tự nhiên, nghĩa có đúng hay danh sách có đủ để nói; ba lượt rà ở trên là phần người biên tập phải làm.
+Kiểm từ gốc repo bằng `py -X utf8 .agents/skills/kaiwa-topic-vocabulary/scripts/vocab.py <stage_code> --check <vocabulary.json>`. Lệnh kiểm cấu trúc, ID, dạng mục từ cơ bản, kana của cách đọc, trùng lặp, phủ nhóm V10, lý do vượt trần, bằng chứng hội thoại có thật và nguồn sách có thật. Các dòng `Note:` là nhắc việc, không chặn. Khi nghiệm thu, chạy `--check-checkpoint <vocabulary.json>` để đối chiếu status.json cùng thư mục. Lệnh `--export <vocabulary.json>` chỉ xuất các node Exchange đã qua cùng kiểm tra này. Mỗi nhóm xuất các chuỗi Nhật duy nhất. Nếu hai mục cùng mặt chữ nhưng khác cách đọc, giữ cả hai ở bản biên tập và chọn rõ mục đại diện trong nhóm theo hợp đồng bản thảo. Script không xác minh từ có tự nhiên, nghĩa có đúng hay danh sách có đủ để nói; ba lượt rà ở trên là phần người biên tập phải làm.
 
 Pilot kết thúc bằng preview cho chủ dự án xem trên PC và mobile, báo cáo ngắn (số mục, tỷ lệ `dialogue`/`topic_extension`, phân bố cấp, các từ vượt trần, điểm còn băn khoăn) và thời gian thực đo cho mỗi chặng.

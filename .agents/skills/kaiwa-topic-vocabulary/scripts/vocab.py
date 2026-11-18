@@ -19,6 +19,9 @@ POS = {"noun", "verb", "i_adj", "na_adj", "adverb", "expression", "counter", "ot
 VOCAB_BOOKS = {"VOCAB-N3": ("MIMIKARA N3", "N3"), "VOCAB-N2": ("MINATO", "N2"), "VOCAB-N1": ("MIMIKARA N1", "N1")}
 JAPANESE = re.compile(r"[ぁ-ゖァ-ヺ一-鿿々〆ヵヶ]")
 KANA_ONLY = re.compile(r"^[ぁ-ゖァ-ヺー・ゝゞヽヾ]+$")
+LATIN_LABEL = re.compile(r"[A-Za-z][A-Za-z0-9]*(?:[-/][A-Za-z0-9]+)*")
+NODE_ID = re.compile(r"[a-zA-Z0-9][a-zA-Z0-9_-]*")
+SKILL = Path(__file__).resolve().parents[1] / "SKILL.md"
 VERB_END = tuple("うくぐすつぬぶむる")
 
 
@@ -56,7 +59,7 @@ def stage_row(code):
         if stage["code"] == code:
             if stage.get("stage_kind") != "topic":
                 raise ValueError(code + " is not a topic stage; specialty stages have no vocabulary node")
-            return stage, course, sha(raw)
+            return stage, course, sha(raw.replace(b"\r\n", b"\n"))
     raise ValueError("Unknown V11 stage: " + code)
 
 
@@ -181,7 +184,7 @@ def check(data, ctx):
     total = below = from_dialogue = 0
     for group in groups:
         gid = group.get("id")
-        need(filled(gid) and gid not in group_ids, "group id " + str(gid))
+        need(filled(gid) and NODE_ID.fullmatch(gid) and gid not in group_ids, "group id " + str(gid))
         group_ids.add(gid)
         need(filled(group.get("title_vi")), gid + " title_vi")
         topic = group.get("v10_topic")
@@ -193,13 +196,21 @@ def check(data, ctx):
         need(terms, gid + " has no terms")
         if terms and not 8 <= len(terms) <= 25:
             notes.append(f"{gid} has {len(terms)} terms (guide 8–25)")
+        published, headwords = set(), set()
         for term in terms:
             tid = term.get("id")
             label = f"{gid}/{tid}"
             need(filled(tid) and tid not in term_ids, label + " id missing or repeated")
             term_ids.add(tid)
             ja, reading = term.get("ja", ""), term.get("reading", "")
-            need(filled(ja) and JAPANESE.search(ja) and not re.search(r"\s", ja)
+            latin = isinstance(ja, str) and LATIN_LABEL.fullmatch(ja) is not None
+            headwords.add(ja)
+            publish = term.get("export_ja", True)
+            need(isinstance(publish, bool), label + " export_ja must be boolean")
+            if publish:
+                need(ja not in published, label + " duplicate terms_ja; select one reading for export in this group")
+                published.add(ja)
+            need(filled(ja) and (JAPANESE.search(ja) or latin) and not re.search(r"\s", ja)
                  and not ja.endswith(("。", "？", "！", "?", "!")), label + " ja")
             need(filled(reading) and KANA_ONLY.match(reading), label + " reading must be kana only")
             need(filled(term.get("vi")) and re.search(r"[A-Za-zÀ-ỹ]", term.get("vi", "")), label + " vi")
@@ -239,7 +250,12 @@ def check(data, ctx):
                          label + " evidence not found: " + json.dumps(item, ensure_ascii=False))
             refs = term.get("source_refs", [])
             need(isinstance(refs, list) and set(refs) <= sources.keys(), label + " source_refs")
+            domain = term.get("source_domain")
+            need(domain in (None, "procedural", "medical", "legal"), label + " source_domain")
+            if latin or domain:
+                need(bool(refs), label + " this term needs source_refs")
             total += 1
+        need(headwords == published, gid + " each headword needs one exported representative")
     if not 40 <= total <= 100:
         notes.append(f"{total} terms in stage (guide 40–100)")
     if total and ctx["level"] != "Sơ" and below / total > .4:
@@ -251,8 +267,8 @@ def check(data, ctx):
 
 def export(data):
     return {"stage_uid": data["stage_uid"], "stage_code": data["stage_code"],
-            "nodes": [{"node_id": data["stage_code"] + "-" + g["id"], "type": "vocabulary",
-                       "title_vi": g["title_vi"], "terms_ja": [t["ja"] for t in g["terms"]]}
+            "nodes": [{"id": data["stage_code"] + "-" + g["id"], "type": "vocabulary",
+                       "title_vi": g["title_vi"], "data": {"terms_ja": [t["ja"] for t in g["terms"] if t.get("export_ja", True)]}}
                       for g in data["groups"]]}
 
 
@@ -261,27 +277,68 @@ def hashes(path, data):
             "groups": {g["id"]: group_hash(g) for g in data["groups"]}}
 
 
+def reviewed_draft(path, ctx):
+    """Read the exact bytes named by the checkpoint before passing the draft to a publisher."""
+    path = Path(path)
+    raw = path.read_bytes()
+    data = json.loads(raw.decode("utf-8-sig"))
+    errors, notes = check(data, ctx)
+    if errors:
+        raise ValueError("\n".join(errors))
+    status = read(path.with_name("status.json"))
+    expected = {"stage_uid": ctx["uid"], "stage_code": ctx["code"],
+                "learner_sha256": ctx["learner_sha256"], "skill_sha256": sha(SKILL.read_bytes()),
+                "vocabulary_sha256": sha(raw)}
+    for key, value in expected.items():
+        if status.get(key) != value:
+            errors.append("checkpoint mismatch: " + key)
+    if not filled(status.get("owner")) or status.get("open_issues") != []:
+        errors.append("checkpoint needs an owner and an empty open_issues array")
+    states = status.get("groups")
+    if not isinstance(states, dict) or states.keys() != {g["id"] for g in data["groups"]}:
+        errors.append("checkpoint group IDs do not match the draft")
+    else:
+        for group in data["groups"]:
+            record = states[group["id"]]
+            digest = group_hash(group)
+            if not (isinstance(record, dict) and record.get("state") == "reviewed"
+                    and record.get("sha256") == record.get("reviewed_sha256") == digest
+                    and filled(record.get("note_vi"))):
+                errors.append("checkpoint group needs current review: " + group["id"])
+    if errors:
+        raise ValueError("\n".join(errors))
+    return data, notes
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("stage_code")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--check", type=Path, help="validate a vocabulary.json draft")
+    mode.add_argument("--check-checkpoint", type=Path, help="validate draft and its sibling status.json")
     mode.add_argument("--export", type=Path, help="print terms_ja nodes for the Exchange package")
     mode.add_argument("--hashes", type=Path, help="print file and group hashes for status.json")
     args = parser.parse_args()
-    ctx = brief(args.stage_code)
-    if args.check:
-        errors, notes = check(read(args.check), ctx)
-        for note in notes:
-            print("Note:", note)
-        for error in errors:
-            print("Error:", error)
-        if errors:
-            sys.exit(1)
-        print("OK", args.stage_code)
-    elif args.export:
-        print(json.dumps(export(read(args.export)), ensure_ascii=False, indent=2))
-    elif args.hashes:
-        print(json.dumps(hashes(args.hashes, read(args.hashes)), ensure_ascii=False, indent=2))
-    else:
-        print(json.dumps({k: v for k, v in ctx.items() if not k.startswith("_")}, ensure_ascii=False, indent=2))
+    try:
+        ctx = brief(args.stage_code)
+        if args.check_checkpoint or args.export:
+            data, notes = reviewed_draft(args.check_checkpoint or args.export, ctx)
+            for note in notes:
+                print("Note:", note, file=sys.stderr)
+            if args.export:
+                print(json.dumps(export(data), ensure_ascii=False, indent=2))
+            else:
+                print("OK checkpoint", args.stage_code)
+        elif args.check:
+            errors, notes = check(read(args.check), ctx)
+            for note in notes:
+                print("Note:", note, file=sys.stderr)
+            if errors:
+                raise ValueError("\n".join(errors))
+            print("OK", args.stage_code)
+        elif args.hashes:
+            print(json.dumps(hashes(args.hashes, read(args.hashes)), ensure_ascii=False, indent=2))
+        else:
+            print(json.dumps({k: v for k, v in ctx.items() if not k.startswith("_")}, ensure_ascii=False, indent=2))
+    except (OSError, ValueError, TypeError, KeyError, AttributeError) as exc:
+        parser.exit(1, f"Error: {exc}\n")

@@ -23,11 +23,11 @@ Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. B
       "terms": [
         {"id": "T-044-v001", "ja": "送る", "reading": "おくる", "vi": "gửi", "pos": "verb",
          "level_hint": "N5", "origin": "dialogue",
-         "evidence": [{"utterance_id": "2da66c90-…-u01", "surface": "贈りたい"}]},
+         "evidence": [{"utterance_id": "b13e0182-7d4c-5247-a96c-9d9e3dd6b862-u01", "surface": "送りたい"}]},
         {"id": "T-044-v002", "ja": "税関告知書", "reading": "ぜいかんこくちしょ", "vi": "tờ khai hải quan (gửi kèm bưu kiện)",
          "pos": "noun", "level_hint": "none", "origin": "topic_extension",
-         "level_note_vi": "Tên giấy tờ bắt buộc khi gửi hàng quốc tế, nhân viên sẽ nhắc đến.",
-         "source_refs": ["jp-post-intl"]}
+         "level_note_vi": "Người gửi cần nhận ra tên tờ khai khi nhân viên hỏi về hàng trong kiện.",
+         "source_domain": "procedural", "source_refs": ["jp-post-intl"]}
       ]
     }
   ]
@@ -59,12 +59,14 @@ Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. B
 - `level_note_vi`: bắt buộc khi `level_hint` khó hơn trần của cấp chặng hoặc là `none`.
 - `origin`: `dialogue` hoặc `topic_extension`.
 - `evidence`: bắt buộc với `dialogue`, 1–2 mục `{utterance_id, surface}` (ID lượt hội thoại V11) hoặc `{shadowing_item, surface}` (ID mục shadowing, ví dụ `S-001-SH-003`). `surface` phải có trong câu Nhật đó.
-- `source_refs`: tùy chọn, mã trong `admin_sources`. Nên có với thuật ngữ thủ tục, y tế, pháp lý.
+- `source_refs`: mã trong `admin_sources`. Bắt buộc cho thuật ngữ thủ tục, y tế, pháp lý (đánh dấu `source_domain` lần lượt `procedural`, `medical`, `legal`) và mặt chữ Latin như EMS. Với từ đời thường trường này tùy chọn.
 - `note_vi`: tùy chọn, ghi chú biên tập nội bộ (không hiện cho người học).
+
+- Nếu nhiều cách đọc có cùng mặt chữ trong một nhóm, người soạn chọn một mục xuất và đặt `export_ja: false` ở các mục còn lại. Giữ tất cả cách đọc và nghĩa trong bản biên tập. Chỉ được ẩn một mục khi cùng nhóm có mục đại diện cùng mặt chữ.
 
 ### Gói xuất
 
-`--export` tạo một node vocabulary cho mỗi nhóm: `{node_id: "<stage_code>-<group id>", title_vi, terms_ja}` với `terms_ja` là các chuỗi `ja` theo đúng thứ tự. Đúng hợp đồng Harumii Exchange: app chỉ nhận chữ Nhật. `reading`, `vi`, `pos`, `level_hint`, nguồn và bằng chứng ở lại tầng biên tập và preview.
+`--export` tạo một node vocabulary cho mỗi nhóm: `{id: "<stage_code>-<group id>", type: "vocabulary", title_vi, data: {terms_ja: [...]}}` với `terms_ja` là các chuỗi `ja` theo đúng thứ tự. Đúng hợp đồng Harumii Exchange: app chỉ nhận chữ Nhật. `reading`, `vi`, `pos`, `level_hint`, nguồn và bằng chứng ở lại tầng biên tập và preview.
 
 ## status.json
 
@@ -73,7 +75,7 @@ Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. B
   "stage_uid": "…",
   "stage_code": "T-044",
   "owner": "tên phiên/người làm",
-  "learner_sha256": "hash của v11/learner.json lúc lấy brief",
+  "learner_sha256": "learner_sha256 do brief trả về (UTF-8, chuẩn hóa CRLF thành LF)",
   "skill_sha256": "hash của SKILL.md",
   "vocabulary_sha256": "hash của vocabulary.json đã lưu",
   "groups": {
@@ -87,3 +89,5 @@ Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. B
 - `state`: `drafted`, `needs_fix` hoặc `reviewed`. Hash nhóm là SHA-256 của JSON nhóm với `sort_keys=True` và `ensure_ascii=False`. Chỉ giữ `reviewed` khi hash hiện tại khớp `reviewed_sha256`; sửa nhóm thì trạng thái quay về `drafted`.
 - Lưu `vocabulary.json` trước, rồi `status.json`, đều bằng file tạm và thay thế nguyên tử. Nếu `vocabulary_sha256` lệch file trên đĩa vì dừng giữa hai lần ghi, tin file từ vựng trên đĩa và dựng lại tiến độ theo hash từng nhóm.
 - Khi `learner_sha256` đổi (hội thoại V11 được sửa), chạy lại `--check` để bắt bằng chứng không còn đúng, rồi rà lại các nhóm có mục bị ảnh hưởng.
+
+Nghiệm thu bằng `--check-checkpoint <vocabulary.json>` đọc status.json bên cạnh bản thảo. Lấy learner_sha256 từ brief để checkpoint dùng được trên cả Windows và Linux. UID, mã chặng, owner, hash đầu vào, skill và bản thảo phải khớp. Danh sách nhóm phải khớp chính xác, từng nhóm đã reviewed với hai hash đúng và có ghi chú rà. open_issues phải rỗng. `--export` dùng cùng điều kiện và in JSON ra stdout, thông báo kiểm ra stderr. Phần bao ngoài gồm stage_uid, stage_code và nodes để ghép vào snapshot chặng.
