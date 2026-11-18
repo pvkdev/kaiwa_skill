@@ -182,3 +182,5 @@ Nguồn đã mở ở lượt rà ngày 2026-11-18. B15 bài 14 dòng 55–78 ch
 - S036 · `5a6b67a3-3bb6-5e93-8770-fc90e0f609ff-u01`. Để chứng minh quy ước được thực hiện, Mori chủ động gọi ngay khi xác nhận vướng, rồi báo phần bị ảnh hưởng, phần vẫn chạy và mốc 14 giờ. Kanda không phải đi hỏi mới được báo.
 
 Điểm nối. S033 nhận ra ích lợi của duyệt mẫu sớm; S034 giữ việc đó và xử lý riêng khoảng chờ báo lỗi ở môi trường thử. S035 đưa quy ước báo phần đã biết lẫn giờ báo tiếp tới Kanda. S036 đặt ngay cuộc gọi từ Mori về thống kê Tây, Kanda dùng dữ kiện để tiếp tục nhận đơn và đợi 14 giờ.
+
+Dấu vân tay nguồn IPA trong hồ sơ rà là SHA-256 của ghi chú `admin_sources.ipa.use_vi` bằng UTF-8, không có xuống dòng cuối. Dấu vân tay nguồn trước lượt rà được giữ trong lịch sử nguồn của tác giả.

@@ -66,3 +66,36 @@
 - S019 → S021. Đã giữ thứ Năm 14 giờ, nhưng thứ Ba mới kiểm thành phần phía khách. Có kho, IT chưa xong nên chuẩn bị ưu tiên thao tác.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S002 · `f8cb5447-cb57-598d-827b-73c9efcca73f-u01`. Sửa lời hỏi giả định dùng thiết bị trong kho, tránh nghĩa khách đang xem xét mua cả kho. Khi biết là nhà báo, Arai chỉ giới thiệu nội dung công khai.
+
+Điểm nối. S001 khách nói muốn xem. S002 rẽ từ đó, mới phát hiện mục đích viết bài thay vì mua, chỉ tài liệu công khai. S003 và S004 đứng riêng, một cảnh giới thiệu trong một phút theo nhu cầu người mới, một cảnh hỏi hiện dùng phiếu/sơ đồ và nhầm dãy.
+
+Đã đọc B02 Scene 5 dòng 60–77, B15 bài 12 dòng 57–82 và bài 11 dòng 20–57. Đã mở bản trích văn bản [JETRO Okayama, 展示会等参加の手引き](https://www.jetro.go.jp/ext_images/jetro/japan/okayama/guideline/pdf/manual.pdf) ngày 2026-11-18, mục 10 và 11 khoảng trang in 18–21. Các mục mô tả hỏi vì sao khách dừng ở gian, lắng nghe nhu cầu trước giải thích, ghi chủ đề để nối tiếp sau sự kiện. Số dãy, lịch và sản phẩm trong thoại là tình tiết giả định.
+
+## Rà độc lập Batch04 · E02
+
+- S006 · `0b1014db-ce46-5d8a-95fa-3b0b17f42e29-u01`. Câu cũ hỏi mã phiếu bên khách có dùng với máy quét của chính khách. Sửa thành muốn dùng cả mã phiếu và máy quét sẵn với hệ thống mới, kỹ thuật kiểm dựa trên hai dữ kiện đó.
+
+Điểm nối. S005 chỉ minh họa quét phiếu và đèn đúng kệ. S006 hỏi tương thích, hẹn kỹ thuật 15 giờ. S007 quay lại S005 và hẹn tự thử 15:20 sau hội thảo. S008 cũng từ S005, khác nhu cầu là quản lý ba kho, giới thiệu đúng nhóm khác mà chưa hứa họ có sản phẩm phù hợp.
+
+## Rà độc lập Batch04 · E03
+
+- S011 · `cf578ade-30ed-53d6-8cda-0447b4557d8f-u01`. Mời đúng người phụ trách kinh doanh hai bên để bàn vùng và phạm vi hỗ trợ. Việt ở câu Kawamura không tự đặt giới cho trưởng bộ phận.
+
+Điểm nối. S009 hỏi vùng và phần sau giao, nhà cung cấp nhận giao/hướng dẫn, hãng sửa. S010 làm rõ đang hỏi làm đại lý, hỏi nhóm khách hợp. S011 cần hai bên có người quyết; S012 chỉ hẹn gọi để kiểm lịch lúc 15 giờ thứ Năm.
+
+## Rà độc lập Batch04 · E04
+
+- S013 · `a47bc734-bf44-5229-af12-4ec2a1eeec2a-u02`. Sửa 行く棚 thành kệ có hàng cần lấy. Arai chỉ làm một thao tác, khách nắm tác dụng của đèn xanh.
+
+Điểm nối. S013 hai phút chỉ cho xem một tính năng. S014 khách chọn gọi về bố trí hai dãy lúc 14 giờ thứ Ba tuần tới. S015 trở lại gốc, khách chỉ tham khảo, Arai mời lấy tờ thông tin mà không xin hẹn. S016 riêng nối đúng chủ đề đào tạo người mới từ diễn thuyết.
+
+## Rà độc lập Batch04 · E05
+
+- S018 · `8bc2e437-e132-568f-9fa4-899793ebe535-u01`. Giữ việc Ito đã nói nhu cầu hai dãy ở cảnh trước. Anh chưa nhớ gian trong số nhiều gian, Arai gợi lại đèn xanh rồi xin phép tiếp tục.
+- S019 · `d2c1fd3d-3502-58d5-989c-d44e8a7ea3e1-u04`. Đặt demo vào thứ Năm tuần sau để cuộc gọi kiểm thứ Ba thực sự ở trước; không biến yêu cầu có người kho thành đã chắc có.
+
+Điểm nối. S017 nối vấn đề phân biệt hai dãy và xin phép nghe máy. S018 nhớ nhu cầu nhưng lẫn gian, khôi phục bằng đèn xanh rồi hỏi khách có tiện. S019 rẽ từ S017 chốt demo thứ Năm tuần sau 14 giờ có kỹ thuật và gọi thứ Ba trước. S020 rẽ về gốc, chỉ hẹn hỏi kho thứ Sáu 11 giờ. S021 theo S019, giữ hẹn và ưu tiên hai dãy, để kết nối sang sau nếu thiếu người.

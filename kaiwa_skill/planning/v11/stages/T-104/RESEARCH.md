@@ -44,3 +44,20 @@
 - S012 → S015. Sau hai tuần, đánh giá giảm cuộc gọi nhưng hai việc cần trả lời sớm buổi sáng bị lẫn. Chỉ thêm dấu mốc cho việc sáng, giữ đường gấp.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S004 · `e7de17f6-2afe-5d3e-b082-8c912a276e1f-u02`. Giữ hạn trả khách 17 giờ như câu chuyện mở và khác với dời hai mã. Đề nghị 9:15 còn cần trưởng nhóm xác nhận.
+
+Điểm nối. S001 hạn khách 17 giờ và phải rời 17:30. S002 riêng giữ khách trước và chia Nishida gom số, Mori kiểm sáng mai. S003 nhờ kiểm hai mã; S004 Nishida bận và đề nghị 9:15 sáng mai, còn xin trưởng nhóm; S005 sau thử một tuần nêu ba yêu cầu sát giờ và mang ví dụ đi hỏi.
+
+Đã đọc B03 Unit 18 dòng 62–69 về nêu phương án khi xin ý kiến, B25 bài 8 dòng 325–362 về chỉ đúng điều còn vướng. Các mốc và giới hạn công việc trong thoại là thỏa thuận của nhóm giả định.
+
+## Rà độc lập Batch04 · E03
+
+- S011 · `5bbe5c5b-ad4c-53bf-8c12-50084310e93b-u02`. Tách dừng tiếp nhận khẩn và việc tài liệu/số liệu. Câu hỏi làm rõ phạm vi ngay là trong đội Mori, người trực xem theo lịch chung.
+- S014 · `6af5755d-6cc2-5172-8052-d2e004d01bf9-u02`. Mori nói vẫn tiếp nhận việc thường lúc 9 giờ và gấp gọi trực. Việt gọi 'nhóm mình' vì hai người cùng đội, không tạo hai phía.
+
+Điểm nối. S011 xác định trong nhóm, dừng nhận đơn không chờ được thì gọi người trực. S013 nhận đúng Tanaka lúc 19 giờ, Okada nhận gọi và ghi, Mori xem bàn giao sáng. S012 độc lập thử hai tuần mục Sáng mai lúc 9 giờ và khẩn vẫn gọi trực. S014 làm rõ ranh giới và phản hồi lúc 9; S015 thấy hai việc chìm, thêm hạn đầu tiêu đề, không đổi luồng khẩn.
+
+Đã đọc ngày 2026-11-18 [Hướng dẫn làm việc từ xa của MHLW](https://www.mhlw.go.jp/web/t_doc?dataId=00tc6069&dataType=1&pageNo=1), mục 7(4)オ(ア) về giảm liên hệ ngoài giờ và làm rõ khi nào cần phản hồi tùy nơi làm việc. Phạm vi tham khảo là giao tiếp trong nhóm có ngày làm từ xa. Khung 9 giờ, mục Sáng mai, danh sách trực và sự cố trong thoại do nhóm giả định thỏa thuận.

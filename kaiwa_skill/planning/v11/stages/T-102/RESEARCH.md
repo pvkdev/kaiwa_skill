@@ -100,3 +100,5 @@
 - S019 · `7eccb600-5a0d-5a3f-b9e4-c6a8daf4f084-u02`. Kikuchi báo đạt đúng thời điểm trước bấm Lưu và gửi chứng cứ cho Fujita. Giữ ngày chuyển sau khi có đồng ý, một phản hồi bất kỳ chưa đủ.
 
 Điểm nối. S017 sửa cảnh báo trước bấm Lưu trên bản thử và gửi link dùng lại lịch mẫu. S018 làm rõ bản quầy chưa cập nhật. S019 thử đạt một điểm và Kikuchi chuyển kết quả sáng mai, chỉ bàn ngày chuyển nếu Fujita cho phép.
+
+Dấu vân tay nguồn IPA trong hồ sơ rà là SHA-256 của ghi chú `admin_sources.ipa.use_vi` bằng UTF-8, không có xuống dòng cuối. Dấu vân tay nguồn trước lượt rà được giữ trong lịch sử nguồn của tác giả.

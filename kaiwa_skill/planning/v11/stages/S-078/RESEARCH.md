@@ -47,3 +47,45 @@
 - f45d78f9-e9ec-5c38-8cda-8118fa8380b4 (S018). A u02 hỏi nơi đợi, B u03 cho ghế ở lối vào và sẽ gọi tới quầy. A u04 giữ phiếu để dùng tại cảnh sau.
 - 6af900cb-bc52-53f9-a35a-7ba5810ee4e6 (S019). A u01 đưa số 18, u03 tả màu và quai. B u04 nêu thấy túi ứng viên, chưa giao trước khi A kiểm dấu.
 - fcdc23ee-081d-512f-a885-31243cbb4b12 (S020). A u02 xác nhận túi đúng nhờ móc tròn, B u03 trao túi và nhận lại phiếu, A u04 cảm ơn.
+
+### Kiểm độc lập E01
+
+S001 và S002 hỏi đúng Koganeyu, giờ đóng cuối ngày 0:30, vé người lớn và bộ khăn là 600 + 200 yên. S003 hỏi rèm khu nữ ở một cơ sở khác. S004 chọn bồn trong nhà do ngoài trời đóng. S005 hỏi chỗ thay và chốt giờ đóng 22 giờ ở cơ sở đó.
+
+- Đọc B05 dòng 2546–2574 về cách hỏi dịch vụ và từ サウナ, 大浴場, 貸し出し. Mở Koganeyu Tokyo mục INFORMATION ngày 2026-11-18, giờ 6:00–9:00 và 11:00–24:30 vào ngày mở, vé người lớn 600 yên, bộ khăn thêm 200 yên. Mở bảng Tokyo Metropolitan Government dòng 109–118 thấy giá kiểm soát 600 yên từ 2026-08-01. https://koganeyu.com/tokyo https://www.shouhiseikatu.metro.tokyo.lg.jp/chousa/yokujyo/genjo.html
+
+- S001 (e4334e27-0c7e-593a-a935-8a18a9dfd56a), 03. Hỏi còn mở và đến mấy giờ. Dùng cách nói Nhật rõ 0 giờ 30 qua nửa đêm, giữ giá trị đúng bảng giờ Koganeyu.
+
+- S005 (e2a71b63-b333-5634-8293-81ec0ded62f8), 05. Nhắc riêng phòng thay ngay sau rèm nữ và mốc đóng 22 giờ. Tách hai câu tránh hiểu thay đồ cho đến 22 giờ.
+
+### Kiểm độc lập E02
+
+S006 cất đồ ở tủ và đeo chìa. S007 hỏi phụ thu sauna ở Koganeyu và nhân viên xác nhận mua thêm lúc còn chỗ. S008 không mang điện thoại vào khu tắm, cất ở tủ khóa. S009 sửa 21:30 thành giờ vào cuối, S010 chốt ra ngoài trước hoặc đúng 22 giờ.
+
+- Đọc B01 dòng 2933–2947 về てもいいですか. Mở Hiệp hội Nhà tắm Tokyo, đoạn hóa đơn, tủ/chìa và mục ５脱衣所 dòng 72–90. Mở Toshima mục 公衆浴場（銭湯） dòng 115–127, có quy tắc không dùng smartphone khu tắm/phòng thay. Việc cất và không mang vào khu tắm là quy tắc của cơ sở giả định trong S008. https://www.1010.or.jp/guide/howto/ https://www.city.toshima.lg.jp/info/jp/sento.html
+
+- Mở Koganeyu mục INFORMATION, sauna tính thêm với thời lượng và mức phí theo ngày/giới. S007 không nói mức phụ thu, chỉ xác nhận tại quầy. https://koganeyu.com/tokyo
+
+- S008 (c6e3c280-de17-5631-afcb-8cf60b3585d2), 03. Đưa câu hỏi về mang điện thoại vào khu tắm như mục tiêu cảnh. Nhân viên nêu quy tắc địa điểm về mang vào và không dùng trong phòng thay, rồi chỉ chỗ cất.
+
+### Kiểm độc lập E03
+
+S011 hỏi vòi khác đang trống, S012 báo thiếu bộ khăn và đã được cấp sau đối chiếu phiếu, S013 dọn chậu nhường lượt. S014 nhân viên nhắc dùng xà phòng ở vòi. S015 đã chuyển đúng nơi rồi hỏi chỗ đặt khăn trước khi xuống bồn.
+
+- Mở 東京都浴場組合 đoạn rửa trước khi vào bồn và giữ khăn khỏi bồn, dòng 96–109. Toshima cũng nêu hai điểm này. Vị trí kệ và cách đặt chậu do cơ sở của cảnh hướng dẫn. https://www.1010.or.jp/guide/howto/ https://www.city.toshima.lg.jp/info/jp/sento.html
+
+- S012 (49b8adab-ff18-5fe1-b2a4-c199119034fd), 01. Nêu đã thuê mà không thấy bộ khăn, đưa phiếu theo yêu cầu. Tiếng Việt lời đáp nói rõ đã kiểm phiếu và cấp bộ này.
+
+- S014 (aaf7b733-d10e-5387-9b42-9dd14b858683), 02. Xin lỗi và hỏi nơi tắm rửa bằng câu Nhật trực tiếp, dễ sử dụng. Người học xác nhận sang khu vòi sen.
+
+- S015 (2113fba1-b5d6-56a1-9be2-dd8f94902ff4), 02. Cảm ơn về việc đã xảy ra, rồi hỏi khăn để ở đâu khi sang bồn. Người học xác nhận để lên kệ trước khi xuống bồn.
+
+### Kiểm độc lập E04
+
+S016 trả khăn vào giỏ theo quầy. S017 mở riêng khi quầy chưa thấy túi. S018 sẽ kiểm, chờ ở cửa và giữ phiếu. S019 được gọi, số 18 và đúng màu/quai gợi một chiếc. S020 xác nhận thêm móc khóa tròn rồi nhận túi và trả phiếu.
+
+- S018 (f45d78f9-e9ec-5c38-8cda-8118fa8380b4), 02. Hỏi chờ ở đâu. Nhân viên chỉ ghế ở cửa và hẹn gọi sau kiểm, chưa xác nhận đã tìm thấy.
+
+- S019 (6af900cb-bc52-53f9-a35a-7ba5810ee4e6), 01. Rút lời mở khi trở lại quầy, nêu ngay việc chiếc túi và phiếu 18. Nhân viên cho xem túi có màu phù hợp, chưa trả hẳn.
+
+- S020 (fcdc23ee-081d-512f-a885-31243cbb4b12), 02. Nhận ra thêm móc tròn rồi mới nhận túi. Câu hỏi Việt của nhân viên đặt trật tự tự nhiên, khách trả phiếu và cảm ơn.

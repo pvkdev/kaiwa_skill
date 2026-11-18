@@ -46,3 +46,7 @@ S013→S014→S015: buổi thử nội bộ thứ Năm 15 giờ nếu sơ đồ 
 - S013 · `6a3db820-cea8-5cb3-9c4d-3e4e2582526b` · u01, u03, u05. Điều kiện sơ đồ chốt 11 mới có mốc 15, đủ thời gian kiểm và chuẩn bị điểm rẽ. Hayashi giữ lịch tạm chứ chưa phân người.
 - S014 · `58bbedaa-d748-55b5-a4ba-4b80ff82e18d` · u02, u04, u05. Hayashi hỏi trước khi gửi chính thức. Yến sửa mốc 15 mới là giữ, xác nhận có phản hồi 11, không hứa mốc nếu không có sơ đồ.
 - S015 · `faac095a-2488-507b-b34b-a4b1dac820a7` · u01, u03, u05. Có xác nhận đầu vào đúng mốc. Chốt 15–15:20 thứ Năm, Yến báo đội dựng, Hayashi báo đăng ký. Không nhầm với buổi khách thứ Sáu.
+
+## Rà độc lập V11 batch04
+
+Đọc B16 Unit 4 dòng 239–260 về tính hạn theo lúc bên sau cần dùng và Unit 6 dòng 28–44 về xác nhận thời điểm sau khi bên kia chịu lịch. Đọc B03 Unit 18 dòng 27–40 về báo cụ thể và liên hệ khi thay kế hoạch. Các bố trí và mốc chỉ trong dự án của Yến.
