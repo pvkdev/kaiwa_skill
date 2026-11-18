@@ -1,0 +1,1358 @@
+{
+  "stage_uid": "158ee20c-5cbe-57af-8a76-4c355732851a",
+  "admin_sources": {
+    "facility": {
+      "kind": "book",
+      "book_id": "B05",
+      "title": "すぐに使える 接客日本語会話大特訓［英語版］決まり文句700",
+      "path": "kaiwa_skill/knowledge/すぐに使える 接客日本語会話大特訓［英語版］決まり文句700/book.md",
+      "start_line": 2546,
+      "end_line": 2574,
+      "use_vi": "Đọc đoạn hỏi số phòng, giờ và mục từ サウナ, 大浴場, 貸し出し. Dùng cách hỏi rõ dịch vụ hoặc khu, không lấy quy định khách sạn thành quy định sento."
+    },
+    "permission": {
+      "kind": "book",
+      "book_id": "B01",
+      "title": "5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày",
+      "path": "kaiwa_skill/knowledge/5500 câu giao tiếp tiếng Nhật trong sinh hoạt hằng ngày/book.md",
+      "start_line": 2933,
+      "end_line": 2947,
+      "use_vi": "Mẫu xin phép khi muốn sử dụng một đồ vật hoặc một khu vực."
+    },
+    "price": {
+      "kind": "web",
+      "title": "Tokyo Metropolitan Government Hiện trạng nhà tắm công cộng Tokyo",
+      "url": "https://www.shouhiseikatu.metro.tokyo.lg.jp/chousa/yokujyo/genjo.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Mức quy định cho cơ sở sento thuộc diện kiểm soát giá tại Tokyo, từ ngày 1 tháng 8 năm 2026 giá tắm người lớn là 600 yên. Không áp mức này cho mọi sauna hay cơ sở tắm giải trí."
+    },
+    "kogane": {
+      "kind": "web",
+      "title": "Koganeyu Thông tin cơ sở Tokyo",
+      "url": "https://koganeyu.com/tokyo",
+      "accessed": "2026-11-18",
+      "use_vi": "Nguồn về giờ tối đến 24 giờ 30 vào ngày mở cửa, vé tắm người lớn 600 yên, bộ khăn thuê 200 yên và sauna phụ thu. Chỉ S001, S002 và S007 hỏi ở cơ sở này."
+    },
+    "bath": {
+      "kind": "web",
+      "title": "Hiệp hội nhà tắm Tokyo Cách sử dụng sento",
+      "url": "https://www.1010.or.jp/guide/howto/",
+      "accessed": "2026-11-18",
+      "use_vi": "Xác nhận thay đồ, dùng tủ, hỏi phụ thu sauna và tắm rửa ở khu riêng trước khi vào bồn. Đồ cho mượn cần hỏi từng cơ sở."
+    },
+    "phone": {
+      "kind": "web",
+      "title": "Quận Toshima Hướng dẫn sento",
+      "url": "https://www.city.toshima.lg.jp/info/jp/sento.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Hướng dẫn địa phương nêu không dùng điện thoại trong phòng thay đồ và khu tắm. Cách gửi vào tủ trong cảnh là hướng dẫn của cơ sở giả định."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "e4334e27-0c7e-593a-a935-8a18a9dfd56a",
+      "event_id": "E01",
+      "context_vi": "Bạn đến nhà tắm Koganeyu ở Tokyo vào một tối mà cơ sở mở cửa. Thấy đã muộn, bạn hỏi nhân viên hôm nay còn mở không và đóng lúc mấy giờ.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e4334e27-0c7e-593a-a935-8a18a9dfd56a-u01",
+          "speaker_id": "A",
+          "ja": "すみません。今日はまだやっていますか。",
+          "vi": "Cho tôi hỏi, hôm nay vẫn còn mở chứ ạ?"
+        },
+        {
+          "id": "e4334e27-0c7e-593a-a935-8a18a9dfd56a-u02",
+          "speaker_id": "B",
+          "ja": "はい、今も営業中です。",
+          "vi": "Vâng, vẫn đang mở chị ạ."
+        },
+        {
+          "id": "e4334e27-0c7e-593a-a935-8a18a9dfd56a-u03",
+          "speaker_id": "A",
+          "ja": "何時までですか。",
+          "vi": "Mở tới mấy giờ ạ?"
+        },
+        {
+          "id": "e4334e27-0c7e-593a-a935-8a18a9dfd56a-u04",
+          "speaker_id": "B",
+          "ja": "夜は十二時半までです。",
+          "vi": "Tới mười hai giờ rưỡi đêm ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility",
+          "kogane"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e4334e27-0c7e-593a-a935-8a18a9dfd56a-u01": {
+            "kind": "original_extension"
+          },
+          "e4334e27-0c7e-593a-a935-8a18a9dfd56a-u02": {
+            "kind": "original_extension"
+          },
+          "e4334e27-0c7e-593a-a935-8a18a9dfd56a-u03": {
+            "kind": "original_extension"
+          },
+          "e4334e27-0c7e-593a-a935-8a18a9dfd56a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54",
+      "event_id": "E01",
+      "context_vi": "Bạn định tắm ở Koganeyu, Tokyo và không mang khăn. Bạn hỏi giá vé tắm người lớn và có thể thuê khăn ở đây không.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u01",
+          "speaker_id": "A",
+          "ja": "大人一人、入浴はいくらですか。",
+          "vi": "Một vé tắm người lớn bao nhiêu ạ?"
+        },
+        {
+          "id": "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u02",
+          "speaker_id": "B",
+          "ja": "六百円です。",
+          "vi": "Sáu trăm yên ạ."
+        },
+        {
+          "id": "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u03",
+          "speaker_id": "A",
+          "ja": "タオルを持っていません。借りられますか。",
+          "vi": "Tôi không mang khăn. Ở đây có cho thuê không ạ?"
+        },
+        {
+          "id": "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u04",
+          "speaker_id": "B",
+          "ja": "はい。タオルセットは追加で二百円です。",
+          "vi": "Có ạ. Bộ khăn thuê thêm hai trăm yên."
+        },
+        {
+          "id": "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u05",
+          "speaker_id": "A",
+          "ja": "じゃ、タオルもお願いします。合わせて八百円ですね。",
+          "vi": "Vậy cho tôi thuê cả khăn ạ. Tổng là tám trăm yên đúng không?"
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bath",
+          "price",
+          "kogane"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u01": {
+            "kind": "original_extension"
+          },
+          "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u02": {
+            "kind": "original_extension"
+          },
+          "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u03": {
+            "kind": "original_extension"
+          },
+          "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u04": {
+            "kind": "original_extension"
+          },
+          "ff977ad2-b1fc-50e6-9f79-f78d7fa0ae54-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5815933c-7a98-5a9f-9012-86571beaf2f1",
+      "event_id": "E01",
+      "context_vi": "Bạn lần đầu tới một sento. Bạn đã trả vé và muốn hỏi nhân viên lối vào đúng phòng thay đồ của khu nữ.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5815933c-7a98-5a9f-9012-86571beaf2f1-u01",
+          "speaker_id": "A",
+          "ja": "初めてです。女湯はどちらですか。",
+          "vi": "Tôi tới lần đầu. Khu tắm nữ ở phía nào ạ?"
+        },
+        {
+          "id": "5815933c-7a98-5a9f-9012-86571beaf2f1-u02",
+          "speaker_id": "B",
+          "ja": "右手ののれんの奥です。",
+          "vi": "Qua tấm rèm bên tay phải chị ạ."
+        },
+        {
+          "id": "5815933c-7a98-5a9f-9012-86571beaf2f1-u03",
+          "speaker_id": "A",
+          "ja": "「女」と書いてあるのれんですね。",
+          "vi": "Tấm rèm có ghi chữ “Nữ” đúng không ạ?"
+        },
+        {
+          "id": "5815933c-7a98-5a9f-9012-86571beaf2f1-u04",
+          "speaker_id": "B",
+          "ja": "はい。その奥にロッカーがあります。",
+          "vi": "Vâng. Sau rèm có tủ để đồ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility",
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5815933c-7a98-5a9f-9012-86571beaf2f1-u01": {
+            "kind": "original_extension"
+          },
+          "5815933c-7a98-5a9f-9012-86571beaf2f1-u02": {
+            "kind": "original_extension"
+          },
+          "5815933c-7a98-5a9f-9012-86571beaf2f1-u03": {
+            "kind": "original_extension"
+          },
+          "5815933c-7a98-5a9f-9012-86571beaf2f1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "cc1c0645-bd15-5974-9fd8-452f496796fa",
+      "event_id": "E01",
+      "context_vi": "Bạn muốn tắm ở bồn ngoài trời của một nhà tắm công cộng. Nhân viên báo bồn đó đang đóng, nên bạn hỏi còn khu nào dùng được.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "cc1c0645-bd15-5974-9fd8-452f496796fa-u01",
+          "speaker_id": "B",
+          "ja": "今日は外のお風呂がお休みです。",
+          "vi": "Hôm nay bồn tắm ngoài trời tạm đóng ạ."
+        },
+        {
+          "id": "cc1c0645-bd15-5974-9fd8-452f496796fa-u02",
+          "speaker_id": "A",
+          "ja": "ほかに入れるお風呂はありますか。",
+          "vi": "Có bồn nào khác dùng được không ạ?"
+        },
+        {
+          "id": "cc1c0645-bd15-5974-9fd8-452f496796fa-u03",
+          "speaker_id": "B",
+          "ja": "中のお風呂はお使いいただけます。",
+          "vi": "Chị vẫn dùng được bồn trong nhà ạ."
+        },
+        {
+          "id": "cc1c0645-bd15-5974-9fd8-452f496796fa-u04",
+          "speaker_id": "A",
+          "ja": "では、中のお風呂に入ります。",
+          "vi": "Vậy tôi dùng bồn trong nhà ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility",
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "cc1c0645-bd15-5974-9fd8-452f496796fa-u01": {
+            "kind": "original_extension"
+          },
+          "cc1c0645-bd15-5974-9fd8-452f496796fa-u02": {
+            "kind": "original_extension"
+          },
+          "cc1c0645-bd15-5974-9fd8-452f496796fa-u03": {
+            "kind": "original_extension"
+          },
+          "cc1c0645-bd15-5974-9fd8-452f496796fa-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e2a71b63-b333-5634-8293-81ec0ded62f8",
+      "event_id": "E01",
+      "context_vi": "Bạn đã chọn dùng bồn trong nhà vì bồn ngoài trời tạm đóng. Bạn kiểm phòng thay đồ ở đâu và nhà tắm đóng lúc mấy giờ.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e2a71b63-b333-5634-8293-81ec0ded62f8-u01",
+          "speaker_id": "A",
+          "ja": "着替える場所はどこですか。",
+          "vi": "Tôi thay đồ ở đâu ạ?"
+        },
+        {
+          "id": "e2a71b63-b333-5634-8293-81ec0ded62f8-u02",
+          "speaker_id": "B",
+          "ja": "女湯ののれんを入ってすぐです。",
+          "vi": "Ngay sau tấm rèm khu tắm nữ chị ạ."
+        },
+        {
+          "id": "e2a71b63-b333-5634-8293-81ec0ded62f8-u03",
+          "speaker_id": "A",
+          "ja": "今日は何時に閉まりますか。",
+          "vi": "Hôm nay đóng lúc mấy giờ ạ?"
+        },
+        {
+          "id": "e2a71b63-b333-5634-8293-81ec0ded62f8-u04",
+          "speaker_id": "B",
+          "ja": "夜十時に閉まります。",
+          "vi": "Mười giờ tối ạ."
+        },
+        {
+          "id": "e2a71b63-b333-5634-8293-81ec0ded62f8-u05",
+          "speaker_id": "A",
+          "ja": "のれんの奥で着替えて、十時までですね。",
+          "vi": "Thay đồ sau rèm, đóng lúc mười giờ tối ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility",
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e2a71b63-b333-5634-8293-81ec0ded62f8-u01": {
+            "kind": "original_extension"
+          },
+          "e2a71b63-b333-5634-8293-81ec0ded62f8-u02": {
+            "kind": "original_extension"
+          },
+          "e2a71b63-b333-5634-8293-81ec0ded62f8-u03": {
+            "kind": "original_extension"
+          },
+          "e2a71b63-b333-5634-8293-81ec0ded62f8-u04": {
+            "kind": "original_extension"
+          },
+          "e2a71b63-b333-5634-8293-81ec0ded62f8-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6d43d825-e04c-5617-a53d-b7f3b613ae75",
+      "event_id": "E02",
+      "context_vi": "Bạn tới một sento và mang theo túi vải nhỏ. Bạn hỏi nơi cất túi cùng quần áo và làm gì với chìa khóa tủ khi đi tắm.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6d43d825-e04c-5617-a53d-b7f3b613ae75-u01",
+          "speaker_id": "A",
+          "ja": "かばんと服はどこに置きますか。",
+          "vi": "Tôi để túi với quần áo ở đâu ạ?"
+        },
+        {
+          "id": "6d43d825-e04c-5617-a53d-b7f3b613ae75-u02",
+          "speaker_id": "B",
+          "ja": "脱衣所の空いているロッカーをお使いください。",
+          "vi": "Chị dùng tủ còn trống trong phòng thay đồ nhé."
+        },
+        {
+          "id": "6d43d825-e04c-5617-a53d-b7f3b613ae75-u03",
+          "speaker_id": "A",
+          "ja": "鍵はお風呂に持っていきますか。",
+          "vi": "Tôi mang chìa vào khu tắm ạ?"
+        },
+        {
+          "id": "6d43d825-e04c-5617-a53d-b7f3b613ae75-u04",
+          "speaker_id": "B",
+          "ja": "はい。このひもを手首につけてください。",
+          "vi": "Vâng. Chị đeo dây này vào cổ tay nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6d43d825-e04c-5617-a53d-b7f3b613ae75-u01": {
+            "kind": "original_extension"
+          },
+          "6d43d825-e04c-5617-a53d-b7f3b613ae75-u02": {
+            "kind": "original_extension"
+          },
+          "6d43d825-e04c-5617-a53d-b7f3b613ae75-u03": {
+            "kind": "original_extension"
+          },
+          "6d43d825-e04c-5617-a53d-b7f3b613ae75-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "866e1345-a12d-5eb8-8dfa-d25722f1d9d7",
+      "event_id": "E02",
+      "context_vi": "Bạn đang ở quầy Koganeyu vào một ngày thường và muốn vào phòng sauna riêng cạnh khu tắm. Bạn hỏi vé tắm đã bao gồm sauna chưa và có thể mua thêm không.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách nữ",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "866e1345-a12d-5eb8-8dfa-d25722f1d9d7-u01",
+          "speaker_id": "A",
+          "ja": "この入浴券で、奥のサウナも使えますか。",
+          "vi": "Vé tắm này có dùng được cả sauna phía trong không ạ?"
+        },
+        {
+          "id": "866e1345-a12d-5eb8-8dfa-d25722f1d9d7-u02",
+          "speaker_id": "B",
+          "ja": "サウナは別料金です。",
+          "vi": "Sauna tính phí riêng chị ạ."
+        },
+        {
+          "id": "866e1345-a12d-5eb8-8dfa-d25722f1d9d7-u03",
+          "speaker_id": "A",
+          "ja": "じゃ、今からサウナもお願いできますか。",
+          "vi": "Vậy bây giờ tôi mua thêm lượt sauna được không ạ?"
+        },
+        {
+          "id": "866e1345-a12d-5eb8-8dfa-d25722f1d9d7-u04",
+          "speaker_id": "B",
+          "ja": "はい。今は空いていますので、こちらで追加できます。",
+          "vi": "Được ạ. Hiện còn chỗ, chị mua thêm ngay tại quầy này được."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility",
+          "kogane"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "866e1345-a12d-5eb8-8dfa-d25722f1d9d7-u01": {
+            "kind": "original_extension"
+          },
+          "866e1345-a12d-5eb8-8dfa-d25722f1d9d7-u02": {
+            "kind": "original_extension"
+          },
+          "866e1345-a12d-5eb8-8dfa-d25722f1d9d7-u03": {
+            "kind": "original_extension"
+          },
+          "866e1345-a12d-5eb8-8dfa-d25722f1d9d7-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c6e3c280-de17-5631-afcb-8cf60b3585d2",
+      "event_id": "E02",
+      "context_vi": "Bạn định vào phòng thay đồ và hỏi có thể dùng điện thoại ở trong đó không. Nhân viên nói không được, nên bạn hỏi cất máy ở đâu.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c6e3c280-de17-5631-afcb-8cf60b3585d2-u01",
+          "speaker_id": "A",
+          "ja": "着替えるところで、スマホを使ってもいいですか。",
+          "vi": "Tôi dùng điện thoại ở chỗ thay đồ được không ạ?"
+        },
+        {
+          "id": "c6e3c280-de17-5631-afcb-8cf60b3585d2-u02",
+          "speaker_id": "B",
+          "ja": "脱衣所と浴室では、スマホは使わないでください。",
+          "vi": "Chị vui lòng không dùng điện thoại trong phòng thay đồ và khu tắm."
+        },
+        {
+          "id": "c6e3c280-de17-5631-afcb-8cf60b3585d2-u03",
+          "speaker_id": "A",
+          "ja": "じゃ、どこにしまえばいいですか。",
+          "vi": "Vậy tôi cất ở đâu ạ?"
+        },
+        {
+          "id": "c6e3c280-de17-5631-afcb-8cf60b3585d2-u04",
+          "speaker_id": "B",
+          "ja": "脱衣所のロッカーに入れて、鍵をかけてください。",
+          "vi": "Chị để vào tủ trong phòng thay đồ rồi khóa lại nhé."
+        },
+        {
+          "id": "c6e3c280-de17-5631-afcb-8cf60b3585d2-u05",
+          "speaker_id": "A",
+          "ja": "わかりました。先にしまいます。",
+          "vi": "Tôi hiểu rồi. Tôi cất trước ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "phone",
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c6e3c280-de17-5631-afcb-8cf60b3585d2-u01": {
+            "kind": "original_extension"
+          },
+          "c6e3c280-de17-5631-afcb-8cf60b3585d2-u02": {
+            "kind": "original_extension"
+          },
+          "c6e3c280-de17-5631-afcb-8cf60b3585d2-u03": {
+            "kind": "original_extension"
+          },
+          "c6e3c280-de17-5631-afcb-8cf60b3585d2-u04": {
+            "kind": "original_extension"
+          },
+          "c6e3c280-de17-5631-afcb-8cf60b3585d2-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0d75a642-3fa9-5f0b-91df-9a21c7448245",
+      "event_id": "E02",
+      "context_vi": "Bạn nhìn bảng giờ trước cửa một nhà tắm và nghĩ chín giờ rưỡi tối là lúc đóng. Bạn hỏi nhân viên vì bảng còn ghi mốc mười giờ.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0d75a642-3fa9-5f0b-91df-9a21c7448245-u01",
+          "speaker_id": "A",
+          "ja": "夜九時半に閉まるんですか。",
+          "vi": "Chín giờ rưỡi tối là đóng ạ?"
+        },
+        {
+          "id": "0d75a642-3fa9-5f0b-91df-9a21c7448245-u02",
+          "speaker_id": "B",
+          "ja": "九時半は最後に入れる時間です。",
+          "vi": "Chín giờ rưỡi là giờ cuối được vào ạ."
+        },
+        {
+          "id": "0d75a642-3fa9-5f0b-91df-9a21c7448245-u03",
+          "speaker_id": "A",
+          "ja": "お風呂は何時に終わりますか。",
+          "vi": "Còn khu tắm đóng lúc mấy giờ ạ?"
+        },
+        {
+          "id": "0d75a642-3fa9-5f0b-91df-9a21c7448245-u04",
+          "speaker_id": "B",
+          "ja": "夜十時に閉まります。",
+          "vi": "Đóng lúc mười giờ tối."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0d75a642-3fa9-5f0b-91df-9a21c7448245-u01": {
+            "kind": "original_extension"
+          },
+          "0d75a642-3fa9-5f0b-91df-9a21c7448245-u02": {
+            "kind": "original_extension"
+          },
+          "0d75a642-3fa9-5f0b-91df-9a21c7448245-u03": {
+            "kind": "original_extension"
+          },
+          "0d75a642-3fa9-5f0b-91df-9a21c7448245-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "76839752-309e-558e-8578-21bc7906af0c",
+      "event_id": "E02",
+      "context_vi": "Nhân viên vừa giải thích hai mốc khác nhau ở bảng giờ. Bạn muốn nhắc đúng giờ cuối được vào và giờ phải rời nhà tắm.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "76839752-309e-558e-8578-21bc7906af0c-u01",
+          "speaker_id": "A",
+          "ja": "九時半までに入って、十時に閉まるんですね。",
+          "vi": "Vào chậm nhất lúc chín giờ rưỡi, đóng lúc mười giờ tối ạ?"
+        },
+        {
+          "id": "76839752-309e-558e-8578-21bc7906af0c-u02",
+          "speaker_id": "B",
+          "ja": "はい。十時までに外に出てください。",
+          "vi": "Vâng. Chị ra ngoài chậm nhất lúc mười giờ nhé."
+        },
+        {
+          "id": "76839752-309e-558e-8578-21bc7906af0c-u03",
+          "speaker_id": "A",
+          "ja": "わかりました。十時までに出ます。",
+          "vi": "Tôi hiểu rồi. Tôi sẽ ra chậm nhất lúc mười giờ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "76839752-309e-558e-8578-21bc7906af0c-u01": {
+            "kind": "original_extension"
+          },
+          "76839752-309e-558e-8578-21bc7906af0c-u02": {
+            "kind": "original_extension"
+          },
+          "76839752-309e-558e-8578-21bc7906af0c-u03": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "4c98371a-4f0c-5266-affc-d3258e1445b8",
+      "event_id": "E03",
+      "context_vi": "Trong khu tắm nữ, bạn thấy vòi trước mặt không ra nước. Bạn hỏi một khách khác có thể dùng vòi nào và đợi đúng lượt.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Khách cùng khu tắm",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "4c98371a-4f0c-5266-affc-d3258e1445b8-u01",
+          "speaker_id": "A",
+          "ja": "すみません。このシャワー、水が出ません。どれが使えますか。",
+          "vi": "Cho tôi hỏi, vòi này không ra nước. Vòi nào dùng được ạ?"
+        },
+        {
+          "id": "4c98371a-4f0c-5266-affc-d3258e1445b8-u02",
+          "speaker_id": "B",
+          "ja": "鏡の横のシャワーは使えますよ。",
+          "vi": "Vòi cạnh gương dùng được đấy chị."
+        },
+        {
+          "id": "4c98371a-4f0c-5266-affc-d3258e1445b8-u03",
+          "speaker_id": "A",
+          "ja": "今、空いていますか。",
+          "vi": "Hiện giờ chỗ đó trống không ạ?"
+        },
+        {
+          "id": "4c98371a-4f0c-5266-affc-d3258e1445b8-u04",
+          "speaker_id": "B",
+          "ja": "はい。さっきの人はもう終わりました。",
+          "vi": "Vâng. Người lúc nãy dùng xong rồi."
+        },
+        {
+          "id": "4c98371a-4f0c-5266-affc-d3258e1445b8-u05",
+          "speaker_id": "A",
+          "ja": "ありがとうございます。そちらを使います。",
+          "vi": "Cảm ơn chị. Tôi sẽ dùng vòi đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "4c98371a-4f0c-5266-affc-d3258e1445b8-u01": {
+            "kind": "original_extension"
+          },
+          "4c98371a-4f0c-5266-affc-d3258e1445b8-u02": {
+            "kind": "original_extension"
+          },
+          "4c98371a-4f0c-5266-affc-d3258e1445b8-u03": {
+            "kind": "original_extension"
+          },
+          "4c98371a-4f0c-5266-affc-d3258e1445b8-u04": {
+            "kind": "original_extension"
+          },
+          "4c98371a-4f0c-5266-affc-d3258e1445b8-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "49b8adab-ff18-5fe1-b2a4-c199119034fd",
+      "event_id": "E03",
+      "context_vi": "Bạn đã thuê khăn nhưng không thấy bộ khăn trong ngăn lấy đồ của phòng thay đồ. Bạn báo nhân viên nữ trực khu và đưa phiếu thuê.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên trực khu tắm",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "49b8adab-ff18-5fe1-b2a4-c199119034fd-u01",
+          "speaker_id": "A",
+          "ja": "タオルを借りましたが、棚にありませんでした。",
+          "vi": "Tôi đã thuê khăn nhưng không thấy khăn trên kệ ạ."
+        },
+        {
+          "id": "49b8adab-ff18-5fe1-b2a4-c199119034fd-u02",
+          "speaker_id": "B",
+          "ja": "貸し出し券はお持ちですか。",
+          "vi": "Chị có phiếu thuê không ạ?"
+        },
+        {
+          "id": "49b8adab-ff18-5fe1-b2a4-c199119034fd-u03",
+          "speaker_id": "A",
+          "ja": "はい、これです。",
+          "vi": "Có ạ, phiếu đây."
+        },
+        {
+          "id": "49b8adab-ff18-5fe1-b2a4-c199119034fd-u04",
+          "speaker_id": "B",
+          "ja": "確認できました。こちらのセットをお使いください。",
+          "vi": "Tôi đã kiểm được rồi. Chị dùng bộ này nhé."
+        },
+        {
+          "id": "49b8adab-ff18-5fe1-b2a4-c199119034fd-u05",
+          "speaker_id": "A",
+          "ja": "ありがとうございます。",
+          "vi": "Cảm ơn chị."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "49b8adab-ff18-5fe1-b2a4-c199119034fd-u01": {
+            "kind": "original_extension"
+          },
+          "49b8adab-ff18-5fe1-b2a4-c199119034fd-u02": {
+            "kind": "original_extension"
+          },
+          "49b8adab-ff18-5fe1-b2a4-c199119034fd-u03": {
+            "kind": "original_extension"
+          },
+          "49b8adab-ff18-5fe1-b2a4-c199119034fd-u04": {
+            "kind": "original_extension"
+          },
+          "49b8adab-ff18-5fe1-b2a4-c199119034fd-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "16aa2d55-bcf5-565c-8022-168abcc77be0",
+      "event_id": "E03",
+      "context_vi": "Bạn vừa dùng xong vòi tắm. Một khách khác đang đợi tới lượt và hỏi bạn có thể dọn chậu để họ dùng chỗ đó không.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Khách chờ vòi",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "16aa2d55-bcf5-565c-8022-168abcc77be0-u01",
+          "speaker_id": "B",
+          "ja": "こちら、もう使ってもいいですか。",
+          "vi": "Tôi dùng chỗ này được chưa ạ?"
+        },
+        {
+          "id": "16aa2d55-bcf5-565c-8022-168abcc77be0-u02",
+          "speaker_id": "A",
+          "ja": "はい、終わりました。洗面器を片付けますね。",
+          "vi": "Được ạ, tôi dùng xong rồi. Tôi cất cái chậu nhé."
+        },
+        {
+          "id": "16aa2d55-bcf5-565c-8022-168abcc77be0-u03",
+          "speaker_id": "B",
+          "ja": "ありがとうございます。あの棚に戻すみたいです。",
+          "vi": "Cảm ơn chị. Có vẻ chậu để lại trên kệ kia ạ."
+        },
+        {
+          "id": "16aa2d55-bcf5-565c-8022-168abcc77be0-u04",
+          "speaker_id": "A",
+          "ja": "じゃ、棚に戻します。どうぞ。",
+          "vi": "Vậy tôi để lại lên kệ. Chị dùng đi ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "permission",
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "16aa2d55-bcf5-565c-8022-168abcc77be0-u01": {
+            "kind": "original_extension"
+          },
+          "16aa2d55-bcf5-565c-8022-168abcc77be0-u02": {
+            "kind": "original_extension"
+          },
+          "16aa2d55-bcf5-565c-8022-168abcc77be0-u03": {
+            "kind": "original_extension"
+          },
+          "16aa2d55-bcf5-565c-8022-168abcc77be0-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "aaf7b733-d10e-5387-9b42-9dd14b858683",
+      "event_id": "E03",
+      "context_vi": "Trong khu tắm nữ, bạn tưởng có thể dùng xà phòng cạnh bồn ngâm. Nhân viên nêu quy tắc và bạn hỏi lại cần sang vị trí nào để tắm rửa.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên trực khu tắm",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "aaf7b733-d10e-5387-9b42-9dd14b858683-u01",
+          "speaker_id": "B",
+          "ja": "すみません。湯船のそばでは石けんを使わないでください。",
+          "vi": "Xin nhắc chị, cạnh bồn ngâm mình không dùng xà phòng ạ."
+        },
+        {
+          "id": "aaf7b733-d10e-5387-9b42-9dd14b858683-u02",
+          "speaker_id": "A",
+          "ja": "すみません。どこで体を洗いますか。",
+          "vi": "Tôi xin lỗi. Tôi tắm rửa ở đâu ạ?"
+        },
+        {
+          "id": "aaf7b733-d10e-5387-9b42-9dd14b858683-u03",
+          "speaker_id": "B",
+          "ja": "シャワーのある洗い場でお願いします。",
+          "vi": "Chị dùng khu tắm có vòi sen nhé."
+        },
+        {
+          "id": "aaf7b733-d10e-5387-9b42-9dd14b858683-u04",
+          "speaker_id": "A",
+          "ja": "わかりました。洗い場に移りますね。",
+          "vi": "Tôi hiểu rồi. Tôi chuyển sang chỗ vòi sen ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "aaf7b733-d10e-5387-9b42-9dd14b858683-u01": {
+            "kind": "original_extension"
+          },
+          "aaf7b733-d10e-5387-9b42-9dd14b858683-u02": {
+            "kind": "original_extension"
+          },
+          "aaf7b733-d10e-5387-9b42-9dd14b858683-u03": {
+            "kind": "original_extension"
+          },
+          "aaf7b733-d10e-5387-9b42-9dd14b858683-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2113fba1-b5d6-56a1-9be2-dd8f94902ff4",
+      "event_id": "E03",
+      "context_vi": "Bạn đã chuyển sang chỗ vòi để rửa người theo lời nhân viên. Bạn cảm ơn vì được chỉ và hỏi để khăn ở đâu khi sang bồn ngâm.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên trực khu tắm",
+          "gender": "female"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2113fba1-b5d6-56a1-9be2-dd8f94902ff4-u01",
+          "speaker_id": "A",
+          "ja": "さっきは教えてくださって、ありがとうございます。",
+          "vi": "Cảm ơn chị vừa chỉ cho tôi."
+        },
+        {
+          "id": "2113fba1-b5d6-56a1-9be2-dd8f94902ff4-u02",
+          "speaker_id": "A",
+          "ja": "湯船に入るとき、タオルはどこに置きますか。",
+          "vi": "Khi vào bồn ngâm, tôi để khăn ở đâu ạ?"
+        },
+        {
+          "id": "2113fba1-b5d6-56a1-9be2-dd8f94902ff4-u03",
+          "speaker_id": "B",
+          "ja": "湯船には入れないでください。そこの棚に置けますよ。",
+          "vi": "Chị đừng để khăn vào bồn. Có thể để trên kệ kia."
+        },
+        {
+          "id": "2113fba1-b5d6-56a1-9be2-dd8f94902ff4-u04",
+          "speaker_id": "A",
+          "ja": "わかりました。棚に置いてから入ります。",
+          "vi": "Tôi hiểu rồi. Tôi để khăn lên kệ rồi mới xuống bồn."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "bath"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2113fba1-b5d6-56a1-9be2-dd8f94902ff4-u01": {
+            "kind": "original_extension"
+          },
+          "2113fba1-b5d6-56a1-9be2-dd8f94902ff4-u02": {
+            "kind": "original_extension"
+          },
+          "2113fba1-b5d6-56a1-9be2-dd8f94902ff4-u03": {
+            "kind": "original_extension"
+          },
+          "2113fba1-b5d6-56a1-9be2-dd8f94902ff4-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "77bc04e7-2ee8-5d90-b3f4-6cb346c12311",
+      "event_id": "E04",
+      "context_vi": "Bạn dùng xong một bộ khăn thuê ở nhà tắm. Bạn hỏi nhân viên quầy trả khăn ở đâu và có phải phân khăn lớn với khăn nhỏ không.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "77bc04e7-2ee8-5d90-b3f4-6cb346c12311-u01",
+          "speaker_id": "A",
+          "ja": "借りたタオルはどこに返しますか。",
+          "vi": "Tôi trả khăn thuê ở đâu ạ?"
+        },
+        {
+          "id": "77bc04e7-2ee8-5d90-b3f4-6cb346c12311-u02",
+          "speaker_id": "B",
+          "ja": "出口の横のかごに入れてください。",
+          "vi": "Chị bỏ vào giỏ cạnh lối ra nhé."
+        },
+        {
+          "id": "77bc04e7-2ee8-5d90-b3f4-6cb346c12311-u03",
+          "speaker_id": "A",
+          "ja": "大きいのと小さいのは一緒でいいですか。",
+          "vi": "Khăn lớn và khăn nhỏ để chung được không ạ?"
+        },
+        {
+          "id": "77bc04e7-2ee8-5d90-b3f4-6cb346c12311-u04",
+          "speaker_id": "B",
+          "ja": "はい。一緒に入れて大丈夫です。",
+          "vi": "Vâng, chị để chung được."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "77bc04e7-2ee8-5d90-b3f4-6cb346c12311-u01": {
+            "kind": "original_extension"
+          },
+          "77bc04e7-2ee8-5d90-b3f4-6cb346c12311-u02": {
+            "kind": "original_extension"
+          },
+          "77bc04e7-2ee8-5d90-b3f4-6cb346c12311-u03": {
+            "kind": "original_extension"
+          },
+          "77bc04e7-2ee8-5d90-b3f4-6cb346c12311-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0f65371c-eb29-581d-8a33-64359ab862ec",
+      "event_id": "E04",
+      "context_vi": "Khi ra về, bạn đưa phiếu lấy chiếc túi gửi tại quầy nhưng nhân viên chưa thấy. Bạn mô tả màu và quai rồi hỏi có thể tìm theo phiếu không.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0f65371c-eb29-581d-8a33-64359ab862ec-u01",
+          "speaker_id": "A",
+          "ja": "預けたかばんを取りに来ました。こちらの札です。",
+          "vi": "Tôi đến lấy chiếc túi đã gửi. Đây là phiếu gửi ạ."
+        },
+        {
+          "id": "0f65371c-eb29-581d-8a33-64359ab862ec-u02",
+          "speaker_id": "B",
+          "ja": "すぐには見当たりませんね。どんなかばんですか。",
+          "vi": "Tôi chưa thấy ngay. Túi của chị trông thế nào ạ?"
+        },
+        {
+          "id": "0f65371c-eb29-581d-8a33-64359ab862ec-u03",
+          "speaker_id": "A",
+          "ja": "紺色で、持ち手が白いです。この番号で探せますか。",
+          "vi": "Túi xanh đậm, quai trắng. Anh tìm theo số này được không ạ?"
+        },
+        {
+          "id": "0f65371c-eb29-581d-8a33-64359ab862ec-u04",
+          "speaker_id": "B",
+          "ja": "はい、札の番号でお調べします。",
+          "vi": "Được ạ, tôi sẽ tra theo số trên phiếu."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0f65371c-eb29-581d-8a33-64359ab862ec-u01": {
+            "kind": "original_extension"
+          },
+          "0f65371c-eb29-581d-8a33-64359ab862ec-u02": {
+            "kind": "original_extension"
+          },
+          "0f65371c-eb29-581d-8a33-64359ab862ec-u03": {
+            "kind": "original_extension"
+          },
+          "0f65371c-eb29-581d-8a33-64359ab862ec-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f45d78f9-e9ec-5c38-8cda-8118fa8380b4",
+      "event_id": "E04",
+      "context_vi": "Bạn tới quầy lấy chiếc túi xanh đậm quai trắng đã gửi. Nhân viên cần đối chiếu các ngăn giữ đồ. Bạn hỏi có thể ngồi đợi ở đâu và làm thế nào biết lúc quay lại.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f45d78f9-e9ec-5c38-8cda-8118fa8380b4-u01",
+          "speaker_id": "B",
+          "ja": "かばんをお探しします。少しお時間をいただけますか。",
+          "vi": "Tôi sẽ tìm túi cho chị. Chị chờ chúng tôi một chút được không ạ?"
+        },
+        {
+          "id": "f45d78f9-e9ec-5c38-8cda-8118fa8380b4-u02",
+          "speaker_id": "A",
+          "ja": "はい。どこで待てばいいですか。",
+          "vi": "Được ạ. Tôi nên chờ ở đâu ạ?"
+        },
+        {
+          "id": "f45d78f9-e9ec-5c38-8cda-8118fa8380b4-u03",
+          "speaker_id": "B",
+          "ja": "入口の椅子でお待ちください。確認したらお呼びします。",
+          "vi": "Chị đợi ở hàng ghế gần lối vào nhé. Kiểm xong tôi sẽ gọi."
+        },
+        {
+          "id": "f45d78f9-e9ec-5c38-8cda-8118fa8380b4-u04",
+          "speaker_id": "A",
+          "ja": "わかりました。札を持って、そこで待ちます。",
+          "vi": "Vâng. Tôi giữ phiếu rồi ra đó đợi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f45d78f9-e9ec-5c38-8cda-8118fa8380b4-u01": {
+            "kind": "original_extension"
+          },
+          "f45d78f9-e9ec-5c38-8cda-8118fa8380b4-u02": {
+            "kind": "original_extension"
+          },
+          "f45d78f9-e9ec-5c38-8cda-8118fa8380b4-u03": {
+            "kind": "original_extension"
+          },
+          "f45d78f9-e9ec-5c38-8cda-8118fa8380b4-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6af900cb-bc52-53f9-a35a-7ba5810ee4e6",
+      "event_id": "E04",
+      "context_vi": "Bạn được gọi trở lại quầy sau khi ngồi chờ tìm túi. Bạn đưa phiếu ghi ngăn số 18 và nhắc lại đặc điểm túi để nhân viên đối chiếu.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6af900cb-bc52-53f9-a35a-7ba5810ee4e6-u01",
+          "speaker_id": "A",
+          "ja": "お呼びいただいた者です。札は十八番です。",
+          "vi": "Tôi là người anh vừa gọi. Phiếu của tôi số 18 ạ."
+        },
+        {
+          "id": "6af900cb-bc52-53f9-a35a-7ba5810ee4e6-u02",
+          "speaker_id": "B",
+          "ja": "ありがとうございます。色をもう一度教えてください。",
+          "vi": "Cảm ơn chị. Chị nói lại giúp tôi màu của túi nhé."
+        },
+        {
+          "id": "6af900cb-bc52-53f9-a35a-7ba5810ee4e6-u03",
+          "speaker_id": "A",
+          "ja": "紺色です。持ち手は白です。",
+          "vi": "Túi xanh đậm. Quai màu trắng ạ."
+        },
+        {
+          "id": "6af900cb-bc52-53f9-a35a-7ba5810ee4e6-u04",
+          "speaker_id": "B",
+          "ja": "十八番に、そういうかばんが一つありました。お見せしますね。",
+          "vi": "Ở ngăn 18 có một chiếc túi như vậy. Tôi đưa chị xem nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6af900cb-bc52-53f9-a35a-7ba5810ee4e6-u01": {
+            "kind": "original_extension"
+          },
+          "6af900cb-bc52-53f9-a35a-7ba5810ee4e6-u02": {
+            "kind": "original_extension"
+          },
+          "6af900cb-bc52-53f9-a35a-7ba5810ee4e6-u03": {
+            "kind": "original_extension"
+          },
+          "6af900cb-bc52-53f9-a35a-7ba5810ee4e6-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fcdc23ee-081d-512f-a885-31243cbb4b12",
+      "event_id": "E04",
+      "context_vi": "Nhân viên vừa tìm được một chiếc túi xanh đậm quai trắng trong ngăn số 18. Bạn nhận ra thêm chiếc móc tròn của mình rồi cảm ơn khi nhận túi.",
+      "speakers": [
+        {
+          "id": "A",
+          "role_vi": "Khách",
+          "gender": "female"
+        },
+        {
+          "id": "B",
+          "role_vi": "Nhân viên quầy",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fcdc23ee-081d-512f-a885-31243cbb4b12-u01",
+          "speaker_id": "B",
+          "ja": "こちらのかばんで間違いないですか。",
+          "vi": "Đúng chiếc túi này của chị chứ ạ?"
+        },
+        {
+          "id": "fcdc23ee-081d-512f-a885-31243cbb4b12-u02",
+          "speaker_id": "A",
+          "ja": "はい。この丸いキーホルダーがついているので、私のです。",
+          "vi": "Đúng rồi. Có chiếc móc khóa tròn này nên đúng túi của tôi ạ."
+        },
+        {
+          "id": "fcdc23ee-081d-512f-a885-31243cbb4b12-u03",
+          "speaker_id": "B",
+          "ja": "では、かばんをお返しします。札はこちらでお預かりします。",
+          "vi": "Vậy tôi gửi lại túi cho chị. Tôi xin nhận lại phiếu nhé."
+        },
+        {
+          "id": "fcdc23ee-081d-512f-a885-31243cbb4b12-u04",
+          "speaker_id": "A",
+          "ja": "見つけてくださって、ありがとうございました。",
+          "vi": "Cảm ơn anh đã tìm giúp tôi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "facility"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fcdc23ee-081d-512f-a885-31243cbb4b12-u01": {
+            "kind": "original_extension"
+          },
+          "fcdc23ee-081d-512f-a885-31243cbb4b12-u02": {
+            "kind": "original_extension"
+          },
+          "fcdc23ee-081d-512f-a885-31243cbb4b12-u03": {
+            "kind": "original_extension"
+          },
+          "fcdc23ee-081d-512f-a885-31243cbb4b12-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
