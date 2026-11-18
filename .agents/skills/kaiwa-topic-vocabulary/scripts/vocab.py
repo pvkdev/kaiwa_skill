@@ -112,17 +112,9 @@ def level_index():
                     continue
                 if not columns or set(line) <= set("|-: "):
                     continue
-                words = set()
-                for name, cell in zip(columns, cells):
-                    if not cell:
-                        continue
-                    if "kanji" in name or name == "từ":
-                        words.add(cell)
-                    elif "hiragana" in name:
-                        words.add(cell)
-                        if len(cell) > 2 and cell[0] in "がをにでと":
-                            words.add(cell[1:])
-                for word in words:
+                row = dict(zip(columns, cells))
+                word = row.get("kanji") or row.get("từ") or row.get("hiragana")
+                if word:
                     index.setdefault(nfc(word), set()).add(level)
     return index
 
@@ -233,7 +225,7 @@ def check(data, ctx):
                     need(filled(term.get("level_note_vi")), label + f" {hint} needs level_note_vi at {ctx['level']}")
                 elif LEVELS.index(hint) < floor:
                     below += 1
-                listed = index.get(nfc(ja)) or index.get(nfc(reading))
+                listed = index.get(nfc(ja))
                 if listed and hint not in listed and len(listed) == 1:
                     notes.append(f"{label} {ja}: level_hint {hint}, vocabulary book lists {'/'.join(sorted(listed))}")
             origin = term.get("origin")
