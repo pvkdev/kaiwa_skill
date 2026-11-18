@@ -18,13 +18,27 @@
       "start_line": 49,
       "end_line": 70,
       "use_vi": "Đọc lời hỏi về cách làm và nấu ăn; không lấy câu khái quát về tập quán trong nguồn làm quy luật của mọi nhà."
+    },
+    "bean": {
+      "kind": "web",
+      "title": "厚生労働省 白インゲン豆の摂取による健康被害事例について",
+      "url": "https://www.mhlw.go.jp/houdou/2006/05/h0522-4.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Xác nhận không dùng đậu trắng sống hoặc chưa nấu đủ. Chỉ minh họa trong lời Fumiko rằng đậu đã luộc mềm, không trình bày công thức."
+    },
+    "allergens": {
+      "kind": "web",
+      "title": "消費者庁 外食・中食での食物アレルギーについて",
+      "url": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/efforts",
+      "accessed": "2026-11-18",
+      "use_vi": "Thông tin chính thức về vật dụng dùng chung và nguy cơ lẫn dị nguyên. Cảnh chỉ hỏi phạm vi có thể tham gia và không cam kết an toàn."
     }
   },
   "dialogues": [
     {
       "situation_uid": "5e7cefc0-974c-50c3-9043-b36935c6e021",
       "event_id": "E01",
-      "context_vi": "Fumiko mời Linh ăn bánh hấp nhân đậu do bà làm; Linh hỏi dịp gia đình bà thường làm món này.",
+      "context_vi": "Fumiko mời Linh ăn bánh hấp có đậu do bà làm. Linh hỏi gia đình bà thường làm món ấy vào dịp nào.",
       "speakers": [
         {
           "id": "A",
@@ -42,7 +56,7 @@
           "id": "5e7cefc0-974c-50c3-9043-b36935c6e021-u01",
           "speaker_id": "A",
           "ja": "この豆入りの蒸し菓子、ふわっとしておいしいです。ふみこさんのお宅では、いつ作るんですか。",
-          "vi": "Bánh hấp nhân đậu này mềm và ngon quá. Nhà bác Fumiko thường làm dịp nào ạ?"
+          "vi": "Bánh hấp có đậu này mềm xốp, ngon quá. Nhà bác Fumiko thường làm vào dịp nào ạ?"
         },
         {
           "id": "5e7cefc0-974c-50c3-9043-b36935c6e021-u02",
@@ -242,19 +256,20 @@
         {
           "id": "879f3280-8f0f-5c2b-8128-b59f64947119-u03",
           "speaker_id": "B",
-          "ja": "それならよかった。白いんげんをつぶして、少しだけ皮を残してるんです。",
-          "vi": "Vậy thì tốt. Tôi nghiền đậu trắng nhưng để lại một ít vỏ."
+          "ja": "それならよかった。やわらかく煮た白いんげん豆をつぶして、皮を少しだけ残してるんです。",
+          "vi": "Vậy thì tốt. Tôi luộc đậu trắng cho mềm rồi nghiền, để lại một ít vỏ."
         },
         {
           "id": "879f3280-8f0f-5c2b-8128-b59f64947119-u04",
           "speaker_id": "A",
           "ja": "ああ、食感も残るんですね。教えてくださってありがとうございます。",
-          "vi": "À, nên bánh còn chút độ bùi. Cảm ơn bác đã kể."
+          "vi": "À, lúc nhai vẫn thấy chút vỏ đậu. Cảm ơn bác đã chỉ cháu."
         }
       ],
       "admin": {
         "source_refs": [
-          "home"
+          "home",
+          "bean"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -362,8 +377,8 @@
         {
           "id": "2b582064-f915-5fa1-b811-e7e6a4504e9f-u02",
           "speaker_id": "B",
-          "ja": "そうです。うちの作り方では、豆の粒を少し残してから粉を入れます。混ぜすぎると粒が分からなくなるので。",
-          "vi": "Đúng. Cách nhà tôi là nghiền nhưng còn ít hạt, rồi mới cho bột. Trộn nhiều quá sẽ mất cảm giác hạt đậu."
+          "ja": "そうです。うちでは、煮た豆をスプーンの背でつぶして少し粒を残してから、粉を入れます。混ぜすぎると粒の食感がなくなるので。",
+          "vi": "Đúng ạ. Nhà tôi dùng lưng thìa nghiền đậu đã luộc, để lại chút hạt rồi mới cho bột. Trộn kỹ quá thì ăn sẽ không còn thấy hạt đậu."
         },
         {
           "id": "2b582064-f915-5fa1-b811-e7e6a4504e9f-u03",
@@ -380,7 +395,8 @@
       ],
       "admin": {
         "source_refs": [
-          "hobby"
+          "hobby",
+          "bean"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -986,19 +1002,19 @@
         {
           "id": "aea9a73a-5710-5bb3-b77c-32247e659188-u01",
           "speaker_id": "A",
-          "ja": "ふみこさんのお宅では春に親戚が集まってカードを書きます。ナオさんのご家族も似たことをしますか。",
+          "ja": "ふみこさんの家では、春に親戚が集まってカードを書くんだって。ナオの家でも似たことする？",
           "vi": "Nhà bác Fumiko họp mặt mùa xuân và viết thiệp. Nhà Nao có làm gần giống không?"
         },
         {
           "id": "aea9a73a-5710-5bb3-b77c-32247e659188-u02",
           "speaker_id": "C",
           "ja": "うちは集まるのは秋です。カードは書かず、皆で古い写真を一枚選んで話します。",
-          "vi": "Nhà tớ tụ họp mùa thu. Không viết thiệp; mỗi người chọn một ảnh cũ rồi cùng kể."
+          "vi": "Nhà tớ tụ họp mùa thu. Bọn tớ không viết thiệp mà cùng chọn một tấm ảnh cũ rồi kể chuyện về nó."
         },
         {
           "id": "aea9a73a-5710-5bb3-b77c-32247e659188-u03",
           "speaker_id": "A",
-          "ja": "時期もやり方も違うんですね。その習慣はご家族のものとして聞いていいですか。",
+          "ja": "時期もやり方も違うんだね。それはナオの家でやってることとして聞いておけばいい？",
           "vi": "Thời điểm và cách làm khác thật. Tớ hiểu đó là cách riêng nhà cậu nhé?"
         },
         {
@@ -1370,25 +1386,26 @@
         {
           "id": "6d163b79-049d-5c38-ba3e-aa09a157d0c9-u02",
           "speaker_id": "C",
-          "ja": "別の材料で作る案もあるけど、同じ道具を使うなら確認が必要だね。",
-          "vi": "Có thể làm bằng nguyên liệu khác, nhưng nếu dùng chung dụng cụ thì cần hỏi kỹ."
+          "ja": "材料を替える案もあるけど、同じ道具に豆が残って混ざることもあるから、先に確認が必要だね。",
+          "vi": "Có thể đổi nguyên liệu, nhưng dùng chung dụng cụ thì đậu còn sót có thể lẫn vào. Mình cần kiểm trước."
         },
         {
           "id": "6d163b79-049d-5c38-ba3e-aa09a157d0c9-u03",
           "speaker_id": "A",
-          "ja": "本人に、避けたい材料と道具の条件を直接聞く。確かめるまでは「食べられる」とは案内しない。",
-          "vi": "Tớ hỏi trực tiếp họ cần tránh nguyên liệu nào và yêu cầu gì về dụng cụ. Chưa rõ thì không nói món này ăn được."
+          "ja": "避ける材料や道具の条件を本人に聞くね。確認できないうちは、試食も調理もできるとは言わないでおこう。",
+          "vi": "Tớ sẽ hỏi họ cần tránh nguyên liệu nào và yêu cầu gì về dụng cụ. Chưa kiểm được thì mình chưa nói họ có thể nếm thử hay trực tiếp làm bánh."
         },
         {
           "id": "6d163b79-049d-5c38-ba3e-aa09a157d0c9-u04",
           "speaker_id": "C",
-          "ja": "うん。作業だけ参加する選択も用意しよう。",
-          "vi": "Ừ. Mình cũng để họ chọn chỉ tham gia làm, không ăn."
+          "ja": "うん。材料に触れずに進行を手伝うなど、別の参加方法も本人と相談しよう。",
+          "vi": "Ừ. Mình có thể hỏi xem họ muốn tham gia theo cách khác không, như giúp điều phối mà không chạm vào nguyên liệu."
         }
       ],
       "admin": {
         "source_refs": [
-          "hobby"
+          "hobby",
+          "allergens"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -1559,8 +1576,8 @@
         {
           "id": "6cce4e94-c813-5d33-8406-25a732a64414-u02",
           "speaker_id": "C",
-          "ja": "いいね。材料と使う道具を明記して、食べるかどうかは本人の条件を聞いてから個別に相談しよう。作るだけの参加もできるようにする。",
-          "vi": "Được. Ta ghi rõ nguyên liệu và dụng cụ, rồi trao đổi riêng về việc nếm thử sau khi nghe điều kiện của người tham gia. Ai chỉ muốn làm cũng được."
+          "ja": "いいね。材料と道具を明記して、試食や調理は本人の条件を聞いてから個別に相談しよう。材料に触れない形で参加できるようにもしておく。",
+          "vi": "Được. Ta ghi rõ nguyên liệu và dụng cụ rồi trao đổi riêng về nếm thử hay trực tiếp làm sau khi nghe người tham gia cần tránh gì. Mình cũng chuẩn bị cách tham gia không chạm vào nguyên liệu."
         },
         {
           "id": "6cce4e94-c813-5d33-8406-25a732a64414-u03",
@@ -1572,12 +1589,13 @@
           "id": "6cce4e94-c813-5d33-8406-25a732a64414-u04",
           "speaker_id": "C",
           "ja": "分かった。ふみこさんにも当日の説明文を先に見てもらう。",
-          "vi": "Tớ hiểu. Tớ sẽ nhờ bác Fumiko xem trước lời giới thiệu trong ngày."
+          "vi": "Tớ hiểu. Trước buổi thực hành, tớ sẽ nhờ bác Fumiko xem lời giới thiệu mình định dùng."
         }
       ],
       "admin": {
         "source_refs": [
-          "hobby"
+          "hobby",
+          "allergens"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -1880,8 +1898,8 @@
         {
           "id": "ed4b5610-5206-58cb-b2c2-a74ce77eef2f-u03",
           "speaker_id": "A",
-          "ja": "来月、都合のよい日を伺ってからまた連絡します。",
-          "vi": "Tháng sau cháu hỏi ngày bác tiện rồi sẽ liên hệ lại."
+          "ja": "来月になったら、ご都合のよい日を伺うために、また連絡してもよろしいですか。",
+          "vi": "Sang tháng cháu có thể liên hệ lại để hỏi ngày nào bác tiện không ạ?"
         },
         {
           "id": "ed4b5610-5206-58cb-b2c2-a74ce77eef2f-u04",

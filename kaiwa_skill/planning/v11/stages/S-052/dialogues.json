@@ -14,8 +14,8 @@
       "kind": "web",
       "title": "総務省消防庁 119番緊急通報",
       "url": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
-      "accessed": "2026-11-17",
-      "use_vi": "119 hỏi địa điểm, mốc gần đó, tên/số người gọi và tình trạng; trả lời từng câu, báo nơi mới."
+      "accessed": "2026-11-18",
+      "use_vi": "119 nhận cứu hỏa và cứu thương. Người tiếp nhận hỏi địa điểm/mốc, chuyện gì xảy ra và thông tin liên hệ. Cảnh tập cập nhật vị trí theo câu hỏi."
     },
     "npa": {
       "kind": "web",
@@ -23,6 +23,20 @@
       "url": "https://www.npa.go.jp/goiken_index.html",
       "accessed": "2026-11-17",
       "use_vi": "110 dành cho vụ việc khẩn cấp; việc không khẩn cấp có đầu mối cảnh sát địa phương hoặc #9110."
+    },
+    "fire_safety": {
+      "kind": "web",
+      "title": "消防庁 消防の動き 119番通報と安全確保",
+      "url": "https://www.fdma.go.jp/publication/ugoki/items/rei_0611_25.pdf",
+      "accessed": "2026-11-18",
+      "use_vi": "Khi khói/lửa đến gần, ra chỗ an toàn rồi báo. Trình tự và lối an toàn cụ thể do nhân viên ga/tổng đài hướng dẫn trong cảnh."
+    },
+    "lost_property": {
+      "kind": "web",
+      "title": "警視庁 落とし物をした方",
+      "url": "https://www.keishicho.metro.tokyo.lg.jp/sodan/otoshimono/lost_found.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Có thể báo cảnh sát đồ mất, và với đồ mất ở ga hoặc trên tàu hỏi cả hãng đường sắt. Cảnh hư cấu không quy định mọi nơi bảo quản giống nhau."
     }
   },
   "dialogues": [
@@ -46,14 +60,14 @@
         {
           "id": "324d243f-e54e-505e-bdb0-e267a35443ec-u01",
           "speaker_id": "a",
-          "ja": "助けてください。あそこで人が倒れています。",
-          "vi": "Xin giúp với. Có người ngã ở chỗ kia."
+          "ja": "すみません、助けてください。あの階段のそばで人が倒れています。",
+          "vi": "Xin giúp với ạ! Có người ngã cạnh cầu thang kia."
         },
         {
           "id": "324d243f-e54e-505e-bdb0-e267a35443ec-u02",
           "speaker_id": "b",
-          "ja": "分かりました。近くへ行きます。",
-          "vi": "Tôi hiểu. Tôi sẽ tới gần."
+          "ja": "あの階段ですね。今、行きます。",
+          "vi": "Cầu thang kia đúng không? Tôi tới ngay."
         }
       ],
       "admin": {
@@ -91,8 +105,8 @@
         {
           "id": "0e716c11-043e-5fa1-a200-7c0d60e0d0a3-u01",
           "speaker_id": "a",
-          "ja": "あの人が倒れました。私は日本語がまだ上手ではありません。119に電話してください。",
-          "vi": "Người kia vừa ngã. Tôi chưa nói tiếng Nhật tốt. Nhờ anh gọi 119 ngay."
+          "ja": "人が倒れています。救急車を呼んでください。百十九番です。",
+          "vi": "Có người ngã. Anh gọi xe cấp cứu giúp tôi với, số 119 ạ."
         },
         {
           "id": "0e716c11-043e-5fa1-a200-7c0d60e0d0a3-u02",
@@ -120,7 +134,7 @@
     {
       "situation_uid": "d28bf1a0-fb1a-595a-86fd-42665edf08f2",
       "event_id": "E01",
-      "context_vi": "Sau khi đã nhờ người ở gần giúp người bị ngã, bạn chỉ rõ cửa tây ga Aoi và bảng đỏ làm mốc.",
+      "context_vi": "Người bạn vừa nhờ nhìn về phía cầu thang nhưng chưa thấy người ngã. Bạn chỉ rõ cửa tây ga Aoi và bảng hướng dẫn màu đỏ.",
       "speakers": [
         {
           "id": "a",
@@ -137,8 +151,8 @@
         {
           "id": "d28bf1a0-fb1a-595a-86fd-42665edf08f2-u01",
           "speaker_id": "a",
-          "ja": "駅の西口です。赤い案内板の前に人が倒れています。",
-          "vi": "Ở cửa tây nhà ga, trước bảng hướng dẫn màu đỏ có người ngã."
+          "ja": "西口です。赤い案内板の前に倒れています。",
+          "vi": "Ở cửa tây ạ. Người đó ngã ngay trước bảng hướng dẫn màu đỏ."
         },
         {
           "id": "d28bf1a0-fb1a-595a-86fd-42665edf08f2-u02",
@@ -182,8 +196,8 @@
         {
           "id": "ce7a704c-b591-5a70-9701-fe307291db28-u01",
           "speaker_id": "a",
-          "ja": "先ほどの方の電話がつながりませんでした。119に電話してもらえますか。",
-          "vi": "Điện thoại của người lúc nãy không kết nối. Nhờ anh gọi 119 giúp tôi ngay được không?"
+          "ja": "すみません、人が倒れています。百十九番にかけてもらえますか。",
+          "vi": "Xin giúp với, có người ngã. Anh gọi 119 giúp tôi được không ạ?"
         },
         {
           "id": "ce7a704c-b591-5a70-9701-fe307291db28-u02",
@@ -211,7 +225,7 @@
     {
       "situation_uid": "56408789-f5b7-549d-a9ef-b7352fa863f3",
       "event_id": "E02",
-      "context_vi": "Bạn đang nói với 119 về người bị ngã trước bảng đỏ ở cửa tây ga Aoi hư cấu. Người tiếp nhận hỏi vị trí.",
+      "context_vi": "Bạn gọi 119 vì có người ngã và vừa xin xe cấp cứu. Khi người tiếp nhận hỏi, bạn nêu tên ga Aoi, cửa ra và mốc dễ thấy.",
       "speakers": [
         {
           "id": "a",
@@ -228,8 +242,8 @@
         {
           "id": "56408789-f5b7-549d-a9ef-b7352fa863f3-u01",
           "speaker_id": "b",
-          "ja": "119です。場所はどこですか。",
-          "vi": "Tổng đài 119. Bạn đang ở đâu ạ?"
+          "ja": "場所はどこですか。近くに何か目印がありますか。",
+          "vi": "Địa điểm ở đâu ạ? Gần đó có mốc nào dễ nhận không?"
         },
         {
           "id": "56408789-f5b7-549d-a9ef-b7352fa863f3-u02",
@@ -257,7 +271,7 @@
     {
       "situation_uid": "797bdfe1-e8e6-510d-a9fd-136c002b5325",
       "event_id": "E02",
-      "context_vi": "Trong cuộc gọi 119 ở ga Aoi, bạn nhìn thấy khói gần cầu thang nhưng chưa thấy lửa. Bạn chỉ kể điều thấy.",
+      "context_vi": "Bạn thấy khói gần cầu thang ga Aoi. Sau khi ra chỗ an toàn, bạn gọi 119 và chỉ nói điều mình đã nhìn thấy.",
       "speakers": [
         {
           "id": "a",
@@ -274,14 +288,14 @@
         {
           "id": "797bdfe1-e8e6-510d-a9fd-136c002b5325-u01",
           "speaker_id": "b",
-          "ja": "何が起きていますか。",
-          "vi": "Đang xảy ra việc gì ạ?"
+          "ja": "火事ですか、救急ですか。",
+          "vi": "Chị báo cháy hay cần xe cấp cứu ạ?"
         },
         {
           "id": "797bdfe1-e8e6-510d-a9fd-136c002b5325-u02",
           "speaker_id": "a",
-          "ja": "階段の近くに煙が見えます。火は見えません。",
-          "vi": "Tôi thấy khói gần cầu thang. Tôi không thấy lửa."
+          "ja": "あおい駅の階段の近くで煙が出ています。火は見えません。",
+          "vi": "Tôi thấy khói gần cầu thang ở ga Aoi. Tôi không thấy lửa ạ."
         }
       ],
       "admin": {
@@ -381,8 +395,14 @@
         {
           "id": "03debe24-3d4c-5189-9117-f43972ff18e1-u02",
           "speaker_id": "b",
-          "ja": "分かりました。今いる場所をもう一度教えてください。",
-          "vi": "Được. Bạn nói lại chỗ đang đứng nhé."
+          "ja": "分かりました。倒れた人は何人ですか。",
+          "vi": "Được ạ. Có mấy người bị ngã?"
+        },
+        {
+          "id": "03debe24-3d4c-5189-9117-f43972ff18e1-u03",
+          "speaker_id": "a",
+          "ja": "一人です。",
+          "vi": "Một người ạ."
         }
       ],
       "admin": {
@@ -397,6 +417,9 @@
           },
           "03debe24-3d4c-5189-9117-f43972ff18e1-u02": {
             "kind": "original_extension"
+          },
+          "03debe24-3d4c-5189-9117-f43972ff18e1-u03": {
+            "kind": "original_extension"
           }
         }
       }
@@ -404,7 +427,7 @@
     {
       "situation_uid": "0b99ad79-0e1c-53e2-b698-8ca2a0fa7c0c",
       "event_id": "E03",
-      "context_vi": "Sau khi làm theo hướng dẫn trong cuộc gọi 119, bạn đã ra khu ngoài cửa tây ga Aoi và cập nhật vị trí.",
+      "context_vi": "Có khói gần cầu thang ga Aoi. Bạn ra ngoài theo hướng dẫn của nhân viên ga rồi cập nhật vị trí an toàn cho tổng đài 119.",
       "speakers": [
         {
           "id": "a",
@@ -421,20 +444,21 @@
         {
           "id": "0b99ad79-0e1c-53e2-b698-8ca2a0fa7c0c-u01",
           "speaker_id": "a",
-          "ja": "案内に従って外に出ました。今は駅の西口にいます。",
-          "vi": "Tôi đã ra ngoài theo hướng dẫn. Giờ tôi ở cửa tây nhà ga."
+          "ja": "駅員さんの案内で外に出ました。今はあおい駅の西口の外です。",
+          "vi": "Tôi đã ra ngoài theo hướng dẫn của nhân viên ga. Giờ tôi ở bên ngoài cửa tây ga Aoi ạ."
         },
         {
           "id": "0b99ad79-0e1c-53e2-b698-8ca2a0fa7c0c-u02",
           "speaker_id": "b",
-          "ja": "西口ですね。今の場所を確認します。",
-          "vi": "Cửa tây. Tôi sẽ xác nhận vị trí hiện tại."
+          "ja": "西口の外ですね。消防隊に伝えます。",
+          "vi": "Bên ngoài cửa tây ạ. Tôi sẽ báo vị trí cho đội cứu hỏa."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "fire_safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -450,7 +474,7 @@
     {
       "situation_uid": "d966bf21-597d-57fe-a1fe-ef39dcc3a907",
       "event_id": "E03",
-      "context_vi": "Lối cửa tây vừa đóng. Bạn chuyển ra ngoài cửa nam ga Aoi và báo ngay cho người tiếp nhận 119.",
+      "context_vi": "Lối vào chỗ hẹn trước cửa tây ga Aoi vừa bị chặn. Nhân viên ga chỉ bạn đi vòng theo đường ngoài tới cửa nam. Bạn cập nhật 119 ngay khi tới.",
       "speakers": [
         {
           "id": "a",
@@ -467,20 +491,21 @@
         {
           "id": "d966bf21-597d-57fe-a1fe-ef39dcc3a907-u01",
           "speaker_id": "a",
-          "ja": "西口の通路が閉まりました。今は南口の外にいます。",
-          "vi": "Lối cửa tây đã đóng. Giờ tôi ở ngoài cửa nam."
+          "ja": "西口の前は通れなくなりました。今は南口の外、時計の下にいます。",
+          "vi": "Bây giờ không đi qua trước cửa tây được. Tôi đang đứng dưới đồng hồ ở bên ngoài cửa nam ạ."
         },
         {
           "id": "d966bf21-597d-57fe-a1fe-ef39dcc3a907-u02",
           "speaker_id": "b",
-          "ja": "南口の外ですね。位置を伝えます。",
-          "vi": "Ngoài cửa nam. Tôi sẽ báo vị trí đó."
+          "ja": "南口の外、時計の下ですね。消防隊に伝えます。",
+          "vi": "Bên ngoài cửa nam, dưới đồng hồ ạ. Tôi sẽ báo đội cứu hỏa."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "fire_safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -496,7 +521,7 @@
     {
       "situation_uid": "58b8bfef-513b-5021-b8e3-2ee9ead0d850",
       "event_id": "E03",
-      "context_vi": "Bạn vẫn ở cửa tây, trước bảng đỏ đã báo cho 119. Bạn nhờ nhân viên ga ra đó đón đội tới, còn mình ở với người cần giúp.",
+      "context_vi": "Bạn báo 119 có khói trong ga Aoi và vẫn ở khu an toàn ngoài cửa tây. Bạn nhờ nhân viên ga gần mình ra hiệu cho đội cứu hỏa khi xe tới.",
       "speakers": [
         {
           "id": "a",
@@ -513,20 +538,21 @@
         {
           "id": "58b8bfef-513b-5021-b8e3-2ee9ead0d850-u01",
           "speaker_id": "a",
-          "ja": "駅員さん、救急の人が来ます。西口の赤い看板で待ってもらえますか。",
-          "vi": "Anh nhân viên ga ơi, đội cứu hộ sắp tới. Anh ra đợi ở biển đỏ cửa tây giúp tôi được không?"
+          "ja": "消防車が来ます。西口の外の赤い案内板のところで、来たら合図をお願いできますか。",
+          "vi": "Xe cứu hỏa sắp tới. Khi xe đến, anh ra hiệu ở chỗ bảng đỏ bên ngoài cửa tây giúp tôi được không ạ?"
         },
         {
           "id": "58b8bfef-513b-5021-b8e3-2ee9ead0d850-u02",
           "speaker_id": "b",
-          "ja": "はい、そこへ行きます。",
-          "vi": "Được, tôi sẽ ra đó."
+          "ja": "はい。外の案内板のところで待ちます。",
+          "vi": "Được, tôi sẽ đợi ở bảng hướng dẫn phía ngoài."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "fire_safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -565,14 +591,15 @@
         {
           "id": "37810d14-04ba-52ed-a890-f8f730df35e3-u02",
           "speaker_id": "b",
-          "ja": "分かりました。不明として伝えます。",
-          "vi": "Tôi hiểu. Tôi sẽ ghi là chưa rõ."
+          "ja": "分かりました。中に戻らず、そのまま安全な場所にいてください。",
+          "vi": "Tôi rõ rồi. Chị cứ ở chỗ an toàn đó, đừng quay vào bên trong."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "fire_safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -613,11 +640,18 @@
           "speaker_id": "b",
           "ja": "はい、まず何をなくしたか教えてください。",
           "vi": "Được. Trước tiên bạn cho biết mất gì."
+        },
+        {
+          "id": "9ed36260-5a32-576a-a139-fa818bb9b441-u03",
+          "speaker_id": "a",
+          "ja": "財布を落としたと思います。届いていませんか。",
+          "vi": "Tôi nghĩ mình đánh rơi ví. Có ai nhặt được nộp ở đây chưa ạ?"
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "lost_property"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -626,6 +660,9 @@
           },
           "9ed36260-5a32-576a-a139-fa818bb9b441-u02": {
             "kind": "original_extension"
+          },
+          "9ed36260-5a32-576a-a139-fa818bb9b441-u03": {
+            "kind": "original_extension"
           }
         }
       }
@@ -633,7 +670,7 @@
     {
       "situation_uid": "6dd03d1c-b0e8-52d5-82ae-9839b8dc5f38",
       "event_id": "E04",
-      "context_vi": "Sau khi biết quầy ga nhận câu hỏi thất lạc, bạn muốn hỏi thêm chốt cảnh sát cho chiếc ví mình đang tìm.",
+      "context_vi": "Quầy ga chưa có tin về chiếc ví bạn bị mất. Bạn muốn báo thất lạc ở chốt cảnh sát và hỏi đường.",
       "speakers": [
         {
           "id": "a",
@@ -650,8 +687,8 @@
         {
           "id": "6dd03d1c-b0e8-52d5-82ae-9839b8dc5f38-u01",
           "speaker_id": "a",
-          "ja": "緊急の事件ではありません。財布を探しています。交番はどこですか。",
-          "vi": "Đây không phải vụ khẩn cấp. Tôi đang tìm ví. Chốt cảnh sát ở đâu ạ?"
+          "ja": "財布をなくしたので、交番にも届けたいです。近くにありますか。",
+          "vi": "Tôi bị mất ví nên muốn báo cả ở chốt cảnh sát. Gần đây có chốt nào không ạ?"
         },
         {
           "id": "6dd03d1c-b0e8-52d5-82ae-9839b8dc5f38-u02",
@@ -663,7 +700,8 @@
       "admin": {
         "source_refs": [
           "main",
-          "npa"
+          "npa",
+          "lost_property"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -696,14 +734,20 @@
         {
           "id": "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u01",
           "speaker_id": "a",
-          "ja": "駅前の交番ですね。入口はどちらですか。",
-          "vi": "Chốt cảnh sát trước ga phải không ạ? Lối vào ở đâu?"
+          "ja": "駅前の交番へは、どの出口から行けばいいですか。",
+          "vi": "Tôi đi lối ra nào để đến chốt cảnh sát trước ga ạ?"
         },
         {
           "id": "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u02",
           "speaker_id": "b",
           "ja": "東口を出て左です。",
           "vi": "Ra cửa đông rồi rẽ trái."
+        },
+        {
+          "id": "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u03",
+          "speaker_id": "a",
+          "ja": "東口を出て左ですね。ありがとうございます。",
+          "vi": "Ra cửa đông rồi rẽ trái ạ. Cảm ơn anh."
         }
       ],
       "admin": {
@@ -718,6 +762,9 @@
           },
           "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u02": {
             "kind": "original_extension"
+          },
+          "21c1c11e-4ad7-59d0-89d1-1509fbea1f3c-u03": {
+            "kind": "original_extension"
           }
         }
       }
@@ -725,7 +772,7 @@
     {
       "situation_uid": "23ca3710-b5ea-53ad-a7cf-3714bf81a1af",
       "event_id": "E04",
-      "context_vi": "Bạn đã tới chốt cảnh sát được chỉ, nhưng họ không biết chính xác vị trí cần tìm. Bạn quay lại quầy ga hỏi đầu mối khác.",
+      "context_vi": "Bạn đã tới chốt cảnh sát được chỉ. Họ chưa nhận được chiếc ví, và gợi ý hỏi lại bên nhà ga vì bạn có thể đã đánh rơi ở ga.",
       "speakers": [
         {
           "id": "a",
@@ -742,20 +789,21 @@
         {
           "id": "23ca3710-b5ea-53ad-a7cf-3714bf81a1af-u01",
           "speaker_id": "a",
-          "ja": "教えてもらった交番では、この場所のことは分からないそうです。次はどこに聞けますか。",
-          "vi": "Chốt cảnh sát được chỉ không biết về địa điểm này. Tôi có thể hỏi tiếp ở đâu ạ?"
+          "ja": "交番には、まだ財布が届いていませんでした。駅で預かっているか、調べてもらえますか。",
+          "vi": "Chưa có ai nộp ví ở chốt cảnh sát. Anh kiểm giúp xem nhà ga có đang giữ không ạ?"
         },
         {
           "id": "23ca3710-b5ea-53ad-a7cf-3714bf81a1af-u02",
           "speaker_id": "b",
-          "ja": "駅の案内所でも場所を確認してみましょう。",
-          "vi": "Ta thử hỏi quầy hướng dẫn của ga về địa điểm nhé."
+          "ja": "はい。財布の色と、落としたと思う場所を教えてください。",
+          "vi": "Vâng. Cho tôi biết màu ví và nơi chị nghĩ mình đã đánh rơi ạ."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "npa"
+          "npa",
+          "lost_property"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -788,8 +836,8 @@
         {
           "id": "215cef7a-615c-5559-9bad-0536f83957c9-u01",
           "speaker_id": "a",
-          "ja": "道に迷いました。案内所を探しています。",
-          "vi": "Tôi bị lạc đường. Tôi đang tìm quầy hỗ trợ."
+          "ja": "道に迷ってしまいました。案内所はどこですか。",
+          "vi": "Tôi bị lạc đường. Quầy hỗ trợ ở đâu ạ?"
         },
         {
           "id": "215cef7a-615c-5559-9bad-0536f83957c9-u02",
@@ -816,7 +864,7 @@
     {
       "situation_uid": "4027c33f-baeb-5313-bb23-989b92a9583b",
       "event_id": "E05",
-      "context_vi": "Bạn hoảng nên không kể dài được. Sau khi người gần đó chỉ đường, bạn nói tên và vị trí hiện tại.",
+      "context_vi": "Bạn đang lạc ở cửa tây ga Aoi. Một người vừa chỉ đường nhưng bạn rối đến mức chưa đi được. Bạn nói thật ngắn tên và chỗ mình đang đứng.",
       "speakers": [
         {
           "id": "a",
@@ -833,14 +881,14 @@
         {
           "id": "4027c33f-baeb-5313-bb23-989b92a9583b-u01",
           "speaker_id": "a",
-          "ja": "すみません。私はリンです。今、あおい駅の西口にいます。助けてください。",
-          "vi": "Xin lỗi, tôi là Linh. Tôi đang ở cửa tây ga Aoi. Xin giúp tôi với."
+          "ja": "リンです。ここは西口ですよね。少しここにいてもらえますか。",
+          "vi": "Tôi là Linh. Đây là cửa tây đúng không ạ? Anh đứng cùng tôi một lát được không?"
         },
         {
           "id": "4027c33f-baeb-5313-bb23-989b92a9583b-u02",
           "speaker_id": "b",
-          "ja": "分かりました。ここに一緒にいます。",
-          "vi": "Tôi hiểu. Tôi sẽ đứng cùng bạn ở đây."
+          "ja": "はい、西口です。ここにいますよ。",
+          "vi": "Vâng, đây là cửa tây. Tôi đứng đây với chị nhé."
         }
       ],
       "admin": {
@@ -878,8 +926,8 @@
         {
           "id": "0cecd912-1048-51b6-9abd-fdf175994afc-u01",
           "speaker_id": "a",
-          "ja": "日本語が速くて分かりません。一つずつ、短く話してください。",
-          "vi": "Anh nói nhanh quá, tôi không hiểu. Xin nói từng câu ngắn thôi."
+          "ja": "すみません、よく分かりません。短く、ゆっくり話してもらえますか。",
+          "vi": "Xin lỗi, tôi chưa hiểu rõ. Anh nói từng câu ngắn và chậm giúp tôi được không ạ?"
         },
         {
           "id": "0cecd912-1048-51b6-9abd-fdf175994afc-u02",
@@ -923,14 +971,14 @@
         {
           "id": "cd8d92d9-2ae5-5752-8649-6c788d54037a-u01",
           "speaker_id": "a",
-          "ja": "家族に電話したいです。ここにいることを伝えたいです。",
-          "vi": "Tôi muốn gọi cho gia đình, báo rằng mình đang ở đây."
+          "ja": "家族に電話したいです。あおい駅の西口にいると伝えます。",
+          "vi": "Tôi muốn gọi cho gia đình để báo là tôi đang ở cửa tây ga Aoi ạ."
         },
         {
           "id": "cd8d92d9-2ae5-5752-8649-6c788d54037a-u02",
           "speaker_id": "b",
-          "ja": "分かりました。電話をかける場所をご案内します。",
-          "vi": "Tôi hiểu. Tôi sẽ chỉ chỗ bạn có thể gọi điện."
+          "ja": "分かりました。電話が終わるまで、そばにいますね。",
+          "vi": "Được, tôi đứng cạnh chị đến khi gọi xong nhé."
         }
       ],
       "admin": {
