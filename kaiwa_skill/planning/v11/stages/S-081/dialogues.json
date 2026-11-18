@@ -14,8 +14,15 @@
       "kind": "web",
       "title": "警察庁 ご意見、各種相談・情報提供等",
       "url": "https://www.npa.go.jp/goiken_index.html",
-      "accessed": "2026-11-17",
-      "use_vi": "110 dùng cho vụ việc khẩn cấp; các cảnh nhờ báo ngay và nói chỗ an toàn."
+      "accessed": "2026-11-18",
+      "use_vi": "110 nhận báo khẩn về vụ việc/tai nạn. Cảnh vừa bị giật/cướp, tìm chỗ an toàn và nhờ gọi ngay."
+    },
+    "dispatch": {
+      "kind": "web",
+      "title": "警視庁 東京の治安を守る110番",
+      "url": "https://www.keishicho.metro.tokyo.lg.jp/about_mpd/joho/koho/glaph.files/p11_12.pdf",
+      "accessed": "2026-11-18",
+      "use_vi": "Thông tin địa điểm/mốc, hướng đã thấy và có người bị thương để báo cảnh sát."
     }
   },
   "dialogues": [
@@ -39,19 +46,20 @@
         {
           "id": "de5b453b-a26d-5e1f-a9bc-b041fa9985bb-u01",
           "speaker_id": "a",
-          "ja": "外でかばんを取られました。ここから警察に電話してもらえますか。",
-          "vi": "Ngoài cửa tôi vừa bị giật túi. Anh gọi cảnh sát giúp tôi từ đây được không ạ?"
+          "ja": "今、この店の前でかばんをひったくられました。警察に電話してもらえますか。",
+          "vi": "Tôi vừa bị giật túi ngay trước cửa hàng này. Anh gọi cảnh sát giúp tôi được không ạ?"
         },
         {
           "id": "de5b453b-a26d-5e1f-a9bc-b041fa9985bb-u02",
           "speaker_id": "b",
-          "ja": "はい。ここは安全です。今、110に電話します。",
-          "vi": "Được. Trong này an toàn. Tôi gọi 110 ngay."
+          "ja": "はい、今ここから百十番に電話します。",
+          "vi": "Vâng, tôi sẽ gọi 110 từ đây ngay."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "npa"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -90,8 +98,8 @@
         {
           "id": "c4abca50-fa55-5462-aad8-3995d3aaf9c3-u02",
           "speaker_id": "a",
-          "ja": "いいえ。外で人が私の肩からかばんを引っ張って、持って行きました。",
-          "vi": "Không. Ở ngoài, một người đã kéo túi khỏi vai tôi rồi mang đi."
+          "ja": "いいえ。外で肩にかけていたかばんを、急に引っ張られて取られました。",
+          "vi": "Không ạ. Ở ngoài, tôi đang đeo túi trên vai thì có người bất ngờ giật lấy."
         },
         {
           "id": "c4abca50-fa55-5462-aad8-3995d3aaf9c3-u03",
@@ -102,7 +110,8 @@
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "npa"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -144,8 +153,8 @@
         {
           "id": "a69c0c66-6b96-5407-8b5f-7e9333fff3a6-u02",
           "speaker_id": "a",
-          "ja": "橋の方へ走りました。私は後ろ姿だけ見ました。",
-          "vi": "Họ chạy về phía cầu. Tôi chỉ nhìn thấy từ phía sau."
+          "ja": "橋の方へ走っていきました。後ろ姿しか見ていません。",
+          "vi": "Người đó chạy về phía cầu. Tôi chỉ nhìn thấy họ từ phía sau ạ."
         },
         {
           "id": "a69c0c66-6b96-5407-8b5f-7e9333fff3a6-u03",
@@ -156,7 +165,9 @@
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "npa",
+          "dispatch"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -192,19 +203,21 @@
         {
           "id": "1007a149-619c-5ef0-aac9-af0505e033e9-u01",
           "speaker_id": "a",
-          "ja": "電話もかばんの中です。ここで待ってもいいですか。警察の人に場所を伝えてください。",
-          "vi": "Điện thoại cũng ở trong túi. Tôi chờ ở đây được không ạ? Xin báo vị trí này cho cảnh sát."
+          "ja": "スマホもかばんに入っていました。レジのそばで待っていいですか。警察に場所を伝えてください。",
+          "vi": "Điện thoại cũng ở trong túi. Tôi đợi cạnh quầy tính tiền được không ạ? Anh báo chỗ đó cho cảnh sát giúp tôi."
         },
         {
           "id": "1007a149-619c-5ef0-aac9-af0505e033e9-u02",
           "speaker_id": "b",
-          "ja": "はい。店の名前はさくら商店です。ここで一緒に待ちましょう。",
-          "vi": "Được. Cửa hàng tên Sakura. Ta cùng chờ tại đây."
+          "ja": "はい。さくら商店のレジのそばだと伝えます。",
+          "vi": "Được ạ. Tôi sẽ báo chị đang ở cạnh quầy tính tiền cửa hàng Sakura."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "npa",
+          "dispatch"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -237,8 +250,8 @@
         {
           "id": "469b79cd-270e-5a27-a609-ddefdfc78adc-u01",
           "speaker_id": "a",
-          "ja": "さっき道で財布を取られました。ここで一緒にいてもらえますか。110に電話します。",
-          "vi": "Vừa rồi trên đường tôi bị lấy ví. Anh đứng cùng tôi ở đây được không ạ? Tôi sẽ gọi 110."
+          "ja": "さっき道をふさがれて、財布を取られました。警察に電話するので、そばにいてもらえますか。",
+          "vi": "Vừa rồi tôi bị chặn đường rồi bị lấy ví. Tôi sẽ gọi cảnh sát. Anh đứng cạnh tôi một lát được không ạ?"
         },
         {
           "id": "469b79cd-270e-5a27-a609-ddefdfc78adc-u02",
@@ -249,7 +262,8 @@
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "npa"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -288,14 +302,14 @@
         {
           "id": "0ba918c4-3cf6-5cb1-b507-87368c9215ac-u02",
           "speaker_id": "a",
-          "ja": "角を曲がるところまでは見ました。その後は見えません。",
-          "vi": "Tôi nhìn thấy họ rẽ ở góc đường. Sau đó tôi không còn thấy nữa."
+          "ja": "まだ近くにいるかは分かりません。角を曲がるところまで見ました。",
+          "vi": "Tôi không biết họ còn gần đây không. Tôi chỉ thấy đến lúc họ rẽ ở góc đường ạ."
         },
         {
           "id": "0ba918c4-3cf6-5cb1-b507-87368c9215ac-u03",
           "speaker_id": "b",
           "ja": "分かりました。見えた所まで伝えましょう。",
-          "vi": "Tôi hiểu. Ta báo tới chỗ bạn còn nhìn thấy."
+          "vi": "Tôi hiểu. Ta báo đúng những gì chị nhìn thấy nhé."
         }
       ],
       "admin": {
@@ -342,13 +356,15 @@
         {
           "id": "acfe2fba-cd87-5eb9-8f76-0ed0bc1d404b-u02",
           "speaker_id": "b",
-          "ja": "分かりました。痛みがあることも伝えます。救急のことも相談します。",
-          "vi": "Tôi hiểu. Tôi sẽ báo bạn bị đau và hỏi thêm về hỗ trợ cấp cứu."
+          "ja": "分かりました。転んで、右のひざが痛いことも伝えます。",
+          "vi": "Tôi hiểu. Tôi sẽ báo thêm là chị bị ngã và đau đầu gối phải."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "npa",
+          "dispatch"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -435,8 +451,8 @@
         {
           "id": "8e5da5ad-0821-52a4-aada-417d56dbcee2-u01",
           "speaker_id": "a",
-          "ja": "今朝、二番の列の五番に自転車を止めました。今日は別の場所に移しましたか。",
-          "vi": "Sáng nay tôi khóa xe ở ô số 5 dãy 2. Hôm nay bên mình có chuyển xe sang chỗ khác không ạ?"
+          "ja": "今朝、二番の列の五番に自転車を止めて、鍵をかけました。今日、場所を移しましたか。",
+          "vi": "Sáng nay tôi đỗ và khóa xe ở ô số 5 dãy 2. Hôm nay bên mình có chuyển xe sang chỗ khác không ạ?"
         },
         {
           "id": "8e5da5ad-0821-52a4-aada-417d56dbcee2-u02",
@@ -534,8 +550,8 @@
         {
           "id": "41d48264-cfbd-5f3c-832d-1f81d42e3fcb-u01",
           "speaker_id": "a",
-          "ja": "あの自転車は同じ色です。私のは後ろに子どもの席があり、右側に傷があります。確認できますか。",
-          "vi": "Chiếc xe kia cùng màu. Xe tôi có ghế trẻ em phía sau và vết xước bên phải. Ta kiểm tra được không ạ?"
+          "ja": "あの自転車は同じ色です。私の自転車は後ろに子どもを乗せる席があって、右側に傷があります。一緒に見てもらえますか。",
+          "vi": "Chiếc kia cùng màu với xe tôi. Xe tôi có ghế chở trẻ ở phía sau và một vết xước bên phải. Anh xem cùng tôi được không ạ?"
         },
         {
           "id": "41d48264-cfbd-5f3c-832d-1f81d42e3fcb-u02",
@@ -591,8 +607,8 @@
         {
           "id": "8eb55d48-60e6-5149-8c2c-b7aa20df5918-u03",
           "speaker_id": "a",
-          "ja": "その名前と番号を伝えます。",
-          "vi": "Tôi sẽ báo đúng tên và số đó."
+          "ja": "あおい駅北口駐輪場、二番の列の五番ですね。",
+          "vi": "Bãi xe cửa bắc ga Aoi, ô số 5 dãy 2, đúng không ạ?"
         }
       ],
       "admin": {
@@ -633,14 +649,20 @@
         {
           "id": "5d3f766c-f61f-570e-8e38-b814e2618916-u01",
           "speaker_id": "a",
-          "ja": "電車を降りたら、かばんが開いていて財布がありません。乗る前に水を買った時は持っていました。",
-          "vi": "Xuống tàu tôi thấy túi mở và không thấy ví. Lúc mua nước trước khi lên tàu, tôi vẫn còn cầm ví."
+          "ja": "電車を降りたら、かばんのポケットが開いていて、財布がありませんでした。乗る前に水を買ったときはありました。",
+          "vi": "Lúc xuống tàu, tôi thấy ngăn túi mở và ví không còn. Lúc mua nước trước khi lên tàu tôi vẫn còn ví ạ."
         },
         {
           "id": "5d3f766c-f61f-570e-8e38-b814e2618916-u02",
           "speaker_id": "b",
-          "ja": "分かりました。見た時間と場所を確認します。",
-          "vi": "Tôi hiểu. Tôi sẽ xác nhận thời gian và nơi bạn thấy ví lần cuối."
+          "ja": "水を買ったのは、どの駅ですか。",
+          "vi": "Chị mua nước ở ga nào ạ?"
+        },
+        {
+          "id": "5d3f766c-f61f-570e-8e38-b814e2618916-u03",
+          "speaker_id": "a",
+          "ja": "あおい駅の売店です。",
+          "vi": "Ở quầy bán hàng ga Aoi ạ."
         }
       ],
       "admin": {
@@ -653,6 +675,9 @@
             "kind": "original_extension"
           },
           "5d3f766c-f61f-570e-8e38-b814e2618916-u02": {
+            "kind": "original_extension"
+          },
+          "5d3f766c-f61f-570e-8e38-b814e2618916-u03": {
             "kind": "original_extension"
           }
         }
@@ -678,14 +703,14 @@
         {
           "id": "a509e00a-f8b7-5d2a-86bf-6f045e7230c6-u01",
           "speaker_id": "b",
-          "ja": "近くにいた人が取ったのでしょうか。",
-          "vi": "Có phải người đứng gần đã lấy ví không ạ?"
+          "ja": "近くにいた人が取ったと聞きましたが、取るところを見ましたか。",
+          "vi": "Tôi nghe có người nói người đứng gần đã lấy. Chị có tận mắt thấy lúc ví bị lấy không ạ?"
         },
         {
           "id": "a509e00a-f8b7-5d2a-86bf-6f045e7230c6-u02",
           "speaker_id": "a",
-          "ja": "分かりません。私は誰が取ったか見ていません。",
-          "vi": "Tôi không biết. Tôi không thấy ai lấy ví cả."
+          "ja": "それは横にいた人の話です。私は、財布を取るところは見ていません。",
+          "vi": "Đó là lời người đi cạnh tôi kể. Tôi không tận mắt thấy lúc ví bị lấy ạ."
         },
         {
           "id": "a509e00a-f8b7-5d2a-86bf-6f045e7230c6-u03",
@@ -732,8 +757,8 @@
         {
           "id": "bcdc749a-d2ce-5028-b50c-ca0fb9bb2d8a-u01",
           "speaker_id": "a",
-          "ja": "開けるところを見たのですね。駅員さんに、見たことを直接話してもらえますか。",
-          "vi": "Anh đã thấy người đó mở túi phải không? Anh kể trực tiếp điều đã thấy với nhân viên ga được không ạ?"
+          "ja": "かばんのポケットを開けるところを見たんですね。見たことを駅員さんに直接話してもらえますか。",
+          "vi": "Anh thấy có người mở ngăn túi của tôi đúng không ạ? Anh kể trực tiếp điều mình thấy cho nhân viên ga được không?"
         },
         {
           "id": "bcdc749a-d2ce-5028-b50c-ca0fb9bb2d8a-u02",
@@ -760,7 +785,7 @@
     {
       "situation_uid": "c630ac36-7c54-5d1f-af29-f55d68806055",
       "event_id": "E04",
-      "context_vi": "Nhân viên ga đã tìm được ví và giao lại bạn, nhưng tiền không còn đủ. Bạn nói chính xác thẻ còn và số tiền chỉ nhớ gần đúng.",
+      "context_vi": "Nhân viên ga đã tìm thấy và trả lại ví. Các thẻ vẫn còn nhưng không thấy tiền mặt. Bạn chỉ nhớ gần đúng số tiền đã để trong ví.",
       "speakers": [
         {
           "id": "a",
@@ -777,8 +802,8 @@
         {
           "id": "c630ac36-7c54-5d1f-af29-f55d68806055-u01",
           "speaker_id": "a",
-          "ja": "財布とカードは戻りました。でも現金がありません。金額は三千円くらいだったと思います。",
-          "vi": "Tôi đã nhận lại ví và các thẻ, nhưng tiền mặt không còn. Tôi nhớ khoảng 3.000 yên, chưa chắc số chính xác."
+          "ja": "財布は戻りました。カードも入っています。でも、現金がありません。三千円くらい入っていたと思います。",
+          "vi": "Tôi đã nhận lại ví. Thẻ vẫn còn trong đó, nhưng tiền mặt không còn. Tôi nhớ trong ví có khoảng 3.000 yên ạ."
         },
         {
           "id": "c630ac36-7c54-5d1f-af29-f55d68806055-u02",
@@ -805,7 +830,7 @@
     {
       "situation_uid": "6f4ed42f-b184-527c-b265-4cad09eb6294",
       "event_id": "E05",
-      "context_vi": "Khi báo chiếc túi bị giật, bạn đưa ảnh trên điện thoại cho cảnh sát và nêu đường khâu đặc biệt trên quai túi.",
+      "context_vi": "Bạn mất cả túi lẫn điện thoại nên đem một tấm ảnh cũ đã in ở nhà. Khi trình báo, bạn chỉ đường khâu hình sao trên quai túi.",
       "speakers": [
         {
           "id": "a",
@@ -822,8 +847,8 @@
         {
           "id": "6f4ed42f-b184-527c-b265-4cad09eb6294-u01",
           "speaker_id": "a",
-          "ja": "取られたかばんの写真があります。持ち手に白い糸で星が縫ってあります。",
-          "vi": "Tôi có ảnh chiếc túi bị lấy. Trên quai có ngôi sao khâu bằng chỉ trắng."
+          "ja": "これが取られたかばんの写真です。持ち手に白い糸で縫った星の印があります。",
+          "vi": "Đây là ảnh chiếc túi bị giật. Trên quai có hình ngôi sao khâu bằng chỉ trắng ạ."
         },
         {
           "id": "6f4ed42f-b184-527c-b265-4cad09eb6294-u02",
@@ -913,7 +938,7 @@
         },
         {
           "id": "b",
-          "role_vi": "người chứng kiến",
+          "role_vi": "cảnh sát tiếp nhận",
           "gender": "male"
         }
       ],
@@ -921,20 +946,20 @@
         {
           "id": "c35126d2-ca3f-5aa0-bc73-7c86c901eaa7-u01",
           "speaker_id": "b",
-          "ja": "私は三時十分ごろだと思います。あなたは三時と言いましたね。",
-          "vi": "Tôi nhớ khoảng 3 giờ 10. Lúc nãy bạn nói 3 giờ phải không?"
+          "ja": "見た人は午後三時十分ごろだと言っています。三時ごろとおっしゃいましたね。",
+          "vi": "Người chứng kiến nói khoảng 3 giờ 10 chiều. Chị nhớ là khoảng 3 giờ, đúng không ạ?"
         },
         {
           "id": "c35126d2-ca3f-5aa0-bc73-7c86c901eaa7-u02",
           "speaker_id": "a",
-          "ja": "店を出たのが三時ごろです。取られた時間は、はっきり分かりません。",
-          "vi": "Tôi rời cửa hàng khoảng 3 giờ. Tôi không biết chính xác lúc túi bị giật."
+          "ja": "店を出たのが午後三時ごろです。かばんを取られた時間は、はっきり分かりません。",
+          "vi": "Tôi ra khỏi cửa hàng khoảng 3 giờ chiều. Còn lúc bị giật túi thì tôi không biết chính xác ạ."
         },
         {
           "id": "c35126d2-ca3f-5aa0-bc73-7c86c901eaa7-u03",
           "speaker_id": "b",
-          "ja": "分かりました。私が見た時間も別に伝えます。",
-          "vi": "Tôi hiểu. Tôi sẽ báo riêng mốc giờ tôi chứng kiến."
+          "ja": "分かりました。お店を出た時刻と、目撃した方の話を分けて書きます。",
+          "vi": "Tôi hiểu. Tôi sẽ ghi giờ chị ra khỏi cửa hàng và lời người chứng kiến thành hai mốc riêng."
         }
       ],
       "admin": {
@@ -975,8 +1000,8 @@
         {
           "id": "bd6acb9a-d8a5-5539-86c3-2dd11051c885-u01",
           "speaker_id": "a",
-          "ja": "さくら商店の前でかばんを取られたリンです。かばんに家の鍵もありました。追加できますか。",
-          "vi": "Tôi là Linh, đã báo túi bị giật trước cửa hàng Sakura. Trong túi còn có chìa khóa nhà. Tôi bổ sung được không ạ?"
+          "ja": "さくら商店の前でかばんを取られた、リンです。家の鍵もかばんに入っていたことを思い出しました。追加してもらえますか。",
+          "vi": "Tôi là Linh, người báo bị giật túi trước cửa hàng Sakura. Tôi vừa nhớ trong túi còn có chìa khóa nhà. Anh ghi bổ sung giúp tôi được không ạ?"
         },
         {
           "id": "bd6acb9a-d8a5-5539-86c3-2dd11051c885-u02",

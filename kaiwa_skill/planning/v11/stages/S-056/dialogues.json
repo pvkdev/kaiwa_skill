@@ -26,10 +26,24 @@
     },
     "bank": {
       "kind": "web",
-      "title": "三菱UFJ銀行 紛失カードの利用停止と再開",
-      "url": "https://faq01.bk.mufg.jp/faq/show/17",
-      "accessed": "2026-11-17",
-      "use_vi": "Thẻ được khóa sau báo mất; tìm lại vẫn phải làm thủ tục mở lại tại đơn vị phát hành."
+      "title": "三菱ＵＦＪ銀行 キャッシュカードの紛失を連絡した後、再発行前に見つかった場合",
+      "url": "https://faq01.bk.mufg.jp/faq/show/17?site_domain=default",
+      "accessed": "2026-11-18",
+      "use_vi": "Với thẻ đủ điều kiện trước khi cấp lại, phải làm thủ tục để dùng lại; cách thực hiện tùy thẻ và kênh. Cảnh gọi hỏi chứ không ngụ ý mở qua điện thoại."
+    },
+    "bank_stop": {
+      "kind": "web",
+      "title": "三菱ＵＦＪ銀行 キャッシュカードの紛失・盗難",
+      "url": "https://www.bk.mufg.jp/tsukau/tetsuduki/card/loss/index.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Ví dụ ngân hàng có số chính thức để báo mất và ngừng thẻ; xác minh theo kênh của ngân hàng, không quy định tên/ngày sinh là đủ."
+    },
+    "pickup": {
+      "kind": "web",
+      "title": "警視庁 落とし物をした方",
+      "url": "https://www.keishicho.metro.tokyo.lg.jp/sodan/otoshimono/lost_found.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Khi nhận thông báo, xác nhận nơi nhận, giấy cần mang và giờ theo đầu mối được chỉ."
     }
   },
   "dialogues": [
@@ -114,8 +128,8 @@
         {
           "id": "136b713d-c44a-53ed-a33f-656e985027a2-u02",
           "speaker_id": "a",
-          "ja": "現金と銀行のカードは入っていました。保険証も入っていたかもしれません。",
-          "vi": "Chắc chắn có tiền mặt và thẻ ngân hàng. Có thể còn có thẻ bảo hiểm nữa, nhưng tôi chưa chắc."
+          "ja": "現金とキャッシュカードは入っていました。診察券も入っていたかもしれません。",
+          "vi": "Chắc chắn có tiền mặt và thẻ ATM. Hình như còn có thẻ khám bệnh nữa ạ."
         },
         {
           "id": "136b713d-c44a-53ed-a33f-656e985027a2-u03",
@@ -163,14 +177,14 @@
         {
           "id": "18701e39-1c9f-59d1-8aa7-615907a15c6d-u01",
           "speaker_id": "a",
-          "ja": "財布を落とした場所は分かりません。あおい駅で電車を降りた時はありました。家に着く前になくなりました。",
-          "vi": "Tôi không biết ví rơi ở đâu. Lúc xuống tàu ở ga Aoi tôi vẫn còn ví; trước khi về đến nhà thì không thấy nữa."
+          "ja": "あおい駅で降りたときは持っていました。家に着く前に、ないことに気づきました。駅で落としたか、帰る途中かは分かりません。",
+          "vi": "Lúc xuống tàu ở ga Aoi tôi vẫn cầm ví. Tôi phát hiện mất trước khi về tới nhà. Tôi không biết rơi ở ga hay trên đường về ạ."
         },
         {
           "id": "18701e39-1c9f-59d1-8aa7-615907a15c6d-u02",
           "speaker_id": "b",
-          "ja": "駅から家までの間ですね。そのように記録します。",
-          "vi": "Vậy là trên quãng đường từ ga về nhà. Tôi sẽ ghi như thế."
+          "ja": "駅の中か、駅から家までの間ですね。そう書いておきます。",
+          "vi": "Có thể trong ga hoặc trên đường từ ga về nhà. Tôi sẽ ghi như vậy ạ."
         }
       ],
       "admin": {
@@ -264,8 +278,8 @@
         {
           "id": "66a4faee-228d-56ba-af47-95790ee514ea-u01",
           "speaker_id": "a",
-          "ja": "似た財布が届いたら、どうやって連絡をもらえますか。",
-          "vi": "Nếu có chiếc ví giống mô tả được giao đến, bên mình liên hệ tôi bằng cách nào ạ?"
+          "ja": "似た財布が届いたら、電話で知らせていただけますか。",
+          "vi": "Nếu có ai nộp chiếc ví giống vậy, anh gọi báo cho tôi được không ạ?"
         },
         {
           "id": "66a4faee-228d-56ba-af47-95790ee514ea-u02",
@@ -276,8 +290,8 @@
         {
           "id": "66a4faee-228d-56ba-af47-95790ee514ea-u03",
           "speaker_id": "a",
-          "ja": "この電話番号で出られます。",
-          "vi": "Tôi có thể nghe máy ở số này."
+          "ja": "はい、その番号なら出られます。",
+          "vi": "Vâng, tôi nghe được ở số đó ạ."
         }
       ],
       "admin": {
@@ -331,8 +345,8 @@
         {
           "id": "7af7b411-be9b-59b0-aac1-1ca45b50d55c-u03",
           "speaker_id": "b",
-          "ja": "明日以降、この紙の代表番号に届出番号を伝えてください。",
-          "vi": "Từ ngày mai, bạn gọi số tổng đài trên tờ này và đọc mã hồ sơ."
+          "ja": "明日以降、この控えにある電話番号にかけて、届出番号を伝えてください。",
+          "vi": "Từ ngày mai, chị gọi số điện thoại ghi trên bản giữ này và đọc mã báo mất nhé."
         }
       ],
       "admin": {
@@ -435,8 +449,8 @@
         {
           "id": "949414a7-76b2-5ca4-94ef-441a1201b731-u02",
           "speaker_id": "b",
-          "ja": "はい。小さい写真を追加します。",
-          "vi": "Được. Tôi sẽ bổ sung tấm ảnh nhỏ."
+          "ja": "はい。財布の中に小さい写真があると書き足します。",
+          "vi": "Vâng, tôi sẽ ghi thêm vào mô tả là trong ví có một tấm ảnh nhỏ."
         }
       ],
       "admin": {
@@ -475,8 +489,8 @@
         {
           "id": "a006449d-402f-5906-b7f5-0873ff82ec5e-u01",
           "speaker_id": "a",
-          "ja": "財布と銀行のカードをなくしました。カードを止めたいです。",
-          "vi": "Tôi bị mất ví và thẻ ngân hàng. Tôi muốn khóa thẻ."
+          "ja": "キャッシュカードが入った財布をなくしました。カードを止めてください。",
+          "vi": "Tôi làm mất ví có thẻ ATM trong đó. Nhờ khóa thẻ giúp tôi ạ."
         },
         {
           "id": "a006449d-402f-5906-b7f5-0873ff82ec5e-u02",
@@ -494,7 +508,8 @@
       "admin": {
         "source_refs": [
           "main",
-          "bank"
+          "bank",
+          "bank_stop"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -513,7 +528,7 @@
     {
       "situation_uid": "e8b2b988-a3b8-5430-b0fb-cd54a6011f64",
       "event_id": "E03",
-      "context_vi": "Bạn đang gọi đúng số hỗ trợ chính thức của ngân hàng. Nhân viên hỏi thông tin xác minh; bạn chỉ cung cấp theo quy trình, không đọc mã PIN.",
+      "context_vi": "Bạn gọi đúng số báo mất thẻ trên trang ngân hàng. Nhân viên bắt đầu xác minh bằng cách hỏi tên và ngày sinh.",
       "speakers": [
         {
           "id": "a",
@@ -530,8 +545,8 @@
         {
           "id": "e8b2b988-a3b8-5430-b0fb-cd54a6011f64-u01",
           "speaker_id": "b",
-          "ja": "お名前と生年月日をお願いします。暗証番号は聞きません。",
-          "vi": "Xin cho biết tên và ngày sinh. Chúng tôi không hỏi mã PIN."
+          "ja": "ご本人の確認をします。まず、お名前と生年月日をお願いします。",
+          "vi": "Tôi sẽ xác minh danh tính. Trước tiên, cho tôi xin họ tên và ngày sinh ạ."
         },
         {
           "id": "e8b2b988-a3b8-5430-b0fb-cd54a6011f64-u02",
@@ -542,14 +557,15 @@
         {
           "id": "e8b2b988-a3b8-5430-b0fb-cd54a6011f64-u03",
           "speaker_id": "b",
-          "ja": "確認できました。カードの利用を止めました。",
-          "vi": "Đã xác minh xong. Tôi đã ngừng sử dụng thẻ."
+          "ja": "ありがとうございます。ほかの登録内容も確認します。",
+          "vi": "Cảm ơn chị. Tôi sẽ kiểm thêm một số thông tin đã đăng ký ạ."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "bank"
+          "bank",
+          "bank_stop"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -585,8 +601,8 @@
         {
           "id": "2a04fb0d-f7aa-5ba2-b31c-ab59e963aec0-u01",
           "speaker_id": "a",
-          "ja": "すみません。カードはもう止まりましたか。まだ手続き中ですか。",
-          "vi": "Xin lỗi, thẻ đã được khóa chưa, hay vẫn đang xử lý ạ?"
+          "ja": "すみません。カードはもう使えなくなりましたか。手続きはまだですか。",
+          "vi": "Xin lỗi, thẻ đã bị khóa rồi hay vẫn đang xử lý ạ?"
         },
         {
           "id": "2a04fb0d-f7aa-5ba2-b31c-ab59e963aec0-u02",
@@ -597,8 +613,8 @@
         {
           "id": "2a04fb0d-f7aa-5ba2-b31c-ab59e963aec0-u03",
           "speaker_id": "a",
-          "ja": "今は使えないのですね。",
-          "vi": "Vậy hiện thẻ không dùng được nữa, đúng không ạ?"
+          "ja": "今はそのカードを使えないんですね。",
+          "vi": "Vậy hiện giờ không dùng được thẻ đó, đúng không ạ?"
         }
       ],
       "admin": {
@@ -623,7 +639,7 @@
     {
       "situation_uid": "ed4a6da4-ab18-5eb8-a6d5-bc617b3d2cf3",
       "event_id": "E03",
-      "context_vi": "Sau khi báo mất và ngừng thẻ, bạn tìm lại được ví. Bạn gọi lại ngân hàng hỏi thẻ cũ có dùng được ngay không.",
+      "context_vi": "Bạn đã báo mất và ngân hàng xác nhận thẻ ATM bị khóa. Bạn tìm lại ví cùng thẻ trước khi xin cấp lại. Bạn gọi ngân hàng hỏi cách dùng lại.",
       "speakers": [
         {
           "id": "a",
@@ -640,20 +656,26 @@
         {
           "id": "ed4a6da4-ab18-5eb8-a6d5-bc617b3d2cf3-u01",
           "speaker_id": "a",
-          "ja": "なくした財布が見つかりました。止めたカードはもう使えますか。",
-          "vi": "Tôi đã tìm lại được ví. Thẻ đã khóa có dùng ngay được không ạ?"
+          "ja": "なくしたキャッシュカードが見つかりました。まだ再発行は頼んでいません。そのまま使えますか。",
+          "vi": "Tôi tìm lại được thẻ ATM đã mất. Tôi chưa xin cấp lại. Tôi dùng luôn thẻ này được không ạ?"
         },
         {
           "id": "ed4a6da4-ab18-5eb8-a6d5-bc617b3d2cf3-u02",
           "speaker_id": "b",
-          "ja": "まだ使えません。再開の手続きが必要です。今からご案内します。",
-          "vi": "Chưa dùng được. Bạn cần làm thủ tục mở lại. Tôi sẽ hướng dẫn ngay."
+          "ja": "まだ使えません。利用を再開する手続きが必要です。",
+          "vi": "Thẻ chưa dùng được ạ. Chị cần làm thủ tục mở lại."
         },
         {
           "id": "ed4a6da4-ab18-5eb8-a6d5-bc617b3d2cf3-u03",
           "speaker_id": "a",
-          "ja": "分かりました。手続きをお願いします。",
-          "vi": "Tôi hiểu. Xin hướng dẫn thủ tục."
+          "ja": "どこで手続きすればいいですか。",
+          "vi": "Tôi làm thủ tục ở đâu ạ?"
+        },
+        {
+          "id": "ed4a6da4-ab18-5eb8-a6d5-bc617b3d2cf3-u04",
+          "speaker_id": "b",
+          "ja": "このカードなら、銀行の窓口でご相談いただけます。",
+          "vi": "Với thẻ này, chị có thể hỏi tại quầy ngân hàng ạ."
         }
       ],
       "admin": {
@@ -671,6 +693,9 @@
           },
           "ed4a6da4-ab18-5eb8-a6d5-bc617b3d2cf3-u03": {
             "kind": "original_extension"
+          },
+          "ed4a6da4-ab18-5eb8-a6d5-bc617b3d2cf3-u04": {
+            "kind": "original_extension"
           }
         }
       }
@@ -678,7 +703,7 @@
     {
       "situation_uid": "f8aed76c-6b85-5277-ba39-6fae109505b5",
       "event_id": "E04",
-      "context_vi": "Bạn nhặt được một chiếc ô ở ghế trước ga và mang tới chốt cảnh sát để giao lại.",
+      "context_vi": "Bạn nhặt được một chiếc ô ở ghế trên quảng trường công cộng ngoài cửa bắc ga Aoi và mang tới chốt cảnh sát.",
       "speakers": [
         {
           "id": "a",
@@ -695,8 +720,8 @@
         {
           "id": "f8aed76c-6b85-5277-ba39-6fae109505b5-u01",
           "speaker_id": "a",
-          "ja": "この傘を拾いました。あおい駅の北口のベンチです。",
-          "vi": "Tôi nhặt được chiếc ô này ở ghế gần cửa bắc ga Aoi."
+          "ja": "この傘を拾いました。あおい駅の北口を出たところの、広場のベンチです。",
+          "vi": "Tôi nhặt được chiếc ô này ở ghế trên quảng trường bên ngoài cửa bắc ga Aoi ạ."
         },
         {
           "id": "f8aed76c-6b85-5277-ba39-6fae109505b5-u02",
@@ -811,8 +836,8 @@
         {
           "id": "6447d9eb-4ff8-5727-aaa4-1ae2f5e78a2f-u02",
           "speaker_id": "b",
-          "ja": "はい。この受付票と、本人確認ができる書類を持って来てください。",
-          "vi": "Được. Bạn mang phiếu tiếp nhận này và giấy tờ xác minh danh tính nhé."
+          "ja": "はい。お知らせの紙と、本人確認ができる書類を持って来てください。",
+          "vi": "Được ạ. Chị mang tờ thông báo và giấy tờ xác minh danh tính nhé."
         },
         {
           "id": "6447d9eb-4ff8-5727-aaa4-1ae2f5e78a2f-u03",
@@ -824,7 +849,8 @@
       "admin": {
         "source_refs": [
           "main",
-          "npa"
+          "npa",
+          "pickup"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -866,14 +892,14 @@
         {
           "id": "46e300fd-b099-54a0-9c36-e75bf802a50c-u02",
           "speaker_id": "a",
-          "ja": "傘の引き渡しはこれで終わりですね。ありがとうございます。私の財布も道でなくしたので、別に届けたいです。",
-          "vi": "Vậy tôi đã giao xong chiếc ô rồi phải không ạ? Cảm ơn anh. Tôi cũng mất ví, nghĩ là rơi ngoài đường, nên muốn báo riêng."
+          "ja": "傘はこれで大丈夫ですね。ありがとうございます。それと、道で財布を落としたかもしれません。届け出てもいいですか。",
+          "vi": "Vậy việc giao ô xong rồi đúng không ạ? Cảm ơn anh. Tôi còn một việc: có thể tôi đánh rơi ví ngoài đường. Tôi báo mất được không ạ?"
         },
         {
           "id": "46e300fd-b099-54a0-9c36-e75bf802a50c-u03",
           "speaker_id": "b",
-          "ja": "はい、傘は終わりました。財布は別の届出として伺います。",
-          "vi": "Vâng, việc giao ô đã xong. Tôi sẽ tiếp nhận vụ ví thành hồ sơ riêng."
+          "ja": "はい、傘はお預かりしました。財布のことは別に伺います。",
+          "vi": "Vâng, chúng tôi đã nhận ô. Về chiếc ví, tôi sẽ tiếp nhận riêng ạ."
         }
       ],
       "admin": {
@@ -907,7 +933,7 @@
         },
         {
           "id": "b",
-          "role_vi": "cảnh sát koban và nhân viên ga",
+          "role_vi": "cảnh sát koban",
           "gender": "male"
         }
       ],
@@ -915,14 +941,14 @@
         {
           "id": "c5edb6c6-9171-5915-8429-18469bcfc867-u01",
           "speaker_id": "a",
-          "ja": "財布は道でなくしたと思いましたが、あおい駅の窓口で切符を買った時はありました。黒くて、前に赤い星があります。",
-          "vi": "Tôi tưởng ví rơi ngoài đường, nhưng lúc mua vé ở quầy ga Aoi tôi vẫn còn cầm ví. Ví màu đen, mặt trước có ngôi sao đỏ."
+          "ja": "最後に財布を使ったのは、あおい駅の窓口で切符を買ったときです。駅で落としたかもしれません。黒い財布で、表に赤い星があります。",
+          "vi": "Lần cuối tôi dùng ví là lúc mua vé ở quầy ga Aoi. Có thể tôi đánh rơi ở ga. Ví đen, mặt trước có ngôi sao đỏ ạ."
         },
         {
           "id": "c5edb6c6-9171-5915-8429-18469bcfc867-u02",
           "speaker_id": "b",
-          "ja": "最後に見た場所を駅の窓口に直します。警察の届出番号は一二三です。駅にも聞いてください。",
-          "vi": "Tôi sẽ sửa nơi cuối thấy ví thành quầy ga. Mã hồ sơ ở cảnh sát là 123. Bạn cũng hỏi quầy ga nhé."
+          "ja": "最後に財布を見たのは切符売り場ですね。届出番号は一二三です。駅にも聞いてみてください。",
+          "vi": "Lần cuối chị thấy ví là ở quầy vé ạ. Mã báo mất là 123. Chị hỏi cả bên nhà ga nhé."
         }
       ],
       "admin": {
@@ -1016,14 +1042,14 @@
         {
           "id": "6c0b9a4c-3fc0-5232-a863-38560efeb89a-u01",
           "speaker_id": "a",
-          "ja": "財布は駅で見つかりました。でも銀行のカードはありません。カードはまだなくしたままです。",
-          "vi": "Ví đã được tìm thấy ở ga, nhưng không có thẻ ngân hàng. Thẻ vẫn đang mất."
+          "ja": "駅で財布を受け取りました。でも、中にキャッシュカードはありませんでした。カードはまだ見つかっていません。",
+          "vi": "Tôi đã nhận lại ví ở ga, nhưng trong ví không có thẻ ATM. Tôi vẫn chưa tìm thấy thẻ ạ."
         },
         {
           "id": "6c0b9a4c-3fc0-5232-a863-38560efeb89a-u02",
           "speaker_id": "b",
-          "ja": "カードがないことを記録します。発行元にも連絡を続けてください。",
-          "vi": "Tôi sẽ ghi là thẻ chưa có. Bạn tiếp tục liên hệ đơn vị phát hành nhé."
+          "ja": "カードはまだ見つかっていないと記録します。カードのことは銀行にも連絡してください。",
+          "vi": "Tôi sẽ ghi là chưa tìm thấy thẻ. Chị cũng liên hệ ngân hàng về thẻ nhé."
         },
         {
           "id": "6c0b9a4c-3fc0-5232-a863-38560efeb89a-u03",
@@ -1035,7 +1061,8 @@
       "admin": {
         "source_refs": [
           "main",
-          "npa"
+          "npa",
+          "bank_stop"
         ],
         "specialty_item_ids": [],
         "turn_origins": {

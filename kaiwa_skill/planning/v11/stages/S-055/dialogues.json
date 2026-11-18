@@ -16,13 +16,20 @@
       "url": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
       "accessed": "2026-11-17",
       "use_vi": "119 dành cho báo cháy/cấp cứu, hỏi vị trí và mốc; người gọi nêu quan sát và cập nhật vị trí khi thay đổi."
+    },
+    "safety": {
+      "kind": "web",
+      "title": "消防庁 消防の動き 119番通報と安全確保",
+      "url": "https://www.fdma.go.jp/publication/ugoki/items/rei_0611_25.pdf",
+      "accessed": "2026-11-18",
+      "use_vi": "Ra chỗ an toàn khi khói/lửa đến gần rồi báo 119. Hỏi lại lối theo thông tin của nhân viên tại chỗ; cảnh không đưa lối dùng chung."
     }
   },
   "dialogues": [
     {
       "situation_uid": "d107a576-c456-5f3b-aa2c-7d19d7275aba",
       "event_id": "E01",
-      "context_vi": "Trong tòa あおい hư cấu tại Sakura-machi 3-12, bạn thấy khói ở tầng hai và gọi 119 ngay.",
+      "context_vi": "Bạn thấy khói ở tầng hai tòa Aoi tại Sakura-machi 3-12. Bạn rời vùng có khói và gọi 119 từ chỗ an toàn.",
       "speakers": [
         {
           "id": "a",
@@ -45,20 +52,21 @@
         {
           "id": "d107a576-c456-5f3b-aa2c-7d19d7275aba-u02",
           "speaker_id": "a",
-          "ja": "火事かもしれません。さくら町三の十二、あおいビル二階に煙が見えます。",
-          "vi": "Có thể là cháy. Tôi thấy khói ở tầng hai tòa Aoi, Sakura-machi 3-12."
+          "ja": "火事かもしれません。さくら町三の十二、あおいビルの二階で煙を見ました。",
+          "vi": "Có thể là cháy. Tôi thấy khói ở tầng hai tòa Aoi, Sakura-machi 3-12 ạ."
         },
         {
           "id": "d107a576-c456-5f3b-aa2c-7d19d7275aba-u03",
           "speaker_id": "b",
-          "ja": "あおいビル二階ですね。",
-          "vi": "Tầng hai tòa Aoi, đúng không ạ."
+          "ja": "さくら町三の十二、あおいビルの二階ですね。",
+          "vi": "Tầng hai tòa Aoi, Sakura-machi 3-12, đúng không ạ?"
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -242,7 +250,7 @@
     {
       "situation_uid": "eb841996-d2d2-5872-b0c0-541ad86159f8",
       "event_id": "E02",
-      "context_vi": "Người tiếp nhận 119 vừa nêu lối thoát nhưng bạn nghe không rõ. Bạn hỏi lại lối nào an toàn theo tình hình họ vừa nhận.",
+      "context_vi": "Bạn đang ở chỗ chưa có khói. Qua điện thoại, tổng đài hỏi về một lối ra nhưng bạn chưa nghe hết. Bạn xin nhắc lại.",
       "speakers": [
         {
           "id": "a",
@@ -259,26 +267,27 @@
         {
           "id": "eb841996-d2d2-5872-b0c0-541ad86159f8-u01",
           "speaker_id": "a",
-          "ja": "すみません、出口が聞こえませんでした。どの出口ですか。",
-          "vi": "Xin lỗi, tôi không nghe rõ lối ra. Là cửa nào ạ?"
+          "ja": "すみません。どの出口か、もう一度言ってください。",
+          "vi": "Xin lỗi, anh nhắc lại là cửa nào giúp tôi với ạ."
         },
         {
           "id": "eb841996-d2d2-5872-b0c0-541ad86159f8-u02",
           "speaker_id": "b",
-          "ja": "今、煙のない東側に出られますか。無理なら場所を教えてください。",
-          "vi": "Hiện bạn có ra được cửa phía đông không có khói không? Nếu không, hãy báo vị trí."
+          "ja": "東側の出口です。今いるところから、煙が見えますか。",
+          "vi": "Cửa phía đông ạ. Từ chỗ chị đang đứng có thấy khói ở đó không?"
         },
         {
           "id": "eb841996-d2d2-5872-b0c0-541ad86159f8-u03",
           "speaker_id": "a",
-          "ja": "東側を確認します。",
-          "vi": "Tôi sẽ nhìn cửa phía đông."
+          "ja": "ここからはよく見えません。",
+          "vi": "Từ đây tôi không nhìn rõ ạ."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -320,14 +329,15 @@
         {
           "id": "da8d579c-299a-5e0f-8fae-37faaf357170-u02",
           "speaker_id": "b",
-          "ja": "北側の広場ですね。そこから今の煙の様子を教えてください。",
-          "vi": "Sân phía bắc. Từ chỗ đó, bạn cho biết khói hiện thế nào."
+          "ja": "北側の広場ですね。安全な場所から、見える範囲で教えてください。",
+          "vi": "Sân phía bắc ạ. Từ chỗ an toàn, chị cho biết những gì còn nhìn thấy được."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -343,7 +353,7 @@
     {
       "situation_uid": "65cd2ce4-0e50-553f-977e-eb94cae91355",
       "event_id": "E02",
-      "context_vi": "Cửa phía đông mà bạn vừa được hỏi tới nay bị khói chặn. Bạn lập tức báo 119 thay vì tự chọn đường qua khói.",
+      "context_vi": "Bạn vẫn đang ở vị trí chưa có khói. Một nhân viên tòa nhà báo cửa đông bị khói chặn. Bạn nhắc thông tin mới và nói ngay mình ở đâu cho tổng đài 119.",
       "speakers": [
         {
           "id": "a",
@@ -360,20 +370,21 @@
         {
           "id": "65cd2ce4-0e50-553f-977e-eb94cae91355-u01",
           "speaker_id": "a",
-          "ja": "東側の出口は煙で通れません。今は階段の前にいます。",
-          "vi": "Cửa phía đông có khói, tôi không qua được. Giờ tôi ở trước cầu thang."
+          "ja": "東側の出口は煙で通れないそうです。私は一階の階段の前にいます。",
+          "vi": "Nhân viên vừa báo cửa phía đông có khói, không qua được. Tôi đang ở trước cầu thang tầng một ạ."
         },
         {
           "id": "65cd2ce4-0e50-553f-977e-eb94cae91355-u02",
           "speaker_id": "b",
-          "ja": "分かりました。そこから動ける安全な場所を確認します。煙の中に入らないでください。",
-          "vi": "Tôi hiểu. Ta sẽ xác định chỗ an toàn bạn có thể đến. Đừng đi vào vùng có khói."
+          "ja": "一階の階段の前ですね。煙の中には入らないでください。今いる場所を消防隊に伝えます。",
+          "vi": "Trước cầu thang tầng một ạ. Chị đừng đi vào chỗ có khói. Tôi sẽ báo đội cứu hỏa chỗ chị đang đứng."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -389,7 +400,7 @@
     {
       "situation_uid": "ecb6a686-4204-5ada-904c-8e5d07ea74db",
       "event_id": "E02",
-      "context_vi": "Bạn không nghe rõ lối 119 vừa hướng dẫn và nhờ người ở gần giúp chỉ đúng đường không có khói, không tự đoán.",
+      "context_vi": "Bạn chưa rõ từ chỗ đang đứng có thể ra bằng cửa phía đông không. Bạn nhờ người ở gần cùng nghe tổng đài và xác nhận lối.",
       "speakers": [
         {
           "id": "a",
@@ -406,8 +417,8 @@
         {
           "id": "ecb6a686-4204-5ada-904c-8e5d07ea74db-u01",
           "speaker_id": "a",
-          "ja": "119の案内が聞き取れませんでした。安全な出口を一緒に確認してもらえますか。",
-          "vi": "Tôi không nghe rõ hướng dẫn của 119. Anh cùng tôi xác nhận lối ra an toàn được không?"
+          "ja": "東側の出口へ行けるか、よく分かりません。百十九番の人の話を一緒に聞いてもらえますか。",
+          "vi": "Tôi chưa biết có ra bằng cửa đông được không. Anh nghe hướng dẫn của tổng đài 119 cùng tôi được không ạ?"
         },
         {
           "id": "ecb6a686-4204-5ada-904c-8e5d07ea74db-u02",
@@ -435,7 +446,7 @@
     {
       "situation_uid": "2c8bb478-6f5f-566a-a272-483ed6b39fb1",
       "event_id": "E03",
-      "context_vi": "Đã ra chỗ an toàn, bạn gặp quản lý tòa Aoi và báo những gì thấy cùng việc đã gọi 119.",
+      "context_vi": "Đã ra nơi an toàn, bạn gọi cho quản lý tòa Aoi để báo khói ở tầng hai và xác nhận đã gọi 119.",
       "speakers": [
         {
           "id": "a",
@@ -458,8 +469,8 @@
         {
           "id": "2c8bb478-6f5f-566a-a272-483ed6b39fb1-u02",
           "speaker_id": "b",
-          "ja": "分かりました。建物の人を確認します。",
-          "vi": "Tôi hiểu. Tôi sẽ kiểm tra người trong tòa."
+          "ja": "分かりました。北側の広場に行って、避難した人を確認します。",
+          "vi": "Tôi hiểu rồi. Tôi sẽ ra sân phía bắc để kiểm những người đã ra ngoài."
         }
       ],
       "admin": {
@@ -553,8 +564,8 @@
         {
           "id": "59d5bc8d-2642-5b10-b9ec-f532bcc2caf1-u01",
           "speaker_id": "a",
-          "ja": "一人とまだ連絡が取れません。中にいるかは分かりません。",
-          "vi": "Tôi vẫn chưa liên lạc được với một người. Tôi không biết họ có ở trong không."
+          "ja": "同僚の一人と、まだ連絡が取れません。建物の中にいるかは分かりません。",
+          "vi": "Tôi vẫn chưa liên lạc được với một đồng nghiệp. Tôi không biết người đó có còn trong tòa nhà không ạ."
         },
         {
           "id": "59d5bc8d-2642-5b10-b9ec-f532bcc2caf1-u02",
@@ -582,7 +593,7 @@
     {
       "situation_uid": "f0bf5222-dd89-53c8-ae10-f5457e71dbb3",
       "event_id": "E03",
-      "context_vi": "Sau khi quản lý tòa tới điểm an toàn, bạn báo đã gọi 119, khói tầng hai và chỗ mình đang đứng.",
+      "context_vi": "Quản lý tòa Aoi vừa tới sân phía bắc. Bạn nhận ra anh và nói mình là người đã gọi báo khói, để hai bên thống nhất nơi tiếp tục báo tin.",
       "speakers": [
         {
           "id": "a",
@@ -599,14 +610,14 @@
         {
           "id": "f0bf5222-dd89-53c8-ae10-f5457e71dbb3-u01",
           "speaker_id": "a",
-          "ja": "管理の方ですか。私は北側の広場にいます。119には二階の煙を伝えました。",
-          "vi": "Anh là người quản lý phải không ạ? Tôi đang ở sân phía bắc. Tôi đã báo 119 về khói ở tầng hai."
+          "ja": "さっき電話したリンです。私が二階の煙を百十九番に伝えました。ここにいます。",
+          "vi": "Tôi là Linh, người vừa gọi anh. Tôi là người đã báo 119 về khói tầng hai. Tôi đang đợi ở đây ạ."
         },
         {
           "id": "f0bf5222-dd89-53c8-ae10-f5457e71dbb3-u02",
           "speaker_id": "b",
-          "ja": "はい、管理者です。情報を引き継ぎます。",
-          "vi": "Đúng, tôi là quản lý. Tôi sẽ nhận bàn giao thông tin."
+          "ja": "ここで会えましたね。消防隊が来たら、私からもお伝えします。",
+          "vi": "Vậy tôi gặp được chị rồi. Khi đội cứu hỏa đến, tôi cũng sẽ báo lại với họ."
         }
       ],
       "admin": {
@@ -645,14 +656,14 @@
         {
           "id": "b92f4e36-d226-52a7-88cd-87e348da2230-u01",
           "speaker_id": "a",
-          "ja": "北側の広場にいます。私の名前はリンです。",
-          "vi": "Tôi ở sân phía bắc. Tôi tên Linh."
+          "ja": "北側の広場に避難したリンです。名前を確認していただけますか。",
+          "vi": "Tôi là Linh, đã sơ tán ra sân phía bắc. Anh ghi nhận tên tôi giúp được không ạ?"
         },
         {
           "id": "b92f4e36-d226-52a7-88cd-87e348da2230-u02",
           "speaker_id": "b",
-          "ja": "リンさんですね。ここで確認しました。",
-          "vi": "Chị Linh. Tôi đã ghi nhận bạn có mặt ở đây."
+          "ja": "リンさんですね。避難されたことを記録しました。",
+          "vi": "Chị Linh phải không ạ? Tôi đã ghi nhận chị đã ra ngoài."
         }
       ],
       "admin": {
@@ -746,20 +757,27 @@
         {
           "id": "b3057bee-4adb-5fc9-a1cf-51145eee6077-u01",
           "speaker_id": "a",
-          "ja": "戻ってよいのは、あおいビルですか。まだ中には入りません。",
-          "vi": "Tòa được phép quay lại là tòa Aoi phải không ạ? Tôi chưa vào trong."
+          "ja": "さくら町三の十二のあおいビルに戻っていいんですか。念のため聞いています。",
+          "vi": "Tôi muốn hỏi cho chắc: tòa Aoi ở Sakura-machi 3-12 đã được phép quay lại chưa ạ?"
         },
         {
           "id": "b3057bee-4adb-5fc9-a1cf-51145eee6077-u02",
           "speaker_id": "b",
           "ja": "いいえ、まだどの建物にも戻らないでください。案内を待ってください。",
           "vi": "Chưa. Hiện đừng quay vào tòa nào. Hãy chờ thông báo."
+        },
+        {
+          "id": "b3057bee-4adb-5fc9-a1cf-51145eee6077-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。入らないで、案内を待ちます。",
+          "vi": "Tôi hiểu rồi. Tôi sẽ đứng ngoài chờ hướng dẫn ạ."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "fdma"
+          "fdma",
+          "safety"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -768,6 +786,9 @@
           },
           "b3057bee-4adb-5fc9-a1cf-51145eee6077-u02": {
             "kind": "original_extension"
+          },
+          "b3057bee-4adb-5fc9-a1cf-51145eee6077-u03": {
+            "kind": "original_extension"
           }
         }
       }
@@ -775,7 +796,7 @@
     {
       "situation_uid": "103b1527-99a9-5a30-908a-15abc63701ff",
       "event_id": "E04",
-      "context_vi": "Từ sân phía bắc, bạn gọi cho người thân để báo mình đã ra ngoài an toàn và nơi có thể gặp.",
+      "context_vi": "Bạn đã được ghi nhận an toàn ở sân phía bắc. Người phụ trách xác nhận bạn có thể ra cổng bắc nhà ga bên kia đường để gặp chị, nên bạn gọi báo.",
       "speakers": [
         {
           "id": "a",
@@ -784,7 +805,7 @@
         },
         {
           "id": "b",
-          "role_vi": "người thân",
+          "role_vi": "chị gái",
           "gender": "female"
         }
       ],
@@ -792,20 +813,20 @@
         {
           "id": "103b1527-99a9-5a30-908a-15abc63701ff-u01",
           "speaker_id": "a",
-          "ja": "もしもし、私は無事です。今、あおいビル北側の広場にいます。",
-          "vi": "A lô, tôi an toàn. Giờ tôi ở sân phía bắc tòa Aoi."
+          "ja": "もしもし、お姉ちゃん。無事だよ。もう外に出た。",
+          "vi": "A lô, chị ơi. Em an toàn rồi. Em đã ra ngoài."
         },
         {
           "id": "103b1527-99a9-5a30-908a-15abc63701ff-u02",
           "speaker_id": "b",
-          "ja": "分かった。そこには行けるの。",
-          "vi": "Tôi biết rồi. Tôi có thể đến đó không?"
+          "ja": "よかった。どこで会える？",
+          "vi": "May quá. Chị gặp em ở đâu được?"
         },
         {
           "id": "103b1527-99a9-5a30-908a-15abc63701ff-u03",
           "speaker_id": "a",
-          "ja": "今は案内を待っています。会える場所は後で知らせます。",
-          "vi": "Tôi đang chờ hướng dẫn. Khi biết chỗ có thể gặp, tôi sẽ báo sau."
+          "ja": "係の人に聞いたよ。向かいにある駅の北口で会える。私も今から行くね。",
+          "vi": "Em hỏi người phụ trách rồi. Mình gặp ở cửa bắc của ga bên kia đường nhé. Em ra đó ngay."
         }
       ],
       "admin": {
@@ -847,8 +868,8 @@
         {
           "id": "27e30ea6-3b8e-5496-aa05-3885b20e16d3-u01",
           "speaker_id": "a",
-          "ja": "さっき二階の煙を通報したリンです。今は外です。煙が東側の通路にも広がっています。",
-          "vi": "Tôi là Linh, lúc nãy đã báo khói tầng hai. Giờ tôi ở ngoài. Khói đã lan tới lối phía đông."
+          "ja": "さっき二階の煙を通報したリンです。もう外にいます。今、東側の通路にも煙が見えます。",
+          "vi": "Tôi là Linh, lúc nãy đã báo có khói tầng hai. Tôi đã ra ngoài. Giờ tôi cũng thấy khói ở lối phía đông ạ."
         },
         {
           "id": "27e30ea6-3b8e-5496-aa05-3885b20e16d3-u02",
@@ -860,7 +881,7 @@
           "id": "27e30ea6-3b8e-5496-aa05-3885b20e16d3-u03",
           "speaker_id": "a",
           "ja": "はい、そこです。",
-          "vi": "Vâng, đúng đó."
+          "vi": "Vâng, tôi đang ở sân phía bắc ạ."
         }
       ],
       "admin": {
@@ -902,8 +923,8 @@
         {
           "id": "1020c8e9-5d0f-556c-9ee5-1a218de2964d-u01",
           "speaker_id": "a",
-          "ja": "今は二階が見えません。二階の煙は、外に出る前に見た情報です。",
-          "vi": "Giờ tôi không thấy tầng hai nữa. Thông tin khói ở tầng hai là điều tôi thấy trước khi ra ngoài."
+          "ja": "今は二階が見えません。二階で煙を見たのは、外に出る前です。",
+          "vi": "Giờ tôi không nhìn thấy tầng hai. Tôi thấy khói ở tầng đó trước khi ra ngoài ạ."
         },
         {
           "id": "1020c8e9-5d0f-556c-9ee5-1a218de2964d-u02",
@@ -1003,14 +1024,14 @@
         {
           "id": "9cd8260c-7a4c-54ab-8765-043330bc1cba-u01",
           "speaker_id": "a",
-          "ja": "私は北側の広場にいます。消防の人に話が必要なら、ここで待ちます。",
-          "vi": "Tôi ở sân phía bắc. Nếu đội cứu hỏa cần hỏi, tôi sẽ chờ tại đây."
+          "ja": "北側の広場で、ビルの管理の人のそばにいます。ここで待ちます。",
+          "vi": "Tôi đang đứng cạnh quản lý tòa ở sân phía bắc. Tôi sẽ đợi ở đây ạ."
         },
         {
           "id": "9cd8260c-7a4c-54ab-8765-043330bc1cba-u02",
           "speaker_id": "b",
-          "ja": "北側の広場ですね。場所を伝えます。",
-          "vi": "Sân phía bắc. Tôi sẽ báo vị trí."
+          "ja": "分かりました。北側の広場にいると、消防隊に伝えます。",
+          "vi": "Tôi hiểu. Tôi sẽ báo với đội cứu hỏa chị đứng tại sân phía bắc ạ."
         }
       ],
       "admin": {
