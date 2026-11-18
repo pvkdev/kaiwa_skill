@@ -48,3 +48,5 @@
 
 - Rà lại f177ef41-e4ec-536e-b221-b741ae90e7df lượt 4. Bản Nhật không đoán trước là nhạc cụ dây hay phím. Lượt hỏi vẫn bám chi tiết biểu diễn dưới lều.
 - Rà lại 45a86827-63cd-5bca-ab09-8ed13040c82b lượt 1. Đọc nối S018 và giữ đúng mốc cuối tuần, không tự thêm hôm nay. S019 u03 vẫn hỏi lịch tuần sau.
+- Rà lại 9734cccd-8b60-515e-9944-a5cc15ab4abc lượt 2. Bỏ đại từ không cần thiết. Câu hỏi vẫn hàm ý A tưởng người đang kể là người gọi, B sửa bằng chính câu đáp.
+- Rà lại c79da04d-9b8e-561d-9616-16cc1e2bdeea lượt 1. Đọc nối S013 và S014. A xác nhận em gái gọi, hỏi người kia có tự đi lấy, rồi dùng câu đáp để hỏi thời điểm lấy.
