@@ -89,3 +89,7 @@ Tra catalog27 bằng 宿泊・チェックイン・予約番号・枕・空調�
 - S024 → S025. Giữ đề xuất phòng hướng cảng thêm 2.000 yên chưa chấp nhận, không tự ý đổi; mời quản lý xem cùng xác nhận.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc sáu trích đoạn B05 về đặt phòng, nhận khách, xử lý yêu cầu và đồ quên. FAQ APA Yokohama Bay Tower minh họa giờ nhận phòng thông thường, hành lý ngày đến/đi và chính khách liên hệ để hỏi đồ quên. Giờ trả, phụ phí, quy trình đổi phòng và giao lại ô trong bài là của khách sạn giả định. Thành phố Yokohama và trang du lịch chính thức xác nhận tuyến Kishamichi và quầy đối diện cổng nam JR Sakuragicho. S016 để khách hỏi chính xác giờ nhận cuối của triển lãm trong ngày. [APA Yokohama Bay Tower](https://www.apahotel.com/resort/yokohama/faq/) · [Yokohama — Kishamichi](https://www.city.yokohama.lg.jp/kanko-bunka/minato/taikan/zentai/kisyamiti.html) · [Yokohama — Quầy thông tin du lịch](https://www.welcome.city.yokohama.jp/tic/)

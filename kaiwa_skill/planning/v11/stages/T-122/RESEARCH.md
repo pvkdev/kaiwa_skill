@@ -76,3 +76,7 @@ Tra catalog27 bằng カラオケ・レンタル・延長・試着・初心者�
 - S018 → S019. Giờ 16 hôm nay không đổi; chuyển sang hỏi phương án đặt trước cho tuần sau.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc các trích đoạn B05 về phòng karaoke, thiết bị, thử đồ và hướng dẫn thực hành. Cơ sở Big Echo Umeda DD House có phụ thu riêng cho loại phòng thiết bị đặc biệt theo khung/gói. Tờ Montbell Minamiaso mô tả thử cỡ, trả và kiểm đồ tại cửa hàng. Yamaha giới thiệu lớp cho người mới và buổi học thử. Số tiền, giờ trả, giảm thời gian tính tiền do mic lỗi, và lịch lớp trong bài thuộc cơ sở giả định. [Big Echo Umeda DD House](https://www.big-echo.jp/shop_info/ビッグエコー梅田DDハウス店) · [Montbell Minamiaso](https://www.montbell.jp/generalpage/adimages/minamiaso_rental.pdf) · [Yamaha Music School](https://school.jp.yamaha.com/music/instrument/introduction/)

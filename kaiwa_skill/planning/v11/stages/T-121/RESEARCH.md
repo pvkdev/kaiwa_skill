@@ -73,3 +73,7 @@ Tra đủ catalog27 bằng 公共料金・お弁当 温め・荷物 受け取り
 - S019 → S020. Điều kiện khi bàn giao là chưa thấy trong ngăn nhận. Ca sau xác nhận tìm đồ ở chỗ khác rồi mới mời khách mang lại mã.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đối chiếu B05 chương konbini và ba hướng dẫn chính thức. 7-Eleven Nhật phân biệt nhãn hâm 1.500 W với nhãn chỉ 500/600 W. Lawson nhận mã vạch tại quầy của cửa hàng đã chọn khi website mua hàng hỗ trợ. Phương thức Loppi đã chọn cần trả tiền mặt trong 30 phút từ khi in phiếu, rồi nhận liên của khách. Tình huống tìm kiện sai chỗ và bàn giao ca do tác giả xây dựng. [7-Eleven Nhật — hâm tại cửa hàng](https://faq.sej.co.jp/article/?knowledge_id=cidqbpkvr0h8m5o3rin0) · [Lawson — nhận tại cửa hàng](https://www.lawson.co.jp/service/loppi/pickup/) · [Lawson — thanh toán qua mã](https://www.lawson.co.jp/service/loppi/numberpayment/index.html)

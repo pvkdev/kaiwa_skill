@@ -71,3 +71,7 @@ Hạn phản hồi cũ là thứ Tư, câu trả lời về nơi làm dự kiế
 - S019 → S020. S019 chốt nói thứ Năm và hai chi tiết ngày/giờ. Nay phía công ty chốt thứ Ba hằng tuần, các ngày khác ở tòa chính. Mức hai ngày chỉ là phương án cũ.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 20 cảnh và 13 cạnh. Đã mở B03 Unit 17 về hỏi lại điều kiện, B25 bài 2 về xin thời gian, B17 về nêu lý do và đề xuất khi trả lời. Mốc giờ, giá trị hợp đồng và khoản đi lại là chi tiết theo ngữ cảnh. Điều kiện đang thương lượng, điều kiện công ty đưa ra và sự đồng ý của người lao động là ba trạng thái riêng. Tra phạm vi thay đổi nơi làm và công việc được nêu ở thời điểm ký và gia hạn hợp đồng có thời hạn. [労働契約｜厚生労働省](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/keiyaku/) [労働条件明示｜厚生労働省](https://muki.mhlw.go.jp/rule.html) [採用時の労働条件｜厚生労働省](https://www.check-roudou.mhlw.go.jp/qa/roudousya/koyou/q1.html)

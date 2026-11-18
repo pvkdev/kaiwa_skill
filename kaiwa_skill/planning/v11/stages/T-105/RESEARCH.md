@@ -71,3 +71,12 @@ Việc nhập đơn ở nơi cũ kết thúc thứ Sáu. Nơi mới bắt đầu
 - S018 → S019. S018 chờ việc và quyền. Trước S019 Oda đã xác nhận với Mori, cấp quyền xem. Đóng gói về bộ phận xuất hàng, giữ kiểm mục đầu theo S015.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 19 cảnh và 13 cạnh trong bốn sự kiện. B03 Unit 17, dòng 38–48, hỗ trợ hỏi chi tiết và nhắc lại chỉ thị. Lời Nhật là lời mới dựa trên tình huống.
+
+- Nguồn dispatch. Mục 労働者派遣事業とは xác nhận bên phái cử sử dụng lao động, bên tiếp nhận chỉ đạo công việc. Tên, giờ, người thay và công việc tạm theo tình huống giả định. [労働者派遣事業｜厚生労働省](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/roudoushahakennjigyou.html)
+- Nguồn terms. Đối chiếu phạm vi 就業条件明示書 và đầu mối khi điều kiện thực tế khác dự kiến. [茨城労働局](https://jsite.mhlw.go.jp/ibaraki-roudoukyoku/yokuaru_goshitsumon/shurouchu/worker_e/qa_whakenchuui.html)
+- Nguồn coord. Mục 1–2 nêu trách nhiệm thông tin điều kiện tới người giao việc và phối hợp xử lý phản ánh. [厚生労働省](https://www.mhlw.go.jp/content/001370974.pdf)
+- Đã sửa URL dispatch sau khi kiểm đường cũ trả 404 và đường chính thức trả 200. Chi tiết lịch và phạm vi trong từng cảnh cần hai đầu mối xác nhận theo hồ sơ của nơi làm.

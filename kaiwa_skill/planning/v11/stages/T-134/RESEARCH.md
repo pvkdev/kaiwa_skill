@@ -81,3 +81,19 @@ Rà độc lập toàn bộ chặng.
 FAQ xác nhận số dư IC được đọc ở bản hiển thị kết quả tìm kiếm chính thức; lần mở trực tiếp trả 502. Dữ kiện cùng phạm vi đối chiếu với trang hướng dẫn và PDF chính thức về vận chuyển thay thế của Tokyo Metro. Đọc lại S028 → S030 sau khi chỉnh lời xin lỗi vì đã quá giờ đặt.
 
 Đã đọc lại bản Việt ở 21 cảnh có người phục vụ nói trực tiếp với khách nữ để dùng “chị” hoặc lược chủ ngữ theo câu. Đọc lại S004 → S005, S008 → S010, S014 → S015, S024 → S025 và S028 → S030. Giữ giờ, giá, điều kiện vé và tình trạng chờ như bản Nhật.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đối chiếu thứ tự Ōtemachi → Nihombashi → Kayabachō → Nishi-Funabashi trong [sơ đồ Tozai](https://www.tokyometro.jp/station/line_tozai/index.html). [Trang vận hành Tozai](https://www.tokyometro.jp/unkou/history/touzai.html) có chức năng cập nhật và thông tin theo đoạn; giờ và chuyến trong bài là giả định. Đọc B27 bài 8 dòng 26–38 về hỏi điểm tàu dừng và đường chuyển theo đích.
+
+## Rà độc lập Batch05 · E02
+
+Ngày 2026-11-18 kiểm [sơ đồ Hibiya](https://www.tokyometro.jp/station/line_hibiya/index.html) xác nhận điểm nối Ningyōchō–Suitengūmae và một ga theo hướng Naka-Meguro tới Kayabachō. [Sơ đồ Tozai](https://www.tokyometro.jp/station/line_tozai/index.html) cho thấy kết nối Hanzōmon ở Ōtemachi và Hibiya tại Kayabachō. Đường đi bộ được dùng như lựa chọn trong cảnh, không ghi thời lượng cố định. Lối Nam và mái che ở S007 thuộc ga giả định.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 đọc [hướng dẫn Tokyo Metro](https://www.tokyometro.jp/ticket/guide/substitute/index.html) và mục 29 của [PDF 営業のご案内, bản 14/03/2026](https://www.tokyometro.jp/support/guide/operation/pdf/information_20260314.pdf) về vé có sẵn đúng chặng, vé tháng trong chặng, loại trừ số dư nạp ngoài chặng và trả vé riêng trên đường đi vòng không thuộc diện. FAQ OpenFAQ-000377 đọc mục trả lời hiển thị trong kết quả tìm kiếm chính thức, lần mở trực tiếp không thành công. Chỉ xác nhận phạm vi Tokyo Metro. S012 hỏi tuyến thực hiện của ngày tập; S015 chuyển cách xử lý lượt vào/ra cho nhân viên ga. Đọc B27 bài 8 dòng 49–63 về hỏi và nhắc lại thuộc tính vé.
+
+## Rà độc lập Batch05 · E04
+
+Đọc B27 bài 8 dòng 105–115 về kiểm giờ và cửa ga khi hẹn. S019/S020 dùng ga giả định, cảnh nối dùng đúng điểm đã đính chính.

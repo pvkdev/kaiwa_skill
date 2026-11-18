@@ -75,3 +75,23 @@
 Rà độc lập toàn bộ chặng.
 
 Rà lại các cảnh cứu hộ theo số người được nói tới. S003 có hai người chờ nơi an toàn, các cuộc gọi S001/S002/S004/S005 chỉ nói trực tiếp với Mori. S004 → S005 giữ điều kiện xưởng nhận và phân biệt số tổng đài với mã 54. S029 → S030 giữ mã, mốc gọi và mốc nhận xe; chi phí còn đợi đối chiếu.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [JAF, các thông tin cần khi gọi cứu hộ](https://jaf.or.jp/common/call-road-service/before-calling), mục an toàn trước khi gọi, nhận dạng xe, mô tả trục trặc và vị trí/mốc. Đối chiếu [JAF, nội dung cứu hộ](https://jaf.or.jp/common/about-road-service/contents/) về chờ ở nơi an toàn bên ngoài lan can cao tốc trong trường hợp có vị trí như vậy. Giá, khả năng nhận xe của xưởng và mốc giờ thuộc tình huống tập. Đọc B27 bài 4 dòng 4–17 và bài 6 dòng 4–16 về mô tả hiện tượng, hỏi lại đầu mối và thời điểm liên hệ.
+
+## Rà độc lập Batch05 · E02
+
+Ngày 2026-11-18 đọc [消防庁, tư vấn cấp cứu](https://www.fdma.go.jp/mission/enrichment/appropriate/appropriate007.html). Đầu mối và giờ tư vấn tùy địa phương; S007 mô tả đau tăng và gọi hỏi cách tiếp theo, không nêu một số tư vấn phủ toàn quốc. B27 bài 4 dòng 4–17 có mạch kể sự cố và chờ người kiểm.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 PDF ISA 930004447 trả 403 khi mở trực tiếp qua công cụ. Đối chiếu phần xử lý tai nạn ở chương 10 mục 1 của [警察庁, 教則](https://www.npa.go.jp/bureau/traffic/20241113kyousoku.pdf) về dừng an toàn, cứu người, tránh tự ý di chuyển người bị thương và báo cảnh sát; [消防庁, 119](https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html) về gọi cứu cấp và trả lời điều phối. S011 cả hai đã ở vị trí an toàn, S014 xác nhận cách chờ với người trực. Đọc B08 mục trình báo dòng 823–833 để kiểm cách phân biệt điều đã thấy và điều chưa biết.
+
+## Rà độc lập Batch05 · E04
+
+Ngày 2026-11-18 xem mục xử lý ở hiện trường của [日本損害保険協会, Q25](https://soudanguide.sonpo.or.jp/car/q025.html) và [hướng dẫn người gặp tai nạn](https://www.sonpo.or.jp/report/publish/bousai/koutuu/article/1/). Khi có khả năng dùng bảo hiểm, hỏi hãng và không tự dàn xếp tiền tại chỗ. Lời cảnh sát và thông tin trao đổi giữa hai người trong cảnh thuộc vụ giả định.
+
+## Rà độc lập Batch05 · E05
+
+Ngày 2026-11-18 đọc mục 事故が発生した場合 của [Toyota Rent a Car](https://rent.toyota.co.jp/static/guide/irregular/index.html), xác nhận thứ tự xử lý người bị thương, báo cảnh sát, liên hệ nơi cho thuê. Mốc, phí, quy trình nội bộ và phân công của S021–S025 thuộc hợp đồng/hãng giả định; không chuyển bảng phí Toyota sang bài.

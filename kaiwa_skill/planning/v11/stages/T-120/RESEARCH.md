@@ -73,3 +73,7 @@ Tra catalog27 với 試着・サイズ・お取り寄せ・在庫・交換・返
 - S018 → S019. Đã tìm đúng dây trong ngăn phụ hộp, gắn thử và giao cùng túi; không tính thêm.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đối chiếu bốn trích đoạn B05 và hai FAQ của UNIQLO Nhật. FAQ đặt hàng của UNIQLO nêu ưu tiên tồn trực tuyến rồi mới xét tồn chi nhánh, tồn trên màn hình có độ trễ và dịch vụ yêu cầu trả trước. S007, S009–S012 dùng chi nhánh giả định, riêng hẹn gọi 18 giờ và giữ tới đóng cửa là cách phục vụ của cửa hàng trong bài. S014 xử lý đường may lỗi theo nhánh riêng. S015–S016 chỉ nói đổi cỡ thông thường theo điều kiện của cửa hàng trong bài. [UNIQLO — お取り寄せ](https://faq.uniqlo.com/articles/Knowledge/100008167/) · [UNIQLO — 交換・返品の条件と注意事項](https://faq.uniqlo.com/articles/Knowledge/100005292/)

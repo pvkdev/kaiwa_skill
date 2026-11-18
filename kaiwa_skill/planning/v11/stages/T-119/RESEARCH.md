@@ -88,3 +88,7 @@ Tra toàn catalog27 với 予約・お待ち・注文・品切れ・お会計 v�
 - S024 → S025. Yêu cầu hủy và tiền đều chưa quyết trước bàn giao cho quản lý; nhân viên vẫn lo mì Ý.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc đúng ba trích đoạn B05 và đối chiếu các mục FAQ giới hạn giờ của Kirby Café và thanh toán riêng, đồ quên của RYUBO FOOD HALL. Mốc bàn, giá và khả năng hủy món chỉ thuộc nhà hàng giả định. Checklist của Cơ quan Tiêu dùng Nhật yêu cầu cung cấp thông tin chính xác, nói rõ khả năng lẫn dị nguyên và để khách đánh giá. S007–S008 chỉ xác nhận cần hỏi nguyên liệu, nước dùng và nồi dùng chung, giữ yêu cầu chưa nhận món cho tới khi báo lại. [消費者庁 — 食物アレルギー事業者向けパンフレット](https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/efforts/assets/food_labeling_cms204_240509_05.pdf)

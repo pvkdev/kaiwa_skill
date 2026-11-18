@@ -72,3 +72,7 @@ Ngày 21 tháng 8 thiếu ca ở chỗ khách, khác hồ sơ tháng 7. Katō ng
 - S018 → S019. S018 chỉ hẹn ngày 5 báo tiến độ đối chiếu giờ. Nay cập nhật ca đã xong, bộ phận lương nhận giờ mới nhưng chưa trả kết quả tính lương.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 19 cảnh và 14 cạnh. Đã mở B12 bài 61 về chỗ số liệu không khớp và B03 Unit 17 về hỏi căn cứ, người xác nhận và mốc. Hướng dẫn của Cục Lao động Osaka về đối chiếu thời gian thực tế và dữ liệu khách quan, Điều 24 và 37 của Luật Tiêu chuẩn Lao động về tiền lương và tiền làm ngoài giờ, và quầy tư vấn tổng hợp làm căn cứ. Mốc giờ, khoản đi lại, mã hồ sơ là tình huống giả định. Không dạy phép tính hay coi giờ ra tòa nhà, giờ ghi máy hoặc hồ sơ chuyển tới bộ phận lương là kết luận. [Cục Lao động Osaka](https://jsite.mhlw.go.jp/osaka-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/hourei_seido/jikan2/kokuji/kokuji2.html) [労働基準法｜厚生労働省](https://www.mhlw.go.jp/web/t_doc?dataId=73022000) [総合労働相談コーナー｜厚生労働省](https://www.mhlw.go.jp/general/seido/chihou/kaiketu/soudan.html)
