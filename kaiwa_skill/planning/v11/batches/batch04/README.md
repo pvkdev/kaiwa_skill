@@ -4,4 +4,4 @@ Phạm vi: 18 chặng Sơ, 41 Trung, 1 Thượng theo PLAN.json. Ba worker gpt-6
 
 Áp dụng kaiwa-topic-dialogue và references/draft.md. Checkpoint theo sự kiện, JA/VI tách trường, hai vai và gender, nguồn thực dùng có bằng chứng đọc. Lượt tự rà không phải biên tập độc lập. Giữ nguyên các phiên bản, nguồn và 189 chặng đã hoàn tất trước đợt này.
 
-Đã hoàn tất biên soạn và cập nhật preview. Xem [báo cáo](REPORT.md), [kiểm chứng](QA.json) và [tiến độ](PROGRESS.json). 60 chặng mới đã tự rà, còn chờ double check độc lập.
+Đã hoàn tất biên soạn và cập nhật preview. Xem [báo cáo](REPORT.md), [kiểm chứng](QA.json) và [tiến độ](PROGRESS.json). 60 chặng đã hoàn tất rà độc lập. Xem [báo cáo rà](../../reviews/batch04/REPORT.md). QA.json và REPORT.md sản xuất ban đầu được giữ như snapshot lịch sử; kiểm chứng hiện tại nằm ở hồ sơ rà.

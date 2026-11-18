@@ -1,5 +1,5 @@
 {
-  "state": "running",
+  "state": "completed",
   "started_at": "2026-11-18T11:59:25.687424+09:00",
   "baseline_commit": "3321f1fed36875a0525d3717be472342d586eea7",
   "production_plan": "kaiwa_skill/planning/v11/batches/batch04/PLAN.json",
@@ -7,7 +7,7 @@
   "worker_model": "gpt-6.2-sol",
   "reasoning_effort": "high",
   "skill_sha256": "ad116ee99788aa53a439245ce498857cd8eccb4bf945b969d7e592dbad74d5c4",
-  "assignment_note_vi": "Ba phiên mới, mỗi phiên20chặng theo nhóm sản xuất để cân bằng số cảnh. Reviewer độc lập với tác giả.",
+  "assignment_note_vi": "Ba phiên mới, mỗi phiên 20 chặng theo nhóm sản xuất để cân bằng số cảnh. Reviewer độc lập với tác giả.",
   "groups": {
     "so": [
       {
@@ -495,5 +495,222 @@
         "input_sha256": "a833220b44592c85c19daf6e71e8e241292de4ea6fc8b9c7cebf193ed5ab70e3"
       }
     ]
+  },
+  "completed_at": "2026-11-18T12:38:04.284877+09:00",
+  "summary_by_group": {
+    "so": {
+      "stages": 20,
+      "scenes": 365,
+      "turns_before": 1586,
+      "turns_after": 1590,
+      "kept": 210,
+      "fixed": 155,
+      "public_changed": 153,
+      "context_vi_changed": 25,
+      "speakers_changed": 1,
+      "turns_changed": 149,
+      "source_metadata_changed_stages": 2,
+      "metadata_only_fixed": 2,
+      "events": 80
+    },
+    "trung": {
+      "stages": 20,
+      "scenes": 318,
+      "turns_before": 1592,
+      "turns_after": 1592,
+      "kept": 210,
+      "fixed": 108,
+      "public_changed": 108,
+      "context_vi_changed": 21,
+      "speakers_changed": 0,
+      "turns_changed": 102,
+      "events": 74
+    },
+    "thuong": {
+      "stages": 20,
+      "scenes": 329,
+      "turns_before": 1378,
+      "turns_after": 1378,
+      "kept": 211,
+      "fixed": 118,
+      "public_changed": 118,
+      "context_vi_changed": 11,
+      "speakers_changed": 0,
+      "turns_changed": 115,
+      "source_metadata_changed_stages": 3,
+      "events": 84
+    }
+  },
+  "reviewed_scenes": 1012,
+  "fixed_scenes": 381,
+  "public_changed_scenes": 379,
+  "metadata_only_fixed_scenes": 2,
+  "kept_scenes": 631,
+  "open_issues": [],
+  "workers": {
+    "so": "/root/review_b4_so",
+    "trung": "/root/review_b4_trung",
+    "thuong": "/root/review_b4_thuong"
+  },
+  "diff_audit": {
+    "groups": {
+      "so": {
+        "counts": {
+          "stages": 20,
+          "scenes": 365,
+          "turns_before": 1586,
+          "turns_after": 1590,
+          "kept": 210,
+          "fixed": 155,
+          "public_changed": 153,
+          "context_vi_changed": 25,
+          "speakers_changed": 1,
+          "turns_changed": 149,
+          "source_metadata_changed_stages": 2,
+          "metadata_only_fixed": 2,
+          "events": 80
+        },
+        "examples": [
+          {
+            "code": "S-063",
+            "uid": "c4c15f8a-301c-58b9-87d3-5da04b90bcd3",
+            "note_vi": "Nêu rõ 午後 để cố định 15 giờ trong cả hai thứ tiếng. Sửa câu sau cho rõ người học chưa cần sửa tài liệu vì vẫn đợi quyết định."
+          },
+          {
+            "code": "S-063",
+            "uid": "df77a954-1ae4-5077-9681-cb1f217520f0",
+            "note_vi": "Rút câu hỏi về hạn xuống một cụm dễ nói sau lời giao việc. Lan vẫn nhắc lại cả hạn thứ Sáu và thứ tự nhờ Mori xem rồi gửi."
+          },
+          {
+            "code": "S-064",
+            "uid": "49225882-4d10-5fca-9d88-49cda19b641b",
+            "note_vi": "Giữ lời rủ thân mật sau khi nghe bạn chưa có kế hoạch. Sửa câu đáp để người Việt hiểu bạn thuận tiện ghé trước ga."
+          }
+        ]
+      },
+      "trung": {
+        "counts": {
+          "stages": 20,
+          "scenes": 318,
+          "turns_before": 1592,
+          "turns_after": 1592,
+          "kept": 210,
+          "fixed": 108,
+          "public_changed": 108,
+          "context_vi_changed": 21,
+          "speakers_changed": 0,
+          "turns_changed": 102,
+          "events": 74
+        },
+        "examples": [
+          {
+            "code": "T-064",
+            "uid": "170e92be-21ea-5520-af30-72b6871a42af",
+            "note_vi": "Bỏ cách gọi giới tính lửng trong lời xin nói chuyện 15 phút. Sato nhận hỏi và hẹn báo khả năng xếp lịch chậm nhất thứ Sáu."
+          },
+          {
+            "code": "T-064",
+            "uid": "0854edb9-135a-5b49-8194-573d9b84204d",
+            "note_vi": "Bối cảnh phân rõ Lan tạo bảng, cả nhóm giảm thời gian trung bình 40 xuống 25 phút, đúng phần Sato xác nhận ở cuối."
+          },
+          {
+            "code": "T-064",
+            "uid": "7435aa16-7951-5c1f-80b9-856025174fb6",
+            "note_vi": "Dùng 担当する và nói rõ hướng dẫn lần đầu là phần kiêm thêm từ một năm rưỡi trước. Sato sửa ghi chép ba năm là toàn bộ thời gian hỗ trợ."
+          }
+        ]
+      },
+      "thuong": {
+        "counts": {
+          "stages": 20,
+          "scenes": 329,
+          "turns_before": 1378,
+          "turns_after": 1378,
+          "kept": 211,
+          "fixed": 118,
+          "public_changed": 118,
+          "context_vi_changed": 11,
+          "speakers_changed": 0,
+          "turns_changed": 115,
+          "source_metadata_changed_stages": 3,
+          "events": 84
+        },
+        "examples": [
+          {
+            "code": "H-064",
+            "uid": "adb9c84e-f37e-5940-9fcf-f3f3d032b3e5",
+            "note_vi": "Lời Nhật vừa hỏi lại điều kiện bằng 確認, lời Việt giữ sức nặng của 困ります ở yêu cầu tổng hợp. Câu hỏi hoãn hay chạy làm lộ điều kiện thật là nhận và thấy đơn chưa xử lý."
+          },
+          {
+            "code": "H-064",
+            "uid": "7164c535-ea1a-5013-8f0e-e2980571905e",
+            "note_vi": "Giữ hai khung giờ ở trạng thái đề xuất đến cuộc gọi của Kanda. Sửa câu chốt Việt để người học nói được tự nhiên khi cuộc hẹn còn chờ xác nhận."
+          },
+          {
+            "code": "H-064",
+            "uid": "94bf4373-dd3e-527f-940b-4af4ab198417",
+            "note_vi": "Lời Việt phân biệt phần màn hình dùng được ngay trong đợt một. Kanda chỉ xác nhận Fujita có mặt lúc 10 giờ, việc đặt giai đoạn hai để sau."
+          }
+        ]
+      }
+    },
+    "failures": []
+  },
+  "export_audit": {
+    "new_stages": 60,
+    "new_dialogues": 1012,
+    "previous_drafts_preserved": 189,
+    "authored_stages": 249,
+    "authored_dialogues": 5032,
+    "authored_turns": 21645,
+    "independent_review": {
+      "completed": 249
+    },
+    "embedded_json_exact": true,
+    "pages_matches_html": true,
+    "roadmap_and_prior_content_preserved": true,
+    "authored_by_level": {
+      "Sơ": 81,
+      "Trung": 104,
+      "Thượng": 64
+    }
+  },
+  "browser_audit": [
+    {
+      "width": 1280,
+      "stages": 249,
+      "scenes": 5032,
+      "turns": 21645,
+      "maxScrollWidth": 1265
+    },
+    {
+      "width": 390,
+      "stages": 249,
+      "scenes": 5032,
+      "turns": 21645,
+      "maxScrollWidth": 390
+    }
+  ],
+  "root_review": {
+    "scope_vi": "Kiểm bằng chứng, hash và diff toàn bộ 60 chặng, đọc mẫu cảnh giữ/sửa; không nhận đây là lượt đọc độc lập lần ba toàn bộ 1.012 cảnh.",
+    "sampled_codes": [
+      "S-063",
+      "S-067",
+      "T-064",
+      "T-067",
+      "T-069",
+      "T-071",
+      "T-083",
+      "H-064"
+    ],
+    "scene_status_hashes_checked": true,
+    "source_status_hashes_checked": true
+  },
+  "brief_note_vi": "T-067 S015→S016: reviewer đọc lại JA/VI và xác nhận cơ hội Hinode Soft sau hai năm được nêu rõ, không đảo trạng thái đã nhận offer cũ. Giữ UID/cạnh V10.",
+  "output_sha256": {
+    "kaiwa_skill/planning/v11/BUILD.json": "c9aa38eb95ce312302038da58f4b9eb16180f8b47d67c8c7aa9ff7b5fcbbdc62",
+    "kaiwa_skill/planning/v11/learner.json": "8ec57622d943231722cc145b8530283a0f0d38991b9387945d6b3a2667a5ac77",
+    "kaiwa_skill/planning/v11/ROADMAP.html": "858eded13da51914471d606323ec829dd60d8157dd8b861a656dcbf648f81ac4",
+    "docs/index.html": "858eded13da51914471d606323ec829dd60d8157dd8b861a656dcbf648f81ac4"
   }
 }

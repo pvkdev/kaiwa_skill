@@ -42,3 +42,35 @@
 - cf8f300a-af8f-5ecc-9157-9f6ef0e53b2f (S014). A u02 hỏi tòa tầng, B u03 nêu tòa B tầng ba. A u04 xác nhận hiểu bằng なるほど, B u05 giữ giờ lớp.
 - 69b70966-4f4f-5d5e-b271-0e39cf84708c (S015). A u01 nêu ca tối và hỏi phương án sáng. B u02 nêu thứ Hai 10 giờ còn chỗ, A u03 hỏi cấp, B u04 xác nhận cùng cấp.
 - 92ba4bd5-54c8-5400-a9ef-c8a504d0691a (S016). A u01 báo chưa rõ lịch, u02 đề xuất chậm nhất thứ Sáu. B u03 đồng ý nhưng chưa giữ chỗ, A u04 nhắc mình sẽ gọi.
+
+### Kiểm độc lập E01
+
+S001 biết có lớp sơ cấp tối thứ Ba. S002 đúng lớp đó hết chỗ, người học hỏi lớp cùng cấp tối thứ Năm và được chỉ đăng ký. S004 là nhánh muốn biết nội dung của Sơ cấp 1. S003 hỏi lịch thử riêng sáng thứ Sáu, đến sớm mười phút.
+
+- Đọc B09 dòng 2309–2316, phần câu hoàn chỉnh về khó theo kịp lớp. Mở 新宿区日本語教室 (SJC) ngày 2026-11-18, dòng 173–184 về lớp nhập môn/sơ cấp và chỉ nhận thêm khi còn chỗ. Giờ, suất thử và quầy trong thoại thuộc trường giả định. https://www.foreign.city.shinjuku.lg.jp/jp/japanese/
+
+- S002 (fc44f195-473e-5cb0-ac9f-bee8a4f996b1), 02. Người học hỏi có lớp cùng cấp tối thứ Năm khi thứ Ba đã đủ, thay vì hỏi như đã biết lớp thứ Năm tồn tại. Chưa đăng ký xong.
+
+- S004 (fca67705-2edc-5f0f-a192-0f84316c87ae), 01. Gộp câu hỏi thành lời xin một ví dụ lớp Sơ cấp 1. Sau khi nghe bài hỏi đường, người học nhận xét sẽ dùng được ngoài đời.
+
+### Kiểm độc lập E02
+
+S005 học viên tự giới thiệu rồi S007 xin nhắc lại bước đầu làm với người cạnh. S006 từ tầng 3 được chỉ phòng 203 tầng 2, S008 tới phòng sau khi đã vào học nên xin lỗi và hỏi ghế.
+
+- Đọc B27 dòng 437–457, trong đó có đề tự giới thiệu ngày đầu. Đọc B16 dòng 688–707 về nhắc thông tin để người nghe xác nhận.
+
+- S006 (043bfded-1237-5f4f-ac50-f70d844b96bf), 01. Cụm 初心者クラス chỉ đúng lớp nhập môn. Hỏi phòng rồi hỏi hướng sau khi xuống cầu thang.
+
+### Kiểm độc lập E03
+
+S009 học nghĩa 交代 rồi S011 xin tập vai nhân viên trước vì bí câu mở vai khách. S010 xin đọc chậm ví dụ đi ga. S012 xác nhận lượt đầu ai hỏi và sau đổi vai sẽ làm gì.
+
+- Đọc B14 dòng 1544–1549 về lời xin nói chậm và người nghe đáp nhận.
+
+- S011 (054da203-8a7f-524f-9fec-948e969bd657), 02. Dùng mẫu xin phép đóng nhân viên trước thay cho câu gợi ý mơ hồ. Giáo viên đồng ý và đưa lời chào để thử.
+
+### Kiểm độc lập E04
+
+S013 nghỉ một buổi thứ Ba, tuần sau hiện dự kiến 203 tòa chính. S014 thông báo sau là phòng tòa B tầng 3 và giữ giờ. S015 là nhánh hỏi đổi hẳn do ca tối, biết lớp thứ Hai 10 giờ cùng cấp. S016 hẹn gọi trước hoặc đúng thứ Sáu, chỗ trống sẽ kiểm lại.
+
+- S015 (69b70966-4f4f-5d5e-b271-0e39cf84708c), 01. Nêu lịch làm đổi và hỏi có lớp sáng bằng câu Nhật rõ. Sau đó kiểm lớp thứ Hai 10 giờ đúng trình độ.

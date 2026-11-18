@@ -47,3 +47,9 @@ S013→S014: trưởng nhóm nghe Minh tự nhập nháp và suy thành có th�
 - S014 · `d37d686e-d5a8-5156-af6a-3e2697deae50` · u01, u02, u03, u04, u05. Noda hiểu nhầm lúc rẽ từ S013. Fujimoto nêu ảnh đủ, trạng thái nháp; phần ngoại lệ và duyệt trước chuyển vẫn của chị. Noda điều chỉnh phạm vi giao.
 - S015 · `60ece27b-4f82-5ad3-8f70-c8de7f343a84` · u01, u03, u04, u05. Noda duyệt thử trong hai ngày với giới hạn từng ngày và loại việc. Minh chỉ soạn bản nháp về gọi lại, Fujimoto xem trước khi gửi cho khách.
 - S016 · `9776302b-9f99-589f-9053-aa4943ed34b6` · u01, u02, u03, u04, u05. Hai ngày, một ngày một tin của S015; chỉ loại đã chốt giờ. Thứ Năm 15:00 là lịch trao đổi hai người, chưa duyệt việc mở rộng. Fujimoto chịu trách nhiệm lịch và thông báo cho Minh sáng thứ Hai.
+
+## Rà độc lập V11 batch04
+
+Đọc đúng B03 Unit 17 dòng 49–74, truyện Lưu tự đoán cách sao và giải thích cần hỏi/kiểm trước khi giao. Đọc B16 Unit 4 dòng 13–45, lời nhận xét theo chi tiết thiếu và chỗ chưa rõ. Thống nhất 型番 là “mã kiểu máy”, khác số phiếu (受付番号) và phiếu mẫu dùng luyện.
+
+2026-11-18, PDF của Cục Lao động Gunma tải được trực tiếp từ địa chỉ chính thức và đã đọc văn bản mục 3-2(3)–(4), trang in 14–16 (trang PDF 15–17). Phần này yêu cầu giải thích mục tiêu, làm mẫu, hỏi lại các bước, quan sát lần thử và dựa vào theo dõi để chuyển nhiệm vụ. Vận dụng phương pháp dạy, không lấy thủ tục của chương trình đào tạo áp vào nhóm sửa thiết bị. https://jsite.mhlw.go.jp/gunma-roudoukyoku/library/gunma-roudoukyoku/hourei_seido/jyoseikin/careerkeisei/kk-shidouin_manual.pdf

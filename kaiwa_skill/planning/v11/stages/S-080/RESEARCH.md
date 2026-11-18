@@ -47,3 +47,41 @@
 - 60e6d590-becf-5c80-93d7-65a128db89ec (S018). A u01 hỏi trả mai, B u02 cần trước giờ đi làm. A u03 hỏi mốc, B u04 nói 8 giờ 15 rời nhà.
 - c80a709d-fc1e-5d52-8466-fa03fe5d02d8 (S019). A u01 chọn 8 giờ ở cửa, B u02 nhận và u04 sẽ có mặt. A u03 cảm ơn nhờ có ô.
 - bd5f92ea-2b4b-5ee4-a344-284a7b17127f (S020). A u01 nói mong muốn mới, u03 rủ Chủ nhật. B u02 tò mò lý do, u04 nhận sáng Chủ nhật.
+
+### Kiểm độc lập E01
+
+S001 cửa Nam đóng, lối Bắc rẽ trái. S002 kiểm lại hướng và cửa kính. S003 báo bạn dự kiến trễ khoảng mười phút. S004 bạn đang đợi đổi điểm từ cổng soát vé sang quán cạnh hiệu sách lúc 10:15. S005 gặp đúng quán và kể ngắn lối Bắc phải đi vòng.
+
+- Đọc B27 dòng 1905–1923 về hướng, tuyến và lỡ chuyến, 1627–1632 về báo chậm cho bạn.
+
+- S004 (d5fcd7f3-f59a-534e-82f9-e4f7557421f3), 04. Người học nhắc lại điểm và 10:15 sau khi bạn kia là người đổi. Sửa nhãn vai Việt cho đúng ai dẫn thay đổi.
+
+### Kiểm độc lập E02
+
+S006 lỡ tàu ở JR Shinjuku, hỏi tuyến thường từ sân 16 đi Nakano không đổi. S007 hỏi cà rốt bán lẻ. S008 chọn trứng khi hết đậu. S009 phiếu tính hai hộp khi mua một, S010 kiểm lại đúng một hộp, tổng 620 và nhận 180 yên chênh.
+
+- Đọc B05 dòng 613–624 về xác nhận tiền và phiếu. Mở JR East Shinjuku mục のりば案内 dòng 47–48 và thời khóa biểu 2026-11 mục 三鷹方面, bảng và chú giải dòng 38. Xác nhận sân 16 và có chuyến hướng Mitaka kết thúc tại Nakano. Không đưa giờ chuyến hay giữ một mốc chiếu lịch chung cho ngày đi thật. https://www.jreast.co.jp/estation/stations/866.html https://timetables.jreast.co.jp/2611/timetable/tt0866/0866041.html
+
+- S006 (69463d65-30ba-5ce2-ad85-03f61f573d85), 03. Hỏi có cần đổi tàu sau khi được chỉ Chuo–Sobu các ga từ sân 16. Người học còn được hướng dẫn xem chuyến kế tiếp trên bảng.
+
+- S009 (d65f4f9a-5fcc-5c8a-b201-06318b9c01aa), 02. Người học nói rõ một hộp thật và hai hộp tính tiền. Nhân viên xác nhận nhập thừa số lượng trên phiếu trước khi hẹn hoàn tiền.
+
+### Kiểm độc lập E03
+
+S011 đến 14:05 thì tiệm đón được. S012 chỉ giữ đến 14:10 nhưng khách dự kiến 14:20, xin giờ khác. S013 nhánh riêng không thể giữ, đổi 11 giờ sáng mai. S014 báo bạn được rảnh từ 15 giờ, S015 chọn cà phê và quán đối diện hiệu sách.
+
+- Đọc B05 dòng 2546–2557 về báo tới trễ. Thời gian giữ hẹn là của tiệm trong cảnh.
+
+- S013 (027b7db7-9dda-5bb9-a505-042161200fca), 02. Nhân viên nói không thể đợi vì lịch khách sau, sửa cấu trúc Nhật trước khi người học hỏi lại lịch. Đã xác nhận 11 giờ sáng mai.
+
+- S014 (4937ee0f-47d2-56d7-89c7-f91790e6c3de), 03. Báo lịch thay đổi và hỏi bạn có rảnh từ ba giờ chiều nay. Người kia nhận lời và chưa chọn hoạt động.
+
+- S015 (1ebc2b26-3b89-5450-a805-f803d837f156), 03. Người bạn nói mình chỉ ở được một tiếng, vì vậy chọn cà phê. Người học đưa 15 giờ và quán đối diện hiệu sách.
+
+### Kiểm độc lập E04
+
+S016 kể tóm tắt đã dời cắt tóc 11 giờ mai rồi gặp bạn. S017 xin lỗi về muộn và hẹn báo lần sau. S018 nghe cần ô cho buổi làm và ra nhà lúc 8:15. S019 chốt trả lúc 8 giờ trước khi đi. S020 rủ chợ bánh sáng Chủ nhật.
+
+- S017 (1e81babd-7cb8-5da3-a5f3-cadc4140a3aa), 03. Sau khi xin lỗi, nêu một lý do ngắn và nhận báo sớm lần sau. Lời đáp nói vì sao tin nhắn giúp người ở nhà đỡ lo.
+
+- S018 (60e6d590-becf-5c80-93d7-65a128db89ec), 01. Hỏi người cho mượn có cần lấy ô lại ngày mai để nghe nhu cầu mang đi làm. Chốt hướng tìm giờ bằng câu hỏi lúc ra nhà.

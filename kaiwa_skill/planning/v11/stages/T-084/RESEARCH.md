@@ -44,3 +44,37 @@
 - Rà lại 11291fa4-0a75-53dc-85b4-66758338ad85 lượt context. Cảnh riêng không tiết lộ đây là bản thử. Thông tin đó xuất hiện ở S004 sau khi A hỏi.
 - Rà lại a881c8a1-7fe1-53db-bfa0-6b000a537c4e lượt 1. Giữ cách nói tự nhiên khi người góp ý gọi tên bản dự kiến phát.
 - Rà lại 0016fff6-0ec1-5a9a-8469-29379144b2e3 lượt note. Đối lại số lượt với nhãn vai trước khi bàn giao.
+
+### Kiểm độc lập E01
+
+S001 thống nhất xem khách lần đầu có tìm được bàn tiếp đón. S002 cho ví dụ B trên ảnh và biển. S003 hỏi ý định bố trí QR cạnh sơ đồ; S004 phân biệt bản thử với bản phát và thử chỉ đường trước khi sửa ảnh.
+
+- Đọc B16 dòng 336–355 về xác nhận phạm vi và hạn, B01 dòng 4074–4092 về góp ý cụ thể, B06 dòng 1836–1843 về なかなか. Hash cảnh tác giả dùng JSON UTF-8 thụt hai khoảng, không LF sau object; file hội thoại có LF cuối.
+
+- S003 (11291fa4-0a75-53dc-85b4-66758338ad85), 03. Hỏi người dùng giấy có nhận ra sơ đồ. Người làm mới quan sát một người định quét QR trước, lời Nhật dùng 読み取る đúng thao tác.
+
+### Kiểm độc lập E02
+
+S005 nút mang tên xác nhận nhưng thao tác thực sự gửi. S006 được sửa nhãn và hỏi trước khi khách bấm. S007 bị giới hạn nút nhà cung cấp nên thêm lời và kiểm màn hình. S008 quyết định độc lập sửa ngày sai trước khoảng trắng.
+
+- Đọc B06 dòng 533–539 và bài V10 sj-trung-21 dòng 87–101 về 今一つ.
+
+- S005 (1639b538-0e1a-59f9-af61-14ea83901a02), 02. Dùng 今一つわかりません tự nhiên để nói khách chưa rõ điều xảy ra khi bấm. Giữ tình huống nút trông như mở bước xác nhận nhưng đã gửi.
+
+- S007 (de52b1aa-6b52-5f8b-a19e-13e19f85fb86), 04. Chỉ sau khi hỏi ràng buộc quyền chỉnh mới đề xuất thêm câu trên nút. Chỉnh lời Nhật diễn đạt màn hình điện thoại.
+
+### Kiểm độc lập E03
+
+S009 nhận bản sửa hai điểm lúc 15 giờ thứ Tư, xem lúc 16 giờ. S010 giới hạn phạm vi sau hiểu nhầm làm lại hai màn hình. S011 bàn máy tính đã kiểm, cần thử điện thoại. S012 phát hiện nút lọt khỏi khung, rút câu rồi thử lại cả ngày 20.
+
+- S011 (e7138fb0-4a84-598c-a99e-808c57afabd5), 05. Bối cảnh cho biết đang thử một bản sửa thử nghiệm, nên việc chọn ngày và gửi là để kiểm. Chỉ máy tính đã đạt, điện thoại còn phải thử.
+
+- S012 (69665d2b-1fd0-5781-86d4-0aaccb70f826), 04. Sau lỗi phải cuộn mới thấy nút, giữ ý thông báo và thu ngắn câu chữ. Người học còn yêu cầu thử cùng ngày 20 trên màn hình nhỏ.
+
+### Kiểm độc lập E04
+
+S013 người học đổi sang vai người làm báo ý trái nhau. S014 trưởng nhóm sẽ hỏi và chốt tới 11:30, Lan gửi hai mẫu trước tối và chờ. S015 kết quả thử dẫn tới hạn ở dòng đầu, mục khác mở ra xem, giữ nút. Lan gửi lúc 15 giờ hoặc sớm hơn để kiểm với khách lần đầu.
+
+- S013 (8e88313f-46da-5097-8324-c72493e113f9), 02. Nêu đủ ảnh hưởng của hiện hết và gấp lại. Lời trưởng nhóm nêu rõ cần chọn thông tin khách thấy trước khi đăng ký.
+
+- S015 (cd636058-e462-56c0-bb1e-f9a737305e61), 04. Nhắc đủ hạn ở dòng đầu và lưu ý khác cho mở để đọc, rồi kiểm giữ vị trí nút. Lời trưởng nhóm đặt hạn 15 giờ để cho người mới thử.
