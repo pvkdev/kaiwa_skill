@@ -1,0 +1,1701 @@
+{
+  "stage_uid": "c184671f-e96f-5cd1-a356-a945f3a6f28e",
+  "admin_sources": {
+    "inquire": {
+      "kind": "book",
+      "book_id": "B21",
+      "title": "日本語でビジネス会話 ― 中級編 ― 本文冊",
+      "path": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 本文冊/chapters/15-toiawase.md",
+      "start_line": 22,
+      "end_line": 40,
+      "use_vi": "Hỏi thông tin dịch vụ theo mục thời gian, phí và điều kiện sử dụng."
+    },
+    "observe": {
+      "kind": "book",
+      "book_id": "B27",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "path": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/17-script-bai-04.md",
+      "start_line": 19,
+      "end_line": 33,
+      "use_vi": "Đưa dấu hiệu thấy được và thời điểm, chuyển việc chẩn đoán cho người có thẩm quyền."
+    },
+    "calendar": {
+      "kind": "book",
+      "book_id": "B21",
+      "title": "日本語でビジネス会話 ― 中級編 ― 本文冊",
+      "path": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 本文冊/chapters/09-yoyaku.md",
+      "start_line": 109,
+      "end_line": 119,
+      "use_vi": "Yêu cầu đổi hoặc giữ lịch, tách thông tin đã ghi nhận khỏi lịch có thể chốt."
+    },
+    "monthly": {
+      "kind": "web",
+      "title": "タイムズ 駐車場の契約の種類はどのようなものがありますか",
+      "url": "https://times-info.net/monthly/faq/08/",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc mục 月極 và 定期, có nơi dành ô và ngoại lệ. Bài chỉ nêu chỗ theo tháng và chỗ tính theo giờ tại bãi giả định, không suy mỗi nơi có chỗ riêng."
+    },
+    "rate": {
+      "kind": "web",
+      "title": "タイムズ 時間貸駐車場の最大料金について",
+      "url": "https://times-info.net/info/max_fee/",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc ba kiểu giá tối đa và ví dụ phí theo thời gian. 300 yên/giờ, trần 900 yên tới 18:00 là biển giả định. FAQ 02 chỉ đọc snippet vì mở trực tiếp trả 403, dùng trang giải thích riêng mở đủ."
+    },
+    "gate": {
+      "kind": "web",
+      "title": "タイムズ 精算機から駐車券が戻ってくる場合",
+      "url": "https://times-info.net/faq/06/",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc trường hợp trả vé và đường liên hệ intercom, báo tên bãi/mã bãi. S006 nêu cổng và vé bị trả; chỉ dẫn cho máy hư cấu, không dùng số của Times cho nơi khác."
+    },
+    "jaf": {
+      "kind": "web",
+      "title": "JAF 走行中にタイヤ付近から異音がする場合の原因と対処方法",
+      "url": "https://jaf.or.jp/common/car-trouble-qa/engine-malfunction/noise/faq47",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc phần có nhiều nguyên nhân, cần kiểm và gọi cứu hộ sau khi bảo đảm an toàn. S011/S022/S023 khu đỗ hợp lệ, hỏi hỗ trợ và chờ, không suy ra bệnh của xe hay cho phép tự chạy khi chưa kiểm."
+    },
+    "mlit": {
+      "kind": "web",
+      "title": "青森運輸支局 自動車の点検整備",
+      "url": "https://wwwtb.mlit.go.jp/tohoku/am/am-sub03-031.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc phân biệt kiểm/bảo dưỡng với 車検. Lời thoại hỏi kiểm triệu chứng hoặc trao đổi việc riêng của xe, không suy đã kiểm định hay đặt chu kỳ chung."
+    },
+    "workshop": {
+      "kind": "web",
+      "title": "トヨタ アフターサービス トヨタの車検",
+      "url": "https://toyota.jp/after_service/shaken/about/?padid=from_after_service_syaken_flow_1",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc quy trình hãng gồm tiếp nhận yêu cầu, kiểm trước, giải thích việc thêm và đối soát trước giao. Chỉ vận dụng cách xác nhận dịch vụ, không đồng nhất sửa với kiểm định."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "fcd0b16e-7644-5688-a660-c18edc145c96",
+      "event_id": "E01",
+      "context_vi": "Chủ xe muốn thử bãi gần ga chiều nay và hỏi có thể thuê theo tháng nếu dùng thường xuyên. Quầy bãi đang xem hai loại chỗ riêng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fcd0b16e-7644-5688-a660-c18edc145c96-u01",
+          "speaker_id": "a",
+          "ja": "今日の午後に二時間ほど停めたいです。よければ来月から月極でも借りたいんですが、どちらも空きがありますか。",
+          "vi": "Chiều nay tôi muốn đỗ khoảng hai tiếng. Nếu hợp, tháng sau tôi muốn thuê theo tháng. Cả hai loại còn chỗ không ạ?"
+        },
+        {
+          "id": "fcd0b16e-7644-5688-a660-c18edc145c96-u02",
+          "speaker_id": "b",
+          "ja": "時間貸しなら今は空いています。月極は満車で、次に空く日はまだ分かりません。",
+          "vi": "Chỗ tính theo giờ hiện còn ạ. Chỗ thuê theo tháng đã kín và chưa biết khi nào trống."
+        },
+        {
+          "id": "fcd0b16e-7644-5688-a660-c18edc145c96-u03",
+          "speaker_id": "a",
+          "ja": "では今日は時間貸しにします。月極に空きが出たら知らせてもらえますか。",
+          "vi": "Vậy hôm nay tôi đỗ theo giờ. Khi có suất thuê tháng trống, anh báo cho tôi được không ạ?"
+        },
+        {
+          "id": "fcd0b16e-7644-5688-a660-c18edc145c96-u04",
+          "speaker_id": "b",
+          "ja": "はい、空き待ちの受付ができます。月極の契約は空きが出てから改めてご案内します。",
+          "vi": "Vâng, chị có thể đăng ký đợi chỗ. Khi có suất trống, chúng tôi sẽ hướng dẫn tiếp về hợp đồng theo tháng ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "monthly",
+          "inquire"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fcd0b16e-7644-5688-a660-c18edc145c96-u01": {
+            "kind": "original_extension"
+          },
+          "fcd0b16e-7644-5688-a660-c18edc145c96-u02": {
+            "kind": "original_extension"
+          },
+          "fcd0b16e-7644-5688-a660-c18edc145c96-u03": {
+            "kind": "original_extension"
+          },
+          "fcd0b16e-7644-5688-a660-c18edc145c96-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "662bdc37-89c4-5f56-aae0-19f0c1e2ac92",
+      "event_id": "E01",
+      "context_vi": "Chủ xe có xe cao 1,83 m tính cả thanh trên nóc. Cô đang đứng ở quầy, chưa đưa xe vào bãi và muốn hỏi đúng khu nhận xe.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "662bdc37-89c4-5f56-aae0-19f0c1e2ac92-u01",
+          "speaker_id": "a",
+          "ja": "屋根のバーを含めて、高さが一メートル八十三センチです。入れる区画はありますか。",
+          "vi": "Cả thanh trên nóc thì xe cao 1 mét 83. Có khu nào xe vào được không ạ?"
+        },
+        {
+          "id": "662bdc37-89c4-5f56-aae0-19f0c1e2ac92-u02",
+          "speaker_id": "b",
+          "ja": "その高さでは機械式には入りません。屋外の平面区画なら確認できます。車幅はどのくらいですか。",
+          "vi": "Cao như vậy thì không vào khu đỗ tự động ở đây được. Tôi có thể xem khu đỗ ngoài trời. Xe rộng khoảng bao nhiêu ạ?"
+        },
+        {
+          "id": "662bdc37-89c4-5f56-aae0-19f0c1e2ac92-u03",
+          "speaker_id": "a",
+          "ja": "車幅は一メートル七十八センチです。平面区画の条件も見せてもらえますか。",
+          "vi": "Xe rộng 1 mét 78. Anh cho tôi xem cả điều kiện của khu đỗ ngoài trời nhé?"
+        },
+        {
+          "id": "662bdc37-89c4-5f56-aae0-19f0c1e2ac92-u04",
+          "speaker_id": "b",
+          "ja": "はい。空いている区画をご案内しますので、入る前に、そこの表示と車の寸法を照らし合わせてください。",
+          "vi": "Vâng. Tôi chỉ khu còn trống, rồi trước khi vào chị đối chiếu kích thước xe với biển ở đó nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "inquire"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "662bdc37-89c4-5f56-aae0-19f0c1e2ac92-u01": {
+            "kind": "original_extension"
+          },
+          "662bdc37-89c4-5f56-aae0-19f0c1e2ac92-u02": {
+            "kind": "original_extension"
+          },
+          "662bdc37-89c4-5f56-aae0-19f0c1e2ac92-u03": {
+            "kind": "original_extension"
+          },
+          "662bdc37-89c4-5f56-aae0-19f0c1e2ac92-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "cf3837ad-b581-5bd2-9d9c-302d62ff4857",
+      "event_id": "E01",
+      "context_vi": "Ở bãi trong bài, ô trống xa lối ra xe. Chủ xe có thùng đồ và muốn kiểm có lối đi bộ tới nơi cần đến không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "cf3837ad-b581-5bd2-9d9c-302d62ff4857-u01",
+          "speaker_id": "b",
+          "ja": "出口に近い区画は満車で、いま空いているのは奥の区画です。",
+          "vi": "Khu gần lối ra xe đã kín. Hiện chỉ còn chỗ ở phía trong ạ."
+        },
+        {
+          "id": "cf3837ad-b581-5bd2-9d9c-302d62ff4857-u02",
+          "speaker_id": "a",
+          "ja": "荷物を持って出るので、奥から建物まで車道を通らずに行けるか知りたいです。",
+          "vi": "Tôi phải xách đồ ra. Từ khu phía trong đến tòa nhà có đi được mà không qua làn xe không ạ?"
+        },
+        {
+          "id": "cf3837ad-b581-5bd2-9d9c-302d62ff4857-u03",
+          "speaker_id": "b",
+          "ja": "奥の区画の横に歩行者用の通路があります。この図の点線で、建物の入口まで続いています。",
+          "vi": "Bên cạnh khu phía trong có lối đi bộ, là đường nét đứt trên sơ đồ này. Lối đó dẫn tới cửa tòa nhà ạ."
+        },
+        {
+          "id": "cf3837ad-b581-5bd2-9d9c-302d62ff4857-u04",
+          "speaker_id": "a",
+          "ja": "それなら大丈夫です。奥に停めて、その通路を使います。",
+          "vi": "Nếu vậy thì được ạ. Tôi sẽ đỗ phía trong và đi lối đó."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "inquire"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "cf3837ad-b581-5bd2-9d9c-302d62ff4857-u01": {
+            "kind": "original_extension"
+          },
+          "cf3837ad-b581-5bd2-9d9c-302d62ff4857-u02": {
+            "kind": "original_extension"
+          },
+          "cf3837ad-b581-5bd2-9d9c-302d62ff4857-u03": {
+            "kind": "original_extension"
+          },
+          "cf3837ad-b581-5bd2-9d9c-302d62ff4857-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0",
+      "event_id": "E01",
+      "context_vi": "Chủ xe xem biển ở bãi đỗ trong bài lúc 15 giờ. Cô đọc 300 yên thành giá cả ngày, rồi hỏi rõ trước khi vào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0-u01",
+          "speaker_id": "a",
+          "ja": "看板に三百円とありますが、今日は一日三百円ですか。",
+          "vi": "Biển ghi 300 yên. Hôm nay là 300 yên cả ngày ạ?"
+        },
+        {
+          "id": "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0-u02",
+          "speaker_id": "b",
+          "ja": "三百円は一時間の料金です。本日は十八時までに出庫する場合、最大九百円です。",
+          "vi": "300 yên là tiền một giờ. Hôm nay, nếu rời bãi chậm nhất vào 18 giờ, tổng tối đa là 900 yên ạ."
+        },
+        {
+          "id": "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0-u03",
+          "speaker_id": "a",
+          "ja": "いま十五時です。ちょうど二時間で出るなら六百円で、十八時を過ぎたら別の扱いですね。",
+          "vi": "Bây giờ là 15 giờ. Nếu đúng hai giờ sau tôi ra thì 600 yên. Qua 18 giờ là cách tính khác nhỉ."
+        },
+        {
+          "id": "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0-u04",
+          "speaker_id": "b",
+          "ja": "はい、十七時に出れば六百円です。十八時を過ぎた場合の料金は、看板の下の段をご確認ください。",
+          "vi": "Vâng, ra lúc 17 giờ là 600 yên. Mức phí từ sau mốc 18 giờ ghi ở hàng dưới của biển ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rate"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-32-b06-160"
+        ],
+        "turn_origins": {
+          "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0-u01": {
+            "kind": "original_extension"
+          },
+          "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0-u02": {
+            "kind": "original_extension"
+          },
+          "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0-u03": {
+            "kind": "original_extension"
+          },
+          "d03aab4c-0b93-5ae7-a820-9e0eb6640ba0-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d9e68b8f-d5f9-5225-a511-4fbfec80efc1",
+      "event_id": "E01",
+      "context_vi": "Chủ xe đã hiểu mức theo giờ ở bãi trong bài và dự kiến ra lúc 17 giờ. Cô chọn đỗ lượt này, hỏi phải báo đâu nếu cổng không mở.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d9e68b8f-d5f9-5225-a511-4fbfec80efc1-u01",
+          "speaker_id": "a",
+          "ja": "十七時には出られるので、今日はここを使います。入口のゲートが開かないときは、どちらに連絡すればいいですか。",
+          "vi": "Tôi có thể ra lúc 17 giờ nên hôm nay sẽ đỗ ở đây. Nếu cổng vào không mở, tôi liên hệ đâu ạ?"
+        },
+        {
+          "id": "d9e68b8f-d5f9-5225-a511-4fbfec80efc1-u02",
+          "speaker_id": "b",
+          "ja": "入口の機械のインターホンを押してください。係につながります。",
+          "vi": "Chị bấm nút gọi trên máy ở lối vào. Nút đó nối với nhân viên trực ạ."
+        },
+        {
+          "id": "d9e68b8f-d5f9-5225-a511-4fbfec80efc1-u03",
+          "speaker_id": "a",
+          "ja": "そのとき、入口にいることと、画面に出た表示を伝えればいいですか。",
+          "vi": "Khi đó tôi báo mình ở lối vào và đọc chữ hiện trên màn hình được không ạ?"
+        },
+        {
+          "id": "d9e68b8f-d5f9-5225-a511-4fbfec80efc1-u04",
+          "speaker_id": "b",
+          "ja": "はい。それから駐車場名をお伝えください。入口の料金看板に書いてあります。",
+          "vi": "Vâng. Chị cho thêm tên bãi, có ghi trên biển giá ở lối vào ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rate",
+          "gate"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d9e68b8f-d5f9-5225-a511-4fbfec80efc1-u01": {
+            "kind": "original_extension"
+          },
+          "d9e68b8f-d5f9-5225-a511-4fbfec80efc1-u02": {
+            "kind": "original_extension"
+          },
+          "d9e68b8f-d5f9-5225-a511-4fbfec80efc1-u03": {
+            "kind": "original_extension"
+          },
+          "d9e68b8f-d5f9-5225-a511-4fbfec80efc1-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a880a820-35e4-55de-8a90-f1e51be8cd0a",
+      "event_id": "E02",
+      "context_vi": "Xe đã đứng ở cổng ra số hai. Máy trả lại vé và màn hình không hiện số tiền; chủ xe gọi nhân viên bằng intercom của bãi trong bài.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a880a820-35e4-55de-8a90-f1e51be8cd0a-u01",
+          "speaker_id": "a",
+          "ja": "出口で駐車券を入れたら、そのまま戻ってきました。料金が画面に出ません。",
+          "vi": "Tôi đưa vé vào máy ở lối ra thì vé bị trả lại. Màn hình không hiện số tiền ạ."
+        },
+        {
+          "id": "a880a820-35e4-55de-8a90-f1e51be8cd0a-u02",
+          "speaker_id": "b",
+          "ja": "出口の番号と、ここに来る前に精算機でお支払いになったかを教えてください。",
+          "vi": "Chị cho tôi số cổng ra và cho biết trước khi tới đây chị đã thanh toán ở máy chưa ạ?"
+        },
+        {
+          "id": "a880a820-35e4-55de-8a90-f1e51be8cd0a-u03",
+          "speaker_id": "a",
+          "ja": "二番出口です。まだ支払っていません。券は手元にあります。",
+          "vi": "Cổng số hai. Tôi chưa trả tiền và vé vẫn ở chỗ tôi ạ."
+        },
+        {
+          "id": "a880a820-35e4-55de-8a90-f1e51be8cd0a-u04",
+          "speaker_id": "b",
+          "ja": "ありがとうございます。二番の機械を確認します。駐車券はお持ちのまま、係の案内をお待ちください。",
+          "vi": "Cảm ơn chị. Tôi kiểm máy số hai. Chị giữ vé và đợi nhân viên hướng dẫn giúp tôi nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gate"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a880a820-35e4-55de-8a90-f1e51be8cd0a-u01": {
+            "kind": "original_extension"
+          },
+          "a880a820-35e4-55de-8a90-f1e51be8cd0a-u02": {
+            "kind": "original_extension"
+          },
+          "a880a820-35e4-55de-8a90-f1e51be8cd0a-u03": {
+            "kind": "original_extension"
+          },
+          "a880a820-35e4-55de-8a90-f1e51be8cd0a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f359a024-c85a-501a-9db0-7ea3328b9c18",
+      "event_id": "E02",
+      "context_vi": "Xe đỗ ở B12 trong bãi. Một xe khác đang chắn lối và chủ xe muốn nhờ quầy tìm cách xử lý.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f359a024-c85a-501a-9db0-7ea3328b9c18-u01",
+          "speaker_id": "a",
+          "ja": "私の車の前に別の車が止まっていて、出られません。係の方に来ていただけますか。",
+          "vi": "Có xe khác đứng chắn trước xe tôi nên tôi không ra được. Anh cử nhân viên đến giúp được không ạ?"
+        },
+        {
+          "id": "f359a024-c85a-501a-9db0-7ea3328b9c18-u02",
+          "speaker_id": "b",
+          "ja": "現場を確認します。お客様の区画番号と、前の車が止まっている位置を教えてください。",
+          "vi": "Tôi sẽ kiểm tại chỗ. Chị cho số ô của chị và vị trí chiếc xe phía trước nhé."
+        },
+        {
+          "id": "f359a024-c85a-501a-9db0-7ea3328b9c18-u03",
+          "speaker_id": "a",
+          "ja": "Ｂ１２です。白い車が、Ｂ１２の前の通路にいます。私はまだ車を動かしていません。",
+          "vi": "Ô B12. Xe trắng đứng ở lối đi trước B12. Tôi vẫn chưa di chuyển xe của mình ạ."
+        },
+        {
+          "id": "f359a024-c85a-501a-9db0-7ea3328b9c18-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。係を向かわせます。前の車の持ち主に連絡が取れるか、こちらで確認します。",
+          "vi": "Tôi rõ rồi. Tôi cử người tới. Bên tôi sẽ xem có liên hệ được chủ xe phía trước không ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gate"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f359a024-c85a-501a-9db0-7ea3328b9c18-u01": {
+            "kind": "original_extension"
+          },
+          "f359a024-c85a-501a-9db0-7ea3328b9c18-u02": {
+            "kind": "original_extension"
+          },
+          "f359a024-c85a-501a-9db0-7ea3328b9c18-u03": {
+            "kind": "original_extension"
+          },
+          "f359a024-c85a-501a-9db0-7ea3328b9c18-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c52743cb-6258-57c1-95bf-994451e7389d",
+      "event_id": "E02",
+      "context_vi": "Nhân viên bãi đã nhờ tìm chủ xe chắn trước ô B12 nhưng chưa thấy. Chủ xe muốn rời khu xe qua lại để đợi.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c52743cb-6258-57c1-95bf-994451e7389d-u01",
+          "speaker_id": "b",
+          "ja": "館内放送でお呼びしましたが、まだ連絡がありません。お車を出せる時刻は、今は分かりません。",
+          "vi": "Chúng tôi đã nhắn trên loa trong tòa nhà nhưng chưa ai liên hệ. Hiện chưa biết lúc nào chị đưa xe ra được ạ."
+        },
+        {
+          "id": "c52743cb-6258-57c1-95bf-994451e7389d-u02",
+          "speaker_id": "a",
+          "ja": "通路だと車が通るので、入口の管理室で待ってもいいですか。",
+          "vi": "Ở lối đi có xe qua, tôi đợi ở phòng quản lý tại lối vào được không ạ?"
+        },
+        {
+          "id": "c52743cb-6258-57c1-95bf-994451e7389d-u03",
+          "speaker_id": "b",
+          "ja": "はい。管理室の前でお待ちください。十五分以内に、見つかったかどうかお伝えします。",
+          "vi": "Vâng. Chị đợi trước phòng quản lý. Trong vòng 15 phút tôi sẽ báo đã tìm được chưa ạ."
+        },
+        {
+          "id": "c52743cb-6258-57c1-95bf-994451e7389d-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。十五分たっても何もなければ、管理室で聞きます。",
+          "vi": "Tôi rõ rồi. Nếu qua 15 phút vẫn chưa có tin, tôi hỏi ở phòng quản lý ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gate",
+          "calendar"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c52743cb-6258-57c1-95bf-994451e7389d-u01": {
+            "kind": "original_extension"
+          },
+          "c52743cb-6258-57c1-95bf-994451e7389d-u02": {
+            "kind": "original_extension"
+          },
+          "c52743cb-6258-57c1-95bf-994451e7389d-u03": {
+            "kind": "original_extension"
+          },
+          "c52743cb-6258-57c1-95bf-994451e7389d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a324ad23-1714-5817-848d-f7a1f8f8aba0",
+      "event_id": "E02",
+      "context_vi": "Cổng phía đông của bãi trong bài đang đóng, nhưng xe của khách đã thanh toán. Nhân viên tại chỗ có thể hướng dẫn qua lối tây.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a324ad23-1714-5817-848d-f7a1f8f8aba0-u01",
+          "speaker_id": "b",
+          "ja": "東口は係が点検中です。いまは西口から出ていただけます。",
+          "vi": "Nhân viên đang kiểm lối đông. Hiện chị có thể ra từ lối tây ạ."
+        },
+        {
+          "id": "a324ad23-1714-5817-848d-f7a1f8f8aba0-u02",
+          "speaker_id": "a",
+          "ja": "東口へ来る前に精算しました。この券のまま西口を使えますか。",
+          "vi": "Tôi đã trả tiền trước khi tới lối đông. Tôi dùng chính vé này ở lối tây được không ạ?"
+        },
+        {
+          "id": "a324ad23-1714-5817-848d-f7a1f8f8aba0-u03",
+          "speaker_id": "b",
+          "ja": "はい、精算済みです。青い「西出口」の表示に沿って、係員がご案内します。",
+          "vi": "Vâng, vé này đã thanh toán. Nhân viên sẽ hướng dẫn theo biển xanh ghi lối ra phía tây ạ."
+        },
+        {
+          "id": "a324ad23-1714-5817-848d-f7a1f8f8aba0-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。西出口の表示と係の方の案内に従います。",
+          "vi": "Tôi hiểu rồi. Tôi sẽ theo biển lối tây và hướng dẫn của nhân viên ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gate"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a324ad23-1714-5817-848d-f7a1f8f8aba0-u01": {
+            "kind": "original_extension"
+          },
+          "a324ad23-1714-5817-848d-f7a1f8f8aba0-u02": {
+            "kind": "original_extension"
+          },
+          "a324ad23-1714-5817-848d-f7a1f8f8aba0-u03": {
+            "kind": "original_extension"
+          },
+          "a324ad23-1714-5817-848d-f7a1f8f8aba0-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f96ce1d6-ea55-546b-8f45-72ff68b6b939",
+      "event_id": "E02",
+      "context_vi": "Chủ xe đã ra được bằng lối tây và đỗ ở ô chờ ngoài bãi. Cô muốn biết cách xem lối nào mở và gọi ai nếu lần tới lại gặp cổng đóng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên bãi xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f96ce1d6-ea55-546b-8f45-72ff68b6b939-u01",
+          "speaker_id": "a",
+          "ja": "西口から出られました。ありがとうございました。次は、どの出口が開いているかどこで確認できますか。",
+          "vi": "Tôi ra được qua lối tây rồi. Cảm ơn anh. Lần sau tôi xem lối nào mở ở đâu ạ?"
+        },
+        {
+          "id": "f96ce1d6-ea55-546b-8f45-72ff68b6b939-u02",
+          "speaker_id": "b",
+          "ja": "精算機の横に、閉鎖中の出口を知らせる表示があります。出る前にそこをご確認ください。",
+          "vi": "Cạnh máy thanh toán có bảng báo lối nào đang đóng. Chị xem ở đó trước khi ra nhé."
+        },
+        {
+          "id": "f96ce1d6-ea55-546b-8f45-72ff68b6b939-u03",
+          "speaker_id": "a",
+          "ja": "表示が分からないときは、出る前にインターホンで聞いてもいいですか。",
+          "vi": "Khi chưa hiểu biển, tôi hỏi bằng nút gọi trước khi ra được không ạ?"
+        },
+        {
+          "id": "f96ce1d6-ea55-546b-8f45-72ff68b6b939-u04",
+          "speaker_id": "b",
+          "ja": "はい。いまいる場所と、使おうとしている出口をお知らせください。",
+          "vi": "Vâng. Chị cho biết chỗ đang đứng và lối chị định dùng ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "gate"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f96ce1d6-ea55-546b-8f45-72ff68b6b939-u01": {
+            "kind": "original_extension"
+          },
+          "f96ce1d6-ea55-546b-8f45-72ff68b6b939-u02": {
+            "kind": "original_extension"
+          },
+          "f96ce1d6-ea55-546b-8f45-72ff68b6b939-u03": {
+            "kind": "original_extension"
+          },
+          "f96ce1d6-ea55-546b-8f45-72ff68b6b939-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "041832a7-a731-51eb-a944-5bac427df8ea",
+      "event_id": "E03",
+      "context_vi": "Chủ xe đã dừng hợp lệ trong bãi và gọi gara vì tiếng lặp gần bánh trước bên phải. Cô chỉ biết điều mình nghe, chưa có ai kiểm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "041832a7-a731-51eb-a944-5bac427df8ea-u01",
+          "speaker_id": "a",
+          "ja": "昨日から、ゆっくり走ると右前のタイヤのあたりでカタカタ音がします。今は駐車場に停めています。",
+          "vi": "Từ hôm qua, khi chạy chậm tôi nghe tiếng lạch cạch gần bánh trước bên phải. Giờ xe đã đỗ trong bãi ạ."
+        },
+        {
+          "id": "041832a7-a731-51eb-a944-5bac427df8ea-u02",
+          "speaker_id": "c",
+          "ja": "いまは停めているんですね。音は毎回ですか。何かランプが点いたかも分かりますか。",
+          "vi": "Xe đang đỗ rồi nhỉ. Chạy lần nào cũng nghe hay sao ạ? Chị có thấy đèn nào bật không?"
+        },
+        {
+          "id": "041832a7-a731-51eb-a944-5bac427df8ea-u03",
+          "speaker_id": "a",
+          "ja": "ゆっくり走ったときに何度か聞こえました。ランプは見た範囲では点いていません。どうやって点検を頼めばいいでしょうか。",
+          "vi": "Tôi nghe vài lần khi chạy chậm. Trong tầm tôi thấy thì không có đèn nào sáng. Tôi nhờ kiểm bằng cách nào ạ?"
+        },
+        {
+          "id": "041832a7-a731-51eb-a944-5bac427df8ea-u04",
+          "speaker_id": "c",
+          "ja": "音だけでは原因は分かりません。そこから動かさず、ロードサービスに場所と症状を伝えて、現地で見てもらう方法を確認してください。",
+          "vi": "Chỉ nghe tả tiếng thì chưa biết nguyên nhân ạ. Chị giữ xe ở đó, báo vị trí và dấu hiệu cho đội hỗ trợ ven đường, rồi hỏi cách để họ kiểm tại chỗ nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe",
+          "jaf"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "041832a7-a731-51eb-a944-5bac427df8ea-u01": {
+            "kind": "original_extension"
+          },
+          "041832a7-a731-51eb-a944-5bac427df8ea-u02": {
+            "kind": "original_extension"
+          },
+          "041832a7-a731-51eb-a944-5bac427df8ea-u03": {
+            "kind": "original_extension"
+          },
+          "041832a7-a731-51eb-a944-5bac427df8ea-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0b985be4-9833-5a1a-9401-d60c473a47ce",
+      "event_id": "E03",
+      "context_vi": "Đội hỗ trợ đã đưa xe đến gara. Chủ xe hỏi gara có thể kiểm trong ngày không và cần nói rõ việc nào sẽ được báo hôm nay.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0b985be4-9833-5a1a-9401-d60c473a47ce-u01",
+          "speaker_id": "a",
+          "ja": "先ほど運んでいただいた車ですが、今日中に見ていただけますか。",
+          "vi": "Về chiếc xe vừa được đưa đến, hôm nay anh có kiểm giúp tôi được không ạ?"
+        },
+        {
+          "id": "0b985be4-9833-5a1a-9401-d60c473a47ce-u02",
+          "speaker_id": "c",
+          "ja": "受付は済んでいます。十五時頃から点検できますが、今日中に原因が分かるかはまだお約束できません。",
+          "vi": "Đã tiếp nhận xe rồi ạ. Khoảng 15 giờ có thể bắt đầu kiểm. Còn có biết nguyên nhân trong hôm nay hay không thì chưa hẹn chắc được."
+        },
+        {
+          "id": "0b985be4-9833-5a1a-9401-d60c473a47ce-u03",
+          "speaker_id": "a",
+          "ja": "もし原因まで分からなくても、何時までに連絡をいただけますか。",
+          "vi": "Dù chưa tìm ra nguyên nhân, chậm nhất mấy giờ tôi nhận được tin ạ?"
+        },
+        {
+          "id": "0b985be4-9833-5a1a-9401-d60c473a47ce-u04",
+          "speaker_id": "c",
+          "ja": "十七時までに、確認できたことと、次に必要な確認をお電話します。",
+          "vi": "Chậm nhất 17 giờ, tôi sẽ gọi báo điều đã xác nhận và việc cần kiểm tiếp ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "calendar",
+          "observe"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0b985be4-9833-5a1a-9401-d60c473a47ce-u01": {
+            "kind": "original_extension"
+          },
+          "0b985be4-9833-5a1a-9401-d60c473a47ce-u02": {
+            "kind": "original_extension"
+          },
+          "0b985be4-9833-5a1a-9401-d60c473a47ce-u03": {
+            "kind": "original_extension"
+          },
+          "0b985be4-9833-5a1a-9401-d60c473a47ce-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c",
+      "event_id": "E03",
+      "context_vi": "Gara trong bài cần giữ xe tới sáng mai để kiểm lại lúc máy nguội. Chủ xe hỏi có thể mượn xe thay hay đi phương tiện công cộng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u01",
+          "speaker_id": "c",
+          "ja": "冷えた状態でも確認したいので、車は明日の朝までお預かりしてもいいですか。",
+          "vi": "Chúng tôi muốn kiểm thêm khi máy đã nguội. Tôi giữ xe tới sáng mai được không ạ?"
+        },
+        {
+          "id": "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u02",
+          "speaker_id": "a",
+          "ja": "明日の朝までですね。帰るのに代車を借りられますか。",
+          "vi": "Đến sáng mai nhỉ. Tôi mượn xe thay để về được không ạ?"
+        },
+        {
+          "id": "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u03",
+          "speaker_id": "c",
+          "ja": "今日お出しできる代車はありません。駅方面に行くバスでしたら、近くに停留所があります。",
+          "vi": "Hôm nay không còn xe thay cho mượn ạ. Nếu đi xe buýt về phía ga thì có điểm dừng ở gần đây."
+        },
+        {
+          "id": "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u04",
+          "speaker_id": "a",
+          "ja": "ではバスで帰ります。停留所までの道を、地図で教えていただけますか。",
+          "vi": "Vậy tôi đi buýt về. Anh chỉ đường tới điểm dừng trên bản đồ giúp tôi được không ạ?"
+        },
+        {
+          "id": "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u05",
+          "speaker_id": "c",
+          "ja": "はい。歩道を通って行ける停留所を、この地図でご案内します。",
+          "vi": "Vâng. Tôi sẽ chỉ trên bản đồ điểm dừng có thể đi tới bằng vỉa hè ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "inquire",
+          "workshop"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u01": {
+            "kind": "original_extension"
+          },
+          "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u02": {
+            "kind": "original_extension"
+          },
+          "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u03": {
+            "kind": "original_extension"
+          },
+          "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u04": {
+            "kind": "original_extension"
+          },
+          "dcea1a6f-6cbd-54f8-93b7-eecd8e59565c-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d19a8be5-4557-5871-8eb0-09b0c91d4242",
+      "event_id": "E03",
+      "context_vi": "Chủ xe gọi hỏi về tiếng nghe khi qua gờ giảm tốc. Cô muốn gara kiểm trước và đọc báo giá trước khi đồng ý bất kỳ việc sửa nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d19a8be5-4557-5871-8eb0-09b0c91d4242-u01",
+          "speaker_id": "a",
+          "ja": "段差を越えるときに音がするので、一度見てほしいです。修理は見積もりを見てから決めたいです。",
+          "vi": "Xe có tiếng khi qua gờ nên tôi muốn nhờ kiểm một lần. Tôi muốn xem báo giá rồi mới quyết sửa ạ."
+        },
+        {
+          "id": "d19a8be5-4557-5871-8eb0-09b0c91d4242-u02",
+          "speaker_id": "c",
+          "ja": "分かりました。今回は点検だけなら三千三百円です。修理する場合の金額は、点検後に別にお出しします。",
+          "vi": "Tôi rõ rồi. Lần này, nếu chỉ kiểm thì 3.300 yên ạ. Giá sửa nếu có, chúng tôi sẽ báo riêng sau khi kiểm."
+        },
+        {
+          "id": "d19a8be5-4557-5871-8eb0-09b0c91d4242-u03",
+          "speaker_id": "a",
+          "ja": "点検料は承知しました。車は、私が返事をするまでそのままでお願いします。",
+          "vi": "Tôi hiểu phí kiểm rồi. Xin để nguyên xe tới khi tôi trả lời ạ."
+        },
+        {
+          "id": "d19a8be5-4557-5871-8eb0-09b0c91d4242-u04",
+          "speaker_id": "a",
+          "ja": "車はグレーのコンパクトカーで、ナンバーの下四桁は二八一六です。",
+          "vi": "Xe là ô tô cỡ nhỏ màu xám, bốn số cuối biển là 2816 ạ."
+        },
+        {
+          "id": "d19a8be5-4557-5871-8eb0-09b0c91d4242-u05",
+          "speaker_id": "c",
+          "ja": "かしこまりました。原因が分かっても、先に見積もりをご案内します。ご了承をいただくまで、修理には入りません。",
+          "vi": "Tôi rõ ạ. Dù tìm được nguyên nhân, chúng tôi sẽ báo giá trước. Khi nào chị đồng ý, chúng tôi mới sửa."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "workshop",
+          "calendar"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-32-b07-102"
+        ],
+        "turn_origins": {
+          "d19a8be5-4557-5871-8eb0-09b0c91d4242-u01": {
+            "kind": "original_extension"
+          },
+          "d19a8be5-4557-5871-8eb0-09b0c91d4242-u02": {
+            "kind": "original_extension"
+          },
+          "d19a8be5-4557-5871-8eb0-09b0c91d4242-u03": {
+            "kind": "original_extension"
+          },
+          "d19a8be5-4557-5871-8eb0-09b0c91d4242-u04": {
+            "kind": "original_extension"
+          },
+          "d19a8be5-4557-5871-8eb0-09b0c91d4242-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1378c8be-6366-5514-8c68-65d82c242c38",
+      "event_id": "E03",
+      "context_vi": "Chủ xe đặt lịch để gara kiểm tiếng khi qua gờ, đã nghe phí kiểm. Xe sẽ được giao cho gara, thỏa thuận hiện tại chỉ là kiểm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1378c8be-6366-5514-8c68-65d82c242c38-u01",
+          "speaker_id": "a",
+          "ja": "段差を越えるときの音を見てもらう件です。グレーのコンパクトカーですが、水曜の十時にお願いできますか。",
+          "vi": "Tôi hỏi việc kiểm tiếng lúc qua gờ cho xe cỡ nhỏ màu xám. Anh xếp giúp 10 giờ thứ Tư được không ạ?"
+        },
+        {
+          "id": "1378c8be-6366-5514-8c68-65d82c242c38-u02",
+          "speaker_id": "c",
+          "ja": "はい、水曜十時でお取りしました。三千三百円の点検だけで受け付けています。",
+          "vi": "Vâng, tôi đã đặt 10 giờ thứ Tư. Phiếu tiếp nhận chỉ ghi việc kiểm giá 3.300 yên ạ."
+        },
+        {
+          "id": "1378c8be-6366-5514-8c68-65d82c242c38-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。見積もりが出たら、修理の前に私に電話してください。",
+          "vi": "Cảm ơn anh. Khi có báo giá, xin gọi cho tôi trước khi làm sửa chữa ạ."
+        },
+        {
+          "id": "1378c8be-6366-5514-8c68-65d82c242c38-u04",
+          "speaker_id": "c",
+          "ja": "承知しました。ナンバーが二八一六の車で、段差で音が出ると担当に伝え、ご登録の番号へご連絡します。",
+          "vi": "Tôi rõ rồi. Tôi chuyển thông tin biển xe kết thúc bằng 2816 và tiếng lúc qua gờ cho người phụ trách, rồi liên hệ số chị đã đăng ký ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "calendar",
+          "workshop"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1378c8be-6366-5514-8c68-65d82c242c38-u01": {
+            "kind": "original_extension"
+          },
+          "1378c8be-6366-5514-8c68-65d82c242c38-u02": {
+            "kind": "original_extension"
+          },
+          "1378c8be-6366-5514-8c68-65d82c242c38-u03": {
+            "kind": "original_extension"
+          },
+          "1378c8be-6366-5514-8c68-65d82c242c38-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b",
+      "event_id": "E04",
+      "context_vi": "Gara vừa kiểm xe và đưa một danh sách gồm hạng mục liên quan vận hành và một vết xước ngoài vỏ. Chủ xe hỏi chuyên viên tách độ ưu tiên theo tình trạng xe đã xem.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Cố vấn dịch vụ gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b-u01",
+          "speaker_id": "a",
+          "ja": "こちらのうち、早く対応したほうがいいものと、別の日に相談できるものを教えてください。",
+          "vi": "Anh cho tôi biết trong các mục này, mục nào nên xử lý sớm và mục nào có thể hẹn ngày khác để trao đổi ạ?"
+        },
+        {
+          "id": "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b-u02",
+          "speaker_id": "d",
+          "ja": "今回の点検では、バッテリーは早めの交換をおすすめします。ドアの浅い傷は、見た目の補修として別の日でもご相談できます。",
+          "vi": "Qua lần kiểm này, tôi đề nghị thay ắc quy sớm. Vết xước nông ở cửa là phần sửa ngoại hình, chị có thể hẹn trao đổi hôm khác ạ."
+        },
+        {
+          "id": "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b-u03",
+          "speaker_id": "a",
+          "ja": "交換を急ぐ理由も知りたいです。傷の補修とは別の欄に書いていただけますか。",
+          "vi": "Tôi muốn biết lý do cần thay sớm. Anh ghi ở mục riêng với phần sửa vết xước được không ạ?"
+        },
+        {
+          "id": "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b-u04",
+          "speaker_id": "d",
+          "ja": "はい。測定結果をお見せして、理由と費用を項目ごとにご説明します。",
+          "vi": "Vâng. Tôi sẽ cho chị xem kết quả đo và giải thích lý do cùng chi phí từng mục ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "workshop",
+          "mlit"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b-u01": {
+            "kind": "original_extension"
+          },
+          "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b-u02": {
+            "kind": "original_extension"
+          },
+          "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b-u03": {
+            "kind": "original_extension"
+          },
+          "638dd65f-6aeb-5692-b6b5-f2ea3ce6203b-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e0111652-d87d-55fc-9e2e-fa191ec64203",
+      "event_id": "E04",
+      "context_vi": "Chủ xe nghe báo giá sửa gạt mưa, tưởng thay cả cụm. Hai người đang nhìn dòng ghi phụ tùng trước khi duyệt.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Cố vấn dịch vụ gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e0111652-d87d-55fc-9e2e-fa191ec64203-u01",
+          "speaker_id": "a",
+          "ja": "ワイパーを交換すると伺いましたが、腕の部分も含めて全部取り替えるという意味ですか。",
+          "vi": "Tôi nghe nói thay gạt mưa. Có nghĩa là thay tất cả, cả tay gạt ạ?"
+        },
+        {
+          "id": "e0111652-d87d-55fc-9e2e-fa191ec64203-u02",
+          "speaker_id": "d",
+          "ja": "今回お出しした見積もりは、前のワイパーのゴムだけです。腕の部分は含まれていません。",
+          "vi": "Báo giá lần này chỉ gồm cao su của gạt mưa phía trước. Tay gạt không nằm trong đó ạ."
+        },
+        {
+          "id": "e0111652-d87d-55fc-9e2e-fa191ec64203-u03",
+          "speaker_id": "a",
+          "ja": "前のゴムだけですね。モーターの作業も、この金額には入っていないということですか。",
+          "vi": "Chỉ cao su phía trước nhỉ. Thao tác liên quan mô-tơ cũng không nằm trong số tiền này đúng không ạ?"
+        },
+        {
+          "id": "e0111652-d87d-55fc-9e2e-fa191ec64203-u04",
+          "speaker_id": "d",
+          "ja": "はい。その範囲で、部品代と工賃をこちらに分けてあります。",
+          "vi": "Vâng. Với phạm vi ấy, tiền phụ tùng và công được ghi riêng ở đây ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "workshop"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-32-b06-160"
+        ],
+        "turn_origins": {
+          "e0111652-d87d-55fc-9e2e-fa191ec64203-u01": {
+            "kind": "original_extension"
+          },
+          "e0111652-d87d-55fc-9e2e-fa191ec64203-u02": {
+            "kind": "original_extension"
+          },
+          "e0111652-d87d-55fc-9e2e-fa191ec64203-u03": {
+            "kind": "original_extension"
+          },
+          "e0111652-d87d-55fc-9e2e-fa191ec64203-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "54168856-98ec-5b14-a188-1f7cb747c118",
+      "event_id": "E04",
+      "context_vi": "Cố vấn gara chưa xác định hết khoản sửa vì cần kiểm thêm. Chủ xe chỉ đồng ý phần kiểm đã nêu và yêu cầu có mốc gọi xin phép trước khi làm thêm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Cố vấn dịch vụ gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "54168856-98ec-5b14-a188-1f7cb747c118-u01",
+          "speaker_id": "d",
+          "ja": "最初の見積もりは出ていますが、取り付け部分をもう少し見ないと、追加の部品がいるか分かりません。",
+          "vi": "Đã có báo giá ban đầu, nhưng phải xem thêm phần gắn mới biết có cần phụ tùng khác không ạ."
+        },
+        {
+          "id": "54168856-98ec-5b14-a188-1f7cb747c118-u02",
+          "speaker_id": "a",
+          "ja": "その確認まではお願いします。部品や金額が変わるときは、作業の前に連絡をいただけますか。",
+          "vi": "Tôi đồng ý kiểm tới phần đó. Nếu cần đổi phụ tùng hoặc tiền thay đổi, anh báo trước khi làm được không ạ?"
+        },
+        {
+          "id": "54168856-98ec-5b14-a188-1f7cb747c118-u03",
+          "speaker_id": "d",
+          "ja": "はい。今日の十六時までに、追加が必要かどうか、まだ調べている場合はその状況をお電話します。",
+          "vi": "Vâng. Chậm nhất 16 giờ hôm nay tôi gọi báo có cần thêm không. Nếu vẫn đang kiểm, tôi báo tình trạng khi đó ạ."
+        },
+        {
+          "id": "54168856-98ec-5b14-a188-1f7cb747c118-u04",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。それまで、追加作業の依頼はしていないということでお願いします。",
+          "vi": "Cảm ơn anh. Trước khi tôi phản hồi, xem như tôi chưa yêu cầu làm phần phát sinh nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "workshop"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "54168856-98ec-5b14-a188-1f7cb747c118-u01": {
+            "kind": "original_extension"
+          },
+          "54168856-98ec-5b14-a188-1f7cb747c118-u02": {
+            "kind": "original_extension"
+          },
+          "54168856-98ec-5b14-a188-1f7cb747c118-u03": {
+            "kind": "original_extension"
+          },
+          "54168856-98ec-5b14-a188-1f7cb747c118-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1f665a9a-dbad-5dda-a728-3756343c0b30",
+      "event_id": "E04",
+      "context_vi": "Sau khi xem đề xuất riêng cho xe mình, chủ xe muốn thay ắc quy trước và để vết xước cửa sang lần khác. Giá dự toán do gara trong bài nêu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Cố vấn dịch vụ gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1f665a9a-dbad-5dda-a728-3756343c0b30-u01",
+          "speaker_id": "a",
+          "ja": "バッテリーの交換を先にお願いします。ドアの傷は、今日はそのままで結構です。",
+          "vi": "Anh thay ắc quy trước giúp tôi. Vết xước ở cửa hôm nay cứ để nguyên ạ."
+        },
+        {
+          "id": "1f665a9a-dbad-5dda-a728-3756343c0b30-u02",
+          "speaker_id": "d",
+          "ja": "承知しました。バッテリー交換だけで、工賃と消費税を含めて一万八千七百円の見込みです。",
+          "vi": "Tôi rõ rồi. Chỉ thay ắc quy, ước tính 18.700 yên đã gồm công và thuế ạ."
+        },
+        {
+          "id": "1f665a9a-dbad-5dda-a728-3756343c0b30-u03",
+          "speaker_id": "a",
+          "ja": "その金額でお願いします。何か別の作業が必要になったら、先に電話してください。",
+          "vi": "Vậy tôi đồng ý mức đó ạ. Nếu cần việc khác, xin gọi cho tôi trước."
+        },
+        {
+          "id": "1f665a9a-dbad-5dda-a728-3756343c0b30-u04",
+          "speaker_id": "d",
+          "ja": "はい、交換だけで作業票を作ります。ドアの補修は今回は入れません。",
+          "vi": "Vâng. Tôi lập phiếu chỉ cho việc thay ắc quy. Lần này sẽ không ghi phần sửa cửa ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "workshop",
+          "mlit"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-32-b07-102"
+        ],
+        "turn_origins": {
+          "1f665a9a-dbad-5dda-a728-3756343c0b30-u01": {
+            "kind": "original_extension"
+          },
+          "1f665a9a-dbad-5dda-a728-3756343c0b30-u02": {
+            "kind": "original_extension"
+          },
+          "1f665a9a-dbad-5dda-a728-3756343c0b30-u03": {
+            "kind": "original_extension"
+          },
+          "1f665a9a-dbad-5dda-a728-3756343c0b30-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8d376fc8-4904-51fb-a945-cdc5882efddc",
+      "event_id": "E04",
+      "context_vi": "Cố vấn gara đã ghi yêu cầu thay ắc quy. Chủ xe muốn nhắc lại cả phần được làm, dự toán và cách xử lý khi phát sinh trước khi giao xe.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Cố vấn dịch vụ gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8d376fc8-4904-51fb-a945-cdc5882efddc-u01",
+          "speaker_id": "a",
+          "ja": "確認ですが、お願いしたのはバッテリー交換だけで、工賃と消費税を含めた見積もりが一万八千七百円ですね。",
+          "vi": "Tôi xác nhận lại nhé. Tôi chỉ yêu cầu thay ắc quy, báo giá dự toán 18.700 yên đã gồm công và thuế, đúng không ạ?"
+        },
+        {
+          "id": "8d376fc8-4904-51fb-a945-cdc5882efddc-u02",
+          "speaker_id": "d",
+          "ja": "はい。ドアの傷は見積もりの作業に入れていません。",
+          "vi": "Vâng. Vết xước cửa không có trong phần việc trên báo giá ạ."
+        },
+        {
+          "id": "8d376fc8-4904-51fb-a945-cdc5882efddc-u03",
+          "speaker_id": "a",
+          "ja": "予定の額を超えそうなときは、私が電話に出られなくても、追加は待っていただけますか。",
+          "vi": "Nếu có khả năng vượt dự toán mà tôi chưa nghe máy được, anh đợi tôi trả lời rồi mới làm thêm được không ạ?"
+        },
+        {
+          "id": "8d376fc8-4904-51fb-a945-cdc5882efddc-u04",
+          "speaker_id": "d",
+          "ja": "はい。作業票にもそう記載し、追加する前に必ずご了承をいただきます。",
+          "vi": "Vâng. Tôi cũng ghi vào phiếu, và sẽ xin chị đồng ý trước khi làm thêm ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "workshop"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8d376fc8-4904-51fb-a945-cdc5882efddc-u01": {
+            "kind": "original_extension"
+          },
+          "8d376fc8-4904-51fb-a945-cdc5882efddc-u02": {
+            "kind": "original_extension"
+          },
+          "8d376fc8-4904-51fb-a945-cdc5882efddc-u03": {
+            "kind": "original_extension"
+          },
+          "8d376fc8-4904-51fb-a945-cdc5882efddc-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3896221a-4bf4-5be1-90ac-540ccb13bfe2",
+      "event_id": "E05",
+      "context_vi": "Chủ xe tới nhận xe sau khi gara cố định một tấm ốp phía sau bên trái. Chủ xe hỏi phạm vi kiểm lại tiếng từng nghe khi qua gờ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3896221a-4bf4-5be1-90ac-540ccb13bfe2-u01",
+          "speaker_id": "a",
+          "ja": "来たときは、段差を越えると左後ろで音がしました。作業の後、その条件でも確認されましたか。",
+          "vi": "Lúc mang xe đến, qua gờ tôi nghe tiếng phía sau bên trái. Làm xong gara có kiểm lại trong điều kiện đó không ạ?"
+        },
+        {
+          "id": "3896221a-4bf4-5be1-90ac-540ccb13bfe2-u02",
+          "speaker_id": "c",
+          "ja": "はい。左後ろのカバーを固定し直して、同じような段差で確認しました。今日の確認では音は出ていません。",
+          "vi": "Có ạ. Chúng tôi đã cố định lại tấm ốp sau bên trái và kiểm ở gờ tương tự. Trong lượt kiểm hôm nay không nghe tiếng đó."
+        },
+        {
+          "id": "3896221a-4bf4-5be1-90ac-540ccb13bfe2-u03",
+          "speaker_id": "a",
+          "ja": "何をしたかと、どの条件で確認したかを、明細に書いてもらえますか。",
+          "vi": "Anh ghi giúp trong phiếu đã làm gì và kiểm ở điều kiện nào được không ạ?"
+        },
+        {
+          "id": "3896221a-4bf4-5be1-90ac-540ccb13bfe2-u04",
+          "speaker_id": "c",
+          "ja": "はい、どちらも明細に記載します。もしまた音が出たら、聞こえた場所とタイミングをお知らせください。",
+          "vi": "Vâng, tôi sẽ ghi cả hai vào phiếu. Nếu lại nghe tiếng, chị báo vị trí nghe thấy và lúc phát ra nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe",
+          "workshop"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3896221a-4bf4-5be1-90ac-540ccb13bfe2-u01": {
+            "kind": "original_extension"
+          },
+          "3896221a-4bf4-5be1-90ac-540ccb13bfe2-u02": {
+            "kind": "original_extension"
+          },
+          "3896221a-4bf4-5be1-90ac-540ccb13bfe2-u03": {
+            "kind": "original_extension"
+          },
+          "3896221a-4bf4-5be1-90ac-540ccb13bfe2-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "85666e8d-dd06-5739-bb80-3c2cef0db4d7",
+      "event_id": "E05",
+      "context_vi": "Trên đường về sau khi nhận xe, chủ xe lại nghe tiếng qua một gờ. Cô đã dừng ở ô đỗ hợp lệ và gọi gara từ đó.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "85666e8d-dd06-5739-bb80-3c2cef0db4d7-u01",
+          "speaker_id": "a",
+          "ja": "今日車を受け取った者です。帰りに一度、段差でまた左後ろからカタッと音がしました。",
+          "vi": "Tôi là người nhận xe hôm nay. Trên đường về qua một gờ, tôi lại nghe một tiếng cạch ở phía sau bên trái ạ."
+        },
+        {
+          "id": "85666e8d-dd06-5739-bb80-3c2cef0db4d7-u02",
+          "speaker_id": "c",
+          "ja": "ご連絡ありがとうございます。今はどちらにいらっしゃいますか。前と同じくらいの音でしたか。",
+          "vi": "Cảm ơn chị đã báo. Hiện giờ chị đang ở đâu ạ? Tiếng to cỡ lần trước không?"
+        },
+        {
+          "id": "85666e8d-dd06-5739-bb80-3c2cef0db4d7-u03",
+          "speaker_id": "a",
+          "ja": "広場の駐車区画に停めています。音は前と似ていましたが、一度だけです。ここからどうしたらいいですか。",
+          "vi": "Tôi đã đỗ trong ô ở quảng trường. Tiếng giống lần trước, nhưng chỉ một lần. Từ đây tôi nên làm thế nào ạ?"
+        },
+        {
+          "id": "85666e8d-dd06-5739-bb80-3c2cef0db4d7-u04",
+          "speaker_id": "c",
+          "ja": "原因はもう一度見ないと分かりません。車を動かさず、ロードサービスに今の場所と症状を伝えてください。こちらでも受け入れの時間を確認します。",
+          "vi": "Chưa kiểm lại thì chưa biết nguyên nhân ạ. Chị giữ xe ở đó và báo vị trí hiện tại cùng dấu hiệu cho đội hỗ trợ ven đường. Bên tôi sẽ xem giờ tiếp nhận."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe",
+          "jaf"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "85666e8d-dd06-5739-bb80-3c2cef0db4d7-u01": {
+            "kind": "original_extension"
+          },
+          "85666e8d-dd06-5739-bb80-3c2cef0db4d7-u02": {
+            "kind": "original_extension"
+          },
+          "85666e8d-dd06-5739-bb80-3c2cef0db4d7-u03": {
+            "kind": "original_extension"
+          },
+          "85666e8d-dd06-5739-bb80-3c2cef0db4d7-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d7c08fd6-6081-56ef-9dfa-91617895cf83",
+      "event_id": "E05",
+      "context_vi": "Gara cần xem lại tiếng cạch xuất hiện sau lần cố định tấm ốp sau trái. Chủ xe vẫn ở ô đỗ hợp lệ, đơn vị cứu hộ đã đến và đang sắp giờ giao.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d7c08fd6-6081-56ef-9dfa-91617895cf83-u01",
+          "speaker_id": "c",
+          "ja": "再点検のお車は、金曜の十時なら受け入れられます。ロードサービスの担当の方にもその時間をお伝えください。",
+          "vi": "Xe cần kiểm lại thì chúng tôi nhận được lúc 10 giờ thứ Sáu. Chị báo giờ đó cho người phụ trách bên hỗ trợ ven đường giúp tôi ạ."
+        },
+        {
+          "id": "d7c08fd6-6081-56ef-9dfa-91617895cf83-u02",
+          "speaker_id": "a",
+          "ja": "金曜十時に運んでもらえるか確認します。当日は前回の作業明細も持って行けばいいですか。",
+          "vi": "Tôi sẽ kiểm có thể nhờ họ giao vào 10 giờ thứ Sáu không. Hôm đó tôi mang cả phiếu việc lần trước đúng không ạ?"
+        },
+        {
+          "id": "d7c08fd6-6081-56ef-9dfa-91617895cf83-u03",
+          "speaker_id": "c",
+          "ja": "はい、お願いします。受付では、前回の固定の後にまた音がしたことをお伝えください。",
+          "vi": "Vâng, nhờ chị. Ở quầy, chị báo là sau lần cố định trước tiếng lại xuất hiện nhé."
+        },
+        {
+          "id": "d7c08fd6-6081-56ef-9dfa-91617895cf83-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。今回もまず点検で、修理は結果を聞いてから決めたいです。",
+          "vi": "Tôi rõ rồi. Lần này cũng xin kiểm trước. Tôi muốn nghe kết quả rồi mới quyết phần sửa ạ."
+        },
+        {
+          "id": "d7c08fd6-6081-56ef-9dfa-91617895cf83-u05",
+          "speaker_id": "c",
+          "ja": "はい、その内容で記録しておきます。",
+          "vi": "Vâng, tôi ghi lại như vậy ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "calendar",
+          "jaf"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d7c08fd6-6081-56ef-9dfa-91617895cf83-u01": {
+            "kind": "original_extension"
+          },
+          "d7c08fd6-6081-56ef-9dfa-91617895cf83-u02": {
+            "kind": "original_extension"
+          },
+          "d7c08fd6-6081-56ef-9dfa-91617895cf83-u03": {
+            "kind": "original_extension"
+          },
+          "d7c08fd6-6081-56ef-9dfa-91617895cf83-u04": {
+            "kind": "original_extension"
+          },
+          "d7c08fd6-6081-56ef-9dfa-91617895cf83-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "9a0881c3-80fa-52e5-9633-039247549473",
+      "event_id": "E05",
+      "context_vi": "Sau khi đội hỗ trợ xác nhận lịch, họ giao xe tới gara lúc 10 giờ thứ Sáu. Chủ xe đưa phiếu lần trước ghi cố định tấm ốp sau trái và kể lại lúc nghe tiếng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "9a0881c3-80fa-52e5-9633-039247549473-u01",
+          "speaker_id": "a",
+          "ja": "十時にお願いしていた再点検です。こちらが前回の明細で、左後ろのカバーを固定し直したとあります。",
+          "vi": "Tôi đến lần kiểm lại đã hẹn 10 giờ. Đây là phiếu lần trước, có ghi đã cố định lại tấm ốp phía sau bên trái ạ."
+        },
+        {
+          "id": "9a0881c3-80fa-52e5-9633-039247549473-u02",
+          "speaker_id": "c",
+          "ja": "記録を確認しました。受け取った後、どんなときに音が出ましたか。",
+          "vi": "Tôi xem ghi chép rồi. Sau khi nhận xe, chị nghe tiếng vào lúc nào ạ?"
+        },
+        {
+          "id": "9a0881c3-80fa-52e5-9633-039247549473-u03",
+          "speaker_id": "a",
+          "ja": "帰りに段差を越えたとき、一度だけ左後ろから聞こえました。そのあと安全な場所に停めて電話しました。",
+          "vi": "Trên đường về qua một gờ, tôi nghe một lần ở phía sau bên trái. Sau đó tôi đỗ nơi an toàn và gọi ạ."
+        },
+        {
+          "id": "9a0881c3-80fa-52e5-9633-039247549473-u04",
+          "speaker_id": "c",
+          "ja": "ありがとうございます。前回の作業箇所と、音が出たときの条件を先に確認します。必要な作業があれば、始める前にご説明します。",
+          "vi": "Cảm ơn chị. Tôi kiểm trước vị trí đã làm lần trước và điều kiện lúc có tiếng. Nếu cần làm gì, tôi sẽ giải thích trước khi bắt đầu ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe",
+          "calendar"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "9a0881c3-80fa-52e5-9633-039247549473-u01": {
+            "kind": "original_extension"
+          },
+          "9a0881c3-80fa-52e5-9633-039247549473-u02": {
+            "kind": "original_extension"
+          },
+          "9a0881c3-80fa-52e5-9633-039247549473-u03": {
+            "kind": "original_extension"
+          },
+          "9a0881c3-80fa-52e5-9633-039247549473-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "925244f3-3116-564e-846f-5a1847baf6b2",
+      "event_id": "E05",
+      "context_vi": "Gara đã trao đổi với chủ xe sau khi kiểm lại và được đồng ý chỉnh điểm gắn của tấm ốp. Khi nhận xe lần này, chủ xe xác nhận kết quả thử, khoản tiền cuối và liên hệ nếu tiếng tái phát.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Chủ xe",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Nhân viên gara",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "925244f3-3116-564e-846f-5a1847baf6b2-u01",
+          "speaker_id": "a",
+          "ja": "今回、左後ろのカバーの取り付けを調整したんですね。確認の結果と、今日お支払いする金額を教えてください。",
+          "vi": "Lần này anh đã chỉnh chỗ gắn tấm ốp sau bên trái nhỉ. Anh cho tôi biết kết quả kiểm và hôm nay tôi phải trả bao nhiêu ạ?"
+        },
+        {
+          "id": "925244f3-3116-564e-846f-5a1847baf6b2-u02",
+          "speaker_id": "c",
+          "ja": "はい。調整後に段差で確認した際は、音は出ていません。今回は前回の作業の再確認として、追加のお支払いはありません。",
+          "vi": "Vâng. Khi kiểm qua gờ sau lúc chỉnh, chúng tôi không nghe tiếng đó. Lần này tính là kiểm lại việc lần trước nên chị không phải trả thêm ạ."
+        },
+        {
+          "id": "925244f3-3116-564e-846f-5a1847baf6b2-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。また同じような音が出たら、いつどんな場所で聞いたかを、この明細にある連絡先へ伝えればいいですね。",
+          "vi": "Tôi rõ rồi. Nếu lại nghe tiếng tương tự, tôi gọi số trên phiếu và báo nghe lúc nào, ở chỗ thế nào nhỉ."
+        },
+        {
+          "id": "925244f3-3116-564e-846f-5a1847baf6b2-u04",
+          "speaker_id": "c",
+          "ja": "はい。車を安全な場所に停めてから、この明細にある受付へご連絡ください。今回の記録を見てお話を伺います。",
+          "vi": "Vâng. Sau khi xe đã dừng ở nơi an toàn, chị gọi quầy ghi trên phiếu. Tôi xem ghi chép lần này rồi nghe chị báo ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "observe",
+          "workshop"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "925244f3-3116-564e-846f-5a1847baf6b2-u01": {
+            "kind": "original_extension"
+          },
+          "925244f3-3116-564e-846f-5a1847baf6b2-u02": {
+            "kind": "original_extension"
+          },
+          "925244f3-3116-564e-846f-5a1847baf6b2-u03": {
+            "kind": "original_extension"
+          },
+          "925244f3-3116-564e-846f-5a1847baf6b2-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

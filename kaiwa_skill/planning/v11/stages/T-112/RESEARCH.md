@@ -66,7 +66,7 @@ Sau tuần quay lại đầu tiên, ngày đầu thử kế hoạch sửa lộ k
 
 Điểm nối đã đọc theo từng nhánh.
 
-- S015 → S016. S015 đã thử chuyển mail đến từ 11:30. Nay là ngày đầu theo lịch đã sửa, không đặt lại thành ngày đầu trở lại trước tuần thử.
+- S015 → S016. S015 đã thống nhất thử chuyển mail đến từ 11:30. Nay là ngày đầu theo lịch đã sửa, không đặt lại thành ngày đầu trở lại trước tuần thử.
 - S016 → S017. Từ S016 về họp 10 giờ và email chưa kiểm. S017 làm rõ không xin gia hạn nghỉ và chưa đổi lịch nói chung.
 - S017 → S018. Từ S017 chưa có thử mới, cần chốt với người có trách nhiệm. Nay đồng ý hai tuần có đánh giá, giữ việc chuyển từ 11:30.
 - S018 → S019. S018 đã hẹn thứ Sáu tuần hai 11:30 và phân việc. Chốt thay thông báo hạn, vẫn giữ buổi sáng và không trả lại toàn bộ cuộc họp.

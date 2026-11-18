@@ -1,0 +1,1663 @@
+{
+  "stage_uid": "3192ff57-85bc-5670-bdf5-16d8fe9e689d",
+  "admin_sources": {
+    "rent": {
+      "kind": "book",
+      "book_id": "B26",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編 1",
+      "path": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編 1/chapters/01-bai-1.md",
+      "start_line": 325,
+      "end_line": 341,
+      "use_vi": "Dùng 借りる cho thuê phương tiện theo thời gian và nhu cầu cụ thể."
+    },
+    "conditions": {
+      "kind": "book",
+      "book_id": "B21",
+      "title": "日本語でビジネス会話 ― 中級編 ― 本文冊",
+      "path": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 本文冊/chapters/09-yoyaku.md",
+      "start_line": 109,
+      "end_line": 119,
+      "use_vi": "Tách câu hỏi đang tiếp nhận khỏi việc người phụ trách đã xác nhận điều kiện đổi."
+    },
+    "trouble": {
+      "kind": "book",
+      "book_id": "B27",
+      "title": "聞いて覚える話し方 日本語生中継 初中級編２",
+      "path": "kaiwa_skill/knowledge/聞いて覚える話し方 日本語生中継 初中級編２/chapters/17-script-bai-04.md",
+      "start_line": 19,
+      "end_line": 33,
+      "use_vi": "Nêu dấu hiệu thấy được và bước hỏi đầu mối, không suy nguyên nhân từ dấu hiệu."
+    },
+    "npa": {
+      "kind": "web",
+      "title": "警察庁 外国の運転免許をお持ちの方",
+      "url": "https://www.npa.go.jp/policies/application/license_renewal/have_DL_issed_another_country.html",
+      "accessed": "2026-11-18",
+      "use_vi": "NPA nêu bằng Nhật, IDP theo Công ước Geneva hoặc bằng của quốc gia/vùng được chỉ định kèm bản dịch do đầu mối hợp lệ cấp. Việt Nam không thuộc nhóm dùng bằng nội địa kèm bản dịch. S004 xét chỉ bộ bằng nội địa Việt Nam và bản dịch, không phán xét mọi giấy tờ người Việt."
+    },
+    "oneway": {
+      "kind": "web",
+      "title": "トヨタレンタリース愛知 ワンウェイシステム",
+      "url": "https://www.trl-aichi.co.jp/rent/oneway/",
+      "accessed": "2026-11-18",
+      "use_vi": "Toyota Rent a Lease Aichi nêu đăng ký trước, điều kiện và phí tùy loại xe và chi nhánh. Địa điểm và phí trong bài thuộc hãng giả định."
+    },
+    "support": {
+      "kind": "web",
+      "title": "トヨタレンタカー 困ったときは",
+      "url": "https://rent.toyota.co.jp/static/guide/irregular/other.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Toyota Rent a Car tại Nhật hướng dẫn liên hệ nơi nhận nếu xe có lỗi và báo trước nếu cần kéo dài giờ. Nhân vật dùng đầu mối trong hợp đồng của hãng giả định, không suy mọi hãng chung số hay mức phí."
+    },
+    "warning": {
+      "kind": "web",
+      "title": "JAF 警告灯が点灯した場合の対処法",
+      "url": "https://jaf.or.jp/common/kuruma-qa/category-trouble/subcategory-accident/faq187",
+      "accessed": "2026-11-18",
+      "use_vi": "JAF phân biệt loại cảnh báo và nêu liên hệ hỗ trợ tùy biểu tượng. Cảnh cả xe và người đã ở khu cho phép đỗ, báo dấu hiệu và hỏi hãng thay vì tiếp tục lái hoặc chẩn đoán."
+    },
+    "preauth": {
+      "kind": "web",
+      "title": "三井住友カード クレジットカード決済のオーソリ",
+      "url": "https://www.smbc-card.com/mem/hitotoki/cashless/authorization.jsp",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc mục giải thích xác nhận và giữ trước một phần hạn mức trong quy trình thanh toán thẻ Nhật. Dùng đúng khái niệm hạn mức, không suy mọi hãng thuê xe dùng khoản 30.000 yên."
+    },
+    "notice": {
+      "kind": "web",
+      "title": "三井住友カード ご利用通知サービス",
+      "url": "https://www.smbc-card.com/mem/service/sec/selfcontrol/usage_notice.jsp",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc mục その他 về thông báo phát sinh yêu cầu duyệt và chưa đồng nghĩa khoản phải trả đã chốt. Hãng thuê xe và quy trình đối soát trong cảnh là giả định."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "31dd5020-d57f-5435-b7b1-d570796877bf",
+      "event_id": "E01",
+      "context_vi": "Khách có bằng lái Nhật và đến hỏi xe cho một chuyến cuối tuần. Nhóm có bốn người lớn, hai vali to và hai túi nhỏ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "31dd5020-d57f-5435-b7b1-d570796877bf-u01",
+          "speaker_id": "a",
+          "ja": "大人四人で、スーツケースが大きいの二つと、小さいバッグが二つあります。どのクラスがよさそうですか。",
+          "vi": "Có bốn người lớn, hai vali to và hai túi nhỏ. Hạng xe nào có vẻ hợp ạ?"
+        },
+        {
+          "id": "31dd5020-d57f-5435-b7b1-d570796877bf-u02",
+          "speaker_id": "b",
+          "ja": "荷物の量でしたら、後ろに余裕のあるミニバンはいかがですか。全員お乗りになる場合も、荷室を使いやすい車を確認します。",
+          "vi": "Với lượng hành lý đó, chị cân nhắc minivan có khoang sau rộng nhé? Tôi xem xe nào vẫn dễ xếp đồ khi cả nhóm ngồi đủ ạ."
+        },
+        {
+          "id": "31dd5020-d57f-5435-b7b1-d570796877bf-u03",
+          "speaker_id": "a",
+          "ja": "四人分の座席を使って、荷物は全部後ろに置きたいです。実際に入るか見られますか。",
+          "vi": "Tôi muốn dùng đủ bốn ghế và để toàn bộ đồ phía sau. Tôi thử xem có xếp vừa được không ạ?"
+        },
+        {
+          "id": "31dd5020-d57f-5435-b7b1-d570796877bf-u04",
+          "speaker_id": "b",
+          "ja": "はい。ご用意できる車の荷室を、出発前に一緒に確認しましょう。",
+          "vi": "Vâng. Trước khi đi, mình cùng xem khoang hành lý của chiếc xe có thể giao cho chị nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rent"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "31dd5020-d57f-5435-b7b1-d570796877bf-u01": {
+            "kind": "original_extension"
+          },
+          "31dd5020-d57f-5435-b7b1-d570796877bf-u02": {
+            "kind": "original_extension"
+          },
+          "31dd5020-d57f-5435-b7b1-d570796877bf-u03": {
+            "kind": "original_extension"
+          },
+          "31dd5020-d57f-5435-b7b1-d570796877bf-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2a180787-bb15-5dfe-aabb-d4b16aa43df6",
+      "event_id": "E01",
+      "context_vi": "Khách dự định nhận xe ở chi nhánh trước ga và đi về từ gần hồ. Khách hỏi có trả ở chi nhánh khác cùng hãng được không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2a180787-bb15-5dfe-aabb-d4b16aa43df6-u01",
+          "speaker_id": "a",
+          "ja": "駅前で借りて、帰りは湖のほうの営業所で返したいです。どの組み合わせなら利用できますか。",
+          "vi": "Tôi muốn nhận xe ở trước ga rồi lúc về trả ở chi nhánh phía hồ. Có thể dùng cặp chi nhánh nào ạ?"
+        },
+        {
+          "id": "2a180787-bb15-5dfe-aabb-d4b16aa43df6-u02",
+          "speaker_id": "b",
+          "ja": "同じ会社でも、車種と店舗で受け入れ条件が違います。出発日と、返却したい営業所を教えてください。",
+          "vi": "Cùng hãng nhưng điều kiện nhận xe khác tùy xe và chi nhánh ạ. Chị cho tôi ngày đi và điểm muốn trả nhé."
+        },
+        {
+          "id": "2a180787-bb15-5dfe-aabb-d4b16aa43df6-u03",
+          "speaker_id": "a",
+          "ja": "土曜の九時に駅前店で借りて、日曜の十六時半に湖畔店です。乗り捨て料金も分かりますか。",
+          "vi": "Tôi nhận ở chi nhánh trước ga lúc 9 giờ thứ Bảy và trả ở chi nhánh ven hồ lúc 16 giờ 30 Chủ Nhật. Anh xem được cả phí trả khác điểm không ạ?"
+        },
+        {
+          "id": "2a180787-bb15-5dfe-aabb-d4b16aa43df6-u04",
+          "speaker_id": "b",
+          "ja": "その日時と車のクラスで、湖畔店への返却の可否と追加料金を確認します。",
+          "vi": "Tôi sẽ kiểm có trả được ở chi nhánh ven hồ vào lúc đó với hạng xe này không, cùng phí thêm ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "oneway"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2a180787-bb15-5dfe-aabb-d4b16aa43df6-u01": {
+            "kind": "original_extension"
+          },
+          "2a180787-bb15-5dfe-aabb-d4b16aa43df6-u02": {
+            "kind": "original_extension"
+          },
+          "2a180787-bb15-5dfe-aabb-d4b16aa43df6-u03": {
+            "kind": "original_extension"
+          },
+          "2a180787-bb15-5dfe-aabb-d4b16aa43df6-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "301d0315-4107-531c-86cb-34f6031c1f83",
+      "event_id": "E01",
+      "context_vi": "Khách cần xe nhỏ cho ba người và ba vali cỡ nhỏ. Hãng trong bài hết hatchback dự định thuê và đề nghị xem SUV nhỏ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "301d0315-4107-531c-86cb-34f6031c1f83-u01",
+          "speaker_id": "b",
+          "ja": "ご希望のハッチバックは空きがありません。五人乗りの小型ＳＵＶでしたらご用意できます。",
+          "vi": "Hatchback chị muốn đã hết. Chúng tôi còn SUV nhỏ năm chỗ ạ."
+        },
+        {
+          "id": "301d0315-4107-531c-86cb-34f6031c1f83-u02",
+          "speaker_id": "a",
+          "ja": "三人乗ったまま、小さいスーツケース三つを後ろに置きたいです。入るか試せますか。",
+          "vi": "Tôi muốn ba người vẫn ngồi đủ và xếp ba vali nhỏ phía sau. Cho tôi thử xếp xem vừa không nhé?"
+        },
+        {
+          "id": "301d0315-4107-531c-86cb-34f6031c1f83-u03",
+          "speaker_id": "b",
+          "ja": "はい、どうぞ。料金は今回、お見積もりと同じです。",
+          "vi": "Vâng, xin mời chị. Lần này giá vẫn như báo giá ạ."
+        },
+        {
+          "id": "301d0315-4107-531c-86cb-34f6031c1f83-u04",
+          "speaker_id": "a",
+          "ja": "三つとも収まりました。後ろの席も使えますね。それならこのＳＵＶでお願いします。",
+          "vi": "Cả ba vali đều vừa. Ghế sau vẫn dùng được nhỉ. Vậy cho tôi thuê SUV này ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rent"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "301d0315-4107-531c-86cb-34f6031c1f83-u01": {
+            "kind": "original_extension"
+          },
+          "301d0315-4107-531c-86cb-34f6031c1f83-u02": {
+            "kind": "original_extension"
+          },
+          "301d0315-4107-531c-86cb-34f6031c1f83-u03": {
+            "kind": "original_extension"
+          },
+          "301d0315-4107-531c-86cb-34f6031c1f83-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "84b6f4dd-68dc-5f31-b90d-739f1d9555d6",
+      "event_id": "E01",
+      "context_vi": "Khách chỉ mang bằng lái nội địa Việt Nam và bản dịch Nhật, không có bằng Nhật hay giấy phép khác. Khi nghe quầy không thể giao xe với bộ giấy đang có, khách đổi sang hỏi cách đi khác.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "84b6f4dd-68dc-5f31-b90d-739f1d9555d6-u01",
+          "speaker_id": "a",
+          "ja": "ベトナムで取得した国内免許と日本語訳だけを持っています。この書類で借りられますか。",
+          "vi": "Tôi chỉ có bằng nội địa cấp ở Việt Nam và bản dịch tiếng Nhật. Tôi thuê xe với bộ giấy này được không ạ?"
+        },
+        {
+          "id": "84b6f4dd-68dc-5f31-b90d-739f1d9555d6-u02",
+          "speaker_id": "b",
+          "ja": "その免許証と翻訳文だけでは、日本で運転できる免許として確認できないため、お貸しできません。",
+          "vi": "Chỉ với bằng đó và bản dịch, chúng tôi không thể xác nhận chị có giấy phép được dùng để lái ở Nhật, nên không thể giao xe ạ."
+        },
+        {
+          "id": "84b6f4dd-68dc-5f31-b90d-739f1d9555d6-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。今回は運転せず、バスで行きます。駅で行き先を相談できる窓口はありますか。",
+          "vi": "Tôi hiểu rồi. Lần này tôi sẽ đi xe buýt. Ở ga có quầy để hỏi tuyến tới điểm đến không ạ?"
+        },
+        {
+          "id": "84b6f4dd-68dc-5f31-b90d-739f1d9555d6-u04",
+          "speaker_id": "b",
+          "ja": "駅のバス案内所で、行き先と着きたい時刻をお伝えください。今の便に合うか、そこでお確かめいただけます。",
+          "vi": "Chị báo nơi muốn tới và giờ muốn đến ở quầy thông tin buýt tại ga nhé. Ở đó chị có thể kiểm chuyến phù hợp lúc này."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "npa"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "84b6f4dd-68dc-5f31-b90d-739f1d9555d6-u01": {
+            "kind": "original_extension"
+          },
+          "84b6f4dd-68dc-5f31-b90d-739f1d9555d6-u02": {
+            "kind": "original_extension"
+          },
+          "84b6f4dd-68dc-5f31-b90d-739f1d9555d6-u03": {
+            "kind": "original_extension"
+          },
+          "84b6f4dd-68dc-5f31-b90d-739f1d9555d6-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6b839fac-da42-55ff-857a-4d662e1aa382",
+      "event_id": "E01",
+      "context_vi": "Khách đã thử và chọn SUV nhỏ năm chỗ. Trước khi đặt, khách đọc lại loại xe, ngày nhận và ngày giờ trả ở cùng chi nhánh.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6b839fac-da42-55ff-857a-4d662e1aa382-u01",
+          "speaker_id": "a",
+          "ja": "確認ですが、五人乗りの小型ＳＵＶを土曜の九時に借りて、日曜の十七時にこの駅前店で返す、で合っていますか。",
+          "vi": "Tôi xác nhận lại nhé. Nhận SUV nhỏ năm chỗ lúc 9 giờ thứ Bảy và trả tại chính chi nhánh trước ga này lúc 17 giờ Chủ Nhật, đúng không ạ?"
+        },
+        {
+          "id": "6b839fac-da42-55ff-857a-4d662e1aa382-u02",
+          "speaker_id": "b",
+          "ja": "はい。その車と日程でお取りできます。お支払いの条件も、お申し込み前にご確認いただけます。",
+          "vi": "Vâng. Có thể đặt xe và lịch đó ạ. Chị cũng có thể kiểm điều kiện thanh toán trước khi đăng ký."
+        },
+        {
+          "id": "6b839fac-da42-55ff-857a-4d662e1aa382-u03",
+          "speaker_id": "a",
+          "ja": "はい、車と日時はそれで結構です。支払いの説明もお願いします。",
+          "vi": "Vâng, xe và ngày giờ như vậy được ạ. Anh giải thích thêm phần thanh toán giúp tôi."
+        },
+        {
+          "id": "6b839fac-da42-55ff-857a-4d662e1aa382-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。まず料金の内訳をご案内します。",
+          "vi": "Vâng. Tôi sẽ nói từng khoản tiền trước ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "rent"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-32-b07-99"
+        ],
+        "turn_origins": {
+          "6b839fac-da42-55ff-857a-4d662e1aa382-u01": {
+            "kind": "original_extension"
+          },
+          "6b839fac-da42-55ff-857a-4d662e1aa382-u02": {
+            "kind": "original_extension"
+          },
+          "6b839fac-da42-55ff-857a-4d662e1aa382-u03": {
+            "kind": "original_extension"
+          },
+          "6b839fac-da42-55ff-857a-4d662e1aa382-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19",
+      "event_id": "E02",
+      "context_vi": "Khách xem báo giá của hãng trong bài. Khách muốn biết tổng 12.100 yên bao gồm gì và phần nào sẽ tính riêng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19-u01",
+          "speaker_id": "a",
+          "ja": "この一万二千百円には、どの料金が入っていますか。",
+          "vi": "Trong tổng 12.100 yên này có những khoản nào ạ?"
+        },
+        {
+          "id": "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19-u02",
+          "speaker_id": "b",
+          "ja": "基本料金が八千八百円、免責補償の加入料が千百円、別の店舗に返す料金が二千二百円です。",
+          "vi": "Giá cơ bản 8.800 yên, phí tham gia gói miễn phần tự chịu là 1.100 yên, phí trả chi nhánh khác là 2.200 yên ạ."
+        },
+        {
+          "id": "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19-u03",
+          "speaker_id": "a",
+          "ja": "ガソリン代と高速道路の料金は、ここには入っていないということですね。",
+          "vi": "Tiền xăng và phí đường cao tốc chưa nằm trong tổng này nhỉ."
+        },
+        {
+          "id": "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19-u04",
+          "speaker_id": "b",
+          "ja": "はい、別です。返却時の燃料の扱いと補償の条件は、こちらの契約内容でご確認ください。",
+          "vi": "Vâng, hai khoản đó tính riêng. Chị kiểm cách xử lý nhiên liệu lúc trả và điều kiện gói miễn trừ trong hợp đồng này nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19-u01": {
+            "kind": "original_extension"
+          },
+          "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19-u02": {
+            "kind": "original_extension"
+          },
+          "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19-u03": {
+            "kind": "original_extension"
+          },
+          "d9a84a6a-7666-5b3d-bfcd-23eaf9847d19-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ec1544ae-7cc6-50f1-a403-0cda69299134",
+      "event_id": "E02",
+      "context_vi": "Khách dự định trả xe lúc 17 giờ tại hãng trong bài. Khách hỏi phải báo ai nếu có nguy cơ trễ và có tự gia hạn được không.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ec1544ae-7cc6-50f1-a403-0cda69299134-u01",
+          "speaker_id": "a",
+          "ja": "返却は日曜の十七時ですね。渋滞で遅れそうになったら、いつ、どこに電話すればいいですか。",
+          "vi": "Tôi trả 17 giờ Chủ Nhật nhỉ. Nếu tắc đường có vẻ sẽ muộn, tôi gọi khi nào và gọi đâu ạ?"
+        },
+        {
+          "id": "ec1544ae-7cc6-50f1-a403-0cda69299134-u02",
+          "speaker_id": "b",
+          "ja": "遅れると分かった時点で、十七時より前に出発店へご連絡ください。延長できるかは、予約状況を見てお答えします。",
+          "vi": "Ngay khi biết sẽ muộn, chị gọi cho điểm nhận xe trước 17 giờ. Chúng tôi xem lịch đặt rồi trả lời có gia hạn được không ạ."
+        },
+        {
+          "id": "ec1544ae-7cc6-50f1-a403-0cda69299134-u03",
+          "speaker_id": "a",
+          "ja": "先に連絡して、延長できるかと料金を確認するんですね。返却店も変わることはありますか。",
+          "vi": "Tôi gọi trước để hỏi có gia hạn được không và phí bao nhiêu nhỉ. Điểm trả có khi nào phải đổi không ạ?"
+        },
+        {
+          "id": "ec1544ae-7cc6-50f1-a403-0cda69299134-u04",
+          "speaker_id": "b",
+          "ja": "今の返却店が基本ですが、状況によって別の案内が必要でしたら、そのお電話でお伝えします。",
+          "vi": "Thông thường vẫn là điểm trả hiện tại. Nếu tình hình cần hướng dẫn khác, chúng tôi sẽ nói trong cuộc gọi đó ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "support"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ec1544ae-7cc6-50f1-a403-0cda69299134-u01": {
+            "kind": "original_extension"
+          },
+          "ec1544ae-7cc6-50f1-a403-0cda69299134-u02": {
+            "kind": "original_extension"
+          },
+          "ec1544ae-7cc6-50f1-a403-0cda69299134-u03": {
+            "kind": "original_extension"
+          },
+          "ec1544ae-7cc6-50f1-a403-0cda69299134-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c83445bd-b031-5430-8dd2-f0961d3fedae",
+      "event_id": "E02",
+      "context_vi": "Tại hãng giả định có nghiệp vụ giữ tạm trên thẻ, màn hình hiện 30.000 yên trong khi hợp đồng dự kiến 12.100 yên. Khách hỏi đây có phải giá cuối.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c83445bd-b031-5430-8dd2-f0961d3fedae-u01",
+          "speaker_id": "a",
+          "ja": "カードの利用通知に三万円と出ています。見積もりは一万二千百円で、この三万円のことは聞いていませんでした。",
+          "vi": "Thông báo sử dụng thẻ hiện 30.000 yên. Báo giá là 12.100 yên và tôi chưa được báo về khoản 30.000 này ạ."
+        },
+        {
+          "id": "c83445bd-b031-5430-8dd2-f0961d3fedae-u02",
+          "speaker_id": "b",
+          "ja": "三万円は当店で一時的にカードの利用枠を押さえる金額です。実際にお支払いいただく金額は、返却時に利用内容を確認して決まります。",
+          "vi": "30.000 yên là số chúng tôi giữ tạm trong hạn mức thẻ. Khoản thực trả xác định khi trả xe, sau khi xem các khoản đã dùng ạ."
+        },
+        {
+          "id": "c83445bd-b031-5430-8dd2-f0961d3fedae-u03",
+          "speaker_id": "a",
+          "ja": "今の一万二千百円は、追加がなければ払う予定の金額ですね。返却時に明細を確認できますか。",
+          "vi": "12.100 yên là khoản dự kiến trả nếu không phát sinh thêm, đúng không ạ? Lúc trả xe tôi xem từng khoản được không?"
+        },
+        {
+          "id": "c83445bd-b031-5430-8dd2-f0961d3fedae-u04",
+          "speaker_id": "b",
+          "ja": "はい。確定した金額と仮押さえの扱いを、返却の際に別々にご案内します。",
+          "vi": "Vâng. Khi chị trả xe, chúng tôi sẽ giải thích riêng tiền đã chốt và cách xử lý khoản giữ tạm ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "preauth",
+          "notice"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-32-b06-50"
+        ],
+        "turn_origins": {
+          "c83445bd-b031-5430-8dd2-f0961d3fedae-u01": {
+            "kind": "original_extension"
+          },
+          "c83445bd-b031-5430-8dd2-f0961d3fedae-u02": {
+            "kind": "original_extension"
+          },
+          "c83445bd-b031-5430-8dd2-f0961d3fedae-u03": {
+            "kind": "original_extension"
+          },
+          "c83445bd-b031-5430-8dd2-f0961d3fedae-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4",
+      "event_id": "E02",
+      "context_vi": "Khách muốn trả xe cỡ nhỏ tại chi nhánh ven hồ lúc 16 giờ 30 Chủ Nhật. Nhân viên chưa có xác nhận từ bên đó.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4-u01",
+          "speaker_id": "b",
+          "ja": "湖畔店が日曜十六時半にこのクラスを受け入れられるか、まだ返事が来ていません。",
+          "vi": "Chi nhánh ven hồ chưa trả lời có nhận hạng xe này lúc 16 giờ 30 Chủ Nhật được không ạ."
+        },
+        {
+          "id": "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4-u02",
+          "speaker_id": "a",
+          "ja": "車を受け取る前に結果を知りたいです。何時頃、こちらに戻れば分かりますか。",
+          "vi": "Tôi muốn biết trước khi nhận xe. Khoảng mấy giờ tôi quay lại thì có tin ạ?"
+        },
+        {
+          "id": "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4-u03",
+          "speaker_id": "b",
+          "ja": "九時までに確認し、結果が出なくてもその時点でご連絡します。元の駅前店に返す条件はそのままです。",
+          "vi": "Tôi sẽ kiểm chậm nhất lúc 9 giờ, và dù chưa có kết quả cũng sẽ báo chị lúc đó. Điều kiện trả tại chi nhánh trước ga ban đầu vẫn giữ ạ."
+        },
+        {
+          "id": "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4-u04",
+          "speaker_id": "a",
+          "ja": "では、九時のご連絡を待ちます。湖畔店への変更は返事を聞いてから決めます。",
+          "vi": "Vậy tôi đợi anh báo lúc 9 giờ. Đổi sang chi nhánh ven hồ thì đợi nghe trả lời tôi mới quyết ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "conditions",
+          "oneway"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4-u01": {
+            "kind": "original_extension"
+          },
+          "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4-u02": {
+            "kind": "original_extension"
+          },
+          "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4-u03": {
+            "kind": "original_extension"
+          },
+          "c8e30a1b-2319-5ae8-a5fc-c01c35852aa4-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1faff962-ee0f-5e12-acc2-9e50b53fdb56",
+      "event_id": "E02",
+      "context_vi": "Trước khi khách nhận xe, chi nhánh ven hồ xác nhận nhận xe cỡ nhỏ vào 16 giờ 30 Chủ Nhật. Khách kiểm điều kiện và khoản thêm trước khi đồng ý đổi.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u01",
+          "speaker_id": "b",
+          "ja": "湖畔店で、日曜の十六時半にこのクラスをお返しいただけると確認できました。",
+          "vi": "Tôi đã xác nhận chi nhánh ven hồ nhận hạng xe này lúc 16 giờ 30 Chủ Nhật ạ."
+        },
+        {
+          "id": "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u02",
+          "speaker_id": "a",
+          "ja": "駅前店で受け取って、湖畔店に日曜十六時半ですね。乗り捨て料金はどうなりますか。",
+          "vi": "Nhận ở chi nhánh trước ga, trả ven hồ lúc 16 giờ 30 Chủ Nhật nhỉ. Phí trả khác chi nhánh bao nhiêu ạ?"
+        },
+        {
+          "id": "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u03",
+          "speaker_id": "b",
+          "ja": "二千二百円で、お見積もりの合計一万二千百円に含めてあります。",
+          "vi": "2.200 yên ạ, đã gồm trong tổng báo giá 12.100 yên."
+        },
+        {
+          "id": "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u04",
+          "speaker_id": "a",
+          "ja": "はい、それで結構です。返却店と時刻が契約書に入っているか見てから、車を受け取ります。",
+          "vi": "Vâng, như vậy được ạ. Tôi sẽ xem điểm và giờ trả có ghi trong hợp đồng rồi mới nhận xe."
+        },
+        {
+          "id": "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u05",
+          "speaker_id": "b",
+          "ja": "こちらの返却欄に、湖畔店と十六時半を記載してあります。",
+          "vi": "Trong mục trả xe này đã ghi chi nhánh ven hồ và 16 giờ 30 ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "conditions",
+          "oneway"
+        ],
+        "specialty_item_ids": [
+          "sj-trung-32-b07-99"
+        ],
+        "turn_origins": {
+          "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u01": {
+            "kind": "original_extension"
+          },
+          "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u02": {
+            "kind": "original_extension"
+          },
+          "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u03": {
+            "kind": "original_extension"
+          },
+          "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u04": {
+            "kind": "original_extension"
+          },
+          "1faff962-ee0f-5e12-acc2-9e50b53fdb56-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "250faaf7-e331-5833-b8ac-ed77ab4ba05c",
+      "event_id": "E03",
+      "context_vi": "Khách và nhân viên đang đi quanh xe trước khi giao chìa khóa. Khách thấy một vết xước ở cửa sau bên trái và muốn cùng ghi nhận.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "250faaf7-e331-5833-b8ac-ed77ab4ba05c-u01",
+          "speaker_id": "a",
+          "ja": "左後ろのドアに細い傷があります。出発前の傷として、一緒に確認していただけますか。",
+          "vi": "Có vết xước mảnh ở cửa sau bên trái. Anh cùng tôi xác nhận đây là vết có từ trước khi đi được không ạ?"
+        },
+        {
+          "id": "250faaf7-e331-5833-b8ac-ed77ab4ba05c-u02",
+          "speaker_id": "b",
+          "ja": "はい、見えました。左後ろのドアの下側ですね。こちらの車両チェック表に記録します。",
+          "vi": "Vâng, tôi thấy rồi. Phía dưới cửa sau bên trái nhỉ. Tôi ghi vào phiếu kiểm xe này ạ."
+        },
+        {
+          "id": "250faaf7-e331-5833-b8ac-ed77ab4ba05c-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。図のこの位置に印が入ったか確認していいですか。",
+          "vi": "Cảm ơn anh. Tôi xem vị trí này đã được đánh dấu trên sơ đồ chưa được không ạ?"
+        },
+        {
+          "id": "250faaf7-e331-5833-b8ac-ed77ab4ba05c-u04",
+          "speaker_id": "b",
+          "ja": "はい、左後ろの下に印を付けました。お客様の控えでもご確認ください。",
+          "vi": "Vâng, tôi đã đánh dấu phía dưới cửa sau bên trái. Chị xem cả liên của mình nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "250faaf7-e331-5833-b8ac-ed77ab4ba05c-u01": {
+            "kind": "original_extension"
+          },
+          "250faaf7-e331-5833-b8ac-ed77ab4ba05c-u02": {
+            "kind": "original_extension"
+          },
+          "250faaf7-e331-5833-b8ac-ed77ab4ba05c-u03": {
+            "kind": "original_extension"
+          },
+          "250faaf7-e331-5833-b8ac-ed77ab4ba05c-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad",
+      "event_id": "E03",
+      "context_vi": "Khách đã nhận xe nhưng chưa rời bãi. Khách muốn được chỉ ngay vị trí màn hình camera khi lùi vì chưa quen xe này.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad-u01",
+          "speaker_id": "a",
+          "ja": "この車は初めてです。バックカメラの映像は、どの画面に出るか教えていただけますか。",
+          "vi": "Đây là lần đầu tôi dùng xe này. Anh chỉ giúp hình camera lùi hiện ở màn hình nào được không ạ?"
+        },
+        {
+          "id": "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad-u02",
+          "speaker_id": "b",
+          "ja": "中央の画面です。車を動かさずに、停車したまま私が表示をお見せしますね。",
+          "vi": "Ở màn hình giữa ạ. Tôi sẽ cho chị xem khi xe đang đỗ nguyên chỗ."
+        },
+        {
+          "id": "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad-u03",
+          "speaker_id": "a",
+          "ja": "ここですね。画面が出ても、後ろや横は自分で確認してから動かすんですよね。",
+          "vi": "Chỗ này nhỉ. Có hình rồi, tôi vẫn phải tự kiểm phía sau và hai bên trước khi cho xe chạy, đúng không ạ?"
+        },
+        {
+          "id": "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad-u04",
+          "speaker_id": "b",
+          "ja": "はい。カメラに映らない範囲もあります。分からない操作があれば、出発前にお聞きください。",
+          "vi": "Vâng. Có vùng camera không quay tới. Có thao tác nào chưa rõ thì chị hỏi trước khi đi nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "trouble"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad-u01": {
+            "kind": "original_extension"
+          },
+          "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad-u02": {
+            "kind": "original_extension"
+          },
+          "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad-u03": {
+            "kind": "original_extension"
+          },
+          "ca2a260a-f8f7-52a7-b1a4-fda66fb8adad-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "7ee23cf9-c335-5589-9be5-dd4be2a02d3d",
+      "event_id": "E03",
+      "context_vi": "Tại bãi giao xe, khách thấy xe chỉ có năm chỗ và khoang đồ nhỏ hơn chiếc đã đặt. Nhóm có năm người và bốn vali, nên khách đề nghị xem lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "7ee23cf9-c335-5589-9be5-dd4be2a02d3d-u01",
+          "speaker_id": "a",
+          "ja": "予約では七人乗りのワゴンだと聞いていました。こちらは五人乗りですか。話が違うようですが。",
+          "vi": "Lúc đặt tôi được báo xe wagon bảy chỗ. Xe này là năm chỗ ạ? Có vẻ khác thông tin tôi đã nghe."
+        },
+        {
+          "id": "7ee23cf9-c335-5589-9be5-dd4be2a02d3d-u02",
+          "speaker_id": "b",
+          "ja": "はい、こちらは五人乗りです。予約内容を確認します。お荷物はどのくらいございますか。",
+          "vi": "Vâng, đây là xe năm chỗ. Tôi sẽ kiểm lại đặt xe. Hành lý của chị khoảng bao nhiêu ạ?"
+        },
+        {
+          "id": "7ee23cf9-c335-5589-9be5-dd4be2a02d3d-u03",
+          "speaker_id": "a",
+          "ja": "この車だと五席全部を使うので、座席を倒せません。スーツケース四つを置ける車をお願いしていました。",
+          "vi": "Xe này phải dùng hết cả năm ghế, nên tôi không thể gập ghế. Tôi đã yêu cầu xe đặt vừa bốn vali ạ."
+        },
+        {
+          "id": "7ee23cf9-c335-5589-9be5-dd4be2a02d3d-u04",
+          "speaker_id": "b",
+          "ja": "かしこまりました。まずご予約と、条件に合う車の空きを確認します。",
+          "vi": "Vâng. Trước tiên tôi sẽ kiểm đặt xe và xem còn chiếc nào đáp ứng điều kiện ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [
+          "sj-trung-32-b06-160"
+        ],
+        "turn_origins": {
+          "7ee23cf9-c335-5589-9be5-dd4be2a02d3d-u01": {
+            "kind": "original_extension"
+          },
+          "7ee23cf9-c335-5589-9be5-dd4be2a02d3d-u02": {
+            "kind": "original_extension"
+          },
+          "7ee23cf9-c335-5589-9be5-dd4be2a02d3d-u03": {
+            "kind": "original_extension"
+          },
+          "7ee23cf9-c335-5589-9be5-dd4be2a02d3d-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "44ceb283-3014-514f-89ce-d5fef7542c67",
+      "event_id": "E03",
+      "context_vi": "Xe được đưa ra không đáp ứng chỗ ngồi và hành lý. Hãng trong bài có wagon bảy chỗ khác mẫu, cùng hạng và không thêm tiền.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "44ceb283-3014-514f-89ce-d5fef7542c67-u01",
+          "speaker_id": "b",
+          "ja": "別の車種ですが、同じクラスの七人乗りのワゴンをご用意できます。今回の変更では追加料金はかかりません。",
+          "vi": "Chúng tôi có một wagon bảy chỗ cùng hạng nhưng khác mẫu. Lần đổi này không phát sinh phí ạ."
+        },
+        {
+          "id": "44ceb283-3014-514f-89ce-d5fef7542c67-u02",
+          "speaker_id": "a",
+          "ja": "五人が乗った状態で、スーツケース四つが後ろに入るか一緒に見てもらえますか。",
+          "vi": "Anh xem cùng tôi để chắc khi có năm người ngồi, phía sau vẫn xếp vừa bốn vali được không?"
+        },
+        {
+          "id": "44ceb283-3014-514f-89ce-d5fef7542c67-u03",
+          "speaker_id": "b",
+          "ja": "はい。使う座席を先に確認してから、荷室に四つ入れてみましょう。",
+          "vi": "Vâng. Mình xác định những ghế sẽ dùng rồi thử xếp bốn vali vào khoang."
+        },
+        {
+          "id": "44ceb283-3014-514f-89ce-d5fef7542c67-u04",
+          "speaker_id": "a",
+          "ja": "これなら全部入りました。座席も五つ使えるので、こちらでお願いします。",
+          "vi": "Xe này xếp vừa hết rồi. Vẫn dùng được năm ghế, vậy cho tôi xe này ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "44ceb283-3014-514f-89ce-d5fef7542c67-u01": {
+            "kind": "original_extension"
+          },
+          "44ceb283-3014-514f-89ce-d5fef7542c67-u02": {
+            "kind": "original_extension"
+          },
+          "44ceb283-3014-514f-89ce-d5fef7542c67-u03": {
+            "kind": "original_extension"
+          },
+          "44ceb283-3014-514f-89ce-d5fef7542c67-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "862caec1-e97a-5566-b3e7-bd858851ebbd",
+      "event_id": "E03",
+      "context_vi": "Khách đã chọn wagon bảy chỗ khác mẫu cho năm người và bốn vali. Hai người cùng kiểm ngoại thất và ghi giờ giao xe thực tế.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "862caec1-e97a-5566-b3e7-bd858851ebbd-u01",
+          "speaker_id": "a",
+          "ja": "右後ろのバンパーに小さな擦れがあります。ここは最初からあったと記録してもらえますか。",
+          "vi": "Cản sau bên phải có một chỗ trầy nhỏ. Anh ghi giúp đây là vết có sẵn khi nhận xe được không ạ?"
+        },
+        {
+          "id": "862caec1-e97a-5566-b3e7-bd858851ebbd-u02",
+          "speaker_id": "b",
+          "ja": "はい、写真とチェック表に残しました。実際のお引き渡しは九時二十分です。",
+          "vi": "Vâng, tôi đã chụp và ghi vào phiếu kiểm xe. Giờ giao thực tế là 9 giờ 20 ạ."
+        },
+        {
+          "id": "862caec1-e97a-5566-b3e7-bd858851ebbd-u03",
+          "speaker_id": "a",
+          "ja": "九時二十分の受け取りですね。返却は日曜の十七時のままでいいですか。",
+          "vi": "Nhận lúc 9 giờ 20 nhỉ. Giờ trả vẫn là 17 giờ Chủ Nhật đúng không ạ?"
+        },
+        {
+          "id": "862caec1-e97a-5566-b3e7-bd858851ebbd-u04",
+          "speaker_id": "b",
+          "ja": "はい。お渡しの時刻だけ訂正し、返却は日曜十七時のままです。",
+          "vi": "Vâng. Tôi chỉ sửa giờ giao, trả xe vẫn là 17 giờ Chủ Nhật ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "862caec1-e97a-5566-b3e7-bd858851ebbd-u01": {
+            "kind": "original_extension"
+          },
+          "862caec1-e97a-5566-b3e7-bd858851ebbd-u02": {
+            "kind": "original_extension"
+          },
+          "862caec1-e97a-5566-b3e7-bd858851ebbd-u03": {
+            "kind": "original_extension"
+          },
+          "862caec1-e97a-5566-b3e7-bd858851ebbd-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a3743bad-fcec-5d7d-8c1c-97331d75b778",
+      "event_id": "E04",
+      "context_vi": "Khi đang đi, đèn đỏ lạ bật trên xe thuê. Khách đã dừng ở ô đỗ cho phép của trạm dừng ven đường giả định Aoba no Oka và gọi đầu mối hãng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a3743bad-fcec-5d7d-8c1c-97331d75b778-u01",
+          "speaker_id": "a",
+          "ja": "走っていたら、メーターに赤い警告灯が点きました。今は道の駅の駐車区画に停めています。",
+          "vi": "Đang chạy thì trên đồng hồ bật đèn cảnh báo màu đỏ. Bây giờ tôi đã đỗ vào một ô ở trạm dừng ven đường ạ."
+        },
+        {
+          "id": "a3743bad-fcec-5d7d-8c1c-97331d75b778-u02",
+          "speaker_id": "b",
+          "ja": "契約番号と、道の駅のお名前をお願いします。どんなマークか分かる範囲で教えてください。",
+          "vi": "Chị cho tôi mã hợp đồng và tên trạm dừng. Chị nhìn được biểu tượng thế nào thì mô tả giúp tôi ạ."
+        },
+        {
+          "id": "a3743bad-fcec-5d7d-8c1c-97331d75b778-u03",
+          "speaker_id": "a",
+          "ja": "契約番号をお伝えしますね。道の駅の名前は「青葉の丘」で、車は正面入口に近い列にあります。マークの形はよく分かりません。",
+          "vi": "Tôi đọc mã hợp đồng nhé. Tên trạm là Aoba no Oka, xe ở dãy gần cửa chính. Hình của đèn thì tôi chưa nhận ra rõ ạ."
+        },
+        {
+          "id": "a3743bad-fcec-5d7d-8c1c-97331d75b778-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。場所を確認しますので、いまの駐車場所から車を動かさずにお待ちください。",
+          "vi": "Vâng. Để tôi xác nhận vị trí, chị vui lòng chờ và giữ xe ở chỗ đang đỗ ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "trouble",
+          "support",
+          "warning"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a3743bad-fcec-5d7d-8c1c-97331d75b778-u01": {
+            "kind": "original_extension"
+          },
+          "a3743bad-fcec-5d7d-8c1c-97331d75b778-u02": {
+            "kind": "original_extension"
+          },
+          "a3743bad-fcec-5d7d-8c1c-97331d75b778-u03": {
+            "kind": "original_extension"
+          },
+          "a3743bad-fcec-5d7d-8c1c-97331d75b778-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0ba238ef-e805-5d81-9602-c87a434fd457",
+      "event_id": "E04",
+      "context_vi": "Hãng đang điều phối người xem xe thuê ở trạm dừng. Xe đã ở ô đỗ hợp lệ. Khách muốn hỏi nơi đợi an toàn và cách người hỗ trợ tìm được xe.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0ba238ef-e805-5d81-9602-c87a434fd457-u01",
+          "speaker_id": "b",
+          "ja": "現場に行けるスタッフを手配中です。まだ到着時刻は出ていません。",
+          "vi": "Chúng tôi đang sắp người đến chỗ xe. Chưa có giờ tới ạ."
+        },
+        {
+          "id": "0ba238ef-e805-5d81-9602-c87a434fd457-u02",
+          "speaker_id": "a",
+          "ja": "車は駐車区画に停めています。車の出入りがあるので、建物のロビーで待ってもいいですか。",
+          "vi": "Tôi đã đỗ xe trong ô. Bãi có xe ra vào, tôi vào đợi ở sảnh tòa nhà được không ạ?"
+        },
+        {
+          "id": "0ba238ef-e805-5d81-9602-c87a434fd457-u03",
+          "speaker_id": "b",
+          "ja": "はい、館内でお待ちください。スタッフには駐車位置を伝えます。受付番号は二十七番です。十六時半までにこちらからお電話します。",
+          "vi": "Vâng, chị đợi bên trong nhé. Tôi báo vị trí đỗ cho nhân viên. Mã tiếp nhận là 27. Chúng tôi sẽ gọi chậm nhất lúc 16 giờ 30 ạ."
+        },
+        {
+          "id": "0ba238ef-e805-5d81-9602-c87a434fd457-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。携帯がつながるようにして、ロビーで待ちます。",
+          "vi": "Tôi hiểu rồi. Tôi giữ điện thoại để liên lạc được và đợi ở sảnh ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "support",
+          "warning"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0ba238ef-e805-5d81-9602-c87a434fd457-u01": {
+            "kind": "original_extension"
+          },
+          "0ba238ef-e805-5d81-9602-c87a434fd457-u02": {
+            "kind": "original_extension"
+          },
+          "0ba238ef-e805-5d81-9602-c87a434fd457-u03": {
+            "kind": "original_extension"
+          },
+          "0ba238ef-e805-5d81-9602-c87a434fd457-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ed8425ae-3193-5601-b36b-969b116a0991",
+      "event_id": "E04",
+      "context_vi": "Người hỗ trợ của hãng trong bài đã kiểm tra và bảo không thể tiếp tục dùng xe này. Khách cần hỏi có xe thay hay cách khác theo hợp đồng.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ed8425ae-3193-5601-b36b-969b116a0991-u01",
+          "speaker_id": "b",
+          "ja": "現場の担当から、この車での走行は続けられないと連絡がありました。",
+          "vi": "Nhân viên tại chỗ báo chiếc xe này không thể tiếp tục chạy ạ."
+        },
+        {
+          "id": "ed8425ae-3193-5601-b36b-969b116a0991-u02",
+          "speaker_id": "a",
+          "ja": "分かりました。この契約では代わりの車が出るか、追加料金がかかるかを確認してもらえますか。",
+          "vi": "Tôi hiểu rồi. Anh kiểm giúp hợp đồng này có xe thay không và có phát sinh phí không nhé?"
+        },
+        {
+          "id": "ed8425ae-3193-5601-b36b-969b116a0991-u03",
+          "speaker_id": "b",
+          "ja": "空き車両と補償の条件を確認します。今の時点では、代車や料金についてはお約束できません。",
+          "vi": "Tôi sẽ kiểm xe trống và điều kiện gói của chị. Hiện tôi chưa thể hứa có xe thay hay mức phí ạ."
+        },
+        {
+          "id": "ed8425ae-3193-5601-b36b-969b116a0991-u04",
+          "speaker_id": "a",
+          "ja": "では確認をお願いします。こちらから別の車を手配する前に、返事を待ちます。",
+          "vi": "Vậy nhờ anh kiểm giúp. Tôi đợi câu trả lời trước khi tự sắp xe khác ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "support"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ed8425ae-3193-5601-b36b-969b116a0991-u01": {
+            "kind": "original_extension"
+          },
+          "ed8425ae-3193-5601-b36b-969b116a0991-u02": {
+            "kind": "original_extension"
+          },
+          "ed8425ae-3193-5601-b36b-969b116a0991-u03": {
+            "kind": "original_extension"
+          },
+          "ed8425ae-3193-5601-b36b-969b116a0991-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5e876921-558c-55bf-96ce-567c85b6d28c",
+      "event_id": "E04",
+      "context_vi": "Đã qua 16 giờ 30 mà hãng chưa gọi như đã hẹn. Khách vẫn ở sảnh trạm dừng và nhắc mã vụ để tìm đúng hồ sơ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5e876921-558c-55bf-96ce-567c85b6d28c-u01",
+          "speaker_id": "a",
+          "ja": "受付番号二十七番の件です。十六時半までにお電話をいただく予定でしたが、まだ連絡がありません。",
+          "vi": "Tôi gọi về vụ số 27 ạ. Hãng hẹn gọi chậm nhất 16 giờ 30 nhưng tôi vẫn chưa nhận được tin."
+        },
+        {
+          "id": "5e876921-558c-55bf-96ce-567c85b6d28c-u02",
+          "speaker_id": "b",
+          "ja": "お待たせして申し訳ありません。手配状況を見ます。お待ちの場所は変わっていませんか。",
+          "vi": "Xin lỗi đã để chị chờ. Tôi xem tiến độ điều người. Chỗ chị đang đợi vẫn như cũ chứ ạ?"
+        },
+        {
+          "id": "5e876921-558c-55bf-96ce-567c85b6d28c-u03",
+          "speaker_id": "a",
+          "ja": "はい、道の駅のロビーにいます。もう出発した方がいるのか、まず知りたいです。",
+          "vi": "Vâng, tôi ở sảnh trạm dừng. Trước hết tôi muốn biết đã có ai lên đường chưa ạ."
+        },
+        {
+          "id": "5e876921-558c-55bf-96ce-567c85b6d28c-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。担当に確認して、このお電話で分かったところまでお伝えします。",
+          "vi": "Vâng. Tôi hỏi bộ phận phụ trách và báo những gì xác nhận được trong cuộc gọi này ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "conditions",
+          "support"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5e876921-558c-55bf-96ce-567c85b6d28c-u01": {
+            "kind": "original_extension"
+          },
+          "5e876921-558c-55bf-96ce-567c85b6d28c-u02": {
+            "kind": "original_extension"
+          },
+          "5e876921-558c-55bf-96ce-567c85b6d28c-u03": {
+            "kind": "original_extension"
+          },
+          "5e876921-558c-55bf-96ce-567c85b6d28c-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "f0a439f5-0d3b-5630-87d9-632ea76b4475",
+      "event_id": "E04",
+      "context_vi": "Hãng đã kiểm vụ số 27. Đội hỗ trợ nhận việc và dự kiến tới lúc 16 giờ 55. Khách đọc lại đầu mối và mốc để gọi nếu chưa tới.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "f0a439f5-0d3b-5630-87d9-632ea76b4475-u01",
+          "speaker_id": "b",
+          "ja": "確認できました。ロードサービスが現場に向かっています。到着は十六時五十五分頃の見込みです。",
+          "vi": "Tôi xác nhận rồi. Đội hỗ trợ đang trên đường tới. Dự kiến đến khoảng 16 giờ 55 ạ."
+        },
+        {
+          "id": "f0a439f5-0d3b-5630-87d9-632ea76b4475-u02",
+          "speaker_id": "a",
+          "ja": "十六時五十五分は目安ですね。来ない場合は、何時にどこへ電話すればいいですか。",
+          "vi": "16 giờ 55 là giờ ước tính nhỉ. Nếu họ chưa tới, tôi gọi mấy giờ và gọi đâu ạ?"
+        },
+        {
+          "id": "f0a439f5-0d3b-5630-87d9-632ea76b4475-u03",
+          "speaker_id": "b",
+          "ja": "十七時五分を過ぎても来なければ、この窓口に受付番号二十七番をお伝えください。それまではロビーでお待ちください。",
+          "vi": "Nếu qua 17 giờ 05 vẫn chưa tới, chị gọi quầy này và nói mã 27. Trong lúc chờ, chị ở sảnh nhé."
+        },
+        {
+          "id": "f0a439f5-0d3b-5630-87d9-632ea76b4475-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。十七時五分を過ぎたら、同じ番号へ二十七番の件で電話します。",
+          "vi": "Tôi hiểu rồi. Qua 17 giờ 05 thì tôi gọi lại số này về vụ 27 ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "support"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "f0a439f5-0d3b-5630-87d9-632ea76b4475-u01": {
+            "kind": "original_extension"
+          },
+          "f0a439f5-0d3b-5630-87d9-632ea76b4475-u02": {
+            "kind": "original_extension"
+          },
+          "f0a439f5-0d3b-5630-87d9-632ea76b4475-u03": {
+            "kind": "original_extension"
+          },
+          "f0a439f5-0d3b-5630-87d9-632ea76b4475-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8",
+      "event_id": "E05",
+      "context_vi": "Khách phải trả xe lúc 17 giờ. Khi đang dừng ở một trạm an toàn, khách thấy có thể tới lúc 17 giờ 20 và gọi trước.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8-u01",
+          "speaker_id": "a",
+          "ja": "十七時返却の契約ですが、渋滞で到着が十七時二十分頃になりそうです。今、休憩先から電話しています。",
+          "vi": "Tôi phải trả xe lúc 17 giờ, nhưng tắc đường nên có lẽ 17 giờ 20 mới tới. Tôi đang gọi từ nơi dừng nghỉ ạ."
+        },
+        {
+          "id": "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8-u02",
+          "speaker_id": "b",
+          "ja": "ご連絡ありがとうございます。このご契約なら、今日は同じ店舗で十七時半まで受け取れます。",
+          "vi": "Cảm ơn chị đã gọi. Với lượt thuê này, hôm nay chúng tôi có thể nhận tại cùng chi nhánh chậm nhất 17 giờ 30 ạ."
+        },
+        {
+          "id": "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8-u03",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。超えた分は、どう精算されますか。",
+          "vi": "Cảm ơn anh. Phần vượt thời gian sẽ tính thế nào ạ?"
+        },
+        {
+          "id": "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8-u04",
+          "speaker_id": "b",
+          "ja": "実際の到着時刻を確認し、契約の延長料金を返却時にお伝えします。十七時半にも間に合わない場合は、改めてご連絡ください。",
+          "vi": "Chúng tôi sẽ xem giờ đến thực tế rồi báo phí gia hạn theo hợp đồng khi chị trả. Nếu sắp không kịp cả 17 giờ 30, chị báo lại nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "support"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8-u01": {
+            "kind": "original_extension"
+          },
+          "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8-u02": {
+            "kind": "original_extension"
+          },
+          "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8-u03": {
+            "kind": "original_extension"
+          },
+          "6b8c4f2e-d771-5e3d-a8b2-706e70b1b8b8-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "031b16e2-b7da-595b-a3ce-81fd8cd4a02b",
+      "event_id": "E05",
+      "context_vi": "Khách đã đến điểm trả xe nhưng bãi đông và có lối đi một chiều trong bãi. Khách hỏi nhân viên đang điều xe tại chỗ nên vào làn nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "031b16e2-b7da-595b-a3ce-81fd8cd4a02b-u01",
+          "speaker_id": "a",
+          "ja": "返却に来たのですが、入口が混んでいます。どちらに並べばいいですか。",
+          "vi": "Tôi tới trả xe nhưng lối vào đang đông. Tôi xếp vào bên nào ạ?"
+        },
+        {
+          "id": "031b16e2-b7da-595b-a3ce-81fd8cd4a02b-u02",
+          "speaker_id": "b",
+          "ja": "左の「返却」の表示の列です。手前の停止線でお止まりください。",
+          "vi": "Chị vào hàng bên trái có biển 返却, tức trả xe. Dừng trước vạch phía trước ạ."
+        },
+        {
+          "id": "031b16e2-b7da-595b-a3ce-81fd8cd4a02b-u03",
+          "speaker_id": "a",
+          "ja": "出口の矢印には進まず、左の列で合図を待てばいいですか。",
+          "vi": "Tôi đợi hiệu lệnh ở làn trái, chưa đi theo mũi tên lối ra đúng không ạ?"
+        },
+        {
+          "id": "031b16e2-b7da-595b-a3ce-81fd8cd4a02b-u04",
+          "speaker_id": "b",
+          "ja": "はい。空いた位置まで係がご案内しますので、案内があるまでお待ちください。",
+          "vi": "Vâng. Nhân viên sẽ hướng dẫn chị tới ô trống. Chị chờ tới khi có hướng dẫn nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "031b16e2-b7da-595b-a3ce-81fd8cd4a02b-u01": {
+            "kind": "original_extension"
+          },
+          "031b16e2-b7da-595b-a3ce-81fd8cd4a02b-u02": {
+            "kind": "original_extension"
+          },
+          "031b16e2-b7da-595b-a3ce-81fd8cd4a02b-u03": {
+            "kind": "original_extension"
+          },
+          "031b16e2-b7da-595b-a3ce-81fd8cd4a02b-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "06b9a16a-e738-5ecf-b366-e7d5ca8abbff",
+      "event_id": "E05",
+      "context_vi": "Nhân viên thấy vết xước ở cửa sau bên trái lúc nhận lại xe. Khách nhớ đã chỉ cùng người giao và mở liên phiếu kiểm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "06b9a16a-e738-5ecf-b366-e7d5ca8abbff-u01",
+          "speaker_id": "b",
+          "ja": "左後ろのドアに傷があります。いつ付いたか、お分かりになりますか。",
+          "vi": "Cửa sau bên trái có vết xước. Chị biết vết này có từ lúc nào không ạ?"
+        },
+        {
+          "id": "06b9a16a-e738-5ecf-b366-e7d5ca8abbff-u02",
+          "speaker_id": "a",
+          "ja": "出発前に一緒に確認して、控えの図に印を付けてもらいました。ここを見ていただけますか。",
+          "vi": "Trước khi đi, tôi đã cùng nhân viên kiểm và nhờ đánh dấu trên sơ đồ của liên này. Anh xem chỗ này nhé?"
+        },
+        {
+          "id": "06b9a16a-e738-5ecf-b366-e7d5ca8abbff-u03",
+          "speaker_id": "b",
+          "ja": "確認しました。同じ位置に記載があります。この傷は今回のご利用で付いたものとしては扱いません。",
+          "vi": "Tôi đã kiểm. Có ghi đúng vị trí đó. Chúng tôi sẽ không ghi vết này là vết phát sinh trong lượt thuê của chị ạ."
+        },
+        {
+          "id": "06b9a16a-e738-5ecf-b366-e7d5ca8abbff-u04",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。精算のとき、この傷の追加分はないと確認できました。",
+          "vi": "Cảm ơn anh. Tôi đã rõ là vết này không có khoản tính thêm trong lúc thanh toán ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "conditions"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "06b9a16a-e738-5ecf-b366-e7d5ca8abbff-u01": {
+            "kind": "original_extension"
+          },
+          "06b9a16a-e738-5ecf-b366-e7d5ca8abbff-u02": {
+            "kind": "original_extension"
+          },
+          "06b9a16a-e738-5ecf-b366-e7d5ca8abbff-u03": {
+            "kind": "original_extension"
+          },
+          "06b9a16a-e738-5ecf-b366-e7d5ca8abbff-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ab13b662-4764-58f1-b5a0-2e74230cd7c8",
+      "event_id": "E05",
+      "context_vi": "Khách đã trả chìa khóa. Cửa hàng trong bài cần đối chiếu số liệu ETC vì khách dùng thẻ ETC thuê kèm. Khách hỏi bao giờ có tiền cuối và ai báo.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ab13b662-4764-58f1-b5a0-2e74230cd7c8-u01",
+          "speaker_id": "b",
+          "ja": "お車の返却は確認しました。貸し出したＥＴＣカードの利用記録は、まだ照合中です。",
+          "vi": "Chúng tôi đã xác nhận trả xe. Việc đối chiếu lượt dùng thẻ ETC cho thuê kèm vẫn đang tiến hành ạ."
+        },
+        {
+          "id": "ab13b662-4764-58f1-b5a0-2e74230cd7c8-u02",
+          "speaker_id": "a",
+          "ja": "では、最終の追加金額はまだ出ていないんですね。いつ分かりますか。",
+          "vi": "Vậy số tiền phát sinh cuối chưa có nhỉ. Lúc nào tôi biết được ạ?"
+        },
+        {
+          "id": "ab13b662-4764-58f1-b5a0-2e74230cd7c8-u03",
+          "speaker_id": "b",
+          "ja": "明日の十七時までに、返却店から明細をお送りします。照合が終わらなければ、進み具合を先にお知らせします。",
+          "vi": "Chậm nhất 17 giờ mai, chi nhánh trả xe sẽ gửi chi tiết. Nếu chưa đối chiếu xong, chúng tôi sẽ báo tiến độ trước ạ."
+        },
+        {
+          "id": "ab13b662-4764-58f1-b5a0-2e74230cd7c8-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。明日十七時まで、返却した店舗からの連絡を待ちます。",
+          "vi": "Tôi rõ rồi. Tôi đợi tin từ chi nhánh đã trả xe chậm nhất 17 giờ mai ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "conditions"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ab13b662-4764-58f1-b5a0-2e74230cd7c8-u01": {
+            "kind": "original_extension"
+          },
+          "ab13b662-4764-58f1-b5a0-2e74230cd7c8-u02": {
+            "kind": "original_extension"
+          },
+          "ab13b662-4764-58f1-b5a0-2e74230cd7c8-u03": {
+            "kind": "original_extension"
+          },
+          "ab13b662-4764-58f1-b5a0-2e74230cd7c8-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "4af0439d-864d-55e0-b974-b9971918b02a",
+      "event_id": "E05",
+      "context_vi": "Ngày sau khi trả xe, khách nhận thông báo phí ETC 1.470 yên nhưng thiếu ngày giờ lượt đi. Khách gọi đúng điểm trả và muốn đối chiếu trước khi kết luận.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Khách thuê xe",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Nhân viên hãng cho thuê xe",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "4af0439d-864d-55e0-b974-b9971918b02a-u01",
+          "speaker_id": "a",
+          "ja": "昨日返却した者です。ＥＴＣの追加が千四百七十円と来ましたが、利用した日時と区間も確認できますか。",
+          "vi": "Tôi trả xe hôm qua. Tôi nhận thông báo phí ETC thêm 1.470 yên. Anh kiểm được cả ngày giờ và đoạn đường đã đi không ạ?"
+        },
+        {
+          "id": "4af0439d-864d-55e0-b974-b9971918b02a-u02",
+          "speaker_id": "b",
+          "ja": "確認いたします。お手元の契約番号と、通知にある金額を照合します。",
+          "vi": "Tôi kiểm tra ạ. Tôi sẽ đối chiếu mã hợp đồng chị đang giữ và số tiền trên thông báo."
+        },
+        {
+          "id": "4af0439d-864d-55e0-b974-b9971918b02a-u03",
+          "speaker_id": "a",
+          "ja": "契約番号をお伝えします。利用した記録と金額の明細を、同じメールアドレスに送ってもらえますか。",
+          "vi": "Tôi đọc mã hợp đồng nhé. Anh gửi lịch sử đi và từng khoản vào cùng địa chỉ email giúp tôi được không ạ?"
+        },
+        {
+          "id": "4af0439d-864d-55e0-b974-b9971918b02a-u04",
+          "speaker_id": "b",
+          "ja": "承知しました。本日中に、確認できた明細か確認状況をお送りします。",
+          "vi": "Vâng. Trong hôm nay tôi sẽ gửi các khoản đã xác nhận hoặc tình hình đối chiếu ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "conditions"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "4af0439d-864d-55e0-b974-b9971918b02a-u01": {
+            "kind": "original_extension"
+          },
+          "4af0439d-864d-55e0-b974-b9971918b02a-u02": {
+            "kind": "original_extension"
+          },
+          "4af0439d-864d-55e0-b974-b9971918b02a-u03": {
+            "kind": "original_extension"
+          },
+          "4af0439d-864d-55e0-b974-b9971918b02a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}

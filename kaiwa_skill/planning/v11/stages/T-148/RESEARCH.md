@@ -42,3 +42,5 @@
 Rà độc lập toàn bộ chặng.
 
 Rà lại S004 với con chưa ở cùng mẹ, S006 để người nói tự nêu nhu cầu, và S019/S020 phân biệt hỏi tại chỗ trước 17:00 với cuộc gọi chủ động tới 16:30 trong tình huống khác. Không mang giờ hay kênh của cảnh khác sang.
+
+Đọc lại S020 theo phản hồi từ điều phối. Người mẹ có quyền dùng điện thoại ở nơi đang ở, chỉ hỏi quầy có thể nhận cuộc gọi kiểm lại tới 16:30. Cả hai máy đều không dùng để gọi ngược; kết quả tiếp nhận còn chờ.
