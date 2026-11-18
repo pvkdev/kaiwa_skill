@@ -12,10 +12,24 @@
     },
     "cabinet": {
       "kind": "web",
-      "title": "内閣府 避難所運営ガイドライン",
-      "url": "https://www.bousai.go.jp/taisaku/hinanjo/pdf/1604hinanjo_guideline.pdf",
-      "accessed": "2026-11-17",
-      "use_vi": "Vận hành điểm sơ tán, tiếp nhận và hỗ trợ nhu cầu người cần quan tâm; chi tiết vị trí trong cảnh là hư cấu."
+      "title": "内閣府 避難所運営等避難生活支援のためのガイドライン（令和6年12月改定）",
+      "url": "https://www.bousai.go.jp/taisaku/hinanjo/pdf/2412hinanjo_guideline.pdf",
+      "accessed": "2026-11-18",
+      "use_vi": "Tiếp nhận, thông tin, vật dụng, chăm sóc người có nhu cầu và bảo vệ thông tin. Giờ, khu và nơi thay thế là dữ kiện tình huống theo từng điểm."
+    },
+    "evac_route": {
+      "kind": "web",
+      "title": "消防庁 指定緊急避難場所の確保等",
+      "url": "https://www.fdma.go.jp/laws/tutatsu/items/220520_bousai_5.pdf",
+      "accessed": "2026-11-18",
+      "use_vi": "Điểm và đường di chuyển cần theo loại thiên tai, thông tin tại chỗ và tình trạng an toàn. Không áp dụng tên trường hay tuyến của cảnh ngoài tình huống."
+    },
+    "medication": {
+      "kind": "web",
+      "title": "高松赤十字病院 災害への備え お薬手帳について",
+      "url": "https://www.takamatsu.jrc.or.jp/magazine/entry-2737.html",
+      "accessed": "2026-11-18",
+      "use_vi": "Tên và sổ theo dõi thuốc giúp nhân viên y tế tại điểm sơ tán xác minh thuốc đang dùng. Hội thoại chuyển đúng đầu mối."
     }
   },
   "dialogues": [
@@ -39,19 +53,20 @@
         {
           "id": "e9efb752-8d67-5c69-9131-04127ecf134e-u01",
           "speaker_id": "a",
-          "ja": "さくら町から来ました。ここで受け付けてもらえますか。",
-          "vi": "Tôi đến từ khu Sakura. Ở đây có tiếp nhận người từ khu đó không ạ?"
+          "ja": "さくら町から来ました。ここに避難してもいいですか。",
+          "vi": "Tôi từ khu Sakura tới. Tôi có thể sơ tán ở đây không ạ?"
         },
         {
           "id": "e9efb752-8d67-5c69-9131-04127ecf134e-u02",
           "speaker_id": "b",
-          "ja": "はい、さくら町の方も対象です。今の空きを確認します。満員なら、きた小学校をご案内します。",
-          "vi": "Có, người khu Sakura thuộc diện được tiếp nhận. Tôi sẽ kiểm tra chỗ trống lúc này. Nếu đã đầy, tôi sẽ chỉ bạn tới Trường Tiểu học Kita."
+          "ja": "はい、さくら町の方も受け付けています。空きがあるか確認します。いっぱいなら、北小学校をご案内します。",
+          "vi": "Có ạ, ở đây tiếp nhận cả người ở khu Sakura. Tôi sẽ kiểm còn chỗ không. Nếu hết chỗ, tôi sẽ hướng dẫn chị tới Trường Tiểu học Kita."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "cabinet"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -84,25 +99,26 @@
         {
           "id": "7de57272-adca-5835-a04e-7c3fcbfe4904-u01",
           "speaker_id": "a",
-          "ja": "子どもと年を取った家族と一緒です。どこで休めますか。",
-          "vi": "Tôi đi cùng trẻ nhỏ và một người lớn tuổi trong nhà. Chúng tôi có thể nghỉ ở đâu ạ?"
+          "ja": "小さい子どもと祖母と一緒です。三人で休める場所はありますか。",
+          "vi": "Tôi đi cùng con nhỏ và bà tôi. Có chỗ nào cho cả ba người nghỉ không ạ?"
         },
         {
           "id": "7de57272-adca-5835-a04e-7c3fcbfe4904-u02",
           "speaker_id": "b",
-          "ja": "奥に家族用の場所があります。まず人数を確認します。",
-          "vi": "Phía trong có khu dành cho gia đình. Trước tiên tôi sẽ ghi số người."
+          "ja": "奥に家族で休める場所があります。三人でよろしいですか。",
+          "vi": "Phía trong có chỗ để gia đình nghỉ cùng nhau. Tổng cộng ba người, đúng không ạ?"
         },
         {
           "id": "7de57272-adca-5835-a04e-7c3fcbfe4904-u03",
           "speaker_id": "a",
-          "ja": "三人です。",
-          "vi": "Chúng tôi có ba người."
+          "ja": "はい、私を入れて三人です。",
+          "vi": "Vâng, tính cả tôi là ba người ạ."
         }
       ],
       "admin": {
         "source_refs": [
-          "main"
+          "main",
+          "cabinet"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -150,14 +166,15 @@
         {
           "id": "0de67a02-97fe-5f16-8ada-6ee65d986423-u03",
           "speaker_id": "b",
-          "ja": "市の案内では、北小学校です。道の状況を係に確認してから案内します。",
-          "vi": "Theo thông báo của thành phố, là Trường Tiểu học Kita. Tôi sẽ hỏi người phụ trách tình trạng đường rồi chỉ bạn."
+          "ja": "市の案内では北小学校です。今通れる道を確認しますので、ここで少し待ってください。",
+          "vi": "Theo thông báo của thành phố thì đến Trường Tiểu học Kita. Chị đợi ở đây một chút để tôi kiểm đường nào hiện đi được ạ."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "cabinet"
+          "cabinet",
+          "evac_route"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -239,8 +256,8 @@
         {
           "id": "3e9b45c5-044f-5b14-b367-75bce5307c16-u01",
           "speaker_id": "a",
-          "ja": "寝る場所と水をもらう場所はどこですか。お知らせはどう聞きますか。",
-          "vi": "Chỗ ngủ và nơi lấy nước ở đâu ạ? Tôi theo dõi thông báo bằng cách nào?"
+          "ja": "寝る場所と水をもらう場所はどこですか。お知らせは、どうやって分かりますか。",
+          "vi": "Chỗ ngủ và nơi lấy nước ở đâu ạ? Tôi xem thông báo bằng cách nào?"
         },
         {
           "id": "3e9b45c5-044f-5b14-b367-75bce5307c16-u02",
@@ -268,7 +285,7 @@
     {
       "situation_uid": "80d42b85-eac5-543b-a42b-49c8156126b3",
       "event_id": "E02",
-      "context_vi": "Con bạn cần đồ dùng cho trẻ, người lớn tuổi đi cùng cần hỏi về thuốc đang dùng. Bạn xin gặp đầu mối phụ trách.",
+      "context_vi": "Con bạn cần tã. Thuốc thường dùng của bà đi cùng cũng sắp hết. Bạn hỏi phải gặp ai ở điểm sơ tán.",
       "speakers": [
         {
           "id": "a",
@@ -285,20 +302,21 @@
         {
           "id": "80d42b85-eac5-543b-a42b-49c8156126b3-u01",
           "speaker_id": "a",
-          "ja": "子どもの物が必要です。家族の薬についても相談したいです。担当の方はどこですか。",
-          "vi": "Tôi cần đồ dùng cho trẻ và muốn hỏi về thuốc người nhà đang dùng. Người phụ trách ở đâu ạ?"
+          "ja": "子どものおむつが必要です。それと、祖母の薬がもうすぐなくなります。どこで相談できますか。",
+          "vi": "Tôi cần tã cho con. Thuốc bà tôi đang uống cũng sắp hết. Tôi có thể hỏi ở đâu ạ?"
         },
         {
           "id": "80d42b85-eac5-543b-a42b-49c8156126b3-u02",
           "speaker_id": "b",
-          "ja": "入口の相談係にお話しください。薬の名前が分かれば、伝えてください。",
-          "vi": "Bạn trao đổi với người phụ trách ở cửa vào nhé. Nếu biết tên thuốc, hãy cho họ biết."
+          "ja": "おむつは入口の相談係に聞いてください。薬のことは医療スタッフにつなぎます。薬の名前が分かれば伝えてください。",
+          "vi": "Về tã, chị hỏi bàn hỗ trợ ở lối vào nhé. Về thuốc, tôi sẽ giới thiệu nhân viên y tế. Nếu biết tên thuốc, chị nói với họ ạ."
         }
       ],
       "admin": {
         "source_refs": [
           "main",
-          "cabinet"
+          "cabinet",
+          "medication"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -314,7 +332,7 @@
     {
       "situation_uid": "0e425f6e-a7bc-55a6-aebc-a4f58acc4277",
       "event_id": "E02",
-      "context_vi": "Người phụ trách nói đồ dùng trẻ em bạn cần hiện chưa có. Bạn hỏi lúc nào và ở đâu hỏi lại.",
+      "context_vi": "Ở bàn hỗ trợ lối vào, nhân viên nói cỡ tã con bạn cần hiện đã hết. Bạn hỏi khi nào và ở đâu có thể hỏi lại.",
       "speakers": [
         {
           "id": "a",
@@ -331,8 +349,8 @@
         {
           "id": "0e425f6e-a7bc-55a6-aebc-a4f58acc4277-u01",
           "speaker_id": "b",
-          "ja": "その子ども用品は、今はありません。",
-          "vi": "Hiện chưa có món đồ trẻ em bạn cần ạ."
+          "ja": "そのサイズのおむつは、今はありません。",
+          "vi": "Hiện chưa có tã cỡ đó ạ."
         },
         {
           "id": "0e425f6e-a7bc-55a6-aebc-a4f58acc4277-u02",
@@ -343,8 +361,8 @@
         {
           "id": "0e425f6e-a7bc-55a6-aebc-a4f58acc4277-u03",
           "speaker_id": "b",
-          "ja": "午後三時に入口の相談係へ聞いてください。入荷があればお伝えします。",
-          "vi": "Lúc 3 giờ chiều, bạn hỏi lại người phụ trách ở cửa vào. Nếu có hàng đến, chúng tôi sẽ báo."
+          "ja": "午後三時にこの相談係へ来てください。届いたかどうか、お伝えします。",
+          "vi": "Chị quay lại bàn hỗ trợ này lúc 3 giờ chiều nhé. Tôi sẽ báo tã đã về chưa ạ."
         }
       ],
       "admin": {
@@ -392,8 +410,14 @@
         {
           "id": "e5f6c697-c08b-50b3-a3f2-beceac58f060-u02",
           "speaker_id": "b",
-          "ja": "はい。場所が分からなければ受付で聞いてください。",
-          "vi": "Đúng. Nếu không tìm thấy, bạn hỏi bàn tiếp nhận nhé."
+          "ja": "はい。水は今、一人一本ずつです。列に並んで受け取ってください。",
+          "vi": "Đúng ạ. Lượt này nước phát mỗi người một chai. Chị xếp hàng để nhận nhé."
+        },
+        {
+          "id": "e5f6c697-c08b-50b3-a3f2-beceac58f060-u03",
+          "speaker_id": "a",
+          "ja": "一人一本ですね。並んで受け取ります。",
+          "vi": "Mỗi người một chai ạ. Tôi sẽ xếp hàng để nhận."
         }
       ],
       "admin": {
@@ -407,6 +431,9 @@
             "kind": "original_extension"
           },
           "e5f6c697-c08b-50b3-a3f2-beceac58f060-u02": {
+            "kind": "original_extension"
+          },
+          "e5f6c697-c08b-50b3-a3f2-beceac58f060-u03": {
             "kind": "original_extension"
           }
         }
@@ -438,8 +465,8 @@
         {
           "id": "e121b96f-acf8-52b8-b496-8d7d2e5d1988-u02",
           "speaker_id": "b",
-          "ja": "お名前を教えてください。確認する係に伝えます。",
-          "vi": "Cho tôi xin tên của bà. Tôi sẽ báo người phụ trách tìm kiếm."
+          "ja": "お母様のお名前を教えてください。担当に伝えます。",
+          "vi": "Cho tôi xin tên mẹ chị. Tôi sẽ báo người phụ trách ạ."
         },
         {
           "id": "e121b96f-acf8-52b8-b496-8d7d2e5d1988-u03",
@@ -499,8 +526,8 @@
         {
           "id": "f5ee27c1-39f1-54bf-9ceb-c2021e815a6e-u03",
           "speaker_id": "b",
-          "ja": "こちらの担当から先方に連絡して、情報を照合します。確認できてからお伝えします。",
-          "vi": "Người phụ trách ở đây sẽ liên hệ nơi ấy để đối chiếu thông tin. Khi xác nhận được, chúng tôi sẽ báo."
+          "ja": "こちらの係から、その避難所に確認します。お母様だと分かったら、こちらからお知らせします。",
+          "vi": "Chúng tôi sẽ hỏi điểm sơ tán đó. Khi xác nhận được có đúng là mẹ chị, chúng tôi sẽ báo lại ạ."
         }
       ],
       "admin": {
@@ -548,8 +575,8 @@
         {
           "id": "44f85ca0-dc27-57b2-a182-f140f7746d9c-u02",
           "speaker_id": "b",
-          "ja": "分かりました。探していた件を更新します。",
-          "vi": "Tôi hiểu. Tôi sẽ cập nhật thông tin tìm người."
+          "ja": "よかったです。お母様と連絡が取れたと、記録を更新しておきます。",
+          "vi": "May quá. Tôi sẽ cập nhật là chị đã liên lạc được với mẹ ạ."
         }
       ],
       "admin": {
@@ -588,14 +615,14 @@
         {
           "id": "57af70e7-eace-51ad-b1bc-b86606f70425-u01",
           "speaker_id": "a",
-          "ja": "電話がつながりません。母が来た時、私の居場所をどう伝えられますか。",
-          "vi": "Điện thoại không có sóng. Nếu mẹ đến, nơi này có thể báo chỗ tôi đang ở bằng cách nào ạ?"
+          "ja": "ここは携帯の電波が入りません。母が来たときのために、今いる場所を受付に伝えておいてもいいですか。",
+          "vi": "Ở đây điện thoại không có sóng. Tôi có thể để lại chỗ mình đang ở tại bàn tiếp nhận phòng khi mẹ tôi tới không ạ?"
         },
         {
           "id": "57af70e7-eace-51ad-b1bc-b86606f70425-u02",
           "speaker_id": "b",
-          "ja": "受付にお名前と今の区画を残してください。確認できる方にだけお伝えします。",
-          "vi": "Bạn để lại tên và khu đang ở tại bàn tiếp nhận. Chúng tôi sẽ chỉ báo cho người được xác minh."
+          "ja": "はい。お名前と今いる区画を教えてください。お母様だと確認してから、お伝えします。",
+          "vi": "Được ạ. Chị cho xin tên và khu đang ở. Khi xác nhận đúng là mẹ chị, chúng tôi sẽ chuyển lời."
         }
       ],
       "admin": {
@@ -680,8 +707,8 @@
         {
           "id": "27a5bbc6-5838-5113-9a45-206fada4f963-u01",
           "speaker_id": "a",
-          "ja": "車がまだ来ません。三人とも今はここで待っています。記録をそのままにしてください。",
-          "vi": "Xe vẫn chưa tới. Cả ba người chúng tôi vẫn chờ ở đây. Xin giữ thông tin hiện tại ạ."
+          "ja": "車がまだ来ません。三人ともここにいます。まだ出発していないと書いてもらえますか。",
+          "vi": "Xe vẫn chưa tới. Cả ba chúng tôi vẫn ở đây. Anh ghi giúp là chúng tôi chưa đi được không ạ?"
         },
         {
           "id": "27a5bbc6-5838-5113-9a45-206fada4f963-u02",
@@ -726,8 +753,8 @@
         {
           "id": "0b6ef645-eec4-53aa-a5ff-370baeb66de5-u01",
           "speaker_id": "a",
-          "ja": "予定が変わりました。今はここに三人います。次は北体育館へ行きます。",
-          "vi": "Kế hoạch đổi rồi. Hiện cả ba người vẫn ở đây. Tiếp theo chúng tôi đến Nhà thi đấu Kita."
+          "ja": "予定が変わりました。三人ともまだここにいます。北小学校ではなく、北体育館に行きます。",
+          "vi": "Kế hoạch thay đổi rồi ạ. Cả ba người vẫn ở đây. Chúng tôi sẽ đến Nhà thi đấu Kita thay cho Trường Tiểu học Kita."
         },
         {
           "id": "0b6ef645-eec4-53aa-a5ff-370baeb66de5-u02",
@@ -772,8 +799,8 @@
         {
           "id": "f59b74ab-7676-5c74-9e26-1b29877be288-u01",
           "speaker_id": "a",
-          "ja": "預けた荷物は受け取りました。出たあと、ここに聞く時はどこへ電話しますか。",
-          "vi": "Tôi đã nhận lại túi đồ gửi. Sau khi rời đi, tôi gọi số nào để hỏi nơi này ạ?"
+          "ja": "預けた荷物は受け取りました。移動してから、何かあったらどの番号に電話すればいいですか。",
+          "vi": "Tôi đã nhận lại túi gửi rồi. Sau khi chuyển đi, nếu cần hỏi thì tôi gọi số nào ạ?"
         },
         {
           "id": "f59b74ab-7676-5c74-9e26-1b29877be288-u02",
@@ -784,8 +811,8 @@
         {
           "id": "f59b74ab-7676-5c74-9e26-1b29877be288-u03",
           "speaker_id": "a",
-          "ja": "分かりました。荷物と連絡先を確認しました。",
-          "vi": "Tôi hiểu. Tôi đã nhận đủ đồ và biết đầu mối liên hệ."
+          "ja": "この番号ですね。着いたら、どこにいるか知らせます。",
+          "vi": "Tôi gọi số này, đúng không ạ? Đến nơi tôi sẽ báo mình ở đâu."
         }
       ],
       "admin": {
@@ -810,7 +837,7 @@
     {
       "situation_uid": "5b636883-0605-5929-8076-eaaed2342c85",
       "event_id": "E05",
-      "context_vi": "Sau khi chuyển tới nơi sơ tán mới, người lớn tuổi đi cùng bạn khó ngủ vì khu hiện tại ồn. Bạn nêu thay đổi cụ thể với bàn hỗ trợ.",
+      "context_vi": "Tối ở điểm sơ tán mới, tiếng người ra vào làm bà bạn không ngủ được. Bạn xin chỗ yên hơn và cho nhân viên biết nơi cả ba đang ở.",
       "speakers": [
         {
           "id": "a",
@@ -827,14 +854,20 @@
         {
           "id": "5b636883-0605-5929-8076-eaaed2342c85-u01",
           "speaker_id": "a",
-          "ja": "家族三人で来ました。年を取った家族が、今の場所は音が大きくて眠れません。静かな場所を相談できますか。",
-          "vi": "Gia đình tôi có ba người. Người lớn tuổi đi cùng không ngủ được vì khu hiện tại ồn. Chúng tôi có thể hỏi về chỗ yên hơn không ạ?"
+          "ja": "三人で来ています。祖母が、周りの音で眠れません。もう少し静かな所はありますか。",
+          "vi": "Nhà tôi có ba người. Bà tôi không ngủ được vì xung quanh ồn. Có chỗ nào yên hơn một chút không ạ?"
         },
         {
           "id": "5b636883-0605-5929-8076-eaaed2342c85-u02",
           "speaker_id": "b",
           "ja": "はい。今の区画を教えてください。",
           "vi": "Được. Cho tôi biết khu hiện tại."
+        },
+        {
+          "id": "5b636883-0605-5929-8076-eaaed2342c85-u03",
+          "speaker_id": "a",
+          "ja": "入口に近いAの区画です。",
+          "vi": "Ở khu A gần lối vào ạ."
         }
       ],
       "admin": {
@@ -848,6 +881,9 @@
             "kind": "original_extension"
           },
           "5b636883-0605-5929-8076-eaaed2342c85-u02": {
+            "kind": "original_extension"
+          },
+          "5b636883-0605-5929-8076-eaaed2342c85-u03": {
             "kind": "original_extension"
           }
         }
@@ -885,8 +921,8 @@
         {
           "id": "a1d9aeda-40c2-5e3d-990c-ed7f5585ab81-u03",
           "speaker_id": "b",
-          "ja": "まず隣の小部屋をご案内します。変更は責任者が確認します。",
-          "vi": "Trước mắt tôi sẽ dẫn bạn tới phòng nhỏ bên cạnh. Người phụ trách sẽ xác nhận việc đổi khu."
+          "ja": "今は隣の小部屋で休めます。移れる場所があるか、ここの責任者に確認します。",
+          "vi": "Trước mắt chị có thể nghỉ ở phòng nhỏ bên cạnh. Tôi sẽ hỏi người phụ trách ở đây xem có khu nào để chuyển sang."
         }
       ],
       "admin": {
@@ -928,8 +964,8 @@
         {
           "id": "442de967-cfea-51ba-afe3-0592adac7a88-u01",
           "speaker_id": "a",
-          "ja": "移動の案内は、家族三人ともですか。年を取った家族だけですか。",
-          "vi": "Thông báo chuyển khu áp dụng cho cả ba người trong nhà hay chỉ người lớn tuổi ạ?"
+          "ja": "移るのは家族三人ともですか。それとも祖母だけですか。",
+          "vi": "Cả ba người nhà tôi cùng chuyển hay chỉ bà tôi thôi ạ?"
         },
         {
           "id": "442de967-cfea-51ba-afe3-0592adac7a88-u02",
@@ -974,14 +1010,14 @@
         {
           "id": "d9fa1887-2633-56b1-a59f-771f6eedfa9f-u01",
           "speaker_id": "a",
-          "ja": "家族三人は二階のBに移りました。あとで来る家族のために、場所を直してください。",
-          "vi": "Cả ba người chúng tôi đã chuyển sang khu B tầng hai. Xin cập nhật vị trí để người nhà đến sau tìm được."
+          "ja": "三人とも二階のBに移りました。あとで家族が私たちを探しに来るので、受付の記録を変えてもらえますか。",
+          "vi": "Cả ba chúng tôi đã chuyển sang khu B tầng hai. Lát nữa người nhà sẽ đến tìm. Anh cập nhật chỗ chúng tôi ở trên sổ tiếp nhận giúp được không ạ?"
         },
         {
           "id": "d9fa1887-2633-56b1-a59f-771f6eedfa9f-u02",
           "speaker_id": "b",
-          "ja": "分かりました。受付の場所の記録を直します。",
-          "vi": "Tôi hiểu. Tôi sẽ cập nhật vị trí trong sổ tiếp nhận."
+          "ja": "はい。二階のBに直します。ご家族だと確認してからお伝えします。",
+          "vi": "Vâng, tôi sẽ sửa thành khu B tầng hai. Khi xác nhận đúng là người nhà, tôi sẽ báo vị trí ạ."
         }
       ],
       "admin": {
