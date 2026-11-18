@@ -2,266 +2,556 @@
 <html lang="vi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f7f8f5">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f6f2">
 <title>Harumii · Lộ trình Kaiwa</title>
 <script>
 try {
   document.documentElement.dataset.theme = localStorage.getItem("kaiwa-review:theme")
     || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.dataset.vi = JSON.parse(localStorage.getItem("kaiwa-review:vi") ?? "true") === false ? "off" : "on";
+  const scale = Number(JSON.parse(localStorage.getItem("kaiwa-review:jaScale") ?? "1"));
+  if (scale >= .85 && scale <= 1.5) document.documentElement.style.setProperty("--ja-scale", scale);
 } catch {
   document.documentElement.dataset.theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  document.documentElement.dataset.vi = "on";
 }
 </script>
 <style>
 :root {
   color-scheme: light;
-  --bg: #f7f8f5;
-  --surface: #fff;
-  --soft: #f0f3ef;
-  --text: #20352f;
-  --muted: #6f7d76;
-  --line: #e1e8e1;
+  --bg: #f3f6f1;
+  --surface: #ffffff;
+  --soft: #edf2ec;
+  --text: #1d322b;
+  --muted: #667870;
+  --line: #dfe7de;
   --accent: #2e7057;
-  --accent-soft: #e8f2eb;
+  --accent-strong: #235a46;
+  --accent-soft: #e5f1e9;
+  --male: #2f74d0;
+  --male-soft: #e9f1fc;
+  --male-line: #bfd6f4;
+  --female: #d04a78;
+  --female-soft: #fdecf2;
+  --female-line: #f5c5d6;
+  --n0: #4c8a77;
+  --n0-soft: #e8f3ee;
+  --n0-line: #c3ddd2;
+  --n1: #6f78bd;
+  --n1-soft: #eceefa;
+  --n1-line: #cdd2ee;
   --shadow: 0 16px 50px #1c392618;
-  --sidebar: 332px;
-  --header: 78px;
-  font-family: Inter, "Noto Sans JP", "Segoe UI", system-ui, sans-serif;
+  --shadow-sm: 0 1px 2px #1c39260d, 0 4px 14px #1c39260a;
+  --sidebar: 320px;
+  --outline: 300px;
+  --header: 68px;
+  --chrome: var(--header);
+  --toolbar: 62px;
+  --ja-scale: 1;
+  --ja-font: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Meiryo", "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  font-family: Inter, "Segoe UI", system-ui, -apple-system, "Noto Sans", "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", sans-serif;
 }
-#pilot-links[hidden] { display: none !important; }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #101b18;
-  --surface: #16241f;
-  --soft: #1d2e27;
+  --bg: #0f1a17;
+  --surface: #162520;
+  --soft: #1d2f28;
   --text: #e6eee8;
-  --muted: #a1b3a8;
-  --line: #2a3d32;
+  --muted: #9fb2a7;
+  --line: #2a3e33;
   --accent: #9ed8b6;
-  --accent-soft: #223d2e;
-  --shadow: 0 16px 50px #0005;
+  --accent-strong: #b8e8cc;
+  --accent-soft: #223e2f;
+  --male: #86b6f4;
+  --male-soft: #1a2b45;
+  --male-line: #2e4a73;
+  --female: #f293b5;
+  --female-soft: #3a1f2b;
+  --female-line: #6a3a4d;
+  --n0: #8ccbb4;
+  --n0-soft: #1b3129;
+  --n0-line: #2f5043;
+  --n1: #a3abe6;
+  --n1-soft: #22254a;
+  --n1-line: #3a3f78;
+  --shadow: 0 16px 50px #0006;
+  --shadow-sm: 0 1px 2px #0004, 0 4px 14px #0003;
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); font-size: 15px; }
+html { scroll-behavior: auto; }
+body { margin: 0; background: var(--bg); color: var(--text); font-size: 15px; -webkit-text-size-adjust: 100%; }
 button, input { font: inherit; }
 button, a, summary { -webkit-tap-highlight-color: transparent; }
-button { cursor: pointer; color: inherit; }
+button { cursor: pointer; color: inherit; border: 0; }
 button:disabled { cursor: default; opacity: .35; }
 a { color: var(--accent); text-underline-offset: 4px; }
 button:focus-visible, summary:focus-visible, a:focus-visible, input:focus-visible {
-  outline: 3px solid var(--accent); outline-offset: 4px;
+  outline: 3px solid var(--accent); outline-offset: 3px;
 }
-button { border: 0; }
 [hidden] { display: none !important; }
+[lang="ja"], .ja { font-family: var(--ja-font); }
 .skip { position: fixed; top: -100px; left: 16px; z-index: 100; padding: 12px; background: var(--surface); }
 .skip:focus { top: 12px; }
+
+/* ───── Top bar ───── */
 .topbar {
   position: fixed; inset: 0 0 auto; height: var(--header); z-index: 30;
-  display: flex; align-items: center; gap: 24px; padding: 0 28px 0 22px;
-  background: var(--surface); border-bottom: 1px solid var(--line);
+  display: flex; align-items: center; gap: 24px; padding: 0 24px 0 20px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  transition: transform .22s ease;
 }
-.brand { display: flex; align-items: center; gap: 12px; width: calc(var(--sidebar) - 22px); flex-shrink: 0; }
+.brand { display: flex; align-items: center; gap: 12px; width: calc(var(--sidebar) - 20px); flex-shrink: 0; }
 .brand-mark {
-  width: 39px; height: 39px; border-radius: 13px; display: grid; place-items: center;
-  background: var(--accent); color: var(--surface); font: 700 22px serif;
+  width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent) 60%, #6bc3a0));
+  color: var(--surface); font: 700 21px serif;
 }
-.brand strong { font-size: 20px; letter-spacing: -.6px; }
-.brand small { display: block; color: var(--muted); font-size: 11px; letter-spacing: 1.4px; margin-top: 3px; }
-.level-tabs { display: flex; padding: 5px; background: var(--soft); border-radius: 13px; gap: 3px; }
-.level-tab { min-width: 100px; padding: 10px 18px; background: transparent; color: var(--muted); border-radius: 9px; font-weight: 650; }
-.level-tab[aria-selected="true"] { background: var(--surface); color: var(--accent); box-shadow: 0 2px 5px #0000000c; }
+.brand strong { font-size: 19px; letter-spacing: -.5px; }
+.brand small { display: block; color: var(--muted); font-size: 10.5px; letter-spacing: 1.5px; margin-top: 2px; }
+.level-tabs { display: flex; padding: 4px; background: var(--soft); border-radius: 13px; gap: 3px; }
+.level-tab { min-width: 96px; padding: 9px 16px; background: transparent; color: var(--muted); border-radius: 10px; font-weight: 650; }
+.level-tab[aria-selected="true"] { background: var(--surface); color: var(--accent); box-shadow: var(--shadow-sm); }
 .level-tab span { margin-left: 7px; font-size: 11px; opacity: .65; }
-.header-tools { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+.header-tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 .version { color: var(--muted); font-size: 12px; white-space: nowrap; }
 .theme-button, .nav-trigger, .drawer-close {
   background: transparent; display: inline-flex; align-items: center; justify-content: center;
   gap: 8px; min-height: 44px; padding: 9px 12px; border-radius: 10px;
 }
 .theme-button:hover, .nav-trigger:hover, .drawer-close:hover { background: var(--soft); }
-.theme-glyph { font-size: 22px; line-height: 1; }
+.theme-glyph { font-size: 21px; line-height: 1; }
 .nav-trigger, .drawer-close { display: none; }
+
+/* ───── Left sidebar ───── */
 .sidebar {
   position: fixed; left: 0; top: var(--header); bottom: 0; width: var(--sidebar); z-index: 25;
   display: flex; flex-direction: column; background: var(--surface); border-right: 1px solid var(--line);
 }
-.sidebar-head { padding: 25px 22px 16px; }
-.sidebar-title { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.sidebar-head { padding: 22px 20px 14px; }
+.sidebar-title { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
 .sidebar-title h2 { margin: 0; font-size: 15px; font-weight: 700; }
 .sidebar-title .count { color: var(--muted); font-size: 12px; }
-.search-wrap { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 11px; background: var(--bg); padding: 0 12px; gap: 9px; }
-.search-wrap span { color: var(--muted); font-size: 21px; }
+.search-wrap { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); padding: 0 12px; gap: 9px; }
+.search-wrap span { color: var(--muted); font-size: 20px; }
 #search { background: transparent; border: 0; padding: 12px 0; width: 100%; min-width: 0; color: var(--text); font-size: 13px; }
 #search::placeholder { color: var(--muted); opacity: .85; }
 #search:focus { outline: none; }
 .search-wrap:focus-within { border-color: var(--accent); outline: 2px solid var(--accent-soft); }
 .stage-list { padding: 0 12px 32px; overflow-y: auto; overscroll-behavior: contain; flex: 1; scrollbar-width: thin; }
-.nav-group { margin-top: 18px; }
-.nav-group > summary { list-style: none; cursor: pointer; padding: 13px 12px; color: var(--text); background: var(--soft); border-left: 3px solid var(--accent); border-radius: 0 9px 9px 0; margin-bottom: 7px; font-size: 13px; line-height: 1.6; font-weight: 750; display: flex; gap: 10px; align-items: center; }
+.nav-group { margin-top: 16px; }
+.nav-group > summary { list-style: none; cursor: pointer; padding: 11px 12px; color: var(--text); background: var(--soft); border-left: 3px solid var(--accent); border-radius: 0 10px 10px 0; margin-bottom: 6px; font-size: 12.5px; line-height: 1.55; font-weight: 750; display: flex; gap: 10px; align-items: center; }
 .nav-group > summary::before { content: "⌄"; font-size: 14px; }
 .nav-group:not([open]) > summary::before { content: "›"; }
 .nav-group > summary::-webkit-details-marker { display: none; }
-.stage-button { display: flex; align-items: baseline; gap: 12px; text-align: left; width: 100%; padding: 12px 10px; border-radius: 10px; background: transparent; font-size: 13px; line-height: 1.55; margin: 2px 0; }
+.stage-button { display: flex; align-items: baseline; gap: 12px; text-align: left; width: 100%; padding: 11px 10px; border-radius: 10px; background: transparent; font-size: 13px; line-height: 1.5; margin: 2px 0; }
 .stage-button:hover { background: var(--soft); }
 .stage-button[aria-current="page"] { background: var(--accent-soft); color: var(--accent); font-weight: 650; }
 .stage-number { font-size: 11px; color: var(--muted); min-width: 23px; font-variant-numeric: tabular-nums; }
 .specialty-marker { color: var(--accent); font-size: 18px; line-height: 1; }
 .stage-button[aria-current="page"] .stage-number { color: var(--accent); }
 .no-results { color: var(--muted); padding: 25px 12px; font-size: 13px; }
-.sidebar-foot { padding: 14px 22px; border-top: 1px solid var(--line); font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; }
-main { margin-left: var(--sidebar); margin-top: var(--header); min-height: calc(100vh - var(--header)); padding: 45px clamp(24px, 4.5vw, 76px) 120px; }
-.reader { max-width: 940px; margin: 0 auto; }
-.breadcrumb { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 0 0 20px; }
+.sidebar-foot { padding: 13px 20px; border-top: 1px solid var(--line); font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; }
+
+/* ───── Right outline ───── */
+.outline {
+  position: fixed; right: 0; top: var(--header); bottom: 0; width: var(--outline); z-index: 25;
+  display: flex; flex-direction: column; background: var(--surface); border-left: 1px solid var(--line);
+}
+.outline-head { padding: 20px 18px 12px; border-bottom: 1px solid var(--line); }
+.outline-top { display: flex; align-items: center; gap: 8px; }
+.outline-top h2 { margin: 0; font-size: 11px; font-weight: 750; letter-spacing: 1.6px; text-transform: uppercase; color: var(--muted); }
+.outline-top .drawer-close { margin-left: auto; min-height: 36px; padding: 4px 10px; font-size: 22px; }
+.outline-stage { margin: 8px 0 11px; font-size: 14px; line-height: 1.5; font-weight: 700; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.outline-actions { display: flex; gap: 4px; }
+.outline-actions .text-button { padding: 5px 9px; border-radius: 8px; background: var(--soft); font-size: 11.5px; color: var(--text); }
+.outline-actions .text-button:hover { background: var(--accent-soft); color: var(--accent); }
+.outline-tree { flex: 1; overflow-y: auto; overscroll-behavior: contain; padding: 10px 10px 40px; scrollbar-width: thin; position: relative; }
+.ol-group { margin: 2px 0; }
+.ol-row { display: flex; align-items: flex-start; gap: 2px; }
+.ol-toggle { width: 24px; height: 30px; flex-shrink: 0; background: transparent; color: var(--muted); font-size: 12px; border-radius: 6px; display: grid; place-items: center; }
+.ol-toggle:hover { background: var(--soft); }
+.ol-toggle::before { content: "▾"; transition: transform .15s; }
+.ol-group.collapsed > .ol-row > .ol-toggle::before { transform: rotate(-90deg); }
+.ol-spacer { width: 24px; flex-shrink: 0; }
+.ol-link {
+  flex: 1; min-width: 0; display: flex; align-items: center; gap: 9px; padding: 7px 9px; border-radius: 9px;
+  background: transparent; text-align: left; font-size: 12.5px; line-height: 1.45; color: var(--text);
+}
+.ol-link:hover { background: var(--soft); }
+.ol-link[aria-current="location"] { background: var(--accent-soft); color: var(--accent-strong); font-weight: 650; box-shadow: inset 3px 0 0 var(--accent); }
+.ol-link .ol-text { flex: 1; min-width: 0; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: anywhere; }
+.ol-link .ol-count { flex-shrink: 0; font-size: 10.5px; color: var(--muted); background: var(--soft); padding: 1px 7px; border-radius: 99px; font-variant-numeric: tabular-nums; }
+.ol-link .icon { width: 22px; height: 22px; border-radius: 7px; font-size: 12px; }
+.ol-children { margin-left: 12px; padding-left: 10px; border-left: 1px dashed var(--line); }
+.ol-group.collapsed > .ol-children { display: none; }
+.ol-link.lv2 { font-size: 12px; padding: 6px 8px; }
+.ol-no { flex-shrink: 0; min-width: 22px; text-align: center; font-size: 10.5px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.ol-link[aria-current="location"] .ol-no { color: var(--accent); }
+.ol-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--line); margin: 0 8px; flex-shrink: 0; }
+.ol-soon { font-size: 10px; color: var(--muted); font-style: italic; }
+.ol-gender { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: var(--g, var(--line)); }
+.fab-outline {
+  display: none; position: fixed; right: 14px; bottom: calc(76px + env(safe-area-inset-bottom)); z-index: 26;
+  padding: 12px 16px; border-radius: 99px; background: var(--accent); color: var(--surface);
+  font-size: 13px; font-weight: 700; box-shadow: var(--shadow); gap: 8px; align-items: center;
+}
+.fab-outline .fab-glyph { font-size: 16px; line-height: 1; }
+
+/* ───── Main ───── */
+main { margin-left: var(--sidebar); margin-right: var(--outline); margin-top: var(--header); min-height: calc(100vh - var(--header)); padding: 34px clamp(20px, 3.2vw, 52px) 120px; }
+.reader { max-width: 860px; margin: 0 auto; }
+.breadcrumb { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 0 0 14px; }
 .breadcrumb span { margin: 0 7px; opacity: .5; }
-.stage-hero { padding: 0 0 30px; }
-.stage-kicker { color: var(--accent); font-size: 11px; text-transform: uppercase; font-weight: 750; letter-spacing: 1.8px; margin: 0 0 13px; }
-h1 { margin: 0; max-width: 850px; font-size: clamp(26px, 2.8vw, 39px); font-weight: 730; line-height: 1.3; letter-spacing: -1.1px; text-wrap: balance; }
-.objective { max-width: 710px; color: var(--muted); font-size: 16px; line-height: 1.85; margin: 18px 0 22px; }
-.stage-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; font-size: 12px; color: var(--muted); }
-.stage-meta .accent-button { margin-right: 3px; }
-.accent-button { background: var(--accent); color: var(--surface); border-radius: 10px; padding: 12px 18px; font-weight: 650; font-size: 13px; }
+.pilot-box { margin-bottom: 14px; font-size: 12px; color: var(--muted); }
+.pilot-box > summary { cursor: pointer; width: max-content; padding: 4px 0; }
+.pilot-box div { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.pilot-box a { padding: 5px 10px; background: var(--soft); border-radius: 8px; text-decoration: none; font-size: 12px; }
+
+.stage-hero {
+  position: relative; overflow: hidden; padding: 28px 30px 24px; margin-bottom: 20px; border-radius: 22px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 100% 0, color-mix(in srgb, var(--accent) 16%, transparent), transparent 55%),
+    linear-gradient(180deg, var(--surface), color-mix(in srgb, var(--accent-soft) 40%, var(--surface)));
+  box-shadow: var(--shadow-sm);
+}
+.stage-hero::after {
+  content: "話"; position: absolute; right: 18px; bottom: -34px; font: 700 150px/1 serif; color: var(--accent); opacity: .06; pointer-events: none;
+}
+.stage-kicker { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); background: var(--accent-soft); font-size: 11px; text-transform: uppercase; font-weight: 750; letter-spacing: 1.4px; margin: 0 0 14px; padding: 5px 11px; border-radius: 99px; }
+h1 { margin: 0; max-width: 780px; font-size: clamp(25px, 2.6vw, 36px); font-weight: 750; line-height: 1.32; letter-spacing: -.9px; text-wrap: balance; }
+.objective { max-width: 680px; color: var(--muted); font-size: 15.5px; line-height: 1.8; margin: 14px 0 20px; }
+.stat-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.stat { display: inline-flex; align-items: baseline; gap: 6px; padding: 7px 12px; border-radius: 11px; background: color-mix(in srgb, var(--surface) 85%, transparent); border: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.stat b { font-size: 16px; color: var(--text); font-variant-numeric: tabular-nums; }
+.stage-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; font-size: 12px; color: var(--muted); }
+.accent-button { background: var(--accent); color: var(--surface); border-radius: 11px; padding: 11px 18px; font-weight: 650; font-size: 13px; box-shadow: 0 6px 16px color-mix(in srgb, var(--accent) 28%, transparent); }
 .accent-button:hover { filter: brightness(1.08); }
-.toolbar { position: sticky; top: calc(var(--header) + 10px); z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: var(--bg); border-bottom: 1px solid var(--line); padding: 15px 0; margin-bottom: 25px; }
+
+.toolbar {
+  position: sticky; top: var(--chrome); z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line); padding: 11px 0; margin-bottom: 22px; min-height: var(--toolbar);
+  transition: top .22s ease;
+}
 .toolbar h2 { margin: 0; font-size: 14px; font-weight: 700; }
-.toolbar small { color: var(--muted); font-size: 11px; display: block; margin-top: 5px; }
+.toolbar small { color: var(--muted); font-size: 11px; display: block; margin-top: 3px; }
+.tool-group { display: flex; align-items: center; gap: 8px; }
+.tool-btn { display: inline-flex; gap: 7px; align-items: center; background: var(--surface); border: 1px solid var(--line); padding: 9px 12px; border-radius: 10px; white-space: nowrap; font-size: 12px; font-weight: 650; min-height: 38px; }
+.tool-btn:hover { border-color: var(--accent); }
+.tool-btn[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+.tool-btn .tool-glyph { font-size: 14px; line-height: 1; }
+.size-group { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--surface); }
+.size-group button { background: transparent; min-width: 38px; min-height: 36px; font-weight: 700; font-size: 12px; }
+.size-group button + button { border-left: 1px solid var(--line); }
+.size-group button:hover { background: var(--soft); }
+.size-group button:nth-child(2) { font-size: 15px; }
 .filter-anchor { position: relative; }
-.filter-button { display: flex; gap: 8px; align-items: center; background: var(--surface); border: 1px solid var(--line); padding: 10px 13px; border-radius: 10px; white-space: nowrap; font-size: 12px; font-weight: 600; }
-.filter-button:hover { border-color: var(--accent); }
-.filter-panel { position: absolute; top: calc(100% + 9px); right: 0; width: 320px; padding: 17px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); box-shadow: var(--shadow); }
-.filter-panel-head { display: flex; align-items: center; justify-content: space-between; font-size: 13px; margin-bottom: 10px; }
+.filter-panel { position: absolute; top: calc(100% + 9px); right: 0; width: 320px; padding: 16px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface); box-shadow: var(--shadow); z-index: 40; }
+.filter-panel-head { display: flex; align-items: center; justify-content: space-between; font-size: 13px; margin-bottom: 8px; }
 .text-button { background: transparent; color: var(--accent); font-size: 12px; padding: 7px; }
 .filter-row { display: flex; align-items: center; gap: 10px; min-height: 44px; cursor: pointer; font-size: 12px; }
 .filter-row input { accent-color: var(--accent); width: 17px; height: 17px; margin: 0; }
 .filter-row .filter-count { margin-left: auto; font-size: 11px; color: var(--muted); }
-.icon { display: inline-grid; place-items: center; flex-shrink: 0; width: 39px; height: 39px; border-radius: 12px; font-weight: 700; font-size: 19px; color: var(--kind); background: var(--soft); background: color-mix(in srgb, var(--kind) 11%, var(--surface)); }
-.icon.small { width: 26px; height: 26px; border-radius: 7px; font-size: 14px; }
+
+/* ───── Lesson cards ───── */
+.icon { display: inline-grid; place-items: center; flex-shrink: 0; width: 40px; height: 40px; border-radius: 13px; font-weight: 700; font-size: 19px; color: var(--kind); background: var(--soft); background: color-mix(in srgb, var(--kind) 12%, var(--surface)); }
+.icon.small { width: 26px; height: 26px; border-radius: 8px; font-size: 14px; }
 .kind-vocabulary { --kind: #328575; }
 .kind-speak_video { --kind: #8a65b7; }
 .kind-speak_shadow { --kind: #6882c8; }
-.kind-shadowing { --kind: #b18131; }
-.kind-reading { --kind: #7f8d4c; }
+.kind-shadowing { --kind: #c28a2a; }
+.kind-reading { --kind: #5b8d4c; }
 .kind-lecture { --kind: #507ea0; }
-.kind-situations { --kind: #b77867; }
+.kind-situations { --kind: #c0705c; }
 .kind-challenge { --kind: #b67a9d; }
 .kind-free { --kind: #668b81; }
 :root[data-theme="dark"] .icon { color: color-mix(in srgb, var(--kind) 60%, #fff); }
-.lesson { margin: 0 0 13px; border: 1px solid var(--line); background: var(--surface); border-radius: 15px; scroll-margin-top: calc(var(--header) + 98px); }
-.lesson > summary { list-style: none; display: flex; align-items: center; gap: 15px; padding: 20px; cursor: pointer; }
+.lesson { margin: 0 0 14px; border: 1px solid var(--line); background: var(--surface); border-radius: 18px; box-shadow: var(--shadow-sm); position: relative; overflow: clip; }
+.lesson::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: var(--kind); opacity: .75; }
+.lesson > summary { list-style: none; display: flex; align-items: center; gap: 14px; padding: 18px 20px 18px 24px; cursor: pointer; }
 .lesson > summary::-webkit-details-marker { display: none; }
-.lesson > summary::after { content: "+"; margin-left: auto; flex-shrink: 0; color: var(--muted); font-size: 21px; font-weight: 300; }
-.lesson[open] > summary::after { content: "−"; }
-.lesson[open] { border-color: color-mix(in srgb, var(--accent) 36%, var(--line)); }
+.lesson > summary::after { content: "⌄"; margin-left: 4px; flex-shrink: 0; color: var(--muted); font-size: 18px; transition: transform .2s; }
+.lesson[open] > summary::after { transform: rotate(180deg); }
+.lesson[open] { border-color: color-mix(in srgb, var(--kind) 38%, var(--line)); }
 .lesson[open] > summary { border-bottom: 1px solid var(--line); }
-.lesson-label { font-size: 10px; color: var(--muted); margin-bottom: 5px; letter-spacing: .3px; }
+.lesson-label { font-size: 10.5px; color: var(--muted); margin-bottom: 4px; letter-spacing: .3px; }
 .lesson-heading { min-width: 0; flex: 1; }
-.specialty-caption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 5px 12px; margin-bottom: 7px; }
+.lesson-count { flex-shrink: 0; font-size: 11px; font-weight: 650; color: var(--kind); background: color-mix(in srgb, var(--kind) 11%, var(--surface)); padding: 4px 10px; border-radius: 99px; white-space: nowrap; }
+:root[data-theme="dark"] .lesson-count { color: color-mix(in srgb, var(--kind) 60%, #fff); }
+.specialty-caption { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 5px 12px; margin-bottom: 6px; }
 .specialty-caption .lesson-label { margin: 0; }
-.specialty-badge { --badge: var(--accent); display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border-radius: 7px; font-size: 11px; font-weight: 650; line-height: 1.5; color: color-mix(in srgb, var(--badge) 80%, var(--text)); background: color-mix(in srgb, var(--badge) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--badge) 25%, var(--line)); }
+.specialty-badge { --badge: var(--accent); display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 7px; font-size: 11px; font-weight: 650; line-height: 1.5; color: color-mix(in srgb, var(--badge) 80%, var(--text)); background: color-mix(in srgb, var(--badge) 12%, var(--surface)); border: 1px solid color-mix(in srgb, var(--badge) 25%, var(--line)); }
 .specialty-patterns { --badge: #507ea0; }
 .specialty-mini { --badge: #328575; }
 .specialty-keigo { --badge: #8a65b7; }
 .specialty-idioms { --badge: #b18131; }
 .specialty-emotion { --badge: #b67a9d; }
 :root[data-theme="dark"] .specialty-badge { color: color-mix(in srgb, var(--badge) 55%, #fff); }
-.lesson h3 { font-size: 16px; line-height: 1.6; font-weight: 650; margin: 0; overflow-wrap: anywhere; }
-.lesson-body { padding: 25px; line-height: 1.85; }
+.lesson h3 { font-size: 16px; line-height: 1.55; font-weight: 650; margin: 0; overflow-wrap: anywhere; }
+.lesson-body { padding: 22px 24px 26px; line-height: 1.8; background: color-mix(in srgb, var(--bg) 55%, var(--surface)); }
 .lesson-body > :first-child { margin-top: 0; }
-.reading { font-size: 16px; line-height: 1.95; overflow-wrap: anywhere; }
-.reading h1, .reading h2 { font-size: 23px; line-height: 1.65; letter-spacing: -.4px; }
-.reading h3 { font-size: 19px; margin: 25px 0 10px; }
-.reading p { margin: 12px 0; }
-.reading strong { font-weight: 650; }
-.reading ul, .reading ol { padding-left: 23px; }
-.reading li { margin-bottom: 10px; }
-.reading table { border-collapse: collapse; display: block; overflow-x: auto; max-width: 100%; font-size: 14px; }
-.reading th, .reading td { padding: 10px 14px; border: 1px solid var(--line); vertical-align: top; }
-.reading blockquote { border-left: 3px solid var(--accent); margin: 20px 0; padding-left: 18px; color: var(--muted); }
-.reading code { font-size: .88em; padding: 2px 4px; border-radius: 4px; background: var(--soft); }
-.reading pre { overflow-x: auto; }
-.vocabulary-groups { display: flex; flex-wrap: wrap; gap: 9px; padding: 0; margin: 0; list-style: none; }
-.vocabulary-groups li { background: var(--soft); border-radius: 8px; padding: 8px 13px; font-size: 14px; }
 .quiet { color: var(--muted); font-size: 13px; }
-.placeholder { display: grid; place-items: center; text-align: center; gap: 9px; padding: 33px 18px; background: var(--bg); border: 1px dashed var(--line); border-radius: 11px; color: var(--muted); font-size: 13px; }
-.placeholder .placeholder-icon { font-size: 26px; color: var(--kind); opacity: .7; }
-.provenance { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 15px; color: var(--muted); font-size: 12px; }
+.vocabulary-groups { display: flex; flex-wrap: wrap; gap: 9px; padding: 0; margin: 0 0 12px; list-style: none; }
+.vocabulary-groups li { background: var(--surface); border: 1px solid var(--line); border-radius: 11px; padding: 9px 14px; font-size: 14px; }
+.placeholder { display: flex; align-items: center; justify-content: center; text-align: left; gap: 14px; padding: 24px 18px; background: var(--surface); border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); font-size: 13px; }
+.placeholder .placeholder-icon { font-size: 24px; color: var(--kind); opacity: .7; }
+
+/* ───── Characters: avatar, gender mark, role tag ───── */
+.g-male { --g: var(--male); --g-soft: var(--male-soft); --g-line: var(--male-line); }
+.g-female { --g: var(--female); --g-soft: var(--female-soft); --g-line: var(--female-line); }
+.g-n0 { --g: var(--n0); --g-soft: var(--n0-soft); --g-line: var(--n0-line); }
+.g-n1 { --g: var(--n1); --g-soft: var(--n1-soft); --g-line: var(--n1-line); }
+.avatar { position: relative; flex-shrink: 0; width: 42px; height: 42px; border-radius: 50%; background: var(--g-soft); border: 2px solid var(--g-line); color: var(--g); display: grid; place-items: center; }
+.avatar svg { width: 30px; height: 30px; fill: currentColor; overflow: visible; }
+.avatar.mini { width: 26px; height: 26px; border-width: 1.5px; }
+.avatar.mini svg { width: 19px; height: 19px; }
+.gbadge { position: absolute; right: -5px; bottom: -4px; width: 19px; height: 19px; border-radius: 50%; display: grid; place-items: center; background: var(--g); color: #fff; font: 700 12px/1 system-ui, sans-serif; border: 2px solid var(--surface); font-variant-emoji: text; }
+:root[data-theme="dark"] .gbadge { color: #0f1a17; }
+.avatar.mini .gbadge { width: 13px; height: 13px; font-size: 8px; right: -4px; bottom: -3px; border-width: 1.5px; }
+.role-tag {
+  position: absolute; top: -10px; max-width: min(300px, 78vw); padding: 1px 9px; border-radius: 99px;
+  font-size: 10.5px; line-height: 1.7; font-weight: 700; letter-spacing: .1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  color: color-mix(in srgb, var(--g) 82%, var(--text)); background: var(--surface); border: 1px solid var(--g-line);
+  box-shadow: 0 1px 2px #0000000a;
+}
+.role-tag i { font-style: normal; opacity: .85; font-weight: 600; margin-left: 2px; }
+.cast { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0 0 16px; }
+.cast-item { display: inline-flex; align-items: center; gap: 8px; padding: 3px 12px 3px 4px; border-radius: 99px; background: var(--g-soft); border: 1px solid var(--g-line); font-size: 12px; line-height: 1.4; }
+.cast-item b { font-weight: 700; color: color-mix(in srgb, var(--g) 75%, var(--text)); }
+.cast-item small { color: var(--muted); font-size: 11px; }
+.cast-arrow { color: var(--muted); font-size: 14px; }
+
+/* ───── Chat bubbles ───── */
+.chat { display: flex; flex-direction: column; gap: 20px; padding: 8px 0 2px; }
+.msg { display: flex; align-items: flex-start; gap: 10px; }
+.msg.right { flex-direction: row-reverse; }
+.msg .avatar { margin-top: 8px; }
+.bubble {
+  position: relative; max-width: min(80%, 660px); min-width: 140px; margin-top: 8px; padding: 15px 17px 12px;
+  border-radius: 6px 20px 20px 20px; background: var(--g-soft); border: 1px solid var(--g-line);
+  box-shadow: var(--shadow-sm);
+}
+.msg.right .bubble { border-radius: 20px 6px 20px 20px; }
+.bubble .role-tag { left: 14px; }
+.msg.right .bubble .role-tag { left: auto; right: 14px; }
+.msg.right .bubble { text-align: left; }
+.bubble .ja, .sentence .ja { margin: 0; font-size: calc(17px * var(--ja-scale)); line-height: 1.75; font-weight: 500; letter-spacing: .02em; overflow-wrap: anywhere; }
+.bubble .vi, .sentence .vi { margin: 7px 0 0; padding-top: 7px; border-top: 1px dashed color-mix(in srgb, var(--g) 28%, transparent); font-size: 13.5px; line-height: 1.6; color: color-mix(in srgb, var(--muted) 88%, var(--text)); overflow-wrap: anywhere; }
+html[data-vi="off"] .vi { display: none; }
+html[data-vi="off"] .reveal .vi { display: block; }
+html[data-vi="off"] .bubble, html[data-vi="off"] .sentence { cursor: pointer; }
+html[data-vi="off"] .bubble:not(.reveal)::after, html[data-vi="off"] .sentence:not(.reveal)::after {
+  content: "chạm để xem nghĩa"; display: block; margin-top: 4px; font-size: 10.5px; color: var(--muted); opacity: .75; font-style: italic;
+}
+.chat-note { text-align: center; font-size: 11.5px; color: var(--muted); }
+
+/* ───── Single sentences ───── */
+.sentence-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px 14px; margin: 4px 0; }
+.sentence {
+  --g: var(--n0); --g-soft: var(--n0-soft); --g-line: var(--n0-line);
+  position: relative; display: flex; gap: 12px; align-items: flex-start; padding: 18px 16px 14px; border-radius: 16px; background: var(--surface);
+  border: 1px solid var(--line); box-shadow: var(--shadow-sm);
+}
+.sentence.g-male { --g: var(--male); --g-soft: var(--male-soft); --g-line: var(--male-line); }
+.sentence.g-female { --g: var(--female); --g-soft: var(--female-soft); --g-line: var(--female-line); }
+.sentence .avatar { margin-top: 4px; }
+.sentence-text { min-width: 0; flex: 1; }
+.sentence .role-tag { position: static; display: inline-block; margin: 0 0 5px; max-width: 100%; background: var(--g-soft); }
+.sentence::before { content: ""; position: absolute; left: 0; top: 14px; bottom: 14px; width: 3px; border-radius: 0 3px 3px 0; background: var(--g); opacity: .6; }
+.idx-chip { position: absolute; top: -9px; right: 12px; padding: 0 9px; border-radius: 99px; background: var(--surface); border: 1px solid var(--line); color: var(--muted); font-size: 10.5px; font-weight: 700; line-height: 1.8; font-variant-numeric: tabular-nums; }
+.idx-chip.left { right: auto; left: 14px; }
+
+/* ───── Dialogue / scene cards ───── */
+.card { position: relative; padding: 22px 20px 18px; margin: 18px 0; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+.card-kind { position: absolute; top: -10px; left: 16px; padding: 0 10px; border-radius: 99px; font-size: 10.5px; font-weight: 700; line-height: 1.8; background: var(--accent-soft); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--line)); }
+.card .idx-chip { top: -10px; right: 16px; }
+.shadow-intro { margin: 0 0 16px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+.event { margin: 0 0 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); overflow: clip; box-shadow: var(--shadow-sm); }
+.event > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: color-mix(in srgb, var(--accent-soft) 55%, var(--surface)); }
+.event > summary::-webkit-details-marker { display: none; }
+.event > summary::after { content: "⌄"; margin-left: auto; color: var(--muted); font-size: 17px; transition: transform .2s; }
+.event[open] > summary::after { transform: rotate(180deg); }
+.event[open] > summary { border-bottom: 1px solid var(--line); }
+.event-no { width: 30px; height: 30px; border-radius: 10px; display: grid; place-items: center; background: var(--accent); color: var(--surface); font-weight: 700; font-size: 13px; flex-shrink: 0; }
+.event-name { font-weight: 700; font-size: 14.5px; line-height: 1.45; }
+.event-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 4px; color: var(--muted); font-size: 11.5px; }
+.role-chip { padding: 1px 9px; border-radius: 99px; background: var(--surface); border: 1px solid var(--line); font-size: 11px; }
+.event-count { margin-left: auto; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.event > summary + * { margin-top: 0; }
+.event-body { padding: 8px 14px 6px; display: grid; gap: 12px; }
+.scene { position: relative; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); }
+.scene > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 11px; padding: 12px 14px; }
+.scene > summary::-webkit-details-marker { display: none; }
+.scene > summary::after { content: "⌄"; margin-left: auto; color: var(--muted); font-size: 16px; transition: transform .2s; flex-shrink: 0; }
+.scene[open] > summary::after { transform: rotate(180deg); }
+.scene-no { flex-shrink: 0; min-width: 32px; height: 26px; padding: 0 8px; border-radius: 9px; display: grid; place-items: center; background: var(--surface); border: 1px solid var(--line); color: var(--muted); font-size: 11.5px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.scene-title { font-size: 14px; font-weight: 650; line-height: 1.5; min-width: 0; }
+.scene-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.branch, .link-chip { display: inline-flex; align-items: center; gap: 4px; padding: 1px 9px; border-radius: 99px; font-size: 10.5px; font-weight: 700; line-height: 1.7; color: color-mix(in srgb, var(--b, var(--muted)) 85%, var(--text)); background: color-mix(in srgb, var(--b, var(--muted)) 11%, var(--surface)); border: 1px solid color-mix(in srgb, var(--b, var(--muted)) 24%, var(--line)); }
+.branch-routine, .branch-accepted, .branch-resolved { --b: #3b8a63; }
+.branch-misunderstanding, .branch-problem { --b: #d0742f; }
+.branch-conditional { --b: #3f7ac0; }
+.branch-follow_up { --b: #2f8f8f; }
+.branch-declined, .branch-unresolved { --b: #c24f5c; }
+.branch-alternative { --b: #8a65b7; }
+.branch-pending { --b: #b08a2b; }
+.link-chip { --b: var(--muted); background: transparent; cursor: pointer; }
+.link-chip:hover { border-color: var(--accent); color: var(--accent); }
+.scene-body { padding: 4px 16px 16px; }
+.scene-context { margin: 0 0 14px; padding: 10px 13px; border-radius: 12px; background: var(--surface); border-left: 3px solid var(--accent); font-size: 13px; line-height: 1.7; color: var(--muted); }
+.scene-context b { color: var(--accent); font-size: 11px; letter-spacing: .6px; text-transform: uppercase; margin-right: 6px; }
+
+/* ───── Reading (Speak Japanese knowledge) ───── */
+.reading { font-size: 15px; line-height: 1.85; overflow-wrap: anywhere; }
+.phrase { padding: 18px 20px; margin: 0 0 16px; border-radius: 16px; background: linear-gradient(135deg, var(--accent-soft), color-mix(in srgb, var(--accent-soft) 30%, var(--surface))); border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--line)); }
+.phrase .ja { margin: 0; font-size: calc(24px * var(--ja-scale)); line-height: 1.5; font-weight: 700; letter-spacing: .01em; }
+.phrase .gloss { margin: 5px 0 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.note { margin: 10px 0; padding: 11px 15px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); font-size: 14px; line-height: 1.8; }
+.note strong { color: var(--accent); font-weight: 700; }
+.note.li { padding-left: 34px; position: relative; }
+.note.li::before { content: ""; position: absolute; left: 16px; top: 20px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); opacity: .6; }
+.sec-label { display: flex; align-items: center; gap: 10px; margin: 24px 0 10px; font-size: 12px; font-weight: 750; letter-spacing: 1.2px; color: var(--accent); text-transform: uppercase; }
+.sec-label::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.sub-label { margin: 18px 0 6px; font-size: 13.5px; font-weight: 650; color: var(--text); }
+.sub-label .vi-part { color: var(--muted); font-weight: 500; }
+.example { position: relative; margin: 18px 0; padding: 20px 16px 14px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+.example .idx-chip { top: -10px; left: 14px; right: auto; background: var(--accent); color: var(--surface); border-color: var(--accent); }
+.example-caption { margin: 0 0 6px; font-size: 13px; font-weight: 650; line-height: 1.6; padding-left: 4px; }
+.example-caption .vi-part { color: var(--muted); font-weight: 500; }
+.example .chat { padding-top: 4px; }
+.example .sentence { box-shadow: none; border: 0; padding: 4px 6px 4px 12px; background: transparent; }
+.example .sentence::before { top: 6px; bottom: 6px; }
+.example .cast { margin-bottom: 10px; }
+.fallback-html { font-size: 15px; line-height: 1.85; }
+
+.provenance { border-top: 1px solid var(--line); margin-top: 26px; padding-top: 14px; color: var(--muted); font-size: 12px; }
 .provenance > summary { cursor: pointer; font-weight: 650; }
 .provenance p { margin: 11px 0; overflow-wrap: anywhere; }
 .provenance code { font-size: 10px; display: block; white-space: normal; overflow-wrap: anywhere; }
 .provenance .quality { border-left: 3px solid #bd8b43; padding-left: 12px; }
-.shadowing-item + .shadowing-item { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 16px; }
-.shadowing-item .roles { margin-bottom: 4px; }
-.extra-practice { margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--line); }
-.extra-practice > h4 { margin: 0 0 14px; font-size: 15px; }
-.practice-example { padding: 16px; margin: 12px 0; border-radius: 10px; background: var(--bg); border: 1px solid var(--line); }
-.practice-example .practice-context { margin: 0 0 14px; font-size: 13px; font-weight: 650; }
-.practice-turn + .practice-turn { margin-top: 16px; }
-.practice-turn p { margin: 5px 0; }
-.event { border: 1px solid var(--line); border-radius: 10px; margin: 12px 0; padding: 0 16px; }
-.event > summary { cursor: pointer; padding: 13px 0; font-weight: 650; font-size: 14px; }
-.roles { color: var(--muted); font-size: 12px; margin: 0 0 14px; }
-.scenario-list { list-style: none; padding: 0; margin: 0; }
-.scenario-list li { padding: 14px 0; border-top: 1px solid var(--line); font-size: 14px; }
-.scenario-meta { display: flex; gap: 9px; margin-top: 6px; color: var(--muted); font-size: 11px; }
-.stage-nav { position: fixed; bottom: 0; left: var(--sidebar); right: 0; z-index: 18; background: var(--surface); border-top: 1px solid var(--line); padding: 12px 28px; display: flex; align-items: center; justify-content: space-between; gap: 15px; }
-.stage-nav button { background: var(--soft); border-radius: 9px; padding: 11px 17px; font-size: 12px; font-weight: 650; }
+.extra-practice { margin-top: 30px; padding-top: 6px; }
+.extra-practice > h4 { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; font-size: 13px; font-weight: 750; letter-spacing: .6px; color: var(--text); }
+.extra-practice > h4 small { font-size: 10.5px; font-weight: 700; color: var(--muted); background: var(--soft); padding: 2px 9px; border-radius: 99px; letter-spacing: 0; }
+.practice-context { margin: 0 0 12px; padding: 9px 13px; border-radius: 12px; background: var(--bg); border-left: 3px solid var(--accent); font-size: 13px; line-height: 1.7; color: var(--muted); }
+.practice-context b { color: var(--accent); font-size: 11px; letter-spacing: .6px; text-transform: uppercase; margin-right: 6px; }
+
+.stage-nav { position: fixed; bottom: 0; left: var(--sidebar); right: var(--outline); z-index: 18; background: color-mix(in srgb, var(--surface) 94%, transparent); backdrop-filter: blur(10px); border-top: 1px solid var(--line); padding: 11px 24px; display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+.stage-nav button { background: var(--soft); border-radius: 10px; padding: 11px 17px; font-size: 12px; font-weight: 650; }
 .stage-nav button:last-child { background: var(--accent); color: var(--surface); }
 .stage-position { color: var(--muted); font-size: 11px; }
 .empty-state { padding: 35px; text-align: center; border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); line-height: 1.8; }
 .overlay { display: none; }
-@media (min-width: 1600px) { :root { --sidebar: 360px; } }
+
+/* ───── Responsive ───── */
+@media (min-width: 1700px) {
+  :root { --sidebar: 340px; --outline: 330px; }
+  .reader { max-width: 920px; }
+}
+@media (max-width: 1279px) {
+  main { margin-right: 0; }
+  .stage-nav { right: 0; }
+  .outline { z-index: 50; top: 0; width: min(90vw, 360px); transform: translateX(103%); transition: transform .22s ease; box-shadow: var(--shadow); }
+  body.outline-open .outline { transform: translateX(0); }
+  body.outline-open .overlay { display: block; position: fixed; inset: 0; z-index: 45; background: #07100bb0; backdrop-filter: blur(2px); }
+  .outline-top .drawer-close { display: inline-flex; }
+  .fab-outline { display: inline-flex; }
+}
 @media (max-width: 1100px) {
-  :root { --sidebar: 294px; }
-  .topbar { gap: 15px; padding-right: 18px; }
-  .level-tab { min-width: 78px; padding: 10px 13px; }
+  :root { --sidebar: 288px; }
+  .topbar { gap: 14px; padding-right: 16px; }
+  .level-tab { min-width: 76px; padding: 9px 12px; }
   .theme-caption { display: none; }
 }
 @media (max-width: 850px) {
-  :root { --header: 122px; --sidebar: 320px; }
-  .topbar { height: var(--header); padding: 0 16px; display: grid; grid-template-columns: 1fr auto; grid-template-rows: 65px 57px; gap: 0; }
+  :root { --header: 108px; --sidebar: 320px; --toolbar: 56px; }
+  body.chrome-hidden { --chrome: 0px; }
+  body.chrome-hidden .topbar { transform: translateY(-100%); }
+  .topbar { height: var(--header); padding: 0 14px; display: grid; grid-template-columns: 1fr auto; grid-template-rows: 56px 52px; gap: 0; }
   .brand { width: auto; gap: 10px; }
   .brand-mark { width: 34px; height: 34px; border-radius: 10px; font-size: 20px; }
   .brand strong { font-size: 18px; }
   .brand small { font-size: 9px; margin-top: 1px; }
   .header-tools { grid-column: 2; grid-row: 1; gap: 2px; }
-  .level-tabs { grid-column: 1 / -1; grid-row: 2; margin-bottom: 9px; padding: 4px; }
-  .level-tab { flex: 1; min-width: 0; padding: 8px; font-size: 13px; }
+  .level-tabs { grid-column: 1 / -1; grid-row: 2; margin-bottom: 8px; padding: 3px; }
+  .level-tab { flex: 1; min-width: 0; padding: 7px; font-size: 13px; }
   .version { font-size: 10px; }
   .nav-trigger { display: inline-flex; font-size: 18px; padding: 8px 10px; }
   .theme-button { padding: 8px 10px; }
   .sidebar { z-index: 50; top: 0; width: min(88vw, 365px); transform: translateX(-103%); transition: transform .2s ease; box-shadow: var(--shadow); }
   body.drawer-open .sidebar { transform: translateX(0); }
-  .drawer-close { display: inline-flex; font-size: 23px; margin-left: auto; }
+  body.drawer-open .overlay { display: block; position: fixed; inset: 0; z-index: 45; background: #07100bb0; backdrop-filter: blur(2px); }
+  .sidebar .drawer-close { display: inline-flex; font-size: 23px; margin-left: auto; }
   .sidebar-head { padding-top: 17px; }
   .sidebar-title { margin-bottom: 8px; }
   .sidebar-title .count { margin-left: 10px; }
-  body.drawer-open .overlay { display: block; position: fixed; inset: 0; z-index: 45; background: #07100bb0; backdrop-filter: blur(2px); }
-  main { margin-left: 0; padding: 22px 10px 100px; }
-  .breadcrumb { margin-bottom: 18px; font-size: 11px; }
-  h1 { font-size: 25px; letter-spacing: -.6px; }
-  .objective { font-size: 13px; line-height: 1.8; margin-bottom: 16px; }
-  .stage-hero { padding-bottom: 15px; }
+  main { margin-left: 0; padding: 18px 10px 110px; }
+  .breadcrumb { margin-bottom: 12px; font-size: 11px; }
+  .stage-hero { padding: 20px 16px 16px; border-radius: 18px; margin-bottom: 14px; }
+  .stage-hero::after { font-size: 110px; right: 6px; bottom: -26px; }
+  h1 { font-size: 23px; letter-spacing: -.5px; }
+  .objective { font-size: 13.5px; line-height: 1.75; margin: 10px 0 14px; }
+  .stat { padding: 6px 10px; font-size: 11px; }
+  .stat b { font-size: 14px; }
   .stage-meta { gap: 12px; font-size: 11px; }
-  .accent-button { padding: 11px 14px; font-size: 12px; }
-  .toolbar { top: var(--header); padding: 14px 0; margin-bottom: 18px; }
+  .accent-button { padding: 10px 14px; font-size: 12px; }
+  .toolbar { padding: 8px 0; margin-bottom: 16px; gap: 8px; }
   .toolbar h2 { font-size: 13px; }
-  .filter-panel { width: min(320px, calc(100vw - 40px)); }
-  .lesson { border-radius: 12px; margin-bottom: 11px; }
-  .lesson > summary { padding: 14px 10px; gap: 9px; }
-  .lesson h3 { font-size: 13px; }
-  .icon { width: 34px; height: 34px; border-radius: 10px; font-size: 17px; }
-  .lesson-body { padding: 16px 10px; }
-  .reading { font-size: 14px; line-height: 1.85; }
-  .reading h1, .reading h2 { font-size: 17px; }
-  .reading h3 { font-size: 15px; }
-  .reading ul, .reading ol { padding-left: 18px; }
-  .reading table { font-size: 13px; }
-  .reading th, .reading td { padding: 8px; }
-  .vocabulary-groups li { font-size: 13px; padding: 7px 10px; }
-  .event { padding: 0 10px; }
-  .event > summary, .scenario-list li { font-size: 13px; }
-  .stage-nav { left: 0; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); }
-  .stage-nav button { font-size: 12px; padding: 11px 14px; }
+  .toolbar small { font-size: 10px; }
+  .tool-btn { padding: 8px 10px; min-height: 36px; }
+  .tool-btn .tool-text { display: none; }
+  .tool-btn.keep-text .tool-text { display: inline; }
+  .size-group button { min-width: 34px; min-height: 34px; }
+  .filter-panel { position: fixed; left: 10px; right: 10px; top: auto; bottom: calc(76px + env(safe-area-inset-bottom)); width: auto; }
+  .lesson { border-radius: 15px; margin-bottom: 11px; }
+  .lesson > summary { padding: 13px 12px 13px 16px; gap: 10px; }
+  .lesson h3 { font-size: 14px; }
+  .lesson-count { display: none; }
+  .icon { width: 34px; height: 34px; border-radius: 11px; font-size: 17px; }
+  .lesson-body { padding: 16px 10px 20px; }
+  .vocabulary-groups li { font-size: 13px; padding: 8px 11px; }
+  .event { border-radius: 15px; }
+  .event > summary { padding: 11px 12px; }
+  .event-body { padding: 8px 8px 4px; gap: 10px; }
+  .event-count { display: none; }
+  .scene > summary { padding: 11px 10px; gap: 9px; }
+  .scene-body { padding: 2px 8px 12px; }
+  .scene-title { font-size: 13.5px; }
+  .chat { gap: 18px; }
+  .msg { gap: 7px; }
+  .avatar { width: 34px; height: 34px; }
+  .avatar svg { width: 24px; height: 24px; }
+  .gbadge { width: 16px; height: 16px; font-size: 10px; right: -4px; bottom: -3px; }
+  .bubble { max-width: calc(100% - 44px); min-width: 96px; padding: 14px 13px 10px; border-radius: 5px 17px 17px 17px; }
+  .msg.right .bubble { border-radius: 17px 5px 17px 17px; }
+  .bubble .ja, .sentence .ja { font-size: calc(16px * var(--ja-scale)); line-height: 1.7; }
+  .bubble .vi, .sentence .vi { font-size: 13px; }
+  .sentence-grid { grid-template-columns: 1fr; gap: 16px; }
+  .card { padding: 20px 10px 14px; border-radius: 15px; }
+  .cast { gap: 6px; margin-bottom: 12px; }
+  .cast-item { font-size: 11.5px; padding-right: 10px; }
+  .cast-item .full { display: none; }
+  .event-body { padding: 6px 0 2px; }
+  .scene-body { padding: 2px 6px 10px; }
+  .fab-outline { padding: 10px 14px; font-size: 12.5px; }
+  .example { padding: 18px 8px 10px; }
+  .phrase { padding: 14px 15px; }
+  .phrase .ja { font-size: calc(21px * var(--ja-scale)); }
+  .note { font-size: 13.5px; padding: 10px 12px; }
+  .stage-nav { left: 0; padding: 9px 14px calc(9px + env(safe-area-inset-bottom)); }
+  .stage-nav button { font-size: 12px; padding: 10px 13px; }
   .stage-position { font-size: 10px; }
+}
+@media (max-width: 420px) {
+  .msg { gap: 6px; }
+  .avatar:not(.mini) { width: 30px; height: 30px; margin-top: 12px; }
+  .avatar:not(.mini) svg { width: 21px; height: 21px; }
+  .avatar:not(.mini) .gbadge { width: 15px; height: 15px; font-size: 9px; }
+  .bubble { max-width: calc(100% - 38px); min-width: 120px; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
 </style>
@@ -284,16 +574,29 @@ h1 { margin: 0; max-width: 850px; font-size: clamp(26px, 2.8vw, 39px); font-weig
     <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" aria-label="Tìm chặng" placeholder="Tìm chặng, chủ đề, tình huống…" autocomplete="off"></label>
   </div>
   <nav class="stage-list" id="stage-list" aria-label="Các chặng"></nav>
-  <div class="sidebar-foot"><span>289 chặng · luyện nghe & nói</span><span id="nav-version"></span></div>
+  <div class="sidebar-foot"><span id="foot-count"></span><span id="nav-version"></span></div>
 </aside>
+<aside class="outline" id="outline" aria-label="Mục lục chặng đang mở">
+  <div class="outline-head">
+    <div class="outline-top"><h2>Mục lục chặng</h2><button class="drawer-close" id="close-outline" aria-label="Đóng mục lục">×</button></div>
+    <p class="outline-stage" id="outline-stage"></p>
+    <div class="outline-actions"><button class="text-button" id="expand-all" type="button">Mở tất cả</button><button class="text-button" id="collapse-all" type="button">Thu gọn</button></div>
+  </div>
+  <nav class="outline-tree" id="outline-tree" aria-label="Các mục trong chặng"></nav>
+</aside>
+<button class="fab-outline" id="fab-outline" type="button" aria-controls="outline" aria-expanded="false"><span class="fab-glyph" aria-hidden="true">☰</span>Mục lục</button>
 <main id="main" tabindex="-1"><div class="reader">
-  <nav id="pilot-links" aria-label="Hội thoại pilot" hidden style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px"></nav>
+  <details class="pilot-box" id="pilot-links" hidden><summary id="pilot-summary"></summary><div id="pilot-list"></div></details>
   <div id="stage-heading"></div>
-  <div class="toolbar">
+  <div class="toolbar" id="toolbar">
     <div><h2>Nội dung chặng</h2><small id="visible-count" aria-live="polite"></small></div>
-    <div class="filter-anchor">
-      <button class="filter-button" id="filter-button" aria-expanded="false" aria-controls="filter-panel"><span aria-hidden="true">☷</span><span id="filter-label">Loại bài</span><span aria-hidden="true">⌄</span></button>
-      <div class="filter-panel" id="filter-panel" hidden><div class="filter-panel-head"><strong>Hiển thị loại bài</strong><button class="text-button" id="reset-filters">Bật tất cả</button></div><div id="filter-options"></div></div>
+    <div class="tool-group">
+      <button class="tool-btn keep-text" id="toggle-vi" type="button" aria-pressed="true" title="Hiện / ẩn bản dịch tiếng Việt"><span class="tool-glyph" aria-hidden="true">Aあ</span><span class="tool-text" id="vi-label">Bản dịch</span></button>
+      <div class="size-group" role="group" aria-label="Cỡ chữ tiếng Nhật"><button type="button" id="ja-smaller" aria-label="Giảm cỡ chữ tiếng Nhật">A−</button><button type="button" id="ja-bigger" aria-label="Tăng cỡ chữ tiếng Nhật">A+</button></div>
+      <div class="filter-anchor">
+        <button class="tool-btn" id="filter-button" aria-expanded="false" aria-controls="filter-panel"><span class="tool-glyph" aria-hidden="true">☷</span><span class="tool-text" id="filter-label">Loại bài</span></button>
+        <div class="filter-panel" id="filter-panel" hidden><div class="filter-panel-head"><strong>Hiển thị loại bài</strong><button class="text-button" id="reset-filters">Bật tất cả</button></div><div id="filter-options"></div></div>
+      </div>
     </div>
   </div>
   <div id="lessons"></div>
@@ -321,24 +624,12 @@ if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (["6.5", "8.0"].includes(course.version)) delete types.reading;
-if (["7.0", "9.0", "9.1", "9.2", "10.0", "11.0-pilot"].includes(course.version)) {
+if (/^(7|9|10|11)\./.test(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
   types.reading.label = "Kiến thức Speak Japanese";
 }
 const byId = new Map(course.stages.map(stage => [stage.uid, stage]));
-if (course.pilot_stages?.length) {
-  const links = document.getElementById("pilot-links");
-  links.hidden = false;
-  for (const uid of course.pilot_stages) {
-    const stage = byId.get(uid);
-    const link = document.createElement("a");
-    link.href = "#stage=" + uid;
-    link.textContent = "Pilot " + stage.level + " · " + stage.title;
-    link.className = "text-button";
-    links.append(link);
-  }
-}
 const specialtyCategories = {
   patterns: { label: "Mẫu câu thông dụng", icon: "型" },
   mini: { label: "Cụm từ ngắn dùng ngay", icon: "↗" },
@@ -376,6 +667,10 @@ function icon(type, small = false) {
 function fold(text) {
   return text.normalize("NFD").replace(/\p{M}/gu, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase();
 }
+const pad = (n, size = 2) => String(n).padStart(size, "0");
+const mobileQuery = matchMedia("(max-width: 850px)");
+const wideOutline = matchMedia("(min-width: 1280px)");
+
 let enabled = Object.fromEntries(Object.keys(types).map(type => [type, true]));
 const rememberedFilters = readPreference("filters", {});
 for (const type of Object.keys(types)) {
@@ -385,11 +680,431 @@ const savedLevels = readPreference("lastByLevel", {});
 const lastByLevel = savedLevels && typeof savedLevels === "object" && !Array.isArray(savedLevels) ? savedLevels : {};
 let current = null;
 let currentNodes = [];
+let lessonStates = new Map();
+let outlineEntries = [];
 let drawerReturnFocus = null;
 function readStageId() {
   const hashId = new URLSearchParams(location.hash.slice(1)).get("stage");
-  return byId.has(hashId) ? hashId : course.pilot_stages?.[0] || readPreference("lastStage", null);
+  if (byId.has(hashId)) return hashId;
+  const remembered = readPreference("lastStage", null);
+  if (byId.has(remembered)) return remembered;
+  return course.pilot_stages?.[0] || course.stages[0].uid;
 }
+
+/* ───────────── Characters, chat bubbles ───────────── */
+const AVATARS = {
+  male: '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="14.5" r="7.2"/><path d="M5.5 37c0-8.4 6.2-13.2 14.5-13.2S34.5 28.6 34.5 37z"/><path d="M12.6 12.6c.6-5.2 4-7.6 7.7-7.6 4 0 6.9 2.7 7.2 7.6-2-2.6-4.6-3.6-7.4-3.6-2.9 0-5.6 1.2-7.5 3.6z" opacity=".55"/></svg>',
+  female: '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 5.5c-5.3 0-8.6 3.8-8.6 9.6 0 4.2-1.3 7.1-3.1 9.2 2.6.7 5-.1 6.4-1.7h10.6c1.4 1.6 3.8 2.4 6.4 1.7-1.8-2.1-3.1-5-3.1-9.2 0-5.8-3.3-9.6-8.6-9.6z" opacity=".55"/><circle cx="20" cy="15.2" r="6.6"/><path d="M6 37c0-8.4 6.4-13 14-13s14 4.6 14 13z"/></svg>',
+  none: '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="14.5" r="7.2"/><path d="M5.5 37c0-8.4 6.2-13.2 14.5-13.2S34.5 28.6 34.5 37z"/></svg>'
+};
+const GENDERS = {
+  male: { label: "Nam", glyph: "♂︎" },
+  female: { label: "Nữ", glyph: "♀︎" }
+};
+function genderKey(speaker) { return speaker && GENDERS[speaker.gender] ? speaker.gender : "none"; }
+function toneClass(speaker, index) {
+  const key = genderKey(speaker);
+  return key === "none" ? "g-n" + (index % 2) : "g-" + key;
+}
+function avatar(speaker, index, mini = false) {
+  const key = genderKey(speaker);
+  const element = make("span", "avatar " + toneClass(speaker, index) + (mini ? " mini" : ""));
+  element.innerHTML = AVATARS[key];
+  if (key !== "none") {
+    const badge = make("span", "gbadge", GENDERS[key].glyph);
+    badge.setAttribute("aria-hidden", "true");
+    element.append(badge);
+  }
+  return element;
+}
+function roleTag(speaker) {
+  const key = genderKey(speaker);
+  const tag = make("span", "role-tag", speaker.role_vi || speaker.id);
+  if (key !== "none") tag.append(make("i", "", " · " + GENDERS[key].label));
+  return tag;
+}
+function speakerIndex(speakers) {
+  return new Map(speakers.map((speaker, index) => [speaker.id, { speaker, index }]));
+}
+function renderCast(speakers) {
+  const cast = make("div", "cast");
+  cast.setAttribute("role", "group");
+  cast.setAttribute("aria-label", "Nhân vật");
+  speakers.forEach((speaker, index) => {
+    if (index) cast.append(make("span", "cast-arrow", "⇄"));
+    const item = make("span", "cast-item " + toneClass(speaker, index));
+    const key = genderKey(speaker);
+    item.append(avatar(speaker, index, true), make("b", "", speaker.role_vi || speaker.id));
+    if (key !== "none") {
+      const note = make("small", "", GENDERS[key].label);
+      note.append(make("span", "full", " · giọng " + GENDERS[key].label.toLowerCase()));
+      item.append(note);
+    }
+    cast.append(item);
+  });
+  return cast;
+}
+function renderBubble(info, turn) {
+  const { speaker, index } = info;
+  const message = make("div", "msg " + (index % 2 ? "right" : "left") + " " + toneClass(speaker, index));
+  const bubble = make("div", "bubble");
+  bubble.append(roleTag(speaker));
+  const ja = make("p", "ja", turn.ja);
+  ja.lang = "ja";
+  bubble.append(ja);
+  if (turn.vi) bubble.append(make("p", "vi", turn.vi));
+  message.append(avatar(speaker, index), bubble);
+  return message;
+}
+function renderChat(speakers, turns) {
+  const chat = make("div", "chat");
+  const lookup = speakerIndex(speakers);
+  for (const turn of turns) {
+    const info = lookup.get(turn.speaker_id) || { speaker: { id: turn.speaker_id, role_vi: turn.speaker_id }, index: 0 };
+    chat.append(renderBubble(info, turn));
+  }
+  return chat;
+}
+function renderDialogue(speakers, turns) {
+  const fragment = document.createDocumentFragment();
+  fragment.append(renderCast(speakers), renderChat(speakers, turns));
+  return fragment;
+}
+function renderSentence(speaker, turn, number) {
+  const key = speaker ? genderKey(speaker) : "none";
+  const card = make("article", "sentence " + (speaker ? toneClass(speaker, 0) : "g-n0"));
+  if (number !== undefined && number !== null) card.append(make("span", "idx-chip", typeof number === "number" ? "#" + pad(number) : number));
+  if (speaker && (key !== "none" || speaker.role_vi)) card.append(avatar(speaker, 0));
+  const text = make("div", "sentence-text");
+  if (speaker) text.append(roleTag(speaker));
+  const ja = make("p", "ja", turn.ja);
+  ja.lang = "ja";
+  text.append(ja);
+  if (turn.vi) text.append(make("p", "vi", turn.vi));
+  card.append(text);
+  return card;
+}
+
+/* ───────────── Practice, situations, shadowing ───────────── */
+function renderPractice(examples, heading = "Luyện thêm qua ví dụ") {
+  const section = make("section", "extra-practice");
+  const title = make("h4", "", heading);
+  title.append(make("small", "", examples.length + " hội thoại · AI biên soạn"));
+  section.append(title);
+  examples.forEach((example, number) => {
+    const card = make("article", "card");
+    card.append(make("span", "card-kind", "Hội thoại"), make("span", "idx-chip", "#" + pad(number + 1)));
+    if (example.context_vi) {
+      const context = make("p", "practice-context");
+      context.append(make("b", "", "Bối cảnh"), document.createTextNode(example.context_vi));
+      card.append(context);
+    }
+    card.append(renderDialogue(example.speakers, example.turns));
+    section.append(card);
+  });
+  return section;
+}
+function renderScene(scenario, number) {
+  const scene = make("details", "scene");
+  scene.open = true;
+  scene.id = "sit-" + scenario.id;
+  scene.dataset.spy = scene.id;
+  const summary = make("summary");
+  summary.append(make("span", "scene-no", pad(number)));
+  const head = make("div");
+  head.append(make("div", "scene-title", scenario.title));
+  const tags = make("div", "scene-tags");
+  if (scenario.branch) tags.append(make("span", "branch branch-" + scenario.branch, course.branches[scenario.branch] || scenario.branch));
+  for (const parent of scenario.continues_from || []) {
+    const position = current.situations.findIndex(s => s.id === parent) + 1;
+    const link = button("↳ Tiếp từ #" + (position ? pad(position) : parent), event => {
+      event.preventDefault();
+      event.stopPropagation();
+      goTo({ id: "sit-" + parent, lesson: scene.closest(".lesson")?.id, event: "ev-" + current.situations[position - 1]?.event_id });
+    }, "link-chip");
+    tags.append(link);
+  }
+  head.append(tags);
+  summary.append(head);
+  const body = make("div", "scene-body");
+  const dialogue = scenario.dialogue;
+  if (dialogue) {
+    if (dialogue.context_vi) {
+      const context = make("p", "scene-context");
+      context.append(make("b", "", "Bối cảnh"), document.createTextNode(dialogue.context_vi));
+      body.append(context);
+    }
+    body.append(renderDialogue(dialogue.speakers, dialogue.turns));
+  } else body.append(make("p", "quiet", "Hội thoại của tình huống này đang được biên soạn."));
+  scene.append(summary, body);
+  return scene;
+}
+function renderSituations(body) {
+  const total = current.situations.length;
+  const ready = current.situations.filter(s => s.dialogue).length;
+  body.append(make("p", "quiet", ready === total
+    ? total + " tình huống · mỗi tình huống có hội thoại Nhật–Việt. Bấm vào tiêu đề để thu gọn / mở rộng."
+    : ready + "/" + total + " tình huống đã có hội thoại Nhật–Việt."));
+  const numbers = new Map(current.situations.map((s, i) => [s.id, i + 1]));
+  current.events.forEach((event, eventIndex) => {
+    const details = make("details", "event");
+    details.open = true;
+    details.id = "ev-" + event.id;
+    details.dataset.spy = details.id;
+    const summary = make("summary");
+    summary.append(make("span", "event-no", String(eventIndex + 1)));
+    const head = make("div");
+    head.append(make("div", "event-name", event.name));
+    const meta = make("div", "event-meta");
+    event.roles.forEach((role, i) => {
+      if (i) meta.append(make("span", "", "⇄"));
+      meta.append(make("span", "role-chip", role));
+    });
+    head.append(meta);
+    const scenarios = current.situations.filter(s => s.event_id === event.id);
+    summary.append(head, make("span", "event-count", scenarios.length + " tình huống"));
+    const inner = make("div", "event-body");
+    for (const scenario of scenarios) inner.append(renderScene(scenario, numbers.get(scenario.id)));
+    details.append(summary, inner);
+    body.append(details);
+  });
+}
+function renderShadowing(body) {
+  const items = current.shadowing.items;
+  body.append(make("p", "shadow-intro", "Nghe từng câu rồi nhại lại cùng nhịp và ngữ điệu. Câu đơn xếp thành thẻ nhỏ, hội thoại hiển thị dạng chat."));
+  let grid = null;
+  items.forEach((item, index) => {
+    const lookup = speakerIndex(item.speakers);
+    if (item.type === "single_sentence" || item.turns.length === 1) {
+      if (!grid) { grid = make("div", "sentence-grid"); body.append(grid); }
+      const info = lookup.get(item.turns[0].speaker_id);
+      const card = renderSentence(info?.speaker, item.turns[0], index + 1);
+      card.id = "sh-" + (index + 1);
+      card.dataset.spy = card.id;
+      grid.append(card);
+      return;
+    }
+    grid = null;
+    const card = make("article", "card");
+    card.id = "sh-" + (index + 1);
+    card.dataset.spy = card.id;
+    card.append(make("span", "card-kind", "Hội thoại"), make("span", "idx-chip", "#" + pad(index + 1)));
+    card.append(renderDialogue(item.speakers, item.turns));
+    body.append(card);
+  });
+}
+
+/* ───────────── Speak Japanese knowledge parser ───────────── */
+const norm = text => text.replace(/\s+/g, " ").trim();
+const hasJapanese = text => /[぀-ヿ㐀-鿿]/.test(text);
+const INLINE = /(?<!\S)([A-Z]{1,2}) \((JP|VI)\):\s*/g;
+const BARE = /(?<!\S)(JP|VI):\s*/g;
+const LINE = /^(?:(\d+)\s+)?(?:(.{1,30}?)\s*\((JP|VI)\)|(JP|VI))\s*[:：]\s*(.*)$/s;
+function* leaves(parent, number) {
+  for (const element of parent.children) {
+    const tag = element.tagName;
+    if (/^H[1-6]$/.test(tag)) yield { kind: "h", element, tag };
+    else if (tag === "UL" || tag === "OL") {
+      let counter = tag === "OL" ? (parseInt(element.getAttribute("start"), 10) || 1) : null;
+      for (const item of element.children) {
+        if (item.querySelector(":scope > p, :scope > ul, :scope > ol")) yield* leaves(item, counter);
+        else yield { kind: "li", element: item, number: counter };
+        if (counter !== null) counter++;
+      }
+    } else yield { kind: "p", element, number };
+  }
+}
+function splitPair(text) {
+  const at = text.indexOf(" — ");
+  if (at < 1) return null;
+  const ja = text.slice(0, at).trim(), vi = text.slice(at + 3).trim();
+  const jaChars = (vi.match(/[぀-ヿ㐀-鿿]/g) || []).length;
+  return hasJapanese(ja) && /[A-Za-zÀ-ỹ]{2}/.test(vi) && jaChars < vi.length * .3 ? { ja, vi } : null;
+}
+function parseReading(html) {
+  const doc = new DOMParser().parseFromString("<!doctype html><body>" + html, "text/html");
+  const blocks = [];
+  let example = null, caption = null;
+  const flushExample = () => { if (example && example.turns.length) blocks.push({ type: "example", ...example }); example = null; };
+  const flushCaption = () => { if (caption) { blocks.push({ type: "sub", text: caption.text }); caption = null; } };
+  const begin = (number, text) => {
+    flushExample();
+    example = { number: number ?? caption?.number ?? null, caption: text ?? caption?.text ?? null, turns: [] };
+    caption = null;
+  };
+  const lastOpen = () => example && [...example.turns].reverse().find(turn => turn.vi === undefined);
+  for (const leaf of leaves(doc.body)) {
+    const text = norm(leaf.element.textContent);
+    if (!text) continue;
+    if (leaf.kind === "h") {
+      flushExample(); flushCaption();
+      blocks.push({ type: leaf.tag === "H3" ? "phrase" : "section", text });
+      continue;
+    }
+    const marks = [...text.matchAll(INLINE)];
+    if (marks.length && (marks.length > 1 || marks[0].index > 0)) {
+      let prefix = text.slice(0, marks[0].index).trim().replace(/^(\d+)\s+/, "");
+      const numberInText = text.slice(0, marks[0].index).trim().match(/^(\d+)\s+/);
+      if (prefix) flushCaption();
+      begin(leaf.number ?? (numberInText ? Number(numberInText[1]) : null), prefix || null);
+      marks.forEach((mark, i) => {
+        const end = i + 1 < marks.length ? marks[i + 1].index : text.length;
+        const value = text.slice(mark.index + mark[0].length, end).trim().replace(/\s*—\s*$/, "").trim();
+        if (mark[2] === "JP") example.turns.push({ label: mark[1], ja: value });
+        else {
+          const target = lastOpen();
+          if (target) target.vi = value;
+        }
+      });
+      continue;
+    }
+    const bare = [...text.matchAll(BARE)];
+    if (bare.length > 1 && bare[0][1] === "JP") {
+      flushCaption();
+      begin(leaf.number);
+      bare.forEach((mark, i) => {
+        const end = i + 1 < bare.length ? bare[i + 1].index : text.length;
+        const value = text.slice(mark.index + mark[0].length, end).trim();
+        if (mark[1] === "JP") example.turns.push({ label: "", ja: value });
+        else { const target = lastOpen(); if (target) target.vi = value; }
+      });
+      continue;
+    }
+    const line = text.match(LINE);
+    if (line) {
+      const [, number, label = "", lang1, lang2, rest] = line;
+      const lang = lang1 || lang2;
+      const speakerLabel = (label || "").trim();
+      if (lang === "JP") {
+        const changed = number && example && String(example.number) !== number;
+        const lone = !speakerLabel;
+        const openTurn = example && example.turns.some(turn => turn.vi === undefined);
+        if (!example || caption || changed || (lone && !openTurn)) begin(number ? Number(number) : leaf.number);
+        example.turns.push({ label: speakerLabel, ja: rest });
+        continue;
+      }
+      const target = lastOpen();
+      if (target) { target.vi = rest; if (speakerLabel && speakerLabel !== target.label) target.viLabel = speakerLabel; continue; }
+      const previous = blocks.at(-1);
+      if (!example && previous?.plainJa) {
+        blocks.pop();
+        blocks.push({ type: "example", number: previous.number, caption: null, turns: [{ label: "", ja: previous.plainJa, vi: rest }] });
+        continue;
+      }
+    }
+    const ab = text.match(/^([A-Za-z]{1,2})\s*[:：]\s*(.+)$/);
+    if (ab && hasJapanese(ab[2])) {
+      const closed = example && example.turns.length >= 2 && example.turns.every(turn => turn.vi !== undefined) && ab[1] === example.turns[0].label && example.turns.at(-1).label !== ab[1];
+      if (!example || caption || closed) begin(leaf.number);
+      example.turns.push({ label: ab[1], ja: ab[2] });
+      continue;
+    }
+    if (leaf.kind === "p" && leaf.element.children.length === 1 && leaf.element.firstElementChild.tagName === "STRONG"
+        && norm(leaf.element.firstElementChild.textContent) === text) {
+      flushExample(); flushCaption();
+      const numbered = text.match(/^(\d+)\s+(.*)$/);
+      caption = { number: numbered ? Number(numbered[1]) : null, text: numbered ? numbered[2] : text };
+      continue;
+    }
+    const pair = splitPair(text);
+    if (pair) {
+      flushExample(); flushCaption();
+      blocks.push({ type: "example", number: leaf.number, caption: null, turns: [{ label: "", ja: pair.ja, vi: pair.vi }] });
+      continue;
+    }
+    flushExample(); flushCaption();
+    blocks.push({ type: "note", html: leaf.element.innerHTML, item: leaf.kind === "li", number: leaf.number,
+      plainJa: hasJapanese(text) && !/[A-Za-zÀ-ỹ]{3}/.test(text) ? text : null });
+  }
+  flushExample(); flushCaption();
+  return blocks;
+}
+function splitGloss(text) {
+  const at = text.indexOf(" — ");
+  return at < 0 ? [text, ""] : [text.slice(0, at), text.slice(at + 3)];
+}
+function captionNode(className, text) {
+  const [ja, vi] = splitGloss(text);
+  const node = make("p", className);
+  const first = make("span", hasJapanese(ja) ? "ja" : "", ja);
+  if (hasJapanese(ja)) first.lang = "ja";
+  node.append(first);
+  if (vi) node.append(make("span", "vi-part", " — " + vi));
+  return node;
+}
+function renderParsedExample(block) {
+  const labels = [...new Set(block.turns.map(turn => turn.label))];
+  const single = block.turns.length === 1 && !block.turns[0].label;
+  const speakers = labels.map(label => {
+    const turn = block.turns.find(t => t.label === label);
+    const role = turn.viLabel && turn.viLabel !== label ? (label ? label + " · " + turn.viLabel : turn.viLabel) : label;
+    return { id: label, role_vi: role, gender: null };
+  });
+  if (single) {
+    const card = renderSentence(null, block.turns[0], block.number != null ? "#" + pad(block.number) : null);
+    if (block.caption) {
+      const wrapper = make("div", "example");
+      if (block.number != null) wrapper.append(make("span", "idx-chip", "#" + pad(block.number)));
+      wrapper.append(captionNode("example-caption", block.caption));
+      card.querySelector(".idx-chip")?.remove();
+      wrapper.append(card);
+      return wrapper;
+    }
+    return card;
+  }
+  const wrapper = make("div", "example");
+  if (block.number != null) wrapper.append(make("span", "idx-chip", "#" + pad(block.number)));
+  if (block.caption) wrapper.append(captionNode("example-caption", block.caption));
+  const turns = block.turns.map(turn => ({ speaker_id: turn.label, ja: turn.ja, vi: turn.vi }));
+  wrapper.append(speakers.length > 1 ? renderCast(speakers) : document.createDocumentFragment(), renderChat(speakers, turns));
+  return wrapper;
+}
+function renderReading(html, title = "") {
+  const container = make("div", "reading");
+  let blocks;
+  try { blocks = parseReading(html); } catch { blocks = []; }
+  if (!blocks.some(block => block.type === "example")) {
+    const fallback = make("div", "fallback-html");
+    fallback.innerHTML = html;
+    container.append(fallback);
+    return container;
+  }
+  let grid = null;
+  for (const block of blocks) {
+    const sentence = block.type === "example" && block.turns.length === 1 && !block.turns[0].label && !block.caption;
+    if (sentence) {
+      if (!grid) { grid = make("div", "sentence-grid"); container.append(grid); }
+      grid.append(renderParsedExample(block));
+      continue;
+    }
+    grid = null;
+    switch (block.type) {
+      case "phrase": {
+        const [ja, gloss] = splitGloss(block.text);
+        if (!gloss && norm(ja) === norm(title)) break;
+        const card = make("div", "phrase");
+        const phraseText = make("p", "ja", ja);
+        phraseText.lang = "ja";
+        card.append(phraseText);
+        if (gloss) card.append(make("p", "gloss", gloss));
+        container.append(card);
+        break;
+      }
+      case "section": container.append(make("h5", "sec-label", block.text)); break;
+      case "sub": container.append(captionNode("sub-label", block.text)); break;
+      case "note": {
+        const note = make("div", "note" + (block.item ? " li" : ""));
+        note.innerHTML = block.html;
+        container.append(note);
+        break;
+      }
+      case "example": container.append(renderParsedExample(block)); break;
+    }
+  }
+  return container;
+}
+
+/* ───────────── Lessons ───────────── */
 function nodesFor(stage) {
   const selections = new Map(stage.selections.map(s => [s.book_id + "/" + s.pack_id, s]));
   const result = [];
@@ -414,6 +1129,178 @@ function nodesFor(stage) {
   }
   return result;
 }
+function placeholder(glyph, text) {
+  const container = make("div", "placeholder");
+  container.append(make("span", "placeholder-icon", glyph), make("span", "", text));
+  return container;
+}
+function renderProvenance(selection) {
+  const p = selection.provenance;
+  const detail = make("details", "provenance");
+  if (!p) { detail.hidden = true; return detail; }
+  detail.append(make("summary", "", "Nguồn & ghi chú biên tập"));
+  detail.append(make("p", "", selection.book_id + " · " + p.book_title), make("p", "", p.title_ja));
+  detail.append(make("p", "", p.boundary));
+  detail.append(make("code", "", p.path + " · " + p.unit_id + " · dòng " + p.start_line + "–" + p.end_line));
+  for (const extra of p.extra_parts || []) {
+    detail.append(make("code", "", extra.path + " · dòng " + extra.start_line + "–" + extra.end_line));
+  }
+  for (const audio of p.audio || []) {
+    detail.append(make("p", "", [audio.disc, audio.track, audio.locator].filter(Boolean).join(" · ")));
+  }
+  detail.append(make("p", "", p.audio_note), make("p", "", p.fit_vi), make("p", "", p.difficulty_vi));
+  if (p.source_quality_note) detail.append(make("p", "quality", p.source_quality_note));
+  return detail;
+}
+function renderBody(node, body) {
+  switch (node.kind) {
+    case "vocabulary": {
+      const list = make("ul", "vocabulary-groups");
+      for (const topic of current.vocabulary) list.append(make("li", "", topic));
+      body.append(list, make("p", "quiet", "Các nhóm từ đã định hướng. Danh sách từ cụ thể sẽ được bổ sung khi biên soạn bài."));
+      break;
+    }
+    case "speak_video":
+      body.append(placeholder("▶", "Video bài giảng · Chờ gắn video"), renderProvenance(node.selection));
+      break;
+    case "speak_shadow":
+    case "shadowing":
+    case "reading": {
+      if (current.shadowing && !node.selection) { renderShadowing(body); break; }
+      body.append(renderReading(course.content[node.selection.content_key], node.selection.title));
+      if (node.selection.practice?.length) body.append(renderPractice(node.selection.practice));
+      body.append(renderProvenance(node.selection));
+      break;
+    }
+    case "lecture":
+      body.append(placeholder("▣", "Video kiến thức tổng hợp · Chờ biên soạn"));
+      break;
+    case "situations": renderSituations(body); break;
+    case "challenge":
+      body.append(placeholder("ϟ", "Challenge tổng hợp cùng Live AI · Chờ biên soạn nhiệm vụ"));
+      break;
+    case "free":
+      body.append(placeholder("✦", "Free Kaiwa cuối chặng · Chờ chuẩn bị context trò chuyện"));
+      break;
+  }
+}
+function lessonCount(node) {
+  switch (node.kind) {
+    case "vocabulary": return current.vocabulary.length + " nhóm từ";
+    case "shadowing": case "speak_shadow":
+      return current.shadowing && !node.selection ? current.shadowing.items.length + " câu / đoạn" : "";
+    case "situations": return current.situations.length + " tình huống";
+    case "reading": return node.selection?.practice?.length ? "+" + node.selection.practice.length + " ví dụ luyện" : "";
+    default: return "";
+  }
+}
+function ensureLesson(id) {
+  const state = lessonStates.get(id);
+  if (state && !state.loaded) { renderBody(state.node, state.body); state.loaded = true; }
+  return state;
+}
+function renderLessons() {
+  const container = $("lessons");
+  container.replaceChildren();
+  lessonStates = new Map();
+  for (const node of currentNodes) {
+    const detail = make("details", "lesson kind-" + node.kind);
+    detail.id = node.id;
+    detail.dataset.kind = node.kind;
+    detail.dataset.spy = node.id;
+    const summary = make("summary");
+    const title = make("div", "lesson-heading");
+    const lessonLabel = node.selection?.section_title ? node.selection.section_title : types[node.kind].label;
+    const label = make("div", "lesson-label", lessonLabel);
+    const category = specialtyCategories[node.selection?.category];
+    if (category) {
+      const caption = make("div", "specialty-caption");
+      const badge = make("span", "specialty-badge specialty-" + node.selection.category);
+      const glyph = make("span", "", category.icon);
+      glyph.setAttribute("aria-hidden", "true");
+      badge.append(glyph, make("span", "", category.label));
+      caption.append(label, badge);
+      title.append(caption);
+    } else title.append(label);
+    const heading = make("h3", "", node.title);
+    if (node.kind === "reading" && hasJapanese(node.title)) heading.lang = "ja";
+    title.append(heading);
+    summary.append(icon(node.kind), title);
+    const count = lessonCount(node);
+    if (count) summary.append(make("span", "lesson-count", count));
+    const body = make("div", "lesson-body");
+    const state = { node, body, detail, loaded: false };
+    lessonStates.set(node.id, state);
+    detail.addEventListener("toggle", () => { if (detail.open) ensureLesson(node.id); });
+    detail.append(summary, body);
+    container.append(detail);
+  }
+  renderFilters();
+  applyFilters();
+}
+
+/* ───────────── Filters & toolbar ───────────── */
+function presentKinds() { return Object.keys(types).filter(kind => currentNodes.some(n => n.kind === kind)); }
+function renderFilters() {
+  const container = $("filter-options");
+  container.replaceChildren();
+  for (const kind of presentKinds()) {
+    const row = make("label", "filter-row");
+    const checkbox = make("input");
+    checkbox.type = "checkbox";
+    checkbox.checked = enabled[kind];
+    checkbox.dataset.kind = kind;
+    checkbox.addEventListener("change", () => {
+      enabled[kind] = checkbox.checked;
+      savePreference("filters", enabled);
+      applyFilters();
+    });
+    const count = kind === "situations" ? current.situations.length : currentNodes.filter(n => n.kind === kind).length;
+    row.append(checkbox, icon(kind, true), make("span", "", types[kind].label), make("span", "filter-count", count));
+    container.append(row);
+  }
+}
+function applyFilters() {
+  let visible = 0;
+  for (const lesson of $("lessons").children) {
+    lesson.hidden = !enabled[lesson.dataset.kind];
+    if (!lesson.hidden) visible++;
+  }
+  for (const group of document.querySelectorAll("#outline-tree > .ol-group")) group.hidden = !enabled[group.dataset.kind];
+  const kinds = presentKinds();
+  const shownTypes = kinds.filter(kind => enabled[kind]).length;
+  $("filter-label").textContent = "Loại bài · " + shownTypes + "/" + kinds.length;
+  $("visible-count").textContent = visible + "/" + currentNodes.length + " mục đang hiển thị";
+  $("empty-filter").hidden = visible > 0;
+  const primary = document.querySelector(".accent-button");
+  if (primary) primary.disabled = visible === 0;
+}
+function resetFilters() {
+  for (const key of Object.keys(enabled)) enabled[key] = true;
+  savePreference("filters", enabled);
+  renderFilters();
+  applyFilters();
+}
+function closeFilters() {
+  $("filter-panel").hidden = true;
+  $("filter-button").setAttribute("aria-expanded", "false");
+}
+function setTranslation(on) {
+  document.documentElement.dataset.vi = on ? "on" : "off";
+  $("toggle-vi").setAttribute("aria-pressed", String(on));
+  $("vi-label").textContent = on ? "Bản dịch" : "Bản dịch tắt";
+  savePreference("vi", on);
+  if (on) for (const element of document.querySelectorAll(".reveal")) element.classList.remove("reveal");
+}
+function setJaScale(value) {
+  const scale = Math.min(1.5, Math.max(.85, Math.round(value * 100) / 100));
+  document.documentElement.style.setProperty("--ja-scale", scale);
+  savePreference("jaScale", scale);
+  $("ja-smaller").disabled = scale <= .85;
+  $("ja-bigger").disabled = scale >= 1.5;
+}
+
+/* ───────────── Stage navigation ───────────── */
 function renderTabs() {
   const container = document.querySelector(".level-tabs");
   container.replaceChildren();
@@ -465,7 +1352,7 @@ function renderNavigation() {
     const item = button("", () => navigate(stage.uid), "stage-button");
     const specialty = stage.stage_kind === "speak_japanese";
     const marker = make("span", "stage-number" + (specialty ? " specialty-marker" : ""),
-      specialty ? "◈" : String(stage.number).padStart(2, "0"));
+      specialty ? "◈" : pad(stage.number));
     if (specialty) marker.setAttribute("aria-label", "Chặng chuyên đề");
     item.append(marker, make("span", "", stage.title));
     if (stage.uid === current.uid) item.setAttribute("aria-current", "page");
@@ -481,235 +1368,188 @@ function renderNavigation() {
     else if (item.bottom > bounds.bottom) nav.scrollTop += item.bottom - bounds.bottom;
   }
 }
+function stat(value, label) {
+  const element = make("span", "stat");
+  element.append(make("b", "", String(value)), document.createTextNode(label));
+  return element;
+}
 function renderHeading() {
   const container = $("stage-heading");
   container.replaceChildren();
+  const specialty = current.stage_kind === "speak_japanese";
   const breadcrumb = make("div", "breadcrumb");
-  breadcrumb.append(document.createTextNode("Lộ trình"), make("span", "", "/"), document.createTextNode(current.cluster));
+  breadcrumb.append(document.createTextNode("Lộ trình"), make("span", "", "/"), document.createTextNode(current.level),
+    make("span", "", "/"), document.createTextNode(current.cluster));
   const hero = make("section", "stage-hero");
-  hero.append(make("p", "stage-kicker", (current.stage_kind === "speak_japanese" ? "Speak Japanese · Chặng " : "Chặng ") + String(current.number).padStart(2, "0")));
+  hero.append(make("p", "stage-kicker", (specialty ? "Chuyên đề · Chặng " : "Chặng ") + pad(current.number)));
   hero.append(make("h1", "", current.title), make("p", "objective", current.objective));
+  const stats = make("div", "stat-row");
+  if (specialty) {
+    const practice = current.selections.reduce((sum, s) => sum + (s.practice?.length || 0), 0);
+    stats.append(stat(current.selections.length, " mục kiến thức"));
+    if (practice) stats.append(stat(practice, " hội thoại luyện thêm"));
+  } else {
+    stats.append(stat(current.situations.length, " tình huống"), stat(current.events.length, " sự kiện"));
+    if (current.shadowing) stats.append(stat(current.shadowing.items.length, " câu / đoạn shadowing"));
+    if (current.vocabulary.length) stats.append(stat(current.vocabulary.length, " nhóm từ"));
+  }
+  hero.append(stats);
   const meta = make("div", "stage-meta");
-  meta.append(button("Đọc chặng này ↗", () => {
-    const first = [...$("lessons").children].find(section =>
-      !section.hidden && ["reading", "shadowing", "speak_shadow"].includes(section.dataset.kind));
-    if (first) { first.open = true; first.scrollIntoView({ behavior: "smooth", block: "start" }); }
+  meta.append(button("Bắt đầu luyện ↗", () => {
+    const first = currentNodes.find(node => enabled[node.kind] && ["reading", "shadowing", "speak_shadow", "situations"].includes(node.kind));
+    if (first) goTo({ id: first.id, lesson: first.id });
   }, "accent-button"));
-  const materialCount = current.shadowing ? current.shadowing.items.length + " câu / đoạn shadowing" :
-    current.selections.length + (current.stage_kind === "speak_japanese" ? " mục kiến thức" : " bài bổ trợ");
-  meta.append(make("span", "", materialCount));
-  if (current.stage_kind !== "speak_japanese") meta.append(make("span", "", current.situations.length + " tình huống"));
   const link = make("a", "", "Liên kết chặng");
   link.href = "#stage=" + current.uid;
   meta.append(link);
   hero.append(meta);
   container.append(breadcrumb, hero);
 }
-function renderProvenance(selection) {
-  const p = selection.provenance;
-  const detail = make("details", "provenance");
-  if (!p) { detail.hidden = true; return detail; }
-  detail.append(make("summary", "", "Nguồn & ghi chú biên tập"));
-  detail.append(make("p", "", selection.book_id + " · " + p.book_title), make("p", "", p.title_ja));
-  detail.append(make("p", "", p.boundary));
-  detail.append(make("code", "", p.path + " · " + p.unit_id + " · dòng " + p.start_line + "–" + p.end_line));
-  for (const extra of p.extra_parts || []) {
-    detail.append(make("code", "", extra.path + " · dòng " + extra.start_line + "–" + extra.end_line));
-  }
-  for (const audio of p.audio || []) {
-    detail.append(make("p", "", [audio.disc, audio.track, audio.locator].filter(Boolean).join(" · ")));
-  }
-  detail.append(make("p", "", p.audio_note), make("p", "", p.fit_vi), make("p", "", p.difficulty_vi));
-  if (p.source_quality_note) detail.append(make("p", "quality", p.source_quality_note));
-  return detail;
+
+/* ───────────── Right outline (tree) ───────────── */
+function olLink(text, { kind, no, count, level = 1, entry, gender, soon }) {
+  const link = make("button", "ol-link" + (level === 2 ? " lv2" : ""));
+  link.type = "button";
+  if (kind) link.append(icon(kind, true));
+  if (no !== undefined) link.append(make("span", "ol-no", no));
+  if (gender) { const dot = make("span", "ol-gender g-" + gender); dot.setAttribute("aria-hidden", "true"); link.append(dot); }
+  const label = make("span", "ol-text", text);
+  if (hasJapanese(text)) label.lang = "ja";
+  link.append(label);
+  if (soon) link.append(make("span", "ol-soon", "sắp có"));
+  if (count) link.append(make("span", "ol-count", count));
+  link.dataset.target = entry.id;
+  link.addEventListener("click", () => goTo(entry, true));
+  outlineEntries.push(entry);
+  return link;
 }
-function placeholder(glyph, text) {
-  const container = make("div", "placeholder");
-  container.append(make("span", "placeholder-icon", glyph), make("span", "", text));
-  return container;
-}
-function renderPractice(examples, heading = "Luyện thêm qua ví dụ") {
-  const section = make("section", "extra-practice");
-  section.append(make("h4", "", heading));
-  for (const example of examples) {
-    const article = make("article", "practice-example");
-    article.append(make("p", "practice-context", example.context_vi));
-    const speakers = new Map(example.speakers.map(s => [s.id, s]));
-    for (const turn of example.turns) {
-      const speaker = speakers.get(turn.speaker_id);
-      const line = make("div", "practice-turn");
-      line.append(make("p", "roles", speaker.role_vi + " · " + (speaker.gender === "male" ? "Giọng nam" : "Giọng nữ")),
-        make("p", "", turn.ja), make("p", "quiet", turn.vi));
-      article.append(line);
-    }
-    section.append(article);
+function olGroup(linkNode, childNodes, collapsed = false) {
+  const group = make("div", "ol-group" + (collapsed ? " collapsed" : ""));
+  const row = make("div", "ol-row");
+  if (childNodes.length) {
+    const toggle = make("button", "ol-toggle");
+    toggle.type = "button";
+    toggle.setAttribute("aria-label", "Mở / thu gọn nhóm");
+    toggle.addEventListener("click", () => group.classList.toggle("collapsed"));
+    row.append(toggle);
+  } else row.append(make("span", "ol-spacer"));
+  row.append(linkNode);
+  group.append(row);
+  if (childNodes.length) {
+    const children = make("div", "ol-children");
+    children.append(...childNodes);
+    group.append(children);
   }
-  return section;
+  return group;
 }
-function renderBody(node, body) {
-  switch (node.kind) {
-    case "vocabulary": {
-      const list = make("ul", "vocabulary-groups");
-      for (const topic of current.vocabulary) list.append(make("li", "", topic));
-      body.append(list, make("p", "quiet", "Các nhóm từ đã định hướng. Danh sách từ cụ thể sẽ được bổ sung khi biên soạn bài."));
-      break;
-    }
-    case "speak_video":
-      body.append(placeholder("▶", "Video bài giảng · Chờ gắn video"), renderProvenance(node.selection));
-      break;
-    case "speak_shadow":
-    case "shadowing":
-    case "reading": {
-      if (current.shadowing && !node.selection) {
-        const list = make("div", "reading");
-        for (const item of current.shadowing.items) {
-          const group = make("section", "shadowing-item");
-          group.append(make("p", "quiet", item.type === "single_sentence" ? "Câu đơn" : "Hội thoại"));
-          const speakers = new Map(item.speakers.map(s => [s.id, s]));
-          for (const turn of item.turns) {
-            const speaker = speakers.get(turn.speaker_id);
-            group.append(make("p", "roles", speaker.role_vi + " · " + (speaker.gender === "male" ? "Giọng nam" : "Giọng nữ")),
-              make("p", "", turn.ja), make("p", "quiet", turn.vi));
-          }
-          list.append(group);
-        }
-        body.append(list);
-        break;
-      }
-      const reading = make("div", "reading");
-      reading.innerHTML = course.content[node.selection.content_key];
-      body.append(reading);
-      if (node.selection.practice?.length) body.append(renderPractice(node.selection.practice));
-      body.append(renderProvenance(node.selection));
-      break;
-    }
-    case "lecture":
-      body.append(placeholder("▣", "Video kiến thức tổng hợp · Chờ biên soạn"));
-      break;
-    case "situations":
-      {
-        const ready = current.situations.filter(s => s.dialogue).length;
-        body.append(make("p", "quiet", ready
-          ? ready + "/" + current.situations.length + " tình huống có hội thoại Nhật–Việt."
-          : current.situations.length + " tình huống đã lên khung. Hội thoại thực hành sẽ được biên soạn ở bước tiếp theo."));
-      }
-      for (const event of current.events) {
-        const details = make("details", "event");
-        details.append(make("summary", "", event.name), make("p", "roles", event.roles.join(" ↔ ")));
-        const list = make("ul", "scenario-list");
-        for (const scenario of current.situations.filter(s => s.event_id === event.id)) {
-          const item = make("li");
-          item.append(make("div", "", scenario.title));
-          const meta = make("div", "scenario-meta");
-          meta.append(make("span", "", course.branches[scenario.branch] || scenario.branch));
-          if (scenario.continues_from?.length) {
-            meta.append(make("span", "", "Tiếp từ " + scenario.continues_from.join(", ")));
-          }
-          item.append(meta);
-          if (scenario.dialogue) {
-            item.append(renderPractice([scenario.dialogue], "Hội thoại mẫu"));
-          }
-          list.append(item);
-        }
-        details.append(list);
-        body.append(details);
-      }
-      break;
-    case "challenge":
-      body.append(placeholder("ϟ", "Challenge tổng hợp cùng Live AI · Chờ biên soạn nhiệm vụ"));
-      break;
-    case "free":
-      body.append(placeholder("✦", "Free Kaiwa cuối chặng · Chờ chuẩn bị context trò chuyện"));
-      break;
-  }
-}
-function renderLessons() {
-  const container = $("lessons");
-  container.replaceChildren();
+function olLeaf(linkNode) { return olGroup(linkNode, []); }
+function buildOutline() {
+  const tree = $("outline-tree");
+  tree.replaceChildren();
+  outlineEntries = [];
+  $("outline-stage").textContent = current.title;
   for (const node of currentNodes) {
-    const detail = make("details", "lesson kind-" + node.kind);
-    detail.id = node.id;
-    detail.dataset.kind = node.kind;
-    const summary = make("summary");
-    const title = make("div", "lesson-heading");
-    const lessonLabel = node.selection?.section_title ?
-      node.selection.section_title : types[node.kind].label;
-    const label = make("div", "lesson-label", lessonLabel);
-    const category = specialtyCategories[node.selection?.category];
-    if (category) {
-      const caption = make("div", "specialty-caption");
-      const badge = make("span", "specialty-badge specialty-" + node.selection.category);
-      const glyph = make("span", "", category.icon);
-      glyph.setAttribute("aria-hidden", "true");
-      badge.append(glyph, make("span", "", category.label));
-      caption.append(label, badge);
-      title.append(caption);
-    } else title.append(label);
-    title.append(make("h3", "", node.title));
-    summary.append(icon(node.kind), title);
-    const body = make("div", "lesson-body");
-    let loaded = false;
-    detail.addEventListener("toggle", () => {
-      if (detail.open && !loaded) { renderBody(node, body); loaded = true; }
+    const entry = { id: node.id, lesson: node.id };
+    const heading = node.kind === "reading" ? node.title : types[node.kind].label;
+    const placeholderKind = ["lecture", "challenge", "free"].includes(node.kind);
+    const children = [];
+    if ((node.kind === "shadowing" || node.kind === "speak_shadow") && current.shadowing && !node.selection) {
+      current.shadowing.items.forEach((item, index) => {
+        const first = item.turns[0];
+        const speaker = item.speakers.find(s => s.id === first.speaker_id);
+        const preview = first.ja.length > 26 ? first.ja.slice(0, 26) + "…" : first.ja;
+        children.push(olLeaf(olLink(preview, {
+          no: pad(index + 1), level: 2, gender: speaker && GENDERS[speaker.gender] ? speaker.gender : null,
+          entry: { id: "sh-" + (index + 1), lesson: node.id }
+        })));
+      });
+    }
+    if (node.kind === "situations") {
+      const numbers = new Map(current.situations.map((s, i) => [s.id, i + 1]));
+      current.events.forEach((event, eventIndex) => {
+        const scenes = current.situations.filter(s => s.event_id === event.id).map(s =>
+          olLeaf(olLink(s.title, { no: pad(numbers.get(s.id)), level: 2, entry: { id: "sit-" + s.id, lesson: node.id, event: "ev-" + event.id } })));
+        children.push(olGroup(olLink(event.name, {
+          no: String(eventIndex + 1), level: 2, count: String(scenes.length), entry: { id: "ev-" + event.id, lesson: node.id }
+        }), scenes));
+      });
+    }
+    const link = olLink(heading, {
+      kind: node.kind, entry,
+      count: node.kind === "situations" ? String(current.situations.length)
+        : children.length && node.kind !== "situations" ? String(children.length) : "",
+      soon: placeholderKind
     });
-    detail.append(summary, body);
-    container.append(detail);
+    const group = olGroup(link, children, children.length > 14 && node.kind !== "situations");
+    group.dataset.kind = node.kind;
+    tree.append(group);
   }
-  renderFilters();
   applyFilters();
+  updateSpy();
 }
-function renderFilters() {
-  const container = $("filter-options");
-  container.replaceChildren();
-  for (const [kind, type] of Object.entries(types)) {
-    const row = make("label", "filter-row");
-    const checkbox = make("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = enabled[kind];
-    checkbox.dataset.kind = kind;
-    checkbox.addEventListener("change", () => {
-      enabled[kind] = checkbox.checked;
-      savePreference("filters", enabled);
-      applyFilters();
-    });
-    const count = kind === "situations" ? current.situations.length : currentNodes.filter(n => n.kind === kind).length;
-    row.append(checkbox, icon(kind, true), make("span", "", type.label), make("span", "filter-count", count));
-    container.append(row);
+function chromeOffset() {
+  const header = mobileQuery.matches && document.body.classList.contains("chrome-hidden") ? 0 : $("topbar").offsetHeight;
+  return header + $("toolbar").offsetHeight + 12;
+}
+let lastScroll = 0;
+let programmatic = false, programmaticTimer = 0;
+function markProgrammatic() {
+  programmatic = true;
+  clearTimeout(programmaticTimer);
+  programmaticTimer = setTimeout(() => { programmatic = false; lastScroll = scrollY; }, 600);
+}
+function goTo(entry, fromOutline = false) {
+  if (!enabled[currentNodes.find(n => n.id === entry.lesson)?.kind]) resetFilters();
+  const state = ensureLesson(entry.lesson);
+  if (!state) return;
+  state.detail.open = true;
+  if (entry.event) { const event = $(entry.event); if (event) event.open = true; }
+  const target = $(entry.id);
+  if (!target) return;
+  if (target.tagName === "DETAILS") target.open = true;
+  const scene = target.closest("details.scene");
+  if (scene) scene.open = true;
+  if (mobileQuery.matches) { document.body.classList.add("chrome-hidden"); markProgrammatic(); }
+  const top = target.getBoundingClientRect().top + scrollY - chromeOffset();
+  scrollTo({ top: Math.max(0, top), behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  if (fromOutline && !wideOutline.matches) setOutline(false);
+}
+let spyFrame = 0;
+function updateSpy() {
+  spyFrame = 0;
+  const line = chromeOffset() + 8;
+  let active = null;
+  for (const element of document.querySelectorAll("[data-spy]")) {
+    if (element.offsetParent === null && element.getClientRects().length === 0) continue;
+    if (element.getBoundingClientRect().top <= line + 2) active = element;
+    else if (active) break;
+  }
+  const tree = $("outline-tree");
+  const links = tree.querySelectorAll(".ol-link");
+  let activeLink = null;
+  for (const link of links) {
+    const on = active && link.dataset.target === active.dataset.spy;
+    if (on) { link.setAttribute("aria-current", "location"); activeLink = link; }
+    else link.removeAttribute("aria-current");
+  }
+  if (activeLink) {
+    let group = activeLink.closest(".ol-group");
+    while (group) { if (group !== activeLink.closest(".ol-group")) group.classList.remove("collapsed"); group = group.parentElement?.closest(".ol-group"); }
+    const bounds = tree.getBoundingClientRect(), item = activeLink.getBoundingClientRect();
+    if (item.top < bounds.top + 8) tree.scrollTop += item.top - bounds.top - 40;
+    else if (item.bottom > bounds.bottom - 8) tree.scrollTop += item.bottom - bounds.bottom + 40;
   }
 }
-function applyFilters() {
-  let visible = 0;
-  for (const lesson of $("lessons").children) {
-    lesson.hidden = !enabled[lesson.dataset.kind];
-    if (!lesson.hidden) visible++;
-  }
-  const totalTypes = Object.keys(types).length;
-  const shownTypes = Object.values(enabled).filter(Boolean).length;
-  $("filter-label").textContent = "Loại bài · " + shownTypes + "/" + totalTypes;
-  $("visible-count").textContent = visible + "/" + currentNodes.length + " mục đang hiển thị";
-  $("empty-filter").hidden = visible > 0;
-  document.querySelector(".accent-button").disabled = visible === 0;
-}
-function resetFilters() {
-  for (const key of Object.keys(enabled)) enabled[key] = true;
-  savePreference("filters", enabled);
-  renderFilters();
-  applyFilters();
-}
-function closeFilters() {
-  $("filter-panel").hidden = true;
-  $("filter-button").setAttribute("aria-expanded", "false");
-}
+
+/* ───────────── Drawers ───────────── */
 function setDrawer(open) {
-  const mobile = matchMedia("(max-width: 850px)").matches;
+  const mobile = mobileQuery.matches;
   if (!mobile) open = false;
-  if (open) drawerReturnFocus = document.activeElement;
+  if (open) { setOutline(false); drawerReturnFocus = document.activeElement; }
   document.body.classList.toggle("drawer-open", open);
   $("open-nav").setAttribute("aria-expanded", String(open));
   $("sidebar").inert = mobile && !open;
-  $("main").inert = open;
-  $("topbar").inert = open;
-  document.querySelector(".stage-nav").inert = open;
+  for (const part of [$("main"), $("topbar"), document.querySelector(".stage-nav"), $("fab-outline")]) part.inert = open;
   if (open) {
     $("sidebar").setAttribute("role", "dialog");
     $("sidebar").setAttribute("aria-modal", "true");
@@ -718,6 +1558,26 @@ function setDrawer(open) {
     $("sidebar").removeAttribute("role");
     $("sidebar").removeAttribute("aria-modal");
     if (drawerReturnFocus && mobile) drawerReturnFocus.focus();
+    drawerReturnFocus = null;
+  }
+}
+function setOutline(open) {
+  const overlayMode = !wideOutline.matches;
+  if (!overlayMode) open = false;
+  if (open) { if (document.body.classList.contains("drawer-open")) setDrawer(false); drawerReturnFocus = document.activeElement; }
+  document.body.classList.toggle("outline-open", open);
+  $("fab-outline").setAttribute("aria-expanded", String(open));
+  $("outline").inert = overlayMode && !open;
+  for (const part of [$("main"), $("topbar"), document.querySelector(".stage-nav"), $("fab-outline")]) part.inert = open;
+  if (open) {
+    $("outline").setAttribute("role", "dialog");
+    $("outline").setAttribute("aria-modal", "true");
+    $("close-outline").focus();
+    updateSpy();
+  } else {
+    $("outline").removeAttribute("role");
+    $("outline").removeAttribute("aria-modal");
+    if (drawerReturnFocus && overlayMode) drawerReturnFocus.focus();
     drawerReturnFocus = null;
   }
 }
@@ -736,14 +1596,24 @@ function showStage(uid) {
   renderNavigation();
   renderHeading();
   renderLessons();
+  buildOutline();
   closeFilters();
   setDrawer(false);
+  setOutline(false);
+  document.body.classList.remove("chrome-hidden");
   const stages = stageLists[current.level];
   const index = stages.findIndex(s => s.uid === current.uid);
   $("previous").disabled = index === 0;
   $("next").disabled = index === stages.length - 1;
   $("stage-position").textContent = current.level + " · " + (index + 1) + " / " + stages.length;
+  document.title = "Chặng " + pad(current.number) + " · " + current.title + " — Harumii Kaiwa";
   window.scrollTo({ top: 0, behavior: "instant" });
+  const first = currentNodes.find(n => n.kind === "situations" || n.kind === "reading");
+  if (first && enabled[first.kind]) {
+    const state = ensureLesson(first.id);
+    if (state) state.detail.open = true;
+  }
+  updateSpy();
 }
 function themeButton() {
   const dark = document.documentElement.dataset.theme === "dark";
@@ -751,8 +1621,10 @@ function themeButton() {
   $("theme").setAttribute("aria-pressed", String(dark));
   $("theme").querySelector(".theme-glyph").textContent = dark ? "☀" : "☾";
   $("theme").querySelector(".theme-caption").textContent = dark ? "Sáng" : "Tối";
-  document.querySelector('meta[name="theme-color"]').content = dark ? "#101b18" : "#f7f8f5";
+  document.querySelector('meta[name="theme-color"]').content = dark ? "#0f1a17" : "#f3f6f1";
 }
+
+/* ───────────── Events ───────────── */
 $("theme").addEventListener("click", () => {
   const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = next;
@@ -763,7 +1635,7 @@ $("search").addEventListener("input", renderNavigation);
 $("filter-button").addEventListener("click", () => {
   const hidden = $("filter-panel").hidden;
   $("filter-panel").hidden = !hidden;
-  if (hidden) {
+  if (hidden && !mobileQuery.matches) {
     const footerHeight = document.querySelector(".stage-nav").getBoundingClientRect().height;
     const available = innerHeight - $("filter-button").getBoundingClientRect().bottom - footerHeight - 24;
     $("filter-panel").style.maxHeight = Math.max(100, available) + "px";
@@ -773,22 +1645,68 @@ $("filter-button").addEventListener("click", () => {
 });
 $("reset-filters").addEventListener("click", resetFilters);
 $("empty-reset").addEventListener("click", resetFilters);
+$("toggle-vi").addEventListener("click", () => setTranslation(document.documentElement.dataset.vi === "off"));
+$("ja-smaller").addEventListener("click", () => setJaScale(Number(getComputedStyle(document.documentElement).getPropertyValue("--ja-scale")) - .1));
+$("ja-bigger").addEventListener("click", () => setJaScale(Number(getComputedStyle(document.documentElement).getPropertyValue("--ja-scale")) + .1));
+$("expand-all").addEventListener("click", () => {
+  for (const node of currentNodes) if (enabled[node.kind]) { const state = ensureLesson(node.id); if (state) state.detail.open = true; }
+  for (const group of document.querySelectorAll(".ol-group.collapsed")) group.classList.remove("collapsed");
+  for (const element of document.querySelectorAll("details.event, details.scene")) element.open = true;
+  updateSpy();
+});
+$("collapse-all").addEventListener("click", () => {
+  for (const state of lessonStates.values()) state.detail.open = false;
+  for (const group of document.querySelectorAll("#outline-tree .ol-group")) if (group.querySelector(".ol-children")) group.classList.add("collapsed");
+  updateSpy();
+});
 document.addEventListener("click", event => {
   if (!event.target.closest(".filter-anchor")) closeFilters();
+  const bubble = event.target.closest(".bubble, .sentence");
+  if (bubble && document.documentElement.dataset.vi === "off" && !event.target.closest("a, button")) bubble.classList.toggle("reveal");
 });
 $("open-nav").addEventListener("click", () => setDrawer(true));
 $("close-nav").addEventListener("click", () => setDrawer(false));
-$("overlay").addEventListener("click", () => setDrawer(false));
+$("fab-outline").addEventListener("click", () => setOutline(true));
+$("close-outline").addEventListener("click", () => setOutline(false));
+$("overlay").addEventListener("click", () => { setDrawer(false); setOutline(false); });
 document.addEventListener("keydown", event => {
-  if (event.key === "Escape") { closeFilters(); setDrawer(false); }
-  if (event.key === "Tab" && document.body.classList.contains("drawer-open")) {
-    const focusable = [...$("sidebar").querySelectorAll('button,input,summary')].filter(el => el.getClientRects().length);
+  if (event.key === "Escape") { closeFilters(); setDrawer(false); setOutline(false); }
+  if (event.key === "Tab") {
+    const container = document.body.classList.contains("drawer-open") ? $("sidebar")
+      : document.body.classList.contains("outline-open") ? $("outline") : null;
+    if (!container) return;
+    const focusable = [...container.querySelectorAll("button,input,summary")].filter(el => el.getClientRects().length);
     const first = focusable[0], last = focusable[focusable.length - 1];
     if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
     if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   }
 });
-matchMedia("(max-width: 850px)").addEventListener("change", () => setDrawer(false));
+function syncViewport() {
+  setDrawer(false);
+  setOutline(false);
+  $("sidebar").inert = mobileQuery.matches;
+  $("outline").inert = !wideOutline.matches;
+  if (!mobileQuery.matches) $("sidebar").inert = false;
+  if (!mobileQuery.matches) document.body.classList.remove("chrome-hidden");
+  updateSpy();
+}
+mobileQuery.addEventListener("change", syncViewport);
+wideOutline.addEventListener("change", syncViewport);
+addEventListener("scroll", () => {
+  if (!spyFrame) spyFrame = requestAnimationFrame(updateSpy);
+  if (programmatic) {
+    clearTimeout(programmaticTimer);
+    programmaticTimer = setTimeout(() => { programmatic = false; lastScroll = scrollY; }, 250);
+    lastScroll = scrollY;
+    return;
+  }
+  if (!mobileQuery.matches) { lastScroll = scrollY; return; }
+  const delta = scrollY - lastScroll;
+  if (Math.abs(delta) < 8) return;
+  document.body.classList.toggle("chrome-hidden", delta > 0 && scrollY > 140);
+  lastScroll = scrollY;
+}, { passive: true });
+addEventListener("resize", () => { if (!spyFrame) spyFrame = requestAnimationFrame(updateSpy); });
 $("previous").addEventListener("click", () => {
   const list = stageLists[current.level], index = list.findIndex(s => s.uid === current.uid);
   if (index > 0) navigate(list[index - 1].uid);
@@ -797,14 +1715,30 @@ $("next").addEventListener("click", () => {
   const list = stageLists[current.level], index = list.findIndex(s => s.uid === current.uid);
   if (index < list.length - 1) navigate(list[index + 1].uid);
 });
-window.addEventListener("hashchange", () => {
+addEventListener("hashchange", () => {
   const id = readStageId();
   if (id !== current.uid) showStage(id);
 });
-document.querySelector(".sidebar-foot span").textContent = course.stages.length + " chặng · luyện nghe & nói";
+
+/* ───────────── Start ───────────── */
+if (course.pilot_stages?.length) {
+  $("pilot-links").hidden = false;
+  $("pilot-summary").textContent = "Chặng pilot (" + course.pilot_stages.length + ")";
+  for (const uid of course.pilot_stages) {
+    const stage = byId.get(uid);
+    if (!stage) continue;
+    const link = make("a", "", "Pilot " + stage.level + " · " + stage.title);
+    link.href = "#stage=" + uid;
+    $("pilot-list").append(link);
+  }
+}
+$("foot-count").textContent = course.stages.length + " chặng · luyện nghe & nói";
 $("version").textContent = "V" + course.version;
 $("nav-version").textContent = "V" + course.version;
+setTranslation(document.documentElement.dataset.vi !== "off");
+setJaScale(Number(getComputedStyle(document.documentElement).getPropertyValue("--ja-scale")) || 1);
 themeButton();
+syncViewport();
 showStage(readStageId());
 </script>
 </body>
