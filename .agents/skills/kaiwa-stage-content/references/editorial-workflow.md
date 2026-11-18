@@ -81,7 +81,7 @@ Hội thoại:
 
 - Rà từng cấu trúc trong hội thoại viết mới: mẫu nào chưa có trong danh sách ngữ pháp của chặng hoặc chưa hợp vị trí của chặng trong cấp thì giản hóa câu, không lặng lẽ để lại. Danh sách ngữ pháp phải phủ các cấu trúc thực sự được dùng.
 - Câu nguồn vừa sức là `core`; chỉ câu nguồn thực sự vượt cấp mới là `source_reference`, kèm danh sách ngữ pháp chứa đúng mẫu của câu đó. Không gắn nhãn tham khảo cho cả nhóm vì nó đến từ sách.
-- Kiến thức/từ/ngữ pháp có ích cho các tình huống đã viết; không phải danh sách trang trí. Từ vựng được trích ngược từ lời nói thực có, ở dạng từ điển.
+- Kiến thức/từ/ngữ pháp có ích cho các tình huống đã viết; không phải danh sách trang trí. Từ vựng phủ rộng theo chủ đề để người học tự nói, ở dạng từ điển, theo [kaiwa-topic-vocabulary](../../kaiwa-topic-vocabulary/SKILL.md); lời nói trong chặng là nguồn rà, không phải giới hạn.
 
 Nguồn và audio của pack:
 

@@ -54,9 +54,9 @@ Một bài shadowing có thể gồm câu đơn, hội thoại ngắn hoặc tha
 
 ## Từ vựng theo miền chủ đề và ôn tích lũy
 
-Soạn và rà hội thoại/câu luyện trước, rồi **trích ngược từ nội dung thực sự xuất hiện** để lập danh sách. Chọn từ/cụm hữu ích cho việc hiểu và nói, không thêm một ngân hàng từ độc lập để làm list dài. Có thể chia theo cụm tình huống hoặc bài nguồn. Tên riêng không nhất thiết phải biến thành thẻ từ.
+Danh sách từ **phủ rộng theo miền chủ đề** để người học có sẵn vốn từ tự nói về hoàn cảnh của mình, không chỉ nhắc lại hội thoại mẫu ([kaiwa-topic-vocabulary](../../kaiwa-topic-vocabulary/SKILL.md), chủ dự án chốt 2026-11-18). Soạn và rà hội thoại/câu luyện trước, dùng chúng để tìm từ còn thiếu, rồi mở rộng theo những gì người học cần gọi tên, làm, mô tả và định lượng trong chủ đề. Không nhồi cho đủ số: khoảng 40–100 mục mỗi chặng topic. Chia theo nhóm chủ đề hoặc cụm tình huống. Tên riêng không nhất thiết phải biến thành thẻ từ. Dải cấp: Sơ N5–N4, Trung N3–N2, Thượng N2–N1; vượt trần chỉ khi thiết yếu và có ghi chú. Từ được lặp tự do giữa các chặng.
 
-Động từ ở thể từ điển, tính từ ở dạng cơ bản: 行きます → 行く, 降りて → 降りる, 多かった → 多い; danh từ/cụm cố định dùng dạng mục từ phù hợp. Không sửa câu hội thoại thành thể từ điển theo list. Ghi một vài ví dụ xuất hiện và quyết định chuẩn hóa trong sổ biên tập, không cần mapping từng lần xuất hiện. `exposure` là tùy chọn; không buộc link từng từ ôn. Engine app tự lo bài tập/lịch ôn, người học được mở danh sách tự do.
+Động từ ở thể từ điển, tính từ ở dạng cơ bản: 行きます → 行く, 降りて → 降りる, 多かった → 多い; danh từ/cụm cố định dùng dạng mục từ phù hợp. Không sửa câu hội thoại thành thể từ điển theo list. Với từ lấy từ lời thoại, ghi một vài ví dụ xuất hiện và quyết định chuẩn hóa trong sổ biên tập, không cần mapping từng lần xuất hiện. `exposure` là tùy chọn; không buộc link từng từ ôn. Engine app tự lo bài tập/lịch ôn, người học được mở danh sách tự do.
 
 ## Chạy dài, phối hợp và nâng cấp
 

@@ -244,13 +244,17 @@ def compile_stage(draft, repo=None, notes=None):
                 raise ValueError("Vocabulary needs backward evidence in term order: " + node["id"])
             for entry in evidence:
                 term = entry["term"]
-                if not entry.get("dictionary_form_reviewed") or not entry.get("evidence"):
+                # V12: topic_extension terms widen the topic vocabulary and need no spoken evidence.
+                origin = entry.get("origin", "dialogue")
+                if origin not in ("dialogue", "topic_extension"):
+                    raise ValueError("Vocabulary origin must be dialogue or topic_extension: " + term)
+                if not entry.get("dictionary_form_reviewed") or (origin == "dialogue" and not entry.get("evidence")):
                     raise ValueError("Vocabulary needs dictionary-form review and spoken evidence: " + term)
                 if entry.get("kind") == "verb" and (term[-1] not in "うくぐすつぬぶむる" or re.search(r"ます$|ました$|ません$", term)):
                     raise ValueError("Vocabulary verb must be dictionary form: " + term)
                 if entry.get("kind") == "adjective_i" and not term.endswith("い"):
                     raise ValueError("Vocabulary i-adjective must be base form: " + term)
-                for occurrence in entry["evidence"]:
+                for occurrence in entry.get("evidence", []):
                     uid = occurrence["utterance_id"]
                     if uid not in spoken or not occurrence["surface"] or occurrence["surface"] not in utterances[uid]["ja"]:
                         raise ValueError("Vocabulary evidence must occur in an actual spoken example: " + term)

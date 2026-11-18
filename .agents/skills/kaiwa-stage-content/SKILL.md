@@ -22,7 +22,7 @@ V6 soạn từ theo topic, ngữ pháp nằm trong bài giảng chặng. Bài Sp
 ## Phạm vi sản xuất nội dung V5
 
 - Chỉ tạo dữ liệu nội dung. App đã có học từ vựng, shadowing toàn hội thoại, shadowing đổi vai và Live Kaiwa AI.
-- Đầu ra phải theo [hợp đồng trao đổi](references/harumii-exchange.md): từ vựng chỉ list Nhật; ngữ pháp gồm level N5–N1 và tên Minna/bunpou để admin pick; mọi câu luyện Nhật có nghĩa Việt. App tự furigana và TTS, gói app chứa chỉ dẫn tra CD riêng cho admin, không chứa file âm thanh hoặc ID DB. Phạm vi chỉ ở repo lộ trình; không tiếp tục làm feature/DB/code Harumi.
+- Đầu ra phải theo [hợp đồng trao đổi](references/harumii-exchange.md): từ vựng chỉ list Nhật, phủ rộng theo chủ đề theo [kaiwa-topic-vocabulary](../kaiwa-topic-vocabulary/SKILL.md); ngữ pháp gồm level N5–N1 và tên Minna/bunpou để admin pick; mọi câu luyện Nhật có nghĩa Việt. App tự furigana và TTS, gói app chứa chỉ dẫn tra CD riêng cho admin, không chứa file âm thanh hoặc ID DB. Phạm vi chỉ ở repo lộ trình; không tiếp tục làm feature/DB/code Harumi.
 - Không tạo bài kiểm tra người học, điểm số, điều kiện đạt/mở khóa, thời lượng bắt buộc hay kịch bản điều khiển engine.
 - Thứ tự node là đường đi gợi ý trên bản đồ học, nên phải được sắp có chủ ý. Người học vẫn chọn tự do: một người mở thẳng một tình huống phải hiểu được bối cảnh và quan hệ từ chính tình huống đó; không biến quan hệ kiến thức thành khóa truy cập.
 - Node Live (challenge, free talk) là phần tùy chọn; app có thể tắt chúng với người dùng không đủ gói. Các node học còn lại phải đủ nghĩa khi không có Live.

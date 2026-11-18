@@ -100,6 +100,26 @@ class CanonicalLifecycle(unittest.TestCase):
         self.put("source-map.json", audit)
         self.assertIn("actual spoken example", self.cli("validate", self.run, ok=False))
 
+    def test_topic_extension_vocabulary_needs_no_spoken_evidence(self):
+        node = next(n for n in self.data["nodes"] if n["type"] == "vocabulary")
+        node["data"]["terms_ja"] = ["メニュー", "乗車券"]
+        self.put("harumii-stage.json", self.data)
+        audit = json.loads((self.draft / "source-map.json").read_text(encoding="utf-8"))
+        audit["vocabulary_evidence"]["v01"].append({"term": "乗車券", "kind": "noun", "dictionary_form_reviewed": True,
+                                                    "origin": "topic_extension"})
+        self.put("source-map.json", audit)
+        self.cli("validate", self.run)
+
+    def test_topic_extension_vocabulary_still_needs_dictionary_form(self):
+        node = next(n for n in self.data["nodes"] if n["type"] == "vocabulary")
+        node["data"]["terms_ja"] = ["メニュー", "行きます"]
+        self.put("harumii-stage.json", self.data)
+        audit = json.loads((self.draft / "source-map.json").read_text(encoding="utf-8"))
+        audit["vocabulary_evidence"]["v01"].append({"term": "行きます", "kind": "verb", "dictionary_form_reviewed": True,
+                                                    "origin": "topic_extension"})
+        self.put("source-map.json", audit)
+        self.assertIn("dictionary form", self.cli("validate", self.run, ok=False))
+
     def test_speak_shadowing_can_reference_a_full_dialogue(self):
         node = next(n for n in self.data["nodes"] if n["type"] == "shadowing")
         node["data"]["items"] = [{"id": "source-dialogue", "kind": "dialogue_ref", "situation_node_id": "s01"}]

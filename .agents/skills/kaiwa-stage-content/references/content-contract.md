@@ -154,7 +154,7 @@ Hai vai phải thực sự có lời nói. Sự kiện nhiều người được
 ]}
 ```
 
-`scope` chọn theo nhóm nội dung. Danh sách trích ngược từ hội thoại/câu luyện thực đã soạn, chọn từ hữu ích; động từ dạng từ điển, tính từ dạng cơ bản. Chỉ cần từ Nhật, không bắt soạn reading/nghĩa/ví dụ từ. `exposure` và ghi chú tái sử dụng là tùy chọn, không bắt tạo link từng từ. Gói app chỉ xuất `terms_ja`; dấu vết trích và chuẩn hóa ở source-map. Không tạo bài vocabulary engine hoặc ngưỡng đạt.
+`scope` chọn theo nhóm nội dung. Danh sách phủ rộng theo chủ đề để người học tự nói, theo [kaiwa-topic-vocabulary](../../kaiwa-topic-vocabulary/SKILL.md); hội thoại/câu luyện đã soạn là nguồn rà, không phải giới hạn. Động từ dạng từ điển, tính từ dạng cơ bản. Canonical chỉ cần từ Nhật; reading và nghĩa Việt soạn ở tầng biên tập của skill từ vựng, không bắt soạn ví dụ từ. `exposure` và ghi chú tái sử dụng là tùy chọn, không bắt tạo link từng từ. Gói app chỉ xuất `terms_ja`; nguồn gốc, dấu vết và chuẩn hóa ở source-map. Không tạo bài vocabulary engine hoặc ngưỡng đạt.
 
 ```json
 {"id":"g01","items":[
@@ -174,13 +174,14 @@ Chỉ cần tên và tham chiếu. Nếu có metadata bunpou phù hợp thì dù
 {"nodes": {"k02": {"authorship": "source_adaptation", "source_refs": ["src-b11"],
                    "source_scope": "Toàn bài: hội thoại mở đầu, dạng lịch sự, đủ tám ví dụ; thêm ba câu ứng dụng viết mới"}},
  "vocabulary_evidence": {"v01": [{"term": "乗り換える", "kind": "verb", "dictionary_form_reviewed": true,
-                                  "evidence": [{"utterance_id": "k01-ex02", "surface": "乗り換えます"}]}]},
+                                  "origin": "dialogue", "evidence": [{"utterance_id": "k01-ex02", "surface": "乗り換えます"}]},
+                                 {"term": "乗車券", "kind": "noun", "dictionary_form_reviewed": true, "origin": "topic_extension"}]},
  "sequence_units": {"k02": [{"book_id": "B11", "unit": "u-part1-01"}],
                     "sh02": [{"book_id": "B11", "unit": "u-part1-01"}]}}
 ```
 
 - `nodes` có đúng một mục cho mỗi node học (không gồm node Live): nhãn nguồn chung của node và nguồn đã đọc. Nhãn node không thay nhãn từng câu trong canonical.
-- `vocabulary_evidence` liệt kê từ theo đúng thứ tự `terms_ja` của từng danh sách, mỗi từ có ít nhất một chỗ xuất hiện thật trong lời nói của chặng.
+- `vocabulary_evidence` liệt kê từ theo đúng thứ tự `terms_ja` của từng danh sách. Mục `origin: dialogue` (mặc định khi không ghi) có ít nhất một chỗ xuất hiện thật trong lời nói của chặng. Mục `origin: topic_extension` là từ thêm để phủ chủ đề, không cần `evidence` nhưng vẫn qua kiểm dạng từ điển.
 - `sequence_units` ghi book_id và anchor đã chọn cho node. `audio_packs` liên kết utterance ID với ấn bản, bài/cảnh và track. Xem [cách ghi và ví dụ](source-sequence.md).
 - Có thể thêm ghi chú biên tập tự do (ví dụ cân nhắc gối đầu); helper không đọc chúng.
 

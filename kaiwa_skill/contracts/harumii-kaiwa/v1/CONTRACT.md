@@ -42,7 +42,7 @@ Schema version 1.0.0 độc lập với curriculum V5 và hợp đồng biên t�
 
 `vocabulary.data.terms_ja` **chỉ là mảng chuỗi Nhật**: ví dụ `["会議室", "予約", "変更"]`. Không cần nghĩa, reading, Hán Việt, ảnh, audio, example hoặc ID dictionary. Cắt khoảng trắng hai đầu, giữ dạng từ người biên soạn đã chọn; không tự gộp đồng âm/đồng nghĩa khác cách dùng. Chặn trùng chuỗi trong cùng danh sách; từ xuất hiện lại ở chặng/bài khác có thể là ôn có chủ ý.
 
-Từ được trích ngược từ hội thoại/câu luyện thực có trong chặng; động từ dùng thể từ điển, tính từ dùng dạng cơ bản. Không sửa lời thoại theo mục từ. Dấu vết surface → lemma và nơi xuất hiện lưu ở metadata biên tập; app vẫn chỉ cần list Nhật.
+Từ vựng phủ rộng theo chủ đề của chặng để người học có sẵn vốn từ tự nói về hoàn cảnh của mình, theo skill `kaiwa-topic-vocabulary` (chủ dự án chốt 2026-11-18). Hội thoại/câu luyện trong chặng là nguồn rà, không phải giới hạn: được thêm từ không xuất hiện trong lời thoại khi người học cần để nói về chủ đề. Động từ dùng thể từ điển, tính từ dùng dạng cơ bản. Không sửa lời thoại theo mục từ. Dải cấp: Sơ N5–N4, Trung N3–N2, Thượng N2–N1; vượt trần chỉ khi thiết yếu và có ghi chú. Reading, nghĩa Việt, cấp ước lượng, nguồn gốc (`dialogue`/`topic_extension`) và dấu vết surface → lemma lưu ở metadata biên tập; app vẫn chỉ cần list Nhật.
 
 Harumii dùng list này để tạo draft danh sách từ qua hệ thống sẵn có; enrichment và xác nhận thuộc app. Lưu binding của node/list và từng term ở phía app. Import lại không sinh lại list nếu dữ liệu không đổi; thay list tạo revision/bản nháp mới, không xóa SRS hoặc danh sách người học đã lưu.
 

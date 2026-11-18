@@ -11,3 +11,5 @@ Lời bài học chỉ viết trong canonical `harumii-stage.json`; các MD và 
 Khi tiếp một task dở, kiểm status/owner và đọc next_action. Chỉ resume/recover sau khi tác nhân cũ đã dừng; không xóa lock hoặc reset draft. Giữ ID/revision/source pins và ưu tiên chất lượng. Không tự chạy cả 289 chặng khi chỉ được giao pilot hoặc một chặng.
 
 Với lộ trình V6, dùng .agents/skills/kaiwa-roadmap/SKILL.md. Khi chọn bài Speak Japanese hoặc pack, dùng .agents/skills/kaiwa-source-assignment/SKILL.md. Xem checkpoint và policy trong kaiwa_skill/planning/v6. Bản 6.0 dành cho pilot; chờ chủ dự án duyệt trước V6.1.
+
+Với danh sách từ vựng chặng topic (V12), dùng .agents/skills/kaiwa-topic-vocabulary/SKILL.md.

@@ -5,7 +5,7 @@ description: Biên soạn, sửa và nghiệm thu hội thoại mẫu V11 theo t
 
 # Hội thoại mẫu cho chặng topic
 
-Mỗi tình huống V10 nhận một hội thoại có thể mở riêng, nghe toàn bộ, luyện từng câu và đổi vai. Sản phẩm của lượt này là nội dung nói. Bám UID, sự kiện, nhánh và trình tự V10. Các nghiệp vụ làm video, từ vựng, challenge và free talk có luồng riêng.
+Mỗi tình huống V10 nhận một hội thoại có thể mở riêng, nghe toàn bộ, luyện từng câu và đổi vai. Sản phẩm của lượt này là nội dung nói. Bám UID, sự kiện, nhánh và trình tự V10. Các nghiệp vụ làm video, từ vựng (skill `kaiwa-topic-vocabulary`), challenge và free talk có luồng riêng.
 
 ## Chuẩn bị cho từng chặng
 
