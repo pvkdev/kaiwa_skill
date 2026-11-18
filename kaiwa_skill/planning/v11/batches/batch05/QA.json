@@ -1,0 +1,173 @@
+{
+  "state": "completed",
+  "checked_at": "2026-11-18T14:13:43.084398+09:00",
+  "worker_model": "gpt-6.2-sol",
+  "reasoning_effort": "high",
+  "content_state": "authored_self_reviewed",
+  "independent_review": "pending",
+  "input_baseline_commit": "27af559d56f796e93a8c91d32e17c031330c84e6",
+  "scope_audit": {
+    "levels": {
+      "Trung": {
+        "counts": {
+          "book_refs": 141,
+          "web_refs": 142,
+          "stages": 44,
+          "scenes": 972,
+          "events": 208,
+          "turns": 4360
+        },
+        "book_ids": [
+          "B02",
+          "B03",
+          "B04",
+          "B05",
+          "B06",
+          "B07",
+          "B08",
+          "B09",
+          "B10",
+          "B11",
+          "B12",
+          "B15",
+          "B16",
+          "B17",
+          "B18",
+          "B21",
+          "B22",
+          "B23",
+          "B24",
+          "B25",
+          "B26",
+          "B27"
+        ]
+      }
+    },
+    "preserved_previous_drafts": 249,
+    "errors": []
+  },
+  "additional_audit": {
+    "workers": {
+      "a": {
+        "stages": 15,
+        "scenes": 337,
+        "turns": 1707
+      },
+      "b": {
+        "stages": 15,
+        "scenes": 340,
+        "turns": 1461
+      },
+      "c": {
+        "stages": 14,
+        "scenes": 295,
+        "turns": 1192
+      }
+    },
+    "unique_scene_ids": 972,
+    "unique_turn_ids": 4360,
+    "learner_metadata_leaks": [],
+    "book_code_regex_false_positives": "B12 in T-131 is a parking-space label, verified in context."
+  },
+  "export_audit": {
+    "new_stages": 44,
+    "new_dialogues": 972,
+    "previous_drafts_preserved": 249,
+    "authored_stages": 293,
+    "authored_dialogues": 6004,
+    "authored_turns": 26005,
+    "independent_review": {
+      "completed": 249,
+      "pending": 44
+    },
+    "embedded_json_exact": true,
+    "pages_matches_html": true,
+    "roadmap_and_prior_content_preserved": true,
+    "authored_by_level": {
+      "Sơ": 81,
+      "Trung": 148,
+      "Thượng": 64
+    }
+  },
+  "browser_audit": [
+    {
+      "width": 1280,
+      "stages": 293,
+      "scenes": 6004,
+      "turns": 26005,
+      "maxScrollWidth": 1265
+    },
+    {
+      "width": 390,
+      "stages": 293,
+      "scenes": 6004,
+      "turns": 26005,
+      "maxScrollWidth": 390
+    }
+  ],
+  "worker_branch_review": {
+    "a": 196,
+    "b": 129,
+    "c": 102
+  },
+  "worker_editing_frozen": true,
+  "root_language_review": {
+    "scope": "Targeted samples and rereading affected branches; not an independent full review of 972 dialogues. Full per-scene and branch self-review performed by assigned authors.",
+    "sampled_stages": [
+      "T-105",
+      "T-107",
+      "T-109",
+      "T-113",
+      "T-117",
+      "T-118",
+      "T-119",
+      "T-125",
+      "T-129",
+      "T-131",
+      "T-134",
+      "T-145",
+      "T-146",
+      "T-147",
+      "T-148"
+    ],
+    "corrections": [
+      "T-107 S018: natural Vietnamese and asking for progress rather than a result not yet available.",
+      "T-109 S014: clarify which office received the head-office address.",
+      "T-113 S015: retain apology for contacting a former colleague after departure.",
+      "T-131 S013/S025: natural context and Vietnamese description of repair recheck.",
+      "T-134: address actual female traveler consistently; reread five branches.",
+      "T-148 S020: unambiguous proactive safe callback before 16:30.",
+      "T-129: replace US card-policy reference with Japanese SMBC material, keep fictional provider amounts scoped."
+    ]
+  },
+  "known_brief_anomalies": [
+    {
+      "stage": "T-113",
+      "edge": "S015 -> S016",
+      "issue": "V10 edge goes from after the final workday to before the departure date is agreed.",
+      "handling": "Explicit flashback in S016 context; E04 stays in that earlier time through the later decision. Preserve existing UID, order and edge; log in stage RESEARCH.md.",
+      "independent_review": "pending"
+    }
+  ],
+  "source_read_limits": [
+    "T-134: Metro FAQ returned 502; official search excerpt and accessible Metro guidance/PDF distinguished in RESEARCH.md.",
+    "T-138: blocked HTML replaced with an accessible government PDF actually read.",
+    "T-139: outdoor photography FAQ available as official search excerpt; not applied as policy of fictional studio.",
+    "Other provider access limits and hypothetical prices, schedules and conditions are recorded per stage in RESEARCH.md; no claim that every linked page was fully accessible."
+  ],
+  "output_sha256": {
+    "kaiwa_skill/planning/v11/BUILD.json": "6326c6609071875bc9ae0cf1f487fa235cc90f6652e07131c32f6604d285dec5",
+    "kaiwa_skill/planning/v11/learner.json": "90387a096ab04a479ec3ff714e79f84efc0f763251a43d115fb9272508b92e1f",
+    "kaiwa_skill/planning/v11/ROADMAP.html": "fb47e43bd9bf6e55556d8cf30acc82782deb1205e52ec01c2d37310ef0e794ee",
+    "docs/index.html": "fb47e43bd9bf6e55556d8cf30acc82782deb1205e52ec01c2d37310ef0e794ee"
+  },
+  "final_integration_audit": {
+    "baseline_scope_files": 142,
+    "unexpected_paths": [],
+    "all_293_draft_hashes_current": true,
+    "all_26005_turn_ids_unique": true,
+    "output_hashes_current": true,
+    "staged_check": "pass",
+    "unstaged_or_untracked_outside_scope": false
+  }
+}

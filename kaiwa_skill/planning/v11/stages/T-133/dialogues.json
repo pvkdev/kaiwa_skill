@@ -1,0 +1,1351 @@
+{
+  "stage_uid": "dce2f6d7-7425-50d4-aedc-6b69ce635bc6",
+  "admin_sources": {
+    "report": {
+      "kind": "book",
+      "book_id": "B03",
+      "title": "しごとの日本語 ビジネスマナー編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 ビジネスマナー編/chapters/20-Unit18-報告・連絡・相談.md",
+      "start_line": 23,
+      "end_line": 40,
+      "use_vi": "Báo trạng thái cụ thể, liên lạc trước khi trễ, đưa trách nhiệm và việc chờ vào báo cáo nội bộ."
+    },
+    "appointment": {
+      "kind": "book",
+      "book_id": "B10",
+      "title": "にほんごで働く！ビジネス日本語30時間",
+      "path": "kaiwa_skill/knowledge/にほんごで働く！ビジネス日本語30時間/chapters/07-アポイントをとる.md",
+      "start_line": 26,
+      "end_line": 45,
+      "use_vi": "Đề xuất giờ cho đối phương và dùng sắc thái lịch sự trong việc hẹn gặp."
+    },
+    "calling": {
+      "kind": "book",
+      "book_id": "B21",
+      "title": "日本語でビジネス会話 ― 中級編 ― 本文冊",
+      "path": "kaiwa_skill/knowledge/日本語でビジネス会話 中級編 本文冊/chapters/11-renraku.md",
+      "start_line": 36,
+      "end_line": 47,
+      "use_vi": "Vào việc qua điện thoại bằng tên, bên liên hệ và lý do đề xuất đổi."
+    },
+    "inquiry": {
+      "kind": "book",
+      "book_id": "B04",
+      "title": "しごとの日本語 電話応対 基礎編",
+      "path": "kaiwa_skill/knowledge/しごとの日本語 電話応対 基礎編/chapters/24-Unit23-問い合わせをする.md",
+      "start_line": 18,
+      "end_line": 37,
+      "use_vi": "Xin phép hỏi ngắn và tìm đúng đầu mối nếu đang sai nơi."
+    },
+    "ex": {
+      "kind": "web",
+      "title": "スマートEX 予約の変更について",
+      "url": "https://smart-ex.jp/reservation/change/",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc quy trình đổi trước giờ và các nhánh tùy đã lấy vé/vào cổng, loại sản phẩm. S003 kiểm vé thực của nhân vật trước khi đổi, không khẳng định phí."
+    },
+    "delay": {
+      "kind": "web",
+      "title": "スマートEX 遅延発生時の予約・変更について",
+      "url": "https://smart-ex.jp/reservation/guide/delay_reserve/",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc thời điểm dự kiến biến động và nguồn bảng ga/website JR; S009 tách thời điểm tàu/gặp, không lấy mốc hiện hành ngoài đời."
+    },
+    "hotel": {
+      "kind": "web",
+      "title": "東横INN よくあるご質問 チェックイン",
+      "url": "https://www.toyoko-inn.com/faq/content?cd=12&facility_cd=toyoko-inn-qa&h=&intent_cd=inquiry.checkin_start_time&lang=ja&member_id=a3a9982a-1557-64be-f535-662efe7f86a2&sub_intent_cd=",
+      "accessed": "2026-11-18",
+      "use_vi": "Đọc trang chọn giờ và ví dụ có thể hỏi gửi đồ trước giờ nhận phòng tùy cơ sở. S014 lễ tân khách sạn giả định xác nhận giữ vali, việc dùng bàn vẫn phải hỏi, không gán cho mọi chi nhánh."
+    }
+  },
+  "dialogues": [
+    {
+      "situation_uid": "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b",
+      "event_id": "E01",
+      "context_vi": "Linh sắp đi công tác Nagoya và nhận chỉ đạo từ trưởng nhóm. Cô muốn biết kết quả cần đạt khi gặp đối tác và ai chịu trách nhiệm phía họ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Trưởng nhóm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b-u01",
+          "speaker_id": "a",
+          "ja": "名古屋への出張の件ですが、先方と何を確認してくればよろしいですか。",
+          "vi": "Về chuyến công tác Nagoya, em cần xác nhận những gì với phía đối tác ạ?"
+        },
+        {
+          "id": "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b-u02",
+          "speaker_id": "b",
+          "ja": "新しい部品の試作品を見てもらって、評価をお願いできるか確認してきて。窓口は購買の森田さんだよ。",
+          "vi": "Em mang mẫu linh kiện mới cho họ xem và hỏi họ có nhận đánh giá giúp được không nhé. Đầu mối là anh Morita bên thu mua."
+        },
+        {
+          "id": "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。森田さんのほかに、技術の担当の方にも来ていただいたほうがいいでしょうか。",
+          "vi": "Em hiểu rồi. Ngoài anh Morita, mình có nên nhờ cả người phụ trách kỹ thuật tham gia không ạ?"
+        },
+        {
+          "id": "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b-u04",
+          "speaker_id": "b",
+          "ja": "そうだね。森田さんに技術の方も同席できるか聞いて。価格はそこで決めずに、質問があれば持ち帰ってね。",
+          "vi": "Ừ. Em hỏi anh Morita xem bên kỹ thuật có dự được không. Giá thì chưa quyết ở đó. Có câu hỏi gì thì mang về công ty nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report",
+          "appointment"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b-u01": {
+            "kind": "original_extension"
+          },
+          "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b-u02": {
+            "kind": "original_extension"
+          },
+          "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b-u03": {
+            "kind": "original_extension"
+          },
+          "25fc5ce2-0ba7-5d61-ae11-da2aaeb8559b-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "419be06a-36ac-5a7d-9689-1df0a2187fb0",
+      "event_id": "E01",
+      "context_vi": "Lịch với đối tác ở Nagoya là 14 giờ thứ Năm. Linh tìm tàu chiều đi và chiều về nhưng muốn biết giờ nào có thể linh động.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Trưởng nhóm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "419be06a-36ac-5a7d-9689-1df0a2187fb0-u01",
+          "speaker_id": "a",
+          "ja": "木曜は先方と十四時のお約束ですね。行きは名古屋に十三時四十分に着く案ですが、もう少し早い便も見ておきますか。",
+          "vi": "Thứ Năm mình hẹn đối tác lúc 14 giờ nhỉ. Chiều đi em đang tính tới Nagoya lúc 13 giờ 40, có cần xem chuyến tới sớm hơn không ạ?"
+        },
+        {
+          "id": "419be06a-36ac-5a7d-9689-1df0a2187fb0-u02",
+          "speaker_id": "b",
+          "ja": "十四時は動かせないね。先方に行く前に少し話したいことがあるから、集合時間は確認してから決めよう。",
+          "vi": "14 giờ thì không đổi được. Anh có việc muốn trao đổi trước khi đến chỗ họ, nên mình quyết giờ tập trung sau khi kiểm lại nhé."
+        },
+        {
+          "id": "419be06a-36ac-5a7d-9689-1df0a2187fb0-u03",
+          "speaker_id": "a",
+          "ja": "承知しました。帰りの便は、現地での予定に合わせて決めてもいいですか。",
+          "vi": "Em rõ rồi ạ. Chuyến về em tính theo lịch ở Nagoya được không ạ?"
+        },
+        {
+          "id": "419be06a-36ac-5a7d-9689-1df0a2187fb0-u04",
+          "speaker_id": "b",
+          "ja": "帰りは十七時以降なら調整していいよ。訪問が延びそうなら、変更する前に知らせて。",
+          "vi": "Chuyến về từ 17 giờ trở đi có thể điều chỉnh. Nếu buổi gặp có vẻ kéo dài, báo anh trước khi đổi nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "appointment",
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "419be06a-36ac-5a7d-9689-1df0a2187fb0-u01": {
+            "kind": "original_extension"
+          },
+          "419be06a-36ac-5a7d-9689-1df0a2187fb0-u02": {
+            "kind": "original_extension"
+          },
+          "419be06a-36ac-5a7d-9689-1df0a2187fb0-u03": {
+            "kind": "original_extension"
+          },
+          "419be06a-36ac-5a7d-9689-1df0a2187fb0-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "0903bf0b-4a97-53d4-95eb-37e4eb8aa019",
+      "event_id": "E01",
+      "context_vi": "Trưởng nhóm cần có mặt ở sảnh tòa đối tác lúc 13 giờ 15 để trao đổi trước cuộc hẹn. Linh đang xem chiều đi đã đặt trên Smart EX, còn trước giờ xuất phát và chưa qua cổng hoặc lấy vé.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Trưởng nhóm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "0903bf0b-4a97-53d4-95eb-37e4eb8aa019-u01",
+          "speaker_id": "b",
+          "ja": "木曜は先方のビルのロビーに十三時十五分に集合しよう。十四時のお約束の前に、説明の順番を確認したい。",
+          "vi": "Thứ Năm mình tập trung ở sảnh tòa nhà của đối tác lúc 13 giờ 15 nhé. Anh muốn kiểm thứ tự trình bày trước lịch hẹn 14 giờ."
+        },
+        {
+          "id": "0903bf0b-4a97-53d4-95eb-37e4eb8aa019-u02",
+          "speaker_id": "a",
+          "ja": "それなら十三時四十分に名古屋着では間に合いませんね。十二時四十分に着く新幹線に変更できるか、予約を確認します。",
+          "vi": "Vậy 13 giờ 40 mới tới ga Nagoya thì không kịp. Em kiểm xem có đổi sang Shinkansen đến lúc 12 giờ 40 được không ạ."
+        },
+        {
+          "id": "0903bf0b-4a97-53d4-95eb-37e4eb8aa019-u03",
+          "speaker_id": "b",
+          "ja": "うん、行きだけ早めて。帰りは十七時以降の今の案でいいよ。",
+          "vi": "Ừ, chỉ đổi chiều đi sớm hơn. Chiều về cứ theo phương án sau 17 giờ đang tính."
+        },
+        {
+          "id": "0903bf0b-4a97-53d4-95eb-37e4eb8aa019-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。空席と変更条件を見て、取れたら到着時刻を共有します。",
+          "vi": "Em hiểu rồi. Em xem ghế trống và điều kiện đổi. Đặt được, em sẽ báo giờ đến ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "appointment",
+          "ex"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "0903bf0b-4a97-53d4-95eb-37e4eb8aa019-u01": {
+            "kind": "original_extension"
+          },
+          "0903bf0b-4a97-53d4-95eb-37e4eb8aa019-u02": {
+            "kind": "original_extension"
+          },
+          "0903bf0b-4a97-53d4-95eb-37e4eb8aa019-u03": {
+            "kind": "original_extension"
+          },
+          "0903bf0b-4a97-53d4-95eb-37e4eb8aa019-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "c43c6423-b471-5e15-ae4c-14a6ae0cbb49",
+      "event_id": "E01",
+      "context_vi": "Lịch làm sáng hôm sau có thể đổi địa điểm. Linh cân nhắc chuyển khách sạn, chưa hủy chỗ đang có và muốn biết ai duyệt ở công ty mình.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Trưởng nhóm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "c43c6423-b471-5e15-ae4c-14a6ae0cbb49-u01",
+          "speaker_id": "a",
+          "ja": "翌朝の訪問先が変わった場合、ホテルも変えたほうがいいかもしれません。変更はどなたの承認が必要ですか。",
+          "vi": "Nếu điểm gặp sáng hôm sau thay đổi, có lẽ nên đổi khách sạn. Việc đổi cần ai duyệt ạ?"
+        },
+        {
+          "id": "c43c6423-b471-5e15-ae4c-14a6ae0cbb49-u02",
+          "speaker_id": "b",
+          "ja": "この出張の宿泊先は僕が承認するよ。予約の変更自体は、承認が出てから総務の出張担当に頼んで。",
+          "vi": "Chỗ ở chuyến này do anh duyệt. Sau khi có duyệt, em nhờ người phụ trách công tác bên hành chính thực hiện việc đổi nhé."
+        },
+        {
+          "id": "c43c6423-b471-5e15-ae4c-14a6ae0cbb49-u03",
+          "speaker_id": "a",
+          "ja": "今の予約のキャンセル料と、移った場合の宿泊費を確認してから、相談すればいいですか。",
+          "vi": "Em kiểm phí hủy chỗ hiện tại và tiền phòng nếu chuyển rồi mới xin ý kiến anh đúng không ạ?"
+        },
+        {
+          "id": "c43c6423-b471-5e15-ae4c-14a6ae0cbb49-u04",
+          "speaker_id": "b",
+          "ja": "うん、両方を教えて。返事を出すまでは、今の予約を取り消さないでね。",
+          "vi": "Ừ, báo anh cả hai khoản. Em đợi anh trả lời rồi mới hủy chỗ đang có nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "c43c6423-b471-5e15-ae4c-14a6ae0cbb49-u01": {
+            "kind": "original_extension"
+          },
+          "c43c6423-b471-5e15-ae4c-14a6ae0cbb49-u02": {
+            "kind": "original_extension"
+          },
+          "c43c6423-b471-5e15-ae4c-14a6ae0cbb49-u03": {
+            "kind": "original_extension"
+          },
+          "c43c6423-b471-5e15-ae4c-14a6ae0cbb49-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "ae414ecc-fda1-55bc-b2ab-0952e344e277",
+      "event_id": "E02",
+      "context_vi": "Linh gọi trước cho đối tác để kiểm địa chỉ trong email và lối vào. Điểm hẹn là tòa nhà giả định Aoba Chūō ở khu Meieki gần ga Nagoya.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Đầu mối phía đối tác",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "ae414ecc-fda1-55bc-b2ab-0952e344e277-u01",
+          "speaker_id": "a",
+          "ja": "水城企画のリンと申します。木曜に伺う件で、メールにあった名駅三丁目の青葉中央ビルでよろしいでしょうか。",
+          "vi": "Tôi là Linh của Mizuki Kikaku. Về buổi gặp thứ Năm, điểm đến là tòa Aoba Chūō ở Meieki 3-chōme ghi trong email, đúng không ạ?"
+        },
+        {
+          "id": "ae414ecc-fda1-55bc-b2ab-0952e344e277-u02",
+          "speaker_id": "c",
+          "ja": "はい、名古屋駅側の青葉中央ビルです。大通りに面した正面入口からお入りください。",
+          "vi": "Vâng, là tòa Aoba Chūō phía ga Nagoya. Chị vào cửa chính hướng ra đường lớn nhé."
+        },
+        {
+          "id": "ae414ecc-fda1-55bc-b2ab-0952e344e277-u03",
+          "speaker_id": "a",
+          "ja": "正面入口ですね。着きましたら、一階の受付で会社名をお伝えすればよろしいですか。",
+          "vi": "Cửa chính nhỉ. Khi đến tôi báo tên công ty ở lễ tân tầng một được không ạ?"
+        },
+        {
+          "id": "ae414ecc-fda1-55bc-b2ab-0952e344e277-u04",
+          "speaker_id": "c",
+          "ja": "はい、お願いいたします。受付では、購買部の森田宛てとお伝えください。",
+          "vi": "Vâng, nhờ chị. Xin nói người chị đến gặp là Morita ở bộ phận thu mua ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "calling",
+          "inquiry"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "ae414ecc-fda1-55bc-b2ab-0952e344e277-u01": {
+            "kind": "original_extension"
+          },
+          "ae414ecc-fda1-55bc-b2ab-0952e344e277-u02": {
+            "kind": "original_extension"
+          },
+          "ae414ecc-fda1-55bc-b2ab-0952e344e277-u03": {
+            "kind": "original_extension"
+          },
+          "ae414ecc-fda1-55bc-b2ab-0952e344e277-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054",
+      "event_id": "E02",
+      "context_vi": "Sau khi nghe hướng dẫn, Linh xem bản đồ thấy có hai tòa cùng tên Aoba Chūō, một ở khu Meieki và một ở Sakae. Cô hỏi kỹ địa chỉ, nơi lễ tân và tầng gặp.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Đầu mối phía đối tác",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054-u01",
+          "speaker_id": "a",
+          "ja": "青葉中央ビルを検索すると、名駅と栄の両方に出てきました。伺うのは、名駅三丁目のほうで合っていますか。",
+          "vi": "Tôi tra Aoba Chūō thấy có cả ở Meieki và Sakae. Tôi đến tòa bên Meieki 3-chōme đúng không ạ?"
+        },
+        {
+          "id": "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054-u02",
+          "speaker_id": "c",
+          "ja": "はい、メールに住所がある名駅三丁目のほうです。名古屋駅に近い建物です。",
+          "vi": "Vâng, ở Meieki 3-chōme theo địa chỉ trong email. Là tòa gần ga Nagoya ạ."
+        },
+        {
+          "id": "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054-u03",
+          "speaker_id": "a",
+          "ja": "分かりました。一階で購買部の森田様をお呼びするんですね。打ち合わせも一階でしょうか。",
+          "vi": "Tôi rõ rồi. Ở tầng một tôi nhờ gọi anh Morita bên thu mua. Phòng họp cũng ở tầng một ạ?"
+        },
+        {
+          "id": "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054-u04",
+          "speaker_id": "c",
+          "ja": "打ち合わせは四階です。一階の受付から私に連絡が入りますので、そちらでお待ちください。",
+          "vi": "Phòng họp ở tầng bốn ạ. Lễ tân tầng một sẽ báo tôi, chị đợi ở quầy đó nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "inquiry",
+          "appointment"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054-u01": {
+            "kind": "original_extension"
+          },
+          "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054-u02": {
+            "kind": "original_extension"
+          },
+          "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054-u03": {
+            "kind": "original_extension"
+          },
+          "3bca0fe3-5ac7-58b0-8c11-4aa01b52b054-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "17786c65-d89f-5f3b-b71f-ee4e0abba79e",
+      "event_id": "E02",
+      "context_vi": "Linh chuẩn bị buổi gặp về linh kiện mẫu ngày thứ Năm lúc 14 giờ. Cô gọi hỏi đầu mối mua hàng muốn xem những gì.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Đầu mối phía đối tác",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "17786c65-d89f-5f3b-b71f-ee4e0abba79e-u01",
+          "speaker_id": "a",
+          "ja": "木曜十四時のお打ち合わせに向けて、こちらで用意しておくものはございますか。",
+          "vi": "Để chuẩn bị cho cuộc họp lúc 14 giờ thứ Năm, phía tôi cần mang gì ạ?"
+        },
+        {
+          "id": "17786c65-d89f-5f3b-b71f-ee4e0abba79e-u02",
+          "speaker_id": "c",
+          "ja": "試作品をお持ちください。それと、二つの案を同じ表で見比べられると助かります。",
+          "vi": "Chị mang các mẫu thử nhé. Nếu có thể so hai phương án trên cùng một bảng thì rất tiện cho chúng tôi."
+        },
+        {
+          "id": "17786c65-d89f-5f3b-b71f-ee4e0abba79e-u03",
+          "speaker_id": "a",
+          "ja": "試作品と比較表ですね。今の段階で、お見積もりも用意したほうがよろしいでしょうか。",
+          "vi": "Mẫu thử và bảng so sánh nhỉ. Ở bước này tôi có cần chuẩn bị cả báo giá không ạ?"
+        },
+        {
+          "id": "17786c65-d89f-5f3b-b71f-ee4e0abba79e-u04",
+          "speaker_id": "c",
+          "ja": "見積もりは今回は結構です。納品までにかかりそうな時間を、目安で教えてください。",
+          "vi": "Lần này chưa cần báo giá ạ. Chị cho chúng tôi biết ước tính từ lúc đặt đến lúc nhận hàng mất bao lâu nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "appointment",
+          "inquiry"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "17786c65-d89f-5f3b-b71f-ee4e0abba79e-u01": {
+            "kind": "original_extension"
+          },
+          "17786c65-d89f-5f3b-b71f-ee4e0abba79e-u02": {
+            "kind": "original_extension"
+          },
+          "17786c65-d89f-5f3b-b71f-ee4e0abba79e-u03": {
+            "kind": "original_extension"
+          },
+          "17786c65-d89f-5f3b-b71f-ee4e0abba79e-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319",
+      "event_id": "E02",
+      "context_vi": "Trước ngày đi, Linh gọi lại cho Morita để xác nhận cuộc hẹn thứ Năm và các mẫu và tài liệu sẽ mang. Cả hai chưa có thay đổi lịch.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Đầu mối phía đối tác",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319-u01",
+          "speaker_id": "a",
+          "ja": "水城企画のリンです。明日十四時に伺います。試作品と二案の比較表をお持ちする予定ですが、変更はございませんか。",
+          "vi": "Tôi là Linh của Mizuki Kikaku. Mai tôi đến lúc 14 giờ. Tôi định mang mẫu thử và bảng so hai phương án. Bên anh có thay đổi gì không ạ?"
+        },
+        {
+          "id": "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319-u02",
+          "speaker_id": "c",
+          "ja": "はい、十四時のままでお願いします。納品までの目安も、そのときに伺えれば十分です。",
+          "vi": "Vâng, vẫn 14 giờ ạ. Lúc đó chị cho chúng tôi biết ước tính mất bao lâu để giao hàng là được."
+        },
+        {
+          "id": "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319-u03",
+          "speaker_id": "a",
+          "ja": "かしこまりました。十分前には一階の受付に着くようにいたします。",
+          "vi": "Tôi rõ rồi. Tôi sẽ thu xếp tới lễ tân tầng một trước 10 phút ạ."
+        },
+        {
+          "id": "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319-u04",
+          "speaker_id": "c",
+          "ja": "ありがとうございます。受付から連絡が入りましたら、私が下に参ります。",
+          "vi": "Cảm ơn chị. Khi lễ tân báo, tôi sẽ xuống ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "appointment",
+          "calling"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319-u01": {
+            "kind": "original_extension"
+          },
+          "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319-u02": {
+            "kind": "original_extension"
+          },
+          "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319-u03": {
+            "kind": "original_extension"
+          },
+          "bf27fb4f-4bc5-5d0f-9589-cc943a6c5319-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d3ab5ff8-f92f-5461-8385-85791b8dd0f3",
+      "event_id": "E03",
+      "context_vi": "Tàu đi Nagoya đang chậm. Trước cuộc hẹn 14 giờ, Linh gọi báo Morita, tách giờ dự kiến tới ga khỏi giờ tới bên đối tác.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Đầu mối phía đối tác",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d3ab5ff8-f92f-5461-8385-85791b8dd0f3-u01",
+          "speaker_id": "a",
+          "ja": "水城企画のリンです。十四時のお約束ですが、新幹線が遅れており、間に合いそうにありません。",
+          "vi": "Tôi là Linh của Mizuki Kikaku. Tôi hẹn lúc 14 giờ, nhưng Shinkansen đang chậm nên e không kịp ạ."
+        },
+        {
+          "id": "d3ab5ff8-f92f-5461-8385-85791b8dd0f3-u02",
+          "speaker_id": "c",
+          "ja": "ご連絡ありがとうございます。今の案内では、何時頃こちらに着けそうですか。",
+          "vi": "Cảm ơn chị đã báo. Theo thông tin hiện tại, khoảng mấy giờ chị tới chỗ chúng tôi được ạ?"
+        },
+        {
+          "id": "d3ab5ff8-f92f-5461-8385-85791b8dd0f3-u03",
+          "speaker_id": "a",
+          "ja": "名古屋駅には十四時十五分頃の見込みです。そこからの移動も入れると、御社には十四時三十五分頃です。時刻が変わりましたら、改めてご連絡します。",
+          "vi": "Dự kiến tới ga Nagoya khoảng 14 giờ 15. Tính thêm quãng đường từ ga, khoảng 14 giờ 35 tôi tới công ty anh. Nếu giờ thay đổi tôi sẽ báo lại ạ."
+        },
+        {
+          "id": "d3ab5ff8-f92f-5461-8385-85791b8dd0f3-u04",
+          "speaker_id": "c",
+          "ja": "分かりました。十四時三十五分頃ですね。その時間に対応できるか、こちらの予定を確認します。",
+          "vi": "Tôi rõ rồi, khoảng 14 giờ 35. Tôi kiểm lịch bên này xem giờ đó tiếp chị được không ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report",
+          "delay",
+          "calling"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d3ab5ff8-f92f-5461-8385-85791b8dd0f3-u01": {
+            "kind": "original_extension"
+          },
+          "d3ab5ff8-f92f-5461-8385-85791b8dd0f3-u02": {
+            "kind": "original_extension"
+          },
+          "d3ab5ff8-f92f-5461-8385-85791b8dd0f3-u03": {
+            "kind": "original_extension"
+          },
+          "d3ab5ff8-f92f-5461-8385-85791b8dd0f3-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "66d94a99-55d9-587e-a78b-e29053c2b8bc",
+      "event_id": "E03",
+      "context_vi": "Linh vừa báo có lẽ 14 giờ 35 mới tới chỗ đối tác. Morita xem lịch và thấy chiều nay không thể đợi; hai người chốt giờ trao đổi lại.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Đầu mối phía đối tác",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "66d94a99-55d9-587e-a78b-e29053c2b8bc-u01",
+          "speaker_id": "c",
+          "ja": "申し訳ありません。次の予定が入っているので、今日は十四時三十五分からはお会いできません。",
+          "vi": "Rất tiếc, tôi có lịch kế tiếp nên hôm nay không thể gặp chị từ 14 giờ 35 được ạ."
+        },
+        {
+          "id": "66d94a99-55d9-587e-a78b-e29053c2b8bc-u02",
+          "speaker_id": "a",
+          "ja": "承知しました。今日はそちらへ伺わず、お電話で別の日程をご相談してもよろしいでしょうか。",
+          "vi": "Tôi rõ rồi. Hôm nay tôi sẽ không qua. Tôi gọi để bàn ngày khác được không ạ?"
+        },
+        {
+          "id": "66d94a99-55d9-587e-a78b-e29053c2b8bc-u03",
+          "speaker_id": "c",
+          "ja": "十五時半に一度お電話いただけますか。もし出られなければ、明日の午前中に折り返します。",
+          "vi": "Chị gọi lại lúc 15 giờ 30 được không ạ? Nếu tôi không nghe được, sáng mai tôi gọi lại."
+        },
+        {
+          "id": "66d94a99-55d9-587e-a78b-e29053c2b8bc-u04",
+          "speaker_id": "a",
+          "ja": "分かりました。本日の訪問は取りやめ、十五時半にこちらからお電話します。",
+          "vi": "Tôi hiểu rồi. Hôm nay tôi sẽ không qua bên anh. Tôi sẽ gọi lại lúc 15 giờ 30 ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "appointment",
+          "calling"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "66d94a99-55d9-587e-a78b-e29053c2b8bc-u01": {
+            "kind": "original_extension"
+          },
+          "66d94a99-55d9-587e-a78b-e29053c2b8bc-u02": {
+            "kind": "original_extension"
+          },
+          "66d94a99-55d9-587e-a78b-e29053c2b8bc-u03": {
+            "kind": "original_extension"
+          },
+          "66d94a99-55d9-587e-a78b-e29053c2b8bc-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "4111736c-b4cc-5c0e-96bc-567e893c9224",
+      "event_id": "E03",
+      "context_vi": "Sau khi Linh báo dự kiến tới tòa lúc 14 giờ 35, Morita thấy có thể xếp một lượt ngắn từ 14 giờ 40. Cuộc hẹn ban đầu là 14 giờ.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Đầu mối phía đối tác",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "4111736c-b4cc-5c0e-96bc-567e893c9224-u01",
+          "speaker_id": "c",
+          "ja": "十四時四十分からでしたらお会いできます。ただ、五十五分までの十五分だけになります。",
+          "vi": "Có thể gặp từ 14 giờ 40 ạ. Tuy vậy, chỉ có 15 phút tới 14 giờ 55 thôi."
+        },
+        {
+          "id": "4111736c-b4cc-5c0e-96bc-567e893c9224-u02",
+          "speaker_id": "a",
+          "ja": "ありがとうございます。その十五分で試作品だけご覧いただき、比較表の詳しい説明は後でお送りします。",
+          "vi": "Cảm ơn anh. Trong 15 phút đó mong anh xem mẫu thử. Phần giải thích chi tiết bảng so sánh tôi sẽ gửi sau ạ."
+        },
+        {
+          "id": "4111736c-b4cc-5c0e-96bc-567e893c9224-u03",
+          "speaker_id": "c",
+          "ja": "それでお願いします。十四時四十分に間に合わないと分かったら、その前にお電話ください。",
+          "vi": "Như vậy được ạ. Nếu biết sẽ không kịp 14 giờ 40, chị gọi trước mốc đó nhé."
+        },
+        {
+          "id": "4111736c-b4cc-5c0e-96bc-567e893c9224-u04",
+          "speaker_id": "a",
+          "ja": "承知しました。間に合う見込みなら、一階の受付に着いたところでご連絡します。",
+          "vi": "Tôi rõ rồi. Nếu thấy kịp, tôi sẽ báo khi tới lễ tân tầng một ạ."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "appointment",
+          "delay"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "4111736c-b4cc-5c0e-96bc-567e893c9224-u01": {
+            "kind": "original_extension"
+          },
+          "4111736c-b4cc-5c0e-96bc-567e893c9224-u02": {
+            "kind": "original_extension"
+          },
+          "4111736c-b4cc-5c0e-96bc-567e893c9224-u03": {
+            "kind": "original_extension"
+          },
+          "4111736c-b4cc-5c0e-96bc-567e893c9224-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "d95b78f5-99e6-5d32-9c40-0c97d2bd496b",
+      "event_id": "E03",
+      "context_vi": "Linh tới lễ tân tầng một lúc 14 giờ 38. Đối tác đã dành 14 giờ 40 đến 14 giờ 55 để xem mẫu, nhưng Linh xác nhận lại trước khi lên.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "c",
+          "role_vi": "Đầu mối phía đối tác",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "d95b78f5-99e6-5d32-9c40-0c97d2bd496b-u01",
+          "speaker_id": "a",
+          "ja": "水城企画のリンです。いま一階の受付に着きました。十四時四十分から、予定どおりお会いできますか。",
+          "vi": "Tôi là Linh của Mizuki Kikaku. Tôi vừa tới lễ tân tầng một. Mình vẫn gặp từ 14 giờ 40 như đã đổi được không ạ?"
+        },
+        {
+          "id": "d95b78f5-99e6-5d32-9c40-0c97d2bd496b-u02",
+          "speaker_id": "c",
+          "ja": "はい、大丈夫です。十四時五十五分まででお願いいたします。",
+          "vi": "Vâng, được ạ. Xin chị thu xếp trong khung đến 14 giờ 55."
+        },
+        {
+          "id": "d95b78f5-99e6-5d32-9c40-0c97d2bd496b-u03",
+          "speaker_id": "a",
+          "ja": "承知しました。試作品を先にお見せして、比較表の詳しい説明は後でお送りします。",
+          "vi": "Tôi hiểu rồi. Tôi sẽ cho anh xem mẫu thử trước và gửi phần giải thích chi tiết bảng so sánh sau ạ."
+        },
+        {
+          "id": "d95b78f5-99e6-5d32-9c40-0c97d2bd496b-u04",
+          "speaker_id": "c",
+          "ja": "ありがとうございます。いま下に参りますので、受付前でお待ちください。",
+          "vi": "Cảm ơn chị. Tôi xuống ngay, chị đợi trước lễ tân nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "appointment",
+          "inquiry"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "d95b78f5-99e6-5d32-9c40-0c97d2bd496b-u01": {
+            "kind": "original_extension"
+          },
+          "d95b78f5-99e6-5d32-9c40-0c97d2bd496b-u02": {
+            "kind": "original_extension"
+          },
+          "d95b78f5-99e6-5d32-9c40-0c97d2bd496b-u03": {
+            "kind": "original_extension"
+          },
+          "d95b78f5-99e6-5d32-9c40-0c97d2bd496b-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "e83848dd-950c-5113-ac76-e7c9ea68ad3e",
+      "event_id": "E04",
+      "context_vi": "Trong chuyến công tác, Linh và Kato ở cùng một khách sạn và sẽ đi gặp khách buổi sáng. Hai người thống nhất điểm tập trung và tài liệu mỗi người cầm.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Đồng nghiệp cùng chuyến",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "e83848dd-950c-5113-ac76-e7c9ea68ad3e-u01",
+          "speaker_id": "a",
+          "ja": "加藤さん、明日の朝はどこで待ち合わせますか。先方にお渡しする資料は、どちらが持って行きましょうか。",
+          "vi": "Anh Kato, sáng mai mình gặp ở đâu ạ? Tài liệu đưa cho bên khách thì ai mang?"
+        },
+        {
+          "id": "e83848dd-950c-5113-ac76-e7c9ea68ad3e-u02",
+          "speaker_id": "d",
+          "ja": "八時半にホテルのロビーで。比較表は僕が印刷して持っていきます。試作品はお願いできますか。",
+          "vi": "8 giờ 30 ở sảnh khách sạn nhé. Tôi in và mang bảng so sánh. Mẫu thử nhờ chị mang được không?"
+        },
+        {
+          "id": "e83848dd-950c-5113-ac76-e7c9ea68ad3e-u03",
+          "speaker_id": "a",
+          "ja": "はい、試作品は私が持ちます。比較表は先方用と予備で二部あると安心です。",
+          "vi": "Vâng, tôi mang mẫu. Bảng so sánh có hai bản, một cho khách và một dự phòng thì yên tâm hơn ạ."
+        },
+        {
+          "id": "e83848dd-950c-5113-ac76-e7c9ea68ad3e-u04",
+          "speaker_id": "d",
+          "ja": "了解です。二部持って、八時半にロビーですね。集合時間が変わりそうなら、八時半より前に連絡します。",
+          "vi": "Rõ rồi. Tôi cầm hai bản và có mặt ở sảnh lúc 8 giờ 30 nhỉ. Nếu có vẻ phải đổi giờ tập trung, tôi sẽ báo trước 8 giờ 30."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report",
+          "appointment"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "e83848dd-950c-5113-ac76-e7c9ea68ad3e-u01": {
+            "kind": "original_extension"
+          },
+          "e83848dd-950c-5113-ac76-e7c9ea68ad3e-u02": {
+            "kind": "original_extension"
+          },
+          "e83848dd-950c-5113-ac76-e7c9ea68ad3e-u03": {
+            "kind": "original_extension"
+          },
+          "e83848dd-950c-5113-ac76-e7c9ea68ad3e-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "2b40259a-9b78-58b7-bcea-d37e57789a31",
+      "event_id": "E04",
+      "context_vi": "Linh và Kato đến khách sạn trước khi phòng sẵn. Họ cần so lại tài liệu nhưng chưa hỏi dùng bàn khách sạn và có vali mang theo.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Đồng nghiệp cùng chuyến",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "2b40259a-9b78-58b7-bcea-d37e57789a31-u01",
+          "speaker_id": "a",
+          "ja": "部屋はまだ使えないそうですね。次の予定までに、資料だけでも合わせておきたいんですが。",
+          "vi": "Họ nói chưa vào phòng được nhỉ. Trước lịch tiếp theo tôi muốn ít nhất cũng so lại tài liệu."
+        },
+        {
+          "id": "2b40259a-9b78-58b7-bcea-d37e57789a31-u02",
+          "speaker_id": "d",
+          "ja": "フロントではスーツケースは預かれるそうです。ロビーの奥のテーブルを使っていいかは、まだ聞いていません。",
+          "vi": "Lễ tân nói có thể giữ vali. Còn bàn phía trong sảnh có dùng được không thì tôi chưa hỏi."
+        },
+        {
+          "id": "2b40259a-9b78-58b7-bcea-d37e57789a31-u03",
+          "speaker_id": "a",
+          "ja": "じゃあ、使えるか確認しましょう。先方の資料を広げるので、人目が気になる場所なら後にします。",
+          "vi": "Vậy mình hỏi xem được dùng không nhé. Vì phải mở tài liệu của khách ra, nếu ở chỗ người khác dễ nhìn thì tôi để sau."
+        },
+        {
+          "id": "2b40259a-9b78-58b7-bcea-d37e57789a31-u04",
+          "speaker_id": "d",
+          "ja": "はい。僕がフロントに確認してきます。資料とパソコンは預けず、手元に置いておきましょう。",
+          "vi": "Vâng. Tôi ra hỏi lễ tân. Tài liệu và máy tính cứ giữ bên mình nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "hotel",
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "2b40259a-9b78-58b7-bcea-d37e57789a31-u01": {
+            "kind": "original_extension"
+          },
+          "2b40259a-9b78-58b7-bcea-d37e57789a31-u02": {
+            "kind": "original_extension"
+          },
+          "2b40259a-9b78-58b7-bcea-d37e57789a31-u03": {
+            "kind": "original_extension"
+          },
+          "2b40259a-9b78-58b7-bcea-d37e57789a31-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807",
+      "event_id": "E04",
+      "context_vi": "Hai đồng nghiệp sắp xong buổi với khách, sau đó có lịch với nhà cung cấp ở xưởng lúc 16 giờ. Linh hỏi ai đi để biết mình cần chuyển tài liệu cho người nào.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Đồng nghiệp cùng chuyến",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807-u01",
+          "speaker_id": "a",
+          "ja": "先方との打ち合わせの後、十六時に仕入先へ行くのはどなたですか。仕様表を渡す人を確認したいです。",
+          "vi": "Sau buổi họp với khách, 16 giờ ai đi gặp nhà cung cấp ạ? Tôi muốn biết cần chuyển bảng thông số cho ai."
+        },
+        {
+          "id": "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807-u02",
+          "speaker_id": "d",
+          "ja": "工場との時間は僕が取っています。誰が行くかは、まだ決めていませんでしたね。",
+          "vi": "Tôi đã hẹn giờ với xưởng. Việc ai đi thì mình chưa quyết nhỉ."
+        },
+        {
+          "id": "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807-u03",
+          "speaker_id": "a",
+          "ja": "私は先方に比較表の補足を送る作業が残っています。同行が必要なら、その前に時間を取りたいです。",
+          "vi": "Tôi còn phải gửi phần bổ sung bảng so sánh cho bên khách. Nếu cần đi cùng, tôi muốn sắp thời gian làm trước."
+        },
+        {
+          "id": "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807-u04",
+          "speaker_id": "d",
+          "ja": "分かりました。仕様表の受け渡しもあるので、十五時半までに誰が行くか決めましょう。",
+          "vi": "Tôi rõ rồi. Còn phải chuyển bảng thông số nữa nên mình chốt ai đi chậm nhất 15 giờ 30 nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report",
+          "appointment"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807-u01": {
+            "kind": "original_extension"
+          },
+          "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807-u02": {
+            "kind": "original_extension"
+          },
+          "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807-u03": {
+            "kind": "original_extension"
+          },
+          "1ab2a4a6-63f1-5978-acc5-1f6c5d3c2807-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe",
+      "event_id": "E04",
+      "context_vi": "Kato tưởng Linh đã chuẩn bị cùng đi xưởng lúc 16 giờ. Linh tưởng Kato đi một mình và mình có lịch xử lý phần bổ sung cho khách. Hai người phân lại trước mốc chuyển tài liệu.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "d",
+          "role_vi": "Đồng nghiệp cùng chuyến",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u01",
+          "speaker_id": "d",
+          "ja": "さっきは確認できなかったんですが、十六時の工場訪問は、もともとリンさんも一緒だと思っていました。どう聞いていましたか。",
+          "vi": "Lúc nãy mình chưa xác nhận được. Ban đầu tôi tưởng chị Linh cũng đi xưởng lúc 16 giờ. Chị được báo thế nào ạ?"
+        },
+        {
+          "id": "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u02",
+          "speaker_id": "a",
+          "ja": "加藤さんがお一人で行くと思っていました。私は先方への補足をまとめるつもりでした。今、誰が何をするか決めましょうか。",
+          "vi": "Tôi tưởng anh Kato đi một mình. Tôi định tổng hợp phần bổ sung gửi khách. Giờ mình chốt ai làm việc gì nhé?"
+        },
+        {
+          "id": "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u03",
+          "speaker_id": "d",
+          "ja": "ええ、十六時の訪問は僕が行きます。必要なのは、最新版の仕様表です。",
+          "vi": "Được. Buổi 16 giờ tôi đi. Tôi cần bản mới nhất của bảng thông số."
+        },
+        {
+          "id": "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u04",
+          "speaker_id": "a",
+          "ja": "では、十五時半までに仕様表を送ります。私は残って、先方への説明を仕上げますね。",
+          "vi": "Vậy tôi gửi bảng thông số chậm nhất 15 giờ 30. Tôi ở lại hoàn thiện phần giải thích gửi đối tác nhé."
+        },
+        {
+          "id": "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u05",
+          "speaker_id": "d",
+          "ja": "お願いします。工場で確認できたことは、今日中に僕から共有します。",
+          "vi": "Nhờ chị nhé. Việc xác nhận được ở xưởng, tôi sẽ báo trong hôm nay."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report",
+          "calling"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u01": {
+            "kind": "original_extension"
+          },
+          "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u02": {
+            "kind": "original_extension"
+          },
+          "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u03": {
+            "kind": "original_extension"
+          },
+          "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u04": {
+            "kind": "original_extension"
+          },
+          "a1c9be9c-ccb5-59bc-9c0a-aadeb88e3bfe-u05": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "5e9652a1-14f7-53bf-bcd8-7007330ac053",
+      "event_id": "E05",
+      "context_vi": "Sau chuyến công tác, Linh báo trưởng nhóm rằng khách đồng ý nhận ba mẫu thử để đánh giá. Bên nhận cụ thể và địa chỉ giao vẫn cần xác nhận, giá chưa được quyết.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Trưởng nhóm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "5e9652a1-14f7-53bf-bcd8-7007330ac053-u01",
+          "speaker_id": "a",
+          "ja": "名古屋の件ですが、試作品を三点送って、先方で評価していただけることになりました。",
+          "vi": "Về chuyến Nagoya, phía khách đã đồng ý để mình gửi ba mẫu thử cho họ đánh giá ạ."
+        },
+        {
+          "id": "5e9652a1-14f7-53bf-bcd8-7007330ac053-u02",
+          "speaker_id": "b",
+          "ja": "分かった。試作品を受け取って評価するところまで決まったんだね。送り先は確認できた？",
+          "vi": "Anh rõ rồi. Hai bên đã thống nhất tới bước họ nhận mẫu để đánh giá nhỉ. Địa chỉ gửi đã kiểm được chưa?"
+        },
+        {
+          "id": "5e9652a1-14f7-53bf-bcd8-7007330ac053-u03",
+          "speaker_id": "a",
+          "ja": "まだです。受取担当の方と送付先は、森田さんが社内で確認中です。価格についても、今回は決めていません。",
+          "vi": "Chưa ạ. Anh Morita đang kiểm trong công ty xem ai nhận và gửi về đâu. Lần này giá cũng chưa chốt."
+        },
+        {
+          "id": "5e9652a1-14f7-53bf-bcd8-7007330ac053-u04",
+          "speaker_id": "b",
+          "ja": "了解。受取担当と送付先がそろうまでは、発送の依頼は待とう。",
+          "vi": "Rõ rồi. Đợi đủ người nhận và địa chỉ rồi mình mới yêu cầu gửi nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "5e9652a1-14f7-53bf-bcd8-7007330ac053-u01": {
+            "kind": "original_extension"
+          },
+          "5e9652a1-14f7-53bf-bcd8-7007330ac053-u02": {
+            "kind": "original_extension"
+          },
+          "5e9652a1-14f7-53bf-bcd8-7007330ac053-u03": {
+            "kind": "original_extension"
+          },
+          "5e9652a1-14f7-53bf-bcd8-7007330ac053-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "8a06fef3-006e-5479-afce-6503fbb029fa",
+      "event_id": "E05",
+      "context_vi": "Morita chưa xác nhận người và địa chỉ nhận ba mẫu. Linh và trưởng nhóm thống nhất ai liên hệ và báo lại trước khi giao việc cho kho.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Trưởng nhóm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "8a06fef3-006e-5479-afce-6503fbb029fa-u01",
+          "speaker_id": "a",
+          "ja": "試作品の送付先ですが、私から森田さんに確認してもよろしいですか。",
+          "vi": "Về địa chỉ gửi mẫu, em hỏi anh Morita được không ạ?"
+        },
+        {
+          "id": "8a06fef3-006e-5479-afce-6503fbb029fa-u02",
+          "speaker_id": "b",
+          "ja": "お願い。住所と受取担当者の名前を、できればメールで残してもらって。",
+          "vi": "Nhờ em. Xin họ để lại địa chỉ và tên người nhận bằng email nếu có thể nhé."
+        },
+        {
+          "id": "8a06fef3-006e-5479-afce-6503fbb029fa-u03",
+          "speaker_id": "a",
+          "ja": "承知しました。今日の十六時までに、返事が来たかどうかも含めてご報告します。",
+          "vi": "Em rõ rồi ạ. Chậm nhất 16 giờ hôm nay, em sẽ báo cả việc đã nhận được hồi âm hay chưa."
+        },
+        {
+          "id": "8a06fef3-006e-5479-afce-6503fbb029fa-u04",
+          "speaker_id": "b",
+          "ja": "うん。両方が確認できたら僕に知らせて。その後で倉庫に依頼しよう。",
+          "vi": "Ừ. Khi xác nhận được cả hai, báo anh. Sau đó mình mới nhờ kho gửi."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report",
+          "calling"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "8a06fef3-006e-5479-afce-6503fbb029fa-u01": {
+            "kind": "original_extension"
+          },
+          "8a06fef3-006e-5479-afce-6503fbb029fa-u02": {
+            "kind": "original_extension"
+          },
+          "8a06fef3-006e-5479-afce-6503fbb029fa-u03": {
+            "kind": "original_extension"
+          },
+          "8a06fef3-006e-5479-afce-6503fbb029fa-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "3fcada9e-d783-51b4-8162-7a74b388b73a",
+      "event_id": "E05",
+      "context_vi": "Trước 16 giờ, Morita đã trả lời email về địa chỉ và người nhận ở phòng kỹ thuật. Linh cập nhật hai mục và hỏi bước chuyển phiếu cho kho.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Trưởng nhóm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "3fcada9e-d783-51b4-8162-7a74b388b73a-u01",
+          "speaker_id": "a",
+          "ja": "森田さんからメールで、住所と受取担当の方の名前が届きました。受け取りは技術部です。",
+          "vi": "Anh Morita đã gửi email có địa chỉ và tên người nhận. Phòng kỹ thuật sẽ nhận ạ."
+        },
+        {
+          "id": "3fcada9e-d783-51b4-8162-7a74b388b73a-u02",
+          "speaker_id": "b",
+          "ja": "では、倉庫に試作品三点の発送を依頼して。送り状はそのメールと突き合わせてね。",
+          "vi": "Vậy em nhờ kho gửi ba mẫu thử. Em đối chiếu phiếu gửi với email đó nhé."
+        },
+        {
+          "id": "3fcada9e-d783-51b4-8162-7a74b388b73a-u03",
+          "speaker_id": "a",
+          "ja": "承知しました。倉庫に依頼して、追跡番号が出たら森田さんとこちらのチームに共有します。",
+          "vi": "Em rõ rồi. Em chuyển cho kho, khi có mã theo dõi em sẽ báo anh Morita và nhóm mình ạ."
+        },
+        {
+          "id": "3fcada9e-d783-51b4-8162-7a74b388b73a-u04",
+          "speaker_id": "b",
+          "ja": "お願い。発送した日も、分かったら一緒に記録しておこう。",
+          "vi": "Nhờ em. Khi biết ngày đã gửi thì ghi lại cùng mã nhé."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "3fcada9e-d783-51b4-8162-7a74b388b73a-u01": {
+            "kind": "original_extension"
+          },
+          "3fcada9e-d783-51b4-8162-7a74b388b73a-u02": {
+            "kind": "original_extension"
+          },
+          "3fcada9e-d783-51b4-8162-7a74b388b73a-u03": {
+            "kind": "original_extension"
+          },
+          "3fcada9e-d783-51b4-8162-7a74b388b73a-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    },
+    {
+      "situation_uid": "fdf2c79f-ba2e-5e4d-ac41-565d547b940b",
+      "event_id": "E05",
+      "context_vi": "Sau chuyến, khách phát sinh nhu cầu xem mẫu trên thiết bị thực tế. Linh báo vì sao cần quay lại, trưởng nhóm giao phần chuẩn bị cho lần sau.",
+      "speakers": [
+        {
+          "id": "a",
+          "role_vi": "Nhân viên đi công tác",
+          "gender": "female"
+        },
+        {
+          "id": "b",
+          "role_vi": "Trưởng nhóm",
+          "gender": "male"
+        }
+      ],
+      "turns": [
+        {
+          "id": "fdf2c79f-ba2e-5e4d-ac41-565d547b940b-u01",
+          "speaker_id": "a",
+          "ja": "追加で一点ご相談です。先方が、試作品を実際の装置に合わせて確認したいそうです。寸法だけでは判断できないので、次回は現地で立ち会う必要があります。",
+          "vi": "Em xin trao đổi thêm một việc. Bên khách muốn kiểm mẫu trên thiết bị thực tế. Chỉ có kích thước thì chưa đánh giá được, nên lần tới cần có mặt tại chỗ ạ."
+        },
+        {
+          "id": "fdf2c79f-ba2e-5e4d-ac41-565d547b940b-u02",
+          "speaker_id": "b",
+          "ja": "分かった。技術の分かる人が必要だね。うちからは誰が同行できそう？",
+          "vi": "Anh rõ rồi. Cần người am hiểu kỹ thuật nhỉ. Bên mình ai có thể đi cùng?"
+        },
+        {
+          "id": "fdf2c79f-ba2e-5e4d-ac41-565d547b940b-u03",
+          "speaker_id": "a",
+          "ja": "技術の小川さんに相談します。先方にも装置を使える日時を聞いて、両方の都合が合う候補を出します。",
+          "vi": "Em trao đổi với anh Ogawa bên kỹ thuật. Em cũng hỏi bên khách khi nào dùng được thiết bị rồi đưa ra các khung hợp cả hai bên ạ."
+        },
+        {
+          "id": "fdf2c79f-ba2e-5e4d-ac41-565d547b940b-u04",
+          "speaker_id": "b",
+          "ja": "それでお願い。候補がそろったら僕に共有して。日程が決まってから次の出張を手配しよう。",
+          "vi": "Nhờ em làm vậy. Có các khung phù hợp thì báo anh. Khi chốt lịch rồi mình mới sắp chuyến tiếp theo."
+        }
+      ],
+      "admin": {
+        "source_refs": [
+          "report",
+          "appointment"
+        ],
+        "specialty_item_ids": [],
+        "turn_origins": {
+          "fdf2c79f-ba2e-5e4d-ac41-565d547b940b-u01": {
+            "kind": "original_extension"
+          },
+          "fdf2c79f-ba2e-5e4d-ac41-565d547b940b-u02": {
+            "kind": "original_extension"
+          },
+          "fdf2c79f-ba2e-5e4d-ac41-565d547b940b-u03": {
+            "kind": "original_extension"
+          },
+          "fdf2c79f-ba2e-5e4d-ac41-565d547b940b-u04": {
+            "kind": "original_extension"
+          }
+        }
+      }
+    }
+  ]
+}
