@@ -42,3 +42,47 @@
 - f4ad33ea-8f93-536c-afbc-dd7c3e6d3652 (S014). A u01 báo vướng lớp bù, u03 gợi hỏi Mei và nêu lý do. B u04 tự hỏi, A không hứa thay Mei.
 - 0b54dae9-d32d-573d-afaa-57ac8343bc3f (S015). A u02 xác nhận và u04 bỏ điểm hẹn ba giờ, B u03 muốn tự đi, u05 xác nhận không cần đợi.
 - 2a80f09e-df1e-5251-8eb4-075a4764bfb2 (S016). A u01 cảm ơn vì đã chia sẻ và u03 nói có thể để chuyện riêng ở đó. B u02 tự nói thấy nhẹ hơn, A u04 chỉ nhắc lại giờ hẹn.
+
+### Kiểm độc lập E01
+
+S001 để quyền chọn cho người đang mệt. S002 bạn chọn nghỉ riêng và nhờ lấy nước. S003 bạn chọn kể chuyện trong lớp, S004 người nghe hỏi nghĩa từ khi chưa hiểu rồi trả lại lượt kể cho bạn.
+
+- Đọc B07 dòng 562–574 về phản hồi trước khó khăn và 1701–1706 về giảm áp lực khi bạn xin lỗi.
+
+- S002 (de4c955a-1ee4-5d1d-8b51-8668058fc37e), 03. Giữ lời hỏi cần lấy gì để bạn có thể nhờ nước. Lời nhận việc nêu sẽ mang nước rồi để bạn nghỉ.
+
+- S004 (5922597c-1945-5354-aec7-a1896ee6d2b3), 02. Lặp từ chưa hiểu để hỏi đúng nghĩa. Lời kết nhận đã hiểu và mời bạn kể tiếp, không mang sắc thái cho phép.
+
+### Kiểm độc lập E02
+
+S005 hỏi điều lo nhất trước phỏng vấn, S008 gặp sau buổi và để bạn tự nói đã qua phần giới thiệu. S006 khen một câu thật đã nghe, S007 dời buổi tập sang 9 giờ sáng hôm sau ở lớp vì hôm nay bận.
+
+- Đọc B24 dòng 1496–1511, ví dụ 落ち着く và 楽になる khi bớt căng thẳng.
+
+- S007 (b464414d-75a2-595f-9fab-76e3874a1ad6), 03. Đề nghị 9 giờ dưới dạng câu hỏi vì bạn mới cho biết rảnh sáng mai. Lời đáp xác nhận cả giờ và lớp học.
+
+- S008 (cf45da0d-28a5-5cd5-a639-7a85e527fb91), 03. Người học hỏi thăm sau buổi và cho bạn quyết định có kể. Bạn chỉ nói phần tự giới thiệu làm được, chưa nói kết quả tuyển.
+
+### Kiểm độc lập E03
+
+S009 nghe tin có dấu hiệu đỗ nhưng người nhận còn nói みたい. S010 đọc kỹ chỉ mới nhận đơn. S011 là nhánh có tin chính thức, hẹn ăn bánh chiều mai do tối nay bận. S012 đã học buổi đầu trong nhánh khác.
+
+- Đọc B24 dòng 1474–1487, ví dụ chúc mừng khi bạn đạt chứng chỉ.
+
+- S011 (42d25d3c-be5d-58b2-ad46-da319a77c4b8), 02. Khi có tin đỗ chính thức, người học báo không đi tối nay và rủ ăn bánh hôm sau. Sửa lời rủ của bạn thành cách nói thường dùng.
+
+- S012 (77e92c16-cdf2-5d46-ac8b-a4acd4f7f556), 01. Hỏi buổi đầu và nhìn nhận khó vì có nhiều thứ mới. Câu cuối cho người cùng lớp dẫn đến phòng học, nhất quán với chuyện tìm phòng.
+
+### Kiểm độc lập E04
+
+S013 chốt 15 giờ thứ Tư ở cửa thư viện. S014 có lớp trùng nên giới thiệu Mei, chưa biết Mei có đi. S015 bạn muốn tự tới, hủy việc đợi. S016 giữ nguyên cuộc hẹn và chỉ cảm ơn phần bạn đã chia sẻ.
+
+- Đọc B24 dòng 1514–1529 về thấy nhẹ lòng khi nỗi lo đã giảm và lời đáp xác nhận.
+
+- S013 (fd15026c-9f1b-586a-b783-5a6c86ac9e4f), 04. Chủ động đề nghị điểm gặp và xác nhận giờ lấy từ lời bạn. Dùng quầy thư viện trong tiếng Việt cho 窓口.
+
+- S014 (f4ad33ea-8f93-536c-afbc-dd7c3e6d3652), 03. Báo lớp mới trùng 15 giờ rồi gợi ý người hay tới thư viện. Người bạn sẽ hỏi Mei, chưa có xác nhận.
+
+- S015 (0b54dae9-d32d-573d-afaa-57ac8343bc3f), 04. Nhắc lại sẽ không đợi sau khi bạn nói muốn tự thử. Bạn xác nhận và cảm ơn vì đã dành thời gian.
+
+- S016 (2a80f09e-df1e-5251-8eb4-075a4764bfb2), 01. Cảm ơn vì bạn đã tin mà chia sẻ, không hỏi thêm chi tiết riêng. Cả hai vẫn giữ mốc 15 giờ ở cửa thư viện.

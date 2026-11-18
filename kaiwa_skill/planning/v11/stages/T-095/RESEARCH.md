@@ -50,3 +50,26 @@
 - S014 → S015. Giữ kết luận và số đo, chuyển kết quả lên trước phần thao tác. Mori nói lại và Ito xác nhận đã theo được.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S002 · `e3ac71b1-bfca-531a-89fe-0d0116d76e7f-u04`. Chọn hai ý để còn thời gian hỏi đáp. Việt gọi hai trưởng phòng thay vì suy cách xưng hô theo giới.
+- S003 · `9aed1934-db57-5e6b-9110-316cd570a25d-u01`. Hỏi đúng quyết định cần xin ở lần này, chỉ thêm một nhóm. Việt giữ người nghe ở đúng vai, không suy giới.
+
+Điểm nối. S001 hai trưởng phòng nghe tổng năm phút. S002 còn ba phút tính hỏi đáp, bỏ mô tả màn hình trừ khi được hỏi. S003 hỏi riêng quyết định thêm một nhóm, S004 thử câu kết và nói rõ mở rộng chung để sau kết quả.
+
+Đã đọc B02 Scene 5 dòng 59–77 về mục đích mở lời, và B13 Unit 8 dòng 260–276 về tách số đo với dự kiến và bổ sung căn cứ. Các số và báo giá trong thoại thuộc tình huống giả định.
+
+## Rà độc lập Batch04 · E03
+
+- S011 · `9d3c925d-110c-5434-adb2-0a3d84530755-u01`. Nêu căn cứ là báo giá bộ phận mua hàng nhận tuần này. Việt ghi rõ chưa gồm thuế và phí cài đặt tính riêng.
+- S012 · `e27569d1-be8f-5ce9-951d-fec14a7da7e3-u03`. Mori nhận chuẩn bị biểu mẫu, Tanabe chọn người. Đổi お返しします sang お伝えします vì báo kết quả mới cho người nghe vào thứ Sáu.
+
+Điểm nối. S009 tách phí thử và phí dùng hằng tháng. S010 chưa kiểm số, hẹn gọi 14 giờ ngày mai. S011 gọi đúng với báo giá tuần này là 18.000 yên chưa thuế mỗi tháng cho hai nhóm, chưa gồm cài đặt. S012 độc lập: đã đồng ý thử thêm một nhóm, chọn người sáng thứ Hai và báo kết quả thứ Sáu.
+
+## Rà độc lập Batch04 · E04
+
+- S013 · `93614c46-f9d1-5467-9ebf-7a2c4515a972-u03`. Mori hỏi phần nào khó theo và kiểm lại tác dụng nếu nêu quyết định và số đo trước. Dùng Việt diễn đạt số thời gian đo được.
+- S015 · `0e4c9858-b05c-5356-92c0-0fff3b65e528-u01`. Nói thử mở đầu từ số rồi tới đề nghị. Thêm cùng loại/tổng thời gian để người mở riêng cảnh hiểu hai số đem so.
+
+Điểm nối. S013 Ito khó theo vì thao tác đi trước mục đích. S014 xác nhận giữ đề nghị thêm một nhóm và chuyển số đo lên trước ví dụ. S015 thực sự nói lại: tổng 60/40 phút trên mười đơn cùng loại, hỏi thêm một nhóm và mới dẫn sang ví dụ.

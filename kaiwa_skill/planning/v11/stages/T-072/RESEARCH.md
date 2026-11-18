@@ -37,3 +37,7 @@ S009→S010→S011: việc cũ rà 20 đơn, xong 12, chuyển 8; việc mới l
 - S010 · `3438b2ff-7ddf-5804-b4bd-713efa530fed` · u02, u04, u05. Sasaki nhận tám đơn, Hùng bàn giao danh sách và một mã đang hỏi kho; Sasaki biết hạn trong ngày. Leader duyệt bắt đầu việc mới sau bàn giao.
 - S011 · `1741554f-efd7-586d-a5d3-4ab63ceb4202` · u01, u03, u05. Hùng xác nhận đã bàn giao, Sasaki nhận chờ phản hồi kho và làm trong ngày. Khi chuyển việc mới, hẹn xem bản sửa 14:15, chưa gửi khách.
 - S012 · `099a1fbf-0145-5b6a-bb25-10830413ca4b` · u01, u03, u05. Hùng nêu đúng hai mốc và ảnh hưởng. Chị Shimizu nhận trao đổi với trưởng kinh doanh và hậu cần; trong lúc chờ, coi cả hai bảng bản nháp nội bộ.
+
+## Rà độc lập V11 batch04
+
+Đọc B02 trang phần drill dòng 280–289, thể nhờ người nhận chuyển tài liệu; cảnh mới lấy lối xin cấp trên giới thiệu một đầu mối. Đọc B03 Unit 17 dòng 37–46, hỏi hạn cụ thể, thứ tự, tên riêng và nhắc lại sau khi nghe. Hai hạn, phân quyền bỏ mục và quản lý số trả hàng là quy trình nội bộ của cảnh.

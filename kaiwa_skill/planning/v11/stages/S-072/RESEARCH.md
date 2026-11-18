@@ -48,3 +48,43 @@
 - a3fb7d8c-ac08-51d9-bec0-f9d5acfaab58 (S020). A u01 so với dự định, u03 nói thích nhịp xem chậm và u05 chọn chợ vào ngày nắng. B u04 hưởng ứng triển lãm.
 
 - Rà lại c86e404c-6c16-5cbd-99e2-1ac6efdedd59 lượt 1. Giữ lời dự báo về trưa mai từ S014, không biến thành mưa đang xảy ra. Hai bạn vẫn hẹn trưa mai tại lối vào.
+
+### Kiểm độc lập E01
+
+S001 vui gặp lại, S002 lo ngày đầu và S003 muốn chỗ yên là các cảnh mở riêng. S004 đính chính chỉ mệt do ngủ ít. S005 nghe bạn xin lỗi rồi nhận gấp khăn, để bạn chuyển thùng.
+
+- Đọc B24 dòng 1496–1511 về 落ち着く với tâm trạng và nơi ngồi, 1514–1529 về nhẹ lòng sau khi nói.
+
+- S001 (71b68bf4-9e22-583d-bc8c-0592cf58412c), 02. Nói vui vì gặp lại trước khi xin bạn dành chút thời gian. Xác định ghế băng trong lời đáp để câu Nhật tự nhiên.
+
+- S002 (95325181-80c2-5e39-8f69-037ad73e27d0), 03. Nói rõ lo vì chưa biết phòng mình sẽ làm việc. Lời Nhật tránh gợi đây là phòng riêng cá nhân.
+
+- S003 (8212f4a0-d4f2-5fe1-98c5-efe8cd66c298), 01. Hỏi cảm giác khi ngồi ở bàn. Người học chọn bàn phía trong sau khi bạn nghe hơi ồn.
+
+### Kiểm độc lập E02
+
+S006 muốn ăn nhẹ, S007 hỏi nghỉ hay đi tiếp. S008 tìm quán nhìn cây mà tránh nắng, S010 ngồi chỗ không bị chiếu nắng. S009 từ ramen đổi quán có suất phù hợp và sẽ xác nhận có thịt hay không khi gọi.
+
+- Đọc B24 dòng 1081–1094 về ～たいな và 1534–1547 về cách nói muốn nghỉ thong thả.
+
+- S009 (9b5a7995-2fa8-500f-b474-361ac6290f81), 05. Giữ lựa chọn quán khác và thêm kế hoạch xác nhận thành phần với quán khi gọi, vì bạn cùng nhóm không ăn thịt.
+
+### Kiểm độc lập E03
+
+S011 định đi thư viện, S012 muốn thử làm gốm và S013 chờ lịch làm là ba việc riêng. S014 nghe dự báo mưa nên bỏ đi dọc sông và giữ giờ. S015 chốt trưa mai ở cửa bảo tàng.
+
+- Đọc B08 dòng 2829–2839 về thời tiết làm lý do cho việc chọn hoạt động.
+
+- S012 (ea8aed4a-99d3-5e63-b632-8969c08d9d3b), 03. Nêu lý do muốn thử là tự làm cốc. Tiếng Việt giữ thông tin có lớp một buổi mà không gán ưu đãi học thử.
+
+- S015 (c86e404c-6c16-5cbd-99e2-1ac6efdedd59), 03. Người học nói rõ giữ giờ trưa mai và đặt điểm hẹn mới ở cửa bảo tàng. Bạn xác nhận chính điểm mới.
+
+### Kiểm độc lập E04
+
+S016 đổi từ buổi có trận đấu sang buổi người mới được hướng dẫn. S017 chỉ dời địa điểm, giữ 14 giờ. S018 đổi từ chợ sang triển lãm ngắn và S019 chốt 15 giờ cửa triển lãm, rời muộn nhất 16 giờ. S020 là cuộc kể riêng sau một buổi đi thành công.
+
+- S016 (9a6883d6-d42e-508d-9674-567998b0f615), 03. Người học nói thông tin mới làm đổi ý là ở buổi người mới sẽ được chỉ cách đánh. Bối cảnh nêu môn để mở riêng vẫn hiểu.
+
+- S018 (f8f0efc8-1110-5485-b8c9-5a576beef7cc), 02. Đề nghị triển lãm nhỏ đáp ứng giới hạn tới 16 giờ. Nhật nói rõ đây là giờ chiều và người học xác nhận 15 giờ kịp.
+
+- S019 (fdfba088-3ff6-530f-8eed-107646b632a7), 03. Nhắc cửa triển lãm lúc 15 giờ và diễn đạt rõ xem xong rồi ra chậm nhất 16 giờ. Cả hai điều kiện hiện ra trong lời Nhật.

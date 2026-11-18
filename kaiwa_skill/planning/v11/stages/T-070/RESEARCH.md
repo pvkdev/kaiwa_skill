@@ -38,3 +38,7 @@ S010→S011: sửa nhãn và đếm số đơn đã chốt, giờ phát hiện m
 - S011 · `ef620415-a902-5208-b6d3-f966521feb41` · u01, u03, u05. Uyên yêu cầu kiểm theo mã chứ không nhờ rà cả báo cáo. Kimura giải thích dòng thứ hai là lịch sử cập nhật; Uyên sẽ tính một và kiểm lại tỷ lệ.
 - S012 · `ed8da5a3-fbf1-536a-9f65-978a328b3cde` · u01, u03, u05. Uyên nêu hẹn cũ và xung đột, hỏi đồng ý tìm người thay thay vì tự chuyển. Kimura nêu ổn nếu 15 giờ có kết quả, chưa có người nhận.
 - S013 · `63c8f693-a675-5ba7-81fe-905779ef9076` · u01, u03, u05. Takahashi đã đồng ý, không còn lời đề nghị giả. Uyên vẫn nhận kết quả và chuyển Kimura, chỉ giới hạn mã bưu chính và tên khu.
+
+## Rà độc lập V11 batch04
+
+Đọc B02 Scene 20, dòng 299–322, lời nhờ xem tài liệu, hỏi hạn và lời báo sắp ra ngoài. Bản này giữ phần hỏi hạn và phạm vi, thêm cách xử lý tôn trọng khi đồng nghiệp có việc. Đọc B16 Unit 7 dòng 13–33, cấp trên mời đi uống, Nguyễn báo có hẹn, hai vai giữ quan hệ khi từ chối. Hội thoại mới chuyển thành việc văn phòng giữa hai người ngang vai.

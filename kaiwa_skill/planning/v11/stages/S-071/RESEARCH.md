@@ -50,3 +50,37 @@
 - Rà lại 45a86827-63cd-5bca-ab09-8ed13040c82b lượt 1. Đọc nối S018 và giữ đúng mốc cuối tuần, không tự thêm hôm nay. S019 u03 vẫn hỏi lịch tuần sau.
 - Rà lại 9734cccd-8b60-515e-9944-a5cc15ab4abc lượt 2. Bỏ đại từ không cần thiết. Câu hỏi vẫn hàm ý A tưởng người đang kể là người gọi, B sửa bằng chính câu đáp.
 - Rà lại c79da04d-9b8e-561d-9616-16cc1e2bdeea lượt 1. Đọc nối S013 và S014. A xác nhận em gái gọi, hỏi người kia có tự đi lấy, rồi dùng câu đáp để hỏi thời điểm lấy.
+
+### Kiểm độc lập E01
+
+S001 vịt qua đường, S002 đi chợ nấu cà ri và S003 thử bánh mì mè đen là ba sự việc riêng. S004 sửa sáng nay thành sáng hôm qua. S005 kể đến ga, phát hiện thiếu ví ở cổng soát vé rồi quay về.
+
+- Đọc B08 dòng 2829–2839 về kể và phản hồi cuối tuần, 2941–2947 về chuyến đi và món ăn. Đọc B16 dòng 1131–1139 về sửa một chi tiết nhớ nhầm.
+
+- S004 (088adc09-ab20-5da0-a427-58c5f4439748), 02. Lời Việt nêu rõ cặp ngày bị nhầm và ngày đúng. Sau sửa, người kể xác nhận là lúc đi mua đồ.
+
+### Kiểm độc lập E02
+
+S006 đi Kawagoe với bạn, S007 đạp xe một đoạn rồi đổi sang mỹ thuật khi mưa, S008 bạn chọn chuyện đồ ăn. S009 sắp vào lớp và hẹn kể giờ trưa ở chỗ thường ngồi. S010 kể tiếp chuyện xịt lốp và được bạn lái xe đến đón.
+
+- S007 (3f9623e6-ebdf-5bc3-bb1c-eaa136a8eb2b), 03. Trả lời cụ thể đã đạp xe một đoạn trước khi mưa rồi vào bảo tàng. Lời Việt diễn đúng vì sao đổi kế hoạch.
+
+- S008 (8ca247ed-ba48-5452-9316-e10dd3932ec9), 01. Người học mời chọn đề tài trước. Khi bạn muốn nghe chuyện đồ ăn, câu kể nói rõ món cá nướng đã ăn.
+
+### Kiểm độc lập E03
+
+S011 hỏi giờ phát hiện thiếu sách. S012 nghe người biểu diễn ngoài trời dù mưa, sau mới biết có lều. S013 sửa ai gọi thành em gái. S014 giữ người gọi là em gái và xác minh bạn tự lấy túi. S015 độc lập, nghe đã tìm thấy chó và phản hồi nhẹ nhõm trước khi hỏi tiếp.
+
+- Đọc B24 dòng 1496–1511 về phản hồi khi nỗi lo giảm.
+
+- S011 (2e7368fe-5e6d-5837-ab8a-5937e4e07679), 02. Hỏi lúc phát hiện để biết mốc câu chuyện. Sửa cụm thời gian Nhật thành cấu trúc dễ nghe ngay sau bữa trưa.
+
+- S012 (f177ef41-e4ec-536e-b221-b741ae90e7df), 02. Nhắc lại điều bất ngờ đúng lời kể là chơi nhạc ngoài trời dù mưa. Giữ chi tiết lều ở lượt người kể, không suy họ bắt đầu trước mưa.
+
+- S014 (c79da04d-9b8e-561d-9616-16cc1e2bdeea), 01. Dùng hai câu nối rõ em gái gọi điện, còn bạn tự đi lấy. Tiếng Việt giữ em gái như ở cảnh trước.
+
+### Kiểm độc lập E04
+
+S016 đổi giờ đi vì nóng, S017 hỏi chuyện quên trên tàu. S018 bỏ hỏi việc nhà và thống nhất có thể bàn ngày khác. S019 chốt chiều thứ Bảy tuần sau rồi chuyển sang chuyện bữa trưa. S020 rủ lớp làm bánh dành cho người mới, chưa có lịch.
+
+- S019 (45a86827-63cd-5bca-ab09-8ed13040c82b), 05. Sau khi cả hai thôi bàn lý do và chọn chiều thứ Bảy, thêm lượt người học xác nhận rồi đổi sang chuyện bữa trưa. Lời đáp tiếp nhận đề tài mới.

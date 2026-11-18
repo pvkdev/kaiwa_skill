@@ -50,3 +50,31 @@
 - S014 → S015. Cuộc gọi ngày mai 15 giờ là cập nhật. Đã có kết quả cho mười thùng, mười thùng còn lại chờ sáng thứ Năm.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S003 · `4e644718-0573-58d1-9c26-aa36b7910879-u02`. Đổi lời làm rõ sang đúng đề nghị trong cảnh trước là ghé phố nếu rảnh. Bỏ việc Inoue phải tự nhấn 'một mình' cho cuộc nói tự nhiên.
+
+Điểm nối. S001 nói lối ga về. S002 giới thiệu phố ăn uống rồi trở lại tài liệu, không đưa lời mời. S003 hỏi lại trước khi hiểu là hẹn ăn chung; Sakurai làm rõ ghé khi về rồi mở cuộc họp. S004 là mở riêng với mục đích ngày giao.
+
+Đã đọc B10 bài thăm đối tác dòng 189–212, B25 bài 2 dòng 311–387, B09 bài 20 dòng 4–19 và B21 bài từ chối dòng 47–83. Các đoạn cho sắc thái mở/khép cuộc gặp, nhận hoặc từ chối lời mời, cảm ơn và giữ giới hạn khi đối phương hỏi tiếp.
+
+## Rà độc lập Batch04 · E02
+
+- S005 · `99f39a31-2eca-56a6-bb57-d966e619b7ef-u04`. Sakurai hỏi ai đến và có bàn công việc. Thay câu nhận xét về tài liệu bằng xác nhận bữa làm quen và cảm ơn, vẫn để ngỏ tham gia cho các nhánh.
+- S008 · `fcadc31c-6188-5660-ad12-5acc6b4e0715-u03`. Giới hạn tham gia đến 13 giờ và từ chối tối rõ. Sửa lời xác nhận phía mời để nói đúng là không tính vào số người dự tối.
+
+Điểm nối. S005 biết bữa tối chỉ làm quen, phía khách là ba người. S006 nhận và gặp 18:30 cửa bắc; S007 trở về lúc mới được mời, từ chối và xin gặp hai người tuần tới. S008 cũng rẽ từ gốc, đề nghị ăn trưa 12:15–13 giờ với phía khách hai người, từ chối tối.
+
+## Rà độc lập Batch04 · E03
+
+- S012 · `f38df530-0a15-5619-9bdb-20247d3d5a3b-u03`. Lượt đầu nói cùng mức dự kiến như lượt sau. Tháng sau là thời điểm dự kiến có hướng dẫn, chưa chốt khi nào đăng ký được.
+
+Điểm nối. S009 chọn trà, đứng riêng. S010 giá dịch vụ mới chưa công bố, chỉ có giá gói hiện hành. S011 chuyển sang kiểm thời điểm đăng ký và hẹn báo 14 giờ thứ Năm. S012 gọi đúng, chỉ có dự kiến phát thông tin tháng sau, còn ngày mở và giá chưa chia sẻ.
+
+## Rà độc lập Batch04 · E04
+
+- S013 · `7d8c8c30-802b-5b4e-b98f-61dd242dfb75-u03`. Cảm ơn gắn với thông tin của bên nhận. Chỉnh Việt cho đúng là thông tin giúp ích và giữ mốc cập nhật, chưa hứa giao.
+- S015 · `db8aca21-3df8-50ef-ad85-465bf5a9a6c3-u03`. Giữ mười có sẵn và mười còn chờ, giờ liên hệ tiếp không đồng nghĩa sẽ chốt ngày giao. Việc gửi trước một phần vẫn là khả năng đã được hỏi ở gốc.
+
+Điểm nối. S013 nhận kiểm đủ 20 thùng và số có thể giao sớm, hẹn báo phần đã biết ngày mai. S014 phân biệt ngày báo và ngày quyết, chọn gọi 15 giờ. S015 đúng hẹn, kho có mười thùng nhưng chưa đủ 20; hỏi lại sáng thứ Năm rồi báo kể cả khi chưa về.

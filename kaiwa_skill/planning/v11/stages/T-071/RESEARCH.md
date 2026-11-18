@@ -38,3 +38,7 @@ S009→S010: góp ý vì người nghe thiếu bối cảnh trước con số 12
 - S010 · `ca01755b-bd6c-589d-80ad-2729fcfbbd1a` · u01, u03, u05. Duyên hỏi rõ phạm vi. Anh Kobayashi giữ nguyên kết quả sau phần mở, chốt sửa hai câu đầu; Duyên nhắc đúng phạm vi và hẹn thử.
 - S011 · `af065911-6bde-50af-930e-9dae116f38ed` · u01, u03, u05. Duyên cam kết nội dung cụ thể và hẹn người nghe duyệt tác động sau chứ không xin duyệt cả báo cáo. Chốt 16 giờ.
 - S012 · `532bd164-56c8-5def-9a69-5b6e41bd2003` · u01, u03, u05. Duyên thực sự nói thử rồi hỏi tác động. Người nghe nhắc đúng 12 đơn chưa xuất, phân biệt chưa hủy. Duyên giữ mở đầu và bổ sung câu chuyển sang dự kiến.
+
+## Rà độc lập V11 batch04
+
+Đọc đúng B12 dòng 8–26, B26 bài 7 dòng 225–271 và B16 Unit 4 dòng 23–45. Cảnh khen gắn việc thấy được; đáp lời khen có thể ghi nhận giúp đỡ. Đoạn góp ý dùng ví dụ người nghe không biết 12 là gì, theo cách nguồn góp ý cụ thể về thông tin thiếu và câu chưa rõ.
