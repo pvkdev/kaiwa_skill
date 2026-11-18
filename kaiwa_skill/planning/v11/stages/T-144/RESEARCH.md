@@ -50,3 +50,7 @@
 Rà độc lập toàn bộ chặng.
 
 Rà lại S003/S005 cùng các nhánh từ S001: S003 dùng どう để hỏi cách chia thời lượng thực hành; S005 giữ đúng thao tác nhập số hàng nhận và dùng bộ lọc. Rà cả hai vai S006–S010: Mori xưng em khi nói với quản lý nam, giữ nguyên các mốc và tình trạng duyệt của từng nhánh.
+
+## Rà độc lập Batch05 · E01
+
+Đọc ngày 2026-11-18 phần 「施策紹介」 của [MHLW về đào tạo người đang đi làm](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/zaishokusha.html), phần 「訓練の概要」 của [JEED về đào tạo nâng năng suất](https://www.jeed.go.jp/js/jigyonushi/d-2.html) và trang in 103–104 của [mẫu chương trình JEED tháng 10/2025](https://www3.jeed.go.jp/shiga/poly/employer/hl52qs000006p0ag-att/mq8fhl0000000lmq.pdf). JEED nêu yêu cầu người dự chương trình này nhận chỉ định từ đơn vị sử dụng lao động và cung cấp các ví dụ về luyện tổng hợp dữ liệu. Khóa bảng tính, tiêu chí đầu vào, lịch và buổi hỏi đáp trong chặng là giả định. Đã dò trực tiếp B02 「許可を求める」 dòng 7–33 cho lời xin phép với quản lý và B05 「その他」 dòng 152–178, 181–207 cho cách xin làm mẫu rồi tự thử lại.

@@ -106,3 +106,13 @@ S029 chuyển câu hỏi chấm công về nhân sự và S030 làm rõ phạm v
 - S029 → S030. S029→S030 Mori đã xin và nhận bản hướng dẫn, việc chấm công vẫn do nhân sự. Ở đây An xử lý cách đọc chương trình.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 31 cảnh tiếng Nhật, tiếng Việt và từng cặp lượt. Đã kiểm 14 nhánh qua 7 sự kiện và đối chiếu S018 với S028 khi giữ chữ trên biển. Đã mở B21 bài 8 phần hỏi chuyến đi, B22 bài 8 hai mục hỏi và mốc nhớ chừng, B23 bài 8 biến thể đổi cơ sở, B05 Ch.5 về đặt phòng, B11 mục 9 về điểm tập trung và B12 mục 39 về giờ/địa điểm khi đổi lịch. B21–B23 chỉ hỗ trợ cách hỏi và nhận thông tin, không lấy áp lực tham gia trong ví dụ làm thông lệ.
+
+- Đọc ngày 2026-11-18 [CAA, sổ tay cho cơ sở ăn uống](https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/assets/food_labeling_cms204_230324_03.pdf), mục 取組状況（注意点） về thông tin chưa rõ, dùng chung dầu/dụng cụ và quyết định của người có dị ứng. S008 yêu cầu riêng theo đồng ý của Sano và báo phần xác nhận được lẫn phần còn thiếu, không bảo đảm món cụ thể.
+- Đọc ngày 2026-11-18 [FDMA về 119](https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html), mục 119番緊急通報 và quy trình hỏi thông tin điều phối. S004 và S023 tách đầu mối nội bộ/lễ tân với gọi 119 ngay khi cần xe cấp cứu ở Nhật. Tình huống này không thực hiện cuộc gọi hoặc đưa ra chẩn đoán.
+- Mục 3 của hướng dẫn MHLW xác định giờ làm theo hoàn cảnh cụ thể và việc người lao động có đặt dưới sự chỉ đạo của người sử dụng lao động hay không. S029 chỉ hướng tới nhân sự với thông tin chuyến đi. Đã đọc ngày 2026-11-18 [hướng dẫn giờ làm của MHLW](https://www.startup-roudou.mhlw.go.jp/pdf/guidelines.pdf).
+
+Rà các mốc chậm nhất và giờ dự kiến ở E02–E05. Phương án 18 khách lưu trú và ngày đầu không lưu trú thuộc tình huống riêng. Ở E03 chỉ chốt đổi phòng sau phê duyệt và đồng ý của cả hai khách. Ở E06 khách sạn mới tìm thấy túi giống mô tả, Mori tiếp tục xác nhận trực tiếp trước khi chọn cách nhận.

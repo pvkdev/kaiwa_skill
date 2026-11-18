@@ -55,3 +55,7 @@
 Rà độc lập toàn bộ chặng.
 
 Đọc lại nhịp thứ Hai đến thứ Sáu và cả tám nhánh. S007 nói rõ hai phần phải xem là ảnh và chữ. S013 xác nhận Morita đã báo kết quả thử trước 15:00 thứ Năm như đã hẹn trong S008, đã dời giờ lấy máy và báo lại Kato, rồi mới nhắc kết quả khách chấp thuận và việc gửi PDF thứ Sáu. S014 mới phát hiện nhà in chưa biết giờ gửi. S015 chỉ xác nhận lịch thứ Hai cùng mốc gọi kiểm tra, công việc vẫn ở tương lai.
+
+## Rà độc lập Batch05 · E01
+
+Đọc trực tiếp B03 Unit 18 dòng 25–40 và 57–67 (báo tiến độ, đề xuất phương án, trực tiếp báo đúng người), B02 Scene 32 dòng 7–33 (xin quản lý điều chỉnh lịch) và B04 Unit 22 dòng 8–25, 54–82 (nêu mục đích, hỏi khung trống, xác nhận lịch). Các cuộc gọi, quy trình phê duyệt, cửa hàng, yêu cầu của khách và mốc giao của tuần đều là dữ kiện giả định.

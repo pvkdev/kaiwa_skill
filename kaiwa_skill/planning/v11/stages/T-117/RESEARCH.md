@@ -121,3 +121,13 @@ Người tổ chức giao phần lịch đã chốt và việc duyệt còn ch�
 - S039 → S040. Từ S039 mới hỏi lựa chọn, chưa có lời được giao. Bảo trả lời không dùng cả hai cách.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 40 cảnh theo tiếng Nhật, tiếng Việt và từng cặp lượt, kiểm đủ 16 nhánh qua 8 sự kiện. Đã mở B17 忘年会の幹事 và 上司の転勤 cho việc chọn quán và cảm ơn, B05 Ch.2 phần gọi đặt bàn, B03 Unit 13 phần lời mời đồ uống và B07 mục 167 về 乾杯. Mỗi tài liệu hỗ trợ tình huống ngôn ngữ trong phạm vi ghi rõ, lịch và phí của quán là số liệu của kịch bản.
+
+- Đã đọc [quy định hỏi phí và hạn hủy theo quán của 国民生活センター](https://www.cht.kokusen.go.jp/ja/faq/000045.html), mục 回答内容, ngày 2026-11-18. S012, S015, S021–S022 và S031–S036 không suy rộng mức phí, hạn hay người chịu từ nguồn. Kiểm số: 18 × 4.000 = 72.000, 16 × 4.000 = 64.000, thêm 4.000 phí hủy lên 68.000. Các cảnh về 18 suất và 16 suất độc lập. S022, S033, S036 phân biệt số đã trả quán, khoản hỗ trợ và trách nhiệm nội bộ còn chờ.
+- Đã đọc [MHLW về rủi ro của rượu](https://kennet.mhlw.go.jp/information/information/alcohol-summaries/a-01) và mục 他人への飲酒の強要 của [hướng dẫn chính thức MHLW](https://www.mhlw.go.jp/stf/newpage_37908.html) ngày 2026-11-18. Dùng để đối chiếu việc tôn trọng người chọn không uống tại S009 và S028. Các cảnh giữ quyền chọn thức uống, không bàn lượng uống, chẩn đoán hay quy định pháp luật.
+- Đã đọc các mục 誤食の事例, 原因食物の意図しない混入 và phần chia sẻ thông tin với khách trong [CAA về dị ứng khi ăn ngoài](https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/efforts/assets/food_labeling_cms204_240509_03.pdf) ngày 2026-11-18. S009 hỏi dầu và dụng cụ dùng chung, báo phần quán thực sự xác nhận được. S027 rút món đã giao nhầm, bếp kiểm lại và nhân viên nói trực tiếp với khách những gì còn chưa biết. Chỉ phục vụ món thay khi đã xác nhận và khách chọn. Nguồn không xác nhận món ăn riêng.
+
+Đọc lại S011→S012→S015 về giữ tạm và đặt chính thức, S023→S024→S025 về thời điểm chốt phòng trước khi báo nhóm, S037→S038 và S039→S040 về quyền của người phát biểu và lời nhắn tự nguyện.

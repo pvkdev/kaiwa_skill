@@ -111,3 +111,11 @@ Người dự có thể nói rõ không uống, từ chối tăng hai và đổi
 - S034 → S035. S034 chỉ nhận sơ đồ để xem. Câu đùa được thiết lập S033, không có lời chọn chính thức cả ở tiệc lẫn sáng nay.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 35 cảnh theo tiếng Nhật, tiếng Việt và từng cặp lượt, kiểm 15 nhánh nối qua 7 sự kiện. Đã mở B17 bài 忘年会の幹事 và 上司の転勤, B07 mục 167 về 乾杯, B03 Unit 13 mục お酒の席で và B10 mục 談話4. Dùng cho thể thức lời mời, chúc, cảm ơn, chọn đồ uống và chia tay. Rà việc từ chối tự nguyện ở S005, S026–S029. Các nguồn sách không quyết định chính sách tham gia hay gán lịch của công ty trong các cảnh.
+
+Đã đọc ngày 2026-11-18 các mục 誤食の事例, 原因食物の意図しない混入 và điều phối thông tin trong [hướng dẫn dị ứng cho người dùng của CAA](https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/efforts/assets/food_labeling_cms204_240509_03.pdf). S030 hỏi về tôm trong nguyên liệu, sốt và nước dùng. Kiểm thêm dầu/dụng cụ chung và không gọi món nếu chưa rõ. CAA nêu rủi ro lẫn dị nguyên và giới hạn thông tin; không dùng để xác nhận một món cụ thể ăn được.
+
+Kiểm lại sau sửa S013→S015 về ngày xuất khác ngày giao, S022→S025 về ca đã phân và ca chờ và S033→S034→S035 về sơ đồ tham khảo, không phát sinh lựa chọn quán hay đặt chỗ.
