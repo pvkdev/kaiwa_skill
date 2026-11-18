@@ -295,6 +295,11 @@ h1 { margin: 0; max-width: 780px; font-size: clamp(25px, 2.6vw, 36px); font-weig
 .lesson-body { padding: 22px 24px 26px; line-height: 1.8; background: color-mix(in srgb, var(--bg) 55%, var(--surface)); }
 .lesson-body > :first-child { margin-top: 0; }
 .quiet { color: var(--muted); font-size: 13px; }
+.word-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .5rem 1rem; list-style: none; margin: 0; padding: 0; }
+.word-list li { padding: .5rem 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.word-ja { font-size: calc(17px * var(--ja-scale)); }
+.word-sense { display: grid; gap: .15rem; }
+.word-reading { font-size: .82rem; color: var(--muted); }
 .vocabulary-groups { display: flex; flex-wrap: wrap; gap: 9px; padding: 0; margin: 0 0 12px; list-style: none; }
 .vocabulary-groups li { background: var(--surface); border: 1px solid var(--line); border-radius: 11px; padding: 9px 14px; font-size: 14px; }
 .placeholder { display: flex; align-items: center; justify-content: center; text-align: left; gap: 14px; padding: 24px 18px; background: var(--surface); border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); font-size: 13px; }
@@ -624,7 +629,7 @@ if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (["6.5", "8.0"].includes(course.version)) delete types.reading;
-if (/^(7|9|10|11)\./.test(course.version)) {
+if (/^(7|9|10|11|12)\./.test(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
   types.reading.label = "Kiến thức Speak Japanese";
@@ -1113,7 +1118,14 @@ function nodesFor(stage) {
       item.pack_id ? selections.get(item.book_id + "/" + item.pack_id) : null;
     let kind, title;
     switch (item.type) {
-      case "vocabulary_topics": kind = "vocabulary"; title = "Từ vựng theo chủ đề"; break;
+      case "vocabulary_topics":
+        if (stage.vocabulary_nodes) {
+          for (const group of stage.vocabulary_nodes) {
+            result.push({ kind: "vocabulary", title: group.title_vi, group, id: "lesson-" + result.length });
+          }
+          continue;
+        }
+        kind = "vocabulary"; title = "Từ vựng theo chủ đề"; break;
       case "speak_japanese_video": kind = "speak_video"; title = selection.title; break;
       case "speak_japanese_examples": kind = selection.support ? "reading" : "speak_shadow"; title = selection.title; break;
       case "independent_shadowing": kind = selection.support ? "reading" : "shadowing"; title = selection.title; break;
@@ -1155,6 +1167,26 @@ function renderProvenance(selection) {
 function renderBody(node, body) {
   switch (node.kind) {
     case "vocabulary": {
+      if (node.group) {
+        const list = make("ul", "word-list");
+        const readings = current.vocabulary_glosses[node.group.id];
+        for (const ja of node.group.data.terms_ja) {
+          const entry = make("li");
+          const title = make("strong", "word-ja", ja);
+          title.lang = "ja";
+          entry.append(title);
+          for (const sense of readings[ja]) {
+            const row = make("div", "word-sense");
+            const kana = make("span", "word-reading", sense.reading);
+            kana.lang = "ja";
+            row.append(kana, make("span", "vi", sense.vi));
+            entry.append(row);
+          }
+          list.append(entry);
+        }
+        body.append(list);
+        break;
+      }
       const list = make("ul", "vocabulary-groups");
       for (const topic of current.vocabulary) list.append(make("li", "", topic));
       body.append(list, make("p", "quiet", "Các nhóm từ đã định hướng. Danh sách từ cụ thể sẽ được bổ sung khi biên soạn bài."));
@@ -1186,7 +1218,7 @@ function renderBody(node, body) {
 }
 function lessonCount(node) {
   switch (node.kind) {
-    case "vocabulary": return current.vocabulary.length + " nhóm từ";
+    case "vocabulary": return node.group ? node.group.data.terms_ja.length + " từ" : current.vocabulary.length + " nhóm từ";
     case "shadowing": case "speak_shadow":
       return current.shadowing && !node.selection ? current.shadowing.items.length + " câu / đoạn" : "";
     case "situations": return current.situations.length + " tình huống";
@@ -1391,7 +1423,10 @@ function renderHeading() {
   } else {
     stats.append(stat(current.situations.length, " tình huống"), stat(current.events.length, " sự kiện"));
     if (current.shadowing) stats.append(stat(current.shadowing.items.length, " câu / đoạn shadowing"));
-    if (current.vocabulary.length) stats.append(stat(current.vocabulary.length, " nhóm từ"));
+    if (current.vocabulary_nodes) {
+      const count = current.vocabulary_nodes.reduce((sum, group) => sum + group.data.terms_ja.length, 0);
+      stats.append(stat(count, " từ vựng"));
+    } else if (current.vocabulary.length) stats.append(stat(current.vocabulary.length, " nhóm từ"));
   }
   hero.append(stats);
   const meta = make("div", "stage-meta");
@@ -1723,7 +1758,9 @@ addEventListener("hashchange", () => {
 /* ───────────── Start ───────────── */
 if (course.pilot_stages?.length) {
   $("pilot-links").hidden = false;
-  $("pilot-summary").textContent = "Chặng pilot (" + course.pilot_stages.length + ")";
+  const vocabularyPilot = course.version === "12.0-pilot";
+  $("pilot-links").open = vocabularyPilot;
+  $("pilot-summary").textContent = (vocabularyPilot ? "Pilot từ vựng" : "Chặng pilot") + " (" + course.pilot_stages.length + ")";
   for (const uid of course.pilot_stages) {
     const stage = byId.get(uid);
     if (!stage) continue;
