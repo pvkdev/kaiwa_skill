@@ -79,3 +79,23 @@
 Rà độc lập toàn bộ chặng.
 
 Đọc lại lượt hỏi trống đang bỏ trống và lời mời thực hiện lần cuối ở S010. Điểm nối S008 → S010 giữ chờ tới lúc được gọi và thử thật trước lời cảm ơn.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc chương trình trên [Yamanashi City 夏をどり Festival](https://www.city.yamanashi.yamanashi.jp/soshiki/16/1769.html), tách phần các nhóm biểu diễn với Bon odori ai cũng có thể tham gia ở khung khác. Giờ 17:50/18:00, trống và nghi thức riêng thuộc khu phố giả định. Đọc B11 mục よね dòng 6–32 về kiểm mốc hẹn và điều cùng hiểu.
+
+## Rà độc lập Batch05 · E03
+
+Ngày 2026-11-18 đọc [MAFF, 全国のいろいろな雑煮](https://www.maff.go.jp/j/pr/aff/2001/spe2_03.html) về ozōni đầu năm và những khác biệt của nước dùng, bánh và rau theo vùng. Việc để phần trước ảnh và lý do ở E03 là của gia đình giả định. Đọc B08 mục host family dòng 553–580 về hỏi riêng thói quen và cảm ơn chủ nhà.
+
+## Rà độc lập Batch05 · E04
+
+Đọc B17 dòng 63–71 về mốc Obon có thể khác theo địa phương và lịch làm, dùng để mở câu hỏi. Cách múa, bài hát và treo đèn là lời kể từng khu trong cảnh. Nguồn MAFF ở E03 có ví dụ bánh được nướng hoặc không nướng; không gán cách riêng của Yamamoto cho khu vực.
+
+## Rà độc lập Batch05 · E05
+
+Đọc B05 dòng 146–172 về báo đồ thất lạc ở đúng khu, mô tả vật và hẹn hỏi lại. Tên hoạt động, quầy nhận và phân công sự kiện đều thuộc ví dụ giả định.
+
+## Rà độc lập Batch05 · E06
+
+Ngày 2026-11-18 đọc phần hiện trong kết quả chính thức của [Studio Alice, quy trình đặt chụp](https://reserve.studio-alice.co.jp/) vì mở trực tiếp trả 403, và đọc trang đầy đủ [gói nhập học](https://www.studio-alice.co.jp/shortcut/school/) cùng [FAQ đặt tại studio](https://www.studio-alice.co.jp/faq/reservation.html). [FAQ chụp ngoại cảnh](https://www.studio-alice.co.jp/faq/location_reservation.html) chỉ xem phần kết quả chính thức về hỏi đổi lịch. Tách ngoại cảnh và tại studio; không suy điều kiện đổi, phí hay gói của Studio Alice sang cảnh. Giá, mốc, điều kiện dời và cách đối chiếu ảnh trong E06 là giao dịch giả định. Đọc B08 mục dùng ảnh chỉ yêu cầu dòng 892–916.

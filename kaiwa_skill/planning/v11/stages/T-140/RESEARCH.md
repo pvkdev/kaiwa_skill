@@ -49,3 +49,11 @@
 Rà độc lập toàn bộ chặng.
 
 Đọc lại S008 → S010 và S011 → S014 → S015 sau khi sửa lời người nhà cho đúng vai. S014 xác nhận đúng nhà thi đấu đã tới, không nhắc trường THCS của nhánh hết chỗ.
+
+## Rà độc lập Batch05 · E01
+
+Ngày 2026-11-18 đọc [横浜市, nơi lánh nạn khi mưa/lũ](https://www.city.yokohama.lg.jp/bousai-kyukyu-bohan/bousai-saigai/moshimo/wagaya/default20.html), cập nhật 2026-10-27, về kiểm nơi mở theo quận/thời điểm. Đọc [防災マップ](https://www.bousai.go.jp/kyoiku/bousaimap/sonota2.html) về bàn trước địa chỉ và liên lạc của gia đình, cùng [NTT East 171](https://www.ntt-east.co.jp/saigai/voice171s/intro.html) mục cung cấp và số đăng ký. Sakura và giấy diễn tập đều hư cấu.
+
+## Rà độc lập Batch05 · E02
+
+Ngày 2026-11-18 kiểm [hướng dẫn sửa tháng 3/2026](https://www.bousai.go.jp/oukyu/hinanjouhou/r3_hinanjouhou_guideline/index.html) và [poster 避難情報](https://www.bousai.go.jp/oukyu/hinanjouhou/r3_hinanjouhou_guideline/pdf/poster.pdf) về cấp 3, cấp 4 và nơi đã an toàn. [JMA](https://www.jma.go.jp/jma/kishou/know/bosai/keiho-update2026/index.html) nêu cấp tương ứng của thông tin thời tiết; S009 là chỉ thị sơ tán của thành phố cho khu cụ thể, không suy từ tên cảnh báo thời tiết. Tên điểm, đường và điều phối viên giả định. Đọc B05 dòng 119–143 về chỉ dẫn ngắn theo nhân viên.

@@ -72,3 +72,10 @@ Thứ Hai đã khám và thứ Năm có hẹn gặp lại chuyên viên. Đó l�
 - S018 → S019. S018 Matsui tiếp quản phản hồi khách vì lịch chưa rõ. Nay chốt riêng một buổi làm phù hợp thông tin chuyên môn, chưa ấn định trở lại đầy đủ.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 19 cảnh và 14 cạnh. Đã mở B03 Unit 18 về báo thông tin cần thiết, B15 bài 7 về bàn giao phần việc, B12 bài 38 về bổ sung thông tin. Ở E01 người trong kho đã có chỗ an toàn, bài lấy chức năng nói vị trí ở nguồn 119 để điều người nội bộ, không gộp hai đầu mối. [119番緊急通報｜総務省消防庁](https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html)
+
+- S014 chỉ nơi hỏi thủ tục và quyền lợi 労災保険 là thanh tra. Doanh nghiệp có thể xác nhận hồ sơ của mình, không quyết có chi trả bảo hiểm. Không nêu mức tiền hoặc cách nộp trong chặng. [労働災害が発生したとき](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/rousai/index.html) [業務中の傷病と労災保険の給付](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000154453.html)
+- S019. Mục 5 của hướng dẫn áp dụng từ 1/4/2026 nêu doanh nghiệp xem ý kiến y tế, trao đổi với người lao động và sắp xếp biện pháp theo trường hợp. Giới hạn ba giờ và không mang hàng là chỉ định riêng của nhân vật sau khám, không phải tiêu chuẩn y tế chung. Rà ngày 18/11/2026. Nhóm chỉ thử xác nhận dữ liệu sáng thứ Hai 9–12 giờ và đánh giá lại vào cuối ca. [治療と就業の両立支援指針｜厚生労働省](https://www.mhlw.go.jp/web/t_doc?dataId=75ac0780)

@@ -66,3 +66,13 @@ Tra catalog27 教習・運転免許・技能・入校・日程・予約・用件
 - S025 · `75bd940f-abc9-53bf-8e92-b281f275ceb4`. u02–u04 tách đã đặt buổi Chủ Nhật 15 giờ khỏi đánh giá chưa đăng ký, có check lại tại quầy theo nhận xét.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc B21, B04 và B12 về đổi lịch, xác nhận lại và hỏi giáo viên. Đối chiếu NPA về thay đổi quy trình từ 1/10/2025, 警視庁 về đặt hẹn và nơi thụ lý, cùng JAF về mục đích dịch bằng. Ở Tokyo, Fuchū và Samezu tiếp nhận hồ sơ đổi bằng của mọi nước/vùng theo quy trình tương ứng. Kōtō chỉ dành cho nhóm được nêu riêng. Một số hồ sơ phải xác minh bằng còn hiệu lực, thời gian cư trú tại nơi cấp sau khi có bằng và giấy cư trú theo diện. Cảnh cho người học hỏi nơi có thẩm quyền, không khẳng định đã đủ giấy hay đặt được hẹn. [Cảnh sát Tokyo](https://www.keishicho.metro.tokyo.lg.jp/menkyo/menkyo/kokugai/kokugai05.html) · [NPA](https://www.npa.go.jp/hakusyo/r08/honbun/html/cc5533000.html) · [JAF](https://jaf.or.jp/common/visitor-procedures)
+
+Hiệp hội Tokyo và trường Musashisakai dùng để đối chiếu cách hỏi nhập học, lịch và gói thực hành. Hạn 18 giờ, thời gian đến sớm, phí và danh sách giấy cho trường hợp trong bài do trường giả định xác nhận. Các cảnh trong xe diễn ra tại bãi trường, tập xin nhắc trước khi thao tác. [Hiệp hội trường lái Tokyo](https://www.tadsa.or.jp/flow/) · [Musashisakai](https://musasisakai-ds.co.jp/plan/pd/)
+
+### Đối chiếu thêm S004 về nơi hỏi và cách đặt hẹn
+
+Trên trang cập nhật 17/11/2026, mục 実施場所 nêu Fuchū và Samezu là nơi làm thủ tục cho người có bằng của mọi nước/vùng sau khi đặt; mục 問合せ先 có cả hai trung tâm. Kōtō chỉ nhận nhóm được miễn cả kiểm tra kiến thức và kỹ năng, danh sách không có Việt Nam. Mục 外国免許の切替えに伴う予約制について tách đặt qua web theo điều kiện cư trú ở Tokyo và thời gian ở nước cấp sau khi có bằng, cùng nhóm riêng đặt bằng điện thoại. Mục 必要書類 dẫn giấy tờ theo nước cấp; bảng mục Việt Nam ghi thêm xác nhận từ đại sứ quán. Nhân vật chưa xác minh hồ sơ nên hai trung tâm được giới thiệu là nơi hỏi, còn lịch hẹn và hồ sơ phải đối chiếu theo trường hợp. [Cảnh sát Tokyo — Đổi bằng, các mục 実施場所, 問合せ先, 予約制 và 必要書類](https://www.keishicho.metro.tokyo.lg.jp/menkyo/menkyo/kokugai/kokugai05.html) · [Cảnh sát Tokyo — Bảng giấy tờ theo nước, mục ベトナム](https://www.keishicho.metro.tokyo.lg.jp/menkyo/menkyo/kokugai/kokugai05.files/kunibetu_j.pdf)

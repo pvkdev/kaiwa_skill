@@ -57,3 +57,7 @@ Tra catalog27 キャンプ・バーベキュー・旅行・天気・予約・撤
 - S013 → S015. Nhóm về sớm, bếp và kẹp của khu đã trả tại quầy, nay tìm hộp lạnh riêng của nhóm trên xe Huy, hẹn Linh lấy lần gặp sau.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc B17/B26/B21 và so quy định của hai công viên. Hiệp hội Công viên Tokyo phân biệt nơi cho thuê dụng cụ và nơi chỉ nhận đặt chỗ. Shiokaze nhận thuê/dùng đồ mang theo theo điều kiện của mình; Oyamadairi giới hạn dùng lửa ở khu BBQ đã đặt. Khung giờ, khu có bàn và quy trình nhận đồ trong bài thuộc cơ sở giả định. JMA yêu cầu vào nơi kiên cố ngay khi nghe sấm; S012→S013 chờ ở trong, chỉ quay ra lấy đồ khi hết sấm và nhân viên nói có thể. Bộ Nông Lâm Thủy sản hướng dẫn dùng hộp giữ lạnh và dùng dụng cụ riêng cho đồ sống/chín. [Hiệp hội Công viên Tokyo](https://www.tokyo-park.or.jp/inquiry/list_bbq/index.html) · [Shiokaze](https://www.tokyo-park.or.jp/special/bbq/shiokaze.html) · [Oyamadairi](https://www.tokyo-park.or.jp/special/bbq/oyamadairi.html) · [JMA](https://www.jma.go.jp/jma/kishou/know/toppuu/thunder4-3.html) · [Bộ Nông Lâm Thủy sản](https://www.maff.go.jp/j/syouan/seisaku/foodpoisoning/camp.html)

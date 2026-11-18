@@ -72,3 +72,7 @@ Tra catalog27 出張・訪問・アポイント・打ち合わせ・連絡・報
 - S018 → S019. Morita đã xác nhận bằng email điểm nhận và người nhận. Trưởng nhóm bật đèn xanh chuyển yêu cầu gửi 3 mẫu cho kho, chưa xác nhận bản thân đã gửi hay chốt đặt hàng.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc các đoạn B03, B10, B21 và B04 về báo sự việc, hẹn gặp, tự giới thiệu qua điện thoại và hỏi đúng người. Smart EX tách đổi trước khi vào cổng/nhận vé khỏi các trường hợp sau đó và theo sản phẩm. S003 chỉ kiểm đặt chỗ thực tế của Linh, không hứa phí. Hướng dẫn khi trễ nêu mốc dự kiến có thể thay đổi, S009 tách hai mốc và hẹn báo lại. FAQ Toyoko Inn minh họa nhận giữ hành lý trước giờ vào phòng; S014 dùng cơ sở giả định, còn chỗ chuẩn bị tài liệu phải hỏi tiếp. [Smart EX — Đổi đặt](https://smart-ex.jp/reservation/change/) · [Smart EX — Tàu trễ](https://smart-ex.jp/reservation/guide/delay_reserve/) · [Toyoko Inn](https://www.toyoko-inn.com/faq/content?cd=12&facility_cd=toyoko-inn-qa&h=&intent_cd=inquiry.checkin_start_time&lang=ja&member_id=a3a9982a-1557-64be-f535-662efe7f86a2&sub_intent_cd=)

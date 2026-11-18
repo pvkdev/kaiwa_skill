@@ -56,3 +56,12 @@ Công ty phái cử ký hợp đồng, quản lý dây chuyền ở nơi tiếp 
 - S020 · `0be377a0-8f09-5a31-881b-974a1725ce3f`. Yến u01/u03 chỉ đúng giờ và yêu cầu người đồng hành/địa điểm. Abe chốt gặp quầy trước, lối thay đang kiểm.
 
 Đã đọc riêng lời Nhật và lời Việt, đối chiếu hai vai rồi đọc nối các cạnh đã ghi.
+
+## Rà độc lập — 2026-11-18
+
+Đã đọc 20 cảnh trong 5 sự kiện. Brief V10 không có cạnh continues_from. Đã mở B08 trang PDF20 về gọi người đến và nêu chỗ đau, B03 Unit 17 về hỏi và nhắc đúng người, giờ và nơi. Đối chiếu hai mặt tài liệu MHLW dành cho lao động, gồm ví dụ bị tấn công, miệt thị, nhận hỗ trợ nội bộ và tư vấn bên ngoài. Các cảnh ưu tiên tách khỏi nguy hiểm, ở cùng người hỗ trợ và gọi khẩn khi cần. [職場でつらい思いをしていませんか？｜厚生労働省](https://www.mhlw.go.jp/content/11900000/001225659.pdf)
+
+- S001/S014. Cảnh sát 110 khi có nguy hiểm cần can thiệp ngay. Giữ phạm vi này ở lời thoại, không dùng cho hỏi tư vấn thông thường. [警察庁](https://www.npa.go.jp/goiken_index.html)
+- S004. Khi cần xe cấp cứu gọi 119 ngay, báo địa chỉ, nơi người bị thương đang ở và tình trạng, làm theo câu hỏi của tổng đài. Quầy nội bộ có thể hỗ trợ song song. [総務省消防庁](https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html)
+- E02. Đối chiếu giờ thực tế, ghi nhận khách quan và giờ đã khai. S005–S008 tập trình bày dòng chưa đúng và quyền hỏi, không quyết số tiền hay kết luận vi phạm. [大阪労働局](https://jsite.mhlw.go.jp/osaka-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/hourei_seido/jikan2/kokuji/kokuji2.html)
+- E05. Mục 労働者派遣事業とは tách quan hệ việc làm tại bên phái cử và lời chỉ đạo trực tiếp ở bên tiếp nhận. Dùng cho hai đầu mối phối hợp trong E05, với chỗ gặp và giờ do tình huống đặt ra. Đã sửa đường dispatch trả 404 sang URL chính thức. Tài liệu 派遣先の講ずべき措置 mục 1–2 dùng cho hai bên phối hợp xử lý phản ánh. [労働者派遣事業｜厚生労働省](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/roudoushahakennjigyou.html) [派遣先の講ずべき措置｜厚生労働省](https://www.mhlw.go.jp/content/001370974.pdf)

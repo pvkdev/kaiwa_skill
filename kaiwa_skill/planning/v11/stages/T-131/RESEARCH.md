@@ -76,3 +76,7 @@ Tra catalog27 theo 駐車・車室・整備・異音・見積もり・問い合�
 - S024 → S025. Cố vấn xác nhận lại vị trí và thời điểm, kiểm xe trước khi làm, sau đó ghi đã chỉnh điểm gắn và không thấy tiếng ở lượt thử. Không thu thêm lần kiểm lại theo hồ sơ, dặn báo lại nếu tái phát.
 
 Đã đọc Nhật và Việt riêng, thử đổi vai và đọc nối từng cạnh, trở về điểm rẽ trước khi sang nhánh khác. Chờ rà độc lập.
+
+## Rà độc lập ngày 2026-11-18
+
+Đã đọc B21/B27 và kiểm các trang Times về loại hợp đồng, giá tối đa và vé trả ra khỏi máy. Phí, giới hạn xe, chỉ dẫn bãi và hỗ trợ trong bài thuộc nơi giả định. JAF yêu cầu ưu tiên an toàn khi nghe tiếng lạ và gọi hỗ trợ mô tả tình trạng; nhân vật đã đỗ hợp lệ, không tự chẩn đoán hoặc tiếp tục chạy. Bộ Giao thông tách kiểm/bảo dưỡng với kiểm định 車検. Quy trình Toyota chỉ tham khảo cách giải thích hạng mục và việc phát sinh trước giao xe, không chuyển giá hay chế độ vào cảnh. [Times — Loại hợp đồng](https://times-info.net/monthly/faq/08/) · [Times — Giá tối đa](https://times-info.net/info/max_fee/) · [Times — Vé không nhận](https://times-info.net/faq/06/) · [JAF](https://jaf.or.jp/common/car-trouble-qa/engine-malfunction/noise/faq47) · [Bộ Giao thông](https://wwwtb.mlit.go.jp/tohoku/am/am-sub03-031.html) · [Toyota](https://toyota.jp/after_service/shaken/about/?padid=from_after_service_syaken_flow_1)
