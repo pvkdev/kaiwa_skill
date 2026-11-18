@@ -64,3 +64,38 @@
 - S018 → S019. Đúng thứ Năm 10 giờ, khách đã xem và phản hồi về mục lỗi. Arai nhận sửa, khách nhận xem phiên bản mới.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+
+Điểm nối. S001 có đầu mối Hayashi và lịch 9 giờ phòng B; S003 nối vai vận hành sang việc giá phải qua kinh doanh. S002 xác định thẻ và phòng hồ sơ cần người dẫn; S004 nối từ quyền vào đó, chỉ làm khung tại công ty mình rồi sáng sau quay lại B.
+
+Đã đọc B10 bài thăm đối tác dòng 173–184, 189–212 về xác nhận đầu mối, chỗ đến, kết chuyến, cùng B03 Unit 18 dòng 23–40 và 62–69 về báo thay đổi và xin ý kiến kèm phương án. Phòng B, thẻ khách và quyền vào thuộc công ty trong cảnh.
+
+## Rà độc lập Batch04 · E02
+
+- S005 · `e1e1af59-e2fe-5651-95b8-2ff0ad123cfe-u03`. Dùng một bước đã xác nhận và một điểm xem tiếp cho báo 16 giờ. Việt ghi rõ cả hai phần mỗi phần một mục như 一つずつ.
+- S008 · `4a36b072-6d31-525b-9a5c-7681df8c0a05-u02`. Bối cảnh trước ghi 'sau 14 giờ', nhưng lời thoại hẹn 14 giờ đã có thể cùng kiểm nếu dữ liệu đủ. Đổi bối cảnh cho khớp mốc và độ chắc.
+
+Điểm nối. S005 phạm vi bản quy trình thứ Sáu và báo mỗi ngày 16 giờ. S006 giữ trước yêu cầu báo cáo tháng ở ngoài phạm vi, hỏi lý do rồi phải xin công ty. S007 chưa có dữ liệu thật nên làm luồng thường bằng mẫu, S008 có thể có lúc 14 giờ, đổi thứ tự và giữ cập nhật 16 giờ nếu còn thiếu.
+
+## Rà độc lập Batch04 · E03
+
+- S012 · `4e5e9947-cda5-521c-bf23-c5bc9b228d62-u01`. Arai thực sự hỏi phần luồng thường có đủ cho cuộc họp, khớp việc đã nhận ở S010. Hayashi trả lời có và dùng đúng như bản tạm.
+
+Điểm nối. S009 khách xin sớm thứ Năm và Arai mới hẹn hỏi nội bộ. S010 duyệt cho xem phần thường 15 giờ, S011 quay về S009, không giao sớm và chỉ nói miệng phần đã xác minh. S012 theo S010, báo đúng bản đang làm và Hayashi xác nhận đủ dùng để họp.
+
+## Rà độc lập Batch04 · E04
+
+- S014 · `6270bcfd-9c60-5ba3-a50d-0ceffdfa3cf7-u04`. Hayashi cần hiểu tổng thời gian. Làm rõ phép dùng tổng của mẫu để minh họa, riêng trung bình thật hiện còn thiếu.
+- S015 · `a4e6698a-d1d4-5aad-8988-85a3fafd345d-u01`. Bản tạm cung cấp tổng thời gian của một đơn mẫu và cách tính trước 10:30. Ghi nhãn trên bảng để tránh dùng như số trung bình thật.
+- S016 · `342970cd-0e0a-570e-ac5f-99b8ea32fa01-u02`. Hayashi dùng đúng tổng mẫu để minh họa cách tính. Arai giữ 16 giờ là cập nhật dữ liệu, không hứa đã có số thật.
+
+Điểm nối. S013 xử lý đúng đầu mối quyền xem, Hayashi dẫn 10 giờ. S014 riêng họp 11 giờ, chỉ cần tổng thời gian tham khảo. S015 bản một đơn mẫu trước 10:30 có tổng thời gian mẫu và cách đo; S016 chỉ dùng minh họa và chờ dữ liệu thật, Arai báo số đơn và phần còn thiếu lúc 16 giờ.
+
+## Rà độc lập Batch04 · E05
+
+- S018 · `34328eca-1676-5ed3-803d-f53728619e01-u02`. Gọi 'bản đã giao' vì chưa xác nhận điểm liên hệ, không làm người học tưởng đã là bản hoàn tất. Giữ thứ Tư hỏi người trực và thứ Năm 10 giờ bên Arai gọi.
+- S019 · `c4021763-1488-5ae2-8361-39d8e658ae64-u03`. Khách sửa đúng đầu mối chiều tối. Arai nhận sửa trong sáng mai và Hayashi sẽ kiểm với người trực, nên dịch đúng chưa phải bản cuối.
+
+Điểm nối. S017 đã giao đủ luồng thường/ngoại lệ nhưng còn hỏi đầu mối theo ca. S018 chưa xem và hẹn 10 giờ thứ Năm; S019 gọi đúng, phải tách quầy buổi trưa và trực vận hành buổi tối, Arai sửa và gửi trong sáng mai. S020 là lời chia tay, Arai giữ phần đang mở và Sato nhận việc mới.

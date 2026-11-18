@@ -46,3 +46,7 @@ S013→S014→S015: giao sáng mai 9 giờ, cổng A cũ, B chỉ đang đề ng
 - S013 · `ba787c64-8844-52cd-83f6-de5008babee9` · u01, u03, u05. Nam nêu giờ và hai cổng, giữ B là đề nghị. Ca sau biết ai trả lời và hỏi lại 16:45 nếu chưa có thông tin.
 - S014 · `748f8cfb-2629-53dd-9b2f-353ebbba9451` · u02, u04, u05. Ghi chú cũ thiếu chữ đề nghị; Nam làm rõ B chờ khách, A là kế hoạch hiện tại. Ca sau cập nhật nhãn chờ.
 - S015 · `0b1718b8-b891-597d-9981-0d40c0a50424` · u01, u03, u05. Rika chủ động báo sau ca, ghi tên Kobayashi và 16:40, giữ giờ 9. Đã báo điều xe và họ nhận tin, không khẳng định đã giao hàng.
+
+## Rà độc lập V11 batch04
+
+Đọc B03 Unit 18 dòng 27–40 về báo cụ thể trước và liên hệ người chịu ảnh hưởng, dòng 63–67 về trình phương án đã cân nhắc. Đọc lời Lâm và Kawakami trong B15 CD 09 dòng 16–44 về tách điều ảnh cho thấy với hiện vật cần xác minh và chia việc. Chặng giữ rõ nhận nội bộ, xuất đi và khách đã nhận qua từng cuộc trao đổi.

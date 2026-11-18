@@ -97,6 +97,13 @@
       "url": "https://www.ana.co.jp/ja/jp/guide/boarding-procedures/baggage/domestic/accident/",
       "accessed": "2026-11-18",
       "use_vi": "Báo nhân viên sân bay đến để lập báo cáo khi không nhận được. Đầu mối của ANA tùy sân bay đến. Chưa có kết quả tìm kiếm thì không hứa giao lại."
+    },
+    "boarding-rule": {
+      "kind": "web",
+      "title": "ANA Boarding procedures for Japan Domestic Flights",
+      "url": "https://www.ana.co.jp/en/jp/guide/boarding/dom_info/",
+      "accessed": "2026-11-18",
+      "use_vi": "Tại cổng có bước hướng dẫn trước cho khách cần hỗ trợ, sau đó lên theo thứ tự nhóm. S006 và S007 là các trường hợp người đi hỏi trực tiếp tại cổng."
     }
   },
   "dialogues": [
@@ -249,8 +256,8 @@
         {
           "id": "be1dca85-2984-50a3-bf06-1618d88328a1-u01",
           "speaker_id": "A",
-          "ja": "このスーツケースは機内に持ち込めますか。預けますか。",
-          "vi": "Chiếc vali này tôi mang lên máy bay được không, hay phải ký gửi ạ?"
+          "ja": "このスーツケースは機内に持ち込めますか。それとも、預けたほうがいいですか。",
+          "vi": "Chiếc vali này tôi mang lên máy bay được không, hay nên ký gửi ạ?"
         },
         {
           "id": "be1dca85-2984-50a3-bf06-1618d88328a1-u02",
@@ -392,8 +399,8 @@
         {
           "id": "14ec82bb-587f-503a-b682-f85d6c50d41d-u02",
           "speaker_id": "B",
-          "ja": "はい。五十一番から五十三番に変わりました。右に進んでください。",
-          "vi": "Vâng. Đổi từ cổng 51 sang 53. Chị đi về bên phải nhé."
+          "ja": "はい。五十一番から五十三番に変わりました。五十三番の表示に沿ってお進みください。",
+          "vi": "Vâng. Đổi từ cổng 51 sang 53. Chị đi theo biển chỉ cổng 53 nhé."
         },
         {
           "id": "14ec82bb-587f-503a-b682-f85d6c50d41d-u03",
@@ -477,7 +484,8 @@
       "admin": {
         "source_refs": [
           "boarding",
-          "checkin"
+          "checkin",
+          "boarding-rule"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -540,7 +548,8 @@
       ],
       "admin": {
         "source_refs": [
-          "assist"
+          "assist",
+          "boarding-rule"
         ],
         "specialty_item_ids": [],
         "turn_origins": {
@@ -597,8 +606,8 @@
         {
           "id": "95e81687-77c3-54c5-9f93-3b763d68c07e-u04",
           "speaker_id": "B",
-          "ja": "近くのＡＮＡの案内カウンターへお越しください。予約を確認します。",
-          "vi": "Chị đến quầy hỗ trợ ANA gần đây nhé. Nhân viên sẽ kiểm tra đặt chỗ cho chị."
+          "ja": "ＡＮＡの案内カウンターにお越しください。搭乗券をお見せください。",
+          "vi": "Chị đến quầy hỗ trợ ANA và đưa thẻ lên máy bay cho nhân viên xem nhé."
         },
         {
           "id": "95e81687-77c3-54c5-9f93-3b763d68c07e-u05",
@@ -873,8 +882,8 @@
         {
           "id": "62305003-588e-54a8-9134-771b753c7c2b-u03",
           "speaker_id": "B",
-          "ja": "四時ごろ、空港の表示でお知らせします。アプリの通知もご確認ください。",
-          "vi": "Khoảng bốn giờ chúng tôi cập nhật trên bảng sân bay. Chị cũng kiểm tra thông báo trong ứng dụng nhé."
+          "ja": "午後四時ごろ、空港の表示でお知らせします。ＡＮＡアプリの通知をオンにしていれば、そちらでも確認できます。",
+          "vi": "Khoảng bốn giờ chiều chúng tôi cập nhật trên bảng sân bay. Nếu đã bật thông báo của ứng dụng ANA, chị xem ở đó cũng được ạ."
         },
         {
           "id": "62305003-588e-54a8-9134-771b753c7c2b-u04",
@@ -925,14 +934,14 @@
         {
           "id": "58722137-6ea9-5814-a596-a8b28080398f-u01",
           "speaker_id": "A",
-          "ja": "羽田から着いたＡＮＡ便です。荷物はどこで受け取りますか。",
-          "vi": "Tôi vừa đến trên chuyến ANA từ Haneda. Tôi lấy hành lý ở đâu ạ?"
+          "ja": "羽田から着いたＡＮＡ便です。搭乗券はこれです。荷物はどこで受け取りますか。",
+          "vi": "Tôi vừa đến trên chuyến ANA từ Haneda. Đây là thẻ lên máy bay của tôi. Tôi lấy hành lý ở đâu ạ?"
         },
         {
           "id": "58722137-6ea9-5814-a596-a8b28080398f-u02",
           "speaker_id": "B",
-          "ja": "その便のお荷物は三番です。",
-          "vi": "Hành lý chuyến đó ở băng số 3 ạ."
+          "ja": "三番のベルトでお受け取りください。",
+          "vi": "Chị nhận hành lý tại băng số 3 ạ."
         },
         {
           "id": "58722137-6ea9-5814-a596-a8b28080398f-u03",
@@ -1109,7 +1118,7 @@
     {
       "situation_uid": "ca788a79-109c-52f9-813b-346bf9c02bef",
       "event_id": "E04",
-      "context_vi": "Bạn đã báo quầy ANA ở Fukuoka về chiếc vali đen dây đai đỏ chưa ra băng chuyền. Trước khi rời sân bay, bạn hỏi sau đó liên hệ đâu và cần giữ thông tin gì.",
+      "context_vi": "Bạn đã làm thủ tục báo với quầy ANA ở Fukuoka về chiếc vali đen dây đai đỏ chưa ra băng chuyền. Trước khi rời sân bay, bạn hỏi sau đó liên hệ đâu và cần giữ thông tin gì.",
       "speakers": [
         {
           "id": "A",
@@ -1132,8 +1141,8 @@
         {
           "id": "ca788a79-109c-52f9-813b-346bf9c02bef-u02",
           "speaker_id": "B",
-          "ja": "この紙の番号にお電話ください。福岡空港のＡＮＡの手荷物窓口です。",
-          "vi": "Chị gọi số trên giấy này nhé. Đây là bộ phận hành lý ANA tại sân bay Fukuoka."
+          "ja": "この紙の連絡先にお電話ください。福岡空港で受け付けたお荷物のお問い合わせ先です。",
+          "vi": "Chị gọi số trên giấy này nhé. Đây là đầu mối hỏi về hồ sơ hành lý tiếp nhận tại sân bay Fukuoka."
         },
         {
           "id": "ca788a79-109c-52f9-813b-346bf9c02bef-u03",
@@ -1144,7 +1153,7 @@
         {
           "id": "ca788a79-109c-52f9-813b-346bf9c02bef-u04",
           "speaker_id": "B",
-          "ja": "こちらの受付番号をお伝えください。引き換え証もお持ちください。",
+          "ja": "こちらの受付番号をお伝えください。引き換え証も保管してください。",
           "vi": "Chị báo mã hồ sơ ở đây nhé. Chị giữ cả phiếu hành lý."
         },
         {

@@ -52,3 +52,51 @@
 - ca788a79-109c-52f9-813b-346bf9c02bef (S016). A u01 hỏi đầu mối sau khi rời, B u02 đưa giấy có quầy ANA tại Fukuoka. A u03 kiểm số cần báo, B u04 dặn giữ mã hồ sơ và phiếu.
 
 - Rà lại 7084fd80-012e-52b8-90b8-37fd6dc1176c lượt 5. Sau khi khách đồng ý, nhân viên xử lý xong ngay trong cảnh. Rà nhánh khác vẫn giữ giờ dự kiến hoặc đợi thông báo, không mang việc đã đổi sang đó.
+
+### Kiểm độc lập E01
+
+S001 chuyến ANA khai thác Haneda–Fukuoka đi nhà ga 2, quầy tầng 2. S002 đang ở nhà ga 1 nên xuống lối nối ngầm công cộng. S003 vali 12 kg phải ký gửi do mức 10 kg tổng hành lý mang lên của ANA nội địa. S004 tách máy ảnh sang túi nhỏ được nhân viên kiểm.
+
+- Đọc B27 dòng 1917–1923 về hỏi nơi lên phương tiện theo điểm đến. Mở FAQ Haneda dòng 131–147 và ANA Haneda nhà ga 2 dòng 108–147 ngày 2026-11-18. Xác nhận ANA nội địa, quầy khởi hành tầng 2 và nhóm cổng 51–57. https://tokyo-haneda.com/faq/flights_procedures.html https://www.ana.co.jp/ja/jp/guide/prepare/airport-guide/domestic/hnd02/
+
+- Mở trang Haneda ターミナル間移動, mục 地下連絡通路 T1・T2, dòng 180–185. Hành lang đi bộ được cả khi băng chuyền tạm ngừng. https://tokyo-haneda.com/access/travel_between_terminals/index.html
+
+- Mở ANA Carry-on Baggage Size and Rules dòng 70–103, ANA 手荷物のお預け方法 dòng 97–111 và quy định đồ dễ vỡ dòng 75–78. Mức 10 kg là tổng một kiện và một đồ cá nhân trên chuyến ANA nội địa. Máy ảnh được xếp trong nhóm không nên ký gửi. Khả năng ký gửi và mang túi dựa vào kiểm của nhân viên ở cảnh. https://www.ana.co.jp/en/jp/guide/boarding-procedures/baggage/domestic/carry-rule/ https://www.ana.co.jp/ja/jp/guide/boarding-procedures/baggage/domestic/checked-in/ https://www.ana.co.jp/ja/jp/guide/boarding-procedures/baggage/fragile/
+
+- S003 (be1dca85-2984-50a3-bf06-1618d88328a1), 03. Hỏi có thể ký gửi tại quầy sau khi biết vali riêng đã vượt mức tổng xách tay. Lời hỏi Nhật nêu hai khả năng bằng mẫu tự nhiên.
+
+### Kiểm độc lập E02
+
+S005 cổng giả định chuyển 51 sang 53. S006 khách đã chờ đúng cổng, chỉ nghe lượt hỗ trợ rồi đợi nhóm mình. S008 trong nhánh khác đến sau khi đã dừng lên, hỏi đúng quầy. S007 mở riêng, hai mẹ con đã yêu cầu hỗ trợ từ trước và kiểm chỗ đợi.
+
+- Đọc B25 dòng 2673–2679 về 搭乗 và チェックイン. Mở ANA Boarding procedures ngày 2026-11-18, phần Pre-boarding processing service và By Boarding Group. Hãng nêu việc hỗ trợ trước và thứ tự nhóm. https://www.ana.co.jp/en/jp/guide/boarding/dom_info/
+
+- Mở ANA 歩行の不自由なお客様 dòng 136–173 và nội dung check-in ở sân bay, dòng 118–125 về tới cổng đúng hạn. Mốc trong cảnh được nhân viên xác định theo chuyến, không dạy mốc tổng quát và không coi yêu cầu đi cùng được tự động duyệt. https://www.ana.co.jp/ja/jp/guide/flight_service_info/assist/walking/ https://www.ana.co.jp/ja/jp/guide/boarding-procedures/checkin/domestic/flow_airport/
+
+- S005 (14ec82bb-587f-503a-b682-f85d6c50d41d), 03. Chốt cổng 53 sau khi nghe thông báo đổi. Chỉ dẫn theo biển cổng thay cho hướng phải không xác định vị trí xuất phát.
+
+- S006 (db251698-86a1-51e4-94b8-c119a0a277cf), 03. Hỏi rõ còn đợi được ở đây; nhân viên nói lượt trước dành khách cần hỗ trợ và chỉ đi khi gọi nhóm. Nguồn bổ sung đúng ANA nội địa.
+
+- S007 (2409deb0-ab86-5aef-bdcb-79e589e8b11a), 03. Kiểm người đi cùng mẹ có thể cùng được hướng dẫn. Đây là hai khách đã yêu cầu hỗ trợ và hỏi trực tiếp ở cổng.
+
+- S008 (95e81687-77c3-54c5-9f93-3b763d68c07e), 03. Hỏi quầy nào sau khi được báo đã dừng cho lên. Lời đáp đưa bước đem thẻ lên máy bay tới quầy ANA để kiểm, không bảo đảm đổi chuyến.
+
+### Kiểm độc lập E03
+
+S009 chỉ tạm dự kiến 16:20. S010 khách chắc không kịp xe 17 giờ, dùng tàu điện ngầm nối nhà ga nội địa đến Hakata. S011 nhánh khác được đề xuất và đổi sang chuyến 16 giờ dự kiến tới 18 giờ. S012 giờ cất cánh đang xem lại, khoảng 16 giờ cập nhật trên bảng.
+
+- Đọc B11 dòng 3383–3392, đoạn kể ở sân bay và đáp về giờ đến. Mở ANA 振り替え mục 遅延・欠航 và trang thông báo ANA bằng tiếng Anh mục ANA App Push Notifications, thấy điều kiện bật thông báo. Đây là các nhánh riêng; không gán quyền tự động đổi vé, không lấy mốc giả định làm cam kết của ANA. https://www.ana.co.jp/ja/jp/guide/reservation/refund/domestic/irregular_support/ https://www.ana.co.jp/en/jp/guide/reservation/mailinfo/
+
+- Mở Fukuoka Airport Subway, mục Getting from the Airport to the Subway. Đọc tuyến từ ga sân bay đến Hakata và xác nhận nối thẳng nhà ga nội địa. https://www.fukuoka-airport.jp/en/access/subway.html
+
+- S012 (62305003-588e-54a8-9134-771b753c7c2b), 02. Hỏi mốc và cách biết tin khi giờ bay chưa chốt. Câu đáp phân biệt bảng sân bay với thông báo ANA app có điều kiện đã bật.
+
+### Kiểm độc lập E04
+
+S013 xác nhận băng số 3 theo chuyến trên thẻ. S014 chờ không thấy vali đen đai đỏ và đưa phiếu. S015 vali giống nhưng đai xanh và mã khác, tiếp tục tìm. S016 trong nhánh riêng hỏi cách liên hệ sau khi đã lập hồ sơ, giữ số tiếp nhận và phiếu.
+
+- Mở trang ANA 国内線 未着・紛失, dòng 76–105, và trang ký gửi dòng 118–143. Hãng chỉ báo nhân viên sân bay đến để làm thủ tục và đối chiếu thẻ khi nhận. Trang đầu mối nội địa đọc được phần chỉ dẫn chung, phiên này chưa xác nhận được một số Fukuoka cụ thể. Mã trên giấy là hồ sơ của tình huống, không in số tổng đài và không đưa cam kết tìm được. https://www.ana.co.jp/ja/jp/guide/boarding-procedures/baggage/domestic/accident/ https://www.ana.co.jp/ja/jp/guide/boarding-procedures/baggage/domestic/checked-in/ https://www.ana.co.jp/ja/jp/guide/contact/domestic/domestic_lost/
+
+- S013 (58722137-6ea9-5814-a596-a8b28080398f), 01. Khách đưa thẻ để xác định đúng chuyến thay vì chỉ nói nơi khởi hành. Nhân viên nói rõ băng số 3 và khách nhắc lại.
+
+- S016 (ca788a79-109c-52f9-813b-346bf9c02bef), 03. Hỏi khi gọi cần báo mã gì. Nhân viên chỉ mã tiếp nhận trên giấy của hồ sơ này và dặn giữ phiếu, tách vai trò hai mã.

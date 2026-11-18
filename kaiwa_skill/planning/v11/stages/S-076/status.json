@@ -16,7 +16,8 @@
     "rebook": "65de00ef6e7c7d1d93efc84326883fd2d3045b980ab4604410df444b6b993bcc",
     "notice": "9cd5979c93a2b7a7a2825bad526a09cedb24e80d08bd761f80368720ebf26e5d",
     "subway": "bad71ce2ff98137a3d1f30e24370ce3a597553766318f446135dfd1904014edc",
-    "missing": "a19c0f78eaf2e60013239956576f1b9b83f5c9a43cb87dec756771171cedc4f8"
+    "missing": "a19c0f78eaf2e60013239956576f1b9b83f5c9a43cb87dec756771171cedc4f8",
+    "boarding-rule": "7d99a510611ac75a6c1a0f4f85602022f1fa6e771ccdc8ac4c99c347ad24d132"
   },
   "source_inputs": {
     "kaiwa_skill/planning/v10/stages/sj-so-17/lesson.md": "e00a273f42861b3332705dfa270d8d31b7e431593f490d70e331cc34378753d4",
@@ -37,9 +38,10 @@
     },
     "be1dca85-2984-50a3-bf06-1618d88328a1": {
       "state": "reviewed",
-      "sha256": "7c22f71a6ed3a2b2404c5a72773eaa1cfeaaba575da07285c65a90be3c17f457",
-      "reviewed_sha256": "7c22f71a6ed3a2b2404c5a72773eaa1cfeaaba575da07285c65a90be3c17f457",
-      "note_vi": "A u01 hỏi xách hay gửi. B u02 nói vali 12 kg vượt giới hạn tổng xách tay 10 kg, A u03 hỏi nơi gửi và B u04 nhận tại quầy."
+      "sha256": "03746f71cc94f1b227b7128a72c66b33efe8daf9beb26ab939269e375ebb67d0",
+      "reviewed_sha256": "03746f71cc94f1b227b7128a72c66b33efe8daf9beb26ab939269e375ebb67d0",
+      "note_vi": "Hỏi có thể ký gửi tại quầy sau khi biết vali riêng đã vượt mức tổng xách tay. Lời hỏi Nhật nêu hai khả năng bằng mẫu tự nhiên.",
+      "reviewed_by": "/root/review_b4_so (gpt-6.2-sol/high)"
     },
     "28c316d3-dfa7-542d-9c0f-2a7755d0a79a": {
       "state": "reviewed",
@@ -49,27 +51,31 @@
     },
     "14ec82bb-587f-503a-b682-f85d6c50d41d": {
       "state": "reviewed",
-      "sha256": "bad9ec4632539a3f1abd9b60e48faa65c4b7ce6dfaa43a41784bcd3be3f2af3a",
-      "reviewed_sha256": "bad9ec4632539a3f1abd9b60e48faa65c4b7ce6dfaa43a41784bcd3be3f2af3a",
-      "note_vi": "A u01 nêu chuyến, u03 nhắc đúng cổng mới. B u02 xác nhận từ 51 sang 53 và chỉ hướng, B u04 chúc chuyến đi."
+      "sha256": "e6f0a010350da90d50f859a731059b30868974feef8f7ea5141e7158bab01f73",
+      "reviewed_sha256": "e6f0a010350da90d50f859a731059b30868974feef8f7ea5141e7158bab01f73",
+      "note_vi": "Chốt cổng 53 sau khi nghe thông báo đổi. Chỉ dẫn theo biển cổng thay cho hướng phải không xác định vị trí xuất phát.",
+      "reviewed_by": "/root/review_b4_so (gpt-6.2-sol/high)"
     },
     "db251698-86a1-51e4-94b8-c119a0a277cf": {
       "state": "reviewed",
-      "sha256": "1e3691ff1adf368be78de83a0b7630ce0d1b0c1a6bae6c0418acd494d1552dc9",
-      "reviewed_sha256": "1e3691ff1adf368be78de83a0b7630ce0d1b0c1a6bae6c0418acd494d1552dc9",
-      "note_vi": "A u01 hỏi đúng chuyến. B u02 nói phần loa là cho khách cần hỗ trợ, A u03 hỏi đợi, B u04 chỉ chờ số nhóm."
+      "sha256": "31fa4a8ad9f47bfcebbcc56c6ab8c31303c7089bdc2672eca2e268181e9fd3dc",
+      "reviewed_sha256": "31fa4a8ad9f47bfcebbcc56c6ab8c31303c7089bdc2672eca2e268181e9fd3dc",
+      "note_vi": "Hỏi rõ còn đợi được ở đây; nhân viên nói lượt trước dành khách cần hỗ trợ và chỉ đi khi gọi nhóm. Nguồn bổ sung đúng ANA nội địa.",
+      "reviewed_by": "/root/review_b4_so (gpt-6.2-sol/high)"
     },
     "2409deb0-ab86-5aef-bdcb-79e589e8b11a": {
       "state": "reviewed",
-      "sha256": "1ea838142189d19fee425f9c09f9b7dd78a660998c28c9457830248158d776d6",
-      "reviewed_sha256": "1ea838142189d19fee425f9c09f9b7dd78a660998c28c9457830248158d776d6",
-      "note_vi": "A u01 nói nhu cầu đã báo và hỏi vị trí. B u02 chỉ hàng ghế kế quầy và sẽ gọi, B u04 đồng ý người đi cùng."
+      "sha256": "956df4fcde8c1447dd10e0fa819685e0094776de13473fc9ab474a8389713a05",
+      "reviewed_sha256": "956df4fcde8c1447dd10e0fa819685e0094776de13473fc9ab474a8389713a05",
+      "note_vi": "Kiểm người đi cùng mẹ có thể cùng được hướng dẫn. Đây là hai khách đã yêu cầu hỗ trợ và hỏi trực tiếp ở cổng.",
+      "reviewed_by": "/root/review_b4_so (gpt-6.2-sol/high)"
     },
     "95e81687-77c3-54c5-9f93-3b763d68c07e": {
       "state": "reviewed",
-      "sha256": "4bbf14b8f0ca24cdf7e40bde110371764b941f2370635e5cc76ce718e7f08079",
-      "reviewed_sha256": "4bbf14b8f0ca24cdf7e40bde110371764b941f2370635e5cc76ce718e7f08079",
-      "note_vi": "A u01 xác nhận chuyến và hỏi còn lên, B u02 nói đã đóng. A u03 hỏi đúng quầy, B u04 đưa bàn ANA gần đó để tra vé."
+      "sha256": "85e82893428c5e57364d230ada3dd38d4c17c6187bb1e2acab04ef3a20267476",
+      "reviewed_sha256": "85e82893428c5e57364d230ada3dd38d4c17c6187bb1e2acab04ef3a20267476",
+      "note_vi": "Hỏi quầy nào sau khi được báo đã dừng cho lên. Lời đáp đưa bước đem thẻ lên máy bay tới quầy ANA để kiểm, không bảo đảm đổi chuyến.",
+      "reviewed_by": "/root/review_b4_so (gpt-6.2-sol/high)"
     },
     "abd87738-14e9-541f-b816-67557dff8a6b": {
       "state": "reviewed",
@@ -91,15 +97,17 @@
     },
     "62305003-588e-54a8-9134-771b753c7c2b": {
       "state": "reviewed",
-      "sha256": "2bb06f6ec11d9478dde7da8620bde4e50f830219568f06367c2f9b9ae2b405a8",
-      "reviewed_sha256": "2bb06f6ec11d9478dde7da8620bde4e50f830219568f06367c2f9b9ae2b405a8",
-      "note_vi": "A u02 hỏi kênh và mốc. B u03 nói thông báo lúc 16 giờ, app khi đã bật. A u04 tự chốt xem bảng, chưa có giờ khởi hành."
+      "sha256": "afd649abad787f5a2edd63f7c456092d3340a723da466cb95d126e10659b2d38",
+      "reviewed_sha256": "afd649abad787f5a2edd63f7c456092d3340a723da466cb95d126e10659b2d38",
+      "note_vi": "Hỏi mốc và cách biết tin khi giờ bay chưa chốt. Câu đáp phân biệt bảng sân bay với thông báo ANA app có điều kiện đã bật.",
+      "reviewed_by": "/root/review_b4_so (gpt-6.2-sol/high)"
     },
     "58722137-6ea9-5814-a596-a8b28080398f": {
       "state": "reviewed",
-      "sha256": "f247fb167e16ee70897ab3a30608364ca16c0a207fc0d939b3a15138b0496bd5",
-      "reviewed_sha256": "f247fb167e16ee70897ab3a30608364ca16c0a207fc0d939b3a15138b0496bd5",
-      "note_vi": "A u01 nêu chuyến từ Haneda, B u02 xem và chỉ băng 3 trong ví dụ. A u03 nhắc lại băng, B u04 chỉ hướng."
+      "sha256": "13a2820d88c53ce6110d27c97fbe460334603335af4f40dca2a2b80ce77dfcf5",
+      "reviewed_sha256": "13a2820d88c53ce6110d27c97fbe460334603335af4f40dca2a2b80ce77dfcf5",
+      "note_vi": "Khách đưa thẻ để xác định đúng chuyến thay vì chỉ nói nơi khởi hành. Nhân viên nói rõ băng số 3 và khách nhắc lại.",
+      "reviewed_by": "/root/review_b4_so (gpt-6.2-sol/high)"
     },
     "bd6e10f7-f606-5112-822d-e02be7c13c11": {
       "state": "reviewed",
@@ -115,9 +123,10 @@
     },
     "ca788a79-109c-52f9-813b-346bf9c02bef": {
       "state": "reviewed",
-      "sha256": "fe3639e50c461bc10424735563a000a0e4ec82e78313b25e5a8e902215fd5101",
-      "reviewed_sha256": "fe3639e50c461bc10424735563a000a0e4ec82e78313b25e5a8e902215fd5101",
-      "note_vi": "A u01 hỏi đầu mối sau khi rời, B u02 đưa giấy có quầy ANA tại Fukuoka. A u03 kiểm số cần báo, B u04 dặn giữ mã hồ sơ và phiếu."
+      "sha256": "a6b389e3999f7897c5aeadfab744e88f9ada2f8399735f54749d38db6d7e6bc2",
+      "reviewed_sha256": "a6b389e3999f7897c5aeadfab744e88f9ada2f8399735f54749d38db6d7e6bc2",
+      "note_vi": "Hỏi khi gọi cần báo mã gì. Nhân viên chỉ mã tiếp nhận trên giấy của hồ sơ này và dặn giữ phiếu, tách vai trò hai mã.",
+      "reviewed_by": "/root/review_b4_so (gpt-6.2-sol/high)"
     }
   },
   "event_notes": {
@@ -127,9 +136,72 @@
     "E04": "Đọc S013 → S014, rồi S014 → S015 và S014 → S016. Vali của A đen, dây đỏ, phiếu vẫn giữ. Vali dây xanh nhánh thứ nhất bị loại khi đối số. Nhánh thứ hai ghi đầu mối ANA tại Fukuoka sau khi rời sân bay, chưa bảo đảm tìm được."
   },
   "open_issues": [],
-  "independent_review": "pending",
+  "independent_review": "completed",
   "hash_encoding": "UTF-8 JSON ensure_ascii=False indent=2, insertion order; no BOM",
   "release_state": "authored_self_reviewed",
-  "next_action": "Rà độc lập các cảnh và nhánh.",
-  "dialogues_sha256": "ee57865c977cdae7837252534b7b62eef28e6457a8424149e78a099a85fb6eb9"
+  "next_action": "Điều phối kiểm bản dựng.",
+  "dialogues_sha256": "018854146f0582b201f4e5176b4f3482bd18972a818012c4d0ca3f8897d4b958",
+  "independent_event_notes": {
+    "E01": "S001 chuyến ANA khai thác Haneda–Fukuoka đi nhà ga 2, quầy tầng 2. S002 đang ở nhà ga 1 nên xuống lối nối ngầm công cộng. S003 vali 12 kg phải ký gửi do mức 10 kg tổng hành lý mang lên của ANA nội địa. S004 tách máy ảnh sang túi nhỏ được nhân viên kiểm.",
+    "E02": "S005 cổng giả định chuyển 51 sang 53. S006 khách đã chờ đúng cổng, chỉ nghe lượt hỗ trợ rồi đợi nhóm mình. S008 trong nhánh khác đến sau khi đã dừng lên, hỏi đúng quầy. S007 mở riêng, hai mẹ con đã yêu cầu hỗ trợ từ trước và kiểm chỗ đợi.",
+    "E03": "S009 chỉ tạm dự kiến 16:20. S010 khách chắc không kịp xe 17 giờ, dùng tàu điện ngầm nối nhà ga nội địa đến Hakata. S011 nhánh khác được đề xuất và đổi sang chuyến 16 giờ dự kiến tới 18 giờ. S012 giờ cất cánh đang xem lại, khoảng 16 giờ cập nhật trên bảng.",
+    "E04": "S013 xác nhận băng số 3 theo chuyến trên thẻ. S014 chờ không thấy vali đen đai đỏ và đưa phiếu. S015 vali giống nhưng đai xanh và mã khác, tiếp tục tìm. S016 trong nhánh riêng hỏi cách liên hệ sau khi đã lập hồ sơ, giữ số tiếp nhận và phiếu."
+  },
+  "author_history": {
+    "dialogues_sha256": "ee57865c977cdae7837252534b7b62eef28e6457a8424149e78a099a85fb6eb9",
+    "scenes": {
+      "be1dca85-2984-50a3-bf06-1618d88328a1": {
+        "state": "reviewed",
+        "sha256": "7c22f71a6ed3a2b2404c5a72773eaa1cfeaaba575da07285c65a90be3c17f457",
+        "reviewed_sha256": "7c22f71a6ed3a2b2404c5a72773eaa1cfeaaba575da07285c65a90be3c17f457",
+        "note_vi": "A u01 hỏi xách hay gửi. B u02 nói vali 12 kg vượt giới hạn tổng xách tay 10 kg, A u03 hỏi nơi gửi và B u04 nhận tại quầy."
+      },
+      "2409deb0-ab86-5aef-bdcb-79e589e8b11a": {
+        "state": "reviewed",
+        "sha256": "1ea838142189d19fee425f9c09f9b7dd78a660998c28c9457830248158d776d6",
+        "reviewed_sha256": "1ea838142189d19fee425f9c09f9b7dd78a660998c28c9457830248158d776d6",
+        "note_vi": "A u01 nói nhu cầu đã báo và hỏi vị trí. B u02 chỉ hàng ghế kế quầy và sẽ gọi, B u04 đồng ý người đi cùng."
+      },
+      "95e81687-77c3-54c5-9f93-3b763d68c07e": {
+        "state": "reviewed",
+        "sha256": "4bbf14b8f0ca24cdf7e40bde110371764b941f2370635e5cc76ce718e7f08079",
+        "reviewed_sha256": "4bbf14b8f0ca24cdf7e40bde110371764b941f2370635e5cc76ce718e7f08079",
+        "note_vi": "A u01 xác nhận chuyến và hỏi còn lên, B u02 nói đã đóng. A u03 hỏi đúng quầy, B u04 đưa bàn ANA gần đó để tra vé."
+      },
+      "db251698-86a1-51e4-94b8-c119a0a277cf": {
+        "state": "reviewed",
+        "sha256": "1e3691ff1adf368be78de83a0b7630ce0d1b0c1a6bae6c0418acd494d1552dc9",
+        "reviewed_sha256": "1e3691ff1adf368be78de83a0b7630ce0d1b0c1a6bae6c0418acd494d1552dc9",
+        "note_vi": "A u01 hỏi đúng chuyến. B u02 nói phần loa là cho khách cần hỗ trợ, A u03 hỏi đợi, B u04 chỉ chờ số nhóm."
+      },
+      "14ec82bb-587f-503a-b682-f85d6c50d41d": {
+        "state": "reviewed",
+        "sha256": "bad9ec4632539a3f1abd9b60e48faa65c4b7ce6dfaa43a41784bcd3be3f2af3a",
+        "reviewed_sha256": "bad9ec4632539a3f1abd9b60e48faa65c4b7ce6dfaa43a41784bcd3be3f2af3a",
+        "note_vi": "A u01 nêu chuyến, u03 nhắc đúng cổng mới. B u02 xác nhận từ 51 sang 53 và chỉ hướng, B u04 chúc chuyến đi."
+      },
+      "62305003-588e-54a8-9134-771b753c7c2b": {
+        "state": "reviewed",
+        "sha256": "2bb06f6ec11d9478dde7da8620bde4e50f830219568f06367c2f9b9ae2b405a8",
+        "reviewed_sha256": "2bb06f6ec11d9478dde7da8620bde4e50f830219568f06367c2f9b9ae2b405a8",
+        "note_vi": "A u02 hỏi kênh và mốc. B u03 nói thông báo lúc 16 giờ, app khi đã bật. A u04 tự chốt xem bảng, chưa có giờ khởi hành."
+      },
+      "58722137-6ea9-5814-a596-a8b28080398f": {
+        "state": "reviewed",
+        "sha256": "f247fb167e16ee70897ab3a30608364ca16c0a207fc0d939b3a15138b0496bd5",
+        "reviewed_sha256": "f247fb167e16ee70897ab3a30608364ca16c0a207fc0d939b3a15138b0496bd5",
+        "note_vi": "A u01 nêu chuyến từ Haneda, B u02 xem và chỉ băng 3 trong ví dụ. A u03 nhắc lại băng, B u04 chỉ hướng."
+      },
+      "ca788a79-109c-52f9-813b-346bf9c02bef": {
+        "state": "reviewed",
+        "sha256": "fe3639e50c461bc10424735563a000a0e4ec82e78313b25e5a8e902215fd5101",
+        "reviewed_sha256": "fe3639e50c461bc10424735563a000a0e4ec82e78313b25e5a8e902215fd5101",
+        "note_vi": "A u01 hỏi đầu mối sau khi rời, B u02 đưa giấy có quầy ANA tại Fukuoka. A u03 kiểm số cần báo, B u04 dặn giữ mã hồ sơ và phiếu."
+      }
+    }
+  },
+  "independent_source_hash_encoding": {
+    "boarding-rule": "UTF-8 JSON ensure_ascii=False indent=2 insertion order, no LF or BOM"
+  },
+  "independent_reviewer": "/root/review_b4_so (gpt-6.2-sol/high)"
 }

@@ -64,3 +64,39 @@
 - S018 → S019. Đã rõ chỉ bản thử; Kikuchi thử thành công với lịch mẫu. Người xem cuối là Fujita, cần gửi kết quả trước khi bật dùng.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S004 · `1aafa41a-7435-5aee-a92d-dab105b8476e-u02`. Sau tin Fujita vắng, Yamada hỏi lại phạm vi chỉ ý kiến, chưa nghiệm thu. Việt ở câu Kikuchi làm rõ kết quả của buổi ngày mai, không nhầm giờ chuyển kết quả.
+
+Điểm nối. S001 khách chọn thử đổi giờ lỡ chọn chỗ đã đặt. S002 còn 20 phút, giữ chức năng này và thao tác thực, để thống kê kỳ sau. S003 chỉ Fujita có quyền chốt, Ueda thao tác và Kikuchi gom ý kiến. S004 Fujita vắng nên sau thử còn gặp lại.
+
+Đã đọc B21 bài hỏi cách làm dòng 8–26, B05 chương kính ngữ dòng 272–294 và B10 bài hẹn dòng 295–311. Mở mục 概要 của [IPA, mẫu giao dịch và hợp đồng hệ thống thông tin](https://www.ipa.go.jp/digital/model/model20201222.html) ngày 2026-11-18. Trong phạm vi phần tổng quan, IPA đề nghị hai bên cùng hiểu đặc tả, cách quản lý và cách nghiệm thu. Ngưỡng thời gian, lúc hiện cảnh báo và Fujita là các điều kiện của dự án giả định.
+
+## Rà độc lập Batch04 · E02
+
+- S005 · `7b820959-9f32-5746-b71a-376b67442de9-u03`. Giữ thao tác thực là tìm đúng Yamamoto lúc 16 giờ. Không mặc định giới tính của khách trong ví dụ.
+- S008 · `ce682599-2668-5605-8f04-7beb4f247148-u02`. Tiếng Việt làm rõ chỉ hai người, một phụ huynh và một bé, để khớp 親子 và hai khung.
+
+Điểm nối. S005 Ueda tìm đúng Yamamoto 16 giờ nhưng chưa biết đổi. S006 thấy dòng, không thấy nút. S007 đổi hướng dẫn sang bấm tên để mở chi tiết, chọn 17 giờ và tự lưu. S008 riêng hỏi tình huống còn thiếu và hẹn ví dụ hai khung liền nhau.
+
+## Rà độc lập Batch04 · E03
+
+- S011 · `7961e55d-8fb0-5791-93ba-ea88057777eb-u04`. Tiêu chí là chỗ trống hiện cùng màn hình, bước xác nhận vẫn giữ. Xưng hô Việt ở câu hỏi nhất quán lịch sự.
+- S012 · `3d5b3d7c-23a6-5559-a060-51ae68871e3e-u03`. Chỉ cam kết gọi 15 giờ thứ Năm, báo phần biết về đề nghị thử thứ Sáu và mốc thay nếu đã xác định. Tránh hứa chắc biết lịch mới.
+
+Điểm nối. S009 chỉ phần đổi giờ là bắt buộc, thống kê để sau. S010 tìm ra nhãn Chỉnh sửa khó nhận. S011 quay lại gốc, vướng do quay đi xem giờ trống, đề nghị hiện cùng màn hình và giữ xác nhận. S012 giữ tiêu chí đó, hẹn cập nhật 15 giờ thứ Năm và thứ Sáu còn mở.
+
+## Rà độc lập Batch04 · E04
+
+- S013 · `27fd913e-a023-5201-bcc9-6552b725df03-u01`. Nói rõ tiêu chí cảnh báo trước lúc bấm nút, chứ chưa lưu có thể vẫn đã bấm. Cùng 1:35 so với hạn 2 phút và Fujita mới nói đã thấy.
+- S014 · `10a61826-f499-5dbe-bc3d-b9429dde03b1-u01`. Fujita thực sự nói nghiệm thu rồi hỏi bàn giao. Làm rõ dữ kiện báo lỗi tuần đầu là giờ thao tác, khung lịch đang chọn và dòng hiển thị.
+
+Điểm nối. S013 mẫu đổi trong 1:35 và cảnh báo trước bấm Lưu. S014 Fujita xác nhận hoàn tất, bàn giao sáng thứ Hai và hỗ trợ một tuần. S015 rẽ về kết quả ví dụ của S013, màn hình quầy thực hiện khác nên chưa nghiệm thu và thử lại. S016 rẽ về gốc, chờ người ca tối lúc 17 giờ thứ Tư, giữ cùng hai phép kiểm.
+
+## Rà độc lập Batch04 · E05
+
+- S017 · `6704c98f-e3f6-50d1-8b17-6e28d5f9c38a-u03`. Nêu đã sửa thời điểm cảnh báo trước khi bấm Lưu, gửi link và yêu cầu chọn cùng giờ kín. Kikuchi nhận thử chiều đó.
+- S019 · `7eccb600-5a0d-5a3f-b9e4-c6a8daf4f084-u02`. Kikuchi báo đạt đúng thời điểm trước bấm Lưu và gửi chứng cứ cho Fujita. Giữ ngày chuyển sau khi có đồng ý, một phản hồi bất kỳ chưa đủ.
+
+Điểm nối. S017 sửa cảnh báo trước bấm Lưu trên bản thử và gửi link dùng lại lịch mẫu. S018 làm rõ bản quầy chưa cập nhật. S019 thử đạt một điểm và Kikuchi chuyển kết quả sáng mai, chỉ bàn ngày chuyển nếu Fujita cho phép.

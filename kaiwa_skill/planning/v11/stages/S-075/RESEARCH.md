@@ -57,3 +57,55 @@
 - fce897f6-4bc8-5654-ac57-6daf4d76e4d4 (S023). A u01 nhắc 10.000 cộng 1.200, B u02 xác nhận 11.200. A u03 chọn thẻ, B u04 chỉ thao tác, cuối cảnh xác nhận đã xử lý và đưa biên lai.
 - 8974df74-cb69-57b6-b662-efb7e7142ef9 (S024). A u01 hỏi đường và u03 kiểm đúng chỗ rẽ. B u02 chỉ rẽ trái ở đèn đầu rồi đi thẳng, u04 nêu ga cạnh hiệu sách.
 - 3e9310f7-719a-5d96-8cc8-cee916df26f8 (S025). A u02 kể điều thích là đi dạo dọc biển, u03 nói chợ sáng nghỉ. B u04 hỏi lần sau, A u05 đưa cách kiểm ngày.
+
+### Kiểm độc lập E01
+
+S001 nêu đích ven biển và cuối tuần cụ thể. S002 chọn hai đêm, S003 chỉ đi Chủ nhật là hai lịch riêng. S004 sửa sang thứ Sáu ngày 19 tuần sau, S005 chốt về chiều thứ Bảy ngày 20.
+
+- Đọc B08 dòng 2941–2947 về đề xuất chuyến đi, lựa chọn phòng và hoạt động.
+
+- S001 (25d84288-a4c1-525e-bcbf-615f4b296b8f), 03. Nêu thứ Bảy thứ hai của tháng tới và Chủ nhật ngay sau để hai người chọn đúng một cuối tuần, kể cả tháng bắt đầu vào Chủ nhật.
+
+### Kiểm độc lập E02
+
+S006 hỏi phòng hai người lớn ngày 12 tháng Năm. S007 hỏi giờ nhận và trả của gói. S008 ngày 20 tháng Năm hết twin nên chọn double sau khi nghe giá 11.000 yên/phòng. S010 mới chốt họ tên, ngày và hai khách. S009 là cuộc gọi riêng, giá 18.000 yên nên khách từ chối.
+
+- Đọc B27 dòng 480–491 về vai khách và lễ tân, 2977–2985 về hỏi phòng trống. Mở Toyoko Inn Guide ngày 2026-11-18, mục Check-In Time và Check-out Time. Mốc nhận 15 giờ và trả 10 giờ là của ví dụ gói trong cảnh. Có thể làm thủ tục trước giờ vào phòng. https://www.toyoko-inn.com/eng/support/
+
+- S006 (9f1f6031-3768-5fcb-b838-95c359f52f86), 01. Thêm tháng vào bối cảnh và lời hỏi để nhân viên kiểm đúng ngày. Người học tự nêu hai khách lớn và một đêm rồi kiểm có hai giường.
+
+- S007 (5f279276-b9cf-540d-94fa-0935567c1e37), 03. Hỏi hạn phải trả sau khi biết nhận từ 15 giờ. Tiếng Việt gọi đúng thủ tục trả phòng, không nói mơ hồ làm thủ tục.
+
+- S008 (bfa3419f-6ded-5458-b417-6cabd93e17c0), 02. Người học hỏi phòng khác và giá sau khi hết twin. Ghi đủ tháng và giá cho cả phòng một đêm. Chưa lấy tên và xác nhận đặt.
+
+- S010 (395f1bd3-e72b-58d3-b0ef-aa734517f96b), 02. Nói tên đầy đủ, ngày có tháng và số người. Nhân viên xác nhận đặt rồi khách kiểm lại loại phòng và tổng một đêm.
+
+### Kiểm độc lập E03
+
+S011 tìm đặt phòng bằng tên và số đêm. S012 gửi vali trước giờ vào phòng, lấy lại bằng thẻ. S013 phòng chưa chuẩn bị xong và hẹn khách quay lại 15 giờ. S014 tìm bằng email rồi S015 mới nhận thẻ phòng 405 và chốt trả trước hoặc đúng 10 giờ.
+
+- Đọc B27 dòng 2911–2928 về hỏi tiện ích tại quầy. FAQ Toyoko Inn đường dẫn rút gọn trả một dòng chuyển trang. Mở bản câu hỏi có nội dung và đọc mục チェックイン前・チェックアウト後に荷物を預かってもらえますか？ dòng 131–136. Gửi trước tùy tình hình, gửi sau phải hỏi từng khách sạn. https://www.toyoko-inn.com/faq/content?cd=12&facility_cd=toyoko-inn-qa&h=&intent_cd=inquiry.checkin_start_time&lang=ja&member_id=a3a9982a-1557-64be-f535-662efe7f86a2&sub_intent_cd=
+
+- S012 (4463e3dd-a02e-5ade-993e-73f0f0218bb9), 03. Khách xin gửi riêng khi đến sớm và hỏi cách nhận lại. Tiếng Việt nói khách sạn giữ hành lý, dẫn tới việc đưa thẻ khi lấy.
+
+- S014 (0faebc06-e980-56fe-a483-1434e74e1f22), 02. Nêu đủ tháng cho ngày khách từng đặt trên mạng, rồi cho xem số xác nhận trong email. Lễ tân tìm thấy tên đầy đủ.
+
+- S015 (890ae957-bbdf-5f2a-b476-761ff04a2980), 02. Khách nhận thẻ 405 rồi hỏi hạn trả bằng チェックアウト rõ nghĩa. Lễ tân xác nhận 10 giờ sáng.
+
+### Kiểm độc lập E04
+
+S016 hỏi đường và rẽ trước cầu. S017 khách phòng 403 tự ra lấy khăn. S018 phòng 405 nhờ mang một chiếc chăn và đợi khoảng 15 phút. S019 hai mươi phút qua chưa nhận, lễ tân sẽ mang ngay. S020 là cảnh riêng đã nhận đủ một chiếc.
+
+- S016 (03d93a87-0096-5ac9-a11a-852344d64ef9), 05. Sửa câu cuối thành nhắc đúng chỗ rẽ trước cầu thay vì nhận xét hay sau chỉ đường. Tiếng Việt nói rõ không qua cầu.
+
+- S017 (e50be533-0251-5e4e-883e-b892f6fab6dd), 03. Khách nêu phòng và xác nhận thiếu một khăn tắm. Rút lỗi trợ từ trong câu nhân viên hỏi lại số lượng. Khách sẽ xuống lấy.
+
+- S019 (0b7099c5-c884-5a7b-a84b-c69f6a8f04a1), 01. Cùng phòng và món đã hẹn, khách báo vẫn chưa nhận. Lễ tân xin lỗi vì để chờ và hẹn mang ngay tới phòng.
+
+- S020 (8c668be0-6bc3-545b-a206-0a4debbb63d3), 03. Sửa lời xác nhận đủ chiếc vừa nhận để tránh hiểu khách xin thêm một chiếc nữa. Lễ tân cảm ơn khách đã báo.
+
+### Kiểm độc lập E05
+
+S021 hỏi riêng về hành lý sau trả, khách được giữ tới 15 giờ và hẹn lấy lúc 14 giờ. S022 hỏi khoản 1.200 yên, S023 cộng với 10.000 yên phòng thành 11.200 yên rồi mới trả và nhận biên lai. S024 hỏi đường ga. S025 kể chuyến đi ven biển ở vai bạn bè.
+
+- S023 (fce897f6-4bc8-5654-ac57-6daf4d76e4d4), 01. Gọi rõ tiền phòng, tiền ăn và tổng chính xác. Lời hướng dẫn thẻ tại máy không chỉ định thao tác cắm khi JA không nói.

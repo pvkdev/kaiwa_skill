@@ -50,3 +50,25 @@
 - S014 → S015. Thứ Tư sau 15 giờ Arai gọi. Nội bộ duyệt chia số lô và số lượng, người phụ trách Ishikawa, chưa gửi lúc đang gọi.
 
 Đã đọc Nhật và Việt riêng, thử đảo vai và đọc nối mọi cạnh. Chờ rà độc lập.
+
+## Rà độc lập Batch04 · E01
+
+- S001 · `bf02b22c-d679-5a16-9101-f4c41874a175-u03`. Thêm Arai xác nhận sẽ đi ô tô để chỉ dẫn cổng Đông có căn cứ. Nhắc đúng 10 giờ và tên Ishikawa ở quầy.
+
+Điểm nối. S001 giờ 10, đi ô tô vào cổng Đông. S002 xác nhận nhà máy Đông số Hai, cùng cổng, địa chỉ Hoshimi khu 2 số 8 và đơn vị xuất hàng của Ishikawa. S003 chỉ hành lang và phòng mẫu, hỏi riêng quyền chụp từng vật. S004 chuyển việc kiểm nhãn sang phòng mẫu, không tự vào khu làm việc.
+
+Đã đọc B10 bài thăm đối tác dòng 173–184 và bài hẹn dòng 295–311, B15 bài 8 dòng 24–54. Rà ngày 2026-11-18 mục chụp ảnh tại [FAQ Suntory](https://www.suntory.co.jp/factory/qa/) và [FAQ Meiji](https://www.meiji.co.jp/learned/factory/faq/) qua phần nội dung FAQ trích xuất từ trang chính thức. Suntory hạn chế ảnh ở một số khu như thiết bị sản xuất, bảo khách hỏi nhân viên. Meiji hạn chế ảnh/video ở hành lang và có điểm chụp riêng. Đây là ví dụ quy định từng cơ sở. Cảnh chỉ cho phép đi và chụp theo lời người hướng dẫn tại nhà máy giả định.
+
+## Rà độc lập Batch04 · E02
+
+- S007 · `d3470bcf-56e1-5b86-8d3b-ff8125558111-u03`. Thêm khoảng cách sau buổi gặp để việc Arai lẫn hai mốc có lý vì ở cảnh trước đã nhắc đúng ngày xuất. Lời xác nhận đọc lại ba mốc và giữ hai mốc còn dự kiến.
+
+Điểm nối. S005 xong sản xuất thứ Năm và phải qua kiểm thứ Sáu mới xuất. S007 nối theo cuộc gọi xác nhận lại, xuất thứ Sáu nếu đạt và kho nhận dự kiến thứ Hai. S006 riêng hỏi ai đối chiếu mã và số. S008 quản lý xuất hàng chốt số thùng/cái sau kiểm thứ Sáu.
+
+## Rà độc lập Batch04 · E03
+
+- S009 · `265c58c3-8adb-58c9-b713-661a5da46c44-u03`. Nêu số đếm tại kho và thời điểm. Việt nói rõ số lượng bên trong từng thùng để nối bước đối chiếu.
+- S011 · `29e0593c-866d-5fdd-949b-3f0b03c92ab4-u02`. Sửa lời xin thành báo phần đã rõ lúc 14 giờ. Ishikawa mới xem được vào sáng mai và Arai cũng hỏi điểm còn chờ.
+- S012 · `11faa302-c65c-54a6-be57-94db418f315f-u01`. Ghi chép từng thùng cho manh mối, còn xác nhận hai sản phẩm ở phòng kiểm cần kiểm thực tế. Sau khi xác minh, Ishikawa giao đúng hai cái bù, Arai kiểm khi nhận.
+
+Điểm nối. S009 K71 đủ sáu thùng nhưng đếm 118 so 120 đã báo. S010 chỉ hồ sơ tổng 120, xin sổ từng thùng và Arai chia sẻ số liệu. S011 hẹn Ishikawa gọi 14 giờ sau khi có người đóng gói. S012 tìm hai chiếc tại phòng kiểm và hẹn giao bù 11 giờ ngày kế tiếp.

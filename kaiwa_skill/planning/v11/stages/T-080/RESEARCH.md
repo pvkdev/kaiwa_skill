@@ -47,3 +47,7 @@ S013→S014→S015→S016: Mizuno duyệt bản thử, người dùng bên khác
 - S014 · `c568e072-1242-5d27-ae69-b39b0b212d69` · u02, u04, u05. Chốt dùng mẫu, tìm mã trong ba phút, không nhắc, nói đúng trạng thái. Bảo chuẩn bị kịch bản đo được, chưa phát hành.
 - S015 · `4f5e5802-7ad7-54d7-aefc-e801232e9dc6` · u01, u03, u05. Bảo nêu dữ kiện rồi hỏi; Mizuno xác nhận hai điểm chưa đạt chứ không kéo thêm chức năng. Không tính lượt có trợ giúp là đạt.
 - S016 · `d13ca7e4-a025-5222-86eb-e9faa2ea0b7c` · u02, u04, u05. Giữ chuẩn tự tìm trong 3 phút và nói đúng chờ duyệt. Bảo sửa nút và giải thích trạng thái, thứ Tư 15 giờ gửi kiểm, không coi đạt sẵn.
+
+## Rà độc lập V11 batch04
+
+Đọc B16 Unit 4 dòng 235–260 về hỏi hạn theo buổi sử dụng và đầu ra bổ sung; B03 Unit 17 dòng 37–46 về hỏi trước và nhắc lại; B15 bài 14 dòng 56–75 về điều đối tác coi trọng, hỏi lại phạm vi và chuyển đề xuất. Demo mẫu, thử người dùng và ngưỡng ba phút thuộc cuộc trao đổi trong chặng.

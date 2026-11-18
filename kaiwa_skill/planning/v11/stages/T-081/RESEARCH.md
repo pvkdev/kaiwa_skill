@@ -46,3 +46,7 @@ S013→S014→S015: Thảo gửi bản quầy, Matsui đã thực sự mở và 
 - S013 · `2c618e5d-de77-5f9b-b078-d430a1e72972` · u01, u03, u05. Tách đã gửi với đã mở. Matsui nói bản đọc được nhưng chưa đủ để chuyển cho cửa hàng. Thảo hỏi phần thiếu ở khung giờ.
 - S014 · `b7ba97a6-ef0a-5aae-b800-6cf9b9e16809` · u02, u04, u05. Matsui sửa suy đoán dùng giờ đóng cửa. Giờ chót nhận 17:30 đã được cửa hàng xác nhận, Thảo giữ cả hai nhãn và hẹn 15:30.
 - S015 · `72f67b41-fca5-5a37-8968-ca8e8f89ceda` · u01, u03, u05. Matsui đã kiểm đúng hai giờ và chịu trách nhiệm gửi cửa hàng. Thảo cập nhật phiên bản trên trang chung sau khi Vận hành xác nhận cửa hàng nhận.
+
+## Rà độc lập V11 batch04
+
+Đọc B03 Unit 18 dòng 57–67 về báo đúng đầu mối và phương án khi xin ý kiến. Đọc B16 Unit 4 dòng 384–394 về tên gọi nhập nhằng giữa các báo cáo. Đọc B15 bài 14 dòng 59–75 về hỏi ràng buộc của đối phương, chuyển cách đề nghị và hẹn báo sau xét duyệt.

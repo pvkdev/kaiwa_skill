@@ -50,3 +50,43 @@
 - ad0a2f72-1537-5b69-b1b0-d8fe9552c329 (S016). A u01 hỏi cửa và u03 hỏi người báo. B u02 cho cửa Tây và u04 nhận Lan gọi quầy để nhân viên báo tài xế, A u05 đáp.
 
 - Rà lại c06a13aa-630d-5965-b35b-301faffbe830 lượt context. Điểm đợi tầng hai nay đủ nghĩa khi mở riêng. Tình huống không cần kết nối điện thoại tại sân bay sau khi đã thống nhất.
+
+### Kiểm độc lập E01
+
+S001 chốt điểm đón sau lấy hành lý ở trước quầy sảnh đến tầng hai nhà ga 3. S002 nếu không liên lạc được giữ điểm đó. S003 đổi đến 16 giờ thứ Năm, vẫn cùng điểm. S004 quay về lịch gốc, sửa nhầm Narita thành Tokyo International tức Haneda.
+
+- Đọc B17 dòng 1870–1889 về xác nhận giờ người thân đến. Đọc B27 dòng 2037–2042 và B11 dòng 3383–3392 về nhắc điểm hẹn và giờ cập nhật. Mở trang quy chế Haneda thấy tên 東京国際空港（羽田） ở mục quy chế sân bay và trang hồ sơ của đơn vị Narita thấy 成田国際空港. https://www.tokyo-haneda.com/important_notice_and_regulations/index.html https://www.narita-airport.jp/ja/company/naa/profile/summary/
+
+- S003 (d6ac6333-6ae1-5f84-9c96-3fb6d0bacfd5), 03. Hỏi xác nhận vẫn đến nhà ga 3 bằng câu Nhật tự nhiên. Người học nói lại ngày và giờ mới, giữ điểm trước quầy.
+
+- S004 (a8783bb6-e5a4-5c14-952a-e27f9d4f3d37), 02. Tách tên đầy đủ Tokyo International và tên Haneda thành lời giải thích cho chú. Người học xin đối chiếu vé để chú tự nhận ra đã nghe nhầm.
+
+### Kiểm độc lập E02
+
+S005 nói lần cuối chú vừa lấy hành lý và tìm quầy, chưa biết chú đứng ở tầng nào. S006 nhân viên hướng dẫn xuống quầy sảnh đến tầng 2. S008 nhắc lại thông báo tới tầng 2 ở nhánh riêng. S007 là cuộc gọi độc lập, chú đã lên tầng 3 và xác định đồng hồ cạnh H.
+
+- Mở Haneda 案内カウンター mục nhà ga 3, dòng 183–195 xác nhận quầy sảnh đến 2F và sảnh đi 3F. Mở Haneda 待ち合わせ場所 dòng 136–138, hai tháp đồng hồ gần quầy H và C ở 3F. https://tokyo-haneda.com/service/facilities/info_center.html https://tokyo-haneda.com/service/facilities/meeting_place.html
+
+- S007 (b58ee982-4934-5613-a856-f9f396be3bdb), 03. Kiểm ký hiệu H gần đồng hồ thay vì chỉ bảo đứng cạnh đồng hồ. Bối cảnh nêu chú đã lên tầng ba, khác mốc sảnh đến ở các cảnh kia.
+
+### Kiểm độc lập E03
+
+S009 hỏi ghế nghỉ và biết điểm taxi tầng 1. S010 hỏi quầy về xe lăn, được báo sẽ kiểm có xe trống và trả ở quầy này. S011 kiểm rồi hết xe, chờ tại ghế. S012 là nhánh khác có xe, Lan nói lại quy tắc cho chú, giữ phạm vi trong sân bay.
+
+- Mở Haneda 車いす貸し出し（空港内使用） dòng 102–110. Xác nhận quầy hướng dẫn có xe dùng trong sân bay; tình trạng xe và điểm trả là hỏi tại quầy như lời trong cảnh. https://tokyo-haneda.com/service/facilities/wheelchair_rentals.html
+
+- Mở mục タクシー乗り場 – T3 của Haneda, dòng 152–167. Xác nhận taxi thường tầng 1. Đây không phải hướng dẫn cho xe đã đặt. https://www.tokyo-haneda.com/access/taxi/index.html
+
+- S009 (d834da18-3b4e-5310-b1a2-88938bb86b84), 01. Người học nêu chú đi chậm và hỏi ghế nghỉ. Câu sau dùng tên điểm đón taxi tự nhiên và nguồn quầy xác nhận đúng tầng 1 cho taxi thường.
+
+- S010 (4ec6eb44-2e79-5fe1-b17c-d4369f0aaa89), 03. Nghe quầy có dịch vụ nhưng mới kiểm có xe. Người học hỏi trả ở đâu trong trường hợp mượn được. Cân bằng dữ kiện chung trước hai nhánh.
+
+### Kiểm độc lập E04
+
+S013 mới nghỉ rồi quyết rút lịch. S014 ở cùng cảnh nghỉ, chú muốn xem ao, thống nhất nghỉ 20 phút rồi chỉ xem ao. S015 nhánh khác đã rút lịch, gọi dịch vụ đổi xe từ 14 lên 15 giờ vì tàu chậm. S016 chốt cửa Tây và Lan sẽ gọi lại nếu đổi nữa.
+
+- Đọc B08 dòng 2829–2839 về kể lý do đổi hoạt động và B11 dòng 3383–3392 về báo giờ đến trễ.
+
+- S015 (d208f053-cb43-5f18-a709-a6aece9bd7db), 02. Tự xưng cho quầy nhận ra đặt xe đón lúc 14 giờ, rồi báo tàu chậm xin 15 giờ. Quầy nói đã đổi sau khi nghe chốt.
+
+- S016 (ad0a2f72-1537-5b69-b1b0-d8fe9552c329), 03. Hỏi ai báo nếu trễ thêm và nhận số quầy đã gọi. Người học nhắc 15 giờ cửa Tây và việc mình chủ động gọi.

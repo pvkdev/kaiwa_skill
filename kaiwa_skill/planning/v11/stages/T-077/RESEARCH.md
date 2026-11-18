@@ -38,3 +38,7 @@ S009→S010→S011: mở vấn đề bàn giao hỏi đáp, hai người hẹn 1
 - S010 · `a461aaee-c388-5692-9bfe-65a10c69d56f` · u02, u04, u05. Linh không kéo leader vào nói ngay. Chốt 16:30 ở B, trước bàn giao 17 giờ; nếu có vụ sắp xử lý trùng thì Linh báo sớm.
 - S011 · `0953a5ce-a3a9-5f32-9a0a-bdf30751b176` · u01, u03, u05. Linh nêu đã suýt trả lời đồng thời, không nói khách nhận hai lời. Toda chốt một bảng ghi và khi gấp gọi đầu mối. Linh nhận báo lại nhóm.
 - S012 · `23213225-4a52-572f-aa4a-d6e70e96ff7f` · u02, u04, u05. Linh chưa nhận cam kết và nêu điều cần kiểm. Hẹn 10 giờ sáng mai; người hiện tại vẫn phụ trách tạm.
+
+## Rà độc lập V11 batch04
+
+Đọc B02 Scene 6 dòng 133–159 và Scene 15 dòng 236–262, một cảnh tách việc đã xong với dự định và một cảnh chờ đồng nghiệp đáp lời mới hỏi. Đọc B06 mục 73 dòng 143–150, lời cân nhắc chưa quyết và người nghe đợi kết quả. Các tình huống công ty gắn một bước kiểm cụ thể trước quyết định.

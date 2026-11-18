@@ -40,3 +40,7 @@ S009→S010/S011→S012: khách muốn từ 18→16 giờ, cần cập nhật tr
 - S010 · `d799368a-1e62-5650-95b0-2253a29fb28f` · u02, u04, u05. Tadokoro kiểm và hẹn 14:20, không khẳng định miễn duyệt. Minh báo đang xác nhận nếu chưa xong, không hứa 16.
 - S011 · `f91b73f8-2451-5931-8e3c-880457e72199` · u02, u04, u05. Quyền giới hạn trong ngày và cần xác nhận kho/bên giao. Minh lấy giờ cũ, mới và căn cứ, báo duyệt rồi mới thông tin cho khách.
 - S012 · `ccde2c1e-6558-5a57-aec5-edad007e135c` · u01, u03, u05. Minh báo thứ tự đã làm và lúc báo khách. Giữ phạm vi chỉ đổi giờ trong ngày, trường hợp khác hỏi leader; nêu thông tin lưu hồ sơ.
+
+## Rà độc lập V11 batch04
+
+Đọc B02 Scene 34 dòng 153–170, cách so lịch trước cho phép dùng phòng. Đọc B03 Unit 6 dòng 37–50 về cách gọi người công ty mình trước người ngoài, Unit 18 dòng 27–40 về báo cụ thể thay đổi. Đọc B16 Unit 4 dòng 384–394 về câu ngầm chỉ và Unit 7 dòng 13–33 về lời mời ngoài giờ. Phân quyền phòng, gọi khách và sự kiện tự nguyện đều nói trong phạm vi công ty của nhân vật.
