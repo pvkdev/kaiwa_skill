@@ -1,141 +1,212 @@
-# Đi tàu điện và xe buýt
+# Hỏi đường đi tàu điện và xe buýt
 
-Trước khi lên tàu hay xe buýt, hãy biết mình muốn xuống ở đâu. Giữ tên ga hoặc tên bến trên điện thoại để chỉ cho nhân viên khi cần. Tìm trên biển phần bạn đã biết, rồi hỏi phần còn thiếu. Khi được chỉ đường, nhắc lại tên ga, số sân ga hoặc tên bến để người chỉ có cơ hội sửa ngay. Các tên ga, tên bến và số sân ga trong ví dụ dùng để minh họa.
+## Tàu này có dừng ở ga mình cần không?
 
-## Trước khi lên tàu, kiểm tra ga cần xuống
-
-Trên biển, **方面** (ほうめん) cho biết hướng đi. **～行き** đứng sau tên nơi đến trên chuyến đó. Ga bạn cần có thể là một điểm dừng dọc đường. Nếu thấy tên quen mà vẫn chưa chắc, hỏi thẳng chuyến trước mặt có dừng ở ga mình cần không. Đây cũng là cách kiểm tra ngay khi biển ghi **快速** (かいそく, tàu nhanh) hay **各駅停車** (かくえきていしゃ, tàu dừng mọi ga).
+Bạn muốn đến ga Sakura. Tàu đã tới, nhưng bạn chưa biết chuyến này có dừng ở đó không. Thử nói câu đầu với nhân viên ga. Ngắt nhẹ sau **すみません** để gọi người nghe, rồi nói rõ tên ga.
 
 > すみません、この電車は桜駅に止まりますか。
 > Xin lỗi, tàu này có dừng ở ga Sakura không ạ?
 
-Nếu muốn biết có phải đổi tàu không, hỏi bằng **直通** (ちょくつう, đi thẳng).
+Nhân viên đáp:
+
+> いいえ、この電車は青葉駅までです。
+> Không ạ, tàu này chỉ đến ga Aoba.
+
+Nghe **青葉駅まで**, bạn biết tàu này chỉ đưa mình tới Aoba. Để biết Aoba có phải ga đổi không, bạn cần hỏi thêm. Thử nhắc lại tên ga vừa nghe trong câu hỏi.
+
+> 青葉駅で乗り換えですか。
+> Tôi đổi tàu ở ga Aoba phải không ạ?
+
+> はい、青葉駅で乗り換えてください。
+> Vâng, anh/chị đổi tàu ở ga Aoba.
+
+Cùng dịch là “ở”, nhưng trong **桜駅に止まる**, **に** đi với điểm tàu dừng. Trong **青葉駅で乗り換える**, **で** đi với chỗ bạn đổi tàu. Nếu chỉ nghe được từ **乗り換え** mà chưa bắt được tên ga, giữ động từ và thay tên ga bằng **どこで**.
+
+> どこで乗り換えますか。
+> Tôi đổi tàu ở đâu ạ?
+
+Nếu ngay từ đầu bạn nghe **はい** và **止まります**, nhân viên xác nhận tàu có dừng ở Sakura. Bạn có thể cảm ơn và kết thúc lượt hỏi đó. Nếu bạn cần biết có đi một mạch tới nơi không, có thể hỏi bằng **直通** (ちょくつう), nghĩa là đi thẳng, không cần đổi tàu.
 
 > この電車は桜駅まで直通ですか。
 > Tàu này đi thẳng đến ga Sakura phải không ạ?
 
-Trong ví dụ dưới đây, tàu đưa bạn đến Aoba. Nghe tiếp xem nhân viên có bảo lên tàu này trước rồi đổi ở đó không. **～まで** chỉ nơi tàu đi tới trong lời đáp này, còn **～で乗り換える** cho biết nơi đổi tàu.
+## Hỏi lại khi đứng nhầm sân ga
 
-> 桜駅には行きません。青葉駅まで行きます。
-> Tàu này không đến ga Sakura. Tàu đi đến ga Aoba.
+Đã đến Aoba, bạn hỏi tàu hướng Sakura đón khách ở sân ga số mấy. **方面** (ほうめん) nói về hướng. **番線** (ばんせん) đi với số để chỉ chỗ đón tàu. Nếu đã đứng trên một sân ga và muốn kiểm tra ngay chỗ mình đang đứng, dùng **このホーム** khi nói với nhân viên.
 
-> 青葉駅で乗り換えてください。まず、この電車に乗ってください。
-> Chị đổi tàu ở ga Aoba. Trước tiên, mời chị lên tàu này.
+> 桜方面は何番線ですか。
+> Tàu hướng Sakura ở sân ga số mấy ạ?
 
-Nếu mới nghe nói phải đổi tàu, hỏi **どこで乗り換えますか** để biết ga đổi. Khi chưa nghe rõ tên ga, bạn có thể đề nghị nói lại. Khi đã nghe được tên, nhắc lại bằng **～ですね** và đợi người kia xác nhận. Đến ga vừa xác nhận thì xuống để tìm tàu tiếp theo.
+> このホームでいいですか。
+> Tôi đợi ở sân ga này đúng không ạ?
 
-> すみません、駅の名前をもう一度言ってください。
-> Xin lỗi, anh nói lại tên ga giúp tôi với ạ.
+Với câu sau, nhân viên có thể sửa như sau:
 
-## Ở ga đổi, kiểm tra cả số sân ga lẫn hướng
+> ここは反対方向です。向かいの２番線です。
+> Chỗ này đón tàu đi chiều ngược lại. Sân ga số 2 ở phía đối diện.
 
-Khi đã xuống tàu, tìm số **番線** (ばんせん) trên biển chỉ sân ga. **ホーム** là chỗ bạn đứng chờ tàu. Hỏi số đi cùng hướng hoặc ga bạn cần, vì mỗi chỉ dẫn chỉ có nghĩa tại ga bạn đang đứng.
+Trong câu đáp, nghe **反対方向** để biết mình đứng nhầm chiều và **向かい** để biết chỗ đúng nằm phía đối diện. Nếu chỉ nghe được rằng mình đứng nhầm chiều, dùng lại câu hỏi với **何番線** để biết sang sân ga nào. Nếu còn chưa chắc ga mình đứng có phải Aoba không, nêu **青葉駅** để xác nhận trước. Khi cả hai đã rõ đó là ga nào, dùng **ここ** để hỏi xem có đổi tàu ngay tại đây không.
 
-> すみません、桜方面は何番線ですか。
-> Xin lỗi, tàu hướng Sakura ở sân ga số mấy ạ?
+> ここで乗り換えですね。
+> Tôi đổi tàu ở đây, đúng không ạ?
 
-Nếu được chỉ **あちらの階段**, nhìn theo tay người chỉ để tìm cầu thang phía kia. Bạn có thể chỉ vào cầu thang mình định đi và hỏi với **こちら**. Nếu nghe **その先**, hãy nhìn xa hơn mốc đang chỉ. **どちら** là cách hỏi lịch sự khi chưa biết ở phía nào.
+Khi nhân viên xác nhận, nhắc lại chỗ đi tiếp bằng **～ですね**. Bạn có thể nhắc trọn **向かいの２番線** nếu vừa phải sửa cả phía lẫn số. Nếu nghe được số rồi mà còn lúng túng ở cầu thang, chỉ vào lối mình định đi và hỏi bằng **こちら**. Nghe **その先** thì hiểu là cầu thang ở xa hơn lối bạn vừa chỉ.
 
 > こちらの階段ですか。
 > Tôi đi cầu thang này phải không ạ?
 
-Nếu đang đứng ở sân ga và nghe **反対方向** (はんたいほうこう), sân ga này đón tàu đi chiều ngược với nơi bạn cần tới. **向かいのホーム** là sân ga đối diện. Hãy hỏi lại số sân ga và dùng lối nối được chỉ để sang. Nếu vẫn phân vân mình đã đến đúng ga đổi chưa, xác nhận tên ga trước, rồi nhắc lại số sân ga và hướng đi. Trong ví dụ, bạn đã ở Aoba và cần sang sân ga số 2 để đi hướng Sakura.
+> いいえ、その先の階段です。
+> Không ạ, cầu thang ở phía trước nữa.
 
-> 桜方面は青葉駅の２番線ですね。
-> Tàu hướng Sakura ở sân ga số 2 của ga Aoba, đúng không ạ?
+## Dùng lại câu hỏi khi chuyển sang xe buýt
 
-## Trước khi lên xe buýt, hỏi bến dừng, cửa lên và lúc trả tiền
+Giữ khung **この～は［tên nơi］に止まりますか**. Thay **電車** bằng **バス** và thay tên ga bằng tên bến. Thử hỏi tài xế xem xe có dừng ở bến Thư viện.
 
-Tên điểm đến và tên bến có thể khác nhau. Chẳng hạn, **図書館前** là tên bến trước thư viện. Hỏi tài xế xem xe có dừng ở bến đó không. Khi cần đếm, **いくつ目** hỏi bến thứ mấy tính từ đây. Nghe **三つ目** thì tìm bến thứ ba. Nếu đang ở trạm có nhiều chỗ đón xe, **乗り場** chỉ chỗ đứng đón chuyến mình cần.
+> このバスは図書館前に止まりますか。
+> Xe này có dừng ở bến Thư viện không ạ?
 
-> すみません、このバスは図書館前に止まりますか。
-> Xin lỗi, xe này có dừng ở bến Thư viện không ạ?
+Nếu tài xế nói xe có dừng, bạn có thể hỏi từ đây là bến thứ mấy. Trong lời đáp **三つ目**, phần **目** cho biết thứ tự. Nghe được **三つ目** thì nhắc lại bến thứ ba bằng **～ですね**.
 
 > ここからいくつ目ですか。
 > Từ đây là bến thứ mấy ạ?
 
-Với Toei Bus trong 23 quận của Tokyo, hành khách lên cửa trước và trả tiền lúc lên. Với Toei Bus ở khu vực Tama, hành khách lên cửa sau và trả tiền lúc xuống. Khi đi chuyến chưa quen, hỏi riêng cửa lên và lúc trả. Hãy nghe **前のドア** hoặc **後ろのドア** để chọn cửa, rồi nghe **乗るとき** hoặc **降りるとき** để biết trả lúc lên hay lúc xuống. **運賃** (うんちん) là tiền vé.
-
-> このバスはどのドアから乗りますか。
-> Xe này lên từ cửa nào ạ?
-
-> 運賃は乗るときに払いますか。
-> Tiền vé trả lúc lên xe phải không ạ?
-
-## Nếu phải đổi xe, hỏi cả bến xuống và chỗ đón chuyến sau
-
-Khi tài xế nói **中央公園まで**, xe đi tới Công viên Trung tâm. Nếu bạn muốn đến bến Bệnh viện, hãy hỏi có thể đổi xe ở đâu. Khi nghe hướng dẫn có hai động tác, xác nhận nơi **降りる** (xuống xe) rồi xác nhận xe cần **乗る** (lên). Sau khi xuống, tìm **乗り場** của chuyến kế tiếp. Nếu có nhiều chỗ đón, nói rõ bạn tìm xe **病院前行き**.
+Nếu cần tới bến Bệnh viện mà tài xế đáp **中央公園まで**, dùng lại câu hỏi chỗ đổi với **どこで** như khi đi tàu. Nghe lời đáp theo hai nhịp, mỗi nhịp cho bạn một thông tin để nhắc lại.
 
 > 中央公園で降りて、病院前行きに乗ってください。
-> Chị xuống ở bến Công viên Trung tâm rồi lên xe đi bến Bệnh viện.
+> Anh/chị xuống ở bến Công viên Trung tâm rồi lên xe đi bến Bệnh viện.
+
+**中央公園で降りて** nói chỗ xuống. **病院前行きに乗って** nói xe sẽ lên. Khi vừa xuống, hỏi **乗り場**, tức chỗ đón chuyến kế tiếp.
 
 > 次のバスの乗り場はどこですか。
 > Chỗ đón chuyến xe buýt tiếp theo ở đâu ạ?
 
-## Nếu đi quá bến, tìm đường quay lại và báo người đang đợi
+Còn khi hỏi cửa lên, **どのドアから** giúp tài xế trả lời bằng tên cửa, chẳng hạn **前のドアから**, từ cửa trước. Trong câu hỏi tiền vé, **とき** biến hành động phía trước thành thời điểm. Thử đổi từ **乗る** sang **降りる** nếu bạn muốn xác nhận có phải trả lúc xuống xe.
 
-Nếu màn hình đã hiện tên bến khác và bạn nghi mình đi quá, hỏi khi xe dừng. **過ぎましたか** hỏi đã qua chưa. Nếu tài xế nói **さっき通りました**, xe vừa đi qua bến bạn cần. Hỏi tiếp chỗ có thể xuống. Khi đã biết bến, nghe thông báo hoặc nhìn màn hình và dùng nút báo xuống nếu xe có nút. Sau khi xuống, hỏi từ bến đó có thể quay lại nơi mình cần đến bằng cách nào.
+> このバスはどのドアから乗りますか。
+> Xe này lên từ cửa nào ạ?
 
-> すみません、図書館前を過ぎましたか。
-> Xin lỗi, xe đã qua bến Thư viện chưa ạ?
+> 運賃は降りるときに払いますか。
+> Tiền vé trả lúc xuống xe phải không ạ?
+
+Nếu tài xế đáp như dưới đây, từ cần bắt là **乗る**. Bạn có thể nhắc lại **乗るとき** với **ですね** trước khi trả tiền.
+
+> 乗るときに払ってください。
+> Anh/chị trả tiền lúc lên xe nhé.
+
+## Nói gì khi đã đi quá bến?
+
+Bạn nghi đã đi quá bến Thư viện. Hỏi tài xế bằng **過ぎる** (すぎる), đi qua. Ở đây, **を** đánh dấu bến xe đã đi qua.
+
+> 図書館前を過ぎましたか。
+> Xe đã qua bến Thư viện chưa ạ?
+
+Tài xế nói:
+
+> はい、さっき通りました。
+> Vâng, xe vừa đi qua bến đó.
+
+Nghe **さっき**, bạn biết việc đó vừa xảy ra. Hỏi tiếp bến nào có thể xuống. **降りられますか** hỏi “có thể xuống được không”, còn **どこで** kéo câu trả lời về tên bến cụ thể.
 
 > 次はどこで降りられますか。
 > Tôi có thể xuống ở bến nào tiếp theo ạ?
 
-> ここから図書館に戻れますか。
-> Từ đây tôi có thể quay lại thư viện được không ạ?
+Nếu nghe tài xế chỉ **市民会館前**, nhắc lại tên bến để kiểm tra. Nếu thấy nút mà chưa biết có phải nút báo xuống hay không, chỉ vào đó và hỏi một người đi cùng.
 
-Nếu có bạn đang đợi, xuống xe rồi gọi. Nói mình đang ở bến nào, sẽ đến muộn và sẽ báo lại khi đã biết cách quay về. **ますか** dùng khi hỏi tài xế. Với bạn thân, **～よ** báo tình hình và **～ね** có thể làm lời hẹn gọi lại tự nhiên hơn. Nếu bạn nói sẽ tiếp tục đợi trước thư viện, giữ nguyên điểm gặp. Khi biết thời gian tới nơi, bạn có thể báo sau.
+> 降りたいときはこのボタンを押しますか。
+> Muốn xuống xe thì tôi bấm nút này phải không ạ?
+
+Sau khi xuống, bạn gọi cho người bạn đang đợi. Chuyển sang giọng thân mật. Dùng **よ** khi báo bạn vừa xuống ở đâu. Với **少し遅れる**, bạn báo mình sẽ muộn mà chưa cần nói mấy phút.
 
 > 市民会館前で降りたよ。少し遅れる。
 > Tớ vừa xuống ở bến Hội trường Thành phố. Tớ sẽ đến muộn một chút.
 
-> 図書館に戻るバスが分かったら、また連絡するね。
-> Tớ tìm được xe buýt quay lại rồi sẽ liên lạc với cậu nhé.
+> わかった。図書館の前で待ってるね。
+> Ừ, tớ đợi trước thư viện nhé.
 
-## Tìm lối thang máy tới đúng sân ga
+Nghe **待ってるね**, bạn biết bạn mình sẽ chờ tại điểm hẹn. Để báo sẽ liên lạc lại sau khi biết đường quay về, dùng **また連絡する** và thêm **ね** như khi bạn mình nói sẽ đợi.
 
-Khi mang nhiều hành lý, bạn có thể hỏi thang máy ở đâu. Nếu đi cùng người khó đi cầu thang, nói rõ trở ngại và hỏi đi thang máy có tới được sân ga mình cần không. Nếu đang nhìn thấy một lối đi, dùng **こちらから** để hỏi có đi từ lối này được không, đồng thời chỉ vào lối đó.
+## Nói rõ mình cần lối có thang máy
 
-> 荷物が多いんですが、エレベーターはどちらですか。
-> Tôi có nhiều hành lý. Thang máy ở phía nào ạ?
+Khi xách nhiều hành lý, hỏi vị trí thang máy bằng **どちら**. Nhân viên có thể đáp bằng một mốc ngắn. Trong câu bên dưới, **改札** là cổng soát vé, còn **右** là phía bên phải của cổng.
 
-> 母は階段がつらいんです。エレベーターでホームまで行けますか。
-> Mẹ tôi đi cầu thang khó khăn. Chúng tôi đi thang máy lên sân ga được không ạ?
+> すみません、エレベーターはどちらですか。
+> Xin lỗi, thang máy ở phía nào ạ?
 
-Ghi nhớ một mốc và một hướng. Chẳng hạn, **改札の右** là bên phải cổng soát vé, **突き当たり** là cuối lối đi, nơi hành lang kết thúc. Nghe **まっすぐ** thì đi thẳng. Khi chỉ dẫn có thêm điểm rẽ, nhắc lại đúng mốc phải rẽ.
+> 改札の右です。
+> Ở bên phải cổng soát vé ạ.
 
-> 突き当たりで左に曲がるんですね。
-> Đến cuối lối đi thì rẽ trái, đúng không ạ?
+Nếu mẹ bạn khó đi cầu thang, hãy nói lý do trước. **～んです** ở đây giúp người nghe hiểu vì sao bạn cần hỏi. Sau đó hỏi bằng **エレベーターで** để người nghe biết bạn cần đi **bằng thang máy** tới tận sân ga.
 
-## Khi cần hỗ trợ ở ga đổi, xác nhận chỗ chờ và điểm gặp
+> 母は階段がつらいんです。
+> Mẹ tôi đi cầu thang rất khó khăn ạ.
 
-Hãy báo với nhân viên ở ga xuất phát tên ga sẽ đổi và việc bạn cần giúp, chẳng hạn tìm đường cho mẹ đi từ sân ga đến chuyến kế tiếp mà không phải leo cầu thang. Bạn có thể hỏi liệu ở ga đổi cũng dùng được thang máy không.
+> エレベーターでホームまで行けますか。
+> Chúng tôi đi thang máy tới sân ga được không ạ?
 
-> 青葉駅でもエレベーターを使えますか。
-> Ở ga Aoba cũng dùng được thang máy phải không ạ?
+Nếu có một lối ngay trước mặt, vừa chỉ vừa hỏi với **こちらから**.
 
-Phân biệt **確認します**, nhân viên sẽ kiểm tra, và **確認しました**, nhân viên đã kiểm tra xong. Nghe **少しお待ちください** thì hỏi chỗ chờ hiện tại, ví dụ cạnh cổng soát vé. Khi nhân viên quay lại, nghe xem sẽ gặp ai và chỗ đó ở sân ga hay ở cổng soát vé. Dùng điểm gặp đã được xác nhận để đi tiếp. Nếu chỉ nghe được “trước thang máy”, mà chưa biết thang máy ở đâu, hãy hỏi lại địa điểm.
+> こちらから行けますか。
+> Chúng tôi đi lối này được không ạ?
+
+Khi nghe nhân viên chỉ **突き当たりを左**, hãy nhắc lại cả mốc cuối lối đi lẫn hướng rẽ. Nói mỗi **左** sẽ để ngỏ chỗ cần rẽ.
+
+> 突き当たりを左ですね。
+> Đến cuối lối đi rồi rẽ trái, đúng không ạ?
+
+## Nghe xem nhân viên đã xác nhận chỗ gặp chưa
+
+Bạn sẽ đổi tàu ở Aoba và cần nhân viên chỉ lối cho mẹ tới sân ga của chuyến sau. Nêu **青葉駅** là nơi đổi, rồi nhắc lại việc mẹ khó đi cầu thang. Nếu nhân viên đáp như dưới đây, bắt phần cuối **します**. Họ sẽ kiểm tra với ga Aoba. Câu tiếp theo của bạn hỏi mình nên chờ ở đâu **bây giờ**.
+
+> 青葉駅に確認します。少しお待ちください。
+> Tôi sẽ kiểm tra với ga Aoba. Xin chờ một chút.
 
 > どこで待てばいいですか。
 > Chúng tôi nên chờ ở đâu ạ?
 
-> ホームのエレベーター前で駅員さんと会うんですね。
-> Chúng tôi sẽ gặp nhân viên ga trước thang máy trên sân ga, đúng không ạ?
+Nhân viên có thể chỉ **改札の横**, bên cạnh cổng soát vé. Khi họ quay lại, nghe xem **します** đã đổi thành **しました** chưa. Ở đây, phần cuối câu cho biết việc kiểm tra đã xong. Lần này bạn nhắc lại **điểm gặp sau khi xuống tàu ở Aoba**.
 
-## Nếu vé giấy không qua cổng, nhờ nhân viên xem giúp
+> 青葉駅に確認しました。駅員がホームのエレベーター前で待ちます。
+> Tôi đã xác nhận với ga Aoba. Nhân viên sẽ đợi trước thang máy trên sân ga.
 
-Giữ vé và nói điều bạn vừa gặp. **この切符で** chỉ chiếc vé bạn đang dùng. Khi nghe **窓口** (まどぐち), hỏi quầy nào nếu nhân viên chưa chỉ rõ. **切符を見せてください** là lời yêu cầu đưa vé cho nhân viên xem. Đưa vé và chờ họ kiểm tra để biết bước tiếp theo.
+> ホームのエレベーター前ですね。
+> Trước thang máy trên sân ga, đúng không ạ?
+
+## Nhờ nhân viên xem vé
+
+Khi vé giấy không qua được cổng, mở lời bằng điều bạn vừa gặp. **この切符で** nghĩa là “với vé này”. Bạn có thể chỉ vào vé khi nói.
 
 > すみません、この切符で改札を通れません。
 > Xin lỗi, tôi dùng vé này mà không qua được cổng soát vé ạ.
 
-> どの窓口に行けばいいですか。
-> Tôi nên đến quầy nào ạ?
+Nếu nghe nhân viên nói họ kiểm tra ở **窓口** (まどぐち), bạn có thể dùng lại câu hỏi vị trí với **どちら**. Lần này, thay **エレベーター** bằng **窓口**.
 
-## Trước lúc đi
+> 窓口はどちらですか。
+> Quầy ở phía nào ạ?
 
-- Lên tàu khi đã rõ ga cần xuống và chiều đi. Nếu phải đổi tàu, nhớ tên ga đổi, hướng đi và số sân ga cho chặng tiếp.
-- Lên xe buýt khi đã rõ xe có đến bến mình cần, cửa lên và lúc trả tiền. Nếu đổi xe, hỏi chỗ đón chuyến sau.
-- Lỡ bến thì hỏi nơi xuống tiếp theo. Sau khi xuống, tìm đường quay lại và báo người đang đợi.
-- Nhờ hỗ trợ thì nhớ chỗ chờ hiện tại và nhắc lại điểm gặp ở ga đổi. Nếu vé gặp trục trặc, giữ vé để nhân viên kiểm tra.
+> こちらです。切符を見せてください。
+> Quầy bên này ạ. Xin cho tôi xem vé.
+
+Nghe **見せてください** thì đưa vé ra và đáp **お願いします**. Trong lúc đưa vé, cụm ngắn này đã đủ để nhờ người kia xem giúp.
+
+## Thử nói trọn một lượt hỏi
+
+Lần này bạn muốn xuống ở ga Midori. Hãy nói to câu hỏi tàu có dừng ở đó không, rồi đọc câu đáp của nhân viên. Khi nghe **まで**, thử nhắc lại ga đổi trước khi nhìn câu cuối.
+
+> この電車は緑駅に止まりますか。
+> Tàu này có dừng ở ga Midori không ạ?
+
+> いいえ、中央駅までです。
+> Không ạ, tàu này chỉ đến ga Chūō.
+
+> 中央駅で乗り換えですか。
+> Tôi đổi tàu ở ga Chūō phải không ạ?
+
+Giờ tự đổi vai. Làm nhân viên, đọc câu báo tàu chỉ tới Chūō ở trên. Dừng một nhịp, trở lại vai hành khách và hỏi xem có đổi tàu ở Chūō không. Làm lại với lời đáp bên dưới. Lần này nghe thấy tàu có dừng ở Midori thì đáp bằng một lời cảm ơn.
+
+> はい、緑駅に止まります。
+> Vâng, tàu có dừng ở ga Midori.
+
+Nếu lỡ mất tên ga, xin người kia nhắc lại trước khi nói tiếp.
+
+> すみません、駅の名前をもう一度言ってください。
+> Xin lỗi, anh/chị nói lại tên ga giúp tôi với ạ.
