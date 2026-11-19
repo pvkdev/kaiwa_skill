@@ -1,4 +1,4 @@
-# Bản thảo từ vựng V12 cho một chặng
+# Bản thảo từ vựng V12.1 cho một chặng
 
 Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. Bản sau duyệt hàng loạt nằm ở `kaiwa_skill/planning/v12/stages/<stage_code>/vocabulary.json`. Đầu vào là chặng trong `kaiwa_skill/planning/v11/learner.json`. Mỗi thư mục chặng có `vocabulary.json` và `status.json`.
 
@@ -21,10 +21,10 @@ Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. B
       "title_vi": "Nội dung và nơi đến kiện quốc tế",
       "v10_topic": "Nội dung và nơi đến kiện quốc tế",
       "terms": [
-        {"id": "T-044-v001", "ja": "送る", "reading": "おくる", "vi": "gửi", "pos": "verb",
+        {"id": "T-044-v001", "ja": "送る", "reading": "おくる", "han_viet": "TỐNG", "vi": "gửi", "pos": "verb",
          "level_hint": "N5", "origin": "dialogue",
          "evidence": [{"utterance_id": "b13e0182-7d4c-5247-a96c-9d9e3dd6b862-u01", "surface": "送りたい"}]},
-        {"id": "T-044-v002", "ja": "税関告知書", "reading": "ぜいかんこくちしょ", "vi": "tờ khai hải quan (gửi kèm bưu kiện)",
+        {"id": "T-044-v002", "ja": "税関告知書", "reading": "ぜいかんこくちしょ", "han_viet": "THUẾ QUAN CÁO TRI THƯ", "vi": "tờ khai hải quan (gửi kèm bưu kiện)",
          "pos": "noun", "level_hint": "none", "origin": "topic_extension",
          "level_note_vi": "Người gửi cần nhận ra tên tờ khai khi nhân viên hỏi về hàng trong kiện.",
          "source_domain": "procedural", "source_refs": ["jp-post-intl"]}
@@ -53,6 +53,8 @@ Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. B
 - `id`: ổn định, duy nhất trong chặng. Đề xuất `<stage_code>-v001`. Cấp một lần; sửa nghĩa hay chuyển nhóm vẫn giữ ID; mục mới lấy số tiếp theo.
 - `ja`: dạng mục từ (động từ thể từ điển, tính từ い dạng cơ bản, tính từ な không kèm な/だ). Không có dấu câu kết câu.
 - `reading`: chỉ kana (hiragana, katakana, ー). Không ghi romaji.
+- `han_viet`: bắt buộc, chuỗi âm Hán Việt viết HOA có dấu theo thứ tự từng kanji, phân cách bằng một khoảng trắng. Quy tắc đầy đủ nằm trong SKILL.md. Mỗi kanji, kể cả vị trí lặp `々`, ứng với một âm. Từ toàn kana hoặc Latin dùng `""`.
+- `han_viet_note_vi`: ghi chú nội bộ giải thích chữ đã tra nhưng chưa có âm được nguồn công nhận, bắt buộc khi chuỗi có ký hiệu `—`. Gắn nguồn tra cứu vào `source_refs`. Điểm chưa xác minh được ghi ở `status.open_issues`.
 - `vi`: nghĩa tiếng Việt theo chủ đề.
 - `pos`: `noun`, `verb`, `i_adj`, `na_adj`, `adverb`, `expression` (cụm cố định), `counter`, `other`.
 - `level_hint`: `N5`, `N4`, `N3`, `N2`, `N1` hoặc `none`.
@@ -66,7 +68,7 @@ Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. B
 
 ### Gói xuất
 
-`--export` tạo một node vocabulary cho mỗi nhóm: `{id: "<stage_code>-<group id>", type: "vocabulary", title_vi, data: {terms_ja: [...]}}` với `terms_ja` là các chuỗi `ja` theo đúng thứ tự. Đúng hợp đồng Harumii Exchange: app chỉ nhận chữ Nhật. `reading`, `vi`, `pos`, `level_hint`, nguồn và bằng chứng ở lại tầng biên tập và preview.
+`--export` tạo một node vocabulary cho mỗi nhóm: `{id: "<stage_code>-<group id>", type: "vocabulary", title_vi, data: {terms_ja: [...]}}` với `terms_ja` là các chuỗi `ja` theo đúng thứ tự. Đúng hợp đồng Harumii Exchange: app chỉ nhận chữ Nhật. `reading`, `han_viet`, `vi`, `pos`, `level_hint`, nguồn và bằng chứng ở lại tầng biên tập và preview.
 
 ## status.json
 
@@ -91,3 +93,5 @@ Pilot nằm ở `kaiwa_skill/planning/v12/pilot/<stage_code>/vocabulary.json`. B
 - Khi `learner_sha256` đổi (hội thoại V11 được sửa), chạy lại `--check` để bắt bằng chứng không còn đúng, rồi rà lại các nhóm có mục bị ảnh hưởng.
 
 Nghiệm thu bằng `--check-checkpoint <vocabulary.json>` đọc status.json bên cạnh bản thảo. Lấy learner_sha256 từ brief để checkpoint dùng được trên cả Windows và Linux. UID, mã chặng, owner, hash đầu vào, skill và bản thảo phải khớp. Danh sách nhóm phải khớp chính xác, từng nhóm đã reviewed với hai hash đúng và có ghi chú rà. open_issues phải rỗng. `--export` dùng cùng điều kiện và in JSON ra stdout, thông báo kiểm ra stderr. Phần bao ngoài gồm stage_uid, stage_code và nodes để ghép vào snapshot chặng.
+
+Preview V12.1 hiển thị một bài từ vựng cho mỗi chặng, chia nhóm bên trong. Mỗi bảng có bốn cột theo thứ tự tiếng Nhật, cách đọc, Hán Việt, nghĩa Việt. Giá trị han_viet lấy trực tiếp từ vocabulary.json. Mục có chuỗi rỗng hiển thị ô trống. Gói terms_ja phục vụ engine từ vựng; bản thảo chứa đủ bốn trường để đọc và kiểm dữ liệu.
