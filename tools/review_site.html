@@ -1165,7 +1165,11 @@ function renderVocabularyTable(group, readings) {
   const table = make("table", "word-table");
   table.createCaption().textContent = group.title_vi;
   const headers = table.createTHead().insertRow();
-  for (const [label, className] of [["Từ tiếng Nhật", ""], ["Cách đọc", ""], ["Hán Việt", "han-viet"], ["Nghĩa tiếng Việt", "vi"]]) {
+  const hasHanViet = Object.values(readings).some(senses => senses.some(sense => sense.han_viet != null));
+  const columns = [["Từ tiếng Nhật", ""], ["Cách đọc", ""]];
+  if (hasHanViet) columns.push(["Hán Việt", "han-viet"]);
+  columns.push(["Nghĩa tiếng Việt", "vi"]);
+  for (const [label, className] of columns) {
     const cell = make("th", className, label);
     cell.scope = "col";
     headers.append(cell);
@@ -1179,7 +1183,9 @@ function renderVocabularyTable(group, readings) {
       word.scope = "row";
       const kana = make("td", "word-reading", sense.reading);
       kana.lang = "ja";
-      row.append(word, kana, make("td", "han-viet", sense.han_viet ?? "Chưa bổ sung"), make("td", "vi", sense.vi));
+      row.append(word, kana);
+      if (hasHanViet) row.append(make("td", "han-viet", sense.han_viet ?? ""));
+      row.append(make("td", "vi", sense.vi));
     }
   }
   return table;
