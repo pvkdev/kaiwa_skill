@@ -1,116 +1,182 @@
-# Họp, đề xuất và phản biện
+# Đề xuất và đối đáp trong cuộc họp
 
-Bạn dự một cuộc họp về việc dùng chung câu trả lời ban đầu cho các yêu cầu nội bộ. Một người muốn thử ở phòng Tổng vụ, một người lo phòng này sẽ quá tải, còn người chủ trì muốn giữ cách tiếp nhận hiện tại trong tháng này. Để theo kịp cuộc họp, hãy nghe mỗi người đang nói về việc gì, dựa vào đâu và có thể cam kết đến mức nào. Ba câu hỏi đó cũng giúp bạn trình bày ý mình để người khác có thể trả lời cụ thể.
+## Mở lời để biết cả nhóm đang bàn đến đâu
 
-## Hỏi hôm nay sẽ quyết đến đâu
+Bạn muốn đề nghị phòng Tổng vụ thử dùng một mẫu trả lời chung. Trước khi đưa ý kiến, bạn hỏi người chủ trì xem hôm nay cả nhóm định chốt việc gì.
 
-Trước khi chuẩn bị phần trình bày, hãy xác nhận mục đích của mục đang bàn. So các đề xuất, chọn hướng xử lý, duyệt ngân sách và cho phép bắt tay vào làm là những việc có thể được quyết ở các thời điểm khác nhau. Người điều hành có thể chốt hướng thảo luận trong buổi họp. Nếu cần biết ai được quyền duyệt bước tiếp theo, hãy hỏi người điều hành hoặc đầu mối phụ trách.
+> 今日の会議では、どこまで決める想定でしょうか。
+> Cuộc họp hôm nay dự kiến chốt đến đâu ạ?
 
-> 高橋部長、今日の会議では、どこまで決める想定でしょうか。
-> Trưởng bộ phận Takahashi, cuộc họp hôm nay dự kiến quyết đến mức nào ạ?
+Takahashi đáp.
 
-Người chủ trì có thể dùng **だけ** để giới hạn phạm vi quyết định.
+> 今日は問い合わせ対応の方針だけ決めます。
+> Hôm nay ta chỉ chốt hướng xử lý các câu hỏi thôi.
 
-> 今日は対応の方針だけ決めます。実施の可否は、条件を確認してから判断します。
-> Hôm nay ta chỉ chốt hướng xử lý. Khi kiểm tra xong các điều kiện, ta mới quyết có triển khai hay không.
+**何を** hỏi việc gì, còn **どこまで** hỏi đến mức nào. Bạn có thể đổi phần **今日の会議では** thành **この件については** để hỏi riêng về một việc. Trong câu đáp, **だけ** giới hạn việc sẽ chốt ở **方針**, hướng xử lý. Nếu bạn nghe một đồng nghiệp tưởng bảng ước tính cũng có nghĩa là ngân sách sắp được duyệt, hãy làm rõ bằng một câu về mục đích của bảng và một câu về tình trạng duyệt.
 
-Một bảng chi phí dễ khiến người dự họp tưởng ngân sách cũng sẽ được chốt. Nếu đang trình bày, hãy nói ngay bảng dùng để làm gì. Có thể chú thích **概算・未承認** khi chi phí mới là ước tính sơ bộ và ngân sách còn chờ duyệt.
+> この見積もりは案を比べるためのものです。予算の承認はまだです。
+> Bảng ước tính này dùng để so các phương án. Ngân sách vẫn chưa được duyệt ạ.
 
-> この見積もりは案を比べるための概算です。担当部署と金額をすり合わせた上で、改めて予算の承認をお願いします。
-> Đây là ước tính sơ bộ để so sánh các phương án. Chúng tôi sẽ trao đổi cụ thể với bộ phận phụ trách về số tiền rồi mới trình duyệt ngân sách ạ.
+Đến lúc cần chen lời, thử nói câu xin lượt trước, ngừng một nhịp rồi mới nêu lý do. Với người chủ trì, **確認させてください** cho thấy bạn xin làm rõ một điểm trước khi nhóm tiếp tục.
 
-## Hỏi cách đếm để biết con số nói được gì
+> 方針を決める前に、一点だけ確認させてください。部署によって受付の条件が違うと、同じ文面では誤案内になるおそれがあります。
+> Trước khi chốt hướng xử lý, cho tôi làm rõ một điểm ạ. Nếu các bộ phận có điều kiện tiếp nhận khác nhau, dùng chung một mẫu có thể dẫn đến hướng dẫn sai.
 
-Giả sử sổ tiếp nhận ghi 120 yêu cầu tháng trước. Đồng nghiệp rà sơ bộ thấy khoảng 40 yêu cầu có nội dung trùng hoặc tương tự. Khi nhắc lại, hãy gắn trạng thái với từng con số. Tổng 120 là **確認済み**, đã đối chiếu với sổ. Khoảng 40 là **暫定値**, số tạm tính trong khi còn phân loại. Tỷ lệ một phần ba lấy 40 chia cho tổng 120 nên cũng chỉ cho biết mức ước chừng.
+## Hỏi đúng chỗ mình chưa rõ trong số liệu
 
-> 百二十件は受付台帳で確認済みです。重複とみられる約四十件は、分類が終わるまでは暫定値です。
-> Con số 120 yêu cầu đã được đối chiếu với sổ tiếp nhận. Khoảng 40 yêu cầu có vẻ trùng nhau vẫn là số tạm tính cho đến khi phân loại xong.
+Một đồng nghiệp nói khoảng một phần ba câu hỏi tháng trước bị trùng. Khi bạn hỏi thêm, anh ấy đáp.
 
-Khi hỏi **根拠**, căn cứ, hãy chỉ đúng con số và điều bạn cần kiểm. Hỏi về nguồn sẽ cho biết người tổng hợp dùng sổ nào. Hỏi về **分類基準**, tiêu chí phân loại, sẽ cho biết câu hỏi gần giống có được tính cùng nhóm với câu hỏi giống hẳn hay không. Nếu so hai tháng, hãy kiểm xem hai bên dùng cùng tiêu chí và cùng phạm vi thu thập hay chưa.
+> 百二十件という総数は確認済みです。重複は約四十件ですが、まだ暫定です。
+> Tổng số 120 đã được kiểm tra. Số câu hỏi trùng là khoảng 40, hiện vẫn là số tạm tính.
 
-> 「約三分の一」という割合について、似た質問も重複に含めたか教えていただけますか。
-> Về tỷ lệ “khoảng một phần ba”, anh cho tôi hỏi các câu hỏi gần giống nhau có được tính là trùng không ạ?
+**確認済み** chỉ phần đã kiểm. **暫定** nói số hiện đang dùng còn có thể thay đổi. Nghe **約** và **まだ暫定**, bạn có thể hỏi **theo tài liệu nào** hoặc **đếm những gì**. Nếu sổ tiếp nhận đã rõ mà tiêu chí đếm còn mơ hồ, hỏi câu thứ hai sẽ đi thẳng vào điểm có thể làm tỷ lệ thay đổi.
 
-Nếu đồng nghiệp nghe thành bạn đang nghi ngờ cách họ làm việc, hãy sửa cách hỏi trước khi tiếp tục. Nói rõ điều bạn muốn thống nhất, rồi cùng họ quyết định có cần đếm lại và ai sẽ làm. Trong ví dụ này, có thể cùng Tanaka thống nhất tiêu chí, giữ nhãn tạm tính trên tài liệu và chia sẻ kết quả đếm lại ở buổi sau.
+> 重複の件数を出すのに、どの資料を使ったか教えていただけますか。
+> Anh cho tôi biết đã dùng tài liệu nào để tính số trường hợp trùng lặp được không ạ?
 
-> 聞き方が分かりにくかったですね。似た質問まで含めるか、判断に使う前に分類基準をそろえたいんです。
-> Tôi hỏi chưa rõ. Trước khi dùng số liệu để quyết định, tôi muốn mình thống nhất tiêu chí, cụ thể là có tính cả câu hỏi gần giống hay không.
+> 似た質問も重複に含めたか、教えていただけますか。
+> Anh cho tôi hỏi các câu hỏi gần giống nhau có được tính là trùng không ạ?
 
-## Đề xuất thử ở phạm vi mình có thể kiểm soát
+Bạn giữ đuôi **～か、教えていただけますか** và thay câu hỏi ở trước **か**. Cả hai câu đều cho người nghe biết chính xác bạn cần chi tiết nào làm **根拠**, căn cứ. Nếu đồng nghiệp nghĩ bạn đang nghi ngờ số anh ấy tổng hợp, hãy nhận phần diễn đạt của mình rồi nói cụ thể điều muốn kiểm.
 
-Nếu thấy rủi ro trước lúc chốt hướng, xin một lượt nói bằng **一点だけ確認させてください**. Sau đó nêu điều kiện có thể gây rủi ro và phần bạn đã kiểm. Chẳng hạn, một mẫu chung có thể hướng dẫn sai nếu mỗi bộ phận nhận yêu cầu theo cách khác nhau. Khi mới rà được điều kiện của phòng Tổng vụ, bạn có căn cứ để đề xuất thử tại đó và đề nghị kiểm các bộ phận còn lại trước lúc quyết phạm vi áp dụng.
+> 私の集計が信用できないということですか。
+> Ý cô là số tôi tổng hợp không đáng tin à?
 
-> 総務部の受付条件は確認できています。まず総務部だけで共通の回答文を試してみるのはいかがでしょうか。
-> Tôi đã kiểm tra điều kiện tiếp nhận của phòng Tổng vụ. Anh thấy sao nếu trước hết mình chỉ thử dùng mẫu trả lời chung ở phòng này ạ?
+> 聞き方が分かりにくくてすみません。確認したいのは、どこまでを重複に含めたかです。
+> Xin lỗi, tôi hỏi chưa rõ. Điều tôi muốn biết là mình đã tính những trường hợp nào là trùng ạ.
 
-**～てみるのはいかがでしょうか** mời người nghe góp ý. Hãy chuẩn bị câu trả lời cho ba câu hỏi tiếp theo của người quyết định. Bạn thử việc gì và vì sao chọn phạm vi đó? Nhìn vào đâu để biết cách thử có ích? Nếu phát hiện lỗi thì ai xử lý? Với mẫu dùng chung, có thể theo dõi số trường hợp hướng dẫn sai và thời gian người phụ trách phải kiểm lại. Nếu có hướng dẫn sai, người phụ trách đợt thử tạm dừng dùng mẫu gây lỗi, xem nguyên nhân và xin ý kiến trước khi dùng lại.
+Vế **確認したいのは** đưa cuộc nói trở lại tiêu chí. Nếu anh ấy nói đã tính cả câu hỏi gần giống, bạn có thể nối bằng **分類の基準をそろえて** rồi đề nghị cùng đếm lại.
 
-> 試行中に誤案内が出たら、該当する回答文の使用をいったん止めます。
-> Nếu trong đợt thử có trường hợp hướng dẫn sai, tôi sẽ tạm ngừng dùng mẫu trả lời gây lỗi đó.
+## Nêu một phương án rồi nghe xem người kia đồng ý đến đâu
 
-Nghe **試行なら考えられます**, hãy hiểu là người quyết định đang cân nhắc khả năng thử. Hỏi cần đáp ứng điều kiện gì để bắt đầu. Trong cuộc họp này, cần sự đồng ý của phòng Tổng vụ và cách phát hiện hướng dẫn sai. Nếu hai tuần chỉ đủ để có số lượt và ví dụ phải sửa, hãy thống nhất đó là mốc **中間確認** để quyết có tiếp tục đợt thử hay không.
+Đến lượt bạn đề xuất. **まず** cho thấy đây là bước đầu. **～てみませんか** mời cả nhóm thử. Muốn đưa ra cùng ý ấy với giọng trang trọng hơn, bạn có thể nối thể **～てみる** với **のはいかがでしょうか**.
 
-> 二週間で件数と修正例は出せます。効果の判断に必要な期間は、中間確認のときに相談させてください。
-> Sau hai tuần tôi có thể đưa số lượt và những ví dụ phải sửa. Đến lúc kiểm tra giữa đợt, cho tôi trao đổi thêm về thời gian cần để đánh giá hiệu quả ạ.
+> まず総務部だけで、共通の回答文を使ってみませんか。
+> Hay là trước mắt mình thử dùng mẫu trả lời chung ở riêng phòng Tổng vụ?
 
-## Hỏi người trực tiếp làm trước khi chốt
+> まず総務部だけで、共通の回答文を使ってみるのはいかがでしょうか。
+> Anh thấy sao nếu trước mắt mình chỉ thử dùng mẫu trả lời chung ở phòng Tổng vụ ạ?
 
-Khi nghe **概要は共有しました**, hãy hỏi tiếp người phụ trách đã góp ý chưa và phòng của họ đã đồng ý chưa. Gửi thông tin, hỏi ý kiến về cách vận hành và nhận sự đồng ý là ba việc riêng. Hãy hỏi người trực tiếp nhận yêu cầu xem mẫu chung có phù hợp điều kiện tiếp nhận và khối lượng công việc hằng ngày của họ không.
+Nghe câu đáp của người có quyền quyết. Nếu họ mới cân nhắc, bạn có thể nghe câu này.
 
-> 総務部の担当者に受付条件と負担を確認してから、試行の可否を判断していただけますか。確認は私が担当します。
-> Anh có thể chờ tôi hỏi người phụ trách bên Tổng vụ về điều kiện tiếp nhận và khối lượng việc rồi mới quyết có chạy thử không ạ? Tôi sẽ phụ trách việc xác nhận.
+> 総務部での試行なら考えられます。現場には概要を共有したところです。
+> Nếu chỉ thử ở phòng Tổng vụ thì có thể cân nhắc. Tôi mới chia sẻ qua với những người trực tiếp làm.
 
-Khi nhận việc, hãy chốt với người quyết định sẽ hỏi ai, báo lại khi nào và lúc nào họ cần ra quyết định. Ví dụ, Sato liên hệ Kobayashi bên Tổng vụ và báo lại trước chiều tối thứ Năm để Takahashi xem xét vào thứ Sáu. Nếu đến hạn mà chưa có hồi âm, hãy báo **未確認** và hẹn lúc cập nhật tiếp. Phần bạn cam kết là liên hệ và báo tình hình. Quyết định có thử hay không thuộc người có thẩm quyền.
+Nếu họ đã quyết cho thử, bạn có thể nghe câu này.
 
-## Ghi nhận điểm có lý và sửa phần còn vướng
+> 総務部の担当者の了解も取れました。では、総務部だけで始めてください。
+> Người phụ trách bên Tổng vụ cũng đã đồng ý. Vậy hãy bắt đầu ở riêng phòng Tổng vụ nhé.
 
-Khi đồng nghiệp nói Tổng vụ có thể quá tải, hãy nhắc lại điều bạn nghe được. Mối lo có thể gồm cả số lượng yêu cầu chuyển sang Tổng vụ lẫn thời gian cần thêm để kiểm tra từng câu trả lời. **確かに** có thể mở đầu cho lời ghi nhận. Nêu cụ thể điểm bạn thấy có lý để người nghe hiểu bạn đã tiếp nhận ý nào.
+Ở câu đầu, **なら** giới hạn điều có thể cân nhắc. **概要を共有したところ** cho biết người ta vừa thông báo qua. Khi nghe **了解が取れた** ở câu thứ hai, bạn biết người phụ trách đã đồng ý. Còn **始めてください** là lời giao bắt đầu. Bạn có thể đáp **承知しました** rồi nhắc lại **総務部だけで** để xác nhận phạm vi. Nếu mới chia sẻ và còn phải hỏi người trực tiếp làm, hãy xin lùi quyết định và nhận phần việc bạn làm được.
 
-> 確かに、対象を絞っても、担当者の確認作業は増えますね。
-> Đúng là dù thu hẹp đối tượng, người phụ trách vẫn phải làm thêm khâu kiểm tra nhỉ.
+> 担当の方に負担を聞いてから、試すかどうか決めませんか。確認は私がします。
+> Hay là mình hỏi người phụ trách xem họ phải làm thêm những gì rồi mới quyết có thử không ạ? Tôi sẽ hỏi.
 
-Với đồng nghiệp, **一理ある** có thể diễn tả rằng một lập luận có phần hợp lý. Khi đáp với cấp trên, cách nói gắn với điểm cụ thể như **～という点はよく分かります** dễ cho thấy bạn đã nghe ra điều họ lo. **おっしゃるとおりです** thể hiện sự tán thành rõ hơn. Hãy dùng khi bạn thực sự đồng ý với điểm vừa nêu, chẳng hạn cần giữ đầu mối hiện tại trong tháng này, rồi nói phần việc bạn sẽ làm.
+Khi người chủ trì hỏi bạn định xem kết quả thế nào, hãy nói điều bạn có thể quan sát. Với **～かどうかを見ます**, bạn thay phần trước **かどうか** bằng điều cần xem. Nếu nói về lỗi, có thể dùng **～たら、いったん～ます** để nêu việc mình sẽ làm khi lỗi xảy ra.
 
-Lúc đang cân nhắc, bạn có thể gọi nhóm câu hỏi về việc xin cấp đồ dùng là **候補**, một phương án có thể chọn để thử. Khi sửa đề xuất, dùng **ご指摘を踏まえ** để nối góp ý với điều đã thay đổi. Giới hạn đợt thử ở một loại câu hỏi có thể giải tỏa lo ngại rằng Tổng vụ phải tiếp nhận tất cả yêu cầu. Hãy hỏi lại đồng nghiệp xem họ còn lo điểm đó không. Sau đó hỏi Kobayashi xem người hiện có đủ để đảm đương phần việc đã thu hẹp không.
+> 担当者の確認時間が減るかどうかを見ます。誤案内が出たら、その回答文の使用はいったん止めます。
+> Tôi sẽ xem thời gian người phụ trách phải kiểm tra có giảm không. Nếu có hướng dẫn sai, tôi sẽ tạm ngừng dùng mẫu trả lời đó.
 
-> ご指摘を踏まえて、試行案の対象を備品申請の質問だけに絞りました。この範囲なら、全件移管への懸念は解消されますか。
-> Theo góp ý của anh, tôi đã sửa đề xuất để chỉ thử với các câu hỏi về việc xin cấp đồ dùng. Với phạm vi này, anh còn lo Tổng vụ phải nhận toàn bộ yêu cầu không ạ?
+Nếu người kia hỏi có kết quả sau hai tuần không, **～は出せます** giúp bạn nói rõ phần mình có thể đưa ra. **中間確認** là lần xem tình hình giữa đợt thử.
 
-## Hỏi lý do gác phương án và điều kiện để bàn lại
+> 二週間で件数は出せます。まずは中間確認にして、効果はもう少し様子を見てから判断しませんか。
+> Sau hai tuần tôi có thể đưa số lượt. Hay mình xem đó là lần kiểm tra giữa đợt, rồi theo dõi thêm trước khi đánh giá hiệu quả ạ?
 
-**今回は見送ります** có nghĩa là lần này đã quyết gác phương án. **保留** cho biết quyết định về một việc vẫn còn bỏ ngỏ. Cả hai có thể xuất hiện trong cùng vụ việc. Tháng này nhóm giữ đầu mối hiện tại, còn có chạy thử về sau hay không vẫn chờ quyết. Khi nghe **検討します** hay lời xin thêm thời gian, hãy hỏi cần xác nhận điều gì và thời điểm nào sẽ có câu trả lời. Lời ấy có thể thể hiện sự dè dặt hoặc là cách từ chối nhẹ.
+## Ghi nhận phản biện rồi sửa một điểm
 
-> 今回、試行を見送った理由を伺ってもよろしいでしょうか。総務部の負担を確認した上で、来月改めて提案する余地はありますか。
-> Cho tôi hỏi vì sao lần này mình gác việc chạy thử ạ? Sau khi xác nhận khối lượng công việc của phòng Tổng vụ, tôi có thể trình lại vào tháng sau không ạ?
+Đồng nghiệp lo cả việc tiếp nhận lẫn việc kiểm tra câu trả lời sẽ dồn về Tổng vụ. Ngay cả khi bạn nói chỉ thử một phần, anh ấy vẫn hỏi.
 
-Nếu vướng thời điểm và chưa rõ khối lượng việc, bạn vẫn có thể nhận rà những câu hỏi mà người trực ở đầu mối hiện tại khó trả lời. Khi hẹn ngày chia sẻ, nói rõ bạn đang rà để hỗ trợ đầu mối hiện tại. Với phương án dự phòng, hỏi dấu hiệu nào sẽ khiến chủ trì xem xét lại. Trong ví dụ này, dấu hiệu là các bộ phận vẫn trả lời khác nhau cho cùng một câu hỏi sau khi đã chỉnh cách kiểm câu trả lời.
+> ただ、範囲を絞っても確認作業は増えますよね。
+> Nhưng dù thu hẹp phạm vi, việc kiểm tra cũng tăng, đúng không?
 
-> 回答の確認手順を整えても部署間で案内が食い違い、申請者への影響が確認できた場合は、予備案を改めて議題に上げてもよろしいでしょうか。
-> Nếu đã chỉnh cách kiểm câu trả lời mà các bộ phận vẫn hướng dẫn khác nhau và xác nhận có ảnh hưởng đến người nộp đề nghị, tôi có thể đưa phương án dự phòng ra bàn lại không ạ?
+Hãy nói đúng điểm bạn thấy có lý. **確かに** mở lời ghi nhận. **おっしゃるとおりです** tán thành rõ hơn và hợp khi bạn thật sự đồng ý với nhận xét của người ở vai trên. Nếu đang đồng ý một phần rồi nêu ý khác, hãy nói rõ phần bạn vừa công nhận.
 
-Khi một bộ phận bảo dùng mẫu riêng, còn bộ phận kia nói báo miệng là được, hãy kiểm tra mỗi nơi đã hướng dẫn thế nào rồi báo lại. Nếu chưa biết có ai bị ảnh hưởng, hãy nói rõ bạn đang tìm hiểu. Khi có kết quả, bạn có thể xin đưa phương án ra bàn lại. Người chủ trì sẽ xem mức ảnh hưởng rồi quyết có cần họp không.
+> 確かに、確認作業は増えそうですね。まずは備品申請に関する質問だけに絞るのはどうでしょうか。
+> Đúng là có vẻ sẽ mất thêm công kiểm tra. Hay trước hết mình chỉ thử với câu hỏi về việc xin cấp đồ dùng?
 
-## Nói lại điều đã chốt và báo khi có ảnh hưởng
+**～だけに絞るのはどうでしょうか** đưa cách sửa ra để cùng bàn. Đến khi bạn đã sửa đề xuất, dùng **ご指摘を踏まえて、～に絞りました** để nói mình đã thay đổi phần nào sau khi nghe góp ý. Đuôi **～ました** ở đây nói về việc sửa đề xuất. Quyết định có chạy thử vẫn là một lượt nói khác.
 
-Trước khi rời cuộc họp, hãy nói lại việc đã quyết, việc còn **判断待ち** và phần bạn nhận kèm hạn. Trong ví dụ này, bạn có thể bắt đầu rà câu hỏi theo cách làm hiện tại. Việc gửi đề nghị chạy thử cho Tổng vụ phải chờ quyết định. Nếu nghe có người bảo đợt thử đã được duyệt trong khi trưởng nhóm hiểu là còn chờ, hãy nêu cụ thể hai việc đó khi hỏi người có thẩm quyền. Sau khi xác nhận, chuyển lại cách hiểu chính xác cho những người đang hiểu khác nhau.
+> ご指摘を踏まえて、試行案の対象を備品申請に関する質問だけに絞りました。全件を引き受けるという懸念は、これで解消できそうですか。
+> Theo góp ý của anh, tôi đã sửa đề xuất để chỉ thử với câu hỏi về việc xin cấp đồ dùng. Như vậy đã giải quyết được lo ngại Tổng vụ phải nhận hết mọi yêu cầu chưa ạ?
 
-> 承認されたのは回答の確認手順だけで、総務部での試行はまだ判断待ち、という理解で合っていますか。
-> Tôi hiểu là mới duyệt cách kiểm tra câu trả lời, còn đợt thử ở phòng Tổng vụ vẫn chờ quyết định. Có đúng không ạ?
+Có thể đồng nghiệp đã yên tâm về số lượng yêu cầu nhưng vẫn lo một người không xoay xở nổi. Lúc đó, **そこは担当の方に聞いてみます** giúp bạn nhận đúng phần còn phải làm rõ.
 
-> 承知しました。現行の窓口で回答に迷う事例を洗い出し、金曜に共有します。
-> Tôi hiểu rồi ạ. Tôi sẽ rà những trường hợp khó trả lời ở đầu mối hiện tại và chia sẻ vào thứ Sáu.
+**Thử đổi sang một cuộc họp khác.** Bạn muốn rút cuộc họp hằng tuần xuống 15 phút. Đồng nghiệp lo mọi người sẽ hết giờ để hỏi. Hãy nói thành tiếng hai câu, một câu công nhận điều họ lo và một câu đề xuất cách sửa. Bạn có thể giữ **確かに** và **～のはどうでしょうか**, rồi thay phần ở giữa bằng ý của mình. Dưới đây là một cách đáp.
 
-Hỏi trước chuyện gì cần báo ngay và báo cho ai. Trong tình huống này, nếu biết người nộp đề nghị phải hỏi lại vì hai lời hướng dẫn khác nhau, bạn báo Matsumoto ngay. Khi báo, nói kết quả trước, rồi tách **事実関係**, sự việc đã kiểm, khỏi **影響**, ảnh hưởng đã thấy. Nhắc rõ phần còn đang điều tra để người nghe quyết bước tiếp theo. Nếu có cập nhật về số yêu cầu trùng, vẫn nói rõ số đang tạm tính hay đã chốt.
+> 確かに、質問の時間は必要ですね。報告を短くして、最後の五分は質問に充てるのはどうでしょうか。
+> Đúng là cần dành thời gian cho câu hỏi. Hay là mình rút ngắn phần báo cáo và dành năm phút cuối để hỏi đáp?
 
-> 備品申請の案内が総務部と営業部で食い違い、申請者一人が確認し直しました。両部署の案内は確認済みで、ほかに影響が出ていないか調べています。
-> Phòng Tổng vụ và phòng Kinh doanh hướng dẫn khác nhau về cách xin cấp đồ dùng. Một người đã phải hỏi lại. Tôi đã xác nhận cách hướng dẫn của cả hai phòng và đang tìm xem còn ai bị ảnh hưởng không ạ.
+## Đáp khi phương án bị gác lại
 
-Nếu Matsumoto nói **私から部長に報告します**, trưởng nhóm nhận phần báo cho Takahashi. Bạn có thể đề nghị tham gia nếu cần giải thích chi tiết và xác nhận mốc trao đổi tiếp theo. Hãy giữ cách chuyển tin mà nhóm đã thống nhất để sự việc đến đúng người.
+Người chủ trì nói tháng này nhóm sẽ giữ đầu mối hiện tại.
 
-## Xem nhanh trước cuộc họp
+> 今月は試行を見送ります。窓口は今のままです。
+> Tháng này ta gác việc chạy thử. Đầu mối tiếp nhận vẫn giữ nguyên.
 
-- Hỏi buổi họp cần chốt việc gì và ai duyệt bước tiếp theo.
-- Khi nói số liệu, kèm nguồn, cách đếm và trạng thái đã kiểm hay tạm tính.
-- Khi đề xuất, đưa phạm vi, lý do, cách đánh giá và cách xử lý lỗi. Hỏi người sẽ trực tiếp làm.
-- Khi nghe phản biện, gọi tên mối lo, nói chỗ đã sửa và hỏi chỗ còn vướng.
-- Khi kết thúc, nhắc lại việc đã chốt, việc còn chờ, người phụ trách, hạn và dấu hiệu cần báo ngay.
+**見送る** cho biết lần này đã quyết gác. **保留** giữ một việc ở trạng thái chờ quyết. Cùng một phương án có thể bị gác trong tháng này và vẫn để ngỏ về sau. Nếu nghe **検討します**, hãy để ý người nói có nêu mốc hay điều kiện xem lại không. Có thể họ đang để ngỏ để xem xét thêm, cũng có thể họ đang từ chối nhẹ.
+
+Khi muốn biết lý do, dùng **～た理由を伺ってもよろしいでしょうか**. Khi muốn hỏi còn cơ hội nào, dùng **～する余地はありますか**. Ở câu thứ hai dưới đây, **～た上で** đặt việc xác nhận trước việc trình lại.
+
+> 今回、試行を見送った理由を伺ってもよろしいでしょうか。
+> Cho tôi hỏi vì sao lần này mình gác việc chạy thử ạ?
+
+> 現場の負担を確認した上で、改めて提案する余地はありますか。
+> Sau khi hỏi rõ người trực tiếp làm sẽ phải đảm đương thêm bao nhiêu việc, tôi có thể đề xuất lại không ạ?
+
+Nếu trước mắt bạn sẽ hỗ trợ đầu mối hiện tại, hãy đáp lời rồi nói rõ việc mình nhận.
+
+> 承知しました。では、今の窓口で答えに迷う質問は、私のほうで洗い出します。
+> Tôi hiểu rồi ạ. Vậy tôi sẽ rà những câu hỏi khó trả lời ở đầu mối hiện tại.
+
+Nếu muốn giữ ý tưởng để bàn lại, thử đặt điều kiện bằng **～ようなら**, rồi hỏi người chủ trì.
+
+> 手順を見直しても案内の食い違いが続くようなら、試行案をもう一度議題に上げてもよろしいでしょうか。
+> Nếu đã chỉnh cách kiểm tra mà các bên vẫn hướng dẫn khác nhau, tôi có thể đưa phương án thử ra bàn lại không ạ?
+
+Khi đã thấy lời hướng dẫn khác nhau, bạn có thể nói mình đã kiểm được gì và xin một dịp trao đổi khi rõ ảnh hưởng.
+
+> 案内が食い違っていることは確認できました。影響が分かったら、もう一度話し合う場を設けていただけますか。
+> Tôi đã xác nhận là các bên hướng dẫn khác nhau. Khi biết việc đó ảnh hưởng ra sao, anh có thể sắp xếp để mình bàn lại không ạ?
+
+Nếu nghe **～てから判断します**, hãy để ý bước phải xảy ra trước. Chẳng hạn, người chủ trì có thể chờ xem kết quả rồi mới quyết có họp lại hay không.
+
+## Nhắc lại quyết định và biết khi nào cần nói tiếp
+
+Sau cuộc họp, một người bảo cả đợt thử đã được duyệt, còn trưởng nhóm hiểu là vẫn chờ. Hãy hỏi lại người chủ trì bằng tên việc cụ thể. Mẫu **～という理解で合っていますか** cho người nghe cơ hội sửa đúng phần bạn nghe lệch.
+
+> 承認されたのは回答の確認手順だけで、試行はまだ保留、という理解で合っていますか。
+> Tôi hiểu là mới duyệt cách kiểm tra câu trả lời, còn việc chạy thử vẫn chờ quyết định. Có đúng không ạ?
+
+Người chủ trì xác nhận cách hiểu đó và dặn chưa gửi đề nghị thử. Lúc này **～ておきます** dùng để nhận phần việc bạn sẽ làm sẵn. Nói gọn một việc và một mốc là đủ.
+
+> では、今の窓口で答えに迷う質問を、金曜までにまとめておきます。
+> Vậy tôi sẽ tổng hợp những câu hỏi khó trả lời ở đầu mối hiện tại chậm nhất vào thứ Sáu ạ.
+
+Khi nói lại với người tưởng cả đợt thử đã được duyệt, hãy mở bằng nơi bạn vừa xác nhận. **～だそうです** cho biết phần sau là thông tin bạn nghe được từ người ấy.
+
+> 部長に確認しました。承認されたのは確認手順だけで、試行はまだ保留だそうです。
+> Tôi đã hỏi lại trưởng bộ phận. Anh ấy nói mới chỉ duyệt cách kiểm tra, còn việc chạy thử vẫn chờ quyết định.
+
+Trưởng nhóm dặn bạn để ý xem có ai bị ảnh hưởng không.
+
+> 案内の食い違いで聞き直した人がいたら、先に私に知らせてください。
+> Nếu có ai phải hỏi lại vì hướng dẫn không thống nhất thì báo tôi trước nhé.
+
+Nghe **～たら** để biết lúc nào cần báo. Giả sử đã có một người phải hỏi lại. Bạn mở lời bằng việc vừa xảy ra rồi nói phần còn đang kiểm. Ngắt một nhịp giữa hai câu để người nghe bắt được cả hai ý.
+
+> 備品申請をした方お一人から、部署によって案内が違うと問い合わせがありました。ほかにも同じことが起きていないか、確認中です。
+> Có một người xin cấp đồ dùng đã hỏi lại vì mỗi phòng hướng dẫn một kiểu. Tôi đang kiểm tra xem còn ai gặp tình trạng đó không ạ.
+
+Trưởng nhóm trả lời.
+
+> 分かりました。私から部長に報告します。
+> Tôi hiểu rồi. Tôi sẽ báo trưởng bộ phận.
+
+**私から** cho biết chính trưởng nhóm sẽ báo. Bạn có thể nối bằng lời đề nghị có mặt khi cần làm rõ thêm.
+
+> 必要でしたら、私も同席します。
+> Nếu cần, tôi cũng sẽ tham gia buổi trao đổi ạ.
+
+## Nói lại cả mạch
+
+Thử ráp bốn lượt của bạn. Mở bằng **一点だけ確認させてください**, đưa một phương án với **～てみませんか**, nghe người kia nói họ lo gì rồi đáp **確かに、～**. Nếu nhóm chỉ mới đồng ý một phần, thử nói lại chính phần đó với **～という理解で合っていますか**. Lần sau, đổi phương án hoặc mối lo và giữ nguyên mạch đối đáp.
