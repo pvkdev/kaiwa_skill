@@ -81,6 +81,12 @@ class VocabularyPublication(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "han_viet must be a string"):
             self.review()
 
+    def test_dictionary_form_ending_in_masu(self):
+        self.terms.append(dict(id="v2", ja="励ます", reading="はげます", han_viet="LỆ",
+                               vi="động viên", pos="verb", level_hint="N2", origin="topic_extension"))
+        self.save()
+        self.assertEqual(self.review()["groups"][0]["terms"][-1]["ja"], "励ます")
+
     def test_checkpoint(self):
         for key in ("stage_uid", "stage_code", "owner", "learner_sha256", "skill_sha256", "vocabulary_sha256",
                     "open_issues", "groups"):

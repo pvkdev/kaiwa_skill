@@ -85,6 +85,11 @@ def stage_row(code):
 
 def brief(code):
     stage, course, learner_hash = stage_row(code)
+    return stage_brief(stage, course, learner_hash)
+
+
+def stage_brief(stage, course, learner_hash):
+    code = stage["code"]
     low, high = BANDS[stage["level"]]
     situations, utterances = [], {}
     for scene in stage["situations"]:
@@ -231,7 +236,7 @@ def check(data, ctx):
             pos = term.get("pos")
             if need(pos in POS, label + " pos"):
                 if pos == "verb":
-                    need(ja.endswith(VERB_END) and not ja.endswith(("ます", "ません", "ました")),
+                    need(ja.endswith(VERB_END),
                          label + " verb must be in dictionary form")
                 if pos == "i_adj":
                     need(ja.endswith("い"), label + " i_adj must be in basic form")
