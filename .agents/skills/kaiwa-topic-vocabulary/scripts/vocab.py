@@ -45,6 +45,26 @@ def nfc(text):
     return unicodedata.normalize("NFC", text)
 
 
+def check_han_viet(term):
+    """Validate the transcription shape; the editor verifies each character's actual reading."""
+    ja, value = term.get("ja", ""), term.get("han_viet")
+    if not isinstance(value, str):
+        return "han_viet must be a string"
+    characters = [c for c in ja if unicodedata.name(c, "").startswith(("CJK UNIFIED IDEOGRAPH", "CJK COMPATIBILITY IDEOGRAPH")) or c in "々〇"]
+    if not characters:
+        return None if value == "" else "han_viet must be empty for a word without kanji"
+    if value != nfc(value) or value != value.upper() or value != " ".join(value.split()):
+        return "han_viet must use NFC uppercase with single spaces"
+    syllables = value.split()
+    if len(syllables) != len(characters):
+        return "han_viet needs one syllable per kanji, including 々"
+    if any(part != "—" and not re.fullmatch(r"[A-ZÀ-Ỹ]+", part) for part in syllables):
+        return "han_viet contains invalid characters"
+    if "—" in syllables and not (filled(term.get("han_viet_note_vi")) and term.get("source_refs")):
+        return "han_viet exception needs a note and source_refs"
+    return None
+
+
 def vocab_folder(marker):
     for folder in KNOWLEDGE.iterdir():
         if folder.is_dir() and marker in nfc(folder.name).upper():
@@ -206,6 +226,8 @@ def check(data, ctx):
                  and not ja.endswith(("。", "？", "！", "?", "!")), label + " ja")
             need(filled(reading) and KANA_ONLY.match(reading), label + " reading must be kana only")
             need(filled(term.get("vi")) and re.search(r"[A-Za-zÀ-ỹ]", term.get("vi", "")), label + " vi")
+            han_viet_error = check_han_viet(term)
+            need(han_viet_error is None, label + " " + (han_viet_error or ""))
             pos = term.get("pos")
             if need(pos in POS, label + " pos"):
                 if pos == "verb":
