@@ -1,6 +1,6 @@
 # Sáu pilot từ vựng theo chủ đề · V12.0
 
-Đã soạn mới 534 mục trong 25 nhóm. S-011, T-044 và H-004 được chạy lại từ đầu. S-024, T-008 và H-020 là ba chủ đề bổ sung. Skill, hợp đồng bản thảo và validator khớp bản V12.0 ở `e3fdfb39`. [Mở sáu pilot](ROADMAP.html).
+Đã soạn mới 534 mục trong 25 nhóm. S-011, T-044 và H-004 được chạy lại từ đầu. S-024, T-008 và H-020 là ba chủ đề bổ sung. Quy tắc chọn từ theo chủ đề lấy từ bản V12.0 ở `e3fdfb39`. [Mở sáu pilot](ROADMAP.html).
 
 | Chặng | Chủ đề | Nhóm | Mục | Từ hội thoại hoặc shadowing | Mở rộng theo chủ đề | Thời gian worker ghi nhận |
 |---|---|---:|---:|---:|---:|---|
@@ -12,7 +12,7 @@
 | H-020 | Họp: tham gia, đề xuất & phản biện | 4 | 95 | 46 | 49 | 3 phút 03 giây |
 | **Tổng** | | **25** | **534** | **253** | **281** | |
 
-Thời gian là thời gian thực từng worker ghi nhận cho biên soạn và rà, các worker chạy song song. Mỗi chặng hiển thị một bài với bảng riêng cho từng nhóm. Ba cột học viên gồm tiếng Nhật, cách đọc và nghĩa Việt. Metadata và nguồn nằm ở bản biên tập.
+Thời gian là thời gian thực từng worker ghi nhận cho biên soạn và rà, các worker chạy song song. Mỗi chặng hiển thị một bài với bảng riêng cho từng nhóm. Bốn cột học viên gồm tiếng Nhật, cách đọc, Hán Việt và nghĩa Việt. Metadata và nguồn nằm ở bản biên tập.
 
 ## Nhận xét sau khi đọc sáu bài
 
@@ -24,7 +24,7 @@ Thời gian là thời gian thực từng worker ghi nhận cho biên soạn và
 
 ## Nghiệm thu
 
-Sáu checkpoint đã khớp hash skill, nguồn V11, bản thảo và nhóm đã duyệt. Toàn bộ 25 node xuất qua schema Exchange. Đã mở lần lượt sáu bài trong Chrome ở chiều rộng 360 và 1.280 px và so khớp đủ 534 dòng, ba cột với JSON biên tập. Dữ liệu lộ trình ngoài phần pilot khớp V11.
+Sáu checkpoint đã khớp hash skill, nguồn V11, bản thảo và nhóm đã duyệt. Toàn bộ 25 node xuất qua schema Exchange. Đã mở lần lượt sáu bài trong Chrome ở chiều rộng 360 và 1.280 px và so khớp đủ 534 dòng, bốn cột với JSON biên tập. Dữ liệu lộ trình ngoài phần pilot khớp V11.
 
 ## Chi tiết theo chặng
 

@@ -29,7 +29,7 @@ def build():
         for node, group in zip(package["nodes"], draft["groups"], strict=True):
             glosses = {}
             for term in group["terms"]:
-                glosses.setdefault(term["ja"], []).append({"reading": term["reading"], "vi": term["vi"]})
+                glosses.setdefault(term["ja"], []).append({"reading": term["reading"], "han_viet": term["han_viet"], "vi": term["vi"]})
             stage["vocabulary_glosses"][node["id"]] = glosses
         packages[code] = package
     course["version"] = "12.0-pilot"
