@@ -45,26 +45,6 @@ def nfc(text):
     return unicodedata.normalize("NFC", text)
 
 
-def check_han_viet(term):
-    """Validate the transcription shape; the editor verifies each character's actual reading."""
-    ja, value = term.get("ja", ""), term.get("han_viet")
-    if not isinstance(value, str):
-        return "han_viet must be a string"
-    characters = [c for c in ja if unicodedata.name(c, "").startswith(("CJK UNIFIED IDEOGRAPH", "CJK COMPATIBILITY IDEOGRAPH")) or c in "々〇"]
-    if not characters:
-        return None if value == "" else "han_viet must be empty for a word without kanji"
-    if value != nfc(value) or value != value.upper() or value != " ".join(value.split()):
-        return "han_viet must use NFC uppercase with single spaces"
-    syllables = value.split()
-    if len(syllables) != len(characters):
-        return "han_viet needs one syllable per kanji, including 々"
-    if any(part != "—" and not re.fullmatch(r"[A-ZÀ-Ỹ]+", part) for part in syllables):
-        return "han_viet contains invalid characters"
-    if "—" in syllables and not (filled(term.get("han_viet_note_vi")) and term.get("source_refs")):
-        return "han_viet exception needs a note and source_refs"
-    return None
-
-
 def vocab_folder(marker):
     for folder in KNOWLEDGE.iterdir():
         if folder.is_dir() and marker in nfc(folder.name).upper():
@@ -206,6 +186,8 @@ def check(data, ctx):
             need(topic in topics, gid + " v10_topic is not a V10 topic of this stage")
         terms = group.get("terms") or []
         need(terms, gid + " has no terms")
+        if terms and not 8 <= len(terms) <= 25:
+            notes.append(f"{gid} has {len(terms)} terms (guide 8–25)")
         published, headwords = set(), set()
         for term in terms:
             tid = term.get("id")
@@ -224,8 +206,6 @@ def check(data, ctx):
                  and not ja.endswith(("。", "？", "！", "?", "!")), label + " ja")
             need(filled(reading) and KANA_ONLY.match(reading), label + " reading must be kana only")
             need(filled(term.get("vi")) and re.search(r"[A-Za-zÀ-ỹ]", term.get("vi", "")), label + " vi")
-            han_viet_error = check_han_viet(term)
-            need(han_viet_error is None, label + " " + (han_viet_error or ""))
             pos = term.get("pos")
             if need(pos in POS, label + " pos"):
                 if pos == "verb":
@@ -268,6 +248,8 @@ def check(data, ctx):
                 need(bool(refs), label + " this term needs source_refs")
             total += 1
         need(headwords == published, gid + " each headword needs one exported representative")
+    if not 40 <= total <= 100:
+        notes.append(f"{total} terms in stage (guide 40–100)")
     if total and ctx["level"] != "Sơ" and below / total > .4:
         notes.append(f"{below}/{total} terms are below the {ctx['level_band']} band")
     if total and not from_dialogue:

@@ -19,7 +19,7 @@ class VocabularyPublication(unittest.TestCase):
         self.path = Path(folder.name) / "vocabulary.json"
         self.status = self.path.with_name("status.json")
         self.terms = [
-            dict(id="v1", ja="EMS", reading="イーエムエス", han_viet="", vi="chuyển phát nhanh quốc tế", pos="noun",
+            dict(id="v1", ja="EMS", reading="イーエムエス", vi="chuyển phát nhanh quốc tế", pos="noun",
                  origin="topic_extension", level_hint="none", level_note_vi="Tên dịch vụ bưu điện",
                  source_domain="procedural", source_refs=["post"])
         ]
@@ -53,7 +53,7 @@ class VocabularyPublication(unittest.TestCase):
 
     def test_editor_selects_one_reading(self):
         for tid, reading in [("v2", "いちば"), ("v3", "しじょう")]:
-            self.terms.append(dict(id=tid, ja="市場", reading=reading, han_viet="THỊ TRƯỜNG", vi="chợ", pos="noun",
+            self.terms.append(dict(id=tid, ja="市場", reading=reading, vi="chợ", pos="noun",
                                    origin="topic_extension", level_hint="N3"))
         self.save()
         with self.assertRaisesRegex(ValueError, "duplicate terms_ja"):
@@ -64,21 +64,6 @@ class VocabularyPublication(unittest.TestCase):
         self.terms[-2]["export_ja"] = False
         self.save()
         with self.assertRaisesRegex(ValueError, "representative"):
-            self.review()
-
-    def test_han_viet(self):
-        for ja, value in [("学習", "HỌC TẬP"), ("申し込む", "THÂN NHẬP"),
-                          ("時々", "THỜI THỜI"), ("バス", ""), ("EMS", "")]:
-            with self.subTest(ja=ja):
-                self.assertIsNone(V["check_han_viet"]({"ja": ja, "han_viet": value}))
-        for value in (None, "", "Học tập", "HỌC  TẬP", "HỌC", "học tập"):
-            with self.subTest(value=value):
-                self.assertIsNotNone(V["check_han_viet"]({"ja": "学習", "han_viet": value}))
-        self.assertIsNotNone(V["check_han_viet"]({"ja": "バス", "han_viet": "XE BUÝT"}))
-        self.assertIsNotNone(V["check_han_viet"]({"ja": "字", "han_viet": "—"}))
-        self.terms[0].pop("han_viet")
-        self.save()
-        with self.assertRaisesRegex(ValueError, "han_viet must be a string"):
             self.review()
 
     def test_checkpoint(self):
