@@ -1,7 +1,7 @@
 # Bàn giao chat Trung — shadowing V13
 
 Ngày làm việc: 2026-11-19 (Asia/Tokyo). Phần Trung đã hoàn tất soạn/đọc duyệt/xuất.
-Đang chờ hai chat còn lại hoàn tất để chốt tổng hợp 293 topic.
+Đã chốt tổng hợp đủ 293 topic của ba chat: [ALL_293_REPORT.md](ALL_293_REPORT.md).
 
 Đúng ba worker `gpt-6.2-sol`, reasoning `high`, không thêm worker:
 
@@ -73,9 +73,9 @@ Commit công cụ riêng: `97ddd578`.
 [Preview Trung riêng](trung-preview.html) đã đối chiếu đủ 98 chặng, 2.140 cặp Nhật–Việt
 và vai/giọng với gói xuất theo đúng thứ tự, bao gồm hai câu vừa sửa cuối.
 
-Chat Sơ đã báo hoàn tất 98/98 chặng, 2.134 câu. Chat Thượng đã hoàn tất 64 chặng H và
-đang làm phần Trung của mình. Chưa kết luận toàn bộ ba chat hoàn thành. Khi đủ đầu ra,
-chạy lại audit toàn bộ 293 mã và báo số chặng đã duyệt, tổng số câu, mã còn vướng.
-Phần tổng hợp liên chat đang chạy; không tính draft chưa duyệt vào tổng.
+Ba chat đã hoàn tất và lượt chốt độc lập đạt 293/293 checkpoint, 6.502 câu:
+Sơ 98/2.134, Trung 98/2.140, Thượng 97/2.228. Không còn mã thiếu/chờ/lỗi hoặc mã ngoài danh mục.
+Trước/sau lượt chốt, cả 1.470 tệp được theo dõi giữ nguyên hash. Chỉ tính checkpoint
+sản xuất đã duyệt; không tính snapshot pilot hoặc draft chưa duyệt vào tổng.
 Giữ nguyên SKILL.md, chín snapshot pilot, V11/V12 và `docs/index.html`; đầu ra V13 riêng.
 Không push/deploy trong lượt soạn.
