@@ -26,6 +26,8 @@ def save(path, data):
 
 def inputs(code):
     brief = V["brief"](code)
+    if not brief["situations"] or any(not s["turns"] for s in brief["situations"]):
+        raise ValueError(code + ": missing V11 dialogue; read all situations before drafting")
     path = PLAN / "v12/stages" / code / "vocabulary.json"
     pinned = digest(path)
     draft, _ = V["reviewed_draft"](path, brief)
@@ -36,14 +38,19 @@ def inputs(code):
     return brief
 
 
-def build(code, mode, review_notes=()):
+def build(code, mode, review_notes=(), target="pilot"):
+    if target not in ("pilot", "stages"):
+        raise ValueError("Target must be pilot or stages")
     source = inputs(code)
     if mode == "brief":
         print(json.dumps({k: v for k, v in source.items() if not k.startswith("_")}, ensure_ascii=False))
         return
-    folder = PLAN / "v13/pilot" / code
+    folder = PLAN / "v13" / target / code
     path = folder / "draft.json"
+    draft_hash = digest(path)
     draft = V["read"](path)
+    if digest(path) != draft_hash:
+        raise ValueError("Draft changed during validation: read and review it again")
     if draft.get("pins") != source["pins"]:
         raise ValueError("Inputs or skill changed: compare the current brief and review the affected draft")
     groups, items = draft["groups"], draft["items"]
@@ -73,18 +80,38 @@ def build(code, mode, review_notes=()):
         print(f"{code}: review whether learners revisit a useful pattern")
     if not any(i["terms"] for i in items):
         raise ValueError(f"{code}: no linked V12 vocabulary in this lesson")
+    output = {"id": source["uid"] + "-shadowing", "type": "shadowing", "items": out}
+    if mode == "checkpoint":
+        status = V["read"](folder / "status.json")
+        expected = {"state": "reviewed", **source["pins"], "draft": draft_hash,
+                    "output": digest(folder / "shadowing.json"), "count": len(out)}
+        for key, value in expected.items():
+            if status.get(key) != value:
+                raise ValueError(code + ": V13 checkpoint mismatch: " + key)
+        # Historical pilot checkpoints predate the explicit code field.
+        if status.get("code", code) != code or (target == "stages" and status.get("code") != code):
+            raise ValueError(code + ": V13 checkpoint mismatch: code")
+        if V["read"](folder / "shadowing.json") != output:
+            raise ValueError(code + ": exported node does not match the reviewed draft")
+    if mode in ("publish", "checkpoint"):
+        if inputs(code)["pins"] != source["pins"] or digest(path) != draft_hash:
+            raise ValueError("Inputs or draft changed during validation: read and review again")
     if mode == "publish":
-        save(folder / "shadowing.json", {"id": source["uid"] + "-shadowing", "type": "shadowing", "items": out})
-        save(folder / "status.json", {"state": "reviewed", **source["pins"], "draft": digest(path),
+        save(folder / "shadowing.json", output)
+        save(folder / "status.json", {"code": code, "state": "reviewed", **source["pins"], "draft": draft_hash,
                                       "output": digest(folder / "shadowing.json"), "count": len(out),
                                       "review_notes": list(review_notes)})
-    print(code, len(out), "sentences", len(groups), "groups")
+    print(code, len(out), "sentences", len(groups), "groups", "checkpoint OK" if mode == "checkpoint" else mode)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("mode", choices=["brief", "check", "publish"])
+    parser.add_argument("mode", choices=["brief", "check", "publish", "checkpoint"])
     parser.add_argument("code")
-    parser.add_argument("--note", action="append", default=[], help="Editorial note for the pilot review checkpoint")
+    parser.add_argument("--target", choices=["pilot", "stages"], default="pilot", help="V13 output area (default: pilot)")
+    parser.add_argument("--note", action="append", default=[], help="Editorial note for the review checkpoint")
     args = parser.parse_args()
-    build(args.code, args.mode, args.note)
+    try:
+        build(args.code, args.mode, args.note, args.target)
+    except (OSError, ValueError, TypeError, KeyError, AttributeError) as exc:
+        parser.exit(1, f"Error: {exc}\n")
