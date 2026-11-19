@@ -563,6 +563,15 @@ html[data-vi="off"] .bubble:not(.reveal)::after, html[data-vi="off"] .sentence:n
   .bubble { max-width: calc(100% - 38px); min-width: 120px; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+.lecture-text { max-width: 72ch; line-height: 1.75; }
+.lecture-text h4, .lecture-video summary { font-size: 1rem; font-weight: 700; }
+.lecture-text h5 { margin: 1.5rem 0 .45rem; font-size: 1.08rem; color: var(--accent); }
+.lecture-text p { margin: .55rem 0; }
+.lecture-text ul { padding-inline-start: 1.2rem; }
+.lecture-example { margin: .8rem 0; padding: .45rem .9rem; border-left: 3px solid var(--accent); background: var(--soft); border-radius: 0 8px 8px 0; }
+.lecture-example .ja { font-size: calc(1.04rem * var(--ja-scale)); }
+.lecture-video { margin-top: 1.5rem; padding: .8rem 0; border-top: 1px solid var(--line); }
+.lecture-video summary { cursor: pointer; }
 </style>
 </head>
 <body>
@@ -623,7 +632,7 @@ const types = {
   speak_shadow: { label: "Shadowing Speak Japanese", icon: "♫" },
   shadowing: { label: "Shadowing", icon: "◖" },
   reading: { label: "Tài liệu bổ trợ", icon: "▤" },
-  lecture: { label: "Video kiến thức chặng", icon: "▣" },
+  lecture: { label: "Bài giảng chặng", icon: "▣" },
   situations: { label: "Thực hành tình huống", icon: "☏" },
   challenge: { label: "Challenge Live AI", icon: "ϟ" },
   free: { label: "Free Kaiwa", icon: "✦" }
@@ -633,7 +642,7 @@ if (["6.4", "6.5", "8.0"].includes(course.version)) {
   delete types.speak_shadow;
 }
 if (["6.5", "8.0"].includes(course.version)) delete types.reading;
-if (/^(7|9|10|11|12)\./.test(course.version)) {
+if (/^(7|9|10|11|12|13|14)\./.test(course.version)) {
   delete types.speak_video;
   delete types.speak_shadow;
   types.reading.label = "Kiến thức Speak Japanese";
@@ -1128,7 +1137,7 @@ function nodesFor(stage) {
       case "independent_shadowing": kind = selection.support ? "reading" : "shadowing"; title = selection.title; break;
       case "source_pack": kind = "reading"; title = selection.title; break;
       case "merged_shadowing": kind = "shadowing"; title = "Shadowing tổng hợp"; break;
-      case "stage_lecture": kind = "lecture"; title = "Kiến thức tổng hợp của chặng"; break;
+      case "stage_lecture": kind = "lecture"; title = stage.lecture?.title_vi || "Kiến thức tổng hợp của chặng"; break;
       case "v5_situations": kind = "situations"; title = "Các tình huống thực hành"; break;
       case "live_challenges": kind = "challenge"; title = "Vận dụng cùng Live AI"; break;
       case "free_kaiwa": kind = "free"; title = "Trò chuyện tự do"; break;
@@ -1193,6 +1202,44 @@ function renderVocabularyTable(group, readings) {
 function vocabularyTermCount(stage) {
   return stage.vocabulary_nodes.reduce((sum, group) => sum + group.data.terms_ja.length, 0);
 }
+function lectureText(element, text) {
+  for (const part of text.split(/(\*\*[^*]+\*\*)/g)) {
+    if (part.startsWith("**") && part.endsWith("**")) element.append(make("strong", "", part.slice(2, -2)));
+    else element.append(document.createTextNode(part));
+  }
+  return element;
+}
+function renderLecture(lecture) {
+  const panel = make("div", "lecture-panel");
+  const video = make("details", "lecture-video");
+  video.append(make("summary", "", "Video bài giảng"), make("p", "quiet", "Video sẽ được bổ sung sau."));
+  const article = make("section", "lecture-text");
+  article.append(make("h4", "", "Đọc bài giảng"));
+  const examples = new Map(lecture.utterances.map(u => [u.id, u]));
+  let list = null;
+  for (const raw of lecture.data.body_md.split("\n")) {
+    const line = raw.trim();
+    if (!line) { list = null; continue; }
+    if (line.startsWith("- ")) {
+      if (!list) { list = make("ul"); article.append(list); }
+      list.append(lectureText(make("li"), line.slice(2)));
+      continue;
+    }
+    list = null;
+    const token = line.match(/^\{\{utterance:([^}]+)\}\}$/);
+    if (token) {
+      const item = examples.get(token[1]);
+      const quote = make("blockquote", "lecture-example");
+      const ja = make("p", "ja", item.ja);
+      ja.lang = "ja";
+      quote.append(ja, make("p", "vi", item.vi));
+      article.append(quote);
+    } else if (line.startsWith("## ")) article.append(lectureText(make("h5"), line.slice(3)));
+    else article.append(lectureText(make("p"), line));
+  }
+  panel.append(article, video);
+  return panel;
+}
 function renderBody(node, body) {
   switch (node.kind) {
     case "vocabulary": {
@@ -1220,7 +1267,7 @@ function renderBody(node, body) {
       break;
     }
     case "lecture":
-      body.append(placeholder("▣", "Video kiến thức tổng hợp · Chờ biên soạn"));
+      body.append(current.lecture ? renderLecture(current.lecture) : placeholder("▣", "Bài giảng đang được biên soạn"));
       break;
     case "situations": renderSituations(body); break;
     case "challenge":
@@ -1501,7 +1548,7 @@ function buildOutline() {
   for (const node of currentNodes) {
     const entry = { id: node.id, lesson: node.id };
     const heading = node.kind === "reading" ? node.title : types[node.kind].label;
-    const placeholderKind = ["lecture", "challenge", "free"].includes(node.kind);
+    const placeholderKind = (node.kind === "lecture" && !current.lecture) || ["challenge", "free"].includes(node.kind);
     const children = [];
     if ((node.kind === "shadowing" || node.kind === "speak_shadow") && current.shadowing && !node.selection) {
       current.shadowing.items.forEach((item, index) => {
@@ -1658,7 +1705,8 @@ function showStage(uid) {
   $("stage-position").textContent = current.level + " · " + (index + 1) + " / " + stages.length;
   document.title = "Chặng " + pad(current.number) + " · " + current.title + " — Harumii Kaiwa";
   window.scrollTo({ top: 0, behavior: "instant" });
-  const first = currentNodes.find(n => n.kind === "situations" || n.kind === "reading");
+  const first = (course.version === "14.0-pilot" && currentNodes.find(n => n.kind === "lecture")) ||
+    currentNodes.find(n => n.kind === "situations" || n.kind === "reading");
   if (first && enabled[first.kind]) {
     const state = ensureLesson(first.id);
     if (state) state.detail.open = true;
@@ -1774,8 +1822,9 @@ addEventListener("hashchange", () => {
 if (course.pilot_stages?.length) {
   $("pilot-links").hidden = false;
   const vocabularyPilot = /^12\.\d+-pilot$/.test(course.version);
-  $("pilot-links").open = vocabularyPilot;
-  $("pilot-summary").textContent = (vocabularyPilot ? "Pilot từ vựng" : "Chặng pilot") + " (" + course.pilot_stages.length + ")";
+  const lecturePilot = course.version === "14.0-pilot";
+  $("pilot-links").open = vocabularyPilot || lecturePilot;
+  $("pilot-summary").textContent = (vocabularyPilot ? "Pilot từ vựng" : lecturePilot ? "Pilot bài giảng" : "Chặng pilot") + " (" + course.pilot_stages.length + ")";
   for (const uid of course.pilot_stages) {
     const stage = byId.get(uid);
     if (!stage) continue;

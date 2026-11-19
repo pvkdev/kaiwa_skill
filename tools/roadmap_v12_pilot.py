@@ -52,6 +52,8 @@ def build(bulk=False, require_complete=False):
         raise ValueError(f"{len(pending)} topic stages still pending: " + ", ".join(pending))
     course["version"] = ("12.0-progress" if pending else "12.0") if bulk else "12.0-pilot"
     course["pilot_stages"] = [stages[code]["uid"] for code in CODES]
+    from roadmap_v14 import attach_published_lectures
+    attach_published_lectures(course)
     template = (ROOT / "tools/review_site.html").read_text("utf8")
     embedded = json.dumps(course, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     html = template.replace("__COURSE_DATA__", embedded)
