@@ -1,0 +1,717 @@
+{
+  "stage_uid": "f762c2fb-b676-5ccc-82b0-6da2140351ce",
+  "stage_code": "H-035",
+  "admin_sources": {
+    "jqa-quality": {
+      "kind": "web",
+      "title": "品質管理実施状況説明書 | 日本品質保証機構",
+      "url": "https://www.jqa.jp/service_list/jis_a/file/qc_ab_rei_202211.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Mẫu thực hành của JQA dùng thuật ngữ 品質管理 khi mô tả các khâu kiểm và xử lý hàng lỗi."
+    },
+    "mhlw-inspection": {
+      "kind": "web",
+      "title": "検査工（工業製品） | 厚生労働省 job tag",
+      "url": "https://shigoto.mhlw.go.jp/User/Occupation/Detail/526",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên và phạm vi của 抜取検査, 全数検査 và 目視 trong kiểm tra sản phẩm công nghiệp."
+    },
+    "hv-荷": {
+      "kind": "web",
+      "title": "荷 | Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E8%8D%B7",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu âm HẠ với trường nghĩa gánh, tải trọng và hàng hóa."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Báo lô lỗi, bằng chứng và mức ảnh hưởng",
+      "v10_topic": "Báo lô lỗi, bằng chứng và mức ảnh hưởng",
+      "terms": [
+        {
+          "id": "H-035-v001",
+          "ja": "苦情を受ける",
+          "reading": "くじょうをうける",
+          "han_viet": "KHỔ TÌNH THỤ",
+          "vi": "tiếp nhận khiếu nại từ khách hàng",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v002",
+          "ja": "不良品",
+          "reading": "ふりょうひん",
+          "han_viet": "BẤT LƯƠNG PHẨM",
+          "vi": "sản phẩm bị lỗi hoặc không đạt tiêu chuẩn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fde7d238-4829-568c-b86f-d699d31f926a-u05",
+              "surface": "不良品"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v003",
+          "ja": "ロット番号",
+          "reading": "ロットばんごう",
+          "han_viet": "PHIÊN HIỆU",
+          "vi": "mã dùng để truy lại một lô sản xuất",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cụm từ chuyên biệt dùng để nói về mã dùng để truy lại một lô sản xuất."
+        },
+        {
+          "id": "H-035-v004",
+          "ja": "承認版",
+          "reading": "しょうにんばん",
+          "han_viet": "THỪA NHẬN BẢN",
+          "vi": "bản thiết kế hoặc bản in đã được duyệt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5b1e0dd4-f769-567d-8573-cbe7c8b18c1f-u02",
+              "surface": "承認版"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v005",
+          "ja": "版番号",
+          "reading": "はんばんごう",
+          "han_viet": "BẢN PHIÊN HIỆU",
+          "vi": "số xác định phiên bản trên lệnh hoặc thiết bị in",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5b1e0dd4-f769-567d-8573-cbe7c8b18c1f-u04",
+              "surface": "版番号"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v006",
+          "ja": "指示書",
+          "reading": "しじしょ",
+          "han_viet": "CHỈ THỊ THƯ",
+          "vi": "tài liệu ghi yêu cầu để hiện trường sản xuất thực hiện",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5b1e0dd4-f769-567d-8573-cbe7c8b18c1f-u03",
+              "surface": "指示書は"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v007",
+          "ja": "現物",
+          "reading": "げんぶつ",
+          "han_viet": "HIỆN VẬT",
+          "vi": "mẫu hoặc hàng thật có thể cầm để đối chiếu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ab9104b9-ddaf-531a-87b0-8cdf4b1fe7db-u05",
+              "surface": "現物"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v008",
+          "ja": "不一致",
+          "reading": "ふいっち",
+          "han_viet": "BẤT NHẤT TRÍ",
+          "vi": "tình trạng hai mẫu hoặc dữ kiện không khớp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "faa63a76-f4cb-530a-8053-a8fa53734c88-u04",
+              "surface": "不一致"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v009",
+          "ja": "取り違える",
+          "reading": "とりちがえる",
+          "han_viet": "THỦ VI",
+          "vi": "lấy nhầm phiên bản hoặc nhầm món hàng tương tự",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v010",
+          "ja": "折り目",
+          "reading": "おりめ",
+          "han_viet": "CHIẾT MỤC",
+          "vi": "đường hoặc nếp gấp trên sản phẩm",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "de602609-38ba-56ae-8bdf-3c489d7aaf77-u01",
+              "surface": "折り目"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v011",
+          "ja": "傷",
+          "reading": "きず",
+          "han_viet": "THƯƠNG",
+          "vi": "vết xước, vết hư hại trên hàng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v012",
+          "ja": "変形する",
+          "reading": "へんけいする",
+          "han_viet": "BIẾN HÌNH",
+          "vi": "bị biến dạng so với hình dáng ban đầu",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v013",
+          "ja": "未開封",
+          "reading": "みかいふう",
+          "han_viet": "VỊ KHAI PHONG",
+          "vi": "tình trạng hộp hoặc gói còn chưa mở",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ab9104b9-ddaf-531a-87b0-8cdf4b1fe7db-u03",
+              "surface": "未開封"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v014",
+          "ja": "影響範囲",
+          "reading": "えいきょうはんい",
+          "han_viet": "ẢNH HƯỞNG PHẠM VI",
+          "vi": "phạm vi các lô, khách hoặc phần công việc bị ảnh hưởng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6c907ec2-6b47-5158-b73b-b7e3fdb4a1e7-u04",
+              "surface": "影響範囲"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v015",
+          "ja": "照合する",
+          "reading": "しょうごうする",
+          "han_viet": "CHIẾU HỢP",
+          "vi": "đối chiếu mẫu duyệt, hàng thật và hồ sơ",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "faa63a76-f4cb-530a-8053-a8fa53734c88-u05",
+              "surface": "照合してください"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v016",
+          "ja": "裏付ける",
+          "reading": "うらづける",
+          "han_viet": "LÝ PHÓ",
+          "vi": "dùng dữ liệu hoặc bằng chứng để xác nhận một nhận định",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Phân công kiểm hàng, mốc xác minh, người quyết",
+      "v10_topic": "Phân công kiểm hàng, mốc xác minh, người quyết",
+      "terms": [
+        {
+          "id": "H-035-v017",
+          "ja": "品質管理",
+          "reading": "ひんしつかんり",
+          "han_viet": "PHẨM CHẤT QUẢN LÝ",
+          "vi": "hoạt động kiểm soát chất lượng sản phẩm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "jqa-quality"
+          ]
+        },
+        {
+          "id": "H-035-v018",
+          "ja": "抜取検査",
+          "reading": "ぬきとりけんさ",
+          "han_viet": "BẠT THỦ KIỂM TRA",
+          "vi": "kiểm tra trên một số mẫu lấy từ lô hàng",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cụm từ chuyên biệt dùng để nói về kiểm tra trên một số mẫu lấy từ lô hàng.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-inspection"
+          ]
+        },
+        {
+          "id": "H-035-v019",
+          "ja": "全数検査",
+          "reading": "ぜんすうけんさ",
+          "han_viet": "TOÀN SỐ KIỂM TRA",
+          "vi": "kiểm tra tất cả sản phẩm trong lô",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cụm từ chuyên biệt dùng để nói về kiểm tra tất cả sản phẩm trong lô.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-inspection"
+          ]
+        },
+        {
+          "id": "H-035-v020",
+          "ja": "目視",
+          "reading": "もくし",
+          "han_viet": "MỤC THỊ",
+          "vi": "việc nhìn trực tiếp bằng mắt khi kiểm hàng",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-inspection"
+          ]
+        },
+        {
+          "id": "H-035-v021",
+          "ja": "切り替える",
+          "reading": "きりかえる",
+          "han_viet": "THIẾT THẾ",
+          "vi": "chuyển sang dùng phiên bản hoặc thiết lập khác",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v022",
+          "ja": "段取り替え",
+          "reading": "だんどりがえ",
+          "han_viet": "ĐOẠN THỦ THẾ",
+          "vi": "việc chuyển thiết lập chuẩn bị giữa hai lượt sản xuất",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cụm từ chuyên biệt dùng để nói về việc chuyển thiết lập chuẩn bị giữa hai lượt sản xuất.",
+          "evidence": [
+            {
+              "utterance_id": "f2d39e21-c240-5bbb-9684-d38ee74dc934-u02",
+              "surface": "段取り替え時"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v023",
+          "ja": "工程",
+          "reading": "こうてい",
+          "han_viet": "CÔNG TRÌNH",
+          "vi": "công đoạn hoặc chuỗi bước sản xuất và kiểm hàng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a1d15960-9d3e-5991-9799-c3989bc908dd-u04",
+              "surface": "工程を"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v024",
+          "ja": "出荷記録",
+          "reading": "しゅっかきろく",
+          "han_viet": "XUẤT HẠ KÝ LỤC",
+          "vi": "bản ghi các lô hàng đã xuất",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "source_refs": [
+            "hv-荷"
+          ],
+          "note_vi": "HẠ theo nghĩa gánh hoặc tải hàng.",
+          "evidence": [
+            {
+              "utterance_id": "39fb5cfb-2b55-5478-b641-d68b5d8b5549-u02",
+              "surface": "出荷記録"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v025",
+          "ja": "検出する",
+          "reading": "けんしゅつする",
+          "han_viet": "KIỂM XUẤT",
+          "vi": "phát hiện lỗi qua một bước kiểm",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v026",
+          "ja": "見逃す",
+          "reading": "みのがす",
+          "han_viet": "KIẾN ĐÀO",
+          "vi": "để lọt một lỗi lẽ ra có thể phát hiện",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a1d15960-9d3e-5991-9799-c3989bc908dd-u01",
+              "surface": "見逃した"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v027",
+          "ja": "概算",
+          "reading": "がいさん",
+          "han_viet": "KHÁI TOÁN",
+          "vi": "con số ước tính chưa chốt, thường dùng với chi phí",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "382ff888-86cf-501f-906a-18f8775b1b3a-u02",
+              "surface": "概算"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v028",
+          "ja": "決裁範囲",
+          "reading": "けっさいはんい",
+          "han_viet": "QUYẾT TÀI PHẠM VI",
+          "vi": "phần chi phí hoặc phương án nằm trong quyền duyệt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "382ff888-86cf-501f-906a-18f8775b1b3a-u01",
+              "surface": "決裁範囲"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v029",
+          "ja": "定める",
+          "reading": "さだめる",
+          "han_viet": "ĐỊNH",
+          "vi": "quy định rõ phạm vi, tiêu chí hoặc người chịu trách nhiệm",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v030",
+          "ja": "規程",
+          "reading": "きてい",
+          "han_viet": "QUY TRÌNH",
+          "vi": "quy định nội bộ thành văn",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "382ff888-86cf-501f-906a-18f8775b1b3a-u02",
+              "surface": "規程上"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v031",
+          "ja": "判定する",
+          "reading": "はんていする",
+          "han_viet": "PHÁN ĐỊNH",
+          "vi": "đưa ra kết luận đạt hay không đạt sau khi kiểm",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v032",
+          "ja": "再発防止",
+          "reading": "さいはつぼうし",
+          "han_viet": "TÁI PHÁT PHÒNG CHỈ",
+          "vi": "biện pháp ngăn sai sót đã xảy ra lặp lại",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a1d15960-9d3e-5991-9799-c3989bc908dd-u05",
+              "surface": "再発防止"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Phương án tạm, gọi lại và xác nhận khách",
+      "v10_topic": "Phương án tạm, gọi lại và xác nhận khách",
+      "terms": [
+        {
+          "id": "H-035-v033",
+          "ja": "刷り直す",
+          "reading": "すりなおす",
+          "han_viet": "XOÁT TRỰC",
+          "vi": "in lại để thay bản in sai",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f5c2a905-ff33-5054-93c5-1640f8f2d87f-u01",
+              "surface": "刷り直す"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v034",
+          "ja": "代替品",
+          "reading": "だいたいひん",
+          "han_viet": "ĐẠI THẾ PHẨM",
+          "vi": "sản phẩm được giao để thay cho phần bị lỗi",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v035",
+          "ja": "仮押さえ",
+          "reading": "かりおさえ",
+          "han_viet": "GIẢ ÁP",
+          "vi": "việc tạm giữ chỗ cho một chuyến giao hoặc khung sản xuất",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f5c2a905-ff33-5054-93c5-1640f8f2d87f-u06",
+              "surface": "仮押さえ"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v036",
+          "ja": "代替便",
+          "reading": "だいたいびん",
+          "han_viet": "ĐẠI THẾ TIỆN",
+          "vi": "chuyến giao thay thế khi chuyến dự kiến không thực hiện được",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "21d55f68-2ba4-51ec-8267-92ad729cc67d-u02",
+              "surface": "代替便"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v037",
+          "ja": "特別便",
+          "reading": "とくべつびん",
+          "han_viet": "ĐẶC BIỆT TIỆN",
+          "vi": "chuyến giao thu xếp riêng ngoài lịch thông thường",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "382ff888-86cf-501f-906a-18f8775b1b3a-u01",
+              "surface": "特別便"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v038",
+          "ja": "確約する",
+          "reading": "かくやくする",
+          "han_viet": "XÁC ƯỚC",
+          "vi": "cam kết chắc chắn về số lượng hoặc mốc giao",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e123f581-b38c-57e4-af2b-9f70c57113c2-u03",
+              "surface": "確約できません"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v039",
+          "ja": "成否",
+          "reading": "せいひ",
+          "han_viet": "THÀNH PHỦ",
+          "vi": "việc thành công hay không thành công",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f5c2a905-ff33-5054-93c5-1640f8f2d87f-u04",
+              "surface": "成否"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v040",
+          "ja": "取り急ぎ",
+          "reading": "とりいそぎ",
+          "han_viet": "THỦ CẤP",
+          "vi": "trước mắt xin thông báo nhanh điều thiết yếu",
+          "pos": "adverb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v041",
+          "ja": "折り返す",
+          "reading": "おりかえす",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "gọi lại sau khi kiểm tra được thông tin",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v042",
+          "ja": "該当する",
+          "reading": "がいとうする",
+          "han_viet": "CAI ĐƯƠNG",
+          "vi": "thuộc nhóm hoặc trường hợp đang được nói tới",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v043",
+          "ja": "差し止める",
+          "reading": "さしとめる",
+          "han_viet": "SA CHỈ",
+          "vi": "ra quyết định tạm ngăn một lô tiếp tục xuất đi",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v044",
+          "ja": "保留する",
+          "reading": "ほりゅうする",
+          "han_viet": "BẢO LƯU",
+          "vi": "tạm gác xử lý hoặc quyết định để chờ thông tin",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "H-035-v045",
+          "ja": "受け入れ",
+          "reading": "うけいれ",
+          "han_viet": "THỤ NHẬP",
+          "vi": "việc khách chấp nhận phần hàng đã kiểm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7fe92a60-2832-5ae5-b692-559222bf2a11-u05",
+              "surface": "受け入れは"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v046",
+          "ja": "未了",
+          "reading": "みりょう",
+          "han_viet": "VỊ LIỄU",
+          "vi": "việc hoặc bước còn chưa hoàn tất",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d1f4aae3-3d05-509d-8820-ce63733e0e5c-u05",
+              "surface": "未了"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v047",
+          "ja": "納期",
+          "reading": "のうき",
+          "han_viet": "NẠP KỲ",
+          "vi": "thời hạn phải giao hàng",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b258d5c8-6810-564d-a5a9-eb5c89680342-u05",
+              "surface": "納期待ち"
+            }
+          ]
+        },
+        {
+          "id": "H-035-v048",
+          "ja": "手直しする",
+          "reading": "てなおしする",
+          "han_viet": "THỦ TRỰC",
+          "vi": "chỉnh sửa lại phần chưa đạt để đưa vào sử dụng",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

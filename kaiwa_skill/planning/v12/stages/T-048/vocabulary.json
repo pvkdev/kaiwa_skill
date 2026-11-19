@@ -1,0 +1,841 @@
+{
+  "stage_uid": "6baf1e4c-71cc-5976-ad7f-89af5f19e9e8",
+  "stage_code": "T-048",
+  "admin_sources": {
+    "kyokai-qa": {
+      "kind": "web",
+      "title": "健診について｜協会けんぽ",
+      "url": "https://www.kyoukaikenpo.or.jp/faq/health_checkups/index.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Các loại khám sức khỏe, kiểm tra và lịch tư vấn sau khám."
+    },
+    "kyokai-check": {
+      "kind": "web",
+      "title": "検査項目一覧表（解説付き）｜協会けんぽ",
+      "url": "https://www.kyoukaikenpo.or.jp/health_promotion/after/001/001/",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên các phép đo, chỉ số và cách gọi trên bảng kết quả."
+    },
+    "kyokai-result": {
+      "kind": "web",
+      "title": "健診結果で「要精密検査」「要治療」の判定があった方へ｜協会けんぽ山梨支部",
+      "url": "https://www.kyoukaikenpo.or.jp/shibu/yamanashi/assets/2025010802.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Mẫu thông báo kết quả khám ghi 判定, 再検査, 要精密検査 và tên mục điện tâm đồ, X-quang ngực."
+    },
+    "jrc-prep": {
+      "kind": "web",
+      "title": "よくある質問｜長野赤十字病院",
+      "url": "https://www.nagano-med.jrc.or.jp/faq/",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên hướng dẫn ăn uống, mẫu xét nghiệm và các việc chuẩn bị trước khám."
+    },
+    "jrc-guide": {
+      "kind": "web",
+      "title": "検査日・検査コースおよび検査当日の持ち物｜旭川赤十字病院",
+      "url": "https://www.asahikawa.jrc.or.jp/app/wp-content/uploads/2025/02/chuuijikou2025.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Hướng dẫn mang phiếu, thông tin sử dụng thuốc, nước và chuẩn bị trước khám."
+    },
+    "mhlw-privacy": {
+      "kind": "web",
+      "title": "雇用管理分野における個人情報のうち健康情報を取り扱うに当たっての留意事項について｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tc2683&dataType=1&pageNo=1",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên vai nghề nghiệp, dữ liệu sức khỏe cá nhân và việc chia sẻ thông tin tại nơi làm."
+    },
+    "hv-ai": {
+      "kind": "web",
+      "title": "合｜Từ điển Hán Nôm Thi Viện",
+      "url": "https://hvdic.thivien.net/whv/合",
+      "accessed": "2026-11-19",
+      "use_vi": "Âm HỢP của chữ 合."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Loại khám, giờ và hướng dẫn chuẩn bị",
+      "v10_topic": "Loại khám, giờ và hướng dẫn chuẩn bị",
+      "terms": [
+        {
+          "id": "T-048-v001",
+          "ja": "定期健康診断",
+          "reading": "ていきけんこうしんだん",
+          "han_viet": "ĐỊNH KỲ KIỆN KHANG CHẨN ĐOÁN",
+          "vi": "khám sức khỏe định kỳ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ebf2a721-6e17-509a-a699-ba421af631c8-u01",
+              "surface": "定期健康診断"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-privacy"
+          ]
+        },
+        {
+          "id": "T-048-v002",
+          "ja": "人間ドック",
+          "reading": "にんげんドック",
+          "han_viet": "NHÂN GIAN",
+          "vi": "gói khám sức khỏe tổng quát chuyên sâu",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên loại khám thường được nhắc khi hỏi gói khám được công ty hoặc bảo hiểm hỗ trợ.",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-qa"
+          ]
+        },
+        {
+          "id": "T-048-v003",
+          "ja": "検査項目",
+          "reading": "けんさこうもく",
+          "han_viet": "KIỂM TRA HẠNG MỤC",
+          "vi": "nội dung kiểm tra được chỉ định",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dc95947c-d288-58e7-b4b8-f9e849113f6a-u02",
+              "surface": "検査項目"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v004",
+          "ja": "受診案内",
+          "reading": "じゅしんあんない",
+          "han_viet": "THỤ CHẨN ÁN NỘI",
+          "vi": "hướng dẫn đi khám",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "jrc-guide"
+          ]
+        },
+        {
+          "id": "T-048-v005",
+          "ja": "絶食",
+          "reading": "ぜっしょく",
+          "han_viet": "TUYỆT THỰC",
+          "vi": "nhịn ăn theo yêu cầu trước xét nghiệm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "jrc-guide"
+          ]
+        },
+        {
+          "id": "T-048-v006",
+          "ja": "飲食制限",
+          "reading": "いんしょくせいげん",
+          "han_viet": "ẨM THỰC CHẾ HẠN",
+          "vi": "hạn chế ăn hoặc uống trước xét nghiệm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "jrc-prep"
+          ]
+        },
+        {
+          "id": "T-048-v007",
+          "ja": "検便",
+          "reading": "けんべん",
+          "han_viet": "KIỂM TIỆN",
+          "vi": "xét nghiệm mẫu phân",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "jrc-prep"
+          ]
+        },
+        {
+          "id": "T-048-v008",
+          "ja": "尿検査",
+          "reading": "にょうけんさ",
+          "han_viet": "NIỆU KIỂM TRA",
+          "vi": "xét nghiệm nước tiểu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v009",
+          "ja": "午後枠",
+          "reading": "ごごわく",
+          "han_viet": "NGỌ HẬU KHUNG",
+          "vi": "khung hẹn buổi chiều",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2202244e-8150-5b94-919c-7ebf4091a230-u02",
+              "surface": "午後枠"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Nhiều quầy và thứ tự",
+      "v10_topic": "Nhiều quầy và thứ tự",
+      "terms": [
+        {
+          "id": "T-048-v010",
+          "ja": "受付",
+          "reading": "うけつけ",
+          "han_viet": "THỤ PHÓ",
+          "vi": "quầy hoặc bước tiếp nhận",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ebf2a721-6e17-509a-a699-ba421af631c8-u04",
+              "surface": "受付"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v011",
+          "ja": "問診票",
+          "reading": "もんしんひょう",
+          "han_viet": "VẤN CHẨN PHIẾU",
+          "vi": "phiếu hỏi trước khám về triệu chứng và tiền sử",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "jrc-guide"
+          ]
+        },
+        {
+          "id": "T-048-v012",
+          "ja": "採血",
+          "reading": "さいけつ",
+          "han_viet": "THÁI HUYẾT",
+          "vi": "lấy máu để xét nghiệm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "533c0572-6327-5aa6-82bb-36ee425b1190-u02",
+              "surface": "採血"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v013",
+          "ja": "番号札",
+          "reading": "ばんごうふだ",
+          "han_viet": "PHIÊN HIỆU TRÁT",
+          "vi": "thẻ số lượt khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3c02f07a-6f08-5ec6-999a-dee43dfca000-u02",
+              "surface": "番号札"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v014",
+          "ja": "計測室",
+          "reading": "けいそくしつ",
+          "han_viet": "KẾ TRẮC THẤT",
+          "vi": "phòng đo các chỉ số cơ thể",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3c02f07a-6f08-5ec6-999a-dee43dfca000-u02",
+              "surface": "計測室"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v015",
+          "ja": "診察室",
+          "reading": "しんさつしつ",
+          "han_viet": "CHẨN SÁT THẤT",
+          "vi": "phòng bác sĩ khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3c02f07a-6f08-5ec6-999a-dee43dfca000-u04",
+              "surface": "診察室"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-qa"
+          ]
+        },
+        {
+          "id": "T-048-v016",
+          "ja": "待合室",
+          "reading": "まちあいしつ",
+          "han_viet": "ĐÃI HỢP THẤT",
+          "vi": "phòng chờ khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_refs": [
+            "hv-ai"
+          ],
+          "note_vi": "合 đọc HỢP trong cách ghi Hán Việt của từ này."
+        },
+        {
+          "id": "T-048-v017",
+          "ja": "順番",
+          "reading": "じゅんばん",
+          "han_viet": "THUẬN PHIÊN",
+          "vi": "thứ tự tới lượt",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3c02f07a-6f08-5ec6-999a-dee43dfca000-u03",
+              "surface": "順番"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v018",
+          "ja": "やり直す",
+          "reading": "やりなおす",
+          "han_viet": "TRỰC",
+          "vi": "làm lại một bước hay phép đo",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-048-v044",
+          "ja": "身長",
+          "reading": "しんちょう",
+          "han_viet": "THÂN TRƯỜNG",
+          "vi": "chiều cao",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v045",
+          "ja": "体重",
+          "reading": "たいじゅう",
+          "han_viet": "THỂ TRỌNG",
+          "vi": "cân nặng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v046",
+          "ja": "腹囲",
+          "reading": "ふくい",
+          "han_viet": "PHÚC VI",
+          "vi": "số đo vòng bụng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v047",
+          "ja": "視力検査",
+          "reading": "しりょくけんさ",
+          "han_viet": "THỊ LỰC KIỂM TRA",
+          "vi": "kiểm tra thị lực",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v048",
+          "ja": "聴力検査",
+          "reading": "ちょうりょくけんさ",
+          "han_viet": "THÍNH LỰC KIỂM TRA",
+          "vi": "kiểm tra thính lực",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v049",
+          "ja": "心電図",
+          "reading": "しんでんず",
+          "han_viet": "TÂM ĐIỆN ĐỒ",
+          "vi": "điện tâm đồ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-result"
+          ]
+        },
+        {
+          "id": "T-048-v050",
+          "ja": "胸部レントゲン検査",
+          "reading": "きょうぶレントゲンけんさ",
+          "han_viet": "HUNG BỘ KIỂM TRA",
+          "vi": "chụp X-quang ngực",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-result"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Thông tin riêng tư với người chuyên môn",
+      "v10_topic": "Thông tin riêng tư với người chuyên môn",
+      "terms": [
+        {
+          "id": "T-048-v019",
+          "ja": "個別相談",
+          "reading": "こべつそうだん",
+          "han_viet": "CÁ BIỆT TƯƠNG ĐÀM",
+          "vi": "trao đổi riêng theo trường hợp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-048-v020",
+          "ja": "体調",
+          "reading": "たいちょう",
+          "han_viet": "THỂ ĐIỀU",
+          "vi": "tình trạng sức khỏe lúc này",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u01",
+              "surface": "体調"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v021",
+          "ja": "常用薬",
+          "reading": "じょうようやく",
+          "han_viet": "THƯỜNG DỤNG DƯỢC",
+          "vi": "thuốc đang dùng đều đặn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "jrc-guide"
+          ]
+        },
+        {
+          "id": "T-048-v022",
+          "ja": "既往歴",
+          "reading": "きおうれき",
+          "han_viet": "KÝ VÃNG LỊCH",
+          "vi": "tiền sử bệnh",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên trường trong trao đổi trước khám cần nhận ra để nói bệnh từng mắc.",
+          "source_domain": "medical",
+          "source_refs": [
+            "jrc-guide"
+          ]
+        },
+        {
+          "id": "T-048-v023",
+          "ja": "看護師",
+          "reading": "かんごし",
+          "han_viet": "KHÁN HỘ SƯ",
+          "vi": "điều dưỡng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8a22b771-14a5-5da7-b3a4-7b47585cbd90-u02",
+              "surface": "看護師"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-qa"
+          ]
+        },
+        {
+          "id": "T-048-v024",
+          "ja": "産業医",
+          "reading": "さんぎょうい",
+          "han_viet": "SẢN NGHIỆP Y",
+          "vi": "bác sĩ phụ trách sức khỏe nghề nghiệp",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên vai trò để hỏi ai có thể tư vấn kết quả ở nơi làm.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-privacy"
+          ]
+        },
+        {
+          "id": "T-048-v025",
+          "ja": "健康情報",
+          "reading": "けんこうじょうほう",
+          "han_viet": "KIỆN KHANG TÌNH BÁO",
+          "vi": "thông tin về sức khỏe của cá nhân",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-privacy"
+          ]
+        },
+        {
+          "id": "T-048-v026",
+          "ja": "共有範囲",
+          "reading": "きょうゆうはんい",
+          "han_viet": "CỘNG HỮU PHẠM VI",
+          "vi": "phạm vi người được chia sẻ thông tin",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Mục kết quả chưa hiểu",
+      "v10_topic": "Mục kết quả chưa hiểu",
+      "terms": [
+        {
+          "id": "T-048-v027",
+          "ja": "結果表",
+          "reading": "けっかひょう",
+          "han_viet": "KẾT QUẢ BIỂU",
+          "vi": "bảng kết quả khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u01",
+              "surface": "結果表"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v028",
+          "ja": "血液検査",
+          "reading": "けつえきけんさ",
+          "han_viet": "HUYẾT DỊCH KIỂM TRA",
+          "vi": "xét nghiệm máu",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u03",
+              "surface": "血液検査"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v029",
+          "ja": "数値",
+          "reading": "すうち",
+          "han_viet": "SỐ TRỊ",
+          "vi": "chỉ số được ghi bằng con số",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u03",
+              "surface": "数値"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v030",
+          "ja": "基準値",
+          "reading": "きじゅんち",
+          "han_viet": "CƠ CHUẨN TRỊ",
+          "vi": "giá trị hoặc mốc tham chiếu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v031",
+          "ja": "血圧",
+          "reading": "けつあつ",
+          "han_viet": "HUYẾT ÁP",
+          "vi": "huyết áp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v032",
+          "ja": "血糖値",
+          "reading": "けっとうち",
+          "han_viet": "HUYẾT ĐƯỜNG TRỊ",
+          "vi": "chỉ số đường huyết",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-check"
+          ]
+        },
+        {
+          "id": "T-048-v033",
+          "ja": "判定",
+          "reading": "はんてい",
+          "han_viet": "PHÁN ĐỊNH",
+          "vi": "mức đánh giá được ghi trong kết quả",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-result"
+          ]
+        },
+        {
+          "id": "T-048-v034",
+          "ja": "再検査",
+          "reading": "さいけんさ",
+          "han_viet": "TÁI KIỂM TRA",
+          "vi": "kiểm tra hay xét nghiệm lại",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8c4fe7b5-f271-53e2-be91-2470cdcd527a-u04",
+              "surface": "再検査"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-result"
+          ]
+        },
+        {
+          "id": "T-048-v035",
+          "ja": "要精密検査",
+          "reading": "ようせいみつけんさ",
+          "han_viet": "YẾU TINH MẬT KIỂM TRA",
+          "vi": "cần kiểm tra chuyên sâu hơn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Nhãn trên phiếu cần đọc chính xác khi đặt lịch xem kết quả.",
+          "source_domain": "medical",
+          "source_refs": [
+            "kyokai-result"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Hẹn theo dõi và lịch vắng nơi làm",
+      "v10_topic": "Hẹn theo dõi và lịch vắng nơi làm",
+      "terms": [
+        {
+          "id": "T-048-v036",
+          "ja": "結果説明",
+          "reading": "けっかせつめい",
+          "han_viet": "KẾT QUẢ THUYẾT MINH",
+          "vi": "buổi giải thích kết quả khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u02",
+              "surface": "結果説明"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v037",
+          "ja": "予約枠",
+          "reading": "よやくわく",
+          "han_viet": "DỰ ƯỚC KHUNG",
+          "vi": "khung giờ có thể đặt",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9c12f9ca-d1ce-5f4b-9231-7385c20ee414-u02",
+              "surface": "予約枠"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v038",
+          "ja": "勤務予定",
+          "reading": "きんむよてい",
+          "han_viet": "CẦN VỤ DỰ ĐỊNH",
+          "vi": "lịch làm việc dự kiến",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bf3c41a4-b025-584f-ab28-f3d8761ec935-u01",
+              "surface": "勤務予定"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v039",
+          "ja": "半休",
+          "reading": "はんきゅう",
+          "han_viet": "BÁN HƯU",
+          "vi": "nghỉ nửa ngày",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-048-v040",
+          "ja": "席を外す",
+          "reading": "せきをはずす",
+          "han_viet": "TỊCH NGOẠI",
+          "vi": "tạm vắng khỏi chỗ làm",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a1c8fe20-8c05-5ee4-a6ac-3891afcdde03-u02",
+              "surface": "席を外して"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v041",
+          "ja": "引き継ぎ",
+          "reading": "ひきつぎ",
+          "han_viet": "DẪN KẾ",
+          "vi": "việc bàn giao phần việc đang phụ trách",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f36ae30c-1d28-51b0-b2e4-98e3d95d8a8c-u02",
+              "surface": "引き継ぎ"
+            }
+          ]
+        },
+        {
+          "id": "T-048-v042",
+          "ja": "シフト調整",
+          "reading": "シフトちょうせい",
+          "han_viet": "ĐIỀU CHỈNH",
+          "vi": "việc sắp xếp lại ca làm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-048-v043",
+          "ja": "都合がつく",
+          "reading": "つごうがつく",
+          "han_viet": "ĐÔ HỢP",
+          "vi": "sắp xếp được thời gian",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

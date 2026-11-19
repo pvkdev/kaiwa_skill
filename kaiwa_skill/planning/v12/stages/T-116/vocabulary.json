@@ -1,0 +1,961 @@
+{
+  "stage_uid": "1f7b4c75-29ed-56c1-9c16-fd5206162aac",
+  "stage_code": "T-116",
+  "admin_sources": {
+    "caa-allergy": {
+      "kind": "web",
+      "title": "食物アレルギー表示に関する情報 | 消費者庁",
+      "url": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/",
+      "accessed": "2026-11-19",
+      "use_vi": "Định nghĩa 食物アレルギー và cách gọi 原材料 liên quan tới thành phần thực phẩm."
+    },
+    "caa-guide": {
+      "kind": "web",
+      "title": "外食・中食を利用するときに気をつけること | 消費者庁",
+      "url": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/allergy/efforts/assets/food_labeling_cms204_240509_03.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi 調理器具 và nguyên liệu vô tình 混入 khi dùng chung dụng cụ."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Loại tiệc, giờ và mức tự nguyện",
+      "v10_topic": "Loại tiệc, giờ và mức tự nguyện",
+      "terms": [
+        {
+          "id": "T-116-v001",
+          "ja": "飲み会",
+          "reading": "のみかい",
+          "han_viet": "ẨM HỘI",
+          "vi": "buổi gặp mặt ăn uống, thường có đồ uống có cồn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v002",
+          "ja": "忘年会",
+          "reading": "ぼうねんかい",
+          "han_viet": "VONG NIÊN HỘI",
+          "vi": "tiệc cuối năm để gặp nhau và khép lại một năm làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6df5ce34-bca4-53f2-9bc1-07a913837f9f-u01",
+              "surface": "忘年会"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v003",
+          "ja": "新年会",
+          "reading": "しんねんかい",
+          "han_viet": "TÂN NIÊN HỘI",
+          "vi": "tiệc gặp mặt mừng năm mới",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v004",
+          "ja": "歓迎会",
+          "reading": "かんげいかい",
+          "han_viet": "HOAN NGHÊNH HỘI",
+          "vi": "tiệc chào đón người mới vào nhóm hoặc công ty",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ddc488e5-09ec-5851-81db-de4152a41389-u01",
+              "surface": "歓迎会"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v005",
+          "ja": "送別会",
+          "reading": "そうべつかい",
+          "han_viet": "TỐNG BIỆT HỘI",
+          "vi": "tiệc tiễn người sắp chuyển hoặc rời nhóm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v006",
+          "ja": "祝賀会",
+          "reading": "しゅくがかい",
+          "han_viet": "CHÚC HẠ HỘI",
+          "vi": "buổi tiệc chúc mừng thành tích, sự kiện vui hoặc cột mốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v007",
+          "ja": "打ち上げ",
+          "reading": "うちあげ",
+          "han_viet": "ĐẢ THƯỢNG",
+          "vi": "buổi ăn mừng khi vừa xong dự án hoặc sự kiện, thường với người cùng làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v008",
+          "ja": "幹事",
+          "reading": "かんじ",
+          "han_viet": "CÁN SỰ",
+          "vi": "người đứng ra tổ chức, đặt chỗ và nhận phản hồi tham gia",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "11293ff0-0f19-5b57-8668-03c7ee2fbaa6-u04",
+              "surface": "次の会の幹事"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v009",
+          "ja": "出欠",
+          "reading": "しゅっけつ",
+          "han_viet": "XUẤT KHUYẾT",
+          "vi": "việc có mặt hay vắng mặt để người tổ chức thống kê",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "19082345-d3fa-5ad9-a7a7-6acf970aa35e-u02",
+              "surface": "出欠"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v010",
+          "ja": "任意",
+          "reading": "にんい",
+          "han_viet": "NHIỆM Ý",
+          "vi": "tự nguyện, có thể chọn tham gia theo ý mình",
+          "pos": "na_adj",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v011",
+          "ja": "欠席する",
+          "reading": "けっせきする",
+          "han_viet": "KHUYẾT TỊCH",
+          "vi": "vắng mặt hoặc báo sẽ không dự buổi đã được mời",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v012",
+          "ja": "予約する",
+          "reading": "よやくする",
+          "han_viet": "DỰ ƯỚC",
+          "vi": "đặt trước bàn hoặc chỗ với nhà hàng",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "91e0645b-aeb2-52cb-bdd1-aac253724f7c-u04",
+              "surface": "予約しています"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v013",
+          "ja": "各自",
+          "reading": "かくじ",
+          "han_viet": "CÁC TỰ",
+          "vi": "mỗi người tự thu xếp phần của mình, như tự đến thẳng quán",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "91e0645b-aeb2-52cb-bdd1-aac253724f7c-u02",
+              "surface": "各自でお店に"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v014",
+          "ja": "席表",
+          "reading": "せきひょう",
+          "han_viet": "TỊCH BIỂU",
+          "vi": "bảng ghi người được xếp vào từng bàn hoặc chỗ ngồi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8c7e049e-fa56-5fa9-a8f9-5296c9b94e67-u01",
+              "surface": "席表"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v015",
+          "ja": "途中",
+          "reading": "とちゅう",
+          "han_viet": "ĐỒ TRUNG",
+          "vi": "khi hoạt động đang diễn ra dở, có thể đến hoặc về trong khoảng đó",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccd8d135-6f22-545d-b83e-88e49643eb9a-u03",
+              "surface": "挨拶の途中"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Cảm ơn cuối năm, chúc đầu năm, mừng/tiễn",
+      "v10_topic": "Cảm ơn cuối năm, chúc đầu năm, mừng/tiễn",
+      "terms": [
+        {
+          "id": "T-116-v016",
+          "ja": "お疲れさまでした",
+          "reading": "おつかれさまでした",
+          "han_viet": "BÌ",
+          "vi": "lời ghi nhận công sức vừa bỏ ra, dùng khi kết thúc công việc hoặc một giai đoạn",
+          "pos": "expression",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d90acbca-4f7e-5304-a33e-a23753c14085-u01",
+              "surface": "今年もお疲れさまでした"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v017",
+          "ja": "明けましておめでとうございます",
+          "reading": "あけましておめでとうございます",
+          "han_viet": "MINH",
+          "vi": "lời chúc mừng năm mới nói khi đã sang năm mới",
+          "pos": "expression",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f023c6e1-b8f8-5972-8ea6-1252bb7abea6-u01",
+              "surface": "明けましておめでとうございます"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v018",
+          "ja": "年明け",
+          "reading": "としあけ",
+          "han_viet": "NIÊN MINH",
+          "vi": "thời gian ngay sau khi bước sang năm mới",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d90acbca-4f7e-5304-a33e-a23753c14085-u04",
+              "surface": "年明けに一緒に"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v019",
+          "ja": "お祝い",
+          "reading": "おいわい",
+          "han_viet": "CHÚC",
+          "vi": "lời hoặc hành động chúc mừng dịp vui",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4a613343-cdad-5e0b-9ffd-01fc4c98f7f8-u05",
+              "surface": "お祝い"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v020",
+          "ja": "昇進",
+          "reading": "しょうしん",
+          "han_viet": "THĂNG TIẾN",
+          "vi": "việc được lên chức hoặc nâng vị trí trong tổ chức",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4a613343-cdad-5e0b-9ffd-01fc4c98f7f8-u01",
+              "surface": "ご昇進"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v021",
+          "ja": "乾杯",
+          "reading": "かんぱい",
+          "han_viet": "CAN BÔI",
+          "vi": "việc nâng ly cùng nhau để mở tiệc hoặc chúc mừng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3bbe17ea-1a54-5580-b6ad-3d413d7381a0-u02",
+              "surface": "乾杯"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v022",
+          "ja": "歓迎する",
+          "reading": "かんげいする",
+          "han_viet": "HOAN NGHÊNH",
+          "vi": "chào đón, bày tỏ vui mừng khi có người mới đến",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v023",
+          "ja": "達成する",
+          "reading": "たっせいする",
+          "han_viet": "ĐẠT THÀNH",
+          "vi": "hoàn thành được mục tiêu hoặc chạm mốc đã đặt",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v024",
+          "ja": "貢献",
+          "reading": "こうけん",
+          "han_viet": "CỐNG HIẾN",
+          "vi": "phần đóng góp cho công việc hoặc kết quả chung",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần để ghi nhận cả người kiểm dữ liệu ở hậu trường khi nhóm ăn mừng mốc hoàn thành."
+        },
+        {
+          "id": "T-116-v025",
+          "ja": "乗り切る",
+          "reading": "のりきる",
+          "han_viet": "THỪA THIẾT",
+          "vi": "vượt qua một thời điểm khó khăn và tiếp tục được công việc",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b556befc-2184-50b9-9449-17eb35c57449-u05",
+              "surface": "乗り切れたこと"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v026",
+          "ja": "元気",
+          "reading": "げんき",
+          "han_viet": "NGUYÊN KHÍ",
+          "vi": "khỏe mạnh, dùng trong lời chúc người vừa chuyển đi hãy giữ sức khỏe",
+          "pos": "na_adj",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7f105a5b-089f-524f-bf6f-3bc53377f309-u05",
+              "surface": "新しい部署でもお元気で"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Giao lưu khác bộ phận",
+      "v10_topic": "Giao lưu khác bộ phận",
+      "terms": [
+        {
+          "id": "T-116-v027",
+          "ja": "部署",
+          "reading": "ぶしょ",
+          "han_viet": "BỘ THỰ",
+          "vi": "bộ phận trong một tổ chức, ví dụ kho hoặc kinh doanh",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e8f3761e-bfbc-5823-94fc-ed1887977320-u01",
+              "surface": "福井さんの部署"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v028",
+          "ja": "初対面",
+          "reading": "しょたいめん",
+          "han_viet": "SƠ ĐỐI DIỆN",
+          "vi": "việc gặp nhau lần đầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ddc488e5-09ec-5851-81db-de4152a41389-u04",
+              "surface": "初対面"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v029",
+          "ja": "社外",
+          "reading": "しゃがい",
+          "han_viet": "XÃ NGOẠI",
+          "vi": "phía ngoài công ty, dùng cho khách hoặc người thuộc tổ chức khác",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ddc488e5-09ec-5851-81db-de4152a41389-u02",
+              "surface": "社外の方"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v030",
+          "ja": "取引先",
+          "reading": "とりひきさき",
+          "han_viet": "THỦ DẪN TIÊN",
+          "vi": "đối tác hoặc khách hàng có giao dịch với công ty",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ddc488e5-09ec-5851-81db-de4152a41389-u03",
+              "surface": "取引先の方"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v031",
+          "ja": "交流する",
+          "reading": "こうりゅうする",
+          "han_viet": "GIAO LƯU",
+          "vi": "gặp và trò chuyện để hiểu nhau và giữ liên hệ",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v032",
+          "ja": "一言",
+          "reading": "ひとこと",
+          "han_viet": "NHẤT NGÔN",
+          "vi": "một ít lời, chẳng hạn lời tự giới thiệu ngắn ở tiệc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ceb0fef8-5922-506e-9555-8a726c8a6889-u01",
+              "surface": "一言いただけますか"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v033",
+          "ja": "紹介する",
+          "reading": "しょうかいする",
+          "han_viet": "THIỆU GIỚI",
+          "vi": "giới thiệu người này với người khác",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "74037063-68e1-5a0e-ae27-3619f1501ca5-u03",
+              "surface": "ご紹介してもいいですか"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v034",
+          "ja": "関心",
+          "reading": "かんしん",
+          "han_viet": "QUAN TÂM",
+          "vi": "sự quan tâm, muốn nghe hoặc tìm hiểu thêm về một việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e9585985-8fb2-5a24-afc4-28030cfc7987-u01",
+              "surface": "関心がある"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v035",
+          "ja": "普段",
+          "reading": "ふだん",
+          "han_viet": "PHỔ ĐOẠN",
+          "vi": "những lúc bình thường, như công việc thường ngày",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "74037063-68e1-5a0e-ae27-3619f1501ca5-u05",
+              "surface": "普段の仕事"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v036",
+          "ja": "近況",
+          "reading": "きんきょう",
+          "han_viet": "CẬN HUỐNG",
+          "vi": "tình hình hoặc tin tức gần đây của một người",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7f105a5b-089f-524f-bf6f-3bc53377f309-u03",
+              "surface": "近況"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v037",
+          "ja": "参考",
+          "reading": "さんこう",
+          "han_viet": "THAM KHẢO",
+          "vi": "điều có thể xem để lấy ý, học hỏi hay cân nhắc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e8f3761e-bfbc-5823-94fc-ed1887977320-u05",
+              "surface": "参考にします"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Từ chối rượu hoặc tăng hai",
+      "v10_topic": "Từ chối rượu hoặc tăng hai",
+      "terms": [
+        {
+          "id": "T-116-v038",
+          "ja": "遠慮する",
+          "reading": "えんりょする",
+          "han_viet": "VIỄN LỰ",
+          "vi": "lịch sự xin thôi hoặc từ chối lời mời",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "aea215f2-f05f-564e-9a7f-d6be07a443ca-u02",
+              "surface": "二次会は遠慮します"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v039",
+          "ja": "二次会",
+          "reading": "にじかい",
+          "han_viet": "NHỊ THỨ HỘI",
+          "vi": "buổi gặp tiếp ở chỗ khác sau khi tiệc chính kết thúc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "aea215f2-f05f-564e-9a7f-d6be07a443ca-u01",
+              "surface": "二次会"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v040",
+          "ja": "お先に失礼します",
+          "reading": "おさきにしつれいします",
+          "han_viet": "TIÊN THẤT LỄ",
+          "vi": "lời lịch sự trước khi rời buổi gặp trong lúc người khác vẫn ở lại",
+          "pos": "expression",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c68e2ea1-bbf1-526d-a345-8b8c743b0d55-u05",
+              "surface": "お先に失礼します"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v041",
+          "ja": "ノンアルコール",
+          "reading": "のんあるこーる",
+          "han_viet": "",
+          "vi": "loại đồ uống được giới thiệu là không cồn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e5902f54-f96c-5752-8819-adfacb87b8c5-u02",
+              "surface": "ノンアルコールの飲み物"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v042",
+          "ja": "炭酸水",
+          "reading": "たんさんすい",
+          "han_viet": "THÁN TOAN THỦY",
+          "vi": "nước có ga, một lựa chọn đồ uống ở quán",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e5902f54-f96c-5752-8819-adfacb87b8c5-u03",
+              "surface": "炭酸水"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v043",
+          "ja": "注ぐ",
+          "reading": "つぐ",
+          "han_viet": "CHÚ",
+          "vi": "rót đồ uống vào ly hoặc cốc",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e5470761-8369-51fa-9476-fb9fa176f76f-u02",
+              "surface": "お酒は注がなくて"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v044",
+          "ja": "勧める",
+          "reading": "すすめる",
+          "han_viet": "KHUYẾN",
+          "vi": "mời thử đồ uống hoặc đề nghị chọn một thứ",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e5470761-8369-51fa-9476-fb9fa176f76f-u03",
+              "surface": "何度も勧めて"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v062",
+          "ja": "アレルギー",
+          "reading": "あれるぎー",
+          "han_viet": "",
+          "vi": "dị ứng thức ăn, phản ứng dị ứng với một thành phần thực phẩm",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần để báo tình trạng dị ứng khi hỏi nhân viên quán về món có tôm.",
+          "source_domain": "medical",
+          "source_refs": [
+            "caa-allergy"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "cecc8d22-7523-5d81-9103-cc146a8f9961-u01",
+              "surface": "えびのアレルギー"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v046",
+          "ja": "原材料",
+          "reading": "げんざいりょう",
+          "han_viet": "NGUYÊN TÀI LIỆU",
+          "vi": "các thành phần ban đầu dùng để làm món hoặc sản phẩm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "caa-allergy"
+          ]
+        },
+        {
+          "id": "T-116-v047",
+          "ja": "だし",
+          "reading": "だし",
+          "han_viet": "",
+          "vi": "nước hoặc chất tạo vị nền dùng nấu hay nêm món",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "cecc8d22-7523-5d81-9103-cc146a8f9961-u01",
+              "surface": "ソースやだし"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v048",
+          "ja": "調理器具",
+          "reading": "ちょうりきぐ",
+          "han_viet": "ĐIỀU LÝ KHÍ CỤ",
+          "vi": "dụng cụ nấu hoặc chế biến thức ăn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "source_refs": [
+            "caa-guide"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "cecc8d22-7523-5d81-9103-cc146a8f9961-u03",
+              "surface": "調理器具"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v049",
+          "ja": "混入する",
+          "reading": "こんにゅうする",
+          "han_viet": "HỖN NHẬP",
+          "vi": "lẫn vào ngoài ý muốn, như một thành phần từ món khác lẫn vào khi chế biến",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "caa-guide"
+          ]
+        },
+        {
+          "id": "T-116-v050",
+          "ja": "別注文",
+          "reading": "べつちゅうもん",
+          "han_viet": "BIỆT CHÚ VĂN",
+          "vi": "việc gọi riêng một món hoặc đồ uống ngoài phần đã đặt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Nhắc lại điều đã hứa sau tiệc",
+      "v10_topic": "Nhắc lại điều đã hứa sau tiệc",
+      "terms": [
+        {
+          "id": "T-116-v051",
+          "ja": "約束する",
+          "reading": "やくそくする",
+          "han_viet": "ƯỚC THÚC",
+          "vi": "hứa sẽ làm một việc hoặc hẹn gặp vào lúc nhất định",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dcc6a255-38b6-51af-9b87-da5f9661244c-u01",
+              "surface": "お約束していた"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v052",
+          "ja": "翌日",
+          "reading": "よくじつ",
+          "han_viet": "DỰC NHẬT",
+          "vi": "ngày liền sau ngày vừa nhắc, như ngày làm việc sau buổi tiệc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-116-v053",
+          "ja": "改めて",
+          "reading": "あらためて",
+          "han_viet": "CẢI",
+          "vi": "làm lại hoặc trao đổi riêng vào dịp sau",
+          "pos": "adverb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "de3e90ac-77e2-5193-aa23-2f03dbdb4899-u04",
+              "surface": "改めてお礼を言いたい"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v054",
+          "ja": "追って",
+          "reading": "おって",
+          "han_viet": "TRUY",
+          "vi": "sau đó, tiếp tục bằng một lần liên hệ khác",
+          "pos": "adverb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần để hẹn hỏi tiếp phần phản hồi còn chờ sau khi buổi ăn mừng kết thúc.",
+          "evidence": [
+            {
+              "utterance_id": "ca400250-54a8-59d7-8104-9f58c08c697e-u04",
+              "surface": "追って聞いて"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v055",
+          "ja": "確認中",
+          "reading": "かくにんちゅう",
+          "han_viet": "XÁC NHẬN TRUNG",
+          "vi": "đang kiểm tra, chưa đủ thông tin để chốt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6dcfa266-7d0a-549e-b6a6-1f99ce32946a-u04",
+              "surface": "確認中"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v056",
+          "ja": "完了",
+          "reading": "かんりょう",
+          "han_viet": "HOÀN LIỄU",
+          "vi": "tình trạng việc đã làm xong hết phần cần làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ca400250-54a8-59d7-8104-9f58c08c697e-u01",
+              "surface": "全部完了にして"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v057",
+          "ja": "冗談",
+          "reading": "じょうだん",
+          "han_viet": "NHŨNG ĐÀM",
+          "vi": "lời nói đùa trong giao tiếp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "11293ff0-0f19-5b57-8668-03c7ee2fbaa6-u02",
+              "surface": "冗談でした"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v058",
+          "ja": "紛らわしい",
+          "reading": "まぎらわしい",
+          "han_viet": "PHÂN",
+          "vi": "dễ gây nhầm lẫn hoặc khiến người khác hiểu sai ý",
+          "pos": "i_adj",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần để đính chính khi câu đùa chọn quán được hiểu thành đã thống nhất địa điểm.",
+          "evidence": [
+            {
+              "utterance_id": "11293ff0-0f19-5b57-8668-03c7ee2fbaa6-u02",
+              "surface": "紛らわしい言い方"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v059",
+          "ja": "引き継ぐ",
+          "reading": "ひきつぐ",
+          "han_viet": "DẪN KẾ",
+          "vi": "nhận hoặc chuyển phần việc đang dở và thông tin kèm theo",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6dcfa266-7d0a-549e-b6a6-1f99ce32946a-u05",
+              "surface": "私が引き継ぎます"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v060",
+          "ja": "手分けする",
+          "reading": "てわけする",
+          "han_viet": "THỦ PHÂN",
+          "vi": "chia nhau làm những phần khác nhau của một việc",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "67e6c6d1-f3ed-5d58-a0cb-c7fbaa89cfdd-u02",
+              "surface": "手分けできた"
+            }
+          ]
+        },
+        {
+          "id": "T-116-v061",
+          "ja": "連絡先",
+          "reading": "れんらくさき",
+          "han_viet": "LIÊN LẠC TIÊN",
+          "vi": "thông tin để liên hệ với người cần hỏi hoặc báo việc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4a613343-cdad-5e0b-9ffd-01fc4c98f7f8-u03",
+              "surface": "困ったときの連絡先"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

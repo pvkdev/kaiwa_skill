@@ -1,0 +1,933 @@
+{
+  "stage_uid": "094099fd-43d3-582c-ad02-517959c88556",
+  "stage_code": "S-055",
+  "admin_sources": {
+    "fdma-call": {
+      "kind": "web",
+      "title": "119番緊急通報｜総務省消防庁",
+      "url": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu số báo cháy, từ gọi trình báo và nơi xảy ra cháy."
+    },
+    "otsu-119": {
+      "kind": "web",
+      "title": "外国語を使う皆さんへ｜大津市消防局",
+      "url": "https://www.city.otsu.lg.jp/material/files/group/205/Japanese.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách đọc ひゃくじゅうきゅうばん."
+    },
+    "hatsukaichi-fire": {
+      "kind": "web",
+      "title": "火災が起きたら、どうする？｜廿日市市消防本部",
+      "url": "https://www.city.hatsukaichi.hiroshima.jp/soshiki/68/145030.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu 火災, 炎, 煙, sơ tán và tên đội tiếp nhận thông tin."
+    },
+    "fukuoka-call": {
+      "kind": "web",
+      "title": "119番通報の要領・通報メモ｜福岡市消防局",
+      "url": "https://www.city.fukuoka.lg.jp/syobo/shirei/anzen-anshin/119memo.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu thông tin địa chỉ và phần số khi báo cháy."
+    },
+    "fukuoka-evac": {
+      "kind": "web",
+      "title": "火災時の初動対応について｜福岡市消防局",
+      "url": "https://www.city.fukuoka.lg.jp/syobo/yobo/anzen-anshin/shodoutaiou.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi 避難経路 trong hướng dẫn sơ tán."
+    },
+    "tfd-manual": {
+      "kind": "web",
+      "title": "自衛消防訓練マニュアル｜東京消防庁",
+      "url": "https://www.tfd.metro.tokyo.lg.jp/content/000064625.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên chuông khẩn cấp, dấu hiệu quan sát và biển 非常口."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Báo khói/lửa và địa chỉ",
+      "v10_topic": "Báo khói/lửa và địa chỉ",
+      "terms": [
+        {
+          "id": "S-055-v001",
+          "ja": "火事",
+          "reading": "かじ",
+          "han_viet": "HỎA SỰ",
+          "vi": "đám cháy, việc cháy",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d107a576-c456-5f3b-aa2c-7d19d7275aba-u01",
+              "surface": "火事"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "fdma-call"
+          ]
+        },
+        {
+          "id": "S-055-v002",
+          "ja": "火災",
+          "reading": "かさい",
+          "han_viet": "HỎA TAI",
+          "vi": "hỏa hoạn, đám cháy (cách gọi trang trọng)",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Từ thường dùng trong thông báo và hướng dẫn về sự cố cháy.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "hatsukaichi-fire"
+          ]
+        },
+        {
+          "id": "S-055-v003",
+          "ja": "煙",
+          "reading": "けむり",
+          "han_viet": "YÊN",
+          "vi": "khói",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d107a576-c456-5f3b-aa2c-7d19d7275aba-u02",
+              "surface": "煙"
+            }
+          ],
+          "level_note_vi": "Cần nói mình nhìn thấy khói kể cả khi chưa rõ có lửa không."
+        },
+        {
+          "id": "S-055-v004",
+          "ja": "火",
+          "reading": "ひ",
+          "han_viet": "HỎA",
+          "vi": "lửa",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension",
+          "source_refs": [
+            "hatsukaichi-fire"
+          ]
+        },
+        {
+          "id": "S-055-v005",
+          "ja": "炎",
+          "reading": "ほのお",
+          "han_viet": "VIÊM",
+          "vi": "ngọn lửa",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72bb0605-98e4-57fd-9b56-6848d1ea333d-u01",
+              "surface": "炎"
+            }
+          ],
+          "level_note_vi": "Cần nghe được câu hỏi có thấy ngọn lửa hay mới chỉ thấy khói."
+        },
+        {
+          "id": "S-055-v006",
+          "ja": "燃える",
+          "reading": "もえる",
+          "han_viet": "NHIÊN",
+          "vi": "cháy, đang cháy",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Động từ cần để nói phần hoặc vật đang cháy theo điều quan sát."
+        },
+        {
+          "id": "S-055-v007",
+          "ja": "119番",
+          "reading": "ひゃくじゅうきゅうばん",
+          "han_viet": "PHIÊN",
+          "vi": "số gọi cứu hỏa hoặc cấp cứu ở Nhật",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ecb6a686-4204-5ada-904c-8e5d07ea74db-u01",
+              "surface": "百十九番"
+            }
+          ],
+          "level_note_vi": "Tên số cần nhận ra khi tổng đài xác nhận đầu mối báo cháy.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "fdma-call",
+            "otsu-119"
+          ]
+        },
+        {
+          "id": "S-055-v008",
+          "ja": "通報する",
+          "reading": "つうほうする",
+          "han_viet": "THÔNG BÁO",
+          "vi": "gọi báo sự việc (cho đầu mối khẩn cấp)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "27e30ea6-3b8e-5496-aa05-3885b20e16d3-u01",
+              "surface": "通報した"
+            }
+          ],
+          "level_note_vi": "Cần báo đã gọi và mô tả điều mới nếu phải liên hệ lại.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "fdma-call"
+          ]
+        },
+        {
+          "id": "S-055-v009",
+          "ja": "住所",
+          "reading": "じゅうしょ",
+          "han_viet": "TRÚ SỞ",
+          "vi": "địa chỉ",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-055-v010",
+          "ja": "番地",
+          "reading": "ばんち",
+          "han_viet": "PHIÊN ĐỊA",
+          "vi": "phần số trong địa chỉ, số lô",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần đọc chính xác phần số khi tổng đài hỏi địa chỉ.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "fukuoka-call"
+          ]
+        },
+        {
+          "id": "S-055-v011",
+          "ja": "建物",
+          "reading": "たてもの",
+          "han_viet": "KIẾN VẬT",
+          "vi": "tòa nhà, công trình",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bc887a47-9562-5d85-896c-009059bc6898-u01",
+              "surface": "建物"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v012",
+          "ja": "〜階",
+          "reading": "かい",
+          "han_viet": "GIAI",
+          "vi": "tầng (đơn vị đếm tầng)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d107a576-c456-5f3b-aa2c-7d19d7275aba-u02",
+              "surface": "二階"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v013",
+          "ja": "入口",
+          "reading": "いりぐち",
+          "han_viet": "NHẬP KHẨU",
+          "vi": "lối vào",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bc887a47-9562-5d85-896c-009059bc6898-u02",
+              "surface": "入口"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v014",
+          "ja": "看板",
+          "reading": "かんばん",
+          "han_viet": "KHÁN BẢN",
+          "vi": "bảng hiệu",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bc887a47-9562-5d85-896c-009059bc6898-u02",
+              "surface": "看板"
+            }
+          ],
+          "level_note_vi": "Cần chỉ bảng hiệu để xác định tòa nhà khi nghe không rõ tên."
+        },
+        {
+          "id": "S-055-v015",
+          "ja": "目印",
+          "reading": "めじるし",
+          "han_viet": "MỤC ẤN",
+          "vi": "dấu mốc dễ nhận ra",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nêu điểm gần đó để bổ sung địa chỉ chưa rõ.",
+          "source_refs": [
+            "fdma-call"
+          ]
+        },
+        {
+          "id": "S-055-v016",
+          "ja": "青い",
+          "reading": "あおい",
+          "han_viet": "THANH",
+          "vi": "màu xanh lam (bảng hiệu)",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bc887a47-9562-5d85-896c-009059bc6898-u02",
+              "surface": "青い"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v017",
+          "ja": "階段",
+          "reading": "かいだん",
+          "han_viet": "GIAI ĐOẠN",
+          "vi": "cầu thang",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "65cd2ce4-0e50-553f-977e-eb94cae91355-u01",
+              "surface": "階段"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v018",
+          "ja": "通路",
+          "reading": "つうろ",
+          "han_viet": "THÔNG LỘ",
+          "vi": "lối đi, hành lang",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "27e30ea6-3b8e-5496-aa05-3885b20e16d3-u01",
+              "surface": "通路"
+            }
+          ],
+          "level_note_vi": "Cần cập nhật lối nào có khói mà mình còn nhìn thấy."
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Nói điều thực thấy, điều chưa biết",
+      "v10_topic": "Nói điều thực thấy, điều chưa biết",
+      "terms": [
+        {
+          "id": "S-055-v019",
+          "ja": "見る",
+          "reading": "みる",
+          "han_viet": "KIẾN",
+          "vi": "nhìn, nhìn thấy",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d107a576-c456-5f3b-aa2c-7d19d7275aba-u02",
+              "surface": "見ました"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v020",
+          "ja": "見える",
+          "reading": "みえる",
+          "han_viet": "KIẾN",
+          "vi": "thấy được, có thể nhìn thấy",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72bb0605-98e4-57fd-9b56-6848d1ea333d-u01",
+              "surface": "見えますか"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v021",
+          "ja": "聞こえる",
+          "reading": "きこえる",
+          "han_viet": "VĂN",
+          "vi": "nghe thấy được",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d3c63a3e-31a9-57b4-a658-1a2573a36727-u02",
+              "surface": "聞こえました"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v022",
+          "ja": "非常ベル",
+          "reading": "ひじょうベル",
+          "han_viet": "PHI THƯỜNG",
+          "vi": "chuông báo động khẩn cấp",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d3c63a3e-31a9-57b4-a658-1a2573a36727-u01",
+              "surface": "非常ベル"
+            }
+          ],
+          "level_note_vi": "Cần hiểu câu hỏi của người quản lý về tín hiệu đã nghe thấy.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tfd-manual"
+          ]
+        },
+        {
+          "id": "S-055-v023",
+          "ja": "鳴る",
+          "reading": "なる",
+          "han_viet": "MINH",
+          "vi": "reo, kêu (chuông)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d3c63a3e-31a9-57b4-a658-1a2573a36727-u01",
+              "surface": "鳴りましたか"
+            }
+          ],
+          "level_note_vi": "Cần báo nghe thấy chuông reo hay không."
+        },
+        {
+          "id": "S-055-v024",
+          "ja": "におい",
+          "reading": "におい",
+          "han_viet": "",
+          "vi": "mùi",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension",
+          "source_refs": [
+            "tfd-manual"
+          ]
+        },
+        {
+          "id": "S-055-v025",
+          "ja": "熱い",
+          "reading": "あつい",
+          "han_viet": "NHIỆT",
+          "vi": "nóng do nhiệt",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "topic_extension",
+          "source_refs": [
+            "tfd-manual"
+          ]
+        },
+        {
+          "id": "S-055-v026",
+          "ja": "広がる",
+          "reading": "ひろがる",
+          "han_viet": "QUẢNG",
+          "vi": "lan ra (khói hoặc lửa)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần tả khói mới lan sang lối khác trong lúc cập nhật."
+        },
+        {
+          "id": "S-055-v027",
+          "ja": "原因",
+          "reading": "げんいん",
+          "han_viet": "NGUYÊN NHÂN",
+          "vi": "nguyên nhân",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72bb0605-98e4-57fd-9b56-6848d1ea333d-u02",
+              "surface": "原因"
+            }
+          ],
+          "level_note_vi": "Cần phân biệt thấy khói với biết nguyên nhân gây khói."
+        },
+        {
+          "id": "S-055-v028",
+          "ja": "不明",
+          "reading": "ふめい",
+          "han_viet": "BẤT MINH",
+          "vi": "chưa rõ, chưa xác định",
+          "pos": "na_adj",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4f9cac8d-c960-59a8-85f7-38d1571cc52b-u03",
+              "surface": "不明"
+            }
+          ],
+          "level_note_vi": "Cần hiểu cách người tiếp nhận ghi phần chưa xác định."
+        },
+        {
+          "id": "S-055-v029",
+          "ja": "前",
+          "reading": "まえ",
+          "han_viet": "TIỀN",
+          "vi": "trước, trước đó",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1020c8e9-5d0f-556c-9ee5-1a218de2964d-u01",
+              "surface": "外に出る前"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v030",
+          "ja": "現在",
+          "reading": "げんざい",
+          "han_viet": "HIỆN TẠI",
+          "vi": "hiện tại, bây giờ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "27e30ea6-3b8e-5496-aa05-3885b20e16d3-u02",
+              "surface": "現在"
+            }
+          ],
+          "level_note_vi": "Cần nói rõ điều quan sát trước khi ra ngoài khác điều đang thấy."
+        },
+        {
+          "id": "S-055-v031",
+          "ja": "残る",
+          "reading": "のこる",
+          "han_viet": "TÀN",
+          "vi": "còn lại, còn ở trong",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "449376bc-f6f9-568a-85e9-b549396e2364-u01",
+              "surface": "残っています"
+            }
+          ],
+          "level_note_vi": "Cần hiểu câu hỏi về người có thể còn trong tòa nhà."
+        },
+        {
+          "id": "S-055-v032",
+          "ja": "人数",
+          "reading": "にんずう",
+          "han_viet": "NHÂN SỐ",
+          "vi": "số người",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "449376bc-f6f9-568a-85e9-b549396e2364-u02",
+              "surface": "人数"
+            }
+          ],
+          "level_note_vi": "Cần nói người quản lý đang kiểm bao nhiêu người đã ra ngoài."
+        },
+        {
+          "id": "S-055-v033",
+          "ja": "〜人",
+          "reading": "にん",
+          "han_viet": "NHÂN",
+          "vi": "đơn vị đếm người",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4f9cac8d-c960-59a8-85f7-38d1571cc52b-u02",
+              "surface": "一人が外に"
+            }
+          ],
+          "note_vi": "Một người đọc ひとり."
+        },
+        {
+          "id": "S-055-v034",
+          "ja": "〜回",
+          "reading": "かい",
+          "han_viet": "HỒI",
+          "vi": "lần (đơn vị đếm)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d3c63a3e-31a9-57b4-a658-1a2573a36727-u02",
+              "surface": "二回聞こえました"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v035",
+          "ja": "確か",
+          "reading": "たしか",
+          "han_viet": "XÁC",
+          "vi": "chắc chắn, rõ ràng",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần tách điều mình thấy rõ khỏi phần chưa chắc."
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Cập nhật vị trí sau khi ra ngoài",
+      "v10_topic": "Cập nhật vị trí sau khi ra ngoài",
+      "terms": [
+        {
+          "id": "S-055-v036",
+          "ja": "避難する",
+          "reading": "ひなんする",
+          "han_viet": "TỊ NẠN",
+          "vi": "sơ tán, thoát khỏi nơi nguy hiểm",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2c8bb478-6f5f-566a-a272-483ed6b39fb1-u02",
+              "surface": "避難した"
+            }
+          ],
+          "level_note_vi": "Cần nghe chỉ dẫn và xác nhận mình đã ra khỏi khu vực nguy hiểm.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "hatsukaichi-fire"
+          ]
+        },
+        {
+          "id": "S-055-v037",
+          "ja": "安全",
+          "reading": "あんぜん",
+          "han_viet": "AN TOÀN",
+          "vi": "an toàn",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "da8d579c-299a-5e0f-8fae-37faaf357170-u02",
+              "surface": "安全"
+            }
+          ],
+          "level_note_vi": "Cần mô tả nơi đang chờ hoặc hiểu người tiếp nhận yêu cầu tới chỗ an toàn."
+        },
+        {
+          "id": "S-055-v038",
+          "ja": "出口",
+          "reading": "でぐち",
+          "han_viet": "XUẤT KHẨU",
+          "vi": "lối ra",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb841996-d2d2-5872-b0c0-541ad86159f8-u01",
+              "surface": "出口"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v039",
+          "ja": "非常口",
+          "reading": "ひじょうぐち",
+          "han_viet": "PHI THƯỜNG KHẨU",
+          "vi": "lối thoát hiểm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Nhãn cần nhận ra khi hỏi lối rời khỏi tòa nhà.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tfd-manual"
+          ]
+        },
+        {
+          "id": "S-055-v040",
+          "ja": "避難経路",
+          "reading": "ひなんけいろ",
+          "han_viet": "TỊ NẠN KINH LỘ",
+          "vi": "đường sơ tán, tuyến thoát hiểm",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên chỉ dẫn đi từ chỗ đang đứng tới lối ra an toàn.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "fukuoka-evac"
+          ]
+        },
+        {
+          "id": "S-055-v041",
+          "ja": "外",
+          "reading": "そと",
+          "han_viet": "NGOẠI",
+          "vi": "bên ngoài",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4f9cac8d-c960-59a8-85f7-38d1571cc52b-u02",
+              "surface": "外"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v042",
+          "ja": "広場",
+          "reading": "ひろば",
+          "han_viet": "QUẢNG TRƯỜNG",
+          "vi": "quảng trường, bãi trống rộng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "da8d579c-299a-5e0f-8fae-37faaf357170-u01",
+              "surface": "広場"
+            }
+          ],
+          "level_note_vi": "Cần gọi đúng nơi tập trung ngoài tòa nhà."
+        },
+        {
+          "id": "S-055-v043",
+          "ja": "北側",
+          "reading": "きたがわ",
+          "han_viet": "BẮC TRẮC",
+          "vi": "phía bắc",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "da8d579c-299a-5e0f-8fae-37faaf357170-u01",
+              "surface": "北側"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v044",
+          "ja": "東側",
+          "reading": "ひがしがわ",
+          "han_viet": "ĐÔNG TRẮC",
+          "vi": "phía đông",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb841996-d2d2-5872-b0c0-541ad86159f8-u02",
+              "surface": "東側"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v045",
+          "ja": "通る",
+          "reading": "とおる",
+          "han_viet": "THÔNG",
+          "vi": "đi qua",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "65cd2ce4-0e50-553f-977e-eb94cae91355-u01",
+              "surface": "通れない"
+            }
+          ],
+          "level_note_vi": "Cần báo không thể đi qua lối có khói."
+        },
+        {
+          "id": "S-055-v046",
+          "ja": "戻る",
+          "reading": "もどる",
+          "han_viet": "LỆ",
+          "vi": "quay lại",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b3057bee-4adb-5fc9-a1cf-51145eee6077-u02",
+              "surface": "戻らない"
+            }
+          ],
+          "level_note_vi": "Cần hiểu chỉ dẫn chưa quay lại tòa nhà."
+        },
+        {
+          "id": "S-055-v047",
+          "ja": "待つ",
+          "reading": "まつ",
+          "han_viet": "ĐÃI",
+          "vi": "chờ",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9d660da5-9d3a-5dd3-a44c-719e975d0fd2-u02",
+              "surface": "待ってください"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v048",
+          "ja": "消防隊",
+          "reading": "しょうぼうたい",
+          "han_viet": "TIÊU PHÒNG ĐỘI",
+          "vi": "đội cứu hỏa",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "65cd2ce4-0e50-553f-977e-eb94cae91355-u02",
+              "surface": "消防隊"
+            }
+          ],
+          "level_note_vi": "Cần biết ai sẽ nhận cập nhật về vị trí và người còn trong tòa.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "hatsukaichi-fire"
+          ]
+        },
+        {
+          "id": "S-055-v049",
+          "ja": "係の人",
+          "reading": "かかりのひと",
+          "han_viet": "HỆ NHÂN",
+          "vi": "người phụ trách tại chỗ",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "103b1527-99a9-5a30-908a-15abc63701ff-u03",
+              "surface": "係の人"
+            }
+          ]
+        },
+        {
+          "id": "S-055-v050",
+          "ja": "案内",
+          "reading": "あんない",
+          "han_viet": "ÁN NỘI",
+          "vi": "chỉ dẫn, thông báo hướng dẫn",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9d660da5-9d3a-5dd3-a44c-719e975d0fd2-u02",
+              "surface": "案内"
+            }
+          ],
+          "level_note_vi": "Cần hiểu khi nhân viên yêu cầu chờ hướng dẫn tiếp."
+        },
+        {
+          "id": "S-055-v051",
+          "ja": "伝える",
+          "reading": "つたえる",
+          "han_viet": "TRUYỀN",
+          "vi": "báo lại, truyền đạt",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4f9cac8d-c960-59a8-85f7-38d1571cc52b-u03",
+              "surface": "伝えます"
+            }
+          ],
+          "level_note_vi": "Cần báo thay đổi cho đội cứu hỏa hoặc nhắn vị trí cho người nhà."
+        },
+        {
+          "id": "S-055-v052",
+          "ja": "無事",
+          "reading": "ぶじ",
+          "han_viet": "VÔ SỰ",
+          "vi": "bình an, không bị sao",
+          "pos": "na_adj",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "103b1527-99a9-5a30-908a-15abc63701ff-u01",
+              "surface": "無事"
+            }
+          ],
+          "level_note_vi": "Cụm cốt lõi để báo cho người thân mình đã thoát ra an toàn."
+        },
+        {
+          "id": "S-055-v053",
+          "ja": "向かい",
+          "reading": "むかい",
+          "han_viet": "HƯỚNG",
+          "vi": "phía đối diện",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "103b1527-99a9-5a30-908a-15abc63701ff-u03",
+              "surface": "向かい"
+            }
+          ],
+          "level_note_vi": "Cần chốt mốc gặp lại ở ga hoặc cửa hàng bên đối diện."
+        }
+      ]
+    }
+  ]
+}

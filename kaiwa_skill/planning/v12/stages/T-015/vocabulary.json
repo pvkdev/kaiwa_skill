@@ -1,0 +1,822 @@
+{
+  "stage_uid": "a4d369e2-0f96-51af-85a8-586353f06bbe",
+  "stage_code": "T-015",
+  "admin_sources": {
+    "share-mlit": {
+      "kind": "web",
+      "title": "シェアハウスの運営管理の各段階での手続きと留意点 — 国土交通省",
+      "url": "https://www.mlit.go.jp/common/001232768.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu bước kiểm vật để lại và thu chìa khóa khi rời nhà chung."
+    },
+    "share-rule": {
+      "kind": "web",
+      "title": "シェアハウスの決まり — SHARE PARADE",
+      "url": "https://sharepare.jp/share-life-guide/17054",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên khu vực dùng chung và các mục quy tắc về khách, giờ sử dụng, vệ sinh và đồ cá nhân."
+    },
+    "hv-mod": {
+      "kind": "web",
+      "title": "戻 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E6%88%BB",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác nhận âm LỆ của 戻 trong 戻す, đối chiếu dị thể 戾."
+    },
+    "hv-dam": {
+      "kind": "web",
+      "title": "擔 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/hv/t/%C4%91%E1%BA%A3m",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu từ 負擔 và âm ĐẢM khi chỉ gánh nặng."
+    },
+    "share-flow": {
+      "kind": "web",
+      "title": "入退去の流れ — ドミンゴ",
+      "url": "https://www.do-min-go.info/movein-moveout/",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi ngày vào, ngày rời và bước trả chìa khóa của một đơn vị vận hành."
+    },
+    "hv-son": {
+      "kind": "web",
+      "title": "子 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E5%AD%90",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác nhận âm TỬ theo mặt chữ 子 trong 様子."
+    },
+    "hv-wipe": {
+      "kind": "web",
+      "title": "拭 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E6%8B%AD",
+      "accessed": "2026-11-19",
+      "use_vi": "Âm THỨC của 拭 khi chỉ lau, chùi."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Người ở, phòng và khu dùng chung",
+      "v10_topic": "Người ở, phòng và khu dùng chung",
+      "terms": [
+        {
+          "id": "T-015-v001",
+          "ja": "シェアハウス",
+          "reading": "シェアハウス",
+          "han_viet": "",
+          "vi": "nhà ở chung có phòng riêng hoặc chỗ ở riêng và khu sinh hoạt chung",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v002",
+          "ja": "入居者",
+          "reading": "にゅうきょしゃ",
+          "han_viet": "NHẬP CƯ GIẢ",
+          "vi": "người có tên vào ở trong căn nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-mlit"
+          ]
+        },
+        {
+          "id": "T-015-v003",
+          "ja": "個室",
+          "reading": "こしつ",
+          "han_viet": "CÁ THẤT",
+          "vi": "phòng dành riêng cho một người hoặc hộ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v004",
+          "ja": "共用部",
+          "reading": "きょうようぶ",
+          "han_viet": "CỘNG DỤNG BỘ",
+          "vi": "phần nhà dùng chung",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "deeb8e03-10c2-529a-a25b-263d69e8599f-u02",
+              "surface": "共用部"
+            },
+            {
+              "utterance_id": "01fb3756-cb67-5192-a490-99f182d3b1aa-u02",
+              "surface": "共用部"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-rule"
+          ]
+        },
+        {
+          "id": "T-015-v005",
+          "ja": "居間",
+          "reading": "いま",
+          "han_viet": "CƯ GIAN",
+          "vi": "phòng sinh hoạt chung",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "13d7af06-47a6-5c2e-a20e-da2290e0436e-u02",
+              "surface": "居間"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v006",
+          "ja": "通路",
+          "reading": "つうろ",
+          "han_viet": "THÔNG LỘ",
+          "vi": "lối đi qua",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1eb1b7f0-28a2-5877-b572-92d110675474-u01",
+              "surface": "通路"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v007",
+          "ja": "水回り",
+          "reading": "みずまわり",
+          "han_viet": "THỦY HỒI",
+          "vi": "khu có đường nước như bếp, chậu rửa hoặc phòng tắm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v008",
+          "ja": "収納棚",
+          "reading": "しゅうのうだな",
+          "han_viet": "THU NẠP BẰNG",
+          "vi": "kệ để cất đồ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v009",
+          "ja": "段",
+          "reading": "だん",
+          "han_viet": "ĐOẠN",
+          "vi": "đơn vị đếm ngăn hoặc tầng kệ",
+          "pos": "counter",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "13d7af06-47a6-5c2e-a20e-da2290e0436e-u04",
+              "surface": "一段ずつ"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v010",
+          "ja": "空室",
+          "reading": "くうしつ",
+          "han_viet": "KHÔNG THẤT",
+          "vi": "phòng còn trống",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "19feafe7-5380-57f4-bd9b-3e642b14e41b-u03",
+              "surface": "空室"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Quy tắc khách thăm, yên tĩnh và dùng đồ",
+      "v10_topic": "Quy tắc khách thăm, yên tĩnh và dùng đồ",
+      "terms": [
+        {
+          "id": "T-015-v011",
+          "ja": "ハウスルール",
+          "reading": "ハウスルール",
+          "han_viet": "",
+          "vi": "bộ quy tắc sinh hoạt của căn nhà chung",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-rule"
+          ]
+        },
+        {
+          "id": "T-015-v012",
+          "ja": "来客",
+          "reading": "らいきゃく",
+          "han_viet": "LAI KHÁCH",
+          "vi": "khách đến thăm nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "deeb8e03-10c2-529a-a25b-263d69e8599f-u02",
+              "surface": "来客"
+            },
+            {
+              "utterance_id": "deeb8e03-10c2-529a-a25b-263d69e8599f-u04",
+              "surface": "来客"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v013",
+          "ja": "宿泊",
+          "reading": "しゅくはく",
+          "han_viet": "TÚC BẠC",
+          "vi": "việc ở lại qua đêm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "deeb8e03-10c2-529a-a25b-263d69e8599f-u04",
+              "surface": "宿泊"
+            },
+            {
+              "utterance_id": "19d45b77-e325-5117-9b08-68fd06c1077b-u01",
+              "surface": "宿泊"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v014",
+          "ja": "連絡する",
+          "reading": "れんらくする",
+          "han_viet": "LIÊN LẠC",
+          "vi": "liên lạc, báo tin",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "deeb8e03-10c2-529a-a25b-263d69e8599f-u02",
+              "surface": "事前に連絡し"
+            }
+          ],
+          "note_vi": "Dùng với 事前に để nói báo trước, như lúc có khách đến."
+        },
+        {
+          "id": "T-015-v015",
+          "ja": "利用時間",
+          "reading": "りようじかん",
+          "han_viet": "LỢI DỤNG THỜI GIAN",
+          "vi": "khung giờ được dùng tiện ích chung",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-rule"
+          ]
+        },
+        {
+          "id": "T-015-v016",
+          "ja": "深夜",
+          "reading": "しんや",
+          "han_viet": "THÂM DẠ",
+          "vi": "đêm khuya",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v017",
+          "ja": "私物",
+          "reading": "しぶつ",
+          "han_viet": "TƯ VẬT",
+          "vi": "đồ cá nhân",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "aa379387-0d7d-5660-b07a-a514ff58afda-u02",
+              "surface": "私物"
+            },
+            {
+              "utterance_id": "aa379387-0d7d-5660-b07a-a514ff58afda-u03",
+              "surface": "私物"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v018",
+          "ja": "共有備品",
+          "reading": "きょうゆうびひん",
+          "han_viet": "CỘNG HỮU BỊ PHẨM",
+          "vi": "đồ dùng được trang bị cho cả nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "42abd2f1-ccd4-506c-a59d-6c77d1786a2f-u03",
+              "surface": "共有備品"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v051",
+          "ja": "勝手に",
+          "reading": "かってに",
+          "han_viet": "THẮNG THỦ",
+          "vi": "tự ý, chưa hỏi người liên quan",
+          "pos": "adverb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c0258830-3352-5628-8417-6a8f3e4756ab-u02",
+              "surface": "勝手に"
+            },
+            {
+              "utterance_id": "df836c82-66e4-538d-9389-9ecb6181feda-u03",
+              "surface": "勝手に"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v020",
+          "ja": "元に戻す",
+          "reading": "もとにもどす",
+          "han_viet": "NGUYÊN LỆ",
+          "vi": "để đồ lại đúng chỗ cũ sau khi dùng",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "hv-mod"
+          ],
+          "note_vi": "戻 lấy âm LỆ theo nghĩa đưa về chỗ cũ."
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Chia lịch dọn, đổi lượt và báo đã làm",
+      "v10_topic": "Chia lịch dọn, đổi lượt và báo đã làm",
+      "terms": [
+        {
+          "id": "T-015-v021",
+          "ja": "掃除当番",
+          "reading": "そうじとうばん",
+          "han_viet": "TẢO TRỪ ĐƯƠNG PHIÊN",
+          "vi": "người hoặc lượt được phân công dọn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v022",
+          "ja": "当番表",
+          "reading": "とうばんひょう",
+          "han_viet": "ĐƯƠNG PHIÊN BIỂU",
+          "vi": "bảng phân công theo lượt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v023",
+          "ja": "分担する",
+          "reading": "ぶんたんする",
+          "han_viet": "PHÂN ĐẢM",
+          "vi": "chia việc dọn cho mỗi người phụ trách một phần",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "hv-dam"
+          ],
+          "note_vi": "担 đọc ĐẢM theo 分擔."
+        },
+        {
+          "id": "T-015-v024",
+          "ja": "交代する",
+          "reading": "こうたいする",
+          "han_viet": "GIAO ĐẠI",
+          "vi": "đổi lượt với người khác",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dd28edae-0db0-5297-92c6-3b3a5ac1687d-u01",
+              "surface": "交代できない"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v025",
+          "ja": "留守にする",
+          "reading": "るすにする",
+          "han_viet": "LƯU THỦ",
+          "vi": "vắng nhà",
+          "pos": "expression",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d2c9269a-c239-5447-ae69-bfb8f54b457f-u01",
+              "surface": "留守にする"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v026",
+          "ja": "持ち回り",
+          "reading": "もちまわり",
+          "han_viet": "TRÌ HỒI",
+          "vi": "luân phiên nhau làm việc chung",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v027",
+          "ja": "拭く",
+          "reading": "ふく",
+          "han_viet": "THỨC",
+          "vi": "lau sàn, bàn hoặc bề mặt",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2e821b62-ffd8-5e18-96bb-9e69081e91bd-u01",
+              "surface": "拭いた"
+            }
+          ],
+          "source_refs": [
+            "hv-wipe"
+          ],
+          "note_vi": "Âm THỨC của 拭 khi chỉ lau, chùi."
+        },
+        {
+          "id": "T-015-v028",
+          "ja": "ゴミ出し",
+          "reading": "ゴミだし",
+          "han_viet": "XUẤT",
+          "vi": "việc đem rác ra điểm thu gom",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v029",
+          "ja": "完了",
+          "reading": "かんりょう",
+          "han_viet": "HOÀN LIỄU",
+          "vi": "việc hoàn thành",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2e821b62-ffd8-5e18-96bb-9e69081e91bd-u04",
+              "surface": "完了"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v030",
+          "ja": "掲示",
+          "reading": "けいじ",
+          "han_viet": "YẾT THỊ",
+          "vi": "thông báo dán hoặc treo cho mọi người xem",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "df836c82-66e4-538d-9389-9ecb6181feda-u01",
+              "surface": "掲示"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Nói sự việc lặp lại, xin lỗi và điều chỉnh",
+      "v10_topic": "Nói sự việc lặp lại, xin lỗi và điều chỉnh",
+      "terms": [
+        {
+          "id": "T-015-v031",
+          "ja": "話し声",
+          "reading": "はなしごえ",
+          "han_viet": "THOẠI THANH",
+          "vi": "tiếng người nói chuyện",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c509ace2-29f1-564b-805f-ce7228d6cbdd-u01",
+              "surface": "話し声"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v032",
+          "ja": "騒音",
+          "reading": "そうおん",
+          "han_viet": "TAO ÂM",
+          "vi": "tiếng ồn gây khó chịu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v033",
+          "ja": "響く",
+          "reading": "ひびく",
+          "han_viet": "HƯỞNG",
+          "vi": "âm thanh vọng hoặc truyền sang chỗ khác",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v034",
+          "ja": "寝つく",
+          "reading": "ねつく",
+          "han_viet": "TẨM",
+          "vi": "bắt đầu ngủ, thiếp đi",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c509ace2-29f1-564b-805f-ce7228d6cbdd-u01",
+              "surface": "寝つきにくい"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v035",
+          "ja": "夜勤",
+          "reading": "やきん",
+          "han_viet": "DẠ CẦN",
+          "vi": "ca làm ban đêm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "904097e5-558c-50b3-ba12-18cd70898ea5-u01",
+              "surface": "夜勤"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v036",
+          "ja": "声を抑える",
+          "reading": "こえをおさえる",
+          "han_viet": "THANH ỨC",
+          "vi": "hạ giọng để bớt ồn",
+          "pos": "expression",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "904097e5-558c-50b3-ba12-18cd70898ea5-u02",
+              "surface": "声を抑える"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v037",
+          "ja": "ふさぐ",
+          "reading": "ふさぐ",
+          "han_viet": "",
+          "vi": "chắn một lối đi hoặc chỗ trống",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v038",
+          "ja": "繰り返す",
+          "reading": "くりかえす",
+          "han_viet": "TAO PHẢN",
+          "vi": "lặp lại nhiều lần",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v039",
+          "ja": "様子を見る",
+          "reading": "ようすをみる",
+          "han_viet": "DẠNG TỬ KIẾN",
+          "vi": "theo dõi thêm xem có đỡ không",
+          "pos": "expression",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c509ace2-29f1-564b-805f-ce7228d6cbdd-u05",
+              "surface": "様子を見よう"
+            }
+          ],
+          "source_refs": [
+            "hv-son"
+          ],
+          "note_vi": "子 trong 様子 là hậu tố, ghi TỬ theo mặt chữ."
+        },
+        {
+          "id": "T-015-v040",
+          "ja": "折り合いをつける",
+          "reading": "おりあいをつける",
+          "han_viet": "CHIẾT HỢP",
+          "vi": "tìm cách hai bên đều có thể chấp nhận",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Bàn giao khi người mới vào hoặc người cũ rời",
+      "v10_topic": "Bàn giao khi người mới vào hoặc người cũ rời",
+      "terms": [
+        {
+          "id": "T-015-v041",
+          "ja": "入居日",
+          "reading": "にゅうきょび",
+          "han_viet": "NHẬP CƯ NHẬT",
+          "vi": "ngày bắt đầu vào ở",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "01fb3756-cb67-5192-a490-99f182d3b1aa-u01",
+              "surface": "入居日"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-flow"
+          ]
+        },
+        {
+          "id": "T-015-v042",
+          "ja": "退去日",
+          "reading": "たいきょび",
+          "han_viet": "THOÁI KHỨ NHẬT",
+          "vi": "ngày chuyển ra, chấm dứt ở nhà này",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-flow"
+          ]
+        },
+        {
+          "id": "T-015-v043",
+          "ja": "鍵の返却",
+          "reading": "かぎのへんきゃく",
+          "han_viet": "KIỆN PHẢN KHƯỚC",
+          "vi": "việc trả chìa khóa",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-flow",
+            "share-mlit"
+          ]
+        },
+        {
+          "id": "T-015-v044",
+          "ja": "引き継ぐ",
+          "reading": "ひきつぐ",
+          "han_viet": "DẪN KẾ",
+          "vi": "nhận lại thông tin hoặc việc đang phụ trách",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v045",
+          "ja": "所有者",
+          "reading": "しょゆうしゃ",
+          "han_viet": "SỞ HỮU GIẢ",
+          "vi": "người sở hữu món đồ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-015-v046",
+          "ja": "譲る",
+          "reading": "ゆずる",
+          "han_viet": "NHƯỢNG",
+          "vi": "nhượng hoặc để món còn dùng được cho người khác",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "50d2a8f7-4bc2-57dd-9d2f-4b7957d95333-u02",
+              "surface": "譲って"
+            },
+            {
+              "utterance_id": "50d2a8f7-4bc2-57dd-9d2f-4b7957d95333-u03",
+              "surface": "譲って"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v047",
+          "ja": "処分する",
+          "reading": "しょぶんする",
+          "han_viet": "XỬ PHÂN",
+          "vi": "bỏ đi hoặc xử lý đồ không mang theo được",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "50d2a8f7-4bc2-57dd-9d2f-4b7957d95333-u01",
+              "surface": "処分しよう"
+            },
+            {
+              "utterance_id": "50d2a8f7-4bc2-57dd-9d2f-4b7957d95333-u03",
+              "surface": "処分する"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v048",
+          "ja": "持ち帰る",
+          "reading": "もちかえる",
+          "han_viet": "TRÌ QUY",
+          "vi": "mang đồ của mình về hoặc đi khỏi nhà chung",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "50d2a8f7-4bc2-57dd-9d2f-4b7957d95333-u03",
+              "surface": "持ち帰って"
+            }
+          ]
+        },
+        {
+          "id": "T-015-v049",
+          "ja": "残置物",
+          "reading": "ざんちぶつ",
+          "han_viet": "TÀN TRÍ VẬT",
+          "vi": "đồ còn để lại sau khi người thuê rời đi",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-mlit"
+          ],
+          "level_note_vi": "Cần biết tên gọi khi quản lý hỏi về đồ còn sót ở chỗ dùng chung."
+        },
+        {
+          "id": "T-015-v050",
+          "ja": "引き渡す",
+          "reading": "ひきわたす",
+          "han_viet": "DẪN ĐỘ",
+          "vi": "bàn giao đồ cho người nhận tiếp theo",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

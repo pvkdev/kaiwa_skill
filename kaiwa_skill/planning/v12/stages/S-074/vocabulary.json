@@ -1,0 +1,895 @@
+{
+  "stage_uid": "1b28ed78-c3a5-570c-aa77-b5d3dc2a589d",
+  "stage_code": "S-074",
+  "admin_sources": {
+    "jma-forecast": {
+      "kind": "web",
+      "title": "天気予報 | 気象庁",
+      "url": "https://www.jma.go.jp/jma/kishou/know/kurashi/yoho.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên mục dự báo thời tiết, xác suất có mưa hoặc tuyết và nhiệt độ không khí."
+    },
+    "jma-warning": {
+      "kind": "web",
+      "title": "特別警報、危険警報、警報、注意報、気象情報 | 気象庁",
+      "url": "https://www.jma.go.jp/jma/kishou/know/yougo_hp/keihou.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Định nghĩa chính thức phân biệt 警報 và 注意報."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Nắng, mưa, nhiệt độ và câu mở chuyện",
+      "v10_topic": "Nắng, mưa, lạnh và câu mở chuyện",
+      "terms": [
+        {
+          "id": "S-074-v001",
+          "ja": "天気",
+          "reading": "てんき",
+          "han_viet": "THIÊN KHÍ",
+          "vi": "thời tiết",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a91d4169-c3a1-5652-b6ea-33f1da4b8768-u01",
+              "surface": "天気"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v002",
+          "ja": "いいお天気ですね",
+          "reading": "いいおてんきですね",
+          "han_viet": "THIÊN KHÍ",
+          "vi": "trời đẹp nhỉ",
+          "pos": "expression",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-074-SH-001",
+              "surface": "いいお天気ですね"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v003",
+          "ja": "晴れ",
+          "reading": "はれ",
+          "han_viet": "TÌNH",
+          "vi": "trời nắng, quang đãng",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v004",
+          "ja": "曇り",
+          "reading": "くもり",
+          "han_viet": "ĐÀM",
+          "vi": "trời nhiều mây, âm u",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v005",
+          "ja": "雨",
+          "reading": "あめ",
+          "han_viet": "VŨ",
+          "vi": "mưa",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9c352040-b42f-5267-8ae8-45115974ce52-u01",
+              "surface": "雨"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v006",
+          "ja": "雪",
+          "reading": "ゆき",
+          "han_viet": "TUYẾT",
+          "vi": "tuyết",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v007",
+          "ja": "降る",
+          "reading": "ふる",
+          "han_viet": "GIÁNG",
+          "vi": "rơi (mưa, tuyết)",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9c352040-b42f-5267-8ae8-45115974ce52-u01",
+              "surface": "雨が降りそう"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v008",
+          "ja": "やむ",
+          "reading": "やむ",
+          "han_viet": "",
+          "vi": "tạnh (mưa, tuyết)",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v009",
+          "ja": "風",
+          "reading": "かぜ",
+          "han_viet": "PHONG",
+          "vi": "gió",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6c009722-9f11-5e13-ac90-13392e681278-u02",
+              "surface": "風"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v010",
+          "ja": "暑い",
+          "reading": "あつい",
+          "han_viet": "THỬ",
+          "vi": "nóng (thời tiết)",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-074-SH-003",
+              "surface": "暑かった"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v011",
+          "ja": "寒い",
+          "reading": "さむい",
+          "han_viet": "HÀN",
+          "vi": "lạnh (thời tiết)",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6c009722-9f11-5e13-ac90-13392e681278-u01",
+              "surface": "寒い"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v012",
+          "ja": "暖かい",
+          "reading": "あたたかい",
+          "han_viet": "NOÃN",
+          "vi": "ấm (thời tiết, không khí)",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v013",
+          "ja": "涼しい",
+          "reading": "すずしい",
+          "han_viet": "LƯƠNG",
+          "vi": "mát mẻ",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-074-SH-002",
+              "surface": "涼しく"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v014",
+          "ja": "冷たい",
+          "reading": "つめたい",
+          "han_viet": "LÃNH",
+          "vi": "lạnh khi chạm hoặc cảm thấy",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6c009722-9f11-5e13-ac90-13392e681278-u02",
+              "surface": "冷たい"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v015",
+          "ja": "蒸し暑い",
+          "reading": "むしあつい",
+          "han_viet": "CHƯNG THỬ",
+          "vi": "nóng ẩm, oi bức",
+          "pos": "i_adj",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần tả cái nóng ẩm để nói vì sao chọn chỗ râm hoặc vào nhà."
+        },
+        {
+          "id": "S-074-v016",
+          "ja": "日差し",
+          "reading": "ひざし",
+          "han_viet": "NHẬT SAI",
+          "vi": "ánh nắng chiếu",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần diễn đạt nắng gắt là lý do muốn nghỉ hoặc chọn giờ khác.",
+          "evidence": [
+            {
+              "utterance_id": "f4cad844-349b-5c50-a79e-24b9ae6fb085-u01",
+              "surface": "日差し"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v017",
+          "ja": "日陰",
+          "reading": "ひかげ",
+          "han_viet": "NHẬT ÂM",
+          "vi": "bóng râm, chỗ râm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nói muốn tránh nắng ở đâu hoặc hẹn muộn hơn.",
+          "evidence": [
+            {
+              "utterance_id": "f4cad844-349b-5c50-a79e-24b9ae6fb085-u04",
+              "surface": "日陰"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v018",
+          "ja": "気温",
+          "reading": "きおん",
+          "han_viet": "KHÍ ÔN",
+          "vi": "nhiệt độ không khí",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_refs": [
+            "jma-forecast"
+          ]
+        },
+        {
+          "id": "S-074-v019",
+          "ja": "～度",
+          "reading": "ど",
+          "han_viet": "ĐỘ",
+          "vi": "độ (đơn vị nhiệt độ)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Mùa, lễ hội và cách tham gia",
+      "v10_topic": "Mùa, lễ hội, giờ và lối vào",
+      "terms": [
+        {
+          "id": "S-074-v020",
+          "ja": "春",
+          "reading": "はる",
+          "han_viet": "XUÂN",
+          "vi": "mùa xuân",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v021",
+          "ja": "夏",
+          "reading": "なつ",
+          "han_viet": "HẠ",
+          "vi": "mùa hè",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v022",
+          "ja": "秋",
+          "reading": "あき",
+          "han_viet": "THU",
+          "vi": "mùa thu",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v023",
+          "ja": "冬",
+          "reading": "ふゆ",
+          "han_viet": "ĐÔNG",
+          "vi": "mùa đông",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v024",
+          "ja": "梅雨",
+          "reading": "つゆ",
+          "han_viet": "MAI VŨ",
+          "vi": "mùa mưa đầu hè ở Nhật",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần gọi tên mùa khi nói chưa quen mưa kéo dài và cách sinh hoạt.",
+          "evidence": [
+            {
+              "utterance_id": "ca01242c-db48-50f6-a0c5-f5ba34fb69f6-u01",
+              "surface": "梅雨"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v025",
+          "ja": "桜",
+          "reading": "さくら",
+          "han_viet": "ANH",
+          "vi": "hoa anh đào, cây anh đào",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ef9defdf-1acb-55f6-8a22-e629447f388f-u01",
+              "surface": "桜"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v026",
+          "ja": "咲く",
+          "reading": "さく",
+          "han_viet": "TIẾU",
+          "vi": "nở (hoa)",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ef9defdf-1acb-55f6-8a22-e629447f388f-u01",
+              "surface": "咲きます"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v027",
+          "ja": "お花見",
+          "reading": "おはなみ",
+          "han_viet": "HOA KIẾN",
+          "vi": "đi ngắm hoa anh đào",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "645b15aa-c1ce-5b42-9d6a-abec6f82d6ab-u01",
+              "surface": "お花見"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v028",
+          "ja": "祭り",
+          "reading": "まつり",
+          "han_viet": "TẾ",
+          "vi": "lễ hội",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9cf73dea-61c5-5de6-bb7d-0d63c697bc59-u01",
+              "surface": "お祭り"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v029",
+          "ja": "花火大会",
+          "reading": "はなびたいかい",
+          "han_viet": "HOA HỎA ĐẠI HỘI",
+          "vi": "lễ hội bắn pháo hoa",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v030",
+          "ja": "屋台",
+          "reading": "やたい",
+          "han_viet": "ỐC ĐÀI",
+          "vi": "quầy hàng lưu động tại lễ hội",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v031",
+          "ja": "ステージ",
+          "reading": "ステージ",
+          "han_viet": "",
+          "vi": "sân khấu",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "def70f9f-2957-5ffb-afc9-7607f14a820c-u02",
+              "surface": "ステージ"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v032",
+          "ja": "太鼓",
+          "reading": "たいこ",
+          "han_viet": "THÁI CỔ",
+          "vi": "trống Nhật",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5b309bed-d155-5c95-8ac8-be413062ef63-u03",
+              "surface": "太鼓"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v033",
+          "ja": "会場",
+          "reading": "かいじょう",
+          "han_viet": "HỘI TRƯỜNG",
+          "vi": "địa điểm tổ chức",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần hỏi chỗ diễn ra, lối vào hay chỗ có thể nhìn rõ.",
+          "evidence": [
+            {
+              "utterance_id": "e2473b04-3620-5815-869f-c19302244bf9-u01",
+              "surface": "会場"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v034",
+          "ja": "集会所",
+          "reading": "しゅうかいじょ",
+          "han_viet": "TẬP HỘI SỞ",
+          "vi": "nhà sinh hoạt, hội trường khu phố",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Mốc được dùng để chỉ nơi tổ chức lễ hội khu phố.",
+          "evidence": [
+            {
+              "utterance_id": "9cf73dea-61c5-5de6-bb7d-0d63c697bc59-u04",
+              "surface": "集会所"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v035",
+          "ja": "案内所",
+          "reading": "あんないじょ",
+          "han_viet": "ÁN NỘI SỞ",
+          "vi": "bàn thông tin",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "067b6046-942a-511a-9c56-815524aaef98-u03",
+              "surface": "案内所"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v036",
+          "ja": "入口",
+          "reading": "いりぐち",
+          "han_viet": "NHẬP KHẨU",
+          "vi": "lối vào",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3beb736a-9fb6-50f9-b39f-586af3274690-u03",
+              "surface": "入口"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v037",
+          "ja": "列",
+          "reading": "れつ",
+          "han_viet": "LIỆT",
+          "vi": "hàng, dãy",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần phân biệt hàng chờ vào khu lễ hội với hàng chờ hoạt động.",
+          "evidence": [
+            {
+              "utterance_id": "def70f9f-2957-5ffb-afc9-7607f14a820c-u04",
+              "surface": "列"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v038",
+          "ja": "並ぶ",
+          "reading": "ならぶ",
+          "han_viet": "TỊNH",
+          "vi": "xếp hàng",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e2473b04-3620-5815-869f-c19302244bf9-u01",
+              "surface": "並びます"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v039",
+          "ja": "折り紙",
+          "reading": "おりがみ",
+          "han_viet": "CHIẾT CHỈ",
+          "vi": "gấp giấy, đồ gấp giấy",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "efb5fd3c-dd9b-56f2-9f36-a418c3870e43-u01",
+              "surface": "折り紙"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v040",
+          "ja": "～回",
+          "reading": "かい",
+          "han_viet": "HỒI",
+          "vi": "lượt, suất, lần (đơn vị đếm)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "311aa4bd-de93-5b45-8d5a-b81475edd970-u02",
+              "surface": "次の回"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v041",
+          "ja": "何月",
+          "reading": "なんがつ",
+          "han_viet": "HÀ NGUYỆT",
+          "vi": "tháng mấy",
+          "pos": "other",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ef9defdf-1acb-55f6-8a22-e629447f388f-u01",
+              "surface": "何月"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v042",
+          "ja": "何時",
+          "reading": "なんじ",
+          "han_viet": "HÀ THỜI",
+          "vi": "mấy giờ",
+          "pos": "other",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b2471a0c-87bf-5730-99f1-330c353c7b71-u01",
+              "surface": "何時"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v043",
+          "ja": "空き",
+          "reading": "あき",
+          "han_viet": "KHÔNG",
+          "vi": "suất trống, còn chỗ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần xin suất sau khi lượt định tham gia đã hết chỗ.",
+          "evidence": [
+            {
+              "utterance_id": "efb5fd3c-dd9b-56f2-9f36-a418c3870e43-u02",
+              "surface": "空き"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Xem dự báo và đổi kế hoạch khi trời thay",
+      "v10_topic": "Đổi kế hoạch khi thời tiết thay",
+      "terms": [
+        {
+          "id": "S-074-v044",
+          "ja": "天気予報",
+          "reading": "てんきよほう",
+          "han_viet": "THIÊN KHÍ DỰ BÁO",
+          "vi": "dự báo thời tiết",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "source_refs": [
+            "jma-forecast"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "9c352040-b42f-5267-8ae8-45115974ce52-u02",
+              "surface": "予報では"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v045",
+          "ja": "降水確率",
+          "reading": "こうすいかくりつ",
+          "han_viet": "GIÁNG THỦY XÁC SUẤT",
+          "vi": "xác suất có mưa hoặc tuyết theo dự báo",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Từ nhìn thấy trên dự báo khi chọn giờ cho hoạt động ngoài trời.",
+          "source_refs": [
+            "jma-forecast"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "S-074-v046",
+          "ja": "警報",
+          "reading": "けいほう",
+          "han_viet": "CẢNH BÁO",
+          "vi": "cảnh báo về nguy cơ thiên tai nghiêm trọng",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Nhãn cảnh báo chính thức có thể ảnh hưởng đến việc đi lễ hội.",
+          "source_refs": [
+            "jma-warning"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "S-074-v047",
+          "ja": "注意報",
+          "reading": "ちゅういほう",
+          "han_viet": "CHÚ Ý BÁO",
+          "vi": "thông báo lưu ý về nguy cơ thời tiết gây thiệt hại",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Nhãn chính thức cần nhận ra khi kiểm lý do đổi kế hoạch.",
+          "source_refs": [
+            "jma-warning"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "S-074-v048",
+          "ja": "大雨",
+          "reading": "おおあめ",
+          "han_viet": "ĐẠI VŨ",
+          "vi": "mưa lớn",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v049",
+          "ja": "台風",
+          "reading": "たいふう",
+          "han_viet": "ĐÀI PHONG",
+          "vi": "bão",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v050",
+          "ja": "変える",
+          "reading": "かえる",
+          "han_viet": "BIẾN",
+          "vi": "thay đổi (giờ, kế hoạch)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nói chỉ đổi giờ hoặc đổi nơi gặp.",
+          "evidence": [
+            {
+              "utterance_id": "804bd20e-8f86-5773-8348-7ce1fb28c851-u02",
+              "surface": "変えました"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v051",
+          "ja": "中止する",
+          "reading": "ちゅうしする",
+          "han_viet": "TRUNG CHỈ",
+          "vi": "hủy hoạt động đã định",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần phân biệt hủy hẳn với đổi giờ vì thời tiết."
+        },
+        {
+          "id": "S-074-v052",
+          "ja": "延期する",
+          "reading": "えんきする",
+          "han_viet": "DIÊN KỲ",
+          "vi": "hoãn sang thời điểm sau",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi lễ hội hoãn đến ngày nào khi trời xấu."
+        },
+        {
+          "id": "S-074-v053",
+          "ja": "屋内",
+          "reading": "おくない",
+          "han_viet": "ỐC NỘI",
+          "vi": "trong nhà, trong công trình có mái",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi phương án hoạt động trong nhà nếu trời mưa."
+        },
+        {
+          "id": "S-074-v054",
+          "ja": "屋外",
+          "reading": "おくがい",
+          "han_viet": "ỐC NGOẠI",
+          "vi": "ngoài trời",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hiểu loại hoạt động dễ bị ảnh hưởng bởi mưa và nắng."
+        },
+        {
+          "id": "S-074-v055",
+          "ja": "傘",
+          "reading": "かさ",
+          "han_viet": "TẢN",
+          "vi": "ô, dù",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-074-v056",
+          "ja": "上着",
+          "reading": "うわぎ",
+          "han_viet": "THƯỢNG TRƯỚC",
+          "vi": "áo khoác, áo mặc ngoài",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6c009722-9f11-5e13-ac90-13392e681278-u03",
+              "surface": "上着"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v057",
+          "ja": "薄い",
+          "reading": "うすい",
+          "han_viet": "BẠC",
+          "vi": "mỏng",
+          "pos": "i_adj",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nói loại áo khoác muốn mang theo cho chiều tối mát hơn.",
+          "evidence": [
+            {
+              "utterance_id": "645b15aa-c1ce-5b42-9d6a-abec6f82d6ab-u02",
+              "surface": "薄い"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v058",
+          "ja": "厚い",
+          "reading": "あつい",
+          "han_viet": "HẬU",
+          "vi": "dày",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6c009722-9f11-5e13-ac90-13392e681278-u03",
+              "surface": "厚い"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v059",
+          "ja": "～ごろ",
+          "reading": "ごろ",
+          "han_viet": "",
+          "vi": "khoảng (mốc thời gian)",
+          "pos": "other",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3beb736a-9fb6-50f9-b39f-586af3274690-u01",
+              "surface": "四時ごろ"
+            }
+          ]
+        },
+        {
+          "id": "S-074-v060",
+          "ja": "連絡する",
+          "reading": "れんらくする",
+          "han_viet": "LIÊN LẠC",
+          "vi": "liên lạc, báo lại",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9c352040-b42f-5267-8ae8-45115974ce52-u04",
+              "surface": "連絡しよう"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "stage_uid": "1d1fc916-15b1-5b9f-b7c0-304d53087e02",
+  "stage_code": "S-041",
+  "admin_sources": {
+    "post-recipient": {
+      "kind": "web",
+      "title": "ゆうパックスマホ割 受取画面｜日本郵便",
+      "url": "https://smawari.post.japanpost.jp/HTML_FAQ/howto.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác minh cách gọi người gửi 差出人 và người nhận 受取人 trong giao kiện."
+    },
+    "yamato-invoice": {
+      "kind": "web",
+      "title": "送り状（伝票）の準備｜ヤマト運輸",
+      "url": "https://www.kuronekoyamato.co.jp/ytc/customer/send/preparations/invoice/",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác minh tên 送り状 và thông tin về người gửi, nơi nhận trên phiếu."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Việc xong/chưa xong và mốc báo lại",
+      "v10_topic": "Việc xong/chưa xong và mốc báo lại",
+      "terms": [
+        {
+          "id": "S-041-v001",
+          "ja": "報告する",
+          "reading": "ほうこくする",
+          "han_viet": "BÁO CÁO",
+          "vi": "báo cáo",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0659e411-1f4b-5bc5-9532-ac06a81c7465-u03",
+              "surface": "報告します"
+            }
+          ],
+          "level_note_vi": "Động từ trực tiếp để hỏi khi nào báo và báo tiến độ."
+        },
+        {
+          "id": "S-041-v002",
+          "ja": "進み具合",
+          "reading": "すすみぐあい",
+          "han_viet": "TIẾN CỤ HỢP",
+          "vi": "tiến độ, tình hình tiến triển",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0659e411-1f4b-5bc5-9532-ac06a81c7465-u01",
+              "surface": "進み具合"
+            }
+          ],
+          "level_note_vi": "Cần báo phần việc đã tiến đến đâu."
+        },
+        {
+          "id": "S-041-v003",
+          "ja": "受け取る",
+          "reading": "うけとる",
+          "han_viet": "THỤ THỦ",
+          "vi": "nhận, lấy",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72a43e58-76dd-5bb0-8e81-54efb5157ac0-u01",
+              "surface": "受け取りました"
+            }
+          ],
+          "level_note_vi": "Cần xác nhận mình đã nhận vật liệu đầu vào."
+        },
+        {
+          "id": "S-041-v004",
+          "ja": "封筒",
+          "reading": "ふうとう",
+          "han_viet": "PHONG ĐỒNG",
+          "vi": "phong bì",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72a43e58-76dd-5bb0-8e81-54efb5157ac0-u01",
+              "surface": "封筒"
+            }
+          ],
+          "level_note_vi": "Vật liệu chính trong tình huống chuẩn bị bộ tài liệu họp."
+        },
+        {
+          "id": "S-041-v005",
+          "ja": "袋",
+          "reading": "ふくろ",
+          "han_viet": "ĐẠI",
+          "vi": "túi, bao",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72a43e58-76dd-5bb0-8e81-54efb5157ac0-u01",
+              "surface": "袋"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v006",
+          "ja": "シール",
+          "reading": "シール",
+          "han_viet": "",
+          "vi": "nhãn dán",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2640ec3f-5a81-5613-a7ac-537c97c244db-u01",
+              "surface": "シール"
+            }
+          ],
+          "level_note_vi": "Cần gọi tên vật tư còn thiếu trong công việc."
+        },
+        {
+          "id": "S-041-v007",
+          "ja": "数",
+          "reading": "かず",
+          "han_viet": "SỐ",
+          "vi": "số lượng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72a43e58-76dd-5bb0-8e81-54efb5157ac0-u03",
+              "surface": "数を"
+            }
+          ],
+          "level_note_vi": "Cần nhắc số lượng đã xong, đã nhận và còn thiếu."
+        },
+        {
+          "id": "S-041-v008",
+          "ja": "〜セット",
+          "reading": "セット",
+          "han_viet": "",
+          "vi": "bộ (đơn vị đếm)",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4d3aa5a1-3a0b-57d6-ac8a-cca3f152ddd0-u01",
+              "surface": "セットできました"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v009",
+          "ja": "〜枚",
+          "reading": "まい",
+          "han_viet": "MAI",
+          "vi": "đơn vị đếm tờ, miếng mỏng",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2640ec3f-5a81-5613-a7ac-537c97c244db-u01",
+              "surface": "枚しか"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v010",
+          "ja": "始める",
+          "reading": "はじめる",
+          "han_viet": "THỦY",
+          "vi": "bắt đầu",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-041-v011",
+          "ja": "完成する",
+          "reading": "かんせいする",
+          "han_viet": "HOÀN THÀNH",
+          "vi": "hoàn thành, làm xong",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2640ec3f-5a81-5613-a7ac-537c97c244db-u01",
+              "surface": "完成できません"
+            }
+          ],
+          "level_note_vi": "Cần báo rõ phần việc nào chưa thể hoàn tất."
+        },
+        {
+          "id": "S-041-v012",
+          "ja": "残り",
+          "reading": "のこり",
+          "han_viet": "TÀN",
+          "vi": "phần còn lại",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4d3aa5a1-3a0b-57d6-ac8a-cca3f152ddd0-u02",
+              "surface": "残り"
+            }
+          ],
+          "level_note_vi": "Cần nêu số bộ hoặc việc còn lại chưa làm."
+        },
+        {
+          "id": "S-041-v013",
+          "ja": "確かめる",
+          "reading": "たしかめる",
+          "han_viet": "XÁC",
+          "vi": "kiểm tra cho chắc",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Dùng khi kiểm đủ nguyên liệu và số lượng trước khi báo."
+        },
+        {
+          "id": "S-041-v014",
+          "ja": "今のところ",
+          "reading": "いまのところ",
+          "han_viet": "KIM",
+          "vi": "tính đến lúc này, hiện giờ",
+          "pos": "adverb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4d3aa5a1-3a0b-57d6-ac8a-cca3f152ddd0-u03",
+              "surface": "今のところ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Đổi phòng, đổi giờ, nhắc số chính xác",
+      "v10_topic": "Đổi phòng, đổi giờ, nhắc số chính xác",
+      "terms": [
+        {
+          "id": "S-041-v015",
+          "ja": "変更する",
+          "reading": "へんこうする",
+          "han_viet": "BIẾN CANH",
+          "vi": "đổi, thay đổi (lịch hoặc địa điểm)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-041-SH-001",
+              "surface": "変更して"
+            }
+          ],
+          "level_note_vi": "Cần báo đổi phòng họp hoặc mốc thời gian và phân biệt cả hai."
+        },
+        {
+          "id": "S-041-v016",
+          "ja": "会議室",
+          "reading": "かいぎしつ",
+          "han_viet": "HỘI NGHỊ THẤT",
+          "vi": "phòng họp",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-041-v017",
+          "ja": "会議",
+          "reading": "かいぎ",
+          "han_viet": "HỘI NGHỊ",
+          "vi": "cuộc họp",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72a43e58-76dd-5bb0-8e81-54efb5157ac0-u01",
+              "surface": "会議"
+            }
+          ],
+          "level_note_vi": "Cần gọi tên cuộc họp có thay đổi để báo đúng người."
+        },
+        {
+          "id": "S-041-v018",
+          "ja": "打ち合わせ",
+          "reading": "うちあわせ",
+          "han_viet": "ĐẢ HỢP",
+          "vi": "buổi trao đổi, bàn trước công việc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-041-SH-001",
+              "surface": "打ち合わせ"
+            }
+          ],
+          "level_note_vi": "Dùng khi truyền lời cấp trên về lịch trao đổi công việc."
+        },
+        {
+          "id": "S-041-v019",
+          "ja": "〜階",
+          "reading": "かい",
+          "han_viet": "GIAI",
+          "vi": "tầng (đơn vị đếm tầng)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f57923dc-c07a-5f33-a387-1562f9474b4d-u01",
+              "surface": "三階"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v020",
+          "ja": "部屋番号",
+          "reading": "へやばんごう",
+          "han_viet": "BỘ ỐC PHIÊN HIỆU",
+          "vi": "số phòng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Dùng để hỏi lại khi tầng và số phòng bị nghe nhầm."
+        },
+        {
+          "id": "S-041-v021",
+          "ja": "同じ",
+          "reading": "おなじ",
+          "han_viet": "ĐỒNG",
+          "vi": "cùng, giống nhau",
+          "pos": "na_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f57923dc-c07a-5f33-a387-1562f9474b4d-u02",
+              "surface": "同じ"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v022",
+          "ja": "予定",
+          "reading": "よてい",
+          "han_viet": "DỰ ĐỊNH",
+          "vi": "lịch, dự kiến",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d8213e39-f937-564e-80e7-866c5a9b70b0-u01",
+              "surface": "予定"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v023",
+          "ja": "到着",
+          "reading": "とうちゃく",
+          "han_viet": "ĐÁO TRƯỚC",
+          "vi": "việc đến nơi",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d8213e39-f937-564e-80e7-866c5a9b70b0-u01",
+              "surface": "到着予定"
+            }
+          ],
+          "level_note_vi": "Cần báo giờ hàng hoặc người giao dự kiến tới."
+        },
+        {
+          "id": "S-041-v024",
+          "ja": "届く",
+          "reading": "とどく",
+          "han_viet": "GIỚI",
+          "vi": "đến nơi, được giao tới",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2295eb6e-d962-5cbe-9796-9e18bdba348f-u01",
+              "surface": "届きました"
+            }
+          ],
+          "level_note_vi": "Cần báo kiện hàng đã thực sự tới nơi."
+        },
+        {
+          "id": "S-041-v025",
+          "ja": "伝える",
+          "reading": "つたえる",
+          "han_viet": "TRUYỀN",
+          "vi": "truyền đạt, báo cho người khác",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f57923dc-c07a-5f33-a387-1562f9474b4d-u04",
+              "surface": "伝えます"
+            }
+          ],
+          "level_note_vi": "Dùng khi cần báo lịch mới cho các đồng nghiệp khác."
+        },
+        {
+          "id": "S-041-v026",
+          "ja": "受付",
+          "reading": "うけつけ",
+          "han_viet": "THỤ PHÓ",
+          "vi": "quầy tiếp tân, khâu tiếp nhận",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2295eb6e-d962-5cbe-9796-9e18bdba348f-u01",
+              "surface": "受付"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v027",
+          "ja": "確認する",
+          "reading": "かくにんする",
+          "han_viet": "XÁC NHẬN",
+          "vi": "kiểm tra, xác nhận lại",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2ae60f07-6614-53b3-af4f-05e88d7b6e0f-u03",
+              "surface": "確認しました"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v028",
+          "ja": "確定",
+          "reading": "かくてい",
+          "han_viet": "XÁC ĐỊNH",
+          "vi": "việc đã được chốt chính thức",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d8213e39-f937-564e-80e7-866c5a9b70b0-u02",
+              "surface": "確定"
+            }
+          ],
+          "level_note_vi": "Cần phân biệt giờ đã chốt với giờ mới chỉ dự kiến."
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Báo phát sinh và xin quyết định tiếp",
+      "v10_topic": "Báo phát sinh và xin quyết định tiếp",
+      "terms": [
+        {
+          "id": "S-041-v029",
+          "ja": "問題",
+          "reading": "もんだい",
+          "han_viet": "VẤN ĐỀ",
+          "vi": "vấn đề, trục trặc",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-041-SH-002",
+              "surface": "問題"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v030",
+          "ja": "困る",
+          "reading": "こまる",
+          "han_viet": "KHỐN",
+          "vi": "gặp khó, không biết xử lý thế nào",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4d3aa5a1-3a0b-57d6-ac8a-cca3f152ddd0-u02",
+              "surface": "困っている"
+            }
+          ]
+        },
+        {
+          "id": "S-041-v031",
+          "ja": "足りる",
+          "reading": "たりる",
+          "han_viet": "TÚC",
+          "vi": "đủ (thường dùng phủ định khi báo thiếu)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói rõ nguyên liệu hoặc số nhãn dán còn thiếu."
+        },
+        {
+          "id": "S-041-v032",
+          "ja": "追加",
+          "reading": "ついか",
+          "han_viet": "TRUY GIA",
+          "vi": "phần bổ sung, việc bổ sung",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2640ec3f-5a81-5613-a7ac-537c97c244db-u02",
+              "surface": "追加"
+            }
+          ],
+          "level_note_vi": "Cần hỏi có thể bổ sung vật tư thiếu để kịp mốc hay không."
+        },
+        {
+          "id": "S-041-v033",
+          "ja": "必要",
+          "reading": "ひつよう",
+          "han_viet": "TẤT YẾU",
+          "vi": "cần, cần thiết",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2640ec3f-5a81-5613-a7ac-537c97c244db-u02",
+              "surface": "必要"
+            }
+          ],
+          "level_note_vi": "Dùng để chỉ rõ vật liệu hoặc quyết định đang cần."
+        },
+        {
+          "id": "S-041-v034",
+          "ja": "在庫",
+          "reading": "ざいこ",
+          "han_viet": "TẠI KHỐ",
+          "vi": "hàng, vật tư còn trong kho",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f000e016-b541-50d6-ba14-aa1dd6e2be67-u01",
+              "surface": "在庫"
+            }
+          ],
+          "level_note_vi": "Cần báo việc kiểm số nhãn còn trong kho chưa có người nhận."
+        },
+        {
+          "id": "S-041-v035",
+          "ja": "担当する",
+          "reading": "たんとうする",
+          "han_viet": "ĐẢM ĐƯƠNG",
+          "vi": "phụ trách",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8a2fe17d-e910-55f1-8d11-2c81c9601a60-u01",
+              "surface": "担当しました"
+            }
+          ],
+          "level_note_vi": "Cần xác nhận ai chịu trách nhiệm phần phát sinh."
+        },
+        {
+          "id": "S-041-v036",
+          "ja": "相談する",
+          "reading": "そうだんする",
+          "han_viet": "TƯƠNG ĐÀM",
+          "vi": "trao đổi, hỏi ý kiến",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f000e016-b541-50d6-ba14-aa1dd6e2be67-u03",
+              "surface": "相談してください"
+            }
+          ],
+          "level_note_vi": "Cần hỏi người phụ trách trước khi xử lý việc ngoài phần mình nhận."
+        },
+        {
+          "id": "S-041-v037",
+          "ja": "受取人",
+          "reading": "うけとりにん",
+          "han_viet": "THỤ THỦ NHÂN",
+          "vi": "người nhận thư hoặc kiện",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7cc6ea44-b6b8-5eab-8124-b88293f0797f-u01",
+              "surface": "受取人"
+            }
+          ],
+          "level_note_vi": "Cần biết thuật ngữ để báo kiện không ghi tên người nhận.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "post-recipient"
+          ]
+        },
+        {
+          "id": "S-041-v038",
+          "ja": "差出人",
+          "reading": "さしだしにん",
+          "han_viet": "SAI XUẤT NHÂN",
+          "vi": "người gửi thư hoặc kiện",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7cc6ea44-b6b8-5eab-8124-b88293f0797f-u02",
+              "surface": "差出人"
+            }
+          ],
+          "level_note_vi": "Cần nêu tên người gửi để quầy xác minh kiện chưa rõ người nhận.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "post-recipient"
+          ]
+        },
+        {
+          "id": "S-041-v039",
+          "ja": "送り状",
+          "reading": "おくりじょう",
+          "han_viet": "TỐNG TRẠNG",
+          "vi": "phiếu gửi hàng, vận đơn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7cc6ea44-b6b8-5eab-8124-b88293f0797f-u03",
+              "surface": "送り状"
+            }
+          ],
+          "level_note_vi": "Cần chỉ rõ chỗ có thông tin người gửi trên kiện.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-invoice"
+          ]
+        },
+        {
+          "id": "S-041-v040",
+          "ja": "中身",
+          "reading": "なかみ",
+          "han_viet": "TRUNG THÂN",
+          "vi": "đồ bên trong, phần bên trong",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "72a43e58-76dd-5bb0-8e81-54efb5157ac0-u02",
+              "surface": "中身"
+            }
+          ],
+          "level_note_vi": "Cần nêu phần đang kiểm khi chuẩn bị bộ tài liệu hoặc nhận kiện."
+        },
+        {
+          "id": "S-041-v041",
+          "ja": "決まる",
+          "reading": "きまる",
+          "han_viet": "QUYẾT",
+          "vi": "được quyết định, được chốt",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f000e016-b541-50d6-ba14-aa1dd6e2be67-u03",
+              "surface": "決まっていません"
+            }
+          ],
+          "level_note_vi": "Cần báo công việc đã có phương án hoặc đã có người nhận hay chưa."
+        },
+        {
+          "id": "S-041-v042",
+          "ja": "待つ",
+          "reading": "まつ",
+          "han_viet": "ĐÃI",
+          "vi": "chờ",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b0c9d727-af95-5ae6-a9a1-b5c2627350c0-u01",
+              "surface": "待っています"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

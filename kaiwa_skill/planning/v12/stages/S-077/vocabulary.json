@@ -1,0 +1,998 @@
+{
+  "stage_uid": "86aa58d7-9cda-5807-a6eb-337958ed7369",
+  "stage_code": "S-077",
+  "admin_sources": {
+    "haneda-info": {
+      "kind": "web",
+      "title": "案内カウンター | 羽田空港旅客ターミナル",
+      "url": "https://tokyo-haneda.com/service/facilities/info_center.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên quầy, sảnh đến, sảnh đi, nhà ga và thông báo tại sân bay."
+    },
+    "hv-ni": {
+      "kind": "web",
+      "title": "Tra chữ 荷 | Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E8%8D%B7",
+      "accessed": "2026-11-19",
+      "use_vi": "Phân biệt âm HẠ nghĩa mang vác với HÀ nghĩa sen hoặc bạc hà."
+    },
+    "haneda-taxi": {
+      "kind": "web",
+      "title": "タクシー | 羽田空港旅客ターミナル",
+      "url": "https://tokyo-haneda.com/text/access/taxi/index.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi điểm đón taxi trên trang hướng dẫn đi tiếp từ sân bay."
+    },
+    "haneda-wheel": {
+      "kind": "web",
+      "title": "車いす貸し出し（空港内使用） | 羽田空港旅客ターミナル",
+      "url": "https://tokyo-haneda.com/service/facilities/wheelchair_rentals.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên xe lăn và dịch vụ cho mượn xe lăn tại quầy."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Đón ở cửa ra, tầng và điểm dễ nhận",
+      "v10_topic": "Cửa ra, tầng, mốc và giờ đón",
+      "terms": [
+        {
+          "id": "S-077-v001",
+          "ja": "迎える",
+          "reading": "むかえる",
+          "han_viet": "NGHÊNH",
+          "vi": "đón, ra đón",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "level_note_vi": "Từ cốt lõi khi nói mình tới đón người nhà.",
+          "evidence": [
+            {
+              "utterance_id": "81c9e9e5-81b6-5bb8-a2ef-652837c82876-u01",
+              "surface": "迎えに来ました"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v002",
+          "ja": "親戚",
+          "reading": "しんせき",
+          "han_viet": "THÂN THÍCH",
+          "vi": "họ hàng, người thân",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói người mình đang đón là ai khi hỏi nhân viên."
+        },
+        {
+          "id": "S-077-v003",
+          "ja": "おじ",
+          "reading": "おじ",
+          "han_viet": "",
+          "vi": "chú, bác trai, cậu",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81c9e9e5-81b6-5bb8-a2ef-652837c82876-u01",
+              "surface": "おじを迎え"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v057",
+          "ja": "おば",
+          "reading": "おば",
+          "han_viet": "",
+          "vi": "cô, dì, bác gái",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v058",
+          "ja": "両親",
+          "reading": "りょうしん",
+          "han_viet": "LƯỠNG THÂN",
+          "vi": "bố mẹ",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v059",
+          "ja": "父",
+          "reading": "ちち",
+          "han_viet": "PHỤ",
+          "vi": "bố của mình",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v060",
+          "ja": "母",
+          "reading": "はは",
+          "han_viet": "MẪU",
+          "vi": "mẹ của mình",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v061",
+          "ja": "夫",
+          "reading": "おっと",
+          "han_viet": "PHU",
+          "vi": "chồng của mình",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v062",
+          "ja": "妻",
+          "reading": "つま",
+          "han_viet": "THÊ",
+          "vi": "vợ của mình",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v004",
+          "ja": "空港",
+          "reading": "くうこう",
+          "han_viet": "KHÔNG CẢNG",
+          "vi": "sân bay",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c06a13aa-630d-5965-b35b-301faffbe830-u01",
+              "surface": "空港"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v005",
+          "ja": "ターミナル",
+          "reading": "ターミナル",
+          "han_viet": "",
+          "vi": "nhà ga sân bay",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần hỏi và nhắc lại đúng nhà ga trước khi tới đón.",
+          "source_refs": [
+            "haneda-info"
+          ],
+          "source_domain": "procedural",
+          "evidence": [
+            {
+              "utterance_id": "303abbcb-4928-5297-89af-9bfcf52b618c-u01",
+              "surface": "ターミナル"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v006",
+          "ja": "到着ロビー",
+          "reading": "とうちゃくロビー",
+          "han_viet": "ĐÁO TRƯỚC",
+          "vi": "sảnh đến",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Mốc trên biển dễ tìm để tổ chức đón.",
+          "source_refs": [
+            "haneda-info"
+          ],
+          "source_domain": "procedural",
+          "evidence": [
+            {
+              "utterance_id": "303abbcb-4928-5297-89af-9bfcf52b618c-u03",
+              "surface": "到着ロビー"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v007",
+          "ja": "出発ロビー",
+          "reading": "しゅっぱつロビー",
+          "han_viet": "XUẤT PHÁT",
+          "vi": "sảnh đi",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cần phân biệt với sảnh đến nếu lên nhầm tầng.",
+          "source_refs": [
+            "haneda-info"
+          ],
+          "source_domain": "procedural",
+          "evidence": [
+            {
+              "utterance_id": "13d8f648-26c4-5f19-b676-a156a3d86510-u01",
+              "surface": "出発ロビー"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v008",
+          "ja": "案内カウンター",
+          "reading": "あんないカウンター",
+          "han_viet": "ÁN NỘI",
+          "vi": "quầy hướng dẫn, quầy thông tin",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Nhãn cần nhận ra để chọn điểm gặp hoặc hỏi hỗ trợ.",
+          "source_refs": [
+            "haneda-info"
+          ],
+          "source_domain": "procedural",
+          "evidence": [
+            {
+              "utterance_id": "303abbcb-4928-5297-89af-9bfcf52b618c-u03",
+              "surface": "案内カウンター"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v009",
+          "ja": "出口",
+          "reading": "でぐち",
+          "han_viet": "XUẤT KHẨU",
+          "vi": "lối ra",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v010",
+          "ja": "西口",
+          "reading": "にしぐち",
+          "han_viet": "TÂY KHẨU",
+          "vi": "cửa phía tây",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ad0a2f72-1537-5b69-b1b0-d8fe9552c329-u02",
+              "surface": "西口"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v011",
+          "ja": "～階",
+          "reading": "かい",
+          "han_viet": "GIAI",
+          "vi": "tầng (đơn vị đếm tầng)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "303abbcb-4928-5297-89af-9bfcf52b618c-u03",
+              "surface": "二階"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v012",
+          "ja": "着く",
+          "reading": "つく",
+          "han_viet": "TRƯỚC",
+          "vi": "đến nơi",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "303abbcb-4928-5297-89af-9bfcf52b618c-u01",
+              "surface": "着くんだね"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v013",
+          "ja": "何時",
+          "reading": "なんじ",
+          "han_viet": "HÀ THỜI",
+          "vi": "mấy giờ",
+          "pos": "other",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v014",
+          "ja": "時計",
+          "reading": "とけい",
+          "han_viet": "THỜI KẾ",
+          "vi": "đồng hồ",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b58ee982-4934-5613-a856-f9f396be3bdb-u01",
+              "surface": "時計"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v015",
+          "ja": "柱",
+          "reading": "はしら",
+          "han_viet": "TRỤ",
+          "vi": "cột",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v016",
+          "ja": "目印",
+          "reading": "めじるし",
+          "han_viet": "MỤC ẤN",
+          "vi": "mốc dễ nhận ra",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần mô tả một mốc cụ thể khi không tìm thấy nhau."
+        },
+        {
+          "id": "S-077-v017",
+          "ja": "チケット",
+          "reading": "チケット",
+          "han_viet": "",
+          "vi": "vé",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a8783bb6-e5a4-5c14-952a-e27f9d4f3d37-u02",
+              "surface": "チケット"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v018",
+          "ja": "待ち合わせ",
+          "reading": "まちあわせ",
+          "han_viet": "ĐÃI HỢP",
+          "vi": "việc hẹn gặp nhau ở một chỗ",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v019",
+          "ja": "午後",
+          "reading": "ごご",
+          "han_viet": "NGỌ HẬU",
+          "vi": "buổi chiều, sau trưa",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "303abbcb-4928-5297-89af-9bfcf52b618c-u01",
+              "surface": "午後"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Chỗ ngồi nghỉ, hành lý và phương tiện đi tiếp",
+      "v10_topic": "Chỗ nghỉ, hành lý, phương tiện đi tiếp",
+      "terms": [
+        {
+          "id": "S-077-v020",
+          "ja": "椅子",
+          "reading": "いす",
+          "han_viet": "Ỷ TỬ",
+          "vi": "ghế",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d834da18-3b4e-5310-b1a2-88938bb86b84-u02",
+              "surface": "椅子"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v021",
+          "ja": "座る",
+          "reading": "すわる",
+          "han_viet": "TỌA",
+          "vi": "ngồi",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d834da18-3b4e-5310-b1a2-88938bb86b84-u01",
+              "surface": "座れる"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v022",
+          "ja": "ゆっくり",
+          "reading": "ゆっくり",
+          "han_viet": "",
+          "vi": "chậm rãi, thong thả",
+          "pos": "adverb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c664306b-a377-5787-92dd-34e54b1f959b-u01",
+              "surface": "ゆっくり"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v023",
+          "ja": "歩く",
+          "reading": "あるく",
+          "han_viet": "BỘ",
+          "vi": "đi bộ",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d834da18-3b4e-5310-b1a2-88938bb86b84-u01",
+              "surface": "歩くのが"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v024",
+          "ja": "荷物",
+          "reading": "にもつ",
+          "han_viet": "HẠ VẬT",
+          "vi": "hành lý, đồ mang theo",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "note_vi": "Chọn âm HẠ của 荷 theo nghĩa đồ mang vác.",
+          "source_refs": [
+            "hv-ni"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "81c9e9e5-81b6-5bb8-a2ef-652837c82876-u03",
+              "surface": "荷物"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v025",
+          "ja": "スーツケース",
+          "reading": "スーツケース",
+          "han_viet": "",
+          "vi": "vali",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v026",
+          "ja": "運ぶ",
+          "reading": "はこぶ",
+          "han_viet": "VẬN",
+          "vi": "mang, chuyển đồ",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi có thể giúp chuyển hành lý đến nơi nghỉ hay lên xe."
+        },
+        {
+          "id": "S-077-v027",
+          "ja": "荷物カート",
+          "reading": "にもつカート",
+          "han_viet": "HẠ VẬT",
+          "vi": "xe đẩy hành lý",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "note_vi": "Dùng HẠ cho 荷 nghĩa đồ mang vác.",
+          "source_refs": [
+            "hv-ni"
+          ]
+        },
+        {
+          "id": "S-077-v028",
+          "ja": "タクシー乗り場",
+          "reading": "タクシーのりば",
+          "han_viet": "THỪA TRƯỜNG",
+          "vi": "điểm đón taxi",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cần hỏi hoặc chỉ địa điểm đi tiếp sau khi đón được người nhà.",
+          "source_refs": [
+            "haneda-taxi"
+          ],
+          "source_domain": "procedural",
+          "evidence": [
+            {
+              "utterance_id": "d834da18-3b4e-5310-b1a2-88938bb86b84-u03",
+              "surface": "タクシー乗り場"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v029",
+          "ja": "電車",
+          "reading": "でんしゃ",
+          "han_viet": "ĐIỆN XA",
+          "vi": "tàu điện",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d208f053-cb43-5f18-a709-a6aece9bd7db-u02",
+              "surface": "電車"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v030",
+          "ja": "エレベーター",
+          "reading": "エレベーター",
+          "han_viet": "",
+          "vi": "thang máy",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "13d8f648-26c4-5f19-b676-a156a3d86510-u03",
+              "surface": "エレベーター"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v031",
+          "ja": "車いす",
+          "reading": "くるまいす",
+          "han_viet": "XA",
+          "vi": "xe lăn",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "source_refs": [
+            "haneda-wheel"
+          ],
+          "source_domain": "procedural",
+          "evidence": [
+            {
+              "utterance_id": "4ec6eb44-2e79-5fe1-b17c-d4369f0aaa89-u01",
+              "surface": "車いす"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v032",
+          "ja": "貸し出す",
+          "reading": "かしだす",
+          "han_viet": "THẢI XUẤT",
+          "vi": "cho mượn, cho thuê thiết bị",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "level_note_vi": "Cần hỏi quầy có cho mượn xe lăn không và còn xe không.",
+          "source_refs": [
+            "haneda-wheel"
+          ],
+          "source_domain": "procedural",
+          "evidence": [
+            {
+              "utterance_id": "4ec6eb44-2e79-5fe1-b17c-d4369f0aaa89-u02",
+              "surface": "貸し出しています"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v033",
+          "ja": "借りる",
+          "reading": "かりる",
+          "han_viet": "TÁ",
+          "vi": "mượn",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4ec6eb44-2e79-5fe1-b17c-d4369f0aaa89-u01",
+              "surface": "借りられますか"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v034",
+          "ja": "返す",
+          "reading": "かえす",
+          "han_viet": "PHẢN",
+          "vi": "trả lại",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần xác nhận trả thiết bị ở đâu sau khi dùng.",
+          "evidence": [
+            {
+              "utterance_id": "4ec6eb44-2e79-5fe1-b17c-d4369f0aaa89-u03",
+              "surface": "返せば"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v035",
+          "ja": "空く",
+          "reading": "あく",
+          "han_viet": "KHÔNG",
+          "vi": "trống, còn để dùng",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần hỏi còn xe lăn hoặc còn chỗ ngồi không.",
+          "evidence": [
+            {
+              "utterance_id": "4af0b47a-45bd-5093-9063-ef4a05089005-u03",
+              "surface": "空きましたら"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v036",
+          "ja": "手伝う",
+          "reading": "てつだう",
+          "han_viet": "THỦ TRUYỀN",
+          "vi": "giúp, hỗ trợ",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v037",
+          "ja": "～分",
+          "reading": "ふん",
+          "han_viet": "PHÂN",
+          "vi": "phút (đơn vị thời lượng)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6c4a6667-4a80-5201-ae3e-2394501a0d14-u04",
+              "surface": "二十分"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Đổi điểm đón, rút ngắn lịch và báo lại",
+      "v10_topic": "Đổi điểm gặp và rút ngắn lịch khi mệt",
+      "terms": [
+        {
+          "id": "S-077-v038",
+          "ja": "連絡する",
+          "reading": "れんらくする",
+          "han_viet": "LIÊN LẠC",
+          "vi": "liên hệ, báo lại",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c06a13aa-630d-5965-b35b-301faffbe830-u01",
+              "surface": "連絡できない"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v039",
+          "ja": "電話する",
+          "reading": "でんわする",
+          "han_viet": "ĐIỆN THOẠI",
+          "vi": "gọi điện",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ad0a2f72-1537-5b69-b1b0-d8fe9552c329-u05",
+              "surface": "電話します"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v040",
+          "ja": "番号",
+          "reading": "ばんごう",
+          "han_viet": "PHIÊN HIỆU",
+          "vi": "số (điện thoại, dấu đánh số)",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ad0a2f72-1537-5b69-b1b0-d8fe9552c329-u04",
+              "surface": "番号"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v041",
+          "ja": "スマホ",
+          "reading": "スマホ",
+          "han_viet": "",
+          "vi": "điện thoại thông minh",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c06a13aa-630d-5965-b35b-301faffbe830-u01",
+              "surface": "スマホ"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v042",
+          "ja": "待つ",
+          "reading": "まつ",
+          "han_viet": "ĐÃI",
+          "vi": "chờ đợi",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c06a13aa-630d-5965-b35b-301faffbe830-u04",
+              "surface": "待ってて"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v043",
+          "ja": "動く",
+          "reading": "うごく",
+          "han_viet": "ĐỘNG",
+          "vi": "di chuyển",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nhắc người thân đợi tại mốc đã thống nhất nếu chưa tìm thấy nhau.",
+          "evidence": [
+            {
+              "utterance_id": "b58ee982-4934-5613-a856-f9f396be3bdb-u04",
+              "surface": "動かないで"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v044",
+          "ja": "聞こえる",
+          "reading": "きこえる",
+          "han_viet": "VĂN",
+          "vi": "nghe thấy",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c664306b-a377-5787-92dd-34e54b1f959b-u01",
+              "surface": "聞こえませんでした"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v045",
+          "ja": "放送",
+          "reading": "ほうそう",
+          "han_viet": "PHÓNG TỐNG",
+          "vi": "thông báo qua loa",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nói chưa nghe rõ loa và nhờ nhân viên nhắc lại.",
+          "source_refs": [
+            "haneda-info"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "c664306b-a377-5787-92dd-34e54b1f959b-u01",
+              "surface": "放送"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v046",
+          "ja": "疲れる",
+          "reading": "つかれる",
+          "han_viet": "BÌ",
+          "vi": "mệt",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "28b95046-9ef7-51a6-88de-e7652864c073-u01",
+              "surface": "疲れてる"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v047",
+          "ja": "休む",
+          "reading": "やすむ",
+          "han_viet": "HƯU",
+          "vi": "nghỉ, nghỉ chân",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d834da18-3b4e-5310-b1a2-88938bb86b84-u03",
+              "surface": "休んでから"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v048",
+          "ja": "寄る",
+          "reading": "よる",
+          "han_viet": "KÝ",
+          "vi": "ghé qua",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần đề nghị ghé nhanh một điểm thay vì đi cả buổi.",
+          "evidence": [
+            {
+              "utterance_id": "6c4a6667-4a80-5201-ae3e-2394501a0d14-u01",
+              "surface": "寄りたい"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v049",
+          "ja": "食事",
+          "reading": "しょくじ",
+          "han_viet": "THỰC SỰ",
+          "vi": "bữa ăn",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "28b95046-9ef7-51a6-88de-e7652864c073-u02",
+              "surface": "食事"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v050",
+          "ja": "観光する",
+          "reading": "かんこうする",
+          "han_viet": "QUAN QUANG",
+          "vi": "tham quan",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v051",
+          "ja": "短い",
+          "reading": "みじかい",
+          "han_viet": "ĐOẢN",
+          "vi": "ngắn",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-077-v052",
+          "ja": "遅れる",
+          "reading": "おくれる",
+          "han_viet": "TRÌ",
+          "vi": "đến muộn, bị chậm",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d208f053-cb43-5f18-a709-a6aece9bd7db-u02",
+              "surface": "遅れています"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v053",
+          "ja": "変更する",
+          "reading": "へんこうする",
+          "han_viet": "BIẾN CANH",
+          "vi": "đổi, thay đổi cuộc hẹn",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần xin đổi giờ xe đón và hiểu thông báo đã cập nhật.",
+          "evidence": [
+            {
+              "utterance_id": "d208f053-cb43-5f18-a709-a6aece9bd7db-u05",
+              "surface": "変更しました"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v054",
+          "ja": "予約する",
+          "reading": "よやくする",
+          "han_viet": "DỰ ƯỚC",
+          "vi": "đặt trước",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d208f053-cb43-5f18-a709-a6aece9bd7db-u01",
+              "surface": "予約した"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v055",
+          "ja": "運転手",
+          "reading": "うんてんしゅ",
+          "han_viet": "VẬN CHUYỂN THỦ",
+          "vi": "tài xế",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ad0a2f72-1537-5b69-b1b0-d8fe9552c329-u04",
+              "surface": "運転手"
+            }
+          ]
+        },
+        {
+          "id": "S-077-v056",
+          "ja": "伝える",
+          "reading": "つたえる",
+          "han_viet": "TRUYỀN",
+          "vi": "chuyển lời, báo cho",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần xác nhận ai sẽ chuyển thông tin mới cho tài xế.",
+          "evidence": [
+            {
+              "utterance_id": "ad0a2f72-1537-5b69-b1b0-d8fe9552c329-u04",
+              "surface": "伝えます"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

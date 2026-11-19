@@ -1,0 +1,784 @@
+{
+  "stage_uid": "d8f22d6d-b5ac-57e4-b8b9-2e1ccb5129bd",
+  "stage_code": "T-058",
+  "admin_sources": {
+    "moj-marriage": {
+      "kind": "web",
+      "title": "国際結婚、海外での出生等に関する戸籍Ｑ＆Ａ｜法務省",
+      "url": "https://www.moj.go.jp/MINJI/minji15.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên các giấy và cách gọi lập hôn nhân, quốc tịch, bản dịch, hộ tịch."
+    },
+    "yoko-marry": {
+      "kind": "web",
+      "title": "婚姻届｜横浜市",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/todokede/koseki-juminhyo/todokede-touroku/koseki/konin.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên hồ sơ đăng ký, nơi nộp, người làm chứng và xác nhận đã tiếp nhận."
+    },
+    "vn-marriage": {
+      "kind": "web",
+      "title": "Thủ tục về hôn nhân｜Đại sứ quán Việt Nam tại Nhật Bản",
+      "url": "https://vnembassy-jp.org/en/node/170",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên giấy xác nhận tình trạng hôn nhân và đầu mối lãnh sự Việt Nam."
+    },
+    "isa-spouse": {
+      "kind": "web",
+      "title": "在留資格「日本人の配偶者等」｜出入国在留管理庁",
+      "url": "https://www.moj.go.jp/isa/applications/status/spouseorchildofjapanese01",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi tư cách cư trú khi trao đổi với cơ quan, giấy kết hôn và trích lục hộ tịch."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Mong muốn và lịch hai gia đình",
+      "v10_topic": "Mong muốn và lịch hai gia đình",
+      "terms": [
+        {
+          "id": "T-058-v001",
+          "ja": "国際結婚",
+          "reading": "こくさいけっこん",
+          "han_viet": "QUỐC TẾ KẾT HÔN",
+          "vi": "kết hôn giữa người có quốc tịch khác nhau",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "moj-marriage"
+          ]
+        },
+        {
+          "id": "T-058-v002",
+          "ja": "両家",
+          "reading": "りょうけ",
+          "han_viet": "LƯỠNG GIA",
+          "vi": "hai bên gia đình",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81cedc7a-483a-5657-8a73-cff330819979-u01",
+              "surface": "両家"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v003",
+          "ja": "顔合わせ",
+          "reading": "かおあわせ",
+          "han_viet": "NHAN HỢP",
+          "vi": "buổi gặp mặt để hai bên làm quen",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7c677c42-ed4e-5115-8ad3-767ac657aaa0-u01",
+              "surface": "顔合わせ"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v004",
+          "ja": "両親",
+          "reading": "りょうしん",
+          "han_viet": "LƯỠNG THÂN",
+          "vi": "cha mẹ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81cedc7a-483a-5657-8a73-cff330819979-u04",
+              "surface": "両親"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v005",
+          "ja": "親族",
+          "reading": "しんぞく",
+          "han_viet": "THÂN TỘC",
+          "vi": "người trong họ hàng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v006",
+          "ja": "少人数",
+          "reading": "しょうにんずう",
+          "han_viet": "THIỂU NHÂN SỐ",
+          "vi": "với ít người tham dự",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81cedc7a-483a-5657-8a73-cff330819979-u02",
+              "surface": "少人数"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v007",
+          "ja": "結婚式",
+          "reading": "けっこんしき",
+          "han_viet": "KẾT HÔN THỨC",
+          "vi": "lễ cưới",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v008",
+          "ja": "披露宴",
+          "reading": "ひろうえん",
+          "han_viet": "PHI LỘ YẾN",
+          "vi": "tiệc cưới giới thiệu đôi vợ chồng với khách",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v009",
+          "ja": "都合",
+          "reading": "つごう",
+          "han_viet": "ĐÔ HỢP",
+          "vi": "lịch rảnh hay điều kiện phù hợp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6d7b2fa6-8024-5de1-8251-e08894483e64-u01",
+              "surface": "都合"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v010",
+          "ja": "時差",
+          "reading": "じさ",
+          "han_viet": "THỜI SAI",
+          "vi": "chênh lệch múi giờ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7c677c42-ed4e-5115-8ad3-767ac657aaa0-u03",
+              "surface": "時差"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v011",
+          "ja": "通訳",
+          "reading": "つうやく",
+          "han_viet": "THÔNG DỊCH",
+          "vi": "phiên dịch",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81cedc7a-483a-5657-8a73-cff330819979-u03",
+              "surface": "通訳"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Đề xuất khác việc đã chốt",
+      "v10_topic": "Đề xuất khác việc đã chốt",
+      "terms": [
+        {
+          "id": "T-058-v012",
+          "ja": "提案する",
+          "reading": "ていあんする",
+          "han_viet": "ĐỀ ÁN",
+          "vi": "đề xuất một ngày hoặc phương án",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1c795774-da01-52c0-a068-6a87fc4c3de8-u02",
+              "surface": "提案した"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v013",
+          "ja": "候補日",
+          "reading": "こうほび",
+          "han_viet": "HẬU BỔ NHẬT",
+          "vi": "ngày đang được cân nhắc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v014",
+          "ja": "すり合わせる",
+          "reading": "すりあわせる",
+          "han_viet": "HỢP",
+          "vi": "trao đổi để dung hòa ý kiến hoặc sắp lịch",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v015",
+          "ja": "都合をつける",
+          "reading": "つごうをつける",
+          "han_viet": "ĐÔ HỢP",
+          "vi": "thu xếp được thời gian",
+          "pos": "expression",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v016",
+          "ja": "確定する",
+          "reading": "かくていする",
+          "han_viet": "XÁC ĐỊNH",
+          "vi": "chốt lại ngày hoặc phương án",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v017",
+          "ja": "保留",
+          "reading": "ほりゅう",
+          "han_viet": "BẢO LƯU",
+          "vi": "giữ lại để quyết sau",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v018",
+          "ja": "延期する",
+          "reading": "えんきする",
+          "han_viet": "DIÊN KỲ",
+          "vi": "dời sang thời gian sau",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v019",
+          "ja": "合意する",
+          "reading": "ごういする",
+          "han_viet": "HỢP Ý",
+          "vi": "cùng đi đến một thỏa thuận",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Tên, quan hệ và phiên âm trên giấy hai nước",
+      "v10_topic": "Tên, quan hệ và phiên âm trên giấy hai nước",
+      "terms": [
+        {
+          "id": "T-058-v020",
+          "ja": "国籍",
+          "reading": "こくせき",
+          "han_viet": "QUỐC TỊCH",
+          "vi": "quốc tịch",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ba3fe9b9-5e6c-5ffb-b487-315656706811-u01",
+              "surface": "国籍"
+            }
+          ],
+          "source_domain": "legal",
+          "source_refs": [
+            "moj-marriage"
+          ]
+        },
+        {
+          "id": "T-058-v021",
+          "ja": "配偶者",
+          "reading": "はいぐうしゃ",
+          "han_viet": "PHỐI NGẪU GIẢ",
+          "vi": "vợ hoặc chồng theo quan hệ hôn nhân",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "isa-spouse"
+          ]
+        },
+        {
+          "id": "T-058-v022",
+          "ja": "氏名",
+          "reading": "しめい",
+          "han_viet": "THỊ DANH",
+          "vi": "họ tên",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v023",
+          "ja": "ローマ字表記",
+          "reading": "ローマじひょうき",
+          "han_viet": "TỰ BIỂU KÝ",
+          "vi": "cách ghi tên bằng chữ Latin",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v024",
+          "ja": "続柄",
+          "reading": "つづきがら",
+          "han_viet": "TỤC BÍNH",
+          "vi": "quan hệ của một người với người được ghi làm mốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "isa-spouse"
+          ]
+        },
+        {
+          "id": "T-058-v025",
+          "ja": "原本",
+          "reading": "げんぽん",
+          "han_viet": "NGUYÊN BẢN",
+          "vi": "bản gốc văn bản",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "725c5a52-62b5-574c-967e-c9a362b0a042-u02",
+              "surface": "原本"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "moj-marriage"
+          ]
+        },
+        {
+          "id": "T-058-v026",
+          "ja": "訳文",
+          "reading": "やくぶん",
+          "han_viet": "DỊCH VĂN",
+          "vi": "bản dịch của giấy nước ngoài",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ba3fe9b9-5e6c-5ffb-b487-315656706811-u03",
+              "surface": "訳文"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "moj-marriage"
+          ]
+        },
+        {
+          "id": "T-058-v027",
+          "ja": "翻訳者",
+          "reading": "ほんやくしゃ",
+          "han_viet": "PHIÊN DỊCH GIẢ",
+          "vi": "người dịch giấy tờ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "moj-marriage"
+          ]
+        },
+        {
+          "id": "T-058-v028",
+          "ja": "発行元",
+          "reading": "はっこうもと",
+          "han_viet": "PHÁT HÀNH NGUYÊN",
+          "vi": "cơ quan hoặc đơn vị cấp giấy",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ba3fe9b9-5e6c-5ffb-b487-315656706811-u04",
+              "surface": "発行元"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v029",
+          "ja": "照合する",
+          "reading": "しょうごうする",
+          "han_viet": "CHIẾU HỢP",
+          "vi": "đối chiếu tên và chi tiết giữa hai giấy",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "725c5a52-62b5-574c-967e-c9a362b0a042-u01",
+              "surface": "照合できます"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v030",
+          "ja": "発行日",
+          "reading": "はっこうび",
+          "han_viet": "PHÁT HÀNH NHẬT",
+          "vi": "ngày giấy được cấp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dfc4ee24-9bb0-5b26-a32d-7b5817c43e30-u04",
+              "surface": "発行日"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Cơ quan phụ trách mỗi bước",
+      "v10_topic": "Cơ quan phụ trách mỗi bước",
+      "terms": [
+        {
+          "id": "T-058-v031",
+          "ja": "婚姻届",
+          "reading": "こんいんとどけ",
+          "han_viet": "HÔN NHÂN GIỚI",
+          "vi": "tờ khai đăng ký kết hôn theo thủ tục Nhật",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ba3fe9b9-5e6c-5ffb-b487-315656706811-u01",
+              "surface": "婚姻届"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yoko-marry"
+          ]
+        },
+        {
+          "id": "T-058-v032",
+          "ja": "婚姻要件具備証明書",
+          "reading": "こんいんようけんぐびしょうめいしょ",
+          "han_viet": "HÔN NHÂN YẾU KIỆN CỤ BỊ CHỨNG MINH THƯ",
+          "vi": "giấy xác nhận đủ điều kiện kết hôn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ba3fe9b9-5e6c-5ffb-b487-315656706811-u03",
+              "surface": "婚姻要件具備証明書"
+            }
+          ],
+          "level_note_vi": "Tên giấy cần nói đúng khi trao đổi tại quầy đăng ký hoặc lãnh sự.",
+          "source_domain": "legal",
+          "source_refs": [
+            "moj-marriage"
+          ]
+        },
+        {
+          "id": "T-058-v033",
+          "ja": "婚姻届受理証明書",
+          "reading": "こんいんとどけじゅりしょうめいしょ",
+          "han_viet": "HÔN NHÂN GIỚI THỤ LÝ CHỨNG MINH THƯ",
+          "vi": "giấy chứng nhận đã thụ lý khai báo kết hôn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên giấy có thể cần gọi đúng khi hỏi cách lấy chứng nhận từ nơi đã nhận hồ sơ.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yoko-marry",
+            "isa-spouse"
+          ]
+        },
+        {
+          "id": "T-058-v034",
+          "ja": "戸籍窓口",
+          "reading": "こせきまどぐち",
+          "han_viet": "HỘ TỊCH SONG KHẨU",
+          "vi": "quầy hộ tịch ở cơ quan địa phương",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ba3fe9b9-5e6c-5ffb-b487-315656706811-u02",
+              "surface": "戸籍窓口"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yoko-marry"
+          ]
+        },
+        {
+          "id": "T-058-v035",
+          "ja": "戸籍謄本",
+          "reading": "こせきとうほん",
+          "han_viet": "HỘ TỊCH ĐẰNG BẢN",
+          "vi": "bản sao đầy đủ thông tin hộ tịch của Nhật",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên giấy có thể xuất hiện trong trao đổi ở quầy Nhật hoặc về cư trú.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "isa-spouse"
+          ]
+        },
+        {
+          "id": "T-058-v036",
+          "ja": "領事窓口",
+          "reading": "りょうじまどぐち",
+          "han_viet": "LÃNH SỰ SONG KHẨU",
+          "vi": "quầy lãnh sự của nước liên quan",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0b002eaf-fbe1-5d3c-86e9-08484fd1d037-u02",
+              "surface": "領事窓口"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "vn-marriage"
+          ]
+        },
+        {
+          "id": "T-058-v037",
+          "ja": "婚姻状況確認書",
+          "reading": "こんいんじょうきょうかくにんしょ",
+          "han_viet": "HÔN NHÂN TRẠNG HUỐNG XÁC NHẬN THƯ",
+          "vi": "giấy xác nhận tình trạng hôn nhân",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra tên trên hướng dẫn của cơ quan Việt Nam tại Nhật.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "vn-marriage"
+          ]
+        },
+        {
+          "id": "T-058-v038",
+          "ja": "証人",
+          "reading": "しょうにん",
+          "han_viet": "CHỨNG NHÂN",
+          "vi": "người làm chứng cho khai báo kết hôn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "yoko-marry"
+          ]
+        },
+        {
+          "id": "T-058-v039",
+          "ja": "事前確認",
+          "reading": "じぜんかくにん",
+          "han_viet": "SỰ TIỀN XÁC NHẬN",
+          "vi": "kiểm trước giấy và nội dung trước khi nộp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yoko-marry"
+          ]
+        },
+        {
+          "id": "T-058-v040",
+          "ja": "在留資格変更",
+          "reading": "ざいりゅうしかくへんこう",
+          "han_viet": "TẠI LƯU TƯ CÁCH BIẾN CANH",
+          "vi": "thay đổi diện cư trú tại Nhật",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên việc cần hỏi riêng với cơ quan quản lý cư trú khi gia đình bàn kế hoạch sau cưới.",
+          "source_domain": "legal",
+          "source_refs": [
+            "isa-spouse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Người liên hệ và cập nhật sau tư vấn",
+      "v10_topic": "Người liên hệ và cập nhật sau tư vấn",
+      "terms": [
+        {
+          "id": "T-058-v041",
+          "ja": "共働き",
+          "reading": "ともばたらき",
+          "han_viet": "CỘNG ĐỘNG",
+          "vi": "cả hai vợ chồng đều đi làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v042",
+          "ja": "家事分担",
+          "reading": "かじぶんたん",
+          "han_viet": "GIA SỰ PHÂN ĐẢM",
+          "vi": "phân chia việc nhà",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v043",
+          "ja": "生活費",
+          "reading": "せいかつひ",
+          "han_viet": "SINH HOẠT PHÍ",
+          "vi": "chi phí sinh hoạt chung",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v044",
+          "ja": "実家",
+          "reading": "じっか",
+          "han_viet": "THỰC GIA",
+          "vi": "nhà cha mẹ hoặc nhà gia đình mình",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "130bdc06-35d2-511d-a4b2-14d2c6ca2334-u03",
+              "surface": "実家"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v045",
+          "ja": "遅番",
+          "reading": "おそばん",
+          "han_viet": "TRÌ PHIÊN",
+          "vi": "ca làm muộn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dbaa9a26-6cf8-5354-80aa-ec03a5095e01-u01",
+              "surface": "遅番"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v046",
+          "ja": "引っ越す",
+          "reading": "ひっこす",
+          "han_viet": "DẪN VIỆT",
+          "vi": "chuyển nhà",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eecd34f3-d182-537c-9745-f5ee8ae4a069-u01",
+              "surface": "引っ越す"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v047",
+          "ja": "暮らし方",
+          "reading": "くらしかた",
+          "han_viet": "MỘ PHƯƠNG",
+          "vi": "cách tổ chức cuộc sống chung",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "130bdc06-35d2-511d-a4b2-14d2c6ca2334-u04",
+              "surface": "暮らし方"
+            }
+          ]
+        },
+        {
+          "id": "T-058-v048",
+          "ja": "連絡先",
+          "reading": "れんらくさき",
+          "han_viet": "LIÊN LẠC TIÊN",
+          "vi": "đầu mối hoặc số liên lạc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v049",
+          "ja": "進み具合",
+          "reading": "すすみぐあい",
+          "han_viet": "TIẾN CỤ HỢP",
+          "vi": "mức độ tiến triển của việc đang làm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-058-v050",
+          "ja": "再相談",
+          "reading": "さいそうだん",
+          "han_viet": "TÁI TƯƠNG ĐÀM",
+          "vi": "quay lại hỏi thêm sau khi có thông tin mới",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a28030f7-e082-5009-b1ec-db0f380d5957-u04",
+              "surface": "再相談"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

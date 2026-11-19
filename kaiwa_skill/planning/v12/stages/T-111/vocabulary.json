@@ -1,0 +1,986 @@
+{
+  "stage_uid": "0eb7c76e-b3b4-5911-9d6e-8df61b525f76",
+  "stage_code": "T-111",
+  "admin_sources": {
+    "mhlw-warehouse": {
+      "accessed": "2026-11-19",
+      "use_vi": "Ví dụ thực tế dùng 落下 cho hàng và thùng rơi trong kho.",
+      "kind": "web",
+      "url": "https://anzeninfo.mhlw.go.jp/jirei/sai_000105.html",
+      "title": "倉庫内にて荷を取出し中落下した荷の下敷きとなり負傷 | 厚生労働省 職場のあんぜんサイト"
+    },
+    "fdma-first-aid": {
+      "kind": "web",
+      "title": "消防団手帳 第3章 応急手当 | 総務省消防庁",
+      "url": "https://www.fdma.go.jp/relocation/syobodan/item/upload/tetyou2025.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi 応急手当 khi hỗ trợ người bị thương."
+    },
+    "mhlw-accident-report": {
+      "title": "発災対応型防災訓練 | 総務省消防庁",
+      "kind": "web",
+      "accessed": "2026-11-19",
+      "url": "https://www.fdma.go.jp/relocation/e-college/cat66/cat62/cat57/3-25.html",
+      "use_vi": "Phần mô tả tình huống dùng 負傷者 để gọi người bị thương và 応急手当 cho việc sơ cứu."
+    },
+    "mhlw-safety": {
+      "kind": "web",
+      "title": "工事の計画段階で留意すべき事項 | 佐賀労働局",
+      "url": "https://jsite.mhlw.go.jp/saga-roudoukyoku/content/contents/002369614.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Ví dụ dùng 立入禁止措置 trong tài liệu an toàn tại khu vực có nguy cơ."
+    },
+    "hospital": {
+      "kind": "web",
+      "title": "再診の方 | 県立広島病院",
+      "url": "https://hiroshima.hpho.jp/visitor/re-visit/",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi 予約票, 受診 và 再診 trong hướng dẫn khám lại."
+    },
+    "mhlw-claim": {
+      "kind": "web",
+      "title": "保険給付の手続き | 東京労働局",
+      "url": "https://jsite.mhlw.go.jp/tokyo-roudoukyoku/hourei_seido_tetsuzuki/rousai_hoken/tetuduki.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi bảo hiểm, hồ sơ yêu cầu chi trả, cơ quan tiếp nhận và địa chỉ nơi làm việc để xác định cơ quan phụ trách."
+    },
+    "mhlw-return": {
+      "kind": "web",
+      "title": "治療と就業の両立支援指針 | 厚生労働省",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=75ac0780",
+      "accessed": "2026-11-19",
+      "use_vi": "Phần về ý kiến bác sĩ, giảm giờ, trở lại nơi làm việc và xem lại sắp xếp công việc."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Nơi/giờ tai nạn và điều thấy",
+      "v10_topic": "Nơi/giờ tai nạn và điều thấy",
+      "terms": [
+        {
+          "id": "T-111-v001",
+          "ja": "事故",
+          "reading": "じこ",
+          "han_viet": "SỰ CỐ",
+          "vi": "tai nạn, sự việc gây thương tích hoặc thiệt hại",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "288845a0-0f21-5c64-9f37-d1541eedf802-u01",
+              "surface": "事故"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v002",
+          "ja": "通路",
+          "reading": "つうろ",
+          "han_viet": "THÔNG LỘ",
+          "vi": "lối đi giữa các khu vực",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c09071d1-0c94-586a-8e03-cc0d894be908-u01",
+              "surface": "通路"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v003",
+          "ja": "柱",
+          "reading": "はしら",
+          "han_viet": "TRỤ",
+          "vi": "cột trong tòa nhà, có thể dùng để xác định vị trí",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "288845a0-0f21-5c64-9f37-d1541eedf802-u01",
+              "surface": "柱"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v004",
+          "ja": "外側",
+          "reading": "そとがわ",
+          "han_viet": "NGOẠI TRẮC",
+          "vi": "phía ngoài một cửa hoặc khu vực",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c09071d1-0c94-586a-8e03-cc0d894be908-u05",
+              "surface": "外側"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v005",
+          "ja": "床",
+          "reading": "ゆか",
+          "han_viet": "SÀNG",
+          "vi": "mặt sàn trong nhà, kho hoặc hành lang",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c09071d1-0c94-586a-8e03-cc0d894be908-u03",
+              "surface": "床"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v006",
+          "ja": "当たる",
+          "reading": "あたる",
+          "han_viet": "ĐƯƠNG",
+          "vi": "va hoặc đập trúng người hay vật",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c09071d1-0c94-586a-8e03-cc0d894be908-u01",
+              "surface": "左腕に当たりました"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v007",
+          "ja": "落下する",
+          "reading": "らっかする",
+          "han_viet": "LẠC HẠ",
+          "vi": "rơi từ chỗ cao xuống",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "mhlw-warehouse"
+          ]
+        },
+        {
+          "id": "T-111-v008",
+          "ja": "台車",
+          "reading": "だいしゃ",
+          "han_viet": "ĐÀI XA",
+          "vi": "xe đẩy dùng để chuyển hàng hoặc vật nặng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "720ad5f7-d7df-5aa2-a465-805260b623bb-u01",
+              "surface": "台車"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v009",
+          "ja": "時刻",
+          "reading": "じこく",
+          "han_viet": "THỜI KHẮC",
+          "vi": "mốc giờ cụ thể của một sự việc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "839a5ada-f186-5e14-9618-3080b1d3dd99-u04",
+              "surface": "事故の時刻"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v010",
+          "ja": "訂正する",
+          "reading": "ていせいする",
+          "han_viet": "ĐÍNH CHÍNH",
+          "vi": "sửa lời đã báo hoặc thông tin đã ghi khi thấy sai",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "288845a0-0f21-5c64-9f37-d1541eedf802-u01",
+              "surface": "訂正します"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v011",
+          "ja": "事実",
+          "reading": "じじつ",
+          "han_viet": "SỰ THỰC",
+          "vi": "điều đã xảy ra hoặc đã được xác nhận",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "720ad5f7-d7df-5aa2-a465-805260b623bb-u03",
+              "surface": "確認した事実"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v012",
+          "ja": "区別する",
+          "reading": "くべつする",
+          "han_viet": "KHU BIỆT",
+          "vi": "phân biệt, ghi riêng hai thông tin dễ bị lẫn",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6940bca7-4c2f-5970-b817-18eb85aaee8d-u05",
+              "surface": "区別できます"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Ai đang được hỗ trợ",
+      "v10_topic": "Ai đang được hỗ trợ",
+      "terms": [
+        {
+          "id": "T-111-v013",
+          "ja": "けが",
+          "reading": "けが",
+          "han_viet": "",
+          "vi": "vết thương hoặc chấn thương do tai nạn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f348ed05-8b28-5f40-88ea-2edef08a9a4a-u01",
+              "surface": "けがをした人"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v014",
+          "ja": "負傷者",
+          "reading": "ふしょうしゃ",
+          "han_viet": "PHỤ THƯƠNG GIẢ",
+          "vi": "người bị thương, cách gọi trong thông báo hoặc báo cáo tai nạn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận diện đối tượng đang được hỏi khi người phụ trách kiểm xem còn người bị thương không.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-accident-report"
+          ]
+        },
+        {
+          "id": "T-111-v015",
+          "ja": "手当て",
+          "reading": "てあて",
+          "han_viet": "THỦ ĐƯƠNG",
+          "vi": "việc chăm sóc ban đầu cho người bị thương",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "source_domain": "medical",
+          "source_refs": [
+            "fdma-first-aid"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "f348ed05-8b28-5f40-88ea-2edef08a9a4a-u01",
+              "surface": "手当てを受けている"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v016",
+          "ja": "応急手当",
+          "reading": "おうきゅうてあて",
+          "han_viet": "ỨNG CẤP THỦ ĐƯƠNG",
+          "vi": "việc hỗ trợ, sơ cứu ban đầu khi có người bị thương hoặc đột ngột gặp vấn đề sức khỏe",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần phân biệt phần hỗ trợ đã diễn ra tại chỗ với lần khám tiếp theo.",
+          "source_domain": "medical",
+          "source_refs": [
+            "fdma-first-aid"
+          ]
+        },
+        {
+          "id": "T-111-v017",
+          "ja": "担当",
+          "reading": "たんとう",
+          "han_viet": "ĐẢM ĐƯƠNG",
+          "vi": "người hoặc bộ phận phụ trách một việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f348ed05-8b28-5f40-88ea-2edef08a9a4a-u02",
+              "surface": "救護担当の方"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v018",
+          "ja": "応援",
+          "reading": "おうえん",
+          "han_viet": "ỨNG VIÊN",
+          "vi": "người được gọi tới chi viện, hỗ trợ thêm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c09071d1-0c94-586a-8e03-cc0d894be908-u04",
+              "surface": "応援の人"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v019",
+          "ja": "付き添う",
+          "reading": "つきそう",
+          "han_viet": "PHÓ THIÊM",
+          "vi": "đi cùng hoặc ở bên cạnh để hỗ trợ người bị thương",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-111-v020",
+          "ja": "受診する",
+          "reading": "じゅしんする",
+          "han_viet": "THỤ CHẨN",
+          "vi": "đi khám tại cơ sở y tế",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "source_domain": "medical",
+          "source_refs": [
+            "hospital"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "c35ed76a-a040-5251-b204-3a8ab6dc0a56-u01",
+              "surface": "受診したとき"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v021",
+          "ja": "医師",
+          "reading": "いし",
+          "han_viet": "Y SƯ",
+          "vi": "bác sĩ, người trực tiếp khám hoặc đưa ý kiến chuyên môn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-return"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "d5ef44a4-8c23-5d32-b87b-554c20d72837-u01",
+              "surface": "医師"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v022",
+          "ja": "予約票",
+          "reading": "よやくひょう",
+          "han_viet": "DỰ ƯỚC PHIẾU",
+          "vi": "phiếu ghi lịch đã đặt để đến khám hoặc tái khám",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cần để giải thích mình hiện chỉ có giấy hẹn, trong lúc nhân sự đang hỏi giấy về khả năng làm việc.",
+          "source_domain": "medical",
+          "source_refs": [
+            "hospital"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "c35ed76a-a040-5251-b204-3a8ab6dc0a56-u02",
+              "surface": "予約票"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Nguy cơ còn chờ chuyên môn kiểm",
+      "v10_topic": "Nguy cơ còn chờ chuyên môn kiểm",
+      "terms": [
+        {
+          "id": "T-111-v023",
+          "ja": "段",
+          "reading": "だん",
+          "han_viet": "ĐOẠN",
+          "vi": "tầng hoặc nấc của kệ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "261d6b7c-784b-5d3a-bc6f-f9f70f97d2ed-u01",
+              "surface": "上の段"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v024",
+          "ja": "手前",
+          "reading": "てまえ",
+          "han_viet": "THỦ TIỀN",
+          "vi": "phía trước, gần chỗ người nói đứng nhìn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "261d6b7c-784b-5d3a-bc6f-f9f70f97d2ed-u01",
+              "surface": "手前に出て"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v025",
+          "ja": "はみ出す",
+          "reading": "はみだす",
+          "han_viet": "XUẤT",
+          "vi": "nhô hoặc thò ra ngoài mép hay giới hạn",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-111-v026",
+          "ja": "設備",
+          "reading": "せつび",
+          "han_viet": "THIẾT BỊ",
+          "vi": "thiết bị và hệ thống lắp đặt ở nơi làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "261d6b7c-784b-5d3a-bc6f-f9f70f97d2ed-u04",
+              "surface": "設備"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v027",
+          "ja": "点検する",
+          "reading": "てんけんする",
+          "han_viet": "ĐIỂM KIỂM",
+          "vi": "kiểm tra tình trạng thiết bị hoặc khu vực theo các hạng mục",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-111-v028",
+          "ja": "危険性",
+          "reading": "きけんせい",
+          "han_viet": "NGUY HIỂM TÍNH",
+          "vi": "khả năng xảy ra nguy hiểm khi chưa có kết luận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-111-v029",
+          "ja": "おそれ",
+          "reading": "おそれ",
+          "han_viet": "",
+          "vi": "nguy cơ có thể xảy ra một việc bất lợi, thường dùng ～おそれがある",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-111-v030",
+          "ja": "立入禁止",
+          "reading": "たちいりきんし",
+          "han_viet": "LẬP NHẬP CẤM CHỈ",
+          "vi": "cấm đi vào khu vực đã khoanh hoặc có biển báo",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần để hiểu hạn chế ra vào trong lúc người có chuyên môn kiểm tra hiện trường.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-safety"
+          ]
+        },
+        {
+          "id": "T-111-v031",
+          "ja": "専門",
+          "reading": "せんもん",
+          "han_viet": "CHUYÊN MÔN",
+          "vi": "lĩnh vực chuyên môn mà một người được đào tạo hoặc phụ trách",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-111-v032",
+          "ja": "未確認",
+          "reading": "みかくにん",
+          "han_viet": "VỊ XÁC NHẬN",
+          "vi": "tình trạng chưa được kiểm tra hoặc xác nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-111-v033",
+          "ja": "原因",
+          "reading": "げんいん",
+          "han_viet": "NGUYÊN NHÂN",
+          "vi": "điều làm cho tai nạn hoặc sự cố xảy ra",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "720ad5f7-d7df-5aa2-a465-805260b623bb-u05",
+              "surface": "原因について"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Người tiếp quản thông tin",
+      "v10_topic": "Người tiếp quản thông tin",
+      "terms": [
+        {
+          "id": "T-111-v034",
+          "ja": "現場",
+          "reading": "げんば",
+          "han_viet": "HIỆN TRƯỜNG",
+          "vi": "hiện trường hoặc nơi thực tế đang làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9f8e6cca-d9fc-5c54-bdb2-a88d463c5ebe-u01",
+              "surface": "現場を離れます"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v035",
+          "ja": "引き継ぐ",
+          "reading": "ひきつぐ",
+          "han_viet": "DẪN KẾ",
+          "vi": "tiếp nhận hoặc bàn giao việc và thông tin cho người sẽ phụ trách",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9f8e6cca-d9fc-5c54-bdb2-a88d463c5ebe-u02",
+              "surface": "引き継ぎます"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v036",
+          "ja": "経緯",
+          "reading": "けいい",
+          "han_viet": "KINH VĨ",
+          "vi": "diễn biến dẫn tới sự việc cần giải thích",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần để trình bày sự việc theo trật tự trước, trong và sau tai nạn khi người tiếp quản hỏi lại."
+        },
+        {
+          "id": "T-111-v037",
+          "ja": "共有する",
+          "reading": "きょうゆうする",
+          "han_viet": "CỘNG HỮU",
+          "vi": "chia sẻ thông tin để người liên quan cùng biết",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9f8e6cca-d9fc-5c54-bdb2-a88d463c5ebe-u02",
+              "surface": "共有します"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v038",
+          "ja": "記録する",
+          "reading": "きろくする",
+          "han_viet": "KÝ LỤC",
+          "vi": "ghi lại mốc giờ hoặc nội dung để đối chiếu về sau",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6940bca7-4c2f-5970-b817-18eb85aaee8d-u04",
+              "surface": "分けて記録します"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v039",
+          "ja": "提出先",
+          "reading": "ていしゅつさき",
+          "han_viet": "ĐỀ XUẤT TIÊN",
+          "vi": "người, bộ phận hoặc nơi nhận tài liệu cần nộp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c35ed76a-a040-5251-b204-3a8ab6dc0a56-u03",
+              "surface": "提出先"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v040",
+          "ja": "補足する",
+          "reading": "ほそくする",
+          "han_viet": "BỔ TÚC",
+          "vi": "nói hoặc thêm thông tin còn thiếu vào điều đã báo",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6940bca7-4c2f-5970-b817-18eb85aaee8d-u01",
+              "surface": "補足させてください"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v041",
+          "ja": "労災保険",
+          "reading": "ろうさいほけん",
+          "han_viet": "LAO TAI BẢO HIỂM",
+          "vi": "bảo hiểm tai nạn lao động của Nhật",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cần gọi đúng tên chế độ để hỏi đầu mối tư vấn sau chấn thương khi đang làm việc.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-claim"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "cb954bf8-d4a1-55ad-990a-19a426846743-u01",
+              "surface": "労災保険"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v042",
+          "ja": "労働基準監督署",
+          "reading": "ろうどうきじゅんかんとくしょ",
+          "han_viet": "LAO ĐỘNG CƠ CHUẨN GIÁM ĐỐC THỰ",
+          "vi": "cơ quan thanh tra tiêu chuẩn lao động của Nhật",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nghe và hỏi lại tên cơ quan khi nhân sự hướng câu hỏi về quyền lợi sang đầu mối bên ngoài.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-claim"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "cb954bf8-d4a1-55ad-990a-19a426846743-u02",
+              "surface": "労働基準監督署"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v043",
+          "ja": "給付",
+          "reading": "きゅうふ",
+          "han_viet": "CẤP PHÓ",
+          "vi": "khoản hoặc quyền lợi được chi trả theo chế độ bảo hiểm",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cần để hỏi vụ việc có thuộc phạm vi quyền lợi bảo hiểm hay không.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-claim"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "cb954bf8-d4a1-55ad-990a-19a426846743-u02",
+              "surface": "給付の対象"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v044",
+          "ja": "請求",
+          "reading": "せいきゅう",
+          "han_viet": "THỈNH CẦU",
+          "vi": "việc yêu cầu giải quyết hoặc chi trả quyền lợi bảo hiểm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-claim"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "cb954bf8-d4a1-55ad-990a-19a426846743-u02",
+              "surface": "請求の詳しい相談"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v045",
+          "ja": "所在地",
+          "reading": "しょざいち",
+          "han_viet": "SỞ TẠI ĐỊA",
+          "vi": "địa chỉ hoặc địa bàn nơi cơ sở làm việc đặt trụ sở hay hoạt động",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-claim"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "cb954bf8-d4a1-55ad-990a-19a426846743-u03",
+              "surface": "倉庫の所在地"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Việc làm và lịch vắng sau sự cố",
+      "v10_topic": "Việc làm và lịch vắng sau sự cố",
+      "terms": [
+        {
+          "id": "T-111-v046",
+          "ja": "一覧",
+          "reading": "いちらん",
+          "han_viet": "NHẤT LÃM",
+          "vi": "danh sách tổng hợp để xem nhanh các mục",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "59482e86-89cf-5deb-869f-da25e4f40d9b-u02",
+              "surface": "一覧"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v047",
+          "ja": "保留",
+          "reading": "ほりゅう",
+          "han_viet": "BẢO LƯU",
+          "vi": "trạng thái tạm giữ, chưa chốt thực hiện",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "59482e86-89cf-5deb-869f-da25e4f40d9b-u04",
+              "surface": "保留にして"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v048",
+          "ja": "分担",
+          "reading": "ぶんたん",
+          "han_viet": "PHÂN ĐẢM",
+          "vi": "việc chia nhau để mỗi người phụ trách một phần",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "37bc53b2-9d53-5847-8a53-64f08c60a576-u02",
+              "surface": "仕事の分担"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v049",
+          "ja": "交代",
+          "reading": "こうたい",
+          "han_viet": "GIAO ĐẠI",
+          "vi": "việc thay người phụ trách hoặc đổi người làm ca",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d5fee7e3-3bc7-5cd5-989f-052205c5fe89-u02",
+              "surface": "交代"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v050",
+          "ja": "当面",
+          "reading": "とうめん",
+          "han_viet": "ĐƯƠNG DIỆN",
+          "vi": "thời gian trước mắt trong khi cách xử lý dài hơn chưa quyết",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a1f95a05-43b4-5d83-92ef-d06e62b88478-u02",
+              "surface": "当面の連絡"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v051",
+          "ja": "未定",
+          "reading": "みてい",
+          "han_viet": "VỊ ĐỊNH",
+          "vi": "chưa được chốt, ví dụ ngày có thể trở lại làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ac27bc83-aa66-5d54-9f6e-b9ebdbb50185-u03",
+              "surface": "金曜も未定"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v052",
+          "ja": "再診",
+          "reading": "さいしん",
+          "han_viet": "TÁI CHẨN",
+          "vi": "lần khám lại sau lần khám trước",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần để báo ngày hẹn khám lại và phân biệt ngày đó với ngày trở lại làm.",
+          "source_domain": "medical",
+          "source_refs": [
+            "hospital"
+          ]
+        },
+        {
+          "id": "T-111-v053",
+          "ja": "復帰日",
+          "reading": "ふっきび",
+          "han_viet": "PHỤC QUY NHẬT",
+          "vi": "ngày trở lại làm việc sau thời gian nghỉ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3eb5c37d-bd45-52c4-8a2d-7e091aee270c-u03",
+              "surface": "復帰日"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v054",
+          "ja": "職場復帰",
+          "reading": "しょくばふっき",
+          "han_viet": "CHỨC TRƯỜNG PHỤC QUY",
+          "vi": "việc trở lại làm tại nơi làm việc sau thời gian nghỉ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần khi trao đổi cả quá trình quay lại làm và sắp xếp công việc phù hợp, ngoài việc hỏi mốc ngày.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-return"
+          ]
+        },
+        {
+          "id": "T-111-v055",
+          "ja": "短時間勤務",
+          "reading": "たんじかんきんむ",
+          "han_viet": "ĐOẢN THỜI GIAN CẦN VỤ",
+          "vi": "bố trí làm việc trong thời gian ngắn hơn giờ làm thông thường",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần để gọi tên phương án làm ít giờ được thảo luận cho buổi đầu trở lại.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-return"
+          ]
+        },
+        {
+          "id": "T-111-v056",
+          "ja": "範囲",
+          "reading": "はんい",
+          "han_viet": "PHẠM VI",
+          "vi": "phần nằm trong giới hạn, ví dụ phần đã biết có thể báo lại",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3eb5c37d-bd45-52c4-8a2d-7e091aee270c-u02",
+              "surface": "分かった範囲"
+            }
+          ]
+        },
+        {
+          "id": "T-111-v057",
+          "ja": "見直す",
+          "reading": "みなおす",
+          "han_viet": "KIẾN TRỰC",
+          "vi": "xem lại để điều chỉnh quyết định hoặc lịch đã lên",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "mhlw-return"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,847 @@
+{
+  "stage_uid": "270ee36b-e3d5-5829-9c90-b8e1723f6c87",
+  "stage_code": "T-107",
+  "admin_sources": {
+    "mhlw-slip": {
+      "kind": "web",
+      "title": "給与明細書には、何が書いてある？ · 厚生労働省",
+      "url": "https://www.check-roudou.mhlw.go.jp/pdf/shakaijinmukeshiryou_2_1.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên và ý nghĩa các mục về chấm công, lương, phụ cấp và khấu trừ trên phiếu lương, trang 18–20."
+    },
+    "mhlw-hours": {
+      "kind": "web",
+      "title": "労働時間の適正な把握のためのガイドライン · 大阪労働局",
+      "url": "https://jsite.mhlw.go.jp/osaka-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/hourei_seido/jikan2/kokuji/kokuji2.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi mốc bắt đầu, kết thúc, dữ liệu ghi giờ làm và việc đối chiếu thông tin tự khai."
+    },
+    "mhlw-clock": {
+      "kind": "web",
+      "title": "雇用管理に役立つ多言語用語集 · 厚生労働省",
+      "url": "https://www.mhlw.go.jp/yougosyu/vietnamese/index.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu 打刻 và タイムカード trong mục 3 về giờ làm, dòng 08–09 của bảng tiếng Nhật và tiếng Việt."
+    },
+    "mhlw-pay": {
+      "kind": "web",
+      "title": "労務管理上の留意点 · 熊本労働局",
+      "url": "https://jsite.mhlw.go.jp/kumamoto-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/hourei_seido/joken01.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi ngày chốt, ngày trả lương, giờ nghỉ và giờ làm theo ca trong phần điều kiện lao động."
+    },
+    "mhlw-overtime": {
+      "kind": "web",
+      "title": "残業手当はどんなときに払われますか · 茨城労働局",
+      "url": "https://jsite.mhlw.go.jp/ibaraki-roudoukyoku/yokuaru_goshitsumon/shurouchu/worker_b/qa_wzangyou.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi tiền làm thêm và phần tiền trả tăng thêm theo loại giờ làm."
+    },
+    "mhlw-help": {
+      "kind": "web",
+      "title": "総合労働相談コーナーのご案内 · 厚生労働省",
+      "url": "https://www.mhlw.go.jp/general/seido/chihou/kaiketu/soudan.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên điểm tư vấn lao động và cơ quan tiếp nhận."
+    },
+    "hvdic-chin": {
+      "kind": "web",
+      "title": "Hán tự 賃 · Từ điển Hán Nôm Thi Viện",
+      "url": "https://hvdic.thivien.net/whv/賃",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu âm NHẪM của 賃 liên quan đến tiền trả khi thuê người hoặc vật."
+    },
+    "jdict-komu": {
+      "kind": "web",
+      "title": "Hán tự 込 · Jdict",
+      "url": "https://jdict.net/kanji/込",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu âm Hán Việt quy ước NHẬP cho chữ Nhật tạo 込."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Kỳ lương và ca/giờ đã làm",
+      "v10_topic": "Kỳ lương và ca/giờ đã làm",
+      "terms": [
+        {
+          "ja": "勤怠",
+          "reading": "きんたい",
+          "han_viet": "CẦN ĐÃI",
+          "vi": "chấm công, thông tin về ngày đi làm, giờ làm và các lần nghỉ hoặc vắng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v001",
+          "evidence": [
+            {
+              "utterance_id": "084559b6-ecb3-599a-bd3d-d43ded202e17-u01",
+              "surface": "勤怠"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ],
+          "level_note_vi": "Đây là nhãn chấm công người học cần nhận ra trực tiếp trên phiếu lương và màn hình nội bộ."
+        },
+        {
+          "ja": "対象期間",
+          "reading": "たいしょうきかん",
+          "han_viet": "ĐỐI TƯỢNG KỲ GIAN",
+          "vi": "khoảng thời gian được tính trong phiếu lương hoặc kỳ đang kiểm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v002",
+          "evidence": [
+            {
+              "utterance_id": "49ae9c0c-1b98-505d-b622-04934f59a148-u04",
+              "surface": "対象期間"
+            }
+          ]
+        },
+        {
+          "ja": "締め日",
+          "reading": "しめび",
+          "han_viet": "ĐẾ NHẬT",
+          "vi": "ngày chốt để xác định những ngày công đưa vào một kỳ tính lương",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v003",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-pay"
+          ],
+          "note_vi": "Nhãn trên văn bản về lương cũng có thể là 賃金締切日."
+        },
+        {
+          "ja": "支給日",
+          "reading": "しきゅうび",
+          "han_viet": "CHI CẤP NHẬT",
+          "vi": "ngày công ty trả khoản lương hoặc tiền ghi trên phiếu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v004",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ]
+        },
+        {
+          "ja": "シフト",
+          "reading": "しふと",
+          "han_viet": "",
+          "vi": "ca làm hoặc lịch phân ca",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "id": "T-107-v005",
+          "evidence": [
+            {
+              "utterance_id": "5bd8b2f2-d62d-5608-9f26-a8fb9e1837e9-u04",
+              "surface": "シフト"
+            }
+          ]
+        },
+        {
+          "ja": "労働時間",
+          "reading": "ろうどうじかん",
+          "han_viet": "LAO ĐỘNG THỜI GIAN",
+          "vi": "thời gian làm việc dùng để đối chiếu số giờ công",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v006",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-hours"
+          ]
+        },
+        {
+          "ja": "始業時刻",
+          "reading": "しぎょうじこく",
+          "han_viet": "THỦY NGHIỆP THỜI KHẮC",
+          "vi": "mốc giờ bắt đầu làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v007",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-hours"
+          ]
+        },
+        {
+          "ja": "退勤時刻",
+          "reading": "たいきんじこく",
+          "han_viet": "THOÁI CẦN THỜI KHẮC",
+          "vi": "giờ kết thúc ca đã ghi hoặc cần ghi trên chấm công",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v008",
+          "evidence": [
+            {
+              "utterance_id": "297c4da5-18b3-5be5-bc51-a107e5819aa5-u02",
+              "surface": "退勤時刻"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-hours"
+          ]
+        },
+        {
+          "ja": "休憩時間",
+          "reading": "きゅうけいじかん",
+          "han_viet": "HƯU KHẾ THỜI GIAN",
+          "vi": "khoảng thời gian dành để nghỉ giữa các giờ làm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "id": "T-107-v009",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-pay"
+          ]
+        },
+        {
+          "ja": "残業時間",
+          "reading": "ざんぎょうじかん",
+          "han_viet": "TÀN NGHIỆP THỜI GIAN",
+          "vi": "số giờ làm thêm ngoài giờ làm thông thường",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "id": "T-107-v010",
+          "evidence": [
+            {
+              "utterance_id": "b75167b1-8761-5ecc-8aca-27b081a09645-u01",
+              "surface": "残業時間"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-overtime"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Khoản khấu trừ/phụ cấp",
+      "v10_topic": "Khoản khấu trừ/phụ cấp",
+      "terms": [
+        {
+          "ja": "給与明細",
+          "reading": "きゅうよめいさい",
+          "han_viet": "CẤP DỮ MINH TẾ",
+          "vi": "phiếu lương ghi chi tiết các khoản chi trả và khoản bị trừ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v011",
+          "evidence": [
+            {
+              "utterance_id": "aad88b60-a030-5b3e-8057-ed932e2408b2-u03",
+              "surface": "給与明細"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ]
+        },
+        {
+          "ja": "基本給",
+          "reading": "きほんきゅう",
+          "han_viet": "CƠ BẢN CẤP",
+          "vi": "lương cơ bản, phần lương chính trước khi tính các phụ cấp và khoản khác",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v012",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ]
+        },
+        {
+          "ja": "手当",
+          "reading": "てあて",
+          "han_viet": "THỦ ĐƯƠNG",
+          "vi": "khoản phụ cấp, trợ cấp hoặc tiền trả thêm theo một mục cụ thể trên phiếu lương",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v013",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ],
+          "level_note_vi": "Cần hiểu nhãn 手当 để biết một khoản là phụ cấp đi làm, phụ cấp chức vụ hay khoản làm thêm."
+        },
+        {
+          "ja": "通勤手当",
+          "reading": "つうきんてあて",
+          "han_viet": "THÔNG CẦN THỦ ĐƯƠNG",
+          "vi": "phụ cấp cho việc đi lại giữa nhà và nơi làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v014",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ],
+          "note_vi": "交通費 cho chuyến đi gặp khách có thể được ghi ở một mục riêng."
+        },
+        {
+          "ja": "交通費",
+          "reading": "こうつうひ",
+          "han_viet": "GIAO THÔNG PHÍ",
+          "vi": "chi phí đi lại, như tiền tàu xe khi đến chỗ khách",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "id": "T-107-v015",
+          "evidence": [
+            {
+              "utterance_id": "de49edad-22ad-5e85-8449-42a54668b0b1-u02",
+              "surface": "交通費"
+            }
+          ]
+        },
+        {
+          "ja": "割増賃金",
+          "reading": "わりましちんぎん",
+          "han_viet": "CÁT TĂNG NHẪM KIM",
+          "vi": "tiền lương trả theo mức tăng thêm khi làm loại giờ thuộc diện tính thêm, như giờ làm đêm",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "id": "T-107-v016",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-overtime",
+            "hvdic-chin"
+          ],
+          "note_vi": "賃 dùng âm NHẪM theo nghĩa tiền trả khi thuê.",
+          "level_note_vi": "Cần nhận diện tên chính thức của khoản trả theo mức tăng thêm để hỏi đúng mục lương làm thêm."
+        },
+        {
+          "ja": "残業手当",
+          "reading": "ざんぎょうてあて",
+          "han_viet": "TÀN NGHIỆP THỦ ĐƯƠNG",
+          "vi": "khoản tiền làm thêm giờ ghi trên phiếu lương",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v017",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-overtime"
+          ]
+        },
+        {
+          "ja": "控除",
+          "reading": "こうじょ",
+          "han_viet": "KHỐNG TRỪ",
+          "vi": "khoản được trừ vào số tiền chi trả trên phiếu lương",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v018",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ],
+          "level_note_vi": "Cần đọc được tên nhóm khoản bị trừ khi đối chiếu số tiền thực nhận."
+        },
+        {
+          "ja": "社会保険料",
+          "reading": "しゃかいほけんりょう",
+          "han_viet": "XÃ HỘI BẢO HIỂM LIỆU",
+          "vi": "khoản đóng bảo hiểm xã hội, có thể xuất hiện trong phần trừ lương",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v019",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ]
+        },
+        {
+          "ja": "差引支給額",
+          "reading": "さしひきしきゅうがく",
+          "han_viet": "SAI DẪN CHI CẤP NGẠCH",
+          "vi": "số tiền thực nhận sau khi đã trừ các khoản khấu trừ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "id": "T-107-v020",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-slip"
+          ],
+          "level_note_vi": "Cần nhận ra tên ô số thực nhận để đối chiếu trực tiếp với tiền nhận được."
+        },
+        {
+          "ja": "内訳",
+          "reading": "うちわけ",
+          "han_viet": "NỘI DỊCH",
+          "vi": "chi tiết từng khoản hoặc từng phần tạo thành tổng tiền hay tổng số giờ",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "id": "T-107-v021",
+          "evidence": [
+            {
+              "utterance_id": "62772f62-2a20-5903-86bc-95612a72e2dc-u03",
+              "surface": "内訳"
+            }
+          ],
+          "level_note_vi": "Cần để xin tách số giờ và số tiền tổng thành các dòng cụ thể mà HR có thể giải thích."
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Mốc hệ thống khác ghi chép",
+      "v10_topic": "Mốc hệ thống khác ghi chép",
+      "terms": [
+        {
+          "ja": "打刻する",
+          "reading": "だこくする",
+          "han_viet": "ĐẢ KHẮC",
+          "vi": "ghi mốc giờ bắt đầu hoặc kết thúc bằng thẻ, máy hoặc ứng dụng chấm công",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v022",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-clock"
+          ]
+        },
+        {
+          "ja": "打刻漏れ",
+          "reading": "だこくもれ",
+          "han_viet": "ĐẢ KHẮC LẬU",
+          "vi": "việc sót một lượt chấm giờ vào hoặc giờ ra",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v023",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-clock"
+          ],
+          "note_vi": "Tên gọi tình trạng thiếu một lần 打刻 trên dữ liệu chấm công."
+        },
+        {
+          "ja": "勤怠記録",
+          "reading": "きんたいきろく",
+          "han_viet": "CẦN ĐÃI KÝ LỤC",
+          "vi": "bản ghi giờ làm, ngày đi làm và các mục liên quan để đối chiếu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v024",
+          "evidence": [
+            {
+              "utterance_id": "abccc589-e906-5724-aa01-9e41d8503a21-u04",
+              "surface": "勤怠記録"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-hours"
+          ]
+        },
+        {
+          "ja": "入退館",
+          "reading": "にゅうたいかん",
+          "han_viet": "NHẬP THOÁI QUÁN",
+          "vi": "việc ra vào tòa nhà, thường có bản ghi mốc giờ tương ứng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v025",
+          "evidence": [
+            {
+              "utterance_id": "084559b6-ecb3-599a-bd3d-d43ded202e17-u04",
+              "surface": "入退館"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-hours"
+          ]
+        },
+        {
+          "ja": "作業履歴",
+          "reading": "さぎょうりれき",
+          "han_viet": "TÁC NGHIỆP LÝ LỊCH",
+          "vi": "lịch sử thao tác hoặc công việc đã làm, thường kèm mốc thời gian",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v026",
+          "evidence": [
+            {
+              "utterance_id": "62772f62-2a20-5903-86bc-95612a72e2dc-u01",
+              "surface": "作業履歴"
+            }
+          ]
+        },
+        {
+          "ja": "照合する",
+          "reading": "しょうごうする",
+          "han_viet": "CHIẾU HỢP",
+          "vi": "đối chiếu hai nguồn dữ liệu để xem thông tin có khớp",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v027",
+          "evidence": [
+            {
+              "utterance_id": "a731aac3-2944-5da3-a96f-9527f7f4fc7d-u03",
+              "surface": "照合して"
+            }
+          ],
+          "level_note_vi": "Cần dùng khi nhờ HR kiểm tra chấm công bằng một nhật ký công việc khác."
+        },
+        {
+          "ja": "食い違う",
+          "reading": "くいちがう",
+          "han_viet": "THỰC VI",
+          "vi": "lệch nhau, không khớp về số giờ hoặc lời xác nhận",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "id": "T-107-v028",
+          "level_note_vi": "Hữu ích để nêu cùng một ca đang có hai mốc khác nhau trước khi trình bày bằng chứng."
+        },
+        {
+          "ja": "差分",
+          "reading": "さぶん",
+          "han_viet": "SAI PHÂN",
+          "vi": "phần chênh so với dữ liệu gốc hoặc so với số giờ đã xác nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v029"
+        },
+        {
+          "ja": "根拠",
+          "reading": "こんきょ",
+          "han_viet": "CĂN CỨ",
+          "vi": "căn cứ dùng để ghi một mốc giờ, loại một khoảng thời gian hoặc tính một khoản",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "id": "T-107-v030",
+          "evidence": [
+            {
+              "utterance_id": "aad500e1-ff64-5f8f-a31f-c6b2455cc4f2-u04",
+              "surface": "根拠"
+            }
+          ],
+          "level_note_vi": "Cần hỏi rõ dữ liệu hoặc lý do mà bộ phận tính lương dựa vào khi giữ hay loại một khoảng giờ."
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Ai xác nhận ca",
+      "v10_topic": "Ai xác nhận ca",
+      "terms": [
+        {
+          "ja": "指示",
+          "reading": "しじ",
+          "han_viet": "CHỈ THỊ",
+          "vi": "chỉ đạo hoặc lời giao việc từ người phụ trách",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v031",
+          "evidence": [
+            {
+              "utterance_id": "a731aac3-2944-5da3-a96f-9527f7f4fc7d-u02",
+              "surface": "指示"
+            }
+          ]
+        },
+        {
+          "ja": "現地",
+          "reading": "げんち",
+          "han_viet": "HIỆN ĐỊA",
+          "vi": "nơi thực tế làm công việc đang cần xác nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v032",
+          "evidence": [
+            {
+              "utterance_id": "a731aac3-2944-5da3-a96f-9527f7f4fc7d-u03",
+              "surface": "現地"
+            }
+          ]
+        },
+        {
+          "ja": "責任者",
+          "reading": "せきにんしゃ",
+          "han_viet": "TRÁCH NHIỆM GIẢ",
+          "vi": "người chịu trách nhiệm xác nhận hoặc xử lý việc tại địa điểm hay bộ phận",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "id": "T-107-v033"
+        },
+        {
+          "ja": "担当者",
+          "reading": "たんとうしゃ",
+          "han_viet": "ĐẢM ĐƯƠNG GIẢ",
+          "vi": "người phụ trách phần việc cần hỏi hoặc kiểm tra",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "id": "T-107-v034",
+          "evidence": [
+            {
+              "utterance_id": "084559b6-ecb3-599a-bd3d-d43ded202e17-u04",
+              "surface": "担当者"
+            }
+          ]
+        },
+        {
+          "ja": "給与担当",
+          "reading": "きゅうよたんとう",
+          "han_viet": "CẤP DỮ ĐẢM ĐƯƠNG",
+          "vi": "người hoặc bộ phận phụ trách tính và cập nhật lương",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v035",
+          "evidence": [
+            {
+              "utterance_id": "916ea11a-58b0-5599-8c34-d47754ef3f9a-u03",
+              "surface": "給与担当"
+            }
+          ]
+        },
+        {
+          "ja": "承認",
+          "reading": "しょうにん",
+          "han_viet": "THỪA NHẬN",
+          "vi": "sự phê duyệt chấm công hoặc yêu cầu điều chỉnh của người có thẩm quyền nội bộ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v036"
+        },
+        {
+          "ja": "申告する",
+          "reading": "しんこくする",
+          "han_viet": "THÂN CÁO",
+          "vi": "báo rõ số giờ hoặc nội dung làm việc thực tế để người phụ trách ghi nhận",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v037",
+          "evidence": [
+            {
+              "utterance_id": "916ea11a-58b0-5599-8c34-d47754ef3f9a-u01",
+              "surface": "申告した"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-hours"
+          ]
+        },
+        {
+          "ja": "問い合わせ先",
+          "reading": "といあわせさき",
+          "han_viet": "VẤN HỢP TIÊN",
+          "vi": "đầu mối liên hệ để hỏi tình trạng hồ sơ hoặc yêu cầu giải thích",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v038"
+        },
+        {
+          "ja": "総合労働相談コーナー",
+          "reading": "そうごうろうどうそうだんこーなー",
+          "han_viet": "TỔNG HỢP LAO ĐỘNG TƯƠNG ĐÀM",
+          "vi": "điểm tư vấn lao động tổng hợp của hệ thống Cục Lao động Nhật Bản",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "id": "T-107-v039",
+          "evidence": [
+            {
+              "utterance_id": "abccc589-e906-5724-aa01-9e41d8503a21-u02",
+              "surface": "総合労働相談コーナー"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-help"
+          ],
+          "level_note_vi": "Cần biết đúng tên đầu mối để hỏi nơi tư vấn khi vẫn còn thắc mắc về tiền lương hoặc giờ làm."
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Theo dõi chỉnh sửa và khoản còn chờ",
+      "v10_topic": "Theo dõi chỉnh sửa và khoản còn chờ",
+      "terms": [
+        {
+          "ja": "修正する",
+          "reading": "しゅうせいする",
+          "han_viet": "TU CHÍNH",
+          "vi": "sửa thông tin đã ghi sai hoặc bị thiếu",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v040",
+          "evidence": [
+            {
+              "utterance_id": "aad88b60-a030-5b3e-8057-ed932e2408b2-u01",
+              "surface": "修正されたら"
+            }
+          ]
+        },
+        {
+          "ja": "訂正する",
+          "reading": "ていせいする",
+          "han_viet": "ĐÍNH CHÍNH",
+          "vi": "đính chính số liệu hay ngày giờ mình đã nói hoặc ghi sai",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v041",
+          "evidence": [
+            {
+              "utterance_id": "605a9d3d-b337-53f3-9a23-4728f1921e75-u01",
+              "surface": "訂正させて"
+            }
+          ]
+        },
+        {
+          "ja": "受付番号",
+          "reading": "うけつけばんごう",
+          "han_viet": "THỤ PHÓ PHIÊN HIỆU",
+          "vi": "mã tiếp nhận dùng để tra lại yêu cầu sửa chấm công",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v042",
+          "evidence": [
+            {
+              "utterance_id": "aad88b60-a030-5b3e-8057-ed932e2408b2-u01",
+              "surface": "受付番号"
+            }
+          ]
+        },
+        {
+          "ja": "反映する",
+          "reading": "はんえいする",
+          "han_viet": "PHẢN ÁNH",
+          "vi": "thể hiện dữ liệu mới trên hệ thống hoặc tính thay đổi vào lương",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v043",
+          "evidence": [
+            {
+              "utterance_id": "43734edc-822f-5a89-bfb0-be5f72581ee3-u01",
+              "surface": "反映されていません"
+            }
+          ]
+        },
+        {
+          "ja": "見込み",
+          "reading": "みこみ",
+          "han_viet": "KIẾN NHẬP",
+          "vi": "dự kiến về thời điểm có kết quả hoặc khi thay đổi được cập nhật",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "id": "T-107-v044",
+          "evidence": [
+            {
+              "utterance_id": "f7e139b4-80a6-5739-a1f4-a18e5afdf80e-u02",
+              "surface": "見込み"
+            }
+          ],
+          "source_refs": [
+            "jdict-komu"
+          ],
+          "note_vi": "Âm NHẬP cho chữ do Nhật tạo 込 theo quy ước của từ điển Nhật–Việt.",
+          "level_note_vi": "Cần dùng khi hỏi mốc dự kiến lúc bên phụ trách chưa thể xác nhận ngày cập nhật."
+        },
+        {
+          "ja": "確認済み",
+          "reading": "かくにんずみ",
+          "han_viet": "XÁC NHẬN TẾ",
+          "vi": "đã được xác nhận hoặc đối chiếu xong",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-107-v045",
+          "evidence": [
+            {
+              "utterance_id": "49ae9c0c-1b98-505d-b622-04934f59a148-u01",
+              "surface": "確認済み"
+            }
+          ]
+        },
+        {
+          "ja": "再計算する",
+          "reading": "さいけいさんする",
+          "han_viet": "TÁI KẾ TOÁN",
+          "vi": "tính lại lương hoặc số giờ sau khi có dữ liệu mới",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v046"
+        },
+        {
+          "ja": "未払い",
+          "reading": "みばらい",
+          "han_viet": "VỊ PHẤT",
+          "vi": "tình trạng một khoản đến hạn vẫn chưa được trả",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v047",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-overtime"
+          ],
+          "note_vi": "Dùng khi khoản phải trả vẫn chưa được trả, chẳng hạn 残業代の未払い."
+        },
+        {
+          "ja": "翌月分",
+          "reading": "よくげつぶん",
+          "han_viet": "DỰC NGUYỆT PHẦN",
+          "vi": "phần thuộc kỳ của tháng kế tiếp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-107-v048"
+        }
+      ]
+    }
+  ]
+}

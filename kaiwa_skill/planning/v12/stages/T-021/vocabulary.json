@@ -1,0 +1,932 @@
+{
+  "stage_uid": "394abfbc-1058-5cab-81b3-a7d251a69f00",
+  "stage_code": "T-021",
+  "admin_sources": {
+    "yamato-redel": {
+      "kind": "web",
+      "title": "再配達依頼 — ヤマト運輸",
+      "url": "https://www.kuronekoyamato.co.jp/ytc/customer/redelivery/redelivery/",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên phiếu vắng nhà, mã vận đơn, giao lại, nơi nhận và hạn lưu kiện."
+    },
+    "hv-address": {
+      "kind": "web",
+      "title": "宛 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E5%AE%9B",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác nhận UYỂN là âm được ghi cho 宛 theo mặt chữ."
+    },
+    "yamato-waybill": {
+      "kind": "web",
+      "title": "送り状（伝票）の準備 — ヤマト運輸",
+      "url": "https://www.kuronekoyamato.co.jp/ytc/customer/send/preparations/invoice/",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác nhận 送り状 và 伝票 là tên của phiếu vận chuyển."
+    },
+    "hv-ha": {
+      "kind": "web",
+      "title": "荷 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E8%8D%B7",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác nhận âm HẠ khi 荷 chỉ hàng, đồ mang theo hoặc hàng hóa."
+    },
+    "yamato-return": {
+      "kind": "web",
+      "title": "荷物が持戻となっていますが、どのような状況ですか？ — ヤマト運輸",
+      "url": "https://faq.kuronekoyamato.co.jp/app/answers/detail/a_id/1964/c/322",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi kiện bị mang về điểm phát khi chưa giao được."
+    },
+    "sagawa-faq": {
+      "kind": "web",
+      "title": "よくあるご質問 — 佐川急便",
+      "url": "https://www.sagawa-exp.co.jp/faq/?open=Q_001",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên trạng thái 配達完了, kiểm tra kiện chưa nhận và dấu nhận biết địa chỉ như 表札."
+    },
+    "ur-view": {
+      "kind": "web",
+      "title": "賃貸物件の内見時チェックリスト — UR都市機構",
+      "url": "https://www.ur-net.go.jp/chintai/college/202107/000698.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên và việc cần hỏi khi xem nhà, gồm 内見, 共用部 và 間取り図."
+    },
+    "sagawa-carry": {
+      "kind": "web",
+      "title": "飛脚宅配便等運送約款 — 佐川急便",
+      "url": "https://www.sagawa-exp.co.jp/assets/pdf/stipulation/stipulation_hikyaku.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên trường hợp 誤配 và bước lấy lại kiện khi báo giao nhầm."
+    },
+    "jp-wrong": {
+      "kind": "web",
+      "title": "他人あての郵便物が届きましたが、どうしたらいいのでしょうか？ — 日本郵便",
+      "url": "https://www.post.japanpost.jp/question/193.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi thư đến sai người; chỉ áp dụng hướng dẫn chi tiết của trang cho dịch vụ bưu điện tương ứng."
+    },
+    "hv-mod": {
+      "kind": "web",
+      "title": "戻 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E6%88%BB",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác nhận âm LỆ của 戻 trong 戻す, đối chiếu dị thể 戾."
+    },
+    "yamato-storage": {
+      "kind": "web",
+      "title": "長期不在で荷物が受け取れない場合 — ヤマト運輸",
+      "url": "https://faq.kuronekoyamato.co.jp/app/answers/detail/a_id/1264/",
+      "accessed": "2026-11-19",
+      "use_vi": "Thuật ngữ 保管期間, 営業所 và 返送 khi không giao được."
+    },
+    "hv-kot": {
+      "kind": "web",
+      "title": "断る — Mazii",
+      "url": "https://mazii.net/vi-VN/search/word/javi/%E6%AD%AD%E3%82%8B",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu âm ĐOẠN ứng với 断る theo nghĩa từ chối."
+    },
+    "yamato-proxy": {
+      "kind": "web",
+      "title": "営業所で、代理人が受け取る場合に持参するものは何ですか？ — ヤマト運輸",
+      "url": "https://faq.kuronekoyamato.co.jp/app/answers/detail/a_id/1366/c/320",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi người đại diện và giấy xác minh trong tình huống nhận thay tại điểm giao dịch."
+    },
+    "yamato-cod": {
+      "kind": "web",
+      "title": "代引きと着払いの違い — ヤマト運輸",
+      "url": "https://business.kuronekoyamato.co.jp/promotion/learning/payment/difference-between-cod-and-freight-collect/",
+      "accessed": "2026-11-19",
+      "use_vi": "Nghĩa của 代引き trong điều kiện nhận kiện."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Tên, số phòng, số kiện và người nhận",
+      "v10_topic": "Tên, số phòng, số kiện và người nhận",
+      "terms": [
+        {
+          "id": "T-021-v001",
+          "ja": "受取人",
+          "reading": "うけとりにん",
+          "han_viet": "THỤ THỦ NHÂN",
+          "vi": "người có tên nhận kiện",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "189f5be8-d597-5236-996b-217b5128ef33-u01",
+              "surface": "受取人"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-redel"
+          ]
+        },
+        {
+          "id": "T-021-v002",
+          "ja": "差出人",
+          "reading": "さしだしにん",
+          "han_viet": "SAI XUẤT NHÂN",
+          "vi": "người gửi kiện hoặc thư",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v003",
+          "ja": "宛名",
+          "reading": "あてな",
+          "han_viet": "UYỂN DANH",
+          "vi": "tên người được ghi để nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "hv-address"
+          ],
+          "note_vi": "Ghi âm UYỂN cho 宛 theo mặt chữ của từ Nhật."
+        },
+        {
+          "id": "T-021-v004",
+          "ja": "宛先",
+          "reading": "あてさき",
+          "han_viet": "UYỂN TIÊN",
+          "vi": "người hoặc địa chỉ nơi kiện được gửi tới",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ab05878a-a136-57be-b7fe-3d934f509457-u02",
+              "surface": "宛先"
+            },
+            {
+              "utterance_id": "cad977a4-c187-5135-a0a8-94f70015adc4-u03",
+              "surface": "宛先"
+            }
+          ],
+          "source_refs": [
+            "hv-address"
+          ],
+          "note_vi": "Ghi âm UYỂN cho 宛 theo mặt chữ của từ Nhật."
+        },
+        {
+          "id": "T-021-v005",
+          "ja": "部屋番号",
+          "reading": "へやばんごう",
+          "han_viet": "BỘ ỐC PHIÊN HIỆU",
+          "vi": "số căn hoặc số phòng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "29881b92-02e2-5f23-830c-53bd93ffa5a0-u02",
+              "surface": "部屋番号"
+            },
+            {
+              "utterance_id": "330790ec-8bc3-5ba4-b46a-f6102b507896-u02",
+              "surface": "部屋番号"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v048",
+          "ja": "番地",
+          "reading": "ばんち",
+          "han_viet": "PHIÊN ĐỊA",
+          "vi": "số thửa hoặc số địa chỉ trong khu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v049",
+          "ja": "配達員",
+          "reading": "はいたついん",
+          "han_viet": "PHỐI ĐẠT VIÊN",
+          "vi": "nhân viên đưa kiện đến giao",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v006",
+          "ja": "送り状番号",
+          "reading": "おくりじょうばんごう",
+          "han_viet": "TỐNG TRẠNG PHIÊN HIỆU",
+          "vi": "mã vận đơn dùng tra kiện hàng",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-redel"
+          ],
+          "level_note_vi": "Cần đọc đúng loại mã khi tổng đài hỏi số kiện cần tra.",
+          "note_vi": "Trong hội thoại gọi là 伝票番号; ở trang dịch vụ của ヤマト運輸 cũng ghi お問合せ番号."
+        },
+        {
+          "id": "T-021-v007",
+          "ja": "伝票",
+          "reading": "でんぴょう",
+          "han_viet": "TRUYỀN PHIẾU",
+          "vi": "phiếu đi kèm có thông tin giao kiện",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ab05878a-a136-57be-b7fe-3d934f509457-u03",
+              "surface": "伝票"
+            },
+            {
+              "utterance_id": "49dcb816-0d12-561a-917e-aa3422464b16-u02",
+              "surface": "伝票"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-waybill"
+          ]
+        },
+        {
+          "id": "T-021-v008",
+          "ja": "荷物",
+          "reading": "にもつ",
+          "han_viet": "HẠ VẬT",
+          "vi": "kiện hàng, đồ được giao",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "da53d0da-1194-5818-83a8-607451bf4536-u02",
+              "surface": "荷物"
+            },
+            {
+              "utterance_id": "da53d0da-1194-5818-83a8-607451bf4536-u03",
+              "surface": "荷物"
+            }
+          ],
+          "source_refs": [
+            "hv-ha"
+          ],
+          "note_vi": "荷 đọc HẠ vì chỉ hàng hoặc đồ."
+        },
+        {
+          "id": "T-021-v009",
+          "ja": "個",
+          "reading": "こ",
+          "han_viet": "CÁ",
+          "vi": "đơn vị đếm số kiện hoặc hộp",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "92386ce5-218e-51c1-ad47-67ab1d86ca94-u01",
+              "surface": "二個"
+            },
+            {
+              "utterance_id": "92386ce5-218e-51c1-ad47-67ab1d86ca94-u02",
+              "surface": "二個"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v010",
+          "ja": "受け取る",
+          "reading": "うけとる",
+          "han_viet": "THỤ THỦ",
+          "vi": "nhận kiện từ người giao hoặc người giữ hộ",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a957fbf9-233d-55ee-8b02-428735abec72-u04",
+              "surface": "受け取れる"
+            },
+            {
+              "utterance_id": "e1971e18-2726-5143-a4bd-dcbefa02ca25-u03",
+              "surface": "受け取れる"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Khung giờ, lối vào và giao lại khi vắng",
+      "v10_topic": "Khung giờ, lối vào và giao lại khi vắng",
+      "terms": [
+        {
+          "id": "T-021-v011",
+          "ja": "再配達",
+          "reading": "さいはいたつ",
+          "han_viet": "TÁI PHỐI ĐẠT",
+          "vi": "lần giao lại sau khi chưa giao được",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "07f90e1f-3887-53b6-a31e-4a9a48801786-u03",
+              "surface": "再配達"
+            },
+            {
+              "utterance_id": "ee5b7649-e387-592f-8a43-af1bff16861e-u01",
+              "surface": "再配達"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-redel"
+          ]
+        },
+        {
+          "id": "T-021-v012",
+          "ja": "不在票",
+          "reading": "ふざいひょう",
+          "han_viet": "BẤT TẠI PHIẾU",
+          "vi": "phiếu báo người giao đã ghé lúc vắng nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ee5b7649-e387-592f-8a43-af1bff16861e-u01",
+              "surface": "不在票"
+            },
+            {
+              "utterance_id": "f422fa2f-be9f-5ec4-a391-bbabc9dc4bfb-u01",
+              "surface": "不在票"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-redel",
+            "yamato-return"
+          ],
+          "note_vi": "Tên đầy đủ cũng gặp trên phiếu là ご不在連絡票."
+        },
+        {
+          "id": "T-021-v013",
+          "ja": "時間帯指定",
+          "reading": "じかんたいしてい",
+          "han_viet": "THỜI GIAN ĐỚI CHỈ ĐỊNH",
+          "vi": "chọn khung giờ giao",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-redel"
+          ]
+        },
+        {
+          "id": "T-021-v014",
+          "ja": "配達予定",
+          "reading": "はいたつよてい",
+          "han_viet": "PHỐI ĐẠT DỰ ĐỊNH",
+          "vi": "lịch dự kiến giao kiện",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v015",
+          "ja": "目印",
+          "reading": "めじるし",
+          "han_viet": "MỤC ẤN",
+          "vi": "mốc dễ nhìn để tìm đúng lối vào",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c14be67c-b2e9-5bd9-9bff-25d5dcf756c8-u01",
+              "surface": "目印"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v050",
+          "ja": "入口",
+          "reading": "いりぐち",
+          "han_viet": "NHẬP KHẨU",
+          "vi": "lối vào tòa nhà hoặc căn",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c14be67c-b2e9-5bd9-9bff-25d5dcf756c8-u01",
+              "surface": "入口"
+            },
+            {
+              "utterance_id": "c14be67c-b2e9-5bd9-9bff-25d5dcf756c8-u03",
+              "surface": "入口"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v016",
+          "ja": "表札",
+          "reading": "ひょうさつ",
+          "han_viet": "BIỂU TRÁT",
+          "vi": "biển tên gắn ở cửa hoặc cổng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "sagawa-faq"
+          ]
+        },
+        {
+          "id": "T-021-v017",
+          "ja": "路地",
+          "reading": "ろじ",
+          "han_viet": "LỘ ĐỊA",
+          "vi": "ngõ hay đường nhỏ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v018",
+          "ja": "置き配",
+          "reading": "おきはい",
+          "han_viet": "TRÍ PHỐI",
+          "vi": "giao bằng cách đặt kiện ở chỗ người nhận chỉ định",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "sagawa-faq"
+          ],
+          "level_note_vi": "Cần biết tên phương án giao khi người nhận vắng, tùy kiện và nơi ở."
+        },
+        {
+          "id": "T-021-v019",
+          "ja": "宅配ボックス",
+          "reading": "たくはいボックス",
+          "han_viet": "TRẠCH PHỐI",
+          "vi": "tủ nhận kiện khi người nhận không có mặt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "sagawa-faq",
+            "ur-view"
+          ]
+        },
+        {
+          "id": "T-021-v020",
+          "ja": "在宅",
+          "reading": "ざいたく",
+          "han_viet": "TẠI TRẠCH",
+          "vi": "có mặt ở nhà để nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c30e0b2e-5b0d-5446-84ca-0f712459ce8d-u03",
+              "surface": "在宅"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Từ chối kiện không dành cho mình",
+      "v10_topic": "Từ chối kiện không dành cho mình",
+      "terms": [
+        {
+          "id": "T-021-v021",
+          "ja": "誤配",
+          "reading": "ごはい",
+          "han_viet": "NGỘ PHỐI",
+          "vi": "việc giao kiện hoặc thư sai nơi hay sai người",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "sagawa-carry",
+            "jp-wrong"
+          ],
+          "level_note_vi": "Dùng khi cần báo với đơn vị vận chuyển rằng vừa nhận nhầm kiện."
+        },
+        {
+          "id": "T-021-v022",
+          "ja": "持ち戻る",
+          "reading": "もちもどる",
+          "han_viet": "TRÌ LỆ",
+          "vi": "mang kiện về lại điểm phát sau khi chưa giao được",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ab05878a-a136-57be-b7fe-3d934f509457-u02",
+              "surface": "持ち戻って"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-return",
+            "hv-mod"
+          ],
+          "note_vi": "戻 đọc LỆ theo nghĩa trở lại."
+        },
+        {
+          "id": "T-021-v023",
+          "ja": "返送する",
+          "reading": "へんそうする",
+          "han_viet": "PHẢN TỐNG",
+          "vi": "gửi kiện trở về người gửi hoặc nơi phát ban đầu",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-storage"
+          ]
+        },
+        {
+          "id": "T-021-v024",
+          "ja": "回収する",
+          "reading": "かいしゅうする",
+          "han_viet": "HỒI THU",
+          "vi": "đến thu lại kiện đã giao sai",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "sagawa-carry"
+          ]
+        },
+        {
+          "id": "T-021-v025",
+          "ja": "未開封",
+          "reading": "みかいふう",
+          "han_viet": "VỊ KHAI PHONG",
+          "vi": "kiện còn nguyên, chưa mở",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v026",
+          "ja": "照合する",
+          "reading": "しょうごうする",
+          "han_viet": "CHIẾU HỢP",
+          "vi": "đối chiếu tên, địa chỉ và mã kiện cho khớp",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v027",
+          "ja": "取り違える",
+          "reading": "とりちがえる",
+          "han_viet": "THỦ VI",
+          "vi": "nhầm người, số căn hoặc kiện này thành kiện khác",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v028",
+          "ja": "断る",
+          "reading": "ことわる",
+          "han_viet": "ĐOẠN",
+          "vi": "từ chối nhận kiện không gửi cho mình",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_refs": [
+            "hv-kot"
+          ],
+          "note_vi": "Dùng ĐOẠN cho 断る theo nghĩa từ chối."
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Nhận thay trong thời hạn rõ",
+      "v10_topic": "Nhận thay trong thời hạn rõ",
+      "terms": [
+        {
+          "id": "T-021-v029",
+          "ja": "代理人",
+          "reading": "だいりにん",
+          "han_viet": "ĐẠI LÝ NHÂN",
+          "vi": "người thay mặt người nhận khi bên giao cho phép",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-proxy"
+          ]
+        },
+        {
+          "id": "T-021-v030",
+          "ja": "本人確認",
+          "reading": "ほんにんかくにん",
+          "han_viet": "BẢN NHÂN XÁC NHẬN",
+          "vi": "việc kiểm người đang nhận có đúng danh tính cần xác nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-proxy"
+          ]
+        },
+        {
+          "id": "T-021-v031",
+          "ja": "代引き",
+          "reading": "だいびき",
+          "han_viet": "ĐẠI DẪN",
+          "vi": "thanh toán tiền hàng cho người giao lúc nhận",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-cod"
+          ],
+          "level_note_vi": "Dùng để hỏi trước kiện có khoản cần trả tại cửa khi nhờ nhận thay."
+        },
+        {
+          "id": "T-021-v032",
+          "ja": "預かる",
+          "reading": "あずかる",
+          "han_viet": "DỰ",
+          "vi": "nhận giữ hộ kiện cho người khác",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f89b7184-1104-5144-a6fa-6c38f13147c6-u01",
+              "surface": "預かっていた"
+            },
+            {
+              "utterance_id": "f89b7184-1104-5144-a6fa-6c38f13147c6-u03",
+              "surface": "預かった"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v033",
+          "ja": "預ける",
+          "reading": "あずける",
+          "han_viet": "DỰ",
+          "vi": "nhờ người khác giữ hộ kiện",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v034",
+          "ja": "受け渡し",
+          "reading": "うけわたし",
+          "han_viet": "THỤ ĐỘ",
+          "vi": "việc giao lại kiện từ người giữ hộ cho người nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v035",
+          "ja": "保管期限",
+          "reading": "ほかんきげん",
+          "han_viet": "BẢO QUẢN KỲ HẠN",
+          "vi": "hạn cuối bên giữ còn lưu kiện để nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-redel"
+          ]
+        },
+        {
+          "id": "T-021-v036",
+          "ja": "封",
+          "reading": "ふう",
+          "han_viet": "PHONG",
+          "vi": "phần niêm phong ngoài kiện hoặc phong bì",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81c24fbd-2711-5c11-9958-da4e2148db89-u04",
+              "surface": "封"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v037",
+          "ja": "中身",
+          "reading": "なかみ",
+          "han_viet": "TRUNG THÂN",
+          "vi": "đồ được chứa bên trong kiện",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f89b7184-1104-5144-a6fa-6c38f13147c6-u03",
+              "surface": "中身"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Kiện thiếu/nhầm và cuộc gọi theo dõi",
+      "v10_topic": "Kiện thiếu/nhầm và cuộc gọi theo dõi",
+      "terms": [
+        {
+          "id": "T-021-v038",
+          "ja": "配達状況",
+          "reading": "はいたつじょうきょう",
+          "han_viet": "PHỐI ĐẠT TRẠNG HUỐNG",
+          "vi": "trạng thái giao hiện tại của kiện",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "cad977a4-c187-5135-a0a8-94f70015adc4-u04",
+              "surface": "配達状況"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "sagawa-faq"
+          ]
+        },
+        {
+          "id": "T-021-v039",
+          "ja": "配達完了",
+          "reading": "はいたつかんりょう",
+          "han_viet": "PHỐI ĐẠT HOÀN LIỄU",
+          "vi": "trạng thái hệ thống đã ghi giao xong",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "sagawa-faq"
+          ]
+        },
+        {
+          "id": "T-021-v040",
+          "ja": "追跡する",
+          "reading": "ついせきする",
+          "han_viet": "TRUY TÍCH",
+          "vi": "tra theo mã để theo dõi vị trí và mốc giao",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "sagawa-faq"
+          ]
+        },
+        {
+          "id": "T-021-v041",
+          "ja": "営業所",
+          "reading": "えいぎょうしょ",
+          "han_viet": "DOANH NGHIỆP SỞ",
+          "vi": "điểm giao dịch hoặc kho phát hàng của hãng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "24a45d40-6297-512c-971d-39a759e135e3-u01",
+              "surface": "営業所"
+            },
+            {
+              "utterance_id": "1313b13f-354e-5604-b153-3a666f4a6760-u02",
+              "surface": "営業所"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamato-storage"
+          ]
+        },
+        {
+          "id": "T-021-v042",
+          "ja": "仕分け",
+          "reading": "しわけ",
+          "han_viet": "SĨ PHÂN",
+          "vi": "việc phân kiện theo tuyến hoặc nơi giao",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1313b13f-354e-5604-b153-3a666f4a6760-u02",
+              "surface": "仕分け"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v043",
+          "ja": "配達記録",
+          "reading": "はいたつきろく",
+          "han_viet": "PHỐI ĐẠT KÝ LỤC",
+          "vi": "ghi nhận thời điểm, trạng thái và lần giao",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "49dcb816-0d12-561a-917e-aa3422464b16-u04",
+              "surface": "配達記録"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "sagawa-faq"
+          ]
+        },
+        {
+          "id": "T-021-v044",
+          "ja": "見当たる",
+          "reading": "みあたる",
+          "han_viet": "KIẾN ĐƯƠNG",
+          "vi": "có thể tìm thấy kiện tại chỗ đang tìm",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-021-v045",
+          "ja": "問い合わせる",
+          "reading": "といあわせる",
+          "han_viet": "VẤN HỢP",
+          "vi": "liên hệ hãng để hỏi tình trạng kiện",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "92386ce5-218e-51c1-ad47-67ab1d86ca94-u04",
+              "surface": "お問い合わせください"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v046",
+          "ja": "確認結果",
+          "reading": "かくにんけっか",
+          "han_viet": "XÁC NHẬN KẾT QUẢ",
+          "vi": "kết quả sau khi nhân viên đã kiểm tra",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "07f90e1f-3887-53b6-a31e-4a9a48801786-u04",
+              "surface": "確認結果"
+            }
+          ]
+        },
+        {
+          "id": "T-021-v047",
+          "ja": "折り返す",
+          "reading": "おりかえす",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "gọi lại sau khi kiểm tra",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+{
+  "stage_uid": "e8118850-3f3c-5e38-9a2d-e00cac0a3b1b",
+  "stage_code": "T-086",
+  "admin_sources": {
+    "hold": {
+      "kind": "web",
+      "title": "保留機能の使い分けとは？ | NTT東日本",
+      "url": "https://business.ntt-east.co.jp/column/denwa/businessphone-hold.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Trạng thái giữ máy, chuyển máy, mở lại và cách xin khách chờ tiếp."
+    },
+    "transfer": {
+      "kind": "web",
+      "title": "会社の固定電話への外線着信を転送する4つのやり方 | NTT東日本",
+      "url": "https://business.ntt-east.co.jp/column/denwa/transfer_outside_call.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên máy nhánh, đường ngoài và thao tác chuyển tới máy khác."
+    },
+    "phone": {
+      "kind": "web",
+      "title": "電話のかけ方・電話応対 | 福島労働局",
+      "url": "https://jsite.mhlw.go.jp/fukushima-roudoukyoku/var/rev0/0147/1000/20171017164144.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách nhận lời nhắn, hỏi người cần gặp và thông báo người nhận vắng."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Bộ phận/ người cần nối",
+      "v10_topic": "Bộ phận/ người cần nối",
+      "terms": [
+        {
+          "id": "T-086-v001",
+          "ja": "つなぎ先",
+          "reading": "つなぎさき",
+          "han_viet": "TIÊN",
+          "vi": "người hoặc phòng sẽ được nối máy",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "320c32b2-29a9-5010-abba-aa9b24edfaae-u02",
+              "surface": "つなぎ先"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v002",
+          "ja": "担当部署",
+          "reading": "たんとうぶしょ",
+          "han_viet": "ĐẢM ĐƯƠNG BỘ THỰ",
+          "vi": "bộ phận phụ trách việc này",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-086-v003",
+          "ja": "営業",
+          "reading": "えいぎょう",
+          "han_viet": "DOANH NGHIỆP",
+          "vi": "bộ phận phụ trách bán hàng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eec38cad-a860-5688-8e4f-37464ee53e49-u02",
+              "surface": "営業"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v004",
+          "ja": "経理",
+          "reading": "けいり",
+          "han_viet": "KINH LÝ",
+          "vi": "bộ phận kế toán",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5ae257fc-530a-5799-bf19-b8e652801b5a-u03",
+              "surface": "経理"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v005",
+          "ja": "代表番号",
+          "reading": "だいひょうばんごう",
+          "han_viet": "ĐẠI BIỂU PHIÊN HIỆU",
+          "vi": "số tổng đài của công ty",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0618e5fb-2d29-541d-9e97-76f953dc4383-u02",
+              "surface": "代表番号"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v006",
+          "ja": "内線",
+          "reading": "ないせん",
+          "han_viet": "NỘI TUYẾN",
+          "vi": "đường dây hoặc máy nhánh nội bộ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "transfer"
+          ]
+        },
+        {
+          "id": "T-086-v007",
+          "ja": "外線",
+          "reading": "がいせん",
+          "han_viet": "NGOẠI TUYẾN",
+          "vi": "đường gọi từ ngoài công ty",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "transfer"
+          ]
+        },
+        {
+          "id": "T-086-v008",
+          "ja": "転送する",
+          "reading": "てんそうする",
+          "han_viet": "CHUYỂN TỐNG",
+          "vi": "chuyển cuộc gọi sang máy khác",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "transfer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Xin phép trước khi giữ máy",
+      "v10_topic": "Xin phép trước khi giữ máy",
+      "terms": [
+        {
+          "id": "T-086-v009",
+          "ja": "保留する",
+          "reading": "ほりゅうする",
+          "han_viet": "BẢO LƯU",
+          "vi": "tạm giữ cuộc gọi để người kia chờ",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "hold"
+          ]
+        },
+        {
+          "id": "T-086-v010",
+          "ja": "取り次ぐ",
+          "reading": "とりつぐ",
+          "han_viet": "THỦ THỨ",
+          "vi": "nối cuộc gọi đến đúng người",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần diễn đạt vai trò người nhận máy trung gian khi hỏi đầu mối."
+        },
+        {
+          "id": "T-086-v011",
+          "ja": "少々お待ちください",
+          "reading": "しょうしょうおまちください",
+          "han_viet": "THIỂU THIỂU ĐÃI",
+          "vi": "xin anh/chị chờ một chút",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5ae257fc-530a-5799-bf19-b8e652801b5a-u06",
+              "surface": "少々お待ちください"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v012",
+          "ja": "おつなぎする",
+          "reading": "おつなぎする",
+          "han_viet": "",
+          "vi": "xin nối máy",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "T-086-SH01",
+              "surface": "おつなぎします"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v013",
+          "ja": "このままでお待ちください",
+          "reading": "このままでおまちください",
+          "han_viet": "ĐÃI",
+          "vi": "xin giữ máy và chờ, đừng ngắt cuộc gọi",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "T-086-SH01",
+              "surface": "このままでお待ちください"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v014",
+          "ja": "確認する",
+          "reading": "かくにんする",
+          "han_viet": "XÁC NHẬN",
+          "vi": "kiểm tra xem có thể nối không",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eec38cad-a860-5688-8e4f-37464ee53e49-u05",
+              "surface": "確認します"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v015",
+          "ja": "保留音",
+          "reading": "ほりゅうおん",
+          "han_viet": "BẢO LƯU ÂM",
+          "vi": "âm thanh phát ra trong lúc máy đang giữ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "hold"
+          ]
+        },
+        {
+          "id": "T-086-v016",
+          "ja": "保留を解除する",
+          "reading": "ほりゅうをかいじょする",
+          "han_viet": "BẢO LƯU GIẢI TRỪ",
+          "vi": "kết thúc chế độ giữ máy, nói chuyện lại",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "hold"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Người nhận bận hoặc vắng",
+      "v10_topic": "Người nhận bận hoặc vắng",
+      "terms": [
+        {
+          "id": "T-086-v017",
+          "ja": "通話中",
+          "reading": "つうわちゅう",
+          "han_viet": "THÔNG THOẠI TRUNG",
+          "vi": "đang trong cuộc gọi khác",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "hold"
+          ]
+        },
+        {
+          "id": "T-086-v018",
+          "ja": "席を外す",
+          "reading": "せきをはずす",
+          "han_viet": "TỊCH NGOẠI",
+          "vi": "tạm rời chỗ ngồi",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "326242eb-ed16-5647-8846-a6c886d5f077-u01",
+              "surface": "席を外して"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v019",
+          "ja": "不在",
+          "reading": "ふざい",
+          "han_viet": "BẤT TẠI",
+          "vi": "đang vắng mặt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "phone"
+          ]
+        },
+        {
+          "id": "T-086-v020",
+          "ja": "離席",
+          "reading": "りせき",
+          "han_viet": "LY TỊCH",
+          "vi": "việc tạm rời bàn làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-086-v021",
+          "ja": "外出中",
+          "reading": "がいしゅつちゅう",
+          "han_viet": "NGOẠI XUẤT TRUNG",
+          "vi": "đang ra ngoài",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-086-v022",
+          "ja": "戻り次第",
+          "reading": "もどりしだい",
+          "han_viet": "LỆ THỨ ĐỆ",
+          "vi": "ngay khi người đó trở lại",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "326242eb-ed16-5647-8846-a6c886d5f077-u01",
+              "surface": "戻り次第"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v023",
+          "ja": "電話に出る",
+          "reading": "でんわにでる",
+          "han_viet": "ĐIỆN THOẠI XUẤT",
+          "vi": "nhấc máy nghe điện thoại",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "56fa38ba-b9ab-5ff5-9752-f1cb9d185fe0-u01",
+              "surface": "電話に出ています"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v024",
+          "ja": "在席時間",
+          "reading": "ざいせきじかん",
+          "han_viet": "TẠI TỊCH THỜI GIAN",
+          "vi": "khoảng thời gian có mặt ở bàn làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Quay lại báo chờ lâu",
+      "v10_topic": "Quay lại báo chờ lâu",
+      "terms": [
+        {
+          "id": "T-086-v025",
+          "ja": "お待たせしました",
+          "reading": "おまたせしました",
+          "han_viet": "ĐÃI",
+          "vi": "cảm ơn anh/chị đã đợi, xin lỗi đã để đợi",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "67be3266-593f-55f3-b6bc-f4d2da2a1b83-u01",
+              "surface": "お待たせしました"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v026",
+          "ja": "あと数分",
+          "reading": "あとすうふん",
+          "han_viet": "SỐ PHÂN",
+          "vi": "thêm vài phút nữa",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2f17ca53-86b9-5d58-886a-98910a8d965d-u01",
+              "surface": "あと数分"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v027",
+          "ja": "長引く",
+          "reading": "ながびく",
+          "han_viet": "TRƯỜNG DẪN",
+          "vi": "kéo dài ngoài dự kiến",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-086-v028",
+          "ja": "お待ちになる",
+          "reading": "おまちになる",
+          "han_viet": "ĐÃI",
+          "vi": "chờ, lối tôn kính với khách",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4deeeeac-b4ac-59a4-b243-cce42a521ce3-u01",
+              "surface": "お待ちになります"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v029",
+          "ja": "電話が切れる",
+          "reading": "でんわがきれる",
+          "han_viet": "ĐIỆN THOẠI THIẾT",
+          "vi": "điện thoại bị ngắt",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "48f282a0-4715-563f-985c-c08d52e6a8b0-u01",
+              "surface": "電話が切れて"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v030",
+          "ja": "折り返す",
+          "reading": "おりかえす",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "gọi lại để trả lời cuộc vừa nhận",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4deeeeac-b4ac-59a4-b243-cce42a521ce3-u02",
+              "surface": "折り返して"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v031",
+          "ja": "一報",
+          "reading": "いっぽう",
+          "han_viet": "NHẤT BÁO",
+          "vi": "một thông báo ngắn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "326242eb-ed16-5647-8846-a6c886d5f077-u04",
+              "surface": "一報"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v032",
+          "ja": "目安",
+          "reading": "めやす",
+          "han_viet": "MỤC AN",
+          "vi": "mốc dự kiến",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần báo với khách giờ dự tính nối lại khi người phụ trách chưa sẵn sàng.",
+          "evidence": [
+            {
+              "utterance_id": "326242eb-ed16-5647-8846-a6c886d5f077-u03",
+              "surface": "目安"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Gọi nhầm và lựa chọn nhắn lại",
+      "v10_topic": "Gọi nhầm và lựa chọn nhắn lại",
+      "terms": [
+        {
+          "id": "T-086-v033",
+          "ja": "間違い電話",
+          "reading": "まちがいでんわ",
+          "han_viet": "GIAN VI ĐIỆN THOẠI",
+          "vi": "cuộc gọi nhầm số hoặc nơi nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-086-v034",
+          "ja": "かけ間違える",
+          "reading": "かけまちがえる",
+          "han_viet": "GIAN VI",
+          "vi": "quay nhầm số điện thoại",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-086-v035",
+          "ja": "見当たる",
+          "reading": "みあたる",
+          "han_viet": "KIẾN ĐƯƠNG",
+          "vi": "tìm thấy tên hoặc thông tin cần tìm",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bded0527-5c7a-5f11-b7d8-c316ccae5672-u03",
+              "surface": "見当たりません"
+            }
+          ],
+          "level_note_vi": "Cần nói khi chưa tìm thấy người khách nêu trong danh bạ công ty."
+        },
+        {
+          "id": "T-086-v036",
+          "ja": "末尾",
+          "reading": "まつび",
+          "han_viet": "MẠT VĨ",
+          "vi": "phần cuối dãy số",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0618e5fb-2d29-541d-9e97-76f953dc4383-u02",
+              "surface": "末尾"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v037",
+          "ja": "かけ直す",
+          "reading": "かけなおす",
+          "han_viet": "TRỰC",
+          "vi": "quay số gọi lại",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0618e5fb-2d29-541d-9e97-76f953dc4383-u05",
+              "surface": "かけ直します"
+            }
+          ]
+        },
+        {
+          "id": "T-086-v038",
+          "ja": "伝言",
+          "reading": "でんごん",
+          "han_viet": "TRUYỀN NGÔN",
+          "vi": "lời nhắn chuyển cho người khác",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2f17ca53-86b9-5d58-886a-98910a8d965d-u04",
+              "surface": "伝言"
+            }
+          ],
+          "source_refs": [
+            "phone"
+          ]
+        },
+        {
+          "id": "T-086-v039",
+          "ja": "ご用件を承る",
+          "reading": "ごようけんをうけたまわる",
+          "han_viet": "DỤNG KIỆN THỪA",
+          "vi": "xin nhận nội dung cần nhắn",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "phone"
+          ]
+        },
+        {
+          "id": "T-086-v040",
+          "ja": "宛先",
+          "reading": "あてさき",
+          "han_viet": "UYỂN TIÊN",
+          "vi": "địa chỉ hoặc người nhận được ghi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "320c32b2-29a9-5010-abba-aa9b24edfaae-u02",
+              "surface": "宛先"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,928 @@
+{
+  "stage_uid": "a4150987-8d50-5a62-a836-a8ad9f17704c",
+  "stage_code": "T-049",
+  "admin_sources": {
+    "pmda-use": {
+      "kind": "web",
+      "title": "医師から処方されたくすりを使用する場合の注意｜PMDA",
+      "url": "https://www.pmda.go.jp/safety/consultation-for-patients/on-drugs/qa/0001.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên cách dùng, liều, thuốc đang dùng, dạng viên và hỏi bác sĩ hoặc dược sĩ."
+    },
+    "pmda-leaflet": {
+      "kind": "web",
+      "title": "知っておきたい薬のこと｜PMDA",
+      "url": "https://www.pmda.go.jp/files/000226365.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên cách dùng theo bữa, sổ thuốc, cách nói quên uống và tác dụng phụ."
+    },
+    "pmda-symptoms": {
+      "kind": "web",
+      "title": "重篤副作用疾患別対応マニュアル（患者・一般の方向け）｜PMDA",
+      "url": "https://www.pmda.go.jp/safety/info-services/drugs/adr-info/manuals-for-public/0001.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi phát ban, ngứa, khó thở và sưng khi kể tình trạng với chuyên viên."
+    },
+    "pmda-sleep": {
+      "kind": "web",
+      "title": "服用中は車の運転をしてはいけないくすりがあるのはなぜか｜PMDA",
+      "url": "https://www.pmda.go.jp/safety/consultation-for-patients/on-drugs/qa/0015.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi buồn ngủ và chóng mặt trong trao đổi về thuốc."
+    },
+    "mhlw-rx": {
+      "kind": "web",
+      "title": "国民の皆さま向け 電子処方せんQ＆A｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/denshishohousen_kokumin_QA.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên giấy kê, hạn dùng đơn, thuốc generic, cấp theo đợt và đơn có thể dùng lặp."
+    },
+    "mhlw-refill": {
+      "kind": "web",
+      "title": "長期処方・リフィル処方せんについて｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/content/001270048.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi đơn dài hạn, lần cấp tiếp, dược sĩ và bác sĩ kê."
+    },
+    "hv-ha": {
+      "kind": "web",
+      "title": "荷｜Từ điển Hán Nôm Thi Viện",
+      "url": "https://hvdic.thivien.net/whv/荷",
+      "accessed": "2026-11-19",
+      "use_vi": "Âm HẠ theo nghĩa hàng hóa."
+    },
+    "pmda-forms": {
+      "kind": "web",
+      "title": "剤形・Dosage Forms｜PMDA",
+      "url": "https://www.pmda.go.jp/files/000264446.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên dạng viên nang, thuốc bột, thuốc bôi, thuốc hít và miếng dán."
+    },
+    "pmda-class": {
+      "kind": "web",
+      "title": "製剤を分類するには？｜PMDA",
+      "url": "https://www.pmda.go.jp/files/000158774.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Các dạng thuốc theo đặc điểm bào chế, gồm dung dịch và thuốc dùng ngoài."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Tên thuốc đang dùng và đơn mới",
+      "v10_topic": "Tên thuốc đang dùng và đơn mới",
+      "terms": [
+        {
+          "id": "T-049-v001",
+          "ja": "処方箋",
+          "reading": "しょほうせん",
+          "han_viet": "XỬ PHƯƠNG TIÊN",
+          "vi": "đơn thuốc dùng lĩnh thuốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fe6a80b3-24bd-5065-9e18-481460b3a318-u01",
+              "surface": "処方箋"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-rx"
+          ]
+        },
+        {
+          "id": "T-049-v002",
+          "ja": "お薬手帳",
+          "reading": "おくすりてちょう",
+          "han_viet": "DƯỢC THỦ TRƯỚNG",
+          "vi": "sổ theo dõi thuốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fe6a80b3-24bd-5065-9e18-481460b3a318-u02",
+              "surface": "お薬手帳"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v003",
+          "ja": "服用する",
+          "reading": "ふくようする",
+          "han_viet": "PHỤC DỤNG",
+          "vi": "uống thuốc",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v004",
+          "ja": "有効成分",
+          "reading": "ゆうこうせいぶん",
+          "han_viet": "HỮU HIỆU THÀNH PHÂN",
+          "vi": "hoạt chất có tác dụng trong thuốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "90a60953-6c95-592d-b7ce-8716c4dc46de-u02",
+              "surface": "有効成分"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v005",
+          "ja": "市販薬",
+          "reading": "しはんやく",
+          "han_viet": "THỊ PHIẾN DƯỢC",
+          "vi": "thuốc bán ngoài không cần đơn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v006",
+          "ja": "薬袋",
+          "reading": "やくたい",
+          "han_viet": "DƯỢC ĐẠI",
+          "vi": "túi đựng thuốc có thông tin sử dụng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6aa45f38-fd50-57b1-a679-04a9037972f3-u02",
+              "surface": "薬袋"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v007",
+          "ja": "錠剤",
+          "reading": "じょうざい",
+          "han_viet": "ĐĨNH TỄ",
+          "vi": "thuốc viên nén",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v008",
+          "ja": "剤形",
+          "reading": "ざいけい",
+          "han_viet": "TỄ HÌNH",
+          "vi": "dạng bào chế như viên, gói hoặc nước",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Từ để hỏi khác biệt giữa thuốc đang có và loại mới được đưa.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v009",
+          "ja": "処方医",
+          "reading": "しょほうい",
+          "han_viet": "XỬ PHƯƠNG Y",
+          "vi": "bác sĩ kê đơn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-refill"
+          ]
+        },
+        {
+          "id": "T-049-v043",
+          "ja": "カプセル剤",
+          "reading": "カプセルざい",
+          "han_viet": "TỄ",
+          "vi": "thuốc viên nang",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-forms"
+          ]
+        },
+        {
+          "id": "T-049-v044",
+          "ja": "粉薬",
+          "reading": "こなぐすり",
+          "han_viet": "PHẤN DƯỢC",
+          "vi": "thuốc dạng bột",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-forms"
+          ]
+        },
+        {
+          "id": "T-049-v045",
+          "ja": "液剤",
+          "reading": "えきざい",
+          "han_viet": "DỊCH TỄ",
+          "vi": "thuốc dạng lỏng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-class"
+          ]
+        },
+        {
+          "id": "T-049-v046",
+          "ja": "外用薬",
+          "reading": "がいようやく",
+          "han_viet": "NGOẠI DỤNG DƯỢC",
+          "vi": "thuốc dùng ngoài",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-forms"
+          ]
+        },
+        {
+          "id": "T-049-v047",
+          "ja": "目薬",
+          "reading": "めぐすり",
+          "han_viet": "MỤC DƯỢC",
+          "vi": "thuốc nhỏ mắt",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-class"
+          ]
+        },
+        {
+          "id": "T-049-v048",
+          "ja": "吸入薬",
+          "reading": "きゅうにゅうやく",
+          "han_viet": "HẤP NHẬP DƯỢC",
+          "vi": "thuốc dùng bằng đường hít",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-forms"
+          ]
+        },
+        {
+          "id": "T-049-v049",
+          "ja": "貼り薬",
+          "reading": "はりぐすり",
+          "han_viet": "THIẾP DƯỢC",
+          "vi": "thuốc dùng bằng cách dán lên da",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-forms"
+          ]
+        },
+        {
+          "id": "T-049-v050",
+          "ja": "軟膏",
+          "reading": "なんこう",
+          "han_viet": "NHUYỄN CAO",
+          "vi": "thuốc mỡ bôi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-forms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Liều, thời điểm và trước/sau bữa",
+      "v10_topic": "Liều, thời điểm và trước/sau bữa",
+      "terms": [
+        {
+          "id": "T-049-v010",
+          "ja": "用法",
+          "reading": "ようほう",
+          "han_viet": "DỤNG PHÁP",
+          "vi": "cách dùng và thời điểm dùng thuốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v011",
+          "ja": "用量",
+          "reading": "ようりょう",
+          "han_viet": "DỤNG LƯỢNG",
+          "vi": "lượng thuốc được chỉ định",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v012",
+          "ja": "食前",
+          "reading": "しょくぜん",
+          "han_viet": "THỰC TIỀN",
+          "vi": "trước bữa ăn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f8288404-1f6a-53df-a40c-96d98da48687-u01",
+              "surface": "食前"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v013",
+          "ja": "食後",
+          "reading": "しょくご",
+          "han_viet": "THỰC HẬU",
+          "vi": "sau bữa ăn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "281fbff4-697b-5905-b15d-13ddd403135a-u01",
+              "surface": "食後"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v014",
+          "ja": "食間",
+          "reading": "しょっかん",
+          "han_viet": "THỰC GIAN",
+          "vi": "vào khoảng giữa hai bữa ăn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v015",
+          "ja": "就寝前",
+          "reading": "しゅうしんまえ",
+          "han_viet": "TỰU TẨM TIỀN",
+          "vi": "trước khi đi ngủ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v016",
+          "ja": "頓服",
+          "reading": "とんぷく",
+          "han_viet": "ĐỐN PHỤC",
+          "vi": "cách dùng thuốc khi có triệu chứng theo chỉ định",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Thuật ngữ trên túi thuốc cần nhận ra khi hỏi dùng lúc nào.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v017",
+          "ja": "錠",
+          "reading": "じょう",
+          "han_viet": "ĐĨNH",
+          "vi": "đơn vị đếm viên nén",
+          "pos": "counter",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "281fbff4-697b-5905-b15d-13ddd403135a-u02",
+              "surface": "一錠"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v018",
+          "ja": "飲み忘れる",
+          "reading": "のみわすれる",
+          "han_viet": "ẨM VONG",
+          "vi": "quên uống một lần thuốc",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-leaflet"
+          ]
+        },
+        {
+          "id": "T-049-v051",
+          "ja": "塗る",
+          "reading": "ぬる",
+          "han_viet": "ĐỒ",
+          "vi": "bôi thuốc lên da",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-forms"
+          ]
+        },
+        {
+          "id": "T-049-v052",
+          "ja": "貼る",
+          "reading": "はる",
+          "han_viet": "THIẾP",
+          "vi": "dán miếng thuốc lên da",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-forms"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Thuốc thiếu hoặc khác đơn",
+      "v10_topic": "Thuốc thiếu hoặc khác đơn",
+      "terms": [
+        {
+          "id": "T-049-v019",
+          "ja": "在庫",
+          "reading": "ざいこ",
+          "han_viet": "TẠI KHỐ",
+          "vi": "lượng thuốc hiện có trong kho",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "819e020e-deb4-5d85-9174-bda7a9e34b71-u02",
+              "surface": "在庫"
+            }
+          ]
+        },
+        {
+          "id": "T-049-v020",
+          "ja": "品切れ",
+          "reading": "しなぎれ",
+          "han_viet": "PHẨM THIẾT",
+          "vi": "hết hàng ở nơi bán hoặc nhà thuốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-049-v021",
+          "ja": "入荷待ち",
+          "reading": "にゅうかまち",
+          "han_viet": "NHẬP HẠ ĐÃI",
+          "vi": "đang chờ hàng được giao về",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u02",
+              "surface": "入荷待ち"
+            }
+          ],
+          "source_refs": [
+            "hv-ha"
+          ],
+          "note_vi": "荷 dùng âm HẠ ở nghĩa hàng."
+        },
+        {
+          "id": "T-049-v022",
+          "ja": "未交付",
+          "reading": "みこうふ",
+          "han_viet": "VỊ GIAO PHÓ",
+          "vi": "thuốc chưa được giao cho người nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "404eb474-5845-57b3-a1d3-13b1c4cfbb47-u03",
+              "surface": "未交付"
+            }
+          ]
+        },
+        {
+          "id": "T-049-v023",
+          "ja": "調剤",
+          "reading": "ちょうざい",
+          "han_viet": "ĐIỀU TỄ",
+          "vi": "việc chuẩn bị và cấp thuốc theo đơn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên thao tác người học cần hiểu khi hỏi thuốc đã chuẩn bị xong chưa.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-rx"
+          ]
+        },
+        {
+          "id": "T-049-v024",
+          "ja": "ジェネリック医薬品",
+          "reading": "ジェネリックいやくひん",
+          "han_viet": "Y DƯỢC PHẨM",
+          "vi": "thuốc generic",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên lựa chọn dược sĩ có thể nêu khi trao đổi về loại thuốc hoặc giá.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-rx"
+          ]
+        },
+        {
+          "id": "T-049-v025",
+          "ja": "見比べる",
+          "reading": "みくらべる",
+          "han_viet": "KIẾN TỶ",
+          "vi": "đem hai giấy hoặc hai hộp ra so",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "442e9a55-7361-5b48-ab62-b79f5706a0f9-u02",
+              "surface": "見比べて"
+            }
+          ]
+        },
+        {
+          "id": "T-049-v026",
+          "ja": "照合する",
+          "reading": "しょうごうする",
+          "han_viet": "CHIẾU HỢP",
+          "vi": "đối chiếu tên, thành phần hoặc đơn với sổ thuốc",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "281fbff4-697b-5905-b15d-13ddd403135a-u04",
+              "surface": "照合して"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Biểu hiện lạ và người chuyên môn",
+      "v10_topic": "Biểu hiện lạ và người chuyên môn",
+      "terms": [
+        {
+          "id": "T-049-v027",
+          "ja": "副作用",
+          "reading": "ふくさよう",
+          "han_viet": "PHÓ TÁC DỤNG",
+          "vi": "tác dụng phụ của thuốc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v028",
+          "ja": "発疹",
+          "reading": "ほっしん",
+          "han_viet": "PHÁT CHẨN",
+          "vi": "nổi ban trên da",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "188696f0-5661-50c9-9519-b1694d53441a-u01",
+              "surface": "発疹"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-symptoms"
+          ]
+        },
+        {
+          "id": "T-049-v029",
+          "ja": "かゆみ",
+          "reading": "かゆみ",
+          "han_viet": "",
+          "vi": "ngứa",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-symptoms"
+          ]
+        },
+        {
+          "id": "T-049-v030",
+          "ja": "息苦しさ",
+          "reading": "いきぐるしさ",
+          "han_viet": "TỨC KHỔ",
+          "vi": "cảm giác khó thở",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "188696f0-5661-50c9-9519-b1694d53441a-u02",
+              "surface": "息苦しさ"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-symptoms"
+          ]
+        },
+        {
+          "id": "T-049-v031",
+          "ja": "腫れ",
+          "reading": "はれ",
+          "han_viet": "THŨNG",
+          "vi": "chỗ sưng hoặc tình trạng sưng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "188696f0-5661-50c9-9519-b1694d53441a-u02",
+              "surface": "腫れ"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-symptoms"
+          ]
+        },
+        {
+          "id": "T-049-v032",
+          "ja": "眠い",
+          "reading": "ねむい",
+          "han_viet": "MIÊN",
+          "vi": "buồn ngủ",
+          "pos": "i_adj",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "T-049-SH01",
+              "surface": "眠くなります"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-sleep"
+          ]
+        },
+        {
+          "id": "T-049-v033",
+          "ja": "飲み合わせ",
+          "reading": "のみあわせ",
+          "han_viet": "ẨM HỢP",
+          "vi": "sự phối hợp và khả năng tương tác giữa các thuốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "T-049-v034",
+          "ja": "薬剤師",
+          "reading": "やくざいし",
+          "han_viet": "DƯỢC TỄ SƯ",
+          "vi": "dược sĩ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Lần cấp tiếp và đầu mối liên hệ",
+      "v10_topic": "Lần cấp tiếp và đầu mối liên hệ",
+      "terms": [
+        {
+          "id": "T-049-v035",
+          "ja": "残量",
+          "reading": "ざんりょう",
+          "han_viet": "TÀN LƯỢNG",
+          "vi": "lượng thuốc còn lại",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-049-v036",
+          "ja": "再診",
+          "reading": "さいしん",
+          "han_viet": "TÁI CHẨN",
+          "vi": "buổi khám lại",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7a5fc14d-d6fc-588d-bf9d-ec5e50f71a40-u01",
+              "surface": "再診"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-refill"
+          ]
+        },
+        {
+          "id": "T-049-v037",
+          "ja": "長期処方",
+          "reading": "ちょうきしょほう",
+          "han_viet": "TRƯỜNG KỲ XỬ PHƯƠNG",
+          "vi": "kê thuốc cho một đợt dài",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-refill"
+          ]
+        },
+        {
+          "id": "T-049-v038",
+          "ja": "リフィル処方箋",
+          "reading": "リフィルしょほうせん",
+          "han_viet": "XỬ PHƯƠNG TIÊN",
+          "vi": "đơn thuốc được dùng lĩnh thuốc nhiều lần theo chỉ định",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên loại đơn cần nhận ra khi hỏi lần cấp tiếp phải đưa giấy nào.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-rx"
+          ]
+        },
+        {
+          "id": "T-049-v039",
+          "ja": "有効期限",
+          "reading": "ゆうこうきげん",
+          "han_viet": "HỮU HIỆU KỲ HẠN",
+          "vi": "hạn hiệu lực của đơn thuốc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-rx"
+          ]
+        },
+        {
+          "id": "T-049-v040",
+          "ja": "処方日",
+          "reading": "しょほうび",
+          "han_viet": "XỬ PHƯƠNG NHẬT",
+          "vi": "ngày bác sĩ kê đơn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6aa45f38-fd50-57b1-a679-04a9037972f3-u02",
+              "surface": "処方日"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-rx"
+          ]
+        },
+        {
+          "id": "T-049-v041",
+          "ja": "時間外",
+          "reading": "じかんがい",
+          "han_viet": "THỜI GIAN NGOẠI",
+          "vi": "ngoài giờ làm việc của nhà thuốc hoặc phòng khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6aa45f38-fd50-57b1-a679-04a9037972f3-u04",
+              "surface": "時間外"
+            }
+          ]
+        },
+        {
+          "id": "T-049-v042",
+          "ja": "折り返し",
+          "reading": "おりかえし",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "cuộc gọi lại để báo kết quả",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e9e69b7d-6940-50b4-9420-20a740ef988a-u01",
+              "surface": "折り返し"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

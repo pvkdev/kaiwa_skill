@@ -1,0 +1,983 @@
+{
+  "stage_uid": "36b7df83-3fb3-5528-8551-ee33068e6fa7",
+  "stage_code": "S-050",
+  "admin_sources": {
+    "gov-meds": {
+      "kind": "web",
+      "title": "知っておきたい 薬のリスクと、正しい使い方｜政府広報オンライン",
+      "url": "https://www.gov-online.go.jp/article/201310/entry-8822.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi 薬剤師, お薬手帳, 副作用, 用法 và 用量."
+    },
+    "mhlw-roles": {
+      "kind": "web",
+      "title": "医薬品販売／登録販売者｜厚生労働省 職業情報提供サイト",
+      "url": "https://shigoto.mhlw.go.jp/Occupation/Detail?occupationId=448",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên người được đăng ký bán thuốc, phân biệt với dược sĩ và cách gọi ドラッグストア."
+    },
+    "pmda-otc": {
+      "kind": "web",
+      "title": "Q1 医師が処方するくすりと市販のくすりはどのようにちがうのですか？｜PMDA",
+      "url": "https://www.pmda.go.jp/safety/consultation-for-patients/on-drugs/qa/0025.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên thuốc bán không cần đơn, thuốc kê đơn, triệu chứng ghi trên hộp và tờ hướng dẫn."
+    },
+    "mhlw-market": {
+      "kind": "web",
+      "title": "薬の専門家にご相談ください ～市販の薬を買うとき①～｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/file/06-Seisakujouhou-11120000-Iyakushokuhinkyoku/0000056492.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi 胃薬 và 処方薬 trong mô tả nhóm sản phẩm."
+    },
+    "pmda-use": {
+      "kind": "web",
+      "title": "薬は正しく使いましょう｜PMDA",
+      "url": "https://www.pmda.go.jp/files/000226365.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu các mốc 食前・食後・食間 và từ 頓服 trên tờ hướng dẫn."
+    },
+    "mhlw-label": {
+      "kind": "web",
+      "title": "かぜ薬等の添付文書等に記載する使用上の注意の一部改正について｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tc9671&dataType=1",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu nhóm thuốc và từ chỉ phản ứng trên tờ hướng dẫn như 眠気・かゆみ・発疹."
+    },
+    "mhlw-med-expr": {
+      "kind": "web",
+      "title": "薬に関する基礎知識｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/file/06-Seisakujouhou-10800000-Iseikyoku/0000057158.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách biểu đạt số lần, số viên, lúc uống và 飲み合わせ trong tài liệu thông dịch y tế."
+    },
+    "moj-med-note": {
+      "kind": "web",
+      "title": "自己所持薬の処方があった際の注意｜法務省",
+      "url": "https://www.moj.go.jp/content/001422170.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu chữ 朝食後 trên mẫu nhãn túi đựng thuốc."
+    },
+    "hvdic-trieu": {
+      "kind": "web",
+      "title": "Tra từ 朝｜Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E6%9C%9D",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu TRIÊU của 朝 mang nghĩa buổi sáng."
+    },
+    "hvdic-dinh": {
+      "kind": "web",
+      "title": "Tra từ 錠｜Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E9%8C%A0",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu âm ĐĨNH của 錠 ở nghĩa viên thuốc."
+    },
+    "mhlw-nabii": {
+      "kind": "web",
+      "title": "医療情報ネット（ナビイ）の使い方｜厚生労働省",
+      "url": "https://kakarikata.mhlw.go.jp/kakaritsuke/nabii.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi 医療機関 chỉ nơi khám, chữa bệnh."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Tên thuốc/sản phẩm và triệu chứng cần hỏi",
+      "v10_topic": "Tên thuốc/sản phẩm và triệu chứng cần hỏi",
+      "terms": [
+        {
+          "id": "S-050-v021",
+          "ja": "薬",
+          "reading": "くすり",
+          "han_viet": "DƯỢC",
+          "vi": "thuốc",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fd3908d7-0b64-5e2c-9e53-957b8da1019f-u01",
+              "surface": "薬"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v022",
+          "ja": "薬局",
+          "reading": "やっきょく",
+          "han_viet": "DƯỢC CỤC",
+          "vi": "hiệu thuốc, nhà thuốc",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "959c401a-57f5-52d1-b1e5-4f4764f55b17-u02",
+              "surface": "薬局"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "gov-meds"
+          ]
+        },
+        {
+          "id": "S-050-v023",
+          "ja": "ドラッグストア",
+          "reading": "ドラッグストア",
+          "han_viet": "",
+          "vi": "cửa hàng thuốc và hàng chăm sóc cá nhân",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-roles"
+          ]
+        },
+        {
+          "id": "S-050-v024",
+          "ja": "市販薬",
+          "reading": "しはんやく",
+          "han_viet": "THỊ PHIẾN DƯỢC",
+          "vi": "thuốc bán không cần đơn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi loại thuốc bán trực tiếp ở hiệu thuốc.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-otc"
+          ]
+        },
+        {
+          "id": "S-050-v025",
+          "ja": "処方薬",
+          "reading": "しょほうやく",
+          "han_viet": "XỬ PHƯƠNG DƯỢC",
+          "vi": "thuốc theo đơn do người có thẩm quyền kê",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói mình đang dùng thuốc kê đơn khi hỏi có dùng cùng được không.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-otc"
+          ]
+        },
+        {
+          "id": "S-050-v026",
+          "ja": "かぜ薬",
+          "reading": "かぜぐすり",
+          "han_viet": "DƯỢC",
+          "vi": "thuốc trị triệu chứng cảm",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-label"
+          ]
+        },
+        {
+          "id": "S-050-v027",
+          "ja": "胃薬",
+          "reading": "いぐすり",
+          "han_viet": "VỊ DƯỢC",
+          "vi": "thuốc dạ dày",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-market"
+          ]
+        },
+        {
+          "id": "S-050-v028",
+          "ja": "解熱鎮痛薬",
+          "reading": "げねつちんつうやく",
+          "han_viet": "GIẢI NHIỆT TRẤN THỐNG DƯỢC",
+          "vi": "thuốc hạ sốt và giảm đau",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Nhãn nhóm thuốc có thể nghe khi nói sốt hoặc đau và hỏi lựa chọn.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-label"
+          ]
+        },
+        {
+          "id": "S-050-v029",
+          "ja": "化粧品",
+          "reading": "けしょうひん",
+          "han_viet": "HÓA TRANG PHẨM",
+          "vi": "mỹ phẩm",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b7ce67ee-fdac-5597-b040-6cfdf528f656-u01",
+              "surface": "化粧品"
+            }
+          ],
+          "level_note_vi": "Cần phân biệt mỹ phẩm với thuốc khi xem sản phẩm tương tự trên kệ."
+        },
+        {
+          "id": "S-050-v030",
+          "ja": "売り切れる",
+          "reading": "うりきれる",
+          "han_viet": "MẠI THIẾT",
+          "vi": "bán hết, hết hàng",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "082e8338-68bb-5e7f-bf80-31186557f90c-u01",
+              "surface": "売り切れでした"
+            }
+          ],
+          "level_note_vi": "Cần nêu thuốc thường dùng đã hết hàng để hỏi người có thể tư vấn."
+        },
+        {
+          "id": "S-050-v031",
+          "ja": "お腹",
+          "reading": "おなか",
+          "han_viet": "PHÚC",
+          "vi": "bụng",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7a5db36f-57fa-504e-a65e-218c3ba09d69-u01",
+              "surface": "お腹"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v032",
+          "ja": "痛い",
+          "reading": "いたい",
+          "han_viet": "THỐNG",
+          "vi": "đau",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7a5db36f-57fa-504e-a65e-218c3ba09d69-u01",
+              "surface": "痛い"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v033",
+          "ja": "症状",
+          "reading": "しょうじょう",
+          "han_viet": "CHỨNG TRẠNG",
+          "vi": "triệu chứng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "03be73d2-16be-55ec-952a-e24b1936a9b6-u03",
+              "surface": "症状"
+            }
+          ],
+          "level_note_vi": "Cần nói triệu chứng để dược sĩ hiểu điều đang hỏi.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-label"
+          ]
+        },
+        {
+          "id": "S-050-v034",
+          "ja": "熱",
+          "reading": "ねつ",
+          "han_viet": "NHIỆT",
+          "vi": "sốt, thân nhiệt cao",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nêu sốt khi hỏi về loại thuốc hoặc hướng xử lý.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-otc"
+          ]
+        },
+        {
+          "id": "S-050-v035",
+          "ja": "鼻水",
+          "reading": "はなみず",
+          "han_viet": "TỊ THỦY",
+          "vi": "nước mũi, chảy nước mũi",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nêu triệu chứng thường gặp khi hỏi thuốc cảm.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-otc"
+          ]
+        },
+        {
+          "id": "S-050-v036",
+          "ja": "せき",
+          "reading": "せき",
+          "han_viet": "",
+          "vi": "ho, tiếng ho",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần gọi tên triệu chứng khi hỏi thuốc ở hiệu thuốc.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-otc"
+          ]
+        },
+        {
+          "id": "S-050-v037",
+          "ja": "ずっと",
+          "reading": "ずっと",
+          "han_viet": "",
+          "vi": "liên tục, suốt thời gian đó",
+          "pos": "adverb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7a5db36f-57fa-504e-a65e-218c3ba09d69-u02",
+              "surface": "ずっと"
+            }
+          ],
+          "level_note_vi": "Cần nói đau liên tục hay chỉ đau từng lúc khi dược sĩ hỏi."
+        },
+        {
+          "id": "S-050-v038",
+          "ja": "真ん中",
+          "reading": "まんなか",
+          "han_viet": "CHÂN TRUNG",
+          "vi": "chính giữa",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7a5db36f-57fa-504e-a65e-218c3ba09d69-u03",
+              "surface": "真ん中"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Thời điểm uống, số viên và phản ứng",
+      "v10_topic": "Thời điểm uống, số viên và phản ứng",
+      "terms": [
+        {
+          "id": "S-050-v001",
+          "ja": "飲む",
+          "reading": "のむ",
+          "han_viet": "ẨM",
+          "vi": "uống (thuốc)",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "de82c323-cd7b-530f-a2e2-eb9f737ec602-u01",
+              "surface": "飲めば"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v002",
+          "ja": "服用する",
+          "reading": "ふくようする",
+          "han_viet": "PHỤC DỤNG",
+          "vi": "dùng thuốc qua đường uống",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Thường xuất hiện trên hướng dẫn về liều và cách dùng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "gov-meds"
+          ]
+        },
+        {
+          "id": "S-050-v003",
+          "ja": "食前",
+          "reading": "しょくぜん",
+          "han_viet": "THỰC TIỀN",
+          "vi": "trước bữa ăn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra mốc dùng thuốc trong lời dặn.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "S-050-v004",
+          "ja": "食後",
+          "reading": "しょくご",
+          "han_viet": "THỰC HẬU",
+          "vi": "sau bữa ăn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "de82c323-cd7b-530f-a2e2-eb9f737ec602-u02",
+              "surface": "朝食後"
+            }
+          ],
+          "level_note_vi": "Cần nhận ra từ chỉ thời điểm trên hướng dẫn.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "S-050-v005",
+          "ja": "朝食後",
+          "reading": "ちょうしょくご",
+          "han_viet": "TRIÊU THỰC HẬU",
+          "vi": "sau bữa sáng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "de82c323-cd7b-530f-a2e2-eb9f737ec602-u02",
+              "surface": "朝食後"
+            }
+          ],
+          "level_note_vi": "Cần phân biệt mốc sau bữa sáng với sau bữa khác.",
+          "source_domain": "medical",
+          "source_refs": [
+            "moj-med-note",
+            "hvdic-trieu"
+          ],
+          "note_vi": "Chọn âm TRIÊU của 朝 theo nghĩa buổi sáng."
+        },
+        {
+          "id": "S-050-v006",
+          "ja": "食間",
+          "reading": "しょっかん",
+          "han_viet": "THỰC GIAN",
+          "vi": "khoảng giữa hai bữa ăn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hiểu nhãn chỉ dùng giữa các bữa, tránh nghe thành trong lúc ăn.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "S-050-v007",
+          "ja": "寝る前",
+          "reading": "ねるまえ",
+          "han_viet": "TẨM TIỀN",
+          "vi": "trước khi đi ngủ",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-med-expr"
+          ]
+        },
+        {
+          "id": "S-050-v008",
+          "ja": "頓服",
+          "reading": "とんぷく",
+          "han_viet": "ĐỐN PHỤC",
+          "vi": "dùng một liều khi có triệu chứng theo chỉ dẫn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Từ thường in trên lời dặn dành cho thuốc dùng khi cần.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-use"
+          ]
+        },
+        {
+          "id": "S-050-v009",
+          "ja": "〜回",
+          "reading": "かい",
+          "han_viet": "HỒI",
+          "vi": "lần (đơn vị đếm số lần dùng)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81849603-06ec-5091-97b2-f9c0a688cd3b-u01",
+              "surface": "一日一回"
+            }
+          ],
+          "source_refs": [
+            "mhlw-med-expr"
+          ]
+        },
+        {
+          "id": "S-050-v010",
+          "ja": "〜錠",
+          "reading": "じょう",
+          "han_viet": "ĐĨNH",
+          "vi": "viên (đơn vị đếm viên nén)",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_refs": [
+            "mhlw-med-expr",
+            "hvdic-dinh"
+          ]
+        },
+        {
+          "id": "S-050-v011",
+          "ja": "回数",
+          "reading": "かいすう",
+          "han_viet": "HỒI SỐ",
+          "vi": "số lần",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi lại số lần dùng trong ngày khi chưa hiểu nhãn.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-med-expr"
+          ]
+        },
+        {
+          "id": "S-050-v012",
+          "ja": "量",
+          "reading": "りょう",
+          "han_viet": "LƯỢNG",
+          "vi": "lượng, liều (trong cách hỏi dùng thuốc)",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi uống bao nhiêu trong một lần.",
+          "source_domain": "medical",
+          "source_refs": [
+            "gov-meds"
+          ]
+        },
+        {
+          "id": "S-050-v013",
+          "ja": "用法",
+          "reading": "ようほう",
+          "han_viet": "DỤNG PHÁP",
+          "vi": "cách dùng thuốc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên mục hướng dẫn uống khi nào và dùng thế nào.",
+          "source_domain": "medical",
+          "source_refs": [
+            "gov-meds"
+          ]
+        },
+        {
+          "id": "S-050-v014",
+          "ja": "用量",
+          "reading": "ようりょう",
+          "han_viet": "DỤNG LƯỢNG",
+          "vi": "liều lượng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên mục hướng dẫn về lượng thuốc dùng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "gov-meds"
+          ]
+        },
+        {
+          "id": "S-050-v015",
+          "ja": "副作用",
+          "reading": "ふくさよう",
+          "han_viet": "PHÓ TÁC DỤNG",
+          "vi": "tác dụng phụ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần dùng để hỏi có phản ứng nào cần theo dõi sau khi uống.",
+          "source_domain": "medical",
+          "source_refs": [
+            "gov-meds"
+          ]
+        },
+        {
+          "id": "S-050-v016",
+          "ja": "眠い",
+          "reading": "ねむい",
+          "han_viet": "MIÊN",
+          "vi": "buồn ngủ",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "37cf564c-2b65-570d-a3b3-bb5fe1e48b1d-u01",
+              "surface": "眠くなる"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-label"
+          ]
+        },
+        {
+          "id": "S-050-v017",
+          "ja": "眠気",
+          "reading": "ねむけ",
+          "han_viet": "MIÊN KHÍ",
+          "vi": "cảm giác buồn ngủ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Từ có thể xuất hiện trong mục tác dụng phụ trên hướng dẫn.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-label"
+          ]
+        },
+        {
+          "id": "S-050-v018",
+          "ja": "かゆみ",
+          "reading": "かゆみ",
+          "han_viet": "",
+          "vi": "cảm giác ngứa",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói triệu chứng sau khi dùng thuốc nếu phải hỏi lại dược sĩ.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-label"
+          ]
+        },
+        {
+          "id": "S-050-v019",
+          "ja": "発疹",
+          "reading": "はっしん",
+          "han_viet": "PHÁT CHẨN",
+          "vi": "phát ban, nổi mẩn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra trong phần cảnh báo và mô tả khi có phản ứng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-label"
+          ]
+        },
+        {
+          "id": "S-050-v020",
+          "ja": "具合が悪い",
+          "reading": "ぐあいがわるい",
+          "han_viet": "CỤ HỢP ÁC",
+          "vi": "cảm thấy không khỏe",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "959c401a-57f5-52d1-b1e5-4f4764f55b17-u01",
+              "surface": "具合が悪く"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Hỏi dược sĩ/nhân viên khi chưa hiểu",
+      "v10_topic": "Hỏi dược sĩ/nhân viên khi chưa hiểu",
+      "terms": [
+        {
+          "id": "S-050-v039",
+          "ja": "薬剤師",
+          "reading": "やくざいし",
+          "han_viet": "DƯỢC TỄ SƯ",
+          "vi": "dược sĩ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fd3908d7-0b64-5e2c-9e53-957b8da1019f-u01",
+              "surface": "薬剤師"
+            }
+          ],
+          "level_note_vi": "Cần gọi đúng người có chuyên môn khi hỏi tên thuốc và cách dùng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "gov-meds"
+          ]
+        },
+        {
+          "id": "S-050-v040",
+          "ja": "登録販売者",
+          "reading": "とうろくはんばいしゃ",
+          "han_viet": "ĐĂNG LỤC PHIẾN MẠI GIẢ",
+          "vi": "nhân viên đã đăng ký bán một số nhóm thuốc không kê đơn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Nhãn chức danh có thể thấy ở cửa hàng khi tìm đúng người tư vấn.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-roles"
+          ]
+        },
+        {
+          "id": "S-050-v041",
+          "ja": "お薬手帳",
+          "reading": "おくすりてちょう",
+          "han_viet": "DƯỢC THỦ TRƯỚNG",
+          "vi": "sổ ghi lịch sử dùng thuốc",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d915875d-f139-5125-904f-7325318f7e05-u02",
+              "surface": "お薬手帳"
+            }
+          ],
+          "level_note_vi": "Cần nhận đúng tên sổ khi dược sĩ muốn kiểm tra các thuốc đang dùng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "gov-meds"
+          ]
+        },
+        {
+          "id": "S-050-v042",
+          "ja": "飲み合わせ",
+          "reading": "のみあわせ",
+          "han_viet": "ẨM HỢP",
+          "vi": "việc dùng thuốc cùng nhau và khả năng tương tác",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi dược sĩ về các thuốc hoặc sản phẩm định dùng cùng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-med-expr"
+          ]
+        },
+        {
+          "id": "S-050-v043",
+          "ja": "説明書",
+          "reading": "せつめいしょ",
+          "han_viet": "THUYẾT MINH THƯ",
+          "vi": "tờ hướng dẫn sử dụng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần chỉ tờ muốn nhờ dược sĩ giải thích.",
+          "source_domain": "medical",
+          "source_refs": [
+            "pmda-otc"
+          ]
+        },
+        {
+          "id": "S-050-v044",
+          "ja": "箱",
+          "reading": "はこ",
+          "han_viet": "TƯƠNG",
+          "vi": "hộp",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f9183463-4bcd-5a71-977a-c351d93b16d6-u01",
+              "surface": "箱"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v045",
+          "ja": "商品名",
+          "reading": "しょうひんめい",
+          "han_viet": "THƯƠNG PHẨM DANH",
+          "vi": "tên sản phẩm",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f9183463-4bcd-5a71-977a-c351d93b16d6-u02",
+              "surface": "商品名"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v046",
+          "ja": "聞き取る",
+          "reading": "ききとる",
+          "han_viet": "VĂN THỦ",
+          "vi": "nghe rõ và nhận ra lời nói",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f9183463-4bcd-5a71-977a-c351d93b16d6-u01",
+              "surface": "聞き取れませんでした"
+            }
+          ],
+          "level_note_vi": "Cần nói không nghe rõ tên sản phẩm để nhờ chỉ chữ ghi trên hộp."
+        },
+        {
+          "id": "S-050-v047",
+          "ja": "見せる",
+          "reading": "みせる",
+          "han_viet": "KIẾN",
+          "vi": "đưa cho xem",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d915875d-f139-5125-904f-7325318f7e05-u02",
+              "surface": "見せて"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v048",
+          "ja": "もう一度",
+          "reading": "もういちど",
+          "han_viet": "NHẤT ĐỘ",
+          "vi": "một lần nữa",
+          "pos": "adverb",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-050-v049",
+          "ja": "簡単",
+          "reading": "かんたん",
+          "han_viet": "GIẢN ĐƠN",
+          "vi": "đơn giản, dễ hiểu",
+          "pos": "na_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8864bbd4-7515-5c9f-aabc-c0c35ac69d10-u01",
+              "surface": "簡単"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v050",
+          "ja": "違う",
+          "reading": "ちがう",
+          "han_viet": "VI",
+          "vi": "khác, không đúng",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "db088552-831c-595f-ac3f-051f2120bb8a-u01",
+              "surface": "違います"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v051",
+          "ja": "相談する",
+          "reading": "そうだんする",
+          "han_viet": "TƯƠNG ĐÀM",
+          "vi": "trao đổi để được tư vấn",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fd3908d7-0b64-5e2c-9e53-957b8da1019f-u01",
+              "surface": "相談したい"
+            }
+          ],
+          "level_note_vi": "Cần hỏi xem ai có thể tư vấn và nên liên hệ ở đâu."
+        },
+        {
+          "id": "S-050-v052",
+          "ja": "医療機関",
+          "reading": "いりょうきかん",
+          "han_viet": "Y LIỆU CƠ QUAN",
+          "vi": "cơ sở y tế",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "03be73d2-16be-55ec-952a-e24b1936a9b6-u01",
+              "surface": "医療機関"
+            }
+          ],
+          "level_note_vi": "Cần hiểu đầu mối được dược sĩ giới thiệu khi câu hỏi cần trao đổi với người khám.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-nabii"
+          ]
+        },
+        {
+          "id": "S-050-v053",
+          "ja": "確認する",
+          "reading": "かくにんする",
+          "han_viet": "XÁC NHẬN",
+          "vi": "kiểm tra, xác nhận lại",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d915875d-f139-5125-904f-7325318f7e05-u02",
+              "surface": "確認します"
+            }
+          ]
+        },
+        {
+          "id": "S-050-v054",
+          "ja": "カウンター",
+          "reading": "カウンター",
+          "han_viet": "",
+          "vi": "quầy",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fd3908d7-0b64-5e2c-9e53-957b8da1019f-u02",
+              "surface": "カウンター"
+            }
+          ],
+          "level_note_vi": "Cần nhận ra lời chỉ dẫn tới quầy tư vấn dược khi vừa đến hiệu thuốc."
+        }
+      ]
+    }
+  ]
+}

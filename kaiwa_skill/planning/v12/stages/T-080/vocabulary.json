@@ -1,0 +1,674 @@
+{
+  "stage_uid": "306f7ba6-c3ff-56e1-87d8-2edc0fc29014",
+  "stage_code": "T-080",
+  "admin_sources": {
+    "ipa-est": {
+      "kind": "web",
+      "title": "エンタプライズ系事業／見積もり手法 | IPA",
+      "url": "https://www.ipa.go.jp/archive/digital/iot-en-ci/teiryou/ent01-c.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi 仕様, 成果物, 工数 và 見積もり trong công việc."
+    },
+    "ipa-req": {
+      "kind": "web",
+      "title": "要件定義とは？ | IPA DX SQUARE",
+      "url": "https://dx.ipa.go.jp/youken-teigi",
+      "accessed": "2026-11-19",
+      "use_vi": "Phân biệt điều đặt ra với yêu cầu đã thống nhất, hiểu 要件 và các dạng đầu ra."
+    },
+    "ipa-time": {
+      "kind": "web",
+      "title": "超上流から攻めるIT化の事例集 | IPA",
+      "url": "https://www.ipa.go.jp/archive/digital/tools/ep/ep1.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Thuật ngữ về hạn hoàn thành, vai trò và công sức cần dự tính."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Người dùng đầu ra và hạn",
+      "v10_topic": "Người dùng đầu ra và hạn",
+      "terms": [
+        {
+          "id": "T-080-v001",
+          "ja": "依頼内容",
+          "reading": "いらいないよう",
+          "han_viet": "Y LẠI NỘI DUNG",
+          "vi": "nội dung việc được yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v002",
+          "ja": "用途",
+          "reading": "ようと",
+          "han_viet": "DỤNG ĐỒ",
+          "vi": "mục đích sử dụng đầu ra",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v003",
+          "ja": "利用者",
+          "reading": "りようしゃ",
+          "han_viet": "LỢI DỤNG GIẢ",
+          "vi": "người sẽ sử dụng đầu ra",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v004",
+          "ja": "最終版",
+          "reading": "さいしゅうばん",
+          "han_viet": "TỐI CHUNG BẢN",
+          "vi": "bản cuối cùng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "77a40b9c-0cd9-5d39-8f9a-06902886261f-u01",
+              "surface": "最終版"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v005",
+          "ja": "取引先",
+          "reading": "とりひきさき",
+          "han_viet": "THỦ DẪN TIÊN",
+          "vi": "công ty hoặc người đang giao dịch",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "77a40b9c-0cd9-5d39-8f9a-06902886261f-u02",
+              "surface": "取引先"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v006",
+          "ja": "提出先",
+          "reading": "ていしゅつさき",
+          "han_viet": "ĐỀ XUẤT TIÊN",
+          "vi": "người hay đơn vị nhận bản nộp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v007",
+          "ja": "期限",
+          "reading": "きげん",
+          "han_viet": "KỲ HẠN",
+          "vi": "hạn phải hoàn thành",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "302799d1-3835-5cb3-b3cc-f699376eb7b4-u05",
+              "surface": "期限"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v008",
+          "ja": "確認用",
+          "reading": "かくにんよう",
+          "han_viet": "XÁC NHẬN DỤNG",
+          "vi": "dùng để xem và kiểm trước",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "77a40b9c-0cd9-5d39-8f9a-06902886261f-u05",
+              "surface": "確認用"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v041",
+          "ja": "成果物",
+          "reading": "せいかぶつ",
+          "han_viet": "THÀNH QUẢ VẬT",
+          "vi": "đầu ra công việc cần bàn giao",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "ipa-est"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "T-080-v042",
+          "ja": "納期",
+          "reading": "のうき",
+          "han_viet": "NẠP KỲ",
+          "vi": "hạn giao hàng hoặc bàn giao đầu ra",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "ipa-time"
+          ],
+          "source_domain": "procedural"
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Demo khác bản triển khai",
+      "v10_topic": "Demo khác bản triển khai",
+      "terms": [
+        {
+          "id": "T-080-v009",
+          "ja": "デモ",
+          "reading": "デモ",
+          "han_viet": "",
+          "vi": "phần trình diễn hoặc bản dùng để trình diễn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8e6ee35a-8db0-5aac-afc2-fd8033a589b2-u02",
+              "surface": "デモ"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v010",
+          "ja": "試作",
+          "reading": "しさく",
+          "han_viet": "THÍ TÁC",
+          "vi": "bản hoặc việc làm thử",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d13ca7e4-a025-5222-86eb-e9faa2ea0b7c-u04",
+              "surface": "試作"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v011",
+          "ja": "本番環境",
+          "reading": "ほんばんかんきょう",
+          "han_viet": "BẢN PHIÊN HOÀN CẢNH",
+          "vi": "môi trường sử dụng chính thức",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8e6ee35a-8db0-5aac-afc2-fd8033a589b2-u01",
+              "surface": "本番環境"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v012",
+          "ja": "正式版",
+          "reading": "せいしきばん",
+          "han_viet": "CHÍNH THỨC BẢN",
+          "vi": "bản chính thức được phép dùng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v013",
+          "ja": "サンプルデータ",
+          "reading": "サンプルデータ",
+          "han_viet": "",
+          "vi": "dữ liệu mẫu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v014",
+          "ja": "操作",
+          "reading": "そうさ",
+          "han_viet": "THAO TÁC",
+          "vi": "thao tác trên hệ thống",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8e6ee35a-8db0-5aac-afc2-fd8033a589b2-u04",
+              "surface": "操作"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v015",
+          "ja": "動作確認",
+          "reading": "どうさかくにん",
+          "han_viet": "ĐỘNG TÁC XÁC NHẬN",
+          "vi": "kiểm tra chức năng có hoạt động không",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v016",
+          "ja": "口頭で",
+          "reading": "こうとうで",
+          "han_viet": "KHẨU ĐẦU",
+          "vi": "bằng lời nói trực tiếp",
+          "pos": "adverb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3439680b-edac-50eb-a2f6-780847c58134-u05",
+              "surface": "口頭で"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v043",
+          "ja": "仕様",
+          "reading": "しよう",
+          "han_viet": "SĨ DẠNG",
+          "vi": "các đặc tả về cách sản phẩm hoạt động",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "ipa-est"
+          ],
+          "source_domain": "procedural"
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Tiêu chí bắt buộc/tùy chọn",
+      "v10_topic": "Tiêu chí bắt buộc/tùy chọn",
+      "terms": [
+        {
+          "id": "T-080-v017",
+          "ja": "必須",
+          "reading": "ひっす",
+          "han_viet": "TẤT TU",
+          "vi": "thành phần bắt buộc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v018",
+          "ja": "任意",
+          "reading": "にんい",
+          "han_viet": "NHIỆM Ý",
+          "vi": "phần được tự chọn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v019",
+          "ja": "条件を満たす",
+          "reading": "じょうけんをみたす",
+          "han_viet": "ĐIỀU KIỆN MÃN",
+          "vi": "đáp ứng tiêu chí đề ra",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b83147ef-ffbe-508c-85e2-fe7fb82ccac6-u02",
+              "surface": "条件を満たした"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v020",
+          "ja": "判断基準",
+          "reading": "はんだんきじゅん",
+          "han_viet": "PHÁN ĐOÁN CƠ CHUẨN",
+          "vi": "tiêu chí làm căn cứ nhận định",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v021",
+          "ja": "受付番号",
+          "reading": "うけつけばんごう",
+          "han_viet": "THỤ PHÓ PHIÊN HIỆU",
+          "vi": "mã số tiếp nhận yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bf3d51fa-0239-53fa-8b6e-ed66d9eb506f-u01",
+              "surface": "受付番号"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v022",
+          "ja": "受付済み",
+          "reading": "うけつけずみ",
+          "han_viet": "THỤ PHÓ TẾ",
+          "vi": "đã tiếp nhận yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bf3d51fa-0239-53fa-8b6e-ed66d9eb506f-u02",
+              "surface": "受付済み"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v023",
+          "ja": "未達",
+          "reading": "みたつ",
+          "han_viet": "VỊ ĐẠT",
+          "vi": "chưa đạt một tiêu chí hoặc mức yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v024",
+          "ja": "読み取る",
+          "reading": "よみとる",
+          "han_viet": "ĐỘC THỦ",
+          "vi": "đọc và hiểu trạng thái hiển thị",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần phân biệt chỉ nhìn thấy nhãn với hiểu đúng trạng thái trong tiêu chí chạy thử.",
+          "evidence": [
+            {
+              "utterance_id": "4f5e5802-7ad7-54d7-aefc-e801232e9dc6-u02",
+              "surface": "読み取る"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v044",
+          "ja": "要件",
+          "reading": "ようけん",
+          "han_viet": "YẾU KIỆN",
+          "vi": "yêu cầu đặt ra để đầu ra đáp ứng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "ipa-req"
+          ],
+          "source_domain": "procedural"
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Hai yêu cầu xung đột",
+      "v10_topic": "Hai yêu cầu xung đột",
+      "terms": [
+        {
+          "id": "T-080-v025",
+          "ja": "所要時間",
+          "reading": "しょようじかん",
+          "han_viet": "SỞ YẾU THỜI GIAN",
+          "vi": "thời gian cần để hoàn thành",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v026",
+          "ja": "両立する",
+          "reading": "りょうりつする",
+          "han_viet": "LƯỠNG LẬP",
+          "vi": "thực hiện được cả hai việc song song",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v027",
+          "ja": "優先順位",
+          "reading": "ゆうせんじゅんい",
+          "han_viet": "ƯU TIÊN THUẬN VỊ",
+          "vi": "thứ tự ưu tiên",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v028",
+          "ja": "後回しにする",
+          "reading": "あとまわしにする",
+          "han_viet": "HẬU HỒI",
+          "vi": "để một phần sang làm sau",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v029",
+          "ja": "分担する",
+          "reading": "ぶんたんする",
+          "han_viet": "PHÂN ĐẢM",
+          "vi": "chia phần việc cho từng người",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v030",
+          "ja": "人手",
+          "reading": "ひとで",
+          "han_viet": "NHÂN THỦ",
+          "vi": "nhân lực để thực hiện",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói rõ vì sao trong số giờ còn lại phải xin thêm người làm tài liệu."
+        },
+        {
+          "id": "T-080-v031",
+          "ja": "範囲",
+          "reading": "はんい",
+          "han_viet": "PHẠM VI",
+          "vi": "phần công việc nằm trong lần này",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7a19ca81-4c39-5abe-8b79-2044bf947e62-u05",
+              "surface": "範囲"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v032",
+          "ja": "仕上げる",
+          "reading": "しあげる",
+          "han_viet": "SĨ THƯỢNG",
+          "vi": "làm cho hoàn chỉnh",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ee326e35-6ff9-56c2-bbc1-182c1c6d36d0-u01",
+              "surface": "仕上げられません"
+            }
+          ],
+          "level_note_vi": "Cần cam kết một bản đủ dùng cho buổi thử trong thời gian còn lại."
+        },
+        {
+          "id": "T-080-v045",
+          "ja": "工数",
+          "reading": "こうすう",
+          "han_viet": "CÔNG SỐ",
+          "vi": "lượng công lao động cần để hoàn thành",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "ipa-est"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "T-080-v046",
+          "ja": "見積もる",
+          "reading": "みつもる",
+          "han_viet": "KIẾN TÍCH",
+          "vi": "ước tính công sức, thời gian hoặc chi phí",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "ipa-est"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "T-080-v047",
+          "ja": "制約",
+          "reading": "せいやく",
+          "han_viet": "CHẾ ƯỚC",
+          "vi": "giới hạn ràng buộc cách làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Người duyệt và giả định còn chờ",
+      "v10_topic": "Người duyệt và giả định còn chờ",
+      "terms": [
+        {
+          "id": "T-080-v033",
+          "ja": "責任者",
+          "reading": "せきにんしゃ",
+          "han_viet": "TRÁCH NHIỆM GIẢ",
+          "vi": "người chịu trách nhiệm về quyết định",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v034",
+          "ja": "承認待ち",
+          "reading": "しょうにんまち",
+          "han_viet": "THỪA NHẬN ĐÃI",
+          "vi": "đang chờ phê duyệt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "13531074-787c-5a0e-a580-2cf7bf2dba4d-u02",
+              "surface": "承認待ち"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v035",
+          "ja": "前提",
+          "reading": "ぜんてい",
+          "han_viet": "TIỀN ĐỀ",
+          "vi": "điều đang dùng làm căn cứ khi nhận việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v036",
+          "ja": "仮定",
+          "reading": "かてい",
+          "han_viet": "GIẢ ĐỊNH",
+          "vi": "giả định để tạm dựa vào",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v037",
+          "ja": "未確定",
+          "reading": "みかくてい",
+          "han_viet": "VỊ XÁC ĐỊNH",
+          "vi": "chưa được xác định chính thức",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v038",
+          "ja": "取り決め",
+          "reading": "とりきめ",
+          "han_viet": "THỦ QUYẾT",
+          "vi": "điều các bên đã thống nhất",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v039",
+          "ja": "再確認する",
+          "reading": "さいかくにんする",
+          "han_viet": "TÁI XÁC NHẬN",
+          "vi": "kiểm tra, xác nhận một lần nữa",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-080-v040",
+          "ja": "判断する",
+          "reading": "はんだんする",
+          "han_viet": "PHÁN ĐOÁN",
+          "vi": "xác định bản đã đạt điều kiện hay chưa",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b83147ef-ffbe-508c-85e2-fe7fb82ccac6-u01",
+              "surface": "判断する"
+            }
+          ]
+        },
+        {
+          "id": "T-080-v048",
+          "ja": "追加要望",
+          "reading": "ついかようぼう",
+          "han_viet": "TRUY GIA YÊU VỌNG",
+          "vi": "mong muốn bổ sung sau yêu cầu ban đầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

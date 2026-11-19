@@ -1,0 +1,690 @@
+{
+  "stage_uid": "7824b409-037e-503e-80b5-90f27d7b465b",
+  "stage_code": "S-061",
+  "admin_sources": {
+    "nta-receipt": {
+      "kind": "web",
+      "title": "No.7105 金銭又は有価証券の受取書、領収書 | 国税庁",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7105.htm",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi 領収書 và レシート dùng để xác nhận đã nhận tiền."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Chào, xác nhận món, cỡ và số lượng",
+      "v10_topic": "Chào, hỏi món và số lượng tại quầy",
+      "terms": [
+        {
+          "id": "S-061-v001",
+          "ja": "いらっしゃいませ",
+          "reading": "いらっしゃいませ",
+          "han_viet": "",
+          "vi": "xin chào quý khách",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-061-v002",
+          "ja": "ご注文",
+          "reading": "ごちゅうもん",
+          "han_viet": "CHÚ VĂN",
+          "vi": "món khách gọi, đơn gọi món",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-061-v003",
+          "ja": "商品",
+          "reading": "しょうひん",
+          "han_viet": "THƯƠNG PHẨM",
+          "vi": "mặt hàng, sản phẩm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần gọi tên mặt hàng khách hỏi hoặc đã đặt.",
+          "evidence": [
+            {
+              "utterance_id": "f7e7002c-f7ba-53a4-bc91-0a86923abdbd-u01",
+              "surface": "商品"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v004",
+          "ja": "アイスコーヒー",
+          "reading": "アイスコーヒー",
+          "han_viet": "",
+          "vi": "cà phê đá",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b672ace7-615c-57fe-9cbe-8dd637728b84-u01",
+              "surface": "アイスコーヒー"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v005",
+          "ja": "ホット",
+          "reading": "ホット",
+          "han_viet": "",
+          "vi": "nóng (đồ uống)",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-061-v006",
+          "ja": "サイズ",
+          "reading": "サイズ",
+          "han_viet": "",
+          "vi": "cỡ",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b672ace7-615c-57fe-9cbe-8dd637728b84-u01",
+              "surface": "サイズ"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v007",
+          "ja": "おいくつ",
+          "reading": "おいくつ",
+          "han_viet": "",
+          "vi": "quý khách lấy bao nhiêu",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b672ace7-615c-57fe-9cbe-8dd637728b84-u01",
+              "surface": "おいくつ"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v008",
+          "ja": "～つ",
+          "reading": "つ",
+          "han_viet": "",
+          "vi": "cái, món (đơn vị đếm chung)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b672ace7-615c-57fe-9cbe-8dd637728b84-u02",
+              "surface": "二つ"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v009",
+          "ja": "～杯",
+          "reading": "はい",
+          "han_viet": "BÔI",
+          "vi": "ly, chén (đơn vị đếm)",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-061-v010",
+          "ja": "個",
+          "reading": "こ",
+          "han_viet": "CÁ",
+          "vi": "cái, phần (đơn vị đếm)",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-061-v011",
+          "ja": "大きめ",
+          "reading": "おおきめ",
+          "han_viet": "ĐẠI",
+          "vi": "hơi lớn, cỡ lớn hơn một chút",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-061-v012",
+          "ja": "かしこまりました",
+          "reading": "かしこまりました",
+          "han_viet": "",
+          "vi": "vâng, tôi đã rõ",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "002073cd-9237-501d-9be3-00188d10e0f0-u03",
+              "surface": "かしこまりました"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v013",
+          "ja": "失礼しました",
+          "reading": "しつれいしました",
+          "han_viet": "THẤT LỄ",
+          "vi": "xin lỗi quý khách",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "76c6ca40-6573-5084-ade6-5ee089fe2ac3-u03",
+              "surface": "失礼しました"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v014",
+          "ja": "受け取り口",
+          "reading": "うけとりぐち",
+          "han_viet": "THỤ THỦ KHẨU",
+          "vi": "quầy nhận đồ đã gọi",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Nhãn thường dùng để chỉ chỗ khách lấy món sau khi trả tiền.",
+          "evidence": [
+            {
+              "utterance_id": "c84860fa-b3ee-5fcc-8cbc-42137c7d61c4-u01",
+              "surface": "受け取り口"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Túi, tổng tiền, tiền thừa và chứng từ thanh toán",
+      "v10_topic": "Túi, giá, tiền thừa và hóa đơn",
+      "terms": [
+        {
+          "id": "S-061-v015",
+          "ja": "お会計",
+          "reading": "おかいけい",
+          "han_viet": "HỘI KẾ",
+          "vi": "thanh toán, tiền cần thanh toán",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c84860fa-b3ee-5fcc-8cbc-42137c7d61c4-u01",
+              "surface": "お会計"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v016",
+          "ja": "合計",
+          "reading": "ごうけい",
+          "han_viet": "HỢP KẾ",
+          "vi": "tổng tiền, tổng cộng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "level_note_vi": "Cần đọc rõ tổng số tiền trước khi nhận thanh toán.",
+          "evidence": [
+            {
+              "utterance_id": "bf2f688b-4c98-5c92-ae68-6d679e1f8fd3-u01",
+              "surface": "合計"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v017",
+          "ja": "～円",
+          "reading": "えん",
+          "han_viet": "VIÊN",
+          "vi": "yên (đơn vị tiền Nhật)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bf2f688b-4c98-5c92-ae68-6d679e1f8fd3-u01",
+              "surface": "五百円"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v018",
+          "ja": "現金",
+          "reading": "げんきん",
+          "han_viet": "HIỆN KIM",
+          "vi": "tiền mặt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "level_note_vi": "Cần hỏi hoặc thông báo quầy có thể nhận tiền mặt hay không.",
+          "evidence": [
+            {
+              "utterance_id": "bf2f688b-4c98-5c92-ae68-6d679e1f8fd3-u01",
+              "surface": "現金"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v019",
+          "ja": "カード",
+          "reading": "カード",
+          "han_viet": "",
+          "vi": "thẻ thanh toán",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Phương thức thanh toán khách hay chọn khi không dùng tiền mặt.",
+          "evidence": [
+            {
+              "utterance_id": "bf2f688b-4c98-5c92-ae68-6d679e1f8fd3-u02",
+              "surface": "カードでお願いします"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v020",
+          "ja": "支払う",
+          "reading": "しはらう",
+          "han_viet": "CHI PHẤT",
+          "vi": "trả tiền, thanh toán",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "level_note_vi": "Cần xác nhận cách khách có thể thanh toán.",
+          "evidence": [
+            {
+              "utterance_id": "bf2f688b-4c98-5c92-ae68-6d679e1f8fd3-u01",
+              "surface": "お支払いいただけます"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v021",
+          "ja": "おつり",
+          "reading": "おつり",
+          "han_viet": "",
+          "vi": "tiền thừa trả lại khách",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-061-v022",
+          "ja": "預かる",
+          "reading": "あずかる",
+          "han_viet": "DỰ",
+          "vi": "nhận giữ (tiền khách đưa)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần dùng khi xác nhận số tiền vừa nhận trước khi thối lại."
+        },
+        {
+          "id": "S-061-v023",
+          "ja": "袋",
+          "reading": "ふくろ",
+          "han_viet": "ĐẠI",
+          "vi": "túi đựng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "002073cd-9237-501d-9be3-00188d10e0f0-u01",
+              "surface": "袋"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v024",
+          "ja": "このまま",
+          "reading": "このまま",
+          "han_viet": "",
+          "vi": "để nguyên như vậy",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "002073cd-9237-501d-9be3-00188d10e0f0-u02",
+              "surface": "このまま"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v025",
+          "ja": "有料",
+          "reading": "ゆうりょう",
+          "han_viet": "HỮU LIỆU",
+          "vi": "có tính phí",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-061-v026",
+          "ja": "渡す",
+          "reading": "わたす",
+          "han_viet": "ĐỘ",
+          "vi": "đưa, trao tận tay",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "002073cd-9237-501d-9be3-00188d10e0f0-u03",
+              "surface": "お渡しします"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v027",
+          "ja": "レシート",
+          "reading": "レシート",
+          "han_viet": "",
+          "vi": "biên lai in ở quầy",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần gọi tên biên lai lúc giao lại cho khách.",
+          "source_refs": [
+            "nta-receipt"
+          ],
+          "source_domain": "procedural",
+          "evidence": [
+            {
+              "utterance_id": "5eb0e579-9e65-58f0-80fa-7fd8448e1c87-u01",
+              "surface": "レシート"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v028",
+          "ja": "領収書",
+          "reading": "りょうしゅうしょ",
+          "han_viet": "LĨNH THU THƯ",
+          "vi": "giấy biên nhận tiền đã thanh toán",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra tên giấy khi khách xin chứng từ thanh toán.",
+          "source_refs": [
+            "nta-receipt"
+          ],
+          "source_domain": "procedural"
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Báo hết hàng, xin khách chờ và hỏi người phụ trách",
+      "v10_topic": "Hết hàng, xin khách chờ và hỏi đồng nghiệp",
+      "terms": [
+        {
+          "id": "S-061-v029",
+          "ja": "売り切れ",
+          "reading": "うりきれ",
+          "han_viet": "MẠI THIẾT",
+          "vi": "đã bán hết",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Từ cần dùng khi khách hỏi mặt hàng không còn bán trong ngày."
+        },
+        {
+          "id": "S-061-v030",
+          "ja": "切らす",
+          "reading": "きらす",
+          "han_viet": "THIẾT",
+          "vi": "để hết, hết mất (đồ đang cần)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần giải thích khi hết một loại ly hoặc nguyên liệu dù vẫn còn loại khác.",
+          "evidence": [
+            {
+              "utterance_id": "7e8d072c-7f18-5e26-b8ad-f5aeaf8a2dd5-u01",
+              "surface": "切らしています"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v031",
+          "ja": "在庫",
+          "reading": "ざいこ",
+          "han_viet": "TẠI KHỐ",
+          "vi": "hàng còn trong kho, tồn kho",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi đồng nghiệp còn hàng thay hay không."
+        },
+        {
+          "id": "S-061-v032",
+          "ja": "用意する",
+          "reading": "よういする",
+          "han_viet": "DỤNG Ý",
+          "vi": "chuẩn bị, có sẵn cho khách",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7e8d072c-7f18-5e26-b8ad-f5aeaf8a2dd5-u01",
+              "surface": "ご用意できます"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v033",
+          "ja": "別",
+          "reading": "べつ",
+          "han_viet": "BIỆT",
+          "vi": "khác, riêng (dùng như 別の trước danh từ)",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi khách có muốn chọn cỡ hoặc món khác khi lựa chọn ban đầu hết."
+        },
+        {
+          "id": "S-061-v034",
+          "ja": "少々お待ちください",
+          "reading": "しょうしょうおまちください",
+          "han_viet": "THIỂU THIỂU ĐÃI",
+          "vi": "xin quý khách chờ một lát",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a3d83910-1617-506b-acd1-9ea0c52bb055-u01",
+              "surface": "少々お待ちください"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v035",
+          "ja": "お待たせしました",
+          "reading": "おまたせしました",
+          "han_viet": "ĐÃI",
+          "vi": "cảm ơn quý khách đã chờ",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5eb0e579-9e65-58f0-80fa-7fd8448e1c87-u01",
+              "surface": "お待たせしました"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v036",
+          "ja": "担当者",
+          "reading": "たんとうしゃ",
+          "han_viet": "ĐẢM ĐƯƠNG GIẢ",
+          "vi": "người phụ trách",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần báo sẽ gọi ai khi có lỗi máy hoặc thắc mắc về món đã đặt.",
+          "evidence": [
+            {
+              "utterance_id": "a3d83910-1617-506b-acd1-9ea0c52bb055-u01",
+              "surface": "担当者"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v037",
+          "ja": "呼ぶ",
+          "reading": "よぶ",
+          "han_viet": "HÔ",
+          "vi": "gọi tới",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần báo sẽ gọi người hỗ trợ tại quầy.",
+          "evidence": [
+            {
+              "utterance_id": "a3d83910-1617-506b-acd1-9ea0c52bb055-u01",
+              "surface": "呼びます"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v038",
+          "ja": "確認する",
+          "reading": "かくにんする",
+          "han_viet": "XÁC NHẬN",
+          "vi": "kiểm tra để xác nhận",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nói sẽ hỏi lại đồng nghiệp hoặc xác nhận giao dịch đã thành công.",
+          "evidence": [
+            {
+              "utterance_id": "f7e7002c-f7ba-53a4-bc91-0a86923abdbd-u02",
+              "surface": "確認します"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v039",
+          "ja": "エラー",
+          "reading": "エラー",
+          "han_viet": "",
+          "vi": "lỗi máy, thông báo lỗi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "level_note_vi": "Cần báo máy thanh toán có lỗi và khách phải chờ.",
+          "evidence": [
+            {
+              "utterance_id": "a3d83910-1617-506b-acd1-9ea0c52bb055-u01",
+              "surface": "エラー"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v040",
+          "ja": "受け取る",
+          "reading": "うけとる",
+          "han_viet": "THỤ THỦ",
+          "vi": "nhận (món đã đặt)",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nói khi nào và ở đâu khách có thể tới nhận.",
+          "evidence": [
+            {
+              "utterance_id": "f7e7002c-f7ba-53a4-bc91-0a86923abdbd-u01",
+              "surface": "受け取れます"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v041",
+          "ja": "予約する",
+          "reading": "よやくする",
+          "han_viet": "DỰ ƯỚC",
+          "vi": "đặt trước",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f7e7002c-f7ba-53a4-bc91-0a86923abdbd-u01",
+              "surface": "予約した"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v042",
+          "ja": "閉まる",
+          "reading": "しまる",
+          "han_viet": "BẾ",
+          "vi": "đóng cửa, ngừng phục vụ",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9ca91bf9-5855-50a3-a13b-9ab539ef0614-u01",
+              "surface": "閉まります"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v043",
+          "ja": "サービスカウンター",
+          "reading": "サービスカウンター",
+          "han_viet": "",
+          "vi": "quầy hỗ trợ khách",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cần chỉ đúng quầy để khách hỏi tiếp sau khi quầy mình đóng.",
+          "evidence": [
+            {
+              "utterance_id": "9ca91bf9-5855-50a3-a13b-9ab539ef0614-u01",
+              "surface": "サービスカウンター"
+            }
+          ]
+        },
+        {
+          "id": "S-061-v044",
+          "ja": "何時",
+          "reading": "なんじ",
+          "han_viet": "HÀ THỜI",
+          "vi": "mấy giờ",
+          "pos": "other",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f7e7002c-f7ba-53a4-bc91-0a86923abdbd-u01",
+              "surface": "何時"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

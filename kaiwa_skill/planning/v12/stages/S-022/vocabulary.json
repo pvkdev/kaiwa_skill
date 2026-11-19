@@ -1,0 +1,871 @@
+{
+  "stage_uid": "e0651dbf-cc8b-50ae-b38d-1d073af8f37f",
+  "stage_code": "S-022",
+  "admin_sources": {
+    "meti-parts": {
+      "kind": "web",
+      "title": "航空機部品製造に関するガイドブック・識別及びトレーサビリティ｜中部経済産業局",
+      "url": "https://www.chubu.meti.go.jp/b22aerospace/pdf/kokubuhin_guidebook.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi lô, số lô, chi tiết, công đoạn và tình trạng kiểm tra trong ví dụ sản xuất."
+    },
+    "safety-labels": {
+      "kind": "web",
+      "title": "外国人労働者の労働災害防止のための表示｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000186714_00009.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi đồ bảo hộ, giày an toàn và trình tự làm việc trên biển tại xưởng."
+    },
+    "safety-areas": {
+      "kind": "web",
+      "title": "労働安全衛生規則・第585条｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=74003000&dataType=0&pageNo=10",
+      "accessed": "2026-11-19",
+      "use_vi": "Mặt chữ 立入禁止 trên biển chỉ khu vực bị cấm vào."
+    },
+    "safety-noise": {
+      "kind": "web",
+      "title": "機械のリスクアセスメント・総合まとめ表｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/content/11300000/001408238.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi tiếng động bất thường và trạng thái ngừng chạy khi báo tình trạng máy."
+    },
+    "hv-box": {
+      "kind": "web",
+      "title": "箱｜Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E7%AE%B1",
+      "accessed": "2026-11-19",
+      "use_vi": "Âm TƯƠNG của 箱 trong nghĩa hộp/hòm."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Công đoạn, lô hàng và người hướng dẫn",
+      "v10_topic": "Công đoạn, lô hàng và người hướng dẫn",
+      "terms": [
+        {
+          "id": "S-022-v001",
+          "ja": "工場",
+          "reading": "こうじょう",
+          "han_viet": "CÔNG TRƯỜNG",
+          "vi": "nhà máy, xưởng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-022-v002",
+          "ja": "作業台",
+          "reading": "さぎょうだい",
+          "han_viet": "TÁC NGHIỆP ĐÀI",
+          "vi": "bàn thao tác",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3d91a408-4c4a-5c6d-94db-dfd88768d524-u02",
+              "surface": "作業台"
+            }
+          ],
+          "level_note_vi": "Cần xác nhận bàn được giao trước khi bắt đầu làm."
+        },
+        {
+          "id": "S-022-v003",
+          "ja": "工程",
+          "reading": "こうてい",
+          "han_viet": "CÔNG TRÌNH",
+          "vi": "công đoạn sản xuất",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "meti-parts"
+          ],
+          "level_note_vi": "Cần hỏi mình được giao công đoạn nào trong ca."
+        },
+        {
+          "id": "S-022-v004",
+          "ja": "作業",
+          "reading": "さぎょう",
+          "han_viet": "TÁC NGHIỆP",
+          "vi": "công việc, thao tác tại xưởng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u01",
+              "surface": "作業を止め"
+            }
+          ],
+          "level_note_vi": "Cần nói phần việc đã làm hoặc đã dừng."
+        },
+        {
+          "id": "S-022-v005",
+          "ja": "手順",
+          "reading": "てじゅん",
+          "han_viet": "THỦ THUẬN",
+          "vi": "trình tự thao tác",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "safety-labels"
+          ],
+          "level_note_vi": "Cần hỏi hoặc nghe hướng dẫn theo thứ tự trước khi dùng máy."
+        },
+        {
+          "id": "S-022-v006",
+          "ja": "担当者",
+          "reading": "たんとうしゃ",
+          "han_viet": "ĐẢM ĐƯƠNG GIẢ",
+          "vi": "người phụ trách",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần biết hỏi ai khi muốn xác nhận vị trí, mẫu hoặc thao tác."
+        },
+        {
+          "id": "S-022-v007",
+          "ja": "説明する",
+          "reading": "せつめいする",
+          "han_viet": "THUYẾT MINH",
+          "vi": "giải thích, hướng dẫn",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3d91a408-4c4a-5c6d-94db-dfd88768d524-u02",
+              "surface": "説明します"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v008",
+          "ja": "教える",
+          "reading": "おしえる",
+          "han_viet": "GIÁO",
+          "vi": "chỉ, hướng dẫn",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u01",
+              "surface": "教えてください"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v009",
+          "ja": "部品",
+          "reading": "ぶひん",
+          "han_viet": "BỘ PHẨM",
+          "vi": "chi tiết, linh kiện",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8929d022-135d-581f-9beb-18751e50acdc-u01",
+              "surface": "部品を"
+            }
+          ],
+          "source_refs": [
+            "meti-parts"
+          ],
+          "level_note_vi": "Cần nói chính xác loại chi tiết được giao xem hoặc đếm."
+        },
+        {
+          "id": "S-022-v010",
+          "ja": "ロット番号",
+          "reading": "ロットばんごう",
+          "han_viet": "PHIÊN HIỆU",
+          "vi": "số lô",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "meti-parts"
+          ],
+          "level_note_vi": "Cần đọc và báo đúng dấu nhận biết lô trên hộp hoặc nhãn."
+        },
+        {
+          "id": "S-022-v011",
+          "ja": "個",
+          "reading": "こ",
+          "han_viet": "CÁ",
+          "vi": "cái, chiếc (đếm chi tiết)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8929d022-135d-581f-9beb-18751e50acdc-u01",
+              "surface": "二十個"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v012",
+          "ja": "枚",
+          "reading": "まい",
+          "han_viet": "MAI",
+          "vi": "tờ, miếng (đếm nhãn)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u02",
+              "surface": "十枚"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v013",
+          "ja": "数える",
+          "reading": "かぞえる",
+          "han_viet": "SỐ",
+          "vi": "đếm",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u02",
+              "surface": "数えてください"
+            }
+          ],
+          "level_note_vi": "Cần xác nhận số lượng linh kiện hoặc nhãn được giao."
+        },
+        {
+          "id": "S-022-v014",
+          "ja": "分",
+          "reading": "ぶん",
+          "han_viet": "PHÂN",
+          "vi": "phần (lô hàng, phần việc)",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u01",
+              "surface": "最初の分"
+            }
+          ],
+          "level_note_vi": "Cần nói phần đầu làm xong hay còn chờ người phụ trách."
+        },
+        {
+          "id": "S-022-v015",
+          "ja": "検査する",
+          "reading": "けんさする",
+          "han_viet": "KIỂM TRA",
+          "vi": "kiểm tra sản phẩm, linh kiện",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "meti-parts"
+          ],
+          "level_note_vi": "Cần phân biệt bước kiểm sản phẩm với việc làm tiếp lô sau."
+        },
+        {
+          "id": "S-022-v016",
+          "ja": "始める",
+          "reading": "はじめる",
+          "han_viet": "THỦY",
+          "vi": "bắt đầu (phần việc)",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u01",
+              "surface": "次を始める"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v017",
+          "ja": "終わる",
+          "reading": "おわる",
+          "han_viet": "CHUNG",
+          "vi": "xong, kết thúc",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u01",
+              "surface": "最初の分は終わりました"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Xác nhận vật liệu, mẫu và khu được vào",
+      "v10_topic": "Xác nhận vật liệu, mẫu và khu được vào",
+      "terms": [
+        {
+          "id": "S-022-v018",
+          "ja": "材料",
+          "reading": "ざいりょう",
+          "han_viet": "TÀI LIỆU",
+          "vi": "vật liệu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b4a74c62-aafd-595a-af71-61b265dd05a1-u01",
+              "surface": "材料"
+            }
+          ],
+          "level_note_vi": "Cần hỏi đúng vật liệu dành cho lô hôm nay trước khi lấy."
+        },
+        {
+          "id": "S-022-v019",
+          "ja": "箱",
+          "reading": "はこ",
+          "han_viet": "TƯƠNG",
+          "vi": "hộp, thùng đựng",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b4a74c62-aafd-595a-af71-61b265dd05a1-u01",
+              "surface": "青い箱"
+            }
+          ],
+          "source_refs": [
+            "hv-box"
+          ],
+          "note_vi": "Chọn âm TƯƠNG theo nghĩa hòm hoặc hộp."
+        },
+        {
+          "id": "S-022-v020",
+          "ja": "見本",
+          "reading": "みほん",
+          "han_viet": "KIẾN BẢN",
+          "vi": "mẫu để đối chiếu",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "90704231-e874-5a56-b657-12825e2f2c75-u01",
+              "surface": "見本と"
+            }
+          ],
+          "level_note_vi": "Cần xác nhận chi tiết giống vật mẫu trước khi tiếp tục."
+        },
+        {
+          "id": "S-022-v021",
+          "ja": "ラベル",
+          "reading": "ラベル",
+          "han_viet": "",
+          "vi": "nhãn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e9eefe6d-a644-5b1b-8495-22ec93c2fcf3-u02",
+              "surface": "ラベル"
+            }
+          ],
+          "level_note_vi": "Cần đối chiếu hoặc đếm nhãn có mã của lô."
+        },
+        {
+          "id": "S-022-v022",
+          "ja": "番号",
+          "reading": "ばんごう",
+          "han_viet": "PHIÊN HIỆU",
+          "vi": "số, mã nhận biết",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-022-v023",
+          "ja": "青い",
+          "reading": "あおい",
+          "han_viet": "THANH",
+          "vi": "xanh lam",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b4a74c62-aafd-595a-af71-61b265dd05a1-u01",
+              "surface": "青い箱"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v024",
+          "ja": "白い",
+          "reading": "しろい",
+          "han_viet": "BẠCH",
+          "vi": "trắng",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b4a74c62-aafd-595a-af71-61b265dd05a1-u01",
+              "surface": "白い箱"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v025",
+          "ja": "同じ",
+          "reading": "おなじ",
+          "han_viet": "ĐỒNG",
+          "vi": "cùng loại, giống nhau",
+          "pos": "other",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "90704231-e874-5a56-b657-12825e2f2c75-u01",
+              "surface": "見本と同じ"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v026",
+          "ja": "違う",
+          "reading": "ちがう",
+          "han_viet": "VI",
+          "vi": "khác, không đúng",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u01",
+              "surface": "いつもと違う"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v027",
+          "ja": "指示",
+          "reading": "しじ",
+          "han_viet": "CHỈ THỊ",
+          "vi": "chỉ dẫn, yêu cầu được giao",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d4443e64-b3ec-589d-ae18-b5c50f9552d8-u01",
+              "surface": "指示は"
+            }
+          ],
+          "level_note_vi": "Cần báo mã ghi trên hộp không khớp chỉ thị."
+        },
+        {
+          "id": "S-022-v028",
+          "ja": "許可",
+          "reading": "きょか",
+          "han_viet": "HỨA KHẢ",
+          "vi": "sự cho phép",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi có được vào khu vực đó hay tiếp tục công việc chưa."
+        },
+        {
+          "id": "S-022-v029",
+          "ja": "立入禁止",
+          "reading": "たちいりきんし",
+          "han_viet": "LẬP NHẬP CẤM CHỈ",
+          "vi": "cấm vào",
+          "pos": "expression",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "safety-areas"
+          ],
+          "level_note_vi": "Dòng trên biển người làm tại xưởng cần nhận ra trước khi vào một khu."
+        },
+        {
+          "id": "S-022-v030",
+          "ja": "保護具",
+          "reading": "ほごぐ",
+          "han_viet": "BẢO HỘ CỤ",
+          "vi": "trang bị bảo hộ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "safety-labels"
+          ],
+          "level_note_vi": "Cần hỏi cần dùng trang bị gì khi chuyển sang khu khác."
+        },
+        {
+          "id": "S-022-v031",
+          "ja": "安全靴",
+          "reading": "あんぜんぐつ",
+          "han_viet": "AN TOÀN NGOA",
+          "vi": "giày bảo hộ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "safety-labels"
+          ],
+          "level_note_vi": "Cần hỏi hoặc nhận ra tên loại giày phải dùng ở xưởng."
+        },
+        {
+          "id": "S-022-v032",
+          "ja": "入る",
+          "reading": "はいる",
+          "han_viet": "NHẬP",
+          "vi": "đi vào (khu làm việc)",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "419d9f66-df62-5662-9d60-8f1c7e831b93-u01",
+              "surface": "入っても"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v033",
+          "ja": "触る",
+          "reading": "さわる",
+          "han_viet": "XÚC",
+          "vi": "chạm vào",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u02",
+              "surface": "触らないでください"
+            }
+          ],
+          "level_note_vi": "Cần hiểu lời dặn về việc chạm vào máy trước khi được phép."
+        },
+        {
+          "id": "S-022-v034",
+          "ja": "使う",
+          "reading": "つかう",
+          "han_viet": "SỬ",
+          "vi": "dùng (máy, vật liệu)",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "90704231-e874-5a56-b657-12825e2f2c75-u02",
+              "surface": "Bは今日は使いません"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v035",
+          "ja": "場所",
+          "reading": "ばしょ",
+          "han_viet": "TRƯỜNG SỞ",
+          "vi": "nơi, vị trí",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "419d9f66-df62-5662-9d60-8f1c7e831b93-u01",
+              "surface": "Bの場所"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Báo máy lạ, chờ kiểm và bàn giao ca",
+      "v10_topic": "Báo máy lạ, chờ kiểm và bàn giao ca",
+      "terms": [
+        {
+          "id": "S-022-v036",
+          "ja": "機械",
+          "reading": "きかい",
+          "han_viet": "CƠ GIỚI",
+          "vi": "máy, thiết bị",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2d9c0d68-f660-5758-bae3-34c8dd7b99c1-u01",
+              "surface": "この機械"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v037",
+          "ja": "変",
+          "reading": "へん",
+          "han_viet": "BIẾN",
+          "vi": "lạ, khác thường",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "21ccfaab-0d52-5667-b1dd-14906c7f6608-u02",
+              "surface": "変な音"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v038",
+          "ja": "音",
+          "reading": "おと",
+          "han_viet": "ÂM",
+          "vi": "tiếng, âm thanh",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u01",
+              "surface": "音がします"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v039",
+          "ja": "異音",
+          "reading": "いおん",
+          "han_viet": "DỊ ÂM",
+          "vi": "tiếng động bất thường (của máy)",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "safety-noise"
+          ],
+          "level_note_vi": "Cần hiểu từ người phụ trách dùng để hỏi về tiếng lạ."
+        },
+        {
+          "id": "S-022-v040",
+          "ja": "振動",
+          "reading": "しんどう",
+          "han_viet": "CHẤN ĐỘNG",
+          "vi": "độ rung, sự rung",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần báo máy rung bất thường dù không có tiếng rõ."
+        },
+        {
+          "id": "S-022-v041",
+          "ja": "故障する",
+          "reading": "こしょうする",
+          "han_viet": "CỐ CHƯỚNG",
+          "vi": "bị hỏng (máy)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói máy có dấu hiệu hỏng để gọi người phụ trách kiểm."
+        },
+        {
+          "id": "S-022-v042",
+          "ja": "止まる",
+          "reading": "とまる",
+          "han_viet": "CHỈ",
+          "vi": "dừng lại (máy)",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-022-v043",
+          "ja": "止める",
+          "reading": "とめる",
+          "han_viet": "CHỈ",
+          "vi": "dừng (việc, máy)",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u01",
+              "surface": "作業を止めました"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v044",
+          "ja": "運転停止",
+          "reading": "うんてんていし",
+          "han_viet": "VẬN CHUYỂN ĐÌNH CHỈ",
+          "vi": "ngừng chạy (máy)",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "safety-noise"
+          ],
+          "level_note_vi": "Cần hiểu tên trạng thái máy khi người kiểm tra hỏi."
+        },
+        {
+          "id": "S-022-v045",
+          "ja": "離れる",
+          "reading": "はなれる",
+          "han_viet": "LY",
+          "vi": "rời ra, cách xa",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u02",
+              "surface": "離れて待ってください"
+            }
+          ],
+          "level_note_vi": "Cần hiểu và nói mình đã đứng cách khỏi máy có dấu hiệu lạ."
+        },
+        {
+          "id": "S-022-v046",
+          "ja": "近づく",
+          "reading": "ちかづく",
+          "han_viet": "CẬN",
+          "vi": "lại gần",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e4ac798b-1ded-5080-bf17-402200ccc03a-u02",
+              "surface": "近づかず"
+            }
+          ],
+          "level_note_vi": "Cần hiểu lời dặn giữ khoảng cách."
+        },
+        {
+          "id": "S-022-v047",
+          "ja": "連絡する",
+          "reading": "れんらくする",
+          "han_viet": "LIÊN LẠC",
+          "vi": "báo, liên lạc",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-022-v048",
+          "ja": "確認する",
+          "reading": "かくにんする",
+          "han_viet": "XÁC NHẬN",
+          "vi": "kiểm tra, xác nhận",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b8ef55c7-23c9-5f19-8afb-6c2f35e5baa0-u02",
+              "surface": "私が確認します"
+            }
+          ],
+          "level_note_vi": "Cần báo đã kiểm hay còn đợi người phụ trách xác nhận."
+        },
+        {
+          "id": "S-022-v049",
+          "ja": "確認待ち",
+          "reading": "かくにんまち",
+          "han_viet": "XÁC NHẬN ĐÃI",
+          "vi": "đang chờ kiểm tra, chờ xác nhận",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e16c63ef-4ff6-56a3-a6e1-0a8359da4ca4-u01",
+              "surface": "確認待ち"
+            }
+          ],
+          "level_note_vi": "Cần phân biệt lô đã xem với lô được người phụ trách duyệt."
+        },
+        {
+          "id": "S-022-v050",
+          "ja": "待つ",
+          "reading": "まつ",
+          "han_viet": "ĐÃI",
+          "vi": "chờ, đợi",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "419d9f66-df62-5662-9d60-8f1c7e831b93-u03",
+              "surface": "Aで待ちます"
+            }
+          ]
+        },
+        {
+          "id": "S-022-v051",
+          "ja": "引き継ぐ",
+          "reading": "ひきつぐ",
+          "han_viet": "DẪN KẾ",
+          "vi": "tiếp nhận việc được bàn giao, nối tiếp",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói phần việc ca sau nhận từ ca trước."
+        },
+        {
+          "id": "S-022-v052",
+          "ja": "交代",
+          "reading": "こうたい",
+          "han_viet": "GIAO ĐẠI",
+          "vi": "thay ca, đổi người",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần xác định người tiếp nhận việc khi đổi ca."
+        },
+        {
+          "id": "S-022-v053",
+          "ja": "開ける",
+          "reading": "あける",
+          "han_viet": "KHAI",
+          "vi": "mở (nắp, hộp)",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "21ccfaab-0d52-5667-b1dd-14906c7f6608-u02",
+              "surface": "開けていません"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

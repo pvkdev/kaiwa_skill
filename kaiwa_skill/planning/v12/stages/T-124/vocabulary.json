@@ -1,0 +1,748 @@
+{
+  "stage_uid": "9cb3e9cf-516f-5dd1-b1d6-0a33e2c43e28",
+  "stage_code": "T-124",
+  "admin_sources": {
+    "fdma": {
+      "kind": "web",
+      "title": "119番緊急通報｜総務省消防庁",
+      "url": "https://www.fdma.go.jp/mission/enrichment/kyukyumusen_kinkyutuhou/119.html",
+      "use_vi": "Tên cuộc gọi cấp cứu, chỉ dẫn về vị trí và mô tả người cần trợ giúp.",
+      "accessed": "2026-11-19"
+    },
+    "fdma-guide": {
+      "kind": "web",
+      "title": "救急車の呼び方｜総務省消防庁",
+      "url": "https://www.fdma.go.jp/laws/tutatsu/items/804b3720c39af58d6dfea787400048b215e3d69e.pdf",
+      "use_vi": "Từ chỉ ý thức, hô hấp, triệu chứng, bệnh nền và người điều phối cấp cứu.",
+      "accessed": "2026-11-19"
+    },
+    "fdma-help": {
+      "kind": "web",
+      "title": "助けを呼ぶ｜総務省消防庁 応急手当WEB講習",
+      "url": "https://www.fdma.go.jp/relocation/kyukyukikaku/oukyu/05kobetsu/01/05_01_12.html",
+      "use_vi": "Cách gọi phản ứng, yêu cầu xe cấp cứu và thiết bị AED.",
+      "accessed": "2026-11-19"
+    },
+    "fdma-leaf": {
+      "kind": "web",
+      "title": "救急車利用マニュアルの作成｜総務省消防庁",
+      "url": "https://www.fdma.go.jp/singi_kento/kento/items/kento083_15_houkokusyo.pdf",
+      "use_vi": "Tên các triệu chứng như chảy máu và co giật trong tài liệu về gọi cấp cứu.",
+      "accessed": "2026-11-19"
+    },
+    "tepco": {
+      "kind": "web",
+      "title": "停電履歴の表の見方｜東京電力パワーグリッド",
+      "url": "https://teideninfo.tepco.co.jp/mikata-j.html",
+      "use_vi": "Tên sự cố mất điện và mốc dự kiến khôi phục.",
+      "accessed": "2026-11-19"
+    },
+    "npa": {
+      "kind": "web",
+      "title": "お店等の施設で落とし物を拾った場合｜警察庁",
+      "url": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/pickedup-institution.html",
+      "use_vi": "Tên đồ nhặt được, bảo quản và hoàn trả qua đơn vị phụ trách.",
+      "accessed": "2026-11-19"
+    },
+    "npa-loss": {
+      "kind": "web",
+      "title": "遺失届とは？遺失届のポイント｜警察庁",
+      "url": "https://www.npa.go.jp/bureau/soumu/ishitsubutsu/otoshimono/loss.html",
+      "use_vi": "Cách gọi trình báo đồ mất và đối chiếu đặc điểm đồ vật.",
+      "accessed": "2026-11-19"
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Vị trí và trạng thái quan sát được",
+      "v10_topic": "Vị trí và trạng thái người cần trợ giúp",
+      "terms": [
+        {
+          "id": "T-124-v001",
+          "ja": "現場",
+          "reading": "げんば",
+          "han_viet": "HIỆN TRƯỜNG",
+          "vi": "vị trí thực tế đang xảy ra sự việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3850bb07-7577-5f82-946b-811d29ba9c74-u04",
+              "surface": "現場に着いた"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v002",
+          "ja": "所在地",
+          "reading": "しょざいち",
+          "han_viet": "SỞ TẠI ĐỊA",
+          "vi": "địa điểm hoặc địa chỉ nơi xảy ra sự việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-124-v003",
+          "ja": "目印",
+          "reading": "めじるし",
+          "han_viet": "MỤC ẤN",
+          "vi": "vật dễ nhận ra dùng để xác định vị trí",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "20757018-d028-57be-a89d-7ccd564e9f40-u02",
+              "surface": "色や目印"
+            }
+          ],
+          "source_refs": [
+            "fdma"
+          ],
+          "level_note_vi": "Cần nêu vật mốc để đội cấp cứu hoặc người phụ trách tìm đúng nơi."
+        },
+        {
+          "id": "T-124-v004",
+          "ja": "倒れる",
+          "reading": "たおれる",
+          "han_viet": "ĐẢO",
+          "vi": "ngã hoặc đổ gục",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ac4c65be-3f32-5c1a-98d6-1f718e205159-u01",
+              "surface": "お客様が倒れました"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v005",
+          "ja": "反応",
+          "reading": "はんのう",
+          "han_viet": "PHẢN ỨNG",
+          "vi": "dấu hiệu đáp lại khi được gọi hoặc hỏi",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ac4c65be-3f32-5c1a-98d6-1f718e205159-u02",
+              "surface": "呼びかけに反応"
+            }
+          ],
+          "source_refs": [
+            "fdma-help"
+          ],
+          "source_domain": "medical",
+          "level_note_vi": "Cần nói người gặp sự cố có đáp lại lời gọi hay không."
+        },
+        {
+          "id": "T-124-v006",
+          "ja": "意識",
+          "reading": "いしき",
+          "han_viet": "Ý THỨC",
+          "vi": "trạng thái tỉnh táo và nhận biết xung quanh",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "fdma-guide"
+          ],
+          "source_domain": "medical"
+        },
+        {
+          "id": "T-124-v007",
+          "ja": "呼吸",
+          "reading": "こきゅう",
+          "han_viet": "HÔ HẤP",
+          "vi": "việc thở",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ac4c65be-3f32-5c1a-98d6-1f718e205159-u03",
+              "surface": "呼吸は私にはまだ分かりません"
+            }
+          ],
+          "source_refs": [
+            "fdma-guide"
+          ],
+          "source_domain": "medical"
+        },
+        {
+          "id": "T-124-v008",
+          "ja": "息苦しい",
+          "reading": "いきぐるしい",
+          "han_viet": "TỨC KHỔ",
+          "vi": "cảm thấy khó thở",
+          "pos": "i_adj",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5d3f2d3f-ea4f-59f7-8eb2-b1c3ff5c288d-u01",
+              "surface": "息苦しいと"
+            }
+          ],
+          "source_refs": [
+            "fdma-leaf"
+          ],
+          "source_domain": "medical"
+        },
+        {
+          "id": "T-124-v009",
+          "ja": "出血",
+          "reading": "しゅっけつ",
+          "han_viet": "XUẤT HUYẾT",
+          "vi": "tình trạng chảy máu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "fdma-leaf"
+          ],
+          "source_domain": "medical"
+        },
+        {
+          "id": "T-124-v010",
+          "ja": "けいれん",
+          "reading": "けいれん",
+          "han_viet": "",
+          "vi": "cơn co giật hoặc co thắt cơ ngoài ý muốn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_refs": [
+            "fdma-leaf"
+          ],
+          "source_domain": "medical",
+          "level_note_vi": "Cần gọi tên biểu hiện thấy được khi bàn giao người cần cấp cứu."
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Gọi cấp cứu và báo lại điều đã thấy",
+      "v10_topic": "Gọi đầu mối y tế và tóm tắt quan sát",
+      "terms": [
+        {
+          "id": "T-124-v011",
+          "ja": "119番通報",
+          "reading": "ひゃくじゅうきゅうばんつうほう",
+          "han_viet": "PHIÊN THÔNG BÁO",
+          "vi": "cuộc gọi đến 119 để yêu cầu cấp cứu hoặc cứu hỏa tại Nhật",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ac4c65be-3f32-5c1a-98d6-1f718e205159-u04",
+              "surface": "百十九番します"
+            }
+          ],
+          "source_refs": [
+            "fdma"
+          ],
+          "source_domain": "procedural",
+          "level_note_vi": "Cần nhận ra đúng dịch vụ khi phân công người gọi khẩn."
+        },
+        {
+          "id": "T-124-v012",
+          "ja": "救急車",
+          "reading": "きゅうきゅうしゃ",
+          "han_viet": "CỨU CẤP XA",
+          "vi": "xe cấp cứu",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_refs": [
+            "fdma"
+          ],
+          "source_domain": "medical"
+        },
+        {
+          "id": "T-124-v013",
+          "ja": "救急隊",
+          "reading": "きゅうきゅうたい",
+          "han_viet": "CỨU CẤP ĐỘI",
+          "vi": "đội cấp cứu đến hỗ trợ tại hiện trường",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bae6eb1d-3997-517c-8846-5c3195e86b53-u01",
+              "surface": "救急隊です"
+            }
+          ],
+          "source_refs": [
+            "fdma-guide"
+          ],
+          "source_domain": "medical"
+        },
+        {
+          "id": "T-124-v014",
+          "ja": "指令員",
+          "reading": "しれいいん",
+          "han_viet": "CHỈ LỆNH VIÊN",
+          "vi": "người nghe cuộc gọi khẩn cấp và điều phối lực lượng tới nơi",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ac4c65be-3f32-5c1a-98d6-1f718e205159-u04",
+              "surface": "指令員から"
+            }
+          ],
+          "source_refs": [
+            "fdma"
+          ],
+          "source_domain": "procedural",
+          "level_note_vi": "Cần biết ai hỏi vị trí và truyền chỉ dẫn sau cuộc gọi 119."
+        },
+        {
+          "id": "T-124-v015",
+          "ja": "AED",
+          "reading": "エーイーディー",
+          "han_viet": "",
+          "vi": "máy khử rung tim tự động ngoài cơ thể",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_refs": [
+            "fdma-help"
+          ],
+          "source_domain": "medical",
+          "level_note_vi": "Tên thiết bị nhân viên có thể được nhờ chỉ vị trí trong tình huống cấp cứu."
+        },
+        {
+          "id": "T-124-v016",
+          "ja": "症状",
+          "reading": "しょうじょう",
+          "han_viet": "CHỨNG TRẠNG",
+          "vi": "biểu hiện sức khỏe người bệnh cảm thấy hoặc người khác thấy",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_refs": [
+            "fdma-guide"
+          ],
+          "source_domain": "medical"
+        },
+        {
+          "id": "T-124-v017",
+          "ja": "持病",
+          "reading": "じびょう",
+          "han_viet": "TRÌ BỆNH",
+          "vi": "bệnh người đó đã có và đang mang từ trước",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bae6eb1d-3997-517c-8846-5c3195e86b53-u04",
+              "surface": "持病について"
+            }
+          ],
+          "source_refs": [
+            "fdma-guide"
+          ],
+          "source_domain": "medical"
+        },
+        {
+          "id": "T-124-v018",
+          "ja": "指示",
+          "reading": "しじ",
+          "han_viet": "CHỈ THỊ",
+          "vi": "việc hoặc cách làm được người phụ trách yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ac4c65be-3f32-5c1a-98d6-1f718e205159-u04",
+              "surface": "指示があれば"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Báo sự cố vận hành và chuyển hướng phục vụ",
+      "v10_topic": "Thông báo sự cố vận hành",
+      "terms": [
+        {
+          "id": "T-124-v019",
+          "ja": "停電",
+          "reading": "ていでん",
+          "han_viet": "ĐÌNH ĐIỆN",
+          "vi": "tình trạng nguồn điện tại chỗ bị ngắt",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_refs": [
+            "tepco"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "T-124-v020",
+          "ja": "断水",
+          "reading": "だんすい",
+          "han_viet": "ĐOẠN THỦY",
+          "vi": "tình trạng nguồn nước bị ngắt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-124-v021",
+          "ja": "照明",
+          "reading": "しょうめい",
+          "han_viet": "CHIẾU MINH",
+          "vi": "đèn hoặc hệ thống chiếu sáng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9ccde47f-5cde-56a7-bf95-9bf268f452bd-u01",
+              "surface": "照明"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v022",
+          "ja": "端末",
+          "reading": "たんまつ",
+          "han_viet": "ĐOAN MẠT",
+          "vi": "máy dùng để thực hiện thao tác tiếp nhận hoặc thanh toán",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9ccde47f-5cde-56a7-bf95-9bf268f452bd-u01",
+              "surface": "受付端末"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v023",
+          "ja": "点検",
+          "reading": "てんけん",
+          "han_viet": "ĐIỂM KIỂM",
+          "vi": "việc kiểm tình trạng thiết bị",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b7db8fb3-f0d1-5b95-ad49-14ba8f87499b-u01",
+              "surface": "受付を点検"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v024",
+          "ja": "新規受付",
+          "reading": "しんきうけつけ",
+          "han_viet": "TÂN QUY THỤ PHÓ",
+          "vi": "việc tiếp nhận thêm người hoặc yêu cầu mới",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "29e73d0d-0c74-52a1-b064-cf3abfc8f83e-u02",
+              "surface": "新規受付"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v025",
+          "ja": "一時停止",
+          "reading": "いちじていし",
+          "han_viet": "NHẤT THỜI ĐÌNH CHỈ",
+          "vi": "tạm ngừng một phần phục vụ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-124-v026",
+          "ja": "再開",
+          "reading": "さいかい",
+          "han_viet": "TÁI KHAI",
+          "vi": "mở lại hoặc tiếp tục phục vụ sau khi dừng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b7db8fb3-f0d1-5b95-ad49-14ba8f87499b-u03",
+              "surface": "受付の再開"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v027",
+          "ja": "復旧する",
+          "reading": "ふっきゅうする",
+          "han_viet": "PHỤC CỰU",
+          "vi": "khôi phục trạng thái có thể hoạt động được",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "tepco"
+          ],
+          "source_domain": "procedural"
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Mô tả, đối chiếu và giữ đồ thất lạc",
+      "v10_topic": "Mô tả, kiểm và bảo quản đồ thất lạc",
+      "terms": [
+        {
+          "id": "T-124-v028",
+          "ja": "落とし物",
+          "reading": "おとしもの",
+          "han_viet": "LẠC VẬT",
+          "vi": "đồ bị đánh rơi hoặc thất lạc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "916d4875-3b54-5ddc-ae01-5f820228af5a-u03",
+              "surface": "落とし物の担当"
+            }
+          ],
+          "source_refs": [
+            "npa"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "T-124-v029",
+          "ja": "置き忘れる",
+          "reading": "おきわすれる",
+          "han_viet": "TRÍ VONG",
+          "vi": "để đồ lại ở một nơi rồi quên lấy",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "20757018-d028-57be-a89d-7ccd564e9f40-u01",
+              "surface": "置き忘れた"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v030",
+          "ja": "特徴",
+          "reading": "とくちょう",
+          "han_viet": "ĐẶC TRƯNG",
+          "vi": "chi tiết nhận dạng khiến một đồ vật dễ phân biệt",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ed2ef8d1-5ba3-5c55-9afb-8fcb8656dba6-u03",
+              "surface": "特徴"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v031",
+          "ja": "刻印",
+          "reading": "こくいん",
+          "han_viet": "KHẮC ẤN",
+          "vi": "chữ hoặc dấu được khắc lên đồ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "20757018-d028-57be-a89d-7ccd564e9f40-u04",
+              "surface": "刻印"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v032",
+          "ja": "拾得物",
+          "reading": "しゅうとくぶつ",
+          "han_viet": "THẬP ĐẮC VẬT",
+          "vi": "đồ thất lạc đã có người nhặt được",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_refs": [
+            "npa"
+          ],
+          "source_domain": "legal",
+          "level_note_vi": "Tên mục cần nhận ra trong sổ hoặc quy trình xử lý đồ thất lạc."
+        },
+        {
+          "id": "T-124-v033",
+          "ja": "遺失届",
+          "reading": "いしつとどけ",
+          "han_viet": "DI THẤT GIỚI",
+          "vi": "thông báo trình báo việc bị mất đồ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_refs": [
+            "npa-loss"
+          ],
+          "source_domain": "legal",
+          "level_note_vi": "Cần phân biệt báo mất với trường hợp đồ đã được nhặt."
+        },
+        {
+          "id": "T-124-v034",
+          "ja": "保管する",
+          "reading": "ほかんする",
+          "han_viet": "BẢO QUẢN",
+          "vi": "cất giữ an toàn chờ khi có người đến nhận",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "npa"
+          ],
+          "source_domain": "procedural"
+        },
+        {
+          "id": "T-124-v035",
+          "ja": "返還する",
+          "reading": "へんかんする",
+          "han_viet": "PHẢN HOÀN",
+          "vi": "trả lại đồ cho người có quyền nhận",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "source_refs": [
+            "npa"
+          ],
+          "source_domain": "legal",
+          "level_note_vi": "Cần hiểu cách gọi bước hoàn trả trong quy trình xử lý đồ thất lạc."
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Bàn giao ca, cập nhật mốc và việc chưa xong",
+      "v10_topic": "Bàn giao ca và cập nhật việc còn mở",
+      "terms": [
+        {
+          "id": "T-124-v036",
+          "ja": "引き継ぎ",
+          "reading": "ひきつぎ",
+          "han_viet": "DẪN KẾ",
+          "vi": "bàn giao công việc và tình trạng cho người tiếp quản",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-124-v037",
+          "ja": "経過",
+          "reading": "けいか",
+          "han_viet": "KINH QUÁ",
+          "vi": "diễn biến theo thứ tự trước và sau",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần tóm tắt các mốc theo thứ tự để người tiếp ca xử lý đúng."
+        },
+        {
+          "id": "T-124-v038",
+          "ja": "記録",
+          "reading": "きろく",
+          "han_viet": "KÝ LỤC",
+          "vi": "thông tin ghi lại để có thể tra cứu sau",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d411db4d-c4e3-5147-a293-2b1e83701298-u05",
+              "surface": "記録"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v039",
+          "ja": "現時点",
+          "reading": "げんじてん",
+          "han_viet": "HIỆN THỜI ĐIỂM",
+          "vi": "tính đến lúc đang báo tình hình",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-124-v040",
+          "ja": "未確認",
+          "reading": "みかくにん",
+          "han_viet": "VỊ XÁC NHẬN",
+          "vi": "tình trạng còn thiếu kiểm chứng hoặc chưa có xác nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-124-v041",
+          "ja": "折り返す",
+          "reading": "おりかえす",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "gọi lại khi đã có thông tin hoặc vừa nhận lời nhắn",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-124-v042",
+          "ja": "かけ直す",
+          "reading": "かけなおす",
+          "han_viet": "TRỰC",
+          "vi": "gọi thêm một lần sau khi cuộc gọi trước chưa xong",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d0a8560c-0372-526b-8fcc-6b68bc665593-u04",
+              "surface": "かけ直し"
+            }
+          ]
+        },
+        {
+          "id": "T-124-v043",
+          "ja": "再発防止",
+          "reading": "さいはつぼうし",
+          "han_viet": "TÁI PHÁT PHÒNG CHỈ",
+          "vi": "việc thay đổi cách xử lý để sự cố không lặp lại",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

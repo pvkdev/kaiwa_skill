@@ -1,0 +1,948 @@
+{
+  "stage_uid": "2c61afe7-1cd7-5266-89de-46fcc6c5fac0",
+  "stage_code": "T-016",
+  "admin_sources": {
+    "water-use": {
+      "kind": "web",
+      "title": "手続きに際して — 東京都水道局",
+      "url": "https://www.waterworks.metro.tokyo.lg.jp/tetsuduki/shiyou/",
+      "accessed": "2026-11-19",
+      "use_vi": "Thủ tục 中止届 và đầu mối hỏi khi chưa có nước."
+    },
+    "tepco-code": {
+      "kind": "web",
+      "title": "供給地点特定番号を確認したい — 東京電力エナジーパートナー",
+      "url": "https://support.tepco.co.jp/hc/ja/articles/37551673495193",
+      "accessed": "2026-11-19",
+      "use_vi": "Mã điểm cấp điện và tên người đứng hợp đồng."
+    },
+    "water-move": {
+      "kind": "web",
+      "title": "使用開始・中止について — 東京都水道局",
+      "url": "https://www.waterworks.metro.tokyo.lg.jp/faq/qa-4",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên mốc bắt đầu và dừng, mã khách hàng và cách hỏi hồ sơ nước."
+    },
+    "tepco-final": {
+      "kind": "web",
+      "title": "引越し手続きのよくあるご質問 — 東京電力エナジーパートナー",
+      "url": "https://www.move.tepco.co.jp/rcpt/support/faq",
+      "accessed": "2026-11-19",
+      "use_vi": "Thuật ngữ về mã công tơ, mốc bắt đầu/dừng điện, thu phí và kỳ cuối."
+    },
+    "gas-move": {
+      "kind": "web",
+      "title": "ガス・電気の開始や停止のお手続き — 東京ガス",
+      "url": "https://home.tokyo-gas.co.jp/gas_power/procedure/moving/index.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Gọi tên bước sử dụng, mở gas, đóng gas và có mặt khi kỹ thuật viên đến."
+    },
+    "hv-sen": {
+      "kind": "web",
+      "title": "栓 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E6%A0%93",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác nhận âm THUYÊN của chữ 栓 khi chỉ chốt hoặc van."
+    },
+    "gas-stop": {
+      "kind": "web",
+      "title": "ガス・電気の使用停止お手続き詳細 — 東京ガス",
+      "url": "https://home.tokyo-gas.co.jp/gas_power/procedure/moving/khsn_h_flow.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Từ về bố trí vào nhà và người có mặt hoặc đại diện ở lịch đóng gas."
+    },
+    "tepco-change": {
+      "kind": "web",
+      "title": "引越し申込み後の内容の確認・変更・取消 — 東京電力エナジーパートナー",
+      "url": "https://support.tepco.co.jp/hc/ja/articles/360039605973",
+      "accessed": "2026-11-19",
+      "use_vi": "Thuật ngữ sửa lịch, địa chỉ, mã tiếp nhận và nơi gửi hóa đơn cuối."
+    },
+    "hv-kmn": {
+      "kind": "web",
+      "title": "Hán tự 込 — Jdict",
+      "url": "https://jdict.net/kanji/%E8%BE%BC",
+      "accessed": "2026-11-19",
+      "use_vi": "Xác nhận quy ước Nhật–Việt NHẬP của 込."
+    },
+    "share-flow": {
+      "kind": "web",
+      "title": "入退去の流れ — ドミンゴ",
+      "url": "https://www.do-min-go.info/movein-moveout/",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi ngày vào, ngày rời và bước trả chìa khóa của một đơn vị vận hành."
+    },
+    "tepco-no-power": {
+      "kind": "web",
+      "title": "お引越し先で電気がつかない時 — 東京電力エナジーパートナー",
+      "url": "https://www.tepco.co.jp/ep/private/moving/moving03.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Thuật ngữ về chưa có điện ở nhà mới, bảng điện, cầu dao và cấp điện."
+    },
+    "tepco-billing": {
+      "kind": "web",
+      "title": "利用明細の料金や使用量等のデータはいつ反映するのか — 東京電力エナジーパートナー",
+      "url": "https://support.tepco.co.jp/hc/ja/articles/360039105614",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên mục lượng tiêu thụ, ngày ghi chỉ số và số tiền hóa đơn."
+    },
+    "tepco-double": {
+      "kind": "web",
+      "title": "料金を二重に支払ってしまった場合はどうなるのか — 東京電力エナジーパートナー",
+      "url": "https://support.tepco.co.jp/hc/ja/articles/46897422602393",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách hỏi khi đã trả trùng và thuật ngữ 精算."
+    },
+    "hv-jyu": {
+      "kind": "web",
+      "title": "重 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E9%87%8D",
+      "accessed": "2026-11-19",
+      "use_vi": "Phân biệt 重 đọc TRÙNG khi hai lịch chồng nhau với TRỌNG theo nghĩa nặng."
+    },
+    "hv-dam": {
+      "kind": "web",
+      "title": "擔 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/hv/t/%C4%91%E1%BA%A3m",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu từ 負擔 và âm ĐẢM khi chỉ gánh nặng."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Loại dịch vụ, địa chỉ cũ và mới",
+      "v10_topic": "Loại dịch vụ, địa chỉ cũ và mới",
+      "terms": [
+        {
+          "id": "T-016-v001",
+          "ja": "新居",
+          "reading": "しんきょ",
+          "han_viet": "TÂN CƯ",
+          "vi": "nhà mới chuyển đến",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5130954e-9e64-5fa6-8983-d8c82b2c9259-u01",
+              "surface": "新居"
+            },
+            {
+              "utterance_id": "274dec4b-d80b-5889-bd9c-4fdfc6b8be47-u01",
+              "surface": "新居"
+            }
+          ]
+        },
+        {
+          "id": "T-016-v002",
+          "ja": "旧居",
+          "reading": "きゅうきょ",
+          "han_viet": "CỰU CƯ",
+          "vi": "nhà cũ trước khi chuyển",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4ab4b17c-1f67-50c8-a63b-227d2053058f-u01",
+              "surface": "旧居"
+            },
+            {
+              "utterance_id": "4ab4b17c-1f67-50c8-a63b-227d2053058f-u03",
+              "surface": "旧居"
+            }
+          ]
+        },
+        {
+          "id": "T-016-v003",
+          "ja": "転居",
+          "reading": "てんきょ",
+          "han_viet": "CHUYỂN CƯ",
+          "vi": "việc chuyển chỗ ở",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v004",
+          "ja": "現住所",
+          "reading": "げんじゅうしょ",
+          "han_viet": "HIỆN TRÚ SỞ",
+          "vi": "địa chỉ nơi đang ở",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v005",
+          "ja": "部屋番号",
+          "reading": "へやばんごう",
+          "han_viet": "BỘ ỐC PHIÊN HIỆU",
+          "vi": "số căn hoặc số phòng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5130954e-9e64-5fa6-8983-d8c82b2c9259-u02",
+              "surface": "部屋番号"
+            }
+          ]
+        },
+        {
+          "id": "T-016-v006",
+          "ja": "電力会社",
+          "reading": "でんりょくがいしゃ",
+          "han_viet": "ĐIỆN LỰC HỘI XÃ",
+          "vi": "công ty điện",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v050",
+          "ja": "ガス会社",
+          "reading": "ガスがいしゃ",
+          "han_viet": "HỘI XÃ",
+          "vi": "công ty cung cấp gas",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v007",
+          "ja": "水道局",
+          "reading": "すいどうきょく",
+          "han_viet": "THỦY ĐẠO CỤC",
+          "vi": "đơn vị cấp nước của địa phương",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "water-use"
+          ]
+        },
+        {
+          "id": "T-016-v008",
+          "ja": "契約名義",
+          "reading": "けいやくめいぎ",
+          "han_viet": "KHẾ ƯỚC DANH NGHĨA",
+          "vi": "tên người đứng hợp đồng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-code"
+          ]
+        },
+        {
+          "id": "T-016-v009",
+          "ja": "お客さま番号",
+          "reading": "おきゃくさまばんごう",
+          "han_viet": "KHÁCH PHIÊN HIỆU",
+          "vi": "mã khách hàng trên hợp đồng hoặc hóa đơn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "68450fc2-293a-5b39-a648-6eecce0e9335-u02",
+              "surface": "お客さま番号"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "water-move",
+            "tepco-code"
+          ]
+        },
+        {
+          "id": "T-016-v010",
+          "ja": "供給地点特定番号",
+          "reading": "きょうきゅうちてんとくていばんごう",
+          "han_viet": "CUNG CẤP ĐỊA ĐIỂM ĐẶC ĐỊNH PHIÊN HIỆU",
+          "vi": "mã định danh điểm cấp điện",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-code"
+          ],
+          "level_note_vi": "Cần nhận ra mã điểm cấp điện khác với mã khách hàng khi tổng đài hỏi."
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Ngày mở, chuyển và dừng riêng",
+      "v10_topic": "Ngày mở, chuyển và dừng riêng",
+      "terms": [
+        {
+          "id": "T-016-v011",
+          "ja": "使用開始日",
+          "reading": "しようかいしび",
+          "han_viet": "SỬ DỤNG KHAI THỦY NHẬT",
+          "vi": "ngày đã đăng ký để bắt đầu sử dụng dịch vụ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-final"
+          ]
+        },
+        {
+          "id": "T-016-v012",
+          "ja": "使用停止日",
+          "reading": "しようていしび",
+          "han_viet": "SỬ DỤNG ĐÌNH CHỈ NHẬT",
+          "vi": "ngày dừng sử dụng điện hoặc gas đã yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-final",
+            "gas-move"
+          ]
+        },
+        {
+          "id": "T-016-v013",
+          "ja": "使用中止日",
+          "reading": "しようちゅうしび",
+          "han_viet": "SỬ DỤNG TRUNG CHỈ NHẬT",
+          "vi": "ngày dừng nước đã yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "517bcb08-62db-5ccb-98fd-3396353f6b1d-u01",
+              "surface": "使用中止日"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "water-move"
+          ]
+        },
+        {
+          "id": "T-016-v014",
+          "ja": "開栓",
+          "reading": "かいせん",
+          "han_viet": "KHAI THUYÊN",
+          "vi": "việc mở van cấp gas để bắt đầu dùng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "cbe484d5-8cf7-5bca-95b5-14c83649517e-u01",
+              "surface": "開栓"
+            },
+            {
+              "utterance_id": "cbe484d5-8cf7-5bca-95b5-14c83649517e-u02",
+              "surface": "開栓"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "gas-move",
+            "hv-sen"
+          ],
+          "note_vi": "栓 là THUYÊN khi chỉ chốt hoặc van."
+        },
+        {
+          "id": "T-016-v015",
+          "ja": "閉栓",
+          "reading": "へいせん",
+          "han_viet": "BẾ THUYÊN",
+          "vi": "việc đóng van để dừng cấp gas",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "gas-stop",
+            "hv-sen"
+          ],
+          "note_vi": "栓 là THUYÊN khi chỉ chốt hoặc van."
+        },
+        {
+          "id": "T-016-v016",
+          "ja": "中止届",
+          "reading": "ちゅうしとどけ",
+          "han_viet": "TRUNG CHỈ GIỚI",
+          "vi": "thông báo nộp để xin dừng nước",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "water-use"
+          ],
+          "level_note_vi": "Cần nhận ra tên thủ tục khi rời nhà hoặc muốn dừng nước một thời gian."
+        },
+        {
+          "id": "T-016-v017",
+          "ja": "再開する",
+          "reading": "さいかいする",
+          "han_viet": "TÁI KHAI",
+          "vi": "bắt đầu dùng lại dịch vụ sau khi tạm dừng",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "gas-move"
+          ]
+        },
+        {
+          "id": "T-016-v018",
+          "ja": "申し込む",
+          "reading": "もうしこむ",
+          "han_viet": "THÂN NHẬP",
+          "vi": "nộp yêu cầu mở, dừng hoặc chuyển dịch vụ",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7ef08d38-b58a-55a4-8688-041393538b8d-u01",
+              "surface": "申し込めば"
+            },
+            {
+              "utterance_id": "4ab4b17c-1f67-50c8-a63b-227d2053058f-u01",
+              "surface": "申し込む"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-change",
+            "hv-kmn"
+          ],
+          "note_vi": "NHẬP là quy ước Nhật–Việt cho 込 trong từ tiếng Nhật."
+        },
+        {
+          "id": "T-016-v019",
+          "ja": "入居日",
+          "reading": "にゅうきょび",
+          "han_viet": "NHẬP CƯ NHẬT",
+          "vi": "ngày vào ở nhà mới",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-flow"
+          ]
+        },
+        {
+          "id": "T-016-v020",
+          "ja": "退去日",
+          "reading": "たいきょび",
+          "han_viet": "THOÁI KHỨ NHẬT",
+          "vi": "ngày chuyển ra khỏi căn cũ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81d3698a-848a-5eba-8e9c-23291a99660f-u01",
+              "surface": "退去日"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "share-flow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Người có mặt ở nhà và khung giờ",
+      "v10_topic": "Người có mặt ở nhà và khung giờ",
+      "terms": [
+        {
+          "id": "T-016-v021",
+          "ja": "立ち会う",
+          "reading": "たちあう",
+          "han_viet": "LẬP HỘI",
+          "vi": "có mặt để cùng xác nhận hoặc mở cửa cho kỹ thuật viên",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "254d423e-c510-5337-982a-f4ad2dd4c953-u04",
+              "surface": "立ち会います"
+            },
+            {
+              "utterance_id": "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u01",
+              "surface": "立ち会う"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "gas-move"
+          ]
+        },
+        {
+          "id": "T-016-v022",
+          "ja": "訪問時間帯",
+          "reading": "ほうもんじかんたい",
+          "han_viet": "PHỎNG VẤN THỜI GIAN ĐỚI",
+          "vi": "khung giờ nhân viên đến nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "gas-move"
+          ]
+        },
+        {
+          "id": "T-016-v023",
+          "ja": "作業員",
+          "reading": "さぎょういん",
+          "han_viet": "TÁC NGHIỆP VIÊN",
+          "vi": "nhân viên đến thực hiện công việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v024",
+          "ja": "代理人",
+          "reading": "だいりにん",
+          "han_viet": "ĐẠI LÝ NHÂN",
+          "vi": "người có mặt thay người đặt lịch",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "gas-stop"
+          ]
+        },
+        {
+          "id": "T-016-v025",
+          "ja": "不在",
+          "reading": "ふざい",
+          "han_viet": "BẤT TẠI",
+          "vi": "vắng mặt, không có ai ở nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v026",
+          "ja": "オートロック",
+          "reading": "オートロック",
+          "han_viet": "",
+          "vi": "khóa tự động ở cửa vào tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "80768e2b-6773-5641-906b-746a1bbdc308-u03",
+              "surface": "オートロック"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "gas-stop"
+          ]
+        },
+        {
+          "id": "T-016-v027",
+          "ja": "ガスメーター",
+          "reading": "ガスメーター",
+          "han_viet": "",
+          "vi": "đồng hồ đo lượng gas",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "gas-move"
+          ]
+        },
+        {
+          "id": "T-016-v051",
+          "ja": "メーター番号",
+          "reading": "メーターばんごう",
+          "han_viet": "PHIÊN HIỆU",
+          "vi": "mã số trên công tơ hoặc đồng hồ đo",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-final"
+          ]
+        },
+        {
+          "id": "T-016-v052",
+          "ja": "時間指定",
+          "reading": "じかんしてい",
+          "han_viet": "THỜI GIAN CHỈ ĐỊNH",
+          "vi": "chọn hoặc chỉ định khung giờ nhân viên tới",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v029",
+          "ja": "到着予定",
+          "reading": "とうちゃくよてい",
+          "han_viet": "ĐÁO TRƯỚC DỰ ĐỊNH",
+          "vi": "thời điểm dự kiến đến",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2051d012-77f8-5be0-bd80-f8418cf9d1ba-u02",
+              "surface": "到着予定"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Lỗi ghi địa chỉ, hẹn lại và kiểm vận hành",
+      "v10_topic": "Lỗi ghi địa chỉ, hẹn lại và kiểm vận hành",
+      "terms": [
+        {
+          "id": "T-016-v030",
+          "ja": "受付番号",
+          "reading": "うけつけばんごう",
+          "han_viet": "THỤ PHÓ PHIÊN HIỆU",
+          "vi": "mã xác nhận yêu cầu đã tiếp nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u04",
+              "surface": "受付番号"
+            },
+            {
+              "utterance_id": "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u04",
+              "surface": "受付番号"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-change"
+          ]
+        },
+        {
+          "id": "T-016-v031",
+          "ja": "訂正する",
+          "reading": "ていせいする",
+          "han_viet": "ĐÍNH CHÍNH",
+          "vi": "đính chính thông tin bị ghi sai",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v032",
+          "ja": "取り違える",
+          "reading": "とりちがえる",
+          "han_viet": "THỦ VI",
+          "vi": "lẫn cái này với cái khác, như số phòng hai nhà",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v033",
+          "ja": "日程変更",
+          "reading": "にっていへんこう",
+          "han_viet": "NHẬT TRÌNH BIẾN CANH",
+          "vi": "việc đổi ngày hoặc khung giờ đã hẹn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-change"
+          ]
+        },
+        {
+          "id": "T-016-v034",
+          "ja": "取り消す",
+          "reading": "とりけす",
+          "han_viet": "THỦ TIÊU",
+          "vi": "hủy lịch hoặc yêu cầu đã gửi",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-change"
+          ]
+        },
+        {
+          "id": "T-016-v035",
+          "ja": "ブレーカー",
+          "reading": "ブレーカー",
+          "han_viet": "",
+          "vi": "cầu dao điện, aptomat",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-no-power"
+          ]
+        },
+        {
+          "id": "T-016-v036",
+          "ja": "分電盤",
+          "reading": "ぶんでんばん",
+          "han_viet": "PHÂN ĐIỆN BÀN",
+          "vi": "tủ hoặc bảng phân phối điện trong nhà",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-no-power"
+          ],
+          "level_note_vi": "Dùng để hiểu nhân viên đang hỏi vị trí nào khi nhà mới chưa có điện."
+        },
+        {
+          "id": "T-016-v037",
+          "ja": "通電",
+          "reading": "つうでん",
+          "han_viet": "THÔNG ĐIỆN",
+          "vi": "việc cấp điện để mạch có điện",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-no-power"
+          ]
+        },
+        {
+          "id": "T-016-v038",
+          "ja": "停電",
+          "reading": "ていでん",
+          "han_viet": "ĐÌNH ĐIỆN",
+          "vi": "tình trạng mất điện tại nơi đang sử dụng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-016-v053",
+          "ja": "水が出ない",
+          "reading": "みずがでない",
+          "han_viet": "THỦY XUẤT",
+          "vi": "không có nước chảy ra khi mở vòi",
+          "pos": "expression",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7ef08d38-b58a-55a4-8688-041393538b8d-u03",
+              "surface": "水が出なければ"
+            }
+          ]
+        },
+        {
+          "id": "T-016-v039",
+          "ja": "調査中",
+          "reading": "ちょうさちゅう",
+          "han_viet": "ĐIỀU TRA TRUNG",
+          "vi": "đang kiểm tra, chưa có kết quả",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dd4f98f0-c95f-5c2f-bc18-b110899729f8-u01",
+              "surface": "調査中"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Hỏi phí kỳ cuối và đầu mối gọi lại",
+      "v10_topic": "Hỏi phí kỳ cuối và đầu mối gọi lại",
+      "terms": [
+        {
+          "id": "T-016-v040",
+          "ja": "最終請求",
+          "reading": "さいしゅうせいきゅう",
+          "han_viet": "TỐI CHUNG THỈNH CẦU",
+          "vi": "hóa đơn cuối cùng sau khi dừng dịch vụ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-final"
+          ]
+        },
+        {
+          "id": "T-016-v041",
+          "ja": "請求金額",
+          "reading": "せいきゅうきんがく",
+          "han_viet": "THỈNH CẦU KIM NGẠCH",
+          "vi": "số tiền ghi trên hóa đơn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-billing"
+          ]
+        },
+        {
+          "id": "T-016-v042",
+          "ja": "概算",
+          "reading": "がいさん",
+          "han_viet": "KHÁI TOÁN",
+          "vi": "số tiền ước tính",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u01",
+              "surface": "概算"
+            }
+          ]
+        },
+        {
+          "id": "T-016-v043",
+          "ja": "確定する",
+          "reading": "かくていする",
+          "han_viet": "XÁC ĐỊNH",
+          "vi": "chốt số tiền chính thức",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3f3dc287-83b3-5cd7-aebc-b77ab4a8f464-u02",
+              "surface": "確定した"
+            }
+          ]
+        },
+        {
+          "id": "T-016-v044",
+          "ja": "使用量",
+          "reading": "しようりょう",
+          "han_viet": "SỬ DỤNG LƯỢNG",
+          "vi": "lượng điện, nước hoặc gas đã sử dụng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-billing"
+          ]
+        },
+        {
+          "id": "T-016-v045",
+          "ja": "検針票",
+          "reading": "けんしんひょう",
+          "han_viet": "KIỂM CHÂM PHIẾU",
+          "vi": "phiếu ghi chỉ số hoặc lượng dùng và thông tin tính tiền",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-billing"
+          ],
+          "level_note_vi": "Cần nhận ra tên phiếu khi nhân viên yêu cầu đối chiếu kỳ cuối."
+        },
+        {
+          "id": "T-016-v046",
+          "ja": "二重払い",
+          "reading": "にじゅうばらい",
+          "han_viet": "NHỊ TRÙNG PHẤT",
+          "vi": "trả cùng một khoản hai lần",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-double",
+            "hv-jyu"
+          ],
+          "note_vi": "TRÙNG chỉ việc trả lặp hai lần."
+        },
+        {
+          "id": "T-016-v047",
+          "ja": "精算する",
+          "reading": "せいさんする",
+          "han_viet": "TINH TOÁN",
+          "vi": "tính và xử lý phần tiền còn thiếu hoặc đã trả thừa",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tepco-double",
+            "tepco-final"
+          ]
+        },
+        {
+          "id": "T-016-v048",
+          "ja": "担当部署",
+          "reading": "たんとうぶしょ",
+          "han_viet": "ĐẢM ĐƯƠNG BỘ THỰ",
+          "vi": "bộ phận phụ trách việc đang hỏi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b326cd63-e9df-51bd-a27d-d42efeaea3b9-u03",
+              "surface": "担当部署"
+            }
+          ],
+          "source_refs": [
+            "hv-dam"
+          ],
+          "note_vi": "担 là ĐẢM trong 擔當, mang nghĩa đảm nhiệm."
+        },
+        {
+          "id": "T-016-v049",
+          "ja": "折り返す",
+          "reading": "おりかえす",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "gọi lại sau khi kiểm tra hoặc nhận yêu cầu",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9b32db1e-071e-5686-a1d6-dcbf55cb9d22-u02",
+              "surface": "折り返します"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

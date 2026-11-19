@@ -1,0 +1,1039 @@
+{
+  "stage_uid": "ab1e1d2e-4c1e-5ca4-8ee3-8f570ee5549e",
+  "stage_code": "S-049",
+  "admin_sources": {
+    "mhlw-nabii": {
+      "kind": "web",
+      "title": "医療情報ネット（ナビイ）の使い方｜厚生労働省",
+      "url": "https://kakarikata.mhlw.go.jp/kakaritsuke/nabii.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên công cụ tra cứu, chỗ khám và giờ, khoa khám trong hướng dẫn của bộ."
+    },
+    "mhlw-nabii-search": {
+      "kind": "web",
+      "title": "医療情報ネット（ナビイ）｜厚生労働省",
+      "url": "https://www.iryou.teikyouseido.mhlw.go.jp/znk-web/juminkanja/S2300/initialize",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi 医院 và trường 受付時間 khi tra nơi khám."
+    },
+    "jcho-outpatient": {
+      "kind": "web",
+      "title": "外来受診｜東京新宿メディカルセンター",
+      "url": "https://shinjuku.jcho.go.jp/patient/outpatient/%E5%A4%96%E6%9D%A5%E5%8F%97%E8%A8%BA-2/",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu 診察, 初診, 再診, 診察券, 紹介状 và 検査 trong hướng dẫn khám ngoại trú."
+    },
+    "mhlw-forms": {
+      "kind": "web",
+      "title": "外国人向け多言語説明資料 一覧｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/kokusai/setsumei-ml.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên và chức năng của 問診票 trong tài liệu đa ngôn ngữ."
+    },
+    "mhlw-eligibility": {
+      "kind": "web",
+      "title": "資格確認方法について｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/newpage_50657.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên マイナ保険証 và 資格確認書 và nghĩa từng loại giấy tại quầy y tế."
+    },
+    "mhlw-internal": {
+      "kind": "web",
+      "title": "内科 問診票（中国語繁体字・日本語）｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/file/06-Seisakujouhou-10800000-Iseikyoku/0000212668.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên triệu chứng tiêu hóa, ho, chóng mặt và cảm giác thèm ăn trên phiếu khám."
+    },
+    "mhlw-condition": {
+      "kind": "web",
+      "title": "感染拡大防止へのご協力をお願いいたします！｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kansentaisaku.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách nói 熱がある chỉ bị sốt."
+    },
+    "mhlw-intake": {
+      "kind": "web",
+      "title": "問診票（内科）のサンプル（英語版）｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/content/10800000/001691274.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách diễn đạt 寒気がする, vị trí và thông số triệu chứng trong mẫu phiếu."
+    },
+    "mhlw-flu": {
+      "kind": "web",
+      "title": "インフルエンザ（総合ページ）｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/infulenza/index.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách ghi ho, đau họng và nhiệt độ trong mục triệu chứng thường gặp."
+    },
+    "mhlw-urgent": {
+      "kind": "web",
+      "title": "こんな時は迷わず119へ｜厚生労働省",
+      "url": "https://kakarikata.mhlw.go.jp/kakaritsuke/urgency.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên 救急車 trong ngữ cảnh y tế khẩn cấp."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Nơi khám và giờ tiếp nhận",
+      "v10_topic": "Nơi khám và giờ tiếp nhận",
+      "terms": [
+        {
+          "id": "S-049-v017",
+          "ja": "病院",
+          "reading": "びょういん",
+          "han_viet": "BỆNH VIỆN",
+          "vi": "bệnh viện",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-049-v018",
+          "ja": "医院",
+          "reading": "いいん",
+          "han_viet": "Y VIỆN",
+          "vi": "phòng khám, cơ sở khám bệnh nhỏ",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6fccf7ed-b499-55dd-81ad-f608958d9569-u03",
+              "surface": "医院"
+            }
+          ],
+          "level_note_vi": "Cần biết nhãn để tìm nơi khám còn nhận bệnh trong ngày.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-nabii-search"
+          ]
+        },
+        {
+          "id": "S-049-v019",
+          "ja": "内科",
+          "reading": "ないか",
+          "han_viet": "NỘI KHOA",
+          "vi": "khoa nội",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần gọi tên khoa thường hỏi khi có vấn đề sức khỏe chung.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-nabii"
+          ]
+        },
+        {
+          "id": "S-049-v020",
+          "ja": "診る",
+          "reading": "みる",
+          "han_viet": "CHẨN",
+          "vi": "khám (bệnh)",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f2516f08-c7b5-5e99-a97b-07d1dcf3d75a-u01",
+              "surface": "診てもらえます"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "jcho-outpatient"
+          ],
+          "level_note_vi": "Động từ cần để hỏi nơi đó hôm nay có khám người bị triệu chứng mình nêu không."
+        },
+        {
+          "id": "S-049-v021",
+          "ja": "診察",
+          "reading": "しんさつ",
+          "han_viet": "CHẨN SÁT",
+          "vi": "việc bác sĩ khám bệnh",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f2516f08-c7b5-5e99-a97b-07d1dcf3d75a-u02",
+              "surface": "診察"
+            }
+          ],
+          "level_note_vi": "Cần phân biệt tiếp nhận hồ sơ với việc bác sĩ khám.",
+          "source_domain": "medical",
+          "source_refs": [
+            "jcho-outpatient"
+          ]
+        },
+        {
+          "id": "S-049-v022",
+          "ja": "受付",
+          "reading": "うけつけ",
+          "han_viet": "THỤ PHÓ",
+          "vi": "quầy hoặc việc tiếp nhận",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "62e71a2c-4254-595e-89f3-45c194e6277c-u01",
+              "surface": "受付"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v023",
+          "ja": "受付時間",
+          "reading": "うけつけじかん",
+          "han_viet": "THỤ PHÓ THỜI GIAN",
+          "vi": "giờ nhận đăng ký khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi giờ cuối quầy còn tiếp nhận người đến khám.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-nabii-search"
+          ]
+        },
+        {
+          "id": "S-049-v024",
+          "ja": "診療時間",
+          "reading": "しんりょうじかん",
+          "han_viet": "CHẨN LIỆU THỜI GIAN",
+          "vi": "giờ khám bệnh",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb272fd4-964e-5c64-a830-97c98a184450-u02",
+              "surface": "診療時間"
+            }
+          ],
+          "level_note_vi": "Cần phân biệt giờ khám với giờ quầy tiếp nhận đăng ký.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-nabii"
+          ]
+        },
+        {
+          "id": "S-049-v025",
+          "ja": "予約する",
+          "reading": "よやくする",
+          "han_viet": "DỰ ƯỚC",
+          "vi": "đặt lịch hẹn",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6d21bb55-02ed-5f10-a1d8-f33cb09fd568-u01",
+              "surface": "予約した"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v026",
+          "ja": "空く",
+          "reading": "あく",
+          "han_viet": "KHÔNG",
+          "vi": "còn giờ trống",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6d21bb55-02ed-5f10-a1d8-f33cb09fd568-u02",
+              "surface": "空いています"
+            }
+          ],
+          "level_note_vi": "Cần hỏi còn khung giờ nào để đổi lịch hoặc khám sớm."
+        },
+        {
+          "id": "S-049-v027",
+          "ja": "初診",
+          "reading": "しょしん",
+          "han_viet": "SƠ CHẨN",
+          "vi": "lần khám đầu",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận tên quầy hoặc loại lịch cho lần đầu đi khám.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "jcho-outpatient"
+          ]
+        },
+        {
+          "id": "S-049-v028",
+          "ja": "診察券",
+          "reading": "しんさつけん",
+          "han_viet": "CHẨN SÁT KHOÁN",
+          "vi": "thẻ khám của cơ sở y tế",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2e1dd2e7-b90a-5b80-9c61-060c93498755-u02",
+              "surface": "診察券"
+            }
+          ],
+          "level_note_vi": "Thẻ có thể được dùng khi đi tái khám hoặc liên hệ đặt lịch.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "jcho-outpatient"
+          ]
+        },
+        {
+          "id": "S-049-v029",
+          "ja": "問診票",
+          "reading": "もんしんひょう",
+          "han_viet": "VẤN CHẨN PHIẾU",
+          "vi": "phiếu hỏi thông tin sức khỏe trước khi khám",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận đúng tên giấy tại quầy khi đi khám lần đầu.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-forms"
+          ]
+        },
+        {
+          "id": "S-049-v030",
+          "ja": "マイナ保険証",
+          "reading": "マイナほけんしょう",
+          "han_viet": "BẢO HIỂM CHỨNG",
+          "vi": "thẻ My Number đã đăng ký dùng để xác minh bảo hiểm y tế",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra tên giấy tờ khi quầy kiểm bảo hiểm.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-eligibility"
+          ]
+        },
+        {
+          "id": "S-049-v031",
+          "ja": "資格確認書",
+          "reading": "しかくかくにんしょ",
+          "han_viet": "TƯ CÁCH XÁC NHẬN THƯ",
+          "vi": "giấy xác nhận tư cách tham gia bảo hiểm y tế",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận đúng tên giấy khi hỏi quầy về xác minh bảo hiểm.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-eligibility"
+          ]
+        },
+        {
+          "id": "S-049-v032",
+          "ja": "医療情報ネット",
+          "reading": "いりょうじょうほうネット",
+          "han_viet": "Y LIỆU TÌNH BÁO",
+          "vi": "trang tra cứu cơ sở y tế của Bộ Y tế Nhật",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6fccf7ed-b499-55dd-81ad-f608958d9569-u03",
+              "surface": "医療情報ネット"
+            }
+          ],
+          "level_note_vi": "Tên công cụ được chỉ tới khi nơi dự kiến khám hết lịch.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-nabii"
+          ]
+        },
+        {
+          "id": "S-049-v033",
+          "ja": "入口",
+          "reading": "いりぐち",
+          "han_viet": "NHẬP KHẨU",
+          "vi": "lối vào",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "62e71a2c-4254-595e-89f3-45c194e6277c-u02",
+              "surface": "入口"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v034",
+          "ja": "午前",
+          "reading": "ごぜん",
+          "han_viet": "NGỌ TIỀN",
+          "vi": "buổi sáng, trước trưa",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6fccf7ed-b499-55dd-81ad-f608958d9569-u03",
+              "surface": "午前"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Nói nơi đau, thời điểm và triệu chứng",
+      "v10_topic": "Nói nơi đau, thời điểm và triệu chứng",
+      "terms": [
+        {
+          "id": "S-049-v035",
+          "ja": "痛い",
+          "reading": "いたい",
+          "han_viet": "THỐNG",
+          "vi": "đau",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9207ac27-7cfa-57cd-b157-6f1aea48e397-u01",
+              "surface": "痛い"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v036",
+          "ja": "お腹",
+          "reading": "おなか",
+          "han_viet": "PHÚC",
+          "vi": "bụng",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9207ac27-7cfa-57cd-b157-6f1aea48e397-u01",
+              "surface": "お腹"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v037",
+          "ja": "頭",
+          "reading": "あたま",
+          "han_viet": "ĐẦU",
+          "vi": "đầu",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-049-v038",
+          "ja": "胸",
+          "reading": "むね",
+          "han_viet": "HUNG",
+          "vi": "ngực",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói rõ vị trí cơn đau hoặc cảm giác nặng ở ngực."
+        },
+        {
+          "id": "S-049-v039",
+          "ja": "背中",
+          "reading": "せなか",
+          "han_viet": "BỐI TRUNG",
+          "vi": "lưng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-049-v040",
+          "ja": "右側",
+          "reading": "みぎがわ",
+          "han_viet": "HỮU TRẮC",
+          "vi": "phía bên phải",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "62e71a2c-4254-595e-89f3-45c194e6277c-u02",
+              "surface": "右側"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v041",
+          "ja": "左側",
+          "reading": "ひだりがわ",
+          "han_viet": "TẢ TRẮC",
+          "vi": "phía bên trái",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-049-v042",
+          "ja": "症状",
+          "reading": "しょうじょう",
+          "han_viet": "CHỨNG TRẠNG",
+          "vi": "triệu chứng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra câu hỏi bác sĩ hỏi có biểu hiện gì.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-internal"
+          ]
+        },
+        {
+          "id": "S-049-v043",
+          "ja": "熱がある",
+          "reading": "ねつがある",
+          "han_viet": "NHIỆT",
+          "vi": "bị sốt",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f2516f08-c7b5-5e99-a97b-07d1dcf3d75a-u01",
+              "surface": "熱があります"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-condition"
+          ]
+        },
+        {
+          "id": "S-049-v044",
+          "ja": "寒気",
+          "reading": "さむけ",
+          "han_viet": "HÀN KHÍ",
+          "vi": "cảm giác ớn lạnh",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-049-SH-002",
+              "surface": "寒気"
+            }
+          ],
+          "level_note_vi": "Cách diễn đạt thường gặp khi kể mới bị ớn lạnh.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-intake"
+          ]
+        },
+        {
+          "id": "S-049-v045",
+          "ja": "咳",
+          "reading": "せき",
+          "han_viet": "KHÁI",
+          "vi": "ho, tiếng ho",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nêu có ho kèm sốt hoặc đau họng hay không.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-049-v046",
+          "ja": "のどの痛み",
+          "reading": "のどのいたみ",
+          "han_viet": "THỐNG",
+          "vi": "đau họng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-049-v047",
+          "ja": "吐き気",
+          "reading": "はきけ",
+          "han_viet": "THỔ KHÍ",
+          "vi": "buồn nôn",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nêu cảm giác sắp nôn khi hỏi bác sĩ.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-internal"
+          ]
+        },
+        {
+          "id": "S-049-v048",
+          "ja": "吐く",
+          "reading": "はく",
+          "han_viet": "THỔ",
+          "vi": "nôn",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c945c7a7-a99d-507c-8f1c-32d8adc6cfa3-u01",
+              "surface": "吐きそう"
+            }
+          ],
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-internal"
+          ],
+          "level_note_vi": "Cần phân biệt đã nôn hay chỉ buồn nôn khi mô tả tình trạng."
+        },
+        {
+          "id": "S-049-v049",
+          "ja": "下痢",
+          "reading": "げり",
+          "han_viet": "HẠ LỊ",
+          "vi": "tiêu chảy",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói khi có triệu chứng tiêu hóa khác ngoài đau bụng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-internal"
+          ]
+        },
+        {
+          "id": "S-049-v050",
+          "ja": "食欲",
+          "reading": "しょくよく",
+          "han_viet": "THỰC DỤC",
+          "vi": "cảm giác muốn ăn, sự thèm ăn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-049-SH-003",
+              "surface": "食欲"
+            }
+          ],
+          "level_note_vi": "Cần trả lời khi bác sĩ hỏi ăn được hay không.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-internal"
+          ]
+        },
+        {
+          "id": "S-049-v051",
+          "ja": "めまい",
+          "reading": "めまい",
+          "han_viet": "",
+          "vi": "chóng mặt",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần mô tả cảm giác choáng hoặc quay cuồng bằng từ thường dùng khi khám.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-internal"
+          ]
+        },
+        {
+          "id": "S-049-v052",
+          "ja": "体温",
+          "reading": "たいおん",
+          "han_viet": "THỂ ÔN",
+          "vi": "thân nhiệt",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nêu nhiệt độ đã đo khi hỏi nơi khám.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-intake"
+          ]
+        },
+        {
+          "id": "S-049-v053",
+          "ja": "〜度",
+          "reading": "ど",
+          "han_viet": "ĐỘ",
+          "vi": "độ (đơn vị đo nhiệt độ)",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-049-v054",
+          "ja": "昨日",
+          "reading": "きのう",
+          "han_viet": "TẠC NHẬT",
+          "vi": "hôm qua",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f2516f08-c7b5-5e99-a97b-07d1dcf3d75a-u01",
+              "surface": "昨日"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v055",
+          "ja": "急に",
+          "reading": "きゅうに",
+          "han_viet": "CẤP",
+          "vi": "đột nhiên",
+          "pos": "adverb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb272fd4-964e-5c64-a830-97c98a184450-u02",
+              "surface": "急に"
+            }
+          ],
+          "level_note_vi": "Cần kể triệu chứng bắt đầu từ từ hay đột ngột."
+        },
+        {
+          "id": "S-049-v056",
+          "ja": "激しい",
+          "reading": "はげしい",
+          "han_viet": "KÍCH",
+          "vi": "dữ dội, mãnh liệt",
+          "pos": "i_adj",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb272fd4-964e-5c64-a830-97c98a184450-u02",
+              "surface": "激しく痛く"
+            }
+          ],
+          "level_note_vi": "Cần nói mức đau một cách cụ thể khi hỏi lời dặn hoặc báo triệu chứng."
+        },
+        {
+          "id": "S-049-v057",
+          "ja": "弱い",
+          "reading": "よわい",
+          "han_viet": "NHƯỢC",
+          "vi": "nhẹ, yếu (cơn đau)",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "bd005ef3-0055-54dc-9b54-9e1047578420-u01",
+              "surface": "弱くなりました"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v058",
+          "ja": "楽",
+          "reading": "らく",
+          "han_viet": "LẠC",
+          "vi": "dễ chịu, đỡ khó chịu",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7fd9e227-8b8e-56cf-9fa3-7a868f7fefa7-u02",
+              "surface": "少し楽"
+            }
+          ],
+          "level_note_vi": "Cần nói tư thế hoặc lúc nào cơn đau dịu đi."
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Hỏi lại lời dặn, tái khám hoặc chuyển nơi",
+      "v10_topic": "Hỏi lại lời dặn, tái khám hoặc chuyển nơi",
+      "terms": [
+        {
+          "id": "S-049-v001",
+          "ja": "医師",
+          "reading": "いし",
+          "han_viet": "Y SƯ",
+          "vi": "bác sĩ",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9e886675-7a34-5c19-9340-e85cfc2b095b-u02",
+              "surface": "医師"
+            }
+          ],
+          "level_note_vi": "Cần nhận ra người sẽ kiểm tra lại và trả lời về lời dặn.",
+          "source_domain": "medical",
+          "source_refs": [
+            "jcho-outpatient"
+          ]
+        },
+        {
+          "id": "S-049-v002",
+          "ja": "検査",
+          "reading": "けんさ",
+          "han_viet": "KIỂM TRA",
+          "vi": "xét nghiệm hoặc kiểm tra y khoa",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e39b7b35-eb9a-5847-9b6e-6740c13e5542-u01",
+              "surface": "検査"
+            }
+          ],
+          "level_note_vi": "Cần hỏi làm kiểm tra gì và sẽ diễn ra thế nào.",
+          "source_domain": "medical",
+          "source_refs": [
+            "jcho-outpatient"
+          ]
+        },
+        {
+          "id": "S-049-v003",
+          "ja": "受ける",
+          "reading": "うける",
+          "han_viet": "THỤ",
+          "vi": "tiếp nhận, thực hiện (khám hoặc xét nghiệm)",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb10aaa1-abc3-5afd-bd11-b0a55793cc9f-u02",
+              "surface": "受けるか"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v004",
+          "ja": "再診",
+          "reading": "さいしん",
+          "han_viet": "TÁI CHẨN",
+          "vi": "lần khám lại, tái khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên lượt khám cần hỏi khi quay lại sau lần đầu.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "jcho-outpatient"
+          ]
+        },
+        {
+          "id": "S-049-v005",
+          "ja": "紹介状",
+          "reading": "しょうかいじょう",
+          "han_viet": "THIỆU GIỚI TRẠNG",
+          "vi": "giấy giới thiệu sang cơ sở khám khác",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi trước có giấy giới thiệu khi được chuyển nơi khám.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "jcho-outpatient"
+          ]
+        },
+        {
+          "id": "S-049-v006",
+          "ja": "受診先",
+          "reading": "じゅしんさき",
+          "han_viet": "THỤ CHẨN TIÊN",
+          "vi": "cơ sở sẽ đến khám",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "17c25138-5c8f-5d0c-af81-4ded6ce90d23-u01",
+              "surface": "受診先"
+            }
+          ],
+          "level_note_vi": "Cần xác nhận tên nơi được giới thiệu để gọi đặt lịch.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-nabii"
+          ]
+        },
+        {
+          "id": "S-049-v007",
+          "ja": "指示",
+          "reading": "しじ",
+          "han_viet": "CHỈ THỊ",
+          "vi": "lời chỉ dẫn, lời dặn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần gọi tên phần chỉ dẫn muốn hỏi lại sau khi khám."
+        },
+        {
+          "id": "S-049-v008",
+          "ja": "救急車",
+          "reading": "きゅうきゅうしゃ",
+          "han_viet": "CỨU CẤP XA",
+          "vi": "xe cấp cứu",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb272fd4-964e-5c64-a830-97c98a184450-u02",
+              "surface": "救急車"
+            }
+          ],
+          "level_note_vi": "Cần nhận ra từ trong lời dặn về tình huống khẩn cấp.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-urgent"
+          ]
+        },
+        {
+          "id": "S-049-v009",
+          "ja": "電話する",
+          "reading": "でんわする",
+          "han_viet": "ĐIỆN THOẠI",
+          "vi": "gọi điện",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "338725d9-c0d9-584f-82ce-1a9df05c11f1-u03",
+              "surface": "電話します"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v010",
+          "ja": "続く",
+          "reading": "つづく",
+          "han_viet": "TỤC",
+          "vi": "tiếp diễn, kéo dài",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb272fd4-964e-5c64-a830-97c98a184450-u02",
+              "surface": "続いたら"
+            }
+          ],
+          "level_note_vi": "Cần hỏi khi nào liên hệ lại nếu đau vẫn kéo dài."
+        },
+        {
+          "id": "S-049-v011",
+          "ja": "良くなる",
+          "reading": "よくなる",
+          "han_viet": "LƯƠNG",
+          "vi": "đỡ hơn, khá hơn",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "eb272fd4-964e-5c64-a830-97c98a184450-u01",
+              "surface": "よくならなかったら"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v012",
+          "ja": "ひどくなる",
+          "reading": "ひどくなる",
+          "han_viet": "",
+          "vi": "nặng lên, tệ hơn",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-049-v013",
+          "ja": "折り返す",
+          "reading": "おりかえす",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "gọi lại để phản hồi",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9e886675-7a34-5c19-9340-e85cfc2b095b-u02",
+              "surface": "折り返します"
+            }
+          ],
+          "level_note_vi": "Cần hiểu nhân viên sẽ hỏi bác sĩ rồi gọi lại."
+        },
+        {
+          "id": "S-049-v014",
+          "ja": "もう一度",
+          "reading": "もういちど",
+          "han_viet": "NHẤT ĐỘ",
+          "vi": "thêm một lần nữa",
+          "pos": "adverb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "17c25138-5c8f-5d0c-af81-4ded6ce90d23-u02",
+              "surface": "もう一度"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v015",
+          "ja": "簡単",
+          "reading": "かんたん",
+          "han_viet": "GIẢN ĐƠN",
+          "vi": "đơn giản, dễ hiểu",
+          "pos": "na_adj",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e39b7b35-eb9a-5847-9b6e-6740c13e5542-u01",
+              "surface": "簡単"
+            }
+          ]
+        },
+        {
+          "id": "S-049-v016",
+          "ja": "次回",
+          "reading": "じかい",
+          "han_viet": "THỨ HỒI",
+          "vi": "lần tới",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi mốc và nơi cho lần khám tiếp theo."
+        }
+      ]
+    }
+  ]
+}

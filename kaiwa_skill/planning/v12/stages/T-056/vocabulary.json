@@ -1,0 +1,828 @@
+{
+  "stage_uid": "10c72cfa-88d0-55a1-938f-2c0111febceb",
+  "stage_code": "T-056",
+  "admin_sources": {
+    "juku-price": {
+      "kind": "web",
+      "title": "授業料（料金）について｜明光義塾",
+      "url": "https://www.meikogijuku.jp/price/",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên phí, lớp cá nhân, số buổi và cách hỏi buổi học bù."
+    },
+    "juku-course": {
+      "kind": "web",
+      "title": "ちはら台教室｜明光義塾",
+      "url": "https://www.meikogijuku.jp/school/chiba/ichihara-shi/S1647/",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên môn, cách học thử, tham quan và các loại lớp."
+    },
+    "kumon-fees": {
+      "kind": "web",
+      "title": "教室・先生に関するご質問｜公文式",
+      "url": "https://www.kumon.ne.jp/qa/top/kyoshitsu.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Mục hỏi đáp của Kumon gọi học phí hằng tháng theo môn là 会費（月謝）."
+    },
+    "kumon-rules": {
+      "kind": "web",
+      "title": "公文式通信学習入会規約 国内生｜公文教育研究会",
+      "url": "https://www.kumon.ne.jp/correspondence/print/kiyakukokunai2025",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên nghỉ tạm, thôi học, hạn xử lý và việc trả tài liệu."
+    },
+    "yamaha-rules": {
+      "kind": "web",
+      "title": "ヤマハ音楽教室 ヤマハミュージックレッスン 基本会則｜ヤマハ",
+      "url": "https://www.yamaha-ongaku.com/music-school/assets/music_school/img/rules/rules_202105.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên các khoản phí và hạn báo thay đổi lớp ngoại khóa."
+    },
+    "hv-komu": {
+      "kind": "web",
+      "title": "Hán tự 込 – NHẬP｜Jdict",
+      "url": "https://jdict.net/kanji/%E8%BE%BC",
+      "accessed": "2026-11-19",
+      "use_vi": "Quy ước âm NHẬP cho chữ 込 trong từ Nhật."
+    },
+    "hv-ai": {
+      "kind": "web",
+      "title": "合｜Từ điển Hán Nôm Thi Viện",
+      "url": "https://hvdic.thivien.net/whv/合",
+      "accessed": "2026-11-19",
+      "use_vi": "Âm HỢP của chữ 合."
+    },
+    "hv-ketsu-old": {
+      "kind": "web",
+      "title": "欠 — 漢字ペディア（公益財団法人日本漢字能力検定協会）",
+      "url": "https://www.kanjipedia.jp/kanji/0001854000",
+      "accessed": "2026-11-19",
+      "use_vi": "Phân biệt 欠 nghĩa Aケツ, chữ cũ 缺 (thiếu/vắng, 欠点/欠席), với nghĩa Bケン/ngáp; căn cứ chọn âm theo chữ cũ trong từ Nhật."
+    },
+    "hv-khuyet": {
+      "kind": "web",
+      "title": "缺 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/缺",
+      "accessed": "2026-11-19",
+      "use_vi": "Âm KHUYẾT cho 缺 trong nghĩa thiếu, điểm thiếu sót, chỗ trống, vắng; đối chiếu khuyết điểm 缺點 và khuyết tịch 缺席."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Tuổi và mục tiêu lớp",
+      "v10_topic": "Tuổi và mục tiêu lớp",
+      "terms": [
+        {
+          "id": "T-056-v001",
+          "ja": "学習塾",
+          "reading": "がくしゅうじゅく",
+          "han_viet": "HỌC TẬP THỤC",
+          "vi": "trung tâm học thêm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "juku-price"
+          ]
+        },
+        {
+          "id": "T-056-v002",
+          "ja": "習い事",
+          "reading": "ならいごと",
+          "han_viet": "TẬP SỰ",
+          "vi": "lớp học ngoại khóa theo sở thích",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v003",
+          "ja": "対象年齢",
+          "reading": "たいしょうねんれい",
+          "han_viet": "ĐỐI TƯỢNG NIÊN LINH",
+          "vi": "độ tuổi được nhận vào lớp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v004",
+          "ja": "初心者",
+          "reading": "しょしんしゃ",
+          "han_viet": "SƠ TÂM GIẢ",
+          "vi": "người mới học",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v005",
+          "ja": "個別指導",
+          "reading": "こべつしどう",
+          "han_viet": "CÁ BIỆT CHỈ ĐẠO",
+          "vi": "dạy kèm cá nhân hoặc theo nhóm rất nhỏ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "juku-price"
+          ]
+        },
+        {
+          "id": "T-056-v006",
+          "ja": "集団授業",
+          "reading": "しゅうだんじゅぎょう",
+          "han_viet": "TẬP ĐOÀN THỤ NGHIỆP",
+          "vi": "lớp dạy theo nhóm có cùng tiến độ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v007",
+          "ja": "補習",
+          "reading": "ほしゅう",
+          "han_viet": "BỔ TẬP",
+          "vi": "học bổ sung phần chưa theo kịp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v008",
+          "ja": "受験対策",
+          "reading": "じゅけんたいさく",
+          "han_viet": "THỤ NGHIỆM ĐỐI SÁCH",
+          "vi": "chuẩn bị kiến thức hoặc kỹ năng cho kỳ thi",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v009",
+          "ja": "科目",
+          "reading": "かもく",
+          "han_viet": "KHOA MỤC",
+          "vi": "môn học",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v010",
+          "ja": "絵画",
+          "reading": "かいが",
+          "han_viet": "HỘI HỌA",
+          "vi": "môn vẽ tranh",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v011",
+          "ja": "水泳",
+          "reading": "すいえい",
+          "han_viet": "THỦY VỊNH",
+          "vi": "môn bơi",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v012",
+          "ja": "ピアノ",
+          "reading": "ピアノ",
+          "han_viet": "",
+          "vi": "đàn piano, lớp học đàn piano",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Buổi thử, lịch và người đi cùng",
+      "v10_topic": "Buổi thử, lịch và người đi cùng",
+      "terms": [
+        {
+          "id": "T-056-v013",
+          "ja": "体験授業",
+          "reading": "たいけんじゅぎょう",
+          "han_viet": "THỂ NGHIỆM THỤ NGHIỆP",
+          "vi": "buổi học thử",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "juku-course"
+          ]
+        },
+        {
+          "id": "T-056-v014",
+          "ja": "見学",
+          "reading": "けんがく",
+          "han_viet": "KIẾN HỌC",
+          "vi": "việc đến xem lớp học",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e26414b7-a635-5a07-b57c-b01290aac859-u04",
+              "surface": "見学"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "juku-course"
+          ]
+        },
+        {
+          "id": "T-056-v015",
+          "ja": "満員",
+          "reading": "まんいん",
+          "han_viet": "MÃN VIÊN",
+          "vi": "đã đủ người, không còn chỗ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1f6f720d-35e4-5e2b-a4ca-a45a69ea41fd-u02",
+              "surface": "満員"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v016",
+          "ja": "空き枠",
+          "reading": "あきわく",
+          "han_viet": "KHÔNG KHUNG",
+          "vi": "suất học còn trống",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v017",
+          "ja": "付き添い",
+          "reading": "つきそい",
+          "han_viet": "PHÓ THIÊM",
+          "vi": "việc người lớn đi cùng con",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "021317cb-8915-5134-af2c-f736c86e5ba4-u02",
+              "surface": "付き添い"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v018",
+          "ja": "画材",
+          "reading": "がざい",
+          "han_viet": "HỌA TÀI",
+          "vi": "dụng cụ và vật liệu vẽ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1f6f720d-35e4-5e2b-a4ca-a45a69ea41fd-u04",
+              "surface": "画材"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v019",
+          "ja": "待合室",
+          "reading": "まちあいしつ",
+          "han_viet": "ĐÃI HỢP THẤT",
+          "vi": "phòng chờ dành cho người đi cùng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "021317cb-8915-5134-af2c-f736c86e5ba4-u02",
+              "surface": "待合室"
+            }
+          ],
+          "source_refs": [
+            "hv-ai"
+          ],
+          "note_vi": "合 đọc HỢP trong cách ghi Hán Việt của từ này."
+        },
+        {
+          "id": "T-056-v020",
+          "ja": "持ち物",
+          "reading": "もちもの",
+          "han_viet": "TRÌ VẬT",
+          "vi": "đồ cần mang tới lớp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1f6f720d-35e4-5e2b-a4ca-a45a69ea41fd-u03",
+              "surface": "持ち物"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v021",
+          "ja": "初回",
+          "reading": "しょかい",
+          "han_viet": "SƠ HỒI",
+          "vi": "buổi đầu tiên",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "187a4eb7-179c-5087-bf3b-642870f95b77-u02",
+              "surface": "初回"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v022",
+          "ja": "仮押さえ",
+          "reading": "かりおさえ",
+          "han_viet": "GIẢ ÁP",
+          "vi": "việc giữ chỗ tạm trong khi chưa quyết định",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c36a8c90-c34f-5581-b8c3-3a0b562795a4-u04",
+              "surface": "仮押さえ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Học phí/khoản phát sinh",
+      "v10_topic": "Học phí/khoản phát sinh",
+      "terms": [
+        {
+          "id": "T-056-v023",
+          "ja": "月謝",
+          "reading": "げっしゃ",
+          "han_viet": "NGUYỆT TẠ",
+          "vi": "học phí trả hằng tháng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ef2f1844-156a-5fa8-a61e-e253367715e9-u01",
+              "surface": "月謝"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamaha-rules",
+            "kumon-fees"
+          ]
+        },
+        {
+          "id": "T-056-v024",
+          "ja": "入会金",
+          "reading": "にゅうかいきん",
+          "han_viet": "NHẬP HỘI KIM",
+          "vi": "phí đóng một lần khi gia nhập",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ef2f1844-156a-5fa8-a61e-e253367715e9-u01",
+              "surface": "入会金"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamaha-rules"
+          ]
+        },
+        {
+          "id": "T-056-v025",
+          "ja": "体験料",
+          "reading": "たいけんりょう",
+          "han_viet": "THỂ NGHIỆM LIỆU",
+          "vi": "phí tham gia buổi học thử",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ef2f1844-156a-5fa8-a61e-e253367715e9-u03",
+              "surface": "体験料"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v026",
+          "ja": "教材費",
+          "reading": "きょうざいひ",
+          "han_viet": "GIÁO TÀI PHÍ",
+          "vi": "phí sách và tài liệu học",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "juku-price"
+          ]
+        },
+        {
+          "id": "T-056-v027",
+          "ja": "材料費",
+          "reading": "ざいりょうひ",
+          "han_viet": "TÀI LIỆU PHÍ",
+          "vi": "phí vật liệu sử dụng trong lớp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ef2f1844-156a-5fa8-a61e-e253367715e9-u01",
+              "surface": "材料費"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v028",
+          "ja": "施設費",
+          "reading": "しせつひ",
+          "han_viet": "THI THIẾT PHÍ",
+          "vi": "phí cơ sở vật chất",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamaha-rules"
+          ]
+        },
+        {
+          "id": "T-056-v029",
+          "ja": "講習費",
+          "reading": "こうしゅうひ",
+          "han_viet": "GIẢNG TẬP PHÍ",
+          "vi": "phí lớp bổ sung hoặc lớp theo đợt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "juku-price"
+          ]
+        },
+        {
+          "id": "T-056-v030",
+          "ja": "諸経費",
+          "reading": "しょけいひ",
+          "han_viet": "CHƯ KINH PHÍ",
+          "vi": "các khoản phụ phí khác",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "juku-price"
+          ]
+        },
+        {
+          "id": "T-056-v031",
+          "ja": "別途",
+          "reading": "べっと",
+          "han_viet": "BIỆT ĐỒ",
+          "vi": "tính hoặc thanh toán riêng",
+          "pos": "adverb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v032",
+          "ja": "含む",
+          "reading": "ふくむ",
+          "han_viet": "HÀM",
+          "vi": "đã bao gồm trong số tiền",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ef2f1844-156a-5fa8-a61e-e253367715e9-u02",
+              "surface": "含まれます"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Con muốn tiếp tục hay không",
+      "v10_topic": "Con muốn tiếp tục hay không",
+      "terms": [
+        {
+          "id": "T-056-v033",
+          "ja": "参加する",
+          "reading": "さんかする",
+          "han_viet": "THAM GIA",
+          "vi": "tham gia hoạt động hoặc buổi học",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8e7e7e88-5ede-5b54-95d4-52e562fe413a-u01",
+              "surface": "参加していました"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v034",
+          "ja": "作品",
+          "reading": "さくひん",
+          "han_viet": "TÁC PHẨM",
+          "vi": "bài vẽ hay sản phẩm trẻ làm ra",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9072a648-d5eb-594a-a756-cad9ce172f7d-u01",
+              "surface": "作品"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v035",
+          "ja": "仕上げる",
+          "reading": "しあげる",
+          "han_viet": "SĨ THƯỢNG",
+          "vi": "hoàn thành phần cuối của một sản phẩm",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c71652ca-e050-57e7-917c-f9015796fa8f-u02",
+              "surface": "仕上げる"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v036",
+          "ja": "希望",
+          "reading": "きぼう",
+          "han_viet": "HY VỌNG",
+          "vi": "nguyện vọng của trẻ về việc có muốn học",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c71652ca-e050-57e7-917c-f9015796fa8f-u04",
+              "surface": "本人の希望"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v037",
+          "ja": "向く",
+          "reading": "むく",
+          "han_viet": "HƯỚNG",
+          "vi": "hợp với một môn hoặc cách học",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "note_vi": "Khi mô tả độ phù hợp thường dùng 向いている."
+        },
+        {
+          "id": "T-056-v038",
+          "ja": "続ける",
+          "reading": "つづける",
+          "han_viet": "TỤC",
+          "vi": "tiếp tục học sau khi đã thử",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "187a4eb7-179c-5087-bf3b-642870f95b77-u01",
+              "surface": "続けたい"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v039",
+          "ja": "見送る",
+          "reading": "みおくる",
+          "han_viet": "KIẾN TỐNG",
+          "vi": "quyết định chưa tham gia lần này",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dc841c87-ff58-5dec-bc52-f16384bf8d25-u01",
+              "surface": "見送ります"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v040",
+          "ja": "検討する",
+          "reading": "けんとうする",
+          "han_viet": "KIỂM THẢO",
+          "vi": "cân nhắc để quyết định",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v041",
+          "ja": "練習量",
+          "reading": "れんしゅうりょう",
+          "han_viet": "LUYỆN TẬP LƯỢNG",
+          "vi": "lượng bài hoặc thời gian cần luyện",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Cam kết, đổi lịch hoặc nghỉ",
+      "v10_topic": "Cam kết, đổi lịch hoặc nghỉ",
+      "terms": [
+        {
+          "id": "T-056-v042",
+          "ja": "休会",
+          "reading": "きゅうかい",
+          "han_viet": "HƯU HỘI",
+          "vi": "tạm ngừng tham gia một thời gian",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "676ccb9c-1d89-5120-bc70-3af7090bcf09-u02",
+              "surface": "休会"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "kumon-rules"
+          ]
+        },
+        {
+          "id": "T-056-v043",
+          "ja": "退会",
+          "reading": "たいかい",
+          "han_viet": "THOÁI HỘI",
+          "vi": "thôi tham gia, chấm dứt tư cách thành viên",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b4a84666-7a58-5def-8c93-5f69b2da1fbe-u01",
+              "surface": "退会"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "kumon-rules"
+          ]
+        },
+        {
+          "id": "T-056-v044",
+          "ja": "振替授業",
+          "reading": "ふりかえじゅぎょう",
+          "han_viet": "CHẤN THẾ THỤ NGHIỆP",
+          "vi": "buổi học thay cho buổi không đến được",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "juku-price"
+          ]
+        },
+        {
+          "id": "T-056-v045",
+          "ja": "退会届",
+          "reading": "たいかいとどけ",
+          "han_viet": "THOÁI HỘI GIỚI",
+          "vi": "giấy báo thôi học hoặc ngừng tham gia",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "b4a84666-7a58-5def-8c93-5f69b2da1fbe-u02",
+              "surface": "退会届"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "kumon-rules"
+          ]
+        },
+        {
+          "id": "T-056-v046",
+          "ja": "入会申込書",
+          "reading": "にゅうかいもうしこみしょ",
+          "han_viet": "NHẬP HỘI THÂN NHẬP THƯ",
+          "vi": "đơn đăng ký vào lớp hoặc trung tâm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "187a4eb7-179c-5087-bf3b-642870f95b77-u02",
+              "surface": "入会申込書"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "kumon-rules",
+            "hv-komu"
+          ],
+          "note_vi": "NHẬP là quy ước Nhật–Việt của 込."
+        },
+        {
+          "id": "T-056-v047",
+          "ja": "受講規約",
+          "reading": "じゅこうきやく",
+          "han_viet": "THỤ GIẢNG QUY ƯỚC",
+          "vi": "điều khoản tham gia lớp học",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yamaha-rules"
+          ]
+        },
+        {
+          "id": "T-056-v048",
+          "ja": "締め切り",
+          "reading": "しめきり",
+          "han_viet": "ĐẾ THIẾT",
+          "vi": "hạn cuối phải báo hoặc nộp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-056-v049",
+          "ja": "取り消す",
+          "reading": "とりけす",
+          "han_viet": "THỦ TIÊU",
+          "vi": "hủy một buổi đã hẹn hoặc yêu cầu tham gia",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7f7415d4-0392-5427-a6ad-c76f90b0b28d-u02",
+              "surface": "取り消しました"
+            }
+          ]
+        },
+        {
+          "id": "T-056-v050",
+          "ja": "欠席連絡",
+          "reading": "けっせきれんらく",
+          "han_viet": "KHUYẾT TỊCH LIÊN LẠC",
+          "vi": "việc báo không đến buổi học",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "han_viet_note_vi": "欠 ở đây mang nghĩa thiếu hoặc vắng, là dạng Nhật của chữ cũ 缺 (ケツ); chọn KHUYẾT theo chữ cũ và nghĩa, phân biệt 欠 (ケン) chỉ ngáp. KanjiPedia giải thích hai chữ được gộp vào một dạng 欠.",
+          "source_refs": [
+            "hv-ketsu-old",
+            "hv-khuyet"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "stage_uid": "b1588124-6b0c-5deb-b05b-6ee389dff580",
+  "stage_code": "T-090",
+  "admin_sources": {
+    "visit": {
+      "kind": "web",
+      "title": "接客と訪問の基本マナー | 鹿児島労働局",
+      "url": "https://jsite.mhlw.go.jp/kagoshima-roudoukyoku/content/contents/2026-0311-8_2_4.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Từ về giới thiệu ở lễ tân, phòng tiếp khách, chỗ ngồi và trao danh thiếp."
+    },
+    "greet": {
+      "kind": "web",
+      "title": "ビジネスの基本フレーズ | 鹿児島労働局",
+      "url": "https://jsite.mhlw.go.jp/kagoshima-roudoukyoku/content/contents/001650824.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Cụm lịch sự khi nhận danh thiếp và đón tiếp hoặc thăm đối tác."
+    },
+    "nite": {
+      "kind": "web",
+      "title": "NITE（本所）の入退館案内",
+      "url": "https://www.nite.go.jp/nite/koho/raisho/security_gate.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên thẻ ra vào và trường thông tin tiếp nhận khi đến một cơ sở cụ thể."
+    },
+    "hv-shi": {
+      "title": "刺 | Từ điển Hán Nôm",
+      "use_vi": "Âm THỨ trong 名刺 theo nghĩa danh thiếp.",
+      "kind": "web",
+      "accessed": "2026-11-19",
+      "url": "https://hvdic.thivien.net/whv/%E5%88%BA"
+    },
+    "hv-chou": {
+      "title": "頂 | Từ điển Hán Nôm",
+      "use_vi": "Âm ĐỈNH của 頂 theo nghĩa đỉnh đầu.",
+      "kind": "web",
+      "accessed": "2026-11-19",
+      "url": "https://hvdic.thivien.net/whv/%E9%A0%82"
+    },
+    "hv-dai": {
+      "title": "戴 | Từ điển Hán Nôm",
+      "use_vi": "Âm ĐÁI của 戴 theo nghĩa đội trên đầu.",
+      "kind": "web",
+      "accessed": "2026-11-19",
+      "url": "https://hvdic.thivien.net/whv/%E6%88%B4"
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Tên, công ty và vai",
+      "v10_topic": "Tên, công ty và vai",
+      "terms": [
+        {
+          "id": "T-090-v001",
+          "ja": "名乗る",
+          "reading": "なのる",
+          "han_viet": "DANH THỪA",
+          "vi": "xưng tên và đơn vị mình tới từ đó",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v002",
+          "ja": "会社名",
+          "reading": "かいしゃめい",
+          "han_viet": "HỘI XÃ DANH",
+          "vi": "tên công ty",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "68717faa-1f64-5a70-adff-f8aabfa729f6-u02",
+              "surface": "会社名"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v003",
+          "ja": "所属",
+          "reading": "しょぞく",
+          "han_viet": "SỞ THUỘC",
+          "vi": "đơn vị mình trực thuộc",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần giới thiệu bộ phận của cả người hẹn ban đầu lẫn người đi cùng."
+        },
+        {
+          "id": "T-090-v004",
+          "ja": "役職",
+          "reading": "やくしょく",
+          "han_viet": "DỊCH CHỨC",
+          "vi": "chức vụ hoặc chức danh",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v005",
+          "ja": "購買部",
+          "reading": "こうばいぶ",
+          "han_viet": "CẤU MÃI BỘ",
+          "vi": "bộ phận thu mua",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "68717faa-1f64-5a70-adff-f8aabfa729f6-u03",
+              "surface": "購買部"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v006",
+          "ja": "名刺",
+          "reading": "めいし",
+          "han_viet": "DANH THỨ",
+          "vi": "danh thiếp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "86145886-c7f7-52d1-949a-0654bf57c2a6-u01",
+              "surface": "名刺"
+            }
+          ],
+          "source_refs": [
+            "hv-shi"
+          ],
+          "note_vi": "刺 ghi THỨ theo nghĩa tấm thiếp."
+        },
+        {
+          "id": "T-090-v007",
+          "ja": "名刺交換",
+          "reading": "めいしこうかん",
+          "han_viet": "DANH THỨ GIAO HOÁN",
+          "vi": "trao đổi danh thiếp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "visit",
+            "hv-shi"
+          ],
+          "note_vi": "刺 ghi THỨ theo nghĩa tấm thiếp."
+        },
+        {
+          "id": "T-090-v008",
+          "ja": "頂戴する",
+          "reading": "ちょうだいする",
+          "han_viet": "ĐỈNH ĐÁI",
+          "vi": "xin nhận, cách nói khiêm nhường",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "86145886-c7f7-52d1-949a-0654bf57c2a6-u02",
+              "surface": "頂戴します"
+            }
+          ],
+          "source_refs": [
+            "greet",
+            "hv-chou",
+            "hv-dai"
+          ],
+          "note_vi": "頂 dùng âm ĐỈNH theo nghĩa phần đầu, 戴 dùng ĐÁI theo nghĩa đội lên."
+        },
+        {
+          "id": "T-090-v009",
+          "ja": "ご担当",
+          "reading": "ごたんとう",
+          "han_viet": "ĐẢM ĐƯƠNG",
+          "vi": "phần việc hoặc vai trò người bên kia phụ trách",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Người có hẹn và người đi cùng",
+      "v10_topic": "Người có hẹn và người đi cùng",
+      "terms": [
+        {
+          "id": "T-090-v010",
+          "ja": "面会",
+          "reading": "めんかい",
+          "han_viet": "DIỆN HỘI",
+          "vi": "cuộc gặp trực tiếp với người đã hẹn",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói với quầy lễ tân người mình hẹn gặp, cả khi người đón chưa xuống.",
+          "source_refs": [
+            "visit"
+          ]
+        },
+        {
+          "id": "T-090-v011",
+          "ja": "伺う",
+          "reading": "うかがう",
+          "han_viet": "TỨ",
+          "vi": "đến thăm, cách nói khiêm nhường",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "68717faa-1f64-5a70-adff-f8aabfa729f6-u01",
+              "surface": "伺いました"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v012",
+          "ja": "同行する",
+          "reading": "どうこうする",
+          "han_viet": "ĐỒNG HÀNH",
+          "vi": "đi cùng đến địa điểm gặp",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v013",
+          "ja": "同席する",
+          "reading": "どうせきする",
+          "han_viet": "ĐỒNG TỊCH",
+          "vi": "cùng có mặt tại buổi gặp",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v014",
+          "ja": "ロビー",
+          "reading": "ロビー",
+          "han_viet": "",
+          "vi": "sảnh để tiếp hoặc đợi khách",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "be9fc70a-a413-5b38-ada0-09d2bda03885-u01",
+              "surface": "ロビー"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v015",
+          "ja": "応接室",
+          "reading": "おうせつしつ",
+          "han_viet": "ỨNG TIẾP THẤT",
+          "vi": "phòng tiếp khách",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "visit"
+          ]
+        },
+        {
+          "id": "T-090-v016",
+          "ja": "入館カード",
+          "reading": "にゅうかんカード",
+          "han_viet": "NHẬP QUÁN",
+          "vi": "thẻ ra vào tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "nite"
+          ]
+        },
+        {
+          "id": "T-090-v017",
+          "ja": "出迎える",
+          "reading": "でむかえる",
+          "han_viet": "XUẤT NGHÊNH",
+          "vi": "ra đón người tới",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v018",
+          "ja": "お取り次ぎ",
+          "reading": "おとりつぎ",
+          "han_viet": "THỦ THỨ",
+          "vi": "việc báo cho đúng người rằng khách tới",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "visit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Thời lượng và điểm ưu tiên",
+      "v10_topic": "Thời lượng và điểm ưu tiên",
+      "terms": [
+        {
+          "id": "T-090-v019",
+          "ja": "所要時間",
+          "reading": "しょようじかん",
+          "han_viet": "SỞ YẾU THỜI GIAN",
+          "vi": "thời lượng cần cho buổi trao đổi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v020",
+          "ja": "お時間をいただく",
+          "reading": "おじかんをいただく",
+          "han_viet": "THỜI GIAN",
+          "vi": "xin được dành một ít thời gian",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f70be85d-144a-5a4b-a654-d879448e68af-u01",
+              "surface": "お時間をいただき"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v021",
+          "ja": "時間配分",
+          "reading": "じかんはいぶん",
+          "han_viet": "THỜI GIAN PHỐI PHÂN",
+          "vi": "cách chia quỹ thời gian cho từng việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v022",
+          "ja": "優先する",
+          "reading": "ゆうせんする",
+          "han_viet": "ƯU TIÊN",
+          "vi": "xếp một việc cần nói hoặc làm trước",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần chốt nội dung phải bàn trước khi khách chỉ còn ít phút."
+        },
+        {
+          "id": "T-090-v023",
+          "ja": "要点",
+          "reading": "ようてん",
+          "han_viet": "YẾU ĐIỂM",
+          "vi": "điểm chính cần trao đổi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v024",
+          "ja": "初回",
+          "reading": "しょかい",
+          "han_viet": "SƠ HỒI",
+          "vi": "lần thực hiện đầu tiên",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f70be85d-144a-5a4b-a654-d879448e68af-u04",
+              "surface": "初回"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v025",
+          "ja": "次回",
+          "reading": "じかい",
+          "han_viet": "THỨ HỒI",
+          "vi": "lần gặp hoặc lần trao đổi sau",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dfcdf01a-6a1b-5d98-99c2-409822c74b2a-u03",
+              "surface": "次回"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v026",
+          "ja": "手短に",
+          "reading": "てみじかに",
+          "han_viet": "THỦ ĐOẢN",
+          "vi": "ngắn gọn để tiết kiệm thời gian",
+          "pos": "adverb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Từ xã giao sang mục đích gặp",
+      "v10_topic": "Từ xã giao sang mục đích gặp",
+      "terms": [
+        {
+          "id": "T-090-v027",
+          "ja": "本題に入る",
+          "reading": "ほんだいにはいる",
+          "han_viet": "BẢN ĐỀ NHẬP",
+          "vi": "bắt đầu nói vào nội dung chính",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v028",
+          "ja": "御社",
+          "reading": "おんしゃ",
+          "han_viet": "NGỰ XÃ",
+          "vi": "quý công ty, cách gọi khi nói trực tiếp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4ed348db-b4ba-5002-b997-60942582219b-u01",
+              "surface": "御社"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v029",
+          "ja": "訪問目的",
+          "reading": "ほうもんもくてき",
+          "han_viet": "PHỎNG VẤN MỤC ĐÍCH",
+          "vi": "mục đích buổi tới thăm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v030",
+          "ja": "見本",
+          "reading": "みほん",
+          "han_viet": "KIẾN BẢN",
+          "vi": "mẫu để khách xem",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "68717faa-1f64-5a70-adff-f8aabfa729f6-u05",
+              "surface": "見本"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v031",
+          "ja": "導入",
+          "reading": "どうにゅう",
+          "han_viet": "ĐẠO NHẬP",
+          "vi": "đưa sản phẩm hoặc hệ thống vào dùng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4ed348db-b4ba-5002-b997-60942582219b-u01",
+              "surface": "導入"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v032",
+          "ja": "変更点",
+          "reading": "へんこうてん",
+          "han_viet": "BIẾN CANH ĐIỂM",
+          "vi": "điểm đã thay đổi so với bản trước",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "50b62200-fa2f-5728-b649-6a1b38dad0a1-u01",
+              "surface": "変更点"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v033",
+          "ja": "実演する",
+          "reading": "じつえんする",
+          "han_viet": "THỰC DIỄN",
+          "vi": "làm trực tiếp cho đối tác xem",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v034",
+          "ja": "ご相談",
+          "reading": "ごそうだん",
+          "han_viet": "TƯƠNG ĐÀM",
+          "vi": "việc muốn trao đổi hoặc xin ý kiến",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "86145886-c7f7-52d1-949a-0654bf57c2a6-u03",
+              "surface": "ご相談"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v035",
+          "ja": "懸案",
+          "reading": "けんあん",
+          "han_viet": "HUYỀN ÁN",
+          "vi": "vấn đề vẫn đang chờ xem xét",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Điểm còn chờ sau buổi",
+      "v10_topic": "Điểm còn chờ sau buổi",
+      "terms": [
+        {
+          "id": "T-090-v036",
+          "ja": "試用版",
+          "reading": "しようばん",
+          "han_viet": "THÍ DỤNG BẢN",
+          "vi": "phiên bản để người dùng thử",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7932b627-415b-556e-9c30-b3d6864097fd-u01",
+              "surface": "試用版"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v037",
+          "ja": "確認事項",
+          "reading": "かくにんじこう",
+          "han_viet": "XÁC NHẬN SỰ HẠNG",
+          "vi": "điểm cần xác nhận tiếp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v038",
+          "ja": "回答待ち",
+          "reading": "かいとうまち",
+          "han_viet": "HỒI ĐÁP ĐÃI",
+          "vi": "đang chờ trả lời",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v039",
+          "ja": "お見送り",
+          "reading": "おみおくり",
+          "han_viet": "KIẾN TỐNG",
+          "vi": "việc tiễn khách khi ra về",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v040",
+          "ja": "未処理",
+          "reading": "みしょり",
+          "han_viet": "VỊ XỬ LÝ",
+          "vi": "chưa xử lý",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5499db52-6eb3-5480-bf33-04fef4694946-u02",
+              "surface": "未処理"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v041",
+          "ja": "引き続き",
+          "reading": "ひきつづき",
+          "han_viet": "DẪN TỤC",
+          "vi": "tiếp tục sau phần vừa xong",
+          "pos": "adverb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v042",
+          "ja": "都合を伺う",
+          "reading": "つごうをうかがう",
+          "han_viet": "ĐÔ HỢP TỨ",
+          "vi": "hỏi lúc đối phương thấy thuận tiện",
+          "pos": "expression",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-090-v043",
+          "ja": "宛て",
+          "reading": "あて",
+          "han_viet": "UYỂN",
+          "vi": "gửi hoặc liên hệ tới người được chỉ rõ",
+          "pos": "other",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7e9bbaa5-ac51-559a-a3ac-72ee17b1326f-u03",
+              "surface": "宛て"
+            }
+          ]
+        },
+        {
+          "id": "T-090-v044",
+          "ja": "持ち越す",
+          "reading": "もちこす",
+          "han_viet": "TRÌ VIỆT",
+          "vi": "để phần chưa bàn sang lần sau",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

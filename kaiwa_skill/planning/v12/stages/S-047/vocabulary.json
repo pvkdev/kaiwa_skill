@@ -1,0 +1,830 @@
+{
+  "stage_uid": "bb024da0-3d41-5b59-83d6-86494fa81214",
+  "stage_code": "S-047",
+  "admin_sources": {
+    "himeji-desk": {
+      "kind": "web",
+      "title": "市民局 市民生活部 住民窓口センター｜姫路市",
+      "url": "https://www.city.himeji.lg.jp/soshiki/4-2-1-0-0.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi 住民窓口 trong tên bộ phận phụ trách thông tin cư trú."
+    },
+    "yokohama-moving": {
+      "kind": "web",
+      "title": "引越し｜横浜市",
+      "url": "https://www.city.yokohama.lg.jp/lang/residents/living-guide/notification/moving.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên 区役所 và vai trò quầy với công việc cư dân."
+    },
+    "yokohama-counter": {
+      "kind": "web",
+      "title": "住民票の写しの広域交付｜横浜市",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/todokede/koseki-juminhyo/shoumei/20181001152322553.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi giấy cư trú, đơn, quầy, thời gian tiếp nhận và lệ phí theo số bản."
+    },
+    "yokohama-move-form": {
+      "kind": "web",
+      "title": "転入届（国外からの転入）｜横浜市",
+      "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/todokede/koseki-juminhyo/todokede-touroku/jyumin/tennyuu_kokugai.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu nhóm giấy xác minh danh tính, thẻ cư trú và My Number trong hướng dẫn quầy."
+    },
+    "shinjuku-copy": {
+      "kind": "web",
+      "title": "住民票等の証明｜新宿区",
+      "url": "https://www.city.shinjuku.lg.jp/todokede/koseki03_000009_f.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi 原本 trong yêu cầu xuất trình giấy tờ gốc."
+    },
+    "isa-card": {
+      "kind": "web",
+      "title": "在留カードの有効期間の更新申請｜出入国在留管理庁",
+      "url": "https://www.moj.go.jp/isa/applications/procedures/nyuukokukanri10_00011.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên thẻ và cách gọi việc cập nhật thời hạn thẻ."
+    },
+    "isa-plain": {
+      "kind": "web",
+      "title": "在留支援のためのやさしい日本語ガイドライン｜出入国在留管理庁",
+      "url": "https://www.moj.go.jp/isa/support/portal/plainjapanese_guideline.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách viết và cách gọi やさしい日本語."
+    },
+    "yokohama-support": {
+      "kind": "web",
+      "title": "横浜市多文化共生総合相談センター｜横浜市",
+      "url": "https://www.city.yokohama.lg.jp/city-info/seisaku/kokusai/kyosei/jigyoichiran/tabunkasoudan.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên hỗ trợ 通訳 cho trao đổi với quầy hành chính."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Tìm đúng quầy hành chính",
+      "v10_topic": "Tìm đúng quầy hành chính",
+      "terms": [
+        {
+          "id": "S-047-v001",
+          "ja": "市役所",
+          "reading": "しやくしょ",
+          "han_viet": "THỊ DỊCH SỞ",
+          "vi": "tòa thị chính thành phố",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần phân biệt nơi làm việc hành chính cấp thành phố với quầy cấp quận."
+        },
+        {
+          "id": "S-047-v002",
+          "ja": "区役所",
+          "reading": "くやくしょ",
+          "han_viet": "KHU DỊCH SỞ",
+          "vi": "cơ quan hành chính quận",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nói mình đến cơ quan quận để hỏi vì địa chỉ cư trú.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-moving"
+          ]
+        },
+        {
+          "id": "S-047-v003",
+          "ja": "窓口",
+          "reading": "まどぐち",
+          "han_viet": "SONG KHẨU",
+          "vi": "quầy tiếp nhận, quầy giao dịch",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "14e3f1c1-e0a3-5121-9626-8274542531a0-u01",
+              "surface": "窓口"
+            }
+          ],
+          "level_note_vi": "Từ thiết yếu để hỏi đúng nơi tiếp nhận."
+        },
+        {
+          "id": "S-047-v004",
+          "ja": "住民窓口",
+          "reading": "じゅうみんまどぐち",
+          "han_viet": "TRÚ DÂN SONG KHẨU",
+          "vi": "quầy thủ tục cư dân",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "14e3f1c1-e0a3-5121-9626-8274542531a0-u02",
+              "surface": "住民窓口"
+            }
+          ],
+          "level_note_vi": "Cần nhận ra cách gọi quầy về địa chỉ và giấy cư trú.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "himeji-desk"
+          ]
+        },
+        {
+          "id": "S-047-v005",
+          "ja": "相談する",
+          "reading": "そうだんする",
+          "han_viet": "TƯƠNG ĐÀM",
+          "vi": "hỏi ý kiến, trao đổi để được hướng dẫn",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "14e3f1c1-e0a3-5121-9626-8274542531a0-u01",
+              "surface": "相談したい"
+            }
+          ],
+          "level_note_vi": "Cần nêu mục đích đến quầy khi chưa biết tên thủ tục."
+        },
+        {
+          "id": "S-047-v006",
+          "ja": "住所",
+          "reading": "じゅうしょ",
+          "han_viet": "TRÚ SỞ",
+          "vi": "địa chỉ",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "14e3f1c1-e0a3-5121-9626-8274542531a0-u01",
+              "surface": "住所"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v007",
+          "ja": "受付",
+          "reading": "うけつけ",
+          "han_viet": "THỤ PHÓ",
+          "vi": "việc tiếp nhận, quầy tiếp nhận",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c20dfd84-4178-5f0b-884d-264d1a79e912-u01",
+              "surface": "受付"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v008",
+          "ja": "受付時間",
+          "reading": "うけつけじかん",
+          "han_viet": "THỤ PHÓ THỜI GIAN",
+          "vi": "giờ tiếp nhận",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi quay lại buổi nào khi đã hết giờ nhận hồ sơ.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-counter"
+          ]
+        },
+        {
+          "id": "S-047-v009",
+          "ja": "平日",
+          "reading": "へいじつ",
+          "han_viet": "BÌNH NHẬT",
+          "vi": "ngày thường trong tuần",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần xác nhận ngày quầy làm việc để hẹn quay lại."
+        },
+        {
+          "id": "S-047-v010",
+          "ja": "祝日",
+          "reading": "しゅくじつ",
+          "han_viet": "CHÚC NHẬT",
+          "vi": "ngày lễ",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi ngày lễ quầy có mở hay không."
+        },
+        {
+          "id": "S-047-v011",
+          "ja": "〜番",
+          "reading": "ばん",
+          "han_viet": "PHIÊN",
+          "vi": "số thứ tự (quầy, lượt)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "af98b46a-1f1e-55a3-ac32-74f9cf2dab6e-u03",
+              "surface": "三番窓口"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v012",
+          "ja": "〜階",
+          "reading": "かい",
+          "han_viet": "GIAI",
+          "vi": "tầng (đơn vị đếm tầng)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "14e3f1c1-e0a3-5121-9626-8274542531a0-u02",
+              "surface": "二階"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v013",
+          "ja": "階段",
+          "reading": "かいだん",
+          "han_viet": "GIAI ĐOẠN",
+          "vi": "cầu thang",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5d433196-c08d-5a38-beae-7699ad4cd89f-u02",
+              "surface": "階段"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v014",
+          "ja": "上がる",
+          "reading": "あがる",
+          "han_viet": "THƯỢNG",
+          "vi": "đi lên (tầng trên)",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5d433196-c08d-5a38-beae-7699ad4cd89f-u02",
+              "surface": "上がって"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v015",
+          "ja": "案内する",
+          "reading": "あんないする",
+          "han_viet": "ÁN NỘI",
+          "vi": "chỉ đường, hướng dẫn đến nơi",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhờ chỉ đường khi quầy phụ trách nằm ở tầng khác."
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Hỏi giấy cần mang và bước tiếp",
+      "v10_topic": "Hỏi giấy cần mang và bước tiếp",
+      "terms": [
+        {
+          "id": "S-047-v031",
+          "ja": "証明書",
+          "reading": "しょうめいしょ",
+          "han_viet": "CHỨNG MINH THƯ",
+          "vi": "giấy xác nhận, giấy chứng nhận",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần gọi chung tên nhóm giấy cần lấy khi chưa biết tên cụ thể.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-counter"
+          ]
+        },
+        {
+          "id": "S-047-v032",
+          "ja": "住民票の写し",
+          "reading": "じゅうみんひょうのうつし",
+          "han_viet": "TRÚ DÂN PHIẾU TẢ",
+          "vi": "bản trích lục thông tin cư trú do cơ quan hành chính cấp",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d86e0ea2-1b19-51a9-b1d8-bde4cbde1ba3-u02",
+              "surface": "住民票の写し"
+            }
+          ],
+          "level_note_vi": "Tên giấy tờ cần hỏi lại khi công ty yêu cầu chứng minh địa chỉ.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-counter"
+          ]
+        },
+        {
+          "id": "S-047-v033",
+          "ja": "本人確認書類",
+          "reading": "ほんにんかくにんしょるい",
+          "han_viet": "BẢN NHÂN XÁC NHẬN THƯ LOẠI",
+          "vi": "giấy tờ xác minh danh tính",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1d2e9f74-a6cc-5511-a09b-0d29d38c5987-u03",
+              "surface": "本人確認書類"
+            }
+          ],
+          "level_note_vi": "Cần hiểu quầy đang yêu cầu xuất trình nhóm giấy tờ gì.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-move-form"
+          ]
+        },
+        {
+          "id": "S-047-v034",
+          "ja": "在留カード",
+          "reading": "ざいりゅうカード",
+          "han_viet": "TẠI LƯU",
+          "vi": "thẻ cư trú",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-047-SH-001",
+              "surface": "在留カード"
+            }
+          ],
+          "level_note_vi": "Tên giấy tờ riêng dùng trong trao đổi tại quầy hành chính và quầy quản lý lưu trú.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-move-form",
+            "isa-card"
+          ]
+        },
+        {
+          "id": "S-047-v035",
+          "ja": "マイナンバーカード",
+          "reading": "マイナンバーカード",
+          "han_viet": "",
+          "vi": "thẻ mã số cá nhân My Number",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận biết tên loại giấy xác minh danh tính khi được hướng dẫn tại quầy.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-move-form"
+          ]
+        },
+        {
+          "id": "S-047-v036",
+          "ja": "原本",
+          "reading": "げんぽん",
+          "han_viet": "NGUYÊN BẢN",
+          "vi": "bản gốc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "87c4d9d1-f22e-5507-bb3a-0769c41c1748-u02",
+              "surface": "原本"
+            }
+          ],
+          "level_note_vi": "Cần phân biệt giấy gốc mà quầy yêu cầu xuất trình với bản sao.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "shinjuku-copy"
+          ]
+        },
+        {
+          "id": "S-047-v037",
+          "ja": "コピー",
+          "reading": "コピー",
+          "han_viet": "",
+          "vi": "bản sao, bản photocopy",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "355f0c9a-7938-5314-a926-895f96e0de32-u02",
+              "surface": "コピー"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v038",
+          "ja": "書類",
+          "reading": "しょるい",
+          "han_viet": "THƯ LOẠI",
+          "vi": "giấy tờ, hồ sơ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1d2e9f74-a6cc-5511-a09b-0d29d38c5987-u03",
+              "surface": "書類"
+            }
+          ],
+          "level_note_vi": "Cần hỏi quầy giấy nào phải chuẩn bị hoặc mang đến."
+        },
+        {
+          "id": "S-047-v039",
+          "ja": "見本",
+          "reading": "みほん",
+          "han_viet": "KIẾN BẢN",
+          "vi": "mẫu, bản mẫu",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c909322d-9cf2-503c-8137-7666698a348d-u02",
+              "surface": "見本を"
+            }
+          ],
+          "level_note_vi": "Cần hỏi hoặc đưa mẫu để nhân viên xác định đúng hồ sơ."
+        },
+        {
+          "id": "S-047-v040",
+          "ja": "申請書",
+          "reading": "しんせいしょ",
+          "han_viet": "THÂN THỈNH THƯ",
+          "vi": "đơn đề nghị, mẫu đơn làm thủ tục",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra tên tờ đơn khi hỏi tại quầy.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-counter"
+          ]
+        },
+        {
+          "id": "S-047-v041",
+          "ja": "提出する",
+          "reading": "ていしゅつする",
+          "han_viet": "ĐỀ XUẤT",
+          "vi": "nộp (hồ sơ, giấy tờ)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi nơi nộp giấy giải quyết thủ tục.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-counter"
+          ]
+        },
+        {
+          "id": "S-047-v042",
+          "ja": "見せる",
+          "reading": "みせる",
+          "han_viet": "KIẾN",
+          "vi": "đưa cho xem, xuất trình",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1d2e9f74-a6cc-5511-a09b-0d29d38c5987-u02",
+              "surface": "見せれば"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v043",
+          "ja": "用意する",
+          "reading": "よういする",
+          "han_viet": "DỤNG Ý",
+          "vi": "chuẩn bị sẵn",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6f5a0d48-d5e2-582a-8b18-9c60e429cabc-u01",
+              "surface": "用意できません"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v044",
+          "ja": "手数料",
+          "reading": "てすうりょう",
+          "han_viet": "THỦ SỐ LIỆU",
+          "vi": "lệ phí làm thủ tục, phí cấp giấy",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi có mất phí khi xin giấy và số tiền bao nhiêu.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-counter"
+          ]
+        },
+        {
+          "id": "S-047-v045",
+          "ja": "〜通",
+          "reading": "つう",
+          "han_viet": "THÔNG",
+          "vi": "đơn vị đếm bản giấy tờ, thư từ",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_refs": [
+            "yokohama-counter"
+          ]
+        },
+        {
+          "id": "S-047-v046",
+          "ja": "更新",
+          "reading": "こうしん",
+          "han_viet": "CANH TÂN",
+          "vi": "việc cập nhật hoặc gia hạn (giấy tờ)",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-047-SH-001",
+              "surface": "在留カードの更新"
+            }
+          ],
+          "level_note_vi": "Cần hỏi đúng loại gia hạn và đầu mối khi nghe nói cập nhật thẻ lưu trú.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "isa-card"
+          ]
+        },
+        {
+          "id": "S-047-v047",
+          "ja": "手続き",
+          "reading": "てつづき",
+          "han_viet": "THỦ TỤC",
+          "vi": "thủ tục, trình tự giải quyết việc hành chính",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi phải làm thủ tục gì và mang gì khi quay lại.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-moving"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Xin giải thích chậm/dễ hiểu, hẹn lại",
+      "v10_topic": "Xin giải thích chậm/dễ hiểu, hẹn lại",
+      "terms": [
+        {
+          "id": "S-047-v016",
+          "ja": "ゆっくり",
+          "reading": "ゆっくり",
+          "han_viet": "",
+          "vi": "từ từ, chậm rãi",
+          "pos": "adverb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7cc19fb7-1cf0-5531-9f1a-29df9db0a6bc-u01",
+              "surface": "ゆっくり"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v017",
+          "ja": "もう一度",
+          "reading": "もういちど",
+          "han_viet": "NHẤT ĐỘ",
+          "vi": "một lần nữa",
+          "pos": "adverb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "7cc19fb7-1cf0-5531-9f1a-29df9db0a6bc-u01",
+              "surface": "もう一度"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v018",
+          "ja": "やさしい日本語",
+          "reading": "やさしいにほんご",
+          "han_viet": "NHẬT BẢN NGỮ",
+          "vi": "tiếng Nhật dễ hiểu",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "49d6468a-ab71-579d-a743-937f491ad624-u01",
+              "surface": "やさしい日本語"
+            }
+          ],
+          "source_refs": [
+            "isa-plain"
+          ]
+        },
+        {
+          "id": "S-047-v019",
+          "ja": "説明する",
+          "reading": "せつめいする",
+          "han_viet": "THUYẾT MINH",
+          "vi": "giải thích",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-047-v020",
+          "ja": "分かりやすい",
+          "reading": "わかりやすい",
+          "han_viet": "PHÂN",
+          "vi": "dễ hiểu",
+          "pos": "i_adj",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-047-v021",
+          "ja": "意味",
+          "reading": "いみ",
+          "han_viet": "Ý VỊ",
+          "vi": "ý nghĩa",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "355f0c9a-7938-5314-a926-895f96e0de32-u01",
+              "surface": "意味"
+            }
+          ],
+          "level_note_vi": "Cần hỏi nghĩa của một từ trong lời chỉ dẫn."
+        },
+        {
+          "id": "S-047-v022",
+          "ja": "書き方",
+          "reading": "かきかた",
+          "han_viet": "THƯ PHƯƠNG",
+          "vi": "cách viết, cách ghi",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "shadowing_item": "S-047-SH-002",
+              "surface": "書き方"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v023",
+          "ja": "通訳",
+          "reading": "つうやく",
+          "han_viet": "THÔNG DỊCH",
+          "vi": "phiên dịch, người phiên dịch",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi có hỗ trợ phiên dịch khi chưa hiểu hướng dẫn tại quầy.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "yokohama-support"
+          ]
+        },
+        {
+          "id": "S-047-v024",
+          "ja": "ベトナム語",
+          "reading": "ベトナムご",
+          "han_viet": "NGỮ",
+          "vi": "tiếng Việt",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "49d6468a-ab71-579d-a743-937f491ad624-u01",
+              "surface": "ベトナム語"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v025",
+          "ja": "担当者",
+          "reading": "たんとうしゃ",
+          "han_viet": "ĐẢM ĐƯƠNG GIẢ",
+          "vi": "người phụ trách",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "49d6468a-ab71-579d-a743-937f491ad624-u02",
+              "surface": "担当者"
+            }
+          ],
+          "level_note_vi": "Cần hỏi khi nào có người hỗ trợ ngôn ngữ hoặc phụ trách việc mình cần."
+        },
+        {
+          "id": "S-047-v026",
+          "ja": "予約する",
+          "reading": "よやくする",
+          "han_viet": "DỰ ƯỚC",
+          "vi": "đặt lịch hẹn trước",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2c171db5-2a34-5dd7-b417-bacfd0ccfd3c-u03",
+              "surface": "予約できます"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v027",
+          "ja": "午前",
+          "reading": "ごぜん",
+          "han_viet": "NGỌ TIỀN",
+          "vi": "buổi sáng, trước trưa",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "87c4d9d1-f22e-5507-bb3a-0769c41c1748-u02",
+              "surface": "午前"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v028",
+          "ja": "来週",
+          "reading": "らいしゅう",
+          "han_viet": "LAI CHU",
+          "vi": "tuần sau",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6f5a0d48-d5e2-582a-8b18-9c60e429cabc-u01",
+              "surface": "来週"
+            }
+          ]
+        },
+        {
+          "id": "S-047-v029",
+          "ja": "聞き直す",
+          "reading": "ききなおす",
+          "han_viet": "VĂN TRỰC",
+          "vi": "hỏi lại vì nghe chưa rõ",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần hỏi lại tên quầy, giấy phải mang hoặc giờ hẹn."
+        },
+        {
+          "id": "S-047-v030",
+          "ja": "先日",
+          "reading": "せんじつ",
+          "han_viet": "TIÊN NHẬT",
+          "vi": "hôm trước, lần trước",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "00215832-79a1-5d09-b9e0-7600f46934f5-u01",
+              "surface": "先日"
+            }
+          ],
+          "level_note_vi": "Cần nhắc cuộc gọi trước khi quay lại đúng cuộc hẹn."
+        }
+      ]
+    }
+  ]
+}

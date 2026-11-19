@@ -1,0 +1,883 @@
+{
+  "stage_uid": "cb64db58-1088-51bd-9146-2a0842e21392",
+  "stage_code": "T-112",
+  "admin_sources": {
+    "mhlw-rules": {
+      "title": "モデル就業規則（令和７年12月） | 厚生労働省",
+      "kind": "web",
+      "accessed": "2026-11-19",
+      "url": "https://www.mhlw.go.jp/content/001620507.pdf",
+      "use_vi": "Mẫu nội quy có mục 休職 và các loại 休暇, dùng để đối chiếu tên hình thức nghỉ."
+    },
+    "jdict-komu": {
+      "kind": "web",
+      "title": "込 — NHẬP | Jdict",
+      "url": "https://jdict.net/kanji/%E8%BE%BC",
+      "accessed": "2026-11-19",
+      "use_vi": "Âm NHẬP theo cách ghi của từ điển Nhật–Việt cho chữ 込."
+    },
+    "mhlw-health": {
+      "kind": "web",
+      "title": "治療と就業の両立支援指針 | 厚生労働省",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=75ac0780",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi 治療, 通院, 健康情報, 産業保健 và việc bố trí làm ngắn giờ hoặc chia sẻ thông tin theo đồng ý."
+    },
+    "mhlw-form": {
+      "title": "治療の状況や就業継続の可否等についての主治医意見書 | 厚生労働省",
+      "kind": "web",
+      "accessed": "2026-11-19",
+      "url": "https://www.mhlw.go.jp/content/12400000/000640231.pdf",
+      "use_vi": "Mẫu có tên 主治医意見書 và mục 病名 cùng nhận xét về khả năng làm việc."
+    },
+    "hospital": {
+      "kind": "web",
+      "title": "再診の方 | 県立広島病院",
+      "url": "https://hiroshima.hpho.jp/visitor/re-visit/",
+      "accessed": "2026-11-19",
+      "use_vi": "Ngữ cảnh khám tại bệnh viện và cách gọi 診察."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Giai đoạn nghỉ dự kiến",
+      "v10_topic": "Giai đoạn nghỉ dự kiến",
+      "terms": [
+        {
+          "id": "T-112-v001",
+          "ja": "休暇",
+          "reading": "きゅうか",
+          "han_viet": "HƯU GIẢ",
+          "vi": "kỳ nghỉ hoặc ngày nghỉ được sắp xếp, cho phép ở nơi làm việc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-rules"
+          ]
+        },
+        {
+          "id": "T-112-v002",
+          "ja": "休職",
+          "reading": "きゅうしょく",
+          "han_viet": "HƯU CHỨC",
+          "vi": "tình trạng tạm ngừng làm một thời gian mà vẫn còn quan hệ lao động theo quy định nơi làm việc",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra cách nhân sự gọi một hình thức nghỉ dài nếu nội quy công ty có mục này.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-rules"
+          ]
+        },
+        {
+          "id": "T-112-v003",
+          "ja": "見込み",
+          "reading": "みこみ",
+          "han_viet": "KIẾN NHẬP",
+          "vi": "dự kiến dựa trên thông tin hiện có, như khoảng thời gian cần nghỉ",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần để giải thích ba tuần là thời lượng dự kiến trước buổi khám và chưa thể chốt ngày quay lại.",
+          "source_refs": [
+            "jdict-komu"
+          ],
+          "note_vi": "込 đọc theo quy ước NHẬP của từ điển Nhật–Việt.",
+          "evidence": [
+            {
+              "utterance_id": "0c16443e-450a-50c0-88a3-4077031c092b-u02",
+              "surface": "見込み"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v004",
+          "ja": "期間",
+          "reading": "きかん",
+          "han_viet": "KỲ GIAN",
+          "vi": "khoảng thời gian tính từ mốc bắt đầu đến mốc kết thúc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v005",
+          "ja": "日程",
+          "reading": "にってい",
+          "han_viet": "NHẬT TRÌNH",
+          "vi": "lịch có các ngày đã dự kiến hoặc thống nhất",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8276102e-59fe-5987-b8e9-2dcdedd5b9af-u01",
+              "surface": "人事と確認した日程"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v006",
+          "ja": "人事",
+          "reading": "じんじ",
+          "han_viet": "NHÂN SỰ",
+          "vi": "bộ phận phụ trách nhân viên và các thủ tục nội bộ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0c16443e-450a-50c0-88a3-4077031c092b-u03",
+              "surface": "人事"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v007",
+          "ja": "治療",
+          "reading": "ちりょう",
+          "han_viet": "TRỊ LIỆU",
+          "vi": "việc điều trị bệnh hoặc vấn đề sức khỏe",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-health"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "0c16443e-450a-50c0-88a3-4077031c092b-u01",
+              "surface": "治療"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v008",
+          "ja": "診察",
+          "reading": "しんさつ",
+          "han_viet": "CHẨN SÁT",
+          "vi": "việc bác sĩ khám, đánh giá tình trạng của người đến khám",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "source_domain": "medical",
+          "source_refs": [
+            "hospital"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "0c16443e-450a-50c0-88a3-4077031c092b-u03",
+              "surface": "診察"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v009",
+          "ja": "ずらす",
+          "reading": "ずらす",
+          "han_viet": "",
+          "vi": "dời một mốc lịch sang sớm hoặc muộn hơn",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "cd738e90-bf3d-5d91-ab77-9bf515719cdf-u02",
+              "surface": "日をずらす"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v010",
+          "ja": "手順",
+          "reading": "てじゅん",
+          "han_viet": "THỦ THUẬN",
+          "vi": "trình tự các bước cần làm khi trao đổi và xin nghỉ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0c16443e-450a-50c0-88a3-4077031c092b-u04",
+              "surface": "扱いや手順"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Phần riêng tư muốn chia sẻ",
+      "v10_topic": "Phần riêng tư muốn chia sẻ",
+      "terms": [
+        {
+          "id": "T-112-v011",
+          "ja": "病名",
+          "reading": "びょうめい",
+          "han_viet": "BỆNH DANH",
+          "vi": "tên bệnh hoặc tình trạng được ghi nhận trong chẩn đoán",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-form"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "739b5160-22f9-5784-8e70-3b6d417c3fab-u02",
+              "surface": "病名"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v012",
+          "ja": "健康情報",
+          "reading": "けんこうじょうほう",
+          "han_viet": "KIỆN KHANG TÌNH BÁO",
+          "vi": "thông tin cá nhân về sức khỏe như triệu chứng và tình trạng điều trị",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần để hỏi phạm vi thông tin liên quan đến sức khỏe có thể được chia sẻ ở công ty.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-health"
+          ]
+        },
+        {
+          "id": "T-112-v013",
+          "ja": "主治医意見書",
+          "reading": "しゅじいいけんしょ",
+          "han_viet": "CHỦ TRỊ Y Ý KIẾN THƯ",
+          "vi": "văn bản ghi ý kiến của bác sĩ điều trị về khả năng làm việc và hỗ trợ cần thiết",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần nhận ra loại giấy nhân sự có thể hỏi khi cần xem giờ làm và công việc phù hợp.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-form"
+          ]
+        },
+        {
+          "id": "T-112-v014",
+          "ja": "差し支え",
+          "reading": "さしつかえ",
+          "han_viet": "SAI CHI",
+          "vi": "điều bất tiện hoặc vướng mắc, thường dùng lịch sự khi xin phép hỏi thêm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "739b5160-22f9-5784-8e70-3b6d417c3fab-u01",
+              "surface": "差し支えなければ"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v015",
+          "ja": "個別",
+          "reading": "こべつ",
+          "han_viet": "CÁ BIỆT",
+          "vi": "riêng với từng người thay vì trao đổi trước cả nhóm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "739b5160-22f9-5784-8e70-3b6d417c3fab-u05",
+              "surface": "個別にお話し"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v016",
+          "ja": "本人",
+          "reading": "ほんにん",
+          "han_viet": "BẢN NHÂN",
+          "vi": "chính người có việc hoặc có thông tin được nhắc đến",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v017",
+          "ja": "同意",
+          "reading": "どうい",
+          "han_viet": "ĐỒNG Ý",
+          "vi": "sự chấp thuận của người liên quan đối với việc sử dụng hay chia sẻ thông tin",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-health"
+          ]
+        },
+        {
+          "id": "T-112-v018",
+          "ja": "共有範囲",
+          "reading": "きょうゆうはんい",
+          "han_viet": "CỘNG HỮU PHẠM VI",
+          "vi": "phạm vi nội dung hoặc người được chia sẻ thông tin",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v019",
+          "ja": "受け取る",
+          "reading": "うけとる",
+          "han_viet": "THỤ THỦ",
+          "vi": "nhận giấy tờ, tài liệu hoặc thông tin từ người khác",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "739b5160-22f9-5784-8e70-3b6d417c3fab-u04",
+              "surface": "誰が受け取って"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v020",
+          "ja": "伝える",
+          "reading": "つたえる",
+          "han_viet": "TRUYỀN",
+          "vi": "cho người khác biết phần thông tin cần để sắp xếp việc",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "739b5160-22f9-5784-8e70-3b6d417c3fab-u02",
+              "surface": "チームに伝えたくありません"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Bàn giao từng việc và người thay",
+      "v10_topic": "Bàn giao từng việc và người thay",
+      "terms": [
+        {
+          "id": "T-112-v021",
+          "ja": "引き継ぐ",
+          "reading": "ひきつぐ",
+          "han_viet": "DẪN KẾ",
+          "vi": "bàn giao hoặc tiếp nhận công việc và thông tin liên quan",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0a1d8841-b653-5327-91a3-f4b5037198a7-u01",
+              "surface": "問い合わせは引き継げました"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v022",
+          "ja": "原稿",
+          "reading": "げんこう",
+          "han_viet": "NGUYÊN CẢO",
+          "vi": "bản thảo báo cáo hoặc tài liệu trước khi duyệt để gửi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9aac2e2e-2fa0-5227-8941-2bc494b63689-u01",
+              "surface": "原稿"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v023",
+          "ja": "回答済み",
+          "reading": "かいとうずみ",
+          "han_viet": "HỒI ĐÁP TẾ",
+          "vi": "đã trả lời xong, nhãn để nhận biết trạng thái của một yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9aac2e2e-2fa0-5227-8941-2bc494b63689-u03",
+              "surface": "回答済み"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v024",
+          "ja": "確認待ち",
+          "reading": "かくにんまち",
+          "han_viet": "XÁC NHẬN ĐÃI",
+          "vi": "đang chờ xác nhận hoặc chờ người khác cung cấp thêm thông tin",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9aac2e2e-2fa0-5227-8941-2bc494b63689-u03",
+              "surface": "確認待ち"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v025",
+          "ja": "最終確認",
+          "reading": "さいしゅうかくにん",
+          "han_viet": "TỐI CHUNG XÁC NHẬN",
+          "vi": "lần kiểm tra cuối trước khi gửi hoặc chốt tài liệu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9aac2e2e-2fa0-5227-8941-2bc494b63689-u01",
+              "surface": "最終確認"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v026",
+          "ja": "送付",
+          "reading": "そうふ",
+          "han_viet": "TỐNG PHÓ",
+          "vi": "việc gửi tài liệu hoặc hồ sơ cho người nhận",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0a1d8841-b653-5327-91a3-f4b5037198a7-u04",
+              "surface": "確認後の送付"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v027",
+          "ja": "期限",
+          "reading": "きげん",
+          "han_viet": "KỲ HẠN",
+          "vi": "hạn cuối để gửi tài liệu hoặc trả lời yêu cầu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a5e3129e-a383-580b-9555-2eb58dd15c96-u01",
+              "surface": "期限が当日"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v028",
+          "ja": "代理",
+          "reading": "だいり",
+          "han_viet": "ĐẠI LÝ",
+          "vi": "việc làm thay hoặc người được giao xử lý thay một người khác",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v029",
+          "ja": "引き受ける",
+          "reading": "ひきうける",
+          "han_viet": "DẪN THỤ",
+          "vi": "đồng ý nhận phần việc hoặc trách nhiệm sẽ xử lý",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "957d3946-aa88-528c-a68e-e30d6d430d1c-u03",
+              "surface": "私が引き受ける"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v030",
+          "ja": "進み具合",
+          "reading": "すすみぐあい",
+          "han_viet": "TIẾN CỤ HỢP",
+          "vi": "mức độ một công việc đã tiến triển đến đâu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8276102e-59fe-5987-b8e9-2dcdedd5b9af-u05",
+              "surface": "進み具合"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v031",
+          "ja": "優先する",
+          "reading": "ゆうせんする",
+          "han_viet": "ƯU TIÊN",
+          "vi": "xử lý việc cần thiết trước các việc khác",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần khi xin người quản lý quyết định phải bàn giao bản báo cáo sắp đến hạn hay các yêu cầu khác trước.",
+          "evidence": [
+            {
+              "utterance_id": "5e6ff023-9623-5845-b87a-4ade6a8553af-u04",
+              "surface": "急ぎのメールを優先して"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Ngày cập nhật khi chưa chắc",
+      "v10_topic": "Ngày cập nhật khi chưa chắc",
+      "terms": [
+        {
+          "id": "T-112-v032",
+          "ja": "復帰日",
+          "reading": "ふっきび",
+          "han_viet": "PHỤC QUY NHẬT",
+          "vi": "ngày dự kiến hoặc xác nhận trở lại làm việc sau đợt nghỉ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccdc7a7c-aaf0-586a-9326-fc96b6086947-u02",
+              "surface": "復帰日"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v033",
+          "ja": "未定",
+          "reading": "みてい",
+          "han_viet": "VỊ ĐỊNH",
+          "vi": "chưa được quyết định vào lúc đang trao đổi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v034",
+          "ja": "目安",
+          "reading": "めやす",
+          "han_viet": "MỤC AN",
+          "vi": "mốc tham khảo để ước lượng tiến độ hoặc thời gian",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần để xin mốc dự kiến khi chưa thể hẹn chính xác ngày quay lại làm."
+        },
+        {
+          "id": "T-112-v035",
+          "ja": "状況",
+          "reading": "じょうきょう",
+          "han_viet": "TRẠNG HUỐNG",
+          "vi": "tình hình vào lúc báo, như phần đã biết sau lần khám",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccdc7a7c-aaf0-586a-9326-fc96b6086947-u02",
+              "surface": "状況が分かる"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v036",
+          "ja": "改めて",
+          "reading": "あらためて",
+          "han_viet": "CẢI",
+          "vi": "một lần nữa hoặc vào dịp khác sau khi có thêm thông tin",
+          "pos": "adverb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "cd738e90-bf3d-5d91-ab77-9bf515719cdf-u04",
+              "surface": "改めてお話し"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v037",
+          "ja": "折り返す",
+          "reading": "おりかえす",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "gọi lại để trả lời người vừa liên hệ",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v038",
+          "ja": "確定する",
+          "reading": "かくていする",
+          "han_viet": "XÁC ĐỊNH",
+          "vi": "quyết định chắc chắn một mốc hoặc phương án để áp dụng",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v039",
+          "ja": "連絡先",
+          "reading": "れんらくさき",
+          "han_viet": "LIÊN LẠC TIÊN",
+          "vi": "tên người, số điện thoại hoặc địa chỉ để liên hệ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8276102e-59fe-5987-b8e9-2dcdedd5b9af-u05",
+              "surface": "連絡先"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v040",
+          "ja": "一旦",
+          "reading": "いったん",
+          "han_viet": "NHẤT ĐÁN",
+          "vi": "tạm thời, thực hiện một việc trước rồi xem bước sau",
+          "pos": "adverb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần để hiểu đề nghị tạm nghỉ thêm trong cuộc trao đổi và đáp rằng mình muốn tiếp tục ca sáng.",
+          "evidence": [
+            {
+              "utterance_id": "5e6ff023-9623-5845-b87a-4ade6a8553af-u01",
+              "surface": "いったんまたお休み"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v041",
+          "ja": "以降",
+          "reading": "いこう",
+          "han_viet": "DĨ GIÁNG",
+          "vi": "kể từ mốc được nhắc đến, gồm cả chính mốc đó",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8276102e-59fe-5987-b8e9-2dcdedd5b9af-u04",
+              "surface": "２５日以降"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Phạm vi làm lại khi trở về",
+      "v10_topic": "Phạm vi làm lại khi trở về",
+      "terms": [
+        {
+          "id": "T-112-v042",
+          "ja": "通常勤務",
+          "reading": "つうじょうきんむ",
+          "han_viet": "THÔNG THƯỜNG CẦN VỤ",
+          "vi": "chế độ làm việc theo lịch và phạm vi công việc thông thường",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "8276102e-59fe-5987-b8e9-2dcdedd5b9af-u03",
+              "surface": "通常勤務"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v043",
+          "ja": "通院する",
+          "reading": "つういんする",
+          "han_viet": "THÔNG VIỆN",
+          "vi": "đến cơ sở y tế để khám, điều trị định kỳ mà không nằm viện",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-health"
+          ]
+        },
+        {
+          "id": "T-112-v044",
+          "ja": "産業保健",
+          "reading": "さんぎょうほけん",
+          "han_viet": "SẢN NGHIỆP BẢO KIỆN",
+          "vi": "lĩnh vực sức khỏe nghề nghiệp, hỗ trợ chăm sóc sức khỏe người lao động tại nơi làm việc",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "level_note_vi": "Cần nhận ra bên chuyên môn quản lý có thể hỏi khi sắp xếp giờ và việc trong tuần trở lại.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-health"
+          ],
+          "evidence": [
+            {
+              "utterance_id": "9ed35975-721a-50c0-b531-663160f63e11-u04",
+              "surface": "産業保健"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v045",
+          "ja": "短時間勤務",
+          "reading": "たんじかんきんむ",
+          "han_viet": "ĐOẢN THỜI GIAN CẦN VỤ",
+          "vi": "phương án làm ít giờ hơn lịch thông thường",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần gọi tên phương án làm buổi sáng và phân việc khi chưa thể nhận đầy đủ lịch cũ.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-health"
+          ]
+        },
+        {
+          "id": "T-112-v046",
+          "ja": "面談",
+          "reading": "めんだん",
+          "han_viet": "DIỆN ĐÀM",
+          "vi": "buổi gặp trao đổi trực tiếp về lịch, công việc hoặc tình hình làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9ed35975-721a-50c0-b531-663160f63e11-u04",
+              "surface": "面談"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v047",
+          "ja": "振り分ける",
+          "reading": "ふりわける",
+          "han_viet": "CHẤN PHÂN",
+          "vi": "chia yêu cầu vào các nhóm hoặc chuyển cho từng người phụ trách",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v048",
+          "ja": "負担",
+          "reading": "ふたん",
+          "han_viet": "PHỤ ĐẢM",
+          "vi": "gánh nặng do lượng việc, thời gian hoặc sức lực cần bỏ ra",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4459e60f-d32f-5025-9640-23c17ce2d3cc-u05",
+              "surface": "件数と負担"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v049",
+          "ja": "配分",
+          "reading": "はいぶん",
+          "han_viet": "PHỐI PHÂN",
+          "vi": "cách chia thời gian, nhiệm vụ hoặc khối lượng cho từng người",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5e6ff023-9623-5845-b87a-4ade6a8553af-u05",
+              "surface": "仕事の配分"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v050",
+          "ja": "着手する",
+          "reading": "ちゃくしゅする",
+          "han_viet": "TRƯỚC THỦ",
+          "vi": "bắt tay xử lý một việc đã nhận",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a5e3129e-a383-580b-9555-2eb58dd15c96-u03",
+              "surface": "着手した分"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v051",
+          "ja": "順番",
+          "reading": "じゅんばん",
+          "han_viet": "THUẬN PHIÊN",
+          "vi": "thứ tự xử lý các việc, có thể đổi theo hạn mới",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e3350875-c0ee-5af7-ad90-68545170df20-u03",
+              "surface": "順番を変えられます"
+            }
+          ]
+        },
+        {
+          "id": "T-112-v052",
+          "ja": "見直す",
+          "reading": "みなおす",
+          "han_viet": "KIẾN TRỰC",
+          "vi": "xem lại một lịch hoặc cách phân việc để điều chỉnh khi cần",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-112-v053",
+          "ja": "振り返る",
+          "reading": "ふりかえる",
+          "han_viet": "CHẤN PHẢN",
+          "vi": "nhìn lại kết quả của giai đoạn thử để rút kinh nghiệm",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "level_note_vi": "Cần để hẹn buổi cùng xem số việc đã làm và việc còn tồn trước khi sửa phương án tuần tiếp theo.",
+          "evidence": [
+            {
+              "utterance_id": "e4ec3c90-7712-5601-b26a-270099e23bf6-u03",
+              "surface": "振り返れますか"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

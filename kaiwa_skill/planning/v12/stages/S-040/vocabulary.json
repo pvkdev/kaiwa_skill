@@ -1,0 +1,698 @@
+{
+  "stage_uid": "23e7a49a-7876-55d1-8b3a-6773b46c91d7",
+  "stage_code": "S-040",
+  "admin_sources": {
+    "mhlw-condition": {
+      "kind": "web",
+      "title": "感染拡大防止へのご協力をお願いいたします！｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kansentaisaku.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách diễn đạt triệu chứng thông dụng như 体がだるい và 熱がある."
+    },
+    "mhlw-flu": {
+      "kind": "web",
+      "title": "インフルエンザ（総合ページ）｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/kenkou/kekkaku-kansenshou/infulenza/index.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu chữ dùng để gọi triệu chứng và nhiệt độ trong mục 主な症状."
+    },
+    "hvdic-trieu": {
+      "kind": "web",
+      "title": "Tra từ 朝｜Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E6%9C%9D",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu TRIÊU trong 朝 mang nghĩa buổi sáng."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Báo sốt/ốm và không thể đi làm",
+      "v10_topic": "Báo sốt/ốm và không thể đi làm",
+      "terms": [
+        {
+          "id": "S-040-v001",
+          "ja": "体調が悪い",
+          "reading": "たいちょうがわるい",
+          "han_viet": "THỂ ĐIỀU ÁC",
+          "vi": "cảm thấy không khỏe",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0d74966e-b4ac-5b7c-b6ce-2453b85b91f8-u01",
+              "surface": "体調が悪く"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v002",
+          "ja": "休む",
+          "reading": "やすむ",
+          "han_viet": "HƯU",
+          "vi": "nghỉ, nghỉ làm",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d7b1586f-dc93-5a71-8086-fd6fecef9976-u01",
+              "surface": "休む"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v003",
+          "ja": "出勤する",
+          "reading": "しゅっきんする",
+          "han_viet": "XUẤT CẦN",
+          "vi": "đi làm (đến nơi làm việc)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0d74966e-b4ac-5b7c-b6ce-2453b85b91f8-u01",
+              "surface": "出勤できません"
+            }
+          ],
+          "level_note_vi": "Cần báo trực tiếp rằng mình không thể đi làm."
+        },
+        {
+          "id": "S-040-v004",
+          "ja": "熱がある",
+          "reading": "ねつがある",
+          "han_viet": "NHIỆT",
+          "vi": "bị sốt",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-condition"
+          ]
+        },
+        {
+          "id": "S-040-v005",
+          "ja": "発熱",
+          "reading": "はつねつ",
+          "han_viet": "PHÁT NHIỆT",
+          "vi": "sốt, phát sốt",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Có thể nghe cách gọi này khi mô tả lý do nghỉ hoặc liên hệ chỗ khám.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-040-v006",
+          "ja": "頭痛",
+          "reading": "ずつう",
+          "han_viet": "ĐẦU THỐNG",
+          "vi": "đau đầu",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần mô tả cụ thể sức khỏe khi báo không thể đi làm.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-040-v007",
+          "ja": "のどの痛み",
+          "reading": "のどのいたみ",
+          "han_viet": "THỐNG",
+          "vi": "đau họng",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-040-v008",
+          "ja": "咳",
+          "reading": "せき",
+          "han_viet": "KHÁI",
+          "vi": "ho, tiếng ho",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần báo nếu bị ho khi xin nghỉ hoặc cập nhật tình trạng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-040-v009",
+          "ja": "だるい",
+          "reading": "だるい",
+          "han_viet": "",
+          "vi": "uể oải, mệt rã rời",
+          "pos": "i_adj",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Dùng để báo cảm giác mệt toàn thân bằng lời thường dùng.",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-condition"
+          ]
+        },
+        {
+          "id": "S-040-v010",
+          "ja": "風邪",
+          "reading": "かぜ",
+          "han_viet": "PHONG TÀ",
+          "vi": "cảm lạnh",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "topic_extension",
+          "source_domain": "medical",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-040-v011",
+          "ja": "〜度",
+          "reading": "ど",
+          "han_viet": "ĐỘ",
+          "vi": "độ (nhiệt độ, thân nhiệt)",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_refs": [
+            "mhlw-flu"
+          ]
+        },
+        {
+          "id": "S-040-v046",
+          "ja": "今日",
+          "reading": "きょう",
+          "han_viet": "KIM NHẬT",
+          "vi": "hôm nay",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d7b1586f-dc93-5a71-8086-fd6fecef9976-u02",
+              "surface": "今日だけ"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v013",
+          "ja": "〜日間",
+          "reading": "にちかん",
+          "han_viet": "NHẬT GIAN",
+          "vi": "trong … ngày, … ngày liền",
+          "pos": "counter",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d7b1586f-dc93-5a71-8086-fd6fecef9976-u01",
+              "surface": "二日間"
+            }
+          ],
+          "note_vi": "Hai ngày đọc ふつかかん."
+        },
+        {
+          "id": "S-040-v014",
+          "ja": "お大事に",
+          "reading": "おだいじに",
+          "han_viet": "ĐẠI SỰ",
+          "vi": "giữ gìn sức khỏe nhé",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0d74966e-b4ac-5b7c-b6ce-2453b85b91f8-u04",
+              "surface": "お大事に"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Hẹn cập nhật và nhờ người tiếp việc",
+      "v10_topic": "Hẹn cập nhật và nhờ người tiếp việc",
+      "terms": [
+        {
+          "id": "S-040-v015",
+          "ja": "連絡する",
+          "reading": "れんらくする",
+          "han_viet": "LIÊN LẠC",
+          "vi": "liên lạc, báo lại",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0d74966e-b4ac-5b7c-b6ce-2453b85b91f8-u03",
+              "surface": "連絡します"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v016",
+          "ja": "引き継ぐ",
+          "reading": "ひきつぐ",
+          "han_viet": "DẪN KẾ",
+          "vi": "bàn giao, tiếp nhận công việc đang làm",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a489f5ae-3b37-5f9f-b939-a25ecd2b38af-u01",
+              "surface": "引き継ぎ"
+            }
+          ],
+          "level_note_vi": "Cần hỏi ai sẽ tiếp quản việc đang dở khi mình nghỉ."
+        },
+        {
+          "id": "S-040-v017",
+          "ja": "途中",
+          "reading": "とちゅう",
+          "han_viet": "ĐỒ TRUNG",
+          "vi": "giữa chừng, đang làm dở",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a489f5ae-3b37-5f9f-b939-a25ecd2b38af-u01",
+              "surface": "途中"
+            }
+          ],
+          "level_note_vi": "Cần mô tả việc mới làm dở để đồng nghiệp tiếp tục."
+        },
+        {
+          "id": "S-040-v018",
+          "ja": "急ぎ",
+          "reading": "いそぎ",
+          "han_viet": "CẤP",
+          "vi": "việc hoặc phần cần xử lý gấp",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a489f5ae-3b37-5f9f-b939-a25ecd2b38af-u02",
+              "surface": "急ぎ"
+            }
+          ],
+          "level_note_vi": "Cần chỉ ra phần phải bàn giao trước khi nghỉ."
+        },
+        {
+          "id": "S-040-v019",
+          "ja": "内容",
+          "reading": "ないよう",
+          "han_viet": "NỘI DUNG",
+          "vi": "nội dung",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a489f5ae-3b37-5f9f-b939-a25ecd2b38af-u03",
+              "surface": "内容"
+            }
+          ],
+          "level_note_vi": "Cần nói ngắn nội dung công việc chưa hoàn tất."
+        },
+        {
+          "id": "S-040-v020",
+          "ja": "期限",
+          "reading": "きげん",
+          "han_viet": "KÌ HẠN",
+          "vi": "thời hạn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a489f5ae-3b37-5f9f-b939-a25ecd2b38af-u03",
+              "surface": "期限"
+            }
+          ],
+          "level_note_vi": "Cần nói mốc chót của phần việc được chuyển giao."
+        },
+        {
+          "id": "S-040-v021",
+          "ja": "担当者",
+          "reading": "たんとうしゃ",
+          "han_viet": "ĐẢM ĐƯƠNG GIẢ",
+          "vi": "người phụ trách",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "842bdf7c-9c80-5322-9a4c-63780becc85e-u01",
+              "surface": "担当者"
+            }
+          ],
+          "level_note_vi": "Cần xác nhận ai được giao làm thay khi mình nghỉ."
+        },
+        {
+          "id": "S-040-v043",
+          "ja": "折り返し電話",
+          "reading": "おりかえしでんわ",
+          "han_viet": "CHIẾT PHẢN ĐIỆN THOẠI",
+          "vi": "cuộc gọi lại (cho người đã liên hệ)",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5b84b5ef-06a6-5ae2-85a1-776f2b06c5ba-u01",
+              "surface": "折り返し電話"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v023",
+          "ja": "共有フォルダー",
+          "reading": "きょうゆうフォルダー",
+          "han_viet": "CỘNG HỮU",
+          "vi": "thư mục dùng chung",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5b84b5ef-06a6-5ae2-85a1-776f2b06c5ba-u03",
+              "surface": "共有フォルダー"
+            }
+          ],
+          "level_note_vi": "Dùng để chỉ đúng chỗ đồng nghiệp có thể xem tài liệu cần bàn giao."
+        },
+        {
+          "id": "S-040-v024",
+          "ja": "伝える",
+          "reading": "つたえる",
+          "han_viet": "TRUYỀN",
+          "vi": "truyền đạt, báo cho người khác",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a489f5ae-3b37-5f9f-b939-a25ecd2b38af-u03",
+              "surface": "伝えます"
+            }
+          ],
+          "level_note_vi": "Cần báo ngắn gọn phần việc hoặc tình trạng cho đúng người."
+        },
+        {
+          "id": "S-040-v025",
+          "ja": "相談する",
+          "reading": "そうだんする",
+          "han_viet": "TƯƠNG ĐÀM",
+          "vi": "trao đổi để xin ý kiến",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6130f81c-48de-5d3c-ae5f-ad7912bc0fc7-u03",
+              "surface": "相談してください"
+            }
+          ],
+          "level_note_vi": "Cần trao đổi với quản lý khi chưa ai nhận phần việc gấp."
+        },
+        {
+          "id": "S-040-v047",
+          "ja": "午後",
+          "reading": "ごご",
+          "han_viet": "NGỌ HẬU",
+          "vi": "buổi chiều, sau trưa",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d7b1586f-dc93-5a71-8086-fd6fecef9976-u04",
+              "surface": "今日の午後"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v027",
+          "ja": "まだ",
+          "reading": "まだ",
+          "han_viet": "",
+          "vi": "vẫn chưa",
+          "pos": "adverb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5b84b5ef-06a6-5ae2-85a1-776f2b06c5ba-u01",
+              "surface": "折り返し電話がまだ"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v028",
+          "ja": "代わる",
+          "reading": "かわる",
+          "han_viet": "ĐẠI",
+          "vi": "làm thay, thay người",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Dùng để hỏi ai có thể làm thay trong ca hoặc việc đang dở."
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Xác nhận trở lại hoặc tiếp tục nghỉ",
+      "v10_topic": "Xác nhận trở lại hoặc tiếp tục nghỉ",
+      "terms": [
+        {
+          "id": "S-040-v029",
+          "ja": "戻る",
+          "reading": "もどる",
+          "han_viet": "LỆ",
+          "vi": "trở lại",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1a596824-af81-53e1-b370-29bff68fbd28-u01",
+              "surface": "戻りました"
+            }
+          ],
+          "level_note_vi": "Cần báo mình đã trở lại làm việc sau ngày nghỉ."
+        },
+        {
+          "id": "S-040-v030",
+          "ja": "良くなる",
+          "reading": "よくなる",
+          "han_viet": "LƯƠNG",
+          "vi": "khỏe hơn, đỡ hơn",
+          "pos": "expression",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-040-v031",
+          "ja": "もう少し",
+          "reading": "もうすこし",
+          "han_viet": "THIỂU",
+          "vi": "thêm một chút, thêm một thời gian ngắn",
+          "pos": "adverb",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-040-v032",
+          "ja": "始業前",
+          "reading": "しぎょうまえ",
+          "han_viet": "THỦY NGHIỆP TIỀN",
+          "vi": "trước giờ bắt đầu làm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fdba1dab-afd7-54a6-b363-8b12190f425b-u02",
+              "surface": "始業前"
+            }
+          ],
+          "level_note_vi": "Cần hẹn gọi xác nhận trước giờ bắt đầu làm."
+        },
+        {
+          "id": "S-040-v033",
+          "ja": "朝",
+          "reading": "あさ",
+          "han_viet": "TRIÊU",
+          "vi": "buổi sáng",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a3ff305f-8b84-510f-a024-e4f01a69558a-u02",
+              "surface": "朝"
+            }
+          ],
+          "note_vi": "Chọn âm TRIÊU của 朝 theo nghĩa buổi sáng.",
+          "source_refs": [
+            "hvdic-trieu"
+          ]
+        },
+        {
+          "id": "S-040-v034",
+          "ja": "明日",
+          "reading": "あした",
+          "han_viet": "MINH NHẬT",
+          "vi": "ngày mai",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "014daf92-459d-5608-9d31-9de81fd99b9e-u01",
+              "surface": "明日"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v035",
+          "ja": "確かめる",
+          "reading": "たしかめる",
+          "han_viet": "XÁC",
+          "vi": "kiểm tra cho chắc",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "level_note_vi": "Cần xác nhận lại sức khỏe hoặc lịch làm trước khi đi."
+        },
+        {
+          "id": "S-040-v044",
+          "ja": "勤務",
+          "reading": "きんむ",
+          "han_viet": "CẦN VỤ",
+          "vi": "việc đi làm, ca làm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0d74966e-b4ac-5b7c-b6ce-2453b85b91f8-u02",
+              "surface": "勤務"
+            }
+          ],
+          "level_note_vi": "Cần hiểu từ người quản lý dùng khi điều chỉnh lịch có người nghỉ."
+        },
+        {
+          "id": "S-040-v037",
+          "ja": "予定",
+          "reading": "よてい",
+          "han_viet": "DỰ ĐỊNH",
+          "vi": "lịch, dự kiến",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5b84b5ef-06a6-5ae2-85a1-776f2b06c5ba-u04",
+              "surface": "予定"
+            }
+          ]
+        },
+        {
+          "id": "S-040-v045",
+          "ja": "変更",
+          "reading": "へんこう",
+          "han_viet": "BIẾN CANH",
+          "vi": "sự thay đổi (lịch, kế hoạch)",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1a596824-af81-53e1-b370-29bff68fbd28-u01",
+              "surface": "変更"
+            }
+          ],
+          "level_note_vi": "Cần hỏi lịch họp hoặc giờ làm có thay đổi trong những ngày nghỉ."
+        },
+        {
+          "id": "S-040-v039",
+          "ja": "続き",
+          "reading": "つづき",
+          "han_viet": "TỤC",
+          "vi": "phần tiếp theo, phần việc còn lại",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccdb47e6-7a0b-590c-ad11-d469ec1d3b69-u03",
+              "surface": "続き"
+            }
+          ],
+          "level_note_vi": "Cần hỏi ai đang làm tiếp phần việc mình để lại."
+        },
+        {
+          "id": "S-040-v040",
+          "ja": "進み具合",
+          "reading": "すすみぐあい",
+          "han_viet": "TIẾN CỤ HỢP",
+          "vi": "tình hình tiến triển",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1a596824-af81-53e1-b370-29bff68fbd28-u03",
+              "surface": "進み具合"
+            }
+          ],
+          "level_note_vi": "Dùng để hỏi đồng nghiệp tiến độ trong thời gian mình vắng mặt."
+        },
+        {
+          "id": "S-040-v041",
+          "ja": "無理",
+          "reading": "むり",
+          "han_viet": "VÔ LÍ",
+          "vi": "quá sức, không thể gắng được",
+          "pos": "na_adj",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "level_note_vi": "Dùng để nói mình chưa thể trở lại làm việc vì còn mệt."
+        },
+        {
+          "id": "S-040-v042",
+          "ja": "元気",
+          "reading": "げんき",
+          "han_viet": "NGUYÊN KHÍ",
+          "vi": "khỏe, có sức",
+          "pos": "na_adj",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

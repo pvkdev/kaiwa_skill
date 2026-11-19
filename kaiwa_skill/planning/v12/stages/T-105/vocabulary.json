@@ -1,0 +1,779 @@
+{
+  "stage_uid": "faf8032b-5f0a-5b8f-bc49-a99985597789",
+  "stage_code": "T-105",
+  "admin_sources": {
+    "mhlw-haken": {
+      "kind": "web",
+      "title": "派遣で働くときに注意することは · 茨城労働局",
+      "url": "https://jsite.mhlw.go.jp/ibaraki-roudoukyoku/yokuaru_goshitsumon/shurouchu/worker_e/qa_whakenchuui.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu vai của nơi phái cử, nơi tiếp nhận, người trực tiếp giao việc và nội dung thông báo điều kiện."
+    },
+    "mhlw-haken-form": {
+      "kind": "web",
+      "title": "モデル就業条件明示書 · 厚生労働省",
+      "url": "https://www.mhlw.go.jp/content/11600000/001459405.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên giấy thông báo, các ô chỉ huy trực tiếp, giờ làm và giờ nghỉ trên trang 1, cùng đầu mối tiếp nhận phản ánh trong hướng dẫn mục 11 trang 2."
+    },
+    "mhlw-haken-contact": {
+      "kind": "web",
+      "title": "派遣就業中のトラブル · 厚生労働省",
+      "url": "https://www.mhlw.go.jp/general/seido/anteikyoku/haken/10.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu tên người phụ trách và đầu mối tiếp nhận phản ánh ở nơi phái cử và nơi tiếp nhận."
+    },
+    "meti-entry": {
+      "kind": "web",
+      "title": "入館案内 · 関東経済産業局",
+      "url": "https://www.kanto.meti.go.jp/annai/shuhenzu/admission.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu từ 入館証 dùng cho thẻ vào tòa nhà do quầy tiếp nhận cấp hoặc cho mượn."
+    },
+    "ipa-access": {
+      "kind": "web",
+      "title": "組織における内部不正防止ガイドライン · 情報処理推進機構",
+      "url": "https://www.ipa.go.jp/security/guide/hjuojm00000055l0-att/ps6vr7000000jvcb.pdf?month=9",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu cách gọi quyền truy cập và việc xác nhận hoặc cấp quyền đối với dữ liệu công việc."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Hai đầu mối nơi phái cử/nơi làm",
+      "v10_topic": "Hai đầu mối nơi phái cử/nơi làm",
+      "terms": [
+        {
+          "ja": "派遣元",
+          "reading": "はけんもと",
+          "han_viet": "PHÁI KHIỂN NGUYÊN",
+          "vi": "đơn vị phái cử, nơi tuyển dụng và cử người lao động đi làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v001",
+          "evidence": [
+            {
+              "utterance_id": "094b18ee-d565-506a-8e96-a7d9a2ff4286-u02",
+              "surface": "派遣元"
+            }
+          ],
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-haken"
+          ]
+        },
+        {
+          "ja": "派遣先",
+          "reading": "はけんさき",
+          "han_viet": "PHÁI KHIỂN TIÊN",
+          "vi": "đơn vị tiếp nhận và tổ chức công việc tại nơi làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v002",
+          "evidence": [
+            {
+              "utterance_id": "19a29169-a601-56fb-bfaa-bffa5ccd579c-u02",
+              "surface": "派遣先"
+            }
+          ],
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-haken"
+          ]
+        },
+        {
+          "ja": "派遣労働者",
+          "reading": "はけんろうどうしゃ",
+          "han_viet": "PHÁI KHIỂN LAO ĐỘNG GIẢ",
+          "vi": "người lao động làm theo hình thức phái cử",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-105-v003",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-haken"
+          ]
+        },
+        {
+          "ja": "指揮命令者",
+          "reading": "しきめいれいしゃ",
+          "han_viet": "CHỈ HUY MỆNH LỆNH GIẢ",
+          "vi": "người trực tiếp chỉ đạo và giao việc tại nơi tiếp nhận",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "id": "T-105-v004",
+          "level_note_vi": "Cần nhận đúng tên mục ghi người trực tiếp giao việc trên giấy thông báo điều kiện haken.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-haken-form"
+          ]
+        },
+        {
+          "ja": "派遣元責任者",
+          "reading": "はけんもとせきにんしゃ",
+          "han_viet": "PHÁI KHIỂN NGUYÊN TRÁCH NHIỆM GIẢ",
+          "vi": "người được chỉ định phụ trách công tác phái cử ở bên phái cử",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "id": "T-105-v005",
+          "level_note_vi": "Cần biết tên chính thức của đầu mối phụ trách ở bên mình để hỏi khi người liên hệ thường ngày vắng mặt.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-haken-contact"
+          ]
+        },
+        {
+          "ja": "派遣先責任者",
+          "reading": "はけんさきせきにんしゃ",
+          "han_viet": "PHÁI KHIỂN TIÊN TRÁCH NHIỆM GIẢ",
+          "vi": "người được chỉ định phụ trách công tác tiếp nhận lao động phái cử tại nơi làm",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "id": "T-105-v006",
+          "level_note_vi": "Cần phân biệt tên đầu mối phụ trách tiếp nhận trên giấy tờ với người giao việc hằng ngày.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-haken-contact"
+          ]
+        },
+        {
+          "ja": "窓口",
+          "reading": "まどぐち",
+          "han_viet": "SONG KHẨU",
+          "vi": "người hoặc bộ phận làm đầu mối hỏi việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v007",
+          "evidence": [
+            {
+              "utterance_id": "d9646723-b35b-56ec-ac6e-ace09bd583e6-u06",
+              "surface": "窓口"
+            }
+          ]
+        },
+        {
+          "ja": "受け入れ",
+          "reading": "うけいれ",
+          "han_viet": "THỤ NHẬP",
+          "vi": "việc tiếp nhận và chuẩn bị cho người đến làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v008",
+          "evidence": [
+            {
+              "utterance_id": "094b18ee-d565-506a-8e96-a7d9a2ff4286-u04",
+              "surface": "受け入れ"
+            }
+          ]
+        },
+        {
+          "ja": "入館証",
+          "reading": "にゅうかんしょう",
+          "han_viet": "NHẬP QUÁN CHỨNG",
+          "vi": "thẻ ra vào tòa nhà hoặc nơi làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v009",
+          "evidence": [
+            {
+              "utterance_id": "c488c44f-f1d8-5d5e-a038-680de480ef5e-u03",
+              "surface": "入館証"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "meti-entry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Lịch và điều kiện khác chỉ thị tại chỗ",
+      "v10_topic": "Lịch và điều kiện khác chỉ thị tại chỗ",
+      "terms": [
+        {
+          "ja": "就業条件",
+          "reading": "しゅうぎょうじょうけん",
+          "han_viet": "TỰU NGHIỆP ĐIỀU KIỆN",
+          "vi": "các điều kiện về công việc như nhiệm vụ, nơi làm và thời gian làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v010",
+          "evidence": [
+            {
+              "utterance_id": "094b18ee-d565-506a-8e96-a7d9a2ff4286-u02",
+              "surface": "就業条件"
+            }
+          ],
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-haken"
+          ]
+        },
+        {
+          "ja": "就業条件明示書",
+          "reading": "しゅうぎょうじょうけんめいじしょ",
+          "han_viet": "TỰU NGHIỆP ĐIỀU KIỆN MINH THỊ THƯ",
+          "vi": "giấy thông báo rõ các điều kiện làm việc của đợt phái cử",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "id": "T-105-v011",
+          "evidence": [
+            {
+              "utterance_id": "0f042d27-bd6d-5482-8c9e-290188b04dcd-u01",
+              "surface": "就業条件明示書"
+            }
+          ],
+          "level_note_vi": "Cần gọi đúng tên giấy khi nhờ hai bên kiểm việc thực tế có khớp với phạm vi đã nêu.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-haken-form"
+          ]
+        },
+        {
+          "ja": "勤務日",
+          "reading": "きんむび",
+          "han_viet": "CẦN VỤ NHẬT",
+          "vi": "ngày được xếp lịch đi làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v012",
+          "evidence": [
+            {
+              "utterance_id": "48cd3e1c-25a6-5041-90b7-0940acae0eee-u02",
+              "surface": "勤務日"
+            }
+          ]
+        },
+        {
+          "ja": "就業時間",
+          "reading": "しゅうぎょうじかん",
+          "han_viet": "TỰU NGHIỆP THỜI GIAN",
+          "vi": "khung giờ làm việc đã được nêu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v013",
+          "evidence": [
+            {
+              "utterance_id": "9cf45023-282e-5432-be8d-e3ac32f3ee2a-u02",
+              "surface": "就業時間"
+            }
+          ],
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-haken-form"
+          ]
+        },
+        {
+          "ja": "始業時刻",
+          "reading": "しぎょうじこく",
+          "han_viet": "THỦY NGHIỆP THỜI KHẮC",
+          "vi": "giờ bắt đầu ca làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v014",
+          "evidence": [
+            {
+              "utterance_id": "19a29169-a601-56fb-bfaa-bffa5ccd579c-u01",
+              "surface": "始業時刻"
+            }
+          ]
+        },
+        {
+          "ja": "終業時刻",
+          "reading": "しゅうぎょうじこく",
+          "han_viet": "CHUNG NGHIỆP THỜI KHẮC",
+          "vi": "giờ kết thúc ca làm việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v015",
+          "evidence": [
+            {
+              "utterance_id": "a227baf7-57ff-58ed-bc74-96ac33b94849-u04",
+              "surface": "終業時刻"
+            }
+          ]
+        },
+        {
+          "ja": "集合時刻",
+          "reading": "しゅうごうじこく",
+          "han_viet": "TẬP HỢP THỜI KHẮC",
+          "vi": "giờ phải có mặt tại nơi đã hẹn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v016",
+          "evidence": [
+            {
+              "utterance_id": "9cf45023-282e-5432-be8d-e3ac32f3ee2a-u05",
+              "surface": "集合時刻"
+            }
+          ]
+        },
+        {
+          "ja": "休憩時間",
+          "reading": "きゅうけいじかん",
+          "han_viet": "HƯU KHẾ THỜI GIAN",
+          "vi": "khoảng thời gian nghỉ trong ca",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "id": "T-105-v017",
+          "source_refs": [
+            "mhlw-haken-form"
+          ]
+        },
+        {
+          "ja": "指示",
+          "reading": "しじ",
+          "han_viet": "CHỈ THỊ",
+          "vi": "hướng dẫn hoặc yêu cầu về việc cần làm tại chỗ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v018",
+          "evidence": [
+            {
+              "utterance_id": "fea8515c-dac9-557c-8903-6a6ebefdb5a7-u03",
+              "surface": "指示"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Hướng dẫn mâu thuẫn",
+      "v10_topic": "Hướng dẫn mâu thuẫn",
+      "terms": [
+        {
+          "ja": "板挟み",
+          "reading": "いたばさみ",
+          "han_viet": "BẢN HIỆP",
+          "vi": "tình thế ở giữa hai bên đưa yêu cầu khác nhau",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v019",
+          "evidence": [
+            {
+              "utterance_id": "19a29169-a601-56fb-bfaa-bffa5ccd579c-u02",
+              "surface": "板ばさみ"
+            }
+          ]
+        },
+        {
+          "ja": "食い違い",
+          "reading": "くいちがい",
+          "han_viet": "THỰC VI",
+          "vi": "sự không khớp giữa hướng dẫn hoặc lịch của hai bên",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-105-v020"
+        },
+        {
+          "ja": "暫定",
+          "reading": "ざんてい",
+          "han_viet": "TẠM ĐỊNH",
+          "vi": "tạm thời áp dụng trong khi chờ thông báo chính thức",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v021",
+          "evidence": [
+            {
+              "utterance_id": "c5ab6898-e5bc-5312-b246-ceee35df1bd0-u04",
+              "surface": "暫定"
+            }
+          ],
+          "level_note_vi": "Cần nhắc giờ tạm để biết đi theo lịch nào nếu hai bên chưa có phản hồi chung trước ca."
+        },
+        {
+          "ja": "転送する",
+          "reading": "てんそうする",
+          "han_viet": "CHUYỂN TỐNG",
+          "vi": "chuyển tiếp tin nhắn hay thông báo cho người khác",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v022",
+          "evidence": [
+            {
+              "utterance_id": "c5ab6898-e5bc-5312-b246-ceee35df1bd0-u04",
+              "surface": "転送してください"
+            }
+          ]
+        },
+        {
+          "ja": "予定表",
+          "reading": "よていひょう",
+          "han_viet": "DỰ ĐỊNH BIỂU",
+          "vi": "bảng ghi ngày giờ và lịch làm dự kiến",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v023",
+          "evidence": [
+            {
+              "utterance_id": "869e0dbe-0b20-5bc3-9a08-ac3fba03ea45-u02",
+              "surface": "予定表"
+            }
+          ]
+        },
+        {
+          "ja": "前倒し",
+          "reading": "まえだおし",
+          "han_viet": "TIỀN ĐẢO",
+          "vi": "việc đưa một giờ hoặc mốc lên sớm hơn lịch cũ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v024",
+          "evidence": [
+            {
+              "utterance_id": "fea8515c-dac9-557c-8903-6a6ebefdb5a7-u02",
+              "surface": "前倒し"
+            }
+          ]
+        },
+        {
+          "ja": "日程調整",
+          "reading": "にっていちょうせい",
+          "han_viet": "NHẬT TRÌNH ĐIỀU CHỈNH",
+          "vi": "việc sắp lại ngày hoặc giờ cho các bên đều có thể tham gia",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-105-v025"
+        },
+        {
+          "ja": "確定する",
+          "reading": "かくていする",
+          "han_viet": "XÁC ĐỊNH",
+          "vi": "chốt ngày, giờ hoặc điều kiện một cách chính thức",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-105-v026"
+        },
+        {
+          "ja": "伝言",
+          "reading": "でんごん",
+          "han_viet": "TRUYỀN NGÔN",
+          "vi": "lời được gửi qua một người trung gian",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "id": "T-105-v027",
+          "evidence": [
+            {
+              "utterance_id": "9cf45023-282e-5432-be8d-e3ac32f3ee2a-u03",
+              "surface": "伝言"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Việc thực tế khác mô tả",
+      "v10_topic": "Việc thực tế khác mô tả",
+      "terms": [
+        {
+          "ja": "業務範囲",
+          "reading": "ぎょうむはんい",
+          "han_viet": "NGHIỆP VỤ PHẠM VI",
+          "vi": "phần công việc thuộc nhiệm vụ đã giao",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v028",
+          "evidence": [
+            {
+              "utterance_id": "63d0d061-99da-582f-b5a2-38d304730edc-u01",
+              "surface": "業務範囲"
+            }
+          ]
+        },
+        {
+          "ja": "範囲外",
+          "reading": "はんいがい",
+          "han_viet": "PHẠM VI NGOẠI",
+          "vi": "ngoài phần việc đã xác định",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-105-v029"
+        },
+        {
+          "ja": "追加業務",
+          "reading": "ついかぎょうむ",
+          "han_viet": "TRUY GIA NGHIỆP VỤ",
+          "vi": "công việc được yêu cầu thêm ngoài phần đang làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-105-v030"
+        },
+        {
+          "ja": "担当表",
+          "reading": "たんとうひょう",
+          "han_viet": "ĐẢM ĐƯƠNG BIỂU",
+          "vi": "bảng cho biết ai được phân công từng phần việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v031",
+          "evidence": [
+            {
+              "utterance_id": "63d0d061-99da-582f-b5a2-38d304730edc-u02",
+              "surface": "担当表"
+            }
+          ]
+        },
+        {
+          "ja": "照合",
+          "reading": "しょうごう",
+          "han_viet": "CHIẾU HỢP",
+          "vi": "việc đối chiếu để xác nhận hai số liệu có khớp nhau",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v032",
+          "evidence": [
+            {
+              "utterance_id": "8100d38a-c360-5e4b-9000-ee56cd32e6cc-u01",
+              "surface": "照合"
+            }
+          ]
+        },
+        {
+          "ja": "差",
+          "reading": "さ",
+          "han_viet": "SAI",
+          "vi": "mức chênh lệch giữa hai số liệu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v033",
+          "evidence": [
+            {
+              "utterance_id": "8100d38a-c360-5e4b-9000-ee56cd32e6cc-u04",
+              "surface": "差"
+            }
+          ]
+        },
+        {
+          "ja": "閲覧権限",
+          "reading": "えつらんけんげん",
+          "han_viet": "DUYỆT LÃM QUYỀN HẠN",
+          "vi": "quyền mở và xem tài liệu hoặc dữ liệu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v034",
+          "evidence": [
+            {
+              "utterance_id": "cadc722a-bbe0-5dac-9db4-81055f95d339-u01",
+              "surface": "閲覧権限"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "ipa-access"
+          ]
+        },
+        {
+          "ja": "苦情の申出先",
+          "reading": "くじょうのもうしでさき",
+          "han_viet": "KHỔ TÌNH THÂN XUẤT TIÊN",
+          "vi": "nơi hoặc người được ghi để tiếp nhận phản ánh về việc làm phái cử",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "id": "T-105-v035",
+          "level_note_vi": "Cần nhận ra mục tên và số liên hệ khi nơi làm và nơi phái cử đều chưa xử lý được việc phát sinh.",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-haken-form",
+            "mhlw-haken-contact"
+          ]
+        },
+        {
+          "ja": "確認中",
+          "reading": "かくにんちゅう",
+          "han_viet": "XÁC NHẬN TRUNG",
+          "vi": "đang kiểm, chưa có kết luận hoặc thông báo",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v036",
+          "evidence": [
+            {
+              "utterance_id": "dfab5e53-5b41-5612-8d90-e849141a2c81-u01",
+              "surface": "確認中"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Bàn giao khi đổi nơi",
+      "v10_topic": "Bàn giao khi đổi nơi",
+      "terms": [
+        {
+          "ja": "最終日",
+          "reading": "さいしゅうび",
+          "han_viet": "TỐI CHUNG NHẬT",
+          "vi": "ngày làm việc cuối tại nơi đang phụ trách",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v037",
+          "evidence": [
+            {
+              "utterance_id": "a227baf7-57ff-58ed-bc74-96ac33b94849-u01",
+              "surface": "最終日"
+            }
+          ]
+        },
+        {
+          "ja": "引き継ぐ",
+          "reading": "ひきつぐ",
+          "han_viet": "DẪN KẾ",
+          "vi": "chuyển hoặc tiếp nhận công việc và thông tin để người khác làm tiếp",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v038",
+          "evidence": [
+            {
+              "utterance_id": "a227baf7-57ff-58ed-bc74-96ac33b94849-u03",
+              "surface": "引き継いで"
+            }
+          ]
+        },
+        {
+          "ja": "未完了",
+          "reading": "みかんりょう",
+          "han_viet": "VỊ HOÀN LIỄU",
+          "vi": "chưa xử lý xong",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v039",
+          "evidence": [
+            {
+              "utterance_id": "a227baf7-57ff-58ed-bc74-96ac33b94849-u04",
+              "surface": "未完了"
+            }
+          ]
+        },
+        {
+          "ja": "返事待ち",
+          "reading": "へんじまち",
+          "han_viet": "PHẢN SỰ ĐÃI",
+          "vi": "đang chờ người khác trả lời",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v040",
+          "evidence": [
+            {
+              "utterance_id": "a227baf7-57ff-58ed-bc74-96ac33b94849-u02",
+              "surface": "返事待ち"
+            }
+          ]
+        },
+        {
+          "ja": "説明会",
+          "reading": "せつめいかい",
+          "han_viet": "THUYẾT MINH HỘI",
+          "vi": "buổi giới thiệu hoặc hướng dẫn chung",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v041",
+          "evidence": [
+            {
+              "utterance_id": "9f07cc52-34bc-54c1-a937-4a58bffcf93a-u01",
+              "surface": "説明会"
+            }
+          ]
+        },
+        {
+          "ja": "練習用",
+          "reading": "れんしゅうよう",
+          "han_viet": "LUYỆN TẬP DỤNG",
+          "vi": "dùng riêng để tập thao tác",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v042",
+          "evidence": [
+            {
+              "utterance_id": "8100d38a-c360-5e4b-9000-ee56cd32e6cc-u03",
+              "surface": "練習用"
+            }
+          ]
+        },
+        {
+          "ja": "代行",
+          "reading": "だいこう",
+          "han_viet": "ĐẠI HÀNH",
+          "vi": "việc làm thay người phụ trách khi họ vắng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-105-v043"
+        },
+        {
+          "ja": "不在",
+          "reading": "ふざい",
+          "han_viet": "BẤT TẠI",
+          "vi": "vắng mặt, hiện không có ở nơi làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "id": "T-105-v044"
+        },
+        {
+          "ja": "進み具合",
+          "reading": "すすみぐあい",
+          "han_viet": "TIẾN CỤ HỢP",
+          "vi": "mức độ tiến triển của việc đang làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "id": "T-105-v045",
+          "evidence": [
+            {
+              "utterance_id": "cadc722a-bbe0-5dac-9db4-81055f95d339-u02",
+              "surface": "進み具合"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

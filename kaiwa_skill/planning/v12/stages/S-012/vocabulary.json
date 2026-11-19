@@ -1,0 +1,1134 @@
+{
+  "stage_uid": "64e65132-a40a-5191-b35d-a2f60785a973",
+  "stage_code": "S-012",
+  "admin_sources": {
+    "metro": {
+      "kind": "web",
+      "title": "通勤・通学定期券｜東京メトロ",
+      "url": "https://www.tokyometro.jp/ticket/types/pass/commuter/index.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Các loại vé định kỳ, phạm vi vé, thời hạn và hoàn tiền."
+    },
+    "metro-form": {
+      "kind": "web",
+      "title": "予約方法｜東京メトロ",
+      "url": "https://www.tokyometro.jp/ticket/pass/reservation_service/reservation/index03.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên các ô chọn ga, lộ trình và ngày bắt đầu sử dụng vé."
+    },
+    "pasmo-train": {
+      "kind": "web",
+      "title": "鉄道でのご利用方法｜PASMO",
+      "url": "https://www.pasmo.co.jp/ic-card/use/train/",
+      "accessed": "2026-11-19",
+      "use_vi": "Thao tác ở cổng, tên tiền vé, thiếu số dư và máy thanh toán bổ sung."
+    },
+    "pasmo-loss": {
+      "kind": "web",
+      "title": "PASMOの紛失再発行｜PASMO",
+      "url": "https://www.pasmo.co.jp/ic-card/procedure/lose/",
+      "accessed": "2026-11-19",
+      "use_vi": "Loại thẻ, tên phiếu, xuất trình giấy tờ, cấp lại và tiền đặt cọc."
+    },
+    "pasmo-log": {
+      "kind": "web",
+      "title": "残額履歴の確認｜PASMO",
+      "url": "https://www.pasmo.co.jp/ic-card/use/history/",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi khoản trừ, lịch sử thẻ và mục in lịch sử trên máy bán vé."
+    },
+    "irodori-13": {
+      "kind": "web",
+      "title": "いろどり 入門 第13課｜国際交流基金",
+      "url": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L13.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Căn cứ xếp các nghĩa lên, xuống và đổi phương tiện ở sơ cấp."
+    },
+    "han-giang": {
+      "kind": "web",
+      "title": "降｜Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/whv/%E9%99%8D",
+      "accessed": "2026-11-19",
+      "use_vi": "Phân biệt âm giáng chỉ đi xuống với hàng chỉ đầu hàng."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Thẻ IC, vé tháng và phạm vi ga",
+      "v10_topic": "Thẻ IC, vé tháng và phạm vi ga",
+      "terms": [
+        {
+          "id": "S-012-v001",
+          "ja": "定期券",
+          "reading": "ていきけん",
+          "han_viet": "ĐỊNH KỲ KHOÁN",
+          "vi": "vé định kỳ đi tàu (theo tháng)",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3ffecf69-43db-54d6-88fb-0d632a46e7f9-u01",
+              "surface": "定期券は"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v002",
+          "ja": "通勤定期券",
+          "reading": "つうきんていきけん",
+          "han_viet": "THÔNG CẦN ĐỊNH KỲ KHOÁN",
+          "vi": "vé định kỳ đi làm",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3ffecf69-43db-54d6-88fb-0d632a46e7f9-u02",
+              "surface": "通勤定期券"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "metro"
+          ],
+          "level_note_vi": "Tên loại vé cần chọn khi đi làm hằng ngày."
+        },
+        {
+          "id": "S-012-v003",
+          "ja": "通学定期券",
+          "reading": "つうがくていきけん",
+          "han_viet": "THÔNG HỌC ĐỊNH KỲ KHOÁN",
+          "vi": "vé định kỳ đi học",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "metro"
+          ],
+          "level_note_vi": "Tên loại vé cần hỏi khi đi học hằng ngày."
+        },
+        {
+          "id": "S-012-v004",
+          "ja": "切符",
+          "reading": "きっぷ",
+          "han_viet": "THIẾT PHÙ",
+          "vi": "vé lẻ",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a38cdd5f-2feb-577e-a2b9-e10ee1852fbf-u03",
+              "surface": "切符を買う"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v005",
+          "ja": "カード",
+          "reading": "カード",
+          "han_viet": "",
+          "vi": "thẻ",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ec177d85-3820-5f52-aeb9-9dbf6a3f2aaf-u02",
+              "surface": "カードを見せて"
+            }
+          ],
+          "note_vi": "Giữ ở sơ cấp với nghĩa vật cụ thể ngay tại quầy. Mimikara có liệt kê ở N3."
+        },
+        {
+          "id": "S-012-v006",
+          "ja": "出発駅",
+          "reading": "しゅっぱつえき",
+          "han_viet": "XUẤT PHÁT DỊCH",
+          "vi": "ga xuất phát",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "metro-form"
+          ]
+        },
+        {
+          "id": "S-012-v007",
+          "ja": "到着駅",
+          "reading": "とうちゃくえき",
+          "han_viet": "ĐÁO TRƯỚC DỊCH",
+          "vi": "ga đến",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "metro-form"
+          ]
+        },
+        {
+          "id": "S-012-v008",
+          "ja": "区間",
+          "reading": "くかん",
+          "han_viet": "KHU GIAN",
+          "vi": "chặng giữa hai ga",
+          "pos": "noun",
+          "level_hint": "N1",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3ffecf69-43db-54d6-88fb-0d632a46e7f9-u03",
+              "surface": "その区間です"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "metro"
+          ],
+          "level_note_vi": "Cần đọc đúng chặng được ghi trên vé định kỳ."
+        },
+        {
+          "id": "S-012-v009",
+          "ja": "経路",
+          "reading": "けいろ",
+          "han_viet": "KINH LỘ",
+          "vi": "lộ trình đi tàu",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1e2167b7-37e6-593b-a529-1d4eda6086db-u02",
+              "surface": "経路"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "metro-form"
+          ],
+          "level_note_vi": "Cần nói được lộ trình muốn đăng ký hoặc đổi."
+        },
+        {
+          "id": "S-012-v010",
+          "ja": "開始日",
+          "reading": "かいしび",
+          "han_viet": "KHAI THỦY NHẬT",
+          "vi": "ngày bắt đầu",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "cdc2018d-d9e2-5f73-bbcf-cd60eb4ee8f1-u02",
+              "surface": "開始日を"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v011",
+          "ja": "か月",
+          "reading": "かげつ",
+          "han_viet": "NGUYỆT",
+          "vi": "tháng (đếm thời lượng)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-012-v012",
+          "ja": "毎日",
+          "reading": "まいにち",
+          "han_viet": "MỖI NHẬT",
+          "vi": "hằng ngày",
+          "pos": "adverb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3ffecf69-43db-54d6-88fb-0d632a46e7f9-u01",
+              "surface": "毎日"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v013",
+          "ja": "来週",
+          "reading": "らいしゅう",
+          "han_viet": "LAI CHU",
+          "vi": "tuần sau",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "cdc2018d-d9e2-5f73-bbcf-cd60eb4ee8f1-u01",
+              "surface": "来週"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v014",
+          "ja": "通う",
+          "reading": "かよう",
+          "han_viet": "THÔNG",
+          "vi": "đi lại thường xuyên (đi làm, đi học)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3ffecf69-43db-54d6-88fb-0d632a46e7f9-u01",
+              "surface": "通います"
+            }
+          ],
+          "level_note_vi": "Cần nói mình đi làm, đi học thường xuyên ở đâu khi hỏi mua vé định kỳ."
+        },
+        {
+          "id": "S-012-v015",
+          "ja": "乗り換える",
+          "reading": "のりかえる",
+          "han_viet": "THỪA HOÁN",
+          "vi": "đổi tàu",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_refs": [
+            "irodori-13"
+          ]
+        },
+        {
+          "id": "S-012-v016",
+          "ja": "通る",
+          "reading": "とおる",
+          "han_viet": "THÔNG",
+          "vi": "đi qua",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "69470875-f284-5d0c-8158-de335b9e89b5-u02",
+              "surface": "通りますか"
+            }
+          ],
+          "level_note_vi": "Cần hỏi lộ trình mới có đi qua ga mình hay ghé không."
+        },
+        {
+          "id": "S-012-v017",
+          "ja": "買う",
+          "reading": "かう",
+          "han_viet": "MÃI",
+          "vi": "mua",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1e2167b7-37e6-593b-a529-1d4eda6086db-u03",
+              "surface": "買っていません"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v018",
+          "ja": "変わる",
+          "reading": "かわる",
+          "han_viet": "BIẾN",
+          "vi": "thay đổi",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "1e2167b7-37e6-593b-a529-1d4eda6086db-u01",
+              "surface": "変わりました"
+            }
+          ],
+          "level_note_vi": "Cần nói ga hoặc nơi làm đã thay đổi khi xin đổi chặng."
+        },
+        {
+          "id": "S-012-v019",
+          "ja": "期限",
+          "reading": "きげん",
+          "han_viet": "KỲ HẠN",
+          "vi": "thời hạn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6ab0c4cc-03a3-55a5-8fd5-193eee8881a7-u02",
+              "surface": "期限を"
+            }
+          ],
+          "level_note_vi": "Cần hỏi vé cũ còn dùng được tới ngày nào khi đổi chặng."
+        },
+        {
+          "id": "S-012-v020",
+          "ja": "近い",
+          "reading": "ちかい",
+          "han_viet": "CẬN",
+          "vi": "gần",
+          "pos": "i_adj",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-012-v021",
+          "ja": "便利",
+          "reading": "べんり",
+          "han_viet": "TIỆN LỢI",
+          "vi": "thuận tiện",
+          "pos": "na_adj",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-012-v022",
+          "ja": "払い戻し",
+          "reading": "はらいもどし",
+          "han_viet": "PHẤT LỆ",
+          "vi": "việc hoàn tiền (vé, thẻ)",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "metro",
+            "pasmo-log"
+          ],
+          "level_note_vi": "Tên dịch vụ cần hỏi khi chặng đi thay đổi và không còn cần vé cũ."
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Cổng vé, thẻ không qua, mất thẻ và tiền trừ",
+      "v10_topic": "Cổng vé, thẻ không qua, mất thẻ và tiền trừ",
+      "terms": [
+        {
+          "id": "S-012-v023",
+          "ja": "改札",
+          "reading": "かいさつ",
+          "han_viet": "CẢI TRÁT",
+          "vi": "cổng soát vé",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ec177d85-3820-5f52-aeb9-9dbf6a3f2aaf-u01",
+              "surface": "改札に"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v024",
+          "ja": "タッチする",
+          "reading": "タッチする",
+          "han_viet": "",
+          "vi": "chạm thẻ vào đầu đọc",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-train"
+          ]
+        },
+        {
+          "id": "S-012-v025",
+          "ja": "開く",
+          "reading": "あく",
+          "han_viet": "KHAI",
+          "vi": "mở ra",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "topic_extension",
+          "note_vi": "Mimikara N3 ghi cách đọc ひらく. Ở đây dùng あく khi cửa cổng tự mở."
+        },
+        {
+          "id": "S-012-v026",
+          "ja": "閉まる",
+          "reading": "しまる",
+          "han_viet": "BẾ",
+          "vi": "đóng lại",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-012-v027",
+          "ja": "入る",
+          "reading": "はいる",
+          "han_viet": "NHẬP",
+          "vi": "vào",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ec177d85-3820-5f52-aeb9-9dbf6a3f2aaf-u01",
+              "surface": "入れません"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v028",
+          "ja": "出る",
+          "reading": "でる",
+          "han_viet": "XUẤT",
+          "vi": "ra",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d593c2c2-2eed-5fcb-9526-971326c66011-u01",
+              "surface": "出られません"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v029",
+          "ja": "乗る",
+          "reading": "のる",
+          "han_viet": "THỪA",
+          "vi": "lên tàu, đi tàu",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d593c2c2-2eed-5fcb-9526-971326c66011-u01",
+              "surface": "乗って"
+            }
+          ],
+          "source_refs": [
+            "irodori-13"
+          ],
+          "note_vi": "Giữ nghĩa đi tàu ở sơ cấp theo bài Nhập môn 13 của Irodori."
+        },
+        {
+          "id": "S-012-v030",
+          "ja": "降りる",
+          "reading": "おりる",
+          "han_viet": "GIÁNG",
+          "vi": "xuống tàu",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d593c2c2-2eed-5fcb-9526-971326c66011-u01",
+              "surface": "降りたい"
+            }
+          ],
+          "source_refs": [
+            "irodori-13",
+            "han-giang"
+          ],
+          "note_vi": "Giữ nghĩa xuống xe ở sơ cấp theo Irodori. 降 mang âm GIÁNG khi chỉ đi xuống."
+        },
+        {
+          "id": "S-012-v031",
+          "ja": "残額",
+          "reading": "ざんがく",
+          "han_viet": "TÀN NGẠCH",
+          "vi": "số dư còn lại trên thẻ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "becde68f-4a8c-5991-9c5c-f178d2bb262e-u01",
+              "surface": "残額"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-train",
+            "pasmo-log"
+          ],
+          "level_note_vi": "Tên số tiền còn lại trên máy hoặc ở quầy."
+        },
+        {
+          "id": "S-012-v032",
+          "ja": "足りる",
+          "reading": "たりる",
+          "han_viet": "TÚC",
+          "vi": "đủ (tiền)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "becde68f-4a8c-5991-9c5c-f178d2bb262e-u01",
+              "surface": "足りない"
+            }
+          ],
+          "level_note_vi": "Cần nói được số dư có đủ để qua cổng hay không."
+        },
+        {
+          "id": "S-012-v033",
+          "ja": "チャージする",
+          "reading": "チャージする",
+          "han_viet": "",
+          "vi": "nạp tiền vào thẻ",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "becde68f-4a8c-5991-9c5c-f178d2bb262e-u02",
+              "surface": "チャージしました"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-train"
+          ]
+        },
+        {
+          "id": "S-012-v034",
+          "ja": "運賃",
+          "reading": "うんちん",
+          "han_viet": "VẬN NHẪM",
+          "vi": "tiền vé theo chặng",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-train"
+          ],
+          "level_note_vi": "Cần nghe hiểu số tiền chuyến đi khi so tiền bị trừ."
+        },
+        {
+          "id": "S-012-v035",
+          "ja": "精算機",
+          "reading": "せいさんき",
+          "han_viet": "TINH TOÁN CƠ",
+          "vi": "máy thanh toán phần tiền vé còn thiếu",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-train"
+          ],
+          "level_note_vi": "Tên máy nhân viên chỉ tới khi cổng không cho ra."
+        },
+        {
+          "id": "S-012-v036",
+          "ja": "追加",
+          "reading": "ついか",
+          "han_viet": "TRUY GIA",
+          "vi": "phần bổ sung, phần trả thêm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5ebc159b-d5aa-56d6-9764-a23375b77165-u02",
+              "surface": "追加はいくら"
+            }
+          ],
+          "level_note_vi": "Cần hỏi khoản phát sinh khi đi quá phạm vi vé."
+        },
+        {
+          "id": "S-012-v037",
+          "ja": "払う",
+          "reading": "はらう",
+          "han_viet": "PHẤT",
+          "vi": "trả (tiền)",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5ebc159b-d5aa-56d6-9764-a23375b77165-u04",
+              "surface": "払います"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v038",
+          "ja": "引く",
+          "reading": "ひく",
+          "han_viet": "DẪN",
+          "vi": "trừ (tiền)",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "57478d80-f4a7-5b8e-989e-8648affc0b1f-u01",
+              "surface": "引かれた"
+            }
+          ],
+          "level_note_vi": "Cần báo có khoản tiền bị trừ trên thẻ."
+        },
+        {
+          "id": "S-012-v039",
+          "ja": "円",
+          "reading": "えん",
+          "han_viet": "VIÊN",
+          "vi": "yên (đơn vị tiền Nhật)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5ebc159b-d5aa-56d6-9764-a23375b77165-u03",
+              "surface": "百九円"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v040",
+          "ja": "いくら",
+          "reading": "いくら",
+          "han_viet": "",
+          "vi": "bao nhiêu tiền",
+          "pos": "other",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5ebc159b-d5aa-56d6-9764-a23375b77165-u02",
+              "surface": "いくら"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v041",
+          "ja": "なくす",
+          "reading": "なくす",
+          "han_viet": "",
+          "vi": "làm mất",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "545cf95b-894d-5ea0-a7f2-9c3c1608e36e-u01",
+              "surface": "なくしました"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v042",
+          "ja": "忘れる",
+          "reading": "わすれる",
+          "han_viet": "VONG",
+          "vi": "quên, để quên",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "39e61011-56c3-56b6-a91c-55217d1dd4c0-u01",
+              "surface": "忘れました"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v043",
+          "ja": "券売機",
+          "reading": "けんばいき",
+          "han_viet": "KHOÁN MẠI CƠ",
+          "vi": "máy bán vé",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "39e61011-56c3-56b6-a91c-55217d1dd4c0-u03",
+              "surface": "券売機"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-log"
+          ],
+          "level_note_vi": "Cần tìm máy để mua vé lẻ hoặc xem lịch sử."
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Quầy hỗ trợ, lịch sử giao dịch và quay lại",
+      "v10_topic": "Quầy hỗ trợ, lịch sử giao dịch và quay lại",
+      "terms": [
+        {
+          "id": "S-012-v044",
+          "ja": "窓口",
+          "reading": "まどぐち",
+          "han_viet": "SONG KHẨU",
+          "vi": "quầy giao dịch",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "545cf95b-894d-5ea0-a7f2-9c3c1608e36e-u04",
+              "surface": "窓口で"
+            }
+          ],
+          "level_note_vi": "Cần tìm đúng quầy để nhờ kiểm hoặc báo mất thẻ."
+        },
+        {
+          "id": "S-012-v045",
+          "ja": "駅員",
+          "reading": "えきいん",
+          "han_viet": "DỊCH VIÊN",
+          "vi": "nhân viên ga",
+          "pos": "noun",
+          "level_hint": "N4",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-012-v046",
+          "ja": "利用履歴",
+          "reading": "りようりれき",
+          "han_viet": "LỢI DỤNG LÝ LỊCH",
+          "vi": "lịch sử sử dụng thẻ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "57478d80-f4a7-5b8e-989e-8648affc0b1f-u02",
+              "surface": "利用履歴"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-log"
+          ],
+          "level_note_vi": "Người dùng cần hỏi đúng lịch sử để kiểm các lượt đi."
+        },
+        {
+          "id": "S-012-v047",
+          "ja": "履歴印字",
+          "reading": "りれきいんじ",
+          "han_viet": "LÝ LỊCH ẤN TỰ",
+          "vi": "in lịch sử giao dịch (mục trên máy)",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-log"
+          ],
+          "level_note_vi": "Cần nhận ra nút in lịch sử tại máy bán vé."
+        },
+        {
+          "id": "S-012-v048",
+          "ja": "金額",
+          "reading": "きんがく",
+          "han_viet": "KIM NGẠCH",
+          "vi": "số tiền",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "57478d80-f4a7-5b8e-989e-8648affc0b1f-u01",
+              "surface": "金額が"
+            }
+          ],
+          "level_note_vi": "Cần nêu số tiền khác nhau khi nhờ kiểm hai lượt đi."
+        },
+        {
+          "id": "S-012-v049",
+          "ja": "違う",
+          "reading": "ちがう",
+          "han_viet": "VI",
+          "vi": "khác nhau, không đúng",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "57478d80-f4a7-5b8e-989e-8648affc0b1f-u01",
+              "surface": "金額が違います"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v050",
+          "ja": "同じ",
+          "reading": "おなじ",
+          "han_viet": "ĐỒNG",
+          "vi": "cùng, giống nhau",
+          "pos": "other",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "57478d80-f4a7-5b8e-989e-8648affc0b1f-u01",
+              "surface": "同じ区間"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v051",
+          "ja": "確認する",
+          "reading": "かくにんする",
+          "han_viet": "XÁC NHẬN",
+          "vi": "kiểm tra, xác nhận",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "cdc2018d-d9e2-5f73-bbcf-cd60eb4ee8f1-u02",
+              "surface": "確認します"
+            }
+          ],
+          "level_note_vi": "Cần dùng để nhờ nhân viên xem lại quãng đi, số tiền hoặc thông tin thẻ."
+        },
+        {
+          "id": "S-012-v052",
+          "ja": "調べる",
+          "reading": "しらべる",
+          "han_viet": "ĐIỀU",
+          "vi": "tra, kiểm tra",
+          "pos": "verb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "545cf95b-894d-5ea0-a7f2-9c3c1608e36e-u03",
+              "surface": "調べる方法"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v053",
+          "ja": "もう一度",
+          "reading": "もういちど",
+          "han_viet": "NHẤT ĐỘ",
+          "vi": "thêm một lần nữa",
+          "pos": "adverb",
+          "level_hint": "N4",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "becde68f-4a8c-5991-9c5c-f178d2bb262e-u02",
+              "surface": "もう一度"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v054",
+          "ja": "回",
+          "reading": "かい",
+          "han_viet": "HỒI",
+          "vi": "lần (đếm số lượt)",
+          "pos": "counter",
+          "level_hint": "N5",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "S-012-v055",
+          "ja": "昨日",
+          "reading": "きのう",
+          "han_viet": "TẠC NHẬT",
+          "vi": "hôm qua",
+          "pos": "noun",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a5378705-87b3-5e81-aea2-7456c72bddaa-u01",
+              "surface": "昨日のPASMO"
+            }
+          ]
+        },
+        {
+          "id": "S-012-v056",
+          "ja": "翌日",
+          "reading": "よくじつ",
+          "han_viet": "DỰC NHẬT",
+          "vi": "ngày hôm sau",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-loss"
+          ],
+          "level_note_vi": "Cần hiểu mốc quay lại khi nghe hướng dẫn cấp lại thẻ."
+        },
+        {
+          "id": "S-012-v057",
+          "ja": "記名PASMO",
+          "reading": "きめいパスモ",
+          "han_viet": "KÝ DANH",
+          "vi": "thẻ PASMO có đăng ký tên",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-loss"
+          ],
+          "level_note_vi": "Tên loại thẻ cần phân biệt khi báo mất."
+        },
+        {
+          "id": "S-012-v058",
+          "ja": "無記名PASMO",
+          "reading": "むきめいパスモ",
+          "han_viet": "VÔ KÝ DANH",
+          "vi": "thẻ PASMO không đăng ký tên",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a38cdd5f-2feb-577e-a2b9-e10ee1852fbf-u01",
+              "surface": "無記名PASMO"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-loss"
+          ],
+          "level_note_vi": "Tên loại thẻ cần phân biệt khi báo mất."
+        },
+        {
+          "id": "S-012-v059",
+          "ja": "身分証",
+          "reading": "みぶんしょう",
+          "han_viet": "THÂN PHẬN CHỨNG",
+          "vi": "giấy tờ tùy thân",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ce504d6d-3af3-566d-9110-abc7b7174f5c-u02",
+              "surface": "身分証"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-loss"
+          ],
+          "level_note_vi": "Đây là cách gọi ngắn trong hội thoại cho giấy tờ dùng xác minh người đến làm thủ tục.",
+          "note_vi": "PASMO dùng 公的証明書等 trong hướng dẫn."
+        },
+        {
+          "id": "S-012-v060",
+          "ja": "再発行する",
+          "reading": "さいはっこうする",
+          "han_viet": "TÁI PHÁT HÀNH",
+          "vi": "cấp lại (thẻ)",
+          "pos": "verb",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a38cdd5f-2feb-577e-a2b9-e10ee1852fbf-u01",
+              "surface": "再発行できません"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-loss"
+          ],
+          "level_note_vi": "Cần nói đúng yêu cầu cấp lại khi mất thẻ có tên."
+        },
+        {
+          "id": "S-012-v061",
+          "ja": "再発行整理票",
+          "reading": "さいはっこうせいりひょう",
+          "han_viet": "TÁI PHÁT HÀNH CHỈNH LÝ PHIẾU",
+          "vi": "phiếu hẹn cấp lại thẻ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dedda12e-effb-5512-b3de-0ffb5330b5ea-u01",
+              "surface": "再発行整理票"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-loss"
+          ],
+          "level_note_vi": "Tên phiếu nhân viên giao để mang lại khi xin cấp thẻ."
+        },
+        {
+          "id": "S-012-v062",
+          "ja": "手数料",
+          "reading": "てすうりょう",
+          "han_viet": "THỦ SỐ LIỆU",
+          "vi": "phí xử lý thủ tục",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dedda12e-effb-5512-b3de-0ffb5330b5ea-u04",
+              "surface": "手数料"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-loss",
+            "metro"
+          ],
+          "level_note_vi": "Cần hiểu khoản phí riêng với tiền đặt cọc hoặc tiền vé."
+        },
+        {
+          "id": "S-012-v063",
+          "ja": "デポジット",
+          "reading": "デポジット",
+          "han_viet": "",
+          "vi": "tiền đặt cọc thẻ",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dedda12e-effb-5512-b3de-0ffb5330b5ea-u04",
+              "surface": "デポジット"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "pasmo-loss"
+          ],
+          "level_note_vi": "Cần phân biệt tiền cọc với phí làm lại thẻ."
+        },
+        {
+          "id": "S-012-v064",
+          "ja": "持って来る",
+          "reading": "もってくる",
+          "han_viet": "TRÌ LAI",
+          "vi": "mang đến",
+          "pos": "verb",
+          "level_hint": "N5",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dedda12e-effb-5512-b3de-0ffb5330b5ea-u01",
+              "surface": "持って来ました"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

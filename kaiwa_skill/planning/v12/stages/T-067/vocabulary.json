@@ -1,0 +1,877 @@
+{
+  "stage_uid": "a4752b77-f578-5ff2-b156-c8d33556147f",
+  "stage_code": "T-067",
+  "admin_sources": {
+    "mhlw-terms": {
+      "kind": "web",
+      "title": "労働条件通知書｜鳥取労働局",
+      "url": "https://jsite.mhlw.go.jp/tottori-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/meiji.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên thông báo điều kiện, thời gian, mức lương và việc làm."
+    },
+    "mhlw-range": {
+      "kind": "web",
+      "title": "新様式 労働条件通知｜滋賀労働局",
+      "url": "https://jsite.mhlw.go.jp/shiga-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/youshiki_newroudoutuuti.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Thuật ngữ nơi làm và nhiệm vụ có thể đổi, điều kiện hợp đồng."
+    },
+    "mhlw-overtime": {
+      "kind": "web",
+      "title": "固定残業代に関するQ&A｜厚生労働省",
+      "url": "https://www.startup-roudou.mhlw.go.jp/qa/zigyonushi/chingin/q11.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên lương cơ bản, khoản làm thêm giờ cố định và phần vượt thời lượng ghi."
+    },
+    "mhlw-remote": {
+      "kind": "web",
+      "title": "テレワークモデル就業規則｜厚生労働省",
+      "url": "https://telework.mhlw.go.jp/info/pdf/teleworkmodel.pdf?261022=",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi làm tại nhà và quy trình xác nhận, đề nghị và duyệt làm từ xa."
+    },
+    "mhlw-contract": {
+      "kind": "web",
+      "title": "労働契約（契約の締結、労働条件の変更、解雇等）｜厚生労働省",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/keiyaku/",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên hợp đồng và điều kiện cần làm rõ khi sắp nhận công việc."
+    },
+    "toho-offer": {
+      "kind": "web",
+      "title": "就職活動Q&A｜東邦大学",
+      "url": "https://www.ncareer.toho-u.ac.jp/qa/",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên thông báo nhận, biểu mẫu đồng ý và việc từ chối offer."
+    },
+    "hw-accept": {
+      "kind": "web",
+      "title": "内定を承諾して労働契約を締結する際の案内｜埼玉ハローワーク",
+      "url": "https://jsite.mhlw.go.jp/saitama-hellowork/content/contents/002579279.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi đồng ý nhận việc và giấy xác nhận điều kiện trước khi nhận."
+    },
+    "hv-chin": {
+      "kind": "web",
+      "title": "賃｜Từ điển Hán Nôm Thi Viện",
+      "url": "https://hvdic.thivien.net/whv/賃",
+      "accessed": "2026-11-19",
+      "use_vi": "Âm NHẪM ở nghĩa tiền thuê hoặc tiền công."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Vai trò, nơi làm và ngày bắt đầu",
+      "v10_topic": "Vai trò, nơi làm và ngày bắt đầu",
+      "terms": [
+        {
+          "id": "T-067-v001",
+          "ja": "職種",
+          "reading": "しょくしゅ",
+          "han_viet": "CHỨC CHỦNG",
+          "vi": "loại công việc hoặc vị trí",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccaf5d62-beb5-5719-addf-a12fce9c79e2-u02",
+              "surface": "職種"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-terms"
+          ]
+        },
+        {
+          "id": "T-067-v002",
+          "ja": "担当業務",
+          "reading": "たんとうぎょうむ",
+          "han_viet": "ĐẢM ĐƯƠNG NGHIỆP VỤ",
+          "vi": "các nhiệm vụ được giao",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-067-v003",
+          "ja": "配属先",
+          "reading": "はいぞくさき",
+          "han_viet": "PHỐI THUỘC TIÊN",
+          "vi": "bộ phận được phân về",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "30622426-ddb3-5846-9c35-894554b8d3af-u05",
+              "surface": "配属先"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v004",
+          "ja": "勤務地",
+          "reading": "きんむち",
+          "han_viet": "CẦN VỤ ĐỊA",
+          "vi": "địa điểm làm việc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccaf5d62-beb5-5719-addf-a12fce9c79e2-u02",
+              "surface": "勤務地"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-terms"
+          ]
+        },
+        {
+          "id": "T-067-v005",
+          "ja": "入社日",
+          "reading": "にゅうしゃび",
+          "han_viet": "NHẬP XÃ NHẬT",
+          "vi": "ngày bắt đầu làm tại công ty",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccaf5d62-beb5-5719-addf-a12fce9c79e2-u01",
+              "surface": "入社日"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v006",
+          "ja": "新人研修",
+          "reading": "しんじんけんしゅう",
+          "han_viet": "TÂN NHÂN NGHIÊN TU",
+          "vi": "đợt đào tạo dành cho nhân viên mới",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d019f72e-55b9-551c-85fe-194696ac0ced-u02",
+              "surface": "新人研修"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v007",
+          "ja": "試用期間",
+          "reading": "しようきかん",
+          "han_viet": "THÍ DỤNG KỲ GIAN",
+          "vi": "thời gian thử việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-terms"
+          ]
+        },
+        {
+          "id": "T-067-v008",
+          "ja": "雇用形態",
+          "reading": "こようけいたい",
+          "han_viet": "CỐ DỤNG HÌNH THÁI",
+          "vi": "loại quan hệ tuyển dụng được đề nghị",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-contract"
+          ]
+        },
+        {
+          "id": "T-067-v009",
+          "ja": "出張",
+          "reading": "しゅっちょう",
+          "han_viet": "XUẤT TRƯƠNG",
+          "vi": "chuyến công tác ngoài nơi làm thường lệ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c3f3bbd7-5c95-5e4a-b409-85eb6906912e-u03",
+              "surface": "出張"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v010",
+          "ja": "日帰り",
+          "reading": "ひがえり",
+          "han_viet": "NHẬT QUY",
+          "vi": "đi và về trong ngày",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "db913bb8-bef2-5d5d-a3a1-18346395e556-u01",
+              "surface": "日帰り"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Điều kiện khác lúc phỏng vấn",
+      "v10_topic": "Điều kiện khác lúc phỏng vấn",
+      "terms": [
+        {
+          "id": "T-067-v011",
+          "ja": "労働条件通知書",
+          "reading": "ろうどうじょうけんつうちしょ",
+          "han_viet": "LAO ĐỘNG ĐIỀU KIỆN THÔNG TRI THƯ",
+          "vi": "văn bản thông báo các điều kiện làm việc",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "level_note_vi": "Tên giấy cần xin khi xác minh lại điều khoản trước khi đồng ý nhận việc.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-terms",
+            "hw-accept"
+          ]
+        },
+        {
+          "id": "T-067-v012",
+          "ja": "雇用契約書",
+          "reading": "こようけいやくしょ",
+          "han_viet": "CỐ DỤNG KHẾ ƯỚC THƯ",
+          "vi": "văn bản hợp đồng lao động",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-contract"
+          ]
+        },
+        {
+          "id": "T-067-v013",
+          "ja": "勤務時間",
+          "reading": "きんむじかん",
+          "han_viet": "CẦN VỤ THỜI GIAN",
+          "vi": "khung thời gian làm việc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccaf5d62-beb5-5719-addf-a12fce9c79e2-u03",
+              "surface": "勤務時間"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-terms"
+          ]
+        },
+        {
+          "id": "T-067-v014",
+          "ja": "基本給",
+          "reading": "きほんきゅう",
+          "han_viet": "CƠ BẢN CẤP",
+          "vi": "lương cơ bản chưa tính các khoản phụ thêm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3ccfae31-0483-5d47-8597-824ab5f18eb0-u02",
+              "surface": "基本給"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-overtime"
+          ]
+        },
+        {
+          "id": "T-067-v015",
+          "ja": "固定残業代",
+          "reading": "こていざんぎょうだい",
+          "han_viet": "CỐ ĐỊNH TÀN NGHIỆP ĐẠI",
+          "vi": "khoản tiền làm thêm cố định theo điều kiện lương",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3ccfae31-0483-5d47-8597-824ab5f18eb0-u01",
+              "surface": "固定残業代"
+            }
+          ],
+          "level_note_vi": "Tên dòng lương cần hiểu để hỏi cách tính và phần phát sinh ở offer.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-overtime"
+          ]
+        },
+        {
+          "id": "T-067-v016",
+          "ja": "割増賃金",
+          "reading": "わりましちんぎん",
+          "han_viet": "CÁT TĂNG NHẪM KIM",
+          "vi": "tiền công được cộng thêm theo tỷ lệ áp dụng",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3ccfae31-0483-5d47-8597-824ab5f18eb0-u04",
+              "surface": "割増賃金"
+            }
+          ],
+          "level_note_vi": "Tên khoản tiền cần hỏi khi thảo luận giờ làm ngoài phần ghi trong offer.",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-overtime",
+            "hv-chin"
+          ],
+          "note_vi": "賃 đọc NHẪM theo nghĩa tiền công."
+        },
+        {
+          "id": "T-067-v017",
+          "ja": "超過分",
+          "reading": "ちょうかぶん",
+          "han_viet": "SIÊU QUÁ PHÂN",
+          "vi": "phần vượt thời lượng hay mức đã nêu",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-overtime"
+          ]
+        },
+        {
+          "id": "T-067-v018",
+          "ja": "在宅勤務",
+          "reading": "ざいたくきんむ",
+          "han_viet": "TẠI TRẠCH CẦN VỤ",
+          "vi": "làm việc tại nhà",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "805d869d-4e69-51a9-84c5-949f44856b9a-u04",
+              "surface": "在宅勤務"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-remote"
+          ]
+        },
+        {
+          "id": "T-067-v019",
+          "ja": "賞与",
+          "reading": "しょうよ",
+          "han_viet": "THƯỞNG DỮ",
+          "vi": "tiền thưởng theo kỳ của công ty",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-terms"
+          ]
+        },
+        {
+          "id": "T-067-v020",
+          "ja": "通勤手当",
+          "reading": "つうきんてあて",
+          "han_viet": "THÔNG CẦN THỦ ĐƯƠNG",
+          "vi": "phụ cấp đi lại giữa nhà và nơi làm",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-terms"
+          ]
+        },
+        {
+          "id": "T-067-v021",
+          "ja": "福利厚生",
+          "reading": "ふくりこうせい",
+          "han_viet": "PHÚC LỢI HẬU SINH",
+          "vi": "các phúc lợi công ty dành cho người lao động",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-contract"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Điểm chưa rõ và người duyệt",
+      "v10_topic": "Điểm chưa rõ và người duyệt",
+      "terms": [
+        {
+          "id": "T-067-v022",
+          "ja": "人事",
+          "reading": "じんじ",
+          "han_viet": "NHÂN SỰ",
+          "vi": "bộ phận nhân sự",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "ccaf5d62-beb5-5719-addf-a12fce9c79e2-u05",
+              "surface": "人事"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v023",
+          "ja": "責任者",
+          "reading": "せきにんしゃ",
+          "han_viet": "TRÁCH NHIỆM GIẢ",
+          "vi": "người chịu trách nhiệm quyết định hoặc xác nhận",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "30622426-ddb3-5846-9c35-894554b8d3af-u05",
+              "surface": "責任者"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v024",
+          "ja": "承認",
+          "reading": "しょうにん",
+          "han_viet": "THỪA NHẬN",
+          "vi": "sự chấp thuận của người phụ trách",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5d90d7ea-d303-5794-a278-a2202e92e240-u04",
+              "surface": "承認"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-remote"
+          ]
+        },
+        {
+          "id": "T-067-v025",
+          "ja": "上限",
+          "reading": "じょうげん",
+          "han_viet": "THƯỢNG HẠN",
+          "vi": "mức hay số lần tối đa",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "5d90d7ea-d303-5794-a278-a2202e92e240-u03",
+              "surface": "上限"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v026",
+          "ja": "就業場所",
+          "reading": "しゅうぎょうばしょ",
+          "han_viet": "TỰU NGHIỆP TRƯỜNG SỞ",
+          "vi": "nơi thực hiện công việc",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c3f3bbd7-5c95-5e4a-b409-85eb6906912e-u01",
+              "surface": "就業場所"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mhlw-range"
+          ]
+        },
+        {
+          "id": "T-067-v027",
+          "ja": "変更の範囲",
+          "reading": "へんこうのはんい",
+          "han_viet": "BIẾN CANH PHẠM VI",
+          "vi": "phạm vi nơi làm hoặc nhiệm vụ có thể thay đổi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "c3f3bbd7-5c95-5e4a-b409-85eb6906912e-u01",
+              "surface": "変更の範囲"
+            }
+          ],
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-range"
+          ]
+        },
+        {
+          "id": "T-067-v028",
+          "ja": "就業規則",
+          "reading": "しゅうぎょうきそく",
+          "han_viet": "TỰU NGHIỆP QUY TẮC",
+          "vi": "nội quy lao động của công ty",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "legal",
+          "source_refs": [
+            "mhlw-remote",
+            "mhlw-contract"
+          ]
+        },
+        {
+          "id": "T-067-v029",
+          "ja": "記載内容",
+          "reading": "きさいないよう",
+          "han_viet": "KÝ TẢI NỘI DUNG",
+          "vi": "thông tin ghi trên văn bản",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-067-v030",
+          "ja": "不明点",
+          "reading": "ふめいてん",
+          "han_viet": "BẤT MINH ĐIỂM",
+          "vi": "điểm chưa hiểu rõ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-067-v031",
+          "ja": "最終版",
+          "reading": "さいしゅうばん",
+          "han_viet": "TỐI CHUNG BẢN",
+          "vi": "bản chốt được dùng để quyết định",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "812291fe-05e7-50c6-baab-d23d5da1b32b-u01",
+              "surface": "最終版"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Hạn trả lời và mốc thương lượng",
+      "v10_topic": "Hạn trả lời và mốc thương lượng",
+      "terms": [
+        {
+          "id": "T-067-v032",
+          "ja": "回答期限",
+          "reading": "かいとうきげん",
+          "han_viet": "HỒI ĐÁP KỲ HẠN",
+          "vi": "hạn cuối phải trả lời",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "812291fe-05e7-50c6-baab-d23d5da1b32b-u05",
+              "surface": "回答期限"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v033",
+          "ja": "保留する",
+          "reading": "ほりゅうする",
+          "han_viet": "BẢO LƯU",
+          "vi": "tạm chưa đưa quyết định hoặc câu trả lời",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "81ecba8d-7f85-50e0-81e9-8b7863e78249-u05",
+              "surface": "保留させて"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v034",
+          "ja": "延長",
+          "reading": "えんちょう",
+          "han_viet": "DIÊN TRƯỜNG",
+          "vi": "việc gia hạn thời gian",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "49f716b5-6d49-5cbf-a4a3-014a9c76fae4-u04",
+              "surface": "延長"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v035",
+          "ja": "交渉する",
+          "reading": "こうしょうする",
+          "han_viet": "GIAO THIỆP",
+          "vi": "trao đổi để đi đến thỏa thuận về điều kiện",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-067-v036",
+          "ja": "調整する",
+          "reading": "ちょうせいする",
+          "han_viet": "ĐIỀU CHỈNH",
+          "vi": "sắp xếp một mốc hay điều kiện để hai bên có thể thực hiện",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "e7c823f5-b352-5ba0-a8ae-ea37d2c203c6-u04",
+              "surface": "調整できそう"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v037",
+          "ja": "引き継ぎ",
+          "reading": "ひきつぎ",
+          "han_viet": "DẪN KẾ",
+          "vi": "việc bàn giao công việc tại chỗ cũ",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d019f72e-55b9-551c-85fe-194696ac0ced-u01",
+              "surface": "引き継ぎ"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v038",
+          "ja": "検討中",
+          "reading": "けんとうちゅう",
+          "han_viet": "KIỂM THẢO TRUNG",
+          "vi": "đang cân nhắc, chưa đưa câu trả lời",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "805d869d-4e69-51a9-84c5-949f44856b9a-u03",
+              "surface": "検討中"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v039",
+          "ja": "前提",
+          "reading": "ぜんてい",
+          "han_viet": "TIỀN ĐỀ",
+          "vi": "điều kiện phải có để dự kiến được thực hiện",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "9119e091-ba03-5d4a-b436-9b681592f7ce-u04",
+              "surface": "前提"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v040",
+          "ja": "仮押さえ",
+          "reading": "かりおさえ",
+          "han_viet": "GIẢ ÁP",
+          "vi": "việc giữ một ngày hoặc suất tạm khi chưa quyết định",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Đồng ý cuối hay mới quan tâm",
+      "v10_topic": "Đồng ý cuối hay mới quan tâm",
+      "terms": [
+        {
+          "id": "T-067-v041",
+          "ja": "内定",
+          "reading": "ないてい",
+          "han_viet": "NỘI ĐỊNH",
+          "vi": "thông báo được chọn tuyển dụng trước ngày vào làm",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "366b43f9-a44d-50b0-b0ef-c944a8b5800d-u01",
+              "surface": "内定"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "toho-offer"
+          ]
+        },
+        {
+          "id": "T-067-v042",
+          "ja": "内定通知書",
+          "reading": "ないていつうちしょ",
+          "han_viet": "NỘI ĐỊNH THÔNG TRI THƯ",
+          "vi": "văn bản thông báo được chọn tuyển",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "toho-offer"
+          ]
+        },
+        {
+          "id": "T-067-v043",
+          "ja": "内定承諾書",
+          "reading": "ないていしょうだくしょ",
+          "han_viet": "NỘI ĐỊNH THỪA NẶC THƯ",
+          "vi": "văn bản xác nhận đồng ý nhận việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "toho-offer"
+          ]
+        },
+        {
+          "id": "T-067-v044",
+          "ja": "承諾する",
+          "reading": "しょうだくする",
+          "han_viet": "THỪA NẶC",
+          "vi": "chính thức đồng ý nhận điều bên kia đề nghị",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "hw-accept"
+          ]
+        },
+        {
+          "id": "T-067-v045",
+          "ja": "辞退する",
+          "reading": "じたいする",
+          "han_viet": "TỪ THOÁI",
+          "vi": "chính thức từ chối lời mời nhận việc",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "f1516cb4-18a5-5483-ba40-19348b4c855a-u01",
+              "surface": "辞退します"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "toho-offer"
+          ]
+        },
+        {
+          "id": "T-067-v046",
+          "ja": "関心",
+          "reading": "かんしん",
+          "han_viet": "QUAN TÂM",
+          "vi": "mối quan tâm tới một công việc đang được đề nghị",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-067-v047",
+          "ja": "条件付き",
+          "reading": "じょうけんつき",
+          "han_viet": "ĐIỀU KIỆN PHÓ",
+          "vi": "phụ thuộc điều kiện nhất định",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-067-v048",
+          "ja": "初出勤",
+          "reading": "はつしゅっきん",
+          "han_viet": "SƠ XUẤT CẦN",
+          "vi": "lần đầu đến làm việc ở công ty",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-067-v049",
+          "ja": "集合時間",
+          "reading": "しゅうごうじかん",
+          "han_viet": "TẬP HỢP THỜI GIAN",
+          "vi": "giờ có mặt vào ngày đầu",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "366b43f9-a44d-50b0-b0ef-c944a8b5800d-u04",
+              "surface": "集合時間"
+            }
+          ]
+        },
+        {
+          "id": "T-067-v050",
+          "ja": "連絡先",
+          "reading": "れんらくさき",
+          "han_viet": "LIÊN LẠC TIÊN",
+          "vi": "người hoặc số liên hệ khi giờ đến thay đổi",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}

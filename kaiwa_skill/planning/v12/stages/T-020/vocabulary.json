@@ -1,0 +1,893 @@
+{
+  "stage_uid": "5233493d-b3ac-5039-ae0f-ba13ffbd5019",
+  "stage_code": "T-020",
+  "admin_sources": {
+    "ur-view": {
+      "kind": "web",
+      "title": "賃貸物件の内見時チェックリスト — UR都市機構",
+      "url": "https://www.ur-net.go.jp/chintai/college/202107/000698.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên và việc cần hỏi khi xem nhà, gồm 内見, 共用部 và 間取り図."
+    },
+    "mlit-equip": {
+      "kind": "web",
+      "title": "マンション管理業者の一般的な業務等 — 国土交通省",
+      "url": "https://www.mlit.go.jp/common/000188645.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên mục trong công việc điểm kiểm thiết bị, dọn ống thoát nước, bảng tin."
+    },
+    "equip-report": {
+      "kind": "web",
+      "title": "既存住宅の現況検査に関する講習 — 住宅瑕疵担保責任保険協会",
+      "url": "https://www.kashihoken.or.jp/files/kizon_sessionall.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên các loại thiết bị tòa nhà thường được kiểm và tiện ích chung."
+    },
+    "mlit-manage": {
+      "kind": "web",
+      "title": "マンション標準管理委託契約書 — 国土交通省",
+      "url": "https://www.mlit.go.jp/totikensangyo/const/sosei_const_tk3_000013.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi công ty quản lý, phạm vi khu sử dụng riêng và việc vào căn theo hợp đồng mẫu."
+    },
+    "hv-dam": {
+      "kind": "web",
+      "title": "擔 — Từ điển Hán Nôm",
+      "url": "https://hvdic.thivien.net/hv/t/%C4%91%E1%BA%A3m",
+      "accessed": "2026-11-19",
+      "use_vi": "Đối chiếu từ 負擔 và âm ĐẢM khi chỉ gánh nặng."
+    },
+    "tokyu-inspect": {
+      "kind": "web",
+      "title": "室内の消防設備点検や排水管洗浄時にどうしても在宅できない — 東急コミュニティー",
+      "url": "https://faq.tokyu-com.co.jp/%E5%AE%A4%E5%86%85%E3%81%AE%E6%B6%88%E9%98%B2%E8%A8%AD%E5%82%99%E7%82%B9%E6%A4%9C%E3%82%84%E6%8E%92%E6%B0%B4%E7%AE%A1%E6%B4%97%E6%B5%84%E6%99%82%E3%81%AB%E3%81%A9%E3%81%86%E3%81%97%E3%81%A6%E3%82%82%E5%9C%A8%E5%AE%85%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84-654ded1ed05c04001c42d084",
+      "accessed": "2026-11-19",
+      "use_vi": "Tên kiểm thiết bị phòng cháy và rửa ống, trường hợp cư dân không ở nhà."
+    },
+    "mitsui-inspect": {
+      "kind": "web",
+      "title": "消防設備点検・排水管清掃の日程はどこから変更できますか？ — 三井不動産レジデンシャルサービス",
+      "url": "https://www.mitsui-kanri.co.jp/faq/mansion/209.html",
+      "accessed": "2026-11-19",
+      "use_vi": "Cách gọi lịch kiểm và yêu cầu đổi theo đơn vị quản lý."
+    },
+    "mlit-model-pdf": {
+      "kind": "web",
+      "title": "賃貸住宅標準契約書（家賃債務保証業者型） — 国土交通省",
+      "url": "https://www.mlit.go.jp/common/001479824.pdf",
+      "accessed": "2026-11-19",
+      "use_vi": "Mục người ở chung, liên hệ sửa chữa và điều khoản chấp thuận trong mẫu hợp đồng."
+    }
+  },
+  "dropped_topics": {},
+  "groups": [
+    {
+      "id": "g01",
+      "title_vi": "Thông báo vận hành, giờ và phạm vi ảnh hưởng",
+      "v10_topic": "Thông báo vận hành, giờ và phạm vi ảnh hưởng",
+      "terms": [
+        {
+          "id": "T-020-v001",
+          "ja": "掲示",
+          "reading": "けいじ",
+          "han_viet": "YẾT THỊ",
+          "vi": "thông báo được treo hoặc dán tại tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "774487f7-1222-5884-979d-3817e590f688-u01",
+              "surface": "掲示"
+            },
+            {
+              "utterance_id": "66e1278f-a824-517b-bd1c-0da2f6317035-u02",
+              "surface": "掲示"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v002",
+          "ja": "掲示板",
+          "reading": "けいじばん",
+          "han_viet": "YẾT THỊ BẢN",
+          "vi": "bảng treo thông báo cho cư dân",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_refs": [
+            "ur-view"
+          ]
+        },
+        {
+          "id": "T-020-v003",
+          "ja": "設備点検",
+          "reading": "せつびてんけん",
+          "han_viet": "THIẾT BỊ ĐIỂM KIỂM",
+          "vi": "việc kiểm tra hệ thống hoặc thiết bị tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "774487f7-1222-5884-979d-3817e590f688-u01",
+              "surface": "設備点検"
+            },
+            {
+              "utterance_id": "2d850964-c496-5d26-adc9-ae1db2e1daae-u01",
+              "surface": "設備点検"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mlit-equip",
+            "equip-report"
+          ]
+        },
+        {
+          "id": "T-020-v004",
+          "ja": "対象",
+          "reading": "たいしょう",
+          "han_viet": "ĐỐI TƯỢNG",
+          "vi": "đối tượng được nêu trong thông báo",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "774487f7-1222-5884-979d-3817e590f688-u01",
+              "surface": "対象"
+            },
+            {
+              "utterance_id": "774487f7-1222-5884-979d-3817e590f688-u02",
+              "surface": "対象"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v005",
+          "ja": "住戸",
+          "reading": "じゅうこ",
+          "han_viet": "TRÚ HỘ",
+          "vi": "căn ở riêng trong một tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "774487f7-1222-5884-979d-3817e590f688-u02",
+              "surface": "住戸"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v006",
+          "ja": "共用部",
+          "reading": "きょうようぶ",
+          "han_viet": "CỘNG DỤNG BỘ",
+          "vi": "phần nhiều cư dân cùng dùng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "774487f7-1222-5884-979d-3817e590f688-u01",
+              "surface": "共用部"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "ur-view"
+          ]
+        },
+        {
+          "id": "T-020-v007",
+          "ja": "別紙",
+          "reading": "べっし",
+          "han_viet": "BIỆT CHỈ",
+          "vi": "tờ riêng kèm nội dung khác",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "774487f7-1222-5884-979d-3817e590f688-u04",
+              "surface": "別紙"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v008",
+          "ja": "時間帯",
+          "reading": "じかんたい",
+          "han_viet": "THỜI GIAN ĐỚI",
+          "vi": "khung giờ đã ghi hoặc dự tính",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v009",
+          "ja": "作業時間",
+          "reading": "さぎょうじかん",
+          "han_viet": "TÁC NGHIỆP THỜI GIAN",
+          "vi": "thời gian thực hiện công việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2795f270-299c-5830-abf8-31ac42f9c59e-u03",
+              "surface": "作業時間"
+            },
+            {
+              "utterance_id": "09452577-3d92-59da-a26e-69ef6b94ecc9-u01",
+              "surface": "作業時間"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v010",
+          "ja": "影響範囲",
+          "reading": "えいきょうはんい",
+          "han_viet": "ẢNH HƯỞNG PHẠM VI",
+          "vi": "phạm vi chịu ảnh hưởng của công việc",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g02",
+      "title_vi": "Tên, đơn vị và lịch người vào kiểm",
+      "v10_topic": "Tên, đơn vị và lịch người vào kiểm",
+      "terms": [
+        {
+          "id": "T-020-v011",
+          "ja": "管理会社",
+          "reading": "かんりがいしゃ",
+          "han_viet": "QUẢN LÝ HỘI XÃ",
+          "vi": "công ty quản lý tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mlit-manage"
+          ]
+        },
+        {
+          "id": "T-020-v012",
+          "ja": "管理室",
+          "reading": "かんりしつ",
+          "han_viet": "QUẢN LÝ THẤT",
+          "vi": "phòng hoặc quầy quản lý tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "0afc3ad8-ea13-5917-af53-526806be4b0a-u02",
+              "surface": "管理室"
+            },
+            {
+              "utterance_id": "66e1278f-a824-517b-bd1c-0da2f6317035-u01",
+              "surface": "管理室"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "ur-view",
+            "mlit-manage"
+          ]
+        },
+        {
+          "id": "T-020-v013",
+          "ja": "担当者",
+          "reading": "たんとうしゃ",
+          "han_viet": "ĐẢM ĐƯƠNG GIẢ",
+          "vi": "người phụ trách việc đang hỏi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fe7d3900-3a5c-5f23-8bdc-8f1a80c0e11b-u03",
+              "surface": "担当者"
+            },
+            {
+              "utterance_id": "0d2f2a20-bbe8-5bbc-ba0e-2ae483429c2d-u01",
+              "surface": "担当者"
+            }
+          ],
+          "source_refs": [
+            "hv-dam"
+          ],
+          "note_vi": "担 đọc ĐẢM theo 擔當."
+        },
+        {
+          "id": "T-020-v014",
+          "ja": "換気設備",
+          "reading": "かんきせつび",
+          "han_viet": "HOÁN KHÍ THIẾT BỊ",
+          "vi": "thiết bị đưa và thoát không khí để thông gió",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "fe7d3900-3a5c-5f23-8bdc-8f1a80c0e11b-u02",
+              "surface": "換気設備"
+            },
+            {
+              "utterance_id": "2d850964-c496-5d26-adc9-ae1db2e1daae-u01",
+              "surface": "換気設備"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "equip-report"
+          ]
+        },
+        {
+          "id": "T-020-v015",
+          "ja": "消防設備点検",
+          "reading": "しょうぼうせつびてんけん",
+          "han_viet": "TIÊU PHÒNG THIẾT BỊ ĐIỂM KIỂM",
+          "vi": "kiểm tra thiết bị phòng cháy của tòa nhà hoặc căn",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "tokyu-inspect",
+            "mitsui-inspect"
+          ],
+          "level_note_vi": "Cần nhận ra tên công việc khi quản lý hẹn vào căn để kiểm tra."
+        },
+        {
+          "id": "T-020-v016",
+          "ja": "排水管清掃",
+          "reading": "はいすいかんせいそう",
+          "han_viet": "BÀI THỦY QUẢN THANH TẢO",
+          "vi": "vệ sinh ống thoát nước",
+          "pos": "noun",
+          "level_hint": "none",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "mlit-equip",
+            "mitsui-inspect"
+          ],
+          "level_note_vi": "Cần nhận ra tên công việc khi tòa nhà hỏi có thể ở nhà lúc vệ sinh hay không."
+        },
+        {
+          "id": "T-020-v017",
+          "ja": "在宅",
+          "reading": "ざいたく",
+          "han_viet": "TẠI TRẠCH",
+          "vi": "có mặt ở nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "89ca37e8-4ffa-53eb-9e32-22aaa209ad37-u01",
+              "surface": "在宅"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v018",
+          "ja": "不在",
+          "reading": "ふざい",
+          "han_viet": "BẤT TẠI",
+          "vi": "vắng mặt, không ở nhà lúc hẹn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "4780fd77-58a9-58e2-9995-e8f019b32d49-u01",
+              "surface": "不在"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v019",
+          "ja": "立ち会う",
+          "reading": "たちあう",
+          "han_viet": "LẬP HỘI",
+          "vi": "có mặt lúc người phụ trách vào kiểm",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d169cf96-f122-57bf-b90d-d66a8b25b3a0-u01",
+              "surface": "立ち会う"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v020",
+          "ja": "代理人",
+          "reading": "だいりにん",
+          "han_viet": "ĐẠI LÝ NHÂN",
+          "vi": "người đến thay để có mặt hoặc làm việc với quản lý",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d169cf96-f122-57bf-b90d-d66a8b25b3a0-u02",
+              "surface": "代理人"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "tokyu-inspect"
+          ]
+        },
+        {
+          "id": "T-020-v021",
+          "ja": "入室",
+          "reading": "にゅうしつ",
+          "han_viet": "NHẬP THẤT",
+          "vi": "việc đi vào căn hoặc phòng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d169cf96-f122-57bf-b90d-d66a8b25b3a0-u03",
+              "surface": "入室"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "mlit-manage"
+          ]
+        },
+        {
+          "id": "T-020-v022",
+          "ja": "同意",
+          "reading": "どうい",
+          "han_viet": "ĐỒNG Ý",
+          "vi": "sự chấp thuận cho người kiểm vào căn",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "d169cf96-f122-57bf-b90d-d66a8b25b3a0-u04",
+              "surface": "ご同意"
+            }
+          ],
+          "source_domain": "legal",
+          "source_refs": [
+            "mlit-model-pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g03",
+      "title_vi": "Tiện ích chung, đường dùng tạm và tiếng ồn",
+      "v10_topic": "Tiện ích chung, đường dùng tạm và tiếng ồn",
+      "terms": [
+        {
+          "id": "T-020-v023",
+          "ja": "駐輪場",
+          "reading": "ちゅうりんじょう",
+          "han_viet": "TRÚ LUÂN TRƯỜNG",
+          "vi": "khu để xe đạp",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "31bfa3dd-e368-5270-97f4-e09f36f8ef4a-u01",
+              "surface": "駐輪場"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "ur-view"
+          ]
+        },
+        {
+          "id": "T-020-v024",
+          "ja": "宅配ボックス",
+          "reading": "たくはいボックス",
+          "han_viet": "TRẠCH PHỐI",
+          "vi": "tủ nhận bưu kiện của tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension",
+          "source_domain": "procedural",
+          "source_refs": [
+            "ur-view"
+          ]
+        },
+        {
+          "id": "T-020-v025",
+          "ja": "ごみ置き場",
+          "reading": "ごみおきば",
+          "han_viet": "TRÍ TRƯỜNG",
+          "vi": "khu để rác của tòa nhà",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dd3257cb-7d9d-5ed1-b7e4-6878e21c0627-u01",
+              "surface": "ごみ置き場"
+            },
+            {
+              "utterance_id": "080a40d7-bf7e-5078-894f-d00ba6bc2ee1-u01",
+              "surface": "ごみ置き場"
+            }
+          ],
+          "source_domain": "procedural",
+          "source_refs": [
+            "ur-view"
+          ]
+        },
+        {
+          "id": "T-020-v026",
+          "ja": "仮置き場",
+          "reading": "かりおきば",
+          "han_viet": "GIẢ TRÍ TRƯỜNG",
+          "vi": "chỗ đặt tạm trước khi mở lại chỗ thường dùng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "dd3257cb-7d9d-5ed1-b7e4-6878e21c0627-u02",
+              "surface": "仮置き場"
+            },
+            {
+              "utterance_id": "5f8a9bc9-fafd-502e-93b6-83e04e712963-u01",
+              "surface": "仮置き場"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v027",
+          "ja": "案内板",
+          "reading": "あんないばん",
+          "han_viet": "ÁN NỘI BẢN",
+          "vi": "bảng chỉ dẫn vị trí, đường đi hoặc cách dùng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6b5d127f-1d0e-5612-ada2-fa5cc7298225-u04",
+              "surface": "案内板"
+            },
+            {
+              "utterance_id": "dd3257cb-7d9d-5ed1-b7e4-6878e21c0627-u02",
+              "surface": "案内板"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v028",
+          "ja": "迂回路",
+          "reading": "うかいろ",
+          "han_viet": "VU HỒI LỘ",
+          "vi": "đường vòng khi lối quen dùng bị đóng",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v029",
+          "ja": "閉鎖",
+          "reading": "へいさ",
+          "han_viet": "BẾ TỎA",
+          "vi": "việc đóng một khu hay lối, không cho đi qua",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v030",
+          "ja": "再開日",
+          "reading": "さいかいび",
+          "han_viet": "TÁI KHAI NHẬT",
+          "vi": "ngày bắt đầu cho dùng lại",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3c57bbc6-563e-5437-9fe6-b8d6485de08f-u02",
+              "surface": "再開日"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v031",
+          "ja": "騒音",
+          "reading": "そうおん",
+          "han_viet": "TAO ÂM",
+          "vi": "tiếng ồn làm ảnh hưởng sinh hoạt",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v051",
+          "ja": "工事期間",
+          "reading": "こうじきかん",
+          "han_viet": "CÔNG SỰ KỲ GIAN",
+          "vi": "khoảng thời gian dự kiến thi công",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v032",
+          "ja": "延びる",
+          "reading": "のびる",
+          "han_viet": "DIÊN",
+          "vi": "kéo dài hoặc lùi sang mốc muộn hơn",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "080a40d7-bf7e-5078-894f-d00ba6bc2ee1-u02",
+              "surface": "工事が延びました"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "g04",
+      "title_vi": "Thông tin trái nhau giữa cư dân",
+      "v10_topic": "Thông tin trái nhau giữa cư dân",
+      "terms": [
+        {
+          "id": "T-020-v033",
+          "ja": "お知らせ",
+          "reading": "おしらせ",
+          "han_viet": "TRI",
+          "vi": "thông báo gửi tới cư dân",
+          "pos": "noun",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "66e1278f-a824-517b-bd1c-0da2f6317035-u02",
+              "surface": "お知らせ"
+            },
+            {
+              "utterance_id": "cf72192f-246a-5b08-84bb-8ba99e885fb3-u02",
+              "surface": "お知らせ"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v034",
+          "ja": "配布する",
+          "reading": "はいふする",
+          "han_viet": "PHỐI BỐ",
+          "vi": "phát tờ thông báo tới người ở",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v035",
+          "ja": "食い違う",
+          "reading": "くいちがう",
+          "han_viet": "THỰC VI",
+          "vi": "hai thông tin lệch nhau, không khớp",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Dùng để nói hai người nhận cùng loại thông báo nhưng thấy giờ khác nhau."
+        },
+        {
+          "id": "T-020-v036",
+          "ja": "照らし合わせる",
+          "reading": "てらしあわせる",
+          "han_viet": "CHIẾU HỢP",
+          "vi": "đặt hai nguồn cạnh nhau để đối chiếu",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v037",
+          "ja": "読み違える",
+          "reading": "よみちがえる",
+          "han_viet": "ĐỘC VI",
+          "vi": "đọc và hiểu nhầm thông tin ghi trên tờ",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v038",
+          "ja": "旧版",
+          "reading": "きゅうはん",
+          "han_viet": "CỰU BẢN",
+          "vi": "phiên bản thông báo cũ",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v039",
+          "ja": "最新版",
+          "reading": "さいしんばん",
+          "han_viet": "TỐI TÂN BẢN",
+          "vi": "phiên bản mới nhất",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v040",
+          "ja": "差し替える",
+          "reading": "さしかえる",
+          "han_viet": "SAI THẾ",
+          "vi": "thay tờ hay thông báo cũ bằng bản đúng",
+          "pos": "verb",
+          "level_hint": "N1",
+          "origin": "topic_extension",
+          "level_note_vi": "Dùng để nhờ quản lý thay tờ dán cũ để cả tòa nhà nhận được cùng thông tin."
+        },
+        {
+          "id": "T-020-v041",
+          "ja": "訂正する",
+          "reading": "ていせいする",
+          "han_viet": "ĐÍNH CHÍNH",
+          "vi": "sửa nội dung đã ghi hoặc truyền đạt sai",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    },
+    {
+      "id": "g05",
+      "title_vi": "Mốc ban quản lý trả lời và cách báo lại",
+      "v10_topic": "Mốc ban quản lý trả lời và cách báo lại",
+      "terms": [
+        {
+          "id": "T-020-v042",
+          "ja": "問い合わせる",
+          "reading": "といあわせる",
+          "han_viet": "VẤN HỢP",
+          "vi": "hỏi đầu mối để xác nhận thông tin",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v043",
+          "ja": "確認中",
+          "reading": "かくにんちゅう",
+          "han_viet": "XÁC NHẬN TRUNG",
+          "vi": "đang kiểm tra, chưa có câu trả lời cuối",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "a6f21af5-fa57-5c52-988d-29f4790f9c31-u02",
+              "surface": "確認中"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v044",
+          "ja": "折り返す",
+          "reading": "おりかえす",
+          "han_viet": "CHIẾT PHẢN",
+          "vi": "gọi lại sau khi xác minh",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "89ca37e8-4ffa-53eb-9e32-22aaa209ad37-u04",
+              "surface": "折り返します"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v045",
+          "ja": "回答期限",
+          "reading": "かいとうきげん",
+          "han_viet": "HỒI ĐÁP KỲ HẠN",
+          "vi": "mốc cuối đã hẹn để phản hồi",
+          "pos": "noun",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v046",
+          "ja": "決まり次第",
+          "reading": "きまりしだい",
+          "han_viet": "QUYẾT THỨ ĐỆ",
+          "vi": "ngay sau khi chốt được",
+          "pos": "adverb",
+          "level_hint": "N2",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "3c57bbc6-563e-5437-9fe6-b8d6485de08f-u03",
+              "surface": "決まり次第"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v047",
+          "ja": "更新する",
+          "reading": "こうしんする",
+          "han_viet": "CANH TÂN",
+          "vi": "cập nhật thông báo hoặc lịch",
+          "pos": "verb",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "2795f270-299c-5830-abf8-31ac42f9c59e-u04",
+              "surface": "更新します"
+            },
+            {
+              "utterance_id": "12ea14de-b894-5662-b86b-12ba1613e858-u04",
+              "surface": "更新します"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v048",
+          "ja": "周知する",
+          "reading": "しゅうちする",
+          "han_viet": "CHU TRI",
+          "vi": "báo rộng để những người liên quan đều biết",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        },
+        {
+          "id": "T-020-v049",
+          "ja": "正式",
+          "reading": "せいしき",
+          "han_viet": "CHÍNH THỨC",
+          "vi": "chính thức, đã được đơn vị quản lý xác nhận",
+          "pos": "na_adj",
+          "level_hint": "N3",
+          "origin": "dialogue",
+          "evidence": [
+            {
+              "utterance_id": "6b4c692f-dd0f-55d8-ab06-6bf192b724fb-u02",
+              "surface": "正式"
+            }
+          ]
+        },
+        {
+          "id": "T-020-v050",
+          "ja": "伝え直す",
+          "reading": "つたえなおす",
+          "han_viet": "TRUYỀN TRỰC",
+          "vi": "báo lại cho đúng sau khi biết có thay đổi",
+          "pos": "verb",
+          "level_hint": "N2",
+          "origin": "topic_extension"
+        }
+      ]
+    }
+  ]
+}
