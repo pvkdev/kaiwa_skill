@@ -1,6 +1,6 @@
 ---
 name: kaiwa-topic-vocabulary
-description: Biên soạn, sửa và nghiệm thu danh sách từ vựng V12.1 theo chủ đề cho chặng topic, phạm vi rộng để người học tự nói về hoàn cảnh của mình, có cách đọc, Hán Việt và nghĩa Việt ở tầng biên tập, gói app chỉ nhận terms_ja.
+description: Biên soạn, sửa và nghiệm thu danh sách từ vựng V12.1 theo chủ đề cho chặng topic, tập trung vào các từ người học cần để nghe hiểu và tự nói trong chặng, có cách đọc, Hán Việt và nghĩa Việt ở tầng biên tập, gói app chỉ nhận terms_ja.
 ---
 
 # Từ vựng theo chủ đề cho chặng topic · V12.1
@@ -22,7 +22,7 @@ V12.1, cập nhật ngày 19 tháng 11 năm 2026. Mỗi mục có bốn trườn
 
 1. Từ gốc repo chạy `py -X utf8 .agents/skills/kaiwa-topic-vocabulary/scripts/vocab.py T-044`, thay mã theo phân công. Lệnh in mục tiêu, cấp và dải độ khó, nhóm từ V10, sự kiện kèm vai, tiêu đề và nhánh từng tình huống, toàn bộ lượt hội thoại và câu shadowing kèm ID.
 2. Đọc hết hội thoại và shadowing của chặng. Ghi nháp những gì người học phải **gọi tên** (người, nơi, đồ vật, giấy tờ, dịch vụ, bộ phận), **làm** (hành động mình làm, nhờ, được yêu cầu, bị ảnh hưởng), **mô tả** (trạng thái, sự cố, cảm giác, mức độ, đánh giá) và **định lượng** (số đếm, thời gian, tần suất, giá, kích cỡ).
-3. Mở rộng ra ngoài hội thoại. Với mỗi nhóm, hỏi: nếu người học kể chuyện của chính mình trong chủ đề này, được hỏi “bạn thì sao?”, hoặc gặp lại tình huống nhưng với món, ngày, sự cố, yêu cầu khác, họ còn cần gọi tên hay diễn tả điều gì? Ví dụ chủ đề ăn uống cần món, đồ uống, rau, củ, trái cây, vị, cách chế biến, dị ứng và khẩu phần. Chủ đề gửi bưu kiện cần loại hàng, cách đóng gói, kích thước, cân nặng, phương thức gửi, giấy tờ đi kèm và các trạng thái khi theo dõi.
+3. Chọn thêm từ ngoài hội thoại khi người học có thể dùng ngay để hỏi, trả lời hoặc thay một chi tiết thường gặp. Ví dụ ở chặng xe buýt, 整理券 đáng giữ nếu người học cần hiểu cách trả tiền. Việc có thể bỏ quên đồ trên xe chưa đủ lý do để thêm cả nhóm khai báo thất lạc.
 4. Tra nguồn để chọn từ người ở Nhật thực sự dùng, không chỉ từ sách vở:
    - Bảng từ đã clean trong `kaiwa_skill/knowledge`: Mimikara N3 (880 từ), Minato N2 (1160 từ), Mimikara N1 (1170 từ). Script dùng ba bảng này để gợi ý cấp; vẫn đọc bảng khi cần nghĩa hay cặp từ liên quan.
    - Sách hội thoại trong catalog 27 sách (`kaiwa_skill/planning/catalog27/BOOK_GUIDE.md`), nhất là B01 theo chương chủ đề và B23 語い冊 cho từ công việc.
@@ -34,7 +34,7 @@ V12.1, cập nhật ngày 19 tháng 11 năm 2026. Mỗi mục có bốn trườn
 ## Cấu trúc danh sách
 
 - **Nhóm.** Dùng các nhóm `vocabulary_topics` của V10 làm xương sống, giữ thứ tự. Có thể sửa tên cho rõ, tách nhóm quá rộng, hoặc thêm nhóm khi chủ đề cần, ví dụ “Kể về bản thân: thói quen, sở thích, kinh nghiệm”. Mỗi nhóm V10 phải nằm trong ít nhất một nhóm mới qua trường `v10_topic`; nếu bỏ một nhóm V10 thì ghi lý do trong `dropped_topics`.
-- **Quy mô.** Số mục do phạm vi giao tiếp thực tế quyết định. Ưu tiên đủ vốn từ để người học nói về hoàn cảnh của mình và xử lý các biến thể trong chủ đề. Tiếp tục bổ sung những mục có ích dù vượt 100 từ trong chặng hoặc 25 từ trong nhóm. Kết thúc tuyển chọn khi đã rà nhu cầu diễn đạt và các khoảng thiếu, ghi kết quả vào checkpoint. Chia nhóm theo ý nghĩa để người học tìm và học dần.
+- **Quy mô.** Bản V12 gốc có khoảng 40–100 mục mỗi chặng, thường 8–25 mục mỗi nhóm. Dùng làm mốc tham khảo khi rà tải học. Chủ đề hẹp có thể ít hơn. Khi danh sách dài, thử bỏ từng cụm từ gần nghĩa, biến thể hiếm hoặc thuật ngữ chuyên sâu. Chỉ giữ thêm khi chỉ ra được lượt nói hoặc lời đáp quan trọng mà người học sẽ khó xử lý nếu thiếu từ đó.
 - **Thứ tự trong nhóm.** Từ cốt lõi, hay dùng đứng trước. Đặt cạnh nhau những cặp người học hay cần dùng cùng: tự động từ/tha động từ (届く/届ける), đối nghĩa (重い/軽い), cùng trường nghĩa.
 - **Lặp lại giữa các chặng.** Tự do. Mỗi chặng tự đủ dùng; không cần tra chặng khác để tránh trùng. Trong cùng một chặng không có hai mục trùng nhau (cùng `ja` và `reading`).
 
@@ -64,11 +64,11 @@ V12.1, cập nhật ngày 19 tháng 11 năm 2026. Mỗi mục có bốn trườn
 ## Nguồn gốc từng mục
 
 - `origin: dialogue` khi từ, ở bất kỳ dạng chia nào, xuất hiện trong hội thoại V11 hoặc shadowing của chặng. Ghi 1–2 bằng chứng `{utterance_id, surface}` hoặc `{shadowing_item, surface}`, trong đó `surface` là chuỗi đúng như trong câu (送りたい cho 送る). Không cần ghi mọi lần xuất hiện. Từ hữu ích xuất hiện trong hội thoại nên có trong danh sách, trừ từ quá cơ bản so với cấp.
-- `origin: topic_extension` cho từ thêm để phủ chủ đề. Đây là phần chính của danh sách, không phải ngoại lệ.
+- `origin: topic_extension` cho từ ngoài hội thoại giúp người học diễn đạt nhu cầu thường gặp trong cùng tình huống. Tỷ lệ mở rộng tùy chặng.
 
 ## Ba lượt rà trước khi duyệt
 
-1. **Đủ để tự nói.** Với từng nhóm, thử đặt 3–5 câu về hoàn cảnh của chính mình bằng từ trong nhóm cùng vốn từ và ngữ pháp nền của cấp. Nếu thiếu động từ, tính từ hay từ định lượng để nói trọn câu, bổ sung. Đi qua từng tình huống của chặng và thử làm lại việc đó với chi tiết khác (đổi món, đổi ngày, đổi sự cố). Với mỗi tình huống, rà các loại người hoặc đồ vật liên quan, thuộc tính và số lượng, hành động, nhu cầu, lựa chọn, sự cố và kết quả cần diễn đạt. Thử thay chi tiết theo hoàn cảnh của nhiều người học, gồm cả thuận lợi và gặp trục trặc. Bổ sung từ giúp người học nói rõ nhu cầu còn thiếu. Ghi vào note_vi của nhóm những biến thể đã rà và phần đã bổ sung hoặc khoảng thiếu còn mở vào open_issues. Nhu cầu thiết yếu có thể cần từ vượt cấp kèm giải thích theo quy tắc độ khó.
+1. **Đủ để tự nói.** Với từng nhóm, thử một cuộc trao đổi ngắn trong tình huống chính và một biến thể thường gặp. Người học gọi tên được nhu cầu, hiểu lời đáp và biết hỏi tiếp không? Bổ sung từ còn thiếu cho các lượt ấy. Khi hai cách nói thay được cho nhau ở cấp này, ưu tiên cách thông dụng. Ghi quyết định chọn lọc vào ghi chú rà nhóm.
 2. **Đúng chữ, đúng đọc, đúng nghĩa.** Đọc từng mục: kanji và okurigana, cách đọc (âm đục, trường âm, âm ngắt), dạng mục từ, âm Hán Việt từng kanji và nghĩa Việt theo chủ đề. Rà riêng từ đồng âm, cặp tự/tha động từ và từ Hán Việt dễ hiểu sai nghĩa (ví dụ 勉強 khi nói giảm giá). Đối chiếu từng surface với dạng từ điển và nghĩa trong cả câu. 送りたい là dạng của 送る trong ngữ cảnh gửi hàng; 贈りたい thuộc 贈る khi tặng quà. Đối chiếu bảng Mimikara/Minato khi có.
 3. **Đúng cấp, đúng chủ đề, không thừa.** Bỏ từ sách vở hoặc hiếm khi dùng trong chủ đề, từ trùng ý không có khác biệt dùng, từ chỉ “có liên quan” mà người học khó cần nói. Kiểm từ vượt trần có lý do thật. Cân đối số mục giữa các nhóm.
 
