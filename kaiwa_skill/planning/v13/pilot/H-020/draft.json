@@ -1,0 +1,393 @@
+{
+  "code": "H-020",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "61c580dfa456ca307593be3f2b0ec0fe4f59051f97ae29a19db09f98942995a5",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "scope": "Hỏi và nói rõ phạm vi quyết định",
+    "numbers": "Kiểm tra số liệu mà vẫn giữ quan hệ",
+    "trial": "Đặt điều kiện cho phương án thử",
+    "negotiation": "Xử lý phản biện và giữ đường bàn lại",
+    "followup": "Nói rõ việc đã chốt và báo khi có ảnh hưởng"
+  },
+  "items": [
+    {
+      "id": "H-020-V13-001",
+      "group": "scope",
+      "role_vi": "Thành viên mở lời hỏi người chủ trì",
+      "gender": "female",
+      "ja": "今日の会議で決めたいことは何ですか。",
+      "vi": "Cuộc họp hôm nay mình định chốt việc gì ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～で決めたいことは何ですか"
+    },
+    {
+      "id": "H-020-V13-002",
+      "group": "scope",
+      "role_vi": "Người chủ trì nêu phạm vi quyết định",
+      "gender": "male",
+      "ja": "今日は問い合わせ対応の方針だけ決めます。",
+      "vi": "Hôm nay ta chỉ chốt hướng xử lý các câu hỏi thôi.",
+      "terms": [
+        "方針"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～だけ決めます"
+    },
+    {
+      "id": "H-020-V13-003",
+      "group": "scope",
+      "role_vi": "Người trình bày nói rõ mục đích của bảng chi phí",
+      "gender": "female",
+      "ja": "費用の見積もりは、案を比べるためのものです。",
+      "vi": "Bảng ước tính chi phí dùng để so sánh các phương án ạ.",
+      "terms": [
+        "見積もり"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～は、～ためのものです"
+    },
+    {
+      "id": "H-020-V13-004",
+      "group": "scope",
+      "role_vi": "Người chủ trì ngăn hiểu nhầm về quyền triển khai",
+      "gender": "male",
+      "ja": "方針が決まったからといって、すぐに着手していいわけではありません。",
+      "vi": "Chốt được hướng đi cũng chưa có nghĩa là mình được bắt tay vào làm ngay.",
+      "terms": [
+        "方針",
+        "着手する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～からといって、～わけではありません"
+    },
+    {
+      "id": "H-020-V13-005",
+      "group": "scope",
+      "role_vi": "Thành viên đề nghị kiểm tra rủi ro trước khi dùng mẫu chung",
+      "gender": "female",
+      "ja": "誤案内を避けるため、回答を共通化する前に、部署ごとの受付条件を洗い出しておきたいです。",
+      "vi": "Để tránh hướng dẫn sai, tôi muốn rà trước các điều kiện tiếp nhận của từng bộ phận rồi mới dùng chung câu trả lời.",
+      "terms": [
+        "誤案内",
+        "共通化する",
+        "洗い出す"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～を避けるため、～前に～ておきたいです"
+    },
+    {
+      "id": "H-020-V13-006",
+      "group": "numbers",
+      "role_vi": "Thành viên hỏi đồng nghiệp về nguồn số liệu",
+      "gender": "female",
+      "ja": "重複の件数を出すのに、どの資料を使ったか教えていただけますか。",
+      "vi": "Anh cho tôi biết đã dùng tài liệu nào để tính số trường hợp trùng lặp được không ạ?",
+      "terms": [
+        "重複"
+      ],
+      "scenes": [
+        "S003",
+        "S009"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "H-020-V13-007",
+      "group": "numbers",
+      "role_vi": "Người tổng hợp nhắc người dự họp về độ chắc của số liệu",
+      "gender": "male",
+      "ja": "重複の件数はまだ暫定値ですので、割合は目安として見てください。",
+      "vi": "Số trường hợp trùng lặp vẫn là số tạm tính, nên anh chị xem tỷ lệ đó để tham khảo thôi nhé.",
+      "terms": [
+        "重複",
+        "暫定値"
+      ],
+      "scenes": [
+        "S003",
+        "S009",
+        "S019"
+      ],
+      "pattern": "～ですので、～として見てください"
+    },
+    {
+      "id": "H-020-V13-008",
+      "group": "numbers",
+      "role_vi": "Thành viên làm rõ mục đích khi đồng nghiệp thấy bị nghi ngờ",
+      "gender": "female",
+      "ja": "集計をやり直してほしいという話ではなく、重複とする基準をお互いに確認したいんです。",
+      "vi": "Tôi chỉ muốn hai bên cùng làm rõ tiêu chí tính trùng, chứ không có ý bảo anh phải tổng hợp lại.",
+      "terms": [
+        "重複"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～という話ではなく、～たいんです"
+    },
+    {
+      "id": "H-020-V13-009",
+      "group": "numbers",
+      "role_vi": "Đồng nghiệp chỉ ra giới hạn khi đối chiếu các kỳ",
+      "gender": "male",
+      "ja": "似た質問まで重複に含めるなら、同じ質問だけを数えた前月の数字とはそのまま比べられません。",
+      "vi": "Nếu tính cả những câu hỏi tương tự là trùng lặp thì không thể so thẳng với số liệu tháng trước, vì tháng trước mình chỉ tính câu hỏi giống nhau.",
+      "terms": [
+        "重複"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～なら、～とはそのまま比べられません"
+    },
+    {
+      "id": "H-020-V13-010",
+      "group": "trial",
+      "role_vi": "Thành viên đề xuất thử phương án ở một bộ phận",
+      "gender": "female",
+      "ja": "いきなり本格導入するのではなく、まず総務部で回答の文面を試してみませんか。",
+      "vi": "Hay là mình thử dùng mẫu trả lời ở phòng Tổng vụ trước, chưa cần triển khai chính thức ngay ạ?",
+      "terms": [
+        "本格導入"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "～てみませんか"
+    },
+    {
+      "id": "H-020-V13-011",
+      "group": "trial",
+      "role_vi": "Thành viên đề nghị người có thẩm quyền hỏi người trực tiếp làm trước",
+      "gender": "female",
+      "ja": "総務部の担当者と負担を確認してから、試行の可否を決めませんか。",
+      "vi": "Hay là mình trao đổi với người phụ trách bên Tổng vụ về khối lượng công việc rồi mới quyết có chạy thử ạ?",
+      "terms": [
+        "負担",
+        "試行",
+        "可否"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "～てから、～ませんか"
+    },
+    {
+      "id": "H-020-V13-012",
+      "group": "trial",
+      "role_vi": "Thành viên đề xuất thêm tiêu chí đánh giá",
+      "gender": "female",
+      "ja": "誤案内が減ったかだけでなく、担当者が回答にかける時間も評価に入れましょう。",
+      "vi": "Ngoài việc xem số lần hướng dẫn sai có giảm không, mình cũng tính đến thời gian người phụ trách cần để trả lời nhé.",
+      "terms": [
+        "誤案内"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～だけでなく、～も～ましょう"
+    },
+    {
+      "id": "H-020-V13-013",
+      "group": "trial",
+      "role_vi": "Người chủ trì xác định mục đích lần kiểm tra giữa kỳ",
+      "gender": "male",
+      "ja": "二週間の結果で効果まで判断するのは早いので、まず中間確認として扱いましょう。",
+      "vi": "Hai tuần thì còn sớm để kết luận về hiệu quả, mình cứ xem kết quả đó là lần kiểm tra giữa đợt thử nhé.",
+      "terms": [
+        "中間確認"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～のは早いので、～として扱いましょう"
+    },
+    {
+      "id": "H-020-V13-014",
+      "group": "trial",
+      "role_vi": "Người trình bày cam kết xử lý khi cách thử gây lỗi",
+      "gender": "female",
+      "ja": "試行中に誤案内が出たら、該当する回答文の使用をいったん止めます。",
+      "vi": "Nếu trong đợt thử có trường hợp hướng dẫn sai, tôi sẽ tạm ngừng dùng mẫu trả lời gây lỗi đó.",
+      "terms": [
+        "試行",
+        "誤案内"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～たら、～"
+    },
+    {
+      "id": "H-020-V13-015",
+      "group": "negotiation",
+      "role_vi": "Đồng nghiệp nêu trở ngại về khối lượng công việc",
+      "gender": "male",
+      "ja": "窓口を一つにすると、総務部の負担が増えて受付が滞りませんか。",
+      "vi": "Nếu gộp đầu mối lại, liệu phòng Tổng vụ có bị thêm việc đến mức làm chậm việc tiếp nhận không?",
+      "terms": [
+        "負担"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～と、～ませんか"
+    },
+    {
+      "id": "H-020-V13-016",
+      "group": "negotiation",
+      "role_vi": "Người đề xuất ghi nhận mối lo và thu nhỏ phương án",
+      "gender": "female",
+      "ja": "総務部の負担が増えるという懸念はもっともですから、最初は申請の種類を一つに絞りませんか。",
+      "vi": "Anh lo phòng Tổng vụ phải gánh thêm việc cũng có lý, vậy trước mắt mình chỉ thử với một loại đề nghị thôi nhé?",
+      "terms": [
+        "負担",
+        "懸念",
+        "もっとも"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "～という懸念はもっともですから、～"
+    },
+    {
+      "id": "H-020-V13-017",
+      "group": "negotiation",
+      "role_vi": "Người đề xuất hỏi đồng nghiệp xem phương án sửa có vừa sức không",
+      "gender": "female",
+      "ja": "備品申請の案内だけを試すなら、普段の受付と両立できそうでしょうか。",
+      "vi": "Nếu chỉ thử mẫu hướng dẫn xin cấp đồ dùng, anh thấy phòng Tổng vụ có làm song song với việc tiếp nhận hằng ngày được không?",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～だけを試すなら、～できそうでしょうか"
+    },
+    {
+      "id": "H-020-V13-018",
+      "group": "negotiation",
+      "role_vi": "Người đề xuất hỏi chủ trì về lý do hoãn để tính lần trình lại",
+      "gender": "female",
+      "ja": "次に提案する時期を考えたいので、試行を見送った理由を聞かせていただけますか。",
+      "vi": "Để tính lúc nào nên trình lại, anh có thể cho tôi biết vì sao phương án chạy thử lần này được gác lại không ạ?",
+      "terms": [
+        "提案する",
+        "試行",
+        "見送る"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "H-020-V13-019",
+      "group": "negotiation",
+      "role_vi": "Thành viên nhận một việc theo phương án đã chốt",
+      "gender": "female",
+      "ja": "窓口を現行のままにするなら、回答に迷う事例は私が洗い出します。",
+      "vi": "Nếu mình vẫn giữ đầu mối hiện tại, tôi sẽ rà những trường hợp mà người phụ trách chưa biết nên trả lời thế nào.",
+      "terms": [
+        "現行",
+        "洗い出す"
+      ],
+      "scenes": [
+        "S014",
+        "S017"
+      ],
+      "pattern": "～なら、～は私が～ます"
+    },
+    {
+      "id": "H-020-V13-020",
+      "group": "followup",
+      "role_vi": "Thành viên đính chính phạm vi đã được duyệt",
+      "gender": "female",
+      "ja": "試行も承認されたとお伝えしましたが、承認されたのは回答の確認手順だけです。",
+      "vi": "Lúc nãy tôi nói là cả đợt thử cũng đã được duyệt, nhưng thực ra mới chỉ duyệt cách kiểm tra câu trả lời ạ.",
+      "terms": [
+        "試行",
+        "承認する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～とお伝えしましたが、～のは～だけです"
+    },
+    {
+      "id": "H-020-V13-021",
+      "group": "followup",
+      "role_vi": "Thành viên chốt với chủ trì điều kiện để bàn lại",
+      "gender": "female",
+      "ja": "手順を見直しても部署間で回答が食い違う場合は、予備案をもう一度議題に上げてもよいでしょうか。",
+      "vi": "Nếu đã chỉnh quy trình mà các bộ phận vẫn trả lời khác nhau, tôi có thể đưa phương án dự phòng ra bàn lại được không ạ?",
+      "terms": [
+        "食い違う",
+        "予備案",
+        "議題に上げる"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "～ても～場合は、～てもよいでしょうか"
+    },
+    {
+      "id": "H-020-V13-022",
+      "group": "followup",
+      "role_vi": "Thành viên báo phần đã xác minh và phần còn chưa rõ",
+      "gender": "female",
+      "ja": "備品申請の案内が食い違っていたのは確認できましたが、何人に影響が出たかはまだ分かりません。",
+      "vi": "Tôi đã xác nhận là hướng dẫn xin cấp đồ dùng không thống nhất, nhưng chưa rõ bao nhiêu người bị ảnh hưởng ạ.",
+      "terms": [
+        "食い違う"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～のは確認できましたが、～はまだ分かりません"
+    },
+    {
+      "id": "H-020-V13-023",
+      "group": "followup",
+      "role_vi": "Trưởng nhóm dặn thành viên khi nào cần báo ngay",
+      "gender": "male",
+      "ja": "案内の食い違いで申請者が再度問い合わせたと分かったら、次の会議まで待たずに私に知らせてください。",
+      "vi": "Nếu biết có người phải hỏi lại vì hướng dẫn không thống nhất, báo ngay cho tôi nhé, đừng chờ đến cuộc họp sau.",
+      "terms": [],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～たら、～"
+    },
+    {
+      "id": "H-020-V13-024",
+      "group": "followup",
+      "role_vi": "Trưởng nhóm nhận trách nhiệm báo trưởng bộ phận",
+      "gender": "male",
+      "ja": "備品申請の案内が部署によって違い、申請者が聞き直すことになった件は、私から部長に報告します。",
+      "vi": "Vụ người xin cấp đồ dùng phải hỏi lại vì các bộ phận hướng dẫn khác nhau, tôi sẽ trực tiếp báo trưởng bộ phận.",
+      "terms": [],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～ことになった件は、私から～に報告します"
+    }
+  ]
+}

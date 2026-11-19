@@ -1,0 +1,345 @@
+{
+  "code": "H-004",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "0f472875a4bda1b69c84f381342e14e2faf5d5f22a1c67ccfa9c0a0ee3ae1c82",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "hosting": "Đón khách và xin phép mở lời",
+    "relay": "Nhận và chuyển đúng lời nhắn",
+    "commitment": "Xác nhận đang xem xét hay đã đồng ý",
+    "repair": "Nói lại cho đúng người và đúng vai"
+  },
+  "items": [
+    {
+      "id": "H-004-V13-001",
+      "group": "hosting",
+      "role_vi": "Nhân viên đón khách đến công ty",
+      "gender": "female",
+      "ja": "本日はお越しいただき、ありがとうございます。",
+      "vi": "Cảm ơn anh đã đến thăm hôm nay ạ.",
+      "terms": [
+        "お越しいただく"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～ていただき、ありがとうございます"
+    },
+    {
+      "id": "H-004-V13-002",
+      "group": "hosting",
+      "role_vi": "Nhân viên giới thiệu cấp trên với khách",
+      "gender": "female",
+      "ja": "弊社の営業部長、田中をご紹介します。",
+      "vi": "Tôi xin giới thiệu anh Tanaka, trưởng bộ phận kinh doanh bên chúng tôi ạ.",
+      "terms": [
+        "弊社",
+        "部長"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "弊社の～をご紹介します"
+    },
+    {
+      "id": "H-004-V13-003",
+      "group": "hosting",
+      "role_vi": "Nhân viên hỏi đối tác có tiện trao đổi không",
+      "gender": "female",
+      "ja": "配送の件で、少しお時間をいただけますか。",
+      "vi": "Anh có thể dành ít phút để trao đổi về việc giao hàng được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～の件で、少しお時間をいただけますか"
+    },
+    {
+      "id": "H-004-V13-004",
+      "group": "hosting",
+      "role_vi": "Nhân viên thu gọn câu hỏi vì khách đang vội",
+      "gender": "female",
+      "ja": "お急ぎでしたら、最初の便が出る時期だけ伺ってもよろしいでしょうか。",
+      "vi": "Nếu anh đang vội, tôi chỉ xin hỏi khi nào dự kiến có chuyến giao hàng đầu tiên, được không ạ?",
+      "terms": [
+        "伺う"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-004-V13-005",
+      "group": "relay",
+      "role_vi": "Nhân viên thay mặt cấp trên cảm ơn khách",
+      "gender": "female",
+      "ja": "田中に代わりまして、先日は弊社までお越しいただき、ありがとうございました。",
+      "vi": "Tôi thay mặt anh Tanaka cảm ơn anh đã ghé thăm công ty chúng tôi hôm trước ạ.",
+      "terms": [
+        "弊社",
+        "お越しいただく"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～に代わりまして、～"
+    },
+    {
+      "id": "H-004-V13-006",
+      "group": "relay",
+      "role_vi": "Nhân viên trực điện thoại đề nghị nhận lời nhắn",
+      "gender": "male",
+      "ja": "田中は席を外しておりますので、よろしければお言付けを承ります。",
+      "vi": "Anh Tanaka hiện không có ở bàn, nếu anh muốn nhắn gì thì tôi xin nhận giúp ạ.",
+      "terms": [
+        "席を外す",
+        "お言付け",
+        "承る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～ので、よろしければ～ます"
+    },
+    {
+      "id": "H-004-V13-007",
+      "group": "relay",
+      "role_vi": "Nhân viên hỏi lại khách muốn nhận thông tin đến đâu",
+      "gender": "female",
+      "ja": "試験運用の費用は、まず目安だけお伝えすればよろしいでしょうか。",
+      "vi": "Về chi phí chạy thử, trước mắt tôi chỉ cần báo mức ước tính thôi, đúng không ạ?",
+      "terms": [
+        "目安"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～ばよろしいでしょうか"
+    },
+    {
+      "id": "H-004-V13-008",
+      "group": "relay",
+      "role_vi": "Nhân viên chuyển lời đối tác cho cấp trên trong công ty",
+      "gender": "female",
+      "ja": "北星物流の佐々木課長は、見積もりを頼むか決める前に費用の目安を知りたいとおっしゃっていました。",
+      "vi": "Trưởng phòng Sasaki bên Hokusei Logistics nói muốn biết chi phí khoảng bao nhiêu rồi mới quyết có yêu cầu báo giá hay không ạ.",
+      "terms": [
+        "課長",
+        "目安",
+        "おっしゃる"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～たいとおっしゃっていました"
+    },
+    {
+      "id": "H-004-V13-009",
+      "group": "relay",
+      "role_vi": "Trưởng bộ phận nhận phần trả lời đối tác",
+      "gender": "male",
+      "ja": "試験運用の費用については、確認でき次第、私から佐々木課長に返答します。",
+      "vi": "Ngay khi xác nhận được chi phí chạy thử, tôi sẽ trực tiếp trả lời anh Sasaki.",
+      "terms": [
+        "課長",
+        "返答する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～次第、私から～します"
+    },
+    {
+      "id": "H-004-V13-010",
+      "group": "commitment",
+      "role_vi": "Nhân viên làm rõ lời cấp trên sau khi đối tác hiểu thành cam kết",
+      "gender": "female",
+      "ja": "来月開始することで合意したのではなく、田中は来月もう一度ご相談したいと申しております。",
+      "vi": "Hai bên chưa chốt bắt đầu vào tháng sau, anh Tanaka chỉ nói là muốn trao đổi thêm vào tháng sau ạ.",
+      "terms": [
+        "合意",
+        "申す"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～のではなく、～と申しております"
+    },
+    {
+      "id": "H-004-V13-011",
+      "group": "commitment",
+      "role_vi": "Đối tác xin xem xét nội bộ trước khi phản hồi",
+      "gender": "male",
+      "ja": "配送案は社内で検討してからお返事してもよろしいでしょうか。",
+      "vi": "Bên tôi xin xem xét phương án giao hàng trong nội bộ rồi mới trả lời, có được không ạ?",
+      "terms": [
+        "社内",
+        "検討する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-004-V13-012",
+      "group": "commitment",
+      "role_vi": "Nhân viên hỏi khi nào có thể nhận tin từ đối tác",
+      "gender": "female",
+      "ja": "配送案のお返事は、いつ頃でしたら伺えそうでしょうか。",
+      "vi": "Khoảng khi nào tôi có thể liên hệ lại để nghe ý kiến của bên anh về phương án giao hàng ạ?",
+      "terms": [
+        "伺う"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "いつ頃でしたら～そうでしょうか"
+    },
+    {
+      "id": "H-004-V13-013",
+      "group": "commitment",
+      "role_vi": "Nhân viên xin hỏi tiến độ mà không giục chốt",
+      "gender": "female",
+      "ja": "結論がまだ先になりそうでしたら、来週は配送案の進み具合だけ伺ってもよろしいでしょうか。",
+      "vi": "Nếu bên anh cần thêm thời gian để quyết, tuần sau tôi xin phép chỉ hỏi đã xem xét phương án giao hàng đến đâu, được không ạ?",
+      "terms": [
+        "伺う"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-004-V13-014",
+      "group": "commitment",
+      "role_vi": "Đối tác giải thích ý kiến của cấp trên bên mình vẫn chưa rõ",
+      "gender": "male",
+      "ja": "西村は配送案に目を通しておりますが、まだ本人の意向は聞けておりません。",
+      "vi": "Ông Nishimura đã xem qua phương án giao hàng, nhưng tôi vẫn chưa nghe ý kiến của ông ấy ạ.",
+      "terms": [
+        "目を通す",
+        "意向"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ておりますが、～はまだ～ておりません"
+    },
+    {
+      "id": "H-004-V13-015",
+      "group": "commitment",
+      "role_vi": "Nhân viên để đối tác thêm thời gian trước khi hỏi có chấp thuận không",
+      "gender": "female",
+      "ja": "西村部長のご意向がまだ分からないようでしたら、配送案の可否は次回伺います。",
+      "vi": "Nếu chưa rõ ý kiến của trưởng bộ phận Nishimura, tôi xin phép để lần sau hỏi bên anh có chấp thuận phương án giao hàng không ạ.",
+      "terms": [
+        "部長",
+        "意向",
+        "可否",
+        "伺う"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ようでしたら、～は次回伺います"
+    },
+    {
+      "id": "H-004-V13-016",
+      "group": "commitment",
+      "role_vi": "Đối tác nói rõ đã đọc tài liệu nhưng chưa duyệt",
+      "gender": "male",
+      "ja": "配送案の内容は西村も把握しておりますが、社内の承認はまだ下りておりません。",
+      "vi": "Ông Nishimura đã nắm nội dung phương án giao hàng, nhưng bên tôi vẫn chưa phê duyệt ạ.",
+      "terms": [
+        "社内",
+        "承認"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ておりますが、～はまだ～ておりません"
+    },
+    {
+      "id": "H-004-V13-017",
+      "group": "repair",
+      "role_vi": "Nhân viên tự sửa chức danh của khách khi đưa tài liệu",
+      "gender": "female",
+      "ja": "佐々木部長、失礼しました、企画課長の佐々木様、こちらが本日の資料です。",
+      "vi": "Trưởng bộ phận Sasaki… xin lỗi, trưởng phòng kế hoạch Sasaki, tài liệu hôm nay của anh đây ạ.",
+      "terms": [
+        "部長",
+        "課長"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～、失礼しました、～"
+    },
+    {
+      "id": "H-004-V13-018",
+      "group": "repair",
+      "role_vi": "Nhân viên sửa ngay cách gọi cấp trên của mình trước khách",
+      "gender": "female",
+      "ja": "契約の費用は田中部長から、失礼しました、弊社の田中からご説明いたします。",
+      "vi": "Chi phí hợp đồng thì trưởng bộ phận Tanaka sẽ… xin phép nói lại, anh Tanaka bên chúng tôi sẽ giải thích ạ.",
+      "terms": [
+        "部長",
+        "弊社"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～、失礼しました、～"
+    },
+    {
+      "id": "H-004-V13-019",
+      "group": "repair",
+      "role_vi": "Nhân viên nói lại tên đầu mối thay cho cách gọi chung chung",
+      "gender": "female",
+      "ja": "契約の件は別の担当から、失礼しました、契約担当の吉田からお電話いたします。",
+      "vi": "Về hợp đồng, một người phụ trách khác sẽ gọi… xin nói rõ là anh Yoshida, người phụ trách hợp đồng, sẽ gọi cho anh ạ.",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～、失礼しました、～"
+    },
+    {
+      "id": "H-004-V13-020",
+      "group": "repair",
+      "role_vi": "Nhân viên gọi lại để nói rõ hai đầu mối",
+      "gender": "female",
+      "ja": "念のため、契約条件は吉田に、費用の内訳は田中に直接お問い合わせください。",
+      "vi": "Tôi xin nhắc lại, điều khoản hợp đồng anh hỏi trực tiếp anh Yoshida, còn các khoản chi phí thì hỏi anh Tanaka ạ.",
+      "terms": [
+        "念のため",
+        "直接"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "念のため、～にお問い合わせください"
+    },
+    {
+      "id": "H-004-V13-021",
+      "group": "repair",
+      "role_vi": "Khách hỏi lại ai trả lời phần nào",
+      "gender": "male",
+      "ja": "費用のことは田中さんに伺い、契約条件については吉田さんのお電話を待てばよろしいでしょうか。",
+      "vi": "Tôi sẽ hỏi anh Tanaka về chi phí, còn về điều khoản hợp đồng thì đợi anh Yoshida gọi, như vậy đúng không ạ?",
+      "terms": [
+        "伺う"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～ばよろしいでしょうか"
+    }
+  ]
+}

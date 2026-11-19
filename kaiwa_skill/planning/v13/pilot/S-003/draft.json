@@ -1,0 +1,328 @@
+{
+  "code": "S-003",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "9d8ff26050d4821a1aed784a73e01081990903a35d3fb62393ff88a677f72d5d",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "pace": "Xin nhắc lại và nói chậm",
+    "details": "Hỏi lại một từ hoặc một chi tiết",
+    "directions": "Theo kịp lời chỉ đường",
+    "meeting": "Giữ lượt và xác nhận lời hẹn",
+    "callback": "Gọi lại để kiểm tra giờ"
+  },
+  "items": [
+    {
+      "id": "S-003-V13-001",
+      "group": "pace",
+      "role_vi": "Khách chưa nghe rõ lời nhân viên tại quầy",
+      "gender": "female",
+      "ja": "もう一度言ってください。",
+      "vi": "Nói lại giúp tôi với ạ.",
+      "terms": [
+        "もう一度",
+        "言う"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "mou_ichido_itte_kudasai"
+    },
+    {
+      "id": "S-003-V13-002",
+      "group": "pace",
+      "role_vi": "Khách ở quầy xin nhân viên giảm tốc độ nói",
+      "gender": "female",
+      "ja": "もう少しゆっくり話してください。",
+      "vi": "Nói chậm hơn một chút giúp tôi với ạ.",
+      "terms": [
+        "もう少し",
+        "ゆっくり"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "way_de_hanashite_kudasai"
+    },
+    {
+      "id": "S-003-V13-003",
+      "group": "pace",
+      "role_vi": "Khách ở quầy báo mình không nghe rõ giọng nhân viên",
+      "gender": "female",
+      "ja": "声がよく聞こえません。",
+      "vi": "Tôi nghe không rõ ạ.",
+      "terms": [
+        "声",
+        "聞こえる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "yoku_kikoemasen"
+    },
+    {
+      "id": "S-003-V13-004",
+      "group": "pace",
+      "role_vi": "Khách xin nhân viên nói lớn hơn vì xung quanh ồn",
+      "gender": "female",
+      "ja": "もう少し大きな声で話してください。",
+      "vi": "Nói to hơn một chút giúp tôi với ạ.",
+      "terms": [
+        "もう少し",
+        "大きな声で"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "way_de_hanashite_kudasai"
+    },
+    {
+      "id": "S-003-V13-005",
+      "group": "details",
+      "role_vi": "Khách nghe được phần lớn lời giới thiệu món và xin nhắc riêng tên món",
+      "gender": "female",
+      "ja": "料理の名前だけもう一度言ってください。",
+      "vi": "Cho tôi nghe lại tên món thôi ạ.",
+      "terms": [
+        "名前",
+        "もう一度",
+        "言う"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "mou_ichido_itte_kudasai"
+    },
+    {
+      "id": "S-003-V13-006",
+      "group": "details",
+      "role_vi": "Khách báo với thu ngân mình nghe sót mỗi số tiền",
+      "gender": "female",
+      "ja": "すみません、金額だけ聞き取れませんでした。",
+      "vi": "Xin lỗi, riêng số tiền thì tôi nghe chưa rõ ạ.",
+      "terms": [
+        "すみません",
+        "金額",
+        "聞き取れる"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "detail_dake_kikitoremasendeshita"
+    },
+    {
+      "id": "S-003-V13-007",
+      "group": "details",
+      "role_vi": "Khách hỏi lại thu ngân về tổng tiền trước khi trả",
+      "gender": "female",
+      "ja": "お会計は千二百円で合っていますか。",
+      "vi": "Tổng cộng 1.200 yên, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "detail_de_atteimasu_ka"
+    },
+    {
+      "id": "S-003-V13-008",
+      "group": "details",
+      "role_vi": "Khách nhờ nhân viên ghi tên món để đọc lại tại quầy ồn",
+      "gender": "female",
+      "ja": "料理の名前を書いてもらえますか。",
+      "vi": "Ghi tên món giúp tôi được không ạ?",
+      "terms": [
+        "名前",
+        "書く"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-003-V13-009",
+      "group": "details",
+      "role_vi": "Người hỏi đường hỏi nghĩa một từ vừa nghe",
+      "gender": "female",
+      "ja": "「角」はどういう意味ですか。",
+      "vi": "Từ kado nghĩa là gì ạ?",
+      "terms": [
+        "角",
+        "意味"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "word_wa_douiu_imi_desu_ka"
+    },
+    {
+      "id": "S-003-V13-010",
+      "group": "directions",
+      "role_vi": "Người nghe xin người hướng dẫn chỉ nói phần thiết yếu trước",
+      "gender": "female",
+      "ja": "大事なところを先に教えてください。",
+      "vi": "Nói phần quan trọng trước giúp tôi với ạ.",
+      "terms": [
+        "大事"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "priority_wo_saki_ni_oshiete_kudasai"
+    },
+    {
+      "id": "S-003-V13-011",
+      "group": "directions",
+      "role_vi": "Người hỏi đường chưa theo kịp và xin dùng từ dễ hơn",
+      "gender": "female",
+      "ja": "もっと簡単な言葉でお願いします。",
+      "vi": "Dùng từ đơn giản hơn giúp tôi với ạ.",
+      "terms": [
+        "簡単",
+        "言葉"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "way_de_onegaishimasu"
+    },
+    {
+      "id": "S-003-V13-012",
+      "group": "directions",
+      "role_vi": "Người hỏi đường đã biết phải đến cầu thang và kiểm tra hướng rẽ tiếp",
+      "gender": "female",
+      "ja": "階段の先で右に曲がりますか。",
+      "vi": "Qua cầu thang rồi rẽ phải, đúng không ạ?",
+      "terms": [
+        "右"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "landmark_no_saki_de_magari_masu_ka"
+    },
+    {
+      "id": "S-003-V13-013",
+      "group": "directions",
+      "role_vi": "Người hỏi đường tự sửa tầng mình đã nghe nhầm trước mặt người hướng dẫn",
+      "gender": "female",
+      "ja": "教室は一階じゃなくて、二階ですね。",
+      "vi": "Phòng học ở tầng hai chứ không phải tầng một, đúng không ạ?",
+      "terms": [
+        "二階"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "noun_ja_nakute_noun_ne"
+    },
+    {
+      "id": "S-003-V13-014",
+      "group": "meeting",
+      "role_vi": "Thành viên nhóm học xin ít thời gian trước khi trả lời",
+      "gender": "female",
+      "ja": "少し考える時間をください。",
+      "vi": "Cho tôi suy nghĩ một chút được không ạ?",
+      "terms": [
+        "考える",
+        "時間"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "time_wo_kudasai"
+    },
+    {
+      "id": "S-003-V13-015",
+      "group": "meeting",
+      "role_vi": "Người nghe hỏi người hướng dẫn bận có thể hỏi tiếp sau không",
+      "gender": "female",
+      "ja": "続きは後で聞いてもいいですか。",
+      "vi": "Phần còn lại tôi hỏi sau được không ạ?",
+      "terms": [
+        "後で",
+        "聞く"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-003-V13-016",
+      "group": "meeting",
+      "role_vi": "Người hẹn xác nhận ngày gặp với người quen",
+      "gender": "female",
+      "ja": "集まりは今日じゃなくて、明日ですね。",
+      "vi": "Buổi gặp là ngày mai chứ không phải hôm nay, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "noun_ja_nakute_noun_ne"
+    },
+    {
+      "id": "S-003-V13-017",
+      "group": "meeting",
+      "role_vi": "Bạn nhắc lại giờ và nơi gặp trước khi chia tay",
+      "gender": "female",
+      "ja": "明日は三時に駅の前で会うんだよね。",
+      "vi": "Mai ba giờ mình gặp nhau trước ga, đúng không?",
+      "terms": [
+        "前"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "casual_n_da_yone"
+    },
+    {
+      "id": "S-003-V13-018",
+      "group": "callback",
+      "role_vi": "Bạn nói với người đi cùng rằng mình sẽ gọi xác nhận giờ đã nghe",
+      "gender": "female",
+      "ja": "見学の時間は電話で確認するね。",
+      "vi": "Tớ sẽ gọi hỏi lại giờ xem phòng nhé.",
+      "terms": [
+        "時間",
+        "確認する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "denwa_de_kakunin_suru_ne"
+    },
+    {
+      "id": "S-003-V13-019",
+      "group": "callback",
+      "role_vi": "Khách gọi lại quầy để hỏi giờ của lịch xem phòng vừa đặt",
+      "gender": "female",
+      "ja": "先ほど予約した見学は何時ですか。",
+      "vi": "Lịch xem phòng tôi vừa đặt là mấy giờ ạ?",
+      "terms": [
+        "先ほど",
+        "何時"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "appointment_wa_nanji_desu_ka"
+    },
+    {
+      "id": "S-003-V13-020",
+      "group": "callback",
+      "role_vi": "Khách gọi xác nhận giờ hẹn với nhân viên sau khi đọc lại ghi chú",
+      "gender": "female",
+      "ja": "見学は明日の四時で合っていますか。",
+      "vi": "Lịch xem phòng là bốn giờ ngày mai, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "detail_de_atteimasu_ka"
+    }
+  ]
+}

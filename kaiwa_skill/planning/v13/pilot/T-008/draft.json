@@ -1,0 +1,291 @@
+{
+  "code": "T-008",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "67b78960579d340de286bf1fb1d13ccecbbc2f4ea27346a2d024a33f0eb6495e",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "make-room": "Hỏi bạn muốn kể hay cần yên tĩnh",
+    "hear-and-repair": "Lắng nghe và sửa lời động viên",
+    "condolences": "Chia buồn theo mối quan hệ",
+    "share-the-load": "Đề nghị giúp và để người kia chọn",
+    "check-in": "Gọi hỏi thăm sau vài ngày"
+  },
+  "items": [
+    {
+      "id": "T-008-V13-001",
+      "group": "make-room",
+      "role_vi": "Bạn ngỏ ý lắng nghe người vừa trượt phỏng vấn",
+      "gender": "female",
+      "ja": "よかったら、面接の話を聞くよ。",
+      "vi": "Nếu cậu muốn kể, tớ sẵn sàng nghe chuyện phỏng vấn.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "よかったら～"
+    },
+    {
+      "id": "T-008-V13-002",
+      "group": "make-room",
+      "role_vi": "Bạn để người kia tự chọn lúc kể chuyện phỏng vấn",
+      "gender": "male",
+      "ja": "面接のことは、話したくなったときでいいよ。",
+      "vi": "Chuyện phỏng vấn, khi nào muốn kể thì kể cũng được mà.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～たくなったときでいい"
+    },
+    {
+      "id": "T-008-V13-003",
+      "group": "make-room",
+      "role_vi": "Bạn để người kia về nghỉ một mình mà không phải áy náy",
+      "gender": "female",
+      "ja": "一人でいたいときは、気にせず先に帰ってね。",
+      "vi": "Nếu cậu muốn ở một mình thì cứ về trước nhé, đừng ngại.",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～たいときは、気にせず～"
+    },
+    {
+      "id": "T-008-V13-004",
+      "group": "make-room",
+      "role_vi": "Bạn thân gợi ý đi dạo nếu hiện giờ bạn chưa muốn nói",
+      "gender": "male",
+      "ja": "面接の話を今したくなかったら、少し散歩でもしようか？",
+      "vi": "Nếu giờ cậu chưa muốn nói chuyện phỏng vấn thì mình đi dạo một lát nhé?",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S012"
+      ],
+      "pattern": "～たくなかったら、～でもしようか"
+    },
+    {
+      "id": "T-008-V13-005",
+      "group": "make-room",
+      "role_vi": "Bạn thân không bắt người đang buồn phải giải thích cảm xúc",
+      "gender": "female",
+      "ja": "うまく言葉にできない気持ちは、無理に説明しなくてもいいよ。",
+      "vi": "Những gì còn khó nói thành lời thì cậu không cần cố giải thích đâu.",
+      "terms": [
+        "言葉にする",
+        "無理に"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～なくてもいい"
+    },
+    {
+      "id": "T-008-V13-006",
+      "group": "hear-and-repair",
+      "role_vi": "Bạn nhắc lại chuyện đã nghe về buổi phỏng vấn",
+      "gender": "male",
+      "ja": "用意していた答えが面接で出てこなかったのが、悔しかったんだね。",
+      "vi": "Cậu ấm ức vì đã chuẩn bị câu trả lời mà đến lúc phỏng vấn lại không nhớ ra nhỉ.",
+      "terms": [
+        "悔しい"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～のが悔しかったんだね"
+    },
+    {
+      "id": "T-008-V13-007",
+      "group": "hear-and-repair",
+      "role_vi": "Bạn thừa nhận nỗi buồn của người đã ôn thi nhiều tháng",
+      "gender": "female",
+      "ja": "何か月も勉強してきたんだから、不合格で落ち込むのも無理ないよ。",
+      "vi": "Cậu đã học mấy tháng liền, thi trượt rồi buồn cũng là điều dễ hiểu mà.",
+      "terms": [
+        "不合格",
+        "落ち込む"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "～んだから、～のも無理ない"
+    },
+    {
+      "id": "T-008-V13-008",
+      "group": "hear-and-repair",
+      "role_vi": "Bạn nhận lại lỗi vì hiểu sai chuyện phỏng vấn",
+      "gender": "male",
+      "ja": "緊張で言葉が出なかったのに、準備が足りなかったみたいに言ってごめんね。",
+      "vi": "Cậu không nói được vì căng thẳng mà tớ lại nói cứ như cậu chuẩn bị chưa đủ, tớ xin lỗi nhé.",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～のに、～ってごめん"
+    },
+    {
+      "id": "T-008-V13-009",
+      "group": "hear-and-repair",
+      "role_vi": "Bạn thân xin lỗi và nói rõ mình nên lắng nghe",
+      "gender": "female",
+      "ja": "そばで話を聞けばよかったのに、「もっと頑張って」って言ってごめんね。",
+      "vi": "Lẽ ra tớ nên ở bên nghe cậu kể, vậy mà lại bảo cậu cố hơn nữa. Tớ xin lỗi nhé.",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～のに、～ってごめん"
+    },
+    {
+      "id": "T-008-V13-010",
+      "group": "condolences",
+      "role_vi": "Đồng nghiệp trực tiếp chia buồn với người vừa mất bố",
+      "gender": "male",
+      "ja": "このたびはご愁傷さまです。",
+      "vi": "Tôi xin chia buồn cùng chị ạ.",
+      "terms": [
+        "ご愁傷さまです"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "ご愁傷さまです"
+    },
+    {
+      "id": "T-008-V13-011",
+      "group": "condolences",
+      "role_vi": "Bạn thân xin phép ở lại bên người vừa mất bố",
+      "gender": "female",
+      "ja": "お父さんが亡くなったって聞いて、今日は少しそばにいてもいいかな？",
+      "vi": "Tớ nghe tin bố cậu mất. Hôm nay tớ ở bên cậu một lát được không?",
+      "terms": [
+        "亡くなる"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～と聞いて、～てもいいかな"
+    },
+    {
+      "id": "T-008-V13-012",
+      "group": "condolences",
+      "role_vi": "Đồng nghiệp để người vừa có tang tự quyết có nói chuyện gia đình không",
+      "gender": "male",
+      "ja": "ご家族のことは、今はお話しにならなくても大丈夫です。",
+      "vi": "Chuyện gia đình, lúc này chị chưa cần phải nói đâu ạ.",
+      "terms": [
+        "ご家族"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～なくても大丈夫"
+    },
+    {
+      "id": "T-008-V13-013",
+      "group": "share-the-load",
+      "role_vi": "Đồng nghiệp đề nghị nhận phần chuẩn bị tài liệu",
+      "gender": "female",
+      "ja": "会議の資料をそろえる作業だけ、私が引き受けましょうか。",
+      "vi": "Để tôi lo riêng phần chuẩn bị tài liệu cho cuộc họp nhé?",
+      "terms": [
+        "資料",
+        "引き受ける"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～だけ、私が引き受けましょうか"
+    },
+    {
+      "id": "T-008-V13-014",
+      "group": "share-the-load",
+      "role_vi": "Đồng nghiệp hỏi nên giúp đến đâu để người kia vẫn chủ động",
+      "gender": "male",
+      "ja": "会議の準備は、どこまで私が手伝うとやりやすいですか。",
+      "vi": "Phần chuẩn bị cuộc họp, tôi giúp đến đâu thì tiện cho chị nhất ạ?",
+      "terms": [],
+      "scenes": [
+        "S007",
+        "S010"
+      ],
+      "pattern": "どこまで～とやりやすいですか"
+    },
+    {
+      "id": "T-008-V13-015",
+      "group": "share-the-load",
+      "role_vi": "Bạn thân đề nghị mang cơm đến và nói rõ có thể từ chối",
+      "gender": "female",
+      "ja": "お弁当を届けられるけど、今日は一人でいたいなら遠慮なく断ってね。",
+      "vi": "Tớ mang cơm hộp đến được, nhưng nếu hôm nay cậu muốn ở một mình thì cứ từ chối nhé.",
+      "terms": [
+        "遠慮なく",
+        "断る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～なら遠慮なく～てね"
+    },
+    {
+      "id": "T-008-V13-016",
+      "group": "share-the-load",
+      "role_vi": "Bạn thân không thể đến tận nơi nhưng đề nghị lắng nghe qua điện thoại",
+      "gender": "male",
+      "ja": "今日は会いに行けないけど、夜なら電話でゆっくり話を聞けるよ。",
+      "vi": "Hôm nay tớ không qua gặp cậu được, nhưng tối nay tớ rảnh để nghe cậu kể qua điện thoại.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～なら～できる"
+    },
+    {
+      "id": "T-008-V13-017",
+      "group": "check-in",
+      "role_vi": "Bạn gọi hỏi thăm sau buổi phỏng vấn",
+      "gender": "female",
+      "ja": "面接から少したったけど、最近はどうしてる？",
+      "vi": "Từ hôm phỏng vấn tới giờ cậu thế nào rồi?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～から少したったけど、どうしてる"
+    },
+    {
+      "id": "T-008-V13-018",
+      "group": "check-in",
+      "role_vi": "Bạn hỏi thăm và để người nghe khỏi phải kể về kết quả phỏng vấn",
+      "gender": "male",
+      "ja": "その後どうしてるか気になっただけだから、面接の話はしなくてもいいよ。",
+      "vi": "Tớ chỉ muốn biết dạo này cậu thế nào thôi, chuyện phỏng vấn thì không cần kể đâu.",
+      "terms": [
+        "その後"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～なくてもいい"
+    },
+    {
+      "id": "T-008-V13-019",
+      "group": "check-in",
+      "role_vi": "Bạn đề nghị đi cùng khi người kia muốn ra ngoài",
+      "gender": "female",
+      "ja": "出かけたくなったら、近所を少し一緒に歩こう。",
+      "vi": "Khi nào cậu muốn ra ngoài, mình cùng đi dạo quanh đây một lát nhé.",
+      "terms": [],
+      "scenes": [
+        "S005",
+        "S012"
+      ],
+      "pattern": "～たくなったら、～よう"
+    }
+  ]
+}
