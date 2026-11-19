@@ -1,0 +1,415 @@
+{
+  "code": "S-013",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b57330367319a53ca2c09199f08bb5653cda08e34f39f3ec488d233f84be0578",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "choose": "Chọn xe, cỡ và đồ lắp thêm",
+    "park": "Hỏi chỗ gửi xe",
+    "find": "Tìm lại xe bị chuyển chỗ",
+    "flat": "Báo lốp xẹp hoặc mất chìa",
+    "brake": "Báo tiếng phanh và lấy xe sau sửa"
+  },
+  "items": [
+    {
+      "id": "S-013-V13-001",
+      "group": "choose",
+      "role_vi": "Khách ở tiệm tìm xe dễ đi để đi làm",
+      "gender": "female",
+      "ja": "乗りやすい自転車はありますか。",
+      "vi": "Có chiếc xe đạp nào dễ đi không ạ?",
+      "terms": [
+        "乗りやすい",
+        "自転車"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-013-V13-002",
+      "group": "choose",
+      "role_vi": "Khách ngồi thử nhận thấy yên hơi cao",
+      "gender": "male",
+      "ja": "サドルが少し高いです。",
+      "vi": "Yên xe hơi cao ạ.",
+      "terms": [
+        "サドル",
+        "高い"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "noun_ga_adjective"
+    },
+    {
+      "id": "S-013-V13-003",
+      "group": "choose",
+      "role_vi": "Khách nhờ nhân viên hạ yên sau khi ngồi thử",
+      "gender": "female",
+      "ja": "サドルを少し下げてもらえますか。",
+      "vi": "Anh hạ yên xuống một chút giúp tôi được không ạ?",
+      "terms": [
+        "サドル",
+        "下げる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-013-V13-004",
+      "group": "choose",
+      "role_vi": "Khách muốn gắn thêm giỏ lên xe đi làm",
+      "gender": "male",
+      "ja": "この自転車にかごを付けられますか。",
+      "vi": "Chiếc xe này lắp thêm giỏ được không ạ?",
+      "terms": [
+        "自転車",
+        "かご",
+        "付ける"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "verb_potential_ka"
+    },
+    {
+      "id": "S-013-V13-005",
+      "group": "choose",
+      "role_vi": "Khách hỏi tiệm khi nào xe màu xanh có hàng lại",
+      "gender": "female",
+      "ja": "青い自転車はいつ入りますか。",
+      "vi": "Khi nào có xe màu xanh về ạ?",
+      "terms": [
+        "自転車",
+        "入る"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "noun_wa_itsu_hairimasu"
+    },
+    {
+      "id": "S-013-V13-006",
+      "group": "choose",
+      "role_vi": "Khách xác nhận xe màu đen đã có sẵn khóa",
+      "gender": "male",
+      "ja": "黒い自転車には鍵が付いていますね。",
+      "vi": "Xe đen đã có sẵn khóa, đúng không ạ?",
+      "terms": [
+        "黒い",
+        "自転車",
+        "鍵"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "detail_masu_ne"
+    },
+    {
+      "id": "S-013-V13-007",
+      "group": "choose",
+      "role_vi": "Khách hỏi có thể đăng ký xe ngay ở cửa hàng hay không",
+      "gender": "female",
+      "ja": "ここで防犯登録ができますか。",
+      "vi": "Tôi đăng ký xe ngay ở đây được không ạ?",
+      "terms": [
+        "防犯登録"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "place_de_dekimasu_ka"
+    },
+    {
+      "id": "S-013-V13-008",
+      "group": "park",
+      "role_vi": "Người đi xe hỏi bãi có nhận gửi xe một ngày không",
+      "gender": "male",
+      "ja": "一日だけ自転車を置けますか。",
+      "vi": "Tôi gửi xe đạp một ngày được không ạ?",
+      "terms": [
+        "自転車",
+        "置く"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "verb_potential_ka"
+    },
+    {
+      "id": "S-013-V13-009",
+      "group": "park",
+      "role_vi": "Khách hỏi nhân viên bãi chỗ dành cho xe đạp thường",
+      "gender": "female",
+      "ja": "普通の自転車はどこに置けばいいですか。",
+      "vi": "Xe đạp thường thì tôi để ở đâu ạ?",
+      "terms": [
+        "自転車",
+        "置く"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "doko_ni_okeba"
+    },
+    {
+      "id": "S-013-V13-010",
+      "group": "park",
+      "role_vi": "Khách hỏi chỗ gửi theo tháng ở gần lối mình hay vào",
+      "gender": "female",
+      "ja": "北の入口の近くに月ぎめの空きはありますか。",
+      "vi": "Gần lối vào phía bắc còn chỗ gửi theo tháng không ạ?",
+      "terms": [
+        "入口",
+        "月ぎめ",
+        "空き"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-013-V13-011",
+      "group": "park",
+      "role_vi": "Khách hỏi thời hạn báo nếu tháng sau muốn ngừng gửi",
+      "gender": "male",
+      "ja": "来月からやめたいときは、いつまでに言えばいいですか。",
+      "vi": "Nếu muốn ngừng gửi từ tháng sau thì tôi cần báo chậm nhất khi nào ạ?",
+      "terms": [
+        "来月",
+        "やめる"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "itsumadeni_ieba"
+    },
+    {
+      "id": "S-013-V13-012",
+      "group": "park",
+      "role_vi": "Khách hỏi dãy gửi tạm thay cho khu sắp sửa",
+      "gender": "female",
+      "ja": "工事の間はどの列に置きますか。",
+      "vi": "Trong lúc sửa bãi thì tôi để xe ở dãy nào ạ?",
+      "terms": [
+        "列",
+        "置く"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "dono_noun_ni_masu"
+    },
+    {
+      "id": "S-013-V13-013",
+      "group": "park",
+      "role_vi": "Khách đi rất sớm hỏi giờ mở của khu được gợi ý",
+      "gender": "male",
+      "ja": "この場所は朝何時から入れますか。",
+      "vi": "Khu này vào được từ mấy giờ sáng ạ?",
+      "terms": [
+        "場所"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "nanjikara_verb_potential"
+    },
+    {
+      "id": "S-013-V13-014",
+      "group": "find",
+      "role_vi": "Khách báo với nhân viên không thấy xe ở dãy mình đã gửi",
+      "gender": "female",
+      "ja": "Aの列に置いた自転車が見つかりません。",
+      "vi": "Tôi không tìm thấy xe đạp đã để ở dãy A ạ.",
+      "terms": [
+        "列",
+        "置く",
+        "自転車",
+        "見つかる"
+      ],
+      "scenes": [
+        "S008",
+        "S014"
+      ],
+      "pattern": "noun_ga_mitsukarimasen"
+    },
+    {
+      "id": "S-013-V13-015",
+      "group": "find",
+      "role_vi": "Khách mô tả đặc điểm xe để nhân viên tìm lại",
+      "gender": "male",
+      "ja": "私の黒い自転車は後ろに鍵があります。",
+      "vi": "Xe đạp màu đen của tôi có khóa ở phía sau ạ.",
+      "terms": [
+        "黒い",
+        "自転車",
+        "鍵"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "place_ni_noun_ga_arimasu"
+    },
+    {
+      "id": "S-013-V13-016",
+      "group": "find",
+      "role_vi": "Khách kiểm mình nghe đúng là nhân viên đã chuyển xe",
+      "gender": "female",
+      "ja": "職員が自転車をBの列に移したんですね。",
+      "vi": "Nhân viên đã chuyển xe sang dãy B, đúng không ạ?",
+      "terms": [
+        "職員",
+        "自転車",
+        "列",
+        "移す"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "verb_n_desu_ne"
+    },
+    {
+      "id": "S-013-V13-017",
+      "group": "find",
+      "role_vi": "Khách vừa tìm thấy xe hỏi lần sau để xe ở đâu",
+      "gender": "male",
+      "ja": "次から自転車はどこに置けばいいですか。",
+      "vi": "Từ lần sau tôi để xe ở đâu ạ?",
+      "terms": [
+        "自転車",
+        "置く"
+      ],
+      "scenes": [
+        "S010",
+        "S020"
+      ],
+      "pattern": "doko_ni_okeba"
+    },
+    {
+      "id": "S-013-V13-018",
+      "group": "flat",
+      "role_vi": "Người dắt xe đến tiệm báo lốp đã xẹp",
+      "gender": "female",
+      "ja": "タイヤの空気が抜けました。",
+      "vi": "Lốp xe tôi xẹp rồi ạ.",
+      "terms": [
+        "タイヤ",
+        "空気",
+        "抜ける"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "noun_ga_past"
+    },
+    {
+      "id": "S-013-V13-019",
+      "group": "flat",
+      "role_vi": "Khách hỏi thợ xem lốp có sửa trong ngày được không",
+      "gender": "male",
+      "ja": "このタイヤは今日中に直せますか。",
+      "vi": "Lốp này sửa trong hôm nay được không ạ?",
+      "terms": [
+        "タイヤ",
+        "直す"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "verb_potential_ka"
+    },
+    {
+      "id": "S-013-V13-020",
+      "group": "flat",
+      "role_vi": "Khách báo mất chìa khóa xe cho cửa hàng nơi mua",
+      "gender": "female",
+      "ja": "自転車の鍵をなくしました。",
+      "vi": "Tôi làm mất chìa khóa xe đạp rồi ạ.",
+      "terms": [
+        "自転車",
+        "鍵",
+        "なくす"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "noun_wo_nakushimashita"
+    },
+    {
+      "id": "S-013-V13-021",
+      "group": "brake",
+      "role_vi": "Khách thử xe xong quay lại báo phanh vẫn phát tiếng lạ",
+      "gender": "female",
+      "ja": "ブレーキからまだ変な音がします。",
+      "vi": "Phanh vẫn kêu tiếng lạ ạ.",
+      "terms": [
+        "ブレーキ",
+        "変",
+        "音"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "noun_kara_oto_ga_suru"
+    },
+    {
+      "id": "S-013-V13-022",
+      "group": "brake",
+      "role_vi": "Khách quay lại và nhờ tiệm kiểm riêng phanh xe cũ",
+      "gender": "male",
+      "ja": "この自転車のブレーキをもう一度見てもらえますか。",
+      "vi": "Anh kiểm tra lại phanh của chiếc xe này giúp tôi được không ạ?",
+      "terms": [
+        "自転車",
+        "ブレーキ"
+      ],
+      "scenes": [
+        "S022",
+        "S023"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-013-V13-023",
+      "group": "brake",
+      "role_vi": "Khách hỏi có thể gửi xe lại một ngày để thợ kiểm không",
+      "gender": "female",
+      "ja": "自転車を一日預けてもいいですか。",
+      "vi": "Tôi để xe lại tiệm một ngày được không ạ?",
+      "terms": [
+        "自転車",
+        "預ける"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-013-V13-024",
+      "group": "brake",
+      "role_vi": "Khách hỏi có thể chạy thử xe ngay tại tiệm trước khi lấy không",
+      "gender": "male",
+      "ja": "ここで少し自転車を試してもいいですか。",
+      "vi": "Tôi chạy thử xe một chút ở đây được không ạ?",
+      "terms": [
+        "自転車",
+        "試す"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    }
+  ]
+}

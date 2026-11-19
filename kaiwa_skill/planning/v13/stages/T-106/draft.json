@@ -1,0 +1,392 @@
+{
+  "code": "T-106",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "79ba9a5e5c01a16225e1edb47e619b1d56ab1edafdaa422652ca8ea795e0558e",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "start": "Mở cuộc trao đổi về kỳ hợp đồng tới",
+    "conditions": "Đối chiếu điều kiện và đề xuất điều chỉnh",
+    "delay": "Làm rõ mục còn treo và xin dời hạn",
+    "decision": "Trả lời gia hạn hoặc chốt bàn giao"
+  },
+  "items": [
+    {
+      "id": "T-106-V13-001",
+      "group": "start",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "契約期間は今月末までですが、更新の面談はいつごろですか。",
+      "vi": "Hợp đồng của tôi đến hết tháng này, khoảng khi nào mình trao đổi về việc gia hạn ạ?",
+      "terms": [
+        "契約期間",
+        "月末",
+        "面談"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "面談はいつごろですか"
+    },
+    {
+      "id": "T-106-V13-002",
+      "group": "start",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "来期の勤務時間については、人事の方に確認すればいいですか。",
+      "vi": "Về giờ làm kỳ tới, tôi hỏi bên nhân sự là được phải không ạ?",
+      "terms": [
+        "来期",
+        "勤務時間",
+        "人事"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "〜に確認すればいいですか"
+    },
+    {
+      "id": "T-106-V13-003",
+      "group": "start",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "次の面談には、今の契約書を持っていけばいいですか。",
+      "vi": "Buổi trao đổi tới tôi mang hợp đồng hiện tại đến là được, đúng không ạ?",
+      "terms": [
+        "面談",
+        "契約書"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "〜すればいいですか"
+    },
+    {
+      "id": "T-106-V13-004",
+      "group": "start",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "更新が未確定でも、次はいつごろ状況を伺えますか。",
+      "vi": "Dù việc gia hạn chưa chốt, khoảng khi nào tôi có thể hỏi lại tình hình ạ?",
+      "terms": [
+        "未確定"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜が未確定でも、いつごろVますか"
+    },
+    {
+      "id": "T-106-V13-005",
+      "group": "start",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "来期も続けたいとは思っていますが、労働条件を確認してから正式にお返事したいです。",
+      "vi": "Tôi có nguyện vọng làm tiếp kỳ tới, nhưng muốn xem rõ điều kiện làm việc rồi mới trả lời chính thức ạ.",
+      "terms": [
+        "来期",
+        "労働条件",
+        "正式"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "〜てから正式にお返事します"
+    },
+    {
+      "id": "T-106-V13-006",
+      "group": "start",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "更新にはまだ同意していないので、配置表を「回答待ち」に訂正していただけますか。",
+      "vi": "Tôi chưa đồng ý gia hạn, anh sửa trạng thái trên bảng bố trí thành “chờ trả lời” giúp tôi được không ạ?",
+      "terms": [
+        "同意",
+        "回答待ち",
+        "訂正"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "T-106-V13-007",
+      "group": "conditions",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "今の契約書と照合したいので、来期の勤務時間と勤務地を教えてください。",
+      "vi": "Tôi muốn đối chiếu với hợp đồng hiện tại, chị cho tôi biết giờ và nơi làm việc kỳ tới ạ.",
+      "terms": [
+        "契約書",
+        "照合する",
+        "来期",
+        "勤務時間",
+        "勤務地"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "〜したいので、〜を教えてください"
+    },
+    {
+      "id": "T-106-V13-008",
+      "group": "conditions",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "電話の一次対応は、用件を聞いて担当者につなぐところまででしょうか。",
+      "vi": "Việc tiếp nhận điện thoại bước đầu chỉ đến mức hỏi khách cần gì rồi chuyển máy cho người phụ trách phải không ạ?",
+      "terms": [
+        "一次対応"
+      ],
+      "scenes": [
+        "S006",
+        "S010"
+      ],
+      "pattern": "〜ところまででしょうか"
+    },
+    {
+      "id": "T-106-V13-009",
+      "group": "conditions",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "水曜だけ子どもの迎えがあるので、終業時刻を五時のままにできないでしょうか。",
+      "vi": "Riêng thứ Tư tôi phải đón con, có thể giữ giờ tan ca lúc 5 giờ chiều như cũ được không ạ?",
+      "terms": [
+        "終業時刻"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜だけ〜にできないでしょうか"
+    },
+    {
+      "id": "T-106-V13-010",
+      "group": "conditions",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "水曜の最後の三十分を代わってもらい、私が木曜の遅い当番に入る形で検討していただけますか。",
+      "vi": "Chị cân nhắc giúp phương án có người trực thay tôi nửa tiếng cuối thứ Tư, còn tôi nhận ca trực muộn thứ Năm được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "T-106-V13-011",
+      "group": "conditions",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "勤務時間は分かりましたが、当番表がいつ出るかも教えていただけますか。",
+      "vi": "Tôi đã rõ giờ làm, chị cho tôi biết thêm khi nào có bảng phân ca trực được không ạ?",
+      "terms": [
+        "勤務時間",
+        "当番表"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "T-106-V13-012",
+      "group": "conditions",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "二つの建物で働く場合、通勤手当の計算は給与担当の方に確認できますか。",
+      "vi": "Nếu làm ở cả hai tòa, tôi có thể hỏi người phụ trách lương về cách tính phụ cấp đi làm không ạ?",
+      "terms": [
+        "通勤手当",
+        "給与担当"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜場合、〜に確認できますか"
+    },
+    {
+      "id": "T-106-V13-013",
+      "group": "delay",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "水曜の終業時刻について、今週中に回答をいただける見込みはありますか。",
+      "vi": "Về giờ tan ca thứ Tư, liệu tôi có thể nhận được câu trả lời trong tuần này không ạ?",
+      "terms": [
+        "終業時刻",
+        "見込み"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜見込みはありますか"
+    },
+    {
+      "id": "T-106-V13-014",
+      "group": "delay",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "別館で働く日数の記載がないので、どなたに確認すればいいですか。",
+      "vi": "Giấy chưa ghi số ngày làm việc ở tòa phụ, tôi nên hỏi ai để xác nhận ạ?",
+      "terms": [
+        "記載"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜に確認すればいいですか"
+    },
+    {
+      "id": "T-106-V13-015",
+      "group": "delay",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "別館の日数が分かるのは木曜だそうですが、回答期限をそれ以降に延ばせますか。",
+      "vi": "Tôi nghe thứ Năm mới biết số ngày sang tòa phụ, chị có thể dời hạn trả lời sang sau mốc đó không ạ?",
+      "terms": [
+        "回答期限",
+        "延ばす"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜以降に延ばせますか"
+    },
+    {
+      "id": "T-106-V13-016",
+      "group": "delay",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "週二日というのは、会社が正式に提示した条件でしょうか、それとも現場の案でしょうか。",
+      "vi": "Hai ngày mỗi tuần là điều kiện công ty đã chính thức đưa ra, hay vẫn là phương án của nhóm ạ?",
+      "terms": [
+        "正式",
+        "提示する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜でしょうか、それとも〜でしょうか"
+    },
+    {
+      "id": "T-106-V13-017",
+      "group": "delay",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "勤務時間は確認できましたので、勤務地が決まり次第教えていただけると助かります。",
+      "vi": "Tôi đã rõ giờ làm, khi chốt nơi làm việc chị báo tôi ngay giúp nhé.",
+      "terms": [
+        "勤務時間",
+        "勤務地",
+        "決まり次第"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜が決まり次第"
+    },
+    {
+      "id": "T-106-V13-018",
+      "group": "decision",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "ご説明いただいたとおり、本館で朝九時から午後五時までという条件で契約更新をお願いします。",
+      "vi": "Tôi đồng ý gia hạn hợp đồng theo điều kiện chị đã giải thích, làm ở tòa chính từ 9 giờ đến 5 giờ chiều ạ.",
+      "terms": [
+        "契約更新"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜という条件で契約更新をお願いします"
+    },
+    {
+      "id": "T-106-V13-019",
+      "group": "decision",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "手続きを進める前に、最終版の書面と口頭で伺った条件を照合したいです。",
+      "vi": "Trước khi làm thủ tục tiếp, tôi muốn đối chiếu văn bản cuối với điều kiện chị đã giải thích trực tiếp ạ.",
+      "terms": [
+        "手続き",
+        "最終版",
+        "書面",
+        "照合する"
+      ],
+      "scenes": [
+        "S011",
+        "S020"
+      ],
+      "pattern": "〜前に照合したいです"
+    },
+    {
+      "id": "T-106-V13-020",
+      "group": "decision",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "今回の更新は辞退しますので、月末までに何を引き継げばいいか教えてください。",
+      "vi": "Tôi xin từ chối gia hạn lần này, anh cho tôi biết cần bàn giao việc gì trước khi hết tháng ạ.",
+      "terms": [
+        "辞退する",
+        "月末",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S012",
+        "S015"
+      ],
+      "pattern": "〜ので、〜か教えてください"
+    },
+    {
+      "id": "T-106-V13-021",
+      "group": "decision",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "初日の研修が午後四時になる場合、契約どおりの終業時刻までに終わりそうですか。",
+      "vi": "Nếu buổi hướng dẫn ngày đầu chuyển sang 4 giờ chiều, liệu có xong chậm nhất vào giờ tan ca theo hợp đồng không ạ?",
+      "terms": [
+        "終業時刻"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜場合、〜までに終わりそうですか"
+    },
+    {
+      "id": "T-106-V13-022",
+      "group": "decision",
+      "role_vi": "Linh trao đổi với quản lý trực tiếp",
+      "gender": "female",
+      "ja": "更新しないことをチームに伝える時期は、引き継ぐ方が決まってからでよろしいですか。",
+      "vi": "Việc tôi không gia hạn sẽ báo cả nhóm sau khi chọn được người nhận bàn giao, đúng không ạ?",
+      "terms": [
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜が決まってからでよろしいですか"
+    },
+    {
+      "id": "T-106-V13-023",
+      "group": "decision",
+      "role_vi": "Linh trao đổi với nhân sự",
+      "gender": "female",
+      "ja": "火曜だけ別館で、勤務時間はどちらも朝九時から午後五時という条件で契約更新をお願いします。",
+      "vi": "Tôi đồng ý gia hạn theo điều kiện chỉ thứ Ba làm ở tòa phụ, và ở cả hai nơi đều làm từ 9 giờ đến 5 giờ chiều ạ.",
+      "terms": [
+        "勤務時間",
+        "契約更新"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜という条件で契約更新をお願いします"
+    }
+  ]
+}

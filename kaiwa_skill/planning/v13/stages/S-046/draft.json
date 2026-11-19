@@ -1,0 +1,429 @@
+{
+  "code": "S-046",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "d56bea6bdcdf59e5b847a8e3a8672afea4183d59eadf072103fc4e955ae2297f",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "bank": "Giao dịch và hỏi mở tài khoản",
+    "post": "Chọn cách gửi ở bưu điện",
+    "verify": "Hỏi khoản phí và kiểm tên người nhận",
+    "yamato": "Gửi tại điểm Yamato hoặc cửa hàng tiện lợi"
+  },
+  "items": [
+    {
+      "id": "S-046-V13-001",
+      "group": "bank",
+      "role_vi": "Khách ở quầy ngân hàng",
+      "gender": "female",
+      "ja": "現金を預ける窓口はどこですか。",
+      "vi": "Quầy gửi tiền mặt ở đâu ạ?",
+      "terms": [
+        "現金",
+        "窓口"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜はどこですか"
+    },
+    {
+      "id": "S-046-V13-002",
+      "group": "bank",
+      "role_vi": "Khách ở quầy ngân hàng",
+      "gender": "female",
+      "ja": "現金の引き出しは何時までできますか。",
+      "vi": "Tôi có thể rút tiền mặt tại quầy đến mấy giờ ạ?",
+      "terms": [
+        "現金",
+        "引き出し"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "何時まで〜できますか"
+    },
+    {
+      "id": "S-046-V13-003",
+      "group": "bank",
+      "role_vi": "Khách ở quầy ngân hàng",
+      "gender": "female",
+      "ja": "この口座に現金を一万五千円預けたいです。",
+      "vi": "Tôi muốn nộp 15.000 yên tiền mặt vào tài khoản này ạ.",
+      "terms": [
+        "口座",
+        "現金",
+        "万",
+        "千",
+        "〜円"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜を預けたいです"
+    },
+    {
+      "id": "S-046-V13-004",
+      "group": "bank",
+      "role_vi": "Khách ở quầy ngân hàng",
+      "gender": "female",
+      "ja": "預けるのは五万円ではなく、一万五千円です。",
+      "vi": "Số tiền tôi gửi là 15.000 yên, không phải 50.000 yên ạ.",
+      "terms": [
+        "万",
+        "千",
+        "〜円"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-046-V13-005",
+      "group": "bank",
+      "role_vi": "Khách ở quầy ngân hàng",
+      "gender": "female",
+      "ja": "口座を開く相談は、どの窓口ですればいいですか。",
+      "vi": "Tôi nên đến quầy nào để hỏi về việc mở tài khoản ạ?",
+      "terms": [
+        "口座",
+        "窓口"
+      ],
+      "scenes": [
+        "S006",
+        "S009"
+      ],
+      "pattern": "どこで〜ばいいですか"
+    },
+    {
+      "id": "S-046-V13-006",
+      "group": "bank",
+      "role_vi": "Khách ở quầy ngân hàng",
+      "gender": "female",
+      "ja": "口座開設の相談には、どんな書類を持ってくればいいですか。",
+      "vi": "Khi đến hỏi mở tài khoản, tôi cần mang những giấy tờ gì ạ?",
+      "terms": [
+        "口座開設",
+        "書類",
+        "持ってくる"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "何を持ってくればいいですか"
+    },
+    {
+      "id": "S-046-V13-007",
+      "group": "bank",
+      "role_vi": "Khách ở quầy ngân hàng",
+      "gender": "female",
+      "ja": "昨日お話しした口座の件で、在留カードと住所が分かる書類を持ってきました。",
+      "vi": "Về việc mở tài khoản tôi đã hỏi hôm qua, tôi mang thẻ cư trú và giấy có ghi địa chỉ tới rồi ạ.",
+      "terms": [
+        "口座",
+        "在留カード",
+        "書類",
+        "持ってくる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜の件で、〜を持ってきました"
+    },
+    {
+      "id": "S-046-V13-008",
+      "group": "post",
+      "role_vi": "Khách gửi bưu phẩm tại bưu điện",
+      "gender": "female",
+      "ja": "この荷物を大阪に送りたいです。",
+      "vi": "Tôi muốn gửi kiện này đến Osaka ạ.",
+      "terms": [
+        "荷物",
+        "送る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜に送りたいです"
+    },
+    {
+      "id": "S-046-V13-009",
+      "group": "post",
+      "role_vi": "Khách gửi bưu phẩm tại bưu điện",
+      "gender": "female",
+      "ja": "この封筒が普通郵便より早く届く送り方はありますか。",
+      "vi": "Có cách nào gửi phong bì này đến nơi nhanh hơn thư thường không ạ?",
+      "terms": [
+        "封筒",
+        "普通郵便",
+        "早い",
+        "届く",
+        "送る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜より早く届く送り方はありますか"
+    },
+    {
+      "id": "S-046-V13-010",
+      "group": "post",
+      "role_vi": "Khách gửi bưu phẩm tại bưu điện",
+      "gender": "female",
+      "ja": "この厚さでゆうパケットが無理なら、ゆうパックで送れますか。",
+      "vi": "Nếu gói dày thế này không gửi bằng Yu-Packet được thì gửi bằng Yu-Pack được không ạ?",
+      "terms": [
+        "厚さ",
+        "ゆうパケット",
+        "ゆうパック",
+        "送る"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜なら、〜で送れますか"
+    },
+    {
+      "id": "S-046-V13-011",
+      "group": "post",
+      "role_vi": "Khách gửi bưu phẩm tại bưu điện",
+      "gender": "female",
+      "ja": "金曜日は荷物を出す日ではなくて、届く予定の日ですか。",
+      "vi": "Thứ Sáu là ngày dự kiến giao, không phải ngày gửi kiện đúng không ạ?",
+      "terms": [
+        "荷物",
+        "届く"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜ではなくて、〜ですか"
+    },
+    {
+      "id": "S-046-V13-012",
+      "group": "post",
+      "role_vi": "Khách gửi bưu phẩm tại bưu điện",
+      "gender": "female",
+      "ja": "ゆうパックで送る場合、送料はいくらになりますか。",
+      "vi": "Nếu gửi bằng Yu-Pack thì cước là bao nhiêu ạ?",
+      "terms": [
+        "ゆうパック",
+        "送る",
+        "送料"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜場合、いくらになりますか"
+    },
+    {
+      "id": "S-046-V13-013",
+      "group": "verify",
+      "role_vi": "Khách kiểm lại tại quầy bưu phẩm",
+      "gender": "female",
+      "ja": "控えの二百円は箱の代金ですか。",
+      "vi": "Khoản 200 yên trên biên nhận là tiền hộp phải không ạ?",
+      "terms": [
+        "控え",
+        "〜円",
+        "代金"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜は〜の代金ですか"
+    },
+    {
+      "id": "S-046-V13-014",
+      "group": "verify",
+      "role_vi": "Khách kiểm lại tại quầy bưu phẩm",
+      "gender": "female",
+      "ja": "この荷物の宛名が私の名前と違うので、確認してもらえますか。",
+      "vi": "Tên người nhận trên kiện này khác tên tôi, anh kiểm tra lại giúp được không ạ?",
+      "terms": [
+        "荷物",
+        "宛名",
+        "違う",
+        "確認する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜て、確認してもらえますか"
+    },
+    {
+      "id": "S-046-V13-015",
+      "group": "verify",
+      "role_vi": "Khách kiểm lại tại quầy bưu phẩm",
+      "gender": "female",
+      "ja": "宛名が違う荷物のことで、夕方にもう一度聞きに来てもいいですか。",
+      "vi": "Về kiện ghi sai tên người nhận, chiều muộn tôi ghé lại hỏi được không ạ?",
+      "terms": [
+        "宛名",
+        "違う",
+        "荷物",
+        "夕方"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "〜てもいいですか"
+    },
+    {
+      "id": "S-046-V13-016",
+      "group": "verify",
+      "role_vi": "Khách kiểm lại tại quầy bưu phẩm",
+      "gender": "female",
+      "ja": "この荷物の宛名も住所も合っています。",
+      "vi": "Tên người nhận lẫn địa chỉ trên kiện này đều đúng ạ.",
+      "terms": [
+        "荷物",
+        "宛名",
+        "合う"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜も〜も合っています"
+    },
+    {
+      "id": "S-046-V13-017",
+      "group": "yamato",
+      "role_vi": "Người gửi kiện tại quầy Yamato",
+      "gender": "female",
+      "ja": "誕生日のプレゼントなので、この荷物は土曜日までに届きますか。",
+      "vi": "Đây là quà sinh nhật, kiện này có đến kịp thứ Bảy không ạ?",
+      "terms": [
+        "荷物",
+        "届く"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "〜までに届きますか"
+    },
+    {
+      "id": "S-046-V13-018",
+      "group": "yamato",
+      "role_vi": "Người gửi kiện tại quầy Yamato",
+      "gender": "female",
+      "ja": "プレゼントなので、着払いではなく発払いでお願いします。",
+      "vi": "Đây là quà nên tôi xin trả cước khi gửi, thay vì để người nhận trả ạ.",
+      "terms": [
+        "着払い",
+        "発払い"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "〜ではなく、〜でお願いします"
+    },
+    {
+      "id": "S-046-V13-019",
+      "group": "yamato",
+      "role_vi": "Người gửi kiện tại cửa hàng tiện lợi",
+      "gender": "female",
+      "ja": "プレゼントの赤い箱は発払いで、青い箱は着払いでお願いします。",
+      "vi": "Kiện màu đỏ là quà nên tôi trả cước khi gửi, còn kiện màu xanh nhờ để người nhận trả cước ạ.",
+      "terms": [
+        "発払い",
+        "着払い"
+      ],
+      "scenes": [
+        "S022",
+        "S029"
+      ],
+      "pattern": "〜は発払いで、〜は着払いでお願いします"
+    },
+    {
+      "id": "S-046-V13-020",
+      "group": "yamato",
+      "role_vi": "Người gửi kiện tại quầy Yamato",
+      "gender": "female",
+      "ja": "冷蔵のチーズを送るときは、どうやって梱包すればいいですか。",
+      "vi": "Khi gửi phô mai cần giữ lạnh, tôi nên đóng gói thế nào ạ?",
+      "terms": [
+        "冷蔵",
+        "送る",
+        "梱包する"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "どうやって〜ばいいですか"
+    },
+    {
+      "id": "S-046-V13-021",
+      "group": "yamato",
+      "role_vi": "Người gửi kiện tại quầy Yamato",
+      "gender": "female",
+      "ja": "この控えのどの番号で荷物を追跡できますか。",
+      "vi": "Tôi dùng số nào trên biên nhận này để theo dõi kiện hàng ạ?",
+      "terms": [
+        "控え",
+        "荷物",
+        "追跡する"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "どの番号で〜できますか"
+    },
+    {
+      "id": "S-046-V13-022",
+      "group": "yamato",
+      "role_vi": "Người gửi kiện tại cửa hàng tiện lợi",
+      "gender": "female",
+      "ja": "こちらのコンビニでヤマトの宅急便を送れますか。",
+      "vi": "Cửa hàng tiện lợi này có nhận gửi kiện qua Yamato không ạ?",
+      "terms": [
+        "コンビニ",
+        "宅急便",
+        "送る"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "〜で送れますか"
+    },
+    {
+      "id": "S-046-V13-023",
+      "group": "yamato",
+      "role_vi": "Người gửi kiện tại cửa hàng tiện lợi",
+      "gender": "female",
+      "ja": "クール宅急便を出せる営業所はどこですか。",
+      "vi": "Điểm giao dịch nào nhận kiện gửi lạnh của Yamato ạ?",
+      "terms": [
+        "クール宅急便",
+        "営業所"
+      ],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "〜はどこですか"
+    },
+    {
+      "id": "S-046-V13-024",
+      "group": "yamato",
+      "role_vi": "Người gửi kiện tại cửa hàng tiện lợi",
+      "gender": "female",
+      "ja": "お届け先の部屋番号を書き忘れたのですが、ヤマトの集荷はもう終わりましたか。",
+      "vi": "Tôi quên ghi số phòng của người nhận, Yamato đến lấy kiện đi chưa ạ?",
+      "terms": [
+        "お届け先",
+        "集荷"
+      ],
+      "scenes": [
+        "S028",
+        "S030"
+      ],
+      "pattern": "〜のですが、もう〜ましたか"
+    }
+  ]
+}

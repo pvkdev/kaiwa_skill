@@ -1,0 +1,387 @@
+{
+  "code": "T-112",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "fcbd6393d0f95d3cfa84c825d04ba304d8de4aa86fc930a9011e0de76eed5c2c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "leave": "Xin nghỉ và nói điều muốn giữ riêng",
+    "handoff": "Bàn giao việc và chốt đầu mối",
+    "return": "Hẹn cập nhật và bàn giờ trở lại",
+    "review": "Thử cách phân việc và xem lại"
+  },
+  "items": [
+    {
+      "id": "T-112-V13-001",
+      "group": "leave",
+      "role_vi": "Nhân viên mở lời với quản lý",
+      "gender": "female",
+      "ja": "治療のため、しばらくお休みをいただきたいです。",
+      "vi": "Tôi muốn xin nghỉ một thời gian để điều trị ạ.",
+      "terms": [
+        "治療"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "mở_lời_xin_nghỉ"
+    },
+    {
+      "id": "T-112-V13-002",
+      "group": "leave",
+      "role_vi": "Nhân viên nêu thời gian nghỉ dự kiến",
+      "gender": "female",
+      "ja": "今のところ、休む期間は三週間ほどの見込みです。",
+      "vi": "Hiện tôi dự kiến sẽ nghỉ khoảng ba tuần ạ.",
+      "terms": [
+        "期間",
+        "見込み"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "nêu_khoảng_dự_kiến"
+    },
+    {
+      "id": "T-112-V13-003",
+      "group": "leave",
+      "role_vi": "Quản lý đề nghị kiểm tra thủ tục",
+      "gender": "male",
+      "ja": "休みの扱いと手順は、先に人事と確認しましょう。",
+      "vi": "Trước hết mình hỏi nhân sự xem chị nghỉ theo diện nào và cần làm những bước gì nhé.",
+      "terms": [
+        "手順",
+        "人事"
+      ],
+      "scenes": [
+        "S001",
+        "S004"
+      ],
+      "pattern": "chốt_bước_xác_nhận"
+    },
+    {
+      "id": "T-112-V13-004",
+      "group": "leave",
+      "role_vi": "Nhân viên nêu giới hạn riêng tư",
+      "gender": "female",
+      "ja": "チームに伝えるのは休みの日程と引き継ぎ先だけにして、病名は伏せていただけますか。",
+      "vi": "Anh chỉ báo cho nhóm lịch nghỉ và người nhận bàn giao, còn tên bệnh thì giữ riêng giúp tôi được không ạ?",
+      "terms": [
+        "伝える",
+        "日程",
+        "病名"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "xin_giới_hạn_chia_sẻ"
+    },
+    {
+      "id": "T-112-V13-005",
+      "group": "leave",
+      "role_vi": "Nhân viên hỏi người tiếp nhận thông tin sức khỏe",
+      "gender": "female",
+      "ja": "健康情報が必要でしたら、誰が受け取って何に使うのか先に教えていただけますか。",
+      "vi": "Nếu cần thông tin sức khỏe, anh cho tôi biết trước ai sẽ nhận và dùng vào việc gì được không ạ?",
+      "terms": [
+        "健康情報",
+        "受け取る"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_đầu_mối_và_mục_đích"
+    },
+    {
+      "id": "T-112-V13-006",
+      "group": "leave",
+      "role_vi": "Nhân viên đề xuất phương án để nghỉ đúng mốc",
+      "gender": "female",
+      "ja": "治療の日程はずらせないので、私が三日までに準備して、四日は別の方に送付をお願いできませんか。",
+      "vi": "Tôi không dời được lịch điều trị, tôi chuẩn bị xong chậm nhất ngày ba rồi nhờ người khác gửi tài liệu vào ngày bốn được không ạ?",
+      "terms": [
+        "治療",
+        "日程",
+        "ずらす",
+        "送付"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "đề_xuất_cách_chia_việc"
+    },
+    {
+      "id": "T-112-V13-007",
+      "group": "handoff",
+      "role_vi": "Nhân viên xác nhận thời điểm bàn giao",
+      "gender": "female",
+      "ja": "休みに入る前に、三日の午後に仕事を引き継いでいただけますか。",
+      "vi": "Anh có thể nhận bàn giao phần việc của tôi vào chiều ngày ba, trước khi tôi bắt đầu nghỉ, được không ạ?",
+      "terms": [
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "hẹn_bàn_giao"
+    },
+    {
+      "id": "T-112-V13-008",
+      "group": "handoff",
+      "role_vi": "Nhân viên bàn giao báo cáo",
+      "gender": "female",
+      "ja": "報告書は原稿までできていますが、送付前に最終確認が必要です。",
+      "vi": "Báo cáo đã có bản thảo nhưng vẫn cần kiểm lần cuối trước khi gửi ạ.",
+      "terms": [
+        "原稿",
+        "送付",
+        "最終確認"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "nêu_phần_đã_xong_và_còn_lại"
+    },
+    {
+      "id": "T-112-V13-009",
+      "group": "handoff",
+      "role_vi": "Nhân viên chỉ trạng thái yêu cầu",
+      "gender": "female",
+      "ja": "問い合わせのうち二件は回答済みで、一件だけ確認待ちです。",
+      "vi": "Hai yêu cầu đã được trả lời, chỉ còn một yêu cầu đang chờ xác nhận ạ.",
+      "terms": [
+        "回答済み",
+        "確認待ち"
+      ],
+      "scenes": [
+        "S006",
+        "S010"
+      ],
+      "pattern": "nêu_phần_đã_xong_và_còn_lại"
+    },
+    {
+      "id": "T-112-V13-010",
+      "group": "handoff",
+      "role_vi": "Nhân viên đề nghị chốt người kiểm báo cáo",
+      "gender": "female",
+      "ja": "金曜が送付の期限なので、報告書の最終確認を誰にお願いするか決めていただけますか。",
+      "vi": "Hạn gửi là thứ Sáu, anh chốt giúp ai sẽ kiểm báo cáo lần cuối được không ạ?",
+      "terms": [
+        "送付",
+        "期限",
+        "最終確認"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "xin_chốt_người_phụ_trách"
+    },
+    {
+      "id": "T-112-V13-011",
+      "group": "handoff",
+      "role_vi": "Nhân viên đính chính mốc bàn giao",
+      "gender": "female",
+      "ja": "金曜は報告書を出す日なので、私との引き継ぎは木曜までにお願いします。",
+      "vi": "Thứ Sáu là ngày gửi báo cáo, còn việc bàn giao với tôi thì nhờ chị hoàn tất chậm nhất thứ Năm nhé.",
+      "terms": [
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "phân_biệt_hai_mốc"
+    },
+    {
+      "id": "T-112-V13-012",
+      "group": "handoff",
+      "role_vi": "Đồng nghiệp thay nhận yêu cầu khách",
+      "gender": "female",
+      "ja": "新しい問い合わせは私が引き受けて、急ぎか判断できないときは三宅さんに相談します。",
+      "vi": "Yêu cầu mới tôi sẽ tiếp nhận, còn nếu chưa rõ có cần xử lý gấp thì tôi hỏi anh Miyake ạ.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "chốt_cách_xử_lý_khi_chưa_rõ"
+    },
+    {
+      "id": "T-112-V13-013",
+      "group": "return",
+      "role_vi": "Nhân viên báo mốc cập nhật thay ngày trở lại",
+      "gender": "female",
+      "ja": "復帰日はまだ未定ですが、十七日の診察が終わったら、その日の夕方に状況をご連絡します。",
+      "vi": "Ngày đi làm lại chưa chốt, nhưng sau khi khám ngày mười bảy, chiều hôm đó tôi sẽ báo tình hình ạ.",
+      "terms": [
+        "復帰日",
+        "未定",
+        "診察",
+        "状況"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "hẹn_mốc_cập_nhật"
+    },
+    {
+      "id": "T-112-V13-014",
+      "group": "return",
+      "role_vi": "Quản lý nói phần chưa xếp lịch",
+      "gender": "male",
+      "ja": "二十五日に通常勤務に戻れるか確認してから、その後の日程を決めましょう。",
+      "vi": "Mình xác nhận xem ngày hai mươi lăm chị có thể làm như thường chưa rồi mới xếp lịch sau đó nhé.",
+      "terms": [
+        "通常勤務",
+        "日程"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "chờ_xác_nhận_rồi_chốt"
+    },
+    {
+      "id": "T-112-V13-015",
+      "group": "return",
+      "role_vi": "Nhân viên hỏi kế hoạch ngày đầu trở lại",
+      "gender": "female",
+      "ja": "復帰初日の面談は、何時にどちらへ伺えばよろしいでしょうか。",
+      "vi": "Buổi trao đổi ngày đầu đi làm lại, tôi cần đến đâu, lúc mấy giờ ạ?",
+      "terms": [
+        "面談"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "hỏi_mốc_gặp"
+    },
+    {
+      "id": "T-112-V13-016",
+      "group": "return",
+      "role_vi": "Nhân viên xin giờ làm phù hợp",
+      "gender": "female",
+      "ja": "通院の予定が変わったので、復帰後の最初の週は短時間勤務にしていただけないでしょうか。",
+      "vi": "Lịch đi khám của tôi thay đổi, tuần đầu trở lại anh có thể cho tôi làm ít giờ hơn được không ạ?",
+      "terms": [
+        "通院する",
+        "短時間勤務"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "xin_giới_hạn_giờ_làm"
+    },
+    {
+      "id": "T-112-V13-017",
+      "group": "return",
+      "role_vi": "Nhân viên xin xem thử quy trình mới",
+      "gender": "female",
+      "ja": "変更後の振り分け方を覚えたいので、最初の問い合わせを一緒に見ていただけますか。",
+      "vi": "Tôi muốn nắm cách phân loại mới, chị xem cùng tôi yêu cầu đầu tiên được không ạ?",
+      "terms": [
+        "振り分ける"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "nhờ_làm_thử_cùng"
+    },
+    {
+      "id": "T-112-V13-018",
+      "group": "review",
+      "role_vi": "Nhân viên xin chốt việc ưu tiên",
+      "gender": "female",
+      "ja": "午前中は今日が期限のメールを優先して、残った分はお昼に引き継いでもよろしいですか。",
+      "vi": "Buổi sáng tôi ưu tiên email đến hạn hôm nay rồi bàn giao phần còn lại lúc trưa được không ạ?",
+      "terms": [
+        "期限",
+        "優先する",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "xin_chốt_cách_chia_việc"
+    },
+    {
+      "id": "T-112-V13-019",
+      "group": "review",
+      "role_vi": "Nhân viên đề xuất chuyển việc tới muộn",
+      "gender": "female",
+      "ja": "十一時半以降に届いたメールは、大久保さんに直接引き受けていただけると助かります。",
+      "vi": "Các email đến từ mười một giờ rưỡi trở đi, nhờ chị Ōkubo nhận trực tiếp thì tốt quá ạ.",
+      "terms": [
+        "以降",
+        "引き受ける"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "xin_chốt_cách_chia_việc"
+    },
+    {
+      "id": "T-112-V13-020",
+      "group": "review",
+      "role_vi": "Nhân viên báo hệ quả của lịch họp",
+      "gender": "female",
+      "ja": "午前の会議に出たため、引き継ぎの時間までに確認できなかったメールが四件あります。",
+      "vi": "Vì dự cuộc họp buổi sáng nên đến lúc bàn giao tôi vẫn còn bốn email chưa kiểm xong ạ.",
+      "terms": [
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "nêu_việc_chưa_theo_kịp"
+    },
+    {
+      "id": "T-112-V13-021",
+      "group": "review",
+      "role_vi": "Nhân viên sửa hiểu nhầm là xin nghỉ tiếp",
+      "gender": "female",
+      "ja": "午前の勤務は続けたいので、休みではなく仕事の配分について相談させてください。",
+      "vi": "Tôi vẫn muốn làm buổi sáng, tôi xin trao đổi về cách chia việc chứ không xin nghỉ thêm ạ.",
+      "terms": [
+        "配分"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "làm_rõ_muốn_đổi_gì"
+    },
+    {
+      "id": "T-112-V13-022",
+      "group": "review",
+      "role_vi": "Nhân viên đề nghị mốc rà sau thử việc",
+      "gender": "female",
+      "ja": "二週間試してから、対応できた件数と負担を一緒に振り返っていただけますか。",
+      "vi": "Sau hai tuần thử, anh cùng tôi xem lại số yêu cầu xử lý được và khối lượng đó có vừa sức không nhé?",
+      "terms": [
+        "負担",
+        "振り返る"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "hẹn_mốc_xem_lại"
+    },
+    {
+      "id": "T-112-V13-023",
+      "group": "review",
+      "role_vi": "Nhân viên xin báo sớm mốc đổi",
+      "gender": "female",
+      "ja": "回答期限が変わったときは早めに教えていただければ、メールを処理する順番を変えられます。",
+      "vi": "Khi đổi hạn trả lời, nếu anh báo sớm thì tôi có thể đổi thứ tự xử lý email ạ.",
+      "terms": [
+        "期限",
+        "順番"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "nêu_điều_kiện_xử_lý_được"
+    }
+  ]
+}

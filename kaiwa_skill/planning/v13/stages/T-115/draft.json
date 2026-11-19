@@ -1,0 +1,394 @@
+{
+  "code": "T-115",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3eeca2490500cad5c96579d1092fac6db11073a07aee33972ea6dd6a6e1b293b",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "move": "Hỏi công việc, ngày và chỗ đến",
+    "handoff": "Thu xếp bàn giao ở nhóm cũ",
+    "announce": "Báo việc chuyển và nói lời chia tay",
+    "contact": "Giữ liên hệ và chuyển đúng đầu mối"
+  },
+  "items": [
+    {
+      "id": "T-115-V13-001",
+      "group": "move",
+      "role_vi": "Nhân viên sắp chuyển chi nhánh",
+      "gender": "male",
+      "ja": "西支店での初日は一日でよろしいですか。",
+      "vi": "Ngày đầu tôi đến chi nhánh phía Tây là ngày mùng một, đúng không ạ?",
+      "terms": [
+        "支店",
+        "初日"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "xác_nhận_mốc_bắt_đầu"
+    },
+    {
+      "id": "T-115-V13-002",
+      "group": "move",
+      "role_vi": "Nhân viên hỏi phần việc mới",
+      "gender": "male",
+      "ja": "異動先では、主にどんな仕事を担当することになりますか。",
+      "vi": "Ở nơi chuyển đến, tôi sẽ phụ trách công việc gì là chính ạ?",
+      "terms": [
+        "異動先",
+        "担当"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_phạm_vi_công_việc"
+    },
+    {
+      "id": "T-115-V13-003",
+      "group": "move",
+      "role_vi": "Quản lý giới thiệu người hướng dẫn",
+      "gender": "female",
+      "ja": "最初の週は藤田さんが、出荷予定を調整する仕事の流れを説明します。",
+      "vi": "Tuần đầu, anh Fujita sẽ hướng dẫn anh quy trình điều phối lịch xuất hàng ạ.",
+      "terms": [
+        "出荷",
+        "流れ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "nêu_ai_hướng_dẫn"
+    },
+    {
+      "id": "T-115-V13-004",
+      "group": "move",
+      "role_vi": "Nhân viên hỏi tòa cần đến",
+      "gender": "male",
+      "ja": "初日の朝は、本館と倉庫棟のどちらに伺えばよいでしょうか。",
+      "vi": "Sáng ngày đầu tôi cần tới tòa chính hay tòa kho ạ?",
+      "terms": [
+        "初日",
+        "本館"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_địa_điểm_cụ_thể"
+    },
+    {
+      "id": "T-115-V13-005",
+      "group": "move",
+      "role_vi": "Nhân viên cần tính thời gian di chuyển",
+      "gender": "male",
+      "ja": "電車の時間を決めたいので、初日の集合場所がいつ頃分かるか教えていただけますか。",
+      "vi": "Tôi muốn chọn chuyến tàu, chị cho tôi biết khoảng khi nào sẽ rõ chỗ cần đến ngày đầu được không ạ?",
+      "terms": [
+        "初日"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_mốc_có_thông_tin"
+    },
+    {
+      "id": "T-115-V13-006",
+      "group": "handoff",
+      "role_vi": "Nhân viên báo hai lịch trùng",
+      "gender": "male",
+      "ja": "お客様への報告が西支店の初日と重なるのですが、どちらを優先したらいいでしょうか。",
+      "vi": "Buổi báo cáo với khách trùng ngày đầu ở chi nhánh phía Tây, tôi nên ưu tiên lịch nào ạ?",
+      "terms": [
+        "支店",
+        "初日",
+        "重なる",
+        "優先する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "xin_chốt_ưu_tiên"
+    },
+    {
+      "id": "T-115-V13-007",
+      "group": "handoff",
+      "role_vi": "Quản lý nói phương án bàn giao buổi báo cáo",
+      "gender": "female",
+      "ja": "西支店の予定を優先して、お客様への報告は武田さんに引き継いでください。",
+      "vi": "Anh ưu tiên lịch bên chi nhánh phía Tây, phần báo cáo với khách thì bàn giao cho chị Takeda nhé.",
+      "terms": [
+        "支店",
+        "優先する",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "chốt_ai_nhận_việc"
+    },
+    {
+      "id": "T-115-V13-008",
+      "group": "handoff",
+      "role_vi": "Nhân viên đề nghị diễn tập báo cáo",
+      "gender": "male",
+      "ja": "最後の打ち合わせでは、資料を確認したあとで、武田さんに報告を一度通してもらうのはどうでしょうか。",
+      "vi": "Trong buổi trao đổi cuối, sau khi kiểm tra tài liệu, mình nhờ chị Takeda trình bày thử một lượt thì sao ạ?",
+      "terms": [
+        "打ち合わせ",
+        "資料"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "đề_nghị_thử_cùng"
+    },
+    {
+      "id": "T-115-V13-009",
+      "group": "handoff",
+      "role_vi": "Nhân viên chỉ đơn chưa chốt",
+      "gender": "male",
+      "ja": "来週の出荷一覧では、港商店の分だけ数量が未確定です。",
+      "vi": "Trong danh sách xuất hàng tuần sau, chỉ đơn bên cửa hàng Minato còn chưa chốt số lượng ạ.",
+      "terms": [
+        "出荷",
+        "一覧",
+        "未確定"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "nêu_việc_chưa_chốt"
+    },
+    {
+      "id": "T-115-V13-010",
+      "group": "handoff",
+      "role_vi": "Đồng nghiệp nhận bàn giao hỏi ngoại lệ",
+      "gender": "female",
+      "ja": "在庫が足りない場合、まず出せる数を倉庫に確認すればよいですか。",
+      "vi": "Nếu kho không đủ hàng, trước hết tôi hỏi kho xem có thể xuất được bao nhiêu, đúng không ạ?",
+      "terms": [
+        "在庫"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "xác_nhận_bước_đầu_khi_vướng"
+    },
+    {
+      "id": "T-115-V13-011",
+      "group": "handoff",
+      "role_vi": "Nhân viên dặn cách báo phương án cho khách",
+      "gender": "male",
+      "ja": "先方に出荷を分ける案を伝えて、ご希望を聞いてから責任者に確認してください。",
+      "vi": "Chị báo khách phương án chia hàng thành nhiều đợt, hỏi họ muốn thế nào rồi xác nhận với người phụ trách nhé.",
+      "terms": [
+        "出荷",
+        "伝える"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "chốt_ai_xác_nhận_thay_đổi"
+    },
+    {
+      "id": "T-115-V13-012",
+      "group": "announce",
+      "role_vi": "Nhân viên làm rõ mình chưa thông báo",
+      "gender": "male",
+      "ja": "異動の日付と新しい担当は、まだ私からチームに伝えていません。",
+      "vi": "Tôi vẫn chưa báo cho nhóm ngày chuyển và nhiệm vụ mới ạ.",
+      "terms": [
+        "異動",
+        "日付",
+        "担当",
+        "伝える"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "làm_rõ_phần_chưa_báo"
+    },
+    {
+      "id": "T-115-V13-013",
+      "group": "announce",
+      "role_vi": "Quản lý xác nhận thời điểm thông báo",
+      "gender": "female",
+      "ja": "後任が決まったら、朝会で私から異動のことを正式に発表します。",
+      "vi": "Khi chọn được người tiếp quản, tôi sẽ chính thức báo việc chuyển công tác trong buổi họp đầu giờ ạ.",
+      "terms": [
+        "後任",
+        "朝会",
+        "異動",
+        "正式",
+        "発表する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "chốt_ai_báo_khi_nào"
+    },
+    {
+      "id": "T-115-V13-014",
+      "group": "announce",
+      "role_vi": "Nhân viên cảm ơn đồng nghiệp thân",
+      "gender": "male",
+      "ja": "荷物がそろわなかった日、手分けして調べてくれて本当に助かったよ。",
+      "vi": "Hôm hàng chưa đủ, nhờ cậu cùng tớ chia nhau đi kiểm mà tớ đỡ vất vả hẳn.",
+      "terms": [
+        "手分けする",
+        "助かる"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "cảm_ơn_vì_một_việc_cụ_thể"
+    },
+    {
+      "id": "T-115-V13-015",
+      "group": "announce",
+      "role_vi": "Đồng nghiệp thân nói cảm giác khi sắp chia tay",
+      "gender": "male",
+      "ja": "毎朝会ってたから、支店が変わって会う機会が減るのは寂しいな。",
+      "vi": "Sáng nào mình cũng gặp, cậu chuyển chi nhánh rồi ít gặp nhau, tớ thấy buồn thật.",
+      "terms": [
+        "支店",
+        "寂しい"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "nói_cảm_giác_khi_chia_tay"
+    },
+    {
+      "id": "T-115-V13-016",
+      "group": "announce",
+      "role_vi": "Nhân viên trả lời về tin chưa công bố",
+      "gender": "male",
+      "ja": "僕の異動は話せるけど、後任の名前は未発表だから、牧さんからの連絡を待ってもらえる？",
+      "vi": "Việc tớ chuyển thì nói được, còn tên người thay chưa công bố nên cậu đợi chị Maki thông báo được không?",
+      "terms": [
+        "異動",
+        "後任",
+        "未発表"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "giới_hạn_điều_có_thể_nói"
+    },
+    {
+      "id": "T-115-V13-017",
+      "group": "announce",
+      "role_vi": "Nhân viên rủ gặp trước lúc chuyển",
+      "gender": "male",
+      "ja": "異動する前に、木曜のお昼に一階の売店のそばで少し話さない？",
+      "vi": "Trước khi tớ chuyển, trưa thứ Năm mình ra cạnh quầy bán đồ tầng một nói chuyện một chút nhé?",
+      "terms": [
+        "異動"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "hẹn_gặp_trước_khi_chuyển"
+    },
+    {
+      "id": "T-115-V13-018",
+      "group": "announce",
+      "role_vi": "Nhân viên báo đổi hẹn với đồng nghiệp",
+      "gender": "male",
+      "ja": "木曜のお昼に引き継ぎが入ったから、売店のそばで会うのは金曜に変えられる？",
+      "vi": "Trưa thứ Năm tớ có lịch bàn giao, mình dời hẹn cạnh quầy bán đồ sang thứ Sáu được không?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "báo_lý_do_và_đổi_hẹn"
+    },
+    {
+      "id": "T-115-V13-019",
+      "group": "contact",
+      "role_vi": "Nhân viên xin báo khách về người mới",
+      "gender": "male",
+      "ja": "今の窓口として港商店に連絡して、武田さんが次の担当だとお伝えしてもいいですか。",
+      "vi": "Với vai trò đầu mối hiện tại, tôi liên hệ cửa hàng Minato để báo chị Takeda sẽ phụ trách tiếp được không ạ?",
+      "terms": [
+        "窓口",
+        "担当",
+        "伝える"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "xin_báo_người_tiếp_quản"
+    },
+    {
+      "id": "T-115-V13-020",
+      "group": "contact",
+      "role_vi": "Nhân viên chuyển lời nhắn nếu khách gửi nhầm",
+      "gender": "male",
+      "ja": "僕宛てに数量の返事が来たら、チームの窓口を通して武田さんに回します。",
+      "vi": "Nếu khách vẫn gửi phản hồi về số lượng cho tôi, tôi sẽ chuyển cho chị Takeda qua đầu mối của nhóm ạ.",
+      "terms": [
+        "宛て",
+        "窓口",
+        "回す"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "nếu_nhận_nhầm_thì_chuyển"
+    },
+    {
+      "id": "T-115-V13-021",
+      "group": "contact",
+      "role_vi": "Nhân viên đã chuyển chỉ cách kiểm quy trình hiện tại",
+      "gender": "male",
+      "ja": "前の一覧では未出荷の欄に残りの数を入れていましたが、今の運用はそちらの責任者に確認してください。",
+      "vi": "Trên danh sách cũ, tôi ghi số còn lại vào mục chưa xuất, còn quy trình hiện tại thì chị xác nhận với người phụ trách bên đó nhé.",
+      "terms": [
+        "一覧",
+        "出荷",
+        "欄",
+        "運用"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "tách_cách_cũ_và_đầu_mối_hiện_tại"
+    },
+    {
+      "id": "T-115-V13-022",
+      "group": "contact",
+      "role_vi": "Đồng nghiệp cảm ơn vì có ví dụ",
+      "gender": "female",
+      "ja": "引き継ぎの一覧に具体的な例を残していただいて、助かりました。",
+      "vi": "Anh để lại ví dụ cụ thể trong danh sách bàn giao, nhờ vậy tôi dễ làm hơn ạ.",
+      "terms": [
+        "一覧",
+        "助かる"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "cảm_ơn_vì_một_việc_cụ_thể"
+    },
+    {
+      "id": "T-115-V13-023",
+      "group": "contact",
+      "role_vi": "Nhân viên đã chuyển hướng dẫn kênh hỏi lại",
+      "gender": "male",
+      "ja": "前の案件で分からない点は共有のチャンネルで聞いてもらえれば、手が空き次第確認します。",
+      "vi": "Nếu có chỗ chưa rõ về hồ sơ cũ, chị cứ hỏi trong kênh chung, tôi sẽ xem ngay khi rảnh tay ạ.",
+      "terms": [
+        "案件",
+        "チャンネル",
+        "手が空く"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "chốt_kênh_liên_hệ"
+    }
+  ]
+}

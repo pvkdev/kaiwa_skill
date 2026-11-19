@@ -1,0 +1,398 @@
+{
+  "code": "H-016",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "94547a5f94fbb54d4dd71d3776679912cb15f5f859436fd40947d9784a44258d",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "order": "Xác nhận đơn, báo giá và người duyệt",
+    "split": "Chia đợt giao và xử lý thiếu hàng",
+    "track": "Phân đầu mối và theo dõi chứng từ",
+    "delay": "Báo mốc dự kiến khi giao hàng thay đổi",
+    "quality": "Hỏi lô đầu và xử lý hàng lỗi",
+    "relationship": "Giữ liên hệ cho lô sau"
+  },
+  "items": [
+    {
+      "id": "H-016-V13-001",
+      "group": "order",
+      "role_vi": "Đầu mối bán hàng xác nhận số lượng đặt",
+      "gender": "male",
+      "ja": "袋のご注文は、全部で六百枚ですね。",
+      "vi": "Tôi xác nhận đơn này gồm tất cả 600 chiếc túi, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～は、全部で～ですね"
+    },
+    {
+      "id": "H-016-V13-002",
+      "group": "order",
+      "role_vi": "Đầu mối bán hàng hỏi mốc khách cần để dùng hàng",
+      "gender": "female",
+      "ja": "袋は、いつまでに店舗へお届けすればよろしいですか。",
+      "vi": "Bên tôi cần giao túi đến cửa hàng chậm nhất khi nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～すればよろしいですか"
+    },
+    {
+      "id": "H-016-V13-003",
+      "group": "order",
+      "role_vi": "Đầu mối bán hàng làm rõ giá phải tính lại khi đổi số lượng",
+      "gender": "male",
+      "ja": "ご注文の数量が変わるため、単価と輸送費を改めてお見積もりします。",
+      "vi": "Do số lượng đặt thay đổi, bên tôi sẽ tính lại đơn giá và phí vận chuyển để báo chị ạ.",
+      "terms": [
+        "数量",
+        "単価",
+        "見積もり"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～が変わるため、改めて～します"
+    },
+    {
+      "id": "H-016-V13-004",
+      "group": "order",
+      "role_vi": "Đầu mối hỏi ai duyệt lần cuối",
+      "gender": "female",
+      "ja": "数量と納品日をまとめたら、御社ではどなたに最終確認をお願いすればよろしいですか。",
+      "vi": "Sau khi tổng hợp số lượng và ngày giao, tôi nên nhờ ai bên anh xác nhận lần cuối ạ?",
+      "terms": [
+        "数量",
+        "納品日"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～すればよろしいですか"
+    },
+    {
+      "id": "H-016-V13-005",
+      "group": "order",
+      "role_vi": "Khách hẹn xác nhận và nhắc đơn đang chờ duyệt",
+      "gender": "female",
+      "ja": "購買部長の確認が取れるまで、発注は保留としていただけますか。",
+      "vi": "Đến khi trưởng bộ phận mua hàng xác nhận, anh cứ để đơn ở trạng thái chờ giúp tôi được không ạ?",
+      "terms": [
+        "購買部長",
+        "保留"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～まで、～は保留としていただけますか"
+    },
+    {
+      "id": "H-016-V13-006",
+      "group": "split",
+      "role_vi": "Đầu mối hỏi cần gì cho mỗi đợt giao",
+      "gender": "male",
+      "ja": "分納の場合、各回の数量と納品日のご希望を教えていただけますか。",
+      "vi": "Nếu giao thành nhiều đợt, chị cho tôi biết số lượng và ngày giao mong muốn của từng đợt được không ạ?",
+      "terms": [
+        "分納",
+        "数量",
+        "納品日"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-016-V13-007",
+      "group": "split",
+      "role_vi": "Vận hành báo số lượng có thể thu xếp trước",
+      "gender": "female",
+      "ja": "今のところ六月末までに三百枚は手配できる見込みですが、残数は七月十日以降になります。",
+      "vi": "Hiện dự kiến bên mình thu xếp được 300 chiếc chậm nhất cuối tháng Sáu, còn phần còn lại sớm nhất từ ngày 10 tháng Bảy.",
+      "terms": [
+        "見込み",
+        "残数"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "～は～できる見込みですが、～は～になります"
+    },
+    {
+      "id": "H-016-V13-008",
+      "group": "split",
+      "role_vi": "Khách nói rõ số lượng tối thiểu để kịp ngày mở bán",
+      "gender": "female",
+      "ja": "発売初日に使う分だけで、少なくとも四百枚は必要です。",
+      "vi": "Chỉ riêng lượng dùng ngày đầu mở bán đã cần ít nhất 400 chiếc ạ.",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～だけで、少なくとも～は必要です"
+    },
+    {
+      "id": "H-016-V13-009",
+      "group": "split",
+      "role_vi": "Đầu mối đề nghị kiểm nguồn thay thế trước khi khách duyệt",
+      "gender": "male",
+      "ja": "別の工場から補う場合は、見本で持ち手の仕様と色を確認していただいてから手配します。",
+      "vi": "Nếu lấy thêm hàng từ xưởng khác, bên tôi sẽ đợi chị kiểm tra quai và màu trên mẫu rồi mới thu xếp ạ.",
+      "terms": [
+        "見本",
+        "持ち手",
+        "仕様"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～場合は、～ていただいてから～します"
+    },
+    {
+      "id": "H-016-V13-010",
+      "group": "split",
+      "role_vi": "Đầu mối đính chính nội bộ về phản ứng của khách",
+      "gender": "female",
+      "ja": "見本の印象はよかったようですが、追加の百枚についてはまだ発注の承認が下りていません。",
+      "vi": "Khách có vẻ thấy mẫu ổn, nhưng vẫn chưa duyệt đặt thêm 100 chiếc.",
+      "terms": [
+        "見本"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～ようですが、～はまだ～ていません"
+    },
+    {
+      "id": "H-016-V13-011",
+      "group": "track",
+      "role_vi": "Đầu mối phân rõ việc báo khi ngày xuất hàng thay đổi",
+      "gender": "male",
+      "ja": "出荷日が変わった場合は、私からお客様に伝えますので、当日中に知らせてください。",
+      "vi": "Nếu ngày xuất hàng thay đổi, chị báo tôi ngay trong ngày để tôi liên hệ với khách nhé.",
+      "terms": [
+        "出荷日"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～場合は、～ますので、～てください"
+    },
+    {
+      "id": "H-016-V13-012",
+      "group": "track",
+      "role_vi": "Vận hành thông báo mốc xuất và mốc tới cửa hàng",
+      "gender": "female",
+      "ja": "工場の出荷日は決まりましたが、店舗への到着予定は輸送担当の確認待ちです。",
+      "vi": "Ngày xuất hàng từ xưởng đã chốt, còn thời điểm dự kiến tới cửa hàng đang chờ bên vận chuyển xác nhận.",
+      "terms": [
+        "出荷日",
+        "到着予定",
+        "確認待ち"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～は決まりましたが、～は確認待ちです"
+    },
+    {
+      "id": "H-016-V13-013",
+      "group": "track",
+      "role_vi": "Đầu mối hỏi người theo dõi thủ tục và thời điểm hàng đến",
+      "gender": "male",
+      "ja": "船会社が示した到着予定と通関の進み具合を確認したいのですが、窓口を教えていただけますか。",
+      "vi": "Chị cho tôi xin đầu mối để hỏi thời điểm hàng tới theo thông tin hãng tàu và tình trạng thông quan được không?",
+      "terms": [
+        "船会社",
+        "到着予定",
+        "通関",
+        "窓口"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-016-V13-014",
+      "group": "track",
+      "role_vi": "Phụ trách giao nhận hỏi ai sửa hóa đơn thương mại",
+      "gender": "female",
+      "ja": "インボイスに数量の記載漏れがありますが、修正版はどなたにお願いすればよろしいですか。",
+      "vi": "Hóa đơn thương mại đang thiếu số lượng, tôi nên nhờ ai làm bản sửa ạ?",
+      "terms": [
+        "インボイス",
+        "数量",
+        "記載漏れ",
+        "修正版"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～すればよろしいですか"
+    },
+    {
+      "id": "H-016-V13-015",
+      "group": "delay",
+      "role_vi": "Đầu mối báo khách thời điểm giao chưa thể cam kết",
+      "gender": "male",
+      "ja": "通関の状況がまだ確認できていないため、店舗への到着日は現時点では確約できません。",
+      "vi": "Bên tôi vẫn chưa xác nhận được tình trạng thông quan nên hiện chưa thể cam kết ngày hàng tới cửa hàng ạ.",
+      "terms": [
+        "通関",
+        "確約する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ため、～は現時点では確約できません"
+    },
+    {
+      "id": "H-016-V13-016",
+      "group": "delay",
+      "role_vi": "Đầu mối hẹn giờ cập nhật dù chưa có kết quả",
+      "gender": "female",
+      "ja": "午後四時に担当者へ確認し、通関の結果が出ていなくても、その時点の状況をお伝えします。",
+      "vi": "Lúc bốn giờ chiều tôi sẽ hỏi người phụ trách, dù chưa có kết quả thông quan tôi vẫn sẽ báo tình hình lúc đó ạ.",
+      "terms": [
+        "通関"
+      ],
+      "scenes": [
+        "S014",
+        "S016"
+      ],
+      "pattern": "～ていなくても、～をお伝えします"
+    },
+    {
+      "id": "H-016-V13-017",
+      "group": "delay",
+      "role_vi": "Đầu mối báo dự kiến thay đổi sau khi sửa giấy tờ",
+      "gender": "male",
+      "ja": "修正版は輸入側に送り直しましたが、店舗への到着は早くても七月三日になる見込みです。",
+      "vi": "Bản sửa đã được gửi lại cho phía nhập khẩu, nhưng dự kiến sớm nhất ngày 3 tháng Bảy hàng mới tới cửa hàng ạ.",
+      "terms": [
+        "修正版",
+        "見込み"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～ましたが、早くても～になる見込みです"
+    },
+    {
+      "id": "H-016-V13-018",
+      "group": "quality",
+      "role_vi": "Đầu mối gọi hỏi khách đang dùng lô đầu",
+      "gender": "female",
+      "ja": "先に届いたロットの袋は、使い始めて何か不具合はありませんか。",
+      "vi": "Với lô túi giao trước, từ khi dùng anh có gặp lỗi gì không ạ?",
+      "terms": [
+        "ロット",
+        "不具合"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～は、～て何か不具合はありませんか"
+    },
+    {
+      "id": "H-016-V13-019",
+      "group": "quality",
+      "role_vi": "Khách báo số sản phẩm có quai bị lỏng",
+      "gender": "female",
+      "ja": "袋を検品したところ、持ち手が緩いものが五枚見つかりました。",
+      "vi": "Khi kiểm hàng, chúng tôi phát hiện năm chiếc túi có quai bị lỏng ạ.",
+      "terms": [
+        "検品",
+        "持ち手",
+        "緩い"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～たところ、～が見つかりました"
+    },
+    {
+      "id": "H-016-V13-020",
+      "group": "quality",
+      "role_vi": "Đầu mối xin ảnh và mã thùng để chuyển bên chất lượng",
+      "gender": "male",
+      "ja": "品質担当にすぐ確認してもらいたいので、持ち手の写真と箱番号をお送りいただけますか。",
+      "vi": "Tôi muốn nhờ người phụ trách chất lượng kiểm tra ngay, chị gửi giúp tôi ảnh quai túi và mã thùng được không ạ?",
+      "terms": [
+        "品質担当",
+        "持ち手"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～たいので、～をお送りいただけますか"
+    },
+    {
+      "id": "H-016-V13-021",
+      "group": "quality",
+      "role_vi": "Đầu mối hỏi phản hồi sau khi đổi hàng",
+      "gender": "female",
+      "ja": "交換した五枚の袋は、その後問題なくお使いいただけていますか。",
+      "vi": "Từ lúc nhận năm chiếc túi đổi, bên anh sử dụng có ổn không ạ?",
+      "terms": [
+        "交換する"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～は、その後問題なくお使いいただけていますか"
+    },
+    {
+      "id": "H-016-V13-022",
+      "group": "relationship",
+      "role_vi": "Đầu mối cảm ơn khách đã phối hợp điều chỉnh lịch giao",
+      "gender": "male",
+      "ja": "納品の調整にご協力いただき、改めてお礼を申し上げます。",
+      "vi": "Tôi xin cảm ơn chị một lần nữa vì đã phối hợp điều chỉnh lịch giao hàng ạ.",
+      "terms": [],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～にご協力いただき、改めてお礼を申し上げます"
+    },
+    {
+      "id": "H-016-V13-023",
+      "group": "relationship",
+      "role_vi": "Đầu mối hỏi điều khách ưu tiên khi chọn nhà cung cấp khác",
+      "gender": "female",
+      "ja": "差し支えなければ、今回の仕入れ先を決める際に重視された点を一つ伺えますか。",
+      "vi": "Nếu tiện, anh cho tôi biết một điểm quan trọng khi bên anh chọn nhà cung cấp lần này được không ạ?",
+      "terms": [
+        "差し支えなければ"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "差し支えなければ、～を一つ伺えますか"
+    },
+    {
+      "id": "H-016-V13-024",
+      "group": "relationship",
+      "role_vi": "Đầu mối xin phép báo khi có phương án giao mới phù hợp",
+      "gender": "male",
+      "ja": "ご希望の納品日に間に合う手配ができそうな場合に限って、ご連絡してもよろしいでしょうか。",
+      "vi": "Tôi xin phép chỉ liên hệ khi có khả năng thu xếp kịp ngày giao chị mong muốn, được không ạ?",
+      "terms": [
+        "納品日"
+      ],
+      "scenes": [
+        "S023",
+        "S024"
+      ],
+      "pattern": "～場合に限って、ご連絡してもよろしいでしょうか"
+    }
+  ]
+}

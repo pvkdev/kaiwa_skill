@@ -1,0 +1,456 @@
+{
+  "code": "H-064",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "faa17db262a679f5b8f9dcbf8548d8b06a121a369fd4e865f9dcb6703fd367d9",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "scope": "Hỏi nhu cầu, phạm vi và người phê duyệt",
+    "internal": "Giao phần việc và xác nhận điều kiện giữ mốc",
+    "changes": "Báo tiến độ và thương lượng thay đổi",
+    "incident": "Báo sự cố, ưu tiên khôi phục và hẹn cập nhật",
+    "accept": "Mời khách thao tác và xác nhận nghiệm thu",
+    "operate": "Bàn giao, hỗ trợ và áp dụng điều đã rút ra"
+  },
+  "items": [
+    {
+      "id": "H-064-V13-001",
+      "group": "scope",
+      "role_vi": "Người phụ trách dự án hỏi đầu mối phía khách hàng",
+      "gender": "female",
+      "ja": "今の受付で、一番お困りなのはどの段階ですか。",
+      "vi": "Trong cách tiếp nhận đơn hiện tại, quý công ty vướng nhất ở bước nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_current_pain_point"
+    },
+    {
+      "id": "H-064-V13-002",
+      "group": "scope",
+      "role_vi": "Người phụ trách dự án hỏi đầu mối phía khách hàng",
+      "gender": "female",
+      "ja": "試行の初日に必須の機能はどれですか。",
+      "vi": "Tính năng nào bắt buộc phải có trong ngày đầu chạy thử ạ?",
+      "terms": [
+        "必須"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "ask_must_have"
+    },
+    {
+      "id": "H-064-V13-003",
+      "group": "scope",
+      "role_vi": "Người phụ trách dự án hỏi đầu mối phía khách hàng",
+      "gender": "female",
+      "ja": "今回の決裁者はどなたでしょうか。",
+      "vi": "Đợt này ai là người có quyền phê duyệt ạ?",
+      "terms": [
+        "決裁者"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "ask_decision_authority"
+    },
+    {
+      "id": "H-064-V13-004",
+      "group": "scope",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "受付を優先される場合と、支店別の集計も加える場合とでは、納期とお見積もりが変わります。",
+      "vi": "Thời hạn bàn giao và báo giá sẽ khác nhau giữa phương án ưu tiên tiếp nhận đơn và phương án có thêm tổng hợp theo từng chi nhánh ạ.",
+      "terms": [
+        "納期",
+        "見積もり"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "contrast_options_with_consequences"
+    },
+    {
+      "id": "H-064-V13-005",
+      "group": "scope",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "段階的に進めるのでしたら、まず受付に必要な範囲と費用を藤田部長にご判断いただけますか。",
+      "vi": "Nếu chia dự án thành từng giai đoạn, trước mắt tôi có thể nhờ trưởng bộ phận Fujita quyết định phạm vi và chi phí phần tiếp nhận đơn được không ạ?",
+      "terms": [
+        "段階的"
+      ],
+      "scenes": [
+        "S004",
+        "S007",
+        "S008"
+      ],
+      "pattern": "request_decision_within_scope"
+    },
+    {
+      "id": "H-064-V13-006",
+      "group": "internal",
+      "role_vi": "Người phụ trách dự án trao đổi với đồng đội",
+      "gender": "female",
+      "ja": "現場の例が明日の朝までに届かなければ、まず架空の申請を使って受付一覧の見本を作ってもらえますか。",
+      "vi": "Nếu đến sáng mai vẫn chưa nhận được ví dụ từ bộ phận vận hành, cậu dựng bản mẫu danh sách tiếp nhận bằng đơn giả định trước được không?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "offer_fallback_if_input_late"
+    },
+    {
+      "id": "H-064-V13-007",
+      "group": "internal",
+      "role_vi": "Người phụ trách dự án trao đổi với đồng đội",
+      "gender": "female",
+      "ja": "分担を確認すると、見本の表示は西田さんに見てもらい、今井さんに確認していただく項目は私がまとめます。",
+      "vi": "Để xác nhận lại phần việc, nhờ Nishida kiểm phần hiển thị của bản mẫu, còn tôi sẽ gom các mục cần Imai xem.",
+      "terms": [
+        "分担"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "confirm_owner_per_task"
+    },
+    {
+      "id": "H-064-V13-008",
+      "group": "internal",
+      "role_vi": "Người phụ trách dự án trao đổi với đồng đội",
+      "gender": "female",
+      "ja": "20日の納品を確約する前に、二支店の操作を通しで確認できる担当者を確保できるか見てもらえますか。",
+      "vi": "Trước khi cam kết bàn giao ngày 20, cậu kiểm giúp xem có bố trí được người thử trọn quy trình của hai chi nhánh không?",
+      "terms": [
+        "納品",
+        "確約する"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "check_before_action"
+    },
+    {
+      "id": "H-064-V13-009",
+      "group": "internal",
+      "role_vi": "Người phụ trách dự án trao đổi với đồng đội",
+      "gender": "male",
+      "ja": "19日正午までに試せる版を渡し、二支店での操作確認の結果は15時に共有します。",
+      "vi": "Tôi sẽ giao bản chạy thử chậm nhất 12 giờ trưa ngày 19, còn kết quả kiểm thao tác ở hai chi nhánh tôi sẽ báo lúc 15 giờ.",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "set_delivery_and_reporting_milestones"
+    },
+    {
+      "id": "H-064-V13-010",
+      "group": "changes",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "申請が受付一覧に出るところまでは確認できていますが、支店ごとの表示については、16時の進捗連絡で確認済みの範囲をお伝えします。",
+      "vi": "Chúng tôi đã kiểm được tới bước đơn hiện trên danh sách tiếp nhận. Với phần hiển thị theo từng chi nhánh, tôi sẽ báo rõ lúc 16 giờ là bên tôi đã kiểm được tới đâu ạ.",
+      "terms": [
+        "進捗"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "report_verified_and_pending"
+    },
+    {
+      "id": "H-064-V13-011",
+      "group": "changes",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "利用者の一覧が予定より一日遅れる場合、画面の納期はそのままにして、実際に使うアカウントの引き渡しだけ別の日にできますか。",
+      "vi": "Nếu danh sách người dùng đến chậm một ngày, mình giữ ngày giao phần màn hình và chỉ dời ngày giao tài khoản dùng thật được không ạ?",
+      "terms": [
+        "納期"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "move_only_affected_milestone"
+    },
+    {
+      "id": "H-064-V13-012",
+      "group": "changes",
+      "role_vi": "Người phụ trách dự án hỏi đầu mối phía khách hàng",
+      "gender": "female",
+      "ja": "通知を追加する前に、誰がどのタイミングで新しい申請に気づければいいか、確認させていただけますか。",
+      "vi": "Trước khi thêm thông báo, tôi xin xác nhận ai cần biết có đơn mới và cần biết vào lúc nào được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "check_before_action"
+    },
+    {
+      "id": "H-064-V13-013",
+      "group": "changes",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "今のお見積もりを据え置けるかは、通知が届かない場合の確認も含めて必要な工数を見てからの判断になりますので、明日15時までに分かった範囲をお伝えします。",
+      "vi": "Muốn biết có giữ nguyên báo giá được không, chúng tôi phải tính phần công cần làm, kể cả kiểm trường hợp không nhận được thông báo. Chậm nhất 15 giờ mai tôi sẽ báo những gì đã xác nhận được ạ.",
+      "terms": [
+        "見積もり",
+        "据え置く",
+        "工数"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "explain_unknown_cost_and_report_time"
+    },
+    {
+      "id": "H-064-V13-014",
+      "group": "changes",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "20日の納期を優先するなら、全体集計を対象外にし、通知メールの確認に時間を回す案はいかがでしょうか。",
+      "vi": "Nếu ưu tiên hạn giao ngày 20, mình có thể bỏ phần tổng hợp chung khỏi phạm vi để dành thời gian kiểm email thông báo được không ạ?",
+      "terms": [
+        "納期",
+        "対象外"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "trade_scope_for_time"
+    },
+    {
+      "id": "H-064-V13-015",
+      "group": "changes",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "金額を据え置き、納期も変えないことで社内の承認が取れましたので、全体集計を外し、共通アドレスへの通知を加える形で進めてよろしいでしょうか。",
+      "vi": "Bên tôi đã được duyệt giữ nguyên giá và hạn giao, vậy mình làm theo phương án bỏ phần tổng hợp chung và thêm thông báo gửi đến địa chỉ chung được không ạ?",
+      "terms": [
+        "納期",
+        "据え置く",
+        "承認"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "confirm_approved_change"
+    },
+    {
+      "id": "H-064-V13-016",
+      "group": "incident",
+      "role_vi": "Người phụ trách dự án báo với trưởng nhóm",
+      "gender": "female",
+      "ja": "試行環境で申請を送れない障害があり、東と西の両支店から同じ症状の連絡が来ていますが、本番での利用はまだ始まっていません。",
+      "vi": "Môi trường chạy thử đang có lỗi không gửi được đơn, cả hai chi nhánh Đông và Tây đều báo cùng hiện tượng, còn hệ thống dùng thật thì chưa đưa vào sử dụng ạ.",
+      "terms": [
+        "障害"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "report_observed_impact"
+    },
+    {
+      "id": "H-064-V13-017",
+      "group": "incident",
+      "role_vi": "Người phụ trách dự án báo với trưởng nhóm",
+      "gender": "female",
+      "ja": "復旧したとお伝えする前に、東と西で一件ずつ送信し、本部の一覧に載るところまで確認します。",
+      "vi": "Trước khi báo đã khôi phục, tôi sẽ gửi thử mỗi chi nhánh Đông và Tây một đơn rồi kiểm tới khi đơn hiện trên danh sách của trụ sở.",
+      "terms": [
+        "復旧"
+      ],
+      "scenes": [
+        "S022",
+        "S023"
+      ],
+      "pattern": "check_before_action"
+    },
+    {
+      "id": "H-064-V13-018",
+      "group": "incident",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "原因はまだ調査中ですが、確認できた影響範囲を先にお伝えし、16時に続報を差し上げます。",
+      "vi": "Trong lúc đang tìm nguyên nhân, trước hết tôi xin báo phần ảnh hưởng đã xác nhận và sẽ cập nhật tiếp lúc 16 giờ ạ.",
+      "terms": [
+        "影響範囲",
+        "続報"
+      ],
+      "scenes": [
+        "S021",
+        "S023",
+        "S034",
+        "S035"
+      ],
+      "pattern": "first_update_with_next_time"
+    },
+    {
+      "id": "H-064-V13-019",
+      "group": "incident",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "試行環境の設定不備は修正して再開できる状態になりましたが、本番用の設定は切り替え前に別途確認します。",
+      "vi": "Chúng tôi đã sửa lỗi cấu hình ở môi trường thử và có thể chạy thử lại, còn cấu hình dùng thật sẽ được kiểm riêng trước khi chuyển sang dùng thật ạ.",
+      "terms": [
+        "設定不備"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "limit_claim_to_verified_environment"
+    },
+    {
+      "id": "H-064-V13-020",
+      "group": "accept",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "受入テストでは、東支店のアカウントから申請を一件送り、受付一覧と共通メールの両方をご確認いただけますか。",
+      "vi": "Trong lần kiểm thử nghiệm thu, anh gửi một đơn từ tài khoản chi nhánh Đông rồi kiểm cả danh sách tiếp nhận và hộp thư chung giúp tôi được không ạ?",
+      "terms": [
+        "受入テスト"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "ask_client_to_try_agreed_flow"
+    },
+    {
+      "id": "H-064-V13-021",
+      "group": "accept",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "メールを開けば支店名が分かる形で十分ですか、それとも件名で分かることが合格基準になりますか。",
+      "vi": "Mở thư ra thấy tên chi nhánh là đủ, hay tiêu chí đạt là phải nhìn được ngay ở tiêu đề ạ?",
+      "terms": [
+        "合格基準"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "clarify_acceptance_criterion"
+    },
+    {
+      "id": "H-064-V13-022",
+      "group": "accept",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "修正版は22日の正午までにお渡ししますので、その日の15時に、件名とメールの到着時刻を二支店分ご確認いただけますか。",
+      "vi": "Tôi sẽ giao bản sửa chậm nhất 12 giờ trưa ngày 22. Lúc 15 giờ hôm đó, anh kiểm tiêu đề và giờ thư đến của cả hai chi nhánh giúp tôi được không ạ?",
+      "terms": [
+        "修正版"
+      ],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "offer_retest_with_fixed_point"
+    },
+    {
+      "id": "H-064-V13-023",
+      "group": "accept",
+      "role_vi": "Đầu mối phía khách hàng nói với người phụ trách dự án",
+      "gender": "male",
+      "ja": "二支店で合格基準を満たしたので、今回の受付と通知の検収は完了とする、という回答が藤田からありました。",
+      "vi": "Trưởng bộ phận Fujita xác nhận cả hai chi nhánh đều đạt tiêu chí, nên phần tiếp nhận đơn và thông báo đợt này đã nghiệm thu xong.",
+      "terms": [
+        "合格基準",
+        "満たす",
+        "検収"
+      ],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "report_authorized_acceptance"
+    },
+    {
+      "id": "H-064-V13-024",
+      "group": "operate",
+      "role_vi": "Người phụ trách dự án nói với đầu mối vận hành",
+      "gender": "female",
+      "ja": "申請が一覧にあるのに通知が来ない場合は、30日までは支店名と受付時刻を試行サポートにお知らせいただけますか。",
+      "vi": "Nếu đơn đã hiện trên danh sách mà chưa có thông báo, đến hết ngày 30 chị báo tên chi nhánh và giờ tiếp nhận cho bộ phận hỗ trợ chạy thử giúp tôi được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S029",
+        "S031"
+      ],
+      "pattern": "state_support_handoff_conditions"
+    },
+    {
+      "id": "H-064-V13-025",
+      "group": "operate",
+      "role_vi": "Người phụ trách dự án nói với đầu mối vận hành",
+      "gender": "female",
+      "ja": "七月以降の問い合わせ窓口は神田さんですので、ご相談内容は神田さんからこちらに引き継いでいただきます。",
+      "vi": "Từ tháng Bảy, anh Kanda là đầu mối tiếp nhận thắc mắc và sẽ chuyển nội dung trao đổi lại cho bên tôi ạ.",
+      "terms": [
+        "問い合わせ窓口",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S030"
+      ],
+      "pattern": "confirm_support_route_after_transition"
+    },
+    {
+      "id": "H-064-V13-026",
+      "group": "operate",
+      "role_vi": "Người phụ trách dự án nói với đầu mối vận hành",
+      "gender": "female",
+      "ja": "三日ほど運用してみて、一覧から申請を探すときや交代で引き継ぐときに、手が止まるところはありましたか。",
+      "vi": "Sau khoảng ba ngày vận hành, khi tìm đơn trong danh sách hoặc bàn giao lúc đổi ca, có khâu nào khiến chị bị vướng không ạ?",
+      "terms": [
+        "運用",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S031",
+        "S032"
+      ],
+      "pattern": "ask_for_first_week_friction"
+    },
+    {
+      "id": "H-064-V13-027",
+      "group": "operate",
+      "role_vi": "Người phụ trách dự án báo với trưởng nhóm",
+      "gender": "female",
+      "ja": "振り返りでは、次も現場の方に見本を早めに触ってもらうことと、影響が分かった時点で先方に一報を入れることを確認したいです。",
+      "vi": "Trong buổi nhìn lại, tôi muốn chốt lần sau vẫn cho người trực tiếp vận hành thử bản mẫu sớm và báo khách ngay khi biết phạm vi ảnh hưởng.",
+      "terms": [
+        "振り返り",
+        "一報"
+      ],
+      "scenes": [
+        "S033",
+        "S034",
+        "S035"
+      ],
+      "pattern": "set_repeatable_process_change"
+    },
+    {
+      "id": "H-064-V13-028",
+      "group": "operate",
+      "role_vi": "Người phụ trách dự án trao đổi với khách hàng",
+      "gender": "female",
+      "ja": "西支店の集計は開けませんが、両支店の申請受付は使えており、修正状況にかかわらず14時に私から続報をお伝えします。",
+      "vi": "Bảng tổng hợp của chi nhánh Tây chưa mở được, nhưng phần nhận đơn của cả hai chi nhánh vẫn dùng được. Dù đã sửa xong hay chưa, tôi sẽ cập nhật tiếp lúc 14 giờ ạ.",
+      "terms": [
+        "続報"
+      ],
+      "scenes": [
+        "S036"
+      ],
+      "pattern": "first_update_with_next_time"
+    }
+  ]
+}

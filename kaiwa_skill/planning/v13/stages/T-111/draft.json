@@ -1,0 +1,399 @@
+{
+  "code": "T-111",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "2204098c7a9dc42290ee94b20b60d78b2797014f8af769a4cbec3288f197ccb2",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "report": "Báo tai nạn và điều tận mắt thấy",
+    "verify": "Phân biệt lời kể và thông tin đã xác nhận",
+    "handoff": "Chốt đầu mối và bàn giao việc đang dở",
+    "work": "Cập nhật lịch và phạm vi công việc"
+  },
+  "items": [
+    {
+      "id": "T-111-V13-001",
+      "group": "report",
+      "role_vi": "Nhân viên kho vừa bị thương",
+      "gender": "female",
+      "ja": "落ちてきた箱が左腕に当たりました。",
+      "vi": "Một thùng hàng rơi xuống va vào tay trái tôi ạ.",
+      "terms": [
+        "当たる"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "báo_điều_đã_xảy_ra"
+    },
+    {
+      "id": "T-111-V13-002",
+      "group": "report",
+      "role_vi": "Nhân viên báo vị trí hiện tại",
+      "gender": "female",
+      "ja": "今は二階のC入口の外側で、福田さんと待っています。",
+      "vi": "Tôi đang đợi cùng anh Fukuda ở phía ngoài cửa C tầng hai ạ.",
+      "terms": [
+        "外側"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "báo_vị_trí_hiện_tại"
+    },
+    {
+      "id": "T-111-V13-003",
+      "group": "report",
+      "role_vi": "Trưởng ca kho hỏi phần đã biết",
+      "gender": "male",
+      "ja": "救護担当の方は、今どなたの手当てをしていますか。",
+      "vi": "Người phụ trách sơ cứu đang chăm sóc cho ai ạ?",
+      "terms": [
+        "担当",
+        "手当て"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_ai_đang_được_hỗ_trợ"
+    },
+    {
+      "id": "T-111-V13-004",
+      "group": "report",
+      "role_vi": "Nhân viên tả giới hạn quan sát",
+      "gender": "female",
+      "ja": "通路の反対側は見えなかったので、ほかにけがをした人がいるかは分かりません。",
+      "vi": "Tôi không nhìn thấy phía đối diện của lối đi nên không biết có ai khác bị thương không ạ.",
+      "terms": [
+        "通路",
+        "けが"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "nêu_giới_hạn_quan_sát"
+    },
+    {
+      "id": "T-111-V13-005",
+      "group": "report",
+      "role_vi": "Nhân viên đính chính vị trí tai nạn",
+      "gender": "female",
+      "ja": "事故があったのは、Bの表示がある柱のそばで、入口は二階のCです。",
+      "vi": "Tai nạn xảy ra cạnh cột có ký hiệu B, lối vào là cửa C tầng hai ạ.",
+      "terms": [
+        "事故",
+        "柱"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "đính_chính_vị_trí"
+    },
+    {
+      "id": "T-111-V13-006",
+      "group": "report",
+      "role_vi": "Nhân viên báo nguy cơ trên kệ",
+      "gender": "female",
+      "ja": "上の段から箱がはみ出していたので、安全担当の方に点検をお願いできますか。",
+      "vi": "Tôi thấy một thùng nhô ra ở tầng kệ trên, anh nhờ người phụ trách an toàn kiểm tra giúp được không ạ?",
+      "terms": [
+        "段",
+        "はみ出す",
+        "担当",
+        "点検する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "nhờ_người_đúng_chuyên_môn"
+    },
+    {
+      "id": "T-111-V13-007",
+      "group": "verify",
+      "role_vi": "Nhân viên kể lại sau sự cố",
+      "gender": "female",
+      "ja": "商品番号を見ていたときに箱が腕に当たったので、どの段から落ちたかは見ていません。",
+      "vi": "Lúc đang nhìn mã hàng thì thùng va vào tay tôi, nên tôi không thấy nó rơi từ tầng kệ nào ạ.",
+      "terms": [
+        "当たる",
+        "段"
+      ],
+      "scenes": [
+        "S001",
+        "S006"
+      ],
+      "pattern": "nêu_giới_hạn_quan_sát"
+    },
+    {
+      "id": "T-111-V13-008",
+      "group": "verify",
+      "role_vi": "Nhân viên tách lời mình khỏi lời đồng nghiệp",
+      "gender": "female",
+      "ja": "台車が通ったかもしれないと福田さんから聞きましたが、私は台車を見ていません。",
+      "vi": "Anh Fukuda nói có thể xe đẩy đã đi qua, còn tôi thì không nhìn thấy xe ạ.",
+      "terms": [
+        "台車"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "tách_nguồn_thông_tin"
+    },
+    {
+      "id": "T-111-V13-009",
+      "group": "verify",
+      "role_vi": "Nhân sự làm rõ phần có thể kết luận",
+      "gender": "male",
+      "ja": "台車が通ったという話だけでは、事故の原因までは分かりません。",
+      "vi": "Chỉ dựa vào lời kể về việc xe đẩy đi qua thì chưa biết được nguyên nhân tai nạn ạ.",
+      "terms": [
+        "台車",
+        "事故",
+        "原因"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "nêu_điều_chưa_thể_kết_luận"
+    },
+    {
+      "id": "T-111-V13-010",
+      "group": "verify",
+      "role_vi": "Nhân viên nêu giờ đã xác nhận",
+      "gender": "female",
+      "ja": "十時二十三分と確認できたのは、事故の時刻ではなく、救護担当が連絡を受けた時刻です。",
+      "vi": "Mốc mười giờ hai mươi ba đã xác nhận là giờ người phụ trách hỗ trợ nhận được tin báo, không phải giờ xảy ra tai nạn ạ.",
+      "terms": [
+        "事故",
+        "時刻",
+        "担当"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "tách_nguồn_thông_tin"
+    },
+    {
+      "id": "T-111-V13-011",
+      "group": "verify",
+      "role_vi": "Nhân sự xác nhận cách ghi mốc",
+      "gender": "male",
+      "ja": "事故が起きたおおよその時刻と、連絡を受けた時刻は分けて記録します。",
+      "vi": "Tôi sẽ ghi riêng giờ xảy ra tai nạn ước chừng và giờ tiếp nhận tin báo ạ.",
+      "terms": [
+        "事故",
+        "時刻",
+        "記録する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "chốt_cách_ghi"
+    },
+    {
+      "id": "T-111-V13-012",
+      "group": "handoff",
+      "role_vi": "Nhân viên chuẩn bị rời kho đi khám",
+      "gender": "female",
+      "ja": "私が受診で現場を離れたら、事故についての問い合わせ先はどなたになりますか。",
+      "vi": "Sau khi tôi rời hiện trường để đi khám, nếu có ai hỏi về tai nạn thì nên để họ liên hệ với ai ạ?",
+      "terms": [
+        "受診する",
+        "現場",
+        "事故"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "hỏi_đầu_mối_tiếp"
+    },
+    {
+      "id": "T-111-V13-013",
+      "group": "handoff",
+      "role_vi": "Trưởng ca nhận bàn giao",
+      "gender": "male",
+      "ja": "現場の経緯は私が引き継いで、確認できたことを人事に共有します。",
+      "vi": "Tôi sẽ tiếp quản phần diễn biến tại hiện trường và báo cho nhân sự những gì đã xác nhận được.",
+      "terms": [
+        "現場",
+        "経緯",
+        "引き継ぐ",
+        "共有する"
+      ],
+      "scenes": [
+        "S005",
+        "S007"
+      ],
+      "pattern": "chốt_người_tiếp_quản"
+    },
+    {
+      "id": "T-111-V13-014",
+      "group": "handoff",
+      "role_vi": "Nhân viên hỏi nơi nộp giấy",
+      "gender": "female",
+      "ja": "再診の予約票しか手元にないので、ほかに書類が必要でしたら提出先を教えていただけますか。",
+      "vi": "Tôi chỉ có phiếu hẹn tái khám, nếu cần giấy tờ khác thì chị cho tôi biết phải nộp cho ai được không ạ?",
+      "terms": [
+        "再診",
+        "予約票",
+        "提出先"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "hỏi_đầu_mối_tiếp"
+    },
+    {
+      "id": "T-111-V13-015",
+      "group": "handoff",
+      "role_vi": "Nhân viên hỏi phạm vi chia sẻ",
+      "gender": "female",
+      "ja": "受診のことをチームに共有する際は、勤務時間や担当できる作業だけに絞っていただけますか。",
+      "vi": "Khi báo cho nhóm về buổi khám, chị chỉ chia sẻ phần giờ làm và những việc tôi có thể nhận được không ạ?",
+      "terms": [
+        "受診する",
+        "共有する",
+        "担当"
+      ],
+      "scenes": [
+        "S008",
+        "S015"
+      ],
+      "pattern": "hỏi_phạm_vi"
+    },
+    {
+      "id": "T-111-V13-016",
+      "group": "handoff",
+      "role_vi": "Nhân viên xin đầu mối bảo hiểm",
+      "gender": "female",
+      "ja": "労災保険の請求について、どの窓口に相談すればいいか教えていただけますか。",
+      "vi": "Chị cho tôi biết nên hỏi quầy nào về việc xin hưởng bảo hiểm tai nạn lao động được không ạ?",
+      "terms": [
+        "労災保険",
+        "請求"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "hỏi_đầu_mối_tiếp"
+    },
+    {
+      "id": "T-111-V13-017",
+      "group": "handoff",
+      "role_vi": "Nhân viên bàn giao đơn hàng",
+      "gender": "female",
+      "ja": "出荷一覧の一番下の注文だけ、先方から数量の返事を待っています。",
+      "vi": "Chỉ còn đơn cuối trong danh sách xuất hàng là đang chờ bên khách trả lời về số lượng ạ.",
+      "terms": [
+        "一覧"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "nêu_phần_việc_còn_chờ"
+    },
+    {
+      "id": "T-111-V13-018",
+      "group": "handoff",
+      "role_vi": "Đồng nghiệp nhận phần việc",
+      "gender": "male",
+      "ja": "先方の返事がなければ、出荷は保留にして清水さんに相談します。",
+      "vi": "Nếu bên khách chưa phản hồi, tôi sẽ tạm hoãn xuất hàng và trao đổi với anh Shimizu.",
+      "terms": [
+        "保留"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "chốt_cách_xử_lý_khi_chưa_rõ"
+    },
+    {
+      "id": "T-111-V13-019",
+      "group": "work",
+      "role_vi": "Nhân viên báo vắng vì đổi lịch khám",
+      "gender": "female",
+      "ja": "月曜は再診で出勤できないので、火曜以降の勤務は受診のあとにお知らせします。",
+      "vi": "Thứ Hai tôi không đi làm được vì phải tái khám, sau khi khám tôi sẽ báo lịch từ thứ Ba trở đi ạ.",
+      "terms": [
+        "再診",
+        "受診する"
+      ],
+      "scenes": [
+        "S013",
+        "S015"
+      ],
+      "pattern": "báo_sẽ_cập_nhật"
+    },
+    {
+      "id": "T-111-V13-020",
+      "group": "work",
+      "role_vi": "Nhân viên làm rõ mốc tái khám",
+      "gender": "female",
+      "ja": "木曜は再診の日で、復帰日はまだ決まっていません。",
+      "vi": "Thứ Năm là ngày tôi tái khám, còn ngày đi làm lại vẫn chưa chốt ạ.",
+      "terms": [
+        "再診",
+        "復帰日"
+      ],
+      "scenes": [
+        "S009",
+        "S016",
+        "S017"
+      ],
+      "pattern": "phân_biệt_hai_mốc"
+    },
+    {
+      "id": "T-111-V13-021",
+      "group": "work",
+      "role_vi": "Nhân viên nhờ tiếp tục để người thay phụ trách",
+      "gender": "female",
+      "ja": "復帰日はまだ未定なので、当面は松井さんに先方との連絡をお願いできますか。",
+      "vi": "Ngày đi làm lại của tôi chưa chốt, trước mắt anh nhờ anh Matsui tiếp tục liên hệ với bên khách giúp tôi được không ạ?",
+      "terms": [
+        "復帰日",
+        "未定",
+        "当面"
+      ],
+      "scenes": [
+        "S015",
+        "S018"
+      ],
+      "pattern": "nhờ_tiếp_tục_phụ_trách"
+    },
+    {
+      "id": "T-111-V13-022",
+      "group": "work",
+      "role_vi": "Nhân viên báo lại giới hạn bác sĩ đã nêu",
+      "gender": "female",
+      "ja": "受診の際、医師から机での作業は一回三時間までと言われました。",
+      "vi": "Khi đi khám, bác sĩ dặn mỗi buổi tôi chỉ làm việc tại bàn tối đa ba tiếng ạ.",
+      "terms": [
+        "受診する",
+        "医師"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "thuật_lại_điều_được_dặn"
+    },
+    {
+      "id": "T-111-V13-023",
+      "group": "work",
+      "role_vi": "Trưởng ca xác nhận giờ xem lại lịch",
+      "gender": "male",
+      "ja": "月曜の短時間勤務が終わったら、その先の勤務時間を一緒に見直しましょう。",
+      "vi": "Khi ca làm ngắn thứ Hai kết thúc, mình cùng xem lại giờ làm những hôm sau nhé.",
+      "terms": [
+        "短時間勤務",
+        "見直す"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "chốt_lúc_xem_lại"
+    }
+  ]
+}

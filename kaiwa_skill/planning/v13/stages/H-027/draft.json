@@ -1,0 +1,407 @@
+{
+  "code": "H-027",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b338d66accd6fc2ece7d17bef4f2cc1833fd2ab09147879cc2d5fb7075c22cae",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "invite": "Mời nhận việc và hỏi sức đảm đương",
+    "define": "Chốt phần việc và tiêu chí hoàn thành",
+    "authority": "Trao quyền và nêu ngưỡng phải hỏi",
+    "support": "Thống nhất cách cập nhật và tháo vướng",
+    "repair": "Xử lý yêu cầu vượt quyền và sửa lời hứa",
+    "return": "Nhìn lại, ghi công và giao việc tiếp"
+  },
+  "items": [
+    {
+      "id": "H-027-V13-001",
+      "group": "invite",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "次の試用日程の調整を任せたいのですが、どうでしょうか。",
+      "vi": "Tôi muốn giao em điều phối lịch dùng thử đợt tới, em thấy sao?",
+      "terms": [
+        "任せる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を任せる"
+    },
+    {
+      "id": "H-027-V13-002",
+      "group": "invite",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "今の業務との兼ね合いを考えると、試用の日程調整はどこまで引き受けられそうですか。",
+      "vi": "Tính cả công việc hiện tại, em thấy mình có thể nhận điều phối lịch dùng thử đến mức nào?",
+      "terms": [
+        "兼ね合い",
+        "引き受ける"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～との兼ね合いを考えると"
+    },
+    {
+      "id": "H-027-V13-003",
+      "group": "invite",
+      "role_vi": "Thành viên nhận điều phối lịch dùng thử",
+      "gender": "female",
+      "ja": "技術担当に問い合わせを引き継げるなら、一社分の試用日程は引き受けられます。",
+      "vi": "Nếu có thể chuyển câu hỏi kỹ thuật cho người phụ trách, em có thể nhận điều phối lịch dùng thử cho một khách.",
+      "terms": [
+        "引き受ける",
+        "技術担当"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "～なら引き受けられる"
+    },
+    {
+      "id": "H-027-V13-004",
+      "group": "invite",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "今週の試用日程の調整を無理に引き受けなくていいので、何を動かせば担当できそうか一緒に考えましょう。",
+      "vi": "Em không cần cố nhận phần lịch dùng thử tuần này, mình cùng xem có thể dời việc nào để em đảm đương được nhé.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "無理に～なくていい"
+    },
+    {
+      "id": "H-027-V13-005",
+      "group": "define",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "日程調整は、お客様から日程の了承をいただき、技術担当も対応できると確認して初めて完了です。",
+      "vi": "Việc điều phối lịch chỉ xong khi khách đã đồng ý với lịch và bên kỹ thuật xác nhận có thể hỗ trợ.",
+      "terms": [
+        "技術担当"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～がそろって初めて完了"
+    },
+    {
+      "id": "H-027-V13-006",
+      "group": "define",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "試用中の不具合については、情報をまとめて技術担当に渡すところまでが担当範囲です。",
+      "vi": "Khi có lỗi trong lúc dùng thử, phần em phụ trách là tổng hợp thông tin rồi chuyển cho người phụ trách kỹ thuật.",
+      "terms": [
+        "不具合",
+        "担当範囲",
+        "技術担当"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～までが担当範囲"
+    },
+    {
+      "id": "H-027-V13-007",
+      "group": "define",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "お客様と社内の関係者の都合を確認したうえで、日程の候補は自分で決めてください。",
+      "vi": "Sau khi hỏi thời gian phù hợp của khách và các bên liên quan trong công ty, em cứ tự chọn những khung giờ để đề xuất.",
+      "terms": [
+        "関係者"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "～を確認したうえで"
+    },
+    {
+      "id": "H-027-V13-008",
+      "group": "authority",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "技術と営業とお客様の都合がつくなら、同じ週の候補日は事前承認なしで決めて大丈夫です。",
+      "vi": "Nếu lịch của bên kỹ thuật, kinh doanh và khách đều khớp thì em cứ tự chọn khung giờ trong cùng tuần, không cần xin duyệt trước.",
+      "terms": [
+        "事前承認"
+      ],
+      "scenes": [
+        "S007",
+        "S011"
+      ],
+      "pattern": "～なら自分で決めてよい"
+    },
+    {
+      "id": "H-027-V13-009",
+      "group": "authority",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "試用に使う消耗品は、すでに買った分も含めて合計五万円以内なら、自分で選んで構いません。",
+      "vi": "Vật tư dùng thử, nếu tổng cộng không quá 50.000 yên kể cả phần đã mua, thì em cứ tự chọn.",
+      "terms": [
+        "消耗品"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～なら自分で決めてよい"
+    },
+    {
+      "id": "H-027-V13-010",
+      "group": "authority",
+      "role_vi": "Thành viên nhận điều phối lịch dùng thử",
+      "gender": "female",
+      "ja": "試用の消耗品は、これまでの支出を足して上限を超えそうなら、発注する前に相談します。",
+      "vi": "Về vật tư dùng thử, nếu tính cả khoản đã chi mà có nguy cơ vượt trần, em sẽ hỏi anh trước khi đặt.",
+      "terms": [
+        "支出",
+        "上限",
+        "消耗品"
+      ],
+      "scenes": [
+        "S009",
+        "S010",
+        "S011"
+      ],
+      "pattern": "～場合は先に相談する"
+    },
+    {
+      "id": "H-027-V13-011",
+      "group": "authority",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "消耗品の用途を試用以外に変える場合や契約条件を変更する場合は、金額にかかわらず先に相談してください。",
+      "vi": "Nếu muốn dùng vật tư vào việc khác ngoài đợt thử hoặc đổi điều khoản hợp đồng, em hỏi tôi trước dù số tiền là bao nhiêu.",
+      "terms": [
+        "消耗品",
+        "用途",
+        "契約条件"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～にかかわらず"
+    },
+    {
+      "id": "H-027-V13-012",
+      "group": "support",
+      "role_vi": "Thành viên nhận điều phối lịch dùng thử",
+      "gender": "female",
+      "ja": "お客様の窓口一覧と技術担当の空き時間が分かれば、自分で日程調整を進められます。",
+      "vi": "Khi có danh sách đầu mối phía khách và lịch rảnh của người phụ trách kỹ thuật, em có thể tự điều phối lịch.",
+      "terms": [
+        "窓口一覧",
+        "空き時間",
+        "技術担当"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～が分かれば進められる"
+    },
+    {
+      "id": "H-027-V13-013",
+      "group": "support",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "二社目は窓口の確認待ちなので、一社目の日程だけ進めれば大丈夫です。",
+      "vi": "Còn chờ xác nhận đầu mối của khách thứ hai, nên em cứ điều phối lịch cho khách thứ nhất trước là được.",
+      "terms": [
+        "確認待ち"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～だけ進めれば大丈夫"
+    },
+    {
+      "id": "H-027-V13-014",
+      "group": "support",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "権限内で調整した日程は、どうしてその日にしたかも含めて、金曜の週次報告で共有してもらえれば十分です。",
+      "vi": "Với lịch em tự điều chỉnh trong phạm vi quyền được giao, em chỉ cần báo trong buổi cập nhật thứ Sáu, kèm lý do chọn ngày đó.",
+      "terms": [
+        "権限内",
+        "週次報告"
+      ],
+      "scenes": [
+        "S011",
+        "S015"
+      ],
+      "pattern": "～で十分です"
+    },
+    {
+      "id": "H-027-V13-015",
+      "group": "support",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "技術担当が当日対応できないと分かったら、週次報告を待たずに知らせてください。",
+      "vi": "Nếu biết người phụ trách kỹ thuật không thể hỗ trợ vào ngày đã định, em báo tôi ngay, đừng chờ đến buổi cập nhật tuần.",
+      "terms": [
+        "週次報告",
+        "技術担当"
+      ],
+      "scenes": [
+        "S012",
+        "S015"
+      ],
+      "pattern": "～を待たずに"
+    },
+    {
+      "id": "H-027-V13-016",
+      "group": "support",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "技術側への優先度の確認は私が引き取りますので、返事が来たら日程調整は引き続きお願いします。",
+      "vi": "Phần hỏi bên kỹ thuật xem việc này được ưu tiên đến đâu tôi sẽ nhận, có câu trả lời rồi thì em vẫn điều phối lịch tiếp nhé.",
+      "terms": [
+        "優先度"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～は私が引き取る"
+    },
+    {
+      "id": "H-027-V13-017",
+      "group": "repair",
+      "role_vi": "Thành viên giải thích quyền hạn với khách hàng",
+      "gender": "female",
+      "ja": "同じ週の中で試用日をずらすことでしたら私のほうで調整できますが、期間延長については社内で確認してからお返事いたします。",
+      "vi": "Tôi có thể thu xếp dời ngày dùng thử trong cùng tuần, còn việc kéo dài thời gian dùng thử thì tôi xin xác nhận lại trong công ty rồi trả lời anh chị ạ.",
+      "terms": [
+        "期間延長"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～は私のほうで調整できる"
+    },
+    {
+      "id": "H-027-V13-018",
+      "group": "repair",
+      "role_vi": "Thành viên nhận điều phối lịch dùng thử",
+      "gender": "female",
+      "ja": "お客様に試用の期間延長を確約してしまったので、先方がどこまで決まったと受け取ったか確認したいです。",
+      "vi": "Em đã lỡ hứa chắc với khách là sẽ kéo dài thời gian dùng thử, nên em muốn kiểm xem họ hiểu mình đã chốt đến đâu.",
+      "terms": [
+        "確約",
+        "期間延長"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～してしまった"
+    },
+    {
+      "id": "H-027-V13-019",
+      "group": "repair",
+      "role_vi": "Trưởng nhóm trao đổi với khách hàng",
+      "gender": "male",
+      "ja": "試用を一週間延ばせるとお伝えしましたが、期間延長は社内でまだ決まっておりません。",
+      "vi": "Bên tôi đã nói có thể kéo dài thêm một tuần, tôi xin nói lại cho rõ là nội bộ vẫn chưa quyết định việc kéo dài thời gian dùng thử ạ.",
+      "terms": [
+        "期間延長"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～とお伝えしましたが～"
+    },
+    {
+      "id": "H-027-V13-020",
+      "group": "repair",
+      "role_vi": "Thành viên nhận điều phối lịch dùng thử",
+      "gender": "female",
+      "ja": "これからは試用の期間延長や契約条件の変更をお客様に確約する前に、必ず社内で確認します。",
+      "vi": "Từ nay, trước khi cam kết với khách việc kéo dài thời gian dùng thử hay thay đổi điều khoản hợp đồng, em sẽ luôn xác nhận nội bộ.",
+      "terms": [
+        "期間延長",
+        "確約",
+        "契約条件"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～前に必ず確認する"
+    },
+    {
+      "id": "H-027-V13-021",
+      "group": "return",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "関係者の都合を確認して日程を決めた経験から、判断の根拠として何が一番役に立ちましたか。",
+      "vi": "Qua lần hỏi lịch các bên rồi tự chốt ngày, em thấy thông tin nào có ích nhất để làm căn cứ quyết định?",
+      "terms": [
+        "根拠",
+        "関係者"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～という経験から"
+    },
+    {
+      "id": "H-027-V13-022",
+      "group": "return",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "日程が遅れたことと、早めにリスクを知らせてくれたことは分けて考え、次は技術側の代行先も前もって確認しましょう。",
+      "vi": "Lịch bị chậm và việc em đã báo sớm khi thấy có nguy cơ là hai chuyện cần xem riêng, đợt tới mình kiểm trước cả người có thể hỗ trợ thay bên kỹ thuật nhé.",
+      "terms": [
+        "代行先"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～と～は分けて考える"
+    },
+    {
+      "id": "H-027-V13-023",
+      "group": "return",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "二社の条件を先に整理して技術担当の空き時間も確認してくれたおかげで、一社目の日程をスムーズに決められました。",
+      "vi": "Nhờ em tổng hợp trước các điều kiện của hai khách và hỏi luôn lịch rảnh của bên kỹ thuật, ta đã chốt được lịch cho khách thứ nhất thuận lợi.",
+      "terms": [
+        "技術担当",
+        "空き時間"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～おかげで～できた"
+    },
+    {
+      "id": "H-027-V13-024",
+      "group": "return",
+      "role_vi": "Trưởng nhóm giao việc",
+      "gender": "male",
+      "ja": "次の試用日程では、技術側が挙げた候補の中から代行先を選ぶところまで任せます。",
+      "vi": "Với lịch dùng thử đợt tới, tôi giao em cả việc chọn người hỗ trợ thay trong số các ứng viên phía kỹ thuật đề xuất.",
+      "terms": [
+        "任せる",
+        "代行先"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～を任せる"
+    }
+  ]
+}

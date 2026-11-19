@@ -1,0 +1,339 @@
+{
+  "code": "S-037",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "fcbbe6b97d81916ff459fe50fcab80c2470f34f63c00b9d8402633b4b9910b2a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Hỏi đồng nghiệp chỗ lấy đồ",
+    "borrow": "Mượn thiết bị và tìm món thay",
+    "return": "Hẹn trả và bàn giao thiết bị",
+    "collect": "Nhận đúng tài liệu và thẻ"
+  },
+  "items": [
+    {
+      "id": "S-037-V13-001",
+      "group": "ask",
+      "role_vi": "Nhân viên hỏi đồng nghiệp",
+      "gender": "male",
+      "ja": "会議で使う用紙はどこにありますか。",
+      "vi": "Giấy dùng cho cuộc họp để ở đâu vậy?",
+      "terms": [
+        "用紙"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜はどこにありますか"
+    },
+    {
+      "id": "S-037-V13-002",
+      "group": "ask",
+      "role_vi": "Đồng nghiệp được nhờ",
+      "gender": "female",
+      "ja": "用紙は印刷機の隣の棚にあります。",
+      "vi": "Giấy ở kệ cạnh máy in nhé.",
+      "terms": [
+        "用紙",
+        "棚"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜は〜にあります"
+    },
+    {
+      "id": "S-037-V13-003",
+      "group": "ask",
+      "role_vi": "Nhân viên hỏi đồng nghiệp",
+      "gender": "male",
+      "ja": "用紙は棚の上から二段目にある箱の中ですね。",
+      "vi": "Giấy nằm trong hộp ở ngăn thứ hai từ trên xuống, đúng không?",
+      "terms": [
+        "用紙",
+        "棚",
+        "〜段目",
+        "箱"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜の中ですね"
+    },
+    {
+      "id": "S-037-V13-004",
+      "group": "ask",
+      "role_vi": "Nhân viên hỏi đồng nghiệp",
+      "gender": "male",
+      "ja": "今お忙しければ、用紙の場所が分かる人を教えてもらえますか。",
+      "vi": "Nếu chị đang bận, chị cho tôi biết ai khác biết chỗ để giấy được không?",
+      "terms": [
+        "忙しい",
+        "用紙",
+        "場所",
+        "教える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜ければ、〜てもらえますか"
+    },
+    {
+      "id": "S-037-V13-005",
+      "group": "ask",
+      "role_vi": "Nhân viên hỏi đồng nghiệp",
+      "gender": "male",
+      "ja": "会議が終わるころ、用紙の場所を聞きに戻ってもいいですか。",
+      "vi": "Tầm họp xong, tôi quay lại hỏi chỗ để giấy được không?",
+      "terms": [
+        "頃",
+        "用紙",
+        "場所",
+        "戻る"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜てもいいですか"
+    },
+    {
+      "id": "S-037-V13-006",
+      "group": "borrow",
+      "role_vi": "Nhân viên hỏi quầy quản lý thiết bị",
+      "gender": "male",
+      "ja": "午後の会議でプロジェクターをお借りできますか。",
+      "vi": "Tôi mượn máy chiếu cho cuộc họp chiều nay được không ạ?",
+      "terms": [
+        "プロジェクター",
+        "借りる"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜をお借りできますか"
+    },
+    {
+      "id": "S-037-V13-007",
+      "group": "borrow",
+      "role_vi": "Người quản lý thiết bị văn phòng",
+      "gender": "female",
+      "ja": "プロジェクターが空いているか確認して、十一時までにお知らせします。",
+      "vi": "Tôi sẽ xem máy chiếu còn trống lịch không rồi báo anh chậm nhất lúc 11 giờ ạ.",
+      "terms": [
+        "プロジェクター",
+        "空く",
+        "確認する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜までにお知らせします"
+    },
+    {
+      "id": "S-037-V13-008",
+      "group": "borrow",
+      "role_vi": "Nhân viên hỏi quầy quản lý thiết bị",
+      "gender": "male",
+      "ja": "プロジェクターが使えないなら、代わりに会議室のモニターを使えますか。",
+      "vi": "Nếu không dùng được máy chiếu thì tôi dùng màn hình phòng họp thay được không ạ?",
+      "terms": [
+        "プロジェクター",
+        "代わりに",
+        "会議室",
+        "モニター"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜なら、代わりに〜できますか"
+    },
+    {
+      "id": "S-037-V13-009",
+      "group": "borrow",
+      "role_vi": "Nhân viên hỏi quầy quản lý thiết bị",
+      "gender": "male",
+      "ja": "会議室のモニターにつなぐケーブルもお借りできますか。",
+      "vi": "Tôi mượn cả cáp để nối với màn hình phòng họp được không ạ?",
+      "terms": [
+        "会議室",
+        "モニター",
+        "つなぐ",
+        "ケーブル",
+        "借りる"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜をお借りできますか"
+    },
+    {
+      "id": "S-037-V13-010",
+      "group": "borrow",
+      "role_vi": "Nhân viên hỏi quầy quản lý thiết bị",
+      "gender": "male",
+      "ja": "プロジェクターを借りられるか、何時ごろ分かりますか。",
+      "vi": "Khoảng mấy giờ thì tôi biết có mượn được máy chiếu không ạ?",
+      "terms": [
+        "プロジェクター",
+        "借りる",
+        "頃"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "何時ごろ分かりますか"
+    },
+    {
+      "id": "S-037-V13-011",
+      "group": "return",
+      "role_vi": "Nhân viên hỏi quầy quản lý thiết bị",
+      "gender": "male",
+      "ja": "プロジェクターは三時までにどこに返せばいいですか。",
+      "vi": "Chậm nhất ba giờ, tôi mang máy chiếu trả ở đâu ạ?",
+      "terms": [
+        "プロジェクター",
+        "返す"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜までにどこに返せばいいですか"
+    },
+    {
+      "id": "S-037-V13-012",
+      "group": "return",
+      "role_vi": "Nhân viên hỏi quầy quản lý thiết bị",
+      "gender": "male",
+      "ja": "会議で使ったプロジェクターを返しに来ました。",
+      "vi": "Tôi đến trả máy chiếu đã dùng trong cuộc họp ạ.",
+      "terms": [
+        "プロジェクター",
+        "返す"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜しに来ました"
+    },
+    {
+      "id": "S-037-V13-013",
+      "group": "return",
+      "role_vi": "Nhân viên hỏi quầy quản lý thiết bị",
+      "gender": "male",
+      "ja": "会議ではプロジェクターが問題なく使えました。",
+      "vi": "Trong lúc họp tôi dùng máy chiếu bình thường, không gặp trục trặc gì ạ.",
+      "terms": [
+        "プロジェクター"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "問題なく使えました"
+    },
+    {
+      "id": "S-037-V13-014",
+      "group": "collect",
+      "role_vi": "Nhân viên nhận giấy tờ ở quầy công ty",
+      "gender": "male",
+      "ja": "営業課の会議資料を受け取りに来ました。",
+      "vi": "Tôi đến nhận tài liệu họp của phòng kinh doanh ạ.",
+      "terms": [
+        "営業課",
+        "資料",
+        "受け取る"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜しに来ました"
+    },
+    {
+      "id": "S-037-V13-015",
+      "group": "collect",
+      "role_vi": "Người phụ trách giao tài liệu",
+      "gender": "female",
+      "ja": "会議資料の表紙にあるお名前を確認していただけますか。",
+      "vi": "Anh kiểm tra giúp tôi tên ghi trên bìa tài liệu họp được không ạ?",
+      "terms": [
+        "資料",
+        "表紙",
+        "名前",
+        "確認する"
+      ],
+      "scenes": [
+        "S010",
+        "S011"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "S-037-V13-016",
+      "group": "collect",
+      "role_vi": "Nhân viên nhận giấy tờ ở quầy công ty",
+      "gender": "male",
+      "ja": "資料の表紙が別の部署になっているので、もう一度確認してもらえますか。",
+      "vi": "Bìa tài liệu ghi tên bộ phận khác, chị kiểm tra lại giúp tôi được không ạ?",
+      "terms": [
+        "資料",
+        "表紙",
+        "部署",
+        "確認する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜ので、〜てもらえますか"
+    },
+    {
+      "id": "S-037-V13-017",
+      "group": "collect",
+      "role_vi": "Nhân viên nhận giấy tờ ở quầy công ty",
+      "gender": "male",
+      "ja": "仮カードの準備ができるのは何時ごろですか。",
+      "vi": "Khoảng mấy giờ thì thẻ tạm của tôi làm xong ạ?",
+      "terms": [
+        "仮カード",
+        "頃"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "何時ごろですか"
+    },
+    {
+      "id": "S-037-V13-018",
+      "group": "collect",
+      "role_vi": "Nhân viên nhận giấy tờ ở quầy công ty",
+      "gender": "male",
+      "ja": "仮カードを受け取る前に、ここで名前を確認してもいいですか。",
+      "vi": "Trước khi nhận thẻ tạm, tôi kiểm tra tên ngay tại đây được không ạ?",
+      "terms": [
+        "仮カード",
+        "受け取る",
+        "名前",
+        "確認する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜てもいいですか"
+    },
+    {
+      "id": "S-037-V13-019",
+      "group": "collect",
+      "role_vi": "Nhân viên nhận giấy tờ ở quầy công ty",
+      "gender": "male",
+      "ja": "仮カードの名前が合っているので、このカードで大丈夫です。",
+      "vi": "Tên trên thẻ tạm đúng rồi, thẻ này được ạ.",
+      "terms": [
+        "仮カード",
+        "名前"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜ので、大丈夫です"
+    }
+  ]
+}

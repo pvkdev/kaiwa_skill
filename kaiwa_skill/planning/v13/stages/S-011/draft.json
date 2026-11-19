@@ -1,0 +1,370 @@
+{
+  "code": "S-011",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "1740ec9ecc5be74c954921ac45d6aa72b9cac19ae17d324498611573f879c121",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "train": "Chọn hướng và đổi tàu",
+    "bus": "Tìm xe buýt và lên xe",
+    "bus_changes": "Chuyển xe, xuống bến và báo trễ",
+    "access": "Tìm lối đi không cần cầu thang",
+    "help": "Chờ hỗ trợ và nhờ kiểm tra vé"
+  },
+  "items": [
+    {
+      "id": "S-011-V13-001",
+      "group": "train",
+      "role_vi": "Hành khách hỏi nhân viên ga về hướng của tàu đang đỗ",
+      "gender": "female",
+      "ja": "この電車は桜方面ですか。",
+      "vi": "Tàu này đi hướng Sakura phải không ạ?",
+      "terms": [
+        "電車",
+        "方面"
+      ],
+      "scenes": [
+        "S001",
+        "S004"
+      ],
+      "pattern": "train_wa_houmen_desu_ka"
+    },
+    {
+      "id": "S-011-V13-002",
+      "group": "train",
+      "role_vi": "Hành khách hỏi nhân viên ga vị trí sân ga số hai",
+      "gender": "female",
+      "ja": "２番線はどこですか。",
+      "vi": "Sân ga số 2 ở đâu ạ?",
+      "terms": [
+        "番線"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "place_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-011-V13-003",
+      "group": "train",
+      "role_vi": "Nhân viên ga bảo hành khách chuyển sang sân ga đối diện",
+      "gender": "male",
+      "ja": "向かいのホームに行ってください。",
+      "vi": "Mời quý khách sang sân ga đối diện.",
+      "terms": [
+        "向かい",
+        "ホーム"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-011-V13-004",
+      "group": "train",
+      "role_vi": "Hành khách hỏi nhân viên ga có phải đổi tàu trên đường đi không",
+      "gender": "female",
+      "ja": "この電車は桜駅まで直通ですか。",
+      "vi": "Tàu này đi thẳng đến ga Sakura phải không ạ?",
+      "terms": [
+        "電車",
+        "直通"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "destination_made_chokutsu_desu_ka"
+    },
+    {
+      "id": "S-011-V13-005",
+      "group": "train",
+      "role_vi": "Hành khách kiểm tra lại tên ga trung chuyển trước khi lên tàu",
+      "gender": "female",
+      "ja": "乗り換えは青葉駅ですか。",
+      "vi": "Tôi đổi tàu ở ga Aoba phải không ạ?",
+      "terms": [],
+      "scenes": [
+        "S002",
+        "S005"
+      ],
+      "pattern": "norikae_wa_station_desu_ka"
+    },
+    {
+      "id": "S-011-V13-006",
+      "group": "train",
+      "role_vi": "Hành khách nhắc lại với nhân viên ga số sân ga để đi tiếp",
+      "gender": "female",
+      "ja": "桜方面は青葉駅の２番線ですね。",
+      "vi": "Tàu hướng Sakura đón khách ở sân ga số 2 của ga Aoba, đúng không ạ?",
+      "terms": [
+        "方面",
+        "番線"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "place_confirmation_ne"
+    },
+    {
+      "id": "S-011-V13-007",
+      "group": "bus",
+      "role_vi": "Hành khách hỏi lái xe ở bến xem xe này có đến gần nơi cần tới không",
+      "gender": "female",
+      "ja": "図書館までこのバスで行けますか。",
+      "vi": "Tôi đi xe buýt này đến thư viện được không ạ?",
+      "terms": [
+        "バス"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "destination_made_means_de_ikemasu_ka"
+    },
+    {
+      "id": "S-011-V13-008",
+      "group": "bus",
+      "role_vi": "Hành khách hỏi lái xe nên lên xe từ cửa nào",
+      "gender": "female",
+      "ja": "このバスはどのドアから乗りますか。",
+      "vi": "Xe này lên từ cửa nào ạ?",
+      "terms": [
+        "バス",
+        "乗る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "door_kara_norimasu_ka"
+    },
+    {
+      "id": "S-011-V13-009",
+      "group": "bus",
+      "role_vi": "Hành khách hỏi lái xe có trả tiền ngay lúc lên xe không",
+      "gender": "female",
+      "ja": "運賃は乗るときに払いますか。",
+      "vi": "Tiền vé trả lúc lên xe phải không ạ?",
+      "terms": [
+        "運賃",
+        "乗る",
+        "払う"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "toki_ni_haraimasu_ka"
+    },
+    {
+      "id": "S-011-V13-010",
+      "group": "bus",
+      "role_vi": "Hành khách vừa xuống xe hỏi nhân viên chỗ đón chuyến kế tiếp",
+      "gender": "female",
+      "ja": "次のバスの乗り場はどこですか。",
+      "vi": "Chỗ đón chuyến xe buýt tiếp theo ở đâu ạ?",
+      "terms": [
+        "次",
+        "バス",
+        "乗り場"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "place_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-011-V13-011",
+      "group": "bus_changes",
+      "role_vi": "Hành khách hỏi lái xe nơi chuyển sang xe đi bến Bệnh viện",
+      "gender": "female",
+      "ja": "病院前行きのバスにはどこで乗り換えますか。",
+      "vi": "Để bắt xe đi bến Bệnh viện, tôi chuyển xe ở đâu ạ?",
+      "terms": [
+        "バス",
+        "乗り換える"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "doko_de_norikaemasu_ka"
+    },
+    {
+      "id": "S-011-V13-012",
+      "group": "bus_changes",
+      "role_vi": "Hành khách đã lỡ bến hỏi lái xe lúc xe dừng về cách quay lại",
+      "gender": "female",
+      "ja": "次のバス停から図書館に戻れますか。",
+      "vi": "Tôi có thể quay lại thư viện từ bến tiếp theo không ạ?",
+      "terms": [
+        "次",
+        "バス停",
+        "戻る"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "place_kara_modoremasu_ka"
+    },
+    {
+      "id": "S-011-V13-013",
+      "group": "bus_changes",
+      "role_vi": "Hành khách lần đầu đi xe buýt hỏi người bên cạnh về nút báo xuống",
+      "gender": "female",
+      "ja": "降りたいときはこのボタンを押しますか。",
+      "vi": "Muốn xuống xe thì tôi bấm nút này phải không ạ?",
+      "terms": [
+        "降りる",
+        "押す"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "tai_toki_button_wo_oshimasu_ka"
+    },
+    {
+      "id": "S-011-V13-014",
+      "group": "bus_changes",
+      "role_vi": "Hành khách gọi cho bạn đang đợi để báo mình đến chậm",
+      "gender": "female",
+      "ja": "少し遅れるから、先に入ってね。",
+      "vi": "Tớ sẽ đến muộn một chút, cậu cứ vào trước nhé.",
+      "terms": [
+        "遅れる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "kara_casual_request"
+    },
+    {
+      "id": "S-011-V13-015",
+      "group": "access",
+      "role_vi": "Hành khách mang hành lý hỏi nhân viên ga có thể lên sân ga bằng thang máy không",
+      "gender": "female",
+      "ja": "エレベーターでホームまで行けますか。",
+      "vi": "Tôi đi thang máy lên sân ga được không ạ?",
+      "terms": [
+        "エレベーター",
+        "ホーム"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "destination_made_means_de_ikemasu_ka"
+    },
+    {
+      "id": "S-011-V13-016",
+      "group": "access",
+      "role_vi": "Hành khách đi cùng mẹ nói với nhân viên ga muốn tránh cầu thang",
+      "gender": "female",
+      "ja": "階段を使わないでホームに行きたいです。",
+      "vi": "Tôi muốn lên sân ga mà không phải đi cầu thang ạ.",
+      "terms": [
+        "階段",
+        "ホーム"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "verb_nai_de_destination_ni_ikitai_desu"
+    },
+    {
+      "id": "S-011-V13-017",
+      "group": "access",
+      "role_vi": "Nhân viên ga chỉ cho hành khách lối đến thang máy",
+      "gender": "male",
+      "ja": "エレベーターは改札を出て左です。",
+      "vi": "Qua cổng soát vé thì thang máy ở bên trái ạ.",
+      "terms": [
+        "エレベーター",
+        "改札"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "landmark_te_direction_desu"
+    },
+    {
+      "id": "S-011-V13-018",
+      "group": "access",
+      "role_vi": "Hành khách đi cùng mẹ hỏi nhân viên ga về thang máy ở ga chuyển tuyến",
+      "gender": "female",
+      "ja": "青葉駅でもエレベーターを使えますか。",
+      "vi": "Ở ga Aoba cũng dùng được thang máy phải không ạ?",
+      "terms": [
+        "エレベーター"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "location_demo_tsukaemasu_ka"
+    },
+    {
+      "id": "S-011-V13-019",
+      "group": "help",
+      "role_vi": "Nhân viên ga chỉ chỗ hành khách nên chờ trong lúc kiểm tra việc hỗ trợ",
+      "gender": "male",
+      "ja": "改札の横で待ってください。",
+      "vi": "Mời quý khách chờ cạnh cổng soát vé.",
+      "terms": [
+        "改札",
+        "待つ"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-011-V13-020",
+      "group": "help",
+      "role_vi": "Hành khách nhắc lại điểm hẹn với nhân viên hỗ trợ ở ga đổi tàu",
+      "gender": "female",
+      "ja": "エレベーターの前で駅員さんと会うんですね。",
+      "vi": "Tôi sẽ gặp nhân viên ga trước thang máy, đúng không ạ?",
+      "terms": [
+        "駅員",
+        "エレベーター"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "place_confirmation_ne"
+    },
+    {
+      "id": "S-011-V13-021",
+      "group": "help",
+      "role_vi": "Hành khách báo lỗi với nhân viên cạnh cổng soát vé",
+      "gender": "female",
+      "ja": "この切符では改札が開きません。",
+      "vi": "Tôi dùng vé này mà cổng soát vé không mở ạ.",
+      "terms": [
+        "切符",
+        "改札"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "ticket_dewa_gate_ga_akimasen"
+    },
+    {
+      "id": "S-011-V13-022",
+      "group": "help",
+      "role_vi": "Hành khách cầm vé giấy hỏi nhân viên xem quầy có thể kiểm tra vé không",
+      "gender": "female",
+      "ja": "この切符は窓口で確認できますか。",
+      "vi": "Tôi nhờ kiểm tra vé này ở quầy được không ạ?",
+      "terms": [
+        "切符",
+        "窓口",
+        "確認する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "counter_de_kakunin_dekimasu_ka"
+    }
+  ]
+}

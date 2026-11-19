@@ -1,0 +1,382 @@
+{
+  "code": "T-129",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "d9cf61b602fba252151be25bd1599b37576dce55e293f9593ed0b717dbdfeaee",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "choose": "Chọn xe đủ chỗ và nơi trả phù hợp",
+    "fees": "Kiểm giấy tờ, phí và giờ theo hợp đồng",
+    "pickup": "Kiểm xe và nói rõ điểm khác lúc đặt",
+    "problem": "Báo trục trặc và hỏi cách chờ hỗ trợ",
+    "return": "Báo giờ về và đối chiếu khi trả",
+    "bill": "Kiểm khoản cuối sau khi trả xe"
+  },
+  "items": [
+    {
+      "id": "T-129-V13-001",
+      "group": "choose",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "大人四人と大きなスーツケース二つなら、どのクラスがよさそうですか。",
+      "vi": "Bốn người lớn và hai vali to thì thuê hạng xe nào hợp ạ?",
+      "terms": [
+        "クラス"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～ならどの～がよいですか"
+    },
+    {
+      "id": "T-129-V13-002",
+      "group": "choose",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "後ろの座席を使ったまま、荷室にスーツケースが三つ入るか見てもいいですか。",
+      "vi": "Tôi có thể xem nếu vẫn dùng hàng ghế sau thì khoang hành lý có chứa được ba vali không ạ?",
+      "terms": [
+        "座席",
+        "荷室"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "～たまま～が入るか"
+    },
+    {
+      "id": "T-129-V13-003",
+      "group": "choose",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "駅前で借りて、湖の近くの営業所で返せますか。",
+      "vi": "Tôi có thể nhận xe trước ga và trả ở chi nhánh gần hồ không ạ?",
+      "terms": [
+        "営業所"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～で借りて～で返せますか"
+    },
+    {
+      "id": "T-129-V13-004",
+      "group": "choose",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "五人乗りの小型SUVを土曜の朝に借りて、日曜の夕方に返す予約で合っていますか。",
+      "vi": "Tôi thuê SUV cỡ nhỏ năm chỗ từ sáng thứ Bảy, trả chiều Chủ nhật, đúng không ạ?",
+      "terms": [
+        "小型",
+        "SUV"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-129-V13-005",
+      "group": "fees",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "ベトナムの運転免許証と日本語の翻訳文だけで、この車を借りられますか。",
+      "vi": "Tôi chỉ có bằng lái Việt Nam và bản dịch tiếng Nhật, với hai giấy đó tôi có thuê được chiếc xe này không ạ?",
+      "terms": [
+        "運転免許証",
+        "翻訳文"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～だけで借りられますか"
+    },
+    {
+      "id": "T-129-V13-006",
+      "group": "fees",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "見積もりには、基本料金のほかに免責補償の料金も入っていますか。",
+      "vi": "Ngoài tiền thuê cơ bản, báo giá có gồm phí gói giảm phần tiền tôi phải tự chịu không ạ?",
+      "terms": [
+        "見積もり",
+        "基本料金",
+        "免責補償"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～には～も入っていますか"
+    },
+    {
+      "id": "T-129-V13-007",
+      "group": "fees",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "渋滞で返却時刻に遅れそうなときは、どの店舗に電話すればいいですか。",
+      "vi": "Nếu tắc đường và có thể trả xe muộn, tôi cần gọi chi nhánh nào ạ?",
+      "terms": [
+        "渋滞"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～そうならどこに電話すればいいか"
+    },
+    {
+      "id": "T-129-V13-008",
+      "group": "fees",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "カードに出た三万円は、最終料金ですか、それとも仮押さえですか。",
+      "vi": "Khoản 30.000 yên vừa hiện trên thẻ là giá cuối hay khoản tạm giữ ạ?",
+      "terms": [
+        "仮押さえ"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～なのか、～なのか"
+    },
+    {
+      "id": "T-129-V13-009",
+      "group": "fees",
+      "role_vi": "Khách hỏi thuê xe cho chuyến đi",
+      "gender": "female",
+      "ja": "返却店と返す時刻が契約書に書いてあるか、車を受け取る前に確認したいです。",
+      "vi": "Trước khi nhận xe, tôi muốn xem hợp đồng đã ghi chi nhánh và giờ trả xe chưa ạ.",
+      "terms": [
+        "契約書",
+        "返却店"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～に書いてあるか見てから"
+    },
+    {
+      "id": "T-129-V13-010",
+      "group": "pickup",
+      "role_vi": "Khách kiểm xe với nhân viên giao xe",
+      "gender": "female",
+      "ja": "左後ろのドアの傷を、出発前のものとして車両チェック表に記録してもらえますか。",
+      "vi": "Anh ghi giúp vết xước ở cửa sau bên trái vào phiếu kiểm tra xe, là vết đã có trước khi đi được không ạ?",
+      "terms": [
+        "傷",
+        "車両チェック表"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～として記録してもらえるか"
+    },
+    {
+      "id": "T-129-V13-011",
+      "group": "pickup",
+      "role_vi": "Khách kiểm xe với nhân viên giao xe",
+      "gender": "female",
+      "ja": "バックカメラの映像がどの画面に出るか、出発前に見せていただけますか。",
+      "vi": "Trước khi đi, anh chỉ giúp hình từ camera lùi hiện trên màn hình nào được không ạ?",
+      "terms": [
+        "バックカメラ",
+        "映像"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～に出るか見せてほしい"
+    },
+    {
+      "id": "T-129-V13-012",
+      "group": "pickup",
+      "role_vi": "Khách kiểm xe với nhân viên giao xe",
+      "gender": "female",
+      "ja": "この車だと五人で座席を全部使うので、スーツケース四つを置く場所が足りません。",
+      "vi": "Với xe này, năm người sẽ dùng hết ghế nên không đủ chỗ để bốn vali.",
+      "terms": [
+        "座席"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～だと～が足りない"
+    },
+    {
+      "id": "T-129-V13-013",
+      "group": "pickup",
+      "role_vi": "Khách kiểm xe với nhân viên giao xe",
+      "gender": "female",
+      "ja": "五人分の座席を使ったまま荷室にスーツケースが四つ入るなら、別の車種でも大丈夫です。",
+      "vi": "Mẫu xe khác cũng được, miễn là năm người vẫn có chỗ ngồi và khoang hành lý chứa được bốn vali.",
+      "terms": [
+        "車種",
+        "座席",
+        "荷室"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～たまま～が入るか"
+    },
+    {
+      "id": "T-129-V13-014",
+      "group": "problem",
+      "role_vi": "Khách gọi hỗ trợ về xe thuê",
+      "gender": "female",
+      "ja": "赤い警告灯が点灯したので、今は道の駅の駐車場に車を停めています。",
+      "vi": "Đèn cảnh báo màu đỏ sáng lên nên hiện tôi đã đỗ xe ở bãi của trạm dừng.",
+      "terms": [
+        "警告灯",
+        "点灯する",
+        "道の駅"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～が点灯して今は～"
+    },
+    {
+      "id": "T-129-V13-015",
+      "group": "problem",
+      "role_vi": "Khách gọi hỗ trợ về xe thuê",
+      "gender": "female",
+      "ja": "車は駐車区画に停めたまま、建物の中で待ってもいいですか。",
+      "vi": "Tôi để xe nguyên trong ô đỗ rồi vào trong tòa nhà đợi được không ạ?",
+      "terms": [
+        "駐車区画"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～で待ってもいいですか"
+    },
+    {
+      "id": "T-129-V13-016",
+      "group": "problem",
+      "role_vi": "Khách gọi hỗ trợ về xe thuê",
+      "gender": "female",
+      "ja": "この車ではもう走れないそうなので、代車があるか、料金がかかるかを教えてください。",
+      "vi": "Tôi được báo là xe này không đi tiếp được, anh cho tôi biết có xe thay không và có mất thêm phí không ạ.",
+      "terms": [
+        "代車"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～があるか、料金がかかるか"
+    },
+    {
+      "id": "T-129-V13-017",
+      "group": "problem",
+      "role_vi": "Khách gọi hỗ trợ về xe thuê",
+      "gender": "female",
+      "ja": "受付番号二十七番の件ですが、予定の時刻を過ぎても連絡がないので、手配状況を教えてください。",
+      "vi": "Về yêu cầu hỗ trợ mã 27, đã qua giờ hẹn mà tôi chưa nhận được liên hệ, anh cho tôi biết đã bố trí hỗ trợ đến đâu ạ.",
+      "terms": [
+        "受付番号"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～の件で電話した"
+    },
+    {
+      "id": "T-129-V13-018",
+      "group": "return",
+      "role_vi": "Khách làm việc với chi nhánh trả xe",
+      "gender": "female",
+      "ja": "渋滞で到着が午後五時二十分ごろになりそうですが、同じ店舗で返却できますか。",
+      "vi": "Vì tắc đường, có lẽ tôi đến khoảng năm giờ hai mươi chiều, tôi vẫn trả xe ở chi nhánh đã hẹn được không ạ?",
+      "terms": [
+        "渋滞",
+        "返却する"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～になりそうですが～できますか"
+    },
+    {
+      "id": "T-129-V13-019",
+      "group": "return",
+      "role_vi": "Khách làm việc với chi nhánh trả xe",
+      "gender": "female",
+      "ja": "返却に来たのですが、入口が混んでいて、どの列に並べばいいですか。",
+      "vi": "Tôi đến trả xe mà lối vào đang đông, tôi cần xếp vào làn nào ạ?",
+      "terms": [
+        "返却する"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～はどちらに並べばいいか"
+    },
+    {
+      "id": "T-129-V13-020",
+      "group": "return",
+      "role_vi": "Khách làm việc với chi nhánh trả xe",
+      "gender": "female",
+      "ja": "左後ろのドアの傷は出発前からあって、控えの図に印があるので見ていただけますか。",
+      "vi": "Vết xước ở cửa sau bên trái đã có từ lúc nhận xe, trên sơ đồ ở bản phiếu tôi giữ có đánh dấu, anh xem giúp được không ạ?",
+      "terms": [
+        "控え",
+        "印",
+        "傷"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～に印があるので見てほしい"
+    },
+    {
+      "id": "T-129-V13-021",
+      "group": "bill",
+      "role_vi": "Khách làm việc với chi nhánh trả xe",
+      "gender": "female",
+      "ja": "ETCカードの利用記録の確認が終わって、追加料金が分かるのはいつごろですか。",
+      "vi": "Dự kiến khi nào kiểm xong lượt dùng thẻ ETC và biết số tiền phải trả thêm ạ?",
+      "terms": [
+        "利用記録",
+        "ETCカード"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～はいつ分かりますか"
+    },
+    {
+      "id": "T-129-V13-022",
+      "group": "bill",
+      "role_vi": "Khách làm việc với chi nhánh trả xe",
+      "gender": "female",
+      "ja": "ETCの追加料金が来たので、使った日時と区間も確認していただけますか。",
+      "vi": "Tôi nhận được thông báo phí ETC tính thêm, anh kiểm giúp cả ngày giờ và đoạn đường đã đi được không ạ?",
+      "terms": [
+        "区間"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～と～も確認できるか"
+    },
+    {
+      "id": "T-129-V13-023",
+      "group": "bill",
+      "role_vi": "Nhân viên hãng cho thuê xe",
+      "gender": "male",
+      "ja": "利用記録の照合が終わらなくても、明日の午後五時までに進み具合はお知らせします。",
+      "vi": "Dù chưa đối chiếu xong các lượt sử dụng, chúng tôi vẫn sẽ báo tiến độ trước năm giờ chiều mai ạ.",
+      "terms": [
+        "利用記録",
+        "照合する"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～が終わらなくても～までに"
+    }
+  ]
+}

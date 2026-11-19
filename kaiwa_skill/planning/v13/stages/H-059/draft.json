@@ -1,0 +1,397 @@
+{
+  "code": "H-059",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "daba0cf137149675df049995cf3af915db1754ad84ce373bf4db49a7aff70b08",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "visit": "Hỏi di tích từng dùng vào việc gì",
+    "place": "Nối địa hình với cách người dân sinh hoạt",
+    "nature": "Tả cảnh và hỏi đường khi điều kiện đổi",
+    "memory": "Đối chiếu tư liệu với ký ức địa phương",
+    "guide": "Giải thích theo điều người mới muốn biết",
+    "preserve": "Bàn cách giữ di tích và lối đi đang dùng"
+  },
+  "items": [
+    {
+      "id": "H-059-V13-001",
+      "group": "visit",
+      "role_vi": "Khách tham quan nói với hướng dẫn viên",
+      "gender": "female",
+      "ja": "この水車小屋は、昔は何に使っていたんですか。",
+      "vi": "Trước đây người ta dùng nhà cối xay nước này để làm gì ạ?",
+      "terms": [
+        "水車小屋"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_past_use"
+    },
+    {
+      "id": "H-059-V13-002",
+      "group": "visit",
+      "role_vi": "Khách tham quan nói với hướng dẫn viên",
+      "gender": "female",
+      "ja": "この木の輪は、実物ですか、模型ですか。",
+      "vi": "Vành gỗ này là hiện vật thật hay mô hình ạ?",
+      "terms": [
+        "実物",
+        "模型"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "verify_object_before_concluding"
+    },
+    {
+      "id": "H-059-V13-003",
+      "group": "visit",
+      "role_vi": "Khách tham quan nói với hướng dẫn viên",
+      "gender": "female",
+      "ja": "この町の歴史は、どこで詳しく聞けますか。",
+      "vi": "Tôi có thể tìm hiểu kỹ hơn về lịch sử thị trấn này ở đâu ạ?",
+      "terms": [],
+      "scenes": [
+        "S004",
+        "S025"
+      ],
+      "pattern": "ask_where_to_learn_more"
+    },
+    {
+      "id": "H-059-V13-004",
+      "group": "visit",
+      "role_vi": "Hướng dẫn viên nói với khách tham quan",
+      "gender": "male",
+      "ja": "この展示では、水車小屋は1910年に建てられ、1970年に大きな修復があったと説明しています。",
+      "vi": "Theo phần trưng bày, nhà cối xay nước được xây năm 1910 và được tu sửa lớn vào năm 1970.",
+      "terms": [
+        "水車小屋",
+        "修復"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "mark_scope_of_source"
+    },
+    {
+      "id": "H-059-V13-005",
+      "group": "visit",
+      "role_vi": "Khách tham quan nói với hướng dẫn viên",
+      "gender": "female",
+      "ja": "水車小屋を何軒で使っていたか知りたいのですが、利用記録の写しはどこで閲覧できますか。",
+      "vi": "Tôi muốn biết đã có bao nhiêu nhà cùng dùng cối xay nước. Tôi có thể xem bản sao sổ ghi chép ở đâu ạ?",
+      "terms": [
+        "水車小屋",
+        "写し",
+        "閲覧する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "ask_where_to_learn_more"
+    },
+    {
+      "id": "H-059-V13-006",
+      "group": "place",
+      "role_vi": "Người bạn kể về quê với bạn",
+      "gender": "female",
+      "ja": "川沿いの細長い町で育ったけど、学校は駅と同じ側にあったから、雨の日も橋を渡らずに通えたよ。",
+      "vi": "Tớ lớn lên ở một thị trấn trải dài ven sông, trường ở cùng bờ với ga nên ngày mưa tớ cũng đến trường được mà không phải qua cầu.",
+      "terms": [
+        "川沿い"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "connect_geography_to_daily_route"
+    },
+    {
+      "id": "H-059-V13-007",
+      "group": "place",
+      "role_vi": "Người bạn kể về quê với bạn",
+      "gender": "female",
+      "ja": "ここ数年で、駅前の町並みや人が集まる場所はどんなふうに変わったと感じる？",
+      "vi": "Mấy năm nay cậu thấy phố xá trước ga và những chỗ mọi người hay tụ họp thay đổi ra sao?",
+      "terms": [
+        "町並み"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "ask_personal_observation"
+    },
+    {
+      "id": "H-059-V13-008",
+      "group": "place",
+      "role_vi": "Người bạn kể về quê với bạn",
+      "gender": "female",
+      "ja": "川沿いの町のほうが住みやすいと言いたかったわけじゃなくて、地形によって通学や買い物の道が変わるっていう話なんだ。",
+      "vi": "Tớ không có ý nói thị trấn ven sông dễ sống hơn, tớ chỉ muốn nói địa hình ảnh hưởng đến đường mình đi học hay đi mua đồ.",
+      "terms": [
+        "川沿い",
+        "地形"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-059-V13-009",
+      "group": "nature",
+      "role_vi": "Khách tham quan nói với hướng dẫn viên",
+      "gender": "female",
+      "ja": "湖面が白く見えますが、あれは霧がかかっているんでしょうか。",
+      "vi": "Mặt hồ trông trắng đục, có phải là do sương mù phủ không ạ?",
+      "terms": [
+        "湖面",
+        "霧がかかる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "ask_what_is_visible"
+    },
+    {
+      "id": "H-059-V13-010",
+      "group": "nature",
+      "role_vi": "Hướng dẫn viên nói với khách tham quan",
+      "gender": "male",
+      "ja": "霧で視界が悪く、先の曲がり角まで見通せないので、この先を歩けるか案内所に確認しましょう。",
+      "vi": "Sương mù làm tầm nhìn kém, chưa thấy rõ tới khúc cua phía trước, mình hỏi quầy hướng dẫn xem còn đi tiếp được không nhé.",
+      "terms": [
+        "視界",
+        "見通す"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "report_visible_limit_and_check"
+    },
+    {
+      "id": "H-059-V13-011",
+      "group": "nature",
+      "role_vi": "Người đi cùng trao đổi về đường ven hồ",
+      "gender": "female",
+      "ja": "雨で湖畔の木道が滑りやすそうですから、この分岐から舗装路で引き返しませんか。",
+      "vi": "Mưa làm lối gỗ ven hồ có vẻ trơn, mình quay về theo đường lát từ ngã rẽ này nhé?",
+      "terms": [
+        "湖畔",
+        "木道",
+        "分岐",
+        "舗装路",
+        "引き返す"
+      ],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "adjust_plan_to_conditions"
+    },
+    {
+      "id": "H-059-V13-012",
+      "group": "nature",
+      "role_vi": "Khách tham quan nói với hướng dẫn viên",
+      "gender": "female",
+      "ja": "木道が通行止めなら、今通れる迂回路を教えていただけますか。",
+      "vi": "Nếu lối gỗ đang đóng, anh có thể chỉ cho tôi lối vòng hiện vẫn đi được không ạ?",
+      "terms": [
+        "木道",
+        "通行止め",
+        "迂回路"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "ask_current_alternative_route"
+    },
+    {
+      "id": "H-059-V13-013",
+      "group": "memory",
+      "role_vi": "Khách hỏi cư dân sống lâu năm",
+      "gender": "female",
+      "ja": "駅前の店が減っていった頃、田中さんご自身はどんな変化をご覧になりましたか。",
+      "vi": "Hồi các cửa hàng trước ga thưa dần, bác Tanaka tận mắt thấy những gì thay đổi ạ?",
+      "terms": [],
+      "scenes": [
+        "S008",
+        "S016"
+      ],
+      "pattern": "ask_personal_observation"
+    },
+    {
+      "id": "H-059-V13-014",
+      "group": "memory",
+      "role_vi": "Khách hỏi cư dân sống lâu năm",
+      "gender": "female",
+      "ja": "案内板の「一年間の整備」と田中さんの閉店のご記憶は、そもそも別の期間を指しているんでしょうか。",
+      "vi": "Bảng ghi chỉnh trang trong một năm, còn bác Tanaka nhớ các cửa hàng đóng dần, có phải hai chuyện đang nói về hai giai đoạn khác nhau không ạ?",
+      "terms": [
+        "整備"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "verify_scope_of_different_accounts"
+    },
+    {
+      "id": "H-059-V13-015",
+      "group": "memory",
+      "role_vi": "Khách hỏi cư dân sống lâu năm",
+      "gender": "female",
+      "ja": "畑があったとおっしゃったのは、駅の横の倉庫の裏ですか、それとも川沿いの水車小屋の裏でしょうか。",
+      "vi": "Mảnh ruộng bác nhắc đến là ở sau nhà kho cạnh ga hay sau nhà cối xay nước ven sông ạ?",
+      "terms": [
+        "川沿い",
+        "水車小屋"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "disambiguate_two_places"
+    },
+    {
+      "id": "H-059-V13-016",
+      "group": "memory",
+      "role_vi": "Khách hỏi cư dân sống lâu năm",
+      "gender": "female",
+      "ja": "木の橋がいつなくなったかはまだ不確かなので、年を決める前に、写真と記録を照らし合わせてみたいです。",
+      "vi": "Cây cầu gỗ không còn từ lúc nào thì chưa chắc, nên trước khi chốt năm, cháu muốn đối chiếu ảnh với ghi chép ạ.",
+      "terms": [
+        "不確か",
+        "照らし合わせる"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "hold_claim_pending_evidence"
+    },
+    {
+      "id": "H-059-V13-017",
+      "group": "guide",
+      "role_vi": "Người từng tham quan nói với bạn mới đến",
+      "gender": "female",
+      "ja": "旧水車小屋のことなら、先に行き方を聞く、それとも昔どう使われていたかを聞く？",
+      "vi": "Về nhà cối xay nước cũ, cậu muốn nghe chỉ đường trước hay nghe chuyện ngày xưa người ta dùng chỗ này thế nào?",
+      "terms": [
+        "水車小屋"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "offer_information_order"
+    },
+    {
+      "id": "H-059-V13-018",
+      "group": "guide",
+      "role_vi": "Người từng tham quan nói với bạn mới đến",
+      "gender": "female",
+      "ja": "短く言うと、柱の一部は当時の木材だけど、横にある水車の輪は後から作った模型なんだ。",
+      "vi": "Nói gọn thì một phần cột là gỗ từ thời đó, còn vành bánh xe nước bên cạnh là mô hình làm về sau.",
+      "terms": [
+        "当時",
+        "模型"
+      ],
+      "scenes": [
+        "S022",
+        "S023"
+      ],
+      "pattern": "distinguish_original_from_reconstruction"
+    },
+    {
+      "id": "H-059-V13-019",
+      "group": "guide",
+      "role_vi": "Người từng tham quan nói với bạn mới đến",
+      "gender": "male",
+      "ja": "私が行った日は受付で普通に挨拶したけど、今の入場の決まりは、入口の案内や受付で確かめてね。",
+      "vi": "Hôm tớ đến chỉ chào bình thường ở quầy thôi, còn quy định vào xem hiện nay thì cậu xem bảng ở cửa hoặc hỏi quầy nhé.",
+      "terms": [],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "limit_personal_account"
+    },
+    {
+      "id": "H-059-V13-020",
+      "group": "preserve",
+      "role_vi": "Người bạn trao đổi về cách giữ nhà cối xay",
+      "gender": "female",
+      "ja": "古い柱は残したいけど、近所の人が川沿いを毎日歩けるように、今の通り道も確保したいな。",
+      "vi": "Tớ muốn giữ cột gỗ cũ, đồng thời vẫn muốn giữ lối đi ven sông để hàng xóm có thể qua lại hằng ngày.",
+      "terms": [
+        "川沿い"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "name_both_needs"
+    },
+    {
+      "id": "H-059-V13-021",
+      "group": "preserve",
+      "role_vi": "Người bạn trao đổi về cách giữ nhà cối xay",
+      "gender": "male",
+      "ja": "工事をするなら祖母の通る道が変わるかもしれないから、迂回路がどれくらい遠くなるか確認してから案を比べたいな。",
+      "vi": "Nếu thi công thì có thể bà tớ sẽ phải đổi đường đi, nên tớ muốn xem lối vòng xa thêm bao nhiêu rồi mới so các phương án.",
+      "terms": [
+        "迂回路"
+      ],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "ask_impact_before_comparing"
+    },
+    {
+      "id": "H-059-V13-022",
+      "group": "preserve",
+      "role_vi": "Người bạn trao đổi về cách giữ nhà cối xay",
+      "gender": "female",
+      "ja": "柱の周りに柵を作る前に、仮の案内線を一週間試して、人の流れを見られないか管理の方に相談しない？",
+      "vi": "Trước khi rào quanh cột, mình hỏi bên quản lý xem có thể thử kẻ vạch chỉ lối tạm một tuần để xem mọi người đi lại thế nào không nhé?",
+      "terms": [],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "propose_small_trial"
+    },
+    {
+      "id": "H-059-V13-023",
+      "group": "preserve",
+      "role_vi": "Người bạn trao đổi về cách giữ nhà cối xay",
+      "gender": "female",
+      "ja": "古い柱は残したいけど、川沿いを通る人全員の意見を聞いたわけじゃないから、私個人の意見として伝えてね。",
+      "vi": "Tớ muốn giữ cột gỗ cũ, nhưng tớ chưa hỏi hết những người đi qua lối ven sông, nên cậu cứ nói rõ đây là ý kiến riêng của tớ nhé.",
+      "terms": [
+        "川沿い"
+      ],
+      "scenes": [
+        "S029",
+        "S030"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-059-V13-024",
+      "group": "preserve",
+      "role_vi": "Người bạn trao đổi về cách giữ nhà cối xay",
+      "gender": "female",
+      "ja": "工事中の迂回路を考えるなら、普段どの道を何時ごろ使うのか、実際に通る人に聞いてみない？",
+      "vi": "Nếu đang tính lối vòng trong lúc thi công, mình hỏi những người thường qua đây họ đi đường nào, vào khoảng mấy giờ nhé?",
+      "terms": [
+        "迂回路"
+      ],
+      "scenes": [
+        "S027",
+        "S030"
+      ],
+      "pattern": "ask_users_before_designing"
+    }
+  ]
+}

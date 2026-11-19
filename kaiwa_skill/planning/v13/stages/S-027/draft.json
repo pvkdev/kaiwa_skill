@@ -1,0 +1,401 @@
+{
+  "code": "S-027",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "fefc9557ee5fce0ad9c114fcb674b62ecc59738a8b89cd0c0226f87249f290ea",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "size": "Nêu kích thước và chọn đồ phù hợp",
+    "cut": "Hỏi chỗ cắt và chốt số đo",
+    "delivery": "Hỏi lịch giao và tổng tiền",
+    "receive": "Phối hợp khi kiện hàng không qua cửa",
+    "exchange": "Báo thiếu đồ và hỏi cách đổi"
+  },
+  "items": [
+    {
+      "id": "S-027-V13-001",
+      "group": "size",
+      "role_vi": "Khách nói kích thước chỗ cần đặt kệ ở nhà",
+      "gender": "male",
+      "ja": "置く場所の幅は八十センチぐらいです。",
+      "vi": "Chỗ tôi định đặt kệ rộng khoảng tám mươi xăng-ti-mét ạ.",
+      "terms": [
+        "幅",
+        "センチ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "detail_wa_measure"
+    },
+    {
+      "id": "S-027-V13-002",
+      "group": "size",
+      "role_vi": "Nhân viên hỏi khách chiều cao cần có của chiếc kệ",
+      "gender": "female",
+      "ja": "棚の高さはどれくらいがいいですか。",
+      "vi": "Anh muốn kệ cao khoảng bao nhiêu ạ?",
+      "terms": [
+        "棚",
+        "高さ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "measurement_dorekurai"
+    },
+    {
+      "id": "S-027-V13-003",
+      "group": "size",
+      "role_vi": "Khách hỏi mẫu kệ nào chịu nước tốt khi đặt gần phòng tắm",
+      "gender": "male",
+      "ja": "浴室の近くに置くなら、どちらの棚がいいですか。",
+      "vi": "Nếu đặt gần phòng tắm thì kệ nào phù hợp hơn ạ?",
+      "terms": [
+        "浴室",
+        "棚"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "nara_dochira_ga_ii"
+    },
+    {
+      "id": "S-027-V13-004",
+      "group": "size",
+      "role_vi": "Nhân viên gợi ý khách cầm thử tua vít để chọn",
+      "gender": "female",
+      "ja": "このドライバーを持ってみてください。",
+      "vi": "Anh cầm thử chiếc tua vít này nhé.",
+      "terms": [
+        "ドライバー"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "te_mite_kudasai"
+    },
+    {
+      "id": "S-027-V13-005",
+      "group": "size",
+      "role_vi": "Khách thấy một mẫu tua vít dễ cầm hơn khi thử hai mẫu",
+      "gender": "male",
+      "ja": "この太い柄のほうが持ちやすいです。",
+      "vi": "Cán to này tôi cầm dễ hơn ạ.",
+      "terms": [
+        "太い",
+        "柄"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "hou_ga_verb_yasui"
+    },
+    {
+      "id": "S-027-V13-006",
+      "group": "cut",
+      "role_vi": "Khách hỏi cửa hàng có sẵn tấm ván đúng chiều rộng cần không",
+      "gender": "male",
+      "ja": "幅八十センチの板はありますか。",
+      "vi": "Có tấm ván rộng tám mươi xăng-ti-mét không ạ?",
+      "terms": [
+        "幅",
+        "センチ",
+        "板"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-027-V13-007",
+      "group": "cut",
+      "role_vi": "Khách nói số tấm cần mua sau khi xác nhận mã hàng",
+      "gender": "male",
+      "ja": "この番号の板を二枚お願いします。",
+      "vi": "Cho tôi hai tấm ván mã này ạ.",
+      "terms": [
+        "板",
+        "枚"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "quantity_onegaishimasu"
+    },
+    {
+      "id": "S-027-V13-008",
+      "group": "cut",
+      "role_vi": "Khách hỏi quầy dịch vụ có thể cắt ván còn đúng kích thước không",
+      "gender": "male",
+      "ja": "この板を八十センチの幅に切ってもらえますか。",
+      "vi": "Chị cắt tấm ván này còn rộng tám mươi xăng-ti-mét giúp tôi được không ạ?",
+      "terms": [
+        "板",
+        "センチ",
+        "幅",
+        "切る"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-027-V13-009",
+      "group": "cut",
+      "role_vi": "Nhân viên báo sẽ đối chiếu số đo trước khi nhận cắt",
+      "gender": "female",
+      "ja": "切る前にもう一度寸法を確認します。",
+      "vi": "Trước khi cắt tôi sẽ kiểm tra lại số đo ạ.",
+      "terms": [
+        "切る",
+        "寸法",
+        "確認する"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "mae_ni_verb_masu"
+    },
+    {
+      "id": "S-027-V13-010",
+      "group": "delivery",
+      "role_vi": "Khách hỏi cửa hàng có thể giao chiếc kệ vào cuối tuần không",
+      "gender": "male",
+      "ja": "この棚を週末に配達してもらえますか。",
+      "vi": "Cửa hàng giao chiếc kệ này vào cuối tuần giúp tôi được không ạ?",
+      "terms": [
+        "棚",
+        "週末",
+        "配達する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-027-V13-011",
+      "group": "delivery",
+      "role_vi": "Nhân viên dịch vụ xin địa chỉ để kiểm lịch giao",
+      "gender": "female",
+      "ja": "お届け先の住所を教えてください。",
+      "vi": "Anh cho tôi xin địa chỉ giao hàng ạ.",
+      "terms": [
+        "お届け先",
+        "住所"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "detail_wo_oshiete"
+    },
+    {
+      "id": "S-027-V13-012",
+      "group": "delivery",
+      "role_vi": "Khách hỏi tổng cả phí giao để quyết định",
+      "gender": "male",
+      "ja": "配達料を入れると合計はいくらですか。",
+      "vi": "Tính cả phí giao thì tổng cộng bao nhiêu ạ?",
+      "terms": [
+        "配達料",
+        "合計"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "to_ikura_desu_ka"
+    },
+    {
+      "id": "S-027-V13-013",
+      "group": "delivery",
+      "role_vi": "Khách thấy tổng vượt ngân sách tính chọn kệ nhỏ tự mang",
+      "gender": "male",
+      "ja": "小さい棚なら自分で持って帰れますか。",
+      "vi": "Nếu là kệ nhỏ thì tôi tự mang về được không ạ?",
+      "terms": [
+        "小さい",
+        "棚",
+        "持って帰る"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "nara_potential_ka"
+    },
+    {
+      "id": "S-027-V13-014",
+      "group": "delivery",
+      "role_vi": "Người mua gọi hướng dẫn người giao tìm cửa nhà mình",
+      "gender": "male",
+      "ja": "入口は建物の北側にあります。",
+      "vi": "Cửa vào nằm ở phía bắc tòa nhà ạ.",
+      "terms": [
+        "入口",
+        "北側"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "place_ni_arimasu"
+    },
+    {
+      "id": "S-027-V13-015",
+      "group": "receive",
+      "role_vi": "Người giao hàng báo thùng kệ không lọt qua cửa",
+      "gender": "female",
+      "ja": "この箱は入口を通りません。",
+      "vi": "Thùng này không lọt qua cửa ạ.",
+      "terms": [
+        "箱",
+        "入口",
+        "通る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "place_wo_toorimasen"
+    },
+    {
+      "id": "S-027-V13-016",
+      "group": "receive",
+      "role_vi": "Người mua hỏi chiều rộng thùng để so với cửa",
+      "gender": "male",
+      "ja": "箱の幅は何センチですか。",
+      "vi": "Thùng rộng bao nhiêu xăng-ti-mét ạ?",
+      "terms": [
+        "箱",
+        "幅",
+        "センチ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "measurement_wa_nan"
+    },
+    {
+      "id": "S-027-V13-017",
+      "group": "receive",
+      "role_vi": "Người mua xin nhận riêng hai thùng nhỏ trước",
+      "gender": "male",
+      "ja": "小さい箱二つだけ先に受け取れますか。",
+      "vi": "Tôi nhận trước hai thùng nhỏ được không ạ?",
+      "terms": [
+        "小さい",
+        "箱",
+        "受け取る"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "dake_saki_ni_potential"
+    },
+    {
+      "id": "S-027-V13-018",
+      "group": "receive",
+      "role_vi": "Người mua xác nhận kiện lớn vẫn chưa được bàn giao",
+      "gender": "male",
+      "ja": "大きい箱はまだ受け取っていません。",
+      "vi": "Tôi vẫn chưa nhận thùng lớn ạ.",
+      "terms": [
+        "箱",
+        "受け取る"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "mada_verb_teimasen"
+    },
+    {
+      "id": "S-027-V13-019",
+      "group": "exchange",
+      "role_vi": "Khách gọi cửa hàng sau khi mở thùng thấy thiếu túi ốc",
+      "gender": "male",
+      "ja": "小さい箱にねじの袋が入っていません。",
+      "vi": "Trong thùng nhỏ không có túi ốc vít ạ.",
+      "terms": [
+        "小さい",
+        "箱",
+        "ねじ"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "noun_ga_haitteimasen"
+    },
+    {
+      "id": "S-027-V13-020",
+      "group": "exchange",
+      "role_vi": "Khách báo chiếc kệ đã mua không vừa chỗ mình muốn đặt",
+      "gender": "male",
+      "ja": "この棚は置きたい場所に入りません。",
+      "vi": "Kệ này không vừa chỗ tôi định đặt ạ.",
+      "terms": [
+        "棚",
+        "入る"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "place_ni_hairimasen"
+    },
+    {
+      "id": "S-027-V13-021",
+      "group": "exchange",
+      "role_vi": "Khách hỏi có thể đổi chiếc kệ vì đo nhầm kích thước không",
+      "gender": "male",
+      "ja": "サイズを間違えたので、この棚は交換できますか。",
+      "vi": "Tôi đo nhầm kích thước, chiếc kệ này có đổi được không ạ?",
+      "terms": [
+        "サイズ",
+        "間違える",
+        "棚",
+        "交換する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "node_potential_ka"
+    },
+    {
+      "id": "S-027-V13-022",
+      "group": "exchange",
+      "role_vi": "Nhân viên xin khách mang hàng và hóa đơn ra quầy để kiểm",
+      "gender": "female",
+      "ja": "商品とレシートをこのカウンターに持ってきてください。",
+      "vi": "Anh mang món hàng và hóa đơn đến quầy này nhé.",
+      "terms": [
+        "商品",
+        "レシート"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-027-V13-023",
+      "group": "exchange",
+      "role_vi": "Khách gọi lại để hỏi tồn kho mẫu kệ nhỏ hơn đã hẹn",
+      "gender": "male",
+      "ja": "小さい棚の在庫はありましたか。",
+      "vi": "Cửa hàng còn kệ nhỏ không ạ?",
+      "terms": [
+        "小さい",
+        "棚",
+        "在庫"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "noun_wa_arimashita_ka"
+    }
+  ]
+}

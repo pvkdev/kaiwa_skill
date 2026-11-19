@@ -1,0 +1,336 @@
+{
+  "code": "H-045",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b3f4efd51d9cfa5fd864801c2ab2538c9c6a876f8aef703942f4395b16b603a7",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "privacy": "Xin nói riêng và hỏi thông tin sẽ đi đâu",
+    "needs": "Trình bày hoàn cảnh và nhu cầu trước mắt",
+    "referral": "Hỏi đúng nơi và đúng bước",
+    "callback": "Thống nhất cách liên hệ và hẹn lại",
+    "changes": "Báo thay đổi và nhờ hỗ trợ cụ thể"
+  },
+  "items": [
+    {
+      "id": "H-045-V13-001",
+      "group": "privacy",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "個室でお話しできますか。",
+      "vi": "Tôi có thể nói chuyện ở phòng riêng được không ạ?",
+      "terms": [
+        "個室"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "request_private_room"
+    },
+    {
+      "id": "H-045-V13-002",
+      "group": "privacy",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "家族のことで個別相談をお願いしたいです。",
+      "vi": "Tôi muốn xin tư vấn riêng về chuyện gia đình ạ.",
+      "terms": [
+        "個別相談"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "state_consultation_goal"
+    },
+    {
+      "id": "H-045-V13-003",
+      "group": "privacy",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "male",
+      "ja": "ここでは話しにくいので、場所を変えていただけますか。",
+      "vi": "Tôi khó nói ở đây, mình chuyển sang chỗ khác được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "reason_then_request"
+    },
+    {
+      "id": "H-045-V13-004",
+      "group": "privacy",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "事情をお話しする前に、相談の記録をどなたが見られるのか教えていただけますか。",
+      "vi": "Trước khi kể chuyện của mình, tôi muốn hỏi ai có thể xem phần ghi chép của buổi tư vấn ạ?",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "before_action"
+    },
+    {
+      "id": "H-045-V13-005",
+      "group": "privacy",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "相手に連絡が行く可能性のある手続きなら、始める前に私に知らせていただけますか。",
+      "vi": "Nếu có thủ tục nào mà bên chị có thể phải liên hệ với người kia, xin báo cho tôi trước khi bắt đầu được không ạ?",
+      "terms": [
+        "手続き"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "before_action"
+    },
+    {
+      "id": "H-045-V13-006",
+      "group": "needs",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "夫と別居してから、子どもと友人の家に身を寄せています。",
+      "vi": "Từ khi sống riêng với chồng, tôi và con đang ở nhờ nhà một người bạn.",
+      "terms": [
+        "別居する",
+        "身を寄せる"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "explain_current_situation"
+    },
+    {
+      "id": "H-045-V13-007",
+      "group": "needs",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "別居してまだ二週間なので、記録の「二か月」を「二週間」に直していただけますか。",
+      "vi": "Tôi mới sống riêng hai tuần, xin chị sửa lại chỗ ghi hai tháng được không ạ?",
+      "terms": [
+        "別居する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "dewanaku_correction"
+    },
+    {
+      "id": "H-045-V13-008",
+      "group": "needs",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "別居の経緯はまだ話せそうにないので、まず今夜の居場所について相談してもいいですか。",
+      "vi": "Tôi vẫn chưa sẵn sàng kể vì sao vợ chồng tôi sống riêng, tôi có thể bàn chuyện chỗ ở tối nay trước được không ạ?",
+      "terms": [
+        "経緯",
+        "居場所"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "reason_then_request"
+    },
+    {
+      "id": "H-045-V13-009",
+      "group": "needs",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "今夜泊まれる場所がまだ決まっていないのですが、今日中に相談できる窓口はありますか。",
+      "vi": "Tôi vẫn chưa có chỗ qua đêm, có đầu mối nào tôi có thể hỏi ngay trong hôm nay không ạ?",
+      "terms": [],
+      "scenes": [
+        "S003",
+        "S007"
+      ],
+      "pattern": "urgent_help_request"
+    },
+    {
+      "id": "H-045-V13-010",
+      "group": "referral",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "法律相談と家族支援の窓口では、それぞれどんな相談ができるのでしょうか。",
+      "vi": "Tôi có thể hỏi những việc gì ở bên tư vấn pháp lý và những việc gì ở bên hỗ trợ gia đình ạ?",
+      "terms": [
+        "法律相談"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "compare_services"
+    },
+    {
+      "id": "H-045-V13-011",
+      "group": "referral",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "法律相談の予約をしただけで、何か手続きが始まることになりますか。",
+      "vi": "Nếu chỉ đặt lịch tư vấn pháp lý thì có thủ tục nào tự động bắt đầu không ạ?",
+      "terms": [
+        "法律相談",
+        "手続き"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "verify_effect"
+    },
+    {
+      "id": "H-045-V13-012",
+      "group": "referral",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "紹介先に私の事情を伝える前に、どこまで共有する必要があるか、一緒に確認させていただけますか。",
+      "vi": "Trước khi kể hoàn cảnh của tôi cho nơi được giới thiệu, chị có thể cùng tôi xác nhận cần chia sẻ những gì không ạ?",
+      "terms": [
+        "紹介先"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "before_action"
+    },
+    {
+      "id": "H-045-V13-013",
+      "group": "referral",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "紹介先では元の家にある書類が必要だと言われたのですが、初回の面談なら手元の書類だけで受けられますか。",
+      "vi": "Nơi được giới thiệu nói cần giấy tờ để ở nhà cũ. Nếu chỉ đến buổi tư vấn đầu tiên thì tôi có thể dùng giấy tờ đang có không ạ?",
+      "terms": [
+        "紹介先",
+        "面談",
+        "手元"
+      ],
+      "scenes": [
+        "S010",
+        "S014"
+      ],
+      "pattern": "nara_verify_scope"
+    },
+    {
+      "id": "H-045-V13-014",
+      "group": "referral",
+      "role_vi": "Nhân viên tư vấn nói với người xin hỗ trợ",
+      "gender": "female",
+      "ja": "紹介先には、まずお名前を出さずに、どのような場合に相談を受け付けているか確認しますね。",
+      "vi": "Trước hết tôi sẽ hỏi nơi đó họ nhận tư vấn những trường hợp nào, tôi sẽ chưa nêu tên chị nhé.",
+      "terms": [
+        "紹介先"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "limited_next_step"
+    },
+    {
+      "id": "H-045-V13-015",
+      "group": "callback",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "自宅の電話は家族と共用なので、こちらからお電話する形にしていただけますか。",
+      "vi": "Điện thoại nhà tôi dùng chung với gia đình, mình thống nhất để tôi chủ động gọi được không ạ?",
+      "terms": [
+        "共用"
+      ],
+      "scenes": [
+        "S005",
+        "S016"
+      ],
+      "pattern": "reason_then_request"
+    },
+    {
+      "id": "H-045-V13-016",
+      "group": "callback",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "折り返しが必要な場合も、留守番電話には伝言を残さないでいただけますか。",
+      "vi": "Kể cả khi cần gọi lại, xin chị đừng để lời nhắn trong hộp thư thoại được không ạ?",
+      "terms": [
+        "折り返す",
+        "留守番電話"
+      ],
+      "scenes": [
+        "S005",
+        "S016"
+      ],
+      "pattern": "even_if_boundary"
+    },
+    {
+      "id": "H-045-V13-017",
+      "group": "callback",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "子どもの送迎と重ならないように、次の面談は金曜の午前に変えられますか。",
+      "vi": "Để khỏi trùng giờ đưa đón con, tôi có thể đổi buổi tư vấn tiếp theo sang sáng thứ Sáu được không ạ?",
+      "terms": [
+        "送迎",
+        "面談"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "avoid_conflict_request"
+    },
+    {
+      "id": "H-045-V13-018",
+      "group": "callback",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "私からかけ直せるように、相談番号と電話の受付時間を教えていただけますか。",
+      "vi": "Xin chị cho tôi mã tư vấn và giờ nhận điện thoại để tôi chủ động gọi lại được không ạ?",
+      "terms": [
+        "受付時間"
+      ],
+      "scenes": [
+        "S016",
+        "S019"
+      ],
+      "pattern": "request_next_contact_details"
+    },
+    {
+      "id": "H-045-V13-019",
+      "group": "changes",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "夫から友人宅に来ると連絡があったので、今夜もそこに泊まっていて安全かどうか相談したいです。",
+      "vi": "Chồng tôi nhắn sẽ đến nhà bạn tôi, nên tôi muốn hỏi xem tối nay tôi ở nhờ nhà bạn tiếp thì có an toàn không.",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "report_risk_change"
+    },
+    {
+      "id": "H-045-V13-020",
+      "group": "changes",
+      "role_vi": "Người em nói với chị gái",
+      "gender": "female",
+      "ja": "相談の中身はまだ話せないんだけど、明日、子どものお迎えだけ頼んでもいい？",
+      "vi": "Em chưa muốn kể nội dung buổi tư vấn, nhưng mai chị đón con giúp em được không?",
+      "terms": [],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "boundary_plus_request"
+    },
+    {
+      "id": "H-045-V13-021",
+      "group": "changes",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "金曜の面談に行く前に、どこへ行ってどなたを訪ねればよいか、もう一度教えていただけますか。",
+      "vi": "Trước buổi tư vấn thứ Sáu, xin chị nhắc lại giúp tôi cần đến đâu và gặp ai được không ạ?",
+      "terms": [
+        "面談"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "before_action"
+    }
+  ]
+}

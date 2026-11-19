@@ -1,0 +1,374 @@
+{
+  "code": "H-003",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "ff186f0a3a7289a85346e9290f97108e2ac4b3f526533ab7563aac485fb02a56",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "gate": "Xưng danh và qua đầu mối tiếp nhận",
+    "request": "Xin gặp và thu gọn mục tiêu trao đổi",
+    "callback": "Nhận lời nhắn, gọi lại và xác nhận lịch",
+    "reschedule": "Đổi lịch mà vẫn đủ người và đúng mục tiêu",
+    "boundary": "Tôn trọng khi khách chưa muốn gặp hoặc liên hệ tiếp"
+  },
+  "items": [
+    {
+      "id": "H-003-V13-001",
+      "group": "gate",
+      "role_vi": "Nhân viên gọi lần đầu tới công ty đối tác",
+      "gender": "male",
+      "ja": "青葉企画の営業担当のミンと申します。",
+      "vi": "Tôi là Minh, phụ trách kinh doanh bên công ty Aoba ạ.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～と申します"
+    },
+    {
+      "id": "H-003-V13-002",
+      "group": "gate",
+      "role_vi": "Người gọi xin gặp người phụ trách",
+      "gender": "male",
+      "ja": "会議資料のご担当者にお取り次ぎいただけますか。",
+      "vi": "Chị nối máy giúp tôi với người phụ trách tài liệu họp được không ạ?",
+      "terms": [
+        "ご担当者",
+        "取り次ぐ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "H-003-V13-003",
+      "group": "gate",
+      "role_vi": "Lễ tân hỏi mục đích trước khi nối máy",
+      "gender": "female",
+      "ja": "差し支えなければ、ご用件を簡単に伺えますか。",
+      "vi": "Nếu tiện, anh cho tôi biết ngắn gọn anh gọi về việc gì được không ạ?",
+      "terms": [
+        "差し支えなければ",
+        "ご用件"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "差し支えなければ、～伺えますか"
+    },
+    {
+      "id": "H-003-V13-004",
+      "group": "gate",
+      "role_vi": "Người gọi giải thích mục đích cho lễ tân",
+      "gender": "male",
+      "ja": "御社の会議資料の共有方法について、ご担当者にお話を伺いたくてお電話しました。",
+      "vi": "Tôi gọi vì muốn hỏi người phụ trách về cách quý công ty chia sẻ tài liệu họp ạ.",
+      "terms": [
+        "御社",
+        "ご担当者"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～たくてお電話しました"
+    },
+    {
+      "id": "H-003-V13-005",
+      "group": "gate",
+      "role_vi": "Người gọi tìm kênh liên hệ khi không được nối máy",
+      "gender": "male",
+      "ja": "お取り次ぎが難しいようでしたら、問い合わせ窓口を教えていただけますか。",
+      "vi": "Nếu khó nối máy ngay, chị cho tôi xin thông tin đầu mối tiếp nhận yêu cầu được không ạ?",
+      "terms": [
+        "取り次ぐ",
+        "問い合わせ窓口"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "H-003-V13-006",
+      "group": "request",
+      "role_vi": "Đại diện xin một cuộc gặp ngắn với khách mới",
+      "gender": "female",
+      "ja": "資料共有の改善について、一度十五分ほどお時間をいただけないでしょうか。",
+      "vi": "Tôi muốn xin một buổi khoảng mười lăm phút để trao đổi về việc cải thiện cách chia sẻ tài liệu, có được không ạ?",
+      "terms": [
+        "お時間をいただく"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～について、お時間をいただけないでしょうか"
+    },
+    {
+      "id": "H-003-V13-007",
+      "group": "request",
+      "role_vi": "Đại diện nêu khách sẽ nhận được gì từ cuộc gặp",
+      "gender": "female",
+      "ja": "今の運用を伺ったうえで、どこを変えれば手間が減るか、比較材料をご用意します。",
+      "vi": "Sau khi nghe cách bên anh đang làm, tôi sẽ chuẩn bị thông tin để bên anh so sánh xem thay đổi khâu nào thì bớt tốn công ạ.",
+      "terms": [
+        "比較材料"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～たうえで、～します"
+    },
+    {
+      "id": "H-003-V13-008",
+      "group": "request",
+      "role_vi": "Đại diện làm rõ nội dung cuộc gặp khi khách hiểu nhầm",
+      "gender": "male",
+      "ja": "保存先の切り替えのご提案ではなく、今の保存先のまま資料を共有する方法についてお話を伺いたいんです。",
+      "vi": "Tôi muốn nghe cách bên chị chia sẻ tài liệu khi giữ nguyên chỗ lưu hiện tại, chứ không định đề nghị chuyển sang chỗ lưu khác ạ.",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ではなく、～について伺いたいんです"
+    },
+    {
+      "id": "H-003-V13-009",
+      "group": "request",
+      "role_vi": "Đại diện hỏi khách nên ưu tiên điều gì",
+      "gender": "female",
+      "ja": "限られたお時間で、まず取り上げるべき課題を教えていただけますか。",
+      "vi": "Thời gian có hạn, anh cho tôi biết mình nên bàn vấn đề nào trước được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "H-003-V13-010",
+      "group": "request",
+      "role_vi": "Đại diện thu gọn nội dung khi khách ít thời gian",
+      "gender": "male",
+      "ja": "十五分でしたら、最新版が分からなくなる場面に論点を絞りましょうか。",
+      "vi": "Nếu mình có mười lăm phút, ta chỉ bàn về những lúc khó biết đâu là bản tài liệu mới nhất, được không ạ?",
+      "terms": [
+        "最新版",
+        "論点"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "～でしたら、～ましょうか"
+    },
+    {
+      "id": "H-003-V13-011",
+      "group": "callback",
+      "role_vi": "Lễ tân đề nghị nhận lời nhắn cho người phụ trách",
+      "gender": "female",
+      "ja": "資料管理の担当は席を外しておりますので、よろしければ伝言を承ります。",
+      "vi": "Người phụ trách quản lý tài liệu đang không có ở bàn, nếu anh muốn nhắn gì thì tôi xin nhận giúp ạ.",
+      "terms": [
+        "席を外す",
+        "伝言"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～ので、よろしければ～ます"
+    },
+    {
+      "id": "H-003-V13-012",
+      "group": "callback",
+      "role_vi": "Đại diện hẹn gọi lại khi khách cần hỏi đồng nghiệp",
+      "gender": "female",
+      "ja": "面談に同席される方がまだお決まりでなければ、木曜に状況だけ伺ってもよろしいでしょうか。",
+      "vi": "Nếu bên anh chưa quyết ai sẽ cùng dự buổi gặp, thứ Năm tôi gọi lại để hỏi tình hình thôi, được không ạ?",
+      "terms": [
+        "面談",
+        "同席する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-003-V13-013",
+      "group": "callback",
+      "role_vi": "Đại diện hỏi lúc gọi lại có tiện trao đổi",
+      "gender": "male",
+      "ja": "先日は資料共有の件でお時間をいただきましたが、今お話ししてもよろしいでしょうか。",
+      "vi": "Hôm trước chị đã dành thời gian trao đổi về việc chia sẻ tài liệu, giờ tôi nói chuyện với chị được không ạ?",
+      "terms": [
+        "お時間をいただく"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-003-V13-014",
+      "group": "callback",
+      "role_vi": "Đại diện nhắc lại lịch và người dự để xác nhận",
+      "gender": "female",
+      "ja": "資料共有の打ち合わせは火曜の午後二時で、佐藤様ともうお一方がご参加になるという理解でよろしいでしょうか。",
+      "vi": "Tôi xin xác nhận, buổi trao đổi về chia sẻ tài liệu là lúc hai giờ chiều thứ Ba, anh Sato và một người nữa sẽ tham dự, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S008",
+        "S012"
+      ],
+      "pattern": "～という理解でよろしいでしょうか"
+    },
+    {
+      "id": "H-003-V13-015",
+      "group": "reschedule",
+      "role_vi": "Đại diện đề nghị đổi lịch để kỹ thuật dự được",
+      "gender": "male",
+      "ja": "弊社の技術担当も同席できるよう、打ち合わせを木曜の午後にずらせないでしょうか。",
+      "vi": "Ta có thể chuyển buổi gặp sang chiều thứ Năm để người phụ trách kỹ thuật bên tôi cũng dự được không ạ?",
+      "terms": [
+        "弊社",
+        "技術担当",
+        "同席する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～よう、～ずらせないでしょうか"
+    },
+    {
+      "id": "H-003-V13-016",
+      "group": "reschedule",
+      "role_vi": "Đầu mối khách đề nghị cử người khác để giữ lịch",
+      "gender": "female",
+      "ja": "打ち合わせの日程が動かせないので、別の技術担当の方に同席していただけませんか。",
+      "vi": "Bên tôi không đổi lịch buổi gặp được, anh có thể nhờ một người khác bên kỹ thuật cùng dự không ạ?",
+      "terms": [
+        "技術担当",
+        "同席する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～ていただけませんか"
+    },
+    {
+      "id": "H-003-V13-017",
+      "group": "reschedule",
+      "role_vi": "Đại diện hẹn báo chuyên môn của người thay",
+      "gender": "male",
+      "ja": "代役が見つかりましたら、担当分野もあわせて今日中にお伝えします。",
+      "vi": "Nếu thu xếp được người thay, tôi sẽ báo anh cả lĩnh vực người đó phụ trách trong hôm nay ạ.",
+      "terms": [
+        "代役",
+        "担当分野"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～ましたら、～します"
+    },
+    {
+      "id": "H-003-V13-018",
+      "group": "reschedule",
+      "role_vi": "Đại diện xác nhận mục tiêu khi chuyển sang trực tuyến",
+      "gender": "female",
+      "ja": "オンラインでも、資料を差し替えたときの確認手順を一緒に整理するという理解でよろしいでしょうか。",
+      "vi": "Dù chuyển sang họp trực tuyến, mình vẫn cùng làm rõ các bước kiểm tra khi thay bản tài liệu, tôi hiểu vậy đúng không ạ?",
+      "terms": [
+        "差し替える"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "～という理解でよろしいでしょうか"
+    },
+    {
+      "id": "H-003-V13-019",
+      "group": "reschedule",
+      "role_vi": "Đại diện làm rõ lịch mới vẫn là đề xuất",
+      "gender": "male",
+      "ja": "木曜の三時は候補として仮押さえし、双方の参加者がそろうことを確認してから確定します。",
+      "vi": "Tôi sẽ tạm giữ khung ba giờ thứ Năm và chỉ chốt khi xác nhận người tham gia của cả hai bên đều có thể dự ạ.",
+      "terms": [
+        "仮押さえ",
+        "確定する"
+      ],
+      "scenes": [
+        "S009",
+        "S011",
+        "S012"
+      ],
+      "pattern": "～てから確定します"
+    },
+    {
+      "id": "H-003-V13-020",
+      "group": "boundary",
+      "role_vi": "Đại diện hỏi về dịp phù hợp khi khách chưa có nhu cầu",
+      "gender": "male",
+      "ja": "差し支えなければ、資料の管理方法を見直すのはどんなときか伺えますか。",
+      "vi": "Nếu không phiền, tôi xin hỏi thường trong trường hợp nào bên chị sẽ xem lại cách quản lý tài liệu ạ?",
+      "terms": [
+        "差し支えなければ"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "差し支えなければ、～伺えますか"
+    },
+    {
+      "id": "H-003-V13-021",
+      "group": "boundary",
+      "role_vi": "Đầu mối khách từ chối liên hệ thêm",
+      "gender": "female",
+      "ja": "資料共有の件では、今後のお電話はお控えいただけますか。",
+      "vi": "Về việc chia sẻ tài liệu, từ nay xin anh đừng gọi thêm, được không ạ?",
+      "terms": [
+        "控える"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～はお控えいただけますか"
+    },
+    {
+      "id": "H-003-V13-022",
+      "group": "boundary",
+      "role_vi": "Đại diện tôn trọng đề nghị dừng liên hệ",
+      "gender": "male",
+      "ja": "ご意向を承りましたので、資料共有の件で今後こちらからお電話することはございません。",
+      "vi": "Tôi hiểu ý chị, từ nay bên tôi sẽ không chủ động gọi về việc chia sẻ tài liệu nữa ạ.",
+      "terms": [
+        "ご意向"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ので、～することはございません"
+    },
+    {
+      "id": "H-003-V13-023",
+      "group": "boundary",
+      "role_vi": "Đại diện xác nhận chưa có lịch và khách sẽ chủ động",
+      "gender": "female",
+      "ja": "面談はまだお約束せず、必要になった時点で御社からご連絡いただくという理解でよろしいでしょうか。",
+      "vi": "Tôi hiểu là mình chưa hẹn buổi gặp, khi có nhu cầu bên anh sẽ chủ động liên hệ, đúng không ạ?",
+      "terms": [
+        "面談",
+        "御社"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "～という理解でよろしいでしょうか"
+    }
+  ]
+}

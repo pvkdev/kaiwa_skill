@@ -1,0 +1,367 @@
+{
+  "code": "T-128",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "6f65916d373c052bb63382212f597bf1767eca13d9b4f493a690bc66010dc9a2",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "arrive": "Nhận phòng và gửi hành lý",
+    "room": "Xác nhận loại phòng và cách sử dụng",
+    "food": "Hỏi bữa tối và đổi món",
+    "bath": "Hỏi cách dùng khu tắm",
+    "fix": "Báo phòng lạnh và đổi phòng",
+    "leave": "Xem chi phí, trả phòng và hỏi đồ để quên"
+  },
+  "items": [
+    {
+      "id": "T-128-V13-001",
+      "group": "arrive",
+      "role_vi": "Khách hỏi tại quầy lễ tân ryokan",
+      "gender": "female",
+      "ja": "チェックインは何時からですか。",
+      "vi": "Mấy giờ bắt đầu nhận phòng ạ?",
+      "terms": [
+        "チェックイン"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～は何時からですか"
+    },
+    {
+      "id": "T-128-V13-002",
+      "group": "arrive",
+      "role_vi": "Khách hỏi tại quầy lễ tân ryokan",
+      "gender": "female",
+      "ja": "部屋に入れるまで、フロントで荷物を預かってもらえますか。",
+      "vi": "Trong lúc chờ vào phòng, tôi có thể gửi hành lý ở lễ tân được không ạ?",
+      "terms": [
+        "フロント",
+        "荷物"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～を預かってもらえますか"
+    },
+    {
+      "id": "T-128-V13-003",
+      "group": "arrive",
+      "role_vi": "Nhân viên lễ tân ryokan",
+      "gender": "male",
+      "ja": "荷物を受け取るときに、この引換札をお出しください。",
+      "vi": "Khi lấy lại hành lý, chị đưa giúp thẻ nhận đồ này ạ.",
+      "terms": [
+        "引換札",
+        "荷物"
+      ],
+      "scenes": [
+        "S002",
+        "S014"
+      ],
+      "pattern": "～するときに～をお出しください"
+    },
+    {
+      "id": "T-128-V13-004",
+      "group": "arrive",
+      "role_vi": "Khách hỏi tại quầy lễ tân ryokan",
+      "gender": "female",
+      "ja": "もう一人の到着は少し遅れますが、宿泊は二人のままです。",
+      "vi": "Người còn lại sẽ đến muộn một chút, nhưng vẫn có hai người ở ạ.",
+      "terms": [
+        "到着",
+        "宿泊"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～は遅くなるが～はそのまま"
+    },
+    {
+      "id": "T-128-V13-005",
+      "group": "room",
+      "role_vi": "Khách hỏi tại quầy lễ tân ryokan",
+      "gender": "female",
+      "ja": "確認メールには和洋室とあるので、予約した部屋を一緒に確認していただけますか。",
+      "vi": "Email xác nhận ghi phòng kết hợp kiểu Nhật và kiểu Tây, anh kiểm lại thông tin phòng đã đặt cùng tôi được không ạ?",
+      "terms": [
+        "和洋室",
+        "確認メール"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～とあるので一緒に確認"
+    },
+    {
+      "id": "T-128-V13-006",
+      "group": "room",
+      "role_vi": "Khách hỏi cách dùng khu tắm hoặc đồ trong phòng",
+      "gender": "female",
+      "ja": "スリッパは、畳に上がる前に脱げばいいですか。",
+      "vi": "Tôi cởi dép trước khi bước lên chiếu tatami là được, đúng không ạ?",
+      "terms": [
+        "スリッパ",
+        "畳"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～の前に～でいいか"
+    },
+    {
+      "id": "T-128-V13-007",
+      "group": "room",
+      "role_vi": "Khách hỏi cách dùng khu tắm hoặc đồ trong phòng",
+      "gender": "female",
+      "ja": "布団を敷いてもらう時間は、夕食のあとに変えられますか。",
+      "vi": "Có thể đổi giờ trải đệm futon sang sau bữa tối được không ạ?",
+      "terms": [
+        "布団",
+        "敷く"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～の時間は変えられるか"
+    },
+    {
+      "id": "T-128-V13-008",
+      "group": "food",
+      "role_vi": "Khách trao đổi về bữa tối ở ryokan",
+      "gender": "female",
+      "ja": "夕食は何時からで、食事処はどこですか。",
+      "vi": "Bữa tối bắt đầu lúc mấy giờ và khu ăn ở đâu ạ?",
+      "terms": [
+        "夕食",
+        "食事処"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～は何時からですか"
+    },
+    {
+      "id": "T-128-V13-009",
+      "group": "food",
+      "role_vi": "Khách trao đổi về bữa tối ở ryokan",
+      "gender": "female",
+      "ja": "一人だけ生の魚が苦手なので、刺身を別の料理に変えられますか。",
+      "vi": "Có một người không thích cá sống, anh có thể đổi sashimi của người đó sang món khác không ạ?",
+      "terms": [
+        "苦手",
+        "刺身"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～が苦手なので～に変えられるか"
+    },
+    {
+      "id": "T-128-V13-010",
+      "group": "food",
+      "role_vi": "Khách trao đổi về bữa tối ở ryokan",
+      "gender": "female",
+      "ja": "今夜の料理で、生の魚を使っていないものはどれですか。",
+      "vi": "Trong các món tối nay, món nào không dùng cá sống ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～を使わない料理はどれ"
+    },
+    {
+      "id": "T-128-V13-011",
+      "group": "food",
+      "role_vi": "Khách trao đổi về bữa tối ở ryokan",
+      "gender": "female",
+      "ja": "一人分だけ、夕食から刺身を外してください。",
+      "vi": "Xin bỏ sashimi khỏi một suất ăn tối thôi ạ.",
+      "terms": [
+        "刺身",
+        "外す"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～だけ外してください"
+    },
+    {
+      "id": "T-128-V13-012",
+      "group": "food",
+      "role_vi": "Khách trao đổi về bữa tối ở ryokan",
+      "gender": "female",
+      "ja": "バスが遅れて到着が七時すぎになりそうですが、夕食はまだいただけますか。",
+      "vi": "Xe buýt đến chậm nên có lẽ chúng tôi sẽ tới sau bảy giờ tối, lúc đó còn dùng bữa tối được không ạ?",
+      "terms": [
+        "到着",
+        "夕食"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～そうですが～できますか"
+    },
+    {
+      "id": "T-128-V13-013",
+      "group": "bath",
+      "role_vi": "Khách hỏi cách dùng khu tắm hoặc đồ trong phòng",
+      "gender": "female",
+      "ja": "大浴場は何時まで使えますか。",
+      "vi": "Khu tắm chung mở đến mấy giờ ạ?",
+      "terms": [
+        "大浴場"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～は何時まで使えますか"
+    },
+    {
+      "id": "T-128-V13-014",
+      "group": "bath",
+      "role_vi": "Khách hỏi cách dùng khu tắm hoặc đồ trong phòng",
+      "gender": "female",
+      "ja": "湯船に入る前に、洗い場で体を洗えばいいですか。",
+      "vi": "Tôi tắm rửa ở khu rửa người rồi mới xuống bồn ngâm, đúng không ạ?",
+      "terms": [
+        "洗い場",
+        "湯船"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～前に～でいいか"
+    },
+    {
+      "id": "T-128-V13-015",
+      "group": "bath",
+      "role_vi": "Khách hỏi cách dùng khu tắm hoặc đồ trong phòng",
+      "gender": "female",
+      "ja": "湯船に入るとき、タオルはどこに置けばいいですか。",
+      "vi": "Khi xuống bồn ngâm, tôi để khăn ở đâu ạ?",
+      "terms": [
+        "湯船",
+        "タオル"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～はどこに置けばいいか"
+    },
+    {
+      "id": "T-128-V13-016",
+      "group": "fix",
+      "role_vi": "Khách nhờ xử lý phòng ở ryokan",
+      "gender": "female",
+      "ja": "暖房を入れたのに、部屋がまだ寒いです。",
+      "vi": "Tôi bật sưởi rồi mà phòng vẫn lạnh.",
+      "terms": [
+        "暖房"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～のにまだ～"
+    },
+    {
+      "id": "T-128-V13-017",
+      "group": "fix",
+      "role_vi": "Khách nhờ xử lý phòng ở ryokan",
+      "gender": "female",
+      "ja": "暖房を見てもらうまで、毛布を一枚借りられますか。",
+      "vi": "Trong lúc chờ người kiểm tra máy sưởi, tôi có thể mượn một tấm chăn không ạ?",
+      "terms": [
+        "暖房",
+        "毛布"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～まで～を借りられますか"
+    },
+    {
+      "id": "T-128-V13-018",
+      "group": "fix",
+      "role_vi": "Khách nhờ xử lý phòng ở ryokan",
+      "gender": "female",
+      "ja": "二一〇号室に移るとき、今の部屋の鍵はどうすればいいですか。",
+      "vi": "Khi chuyển sang phòng 210, tôi cần làm gì với chìa khóa phòng hiện tại ạ?",
+      "terms": [
+        "号室",
+        "移る",
+        "鍵"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～とき～はどうすればいいか"
+    },
+    {
+      "id": "T-128-V13-019",
+      "group": "leave",
+      "role_vi": "Khách hỏi tại quầy lễ tân ryokan",
+      "gender": "female",
+      "ja": "宿泊代とは別に明細にある千八百円は、何の料金ですか。",
+      "vi": "Ngoài tiền phòng, khoản 1.800 yên trên bảng chi tiết là phí gì ạ?",
+      "terms": [
+        "明細",
+        "宿泊代"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～には何の料金か"
+    },
+    {
+      "id": "T-128-V13-020",
+      "group": "leave",
+      "role_vi": "Khách hỏi tại quầy lễ tân ryokan",
+      "gender": "female",
+      "ja": "チェックアウトのあとも、フロントに荷物を預けられますか。",
+      "vi": "Sau khi trả phòng, tôi vẫn gửi hành lý ở lễ tân được không ạ?",
+      "terms": [
+        "チェックアウト",
+        "フロント",
+        "荷物",
+        "預ける"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～のあとも～を預けられますか"
+    },
+    {
+      "id": "T-128-V13-021",
+      "group": "leave",
+      "role_vi": "Khách gọi lại ryokan sau khi trả phòng",
+      "gender": "female",
+      "ja": "窓側の机の上に、赤い風呂敷を忘れたかもしれません。",
+      "vi": "Có lẽ tôi đã để quên khăn gói đồ màu đỏ trên bàn cạnh cửa sổ.",
+      "terms": [
+        "風呂敷",
+        "窓側"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～を忘れたかもしれない"
+    },
+    {
+      "id": "T-128-V13-022",
+      "group": "leave",
+      "role_vi": "Khách gọi lại ryokan sau khi trả phòng",
+      "gender": "female",
+      "ja": "風呂敷が見つかったら、どう受け取ればいいか教えてもらえますか。",
+      "vi": "Nếu tìm được khăn gói đồ, anh cho tôi biết cách nhận lại được không ạ?",
+      "terms": [
+        "風呂敷"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～たら～を教えてほしい"
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "code": "T-113",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "93a1afe036e8f8f5cb3244b958e7526375a336b72dc2884e66e09f9d32ea1551",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "open": "Xin gặp riêng và nói quyết định",
+    "offer": "Cân nhắc hoặc từ chối đề nghị ở lại",
+    "handover": "Chốt ngày và chuyển giao công việc",
+    "hr": "Hỏi nhân sự, giấy tờ và người cùng dự"
+  },
+  "items": [
+    {
+      "id": "T-113-V13-001",
+      "group": "open",
+      "role_vi": "Nhân viên xin nói riêng với quản lý",
+      "gender": "male",
+      "ja": "少しお時間をいただいて、二人でお話しできますか。",
+      "vi": "Chị dành cho tôi ít phút để mình trao đổi riêng được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "xin_thời_gian_trao_đổi"
+    },
+    {
+      "id": "T-113-V13-002",
+      "group": "open",
+      "role_vi": "Nhân viên báo quyết định nghỉ",
+      "gender": "male",
+      "ja": "退職することを決めたので、引き継ぎについてご相談したいです。",
+      "vi": "Tôi đã quyết định nghỉ việc nên muốn trao đổi về việc bàn giao ạ.",
+      "terms": [
+        "退職する",
+        "引き継ぎ"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "nói_quyết_định_và_việc_cần_bàn"
+    },
+    {
+      "id": "T-113-V13-003",
+      "group": "open",
+      "role_vi": "Quản lý hỏi trong phạm vi nhân viên thấy tiện",
+      "gender": "female",
+      "ja": "差し支えなければ、退職を考えたきっかけを聞かせていただけますか。",
+      "vi": "Nếu anh thấy tiện, anh cho tôi biết điều gì khiến anh nghĩ đến việc nghỉ được không ạ?",
+      "terms": [
+        "差し支え",
+        "きっかけ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_trong_phạm_vi_tự_chọn"
+    },
+    {
+      "id": "T-113-V13-004",
+      "group": "open",
+      "role_vi": "Nhân viên nói hướng nghề nghiệp",
+      "gender": "male",
+      "ja": "今後は、データを分析する仕事を中心にやっていきたいと思っています。",
+      "vi": "Sắp tới tôi muốn tập trung làm công việc phân tích dữ liệu ạ.",
+      "terms": [
+        "分析する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "nói_lý_do_muốn_chia_sẻ"
+    },
+    {
+      "id": "T-113-V13-005",
+      "group": "open",
+      "role_vi": "Nhân viên đặt giới hạn chuyện riêng",
+      "gender": "male",
+      "ja": "家庭の事情については詳しいお話を控えて、退職の日程をご相談したいです。",
+      "vi": "Tôi xin giữ riêng chi tiết chuyện gia đình và muốn trao đổi về lịch nghỉ việc ạ.",
+      "terms": [
+        "事情",
+        "控える",
+        "日程"
+      ],
+      "scenes": [
+        "S002",
+        "S025"
+      ],
+      "pattern": "giới_hạn_chia_sẻ"
+    },
+    {
+      "id": "T-113-V13-006",
+      "group": "open",
+      "role_vi": "Nhân viên làm rõ điều đã quyết",
+      "gender": "male",
+      "ja": "退職の意思は変わりませんが、最終出勤日はまだ相談させてください。",
+      "vi": "Quyết định nghỉ của tôi không thay đổi, còn ngày cuối đến làm thì tôi xin bàn thêm ạ.",
+      "terms": [
+        "意思",
+        "最終出勤日"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "tách_quyết_định_và_điều_cần_bàn"
+    },
+    {
+      "id": "T-113-V13-007",
+      "group": "offer",
+      "role_vi": "Quản lý đề nghị một phương án giữ lại",
+      "gender": "female",
+      "ja": "分析のプロジェクトへの異動も考えられますが、検討していただけませんか。",
+      "vi": "Vẫn có phương án chuyển anh sang dự án phân tích, anh cân nhắc được không ạ?",
+      "terms": [
+        "異動",
+        "検討する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "đề_nghị_cân_nhắc"
+    },
+    {
+      "id": "T-113-V13-008",
+      "group": "offer",
+      "role_vi": "Nhân viên hỏi phạm vi khi chuyển dự án",
+      "gender": "male",
+      "ja": "異動した場合、今の案件も並行して担当することになるのでしょうか。",
+      "vi": "Nếu chuyển dự án, tôi vẫn phải phụ trách hồ sơ hiện tại song song phải không ạ?",
+      "terms": [
+        "異動",
+        "並行する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hỏi_điều_kiện_cụ_thể"
+    },
+    {
+      "id": "T-113-V13-009",
+      "group": "offer",
+      "role_vi": "Nhân viên hẹn ngày phản hồi",
+      "gender": "male",
+      "ja": "異動先での担当範囲を確認してから、金曜までにお返事してもよろしいですか。",
+      "vi": "Tôi muốn xác nhận phạm vi công việc ở dự án mới rồi trả lời chậm nhất vào thứ Sáu, được không ạ?",
+      "terms": [
+        "担当範囲",
+        "返事"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hẹn_mốc_sau_khi_xác_nhận"
+    },
+    {
+      "id": "T-113-V13-010",
+      "group": "offer",
+      "role_vi": "Nhân viên nêu điều kiện để cân nhắc",
+      "gender": "male",
+      "ja": "最初の週に実際のデータを一緒に見てくださる方が決まれば、異動も検討したいです。",
+      "vi": "Nếu bố trí được người cùng tôi xem dữ liệu thực tế trong tuần đầu, tôi muốn cân nhắc việc chuyển ạ.",
+      "terms": [
+        "異動",
+        "検討する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nếu_đủ_điều_kiện_thì_cân_nhắc"
+    },
+    {
+      "id": "T-113-V13-011",
+      "group": "offer",
+      "role_vi": "Nhân viên sửa hiểu nhầm đã nhận lời",
+      "gender": "male",
+      "ja": "異動の条件を確認しているところで、正式にお受けしたわけではありません。",
+      "vi": "Tôi đang xác nhận điều kiện chuyển dự án và chưa chính thức nhận lời ạ.",
+      "terms": [
+        "異動",
+        "条件",
+        "正式",
+        "受ける"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "phân_biệt_cân_nhắc_và_đồng_ý"
+    },
+    {
+      "id": "T-113-V13-012",
+      "group": "offer",
+      "role_vi": "Nhân viên từ chối sau khi xem xét",
+      "gender": "male",
+      "ja": "異動の案を出していただきましたが、今回はお断りして、予定どおり退職します。",
+      "vi": "Cảm ơn chị đã đề xuất chuyển dự án, lần này tôi xin từ chối và sẽ nghỉ như dự định ạ.",
+      "terms": [
+        "異動",
+        "断る",
+        "退職する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "từ_chối_và_giữ_quyết_định"
+    },
+    {
+      "id": "T-113-V13-013",
+      "group": "handover",
+      "role_vi": "Nhân viên đề xuất hai mốc",
+      "gender": "male",
+      "ja": "最終出勤日は十一月二十七日、退職日は三十日で進めたいです。",
+      "vi": "Tôi muốn ngày cuối đến làm là hai mươi bảy tháng mười một và ngày chính thức thôi việc là ngày ba mươi ạ.",
+      "terms": [
+        "最終出勤日",
+        "退職日"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "phân_biệt_hai_mốc"
+    },
+    {
+      "id": "T-113-V13-014",
+      "group": "handover",
+      "role_vi": "Nhân viên dặn người nhận hồ sơ",
+      "gender": "male",
+      "ja": "先方から数量の返事が来たら、回答する前に倉庫の佐野さんに確認してください。",
+      "vi": "Khi khách phản hồi số lượng, chị hỏi anh Sano bên kho trước khi trả lời khách nhé.",
+      "terms": [],
+      "scenes": [
+        "S011",
+        "S019"
+      ],
+      "pattern": "chốt_thứ_tự_khi_bàn_giao"
+    },
+    {
+      "id": "T-113-V13-015",
+      "group": "handover",
+      "role_vi": "Nhân viên hỏi việc bàn giao ưu tiên",
+      "gender": "male",
+      "ja": "後任の方がまだ決まっていないのですが、先方の返事を待っている案件から引き継いだほうがいいでしょうか。",
+      "vi": "Vẫn chưa chốt người tiếp quản, tôi nên bàn giao trước hồ sơ đang chờ khách trả lời phải không ạ?",
+      "terms": [
+        "後任"
+      ],
+      "scenes": [
+        "S012",
+        "S024"
+      ],
+      "pattern": "xin_chốt_việc_ưu_tiên"
+    },
+    {
+      "id": "T-113-V13-016",
+      "group": "handover",
+      "role_vi": "Nhân viên chưa chính thức báo nhóm",
+      "gender": "male",
+      "ja": "退職の日程はまだ確認中なので、チームに伝えるのは正式に決まってからにしていただけますか。",
+      "vi": "Lịch nghỉ việc vẫn đang được xác nhận, chị đợi chốt chính thức rồi mới báo cho nhóm được không ạ?",
+      "terms": [
+        "日程",
+        "確認中",
+        "正式"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "chờ_xác_nhận_rồi_báo"
+    },
+    {
+      "id": "T-113-V13-017",
+      "group": "handover",
+      "role_vi": "Quản lý chốt thông báo nhóm",
+      "gender": "female",
+      "ja": "月曜の朝会で、私から退職の日程と仕事の分担をお伝えします。",
+      "vi": "Trong buổi họp đầu giờ thứ Hai, tôi sẽ báo lịch nghỉ việc và phân công cho cả nhóm ạ.",
+      "terms": [
+        "朝会",
+        "日程",
+        "分担"
+      ],
+      "scenes": [
+        "S013",
+        "S017"
+      ],
+      "pattern": "chốt_người_báo"
+    },
+    {
+      "id": "T-113-V13-018",
+      "group": "handover",
+      "role_vi": "Nhân viên chào người nhận bàn giao",
+      "gender": "male",
+      "ja": "仕事の連絡はチームの窓口にお願いして、近況はよかったら個人の連絡先でお話ししましょう。",
+      "vi": "Việc công ty thì nhờ chị liên hệ qua đầu mối của nhóm, còn hỏi thăm nhau thì mình cứ liên lạc riêng nếu chị muốn ạ.",
+      "terms": [
+        "近況"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "phân_biệt_đầu_mối"
+    },
+    {
+      "id": "T-113-V13-019",
+      "group": "hr",
+      "role_vi": "Nhân viên hỏi ai nhận thẻ ra vào",
+      "gender": "male",
+      "ja": "入館証は、最終出勤日にどなたに返却すればよろしいですか。",
+      "vi": "Ngày cuối đến làm, tôi cần trả thẻ ra vào cho ai ạ?",
+      "terms": [
+        "最終出勤日",
+        "入館証",
+        "返却する"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "hỏi_đầu_mối"
+    },
+    {
+      "id": "T-113-V13-020",
+      "group": "hr",
+      "role_vi": "Nhân viên cập nhật lại lịch trả đồ",
+      "gender": "male",
+      "ja": "退職日は三十日のままなので、返却の予定だけ二十六日に変更していただけますか。",
+      "vi": "Ngày chính thức thôi việc vẫn là ngày ba mươi, chị đổi riêng lịch trả đồ sang ngày hai mươi sáu giúp tôi được không ạ?",
+      "terms": [
+        "退職日"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "đổi_một_phần_lịch"
+    },
+    {
+      "id": "T-113-V13-021",
+      "group": "hr",
+      "role_vi": "Nhân viên gọi hỏi giấy đã xin",
+      "gender": "male",
+      "ja": "在職期間と担当業務を記載した退職証明書は、いつ頃受け取れそうでしょうか。",
+      "vi": "Khoảng khi nào tôi có thể nhận giấy xác nhận nghỉ việc có ghi thời gian làm và công việc từng phụ trách ạ?",
+      "terms": [
+        "在職期間",
+        "記載する",
+        "退職証明書"
+      ],
+      "scenes": [
+        "S022",
+        "S023"
+      ],
+      "pattern": "hỏi_giấy_và_mốc_nhận"
+    },
+    {
+      "id": "T-113-V13-022",
+      "group": "hr",
+      "role_vi": "Nhân viên xin hỗ trợ cho buổi gặp",
+      "gender": "male",
+      "ja": "次の退職面談には、人事の方に同席していただけないでしょうか。",
+      "vi": "Buổi trao đổi tiếp theo về việc nghỉ, tôi có thể nhờ một người bên nhân sự cùng dự được không ạ?",
+      "terms": [
+        "面談",
+        "同席する"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "xin_người_cùng_dự"
+    },
+    {
+      "id": "T-113-V13-023",
+      "group": "hr",
+      "role_vi": "Nhân viên hỏi về nơi tư vấn bên ngoài",
+      "gender": "male",
+      "ja": "退職を伝えたあとに困っていることを、総合労働相談コーナーで相談できますか。",
+      "vi": "Tôi có thể hỏi đầu mối tư vấn lao động tổng hợp về vướng mắc sau khi báo nghỉ không ạ?",
+      "terms": [
+        "総合労働相談コーナー"
+      ],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "hỏi_đầu_mối"
+    },
+    {
+      "id": "T-113-V13-024",
+      "group": "hr",
+      "role_vi": "Nhân viên xác nhận kênh sau buổi bàn giao",
+      "gender": "male",
+      "ja": "引き継ぎの日程に追加の変更があれば、人事の窓口に連絡してもよろしいですか。",
+      "vi": "Nếu lịch bàn giao còn thay đổi, tôi có thể liên hệ đầu mối nhân sự được không ạ?",
+      "terms": [
+        "引き継ぎ",
+        "日程"
+      ],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "chốt_kênh_nếu_đổi"
+    }
+  ]
+}

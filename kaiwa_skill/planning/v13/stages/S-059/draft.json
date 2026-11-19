@@ -1,0 +1,354 @@
+{
+  "code": "S-059",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "7ba9556f528c01c32b83a00f5399f9b61ae78c80e487e49027e418b9234c4835",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Gọi hỏi việc làm thêm",
+    "book": "Hẹn và đổi lịch phỏng vấn",
+    "meet": "Nói kinh nghiệm và giờ làm được",
+    "next": "Hỏi kết quả và trả lời lời mời"
+  },
+  "items": [
+    {
+      "id": "S-059-V13-001",
+      "group": "ask",
+      "role_vi": "Người gọi hỏi việc",
+      "gender": "female",
+      "ja": "アルバイトはまだ募集していますか。",
+      "vi": "Quán mình vẫn đang tuyển người làm thêm ạ?",
+      "terms": [
+        "アルバイト",
+        "募集する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_còn_tuyển"
+    },
+    {
+      "id": "S-059-V13-002",
+      "group": "ask",
+      "role_vi": "Người hỏi về việc phục vụ",
+      "gender": "female",
+      "ja": "ホールではどんな仕事をしますか。",
+      "vi": "Ở bộ phận phục vụ, tôi sẽ làm những việc gì ạ?",
+      "terms": [
+        "ホール"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "hỏi_công_việc"
+    },
+    {
+      "id": "S-059-V13-003",
+      "group": "ask",
+      "role_vi": "Nhân viên cửa hàng",
+      "gender": "male",
+      "ja": "ホールではお客様の注文を取ります。",
+      "vi": "Ở bộ phận phục vụ, công việc là nhận món khách gọi ạ.",
+      "terms": [
+        "ホール",
+        "注文を取る"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "giải_thích_công_việc"
+    },
+    {
+      "id": "S-059-V13-004",
+      "group": "ask",
+      "role_vi": "Người hỏi lại sau khi hết đợt tuyển",
+      "gender": "female",
+      "ja": "次はいつアルバイトを募集しますか。",
+      "vi": "Khi nào quán sẽ tuyển người làm thêm đợt tới ạ?",
+      "terms": [
+        "アルバイト",
+        "募集する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_đợt_tuyển_sau"
+    },
+    {
+      "id": "S-059-V13-005",
+      "group": "ask",
+      "role_vi": "Nhân viên cửa hàng",
+      "gender": "male",
+      "ja": "来月の初めに募集ページを見てください。",
+      "vi": "Bạn xem trang tuyển dụng vào đầu tháng tới nhé.",
+      "terms": [
+        "募集ページ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "chỉ_nguồn_tin"
+    },
+    {
+      "id": "S-059-V13-006",
+      "group": "book",
+      "role_vi": "Ứng viên chọn giờ phỏng vấn",
+      "gender": "female",
+      "ja": "面接は火曜日なら、午後二時から行けます。",
+      "vi": "Nếu phỏng vấn vào thứ Ba, tôi có thể đến từ hai giờ chiều ạ.",
+      "terms": [
+        "面接"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "nếu_thì_sắp_xếp_được"
+    },
+    {
+      "id": "S-059-V13-007",
+      "group": "book",
+      "role_vi": "Ứng viên đề xuất giờ phỏng vấn",
+      "gender": "male",
+      "ja": "面接は水曜日の午前中か木曜日の午後ではどうですか。",
+      "vi": "Phỏng vấn vào sáng thứ Tư hoặc chiều thứ Năm thì có được không ạ?",
+      "terms": [
+        "面接",
+        "午前中"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "đưa_hai_lựa_chọn"
+    },
+    {
+      "id": "S-059-V13-008",
+      "group": "book",
+      "role_vi": "Ứng viên chốt giờ phỏng vấn",
+      "gender": "female",
+      "ja": "木曜日の午後二時に、面接に伺います。",
+      "vi": "Tôi sẽ đến phỏng vấn lúc hai giờ chiều thứ Năm ạ.",
+      "terms": [
+        "面接",
+        "伺う"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "xác_nhận_giờ_đến"
+    },
+    {
+      "id": "S-059-V13-009",
+      "group": "book",
+      "role_vi": "Ứng viên chưa nghe rõ địa điểm",
+      "gender": "female",
+      "ja": "面接の場所をもう一度教えてください。",
+      "vi": "Anh nhắc lại địa điểm phỏng vấn giúp tôi ạ.",
+      "terms": [
+        "面接",
+        "場所"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "xin_nhắc_lại"
+    },
+    {
+      "id": "S-059-V13-010",
+      "group": "book",
+      "role_vi": "Ứng viên hỏi lối vào nơi phỏng vấn",
+      "gender": "female",
+      "ja": "面接に行くときは、どの入口から入ればいいですか。",
+      "vi": "Khi đến phỏng vấn, tôi cần vào bằng lối nào ạ?",
+      "terms": [
+        "面接",
+        "入口"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_đường_vào"
+    },
+    {
+      "id": "S-059-V13-011",
+      "group": "book",
+      "role_vi": "Ứng viên gọi lại xin đổi hẹn",
+      "gender": "male",
+      "ja": "急な用事が入ったので、面接の日時を変更してもらえますか。",
+      "vi": "Tôi có việc đột xuất, cho tôi đổi ngày giờ phỏng vấn được không ạ?",
+      "terms": [
+        "用事",
+        "面接",
+        "日時",
+        "変更する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "xin_đổi_lịch"
+    },
+    {
+      "id": "S-059-V13-012",
+      "group": "meet",
+      "role_vi": "Ứng viên được hỏi kinh nghiệm",
+      "gender": "female",
+      "ja": "前はパン屋のレジで働いていました。",
+      "vi": "Trước đây tôi làm thu ngân ở tiệm bánh ạ.",
+      "terms": [
+        "パン屋",
+        "レジ",
+        "働く"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nêu_kinh_nghiệm"
+    },
+    {
+      "id": "S-059-V13-013",
+      "group": "meet",
+      "role_vi": "Ứng viên chưa từng nhận món bằng máy",
+      "gender": "male",
+      "ja": "注文を取る機械は、まだ使ったことがありません。",
+      "vi": "Tôi chưa từng dùng máy nhận món khách gọi ạ.",
+      "terms": [
+        "注文を取る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "chưa_có_kinh_nghiệm"
+    },
+    {
+      "id": "S-059-V13-014",
+      "group": "meet",
+      "role_vi": "Ứng viên nêu giờ làm được",
+      "gender": "female",
+      "ja": "月曜日と水曜日は、午後五時から働けます。",
+      "vi": "Thứ Hai và thứ Tư tôi có thể làm từ năm giờ chiều ạ.",
+      "terms": [
+        "働く"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "nêu_giờ_làm_được"
+    },
+    {
+      "id": "S-059-V13-015",
+      "group": "meet",
+      "role_vi": "Ứng viên không làm được cuối tuần",
+      "gender": "female",
+      "ja": "土曜日の朝は授業があるので、働けません。",
+      "vi": "Sáng thứ Bảy tôi có lớp nên không đi làm được ạ.",
+      "terms": [
+        "授業",
+        "働く"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "nêu_lý_do_không_làm_được"
+    },
+    {
+      "id": "S-059-V13-016",
+      "group": "meet",
+      "role_vi": "Ứng viên hỏi về ca khác",
+      "gender": "female",
+      "ja": "水曜日の夕方なら、シフトに入れます。",
+      "vi": "Tôi có thể nhận ca chiều tối thứ Tư ạ.",
+      "terms": [
+        "夕方",
+        "シフト",
+        "入る"
+      ],
+      "scenes": [
+        "S010",
+        "S012"
+      ],
+      "pattern": "nếu_thì_sắp_xếp_được"
+    },
+    {
+      "id": "S-059-V13-017",
+      "group": "next",
+      "role_vi": "Ứng viên được mời làm",
+      "gender": "female",
+      "ja": "初日は店長に声をかければいいですか。",
+      "vi": "Ngày đầu tôi cứ tới gặp quản lý cửa hàng là được, phải không ạ?",
+      "terms": [
+        "初日",
+        "店長"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "xác_nhận_người_cần_gặp"
+    },
+    {
+      "id": "S-059-V13-018",
+      "group": "next",
+      "role_vi": "Người phụ trách tuyển",
+      "gender": "male",
+      "ja": "初日が決まったら、こちらからご連絡します。",
+      "vi": "Khi chốt được ngày đầu đi làm, chúng tôi sẽ liên hệ lại ạ.",
+      "terms": [
+        "初日",
+        "決まる",
+        "連絡する"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "báo_sẽ_liên_hệ"
+    },
+    {
+      "id": "S-059-V13-019",
+      "group": "next",
+      "role_vi": "Ứng viên đang chờ kết quả",
+      "gender": "female",
+      "ja": "面接の結果はいつご連絡いただけますか。",
+      "vi": "Khi nào tôi sẽ nhận được thông báo kết quả phỏng vấn ạ?",
+      "terms": [
+        "面接",
+        "結果",
+        "連絡する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "hỏi_khi_nào_báo_lại"
+    },
+    {
+      "id": "S-059-V13-020",
+      "group": "next",
+      "role_vi": "Ứng viên được đề xuất chi nhánh khác",
+      "gender": "female",
+      "ja": "東口のお店ではどんな仕事をしますか。",
+      "vi": "Ở quán bên cửa đông ga, tôi sẽ làm những việc gì ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "hỏi_công_việc"
+    },
+    {
+      "id": "S-059-V13-021",
+      "group": "next",
+      "role_vi": "Ứng viên gọi từ chối việc",
+      "gender": "female",
+      "ja": "せっかくお話をいただきましたが、今回はお断りします。",
+      "vi": "Cảm ơn anh đã mời, lần này tôi xin phép không nhận việc ạ.",
+      "terms": [
+        "断る"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "từ_chối_lịch_sự"
+    }
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "code": "T-122",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "02d3d136cfaff37051e3747d2640887e67c989e23ecdb2ae2871d8122af69558",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "room": "Xác nhận phòng, giờ và giá karaoke",
+    "device": "Xử lý mic lỗi, chuyển phòng và hỏi thêm giờ",
+    "rental": "Cho thuê, thử cỡ và nhận lại đồ",
+    "lesson": "Tư vấn lớp theo trình độ và chốt lịch học thử"
+  },
+  "items": [
+    {
+      "id": "T-122-V13-001",
+      "group": "room",
+      "role_vi": "Nhân viên karaoke hỏi nhóm có bao nhiêu người",
+      "gender": "female",
+      "ja": "カラオケは何名様でご利用ですか。",
+      "vi": "Nhóm anh có mấy người hát karaoke ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～は何名様でご利用ですか"
+    },
+    {
+      "id": "T-122-V13-002",
+      "group": "room",
+      "role_vi": "Nhân viên kiểm khách muốn bắt đầu hay kết thúc vào giờ đã nói",
+      "gender": "male",
+      "ja": "二十二時は、ご利用の開始と終了のどちらですか。",
+      "vi": "22 giờ là giờ chị muốn bắt đầu hay kết thúc ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～は、～のどちらですか"
+    },
+    {
+      "id": "T-122-V13-003",
+      "group": "room",
+      "role_vi": "Nhân viên báo chỉ còn phòng rộng hơn",
+      "gender": "female",
+      "ja": "通常のお部屋は満室ですが、広めのお部屋ならすぐにご案内できます。",
+      "vi": "Phòng thường đã kín, nhưng tôi có thể dẫn anh vào phòng rộng hơn ngay ạ.",
+      "terms": [
+        "満室"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～は満室ですが、～なら～できます"
+    },
+    {
+      "id": "T-122-V13-004",
+      "group": "room",
+      "role_vi": "Nhân viên báo chênh giá phòng rộng",
+      "gender": "male",
+      "ja": "広いお部屋にすると、三名様で一時間の差額は六百円です。",
+      "vi": "Nếu chọn phòng rộng, phần chênh cho ba người trong một giờ là 600 yên ạ.",
+      "terms": [
+        "差額"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～にすると、～は～です"
+    },
+    {
+      "id": "T-122-V13-005",
+      "group": "room",
+      "role_vi": "Nhân viên chỉ cách gọi quầy tiếp tân từ phòng",
+      "gender": "female",
+      "ja": "何かありましたら、お部屋の電話でフロントを呼んで、部屋番号をお伝えください。",
+      "vi": "Nếu cần hỗ trợ, anh dùng điện thoại trong phòng gọi quầy tiếp tân và cho chúng tôi biết số phòng nhé.",
+      "terms": [
+        "部屋番号"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "何かありましたら、～をお伝えください"
+    },
+    {
+      "id": "T-122-V13-006",
+      "group": "device",
+      "role_vi": "Nhân viên hỏi thông tin để xử lý mic không phát tiếng",
+      "gender": "male",
+      "ja": "マイクの音が出ないそうですが、お部屋番号を教えていただけますか。",
+      "vi": "Tôi nghe nói mic không có tiếng, chị cho tôi biết số phòng được không ạ?",
+      "terms": [
+        "部屋番号"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～そうですが、～を教えていただけますか"
+    },
+    {
+      "id": "T-122-V13-007",
+      "group": "device",
+      "role_vi": "Nhân viên nói sẽ mang mic dự phòng để thử",
+      "gender": "female",
+      "ja": "予備のマイクをお持ちして、一緒に音が出るか確認しますね。",
+      "vi": "Tôi mang mic dự phòng đến rồi cùng anh kiểm tra xem có tiếng không nhé.",
+      "terms": [
+        "予備"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～て、一緒に～か確認しますね"
+    },
+    {
+      "id": "T-122-V13-008",
+      "group": "device",
+      "role_vi": "Nhân viên đề nghị chuyển phòng nếu đổi mic vẫn lỗi",
+      "gender": "male",
+      "ja": "マイクを交換しても音が出ないので、別のお部屋に移られますか。",
+      "vi": "Đổi mic rồi mà vẫn không có tiếng, chị có muốn chuyển sang phòng khác không ạ?",
+      "terms": [
+        "交換する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～ても～ので、～ますか"
+    },
+    {
+      "id": "T-122-V13-009",
+      "group": "device",
+      "role_vi": "Nhân viên báo giới hạn giờ của phòng thay",
+      "gender": "female",
+      "ja": "別のお部屋は二十時までですが、その時間まででも移られますか。",
+      "vi": "Phòng khác chỉ dùng được đến 20 giờ, dù vậy anh vẫn muốn chuyển chứ ạ?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～までですが、それでも～ますか"
+    },
+    {
+      "id": "T-122-V13-010",
+      "group": "device",
+      "role_vi": "Nhân viên giải thích thời gian chờ không tính tiền",
+      "gender": "male",
+      "ja": "マイクをお待ちいただいた時間は、室料の計算から引いてあります。",
+      "vi": "Thời gian chị chờ mic đã được trừ khỏi phần tính tiền phòng ạ.",
+      "terms": [
+        "室料"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～は、～の計算から引いてあります"
+    },
+    {
+      "id": "T-122-V13-011",
+      "group": "device",
+      "role_vi": "Nhân viên nói sẽ kiểm lượt đặt sau trước khi nhận gia hạn",
+      "gender": "female",
+      "ja": "同じお部屋で三十分延長できるか、次のご予約を確認します。",
+      "vi": "Tôi sẽ kiểm tra lượt đặt sau xem có thể gia hạn thêm ba mươi phút ngay tại phòng này không ạ.",
+      "terms": [
+        "延長する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～できるか、～を確認します"
+    },
+    {
+      "id": "T-122-V13-012",
+      "group": "device",
+      "role_vi": "Nhân viên nói giờ cần ra khỏi phòng khi không gia hạn được",
+      "gender": "male",
+      "ja": "延長できませんので、十六時までにお部屋を出て、そのあと受付にお越しください。",
+      "vi": "Quán không gia hạn được, chị rời phòng chậm nhất 16 giờ rồi đến quầy tiếp tân nhé.",
+      "terms": [
+        "延長する",
+        "受付"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～ので、～までに～てください"
+    },
+    {
+      "id": "T-122-V13-013",
+      "group": "rental",
+      "role_vi": "Nhân viên hỏi cỡ giày và khi nào khách trả",
+      "gender": "female",
+      "ja": "靴のサイズと返却する時間を教えていただけますか。",
+      "vi": "Anh cho tôi biết cỡ giày và mấy giờ định trả được không ạ?",
+      "terms": [
+        "返却"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-122-V13-014",
+      "group": "rental",
+      "role_vi": "Nhân viên giải thích mẫu giày chỉ thuê trong ngày",
+      "gender": "male",
+      "ja": "この靴は日帰りの貸し出しなので、今日の午後五時半までにご返却ください。",
+      "vi": "Giày này chỉ cho thuê trong ngày, chị trả chậm nhất lúc năm giờ rưỡi chiều nay nhé.",
+      "terms": [
+        "日帰り",
+        "返却"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～ので、～までに～てください"
+    },
+    {
+      "id": "T-122-V13-015",
+      "group": "rental",
+      "role_vi": "Nhân viên mời đi thử cỡ gần nhất",
+      "gender": "female",
+      "ja": "少し大きいサイズでしたら、歩いてみて、かかとが浮かないか確かめてください。",
+      "vi": "Nếu thử cỡ lớn hơn một chút, anh đi vài bước xem gót có bị nhấc lên không nhé.",
+      "terms": [
+        "かかと"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～でしたら、～か確かめてください"
+    },
+    {
+      "id": "T-122-V13-016",
+      "group": "rental",
+      "role_vi": "Nhân viên xin xem lỗi có sẵn trên đồ thuê",
+      "gender": "male",
+      "ja": "ファスナーが引っかかるところを確認してから、代わりの品があるかお調べします。",
+      "vi": "Tôi sẽ xem chỗ khóa kéo bị kẹt rồi kiểm tra có món khác để thay không ạ.",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～てから、～かお調べします"
+    },
+    {
+      "id": "T-122-V13-017",
+      "group": "rental",
+      "role_vi": "Nhân viên chỉ thứ tự trả đồ và thanh toán",
+      "gender": "female",
+      "ja": "返却台でポールを確認しますので、終わったらレジにお進みください。",
+      "vi": "Đợi tôi kiểm tra gậy ở bàn trả đồ rồi anh qua quầy tính tiền nhé.",
+      "terms": [
+        "返却"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～を確認しますので、終わったら～にお進みください"
+    },
+    {
+      "id": "T-122-V13-018",
+      "group": "lesson",
+      "role_vi": "Nhân viên hỏi khách học gì trước đây",
+      "gender": "male",
+      "ja": "ギターは、独学でどんなことを練習してきましたか。",
+      "vi": "Từ trước đến nay chị đã tự tập những gì với đàn guitar ạ?",
+      "terms": [
+        "独学"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～は、どんなことを～てきましたか"
+    },
+    {
+      "id": "T-122-V13-019",
+      "group": "lesson",
+      "role_vi": "Nhân viên đề nghị học thử ở mức phù hợp",
+      "gender": "female",
+      "ja": "まだコードを押さえる練習中でしたら、基礎の体験レッスンはいかがですか。",
+      "vi": "Nếu anh vẫn đang tập bấm hợp âm, anh có muốn học thử buổi cơ bản không ạ?",
+      "terms": [
+        "基礎",
+        "体験レッスン"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～でしたら、～はいかがですか"
+    },
+    {
+      "id": "T-122-V13-020",
+      "group": "lesson",
+      "role_vi": "Nhân viên hẹn báo lại khung giờ chưa chốt",
+      "gender": "male",
+      "ja": "初心者クラスの時間はまだ決まっていないので、明日の夕方までにお電話で状況をお伝えします。",
+      "vi": "Giờ lớp dành cho người mới vẫn chưa chốt, chậm nhất chiều mai tôi sẽ gọi báo chị tình hình ạ.",
+      "terms": [
+        "初心者"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～ので、～までにお電話で状況をお伝えします"
+    },
+    {
+      "id": "T-122-V13-021",
+      "group": "lesson",
+      "role_vi": "Nhân viên hỏi khách muốn giữ chỗ buổi thử không",
+      "gender": "female",
+      "ja": "体験レッスンは木曜の十九時十五分に空きがありますが、お取りしましょうか。",
+      "vi": "Buổi học thử còn chỗ vào 19 giờ 15 thứ Năm, tôi giữ chỗ cho anh nhé?",
+      "terms": [
+        "体験レッスン",
+        "空き"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～に空きがありますが、お取りしましょうか"
+    }
+  ]
+}

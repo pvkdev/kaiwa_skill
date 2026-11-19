@@ -1,0 +1,346 @@
+{
+  "code": "S-047",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3cfa5e258057ee5aec12abf3148faf29e28faff4482995e1984b47dffcb38cd9",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "counter": "Tìm đúng quầy và giờ tiếp nhận",
+    "purpose": "Nói mục đích và hỏi giấy cần mang",
+    "understand": "Xin nói chậm và giải thích dễ hiểu",
+    "appointment": "Đặt hẹn và đến lại đúng quầy"
+  },
+  "items": [
+    {
+      "id": "S-047-V13-001",
+      "group": "counter",
+      "role_vi": "Khách hỏi ở sảnh tòa thị chính",
+      "gender": "female",
+      "ja": "住所について相談したいのですが、どの窓口に行けばいいですか。",
+      "vi": "Tôi muốn hỏi về địa chỉ cư trú thì đến quầy nào ạ?",
+      "terms": [
+        "住所",
+        "相談する",
+        "窓口"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "どの窓口に行けばいいですか"
+    },
+    {
+      "id": "S-047-V13-002",
+      "group": "counter",
+      "role_vi": "Khách hỏi ở sảnh tòa thị chính",
+      "gender": "female",
+      "ja": "二階の住民窓口へは、この階段を上がればいいですか。",
+      "vi": "Tôi đi cầu thang này lên quầy cư trú tầng hai được không ạ?",
+      "terms": [
+        "〜階",
+        "住民窓口",
+        "階段",
+        "上がる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜を上がればいいですか"
+    },
+    {
+      "id": "S-047-V13-003",
+      "group": "counter",
+      "role_vi": "Nhân viên hướng dẫn ở sảnh",
+      "gender": "male",
+      "ja": "住民窓口へは、右の階段を上がってください。",
+      "vi": "Chị đi lên cầu thang bên phải để đến quầy cư trú nhé.",
+      "terms": [
+        "住民窓口",
+        "階段",
+        "上がる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜を上がってください"
+    },
+    {
+      "id": "S-047-V13-004",
+      "group": "counter",
+      "role_vi": "Khách hỏi ở sảnh tòa thị chính",
+      "gender": "female",
+      "ja": "今日は受付が終わったそうですが、明日は何時からですか。",
+      "vi": "Tôi nghe hôm nay hết giờ tiếp nhận rồi, ngày mai mấy giờ quầy bắt đầu nhận hồ sơ ạ?",
+      "terms": [
+        "受付"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "何時からですか"
+    },
+    {
+      "id": "S-047-V13-005",
+      "group": "counter",
+      "role_vi": "Khách hỏi ở sảnh tòa thị chính",
+      "gender": "female",
+      "ja": "窓口の名前をもう一度、ゆっくり言っていただけますか。",
+      "vi": "Anh nhắc lại tên quầy chậm hơn một chút giúp tôi được không ạ?",
+      "terms": [
+        "窓口",
+        "もう一度",
+        "ゆっくり"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "S-047-V13-006",
+      "group": "purpose",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "会社に出す住所の証明書は、ここで取れますか。",
+      "vi": "Tôi xin giấy xác nhận địa chỉ để nộp cho công ty ở đây được không ạ?",
+      "terms": [
+        "住所",
+        "証明書"
+      ],
+      "scenes": [
+        "S005",
+        "S008"
+      ],
+      "pattern": "ここで〜れますか"
+    },
+    {
+      "id": "S-047-V13-007",
+      "group": "purpose",
+      "role_vi": "Nhân viên tiếp nhận tại quầy",
+      "gender": "male",
+      "ja": "見本を見せていただければ、どの窓口かご案内できます。",
+      "vi": "Nếu chị cho tôi xem giấy mẫu, tôi có thể chỉ đúng quầy giúp chị ạ.",
+      "terms": [
+        "見本",
+        "見せる",
+        "窓口",
+        "案内する"
+      ],
+      "scenes": [
+        "S005",
+        "S007"
+      ],
+      "pattern": "〜ていただければ、〜できます"
+    },
+    {
+      "id": "S-047-V13-008",
+      "group": "purpose",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "住所の証明書を取るには、どんな書類を見せればいいですか。",
+      "vi": "Để xin giấy xác nhận địa chỉ, tôi cần xuất trình giấy tờ gì ạ?",
+      "terms": [
+        "住所",
+        "証明書",
+        "書類",
+        "見せる"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "何を見せればいいですか"
+    },
+    {
+      "id": "S-047-V13-009",
+      "group": "purpose",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "この手続きは、何番の窓口に行けばいいですか。",
+      "vi": "Thủ tục này tôi đến quầy số mấy ạ?",
+      "terms": [
+        "手続き",
+        "〜番",
+        "窓口"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "どの窓口に行けばいいですか"
+    },
+    {
+      "id": "S-047-V13-010",
+      "group": "purpose",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "今の住所が分かる書類を、会社に出す必要があります。",
+      "vi": "Tôi cần nộp cho công ty giấy tờ có ghi địa chỉ hiện tại ạ.",
+      "terms": [
+        "住所",
+        "書類"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜する必要があります"
+    },
+    {
+      "id": "S-047-V13-011",
+      "group": "purpose",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "次に来るときは、この書類の原本も必要ですか。",
+      "vi": "Lần sau đến, tôi có cần mang cả bản gốc giấy này không ạ?",
+      "terms": [
+        "書類",
+        "原本"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "次に来るときは、〜も必要ですか"
+    },
+    {
+      "id": "S-047-V13-012",
+      "group": "understand",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "原本というのは、コピーする前の書類のことですか。",
+      "vi": "“Genpon” nghĩa là tờ giấy gốc trước khi sao chụp phải không ạ?",
+      "terms": [
+        "原本",
+        "コピー",
+        "書類"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜というのは〜のことですか"
+    },
+    {
+      "id": "S-047-V13-013",
+      "group": "understand",
+      "role_vi": "Khách hỏi hỗ trợ ngôn ngữ",
+      "gender": "female",
+      "ja": "ベトナム語で相談できる窓口を教えていただけますか。",
+      "vi": "Anh chỉ cho tôi quầy có thể tư vấn bằng tiếng Việt được không ạ?",
+      "terms": [
+        "ベトナム語",
+        "相談する",
+        "窓口"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "S-047-V13-014",
+      "group": "understand",
+      "role_vi": "Khách hỏi hỗ trợ ngôn ngữ",
+      "gender": "female",
+      "ja": "やさしい日本語でもう一度説明していただけますか。",
+      "vi": "Anh giải thích lại bằng tiếng Nhật dễ hiểu giúp tôi được không ạ?",
+      "terms": [
+        "やさしい日本語",
+        "もう一度",
+        "説明する"
+      ],
+      "scenes": [
+        "S004",
+        "S010",
+        "S013"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "S-047-V13-015",
+      "group": "understand",
+      "role_vi": "Khách hỏi hỗ trợ ngôn ngữ",
+      "gender": "female",
+      "ja": "ベトナム語の担当者がいる日に予約できますか。",
+      "vi": "Tôi đặt lịch vào ngày có người hỗ trợ tiếng Việt được không ạ?",
+      "terms": [
+        "ベトナム語",
+        "担当者",
+        "予約する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜日に予約できますか"
+    },
+    {
+      "id": "S-047-V13-016",
+      "group": "appointment",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "原本を用意するのに時間がかかるので、来週また来てもいいですか。",
+      "vi": "Tôi cần thêm thời gian để chuẩn bị bản gốc, tuần sau tôi quay lại được không ạ?",
+      "terms": [
+        "原本",
+        "用意する",
+        "来週"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜ので、また来てもいいですか"
+    },
+    {
+      "id": "S-047-V13-017",
+      "group": "appointment",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "来週の月曜日は、午前九時に三番窓口へ行けばいいですか。",
+      "vi": "Thứ Hai tuần sau, tôi đến quầy số ba lúc chín giờ sáng là được phải không ạ?",
+      "terms": [
+        "来週",
+        "午前",
+        "〜番",
+        "窓口"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "〜に行けばいいですか"
+    },
+    {
+      "id": "S-047-V13-018",
+      "group": "appointment",
+      "role_vi": "Khách gọi kiểm tra lịch hẹn",
+      "gender": "female",
+      "ja": "住所の相談を火曜日の午前十時に予約しましたが、何番の窓口ですか。",
+      "vi": "Tôi có lịch hỏi về địa chỉ lúc mười giờ sáng thứ Ba, tôi đến quầy số mấy ạ?",
+      "terms": [
+        "午前",
+        "予約する",
+        "住所",
+        "〜番",
+        "窓口"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜は何番の窓口ですか"
+    },
+    {
+      "id": "S-047-V13-019",
+      "group": "appointment",
+      "role_vi": "Khách làm thủ tục tại quầy",
+      "gender": "female",
+      "ja": "先日電話で相談した、住所の証明書のことで来ました。",
+      "vi": "Tôi đến hỏi tiếp về giấy xác nhận địa chỉ mà hôm trước tôi đã gọi điện trao đổi ạ.",
+      "terms": [
+        "先日",
+        "相談する",
+        "住所",
+        "証明書"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜のことで来ました"
+    }
+  ]
+}

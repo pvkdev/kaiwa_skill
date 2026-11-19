@@ -1,0 +1,385 @@
+{
+  "code": "H-034",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "4e26c4c1c71dcc36ee78ecbb19aa5ca7a170a196549c23e19bd7c466a1568dd4",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "hear": "Nghe khách và nhắc lại đúng vấn đề",
+    "verify": "Xác minh hàng và mức ảnh hưởng",
+    "apology": "Xin lỗi chính thức và làm rõ bước quyết",
+    "offer": "Bàn cách khắc phục theo việc khách cần gấp",
+    "concern": "Tiếp nhận sự bất bình và yêu cầu cập nhật",
+    "follow": "Theo dõi hàng làm lại và hỏi kết quả kiểm"
+  },
+  "items": [
+    {
+      "id": "H-034-V13-001",
+      "group": "hear",
+      "role_vi": "Khách hàng khiếu nại về túi in logo",
+      "gender": "female",
+      "ja": "届いた袋のロゴが承認見本と違います。",
+      "vi": "Logo trên túi vừa giao khác với mẫu chúng tôi đã duyệt.",
+      "terms": [
+        "承認見本"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～と～が違う"
+    },
+    {
+      "id": "H-034-V13-002",
+      "group": "hear",
+      "role_vi": "Nhân viên tiếp nhận khiếu nại qua điện thoại",
+      "gender": "male",
+      "ja": "枚数はそろっていて、ロゴの線の太さに相違があるということでよろしいですか。",
+      "vi": "Tôi hiểu là số lượng đủ, nhưng nét logo có độ dày khác mẫu, đúng không ạ?",
+      "terms": [
+        "相違"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～ということでよろしいですか"
+    },
+    {
+      "id": "H-034-V13-003",
+      "group": "hear",
+      "role_vi": "Nhân viên tiếp nhận khiếu nại qua điện thoại",
+      "gender": "male",
+      "ja": "箱の番号と、袋をいつからお使いになるかを教えていただけますか。",
+      "vi": "Chị cho tôi xin số hiệu trên các thùng và thời điểm bắt đầu dùng túi được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-034-V13-004",
+      "group": "hear",
+      "role_vi": "Nhân viên tiếp nhận khiếu nại qua điện thoại",
+      "gender": "male",
+      "ja": "開店の準備が止まり、予定を組み直すことになってしまい、誠に申し訳ございません。",
+      "vi": "Tôi thành thật xin lỗi vì việc chuẩn bị khai trương bị gián đoạn, khiến bên chị phải sắp xếp lại lịch ạ.",
+      "terms": [
+        "申し訳ございません"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ことになり申し訳ございません"
+    },
+    {
+      "id": "H-034-V13-005",
+      "group": "verify",
+      "role_vi": "Nhân viên tiếp nhận khiếu nại qua điện thoại",
+      "gender": "male",
+      "ja": "印刷の違いがどこまであるか確認するため、現物と承認見本を照合させていただけますか。",
+      "vi": "Để xác định hàng bị in khác mẫu đến đâu, chị cho tôi đối chiếu hàng thực tế với mẫu đã duyệt được không ạ?",
+      "terms": [
+        "現物",
+        "承認見本",
+        "照合する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～を照合させていただけますか"
+    },
+    {
+      "id": "H-034-V13-006",
+      "group": "verify",
+      "role_vi": "Nhân viên tiếp nhận khiếu nại qua điện thoại",
+      "gender": "male",
+      "ja": "棚卸しが終わった後、午後二時半に承認見本を持って現物を確認しに伺ってもよろしいですか。",
+      "vi": "Sau khi kho kiểm kê xong, hai giờ rưỡi chiều tôi mang mẫu đã duyệt đến kiểm hàng thực tế được không ạ?",
+      "terms": [
+        "承認見本",
+        "現物"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～に伺ってもよろしいですか"
+    },
+    {
+      "id": "H-034-V13-007",
+      "group": "verify",
+      "role_vi": "Nhân viên tiếp nhận khiếu nại qua điện thoại",
+      "gender": "male",
+      "ja": "金曜の朝に開店する二店舗では、袋が最低で何枚必要でしょうか。",
+      "vi": "Hai cửa hàng khai trương sáng thứ Sáu cần tối thiểu bao nhiêu túi ạ?",
+      "terms": [],
+      "scenes": [
+        "S003",
+        "S007"
+      ],
+      "pattern": "～には最低～必要ですか"
+    },
+    {
+      "id": "H-034-V13-008",
+      "group": "verify",
+      "role_vi": "Nhân viên tiếp nhận khiếu nại qua điện thoại",
+      "gender": "male",
+      "ja": "小ロットで刷り直して別便で送れるか工場に確認し、夕方五時までに折り返します。",
+      "vi": "Tôi sẽ hỏi nhà máy xem có thể in lại một lô nhỏ và gửi chuyến riêng không, rồi gọi lại trước năm giờ chiều ạ.",
+      "terms": [
+        "小ロット",
+        "別便",
+        "折り返す"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～か確認し～までにお知らせする"
+    },
+    {
+      "id": "H-034-V13-009",
+      "group": "apology",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "ロゴの線の太さが承認見本と異なる袋が二百枚あると確認し、本日はおわびに伺いました。",
+      "vi": "Chúng tôi đã xác nhận có 200 túi có độ dày nét logo khác mẫu đã duyệt, hôm nay tôi đến để trực tiếp xin lỗi chị ạ.",
+      "terms": [
+        "承認見本",
+        "おわび"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を確認しておわびに伺った"
+    },
+    {
+      "id": "H-034-V13-010",
+      "group": "apology",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "出荷前にロゴの違いを見落とし、開店前のお忙しい時期に再確認のお手数をおかけし、申し訳ございません。",
+      "vi": "Chúng tôi đã bỏ sót sai khác về logo trước khi xuất hàng, thành thật xin lỗi vì khiến chị phải mất công kiểm lại ngay lúc đang bận chuẩn bị khai trương ạ.",
+      "terms": [
+        "出荷する",
+        "お手数をおかけする",
+        "申し訳ございません"
+      ],
+      "scenes": [
+        "S009",
+        "S017"
+      ],
+      "pattern": "～をおかけし申し訳ございません"
+    },
+    {
+      "id": "H-034-V13-011",
+      "group": "apology",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "費用をどの範囲で負担できるかは社内決裁が必要ですので、ご負担の内容を伺ったうえで、責任者に確認いたします。",
+      "vi": "Các khoản chúng tôi có thể chi trả cần được duyệt nội bộ, tôi xin nghe về những chi phí phát sinh bên chị đã chịu rồi sẽ xác nhận lại với người có thẩm quyền ạ.",
+      "terms": [
+        "社内決裁",
+        "責任者"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～は社内決裁が必要"
+    },
+    {
+      "id": "H-034-V13-012",
+      "group": "apology",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "費用対応を判断できる責任者が明日の面談に同席できるか確認し、本日五時までにお知らせします。",
+      "vi": "Tôi sẽ hỏi xem người có quyền quyết về chi phí có thể dự buổi trao đổi ngày mai không rồi báo chị trước năm giờ hôm nay ạ.",
+      "terms": [
+        "責任者"
+      ],
+      "scenes": [
+        "S012",
+        "S020"
+      ],
+      "pattern": "～か確認し～までにお知らせする"
+    },
+    {
+      "id": "H-034-V13-013",
+      "group": "offer",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "まず金曜の朝に使う百枚を確保するか、全数の交換日程を決めるか、どちらを優先されますか。",
+      "vi": "Chị muốn ưu tiên có 100 túi dùng sáng thứ Sáu hay ưu tiên chốt lịch đổi toàn bộ lô hàng ạ?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～か～か、どちらを優先"
+    },
+    {
+      "id": "H-034-V13-014",
+      "group": "offer",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "新しいロゴの百枚を別便で先にお届けする案と、六百枚をすべて再製作して来週まとめてお届けする案がございます。",
+      "vi": "Một phương án là giao trước 100 túi logo mới bằng chuyến riêng, phương án còn lại là làm lại cả 600 túi rồi giao cùng một đợt vào tuần sau ạ.",
+      "terms": [
+        "再製作する",
+        "別便"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～か～か、二つの方法がある"
+    },
+    {
+      "id": "H-034-V13-015",
+      "group": "offer",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "木曜の午後三時に現物の写真と箱番号をお送りし、写真をご確認いただいてから出荷いたします。",
+      "vi": "Ba giờ chiều thứ Năm tôi sẽ gửi ảnh hàng thực tế và số hiệu thùng, sau khi chị xác nhận ảnh chúng tôi mới xuất hàng ạ.",
+      "terms": [
+        "出荷する",
+        "現物"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "～いただいてから出荷する"
+    },
+    {
+      "id": "H-034-V13-016",
+      "group": "offer",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "ご希望の百五十枚が金曜朝までにそろわない場合、二店舗の開店に必要な最低枚数は何枚でしょうか。",
+      "vi": "Nếu không thể chuẩn bị đủ 150 túi theo yêu cầu trước sáng thứ Sáu, để hai cửa hàng khai trương thì tối thiểu cần bao nhiêu túi ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～場合に最低限～でしょうか"
+    },
+    {
+      "id": "H-034-V13-017",
+      "group": "concern",
+      "role_vi": "Khách hàng khiếu nại về túi in logo",
+      "gender": "female",
+      "ja": "検品したと伺いましたが、承認見本と違う袋が届くようでは、次の納品も安心して待てません。",
+      "vi": "Tôi được báo là đã kiểm hàng, nhưng hàng đến vẫn khác mẫu đã duyệt thì tôi khó yên tâm chờ đợt giao sau.",
+      "terms": [
+        "承認見本",
+        "検品する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～では安心できない"
+    },
+    {
+      "id": "H-034-V13-018",
+      "group": "concern",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "印刷の違いが起きた工程はまだ確認中ですが、今回の対応と経過報告は私が責任を持って行います。",
+      "vi": "Chúng tôi vẫn đang xác minh sai khác xảy ra ở công đoạn nào, còn việc xử lý lần này và cập nhật tiến độ thì tôi sẽ trực tiếp chịu trách nhiệm ạ.",
+      "terms": [
+        "経過報告"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～について責任を持つ"
+    },
+    {
+      "id": "H-034-V13-019",
+      "group": "concern",
+      "role_vi": "Đại diện nhà cung cấp trao đổi chính thức với khách",
+      "gender": "male",
+      "ja": "店舗の方に説明できるよう、次のご連絡ではどの点をご報告すればよろしいでしょうか。",
+      "vi": "Lần tới liên hệ, tôi cần báo những gì để chị có thể giải thích lại cho bên cửa hàng ạ?",
+      "terms": [],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "どの点をご報告すれば～"
+    },
+    {
+      "id": "H-034-V13-020",
+      "group": "follow",
+      "role_vi": "Nhân viên theo dõi khiếu nại với khách",
+      "gender": "male",
+      "ja": "夕方六時には、百二十枚を金曜朝にお届けできるか、確認が続いていればその状況をお伝えします。",
+      "vi": "Lúc sáu giờ chiều, tôi sẽ báo xem có thể giao 120 túi vào sáng thứ Sáu hay không, hoặc báo tình hình nếu vẫn đang kiểm tra ạ.",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～までに可否か確認状況を伝える"
+    },
+    {
+      "id": "H-034-V13-021",
+      "group": "follow",
+      "role_vi": "Nhân viên theo dõi khiếu nại với khách",
+      "gender": "male",
+      "ja": "新しいロゴの百二十枚は製作可能ですが、配送便は仮予約のため、金曜の到着はまだ確定しておりません。",
+      "vi": "Có thể sản xuất 120 túi logo mới, nhưng chuyến giao mới được giữ chỗ tạm nên vẫn chưa chốt được là hàng sẽ đến vào thứ Sáu ạ.",
+      "terms": [
+        "仮予約"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～は仮予約で～は未確定"
+    },
+    {
+      "id": "H-034-V13-022",
+      "group": "follow",
+      "role_vi": "Nhân viên theo dõi khiếu nại với khách",
+      "gender": "male",
+      "ja": "作り直した袋にも違いがあるとのことですので、追加の出荷はいったん止め、違いが確認された箱から調べます。",
+      "vi": "Chị báo là túi làm lại cũng có sai khác, chúng tôi sẽ tạm dừng giao thêm và kiểm những thùng đã phát hiện sai khác trước ạ.",
+      "terms": [],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～とのことなので～を止める"
+    },
+    {
+      "id": "H-034-V13-023",
+      "group": "follow",
+      "role_vi": "Nhân viên theo dõi khiếu nại với khách",
+      "gender": "male",
+      "ja": "品質担当と私が検品に立ち会う案ですが、工場責任者が人員を確保できるかは確認中です。",
+      "vi": "Phương án là tôi cùng người phụ trách chất lượng có mặt lúc kiểm hàng, hiện vẫn đang xác nhận quản lý nhà máy có bố trí được nhân sự hay không ạ.",
+      "terms": [
+        "立ち会う",
+        "責任者"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～が立ち会う案だが～は確認中"
+    },
+    {
+      "id": "H-034-V13-024",
+      "group": "follow",
+      "role_vi": "Nhân viên theo dõi khiếu nại với khách",
+      "gender": "male",
+      "ja": "再製作した袋は、承認見本と照合していただけましたか。",
+      "vi": "Chị đã đối chiếu số túi làm lại với mẫu đã duyệt chưa ạ?",
+      "terms": [
+        "再製作する",
+        "承認見本",
+        "照合する"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～と照合していただけましたか"
+    }
+  ]
+}

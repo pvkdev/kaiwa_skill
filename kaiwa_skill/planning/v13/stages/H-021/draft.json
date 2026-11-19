@@ -1,0 +1,357 @@
+{
+  "code": "H-021",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a5dca239ddcd5b1c1eecf03122225a8053dde4f82e315b19d7dc0eea8347c0d3",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "data": "Kiểm dữ kiện mà không quy lỗi cho người",
+    "trade": "Gọi đúng ưu tiên và tìm điểm dung hòa",
+    "repair": "Xin lượt, sửa lời và tạo khoảng nghỉ",
+    "private": "Đưa chi tiết nhạy cảm sang trao đổi riêng",
+    "resolve": "Nêu điểm còn bất đồng và chốt cách thực hiện"
+  },
+  "items": [
+    {
+      "id": "H-021-V13-001",
+      "group": "data",
+      "role_vi": "Người phụ trách nội dung mở lời kiểm số liệu",
+      "gender": "male",
+      "ja": "この表の集計期間を確認してもいいですか。",
+      "vi": "Tôi kiểm lại khoảng thời gian lấy số liệu trong bảng này được không?",
+      "terms": [
+        "集計期間"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を確認してもいいですか"
+    },
+    {
+      "id": "H-021-V13-002",
+      "group": "data",
+      "role_vi": "Người phụ trách vận hành giải thích vì sao hai bảng khác nhau",
+      "gender": "female",
+      "ja": "二つの表は締め日が違います。",
+      "vi": "Hai bảng này có ngày chốt số liệu khác nhau.",
+      "terms": [
+        "締め日"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～は～が違います"
+    },
+    {
+      "id": "H-021-V13-003",
+      "group": "data",
+      "role_vi": "Thành viên làm rõ mục đích khi đồng nghiệp thấy bị quy lỗi",
+      "gender": "male",
+      "ja": "集計を間違えたという意味ではなく、期間をそろえてから差を確かめたいんです。",
+      "vi": "Ý tôi là muốn đưa hai bảng về cùng kỳ rồi kiểm tra chênh lệch, chứ không nói chị tổng hợp sai.",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～という意味ではなく、～たいんです"
+    },
+    {
+      "id": "H-021-V13-004",
+      "group": "data",
+      "role_vi": "Thành viên giải thích điều số mới có thể thay đổi",
+      "gender": "female",
+      "ja": "回答件数が増えても評価が上がったとは言えないので、不満を示した回答の割合も確認しましょう。",
+      "vi": "Số phản hồi nhiều hơn chưa có nghĩa là đánh giá tốt hơn, nên ta kiểm cả tỷ lệ phản hồi không hài lòng nhé.",
+      "terms": [
+        "割合"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～ても～とは言えないので、～ましょう"
+    },
+    {
+      "id": "H-021-V13-005",
+      "group": "data",
+      "role_vi": "Thành viên đề nghị cùng đối chiếu dữ liệu sau họp",
+      "gender": "male",
+      "ja": "会議のあとで元データを照合し、同じ期間で再集計しませんか。",
+      "vi": "Sau cuộc họp mình đối chiếu dữ liệu gốc rồi tổng hợp lại theo cùng một khoảng thời gian nhé?",
+      "terms": [
+        "元データ",
+        "照合する",
+        "再集計する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～のあとで～し、～しませんか"
+    },
+    {
+      "id": "H-021-V13-006",
+      "group": "trade",
+      "role_vi": "Người phụ trách nội dung công nhận mốc bên kia phải giữ",
+      "gender": "male",
+      "ja": "研修日に間に合わせる必要は分かりますが、誤解を招きそうな説明は配布前に直したいです。",
+      "vi": "Tôi hiểu là phải kịp ngày đào tạo, nhưng muốn sửa những chỗ giải thích dễ gây hiểu nhầm trước khi phát tài liệu.",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～は分かりますが、～たいです"
+    },
+    {
+      "id": "H-021-V13-007",
+      "group": "trade",
+      "role_vi": "Thành viên hỏi điều có thể điều chỉnh khi hạn cố định",
+      "gender": "female",
+      "ja": "研修日が動かせないなら、初回に使う範囲を減らせる余地はありますか。",
+      "vi": "Nếu ngày đào tạo không đổi được, còn có thể thu hẹp phần dùng trong buổi đầu không?",
+      "terms": [
+        "余地"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～なら、～余地はありますか"
+    },
+    {
+      "id": "H-021-V13-008",
+      "group": "trade",
+      "role_vi": "Thành viên đưa phương án giữ hạn và giảm phần phát trước",
+      "gender": "male",
+      "ja": "研修日を守るため、確認済みの基本編を先に配り、応用編だけ翌週に回すのはいかがですか。",
+      "vi": "Để giữ ngày đào tạo, mình phát phần cơ bản đã kiểm trước và chỉ để phần nâng cao sang tuần sau, được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～を守るため、～のはいかがですか"
+    },
+    {
+      "id": "H-021-V13-009",
+      "group": "trade",
+      "role_vi": "Thành viên mời người quyết cùng xử lý ràng buộc mới",
+      "gender": "female",
+      "ja": "応用編まで案内済みでしたら、内容と日程のどちらを変えられるか、研修責任者も交えて考えませんか。",
+      "vi": "Nếu đã thông báo có cả phần nâng cao, mình mời người phụ trách đào tạo cùng bàn xem có thể đổi nội dung hay đổi lịch nhé?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～でしたら、～も交えて～ませんか"
+    },
+    {
+      "id": "H-021-V13-010",
+      "group": "repair",
+      "role_vi": "Thành viên xin hoàn tất phần trình bày đang bị ngắt",
+      "gender": "male",
+      "ja": "すみません、資料の出典についてもう一点だけ説明してもよろしいですか。",
+      "vi": "Xin phép, tôi nói nốt một điểm về nguồn của tài liệu được không ạ?",
+      "terms": [
+        "出典"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～についてもう一点だけ～してもよろしいですか"
+    },
+    {
+      "id": "H-021-V13-011",
+      "group": "repair",
+      "role_vi": "Thành viên làm rõ số nào còn có thể thay đổi",
+      "gender": "female",
+      "ja": "昨日の数字は速報ですので、確定値が出てから判断してもよろしいですか。",
+      "vi": "Số hôm qua là số liệu công bố nhanh, mình đợi số chính thức rồi quyết được không ạ?",
+      "terms": [
+        "速報",
+        "確定値"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～てから判断してもよろしいですか"
+    },
+    {
+      "id": "H-021-V13-012",
+      "group": "repair",
+      "role_vi": "Thành viên xin lỗi và nói lại điều mình thực sự lo",
+      "gender": "male",
+      "ja": "速報と確定値を混ぜると判断を誤るという懸念を伝えるつもりでしたが、きつい言い方になってしまい、すみません。",
+      "vi": "Tôi muốn nói rằng trộn số liệu công bố nhanh với số đã chốt có thể dẫn đến quyết định sai, xin lỗi vì vừa rồi tôi nói nặng lời.",
+      "terms": [
+        "言い方",
+        "懸念",
+        "速報",
+        "確定値"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～を伝えるつもりでしたが、～になってしまい、すみません。"
+    },
+    {
+      "id": "H-021-V13-013",
+      "group": "repair",
+      "role_vi": "Thành viên hỏi điều đối phương cần trước khi bàn tiếp",
+      "gender": "female",
+      "ja": "研修資料の件をこのまま進めるために、先に確認しておきたい点はありますか。",
+      "vi": "Để bàn tiếp về tài liệu đào tạo, có điểm nào anh muốn xác nhận trước không?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ために、先に確認しておきたい点はありますか"
+    },
+    {
+      "id": "H-021-V13-014",
+      "group": "repair",
+      "role_vi": "Thành viên đề nghị tạm nghỉ để sau đó tập trung lại",
+      "gender": "male",
+      "ja": "一旦十分ほど休んで、再開したら初回の研修に必要な範囲から話しませんか。",
+      "vi": "Mình nghỉ khoảng mười phút, khi quay lại thì bàn trước phần cần cho buổi đào tạo đầu tiên nhé?",
+      "terms": [
+        "一旦",
+        "再開する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "一旦～て、再開したら～ませんか"
+    },
+    {
+      "id": "H-021-V13-015",
+      "group": "private",
+      "role_vi": "Thành viên nêu rủi ro cụ thể trước khi phát tài liệu",
+      "gender": "male",
+      "ja": "応用編は利用者の確認が終わっていないので、今配ると説明が誤って伝わるおそれがあります。",
+      "vi": "Phần nâng cao vẫn chưa được người dùng kiểm xong, nếu phát ngay có thể khiến họ hiểu sai lời giải thích.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ので、～と～おそれがあります"
+    },
+    {
+      "id": "H-021-V13-016",
+      "group": "private",
+      "role_vi": "Chủ trì giữ cuộc họp ở việc cần quyết chung",
+      "gender": "female",
+      "ja": "個別の進め方は会議後に確認して、ここでは研修資料の配布範囲を決めませんか。",
+      "vi": "Cách xử lý cụ thể mình trao đổi riêng sau cuộc họp, còn ở đây mình quyết phạm vi phát tài liệu đào tạo nhé?",
+      "terms": [
+        "個別"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～は会議後に確認して、ここでは～ませんか"
+    },
+    {
+      "id": "H-021-V13-017",
+      "group": "private",
+      "role_vi": "Thành viên đưa bằng chứng và mời bên kia nói về chuẩn bị",
+      "gender": "male",
+      "ja": "読み違いがあった二つの例をお見せしますので、店頭の準備がどこまで進んだかも教えていただけますか。",
+      "vi": "Tôi cho chị xem hai ví dụ từng bị hiểu sai, chị cũng cho tôi biết phía cửa hàng đã chuẩn bị đến đâu được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～をお見せしますので、～も教えていただけますか"
+    },
+    {
+      "id": "H-021-V13-018",
+      "group": "private",
+      "role_vi": "Thành viên đề nghị xử lý riêng bản gửi và bản in",
+      "gender": "female",
+      "ja": "今日の配信版には注記を入れて、印刷版には修正を反映できるか確認してもいいですか。",
+      "vi": "Mình thêm lưu ý vào bản gửi hôm nay rồi xem có đưa được phần đã sửa vào bản in không nhé?",
+      "terms": [
+        "注記",
+        "反映する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～を確認してもいいですか"
+    },
+    {
+      "id": "H-021-V13-019",
+      "group": "private",
+      "role_vi": "Thành viên hỏi cách báo thực tế với cả nhóm",
+      "gender": "male",
+      "ja": "個別に確認したことは、配布資料の変更点と次の作業に絞って全体に伝えればよいでしょうか。",
+      "vi": "Về những việc đã trao đổi riêng, khi báo lại cả nhóm tôi chỉ nêu điểm thay đổi trong tài liệu phát và việc cần làm tiếp, như vậy được không ạ?",
+      "terms": [
+        "個別"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～に絞って～すればよいでしょうか"
+    },
+    {
+      "id": "H-021-V13-020",
+      "group": "resolve",
+      "role_vi": "Thành viên nhắc điều thống nhất và điểm còn ý kiến khác nhau",
+      "gender": "female",
+      "ja": "基本編を予定どおり配る点は一致していますが、応用編も同時に出すかはまだ意見が分かれています。",
+      "vi": "Ta đã thống nhất phát phần cơ bản theo lịch, còn việc có phát cùng phần nâng cao hay không thì vẫn chưa thống nhất.",
+      "terms": [
+        "一致する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～は一致していますが、～はまだ～"
+    },
+    {
+      "id": "H-021-V13-021",
+      "group": "resolve",
+      "role_vi": "Thành viên đề nghị so theo chất lượng và thời hạn trước khi trình",
+      "gender": "male",
+      "ja": "説明の分かりやすさと研修に間に合うかどうかを判断基準にして、二案を決裁者に出しましょう。",
+      "vi": "Mình so hai phương án theo độ dễ hiểu của phần giải thích và khả năng kịp buổi đào tạo rồi trình người có quyền duyệt nhé.",
+      "terms": [
+        "判断基準",
+        "決裁者"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～を判断基準にして、～ましょう"
+    },
+    {
+      "id": "H-021-V13-022",
+      "group": "resolve",
+      "role_vi": "Người phụ trách nội dung xin bên vận hành nhận việc sau quyết định",
+      "gender": "male",
+      "ja": "研修案内の文面は私が修正しますので、舞さんから各店舗に変更後の配布予定を伝えていただけますか。",
+      "vi": "Tôi sẽ sửa nội dung thông báo đào tạo, chị Mai báo cho các cửa hàng lịch phát tài liệu đã điều chỉnh giúp tôi được không?",
+      "terms": [],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～は私が～しますので、～ていただけますか"
+    },
+    {
+      "id": "H-021-V13-023",
+      "group": "resolve",
+      "role_vi": "Thành viên báo thay đổi cho người trực tiếp dùng tài liệu",
+      "gender": "female",
+      "ja": "応用編は説明の確認が済み次第別途お送りしますので、初回研修は基本編だけお使いください。",
+      "vi": "Tôi sẽ gửi riêng phần nâng cao ngay khi kiểm xong phần giải thích, buổi đào tạo đầu anh cứ dùng phần cơ bản thôi ạ.",
+      "terms": [
+        "別途"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～次第～しますので、～だけお使いください"
+    }
+  ]
+}

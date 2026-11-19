@@ -1,0 +1,406 @@
+{
+  "code": "H-042",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "13fea8f61a6de15537f4e42ccf26b89bf808c9004b49b558ba3a08da437c514b",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "renew": "Đối chiếu đề nghị gia hạn và thương lượng phí",
+    "repair": "Báo thiết bị trục trặc và hỏi cơ sở chia phí",
+    "occupancy": "Hỏi điều kiện thêm người ở hoặc nuôi thú",
+    "inspect": "Đối chiếu hiện trạng khi trả nhà",
+    "deposit": "Hỏi căn cứ từng khoản trừ cọc",
+    "resolve": "Giữ đầu mối và chốt phần còn bất đồng"
+  },
+  "items": [
+    {
+      "id": "H-042-V13-001",
+      "group": "renew",
+      "role_vi": "Người thuê trao đổi gia hạn với quản lý hợp đồng",
+      "gender": "male",
+      "ja": "前回伺った更新料と、今回の書面にある金額が違います。",
+      "vi": "Phí gia hạn tôi được báo lần trước khác với số tiền trong văn bản lần này.",
+      "terms": [
+        "更新料"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～と～が違う"
+    },
+    {
+      "id": "H-042-V13-002",
+      "group": "renew",
+      "role_vi": "Người thuê trao đổi gia hạn với quản lý hợp đồng",
+      "gender": "male",
+      "ja": "今の契約で更新の条件を定めている条項を示していただけますか。",
+      "vi": "Chị có thể chỉ giúp tôi điều khoản quy định điều kiện gia hạn trong hợp đồng hiện tại không ạ?",
+      "terms": [
+        "条項"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～を示していただけますか"
+    },
+    {
+      "id": "H-042-V13-003",
+      "group": "renew",
+      "role_vi": "Người thuê trao đổi gia hạn với quản lý hợp đồng",
+      "gender": "male",
+      "ja": "賃料を据え置いたまま更新料を四万五千円に調整していただけるなら、二年の更新も検討します。",
+      "vi": "Nếu vẫn giữ nguyên tiền thuê và có thể điều chỉnh phí gia hạn xuống 45.000 yên, tôi sẽ cân nhắc gia hạn hai năm.",
+      "terms": [
+        "賃料",
+        "据え置く",
+        "更新料"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～なら～を検討する"
+    },
+    {
+      "id": "H-042-V13-004",
+      "group": "renew",
+      "role_vi": "Người thuê trao đổi gia hạn với quản lý hợp đồng",
+      "gender": "male",
+      "ja": "更新料を六万円にする案では、契約期間以外に今の契約から変わる条件はありますか。",
+      "vi": "Với phương án phí gia hạn 60.000 yên, ngoài thời hạn thuê còn điều kiện nào khác so với hợp đồng hiện tại không ạ?",
+      "terms": [
+        "更新料"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～以外にも変わる条件はあるか"
+    },
+    {
+      "id": "H-042-V13-005",
+      "group": "renew",
+      "role_vi": "Người thuê trao đổi gia hạn với quản lý hợp đồng",
+      "gender": "male",
+      "ja": "賃料を据え置く点では一致していますが、二年契約と更新料六万円の案はまだ承諾していません。",
+      "vi": "Hai bên đã thống nhất giữ nguyên tiền thuê, còn phương án thuê hai năm với phí gia hạn 60.000 yên thì tôi chưa chấp thuận.",
+      "terms": [
+        "賃料",
+        "更新料"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～についてはまだ承諾していない"
+    },
+    {
+      "id": "H-042-V13-006",
+      "group": "repair",
+      "role_vi": "Người thuê báo hỏng thiết bị với bên quản lý",
+      "gender": "male",
+      "ja": "給湯器は先日応急処置をしてもらいましたが、またお湯が急に冷たくなる不具合が出ています。",
+      "vi": "Hôm trước bình nước nóng đã được xử lý tạm, nhưng tình trạng nước đang nóng đột ngột chuyển lạnh lại xảy ra.",
+      "terms": [
+        "給湯器",
+        "応急処置",
+        "不具合"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～してもらったが～が再び"
+    },
+    {
+      "id": "H-042-V13-007",
+      "group": "repair",
+      "role_vi": "Người thuê báo hỏng thiết bị với bên quản lý",
+      "gender": "male",
+      "ja": "同じ設定で使っていますので、誤操作が原因と判断する根拠があれば教えていただけますか。",
+      "vi": "Tôi vẫn dùng cùng một cài đặt, nếu cho rằng thao tác sai là nguyên nhân, chị cho tôi biết dựa trên căn cứ nào được không ạ?",
+      "terms": [
+        "誤操作",
+        "根拠"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～と判断する根拠を教えてほしい"
+    },
+    {
+      "id": "H-042-V13-008",
+      "group": "repair",
+      "role_vi": "Người thuê báo hỏng thiết bị với bên quản lý",
+      "gender": "male",
+      "ja": "修理費の半分を私が負担するというのは、原因が分かるまでの仮の案でしょうか。",
+      "vi": "Việc tôi chịu một nửa phí sửa chỉ là đề xuất tạm trong lúc chờ xác định nguyên nhân, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "～は仮の案ですか"
+    },
+    {
+      "id": "H-042-V13-009",
+      "group": "repair",
+      "role_vi": "Người thuê báo hỏng thiết bị với bên quản lý",
+      "gender": "male",
+      "ja": "技術者の所見を確認するまでは、修理費の負担割合が決まったものとして扱わないでいただけますか。",
+      "vi": "Khi chưa xem nhận định của kỹ thuật viên, nhờ chị đừng coi tỷ lệ chia chi phí sửa là đã chốt ạ.",
+      "terms": [
+        "所見",
+        "負担割合"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を確認するまでは～しないで"
+    },
+    {
+      "id": "H-042-V13-010",
+      "group": "repair",
+      "role_vi": "Người thuê báo hỏng thiết bị với bên quản lý",
+      "gender": "male",
+      "ja": "接続部の摩耗が見つかったと伺いましたので、修繕する日と費用を誰が負担するかは別々にお知らせください。",
+      "vi": "Tôi được báo đã phát hiện đầu nối bị mòn, xin chị báo riêng ngày sửa và bên nào sẽ chịu chi phí ạ.",
+      "terms": [
+        "摩耗",
+        "修繕する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～と～は別にご連絡ください"
+    },
+    {
+      "id": "H-042-V13-011",
+      "group": "occupancy",
+      "role_vi": "Người thuê hỏi về thay đổi người ở và vật nuôi",
+      "gender": "male",
+      "ja": "同居人の追加と猫の飼育について、今の契約ではそれぞれどの条項を確認すればよいでしょうか。",
+      "vi": "Theo hợp đồng hiện tại, nếu thêm người ở cùng hoặc nuôi mèo, mỗi việc tôi cần xem điều khoản nào ạ?",
+      "terms": [
+        "同居人",
+        "飼育",
+        "条項"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～についてはどの条項か"
+    },
+    {
+      "id": "H-042-V13-012",
+      "group": "occupancy",
+      "role_vi": "Người thuê hỏi về thay đổi người ở và vật nuôi",
+      "gender": "male",
+      "ja": "同居は氏名と入居予定日を登録し、書面による承諾を受けてから始めるという理解でよろしいですか。",
+      "vi": "Tôi hiểu là cần đăng ký họ tên và ngày dự kiến chuyển vào, rồi đợi được chấp thuận bằng văn bản mới bắt đầu ở cùng, đúng không ạ?",
+      "terms": [
+        "書面による承諾"
+      ],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "～を受けてから～でよいか"
+    },
+    {
+      "id": "H-042-V13-013",
+      "group": "occupancy",
+      "role_vi": "Người thuê hỏi về thay đổi người ở và vật nuôi",
+      "gender": "male",
+      "ja": "猫の飼育が認められなかった場合でも、同居人を増やす申請は別に進められますか。",
+      "vi": "Dù không được chấp thuận nuôi mèo, tôi vẫn có thể làm riêng hồ sơ thêm người ở cùng được không ạ?",
+      "terms": [
+        "同居人",
+        "飼育"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～は別に進められますか"
+    },
+    {
+      "id": "H-042-V13-014",
+      "group": "inspect",
+      "role_vi": "Người thuê trao đổi khi cùng kiểm phòng",
+      "gender": "male",
+      "ja": "退去時の確認には私も立ち会いますが、日時と家主側から来られる方を教えていただけますか。",
+      "vi": "Tôi cũng sẽ có mặt lúc kiểm phòng khi trả nhà, chị cho biết ngày giờ và phía chủ nhà sẽ cử ai tới được không ạ?",
+      "terms": [
+        "立ち会う",
+        "家主"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～はいつで、どなたが来るか"
+    },
+    {
+      "id": "H-042-V13-015",
+      "group": "inspect",
+      "role_vi": "Người thuê trao đổi khi cùng kiểm phòng",
+      "gender": "male",
+      "ja": "このドアの下の傷は入居時の写真にも写っているので、同じ位置か照合していただけますか。",
+      "vi": "Vết xước dưới cánh cửa này cũng có trong ảnh lúc tôi nhận nhà, chị đối chiếu giúp xem có cùng vị trí không ạ?",
+      "terms": [
+        "照合する"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～の資料と照合してほしい"
+    },
+    {
+      "id": "H-042-V13-016",
+      "group": "inspect",
+      "role_vi": "Người thuê trao đổi khi cùng kiểm phòng",
+      "gender": "male",
+      "ja": "ドアの傷はまだ確認中ですので、新しい傷と決めず、私の異議と入居時の点検表の番号を追記していただけますか。",
+      "vi": "Vết xước ở cửa vẫn đang được kiểm tra, nhờ chị đừng coi đó là vết mới và ghi thêm ý kiến phản đối của tôi cùng số phiếu kiểm tra lúc nhận nhà ạ.",
+      "terms": [
+        "異議",
+        "追記する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～が済むまでは～扱いにしないで"
+    },
+    {
+      "id": "H-042-V13-017",
+      "group": "inspect",
+      "role_vi": "Người thuê trao đổi khi cùng kiểm phòng",
+      "gender": "male",
+      "ja": "棚を出した後に壁の状態を確認してから、退去時の記録に署名したいです。",
+      "vi": "Tôi muốn kiểm tra tình trạng tường sau khi chuyển kệ ra rồi mới ký biên bản lúc trả nhà.",
+      "terms": [],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～を確認してから～する"
+    },
+    {
+      "id": "H-042-V13-018",
+      "group": "deposit",
+      "role_vi": "Người thuê trao đổi về quyết toán tiền cọc",
+      "gender": "male",
+      "ja": "敷金から控除する清掃費と補修費について、金額の内訳と作業範囲を示していただけますか。",
+      "vi": "Về tiền vệ sinh và sửa chữa định trừ vào cọc, chị cho tôi xem từng khoản và phạm vi công việc được không ạ?",
+      "terms": [
+        "敷金",
+        "控除",
+        "内訳"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "～の内訳と根拠を示してほしい"
+    },
+    {
+      "id": "H-042-V13-019",
+      "group": "deposit",
+      "role_vi": "Người thuê trao đổi về quyết toán tiền cọc",
+      "gender": "male",
+      "ja": "清掃費を請求する根拠となる契約の条項を示していただけますか。",
+      "vi": "Chị có thể chỉ giúp tôi điều khoản trong hợp đồng làm căn cứ thu phí vệ sinh được không ạ?",
+      "terms": [
+        "条項",
+        "根拠"
+      ],
+      "scenes": [
+        "S022",
+        "S029"
+      ],
+      "pattern": "～を示していただけますか"
+    },
+    {
+      "id": "H-042-V13-020",
+      "group": "deposit",
+      "role_vi": "Người thuê trao đổi về quyết toán tiền cọc",
+      "gender": "male",
+      "ja": "写真をお送りしますので、受け取ったらご連絡いただき、各項目の回答期限も別に教えていただけますか。",
+      "vi": "Tôi sẽ gửi ảnh, nhờ chị xác nhận khi nhận được và cho biết riêng hạn trả lời của từng khoản ạ.",
+      "terms": [
+        "回答期限"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～たら連絡し～は別に教える"
+    },
+    {
+      "id": "H-042-V13-021",
+      "group": "deposit",
+      "role_vi": "Người thuê trao đổi về quyết toán tiền cọc",
+      "gender": "male",
+      "ja": "入居時の写真と照合できるので、まずドアの傷を理由とした控除から見直していただけませんか。",
+      "vi": "Chị có thể xem lại khoản trừ cọc cho vết xước cửa trước được không, vì vết này có thể đối chiếu với ảnh lúc nhận nhà ạ?",
+      "terms": [
+        "照合する",
+        "控除"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～から先に見直してほしい"
+    },
+    {
+      "id": "H-042-V13-022",
+      "group": "resolve",
+      "role_vi": "Người thuê trao đổi về quyết toán tiền cọc",
+      "gender": "male",
+      "ja": "ドアの傷の照合結果が確認できるまでは、敷金の返還額を三万六千円とする精算書には同意できません。",
+      "vi": "Trước khi xem kết quả đối chiếu vết xước ở cửa, tôi chưa thể đồng ý với bảng quyết toán ghi sẽ hoàn 36.000 yên tiền cọc.",
+      "terms": [
+        "精算書",
+        "敷金"
+      ],
+      "scenes": [
+        "S025",
+        "S030"
+      ],
+      "pattern": "～が確認できるまでは同意できない"
+    },
+    {
+      "id": "H-042-V13-023",
+      "group": "resolve",
+      "role_vi": "Người thuê trao đổi về quyết toán tiền cọc",
+      "gender": "male",
+      "ja": "敷金の控除額は家主が最終判断し、判断の根拠は管理会社から知らせていただけるのでしょうか。",
+      "vi": "Tôi hiểu là chủ nhà quyết số tiền trừ vào cọc, còn bên công ty quản lý sẽ báo cho tôi biết căn cứ quyết định, đúng không ạ?",
+      "terms": [
+        "家主",
+        "敷金",
+        "控除"
+      ],
+      "scenes": [
+        "S026",
+        "S027"
+      ],
+      "pattern": "～の判断はどなたがするか"
+    },
+    {
+      "id": "H-042-V13-024",
+      "group": "resolve",
+      "role_vi": "Người thuê hỏi tại đầu mối tư vấn",
+      "gender": "male",
+      "ja": "敷金の控除について相談したいのですが、契約書と写真と見積書のほかに、用意したほうがよい資料はありますか。",
+      "vi": "Tôi muốn xin tư vấn về các khoản trừ cọc, ngoài hợp đồng, ảnh và báo giá thì tôi nên chuẩn bị thêm giấy tờ gì ạ?",
+      "terms": [
+        "敷金",
+        "控除",
+        "見積書"
+      ],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "～以外にどんな資料が必要か"
+    }
+  ]
+}

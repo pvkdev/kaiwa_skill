@@ -1,0 +1,365 @@
+{
+  "code": "S-061",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "e8cf7788a4dfe7fa40801b1015e546b5a75402bea7522bdf53e618a4a0c110dc",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "order": "Chào khách và xác nhận đơn",
+    "option": "Đổi cỡ và chỉ quầy nhận",
+    "pay": "Thanh toán và đưa món",
+    "support": "Xin khách chờ và báo kết quả"
+  },
+  "items": [
+    {
+      "id": "S-061-V13-001",
+      "group": "order",
+      "role_vi": "Nhân viên đón khách tại quầy",
+      "gender": "female",
+      "ja": "いらっしゃいませ、ご注文をどうぞ。",
+      "vi": "Chào anh, mời anh gọi món ạ.",
+      "terms": [
+        "いらっしゃいませ",
+        "ご注文"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "chào_và_nhận_đơn"
+    },
+    {
+      "id": "S-061-V13-002",
+      "group": "order",
+      "role_vi": "Nhân viên hỏi cỡ đồ uống",
+      "gender": "female",
+      "ja": "アイスコーヒーはどのサイズになさいますか。",
+      "vi": "Anh muốn cà phê đá cỡ nào ạ?",
+      "terms": [
+        "アイスコーヒー",
+        "サイズ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_khách_chọn"
+    },
+    {
+      "id": "S-061-V13-003",
+      "group": "order",
+      "role_vi": "Nhân viên hỏi số lượng",
+      "gender": "male",
+      "ja": "アイスコーヒーはおいくつですか。",
+      "vi": "Anh lấy mấy ly cà phê đá ạ?",
+      "terms": [
+        "アイスコーヒー",
+        "おいくつ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_khách_chọn"
+    },
+    {
+      "id": "S-061-V13-004",
+      "group": "order",
+      "role_vi": "Nhân viên xác nhận món và số lượng",
+      "gender": "female",
+      "ja": "アイスコーヒーを二杯ですね。",
+      "vi": "Hai ly cà phê đá, đúng không ạ?",
+      "terms": [
+        "アイスコーヒー",
+        "～杯"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "xác_nhận_đơn"
+    },
+    {
+      "id": "S-061-V13-005",
+      "group": "order",
+      "role_vi": "Nhân viên sửa cỡ vừa nghe nhầm",
+      "gender": "female",
+      "ja": "失礼しました、コーヒーはエルサイズでお二つですね。",
+      "vi": "Xin lỗi anh, cà phê là hai ly cỡ L, đúng không ạ?",
+      "terms": [
+        "失礼しました",
+        "サイズ",
+        "～つ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "sửa_đơn_nghe_nhầm"
+    },
+    {
+      "id": "S-061-V13-006",
+      "group": "option",
+      "role_vi": "Nhân viên báo hết cốc cỡ lớn",
+      "gender": "female",
+      "ja": "エルサイズのカップを今切らしています。",
+      "vi": "Hiện bên em hết cốc cỡ L rồi ạ.",
+      "terms": [
+        "サイズ",
+        "切らす"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "báo_hết"
+    },
+    {
+      "id": "S-061-V13-007",
+      "group": "option",
+      "role_vi": "Nhân viên đề xuất cỡ còn hàng",
+      "gender": "male",
+      "ja": "エムサイズでしたらご用意できますが、よろしいですか。",
+      "vi": "Bên em có thể làm cỡ M, anh thấy được không ạ?",
+      "terms": [
+        "サイズ",
+        "用意する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "đề_xuất_món_thay"
+    },
+    {
+      "id": "S-061-V13-008",
+      "group": "option",
+      "role_vi": "Nhân viên chỉ nơi lấy cà phê",
+      "gender": "female",
+      "ja": "お会計が終わったら、右の受け取り口へどうぞ。",
+      "vi": "Thanh toán xong, mời anh qua quầy nhận đồ bên phải ạ.",
+      "terms": [
+        "お会計",
+        "受け取り口"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "chỉ_bước_tiếp"
+    },
+    {
+      "id": "S-061-V13-009",
+      "group": "pay",
+      "role_vi": "Nhân viên báo số tiền phải trả",
+      "gender": "male",
+      "ja": "お会計は、合計で五百円です。",
+      "vi": "Tổng tiền của anh là năm trăm yên ạ.",
+      "terms": [
+        "お会計",
+        "合計",
+        "～円"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "báo_tiền"
+    },
+    {
+      "id": "S-061-V13-010",
+      "group": "pay",
+      "role_vi": "Nhân viên nói phương thức thanh toán",
+      "gender": "female",
+      "ja": "お支払いは現金でもカードでも大丈夫です。",
+      "vi": "Anh có thể trả bằng tiền mặt hoặc thẻ ạ.",
+      "terms": [
+        "支払う",
+        "現金",
+        "カード"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "đưa_lựa_chọn_thanh_toán"
+    },
+    {
+      "id": "S-061-V13-011",
+      "group": "pay",
+      "role_vi": "Nhân viên hỏi khách có lấy túi",
+      "gender": "female",
+      "ja": "商品を入れる袋はお付けしますか。",
+      "vi": "Anh có cần túi đựng đồ không ạ?",
+      "terms": [
+        "商品",
+        "袋"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_khách_chọn"
+    },
+    {
+      "id": "S-061-V13-012",
+      "group": "pay",
+      "role_vi": "Nhân viên đưa hàng không kèm túi",
+      "gender": "male",
+      "ja": "袋には入れず、このままお渡しします。",
+      "vi": "Em gửi anh đồ để nguyên thế này, không cho vào túi ạ.",
+      "terms": [
+        "袋",
+        "このまま",
+        "渡す"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "báo_cách_giao_hàng"
+    },
+    {
+      "id": "S-061-V13-013",
+      "group": "pay",
+      "role_vi": "Nhân viên trả tiền thừa",
+      "gender": "female",
+      "ja": "二百円のおつりとレシートです。",
+      "vi": "Em gửi anh hai trăm yên tiền thừa và biên lai ạ.",
+      "terms": [
+        "～円",
+        "おつり",
+        "レシート"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "trả_tiền_thừa_và_biên_lai"
+    },
+    {
+      "id": "S-061-V13-014",
+      "group": "support",
+      "role_vi": "Nhân viên báo máy thanh toán bị lỗi",
+      "gender": "female",
+      "ja": "カードの機械にエラーが出て、お支払いはまだ終わっていません。",
+      "vi": "Máy đọc thẻ báo lỗi nên thanh toán vẫn chưa xong ạ.",
+      "terms": [
+        "カード",
+        "エラー",
+        "支払う"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "báo_thanh_toán_chưa_xong"
+    },
+    {
+      "id": "S-061-V13-015",
+      "group": "support",
+      "role_vi": "Nhân viên gọi người phụ trách",
+      "gender": "male",
+      "ja": "少々お待ちください、すぐに担当者を呼んでまいります。",
+      "vi": "Anh chờ một lát, em đi gọi người phụ trách ngay ạ.",
+      "terms": [
+        "担当者",
+        "呼ぶ",
+        "少々お待ちください"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "xin_chờ_xử_lý"
+    },
+    {
+      "id": "S-061-V13-016",
+      "group": "support",
+      "role_vi": "Nhân viên đã xác nhận thanh toán",
+      "gender": "female",
+      "ja": "お待たせしました、カードのお支払いが確認できました。",
+      "vi": "Xin lỗi để anh chờ, chúng tôi đã xác nhận khoản thanh toán bằng thẻ rồi ạ.",
+      "terms": [
+        "お待たせしました",
+        "カード",
+        "支払う",
+        "確認する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "báo_xử_lý_xong"
+    },
+    {
+      "id": "S-061-V13-017",
+      "group": "support",
+      "role_vi": "Nhân viên được hỏi lúc nhận hàng đã đặt",
+      "gender": "female",
+      "ja": "ご予約の商品を何時にお渡しできるか、担当者に確認します。",
+      "vi": "Em hỏi người phụ trách xem mấy giờ anh có thể đến nhận món đã đặt ạ.",
+      "terms": [
+        "予約する",
+        "商品",
+        "何時",
+        "渡す",
+        "担当者",
+        "確認する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "hỏi_người_phụ_trách"
+    },
+    {
+      "id": "S-061-V13-018",
+      "group": "support",
+      "role_vi": "Nhân viên mời khách ngồi đợi",
+      "gender": "female",
+      "ja": "担当者が戻るまで、こちらの椅子でお待ちいただけますか。",
+      "vi": "Anh có thể ngồi chờ ở ghế này đến khi người phụ trách quay lại được không ạ?",
+      "terms": [
+        "担当者"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "xin_chờ_xử_lý"
+    },
+    {
+      "id": "S-061-V13-019",
+      "group": "support",
+      "role_vi": "Nhân viên báo giờ nhận đồ",
+      "gender": "male",
+      "ja": "ご予約の商品は今日の午後三時からお受け取りいただけます。",
+      "vi": "Anh có thể nhận hàng đã đặt từ ba giờ chiều nay ạ.",
+      "terms": [
+        "予約する",
+        "商品",
+        "受け取る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "báo_giờ_nhận_đồ"
+    },
+    {
+      "id": "S-061-V13-020",
+      "group": "support",
+      "role_vi": "Nhân viên báo sắp đóng quầy",
+      "gender": "female",
+      "ja": "こちらのレジは夜八時に閉まります。",
+      "vi": "Quầy tính tiền này đóng lúc tám giờ tối ạ.",
+      "terms": [
+        "閉まる"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "báo_giờ_đóng"
+    },
+    {
+      "id": "S-061-V13-021",
+      "group": "support",
+      "role_vi": "Nhân viên chỉ nơi hỏi tiếp",
+      "gender": "female",
+      "ja": "ご予約については、入口のサービスカウンターでお尋ねください。",
+      "vi": "Để hỏi thêm về đơn đặt trước, mời anh qua quầy hỗ trợ gần lối vào ạ.",
+      "terms": [
+        "予約する",
+        "サービスカウンター"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "chỉ_đầu_mối"
+    }
+  ]
+}

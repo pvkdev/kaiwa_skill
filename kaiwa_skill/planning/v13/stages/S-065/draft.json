@@ -1,0 +1,357 @@
+{
+  "code": "S-065",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b4b63fee7daf861e416af27ab41235618a31b150510b00d06a7b24deb43ba34a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "attend": "Hỏi buổi gặp và báo mình có đến được",
+    "greet": "Chào người mới và trò chuyện",
+    "wish": "Chúc mừng và cảm ơn đúng dịp",
+    "follow": "Ra về và tiếp nối câu chuyện"
+  },
+  "items": [
+    {
+      "id": "S-065-V13-001",
+      "group": "attend",
+      "role_vi": "Nhân viên hỏi về buổi chào mừng",
+      "gender": "female",
+      "ja": "歓迎会の会場はどこですか。",
+      "vi": "Buổi chào mừng tổ chức ở đâu ạ?",
+      "terms": [
+        "歓迎会",
+        "会場"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_địa_điểm"
+    },
+    {
+      "id": "S-065-V13-002",
+      "group": "attend",
+      "role_vi": "Nhân viên xác nhận giờ dự",
+      "gender": "female",
+      "ja": "金曜日の歓迎会は何時に始まりますか。",
+      "vi": "Buổi chào mừng thứ Sáu bắt đầu lúc mấy giờ ạ?",
+      "terms": [
+        "歓迎会",
+        "何時"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_giờ"
+    },
+    {
+      "id": "S-065-V13-003",
+      "group": "attend",
+      "role_vi": "Nhân viên nhận lời mời",
+      "gender": "male",
+      "ja": "金曜日の歓迎会に私も参加します。",
+      "vi": "Tôi cũng sẽ dự buổi chào mừng thứ Sáu ạ.",
+      "terms": [
+        "歓迎会",
+        "参加する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "nhận_lời_tham_dự"
+    },
+    {
+      "id": "S-065-V13-004",
+      "group": "attend",
+      "role_vi": "Nhân viên báo vắng",
+      "gender": "female",
+      "ja": "金曜日は家の用事があって、歓迎会には参加できません。",
+      "vi": "Thứ Sáu tôi có việc gia đình nên không dự buổi chào mừng được ạ.",
+      "terms": [
+        "用事",
+        "歓迎会",
+        "参加する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "nêu_lý_do_vắng"
+    },
+    {
+      "id": "S-065-V13-005",
+      "group": "attend",
+      "role_vi": "Nhân viên nhờ chuyển lời khi vắng",
+      "gender": "female",
+      "ja": "佐藤さんに入社のお祝いを伝えてもらえますか。",
+      "vi": "Anh nhắn giúp tôi là tôi chúc mừng anh Sato gia nhập công ty được không ạ?",
+      "terms": [
+        "入社する",
+        "伝える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "nhờ_chuyển_lời"
+    },
+    {
+      "id": "S-065-V13-006",
+      "group": "attend",
+      "role_vi": "Nhân viên hỏi trước vì cần về sớm",
+      "gender": "female",
+      "ja": "歓迎会には最初の一時間だけ参加してもいいですか。",
+      "vi": "Tôi chỉ dự một tiếng đầu buổi chào mừng được không ạ?",
+      "terms": [
+        "歓迎会",
+        "最初",
+        "参加する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "xin_dự_một_phần"
+    },
+    {
+      "id": "S-065-V13-007",
+      "group": "greet",
+      "role_vi": "Nhân viên làm quen với đồng nghiệp mới",
+      "gender": "female",
+      "ja": "はじめまして、総務で働いているランです。",
+      "vi": "Rất vui được gặp anh, tôi là Lan bên hành chính ạ.",
+      "terms": [
+        "はじめまして",
+        "総務"
+      ],
+      "scenes": [
+        "S005",
+        "S010"
+      ],
+      "pattern": "giới_thiệu_bộ_phận"
+    },
+    {
+      "id": "S-065-V13-008",
+      "group": "greet",
+      "role_vi": "Nhân viên hỏi người mới",
+      "gender": "female",
+      "ja": "佐藤さんはどのチームに入りますか。",
+      "vi": "Anh Sato sẽ vào nhóm nào ạ?",
+      "terms": [
+        "チーム"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "hỏi_nhóm"
+    },
+    {
+      "id": "S-065-V13-009",
+      "group": "greet",
+      "role_vi": "Đồng nghiệp chào ở tiệc đầu năm",
+      "gender": "male",
+      "ja": "明けましておめでとうございます、開発チームの松田です。",
+      "vi": "Chúc mừng năm mới, tôi là Matsuda bên nhóm phát triển ạ.",
+      "terms": [
+        "明けましておめでとうございます",
+        "開発",
+        "チーム"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "chào_năm_mới"
+    },
+    {
+      "id": "S-065-V13-010",
+      "group": "greet",
+      "role_vi": "Nhân viên hỏi chuyện ở buổi gặp đầu năm",
+      "gender": "female",
+      "ja": "開発チームは一月に何か新しいことを始めますか。",
+      "vi": "Tháng Một nhóm phát triển có bắt đầu việc gì mới không ạ?",
+      "terms": [
+        "開発",
+        "チーム"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "hỏi_việc_sắp_tới"
+    },
+    {
+      "id": "S-065-V13-011",
+      "group": "greet",
+      "role_vi": "Nhân viên đính chính tên mình nghe nhầm",
+      "gender": "female",
+      "ja": "お名前を松井さんと聞き間違えてすみません、松田さんですね。",
+      "vi": "Xin lỗi anh, tôi nghe nhầm thành Matsui, tên anh là Matsuda, đúng không ạ?",
+      "terms": [
+        "聞き間違える"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "sửa_tên_nghe_nhầm"
+    },
+    {
+      "id": "S-065-V13-012",
+      "group": "wish",
+      "role_vi": "Nhân viên nói với đồng nghiệp sắp chuyển nhóm",
+      "gender": "female",
+      "ja": "仕事を教えてくださって、本当にありがとうございました。",
+      "vi": "Cảm ơn anh rất nhiều vì đã chỉ việc cho tôi ạ.",
+      "terms": [
+        "教える",
+        "ありがとうございました"
+      ],
+      "scenes": [
+        "S006",
+        "S009"
+      ],
+      "pattern": "cảm_ơn_vì_việc_cụ_thể"
+    },
+    {
+      "id": "S-065-V13-013",
+      "group": "wish",
+      "role_vi": "Nhân viên nói tại tiệc chia tay",
+      "gender": "male",
+      "ja": "異動先でも、頑張ってくださいね。",
+      "vi": "Chúc chị làm tốt ở bộ phận mới nhé.",
+      "terms": [
+        "頑張ってください"
+      ],
+      "scenes": [
+        "S006",
+        "S015"
+      ],
+      "pattern": "chúc_sau_khi_chuyển"
+    },
+    {
+      "id": "S-065-V13-014",
+      "group": "wish",
+      "role_vi": "Nhân viên nói với người vừa lên chức",
+      "gender": "female",
+      "ja": "チームリーダーへの昇進、おめでとうございます。",
+      "vi": "Chúc mừng anh được thăng lên trưởng nhóm ạ.",
+      "terms": [
+        "チームリーダー",
+        "おめでとうございます"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "chúc_mừng_thăng_chức"
+    },
+    {
+      "id": "S-065-V13-015",
+      "group": "wish",
+      "role_vi": "Nhân viên động viên đồng nghiệp lên chức",
+      "gender": "female",
+      "ja": "チームで困ったことがあったら、私にも声をかけてくださいね。",
+      "vi": "Nếu có việc gì khó trong nhóm, anh cứ gọi tôi giúp nhé.",
+      "terms": [
+        "チーム"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "đề_nghị_giúp"
+    },
+    {
+      "id": "S-065-V13-016",
+      "group": "wish",
+      "role_vi": "Nhân viên cảm ơn người hướng dẫn ở tiệc tất niên",
+      "gender": "female",
+      "ja": "今年は報告の書き方を教えてもらって、助かりました。",
+      "vi": "Năm nay anh chỉ tôi cách viết báo cáo, nhờ vậy tôi đỡ vất vả nhiều ạ.",
+      "terms": [
+        "教える",
+        "助かる"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nói_việc_đã_giúp"
+    },
+    {
+      "id": "S-065-V13-017",
+      "group": "wish",
+      "role_vi": "Nhân viên cảm ơn người tổ chức",
+      "gender": "male",
+      "ja": "歓迎会を準備してくださって、ありがとうございました。",
+      "vi": "Cảm ơn chị đã chuẩn bị buổi chào mừng ạ.",
+      "terms": [
+        "歓迎会",
+        "準備する",
+        "ありがとうございました"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "cảm_ơn_vì_việc_cụ_thể"
+    },
+    {
+      "id": "S-065-V13-018",
+      "group": "follow",
+      "role_vi": "Nhân viên chọn đồ uống không cồn",
+      "gender": "female",
+      "ja": "今日はお酒は遠慮して、ウーロン茶をお願いします。",
+      "vi": "Hôm nay tôi xin phép không uống rượu bia, cho tôi trà ô long nhé.",
+      "terms": [
+        "お酒",
+        "遠慮する",
+        "ウーロン茶"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "từ_chối_và_chọn"
+    },
+    {
+      "id": "S-065-V13-019",
+      "group": "follow",
+      "role_vi": "Nhân viên chào khi phải về giữa buổi",
+      "gender": "female",
+      "ja": "会の途中ですみませんが、お先に失礼します。",
+      "vi": "Xin lỗi mọi người, tôi xin phép về trước ạ.",
+      "terms": [
+        "途中",
+        "お先に失礼します"
+      ],
+      "scenes": [
+        "S004",
+        "S015"
+      ],
+      "pattern": "xin_phép_về_trước"
+    },
+    {
+      "id": "S-065-V13-020",
+      "group": "follow",
+      "role_vi": "Nhân viên đề nghị chỉ đường cho người mới",
+      "gender": "male",
+      "ja": "営業チームの部屋まで、一緒に行きましょうか。",
+      "vi": "Tôi đi cùng anh đến phòng của nhóm kinh doanh nhé?",
+      "terms": [
+        "営業",
+        "チーム"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "đề_nghị_giúp"
+    },
+    {
+      "id": "S-065-V13-021",
+      "group": "follow",
+      "role_vi": "Nhân viên nhắc việc đã hẹn ở buổi liên hoan",
+      "gender": "female",
+      "ja": "昨日の打ち上げで話した資料は、十一時までに送ります。",
+      "vi": "Tài liệu mình nói ở buổi liên hoan hôm qua, tôi sẽ gửi chậm nhất lúc mười một giờ ạ.",
+      "terms": [
+        "打ち上げ",
+        "～時"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "chốt_việc_đã_hẹn"
+    }
+  ]
+}

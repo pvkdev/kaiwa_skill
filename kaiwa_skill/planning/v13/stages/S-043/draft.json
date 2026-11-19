@@ -1,0 +1,338 @@
+{
+  "code": "S-043",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "1885caf6e7d748b0931a572a22d2de910c2efc5471a4c0acbffadfc983887e38",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "receive": "Nhấc máy và nghe rõ tên",
+    "transfer": "Chuyển đúng người và đúng phòng",
+    "unavail": "Báo chưa nghe được và nhận lời nhắn",
+    "retry": "Xử lý cuộc gọi bị ngắt"
+  },
+  "items": [
+    {
+      "id": "S-043-V13-001",
+      "group": "receive",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "はい、月商事の鈴木です。",
+      "vi": "Vâng, Suzuki ở công ty Tsuki xin nghe ạ.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "会社と名前を名乗る"
+    },
+    {
+      "id": "S-043-V13-002",
+      "group": "receive",
+      "role_vi": "Khách gọi từ công ty đối tác",
+      "gender": "female",
+      "ja": "営業部の田中さんをお願いします。",
+      "vi": "Cho tôi gặp chị Tanaka ở phòng kinh doanh ạ.",
+      "terms": [
+        "営業部"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "〜をお願いします"
+    },
+    {
+      "id": "S-043-V13-003",
+      "group": "receive",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "恐れ入りますが、お名前をもう一度伺えますか。",
+      "vi": "Xin phép, anh nhắc lại tên giúp tôi được không ạ?",
+      "terms": [
+        "恐れ入りますが",
+        "お名前",
+        "もう一度",
+        "伺う"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "もう一度伺えますか"
+    },
+    {
+      "id": "S-043-V13-004",
+      "group": "receive",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "森田商事の伊藤様ですね。",
+      "vi": "Anh là Ito ở công ty Morita Shōji, đúng không ạ?",
+      "terms": [
+        "〜様"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "〜様ですね"
+    },
+    {
+      "id": "S-043-V13-005",
+      "group": "transfer",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "営業部の田中におつなぎしますので、少々お待ちください。",
+      "vi": "Tôi sẽ chuyển máy cho chị Tanaka phòng kinh doanh, anh chờ một chút ạ.",
+      "terms": [
+        "営業部",
+        "つなぐ",
+        "少々",
+        "待つ"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜ので、少々お待ちください"
+    },
+    {
+      "id": "S-043-V13-006",
+      "group": "transfer",
+      "role_vi": "Nhân viên gọi máy nội bộ",
+      "gender": "male",
+      "ja": "田中さん、森田商事の伊藤様からの電話をおつなぎしてもいいですか。",
+      "vi": "Chị Tanaka ơi, tôi chuyển cuộc gọi của anh Ito ở công ty Morita Shōji cho chị được không?",
+      "terms": [
+        "〜様",
+        "つなぐ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "おつなぎしてもいいですか"
+    },
+    {
+      "id": "S-043-V13-007",
+      "group": "transfer",
+      "role_vi": "Người phụ trách nhận cuộc gọi",
+      "gender": "female",
+      "ja": "今なら電話に出られますので、こちらにつないでください。",
+      "vi": "Giờ tôi nghe máy được, anh chuyển sang đây giúp tôi nhé.",
+      "terms": [
+        "電話に出る",
+        "つなぐ"
+      ],
+      "scenes": [
+        "S004",
+        "S012"
+      ],
+      "pattern": "今なら〜できます"
+    },
+    {
+      "id": "S-043-V13-008",
+      "group": "transfer",
+      "role_vi": "Khách gọi từ công ty đối tác",
+      "gender": "female",
+      "ja": "すみません、総務ではなく、経理の方をお願いします。",
+      "vi": "Cho tôi gặp người bên kế toán, không phải bên tổng vụ ạ.",
+      "terms": [
+        "総務",
+        "経理"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜ではなく、〜をお願いします"
+    },
+    {
+      "id": "S-043-V13-009",
+      "group": "transfer",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "先ほど経理を総務と聞き違えてしまい、申し訳ありません。",
+      "vi": "Lúc nãy tôi nghe nhầm kế toán thành tổng vụ, thành thật xin lỗi ạ.",
+      "terms": [
+        "先ほど",
+        "経理",
+        "総務",
+        "聞き違える",
+        "申し訳ありません"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜てしまい、申し訳ありません"
+    },
+    {
+      "id": "S-043-V13-010",
+      "group": "transfer",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "経理につなげるか確認しますので、少々お待ちください。",
+      "vi": "Tôi sẽ kiểm tra xem có chuyển sang kế toán được không, anh chờ một chút ạ.",
+      "terms": [
+        "経理",
+        "つなぐ",
+        "確認する",
+        "少々",
+        "待つ"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜ので、少々お待ちください"
+    },
+    {
+      "id": "S-043-V13-011",
+      "group": "unavail",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "担当の佐藤は、ただ今電話に出られません。",
+      "vi": "Chị Sato phụ trách việc này, hiện chị ấy chưa nghe máy được ạ.",
+      "terms": [
+        "ただ今",
+        "電話に出る"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜で電話に出られません"
+    },
+    {
+      "id": "S-043-V13-012",
+      "group": "unavail",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "佐藤は会議中ですが、ご伝言をお預かりしましょうか。",
+      "vi": "Chị Sato đang họp, anh có muốn để lại lời nhắn không ạ?",
+      "terms": [
+        "会議中",
+        "伝言",
+        "預かる"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "ご伝言をお預かりしましょうか"
+    },
+    {
+      "id": "S-043-V13-013",
+      "group": "unavail",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "一分後も佐藤が会議中でしたら、こちらからお知らせします。",
+      "vi": "Sau một phút nếu chị Sato vẫn đang họp, tôi sẽ báo anh ạ.",
+      "terms": [
+        "〜分",
+        "会議中"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜でしたら、〜します"
+    },
+    {
+      "id": "S-043-V13-014",
+      "group": "unavail",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "三時ごろまたお電話をいただくと、佐藤に伝えておきます。",
+      "vi": "Tôi sẽ nhắn với chị Sato là khoảng 3 giờ anh sẽ gọi lại ạ.",
+      "terms": [
+        "伝える"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜と伝えておきます"
+    },
+    {
+      "id": "S-043-V13-015",
+      "group": "unavail",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "佐藤の戻る時間をお知らせするので、お電話番号を伺えますか。",
+      "vi": "Để báo anh giờ chị Sato quay lại, cho tôi xin số điện thoại được không ạ?",
+      "terms": [
+        "戻る",
+        "電話番号",
+        "伺う"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜ので、お電話番号を伺えますか"
+    },
+    {
+      "id": "S-043-V13-016",
+      "group": "unavail",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "佐藤が戻る時間を確認してから、会社の代表番号に折り返します。",
+      "vi": "Tôi sẽ kiểm tra giờ chị Sato quay lại rồi gọi lại số chính của công ty anh ạ.",
+      "terms": [
+        "戻る",
+        "確認する",
+        "代表番号",
+        "折り返す"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜てから折り返します"
+    },
+    {
+      "id": "S-043-V13-017",
+      "group": "retry",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "先ほどお電話が切れてしまい、申し訳ありません。",
+      "vi": "Lúc nãy cuộc gọi bị ngắt, thành thật xin lỗi ạ.",
+      "terms": [
+        "先ほど",
+        "切れる",
+        "申し訳ありません"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜てしまい、申し訳ありません"
+    },
+    {
+      "id": "S-043-V13-018",
+      "group": "retry",
+      "role_vi": "Nhân viên trực điện thoại",
+      "gender": "male",
+      "ja": "もう一度つなぐ前に、田中が電話に出られるか確認します。",
+      "vi": "Trước khi nối lại máy, tôi sẽ kiểm tra xem chị Tanaka có nghe được không ạ.",
+      "terms": [
+        "もう一度",
+        "つなぐ",
+        "電話に出る",
+        "確認する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜前に確認します"
+    },
+    {
+      "id": "S-043-V13-019",
+      "group": "retry",
+      "role_vi": "Nhân viên gọi máy nội bộ",
+      "gender": "male",
+      "ja": "田中さん、伊藤様にかけ直しましたが、今つないでもいいですか。",
+      "vi": "Chị Tanaka ơi, tôi đã gọi lại cho anh Ito, giờ tôi chuyển máy cho chị được không?",
+      "terms": [
+        "〜様",
+        "かけ直す",
+        "つなぐ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜ましたが、Vてもいいですか"
+    }
+  ]
+}

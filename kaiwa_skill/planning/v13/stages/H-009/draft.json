@@ -1,0 +1,363 @@
+{
+  "code": "H-009",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "1ccbc7c191ecf9d1d9d3786c22b6a74e4485e80e95397df6324f6d8406065494",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "invite": "Mời dùng bữa và hỏi trước nhu cầu",
+    "table": "Đón khách và chọn món, đồ uống",
+    "listen": "Mời người khác góp chuyện và nghe phản hồi",
+    "commit": "Nói về công việc mà chưa cam kết",
+    "close": "Khép bữa ăn và nối lại việc hôm sau"
+  },
+  "items": [
+    {
+      "id": "H-009-V13-001",
+      "group": "invite",
+      "role_vi": "Chủ buổi mời đối tác ăn sau cuộc họp",
+      "gender": "male",
+      "ja": "打ち合わせのあと、ご一緒に夕食はいかがですか。",
+      "vi": "Sau buổi họp, chị có muốn cùng dùng bữa tối không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～はいかがですか"
+    },
+    {
+      "id": "H-009-V13-002",
+      "group": "invite",
+      "role_vi": "Chủ buổi hỏi số khách để chọn quán",
+      "gender": "female",
+      "ja": "夕食は全部で何名になりそうですか。",
+      "vi": "Bữa tối dự kiến có tất cả mấy người ạ?",
+      "terms": [
+        "何名"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～になりそうですか"
+    },
+    {
+      "id": "H-009-V13-003",
+      "group": "invite",
+      "role_vi": "Khách báo ngắn mình đã có hẹn trước",
+      "gender": "male",
+      "ja": "今夜は先約がありまして、会食には伺えません。",
+      "vi": "Tối nay tôi có hẹn trước nên không đến dùng bữa cùng chị được ạ.",
+      "terms": [
+        "先約",
+        "会食"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～がありまして、～には伺えません"
+    },
+    {
+      "id": "H-009-V13-004",
+      "group": "invite",
+      "role_vi": "Chủ buổi ngỏ lời gặp ngắn trong giờ làm",
+      "gender": "female",
+      "ja": "夕食が難しければ、別の日に勤務時間内でお茶でもいかがですか。",
+      "vi": "Nếu anh không tiện ăn tối, mình uống trà một lát trong giờ làm vào hôm khác, được không ạ?",
+      "terms": [
+        "勤務時間内"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～はいかがですか"
+    },
+    {
+      "id": "H-009-V13-005",
+      "group": "invite",
+      "role_vi": "Chủ buổi hỏi riêng về nhu cầu ăn uống trước khi chọn quán",
+      "gender": "male",
+      "ja": "お店を決める前に、控えていらっしゃる食材があれば教えていただけますか。",
+      "vi": "Trước khi chọn quán, nếu có nguyên liệu nào chị đang kiêng thì chị cho tôi biết được không ạ?",
+      "terms": [
+        "控える",
+        "食材"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "～があれば教えていただけますか"
+    },
+    {
+      "id": "H-009-V13-006",
+      "group": "table",
+      "role_vi": "Chủ buổi giới thiệu người đi cùng cho khách",
+      "gender": "female",
+      "ja": "こちらは、今回の資料の確認担当として同席するユキです。",
+      "vi": "Đây là chị Yuki, hôm nay cùng tham dự với vai trò phụ trách kiểm tra tài liệu lần này ạ.",
+      "terms": [
+        "確認担当",
+        "同席する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "こちらは、～として同席する～です"
+    },
+    {
+      "id": "H-009-V13-007",
+      "group": "table",
+      "role_vi": "Chủ buổi làm rõ chuyên môn với khách",
+      "gender": "male",
+      "ja": "ユキは資料の確認担当ですので、価格のことは後日、営業責任者も交えてご相談できればと思います。",
+      "vi": "Chị Yuki phụ trách kiểm tra tài liệu, nên về giá cả tôi muốn để hôm khác trao đổi với chị khi có cả người phụ trách kinh doanh ạ.",
+      "terms": [
+        "確認担当",
+        "営業責任者"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～ですので、～できればと思います"
+    },
+    {
+      "id": "H-009-V13-008",
+      "group": "table",
+      "role_vi": "Chủ buổi ngỏ ý gọi đồ uống không cồn",
+      "gender": "female",
+      "ja": "乾杯のお飲み物は、ノンアルコールのものも見てみますか。",
+      "vi": "Anh có muốn xem cả đồ uống không cồn để nâng ly không ạ?",
+      "terms": [
+        "ノンアルコール"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～も見てみますか"
+    },
+    {
+      "id": "H-009-V13-009",
+      "group": "table",
+      "role_vi": "Khách chọn đồ uống không cồn",
+      "gender": "male",
+      "ja": "今日はお酒を控えたいので、温かいお茶をいただけますか。",
+      "vi": "Hôm nay tôi muốn tránh rượu bia, cho tôi xin trà nóng được không ạ?",
+      "terms": [
+        "控える"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "～ので、～をいただけますか"
+    },
+    {
+      "id": "H-009-V13-010",
+      "group": "table",
+      "role_vi": "Chủ buổi hỏi nhân viên quán cách điều chỉnh món cho khách",
+      "gender": "female",
+      "ja": "こちらの料理は、辛いソースを別添えにしていただけますか。",
+      "vi": "Món này nhà hàng để riêng phần xốt cay giúp tôi được không ạ?",
+      "terms": [
+        "別添え"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～を別添えにしていただけますか"
+    },
+    {
+      "id": "H-009-V13-011",
+      "group": "listen",
+      "role_vi": "Chủ buổi hỏi cảm nhận sau lần hợp tác trước",
+      "gender": "male",
+      "ja": "前回のお仕事で、やりやすかった点や困った点があれば教えていただけますか。",
+      "vi": "Trong lần làm việc trước, nếu có điểm nào thuận tiện hay gây khó khăn, chị cho tôi biết được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～があれば教えていただけますか"
+    },
+    {
+      "id": "H-009-V13-012",
+      "group": "listen",
+      "role_vi": "Khách phản ánh việc thiếu mốc phản hồi",
+      "gender": "female",
+      "ja": "前回は、お返事の目安が分からず、こちらも作業の日程を決められませんでした。",
+      "vi": "Lần trước chúng tôi không biết khoảng khi nào nhận được câu trả lời nên cũng không chốt được lịch làm việc ạ.",
+      "terms": [],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～ず、～られませんでした"
+    },
+    {
+      "id": "H-009-V13-013",
+      "group": "listen",
+      "role_vi": "Chủ buổi hỏi hậu quả để hiểu góp ý của khách",
+      "gender": "male",
+      "ja": "ご返答までお待たせした間、御社のほうではどんな作業に影響がありましたか。",
+      "vi": "Trong thời gian bên tôi để chị chờ câu trả lời, những việc nào của bên chị bị ảnh hưởng ạ?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～間、どんな～に影響がありましたか"
+    },
+    {
+      "id": "H-009-V13-014",
+      "group": "listen",
+      "role_vi": "Chủ buổi sửa lời đùa nghe như chê người vắng mặt",
+      "gender": "female",
+      "ja": "前任者の段取りが悪かったと言いたかったのではなく、こちらの確認先が多かったという意味です。",
+      "vi": "Ý tôi là bên tôi phải hỏi nhiều đầu mối, chứ tôi không có ý nói người phụ trách trước sắp xếp công việc kém ạ.",
+      "terms": [
+        "前任者",
+        "段取り"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～のではなく、～という意味です"
+    },
+    {
+      "id": "H-009-V13-015",
+      "group": "listen",
+      "role_vi": "Chủ buổi mời người trực tiếp làm góp chuyện",
+      "gender": "male",
+      "ja": "マイさんは資料の差し替えを担当されているそうですが、どの場面が一番大変ですか。",
+      "vi": "Tôi nghe nói chị Mai phụ trách thay bản tài liệu, chị thấy lúc nào vất vả nhất ạ?",
+      "terms": [
+        "差し替え"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～されているそうですが、～ですか"
+    },
+    {
+      "id": "H-009-V13-016",
+      "group": "commit",
+      "role_vi": "Đại diện tiếp nhận đề nghị giảm giá ngay tại bàn",
+      "gender": "female",
+      "ja": "値下げのご希望は承りますが、この場では金額のお約束はできません。",
+      "vi": "Tôi ghi nhận đề nghị giảm giá của anh, nhưng chưa thể cam kết mức giá ngay tại đây ạ.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～は承りますが、この場では～できません"
+    },
+    {
+      "id": "H-009-V13-017",
+      "group": "commit",
+      "role_vi": "Đại diện đề nghị buổi xem xét giá có người quyết",
+      "gender": "male",
+      "ja": "数量と期間を確認したうえで、営業責任者も交えて価格についてお話しできればと思います。",
+      "vi": "Sau khi làm rõ số lượng và thời gian, tôi muốn mình trao đổi về giá với cả người phụ trách kinh doanh ạ.",
+      "terms": [
+        "営業責任者"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "～たうえで、～できればと思います"
+    },
+    {
+      "id": "H-009-V13-018",
+      "group": "commit",
+      "role_vi": "Đại diện hỏi mục tiêu khi khách nhắc chuyện mở rộng",
+      "gender": "female",
+      "ja": "別の部署にも広げるとしたら、まずどんな仕事を楽にしたいとお考えですか。",
+      "vi": "Nếu mở sang bộ phận khác, trước hết anh muốn việc gì bớt vất vả hơn ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～としたら、どんな～とお考えですか"
+    },
+    {
+      "id": "H-009-V13-019",
+      "group": "commit",
+      "role_vi": "Đại diện nói rõ đề xuất ở bàn chưa được chốt",
+      "gender": "male",
+      "ja": "別部署への展開は、現時点ではご要望を伺った段階で、実施の合意には至っておりません。",
+      "vi": "Về việc mở sang bộ phận khác, hiện bên tôi mới tiếp nhận mong muốn của chị, hai bên chưa thống nhất triển khai ạ.",
+      "terms": [
+        "現時点",
+        "合意"
+      ],
+      "scenes": [
+        "S016",
+        "S019",
+        "S020"
+      ],
+      "pattern": "現時点では～た段階で、～には至っておりません"
+    },
+    {
+      "id": "H-009-V13-020",
+      "group": "close",
+      "role_vi": "Chủ buổi ngỏ ý chỉ đường khi khách về",
+      "gender": "female",
+      "ja": "駅までの道が分かりにくければ、ご案内しましょうか。",
+      "vi": "Nếu đường ra ga khó tìm, tôi chỉ đường cho anh nhé?",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ければ、ご案内しましょうか"
+    },
+    {
+      "id": "H-009-V13-021",
+      "group": "close",
+      "role_vi": "Khách cảm ơn và từ chối đi tăng hai",
+      "gender": "male",
+      "ja": "二軒目にもお誘いいただいてうれしいのですが、このあと予定があるので、今日はここで失礼します。",
+      "vi": "Tôi rất vui vì chị rủ đi thêm một quán, nhưng lát nữa tôi có hẹn nên hôm nay xin phép về trước ạ.",
+      "terms": [
+        "二軒目"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～のですが、～ので失礼します"
+    },
+    {
+      "id": "H-009-V13-022",
+      "group": "close",
+      "role_vi": "Đại diện gọi hôm sau để xác nhận bước xem xét giá",
+      "gender": "female",
+      "ja": "昨夜の価格のお話は、条件をいただいてから社内検討に入るということでよろしいでしょうか。",
+      "vi": "Về chuyện giá cả tối qua, bên tôi sẽ xem xét nội bộ sau khi nhận được các điều kiện, mình thống nhất bước tiếp theo như vậy đúng không ạ?",
+      "terms": [
+        "社内検討"
+      ],
+      "scenes": [
+        "S014",
+        "S019"
+      ],
+      "pattern": "～ということでよろしいでしょうか"
+    },
+    {
+      "id": "H-009-V13-023",
+      "group": "close",
+      "role_vi": "Đại diện báo lại cho đội về phản hồi công việc",
+      "gender": "male",
+      "ja": "昨日の会食で、次は返事ができる時期を先に示してほしいというご指摘がありました。",
+      "vi": "Trong bữa ăn hôm qua, khách góp ý lần tới mình nên báo trước khi nào có thể trả lời.",
+      "terms": [
+        "会食",
+        "ご指摘"
+      ],
+      "scenes": [
+        "S010",
+        "S020"
+      ],
+      "pattern": "～してほしいというご指摘がありました"
+    }
+  ]
+}

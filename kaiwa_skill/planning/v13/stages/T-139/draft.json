@@ -1,0 +1,425 @@
+{
+  "code": "T-139",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3f71ab23d9315fcbefbc6b59a0999694f6ef88e4569c31047bd02dd7dab098e2",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "prepare": "Hỏi trước cách tham gia lễ hội",
+    "festival": "Tìm đúng chỗ, đợi lượt và thử một hoạt động",
+    "home": "Hỏi ý nghĩa và tham gia theo mức thoải mái",
+    "compare": "So tập quán của từng nhà và từng vùng",
+    "follow": "Cảm ơn, hỏi đồ thất lạc và nhận phần việc vừa sức",
+    "photos": "Hẹn chụp ảnh và xác nhận điều cần ở studio"
+  },
+  "items": [
+    {
+      "id": "T-139-V13-001",
+      "group": "prepare",
+      "role_vi": "Người bạn nói với người đã mời đi lễ",
+      "gender": "female",
+      "ja": "夏祭りは何時から始まるの？",
+      "vi": "Lễ hội mùa hè bắt đầu lúc mấy giờ vậy cậu?",
+      "terms": [
+        "夏祭り"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "ask_event_time"
+    },
+    {
+      "id": "T-139-V13-002",
+      "group": "prepare",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "female",
+      "ja": "盆踊りは初めてですが、当日参加できますか。",
+      "vi": "Tôi tham gia múa Bon lần đầu. Tôi có thể đến tham gia ngay trong ngày được không ạ?",
+      "terms": [
+        "盆踊り",
+        "当日参加"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "ask_event_access"
+    },
+    {
+      "id": "T-139-V13-003",
+      "group": "prepare",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "male",
+      "ja": "今回の盆踊りは、普段着で参加してもいいですか。",
+      "vi": "Buổi múa Bon lần này tôi mặc đồ thường tham gia được không ạ?",
+      "terms": [
+        "盆踊り",
+        "普段着"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "ask_permission_for_option"
+    },
+    {
+      "id": "T-139-V13-004",
+      "group": "prepare",
+      "role_vi": "Người bạn nói với người đã mời đi lễ",
+      "gender": "female",
+      "ja": "お参りは遠慮して、広場の太鼓から見に行ってもいい？",
+      "vi": "Tớ xin phép không dự phần khấn. Tớ có thể đến xem từ tiết mục trống ở quảng trường không?",
+      "terms": [
+        "お参り",
+        "太鼓"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "choose_open_section"
+    },
+    {
+      "id": "T-139-V13-005",
+      "group": "festival",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "female",
+      "ja": "太鼓を体験したいんですが、受付はどこですか。",
+      "vi": "Tôi muốn thử đánh trống, quầy tiếp nhận ở đâu ạ?",
+      "terms": [
+        "太鼓",
+        "体験する",
+        "受付"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "ask_where_to_go"
+    },
+    {
+      "id": "T-139-V13-006",
+      "group": "festival",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "female",
+      "ja": "順番札をもらったら、番号を呼ばれるまでここで待てばいいですか。",
+      "vi": "Lấy thẻ lượt xong, tôi đợi ở đây đến khi gọi số phải không ạ?",
+      "terms": [
+        "順番札"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "confirm_local_procedure"
+    },
+    {
+      "id": "T-139-V13-007",
+      "group": "festival",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "female",
+      "ja": "出演者の通路だと知らずに入ってしまいましたが、受付にはどこから回ればいいですか。",
+      "vi": "Tôi không biết đây là lối của người biểu diễn nên lỡ đi vào. Tôi vòng lối nào tới quầy tiếp nhận ạ?",
+      "terms": [
+        "出演者",
+        "受付"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "repair_and_ask_route"
+    },
+    {
+      "id": "T-139-V13-008",
+      "group": "festival",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "male",
+      "ja": "踊りはまだ始まらないなら、先に太鼓の演奏を見られる場所を教えてもらえますか。",
+      "vi": "Nếu phần múa chưa bắt đầu, anh chỉ giúp tôi chỗ xem tiết mục trống trước được không ạ?",
+      "terms": [
+        "太鼓",
+        "演奏"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "choose_available_activity"
+    },
+    {
+      "id": "T-139-V13-009",
+      "group": "festival",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "female",
+      "ja": "太鼓は、今の音をまねて、同じくらい間を空けて二回打てばいいですか。",
+      "vi": "Tôi gõ theo tiếng trống vừa rồi, hai tiếng cách nhau như vậy, đúng không ạ?",
+      "terms": [
+        "太鼓",
+        "まねる",
+        "間",
+        "打つ"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "confirm_local_procedure"
+    },
+    {
+      "id": "T-139-V13-010",
+      "group": "home",
+      "role_vi": "Khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "お雑煮を一杯別に置くのは、こちらのお宅ではどんな意味があるんですか。",
+      "vi": "Ở nhà anh, việc để riêng một bát súp bánh nếp ozōni có ý nghĩa gì ạ?",
+      "terms": [
+        "お雑煮"
+      ],
+      "scenes": [
+        "S011",
+        "S014",
+        "S015"
+      ],
+      "pattern": "ask_family_meaning"
+    },
+    {
+      "id": "T-139-V13-011",
+      "group": "home",
+      "role_vi": "Khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "お餅は入れずに、汁と野菜だけ少しいただいてもいいですか。",
+      "vi": "Tôi có thể xin một ít nước súp với rau thôi, không lấy bánh mochi, được không ạ?",
+      "terms": [
+        "餅"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "ask_permission_for_option"
+    },
+    {
+      "id": "T-139-V13-012",
+      "group": "home",
+      "role_vi": "Khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "魚のだしは控えているので、今回はお雑煮は遠慮します。",
+      "vi": "Tôi đang kiêng nước dùng cá, nên lần này xin phép không dùng súp ozōni ạ.",
+      "terms": [
+        "だし",
+        "控える",
+        "お雑煮"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "decline_food_politely"
+    },
+    {
+      "id": "T-139-V13-013",
+      "group": "home",
+      "role_vi": "Khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "お供えの作法が分からないので、今日は横で見ているだけでもいいですか。",
+      "vi": "Tôi chưa biết cách dâng đồ cúng, hôm nay tôi chỉ đứng bên cạnh xem được không ạ?",
+      "terms": [
+        "お供え",
+        "作法"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "ask_permission_for_option"
+    },
+    {
+      "id": "T-139-V13-014",
+      "group": "compare",
+      "role_vi": "Người quen trao đổi về tập quán địa phương",
+      "gender": "female",
+      "ja": "山本さんの地元でも、夏祭りの夜にみんなで輪になって踊るんですか。",
+      "vi": "Ở quê anh Yamamoto, mọi người cũng múa thành vòng tròn vào tối lễ hội mùa hè ạ?",
+      "terms": [
+        "地元",
+        "夏祭り",
+        "輪"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "ask_about_another_region"
+    },
+    {
+      "id": "T-139-V13-015",
+      "group": "compare",
+      "role_vi": "Người quen trao đổi về tập quán địa phương",
+      "gender": "female",
+      "ja": "うちでは、旧暦のお正月に家族でバインチュンを切り分けます。",
+      "vi": "Nhà tôi vào Tết âm lịch thì cả nhà cắt bánh chưng chia nhau.",
+      "terms": [
+        "旧暦",
+        "切り分ける"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "present_own_family_custom"
+    },
+    {
+      "id": "T-139-V13-016",
+      "group": "compare",
+      "role_vi": "Người quen trao đổi về tập quán địa phương",
+      "gender": "female",
+      "ja": "白い提灯を飾る由来は分からなくても、昔どんなふうに飾っていたか聞いてもいいですか。",
+      "vi": "Nếu chưa rõ vì sao lại dùng đèn lồng trắng, tôi có thể hỏi ngày trước nhà anh treo đèn thế nào không ạ?",
+      "terms": [
+        "提灯",
+        "由来"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "respect_uncertain_origin"
+    },
+    {
+      "id": "T-139-V13-017",
+      "group": "compare",
+      "role_vi": "Khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "お餅を焼くのが変だと思ったんじゃなくて、こちらのお宅の作り方が知りたかったんです。",
+      "vi": "Tôi không thấy nướng mochi là lạ đâu ạ, tôi chỉ muốn biết nhà anh làm thế nào thôi.",
+      "terms": [
+        "餅"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "clarify_curiosity"
+    },
+    {
+      "id": "T-139-V13-018",
+      "group": "follow",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "female",
+      "ja": "太鼓に合わせて歌う人と答える人が交代するところは、何と呼ぶんですか。",
+      "vi": "Phần thay nhau hát và đáp theo nhịp trống gọi là gì ạ?",
+      "terms": [
+        "太鼓"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "ask_name_of_activity"
+    },
+    {
+      "id": "T-139-V13-019",
+      "group": "follow",
+      "role_vi": "Khách hỏi người phụ trách lễ hội",
+      "gender": "female",
+      "ja": "青いひもの付いた扇子を太鼓の所に置いたかもしれないんですが、落とし物はこちらで聞けますか。",
+      "vi": "Hình như tôi để quạt xếp có dây xanh ở chỗ đánh trống, tôi hỏi đồ thất lạc ở đây được không ạ?",
+      "terms": [
+        "扇子",
+        "太鼓",
+        "落とし物"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "ask_for_lost_item"
+    },
+    {
+      "id": "T-139-V13-020",
+      "group": "follow",
+      "role_vi": "Người bạn nói với người đã mời đi lễ",
+      "gender": "female",
+      "ja": "秋の会も行きたいけど、平日の打ち合わせには出られないので、当日だけ案内図を配ってもいい？",
+      "vi": "Tớ muốn đi buổi mùa thu, nhưng không dự họp ngày thường được. Tớ chỉ giúp phát sơ đồ vào hôm diễn ra được không?",
+      "terms": [
+        "打ち合わせ",
+        "案内図",
+        "配る"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "offer_manageable_help"
+    },
+    {
+      "id": "T-139-V13-021",
+      "group": "photos",
+      "role_vi": "Khách nói với nhân viên studio",
+      "gender": "female",
+      "ja": "成人式とは別の日に、妹一人の写真と家族写真を撮っていただけますか。",
+      "vi": "Tôi có thể đặt chụp ảnh kỷ niệm riêng cho em gái và ảnh cả gia đình vào một ngày khác ngày lễ trưởng thành được không ạ?",
+      "terms": [
+        "成人式",
+        "家族写真"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "request_photo_plan"
+    },
+    {
+      "id": "T-139-V13-022",
+      "group": "photos",
+      "role_vi": "Khách nói với nhân viên studio",
+      "gender": "female",
+      "ja": "娘の入学記念で四人で撮るんですが、母は長く立てないので、椅子をお借りできますか。",
+      "vi": "Nhà tôi muốn chụp ảnh bốn người để kỷ niệm con gái vào học. Mẹ tôi không đứng lâu được, studio cho mượn ghế được không ạ?",
+      "terms": [
+        "入学記念"
+      ],
+      "scenes": [
+        "S027",
+        "S030"
+      ],
+      "pattern": "request_accessible_setup"
+    },
+    {
+      "id": "T-139-V13-023",
+      "group": "photos",
+      "role_vi": "Khách nói với nhân viên studio",
+      "gender": "female",
+      "ja": "衣装は自分で持っていくので、写真を二枚頼んだ場合の税込みの合計を教えてください。",
+      "vi": "Nhà tôi tự mang trang phục, anh cho tôi biết nếu lấy hai ảnh thì tổng cộng cả thuế là bao nhiêu ạ?",
+      "terms": [
+        "衣装",
+        "税込み"
+      ],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "ask_total_for_selected_package"
+    },
+    {
+      "id": "T-139-V13-024",
+      "group": "photos",
+      "role_vi": "Khách nói với nhân viên studio",
+      "gender": "male",
+      "ja": "妹が体調を崩したので、記念撮影の日程変更をお願いできますか。",
+      "vi": "Em gái tôi bị ốm, tôi có thể dời lịch chụp ảnh kỷ niệm được không ạ?",
+      "terms": [
+        "記念撮影",
+        "日程変更"
+      ],
+      "scenes": [
+        "S029"
+      ],
+      "pattern": "ask_to_reschedule"
+    },
+    {
+      "id": "T-139-V13-025",
+      "group": "photos",
+      "role_vi": "Khách nói với nhân viên studio",
+      "gender": "female",
+      "ja": "選んだのは23番ですが、届いた写真は32番なので、注文番号で確かめてもらえますか。",
+      "vi": "Tôi chọn ảnh số 23 nhưng ảnh nhận được là số 32, anh kiểm tra giúp theo mã đơn được không ạ?",
+      "terms": [
+        "注文番号"
+      ],
+      "scenes": [
+        "S031"
+      ],
+      "pattern": "request_order_comparison"
+    }
+  ]
+}

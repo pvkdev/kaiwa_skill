@@ -1,0 +1,395 @@
+{
+  "code": "T-117",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b6d4e1f94c2eda089509227a374a657d685bb26fe00919e9e970338b053b8a3e",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "plan": "Nhận tổ chức và hỏi người tham dự",
+    "budget": "Tính ngân sách và phần người dự đóng",
+    "book": "Tìm quán, giữ chỗ rồi đặt chính thức",
+    "comfort": "Hỏi nhu cầu ăn uống và giữ quyền lựa chọn",
+    "program": "Thống nhất phần chào và xử lý đổi phút cuối",
+    "close": "Đối chiếu tiền và xử lý sau tiệc"
+  },
+  "items": [
+    {
+      "id": "T-117-V13-001",
+      "group": "plan",
+      "role_vi": "Người tổ chức xác nhận đối tượng mời với quản lý",
+      "gender": "female",
+      "ja": "今回の忘年会は、チームの皆さんだけを招待する形ですか。",
+      "vi": "Tiệc tất niên lần này mình chỉ mời người trong nhóm thôi phải không ạ?",
+      "terms": [
+        "招待する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～だけを～する形ですか"
+    },
+    {
+      "id": "T-117-V13-002",
+      "group": "plan",
+      "role_vi": "Người tổ chức hỏi ngày thuận tiện và để người được mời chọn",
+      "gender": "male",
+      "ja": "参加は任意ですが、来られそうなら都合のいい日を教えてください。",
+      "vi": "Buổi này tham gia tự nguyện, nếu có thể đến thì anh cho tôi biết ngày nào tiện nhé.",
+      "terms": [
+        "任意"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～を教えてください"
+    },
+    {
+      "id": "T-117-V13-003",
+      "group": "plan",
+      "role_vi": "Người tổ chức tiếp nhận lời báo không dự",
+      "gender": "female",
+      "ja": "準備に必要なのは出欠だけなので、来られない理由は言わなくて大丈夫です。",
+      "vi": "Tôi chỉ cần biết anh có dự không để chuẩn bị, anh không cần nói lý do vắng đâu.",
+      "terms": [
+        "出欠"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～だけなので、～なくて大丈夫です"
+    },
+    {
+      "id": "T-117-V13-004",
+      "group": "plan",
+      "role_vi": "Người tổ chức thu xếp chỗ cho người đến muộn",
+      "gender": "male",
+      "ja": "遅れて来る方のために、通路側の席を一つ残しておきますね。",
+      "vi": "Tôi sẽ chừa một chỗ cạnh lối đi cho người đến muộn nhé.",
+      "terms": [
+        "通路側"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～のために、～ておきます"
+    },
+    {
+      "id": "T-117-V13-005",
+      "group": "budget",
+      "role_vi": "Người tổ chức hỏi ngân sách trước khi tìm quán",
+      "gender": "female",
+      "ja": "お店を探す前に、一人分の予算を教えていただけますか。",
+      "vi": "Trước khi tìm quán, anh cho tôi biết ngân sách mỗi người là bao nhiêu được không ạ?",
+      "terms": [
+        "予算"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-117-V13-006",
+      "group": "budget",
+      "role_vi": "Người tổ chức kiểm mức hỗ trợ không phải toàn bộ suất ăn",
+      "gender": "male",
+      "ja": "会社の補助は一人二千円までで、残りは参加する人が負担するんですね。",
+      "vi": "Tôi hiểu là công ty hỗ trợ tối đa hai nghìn yên mỗi người, còn phần còn lại do người dự trả, đúng không ạ?",
+      "terms": [
+        "補助",
+        "負担する"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "～までで、残りは～んですね"
+    },
+    {
+      "id": "T-117-V13-007",
+      "group": "budget",
+      "role_vi": "Người tổ chức làm rõ mức báo là ước tính",
+      "gender": "female",
+      "ja": "この参加費はまだ概算なので、お店と会社に確認してからお知らせします。",
+      "vi": "Mức đóng này mới là ước tính, tôi sẽ xác nhận với quán và công ty rồi báo mọi người.",
+      "terms": [
+        "参加費",
+        "概算"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～なので、～てからお知らせします"
+    },
+    {
+      "id": "T-117-V13-008",
+      "group": "budget",
+      "role_vi": "Người tổ chức hỏi ai chịu phí phát sinh",
+      "gender": "male",
+      "ja": "追加料金がかかる場合は、誰が負担するか先に確認しておきましょう。",
+      "vi": "Nếu phát sinh phí thì mình hỏi trước ai sẽ chịu khoản đó nhé.",
+      "terms": [
+        "追加料金",
+        "負担する"
+      ],
+      "scenes": [
+        "S003",
+        "S022"
+      ],
+      "pattern": "～場合は、～か先に確認しておきましょう"
+    },
+    {
+      "id": "T-117-V13-009",
+      "group": "book",
+      "role_vi": "Người tổ chức hỏi chỗ cho cả nhóm",
+      "gender": "female",
+      "ja": "会社の集まりで十八人ですが、全員で座れる席はありますか。",
+      "vi": "Công ty tôi có buổi gặp 18 người, quán có chỗ cho cả nhóm ngồi cùng nhau không ạ?",
+      "terms": [],
+      "scenes": [
+        "S010",
+        "S011",
+        "S014"
+      ],
+      "pattern": "～ですが、～はありますか"
+    },
+    {
+      "id": "T-117-V13-010",
+      "group": "book",
+      "role_vi": "Người tổ chức hỏi giờ khác khi quán đã kín",
+      "gender": "male",
+      "ja": "その時間が満席なら、同じ日のもう少し遅い時間は空いていますか。",
+      "vi": "Nếu giờ đó đã kín chỗ, cùng ngày hôm đó muộn hơn một chút có còn bàn không ạ?",
+      "terms": [
+        "満席"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～なら、～は空いていますか"
+    },
+    {
+      "id": "T-117-V13-011",
+      "group": "book",
+      "role_vi": "Người tổ chức nhờ giữ chỗ tạm trong khi chờ quyết",
+      "gender": "female",
+      "ja": "参加者の人数をもう一度確認したいので、金曜まで仮押さえをお願いできますか。",
+      "vi": "Tôi muốn kiểm lại số người tham dự, chị giữ chỗ tạm giúp tôi đến thứ Sáu được không ạ?",
+      "terms": [
+        "参加者",
+        "仮押さえ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～たいので、～をお願いできますか"
+    },
+    {
+      "id": "T-117-V13-012",
+      "group": "book",
+      "role_vi": "Người tổ chức gọi chốt đặt và hỏi hạn đổi số",
+      "gender": "male",
+      "ja": "十八名で正式に予約したいのですが、人数変更の期限も教えていただけますか。",
+      "vi": "Tôi muốn đặt chính thức cho 18 người, chị cho tôi biết cả hạn đổi số người được không ạ?",
+      "terms": [
+        "予約する",
+        "人数変更",
+        "期限"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-117-V13-013",
+      "group": "comfort",
+      "role_vi": "Người tổ chức hỏi riêng nhu cầu trước khi chọn quán",
+      "gender": "female",
+      "ja": "お店を決める前に、避けたい食材があれば私に教えてください。",
+      "vi": "Trước khi chọn quán, nếu có nguyên liệu nào cần tránh thì anh báo tôi nhé.",
+      "terms": [
+        "食材"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を教えてください"
+    },
+    {
+      "id": "T-117-V13-014",
+      "group": "comfort",
+      "role_vi": "Người tổ chức hỏi bếp về nguy cơ dùng chung dụng cụ",
+      "gender": "male",
+      "ja": "えびのアレルギーがある方がいますが、調理器具や揚げ油は共用ですか。",
+      "vi": "Có người bị dị ứng tôm, quán có dùng chung dụng cụ nấu hoặc dầu chiên với món tôm không ạ?",
+      "terms": [
+        "アレルギー",
+        "調理器具",
+        "揚げ油"
+      ],
+      "scenes": [
+        "S009",
+        "S027"
+      ],
+      "pattern": "～がある方がいますが、～は共用ですか"
+    },
+    {
+      "id": "T-117-V13-015",
+      "group": "comfort",
+      "role_vi": "Người tổ chức bảo vệ quyền chọn đồ uống",
+      "gender": "female",
+      "ja": "乾杯はノンアルコールでも大丈夫なので、お酒は無理に勧めないでください。",
+      "vi": "Nâng ly bằng đồ không cồn cũng được, nên mọi người đừng nài ai uống rượu bia nhé.",
+      "terms": [
+        "ノンアルコール",
+        "勧める"
+      ],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "～でも大丈夫なので、～ないでください"
+    },
+    {
+      "id": "T-117-V13-016",
+      "group": "program",
+      "role_vi": "Người tổ chức hỏi người mới muốn giới thiệu những gì",
+      "gender": "female",
+      "ja": "歓迎会での紹介は、お名前と今のお仕事だけでよろしいですか。",
+      "vi": "Khi giới thiệu chị ở tiệc chào mừng, tôi chỉ nói tên và công việc hiện tại thôi, được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～だけでよろしいですか"
+    },
+    {
+      "id": "T-117-V13-017",
+      "group": "program",
+      "role_vi": "Người tổ chức để người chia tay chọn cách phát biểu",
+      "gender": "male",
+      "ja": "送別会の挨拶は、前に出る形と席で一言だけの形なら、どちらがいいですか。",
+      "vi": "Ở tiệc chia tay, chị muốn lên nói trước mọi người hay nói vài lời ngay tại bàn?",
+      "terms": [
+        "挨拶"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～なら、どちらがいいですか"
+    },
+    {
+      "id": "T-117-V13-018",
+      "group": "program",
+      "role_vi": "Người tổ chức báo người dẫn đổi thứ tự",
+      "gender": "female",
+      "ja": "挨拶をする方がまだ着いていないので、先に乾杯をお願いします。",
+      "vi": "Người nói lời chào vẫn chưa đến, anh mời mọi người nâng ly trước giúp tôi nhé.",
+      "terms": [
+        "挨拶"
+      ],
+      "scenes": [
+        "S030",
+        "S037"
+      ],
+      "pattern": "～ので、先に～をお願いします"
+    },
+    {
+      "id": "T-117-V13-019",
+      "group": "program",
+      "role_vi": "Người tổ chức báo lối vào mới cho khách đến muộn",
+      "gender": "male",
+      "ja": "部屋が変わったので、正面ではなく、商店街側の入口から入ってください。",
+      "vi": "Phòng đã đổi, anh vào từ cửa phía phố mua sắm, thay cho cửa chính nhé.",
+      "terms": [],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～が変わったので、～から入ってください"
+    },
+    {
+      "id": "T-117-V13-020",
+      "group": "close",
+      "role_vi": "Người tổ chức hỏi quán cách đổi số và phí khi có người vắng",
+      "gender": "female",
+      "ja": "二人来られなくなったのですが、人数を減らすとキャンセル料はかかりますか。",
+      "vi": "Có hai người không đến được nữa, nếu giảm số người thì có mất phí hủy không ạ?",
+      "terms": [
+        "キャンセル料"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～のですが、～とかかりますか"
+    },
+    {
+      "id": "T-117-V13-021",
+      "group": "close",
+      "role_vi": "Người tổ chức nhờ quán tách khoản trên bảng kê",
+      "gender": "male",
+      "ja": "料理代とキャンセル料を、明細に分けて書いていただけますか。",
+      "vi": "Chị ghi riêng tiền ăn và phí hủy trên bảng kê giúp tôi được không ạ?",
+      "terms": [
+        "キャンセル料",
+        "明細"
+      ],
+      "scenes": [
+        "S021",
+        "S022",
+        "S033"
+      ],
+      "pattern": "～を分けて～いただけますか"
+    },
+    {
+      "id": "T-117-V13-022",
+      "group": "close",
+      "role_vi": "Người tổ chức nhờ quán đối chiếu đồ uống tính thêm",
+      "gender": "female",
+      "ja": "追加の飲み物がコースに入っていたか、注文の控えで確認していただけますか。",
+      "vi": "Chị kiểm tra phiếu gọi món giúp xem đồ uống bị tính thêm có nằm trong suất không ạ?",
+      "terms": [
+        "コース",
+        "控え"
+      ],
+      "scenes": [
+        "S031",
+        "S032"
+      ],
+      "pattern": "～か、～で確認していただけますか"
+    },
+    {
+      "id": "T-117-V13-023",
+      "group": "close",
+      "role_vi": "Người tổ chức nói chưa thu thêm phí hủy từ khách",
+      "gender": "male",
+      "ja": "キャンセル料を誰が負担するかは経理に確認中なので、今は会費だけお願いします。",
+      "vi": "Kế toán vẫn đang kiểm tra xem ai chịu phí hủy, nên lúc này anh chỉ cần đóng tiền suất đã báo thôi.",
+      "terms": [
+        "キャンセル料",
+        "負担する",
+        "経理",
+        "会費"
+      ],
+      "scenes": [
+        "S033",
+        "S036"
+      ],
+      "pattern": "～ので、今は～だけお願いします"
+    },
+    {
+      "id": "T-117-V13-024",
+      "group": "close",
+      "role_vi": "Người tổ chức gọi về đồ quên thay đồng nghiệp",
+      "gender": "female",
+      "ja": "昨夜の会で忘れた灰色のマフラーは、何時から受け取りに行けますか。",
+      "vi": "Chiếc khăn quàng xám bỏ quên ở tiệc tối qua, mấy giờ thì có thể đến nhận ạ?",
+      "terms": [],
+      "scenes": [
+        "S034"
+      ],
+      "pattern": "～は、何時から～に行けますか"
+    }
+  ]
+}

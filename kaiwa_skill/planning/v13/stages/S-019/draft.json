@@ -1,0 +1,386 @@
+{
+  "code": "S-019",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "52905d1ed73aa9ea52ce759447f0d081fb2016303b512b1ffb4fc4a119c83401",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "arrival": "Báo đến và cập nhật khi đi muộn",
+    "meeting": "Xác nhận giờ xuất phát và điểm hẹn",
+    "partner": "Báo đã đến chỗ đối tác",
+    "returning": "Cập nhật lúc quay về",
+    "handoff": "Nhờ đồng nghiệp hỗ trợ và hỏi lại"
+  },
+  "items": [
+    {
+      "id": "S-019-V13-001",
+      "group": "arrival",
+      "role_vi": "Nhân viên báo trưởng nhóm vừa đến văn phòng",
+      "gender": "female",
+      "ja": "今、会社に着きました。",
+      "vi": "Tôi vừa đến công ty ạ.",
+      "terms": [
+        "今",
+        "着く"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "ima_place_ni_tsukimashita"
+    },
+    {
+      "id": "S-019-V13-002",
+      "group": "arrival",
+      "role_vi": "Nhân viên báo giờ mình bắt đầu ca",
+      "gender": "male",
+      "ja": "九時から仕事を始めます。",
+      "vi": "Tôi bắt đầu làm từ chín giờ ạ.",
+      "terms": [
+        "時",
+        "始める"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "kara_verb_masu"
+    },
+    {
+      "id": "S-019-V13-003",
+      "group": "arrival",
+      "role_vi": "Nhân viên gọi báo tàu mình đang đi bị trễ",
+      "gender": "female",
+      "ja": "電車が遅れています。",
+      "vi": "Tàu tôi đi đang bị trễ ạ.",
+      "terms": [
+        "電車",
+        "遅れる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "noun_ga_okureteimasu"
+    },
+    {
+      "id": "S-019-V13-004",
+      "group": "arrival",
+      "role_vi": "Nhân viên báo cho trưởng nhóm giờ đến dự kiến trên điện thoại",
+      "gender": "male",
+      "ja": "九時二十分ごろ会社に着きます。",
+      "vi": "Khoảng chín giờ hai mươi tôi sẽ đến công ty ạ.",
+      "terms": [
+        "時",
+        "分",
+        "ごろ",
+        "着く"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "time_goro_verb_masu"
+    },
+    {
+      "id": "S-019-V13-005",
+      "group": "arrival",
+      "role_vi": "Nhân viên nói lại đúng ga mình đang đứng để trưởng nhóm ước được giờ đến",
+      "gender": "female",
+      "ja": "今いるのは東京駅じゃなくて品川駅です。",
+      "vi": "Tôi đang ở ga Shinagawa, không phải ga Tokyo ạ.",
+      "terms": [
+        "今",
+        "駅"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "a_ja_nakute_b"
+    },
+    {
+      "id": "S-019-V13-006",
+      "group": "arrival",
+      "role_vi": "Nhân viên xin lỗi trưởng nhóm khi thực tế đến trễ",
+      "gender": "female",
+      "ja": "遅れてすみません。",
+      "vi": "Xin lỗi vì tôi đến trễ ạ.",
+      "terms": [
+        "遅れてすみません"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "okurete_sumimasen"
+    },
+    {
+      "id": "S-019-V13-007",
+      "group": "arrival",
+      "role_vi": "Nhân viên hỏi việc ưu tiên khi đã đến nơi làm việc",
+      "gender": "male",
+      "ja": "まず何をすればいいですか。",
+      "vi": "Trước hết tôi nên làm gì ạ?",
+      "terms": [
+        "まず"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "nani_wo_verb_ba"
+    },
+    {
+      "id": "S-019-V13-008",
+      "group": "meeting",
+      "role_vi": "Nhân viên hỏi giờ rời công ty để đi gặp đối tác với trưởng nhóm",
+      "gender": "female",
+      "ja": "何時に会社を出ますか。",
+      "vi": "Mình rời công ty lúc mấy giờ ạ?",
+      "terms": [
+        "時",
+        "出る"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "nanji_ni_verb_ka"
+    },
+    {
+      "id": "S-019-V13-009",
+      "group": "meeting",
+      "role_vi": "Trưởng nhóm hẹn địa điểm tập trung trước chuyến đi",
+      "gender": "male",
+      "ja": "十時に会社の入口で会いましょう。",
+      "vi": "Mười giờ mình gặp ở cửa ra vào công ty nhé.",
+      "terms": [
+        "時",
+        "入口",
+        "会う"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "time_place_mashou"
+    },
+    {
+      "id": "S-019-V13-010",
+      "group": "meeting",
+      "role_vi": "Nhân viên kiểm lối vào sau khi điểm gặp đổi tòa nhà",
+      "gender": "female",
+      "ja": "南の建物の正面入口ですね。",
+      "vi": "Cửa chính của tòa phía nam, đúng không ạ?",
+      "terms": [
+        "南",
+        "建物",
+        "正面",
+        "入口"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "detail_desu_ne"
+    },
+    {
+      "id": "S-019-V13-011",
+      "group": "partner",
+      "role_vi": "Nhân viên báo lễ tân đối tác rằng mình đến theo hẹn với Sato",
+      "gender": "female",
+      "ja": "佐藤さんと会う約束で来ました。",
+      "vi": "Tôi đến theo hẹn với anh Sato ạ.",
+      "terms": [
+        "会う",
+        "約束"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "yakusoku_de_kimashita"
+    },
+    {
+      "id": "S-019-V13-012",
+      "group": "partner",
+      "role_vi": "Khách gọi người hẹn và báo vị trí mình đang chờ",
+      "gender": "male",
+      "ja": "南の建物の受付にいます。",
+      "vi": "Tôi đang ở quầy lễ tân của tòa phía nam ạ.",
+      "terms": [
+        "南",
+        "建物",
+        "受付"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "place_ni_imasu"
+    },
+    {
+      "id": "S-019-V13-013",
+      "group": "partner",
+      "role_vi": "Người hẹn báo khách sẽ xuống sảnh từ tầng hai ngay",
+      "gender": "male",
+      "ja": "今、二階から下ります。",
+      "vi": "Giờ tôi xuống từ tầng hai ạ.",
+      "terms": [
+        "今",
+        "階",
+        "下りる"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "kara_verb_masu"
+    },
+    {
+      "id": "S-019-V13-014",
+      "group": "returning",
+      "role_vi": "Nhân viên báo cho đối tác mốc dự định quay về văn phòng",
+      "gender": "female",
+      "ja": "三時に会社に戻る予定です。",
+      "vi": "Tôi dự định về công ty lúc ba giờ ạ.",
+      "terms": [
+        "時",
+        "戻る",
+        "予定"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "verb_yotei_desu"
+    },
+    {
+      "id": "S-019-V13-015",
+      "group": "returning",
+      "role_vi": "Nhân viên gọi báo đã hoàn tất việc ở chỗ đối tác sớm",
+      "gender": "male",
+      "ja": "取引先での仕事が早く終わりました。",
+      "vi": "Việc ở chỗ đối tác xong sớm rồi ạ.",
+      "terms": [
+        "取引先",
+        "早い",
+        "終わる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "noun_ga_past"
+    },
+    {
+      "id": "S-019-V13-016",
+      "group": "returning",
+      "role_vi": "Nhân viên báo sẽ quay về công ty ngay khi xong việc ngoài",
+      "gender": "female",
+      "ja": "今から会社に戻ります。",
+      "vi": "Bây giờ tôi sẽ về công ty ạ.",
+      "terms": [
+        "今",
+        "戻る"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "ima_kara_verb_masu"
+    },
+    {
+      "id": "S-019-V13-017",
+      "group": "returning",
+      "role_vi": "Nhân viên đang ở chỗ đối tác gọi báo không kịp về họp",
+      "gender": "female",
+      "ja": "三時の会議に間に合いません。",
+      "vi": "Tôi sẽ không kịp cuộc họp lúc ba giờ ạ.",
+      "terms": [
+        "時",
+        "会議",
+        "間に合う"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "noun_ni_maniaimasen"
+    },
+    {
+      "id": "S-019-V13-018",
+      "group": "returning",
+      "role_vi": "Trưởng nhóm hỏi thời gian nhân viên có thể về lại văn phòng",
+      "gender": "male",
+      "ja": "何時ごろ戻れそうですか。",
+      "vi": "Khoảng mấy giờ chị về được ạ?",
+      "terms": [
+        "時",
+        "ごろ",
+        "戻る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "time_goro_potential_sou"
+    },
+    {
+      "id": "S-019-V13-019",
+      "group": "handoff",
+      "role_vi": "Nhân viên không kịp họp nhờ đồng nghiệp nói phần mở đầu hộ",
+      "gender": "female",
+      "ja": "会議の最初の説明をお願いできますか。",
+      "vi": "Anh trình bày giúp tôi phần mở đầu cuộc họp được không ạ?",
+      "terms": [
+        "会議",
+        "最初"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "noun_wo_onegai_dekimasu"
+    },
+    {
+      "id": "S-019-V13-020",
+      "group": "handoff",
+      "role_vi": "Nhân viên hứa gửi ngay ghi chú để đồng nghiệp trình bày",
+      "gender": "female",
+      "ja": "会議のメモを今送ります。",
+      "vi": "Tôi gửi ghi chú cuộc họp ngay nhé.",
+      "terms": [
+        "会議",
+        "メモ",
+        "今",
+        "送る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "ima_verb_masu"
+    },
+    {
+      "id": "S-019-V13-021",
+      "group": "handoff",
+      "role_vi": "Nhân viên nhờ đồng nghiệp cập nhật phần họp đã bỏ lỡ",
+      "gender": "male",
+      "ja": "会議では何ページ目まで話しましたか。",
+      "vi": "Trong cuộc họp mọi người đã trao đổi đến hết trang mấy rồi ạ?",
+      "terms": [
+        "会議",
+        "ページ",
+        "目"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "nani_made_verb_past"
+    },
+    {
+      "id": "S-019-V13-022",
+      "group": "handoff",
+      "role_vi": "Người vừa trở lại văn phòng báo sẽ xem tiếp từ trang hai",
+      "gender": "female",
+      "ja": "資料は二ページ目から確認します。",
+      "vi": "Tôi sẽ xem tài liệu từ trang hai trở đi ạ.",
+      "terms": [
+        "資料",
+        "ページ",
+        "目",
+        "確認する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "kara_verb_masu"
+    }
+  ]
+}

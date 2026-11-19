@@ -1,0 +1,433 @@
+{
+  "code": "H-014",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "e3d687272b450b385a08fe9b997e307ecc3a8a8e7abc5ce4a6ca765006bc5a05",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "breakdown": "Tách đơn giá, đóng gói và cước giao",
+    "volume": "Thương lượng lượng đặt và số chuyến giao",
+    "quality": "Kiểm vật liệu thay thế và giữ hạn giao",
+    "review": "Nói rõ điều còn chờ duyệt hoặc kiểm",
+    "confirm": "Xác nhận giá và kiểm đợt giao đầu"
+  },
+  "items": [
+    {
+      "id": "H-014-V13-001",
+      "group": "breakdown",
+      "role_vi": "Người mua hỏi cước đã nằm trong đơn giá chưa",
+      "gender": "male",
+      "ja": "この単価に配送費は含まれていますか。",
+      "vi": "Đơn giá này đã bao gồm cước giao hàng chưa ạ?",
+      "terms": [
+        "単価",
+        "配送費"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～に～は含まれていますか"
+    },
+    {
+      "id": "H-014-V13-002",
+      "group": "breakdown",
+      "role_vi": "Người mua hỏi nguyên nhân đơn giá tăng",
+      "gender": "female",
+      "ja": "前回より単価が上がった主な理由を教えていただけますか。",
+      "vi": "Anh cho tôi biết lý do chính khiến đơn giá tăng so với lần trước được không ạ?",
+      "terms": [
+        "単価"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-014-V13-003",
+      "group": "breakdown",
+      "role_vi": "Nhà cung cấp tách khoản đóng gói với vận chuyển",
+      "gender": "female",
+      "ja": "小口に分ける梱包の費用は単価に含まれますが、配送費は別途かかります。",
+      "vi": "Đơn giá đã gồm tiền đóng gói thành các lô nhỏ, còn cước giao hàng tính riêng ạ.",
+      "terms": [
+        "小口",
+        "梱包",
+        "単価",
+        "配送費",
+        "別途"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～は含まれますが、～は別途かかります"
+    },
+    {
+      "id": "H-014-V13-004",
+      "group": "breakdown",
+      "role_vi": "Người mua yêu cầu trình bày riêng các khoản",
+      "gender": "male",
+      "ja": "見積もりの内訳では、商品代と配送費を分けていただけますか。",
+      "vi": "Trong bảng chi tiết báo giá, chị tách riêng tiền hàng và cước giao giúp tôi được không ạ?",
+      "terms": [
+        "見積もり",
+        "内訳",
+        "配送費"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～を分けていただけますか"
+    },
+    {
+      "id": "H-014-V13-005",
+      "group": "volume",
+      "role_vi": "Người mua yêu cầu so sánh hai lượng đặt trên cùng điều kiện",
+      "gender": "female",
+      "ja": "納品回数は同じ条件で、五百個と八百個の単価を比べていただけますか。",
+      "vi": "Anh so giúp tôi đơn giá khi đặt 500 và 800 chiếc với cùng số lần giao được không ạ?",
+      "terms": [
+        "納品回数",
+        "単価"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "～は同じ条件で、～を比べていただけますか"
+    },
+    {
+      "id": "H-014-V13-006",
+      "group": "volume",
+      "role_vi": "Người mua thăm dò đơn giá khi đặt đều",
+      "gender": "male",
+      "ja": "月五百個を三か月続けて発注する場合、単価を見直していただける余地はありますか。",
+      "vi": "Nếu đặt đều 500 chiếc mỗi tháng trong ba tháng, bên chị còn có thể điều chỉnh đơn giá không ạ?",
+      "terms": [
+        "発注する",
+        "単価",
+        "余地"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～場合、～余地はありますか"
+    },
+    {
+      "id": "H-014-V13-007",
+      "group": "volume",
+      "role_vi": "Nhà cung cấp gắn đơn giá thấp hơn với lượng tối thiểu",
+      "gender": "female",
+      "ja": "税抜き九百五十円を適用できるのは、一回の発注が八百個以上の場合です。",
+      "vi": "Bên tôi có thể áp đơn giá 950 yên chưa thuế khi mỗi đơn đặt từ 800 chiếc trở lên ạ.",
+      "terms": [
+        "税抜き",
+        "適用する"
+      ],
+      "scenes": [
+        "S006",
+        "S013"
+      ],
+      "pattern": "～を適用できるのは、～の場合です"
+    },
+    {
+      "id": "H-014-V13-008",
+      "group": "volume",
+      "role_vi": "Người mua báo nội bộ cần tính tổng tiền",
+      "gender": "male",
+      "ja": "単価が下がっても発注数量が増えるので、総額は別に試算する必要があります。",
+      "vi": "Dù đơn giá giảm, số lượng đặt sẽ tăng, nên mình vẫn phải tính thử riêng tổng tiền.",
+      "terms": [
+        "単価",
+        "数量",
+        "総額",
+        "試算する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ても、～ので、～必要があります"
+    },
+    {
+      "id": "H-014-V13-009",
+      "group": "volume",
+      "role_vi": "Người mua tìm cách hạ cước khi giá hàng không đổi",
+      "gender": "female",
+      "ja": "商品単価はそのままで、納品回数を月二回から一回に減らした場合の配送費を試算していただけますか。",
+      "vi": "Nếu giữ nguyên đơn giá hàng và giảm từ hai chuyến giao xuống một chuyến mỗi tháng, anh tính thử cước giúp tôi được không ạ?",
+      "terms": [
+        "単価",
+        "納品回数",
+        "配送費",
+        "試算する"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "～はそのままで、～場合の～を試算していただけますか"
+    },
+    {
+      "id": "H-014-V13-010",
+      "group": "volume",
+      "role_vi": "Người mua nhắc việc kho khi cân nhắc gộp chuyến",
+      "gender": "male",
+      "ja": "一括納品で配送費が下がっても、まとめて保管できるか倉庫に確認してから決めます。",
+      "vi": "Dù giao một đợt giúp giảm cước, tôi sẽ hỏi kho xem có chứa được cả lô cùng lúc không rồi mới quyết ạ.",
+      "terms": [
+        "一括納品",
+        "配送費"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ても、～か確認してから決めます"
+    },
+    {
+      "id": "H-014-V13-011",
+      "group": "quality",
+      "role_vi": "Người mua hỏi đổi vật liệu tác động đến chất lượng nào",
+      "gender": "female",
+      "ja": "代替材料に変えると、箱を積み重ねたときの強度にどんな違いが出ますか。",
+      "vi": "Nếu đổi vật liệu, độ bền khi xếp chồng các hộp sẽ thay đổi thế nào ạ?",
+      "terms": [
+        "代替材料",
+        "強度"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～に変えると、～にどんな違いが出ますか"
+    },
+    {
+      "id": "H-014-V13-012",
+      "group": "quality",
+      "role_vi": "Người mua đề nghị thử mẫu trước khi chọn",
+      "gender": "male",
+      "ja": "サンプルを現場で試用して、棚への収まりと取り出しやすさを見てから決めます。",
+      "vi": "Chúng tôi sẽ dùng thử mẫu ở nơi làm việc, xem hộp có vừa kệ và dễ lấy ra không rồi mới quyết ạ.",
+      "terms": [
+        "試用"
+      ],
+      "scenes": [
+        "S010",
+        "S015",
+        "S016"
+      ],
+      "pattern": "～てから決めます"
+    },
+    {
+      "id": "H-014-V13-013",
+      "group": "quality",
+      "role_vi": "Người mua nhắc mẫu rẻ hơn còn chưa được đánh giá",
+      "gender": "female",
+      "ja": "代替材料は見積もりが出ただけで、強度も使い勝手もまだ未評価です。",
+      "vi": "Vật liệu thay thế mới có báo giá, còn cả độ bền lẫn mức dễ dùng đều chưa được đánh giá.",
+      "terms": [
+        "代替材料",
+        "見積もり",
+        "強度",
+        "使い勝手",
+        "未評価"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～が出ただけで、～はまだ未評価です"
+    },
+    {
+      "id": "H-014-V13-014",
+      "group": "quality",
+      "role_vi": "Nhà cung cấp nói rõ đổi cước sẽ đổi mốc giao",
+      "gender": "female",
+      "ja": "配送費を抑えるために次の便にまとめると、納期は一週間後ろにずれます。",
+      "vi": "Nếu gộp vào chuyến sau để giảm cước, ngày giao sẽ lùi một tuần ạ.",
+      "terms": [
+        "配送費",
+        "納期"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ために～と、～がずれます"
+    },
+    {
+      "id": "H-014-V13-015",
+      "group": "quality",
+      "role_vi": "Người mua giữ mốc giao và tìm khoản khác",
+      "gender": "male",
+      "ja": "納期は変えずに、梱包の分け方で費用を抑えられる余地はありますか。",
+      "vi": "Nếu vẫn giữ hạn giao, mình có thể giảm chi phí bằng cách đổi cách chia kiện không ạ?",
+      "terms": [
+        "納期",
+        "梱包",
+        "余地"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～は変えずに、～余地はありますか"
+    },
+    {
+      "id": "H-014-V13-016",
+      "group": "review",
+      "role_vi": "Người mua nói rõ mức hiện tại còn chờ duyệt",
+      "gender": "male",
+      "ja": "今の見積もりではまだ社内決裁が下りていないので、単価以外で動かせる条件を教えていただけますか。",
+      "vi": "Báo giá hiện tại bên tôi vẫn chưa duyệt, chị cho biết ngoài đơn giá còn điều kiện nào có thể điều chỉnh được không ạ?",
+      "terms": [
+        "見積もり",
+        "社内決裁",
+        "単価"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-014-V13-017",
+      "group": "review",
+      "role_vi": "Người mua khép thương lượng khi nhà cung cấp chạm giới hạn",
+      "gender": "female",
+      "ja": "これ以上の値下げが難しければ、必要な数量と納期を見直してから発注するかお返事します。",
+      "vi": "Nếu khó giảm thêm, tôi sẽ xem lại lượng cần đặt và hạn giao rồi báo anh bên tôi có đặt hàng không ạ.",
+      "terms": [
+        "数量",
+        "納期",
+        "発注する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～が難しければ、～してから～します"
+    },
+    {
+      "id": "H-014-V13-018",
+      "group": "review",
+      "role_vi": "Người mua xin xem lại khi có số dùng thực tế",
+      "gender": "male",
+      "ja": "次の四半期の使用実績が出たら、発注数量と納品回数を改めてご相談してもよろしいでしょうか。",
+      "vi": "Khi có số dùng thực tế của quý tới, tôi xin bàn lại với chị về lượng đặt và số chuyến giao, được không ạ?",
+      "terms": [
+        "四半期",
+        "実績",
+        "数量",
+        "納品回数"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～が出たら、改めて～してもよろしいでしょうか"
+    },
+    {
+      "id": "H-014-V13-019",
+      "group": "review",
+      "role_vi": "Người mua dùng dữ liệu mới để xin tính lại",
+      "gender": "female",
+      "ja": "月平均六百個という使用実績を基に、単価と配送費を見積もり直していただけますか。",
+      "vi": "Dựa trên số dùng thực tế bình quân 600 chiếc một tháng, anh báo lại giúp tôi đơn giá và cước giao được không ạ?",
+      "terms": [
+        "月平均",
+        "実績",
+        "単価",
+        "配送費"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～を基に、～していただけますか"
+    },
+    {
+      "id": "H-014-V13-020",
+      "group": "confirm",
+      "role_vi": "Người mua xác nhận giá, lượng, cước và ngày giao mong muốn",
+      "gender": "male",
+      "ja": "五百個で単価は税抜き千円、配送費は別で、六月二十日は希望納期という理解でよろしいですか。",
+      "vi": "Tôi xin xác nhận, đơn 500 chiếc với đơn giá 1.000 yên chưa thuế, cước giao tính riêng, ngày 20 tháng Sáu là ngày giao mong muốn, đúng không ạ?",
+      "terms": [
+        "単価",
+        "税抜き",
+        "配送費",
+        "納期"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～という理解でよろしいですか"
+    },
+    {
+      "id": "H-014-V13-021",
+      "group": "confirm",
+      "role_vi": "Người mua sửa nhầm lẫn về cách báo thuế",
+      "gender": "female",
+      "ja": "千円は税抜きの単価ですので、税込みの単価も見積もりに併記していただけますか。",
+      "vi": "1.000 yên là đơn giá chưa thuế, anh ghi kèm mức đã gồm thuế trong báo giá giúp tôi được không ạ?",
+      "terms": [
+        "税抜き",
+        "単価",
+        "税込み",
+        "見積もり"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～ですので、～も併記していただけますか"
+    },
+    {
+      "id": "H-014-V13-022",
+      "group": "confirm",
+      "role_vi": "Người mua báo nội bộ điều vẫn chờ xác nhận",
+      "gender": "male",
+      "ja": "税込み単価は千百円で確認できましたが、配送費と納品日はまだ先方の返事待ちです。",
+      "vi": "Đơn giá đã gồm thuế là 1.100 yên thì đã xác nhận, còn cước và ngày giao vẫn đang chờ bên kia trả lời.",
+      "terms": [
+        "税込み",
+        "単価",
+        "配送費"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～は確認できましたが、～はまだ返事待ちです"
+    },
+    {
+      "id": "H-014-V13-023",
+      "group": "confirm",
+      "role_vi": "Người mua đối chiếu chứng từ ở đợt đầu",
+      "gender": "female",
+      "ja": "初回分は、出荷数と請求書に記載されている商品単価を確認させてください。",
+      "vi": "Với lô đầu, cho tôi đối chiếu số lượng đã xuất và đơn giá hàng ghi trên hóa đơn ạ.",
+      "terms": [
+        "初回",
+        "出荷数",
+        "単価"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～を確認させてください"
+    },
+    {
+      "id": "H-014-V13-024",
+      "group": "confirm",
+      "role_vi": "Người mua nói bước sẽ làm khi lô đầu đến",
+      "gender": "male",
+      "ja": "初回の受け入れ検査で数量の過不足や不良品が見つかった場合は、すぐにご連絡します。",
+      "vi": "Khi kiểm nhận lô đầu, nếu phát hiện thừa thiếu số lượng hoặc có hàng lỗi, tôi sẽ báo ngay ạ.",
+      "terms": [
+        "初回",
+        "受け入れ検査",
+        "数量",
+        "過不足",
+        "不良品"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～場合は、すぐに～します"
+    }
+  ]
+}

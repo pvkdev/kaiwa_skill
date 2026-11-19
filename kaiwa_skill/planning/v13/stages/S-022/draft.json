@@ -1,0 +1,386 @@
+{
+  "code": "S-022",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "2a6664dfdb4887b92ac656122d88cab9080fa54d85672ab95bdff062202cf0a0",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "first": "Hỏi bàn làm việc, người hướng dẫn và số lượng",
+    "material": "Đối chiếu mẫu, nhãn và vật liệu",
+    "permission": "Xin phép trước khi vào hoặc dùng máy",
+    "noise": "Báo tiếng máy lạ sau khi dừng việc",
+    "shift": "Chốt điều đã kiểm và bàn giao ca"
+  },
+  "items": [
+    {
+      "id": "S-022-V13-001",
+      "group": "first",
+      "role_vi": "Công nhân mới hỏi giám sát khu mình làm hôm nay",
+      "gender": "female",
+      "ja": "今日はどこで作業しますか。",
+      "vi": "Hôm nay tôi làm ở đâu ạ?",
+      "terms": [
+        "作業"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "doko_de_verb_masu"
+    },
+    {
+      "id": "S-022-V13-002",
+      "group": "first",
+      "role_vi": "Giám sát chỉ bàn được giao cho công nhân",
+      "gender": "male",
+      "ja": "今日はAの作業台です。",
+      "vi": "Hôm nay chị làm ở bàn thao tác A nhé.",
+      "terms": [
+        "作業台"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "kyou_wa_place_desu"
+    },
+    {
+      "id": "S-022-V13-003",
+      "group": "first",
+      "role_vi": "Giám sát nhận trực tiếp hướng dẫn công nhân mới",
+      "gender": "male",
+      "ja": "今日は私が説明します。",
+      "vi": "Hôm nay tôi sẽ trực tiếp hướng dẫn chị.",
+      "terms": [
+        "説明する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "watashi_ga_verb_masu"
+    },
+    {
+      "id": "S-022-V13-004",
+      "group": "first",
+      "role_vi": "Công nhân hỏi lại mình kiểm đúng 20 chi tiết P",
+      "gender": "female",
+      "ja": "Pの部品を二十個検査するんですね。",
+      "vi": "Tôi kiểm hai mươi chi tiết loại P, đúng không ạ?",
+      "terms": [
+        "部品",
+        "個",
+        "検査する"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "detail_n_desu_ne"
+    },
+    {
+      "id": "S-022-V13-005",
+      "group": "material",
+      "role_vi": "Công nhân dùng mẫu để xác nhận đúng loại chi tiết",
+      "gender": "female",
+      "ja": "今日の部品はこの見本と同じですか。",
+      "vi": "Chi tiết hôm nay có cùng loại với mẫu này không ạ?",
+      "terms": [
+        "部品",
+        "見本",
+        "同じ"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "noun_wa_onaji"
+    },
+    {
+      "id": "S-022-V13-006",
+      "group": "material",
+      "role_vi": "Công nhân hỏi vật liệu hôm nay có phải ở hộp xanh không",
+      "gender": "female",
+      "ja": "今日の材料は青い箱に入っていますか。",
+      "vi": "Vật liệu hôm nay nằm trong hộp màu xanh phải không ạ?",
+      "terms": [
+        "材料",
+        "青い",
+        "箱"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "place_ni_haitteimasu"
+    },
+    {
+      "id": "S-022-V13-007",
+      "group": "material",
+      "role_vi": "Giám sát dặn không dùng hộp có nhãn sai",
+      "gender": "male",
+      "ja": "この箱は使わないでください。",
+      "vi": "Chị đừng dùng hộp này nhé.",
+      "terms": [
+        "箱",
+        "使う"
+      ],
+      "scenes": [
+        "S010",
+        "S012"
+      ],
+      "pattern": "nai_de_kudasai"
+    },
+    {
+      "id": "S-022-V13-008",
+      "group": "material",
+      "role_vi": "Công nhân báo bảng nhãn khác nội dung được giao trước khi bắt đầu",
+      "gender": "female",
+      "ja": "このラベルは指示と違います。",
+      "vi": "Nhãn này khác với chỉ dẫn ạ.",
+      "terms": [
+        "ラベル",
+        "指示",
+        "違う"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "noun_wa_to_chigaimasu"
+    },
+    {
+      "id": "S-022-V13-009",
+      "group": "material",
+      "role_vi": "Giám sát giao đếm nhãn ở bàn A thay cho công đoạn trước",
+      "gender": "male",
+      "ja": "Aの作業台でラベルを十枚数えてください。",
+      "vi": "Chị đếm mười nhãn ở bàn thao tác A nhé.",
+      "terms": [
+        "作業台",
+        "ラベル",
+        "枚",
+        "数える"
+      ],
+      "scenes": [
+        "S008",
+        "S012"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-022-V13-010",
+      "group": "permission",
+      "role_vi": "Công nhân hỏi hôm nay đã được phép vào khu B chưa",
+      "gender": "female",
+      "ja": "今日はBの場所に入ってもいいですか。",
+      "vi": "Hôm nay tôi vào khu B được không ạ?",
+      "terms": [
+        "場所",
+        "入る"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-022-V13-011",
+      "group": "permission",
+      "role_vi": "Giám sát báo sẽ kiểm trước khi cho biết có thể vào khu B không",
+      "gender": "male",
+      "ja": "Bの機械を確認してから連絡します。",
+      "vi": "Tôi kiểm tra máy khu B xong sẽ báo chị ạ.",
+      "terms": [
+        "機械",
+        "確認する",
+        "連絡する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "te_kara_verb_masu"
+    },
+    {
+      "id": "S-022-V13-012",
+      "group": "permission",
+      "role_vi": "Công nhân báo chưa được chỉ cách dùng máy",
+      "gender": "female",
+      "ja": "この機械の使い方はまだ聞いていません。",
+      "vi": "Tôi chưa được hướng dẫn cách dùng máy này ạ.",
+      "terms": [
+        "機械"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "mada_negative"
+    },
+    {
+      "id": "S-022-V13-013",
+      "group": "permission",
+      "role_vi": "Giám sát yêu cầu chưa chạm vào máy khi chưa hướng dẫn",
+      "gender": "male",
+      "ja": "今は機械に触らないでください。",
+      "vi": "Bây giờ chị chưa được chạm vào máy nhé.",
+      "terms": [
+        "機械",
+        "触る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "nai_de_kudasai"
+    },
+    {
+      "id": "S-022-V13-014",
+      "group": "permission",
+      "role_vi": "Công nhân xin việc khác có thể làm khi chờ được hướng dẫn",
+      "gender": "female",
+      "ja": "待っている間に何かできる作業はありますか。",
+      "vi": "Trong lúc chờ, có việc gì tôi làm được không ạ?",
+      "terms": [
+        "待つ",
+        "作業"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-022-V13-015",
+      "group": "noise",
+      "role_vi": "Công nhân báo giám sát vị trí máy phát tiếng lạ",
+      "gender": "female",
+      "ja": "Aの機械から変な音がします。",
+      "vi": "Máy ở khu A phát tiếng lạ ạ.",
+      "terms": [
+        "機械",
+        "変",
+        "音"
+      ],
+      "scenes": [
+        "S011",
+        "S013"
+      ],
+      "pattern": "noun_kara_oto_ga_suru"
+    },
+    {
+      "id": "S-022-V13-016",
+      "group": "noise",
+      "role_vi": "Công nhân nói rõ đã dừng việc khi nghe thấy tiếng lạ",
+      "gender": "female",
+      "ja": "変な音がしたので作業を止めました。",
+      "vi": "Tôi đã dừng công việc vì nghe tiếng lạ ạ.",
+      "terms": [
+        "変",
+        "音",
+        "作業",
+        "止める"
+      ],
+      "scenes": [
+        "S011",
+        "S013"
+      ],
+      "pattern": "node_verb_past"
+    },
+    {
+      "id": "S-022-V13-017",
+      "group": "noise",
+      "role_vi": "Giám sát đã nghe báo tiếng lạ và dặn công nhân đứng xa máy",
+      "gender": "male",
+      "ja": "機械から離れて待ってください。",
+      "vi": "Chị đứng cách xa máy và chờ nhé.",
+      "terms": [
+        "機械",
+        "離れる",
+        "待つ"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-022-V13-018",
+      "group": "noise",
+      "role_vi": "Công nhân nói với giám sát chưa hề mở máy để xem",
+      "gender": "female",
+      "ja": "機械は開けていません。",
+      "vi": "Tôi chưa mở máy ạ.",
+      "terms": [
+        "機械",
+        "開ける"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "teimasen"
+    },
+    {
+      "id": "S-022-V13-019",
+      "group": "shift",
+      "role_vi": "Công nhân hỏi ai xác nhận lô đầu trước khi làm tiếp",
+      "gender": "female",
+      "ja": "最初に検査した部品は、誰が確認しますか。",
+      "vi": "Ai kiểm lại lô chi tiết đầu tiên ạ?",
+      "terms": [
+        "検査する",
+        "部品",
+        "確認する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "dare_ga_verb_ka"
+    },
+    {
+      "id": "S-022-V13-020",
+      "group": "shift",
+      "role_vi": "Công nhân bàn giao rằng mình đã kiểm đủ 20 chi tiết",
+      "gender": "female",
+      "ja": "Pの部品は二十個検査しました。",
+      "vi": "Tôi đã kiểm tra hai mươi chi tiết P rồi ạ.",
+      "terms": [
+        "部品",
+        "個",
+        "検査する"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "quantity_verb_past"
+    },
+    {
+      "id": "S-022-V13-021",
+      "group": "shift",
+      "role_vi": "Công nhân ca trước báo lô đầu vẫn chờ giám sát xác nhận",
+      "gender": "male",
+      "ja": "最初の部品は森さんの確認待ちです。",
+      "vi": "Lô chi tiết đầu tiên vẫn đang chờ anh Mori kiểm lại ạ.",
+      "terms": [
+        "部品",
+        "確認待ち"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "noun_wa_status_desu"
+    },
+    {
+      "id": "S-022-V13-022",
+      "group": "shift",
+      "role_vi": "Người ca sau xác nhận sẽ hỏi đúng đầu mối trước khi làm thêm",
+      "gender": "male",
+      "ja": "森さんに確認してから次の作業を始めます。",
+      "vi": "Tôi sẽ hỏi anh Mori xác nhận rồi mới bắt đầu công đoạn tiếp theo ạ.",
+      "terms": [
+        "確認する",
+        "作業",
+        "始める"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "te_kara_verb_masu"
+    }
+  ]
+}

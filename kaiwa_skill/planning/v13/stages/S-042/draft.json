@@ -1,0 +1,402 @@
+{
+  "code": "S-042",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "68c04052ff6809030575669f8da2f8c208227599c743da340796ba123a3c0954",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "friend": "Gọi cho bạn và hẹn gọi lại",
+    "teacher": "Xưng tên, hỏi thầy cô và nhờ nhắn",
+    "reserve": "Đặt bàn và nhắc chính xác thông tin",
+    "late": "Báo muộn và đổi giờ đã đặt"
+  },
+  "items": [
+    {
+      "id": "S-042-V13-001",
+      "group": "friend",
+      "role_vi": "Người gọi điện cho bạn",
+      "gender": "male",
+      "ja": "もしもし、今ちょっと話せる？",
+      "vi": "A lô, giờ cậu nói chuyện một chút được không?",
+      "terms": [
+        "もしもし",
+        "話す"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "今、話せる？"
+    },
+    {
+      "id": "S-042-V13-002",
+      "group": "friend",
+      "role_vi": "Người gọi điện cho bạn",
+      "gender": "male",
+      "ja": "明日の約束の時間を確かめたくて電話したよ。",
+      "vi": "Tớ gọi để hỏi lại giờ hẹn ngày mai nhé.",
+      "terms": [
+        "約束",
+        "確かめる",
+        "電話する"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "〜たくて電話しました"
+    },
+    {
+      "id": "S-042-V13-003",
+      "group": "friend",
+      "role_vi": "Người gọi điện cho bạn",
+      "gender": "male",
+      "ja": "名前がよく聞こえなかったから、もう一度言ってくれる？",
+      "vi": "Tớ nghe không rõ tên cậu, cậu nói lại một lần nữa được không?",
+      "terms": [
+        "名前",
+        "聞こえる",
+        "もう一度"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "もう一度〜てくれる？"
+    },
+    {
+      "id": "S-042-V13-004",
+      "group": "friend",
+      "role_vi": "Người gọi điện cho bạn",
+      "gender": "male",
+      "ja": "電話番号を間違えたみたいだから、確かめてからかけ直すね。",
+      "vi": "Hình như tớ bấm nhầm số, tớ kiểm lại rồi gọi lại nhé.",
+      "terms": [
+        "電話番号",
+        "間違える",
+        "確かめる",
+        "かけ直す"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜てからかけ直します"
+    },
+    {
+      "id": "S-042-V13-005",
+      "group": "friend",
+      "role_vi": "Người gọi điện cho bạn",
+      "gender": "male",
+      "ja": "今話せないなら、夜七時にかけ直すね。",
+      "vi": "Nếu giờ cậu chưa nói chuyện được, tối bảy giờ tớ gọi lại nhé.",
+      "terms": [
+        "話す",
+        "〜時",
+        "かけ直す"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "〜なら、かけ直します"
+    },
+    {
+      "id": "S-042-V13-006",
+      "group": "teacher",
+      "role_vi": "Học viên gọi cho cô giáo",
+      "gender": "male",
+      "ja": "もしもし、森先生、グエンですが、今お話ししてもよろしいですか。",
+      "vi": "A lô, cô Mori ạ, em là Nguyễn, giờ cô có tiện nói chuyện một chút không ạ?",
+      "terms": [
+        "もしもし",
+        "先生",
+        "話す",
+        "よろしい"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "今お話ししてもよろしいですか"
+    },
+    {
+      "id": "S-042-V13-007",
+      "group": "teacher",
+      "role_vi": "Học viên gọi cho cô giáo",
+      "gender": "male",
+      "ja": "夜分にお電話してすみません。",
+      "vi": "Em xin lỗi vì gọi cho cô muộn thế này ạ.",
+      "terms": [
+        "夜分",
+        "電話する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜てすみません"
+    },
+    {
+      "id": "S-042-V13-008",
+      "group": "teacher",
+      "role_vi": "Học viên gọi cho cô giáo",
+      "gender": "male",
+      "ja": "明日の授業は九時からでよろしいでしょうか。",
+      "vi": "Cho em hỏi lớp ngày mai bắt đầu lúc 9 giờ đúng không ạ?",
+      "terms": [
+        "授業",
+        "〜時",
+        "よろしい"
+      ],
+      "scenes": [
+        "S007",
+        "S010"
+      ],
+      "pattern": "〜でよろしいでしょうか"
+    },
+    {
+      "id": "S-042-V13-009",
+      "group": "teacher",
+      "role_vi": "Học viên nói với người nhà cô giáo",
+      "gender": "male",
+      "ja": "グエンと申しますが、森先生はいらっしゃいますか。",
+      "vi": "Cháu là Nguyễn, cho cháu hỏi cô Mori có nhà không ạ?",
+      "terms": [
+        "申す",
+        "先生",
+        "いらっしゃる"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜と申しますが、いらっしゃいますか"
+    },
+    {
+      "id": "S-042-V13-010",
+      "group": "teacher",
+      "role_vi": "Học viên nói với người nhà cô giáo",
+      "gender": "male",
+      "ja": "私が午後六時にかけ直すと、森先生にお伝えいただけますか。",
+      "vi": "Bác nhắn giúp cháu với cô Mori là sáu giờ chiều cháu sẽ tự gọi lại được không ạ?",
+      "terms": [
+        "〜時",
+        "かけ直す",
+        "先生",
+        "伝える"
+      ],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "S-042-V13-011",
+      "group": "teacher",
+      "role_vi": "Học viên gọi cho cô giáo",
+      "gender": "male",
+      "ja": "先ほど授業のことでお電話したグエンです。",
+      "vi": "Em là Nguyễn, lúc nãy có gọi cho cô hỏi về buổi học ạ.",
+      "terms": [
+        "先ほど",
+        "授業",
+        "電話する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "先ほど〜した〜です"
+    },
+    {
+      "id": "S-042-V13-012",
+      "group": "teacher",
+      "role_vi": "Học viên gọi cho cô giáo",
+      "gender": "male",
+      "ja": "授業の時間を教えていただき、ありがとうございました。",
+      "vi": "Em cảm ơn cô đã cho em biết giờ học ạ.",
+      "terms": [
+        "授業"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜ていただき、ありがとうございました"
+    },
+    {
+      "id": "S-042-V13-013",
+      "group": "reserve",
+      "role_vi": "Khách gọi đặt bàn",
+      "gender": "male",
+      "ja": "二人で行きたいんですが、金曜日の夜七時は席が空いていますか。",
+      "vi": "Tối thứ Sáu lúc 7 giờ có bàn cho hai người không ạ?",
+      "terms": [
+        "〜人",
+        "金曜日",
+        "〜時",
+        "席",
+        "空く"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜は空いていますか"
+    },
+    {
+      "id": "S-042-V13-014",
+      "group": "reserve",
+      "role_vi": "Nhân viên nhận đặt bàn",
+      "gender": "female",
+      "ja": "七時は満席ですが、七時半なら二名様のお席が空いています。",
+      "vi": "Lúc 7 giờ đã hết bàn, nhưng 7 giờ rưỡi còn bàn cho hai người ạ.",
+      "terms": [
+        "〜時",
+        "満席",
+        "半",
+        "〜名",
+        "席",
+        "空く"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜ですが、〜なら空いています"
+    },
+    {
+      "id": "S-042-V13-015",
+      "group": "reserve",
+      "role_vi": "Khách gọi đặt bàn",
+      "gender": "male",
+      "ja": "予約は三人じゃなくて、二人でお願いします。",
+      "vi": "Chỗ tôi đặt là cho hai người, không phải ba ạ.",
+      "terms": [
+        "〜人"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜ではなく、〜でお願いします"
+    },
+    {
+      "id": "S-042-V13-016",
+      "group": "reserve",
+      "role_vi": "Khách gọi đặt bàn",
+      "gender": "male",
+      "ja": "予約の確認ですが、金曜日の夜七時にグエンの名前で二人ですね。",
+      "vi": "Cho tôi xác nhận, tối thứ Sáu lúc 7 giờ có bàn cho hai người dưới tên Nguyễn, đúng không ạ?",
+      "terms": [
+        "金曜日",
+        "〜時",
+        "名前",
+        "〜人"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜の名前で〜ですね"
+    },
+    {
+      "id": "S-042-V13-017",
+      "group": "reserve",
+      "role_vi": "Khách gọi đặt bàn",
+      "gender": "male",
+      "ja": "今夜は満席とのことですので、また別の日にお電話します。",
+      "vi": "Vậy tối nay quán hết bàn rồi, hôm khác tôi sẽ gọi lại ạ.",
+      "terms": [
+        "満席",
+        "電話する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜ので、また〜ます"
+    },
+    {
+      "id": "S-042-V13-018",
+      "group": "late",
+      "role_vi": "Khách gọi đặt bàn",
+      "gender": "male",
+      "ja": "七時に予約したグエンですが、十分ほど遅れそうです。",
+      "vi": "Tôi là Nguyễn, có đặt bàn lúc 7 giờ, chắc tôi đến trễ khoảng mười phút ạ.",
+      "terms": [
+        "〜時",
+        "予約する",
+        "遅れる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜ですが、〜そうです"
+    },
+    {
+      "id": "S-042-V13-019",
+      "group": "late",
+      "role_vi": "Khách gọi đặt bàn",
+      "gender": "male",
+      "ja": "七時に間に合わないので、予約した時間を変更できますか。",
+      "vi": "Tôi không kịp đến lúc 7 giờ, tôi đổi giờ đặt bàn được không ạ?",
+      "terms": [
+        "〜時",
+        "間に合う",
+        "予約する",
+        "変更する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜ので、〜できますか"
+    },
+    {
+      "id": "S-042-V13-020",
+      "group": "late",
+      "role_vi": "Khách gọi đặt bàn",
+      "gender": "male",
+      "ja": "七時の予約に間に合わなかったので、七時半の席を確認していただけますか。",
+      "vi": "Tôi không đến kịp giờ đặt lúc 7 giờ, chị kiểm tra giúp tôi lúc 7 giờ rưỡi còn chỗ không ạ?",
+      "terms": [
+        "〜時",
+        "間に合う",
+        "半",
+        "席",
+        "確認する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜ていただけますか"
+    },
+    {
+      "id": "S-042-V13-021",
+      "group": "late",
+      "role_vi": "Khách gọi đặt bàn",
+      "gender": "male",
+      "ja": "七時半に、グエンの名前で二人の席をお願いできますか。",
+      "vi": "Chị đặt giúp tôi bàn cho hai người lúc 7 giờ rưỡi dưới tên Nguyễn được không ạ?",
+      "terms": [
+        "〜時",
+        "半",
+        "名前",
+        "〜人",
+        "席"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜の名前でお願いします"
+    },
+    {
+      "id": "S-042-V13-022",
+      "group": "late",
+      "role_vi": "Khách đến quầy đón khách",
+      "gender": "male",
+      "ja": "予約を七時半に変更していただいたグエンです。",
+      "vi": "Tôi là Nguyễn, đã đổi giờ đặt bàn sang 7 giờ rưỡi ạ.",
+      "terms": [
+        "〜時",
+        "半",
+        "変更する"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜した〜です"
+    }
+  ]
+}

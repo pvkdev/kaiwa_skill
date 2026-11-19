@@ -1,0 +1,403 @@
+{
+  "code": "H-058",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "9e54adad8b5fb7cb065d9d704ce8dfc80a5e175afa4854655c52321cd8b9a729",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "taste": "Nếm món, hỏi dịp dùng và nguồn gốc",
+    "make": "Hỏi trình tự và cùng làm thủ công",
+    "guest": "Xin phép tham gia và hỏi ý nghĩa",
+    "family": "So cách làm giữa các nhà và các thế hệ",
+    "adapt": "Giữ phần có ý nghĩa khi đổi cách làm",
+    "after": "Kể điều đã học và hẹn xem thêm"
+  },
+  "items": [
+    {
+      "id": "H-058-V13-001",
+      "group": "taste",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "この蒸し菓子は、いつ作るんですか。",
+      "vi": "Nhà bác thường làm bánh hấp này vào dịp nào ạ?",
+      "terms": [
+        "蒸し菓子"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_context_of_home_practice"
+    },
+    {
+      "id": "H-058-V13-002",
+      "group": "taste",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "甘さが控えめで、豆の風味がいいですね。",
+      "vi": "Bánh ngọt nhẹ, vị đậu thơm ngon quá bác ạ.",
+      "terms": [
+        "控えめ",
+        "風味"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "describe_taste_simply"
+    },
+    {
+      "id": "H-058-V13-003",
+      "group": "taste",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "このお菓子は、どなたから習ったんですか。",
+      "vi": "Bác học làm bánh này từ ai ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "ask_who_taught"
+    },
+    {
+      "id": "H-058-V13-004",
+      "group": "taste",
+      "role_vi": "Người làm bánh nói với khách",
+      "gender": "female",
+      "ja": "母から受け継いだ作り方ですが、この地域の郷土料理かどうかまでは分からないんです。",
+      "vi": "Tôi học cách làm này từ mẹ rồi giữ đến giờ, còn có phải món truyền thống của vùng này không thì tôi chưa rõ.",
+      "terms": [
+        "受け継ぐ",
+        "郷土料理"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "scope_what_is_known"
+    },
+    {
+      "id": "H-058-V13-005",
+      "group": "taste",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "味が合わなかったわけではなくて、おいしかったので、この風味を出す下ごしらえが気になったんです。",
+      "vi": "Bánh ngon lắm ạ, cháu hỏi kỹ vì muốn biết bác sơ chế thế nào mà ra được hương vị này.",
+      "terms": [
+        "風味",
+        "下ごしらえ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "clarify_curiosity"
+    },
+    {
+      "id": "H-058-V13-006",
+      "group": "make",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "粉を入れる前に豆をつぶすのは、粒を少し残すためですか。",
+      "vi": "Mình nghiền đậu trước khi cho bột để giữ lại một ít hạt phải không ạ?",
+      "terms": [
+        "粒"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "ask_reason_for_sequence"
+    },
+    {
+      "id": "H-058-V13-007",
+      "group": "make",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "粉を全部入れてしまったんですが、まだ混ぜていないので、今から直せる方法はありますか。",
+      "vi": "Cháu lỡ đổ hết bột vào rồi, nhưng vì chưa trộn nên giờ còn cách nào sửa được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "report_mistake_ask_recovery"
+    },
+    {
+      "id": "H-058-V13-008",
+      "group": "make",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "小さい型の代わりに耐熱カップを使うなら、分量や蒸す時間も変えた方がいいですか。",
+      "vi": "Nếu dùng cốc chịu nhiệt thay khuôn nhỏ, cháu có cần đổi lượng bột hay thời gian hấp không ạ?",
+      "terms": [
+        "耐熱",
+        "分量"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "check_substitution_and_effect"
+    },
+    {
+      "id": "H-058-V13-009",
+      "group": "make",
+      "role_vi": "Người tổ chức buổi thực hành nói với bạn cùng nhóm",
+      "gender": "female",
+      "ja": "豆のつぶし加減はふみこさんに見ていただいて、蒸し器のほうは私が担当する形でいいかな。",
+      "vi": "Mình nhờ bác Fumiko để ý xem đậu đã nghiền vừa chưa, còn nồi hấp để tớ phụ trách, được không?",
+      "terms": [
+        "つぶし加減",
+        "蒸し器"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "divide_roles_by_step"
+    },
+    {
+      "id": "H-058-V13-010",
+      "group": "make",
+      "role_vi": "Vị khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "今度、紙飾りを作ることがあったら、最初の工程を見せていただけますか。",
+      "vi": "Lần tới nếu bác làm đồ trang trí bằng giấy, bác cho cháu xem công đoạn đầu tiên được không ạ?",
+      "terms": [
+        "工程"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "ask_to_see_first_step"
+    },
+    {
+      "id": "H-058-V13-011",
+      "group": "guest",
+      "role_vi": "Vị khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "お茶を並べるなど、準備でお手伝いできることはありますか。",
+      "vi": "Bác có việc gì cháu phụ chuẩn bị được không ạ, chẳng hạn như xếp trà lên bàn?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "ask_permission_to_help"
+    },
+    {
+      "id": "H-058-V13-012",
+      "group": "guest",
+      "role_vi": "Vị khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "席の横に置いてある白いカードは、こちらのお宅では何を書くためのものですか。",
+      "vi": "Tấm thiệp trắng đặt cạnh chỗ ngồi, nhà bác dùng để viết gì ạ?",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "ask_context_of_home_practice"
+    },
+    {
+      "id": "H-058-V13-013",
+      "group": "guest",
+      "role_vi": "Vị khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "皆さんでカードを読むところは初めてなので、今日は聞いているだけでもよろしいですか。",
+      "vi": "Đây là lần đầu cháu dự phần mọi người đọc thiệp, hôm nay cháu chỉ ngồi nghe được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "participate_by_observing"
+    },
+    {
+      "id": "H-058-V13-014",
+      "group": "guest",
+      "role_vi": "Vị khách nói với chủ nhà",
+      "gender": "female",
+      "ja": "お嬢さんが付ける紙飾りだと知らずに手に取ってしまったので、元の場所に戻してもよろしいですか。",
+      "vi": "Cháu không biết đây là món trang trí giấy con gái bác sẽ gắn lên nên lỡ cầm lên, cháu đặt lại chỗ cũ được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "repair_and_check_next_action"
+    },
+    {
+      "id": "H-058-V13-015",
+      "group": "family",
+      "role_vi": "Người bạn trao đổi về tập quán gia đình",
+      "gender": "female",
+      "ja": "春に集まってカードを書くのはふみこさんのご家族の習慣だけど、ナオの家ではどんなことをしてるの？",
+      "vi": "Viết thiệp lúc họp mặt mùa xuân là thói quen của nhà bác Fumiko, còn nhà Nao thì thường làm gì?",
+      "terms": [],
+      "scenes": [
+        "S005",
+        "S016"
+      ],
+      "pattern": "compare_without_generalizing"
+    },
+    {
+      "id": "H-058-V13-016",
+      "group": "family",
+      "role_vi": "Người bạn trao đổi về tập quán gia đình",
+      "gender": "male",
+      "ja": "うちは去年、時間の都合で写真を見るのを短くしたけど、若い世代の家族がみんなそうだとは一概に言えないよね。",
+      "vi": "Năm ngoái nhà tớ rút ngắn phần xem ảnh vì không có nhiều thời gian, nhưng đâu thể nói gia đình nào thuộc thế hệ trẻ cũng làm vậy.",
+      "terms": [
+        "世代",
+        "一概に"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "scope_what_is_known"
+    },
+    {
+      "id": "H-058-V13-017",
+      "group": "family",
+      "role_vi": "Người bạn trao đổi về tập quán gia đình",
+      "gender": "female",
+      "ja": "写真を見ながら話すやり方を簡略化する前に、おばあさんが特に楽しみにしている話を聞いてみない？",
+      "vi": "Trước khi rút gọn phần xem ảnh và kể chuyện, mình hỏi xem bà mong chờ những câu chuyện nào nhất nhé?",
+      "terms": [
+        "簡略化する"
+      ],
+      "scenes": [
+        "S017",
+        "S018",
+        "S019"
+      ],
+      "pattern": "before_changing_ask_meaning"
+    },
+    {
+      "id": "H-058-V13-018",
+      "group": "adapt",
+      "role_vi": "Người tổ chức buổi thực hành nói với bạn cùng nhóm",
+      "gender": "female",
+      "ja": "作る時間を短くするなら、豆を少し手でつぶして粒を確かめる工程だけは、全員に試してもらわない？",
+      "vi": "Nếu rút ngắn thời gian làm bánh, mình vẫn cho mọi người thử tự nghiền một ít đậu và xem hạt còn nguyên đến mức nào nhé?",
+      "terms": [
+        "粒",
+        "工程"
+      ],
+      "scenes": [
+        "S009",
+        "S021"
+      ],
+      "pattern": "preserve_core_while_adapting"
+    },
+    {
+      "id": "H-058-V13-019",
+      "group": "adapt",
+      "role_vi": "Người tổ chức buổi thực hành nói với bạn cùng nhóm",
+      "gender": "female",
+      "ja": "豆が食べられない方も参加を希望しているので、試食や調理の可否をこちらで決める前に、避ける必要のある材料や道具を本人に聞こう。",
+      "vi": "Có người không ăn được đậu nhưng vẫn muốn tham gia, trước khi quyết định họ có thể nếm hay trực tiếp làm bánh không, mình hỏi chính họ cần tránh nguyên liệu hay dụng cụ nào nhé.",
+      "terms": [
+        "試食"
+      ],
+      "scenes": [
+        "S022",
+        "S025"
+      ],
+      "pattern": "before_deciding_confirm_constraints"
+    },
+    {
+      "id": "H-058-V13-020",
+      "group": "adapt",
+      "role_vi": "Người tổ chức buổi thực hành nói với bạn cùng nhóm",
+      "gender": "female",
+      "ja": "感謝のカードを取り入れる前に、ふみこさんがどの範囲なら紹介してよいと思っているか聞いてみよう。",
+      "vi": "Trước khi đưa phần viết thiệp cảm ơn vào chương trình, mình hỏi bác Fumiko xem bác đồng ý giới thiệu tới đâu nhé.",
+      "terms": [
+        "取り入れる"
+      ],
+      "scenes": [
+        "S023",
+        "S025"
+      ],
+      "pattern": "before_changing_ask_meaning"
+    },
+    {
+      "id": "H-058-V13-021",
+      "group": "adapt",
+      "role_vi": "Người tổ chức buổi thực hành nói với bạn cùng nhóm",
+      "gender": "male",
+      "ja": "カードを書くのは任意なので、見ているだけでも参加できると、最初にお伝えしようか。",
+      "vi": "Viết thiệp là tùy ý, mình nói ngay từ đầu là chỉ ngồi xem cũng được nhé?",
+      "terms": [
+        "任意"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "preserve_choice"
+    },
+    {
+      "id": "H-058-V13-022",
+      "group": "after",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "自分で豆をつぶしてみて初めて、粒の残し方で食感が変わることが分かりました。",
+      "vi": "Đến lúc tự nghiền đậu, cháu mới hiểu còn lại bao nhiêu hạt thì cảm giác khi ăn cũng khác ạ.",
+      "terms": [
+        "粒",
+        "食感"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "realize_through_doing"
+    },
+    {
+      "id": "H-058-V13-023",
+      "group": "after",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "家でも同じ分量で作ったのに、蒸し上がりを見ると真ん中だけ生地が詰まった感じがしたので、カップの大きさも見ていただけますか。",
+      "vi": "Ở nhà cháu dùng cùng lượng nguyên liệu mà hấp xong thấy phần giữa bánh hơi đặc, bác xem giúp cả cỡ cốc được không ạ?",
+      "terms": [
+        "分量",
+        "蒸し上がり"
+      ],
+      "scenes": [
+        "S029"
+      ],
+      "pattern": "report_trial_and_ask"
+    },
+    {
+      "id": "H-058-V13-024",
+      "group": "after",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "この辺りで別の作り方も見学できるところがあれば、紹介していただけますか。",
+      "vi": "Quanh đây có chỗ nào cháu có thể đến xem người ta làm theo cách khác không, bác giới thiệu giúp cháu được không ạ?",
+      "terms": [
+        "見学する"
+      ],
+      "scenes": [
+        "S027",
+        "S030"
+      ],
+      "pattern": "ask_for_further_observation"
+    },
+    {
+      "id": "H-058-V13-025",
+      "group": "after",
+      "role_vi": "Người học việc nói với người lớn tuổi hướng dẫn làm bánh",
+      "gender": "female",
+      "ja": "グループで作り方を実演するなら、ふみこさんに先に見ていただいて、ふみこさんのお宅で習ったやり方だとお伝えします。",
+      "vi": "Nếu cháu làm mẫu cho nhóm, cháu sẽ nhờ bác xem trước rồi nói rõ đây là cách cháu học ở nhà bác.",
+      "terms": [
+        "実演する"
+      ],
+      "scenes": [
+        "S005",
+        "S028"
+      ],
+      "pattern": "attribute_practice_to_source"
+    }
+  ]
+}

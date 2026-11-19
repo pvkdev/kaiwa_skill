@@ -1,0 +1,391 @@
+{
+  "code": "H-057",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "63a59818afc7d4148cee0407ffcdba1fb1a962d6617628ceb8d5d0b624e7974e",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "taste": "Hỏi gu và chọn phạm vi có thể nói",
+    "works": "So sánh cách kể và giải thích một cảnh",
+    "sports": "Bàn một trận theo những gì đang xem",
+    "news": "Kiểm nguồn tin và chốt lúc xem lại",
+    "different": "Nói khác gu và giữ cuộc trao đổi"
+  },
+  "items": [
+    {
+      "id": "H-057-V13-001",
+      "group": "taste",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "この漫画、どのキャラが好き？",
+      "vi": "Trong bộ manga này cậu thích nhân vật nào?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_taste"
+    },
+    {
+      "id": "H-057-V13-002",
+      "group": "taste",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "male",
+      "ja": "僕は試合のあとの静かなコマにハマってるよ。",
+      "vi": "Tớ mê mấy khung truyện yên ắng sau trận đấu.",
+      "terms": [
+        "ハマる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "express_specific_taste"
+    },
+    {
+      "id": "H-057-V13-003",
+      "group": "taste",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "ネタバレしても大丈夫？",
+      "vi": "Cậu có ngại nếu tớ tiết lộ tình tiết không?",
+      "terms": [
+        "ネタバレ"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "ask_spoiler_permission"
+    },
+    {
+      "id": "H-057-V13-004",
+      "group": "taste",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "原作の話かと思ったけど、音が消える演出って、アニメの第二話のこと？",
+      "vi": "Tớ tưởng cậu nói truyện gốc, cách cho âm thanh tắt đi là ở tập hai bản anime à?",
+      "terms": [
+        "原作",
+        "演出"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "identify_version"
+    },
+    {
+      "id": "H-057-V13-005",
+      "group": "works",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "ミナが返事をしない場面は、原作だとすぐ次のコマに移るけど、アニメだと沈黙が長いから、ユウの気まずさが伝わるね。",
+      "vi": "Cảnh Mina không đáp, truyện gốc chuyển ngay sang khung kế, còn bản anime để im lặng lâu hơn nên thấy rõ Yuu bối rối.",
+      "terms": [
+        "原作"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "compare_same_scene"
+    },
+    {
+      "id": "H-057-V13-006",
+      "group": "works",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "male",
+      "ja": "五巻でユウが作戦を押しつけかけたあと、次の試合では自分から仲間に意見を聞いたところが印象に残ったよ。",
+      "vi": "Tớ nhớ nhất là ở tập năm Yuu suýt áp đặt chiến thuật của mình, rồi đến trận sau cậu ấy lại chủ động hỏi ý đồng đội.",
+      "terms": [
+        "押しつける"
+      ],
+      "scenes": [
+        "S001",
+        "S006"
+      ],
+      "pattern": "support_character_reading"
+    },
+    {
+      "id": "H-057-V13-007",
+      "group": "works",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "最終巻でミナが鍵を持ったままなのは、誰かが戻るのを待っているようにも見えたけど、あなたはどう解釈した？",
+      "vi": "Ở tập cuối, Mina vẫn cầm chìa khóa, tớ thấy cũng có thể là cô ấy đang chờ ai đó quay lại, cậu hiểu cảnh đó thế nào?",
+      "terms": [
+        "解釈"
+      ],
+      "scenes": [
+        "S007",
+        "S024"
+      ],
+      "pattern": "invite_other_reading"
+    },
+    {
+      "id": "H-057-V13-008",
+      "group": "works",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "ユウが謝る前に机にノートを置いたから、まず勝手に持っていたものを返したかったんじゃないかな。",
+      "vi": "Yuu đặt cuốn sổ lên bàn trước khi xin lỗi, nên tớ nghĩ có lẽ trước hết cậu ấy muốn trả món đồ mình đã tự ý giữ.",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "infer_from_observed_detail"
+    },
+    {
+      "id": "H-057-V13-009",
+      "group": "works",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "結末がどうして引っかかったか話す前に、二人が別れる直前の二ページを一緒に読み返さない？",
+      "vi": "Trước khi bàn vì sao cái kết làm mình lấn cấn, hai đứa đọc lại hai trang ngay trước lúc họ chia tay nhé?",
+      "terms": [
+        "結末",
+        "読み返す"
+      ],
+      "scenes": [
+        "S009",
+        "S010",
+        "S024"
+      ],
+      "pattern": "check_before_acting"
+    },
+    {
+      "id": "H-057-V13-010",
+      "group": "sports",
+      "role_vi": "Người xem bóng rổ trao đổi với bạn",
+      "gender": "female",
+      "ja": "第3クォーターの終わりに青チームが外でパスを回し始めてから、試合の流れが変わったね。",
+      "vi": "Từ lúc đội Xanh bắt đầu chuyền bóng vòng ngoài vào cuối hiệp ba, thế trận đổi hẳn nhỉ.",
+      "terms": [
+        "クォーター"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "name_tactical_turn"
+    },
+    {
+      "id": "H-057-V13-011",
+      "group": "sports",
+      "role_vi": "Người xem bóng rổ trao đổi với bạn",
+      "gender": "male",
+      "ja": "残り時間を考えると主力を下げるには早い気もするけど、交代で入った選手は守備に戻るのが速いね。",
+      "vi": "Xét thời gian còn lại thì có vẻ hơi sớm để cho cầu thủ chủ lực ra nghỉ, nhưng người vừa vào chạy về phòng thủ nhanh nhỉ.",
+      "terms": [
+        "主力",
+        "交代",
+        "守備"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "give_qualified_sports_view"
+    },
+    {
+      "id": "H-057-V13-012",
+      "group": "sports",
+      "role_vi": "Người xem bóng rổ trao đổi với bạn",
+      "gender": "female",
+      "ja": "去年の決勝戦で入った選手とは別で、今季のこの試合で交代で入ったのは、背番号6番の選手だよ。",
+      "vi": "Cầu thủ vào sân trong trận chung kết năm ngoái là người khác, ở trận mùa này người vừa vào thay mang áo số 6.",
+      "terms": [
+        "決勝戦",
+        "今季",
+        "交代",
+        "背番号"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "correct_time_and_player"
+    },
+    {
+      "id": "H-057-V13-013",
+      "group": "sports",
+      "role_vi": "Người xem bóng rổ trao đổi với bạn",
+      "gender": "female",
+      "ja": "青チームの選手をよく知らなくても、赤がどこでボールを奪われたかなら、一緒に話せそうだね。",
+      "vi": "Dù chưa biết nhiều về đội Xanh, mình vẫn bàn được pha đội Đỏ mất bóng ở chỗ nào nhỉ.",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "start_from_shared_observation"
+    },
+    {
+      "id": "H-057-V13-014",
+      "group": "sports",
+      "role_vi": "Người xem bóng rổ trao đổi với bạn",
+      "gender": "male",
+      "ja": "次の青対赤の公式日程が出て、都合が合いそうだったら、また一緒に見ない？",
+      "vi": "Khi có lịch chính thức trận Xanh gặp Đỏ tới, nếu hai đứa thu xếp được thì lại xem chung nhé?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "invite_with_flexibility"
+    },
+    {
+      "id": "H-057-V13-015",
+      "group": "news",
+      "role_vi": "Người hâm mộ nói với bạn đang xem tin buổi diễn",
+      "gender": "female",
+      "ja": "来月に公演があるという話はファンの予想らしいから、主催者の公式発表が出るまでは、決まった日程として広めないでおこう。",
+      "vi": "Tin tháng sau có buổi diễn hình như chỉ là dự đoán của fan, mình khoan truyền đi như lịch đã chốt cho tới khi bên tổ chức công bố chính thức nhé.",
+      "terms": [
+        "公演",
+        "主催者",
+        "公式発表"
+      ],
+      "scenes": [
+        "S016",
+        "S018"
+      ],
+      "pattern": "mark_unconfirmed_info"
+    },
+    {
+      "id": "H-057-V13-016",
+      "group": "news",
+      "role_vi": "Người hâm mộ nói với bạn đang xem tin buổi diễn",
+      "gender": "female",
+      "ja": "チケットを買う前に、主催者名と販売先が載っている公式案内を一緒に確認しない？",
+      "vi": "Trước khi mua vé, mình cùng xem thông báo chính thức có ghi tên đơn vị tổ chức và chỗ bán vé nhé?",
+      "terms": [
+        "主催者"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "check_before_acting"
+    },
+    {
+      "id": "H-057-V13-017",
+      "group": "news",
+      "role_vi": "Người hâm mộ nói với bạn đang xem tin buổi diễn",
+      "gender": "male",
+      "ja": "名前はバンドと似てるけど、プロフィールにファンが運営していると書いてあるから、投稿の出所は公式アカウントじゃないよ。",
+      "vi": "Tên trang giống tên ban nhạc, nhưng phần giới thiệu ghi là do fan vận hành, vậy bài đăng này không phải từ tài khoản chính thức đâu.",
+      "terms": [
+        "出所"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "distinguish_source_from_name"
+    },
+    {
+      "id": "H-057-V13-018",
+      "group": "news",
+      "role_vi": "Người hâm mộ nói với bạn đang xem tin buổi diễn",
+      "gender": "female",
+      "ja": "公演がまだ主催者のページに載っていないから、来週の金曜にもう一度見て、それまでは未確認としておこう。",
+      "vi": "Trang bên tổ chức vẫn chưa đăng buổi diễn, thứ Sáu tuần sau mình xem lại, từ giờ đến đó cứ coi là chưa xác nhận nhé.",
+      "terms": [
+        "公演",
+        "主催者",
+        "未確認"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "set_verification_point"
+    },
+    {
+      "id": "H-057-V13-019",
+      "group": "news",
+      "role_vi": "Người trong nhóm người hâm mộ nói với bạn",
+      "gender": "male",
+      "ja": "主催者が来月の公演予定はないと発表したから、グループにはその案内を共有するね。",
+      "vi": "Bên tổ chức đã thông báo tháng sau không có lịch diễn, tớ sẽ chia sẻ thông báo đó với nhóm nhé.",
+      "terms": [
+        "主催者",
+        "公演"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "update_on_official_result"
+    },
+    {
+      "id": "H-057-V13-020",
+      "group": "different",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "私には原作のテンポのほうが合ってるけど、アニメの静けさが一番よかった場面はどこか、聞いてもいい？",
+      "vi": "Tớ hợp nhịp kể của truyện gốc hơn, còn trong anime, cậu thấy khoảng lặng có tác dụng nhất ở cảnh nào?",
+      "terms": [
+        "原作",
+        "テンポ"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "state_taste_and_invite"
+    },
+    {
+      "id": "H-057-V13-021",
+      "group": "different",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "female",
+      "ja": "二人があっさり別々の道を選ぶ結末は少し物足りなかったけど、鍵を持ったままのミナの表情には余韻があったな。",
+      "vi": "Tớ thấy hơi hụt vì tới cuối hai người nhanh chóng chọn hai con đường khác nhau, nhưng vẻ mặt Mina khi vẫn cầm chìa khóa làm tớ còn nghĩ mãi.",
+      "terms": [
+        "結末",
+        "物足りない",
+        "余韻"
+      ],
+      "scenes": [
+        "S007",
+        "S009",
+        "S024"
+      ],
+      "pattern": "hold_mixed_reaction"
+    },
+    {
+      "id": "H-057-V13-022",
+      "group": "different",
+      "role_vi": "Người xem bóng rổ trao đổi với bạn",
+      "gender": "female",
+      "ja": "赤チームを悪く言いすぎたけど、私が気になったのは、さっき急いで出したパスがずれたことなんだ。",
+      "vi": "Tớ lỡ chê đội Đỏ quá lời, điều tớ định nói chỉ là đường chuyền vội lúc nãy bị lệch thôi.",
+      "terms": [],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "repair_joke_with_specifics"
+    },
+    {
+      "id": "H-057-V13-023",
+      "group": "different",
+      "role_vi": "Người trong nhóm người hâm mộ nói với bạn",
+      "gender": "female",
+      "ja": "作者への個人攻撃には加わらないけど、最後の二ページの展開についてなら話せるよ。",
+      "vi": "Tớ không tham gia công kích tác giả, còn bàn diễn biến trong hai trang cuối thì tớ sẵn lòng.",
+      "terms": [
+        "個人攻撃",
+        "展開"
+      ],
+      "scenes": [
+        "S023",
+        "S024"
+      ],
+      "pattern": "boundary_to_disagree_constructively"
+    },
+    {
+      "id": "H-057-V13-024",
+      "group": "different",
+      "role_vi": "Người đọc manga nói với bạn",
+      "gender": "male",
+      "ja": "次に会うとき最終巻を持ってくるから、鍵の場面を一緒に見て、どこで解釈が分かれたのか話したいな。",
+      "vi": "Lần tới gặp tớ sẽ mang tập cuối, mình xem lại cảnh chiếc chìa khóa rồi nói xem hai đứa hiểu khác nhau ở chỗ nào nhé.",
+      "terms": [
+        "解釈"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "revisit_together"
+    }
+  ]
+}

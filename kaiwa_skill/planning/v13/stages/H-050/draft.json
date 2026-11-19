@@ -1,0 +1,409 @@
+{
+  "code": "H-050",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "ead2abddbbb485149b8d2f623bbe4e037aec620a59f2af76649d0ad27c4d3a1c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "clarify": "Hỏi đầu ra và hẹn giờ trả lời",
+    "commit": "Nhận phần vừa sức và chốt người quyết",
+    "refuse": "Từ chối, nhắc giới hạn và mở phương án khác",
+    "scope": "Thương lượng phần mới sau khi đã nhận",
+    "handoff": "Bàn giao đúng tình trạng công việc",
+    "relationship": "Giữ quan hệ sau một lời từ chối"
+  },
+  "items": [
+    {
+      "id": "H-050-V13-001",
+      "group": "clarify",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "案内文は、どこまで作ればいい？",
+      "vi": "Tờ thông báo thì tớ cần làm đến đâu?",
+      "terms": [
+        "案内文"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "clarify_output"
+    },
+    {
+      "id": "H-050-V13-002",
+      "group": "clarify",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "下書きの締め切りはいつ？",
+      "vi": "Hạn gửi bản nháp là khi nào?",
+      "terms": [
+        "下書き",
+        "締め切り"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "ask_deadline"
+    },
+    {
+      "id": "H-050-V13-003",
+      "group": "clarify",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "案内文の印刷と配布は、そっちでやってくれる？",
+      "vi": "Việc in và phát tờ thông báo thì bên cậu lo được chứ?",
+      "terms": [
+        "案内文",
+        "配布"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "confirm_owner"
+    },
+    {
+      "id": "H-050-V13-004",
+      "group": "clarify",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "ベトナム語版も必要かどうか分かってから予定を確認したいから、明日の夕方まで返事を待ってもらえる？",
+      "vi": "Tớ muốn biết có cần bản tiếng Việt không rồi mới xem lịch, cậu đợi tớ trả lời đến chiều mai được không?",
+      "terms": [],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "delay_until_confirmed"
+    },
+    {
+      "id": "H-050-V13-005",
+      "group": "commit",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "水曜の夜に一時間なら原稿を見られるから、会場名と日時を入れて送ってくれる？",
+      "vi": "Tối thứ Tư tớ dành được một giờ xem bản thảo, cậu kèm tên địa điểm và ngày giờ rồi gửi cho tớ nhé?",
+      "terms": [
+        "原稿"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "time_limit_and_input"
+    },
+    {
+      "id": "H-050-V13-006",
+      "group": "commit",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "誤字と分かりにくい表現にコメントするところまでなら引き受けられるよ。",
+      "vi": "Nếu chỉ ghi chú lỗi chữ và chỗ diễn đạt khó hiểu thì tớ nhận được.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S004",
+        "S006",
+        "S011"
+      ],
+      "pattern": "made_scope_explicit"
+    },
+    {
+      "id": "H-050-V13-007",
+      "group": "commit",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "原稿の表現は私が見られるけど、会場名は確定してから、ハルのほうで入れてほしいな。",
+      "vi": "Câu chữ trong bản thảo tớ xem được, còn tên địa điểm tớ muốn cậu điền sau khi xác nhận chắc chắn.",
+      "terms": [
+        "原稿",
+        "確定する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "assign_remaining_piece"
+    },
+    {
+      "id": "H-050-V13-008",
+      "group": "commit",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "時間内に確認しきれない箇所があったら20時までに連絡するから、最終版にどの文を載せるかは決めてもらえる？",
+      "vi": "Nếu có chỗ tớ không xem kịp, tớ sẽ báo trước 20 giờ, còn bản cuối dùng câu nào thì cậu quyết giúp nhé?",
+      "terms": [
+        "最終版"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "confirm_owner"
+    },
+    {
+      "id": "H-050-V13-009",
+      "group": "refuse",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "今週は自分の仕事の締め切りが重なって、案内文を引き受ける余裕がないんだ。",
+      "vi": "Tuần này công việc của tớ có mấy hạn dồn cùng lúc nên tớ không có thời gian nhận viết thông báo.",
+      "terms": [
+        "締め切り",
+        "案内文",
+        "引き受ける",
+        "余裕"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "refuse_with_real_limit"
+    },
+    {
+      "id": "H-050-V13-010",
+      "group": "refuse",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "印刷所を早めに決めたほうがいいと言ったけど、入稿するところまで引き受けたわけじゃないよ。",
+      "vi": "Tớ có gợi ý chọn chỗ in sớm, còn gửi file đi in thì tớ chưa nhận đâu.",
+      "terms": [
+        "入稿",
+        "引き受ける"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-050-V13-011",
+      "group": "refuse",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "一回だけでも入稿する時間は取れないから、印刷所とのやり取りはお願いね。",
+      "vi": "Dù chỉ một lần, tớ vẫn không thu xếp được giờ gửi file đi in, phần trao đổi với chỗ in nhờ cậu lo nhé.",
+      "terms": [
+        "入稿"
+      ],
+      "scenes": [
+        "S013",
+        "S015"
+      ],
+      "pattern": "maintain_refusal"
+    },
+    {
+      "id": "H-050-V13-012",
+      "group": "refuse",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "アキなら案内文を作った経験があるけど、つなぐ前に、引き受ける余裕があるか本人に聞いてみるね。",
+      "vi": "Aki từng làm tờ thông báo, nhưng trước khi kết nối hai người, tớ sẽ hỏi bạn ấy có thời gian nhận việc không nhé.",
+      "terms": [
+        "案内文",
+        "引き受ける",
+        "余裕"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "check_consent_before_referral"
+    },
+    {
+      "id": "H-050-V13-013",
+      "group": "scope",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "見出し一行の確認に絞れるなら、予定していた一時間の中で一緒に見られるよ。",
+      "vi": "Nếu chỉ xem một dòng tiêu đề thì tớ có thể xem luôn trong một giờ đã hẹn.",
+      "terms": [
+        "見出し",
+        "絞る"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "limit_to_accept"
+    },
+    {
+      "id": "H-050-V13-014",
+      "group": "scope",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "追加分のベトナム語版を引き受けるか決める前に、締め切りと見てほしい点を教えてくれる？",
+      "vi": "Trước khi tớ quyết có nhận thêm bản tiếng Việt không, cậu cho tớ biết hạn và cần xem những gì được không?",
+      "terms": [
+        "追加分",
+        "引き受ける",
+        "締め切り"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "before_action"
+    },
+    {
+      "id": "H-050-V13-015",
+      "group": "scope",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "二つの版を照合するなら金曜のお昼には間に合わないけど、締め切りを土曜の朝にずらせるなら引き受けられるよ。",
+      "vi": "Đối chiếu hai bản thì tớ không kịp trưa thứ Sáu, nhưng nếu dời hạn sang sáng thứ Bảy thì tớ nhận được.",
+      "terms": [
+        "照合",
+        "締め切り",
+        "引き受ける"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "limit_to_accept"
+    },
+    {
+      "id": "H-050-V13-016",
+      "group": "scope",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "ベトナム語版の照合までは引き受けられないけど、日本語の原稿には約束どおり水曜にコメントを返すね。",
+      "vi": "Tớ không nhận thêm phần đối chiếu bản tiếng Việt, còn bản thảo tiếng Nhật tớ vẫn gửi ghi chú vào thứ Tư như đã hẹn.",
+      "terms": [
+        "照合",
+        "引き受ける",
+        "原稿"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "maintain_original_scope"
+    },
+    {
+      "id": "H-050-V13-017",
+      "group": "handoff",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "日本語の本文は確認済みだけど、会場名の表記はまだ未確認だから、そこだけ空欄にしてあるよ。",
+      "vi": "Tớ đã xem xong nội dung tiếng Nhật. Riêng cách ghi tên địa điểm vẫn chưa xác nhận nên tớ để trống chỗ đó.",
+      "terms": [
+        "確認済み",
+        "未確認"
+      ],
+      "scenes": [
+        "S021",
+        "S023"
+      ],
+      "pattern": "state_checked_and_open"
+    },
+    {
+      "id": "H-050-V13-018",
+      "group": "handoff",
+      "role_vi": "Người bàn giao nói với bạn tiếp quản",
+      "gender": "female",
+      "ja": "引き継ぎで必要なら、日本語の本文で私が確認した点と、まだ判断してない点を先に伝えるね。",
+      "vi": "Nếu cần cho việc bàn giao, tớ sẽ nói trước những điểm tớ đã kiểm trong phần tiếng Nhật và những điểm tớ chưa quyết.",
+      "terms": [
+        "引き継ぎ",
+        "判断"
+      ],
+      "scenes": [
+        "S022",
+        "S025"
+      ],
+      "pattern": "offer_targeted_handoff"
+    },
+    {
+      "id": "H-050-V13-019",
+      "group": "handoff",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "ベトナム語版はまだ照合してないから、私のコメントだけで案内文を「全体確認済み」にしないでね。",
+      "vi": "Bản tiếng Việt vẫn chưa được đối chiếu, cậu đừng chỉ dựa vào ghi chú của tớ mà đánh dấu tờ thông báo là đã kiểm hết nhé.",
+      "terms": [
+        "照合",
+        "案内文",
+        "確認済み"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "correct_completion_status"
+    },
+    {
+      "id": "H-050-V13-020",
+      "group": "handoff",
+      "role_vi": "Người bàn giao nói với bạn tiếp quản",
+      "gender": "female",
+      "ja": "コメントの説明なら今日18時までに15分だけ電話でできるから、質問をまとめておいてくれる？",
+      "vi": "Nếu cần giải thích ghi chú, hôm nay tớ có thể dành 15 phút gọi điện trước 18 giờ, cậu gom sẵn câu hỏi giúp tớ nhé?",
+      "terms": [],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "time_limit_and_input"
+    },
+    {
+      "id": "H-050-V13-021",
+      "group": "relationship",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "今回は案内文を手伝えなかったけど、先に声をかけてくれてうれしかったよ。",
+      "vi": "Lần này tớ không giúp được phần thông báo, nhưng tớ vui vì cậu đã hỏi tớ trước.",
+      "terms": [
+        "案内文"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "appreciate_invitation"
+    },
+    {
+      "id": "H-050-V13-022",
+      "group": "relationship",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "案内文を断ったのは仕事が立て込んでたからで、君を避けてるわけじゃないよ。",
+      "vi": "Tớ từ chối phần thông báo vì công việc đang dồn, tớ không có ý tránh mặt cậu đâu.",
+      "terms": [
+        "案内文",
+        "断る"
+      ],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-050-V13-023",
+      "group": "relationship",
+      "role_vi": "Người tổ chức triển lãm nói với bạn",
+      "gender": "male",
+      "ja": "案内文のことは別の人に頼めたから、当日はよかったらゆっくり写真を見に来てね。",
+      "vi": "Tớ nhờ được người khác lo tờ thông báo rồi, hôm triển lãm nếu tiện thì cậu cứ đến thong thả xem ảnh nhé.",
+      "terms": [
+        "案内文"
+      ],
+      "scenes": [
+        "S029",
+        "S030"
+      ],
+      "pattern": "separate_help_and_attendance"
+    },
+    {
+      "id": "H-050-V13-024",
+      "group": "relationship",
+      "role_vi": "Người được bạn nhờ hỗ trợ triển lãm",
+      "gender": "female",
+      "ja": "次の展示でも手伝えるか聞いてくれていいけど、引き受けられるかは内容と締め切りを見てその都度答えるね。",
+      "vi": "Lần triển lãm tới cậu cứ hỏi tớ có giúp được không, lúc đó tớ sẽ xem việc cần làm và hạn rồi mới trả lời.",
+      "terms": [
+        "引き受ける",
+        "締め切り",
+        "その都度"
+      ],
+      "scenes": [
+        "S028",
+        "S030"
+      ],
+      "pattern": "future_case_by_case"
+    }
+  ]
+}

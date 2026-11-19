@@ -1,0 +1,425 @@
+{
+  "code": "S-045",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "5432c396568a3c53654c3f70996118c14dfe35752d1a1eec2fad284d8d3fdad5",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "shop": "Hỏi dịch vụ, giá và giờ trống",
+    "details": "Đọc thông tin và kiểm địa chỉ",
+    "schedule": "Xin đổi giờ và hỏi đã chốt chưa",
+    "work": "Xác nhận việc tại nhà",
+    "account": "Gọi hỗ trợ khi chưa đăng nhập được"
+  },
+  "items": [
+    {
+      "id": "S-045-V13-001",
+      "group": "shop",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "家の窓の掃除をお願いできますか。",
+      "vi": "Bên mình có nhận lau cửa sổ tại nhà không ạ?",
+      "terms": [
+        "窓",
+        "お願いする"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜をお願いできますか"
+    },
+    {
+      "id": "S-045-V13-002",
+      "group": "shop",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "今週、窓の掃除を予約できる日はありますか。",
+      "vi": "Tuần này còn ngày nào tôi đặt lịch lau cửa sổ được không ạ?",
+      "terms": [
+        "今週",
+        "窓",
+        "予約する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜できる日はありますか"
+    },
+    {
+      "id": "S-045-V13-003",
+      "group": "shop",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "午後が空いていなければ、午前は何時から空いていますか。",
+      "vi": "Nếu chiều kín lịch thì buổi sáng còn giờ trống từ mấy giờ ạ?",
+      "terms": [
+        "午後",
+        "空く",
+        "午前"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜なければ、〜はどうですか"
+    },
+    {
+      "id": "S-045-V13-004",
+      "group": "shop",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "窓の掃除の料金が少し高いので、今回はやめておきます。",
+      "vi": "Phí lau cửa sổ hơi cao nên lần này tôi xin chưa đặt ạ.",
+      "terms": [
+        "窓",
+        "料金",
+        "高い"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜ので、今回はやめておきます"
+    },
+    {
+      "id": "S-045-V13-005",
+      "group": "shop",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "木曜日の午前九時に、窓の掃除を予約したいです。",
+      "vi": "Tôi muốn đặt lịch lau cửa sổ lúc chín giờ sáng thứ Năm ạ.",
+      "terms": [
+        "木曜日",
+        "午前",
+        "窓",
+        "予約する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜に予約したいです"
+    },
+    {
+      "id": "S-045-V13-006",
+      "group": "details",
+      "role_vi": "Nhân viên nhận đặt dịch vụ",
+      "gender": "male",
+      "ja": "ご予約のお名前と、連絡のつく電話番号をお願いします。",
+      "vi": "Cho tôi xin tên đặt lịch và số điện thoại để liên lạc với chị ạ.",
+      "terms": [
+        "名前",
+        "電話番号",
+        "お願いする"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜をお願いします"
+    },
+    {
+      "id": "S-045-V13-007",
+      "group": "details",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "駅の西口の近くにある青い建物が目印です。",
+      "vi": "Có tòa nhà màu xanh gần cửa phía tây của ga làm mốc ạ.",
+      "terms": [
+        "西口",
+        "近く",
+        "建物",
+        "目印"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜が目印です"
+    },
+    {
+      "id": "S-045-V13-008",
+      "group": "details",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "住所の最後の数字は二、一ではなく、一、二です。",
+      "vi": "Hai số cuối của địa chỉ là một rồi hai, không phải hai rồi một ạ.",
+      "terms": [
+        "住所",
+        "最後",
+        "数字"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-045-V13-009",
+      "group": "details",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "この住所が担当エリアに入る支店はありますか。",
+      "vi": "Có chi nhánh nào phục vụ địa chỉ này không ạ?",
+      "terms": [
+        "住所",
+        "担当エリア",
+        "支店"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜はありますか"
+    },
+    {
+      "id": "S-045-V13-010",
+      "group": "details",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "確認ですが、木曜日の午前九時に桜町三の十二で窓の掃除ですね。",
+      "vi": "Cho tôi xác nhận, lịch lau cửa sổ là chín giờ sáng thứ Năm ở Sakura-machi 3-12, đúng không ạ?",
+      "terms": [
+        "窓",
+        "木曜日",
+        "午前"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "確認ですが、〜ですね"
+    },
+    {
+      "id": "S-045-V13-011",
+      "group": "schedule",
+      "role_vi": "Khách gọi đổi lịch",
+      "gender": "female",
+      "ja": "朝九時は家にいないので、予約の時間を変更できますか。",
+      "vi": "Chín giờ sáng tôi không có nhà, tôi đổi giờ đặt được không ạ?",
+      "terms": [
+        "変更する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜ので、変更できますか"
+    },
+    {
+      "id": "S-045-V13-012",
+      "group": "schedule",
+      "role_vi": "Khách gọi đổi lịch",
+      "gender": "female",
+      "ja": "木曜日に変更できる時間は、ほかにありますか。",
+      "vi": "Thứ Năm còn giờ nào khác để tôi đổi sang không ạ?",
+      "terms": [
+        "木曜日",
+        "変更する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜はありますか"
+    },
+    {
+      "id": "S-045-V13-013",
+      "group": "schedule",
+      "role_vi": "Nhân viên nhận đặt dịch vụ",
+      "gender": "male",
+      "ja": "作業員に確認してから、午前十時までにお返事します。",
+      "vi": "Tôi hỏi lại nhân viên đến làm rồi trả lời chị chậm nhất lúc 10 giờ sáng ạ.",
+      "terms": [
+        "作業員",
+        "確認する",
+        "午前",
+        "返事"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜てから返事します"
+    },
+    {
+      "id": "S-045-V13-014",
+      "group": "schedule",
+      "role_vi": "Khách gọi đổi lịch",
+      "gender": "female",
+      "ja": "午前十一時に変更できたか、確認してもらえますか。",
+      "vi": "Bên mình kiểm tra giúp tôi đã đổi lịch sang 11 giờ sáng được chưa ạ?",
+      "terms": [
+        "午前",
+        "変更する",
+        "確認する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜か確認してもらえますか"
+    },
+    {
+      "id": "S-045-V13-015",
+      "group": "schedule",
+      "role_vi": "Khách gọi đổi lịch",
+      "gender": "female",
+      "ja": "作業員の方が遅れそうなときは、この番号にかけてもらえますか。",
+      "vi": "Nếu nhân viên đến làm có thể bị trễ, bên mình gọi vào số này báo tôi được không ạ?",
+      "terms": [
+        "作業員",
+        "遅れる",
+        "かける"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜ときは、〜てもらえますか"
+    },
+    {
+      "id": "S-045-V13-016",
+      "group": "work",
+      "role_vi": "Khách nói với thợ tại nhà",
+      "gender": "female",
+      "ja": "窓を掃除しに来てくださった方ですか。",
+      "vi": "Anh đến lau cửa sổ phải không ạ?",
+      "terms": [
+        "窓",
+        "掃除する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜しに来てくださった方ですか"
+    },
+    {
+      "id": "S-045-V13-017",
+      "group": "work",
+      "role_vi": "Khách nói với thợ tại nhà",
+      "gender": "female",
+      "ja": "お願いしたのは、浴室ではなく窓の掃除です。",
+      "vi": "Tôi đặt lau cửa sổ, không phải dọn phòng tắm ạ.",
+      "terms": [
+        "お願いする",
+        "浴室",
+        "窓"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-045-V13-018",
+      "group": "work",
+      "role_vi": "Khách nói với thợ tại nhà",
+      "gender": "female",
+      "ja": "一つだけなら、今日は台所の窓を掃除してください。",
+      "vi": "Nếu hôm nay chỉ làm được một cửa, nhờ anh lau cửa sổ nhà bếp ạ.",
+      "terms": [
+        "台所",
+        "窓",
+        "掃除する"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "〜だけなら、〜てください"
+    },
+    {
+      "id": "S-045-V13-019",
+      "group": "work",
+      "role_vi": "Khách gọi đặt dịch vụ",
+      "gender": "female",
+      "ja": "残りの窓の掃除も、この電話で予約できますか。",
+      "vi": "Tôi đặt luôn lịch lau các cửa sổ còn lại qua số này được không ạ?",
+      "terms": [
+        "残り",
+        "窓",
+        "予約する"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜で予約できますか"
+    },
+    {
+      "id": "S-045-V13-020",
+      "group": "account",
+      "role_vi": "Người dùng gọi hỗ trợ tài khoản",
+      "gender": "female",
+      "ja": "今朝から確認コードを入れる画面で止まっています。",
+      "vi": "Từ sáng đến giờ tôi bị kẹt ở màn hình nhập mã xác nhận ạ.",
+      "terms": [
+        "今朝",
+        "確認コード",
+        "画面",
+        "止まる"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "〜の画面で止まっています"
+    },
+    {
+      "id": "S-045-V13-021",
+      "group": "account",
+      "role_vi": "Người dùng gọi hỗ trợ tài khoản",
+      "gender": "female",
+      "ja": "パスワードを忘れたのではなく、確認コードのメールが届いていません。",
+      "vi": "Tôi vẫn nhớ mật khẩu, vấn đề là tôi chưa nhận được email có mã xác nhận ạ.",
+      "terms": [
+        "パスワード",
+        "確認コード",
+        "届く"
+      ],
+      "scenes": [
+        "S022",
+        "S025"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-045-V13-022",
+      "group": "account",
+      "role_vi": "Người dùng gọi hỗ trợ tài khoản",
+      "gender": "female",
+      "ja": "アカウントの担当に直接かけられる電話番号はありますか。",
+      "vi": "Có số nào gọi thẳng đến bộ phận tài khoản không ạ?",
+      "terms": [
+        "アカウント",
+        "かける",
+        "電話番号"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "〜はありますか"
+    },
+    {
+      "id": "S-045-V13-023",
+      "group": "account",
+      "role_vi": "Người dùng gọi hỗ trợ tài khoản",
+      "gender": "female",
+      "ja": "午後二時から電話に出られるので、この番号にかけてください。",
+      "vi": "Từ hai giờ chiều tôi nghe máy được, anh gọi lại vào số này giúp tôi ạ.",
+      "terms": [
+        "午後",
+        "かける"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "〜ので、〜てください"
+    },
+    {
+      "id": "S-045-V13-024",
+      "group": "account",
+      "role_vi": "Người dùng gọi hỗ trợ tài khoản",
+      "gender": "female",
+      "ja": "確認コードがまだ届かなくて、ログインできません。",
+      "vi": "Tôi vẫn chưa nhận được mã xác nhận nên chưa đăng nhập được ạ.",
+      "terms": [
+        "確認コード",
+        "届く",
+        "ログインする"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "〜なくて、〜できません"
+    }
+  ]
+}

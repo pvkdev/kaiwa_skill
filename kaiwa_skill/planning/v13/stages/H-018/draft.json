@@ -1,0 +1,349 @@
+{
+  "code": "H-018",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3db911c2ccc05695c44873a7762317d18f2fd34d7e1bf0a8e0c54e911b948130",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "open": "Nói mục đích, hỏi thời lượng và thống nhất giới hạn",
+    "story": "Mời người kể dẫn mình vào một tình huống thật",
+    "clarify": "Hỏi sâu về vai trò, kỹ năng và kinh nghiệm",
+    "verify": "Nhắc lại, sửa cách hiểu và xin phép kể lại",
+    "close": "Cảm ơn, áp dụng và xin phép hỏi tiếp"
+  },
+  "items": [
+    {
+      "id": "H-018-V13-001",
+      "group": "open",
+      "role_vi": "Người tìm hiểu nghề mở đầu cuộc phỏng vấn",
+      "gender": "male",
+      "ja": "博物館の仕事について伺ってもよろしいですか。",
+      "vi": "Tôi xin hỏi chị về công việc ở bảo tàng, được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～について伺ってもよろしいですか"
+    },
+    {
+      "id": "H-018-V13-002",
+      "group": "open",
+      "role_vi": "Người phỏng vấn hỏi thời gian người kia có thể dành",
+      "gender": "female",
+      "ja": "今日は何分くらいお話しできますか。",
+      "vi": "Hôm nay anh có khoảng bao nhiêu phút để trao đổi ạ?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "何分くらいお話しできますか"
+    },
+    {
+      "id": "H-018-V13-003",
+      "group": "open",
+      "role_vi": "Người tìm hiểu nghề nêu rõ nội dung mình quan tâm",
+      "gender": "male",
+      "ja": "来館者向けの学習プログラムに関心があり、実際の進め方を伺いたいです。",
+      "vi": "Tôi quan tâm đến chương trình học cho khách tham quan và muốn hỏi chị cách triển khai thực tế ạ.",
+      "terms": [
+        "関心"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～に関心があり、～を伺いたいです"
+    },
+    {
+      "id": "H-018-V13-004",
+      "group": "open",
+      "role_vi": "Người được hỏi nêu giới hạn thông tin có thể chia sẻ",
+      "gender": "female",
+      "ja": "普段の仕事はお話しできますが、非公開の企画や参加者のお名前はお伝えできません。",
+      "vi": "Tôi có thể kể công việc thường ngày, nhưng không thể nêu các chương trình chưa công bố hay tên người tham gia ạ.",
+      "terms": [
+        "非公開"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～はお話しできますが、～はお伝えできません"
+    },
+    {
+      "id": "H-018-V13-005",
+      "group": "story",
+      "role_vi": "Người phỏng vấn hỏi cơ duyên đến với nghề",
+      "gender": "male",
+      "ja": "博物館で教育の仕事を始めるきっかけは、何だったんですか。",
+      "vi": "Cơ duyên nào đưa chị đến với công việc giáo dục ở bảo tàng ạ?",
+      "terms": [
+        "きっかけ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～きっかけは、何だったんですか"
+    },
+    {
+      "id": "H-018-V13-006",
+      "group": "story",
+      "role_vi": "Người phỏng vấn mời kể một ngày tiêu biểu",
+      "gender": "female",
+      "ja": "体験教室の日は、朝の準備から終了後まで、どんな段取りで進めるんですか。",
+      "vi": "Ngày có lớp trải nghiệm, từ khâu chuẩn bị buổi sáng đến những việc sau buổi học, anh thường làm theo trình tự nào ạ?",
+      "terms": [
+        "段取り"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～から～まで、どんな～で進めるんですか"
+    },
+    {
+      "id": "H-018-V13-007",
+      "group": "story",
+      "role_vi": "Người phỏng vấn hỏi ví dụ có thể chia sẻ",
+      "gender": "male",
+      "ja": "差し支えない範囲で、最近進行を変えた場面を一つ教えていただけますか。",
+      "vi": "Trong phạm vi chị tiện chia sẻ, chị kể giúp tôi một lần gần đây đã đổi cách điều hành buổi học được không ạ?",
+      "terms": [
+        "差し支えない",
+        "進行"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～範囲で、～を一つ教えていただけますか"
+    },
+    {
+      "id": "H-018-V13-008",
+      "group": "story",
+      "role_vi": "Người phỏng vấn hỏi dấu hiệu trước khi người kể điều chỉnh",
+      "gender": "female",
+      "ja": "参加者のどんな反応を見て、実物を先に見せることにしたんですか。",
+      "vi": "Anh nhận thấy người tham gia có phản ứng gì nên quyết định cho họ xem hiện vật trước ạ?",
+      "terms": [
+        "実物"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "どんな～を見て、～ことにしたんですか"
+    },
+    {
+      "id": "H-018-V13-009",
+      "group": "clarify",
+      "role_vi": "Người tìm hiểu nghề hỏi phần người kể tự quyết được",
+      "gender": "male",
+      "ja": "進行の工夫は、ご自身の裁量でどこまでできるんですか。",
+      "vi": "Về cách điều hành buổi học, chị có thể tự quyết điều chỉnh đến đâu ạ?",
+      "terms": [
+        "進行",
+        "工夫",
+        "裁量"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～は、ご自身の裁量でどこまで～ですか"
+    },
+    {
+      "id": "H-018-V13-010",
+      "group": "clarify",
+      "role_vi": "Người phỏng vấn hỏi khó khăn hay gặp của người mới",
+      "gender": "female",
+      "ja": "この仕事に就いたばかりの方は、どんなところでつまずきやすいですか。",
+      "vi": "Người mới vào nghề này thường vướng ở khâu nào ạ?",
+      "terms": [
+        "つまずく"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～は、どんなところで～やすいですか"
+    },
+    {
+      "id": "H-018-V13-011",
+      "group": "clarify",
+      "role_vi": "Người phỏng vấn hỏi kỹ năng từ nghề cũ vẫn dùng được",
+      "gender": "male",
+      "ja": "接客で身につけたことの中で、今の仕事にも応用できたことは何ですか。",
+      "vi": "Trong những gì chị học được khi phục vụ khách, chị đã áp dụng được kỹ năng nào vào công việc hiện tại ạ?",
+      "terms": [
+        "接客",
+        "身につける",
+        "応用する"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～の中で、～できたことは何ですか"
+    },
+    {
+      "id": "H-018-V13-012",
+      "group": "clarify",
+      "role_vi": "Người phỏng vấn chuyển hướng khi người kể xin giữ chuyện riêng",
+      "gender": "female",
+      "ja": "転職の理由についてはここまでにして、前のお仕事で役に立った経験を伺ってもよろしいですか。",
+      "vi": "Mình dừng phần lý do chuyển việc ở đây, tôi xin hỏi kinh nghiệm nào từ công việc trước có ích cho anh, được không ạ?",
+      "terms": [
+        "転職"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～について伺ってもよろしいですか"
+    },
+    {
+      "id": "H-018-V13-013",
+      "group": "clarify",
+      "role_vi": "Người tìm hiểu nghề hỏi ai từng giúp người kể",
+      "gender": "male",
+      "ja": "仕事を始めた頃、展示の背景が分からないときは、どなたに相談されたんですか。",
+      "vi": "Khi mới vào nghề, nếu chưa hiểu câu chuyện đằng sau hiện vật trưng bày, chị hỏi ai ạ?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ときは、どなたに相談されたんですか"
+    },
+    {
+      "id": "H-018-V13-014",
+      "group": "clarify",
+      "role_vi": "Người tìm hiểu nghề hỏi dịp quan sát",
+      "gender": "female",
+      "ja": "進行の仕方を学びたいのですが、一般の人が見学できる講座はありますか。",
+      "vi": "Tôi muốn học cách điều hành buổi học, có lớp nào cho người ngoài đến quan sát không ạ?",
+      "terms": [
+        "進行",
+        "見学する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～たいのですが、～はありますか"
+    },
+    {
+      "id": "H-018-V13-015",
+      "group": "verify",
+      "role_vi": "Người phỏng vấn nhắc lại hai điểm để kiểm cách hiểu",
+      "gender": "male",
+      "ja": "説明の順番は参加者の反応を見て調整し、教材を変えるときはチーム長に相談する、という理解で合っていますか。",
+      "vi": "Tôi hiểu là chị dựa vào phản ứng người tham gia để điều chỉnh thứ tự giải thích, còn khi đổi học liệu thì hỏi trưởng nhóm, đúng không ạ?",
+      "terms": [
+        "教材"
+      ],
+      "scenes": [
+        "S007",
+        "S013"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "H-018-V13-016",
+      "group": "verify",
+      "role_vi": "Người phỏng vấn sửa một chi tiết về quyền quyết",
+      "gender": "female",
+      "ja": "教材の変更は、チーム全体で決めるのではなく、意見を聞いたうえでチーム長が決めるということですね。",
+      "vi": "Về việc đổi học liệu, ý kiến thì cả nhóm cùng góp, còn người quyết cuối sau khi nghe các ý kiến là trưởng nhóm, đúng không ạ?",
+      "terms": [
+        "教材"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～のではなく、～ということですね"
+    },
+    {
+      "id": "H-018-V13-017",
+      "group": "verify",
+      "role_vi": "Người phỏng vấn hỏi được phép dùng phần nào",
+      "gender": "male",
+      "ja": "今日伺ったお話のうち、勉強会で紹介しても差し支えないのは、どの部分でしょうか。",
+      "vi": "Trong những điều chị kể hôm nay, phần nào tôi có thể chia sẻ trong buổi học nhóm ạ?",
+      "terms": [
+        "差し支えない"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～のうち、～しても差し支えないのは、どの部分でしょうか"
+    },
+    {
+      "id": "H-018-V13-018",
+      "group": "verify",
+      "role_vi": "Người được phỏng vấn cho phép kể việc chung và xin giữ kín danh tính",
+      "gender": "female",
+      "ja": "仕事内容は紹介しても構いませんが、私の名前と子どもたちの反応の例は伏せていただけますか。",
+      "vi": "Anh có thể giới thiệu công việc, nhưng xin giữ kín tên tôi và đừng kể ví dụ về phản ứng của các em nhỏ, được không ạ?",
+      "terms": [
+        "伏せる"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "～しても構いませんが、～ていただけますか"
+    },
+    {
+      "id": "H-018-V13-019",
+      "group": "verify",
+      "role_vi": "Người phỏng vấn xác nhận giữ riêng chuyện nội bộ",
+      "gender": "male",
+      "ja": "準備会議の話は、共有用のメモから外して、ほかの方には伝えないようにします。",
+      "vi": "Tôi sẽ bỏ chuyện họp chuẩn bị khỏi phần ghi chép để chia sẻ và không kể lại cho người khác ạ.",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～から外して、～ないようにします"
+    },
+    {
+      "id": "H-018-V13-020",
+      "group": "close",
+      "role_vi": "Người phỏng vấn cảm ơn và nêu điểm có ích",
+      "gender": "female",
+      "ja": "参加者の視線を見て説明を短くするというお話が、特に参考になりました。",
+      "vi": "Tôi thấy đặc biệt hữu ích khi nghe anh kể cách quan sát ánh nhìn của người tham gia để rút ngắn lời giải thích ạ.",
+      "terms": [
+        "視線"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～というお話が、特に参考になりました"
+    },
+    {
+      "id": "H-018-V13-021",
+      "group": "close",
+      "role_vi": "Người tìm hiểu kể điều quan sát được sau khi áp dụng lời khuyên",
+      "gender": "male",
+      "ja": "公開講座を見学して、質問が止まったときに実物へ注意を戻していたのが印象的でした。",
+      "vi": "Khi dự buổi học công khai, tôi ấn tượng với cách người hướng dẫn đưa sự chú ý của người tham gia trở lại hiện vật lúc họ không hỏi tiếp ạ.",
+      "terms": [
+        "見学する",
+        "実物",
+        "印象的"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～て、～が印象的でした"
+    },
+    {
+      "id": "H-018-V13-022",
+      "group": "close",
+      "role_vi": "Người phỏng vấn xin phép hỏi thêm một điểm sau này",
+      "gender": "female",
+      "ja": "後日もう一点だけ分からないことが出てきたら、メールで伺ってもよろしいですか。",
+      "vi": "Sau này nếu có thêm một điểm chưa rõ, tôi có thể hỏi anh qua email được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～が出てきたら、～で伺ってもよろしいですか"
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "code": "T-104",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "ba2b9d1fede64d7b534691a810678ee8605dbf21844ab4e8cb8c6ec3707444e9",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "collision": "Nói rõ việc trùng và giờ phải rời công ty",
+    "help": "Nhờ một phần cụ thể và đề nghị đổi mốc",
+    "priority": "Chốt ưu tiên và chia lại việc phát sinh",
+    "hours": "Thống nhất cách liên hệ ngoài giờ",
+    "review": "Thử cách làm mới và xem lại"
+  },
+  "items": [
+    {
+      "id": "T-104-V13-001",
+      "group": "collision",
+      "role_vi": "Nhân viên nói với quản lý giờ phải ra về để đón con",
+      "gender": "female",
+      "ja": "今日は子どもの迎えがあるので、十七時半に出ます。",
+      "vi": "Hôm nay tôi phải đón con nên sẽ rời công ty lúc 17 giờ 30 ạ.",
+      "terms": [
+        "迎え"
+      ],
+      "scenes": [
+        "S001",
+        "S006"
+      ],
+      "pattern": "node_time_ni_verb"
+    },
+    {
+      "id": "T-104-V13-002",
+      "group": "collision",
+      "role_vi": "Nhân viên nêu với đồng nghiệp hai việc đang dồn vào cuối ngày",
+      "gender": "female",
+      "ja": "お客様への返事と会議の準備が重なっています。",
+      "vi": "Việc trả lời khách và chuẩn bị họp đang dồn vào cùng một lúc.",
+      "terms": [
+        "重なる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "a_to_b_ga_kasanaru"
+    },
+    {
+      "id": "T-104-V13-003",
+      "group": "collision",
+      "role_vi": "Đồng nghiệp hỏi thêm để biết hai việc chiếm bao nhiêu thời gian",
+      "gender": "male",
+      "ja": "今日の仕事を全部やると、何時ごろまでかかりそうですか。",
+      "vi": "Nếu làm hết các việc hôm nay thì có lẽ đến mấy giờ mới xong?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "to_duration_sou"
+    },
+    {
+      "id": "T-104-V13-004",
+      "group": "collision",
+      "role_vi": "Nhân viên giải thích vẫn muốn giúp nhóm dù phải trả lời khách trước",
+      "gender": "female",
+      "ja": "お客様への返事が十七時までなので、会議の準備は明日の朝に手伝えます。",
+      "vi": "Tôi phải trả lời khách chậm nhất 17 giờ, nên sáng mai tôi mới giúp chuẩn bị họp được.",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "node_time_ni_verb"
+    },
+    {
+      "id": "T-104-V13-005",
+      "group": "collision",
+      "role_vi": "Nhân viên đưa ví dụ về khối lượng khiến mình làm muộn nhiều ngày",
+      "gender": "female",
+      "ja": "午後の問い合わせが毎日十件ほどあって、報告書まで手が回りません。",
+      "vi": "Chiều nào cũng có khoảng mười yêu cầu nên tôi không lo xuể phần báo cáo ạ.",
+      "terms": [
+        "手が回らない"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "te_te_ga_mawaranai"
+    },
+    {
+      "id": "T-104-V13-006",
+      "group": "help",
+      "role_vi": "Nhân viên xin đồng nghiệp đối chiếu riêng hai mã đơn",
+      "gender": "female",
+      "ja": "この二件の注文番号だけ確認してもらえませんか。",
+      "vi": "Anh kiểm giúp tôi riêng mã của hai đơn này được không?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "te_moraemasen_ka"
+    },
+    {
+      "id": "T-104-V13-007",
+      "group": "help",
+      "role_vi": "Nhân viên nhận làm phần nhập số sau khi đồng nghiệp kiểm mã",
+      "gender": "female",
+      "ja": "表に入力するところは私が引き受けます。",
+      "vi": "Phần nhập vào bảng thì để tôi làm.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "noun_wa_watashi_ga"
+    },
+    {
+      "id": "T-104-V13-008",
+      "group": "help",
+      "role_vi": "Đồng nghiệp từ chối nhận thêm ngay vì yêu cầu hiện tại kéo dài",
+      "gender": "male",
+      "ja": "問い合わせの対応が長引いて、十七時までは時間が取れません。",
+      "vi": "Yêu cầu tôi đang xử lý kéo dài hơn dự kiến nên trước 17 giờ tôi không thu xếp được.",
+      "terms": [
+        "長引く"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "te_time_made_wa_negative"
+    },
+    {
+      "id": "T-104-V13-009",
+      "group": "help",
+      "role_vi": "Nhân viên xin dời việc kiểm mã để vẫn trả lời khách đúng hạn",
+      "gender": "female",
+      "ja": "注文番号の確認は翌朝にずらせませんか。",
+      "vi": "Mình dời việc kiểm mã đơn sang sáng hôm sau được không ạ?",
+      "terms": [
+        "翌朝",
+        "ずらす"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "time_ni_verb_potential_negative"
+    },
+    {
+      "id": "T-104-V13-010",
+      "group": "help",
+      "role_vi": "Nhân viên nói phần đã điều chỉnh giúp giảm việc nhưng vẫn có yêu cầu sát giờ về",
+      "gender": "female",
+      "ja": "確認を朝にずらしても、退勤直前の依頼までは対応しきれません。",
+      "vi": "Dù chuyển việc kiểm sang buổi sáng, tôi vẫn không xử lý xuể những yêu cầu đến sát giờ về.",
+      "terms": [
+        "ずらす",
+        "退勤",
+        "依頼"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "te_mo_shikirenai"
+    },
+    {
+      "id": "T-104-V13-011",
+      "group": "priority",
+      "role_vi": "Nhân viên xin quản lý xác định việc nào cần làm trước",
+      "gender": "female",
+      "ja": "お客様への返事と報告書では、どちらを先に終わらせればよいですか。",
+      "vi": "Tôi nên ưu tiên việc nào ạ, trả lời khách hay hoàn thành báo cáo?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "dochira_wo_saki_ni"
+    },
+    {
+      "id": "T-104-V13-012",
+      "group": "priority",
+      "role_vi": "Nhân viên xin đổi hạn báo cáo vì vừa có thêm việc",
+      "gender": "female",
+      "ja": "訪問時間の確認も必要なら、報告書の締め切りを明日に延ばしてもいいでしょうか。",
+      "vi": "Nếu cũng cần xác nhận giờ đến gặp, tôi có thể dời hạn nộp báo cáo sang mai được không ạ?",
+      "terms": [
+        "締め切り",
+        "延ばす"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "nara_te_mo_ii_deshou"
+    },
+    {
+      "id": "T-104-V13-013",
+      "group": "priority",
+      "role_vi": "Quản lý báo mình sẽ hỏi người nhận báo cáo về hạn nộp",
+      "gender": "male",
+      "ja": "報告書の締め切りは私から提出先に確認します。",
+      "vi": "Tôi sẽ hỏi bên nhận báo cáo về hạn nộp nhé.",
+      "terms": [
+        "締め切り",
+        "提出先"
+      ],
+      "scenes": [
+        "S007",
+        "S009"
+      ],
+      "pattern": "noun_wa_watashi_ga"
+    },
+    {
+      "id": "T-104-V13-014",
+      "group": "priority",
+      "role_vi": "Nhân viên hỏi lúc nào ra được quyết định về báo cáo đang chờ hạn",
+      "gender": "female",
+      "ja": "報告書を今日も進めるかどうかは、何時ごろ決まりそうですか。",
+      "vi": "Khoảng mấy giờ mình quyết có làm tiếp báo cáo hôm nay hay không ạ?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "ka_douka_wa_itsu_sou"
+    },
+    {
+      "id": "T-104-V13-015",
+      "group": "priority",
+      "role_vi": "Nhân viên báo khách vừa đổi hạn trả lời sớm hơn",
+      "gender": "female",
+      "ja": "お客様への返事の締め切りが十七時から十六時半に早まりました。",
+      "vi": "Hạn trả lời khách vừa được dời sớm từ 17 giờ sang 16 giờ 30 ạ.",
+      "terms": [
+        "締め切り"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "kara_ni_verb_past"
+    },
+    {
+      "id": "T-104-V13-016",
+      "group": "priority",
+      "role_vi": "Quản lý nhận gọi xác nhận lịch giúp nhân viên khi hạn khách dời sớm",
+      "gender": "male",
+      "ja": "訪問時間の確認は私が引き受けます。",
+      "vi": "Phần xác nhận giờ đến gặp, để tôi làm nhé.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "noun_wa_watashi_ga"
+    },
+    {
+      "id": "T-104-V13-017",
+      "group": "hours",
+      "role_vi": "Nhân viên hỏi việc nào nên gọi ngoài giờ và việc nào có thể chờ",
+      "gender": "female",
+      "ja": "勤務時間外でも電話したほうがいいのは、どんな場合ですか。",
+      "vi": "Trường hợp nào thì dù đã ngoài giờ làm vẫn nên gọi điện ạ?",
+      "terms": [
+        "勤務時間外"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "te_mo_hou_ga_ii_baai"
+    },
+    {
+      "id": "T-104-V13-018",
+      "group": "hours",
+      "role_vi": "Quản lý chỉ đầu mối khi sự cố tiếp nhận đơn không thể đợi tới sáng",
+      "gender": "male",
+      "ja": "受注が止まって翌朝まで待てない場合は、当番に電話してください。",
+      "vi": "Nếu việc nhận đơn bị dừng và không thể đợi đến sáng hôm sau thì gọi người trực nhé.",
+      "terms": [
+        "受注",
+        "翌朝",
+        "当番"
+      ],
+      "scenes": [
+        "S011",
+        "S013"
+      ],
+      "pattern": "baai_wa_te_kudasai"
+    },
+    {
+      "id": "T-104-V13-019",
+      "group": "hours",
+      "role_vi": "Nhân viên đề nghị kênh ghi lại việc thường thay cho gọi điện tối",
+      "gender": "female",
+      "ja": "翌朝でも間に合うことは、グループの「翌朝」欄に入れてもらえませんか。",
+      "vi": "Việc nào để sáng mai vẫn kịp thì anh ghi vào mục “Sáng hôm sau” của nhóm giúp tôi được không?",
+      "terms": [
+        "翌朝"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "te_moraemasen_ka"
+    },
+    {
+      "id": "T-104-V13-020",
+      "group": "hours",
+      "role_vi": "Nhân viên khẳng định vẫn hỗ trợ nhóm và nói lúc xem việc không gấp",
+      "gender": "female",
+      "ja": "急がない相談も、出勤してから確認します。",
+      "vi": "Khi vào làm, tôi vẫn xem những việc cần trao đổi mà không gấp.",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "te_kara_verb_masu"
+    },
+    {
+      "id": "T-104-V13-021",
+      "group": "hours",
+      "role_vi": "Nhân viên kiểm đúng người trực tối khi có sự cố",
+      "gender": "female",
+      "ja": "今夜の当番は田中さんで合っていますか。",
+      "vi": "Tối nay anh Tanaka trực, đúng không ạ?",
+      "terms": [
+        "当番"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "de_atteimasu_ka"
+    },
+    {
+      "id": "T-104-V13-022",
+      "group": "review",
+      "role_vi": "Nhân viên báo kết quả sau hai tuần thử kênh ghi việc thường",
+      "gender": "female",
+      "ja": "二週間試して夜の電話は減りましたが、朝いちばんの依頼を二件見落としました。",
+      "vi": "Thử hai tuần thì cuộc gọi tối đã giảm, nhưng chúng tôi bỏ sót hai việc cần xử lý ngay đầu buổi sáng.",
+      "terms": [
+        "試す",
+        "依頼"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "ga_tradeoff"
+    },
+    {
+      "id": "T-104-V13-023",
+      "group": "review",
+      "role_vi": "Nhân viên đề nghị làm rõ hạn các việc phải xem sớm hôm sau",
+      "gender": "female",
+      "ja": "翌朝早く見る必要があるものだけ、件名に締め切りを入れませんか。",
+      "vi": "Với riêng những việc cần xem sớm sáng hôm sau, mình ghi hạn vào tiêu đề nhé?",
+      "terms": [
+        "翌朝",
+        "件名",
+        "締め切り"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "dake_masen_ka"
+    },
+    {
+      "id": "T-104-V13-024",
+      "group": "review",
+      "role_vi": "Đồng nghiệp hẹn xem hiệu quả của cách ghi hạn mới",
+      "gender": "male",
+      "ja": "来週も試して、朝の見落としが減るか確認しましょう。",
+      "vi": "Tuần sau mình thử tiếp rồi xem buổi sáng có bớt bỏ sót việc không nhé.",
+      "terms": [
+        "試す",
+        "見落とし"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "embedded_ka_mashou"
+    }
+  ]
+}

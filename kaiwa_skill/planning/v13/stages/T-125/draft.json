@@ -1,0 +1,389 @@
+{
+  "code": "T-125",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a32fb0de5db255176c4dc12e9677f6934f618fbfd3cf066a6123353fc0aa2877",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "prepare": "Hỏi trước quán về nhu cầu ăn uống",
+    "ingredients": "Hỏi nguyên liệu, dụng cụ và món có thể chọn",
+    "order": "Gọi món đúng người và nhắc lại tùy chỉnh",
+    "wrong": "Báo món sai và yêu cầu kiểm trước khi ăn",
+    "wait": "Nêu thời gian đã chờ và chốt việc hủy hay giữ",
+    "bill": "Kiểm hóa đơn tại quán và sau khi về"
+  },
+  "items": [
+    {
+      "id": "T-125-V13-001",
+      "group": "prepare",
+      "role_vi": "Người gọi quán báo nhu cầu của nhóm",
+      "gender": "female",
+      "ja": "一緒に行く人に、くるみのアレルギーがあります。",
+      "vi": "Có một người đi cùng tôi bị dị ứng óc chó ạ.",
+      "terms": [
+        "くるみ"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "～に、～のアレルギーがあります"
+    },
+    {
+      "id": "T-125-V13-002",
+      "group": "prepare",
+      "role_vi": "Bạn đi ăn đề nghị xác nhận rồi mới đặt",
+      "gender": "male",
+      "ja": "お店の返事を聞いてから、予約するか決めよう。",
+      "vi": "Mình nghe quán trả lời rồi mới quyết có đặt bàn không nhé.",
+      "terms": [],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "～てから、～か決めよう"
+    },
+    {
+      "id": "T-125-V13-003",
+      "group": "prepare",
+      "role_vi": "Người đi ăn báo bạn về điều quán chưa thể xác nhận",
+      "gender": "female",
+      "ja": "同じ厨房でくるみを使うので、混入がないとは言えないそうだよ。",
+      "vi": "Quán nói họ dùng óc chó trong cùng khu bếp nên chưa thể khẳng định là không bị lẫn đâu.",
+      "terms": [
+        "厨房",
+        "くるみ",
+        "混入"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ので、～とは言えないそうだよ"
+    },
+    {
+      "id": "T-125-V13-004",
+      "group": "ingredients",
+      "role_vi": "Khách hỏi thành phần trong nước dùng",
+      "gender": "male",
+      "ja": "この野菜うどんのだしには、かつお節が入っていますか。",
+      "vi": "Nước dùng của mì udon rau này có cá bào katsuo không ạ?",
+      "terms": [
+        "だし",
+        "かつお節"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～には、～が入っていますか"
+    },
+    {
+      "id": "T-125-V13-005",
+      "group": "ingredients",
+      "role_vi": "Khách nói rõ cả dầu mè cũng cần tránh",
+      "gender": "female",
+      "ja": "ごまのアレルギーがあるので、ごま油も使っていない料理を教えていただけますか。",
+      "vi": "Tôi bị dị ứng mè, anh chỉ giúp tôi món nào không dùng mè, kể cả dầu mè, được không ạ?",
+      "terms": [
+        "ごま油"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～ので、～を教えていただけますか"
+    },
+    {
+      "id": "T-125-V13-006",
+      "group": "ingredients",
+      "role_vi": "Khách xin kiểm nguy cơ dùng chung dụng cụ",
+      "gender": "male",
+      "ja": "くるみが少しでも混ざると食べられないので、調理器具を共用しているか確認していただけますか。",
+      "vi": "Chỉ cần lẫn một ít óc chó là tôi không ăn được, chị kiểm tra giúp xem bếp có dùng chung dụng cụ với món có óc chó không ạ?",
+      "terms": [
+        "くるみ",
+        "調理器具",
+        "共用"
+      ],
+      "scenes": [
+        "S005",
+        "S007"
+      ],
+      "pattern": "～か確認していただけますか"
+    },
+    {
+      "id": "T-125-V13-007",
+      "group": "ingredients",
+      "role_vi": "Khách nói phạm vi cần tránh trong nguyên liệu",
+      "gender": "female",
+      "ja": "ラードを避けたいので、たれやだしに使っていないか確認していただけますか。",
+      "vi": "Tôi cần tránh mỡ lợn, anh kiểm tra giúp xem nước sốt hay nước dùng có dùng mỡ lợn không ạ?",
+      "terms": [
+        "ラード",
+        "だし"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～か確認していただけますか"
+    },
+    {
+      "id": "T-125-V13-008",
+      "group": "ingredients",
+      "role_vi": "Khách hỏi có rưới thêm gia vị vào cuối không",
+      "gender": "male",
+      "ja": "この野菜丼は、仕上げに別の調味料をかけますか。",
+      "vi": "Món cơm rau này lúc hoàn thiện có rưới thêm gia vị khác không ạ?",
+      "terms": [
+        "仕上げ"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～は、仕上げに～ますか"
+    },
+    {
+      "id": "T-125-V13-009",
+      "group": "order",
+      "role_vi": "Khách gọi món khác nhau cho hai người",
+      "gender": "female",
+      "ja": "私のカレーは普通の辛さで、友人のチキンは辛いソースなしでお願いします。",
+      "vi": "Cà ri của tôi cay bình thường, còn phần gà của bạn tôi xin đừng rưới sốt cay ạ.",
+      "terms": [
+        "辛さ"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "～は～で、～は～なしでお願いします"
+    },
+    {
+      "id": "T-125-V13-010",
+      "group": "order",
+      "role_vi": "Khách sửa yêu cầu nhân viên ghi nhầm sang món của mình",
+      "gender": "male",
+      "ja": "辛くしないのは友人のチキンで、私のカレーは通常の辛さでお願いします。",
+      "vi": "Món không cay là phần gà của bạn tôi, phần cà ri của tôi xin làm cay như bình thường ạ.",
+      "terms": [
+        "通常",
+        "辛さ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～のは～で、～は～でお願いします"
+    },
+    {
+      "id": "T-125-V13-011",
+      "group": "order",
+      "role_vi": "Khách chuyển món khác khi hành đã nấu chung với sốt",
+      "gender": "female",
+      "ja": "玉ねぎをソースから抜けないなら、ソースを使わない魚料理に替えてもいいですか。",
+      "vi": "Nếu không thể bỏ hành tây khỏi sốt, tôi đổi sang món cá không dùng sốt được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～なら、～に替えてもいいですか"
+    },
+    {
+      "id": "T-125-V13-012",
+      "group": "order",
+      "role_vi": "Khách xin nhân viên nhắc lại đồ uống trước khi gửi đơn",
+      "gender": "male",
+      "ja": "厨房に通す前に、飲み物と氷の有無も復唱していただけますか。",
+      "vi": "Trước khi gửi đơn xuống bếp, chị nhắc lại giúp đồ uống nào có đá, đồ uống nào không được không ạ?",
+      "terms": [
+        "厨房",
+        "復唱する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～前に、～ていただけますか"
+    },
+    {
+      "id": "T-125-V13-013",
+      "group": "order",
+      "role_vi": "Khách muốn gọi thêm món kịp giờ",
+      "gender": "female",
+      "ja": "二十分後には出るので、五分くらいで出せる料理を教えていただけますか。",
+      "vi": "Hai mươi phút nữa chúng tôi phải đi, anh chỉ giúp món nào có thể mang ra sau khoảng năm phút được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～ので、～を教えていただけますか"
+    },
+    {
+      "id": "T-125-V13-014",
+      "group": "wrong",
+      "role_vi": "Khách báo mang nhầm sốt",
+      "gender": "male",
+      "ja": "トマトソースを頼んだのですが、こちらはクリームソースではありませんか。",
+      "vi": "Tôi đã gọi sốt cà chua, đĩa này là sốt kem phải không ạ?",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～を頼んだのですが、～ではありませんか"
+    },
+    {
+      "id": "T-125-V13-015",
+      "group": "wrong",
+      "role_vi": "Khách báo thấy thành phần nghi ngờ và xin dọn món để kiểm",
+      "gender": "female",
+      "ja": "くるみに見えるものがあるので、このお皿を下げて厨房に確認していただけますか。",
+      "vi": "Tôi thấy trên đĩa có thứ trông giống hạt óc chó, anh dọn món này và hỏi lại bếp giúp tôi được không ạ?",
+      "terms": [
+        "くるみ",
+        "厨房"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ので、～を下げて～に確認していただけますか"
+    },
+    {
+      "id": "T-125-V13-016",
+      "group": "wrong",
+      "role_vi": "Khách hỏi bao lâu nếu chờ bếp làm lại",
+      "gender": "male",
+      "ja": "焼き魚を作り直すと、あと何分くらいかかりますか。",
+      "vi": "Nếu làm lại cá nướng thì còn khoảng bao nhiêu phút nữa ạ?",
+      "terms": [
+        "作り直す"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～と、あと何分くらいかかりますか"
+    },
+    {
+      "id": "T-125-V13-017",
+      "group": "wrong",
+      "role_vi": "Khách kiểm lại yêu cầu với món được làm lại",
+      "gender": "female",
+      "ja": "マヨネーズは魚にはかけず、別添えにしてくださったんですね。",
+      "vi": "Mayonnaise không rưới lên cá mà để riêng rồi, đúng không ạ?",
+      "terms": [
+        "別添え"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～にはかけず、～にしてくださったんですね"
+    },
+    {
+      "id": "T-125-V13-018",
+      "group": "wait",
+      "role_vi": "Khách nêu mốc cụ thể khi món vẫn chưa đến",
+      "gender": "male",
+      "ja": "グラタンを頼んでから三十分以上たちましたが、あと何分くらいかかりますか。",
+      "vi": "Tôi gọi gratin hơn ba mươi phút rồi, còn khoảng bao lâu nữa mới có món ạ?",
+      "terms": [],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "～ましたが、あと何分くらいかかりますか"
+    },
+    {
+      "id": "T-125-V13-019",
+      "group": "wait",
+      "role_vi": "Khách xin một lần cập nhật khi chưa có giờ chắc",
+      "gender": "female",
+      "ja": "今すぐ時間が分からなければ、五分後までに進み具合だけ教えていただけますか。",
+      "vi": "Nếu bây giờ chưa biết giờ lên món, anh báo giúp bếp làm đến đâu chậm nhất trong năm phút nữa được không ạ?",
+      "terms": [
+        "進み具合"
+      ],
+      "scenes": [
+        "S019",
+        "S021"
+      ],
+      "pattern": "～なければ、～だけ教えていただけますか"
+    },
+    {
+      "id": "T-125-V13-020",
+      "group": "wait",
+      "role_vi": "Khách yêu cầu hủy riêng món không kịp",
+      "gender": "male",
+      "ja": "十分後には出るので、焼き魚の注文だけ取り消していただけますか。",
+      "vi": "Tôi phải đi sau mười phút, chị hủy giúp riêng món cá nướng được không ạ?",
+      "terms": [
+        "取り消す"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～ので、～だけ取り消していただけますか"
+    },
+    {
+      "id": "T-125-V13-021",
+      "group": "wait",
+      "role_vi": "Khách xin gặp người phụ trách khi chưa thể tiếp tục chờ",
+      "gender": "female",
+      "ja": "待ち時間の目安がないと困るので、グラタンを取り消せるか責任者の方とお話しできますか。",
+      "vi": "Tôi khó đợi tiếp khi chưa biết còn bao lâu, anh cho tôi trao đổi với quản lý xem có hủy gratin được không ạ?",
+      "terms": [
+        "待ち時間",
+        "目安",
+        "取り消す",
+        "責任者"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～ので、～か～とお話しできますか"
+    },
+    {
+      "id": "T-125-V13-022",
+      "group": "bill",
+      "role_vi": "Khách xác nhận chỉ trả món đã giữ",
+      "gender": "male",
+      "ja": "グラタンは取り消してもらったので、伝票に残っているのはスープだけで合っていますか。",
+      "vi": "Món gratin đã hủy rồi, trên phiếu chỉ còn món súp thôi, đúng không ạ?",
+      "terms": [
+        "取り消す",
+        "伝票"
+      ],
+      "scenes": [
+        "S025",
+        "S026"
+      ],
+      "pattern": "～ので、～のは～だけで合っていますか"
+    },
+    {
+      "id": "T-125-V13-023",
+      "group": "bill",
+      "role_vi": "Khách chỉ dòng bị tính nhiều hơn đã gọi",
+      "gender": "female",
+      "ja": "アイスティーは二杯しか頼んでいないので、伝票の三杯分を確認していただけますか。",
+      "vi": "Tôi chỉ gọi hai ly trà lạnh, anh kiểm tra giúp dòng ghi tiền ba ly trên phiếu được không ạ?",
+      "terms": [
+        "伝票"
+      ],
+      "scenes": [
+        "S027",
+        "S028"
+      ],
+      "pattern": "～ので、～を確認していただけますか"
+    },
+    {
+      "id": "T-125-V13-024",
+      "group": "bill",
+      "role_vi": "Khách gọi báo chênh lệch giữa biên lai và thông báo thẻ",
+      "gender": "male",
+      "ja": "レシートとカードの通知で金額が違うので、取引番号で確認してもらえますか。",
+      "vi": "Số tiền trên biên lai và thông báo thẻ không giống nhau, chị đối chiếu giúp theo mã giao dịch được không ạ?",
+      "terms": [
+        "取引番号"
+      ],
+      "scenes": [
+        "S029"
+      ],
+      "pattern": "～ので、～で確認してもらえますか"
+    }
+  ]
+}

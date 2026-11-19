@@ -1,0 +1,348 @@
+{
+  "code": "S-001",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "8987d96b2ddca6f718b82464cb5221c631c4af660f13815d22f76f5ee14f3187",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "greet": "Chào theo thời điểm",
+    "meet": "Làm quen và sửa lời chào nhầm",
+    "open": "Mở lời và hẹn lúc khác",
+    "courtesy": "Cảm ơn, xin lỗi và nhường lối",
+    "leave": "Khép cuộc gặp"
+  },
+  "items": [
+    {
+      "id": "S-001-V13-001",
+      "group": "greet",
+      "role_vi": "Học viên mới chào bạn ngồi cạnh vào buổi sáng",
+      "gender": "female",
+      "ja": "おはようございます。",
+      "vi": "Chào buổi sáng ạ.",
+      "terms": [
+        "おはようございます"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "morning_greeting"
+    },
+    {
+      "id": "S-001-V13-002",
+      "group": "greet",
+      "role_vi": "Khách chào nhân viên quầy thông tin buổi chiều",
+      "gender": "male",
+      "ja": "こんにちは。",
+      "vi": "Xin chào ạ.",
+      "terms": [
+        "こんにちは"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "daytime_greeting"
+    },
+    {
+      "id": "S-001-V13-003",
+      "group": "greet",
+      "role_vi": "Cư dân chào người quen ở cửa chung cư buổi tối",
+      "gender": "female",
+      "ja": "こんばんは。",
+      "vi": "Chào buổi tối ạ.",
+      "terms": [
+        "こんばんは"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "evening_greeting"
+    },
+    {
+      "id": "S-001-V13-004",
+      "group": "greet",
+      "role_vi": "Hàng xóm gặp nhau ngoài cửa vào sáng lạnh",
+      "gender": "male",
+      "ja": "今朝は寒いですね。",
+      "vi": "Sáng nay lạnh nhỉ.",
+      "terms": [],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "weather_ne"
+    },
+    {
+      "id": "S-001-V13-005",
+      "group": "greet",
+      "role_vi": "Người quen tình cờ gặp lại nhau ở lối vào chung cư",
+      "gender": "female",
+      "ja": "今朝も会いましたね。",
+      "vi": "Sáng nay mình cũng gặp nhau nhỉ.",
+      "terms": [
+        "会う"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "shared_event_ne"
+    },
+    {
+      "id": "S-001-V13-006",
+      "group": "meet",
+      "role_vi": "Thành viên vừa được giới thiệu ở buổi sinh hoạt nhóm",
+      "gender": "male",
+      "ja": "はじめまして、ナムです。",
+      "vi": "Rất vui được làm quen, tôi là Nam.",
+      "terms": [
+        "はじめまして"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "hajimemashite_name"
+    },
+    {
+      "id": "S-001-V13-007",
+      "group": "meet",
+      "role_vi": "Học viên mới muốn bạn cùng lớp gọi mình bằng tên Linh",
+      "gender": "female",
+      "ja": "リンと呼んでください。",
+      "vi": "Cứ gọi tôi là Linh nhé.",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "to_yonde_kudasai"
+    },
+    {
+      "id": "S-001-V13-008",
+      "group": "meet",
+      "role_vi": "Học viên phát hiện mình vừa chào nhầm người ở hành lang",
+      "gender": "female",
+      "ja": "すみません、人違いでした。",
+      "vi": "Xin lỗi, tôi nhầm người rồi.",
+      "terms": [
+        "すみません",
+        "人違い"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "sumimasen_repair"
+    },
+    {
+      "id": "S-001-V13-009",
+      "group": "meet",
+      "role_vi": "Học viên hỏi một người mới trong buổi sinh hoạt nhóm",
+      "gender": "male",
+      "ja": "この集まりは初めてですか。",
+      "vi": "Đây là lần đầu bạn đến buổi sinh hoạt này à?",
+      "terms": [
+        "初めて"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "hajimete_desu_ka"
+    },
+    {
+      "id": "S-001-V13-010",
+      "group": "open",
+      "role_vi": "Khách xin phép hỏi nhanh ở quầy thông tin",
+      "gender": "female",
+      "ja": "すみません、ちょっといいですか。",
+      "vi": "Xin lỗi, tôi hỏi một chút được không ạ?",
+      "terms": [
+        "すみません",
+        "ちょっといいですか"
+      ],
+      "scenes": [
+        "S002",
+        "S008"
+      ],
+      "pattern": "chotto_ii_desu_ka"
+    },
+    {
+      "id": "S-001-V13-011",
+      "group": "open",
+      "role_vi": "Thành viên nhóm mở lời hỏi về buổi sinh hoạt",
+      "gender": "male",
+      "ja": "今日の集まりのことで、ちょっといいですか。",
+      "vi": "Tôi hỏi một chút về buổi sinh hoạt hôm nay được không?",
+      "terms": [
+        "ちょっといいですか"
+      ],
+      "scenes": [
+        "S008",
+        "S010"
+      ],
+      "pattern": "chotto_ii_desu_ka"
+    },
+    {
+      "id": "S-001-V13-012",
+      "group": "open",
+      "role_vi": "Người quen báo đang vội khi được hỏi ở hành lang",
+      "gender": "male",
+      "ja": "すみません、今ちょっと急いでいます。",
+      "vi": "Xin lỗi, tôi đang hơi vội.",
+      "terms": [
+        "すみません",
+        "急ぐ"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "sumimasen_reason"
+    },
+    {
+      "id": "S-001-V13-013",
+      "group": "open",
+      "role_vi": "Thành viên nhóm muốn hỏi tiếp khi người quen bớt bận",
+      "gender": "female",
+      "ja": "あとで聞いてもいいですか。",
+      "vi": "Lát nữa tôi hỏi được không?",
+      "terms": [],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-001-V13-014",
+      "group": "open",
+      "role_vi": "Thành viên nhóm chốt một cuộc gặp ngắn vào năm giờ",
+      "gender": "male",
+      "ja": "五時にここで会いましょう。",
+      "vi": "Năm giờ mình gặp ở đây nhé.",
+      "terms": [
+        "会う"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "time_place_mashou"
+    },
+    {
+      "id": "S-001-V13-015",
+      "group": "courtesy",
+      "role_vi": "Học viên cảm ơn bạn học đã chỉ ghế trống",
+      "gender": "female",
+      "ja": "席を教えてくれてありがとうございます。",
+      "vi": "Cảm ơn bạn đã chỉ cho tôi chỗ ngồi.",
+      "terms": [
+        "ありがとうございます"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "te_kurete_arigatou"
+    },
+    {
+      "id": "S-001-V13-016",
+      "group": "courtesy",
+      "role_vi": "Hàng xóm nhường người kia đi trước ở cửa ra vào",
+      "gender": "male",
+      "ja": "お先にどうぞ。",
+      "vi": "Mời anh đi trước ạ.",
+      "terms": [
+        "お先にどうぞ"
+      ],
+      "scenes": [
+        "S006",
+        "S012"
+      ],
+      "pattern": "osaki_ni_douzo"
+    },
+    {
+      "id": "S-001-V13-017",
+      "group": "courtesy",
+      "role_vi": "Học viên xin phép đi qua cửa phòng học đang có người đứng",
+      "gender": "male",
+      "ja": "すみません、通ってもいいですか。",
+      "vi": "Xin lỗi, cho tôi đi qua được không ạ?",
+      "terms": [
+        "すみません",
+        "通る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-001-V13-018",
+      "group": "courtesy",
+      "role_vi": "Người đeo túi trấn an người vừa vô ý chạm vào túi",
+      "gender": "female",
+      "ja": "かばんは大丈夫ですよ。",
+      "vi": "Túi của tôi không sao đâu.",
+      "terms": [
+        "大丈夫"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "daijoubu_desu_yo"
+    },
+    {
+      "id": "S-001-V13-019",
+      "group": "leave",
+      "role_vi": "Khách báo chủ nhà rằng đã đến lúc mình ra về",
+      "gender": "male",
+      "ja": "そろそろ失礼します。",
+      "vi": "Tôi xin phép về nhé.",
+      "terms": [
+        "そろそろ",
+        "失礼します"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "sorosoro_shitsurei"
+    },
+    {
+      "id": "S-001-V13-020",
+      "group": "leave",
+      "role_vi": "Khách cảm ơn chủ nhà khi sắp ra về",
+      "gender": "female",
+      "ja": "今日はありがとうございました。",
+      "vi": "Cảm ơn anh về buổi hôm nay ạ.",
+      "terms": [
+        "ありがとうございました"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "kyou_wa_arigatou"
+    },
+    {
+      "id": "S-001-V13-021",
+      "group": "leave",
+      "role_vi": "Chủ nhà dặn khách khi khách ra về",
+      "gender": "male",
+      "ja": "気をつけて帰ってくださいね。",
+      "vi": "Về cẩn thận nhé.",
+      "terms": [
+        "気をつける"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "te_kudasai_ne"
+    },
+    {
+      "id": "S-001-V13-022",
+      "group": "leave",
+      "role_vi": "Hàng xóm chúc người quen một ngày vui khi gặp nhau buổi sáng",
+      "gender": "female",
+      "ja": "今日もいい一日を。",
+      "vi": "Chúc anh hôm nay cũng có một ngày vui nhé.",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "ii_ichinichi_wo"
+    }
+  ]
+}

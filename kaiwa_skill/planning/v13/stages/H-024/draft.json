@@ -1,0 +1,362 @@
+{
+  "code": "H-024",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "989394ee5af9859fe47d015b6da7e51a93cb78365147d03fe447b2fc2fc5677a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "map": "Xác định người cần gặp trước",
+    "listen": "Hỏi lo ngại và điều kiện thực tế",
+    "revise": "Sửa cách thử theo góp ý",
+    "meeting": "Báo đúng mức đồng thuận trong cuộc họp",
+    "follow": "Phản hồi cho người đã góp ý"
+  },
+  "items": [
+    {
+      "id": "H-024-V13-001",
+      "group": "map",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "注文の受け方を変える前に、窓口の担当者にも話を聞いておきたいです。",
+      "vi": "Trước khi đổi cách nhận đơn, tôi muốn hỏi trước cả người phụ trách ở bộ phận tiếp nhận.",
+      "terms": [
+        "窓口"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～にも聞いておく"
+    },
+    {
+      "id": "H-024-V13-002",
+      "group": "map",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "今回の試行の承認権は、どなたにありますか。",
+      "vi": "Ai có thẩm quyền duyệt cho chạy thử lần này ạ?",
+      "terms": [
+        "承認権"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～はどなたでしょうか"
+    },
+    {
+      "id": "H-024-V13-003",
+      "group": "map",
+      "role_vi": "Trưởng nhóm góp ý cho người đề xuất",
+      "gender": "male",
+      "ja": "現場責任者に何ができるか聞いてから、修正案を部長に見せてください。",
+      "vi": "Cô hãy hỏi quản lý vận hành xem tại chỗ có thể làm được những gì, rồi mới đưa bản sửa cho trưởng bộ phận.",
+      "terms": [
+        "現場責任者",
+        "修正案"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "～てから～してください"
+    },
+    {
+      "id": "H-024-V13-004",
+      "group": "map",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "窓口の夜間担当の中に、今回の聞き取りでまだお話を伺えていない方はいますか。",
+      "vi": "Trong số nhân viên ca tối ở bộ phận tiếp nhận, còn ai mà tôi chưa hỏi ý kiến về phương án này không ạ?",
+      "terms": [
+        "聞き取り",
+        "夜間担当"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "～ていない人はいますか"
+    },
+    {
+      "id": "H-024-V13-005",
+      "group": "listen",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "注文の確認方法の見直しはまだ検討段階ですが、現場から見てどんな懸念があるか聞かせていただけますか。",
+      "vi": "Cách xác nhận đơn vẫn đang được cân nhắc, tôi muốn nghe phía vận hành lo điều gì ạ.",
+      "terms": [
+        "懸念"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～の段階ですが"
+    },
+    {
+      "id": "H-024-V13-006",
+      "group": "listen",
+      "role_vi": "Quản lý vận hành",
+      "gender": "male",
+      "ja": "繁忙時の重複入力をなくせるなら、共有ボードを試すことは検討できます。",
+      "vi": "Nếu bỏ được việc nhập hai lần vào giờ cao điểm thì bên tôi có thể cân nhắc thử bảng chung.",
+      "terms": [
+        "繁忙時",
+        "重複入力"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "～なら検討できる"
+    },
+    {
+      "id": "H-024-V13-007",
+      "group": "listen",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "引き継ぎと入力が重なるとご負担が大きいと思いますが、特にどの時間帯が厳しいでしょうか。",
+      "vi": "Tôi nghĩ vừa bàn giao vừa phải nhập thêm sẽ khá vất vả, khung giờ nào đặc biệt khó xoay xở ạ?",
+      "terms": [
+        "引き継ぎ"
+      ],
+      "scenes": [
+        "S005",
+        "S007"
+      ],
+      "pattern": "特にどの～が厳しいでしょうか"
+    },
+    {
+      "id": "H-024-V13-008",
+      "group": "listen",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "確認方法を変えると、客先に約束している回答時刻に影響する可能性はありますか。",
+      "vi": "Nếu đổi cách xác nhận, liệu có ảnh hưởng đến giờ phản hồi mình đã hứa với khách không ạ?",
+      "terms": [
+        "客先"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～に影響する可能性"
+    },
+    {
+      "id": "H-024-V13-009",
+      "group": "listen",
+      "role_vi": "Phụ trách kinh doanh",
+      "gender": "male",
+      "ja": "案内時期は客先の担当者に確認してからお伝えしますので、会議ではまだ日程を確約しないでください。",
+      "vi": "Tôi sẽ hỏi đầu mối bên khách rồi báo thời điểm thông báo, nên cô khoan cam kết ngày cụ thể trong cuộc họp.",
+      "terms": [
+        "客先",
+        "確約する"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "～を確認してから"
+    },
+    {
+      "id": "H-024-V13-010",
+      "group": "revise",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "夕方は注文変更の電話が多いという話を踏まえて、試行を平日の午前に絞りました。",
+      "vi": "Sau khi nghe buổi chiều có nhiều cuộc gọi đổi đơn, tôi đã thu đợt thử xuống chỉ còn buổi sáng các ngày trong tuần.",
+      "terms": [
+        "踏まえる",
+        "絞る"
+      ],
+      "scenes": [
+        "S007",
+        "S008",
+        "S013"
+      ],
+      "pattern": "～を踏まえて～に絞る"
+    },
+    {
+      "id": "H-024-V13-011",
+      "group": "revise",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "共有ボードが使えないときの代替手順として、窓口にも電話で注文変更を伝える案です。",
+      "vi": "Nếu không dùng được bảng chung, tôi đề xuất phương án dự phòng là gọi điện báo việc đổi đơn cho cả bộ phận tiếp nhận.",
+      "terms": [
+        "代替手順",
+        "窓口"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "使えないときは"
+    },
+    {
+      "id": "H-024-V13-012",
+      "group": "revise",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "翌朝への引き継ぎで見落とす恐れがあるとのことなので、夜間担当が受けた注文変更は当面、試行の対象外にします。",
+      "vi": "Vì bên ca tối nói có thể bỏ sót thông tin lúc bàn giao cho ca sáng hôm sau, trước mắt tôi sẽ để các yêu cầu đổi đơn mà ca tối nhận ngoài phạm vi thử.",
+      "terms": [
+        "引き継ぎ",
+        "夜間担当",
+        "対象外"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "～とのことなので"
+    },
+    {
+      "id": "H-024-V13-013",
+      "group": "revise",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "現場が無理なく使える中止基準を決められるなら、午前だけの試行を検討できると思います。",
+      "vi": "Tôi nghĩ nếu thống nhất được tiêu chí dừng mà phía vận hành áp dụng được trong thực tế, ta có thể cân nhắc chỉ chạy thử vào buổi sáng.",
+      "terms": [
+        "中止基準"
+      ],
+      "scenes": [
+        "S006",
+        "S008",
+        "S022"
+      ],
+      "pattern": "～なら検討できる"
+    },
+    {
+      "id": "H-024-V13-014",
+      "group": "meeting",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "関係部署への事前相談は終えたものの、お客様への案内時期はまだ先方の確認待ちです。",
+      "vi": "Tôi đã trao đổi trước xong với các bộ phận liên quan, nhưng thời điểm thông báo cho khách vẫn đang chờ phía khách xác nhận.",
+      "terms": [
+        "事前相談",
+        "確認待ち"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～たものの～はまだ"
+    },
+    {
+      "id": "H-024-V13-015",
+      "group": "meeting",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "運用からは条件付きで検討できると聞いたのであって、すでに試行への同意を得たわけではありません。",
+      "vi": "Bên vận hành nói họ có thể cân nhắc nếu đủ điều kiện, chứ họ chưa đồng ý cho thử ạ.",
+      "terms": [
+        "条件付き",
+        "同意"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～のであって～わけではありません"
+    },
+    {
+      "id": "H-024-V13-016",
+      "group": "meeting",
+      "role_vi": "Người chủ trì cuộc họp quyết định",
+      "gender": "male",
+      "ja": "今日の判断は、二社分の試行に向けた準備の可否に絞りましょう。",
+      "vi": "Hôm nay ta chỉ quyết xem có tiến hành chuẩn bị đợt thử cho hai khách hàng hay không nhé.",
+      "terms": [
+        "可否",
+        "絞る"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～の可否に絞る"
+    },
+    {
+      "id": "H-024-V13-017",
+      "group": "meeting",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "お客様への案内方法と現場の中止基準がそろってから、試行開始の判断を仰ぐという理解でよろしいでしょうか。",
+      "vi": "Tôi hiểu là sau khi chốt được cách thông báo cho khách và tiêu chí dừng ở hiện trường thì mới xin quyết định cho bắt đầu thử, đúng không ạ?",
+      "terms": [
+        "中止基準"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～そろってから～するという理解"
+    },
+    {
+      "id": "H-024-V13-018",
+      "group": "follow",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "作業が増えるというご指摘を反映して、夜間の注文変更は試行の対象外にしました。",
+      "vi": "Theo góp ý của anh về việc khối lượng công việc sẽ tăng, tôi đã đưa các yêu cầu đổi đơn ca tối ra ngoài phạm vi thử.",
+      "terms": [
+        "反映する",
+        "対象外"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "ご指摘を反映して～"
+    },
+    {
+      "id": "H-024-V13-019",
+      "group": "follow",
+      "role_vi": "Quản lý vận hành",
+      "gender": "male",
+      "ja": "中止基準を決める前に、今の作業の実態を見て基準値を取ってもらえますか。",
+      "vi": "Trước khi đặt tiêu chí dừng, cô xem cách mọi người đang làm thực tế và ghi lại số liệu làm mốc giúp tôi được không?",
+      "terms": [
+        "実態",
+        "基準値",
+        "中止基準"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～を決める前に"
+    },
+    {
+      "id": "H-024-V13-020",
+      "group": "follow",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "転記の時間は減りましたが、引き継ぎの確認が増えたので、全体の負担が減ったとは言えません。",
+      "vi": "Thời gian chép lại thông tin đã giảm, nhưng việc kiểm lúc bàn giao tăng lên nên chưa thể nói tổng khối lượng công việc đã giảm.",
+      "terms": [
+        "転記",
+        "引き継ぎ"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～とは言えない"
+    },
+    {
+      "id": "H-024-V13-021",
+      "group": "follow",
+      "role_vi": "Người đề xuất thay đổi quy trình nhận đơn",
+      "gender": "female",
+      "ja": "通知内容を確認する担当が決まっていないので、自動通知は今回は見送り、連絡漏れの件数を先に確認します。",
+      "vi": "Vì chưa chốt ai kiểm nội dung thông báo, lần này tôi sẽ tạm gác đề xuất thông báo tự động và kiểm trước số lần bỏ sót thông báo.",
+      "terms": [
+        "連絡漏れ"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～ので今回は見送る"
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "code": "T-134",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "2e2761599e3587d020cdf54750f7f4daf366c80d5d26904546e8bd1ae4c1b30a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "status": "Hỏi tuyến nào dừng và mốc chạy lại",
+    "reroute": "Tìm đường thay phù hợp",
+    "ticket": "Giải thích vé đã dùng và hỏi xử lý",
+    "wait": "Báo người đang chờ và đổi điểm gặp",
+    "last": "Hỏi đường về hoặc chỗ nghỉ khi lỡ chuyến cuối",
+    "follow": "Báo sau khi tới và xử lý việc còn dở"
+  },
+  "items": [
+    {
+      "id": "T-134-V13-001",
+      "group": "status",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "今の放送で、止まっているのは何線でしたか。",
+      "vi": "Thông báo loa vừa nói tuyến nào đang ngừng chạy ạ?",
+      "terms": [
+        "放送"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "止まっているのは何線か"
+    },
+    {
+      "id": "T-134-V13-002",
+      "group": "status",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "茅場町まで行きたいのですが、この電車は今どこまで行きますか。",
+      "vi": "Tôi muốn đến Kayabachō, lúc này tàu đi đến ga nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～は今どこまで行くか"
+    },
+    {
+      "id": "T-134-V13-003",
+      "group": "status",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "午後六時ごろの運転再開は、今の見込みですか。",
+      "vi": "Tàu chạy lại khoảng sáu giờ chiều mới là dự kiến thôi, đúng không ạ?",
+      "terms": [
+        "運転再開",
+        "見込み"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～は確定か見込みか"
+    },
+    {
+      "id": "T-134-V13-004",
+      "group": "status",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "放送が聞こえにくいので、運行情報はどこで確認できますか。",
+      "vi": "Tôi khó nghe thông báo qua loa, có thể xem tình hình tàu chạy ở đâu ạ?",
+      "terms": [
+        "運行情報"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～はどこで確認できるか"
+    },
+    {
+      "id": "T-134-V13-005",
+      "group": "status",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "運転再開と出ていますが、次の電車は茅場町に止まりますか。",
+      "vi": "Bảng báo tàu chạy lại rồi, chuyến tiếp theo có dừng ở Kayabachō không ạ?",
+      "terms": [
+        "運転再開"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～は～に止まるか"
+    },
+    {
+      "id": "T-134-V13-006",
+      "group": "reroute",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "東西線を使わずに茅場町へ行くには、どこで乗り換えればいいですか。",
+      "vi": "Nếu không đi tuyến Tozai thì tôi cần đổi tàu ở đâu để đến Kayabachō ạ?",
+      "terms": [
+        "乗り換える"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～にはどこで乗り換えればいいか"
+    },
+    {
+      "id": "T-134-V13-007",
+      "group": "reroute",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "電車が止まっていて急いでいるのですが、タクシー乗り場はどちらですか。",
+      "vi": "Tàu đang ngừng mà tôi có việc gấp, xin hỏi chỗ đón taxi ở hướng nào ạ?",
+      "terms": [
+        "タクシー乗り場"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～はどちらですか"
+    },
+    {
+      "id": "T-134-V13-008",
+      "group": "reroute",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "荷物が大きいので、少し歩いても乗り換えの少ない行き方はありますか。",
+      "vi": "Tôi mang hành lý lớn, có đường nào ít phải đổi tàu dù phải đi bộ thêm chút không ạ?",
+      "terms": [
+        "荷物"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ても～が少ない方法はないか"
+    },
+    {
+      "id": "T-134-V13-009",
+      "group": "reroute",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "十分待っても案内表示が変わらなかったら、またここで聞いてもいいですか。",
+      "vi": "Nếu đợi mười phút mà bảng vẫn chưa đổi, tôi quay lại đây hỏi tiếp được không ạ?",
+      "terms": [
+        "案内表示"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～なければまた聞いてよいか"
+    },
+    {
+      "id": "T-134-V13-010",
+      "group": "ticket",
+      "role_vi": "Hành khách hỏi nhân viên quầy vé",
+      "gender": "female",
+      "ja": "PASMOのチャージ残高で改札を通りましたが、まだ電車には乗っていません。",
+      "vi": "Tôi vào ga bằng số dư nạp trên thẻ PASMO, nhưng vẫn chưa lên tàu ạ.",
+      "terms": [
+        "チャージ残高"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～で入ったがまだ～していない"
+    },
+    {
+      "id": "T-134-V13-011",
+      "group": "ticket",
+      "role_vi": "Hành khách hỏi nhân viên quầy vé",
+      "gender": "female",
+      "ja": "この乗車券は、振替輸送で別の線に乗るときも使えるか確認してもらえますか。",
+      "vi": "Anh kiểm giúp vé này có dùng được khi đi tuyến khác theo phương án thay thế của nhà tàu không ạ?",
+      "terms": [
+        "乗車券",
+        "振替輸送"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～でも使えるか確認する"
+    },
+    {
+      "id": "T-134-V13-012",
+      "group": "ticket",
+      "role_vi": "Hành khách hỏi nhân viên quầy vé",
+      "gender": "female",
+      "ja": "飯田橋から大手町まではもう乗ってきたので、今の切符をどうすればいいか教えてください。",
+      "vi": "Tôi đã đi tàu từ Iidabashi đến Ōtemachi, nhờ anh chỉ giúp tôi cần làm gì với vé đang có ạ.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～まで乗ってきたので～"
+    },
+    {
+      "id": "T-134-V13-013",
+      "group": "ticket",
+      "role_vi": "Hành khách hỏi nhân viên quầy vé",
+      "gender": "female",
+      "ja": "改札を出る前に、このカードで定期券を使ったか確認してもらえますか。",
+      "vi": "Trước khi ra khỏi cổng soát vé, anh kiểm tra giúp lượt này tôi có dùng vé tháng trên thẻ này không ạ?",
+      "terms": [
+        "定期券"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～前に～を見てもらう"
+    },
+    {
+      "id": "T-134-V13-014",
+      "group": "wait",
+      "role_vi": "Hành khách gọi cho bạn đang chờ",
+      "gender": "female",
+      "ja": "東西線が止まって、まだ大手町の改札のそばにいるよ。",
+      "vi": "Tuyến Tozai ngừng chạy nên mình vẫn đang ở gần cổng soát vé ga Ōtemachi.",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～が止まってまだ～にいる"
+    },
+    {
+      "id": "T-134-V13-015",
+      "group": "wait",
+      "role_vi": "Hành khách gọi cho bạn đang chờ",
+      "gender": "female",
+      "ja": "水天宮前までは行けそうなんだけど、そこまで迎えに来てもらえる？",
+      "vi": "Có lẽ mình đến được Suitengūmae, cậu ra đón mình ở đó được không?",
+      "terms": [
+        "迎え"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～まで迎えに来てもらえるか"
+    },
+    {
+      "id": "T-134-V13-016",
+      "group": "wait",
+      "role_vi": "Hành khách gọi cho bạn đang chờ",
+      "gender": "female",
+      "ja": "駅の東口じゃなくて、東改札を出たところの売店の横で待っててくれる？",
+      "vi": "Cậu đợi cạnh quầy bán hàng ngay ngoài cổng soát vé Đông, chứ không phải lối ra phía Đông của ga nhé?",
+      "terms": [
+        "売店"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～ではなく～で待ってほしい"
+    },
+    {
+      "id": "T-134-V13-017",
+      "group": "wait",
+      "role_vi": "Hành khách gọi cho bạn đang chờ",
+      "gender": "female",
+      "ja": "乗り換えた電車も遅れてるから、もう待たなくていいよ。",
+      "vi": "Tàu mình vừa đổi sang cũng chậm, cậu không cần đợi nữa đâu.",
+      "terms": [
+        "乗り換える"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～も遅れているから～しないで"
+    },
+    {
+      "id": "T-134-V13-018",
+      "group": "last",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "北千住まで帰る終電に乗り遅れたのですが、今からバスで行けますか。",
+      "vi": "Tôi lỡ chuyến tàu cuối để về Kita-Senju, giờ còn đi xe buýt đến đó được không ạ?",
+      "terms": [
+        "終電",
+        "乗り遅れる"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～を逃したが今から～か"
+    },
+    {
+      "id": "T-134-V13-019",
+      "group": "last",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "雨なので、屋根のあるタクシー乗り場はどちらですか。",
+      "vi": "Trời đang mưa, cho tôi hỏi chỗ đón taxi có mái che ở hướng nào ạ?",
+      "terms": [
+        "屋根",
+        "タクシー乗り場"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～はどちらですか"
+    },
+    {
+      "id": "T-134-V13-020",
+      "group": "last",
+      "role_vi": "Hành khách hỏi nhân viên ga",
+      "gender": "female",
+      "ja": "始発まで過ごせる宿泊施設を探すなら、駅のどちら側に行けばいいですか。",
+      "vi": "Nếu muốn tìm chỗ qua đêm để chờ chuyến tàu đầu ngày, tôi nên đi về phía nào của ga ạ?",
+      "terms": [
+        "始発",
+        "宿泊施設"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～を探すならどちら側か"
+    },
+    {
+      "id": "T-134-V13-021",
+      "group": "last",
+      "role_vi": "Hành khách lỡ chuyến cuối gọi khách sạn",
+      "gender": "female",
+      "ja": "今夜一人で泊まりたいのですが、九千円以内で今から入れる部屋はありますか。",
+      "vi": "Tôi muốn ở một mình đêm nay, còn phòng nào có thể nhận ngay với giá không quá 9.000 yên không ạ?",
+      "terms": [],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～以内で今から入れる部屋はあるか"
+    },
+    {
+      "id": "T-134-V13-022",
+      "group": "follow",
+      "role_vi": "Hành khách gọi báo người nhà",
+      "gender": "female",
+      "ja": "駅の近くのホテルが取れたから、迎えに来なくて大丈夫だよ。",
+      "vi": "Mình đặt được khách sạn gần ga rồi, không cần đến đón mình đâu.",
+      "terms": [
+        "迎え"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～が取れたから迎えは要らない"
+    },
+    {
+      "id": "T-134-V13-023",
+      "group": "follow",
+      "role_vi": "Hành khách gọi cho bạn đang chờ",
+      "gender": "female",
+      "ja": "大手町から半蔵門線で水天宮前まで来て、そこから歩いてきたよ。",
+      "vi": "Mình đi tuyến Hanzōmon từ Ōtemachi đến Suitengūmae, rồi đi bộ từ đó tới đây.",
+      "terms": [],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "～まで来て～から歩いた"
+    },
+    {
+      "id": "T-134-V13-024",
+      "group": "follow",
+      "role_vi": "Khách gọi nhà hàng vì lỡ giờ đặt bàn",
+      "gender": "female",
+      "ja": "電車が止まって今夜は行けなくなったので、予約を別の日に変えられますか。",
+      "vi": "Tàu ngừng chạy nên tối nay tôi không đến được nữa, tôi có thể đổi lịch đặt bàn sang hôm khác không ạ?",
+      "terms": [],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "～なくなったので～に変えられるか"
+    },
+    {
+      "id": "T-134-V13-025",
+      "group": "follow",
+      "role_vi": "Hành khách quay lại hỏi nhân viên quầy vé",
+      "gender": "female",
+      "ja": "PASMOから引かれた金額が、どの区間の運賃か確認してもらえますか。",
+      "vi": "Anh kiểm tra giúp khoản tiền trừ trên thẻ PASMO là tiền vé cho chặng nào được không ạ?",
+      "terms": [
+        "引く",
+        "運賃"
+      ],
+      "scenes": [
+        "S029"
+      ],
+      "pattern": "どの～か確認してもらう"
+    }
+  ]
+}

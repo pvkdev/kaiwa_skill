@@ -1,0 +1,369 @@
+{
+  "code": "S-060",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "9e8c4646d0b81524fd95de9ad38b2b9b9f3a9acbf06bb64691405f5159b77679",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "change": "Báo vướng lịch và xin đổi ca",
+    "cover": "Nhờ nhận ca và chốt giờ",
+    "rush": "Hỗ trợ quầy khi thiếu người",
+    "hand": "Bàn giao việc còn chờ"
+  },
+  "items": [
+    {
+      "id": "S-060-V13-001",
+      "group": "change",
+      "role_vi": "Nhân viên báo trưởng ca",
+      "gender": "female",
+      "ja": "金曜日の午後はシフトに入れません。",
+      "vi": "Tôi không làm được ca chiều thứ Sáu ạ.",
+      "terms": [
+        "午後",
+        "シフトに入る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "báo_không_nhận_được_ca"
+    },
+    {
+      "id": "S-060-V13-002",
+      "group": "change",
+      "role_vi": "Nhân viên xin đổi lịch",
+      "gender": "female",
+      "ja": "金曜日のシフトを変えてもいいですか。",
+      "vi": "Tôi xin đổi ca thứ Sáu được không ạ?",
+      "terms": [
+        "シフトを変える"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "xin_đổi_ca"
+    },
+    {
+      "id": "S-060-V13-003",
+      "group": "change",
+      "role_vi": "Trưởng ca",
+      "gender": "male",
+      "ja": "代わりの人が見つかったら、私に連絡してください。",
+      "vi": "Khi tìm được người làm thay, bạn báo tôi nhé.",
+      "terms": [
+        "代わりの人",
+        "見つかる",
+        "連絡する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "khi_xong_thì_báo"
+    },
+    {
+      "id": "S-060-V13-004",
+      "group": "change",
+      "role_vi": "Nhân viên chưa có người thay",
+      "gender": "female",
+      "ja": "代わりの人がまだ見つからないので、店長に相談してもいいですか。",
+      "vi": "Tôi vẫn chưa tìm được người thay, tôi trao đổi với quản lý cửa hàng được không ạ?",
+      "terms": [
+        "代わりの人",
+        "まだ",
+        "見つかる",
+        "店長",
+        "相談する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "xin_trao_đổi"
+    },
+    {
+      "id": "S-060-V13-005",
+      "group": "change",
+      "role_vi": "Nhân viên báo đã tìm được người thay",
+      "gender": "female",
+      "ja": "鈴木さんが金曜の午後二時から六時まで代わってくれます。",
+      "vi": "Bạn Suzuki nhận làm thay tôi từ hai đến sáu giờ chiều thứ Sáu ạ.",
+      "terms": [
+        "午後",
+        "代わる"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "báo_đã_có_người"
+    },
+    {
+      "id": "S-060-V13-006",
+      "group": "cover",
+      "role_vi": "Nhân viên nhờ đồng nghiệp",
+      "gender": "female",
+      "ja": "明日の早番を代わってもらえますか。",
+      "vi": "Bạn nhận giúp tôi ca sớm ngày mai được không?",
+      "terms": [
+        "早番",
+        "代わる"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "nhờ_nhận_ca"
+    },
+    {
+      "id": "S-060-V13-007",
+      "group": "cover",
+      "role_vi": "Đồng nghiệp đồng ý nhận ca",
+      "gender": "male",
+      "ja": "明日のシフトは八時から十二時まで全部入れます。",
+      "vi": "Ca ngày mai tôi nhận được hết từ tám đến mười hai giờ.",
+      "terms": [
+        "シフト",
+        "全部"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "nhận_toàn_ca"
+    },
+    {
+      "id": "S-060-V13-008",
+      "group": "cover",
+      "role_vi": "Đồng nghiệp nhận được một phần ca",
+      "gender": "female",
+      "ja": "シフトの前半なら、二時間入れます。",
+      "vi": "Tôi có thể làm hai tiếng đầu ca.",
+      "terms": [
+        "シフト",
+        "前半",
+        "～時間"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "nếu_thì_làm_được"
+    },
+    {
+      "id": "S-060-V13-009",
+      "group": "cover",
+      "role_vi": "Nhân viên tìm người cho nửa ca còn lại",
+      "gender": "female",
+      "ja": "シフトの後半は、誰に頼めばいいですか。",
+      "vi": "Nửa sau của ca thì tôi nên nhờ ai ạ?",
+      "terms": [
+        "シフト",
+        "後半"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_nên_nhờ_ai"
+    },
+    {
+      "id": "S-060-V13-010",
+      "group": "cover",
+      "role_vi": "Đồng nghiệp từ chối nhận ca",
+      "gender": "male",
+      "ja": "すみません、明日は予定があるので代われません。",
+      "vi": "Xin lỗi bạn, mai tôi có việc rồi nên không làm thay được.",
+      "terms": [
+        "すみません",
+        "予定",
+        "代わる"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "báo_không_nhận_được_ca"
+    },
+    {
+      "id": "S-060-V13-011",
+      "group": "cover",
+      "role_vi": "Nhân viên chốt nơi bàn giao",
+      "gender": "female",
+      "ja": "次の人への引き継ぎは、十時にレジの横でお願いします。",
+      "vi": "Nhờ bạn bàn giao cho người ca sau lúc mười giờ ở cạnh quầy tính tiền nhé.",
+      "terms": [
+        "次の人",
+        "レジ"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nhờ_bàn_giao"
+    },
+    {
+      "id": "S-060-V13-012",
+      "group": "rush",
+      "role_vi": "Trưởng ca cần người hỗ trợ quầy",
+      "gender": "male",
+      "ja": "レジが混んでいるので、誰か手伝ってくれませんか。",
+      "vi": "Quầy tính tiền đang đông, có ai ra giúp tôi được không?",
+      "terms": [
+        "レジ",
+        "手伝う"
+      ],
+      "scenes": [
+        "S010",
+        "S013"
+      ],
+      "pattern": "tìm_người_hỗ_trợ"
+    },
+    {
+      "id": "S-060-V13-013",
+      "group": "rush",
+      "role_vi": "Nhân viên chỉ hỗ trợ tới giờ nghỉ",
+      "gender": "female",
+      "ja": "十二時の休憩までなら、レジを手伝えます。",
+      "vi": "Tôi có thể hỗ trợ quầy tính tiền đến giờ nghỉ lúc mười hai giờ ạ.",
+      "terms": [
+        "休憩",
+        "レジ",
+        "手伝う"
+      ],
+      "scenes": [
+        "S010",
+        "S011"
+      ],
+      "pattern": "nếu_thì_làm_được"
+    },
+    {
+      "id": "S-060-V13-014",
+      "group": "rush",
+      "role_vi": "Trưởng ca xếp người nhận bàn giao",
+      "gender": "male",
+      "ja": "十一時五十分に田中さんにレジを引き継いでください。",
+      "vi": "Bạn bàn giao quầy tính tiền cho Tanaka lúc mười một giờ năm mươi nhé.",
+      "terms": [
+        "レジ",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "dặn_bàn_giao"
+    },
+    {
+      "id": "S-060-V13-015",
+      "group": "rush",
+      "role_vi": "Nhân viên hỏi việc ưu tiên",
+      "gender": "female",
+      "ja": "人が足りないので、レジと棚の整理はどちらを先にしますか。",
+      "vi": "Đang thiếu người, tôi nên ưu tiên quầy tính tiền hay sắp xếp kệ hàng ạ?",
+      "terms": [
+        "足りる",
+        "レジ",
+        "先に"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hỏi_việc_làm_trước"
+    },
+    {
+      "id": "S-060-V13-016",
+      "group": "rush",
+      "role_vi": "Trưởng ca phân việc",
+      "gender": "male",
+      "ja": "レジを先にお願いしてもいいですか。",
+      "vi": "Bạn ưu tiên quầy tính tiền giúp tôi được không?",
+      "terms": [
+        "レジ",
+        "先に"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "nhờ_ưu_tiên"
+    },
+    {
+      "id": "S-060-V13-017",
+      "group": "rush",
+      "role_vi": "Nhân viên báo khách đang chờ",
+      "gender": "female",
+      "ja": "お待たせしていますが、あと五分くらいでお呼びできると思います。",
+      "vi": "Xin lỗi đã để anh chờ, tôi nghĩ khoảng năm phút nữa sẽ đến lượt anh ạ.",
+      "terms": [
+        "待たせる"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "báo_thời_gian_ước_tính"
+    },
+    {
+      "id": "S-060-V13-018",
+      "group": "hand",
+      "role_vi": "Nhân viên bàn giao đơn hàng",
+      "gender": "female",
+      "ja": "この伝票の注文は、まだ在庫を確認していません。",
+      "vi": "Đơn trên phiếu này tôi vẫn chưa kiểm tra còn hàng không.",
+      "terms": [
+        "伝票",
+        "注文",
+        "まだ",
+        "在庫",
+        "確認する"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "báo_việc_chưa_xong"
+    },
+    {
+      "id": "S-060-V13-019",
+      "group": "hand",
+      "role_vi": "Nhân viên nhờ đồng nghiệp làm tiếp",
+      "gender": "female",
+      "ja": "カップが二つそろうか確認して、お客様に連絡してもらえる？",
+      "vi": "Bạn kiểm tra xem có đủ hai cốc không rồi báo khách giúp mình được không?",
+      "terms": [
+        "そろう",
+        "確認する",
+        "連絡する"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "nhờ_làm_tiếp"
+    },
+    {
+      "id": "S-060-V13-020",
+      "group": "hand",
+      "role_vi": "Nhân viên hỏi đồng nghiệp sau ca",
+      "gender": "male",
+      "ja": "昨日の青いカップの注文は、もう終わった？",
+      "vi": "Đơn cốc màu xanh hôm qua bạn xử lý xong chưa?",
+      "terms": [
+        "注文",
+        "終わる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "hỏi_việc_đã_xong_chưa"
+    },
+    {
+      "id": "S-060-V13-021",
+      "group": "hand",
+      "role_vi": "Nhân viên báo lại trưởng ca",
+      "gender": "female",
+      "ja": "来週のシフト表では、レジはどの時間帯にも人が入っています。",
+      "vi": "Theo bảng ca tuần tới, quầy tính tiền có người làm ở mọi khung giờ ạ.",
+      "terms": [
+        "来週",
+        "シフト表",
+        "レジ",
+        "時間帯"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "báo_đã_đủ_người"
+    }
+  ]
+}

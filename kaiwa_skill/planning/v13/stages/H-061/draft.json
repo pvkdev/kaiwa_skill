@@ -1,0 +1,402 @@
+{
+  "code": "H-061",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "49fff452fa1e10309596e20dbf0ec07029ca0ebd1345b5ba89ea85281b02a51c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "prices": "Nói khoản chi đã thấy và giới hạn kết luận",
+    "tool": "Giải thích công cụ qua việc người nghe cần",
+    "source": "Đọc số liệu và truy nguồn thông tin",
+    "trial": "Thử công cụ có giới hạn và hỏi về dữ liệu",
+    "place": "So tác động môi trường theo từng nơi",
+    "update": "Sửa nhận định và hẹn bàn tiếp"
+  },
+  "items": [
+    {
+      "id": "H-061-V13-001",
+      "group": "prices",
+      "role_vi": "Người bạn nói về chi phí sinh hoạt",
+      "gender": "female",
+      "ja": "このパン、先月より20円値上がりしてるね。",
+      "vi": "Cái bánh này tăng 20 yên so với tháng trước nhỉ.",
+      "terms": [
+        "値上がり"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "state_observed_change"
+    },
+    {
+      "id": "H-061-V13-002",
+      "group": "prices",
+      "role_vi": "Người bạn nói về chi phí sinh hoạt",
+      "gender": "male",
+      "ja": "うちは最近、食費の支出が少し増えたよ。",
+      "vi": "Gần đây nhà tớ chi tiền ăn nhiều hơn một chút.",
+      "terms": [
+        "支出"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "state_expense_change"
+    },
+    {
+      "id": "H-061-V13-003",
+      "group": "prices",
+      "role_vi": "Người bạn nói về chi phí sinh hoạt",
+      "gender": "female",
+      "ja": "最近、家計で何か変わった？",
+      "vi": "Dạo này chi tiêu nhà cậu có khoản nào thay đổi không?",
+      "terms": [
+        "家計"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "ask_other_household_effect"
+    },
+    {
+      "id": "H-061-V13-004",
+      "group": "prices",
+      "role_vi": "Người bạn nói về chi phí sinh hoạt",
+      "gender": "female",
+      "ja": "一つの店でパンの値上がりを見ただけだから、物価全体が上がったかどうかは別の資料で確かめたいな。",
+      "vi": "Tớ mới thấy bánh tăng giá ở một tiệm thôi, để biết mặt bằng giá có tăng không thì tớ muốn xem thêm số liệu khác.",
+      "terms": [
+        "値上がり",
+        "物価"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "limit_claim_to_sample"
+    },
+    {
+      "id": "H-061-V13-005",
+      "group": "prices",
+      "role_vi": "Người bạn nói về chi phí sinh hoạt",
+      "gender": "female",
+      "ja": "品目ごとの価格推移を比べるなら、どの地域の数字で、いつからいつまでを集計したのか先に見ない？",
+      "vi": "Nếu so diễn biến giá từng mặt hàng, mình xem trước số liệu của vùng nào và được tổng hợp từ lúc nào đến lúc nào nhé?",
+      "terms": [
+        "品目",
+        "価格推移",
+        "集計"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "check_scope_before_using_number"
+    },
+    {
+      "id": "H-061-V13-006",
+      "group": "tool",
+      "role_vi": "Người hướng dẫn công cụ nói với người lớn tuổi",
+      "gender": "female",
+      "ja": "生成AIで文章を短くする話ですが、まず、どんな資料を読むのに時間がかかっていますか。",
+      "vi": "Về việc dùng AI tạo sinh để rút gọn văn bản, trước hết cháu muốn hỏi bác đang mất thời gian đọc loại tài liệu nào ạ?",
+      "terms": [
+        "生成AI"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "ask_user_goal_first"
+    },
+    {
+      "id": "H-061-V13-007",
+      "group": "tool",
+      "role_vi": "Người hướng dẫn công cụ nói với người lớn tuổi",
+      "gender": "female",
+      "ja": "長い案内の要約で日時は探しやすくなりますが、申込みの締切が抜けることもあるので、そこは原文で確認してください。",
+      "vi": "Bản tóm tắt giúp bác tìm ngày giờ nhanh hơn, nhưng có thể bỏ sót hạn đăng ký, nên bác xem lại phần đó trong thông báo gốc ạ.",
+      "terms": [
+        "要約"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "explain_benefit_and_limit"
+    },
+    {
+      "id": "H-061-V13-008",
+      "group": "tool",
+      "role_vi": "Người hướng dẫn công cụ nói với người lớn tuổi",
+      "gender": "female",
+      "ja": "自然に読める出力でも、AIが日時を取り違えていることがあるので、元の案内と照合しましょう。",
+      "vi": "Bản AI trả về có thể đọc rất tự nhiên mà vẫn ghi nhầm ngày giờ, mình đối chiếu với thông báo gốc nhé bác.",
+      "terms": [
+        "出力",
+        "取り違える",
+        "照合する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "check_output_against_source"
+    },
+    {
+      "id": "H-061-V13-009",
+      "group": "tool",
+      "role_vi": "Người lớn tuổi nói với người hướng dẫn công cụ",
+      "gender": "female",
+      "ja": "要約があっても、どこを大事に読むかは自分で決めたいので、今は紙の資料を一緒に読んでもらえますか。",
+      "vi": "Dù có bản tóm tắt, tôi vẫn muốn tự quyết phần nào cần đọc kỹ, trước mắt cháu đọc bản giấy cùng tôi được không?",
+      "terms": [
+        "要約"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "retain_right_to_choose"
+    },
+    {
+      "id": "H-061-V13-010",
+      "group": "source",
+      "role_vi": "Người bạn cùng kiểm nguồn tin về trung tâm",
+      "gender": "female",
+      "ja": "センターが閉まるという画像には発信元も日付も写っていないから、元の投稿が見つかるまでは広めないでおこう。",
+      "vi": "Ảnh nói trung tâm sắp đóng cửa không hiện nguồn đăng hay ngày đăng, mình khoan chia sẻ cho tới khi tìm được bài gốc nhé.",
+      "terms": [
+        "発信元"
+      ],
+      "scenes": [
+        "S011",
+        "S014"
+      ],
+      "pattern": "hold_sharing_pending_source"
+    },
+    {
+      "id": "H-061-V13-011",
+      "group": "source",
+      "role_vi": "Người bạn cùng kiểm nguồn tin về trung tâm",
+      "gender": "female",
+      "ja": "来月の利用者が半分になるというのは予測で、先月の実績は隣の列に載っているよ。",
+      "vi": "Con số người dùng giảm còn một nửa vào tháng sau là dự báo, số thực tế tháng trước nằm ở cột bên cạnh.",
+      "terms": [
+        "予測",
+        "実績"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "distinguish_predicted_and_observed"
+    },
+    {
+      "id": "H-061-V13-012",
+      "group": "source",
+      "role_vi": "Người bạn cùng kiểm nguồn tin về trung tâm",
+      "gender": "male",
+      "ja": "写真だと年と見出しが切れているから、数字を使う前に、元の表の集計期間と項目を見ない？",
+      "vi": "Ảnh bị cắt mất năm và tiêu đề, trước khi dùng con số đó, mình xem bảng gốc tính trong thời gian nào và đang thống kê mục gì nhé?",
+      "terms": [
+        "集計"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "check_scope_before_using_number"
+    },
+    {
+      "id": "H-061-V13-013",
+      "group": "source",
+      "role_vi": "Người bạn cùng kiểm nguồn tin về trung tâm",
+      "gender": "female",
+      "ja": "利用者数が減るという数字は、開館日を減らす前提での来期の試算で、閉館の決定ではないよ。",
+      "vi": "Con số người dùng giảm là ước tính cho kỳ tới với giả định giảm số ngày mở cửa, đó chưa phải là quyết định đóng cửa đâu.",
+      "terms": [
+        "前提",
+        "来期",
+        "試算"
+      ],
+      "scenes": [
+        "S012",
+        "S015",
+        "S026"
+      ],
+      "pattern": "state_assumption_and_limit"
+    },
+    {
+      "id": "H-061-V13-014",
+      "group": "trial",
+      "role_vi": "Thành viên nhóm cư dân bàn việc thử công cụ",
+      "gender": "female",
+      "ja": "要約で読む時間を短くできても、直す人の作業時間が増えるなら、両方にかかる時間を比べたいな。",
+      "vi": "Bản tóm tắt có thể giúp đọc nhanh hơn, nhưng nếu người sửa lại mất nhiều công hơn thì tớ muốn so thời gian của cả hai bên.",
+      "terms": [
+        "要約"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "weigh_impact_across_roles"
+    },
+    {
+      "id": "H-061-V13-015",
+      "group": "trial",
+      "role_vi": "Thành viên nhóm cư dân bàn việc thử công cụ",
+      "gender": "female",
+      "ja": "試験導入は公開資料一枚に限って、速さと誤りの数だけじゃなく、読んだ人の理解も確かめてみない？",
+      "vi": "Mình dùng thử với đúng một tài liệu công khai rồi xem mất bao lâu, có bao nhiêu lỗi và người đọc hiểu đến đâu nhé?",
+      "terms": [
+        "試験導入",
+        "公開資料"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "limit_trial_and_define_check"
+    },
+    {
+      "id": "H-061-V13-016",
+      "group": "trial",
+      "role_vi": "Thành viên nhóm cư dân bàn việc thử công cụ",
+      "gender": "female",
+      "ja": "誰が個人データを保管して何に使うか確認できるまでは、参加者の名簿は入力しないでおこう。",
+      "vi": "Chừng nào chưa xác nhận được ai giữ dữ liệu cá nhân và dùng để làm gì thì mình khoan nhập danh sách người tham dự nhé.",
+      "terms": [
+        "個人データ",
+        "保管する",
+        "名簿",
+        "入力"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "check_before_using_data"
+    },
+    {
+      "id": "H-061-V13-017",
+      "group": "trial",
+      "role_vi": "Thành viên nhóm cư dân bàn việc thử công cụ",
+      "gender": "male",
+      "ja": "入力した文章の保存期間と、提供会社がその内容を機械学習に使うかどうかを、担当者に聞いてみよう。",
+      "vi": "Mình hỏi người phụ trách xem những đoạn đã nhập được lưu bao lâu và bên cung cấp có dùng nội dung đó để học máy hay không nhé.",
+      "terms": [
+        "入力",
+        "保存期間",
+        "機械学習"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "specify_questions_for_owner"
+    },
+    {
+      "id": "H-061-V13-018",
+      "group": "place",
+      "role_vi": "Người bạn trao đổi qua điện thoại về bao bì",
+      "gender": "female",
+      "ja": "こっちでは近所の一軒で持ち帰り容器が変わったけど、そっちでは容器包装のごみで何か気になってることはある？",
+      "vi": "Gần nhà tớ có một tiệm mới đổi hộp đựng đồ mang về, bên cậu có điều gì bận tâm về rác từ hộp đựng và bao bì không?",
+      "terms": [
+        "容器包装"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "ask_local_experience"
+    },
+    {
+      "id": "H-061-V13-019",
+      "group": "place",
+      "role_vi": "Người bạn trao đổi qua điện thoại về bao bì",
+      "gender": "female",
+      "ja": "私が話した容器の変更は先週の近所の一軒の話だから、そっちで袋を変えた店と時期は分けて考えよう。",
+      "vi": "Chuyện tớ kể là một tiệm gần nhà đổi hộp tuần trước, mình cứ xét riêng với tiệm đổi túi bên cậu vì khác cả nơi lẫn thời điểm nhé.",
+      "terms": [],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "separate_places_and_times"
+    },
+    {
+      "id": "H-061-V13-020",
+      "group": "place",
+      "role_vi": "Người bạn trao đổi qua điện thoại về bao bì",
+      "gender": "male",
+      "ja": "容器を変えただけで廃棄物が減るかは分からないから、回収先とその後の扱いも両方の町で見てみようよ。",
+      "vi": "Chỉ đổi hộp thì chưa biết có giảm được rác không, mình xem ở cả hai nơi bao bì được thu gom về đâu và xử lý thế nào nhé.",
+      "terms": [
+        "廃棄物",
+        "回収先"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "check_downstream_impact"
+    },
+    {
+      "id": "H-061-V13-021",
+      "group": "update",
+      "role_vi": "Người bạn cùng kiểm nguồn tin về trung tâm",
+      "gender": "female",
+      "ja": "私も利用者が減ったと思い込んでたけど、報告書では来期の試算だと分かったから、話すときには条件も添えるね。",
+      "vi": "Tớ cũng đã tưởng số người dùng giảm rồi, nhưng xem báo cáo mới biết đó là ước tính kỳ tới, nên khi kể lại tớ sẽ nêu cả giả định dùng để tính nhé.",
+      "terms": [
+        "来期",
+        "試算"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "revise_claim_with_source"
+    },
+    {
+      "id": "H-061-V13-022",
+      "group": "update",
+      "role_vi": "Người bạn cùng kiểm nguồn tin về trung tâm",
+      "gender": "male",
+      "ja": "報告書の話は情報が多くて疲れたから、今日はここまでにして、次の案内が出てから読み直してもいい？",
+      "vi": "Báo cáo nhiều thông tin quá tớ thấy mệt, hôm nay mình dừng ở đây, đợi có thông báo tiếp theo rồi đọc lại được không?",
+      "terms": [],
+      "scenes": [
+        "S028",
+        "S029"
+      ],
+      "pattern": "pause_until_ready"
+    },
+    {
+      "id": "H-061-V13-023",
+      "group": "update",
+      "role_vi": "Người bạn cùng kiểm nguồn tin về trung tâm",
+      "gender": "female",
+      "ja": "前の試算と新しい案内では対象の時期が違うから、明日はその二つを並べて10分だけ話さない？",
+      "vi": "Ước tính trước và thông báo mới nói về hai khoảng thời gian khác nhau, mai mình xem hai tài liệu cạnh nhau rồi bàn đúng mười phút nhé?",
+      "terms": [
+        "試算"
+      ],
+      "scenes": [
+        "S029",
+        "S030"
+      ],
+      "pattern": "set_short_followup"
+    },
+    {
+      "id": "H-061-V13-024",
+      "group": "update",
+      "role_vi": "Người bạn cùng kiểm nguồn tin về trung tâm",
+      "gender": "female",
+      "ja": "新しい案内で来月の開館は確認できたけど、その先は分からないから、今は来月の予定だけ立てようか。",
+      "vi": "Thông báo mới xác nhận tháng sau vẫn mở cửa, còn lịch xa hơn chưa rõ, trước mắt mình chỉ xếp lịch tháng sau nhé?",
+      "terms": [],
+      "scenes": [
+        "S030"
+      ],
+      "pattern": "act_on_confirmed_horizon"
+    }
+  ]
+}

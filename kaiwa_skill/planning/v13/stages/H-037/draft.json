@@ -1,0 +1,387 @@
+{
+  "code": "H-037",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "6b836b97449ecd2b69f7a1032420894e5922e6b25e8c5d1d3d5e170de0cd810e",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "welcome": "Đón khách và xác nhận nhu cầu hôm nay",
+    "quiet": "Tìm cách giảm tiếng ồn theo ý khách",
+    "time": "Xử lý yêu cầu gấp trong giới hạn",
+    "coord": "Phối hợp hậu trường và giữ kín thông tin",
+    "adjust": "Chỉnh chỗ ngồi và thu xếp quản lý",
+    "follow": "Hỏi mức cải thiện và xác nhận lựa chọn"
+  },
+  "items": [
+    {
+      "id": "H-037-V13-001",
+      "group": "welcome",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "本日は、先にお部屋へご案内いたしましょうか。",
+      "vi": "Hôm nay tôi xin đưa chị lên phòng trước, được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "先に～いたしましょうか"
+    },
+    {
+      "id": "H-037-V13-002",
+      "group": "welcome",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "お連れ様の前では、以前お泊まりいただいたときのお話は控えます。",
+      "vi": "Từ nay khi có người đi cùng chị, tôi sẽ tránh nhắc đến những lần chị từng lưu trú ở đây ạ.",
+      "terms": [
+        "控える",
+        "お連れ様"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～を控える"
+    },
+    {
+      "id": "H-037-V13-003",
+      "group": "welcome",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "人通りの少ない席をご希望でしょうか、それともお声がけを控えるだけでよろしいでしょうか。",
+      "vi": "Chị muốn ngồi chỗ ít người qua lại, hay chỉ cần chúng tôi hạn chế đến hỏi han để chị yên tĩnh ạ?",
+      "terms": [
+        "お声がけ",
+        "控える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～か、それとも～か"
+    },
+    {
+      "id": "H-037-V13-004",
+      "group": "welcome",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "個室は満席ですが、仕切りのあるお席なら、周りの音をお確かめになってからお選びいただけます。",
+      "vi": "Phòng riêng đã kín, còn chỗ có vách ngăn thì chị có thể đến nghe thử tiếng xung quanh rồi chọn ạ.",
+      "terms": [
+        "個室",
+        "仕切り"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～を確かめてからお選びいただけます"
+    },
+    {
+      "id": "H-037-V13-005",
+      "group": "quiet",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "差し支えなければ、お部屋でどの音が特に気になるか伺ってもよろしいでしょうか。",
+      "vi": "Nếu tiện, chị cho tôi hỏi khi ở trong phòng, tiếng nào khiến chị khó chịu nhất được không ạ?",
+      "terms": [
+        "差し支えなければ",
+        "伺う"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "差し支えなければ～を伺う"
+    },
+    {
+      "id": "H-037-V13-006",
+      "group": "quiet",
+      "role_vi": "Khách lưu trú tại khách sạn",
+      "gender": "female",
+      "ja": "部屋を移動するのはできれば避けたいので、まず廊下の話し声を減らせないか見ていただけますか。",
+      "vi": "Nếu được tôi muốn tránh chuyển phòng, anh có thể xem trước có cách nào giảm tiếng người nói chuyện ngoài hành lang không ạ?",
+      "terms": [
+        "移動する",
+        "話し声"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～はできれば避けたい"
+    },
+    {
+      "id": "H-037-V13-007",
+      "group": "quiet",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "廊下の音を抑えるため、まずスタッフの作業場所をお部屋から少し離してみてもよろしいでしょうか。",
+      "vi": "Để giảm tiếng ngoài hành lang, trước mắt tôi xin thử chuyển chỗ làm của nhân viên ra xa phòng chị một chút được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "まず～してみてもよろしいでしょうか"
+    },
+    {
+      "id": "H-037-V13-008",
+      "group": "quiet",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "スタッフの作業場所をお部屋から離した後も、廊下の話し声は気になりますか。",
+      "vi": "Lúc nãy chúng tôi đã chuyển chỗ làm của nhân viên ra xa hơn, từ đó tiếng nói chuyện ngoài hành lang còn làm phiền chị không ạ?",
+      "terms": [
+        "話し声"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～した後も気になりますか"
+    },
+    {
+      "id": "H-037-V13-009",
+      "group": "time",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "お食事をご提案する前に、何時ごろお席を離れるご予定か、伺ってもよろしいでしょうか。",
+      "vi": "Trước khi gợi món, tôi xin hỏi khoảng mấy giờ chị cần rời bàn ạ?",
+      "terms": [
+        "伺う"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "何時ごろ～予定か伺う"
+    },
+    {
+      "id": "H-037-V13-010",
+      "group": "time",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "二十分以内にお出しできるかはまだ確約できませんので、厨房に確認して五分後にお知らせします。",
+      "vi": "Tôi chưa thể cam kết có món trong vòng hai mươi phút, tôi sẽ hỏi bếp rồi báo lại sau năm phút ạ.",
+      "terms": [
+        "厨房",
+        "確約する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～に確認して～後にお知らせする"
+    },
+    {
+      "id": "H-037-V13-011",
+      "group": "time",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "温かい料理は三十分以上かかりますが、軽食でしたら十分ほどでお出しできます。",
+      "vi": "Món nóng sẽ mất ít nhất ba mươi phút, còn món nhẹ thì tôi có thể mang ra trong khoảng mười phút ạ.",
+      "terms": [
+        "軽食"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～でしたら～ほどでお出しできる"
+    },
+    {
+      "id": "H-037-V13-012",
+      "group": "time",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "厨房に確認しましたので、準備済みのスープでよろしければ、お出しするまで五分ほどです。",
+      "vi": "Tôi đã hỏi bếp rồi, nếu chị chọn món súp đã chuẩn bị sẵn thì khoảng năm phút nữa có thể phục vụ ạ.",
+      "terms": [
+        "厨房"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～でよろしければ～ほどです"
+    },
+    {
+      "id": "H-037-V13-013",
+      "group": "coord",
+      "role_vi": "Nhân viên khách sạn trao đổi với đồng nghiệp",
+      "gender": "male",
+      "ja": "二十時から一時間だけ、東側の客室前を通らない動線に変えられるか確認してもらえますか。",
+      "vi": "Chị kiểm tra giúp xem từ tám giờ tối có thể đổi lối đi trong một tiếng để tránh đoạn trước các phòng phía đông không?",
+      "terms": [
+        "客室",
+        "動線"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "～に限って～する"
+    },
+    {
+      "id": "H-037-V13-014",
+      "group": "coord",
+      "role_vi": "Nhân viên khách sạn trao đổi với đồng nghiệp",
+      "gender": "male",
+      "ja": "台車の動線を調整するため、必要な場所と時刻だけ共有し、お客様のご用件は伏せておきます。",
+      "vi": "Để đổi lối xe đẩy, tôi chỉ chia sẻ khu vực và giờ cần thiết, còn khách cần yên tĩnh để làm gì thì mình giữ kín nhé.",
+      "terms": [
+        "動線",
+        "ご用件"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～に必要な範囲で共有する"
+    },
+    {
+      "id": "H-037-V13-015",
+      "group": "coord",
+      "role_vi": "Nhân viên khách sạn trao đổi với đồng nghiệp",
+      "gender": "male",
+      "ja": "奥の席は予約表だけでなく、現場でも空きを確認し、仕切りと照明が使えるか見ておいてください。",
+      "vi": "Chị xem cả bảng đặt chỗ lẫn tình trạng thực tế để chắc chỗ phía trong còn trống, rồi kiểm tra vách ngăn và đèn dùng được không nhé.",
+      "terms": [
+        "仕切り",
+        "照明"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "～だけでなく～でも確認する"
+    },
+    {
+      "id": "H-037-V13-016",
+      "group": "coord",
+      "role_vi": "Đồng nghiệp kiểm chỗ ngồi và điều kiện phục vụ",
+      "gender": "female",
+      "ja": "奥の席の仕切りは設置済みですが、周りの音を完全に遮ることはできません。",
+      "vi": "Chỗ phía trong đã có vách ngăn, nhưng không thể chặn hết tiếng xung quanh.",
+      "terms": [
+        "仕切り",
+        "遮る"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～はできているが～は遮れない"
+    },
+    {
+      "id": "H-037-V13-017",
+      "group": "adjust",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "ご期待に沿えず申し訳ございませんが、今回のお席で特に気になる点をお聞かせいただけますか。",
+      "vi": "Tôi xin lỗi vì chỗ ngồi chưa như chị mong đợi, chị cho tôi biết cụ thể điều gì khiến chị thấy bất tiện nhất lần này được không ạ?",
+      "terms": [
+        "ご期待に沿う"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "ご期待に沿えず～どの点が～"
+    },
+    {
+      "id": "H-037-V13-018",
+      "group": "adjust",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "以前のお席を前提にしてしまいましたので、今日はどのようなお席がよいか改めて伺ってもよろしいでしょうか。",
+      "vi": "Tôi đã mặc định chị muốn chỗ như lần trước, giờ tôi xin hỏi lại hôm nay chỗ ngồi thế nào thì thuận tiện cho chị ạ?",
+      "terms": [
+        "伺う"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "改めて～伺ってもよいか"
+    },
+    {
+      "id": "H-037-V13-019",
+      "group": "adjust",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "こちらの照明は今すぐ調整できますので、お試しいただく間に、窓側の席が空いているか確認します。",
+      "vi": "Đèn ở đây có thể chỉnh ngay, trong lúc chị thử tôi sẽ kiểm tra xem chỗ phía cửa sổ có trống không ạ.",
+      "terms": [
+        "照明"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～間に～を確認する"
+    },
+    {
+      "id": "H-037-V13-020",
+      "group": "adjust",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "管理者が同席できるか確認し、十分以内に、同席の可否と可能な場合の時間をお知らせします。",
+      "vi": "Tôi sẽ hỏi quản lý và trong vòng mười phút sẽ báo chị xem quản lý có thể cùng trao đổi không, nếu được thì vào lúc nào ạ.",
+      "terms": [
+        "可否"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～か確認し～以内に連絡する"
+    },
+    {
+      "id": "H-037-V13-021",
+      "group": "follow",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "台車の動線を変えた後の会議でも、まだ気になった音はありましたか。",
+      "vi": "Sau khi đổi lối xe đẩy, lúc họp chị còn thấy tiếng gì làm phiền không ạ?",
+      "terms": [
+        "動線"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～した後も気になりますか"
+    },
+    {
+      "id": "H-037-V13-022",
+      "group": "follow",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "明日の空室状況と追加料金の有無を確認し、お部屋の変更を判断できる管理者におつなぎします。",
+      "vi": "Tôi sẽ kiểm tra phòng trống ngày mai và có phí phát sinh không, rồi kết nối chị với quản lý có quyền quyết định đổi phòng ạ.",
+      "terms": [
+        "空室状況",
+        "追加料金"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～を確認してから～につなぐ"
+    },
+    {
+      "id": "H-037-V13-023",
+      "group": "follow",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "追加料金なしで変更できるお部屋ですので、実際にお部屋の静かさをお確かめになってからお選びいただけます。",
+      "vi": "Chị có thể đổi sang phòng này mà không mất thêm phí, cứ kiểm tra thực tế xem phòng có đủ yên rồi chọn ạ.",
+      "terms": [
+        "追加料金"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～を確かめてからお選びいただけます"
+    },
+    {
+      "id": "H-037-V13-024",
+      "group": "follow",
+      "role_vi": "Nhân viên khách sạn đón hoặc hỗ trợ khách",
+      "gender": "male",
+      "ja": "ご滞在中に伺った音やお席の件については、予約窓口で私の名前をお伝えいただければ担当におつなぎします。",
+      "vi": "Về tiếng ồn và chỗ ngồi chị đã góp ý trong lần lưu trú, nếu cần trao đổi thêm, chị cho bộ phận đặt phòng biết tên tôi để họ chuyển chị đến đúng người phụ trách ạ.",
+      "terms": [
+        "ご滞在"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～いただければ担当におつなぎします"
+    }
+  ]
+}

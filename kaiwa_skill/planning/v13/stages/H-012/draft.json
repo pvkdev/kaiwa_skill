@@ -1,0 +1,365 @@
+{
+  "code": "H-012",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "c25008be75923c80263bcff79ccc806549da8afc5ff28ecf9a10c3bc14729a83",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Tìm lý do khiến người nghe chưa đồng ý",
+    "evidence": "Đưa bằng chứng và nói rõ giới hạn",
+    "adjust": "Sửa cách thử để giảm việc phát sinh",
+    "limits": "Đặt tiêu chí dừng và báo kết quả",
+    "revisit": "Tôn trọng quyết định và xin xem lại khi có dữ liệu"
+  },
+  "items": [
+    {
+      "id": "H-012-V13-001",
+      "group": "ask",
+      "role_vi": "Người đề xuất hỏi người đang cân nhắc",
+      "gender": "male",
+      "ja": "この案で、一番気になる点はどこですか。",
+      "vi": "Về phương án này, điểm nào khiến chị băn khoăn nhất ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "一番気になる点はどこですか"
+    },
+    {
+      "id": "H-012-V13-002",
+      "group": "ask",
+      "role_vi": "Người dùng nêu lo ngại về việc phải bỏ dở công việc",
+      "gender": "female",
+      "ja": "試す間に、普段の仕事のほうで手が足りなくなりそうです。",
+      "vi": "Trong thời gian thử, e là bên tôi sẽ thiếu người làm các việc thường ngày ạ.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～間に、～そうです"
+    },
+    {
+      "id": "H-012-V13-003",
+      "group": "ask",
+      "role_vi": "Người đề xuất xác nhận đã hiểu đúng trở ngại",
+      "gender": "male",
+      "ja": "費用よりも、試行に必要な人手の確保が難しいということですね。",
+      "vi": "Điểm vướng lớn hơn chi phí là việc bố trí đủ người cho lần thử, đúng không ạ?",
+      "terms": [
+        "試行",
+        "人手",
+        "確保する"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～ということですね"
+    },
+    {
+      "id": "H-012-V13-004",
+      "group": "ask",
+      "role_vi": "Người đề xuất xác nhận ưu tiên trước khi sửa cách thử",
+      "gender": "female",
+      "ja": "繁忙期ですので、現場の作業を増やさないことが先決という理解で合っていますか。",
+      "vi": "Vì đang vào đợt cao điểm, ưu tiên trước hết là không làm tăng việc cho những người trực tiếp sử dụng, tôi hiểu vậy đúng không ạ?",
+      "terms": [
+        "繁忙期",
+        "先決"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "H-012-V13-005",
+      "group": "ask",
+      "role_vi": "Người đề xuất hỏi cần có bảo đảm gì trước khi thử",
+      "gender": "male",
+      "ja": "試行に慎重な方には、どんな根拠があれば検討していただけそうですか。",
+      "vi": "Theo chị, cần đưa ra căn cứ gì thì những người còn dè dặt mới sẵn lòng cân nhắc việc thử ạ?",
+      "terms": [
+        "試行",
+        "慎重",
+        "根拠"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～があれば～ていただけそうですか"
+    },
+    {
+      "id": "H-012-V13-006",
+      "group": "evidence",
+      "role_vi": "Người đề xuất nêu đúng kết quả liên quan đến ưu tiên",
+      "gender": "female",
+      "ja": "小規模な試行では、参加者が最新版を見つけるまでの時間を短縮できました。",
+      "vi": "Trong lần thử quy mô nhỏ, chúng tôi đã rút ngắn được thời gian người tham gia tìm bản mới nhất ạ.",
+      "terms": [
+        "小規模",
+        "試行"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～では、～できました"
+    },
+    {
+      "id": "H-012-V13-007",
+      "group": "evidence",
+      "role_vi": "Người đề xuất nói thẳng giới hạn của dữ liệu",
+      "gender": "male",
+      "ja": "五人だけの試行でしたので、ほかの部署でも同じ結果が出るとは言えません。",
+      "vi": "Lần thử chỉ có năm người nên bên tôi chưa thể nói bộ phận khác cũng sẽ có kết quả tương tự ạ.",
+      "terms": [
+        "試行"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "～でしたので、～とは言えません"
+    },
+    {
+      "id": "H-012-V13-008",
+      "group": "evidence",
+      "role_vi": "Người cân nhắc xin biết cách đo kết quả",
+      "gender": "female",
+      "ja": "結果とあわせて、所要時間をどのように測ったかも教えていただけますか。",
+      "vi": "Ngoài kết quả, anh cho tôi biết bên anh đã đo thời gian thực hiện như thế nào được không ạ?",
+      "terms": [
+        "所要時間"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～も教えていただけますか"
+    },
+    {
+      "id": "H-012-V13-009",
+      "group": "evidence",
+      "role_vi": "Người đề xuất thống nhất tiêu chí trước khi so phương án",
+      "gender": "male",
+      "ja": "案を比べるときは、現場で発生する追加作業の時間を比較基準にしてもよろしいでしょうか。",
+      "vi": "Khi so các phương án, ta lấy thời gian người dùng phải bỏ thêm để làm tiêu chí, được không ạ?",
+      "terms": [
+        "追加作業",
+        "比較基準"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-012-V13-010",
+      "group": "evidence",
+      "role_vi": "Người đề xuất đính chính giá trị ước tính",
+      "gender": "female",
+      "ja": "五分という数字は手順を基に見積もったもので、実測値ではありません。",
+      "vi": "Năm phút là mức ước tính dựa trên các bước thực hiện, mình chưa đo được con số đó trong thực tế ạ.",
+      "terms": [
+        "手順",
+        "見積もる",
+        "実測値"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～は～を基に～たもので、～ではありません"
+    },
+    {
+      "id": "H-012-V13-011",
+      "group": "adjust",
+      "role_vi": "Người đề xuất hỏi thêm người thực sự làm việc",
+      "gender": "male",
+      "ja": "新しい手順で一番負担になりそうな作業を教えていただけますか。",
+      "vi": "Chị cho tôi biết bước nào trong quy trình mới có thể khiến chị tốn công nhất được không ạ?",
+      "terms": [
+        "手順",
+        "負担"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-012-V13-012",
+      "group": "adjust",
+      "role_vi": "Người đề xuất thay thứ tự thử để giảm tải",
+      "gender": "female",
+      "ja": "まず連絡方法を変えずに済むか確認してから、最新版の見せ方を試しませんか。",
+      "vi": "Ta kiểm trước xem có thể giữ cách liên hệ hiện tại không, rồi mới thử cách hiển thị bản mới nhất nhé?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～てから、～を試しませんか"
+    },
+    {
+      "id": "H-012-V13-013",
+      "group": "adjust",
+      "role_vi": "Người đề xuất chấp nhận lùi lịch vì thiếu người",
+      "gender": "male",
+      "ja": "今月は人手を確保できないとのことですので、試行は来月の予定が見えるまで延期しましょう。",
+      "vi": "Tháng này bên chị chưa bố trí được người, vậy ta lùi lần thử đến khi có lịch công việc tháng sau nhé.",
+      "terms": [
+        "人手",
+        "確保する",
+        "試行",
+        "延期"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～とのことですので、～ましょう"
+    },
+    {
+      "id": "H-012-V13-014",
+      "group": "adjust",
+      "role_vi": "Người đề xuất hỏi lại khi lịch công việc đã rõ",
+      "gender": "female",
+      "ja": "今月の予定が見えてきたところで、試行に半日参加できる方がいるか伺ってもよろしいでしょうか。",
+      "vi": "Giờ lịch tháng này đã rõ hơn, tôi xin hỏi bên anh có ai dành được nửa ngày để tham gia thử không ạ?",
+      "terms": [
+        "試行",
+        "半日"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-012-V13-015",
+      "group": "limits",
+      "role_vi": "Người đề xuất nêu điều kiện để đạt mục tiêu",
+      "gender": "male",
+      "ja": "最新版を探す時間を減らすには、会議前に皆が見る場所を一つにそろえる必要があります。",
+      "vi": "Để giảm thời gian tìm bản mới nhất, trước cuộc họp mọi người cần xem tài liệu ở cùng một chỗ ạ.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～には、～必要があります"
+    },
+    {
+      "id": "H-012-V13-016",
+      "group": "limits",
+      "role_vi": "Người quyết đề nghị đặt điều kiện dừng từ đầu",
+      "gender": "female",
+      "ja": "試行するなら、追加作業が増えすぎたときに止められるよう、中止基準を先に決めておきたいです。",
+      "vi": "Nếu mình thử, tôi muốn thống nhất trước tiêu chí dừng để có thể dừng khi phát sinh quá nhiều việc ạ.",
+      "terms": [
+        "試行",
+        "追加作業",
+        "中止基準"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～なら、～よう、～ておきたいです"
+    },
+    {
+      "id": "H-012-V13-017",
+      "group": "limits",
+      "role_vi": "Người đề xuất hỏi ai theo dõi và ai nhận báo cáo",
+      "gender": "male",
+      "ja": "試行中の負担は誰が記録し、決めた上限を超えたときは誰に知らせる形にしましょうか。",
+      "vi": "Trong lúc thử, ai sẽ ghi lại khối lượng việc và nếu vượt mức đã định thì báo cho ai ạ?",
+      "terms": [
+        "試行",
+        "負担",
+        "上限"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～は誰が～し、～ときは誰に～ましょうか"
+    },
+    {
+      "id": "H-012-V13-018",
+      "group": "limits",
+      "role_vi": "Người đề xuất báo một tiêu chí đạt, một tiêu chí vượt ngưỡng",
+      "gender": "female",
+      "ja": "最新版を探す時間は短くなりましたが、準備時間が上限を超えた日は試行を中止しました。",
+      "vi": "Thời gian tìm bản mới nhất đã ngắn hơn, nhưng đến hôm thời gian chuẩn bị vượt ngưỡng, chúng tôi đã dừng thử ạ.",
+      "terms": [
+        "上限",
+        "試行"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～ましたが、～は～しました"
+    },
+    {
+      "id": "H-012-V13-019",
+      "group": "revisit",
+      "role_vi": "Người đề xuất hỏi điều kiện có thể thay đổi quyết định",
+      "gender": "male",
+      "ja": "次に導入を考えるとしたら、どの条件を満たす必要があるか伺ってもよろしいでしょうか。",
+      "vi": "Nếu sau này bên chị cân nhắc triển khai, tôi xin hỏi phương án cần đáp ứng điều kiện nào, được không ạ?",
+      "terms": [
+        "導入",
+        "満たす"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-012-V13-020",
+      "group": "revisit",
+      "role_vi": "Người quyết nêu thời điểm có thể cân nhắc lại",
+      "gender": "female",
+      "ja": "導入の再検討は、来四半期の作業量が見えてからにしたいです。",
+      "vi": "Tôi muốn đợi rõ khối lượng việc của quý tới rồi mới xem xét lại chuyện triển khai ạ.",
+      "terms": [
+        "導入",
+        "再検討",
+        "四半期"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～は、～てからにしたいです"
+    },
+    {
+      "id": "H-012-V13-021",
+      "group": "revisit",
+      "role_vi": "Người đề xuất hỏi đối tác có tiện nghe phương án nhỏ hơn",
+      "gender": "male",
+      "ja": "現行のシステムは変えずに会議前の確認だけを試す、という代替案の概要をご紹介しましょうか。",
+      "vi": "Tôi giới thiệu qua phương án thay thế, giữ hệ thống hiện tại và chỉ thử bước kiểm tra trước cuộc họp, được không ạ?",
+      "terms": [
+        "現行",
+        "代替案"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～という代替案の概要をご紹介しましょうか"
+    },
+    {
+      "id": "H-012-V13-022",
+      "group": "revisit",
+      "role_vi": "Người đề xuất xin xem xét dữ liệu mới trong phạm vi đã đo",
+      "gender": "female",
+      "ja": "一つの会議で準備の所要時間を測れましたので、その条件での結果だけご覧いただけますか。",
+      "vi": "Bên tôi đã đo được thời gian chuẩn bị cho một cuộc họp, anh xem giúp kết quả riêng trong điều kiện ấy được không ạ?",
+      "terms": [
+        "所要時間"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～ましたので、～だけご覧いただけますか"
+    }
+  ]
+}

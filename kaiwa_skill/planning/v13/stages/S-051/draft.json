@@ -1,0 +1,383 @@
+{
+  "code": "S-051",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b449bb4a0192fc605985ff10728a1c5311ba038c6d4021dd69986d8096451d6a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "booking": "Đặt lịch và tìm giờ khác",
+    "describe": "Chỉ đúng răng và mô tả cơn đau",
+    "during": "Xin giải thích, tạm dừng và hỏi lại",
+    "after": "Hỏi sau điều trị và đặt buổi tiếp"
+  },
+  "items": [
+    {
+      "id": "S-051-V13-001",
+      "group": "booking",
+      "role_vi": "Bệnh nhân gọi phòng nha",
+      "gender": "female",
+      "ja": "歯が痛いので、今日診てもらえますか。",
+      "vi": "Tôi bị đau răng, hôm nay phòng nha khám cho tôi được không ạ?",
+      "terms": [
+        "歯",
+        "痛い",
+        "診る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-051-V13-002",
+      "group": "booking",
+      "role_vi": "Bệnh nhân gọi phòng nha",
+      "gender": "female",
+      "ja": "今週、予約できる日はいつですか。",
+      "vi": "Tuần này tôi đặt lịch được ngày nào ạ?",
+      "terms": [
+        "予約する"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "いつ予約できますか"
+    },
+    {
+      "id": "S-051-V13-003",
+      "group": "booking",
+      "role_vi": "Bệnh nhân gọi phòng nha",
+      "gender": "female",
+      "ja": "火曜日は仕事があるので、木曜日の午前に変更できますか。",
+      "vi": "Thứ Ba tôi phải đi làm, tôi đổi lịch sang sáng thứ Năm được không ạ?",
+      "terms": [
+        "午前",
+        "変更する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜ので、変更できますか"
+    },
+    {
+      "id": "S-051-V13-004",
+      "group": "booking",
+      "role_vi": "Bệnh nhân nói với quầy nha khoa",
+      "gender": "female",
+      "ja": "前回こちらで治療してもらった歯が、また痛くなりました。",
+      "vi": "Chiếc răng từng điều trị ở đây lần trước lại đau rồi ạ.",
+      "terms": [
+        "前回",
+        "治療",
+        "歯",
+        "痛い"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "前回〜た〜がまた"
+    },
+    {
+      "id": "S-051-V13-005",
+      "group": "booking",
+      "role_vi": "Bệnh nhân gọi phòng nha",
+      "gender": "female",
+      "ja": "十時の予約に少し遅れそうですが、そのまま診てもらえますか。",
+      "vi": "Có lẽ tôi sẽ đến muộn một chút so với lịch 10 giờ, phòng nha vẫn khám cho tôi theo lịch đó được không ạ?",
+      "terms": [
+        "〜時",
+        "遅れる",
+        "診る"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-051-V13-006",
+      "group": "describe",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "右下の奥歯が三日前から痛いです。",
+      "vi": "Răng hàm dưới bên phải của tôi đau từ ba hôm trước ạ.",
+      "terms": [
+        "右下",
+        "奥歯",
+        "〜日",
+        "痛い"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜日前から痛いです"
+    },
+    {
+      "id": "S-051-V13-007",
+      "group": "describe",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "かむと痛いですが、何も食べていないときは痛くありません。",
+      "vi": "Lúc nhai thì đau, còn lúc không ăn gì thì không đau ạ.",
+      "terms": [
+        "かむ",
+        "痛い"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜と痛いですが、〜ときは"
+    },
+    {
+      "id": "S-051-V13-008",
+      "group": "describe",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "痛いのは左ではなく、右下の奥歯です。",
+      "vi": "Răng tôi đau là răng hàm dưới bên phải, không phải bên trái ạ.",
+      "terms": [
+        "痛い",
+        "右下",
+        "奥歯"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-051-V13-009",
+      "group": "during",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "詰め物がどんなものか、説明してもらえますか。",
+      "vi": "Bác sĩ giải thích giúp tôi miếng trám răng là gì được không ạ?",
+      "terms": [
+        "詰め物",
+        "説明する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-051-V13-010",
+      "group": "during",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "歯の色に近い目立たない材料はありますか。",
+      "vi": "Có vật liệu nào gần màu răng, trám vào không dễ lộ không ạ?",
+      "terms": [
+        "歯",
+        "目立つ",
+        "材料"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜はありますか"
+    },
+    {
+      "id": "S-051-V13-011",
+      "group": "during",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "詰め物の材料によって、費用はどのくらい違いますか。",
+      "vi": "Tùy vật liệu trám thì chi phí chênh nhau khoảng bao nhiêu ạ?",
+      "terms": [
+        "詰め物",
+        "材料",
+        "費用"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜によって、どのくらい違いますか"
+    },
+    {
+      "id": "S-051-V13-012",
+      "group": "during",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "歯が痛いので、少し止めてください。",
+      "vi": "Tôi đau răng, bác sĩ dừng một chút giúp tôi ạ.",
+      "terms": [
+        "歯",
+        "痛い",
+        "止める"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜ので、〜てください"
+    },
+    {
+      "id": "S-051-V13-013",
+      "group": "during",
+      "role_vi": "Nha sĩ đang điều trị",
+      "gender": "male",
+      "ja": "痛みが少し落ち着いたら、治療を続けてもいいですか。",
+      "vi": "Khi cơn đau dịu bớt, tôi làm tiếp được chứ ạ?",
+      "terms": [
+        "治療",
+        "続ける"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜たら、〜てもいいですか"
+    },
+    {
+      "id": "S-051-V13-014",
+      "group": "during",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "まだ歯が痛いので、もう少し休ませてください。",
+      "vi": "Tôi vẫn còn đau răng, cho tôi nghỉ thêm một chút ạ.",
+      "terms": [
+        "歯",
+        "痛い"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜ので、〜てください"
+    },
+    {
+      "id": "S-051-V13-015",
+      "group": "during",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "今日、歯の治療はどこまで進みましたか。",
+      "vi": "Bác sĩ cho tôi biết hôm nay đã điều trị đến phần nào được không ạ?",
+      "terms": [
+        "歯",
+        "治療"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "どこまで〜ましたか"
+    },
+    {
+      "id": "S-051-V13-016",
+      "group": "after",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "唇がまだしびれていますが、食事はいつからできますか。",
+      "vi": "Môi tôi vẫn còn tê, từ khi nào tôi có thể ăn được ạ?",
+      "terms": [
+        "唇",
+        "しびれる",
+        "食事"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜はいつからできますか"
+    },
+    {
+      "id": "S-051-V13-017",
+      "group": "after",
+      "role_vi": "Bệnh nhân gọi phòng nha",
+      "gender": "female",
+      "ja": "治療した歯が家に帰ってから強く痛むので、先生と話せますか。",
+      "vi": "Răng vừa điều trị đau nhiều từ lúc tôi về nhà, tôi nói chuyện với nha sĩ được không ạ?",
+      "terms": [
+        "治療",
+        "歯",
+        "強い"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜ので、話せますか"
+    },
+    {
+      "id": "S-051-V13-018",
+      "group": "after",
+      "role_vi": "Bệnh nhân gọi phòng nha",
+      "gender": "female",
+      "ja": "仕事の予定が変わったので、再診を火曜日の午前十時に変更できますか。",
+      "vi": "Lịch làm việc của tôi đổi rồi, tôi chuyển lịch tái khám sang 10 giờ sáng thứ Ba được không ạ?",
+      "terms": [
+        "再診",
+        "午前",
+        "〜時",
+        "変更する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜ので、変更できますか"
+    },
+    {
+      "id": "S-051-V13-019",
+      "group": "after",
+      "role_vi": "Bệnh nhân nói với quầy nha khoa",
+      "gender": "female",
+      "ja": "この見積もりには、次の治療の費用も入っていますか。",
+      "vi": "Dự toán này có gồm cả tiền điều trị buổi tiếp theo không ạ?",
+      "terms": [
+        "見積もり",
+        "治療",
+        "費用"
+      ],
+      "scenes": [
+        "S016",
+        "S018"
+      ],
+      "pattern": "〜には、〜も入っていますか"
+    },
+    {
+      "id": "S-051-V13-020",
+      "group": "after",
+      "role_vi": "Bệnh nhân nói với nha sĩ",
+      "gender": "female",
+      "ja": "もう一回必要な理由と、次の治療で何をするかを教えてください。",
+      "vi": "Bác sĩ cho tôi biết vì sao cần thêm một buổi và lần tới sẽ làm gì ạ.",
+      "terms": [
+        "〜回",
+        "治療"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜を教えてください"
+    },
+    {
+      "id": "S-051-V13-021",
+      "group": "after",
+      "role_vi": "Bệnh nhân nói với quầy nha khoa",
+      "gender": "female",
+      "ja": "見積もりを持ち帰って、決めてから予約窓口に電話してもいいですか。",
+      "vi": "Tôi mang dự toán về xem rồi quyết định, sau đó gọi quầy đặt lịch được không ạ?",
+      "terms": [
+        "見積もり",
+        "予約窓口"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜してから、〜てもいいですか"
+    },
+    {
+      "id": "S-051-V13-022",
+      "group": "after",
+      "role_vi": "Bệnh nhân gọi phòng nha",
+      "gender": "female",
+      "ja": "次の治療を始める前に、どこまで治すか先生に聞きたいです。",
+      "vi": "Trước buổi điều trị tiếp theo, tôi muốn hỏi nha sĩ sẽ làm đến phần nào ạ.",
+      "terms": [
+        "治療"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜前に〜を聞きたいです"
+    }
+  ]
+}

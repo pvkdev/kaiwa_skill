@@ -1,0 +1,344 @@
+{
+  "code": "H-017",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a3ef95aa0a55c99ec42b59b24e595a57e6b1c7de6e8a2e8be0904f346b6ffa63",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "goal": "Hỏi khách muốn người dùng làm được gì",
+    "scope": "Chốt phần việc, thời gian và người duyệt",
+    "change": "Thương lượng khi khách muốn thêm chức năng",
+    "test": "Trình bày bản đầu, sửa lỗi và bàn giao",
+    "extra": "Nói rõ giới hạn và nhận phần mới theo phạm vi riêng"
+  },
+  "items": [
+    {
+      "id": "H-017-V13-001",
+      "group": "goal",
+      "role_vi": "Người làm dự án hỏi mục tiêu trang đặt lịch",
+      "gender": "male",
+      "ja": "予約ページで、お客様に何ができるようにしたいですか。",
+      "vi": "Chị muốn khách làm được những gì trên trang đặt lịch?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～で、何ができるようにしたいですか"
+    },
+    {
+      "id": "H-017-V13-002",
+      "group": "goal",
+      "role_vi": "Khách mô tả việc khách tới lớp cần làm",
+      "gender": "female",
+      "ja": "体験教室の空き状況を見て、その場で申し込めるようにしたいです。",
+      "vi": "Tôi muốn khách xem lớp trải nghiệm nào còn chỗ rồi đăng ký ngay trên trang.",
+      "terms": [
+        "体験教室",
+        "空き状況"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を見て、その場で～ようにしたいです"
+    },
+    {
+      "id": "H-017-V13-003",
+      "group": "goal",
+      "role_vi": "Người làm dự án xin ví dụ cụ thể về cách dùng",
+      "gender": "male",
+      "ja": "初めての方がスマートフォンで予約するとき、どんな情報を先に見ますか。",
+      "vi": "Khi khách mới đặt lịch trên điện thoại, họ xem thông tin gì trước?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～とき、どんな～を先に～ますか"
+    },
+    {
+      "id": "H-017-V13-004",
+      "group": "goal",
+      "role_vi": "Người làm dự án hỏi ưu tiên hiển thị trước trong tình huống thực",
+      "gender": "female",
+      "ja": "初めて予約する方には、料金と所要時間のどちらを先に見せたほうが分かりやすいですか。",
+      "vi": "Với khách đặt lần đầu, theo anh cho họ thấy học phí hay thời lượng trước thì dễ hiểu hơn?",
+      "terms": [
+        "所要時間"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～のどちらを先に～たほうが～ですか"
+    },
+    {
+      "id": "H-017-V13-005",
+      "group": "scope",
+      "role_vi": "Người làm dự án làm rõ chưa nhận phần thanh toán",
+      "gender": "male",
+      "ja": "今回の作業範囲は予約の受付までで、決済機能はまだ含まれていません。",
+      "vi": "Phần việc lần này tới bước nhận đăng ký, chưa bao gồm chức năng thanh toán.",
+      "terms": [
+        "作業範囲",
+        "決済機能"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～は～までで、～は含まれていません"
+    },
+    {
+      "id": "H-017-V13-006",
+      "group": "scope",
+      "role_vi": "Người làm dự án đề nghị làm từng bước để kịp lớp",
+      "gender": "female",
+      "ja": "来月の教室に間に合わせるため、まず申し込みを受け付けるページから作りませんか。",
+      "vi": "Để kịp lớp tháng sau, hay là mình làm trang nhận đăng ký trước nhé?",
+      "terms": [
+        "申し込み"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～に間に合わせるため、まず～から～ませんか"
+    },
+    {
+      "id": "H-017-V13-007",
+      "group": "scope",
+      "role_vi": "Người làm dự án hỏi ai duyệt phần hiển thị giá",
+      "gender": "male",
+      "ja": "料金表を公開する前に、どなたに最終確認をお願いすればよろしいですか。",
+      "vi": "Trước khi công bố bảng giá, tôi nên nhờ ai xác nhận lần cuối ạ?",
+      "terms": [
+        "料金表",
+        "最終確認"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～前に、どなたに～をお願いすればよろしいですか"
+    },
+    {
+      "id": "H-017-V13-008",
+      "group": "scope",
+      "role_vi": "Người làm dự án gắn ngày gửi bản đầu với tài liệu cần nhận",
+      "gender": "female",
+      "ja": "金曜までに写真と料金表をいただければ、来週の水曜にたたき台をお見せできます。",
+      "vi": "Nếu nhận ảnh và bảng giá chậm nhất vào thứ Sáu, tôi có thể cho anh xem bản đầu để góp ý vào thứ Tư tuần sau.",
+      "terms": [
+        "料金表",
+        "たたき台"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～までに～をいただければ、～できます"
+    },
+    {
+      "id": "H-017-V13-009",
+      "group": "change",
+      "role_vi": "Người làm dự án hỏi ưu tiên khi khách muốn thêm đặt nhóm",
+      "gender": "male",
+      "ja": "今月の公開に間に合わせる必要があるのは、個人予約と団体予約のどちらですか。",
+      "vi": "Giữa đặt cá nhân và đặt nhóm, phần nào bắt buộc phải có để kịp công bố trong tháng này?",
+      "terms": [
+        "団体予約"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～必要があるのは、～のどちらですか"
+    },
+    {
+      "id": "H-017-V13-010",
+      "group": "change",
+      "role_vi": "Người làm dự án nói rõ đổi chức năng sẽ lùi lịch",
+      "gender": "female",
+      "ja": "団体予約の入力欄まで今月中に作る場合は、公開日を後ろ倒しにする必要があります。",
+      "vi": "Nếu làm cả ô nhập thông tin đặt nhóm trong tháng này thì mình phải lùi ngày công bố.",
+      "terms": [
+        "団体予約",
+        "入力欄",
+        "公開日",
+        "後ろ倒し"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～場合は、～必要があります"
+    },
+    {
+      "id": "H-017-V13-011",
+      "group": "change",
+      "role_vi": "Người làm dự án đề xuất phương án tạm giữ ngày ra mắt",
+      "gender": "male",
+      "ja": "公開日を動かせないなら、団体の方には連絡先と問い合わせに必要な項目だけご案内する形ではどうでしょうか。",
+      "vi": "Nếu không thể dời ngày công bố, mình chỉ hướng dẫn khách đặt nhóm cách liên hệ và thông tin cần gửi, chị thấy sao?",
+      "terms": [
+        "公開日"
+      ],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "～形ではどうでしょうか"
+    },
+    {
+      "id": "H-017-V13-012",
+      "group": "change",
+      "role_vi": "Người làm dự án tách việc đã chốt khỏi phương án đang so",
+      "gender": "female",
+      "ja": "個人予約は予定どおり進め、団体予約の作業には案を選んでいただいてから着手します。",
+      "vi": "Tôi sẽ tiếp tục phần đặt cá nhân theo lịch, còn phần đặt nhóm thì đợi anh chọn phương án rồi mới bắt đầu.",
+      "terms": [
+        "団体予約",
+        "着手する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～は予定どおり進め、～は～てから着手します"
+    },
+    {
+      "id": "H-017-V13-013",
+      "group": "test",
+      "role_vi": "Người làm dự án trình bày rõ mức hoàn thành của bản đầu",
+      "gender": "male",
+      "ja": "最初の版では料金と所要時間を確認して希望日を送れますが、空き状況は自動では表示されません。",
+      "vi": "Ở bản đầu, khách có thể xem giá, thời lượng và gửi ngày mong muốn, còn tình trạng chỗ trống chưa hiển thị tự động.",
+      "terms": [
+        "所要時間",
+        "空き状況"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～できますが、～されません"
+    },
+    {
+      "id": "H-017-V13-014",
+      "group": "test",
+      "role_vi": "Người làm dự án hỏi trình tự thao tác để tìm lỗi",
+      "gender": "female",
+      "ja": "申し込みが重複したか調べたいので、送信ボタンを押した後の表示と操作の手順を教えていただけますか。",
+      "vi": "Tôi muốn kiểm tra xem có đăng ký nào bị gửi trùng không, anh cho tôi biết sau khi bấm gửi trang hiện gì và người dùng đã thao tác thế nào được không?",
+      "terms": [
+        "申し込み",
+        "重複する",
+        "手順"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-017-V13-015",
+      "group": "test",
+      "role_vi": "Người làm dự án nhờ khách thử lại trên điện thoại",
+      "gender": "male",
+      "ja": "送信後に受付のメッセージが出るようにしましたので、スマートフォンからもう一度申し込んでいただけますか。",
+      "vi": "Tôi đã chỉnh để sau khi gửi sẽ có thông báo đã nhận, chị dùng điện thoại đăng ký lại một lần giúp tôi được không?",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ようにしましたので、～ていただけますか"
+    },
+    {
+      "id": "H-017-V13-016",
+      "group": "test",
+      "role_vi": "Khách hỏi một thao tác cần biết sau bàn giao",
+      "gender": "female",
+      "ja": "確認メールの送り先を変える手順だけ、教えていただけますか。",
+      "vi": "Anh chỉ giúp tôi các bước đổi địa chỉ nhận email xác nhận thôi được không?",
+      "terms": [
+        "確認メール",
+        "送り先",
+        "手順"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-017-V13-017",
+      "group": "extra",
+      "role_vi": "Người làm dự án đưa lựa chọn phù hợp phần thời gian còn lại",
+      "gender": "male",
+      "ja": "公開までに専用の地図を引き受けるのは難しいですが、住所と地図へのリンクなら載せられます。",
+      "vi": "Tôi khó nhận thêm việc làm bản đồ riêng trước ngày công bố, nhưng có thể đăng địa chỉ và đường dẫn bản đồ.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～は難しいですが、～なら～られます"
+    },
+    {
+      "id": "H-017-V13-018",
+      "group": "extra",
+      "role_vi": "Người làm dự án hỏi mục tiêu của trang được yêu cầu thêm",
+      "gender": "female",
+      "ja": "先生の紹介ページでは、お客様が何を見て申し込みを決められるようにしたいですか。",
+      "vi": "Với trang giới thiệu giáo viên, anh cho tôi biết mình muốn khách xem gì để quyết định đăng ký được không?",
+      "terms": [
+        "申し込み"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～では、お客様が何を見て～ようにしたいですか"
+    },
+    {
+      "id": "H-017-V13-019",
+      "group": "extra",
+      "role_vi": "Người làm dự án làm rõ đang xem xét chứ chưa nhận làm",
+      "gender": "male",
+      "ja": "先生の紹介ページは内容と日程を確認している段階で、まだ制作を引き受けたわけではありません。",
+      "vi": "Trang giới thiệu giáo viên vẫn ở bước xem nội dung và lịch, tôi chưa nhận làm trang này.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ている段階で、～たわけではありません"
+    },
+    {
+      "id": "H-017-V13-020",
+      "group": "extra",
+      "role_vi": "Người làm dự án đề nghị tách phần mới thành báo giá riêng",
+      "gender": "female",
+      "ja": "空き状況の表示は今の作業範囲に残し、紹介ページは別件としてお見積もりする形ではどうでしょうか。",
+      "vi": "Mình giữ phần hiển thị chỗ trống trong phạm vi hiện tại, còn trang giới thiệu để tôi báo giá riêng cho phần việc mới, anh thấy sao?",
+      "terms": [
+        "空き状況",
+        "作業範囲",
+        "別件",
+        "見積もり"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～形ではどうでしょうか"
+    },
+    {
+      "id": "H-017-V13-021",
+      "group": "extra",
+      "role_vi": "Người làm dự án xác nhận ai duyệt ảnh và câu chữ trước khi đăng",
+      "gender": "male",
+      "ja": "先生の紹介ページの写真と文面は、ご本人とミカさんの最終確認をいただいてから公開します。",
+      "vi": "Phần ảnh và câu chữ trên trang giới thiệu, tôi sẽ đợi chính giáo viên và chị Mika xác nhận lần cuối rồi mới công bố.",
+      "terms": [
+        "文面",
+        "最終確認"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～をいただいてから公開します"
+    }
+  ]
+}

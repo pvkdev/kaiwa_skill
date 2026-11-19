@@ -1,0 +1,363 @@
+{
+  "code": "H-011",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "73833bf94ca73a721e648041f19fede10011e78084dc58332d30fd59842fa702",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "explore": "Mở lời thăm dò và tìm điểm có thể hợp tác",
+    "scope": "Thống nhất mục tiêu, phạm vi và cách thử",
+    "people": "Hỏi đúng người và làm rõ mức phê duyệt",
+    "timing": "Chọn mốc trình lại hoặc khép đề nghị",
+    "confirm": "Nhắc lại bước hai bên đã đồng ý làm"
+  },
+  "items": [
+    {
+      "id": "H-011-V13-001",
+      "group": "explore",
+      "role_vi": "Đại diện hỏi trọng tâm năm tới của đối tác",
+      "gender": "male",
+      "ja": "来年度、御社はどの分野に力を入れるご予定ですか。",
+      "vi": "Năm tài chính tới, bên chị định tập trung vào lĩnh vực nào ạ?",
+      "terms": [
+        "来年度"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～ご予定ですか"
+    },
+    {
+      "id": "H-011-V13-002",
+      "group": "explore",
+      "role_vi": "Đại diện mở lời về khả năng phối hợp",
+      "gender": "female",
+      "ja": "資料の共有方法について、一度連携の可能性を探ってみませんか。",
+      "vi": "Về cách chia sẻ tài liệu, mình thử trao đổi xem hai bên có thể phối hợp được không ạ?",
+      "terms": [
+        "連携"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～について、～てみませんか"
+    },
+    {
+      "id": "H-011-V13-003",
+      "group": "explore",
+      "role_vi": "Đại diện đề nghị một việc cụ thể để bắt đầu",
+      "gender": "male",
+      "ja": "まず一つの部署で、資料が更新されたときの伝え方を一緒に考えませんか。",
+      "vi": "Trước hết, ta cùng tìm cách báo cập nhật tài liệu trong một bộ phận, được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "まず～を一緒に考えませんか"
+    },
+    {
+      "id": "H-011-V13-004",
+      "group": "explore",
+      "role_vi": "Đại diện giải thích phạm vi buổi thăm dò",
+      "gender": "female",
+      "ja": "今回は課題と手順を整理するところまでにして、成果物や費用は必要になった段階で相談できればと思います。",
+      "vi": "Lần này mình dừng ở bước làm rõ vấn đề và quy trình, khi nào cần bàn về sản phẩm bàn giao hay chi phí thì ta trao đổi sau ạ.",
+      "terms": [
+        "課題",
+        "成果物"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ところまでにして、～できればと思います"
+    },
+    {
+      "id": "H-011-V13-005",
+      "group": "explore",
+      "role_vi": "Đại diện làm rõ hiểu nhầm về độc quyền",
+      "gender": "male",
+      "ja": "今回打診しているのは一つの課題で協力できるかどうかで、独占を前提とした話ではありません。",
+      "vi": "Lần này tôi chỉ thăm dò xem hai bên có thể hợp tác ở một vấn đề cụ thể hay không, đề nghị này không đặt điều kiện độc quyền ạ.",
+      "terms": [
+        "打診する",
+        "課題",
+        "独占"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～のは～かどうかで、～ではありません"
+    },
+    {
+      "id": "H-011-V13-006",
+      "group": "scope",
+      "role_vi": "Đại diện hỏi dùng gì để đánh giá lợi ích",
+      "gender": "female",
+      "ja": "一部署で試行するとしたら、何を測れば御社にとっての効果が分かりそうでしょうか。",
+      "vi": "Nếu thử ở một bộ phận, theo anh mình nên đo gì để biết việc thử mang lại hiệu quả thế nào cho bên anh ạ?",
+      "terms": [
+        "試行"
+      ],
+      "scenes": [
+        "S005",
+        "S008"
+      ],
+      "pattern": "～としたら、～でしょうか"
+    },
+    {
+      "id": "H-011-V13-007",
+      "group": "scope",
+      "role_vi": "Đại diện hỏi đối tác lo nhất điều gì",
+      "gender": "male",
+      "ja": "一緒に試すうえで、一番大きな懸念は何でしょうか。",
+      "vi": "Khi hai bên cùng thử, điều chị lo nhất là gì ạ?",
+      "terms": [
+        "懸念"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～うえで、一番～は何でしょうか"
+    },
+    {
+      "id": "H-011-V13-008",
+      "group": "scope",
+      "role_vi": "Đại diện đề nghị cách xử lý nếu đổi đầu mối",
+      "gender": "male",
+      "ja": "試行を始める前に、窓口が交代した場合の連絡方法を決めておきませんか。",
+      "vi": "Trước khi bắt đầu thử, mình thống nhất cách báo cho nhau nếu đầu mối thay đổi nhé?",
+      "terms": [
+        "試行",
+        "窓口",
+        "交代"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～前に、～を決めておきませんか"
+    },
+    {
+      "id": "H-011-V13-009",
+      "group": "scope",
+      "role_vi": "Đối tác đề nghị chỉ thử ở một bộ phận trước",
+      "gender": "female",
+      "ja": "全社展開を考える前に、対象範囲を一部署に絞って試せないでしょうか。",
+      "vi": "Trước khi tính đến triển khai toàn công ty, ta có thể giới hạn phạm vi thử ở một bộ phận được không ạ?",
+      "terms": [
+        "全社展開",
+        "対象範囲"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～前に、～に絞って試せないでしょうか"
+    },
+    {
+      "id": "H-011-V13-010",
+      "group": "scope",
+      "role_vi": "Đại diện đề nghị một mốc để xem có tiếp tục",
+      "gender": "male",
+      "ja": "二週間の試行なら、終わった時点で利用者の声を聞いてから継続の可否を決めませんか。",
+      "vi": "Nếu thử trong hai tuần, khi kết thúc ta nghe ý kiến người dùng rồi hãy quyết có tiếp tục không nhé?",
+      "terms": [
+        "試行",
+        "可否"
+      ],
+      "scenes": [
+        "S008",
+        "S020"
+      ],
+      "pattern": "～てから、～を決めませんか"
+    },
+    {
+      "id": "H-011-V13-011",
+      "group": "people",
+      "role_vi": "Đại diện hỏi ai nên dự từ buổi đầu",
+      "gender": "female",
+      "ja": "最初の話し合いには、御社の運用担当にも入っていただけますか。",
+      "vi": "Buổi trao đổi đầu, anh có thể mời cả người phụ trách vận hành bên anh tham gia không ạ?",
+      "terms": [
+        "運用担当"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～にも入っていただけますか"
+    },
+    {
+      "id": "H-011-V13-012",
+      "group": "people",
+      "role_vi": "Đại diện hỏi quy trình khi phát sinh chi phí",
+      "gender": "male",
+      "ja": "費用が発生する場合は、購買にも確認が必要でしょうか。",
+      "vi": "Nếu phát sinh chi phí, mình có cần hỏi thêm bộ phận mua sắm không ạ?",
+      "terms": [
+        "購買"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～場合は、～にも確認が必要でしょうか"
+    },
+    {
+      "id": "H-011-V13-013",
+      "group": "people",
+      "role_vi": "Đại diện hẹn chỉ hỏi phản ứng ban đầu",
+      "gender": "female",
+      "ja": "木曜は、上司の方の最初の反応と、次にそろえるべき判断材料だけ伺ってもよろしいでしょうか。",
+      "vi": "Thứ Năm tôi chỉ xin hỏi phản ứng ban đầu của cấp trên bên anh và cần chuẩn bị thêm gì để họ cân nhắc, được không ạ?",
+      "terms": [
+        "判断材料"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～だけ伺ってもよろしいでしょうか"
+    },
+    {
+      "id": "H-011-V13-014",
+      "group": "people",
+      "role_vi": "Đầu mối đối tác phân biệt quan tâm với phê duyệt",
+      "gender": "female",
+      "ja": "上司は試行に関心を示していますが、範囲が決まるまで承認は出せないそうです。",
+      "vi": "Cấp trên bên tôi có quan tâm đến việc thử, nhưng nói phải rõ phạm vi rồi mới có thể phê duyệt ạ.",
+      "terms": [
+        "試行",
+        "関心",
+        "承認"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～に関心を示していますが、～そうです"
+    },
+    {
+      "id": "H-011-V13-015",
+      "group": "timing",
+      "role_vi": "Đại diện hỏi hạn phù hợp với lịch nội bộ đối tác",
+      "gender": "male",
+      "ja": "月末の部内会議に間に合わせるには、範囲案をいつまでにお渡しすればよろしいですか。",
+      "vi": "Để kịp buổi họp bộ phận cuối tháng, tôi cần gửi phương án phạm vi cho chị chậm nhất là khi nào ạ?",
+      "terms": [
+        "月末",
+        "部内会議"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～には、いつまでに～すればよろしいですか"
+    },
+    {
+      "id": "H-011-V13-016",
+      "group": "timing",
+      "role_vi": "Đại diện hỏi lý do đối tác đổi ưu tiên",
+      "gender": "female",
+      "ja": "差し支えなければ、資料共有の優先順位が下がった理由だけ伺ってもよろしいでしょうか。",
+      "vi": "Nếu tiện, cho tôi hỏi vì sao việc chia sẻ tài liệu đang được xếp sau các việc khác, được không ạ?",
+      "terms": [
+        "優先順位"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～だけ伺ってもよろしいでしょうか"
+    },
+    {
+      "id": "H-011-V13-017",
+      "group": "timing",
+      "role_vi": "Đại diện tôn trọng lời từ chối họp thêm",
+      "gender": "male",
+      "ja": "資料共有の件では、こちらから追加のお打ち合わせをお願いするのは控えます。",
+      "vi": "Về việc chia sẻ tài liệu, bên tôi sẽ không đề nghị thêm buổi trao đổi nữa ạ.",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～をお願いするのは控えます"
+    },
+    {
+      "id": "H-011-V13-018",
+      "group": "timing",
+      "role_vi": "Đại diện ngỏ ý thăm dò lĩnh vực khác khi đối tác còn muốn nói",
+      "gender": "female",
+      "ja": "ほかに外部との連携をお考えの分野があれば、どんな課題があるか伺ってもよろしいでしょうか。",
+      "vi": "Nếu có lĩnh vực khác bên anh đang tính phối hợp với bên ngoài, tôi xin hỏi bên anh đang vướng điều gì, được không ạ?",
+      "terms": [
+        "連携",
+        "課題"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "～伺ってもよろしいでしょうか"
+    },
+    {
+      "id": "H-011-V13-019",
+      "group": "confirm",
+      "role_vi": "Đại diện xác nhận việc mỗi bên sẽ mang về tìm hiểu",
+      "gender": "male",
+      "ja": "御社は情報管理の条件、弊社は試行できる範囲を持ち帰って確認するということでよろしいでしょうか。",
+      "vi": "Bên chị sẽ kiểm lại điều kiện quản lý thông tin, còn bên tôi sẽ xem phạm vi có thể thử, mình chốt bước tiếp theo như vậy đúng không ạ?",
+      "terms": [
+        "試行",
+        "持ち帰る"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ということでよろしいでしょうか"
+    },
+    {
+      "id": "H-011-V13-020",
+      "group": "confirm",
+      "role_vi": "Đại diện đính chính với đồng nghiệp về tình trạng hợp tác",
+      "gender": "female",
+      "ja": "先方と合意したのは双方で条件を確認するところまでで、協力の実施はまだ決まっていません。",
+      "vi": "Mình mới thống nhất với bên kia là mỗi bên kiểm lại điều kiện, còn việc có triển khai hợp tác hay không thì chưa chốt.",
+      "terms": [
+        "合意"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～のは、～ところまでです"
+    },
+    {
+      "id": "H-011-V13-021",
+      "group": "confirm",
+      "role_vi": "Đại diện gửi phương án để bên kia có cơ sở cân nhắc",
+      "gender": "male",
+      "ja": "試行の範囲をまとめた案は判断材料としてお渡ししますので、情報管理の方にもご確認いただけますか。",
+      "vi": "Tôi sẽ gửi đề xuất phạm vi thử để bên chị có cơ sở cân nhắc, chị nhờ cả người phụ trách quản lý thông tin xem giúp được không ạ?",
+      "terms": [
+        "試行",
+        "判断材料"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～としてお渡ししますので、～いただけますか"
+    },
+    {
+      "id": "H-011-V13-022",
+      "group": "confirm",
+      "role_vi": "Đại diện xác nhận phân công thiết kế sau khi được phép thử",
+      "gender": "female",
+      "ja": "試行の対象範囲は、御社の運用担当と弊社の技術担当で詰めるということでよろしいでしょうか。",
+      "vi": "Về phạm vi thử, người phụ trách vận hành bên anh và chuyên viên kỹ thuật bên tôi sẽ cùng chốt chi tiết, đúng không ạ?",
+      "terms": [
+        "試行",
+        "対象範囲",
+        "運用担当"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～ということでよろしいでしょうか"
+    }
+  ]
+}

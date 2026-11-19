@@ -1,0 +1,371 @@
+{
+  "code": "S-032",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "fb4e3f76dceba0e1f6dae830227cd79d6e7655f430f1d1458839a4562b37c5cc",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "order": "Chọn đồ uống và gọi món",
+    "change": "Đổi thành phần hoặc cách dùng",
+    "pickup": "Chờ và nhận đúng món",
+    "pay": "Trả tiền và dùng thẻ tích điểm"
+  },
+  "items": [
+    {
+      "id": "S-032-V13-001",
+      "group": "order",
+      "role_vi": "Khách gọi đồ uống",
+      "gender": "male",
+      "ja": "ホットの紅茶をSサイズでお願いします。",
+      "vi": "Cho tôi trà đen nóng cỡ S ạ.",
+      "terms": [
+        "ホット",
+        "紅茶",
+        "Sサイズ"
+      ],
+      "scenes": [
+        "S002",
+        "S010"
+      ],
+      "pattern": "〜でお願いします"
+    },
+    {
+      "id": "S-032-V13-002",
+      "group": "order",
+      "role_vi": "Khách gọi đồ uống",
+      "gender": "male",
+      "ja": "コーヒーを使っていない飲み物はありますか。",
+      "vi": "Quán có đồ uống nào không có cà phê không ạ?",
+      "terms": [
+        "コーヒー",
+        "使う",
+        "飲み物"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜を使っていない〜はありますか"
+    },
+    {
+      "id": "S-032-V13-003",
+      "group": "order",
+      "role_vi": "Khách gọi món ăn nhanh",
+      "gender": "male",
+      "ja": "このバーガーのセットにはポテトも付きますか。",
+      "vi": "Combo burger này có kèm khoai tây chiên không ạ?",
+      "terms": [
+        "バーガー",
+        "セット",
+        "ポテト",
+        "付く"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜も付きますか"
+    },
+    {
+      "id": "S-032-V13-004",
+      "group": "order",
+      "role_vi": "Khách gọi món ăn nhanh",
+      "gender": "male",
+      "ja": "セットの飲み物を紅茶にできますか。",
+      "vi": "Tôi chọn trà đen làm đồ uống trong combo được không ạ?",
+      "terms": [
+        "セット",
+        "飲み物",
+        "紅茶"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜にできますか"
+    },
+    {
+      "id": "S-032-V13-005",
+      "group": "order",
+      "role_vi": "Khách chọn đồ uống thay thế",
+      "gender": "male",
+      "ja": "りんごジュースが売り切れなら、アイスの紅茶をください。",
+      "vi": "Nếu hết nước táo thì cho tôi trà đen lạnh ạ.",
+      "terms": [
+        "りんごジュース",
+        "売り切れ",
+        "アイス",
+        "紅茶"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "〜なら、〜をください"
+    },
+    {
+      "id": "S-032-V13-006",
+      "group": "change",
+      "role_vi": "Khách gọi đồ uống",
+      "gender": "male",
+      "ja": "アイスの紅茶は氷少なめにできますか。",
+      "vi": "Ly trà đen lạnh của tôi cho ít đá được không ạ?",
+      "terms": [
+        "アイス",
+        "紅茶",
+        "氷",
+        "少なめ"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜にできますか"
+    },
+    {
+      "id": "S-032-V13-007",
+      "group": "change",
+      "role_vi": "Khách hỏi thành phần đồ uống",
+      "gender": "male",
+      "ja": "このココアには牛乳が入っていますか。",
+      "vi": "Ca cao này có sữa bò không ạ?",
+      "terms": [
+        "ココア",
+        "牛乳",
+        "入る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜が入っていますか"
+    },
+    {
+      "id": "S-032-V13-008",
+      "group": "change",
+      "role_vi": "Nhân viên quầy đồ uống",
+      "gender": "female",
+      "ja": "ココアの材料を確認しますので、少々お待ちください。",
+      "vi": "Anh chờ một chút để tôi kiểm tra thành phần của ca cao ạ.",
+      "terms": [
+        "ココア",
+        "材料",
+        "待つ"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "〜ので、お待ちください"
+    },
+    {
+      "id": "S-032-V13-009",
+      "group": "change",
+      "role_vi": "Khách chọn đồ uống thay thế",
+      "gender": "male",
+      "ja": "牛乳を抜けないなら、ミルクを入れない紅茶に変えてください。",
+      "vi": "Nếu không bỏ được sữa bò, nhờ đổi cho tôi sang trà đen không thêm sữa ạ.",
+      "terms": [
+        "牛乳",
+        "抜く",
+        "紅茶"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜なら、〜に変えてください"
+    },
+    {
+      "id": "S-032-V13-010",
+      "group": "change",
+      "role_vi": "Khách sửa yêu cầu dùng tại quán",
+      "gender": "male",
+      "ja": "この紅茶はお持ち帰りではなく、店内でお願いします。",
+      "vi": "Ly trà đen này tôi dùng tại quán, không mang đi ạ.",
+      "terms": [
+        "紅茶",
+        "お持ち帰り",
+        "店内"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜ではなく、〜でお願いします"
+    },
+    {
+      "id": "S-032-V13-011",
+      "group": "pickup",
+      "role_vi": "Nhân viên quầy nhận món",
+      "gender": "female",
+      "ja": "商品ができたら、こちらの番号でお呼びします。",
+      "vi": "Khi món xong, tôi sẽ gọi theo số này ạ.",
+      "terms": [
+        "商品",
+        "番号",
+        "呼ぶ"
+      ],
+      "scenes": [
+        "S005",
+        "S011"
+      ],
+      "pattern": "〜たら、番号で呼びます"
+    },
+    {
+      "id": "S-032-V13-012",
+      "group": "pickup",
+      "role_vi": "Khách chờ ở quầy nhận món",
+      "gender": "male",
+      "ja": "受取番号は十八番ですが、もう呼ばれましたか。",
+      "vi": "Số nhận món 18 đã được gọi chưa ạ?",
+      "terms": [
+        "受取番号",
+        "番",
+        "呼ぶ"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "もう〜られましたか"
+    },
+    {
+      "id": "S-032-V13-013",
+      "group": "pickup",
+      "role_vi": "Khách nhận nhầm đồ uống",
+      "gender": "male",
+      "ja": "カップのラベルの番号が、私の券の番号と合っていません。",
+      "vi": "Số trên nhãn dán của ly không khớp với số trên phiếu của tôi ạ.",
+      "terms": [
+        "カップ",
+        "ラベル",
+        "番号",
+        "券",
+        "合う"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜と合っていません"
+    },
+    {
+      "id": "S-032-V13-014",
+      "group": "pickup",
+      "role_vi": "Khách vô ý làm đổ đồ uống",
+      "gender": "male",
+      "ja": "飲み物をこぼしてしまったので、拭くものをいただけますか。",
+      "vi": "Tôi lỡ làm đổ đồ uống, cho tôi xin khăn lau được không ạ?",
+      "terms": [
+        "飲み物",
+        "こぼす",
+        "拭く"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜ので、〜をいただけますか"
+    },
+    {
+      "id": "S-032-V13-015",
+      "group": "pickup",
+      "role_vi": "Khách đối chiếu phiếu nhận đồ uống",
+      "gender": "male",
+      "ja": "番号が券と同じなので、このカップで合っていますね。",
+      "vi": "Số trùng với số trên phiếu, vậy đúng ly của tôi rồi nhỉ?",
+      "terms": [
+        "番号",
+        "券",
+        "カップ",
+        "合う"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜ので、これで合っていますね"
+    },
+    {
+      "id": "S-032-V13-016",
+      "group": "pickup",
+      "role_vi": "Bạn đang đợi đồ ăn",
+      "gender": "male",
+      "ja": "バーガーはあと五分ぐらいかかるから、飲み物は先に飲んでてね。",
+      "vi": "Burger còn khoảng năm phút nữa, cậu cứ uống trước đi nhé.",
+      "terms": [
+        "バーガー",
+        "分",
+        "飲み物",
+        "飲む"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜から、先に〜ててね"
+    },
+    {
+      "id": "S-032-V13-017",
+      "group": "pay",
+      "role_vi": "Khách hỏi tổng tiền hai món",
+      "gender": "male",
+      "ja": "ラテとサンドイッチを単品で頼むと、合わせていくらですか。",
+      "vi": "Gọi riêng latte và sandwich thì tổng cộng bao nhiêu ạ?",
+      "terms": [
+        "ラテ",
+        "サンドイッチ",
+        "単品",
+        "合わせる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜と、合わせていくらですか"
+    },
+    {
+      "id": "S-032-V13-018",
+      "group": "pay",
+      "role_vi": "Khách trả tiền ở quầy",
+      "gender": "male",
+      "ja": "このレジで現金でも払えますか。",
+      "vi": "Quầy này cũng nhận tiền mặt chứ ạ?",
+      "terms": [
+        "レジ",
+        "現金",
+        "払う"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜でも払えますか"
+    },
+    {
+      "id": "S-032-V13-019",
+      "group": "pay",
+      "role_vi": "Khách dùng thẻ tích điểm",
+      "gender": "male",
+      "ja": "ポイントは使わずにためたいので、支払いは現金でお願いします。",
+      "vi": "Tôi muốn tích điểm, chưa dùng điểm lần này, nên cho tôi trả tiền mặt ạ.",
+      "terms": [
+        "ポイント",
+        "使う",
+        "ためる",
+        "支払い",
+        "現金"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "〜ので、〜でお願いします"
+    },
+    {
+      "id": "S-032-V13-020",
+      "group": "pay",
+      "role_vi": "Khách nhận đồ mua mang đi",
+      "gender": "male",
+      "ja": "持ち帰りのサンドイッチと一緒にレシートもください。",
+      "vi": "Cho tôi xin cả biên lai cùng sandwich mang đi ạ.",
+      "terms": [
+        "サンドイッチ",
+        "レシート"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜と一緒に〜もください"
+    }
+  ]
+}

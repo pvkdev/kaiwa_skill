@@ -1,0 +1,386 @@
+{
+  "code": "H-022",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "2f0674717dc1f68b490fb34f1f4ae9475b93013371b268320be3b364c2f45999",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "agenda": "Mở họp và nêu việc cần chốt",
+    "voices": "Mời đúng người và bảo vệ lượt nói",
+    "focus": "Tóm tắt bất đồng và đưa về tiêu chí",
+    "decide": "Công bố điều đã duyệt và điều còn chờ",
+    "assign": "Giao việc có người nhận và mốc báo",
+    "follow": "Hỏi bên vắng mặt và quay lại đúng mốc"
+  },
+  "items": [
+    {
+      "id": "H-022-V13-001",
+      "group": "agenda",
+      "role_vi": "Chủ trì mở họp bằng quyết định cần ra",
+      "gender": "female",
+      "ja": "今日は、二店舗で試行するかどうかを決めます。",
+      "vi": "Hôm nay ta sẽ quyết có thử ở hai cửa hàng hay không.",
+      "terms": [
+        "試行"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～かどうかを決めます"
+    },
+    {
+      "id": "H-022-V13-002",
+      "group": "agenda",
+      "role_vi": "Chủ trì giới hạn mục chỉ lấy ý kiến",
+      "gender": "male",
+      "ja": "広告費はご意見を伺うだけで、今日の決定事項にはしません。",
+      "vi": "Về chi phí quảng cáo, hôm nay ta chỉ nghe ý kiến và chưa chốt.",
+      "terms": [
+        "決定事項"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～は伺うだけで、～にはしません"
+    },
+    {
+      "id": "H-022-V13-003",
+      "group": "agenda",
+      "role_vi": "Chủ trì hỏi có thông tin mới trước khi bàn",
+      "gender": "female",
+      "ja": "議題に入る前に、前回の資料にない追加情報はありますか。",
+      "vi": "Trước khi vào các mục cần bàn, có thông tin mới nào chưa có trong tài liệu lần trước không?",
+      "terms": [
+        "議題",
+        "追加情報"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～前に、～ありますか"
+    },
+    {
+      "id": "H-022-V13-004",
+      "group": "agenda",
+      "role_vi": "Chủ trì đổi trình tự vì chưa có bảng số liệu",
+      "gender": "male",
+      "ja": "来店者数の表が届くまでは、試行規模の話を後にして、予約受付の手順から確認しましょう。",
+      "vi": "Trong lúc đợi bảng số lượt khách đến, mình để phần quy mô thử lại sau và xem trước quy trình nhận đặt lịch nhé.",
+      "terms": [
+        "試行規模"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～までは、～を後にして、～から確認しましょう"
+    },
+    {
+      "id": "H-022-V13-005",
+      "group": "voices",
+      "role_vi": "Chủ trì mời vận hành nêu điều không thể đổi",
+      "gender": "female",
+      "ja": "日程を決める前に、運営側で動かせない制約を教えてください。",
+      "vi": "Trước khi chốt ngày, phía vận hành cho biết những ràng buộc nào mình không thể thay đổi nhé.",
+      "terms": [
+        "運営側",
+        "制約"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～前に、～を教えてください"
+    },
+    {
+      "id": "H-022-V13-006",
+      "group": "voices",
+      "role_vi": "Chủ trì mời người ít nói nêu góc nhìn khách hàng",
+      "gender": "male",
+      "ja": "亜希さん、顧客対応の立場から、開始日を変えるとどんな影響がありそうですか。",
+      "vi": "Chị Aki, từ góc nhìn của bộ phận chăm sóc khách hàng, nếu đổi ngày bắt đầu thì có thể ảnh hưởng thế nào?",
+      "terms": [
+        "顧客対応"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～の立場から、～とどんな影響がありそうですか"
+    },
+    {
+      "id": "H-022-V13-007",
+      "group": "voices",
+      "role_vi": "Chủ trì làm rõ một lo ngại có phải phản đối không",
+      "gender": "female",
+      "ja": "試行には賛成で、案内に必要な人手を確保したいという理解で合っていますか。",
+      "vi": "Tôi hiểu là chị ủng hộ đợt thử và muốn bố trí đủ người để thông báo cho khách, có đúng không?",
+      "terms": [
+        "試行",
+        "人手",
+        "確保する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "H-022-V13-008",
+      "group": "voices",
+      "role_vi": "Chủ trì trả lượt cho người đang nói dở",
+      "gender": "male",
+      "ja": "まず亜希さんに連絡対象について最後までお話しいただいて、その後で運営側のご意見を伺います。",
+      "vi": "Trước hết mời chị Aki nói nốt cần liên hệ những khách nào, sau đó tôi sẽ nghe ý kiến phía vận hành.",
+      "terms": [
+        "運営側"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "まず～ていただいて、その後で～を伺います"
+    },
+    {
+      "id": "H-022-V13-009",
+      "group": "focus",
+      "role_vi": "Chủ trì tóm tắt hai phương án bằng tiêu chí của mỗi bên",
+      "gender": "female",
+      "ja": "運営側は人手を確保できる平日に二店舗で同時に始め、顧客対応側は案内の時間を取るために一店舗ずつ始めたい、ということですね。",
+      "vi": "Phía vận hành muốn hai cửa hàng bắt đầu cùng lúc vào ngày thường khi bố trí được người, còn phía chăm sóc khách hàng muốn bắt đầu từng cửa hàng để có thời gian thông báo, đúng không?",
+      "terms": [
+        "運営側",
+        "人手",
+        "確保する",
+        "顧客対応"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～は～し、～は～したい、ということですね"
+    },
+    {
+      "id": "H-022-V13-010",
+      "group": "focus",
+      "role_vi": "Chủ trì đưa tranh luận về việc có thể kiểm",
+      "gender": "male",
+      "ja": "担当者の進め方はいったん置いて、今回はお客様十二人への連絡に何時間かかるか確認しましょう。",
+      "vi": "Ta tạm gác chuyện cách làm của người phụ trách và xác định lần này cần bao nhiêu giờ để liên hệ với mười hai khách nhé.",
+      "terms": [
+        "担当者"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～はいったん置いて、～か確認しましょう"
+    },
+    {
+      "id": "H-022-V13-011",
+      "group": "focus",
+      "role_vi": "Chủ trì tách điều có thể quyết khi còn thiếu dữ liệu",
+      "gender": "female",
+      "ja": "来店者数はまだ分かりませんが、予約の確認を誰が返すかは先に決められます。",
+      "vi": "Ta chưa có số lượt khách đến, nhưng có thể quyết trước ai sẽ trả lời xác nhận đặt lịch.",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～は分かりませんが、～は先に決められます"
+    },
+    {
+      "id": "H-022-V13-012",
+      "group": "focus",
+      "role_vi": "Chủ trì hẹn quyết quy mô sau khi có căn cứ",
+      "gender": "male",
+      "ja": "店長からの回答と来店者数の表を判断材料にして、明日の十時に試行規模を決めましょう。",
+      "vi": "Ta dùng phản hồi của quản lý cửa hàng và bảng số lượt khách làm căn cứ, rồi quyết quy mô thử vào mười giờ sáng mai nhé.",
+      "terms": [
+        "判断材料",
+        "試行規模"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～を判断材料にして、～に～を決めましょう"
+    },
+    {
+      "id": "H-022-V13-013",
+      "group": "decide",
+      "role_vi": "Chủ trì công bố đúng phạm vi đã duyệt",
+      "gender": "female",
+      "ja": "承認済みなのは、東店に限って二週間試行することです。",
+      "vi": "Phần đã được duyệt là thử trong hai tuần và chỉ tại cửa hàng Đông.",
+      "terms": [
+        "承認済み",
+        "試行"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "承認済みなのは、～ことです"
+    },
+    {
+      "id": "H-022-V13-014",
+      "group": "decide",
+      "role_vi": "Chủ trì nhắc chỉ chuẩn bị khi ngày bắt đầu còn chờ",
+      "gender": "male",
+      "ja": "開始日は未確定ですから、東店では今できる準備だけを進めてください。",
+      "vi": "Ngày bắt đầu vẫn chưa chốt, nên ở cửa hàng Đông mình chỉ tiến hành những việc có thể chuẩn bị lúc này nhé.",
+      "terms": [
+        "未確定"
+      ],
+      "scenes": [
+        "S014",
+        "S016"
+      ],
+      "pattern": "～ですから、～だけを進めてください"
+    },
+    {
+      "id": "H-022-V13-015",
+      "group": "decide",
+      "role_vi": "Chủ trì giải thích khi nào xem lại quảng cáo",
+      "gender": "female",
+      "ja": "広告費は未承認のまま議事録に残し、東店での試行結果が出てから改めて検討しましょう。",
+      "vi": "Ta ghi trong biên bản là chi phí quảng cáo chưa được duyệt, sau khi có kết quả thử ở cửa hàng Đông thì xem xét lại nhé.",
+      "terms": [
+        "未承認",
+        "議事録",
+        "試行"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～は～のまま～に残し、～てから改めて検討しましょう"
+    },
+    {
+      "id": "H-022-V13-016",
+      "group": "decide",
+      "role_vi": "Chủ trì giới hạn điều cần quyết khi có khách cần sớm",
+      "gender": "male",
+      "ja": "利用を急ぐお客様がいるので、今日は東店の五件に暫定対応できるかどうかだけを決めましょう。",
+      "vi": "Vì có khách cần dùng sớm, hôm nay mình chỉ quyết xem có thể tạm thời đáp ứng năm lượt ở cửa hàng Đông hay không nhé.",
+      "terms": [
+        "暫定対応"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～かどうかを決めます"
+    },
+    {
+      "id": "H-022-V13-017",
+      "group": "assign",
+      "role_vi": "Chủ trì giao việc xác minh và mốc báo cụ thể",
+      "gender": "female",
+      "ja": "舞さんは、東店で人手を確保できるか店長に確認し、明日の正午までに結果を教えてください。",
+      "vi": "Chị Mai kiểm tra với quản lý xem cửa hàng Đông có bố trí đủ người không rồi báo kết quả cho tôi chậm nhất mười hai giờ trưa mai nhé.",
+      "terms": [
+        "人手",
+        "確保する",
+        "正午"
+      ],
+      "scenes": [
+        "S015",
+        "S021"
+      ],
+      "pattern": "～までに結果を教えてください"
+    },
+    {
+      "id": "H-022-V13-018",
+      "group": "assign",
+      "role_vi": "Chủ trì xác nhận giới hạn quyền của người nhận việc",
+      "gender": "male",
+      "ja": "東店の店長には人員を確保できるかだけを確認し、開始日はまだ確約しないという理解で合っていますか。",
+      "vi": "Mình chỉ hỏi quản lý cửa hàng Đông xem có đủ người không và chưa hứa ngày bắt đầu, mình hiểu giống nhau chứ?",
+      "terms": [
+        "確保する",
+        "確約する"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "H-022-V13-019",
+      "group": "assign",
+      "role_vi": "Chủ trì phân lại hai phần khi người nhận thiếu thời gian",
+      "gender": "female",
+      "ja": "舞さんには東店の人員確認をお願いし、受付の体制は私から由衣さんに確認します。",
+      "vi": "Chị Mai phụ trách kiểm tra nhân sự cửa hàng Đông nhé, phần bố trí ở quầy lễ tân tôi sẽ hỏi chị Yui.",
+      "terms": [
+        "体制"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～には～をお願いし、～は私から～します"
+    },
+    {
+      "id": "H-022-V13-020",
+      "group": "follow",
+      "role_vi": "Chủ trì hỏi bộ phận chịu ảnh hưởng có đại diện không",
+      "gender": "male",
+      "ja": "予約対応で負担が増えそうな関係部署に、今日代表が来ていないところはありますか。",
+      "vi": "Trong các bộ phận có thể thêm việc vì phải xử lý đặt lịch, có bộ phận nào hôm nay không có đại diện dự họp không?",
+      "terms": [
+        "負担",
+        "関係部署",
+        "代表"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～に、～ところはありますか"
+    },
+    {
+      "id": "H-022-V13-021",
+      "group": "follow",
+      "role_vi": "Chủ trì hỏi lễ tân về thời điểm khó đáp ứng sau họp",
+      "gender": "female",
+      "ja": "今の受付体制で予約の問い合わせを受けるなら、対応が難しい時間帯を教えていただけますか。",
+      "vi": "Nếu quầy lễ tân nhận câu hỏi về đặt lịch với cách bố trí hiện tại, chị cho tôi biết khung giờ nào khó xử lý được không?",
+      "terms": [
+        "体制",
+        "時間帯"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～なら、～を教えていただけますか"
+    },
+    {
+      "id": "H-022-V13-022",
+      "group": "follow",
+      "role_vi": "Chủ trì quay lại đúng mốc hỏi kết quả kiểm nhân sự",
+      "gender": "male",
+      "ja": "正午の確認ですが、東店の試行に必要な担当者は確保できましたか。",
+      "vi": "Đến giờ kiểm tra lúc trưa như đã hẹn rồi, mình đã bố trí được người phụ trách cần cho đợt thử ở cửa hàng Đông chưa?",
+      "terms": [
+        "正午",
+        "試行",
+        "担当者",
+        "確保する"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～ですが、～は確保できましたか"
+    },
+    {
+      "id": "H-022-V13-023",
+      "group": "follow",
+      "role_vi": "Chủ trì nêu bước tiếp trước khi quyết ngày bắt đầu",
+      "gender": "female",
+      "ja": "受付では午後なら予約一覧を確認できるそうですので、その手順を再確認してから、開始日の判断をお願いしましょう。",
+      "vi": "Bên lễ tân nói buổi chiều họ có thể kiểm danh sách đặt lịch, vậy mình kiểm lại quy trình đó rồi nhờ người phụ trách quyết ngày bắt đầu nhé.",
+      "terms": [
+        "再確認"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～そうですので、～てから～をお願いしましょう"
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "code": "T-148",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "4329986d73b668246d9994dbb272e4f7ef92326bb5ea33a443d732cce612411a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "urgent": "Nói việc vừa xảy ra và xin giúp ngay",
+    "private": "Xin tự nói ở phòng riêng và kiểm phạm vi chia sẻ",
+    "resources": "Nói rõ hiện chưa có tiền, giấy tờ hoặc cách liên hệ",
+    "school": "Nhờ trường xác nhận cách đón con và báo nghỉ",
+    "next": "Hỏi chỗ an toàn tối nay và chốt lần liên hệ sau"
+  },
+  "items": [
+    {
+      "id": "T-148-V13-001",
+      "group": "urgent",
+      "role_vi": "Người mẹ xin giúp tại nhà hàng xóm",
+      "gender": "female",
+      "ja": "夫に殴られました。",
+      "vi": "Tôi vừa bị chồng đánh.",
+      "terms": [
+        "殴る"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "report_harm_directly"
+    },
+    {
+      "id": "T-148-V13-002",
+      "group": "urgent",
+      "role_vi": "Người mẹ xin giúp tại nhà hàng xóm",
+      "gender": "female",
+      "ja": "子どもと二人で、ここに少しいてもいいですか。",
+      "vi": "Hai mẹ con tôi ở nhờ đây một lát được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_to_stay_safely"
+    },
+    {
+      "id": "T-148-V13-003",
+      "group": "urgent",
+      "role_vi": "Người mẹ xin giúp tại nhà hàng xóm",
+      "gender": "female",
+      "ja": "すみません、警察に電話してください。",
+      "vi": "Xin anh gọi cảnh sát giúp tôi.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S003",
+        "S004"
+      ],
+      "pattern": "direct_call_for_help"
+    },
+    {
+      "id": "T-148-V13-004",
+      "group": "urgent",
+      "role_vi": "Người mẹ xin giúp tại nhà hàng xóm",
+      "gender": "female",
+      "ja": "私のいる場所を、夫に知らせないでください。",
+      "vi": "Xin anh đừng cho chồng tôi biết tôi đang ở đâu.",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "ask_not_to_share_whereabouts"
+    },
+    {
+      "id": "T-148-V13-005",
+      "group": "urgent",
+      "role_vi": "Người mẹ xin giúp tại nhà hàng xóm",
+      "gender": "female",
+      "ja": "子どもはまだ家の中にいるので、警察に伝えてください。",
+      "vi": "Con tôi vẫn còn trong nhà, xin anh báo cho cảnh sát giúp tôi.",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "direct_call_for_help"
+    },
+    {
+      "id": "T-148-V13-006",
+      "group": "urgent",
+      "role_vi": "Người mẹ xin giúp tại nhà hàng xóm",
+      "gender": "female",
+      "ja": "子どもを最後に見たのは玄関の右の部屋で、けがをしているかは分かりません。",
+      "vi": "Lần cuối tôi thấy cháu là ở phòng phía bên phải tính từ cửa vào, tôi chưa biết cháu có bị thương không.",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "distinguish_last_seen_and_current"
+    },
+    {
+      "id": "T-148-V13-007",
+      "group": "private",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "ここでは話しづらいので、先に職員の方と二人で話せますか。",
+      "vi": "Tôi khó nói ở đây. Cho tôi trao đổi riêng với anh trước được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "ask_to_speak_privately"
+    },
+    {
+      "id": "T-148-V13-008",
+      "group": "private",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "付き添いの人とは別の方に、ベトナム語で通訳してもらえますか。",
+      "vi": "Tôi cần phiên dịch tiếng Việt. Anh có thể bố trí người khác, không phải người đi cùng tôi, được không ạ?",
+      "terms": [
+        "付き添い",
+        "通訳する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "ask_for_independent_interpreter"
+    },
+    {
+      "id": "T-148-V13-009",
+      "group": "private",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "通訳がすぐに来られないなら、別室で今必要なことだけ先に話したいです。",
+      "vi": "Nếu chưa có phiên dịch ngay, tôi muốn sang phòng riêng nói trước những điều cần nhất ạ.",
+      "terms": [
+        "別室"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "state_urgent_need_first"
+    },
+    {
+      "id": "T-148-V13-010",
+      "group": "private",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "家に連絡することには同意していませんので、今日話したことを誰と共有するのか教えてください。",
+      "vi": "Tôi chưa đồng ý cho liên hệ về nhà. Xin anh cho biết những gì tôi nói hôm nay sẽ được chia sẻ với ai.",
+      "terms": [
+        "同意する",
+        "共有する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "check_data_sharing_scope"
+    },
+    {
+      "id": "T-148-V13-011",
+      "group": "resources",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "口座は私の名義ですが、夫がカードを持っていて、今はお金を引き出せません。",
+      "vi": "Tài khoản đứng tên tôi, nhưng chồng tôi giữ thẻ nên bây giờ tôi không rút được tiền.",
+      "terms": [
+        "口座",
+        "名義",
+        "引き出す"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "explain_access_limit"
+    },
+    {
+      "id": "T-148-V13-012",
+      "group": "resources",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "現金が足りないので、今すぐ交通費を払えなくても、子どもと移動できる方法はありますか。",
+      "vi": "Tôi không đủ tiền mặt. Có cách nào để tôi đi cùng con mà chưa phải trả tiền đi lại ngay không ạ?",
+      "terms": [
+        "交通費"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "ask_option_despite_constraint"
+    },
+    {
+      "id": "T-148-V13-013",
+      "group": "resources",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "在留カードは家にあって取りに戻れないので、カードなしでも相談できますか。",
+      "vi": "Thẻ cư trú của tôi còn ở nhà mà tôi không thể quay về lấy, tôi có thể trao đổi trước dù chưa có thẻ không ạ?",
+      "terms": [
+        "在留カード"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "ask_option_despite_constraint"
+    },
+    {
+      "id": "T-148-V13-014",
+      "group": "resources",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "夫と共用しているアカウントには送らず、私が電話したときに口頭で住所を教えてもらえますか。",
+      "vi": "Xin anh đừng gửi vào tài khoản dùng chung với chồng tôi. Khi tôi gọi, anh đọc địa chỉ qua điện thoại giúp tôi được không ạ?",
+      "terms": [
+        "共用する",
+        "口頭"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "request_alternate_contact_channel"
+    },
+    {
+      "id": "T-148-V13-015",
+      "group": "school",
+      "role_vi": "Người mẹ gọi cho trường của con",
+      "gender": "female",
+      "ja": "子どもの安全のことで急いでいるので、今日の引き渡しを担当する先生につないでください。",
+      "vi": "Tôi cần trao đổi gấp về an toàn của con, xin nối máy cho thầy cô phụ trách giao cháu cho người đến đón hôm nay.",
+      "terms": [
+        "つなぐ"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "request_immediate_transfer"
+    },
+    {
+      "id": "T-148-V13-016",
+      "group": "school",
+      "role_vi": "Người mẹ gọi cho trường của con",
+      "gender": "female",
+      "ja": "普段は夫が迎えに行きますが、今日は姉が行けるので、姉に引き渡していただけますか。",
+      "vi": "Bình thường chồng tôi đón con, nhưng hôm nay chị gái tôi có thể đến. Nhà trường có thể giao cháu cho chị tôi được không ạ?",
+      "terms": [
+        "引き渡す"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "confirm_actual_pickup_plan"
+    },
+    {
+      "id": "T-148-V13-017",
+      "group": "school",
+      "role_vi": "Người mẹ gọi cho trường của con",
+      "gender": "female",
+      "ja": "迎えに行く姉には、正面の受付で身分証明書を見せるように伝えればいいですか。",
+      "vi": "Tôi dặn chị tôi khi đến đón cháu thì xuất trình giấy tờ tùy thân ở quầy chính, như vậy được không ạ?",
+      "terms": [
+        "身分証明書"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "verify_pickup_requirement"
+    },
+    {
+      "id": "T-148-V13-018",
+      "group": "school",
+      "role_vi": "Người mẹ gọi cho trường của con",
+      "gender": "female",
+      "ja": "迎えの件は一斉連絡に出さず、担当の先生と私だけで確認できますか。",
+      "vi": "Chuyện đón con xin đừng đưa vào thông báo chung. Tôi có thể trao đổi riêng với thầy cô phụ trách được không ạ?",
+      "terms": [
+        "一斉連絡"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "limit_school_sharing"
+    },
+    {
+      "id": "T-148-V13-019",
+      "group": "school",
+      "role_vi": "Người mẹ gọi cho trường của con",
+      "gender": "female",
+      "ja": "明日の欠席は、共用のアプリを使わずに、電話で個別に伝えてもいいですか。",
+      "vi": "Ngày mai cháu nghỉ, tôi có thể gọi điện báo riêng thay vì dùng ứng dụng chung được không ạ?",
+      "terms": [
+        "個別"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "request_alternate_contact_channel"
+    },
+    {
+      "id": "T-148-V13-020",
+      "group": "next",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "別居するかはまだ決めていませんが、今夜子どもと二人で安全にいられる場所を相談したいです。",
+      "vi": "Tôi chưa quyết có ly thân không, trước hết tôi muốn hỏi chỗ an toàn để hai mẹ con ở cùng nhau tối nay.",
+      "terms": [
+        "別居する",
+        "今夜",
+        "安全"
+      ],
+      "scenes": [
+        "S007",
+        "S017"
+      ],
+      "pattern": "focus_on_tonight_not_long_term"
+    },
+    {
+      "id": "T-148-V13-021",
+      "group": "next",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "子どもと一緒に受け入れてもらえるかどうか、何時ごろ分かりますか。",
+      "vi": "Tôi có thể biết khoảng mấy giờ có trả lời về việc chỗ đó có nhận cả hai mẹ con không ạ?",
+      "terms": [
+        "受け入れる"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "ask_update_on_joint_acceptance"
+    },
+    {
+      "id": "T-148-V13-022",
+      "group": "next",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "今夜19時ごろは夫が私の携帯を持っているので、電話も留守番電話の伝言も入れないでください。",
+      "vi": "Khoảng 19 giờ tối nay chồng tôi sẽ giữ điện thoại của tôi, xin anh đừng gọi và cũng đừng để lại lời nhắn thoại.",
+      "terms": [
+        "留守番電話",
+        "伝言"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "set_callback_boundary"
+    },
+    {
+      "id": "T-148-V13-023",
+      "group": "next",
+      "role_vi": "Người mẹ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "前の番号はもう安全に使えないので、必要なときはこちらからかけます。",
+      "vi": "Số cũ giờ tôi không dùng an toàn được nữa, khi cần tôi sẽ chủ động gọi ạ.",
+      "terms": [
+        "安全"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "set_callback_boundary"
+    },
+    {
+      "id": "T-148-V13-024",
+      "group": "next",
+      "role_vi": "Nhân viên tư vấn xác nhận với người mẹ",
+      "gender": "male",
+      "ja": "折り返しはせず、16時半までにそちらからのお電話をお待ちしますね。",
+      "vi": "Tôi sẽ không gọi lại và sẽ đợi chị chủ động gọi chậm nhất 16 giờ 30 nhé.",
+      "terms": [
+        "折り返す"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "confirm_next_caller_and_time"
+    }
+  ]
+}

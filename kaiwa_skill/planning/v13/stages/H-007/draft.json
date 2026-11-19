@@ -1,0 +1,344 @@
+{
+  "code": "H-007",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "6bbba24bf1625f9f30b36647f6deecbdb5088779d72aedb28079f146ea32a7b6",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "notice": "Thông báo nghỉ việc đúng phạm vi",
+    "thanks": "Hẹn chào và nói lời cảm ơn cụ thể",
+    "handover": "Giới thiệu đầu mối mới và nói rõ việc còn mở",
+    "personal": "Giữ liên hệ với tư cách cá nhân",
+    "limits": "Giữ ranh giới với việc của công ty cũ"
+  },
+  "items": [
+    {
+      "id": "H-007-V13-001",
+      "group": "notice",
+      "role_vi": "Nhân viên báo ngày đi làm cuối với đồng nghiệp",
+      "gender": "male",
+      "ja": "私の最終出社日は、今月の二十八日です。",
+      "vi": "Ngày tôi đi làm cuối là ngày 28 tháng này.",
+      "terms": [
+        "最終出社日"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～は、～日です"
+    },
+    {
+      "id": "H-007-V13-002",
+      "group": "notice",
+      "role_vi": "Nhân viên sửa hiểu lầm với đồng nghiệp",
+      "gender": "female",
+      "ja": "部署の異動ではなく、今月末で退職することになりました。",
+      "vi": "Cuối tháng này tôi sẽ nghỉ ở công ty, chứ không chuyển bộ phận.",
+      "terms": [
+        "退職する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～ではなく、～ことになりました"
+    },
+    {
+      "id": "H-007-V13-003",
+      "group": "notice",
+      "role_vi": "Nhân viên chưa muốn tiết lộ nơi làm mới",
+      "gender": "female",
+      "ja": "次の職場については、今はお話しするのを差し控えたいと思っています。",
+      "vi": "Về nơi làm mới, lúc này tôi xin phép chưa chia sẻ.",
+      "terms": [
+        "差し控える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～については、今は～を差し控えたい"
+    },
+    {
+      "id": "H-007-V13-004",
+      "group": "notice",
+      "role_vi": "Nhân viên nhờ đồng nghiệp giới hạn phạm vi thông báo",
+      "gender": "male",
+      "ja": "後任が決まるまでは、最終出社日だけ共有してもらえますか。",
+      "vi": "Trước khi chốt người tiếp nhiệm, chị chỉ báo với mọi người ngày tôi đi làm cuối thôi được không?",
+      "terms": [
+        "後任",
+        "最終出社日"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "～までは、～だけ～してもらえますか"
+    },
+    {
+      "id": "H-007-V13-005",
+      "group": "thanks",
+      "role_vi": "Nhân viên cảm ơn người hướng dẫn bằng việc thực tế",
+      "gender": "female",
+      "ja": "数字が合わないときは前提から確認するよう教わって、その後も何度も助けられました。",
+      "vi": "Cách anh chỉ tôi, hễ số liệu không khớp thì kiểm tra lại giả định trước, đã giúp tôi nhiều lần sau đó.",
+      "terms": [
+        "教わる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～よう教わって、～助けられました"
+    },
+    {
+      "id": "H-007-V13-006",
+      "group": "thanks",
+      "role_vi": "Nhân viên hẹn gặp riêng để chào đồng nghiệp",
+      "gender": "male",
+      "ja": "退職前にひと言お礼を言いたいのですが、水曜のお昼に少しお時間をいただけますか。",
+      "vi": "Trước khi nghỉ tôi muốn nói đôi lời cảm ơn, trưa thứ Tư chị có thể dành cho tôi chút thời gian được không?",
+      "terms": [
+        "ひと言お礼を言う"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～たいのですが、～いただけますか"
+    },
+    {
+      "id": "H-007-V13-007",
+      "group": "thanks",
+      "role_vi": "Nhân viên đề nghị gọi khi không gặp được",
+      "gender": "female",
+      "ja": "退職前に直接お会いするのが難しければ、木曜の夕方に十分だけお電話してもいいですか。",
+      "vi": "Nếu trước khi tôi nghỉ mình khó gặp trực tiếp, chiều muộn thứ Năm tôi gọi anh khoảng mười phút được không?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～てもいいですか"
+    },
+    {
+      "id": "H-007-V13-008",
+      "group": "thanks",
+      "role_vi": "Nhân viên chuẩn bị nói lời chia tay trước bộ phận",
+      "gender": "male",
+      "ja": "退職の挨拶を準備したいので、どなたがいらっしゃるか教えていただけますか。",
+      "vi": "Tôi muốn chuẩn bị lời chào khi nghỉ, chị cho tôi biết buổi chia tay có những ai dự được không ạ?",
+      "terms": [
+        "退職の挨拶"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～たいので、～か教えていただけますか"
+    },
+    {
+      "id": "H-007-V13-009",
+      "group": "handover",
+      "role_vi": "Người phụ trách báo với khách về việc sắp rời công ty",
+      "gender": "male",
+      "ja": "私事で恐縮ですが、今月末で退職することになりました。",
+      "vi": "Xin phép chia sẻ một việc riêng, tôi sẽ nghỉ ở công ty vào cuối tháng này ạ.",
+      "terms": [
+        "私事で恐縮ですが",
+        "退職する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "私事で恐縮ですが、～ことになりました"
+    },
+    {
+      "id": "H-007-V13-010",
+      "group": "handover",
+      "role_vi": "Người sắp nghỉ giới thiệu đầu mối dự kiến với khách",
+      "gender": "female",
+      "ja": "今後の窓口はマイが務める予定ですので、正式に決まり次第、改めてお知らせします。",
+      "vi": "Chị Mai dự kiến sẽ làm đầu mối từ nay, khi có quyết định chính thức tôi sẽ báo lại anh ạ.",
+      "terms": [
+        "窓口",
+        "決まり次第"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～次第、改めてお知らせします"
+    },
+    {
+      "id": "H-007-V13-011",
+      "group": "handover",
+      "role_vi": "Người sắp nghỉ nêu trạng thái yêu cầu đổi lịch cho khách",
+      "gender": "male",
+      "ja": "日程変更については、後任のマイが関係者に可否を確認しているところです。",
+      "vi": "Về việc đổi lịch, chị Mai là người tiếp nhiệm và đang hỏi những bên liên quan xem có đổi được không ạ.",
+      "terms": [
+        "後任",
+        "可否"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～については、～ているところです"
+    },
+    {
+      "id": "H-007-V13-012",
+      "group": "handover",
+      "role_vi": "Người sắp nghỉ nói rõ còn chờ kỹ thuật và hẹn cập nhật",
+      "gender": "female",
+      "ja": "技術側の確認が残っているため、明日は可否ではなく、対応状況と返答の見込みをお伝えします。",
+      "vi": "Bên kỹ thuật vẫn còn một điểm phải kiểm tra, nên ngày mai tôi chỉ báo tiến độ và dự kiến khi nào có câu trả lời về việc đổi lịch ạ.",
+      "terms": [
+        "可否",
+        "対応状況",
+        "見込み"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ため、～ではなく、～をお伝えします"
+    },
+    {
+      "id": "H-007-V13-013",
+      "group": "handover",
+      "role_vi": "Người sắp nghỉ cập nhật người tiếp nhiệm đã chốt",
+      "gender": "male",
+      "ja": "社内の担当変更により、今後の正式な窓口は先日お伝えしたマイではなく、ユキになりました。",
+      "vi": "Do phân công trong công ty thay đổi, đầu mối chính thức từ nay là chị Yuki, chứ không phải chị Mai như tôi đã báo hôm trước ạ.",
+      "terms": [
+        "担当変更",
+        "窓口"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～により、～ではなく、～になりました"
+    },
+    {
+      "id": "H-007-V13-014",
+      "group": "handover",
+      "role_vi": "Người sắp nghỉ hẹn xử lý việc bàn giao còn mở",
+      "gender": "female",
+      "ja": "進行中の案件はユキに引き継ぎ、未決事項を確認したうえでユキからご連絡します。",
+      "vi": "Tôi sẽ bàn giao các việc đang xử lý cho chị Yuki, chị ấy sẽ kiểm tra những điểm chưa chốt rồi liên hệ với anh ạ.",
+      "terms": [
+        "進行中",
+        "未決事項"
+      ],
+      "scenes": [
+        "S006",
+        "S010"
+      ],
+      "pattern": "～たうえで、～からご連絡します"
+    },
+    {
+      "id": "H-007-V13-015",
+      "group": "personal",
+      "role_vi": "Người vừa chuyển việc đề nghị giữ liên hệ riêng",
+      "gender": "male",
+      "ja": "これからも、よければ個人の連絡先でやり取りしてもいいですか。",
+      "vi": "Nếu chị thấy tiện, sau này tôi vẫn liên hệ với chị qua số cá nhân nhé?",
+      "terms": [
+        "個人の連絡先"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～てもいいですか"
+    },
+    {
+      "id": "H-007-V13-016",
+      "group": "personal",
+      "role_vi": "Người cũ mời bạn gặp lại hỏi thăm",
+      "gender": "female",
+      "ja": "新しい職場に慣れたら、今度ゆっくり近況を聞かせてください。",
+      "vi": "Khi quen chỗ làm mới rồi, hôm nào thong thả kể tôi nghe dạo này anh thế nào nhé.",
+      "terms": [
+        "近況"
+      ],
+      "scenes": [
+        "S011",
+        "S015"
+      ],
+      "pattern": "～たら、～を聞かせてください"
+    },
+    {
+      "id": "H-007-V13-017",
+      "group": "personal",
+      "role_vi": "Người cũ nhận lời gặp nhóm cũ với giới hạn thời gian",
+      "gender": "male",
+      "ja": "土曜の集まりなら、夕方から少しだけ顔を出せそうです。",
+      "vi": "Buổi gặp thứ Bảy thì có lẽ tôi ghé một lát vào chiều muộn được.",
+      "terms": [
+        "顔を出す"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～なら、～そうです"
+    },
+    {
+      "id": "H-007-V13-018",
+      "group": "personal",
+      "role_vi": "Người đã chuyển việc cảm ơn đồng nghiệp cũ giúp bàn giao",
+      "gender": "male",
+      "ja": "引き継ぎ先と未決事項の両方を確認できたのは、最後の週に手を貸してくれたおかげです。",
+      "vi": "Nhờ chị giúp vào tuần cuối mà tôi đã xác nhận được ai nhận bàn giao và những điểm nào còn chưa chốt.",
+      "terms": [
+        "引き継ぎ先",
+        "未決事項"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～できたのは、～てくれたおかげです"
+    },
+    {
+      "id": "H-007-V13-019",
+      "group": "limits",
+      "role_vi": "Người đã nghỉ giới thiệu người phụ trách hiện tại",
+      "gender": "female",
+      "ja": "退職してからの進捗は分からないので、現担当のユキさんに聞いてもらえますか。",
+      "vi": "Từ khi nghỉ tôi không nắm tiến độ nữa, anh hỏi chị Yuki đang phụ trách giúp tôi nhé?",
+      "terms": [
+        "現担当"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ので、～に聞いてもらえますか"
+    },
+    {
+      "id": "H-007-V13-020",
+      "group": "limits",
+      "role_vi": "Người đã nghỉ sửa lời hứa xem tài liệu công ty cũ",
+      "gender": "male",
+      "ja": "資料を見られると答えたけど、今の案件なら先に現担当のユキさんに相談してもらえますか。",
+      "vi": "Tôi vừa nói có thể xem tài liệu, nhưng nếu là việc đang làm thì chị hỏi chị Yuki đang phụ trách trước được không?",
+      "terms": [
+        "現担当"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～と答えたけど、～なら、～してもらえますか"
+    },
+    {
+      "id": "H-007-V13-021",
+      "group": "limits",
+      "role_vi": "Người đã nghỉ giữ riêng cuộc gặp hỏi thăm",
+      "gender": "female",
+      "ja": "前の会社の仕事は今の担当者に聞いてもらって、今度会うときは仕事を抜きにして近況を話しませんか。",
+      "vi": "Việc của công ty cũ anh cứ hỏi người đang phụ trách, còn hôm nào mình gặp nhau hỏi thăm ngoài chuyện công việc nhé?",
+      "terms": [
+        "近況"
+      ],
+      "scenes": [
+        "S012",
+        "S014",
+        "S015"
+      ],
+      "pattern": "～てもらって、～ませんか"
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "code": "S-069",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "8a49a73994d3618642311ecc509c5bef747aaa6da775448627a8e972a27b51de",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "invite": "Rủ gặp và hỏi người kia muốn thế nào",
+    "chat": "Mở chuyện và để người kia chọn",
+    "boundary": "Tôn trọng chuyện riêng và giờ về",
+    "after": "Cảm ơn và hỏi chuyện gặp lại"
+  },
+  "items": [
+    {
+      "id": "S-069-V13-001",
+      "group": "invite",
+      "role_vi": "Người rủ bạn mới quen",
+      "gender": "female",
+      "ja": "よかったら、駅前のカフェに行きませんか。",
+      "vi": "Nếu anh thấy tiện, mình ghé quán cà phê trước ga nhé?",
+      "terms": [
+        "よかったら",
+        "駅前",
+        "カフェ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "rủ_để_người_kia_chọn"
+    },
+    {
+      "id": "S-069-V13-002",
+      "group": "invite",
+      "role_vi": "Người hỏi ngày hẹn",
+      "gender": "female",
+      "ja": "今週末は、土曜と日曜のどちらが空いていますか。",
+      "vi": "Cuối tuần này anh rảnh thứ Bảy hay Chủ nhật ạ?",
+      "terms": [
+        "今週末",
+        "空く"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_ngày_tiện"
+    },
+    {
+      "id": "S-069-V13-003",
+      "group": "invite",
+      "role_vi": "Người hẹn mới quen",
+      "gender": "male",
+      "ja": "日曜の午後なら会えます。",
+      "vi": "Chiều Chủ nhật thì tôi gặp chị được ạ.",
+      "terms": [
+        "午後",
+        "会う"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "nếu_thì_gặp_được"
+    },
+    {
+      "id": "S-069-V13-004",
+      "group": "invite",
+      "role_vi": "Người chọn cách gặp lần đầu",
+      "gender": "male",
+      "ja": "最初は、クラスのみんなで会いたいです。",
+      "vi": "Lần đầu tôi muốn gặp cùng các bạn trong lớp ạ.",
+      "terms": [
+        "みんなで",
+        "会う"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "nói_hình_thức_mình_muốn"
+    },
+    {
+      "id": "S-069-V13-005",
+      "group": "invite",
+      "role_vi": "Người chấp nhận gặp cả nhóm",
+      "gender": "female",
+      "ja": "今度は、クラスのみんなでカフェに行きましょう。",
+      "vi": "Vậy lần tới mình đi cà phê cùng các bạn trong lớp nhé.",
+      "terms": [
+        "今度",
+        "みんなで",
+        "カフェ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "chốt_cách_gặp"
+    },
+    {
+      "id": "S-069-V13-006",
+      "group": "invite",
+      "role_vi": "Người đề nghị điểm hẹn dễ tìm",
+      "gender": "female",
+      "ja": "日曜日の待ち合わせは、駅の東口でどうですか。",
+      "vi": "Chủ nhật mình gặp ở cửa Đông nhà ga, anh thấy được không ạ?",
+      "terms": [
+        "待ち合わせ",
+        "東口"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "đề_nghị_điểm_hẹn"
+    },
+    {
+      "id": "S-069-V13-007",
+      "group": "chat",
+      "role_vi": "Người gợi ý chỗ ngồi",
+      "gender": "female",
+      "ja": "窓側と奥の席なら、どちらがいいですか。",
+      "vi": "Anh thích ngồi cạnh cửa sổ hay phía trong hơn ạ?",
+      "terms": [
+        "窓側",
+        "奥",
+        "席"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hỏi_người_kia_muốn_gì"
+    },
+    {
+      "id": "S-069-V13-008",
+      "group": "chat",
+      "role_vi": "Người chọn chỗ yên hơn",
+      "gender": "male",
+      "ja": "ゆっくり話せるように、静かな奥の席にしませんか。",
+      "vi": "Mình ngồi phía trong cho yên tĩnh, dễ nói chuyện nhé?",
+      "terms": [
+        "静か",
+        "奥",
+        "席"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "nói_điều_mình_thích"
+    },
+    {
+      "id": "S-069-V13-009",
+      "group": "chat",
+      "role_vi": "Người kể sở thích",
+      "gender": "female",
+      "ja": "休みの日は、お菓子を作るのが好きです。",
+      "vi": "Ngày nghỉ tôi thích làm bánh ngọt ạ.",
+      "terms": [
+        "お菓子"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "chia_sẻ_sở_thích"
+    },
+    {
+      "id": "S-069-V13-010",
+      "group": "chat",
+      "role_vi": "Người hỏi về sở thích chụp ảnh",
+      "gender": "female",
+      "ja": "休みの日は、どんな写真を撮るんですか。",
+      "vi": "Ngày nghỉ anh hay chụp ảnh gì ạ?",
+      "terms": [
+        "写真",
+        "撮る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_thêm_về_sở_thích"
+    },
+    {
+      "id": "S-069-V13-011",
+      "group": "chat",
+      "role_vi": "Người giải thích câu đùa",
+      "gender": "male",
+      "ja": "冷房が強いから、冷蔵庫みたいだと冗談で言ったんです。",
+      "vi": "Máy lạnh mạnh quá nên tôi mới đùa là quán như cái tủ lạnh ấy mà.",
+      "terms": [
+        "冗談"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "giải_thích_lời_đùa"
+    },
+    {
+      "id": "S-069-V13-012",
+      "group": "chat",
+      "role_vi": "Người đổi sang chuyện đồ uống",
+      "gender": "female",
+      "ja": "ここの紅茶は、香りがよくておいしいですね。",
+      "vi": "Trà đen ở đây thơm và ngon nhỉ.",
+      "terms": [
+        "紅茶",
+        "香り"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "mở_chuyện_khác"
+    },
+    {
+      "id": "S-069-V13-013",
+      "group": "boundary",
+      "role_vi": "Người xin chụp ảnh chung",
+      "gender": "female",
+      "ja": "よかったら、ここで一緒に写真を撮りませんか。",
+      "vi": "Nếu anh muốn, mình chụp chung một tấm ở đây nhé?",
+      "terms": [
+        "よかったら",
+        "一緒に",
+        "写真",
+        "撮る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "rủ_để_người_kia_chọn"
+    },
+    {
+      "id": "S-069-V13-014",
+      "group": "boundary",
+      "role_vi": "Người đồng ý chụp với điều kiện",
+      "gender": "male",
+      "ja": "写真は撮ってもいいですが、ネットには載せないでください。",
+      "vi": "Mình chụp ảnh được, nhưng chị đừng đăng lên mạng nhé.",
+      "terms": [
+        "写真",
+        "撮る",
+        "載せる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "đồng_ý_có_điều_kiện"
+    },
+    {
+      "id": "S-069-V13-015",
+      "group": "boundary",
+      "role_vi": "Người tôn trọng việc không muốn chụp",
+      "gender": "female",
+      "ja": "写真が苦手なら、撮らなくて大丈夫ですよ。",
+      "vi": "Nếu anh không thích chụp ảnh thì mình không chụp cũng được ạ.",
+      "terms": [
+        "写真",
+        "苦手",
+        "撮る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "giảm_áp_lực"
+    },
+    {
+      "id": "S-069-V13-016",
+      "group": "boundary",
+      "role_vi": "Người nói giới hạn chuyện riêng",
+      "gender": "female",
+      "ja": "今日は家族の話はしないでおきたいです。",
+      "vi": "Hôm nay tôi xin phép chưa nói về chuyện gia đình ạ.",
+      "terms": [
+        "家族"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "nói_giới_hạn_riêng_tư"
+    },
+    {
+      "id": "S-069-V13-017",
+      "group": "boundary",
+      "role_vi": "Người tôn trọng người phải về sớm",
+      "gender": "male",
+      "ja": "今日はお茶だけにして、お店はまた今度見に行きましょう。",
+      "vi": "Hôm nay mình chỉ uống nước thôi, hôm khác ghé cửa hàng nhé.",
+      "terms": [
+        "今度"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "giữ_buổi_gặp_ngắn"
+    },
+    {
+      "id": "S-069-V13-018",
+      "group": "boundary",
+      "role_vi": "Người nói rõ hôm nay không đi tiếp",
+      "gender": "female",
+      "ja": "今日はお茶だけの約束なので、このあと帰りますね。",
+      "vi": "Hôm nay mình chỉ hẹn uống nước thôi, xong tôi về nhé.",
+      "terms": [
+        "約束",
+        "帰る"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "nói_rõ_đã_hẹn_gì"
+    },
+    {
+      "id": "S-069-V13-019",
+      "group": "boundary",
+      "role_vi": "Người nhắc giờ về đã hẹn",
+      "gender": "female",
+      "ja": "四時まであと五分なので、そろそろ出ましょうか。",
+      "vi": "Còn năm phút nữa là bốn giờ, mình ra thôi nhé?",
+      "terms": [
+        "～分",
+        "そろそろ"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "khép_buổi_đúng_giờ"
+    },
+    {
+      "id": "S-069-V13-020",
+      "group": "after",
+      "role_vi": "Người cảm ơn về buổi gặp",
+      "gender": "female",
+      "ja": "今日は本の話ができて、とても楽しかったです。",
+      "vi": "Hôm nay được nói chuyện về sách với anh, tôi thấy vui lắm ạ.",
+      "terms": [
+        "楽しい"
+      ],
+      "scenes": [
+        "S010",
+        "S016"
+      ],
+      "pattern": "nói_cụ_thể_điều_mình_thích"
+    },
+    {
+      "id": "S-069-V13-021",
+      "group": "after",
+      "role_vi": "Người rủ gặp lại",
+      "gender": "female",
+      "ja": "よかったら、来週も会いませんか。",
+      "vi": "Nếu anh muốn, tuần sau mình gặp lại nhé?",
+      "terms": [
+        "よかったら",
+        "会う"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "rủ_để_người_kia_chọn"
+    },
+    {
+      "id": "S-069-V13-022",
+      "group": "after",
+      "role_vi": "Người để bạn có thời gian xem lịch",
+      "gender": "male",
+      "ja": "次の約束の返事は、予定が分かってからでいいですよ。",
+      "vi": "Khi nào biết lịch rồi chị trả lời về buổi hẹn tới cũng được ạ.",
+      "terms": [
+        "次",
+        "約束",
+        "返事",
+        "予定"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "giảm_áp_lực"
+    },
+    {
+      "id": "S-069-V13-023",
+      "group": "after",
+      "role_vi": "Người tôn trọng lời từ chối gặp lại",
+      "gender": "female",
+      "ja": "次の約束のこと、はっきり伝えてくれてありがとうございます。",
+      "vi": "Cảm ơn anh đã nói rõ về chuyện hẹn lần sau ạ.",
+      "terms": [
+        "次",
+        "約束"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "cảm_ơn_đã_nói_rõ"
+    }
+  ]
+}

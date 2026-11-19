@@ -1,0 +1,392 @@
+{
+  "code": "T-099",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b2ca4ba095fef3ddd496401a46d47ab5566fe6ed94ad9d7c7dfd426e1591bd41",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "concern": "Hỏi khách điều họ thực sự lo",
+    "trial": "Đề xuất thử và chốt tiêu chí",
+    "support": "Thương lượng cách hỗ trợ",
+    "budget": "Gắn mức giá với phần việc",
+    "commit": "Xác nhận phần đã thống nhất và phần còn phải bàn"
+  },
+  "items": [
+    {
+      "id": "T-099-V13-001",
+      "group": "concern",
+      "role_vi": "Nhân viên đề xuất mở lời khi thấy khách còn lo",
+      "gender": "female",
+      "ja": "切り替えで一番不安なことは何ですか。",
+      "vi": "Điều anh lo nhất khi chuyển sang cách mới là gì ạ?",
+      "terms": [
+        "切り替える",
+        "不安"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ichiban_nani_desu_ka"
+    },
+    {
+      "id": "T-099-V13-002",
+      "group": "concern",
+      "role_vi": "Đầu mối khách nói rõ điều mình lo hơn giá",
+      "gender": "male",
+      "ja": "費用より、受付が止まることが心配です。",
+      "vi": "Tôi lo việc tiếp nhận đơn bị gián đoạn hơn chuyện chi phí.",
+      "terms": [
+        "受付"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "a_yori_b_ga_shinpai"
+    },
+    {
+      "id": "T-099-V13-003",
+      "group": "concern",
+      "role_vi": "Nhân viên sửa cách hiểu và nhắc lại ưu tiên của khách",
+      "gender": "female",
+      "ja": "切り替えの日も受付を続けられることが大事なんですね。",
+      "vi": "Điều quan trọng là ngày chuyển vẫn phải tiếp tục nhận đơn được, đúng ý anh chứ ạ?",
+      "terms": [
+        "切り替える",
+        "受付"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "verb_koto_ga_daiji"
+    },
+    {
+      "id": "T-099-V13-004",
+      "group": "concern",
+      "role_vi": "Nhân viên hỏi hệ quả nếu chưa kiểm xong trước mốc",
+      "gender": "female",
+      "ja": "月曜の朝までに確認できない場合、どの作業に影響が出ますか。",
+      "vi": "Nếu đến sáng thứ Hai mà vẫn chưa kiểm xong thì việc nào sẽ bị ảnh hưởng ạ?",
+      "terms": [
+        "影響"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "baai_dono_ka"
+    },
+    {
+      "id": "T-099-V13-005",
+      "group": "trial",
+      "role_vi": "Nhân viên đề nghị giới hạn thử nghiệm để khách quan sát trước khi quyết",
+      "gender": "female",
+      "ja": "まず一か所の受付で、一週間だけ試すのはいかがでしょうか。",
+      "vi": "Trước mắt mình thử đúng một tuần ở một điểm tiếp nhận thì anh thấy sao ạ?",
+      "terms": [
+        "受付"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "verb_no_wa_ikaga"
+    },
+    {
+      "id": "T-099-V13-006",
+      "group": "trial",
+      "role_vi": "Khách hỏi có thể quay lại cách cũ nếu thử không suôn sẻ không",
+      "gender": "male",
+      "ja": "試用がうまくいかなかった場合、元に戻せますか。",
+      "vi": "Nếu dùng thử không suôn sẻ thì mình quay về cách cũ được không ạ?",
+      "terms": [
+        "試用",
+        "元に戻す"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "baai_potential_ka"
+    },
+    {
+      "id": "T-099-V13-007",
+      "group": "trial",
+      "role_vi": "Nhân viên xác nhận điều kiện trước khi đổi sang cách mới",
+      "gender": "female",
+      "ja": "新しい方法で注文を一件受けられることを確認してから切り替える、という理解で合っていますか。",
+      "vi": "Tôi hiểu là chỉ chuyển sau khi xác nhận cách mới nhận được một đơn, đúng ý anh chứ ạ?",
+      "terms": [
+        "切り替える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "toiu_rikai_de_ka"
+    },
+    {
+      "id": "T-099-V13-008",
+      "group": "trial",
+      "role_vi": "Khách nêu tiêu chí số đơn cần xử lý trong đợt thử",
+      "gender": "male",
+      "ja": "試用中に十件扱えるか確認したいです。",
+      "vi": "Trong đợt dùng thử tôi muốn kiểm xem có xử lý được mười đơn không.",
+      "terms": [
+        "試用"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "embedded_ka_kakunin"
+    },
+    {
+      "id": "T-099-V13-009",
+      "group": "trial",
+      "role_vi": "Nhân viên đề nghị đối chiếu để biết có bỏ sót đơn không",
+      "gender": "female",
+      "ja": "件数だけでなく、注文が漏れていないかも一覧と照合しましょう。",
+      "vi": "Ngoài việc đếm số đơn, mình đối chiếu với danh sách xem có bỏ sót đơn nào không nhé.",
+      "terms": [
+        "件数",
+        "漏れる",
+        "照合する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "dake_de_naku_mo"
+    },
+    {
+      "id": "T-099-V13-010",
+      "group": "support",
+      "role_vi": "Nhân viên hỏi khách cần hỗ trợ tới mức nào mới cân nhắc thử",
+      "gender": "female",
+      "ja": "どんな支援体制なら試用を検討していただけますか。",
+      "vi": "Bên tôi cần bố trí hỗ trợ thế nào thì anh có thể cân nhắc dùng thử ạ?",
+      "terms": [
+        "支援体制",
+        "試用"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "nara_kentou_potential"
+    },
+    {
+      "id": "T-099-V13-011",
+      "group": "support",
+      "role_vi": "Khách nêu mức hỗ trợ tối thiểu sáng ngày đầu",
+      "gender": "male",
+      "ja": "少なくとも初日の朝は、電話して十五分以内に相談できる方が必要です。",
+      "vi": "Ít nhất sáng ngày đầu, chúng tôi cần có người trao đổi được trong vòng mười lăm phút kể từ lúc gọi.",
+      "terms": [
+        "初日"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "sukunakutomo_wa"
+    },
+    {
+      "id": "T-099-V13-012",
+      "group": "support",
+      "role_vi": "Nhân viên giới hạn khung giờ có thể hỗ trợ tại chỗ",
+      "gender": "female",
+      "ja": "初日は九時から十一時まででしたら、担当者が現場で対応できます。",
+      "vi": "Ngày đầu, từ chín đến mười một giờ thì người phụ trách bên tôi có thể hỗ trợ tại chỗ ạ.",
+      "terms": [
+        "初日",
+        "現場"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "deshitara_potential"
+    },
+    {
+      "id": "T-099-V13-013",
+      "group": "support",
+      "role_vi": "Nhân viên hỏi phương án hỗ trợ qua điện thoại cho buổi chiều",
+      "gender": "female",
+      "ja": "午後は電話でのサポートになりますが、よろしいでしょうか。",
+      "vi": "Buổi chiều bên tôi sẽ hỗ trợ qua điện thoại, như vậy được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "ga_yoroshii_deshou"
+    },
+    {
+      "id": "T-099-V13-014",
+      "group": "budget",
+      "role_vi": "Khách hỏi có thể hạ mức báo giá vượt khoản dự tính hay không",
+      "gender": "male",
+      "ja": "見積もりが予算を少し超えるので、金額を調整できませんか。",
+      "vi": "Báo giá hơi vượt ngân sách, chị điều chỉnh số tiền được không ạ?",
+      "terms": [
+        "見積もり",
+        "予算"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "node_dekimasen_ka"
+    },
+    {
+      "id": "T-099-V13-015",
+      "group": "budget",
+      "role_vi": "Nhân viên nêu điều kiện để có mức giá thấp hơn",
+      "gender": "female",
+      "ja": "訪問での説明を一回に減らすなら、二十六万円にできます。",
+      "vi": "Nếu giảm còn một buổi tới tận nơi hướng dẫn thì bên tôi có thể báo 260.000 yên ạ.",
+      "terms": [
+        "訪問"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "nara_potential"
+    },
+    {
+      "id": "T-099-V13-016",
+      "group": "budget",
+      "role_vi": "Nhân viên làm rõ giá thấp hơn bao gồm đúng một lần tới hỗ trợ",
+      "gender": "female",
+      "ja": "二十六万円の見積もりに含まれる訪問は一回です。",
+      "vi": "Báo giá 260.000 yên bao gồm một buổi tới tận nơi ạ.",
+      "terms": [
+        "見積もり",
+        "含む",
+        "訪問"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "detail_ni_fukumareru"
+    },
+    {
+      "id": "T-099-V13-017",
+      "group": "budget",
+      "role_vi": "Nhân viên xin thời gian hỏi người có quyền duyệt thêm mức giảm",
+      "gender": "female",
+      "ja": "これ以上値引きできるか、責任者に確認する時間をいただけますか。",
+      "vi": "Anh cho tôi thời gian hỏi người phụ trách xem còn giảm thêm được không ạ?",
+      "terms": [
+        "値引き",
+        "責任者"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "jikan_wo_itadakemasu"
+    },
+    {
+      "id": "T-099-V13-018",
+      "group": "budget",
+      "role_vi": "Nhân viên đưa phương án trực tuyến nằm trong mức khách muốn",
+      "gender": "female",
+      "ja": "画面共有での説明に変えるなら、二十四万円でお出しできます。",
+      "vi": "Nếu đổi sang hướng dẫn qua chia sẻ màn hình thì bên tôi có thể báo 240.000 yên ạ.",
+      "terms": [
+        "画面共有"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "nara_potential"
+    },
+    {
+      "id": "T-099-V13-019",
+      "group": "commit",
+      "role_vi": "Khách nhắc phần đã đồng ý trước khi xác nhận ngày đổi hệ thống",
+      "gender": "male",
+      "ja": "機器の台数については合意できましたが、切り替え日はまだ決まっていません。",
+      "vi": "Hai bên đã thống nhất số máy, còn ngày chuyển thì vẫn chưa chốt.",
+      "terms": [
+        "合意",
+        "切り替える"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "ga_mada_matte"
+    },
+    {
+      "id": "T-099-V13-020",
+      "group": "commit",
+      "role_vi": "Nhân viên nói giới hạn chưa thể hứa về bốn máy cùng ngày",
+      "gender": "female",
+      "ja": "四台とも同じ日に使えるとは、現時点ではお約束できません。",
+      "vi": "Hiện giờ tôi chưa thể cam kết cả bốn máy đều dùng được trong cùng một ngày ạ.",
+      "terms": [
+        "現時点"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "to_wa_oyakusoku_dekimasen"
+    },
+    {
+      "id": "T-099-V13-021",
+      "group": "commit",
+      "role_vi": "Nhân viên xin bàn lịch với người có quyền quyết",
+      "gender": "female",
+      "ja": "日程を決める責任者にも同席していただけますか。",
+      "vi": "Anh có thể mời cả người có quyền quyết lịch cùng tham dự được không ạ?",
+      "terms": [
+        "責任者",
+        "同席する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "te_itadakemasu_ka"
+    },
+    {
+      "id": "T-099-V13-022",
+      "group": "commit",
+      "role_vi": "Nhân viên đề xuất chia đợt trước cuộc bàn lịch chính thức",
+      "gender": "female",
+      "ja": "二段階に分けて、まず二台だけ切り替えるのはいかがでしょうか。",
+      "vi": "Mình chia thành hai giai đoạn, trước mắt chỉ chuyển hai máy, anh thấy sao ạ?",
+      "terms": [
+        "二段階",
+        "切り替える"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "verb_no_wa_ikaga"
+    },
+    {
+      "id": "T-099-V13-023",
+      "group": "commit",
+      "role_vi": "Đầu mối khách thông báo đã được đồng ý thử hai máy trước nhưng còn mốc phải bàn",
+      "gender": "male",
+      "ja": "先に二台を試すことは決まりましたが、残りの切り替え日は金曜日に相談したいです。",
+      "vi": "Bên tôi đã đồng ý thử hai máy trước, còn ngày chuyển số máy còn lại thì muốn bàn vào thứ Sáu.",
+      "terms": [
+        "切り替える"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "ga_mada_matte"
+    },
+    {
+      "id": "T-099-V13-024",
+      "group": "commit",
+      "role_vi": "Nhân viên đề xuất hoãn đặt hàng tới khi đã chốt cách triển khai",
+      "gender": "female",
+      "ja": "発注は、残りの二台の日程を決めた後で結構です。",
+      "vi": "Sau khi chốt lịch cho hai máy còn lại mới đặt hàng cũng được ạ.",
+      "terms": [
+        "発注"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "ato_de_kekkou"
+    }
+  ]
+}

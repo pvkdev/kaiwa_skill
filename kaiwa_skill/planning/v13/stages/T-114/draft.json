@@ -1,0 +1,368 @@
+{
+  "code": "T-114",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "f3f72407df6729d4ccabfaac04469f9cb8cb36ed69a4d1bf29dddf81323a9320",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "end": "Xác nhận việc vừa kết thúc và bàn giao",
+    "consult": "Tìm tư vấn phù hợp và mô tả kinh nghiệm",
+    "criteria": "Nêu điều kiện tìm việc và điều có thể đổi",
+    "follow": "Hỏi kết quả và chuẩn bị ngày đầu"
+  },
+  "items": [
+    {
+      "id": "T-114-V13-001",
+      "group": "end",
+      "role_vi": "Nhân viên hỏi người quản lý",
+      "gender": "female",
+      "ja": "最終出勤日はいつになりますか。",
+      "vi": "Ngày cuối tôi đến làm là ngày nào ạ?",
+      "terms": [
+        "最終出勤日"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_mốc"
+    },
+    {
+      "id": "T-114-V13-002",
+      "group": "end",
+      "role_vi": "Nhân viên hỏi hợp đồng có được gia hạn không",
+      "gender": "female",
+      "ja": "今の担当が終わるだけなのか、契約も更新されないのか、確認させてください。",
+      "vi": "Anh cho tôi xác nhận xem chỉ phần việc hiện tại kết thúc hay cả hợp đồng cũng không được gia hạn ạ.",
+      "terms": [
+        "更新する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "phân_biệt_hai_khả_năng"
+    },
+    {
+      "id": "T-114-V13-003",
+      "group": "end",
+      "role_vi": "Quản lý nói phần còn đợi xác nhận",
+      "gender": "male",
+      "ja": "最終出勤日は三十日で、契約が満了する日については人事からの返事待ちです。",
+      "vi": "Ngày cuối đến làm là ngày ba mươi, còn ngày hợp đồng hết hạn vẫn đang chờ nhân sự trả lời ạ.",
+      "terms": [
+        "最終出勤日",
+        "満了する",
+        "返事待ち"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "phân_biệt_hai_mốc"
+    },
+    {
+      "id": "T-114-V13-004",
+      "group": "end",
+      "role_vi": "Nhân viên hẹn mốc cập nhật dù chưa chốt",
+      "gender": "female",
+      "ja": "契約が終わる日がまだ決まらなくても、月曜のお昼までに状況を教えていただけますか。",
+      "vi": "Dù ngày kết thúc hợp đồng vẫn chưa chốt, anh báo tình hình giúp tôi chậm nhất vào trưa thứ Hai được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "nhờ_báo_cả_khi_chưa_chốt"
+    },
+    {
+      "id": "T-114-V13-005",
+      "group": "end",
+      "role_vi": "Nhân viên hỏi phần ghi trên giấy",
+      "gender": "female",
+      "ja": "契約を更新しない理由が書類にどう記載されるのか、人事に確認してもいいでしょうか。",
+      "vi": "Tôi có thể hỏi nhân sự lý do không gia hạn hợp đồng sẽ được ghi trên giấy tờ thế nào không ạ?",
+      "terms": [
+        "更新する",
+        "書類",
+        "記載する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_phần_ghi_trên_giấy"
+    },
+    {
+      "id": "T-114-V13-006",
+      "group": "end",
+      "role_vi": "Nhân viên yêu cầu giới hạn điều báo nhóm",
+      "gender": "female",
+      "ja": "チームには仕事の分担だけ伝えて、契約の経緯は伏せていただけますか。",
+      "vi": "Anh chỉ báo nhóm việc phân công, còn diễn biến dẫn đến chuyện hợp đồng kết thúc thì giữ riêng giúp tôi được không ạ?",
+      "terms": [
+        "分担",
+        "伝える",
+        "経緯"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "xin_giới_hạn_chia_sẻ"
+    },
+    {
+      "id": "T-114-V13-007",
+      "group": "end",
+      "role_vi": "Nhân viên bàn giao đơn chưa xong",
+      "gender": "female",
+      "ja": "納品日の返事を待っている注文について、最終出勤日の翌日からの担当を決めていただけますか。",
+      "vi": "Đơn đang chờ phản hồi về ngày giao, anh chốt giúp ai tiếp quản sau ngày làm cuối của tôi được không ạ?",
+      "terms": [
+        "納品日",
+        "最終出勤日"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "xin_chốt_người_tiếp_quản"
+    },
+    {
+      "id": "T-114-V13-008",
+      "group": "consult",
+      "role_vi": "Người mới tìm việc ở quầy tư vấn",
+      "gender": "female",
+      "ja": "前の契約が先月で終わったので、職業相談をお願いできますか。",
+      "vi": "Hợp đồng trước của tôi đã kết thúc tháng trước, tôi xin tư vấn tìm việc được không ạ?",
+      "terms": [
+        "職業相談"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "xin_tư_vấn"
+    },
+    {
+      "id": "T-114-V13-009",
+      "group": "consult",
+      "role_vi": "Ứng viên kể nhiệm vụ đã làm",
+      "gender": "female",
+      "ja": "受注事務では、注文を入力したあと、在庫があるか確認していました。",
+      "vi": "Khi làm hành chính xử lý đơn hàng, tôi nhập đơn rồi kiểm xem còn hàng trong kho không ạ.",
+      "terms": [
+        "受注事務",
+        "入力する",
+        "在庫"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "nêu_kinh_nghiệm_cụ_thể"
+    },
+    {
+      "id": "T-114-V13-010",
+      "group": "consult",
+      "role_vi": "Ứng viên giải thích phạm vi tự xử lý",
+      "gender": "female",
+      "ja": "急な変更は上司に判断してもらい、決まった内容を私からお客様に伝えていました。",
+      "vi": "Khi khách yêu cầu đổi gấp, tôi nhờ cấp trên quyết định rồi tự báo lại nội dung đã chốt cho khách ạ.",
+      "terms": [
+        "上司",
+        "判断する",
+        "伝える"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "tách_phần_của_mình_và_cấp_trên"
+    },
+    {
+      "id": "T-114-V13-011",
+      "group": "consult",
+      "role_vi": "Người hỏi bảo hiểm khi chưa có phiếu",
+      "gender": "female",
+      "ja": "離職票がまだ届いていないのですが、雇用保険の受給資格についてはどこに相談すればいいでしょうか。",
+      "vi": "Tôi vẫn chưa nhận được phiếu thôi việc, tôi nên hỏi đâu để biết mình có đủ điều kiện nhận trợ cấp bảo hiểm việc làm không ạ?",
+      "terms": [
+        "離職票",
+        "雇用保険",
+        "受給資格"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "hỏi_đầu_mối_phù_hợp"
+    },
+    {
+      "id": "T-114-V13-012",
+      "group": "consult",
+      "role_vi": "Tư vấn viên xác nhận phạm vi của buổi tư vấn",
+      "gender": "female",
+      "ja": "この職業相談では、求人のお話はできますが、雇用保険の手続きは扱っていません。",
+      "vi": "Trong buổi này tôi có thể tư vấn cho chị về các vị trí đang tuyển, còn thủ tục bảo hiểm việc làm thì quầy này không tiếp nhận ạ.",
+      "terms": [
+        "職業相談",
+        "求人",
+        "雇用保険",
+        "扱う"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nêu_phạm_vi_tiếp_nhận"
+    },
+    {
+      "id": "T-114-V13-013",
+      "group": "consult",
+      "role_vi": "Người xin đầu mối khác và giờ làm",
+      "gender": "female",
+      "ja": "私の住んでいる地域を担当する窓口と、平日の受付時間を教えていただけますか。",
+      "vi": "Chị cho tôi biết quầy phụ trách nơi tôi ở và giờ tiếp nhận ngày thường được không ạ?",
+      "terms": [
+        "受付時間"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "hỏi_đầu_mối_phù_hợp"
+    },
+    {
+      "id": "T-114-V13-014",
+      "group": "consult",
+      "role_vi": "Người chuẩn bị cho lần tư vấn sau",
+      "gender": "female",
+      "ja": "次の職業相談までに、前の仕事で担当したことを整理しておけばいいでしょうか。",
+      "vi": "Trước buổi tư vấn việc làm tới, tôi nên chuẩn bị những việc mình từng phụ trách, đúng không ạ?",
+      "terms": [
+        "職業相談"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "hỏi_cần_chuẩn_bị_gì"
+    },
+    {
+      "id": "T-114-V13-015",
+      "group": "criteria",
+      "role_vi": "Người nêu giờ làm bắt buộc",
+      "gender": "female",
+      "ja": "希望条件として、終業時刻は十六時半まででお願いしたいです。",
+      "vi": "Về điều kiện tìm việc, tôi muốn giữ giờ tan ca muộn nhất là bốn giờ rưỡi chiều ạ.",
+      "terms": [
+        "希望条件",
+        "終業時刻"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "nêu_điều_kiện_cần_giữ"
+    },
+    {
+      "id": "T-114-V13-016",
+      "group": "criteria",
+      "role_vi": "Người có thể mở rộng loại việc",
+      "gender": "female",
+      "ja": "十六時半までに終わる仕事なら、受注事務のほかに問い合わせ対応のある事務も考えたいです。",
+      "vi": "Nếu được tan ca chậm nhất bốn giờ rưỡi, ngoài xử lý đơn hàng tôi muốn cân nhắc cả công việc văn phòng có tiếp nhận yêu cầu của khách ạ.",
+      "terms": [
+        "受注事務",
+        "問い合わせ",
+        "対応"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "nếu_đáp_ứng_thì_linh_hoạt"
+    },
+    {
+      "id": "T-114-V13-017",
+      "group": "criteria",
+      "role_vi": "Người hỏi chi tiết về ca",
+      "gender": "female",
+      "ja": "短時間の求人でも、交替制で遅くなる日がないか確認していただけますか。",
+      "vi": "Dù là việc ít giờ, chị kiểm tra giúp có hôm nào do luân ca mà phải làm muộn không ạ?",
+      "terms": [
+        "短時間",
+        "求人",
+        "交替制"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hỏi_điều_kiện_cụ_thể"
+    },
+    {
+      "id": "T-114-V13-018",
+      "group": "criteria",
+      "role_vi": "Người nới điều kiện đường đi",
+      "gender": "female",
+      "ja": "乗り換えがなければ、通勤は片道四十分まで広げても大丈夫です。",
+      "vi": "Nếu đi thẳng không phải đổi tàu, tôi có thể nới thời gian đi làm lên tối đa bốn mươi phút một chiều ạ.",
+      "terms": [
+        "乗り換え",
+        "片道"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "nếu_đáp_ứng_thì_linh_hoạt"
+    },
+    {
+      "id": "T-114-V13-019",
+      "group": "follow",
+      "role_vi": "Ứng viên gọi sau phỏng vấn",
+      "gender": "female",
+      "ja": "先週の面接の結果は、いつごろご連絡いただけそうでしょうか。",
+      "vi": "Khoảng khi nào tôi có thể nhận được thông báo kết quả phỏng vấn tuần trước ạ?",
+      "terms": [
+        "面接"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "hỏi_mốc_phản_hồi"
+    },
+    {
+      "id": "T-114-V13-020",
+      "group": "follow",
+      "role_vi": "Nhân viên tuyển dụng báo kết quả còn chờ",
+      "gender": "male",
+      "ja": "まだ選考が終わっていないので、金曜までに分かったことをご連絡します。",
+      "vi": "Quá trình tuyển chọn vẫn chưa xong, tôi sẽ báo chị phần đã có thông tin chậm nhất vào thứ Sáu ạ.",
+      "terms": [
+        "選考"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "hẹn_báo_cả_khi_chưa_chốt"
+    },
+    {
+      "id": "T-114-V13-021",
+      "group": "follow",
+      "role_vi": "Ứng viên nhận việc và hỏi đầu mối",
+      "gender": "female",
+      "ja": "お伝えいただいた条件でお受けしますので、初日はどなたを訪ねればよいか教えていただけますか。",
+      "vi": "Tôi đồng ý nhận việc theo điều kiện anh đã báo, anh cho tôi biết ngày đầu cần đến gặp ai được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "chốt_nhận_việc_và_hỏi_đầu_mối"
+    },
+    {
+      "id": "T-114-V13-022",
+      "group": "follow",
+      "role_vi": "Nhân viên tuyển dụng dặn cách báo nếu trễ",
+      "gender": "male",
+      "ja": "初日に遅れる場合は、受付にお名前と到着の見込みをお伝えいただければ、森に取り次ぎます。",
+      "vi": "Nếu ngày đầu chị đến trễ, chị báo tên và giờ dự kiến tới cho lễ tân, chúng tôi sẽ chuyển lời cho chị Mori ạ.",
+      "terms": [
+        "見込み",
+        "伝える",
+        "取り次ぐ"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "nếu_trễ_thì_báo"
+    }
+  ]
+}

@@ -1,0 +1,368 @@
+{
+  "code": "S-004",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "f497aa93f27448fadad4665ff0d1046a53fcd7bd666d2e85f8cc70c8b1c16c35",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "objects": "Mô tả và chỉ đồ cần mua",
+    "count": "Chọn số lượng và đơn vị",
+    "date": "Hỏi và chốt ngày giờ",
+    "price": "Hỏi giá và cách tính",
+    "payment": "Đưa tiền và kiểm lại tiền thừa"
+  },
+  "items": [
+    {
+      "id": "S-004-V13-001",
+      "group": "objects",
+      "role_vi": "Khách hỏi nhân viên cửa hàng đồ gia dụng về một chiếc ấm màu đỏ",
+      "gender": "female",
+      "ja": "赤い急須はありますか。",
+      "vi": "Có ấm pha trà màu đỏ không ạ?",
+      "terms": [
+        "赤い",
+        "急須"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-004-V13-002",
+      "group": "objects",
+      "role_vi": "Khách chỉ đúng chiếc cốc cần mua trên kệ",
+      "gender": "male",
+      "ja": "隣の青いコップをください。",
+      "vi": "Cho tôi chiếc cốc xanh bên cạnh ạ.",
+      "terms": [
+        "隣",
+        "青い",
+        "コップ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "noun_wo_kudasai"
+    },
+    {
+      "id": "S-004-V13-003",
+      "group": "objects",
+      "role_vi": "Khách mô tả một món đồ pha trà khi quên tên",
+      "gender": "female",
+      "ja": "赤くて丸い、お茶を入れるものはありますか。",
+      "vi": "Ở đây có món đồ màu đỏ, hình tròn dùng để pha trà không ạ?",
+      "terms": [
+        "赤い",
+        "丸い",
+        "もの"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-004-V13-004",
+      "group": "count",
+      "role_vi": "Khách nói rõ muốn mua ba chiếc cốc như mẫu",
+      "gender": "female",
+      "ja": "このコップを三つください。",
+      "vi": "Cho tôi ba chiếc cốc loại này ạ.",
+      "terms": [
+        "コップ",
+        "三つ"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "noun_wo_quantity_kudasai"
+    },
+    {
+      "id": "S-004-V13-005",
+      "group": "count",
+      "role_vi": "Khách mua mỗi màu cốc một chiếc",
+      "gender": "male",
+      "ja": "青と白のコップを一つずつください。",
+      "vi": "Cho tôi một cốc xanh và một cốc trắng ạ.",
+      "terms": [
+        "コップ",
+        "一つずつ"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "noun_wo_quantity_kudasai"
+    },
+    {
+      "id": "S-004-V13-006",
+      "group": "count",
+      "role_vi": "Khách sửa khi nhân viên lấy hai chiếc găng rời",
+      "gender": "male",
+      "ja": "手袋は二つじゃなくて一組でお願いします。",
+      "vi": "Cho tôi một đôi găng tay, không lấy hai chiếc lẻ ạ.",
+      "terms": [
+        "二つ",
+        "一組"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "a_ja_nakute_b"
+    },
+    {
+      "id": "S-004-V13-007",
+      "group": "count",
+      "role_vi": "Khách kiểm một đôi găng có đủ hai tay trước khi mua",
+      "gender": "female",
+      "ja": "この手袋は右と左が一つずつですか。",
+      "vi": "Đôi găng này có đủ một chiếc tay phải và một chiếc tay trái phải không ạ?",
+      "terms": [
+        "一つずつ"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "noun_ga_quantity_desu_ka"
+    },
+    {
+      "id": "S-004-V13-008",
+      "group": "date",
+      "role_vi": "Người sắp đặt lịch hỏi buổi gặp kéo dài từ mấy giờ đến mấy giờ",
+      "gender": "male",
+      "ja": "打ち合わせは何時から何時までですか。",
+      "vi": "Buổi gặp từ mấy giờ đến mấy giờ ạ?",
+      "terms": [
+        "何時",
+        "まで"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "kara_made_desu_ka"
+    },
+    {
+      "id": "S-004-V13-009",
+      "group": "date",
+      "role_vi": "Người đặt lịch nêu ngày trong tuần này tiện cho mình",
+      "gender": "female",
+      "ja": "今週は木曜日がいいです。",
+      "vi": "Tuần này thì thứ Năm tiện cho tôi ạ.",
+      "terms": [
+        "今週"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "option_ga_ii_desu"
+    },
+    {
+      "id": "S-004-V13-010",
+      "group": "date",
+      "role_vi": "Người phụ trách lịch báo thứ Năm đã kín",
+      "gender": "male",
+      "ja": "木曜日の予約はいっぱいです。",
+      "vi": "Lịch hẹn thứ Năm kín rồi ạ.",
+      "terms": [
+        "いっぱい"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "schedule_wa_ippai"
+    },
+    {
+      "id": "S-004-V13-011",
+      "group": "date",
+      "role_vi": "Khách hỏi còn chỗ hẹn vào một buổi khác",
+      "gender": "female",
+      "ja": "金曜日の午後は空いていますか。",
+      "vi": "Chiều thứ Sáu còn chỗ hẹn không ạ?",
+      "terms": [
+        "金曜日",
+        "午後",
+        "空く"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "time_wa_aiteimasu_ka"
+    },
+    {
+      "id": "S-004-V13-012",
+      "group": "date",
+      "role_vi": "Người phụ trách lịch nói lại giờ bằng cách tính theo buổi",
+      "gender": "male",
+      "ja": "十三時は午後一時です。",
+      "vi": "13 giờ là một giờ chiều ạ.",
+      "terms": [
+        "十三時",
+        "午後"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "time_conversion"
+    },
+    {
+      "id": "S-004-V13-013",
+      "group": "date",
+      "role_vi": "Khách đọc lại cả thứ và giờ để chốt lịch",
+      "gender": "female",
+      "ja": "予約は金曜日の午後一時ですね。",
+      "vi": "Lịch hẹn là một giờ chiều thứ Sáu, đúng không ạ?",
+      "terms": [
+        "金曜日",
+        "午後"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "detail_desu_ne"
+    },
+    {
+      "id": "S-004-V13-014",
+      "group": "price",
+      "role_vi": "Khách hỏi giá bộ cốc không có nhãn",
+      "gender": "female",
+      "ja": "このコップのセットはいくらですか。",
+      "vi": "Bộ cốc này bao nhiêu tiền ạ?",
+      "terms": [
+        "コップ",
+        "セット",
+        "いくら"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "noun_wa_ikura_desu_ka"
+    },
+    {
+      "id": "S-004-V13-015",
+      "group": "price",
+      "role_vi": "Khách muốn biết giá đang thấy là giá một chiếc hay cả bộ",
+      "gender": "male",
+      "ja": "千二百円はコップ一つの値段ですか。",
+      "vi": "1.200 yên là giá một chiếc cốc ạ?",
+      "terms": [
+        "千",
+        "百",
+        "円",
+        "コップ",
+        "一つ",
+        "値段"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "detail_desu_ka"
+    },
+    {
+      "id": "S-004-V13-016",
+      "group": "price",
+      "role_vi": "Nhân viên cho khách biết giá tính chung hai chiếc cốc",
+      "gender": "male",
+      "ja": "コップ二つで千二百円です。",
+      "vi": "Hai chiếc cốc là 1.200 yên ạ.",
+      "terms": [
+        "コップ",
+        "二つ",
+        "千",
+        "百",
+        "円"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "quantity_de_price"
+    },
+    {
+      "id": "S-004-V13-017",
+      "group": "payment",
+      "role_vi": "Khách báo số tiền mặt vừa đưa khi mua bộ cốc",
+      "gender": "female",
+      "ja": "二千円でお願いします。",
+      "vi": "Tôi gửi 2.000 yên ạ.",
+      "terms": [
+        "千",
+        "円"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "amount_de_onegaishimasu"
+    },
+    {
+      "id": "S-004-V13-018",
+      "group": "payment",
+      "role_vi": "Thu ngân xác nhận đã nhận tiền khách đưa",
+      "gender": "male",
+      "ja": "二千円、お預かりします。",
+      "vi": "Tôi nhận 2.000 yên ạ.",
+      "terms": [
+        "千",
+        "円",
+        "預かる"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "amount_wo_azukarimasu"
+    },
+    {
+      "id": "S-004-V13-019",
+      "group": "payment",
+      "role_vi": "Khách hỏi lại vì số tiền thừa mình nhận bị thiếu",
+      "gender": "female",
+      "ja": "すみません、おつりは八百円じゃないですか。",
+      "vi": "Xin lỗi, tiền thừa phải là 800 yên chứ ạ?",
+      "terms": [
+        "おつり",
+        "百",
+        "円"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "detail_ja_nai_desu_ka"
+    },
+    {
+      "id": "S-004-V13-020",
+      "group": "payment",
+      "role_vi": "Nhân viên báo sẽ đối chiếu tiền thừa với biên lai ngay",
+      "gender": "male",
+      "ja": "レシートでおつりを確認します。",
+      "vi": "Tôi sẽ kiểm tra lại tiền thừa trên biên lai ạ.",
+      "terms": [
+        "レシート",
+        "おつり",
+        "確認する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "de_detail_wo_kakunin"
+    },
+    {
+      "id": "S-004-V13-021",
+      "group": "payment",
+      "role_vi": "Khách nói chính xác số tiền thừa mình đã nhận",
+      "gender": "female",
+      "ja": "おつりは七百円でした。",
+      "vi": "Tiền thừa tôi nhận là 700 yên ạ.",
+      "terms": [
+        "おつり",
+        "百",
+        "円"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "Nは〜でした"
+    }
+  ]
+}

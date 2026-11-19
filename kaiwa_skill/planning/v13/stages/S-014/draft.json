@@ -1,0 +1,387 @@
+{
+  "code": "S-014",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "0fa4b42a5c232c2e0e52b9a2fa5f5efdb2ae4cd60948b2db8e2c7576a8273de7",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "train": "Hỏi chuyến tàu và đặt ghế",
+    "taxi": "Nói điểm đến và chỗ xuống taxi",
+    "station": "Hỏi đường và gửi đồ ở ga",
+    "bus": "Hỏi điểm lên, điểm xuống xe đường dài",
+    "phone": "Báo đổi chuyến và chốt điểm gặp"
+  },
+  "items": [
+    {
+      "id": "S-014-V13-001",
+      "group": "train",
+      "role_vi": "Hành khách hỏi mua vé tàu cao tốc đi Sendai",
+      "gender": "female",
+      "ja": "仙台まで新幹線の切符を一枚ください。",
+      "vi": "Cho tôi một vé Shinkansen đến Sendai ạ.",
+      "terms": [
+        "新幹線",
+        "切符",
+        "枚"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "destination_made_ticket"
+    },
+    {
+      "id": "S-014-V13-002",
+      "group": "train",
+      "role_vi": "Hành khách hỏi chuyến Hayabusa buổi sáng",
+      "gender": "male",
+      "ja": "朝のはやぶさはありますか。",
+      "vi": "Có chuyến Hayabusa buổi sáng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-014-V13-003",
+      "group": "train",
+      "role_vi": "Hành khách hỏi có cần đặt ghế trước khi chọn chuyến",
+      "gender": "female",
+      "ja": "席の予約は必要ですか。",
+      "vi": "Tôi có cần đặt ghế trước không ạ?",
+      "terms": [
+        "席",
+        "予約"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "noun_wa_hitsuyou_desu_ka"
+    },
+    {
+      "id": "S-014-V13-004",
+      "group": "train",
+      "role_vi": "Nhân viên báo hết ghế chuyến hành khách muốn",
+      "gender": "male",
+      "ja": "九時半の便は満席です。",
+      "vi": "Chuyến chín giờ rưỡi đã hết ghế ạ.",
+      "terms": [
+        "時",
+        "半",
+        "便",
+        "満席"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "noun_wa_manseki"
+    },
+    {
+      "id": "S-014-V13-005",
+      "group": "train",
+      "role_vi": "Hành khách chọn chuyến mười giờ khi chuyến sớm đã đầy",
+      "gender": "female",
+      "ja": "十時の便にします。",
+      "vi": "Tôi chọn chuyến mười giờ ạ.",
+      "terms": [
+        "時",
+        "便"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "noun_ni_shimasu"
+    },
+    {
+      "id": "S-014-V13-006",
+      "group": "train",
+      "role_vi": "Hành khách hỏi lại giờ tàu xuất phát từ Tokyo vì dễ nhầm với giờ đến",
+      "gender": "female",
+      "ja": "この便は十時に東京を出ますか。",
+      "vi": "Chuyến này rời Tokyo lúc mười giờ phải không ạ?",
+      "terms": [
+        "便",
+        "時",
+        "出る"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "time_ni_verb_ka"
+    },
+    {
+      "id": "S-014-V13-007",
+      "group": "train",
+      "role_vi": "Nhân viên nói lại giờ tàu đến Sendai",
+      "gender": "male",
+      "ja": "仙台に着くのは十一時半です。",
+      "vi": "Giờ đến Sendai là mười một giờ rưỡi ạ.",
+      "terms": [
+        "着く",
+        "時",
+        "半"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "verb_no_wa_time_desu"
+    },
+    {
+      "id": "S-014-V13-008",
+      "group": "taxi",
+      "role_vi": "Hành khách lên taxi và cho xem địa chỉ trên màn hình",
+      "gender": "female",
+      "ja": "この住所までお願いします。",
+      "vi": "Cho tôi đến địa chỉ này ạ.",
+      "terms": [
+        "住所"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "place_made_onegaishimasu"
+    },
+    {
+      "id": "S-014-V13-009",
+      "group": "taxi",
+      "role_vi": "Hành khách hỏi tài xế xem đi đến khách sạn mất bao lâu",
+      "gender": "male",
+      "ja": "ホテルまで何分ぐらいかかりますか。",
+      "vi": "Đi đến khách sạn mất khoảng bao nhiêu phút ạ?",
+      "terms": [
+        "分",
+        "ぐらい",
+        "かかる"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "duration_gurai_kakarimasu"
+    },
+    {
+      "id": "S-014-V13-010",
+      "group": "taxi",
+      "role_vi": "Tài xế đề xuất đi lối khác khi đường đang tắc",
+      "gender": "male",
+      "ja": "別の道から行きましょうか。",
+      "vi": "Tôi đi đường khác nhé?",
+      "terms": [
+        "別"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "teian_mashou_ka"
+    },
+    {
+      "id": "S-014-V13-011",
+      "group": "taxi",
+      "role_vi": "Hành khách kiểm vẫn có thể xuống trước cửa chính nếu đi vòng",
+      "gender": "female",
+      "ja": "ホテルの正面で降りられますか。",
+      "vi": "Tôi xuống trước cửa chính khách sạn được không ạ?",
+      "terms": [
+        "正面",
+        "降りる"
+      ],
+      "scenes": [
+        "S008",
+        "S010"
+      ],
+      "pattern": "place_de_oriraremasu"
+    },
+    {
+      "id": "S-014-V13-012",
+      "group": "taxi",
+      "role_vi": "Hành khách chỉ mốc muốn tài xế dừng thay vì cửa sau",
+      "gender": "male",
+      "ja": "あの青い看板の前で止めてください。",
+      "vi": "Anh dừng xe trước biển xanh đằng kia giúp tôi ạ.",
+      "terms": [
+        "看板",
+        "止める"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "place_de_te_kudasai"
+    },
+    {
+      "id": "S-014-V13-013",
+      "group": "station",
+      "role_vi": "Hành khách tìm quầy hướng dẫn xe đường dài",
+      "gender": "female",
+      "ja": "長距離バスの案内所はどこですか。",
+      "vi": "Quầy thông tin xe khách đường dài ở đâu ạ?",
+      "terms": [
+        "長距離バス",
+        "案内所"
+      ],
+      "scenes": [
+        "S011",
+        "S013"
+      ],
+      "pattern": "noun_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-014-V13-014",
+      "group": "station",
+      "role_vi": "Hành khách hỏi nhân viên ga cách đến chỗ đón taxi",
+      "gender": "male",
+      "ja": "タクシー乗り場へはどちらですか。",
+      "vi": "Lối đến chỗ đón taxi ở phía nào ạ?",
+      "terms": [
+        "タクシー",
+        "乗り場"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "place_e_wa_dochira"
+    },
+    {
+      "id": "S-014-V13-015",
+      "group": "station",
+      "role_vi": "Hành khách muốn tìm tủ giữ hành lý trong lúc chờ",
+      "gender": "female",
+      "ja": "コインロッカーはどこですか。",
+      "vi": "Tủ gửi hành lý ở đâu ạ?",
+      "terms": [
+        "コインロッカー"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "noun_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-014-V13-016",
+      "group": "bus",
+      "role_vi": "Hành khách hỏi điểm đón đúng của chuyến xe đêm",
+      "gender": "female",
+      "ja": "夜行バスは何番乗り場ですか。",
+      "vi": "Xe khách đêm đón ở điểm số mấy ạ?",
+      "terms": [
+        "夜行バス",
+        "番",
+        "乗り場"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "noun_wa_nanban_noriba"
+    },
+    {
+      "id": "S-014-V13-017",
+      "group": "bus",
+      "role_vi": "Nhân viên nhắc hành khách điểm đón xe đêm đã thay đổi",
+      "gender": "male",
+      "ja": "今夜のバスは五番乗り場に変わりました。",
+      "vi": "Xe tối nay đã đổi sang điểm đón số năm ạ.",
+      "terms": [
+        "番",
+        "乗り場"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "place_ni_kawarimashita"
+    },
+    {
+      "id": "S-014-V13-018",
+      "group": "bus",
+      "role_vi": "Hành khách xách vali lớn hỏi chỗ để khi lên xe đêm",
+      "gender": "male",
+      "ja": "大きいスーツケースはどこに置きますか。",
+      "vi": "Vali lớn thì tôi để ở đâu ạ?",
+      "terms": [
+        "大きい",
+        "スーツケース"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "doko_ni_okimasu"
+    },
+    {
+      "id": "S-014-V13-019",
+      "group": "bus",
+      "role_vi": "Hành khách hỏi tài xế giờ cần quay lại xe trong lúc nghỉ",
+      "gender": "female",
+      "ja": "何時までにバスに戻りますか。",
+      "vi": "Tôi phải quay lại xe chậm nhất lúc mấy giờ ạ?",
+      "terms": [
+        "戻る"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "nanjimadeni_verb_ka"
+    },
+    {
+      "id": "S-014-V13-020",
+      "group": "bus",
+      "role_vi": "Hành khách xác nhận có phải đã đến Sendai trước khi xuống",
+      "gender": "male",
+      "ja": "この停留所は仙台ですか。",
+      "vi": "Điểm dừng này là Sendai phải không ạ?",
+      "terms": [],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "place_wa_desu_ka"
+    },
+    {
+      "id": "S-014-V13-021",
+      "group": "phone",
+      "role_vi": "Người đổi sang xe buýt báo cho bạn mình sẽ đến muộn",
+      "gender": "female",
+      "ja": "バスに変えたから、着くのが少し遅くなるよ。",
+      "vi": "Tớ đổi sang xe buýt rồi nên sẽ đến muộn một chút nhé.",
+      "terms": [
+        "着く"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "kara_result_yo"
+    },
+    {
+      "id": "S-014-V13-022",
+      "group": "phone",
+      "role_vi": "Hành khách hẹn lại với bạn đang đón sẽ gặp ở cửa đông",
+      "gender": "male",
+      "ja": "駅の東口で会おうね。",
+      "vi": "Mình gặp nhau ở cửa đông nhà ga nhé.",
+      "terms": [
+        "東口"
+      ],
+      "scenes": [
+        "S015",
+        "S021"
+      ],
+      "pattern": "place_de_aou"
+    },
+    {
+      "id": "S-014-V13-023",
+      "group": "phone",
+      "role_vi": "Hành khách hứa gọi bạn đang đợi khi tới nơi",
+      "gender": "female",
+      "ja": "着いたら連絡するね。",
+      "vi": "Đến nơi tớ báo cậu nhé.",
+      "terms": [
+        "着く",
+        "連絡する"
+      ],
+      "scenes": [
+        "S015",
+        "S021"
+      ],
+      "pattern": "tara_verb_ne"
+    }
+  ]
+}

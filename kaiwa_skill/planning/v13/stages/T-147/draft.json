@@ -1,0 +1,357 @@
+{
+  "code": "T-147",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b9c09e972c8003ea990d508bec1d36fa3a1d8e57ca4716d82c76a95657645582",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "train": "Xin người đứng gần giúp ngay trên tàu",
+    "station": "Nói cần gì khi xuống tàu hoặc ở gần lối ra",
+    "describe": "Mô tả bằng mốc mình nhớ và phần mình thấy",
+    "street": "Nhờ giúp khi thấy bị đi theo sau khi rời ga",
+    "witness": "Hỏi người cần giúp muốn gì và chỉ kể điều mình thấy"
+  },
+  "items": [
+    {
+      "id": "T-147-V13-001",
+      "group": "train",
+      "role_vi": "Hành khách đang xin giúp trên tàu",
+      "gender": "female",
+      "ja": "すみません、私の隣に立ってください。",
+      "vi": "Xin chị đứng cạnh tôi với.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "request_immediate_presence"
+    },
+    {
+      "id": "T-147-V13-002",
+      "group": "train",
+      "role_vi": "Hành khách đang xin giúp trên tàu",
+      "gender": "female",
+      "ja": "体を触られているので、助けてください。",
+      "vi": "Có người đang sờ vào người tôi, xin anh giúp tôi với.",
+      "terms": [
+        "触る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "report_unwanted_touch"
+    },
+    {
+      "id": "T-147-V13-003",
+      "group": "train",
+      "role_vi": "Hành khách đang xin giúp trên tàu",
+      "gender": "female",
+      "ja": "次の駅まで、そばにいてもらえますか。",
+      "vi": "Anh có thể ở cạnh tôi tới ga sau được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S017"
+      ],
+      "pattern": "request_immediate_presence"
+    },
+    {
+      "id": "T-147-V13-004",
+      "group": "train",
+      "role_vi": "Hành khách đang xin giúp trên tàu",
+      "gender": "female",
+      "ja": "ドアの近くに移動したあとも、同じところを何度か触られました。",
+      "vi": "Sau khi tôi nhích về phía cửa, vẫn có người sờ vào cùng một chỗ mấy lần.",
+      "terms": [
+        "移動する",
+        "触る"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "report_repeated_after_moving"
+    },
+    {
+      "id": "T-147-V13-005",
+      "group": "train",
+      "role_vi": "Hành khách đang xin giúp trên tàu",
+      "gender": "female",
+      "ja": "触った人の顔は見ていませんが、次の駅で一緒に降りてもらえますか。",
+      "vi": "Tôi không thấy mặt người chạm vào tôi, anh xuống cùng tôi ở ga tới được không ạ?",
+      "terms": [
+        "触る"
+      ],
+      "scenes": [
+        "S003",
+        "S018"
+      ],
+      "pattern": "ask_for_accompaniment"
+    },
+    {
+      "id": "T-147-V13-006",
+      "group": "station",
+      "role_vi": "Hành khách đang xin giúp trên tàu",
+      "gender": "female",
+      "ja": "一人で説明するのは難しいので、改札の係員さんの所まで来てもらえますか。",
+      "vi": "Tôi khó tự giải thích một mình, anh đi cùng tôi tới chỗ nhân viên cổng soát vé được không ạ?",
+      "terms": [
+        "改札",
+        "係員"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "ask_for_accompaniment"
+    },
+    {
+      "id": "T-147-V13-007",
+      "group": "station",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "female",
+      "ja": "改札を出たら、車内で見た人がまた後ろにいたので、ここで待ってもいいですか。",
+      "vi": "Ra khỏi cổng soát vé, tôi lại thấy người tôi đã thấy trong toa đi phía sau. Tôi có thể đợi ở đây được không ạ?",
+      "terms": [
+        "改札",
+        "車内"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "ask_to_wait_with_staff"
+    },
+    {
+      "id": "T-147-V13-008",
+      "group": "station",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "female",
+      "ja": "南口の階段の下でさっき見ましたが、今どこにいるかは分かりません。",
+      "vi": "Lúc nãy tôi thấy họ dưới chân cầu thang lối ra phía nam, còn bây giờ họ ở đâu thì tôi không biết.",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "state_last_seen_location"
+    },
+    {
+      "id": "T-147-V13-009",
+      "group": "station",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "female",
+      "ja": "私についてきた人が今も南口の外にいるので、ここから警察に電話してもらえますか。",
+      "vi": "Người đi theo tôi vẫn ở ngoài lối ra phía nam, anh có thể gọi cảnh sát từ đây giúp tôi được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "report_current_location_request"
+    },
+    {
+      "id": "T-147-V13-010",
+      "group": "station",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "female",
+      "ja": "待ち合わせではありませんし、行き先を知られたくないので、今は駅員さんのそばにいたいです。",
+      "vi": "Tôi không hẹn gặp người đó và không muốn họ biết tôi đi đâu, giờ tôi muốn ở cạnh nhân viên ga ạ.",
+      "terms": [
+        "行き先",
+        "駅員"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "correct_pickup_misunderstanding"
+    },
+    {
+      "id": "T-147-V13-011",
+      "group": "describe",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "female",
+      "ja": "何号車かは覚えていませんが、降りたドアの前にエスカレーターがありました。",
+      "vi": "Tôi không nhớ toa số mấy, nhưng ngay trước cửa tôi bước xuống có thang cuốn.",
+      "terms": [
+        "～号車",
+        "エスカレーター"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "use_landmark_when_detail_missing"
+    },
+    {
+      "id": "T-147-V13-012",
+      "group": "describe",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "female",
+      "ja": "車内で体を触られましたが、近くにいた人を最後に見たのはホームです。",
+      "vi": "Tôi bị chạm vào người trong toa tàu. Còn người đứng gần tôi trong toa, lần cuối tôi thấy họ là trên sân ga.",
+      "terms": [
+        "触る",
+        "車内",
+        "ホーム"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "separate_incident_and_sighting"
+    },
+    {
+      "id": "T-147-V13-013",
+      "group": "describe",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "male",
+      "ja": "見えたのは濃い色の上着と斜めがけのバッグで、顔は見えませんでした。",
+      "vi": "Tôi thấy áo khoác màu sẫm và túi đeo chéo, còn khuôn mặt thì tôi không nhìn thấy.",
+      "terms": [
+        "斜めがけ"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "state_visible_features_only"
+    },
+    {
+      "id": "T-147-V13-014",
+      "group": "describe",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "female",
+      "ja": "正確な時刻は分かりませんが、触られたときは青葉駅に着く前の車内放送が聞こえました。",
+      "vi": "Tôi không biết giờ chính xác, nhưng lúc bị chạm vào người, tôi nghe loa trong toa báo sắp tới ga Aoba.",
+      "terms": [
+        "時刻",
+        "触る",
+        "車内放送"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "use_landmark_when_detail_missing"
+    },
+    {
+      "id": "T-147-V13-015",
+      "group": "street",
+      "role_vi": "Người đang xin giúp trong cửa hàng",
+      "gender": "female",
+      "ja": "駅を出て二度曲がっても同じ人が後ろにいたので、ここにいさせてください。",
+      "vi": "Tôi ra khỏi ga, rẽ hai lần mà vẫn thấy cùng một người ở phía sau, xin cho tôi ở lại đây.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "ask_to_stay_near_help"
+    },
+    {
+      "id": "T-147-V13-016",
+      "group": "street",
+      "role_vi": "Người đang xin giúp trong cửa hàng",
+      "gender": "female",
+      "ja": "さっきの人が店の外にいるので、外から見えにくい所で話せますか。",
+      "vi": "Người lúc nãy đang ở ngoài cửa hàng, mình nói chuyện ở chỗ từ ngoài khó nhìn thấy được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "ask_for_private_position"
+    },
+    {
+      "id": "T-147-V13-017",
+      "group": "street",
+      "role_vi": "Người đang xin giúp trong cửa hàng",
+      "gender": "female",
+      "ja": "知らない番号から電話が来ていますが、出たくないので、お店の電話で家族に連絡できますか。",
+      "vi": "Có số lạ đang gọi mà tôi không muốn nghe, tôi có thể dùng điện thoại cửa hàng gọi người nhà được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "request_alternative_phone"
+    },
+    {
+      "id": "T-147-V13-018",
+      "group": "street",
+      "role_vi": "Hành khách nói với nhân viên ga",
+      "gender": "female",
+      "ja": "昨日と似た上着とバッグを見ましたが、顔は見ていないので同じ人かどうかは分かりません。",
+      "vi": "Tôi thấy áo khoác và túi giống hôm qua, nhưng không thấy mặt nên chưa biết có phải cùng một người không.",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "avoid_unverified_identification"
+    },
+    {
+      "id": "T-147-V13-019",
+      "group": "witness",
+      "role_vi": "Hành khách muốn giúp người bên cạnh",
+      "gender": "female",
+      "ja": "そばに立つのと駅員さんを呼ぶのと、今はどちらがいいですか。",
+      "vi": "Lúc này anh muốn tôi đứng cạnh hay gọi nhân viên ga ạ?",
+      "terms": [
+        "駅員"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "offer_choice_of_help"
+    },
+    {
+      "id": "T-147-V13-020",
+      "group": "witness",
+      "role_vi": "Hành khách muốn giúp người bên cạnh",
+      "gender": "female",
+      "ja": "次の駅で離れたら、降りたドアの先にある柱の横で会いませんか。",
+      "vi": "Nếu xuống ga tới mà mình bị tách nhau, mình gặp bên cột ngay phía trước cửa toa mình vừa xuống nhé?",
+      "terms": [
+        "離れる",
+        "柱"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "agree_simple_meeting_point"
+    },
+    {
+      "id": "T-147-V13-021",
+      "group": "witness",
+      "role_vi": "Hành khách đang xin giúp trên tàu",
+      "gender": "male",
+      "ja": "今は触らずに、近くに立ってもらえますか。",
+      "vi": "Lúc này chị đứng gần tôi thôi, đừng chạm vào tôi được không ạ?",
+      "terms": [
+        "触る"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "ask_support_without_contact"
+    },
+    {
+      "id": "T-147-V13-022",
+      "group": "witness",
+      "role_vi": "Người đi cùng kể cho nhân viên ga",
+      "gender": "female",
+      "ja": "ドアの近くでその方が人から離れようとしたのは見ましたが、誰かが体に触れるところは見ていません。",
+      "vi": "Gần cửa, tôi thấy anh ấy cố nhích ra để giữ khoảng cách với những người xung quanh, nhưng tôi không thấy có ai chạm vào người anh ấy.",
+      "terms": [
+        "離れる",
+        "触れる"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "limit_to_firsthand"
+    },
+    {
+      "id": "T-147-V13-023",
+      "group": "witness",
+      "role_vi": "Người đi cùng kể cho nhân viên ga",
+      "gender": "female",
+      "ja": "詳しいことはご本人が自分で話したいそうなので、私からは見たことだけお伝えします。",
+      "vi": "Anh ấy muốn tự kể chi tiết, nên tôi chỉ nói phần tôi tận mắt thấy ạ.",
+      "terms": [],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "leave_details_to_person_affected"
+    }
+  ]
+}

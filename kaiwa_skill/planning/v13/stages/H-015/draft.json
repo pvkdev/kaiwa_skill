@@ -1,0 +1,391 @@
+{
+  "code": "H-015",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "fb39eac15e196a3bfeb3ff1ce93f1dd981d8ff706307e1087c3549730b3087a4",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "change": "Tìm đúng phần khách muốn thay đổi",
+    "impact": "Làm rõ việc phát sinh và mốc có ước tính",
+    "options": "Thương lượng giữa phạm vi và thời hạn",
+    "approve": "Phân biệt đề xuất, phạm vi duyệt và ngày bắt đầu",
+    "execute": "Cập nhật chỉ dẫn và tiến độ sau khi đổi",
+    "rollback": "Xác nhận phần khách muốn rút và tác động"
+  },
+  "items": [
+    {
+      "id": "H-015-V13-001",
+      "group": "change",
+      "role_vi": "Đầu mối hỏi lại khách về việc đổi cách trình bày",
+      "gender": "male",
+      "ja": "変更したいのは、報告の見せ方ですか。",
+      "vi": "Chị muốn đổi cách trình bày báo cáo phải không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "変更したいのは、～ですか"
+    },
+    {
+      "id": "H-015-V13-002",
+      "group": "change",
+      "role_vi": "Khách nói kết quả cần đạt vẫn như cũ",
+      "gender": "female",
+      "ja": "目的は今までどおりで、部署ごとの違いを一枚で見たいです。",
+      "vi": "Mục tiêu vẫn như cũ, tôi muốn xem sự khác nhau giữa các bộ phận trên cùng một trang ạ.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～は今までどおりで、～たいです"
+    },
+    {
+      "id": "H-015-V13-003",
+      "group": "change",
+      "role_vi": "Đầu mối hỏi rõ ai được xem nội dung nào",
+      "gender": "female",
+      "ja": "閲覧範囲を広げるとしたら、どの部署がどの資料を見る想定でしょうか。",
+      "vi": "Nếu mở rộng phạm vi xem, bên anh dự kiến bộ phận nào sẽ xem tài liệu nào ạ?",
+      "terms": [
+        "閲覧範囲"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～としたら、どの～がどの～を～でしょうか"
+    },
+    {
+      "id": "H-015-V13-004",
+      "group": "change",
+      "role_vi": "Đầu mối đối chiếu yêu cầu hiện tại với phần thêm",
+      "gender": "male",
+      "ja": "今の要件は企画部内で共有するところまでですので、営業部の閲覧は追加の設定が必要になります。",
+      "vi": "Yêu cầu hiện tại chỉ là chia sẻ trong bộ phận kế hoạch, nên để kinh doanh cũng xem được thì phải cấu hình thêm ạ.",
+      "terms": [
+        "要件",
+        "設定"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "～までですので、～が必要になります"
+    },
+    {
+      "id": "H-015-V13-005",
+      "group": "change",
+      "role_vi": "Đầu mối hỏi thời điểm thực sự cần phần thay đổi",
+      "gender": "female",
+      "ja": "営業部にも資料を見せたいのは次の会議のためですか、それとも今後の運用のためですか。",
+      "vi": "Bên anh muốn bộ phận kinh doanh cũng xem được tài liệu vì cuộc họp sắp tới, hay để dùng lâu dài ạ?",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～のためですか、それとも～のためですか"
+    },
+    {
+      "id": "H-015-V13-006",
+      "group": "impact",
+      "role_vi": "Đầu mối báo phần việc phát sinh sau khi hỏi kỹ thuật",
+      "gender": "male",
+      "ja": "営業部に閲覧権限を付けると、権限の設定だけでなく、画面の確認作業も増えます。",
+      "vi": "Nếu cấp quyền xem cho bộ phận kinh doanh, bên tôi phải cấu hình quyền và làm thêm bước kiểm tra màn hình ạ.",
+      "terms": [
+        "閲覧権限",
+        "設定"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～だけでなく、～も増えます"
+    },
+    {
+      "id": "H-015-V13-007",
+      "group": "impact",
+      "role_vi": "Đầu mối hỏi kỹ thuật hai mốc ứng với hai phạm vi",
+      "gender": "male",
+      "ja": "六月二十日までに確認できる範囲と、営業部まで含めた場合の目安を教えていただけますか。",
+      "vi": "Chị cho tôi biết đến ngày 20 tháng Sáu có thể kiểm được phần nào, và dự kiến khi nào kiểm được cả phần kinh doanh nhé?",
+      "terms": [
+        "目安"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～と、～を教えていただけますか"
+    },
+    {
+      "id": "H-015-V13-008",
+      "group": "impact",
+      "role_vi": "Chuyên viên kỹ thuật nêu điều kiện để tính giờ công",
+      "gender": "female",
+      "ja": "対象資料の種類が分かれば、作業を洗い出して追加工数の目安を出せます。",
+      "vi": "Biết các loại tài liệu nằm trong phạm vi rồi, tôi có thể liệt kê các việc cần làm và ước tính giờ công phát sinh.",
+      "terms": [
+        "洗い出す",
+        "追加工数",
+        "目安"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "～が分かれば、～を出せます"
+    },
+    {
+      "id": "H-015-V13-009",
+      "group": "impact",
+      "role_vi": "Đầu mối báo khách thời điểm có ước tính và giá",
+      "gender": "male",
+      "ja": "追加の作業量は明後日までにお伝えできますが、追加費用は社内で確認してからお返事します。",
+      "vi": "Chậm nhất ngày kia tôi có thể báo khối lượng việc phát sinh, còn phần chi phí thêm thì tôi sẽ hỏi nội bộ rồi phản hồi ạ.",
+      "terms": [
+        "作業量",
+        "追加費用"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～はお伝えできますが、～は確認してからお返事します"
+    },
+    {
+      "id": "H-015-V13-010",
+      "group": "options",
+      "role_vi": "Đầu mối đưa hai lựa chọn với đánh đổi rõ ràng",
+      "gender": "female",
+      "ja": "六月二十日を守るなら企画部内まで、営業部も対象にするなら確認日を後ろ倒しにする、という二つの選択肢があります。",
+      "vi": "Mình có thể giữ ngày 20 tháng Sáu và chỉ làm trong bộ phận kế hoạch, hoặc thêm bộ phận kinh doanh và lùi ngày kiểm tra ạ.",
+      "terms": [
+        "後ろ倒し",
+        "選択肢"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～なら～、～なら～という選択肢があります"
+    },
+    {
+      "id": "H-015-V13-011",
+      "group": "options",
+      "role_vi": "Khách nêu chức năng bắt buộc phải có đúng hạn",
+      "gender": "female",
+      "ja": "六月二十日までに企画部で最新版を見られることは、必須の条件です。",
+      "vi": "Bộ phận kế hoạch phải xem được bản mới nhất chậm nhất vào ngày 20 tháng Sáu, đó là điều kiện bắt buộc ạ.",
+      "terms": [
+        "必須"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～ことは、必須の条件です"
+    },
+    {
+      "id": "H-015-V13-012",
+      "group": "options",
+      "role_vi": "Đầu mối hỏi điều không thể thay đổi khi cả hai phương án vướng",
+      "gender": "male",
+      "ja": "確認日と両部署での利用のうち、絶対に外せないのはどちらでしょうか。",
+      "vi": "Giữa ngày kiểm tra và việc cả hai bộ phận đều sử dụng được, điều nào nhất định phải giữ ạ?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～のうち、絶対に外せないのはどちらでしょうか"
+    },
+    {
+      "id": "H-015-V13-013",
+      "group": "options",
+      "role_vi": "Đầu mối đề xuất chia giai đoạn theo ưu tiên của khách",
+      "gender": "female",
+      "ja": "会議の日程を優先するなら、当日は画面共有で対応し、営業部の閲覧権限は次の段階で検討してはいかがでしょうか。",
+      "vi": "Nếu ưu tiên giữ lịch họp, hôm đó mình dùng cách chia sẻ màn hình, còn quyền xem của bộ phận kinh doanh để giai đoạn sau xem xét, anh thấy sao ạ?",
+      "terms": [
+        "画面共有",
+        "閲覧権限"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "～を優先するなら、～してはいかがでしょうか"
+    },
+    {
+      "id": "H-015-V13-014",
+      "group": "approve",
+      "role_vi": "Đầu mối hỏi người có quyền duyệt thay đổi",
+      "gender": "female",
+      "ja": "閲覧範囲の変更は、どなたの承認をいただければ正式に進められますか。",
+      "vi": "Thay đổi phạm vi xem cần ai phê duyệt thì mới có thể chính thức tiến hành ạ?",
+      "terms": [
+        "閲覧範囲"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "どなたの承認をいただければ～ますか"
+    },
+    {
+      "id": "H-015-V13-015",
+      "group": "approve",
+      "role_vi": "Đầu mối hẹn hỏi lại sau buổi họp nội bộ của khách",
+      "gender": "male",
+      "ja": "水曜の会議が終わりましたら、木曜に変更案の承認状況を伺ってもよろしいでしょうか。",
+      "vi": "Sau khi bên chị họp xong vào thứ Tư, thứ Năm tôi xin hỏi phương án thay đổi đã được duyệt chưa, được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～が終わりましたら、～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-015-V13-016",
+      "group": "approve",
+      "role_vi": "Đầu mối kiểm cách hiểu khi đồng nghiệp tưởng khách đã duyệt",
+      "gender": "female",
+      "ja": "社内では承認済みと受け取った者がいましたが、営業部の閲覧はまだ検討案の段階でしょうか。",
+      "vi": "Bên tôi có người hiểu là đã được duyệt, việc cho bộ phận kinh doanh xem hiện vẫn là phương án để cân nhắc phải không ạ?",
+      "terms": [
+        "承認済み",
+        "検討案"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～と受け取った者がいましたが、～はまだ～の段階でしょうか"
+    },
+    {
+      "id": "H-015-V13-017",
+      "group": "approve",
+      "role_vi": "Đầu mối đọc lại phạm vi sau khi có người duyệt",
+      "gender": "male",
+      "ja": "営業部には企画部の最新版の閲覧だけを許可し、編集権限は付けないという理解でよろしいでしょうか。",
+      "vi": "Tôi xin xác nhận, bộ phận kinh doanh chỉ được xem bản mới nhất của bộ phận kế hoạch và không có quyền chỉnh sửa, đúng không ạ?",
+      "terms": [
+        "編集権限"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～という理解でよろしいでしょうか"
+    },
+    {
+      "id": "H-015-V13-018",
+      "group": "execute",
+      "role_vi": "Đầu mối chỉ dẫn việc nào tiếp tục và việc nào chờ",
+      "gender": "female",
+      "ja": "企画部内の共有は予定どおり進め、営業部向けの設定は開始日が決まるまでは着手しないでください。",
+      "vi": "Anh cứ tiếp tục phần chia sẻ trong bộ phận kế hoạch theo lịch, còn cấu hình cho bộ phận kinh doanh thì đợi chốt ngày bắt đầu rồi mới làm nhé.",
+      "terms": [
+        "設定",
+        "開始日",
+        "着手する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～は予定どおり進め、～までは着手しないでください"
+    },
+    {
+      "id": "H-015-V13-019",
+      "group": "execute",
+      "role_vi": "Đầu mối dừng việc theo bản chỉ dẫn cũ",
+      "gender": "male",
+      "ja": "旧版の指示どおり営業部に編集権限を付ける作業は、取りやめてください。",
+      "vi": "Chị dừng việc cấp quyền chỉnh sửa cho bộ phận kinh doanh theo chỉ dẫn bản cũ nhé.",
+      "terms": [
+        "旧版",
+        "編集権限",
+        "取りやめる"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～は取りやめてください"
+    },
+    {
+      "id": "H-015-V13-020",
+      "group": "execute",
+      "role_vi": "Đầu mối hỏi lịch cập nhật sau thay đổi",
+      "gender": "female",
+      "ja": "閲覧範囲を変更する件で、最初の進捗は金曜の午後にご報告してもよろしいでしょうか。",
+      "vi": "Về việc đổi phạm vi xem, chiều thứ Sáu tôi báo tiến độ lần đầu được không ạ?",
+      "terms": [
+        "閲覧範囲",
+        "進捗"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-015-V13-021",
+      "group": "execute",
+      "role_vi": "Đầu mối báo việc đã kiểm xong và điều chưa khởi động",
+      "gender": "male",
+      "ja": "影響範囲の確認は終わりましたが、費用と作業日が確定するまでは設定変更に着手しません。",
+      "vi": "Bên tôi đã kiểm tra xong phạm vi ảnh hưởng, nhưng sẽ đợi chốt chi phí và ngày làm rồi mới bắt đầu đổi cấu hình ạ.",
+      "terms": [
+        "影響範囲",
+        "確定する",
+        "設定",
+        "着手する"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～は終わりましたが、～までは着手しません"
+    },
+    {
+      "id": "H-015-V13-022",
+      "group": "rollback",
+      "role_vi": "Đầu mối xác nhận khách chỉ muốn bỏ phần phát sinh",
+      "gender": "female",
+      "ja": "企画部内の共有は続けて、営業部への閲覧権限の追加だけを取りやめたい、という理解でよろしいでしょうか。",
+      "vi": "Tôi hiểu là bên anh muốn tiếp tục chia sẻ trong bộ phận kế hoạch, chỉ bỏ phần cấp thêm quyền xem cho bộ phận kinh doanh, đúng không ạ?",
+      "terms": [
+        "閲覧権限",
+        "取りやめる"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "～という理解でよろしいでしょうか"
+    },
+    {
+      "id": "H-015-V13-023",
+      "group": "rollback",
+      "role_vi": "Đầu mối hẹn thời hạn trả lời tác động của việc rút yêu cầu",
+      "gender": "male",
+      "ja": "技術担当と作業状況を照合し、追加分を取りやめた場合の費用と日程への影響を明日の午後までにお伝えします。",
+      "vi": "Tôi sẽ đối chiếu với bên kỹ thuật xem phần việc đã làm tới đâu và chậm nhất chiều mai sẽ báo việc bỏ phần phát sinh ảnh hưởng thế nào đến chi phí và lịch ạ.",
+      "terms": [
+        "照合する",
+        "取りやめる"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～場合の～を～までにお伝えします"
+    },
+    {
+      "id": "H-015-V13-024",
+      "group": "rollback",
+      "role_vi": "Đầu mối báo xác nhận được gì khi chưa kịp tính lại",
+      "gender": "male",
+      "ja": "費用の再計算はまだですが、営業部向けの設定には着手していないので、企画部内の共有だけなら続けられます。",
+      "vi": "Chi phí vẫn chưa tính lại xong, nhưng bên tôi chưa cấu hình cho bộ phận kinh doanh nên có thể tiếp tục phần chia sẻ riêng trong bộ phận kế hoạch ạ.",
+      "terms": [
+        "設定",
+        "着手する"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～はまだですが、～だけなら続けられます"
+    }
+  ]
+}

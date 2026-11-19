@@ -1,0 +1,413 @@
+{
+  "code": "S-080",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "5bf11d5788a6fcd8d57961eed9864c9c0a3379684b907e9d4763e5e7fbab80fe",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "travel": "Ra khỏi nhà, báo trễ và đi tàu",
+    "shop": "Mua nguyên liệu và kiểm tiền đã tính",
+    "reschedule": "Đổi lịch hẹn và chọn việc khác",
+    "home": "Giải thích lúc về và hẹn trả đồ"
+  },
+  "items": [
+    {
+      "id": "S-080-V13-001",
+      "group": "travel",
+      "role_vi": "Cư dân hỏi hàng xóm buổi sáng",
+      "gender": "female",
+      "ja": "おはようございます、南の出口は閉まっていますか。",
+      "vi": "Chào anh, lối ra phía Nam đang đóng ạ?",
+      "terms": [
+        "おはようございます",
+        "出口",
+        "閉まる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "chào_và_hỏi"
+    },
+    {
+      "id": "S-080-V13-002",
+      "group": "travel",
+      "role_vi": "Hàng xóm chỉ lối ra",
+      "gender": "male",
+      "ja": "階段を下りたら、北の出口は左です。",
+      "vi": "Xuống cầu thang, lối ra phía Bắc ở bên trái ạ.",
+      "terms": [
+        "階段",
+        "出口",
+        "左"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "chỉ_mốc_rẽ"
+    },
+    {
+      "id": "S-080-V13-003",
+      "group": "travel",
+      "role_vi": "Bạn gọi báo sẽ đến muộn",
+      "gender": "female",
+      "ja": "ごめん、遠回りしたから、駅に着くのが十分くらい遅れそう。",
+      "vi": "Xin lỗi cậu, tớ phải đi vòng nên chắc sẽ đến ga muộn khoảng mười phút.",
+      "terms": [
+        "ごめん",
+        "遠回り",
+        "着く",
+        "～分",
+        "遅れる"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "báo_mức_trễ"
+    },
+    {
+      "id": "S-080-V13-004",
+      "group": "travel",
+      "role_vi": "Bạn đang đợi đổi chỗ gặp",
+      "gender": "male",
+      "ja": "改札の前じゃなくて、駅の本屋の隣のカフェで会おう。",
+      "vi": "Mình gặp ở quán cà phê cạnh hiệu sách trong ga nhé, không gặp ở cổng soát vé nữa.",
+      "terms": [
+        "改札"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "làm_rõ_chỗ_gặp_mới"
+    },
+    {
+      "id": "S-080-V13-005",
+      "group": "travel",
+      "role_vi": "Hành khách vừa lỡ tàu",
+      "gender": "female",
+      "ja": "中野行きに乗り遅れたんですが、次はどの電車に乗ればいいですか。",
+      "vi": "Tôi vừa lỡ chuyến đi Nakano, tôi nên đón chuyến nào tiếp theo ạ?",
+      "terms": [
+        "乗り遅れる",
+        "電車"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hỏi_bước_tiếp"
+    },
+    {
+      "id": "S-080-V13-006",
+      "group": "travel",
+      "role_vi": "Hành khách kiểm lại đường đi",
+      "gender": "female",
+      "ja": "この電車なら、乗り換えないで中野まで行けますか。",
+      "vi": "Đi tàu này thì tôi tới Nakano mà không cần đổi tàu được không ạ?",
+      "terms": [
+        "電車",
+        "乗り換える"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "kiểm_phải_đổi_tàu_không"
+    },
+    {
+      "id": "S-080-V13-007",
+      "group": "shop",
+      "role_vi": "Khách muốn mua cà rốt",
+      "gender": "female",
+      "ja": "にんじんは一本だけでも買えますか。",
+      "vi": "Tôi mua lẻ một củ cà rốt được không ạ?",
+      "terms": [
+        "にんじん",
+        "～本"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_mua_số_ít"
+    },
+    {
+      "id": "S-080-V13-008",
+      "group": "shop",
+      "role_vi": "Nhân viên siêu thị báo hết đồ",
+      "gender": "male",
+      "ja": "豆腐は売り切れですが、卵は棚にありますよ。",
+      "vi": "Đậu phụ đã hết, nhưng trên kệ vẫn còn trứng ạ.",
+      "terms": [
+        "豆腐",
+        "売り切れ",
+        "卵",
+        "棚"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "báo_hết_và_chỉ_món_khác"
+    },
+    {
+      "id": "S-080-V13-009",
+      "group": "shop",
+      "role_vi": "Khách đổi nguyên liệu món canh",
+      "gender": "female",
+      "ja": "豆腐がなかったので、今日は卵のスープを作ります。",
+      "vi": "Vì hết đậu phụ nên hôm nay tôi sẽ nấu canh trứng ạ.",
+      "terms": [
+        "豆腐",
+        "卵"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "đổi_món_vì_hết_nguyên_liệu"
+    },
+    {
+      "id": "S-080-V13-010",
+      "group": "shop",
+      "role_vi": "Khách báo tính thừa",
+      "gender": "female",
+      "ja": "卵は一パックだけ買いましたが、レシートでは二パックです。",
+      "vi": "Tôi chỉ mua một hộp trứng nhưng trên biên lai lại tính hai hộp ạ.",
+      "terms": [
+        "卵",
+        "～パック",
+        "レシート"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nêu_số_không_khớp"
+    },
+    {
+      "id": "S-080-V13-011",
+      "group": "shop",
+      "role_vi": "Nhân viên quầy hoàn phần tính thừa",
+      "gender": "male",
+      "ja": "卵一パック分の差額、百八十円をお返しします。",
+      "vi": "Tôi gửi lại chị một trăm tám mươi yên tiền chênh do tính thừa một hộp trứng ạ.",
+      "terms": [
+        "卵",
+        "～パック",
+        "差額",
+        "～円",
+        "返す"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "báo_số_tiền_hoàn"
+    },
+    {
+      "id": "S-080-V13-012",
+      "group": "reschedule",
+      "role_vi": "Khách gọi báo tiệm tóc",
+      "gender": "female",
+      "ja": "二時のカットを予約しているグエンですが、五分くらい遅れそうです。",
+      "vi": "Tôi là Nguyễn, có hẹn cắt tóc lúc hai giờ, chắc tôi đến muộn khoảng năm phút ạ.",
+      "terms": [
+        "予約する",
+        "～分",
+        "遅れる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "báo_mức_trễ"
+    },
+    {
+      "id": "S-080-V13-013",
+      "group": "reschedule",
+      "role_vi": "Nhân viên tiệm tóc báo thời gian có thể giữ",
+      "gender": "male",
+      "ja": "ご来店が二時十分まででしたら、お待ちできます。",
+      "vi": "Chúng tôi có thể đợi nếu chị tới chậm nhất lúc hai giờ mười ạ.",
+      "terms": [
+        "待つ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "nêu_mốc_có_thể_chờ"
+    },
+    {
+      "id": "S-080-V13-014",
+      "group": "reschedule",
+      "role_vi": "Khách biết không tới kịp",
+      "gender": "female",
+      "ja": "今日は間に合わないので、予約は明日の朝に変更できますか。",
+      "vi": "Hôm nay tôi không đến kịp, có thể đổi lịch hẹn sang sáng mai không ạ?",
+      "terms": [
+        "間に合う",
+        "予約する",
+        "明日",
+        "変更する"
+      ],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "xin_đổi_lịch"
+    },
+    {
+      "id": "S-080-V13-015",
+      "group": "reschedule",
+      "role_vi": "Nhân viên xác nhận lịch mới",
+      "gender": "male",
+      "ja": "美容院の予約は、明日の午前十一時に変更しました。",
+      "vi": "Tôi đã đổi lịch cắt tóc sang mười một giờ sáng mai cho chị ạ.",
+      "terms": [
+        "美容院",
+        "予約する",
+        "明日",
+        "変更する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "báo_lịch_đã_đổi"
+    },
+    {
+      "id": "S-080-V13-016",
+      "group": "reschedule",
+      "role_vi": "Bạn báo giờ trống sau khi đổi hẹn",
+      "gender": "female",
+      "ja": "美容院は明日になったから、今日は三時から会えるよ。",
+      "vi": "Lịch cắt tóc dời sang mai rồi, hôm nay tớ gặp cậu được từ ba giờ.",
+      "terms": [
+        "美容院",
+        "明日"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "báo_thời_gian_rảnh"
+    },
+    {
+      "id": "S-080-V13-017",
+      "group": "reschedule",
+      "role_vi": "Bạn chốt lại nơi gặp chiều nay",
+      "gender": "female",
+      "ja": "今日は三時に、本屋の向かいのカフェで待ってるね。",
+      "vi": "Hôm nay tớ đợi cậu lúc ba giờ ở quán cà phê đối diện hiệu sách nhé.",
+      "terms": [
+        "向かい",
+        "待つ"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "chốt_chỗ_mới"
+    },
+    {
+      "id": "S-080-V13-018",
+      "group": "home",
+      "role_vi": "Người về kể chuyện trong ngày",
+      "gender": "female",
+      "ja": "電車が遅れて、美容院の予約に間に合わなかったよ。",
+      "vi": "Tàu chậm nên tớ không kịp giờ hẹn cắt tóc.",
+      "terms": [
+        "電車",
+        "遅れる",
+        "美容院",
+        "予約する",
+        "間に合う"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "kể_hệ_quả_ngoài_dự_tính"
+    },
+    {
+      "id": "S-080-V13-019",
+      "group": "home",
+      "role_vi": "Người về muộn xin lỗi",
+      "gender": "female",
+      "ja": "七時に帰るって言ったのに、遅くなってごめんね。",
+      "vi": "Tớ nói bảy giờ sẽ về mà lại về muộn, xin lỗi cậu nhé.",
+      "terms": [
+        "帰る",
+        "ごめん"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "xin_lỗi_vì_không_đúng_hẹn"
+    },
+    {
+      "id": "S-080-V13-020",
+      "group": "home",
+      "role_vi": "Người ở cùng nói cách giúp bớt lo",
+      "gender": "male",
+      "ja": "帰るのが遅くなるときは、一言知らせてくれると安心するよ。",
+      "vi": "Khi nào về muộn, cậu báo tớ một câu thì tớ yên tâm hơn.",
+      "terms": [
+        "帰る",
+        "知らせる",
+        "安心する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "nói_cách_giúp_yên_tâm"
+    },
+    {
+      "id": "S-080-V13-021",
+      "group": "home",
+      "role_vi": "Người hỏi cần ô lúc nào",
+      "gender": "female",
+      "ja": "今朝借りた傘は、明日何時までに返せばいい？",
+      "vi": "Cái ô tớ mượn sáng nay, mai chậm nhất là mấy giờ tớ phải trả cậu?",
+      "terms": [
+        "今朝",
+        "借りる",
+        "傘",
+        "明日",
+        "何時",
+        "返す"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "hỏi_hạn_trả_đồ"
+    },
+    {
+      "id": "S-080-V13-022",
+      "group": "home",
+      "role_vi": "Người chốt lúc trả ô",
+      "gender": "female",
+      "ja": "借りた傘は、明日の朝八時に玄関で返すね。",
+      "vi": "Sáng mai tám giờ, tớ trả ô đã mượn ở cửa ra vào nhé.",
+      "terms": [
+        "借りる",
+        "傘",
+        "明日",
+        "玄関",
+        "返す"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "chốt_giờ_trả_đồ"
+    },
+    {
+      "id": "S-080-V13-023",
+      "group": "home",
+      "role_vi": "Người rủ đi chợ cuối tuần",
+      "gender": "male",
+      "ja": "今度の週末、パンの市に朝ご飯を買いに行かない？",
+      "vi": "Cuối tuần này, mình đi chợ bánh mì mua đồ ăn sáng nhé?",
+      "terms": [
+        "週末",
+        "朝ご飯"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "rủ_thử_việc_mới"
+    }
+  ]
+}

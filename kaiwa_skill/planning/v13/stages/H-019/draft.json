@@ -1,0 +1,374 @@
+{
+  "code": "H-019",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3fd9f89fb2b24f41664a8c55e054af6fd3b63f65dc8334331351ea632c241e95",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "open": "Mở buổi phỏng vấn và làm rõ vị trí",
+    "evidence": "Hỏi ứng viên đã làm gì và kết quả ra sao",
+    "learning": "Hỏi cách học và hỗ trợ cần có",
+    "scenario": "Đặt tình huống để nghe cách ứng viên quyết định",
+    "questions": "Mời hỏi lại và chuyển đúng đầu mối",
+    "decision": "Báo bước tuyển tiếp và cập nhật kết quả"
+  },
+  "items": [
+    {
+      "id": "H-019-V13-001",
+      "group": "open",
+      "role_vi": "Người phỏng vấn báo thời lượng cho ứng viên",
+      "gender": "female",
+      "ja": "本日の面接は、全体で四十分ほどです。",
+      "vi": "Buổi phỏng vấn hôm nay kéo dài khoảng bốn mươi phút ạ.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～は、全体で～ほどです"
+    },
+    {
+      "id": "H-019-V13-002",
+      "group": "open",
+      "role_vi": "Người phỏng vấn nói ai tham gia và hỏi phần nào",
+      "gender": "male",
+      "ja": "面接の後半には、チーム長が加わって日々の連携について伺います。",
+      "vi": "Nửa sau buổi phỏng vấn, trưởng nhóm sẽ tham gia và hỏi chị về cách phối hợp hằng ngày ạ.",
+      "terms": [
+        "後半"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～には、～が加わって～について伺います"
+    },
+    {
+      "id": "H-019-V13-003",
+      "group": "open",
+      "role_vi": "Người phỏng vấn kiểm cách hiểu về vị trí",
+      "gender": "female",
+      "ja": "応募された職種について、今どのように理解されていますか。",
+      "vi": "Hiện anh hiểu thế nào về vị trí mình ứng tuyển ạ?",
+      "terms": [
+        "職種"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～について、今どのように理解されていますか"
+    },
+    {
+      "id": "H-019-V13-004",
+      "group": "open",
+      "role_vi": "Người phỏng vấn giải thích giới hạn trách nhiệm",
+      "gender": "male",
+      "ja": "この職種では返金をその場で決めるのではなく、確認した事実を担当チームに伝えて判断を仰ぎます。",
+      "vi": "Ở vị trí này, chị sẽ chuyển những sự việc đã xác minh cho nhóm phụ trách quyết định, chứ không tự quyết hoàn tiền tại chỗ ạ.",
+      "terms": [
+        "職種"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～のではなく、～て判断を仰ぎます"
+    },
+    {
+      "id": "H-019-V13-005",
+      "group": "evidence",
+      "role_vi": "Người phỏng vấn xin một ví dụ từ kinh nghiệm làm việc",
+      "gender": "female",
+      "ja": "前職でご自身が対応した問い合わせの具体例を、一つ教えていただけますか。",
+      "vi": "Anh có thể kể một yêu cầu của khách mà chính anh đã xử lý ở công việc trước không ạ?",
+      "terms": [
+        "前職",
+        "具体例"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～を、一つ教えていただけますか"
+    },
+    {
+      "id": "H-019-V13-006",
+      "group": "evidence",
+      "role_vi": "Người phỏng vấn hỏi phần ứng viên trực tiếp thực hiện",
+      "gender": "male",
+      "ja": "前職での問い合わせ対応について、ご自身の担当範囲を教えていただけますか。",
+      "vi": "Chị cho tôi biết mình trực tiếp phụ trách phần nào khi xử lý yêu cầu của khách được không ạ?",
+      "terms": [
+        "前職",
+        "担当範囲"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-019-V13-007",
+      "group": "evidence",
+      "role_vi": "Người phỏng vấn hỏi về hành động đằng sau kết quả nhóm",
+      "gender": "female",
+      "ja": "チーム全体で返信の遅れが減ったと伺いましたが、ご自身はどんな手順に変えましたか。",
+      "vi": "Tôi nghe nói cả nhóm đã giảm được việc phản hồi chậm, riêng anh đã thay đổi quy trình như thế nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～と伺いましたが、ご自身はどんな～に～ましたか"
+    },
+    {
+      "id": "H-019-V13-008",
+      "group": "evidence",
+      "role_vi": "Người phỏng vấn hỏi điều ứng viên thay đổi sau một sự cố",
+      "gender": "male",
+      "ja": "配送先を変更した件を踏まえて、その後の対応で何を見直しましたか。",
+      "vi": "Sau vụ đổi địa chỉ giao hàng, chị đã xem lại điều gì trong cách xử lý các lần sau ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～を踏まえて、～で何を見直しましたか"
+    },
+    {
+      "id": "H-019-V13-009",
+      "group": "learning",
+      "role_vi": "Người phỏng vấn hỏi kỹ năng từ ngành trước",
+      "gender": "female",
+      "ja": "店頭での実務経験のうち、オンラインでのお客様対応にも生かせそうなのは何ですか。",
+      "vi": "Trong kinh nghiệm làm việc ở cửa hàng, anh nghĩ mình có thể vận dụng điều gì khi hỗ trợ khách trực tuyến ạ?",
+      "terms": [
+        "実務経験"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～のうち、～にも生かせそうなのは何ですか"
+    },
+    {
+      "id": "H-019-V13-010",
+      "group": "learning",
+      "role_vi": "Người phỏng vấn hỏi cách học khi ứng viên chưa dùng công cụ",
+      "gender": "male",
+      "ja": "使ったことのないツールを業務で使うことになったら、まずどうやって覚えますか。",
+      "vi": "Nếu phải dùng một công cụ chưa từng sử dụng, chị bắt đầu học cách dùng thế nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～ことになったら、まずどうやって～ますか"
+    },
+    {
+      "id": "H-019-V13-011",
+      "group": "learning",
+      "role_vi": "Người phỏng vấn hỏi việc chuẩn bị quay lại công việc",
+      "gender": "female",
+      "ja": "問い合わせ対応の仕事を再開するにあたって、今取り組んでいることを教えていただけますか。",
+      "vi": "Anh cho tôi biết hiện anh đang chuẩn bị gì để quay lại công việc hỗ trợ khách được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-019-V13-012",
+      "group": "learning",
+      "role_vi": "Người phỏng vấn hỏi hỗ trợ hữu ích trong tháng đầu",
+      "gender": "male",
+      "ja": "入社された場合、最初の一か月はどんな支援があれば仕事を覚えやすいですか。",
+      "vi": "Nếu vào làm, trong tháng đầu chị cần được hỗ trợ thế nào để dễ nắm công việc hơn ạ?",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～場合、どんな～があれば～やすいですか"
+    },
+    {
+      "id": "H-019-V13-013",
+      "group": "scenario",
+      "role_vi": "Người phỏng vấn hỏi cách xử lý khi ưu tiên của khách thay đổi",
+      "gender": "female",
+      "ja": "お客様が途中で優先順位を変えて、早さより正確さを求めるようになったら、まず何を確認しますか。",
+      "vi": "Nếu giữa chừng khách đổi ưu tiên và coi trọng độ chính xác hơn tốc độ, trước hết anh sẽ kiểm tra điều gì ạ?",
+      "terms": [
+        "優先順位"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ようになったら、まず何を確認しますか"
+    },
+    {
+      "id": "H-019-V13-014",
+      "group": "scenario",
+      "role_vi": "Người phỏng vấn hỏi ai nhận thông tin khi vượt quyền",
+      "gender": "male",
+      "ja": "返金の判断がご自身の権限を超える場合、誰にどの情報を伝えますか。",
+      "vi": "Nếu quyết định hoàn tiền vượt quyền của chị, chị sẽ báo ai và cung cấp thông tin gì ạ?",
+      "terms": [
+        "権限"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～場合、誰にどの情報を伝えますか"
+    },
+    {
+      "id": "H-019-V13-015",
+      "group": "scenario",
+      "role_vi": "Người phỏng vấn nói rõ quan tâm cách suy nghĩ",
+      "gender": "female",
+      "ja": "お客様対応の事例では、何を確認してから判断し、どの時点で周りに相談するかを伺いたいです。",
+      "vi": "Với tình huống hỗ trợ khách, tôi muốn nghe anh sẽ xác minh gì trước khi quyết định và đến bước nào thì hỏi ý kiến người khác ạ.",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～の事例では、～かを伺いたいです"
+    },
+    {
+      "id": "H-019-V13-016",
+      "group": "scenario",
+      "role_vi": "Người phỏng vấn hỏi ứng viên còn cần dữ kiện nào",
+      "gender": "male",
+      "ja": "お客様に返事をする前に、あとどんな情報があれば判断しやすいですか。",
+      "vi": "Trước khi trả lời khách, chị cần thêm thông tin gì để dễ quyết cách xử lý hơn ạ?",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～前に、あとどんな～があれば～しやすいですか"
+    },
+    {
+      "id": "H-019-V13-017",
+      "group": "questions",
+      "role_vi": "Người phỏng vấn mời ứng viên hỏi về công việc hằng ngày",
+      "gender": "female",
+      "ja": "一日の問い合わせ件数や役割分担など、職務内容で気になる点はありますか。",
+      "vi": "Anh có băn khoăn gì về công việc, chẳng hạn số yêu cầu mỗi ngày hay cách chia phần việc, không ạ?",
+      "terms": [
+        "役割分担",
+        "職務内容"
+      ],
+      "scenes": [
+        "S017",
+        "S019"
+      ],
+      "pattern": "～で気になる点はありますか"
+    },
+    {
+      "id": "H-019-V13-018",
+      "group": "questions",
+      "role_vi": "Người phỏng vấn giải thích khi nào nhân viên làm độc lập",
+      "gender": "male",
+      "ja": "最初は先輩と一緒に対応し、独り立ちの時期は習熟度を見て決めます。",
+      "vi": "Lúc đầu chị sẽ xử lý cùng đồng nghiệp có kinh nghiệm, còn khi nào làm độc lập thì bên tôi xem mức độ thành thạo rồi quyết ạ.",
+      "terms": [
+        "独り立ち",
+        "習熟度"
+      ],
+      "scenes": [
+        "S017",
+        "S019"
+      ],
+      "pattern": "～は～し、～は～を見て決めます"
+    },
+    {
+      "id": "H-019-V13-019",
+      "group": "questions",
+      "role_vi": "Người phỏng vấn chuyển câu hỏi phụ cấp sang nhân sự",
+      "gender": "female",
+      "ja": "手当の内訳については、この面接のあとで人事の担当者からご案内します。",
+      "vi": "Về chi tiết các khoản phụ cấp, sau buổi phỏng vấn người phụ trách nhân sự sẽ giải thích cho anh ạ.",
+      "terms": [
+        "手当",
+        "内訳",
+        "人事"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～については、～からご案内します"
+    },
+    {
+      "id": "H-019-V13-020",
+      "group": "questions",
+      "role_vi": "Người phỏng vấn chưa thể hứa chuyện đổi bộ phận",
+      "gender": "male",
+      "ja": "配属後の異動については、今の面接の段階では確約できません。",
+      "vi": "Về việc chuyển bộ phận sau khi vào làm, ở bước phỏng vấn hiện tại tôi chưa thể cam kết ạ.",
+      "terms": [
+        "異動",
+        "確約する"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～については、～の段階では確約できません"
+    },
+    {
+      "id": "H-019-V13-021",
+      "group": "decision",
+      "role_vi": "Người phỏng vấn báo mốc dự kiến trả kết quả",
+      "gender": "female",
+      "ja": "チーム長との面談も踏まえて選考を進め、来週水曜までに人事からご連絡する予定です。",
+      "vi": "Bên tôi sẽ xem xét cả buổi trao đổi với trưởng nhóm và dự kiến bộ phận nhân sự sẽ liên hệ chậm nhất vào thứ Tư tuần sau ạ.",
+      "terms": [
+        "選考",
+        "人事"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～も踏まえて～、～する予定です"
+    },
+    {
+      "id": "H-019-V13-022",
+      "group": "decision",
+      "role_vi": "Người phỏng vấn sửa hiểu nhầm lời khen thành quyết định tuyển",
+      "gender": "male",
+      "ja": "具体例が分かりやすかったという感想で、採否についてはまだ決まっていません。",
+      "vi": "Tôi nhận xét là ví dụ của chị dễ hiểu, còn kết quả có tuyển hay không thì bên tôi chưa quyết ạ.",
+      "terms": [
+        "採否"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～という感想で、～はまだ決まっていません"
+    },
+    {
+      "id": "H-019-V13-023",
+      "group": "decision",
+      "role_vi": "Người phỏng vấn báo chậm và hẹn lần cập nhật mới",
+      "gender": "female",
+      "ja": "選考がまだ続いておりますので、金曜までに人事から途中の状況をご連絡します。",
+      "vi": "Quá trình xét tuyển vẫn đang tiếp tục nên chậm nhất thứ Sáu bộ phận nhân sự sẽ cập nhật tình hình cho anh ạ.",
+      "terms": [
+        "選考",
+        "人事"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～がまだ続いておりますので、～までに～します"
+    },
+    {
+      "id": "H-019-V13-024",
+      "group": "decision",
+      "role_vi": "Người phỏng vấn báo rõ quyết định tuyển người khác",
+      "gender": "male",
+      "ja": "選考の結果、今回は別の方を採用することになりました。",
+      "vi": "Sau khi xem xét, lần này chúng tôi quyết định tuyển người khác ạ.",
+      "terms": [
+        "選考"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～の結果、～ことになりました"
+    }
+  ]
+}

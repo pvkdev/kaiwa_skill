@@ -1,0 +1,346 @@
+{
+  "code": "S-049",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "330054be7ecd20bf66b0bded1b20ecf8909d46f2a03b11eb7b3d9161ecee0831",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "visit": "Gọi hỏi khám và tìm quầy tiếp nhận",
+    "symptoms": "Nói chỗ đau, thời điểm và triệu chứng",
+    "advice": "Hỏi lại lời dặn và việc bác sĩ sẽ làm",
+    "follow": "Báo thay đổi và hỏi chỗ khám tiếp"
+  },
+  "items": [
+    {
+      "id": "S-049-V13-001",
+      "group": "visit",
+      "role_vi": "Bệnh nhân gọi phòng khám",
+      "gender": "female",
+      "ja": "昨日から熱があるのですが、今日診てもらえますか。",
+      "vi": "Tôi bị sốt từ hôm qua, hôm nay phòng khám có thể khám giúp tôi không ạ?",
+      "terms": [
+        "昨日",
+        "熱がある",
+        "診る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-049-V13-002",
+      "group": "visit",
+      "role_vi": "Bệnh nhân hỏi quầy tiếp nhận",
+      "gender": "female",
+      "ja": "診察の受付はどちらですか。",
+      "vi": "Cho tôi hỏi quầy tiếp nhận khám bệnh ở đâu ạ?",
+      "terms": [
+        "診察",
+        "受付"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜はどちらですか"
+    },
+    {
+      "id": "S-049-V13-003",
+      "group": "visit",
+      "role_vi": "Bệnh nhân gọi phòng khám",
+      "gender": "female",
+      "ja": "今日予約できなければ、明日の午前は空いていますか。",
+      "vi": "Nếu hôm nay không đặt được lịch, sáng mai còn giờ nào trống không ạ?",
+      "terms": [
+        "予約する",
+        "午前",
+        "空く"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜なければ、〜は空いていますか"
+    },
+    {
+      "id": "S-049-V13-004",
+      "group": "visit",
+      "role_vi": "Bệnh nhân gọi phòng khám",
+      "gender": "female",
+      "ja": "予約した時間に間に合いそうにないので、もう少し遅い時間にできますか。",
+      "vi": "Có lẽ tôi không đến kịp giờ đã hẹn, tôi đổi sang giờ muộn hơn một chút được không ạ?",
+      "terms": [
+        "予約する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜ので、〜にできますか"
+    },
+    {
+      "id": "S-049-V13-005",
+      "group": "symptoms",
+      "role_vi": "Bệnh nhân nói với bác sĩ",
+      "gender": "female",
+      "ja": "お腹の右側が昨日の夜から痛いです。",
+      "vi": "Tôi đau bên phải bụng từ tối qua ạ.",
+      "terms": [
+        "お腹",
+        "右側",
+        "昨日",
+        "痛い"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜から痛いです"
+    },
+    {
+      "id": "S-049-V13-006",
+      "group": "symptoms",
+      "role_vi": "Bác sĩ đang hỏi bệnh",
+      "gender": "male",
+      "ja": "お腹のどこが痛いか、指で示してもらえますか。",
+      "vi": "Chị chỉ giúp tôi bằng ngón tay xem đau chỗ nào ở bụng được không?",
+      "terms": [
+        "お腹",
+        "痛い"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-049-V13-007",
+      "group": "symptoms",
+      "role_vi": "Bệnh nhân nói với bác sĩ",
+      "gender": "female",
+      "ja": "歩くとお腹が強く痛みますが、座ると少し楽です。",
+      "vi": "Đi lại thì bụng tôi đau nhiều, ngồi xuống thì đỡ một chút ạ.",
+      "terms": [
+        "お腹",
+        "楽"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜と〜ますが、〜と〜です"
+    },
+    {
+      "id": "S-049-V13-008",
+      "group": "symptoms",
+      "role_vi": "Bệnh nhân nói với bác sĩ",
+      "gender": "female",
+      "ja": "お腹が痛くなったのは今日ではなく、昨日の夜です。",
+      "vi": "Tôi bắt đầu đau bụng từ tối qua, không phải hôm nay ạ.",
+      "terms": [
+        "お腹",
+        "痛い",
+        "昨日"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-049-V13-009",
+      "group": "symptoms",
+      "role_vi": "Bệnh nhân nói với bác sĩ",
+      "gender": "female",
+      "ja": "食べると吐き気がします。",
+      "vi": "Cứ ăn vào là tôi thấy buồn nôn ạ.",
+      "terms": [
+        "吐き気"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜と〜がします"
+    },
+    {
+      "id": "S-049-V13-010",
+      "group": "symptoms",
+      "role_vi": "Bác sĩ đang hỏi bệnh",
+      "gender": "male",
+      "ja": "吐き気はいつから続いていますか。",
+      "vi": "Chị thấy buồn nôn kéo dài từ khi nào?",
+      "terms": [
+        "吐き気",
+        "続く"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "いつから〜ていますか"
+    },
+    {
+      "id": "S-049-V13-011",
+      "group": "advice",
+      "role_vi": "Bệnh nhân nói với bác sĩ",
+      "gender": "female",
+      "ja": "検査のことを、もう一度簡単な言葉で説明してもらえますか。",
+      "vi": "Bác sĩ giải thích lại về việc kiểm tra bằng từ dễ hiểu giúp tôi được không ạ?",
+      "terms": [
+        "検査",
+        "もう一度",
+        "簡単"
+      ],
+      "scenes": [
+        "S009",
+        "S012"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-049-V13-012",
+      "group": "advice",
+      "role_vi": "Bệnh nhân nói với bác sĩ",
+      "gender": "female",
+      "ja": "検査を受ける前に、何をするか聞いてもいいですか。",
+      "vi": "Trước khi làm kiểm tra, tôi có thể hỏi bác sĩ sẽ làm những gì không ạ?",
+      "terms": [
+        "検査",
+        "受ける"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜前に聞いてもいいですか"
+    },
+    {
+      "id": "S-049-V13-013",
+      "group": "advice",
+      "role_vi": "Bệnh nhân nói với bác sĩ",
+      "gender": "female",
+      "ja": "明日も同じように痛かったら、いつ電話すればいいですか。",
+      "vi": "Nếu ngày mai tôi vẫn đau như vậy, tôi nên gọi khi nào ạ?",
+      "terms": [
+        "痛い",
+        "電話する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "いつ電話すればいいですか"
+    },
+    {
+      "id": "S-049-V13-014",
+      "group": "advice",
+      "role_vi": "Bệnh nhân nói với bác sĩ",
+      "gender": "female",
+      "ja": "再診の日は、後で電話して予約してもいいですか。",
+      "vi": "Tôi gọi điện đặt lịch tái khám sau được không ạ?",
+      "terms": [
+        "再診",
+        "電話する",
+        "予約する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "後で〜てもいいですか"
+    },
+    {
+      "id": "S-049-V13-015",
+      "group": "follow",
+      "role_vi": "Bệnh nhân gọi phòng khám",
+      "gender": "female",
+      "ja": "診察のときにもらった紙に「再連絡」とありますが、いつ電話すればいいですか。",
+      "vi": "Giấy tôi nhận khi đi khám có ghi “liên hệ lại”, vậy tôi nên gọi khi nào ạ?",
+      "terms": [
+        "診察",
+        "電話する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "いつ電話すればいいですか"
+    },
+    {
+      "id": "S-049-V13-016",
+      "group": "follow",
+      "role_vi": "Nhân viên quầy phòng khám",
+      "gender": "male",
+      "ja": "医師に聞いてから、この番号に折り返します。",
+      "vi": "Tôi sẽ hỏi bác sĩ rồi gọi lại vào số này ạ.",
+      "terms": [
+        "医師",
+        "折り返す"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "〜てから折り返します"
+    },
+    {
+      "id": "S-049-V13-017",
+      "group": "follow",
+      "role_vi": "Bệnh nhân gọi phòng khám",
+      "gender": "female",
+      "ja": "診察後の指示について、何時ごろ折り返していただけますか。",
+      "vi": "Về lời dặn sau buổi khám, khoảng mấy giờ phòng khám gọi lại cho tôi được ạ?",
+      "terms": [
+        "診察",
+        "指示",
+        "折り返す"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "何時ごろ〜ていただけますか"
+    },
+    {
+      "id": "S-049-V13-018",
+      "group": "follow",
+      "role_vi": "Bệnh nhân đến tái khám",
+      "gender": "female",
+      "ja": "歩くときのお腹の痛みが、前の診察のときより弱くなりました。",
+      "vi": "Giờ đi lại tôi đỡ đau bụng hơn so với lần khám trước ạ.",
+      "terms": [
+        "お腹",
+        "診察",
+        "弱い"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "前より〜なりました"
+    },
+    {
+      "id": "S-049-V13-019",
+      "group": "follow",
+      "role_vi": "Bệnh nhân đến tái khám",
+      "gender": "female",
+      "ja": "次の受診先の名前を、もう一度教えていただけますか。",
+      "vi": "Anh nhắc lại giúp tôi tên nơi cần đến khám tiếp được không ạ?",
+      "terms": [
+        "受診先",
+        "もう一度"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "もう一度〜ていただけますか"
+    },
+    {
+      "id": "S-049-V13-020",
+      "group": "follow",
+      "role_vi": "Bệnh nhân đến tái khám",
+      "gender": "female",
+      "ja": "紹介された病院には、自分で電話して予約すればいいですか。",
+      "vi": "Tôi tự gọi đến bệnh viện được giới thiệu để đặt lịch là được, đúng không ạ?",
+      "terms": [
+        "病院",
+        "電話する",
+        "予約する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜すればいいですか"
+    }
+  ]
+}

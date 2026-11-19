@@ -1,0 +1,356 @@
+{
+  "code": "S-071",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "6b6368cb30696d78aebd9560abd2fda39e01863dc0ec03b3ff7e6c6eda1c2d15",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "story": "Mở chuyện và kể các việc theo thứ tự",
+    "detail": "Thêm chi tiết, mốc giờ và người làm",
+    "reaction": "Hỏi tiếp và đáp lại cái kết",
+    "next": "Đổi chủ đề hoặc hẹn kể tiếp"
+  },
+  "items": [
+    {
+      "id": "S-071-V13-001",
+      "group": "story",
+      "role_vi": "Bạn kể khi vừa đến lớp",
+      "gender": "female",
+      "ja": "今朝、学校に来る途中で、道の真ん中にアヒルがいたよ。",
+      "vi": "Sáng nay trên đường tới trường, tớ thấy một con vịt đứng giữa đường.",
+      "terms": [
+        "今朝",
+        "途中"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "mở_chuyện_theo_mốc"
+    },
+    {
+      "id": "S-071-V13-002",
+      "group": "story",
+      "role_vi": "Bạn kể cuối tuần",
+      "gender": "male",
+      "ja": "週末は市場で野菜を買ったよ。",
+      "vi": "Cuối tuần tớ ra chợ mua rau.",
+      "terms": [
+        "週末",
+        "市場"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "mở_chuyện_theo_mốc"
+    },
+    {
+      "id": "S-071-V13-003",
+      "group": "story",
+      "role_vi": "Bạn kể bước kế tiếp",
+      "gender": "female",
+      "ja": "市場で野菜を買ったあと、家でカレーを作ったよ。",
+      "vi": "Mua rau ở chợ xong, tớ về nhà nấu cà ri.",
+      "terms": [
+        "市場",
+        "作る"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "kể_trước_sau"
+    },
+    {
+      "id": "S-071-V13-004",
+      "group": "story",
+      "role_vi": "Bạn kể món lần đầu ăn",
+      "gender": "female",
+      "ja": "昨日、初めて黒ごまのパンを食べたよ。",
+      "vi": "Hôm qua tớ ăn bánh mì mè đen lần đầu.",
+      "terms": [
+        "昨日",
+        "初めて"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "kể_lần_đầu"
+    },
+    {
+      "id": "S-071-V13-005",
+      "group": "story",
+      "role_vi": "Bạn nói vị của món vừa thử",
+      "gender": "male",
+      "ja": "黒ごまのパンはあまり甘くなかったけど、香りがよかったよ。",
+      "vi": "Bánh mì mè đen không ngọt lắm nhưng thơm lắm.",
+      "terms": [
+        "甘い",
+        "香り"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "nói_cảm_nhận_cụ_thể"
+    },
+    {
+      "id": "S-071-V13-006",
+      "group": "story",
+      "role_vi": "Bạn kể chuyến đi cùng bạn",
+      "gender": "female",
+      "ja": "この前、友達と川越の町を散歩したよ。",
+      "vi": "Hôm trước tớ đi dạo quanh phố ở Kawagoe với một người bạn.",
+      "terms": [
+        "この前",
+        "友達",
+        "散歩する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "mở_chuyện_theo_mốc"
+    },
+    {
+      "id": "S-071-V13-007",
+      "group": "detail",
+      "role_vi": "Bạn sửa mốc lúc để quên ví",
+      "gender": "female",
+      "ja": "財布を取りに家に戻ったのは、今朝じゃなくて昨日の朝だよ。",
+      "vi": "Tớ quay về lấy ví vào sáng hôm qua, không phải sáng nay.",
+      "terms": [
+        "財布",
+        "戻る",
+        "今朝",
+        "昨日"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "sửa_mốc_thời_gian"
+    },
+    {
+      "id": "S-071-V13-008",
+      "group": "detail",
+      "role_vi": "Bạn nối hai mốc lúc quên ví",
+      "gender": "female",
+      "ja": "駅に着いてから財布がないと気づいて、家に戻ったよ。",
+      "vi": "Ra đến ga rồi tớ mới nhận ra không có ví nên quay về nhà.",
+      "terms": [
+        "財布",
+        "気づく",
+        "戻る"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "kể_trước_sau"
+    },
+    {
+      "id": "S-071-V13-009",
+      "group": "detail",
+      "role_vi": "Bạn kể vì sao đổi hoạt động",
+      "gender": "male",
+      "ja": "自転車で走っている途中で雨が降ってきて、美術館に入ったよ。",
+      "vi": "Tớ đang đạp xe thì trời đổ mưa nên vào bảo tàng mỹ thuật.",
+      "terms": [
+        "自転車",
+        "途中",
+        "美術館"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "nói_lý_do_đổi_kế_hoạch"
+    },
+    {
+      "id": "S-071-V13-010",
+      "group": "detail",
+      "role_vi": "Bạn mở chuyện về chuyến đi biển",
+      "gender": "female",
+      "ja": "海に行った話、食べ物と道の話のどっちから聞きたい？",
+      "vi": "Chuyện tớ đi biển ấy, cậu muốn nghe chuyện đồ ăn hay chuyện đường đi trước?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "hỏi_bạn_muốn_nghe_gì"
+    },
+    {
+      "id": "S-071-V13-011",
+      "group": "detail",
+      "role_vi": "Bạn kể cách về sau khi xịt lốp",
+      "gender": "male",
+      "ja": "自転車がパンクしたから、友達に車で迎えに来てもらったよ。",
+      "vi": "Xe đạp tớ bị xịt lốp nên tớ nhờ bạn lái xe đến đón.",
+      "terms": [
+        "自転車",
+        "パンクする",
+        "友達",
+        "迎える"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "kể_cách_xử_lý"
+    },
+    {
+      "id": "S-071-V13-012",
+      "group": "reaction",
+      "role_vi": "Bạn hỏi lúc mất dấu quyển sách",
+      "gender": "female",
+      "ja": "机の上に本がないって気づいたのは、何時ごろだった？",
+      "vi": "Cậu phát hiện cuốn sách không còn trên bàn vào khoảng mấy giờ?",
+      "terms": [
+        "気づく",
+        "何時",
+        "～ごろ"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "hỏi_mốc_thời_gian"
+    },
+    {
+      "id": "S-071-V13-013",
+      "group": "reaction",
+      "role_vi": "Bạn hỏi chi tiết tại hội chợ",
+      "gender": "male",
+      "ja": "雨の中で演奏していた人は、どんな楽器を使ってたの？",
+      "vi": "Người chơi nhạc giữa trời mưa dùng nhạc cụ gì thế?",
+      "terms": [
+        "演奏する",
+        "楽器"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hỏi_chi_tiết"
+    },
+    {
+      "id": "S-071-V13-014",
+      "group": "reaction",
+      "role_vi": "Bạn đính chính ai gọi cho trường",
+      "gender": "female",
+      "ja": "かばんを学校に忘れたのは私だけど、電話したのは妹だよ。",
+      "vi": "Tớ là người để quên túi ở trường, còn em gái tớ gọi điện tới trường ấy.",
+      "terms": [
+        "忘れる"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "sửa_ai_làm_gì"
+    },
+    {
+      "id": "S-071-V13-015",
+      "group": "reaction",
+      "role_vi": "Bạn hỏi tiếp về cái túi",
+      "gender": "male",
+      "ja": "妹さんが電話してくれたあと、かばんはいつ取りに行ったの？",
+      "vi": "Em gái cậu gọi điện giúp rồi, sau đó cậu đi lấy túi lúc nào?",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "hỏi_chi_tiết"
+    },
+    {
+      "id": "S-071-V13-016",
+      "group": "reaction",
+      "role_vi": "Bạn đáp khi chó được tìm thấy",
+      "gender": "female",
+      "ja": "犬が無事に見つかって、ほっとしたね。",
+      "vi": "May mà tìm được chú chó và nó không sao, cậu nhẹ cả người nhỉ.",
+      "terms": [
+        "無事",
+        "見つかる",
+        "ほっとする"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "đáp_theo_cái_kết"
+    },
+    {
+      "id": "S-071-V13-017",
+      "group": "reaction",
+      "role_vi": "Bạn hỏi kinh nghiệm tương tự",
+      "gender": "female",
+      "ja": "電車に傘を忘れたことはある？",
+      "vi": "Cậu từng để quên ô trên tàu chưa?",
+      "terms": [
+        "忘れる"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "hỏi_trải_nghiệm"
+    },
+    {
+      "id": "S-071-V13-018",
+      "group": "next",
+      "role_vi": "Bạn hẹn kể tiếp lúc nghỉ",
+      "gender": "male",
+      "ja": "自転車がパンクした話の続きは、昼休みに話すね。",
+      "vi": "Tới giờ nghỉ trưa tớ kể tiếp chuyện xe đạp bị xịt lốp nhé.",
+      "terms": [
+        "自転車",
+        "パンクする",
+        "続き"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "hẹn_kể_tiếp"
+    },
+    {
+      "id": "S-071-V13-019",
+      "group": "next",
+      "role_vi": "Bạn đổi giờ vì lần trước quá nóng",
+      "gender": "female",
+      "ja": "先週は昼に歩いて暑かったから、今週は朝に行くつもり。",
+      "vi": "Tuần trước tớ đi bộ lúc trưa thấy nóng quá nên tuần này tớ định đi buổi sáng.",
+      "terms": [
+        "先週",
+        "つもり"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "nói_lý_do_đổi_kế_hoạch"
+    },
+    {
+      "id": "S-071-V13-020",
+      "group": "next",
+      "role_vi": "Bạn tôn trọng chuyện riêng và chuyển sang đặt lịch",
+      "gender": "female",
+      "ja": "家のことは話さなくていいから、次に会える日だけ決めようか。",
+      "vi": "Chuyện nhà cậu không cần kể đâu, mình chỉ chốt hôm nào gặp lại nhé?",
+      "terms": [],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "đổi_chủ_đề_để_bạn_thoải_mái"
+    },
+    {
+      "id": "S-071-V13-021",
+      "group": "next",
+      "role_vi": "Bạn rủ cùng thử làm bánh",
+      "gender": "male",
+      "ja": "今度、初めての人向けのパン作りに一緒に行ってみない？",
+      "vi": "Hôm nào mình thử đi học làm bánh mì ở lớp cho người mới nhé?",
+      "terms": [
+        "今度",
+        "初めて",
+        "作る",
+        "一緒に"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "rủ_thử_cùng"
+    }
+  ]
+}

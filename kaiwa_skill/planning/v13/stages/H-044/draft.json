@@ -1,0 +1,405 @@
+{
+  "code": "H-044",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "e36396a9390e5ffb627f5770d9323a35f00cab9c6a61e98e5e4405a9a1d9b495",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "history": "Kể triệu chứng và làm rõ hồ sơ",
+    "options": "Hỏi từng cách điều trị ảnh hưởng ra sao",
+    "privacy": "Giới hạn việc chia sẻ và chọn người cùng nghe",
+    "choice": "Giữ quyền cân nhắc trước khi quyết",
+    "followup": "Hẹn hỏi tiếp và báo diễn biến mới"
+  },
+  "items": [
+    {
+      "id": "H-044-V13-001",
+      "group": "history",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "階段を下りるとき、右の膝が痛みます。",
+      "vi": "Tôi đau gối phải khi xuống cầu thang.",
+      "terms": [
+        "痛む"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "describe_symptom"
+    },
+    {
+      "id": "H-044-V13-002",
+      "group": "history",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "昨日の夕方から、膝が腫れています。",
+      "vi": "Đầu gối tôi bị sưng từ chiều hôm qua.",
+      "terms": [
+        "腫れる"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "symptom_since"
+    },
+    {
+      "id": "H-044-V13-003",
+      "group": "history",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "前回の検査結果を持ってきました。",
+      "vi": "Tôi có mang theo kết quả kiểm tra lần trước.",
+      "terms": [
+        "検査結果"
+      ],
+      "scenes": [
+        "S001",
+        "S004"
+      ],
+      "pattern": "state_available_information"
+    },
+    {
+      "id": "H-044-V13-004",
+      "group": "history",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "前に処方された薬の名前は、お薬手帳で確認してからお伝えしてもよろしいですか。",
+      "vi": "Tên thuốc được kê lần trước, tôi xem lại sổ theo dõi thuốc rồi báo bác sĩ được không ạ?",
+      "terms": [
+        "処方する",
+        "お薬手帳"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "after_check_permission"
+    },
+    {
+      "id": "H-044-V13-005",
+      "group": "history",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "前回は半月板損傷の疑いがあると言われただけですので、診断が確定したわけではありません。",
+      "vi": "Lần trước bác sĩ chỉ nói nghi tôi bị tổn thương sụn chêm, lúc đó vẫn chưa có chẩn đoán chắc chắn.",
+      "terms": [
+        "半月板損傷",
+        "疑い"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "wake_dewanai"
+    },
+    {
+      "id": "H-044-V13-006",
+      "group": "options",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "リハビリと関節内注射では、治療の目的はどう違うのでしょうか。",
+      "vi": "Tập phục hồi chức năng và tiêm vào khớp khác nhau thế nào về mục tiêu điều trị ạ?",
+      "terms": [
+        "リハビリ",
+        "関節内注射"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "compare_options"
+    },
+    {
+      "id": "H-044-V13-007",
+      "group": "options",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "male",
+      "ja": "一日中立って働くのですが、保存療法を選んだ場合、どのくらいの頻度で通院することになりますか。",
+      "vi": "Tôi phải đứng làm việc cả ngày, nếu chọn điều trị bảo tồn thì tôi sẽ phải đến cơ sở y tế bao lâu một lần ạ?",
+      "terms": [
+        "保存療法",
+        "通院する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "baai_question"
+    },
+    {
+      "id": "H-044-V13-008",
+      "group": "options",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "可動域が広がると、例えば階段を下りるときに、どんな違いが出るのでしょうか。",
+      "vi": "Nếu khớp cử động được rộng hơn, chẳng hạn khi xuống cầu thang tôi sẽ thấy khác thế nào ạ?",
+      "terms": [
+        "可動域"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "ask_everyday_example"
+    },
+    {
+      "id": "H-044-V13-009",
+      "group": "options",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "超音波検査で何が分かるのか、症状の記録を続けた場合と比べて教えていただけますか。",
+      "vi": "Bác sĩ có thể giải thích siêu âm sẽ cho biết điều gì so với việc tiếp tục ghi lại triệu chứng được không ạ?",
+      "terms": [
+        "超音波検査"
+      ],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "compare_options"
+    },
+    {
+      "id": "H-044-V13-010",
+      "group": "privacy",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "月経痛のことは、まず先生と二人でお話しできますか。",
+      "vi": "Về chuyện đau bụng kinh, trước hết tôi có thể nói riêng với bác sĩ được không ạ?",
+      "terms": [
+        "月経痛"
+      ],
+      "scenes": [
+        "S025",
+        "S026"
+      ],
+      "pattern": "ask_private"
+    },
+    {
+      "id": "H-044-V13-011",
+      "group": "privacy",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "兄に同席してもらうなら、通院の日程を説明するところからにしていただけますか。",
+      "vi": "Nếu mời anh trai tôi cùng nghe, xin bác sĩ để anh ấy vào từ phần giải thích lịch đi khám được không ạ?",
+      "terms": [
+        "同席する"
+      ],
+      "scenes": [
+        "S011",
+        "S022",
+        "S026"
+      ],
+      "pattern": "request_limited_scope"
+    },
+    {
+      "id": "H-044-V13-012",
+      "group": "privacy",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "家族以外の方に医療通訳をお願いできるか、確認していただけますか。",
+      "vi": "Bác sĩ có thể hỏi giúp xem có thể bố trí người phiên dịch y tế ngoài gia đình tôi không ạ?",
+      "terms": [
+        "医療通訳"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "ask_to_check"
+    },
+    {
+      "id": "H-044-V13-013",
+      "group": "privacy",
+      "role_vi": "Người bệnh nói với anh trai",
+      "gender": "female",
+      "ja": "気にかけてくれるのはありがたいんだけど、診察のことはまだ詳しく話したくないから、次の送迎だけ頼んでもいい？",
+      "vi": "Em biết anh lo cho em, nhưng em chưa muốn kể kỹ chuyện khám, nên lần tới em chỉ nhờ anh đưa đón được không?",
+      "terms": [
+        "送迎"
+      ],
+      "scenes": [
+        "S012",
+        "S015",
+        "S029"
+      ],
+      "pattern": "boundary_plus_request"
+    },
+    {
+      "id": "H-044-V13-014",
+      "group": "privacy",
+      "role_vi": "Bác sĩ nói với người bệnh",
+      "gender": "male",
+      "ja": "ご家族をお呼びする前に、どこまでお話ししてよいか、まずお聞きしますね。",
+      "vi": "Trước khi mời gia đình vào, tôi sẽ hỏi cô xem tôi có thể chia sẻ đến đâu nhé.",
+      "terms": [],
+      "scenes": [
+        "S011",
+        "S022",
+        "S026",
+        "S029"
+      ],
+      "pattern": "confirm_scope_first"
+    },
+    {
+      "id": "H-044-V13-015",
+      "group": "choice",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "注射を断ると決めたわけではなく、仕事にどう影響するかを聞いてから決めたいんです。",
+      "vi": "Tôi chưa quyết định từ chối tiêm, tôi muốn biết việc tiêm ảnh hưởng thế nào đến công việc rồi mới quyết ạ.",
+      "terms": [],
+      "scenes": [
+        "S009",
+        "S013",
+        "S021",
+        "S023"
+      ],
+      "pattern": "wake_dewanai"
+    },
+    {
+      "id": "H-044-V13-016",
+      "group": "choice",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "超音波検査に同意するかどうかは、検査の進め方を聞いてから決めてもよろしいですか。",
+      "vi": "Tôi có thể nghe bác sĩ giải thích cách làm siêu âm rồi mới quyết định có đồng ý hay không được không ạ?",
+      "terms": [
+        "超音波検査",
+        "同意する"
+      ],
+      "scenes": [
+        "S027",
+        "S028"
+      ],
+      "pattern": "after_check_permission"
+    },
+    {
+      "id": "H-044-V13-017",
+      "group": "choice",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "male",
+      "ja": "治療方針を決める前にセカンドオピニオンを受けたいのですが、こちらで用意していただける資料はありますか。",
+      "vi": "Trước khi quyết định hướng điều trị, tôi muốn xin ý kiến bác sĩ khác, ở đây có thể chuẩn bị giúp tôi tài liệu gì ạ?",
+      "terms": [
+        "治療方針",
+        "セカンドオピニオン"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "before_decision_request"
+    },
+    {
+      "id": "H-044-V13-018",
+      "group": "choice",
+      "role_vi": "Người bệnh nói với anh trai",
+      "gender": "female",
+      "ja": "私には処置も選択肢の一つだと聞こえたから、急ぐ必要があるのか、次の診察で一緒に聞こう。",
+      "vi": "Em nghe bác sĩ nói thủ thuật là một trong các lựa chọn, nên buổi khám tới hai anh em mình hỏi xem có cần làm sớm không nhé.",
+      "terms": [
+        "処置",
+        "選択肢"
+      ],
+      "scenes": [
+        "S014",
+        "S021"
+      ],
+      "pattern": "reconcile_interpretation"
+    },
+    {
+      "id": "H-044-V13-019",
+      "group": "choice",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "治療を受けるかどうかは私が決めますので、兄には通院の調整に必要なことだけお伝えください。",
+      "vi": "Việc có điều trị hay không tôi sẽ tự quyết, nên xin bác sĩ chỉ nói với anh tôi những gì cần để sắp lịch đi khám.",
+      "terms": [],
+      "scenes": [
+        "S022",
+        "S024",
+        "S029"
+      ],
+      "pattern": "request_limited_scope"
+    },
+    {
+      "id": "H-044-V13-020",
+      "group": "followup",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "リハビリの日程がずれた場合、先に再診して、初回に何をするか相談できますか。",
+      "vi": "Nếu lịch tập phục hồi bị dời thì tôi có thể tái khám trước để bàn xem buổi tập đầu sẽ làm gì được không ạ?",
+      "terms": [
+        "リハビリ",
+        "再診する"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "baai_question"
+    },
+    {
+      "id": "H-044-V13-021",
+      "group": "followup",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "昨日のリハビリのあとから膝が痛むので、今の負荷のままで続けてよいか相談したいです。",
+      "vi": "Từ sau buổi tập phục hồi hôm qua, đầu gối tôi bị đau, nên tôi muốn hỏi có thể tập tiếp ở mức hiện tại không ạ?",
+      "terms": [
+        "リハビリ",
+        "痛む",
+        "負荷"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "report_change_ask"
+    },
+    {
+      "id": "H-044-V13-022",
+      "group": "followup",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "検査を保留する間は、出血量のほかに何を記録すればいいですか。",
+      "vi": "Trong lúc chưa quyết định làm xét nghiệm, ngoài lượng máu ra tôi cần ghi lại gì nữa ạ?",
+      "terms": [
+        "保留する",
+        "出血量"
+      ],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "ask_monitoring"
+    },
+    {
+      "id": "H-044-V13-023",
+      "group": "followup",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "male",
+      "ja": "次の予約までに症状が悪化した場合、診療時間外はどちらに連絡すればいいですか。",
+      "vi": "Nếu triệu chứng nặng lên trước buổi hẹn tới, ngoài giờ khám tôi nên liên hệ ở đâu ạ?",
+      "terms": [
+        "診療時間外"
+      ],
+      "scenes": [
+        "S009",
+        "S019",
+        "S020",
+        "S028"
+      ],
+      "pattern": "baai_question"
+    },
+    {
+      "id": "H-044-V13-024",
+      "group": "followup",
+      "role_vi": "Người bệnh nói với bác sĩ",
+      "gender": "female",
+      "ja": "仕事への影響がまだよく分からないので、次の診察で検査結果を見ながら、説明の要点をもう一度確認させてください。",
+      "vi": "Tôi vẫn chưa rõ điều trị sẽ ảnh hưởng thế nào đến công việc, nên buổi khám tới tôi muốn cùng bác sĩ xem kết quả kiểm tra để xác nhận lại những điểm chính trong phần giải thích ạ.",
+      "terms": [
+        "検査結果",
+        "要点"
+      ],
+      "scenes": [
+        "S019",
+        "S023",
+        "S024"
+      ],
+      "pattern": "request_followup"
+    }
+  ]
+}

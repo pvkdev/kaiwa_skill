@@ -1,0 +1,413 @@
+{
+  "code": "S-012",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "f66db7f04c88d6e9f8140be605dfe21b9127ea78ed3ceea681163b0629190ef4",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "pass": "Mua vé tháng và xác nhận chặng",
+    "gate": "Trình bày sự cố ở cổng vé",
+    "lost": "Báo mất thẻ hoặc quên vé",
+    "change": "Đổi lộ trình đi làm",
+    "check": "Hỏi về khoản tiền bị trừ"
+  },
+  "items": [
+    {
+      "id": "S-012-V13-001",
+      "group": "pass",
+      "role_vi": "Hành khách hỏi mua vé tháng đi làm ở quầy",
+      "gender": "female",
+      "ja": "通勤定期券を買いたいです。",
+      "vi": "Tôi muốn mua vé tháng đi làm ạ.",
+      "terms": [
+        "通勤定期券",
+        "買う"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wo_kaitai"
+    },
+    {
+      "id": "S-012-V13-002",
+      "group": "pass",
+      "role_vi": "Người đi làm nói rõ hai ga mình đi hằng ngày",
+      "gender": "male",
+      "ja": "毎日、浅草から銀座まで通います。",
+      "vi": "Hằng ngày tôi đi từ Asakusa đến Ginza ạ.",
+      "terms": [
+        "毎日",
+        "通う"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "kara_made_kayoimasu"
+    },
+    {
+      "id": "S-012-V13-003",
+      "group": "pass",
+      "role_vi": "Người đi làm nói ngày bắt đầu muốn dùng vé",
+      "gender": "female",
+      "ja": "来週の月曜日から定期券を使いたいです。",
+      "vi": "Tôi muốn dùng vé tháng từ thứ Hai tuần sau ạ.",
+      "terms": [
+        "来週",
+        "定期券"
+      ],
+      "scenes": [
+        "S002",
+        "S005"
+      ],
+      "pattern": "time_kara_verb_tai"
+    },
+    {
+      "id": "S-012-V13-004",
+      "group": "pass",
+      "role_vi": "Nhân viên nhờ hành khách kiểm ngày bắt đầu trên màn hình trước khi thanh toán",
+      "gender": "male",
+      "ja": "画面で定期券の開始日を確認してください。",
+      "vi": "Chị kiểm tra ngày bắt đầu của vé tháng trên màn hình giúp tôi nhé.",
+      "terms": [
+        "定期券",
+        "開始日",
+        "確認する"
+      ],
+      "scenes": [
+        "S005",
+        "S020"
+      ],
+      "pattern": "detail_wo_kakunin_te"
+    },
+    {
+      "id": "S-012-V13-005",
+      "group": "pass",
+      "role_vi": "Khách chưa biết ngày đi làm xin quay lại mua vé sau",
+      "gender": "female",
+      "ja": "定期券はあとで買ってもいいですか。",
+      "vi": "Tôi quay lại mua vé tháng sau được không ạ?",
+      "terms": [
+        "定期券",
+        "買う"
+      ],
+      "scenes": [
+        "S004",
+        "S019"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-012-V13-006",
+      "group": "gate",
+      "role_vi": "Hành khách báo nhân viên thẻ không mở cổng vào",
+      "gender": "female",
+      "ja": "PASMOで改札に入れません。",
+      "vi": "Tôi dùng PASMO mà không vào được cổng soát vé ạ.",
+      "terms": [
+        "改札",
+        "入る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "card_de_potential_negative"
+    },
+    {
+      "id": "S-012-V13-007",
+      "group": "gate",
+      "role_vi": "Hành khách chưa ra được cổng nói cho nhân viên ga xuất phát",
+      "gender": "male",
+      "ja": "浅草から乗りました。",
+      "vi": "Tôi đã lên tàu ở ga Asakusa ạ.",
+      "terms": [
+        "乗る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "place_kara_norimashita"
+    },
+    {
+      "id": "S-012-V13-008",
+      "group": "gate",
+      "role_vi": "Hành khách báo đã nạp tiền ngay trước khi thẻ không qua cổng",
+      "gender": "female",
+      "ja": "カードにはさっきチャージしました。",
+      "vi": "Tôi vừa nạp tiền vào thẻ ạ.",
+      "terms": [
+        "カード",
+        "チャージする"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "sakki_verb_mashita"
+    },
+    {
+      "id": "S-012-V13-009",
+      "group": "gate",
+      "role_vi": "Hành khách nhờ nhân viên kiểm tra thẻ lại",
+      "gender": "male",
+      "ja": "カードをもう一度見てもらえますか。",
+      "vi": "Anh xem lại thẻ giúp tôi được không ạ?",
+      "terms": [
+        "カード",
+        "もう一度"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-012-V13-010",
+      "group": "gate",
+      "role_vi": "Hành khách hỏi phải trả thêm bao nhiêu khi đi quá chặng",
+      "gender": "female",
+      "ja": "追加でいくら払いますか。",
+      "vi": "Tôi cần trả thêm bao nhiêu ạ?",
+      "terms": [
+        "追加",
+        "いくら",
+        "払う"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "ikura_haraimasu_ka"
+    },
+    {
+      "id": "S-012-V13-011",
+      "group": "gate",
+      "role_vi": "Hành khách hỏi có thể xem chặng vé tháng ở đâu để tránh đi quá",
+      "gender": "male",
+      "ja": "定期券の区間はどこで確認できますか。",
+      "vi": "Tôi xem chặng ghi trên vé tháng ở đâu ạ?",
+      "terms": [
+        "定期券",
+        "区間",
+        "確認する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "doko_de_kakunin_potential"
+    },
+    {
+      "id": "S-012-V13-012",
+      "group": "lost",
+      "role_vi": "Hành khách báo quên vé tháng ở nhà khi sắp đi tàu",
+      "gender": "male",
+      "ja": "定期券を家に忘れました。",
+      "vi": "Tôi để quên vé tháng ở nhà ạ.",
+      "terms": [
+        "定期券",
+        "忘れる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "noun_wo_wasuremashita"
+    },
+    {
+      "id": "S-012-V13-013",
+      "group": "lost",
+      "role_vi": "Hành khách không có vé tháng hỏi nên mua vé lẻ ở đâu",
+      "gender": "female",
+      "ja": "切符はどこで買えますか。",
+      "vi": "Tôi mua vé lẻ ở đâu được ạ?",
+      "terms": [
+        "切符",
+        "買う"
+      ],
+      "scenes": [
+        "S011",
+        "S014"
+      ],
+      "pattern": "doko_de_potential_ka"
+    },
+    {
+      "id": "S-012-V13-014",
+      "group": "lost",
+      "role_vi": "Hành khách báo mất thẻ ở quầy và chưa biết loại thẻ",
+      "gender": "male",
+      "ja": "PASMOをなくしました。",
+      "vi": "Tôi làm mất thẻ PASMO rồi ạ.",
+      "terms": [
+        "なくす"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "noun_wo_nakushimashita"
+    },
+    {
+      "id": "S-012-V13-015",
+      "group": "lost",
+      "role_vi": "Hành khách đã xác định thẻ có tên nhờ cấp lại ở quầy",
+      "gender": "female",
+      "ja": "記名PASMOを再発行できますか。",
+      "vi": "Tôi có thể xin cấp lại thẻ PASMO có đăng ký tên không ạ?",
+      "terms": [
+        "記名PASMO",
+        "再発行する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "verb_potential_ka"
+    },
+    {
+      "id": "S-012-V13-016",
+      "group": "lost",
+      "role_vi": "Người đi làm thủ tục cấp lại hỏi cần mang giấy tờ nào",
+      "gender": "female",
+      "ja": "身分証は何を持って来ればいいですか。",
+      "vi": "Tôi cần mang loại giấy tờ tùy thân nào đến ạ?",
+      "terms": [
+        "身分証",
+        "持って来る"
+      ],
+      "scenes": [
+        "S013",
+        "S015"
+      ],
+      "pattern": "nani_wo_verb_ba"
+    },
+    {
+      "id": "S-012-V13-017",
+      "group": "lost",
+      "role_vi": "Hành khách trở lại quầy nhờ xem số dư thẻ cũ",
+      "gender": "male",
+      "ja": "前のカードの残額も確認してもらえますか。",
+      "vi": "Anh kiểm tra giúp tôi cả số dư trên thẻ cũ được không ạ?",
+      "terms": [
+        "カード",
+        "残額",
+        "確認する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-012-V13-018",
+      "group": "change",
+      "role_vi": "Người đi làm báo với quầy nơi làm đã đổi sang Shibuya",
+      "gender": "female",
+      "ja": "職場が渋谷に変わりました。",
+      "vi": "Nơi làm việc của tôi chuyển đến Shibuya rồi ạ.",
+      "terms": [
+        "変わる"
+      ],
+      "scenes": [
+        "S003",
+        "S016"
+      ],
+      "pattern": "place_ni_kawarimashita"
+    },
+    {
+      "id": "S-012-V13-019",
+      "group": "change",
+      "role_vi": "Người đi làm hỏi về vé tháng còn hạn sau khi đổi chỗ làm",
+      "gender": "male",
+      "ja": "この定期券はまだ使えますが、払い戻しはできますか。",
+      "vi": "Vé tháng này vẫn còn hạn, tôi có thể xin hoàn tiền không ạ?",
+      "terms": [
+        "定期券",
+        "払い戻し"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "ga_noun_wa_dekimasu"
+    },
+    {
+      "id": "S-012-V13-020",
+      "group": "change",
+      "role_vi": "Người đi làm cần biết lộ trình mới có qua ga mình hay ghé không",
+      "gender": "female",
+      "ja": "この経路は銀座を通りますか。",
+      "vi": "Lộ trình này có đi qua Ginza không ạ?",
+      "terms": [
+        "経路",
+        "通る"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "route_wa_station_wo_tooru"
+    },
+    {
+      "id": "S-012-V13-021",
+      "group": "check",
+      "role_vi": "Hành khách báo hai lượt mình muốn hỏi bị trừ tiền khác nhau",
+      "gender": "female",
+      "ja": "二回の乗車で引かれた金額が違います。",
+      "vi": "Hai lượt đi bị trừ số tiền khác nhau ạ.",
+      "terms": [
+        "回",
+        "引く",
+        "金額",
+        "違う"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "noun_ga_chigaimasu"
+    },
+    {
+      "id": "S-012-V13-022",
+      "group": "check",
+      "role_vi": "Hành khách nêu chặng mình nhớ đã đi ở cả hai lần",
+      "gender": "male",
+      "ja": "二回とも浅草から渋谷まで乗ったと思います。",
+      "vi": "Tôi nhớ cả hai lần đều đi từ Asakusa đến Shibuya ạ.",
+      "terms": [
+        "回",
+        "乗る"
+      ],
+      "scenes": [
+        "S022",
+        "S023"
+      ],
+      "pattern": "ta_to_omoimasu"
+    },
+    {
+      "id": "S-012-V13-023",
+      "group": "check",
+      "role_vi": "Nhân viên ga đề nghị cùng khách đối chiếu hai lượt trong lịch sử sử dụng",
+      "gender": "male",
+      "ja": "二日分の利用履歴を一緒に確認しましょう。",
+      "vi": "Mình cùng kiểm tra lịch sử dùng thẻ của hai ngày đó nhé.",
+      "terms": [
+        "利用履歴",
+        "確認する"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "teian_mashou"
+    },
+    {
+      "id": "S-012-V13-024",
+      "group": "check",
+      "role_vi": "Hành khách hỏi lúc nào có thể biết kết quả kiểm khoản bị trừ",
+      "gender": "female",
+      "ja": "金額が違う理由はいつわかりますか。",
+      "vi": "Khi nào tôi biết được vì sao số tiền khác nhau ạ?",
+      "terms": [
+        "金額",
+        "違う"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "itsuwakarimasu"
+    }
+  ]
+}

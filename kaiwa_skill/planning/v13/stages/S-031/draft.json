@@ -1,0 +1,355 @@
+{
+  "code": "S-031",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "f561804520cb7c616003d1a35ddf57ed2d973efe2ca602f267d8609210198395",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "seat": "Xin bàn và hỏi thời gian",
+    "order": "Hỏi món và gọi đúng số phần",
+    "meal": "Nhờ phục vụ và đổi món",
+    "pay": "Tính tiền và tìm đồ để quên"
+  },
+  "items": [
+    {
+      "id": "S-031-V13-001",
+      "group": "seat",
+      "role_vi": "Khách vào nhà hàng",
+      "gender": "male",
+      "ja": "二人ですが、席は空いていますか。",
+      "vi": "Bây giờ còn chỗ cho hai người không ạ?",
+      "terms": [
+        "人",
+        "席",
+        "空く"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "〜は空いていますか"
+    },
+    {
+      "id": "S-031-V13-002",
+      "group": "seat",
+      "role_vi": "Khách chọn bàn",
+      "gender": "male",
+      "ja": "奥の静かな席に座ってもいいですか。",
+      "vi": "Chúng tôi ngồi bàn yên tĩnh phía trong được không ạ?",
+      "terms": [
+        "奥",
+        "静か",
+        "席"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜てもいいですか"
+    },
+    {
+      "id": "S-031-V13-003",
+      "group": "seat",
+      "role_vi": "Nhân viên đón khách",
+      "gender": "female",
+      "ja": "こちらの席は七時までお使いいただけます。",
+      "vi": "Anh có thể dùng bàn này đến 7 giờ ạ.",
+      "terms": [
+        "席"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜まで使えます"
+    },
+    {
+      "id": "S-031-V13-004",
+      "group": "seat",
+      "role_vi": "Khách hỏi sau khi nghe hết bàn",
+      "gender": "male",
+      "ja": "満席なら、何時ごろ来れば席が空きそうですか。",
+      "vi": "Nếu quán đang hết bàn, khoảng mấy giờ tôi quay lại thì có thể có chỗ ạ?",
+      "terms": [
+        "満席",
+        "席",
+        "空く"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "何時ごろ〜そうですか"
+    },
+    {
+      "id": "S-031-V13-005",
+      "group": "order",
+      "role_vi": "Khách xem thực đơn",
+      "gender": "male",
+      "ja": "メニューのこの写真は何の料理ですか。",
+      "vi": "Món trong ảnh này trên thực đơn là món gì ạ?",
+      "terms": [
+        "メニュー",
+        "写真",
+        "料理"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "何の〜ですか"
+    },
+    {
+      "id": "S-031-V13-006",
+      "group": "order",
+      "role_vi": "Khách hỏi thành phần món",
+      "gender": "male",
+      "ja": "この丼には卵が入っていますか。",
+      "vi": "Món cơm tô này có trứng không ạ?",
+      "terms": [
+        "卵",
+        "入る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜が入っていますか"
+    },
+    {
+      "id": "S-031-V13-007",
+      "group": "order",
+      "role_vi": "Khách chọn món chia chung",
+      "gender": "male",
+      "ja": "このサラダ一人前を二人で分けても大丈夫ですか。",
+      "vi": "Hai người chúng tôi chia nhau một phần salad này được không ạ?",
+      "terms": [
+        "サラダ",
+        "人前",
+        "人",
+        "分ける"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜ても大丈夫ですか"
+    },
+    {
+      "id": "S-031-V13-008",
+      "group": "order",
+      "role_vi": "Khách gọi món",
+      "gender": "male",
+      "ja": "うどんを一つと、冷たいお茶を二杯ください。",
+      "vi": "Cho tôi một tô mì udon và hai ly trà lạnh ạ.",
+      "terms": [
+        "うどん",
+        "冷たい",
+        "お茶",
+        "杯"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜と、〜をください"
+    },
+    {
+      "id": "S-031-V13-009",
+      "group": "order",
+      "role_vi": "Khách sửa số phần đã gọi",
+      "gender": "male",
+      "ja": "すみません、ラーメンは三つではなく二つです。",
+      "vi": "Xin lỗi, tôi gọi hai tô ramen, không phải ba ạ.",
+      "terms": [
+        "ラーメン"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-031-V13-010",
+      "group": "meal",
+      "role_vi": "Khách xin thêm nước",
+      "gender": "male",
+      "ja": "すみません、お水をもう二杯いただけますか。",
+      "vi": "Cho chúng tôi thêm hai ly nước được không ạ?",
+      "terms": [
+        "お水",
+        "杯"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜いただけますか"
+    },
+    {
+      "id": "S-031-V13-011",
+      "group": "meal",
+      "role_vi": "Khách hỏi món ra chậm",
+      "gender": "male",
+      "ja": "注文したうどんは、あとどのくらいかかりますか。",
+      "vi": "Món udon tôi gọi còn khoảng bao lâu nữa mới ra ạ?",
+      "terms": [
+        "注文する",
+        "うどん",
+        "かかる"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "あとどのくらいかかりますか"
+    },
+    {
+      "id": "S-031-V13-012",
+      "group": "meal",
+      "role_vi": "Khách báo món mang nhầm",
+      "gender": "male",
+      "ja": "私が注文したのは、クリームソースではなくトマトソースのパスタです。",
+      "vi": "Tôi gọi mì Ý xốt cà chua, không phải xốt kem ạ.",
+      "terms": [
+        "注文する",
+        "クリームソース",
+        "トマトソース",
+        "パスタ"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-031-V13-013",
+      "group": "meal",
+      "role_vi": "Khách xin đĩa để chia món",
+      "gender": "male",
+      "ja": "サラダを分けたいので、取り皿を二枚いただけますか。",
+      "vi": "Chúng tôi muốn chia salad, cho xin hai đĩa nhỏ được không ạ?",
+      "terms": [
+        "サラダ",
+        "分ける",
+        "取り皿",
+        "枚"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜いただけますか"
+    },
+    {
+      "id": "S-031-V13-014",
+      "group": "meal",
+      "role_vi": "Khách gọi món thay thế",
+      "gender": "male",
+      "ja": "カレーが売り切れなら、親子丼に変えてもらえますか。",
+      "vi": "Nếu hết cà ri thì đổi giúp tôi sang cơm gà trứng được không ạ?",
+      "terms": [
+        "カレー",
+        "売り切れ",
+        "親子丼",
+        "変える"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜なら、〜てもらえますか"
+    },
+    {
+      "id": "S-031-V13-015",
+      "group": "meal",
+      "role_vi": "Khách nhận đúng món sau khi đổi",
+      "gender": "male",
+      "ja": "パスタを取り替えてくださって、ありがとうございます。",
+      "vi": "Cảm ơn anh đã đổi giúp tôi món mì Ý ạ.",
+      "terms": [
+        "パスタ"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "Vてくださって、ありがとうございます"
+    },
+    {
+      "id": "S-031-V13-016",
+      "group": "pay",
+      "role_vi": "Khách thanh toán",
+      "gender": "male",
+      "ja": "会計は二人で別々にできますか。",
+      "vi": "Hai người chúng tôi thanh toán riêng được không ạ?",
+      "terms": [
+        "会計",
+        "人",
+        "別々"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "別々にできますか"
+    },
+    {
+      "id": "S-031-V13-017",
+      "group": "pay",
+      "role_vi": "Khách kiểm phiếu tính tiền",
+      "gender": "male",
+      "ja": "伝票にあるサラダは注文していません。",
+      "vi": "Món salad ghi trên phiếu tính tiền là món chúng tôi không gọi ạ.",
+      "terms": [
+        "伝票",
+        "サラダ",
+        "注文する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜は注文していません"
+    },
+    {
+      "id": "S-031-V13-018",
+      "group": "pay",
+      "role_vi": "Khách kiểm lại số tiền",
+      "gender": "male",
+      "ja": "サラダを外すと、合計はいくらになりますか。",
+      "vi": "Bỏ món salad ra thì tổng cộng còn bao nhiêu ạ?",
+      "terms": [
+        "サラダ",
+        "外す",
+        "合計"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜と、合計はいくらですか"
+    },
+    {
+      "id": "S-031-V13-019",
+      "group": "pay",
+      "role_vi": "Khách rời nhà hàng",
+      "gender": "male",
+      "ja": "ごちそうさまでした。",
+      "vi": "Cảm ơn quán vì bữa ăn ạ.",
+      "terms": [
+        "ごちそうさまでした"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "食後のあいさつ"
+    },
+    {
+      "id": "S-031-V13-020",
+      "group": "pay",
+      "role_vi": "Khách gọi tìm ô để quên",
+      "gender": "male",
+      "ja": "今日そちらの入口近くの席に青い傘を忘れたかもしれません。",
+      "vi": "Hôm nay có thể tôi để quên chiếc ô màu xanh ở bàn gần cửa vào của quán ạ.",
+      "terms": [
+        "入口",
+        "席",
+        "青い",
+        "傘",
+        "忘れる"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜を忘れたかもしれません"
+    }
+  ]
+}

@@ -1,0 +1,382 @@
+{
+  "code": "H-048",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "bcb74355dac9f6cc9c6e25f8139bd9fce586ce803c492f7c9cd631b3a5a0b335",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "common": "Hỏi mối lo và gọi tên điểm chung",
+    "stance": "Nói khác ý mà vẫn ghi nhận người kia",
+    "pause": "Sửa cách nói và đề nghị tạm dừng",
+    "terms": "Thương lượng tiêu chí và cách thử",
+    "others": "Hỏi người liên quan và giữ phần họ muốn giữ",
+    "repair": "Sửa quan hệ và thống nhất cách nói lần sau"
+  },
+  "items": [
+    {
+      "id": "H-048-V13-001",
+      "group": "common",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "会場を選ぶとき、何を一番重視したい？",
+      "vi": "Khi chọn hội trường, điều gì quan trọng nhất với cậu?",
+      "terms": [
+        "重視する"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "ask_priority"
+    },
+    {
+      "id": "H-048-V13-002",
+      "group": "common",
+      "role_vi": "Thành viên nam nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "male",
+      "ja": "僕は、申し込んだ人が座れないのが一番心配なんだ。",
+      "vi": "Tớ lo nhất là người đã đăng ký mà lại không có chỗ ngồi.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S004"
+      ],
+      "pattern": "explain_main_concern"
+    },
+    {
+      "id": "H-048-V13-003",
+      "group": "common",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "見に来た人に楽しんでほしいのは、二人とも同じだよね。",
+      "vi": "Cả hai đứa đều muốn người đến có một buổi xem vui vẻ, đúng không?",
+      "terms": [],
+      "scenes": [
+        "S004",
+        "S005",
+        "S015"
+      ],
+      "pattern": "name_shared_goal"
+    },
+    {
+      "id": "H-048-V13-004",
+      "group": "common",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "会場に何人入れるかについては認識が同じでも、席数と音の聞こえ方では、優先順位が違うみたいだね。",
+      "vi": "Hai đứa hiểu giống nhau về sức chứa của hội trường, nhưng có vẻ một đứa ưu tiên số ghế, một đứa ưu tiên nghe rõ.",
+      "terms": [
+        "認識",
+        "優先順位"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "distinguish_fact_and_priority"
+    },
+    {
+      "id": "H-048-V13-005",
+      "group": "stance",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "駅前の会場を推すのも一理あるけど、後ろの席でも台詞が聞こえるか確かめてから決めたいな。",
+      "vi": "Chọn hội trường gần ga cũng có lý, nhưng tớ muốn thử xem ghế sau có nghe rõ lời thoại không rồi mới quyết.",
+      "terms": [
+        "推す",
+        "一理ある"
+      ],
+      "scenes": [
+        "S002",
+        "S004",
+        "S006"
+      ],
+      "pattern": "acknowledge_then_position"
+    },
+    {
+      "id": "H-048-V13-006",
+      "group": "stance",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "前回の会場選びを責めたいわけじゃなくて、次は後ろの席でも聞き取れるようにしたいんだ。",
+      "vi": "Tớ không định trách cậu vì chọn hội trường lần trước, tớ muốn lần tới ngồi ghế sau vẫn nghe rõ.",
+      "terms": [],
+      "scenes": [
+        "S003",
+        "S007"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-048-V13-007",
+      "group": "stance",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "会場を押さえる前に、私が音を気にする理由を少し聞いてもらってもいい？",
+      "vi": "Trước khi giữ chỗ, cậu nghe tớ nói một chút về lý do tớ lo chuyện âm thanh được không?",
+      "terms": [],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "before_action"
+    },
+    {
+      "id": "H-048-V13-008",
+      "group": "stance",
+      "role_vi": "Thành viên nam nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "male",
+      "ja": "席を増やすことにこだわってるように聞こえたかもしれないけど、前回みたいに受付で来た人を断りたくないんだ。",
+      "vi": "Có thể cậu nghe như tớ chỉ chăm chăm tăng số ghế, nhưng tớ không muốn lại phải từ chối người đã đến tận quầy như lần trước.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S004",
+        "S027"
+      ],
+      "pattern": "clarify_motive"
+    },
+    {
+      "id": "H-048-V13-009",
+      "group": "pause",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "さっき会場のことで話してたときに遮っちゃったから、今度は最後まで聞かせて。",
+      "vi": "Lúc nãy đang bàn hội trường tớ đã ngắt lời cậu, giờ cậu nói hết ý cho tớ nghe nhé.",
+      "terms": [
+        "遮る"
+      ],
+      "scenes": [
+        "S011",
+        "S026"
+      ],
+      "pattern": "repair_interruption"
+    },
+    {
+      "id": "H-048-V13-010",
+      "group": "pause",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "「無責任」は言い過ぎたね、言いたかったのは、今すぐ予約すると音を確かめる時間が取れないってことなんだ。",
+      "vi": "Tớ nói “vô trách nhiệm” là quá lời, điều tớ muốn nói là đặt chỗ ngay thì mình không còn thời gian thử âm thanh.",
+      "terms": [
+        "言い過ぎる"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "repair_specific_wording"
+    },
+    {
+      "id": "H-048-V13-011",
+      "group": "pause",
+      "role_vi": "Thành viên nam nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "male",
+      "ja": "席数のことでお互いに声を荒げてるから、10分休んでから話し直さない？",
+      "vi": "Bàn chuyện số ghế mà hai đứa bắt đầu lớn tiếng rồi, mình nghỉ mười phút rồi nói lại nhé?",
+      "terms": [
+        "声を荒げる"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "pause_and_return"
+    },
+    {
+      "id": "H-048-V13-012",
+      "group": "pause",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "会場について意見が違うのは構わないけど、相手を見下す言い方が続くなら、今日はここで話を終えたい。",
+      "vi": "Khác ý về hội trường thì tớ vẫn bàn được, nhưng nếu còn nói theo kiểu coi thường nhau thế này thì hôm nay tớ muốn dừng ở đây.",
+      "terms": [
+        "見下す"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "conditional_boundary"
+    },
+    {
+      "id": "H-048-V13-013",
+      "group": "terms",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "駅前の会場が少し高いことは受け入れられるけど、後ろの席での聞こえ方は、予約の前に確かめたい。",
+      "vi": "Hội trường gần ga đắt hơn một chút thì tớ chấp nhận được, nhưng trước khi đặt tớ muốn thử xem ghế sau nghe thế nào.",
+      "terms": [
+        "受け入れる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "acknowledge_then_position"
+    },
+    {
+      "id": "H-048-V13-014",
+      "group": "terms",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "後ろの席を使わないなら、実際に何人入れるのか、予約前に確認しようよ。",
+      "vi": "Nếu không dùng ghế sau thì trước khi đặt, mình xem thực tế còn chỗ cho bao nhiêu người nhé.",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "nara_check_consequence"
+    },
+    {
+      "id": "H-048-V13-015",
+      "group": "terms",
+      "role_vi": "Thành viên nam nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "male",
+      "ja": "申し込みを二日だけ仮で受け付けて、キャンセル待ちの人数も見てから会場を決めるのはどう？",
+      "vi": "Mình thử mở đăng ký tạm trong hai ngày, xem cả số người trong danh sách chờ rồi mới chọn hội trường nhé?",
+      "terms": [
+        "キャンセル待ち"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "limited_trial"
+    },
+    {
+      "id": "H-048-V13-016",
+      "group": "terms",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "会場の決定はいったん保留にして、今日のうちに両方の空きと設備だけでも確認しない？",
+      "vi": "Mình tạm gác việc chọn hội trường, nhưng hôm nay ít nhất hỏi xem cả hai nơi còn trống không và có thiết bị gì nhé?",
+      "terms": [
+        "保留にする"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "defer_but_act"
+    },
+    {
+      "id": "H-048-V13-017",
+      "group": "terms",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "仮受付を試すなら、日曜の朝に数字を持ち寄って、希望者が多ければ会場を見直せるようにしておきたい。",
+      "vi": "Nếu thử nhận đăng ký tạm, tớ muốn sáng Chủ nhật mỗi đứa đem số liệu mình có ra bàn, để nếu đông người thì vẫn tính lại chuyện hội trường được.",
+      "terms": [
+        "持ち寄る",
+        "見直す"
+      ],
+      "scenes": [
+        "S018",
+        "S019",
+        "S020"
+      ],
+      "pattern": "set_review_condition"
+    },
+    {
+      "id": "H-048-V13-018",
+      "group": "others",
+      "role_vi": "Thành viên nói với người cũng sẽ dùng hội trường",
+      "gender": "female",
+      "ja": "会場選びにはどこまで関わりたいか、条件を伝えるだけで十分か、希望を聞かせてくれる？",
+      "vi": "Cậu muốn tham gia chọn hội trường đến mức nào, hay cậu chỉ muốn nêu điều kiện cần thôi?",
+      "terms": [],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "offer_participation_choice"
+    },
+    {
+      "id": "H-048-V13-019",
+      "group": "others",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "アキは駅から遠くても平気だと決める前に、道を見てどう思ったか、本人に直接聞かない？",
+      "vi": "Trước khi kết luận Aki thấy xa ga cũng không sao, mình hỏi trực tiếp xem bạn ấy thấy đường từ ga thế nào nhé?",
+      "terms": [
+        "本人"
+      ],
+      "scenes": [
+        "S022",
+        "S024"
+      ],
+      "pattern": "before_action"
+    },
+    {
+      "id": "H-048-V13-020",
+      "group": "others",
+      "role_vi": "Thành viên nữ nói với bạn cùng tổ chức buổi chiếu",
+      "gender": "female",
+      "ja": "段差の少ない入口が必要だと伝えるのはアキ本人に確認してあるけど、個人的な理由は伏せておくね。",
+      "vi": "Aki đồng ý cho tớ nói là bạn ấy cần lối vào ít bậc, còn lý do riêng thì tớ sẽ giữ kín nhé.",
+      "terms": [
+        "本人"
+      ],
+      "scenes": [
+        "S023",
+        "S025"
+      ],
+      "pattern": "share_agreed_scope"
+    },
+    {
+      "id": "H-048-V13-021",
+      "group": "repair",
+      "role_vi": "Người bạn nói sau một cuộc bất đồng",
+      "gender": "female",
+      "ja": "会場のことで意見は違うけど、これからも友達でいたいと思ってるよ。",
+      "vi": "Chuyện hội trường mình còn khác ý, nhưng tớ vẫn muốn tụi mình là bạn.",
+      "terms": [],
+      "scenes": [
+        "S010",
+        "S026"
+      ],
+      "pattern": "state_relationship_matters"
+    },
+    {
+      "id": "H-048-V13-022",
+      "group": "repair",
+      "role_vi": "Người bạn nói sau một cuộc bất đồng",
+      "gender": "male",
+      "ja": "会場のことで言い合ったあと、僕の言い方でまだ引っかかってることがあったら聞かせてくれる？",
+      "vi": "Sau khi cãi nhau về hội trường, có điều gì trong cách tớ nói mà cậu vẫn thấy khó chịu không, cậu kể tớ nghe nhé?",
+      "terms": [],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "ask_what_needs_repair"
+    },
+    {
+      "id": "H-048-V13-023",
+      "group": "repair",
+      "role_vi": "Người bạn nói sau một cuộc bất đồng",
+      "gender": "female",
+      "ja": "下見の連絡はいつもどおりするけど、前の会場選びで誰が悪かったかって話は、しばらく持ち出さないようにするね。",
+      "vi": "Chuyện đi xem hội trường tớ vẫn báo như thường, còn chuyện ai sai khi chọn chỗ lần trước thì tớ sẽ tạm thời không nhắc đến nhé.",
+      "terms": [
+        "下見",
+        "持ち出す"
+      ],
+      "scenes": [
+        "S010",
+        "S028",
+        "S029"
+      ],
+      "pattern": "continue_with_limits"
+    },
+    {
+      "id": "H-048-V13-024",
+      "group": "repair",
+      "role_vi": "Người bạn nói sau một cuộc bất đồng",
+      "gender": "male",
+      "ja": "また前回の会場選びを振り返る必要が出たら、責任の話に入る前に、今話せるか聞くようにするよ。",
+      "vi": "Nếu cần bàn lại chuyện chọn hội trường lần trước, tớ sẽ hỏi xem cậu có tiện nói lúc đó không trước khi đề cập chuyện trách nhiệm.",
+      "terms": [],
+      "scenes": [
+        "S030"
+      ],
+      "pattern": "before_action"
+    }
+  ]
+}

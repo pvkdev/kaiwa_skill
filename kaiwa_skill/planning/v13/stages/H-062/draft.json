@@ -1,0 +1,358 @@
+{
+  "code": "H-062",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b5455f7bf803bf7662612eada5a54000a70180c131898410932f12b01685df82",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "question": "Đặt câu hỏi nghiên cứu và thu hẹp phạm vi",
+    "discussion": "Nhắc lại luận điểm, hỏi căn cứ và phản biện",
+    "progress": "Báo tiến độ, kết quả lệch dự đoán và giới hạn",
+    "plan": "Sửa quy trình và hẹn trao đổi bước tới",
+    "seminar": "Phân vai, xử lý hỏi đáp và nhìn lại seminar"
+  },
+  "items": [
+    {
+      "id": "H-062-V13-001",
+      "group": "question",
+      "role_vi": "Sinh viên nói với giảng viên hướng dẫn",
+      "gender": "female",
+      "ja": "案内文で、必要な情報が見つけやすいかを調べたいです。",
+      "vi": "Em muốn tìm hiểu người đọc có dễ tìm được thông tin cần thiết trong thông báo không ạ.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "state_research_interest"
+    },
+    {
+      "id": "H-062-V13-002",
+      "group": "question",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "female",
+      "ja": "「分かりやすい」の定義を先に確認しませんか。",
+      "vi": "Mình xác nhận trước đang dùng từ “dễ hiểu” theo nghĩa nào nhé?",
+      "terms": [
+        "定義"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "clarify_definition"
+    },
+    {
+      "id": "H-062-V13-003",
+      "group": "question",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "male",
+      "ja": "案内に慣れている人の例を、一つ挙げていただけますか。",
+      "vi": "Cậu có thể nêu một ví dụ về người đã quen đọc loại thông báo này không?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "ask_one_example"
+    },
+    {
+      "id": "H-062-V13-004",
+      "group": "question",
+      "role_vi": "Sinh viên nói với giảng viên hướng dẫn",
+      "gender": "female",
+      "ja": "研究対象を地域センターの講座案内に絞り込んで、本文は同じにし、見出しの位置だけを変えて比べたいです。",
+      "vi": "Em muốn thu hẹp vào thông báo lớp học của trung tâm cộng đồng, giữ nguyên thân bài và chỉ đổi vị trí đề mục để so sánh ạ.",
+      "terms": [
+        "研究対象",
+        "絞り込む"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "narrow_scope_control_comparison"
+    },
+    {
+      "id": "H-062-V13-005",
+      "group": "question",
+      "role_vi": "Sinh viên nói với giảng viên hướng dẫn",
+      "gender": "female",
+      "ja": "先行研究を読んで、研究課題を、見出しの位置で時刻と申込期限を見つける速さが変わるかどうかに絞りました。",
+      "vi": "Sau khi đọc các nghiên cứu trước, em đã thu hẹp câu hỏi vào việc vị trí đề mục có làm thay đổi tốc độ tìm giờ bắt đầu và hạn đăng ký hay không.",
+      "terms": [
+        "先行研究",
+        "研究課題"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "present_revised_question"
+    },
+    {
+      "id": "H-062-V13-006",
+      "group": "discussion",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "female",
+      "ja": "見出しを上に置くと開始時刻が見つけやすい、という主張で合っていますか。",
+      "vi": "Tớ hiểu ý cậu là đặt đề mục lên đầu sẽ dễ tìm giờ bắt đầu hơn, đúng không?",
+      "terms": [
+        "主張"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "verify_interpretation_of_claim"
+    },
+    {
+      "id": "H-062-V13-007",
+      "group": "discussion",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "female",
+      "ja": "案内に「慣れている」というのは、普段から同じ形式を読むことなのか、締切の位置を知っていることなのか、どちらでしょうか。",
+      "vi": "“Quen với thông báo” ở đây là thường xuyên đọc thông báo cùng kiểu hay là biết hạn đăng ký nằm ở đâu?",
+      "terms": [],
+      "scenes": [
+        "S003",
+        "S007"
+      ],
+      "pattern": "clarify_definition"
+    },
+    {
+      "id": "H-062-V13-008",
+      "group": "discussion",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "female",
+      "ja": "全員が見出しを上に置いた版を後から読んでいるので、今の結果だけでは、見出しの位置と読む順番の影響は切り分けにくいのではないでしょうか。",
+      "vi": "Vì ai cũng đọc bản có đề mục ở đầu sau bản kia, chỉ dựa vào kết quả này thì khó tách tác động của vị trí đề mục và thứ tự đọc, đúng không?",
+      "terms": [
+        "切り分ける"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "identify_confounded_factors"
+    },
+    {
+      "id": "H-062-V13-009",
+      "group": "discussion",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "female",
+      "ja": "四人が開始時刻を早く見つけたという観察は大切だけど、見出しの位置が原因だと判断する前に、読む順番を変えて検証したいんだ。",
+      "vi": "Việc bốn người tìm giờ bắt đầu nhanh hơn là một quan sát quan trọng, nhưng trước khi kết luận do vị trí đề mục, tớ muốn đổi thứ tự đọc rồi kiểm lại.",
+      "terms": [
+        "観察",
+        "検証する"
+      ],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "separate_observation_and_cause"
+    },
+    {
+      "id": "H-062-V13-010",
+      "group": "discussion",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "male",
+      "ja": "発表の持ち時間が終わるので、案内を読む経験をどう聞くかは次のゼミの議題に残しませんか。",
+      "vi": "Sắp hết lượt trình bày rồi, mình để chuyện hỏi người tham gia về kinh nghiệm đọc thông báo sang buổi seminar sau nhé?",
+      "terms": [
+        "ゼミ",
+        "持ち時間",
+        "議題"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "defer_question_explicitly"
+    },
+    {
+      "id": "H-062-V13-011",
+      "group": "progress",
+      "role_vi": "Sinh viên nói với giảng viên hướng dẫn",
+      "gender": "female",
+      "ja": "進捗をお伝えすると、六人に試してもらい、二人は仮説とは逆の結果になりました。",
+      "vi": "Về tiến độ, em đã thử với sáu người, trong đó hai người cho kết quả ngược với giả thuyết ạ.",
+      "terms": [
+        "進捗",
+        "仮説"
+      ],
+      "scenes": [
+        "S011",
+        "S014"
+      ],
+      "pattern": "report_result_against_expectation"
+    },
+    {
+      "id": "H-062-V13-012",
+      "group": "progress",
+      "role_vi": "Sinh viên nói với giảng viên hướng dẫn",
+      "gender": "female",
+      "ja": "二人が合図より先に読み始めていたので、同じ比較条件で時間を測れたとは言えません。",
+      "vi": "Hai người bắt đầu đọc trước hiệu lệnh, nên em chưa thể nói thời gian được đo trong cùng điều kiện so sánh.",
+      "terms": [
+        "比較条件"
+      ],
+      "scenes": [
+        "S012",
+        "S014"
+      ],
+      "pattern": "name_limit_in_measurement"
+    },
+    {
+      "id": "H-062-V13-013",
+      "group": "progress",
+      "role_vi": "Sinh viên báo cáo trước nhóm seminar",
+      "gender": "female",
+      "ja": "見出しを上に置いた版で時間がかかった二人は先に本文を見ていましたが、理由までは本人に聞いていません。",
+      "vi": "Hai người mất nhiều thời gian hơn với bản có đề mục ở đầu đã nhìn thân bài trước, còn lý do thì chúng tôi chưa hỏi họ.",
+      "terms": [],
+      "scenes": [
+        "S011",
+        "S014"
+      ],
+      "pattern": "separate_observation_and_cause"
+    },
+    {
+      "id": "H-062-V13-014",
+      "group": "progress",
+      "role_vi": "Sinh viên báo cáo trước nhóm seminar",
+      "gender": "female",
+      "ja": "今回は読み始めた時点がそろっていないため、見出しの位置の効果までは判断できないという限界があります。",
+      "vi": "Lần này người tham gia không bắt đầu đọc cùng lúc, nên chúng tôi chưa thể đánh giá tác động của vị trí đề mục.",
+      "terms": [
+        "限界"
+      ],
+      "scenes": [
+        "S014",
+        "S017"
+      ],
+      "pattern": "name_limit_in_measurement"
+    },
+    {
+      "id": "H-062-V13-015",
+      "group": "plan",
+      "role_vi": "Sinh viên nói với giảng viên hướng dẫn",
+      "gender": "female",
+      "ja": "次の予備調査では、紙を伏せて配り、参加者全員に合図で同時に開いてもらう手順を試してもよろしいですか。",
+      "vi": "Ở đợt khảo sát thử tới, em có thể phát giấy úp xuống rồi cho mọi người cùng lật khi có hiệu lệnh để thử quy trình được không ạ?",
+      "terms": [
+        "予備調査"
+      ],
+      "scenes": [
+        "S012",
+        "S015"
+      ],
+      "pattern": "propose_adjusted_procedure"
+    },
+    {
+      "id": "H-062-V13-016",
+      "group": "plan",
+      "role_vi": "Giảng viên nói với sinh viên",
+      "gender": "female",
+      "ja": "聞き取りを六人に広げる前に、まず二人で試して、質問と結果の整理にかかる時間を実測しましょう。",
+      "vi": "Trước khi mở rộng phần hỏi sang sáu người, mình thử với hai người trước rồi đo thời gian hỏi và tổng hợp kết quả nhé.",
+      "terms": [
+        "実測する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "trial_before_expanding"
+    },
+    {
+      "id": "H-062-V13-017",
+      "group": "plan",
+      "role_vi": "Sinh viên nói với giảng viên hướng dẫn",
+      "gender": "female",
+      "ja": "新しい手順を試した記録を持って伺うので、金曜の午後三時に十分だけご相談してもよろしいですか。",
+      "vi": "Em sẽ mang ghi chép lần thử quy trình mới, cô cho em xin mười phút trao đổi vào ba giờ chiều thứ Sáu được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "request_followup_with_material"
+    },
+    {
+      "id": "H-062-V13-018",
+      "group": "seminar",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "female",
+      "ja": "中間発表では私が問いと手順を五分で説明するので、結果の表と研究の限界はケンタにお願いできる？",
+      "vi": "Trong buổi báo cáo tiến độ, tớ trình bày câu hỏi và quy trình trong năm phút, phần bảng kết quả và giới hạn nghiên cứu nhờ Kenta nói được không?",
+      "terms": [
+        "中間発表",
+        "限界"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "allocate_speaking_roles"
+    },
+    {
+      "id": "H-062-V13-019",
+      "group": "seminar",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "female",
+      "ja": "今日のゼミで代わりに結果を説明する前に、表の注記にある人数と読む順番を一緒に確認してもいい？",
+      "vi": "Trước khi tớ trình bày phần kết quả thay cậu ở seminar hôm nay, mình cùng xem lại số người và thứ tự đọc ghi ở chú thích bảng được không?",
+      "terms": [
+        "ゼミ",
+        "注記"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "check_before_covering_absence"
+    },
+    {
+      "id": "H-062-V13-020",
+      "group": "seminar",
+      "role_vi": "Sinh viên trả lời người dự seminar",
+      "gender": "female",
+      "ja": "今回の試行では手順の確認に絞って検定は行っていませんので、分析方法については指導教員に相談して次回お答えします。",
+      "vi": "Lần thử này chỉ để xem quy trình có ổn không nên chúng tôi chưa làm kiểm định, về phương pháp phân tích tôi sẽ trao đổi với giảng viên hướng dẫn và trả lời ở buổi sau ạ.",
+      "terms": [
+        "試行",
+        "検定"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "defer_question_explicitly"
+    },
+    {
+      "id": "H-062-V13-021",
+      "group": "seminar",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "male",
+      "ja": "表の注記だと読む順番の条件が見えにくかったから、次回は表の上に明示しよう。",
+      "vi": "Để trong chú thích bảng thì điều kiện về thứ tự đọc hơi khó thấy, lần tới mình nêu rõ ngay phía trên bảng nhé.",
+      "terms": [
+        "注記",
+        "明示する"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "improve_visibility_of_limit"
+    },
+    {
+      "id": "H-062-V13-022",
+      "group": "seminar",
+      "role_vi": "Sinh viên nói với bạn trong seminar",
+      "gender": "female",
+      "ja": "次のゼミでは、結果と手順の説明をそれぞれ一分短くして、質疑応答にあと二分回さない？",
+      "vi": "Seminar tới mình rút phần kết quả và phần quy trình mỗi phần một phút để dành thêm hai phút cho hỏi đáp nhé?",
+      "terms": [
+        "ゼミ",
+        "質疑応答"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "reallocate_discussion_time"
+    }
+  ]
+}

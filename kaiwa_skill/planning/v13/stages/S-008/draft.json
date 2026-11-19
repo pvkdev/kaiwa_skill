@@ -1,0 +1,361 @@
+{
+  "code": "S-008",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "464fc45984a75ab2127eba6bbba76fb3e82fab330eae6ce4926ec8177a2be365",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "arrival": "Nhận phòng và hỏi giờ ra vào",
+    "rules": "Xin phép và báo sự cố",
+    "shared": "Chia lượt dùng phòng và giữ đồ",
+    "late": "Báo về muộn và hỏi lại quản lý",
+    "leave": "Bàn giao khi chuyển ra"
+  },
+  "items": [
+    {
+      "id": "S-008-V13-001",
+      "group": "arrival",
+      "role_vi": "Người mới đến quầy ký túc hỏi số phòng của mình",
+      "gender": "female",
+      "ja": "私の部屋は何号室ですか。",
+      "vi": "Phòng của tôi số mấy ạ?",
+      "terms": [
+        "号室"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "room_wa_nangoushitsu"
+    },
+    {
+      "id": "S-008-V13-002",
+      "group": "arrival",
+      "role_vi": "Quản lý ký túc đưa chìa khóa cho cư dân mới",
+      "gender": "male",
+      "ja": "こちらが二〇五号室の鍵です。",
+      "vi": "Đây là chìa khóa phòng 205 ạ.",
+      "terms": [
+        "号室",
+        "鍵"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "kochira_ga_noun_desu"
+    },
+    {
+      "id": "S-008-V13-003",
+      "group": "arrival",
+      "role_vi": "Cư dân mới hỏi có thể vào phòng ngay sau khi nhận khóa không",
+      "gender": "female",
+      "ja": "今、部屋に入ってもいいですか。",
+      "vi": "Bây giờ tôi vào phòng được không ạ?",
+      "terms": [
+        "入る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-008-V13-004",
+      "group": "arrival",
+      "role_vi": "Cư dân kiểm lại giờ cửa ký túc đóng",
+      "gender": "female",
+      "ja": "寮の入口は夜十時に閉まりますね。",
+      "vi": "Cửa vào ký túc đóng lúc mười giờ tối, đúng không ạ?",
+      "terms": [
+        "寮",
+        "入口",
+        "閉まる"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "detail_masu_ne"
+    },
+    {
+      "id": "S-008-V13-005",
+      "group": "rules",
+      "role_vi": "Cư dân hỏi người quản lý xem bạn mình có thể đến thăm không",
+      "gender": "male",
+      "ja": "今週末、友達が寮に来てもいいですか。",
+      "vi": "Cuối tuần này bạn tôi đến ký túc xá thăm tôi được không ạ?",
+      "terms": [
+        "友達",
+        "寮"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-008-V13-006",
+      "group": "rules",
+      "role_vi": "Quản lý dặn cư dân báo trước khi có khách",
+      "gender": "male",
+      "ja": "友達が来る前に受付に言ってください。",
+      "vi": "Chị báo quầy trước khi bạn đến nhé.",
+      "terms": [
+        "友達",
+        "受付"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "maeni_te_kudasai"
+    },
+    {
+      "id": "S-008-V13-007",
+      "group": "rules",
+      "role_vi": "Cư dân hỏi ai phụ trách khi điều hòa phòng gặp sự cố",
+      "gender": "female",
+      "ja": "エアコンが壊れたら、誰に言えばいいですか。",
+      "vi": "Nếu điều hòa hỏng thì tôi báo ai ạ?",
+      "terms": [
+        "エアコン",
+        "壊れる"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "tara_dare_ni_ieba"
+    },
+    {
+      "id": "S-008-V13-008",
+      "group": "shared",
+      "role_vi": "Cư dân hỏi người ở cùng về lượt dùng bếp",
+      "gender": "female",
+      "ja": "七時から台所を使ってもいいですか。",
+      "vi": "Tôi dùng bếp từ bảy giờ được không?",
+      "terms": [
+        "台所"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-008-V13-009",
+      "group": "shared",
+      "role_vi": "Cư dân đang dùng bếp đề nghị giờ khác",
+      "gender": "male",
+      "ja": "台所は七時からなら空いています。",
+      "vi": "Từ bảy giờ thì bếp trống.",
+      "terms": [
+        "台所"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "time_kara_nara"
+    },
+    {
+      "id": "S-008-V13-010",
+      "group": "shared",
+      "role_vi": "Cư dân hỏi người cùng phòng về chỗ để giày cá nhân",
+      "gender": "female",
+      "ja": "靴はどこに置けばいいですか。",
+      "vi": "Tôi để giày ở đâu?",
+      "terms": [
+        "靴"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "doko_ni_okeba"
+    },
+    {
+      "id": "S-008-V13-011",
+      "group": "shared",
+      "role_vi": "Người quản lý dặn cư dân dọn phòng chung sau khi dùng",
+      "gender": "male",
+      "ja": "使ったあとで、部屋をきれいにしてください。",
+      "vi": "Dùng xong, chị dọn phòng cho sạch nhé.",
+      "terms": [
+        "きれいにする"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-008-V13-012",
+      "group": "shared",
+      "role_vi": "Cư dân cam kết dọn phòng sinh hoạt trước giờ đóng",
+      "gender": "female",
+      "ja": "九時までに部屋を片づけます。",
+      "vi": "Tôi sẽ dọn xong phòng trước chín giờ ạ.",
+      "terms": [
+        "片づける"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "made_ni_verb"
+    },
+    {
+      "id": "S-008-V13-013",
+      "group": "shared",
+      "role_vi": "Cư dân hỏi người cùng phòng có thấy túi mình để trên bàn không",
+      "gender": "female",
+      "ja": "テーブルの上にあったかばんを見ましたか。",
+      "vi": "Anh có thấy cái túi tôi để trên bàn không?",
+      "terms": [
+        "テーブル",
+        "かばん"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "noun_wo_mimashita_ka"
+    },
+    {
+      "id": "S-008-V13-014",
+      "group": "shared",
+      "role_vi": "Người cùng phòng đề xuất chỗ để túi lâu dài",
+      "gender": "male",
+      "ja": "これから、かばんは自分の部屋に置きませんか。",
+      "vi": "Từ giờ mình để túi trong phòng riêng nhé?",
+      "terms": [
+        "かばん",
+        "自分の部屋"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "teian_masen_ka"
+    },
+    {
+      "id": "S-008-V13-015",
+      "group": "late",
+      "role_vi": "Cư dân báo quản lý ca làm khiến mình hay về rất muộn",
+      "gender": "female",
+      "ja": "仕事でよく夜十時より遅くなります。",
+      "vi": "Vì công việc, tôi hay về sau mười giờ tối ạ.",
+      "terms": [
+        "遅くなる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "reason_de_osoku"
+    },
+    {
+      "id": "S-008-V13-016",
+      "group": "late",
+      "role_vi": "Cư dân hỏi phải làm gì hôm đi làm về muộn",
+      "gender": "male",
+      "ja": "帰りが遅くなる日はどうすればいいですか。",
+      "vi": "Hôm nào về muộn thì tôi phải làm thế nào ạ?",
+      "terms": [
+        "遅くなる"
+      ],
+      "scenes": [
+        "S005",
+        "S012"
+      ],
+      "pattern": "dou_sureba_ii_desu_ka"
+    },
+    {
+      "id": "S-008-V13-017",
+      "group": "late",
+      "role_vi": "Quản lý dặn cư dân gọi sớm mỗi khi biết sẽ về muộn",
+      "gender": "male",
+      "ja": "帰りが遅くなる日は早めに電話してください。",
+      "vi": "Hôm nào về muộn thì chị gọi báo sớm nhé.",
+      "terms": [
+        "遅くなる",
+        "早めに"
+      ],
+      "scenes": [
+        "S005",
+        "S012"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-008-V13-018",
+      "group": "late",
+      "role_vi": "Cư dân hỏi khi nào đầu mối sẽ báo kết quả hỏi công ty",
+      "gender": "female",
+      "ja": "いつごろ連絡がありますか。",
+      "vi": "Khoảng khi nào tôi sẽ được báo lại ạ?",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "itsugoro_wa_arimasu"
+    },
+    {
+      "id": "S-008-V13-019",
+      "group": "late",
+      "role_vi": "Quản lý hẹn đích thân liên hệ trước trưa mai",
+      "gender": "male",
+      "ja": "明日の昼までに私から連絡します。",
+      "vi": "Tôi sẽ liên lạc với chị chậm nhất là trưa mai ạ.",
+      "terms": [
+        "連絡する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "made_ni_verb"
+    },
+    {
+      "id": "S-008-V13-020",
+      "group": "late",
+      "role_vi": "Cư dân gọi lại hỏi đã có phản hồi về chuyện về muộn chưa",
+      "gender": "female",
+      "ja": "夜遅く帰る件で、会社から返事はありましたか。",
+      "vi": "Về chuyện tôi về muộn, công ty đã trả lời chưa ạ?",
+      "terms": [
+        "返事"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "noun_wa_arimashita_ka"
+    },
+    {
+      "id": "S-008-V13-021",
+      "group": "leave",
+      "role_vi": "Cư dân sắp chuyển khỏi ký túc hỏi nơi trả chìa khóa",
+      "gender": "female",
+      "ja": "寮の鍵はどこに返しますか。",
+      "vi": "Tôi trả chìa khóa ký túc ở đâu ạ?",
+      "terms": [
+        "寮",
+        "鍵を返す"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "doko_ni_kaeshimasu"
+    },
+    {
+      "id": "S-008-V13-022",
+      "group": "leave",
+      "role_vi": "Quản lý dặn cư dân giờ mang chìa khóa xuống quầy",
+      "gender": "male",
+      "ja": "金曜日の午後五時までに、鍵を受付へ持ってきてください。",
+      "vi": "Chị mang chìa khóa đến quầy trước năm giờ chiều thứ Sáu nhé.",
+      "terms": [
+        "金曜日",
+        "鍵",
+        "受付",
+        "持ってくる"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "te_kudasai"
+    }
+  ]
+}

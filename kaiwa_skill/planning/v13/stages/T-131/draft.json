@@ -1,0 +1,371 @@
+{
+  "code": "T-131",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "c97452693cdd45629b300ad704a514e5c36490783508cd2db434170de520b192",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "park": "Hỏi chỗ đỗ và cách tính tiền",
+    "gate": "Báo vướng ở cổng hoặc lối ra",
+    "garage": "Mô tả tiếng lạ và hẹn kiểm xe",
+    "estimate": "Hỏi phạm vi sửa và chốt phần đồng ý",
+    "follow": "Nhận xe và báo khi tiếng lạ lặp lại"
+  },
+  "items": [
+    {
+      "id": "T-131-V13-001",
+      "group": "park",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "時間貸しの駐車場は、今空いていますか。",
+      "vi": "Bãi đỗ theo giờ hiện còn chỗ không ạ?",
+      "terms": [
+        "時間貸し"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～の空きはありますか"
+    },
+    {
+      "id": "T-131-V13-002",
+      "group": "park",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "月極の駐車場に空きが出たら、知らせてもらえますか。",
+      "vi": "Nếu có chỗ đỗ cho thuê theo tháng, anh báo cho tôi được không ạ?",
+      "terms": [
+        "月極"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～たら知らせてもらえますか"
+    },
+    {
+      "id": "T-131-V13-003",
+      "group": "park",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "屋根のバーを含めて車高が一メートル八十三センチですが、入れる区画はありますか。",
+      "vi": "Tính cả thanh trên nóc thì xe cao 1 mét 83, có ô nào xe tôi vào được không ạ?",
+      "terms": [
+        "車高",
+        "区画"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～の車が入れるか"
+    },
+    {
+      "id": "T-131-V13-004",
+      "group": "park",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "奥の区画から建物まで、歩行者用通路はありますか。",
+      "vi": "Từ ô đỗ phía trong đến tòa nhà có lối dành cho người đi bộ không ạ?",
+      "terms": [
+        "区画",
+        "歩行者用通路"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～はありますか"
+    },
+    {
+      "id": "T-131-V13-005",
+      "group": "park",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "看板の三百円は一時間の料金ですか、それとも一日の最大料金ですか。",
+      "vi": "Mức 300 yên trên biển là phí một giờ hay mức tối đa cả ngày ạ?",
+      "terms": [
+        "最大料金"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～は～ですか、それとも～ですか"
+    },
+    {
+      "id": "T-131-V13-006",
+      "group": "gate",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "入口のゲートが開かないときは、どこに連絡すればいいですか。",
+      "vi": "Nếu cổng vào không mở, tôi cần liên hệ ở đâu ạ?",
+      "terms": [
+        "ゲート"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～ときは～に連絡すればいいか"
+    },
+    {
+      "id": "T-131-V13-007",
+      "group": "gate",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "出口の機械に駐車券を入れたら、そのまま戻ってきて、料金が画面に出ません。",
+      "vi": "Tôi cho vé đỗ xe vào máy ở cổng ra nhưng máy trả vé lại và trên màn hình không hiện số tiền.",
+      "terms": [
+        "駐車券"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～を入れても～が出ない"
+    },
+    {
+      "id": "T-131-V13-008",
+      "group": "gate",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "別の車に通路を塞がれて出られないので、係の方に来てもらえますか。",
+      "vi": "Xe khác chắn lối nên tôi không ra được, anh có thể cử người đến giúp không ạ?",
+      "terms": [
+        "塞ぐ"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～に塞がれて～できない"
+    },
+    {
+      "id": "T-131-V13-009",
+      "group": "gate",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "車の持ち主が見つかるまで、入口の管理室で待ってもいいですか。",
+      "vi": "Trong lúc chờ tìm được chủ xe kia, tôi đợi ở phòng quản lý ngay lối vào được không ạ?",
+      "terms": [
+        "管理室"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～まで～で待ってもいいですか"
+    },
+    {
+      "id": "T-131-V13-010",
+      "group": "gate",
+      "role_vi": "Chủ xe hỏi nhân viên bãi đỗ",
+      "gender": "female",
+      "ja": "精算済みですが、この券のままで西口から出られますか。",
+      "vi": "Tôi đã trả phí rồi, vẫn dùng vé này để ra cổng phía tây được không ạ?",
+      "terms": [
+        "精算済み"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～のままで～を使えるか"
+    },
+    {
+      "id": "T-131-V13-011",
+      "group": "garage",
+      "role_vi": "Chủ xe báo trục trặc cho gara",
+      "gender": "female",
+      "ja": "ゆっくり走ると、右前のタイヤのあたりでカタカタ音がします。",
+      "vi": "Khi xe chạy chậm, tôi nghe tiếng lạch cạch ở quanh lốp trước bên phải.",
+      "terms": [
+        "タイヤ",
+        "カタカタ"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～すると～から音がする"
+    },
+    {
+      "id": "T-131-V13-012",
+      "group": "garage",
+      "role_vi": "Chủ xe báo trục trặc cho gara",
+      "gender": "female",
+      "ja": "先ほどそちらに運ばれた車を、今日中に点検してもらえますか。",
+      "vi": "Xe vừa được đưa đến gara, anh có thể kiểm tra trong hôm nay được không ạ?",
+      "terms": [
+        "点検する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～を今日中に～してもらえるか"
+    },
+    {
+      "id": "T-131-V13-013",
+      "group": "garage",
+      "role_vi": "Chủ xe báo trục trặc cho gara",
+      "gender": "female",
+      "ja": "車を明日の朝まで預けるなら、代車を借りられますか。",
+      "vi": "Nếu phải gửi xe lại đến sáng mai, tôi có thể mượn xe thay được không ạ?",
+      "terms": [
+        "代車"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～なら～を借りられますか"
+    },
+    {
+      "id": "T-131-V13-014",
+      "group": "garage",
+      "role_vi": "Chủ xe báo trục trặc cho gara",
+      "gender": "female",
+      "ja": "段差を越えると車から音がするので、水曜の十時に点検をお願いできますか。",
+      "vi": "Xe phát tiếng khi đi qua gờ, tôi hẹn kiểm tra vào mười giờ thứ Tư được không ạ?",
+      "terms": [
+        "段差"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～の件で～にお願いできるか"
+    },
+    {
+      "id": "T-131-V13-015",
+      "group": "estimate",
+      "role_vi": "Chủ xe trao đổi với cố vấn dịch vụ gara",
+      "gender": "female",
+      "ja": "今日は点検だけで、修理は見積もりを見てから決めたいです。",
+      "vi": "Hôm nay tôi chỉ nhờ kiểm tra, còn sửa hay không tôi muốn xem báo giá rồi mới quyết.",
+      "terms": [
+        "修理"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～を見てから決める"
+    },
+    {
+      "id": "T-131-V13-016",
+      "group": "estimate",
+      "role_vi": "Chủ xe trao đổi với cố vấn dịch vụ gara",
+      "gender": "female",
+      "ja": "早めに直したほうがいい所と、次回でもいい所を分けて教えてもらえますか。",
+      "vi": "Anh có thể nói rõ mục nào nên sửa sớm và mục nào để lần sau được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～と～を分けて教えてほしい"
+    },
+    {
+      "id": "T-131-V13-017",
+      "group": "estimate",
+      "role_vi": "Chủ xe trao đổi với cố vấn dịch vụ gara",
+      "gender": "female",
+      "ja": "今回の交換は、ワイパーゴムだけですか、それともワイパーアームも含みますか。",
+      "vi": "Lần này thay cả tay gạt mưa hay chỉ thay cao su gạt mưa ạ?",
+      "terms": [
+        "ワイパーゴム",
+        "ワイパーアーム"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～だけですか、それとも～も含みますか"
+    },
+    {
+      "id": "T-131-V13-018",
+      "group": "estimate",
+      "role_vi": "Chủ xe trao đổi với cố vấn dịch vụ gara",
+      "gender": "female",
+      "ja": "部品や金額が変わるときは、追加作業を始める前に電話してください。",
+      "vi": "Nếu có thay đổi về phụ tùng hay số tiền, anh gọi cho tôi trước khi làm thêm ạ.",
+      "terms": [
+        "追加作業"
+      ],
+      "scenes": [
+        "S018",
+        "S020"
+      ],
+      "pattern": "～前に連絡してほしい"
+    },
+    {
+      "id": "T-131-V13-019",
+      "group": "estimate",
+      "role_vi": "Chủ xe trao đổi với cố vấn dịch vụ gara",
+      "gender": "female",
+      "ja": "今回はバッテリーの交換だけで、ドアの傷の補修はしなくて大丈夫です。",
+      "vi": "Lần này tôi chỉ nhờ thay ắc quy, chưa cần xử lý vết xước cửa ạ.",
+      "terms": [
+        "バッテリー",
+        "補修"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～だけお願いします"
+    },
+    {
+      "id": "T-131-V13-020",
+      "group": "follow",
+      "role_vi": "Chủ xe trao đổi với gara lúc nhận hoặc kiểm lại xe",
+      "gender": "female",
+      "ja": "修理のあとも、前と同じような段差を越えて音を確認しましたか。",
+      "vi": "Sau khi sửa, anh có thử đi qua gờ giống lần trước để kiểm tra tiếng động không ạ?",
+      "terms": [
+        "修理",
+        "段差"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～と同じ条件でも確認したか"
+    },
+    {
+      "id": "T-131-V13-021",
+      "group": "follow",
+      "role_vi": "Chủ xe trao đổi với gara lúc nhận hoặc kiểm lại xe",
+      "gender": "female",
+      "ja": "さっき車を受け取ったのですが、帰りに段差を越えたらまた左後ろから音がしました。",
+      "vi": "Tôi vừa nhận xe, lúc về đi qua một gờ thì lại nghe tiếng động phía sau bên trái.",
+      "terms": [
+        "段差"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～したらまた～がした"
+    },
+    {
+      "id": "T-131-V13-022",
+      "group": "follow",
+      "role_vi": "Chủ xe trao đổi với gara lúc nhận hoặc kiểm lại xe",
+      "gender": "female",
+      "ja": "金曜の再点検には、前回の作業明細も持っていけばいいですか。",
+      "vi": "Khi kiểm tra lại vào thứ Sáu, tôi có cần mang phiếu ghi các việc đã làm lần trước không ạ?",
+      "terms": [
+        "再点検",
+        "作業明細"
+      ],
+      "scenes": [
+        "S023",
+        "S024"
+      ],
+      "pattern": "～のときは～も持っていけばいいか"
+    },
+    {
+      "id": "T-131-V13-023",
+      "group": "follow",
+      "role_vi": "Chủ xe trao đổi với gara lúc nhận hoặc kiểm lại xe",
+      "gender": "female",
+      "ja": "また同じ音がしたら、安全な場所に車を停めて、作業明細にある連絡先に電話すればいいですか。",
+      "vi": "Nếu lại nghe tiếng đó, tôi đỗ xe ở chỗ an toàn rồi gọi theo số trên phiếu sửa xe, đúng không ạ?",
+      "terms": [
+        "作業明細",
+        "連絡先"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～ときは～に連絡すればいいか"
+    }
+  ]
+}

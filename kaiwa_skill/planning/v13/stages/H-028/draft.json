@@ -1,0 +1,361 @@
+{
+  "code": "H-028",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "86998dd81141dea0e43f45f4a1b403129f7e072d9236197981b543127a2d616c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "state": "Nắm việc đang mở và điều đã hứa",
+    "proof": "Xác nhận hiệu lực, quyền duyệt và điều kiện",
+    "contact": "Giới thiệu người tiếp quản với khách",
+    "missing": "Xử lý điểm thiếu sau bàn giao",
+    "close": "Xác nhận trách nhiệm và kết thúc hỗ trợ"
+  },
+  "items": [
+    {
+      "id": "H-028-V13-001",
+      "group": "state",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "この案件を引き継ぐ前に、何から確認しましょうか。",
+      "vi": "Trước khi tiếp quản đầu việc này, chị muốn xác nhận điều gì trước?",
+      "terms": [
+        "案件",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "何から確認しましょうか"
+    },
+    {
+      "id": "H-028-V13-002",
+      "group": "state",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "まだ終わっていない仕事と、その優先順位から確認したいです。",
+      "vi": "Tôi muốn bắt đầu bằng việc xác nhận những đầu việc còn dở và thứ tự ưu tiên.",
+      "terms": [
+        "優先順位"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～から確認したいです"
+    },
+    {
+      "id": "H-028-V13-003",
+      "group": "state",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "金曜の状況報告が先で、まだ未確定の試用日はその後で調整します。",
+      "vi": "Việc báo tình hình vào thứ Sáu làm trước, ngày dùng thử vẫn chưa chốt thì điều phối sau.",
+      "terms": [
+        "未確定"
+      ],
+      "scenes": [
+        "S002",
+        "S014"
+      ],
+      "pattern": "～が先で～はその後"
+    },
+    {
+      "id": "H-028-V13-004",
+      "group": "state",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "表示は社内で確認できましたが、先方の環境でも同じように見えるかはまだ分かりません。",
+      "vi": "Đã kiểm tra hiển thị trong công ty, nhưng vẫn chưa biết ở môi trường của khách có hiển thị giống vậy không.",
+      "terms": [
+        "先方"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "どこまでは～で～は未確認"
+    },
+    {
+      "id": "H-028-V13-005",
+      "group": "state",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "先方には金曜の午後三時までに状況を報告するとお約束しています。",
+      "vi": "Ta đã hứa với khách sẽ báo tình hình trước ba giờ chiều thứ Sáu.",
+      "terms": [
+        "先方"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～までに～する"
+    },
+    {
+      "id": "H-028-V13-006",
+      "group": "proof",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "見積もりはまだ社内で承認待ちなので、先方への金額の提示は決裁が出てからにしてください。",
+      "vi": "Báo giá còn chờ duyệt nội bộ, nên chị chỉ đưa số tiền cho khách sau khi có quyết định phê duyệt nhé.",
+      "terms": [
+        "見積もり",
+        "承認待ち",
+        "先方",
+        "提示",
+        "決裁"
+      ],
+      "scenes": [
+        "S003",
+        "S006"
+      ],
+      "pattern": "～が出てからにしてください"
+    },
+    {
+      "id": "H-028-V13-007",
+      "group": "proof",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "金曜の報告までに返事がなければ、見積もりの内訳はこちらで整理して、先方には確認中だと伝えます。",
+      "vi": "Nếu đến lúc báo tình hình thứ Sáu vẫn chưa có phản hồi, tôi sẽ sắp lại các khoản trong báo giá và báo khách là đang kiểm tra.",
+      "terms": [
+        "見積もり",
+        "内訳"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "～までに返事がなければ"
+    },
+    {
+      "id": "H-028-V13-008",
+      "group": "proof",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "先月決めた開始日はもう有効ではないので、履歴にだけ残して、新しい候補日とは区別してください。",
+      "vi": "Ngày bắt đầu từng chốt tháng trước đã hết hiệu lực, chị giữ lại trong lịch sử và phân biệt với các ngày mới đang xem nhé.",
+      "terms": [
+        "履歴"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～として残す"
+    },
+    {
+      "id": "H-028-V13-009",
+      "group": "proof",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "懇親会では試用開始の見通しを話しただけで、開始日を確約したわけではありません。",
+      "vi": "Ở buổi giao lưu tôi chỉ nói về thời gian dự kiến bắt đầu dùng thử, chứ chưa cam kết ngày bắt đầu.",
+      "terms": [
+        "見通し",
+        "確約する"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～を伝えただけで～していない"
+    },
+    {
+      "id": "H-028-V13-010",
+      "group": "contact",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "担当が替わるので、後任を私から直接ご紹介したほうがよい方はどなたですか。",
+      "vi": "Sắp đổi người phụ trách, theo chị tôi nên trực tiếp giới thiệu người tiếp quản với những ai?",
+      "terms": [
+        "後任",
+        "紹介する"
+      ],
+      "scenes": [
+        "S004",
+        "S011"
+      ],
+      "pattern": "どなたに～必要がありますか"
+    },
+    {
+      "id": "H-028-V13-011",
+      "group": "contact",
+      "role_vi": "Người cũ giới thiệu đầu mối mới với khách",
+      "gender": "male",
+      "ja": "今後は後任のマイが窓口となり、金曜午後三時までに状況をご報告するお約束も引き継いでおります。",
+      "vi": "Từ nay Mai sẽ làm đầu mối và tiếp tục thực hiện cam kết báo tình hình trước ba giờ chiều thứ Sáu ạ.",
+      "terms": [
+        "後任",
+        "窓口",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～を引き継いでおります"
+    },
+    {
+      "id": "H-028-V13-012",
+      "group": "contact",
+      "role_vi": "Người tiếp quản đang trao đổi với khách",
+      "gender": "female",
+      "ja": "金曜の状況報告では、確認が済んだこととまだ確認中のことを分けてお伝えします。",
+      "vi": "Khi báo tình hình vào thứ Sáu, tôi sẽ nêu riêng phần đã xác nhận và phần vẫn đang kiểm tra ạ.",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～を分けてお伝えする"
+    },
+    {
+      "id": "H-028-V13-013",
+      "group": "contact",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "先方の担当者がご不在なら、代理の方に決定権があるか確認してから日程を確約しましょう。",
+      "vi": "Nếu người phụ trách phía khách vắng mặt, ta hỏi xem người thay có quyền quyết không rồi mới cam kết lịch nhé.",
+      "terms": [
+        "先方",
+        "決定権",
+        "確約する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～があるか確認してから"
+    },
+    {
+      "id": "H-028-V13-014",
+      "group": "missing",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "先方が試用に使う端末の条件が引き継ぎ資料に見当たらないのですが、以前に確認した記録はありますか。",
+      "vi": "Trong hồ sơ bàn giao tôi không thấy yêu cầu về thiết bị khách sẽ dùng để chạy thử, anh có ghi chép lần trước đã xác nhận gì không?",
+      "terms": [
+        "先方"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～た記録はありますか"
+    },
+    {
+      "id": "H-028-V13-015",
+      "group": "missing",
+      "role_vi": "Người bàn giao tài khoản khách hàng",
+      "gender": "male",
+      "ja": "端末の条件は当時のメモと技術側の記録を照合して、明日の正午までに折り返します。",
+      "vi": "Về yêu cầu thiết bị, tôi sẽ đối chiếu ghi chú lúc đó với tài liệu bên kỹ thuật rồi gọi lại trước trưa mai.",
+      "terms": [
+        "照合する",
+        "折り返す"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～までに～する"
+    },
+    {
+      "id": "H-028-V13-016",
+      "group": "missing",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "端末の条件が未確定ですので、先方の希望と技術側の確認がそろうまでは試用日を決めません。",
+      "vi": "Yêu cầu về thiết bị còn chưa chốt, nên tôi sẽ chưa ấn định ngày dùng thử cho đến khi có cả yêu cầu của khách và xác nhận của bên kỹ thuật.",
+      "terms": [
+        "未確定",
+        "先方"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "～がそろうまでは"
+    },
+    {
+      "id": "H-028-V13-017",
+      "group": "missing",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "お客様からまた前任に電話があったら、かけ直しをお願いせず、私から折り返します。",
+      "vi": "Nếu khách lại gọi cho người phụ trách cũ, tôi sẽ chủ động gọi lại để khách khỏi phải gọi thêm lần nữa.",
+      "terms": [
+        "前任",
+        "折り返す"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～にかけ直してもらわず"
+    },
+    {
+      "id": "H-028-V13-018",
+      "group": "close",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "過去の約束について記録と先方のお話が食い違うときだけ、前任に経緯を確認します。",
+      "vi": "Tôi chỉ hỏi người phụ trách cũ về diễn biến khi hồ sơ và lời khách nói về cam kết trước đây không khớp nhau.",
+      "terms": [
+        "食い違う",
+        "前任",
+        "経緯"
+      ],
+      "scenes": [
+        "S016",
+        "S021",
+        "S023"
+      ],
+      "pattern": "～が食い違うときだけ"
+    },
+    {
+      "id": "H-028-V13-019",
+      "group": "close",
+      "role_vi": "Cấp trên của người tiếp quản",
+      "gender": "female",
+      "ja": "前任にあと一週間だけ記録の確認を手伝ってもらいますので、お客様の窓口は引き続きお願いします。",
+      "vi": "Tôi sẽ nhờ người phụ trách cũ hỗ trợ tra hồ sơ thêm một tuần thôi, chị vẫn tiếp tục làm đầu mối với khách nhé.",
+      "terms": [
+        "前任",
+        "窓口",
+        "引き続き"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～だけ～てもらう"
+    },
+    {
+      "id": "H-028-V13-020",
+      "group": "close",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "確認待ちの件は、担当者と次に確認する日を添えて、引き継ぎ後の状況を報告します。",
+      "vi": "Khi báo tình hình sau bàn giao, tôi sẽ nêu cả người phụ trách và ngày kiểm tra tiếp theo cho từng việc còn chờ xác nhận.",
+      "terms": [
+        "確認待ち"
+      ],
+      "scenes": [
+        "S021",
+        "S023"
+      ],
+      "pattern": "～を添えて伝える"
+    },
+    {
+      "id": "H-028-V13-021",
+      "group": "close",
+      "role_vi": "Người tiếp quản tài khoản khách hàng",
+      "gender": "female",
+      "ja": "引き継ぎ後は、先方と技術側の都合が合う範囲なら、試用日の候補は私の裁量で決めてよろしいでしょうか。",
+      "vi": "Sau bàn giao, tôi có thể tự chọn ngày dùng thử để đề xuất miễn là phù hợp với lịch của khách và bên kỹ thuật, đúng không ạ?",
+      "terms": [
+        "裁量",
+        "先方"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～なら自分で決めてよい"
+    }
+  ]
+}

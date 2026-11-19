@@ -1,0 +1,368 @@
+{
+  "code": "T-138",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "f0945cb208dbbffae61f44fd3a4d81a3dedb51f22986c57707d38c47dae7f0a6",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "start": "Hỏi đã xem đến đâu và đang bàn bản nào",
+    "react": "Nêu cảm tưởng và hỏi cách hiểu khác",
+    "news": "Đọc kỹ ngày, phần áp dụng và nguồn tin",
+    "conversation": "Giải thích ý hỏi hoặc đổi đề tài",
+    "next": "Chọn phim và hẹn lúc bàn tiếp"
+  },
+  "items": [
+    {
+      "id": "T-138-V13-001",
+      "group": "start",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "female",
+      "ja": "あの映画、どの場面まで見た？",
+      "vi": "Phim đó cậu xem tới cảnh nào rồi?",
+      "terms": [
+        "場面"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_viewing_progress"
+    },
+    {
+      "id": "T-138-V13-002",
+      "group": "start",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "male",
+      "ja": "まだ途中だから、結末は言わないでね。",
+      "vi": "Tớ vẫn đang xem dở, cậu đừng kể đoạn kết nhé.",
+      "terms": [
+        "途中",
+        "結末"
+      ],
+      "scenes": [
+        "S001",
+        "S024"
+      ],
+      "pattern": "set_spoiler_boundary"
+    },
+    {
+      "id": "T-138-V13-003",
+      "group": "start",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "female",
+      "ja": "映画版の話、それとも原作の小説の話？",
+      "vi": "Cậu đang nói bản phim hay tiểu thuyết gốc?",
+      "terms": [
+        "映画版",
+        "原作",
+        "小説"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "clarify_version"
+    },
+    {
+      "id": "T-138-V13-004",
+      "group": "start",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "female",
+      "ja": "まだ読んでないから、ネタバレなしで舞台だけ教えてくれる？",
+      "vi": "Tớ chưa đọc, cậu chỉ nói bối cảnh thôi, đừng tiết lộ tình tiết nhé?",
+      "terms": [
+        "ネタバレ",
+        "舞台"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "ask_limited_description"
+    },
+    {
+      "id": "T-138-V13-005",
+      "group": "start",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "male",
+      "ja": "夜だけ開く本屋を手伝う人が主人公で、閉店前に来るお客さんの話が少しずつつながるんだ。",
+      "vi": "Nhân vật chính làm phụ ở một hiệu sách chỉ mở ban đêm, rồi chuyện của những vị khách đến trước giờ đóng cửa dần nối với nhau.",
+      "terms": [
+        "主人公"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "describe_premise_briefly"
+    },
+    {
+      "id": "T-138-V13-006",
+      "group": "react",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "female",
+      "ja": "兄弟がバス停で黙って並んで立っている場面が、一番印象に残ったよ。",
+      "vi": "Tớ ấn tượng nhất cảnh hai anh em im lặng đứng cạnh nhau ở bến xe buýt.",
+      "terms": [
+        "場面",
+        "印象"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "name_memorable_scene"
+    },
+    {
+      "id": "T-138-V13-007",
+      "group": "react",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "male",
+      "ja": "兄が弟のぬれた靴をストーブのそばに置いたところに、気遣いを感じたよ。",
+      "vi": "Tớ thấy người anh vẫn quan tâm em qua cảnh anh ấy để đôi giày ướt của em cạnh lò sưởi.",
+      "terms": [
+        "気遣い"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "support_reading_with_detail"
+    },
+    {
+      "id": "T-138-V13-008",
+      "group": "react",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "female",
+      "ja": "映像はきれいだったけど、テンポがゆっくりで、途中で少し飽きちゃった。",
+      "vi": "Hình ảnh đẹp, nhưng nhịp phim chậm nên xem được nửa chừng thì tớ hơi chán.",
+      "terms": [
+        "映像",
+        "テンポ",
+        "途中",
+        "飽きる"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "state_mixed_reaction"
+    },
+    {
+      "id": "T-138-V13-009",
+      "group": "react",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "female",
+      "ja": "バス停の場面は好きだけど、結末では弟が兄に一言くらい話してほしかったな。",
+      "vi": "Tớ thích cảnh bến xe buýt, nhưng đến đoạn kết tớ vẫn muốn người em nói với anh ít nhất một câu.",
+      "terms": [
+        "場面",
+        "結末"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "state_mixed_reaction"
+    },
+    {
+      "id": "T-138-V13-010",
+      "group": "news",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "female",
+      "ja": "記事の要約しか読んでいないので、図書館が夜まで開く曜日はまだ分かりません。",
+      "vi": "Tôi mới đọc phần tóm tắt bài báo nên vẫn chưa biết thư viện mở tới tối vào ngày nào trong tuần.",
+      "terms": [
+        "記事",
+        "要約"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "state_what_is_unchecked"
+    },
+    {
+      "id": "T-138-V13-011",
+      "group": "news",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "female",
+      "ja": "展示が無料になる話は、主催者のお知らせで見ましたか、それとも誰かの投稿ですか。",
+      "vi": "Tin triển lãm miễn phí là anh xem trong thông báo của ban tổ chức hay bài đăng của ai đó ạ?",
+      "terms": [
+        "投稿"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "ask_where_claim_came_from"
+    },
+    {
+      "id": "T-138-V13-012",
+      "group": "news",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "female",
+      "ja": "８日は記事の掲載日で、本文に書いてある展示の開催期間は12日からです。",
+      "vi": "Ngày 8 là ngày đăng bài, còn trong nội dung bài thì triển lãm bắt đầu từ ngày 12.",
+      "terms": [
+        "記事",
+        "掲載日",
+        "本文",
+        "開催期間"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "correct_two_dates"
+    },
+    {
+      "id": "T-138-V13-013",
+      "group": "news",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "male",
+      "ja": "画像だけでは図書館の名前も開始日も分からないので、今夜、公式の案内を確かめますね。",
+      "vi": "Chỉ nhìn ảnh thì chưa biết tên thư viện hay ngày bắt đầu, tối nay tôi sẽ xem thông báo chính thức nhé.",
+      "terms": [
+        "公式",
+        "確かめる"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "check_official_source"
+    },
+    {
+      "id": "T-138-V13-014",
+      "group": "news",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "female",
+      "ja": "公式の案内では、来週から北分館は水曜だけ20時まで開くそうです。",
+      "vi": "Theo thông báo chính thức, từ tuần sau chi nhánh Bắc chỉ riêng thứ Tư mới mở đến 20 giờ.",
+      "terms": [
+        "公式"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "report_verified_scope"
+    },
+    {
+      "id": "T-138-V13-015",
+      "group": "conversation",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "female",
+      "ja": "夜は行けない事情があるなら、朝の回が残るか気になりますよね。",
+      "vi": "Nếu vướng việc buổi tối thì hẳn anh cũng lo không biết suất chiếu sáng có còn không nhỉ.",
+      "terms": [
+        "事情"
+      ],
+      "scenes": [
+        "S016",
+        "S020"
+      ],
+      "pattern": "reflect_other_priority"
+    },
+    {
+      "id": "T-138-V13-016",
+      "group": "conversation",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "male",
+      "ja": "手紙の返事を書かなかったのは、何を言えばいいか決められなかったからだと、私は読みました。",
+      "vi": "Theo cách tôi đọc, nhân vật không viết thư trả lời vì không biết nên nói gì.",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "offer_personal_interpretation"
+    },
+    {
+      "id": "T-138-V13-017",
+      "group": "conversation",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "female",
+      "ja": "反論したいわけじゃなくて、朝の上映にどんな人が来るのか知りたかったんです。",
+      "vi": "Tôi không có ý phản bác, tôi chỉ muốn biết những ai thường đi xem suất sáng thôi ạ.",
+      "terms": [
+        "反論する"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "clarify_reason_for_question"
+    },
+    {
+      "id": "T-138-V13-018",
+      "group": "conversation",
+      "role_vi": "Người quen nói về tin địa phương",
+      "gender": "female",
+      "ja": "今日はネットの言い争いの話はやめて、別の話題にしてもいいですか。",
+      "vi": "Hôm nay mình thôi bàn chuyện cãi nhau trên mạng và đổi đề tài được không ạ?",
+      "terms": [
+        "話題"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "ask_to_switch_subject"
+    },
+    {
+      "id": "T-138-V13-019",
+      "group": "next",
+      "role_vi": "Người bạn rủ bạn chọn phim",
+      "gender": "female",
+      "ja": "気楽に見られる映画なら、料理店が舞台の短いコメディーはどう？",
+      "vi": "Nếu muốn xem gì nhẹ nhàng, phim hài ngắn lấy bối cảnh quán ăn thì sao?",
+      "terms": [
+        "気楽",
+        "舞台",
+        "コメディー"
+      ],
+      "scenes": [
+        "S021",
+        "S023"
+      ],
+      "pattern": "recommend_by_preference"
+    },
+    {
+      "id": "T-138-V13-020",
+      "group": "next",
+      "role_vi": "Người bạn rủ bạn chọn phim",
+      "gender": "male",
+      "ja": "映画を見る前に原作を読みたいから、読み終えたら知らせてもいい？",
+      "vi": "Tớ muốn đọc nguyên tác trước khi xem phim, tớ đọc xong rồi báo cậu nhé?",
+      "terms": [
+        "原作",
+        "読み終える"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "choose_book_first"
+    },
+    {
+      "id": "T-138-V13-021",
+      "group": "next",
+      "role_vi": "Người bạn rủ bạn chọn phim",
+      "gender": "female",
+      "ja": "片方が映画の途中なら、二人とも見たところまでしか話さないことにしよう。",
+      "vi": "Nếu một đứa còn xem dở thì mình chỉ bàn đến chỗ cả hai đã xem nhé.",
+      "terms": [
+        "途中"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "set_spoiler_boundary"
+    },
+    {
+      "id": "T-138-V13-022",
+      "group": "next",
+      "role_vi": "Người bạn nói về phim hoặc sách",
+      "gender": "female",
+      "ja": "店の人が時計を直さずに返した理由がまだ気になるから、最初に時計を預けた場面を見直さない？",
+      "vi": "Tớ vẫn thắc mắc vì sao người ở tiệm trả chiếc đồng hồ mà không sửa, mình xem lại cảnh mang đồng hồ tới gửi lúc đầu nhé?",
+      "terms": [
+        "場面",
+        "見直す"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "invite_rewatch_for_a_clue"
+    }
+  ]
+}

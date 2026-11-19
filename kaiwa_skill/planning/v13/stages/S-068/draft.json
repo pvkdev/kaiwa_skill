@@ -1,0 +1,370 @@
+{
+  "code": "S-068",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "4e2946abd0effc339dfe4b9b8a65cf882e86ca8172c01f7ff98926526df2dd00",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "join": "Hỏi tham gia và nhận việc vừa sức",
+    "receive": "Tìm nhóm và xác nhận việc được giao",
+    "change": "Báo thay đổi và bàn giao",
+    "next": "Góp ý và hẹn báo buổi sau"
+  },
+  "items": [
+    {
+      "id": "S-068-V13-001",
+      "group": "join",
+      "role_vi": "Người hỏi lần đầu đi tình nguyện",
+      "gender": "female",
+      "ja": "日曜日のボランティアに参加できますか。",
+      "vi": "Tôi có thể tham gia buổi tình nguyện Chủ nhật không ạ?",
+      "terms": [
+        "ボランティア",
+        "参加する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_có_thể_tham_gia"
+    },
+    {
+      "id": "S-068-V13-002",
+      "group": "join",
+      "role_vi": "Người hỏi việc tình nguyện",
+      "gender": "female",
+      "ja": "午前中だけなら手伝えます。",
+      "vi": "Tôi chỉ có thể giúp vào buổi sáng ạ.",
+      "terms": [
+        "午前中",
+        "手伝う"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "nếu_thì_giúp_được"
+    },
+    {
+      "id": "S-068-V13-003",
+      "group": "join",
+      "role_vi": "Người phụ trách buổi tình nguyện",
+      "gender": "male",
+      "ja": "今週の活動はもう定員いっぱいです。",
+      "vi": "Buổi tình nguyện tuần này đã đủ người rồi ạ.",
+      "terms": [
+        "活動",
+        "定員"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "báo_đủ_người"
+    },
+    {
+      "id": "S-068-V13-004",
+      "group": "join",
+      "role_vi": "Người chưa có suất",
+      "gender": "female",
+      "ja": "今週がいっぱいなら、来週のボランティアに申し込めますか。",
+      "vi": "Nếu tuần này đã đủ người, tôi đăng ký buổi tình nguyện tuần sau được không ạ?",
+      "terms": [
+        "ボランティア",
+        "申し込む"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "xin_đăng_ký_buổi_khác"
+    },
+    {
+      "id": "S-068-V13-005",
+      "group": "join",
+      "role_vi": "Tình nguyện viên chưa quen máy tính",
+      "gender": "female",
+      "ja": "パソコンはあまり得意じゃないので、ほかの仕事を手伝ってもいいですか。",
+      "vi": "Tôi không thạo máy tính lắm, tôi phụ việc khác được không ạ?",
+      "terms": [
+        "手伝う"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "xin_đổi_việc"
+    },
+    {
+      "id": "S-068-V13-006",
+      "group": "receive",
+      "role_vi": "Tình nguyện viên tìm nhóm được phân",
+      "gender": "female",
+      "ja": "チラシを配る班の集合場所はどこですか。",
+      "vi": "Nhóm phát tờ rơi tập trung ở đâu ạ?",
+      "terms": [
+        "チラシ",
+        "配る",
+        "班",
+        "集合場所"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "hỏi_chỗ_tập_trung"
+    },
+    {
+      "id": "S-068-V13-007",
+      "group": "receive",
+      "role_vi": "Người hướng dẫn ở hội chợ",
+      "gender": "male",
+      "ja": "東口で、青い札を持った担当者に声をかけてください。",
+      "vi": "Ở cửa Đông, chị tìm gặp người phụ trách cầm thẻ màu xanh nhé.",
+      "terms": [
+        "東口",
+        "札",
+        "担当者"
+      ],
+      "scenes": [
+        "S005",
+        "S007"
+      ],
+      "pattern": "chỉ_người_phụ_trách"
+    },
+    {
+      "id": "S-068-V13-008",
+      "group": "receive",
+      "role_vi": "Tình nguyện viên xác nhận tên người phụ trách",
+      "gender": "female",
+      "ja": "東口で会う担当者は、上野さんではなく上田さんですね。",
+      "vi": "Người phụ trách tôi cần gặp ở cửa Đông là anh Ueda, không phải anh Ueno, đúng không ạ?",
+      "terms": [
+        "東口",
+        "担当者"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "sửa_tên_nghe_nhầm"
+    },
+    {
+      "id": "S-068-V13-009",
+      "group": "receive",
+      "role_vi": "Tình nguyện viên hỏi số bản đồ cần phát",
+      "gender": "female",
+      "ja": "会場の地図は何枚配ればいいですか。",
+      "vi": "Tôi cần phát bao nhiêu tờ bản đồ hội chợ ạ?",
+      "terms": [
+        "会場",
+        "地図",
+        "何枚",
+        "配る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hỏi_phạm_vi_việc"
+    },
+    {
+      "id": "S-068-V13-010",
+      "group": "receive",
+      "role_vi": "Tình nguyện viên nhắc lại công việc",
+      "gender": "male",
+      "ja": "会場の入口で、地図を二十枚配るんですね。",
+      "vi": "Tôi phát hai mươi tờ bản đồ ở lối vào hội chợ, đúng không ạ?",
+      "terms": [
+        "会場",
+        "入口",
+        "地図",
+        "～枚",
+        "配る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "nhắc_lại_việc_giao"
+    },
+    {
+      "id": "S-068-V13-011",
+      "group": "receive",
+      "role_vi": "Tình nguyện viên chỉ còn ít thời gian",
+      "gender": "female",
+      "ja": "あと十分しかいられないので、どの仕事を先にすればいいですか。",
+      "vi": "Tôi chỉ còn mười phút nữa, tôi nên làm việc nào trước ạ?",
+      "terms": [
+        "～分",
+        "先に"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "hỏi_việc_ưu_tiên"
+    },
+    {
+      "id": "S-068-V13-012",
+      "group": "change",
+      "role_vi": "Tình nguyện viên gọi báo vắng ca sáng",
+      "gender": "female",
+      "ja": "日曜の午前中は、地図を配りに行けなくなりました。",
+      "vi": "Sáng Chủ nhật tôi không tới phát bản đồ được nữa ạ.",
+      "terms": [
+        "午前中",
+        "地図",
+        "配る"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "báo_không_đến_được"
+    },
+    {
+      "id": "S-068-V13-013",
+      "group": "change",
+      "role_vi": "Tình nguyện viên đưa giờ thay thế",
+      "gender": "female",
+      "ja": "午後一時からなら、会場で手伝えます。",
+      "vi": "Từ một giờ chiều thì tôi có thể tới hội chợ phụ ạ.",
+      "terms": [
+        "午後",
+        "会場",
+        "手伝う"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nếu_thì_giúp_được"
+    },
+    {
+      "id": "S-068-V13-014",
+      "group": "change",
+      "role_vi": "Tình nguyện viên xác nhận lịch sau khi trời mưa",
+      "gender": "male",
+      "ja": "場所はB室に変わっても、午後一時に集まればいいですか。",
+      "vi": "Mình đổi sang phòng B nhưng vẫn tập trung lúc một giờ chiều, đúng không ạ?",
+      "terms": [
+        "午後"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "xác_nhận_nơi_mới_và_giờ"
+    },
+    {
+      "id": "S-068-V13-015",
+      "group": "change",
+      "role_vi": "Tình nguyện viên xin đổi việc nặng",
+      "gender": "female",
+      "ja": "この箱は一人で運ぶには重いので、別の仕事に変えてもらえますか。",
+      "vi": "Một mình tôi không bê nổi thùng này, anh đổi cho tôi việc khác được không ạ?",
+      "terms": [
+        "運ぶ",
+        "重い"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "xin_đổi_việc"
+    },
+    {
+      "id": "S-068-V13-016",
+      "group": "change",
+      "role_vi": "Tình nguyện viên hỏi trước khi rời đi",
+      "gender": "female",
+      "ja": "代わりの人が来るまで、地図を預かってもらえますか。",
+      "vi": "Anh giữ giúp tôi xấp bản đồ đến khi người thay tôi tới được không ạ?",
+      "terms": [
+        "代わり",
+        "地図",
+        "預かる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "nhờ_giữ_để_bàn_giao"
+    },
+    {
+      "id": "S-068-V13-017",
+      "group": "change",
+      "role_vi": "Tình nguyện viên báo cuối ca",
+      "gender": "male",
+      "ja": "会場の地図は三十枚配って、十枚残っています。",
+      "vi": "Tôi đã phát ba mươi tờ bản đồ hội chợ và còn lại mười tờ ạ.",
+      "terms": [
+        "会場",
+        "地図",
+        "～枚",
+        "配る",
+        "残る"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "báo_phần_xong_và_còn_lại"
+    },
+    {
+      "id": "S-068-V13-018",
+      "group": "next",
+      "role_vi": "Tình nguyện viên góp ý sau hội chợ",
+      "gender": "female",
+      "ja": "入口に地図の場所が分かる札を出してはどうですか。",
+      "vi": "Mình đặt biển chỉ chỗ lấy bản đồ ở lối vào thì sao ạ?",
+      "terms": [
+        "入口",
+        "地図",
+        "札"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "đề_xuất_cải_thiện"
+    },
+    {
+      "id": "S-068-V13-019",
+      "group": "next",
+      "role_vi": "Tình nguyện viên cảm ơn người nhận bàn giao",
+      "gender": "female",
+      "ja": "残りの地図を受け取っていただいて、ありがとうございます。",
+      "vi": "Cảm ơn anh đã nhận giúp tôi số bản đồ còn lại ạ.",
+      "terms": [
+        "残り",
+        "地図",
+        "受け取る",
+        "ありがとうございます"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "cảm_ơn_vì_việc_cụ_thể"
+    },
+    {
+      "id": "S-068-V13-020",
+      "group": "next",
+      "role_vi": "Người phụ trách dặn trước buổi dọn",
+      "gender": "male",
+      "ja": "片付けの日は、軍手と飲み物を持ってきてください。",
+      "vi": "Hôm phụ dọn dẹp, chị mang găng tay lao động và nước uống nhé.",
+      "terms": [
+        "片付ける",
+        "軍手",
+        "飲み物"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "dặn_mang_đồ"
+    },
+    {
+      "id": "S-068-V13-021",
+      "group": "next",
+      "role_vi": "Tình nguyện viên chưa chắc lịch",
+      "gender": "female",
+      "ja": "来週の片付けに参加できるか、木曜までに連絡します。",
+      "vi": "Tôi sẽ báo muộn nhất vào thứ Năm xem tuần sau có đi phụ dọn dẹp được không ạ.",
+      "terms": [
+        "片付ける",
+        "参加する",
+        "連絡する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "hẹn_lúc_báo"
+    }
+  ]
+}

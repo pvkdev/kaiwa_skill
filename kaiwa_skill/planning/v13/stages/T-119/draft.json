@@ -1,0 +1,390 @@
+{
+  "code": "T-119",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "0ecef0c6fdc121a34cf1abb9494817b2c9824e492ca226dbb3755850e13002ad",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "seat": "Đón khách và nói rõ chỗ ngồi",
+    "order": "Nhận món và kiểm yêu cầu riêng",
+    "change": "Đề nghị món thay hoặc kiểm khả năng đổi món",
+    "serve": "Mang món, sửa món sai và hỏi thời điểm lên món",
+    "payment": "Tính tiền và kiểm khoản bị ghi nhầm",
+    "follow": "Xử lý món chậm, yêu cầu hủy và đồ để quên"
+  },
+  "items": [
+    {
+      "id": "T-119-V13-001",
+      "group": "seat",
+      "role_vi": "Nhân viên vừa đón khách vào quán",
+      "gender": "female",
+      "ja": "いらっしゃいませ、本日は何名様ですか。",
+      "vi": "Xin chào quý khách, hôm nay anh đi mấy người ạ?",
+      "terms": [
+        "いらっしゃいませ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "いらっしゃいませ、何名様ですか"
+    },
+    {
+      "id": "T-119-V13-002",
+      "group": "seat",
+      "role_vi": "Nhân viên xác nhận khách đã đặt bàn chưa",
+      "gender": "male",
+      "ja": "お席のご予約はございますか。",
+      "vi": "Chị đã đặt bàn trước chưa ạ?",
+      "terms": [
+        "ご予約"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～のご予約はございますか"
+    },
+    {
+      "id": "T-119-V13-003",
+      "group": "seat",
+      "role_vi": "Nhân viên hỏi khu ngồi phù hợp với khách",
+      "gender": "female",
+      "ja": "奥に二名様のお席がございますが、そちらでよろしいですか。",
+      "vi": "Phía trong có bàn hai người, anh ngồi ở đó được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～がございますが、そちらでよろしいですか"
+    },
+    {
+      "id": "T-119-V13-004",
+      "group": "seat",
+      "role_vi": "Nhân viên báo quán kín và nói khoảng chờ",
+      "gender": "male",
+      "ja": "ただいま満席なので、二十分ほどお待ちいただくことになりそうです。",
+      "vi": "Hiện quán đang kín bàn, có lẽ chị sẽ phải đợi khoảng hai mươi phút ạ.",
+      "terms": [
+        "満席"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～なので、～ことになりそうです"
+    },
+    {
+      "id": "T-119-V13-005",
+      "group": "seat",
+      "role_vi": "Nhân viên nêu giới hạn thời gian trước khi mời khách ngồi",
+      "gender": "female",
+      "ja": "次のご予約が入っているので、この席は十二時五十分までご利用いただけます。",
+      "vi": "Vì bàn này có khách đặt sau nên anh có thể ngồi đến mười hai giờ năm mươi ạ.",
+      "terms": [
+        "ご予約"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ので、～までご利用いただけます"
+    },
+    {
+      "id": "T-119-V13-006",
+      "group": "order",
+      "role_vi": "Nhân viên xin ghi món từng người",
+      "gender": "male",
+      "ja": "お決まりでしたら、お一人ずつご注文を伺います。",
+      "vi": "Nếu quý khách đã chọn xong, tôi xin nhận món của từng người ạ.",
+      "terms": [
+        "伺う"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～でしたら、～を伺います"
+    },
+    {
+      "id": "T-119-V13-007",
+      "group": "order",
+      "role_vi": "Nhân viên đọc lại hai món và giờ mang đồ uống",
+      "gender": "female",
+      "ja": "焼き魚定食とカレーがお一つずつで、コーヒーは食後でよろしいですか。",
+      "vi": "Một suất cá nướng, một phần cà ri và cà phê để sau bữa, đúng không ạ?",
+      "terms": [
+        "定食",
+        "食後"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "～でよろしいですか"
+    },
+    {
+      "id": "T-119-V13-008",
+      "group": "order",
+      "role_vi": "Nhân viên xác nhận khách muốn bớt cay",
+      "gender": "male",
+      "ja": "辛さは控えめにして、ソースは別添えでよろしいですか。",
+      "vi": "Món làm bớt cay và để sốt riêng, đúng ý chị không ạ?",
+      "terms": [
+        "控えめ",
+        "別添え"
+      ],
+      "scenes": [
+        "S007",
+        "S013",
+        "S014"
+      ],
+      "pattern": "～でよろしいですか"
+    },
+    {
+      "id": "T-119-V13-009",
+      "group": "order",
+      "role_vi": "Nhân viên nói sẽ hỏi bếp rồi mới nhận món có nghi ngờ",
+      "gender": "female",
+      "ja": "スープの原材料を厨房に確認するので、この料理のご注文は少しお待ちください。",
+      "vi": "Tôi sẽ hỏi bếp về nguyên liệu của món súp, anh chờ một chút rồi hẵng gọi món này nhé.",
+      "terms": [
+        "原材料",
+        "厨房"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "～ので、～は少しお待ちください"
+    },
+    {
+      "id": "T-119-V13-010",
+      "group": "change",
+      "role_vi": "Nhân viên đề nghị món thay khi cá thu hết",
+      "gender": "male",
+      "ja": "さばは売り切れてしまいましたが、鮭の定食ならご用意できます。",
+      "vi": "Cá thu đã bán hết, nhưng quán còn suất cá hồi ạ.",
+      "terms": [
+        "売り切れる",
+        "定食"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～ましたが、～ならご用意できます"
+    },
+    {
+      "id": "T-119-V13-011",
+      "group": "change",
+      "role_vi": "Nhân viên báo thời gian dự kiến lên món đã chọn",
+      "gender": "female",
+      "ja": "親子丼でしたら、十分ほどでお出しできると思います。",
+      "vi": "Nếu anh chọn cơm gà trứng, tôi nghĩ khoảng mười phút nữa có thể mang ra ạ.",
+      "terms": [
+        "お出しする"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～でしたら、～できると思います"
+    },
+    {
+      "id": "T-119-V13-012",
+      "group": "change",
+      "role_vi": "Nhân viên chỉ cách gọi khi khách cần thêm thời gian chọn",
+      "gender": "male",
+      "ja": "ご注文が決まりましたら、テーブルのボタンでお呼びください。",
+      "vi": "Khi chọn xong, chị bấm nút trên bàn để gọi tôi nhé.",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ましたら、～でお呼びください"
+    },
+    {
+      "id": "T-119-V13-013",
+      "group": "change",
+      "role_vi": "Nhân viên hỏi bếp trước khi đồng ý đổi món đã bắt đầu làm",
+      "gender": "female",
+      "ja": "ラーメンはもう調理中なので、チャーハンに変えられるか厨房に確認します。",
+      "vi": "Bếp đang làm ramen rồi, tôi sẽ hỏi xem còn đổi sang cơm chiên được không ạ.",
+      "terms": [
+        "調理",
+        "厨房"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ので、～か厨房に確認します"
+    },
+    {
+      "id": "T-119-V13-014",
+      "group": "serve",
+      "role_vi": "Nhân viên hỏi khi thấy phần sốt khác yêu cầu",
+      "gender": "male",
+      "ja": "ソースは別添えでご注文でしたか。",
+      "vi": "Chị gọi món với sốt để riêng phải không ạ?",
+      "terms": [
+        "別添え"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～でご注文でしたか"
+    },
+    {
+      "id": "T-119-V13-015",
+      "group": "serve",
+      "role_vi": "Nhân viên nhận mang sai và hẹn làm lại",
+      "gender": "female",
+      "ja": "申し訳ございません、ソースをかけていないチキンを作り直します。",
+      "vi": "Tôi thành thật xin lỗi, quán sẽ làm lại phần gà không rưới sốt ạ.",
+      "terms": [
+        "申し訳ございません",
+        "作り直す"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "申し訳ございません、～します"
+    },
+    {
+      "id": "T-119-V13-016",
+      "group": "serve",
+      "role_vi": "Nhân viên hỏi trước khi dọn đĩa đang dùng",
+      "gender": "male",
+      "ja": "デザートをお持ちする前に、このお皿をお下げしてもよろしいですか。",
+      "vi": "Trước khi mang món tráng miệng, tôi xin dọn đĩa này được không ạ?",
+      "terms": [
+        "お下げする"
+      ],
+      "scenes": [
+        "S014",
+        "S016"
+      ],
+      "pattern": "～前に、～てもよろしいですか"
+    },
+    {
+      "id": "T-119-V13-017",
+      "group": "payment",
+      "role_vi": "Nhân viên hỏi khách muốn trả chung hay tách hóa đơn",
+      "gender": "female",
+      "ja": "お会計はご一緒ですか、別会計にしますか。",
+      "vi": "Quý khách muốn thanh toán chung hay trả riêng ạ?",
+      "terms": [
+        "お会計",
+        "別会計"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～は～ですか、～にしますか"
+    },
+    {
+      "id": "T-119-V13-018",
+      "group": "payment",
+      "role_vi": "Nhân viên giải thích cà phê tính riêng",
+      "gender": "male",
+      "ja": "伝票ではコーヒーは単品になっているので、お料理とは別の料金です。",
+      "vi": "Theo phiếu gọi món, cà phê là đồ uống gọi riêng nên tính thêm ngoài giá món ăn ạ.",
+      "terms": [
+        "伝票",
+        "単品"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～ので、～とは別です"
+    },
+    {
+      "id": "T-119-V13-019",
+      "group": "payment",
+      "role_vi": "Nhân viên xin khách khoan thanh toán để kiểm đơn",
+      "gender": "female",
+      "ja": "元の注文と伝票を照らし合わせますので、お支払いは少しお待ちください。",
+      "vi": "Tôi sẽ đối chiếu đơn gốc với phiếu tính tiền, anh khoan thanh toán một chút nhé.",
+      "terms": [
+        "伝票",
+        "照らし合わせる"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～ので、～は少しお待ちください"
+    },
+    {
+      "id": "T-119-V13-020",
+      "group": "payment",
+      "role_vi": "Nhân viên báo đã xóa khoản trùng và đọc lại tổng",
+      "gender": "male",
+      "ja": "二重に入っていたコーヒーを一杯分取り消したので、合計は千五百円です。",
+      "vi": "Tôi đã bỏ tiền một ly cà phê bị tính trùng, tổng còn một nghìn năm trăm yên ạ.",
+      "terms": [
+        "二重",
+        "取り消す"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～ので、合計は～です"
+    },
+    {
+      "id": "T-119-V13-021",
+      "group": "follow",
+      "role_vi": "Nhân viên hỏi khách rời quán lúc nào để báo bếp",
+      "gender": "female",
+      "ja": "お料理の時間を確認しますので、何時までにお店を出るご予定か教えていただけますか。",
+      "vi": "Tôi sẽ kiểm tra giờ lên món, anh cho tôi biết mình muốn rời quán chậm nhất lúc mấy giờ được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～ので、～か教えていただけますか"
+    },
+    {
+      "id": "T-119-V13-022",
+      "group": "follow",
+      "role_vi": "Nhân viên xin phép mang món có thể lên sớm trước",
+      "gender": "male",
+      "ja": "パスタなら先にお出しできますが、お持ちしてもよろしいですか。",
+      "vi": "Nếu là mì Ý thì có thể mang lên trước, tôi mang ra trước cho chị nhé?",
+      "terms": [
+        "お出しする"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～てもよろしいですか"
+    },
+    {
+      "id": "T-119-V13-023",
+      "group": "follow",
+      "role_vi": "Nhân viên báo sẽ hỏi quản lý về hủy và tính tiền",
+      "gender": "female",
+      "ja": "グラタンだけ取り消せるか、お会計に入るかも含めて責任者に確認します。",
+      "vi": "Tôi sẽ hỏi quản lý xem có hủy riêng món gratin được không và món đó có bị tính tiền không ạ.",
+      "terms": [
+        "取り消す",
+        "お会計",
+        "責任者"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～かも含めて、～に確認します"
+    },
+    {
+      "id": "T-119-V13-024",
+      "group": "follow",
+      "role_vi": "Nhân viên hỏi thông tin để tìm đồ khách bỏ quên",
+      "gender": "male",
+      "ja": "お忘れ物を探しますので、何時ごろどのお席にいらしたか教えていただけますか。",
+      "vi": "Để tìm đồ chị bỏ quên, chị cho tôi biết mình ngồi ở bàn nào và vào khoảng mấy giờ được không ạ?",
+      "terms": [
+        "お忘れ物"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～ので、～か教えていただけますか"
+    }
+  ]
+}

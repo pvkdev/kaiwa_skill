@@ -1,0 +1,379 @@
+{
+  "code": "S-020",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "9a1e492c293e49a7d9d38624195c27c23871f4b8bcd79fa625844fc18f903327",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "daily": "Nhắc lại giờ và thứ tự việc",
+    "priority": "Chốt việc nào làm trước",
+    "delay": "Điều chỉnh giờ dùng phòng",
+    "share": "Chia phần việc và báo khi phải chờ",
+    "pass": "Báo phần còn lại và bàn giao"
+  },
+  "items": [
+    {
+      "id": "S-020-V13-001",
+      "group": "daily",
+      "role_vi": "Nhân viên nhắc lại giờ nhận hàng cho trưởng nhóm",
+      "gender": "female",
+      "ja": "荷物は十一時に受け取ります。",
+      "vi": "Tôi nhận hàng lúc mười một giờ ạ.",
+      "terms": [
+        "荷物",
+        "時",
+        "受け取る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "time_ni_verb_masu"
+    },
+    {
+      "id": "S-020-V13-002",
+      "group": "daily",
+      "role_vi": "Trưởng nhóm nhắc giờ bắt đầu cuộc họp chiều",
+      "gender": "male",
+      "ja": "会議は午後二時からです。",
+      "vi": "Cuộc họp bắt đầu lúc hai giờ chiều ạ.",
+      "terms": [
+        "会議",
+        "午後",
+        "時"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "time_kara_desu"
+    },
+    {
+      "id": "S-020-V13-003",
+      "group": "daily",
+      "role_vi": "Nhân viên hỏi lại giờ họp vì nhầm với giờ nhận hàng",
+      "gender": "female",
+      "ja": "会議は十一時じゃなくて午後二時ですね。",
+      "vi": "Họp lúc hai giờ chiều, không phải mười một giờ, đúng không ạ?",
+      "terms": [
+        "会議",
+        "時",
+        "午後"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "a_ja_nakute_b"
+    },
+    {
+      "id": "S-020-V13-004",
+      "group": "daily",
+      "role_vi": "Trưởng nhóm yêu cầu kiểm danh sách trước khi làm việc kế tiếp",
+      "gender": "male",
+      "ja": "先にリストを確認してください。",
+      "vi": "Chị kiểm tra danh sách trước nhé.",
+      "terms": [
+        "先に",
+        "リスト",
+        "確認する"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "saki_ni_te_kudasai"
+    },
+    {
+      "id": "S-020-V13-005",
+      "group": "priority",
+      "role_vi": "Nhân viên hỏi nên làm danh sách hay bảng giá trước vì cùng hạn",
+      "gender": "female",
+      "ja": "リストと値段の表はどちらを先にしますか。",
+      "vi": "Tôi làm danh sách hay bảng giá trước ạ?",
+      "terms": [
+        "リスト",
+        "値段",
+        "表",
+        "先に"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "dochira_wo_saki_ni"
+    },
+    {
+      "id": "S-020-V13-006",
+      "group": "priority",
+      "role_vi": "Trưởng nhóm chốt danh sách là việc cần ưu tiên",
+      "gender": "male",
+      "ja": "リストを先にお願いします。",
+      "vi": "Nhờ chị làm danh sách trước nhé.",
+      "terms": [
+        "リスト",
+        "先に"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "noun_wo_saki_ni"
+    },
+    {
+      "id": "S-020-V13-007",
+      "group": "priority",
+      "role_vi": "Nhân viên hỏi hạn mới cho bảng giá sau khi đã xếp lại việc",
+      "gender": "female",
+      "ja": "値段の表は午後三時まででいいですか。",
+      "vi": "Bảng giá xong chậm nhất là ba giờ chiều được không ạ?",
+      "terms": [
+        "値段",
+        "表",
+        "午後",
+        "時"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "made_de_ii_desu_ka"
+    },
+    {
+      "id": "S-020-V13-008",
+      "group": "priority",
+      "role_vi": "Nhân viên hỏi nên làm bảng giá hay email cho khách trước vào sáng mai",
+      "gender": "male",
+      "ja": "明日は値段の表とメールのどちらを先にしますか。",
+      "vi": "Ngày mai tôi làm bảng giá hay email trước ạ?",
+      "terms": [
+        "明日",
+        "値段",
+        "表",
+        "メール",
+        "先に"
+      ],
+      "scenes": [
+        "S010",
+        "S011"
+      ],
+      "pattern": "dochira_wo_saki_ni"
+    },
+    {
+      "id": "S-020-V13-009",
+      "group": "priority",
+      "role_vi": "Trưởng nhóm chưa quyết định thứ tự và hẹn nói lại vào sáng mai",
+      "gender": "male",
+      "ja": "仕事の順番は明日の朝に伝えます。",
+      "vi": "Sáng mai tôi sẽ báo thứ tự công việc ạ.",
+      "terms": [
+        "順番",
+        "明日",
+        "伝える"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "time_ni_verb_masu"
+    },
+    {
+      "id": "S-020-V13-010",
+      "group": "delay",
+      "role_vi": "Nhân viên hỏi đồng nghiệp dùng phòng chung đến lúc nào",
+      "gender": "female",
+      "ja": "この部屋は何時まで使いますか。",
+      "vi": "Anh dùng phòng này đến mấy giờ ạ?",
+      "terms": [
+        "時"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "nanji_made_verb_ka"
+    },
+    {
+      "id": "S-020-V13-011",
+      "group": "delay",
+      "role_vi": "Đồng nghiệp báo thời gian dùng phòng thay đổi do họp kéo dài",
+      "gender": "male",
+      "ja": "会議が延びたので、部屋は一時半まで使います。",
+      "vi": "Cuộc họp kéo dài nên tôi sẽ dùng phòng đến một giờ rưỡi ạ.",
+      "terms": [
+        "会議",
+        "延びる",
+        "時",
+        "半"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "node_verb_masu"
+    },
+    {
+      "id": "S-020-V13-012",
+      "group": "delay",
+      "role_vi": "Nhân viên chuyển giờ chuẩn bị tài liệu vì phòng đang bận",
+      "gender": "female",
+      "ja": "資料の準備は一時半から始めます。",
+      "vi": "Tôi sẽ bắt đầu chuẩn bị tài liệu lúc một giờ rưỡi ạ.",
+      "terms": [
+        "資料",
+        "時",
+        "半"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "time_kara_verb_masu"
+    },
+    {
+      "id": "S-020-V13-013",
+      "group": "share",
+      "role_vi": "Nhân viên nhận nhiệm vụ nhập số liệu trước khi đồng nghiệp in",
+      "gender": "female",
+      "ja": "私が先に数字を入れます。",
+      "vi": "Để tôi nhập số liệu trước nhé.",
+      "terms": [
+        "先に",
+        "数字",
+        "入れる"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "watashi_ga_saki_ni"
+    },
+    {
+      "id": "S-020-V13-014",
+      "group": "share",
+      "role_vi": "Nhân viên nhờ đồng nghiệp tiếp nhận phần in sau khi đã nhập số",
+      "gender": "male",
+      "ja": "数字を入れたら、印刷をお願いします。",
+      "vi": "Khi tôi nhập số liệu xong, nhờ anh in giúp nhé.",
+      "terms": [
+        "数字",
+        "入れる",
+        "印刷"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "tara_onegaishimasu"
+    },
+    {
+      "id": "S-020-V13-015",
+      "group": "share",
+      "role_vi": "Người phụ trách nhập liệu báo chưa nhận bảng số liệu",
+      "gender": "female",
+      "ja": "数字の表がまだ届いていません。",
+      "vi": "Bảng số liệu vẫn chưa tới ạ.",
+      "terms": [
+        "数字",
+        "表",
+        "まだ",
+        "届く"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "mada_verb_teimasen"
+    },
+    {
+      "id": "S-020-V13-016",
+      "group": "share",
+      "role_vi": "Đồng nghiệp nhờ người nhập liệu gửi tệp khi làm xong",
+      "gender": "male",
+      "ja": "ファイルができたら送ってください。",
+      "vi": "Chị gửi tệp cho tôi khi làm xong nhé.",
+      "terms": [
+        "ファイル",
+        "送る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "tara_te_kudasai"
+    },
+    {
+      "id": "S-020-V13-017",
+      "group": "share",
+      "role_vi": "Người nhập liệu hứa báo ngay khi có bảng số",
+      "gender": "female",
+      "ja": "表が届いたらすぐ連絡します。",
+      "vi": "Khi bảng số liệu tới tôi sẽ báo ngay ạ.",
+      "terms": [
+        "表",
+        "届く",
+        "すぐ",
+        "連絡する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "tara_verb_masu"
+    },
+    {
+      "id": "S-020-V13-018",
+      "group": "pass",
+      "role_vi": "Nhân viên báo phần danh sách đã hoàn thành vào cuối ngày",
+      "gender": "male",
+      "ja": "リストはもう終わりました。",
+      "vi": "Danh sách đã xong rồi ạ.",
+      "terms": [
+        "リスト",
+        "終わる"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "mou_verb_past"
+    },
+    {
+      "id": "S-020-V13-019",
+      "group": "pass",
+      "role_vi": "Nhân viên báo vẫn chưa thể hoàn tất vì còn thiếu một mức giá",
+      "gender": "female",
+      "ja": "値段の表に、まだわからない値段が一つだけあります。",
+      "vi": "Trong bảng giá vẫn còn đúng một mức giá chưa biết ạ.",
+      "terms": [
+        "値段",
+        "表",
+        "まだ"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "Nが一つだけあります"
+    },
+    {
+      "id": "S-020-V13-020",
+      "group": "pass",
+      "role_vi": "Nhân viên hỏi ca tối có cần nhận bàn giao tập tài liệu chưa kiểm không",
+      "gender": "female",
+      "ja": "この資料は夜の担当に渡しますか。",
+      "vi": "Tôi có cần giao tập tài liệu này cho người phụ trách ca tối không ạ?",
+      "terms": [
+        "資料",
+        "担当",
+        "渡す"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "person_ni_watashimasu_ka"
+    },
+    {
+      "id": "S-020-V13-021",
+      "group": "pass",
+      "role_vi": "Nhân viên nói rõ tình trạng tài liệu lúc giao cho ca tối",
+      "gender": "male",
+      "ja": "この資料はまだ確認待ちです。",
+      "vi": "Tập tài liệu này vẫn đang chờ kiểm tra ạ.",
+      "terms": [
+        "資料",
+        "まだ",
+        "確認待ち"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "mada_noun_desu"
+    }
+  ]
+}

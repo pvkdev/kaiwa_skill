@@ -1,0 +1,320 @@
+{
+  "code": "T-140",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "ad17372e756dc027f690f376a75feb880a6499ead694d79268c08da4277a5d25",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "plan": "Kiểm điểm tập trung và cách liên lạc",
+    "needs": "Nói rõ người nhà cần hỗ trợ đi lại",
+    "alert": "Hỏi cảnh báo áp dụng ở đâu và cần làm gì",
+    "route": "Xác nhận đường đi và điểm còn tiếp nhận",
+    "safe": "Báo đã tới nơi và hỏi mốc tin tiếp theo"
+  },
+  "items": [
+    {
+      "id": "T-140-V13-001",
+      "group": "plan",
+      "role_vi": "Cư dân hỏi hàng xóm hoặc ban quản lý",
+      "gender": "female",
+      "ja": "防災訓練の集合場所はどこですか。",
+      "vi": "Điểm tập trung của buổi diễn tập phòng chống thiên tai ở đâu ạ?",
+      "terms": [
+        "防災訓練",
+        "集合場所"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_current_location"
+    },
+    {
+      "id": "T-140-V13-002",
+      "group": "plan",
+      "role_vi": "Cư dân hỏi hàng xóm hoặc ban quản lý",
+      "gender": "female",
+      "ja": "訓練の時間が変わったら、どこで確認できますか。",
+      "vi": "Nếu giờ diễn tập thay đổi, tôi có thể xem thông báo ở đâu ạ?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "ask_where_to_confirm"
+    },
+    {
+      "id": "T-140-V13-003",
+      "group": "plan",
+      "role_vi": "Người trong gia đình trao đổi trước mùa mưa",
+      "gender": "male",
+      "ja": "電話がつながらなかったら、安全な場所に着いてから短いメッセージを送ろう。",
+      "vi": "Nếu không gọi được thì mình tới nơi an toàn rồi nhắn ngắn cho nhau nhé.",
+      "terms": [
+        "つながる"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "agree_alternative_contact"
+    },
+    {
+      "id": "T-140-V13-004",
+      "group": "plan",
+      "role_vi": "Cư dân hỏi hàng xóm hoặc ban quản lý",
+      "gender": "female",
+      "ja": "古い紙と町内会の掲示で場所が違うんですが、どちらが今回の訓練の案内ですか。",
+      "vi": "Giấy cũ và bảng tin của hội khu phố ghi hai chỗ khác nhau. Đợt diễn tập lần này theo thông báo nào ạ?",
+      "terms": [
+        "町内会",
+        "掲示"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "confirm_current_notice"
+    },
+    {
+      "id": "T-140-V13-005",
+      "group": "plan",
+      "role_vi": "Cư dân hỏi hàng xóm hoặc ban quản lý",
+      "gender": "female",
+      "ja": "桜公園は訓練の集合場所だそうですが、実際に避難するときは、どこで最新情報を確認すればいいですか。",
+      "vi": "Tôi nghe nói công viên Sakura là điểm tập trung diễn tập. Khi thật sự phải sơ tán, tôi xem tin mới nhất ở đâu ạ?",
+      "terms": [
+        "集合場所",
+        "最新情報"
+      ],
+      "scenes": [
+        "S001",
+        "S002",
+        "S005"
+      ],
+      "pattern": "distinguish_drill_and_actual_information"
+    },
+    {
+      "id": "T-140-V13-006",
+      "group": "needs",
+      "role_vi": "Người trong gia đình trao đổi trước mùa mưa",
+      "gender": "female",
+      "ja": "母は杖を使うので、長い階段は一人で下りられないんだ。",
+      "vi": "Mẹ đi gậy nên không tự xuống cầu thang dài được.",
+      "terms": [
+        "杖"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "state_mobility_limit"
+    },
+    {
+      "id": "T-140-V13-007",
+      "group": "needs",
+      "role_vi": "Cư dân hỏi hàng xóm hoặc ban quản lý",
+      "gender": "female",
+      "ja": "大雨で母と避難するとき、段差の少ない経路をどこで確認できますか。",
+      "vi": "Khi phải sơ tán cùng mẹ vì mưa lớn, tôi có thể xem ở đâu để biết lối nào ít bậc ạ?",
+      "terms": [
+        "段差"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "ask_where_to_confirm"
+    },
+    {
+      "id": "T-140-V13-008",
+      "group": "needs",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "母は杖を使っていて、この坂をみんなと同じ速さでは上れません。",
+      "vi": "Mẹ tôi dùng gậy nên không thể lên dốc này nhanh bằng mọi người ạ.",
+      "terms": [
+        "杖"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "state_mobility_limit"
+    },
+    {
+      "id": "T-140-V13-009",
+      "group": "needs",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "母とここで待っていますので、移動を手伝える係の方を呼んでいただけますか。",
+      "vi": "Tôi sẽ đợi ở đây với mẹ, anh gọi giúp người có thể hỗ trợ hai mẹ con di chuyển được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "ask_for_on_site_help"
+    },
+    {
+      "id": "T-140-V13-010",
+      "group": "alert",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "今の放送が聞き取れなかったんですが、この建物も対象区域に入っていますか。",
+      "vi": "Tôi không nghe rõ thông báo qua loa, tòa nhà này cũng thuộc khu vực áp dụng phải không ạ?",
+      "terms": [
+        "放送",
+        "聞き取る",
+        "対象区域"
+      ],
+      "scenes": [
+        "S006",
+        "S009"
+      ],
+      "pattern": "ask_if_notice_applies"
+    },
+    {
+      "id": "T-140-V13-011",
+      "group": "alert",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "今は準備をすればいいですか、それとも、もう移動したほうがいいですか。",
+      "vi": "Bây giờ tôi chỉ cần chuẩn bị hay đã tới lúc phải di chuyển ạ?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "ask_what_to_do_now"
+    },
+    {
+      "id": "T-140-V13-012",
+      "group": "alert",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "避難先へ案内してくれる係の方は、今どこにいらっしゃいますか。",
+      "vi": "Người hướng dẫn tới điểm sơ tán hiện đứng ở đâu ạ?",
+      "terms": [],
+      "scenes": [
+        "S006",
+        "S009"
+      ],
+      "pattern": "ask_current_location"
+    },
+    {
+      "id": "T-140-V13-013",
+      "group": "route",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "川沿いの道が通行止めなので、避難先へはどの道を通ればいいですか。",
+      "vi": "Đường ven sông đang đóng, tôi đi lối nào tới điểm sơ tán ạ?",
+      "terms": [
+        "川沿い",
+        "通行止め"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "ask_open_route"
+    },
+    {
+      "id": "T-140-V13-014",
+      "group": "route",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "母と青葉交流館の北入口にいるんですが、この列について行ってもいいですか。",
+      "vi": "Tôi đang ở lối vào phía bắc của nhà sinh hoạt Aoba cùng mẹ, hai mẹ con tôi có thể đi theo hàng này không ạ?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "confirm_current_route"
+    },
+    {
+      "id": "T-140-V13-015",
+      "group": "route",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "母は長く歩けないので、次に受け入れている場所まで、付き添いをお願いできますか。",
+      "vi": "Mẹ tôi không đi bộ lâu được, anh có thể thu xếp người đi cùng đến điểm còn tiếp nhận không ạ?",
+      "terms": [
+        "受け入れ",
+        "付き添い"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "ask_for_on_site_help"
+    },
+    {
+      "id": "T-140-V13-016",
+      "group": "safe",
+      "role_vi": "Người thân báo cho gia đình qua điện thoại",
+      "gender": "female",
+      "ja": "もう母と二人で避難先に着いたから、さっきいた場所には探しに来なくていいよ。",
+      "vi": "Chị và mẹ đã tới điểm sơ tán rồi, em không cần đến chỗ lúc nãy tìm hai mẹ con nữa nhé.",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "report_arrival_and_prevent_wrong_search"
+    },
+    {
+      "id": "T-140-V13-017",
+      "group": "safe",
+      "role_vi": "Người thân báo cho gia đình qua điện thoại",
+      "gender": "male",
+      "ja": "今は北町中学校の体育館の中にいて、無事だよ。",
+      "vi": "Em đang ở trong nhà thi đấu của trường THCS Kitamachi, em vẫn bình an nhé.",
+      "terms": [
+        "無事"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "report_current_place"
+    },
+    {
+      "id": "T-140-V13-018",
+      "group": "safe",
+      "role_vi": "Người thân báo cho gia đình qua điện thoại",
+      "gender": "female",
+      "ja": "避難先がまた変わったら、安全な所に着いてから現在地を知らせるね。",
+      "vi": "Nếu lại đổi điểm sơ tán, đến nơi an toàn rồi chị sẽ báo mình đang ở đâu nhé.",
+      "terms": [
+        "現在地"
+      ],
+      "scenes": [
+        "S008",
+        "S010",
+        "S014"
+      ],
+      "pattern": "commit_update_after_arrival"
+    },
+    {
+      "id": "T-140-V13-019",
+      "group": "safe",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "入口の掲示を更新するのは、何時ごろの予定ですか。",
+      "vi": "Dự kiến khoảng mấy giờ sẽ cập nhật bảng thông báo ở lối vào ạ?",
+      "terms": [
+        "掲示",
+        "更新する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "ask_next_update_time"
+    },
+    {
+      "id": "T-140-V13-020",
+      "group": "safe",
+      "role_vi": "Người sơ tán hỏi nhân viên hướng dẫn",
+      "gender": "female",
+      "ja": "18時は帰れる時刻じゃなくて、次の情報が出る目安ということですね。",
+      "vi": "18 giờ là mốc dự kiến có thông tin tiếp theo, chưa phải giờ được về, đúng không ạ?",
+      "terms": [
+        "目安"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "confirm_what_time_means"
+    }
+  ]
+}

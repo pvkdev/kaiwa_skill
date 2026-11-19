@@ -1,0 +1,421 @@
+{
+  "code": "S-034",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "6f16d6c81e870eec0dae637fe165d3e75f6bd0adc2cab652c8a34c733ef88c1c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "book": "Đặt lịch và chốt dịch vụ",
+    "style": "Chỉ kiểu tóc và độ dài",
+    "check": "Kiểm tra khi cắt và chỉnh dáng",
+    "return": "Hỏi lại và nói rõ kiểu lần sau"
+  },
+  "items": [
+    {
+      "id": "S-034-V13-001",
+      "group": "book",
+      "role_vi": "Khách gọi đặt lịch cắt tóc",
+      "gender": "male",
+      "ja": "今日の午後、カットを予約できますか。",
+      "vi": "Chiều nay tôi đặt lịch cắt tóc được không ạ?",
+      "terms": [
+        "午後",
+        "カット",
+        "予約する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜を予約できますか"
+    },
+    {
+      "id": "S-034-V13-002",
+      "group": "book",
+      "role_vi": "Khách gọi đặt lịch cắt tóc",
+      "gender": "male",
+      "ja": "カットだけで、シャンプーはなしでお願いします。",
+      "vi": "Tôi chỉ cắt tóc, không gội ạ.",
+      "terms": [
+        "カット",
+        "シャンプー"
+      ],
+      "scenes": [
+        "S002",
+        "S005"
+      ],
+      "pattern": "〜だけでお願いします"
+    },
+    {
+      "id": "S-034-V13-003",
+      "group": "book",
+      "role_vi": "Khách gọi đặt lịch cắt tóc",
+      "gender": "male",
+      "ja": "いつもの担当者が空いていなければ、別の方でも大丈夫です。",
+      "vi": "Nếu thợ tôi hay cắt không rảnh, thợ khác cũng được ạ.",
+      "terms": [
+        "担当者",
+        "空く"
+      ],
+      "scenes": [
+        "S003",
+        "S023"
+      ],
+      "pattern": "〜なければ、〜でも大丈夫です"
+    },
+    {
+      "id": "S-034-V13-004",
+      "group": "book",
+      "role_vi": "Nhân viên tiệm tóc",
+      "gender": "female",
+      "ja": "担当者の予定を確認してから、今日中に折り返します。",
+      "vi": "Tôi sẽ kiểm tra lịch của thợ rồi gọi lại cho anh trong hôm nay ạ.",
+      "terms": [
+        "担当者",
+        "予定",
+        "確認する",
+        "折り返す"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜てから折り返します"
+    },
+    {
+      "id": "S-034-V13-005",
+      "group": "book",
+      "role_vi": "Khách gọi đặt lịch cắt tóc",
+      "gender": "male",
+      "ja": "明日の午後二時に、カットだけ予約したいです。",
+      "vi": "Tôi muốn đặt lịch 2 giờ chiều mai, chỉ cắt tóc thôi ạ.",
+      "terms": [
+        "午後",
+        "時",
+        "カット",
+        "予約する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜だけ予約したいです"
+    },
+    {
+      "id": "S-034-V13-006",
+      "group": "style",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "髪を肩のあたりまで切ってください。",
+      "vi": "Nhờ anh cắt tóc cho tôi ngang vai ạ.",
+      "terms": [
+        "髪",
+        "肩",
+        "切る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜まで切ってください"
+    },
+    {
+      "id": "S-034-V13-007",
+      "group": "style",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "前髪は今の長さのままでお願いします。",
+      "vi": "Phần mái xin giữ nguyên độ dài ạ.",
+      "terms": [
+        "前髪",
+        "長さ"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "〜は今のままでお願いします"
+    },
+    {
+      "id": "S-034-V13-008",
+      "group": "style",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "この髪型なら、家でも手入れしやすいですか。",
+      "vi": "Kiểu tóc này ở nhà có dễ tự chăm không ạ?",
+      "terms": [
+        "髪型",
+        "手入れ"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜なら、〜しやすいですか"
+    },
+    {
+      "id": "S-034-V13-009",
+      "group": "style",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "この写真を参考に、後ろだけ短くしてください。",
+      "vi": "Nhờ tiệm nhìn theo ảnh này và chỉ cắt ngắn phần tóc sau ạ.",
+      "terms": [
+        "写真",
+        "参考",
+        "後ろ",
+        "短い"
+      ],
+      "scenes": [
+        "S008",
+        "S010"
+      ],
+      "pattern": "〜だけ〜てください"
+    },
+    {
+      "id": "S-034-V13-010",
+      "group": "style",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "この写真は髪型の参考で、今日は髪を染めません。",
+      "vi": "Ảnh này để tham khảo kiểu tóc thôi, hôm nay tôi không nhuộm ạ.",
+      "terms": [
+        "写真",
+        "髪型",
+        "参考",
+        "髪",
+        "染める"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "何を参考にするか伝える"
+    },
+    {
+      "id": "S-034-V13-011",
+      "group": "check",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "後ろをもう少し切る前に、鏡で長さを見てもいいですか。",
+      "vi": "Trước khi cắt thêm phía sau, cho tôi xem độ dài trong gương được không ạ?",
+      "terms": [
+        "後ろ",
+        "切る",
+        "鏡",
+        "長さ"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜前に〜てもいいですか"
+    },
+    {
+      "id": "S-034-V13-012",
+      "group": "check",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "左のほうが少し短く見えるので、左右の長さを確認してもらえますか。",
+      "vi": "Bên trái trông hơi ngắn hơn, nhờ tiệm kiểm tra độ dài hai bên giúp tôi được không ạ?",
+      "terms": [
+        "短い",
+        "左右",
+        "長さ",
+        "確認する"
+      ],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-034-V13-013",
+      "group": "check",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "左右をそろえると、後ろは何センチぐらい短くなりますか。",
+      "vi": "Nếu chỉnh cho hai bên đều nhau thì tóc phía sau sẽ ngắn đi khoảng mấy xăng-ti-mét ạ?",
+      "terms": [
+        "左右",
+        "後ろ",
+        "センチ",
+        "短い"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜と、どのくらい〜なりますか"
+    },
+    {
+      "id": "S-034-V13-014",
+      "group": "check",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "前髪は眉より下になるように、少しだけ整えてもらえますか。",
+      "vi": "Nhờ tiệm tỉa nhẹ tóc mái để mái vẫn dài qua lông mày được không ạ?",
+      "terms": [
+        "前髪",
+        "眉",
+        "整える"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-034-V13-015",
+      "group": "check",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "後ろはこれ以上短くしないで、形だけ整えてください。",
+      "vi": "Nhờ tiệm chỉ chỉnh dáng tóc phía sau, đừng cắt ngắn thêm ạ.",
+      "terms": [
+        "後ろ",
+        "短い",
+        "形",
+        "整える"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜だけ〜てください"
+    },
+    {
+      "id": "S-034-V13-016",
+      "group": "check",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "後ろの長さはちょうどいいですが、前髪は少し重く見えます。",
+      "vi": "Độ dài phía sau vừa rồi ạ, nhưng tóc mái trông vẫn hơi dày.",
+      "terms": [
+        "後ろ",
+        "長さ",
+        "前髪",
+        "重い"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜はいいですが、〜は"
+    },
+    {
+      "id": "S-034-V13-017",
+      "group": "check",
+      "role_vi": "Thợ làm tóc",
+      "gender": "female",
+      "ja": "前髪は切らずに、分け目を変えてみましょうか。",
+      "vi": "Tôi thử đổi ngôi tóc mà không cắt mái nhé?",
+      "terms": [
+        "前髪",
+        "切る",
+        "分け目"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜ずに、〜てみましょうか"
+    },
+    {
+      "id": "S-034-V13-018",
+      "group": "check",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "この分け目だと前髪が軽く見えるので、このままでお願いします。",
+      "vi": "Rẽ ngôi thế này mái trông nhẹ hơn, nhờ tiệm giữ như vậy ạ.",
+      "terms": [
+        "分け目",
+        "前髪",
+        "軽い"
+      ],
+      "scenes": [
+        "S018",
+        "S024"
+      ],
+      "pattern": "〜ので、このままでお願いします"
+    },
+    {
+      "id": "S-034-V13-019",
+      "group": "return",
+      "role_vi": "Khách gọi lại tiệm tóc",
+      "gender": "male",
+      "ja": "家で前髪をうまく整えられないので、乾かし方を教えてもらえますか。",
+      "vi": "Ở nhà tôi chưa chỉnh được tóc mái, nhờ tiệm chỉ tôi cách sấy được không ạ?",
+      "terms": [
+        "前髪",
+        "整える",
+        "乾かす"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-034-V13-020",
+      "group": "return",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "このレシートの料金にはシャンプーも入っていますか。",
+      "vi": "Giá ghi trên biên lai này có gồm cả tiền gội không ạ?",
+      "terms": [
+        "レシート",
+        "料金",
+        "シャンプー"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜も入っていますか"
+    },
+    {
+      "id": "S-034-V13-021",
+      "group": "return",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "前回と同じ形で、後ろは少し長めにしてください。",
+      "vi": "Nhờ tiệm giữ kiểu như lần trước, phần tóc phía sau để dài hơn một chút ạ.",
+      "terms": [
+        "前回",
+        "形",
+        "後ろ"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "〜と同じ形で〜てください"
+    },
+    {
+      "id": "S-034-V13-022",
+      "group": "return",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "前回は前髪がすぐ目にかかったので、今回は分け目を変えたいです。",
+      "vi": "Lần trước mái nhanh dài chạm mắt, lần này tôi muốn đổi ngôi ạ.",
+      "terms": [
+        "前回",
+        "前髪",
+        "分け目"
+      ],
+      "scenes": [
+        "S022",
+        "S024"
+      ],
+      "pattern": "前回は〜ので、今回は〜たいです"
+    },
+    {
+      "id": "S-034-V13-023",
+      "group": "return",
+      "role_vi": "Khách trao đổi với thợ tóc",
+      "gender": "male",
+      "ja": "新しい担当者にも前回の髪型の写真を見せたいです。",
+      "vi": "Tôi muốn cho cả thợ mới xem ảnh kiểu tóc lần trước ạ.",
+      "terms": [
+        "担当者",
+        "前回",
+        "髪型",
+        "写真"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "〜にも〜を見せたいです"
+    }
+  ]
+}

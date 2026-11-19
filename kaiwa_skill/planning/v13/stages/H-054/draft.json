@@ -1,0 +1,392 @@
+{
+  "code": "H-054",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "315e542e85fe8c3eeab70cc5d5f5681ca1747f017292632bf6ea4e632f66bc57",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "neighbor": "Trò chuyện và thống nhất cách liên hệ",
+    "noise": "Báo tiếng động và kiểm điều đã thấy",
+    "own": "Nhận phần mình và giải quyết chỗ vướng",
+    "rumor": "Hỏi nguồn lời kể và sửa hiểu lầm",
+    "shared": "Bàn giờ dùng không gian chung",
+    "followup": "Hỏi lại mà vẫn tôn trọng khoảng cách"
+  },
+  "items": [
+    {
+      "id": "H-054-V13-001",
+      "group": "neighbor",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "この辺り、最近は夕方の人通りが増えましたね。",
+      "vi": "Dạo này chiều đến khu mình đông người qua lại hơn nhỉ, bác?",
+      "terms": [
+        "人通り"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "start_neighbor_conversation"
+    },
+    {
+      "id": "H-054-V13-002",
+      "group": "neighbor",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "今度、集会室で使っていない椅子を一緒に見ていただけませんか。",
+      "vi": "Bữa nào bác cùng tôi xem mấy chiếc ghế không dùng đến trong phòng sinh hoạt chung được không ạ?",
+      "terms": [
+        "集会室"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_for_one_shared_task"
+    },
+    {
+      "id": "H-054-V13-003",
+      "group": "neighbor",
+      "role_vi": "Người hàng xóm lớn tuổi nói với cư dân",
+      "gender": "male",
+      "ja": "集会室の片づけは、今回は遠慮しておきますね。",
+      "vi": "Lần này tôi xin phép không tham gia dọn phòng sinh hoạt chung nhé.",
+      "terms": [
+        "集会室"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "decline_distance"
+    },
+    {
+      "id": "H-054-V13-004",
+      "group": "neighbor",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "急にお訪ねするとご負担なら、急ぎでない用件は掲示板でお知らせしましょうか。",
+      "vi": "Nếu tôi ghé bất chợt làm bác thấy bất tiện, chuyện nào không gấp tôi báo trên bảng tin nhé?",
+      "terms": [
+        "用件",
+        "掲示板"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "offer_less_intrusive_contact"
+    },
+    {
+      "id": "H-054-V13-005",
+      "group": "noise",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "今週は火曜と木曜の夜に、集会室の扉が勢いよく閉まる音がしました。",
+      "vi": "Tối thứ Ba và thứ Năm tuần này, tôi có nghe tiếng cửa phòng sinh hoạt chung đóng sầm.",
+      "terms": [
+        "集会室",
+        "扉",
+        "勢いよく"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "describe_direct_observation"
+    },
+    {
+      "id": "H-054-V13-006",
+      "group": "noise",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "誰が集会室を使ったかを聞く前に、風で扉が強く閉まることがあるか確かめませんか。",
+      "vi": "Trước khi hỏi ai đã dùng phòng sinh hoạt chung, mình thử xem có khi nào gió làm cửa đóng sầm không ạ?",
+      "terms": [
+        "集会室",
+        "扉"
+      ],
+      "scenes": [
+        "S007",
+        "S009",
+        "S010"
+      ],
+      "pattern": "before_action_to_verify"
+    },
+    {
+      "id": "H-054-V13-007",
+      "group": "noise",
+      "role_vi": "Cư dân báo cho người quản lý tòa nhà",
+      "gender": "female",
+      "ja": "集会室の扉の音で夜に休みにくい日が続いていますので、扉の閉まり方を見ていただけますか。",
+      "vi": "Mấy tối nay tiếng cửa phòng sinh hoạt chung làm tôi khó nghỉ ngơi, anh có thể kiểm tra xem cửa đóng thế nào được không ạ?",
+      "terms": [
+        "集会室",
+        "扉"
+      ],
+      "scenes": [
+        "S008",
+        "S009",
+        "S010"
+      ],
+      "pattern": "impact_and_targeted_request"
+    },
+    {
+      "id": "H-054-V13-008",
+      "group": "noise",
+      "role_vi": "Cư dân báo cho người quản lý tòa nhà",
+      "gender": "male",
+      "ja": "ゆっくり扉を閉めたときは静かでしたが、風があるときの音はまだ未確認です。",
+      "vi": "Lúc đóng cửa nhẹ thì tiếng nhỏ, còn lúc có gió thì chúng tôi chưa thử xem tiếng thế nào.",
+      "terms": [
+        "扉",
+        "未確認"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "observed_and_unverified"
+    },
+    {
+      "id": "H-054-V13-009",
+      "group": "own",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "私の自転車で共用廊下が通りにくくなっていたそうなので、今すぐ部屋の中に戻しますね。",
+      "vi": "Tôi nghe bác nói xe đạp của tôi làm lối đi chung khó qua, tôi cất xe vào nhà ngay ạ.",
+      "terms": [
+        "共用廊下"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "acknowledge_impact_and_act"
+    },
+    {
+      "id": "H-054-V13-010",
+      "group": "own",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "廊下に出ていた私の自転車は室内に戻しましたが、残っている自転車はどなたの物か分かりません。",
+      "vi": "Xe của tôi để lấn ra hành lang thì tôi đã cất vào nhà, còn mấy xe vẫn ở ngoài tôi không biết là của ai ạ.",
+      "terms": [],
+      "scenes": [
+        "S012",
+        "S014"
+      ],
+      "pattern": "separate_own_responsibility"
+    },
+    {
+      "id": "H-054-V13-011",
+      "group": "own",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "持ち主が分からない自転車を動かす前に、場所と台数を管理担当に伝えて相談しませんか。",
+      "vi": "Trước khi dời mấy chiếc xe chưa rõ chủ, mình báo số xe và chỗ để rồi hỏi ý kiến bên quản lý được không ạ?",
+      "terms": [
+        "管理担当"
+      ],
+      "scenes": [
+        "S014",
+        "S027"
+      ],
+      "pattern": "before_action_to_verify"
+    },
+    {
+      "id": "H-054-V13-012",
+      "group": "own",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "一週間、自転車を室内に置いてみますので、来週の土曜に通りやすくなったか一緒に見てもらえませんか。",
+      "vi": "Tôi sẽ thử cất xe trong nhà một tuần, thứ Bảy tới bác cùng tôi xem lối đi đã dễ qua hơn chưa được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S013",
+        "S015"
+      ],
+      "pattern": "trial_then_review"
+    },
+    {
+      "id": "H-054-V13-013",
+      "group": "rumor",
+      "role_vi": "Cư dân nói với người quen cùng tòa nhà",
+      "gender": "female",
+      "ja": "共用廊下がふさがっていたのは、ご自身で見たのか、それともどなたかから聞いたのか、教えていただけますか。",
+      "vi": "Về chuyện hành lang chung bị chắn, chị cho tôi biết là chị tận mắt thấy hay nghe ai kể lại được không ạ?",
+      "terms": [
+        "共用廊下",
+        "ふさがる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "verify_firsthand"
+    },
+    {
+      "id": "H-054-V13-014",
+      "group": "rumor",
+      "role_vi": "Cư dân nói với người quen cùng tòa nhà",
+      "gender": "female",
+      "ja": "ご近所のご家族のことはうわさでしか知りませんので、私からほかの方にお話しするのは控えますね。",
+      "vi": "Chuyện gia đình hàng xóm tôi chỉ nghe đồn, nên tôi xin phép không kể lại với ai nhé.",
+      "terms": [
+        "うわさ"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "decline_to_pass_private_rumor"
+    },
+    {
+      "id": "H-054-V13-015",
+      "group": "rumor",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "お願いしたのは夜の扉の音を調べることで、集会室の利用を禁止してほしいとは言っていません。",
+      "vi": "Tôi chỉ đề nghị kiểm tra tiếng cửa ban đêm, tôi chưa hề đề nghị cấm dùng phòng sinh hoạt chung.",
+      "terms": [
+        "扉",
+        "集会室"
+      ],
+      "scenes": [
+        "S018",
+        "S020"
+      ],
+      "pattern": "correct_transmitted_claim"
+    },
+    {
+      "id": "H-054-V13-016",
+      "group": "rumor",
+      "role_vi": "Cư dân nói với người quen cùng tòa nhà",
+      "gender": "female",
+      "ja": "間に入ってくださるのはありがたいのですが、まず私から田中さんに直接お話しできるか聞いてみてもよろしいですか。",
+      "vi": "Cảm ơn chị đã ngỏ ý đứng ra giúp, nhưng trước hết để tôi hỏi xem bác Tanaka có tiện trao đổi trực tiếp với tôi không nhé?",
+      "terms": [
+        "間に入る"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "check_before_mediation"
+    },
+    {
+      "id": "H-054-V13-017",
+      "group": "shared",
+      "role_vi": "Cư dân nói với đại diện cư dân",
+      "gender": "female",
+      "ja": "集会室の利用時間を見直すときは、使う方と、音が気になる方の両方に意見を聞けますか。",
+      "vi": "Khi xem lại giờ dùng phòng sinh hoạt chung, mình có thể hỏi cả người dùng phòng lẫn người bị tiếng ồn làm phiền không ạ?",
+      "terms": [
+        "集会室",
+        "利用時間",
+        "見直す"
+      ],
+      "scenes": [
+        "S021",
+        "S025"
+      ],
+      "pattern": "include_affected_people"
+    },
+    {
+      "id": "H-054-V13-018",
+      "group": "shared",
+      "role_vi": "Cư dân nói với đại diện cư dân",
+      "gender": "female",
+      "ja": "私は夜に集会室を使うことがありますが、ほかの方の希望まで代弁できないので、直接聞いていただけますか。",
+      "vi": "Tôi có khi dùng phòng sinh hoạt chung buổi tối, nhưng không thể nói thay mong muốn của người khác, chị có thể hỏi trực tiếp họ được không ạ?",
+      "terms": [
+        "集会室",
+        "代弁する"
+      ],
+      "scenes": [
+        "S022",
+        "S024"
+      ],
+      "pattern": "avoid_speaking_for_others"
+    },
+    {
+      "id": "H-054-V13-019",
+      "group": "shared",
+      "role_vi": "Cư dân nói với đại diện cư dân",
+      "gender": "female",
+      "ja": "集会室は二週間だけ20時まで開ける仮運用にして、利用状況と夜の物音を見てから時間帯を見直せませんか。",
+      "vi": "Mình có thể thử mở cửa phòng đến 20 giờ trong hai tuần, rồi xem mức độ sử dụng và tiếng động buổi tối để điều chỉnh lại khung giờ được không ạ?",
+      "terms": [
+        "集会室",
+        "仮運用",
+        "利用状況",
+        "物音",
+        "時間帯",
+        "見直す"
+      ],
+      "scenes": [
+        "S023",
+        "S025"
+      ],
+      "pattern": "trial_then_review"
+    },
+    {
+      "id": "H-054-V13-020",
+      "group": "shared",
+      "role_vi": "Cư dân nói với đại diện cư dân",
+      "gender": "female",
+      "ja": "夜に使う方の声をまだ聞けていないので、18時に閉める案は、掲示板では決定事項として扱わないでいただけますか。",
+      "vi": "Mình vẫn chưa hỏi người dùng phòng buổi tối, nên khi đăng bảng tin, chị có thể ghi giờ đóng cửa lúc 18 giờ là phương án đang bàn được không ạ?",
+      "terms": [
+        "掲示板"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "avoid_early_decision"
+    },
+    {
+      "id": "H-054-V13-021",
+      "group": "followup",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "廊下の件は今日はここまでにして、自転車はこれからも室内に置きますね。",
+      "vi": "Hôm nay mình dừng chuyện hành lang ở đây nhé, tôi vẫn sẽ cất xe đạp trong nhà ạ.",
+      "terms": [],
+      "scenes": [
+        "S026",
+        "S028"
+      ],
+      "pattern": "keep_commitment_after_pause"
+    },
+    {
+      "id": "H-054-V13-022",
+      "group": "followup",
+      "role_vi": "Người hàng xóm lớn tuổi nói với cư dân",
+      "gender": "male",
+      "ja": "廊下の用件はしばらく管理担当を通してほしいですが、お会いしたときは今までどおり挨拶しましょう。",
+      "vi": "Một thời gian tới, chuyện hành lang tôi muốn trao đổi qua bên quản lý, còn khi gặp nhau mình cứ chào như trước nhé.",
+      "terms": [
+        "用件",
+        "管理担当"
+      ],
+      "scenes": [
+        "S029",
+        "S030"
+      ],
+      "pattern": "maintain_contact_with_boundary"
+    },
+    {
+      "id": "H-054-V13-023",
+      "group": "followup",
+      "role_vi": "Cư dân nói với người hàng xóm lớn tuổi",
+      "gender": "female",
+      "ja": "管理担当を通してお話ししてから数週間たちましたが、廊下は前より通りやすくなりましたか。",
+      "vi": "Đã vài tuần kể từ khi mình trao đổi qua bên quản lý, giờ hành lang dễ đi hơn trước chưa ạ?",
+      "terms": [
+        "管理担当"
+      ],
+      "scenes": [
+        "S027",
+        "S030"
+      ],
+      "pattern": "check_impact_after_change"
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+  "code": "T-142",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "6a403a7d90cf80c85de44a47eb6e554d55d7cb1442fd53d5dde50b142ed0bdc9",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "damage": "Báo phần thiệt hại đã thấy và sửa thông tin",
+    "housing": "Hỏi chỗ ở tạm và sắp lịch kiểm nhà",
+    "roles": "Hỏi đúng bên phụ trách và chốt bước của mình",
+    "routine": "Báo giờ đi làm và giữ liên lạc với trường",
+    "mail": "Đổi nơi nhận tin và tách việc còn chờ"
+  },
+  "items": [
+    {
+      "id": "T-142-V13-001",
+      "group": "damage",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "共用玄関に泥がたまっています。",
+      "vi": "Bùn đang đọng ở lối vào chung ạ.",
+      "terms": [
+        "共用玄関",
+        "泥"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "report_direct_observation"
+    },
+    {
+      "id": "T-142-V13-002",
+      "group": "damage",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "部屋の中はまだ確認できていません。",
+      "vi": "Tôi vẫn chưa kiểm tra được bên trong căn hộ.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "report_unverified_scope"
+    },
+    {
+      "id": "T-142-V13-003",
+      "group": "damage",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "仮住まいのことは、どこに相談できますか。",
+      "vi": "Chuyện tìm chỗ ở tạm, tôi có thể hỏi ở đâu ạ?",
+      "terms": [
+        "仮住まい"
+      ],
+      "scenes": [
+        "S004",
+        "S008"
+      ],
+      "pattern": "ask_correct_contact"
+    },
+    {
+      "id": "T-142-V13-004",
+      "group": "damage",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "共用玄関の写真はありますが、室内に入れないので、部屋の写真はまだありません。",
+      "vi": "Tôi có ảnh lối vào chung, nhưng chưa vào được nên tôi chưa có ảnh bên trong căn hộ.",
+      "terms": [
+        "共用玄関",
+        "室内"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "separate_available_evidence"
+    },
+    {
+      "id": "T-142-V13-005",
+      "group": "damage",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "住所の番地を言い間違えたので、２番12号ではなく、２番21号に訂正してもらえますか。",
+      "vi": "Tôi đọc nhầm số nhà, anh sửa từ số 2-12 thành số 2-21 giúp tôi được không ạ?",
+      "terms": [
+        "番地",
+        "訂正する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "correct_record_with_right_value"
+    },
+    {
+      "id": "T-142-V13-006",
+      "group": "damage",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "水は引きましたが、建物に入っていいか、どの担当窓口に聞けばいいですか。",
+      "vi": "Nước đã rút rồi, tôi cần hỏi bên nào để biết đã được vào tòa nhà hay chưa ạ?",
+      "terms": [
+        "引く",
+        "担当窓口"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "ask_correct_contact"
+    },
+    {
+      "id": "T-142-V13-007",
+      "group": "housing",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "今の所にはあと二泊しかいられないので、仮住まいを相談できますか。",
+      "vi": "Chỗ hiện tại tôi chỉ ở thêm được hai đêm, tôi có thể hỏi về chỗ ở tạm không ạ?",
+      "terms": [
+        "～泊",
+        "仮住まい"
+      ],
+      "scenes": [
+        "S004",
+        "S008"
+      ],
+      "pattern": "state_housing_deadline"
+    },
+    {
+      "id": "T-142-V13-008",
+      "group": "housing",
+      "role_vi": "Người thuê nhà nói với công ty quản lý",
+      "gender": "female",
+      "ja": "建物の点検はいつの予定で、私も立ち会う必要がありますか。",
+      "vi": "Dự kiến khi nào kiểm tra tòa nhà, và tôi có cần có mặt lúc đó không ạ?",
+      "terms": [
+        "立ち会う"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "ask_for_appointment_and_attendance"
+    },
+    {
+      "id": "T-142-V13-009",
+      "group": "housing",
+      "role_vi": "Người thuê nhà nói với công ty quản lý",
+      "gender": "female",
+      "ja": "午前中は仕事なので、室内の点検だけ午後３時に変えられますか。",
+      "vi": "Buổi sáng tôi phải đi làm, mình có thể đổi riêng phần kiểm bên trong căn hộ sang 3 giờ chiều được không ạ?",
+      "terms": [
+        "室内"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "move_only_affected_appointment"
+    },
+    {
+      "id": "T-142-V13-010",
+      "group": "housing",
+      "role_vi": "Người thuê nhà nói với công ty quản lý",
+      "gender": "male",
+      "ja": "修理の見通しが分かったら、部屋に戻れる時期も教えてもらえますか。",
+      "vi": "Khi có dự kiến sửa chữa, anh cho tôi biết luôn khoảng khi nào tôi có thể về lại căn hộ được không ạ?",
+      "terms": [
+        "見通し"
+      ],
+      "scenes": [
+        "S008",
+        "S015"
+      ],
+      "pattern": "ask_for_next_update"
+    },
+    {
+      "id": "T-142-V13-011",
+      "group": "roles",
+      "role_vi": "Người thuê nhà nói với công ty quản lý",
+      "gender": "female",
+      "ja": "私が買った洗濯機に水がかかったかもしれませんが、建物の点検で見てもらえますか。",
+      "vi": "Máy giặt tôi tự mua có thể đã bị dính nước. Bên anh có thể xem giúp lúc kiểm tòa nhà không ạ?",
+      "terms": [
+        "かかる"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "ask_if_in_scope"
+    },
+    {
+      "id": "T-142-V13-012",
+      "group": "roles",
+      "role_vi": "Người thuê nhà nói với công ty quản lý",
+      "gender": "female",
+      "ja": "室内の電気がまだ確認中なら、荷物は入室していいと連絡が来てから取りに行けばいいですか。",
+      "vi": "Nếu vẫn đang kiểm tra điện trong căn hộ, tôi đợi được báo có thể vào rồi mới tới lấy đồ, đúng không ạ?",
+      "terms": [
+        "室内",
+        "入室する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "confirm_before_entering"
+    },
+    {
+      "id": "T-142-V13-013",
+      "group": "roles",
+      "role_vi": "Người thuê nhà nói với công ty quản lý",
+      "gender": "female",
+      "ja": "木曜の13時に正面で待ち合わせて、室内に入れるかは点検の担当に聞けばいいですか。",
+      "vi": "13 giờ thứ Năm mình gặp ở lối chính, còn có được vào căn hộ không thì tôi hỏi người phụ trách kiểm tra, đúng không ạ?",
+      "terms": [
+        "室内"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "confirm_before_entering"
+    },
+    {
+      "id": "T-142-V13-014",
+      "group": "routine",
+      "role_vi": "Người lao động báo cho quản lý ca",
+      "gender": "female",
+      "ja": "大雨でいつものバスが運休しているので、９時の勤務には間に合いません。",
+      "vi": "Do mưa lớn, tuyến xe buýt tôi thường đi đang ngừng chạy nên tôi không kịp ca 9 giờ.",
+      "terms": [
+        "大雨",
+        "運休する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "report_delay_with_reason"
+    },
+    {
+      "id": "T-142-V13-015",
+      "group": "routine",
+      "role_vi": "Người lao động báo cho quản lý ca",
+      "gender": "female",
+      "ja": "10時半は別の便に乗れた場合の目安ですが、便が見つからなくても、８時半までに連絡します。",
+      "vi": "10 giờ 30 là giờ dự kiến nếu đi được chuyến khác, nhưng dù chưa tìm được chuyến thì tôi vẫn sẽ báo chậm nhất 8 giờ 30 ạ.",
+      "terms": [
+        "目安"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "set_next_update_even_if_pending"
+    },
+    {
+      "id": "T-142-V13-016",
+      "group": "routine",
+      "role_vi": "Hành khách hỏi hãng xe buýt",
+      "gender": "male",
+      "ja": "いつもの路線が運休なら、中央庁舎前まで行ける別のバスはありますか。",
+      "vi": "Nếu tuyến tôi hay đi đang ngừng chạy, có xe buýt nào khác tới bến trước tòa hành chính trung tâm không ạ?",
+      "terms": [
+        "路線",
+        "運休する",
+        "庁舎"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "ask_alternative_service"
+    },
+    {
+      "id": "T-142-V13-017",
+      "group": "routine",
+      "role_vi": "Phụ huynh gọi cho trường cũ của con",
+      "gender": "female",
+      "ja": "子どもは今、避難先の近くの学校に通っていますが、元の学校の担任にはどう連絡すればいいですか。",
+      "vi": "Hiện con tôi học ở trường gần chỗ ở tạm, tôi liên hệ với giáo viên chủ nhiệm ở trường cũ bằng cách nào ạ?",
+      "terms": [
+        "避難先",
+        "担任"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "ask_channel_during_transition"
+    },
+    {
+      "id": "T-142-V13-018",
+      "group": "routine",
+      "role_vi": "Người lao động báo cho quản lý ca",
+      "gender": "female",
+      "ja": "別の路線で朝の通勤はできるようになりましたが、家の点検の日が決まったら、また勤務時間をご相談してもいいですか。",
+      "vi": "Tôi lại đi làm được buổi sáng bằng tuyến khác rồi. Khi có lịch kiểm nhà, tôi có thể trao đổi lại về giờ làm được không ạ?",
+      "terms": [
+        "路線"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "report_recovered_and_pending"
+    },
+    {
+      "id": "T-142-V13-019",
+      "group": "mail",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "元の住所では郵便を受け取れないので、今いる所に案内を送り直してもらえますか。",
+      "vi": "Tôi không nhận được thư ở địa chỉ cũ, anh gửi lại thông báo tới chỗ tôi đang ở được không ạ?",
+      "terms": [
+        "送り直す"
+      ],
+      "scenes": [
+        "S016",
+        "S018"
+      ],
+      "pattern": "request_new_delivery_channel"
+    },
+    {
+      "id": "T-142-V13-020",
+      "group": "mail",
+      "role_vi": "Người thuê nhà nói với công ty quản lý",
+      "gender": "female",
+      "ja": "市から案内は発送されましたが、部屋の修理支援が決まったとはまだ聞いていません。",
+      "vi": "Thành phố đã gửi thông báo, nhưng tôi chưa nghe là hỗ trợ sửa căn hộ đã được duyệt.",
+      "terms": [
+        "発送する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "separate_notice_and_decision"
+    },
+    {
+      "id": "T-142-V13-021",
+      "group": "mail",
+      "role_vi": "Người thuê nhà nói với nhân viên quầy hỗ trợ",
+      "gender": "female",
+      "ja": "送付先の変更と修理の相談が、それぞれ今どうなっているか教えてもらえますか。",
+      "vi": "Anh báo giúp tôi việc đổi nơi nhận thư và việc tư vấn sửa chữa, mỗi việc đang tới đâu được không ạ?",
+      "terms": [
+        "送付先"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "ask_separate_statuses"
+    },
+    {
+      "id": "T-142-V13-022",
+      "group": "mail",
+      "role_vi": "Người thuê nhà nói với công ty quản lý",
+      "gender": "female",
+      "ja": "郵便の送付先は変わりましたが、修理支援はまだ決まっていないので、建物の点検の日だけ先に決められますか。",
+      "vi": "Nơi nhận thư đã đổi, còn hỗ trợ sửa chữa vẫn chưa chốt. Mình có thể hẹn ngày kiểm tòa nhà trước được không ạ?",
+      "terms": [
+        "送付先"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "take_confirmed_next_step"
+    }
+  ]
+}

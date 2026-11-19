@@ -1,0 +1,382 @@
+{
+  "code": "S-076",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "4fd46162a65145522adc3ee4706f1b59734579f5bee74035a7f6c63dcce99f02",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "terminal": "Tìm quầy và hỏi về hành lý",
+    "boarding": "Kiểm lại cổng và cách lên máy bay",
+    "delay": "Hỏi giờ mới và phương án đổi chuyến",
+    "claim": "Nhận hành lý và báo chưa thấy vali"
+  },
+  "items": [
+    {
+      "id": "S-076-V13-001",
+      "group": "terminal",
+      "role_vi": "Hành khách hỏi đầu sân bay",
+      "gender": "female",
+      "ja": "国内線のチェックインはどこですか。",
+      "vi": "Quầy làm thủ tục chuyến nội địa ở đâu ạ?",
+      "terms": [
+        "国内線",
+        "チェックイン"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_địa_điểm"
+    },
+    {
+      "id": "S-076-V13-002",
+      "group": "terminal",
+      "role_vi": "Hành khách hỏi quầy chuyến đi Fukuoka",
+      "gender": "female",
+      "ja": "福岡行きのカウンターは何階ですか。",
+      "vi": "Quầy cho chuyến đi Fukuoka ở tầng mấy ạ?",
+      "terms": [
+        "～行き",
+        "カウンター",
+        "～階"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_địa_điểm"
+    },
+    {
+      "id": "S-076-V13-003",
+      "group": "terminal",
+      "role_vi": "Nhân viên sân bay chỉ đường sang nhà ga khác",
+      "gender": "male",
+      "ja": "第二ターミナルへは、地下の連絡通路を通ってください。",
+      "vi": "Chị đi qua hành lang dưới tầng ngầm để sang nhà ga số hai ạ.",
+      "terms": [
+        "ターミナル",
+        "地下",
+        "連絡通路"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "chỉ_đường_sang_nhà_ga"
+    },
+    {
+      "id": "S-076-V13-004",
+      "group": "terminal",
+      "role_vi": "Hành khách hỏi vali mang lên được không",
+      "gender": "female",
+      "ja": "このスーツケースは預けないで、機内に持っていけますか。",
+      "vi": "Vali này tôi mang lên khoang máy bay luôn, không cần ký gửi được không ạ?",
+      "terms": [
+        "スーツケース",
+        "預ける",
+        "機内"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "hỏi_hành_lý_được_xử_lý_thế_nào"
+    },
+    {
+      "id": "S-076-V13-005",
+      "group": "terminal",
+      "role_vi": "Hành khách muốn giữ máy ảnh theo người",
+      "gender": "female",
+      "ja": "カメラは小さいバッグに入れて持ち込んでもいいですか。",
+      "vi": "Tôi cho máy ảnh vào túi nhỏ rồi mang lên máy bay được không ạ?",
+      "terms": [
+        "持ち込む"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "hỏi_hành_lý_được_xử_lý_thế_nào"
+    },
+    {
+      "id": "S-076-V13-006",
+      "group": "terminal",
+      "role_vi": "Nhân viên quầy nhận vali",
+      "gender": "male",
+      "ja": "スーツケースはこちらのカウンターでお預かりできます。",
+      "vi": "Quầy này có thể nhận ký gửi vali của chị ạ.",
+      "terms": [
+        "スーツケース",
+        "カウンター",
+        "預かる"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "báo_nơi_ký_gửi"
+    },
+    {
+      "id": "S-076-V13-007",
+      "group": "boarding",
+      "role_vi": "Hành khách thấy cổng vừa đổi",
+      "gender": "female",
+      "ja": "福岡行きの搭乗口は何番に変わりましたか。",
+      "vi": "Chuyến đi Fukuoka đã đổi sang cổng lên máy bay số mấy ạ?",
+      "terms": [
+        "～行き",
+        "搭乗口",
+        "～番"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "hỏi_thay_đổi_cụ_thể"
+    },
+    {
+      "id": "S-076-V13-008",
+      "group": "boarding",
+      "role_vi": "Hành khách chưa nghe rõ loa",
+      "gender": "female",
+      "ja": "今の放送は福岡行きのANA便の案内ですか。",
+      "vi": "Loa vừa thông báo về chuyến ANA đi Fukuoka ạ?",
+      "terms": [
+        "放送",
+        "～行き",
+        "～便"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "xác_nhận_thông_báo"
+    },
+    {
+      "id": "S-076-V13-009",
+      "group": "boarding",
+      "role_vi": "Nhân viên cổng lên máy bay",
+      "gender": "male",
+      "ja": "搭乗券にあるグループ番号が呼ばれたら、搭乗口へお進みください。",
+      "vi": "Khi nghe gọi số nhóm trên thẻ lên máy bay, chị tiến về cổng nhé.",
+      "terms": [
+        "搭乗券",
+        "搭乗口"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "nếu_đến_lượt_thì_đi"
+    },
+    {
+      "id": "S-076-V13-010",
+      "group": "boarding",
+      "role_vi": "Hành khách đi với mẹ cần xe lăn",
+      "gender": "female",
+      "ja": "母の車いすを頼んでいますが、どこで待てばいいですか。",
+      "vi": "Tôi đã nhờ chuẩn bị xe lăn cho mẹ, mẹ con tôi chờ ở đâu ạ?",
+      "terms": [
+        "車いす"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_chỗ_chờ"
+    },
+    {
+      "id": "S-076-V13-011",
+      "group": "boarding",
+      "role_vi": "Hành khách vừa tới cổng",
+      "gender": "female",
+      "ja": "福岡行きの飛行機にはまだ乗れますか。",
+      "vi": "Tôi còn lên được chuyến bay đi Fukuoka không ạ?",
+      "terms": [
+        "～行き",
+        "乗る"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "hỏi_còn_kịp_không"
+    },
+    {
+      "id": "S-076-V13-012",
+      "group": "boarding",
+      "role_vi": "Nhân viên hỗ trợ sau khi cổng đã đóng",
+      "gender": "male",
+      "ja": "搭乗を締め切りましたので、案内カウンターにお越しください。",
+      "vi": "Đã hết giờ nhận khách lên máy bay, mời chị đến quầy hỗ trợ ạ.",
+      "terms": [
+        "締め切る",
+        "カウンター"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "chỉ_bước_xử_lý_tiếp"
+    },
+    {
+      "id": "S-076-V13-013",
+      "group": "delay",
+      "role_vi": "Hành khách có chuyến bị chậm",
+      "gender": "female",
+      "ja": "福岡行きの便は、何時に出発する予定ですか。",
+      "vi": "Chuyến bay đi Fukuoka dự kiến khởi hành lúc mấy giờ ạ?",
+      "terms": [
+        "～行き"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "hỏi_giờ_dự_kiến"
+    },
+    {
+      "id": "S-076-V13-014",
+      "group": "delay",
+      "role_vi": "Hành khách lo lỡ xe",
+      "gender": "female",
+      "ja": "ホテルの車に間に合わないので、ほかに博多駅に行く方法はありますか。",
+      "vi": "Tôi không kịp xe của khách sạn, còn cách nào khác để tới ga Hakata không ạ?",
+      "terms": [
+        "間に合う"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "hỏi_cách_đi_khác"
+    },
+    {
+      "id": "S-076-V13-015",
+      "group": "delay",
+      "role_vi": "Hành khách đang cân nhắc đổi chuyến",
+      "gender": "male",
+      "ja": "別の便に変えたら、福岡空港には何時に到着しますか。",
+      "vi": "Nếu đổi sang chuyến khác, tôi sẽ tới sân bay Fukuoka lúc mấy giờ ạ?",
+      "terms": [
+        "空港",
+        "到着"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "hỏi_giờ_sau_khi_đổi"
+    },
+    {
+      "id": "S-076-V13-016",
+      "group": "delay",
+      "role_vi": "Hành khách muốn biết cách theo dõi",
+      "gender": "female",
+      "ja": "新しい出発時刻は、空港の表示で分かりますか。",
+      "vi": "Tôi xem giờ khởi hành mới trên bảng thông tin sân bay được không ạ?",
+      "terms": [
+        "出発時刻",
+        "空港",
+        "表示"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hỏi_nơi_theo_dõi"
+    },
+    {
+      "id": "S-076-V13-017",
+      "group": "claim",
+      "role_vi": "Hành khách vừa xuống máy bay",
+      "gender": "female",
+      "ja": "羽田からの便の荷物は、どのベルトで受け取れますか。",
+      "vi": "Hành lý chuyến từ Haneda lấy ở băng chuyền nào ạ?",
+      "terms": [
+        "荷物",
+        "ベルト",
+        "受け取る"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "hỏi_băng_chuyền"
+    },
+    {
+      "id": "S-076-V13-018",
+      "group": "claim",
+      "role_vi": "Hành khách báo không thấy vali",
+      "gender": "male",
+      "ja": "三番のベルトで待ちましたが、スーツケースがまだ見つかりません。",
+      "vi": "Tôi đã đợi ở băng chuyền số ba nhưng vẫn chưa thấy vali ạ.",
+      "terms": [
+        "～番",
+        "ベルト",
+        "スーツケース",
+        "見つかる"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "báo_chưa_thấy_đồ"
+    },
+    {
+      "id": "S-076-V13-019",
+      "group": "claim",
+      "role_vi": "Hành khách tả dấu riêng",
+      "gender": "female",
+      "ja": "私のスーツケースは黒くて、赤いベルトが目印です。",
+      "vi": "Vali của tôi màu đen, dễ nhận ra nhờ dây đai màu đỏ ạ.",
+      "terms": [
+        "スーツケース",
+        "黒い",
+        "赤い",
+        "ベルト",
+        "目印"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "nêu_dấu_nhận_ra"
+    },
+    {
+      "id": "S-076-V13-020",
+      "group": "claim",
+      "role_vi": "Hành khách đối chiếu vali giống",
+      "gender": "female",
+      "ja": "手荷物タグの番号が違うので、このスーツケースは私のではありません。",
+      "vi": "Số trên thẻ hành lý không khớp nên đây không phải vali của tôi ạ.",
+      "terms": [
+        "手荷物タグ",
+        "違う",
+        "スーツケース"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "báo_dấu_không_khớp"
+    },
+    {
+      "id": "S-076-V13-021",
+      "group": "claim",
+      "role_vi": "Hành khách sắp rời sân bay",
+      "gender": "female",
+      "ja": "空港を出たあと、荷物のことはどこに連絡すればいいですか。",
+      "vi": "Sau khi ra khỏi sân bay, tôi cần liên hệ đâu để hỏi về hành lý ạ?",
+      "terms": [
+        "空港",
+        "荷物"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "hỏi_đầu_mối_tiếp"
+    },
+    {
+      "id": "S-076-V13-022",
+      "group": "claim",
+      "role_vi": "Nhân viên xử lý hành lý chưa tới",
+      "gender": "male",
+      "ja": "お荷物が見つかるまで、手荷物引換証は保管してください。",
+      "vi": "Chị giữ phiếu nhận hành lý cho đến khi tìm được đồ nhé.",
+      "terms": [
+        "荷物",
+        "見つかる",
+        "手荷物引換証",
+        "保管する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "dặn_giữ_giấy_tờ"
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "code": "T-101",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "9a88caa4973fe01598e81874caae99ba98efb3a753110e094f0821f2e366d749",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "arrival": "Chốt nơi đến và người đón",
+    "visit": "Hỏi phạm vi tham quan và kiểm mẫu",
+    "delivery": "Phân biệt các mốc sản xuất, xuất và giao",
+    "check": "Báo chênh lệch và đối chiếu",
+    "follow": "Chốt giao bù và phần thông tin được chia sẻ"
+  },
+  "items": [
+    {
+      "id": "T-101-V13-001",
+      "group": "arrival",
+      "role_vi": "Nhân viên mua hàng gọi nhà máy trước chuyến thăm",
+      "gender": "female",
+      "ja": "明日の十時に工場へ伺います。",
+      "vi": "Mười giờ ngày mai tôi sẽ đến nhà máy ạ.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "time_ni_ukagaimasu"
+    },
+    {
+      "id": "T-101-V13-002",
+      "group": "arrival",
+      "role_vi": "Đầu mối nhà máy nói sẽ đón khách đến họp tại quầy",
+      "gender": "male",
+      "ja": "当日は私が受付までお迎えに行きます。",
+      "vi": "Hôm đó tôi sẽ ra quầy lễ tân đón chị ạ.",
+      "terms": [
+        "受付"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "watashi_ga_omukae"
+    },
+    {
+      "id": "T-101-V13-003",
+      "group": "arrival",
+      "role_vi": "Nhân viên mua hàng hỏi số địa chỉ vì có hai nhà máy tên gần giống",
+      "gender": "female",
+      "ja": "念のため、工場の住所を番地まで教えていただけますか。",
+      "vi": "Để chắc chắn, anh cho tôi biết địa chỉ nhà máy là số mấy được không ạ?",
+      "terms": [
+        "番地"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "te_itadakemasu_ka"
+    },
+    {
+      "id": "T-101-V13-004",
+      "group": "arrival",
+      "role_vi": "Nhân viên mua hàng xác nhận nên nhắc bộ phận nào tại quầy",
+      "gender": "female",
+      "ja": "受付ではどの部署と伝えればよろしいですか。",
+      "vi": "Tới quầy tôi cần nói tên bộ phận nào ạ?",
+      "terms": [
+        "受付"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "verb_ba_yoroshii"
+    },
+    {
+      "id": "T-101-V13-005",
+      "group": "visit",
+      "role_vi": "Khách hỏi được vào đến khu nào trong chuyến tham quan",
+      "gender": "female",
+      "ja": "見学中はどこまで入れますか。",
+      "vi": "Khi tham quan tôi được vào đến đâu ạ?",
+      "terms": [
+        "見学"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "verb_no_wa_dokomade"
+    },
+    {
+      "id": "T-101-V13-006",
+      "group": "visit",
+      "role_vi": "Người dẫn khách thông báo quy định riêng về chụp ảnh ở lối tham quan",
+      "gender": "male",
+      "ja": "この通路では写真を撮らないでください。",
+      "vi": "Chị vui lòng đừng chụp ảnh trên lối đi này ạ.",
+      "terms": [
+        "通路"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "nai_de_kudasai"
+    },
+    {
+      "id": "T-101-V13-007",
+      "group": "visit",
+      "role_vi": "Khách xin xem mẫu đã đóng gói tại phòng trưng bày thay vì vào khu làm việc",
+      "gender": "female",
+      "ja": "梱包した商品を見本室で見せていただけますか。",
+      "vi": "Anh cho tôi xem sản phẩm đã đóng gói tại phòng mẫu được không ạ?",
+      "terms": [
+        "見本室",
+        "梱包"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "te_itadakemasu_ka"
+    },
+    {
+      "id": "T-101-V13-008",
+      "group": "visit",
+      "role_vi": "Khách hỏi nhà máy kiểm mã trên vỏ và mã hàng vào công đoạn nào",
+      "gender": "female",
+      "ja": "箱の品番が中身と合っているかは、どの工程で確認しますか。",
+      "vi": "Bên anh kiểm mã trên thùng có khớp với hàng bên trong ở công đoạn nào ạ?",
+      "terms": [
+        "品番",
+        "工程"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "dono_koutei_de"
+    },
+    {
+      "id": "T-101-V13-009",
+      "group": "delivery",
+      "role_vi": "Nhân viên mua hàng hỏi công đoạn nào quyết định ngày xuất",
+      "gender": "female",
+      "ja": "どの工程が終われば出荷日が決まりますか。",
+      "vi": "Sau khi xong công đoạn nào thì ngày xuất hàng mới được chốt ạ?",
+      "terms": [
+        "工程",
+        "出荷日"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "verb_ba_kimarimasu"
+    },
+    {
+      "id": "T-101-V13-010",
+      "group": "delivery",
+      "role_vi": "Đầu mối nhà máy nêu điều kiện xuất sau khi kiểm",
+      "gender": "male",
+      "ja": "金曜の検査で問題がなければ、その日に出荷できます。",
+      "vi": "Nếu kiểm tra thứ Sáu không có vấn đề gì thì bên tôi có thể xuất hàng ngay hôm đó ạ.",
+      "terms": [
+        "検査"
+      ],
+      "scenes": [
+        "S005",
+        "S007"
+      ],
+      "pattern": "ba_potential"
+    },
+    {
+      "id": "T-101-V13-011",
+      "group": "delivery",
+      "role_vi": "Nhân viên mua hàng sửa nhầm ngày sản xuất với ngày giao",
+      "gender": "female",
+      "ja": "木曜は製造が終わる日で、納品は月曜の見込みなんですね。",
+      "vi": "Thứ Năm mới là ngày sản xuất xong, còn dự kiến giao vào thứ Hai, đúng không ạ?",
+      "terms": [
+        "製造",
+        "見込み"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "de_detail_n_desu_ne"
+    },
+    {
+      "id": "T-101-V13-012",
+      "group": "delivery",
+      "role_vi": "Nhân viên mua hàng chưa biết người chốt số lượng xuất cuối",
+      "gender": "female",
+      "ja": "出荷する個数はどなたに確認すればよろしいですか。",
+      "vi": "Tôi cần hỏi ai để xác nhận số lượng xuất hàng ạ?",
+      "terms": [
+        "個数"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "verb_ba_yoroshii"
+    },
+    {
+      "id": "T-101-V13-013",
+      "group": "delivery",
+      "role_vi": "Đầu mối nhà máy nhận báo cả số thùng và số sản phẩm khi chốt",
+      "gender": "male",
+      "ja": "箱数が確定したら、中身の個数と合わせてお知らせします。",
+      "vi": "Khi chốt số thùng, tôi báo luôn số sản phẩm bên trong ạ.",
+      "terms": [
+        "箱数",
+        "個数"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "tara_verb_masu"
+    },
+    {
+      "id": "T-101-V13-014",
+      "group": "check",
+      "role_vi": "Nhân viên mua hàng báo kết quả đếm tại kho khác số lượng đã chốt",
+      "gender": "female",
+      "ja": "百二十個と伺っていましたが、届いたのは百十八個でした。",
+      "vi": "Bên tôi được báo 120 sản phẩm, nhưng nhận được 118 ạ.",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "ga_received_no_wa"
+    },
+    {
+      "id": "T-101-V13-015",
+      "group": "check",
+      "role_vi": "Nhân viên mua hàng đề nghị hai bên đối chiếu trước khi kết luận",
+      "gender": "female",
+      "ja": "ロット番号と箱ごとの個数を一緒に照らし合わせませんか。",
+      "vi": "Mình cùng đối chiếu mã lô và số sản phẩm trong từng thùng được không ạ?",
+      "terms": [
+        "ロット番号",
+        "個数",
+        "照らし合わせる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "teian_masen_ka"
+    },
+    {
+      "id": "T-101-V13-016",
+      "group": "check",
+      "role_vi": "Đầu mối nhà máy báo sáng hôm sau mới kiểm được ghi chép từng thùng",
+      "gender": "male",
+      "ja": "箱ごとの記録は、明日の午前になれば確認できます。",
+      "vi": "Sáng mai tôi mới kiểm được ghi chép của từng thùng ạ.",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "ba_potential"
+    },
+    {
+      "id": "T-101-V13-017",
+      "group": "check",
+      "role_vi": "Nhân viên mua hàng xin đầu mối báo lại ngay cả khi chưa kiểm xong hết",
+      "gender": "female",
+      "ja": "明日の十四時に、分かったところまでお知らせいただけますか。",
+      "vi": "Lúc 14 giờ ngày mai, anh báo giúp tôi phần đã kiểm được nhé?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "te_itadakemasu_ka"
+    },
+    {
+      "id": "T-101-V13-018",
+      "group": "follow",
+      "role_vi": "Đầu mối nhà máy đề nghị giao bù phần thiếu của lô",
+      "gender": "male",
+      "ja": "明日の十一時までに不足分の二個をお届けします。",
+      "vi": "Bên tôi sẽ giao bù hai sản phẩm còn thiếu chậm nhất mười một giờ mai ạ.",
+      "terms": [
+        "不足分"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "made_ni_verb_masu"
+    },
+    {
+      "id": "T-101-V13-019",
+      "group": "follow",
+      "role_vi": "Nhân viên mua hàng hẹn kiểm và báo lại sau khi nhận phần giao bù",
+      "gender": "female",
+      "ja": "不足分を受け取ったら、二個そろっているか確認してご連絡します。",
+      "vi": "Khi nhận phần giao bù, tôi sẽ kiểm xem có đủ cả hai sản phẩm không rồi báo anh ạ.",
+      "terms": [
+        "不足分",
+        "受け取る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "tara_verb_masu"
+    },
+    {
+      "id": "T-101-V13-020",
+      "group": "follow",
+      "role_vi": "Khách tách mẫu đã xem với hồ sơ của lô giao thật",
+      "gender": "female",
+      "ja": "梱包の見本は確認しましたが、実際のロットの検査記録はまだ見ていません。",
+      "vi": "Tôi đã xem mẫu đóng gói, còn hồ sơ kiểm của lô thực tế thì vẫn chưa xem ạ.",
+      "terms": [
+        "梱包",
+        "検査記録"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "ga_mada_teimasen"
+    },
+    {
+      "id": "T-101-V13-021",
+      "group": "follow",
+      "role_vi": "Đầu mối nhà máy xin kiểm với quản lý trước khi cung cấp thông tin kiểm lô",
+      "gender": "male",
+      "ja": "検査記録のどこまでお伝えできるか、管理者に確認します。",
+      "vi": "Tôi sẽ hỏi quản lý xem có thể cung cấp đến đâu trong hồ sơ kiểm ạ.",
+      "terms": [
+        "検査記録",
+        "管理者"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "embedded_ka_kakunin"
+    },
+    {
+      "id": "T-101-V13-022",
+      "group": "follow",
+      "role_vi": "Nhân viên mua hàng xin gọi lại theo mốc để hỏi kết quả xin phép chia sẻ",
+      "gender": "female",
+      "ja": "水曜の十五時ごろ、検査記録の件でまたお電話してもよろしいですか。",
+      "vi": "Khoảng 15 giờ thứ Tư, tôi gọi lại về hồ sơ kiểm được không ạ?",
+      "terms": [
+        "検査記録"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "te_mo_yoroshii"
+    },
+    {
+      "id": "T-101-V13-023",
+      "group": "follow",
+      "role_vi": "Đầu mối nhà máy báo nội dung được phép cung cấp và nhận gửi trong ngày",
+      "gender": "male",
+      "ja": "ロット番号と検査で確認した数量は、私から今日中にお知らせします。",
+      "vi": "Mã lô và số lượng đã kiểm, tôi sẽ báo cho chị trong hôm nay ạ.",
+      "terms": [
+        "ロット番号",
+        "検査"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "time_made_ni_verb"
+    }
+  ]
+}

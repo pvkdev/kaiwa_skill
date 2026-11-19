@@ -1,0 +1,383 @@
+{
+  "code": "S-078",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a5ef17c4d9300979fdbd14907753e556d69c3ba76172eeec866c9b8e23284a07",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "enter": "Hỏi giờ, vé và khu tắm",
+    "locker": "Cất đồ và hỏi về sauna",
+    "wash": "Dùng vòi tắm và bồn ngâm",
+    "return": "Trả đồ thuê và nhận lại đồ gửi"
+  },
+  "items": [
+    {
+      "id": "S-078-V13-001",
+      "group": "enter",
+      "role_vi": "Khách hỏi giờ đóng cửa",
+      "gender": "female",
+      "ja": "今日、この銭湯は何時まで開いていますか。",
+      "vi": "Nhà tắm hôm nay mở tới mấy giờ ạ?",
+      "terms": [
+        "銭湯",
+        "何時"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_giờ_đóng"
+    },
+    {
+      "id": "S-078-V13-002",
+      "group": "enter",
+      "role_vi": "Khách hỏi giá vé",
+      "gender": "female",
+      "ja": "大人の入浴券は一枚いくらですか。",
+      "vi": "Một vé tắm cho người lớn bao nhiêu ạ?",
+      "terms": [
+        "入浴券"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_giá_vé"
+    },
+    {
+      "id": "S-078-V13-003",
+      "group": "enter",
+      "role_vi": "Nhân viên nói giá thuê khăn",
+      "gender": "male",
+      "ja": "タオルセットは別料金です。",
+      "vi": "Bộ khăn tính phí riêng ạ.",
+      "terms": [
+        "タオルセット",
+        "別料金"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "báo_phí_riêng"
+    },
+    {
+      "id": "S-078-V13-004",
+      "group": "enter",
+      "role_vi": "Khách không mang khăn",
+      "gender": "female",
+      "ja": "タオルを持っていないんですが、ここで借りられますか。",
+      "vi": "Tôi không mang khăn, ở đây có cho thuê không ạ?",
+      "terms": [
+        "借りる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_có_cho_thuê_không"
+    },
+    {
+      "id": "S-078-V13-005",
+      "group": "enter",
+      "role_vi": "Khách lần đầu đến",
+      "gender": "female",
+      "ja": "女湯の入口は右手ののれんですか。",
+      "vi": "Lối vào khu tắm nữ là qua tấm rèm bên tay phải ạ?",
+      "terms": [
+        "女湯",
+        "右手",
+        "のれん"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "kiểm_đúng_lối_vào"
+    },
+    {
+      "id": "S-078-V13-006",
+      "group": "enter",
+      "role_vi": "Nhân viên báo khu nào dùng được",
+      "gender": "male",
+      "ja": "今日は露天風呂がお休みですが、内湯は使えます。",
+      "vi": "Hôm nay bồn tắm ngoài trời tạm đóng, còn bồn trong nhà vẫn dùng được ạ.",
+      "terms": [
+        "露天風呂",
+        "内湯",
+        "使う"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "báo_phương_án_còn_dùng_được"
+    },
+    {
+      "id": "S-078-V13-007",
+      "group": "enter",
+      "role_vi": "Khách kiểm hai mốc giờ",
+      "gender": "female",
+      "ja": "最終受付は九時半で、閉まるのは十時ですね。",
+      "vi": "Chín giờ rưỡi là giờ cuối nhận khách, còn mười giờ mới đóng cửa, đúng không ạ?",
+      "terms": [
+        "最終受付",
+        "閉まる"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "phân_biệt_hai_mốc"
+    },
+    {
+      "id": "S-078-V13-008",
+      "group": "locker",
+      "role_vi": "Khách hỏi nơi cất đồ",
+      "gender": "female",
+      "ja": "着替えたあと、服と荷物は脱衣所のロッカーに入れればいいですか。",
+      "vi": "Thay đồ xong, tôi cất quần áo và túi vào tủ ở phòng thay đồ, đúng không ạ?",
+      "terms": [
+        "着替える",
+        "脱衣所",
+        "ロッカー"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "xác_nhận_quy_tắc"
+    },
+    {
+      "id": "S-078-V13-009",
+      "group": "locker",
+      "role_vi": "Nhân viên hướng dẫn đeo khóa",
+      "gender": "male",
+      "ja": "ロッカーの鍵のひもは、手首につけてください。",
+      "vi": "Chị đeo dây chìa khóa tủ vào cổ tay nhé.",
+      "terms": [
+        "ロッカー",
+        "鍵",
+        "手首"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hướng_dẫn_dùng_tủ"
+    },
+    {
+      "id": "S-078-V13-010",
+      "group": "locker",
+      "role_vi": "Khách hỏi vé sauna",
+      "gender": "female",
+      "ja": "この入浴券でサウナも使えるんですか。",
+      "vi": "Vé tắm này dùng được cả sauna ạ?",
+      "terms": [
+        "入浴券",
+        "サウナ",
+        "使う"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_vé_gồm_gì"
+    },
+    {
+      "id": "S-078-V13-011",
+      "group": "locker",
+      "role_vi": "Nhân viên báo cách mua thêm",
+      "gender": "male",
+      "ja": "サウナは別料金ですが、こちらの窓口で追加できます。",
+      "vi": "Sauna tính phí riêng, chị có thể mua thêm tại quầy này ạ.",
+      "terms": [
+        "サウナ",
+        "別料金"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "báo_phí_riêng"
+    },
+    {
+      "id": "S-078-V13-012",
+      "group": "locker",
+      "role_vi": "Nhân viên dặn về điện thoại",
+      "gender": "female",
+      "ja": "浴室にはスマホを持ち込まないでください。",
+      "vi": "Chị đừng mang điện thoại vào khu tắm nhé.",
+      "terms": [
+        "浴室",
+        "持ち込む"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "dặn_không_mang_vào"
+    },
+    {
+      "id": "S-078-V13-013",
+      "group": "wash",
+      "role_vi": "Khách hỏi vòi khác khi vòi này không ra nước",
+      "gender": "female",
+      "ja": "このシャワーは水が出ないので、ほかに使えるところはありますか。",
+      "vi": "Vòi sen này không ra nước, còn chỗ nào dùng được không ạ?",
+      "terms": [
+        "シャワー",
+        "使う"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "hỏi_chỗ_còn_dùng_được"
+    },
+    {
+      "id": "S-078-V13-014",
+      "group": "wash",
+      "role_vi": "Khách nhờ nhân viên kiểm khăn đã thuê",
+      "gender": "female",
+      "ja": "借りたタオルセットが棚にないので、確認してもらえますか。",
+      "vi": "Tôi không thấy bộ khăn đã thuê trên kệ, chị kiểm tra giúp tôi được không ạ?",
+      "terms": [
+        "借りる",
+        "タオルセット",
+        "棚",
+        "確認する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "nhờ_kiểm_đồ_thiếu"
+    },
+    {
+      "id": "S-078-V13-015",
+      "group": "wash",
+      "role_vi": "Khách nhường chỗ vòi sen",
+      "gender": "female",
+      "ja": "シャワーはもう使い終わったので、洗面器を棚に戻しますね。",
+      "vi": "Tôi dùng vòi sen xong rồi, tôi cất chậu lại lên kệ nhé.",
+      "terms": [
+        "シャワー",
+        "使う",
+        "洗面器",
+        "棚",
+        "戻す"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "dọn_để_nhường_chỗ"
+    },
+    {
+      "id": "S-078-V13-016",
+      "group": "wash",
+      "role_vi": "Khách hỏi nơi tắm rửa",
+      "gender": "female",
+      "ja": "石けんで体を洗うのは、洗い場でいいですか。",
+      "vi": "Tôi sang khu vòi sen để tắm rửa bằng xà phòng, đúng không ạ?",
+      "terms": [
+        "石けん",
+        "洗う",
+        "洗い場"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "xác_nhận_quy_tắc"
+    },
+    {
+      "id": "S-078-V13-017",
+      "group": "wash",
+      "role_vi": "Khách hỏi nơi để khăn trước khi ngâm",
+      "gender": "female",
+      "ja": "湯船に入る前に、タオルはどこに置けばいいですか。",
+      "vi": "Trước khi xuống bồn ngâm, tôi để khăn ở đâu ạ?",
+      "terms": [
+        "湯船"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "hỏi_cất_đồ_ở_đâu"
+    },
+    {
+      "id": "S-078-V13-018",
+      "group": "return",
+      "role_vi": "Khách hỏi cách trả khăn",
+      "gender": "female",
+      "ja": "借りたタオルは、出口の横のかごに返せばいいですか。",
+      "vi": "Tôi trả khăn thuê vào giỏ cạnh lối ra, đúng không ạ?",
+      "terms": [
+        "借りる",
+        "出口",
+        "かご",
+        "返す"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "xác_nhận_nơi_trả"
+    },
+    {
+      "id": "S-078-V13-019",
+      "group": "return",
+      "role_vi": "Khách mô tả túi đã gửi",
+      "gender": "female",
+      "ja": "預けたかばんは紺色で、持ち手は白です。",
+      "vi": "Túi tôi gửi màu xanh đậm, quai màu trắng ạ.",
+      "terms": [
+        "預ける",
+        "紺色",
+        "持ち手"
+      ],
+      "scenes": [
+        "S017",
+        "S019"
+      ],
+      "pattern": "mô_tả_dấu_riêng"
+    },
+    {
+      "id": "S-078-V13-020",
+      "group": "return",
+      "role_vi": "Nhân viên quầy chuẩn bị tìm túi",
+      "gender": "male",
+      "ja": "お預かりしたかばんをお探ししますので、入口の椅子でお待ちください。",
+      "vi": "Tôi sẽ tìm chiếc túi chị đã gửi, chị đợi ở hàng ghế gần lối vào nhé.",
+      "terms": [
+        "預かる",
+        "探す"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "dặn_nơi_chờ"
+    },
+    {
+      "id": "S-078-V13-021",
+      "group": "return",
+      "role_vi": "Khách quay lại quầy với phiếu giữ túi",
+      "gender": "female",
+      "ja": "預けたかばんの札は、十八番です。",
+      "vi": "Phiếu gửi túi của tôi là số mười tám ạ.",
+      "terms": [
+        "預ける",
+        "札",
+        "～番"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "nêu_số_đối_chiếu"
+    },
+    {
+      "id": "S-078-V13-022",
+      "group": "return",
+      "role_vi": "Khách nhận ra dấu riêng trên túi",
+      "gender": "female",
+      "ja": "丸いキーホルダーがついているので、これは私のかばんです。",
+      "vi": "Đây là túi của tôi ạ, có gắn chiếc móc khóa tròn này.",
+      "terms": [
+        "丸い",
+        "キーホルダー"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "xác_nhận_đúng_đồ"
+    }
+  ]
+}

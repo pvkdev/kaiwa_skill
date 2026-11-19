@@ -1,0 +1,390 @@
+{
+  "code": "H-026",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "6aa186a881514917d5053664e255a31fb8ccca38254d7fd958716657b48a8518",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "state": "Hỏi tiến độ và chỗ đang vướng",
+    "choices": "Chọn ưu tiên khi thiếu người",
+    "budget": "Bàn khoản chi và giới hạn phê duyệt",
+    "share": "Mượn người và chốt phần việc hỗ trợ",
+    "change": "Thông báo thay đổi cho đội và khách",
+    "review": "Báo kết quả và xử lý khoản vượt"
+  },
+  "items": [
+    {
+      "id": "H-026-V13-001",
+      "group": "state",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "社内の一覧表は、今どこまで進んでいますか。",
+      "vi": "Bảng theo dõi nội bộ hiện làm đến đâu rồi?",
+      "terms": [
+        "一覧表"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～はどこまで進む"
+    },
+    {
+      "id": "H-026-V13-002",
+      "group": "state",
+      "role_vi": "Thành viên dự án",
+      "gender": "female",
+      "ja": "お客様への回答の文案はできましたが、営業の確認待ちです。",
+      "vi": "Em đã soạn xong bản dự thảo trả lời khách, giờ đang chờ bên kinh doanh xác nhận.",
+      "terms": [
+        "文案",
+        "確認待ち"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～はできたが～は確認待ち"
+    },
+    {
+      "id": "H-026-V13-003",
+      "group": "state",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "回答文と並行して、連絡漏れを防ぐための最低限の一覧表も作れますか。",
+      "vi": "Trong khi làm mẫu trả lời, em có thể làm song song một bảng theo dõi với các mục thiết yếu để tránh bỏ sót liên hệ không?",
+      "terms": [
+        "一覧表",
+        "最低限",
+        "並行する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～と並行して作る"
+    },
+    {
+      "id": "H-026-V13-004",
+      "group": "state",
+      "role_vi": "Thành viên dự án",
+      "gender": "female",
+      "ja": "手引きの引き継ぎ先が決まり次第、顧客への回答を優先します。",
+      "vi": "Ngay khi có người nhận bàn giao tài liệu hướng dẫn, em sẽ chuyển sang ưu tiên trả lời khách.",
+      "terms": [
+        "引き継ぎ先",
+        "手引き"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～が決まり次第"
+    },
+    {
+      "id": "H-026-V13-005",
+      "group": "choices",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "今の人員では、金曜までにお客様に回答して、月曜までに手引きも完成させるのは難しいです。",
+      "vi": "Với số người hiện có, khó vừa trả lời khách kịp thứ Sáu vừa hoàn tất tài liệu hướng dẫn kịp thứ Hai ạ.",
+      "terms": [
+        "人員",
+        "手引き"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "今の人員では～のは難しい"
+    },
+    {
+      "id": "H-026-V13-006",
+      "group": "choices",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "増員が難しければ、手引きは必要な二章に絞って先に出すという案はいかがでしょうか。",
+      "vi": "Nếu khó bổ sung nhân sự, ta có thể chỉ đưa trước hai chương tài liệu cần ngay được không ạ?",
+      "terms": [
+        "増員",
+        "手引き"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "～に絞る"
+    },
+    {
+      "id": "H-026-V13-007",
+      "group": "choices",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "月曜までに手引きの全章が必要なら、どちらの期限を動かせるか改めてご判断いただけますか。",
+      "vi": "Nếu cần đủ các chương của tài liệu hướng dẫn trước thứ Hai, nhờ chị xem lại xem có thể dời hạn nào trong hai hạn ạ.",
+      "terms": [
+        "手引き"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～なら改めて～いただけますか"
+    },
+    {
+      "id": "H-026-V13-008",
+      "group": "choices",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "お客様への回答を最優先にし、手引きの残りの期限は私が現場と確認します。",
+      "vi": "Ta ưu tiên trả lời khách trước, còn hạn cho phần tài liệu hướng dẫn còn lại tôi sẽ xác nhận với bộ phận thực hiện.",
+      "terms": [
+        "手引き"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～は私が確認します"
+    },
+    {
+      "id": "H-026-V13-009",
+      "group": "budget",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "この設定費は、本番前に通知の誤送信がないか確かめるためのものです。",
+      "vi": "Đây là khoản chi để thiết lập môi trường kiểm thử, nhằm phát hiện lỗi gửi nhầm thông báo trước khi đưa vào sử dụng thật.",
+      "terms": [
+        "設定費"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～ためのものです"
+    },
+    {
+      "id": "H-026-V13-010",
+      "group": "budget",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "通常の運用費と試行環境の設定費の内訳を照合するまでは、発注の承認を求めません。",
+      "vi": "Tôi sẽ chưa xin duyệt đặt hàng cho đến khi đối chiếu từng khoản trong chi phí vận hành thường xuyên và chi phí thiết lập môi trường thử.",
+      "terms": [
+        "内訳",
+        "運用費",
+        "設定費",
+        "照合する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～までは～を求めない"
+    },
+    {
+      "id": "H-026-V13-011",
+      "group": "budget",
+      "role_vi": "Người duyệt ngân sách",
+      "gender": "female",
+      "ja": "今回は十万円を上限としますので、その範囲で何を検証できるか示してください。",
+      "vi": "Lần này mức trần là 100.000 yên, anh cho tôi biết trong khoản đó có thể kiểm chứng những gì.",
+      "terms": [
+        "上限"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～の範囲で～してください"
+    },
+    {
+      "id": "H-026-V13-012",
+      "group": "budget",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "十万円は予算の上限で、発注は見積書をご確認いただいてからという理解でよろしいでしょうか。",
+      "vi": "Tôi hiểu 100.000 yên là trần ngân sách và chỉ đặt hàng sau khi chị xem báo giá, đúng không ạ?",
+      "terms": [
+        "見積書",
+        "上限",
+        "予算"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～という理解でよろしいですか"
+    },
+    {
+      "id": "H-026-V13-013",
+      "group": "share",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "一覧表の見直しにそちらのチームの知見をお借りしたいのですが、来週はどなたかにご相談できますか。",
+      "vi": "Tôi muốn nhờ người có chuyên môn bên nhóm chị xem lại bảng theo dõi, tuần sau tôi có thể trao đổi với ai trong nhóm được không ạ?",
+      "terms": [
+        "一覧表",
+        "知見"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～をお借りしたい"
+    },
+    {
+      "id": "H-026-V13-014",
+      "group": "share",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "二日だけお願いできるなら、一覧表で担当者を変更したときの表示確認に絞ります。",
+      "vi": "Nếu chỉ nhờ được hai ngày, tôi sẽ giới hạn phần nhờ hỗ trợ ở việc kiểm cách hiển thị trên bảng khi đổi người phụ trách.",
+      "terms": [
+        "一覧表"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～に絞る"
+    },
+    {
+      "id": "H-026-V13-015",
+      "group": "share",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "どちらのチームも納期が近いので、双方の影響と代替案を整理して、共通の上司に相談しませんか。",
+      "vi": "Cả hai nhóm đều sắp tới hạn, hay ta cùng tổng hợp tác động và phương án thay thế của mỗi bên rồi trao đổi với cấp trên chung?",
+      "terms": [
+        "代替案"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～をそろえて相談する"
+    },
+    {
+      "id": "H-026-V13-016",
+      "group": "share",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "担当変更欄の確認で今回のお願いは終わりですので、通知との連動まで調べる必要が出たら、改めて優先順位をご相談します。",
+      "vi": "Phần nhờ hỗ trợ lần này kết thúc khi kiểm xong cột đổi người phụ trách, nếu cần xem cả phần liên kết với thông báo thì tôi sẽ trao đổi lại với chị về thứ tự ưu tiên.",
+      "terms": [
+        "優先順位"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～必要が出たら改めて"
+    },
+    {
+      "id": "H-026-V13-017",
+      "group": "change",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "顧客から回答の前倒しを求められたので、今日は回答文を優先し、手引きは日程を組み直します。",
+      "vi": "Khách đề nghị trả lời sớm hơn nên hôm nay ta ưu tiên mẫu trả lời, còn tài liệu hướng dẫn sẽ được xếp lại lịch.",
+      "terms": [
+        "前倒し",
+        "手引き"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～を求められたので"
+    },
+    {
+      "id": "H-026-V13-018",
+      "group": "change",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "手引きの作業は延期であって中止ではないので、今できている下書きは残しておいてください。",
+      "vi": "Việc làm tài liệu hướng dẫn chỉ hoãn, vẫn sẽ làm tiếp, em giữ lại phần dự thảo đã làm nhé.",
+      "terms": [
+        "延期",
+        "中止",
+        "手引き"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～であって～ではない"
+    },
+    {
+      "id": "H-026-V13-019",
+      "group": "change",
+      "role_vi": "Thành viên dự án",
+      "gender": "female",
+      "ja": "新しい回答時刻は、客先との約束を把握している営業を通して確認したほうがよいと思います。",
+      "vi": "Em nghĩ nên xác nhận giờ trả lời mới qua bộ phận kinh doanh, vì họ nắm những gì đã hứa với khách.",
+      "terms": [
+        "客先"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～を通して～"
+    },
+    {
+      "id": "H-026-V13-020",
+      "group": "review",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "承認範囲の作業は完了しましたが、最後の請求が確認できるまでは費用の総額は暫定です。",
+      "vi": "Công việc trong phạm vi được phê duyệt đã xong, nhưng tổng chi phí vẫn là số tạm tính cho đến khi xác nhận khoản trên hóa đơn cuối.",
+      "terms": [
+        "承認範囲",
+        "暫定"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～までは暫定とする"
+    },
+    {
+      "id": "H-026-V13-021",
+      "group": "review",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "試行環境の費用が見込みを超える可能性はありますが、内訳は確認中で、超過額はまだ確定していません。",
+      "vi": "Chi phí môi trường thử có thể vượt dự tính, nhưng tôi vẫn đang xem từng khoản nên chưa xác định phần vượt là bao nhiêu.",
+      "terms": [
+        "超過額",
+        "内訳"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～可能性はあるが～"
+    },
+    {
+      "id": "H-026-V13-022",
+      "group": "review",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "見積書の内訳が届き次第、追加承認をお願いする場合と、試行の範囲縮小で予算内に収める場合を比較してご報告します。",
+      "vi": "Ngay khi nhận được chi tiết báo giá, tôi sẽ so phương án xin duyệt thêm với phương án thu hẹp đợt thử để giữ trong ngân sách rồi báo lại.",
+      "terms": [
+        "追加承認",
+        "範囲縮小",
+        "見積書",
+        "内訳",
+        "予算"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～が届き次第"
+    },
+    {
+      "id": "H-026-V13-023",
+      "group": "review",
+      "role_vi": "Trưởng dự án",
+      "gender": "male",
+      "ja": "追加費用が認められなかったので、今回予算を使って試す項目は通知一種類に絞ることに決まりました。",
+      "vi": "Khoản chi thêm không được duyệt, nên đã chốt đợt thử dùng ngân sách lần này chỉ kiểm một loại thông báo.",
+      "terms": [
+        "追加費用",
+        "予算"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～に絞る"
+    }
+  ]
+}

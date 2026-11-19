@@ -1,0 +1,331 @@
+{
+  "code": "T-120",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "7a76f2b5fc800c38373d548f55af343d1ab9d9a349902767886a66ba10edbb7f",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "needs": "Hỏi khách mua cho ai và dùng vào dịp nào",
+    "try": "Chỉ phòng thử và tìm cỡ mặc thoải mái",
+    "stock": "Kiểm hàng và hẹn báo khi có kết quả",
+    "exchange": "Hỏi tình trạng áo và điều kiện đổi",
+    "accessories": "Báo giá và kiểm đủ phụ kiện trước khi giao"
+  },
+  "items": [
+    {
+      "id": "T-120-V13-001",
+      "group": "needs",
+      "role_vi": "Nhân viên hỏi khách chọn áo cho dịp nào",
+      "gender": "female",
+      "ja": "こちらのジャケットは、どんなときにお召しになりますか。",
+      "vi": "Anh định mặc chiếc áo khoác này vào dịp nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "どんなときに～ますか"
+    },
+    {
+      "id": "T-120-V13-002",
+      "group": "needs",
+      "role_vi": "Nhân viên hỏi cỡ của người nhận quà",
+      "gender": "male",
+      "ja": "贈り物でしたら、お相手のサイズはお分かりですか。",
+      "vi": "Nếu mua làm quà, chị có biết cỡ của người nhận không ạ?",
+      "terms": [
+        "贈り物"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～でしたら、～はお分かりですか"
+    },
+    {
+      "id": "T-120-V13-003",
+      "group": "needs",
+      "role_vi": "Nhân viên gợi ý áo dễ phối để đi làm và đi ăn",
+      "gender": "female",
+      "ja": "お仕事でも着るなら、襟付きで落ち着いた色がおすすめです。",
+      "vi": "Nếu anh muốn mặc cả đi làm, tôi gợi ý kiểu có cổ và màu nhã ạ.",
+      "terms": [
+        "襟付き"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～なら、～がおすすめです"
+    },
+    {
+      "id": "T-120-V13-004",
+      "group": "needs",
+      "role_vi": "Nhân viên sửa nhầm giữa cỡ khách và cỡ người nhận",
+      "gender": "male",
+      "ja": "失礼しました、お探しなのは弟さん用の白のＭサイズですね。",
+      "vi": "Xin lỗi chị, mình đang tìm áo trắng cỡ M cho em trai chị, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "失礼しました、～は～ですね"
+    },
+    {
+      "id": "T-120-V13-005",
+      "group": "try",
+      "role_vi": "Nhân viên chỉ phòng thử đồ bằng mốc dễ nhìn",
+      "gender": "female",
+      "ja": "試着室は、右手にある大きな鏡の隣です。",
+      "vi": "Phòng thử đồ ở bên phải, ngay cạnh tấm gương lớn ạ.",
+      "terms": [
+        "試着室"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～は、～の隣です"
+    },
+    {
+      "id": "T-120-V13-006",
+      "group": "try",
+      "role_vi": "Nhân viên đề nghị mang thêm cỡ khác để so",
+      "gender": "male",
+      "ja": "Ｍと比べられるように、Ｌサイズもお持ちしましょうか。",
+      "vi": "Tôi mang thêm cỡ L để chị so với cỡ M nhé?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～もお持ちしましょうか"
+    },
+    {
+      "id": "T-120-V13-007",
+      "group": "try",
+      "role_vi": "Nhân viên hỏi chật ở đâu khi khách cử động",
+      "gender": "female",
+      "ja": "腕を動かすと肩と胸のどちらが窮屈ですか。",
+      "vi": "Khi cử động tay, anh thấy chật ở vai hay ở ngực ạ?",
+      "terms": [
+        "窮屈"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～と、～のどちらが～ですか"
+    },
+    {
+      "id": "T-120-V13-008",
+      "group": "try",
+      "role_vi": "Nhân viên mang mẫu có vai rộng hơn nhưng tay dài tương đương",
+      "gender": "male",
+      "ja": "袖丈は同じくらいで、肩にもう少しゆとりのある型もお持ちしましょうか。",
+      "vi": "Tôi mang thêm kiểu có tay áo dài tương đương nhưng vai rộng hơn một chút cho chị thử nhé?",
+      "terms": [
+        "袖丈",
+        "ゆとり"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～もお持ちしましょうか"
+    },
+    {
+      "id": "T-120-V13-009",
+      "group": "stock",
+      "role_vi": "Nhân viên báo hết màu và gợi ý màu khác cùng cỡ",
+      "gender": "female",
+      "ja": "黒のＭは品切れですが、同じ型の濃いグレーでしたらございます。",
+      "vi": "Màu đen cỡ M đã hết, nhưng cùng kiểu này còn màu xám đậm ạ.",
+      "terms": [
+        "品切れ"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～は品切れですが、～でしたらございます"
+    },
+    {
+      "id": "T-120-V13-010",
+      "group": "stock",
+      "role_vi": "Nhân viên kiểm tra hàng thực tế ở chi nhánh khác",
+      "gender": "male",
+      "ja": "画面では在庫が一点ありますが、別の店舗に現物があるか確認しましょうか。",
+      "vi": "Trên hệ thống báo còn một chiếc, tôi hỏi chi nhánh kia xem thực tế còn hàng không nhé?",
+      "terms": [
+        "在庫",
+        "現物"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～がありますが、～か確認しましょうか"
+    },
+    {
+      "id": "T-120-V13-011",
+      "group": "stock",
+      "role_vi": "Nhân viên nói có thể chuyển hàng nếu chi nhánh còn",
+      "gender": "female",
+      "ja": "ほかの店舗に在庫があれば、こちらのお店に取り寄せることができます。",
+      "vi": "Nếu chi nhánh khác còn hàng, bên tôi có thể chuyển về cửa hàng này ạ.",
+      "terms": [
+        "在庫",
+        "取り寄せる"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～があれば、～ことができます"
+    },
+    {
+      "id": "T-120-V13-012",
+      "group": "stock",
+      "role_vi": "Nhân viên hỏi khách cần mặc vào lúc nào để kiểm lịch",
+      "gender": "male",
+      "ja": "金曜日の午後には届きそうですが、何時ごろお召しになりますか。",
+      "vi": "Dự kiến áo tới chiều thứ Sáu, chị định mặc vào khoảng mấy giờ ạ?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～そうですが、何時ごろ～ますか"
+    },
+    {
+      "id": "T-120-V13-013",
+      "group": "stock",
+      "role_vi": "Nhân viên hẹn gọi dù chưa xác nhận được hàng",
+      "gender": "female",
+      "ja": "発送日がまだ分からなくても、今日の夕方までに状況をお電話でお伝えします。",
+      "vi": "Dù chưa biết được ngày gửi hàng, chậm nhất chiều nay tôi sẽ gọi báo anh tình hình ạ.",
+      "terms": [
+        "発送"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～が分からなくても、～までにお伝えします"
+    },
+    {
+      "id": "T-120-V13-014",
+      "group": "stock",
+      "role_vi": "Nhân viên xác nhận có giữ hàng sau khi báo khách",
+      "gender": "male",
+      "ja": "入荷したらお電話しますので、閉店までお取り置きしてもよろしいですか。",
+      "vi": "Hàng về tôi sẽ gọi báo, tôi giữ đến lúc đóng cửa cho chị nhé?",
+      "terms": [
+        "入荷",
+        "取り置き"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～したら～しますので、～てもよろしいですか"
+    },
+    {
+      "id": "T-120-V13-015",
+      "group": "exchange",
+      "role_vi": "Nhân viên xin xem phiếu mua hàng khi khách muốn đổi",
+      "gender": "female",
+      "ja": "購入日を確認したいので、レシートを拝見してもよろしいですか。",
+      "vi": "Tôi muốn kiểm tra ngày mua, anh cho tôi xem biên lai được không ạ?",
+      "terms": [
+        "購入日",
+        "レシート",
+        "拝見する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～てもよろしいですか"
+    },
+    {
+      "id": "T-120-V13-016",
+      "group": "exchange",
+      "role_vi": "Nhân viên xác nhận đường chỉ đã bung lúc mở túi",
+      "gender": "male",
+      "ja": "袋を開けたときには、もう脇の縫い目がほどけていたんですね。",
+      "vi": "Lúc mở túi ra, đường may dưới nách áo đã bung sẵn rồi, đúng không ạ?",
+      "terms": [
+        "縫い目",
+        "ほどける"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ときには、もう～ていたんですね"
+    },
+    {
+      "id": "T-120-V13-017",
+      "group": "exchange",
+      "role_vi": "Nhân viên nói sẽ cùng người phụ trách xem đủ điều kiện đổi",
+      "gender": "female",
+      "ja": "サイズ交換ができるか、商品の状態と付属品を担当者と一緒に確認しますね。",
+      "vi": "Tôi sẽ cùng người phụ trách kiểm tra tình trạng áo và phụ kiện xem có đổi cỡ được không ạ.",
+      "terms": [
+        "交換",
+        "付属品",
+        "担当者"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～ができるか、～を確認します"
+    },
+    {
+      "id": "T-120-V13-018",
+      "group": "exchange",
+      "role_vi": "Nhân viên giải thích điều kiện riêng của cửa hàng",
+      "gender": "male",
+      "ja": "当店では、洗濯した商品はサイズ交換の対象外となっています。",
+      "vi": "Ở cửa hàng chúng tôi, hàng đã giặt không thuộc diện được đổi cỡ ạ.",
+      "terms": [
+        "交換",
+        "対象外"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "当店では、～は～対象外です"
+    },
+    {
+      "id": "T-120-V13-019",
+      "group": "accessories",
+      "role_vi": "Nhân viên nói giá đã gồm phụ kiện đi kèm",
+      "gender": "female",
+      "ja": "肩ひもと布袋は付属品なので、どちらも追加料金はかかりません。",
+      "vi": "Dây đeo và túi vải đều là phụ kiện đi kèm, không tính thêm tiền ạ.",
+      "terms": [
+        "付属品"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～なので、追加料金はかかりません"
+    },
+    {
+      "id": "T-120-V13-020",
+      "group": "accessories",
+      "role_vi": "Nhân viên xin kiểm trong hộp khi khách chưa thấy dây",
+      "gender": "male",
+      "ja": "長い肩ひもが見当たらないので、箱の中も確認させていただけますか。",
+      "vi": "Chưa thấy dây đeo dài, chị cho tôi kiểm tra cả bên trong hộp được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～が見当たらないので、～ていただけますか"
+    },
+    {
+      "id": "T-120-V13-021",
+      "group": "accessories",
+      "role_vi": "Nhân viên mời khách kiểm lại đủ phụ kiện sau khi tìm thấy",
+      "gender": "female",
+      "ja": "バッグと肩ひもと布袋の三点がそろっているか、ご一緒に確認しましょうか。",
+      "vi": "Anh cùng tôi kiểm tra xem đã đủ ba món là túi, dây đeo và túi vải chưa nhé?",
+      "terms": [],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～がそろっているか、～しましょうか"
+    }
+  ]
+}

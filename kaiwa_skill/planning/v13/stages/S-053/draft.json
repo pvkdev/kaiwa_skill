@@ -1,0 +1,371 @@
+{
+  "code": "S-053",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "f53c3b1e70eef8ac0f62241c838b43cb4c5e2af0544aa0357c9968b52f9556c6",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Nhờ người gần đó gọi cảnh sát",
+    "report": "Báo địa điểm và điều thấy rõ",
+    "wait": "Nói vị trí mới và chỗ đợi",
+    "follow": "Kể lại, bổ sung và hẹn liên hệ"
+  },
+  "items": [
+    {
+      "id": "S-053-V13-001",
+      "group": "ask",
+      "role_vi": "Người nhờ người ở gần giúp",
+      "gender": "female",
+      "ja": "すみません、警察を呼んでください。",
+      "vi": "Anh gọi cảnh sát giúp tôi với ạ.",
+      "terms": [
+        "警察"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜を呼んでください"
+    },
+    {
+      "id": "S-053-V13-002",
+      "group": "ask",
+      "role_vi": "Người nhờ người ở gần giúp",
+      "gender": "female",
+      "ja": "人に脅されたので、百十番に電話してください。",
+      "vi": "Tôi vừa bị đe dọa, anh gọi số 110 giúp tôi với ạ.",
+      "terms": [
+        "脅す",
+        "110番"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜ので、電話してください"
+    },
+    {
+      "id": "S-053-V13-003",
+      "group": "ask",
+      "role_vi": "Người nhờ người ở gần giúp",
+      "gender": "female",
+      "ja": "あおい駅の南口、パン屋の看板の前にいます。",
+      "vi": "Tôi đang ở trước biển hiệu tiệm bánh tại cửa nam ga Aoi ạ.",
+      "terms": [
+        "南口",
+        "看板"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜の前にいます"
+    },
+    {
+      "id": "S-053-V13-004",
+      "group": "ask",
+      "role_vi": "Người nhờ người ở gần giúp",
+      "gender": "female",
+      "ja": "質問は一つずつお願いします。",
+      "vi": "Anh hỏi từng câu một giúp tôi ạ.",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "一つずつお願いします"
+    },
+    {
+      "id": "S-053-V13-005",
+      "group": "ask",
+      "role_vi": "Người nhờ nhân viên cửa hàng cùng đợi cảnh sát",
+      "gender": "female",
+      "ja": "警察が来るまで、一緒に待ってもらえますか。",
+      "vi": "Anh đợi cảnh sát cùng tôi được không ạ?",
+      "terms": [
+        "待つ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-053-V13-006",
+      "group": "report",
+      "role_vi": "Người gọi báo cảnh sát",
+      "gender": "female",
+      "ja": "あおい駅の南口で道をふさがれ、脅されました。",
+      "vi": "Tôi bị chặn đường và đe dọa ở cửa nam ga Aoi ạ.",
+      "terms": [
+        "南口",
+        "ふさぐ",
+        "脅す"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜で〜されました"
+    },
+    {
+      "id": "S-053-V13-007",
+      "group": "report",
+      "role_vi": "Người gọi báo cảnh sát",
+      "gender": "female",
+      "ja": "私を脅した人は、まだ駅の近くにいます。",
+      "vi": "Người đã đe dọa tôi vẫn còn ở gần ga ạ.",
+      "terms": [
+        "脅す",
+        "近く"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜はまだ〜にいます"
+    },
+    {
+      "id": "S-053-V13-008",
+      "group": "report",
+      "role_vi": "Người gọi báo cảnh sát",
+      "gender": "female",
+      "ja": "相手の手がよく見えなかったので、武器があったか分かりません。",
+      "vi": "Tôi không nhìn rõ tay người đó, nên không biết họ có vũ khí không ạ.",
+      "terms": [
+        "相手",
+        "見える",
+        "武器"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜ので、〜か分かりません"
+    },
+    {
+      "id": "S-053-V13-009",
+      "group": "report",
+      "role_vi": "Người gọi báo cảnh sát",
+      "gender": "female",
+      "ja": "場所はさくら通りではなく、あおば通りです。",
+      "vi": "Địa điểm là phố Aoba, không phải phố Sakura ạ.",
+      "terms": [
+        "通り"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜ではなく、〜です"
+    },
+    {
+      "id": "S-053-V13-010",
+      "group": "report",
+      "role_vi": "Người gọi báo cảnh sát",
+      "gender": "female",
+      "ja": "すみません、ベトナム語で話してもいいですか。",
+      "vi": "Xin phép, tôi có thể nói bằng tiếng Việt không ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜てもいいですか"
+    },
+    {
+      "id": "S-053-V13-011",
+      "group": "wait",
+      "role_vi": "Người gọi báo cảnh sát",
+      "gender": "female",
+      "ja": "南口のパン屋の中で、警察官を待っていればいいですか。",
+      "vi": "Tôi cứ đợi cảnh sát bên trong tiệm bánh ở cửa nam là được, đúng không ạ?",
+      "terms": [
+        "南口",
+        "中",
+        "警察官",
+        "待つ"
+      ],
+      "scenes": [
+        "S009",
+        "S011"
+      ],
+      "pattern": "〜ばいいですか"
+    },
+    {
+      "id": "S-053-V13-012",
+      "group": "wait",
+      "role_vi": "Người tiếp nhận cuộc gọi khẩn cấp",
+      "gender": "male",
+      "ja": "店の看板を目印にして、警察官がそちらに向かっています。",
+      "vi": "Cảnh sát đang đến chỗ chị, lấy biển hiệu cửa hàng làm mốc ạ.",
+      "terms": [
+        "看板",
+        "目印",
+        "警察官",
+        "向かう"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜を目印に向かいます"
+    },
+    {
+      "id": "S-053-V13-013",
+      "group": "wait",
+      "role_vi": "Người gọi báo cảnh sát",
+      "gender": "female",
+      "ja": "パン屋を出て、今は隣のさくら商店の中にいます。",
+      "vi": "Tôi đã ra khỏi tiệm bánh, giờ đang ở trong cửa hàng Sakura bên cạnh ạ.",
+      "terms": [
+        "隣",
+        "中"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜て、今は〜にいます"
+    },
+    {
+      "id": "S-053-V13-014",
+      "group": "wait",
+      "role_vi": "Người tiếp nhận cuộc gọi khẩn cấp",
+      "gender": "male",
+      "ja": "そこを離れたら、新しい場所を連絡してください。",
+      "vi": "Khi rời chỗ đó, chị báo lại cho tôi biết chỗ mới nhé.",
+      "terms": [
+        "離れる",
+        "連絡する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜たら、連絡してください"
+    },
+    {
+      "id": "S-053-V13-015",
+      "group": "wait",
+      "role_vi": "Người gọi báo cảnh sát",
+      "gender": "female",
+      "ja": "もう一人が相手に近づきましたが、関係があるかは分かりません。",
+      "vi": "Có thêm một người đến gần người đã đe dọa tôi, tôi không biết họ có liên quan không ạ.",
+      "terms": [
+        "〜人",
+        "相手",
+        "関係"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜か分かりません"
+    },
+    {
+      "id": "S-053-V13-016",
+      "group": "follow",
+      "role_vi": "Người trao đổi với cảnh sát tại hiện trường",
+      "gender": "female",
+      "ja": "午後二時半ごろ南口で道をふさがれて、近くの店に入りました。",
+      "vi": "Khoảng hai giờ rưỡi chiều tôi bị chặn đường ở cửa nam rồi vào một cửa hàng gần đó ạ.",
+      "terms": [
+        "南口",
+        "ふさぐ",
+        "近く"
+      ],
+      "scenes": [
+        "S013",
+        "S017"
+      ],
+      "pattern": "〜て、〜に入りました"
+    },
+    {
+      "id": "S-053-V13-017",
+      "group": "follow",
+      "role_vi": "Người trao đổi với cảnh sát tại hiện trường",
+      "gender": "female",
+      "ja": "私が見たのは一人だけで、二人いたという話はほかの人から聞きました。",
+      "vi": "Tôi chỉ thấy một người, còn chuyện có hai người là tôi nghe người khác kể ạ.",
+      "terms": [
+        "見る",
+        "〜人",
+        "聞く"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "見たことと聞いたことを分ける"
+    },
+    {
+      "id": "S-053-V13-018",
+      "group": "follow",
+      "role_vi": "Người trao đổi với cảnh sát tại hiện trường",
+      "gender": "female",
+      "ja": "警察署には、何時に行けばいいですか。",
+      "vi": "Tôi nên đến đồn cảnh sát lúc mấy giờ ạ?",
+      "terms": [
+        "警察署"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜ばいいですか"
+    },
+    {
+      "id": "S-053-V13-019",
+      "group": "follow",
+      "role_vi": "Người trình bày tại đồn cảnh sát",
+      "gender": "female",
+      "ja": "さっき三時と言いましたが、午後二時半ごろに訂正できますか。",
+      "vi": "Lúc nãy tôi nói ba giờ, giờ cho tôi sửa thành khoảng hai giờ rưỡi chiều được không ạ?",
+      "terms": [
+        "訂正する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜と言いましたが、〜に訂正できますか"
+    },
+    {
+      "id": "S-053-V13-020",
+      "group": "follow",
+      "role_vi": "Người trình bày tại đồn cảnh sát",
+      "gender": "female",
+      "ja": "上着の色を思い出したら、この受付番号も伝えればいいですか。",
+      "vi": "Nếu nhớ ra màu áo khoác, khi báo lại tôi đọc cả số tiếp nhận này, đúng không ạ?",
+      "terms": [
+        "上着",
+        "色",
+        "思い出す",
+        "受付番号"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜ばいいですか"
+    },
+    {
+      "id": "S-053-V13-021",
+      "group": "follow",
+      "role_vi": "Người trình bày tại đồn cảnh sát",
+      "gender": "female",
+      "ja": "この番号に電話して、私が出なければ留守電には何も残さないでください。",
+      "vi": "Xin gọi vào số này, nếu tôi không nghe máy thì đừng để lại lời nhắn thoại ạ.",
+      "terms": [
+        "留守電",
+        "残す"
+      ],
+      "scenes": [
+        "S016",
+        "S020"
+      ],
+      "pattern": "〜なければ、〜ないでください"
+    },
+    {
+      "id": "S-053-V13-022",
+      "group": "follow",
+      "role_vi": "Người trình bày tại đồn cảnh sát",
+      "gender": "female",
+      "ja": "これからは、どなたが私に連絡してくださいますか。",
+      "vi": "Sau này ai sẽ liên hệ với tôi ạ?",
+      "terms": [
+        "連絡する"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "どなたが〜してくださいますか"
+    }
+  ]
+}

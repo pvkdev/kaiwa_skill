@@ -1,0 +1,346 @@
+{
+  "code": "S-009",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3c6c8de4db495261b3731d1e89f1b8ff6b333893c2795ed9dc82110ed72788c0",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "places": "Tìm nơi đến và hỏi giờ mở cửa",
+    "books": "Tìm sách và hỏi cách mượn",
+    "gathering": "Hỏi cách tham gia sinh hoạt",
+    "room": "Đặt và dùng phòng cho nhóm"
+  },
+  "items": [
+    {
+      "id": "S-009-V13-001",
+      "group": "places",
+      "role_vi": "Người mới đến khu phố hỏi thư viện gần nơi ở",
+      "gender": "female",
+      "ja": "この近くに図書館はありますか。",
+      "vi": "Gần đây có thư viện không ạ?",
+      "terms": [
+        "近く",
+        "図書館"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-009-V13-002",
+      "group": "places",
+      "role_vi": "Người mới đến hỏi đường đến trung tâm giao lưu",
+      "gender": "male",
+      "ja": "交流センターへはどこで曲がりますか。",
+      "vi": "Đến trung tâm giao lưu thì rẽ ở đâu ạ?",
+      "terms": [
+        "交流センター",
+        "曲がる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "doko_de_verb_ka"
+    },
+    {
+      "id": "S-009-V13-003",
+      "group": "places",
+      "role_vi": "Người dùng thư viện hỏi giờ mở cửa thứ Bảy",
+      "gender": "male",
+      "ja": "土曜日は何時から開いていますか。",
+      "vi": "Thứ Bảy mở cửa từ mấy giờ ạ?",
+      "terms": [
+        "土曜日",
+        "開く"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "nanjikara_verb_ka"
+    },
+    {
+      "id": "S-009-V13-004",
+      "group": "places",
+      "role_vi": "Người muốn đọc sách tìm một nơi khác vì phòng đọc đóng cửa",
+      "gender": "female",
+      "ja": "ほかに本が読める所はありますか。",
+      "vi": "Có nơi nào khác đọc sách được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-009-V13-005",
+      "group": "places",
+      "role_vi": "Người hỏi đường nhắc lại đoạn đường đi qua phía trước ga",
+      "gender": "female",
+      "ja": "駅の前を通るんですね。",
+      "vi": "Mình đi ngang trước ga, đúng không ạ?",
+      "terms": [
+        "通る"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "verb_n_desu_ne"
+    },
+    {
+      "id": "S-009-V13-006",
+      "group": "books",
+      "role_vi": "Độc giả hỏi nhân viên về sách dạy nấu ăn",
+      "gender": "female",
+      "ja": "料理の本を探しています。",
+      "vi": "Tôi đang tìm sách dạy nấu ăn ạ.",
+      "terms": [
+        "探す"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "noun_wo_sagashiteimasu"
+    },
+    {
+      "id": "S-009-V13-007",
+      "group": "books",
+      "role_vi": "Người mới dùng thư viện hỏi về giấy tờ khi làm thẻ",
+      "gender": "male",
+      "ja": "図書館カードを作るには何が必要ですか。",
+      "vi": "Làm thẻ thư viện thì tôi cần gì ạ?",
+      "terms": [
+        "図書館カード"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "ni_wa_nani_ga_hitsuyou"
+    },
+    {
+      "id": "S-009-V13-008",
+      "group": "books",
+      "role_vi": "Người chưa có thẻ xin đọc sách tại chỗ",
+      "gender": "female",
+      "ja": "この本はここで読んでもいいですか。",
+      "vi": "Tôi đọc cuốn này tại đây được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-009-V13-009",
+      "group": "books",
+      "role_vi": "Độc giả nhờ nhân viên xem cuốn sách mình không thấy trên kệ",
+      "gender": "male",
+      "ja": "この本をもう一度調べてもらえますか。",
+      "vi": "Anh kiểm tra lại cuốn này giúp tôi được không ạ?",
+      "terms": [
+        "調べる"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-009-V13-010",
+      "group": "books",
+      "role_vi": "Nhân viên thư viện báo cuốn sách đang được người khác mượn",
+      "gender": "male",
+      "ja": "この本は今、貸出中です。",
+      "vi": "Cuốn này hiện có người mượn rồi ạ.",
+      "terms": [
+        "貸出中"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "noun_wa_status_desu"
+    },
+    {
+      "id": "S-009-V13-011",
+      "group": "books",
+      "role_vi": "Độc giả quay lại để hỏi sách nấu ăn đã được trả về chưa",
+      "gender": "female",
+      "ja": "料理の本はもう戻りましたか。",
+      "vi": "Cuốn sách nấu ăn đã được trả chưa ạ?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "mou_verb_past_ka"
+    },
+    {
+      "id": "S-009-V13-012",
+      "group": "gathering",
+      "role_vi": "Người mới chuyển đến hỏi nội dung buổi sinh hoạt khu phố",
+      "gender": "female",
+      "ja": "この集まりはどんな会ですか。",
+      "vi": "Buổi sinh hoạt này có những hoạt động gì ạ?",
+      "terms": [
+        "集まり"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "donna_noun_ka"
+    },
+    {
+      "id": "S-009-V13-013",
+      "group": "gathering",
+      "role_vi": "Người muốn tham dự hỏi buổi thứ Bảy còn chỗ không",
+      "gender": "male",
+      "ja": "土曜日の集まりはまだ空きがありますか。",
+      "vi": "Buổi gặp thứ Bảy còn chỗ không ạ?",
+      "terms": [
+        "土曜日",
+        "集まり"
+      ],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "aki_ga_arimasu_ka"
+    },
+    {
+      "id": "S-009-V13-014",
+      "group": "gathering",
+      "role_vi": "Người muốn tham dự hỏi buổi kế sau khi buổi này đã đủ người",
+      "gender": "female",
+      "ja": "次の集まりはいつですか。",
+      "vi": "Buổi gặp tiếp theo khi nào ạ?",
+      "terms": [
+        "集まり"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "noun_wa_itsu_desu_ka"
+    },
+    {
+      "id": "S-009-V13-015",
+      "group": "gathering",
+      "role_vi": "Người dự lần đầu hỏi có bắt buộc đăng ký trước không",
+      "gender": "male",
+      "ja": "先に申し込む必要がありますか。",
+      "vi": "Tôi có cần đăng ký trước không ạ?",
+      "terms": [
+        "申し込む"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "verb_hitsuyou_ga_arimasu_ka"
+    },
+    {
+      "id": "S-009-V13-016",
+      "group": "gathering",
+      "role_vi": "Người dự chốt với quầy sẽ đến buổi mười giờ thứ Bảy tuần sau",
+      "gender": "female",
+      "ja": "来週の土曜日、十時の会に行きます。",
+      "vi": "Tôi sẽ đến buổi mười giờ thứ Bảy tuần sau ạ.",
+      "terms": [
+        "土曜日"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "event_ni_ikimasu"
+    },
+    {
+      "id": "S-009-V13-017",
+      "group": "room",
+      "role_vi": "Người đại diện nhóm hỏi còn phòng họp từ ba đến năm giờ thứ Ba không",
+      "gender": "female",
+      "ja": "火曜日の三時から五時まで、集会室は空いていますか。",
+      "vi": "Thứ Ba từ ba đến năm giờ phòng họp có trống không ạ?",
+      "terms": [
+        "集会室",
+        "空く"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "time_wa_aiteimasu_ka"
+    },
+    {
+      "id": "S-009-V13-018",
+      "group": "room",
+      "role_vi": "Người đặt phòng hỏi khung giờ khác khi lịch mong muốn đã kín",
+      "gender": "male",
+      "ja": "同じ日の別の時間は空いていますか。",
+      "vi": "Cùng ngày hôm đó còn khung giờ nào trống không ạ?",
+      "terms": [
+        "空く"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "time_wa_aiteimasu_ka"
+    },
+    {
+      "id": "S-009-V13-019",
+      "group": "room",
+      "role_vi": "Người đặt phòng nói với nhân viên mục đích sử dụng của nhóm bốn người",
+      "gender": "female",
+      "ja": "四人で日本語の会話を練習します。",
+      "vi": "Nhóm bốn người chúng tôi sẽ luyện hội thoại tiếng Nhật ạ.",
+      "terms": [
+        "会話"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "activity_wo_renshuu"
+    },
+    {
+      "id": "S-009-V13-020",
+      "group": "room",
+      "role_vi": "Đại diện nhóm hỏi khi nào cần đến quầy để nhận phòng",
+      "gender": "male",
+      "ja": "何時に受付に来ればいいですか。",
+      "vi": "Tôi đến quầy nhận phòng lúc mấy giờ ạ?",
+      "terms": [
+        "受付"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "nanji_ni_verb_ba"
+    },
+    {
+      "id": "S-009-V13-021",
+      "group": "room",
+      "role_vi": "Người dùng phòng hỏi phòng số hai nằm ở tầng mấy",
+      "gender": "female",
+      "ja": "二号室は何階ですか。",
+      "vi": "Phòng số hai ở tầng mấy ạ?",
+      "terms": [],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "noun_wa_nankai"
+    },
+    {
+      "id": "S-009-V13-022",
+      "group": "room",
+      "role_vi": "Đại diện nhóm báo quầy đã dùng xong phòng họp",
+      "gender": "male",
+      "ja": "集会室を使い終わりました。",
+      "vi": "Nhóm tôi đã dùng xong phòng họp rồi ạ.",
+      "terms": [
+        "集会室"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "verb_owarimashita"
+    }
+  ]
+}

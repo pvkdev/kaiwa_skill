@@ -1,0 +1,327 @@
+{
+  "code": "S-050",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "f51357386779f529b69b935e90e6ea14a6d05ee919389b002b22252aa6194fb2",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "counter": "Tìm người tư vấn tại hiệu thuốc",
+    "symptoms": "Nói triệu chứng và thuốc đang dùng",
+    "directions": "Hỏi rõ nhãn và cách dùng",
+    "followup": "Mang hộp thuốc hỏi lại"
+  },
+  "items": [
+    {
+      "id": "S-050-V13-001",
+      "group": "counter",
+      "role_vi": "Khách hỏi nhân viên hiệu thuốc",
+      "gender": "female",
+      "ja": "薬のことはどのカウンターで聞けますか。",
+      "vi": "Tôi có thể hỏi về thuốc ở quầy nào ạ?",
+      "terms": [
+        "薬",
+        "カウンター"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "どの〜で聞けますか"
+    },
+    {
+      "id": "S-050-V13-002",
+      "group": "counter",
+      "role_vi": "Khách hỏi nhân viên hiệu thuốc",
+      "gender": "female",
+      "ja": "薬剤師さんには何時ごろ相談できますか。",
+      "vi": "Khoảng mấy giờ tôi có thể gặp dược sĩ để hỏi ạ?",
+      "terms": [
+        "薬剤師",
+        "相談する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "何時ごろ相談できますか"
+    },
+    {
+      "id": "S-050-V13-003",
+      "group": "counter",
+      "role_vi": "Khách hỏi nhân viên hiệu thuốc",
+      "gender": "female",
+      "ja": "いつもの薬が売り切れなら、別の薬について相談できますか。",
+      "vi": "Nếu hết loại thuốc tôi hay mua, tôi hỏi về loại khác được không ạ?",
+      "terms": [
+        "薬",
+        "売り切れる",
+        "相談する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜なら、相談できますか"
+    },
+    {
+      "id": "S-050-V13-004",
+      "group": "counter",
+      "role_vi": "Khách hỏi nhân viên hiệu thuốc",
+      "gender": "female",
+      "ja": "この箱に入っているのは、薬ですか、それとも化粧品ですか。",
+      "vi": "Trong hộp này là thuốc hay mỹ phẩm ạ?",
+      "terms": [
+        "箱",
+        "薬",
+        "化粧品"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜ですか、それとも〜ですか"
+    },
+    {
+      "id": "S-050-V13-005",
+      "group": "symptoms",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "今朝からお腹が痛いので、薬のことで相談してもいいですか。",
+      "vi": "Tôi đau bụng từ sáng nay, nhờ dược sĩ tư vấn về thuốc được không ạ?",
+      "terms": [
+        "お腹",
+        "痛い",
+        "薬",
+        "相談する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜ので、相談してもいいですか"
+    },
+    {
+      "id": "S-050-V13-006",
+      "group": "symptoms",
+      "role_vi": "Dược sĩ hỏi khách",
+      "gender": "male",
+      "ja": "お腹の真ん中がずっと痛いんですか。",
+      "vi": "Chị bị đau liên tục ở giữa bụng phải không ạ?",
+      "terms": [
+        "お腹",
+        "真ん中",
+        "ずっと",
+        "痛い"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜がずっと痛いんですか"
+    },
+    {
+      "id": "S-050-V13-007",
+      "group": "symptoms",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "別の薬も飲んでいるので、この薬との飲み合わせを確認してもらえますか。",
+      "vi": "Tôi đang uống thuốc khác nữa, anh kiểm tra giúp tôi có dùng cùng thuốc này được không ạ?",
+      "terms": [
+        "薬",
+        "飲む",
+        "飲み合わせ",
+        "確認する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜ので、確認してもらえますか"
+    },
+    {
+      "id": "S-050-V13-008",
+      "group": "symptoms",
+      "role_vi": "Dược sĩ hỏi khách",
+      "gender": "male",
+      "ja": "お薬手帳にある、今飲んでいる薬の名前を見せていただけますか。",
+      "vi": "Chị cho tôi xem tên thuốc đang dùng trong sổ theo dõi thuốc được không ạ?",
+      "terms": [
+        "飲む",
+        "薬",
+        "お薬手帳",
+        "見せる"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜を見せていただけますか"
+    },
+    {
+      "id": "S-050-V13-009",
+      "group": "symptoms",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "この症状は、近くのどの医療機関に相談すればいいですか。",
+      "vi": "Với triệu chứng này, tôi nên hỏi cơ sở y tế nào gần đây ạ?",
+      "terms": [
+        "症状",
+        "医療機関",
+        "相談する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "どこに相談すればいいですか"
+    },
+    {
+      "id": "S-050-V13-010",
+      "group": "directions",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "商品名が聞き取れなかったので、箱のどこにあるか教えてください。",
+      "vi": "Tôi nghe không rõ tên sản phẩm, anh chỉ giúp tên nằm chỗ nào trên hộp ạ.",
+      "terms": [
+        "商品名",
+        "聞き取る",
+        "箱"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜ので、〜を教えてください"
+    },
+    {
+      "id": "S-050-V13-011",
+      "group": "directions",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "この薬は食前に飲むのか、食後に飲むのか教えてください。",
+      "vi": "Anh cho tôi biết thuốc này uống trước hay sau bữa ăn ạ.",
+      "terms": [
+        "薬",
+        "食前",
+        "飲む",
+        "食後"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜か教えてください"
+    },
+    {
+      "id": "S-050-V13-012",
+      "group": "directions",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "この薬を飲むと、眠気が出ることがありますか。",
+      "vi": "Thuốc này uống vào có thể gây buồn ngủ không ạ?",
+      "terms": [
+        "薬",
+        "飲む",
+        "眠気"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜ことがありますか"
+    },
+    {
+      "id": "S-050-V13-013",
+      "group": "directions",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "「朝食後」の意味を、もう一度簡単に教えてください。",
+      "vi": "Anh giải thích lại “chōshokugo” nghĩa là gì bằng từ dễ hiểu giúp tôi ạ.",
+      "terms": [
+        "朝食後",
+        "もう一度",
+        "簡単"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜をもう一度〜てください"
+    },
+    {
+      "id": "S-050-V13-014",
+      "group": "directions",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "朝ごはんを食べてから、この薬を飲むんですね。",
+      "vi": "Vậy là tôi ăn sáng xong rồi mới uống thuốc này, đúng không ạ?",
+      "terms": [
+        "薬",
+        "飲む"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜てから、〜するんですね"
+    },
+    {
+      "id": "S-050-V13-015",
+      "group": "followup",
+      "role_vi": "Khách quay lại hiệu thuốc",
+      "gender": "female",
+      "ja": "一日に何回飲むのか、箱の表示を見て確認してもらえますか。",
+      "vi": "Anh xem nhãn trên hộp và xác nhận giúp tôi một ngày uống mấy lần được không ạ?",
+      "terms": [
+        "〜回",
+        "飲む",
+        "箱",
+        "確認する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜か確認してもらえますか"
+    },
+    {
+      "id": "S-050-V13-016",
+      "group": "followup",
+      "role_vi": "Khách nói với dược sĩ",
+      "gender": "female",
+      "ja": "薬を飲んで具合が悪くなったら、どこに相談すればいいですか。",
+      "vi": "Nếu uống thuốc rồi thấy trong người không khỏe, tôi nên hỏi ở đâu ạ?",
+      "terms": [
+        "薬",
+        "飲む",
+        "具合が悪い",
+        "相談する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "どこに相談すればいいですか"
+    },
+    {
+      "id": "S-050-V13-017",
+      "group": "followup",
+      "role_vi": "Khách quay lại hiệu thuốc",
+      "gender": "female",
+      "ja": "買った薬の商品名が違うので、この箱を確認してもらえますか。",
+      "vi": "Tên sản phẩm trên thuốc tôi mua không đúng, anh kiểm tra hộp này giúp tôi được không ạ?",
+      "terms": [
+        "薬",
+        "商品名",
+        "違う",
+        "箱",
+        "確認する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜ので、確認してもらえますか"
+    },
+    {
+      "id": "S-050-V13-018",
+      "group": "followup",
+      "role_vi": "Khách quay lại hiệu thuốc",
+      "gender": "female",
+      "ja": "薬についてまた電話で相談するときは、どなたに聞けばいいですか。",
+      "vi": "Khi gọi điện hỏi thêm về thuốc, tôi nên hỏi ai ạ?",
+      "terms": [
+        "薬",
+        "相談する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "どなたに聞けばいいですか"
+    }
+  ]
+}

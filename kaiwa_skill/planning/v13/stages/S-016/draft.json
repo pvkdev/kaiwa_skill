@@ -1,0 +1,377 @@
+{
+  "code": "S-016",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a11221bd61620e09ca54fd60a82a7663f178348dc986709be28d0e97c78e6cef",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "welcome": "Báo tên ở quầy và tìm người hướng dẫn",
+    "intro": "Ra mắt nhóm và sửa cách gọi tên",
+    "lunch": "Nhận lời hoặc hẹn ăn trưa dịp khác",
+    "desk": "Hỏi chỗ ngồi và đồ cần dùng",
+    "schedule": "Xác nhận lịch hướng dẫn"
+  },
+  "items": [
+    {
+      "id": "S-016-V13-001",
+      "group": "welcome",
+      "role_vi": "Nhân viên mới báo tên với lễ tân vào ngày đầu",
+      "gender": "female",
+      "ja": "リンと申します。",
+      "vi": "Tôi tên Linh ạ.",
+      "terms": [
+        "申す"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "name_to_moushimasu"
+    },
+    {
+      "id": "S-016-V13-002",
+      "group": "welcome",
+      "role_vi": "Nhân viên mới nói phòng ban mình bắt đầu làm từ hôm nay",
+      "gender": "male",
+      "ja": "今日から営業部で働きます。",
+      "vi": "Từ hôm nay tôi bắt đầu làm ở phòng kinh doanh ạ.",
+      "terms": [
+        "営業部",
+        "働く"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "place_de_hatarakimasu"
+    },
+    {
+      "id": "S-016-V13-003",
+      "group": "welcome",
+      "role_vi": "Nhân viên mới hỏi nên đợi ở đâu khi người hướng dẫn chưa đến",
+      "gender": "female",
+      "ja": "どこで待てばいいですか。",
+      "vi": "Tôi nên đợi ở đâu ạ?",
+      "terms": [
+        "待つ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "doko_de_verb_ba"
+    },
+    {
+      "id": "S-016-V13-004",
+      "group": "welcome",
+      "role_vi": "Lễ tân mời nhân viên mới ngồi ghế chờ",
+      "gender": "male",
+      "ja": "こちらのいすでお待ちください。",
+      "vi": "Chị vui lòng chờ ở ghế bên này ạ.",
+      "terms": [
+        "こちら",
+        "いす",
+        "待つ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "o_verb_kudasai"
+    },
+    {
+      "id": "S-016-V13-005",
+      "group": "welcome",
+      "role_vi": "Nhân viên mới sửa tên công ty khi lễ tân tra nhầm",
+      "gender": "female",
+      "ja": "青葉サービスではなく、青葉の営業部です。",
+      "vi": "Tôi ở phòng kinh doanh của công ty Aoba, không phải Aoba Service ạ.",
+      "terms": [
+        "営業部"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "a_dewanaku_b"
+    },
+    {
+      "id": "S-016-V13-006",
+      "group": "intro",
+      "role_vi": "Nhân viên mới nói ngắn về kinh nghiệm khi ra mắt nhóm",
+      "gender": "female",
+      "ja": "前は店で一年働きました。",
+      "vi": "Trước đây tôi làm ở một cửa hàng một năm ạ.",
+      "terms": [
+        "前",
+        "店",
+        "年",
+        "働く"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "duration_work_past"
+    },
+    {
+      "id": "S-016-V13-007",
+      "group": "intro",
+      "role_vi": "Nhân viên mới chào đồng nghiệp khi ra mắt cả nhóm",
+      "gender": "male",
+      "ja": "これからよろしくお願いします。",
+      "vi": "Từ nay mong mọi người giúp đỡ ạ.",
+      "terms": [
+        "よろしくお願いします"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "korekara_yoroshiku"
+    },
+    {
+      "id": "S-016-V13-008",
+      "group": "intro",
+      "role_vi": "Nhân viên mới hỏi nên xưng hô thế nào với người hướng dẫn",
+      "gender": "female",
+      "ja": "何とお呼びすればいいですか。",
+      "vi": "Tôi nên gọi anh thế nào ạ?",
+      "terms": [
+        "呼ぶ"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "nan_to_verb_ba"
+    },
+    {
+      "id": "S-016-V13-009",
+      "group": "intro",
+      "role_vi": "Nhân viên mới sửa lại tên khi đồng nghiệp nghe thành Lan",
+      "gender": "female",
+      "ja": "名前はランじゃなくてリンです。",
+      "vi": "Tên tôi là Linh, không phải Lan ạ.",
+      "terms": [
+        "名前"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "a_ja_nakute_b"
+    },
+    {
+      "id": "S-016-V13-010",
+      "group": "lunch",
+      "role_vi": "Đồng nghiệp mời nhân viên mới đi ăn trưa cùng",
+      "gender": "male",
+      "ja": "一緒に昼ごはんを食べませんか。",
+      "vi": "Chị ăn trưa cùng tôi nhé?",
+      "terms": [
+        "一緒に",
+        "昼ごはん"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "teian_masen_ka"
+    },
+    {
+      "id": "S-016-V13-011",
+      "group": "lunch",
+      "role_vi": "Nhân viên mới nhận lời và muốn biết giờ đi ăn trưa",
+      "gender": "female",
+      "ja": "何時に昼ごはんに行きますか。",
+      "vi": "Mình đi ăn trưa lúc mấy giờ ạ?",
+      "terms": [
+        "時",
+        "昼ごはん"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "nanji_ni_verb_ka"
+    },
+    {
+      "id": "S-016-V13-012",
+      "group": "lunch",
+      "role_vi": "Đồng nghiệp hẹn người đi ăn trưa gặp ở cửa vào",
+      "gender": "male",
+      "ja": "十二時に入口で会いましょう。",
+      "vi": "Mười hai giờ mình gặp ở cửa ra vào nhé.",
+      "terms": [
+        "時"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "time_place_mashou"
+    },
+    {
+      "id": "S-016-V13-013",
+      "group": "lunch",
+      "role_vi": "Nhân viên mới xin lỗi vì không đi ăn cùng được hôm nay",
+      "gender": "female",
+      "ja": "すみません、今日は一緒に昼ごはんに行けません。",
+      "vi": "Xin lỗi, hôm nay tôi không đi ăn trưa cùng anh được.",
+      "terms": [
+        "一緒に",
+        "昼ごはん"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "sumimasen_potential_negative"
+    },
+    {
+      "id": "S-016-V13-014",
+      "group": "lunch",
+      "role_vi": "Đồng nghiệp đề nghị đi ăn cùng dịp khác",
+      "gender": "male",
+      "ja": "また今度、昼ごはんに行きましょう。",
+      "vi": "Để dịp khác mình đi ăn trưa nhé.",
+      "terms": [
+        "また今度",
+        "昼ごはん"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "time_place_mashou"
+    },
+    {
+      "id": "S-016-V13-015",
+      "group": "desk",
+      "role_vi": "Nhân viên mới hỏi chỗ ngồi của mình",
+      "gender": "female",
+      "ja": "私の席はどこですか。",
+      "vi": "Chỗ ngồi của tôi ở đâu ạ?",
+      "terms": [
+        "席"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "noun_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-016-V13-016",
+      "group": "desk",
+      "role_vi": "Người hướng dẫn chỉ cho nhân viên mới bàn bên cửa sổ",
+      "gender": "male",
+      "ja": "窓のそばの机を使ってください。",
+      "vi": "Chị dùng bàn cạnh cửa sổ nhé.",
+      "terms": [
+        "窓",
+        "そば",
+        "机",
+        "使う"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-016-V13-017",
+      "group": "desk",
+      "role_vi": "Người hướng dẫn chỉ cuốn sổ nhân viên mới cần dùng hôm nay",
+      "gender": "male",
+      "ja": "今日はこのノートを使います。",
+      "vi": "Hôm nay mình dùng quyển sổ này nhé.",
+      "terms": [
+        "ノート",
+        "使う"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "kyou_wa_verb_masu"
+    },
+    {
+      "id": "S-016-V13-018",
+      "group": "schedule",
+      "role_vi": "Nhân viên mới hỏi lại giờ và nơi gặp nhóm lần đầu",
+      "gender": "female",
+      "ja": "チームには九時に会議室で会うんですね。",
+      "vi": "Mình gặp cả nhóm lúc chín giờ ở phòng họp, đúng không ạ?",
+      "terms": [
+        "チーム",
+        "時",
+        "会議室"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "Vんですね"
+    },
+    {
+      "id": "S-016-V13-019",
+      "group": "schedule",
+      "role_vi": "Nhân viên mới kiểm buổi đầu tiên là hướng dẫn an toàn",
+      "gender": "female",
+      "ja": "先に安全の説明ですね。",
+      "vi": "Đầu tiên là buổi hướng dẫn an toàn, đúng không ạ?",
+      "terms": [
+        "先に",
+        "安全",
+        "説明"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "detail_desu_ne"
+    },
+    {
+      "id": "S-016-V13-020",
+      "group": "schedule",
+      "role_vi": "Người hướng dẫn báo giờ mới của buổi hướng dẫn công việc",
+      "gender": "male",
+      "ja": "仕事の説明は午後一時に変わりました。",
+      "vi": "Buổi hướng dẫn công việc chuyển sang một giờ chiều rồi ạ.",
+      "terms": [
+        "仕事",
+        "説明",
+        "午後",
+        "時",
+        "変わる"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "time_ni_kawarimashita"
+    },
+    {
+      "id": "S-016-V13-021",
+      "group": "schedule",
+      "role_vi": "Nhân viên mới kiểm phòng họp sau khi buổi hướng dẫn đổi lịch",
+      "gender": "female",
+      "ja": "仕事の説明は小さい会議室ですか。",
+      "vi": "Buổi hướng dẫn công việc ở phòng họp nhỏ phải không ạ?",
+      "terms": [
+        "仕事",
+        "説明",
+        "小さい",
+        "会議室"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "detail_desu_ka"
+    },
+    {
+      "id": "S-016-V13-022",
+      "group": "schedule",
+      "role_vi": "Nhân viên mới xin hỏi thêm về công việc vào sáng hôm sau",
+      "gender": "female",
+      "ja": "明日の仕事は朝聞いてもいいですか。",
+      "vi": "Sáng mai tôi hỏi thêm về công việc ngày mai được không ạ?",
+      "terms": [
+        "明日",
+        "仕事",
+        "聞く"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    }
+  ]
+}

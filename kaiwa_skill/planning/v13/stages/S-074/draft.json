@@ -1,0 +1,381 @@
+{
+  "code": "S-074",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "55a4799173c4e24726c5121a6abb3df79a1a95e28e86dfd2cb4d38546e01a5bd",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "weather": "Mở chuyện về trời và mùa",
+    "adapt": "Chọn giờ và đổi kế hoạch theo trời",
+    "festival": "Hỏi giờ, lịch và chỗ xem lễ hội",
+    "join": "Xếp hàng, thử hoạt động và tìm bạn"
+  },
+  "items": [
+    {
+      "id": "S-074-V13-001",
+      "group": "weather",
+      "role_vi": "Hàng xóm gặp nhau buổi sáng",
+      "gender": "female",
+      "ja": "今朝は昨日より寒いですね。",
+      "vi": "Sáng nay lạnh hơn hôm qua nhỉ.",
+      "terms": [
+        "寒い"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "so_sánh_thời_tiết"
+    },
+    {
+      "id": "S-074-V13-002",
+      "group": "weather",
+      "role_vi": "Hàng xóm nói về gió lạnh",
+      "gender": "male",
+      "ja": "今日は風が冷たいですね。",
+      "vi": "Hôm nay gió lạnh nhỉ.",
+      "terms": [
+        "風",
+        "冷たい"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "mở_chuyện_về_trời"
+    },
+    {
+      "id": "S-074-V13-003",
+      "group": "weather",
+      "role_vi": "Bạn hỏi trước khi hẹn đi chơi",
+      "gender": "female",
+      "ja": "明日は雨が降りそう？",
+      "vi": "Mai có vẻ trời sẽ mưa không?",
+      "terms": [
+        "雨",
+        "降る"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_dự_báo"
+    },
+    {
+      "id": "S-074-V13-004",
+      "group": "weather",
+      "role_vi": "Người mới tới hỏi mùa hoa",
+      "gender": "female",
+      "ja": "東京の桜は、何月に咲くことが多いですか。",
+      "vi": "Ở Tokyo, hoa anh đào thường nở vào tháng mấy ạ?",
+      "terms": [
+        "桜",
+        "何月",
+        "咲く"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hỏi_thời_điểm_theo_mùa"
+    },
+    {
+      "id": "S-074-V13-005",
+      "group": "weather",
+      "role_vi": "Người mới trải qua mùa mưa",
+      "gender": "female",
+      "ja": "梅雨は雨の日が多くて、まだ慣れません。",
+      "vi": "Mùa mưa có nhiều ngày mưa, tôi vẫn chưa quen ạ.",
+      "terms": [
+        "梅雨",
+        "雨"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "nói_chưa_quen"
+    },
+    {
+      "id": "S-074-V13-006",
+      "group": "weather",
+      "role_vi": "Người sắp đi ngắm hoa",
+      "gender": "male",
+      "ja": "夕方のお花見には、上着を持って行ったほうがいいですか。",
+      "vi": "Đi ngắm hoa anh đào chiều tối, tôi nên mang áo khoác không ạ?",
+      "terms": [
+        "お花見",
+        "上着"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "hỏi_đồ_nên_mang"
+    },
+    {
+      "id": "S-074-V13-007",
+      "group": "adapt",
+      "role_vi": "Bạn đang đi dạo dưới nắng",
+      "gender": "female",
+      "ja": "日差しが強いから、少し日陰で休まない？",
+      "vi": "Nắng gắt quá, mình nghỉ một lát trong bóng râm nhé?",
+      "terms": [
+        "日差し",
+        "日陰"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "điều_chỉnh_vì_thời_tiết"
+    },
+    {
+      "id": "S-074-V13-008",
+      "group": "adapt",
+      "role_vi": "Bạn làm rõ vẫn đi công viên",
+      "gender": "female",
+      "ja": "暑いから、公園に行く時間だけ変えたいんだ。",
+      "vi": "Trời nóng nên tớ chỉ muốn đổi giờ đi công viên thôi.",
+      "terms": [
+        "暑い",
+        "変える"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "làm_rõ_phần_đổi"
+    },
+    {
+      "id": "S-074-V13-009",
+      "group": "adapt",
+      "role_vi": "Bạn rủ đi vào lúc dễ chịu hơn",
+      "gender": "male",
+      "ja": "四時ごろなら日陰が増えるから、その時間に公園で会わない？",
+      "vi": "Tầm bốn giờ sẽ có thêm bóng râm, mình gặp ở công viên lúc đó nhé?",
+      "terms": [
+        "～ごろ",
+        "日陰"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "điều_chỉnh_vì_thời_tiết"
+    },
+    {
+      "id": "S-074-V13-010",
+      "group": "adapt",
+      "role_vi": "Người hẹn đi chơi ngoài trời",
+      "gender": "female",
+      "ja": "天気予報では午後から雨なので、公園には午前中に行きませんか。",
+      "vi": "Dự báo nói buổi chiều sẽ mưa, mình đi công viên vào buổi sáng nhé?",
+      "terms": [
+        "天気予報",
+        "雨"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "điều_chỉnh_vì_thời_tiết"
+    },
+    {
+      "id": "S-074-V13-011",
+      "group": "adapt",
+      "role_vi": "Người đề nghị phương án dự phòng",
+      "gender": "male",
+      "ja": "雨が降ったら、川の近くの美術館に入りましょうか。",
+      "vi": "Nếu trời mưa, mình vào bảo tàng mỹ thuật gần sông nhé?",
+      "terms": [
+        "雨",
+        "降る"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nếu_mưa_thì_đổi"
+    },
+    {
+      "id": "S-074-V13-012",
+      "group": "adapt",
+      "role_vi": "Người kể lại chuyến đi cuối tuần",
+      "gender": "female",
+      "ja": "雨が降ったので、外ではなくカフェでお昼を食べました。",
+      "vi": "Trời mưa nên chúng tôi chuyển vào quán cà phê ăn trưa ạ.",
+      "terms": [
+        "雨",
+        "降る"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "kể_kế_hoạch_đã_đổi"
+    },
+    {
+      "id": "S-074-V13-013",
+      "group": "festival",
+      "role_vi": "Khách hỏi bàn thông tin",
+      "gender": "female",
+      "ja": "この祭りは何時までやっていますか。",
+      "vi": "Lễ hội này diễn ra đến mấy giờ ạ?",
+      "terms": [
+        "祭り",
+        "何時"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "hỏi_giờ_lễ_hội"
+    },
+    {
+      "id": "S-074-V13-014",
+      "group": "festival",
+      "role_vi": "Khách đi cùng trẻ",
+      "gender": "female",
+      "ja": "子どもと一緒に座ってステージを見られる場所はありますか。",
+      "vi": "Có chỗ nào để tôi ngồi xem sân khấu cùng con không ạ?",
+      "terms": [
+        "ステージ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hỏi_chỗ_phù_hợp"
+    },
+    {
+      "id": "S-074-V13-015",
+      "group": "festival",
+      "role_vi": "Nhân viên thông tin của lễ hội",
+      "gender": "male",
+      "ja": "ステージの左側に、座って見られる席が二列あります。",
+      "vi": "Bên trái sân khấu có hai hàng ghế để ngồi xem ạ.",
+      "terms": [
+        "ステージ",
+        "列"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "chỉ_chỗ_ngồi_xem"
+    },
+    {
+      "id": "S-074-V13-016",
+      "group": "festival",
+      "role_vi": "Khách hỏi khi trước sân khấu đã kín",
+      "gender": "female",
+      "ja": "ステージの前がいっぱいなら、ほかに見られる場所はありますか。",
+      "vi": "Nếu khu trước sân khấu đã kín, còn chỗ nào khác xem được không ạ?",
+      "terms": [
+        "ステージ"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "hỏi_chỗ_phù_hợp"
+    },
+    {
+      "id": "S-074-V13-017",
+      "group": "festival",
+      "role_vi": "Nhân viên đính chính ngày lễ",
+      "gender": "male",
+      "ja": "十三日は準備で、祭りは十四日です。",
+      "vi": "Ngày mười ba là ngày chuẩn bị, lễ hội diễn ra ngày mười bốn ạ.",
+      "terms": [
+        "祭り"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "đính_chính_ngày"
+    },
+    {
+      "id": "S-074-V13-018",
+      "group": "festival",
+      "role_vi": "Khách xác nhận giờ và địa điểm",
+      "gender": "female",
+      "ja": "祭りは十四日の午前十一時に、町の集会所で始まるんですね。",
+      "vi": "Lễ hội bắt đầu lúc mười một giờ sáng ngày mười bốn ở hội trường khu phố, đúng không ạ?",
+      "terms": [
+        "祭り",
+        "集会所"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "xác_nhận_giờ_nơi"
+    },
+    {
+      "id": "S-074-V13-019",
+      "group": "join",
+      "role_vi": "Khách tìm hàng chờ vào lễ hội",
+      "gender": "female",
+      "ja": "祭りの会場に入るには、どの列に並べばいいですか。",
+      "vi": "Muốn vào khu lễ hội, tôi xếp hàng nào ạ?",
+      "terms": [
+        "祭り",
+        "会場",
+        "列",
+        "並ぶ"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "hỏi_chỗ_xếp_hàng"
+    },
+    {
+      "id": "S-074-V13-020",
+      "group": "join",
+      "role_vi": "Khách muốn thử gấp giấy",
+      "gender": "female",
+      "ja": "私も折り紙を一回やってみていいですか。",
+      "vi": "Tôi thử gấp giấy một lượt được không ạ?",
+      "terms": [
+        "折り紙",
+        "～回"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "xin_thử"
+    },
+    {
+      "id": "S-074-V13-021",
+      "group": "join",
+      "role_vi": "Khách hỏi lượt tham gia sau",
+      "gender": "male",
+      "ja": "うちわ作りの次の回には、まだ空きがありますか。",
+      "vi": "Suất làm quạt giấy tiếp theo còn chỗ không ạ?",
+      "terms": [
+        "～回",
+        "空き"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "hỏi_suất_còn_trống"
+    },
+    {
+      "id": "S-074-V13-022",
+      "group": "join",
+      "role_vi": "Bạn gọi tìm nhau giữa lễ hội",
+      "gender": "female",
+      "ja": "大きい時計の下にある案内所で会おう。",
+      "vi": "Mình gặp ở bàn thông tin dưới chiếc đồng hồ lớn nhé.",
+      "terms": [
+        "案内所"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "hẹn_mốc_tìm_nhau"
+    },
+    {
+      "id": "S-074-V13-023",
+      "group": "join",
+      "role_vi": "Bạn kể sau khi tìm lại nhau",
+      "gender": "male",
+      "ja": "さっき太鼓を聞いたけど、音が大きくてびっくりしたよ。",
+      "vi": "Lúc nãy tớ nghe đánh trống, tiếng to đến mức tớ giật mình.",
+      "terms": [
+        "太鼓"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "kể_ấn_tượng_lễ_hội"
+    }
+  ]
+}

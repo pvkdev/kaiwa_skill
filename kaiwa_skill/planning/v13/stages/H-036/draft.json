@@ -1,0 +1,346 @@
+{
+  "code": "H-036",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a74ef248118e4ad8ac738f5f0e4a421d63615b7e24cdaddebeb15ee8b2cc543d",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "signal": "Báo dấu hiệu sớm và nói rõ độ chắc",
+    "response": "Đề xuất cách xử lý và hỏi điều kiện",
+    "evidence": "Kiểm nguyên nhân bằng dữ liệu",
+    "reassure": "Giải thích cho khách và giữ mốc cập nhật",
+    "close": "Báo kết quả và xử lý rủi ro mới"
+  },
+  "items": [
+    {
+      "id": "H-036-V13-001",
+      "group": "signal",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "金曜の予約報告は、提出が遅れるおそれがあります。",
+      "vi": "Báo cáo đặt lịch hạn thứ Sáu có nguy cơ nộp muộn ạ.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～に遅れるおそれがある"
+    },
+    {
+      "id": "H-036-V13-002",
+      "group": "signal",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "百件のうち八十八件は照合できましたが、十二件は表示時刻に差異が残っています。",
+      "vi": "Trong 100 lượt đặt lịch, tôi đã đối chiếu xong 88 lượt, còn 12 lượt vẫn có chênh lệch giờ hiển thị ạ.",
+      "terms": [
+        "照合する",
+        "差異"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～は確認済みで～が残る"
+    },
+    {
+      "id": "H-036-V13-003",
+      "group": "signal",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "現時点で遅延は確定しておらず、明日の正午までに照合が終わるかで判断します。",
+      "vi": "Hiện chưa xác định là sẽ trễ, tôi sẽ căn cứ vào việc có đối chiếu xong trước trưa mai không để đánh giá ạ.",
+      "terms": [
+        "現時点",
+        "遅延"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "現時点では～と決まっていない"
+    },
+    {
+      "id": "H-036-V13-004",
+      "group": "signal",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "時刻がずれている予約に土曜分が含まれるか確認中ですが、顧客には今の段階で初報を入れるべきでしょうか。",
+      "vi": "Tôi đang kiểm tra xem các lượt lệch giờ có rơi vào thứ Bảy không, lúc này có nên báo trước cho khách không ạ?",
+      "terms": [
+        "初報"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～べきでしょうか"
+    },
+    {
+      "id": "H-036-V13-005",
+      "group": "signal",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "四時までに、土曜の予約だと確認できた件数と、まだ利用日が分からない件数を分けて報告します。",
+      "vi": "Trước bốn giờ, tôi sẽ báo riêng số lượt đã xác nhận là đặt thứ Bảy và số lượt chưa rõ ngày sử dụng ạ.",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～までに～を分けて報告する"
+    },
+    {
+      "id": "H-036-V13-006",
+      "group": "response",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "人を増やして残り十二件を照合する案と、確定した八十八件だけ先に報告する案があります。",
+      "vi": "Có hai cách ạ, bổ sung người để đối chiếu 12 lượt còn lại hoặc báo trước 88 lượt đã xác nhận.",
+      "terms": [
+        "照合する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～案と～案があります"
+    },
+    {
+      "id": "H-036-V13-007",
+      "group": "response",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "追加で二人を確保でき、原本を変更せずに作業できる場合に限り、照合を始めてよいという理解でよろしいですか。",
+      "vi": "Tôi hiểu là chỉ bắt đầu đối chiếu khi bố trí thêm được hai người và có thể làm mà không sửa dữ liệu gốc, đúng không ạ?",
+      "terms": [
+        "確保する",
+        "原本"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～なら～という理解でよい"
+    },
+    {
+      "id": "H-036-V13-008",
+      "group": "response",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "編集画面を使わずに読み取り専用の一覧で照合できるか確認して、手順を再提案します。",
+      "vi": "Tôi sẽ kiểm tra xem có thể đối chiếu bằng danh sách chỉ đọc mà không cần mở màn hình chỉnh sửa không, rồi trình lại cách làm ạ.",
+      "terms": [
+        "読み取り専用",
+        "照合する",
+        "再提案する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～か確認し～を再提案する"
+    },
+    {
+      "id": "H-036-V13-009",
+      "group": "response",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "六時までに、応援の二人と照合できた件数と、まだ確認が必要な残件を分けて報告します。",
+      "vi": "Trước sáu giờ, tôi sẽ báo riêng số lượt đã đối chiếu được với hai người hỗ trợ và số lượt vẫn cần kiểm ạ.",
+      "terms": [
+        "照合する",
+        "残件"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～までに～を分けて報告する"
+    },
+    {
+      "id": "H-036-V13-010",
+      "group": "evidence",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "画面と出力で時刻が一時間ずれており、時刻変換が関係しているか、処理ログを調べます。",
+      "vi": "Giờ trên màn hình và trên bản xuất lệch nhau một tiếng, tôi sẽ kiểm nhật ký xử lý xem có liên quan đến khâu chuyển đổi giờ không ạ.",
+      "terms": [
+        "処理ログ"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～が関係しているか調べる"
+    },
+    {
+      "id": "H-036-V13-011",
+      "group": "evidence",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "変更履歴には昨日の設定変更が残っていますが、その変更と時刻のずれに因果関係があるかは未確認です。",
+      "vi": "Nhật ký có ghi lần đổi cấu hình hôm qua, nhưng vẫn chưa xác minh thay đổi đó có gây ra lệch giờ hay không ạ.",
+      "terms": [
+        "変更履歴",
+        "因果関係"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～はあるが因果関係は未確認"
+    },
+    {
+      "id": "H-036-V13-012",
+      "group": "evidence",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "予約の原本と処理ログを照合したいのですが、それぞれ誰に依頼すればよろしいでしょうか。",
+      "vi": "Tôi muốn đối chiếu dữ liệu đặt lịch gốc với nhật ký xử lý, xin hỏi nên liên hệ ai để lấy từng phần ạ?",
+      "terms": [
+        "原本",
+        "処理ログ",
+        "照合する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～には誰に依頼すべきか"
+    },
+    {
+      "id": "H-036-V13-013",
+      "group": "evidence",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "原本と処理ログを照合した結果、予約データは残っていて、出力時の設定で表示が一時間ずれたことを確認しました。",
+      "vi": "Sau khi đối chiếu dữ liệu gốc với nhật ký xử lý, tôi đã xác nhận lịch đặt vẫn còn và cài đặt khi xuất dữ liệu làm giờ hiển thị lệch một tiếng ạ.",
+      "terms": [
+        "処理ログ",
+        "原本"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ことを確認した"
+    },
+    {
+      "id": "H-036-V13-014",
+      "group": "reassure",
+      "role_vi": "Nhân viên phụ trách cập nhật cho khách hàng",
+      "gender": "male",
+      "ja": "金曜にお送りする予定の予約一覧は、百件のうち十二件の表示時刻を確認中で、まだお送りしておりません。",
+      "vi": "Trong danh sách đặt lịch dự kiến gửi thứ Sáu, chúng tôi đang kiểm giờ hiển thị của 12 trên 100 lượt và chưa gửi danh sách đó cho bên chị ạ.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～件のうち～を確認中"
+    },
+    {
+      "id": "H-036-V13-015",
+      "group": "reassure",
+      "role_vi": "Nhân viên phụ trách cập nhật cho khách hàng",
+      "gender": "male",
+      "ja": "一覧を提出できる時刻はまだ確約できませんが、五時に土曜分をどこまで確認できたかと、全体の進み具合をご報告します。",
+      "vi": "Tôi chưa thể cam kết giờ gửi danh sách, nhưng lúc năm giờ tôi sẽ báo tình hình kiểm các lượt thứ Bảy và tiến độ chung ạ.",
+      "terms": [
+        "確約する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～は確約できないが～は報告する"
+    },
+    {
+      "id": "H-036-V13-016",
+      "group": "reassure",
+      "role_vi": "Đại diện khách đang điều phối lịch đặt",
+      "gender": "female",
+      "ja": "土曜の三件だけでも先に確認して、今日中に正しい時刻を知らせていただけますか。",
+      "vi": "Anh có thể ưu tiên kiểm ba lượt thứ Bảy và cho tôi giờ chính xác trong hôm nay được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～だけでも先に知らせてほしい"
+    },
+    {
+      "id": "H-036-V13-017",
+      "group": "reassure",
+      "role_vi": "Nhân viên phụ trách cập nhật cho khách hàng",
+      "gender": "male",
+      "ja": "土曜の三件を先に確認できるよう社内で調整しますので、五時に確認できた範囲と、残っている点があればその理由をお伝えします。",
+      "vi": "Tôi sẽ thu xếp nội bộ để kiểm ba lượt thứ Bảy trước, lúc năm giờ tôi sẽ báo phần đã xác nhận và lý do nếu còn điểm gì chưa rõ ạ.",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～を優先し～時に連絡する"
+    },
+    {
+      "id": "H-036-V13-018",
+      "group": "reassure",
+      "role_vi": "Nhân viên phụ trách cập nhật cho khách hàng",
+      "gender": "male",
+      "ja": "土曜の三件は記録を照合して正しい時刻を確認できましたので、予約番号ごとにお伝えします。",
+      "vi": "Chúng tôi đã đối chiếu hồ sơ và xác nhận giờ chính xác cho ba lượt thứ Bảy, tôi sẽ báo giờ tương ứng với từng mã đặt lịch ạ.",
+      "terms": [
+        "照合する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～だけ先に確認できた"
+    },
+    {
+      "id": "H-036-V13-019",
+      "group": "close",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "百件の時刻は二人で照合しましたが、提出用の一覧はまだ送付の承認を待っています。",
+      "vi": "Hai người đã đối chiếu giờ của cả 100 lượt đặt lịch, còn việc gửi danh sách cho khách thì vẫn chờ duyệt ạ.",
+      "terms": [
+        "照合する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～済みですが～は待っている"
+    },
+    {
+      "id": "H-036-V13-020",
+      "group": "close",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "誤送付を防ぐため、旧版は履歴を残して別に保管し、新版だけを送付候補にしてもよろしいですか。",
+      "vi": "Để tránh gửi nhầm, tôi có thể lưu riêng bản cũ kèm lịch sử và chỉ đưa bản mới ra xin duyệt gửi khách được không ạ?",
+      "terms": [
+        "誤送付"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～ため～してもよろしいか"
+    },
+    {
+      "id": "H-036-V13-021",
+      "group": "close",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "最終承認をいただくまでは顧客に送付せず、承認を受けた時刻も記録します。",
+      "vi": "Tôi sẽ chưa gửi khách trước khi có phê duyệt cuối, và sẽ ghi cả giờ nhận được phê duyệt ạ.",
+      "terms": [],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～までは～せず～も残す"
+    },
+    {
+      "id": "H-036-V13-022",
+      "group": "close",
+      "role_vi": "Nhân viên báo sự cố với cấp trên trực tiếp",
+      "gender": "male",
+      "ja": "お客様から新版を受領したとの返事はありましたが、内容の確認結果はまだいただいていません。",
+      "vi": "Khách đã phản hồi là nhận được bản mới, nhưng chúng tôi vẫn chưa nhận được kết quả kiểm nội dung ạ.",
+      "terms": [
+        "受領"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～は確認したが～はまだ"
+    }
+  ]
+}

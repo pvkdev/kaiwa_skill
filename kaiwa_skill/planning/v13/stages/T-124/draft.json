@@ -1,0 +1,320 @@
+{
+  "code": "T-124",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "ff44b0f4105c366a745b60fdc3cc0423bd8e0c01976e656b420d687cb98d2fb1",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "emergency": "Báo vị trí và tình trạng quan sát được",
+    "respond": "Gọi hỗ trợ và chuyển thông tin cho đội cấp cứu",
+    "incident": "Báo sự cố và hướng khách sang quầy đang mở",
+    "lost": "Hỏi đặc điểm và đối chiếu đồ thất lạc",
+    "handover": "Ghi việc đã làm và cập nhật phần còn chờ"
+  },
+  "items": [
+    {
+      "id": "T-124-V13-001",
+      "group": "emergency",
+      "role_vi": "Nhân viên báo nhanh với trưởng ca",
+      "gender": "female",
+      "ja": "北入口の近くでお客様が倒れました。",
+      "vi": "Có khách vừa ngã gục gần cửa Bắc ạ.",
+      "terms": [
+        "倒れる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～の近くで～が倒れました"
+    },
+    {
+      "id": "T-124-V13-002",
+      "group": "emergency",
+      "role_vi": "Nhân viên báo phản ứng đã quan sát được",
+      "gender": "male",
+      "ja": "名前を呼びましたが、反応がありません。",
+      "vi": "Em đã gọi tên nhưng người đó không có phản ứng ạ.",
+      "terms": [
+        "反応"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～ましたが、～がありません"
+    },
+    {
+      "id": "T-124-V13-003",
+      "group": "emergency",
+      "role_vi": "Nhân viên nói thông tin chưa thể xác nhận",
+      "gender": "female",
+      "ja": "呼吸があるかどうかは、まだ確認できていません。",
+      "vi": "Em chưa xác nhận được người đó có thở không ạ.",
+      "terms": [
+        "呼吸"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～かどうかは、まだ確認できていません"
+    },
+    {
+      "id": "T-124-V13-004",
+      "group": "emergency",
+      "role_vi": "Nhân viên báo thêm người thấy không khỏe ở khu khác",
+      "gender": "male",
+      "ja": "南入口のベンチにも、気分が悪いと話している方がいます。",
+      "vi": "Ở ghế dài cửa Nam cũng có một người nói thấy không khỏe ạ.",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～にも、～と話している方がいます"
+    },
+    {
+      "id": "T-124-V13-005",
+      "group": "respond",
+      "role_vi": "Nhân viên đề nghị đồng nghiệp gọi cấp cứu ngay",
+      "gender": "female",
+      "ja": "二階の受付前でお客様が息苦しいとおっしゃっていますので、すぐに百十九番に電話してください。",
+      "vi": "Khách trước quầy tiếp nhận tầng hai nói khó thở, anh gọi 119 ngay giúp em.",
+      "terms": [
+        "息苦しい"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～とおっしゃっていますので、すぐに～してください"
+    },
+    {
+      "id": "T-124-V13-006",
+      "group": "respond",
+      "role_vi": "Nhân viên gọi điều phối và nói chỗ cấp cứu cần tới",
+      "gender": "male",
+      "ja": "救急車をお願いします、倒れた方は建物一階の北入口にいます。",
+      "vi": "Xin cho xe cấp cứu tới, người ngã gục đang ở cửa Bắc tầng một của tòa nhà.",
+      "terms": [
+        "救急車",
+        "倒れる"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "救急車をお願いします、～にいます"
+    },
+    {
+      "id": "T-124-V13-007",
+      "group": "respond",
+      "role_vi": "Trưởng ca nhận hướng dẫn và báo lại cho người ở cạnh khách",
+      "gender": "male",
+      "ja": "指令員から指示があれば、現場にいるスタッフにすぐ伝えます。",
+      "vi": "Nếu điều phối viên có hướng dẫn, anh sẽ báo ngay cho nhân viên đang ở chỗ khách gặp nạn.",
+      "terms": [
+        "指令員",
+        "指示",
+        "現場"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "～から～があれば、～にすぐ伝えます"
+    },
+    {
+      "id": "T-124-V13-008",
+      "group": "respond",
+      "role_vi": "Nhân viên báo lại với đội cấp cứu điều đã nghe",
+      "gender": "female",
+      "ja": "午後三時十分ごろ、お客様は受付の前で息苦しいと話していました。",
+      "vi": "Khoảng ba giờ mười chiều, khách nói khó thở khi ở trước quầy tiếp nhận ạ.",
+      "terms": [
+        "息苦しい"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ごろ、～と話していました"
+    },
+    {
+      "id": "T-124-V13-009",
+      "group": "incident",
+      "role_vi": "Nhân viên báo phạm vi mất điện cho trưởng ca",
+      "gender": "female",
+      "ja": "東側の受付で照明と端末が消えて、手続きが止まっています。",
+      "vi": "Đèn và máy ở quầy phía Đông đã tắt, thủ tục tại đó đang tạm dừng ạ.",
+      "terms": [
+        "照明",
+        "端末"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～で～が消えて、～が止まっています"
+    },
+    {
+      "id": "T-124-V13-010",
+      "group": "incident",
+      "role_vi": "Trưởng ca nói rõ chỉ dừng nhận khách mới ở quầy phía Đông",
+      "gender": "male",
+      "ja": "点検が終わるまで、東側の新規受付だけ一時停止してください。",
+      "vi": "Cho đến khi kiểm tra xong, em chỉ tạm ngừng tiếp nhận khách mới ở quầy phía Đông nhé.",
+      "terms": [
+        "点検",
+        "新規受付",
+        "一時停止"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～が終わるまで、～だけ～してください"
+    },
+    {
+      "id": "T-124-V13-011",
+      "group": "incident",
+      "role_vi": "Nhân viên thông báo quầy thay thế cho khách chưa làm thủ tục",
+      "gender": "female",
+      "ja": "まだ手続きを始めていなければ、西側の受付をご利用ください。",
+      "vi": "Nếu anh chưa bắt đầu làm thủ tục thì mời sang quầy phía Tây ạ.",
+      "terms": [],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "～ていなければ、～をご利用ください"
+    },
+    {
+      "id": "T-124-V13-012",
+      "group": "incident",
+      "role_vi": "Nhân viên phân biệt giờ kỹ thuật đến và giờ mở lại",
+      "gender": "male",
+      "ja": "五時半は点検に来る予定の時刻で、受付の再開はまだ決まっていません。",
+      "vi": "Năm giờ rưỡi là giờ dự kiến kỹ thuật đến kiểm tra, quầy vẫn chưa có giờ mở lại ạ.",
+      "terms": [
+        "点検",
+        "再開"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～は～予定の時刻で、～はまだ決まっていません"
+    },
+    {
+      "id": "T-124-V13-013",
+      "group": "lost",
+      "role_vi": "Nhân viên hỏi khách một đặc điểm để tìm đúng đồ",
+      "gender": "female",
+      "ja": "水筒を最後に使った場所と、色や特徴を教えていただけますか。",
+      "vi": "Anh cho tôi biết nơi dùng bình nước lần cuối, màu và đặc điểm của bình được không ạ?",
+      "terms": [
+        "特徴"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-124-V13-014",
+      "group": "lost",
+      "role_vi": "Nhân viên hẹn gọi lại dù chưa tìm được đồ",
+      "gender": "male",
+      "ja": "落とし物の担当にも確認して、午後四時までにこちらから折り返します。",
+      "vi": "Tôi sẽ hỏi cả người phụ trách đồ thất lạc rồi gọi lại cho chị chậm nhất lúc bốn giờ chiều ạ.",
+      "terms": [
+        "落とし物",
+        "折り返す"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～て、～までにこちらから折り返します"
+    },
+    {
+      "id": "T-124-V13-015",
+      "group": "lost",
+      "role_vi": "Nhân viên giải thích món đang giữ không đúng mô tả",
+      "gender": "female",
+      "ja": "お預かりしている水筒には刻印がないので、別のものかもしれません。",
+      "vi": "Bình nước bên tôi đang giữ không có chữ khắc, nên có thể là một chiếc khác ạ.",
+      "terms": [
+        "刻印"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～がないので、～かもしれません"
+    },
+    {
+      "id": "T-124-V13-016",
+      "group": "lost",
+      "role_vi": "Nhân viên nói khách cần xác nhận gì khi quay lại",
+      "gender": "male",
+      "ja": "水筒を受け取る際は、サービスカウンターでお名前と水筒の特徴をお伝えください。",
+      "vi": "Khi quay lại nhận bình nước, chị cho biết tên và đặc điểm của bình tại quầy dịch vụ nhé.",
+      "terms": [
+        "特徴"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～際は、～をお伝えください"
+    },
+    {
+      "id": "T-124-V13-017",
+      "group": "handover",
+      "role_vi": "Nhân viên báo thời điểm đã liên hệ với kỹ thuật",
+      "gender": "female",
+      "ja": "東側の受付が止まったので、午後二時十二分に設備担当へ電話しました。",
+      "vi": "Quầy tiếp nhận phía Đông bị dừng nên em đã gọi bộ phận kỹ thuật lúc hai giờ mười hai chiều ạ.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ので、～に～へ電話しました"
+    },
+    {
+      "id": "T-124-V13-018",
+      "group": "handover",
+      "role_vi": "Nhân viên tách quan sát trực tiếp khỏi nguyên nhân chưa rõ",
+      "gender": "male",
+      "ja": "東側の端末が止まったのは確認しましたが、原因はまだ分かりません。",
+      "vi": "Em đã xác nhận máy ở phía Đông bị dừng, nhưng vẫn chưa rõ nguyên nhân ạ.",
+      "terms": [
+        "端末"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～のは確認しましたが、～はまだ分かりません"
+    },
+    {
+      "id": "T-124-V13-019",
+      "group": "handover",
+      "role_vi": "Nhân viên hỏi còn phải gọi cho nhóm khách nào",
+      "gender": "female",
+      "ja": "東側の受付で待っていたお客様で、こちらから電話したほうがいい方を教えていただけますか。",
+      "vi": "Trong số khách từng đợi ở quầy phía Đông, anh cho em biết bên mình nên gọi cho ai được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-124-V13-020",
+      "group": "handover",
+      "role_vi": "Nhân viên cập nhật cuộc gọi chưa kết nối",
+      "gender": "female",
+      "ja": "四時のご予約のお客様にはつながらなかったので、五時までにかけ直します。",
+      "vi": "Em chưa gọi được cho khách đặt lúc bốn giờ, em sẽ gọi lại chậm nhất lúc năm giờ ạ.",
+      "terms": [
+        "かけ直す"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～なかったので、～までにかけ直します"
+    }
+  ]
+}

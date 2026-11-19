@@ -1,0 +1,381 @@
+{
+  "code": "T-123",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3bc47322dca0283ebf505c4bf8f4dbbac63650dde59e927e1f8adc80968c37a5",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "checkin": "Xác nhận đúng tên, ngày và đơn đặt phòng",
+    "rooms": "Giải thích loại phòng, giờ và chỗ còn trống",
+    "stay": "Giữ hành lý, gửi đồ lên phòng và chỉ đường",
+    "repair": "Xử lý điều hòa lỗi và đưa lựa chọn",
+    "expect": "Làm rõ phòng khác mong đợi và phí chuyển",
+    "checkout": "Kiểm khoản phát sinh và xử lý đồ để quên"
+  },
+  "items": [
+    {
+      "id": "T-123-V13-001",
+      "group": "checkin",
+      "role_vi": "Lễ tân hỏi tên trên đơn đặt phòng",
+      "gender": "female",
+      "ja": "ご予約のお名前をお伺いできますか。",
+      "vi": "Anh cho tôi xin tên trên đơn đặt phòng được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～をお伺いできますか"
+    },
+    {
+      "id": "T-123-V13-002",
+      "group": "checkin",
+      "role_vi": "Lễ tân hỏi khách ở mấy đêm",
+      "gender": "male",
+      "ja": "本日から何泊のご予定ですか。",
+      "vi": "Chị dự định ở mấy đêm tính từ hôm nay ạ?",
+      "terms": [
+        "何泊"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～から何泊のご予定ですか"
+    },
+    {
+      "id": "T-123-V13-003",
+      "group": "checkin",
+      "role_vi": "Lễ tân xin thông tin để phân biệt hai đơn tên gần giống",
+      "gender": "female",
+      "ja": "似たお名前のご予約があるので、メールの予約番号を見せていただけますか。",
+      "vi": "Có đơn đặt phòng mang tên gần giống, anh cho tôi xem mã đặt phòng ghi trong email được không ạ?",
+      "terms": [
+        "予約番号"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～を見せていただけますか"
+    },
+    {
+      "id": "T-123-V13-004",
+      "group": "checkin",
+      "role_vi": "Quản lý dặn cách xử lý khi người đứng tên chưa tới",
+      "gender": "male",
+      "ja": "予約者がまだ来ていない場合は、先にお客様のお名前が登録されているか確認してください。",
+      "vi": "Nếu người đứng tên đặt phòng chưa đến, em kiểm tra trước xem khách đang chờ có tên trong danh sách không nhé.",
+      "terms": [
+        "予約者"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～場合は、～か確認してください"
+    },
+    {
+      "id": "T-123-V13-005",
+      "group": "rooms",
+      "role_vi": "Lễ tân xác nhận loại phòng và giờ nhận",
+      "gender": "female",
+      "ja": "禁煙のツインルームで、チェックインは午後三時からです。",
+      "vi": "Anh ở phòng hai giường không hút thuốc và có thể làm thủ tục nhận phòng từ ba giờ chiều ạ.",
+      "terms": [
+        "禁煙",
+        "ツインルーム",
+        "チェックイン"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～で、～は～からです"
+    },
+    {
+      "id": "T-123-V13-006",
+      "group": "rooms",
+      "role_vi": "Lễ tân nhắc giờ trả phòng ngày cuối",
+      "gender": "male",
+      "ja": "お帰りの日は、午前十一時までにチェックアウトをお願いします。",
+      "vi": "Vào ngày rời khách sạn, chị vui lòng trả phòng chậm nhất lúc mười một giờ sáng ạ.",
+      "terms": [
+        "チェックアウト"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～は、～までに～をお願いします"
+    },
+    {
+      "id": "T-123-V13-007",
+      "group": "rooms",
+      "role_vi": "Lễ tân gợi ý phòng khác có thể ở liền hai đêm",
+      "gender": "female",
+      "ja": "シングルルームは一泊だけですが、ダブルルームなら二泊続けてお取りできます。",
+      "vi": "Phòng đơn chỉ còn một đêm, còn phòng giường đôi thì tôi có thể đặt liền hai đêm cho anh ạ.",
+      "terms": [
+        "シングルルーム",
+        "ダブルルーム"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "～は～だけですが、～なら～できます"
+    },
+    {
+      "id": "T-123-V13-008",
+      "group": "rooms",
+      "role_vi": "Lễ tân nói rõ chưa biết tối mai có phòng không",
+      "gender": "male",
+      "ja": "今夜のお部屋はお取りできますが、明日の空室はまだお約束できません。",
+      "vi": "Tôi có thể đặt phòng cho tối nay, nhưng vẫn chưa thể hứa tối mai sẽ có phòng trống ạ.",
+      "terms": [
+        "空室"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～は～できますが、～はまだお約束できません"
+    },
+    {
+      "id": "T-123-V13-009",
+      "group": "stay",
+      "role_vi": "Lễ tân ngỏ ý giữ hành lý khi phòng đang dọn",
+      "gender": "female",
+      "ja": "お部屋はまだ清掃中なので、お荷物だけ先にお預かりしましょうか。",
+      "vi": "Phòng vẫn đang dọn, tôi giữ hành lý trước giúp anh nhé?",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～なので、～ましょうか"
+    },
+    {
+      "id": "T-123-V13-010",
+      "group": "stay",
+      "role_vi": "Lễ tân dặn khách giữ đồ có giá trị",
+      "gender": "male",
+      "ja": "スーツケースはお預かりしますので、貴重品はお手元にお持ちください。",
+      "vi": "Chúng tôi sẽ giữ vali, còn đồ có giá trị chị vui lòng mang theo bên mình ạ.",
+      "terms": [
+        "貴重品"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ますので、～は～ください"
+    },
+    {
+      "id": "T-123-V13-011",
+      "group": "stay",
+      "role_vi": "Lễ tân nhận yêu cầu thêm gối",
+      "gender": "female",
+      "ja": "枕を追加でお持ちしますので、お部屋番号を教えていただけますか。",
+      "vi": "Tôi sẽ mang thêm gối, anh cho tôi xin số phòng được không ạ?",
+      "terms": [
+        "枕"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～ますので、～を教えていただけますか"
+    },
+    {
+      "id": "T-123-V13-012",
+      "group": "stay",
+      "role_vi": "Lễ tân chỉ thang máy lên chỗ ăn sáng",
+      "gender": "male",
+      "ja": "朝食会場へは、青い案内板の横のエレベーターで二階へお上がりください。",
+      "vi": "Để đến phòng ăn sáng, chị đi thang máy cạnh bảng chỉ dẫn màu xanh lên tầng hai nhé.",
+      "terms": [
+        "案内板"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "～へは、～で～へお上がりください"
+    },
+    {
+      "id": "T-123-V13-013",
+      "group": "repair",
+      "role_vi": "Lễ tân hỏi giờ kỹ thuật có thể đến phòng khi điều hòa trục trặc",
+      "gender": "female",
+      "ja": "空調を見に伺いたいのですが、何時ごろならお部屋にいらっしゃいますか。",
+      "vi": "Chúng tôi muốn lên kiểm tra điều hòa, khoảng mấy giờ thì anh có mặt ở phòng ạ?",
+      "terms": [
+        "空調"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～たいのですが、何時ごろなら～ますか"
+    },
+    {
+      "id": "T-123-V13-014",
+      "group": "repair",
+      "role_vi": "Lễ tân hẹn một mốc gọi lại dù còn kiểm",
+      "gender": "male",
+      "ja": "空調の点検に何時に行けるか確認して、六時四十分までにお部屋へお電話します。",
+      "vi": "Tôi sẽ kiểm tra mấy giờ có thể lên xem điều hòa rồi gọi vào phòng chị chậm nhất lúc sáu giờ bốn mươi ạ.",
+      "terms": [
+        "空調",
+        "点検"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～か確認して、～までにお電話します"
+    },
+    {
+      "id": "T-123-V13-015",
+      "group": "repair",
+      "role_vi": "Lễ tân để khách chọn kỹ thuật kiểm hoặc đổi phòng",
+      "gender": "female",
+      "ja": "空調の点検を待つか、同じタイプのお部屋へ移るか、どちらがよろしいですか。",
+      "vi": "Anh muốn đợi kiểm điều hòa hay chuyển sang phòng khác cùng loại ạ?",
+      "terms": [
+        "空調",
+        "点検"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～か、～か、どちらがよろしいですか"
+    },
+    {
+      "id": "T-123-V13-016",
+      "group": "repair",
+      "role_vi": "Lễ tân báo lần chuyển cùng loại không có thêm phí",
+      "gender": "male",
+      "ja": "今回は同じタイプのお部屋に移りますので、追加料金はかかりません。",
+      "vi": "Lần này chị chuyển sang phòng cùng loại nên không mất thêm phí ạ.",
+      "terms": [
+        "追加料金"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ますので、追加料金はかかりません"
+    },
+    {
+      "id": "T-123-V13-017",
+      "group": "expect",
+      "role_vi": "Lễ tân hỏi điểm nào của phòng khác mong muốn",
+      "gender": "female",
+      "ja": "ご希望と違ったのは、ベッドの数ですか、それともお部屋からの眺めですか。",
+      "vi": "Điểm khác mong muốn của anh là số giường hay cảnh nhìn từ phòng ạ?",
+      "terms": [
+        "眺め"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～は～ですか、それとも～ですか"
+    },
+    {
+      "id": "T-123-V13-018",
+      "group": "expect",
+      "role_vi": "Lễ tân phân biệt ảnh giới thiệu và loại phòng đã đặt",
+      "gender": "male",
+      "ja": "写真は港側のツインですが、ご予約はスタンダードのツインになっています。",
+      "vi": "Ảnh là phòng hai giường hướng cảng, còn đơn của chị là phòng hai giường tiêu chuẩn ạ.",
+      "terms": [],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～は～ですが、～は～になっています"
+    },
+    {
+      "id": "T-123-V13-019",
+      "group": "expect",
+      "role_vi": "Lễ tân xin phép nêu phí chênh trước khi khách chọn",
+      "gender": "female",
+      "ja": "港側のお部屋に空きがありますが、先に差額をご説明してもよろしいですか。",
+      "vi": "Còn phòng hướng cảng, tôi xin giải thích khoản chênh lệch trước được không ạ?",
+      "terms": [
+        "差額"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～がありますが、先に～てもよろしいですか"
+    },
+    {
+      "id": "T-123-V13-020",
+      "group": "expect",
+      "role_vi": "Lễ tân giữ phòng hiện tại và đề nghị gọi quản lý",
+      "gender": "male",
+      "ja": "お部屋はそのままで、予約の表示について責任者をお呼びしましょうか。",
+      "vi": "Tôi sẽ giữ nguyên phòng hiện tại, chị có muốn tôi mời quản lý đến trao đổi về thông tin hiển thị khi đặt không ạ?",
+      "terms": [
+        "責任者"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～はそのままで、～をお呼びしましょうか"
+    },
+    {
+      "id": "T-123-V13-021",
+      "group": "checkout",
+      "role_vi": "Lễ tân đọc phần phải trả thêm khi tiền phòng đã thanh toán",
+      "gender": "female",
+      "ja": "お部屋代はお支払い済みなので、追加料金は朝食と飲み物の分です。",
+      "vi": "Anh đã thanh toán tiền phòng, phần phát sinh là tiền bữa sáng và đồ uống ạ.",
+      "terms": [
+        "追加料金"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～はお支払い済みなので、～は～です"
+    },
+    {
+      "id": "T-123-V13-022",
+      "group": "checkout",
+      "role_vi": "Lễ tân xin khách chưa thanh toán khi đang đối chiếu phiếu",
+      "gender": "male",
+      "ja": "ほかのお部屋の分かどうか伝票で確認しますので、お支払いは少しお待ちください。",
+      "vi": "Tôi sẽ kiểm tra phiếu xem có phải tính nhầm của phòng khác không, chị khoan thanh toán một chút nhé.",
+      "terms": [
+        "伝票"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～ますので、～は少しお待ちください"
+    },
+    {
+      "id": "T-123-V13-023",
+      "group": "checkout",
+      "role_vi": "Lễ tân báo khoản sai đã xóa và chỉ lại phiếu mới",
+      "gender": "female",
+      "ja": "別のお部屋の飲み物代を取り消しましたので、新しい明細をご確認ください。",
+      "vi": "Tôi đã xóa tiền đồ uống của phòng khác, anh kiểm tra bảng kê mới giúp tôi nhé.",
+      "terms": [
+        "明細"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～ましたので、～をご確認ください"
+    },
+    {
+      "id": "T-123-V13-024",
+      "group": "checkout",
+      "role_vi": "Lễ tân hỏi nhận dạng đồ quên và hẹn gọi lại",
+      "gender": "male",
+      "ja": "忘れ物を確認して折り返しますので、お部屋番号と傘の特徴を教えていただけますか。",
+      "vi": "Tôi sẽ kiểm tra đồ để quên rồi gọi lại, chị cho tôi xin số phòng và đặc điểm chiếc ô được không ạ?",
+      "terms": [
+        "忘れ物",
+        "折り返す"
+      ],
+      "scenes": [
+        "S020",
+        "S021"
+      ],
+      "pattern": "～ますので、～を教えていただけますか"
+    }
+  ]
+}

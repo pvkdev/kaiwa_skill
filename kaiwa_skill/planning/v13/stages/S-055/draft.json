@@ -1,0 +1,368 @@
+{
+  "code": "S-055",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "25b7ca454f8de3fb7e1edbbf0b9ebf6303624c4f43de3e75b532689b24fe2af7",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "report": "Báo khói và chỉ vị trí",
+    "observe": "Nói điều mình thấy và nghe",
+    "route": "Hỏi lối ra và cập nhật vị trí",
+    "wait": "Báo có mặt và chờ hướng dẫn"
+  },
+  "items": [
+    {
+      "id": "S-055-V13-001",
+      "group": "report",
+      "role_vi": "Người gọi 119",
+      "gender": "female",
+      "ja": "二階から煙が出ています。",
+      "vi": "Có khói bốc ra từ tầng hai ạ.",
+      "terms": [
+        "〜階",
+        "煙"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "nơi_có_khói"
+    },
+    {
+      "id": "S-055-V13-002",
+      "group": "report",
+      "role_vi": "Người tiếp nhận 119",
+      "gender": "male",
+      "ja": "建物の住所を教えてください。",
+      "vi": "Chị cho tôi biết địa chỉ tòa nhà ạ.",
+      "terms": [
+        "建物",
+        "住所"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "thông_tin_vị_trí"
+    },
+    {
+      "id": "S-055-V13-003",
+      "group": "report",
+      "role_vi": "Người gọi 119",
+      "gender": "female",
+      "ja": "住所はさくら町三の十二です。",
+      "vi": "Địa chỉ là Sakura-machi 3-12 ạ.",
+      "terms": [
+        "住所"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "thông_tin_vị_trí"
+    },
+    {
+      "id": "S-055-V13-004",
+      "group": "report",
+      "role_vi": "Người gọi 119",
+      "gender": "female",
+      "ja": "あおいビルの入口には青い看板があります。",
+      "vi": "Ở lối vào tòa Aoi có bảng hiệu màu xanh lam ạ.",
+      "terms": [
+        "入口",
+        "青い",
+        "看板"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "mốc_nhận_ra"
+    },
+    {
+      "id": "S-055-V13-005",
+      "group": "observe",
+      "role_vi": "Người gọi 119",
+      "gender": "female",
+      "ja": "煙は見えますが、炎は見えません。",
+      "vi": "Tôi thấy khói, nhưng chưa thấy ngọn lửa ạ.",
+      "terms": [
+        "煙",
+        "見える",
+        "炎"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "thấy_và_chưa_thấy"
+    },
+    {
+      "id": "S-055-V13-006",
+      "group": "observe",
+      "role_vi": "Người gọi 119",
+      "gender": "female",
+      "ja": "煙の原因はまだ分かりません。",
+      "vi": "Tôi vẫn chưa biết vì sao lại có khói ạ.",
+      "terms": [
+        "煙",
+        "原因"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "thông_tin_chưa_rõ"
+    },
+    {
+      "id": "S-055-V13-007",
+      "group": "observe",
+      "role_vi": "Người báo quản lý tòa nhà",
+      "gender": "female",
+      "ja": "非常ベルが二回聞こえました。",
+      "vi": "Tôi nghe chuông báo động reo hai lần ạ.",
+      "terms": [
+        "非常ベル",
+        "〜回",
+        "聞こえる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "báo_điều_đã_nghe"
+    },
+    {
+      "id": "S-055-V13-008",
+      "group": "observe",
+      "role_vi": "Người gọi 119",
+      "gender": "female",
+      "ja": "建物の中にまだ人がいるか分かりません。",
+      "vi": "Tôi không biết còn ai ở trong tòa nhà không ạ.",
+      "terms": [
+        "建物"
+      ],
+      "scenes": [
+        "S004",
+        "S019"
+      ],
+      "pattern": "thông_tin_chưa_rõ"
+    },
+    {
+      "id": "S-055-V13-009",
+      "group": "observe",
+      "role_vi": "Người báo quản lý tòa nhà",
+      "gender": "female",
+      "ja": "二階で煙を見たことは、もう百十九番に伝えました。",
+      "vi": "Tôi đã báo 119 là tôi thấy khói ở tầng hai rồi ạ.",
+      "terms": [
+        "〜階",
+        "煙",
+        "見る",
+        "119番",
+        "伝える"
+      ],
+      "scenes": [
+        "S009",
+        "S012"
+      ],
+      "pattern": "báo_việc_đã_làm"
+    },
+    {
+      "id": "S-055-V13-010",
+      "group": "route",
+      "role_vi": "Người đang nghe hướng dẫn từ 119",
+      "gender": "female",
+      "ja": "どの出口を使うか、もう一度教えてください。",
+      "vi": "Anh nhắc lại giúp tôi phải đi lối nào ạ.",
+      "terms": [
+        "出口"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "nhắc_lại_chỉ_dẫn"
+    },
+    {
+      "id": "S-055-V13-011",
+      "group": "route",
+      "role_vi": "Người gọi 119",
+      "gender": "male",
+      "ja": "今、一階の階段の前にいます。",
+      "vi": "Tôi đang ở trước cầu thang tầng một ạ.",
+      "terms": [
+        "〜階",
+        "階段",
+        "前"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "báo_vị_trí_hiện_tại"
+    },
+    {
+      "id": "S-055-V13-012",
+      "group": "route",
+      "role_vi": "Người gọi 119",
+      "gender": "female",
+      "ja": "東側の出口は煙で通れないそうです。",
+      "vi": "Tôi nghe nói lối ra phía đông có khói, không đi qua được ạ.",
+      "terms": [
+        "東側",
+        "出口",
+        "煙",
+        "通る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "báo_tin_nghe_được"
+    },
+    {
+      "id": "S-055-V13-013",
+      "group": "route",
+      "role_vi": "Người nhờ người đứng gần",
+      "gender": "male",
+      "ja": "百十九番の案内を一緒に聞いてもらえますか。",
+      "vi": "Anh nghe hướng dẫn của tổng đài 119 cùng tôi được không ạ?",
+      "terms": [
+        "119番",
+        "案内"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "nhờ_hỗ_trợ"
+    },
+    {
+      "id": "S-055-V13-014",
+      "group": "route",
+      "role_vi": "Người gọi 119 sau khi ra ngoài",
+      "gender": "female",
+      "ja": "今はビルの外の広場にいます。",
+      "vi": "Giờ tôi đang ở khoảng sân bên ngoài tòa nhà ạ.",
+      "terms": [
+        "外",
+        "広場"
+      ],
+      "scenes": [
+        "S006",
+        "S020"
+      ],
+      "pattern": "báo_vị_trí_hiện_tại"
+    },
+    {
+      "id": "S-055-V13-015",
+      "group": "route",
+      "role_vi": "Người gọi lại cho 119",
+      "gender": "male",
+      "ja": "今は東側の通路にも煙が見えます。",
+      "vi": "Giờ tôi thấy cả khói ở lối đi phía đông ạ.",
+      "terms": [
+        "東側",
+        "通路",
+        "煙",
+        "見える"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "nơi_có_khói"
+    },
+    {
+      "id": "S-055-V13-016",
+      "group": "route",
+      "role_vi": "Người cập nhật cho 119",
+      "gender": "female",
+      "ja": "外に出る前に、二階で煙を見ました。",
+      "vi": "Tôi thấy khói ở tầng hai trước khi ra ngoài ạ.",
+      "terms": [
+        "外",
+        "前",
+        "〜階",
+        "煙",
+        "見る"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "thời_điểm_quan_sát"
+    },
+    {
+      "id": "S-055-V13-017",
+      "group": "wait",
+      "role_vi": "Người vừa sơ tán",
+      "gender": "female",
+      "ja": "北側の広場に避難したリンです。",
+      "vi": "Tôi là Linh, tôi đã sơ tán ra sân phía bắc ạ.",
+      "terms": [
+        "北側",
+        "広場",
+        "避難する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "báo_có_mặt"
+    },
+    {
+      "id": "S-055-V13-018",
+      "group": "wait",
+      "role_vi": "Người phụ trách nơi tập trung",
+      "gender": "male",
+      "ja": "次の案内があるまで、広場で待ってください。",
+      "vi": "Mọi người chờ ở sân đến khi có hướng dẫn tiếp nhé.",
+      "terms": [
+        "案内",
+        "広場",
+        "待つ"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "chờ_hướng_dẫn"
+    },
+    {
+      "id": "S-055-V13-019",
+      "group": "wait",
+      "role_vi": "Người vừa sơ tán",
+      "gender": "female",
+      "ja": "あおいビルには、もう戻ってもいいですか。",
+      "vi": "Bây giờ đã được phép quay lại tòa Aoi chưa ạ?",
+      "terms": [
+        "戻る"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "hỏi_cho_phép"
+    },
+    {
+      "id": "S-055-V13-020",
+      "group": "wait",
+      "role_vi": "Người báo cho chị gái",
+      "gender": "male",
+      "ja": "お姉ちゃん、もう外に出たから無事だよ。",
+      "vi": "Chị ơi, em ra ngoài an toàn rồi.",
+      "terms": [
+        "外",
+        "無事"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "trấn_an_người_nhà"
+    },
+    {
+      "id": "S-055-V13-021",
+      "group": "wait",
+      "role_vi": "Người báo chỗ đang đợi với tổng đài",
+      "gender": "female",
+      "ja": "北側の広場で、係の人のそばにいます。",
+      "vi": "Tôi đang ở cạnh người phụ trách tại sân phía bắc ạ.",
+      "terms": [
+        "北側",
+        "広場",
+        "係の人"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "báo_vị_trí_hiện_tại"
+    }
+  ]
+}

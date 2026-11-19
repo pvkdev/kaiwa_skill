@@ -1,0 +1,388 @@
+{
+  "code": "S-056",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3f8bbca6376947caa9c404273363dbed3da891aa746516b51dcc90868f552adf",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "loss": "Báo mất và mô tả món đồ",
+    "track": "Bổ sung thông tin và hỏi kết quả",
+    "card": "Báo mất và hỏi về thẻ",
+    "hand": "Giao đồ nhặt được và nhận lại đồ"
+  },
+  "items": [
+    {
+      "id": "S-056-V13-001",
+      "group": "loss",
+      "role_vi": "Người báo mất đồ",
+      "gender": "female",
+      "ja": "財布をなくしました。",
+      "vi": "Tôi bị mất ví ạ.",
+      "terms": [
+        "財布",
+        "なくす"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "báo_mất"
+    },
+    {
+      "id": "S-056-V13-002",
+      "group": "loss",
+      "role_vi": "Cảnh sát tại chốt",
+      "gender": "male",
+      "ja": "財布は何色でしたか。",
+      "vi": "Ví của chị màu gì ạ?",
+      "terms": [
+        "財布",
+        "色"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "hỏi_đặc_điểm"
+    },
+    {
+      "id": "S-056-V13-003",
+      "group": "loss",
+      "role_vi": "Người báo mất đồ",
+      "gender": "female",
+      "ja": "私の財布は小さくて黒いです。",
+      "vi": "Ví của tôi nhỏ, màu đen ạ.",
+      "terms": [
+        "小さい",
+        "黒い",
+        "財布"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "mô_tả_đồ"
+    },
+    {
+      "id": "S-056-V13-004",
+      "group": "loss",
+      "role_vi": "Người báo mất đồ",
+      "gender": "female",
+      "ja": "財布の表に赤い星があります。",
+      "vi": "Mặt trước ví có hình ngôi sao màu đỏ ạ.",
+      "terms": [
+        "財布",
+        "表",
+        "赤い",
+        "星"
+      ],
+      "scenes": [
+        "S004",
+        "S017",
+        "S018"
+      ],
+      "pattern": "dấu_nhận_diện"
+    },
+    {
+      "id": "S-056-V13-005",
+      "group": "loss",
+      "role_vi": "Người báo mất đồ",
+      "gender": "female",
+      "ja": "電車を降りたときは、まだ財布を持っていました。",
+      "vi": "Lúc xuống tàu tôi vẫn còn cầm ví ạ.",
+      "terms": [
+        "電車",
+        "降りる",
+        "財布"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "mốc_cuối_còn_đồ"
+    },
+    {
+      "id": "S-056-V13-006",
+      "group": "loss",
+      "role_vi": "Người báo mất đồ",
+      "gender": "male",
+      "ja": "家に帰る途中で、財布がないことに気づきました。",
+      "vi": "Trên đường về nhà, tôi mới nhận ra mình mất ví ạ.",
+      "terms": [
+        "途中",
+        "財布",
+        "気づく"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "mốc_phát_hiện_mất"
+    },
+    {
+      "id": "S-056-V13-007",
+      "group": "loss",
+      "role_vi": "Người báo mất đồ",
+      "gender": "female",
+      "ja": "財布には現金とキャッシュカードが入っていました。",
+      "vi": "Trong ví có tiền mặt và thẻ ATM ạ.",
+      "terms": [
+        "財布",
+        "現金",
+        "キャッシュカード"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "mô_tả_đồ_trong_ví"
+    },
+    {
+      "id": "S-056-V13-008",
+      "group": "loss",
+      "role_vi": "Người báo mất đồ",
+      "gender": "female",
+      "ja": "診察券も財布に入っていたかもしれません。",
+      "vi": "Có thể trong ví còn có thẻ khám bệnh nữa ạ.",
+      "terms": [
+        "診察券",
+        "財布"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "nêu_khả_năng"
+    },
+    {
+      "id": "S-056-V13-009",
+      "group": "track",
+      "role_vi": "Người gọi hỏi cảnh sát",
+      "gender": "female",
+      "ja": "似た財布が届いたら、電話で連絡してもらえますか。",
+      "vi": "Nếu có ai mang tới một chiếc ví tương tự, anh gọi báo cho tôi được không ạ?",
+      "terms": [
+        "似る",
+        "財布",
+        "届く",
+        "連絡する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "nhờ_báo_lại"
+    },
+    {
+      "id": "S-056-V13-010",
+      "group": "track",
+      "role_vi": "Cảnh sát tại chốt",
+      "gender": "male",
+      "ja": "財布のことを問い合わせるときは、受理番号を教えてください。",
+      "vi": "Khi gọi hỏi về chiếc ví, chị cho tôi xin mã hồ sơ ạ.",
+      "terms": [
+        "財布",
+        "問い合わせる",
+        "受理番号"
+      ],
+      "scenes": [
+        "S006",
+        "S008",
+        "S020"
+      ],
+      "pattern": "dùng_mã_hồ_sơ"
+    },
+    {
+      "id": "S-056-V13-011",
+      "group": "track",
+      "role_vi": "Người xem ảnh đồ tại chốt",
+      "gender": "female",
+      "ja": "この財布は茶色ですが、私の財布は黒です。",
+      "vi": "Chiếc ví này màu nâu, còn ví tôi màu đen ạ.",
+      "terms": [
+        "財布",
+        "茶色"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "đối_chiếu_đặc_điểm"
+    },
+    {
+      "id": "S-056-V13-012",
+      "group": "track",
+      "role_vi": "Người gọi bổ sung hồ sơ",
+      "gender": "female",
+      "ja": "財布の中に小さい写真があったことも書いてもらえますか。",
+      "vi": "Anh ghi thêm giúp tôi là trong ví có một tấm ảnh nhỏ được không ạ?",
+      "terms": [
+        "財布",
+        "小さい",
+        "写真"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "nhờ_bổ_sung"
+    },
+    {
+      "id": "S-056-V13-013",
+      "group": "track",
+      "role_vi": "Người gọi báo thêm cho cảnh sát",
+      "gender": "male",
+      "ja": "最後に財布を使ったのは、駅の切符売り場です。",
+      "vi": "Lần cuối tôi dùng ví là ở quầy vé nhà ga ạ.",
+      "terms": [
+        "最後",
+        "財布",
+        "切符売り場"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "mốc_cuối_còn_đồ"
+    },
+    {
+      "id": "S-056-V13-014",
+      "group": "card",
+      "role_vi": "Chủ thẻ gọi ngân hàng",
+      "gender": "female",
+      "ja": "なくしたキャッシュカードを止めてください。",
+      "vi": "Nhờ anh khóa giúp tôi thẻ ATM bị mất ạ.",
+      "terms": [
+        "なくす",
+        "キャッシュカード"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "nhờ_khóa_thẻ"
+    },
+    {
+      "id": "S-056-V13-015",
+      "group": "card",
+      "role_vi": "Nhân viên ngân hàng",
+      "gender": "male",
+      "ja": "本人確認のために、お名前と生年月日を教えてください。",
+      "vi": "Để xác minh danh tính, chị cho tôi xin họ tên và ngày tháng năm sinh ạ.",
+      "terms": [
+        "本人確認",
+        "名前",
+        "生年月日"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "xác_minh_chủ_thẻ"
+    },
+    {
+      "id": "S-056-V13-016",
+      "group": "card",
+      "role_vi": "Chủ thẻ gọi ngân hàng",
+      "gender": "female",
+      "ja": "キャッシュカードはもう利用停止になりましたか。",
+      "vi": "Thẻ ATM của tôi đã được khóa chưa ạ?",
+      "terms": [
+        "キャッシュカード",
+        "利用停止"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "hỏi_tình_trạng_thẻ"
+    },
+    {
+      "id": "S-056-V13-017",
+      "group": "card",
+      "role_vi": "Chủ thẻ vừa tìm lại được thẻ",
+      "gender": "female",
+      "ja": "見つかったキャッシュカードは、また使えますか。",
+      "vi": "Tôi tìm lại được thẻ ATM rồi, giờ tôi có dùng lại thẻ đó được không ạ?",
+      "terms": [
+        "見つかる",
+        "キャッシュカード"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hỏi_tình_trạng_thẻ"
+    },
+    {
+      "id": "S-056-V13-018",
+      "group": "hand",
+      "role_vi": "Người mang đồ nhặt được đến chốt",
+      "gender": "male",
+      "ja": "駅の前のベンチで、この傘を拾いました。",
+      "vi": "Tôi nhặt được chiếc ô này ở ghế dài trước ga ạ.",
+      "terms": [
+        "拾う"
+      ],
+      "scenes": [
+        "S013",
+        "S016"
+      ],
+      "pattern": "báo_nơi_nhặt_đồ"
+    },
+    {
+      "id": "S-056-V13-019",
+      "group": "hand",
+      "role_vi": "Cảnh sát tại chốt",
+      "gender": "male",
+      "ja": "かばんの受け取りには身分証明書が必要です。",
+      "vi": "Chị cần mang giấy tờ tùy thân để nhận lại túi ạ.",
+      "terms": [
+        "かばん",
+        "身分証明書"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "cần_giấy_tờ"
+    },
+    {
+      "id": "S-056-V13-020",
+      "group": "hand",
+      "role_vi": "Người đến nhận túi",
+      "gender": "female",
+      "ja": "私のかばんは青くて、内側に名前が書いてあります。",
+      "vi": "Túi của tôi màu xanh lam, bên trong có ghi tên ạ.",
+      "terms": [
+        "かばん",
+        "青い",
+        "内側",
+        "名前"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "dấu_nhận_diện"
+    },
+    {
+      "id": "S-056-V13-021",
+      "group": "hand",
+      "role_vi": "Người hỏi cảnh sát cách nhận lại túi",
+      "gender": "female",
+      "ja": "かばんを受け取るときは、何を持って来ればいいですか。",
+      "vi": "Khi đến nhận lại túi, tôi cần mang theo gì ạ?",
+      "terms": [
+        "かばん",
+        "受け取る"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "hỏi_cần_mang_gì"
+    },
+    {
+      "id": "S-056-V13-022",
+      "group": "hand",
+      "role_vi": "Người cập nhật với cảnh sát",
+      "gender": "female",
+      "ja": "駅で財布を受け取りましたが、キャッシュカードは入っていませんでした。",
+      "vi": "Tôi đã nhận lại ví ở ga, nhưng bên trong không có thẻ ATM ạ.",
+      "terms": [
+        "財布",
+        "受け取る",
+        "キャッシュカード"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "báo_phần_còn_thiếu"
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "code": "S-029",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "8a87dc76f839c4bc8b807bfd899e89610e4f4645799e11bb1d01543869457235",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "frame": "Nói nhu cầu và thử gọng",
+    "order": "Kiểm độ, hỏi giá và ngày nhận",
+    "adjust": "Thử kính và xin chỉnh",
+    "follow": "Hỏi lại sau khi nhận kính"
+  },
+  "items": [
+    {
+      "id": "S-029-V13-001",
+      "group": "frame",
+      "role_vi": "Khách chọn kính",
+      "gender": "male",
+      "ja": "仕事で使うメガネが欲しいです。",
+      "vi": "Tôi muốn mua kính để dùng khi làm việc ạ.",
+      "terms": [
+        "仕事",
+        "メガネ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜で使う〜が欲しいです"
+    },
+    {
+      "id": "S-029-V13-002",
+      "group": "frame",
+      "role_vi": "Khách chọn kính",
+      "gender": "male",
+      "ja": "この二つのフレームはどちらが軽いですか。",
+      "vi": "Trong hai gọng này, gọng nào nhẹ hơn ạ?",
+      "terms": [
+        "フレーム",
+        "軽い"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "どちらが〜ですか"
+    },
+    {
+      "id": "S-029-V13-003",
+      "group": "frame",
+      "role_vi": "Khách chọn kính",
+      "gender": "male",
+      "ja": "このフレームを掛けてみてもいいですか。",
+      "vi": "Tôi đeo thử gọng này được không ạ?",
+      "terms": [
+        "フレーム",
+        "掛ける"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "〜てもいいですか"
+    },
+    {
+      "id": "S-029-V13-004",
+      "group": "frame",
+      "role_vi": "Khách thử gọng kính",
+      "gender": "male",
+      "ja": "このフレームは右のこめかみに当たります。",
+      "vi": "Gọng này cấn ở thái dương bên phải ạ.",
+      "terms": [
+        "フレーム",
+        "右",
+        "こめかみ",
+        "当たる"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜に当たります"
+    },
+    {
+      "id": "S-029-V13-005",
+      "group": "frame",
+      "role_vi": "Khách chọn kính",
+      "gender": "male",
+      "ja": "このレンズを入れられる紺のフレームはありますか。",
+      "vi": "Có gọng xanh navy nào lắp được tròng này không ạ?",
+      "terms": [
+        "レンズ",
+        "入れる",
+        "紺",
+        "フレーム"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "〜はありますか"
+    },
+    {
+      "id": "S-029-V13-006",
+      "group": "frame",
+      "role_vi": "Khách chọn kính",
+      "gender": "male",
+      "ja": "このフレームなら耳が痛くならないので、これにします。",
+      "vi": "Đeo gọng này tôi không bị đau tai, nên tôi lấy gọng này ạ.",
+      "terms": [
+        "フレーム",
+        "耳",
+        "痛い"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜ので、これにします"
+    },
+    {
+      "id": "S-029-V13-007",
+      "group": "order",
+      "role_vi": "Khách đặt làm kính",
+      "gender": "male",
+      "ja": "新しいメガネを作る前に、今のメガネの度数を確認できますか。",
+      "vi": "Trước khi làm kính mới, cửa hàng kiểm giúp tôi độ của kính đang dùng được không ạ?",
+      "terms": [
+        "メガネ",
+        "度数",
+        "確認する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "確認できますか"
+    },
+    {
+      "id": "S-029-V13-008",
+      "group": "order",
+      "role_vi": "Khách thử độ kính",
+      "gender": "male",
+      "ja": "この度数だと近くの字がまだ見にくいです。",
+      "vi": "Với độ kính này, nhìn chữ ở gần vẫn hơi khó ạ.",
+      "terms": [
+        "度数",
+        "近く",
+        "字",
+        "見にくい"
+      ],
+      "scenes": [
+        "S007",
+        "S011"
+      ],
+      "pattern": "〜だと、〜にくいです"
+    },
+    {
+      "id": "S-029-V13-009",
+      "group": "order",
+      "role_vi": "Nhân viên đo kính",
+      "gender": "female",
+      "ja": "本を読むときと同じ距離でもう一度確認しますね。",
+      "vi": "Tôi sẽ kiểm lại ở đúng khoảng cách anh thường đọc sách nhé.",
+      "terms": [
+        "読む",
+        "距離",
+        "確認する"
+      ],
+      "scenes": [
+        "S007",
+        "S011"
+      ],
+      "pattern": "〜でもう一度確認します"
+    },
+    {
+      "id": "S-029-V13-010",
+      "group": "order",
+      "role_vi": "Khách đặt làm kính",
+      "gender": "male",
+      "ja": "レンズを取り寄せると、メガネはいつごろ受け取れそうですか。",
+      "vi": "Nếu phải đặt tròng về, dự kiến khi nào tôi nhận được kính ạ?",
+      "terms": [
+        "レンズ",
+        "メガネ",
+        "受け取る"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "いつごろ〜そうですか"
+    },
+    {
+      "id": "S-029-V13-011",
+      "group": "order",
+      "role_vi": "Khách hỏi giá kính",
+      "gender": "male",
+      "ja": "レンズの料金はフレームの料金とは別ですか。",
+      "vi": "Tiền tròng kính có tính riêng với tiền gọng không ạ?",
+      "terms": [
+        "レンズ",
+        "フレーム",
+        "別"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜は〜とは別ですか"
+    },
+    {
+      "id": "S-029-V13-012",
+      "group": "order",
+      "role_vi": "Khách hỏi giá kính",
+      "gender": "male",
+      "ja": "フレームとレンズを合わせると、合計はいくらですか。",
+      "vi": "Tính cả gọng và tròng thì tổng cộng bao nhiêu ạ?",
+      "terms": [
+        "フレーム",
+        "レンズ",
+        "合計"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜と、いくらですか"
+    },
+    {
+      "id": "S-029-V13-013",
+      "group": "adjust",
+      "role_vi": "Khách thử kính mới",
+      "gender": "male",
+      "ja": "下を向くと、メガネが鼻のほうにずれます。",
+      "vi": "Cứ cúi xuống là kính lại trượt xuống mũi ạ.",
+      "terms": [
+        "向く",
+        "メガネ",
+        "ずれる"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜と、ずれます"
+    },
+    {
+      "id": "S-029-V13-014",
+      "group": "adjust",
+      "role_vi": "Khách thử kính mới",
+      "gender": "male",
+      "ja": "このメガネの鼻パッドを少し調整してもらえますか。",
+      "vi": "Nhờ cửa hàng chỉnh nhẹ miếng đệm mũi của kính này giúp tôi được không ạ?",
+      "terms": [
+        "メガネ",
+        "鼻パッド",
+        "調整する"
+      ],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-029-V13-015",
+      "group": "adjust",
+      "role_vi": "Khách chờ chỉnh kính",
+      "gender": "male",
+      "ja": "メガネの調整が終わるのは何時ごろですか。",
+      "vi": "Khoảng mấy giờ thì cửa hàng chỉnh kính xong ạ?",
+      "terms": [
+        "メガネ"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "何時ごろですか"
+    },
+    {
+      "id": "S-029-V13-016",
+      "group": "adjust",
+      "role_vi": "Khách thử kính sau khi chỉnh",
+      "gender": "male",
+      "ja": "下を向いても、メガネがずれなくなりました。",
+      "vi": "Giờ tôi cúi xuống kính cũng không trượt nữa ạ.",
+      "terms": [
+        "向く",
+        "メガネ",
+        "ずれる"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜ても、〜なくなりました"
+    },
+    {
+      "id": "S-029-V13-017",
+      "group": "follow",
+      "role_vi": "Khách gọi hẹn chỉnh kính",
+      "gender": "male",
+      "ja": "先日買ったメガネのつるが耳の後ろに当たります。",
+      "vi": "Càng của chiếc kính tôi mua mấy hôm trước bị cấn sau tai ạ.",
+      "terms": [
+        "メガネ",
+        "つる",
+        "耳",
+        "後ろ",
+        "当たる"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜に当たります"
+    },
+    {
+      "id": "S-029-V13-018",
+      "group": "follow",
+      "role_vi": "Khách gọi hẹn chỉnh kính",
+      "gender": "male",
+      "ja": "今日の午後、メガネの掛かり具合を見てもらえますか。",
+      "vi": "Chiều nay tôi qua nhờ cửa hàng xem kính đeo có vừa không được không ạ?",
+      "terms": [
+        "今日",
+        "午後",
+        "メガネ",
+        "掛かり具合"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-029-V13-019",
+      "group": "follow",
+      "role_vi": "Khách hỏi nơi khám mắt",
+      "gender": "male",
+      "ja": "片目だけ急に見えにくくなったので、近くの眼科を教えてもらえますか。",
+      "vi": "Một bên mắt tôi đột nhiên nhìn không rõ, cửa hàng chỉ giúp tôi phòng khám mắt gần đây được không ạ?",
+      "terms": [
+        "片目",
+        "急に",
+        "近く",
+        "眼科"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-029-V13-020",
+      "group": "follow",
+      "role_vi": "Khách từng mua kính",
+      "gender": "male",
+      "ja": "レシートがあれば、前に作ったメガネの度数を確認できますか。",
+      "vi": "Nếu còn biên lai, tôi có thể xem lại độ của kính làm lần trước không ạ?",
+      "terms": [
+        "レシート",
+        "メガネ",
+        "度数",
+        "確認する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "確認できますか"
+    },
+    {
+      "id": "S-029-V13-021",
+      "group": "follow",
+      "role_vi": "Khách đem kính quay lại cửa hàng",
+      "gender": "male",
+      "ja": "レンズはそのままで、曲がったフレームだけ調整してください。",
+      "vi": "Nhờ cửa hàng giữ nguyên tròng kính và chỉ chỉnh lại phần gọng bị lệch giúp tôi ạ.",
+      "terms": [
+        "レンズ",
+        "曲がる",
+        "フレーム",
+        "調整する"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "〜はそのままで、〜だけ〜てください"
+    }
+  ]
+}

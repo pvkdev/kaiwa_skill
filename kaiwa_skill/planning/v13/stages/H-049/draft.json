@@ -1,0 +1,380 @@
+{
+  "code": "H-049",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "d85a7dd856f99ec6ba9e67c3d7e105aced10b030308faa38f9119981406c074a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Mở lời và nêu phần cần nhờ",
+    "scope": "Chốt thời gian, việc và tiền",
+    "decline": "Đón nhận lời từ chối và tìm cách khác",
+    "change": "Báo việc phát sinh và chia lại phần làm",
+    "handoff": "Phối hợp người thứ hai và bàn giao",
+    "close": "Cảm ơn và khép lời nhờ"
+  },
+  "items": [
+    {
+      "id": "H-049-V13-001",
+      "group": "ask",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "引っ越しのことで、今ちょっと話せる？",
+      "vi": "Chị có chuyện chuyển nhà muốn bàn, giờ em nói chuyện một chút được không?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_time_to_talk"
+    },
+    {
+      "id": "H-049-V13-002",
+      "group": "ask",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "日曜の朝、荷造りを少し手伝ってもらえる？",
+      "vi": "Sáng Chủ nhật em giúp chị đóng đồ một chút được không?",
+      "terms": [
+        "荷造り"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "ask_limited_help"
+    },
+    {
+      "id": "H-049-V13-003",
+      "group": "ask",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "日曜の午前中が埋まってたら、無理に予定を空けなくていいよ。",
+      "vi": "Nếu sáng Chủ nhật em có lịch rồi thì cứ giữ lịch của em nhé.",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "leave_room_to_decline"
+    },
+    {
+      "id": "H-049-V13-004",
+      "group": "ask",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "鍵の受け渡しは私がするから、台所の箱詰めだけお願いできる？",
+      "vi": "Bàn giao chìa khóa để chị lo, chị chỉ nhờ em đóng đồ bếp được không?",
+      "terms": [
+        "受け渡し",
+        "箱詰め"
+      ],
+      "scenes": [
+        "S002",
+        "S006"
+      ],
+      "pattern": "own_part_request_part"
+    },
+    {
+      "id": "H-049-V13-005",
+      "group": "scope",
+      "role_vi": "Người em trai nói với chị đang chuyển nhà",
+      "gender": "male",
+      "ja": "日曜の午前中は空いてるけど、午後の勤務があるから、11時には出ないといけないよ。",
+      "vi": "Sáng Chủ nhật em rảnh, nhưng chiều có ca làm nên 11 giờ em phải đi.",
+      "terms": [
+        "勤務"
+      ],
+      "scenes": [
+        "S003",
+        "S007"
+      ],
+      "pattern": "state_hard_stop"
+    },
+    {
+      "id": "H-049-V13-006",
+      "group": "scope",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "割れ物を包むところまでお願いして、捨てるか迷う物は取っておいてもらえる？",
+      "vi": "Chị nhờ em bọc đồ dễ vỡ thôi, món nào phân vân có nên bỏ thì em để lại giúp chị nhé?",
+      "terms": [
+        "割れ物"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "define_decision_limit"
+    },
+    {
+      "id": "H-049-V13-007",
+      "group": "scope",
+      "role_vi": "Người em trai nói với chị đang chuyển nhà",
+      "gender": "male",
+      "ja": "緩衝材が足りなくなったら、自分で買い足す前に姉ちゃんに電話すればいい？",
+      "vi": "Nếu hết đồ chèn chống va đập, em gọi hỏi chị trước khi mua thêm nhé?",
+      "terms": [
+        "緩衝材"
+      ],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "before_action"
+    },
+    {
+      "id": "H-049-V13-008",
+      "group": "scope",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "業者への支払いも梱包材の費用も私が持つから、立て替えなくていいよ。",
+      "vi": "Chị lo cả tiền chuyển nhà lẫn tiền vật liệu đóng gói, em không cần ứng hộ đâu.",
+      "terms": [
+        "業者",
+        "梱包材",
+        "立て替える"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "clarify_cost_owner"
+    },
+    {
+      "id": "H-049-V13-009",
+      "group": "decline",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "引っ越しを手伝えない理由は、話したくなければ言わなくていいよ。",
+      "vi": "Nếu em không muốn nói vì sao không giúp chuyển nhà được thì em không cần giải thích đâu.",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "no_reason_required"
+    },
+    {
+      "id": "H-049-V13-010",
+      "group": "decline",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "日曜に来られないって早めに教えてくれて助かったから、箱詰めは業者に頼めるか聞いてみるね。",
+      "vi": "Cảm ơn em báo sớm là Chủ nhật không đến được, chị sẽ hỏi xem bên chuyển nhà có nhận đóng đồ không nhé.",
+      "terms": [
+        "箱詰め",
+        "業者"
+      ],
+      "scenes": [
+        "S004",
+        "S012",
+        "S015"
+      ],
+      "pattern": "accept_and_find_alternative"
+    },
+    {
+      "id": "H-049-V13-011",
+      "group": "decline",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "引っ越しに来られなくても、今ちょっと時間があれば、割れ物の箱に何て書くと分かりやすいか教えてくれる？",
+      "vi": "Dù em không đến giúp chuyển nhà được, nếu giờ rảnh một chút thì góp ý giúp chị nên ghi gì trên thùng đồ dễ vỡ cho dễ nhận ra nhé?",
+      "terms": [
+        "割れ物"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "ask_limited_help"
+    },
+    {
+      "id": "H-049-V13-012",
+      "group": "decline",
+      "role_vi": "Người em trai nói với chị đang chuyển nhà",
+      "gender": "male",
+      "ja": "現地には行けないけど、部屋ごとの箱の数を教えてくれたら、運び出す順番は一緒に考えられるよ。",
+      "vi": "Em không đến tận nơi được, nhưng nếu chị cho em biết mỗi phòng có mấy thùng thì em có thể cùng chị tính thứ tự chuyển đồ ra.",
+      "terms": [
+        "運び出す"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "offer_alternative_scope"
+    },
+    {
+      "id": "H-049-V13-013",
+      "group": "change",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "台所の荷物が思ったより多かったから、時間は延ばさず、よく使う食器の箱だけに絞ってもいい？",
+      "vi": "Đồ bếp nhiều hơn chị tưởng, mình giữ giờ như đã hẹn và chỉ đóng mấy thùng bát đĩa hay dùng được không em?",
+      "terms": [
+        "絞る"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "renegotiate_smaller_scope"
+    },
+    {
+      "id": "H-049-V13-014",
+      "group": "change",
+      "role_vi": "Người em trai nói với chị đang chuyển nhà",
+      "gender": "male",
+      "ja": "11時までなら皿を包むところまでできるけど、ラベルを書くのは姉ちゃんに任せてもいい？",
+      "vi": "Đến 11 giờ thì em bọc bát đĩa được, còn ghi nhãn em để chị làm nhé?",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "own_part_request_part"
+    },
+    {
+      "id": "H-049-V13-015",
+      "group": "change",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "午後の仕事に響きそうなら、荷造りは今の箱で切り上げようか。",
+      "vi": "Nếu có vẻ ảnh hưởng đến ca làm chiều, mình làm nốt thùng này rồi dừng đóng đồ nhé em?",
+      "terms": [
+        "荷造り",
+        "切り上げる"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "offer_earlier_stop"
+    },
+    {
+      "id": "H-049-V13-016",
+      "group": "change",
+      "role_vi": "Người em trai nói với chị đang chuyển nhà",
+      "gender": "male",
+      "ja": "手伝いに来る人が増えても11時には出るから、途中の箱詰めは誰かに引き継いでもらえる？",
+      "vi": "Dù có thêm người đến giúp thì 11 giờ em vẫn phải đi, chị nhờ ai làm tiếp những thùng em chưa xong được không?",
+      "terms": [
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "state_hard_stop"
+    },
+    {
+      "id": "H-049-V13-017",
+      "group": "handoff",
+      "role_vi": "Người em họ nhờ chị họ hỗ trợ chuyển nhà",
+      "gender": "female",
+      "ja": "コアが引き受けてくれたのは皿を包むところまでで、箱のラベルは本棚の分だけお願いできる？",
+      "vi": "Khoa đã nhận phần bọc bát đĩa, còn nhãn thì em chỉ nhờ chị ghi mấy thùng sách được không?",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "ask_separate_assignment"
+    },
+    {
+      "id": "H-049-V13-018",
+      "group": "handoff",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "台所のラベルを誰が書くかで食い違いがあるみたいだから、私からいとこのユイに担当を確かめるね。",
+      "vi": "Hình như mình hiểu khác nhau về việc ai ghi nhãn thùng bếp, để chị hỏi chị họ Yui xem chị ấy nhận phần nào nhé.",
+      "terms": [
+        "食い違い",
+        "担当"
+      ],
+      "scenes": [
+        "S023",
+        "S025"
+      ],
+      "pattern": "resolve_assignment_gap"
+    },
+    {
+      "id": "H-049-V13-019",
+      "group": "handoff",
+      "role_vi": "Người em họ nhờ chị họ hỗ trợ chuyển nhà",
+      "gender": "female",
+      "ja": "封をした箱には私物が入ってるから、開けずに「手荷物」とだけ書いてもらえる？",
+      "vi": "Thùng đã dán kín là đồ riêng của em, chị để nguyên rồi chỉ ghi “đồ mang theo” giúp em nhé?",
+      "terms": [
+        "封をする",
+        "私物"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "limit_information_for_task"
+    },
+    {
+      "id": "H-049-V13-020",
+      "group": "handoff",
+      "role_vi": "Người chị nhờ em trai giúp chuyển nhà",
+      "gender": "female",
+      "ja": "10時半に二人の進み具合を聞いて、台所の箱で作業が残ってる分は私が引き取るね。",
+      "vi": "Mười giờ rưỡi chị sẽ hỏi hai người đã làm tới đâu, thùng đồ bếp nào chưa xong thì chị làm nốt nhé.",
+      "terms": [
+        "進み具合",
+        "引き取る"
+      ],
+      "scenes": [
+        "S020",
+        "S025"
+      ],
+      "pattern": "confirm_handover_point"
+    },
+    {
+      "id": "H-049-V13-021",
+      "group": "close",
+      "role_vi": "Người chị cảm ơn em trai sau buổi chuyển nhà",
+      "gender": "female",
+      "ja": "割れ物を丁寧に包んでくれたおかげで、業者が来る前に台所の箱が全部片づいたよ。",
+      "vi": "Nhờ em bọc đồ dễ vỡ cẩn thận mà chị lo xong hết thùng bếp trước khi bên chuyển nhà đến đấy.",
+      "terms": [
+        "割れ物",
+        "おかげで",
+        "業者"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "express_specific_impact"
+    },
+    {
+      "id": "H-049-V13-022",
+      "group": "close",
+      "role_vi": "Người chị cảm ơn em trai sau buổi chuyển nhà",
+      "gender": "female",
+      "ja": "旧居に残った本の箱は私が取りに行くから、どこに置いたかだけ教えてくれる？",
+      "vi": "Mấy thùng sách còn ở nhà cũ để chị đi lấy, em chỉ chị chỗ để là được nhé?",
+      "terms": [
+        "旧居"
+      ],
+      "scenes": [
+        "S027",
+        "S028"
+      ],
+      "pattern": "own_part_request_part"
+    },
+    {
+      "id": "H-049-V13-023",
+      "group": "close",
+      "role_vi": "Người chị cảm ơn em trai sau buổi chuyển nhà",
+      "gender": "female",
+      "ja": "今日の箱詰めはここまでで、新居の片づけは私がやるから、次の休みは空けなくていいよ。",
+      "vi": "Hôm nay mình đóng đồ tới đây thôi. Sắp xếp nhà mới để chị lo, ngày nghỉ tới em cứ giữ lịch của em nhé.",
+      "terms": [
+        "箱詰め",
+        "新居"
+      ],
+      "scenes": [
+        "S029",
+        "S030"
+      ],
+      "pattern": "close_without_obligation"
+    }
+  ]
+}

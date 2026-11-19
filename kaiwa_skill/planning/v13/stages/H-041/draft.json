@@ -1,0 +1,398 @@
+{
+  "code": "H-041",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "805f9c555a0bfc33679e6b61aac2058c92f36d23de8d3caad2bbfa26cc4b79ca",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "start": "Xác định chặng hỏng và nhu cầu của nhóm",
+    "counter": "Đưa thông tin đặt chỗ và hỏi phương án còn chỗ",
+    "compare": "So tuyến thay thế và điều kiện phòng",
+    "confirm": "Đối chiếu thông tin giữa khách sạn và công ty du lịch",
+    "retry": "Xử lý khi tuyến thay thế cũng ngừng chạy",
+    "after": "Đối chiếu các khoản tiền và theo tới phản hồi"
+  },
+  "items": [
+    {
+      "id": "H-041-V13-001",
+      "group": "start",
+      "role_vi": "Người đặt chuyến nói với bạn đồng hành",
+      "gender": "male",
+      "ja": "運休になったのは、今のところ往路の列車だけだよ。",
+      "vi": "Đến lúc này, chỉ có chuyến tàu lượt đi bị hủy thôi.",
+      "terms": [
+        "往路",
+        "運休"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "～だけが～になった"
+    },
+    {
+      "id": "H-041-V13-002",
+      "group": "start",
+      "role_vi": "Người đặt chuyến nói với bạn đồng hành",
+      "gender": "male",
+      "ja": "宿と復路の予約も、本当に有効かそれぞれ確認しよう。",
+      "vi": "Mình kiểm riêng xem đặt phòng và vé lượt về có còn hiệu lực thật không nhé.",
+      "terms": [
+        "復路",
+        "有効"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "～も有効か確認する"
+    },
+    {
+      "id": "H-041-V13-003",
+      "group": "start",
+      "role_vi": "Người đặt chuyến nói với bạn đồng hành",
+      "gender": "male",
+      "ja": "代わりの便を探すなら、日曜の午後五時までに東京へ戻る条件は外せないね。",
+      "vi": "Nếu tìm chuyến thay thế thì mình vẫn phải giữ điều kiện về Tokyo trước năm giờ chiều Chủ nhật nhé.",
+      "terms": [
+        "外す"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "～は外せない"
+    },
+    {
+      "id": "H-041-V13-004",
+      "group": "start",
+      "role_vi": "Người đặt chuyến nói với bạn đồng hành",
+      "gender": "male",
+      "ja": "三人が同じ便に乗れて、大きなスーツケースも運べることを最低条件にしよう。",
+      "vi": "Mình lấy việc cả ba đi cùng một chuyến và mang được vali lớn làm điều kiện tối thiểu nhé.",
+      "terms": [
+        "最低条件"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "～を最低条件にしよう"
+    },
+    {
+      "id": "H-041-V13-005",
+      "group": "counter",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "往路の列車が運休になりましたが、ホテルと復路の予約は有効か、それぞれの提供元に照会していただけますか。",
+      "vi": "Tàu lượt đi đã bị hủy, nhờ chị hỏi từng bên xem đặt phòng và vé lượt về có còn hiệu lực không ạ?",
+      "terms": [
+        "往路",
+        "運休",
+        "復路",
+        "有効",
+        "照会する"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "～が有効か照会してほしい"
+    },
+    {
+      "id": "H-041-V13-006",
+      "group": "counter",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "代わりの座席と宿泊の確認結果は、それぞれ何時ごろ分かりそうですか。",
+      "vi": "Dự kiến mấy giờ có phản hồi về ghế thay thế và mấy giờ có phản hồi về chỗ ở ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～はそれぞれ何時ごろか"
+    },
+    {
+      "id": "H-041-V13-007",
+      "group": "counter",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "代替便で仮押さえした二席は、三席目の返事があるまで残しておけますか。",
+      "vi": "Hai ghế giữ tạm trên chuyến thay thế có thể giữ đến khi biết có ghế thứ ba không ạ?",
+      "terms": [
+        "代替便",
+        "仮押さえ"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～はいつまで～できるか"
+    },
+    {
+      "id": "H-041-V13-008",
+      "group": "counter",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "三人で行ける便が見つかるまでは、仮押さえの二席への変更は確定しないでください。",
+      "vi": "Khi chưa tìm được chuyến có chỗ cho cả ba, xin đừng đổi đặt chỗ của chúng tôi chỉ để lấy hai ghế đang giữ tạm ạ.",
+      "terms": [
+        "仮押さえ"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～までは変更を確定しない"
+    },
+    {
+      "id": "H-041-V13-009",
+      "group": "compare",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "代わりの列車とバスを、到着時刻、降車場所、追加で払う金額で比べてもらえますか。",
+      "vi": "Chị so giúp chuyến tàu thay thế và xe buýt về giờ đến, nơi xuống và số tiền phải trả thêm được không ạ?",
+      "terms": [
+        "降車場所"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～で比べる"
+    },
+    {
+      "id": "H-041-V13-010",
+      "group": "compare",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "乗換え先の列車でも三席が取れ、大きな荷物を持って接続に間に合うか確認していただけますか。",
+      "vi": "Chị kiểm giúp chặng tàu nối có đủ ba ghế và chúng tôi mang vali lớn chuyển tàu có kịp không ạ?",
+      "terms": [
+        "接続",
+        "乗換え"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～だけでなく～も確認する"
+    },
+    {
+      "id": "H-041-V13-011",
+      "group": "compare",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "ツイン二室から三人部屋一室へ変更する場合の差額と、三人分の朝食が付くかを教えていただけますか。",
+      "vi": "Nếu đổi từ hai phòng hai giường sang một phòng cho ba người, chị cho tôi biết chênh lệch tiền phòng và bữa sáng còn đủ cho ba người không ạ?",
+      "terms": [
+        "ツイン",
+        "差額"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～と～を教えていただけますか"
+    },
+    {
+      "id": "H-041-V13-012",
+      "group": "compare",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "三人とも了承しましたが、列車の接続が決まるまでは、三人部屋への変更は確定しないでください。",
+      "vi": "Cả ba người đều đã đồng ý, nhưng xin chị đừng chốt đổi sang phòng ba người cho đến khi xác nhận được chặng tàu nối ạ.",
+      "terms": [
+        "了承する",
+        "接続"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～までは変更を確定しない"
+    },
+    {
+      "id": "H-041-V13-013",
+      "group": "confirm",
+      "role_vi": "Người đặt chuyến trao đổi với lễ tân khách sạn",
+      "gender": "male",
+      "ja": "旅行会社から三人部屋は仮押さえだと聞きましたが、ホテル側ではどこまで確認できていますか。",
+      "vi": "Tôi nghe công ty du lịch nói phòng ba người đang được giữ tạm, bên khách sạn đã xác nhận được đến đâu rồi ạ?",
+      "terms": [
+        "仮押さえ"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～側では何が確認済みか"
+    },
+    {
+      "id": "H-041-V13-014",
+      "group": "confirm",
+      "role_vi": "Người đặt chuyến trao đổi với lễ tân khách sạn",
+      "gender": "male",
+      "ja": "三人部屋への変更がそちらに届いていなければ、変更番号を使って旅行会社の担当に直接確認していただけますか。",
+      "vi": "Nếu bên khách sạn chưa nhận được thông tin đổi sang phòng ba người, chị dùng mã thay đổi để hỏi trực tiếp người phụ trách bên công ty du lịch giúp tôi được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～に直接確認していただけますか"
+    },
+    {
+      "id": "H-041-V13-015",
+      "group": "confirm",
+      "role_vi": "Người đặt chuyến trao đổi với lễ tân khách sạn",
+      "gender": "male",
+      "ja": "日曜はチェックアウトの日ですので、土曜に到着して一泊する予約として確認していただけますか。",
+      "vi": "Chủ nhật là ngày trả phòng, chị kiểm lại giúp tôi lịch đến nhận phòng vào thứ Bảy và ở một đêm được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～は出発日で～に到着する"
+    },
+    {
+      "id": "H-041-V13-016",
+      "group": "confirm",
+      "role_vi": "Người đặt chuyến trao đổi với lễ tân khách sạn",
+      "gender": "male",
+      "ja": "部屋の仮押さえの有効期限までに、どなたから折り返していただけるか教えてください。",
+      "vi": "Chị cho tôi biết ai sẽ gọi lại trước khi hết hạn giữ phòng tạm được không ạ?",
+      "terms": [
+        "仮押さえ",
+        "有効期限",
+        "折り返す"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～までにどなたから連絡があるか"
+    },
+    {
+      "id": "H-041-V13-017",
+      "group": "retry",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "振替で乗る予定だった接続列車も運休になったので、三人が今日中に移動できる案をもう一度確認したいです。",
+      "vi": "Chuyến nối của tàu thay thế cũng đã bị hủy, tôi muốn kiểm lại xem hôm nay còn cách nào để cả ba đi tiếp không ạ.",
+      "terms": [
+        "接続",
+        "運休"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～も運休になった"
+    },
+    {
+      "id": "H-041-V13-018",
+      "group": "retry",
+      "role_vi": "Người đặt chuyến nói với bạn đồng hành",
+      "gender": "male",
+      "ja": "二席だけのバスで別行動にするかは、残る一人に条件を説明して、本人が了承してから決めよう。",
+      "vi": "Việc có tách nhóm để đi xe buýt chỉ còn hai ghế hay không, mình giải thích điều kiện cho người sẽ ở lại rồi đợi họ đồng ý mới quyết nhé.",
+      "terms": [
+        "別行動",
+        "了承する"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～が了承するまでは～しない"
+    },
+    {
+      "id": "H-041-V13-019",
+      "group": "retry",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "二席だけでは三人で移動するという最低条件を満たさないので、別の便か、三人で泊まれる宿泊先を探していただけますか。",
+      "vi": "Hai ghế không đáp ứng điều kiện tối thiểu là ba người đi cùng nhau, chị có thể tìm chuyến khác hoặc chỗ ở đủ cho cả ba không ạ?",
+      "terms": [
+        "最低条件",
+        "宿泊先"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～を満たさないので別案を"
+    },
+    {
+      "id": "H-041-V13-020",
+      "group": "retry",
+      "role_vi": "Người đặt chuyến hỏi nhân viên công ty du lịch",
+      "gender": "male",
+      "ja": "バスを確定する前に、三席の仮押さえの期限と、遅い時間でもホテルにチェックインできるかを確認したいです。",
+      "vi": "Trước khi chốt xe buýt có đủ ba ghế, tôi muốn kiểm hạn giữ ghế và xem đến muộn vẫn nhận phòng khách sạn được không ạ.",
+      "terms": [
+        "仮押さえ"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～を決める前に～も確かめる"
+    },
+    {
+      "id": "H-041-V13-021",
+      "group": "after",
+      "role_vi": "Người đặt chuyến gọi hậu mãi sau chuyến đi",
+      "gender": "male",
+      "ja": "バス代は領収書どおり九千円を支払いましたが、ホテルの差額はまだ入金を確認できていません。",
+      "vi": "Tôi đã trả 9.000 yên tiền xe buýt đúng theo biên lai, còn khoản chênh lệch tiền phòng vẫn chưa thấy vào tài khoản ạ.",
+      "terms": [
+        "領収書",
+        "差額",
+        "入金"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "～は実際に払ったが～はまだ"
+    },
+    {
+      "id": "H-041-V13-022",
+      "group": "after",
+      "role_vi": "Người đặt chuyến gọi hậu mãi sau chuyến đi",
+      "gender": "male",
+      "ja": "ホテル代の払い戻し予定日と、運休した列車の料金について次に回答いただける日を、別々に教えていただけますか。",
+      "vi": "Chị cho tôi biết riêng ngày dự kiến hoàn tiền phòng và ngày có phản hồi tiếp theo về tiền vé của các chuyến tàu bị hủy được không ạ?",
+      "terms": [
+        "払い戻し",
+        "運休"
+      ],
+      "scenes": [
+        "S027",
+        "S029"
+      ],
+      "pattern": "～と～を教えていただけますか"
+    },
+    {
+      "id": "H-041-V13-023",
+      "group": "after",
+      "role_vi": "Người đặt chuyến gọi hậu mãi sau chuyến đi",
+      "gender": "male",
+      "ja": "今日送るバスの領収書と宿泊確認メールは、受領確認と判断結果をそれぞれいついただけますか。",
+      "vi": "Về biên lai xe buýt và email xác nhận phòng tôi gửi hôm nay, khi nào bên chị xác nhận đã nhận và khi nào cho biết kết quả xử lý ạ?",
+      "terms": [
+        "領収書",
+        "受領確認"
+      ],
+      "scenes": [
+        "S028"
+      ],
+      "pattern": "～はいつで～はいつか"
+    },
+    {
+      "id": "H-041-V13-024",
+      "group": "after",
+      "role_vi": "Người đặt chuyến nói với bạn đồng hành",
+      "gender": "male",
+      "ja": "ホテルの差額の返金手続きは進んだけど、まだ入金を確認できていないから、予定日に私が確認するね。",
+      "vi": "Khoản hoàn chênh lệch tiền phòng đã sang bước xử lý nhưng chưa thấy tiền vào, đến ngày dự kiến mình sẽ kiểm tra tiếp nhé.",
+      "terms": [
+        "入金"
+      ],
+      "scenes": [
+        "S029",
+        "S030"
+      ],
+      "pattern": "～は進んだが～はまだ"
+    }
+  ]
+}

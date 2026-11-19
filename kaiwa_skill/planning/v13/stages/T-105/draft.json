@@ -1,0 +1,370 @@
+{
+  "code": "T-105",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "074604817b46c38559b10b392d387183252142b50b6660a0e46be513df0697ee",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "start": "Xác định hai đầu mối và chỗ đến",
+    "schedule": "Xử lý hai lịch không khớp",
+    "scope": "Xác nhận việc được giao và cách làm tạm",
+    "transfer": "Bàn giao và bắt đầu ở nơi mới"
+  },
+  "items": [
+    {
+      "id": "T-105-V13-001",
+      "group": "start",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "勤務日については、派遣元の窓口に聞けばいいですか。",
+      "vi": "Về ngày đi làm, tôi hỏi đầu mối bên phái cử là được, đúng không ạ?",
+      "terms": [
+        "勤務日",
+        "派遣元",
+        "窓口"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "〜に聞けばいいですか"
+    },
+    {
+      "id": "T-105-V13-002",
+      "group": "start",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "今日の作業の指示は、どなたから受ければいいですか。",
+      "vi": "Hôm nay tôi nhận hướng dẫn công việc từ ai ạ?",
+      "terms": [
+        "指示"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "〜から受ければいいですか"
+    },
+    {
+      "id": "T-105-V13-003",
+      "group": "start",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "入館証がまだないのですが、正面の受付で待てばいいですか。",
+      "vi": "Tôi chưa có thẻ ra vào, tôi đợi ở quầy lễ tân cửa chính được chứ ạ?",
+      "terms": [
+        "入館証"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜で待てばいいですか"
+    },
+    {
+      "id": "T-105-V13-004",
+      "group": "start",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "派遣元からは月曜と聞いていますので、受け入れの日程を先方と確認していただけますか。",
+      "vi": "Bên phái cử báo tôi là thứ Hai, chị xác nhận giúp ngày tiếp nhận với bên đó được không ạ?",
+      "terms": [
+        "派遣元",
+        "受け入れ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜と確認していただけますか"
+    },
+    {
+      "id": "T-105-V13-005",
+      "group": "start",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "遅れそうなときは、派遣先にも到着の見込みをお伝えしたほうがいいでしょうか。",
+      "vi": "Nếu có thể đến muộn, tôi có nên báo cả nơi tiếp nhận biết khoảng mấy giờ tôi sẽ tới không ạ?",
+      "terms": [
+        "派遣先"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜したほうがいいでしょうか"
+    },
+    {
+      "id": "T-105-V13-006",
+      "group": "schedule",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "始業時刻を早める話は、派遣元にも確認済みでしょうか。",
+      "vi": "Việc bắt đầu ca sớm hơn đã được xác nhận với bên phái cử chưa ạ?",
+      "terms": [
+        "始業時刻",
+        "派遣元"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜にも確認済みでしょうか"
+    },
+    {
+      "id": "T-105-V13-007",
+      "group": "schedule",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "予定表は九時ですが、現場では八時半と言われたので、先方と確認していただけますか。",
+      "vi": "Lịch ghi 9 giờ, nhưng ở nơi làm tôi nghe nói 8 giờ rưỡi, anh xác nhận lại với bên đó giúp tôi được không ạ?",
+      "terms": [
+        "予定表"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜と確認していただけますか"
+    },
+    {
+      "id": "T-105-V13-008",
+      "group": "schedule",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "今日中に時刻が確定しない場合、月曜は暫定で何時に行けばいいですか。",
+      "vi": "Nếu hết hôm nay vẫn chưa chốt giờ, thứ Hai tôi tạm đến lúc mấy giờ ạ?",
+      "terms": [
+        "確定する",
+        "暫定"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜場合、何時に行けばいいですか"
+    },
+    {
+      "id": "T-105-V13-009",
+      "group": "schedule",
+      "role_vi": "Đầu mối công ty phái cử",
+      "gender": "male",
+      "ja": "派遣先から違う時刻を知らされたら、その連絡をこちらに転送してください。",
+      "vi": "Nếu nơi tiếp nhận báo giờ khác, chị chuyển tiếp thông báo đó cho tôi nhé.",
+      "terms": [
+        "派遣先",
+        "転送する"
+      ],
+      "scenes": [
+        "S008",
+        "S013"
+      ],
+      "pattern": "〜たら、〜してください"
+    },
+    {
+      "id": "T-105-V13-010",
+      "group": "schedule",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "九時出勤のままで、先に出荷する分から入力する形でどうでしょうか。",
+      "vi": "Tôi vẫn vào làm lúc 9 giờ và nhập trước phần hàng cần gửi sớm, chị thấy được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜する形でどうでしょうか"
+    },
+    {
+      "id": "T-105-V13-011",
+      "group": "schedule",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "前倒しになるのは、来週から火曜と木曜だけという理解で合っていますか。",
+      "vi": "Tôi hiểu là từ tuần sau chỉ thứ Ba và thứ Năm bắt đầu sớm hơn, đúng không ạ?",
+      "terms": [
+        "前倒し"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜という理解で合っていますか"
+    },
+    {
+      "id": "T-105-V13-012",
+      "group": "scope",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "変更後の納期をお客様に伝えるところまで、業務範囲に入っているのでしょうか。",
+      "vi": "Việc tự trả lời khách về ngày giao mới có nằm trong phạm vi công việc của tôi không ạ?",
+      "terms": [
+        "業務範囲"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜まで、〜に入っているのでしょうか"
+    },
+    {
+      "id": "T-105-V13-013",
+      "group": "scope",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "就業条件明示書と実際に頼まれた仕事に食い違いがあるようなので、照らし合わせていただけますか。",
+      "vi": "Giấy thông báo điều kiện làm việc và việc tôi được nhờ thực tế có vẻ chưa khớp, anh đối chiếu giúp tôi được không ạ?",
+      "terms": [
+        "就業条件明示書",
+        "食い違い"
+      ],
+      "scenes": [
+        "S005",
+        "S016"
+      ],
+      "pattern": "〜ので、〜ていただけますか"
+    },
+    {
+      "id": "T-105-V13-014",
+      "group": "scope",
+      "role_vi": "Mai trao đổi với người trực thay",
+      "gender": "female",
+      "ja": "担当表だけでは荷造りが業務範囲に入るか分からないので、派遣元にも聞いてみます。",
+      "vi": "Chỉ nhìn bảng phân công thì chưa biết việc đóng gói có thuộc phạm vi của tôi không, tôi sẽ hỏi thêm bên phái cử ạ.",
+      "terms": [
+        "担当表",
+        "業務範囲",
+        "派遣元"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "〜だけでは〜か分からないので"
+    },
+    {
+      "id": "T-105-V13-015",
+      "group": "scope",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "在庫一覧を開くと、閲覧権限がないと表示されます。",
+      "vi": "Khi mở bảng tồn kho, hệ thống báo tôi chưa có quyền xem ạ.",
+      "terms": [
+        "閲覧権限"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜と表示されます"
+    },
+    {
+      "id": "T-105-V13-016",
+      "group": "scope",
+      "role_vi": "Mai trao đổi với người trực thay",
+      "gender": "female",
+      "ja": "閲覧権限はまだ確認中とのことですが、練習用のデータで照合を続けてもいいでしょうか。",
+      "vi": "Tôi nghe vẫn đang kiểm tra quyền xem dữ liệu, trong lúc chờ tôi làm tiếp phần đối chiếu bằng dữ liệu luyện tập được không ạ?",
+      "terms": [
+        "閲覧権限",
+        "確認中",
+        "練習用",
+        "照合"
+      ],
+      "scenes": [
+        "S015",
+        "S018"
+      ],
+      "pattern": "〜でしたら、〜てもいいでしょうか"
+    },
+    {
+      "id": "T-105-V13-017",
+      "group": "transfer",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "最終日に残った注文は、未完了の理由を添えて引き継げばいいですか。",
+      "vi": "Với những đơn còn lại vào ngày cuối, tôi bàn giao kèm lý do chưa xong là được, đúng không ạ?",
+      "terms": [
+        "最終日",
+        "未完了",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜を添えて引き継ぐ"
+    },
+    {
+      "id": "T-105-V13-018",
+      "group": "transfer",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "この照合ソフトは初めてなので、練習用の画面で一件見せていただけますか。",
+      "vi": "Tôi chưa dùng phần mềm đối chiếu này bao giờ, chị thao tác mẫu một mục trên màn hình luyện tập giúp tôi được không ạ?",
+      "terms": [
+        "照合",
+        "練習用"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜ので、〜ていただけますか"
+    },
+    {
+      "id": "T-105-V13-019",
+      "group": "transfer",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "前の派遣先で引き継ぐ時間と、新しい派遣先の説明会が重なっています。",
+      "vi": "Giờ bàn giao ở nơi cũ trùng với buổi hướng dẫn của nơi tiếp nhận mới ạ.",
+      "terms": [
+        "派遣先",
+        "引き継ぐ",
+        "説明会"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜と〜が重なっています"
+    },
+    {
+      "id": "T-105-V13-020",
+      "group": "transfer",
+      "role_vi": "Mai trao đổi với đầu mối công ty phái cử",
+      "gender": "female",
+      "ja": "集合時刻と始業時刻が混ざらないように、三人で短く確認できませんか。",
+      "vi": "Để khỏi lẫn giờ có mặt với giờ bắt đầu ca, ba người mình trao đổi nhanh để xác nhận được không ạ?",
+      "terms": [
+        "集合時刻",
+        "始業時刻"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜ように、〜できませんか"
+    },
+    {
+      "id": "T-105-V13-021",
+      "group": "transfer",
+      "role_vi": "Mai trao đổi với người trực thay",
+      "gender": "female",
+      "ja": "前の現場では金曜に引き継いで、月曜からは新しい派遣先で在庫の照合を担当しています。",
+      "vi": "Tôi đã bàn giao ở nơi cũ vào thứ Sáu, từ thứ Hai tôi phụ trách đối chiếu tồn kho tại nơi tiếp nhận mới ạ.",
+      "terms": [
+        "引き継ぐ",
+        "派遣先",
+        "照合"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜て、〜からは"
+    },
+    {
+      "id": "T-105-V13-022",
+      "group": "transfer",
+      "role_vi": "Mai trao đổi với quản lý nơi tiếp nhận",
+      "gender": "female",
+      "ja": "在庫一覧が開けたら、最初の一件と今日の進み具合を森さんに報告するんですね。",
+      "vi": "Khi mở được bảng tồn kho, tôi báo chị Mori về mục đầu tiên và tiến độ hôm nay, đúng không ạ?",
+      "terms": [
+        "進み具合"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "Vたら、〜を報告するんですね"
+    }
+  ]
+}

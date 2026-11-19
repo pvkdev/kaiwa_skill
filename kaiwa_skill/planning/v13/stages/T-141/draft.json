@@ -1,0 +1,359 @@
+{
+  "code": "T-141",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "44fe8e29957899cbee43fbad58494288abf9d81071cdbe933c23a38bde434c8c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "urgent": "Xin giúp ngay và nói rõ đang ở đâu",
+    "private": "Xin nói riêng và chọn cách liên lạc",
+    "facts": "Kể điều thấy, nghe và điều đang lo",
+    "next": "Hỏi đầu mối và chọn bước tiếp theo",
+    "follow": "Giữ đúng cách liên hệ đã thống nhất"
+  },
+  "items": [
+    {
+      "id": "T-141-V13-001",
+      "group": "urgent",
+      "role_vi": "Người đang xin giúp ở quầy cửa hàng",
+      "gender": "female",
+      "ja": "すみません、助けてください。",
+      "vi": "Xin anh giúp tôi với.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "direct_urgent_request"
+    },
+    {
+      "id": "T-141-V13-002",
+      "group": "urgent",
+      "role_vi": "Người đang xin giúp ở quầy cửa hàng",
+      "gender": "female",
+      "ja": "人のいるレジのそばにいてもいいですか。",
+      "vi": "Tôi có thể ở lại gần quầy thu ngân, chỗ có người, được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ask_to_stay_near_people"
+    },
+    {
+      "id": "T-141-V13-003",
+      "group": "urgent",
+      "role_vi": "Người cần hỗ trợ nói với nhân viên tại tòa nhà",
+      "gender": "male",
+      "ja": "青葉ビルの東口に警察を呼んでください。",
+      "vi": "Xin gọi cảnh sát đến lối ra phía đông tòa Aoba giúp tôi.",
+      "terms": [
+        "東口"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "direct_urgent_request"
+    },
+    {
+      "id": "T-141-V13-004",
+      "group": "urgent",
+      "role_vi": "Người đang xin giúp ở quầy cửa hàng",
+      "gender": "female",
+      "ja": "入口の外に私を追ってきた人がいるので、警察に電話してください。",
+      "vi": "Người vừa đuổi theo tôi đang ở ngay ngoài cửa, chị gọi cảnh sát giúp tôi.",
+      "terms": [],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "report_threat_and_request"
+    },
+    {
+      "id": "T-141-V13-005",
+      "group": "urgent",
+      "role_vi": "Người đang xin giúp ở quầy cửa hàng",
+      "gender": "female",
+      "ja": "けがはありませんが、怖くて店の外に出られません。",
+      "vi": "Tôi không bị thương, nhưng tôi sợ nên không ra khỏi cửa hàng được.",
+      "terms": [
+        "けが",
+        "怖い"
+      ],
+      "scenes": [
+        "S001",
+        "S003",
+        "S004"
+      ],
+      "pattern": "state_condition_and_limit"
+    },
+    {
+      "id": "T-141-V13-006",
+      "group": "private",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "安全のことで相談したいので、個室で話せますか。",
+      "vi": "Tôi muốn hỏi về an toàn của mình, tôi có thể nói chuyện ở phòng riêng được không ạ?",
+      "terms": [
+        "個室"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "ask_to_speak_privately"
+    },
+    {
+      "id": "T-141-V13-007",
+      "group": "private",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "日本語でうまく言えないところは、ベトナム語の通訳をお願いできますか。",
+      "vi": "Phần tôi khó diễn đạt bằng tiếng Nhật, anh có thể nhờ phiên dịch tiếng Việt giúp tôi được không ạ?",
+      "terms": [
+        "通訳"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "ask_for_interpreter"
+    },
+    {
+      "id": "T-141-V13-008",
+      "group": "private",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "番地を伝える前に、住所を誰が見るのか教えてください。",
+      "vi": "Trước khi tôi cho địa chỉ cụ thể, xin anh cho biết ai sẽ xem được địa chỉ đó ạ.",
+      "terms": [
+        "番地"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "ask_before_sharing"
+    },
+    {
+      "id": "T-141-V13-009",
+      "group": "private",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "別の窓口を紹介してもらうと、今日の相談の内容も共有されますか。",
+      "vi": "Khi anh giới thiệu tôi tới chỗ khác, nội dung tôi kể hôm nay có được chuyển sang đó luôn không ạ?",
+      "terms": [
+        "共有"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "ask_before_sharing"
+    },
+    {
+      "id": "T-141-V13-010",
+      "group": "private",
+      "role_vi": "Người đang xin giúp ở quầy cửa hàng",
+      "gender": "female",
+      "ja": "家の電話はほかの人が出るので、その番号にはかけないでください。",
+      "vi": "Điện thoại nhà tôi có người khác nghe, xin anh đừng gọi vào số đó.",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "set_callback_boundary"
+    },
+    {
+      "id": "T-141-V13-011",
+      "group": "facts",
+      "role_vi": "Người đang xin giúp ở quầy cửa hàng",
+      "gender": "female",
+      "ja": "口論ではなく、駅を出てからずっと同じ人がついてきたんです。",
+      "vi": "Không phải cãi nhau ạ. Từ lúc tôi ra khỏi ga, vẫn một người đó cứ đi theo tôi.",
+      "terms": [
+        "口論"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "correct_misunderstanding_with_fact"
+    },
+    {
+      "id": "T-141-V13-012",
+      "group": "facts",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "火曜の18時ごろ、前に付き合っていた人が駅から交差点まで後ろを歩いてきました。",
+      "vi": "Khoảng 18 giờ thứ Ba, người tôi từng hẹn hò đi phía sau tôi từ ga tới ngã tư.",
+      "terms": [
+        "交差点"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "state_time_and_observed_event"
+    },
+    {
+      "id": "T-141-V13-013",
+      "group": "facts",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "木曜は家の前で、前に付き合っていた人のような声を聞きましたが、顔は見ていません。",
+      "vi": "Thứ Năm tôi nghe trước nhà có giọng giống người tôi từng hẹn hò, nhưng tôi không nhìn thấy mặt.",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "distinguish_heard_and_seen"
+    },
+    {
+      "id": "T-141-V13-014",
+      "group": "facts",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "付き合っていたときのことはまだ話せませんが、今夜どこなら安全に過ごせるか相談したいです。",
+      "vi": "Tôi chưa thể kể về mối quan hệ trước đây, nhưng tôi muốn hỏi tối nay có thể ở đâu cho an toàn ạ.",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "focus_on_present_safety"
+    },
+    {
+      "id": "T-141-V13-015",
+      "group": "next",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "退勤するときに職場の近くで同じ人を何度か見かけたんですが、安全のことはどの相談窓口に聞けばいいですか。",
+      "vi": "Mấy lần tan làm tôi thấy cùng một người gần chỗ làm. Tôi có thể hỏi đầu mối nào về an toàn của mình ạ?",
+      "terms": [
+        "退勤する",
+        "相談窓口"
+      ],
+      "scenes": [
+        "S011",
+        "S013"
+      ],
+      "pattern": "ask_correct_help_channel"
+    },
+    {
+      "id": "T-141-V13-016",
+      "group": "next",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "今すぐ警察署に連絡するかはまだ決められないので、最初に何を聞かれるか教えてもらえますか。",
+      "vi": "Tôi chưa quyết có liên hệ đồn cảnh sát ngay không, anh cho tôi biết trước họ sẽ hỏi những gì được không ạ?",
+      "terms": [
+        "警察署"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hold_decision_and_ask_next_step"
+    },
+    {
+      "id": "T-141-V13-017",
+      "group": "next",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "自分で警察署に電話するときは、何と伝えれば担当の方につながりますか。",
+      "vi": "Khi tự gọi đến đồn cảnh sát, tôi nên nói gì để gặp đúng người phụ trách ạ?",
+      "terms": [
+        "警察署"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "ask_how_to_reach_owner"
+    },
+    {
+      "id": "T-141-V13-018",
+      "group": "next",
+      "role_vi": "Người xin hỗ trợ nói với nhân viên tư vấn",
+      "gender": "female",
+      "ja": "警察署に一人で行くのが心配なので、市民センターの受付で合流して、一緒に行けますか。",
+      "vi": "Tôi lo đi đến đồn một mình, mình gặp nhau ở quầy trung tâm cộng đồng rồi cùng đi được không ạ?",
+      "terms": [
+        "警察署",
+        "合流する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "arrange_accompaniment"
+    },
+    {
+      "id": "T-141-V13-019",
+      "group": "follow",
+      "role_vi": "Người xin hỗ trợ nói với bạn thân",
+      "gender": "female",
+      "ja": "通知を見られるかもしれないから、私の携帯には電話もメッセージもしないでね。",
+      "vi": "Có thể người khác nhìn thấy thông báo, cậu đừng gọi hay nhắn vào điện thoại tớ nhé.",
+      "terms": [
+        "通知"
+      ],
+      "scenes": [
+        "S015",
+        "S016",
+        "S017"
+      ],
+      "pattern": "set_callback_boundary"
+    },
+    {
+      "id": "T-141-V13-020",
+      "group": "follow",
+      "role_vi": "Người xin hỗ trợ nói với bạn thân",
+      "gender": "female",
+      "ja": "明日の昼に私がかけ直すから、そのときに話そうね。",
+      "vi": "Trưa mai tớ sẽ gọi lại, lúc đó mình nói chuyện nhé.",
+      "terms": [
+        "かけ直す"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "set_next_caller_and_time"
+    },
+    {
+      "id": "T-141-V13-021",
+      "group": "follow",
+      "role_vi": "Người xin hỗ trợ nói với bạn thân",
+      "gender": "female",
+      "ja": "相手に会いに行かず、相談窓口の受付まで私と一緒に来てくれる？",
+      "vi": "Cậu đừng tới gặp người đó, cậu đi cùng tớ tới quầy tư vấn được không?",
+      "terms": [
+        "相談窓口"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "redirect_to_safe_help"
+    },
+    {
+      "id": "T-141-V13-022",
+      "group": "follow",
+      "role_vi": "Người xin hỗ trợ nói với bạn thân",
+      "gender": "female",
+      "ja": "今は安全に話せるから、昨日頼んだ相談先について、分かったところだけ聞かせてくれる？",
+      "vi": "Giờ tớ nói chuyện an toàn được, cậu kể tớ nghe phần đã biết về nơi tư vấn tớ nhờ cậu tìm hôm qua nhé?",
+      "terms": [
+        "相談先"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "ask_for_what_is_known"
+    },
+    {
+      "id": "T-141-V13-023",
+      "group": "follow",
+      "role_vi": "Người hỗ trợ nói với người xin tư vấn",
+      "gender": "male",
+      "ja": "前の番号にはこちらから連絡せず、明日13時半にそちらからのお電話を待ちますね。",
+      "vi": "Chúng tôi sẽ không liên hệ vào số cũ và sẽ đợi chị gọi lúc 13 giờ 30 ngày mai ạ.",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "set_next_caller_and_time"
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "code": "S-024",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "5ad823564005f52a8dbe6f02219c9a84f48460c12de5ef644568f96c491d6850",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ingredients": "Tìm nguyên liệu và mua vừa đủ",
+    "labels": "Đọc nhãn và hỏi cách bảo quản",
+    "packing": "Nhờ sơ chế và đóng túi",
+    "prices": "Kiểm giá và hỏi hàng có lại",
+    "followup": "Giải quyết vấn đề sau khi mua"
+  },
+  "items": [
+    {
+      "id": "S-024-V13-001",
+      "group": "ingredients",
+      "role_vi": "Khách hỏi nhân viên vị trí của rau trong siêu thị",
+      "gender": "male",
+      "ja": "ねぎはどこにありますか。",
+      "vi": "Hành lá ở đâu ạ?",
+      "terms": [
+        "ねぎ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "product_wa_place_ni_arimasu_ka"
+    },
+    {
+      "id": "S-024-V13-002",
+      "group": "ingredients",
+      "role_vi": "Khách hỏi nhân viên xem cá hồi ở kệ trống đã hết hàng chưa",
+      "gender": "male",
+      "ja": "鮭は売り切れですか。",
+      "vi": "Cá hồi bán hết rồi ạ?",
+      "terms": [
+        "鮭",
+        "売り切れ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "product_wa_urikire_desu_ka"
+    },
+    {
+      "id": "S-024-V13-003",
+      "group": "ingredients",
+      "role_vi": "Khách ở quầy thịt chọn loại và nói lượng mình muốn mua",
+      "gender": "male",
+      "ja": "豚肉を三百グラムください。",
+      "vi": "Cho tôi 300 gam thịt heo ạ.",
+      "terms": [
+        "豚肉",
+        "グラム"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "product_measure_kudasai"
+    },
+    {
+      "id": "S-024-V13-004",
+      "group": "ingredients",
+      "role_vi": "Khách hỏi nhân viên quầy thịt lượng cần mua cho hai người",
+      "gender": "male",
+      "ja": "二人分のカレーに肉は何グラム必要ですか。",
+      "vi": "Nấu cà ri cho hai người thì cần bao nhiêu gam thịt ạ?",
+      "terms": [
+        "人分",
+        "カレー",
+        "肉",
+        "グラム"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "dish_ni_nan_gram_hitsuyo_desu_ka"
+    },
+    {
+      "id": "S-024-V13-005",
+      "group": "ingredients",
+      "role_vi": "Khách chỉ loại rau chưa biết tên để hỏi nhân viên",
+      "gender": "male",
+      "ja": "この白くて長い野菜は何ですか。",
+      "vi": "Loại rau dài màu trắng này là rau gì ạ?",
+      "terms": [
+        "野菜"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "description_product_wa_nan_desu_ka"
+    },
+    {
+      "id": "S-024-V13-006",
+      "group": "ingredients",
+      "role_vi": "Khách hỏi nhân viên quầy cá có thể dùng cá thu thay cá hồi cho món định nấu không",
+      "gender": "male",
+      "ja": "鮭の代わりにさばを使ってもいいですか。",
+      "vi": "Tôi dùng cá thu thay cá hồi được không ạ?",
+      "terms": [
+        "鮭",
+        "代わり",
+        "さば"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "substitute_ni_tsukatte_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-024-V13-007",
+      "group": "labels",
+      "role_vi": "Khách cầm một hộp salad và hỏi chỗ tự kiểm thông tin về trứng",
+      "gender": "male",
+      "ja": "このサラダのアレルギー表示はどこですか。",
+      "vi": "Mục ghi thành phần gây dị ứng của hộp salad này ở đâu ạ?",
+      "terms": [
+        "サラダ",
+        "アレルギー",
+        "表示"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "label_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-024-V13-008",
+      "group": "labels",
+      "role_vi": "Khách chỉ hai chai nước tương và hỏi nhân viên về loại ghi trên nhãn",
+      "gender": "male",
+      "ja": "この二本のしょうゆはどちらも減塩ですか。",
+      "vi": "Cả hai chai nước tương này đều là loại giảm muối phải không ạ?",
+      "terms": [
+        "本",
+        "しょうゆ",
+        "減塩"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "two_products_wa_dochira_mo_attribute_desu_ka"
+    },
+    {
+      "id": "S-024-V13-009",
+      "group": "labels",
+      "role_vi": "Khách cầm chai sốt hỏi ngày dùng tốt nhất có ghi trên nắp không",
+      "gender": "male",
+      "ja": "賞味期限はふたの上ですか。",
+      "vi": "Hạn dùng tốt nhất của chai này ghi trên nắp phải không ạ?",
+      "terms": [
+        "賞味期限",
+        "ふた"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "label_wa_location_desu_ka"
+    },
+    {
+      "id": "S-024-V13-010",
+      "group": "labels",
+      "role_vi": "Khách hỏi nhân viên cách giữ chai sốt sau khi mở",
+      "gender": "male",
+      "ja": "ソースを開けた後はどう保存しますか。",
+      "vi": "Chai sốt này mở ra rồi thì bảo quản thế nào ạ?",
+      "terms": [
+        "ソース",
+        "開ける"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "aketa_ato_wa_dou_hozonshimasu_ka"
+    },
+    {
+      "id": "S-024-V13-011",
+      "group": "packing",
+      "role_vi": "Khách nhờ nhân viên quầy thịt chia phần thịt vào hai túi",
+      "gender": "male",
+      "ja": "お肉を二つの袋に分けてもらえますか。",
+      "vi": "Chia thịt vào hai túi giúp tôi được không ạ?",
+      "terms": [
+        "肉",
+        "袋",
+        "分ける"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-024-V13-012",
+      "group": "packing",
+      "role_vi": "Khách hỏi nhân viên vị trí cá đã cắt sẵn để mua",
+      "gender": "male",
+      "ja": "切った魚はどの棚にありますか。",
+      "vi": "Cá cắt sẵn ở kệ nào ạ?",
+      "terms": [
+        "切る",
+        "魚",
+        "棚"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "product_wa_place_ni_arimasu_ka"
+    },
+    {
+      "id": "S-024-V13-013",
+      "group": "packing",
+      "role_vi": "Khách nhờ thu ngân đóng túi bánh mì riêng với thịt sống",
+      "gender": "male",
+      "ja": "パンは生の肉とは別の袋でお願いします。",
+      "vi": "Cho bánh mì vào túi riêng, tách với thịt sống giúp tôi ạ.",
+      "terms": [
+        "パン",
+        "生",
+        "肉",
+        "別",
+        "袋"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "product_to_wa_betsu_no_fukuro_de_onegaishimasu"
+    },
+    {
+      "id": "S-024-V13-014",
+      "group": "prices",
+      "role_vi": "Khách hỏi nhân viên giá bốn trăm yên trên nhãn khuyến mãi có áp dụng cho hai gói không",
+      "gender": "male",
+      "ja": "四百円は二袋分ですか。",
+      "vi": "400 yên là giá cho hai gói phải không ạ?",
+      "terms": [
+        "袋"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "price_wa_quantity_bun_desu_ka"
+    },
+    {
+      "id": "S-024-V13-015",
+      "group": "prices",
+      "role_vi": "Khách muốn mua một gói và hỏi nhân viên giá riêng một gói",
+      "gender": "male",
+      "ja": "一袋だけならいくらですか。",
+      "vi": "Nếu chỉ mua một gói thì bao nhiêu tiền ạ?",
+      "terms": [
+        "袋"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "quantity_dake_nara_ikura_desu_ka"
+    },
+    {
+      "id": "S-024-V13-016",
+      "group": "prices",
+      "role_vi": "Nhân viên trả lời khách rằng chưa biết khi nào đậu phụ có hàng lại",
+      "gender": "female",
+      "ja": "豆腐の入荷日はまだ分かりません。",
+      "vi": "Chúng tôi chưa biết ngày nào có lại đậu phụ ạ.",
+      "terms": [
+        "豆腐",
+        "入荷"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "nyukabi_wa_mada_wakarimasen"
+    },
+    {
+      "id": "S-024-V13-017",
+      "group": "prices",
+      "role_vi": "Khách đưa thông tin nhãn trên kệ cho thu ngân để kiểm lại giá hộp sữa",
+      "gender": "male",
+      "ja": "この牛乳の値札には百五十円と書いてありました。",
+      "vi": "Tôi thấy nhãn giá của hộp sữa này ghi 150 yên ạ.",
+      "terms": [
+        "牛乳",
+        "値札"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "place_ni_kaitearu"
+    },
+    {
+      "id": "S-024-V13-018",
+      "group": "prices",
+      "role_vi": "Khách hỏi thu ngân có thể kiểm tra lại giá hộp sữa vừa quét không",
+      "gender": "male",
+      "ja": "牛乳の値段をもう一度確認してもらえますか。",
+      "vi": "Kiểm tra lại giá hộp sữa giúp tôi được không ạ?",
+      "terms": [
+        "牛乳",
+        "値段",
+        "確認する"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-024-V13-019",
+      "group": "followup",
+      "role_vi": "Khách gọi từ nhà báo túi đồ thiếu một quả táo đã mua",
+      "gender": "male",
+      "ja": "買ったりんごが一つ足りません。",
+      "vi": "Tôi mua táo mà thiếu mất một quả ạ.",
+      "terms": [
+        "買う",
+        "りんご",
+        "足りる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "product_ga_quantity_tarimasen"
+    },
+    {
+      "id": "S-024-V13-020",
+      "group": "followup",
+      "role_vi": "Khách gọi siêu thị đọc thông tin trên hóa đơn để đối chiếu món bị thiếu",
+      "gender": "male",
+      "ja": "レシートにりんごの値段が書いてあります。",
+      "vi": "Trên hóa đơn có ghi tiền táo ạ.",
+      "terms": [
+        "レシート",
+        "りんご",
+        "値段"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "place_ni_kaitearu"
+    },
+    {
+      "id": "S-024-V13-021",
+      "group": "followup",
+      "role_vi": "Khách gọi siêu thị báo về mùi của đậu phụ mình vừa mua",
+      "gender": "male",
+      "ja": "さっき買った豆腐のにおいが変です。",
+      "vi": "Hộp đậu phụ tôi vừa mua có mùi lạ ạ.",
+      "terms": [
+        "買う",
+        "豆腐"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "product_no_nioi_ga_hen_desu"
+    },
+    {
+      "id": "S-024-V13-022",
+      "group": "followup",
+      "role_vi": "Khách hỏi nhân viên qua điện thoại cần mang theo gì khi quay lại",
+      "gender": "male",
+      "ja": "豆腐とレシートを持って行けばいいですか。",
+      "vi": "Tôi mang theo hộp đậu phụ và hóa đơn là được, phải không ạ?",
+      "terms": [
+        "豆腐",
+        "レシート"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "items_wo_motte_ikeba_ii_desu_ka"
+    },
+    {
+      "id": "S-024-V13-023",
+      "group": "followup",
+      "role_vi": "Khách trở lại quầy hỗ trợ và nhắc mình là người đã gọi trước về hộp đậu phụ",
+      "gender": "male",
+      "ja": "豆腐のことで電話した者です。",
+      "vi": "Tôi là người vừa gọi cho cửa hàng về hộp đậu phụ ạ.",
+      "terms": [
+        "豆腐"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "issue_no_koto_de_denwa_shita_mono_desu"
+    },
+    {
+      "id": "S-024-V13-024",
+      "group": "followup",
+      "role_vi": "Khách hỏi nhân viên quầy hỗ trợ có thể hoàn lại tiền khi đã hết đậu phụ cùng loại không",
+      "gender": "male",
+      "ja": "この豆腐の代金は返金してもらえますか。",
+      "vi": "Cửa hàng có thể hoàn lại tiền hộp đậu phụ này cho tôi không ạ?",
+      "terms": [
+        "豆腐",
+        "返金する"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "te_moraemasu_ka"
+    }
+  ]
+}

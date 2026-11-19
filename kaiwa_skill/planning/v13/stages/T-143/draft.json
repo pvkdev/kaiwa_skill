@@ -1,0 +1,358 @@
+{
+  "code": "T-143",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "02b813d885bbf4aebe3c6a9e2eeec9ee3070c8ec984878bbd3b364a348a466ed",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "goals": "Nói mục tiêu và giờ có thể học",
+    "compare": "So cách học và hỏi rõ điều kiện",
+    "teacher": "Hỏi giáo viên về môn học và cách theo kịp",
+    "change": "Báo lịch thay đổi và tìm phương án khác",
+    "apply": "Chốt điều cần kiểm trước khi đăng ký"
+  },
+  "items": [
+    {
+      "id": "T-143-V13-001",
+      "group": "goals",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "日本語の聴解を先に伸ばしたいです。",
+      "vi": "Trước mắt em muốn cải thiện kỹ năng nghe hiểu tiếng Nhật ạ.",
+      "terms": [
+        "聴解",
+        "伸ばす"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "state_learning_goal"
+    },
+    {
+      "id": "T-143-V13-002",
+      "group": "goals",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "土曜の午前なら授業に出られます。",
+      "vi": "Sáng thứ Bảy thì em có thể đi học ạ.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S011"
+      ],
+      "pattern": "state_available_time"
+    },
+    {
+      "id": "T-143-V13-003",
+      "group": "goals",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "male",
+      "ja": "平日は毎日30分、復習できます。",
+      "vi": "Các ngày trong tuần, mỗi ngày em có thể ôn bài 30 phút.",
+      "terms": [
+        "平日",
+        "復習する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "state_self_study_capacity"
+    },
+    {
+      "id": "T-143-V13-004",
+      "group": "goals",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "短い講義を聞いて、要点を日本語でまとめられるようになりたいです。",
+      "vi": "Em muốn nghe được bài giảng ngắn rồi tóm tắt ý chính bằng tiếng Nhật ạ.",
+      "terms": [
+        "講義",
+        "要点",
+        "まとめる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "state_learning_goal"
+    },
+    {
+      "id": "T-143-V13-005",
+      "group": "compare",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "時間帯のほかに、AとBでは練習の内容がどう違いますか。",
+      "vi": "Ngoài khung giờ, khóa A và khóa B khác nhau thế nào về nội dung luyện tập ạ?",
+      "terms": [
+        "時間帯"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "ask_difference_beyond_schedule"
+    },
+    {
+      "id": "T-143-V13-006",
+      "group": "compare",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "水曜だけ教室に行けない場合、録画を見れば出席扱いになりますか。",
+      "vi": "Nếu riêng thứ Tư em không đến lớp được, xem bản ghi hình có được tính là có mặt không ạ?",
+      "terms": [
+        "録画",
+        "出席扱い"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "ask_rule_with_example"
+    },
+    {
+      "id": "T-143-V13-007",
+      "group": "compare",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "平日の午前は空けられないので、土曜に人前で発表する練習ができる講座はありますか。",
+      "vi": "Em không thu xếp được các buổi sáng ngày thường, thứ Bảy có khóa nào luyện thuyết trình trước mọi người không ạ?",
+      "terms": [
+        "平日",
+        "空ける",
+        "発表する",
+        "講座"
+      ],
+      "scenes": [
+        "S004",
+        "S012"
+      ],
+      "pattern": "request_alternative_by_goal"
+    },
+    {
+      "id": "T-143-V13-008",
+      "group": "compare",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "仕事は17時半までなので、土曜クラスの担当の方との面談は、18時にお願いできますか。",
+      "vi": "Em làm đến 17 giờ 30, em có thể hẹn trao đổi với người phụ trách lớp thứ Bảy lúc 18 giờ được không ạ?",
+      "terms": [
+        "面談"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "propose_available_time"
+    },
+    {
+      "id": "T-143-V13-009",
+      "group": "teacher",
+      "role_vi": "Học viên nói với giáo viên",
+      "gender": "female",
+      "ja": "国語の読解は得意ですが、数学の文章題は問題文を読むところで止まってしまいます。",
+      "vi": "Em đọc hiểu tốt trong môn Ngữ văn, nhưng ở toán có lời văn thì em hay vướng ngay lúc đọc đề.",
+      "terms": [
+        "国語",
+        "読解",
+        "得意",
+        "数学",
+        "文章題"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "state_strength_and_difficulty"
+    },
+    {
+      "id": "T-143-V13-010",
+      "group": "teacher",
+      "role_vi": "Học viên nói với giáo viên",
+      "gender": "female",
+      "ja": "実習のあるコースは、どんな点が私に合いそうですか。",
+      "vi": "Theo thầy, khóa có thực hành phù hợp với em ở điểm nào ạ?",
+      "terms": [
+        "実習"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "ask_reason_for_recommendation"
+    },
+    {
+      "id": "T-143-V13-011",
+      "group": "teacher",
+      "role_vi": "Học viên nói với giáo viên",
+      "gender": "male",
+      "ja": "進学はしたいんですが、専攻がまだ決まっていないので、まず何を比べればいいですか。",
+      "vi": "Em muốn học tiếp nhưng chưa chọn ngành, trước tiên em nên so sánh những gì ạ?",
+      "terms": [
+        "専攻"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "ask_first_step_before_choosing"
+    },
+    {
+      "id": "T-143-V13-012",
+      "group": "teacher",
+      "role_vi": "Học viên nói với giáo viên",
+      "gender": "female",
+      "ja": "単語を調べている間に授業が次の段落に進むので、前の日に何を予習すればいいですか。",
+      "vi": "Trong lúc em tra từ thì lớp đã sang đoạn tiếp theo. Hôm trước buổi học em nên chuẩn bị phần nào ạ?",
+      "terms": [
+        "段落",
+        "予習する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "ask_preparation_for_identified_problem"
+    },
+    {
+      "id": "T-143-V13-013",
+      "group": "teacher",
+      "role_vi": "Học viên nói với giáo viên",
+      "gender": "female",
+      "ja": "最初の二つの段落は読めるようになりましたが、接続詞のところでまだ止まります。",
+      "vi": "Giờ em đã đọc được hai đoạn đầu, nhưng đến chỗ từ nối thì vẫn hay bị khựng.",
+      "terms": [
+        "段落",
+        "接続詞"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "report_improvement_and_remaining_issue"
+    },
+    {
+      "id": "T-143-V13-014",
+      "group": "change",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "家族の予定が変わって、６月から三週間は平日の午後に授業に出られなくなりました。",
+      "vi": "Lịch gia đình em thay đổi nên từ tháng Sáu, em sẽ có ba tuần không thể lên lớp vào các chiều ngày thường nữa ạ.",
+      "terms": [
+        "平日"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "report_schedule_impact"
+    },
+    {
+      "id": "T-143-V13-015",
+      "group": "change",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "土曜の午前なら空いているので、先生とオンラインで話す練習ができるクラスはありますか。",
+      "vi": "Em rảnh sáng thứ Bảy, có lớp nào luyện nói trực tuyến với thầy cô không ạ?",
+      "terms": [
+        "オンライン"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "request_alternative_by_goal"
+    },
+    {
+      "id": "T-143-V13-016",
+      "group": "change",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "今は学位を取るコースではなく、短期留学で日本語を学べるか相談したいです。",
+      "vi": "Trước mắt em muốn hỏi có thể du học ngắn hạn để học tiếng Nhật không. Em chưa tính đến chương trình lấy bằng ạ.",
+      "terms": [
+        "学位",
+        "短期留学"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "clarify_current_learning_scope"
+    },
+    {
+      "id": "T-143-V13-017",
+      "group": "change",
+      "role_vi": "Tư vấn viên nói với người học",
+      "gender": "male",
+      "ja": "土曜に授業を受けて平日の夜に自習する形なら、無理なく続けられそうですか。",
+      "vi": "Nếu thứ Bảy lên lớp và tối ngày thường tự học, em thấy mình có thể theo đều được không?",
+      "terms": [
+        "平日",
+        "自習する",
+        "無理なく"
+      ],
+      "scenes": [
+        "S011",
+        "S013"
+      ],
+      "pattern": "test_if_schedule_is_sustainable"
+    },
+    {
+      "id": "T-143-V13-018",
+      "group": "apply",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "申し込む前に、六週間ともオンラインで受講できるか確認したいです。",
+      "vi": "Trước khi đăng ký, em muốn kiểm xem cả sáu tuần đều học trực tuyến được không ạ.",
+      "terms": [
+        "申し込む",
+        "オンライン",
+        "受講する"
+      ],
+      "scenes": [
+        "S012",
+        "S014"
+      ],
+      "pattern": "confirm_condition_before_applying"
+    },
+    {
+      "id": "T-143-V13-019",
+      "group": "apply",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "female",
+      "ja": "受講料と教材費を合わせると、いくらになりますか。",
+      "vi": "Phí học và tiền tài liệu cộng lại là bao nhiêu ạ?",
+      "terms": [
+        "受講料",
+        "教材費"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "ask_full_fee"
+    },
+    {
+      "id": "T-143-V13-020",
+      "group": "apply",
+      "role_vi": "Người học nói với tư vấn viên",
+      "gender": "male",
+      "ja": "木曜に土曜クラスの条件を確認して、金曜までに参加するかどうかをお伝えします。",
+      "vi": "Thứ Năm em sẽ kiểm lại điều kiện của lớp thứ Bảy, rồi chậm nhất thứ Sáu em báo có tham gia hay không ạ.",
+      "terms": [
+        "条件"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "set_reply_after_checking"
+    },
+    {
+      "id": "T-143-V13-021",
+      "group": "apply",
+      "role_vi": "Người học hỏi người phụ trách đăng ký",
+      "gender": "female",
+      "ja": "土曜の講座に決めましたが、申し込み期限と支払いの順番は、田中さんに聞けばいいですか。",
+      "vi": "Em đã chọn khóa thứ Bảy. Hạn đăng ký và thứ tự các bước thanh toán thì em hỏi anh Tanaka, đúng không ạ?",
+      "terms": [
+        "講座",
+        "申し込み期限"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "confirm_owner_and_next_step"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "code": "H-033",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "23249242ed8fb70c2e6904e0347c8164bb902c471fc59ce979e1fdbfe63bab0a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "progress": "Tóm tắt tiến độ và mốc có nguy cơ",
+    "alert": "Báo tin xấu với phạm vi đã xác nhận",
+    "decision": "Trình lựa chọn và xin quyết định",
+    "feedback": "Nhận phản hồi và thống nhất kỳ vọng",
+    "follow": "Báo phần đã xử lý và việc còn mở"
+  },
+  "items": [
+    {
+      "id": "H-033-V13-001",
+      "group": "progress",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "結論から申し上げると、試験の予定に遅れが出るおそれがあります。",
+      "vi": "Tôi xin báo ngay điểm chính là đợt thử có nguy cơ chậm so với kế hoạch ạ.",
+      "terms": [
+        "結論から申し上げる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "結論から申し上げると～"
+    },
+    {
+      "id": "H-033-V13-002",
+      "group": "progress",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "現時点では、金曜の完了に間に合わないと決まったわけではありません。",
+      "vi": "Hiện vẫn chưa thể kết luận đợt thử sẽ kết thúc muộn hơn thứ Sáu ạ.",
+      "terms": [
+        "現時点"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～時点ではまだ～していない"
+    },
+    {
+      "id": "H-033-V13-003",
+      "group": "progress",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "木曜の正午までに技術の確認が終われば、金曜の予定は守れる見通しです。",
+      "vi": "Nếu phía kỹ thuật kiểm xong trước trưa thứ Năm, dự kiến vẫn giữ được lịch thứ Sáu ạ.",
+      "terms": [
+        "見通し"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～までに～すれば予定を守れる"
+    },
+    {
+      "id": "H-033-V13-004",
+      "group": "progress",
+      "role_vi": "Giám đốc nghe báo cáo dự án",
+      "gender": "female",
+      "ja": "次の定例報告では、完了件数の分母と、お客様に影響する未解決の件数も見せてください。",
+      "vi": "Trong báo cáo định kỳ tới, anh ghi rõ đã xong bao nhiêu mục trên tổng số bao nhiêu, và còn bao nhiêu mục có ảnh hưởng đến khách nhé.",
+      "terms": [
+        "定例報告",
+        "未解決",
+        "分母"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～と～の両方を見る"
+    },
+    {
+      "id": "H-033-V13-005",
+      "group": "progress",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "試験五十項目のうち四十七項目が完了し、顧客に影響する残件は三項目です。",
+      "vi": "Trong 50 hạng mục thử, đã xong 47 mục và còn ba mục có ảnh hưởng đến khách ạ.",
+      "terms": [
+        "残件"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "全体～のうち～"
+    },
+    {
+      "id": "H-033-V13-006",
+      "group": "alert",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "今朝の試験では少なくとも三通の通知に遅延があり、すでにお客様から二件問い合わせが入っています。",
+      "vi": "Trong đợt thử sáng nay, ít nhất ba thông báo đến chậm và đã có hai lượt khách liên hệ hỏi ạ.",
+      "terms": [
+        "少なくとも",
+        "遅延"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "少なくとも～"
+    },
+    {
+      "id": "H-033-V13-007",
+      "group": "alert",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "原因を調べている間に、経営判断のために先にお出ししたほうがよい情報はありますか。",
+      "vi": "Trong lúc đang điều tra nguyên nhân, có thông tin nào chị cần tôi báo trước để quyết định cách xử lý dự án không ạ?",
+      "terms": [
+        "経営判断"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～に先に必要な情報は"
+    },
+    {
+      "id": "H-033-V13-008",
+      "group": "alert",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "正午に暫定対応をご報告し、原因がまだ分からなければ、その時点の調査状況もお伝えします。",
+      "vi": "Trưa nay tôi sẽ báo cách xử lý tạm, nếu vẫn chưa rõ nguyên nhân tôi cũng sẽ báo điều tra đã đến đâu ạ.",
+      "terms": [
+        "暫定対応"
+      ],
+      "scenes": [
+        "S007",
+        "S015"
+      ],
+      "pattern": "～に報告し、まだ～なら"
+    },
+    {
+      "id": "H-033-V13-009",
+      "group": "alert",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "二十件の予約データはすべて照合しましたが、設定を修正してからの長時間の監視はこれからです。",
+      "vi": "Tôi đã đối chiếu dữ liệu của cả 20 lượt đặt lịch, còn theo dõi sau khi sửa cấu hình trong thời gian dài thì vẫn chưa thực hiện ạ.",
+      "terms": [
+        "照合する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～は確認済みですが～はこれから"
+    },
+    {
+      "id": "H-033-V13-010",
+      "group": "decision",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "試験を続けるなら追加の人員が必要で、一日止めるなら費用は抑えられますが試験終了が一日延びます。",
+      "vi": "Nếu tiếp tục thử sẽ cần thêm người, còn dừng một ngày thì giảm được chi phí nhưng đợt thử sẽ kết thúc muộn thêm một ngày ạ.",
+      "terms": [
+        "人員"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～なら～が～だと～"
+    },
+    {
+      "id": "H-033-V13-011",
+      "group": "decision",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "正式な開始日は未確定ですので、試験を一日止めて設定を点検する案を推奨します。",
+      "vi": "Ngày bắt đầu chính thức vẫn chưa chốt nên tôi đề xuất dừng thử một ngày để kiểm tra lại cấu hình ạ.",
+      "terms": [
+        "未確定",
+        "推奨する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～ので～を推奨する"
+    },
+    {
+      "id": "H-033-V13-012",
+      "group": "decision",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "追加費用の承認を条件とする方針で、実施の可否は財務から返事が来てから決めるという理解でよろしいでしょうか。",
+      "vi": "Tôi hiểu đây là hướng cần được duyệt khoản chi thêm, còn có thực hiện hay không sẽ quyết sau khi phòng tài chính trả lời, đúng không ạ?",
+      "terms": [
+        "可否"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～という理解でよろしいでしょうか"
+    },
+    {
+      "id": "H-033-V13-013",
+      "group": "decision",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "費用の上限と、試験を一日止めることをお客様に受け入れていただけるかのほかに、決める前に確認すべき点はありますか。",
+      "vi": "Ngoài trần chi phí và việc khách có chấp nhận dừng thử một ngày không, còn điều nào cần kiểm tra trước khi quyết ạ?",
+      "terms": [
+        "上限"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～のほかに～はありますか"
+    },
+    {
+      "id": "H-033-V13-014",
+      "group": "decision",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "実施が決まった後は、開始時刻と決定内容をどの責任者にお伝えすべきでしょうか。",
+      "vi": "Sau khi chốt thực hiện, tôi nên báo giờ bắt đầu và nội dung đã quyết cho những người phụ trách nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～後は誰に～すべきでしょうか"
+    },
+    {
+      "id": "H-033-V13-015",
+      "group": "feedback",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "影響件数がそろうのを待って初報が遅れたのは、私の判断の誤りでした。",
+      "vi": "Tôi đã quyết sai khi chờ đủ số trường hợp bị ảnh hưởng, khiến báo cáo đầu tiên đến muộn ạ.",
+      "terms": [
+        "初報"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～を待って～が遅れた"
+    },
+    {
+      "id": "H-033-V13-016",
+      "group": "feedback",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "事実を一つ補足しますと、顧客窓口には十時二十分に、通知遅延の可能性と確認中であることを伝えました。",
+      "vi": "Tôi xin bổ sung một điểm là lúc mười giờ hai mươi, tôi đã báo đầu mối phụ trách khách rằng thông báo có thể đến chậm và chúng tôi đang kiểm tra ạ.",
+      "terms": [
+        "補足する",
+        "遅延"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "事実を一つ補足すると～"
+    },
+    {
+      "id": "H-033-V13-017",
+      "group": "feedback",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "次は影響の範囲が未確定でも、分かったことと次の確認時刻だけは初報で先にお知らせします。",
+      "vi": "Lần sau dù chưa chốt được phạm vi ảnh hưởng, tôi sẽ báo ngay những điều đã biết và mốc kiểm tra tiếp theo trong báo cáo đầu tiên ạ.",
+      "terms": [
+        "初報",
+        "未確定"
+      ],
+      "scenes": [
+        "S013",
+        "S015"
+      ],
+      "pattern": "～だけでも先に～する"
+    },
+    {
+      "id": "H-033-V13-018",
+      "group": "feedback",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "続報は何時までに、どの情報をそろえてお持ちすればよろしいでしょうか。",
+      "vi": "Chị cần tôi cập nhật lại trước mấy giờ và báo đủ những mục nào ạ?",
+      "terms": [
+        "続報"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～は何時までに～必要でしょうか"
+    },
+    {
+      "id": "H-033-V13-019",
+      "group": "follow",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "修正後の試験では通知が予定どおり届きましたが、長時間の経過観察とお客様の確認が残っています。",
+      "vi": "Khi thử lại sau khi sửa, thông báo đã đến đúng giờ, còn theo dõi lâu hơn và xác nhận của khách thì vẫn đang chờ ạ.",
+      "terms": [
+        "経過観察"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "～は確認できたが～は残っている"
+    },
+    {
+      "id": "H-033-V13-020",
+      "group": "follow",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "先方は修正内容を受け取っていますが、正式な受け入れは監視の結果を確認してからとのことです。",
+      "vi": "Khách đã nhận thông tin về phần sửa, nhưng cho biết sẽ chờ xem kết quả theo dõi rồi mới chấp nhận chính thức ạ.",
+      "terms": [
+        "受け入れ"
+      ],
+      "scenes": [
+        "S018",
+        "S020"
+      ],
+      "pattern": "～を受け取ったが～は保留"
+    },
+    {
+      "id": "H-033-V13-021",
+      "group": "follow",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "先方が決裁者からの説明を希望している場合は、次の打ち合わせにご同席いただけますか。",
+      "vi": "Nếu khách muốn nghe người có thẩm quyền phê duyệt giải thích, chị có thể cùng tham gia cuộc trao đổi tới không ạ?",
+      "terms": [
+        "決裁者",
+        "同席する"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～でしたら～同席いただけますか"
+    },
+    {
+      "id": "H-033-V13-022",
+      "group": "follow",
+      "role_vi": "Người phụ trách dự án báo cáo giám đốc",
+      "gender": "male",
+      "ja": "監視記録を金曜の正午に出せるか技術に確認し、明日十時に可否を報告するという理解でよろしいでしょうか。",
+      "vi": "Tôi hiểu là sẽ hỏi bên kỹ thuật xem có thể gửi số liệu theo dõi vào trưa thứ Sáu không rồi báo lại cho chị lúc mười giờ sáng mai, đúng không ạ?",
+      "terms": [
+        "監視記録",
+        "可否"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～という理解でよろしいでしょうか"
+    }
+  ]
+}

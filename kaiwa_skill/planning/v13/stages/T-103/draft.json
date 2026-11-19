@@ -1,0 +1,383 @@
+{
+  "code": "T-103",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "ff1b8a604917f0d35b4f38e766dc274906933f3759d6fb3d6317d06b6334911c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "greet": "Mở lời và xác định mục đích khách ghé",
+    "demo": "Giới thiệu nhanh theo nhu cầu",
+    "technical": "Nói giới hạn và chuyển câu hỏi kỹ thuật",
+    "partner": "Tìm hiểu khả năng hợp tác",
+    "follow": "Xin phép liên hệ và chốt việc sau sự kiện"
+  },
+  "items": [
+    {
+      "id": "T-103-V13-001",
+      "group": "greet",
+      "role_vi": "Đại diện công ty đón khách đang dừng trước gian",
+      "gender": "female",
+      "ja": "何かお探しですか。",
+      "vi": "Anh đang tìm gì ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "nanika_osagashi"
+    },
+    {
+      "id": "T-103-V13-002",
+      "group": "greet",
+      "role_vi": "Đại diện mở lời để biết khách muốn xem hàng hay tìm đối tác",
+      "gender": "female",
+      "ja": "展示をご覧になりますか、それとも協力先をお探しですか。",
+      "vi": "Anh muốn xem sản phẩm trưng bày hay đang tìm đối tác ạ?",
+      "terms": [
+        "協力先"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "a_ka_soretomo_b_ka"
+    },
+    {
+      "id": "T-103-V13-003",
+      "group": "greet",
+      "role_vi": "Khách cho biết mình tới để thu thập thông tin viết bài",
+      "gender": "male",
+      "ja": "今日は記事の取材で来ています。",
+      "vi": "Hôm nay tôi đến thu thập thông tin để viết bài ạ.",
+      "terms": [
+        "取材"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "purpose_de_kiteimasu"
+    },
+    {
+      "id": "T-103-V13-004",
+      "group": "greet",
+      "role_vi": "Đại diện xác định chủ đề để tiếp nối sau buổi nói chuyện chuyên đề",
+      "gender": "female",
+      "ja": "先ほどはどの講演をお聞きになったんですか。",
+      "vi": "Vừa rồi anh nghe bài nói chuyên đề nào ạ?",
+      "terms": [
+        "講演"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "dono_noun_verb_ka"
+    },
+    {
+      "id": "T-103-V13-005",
+      "group": "demo",
+      "role_vi": "Đại diện đề nghị giới thiệu nhanh cho khách mới ghé gian",
+      "gender": "female",
+      "ja": "装置の使い方を短くご説明してもよろしいですか。",
+      "vi": "Tôi giới thiệu nhanh cách dùng thiết bị được không ạ?",
+      "terms": [
+        "装置"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "te_mo_yoroshii"
+    },
+    {
+      "id": "T-103-V13-006",
+      "group": "demo",
+      "role_vi": "Đại diện diễn giải tính năng theo việc kho của khách",
+      "gender": "female",
+      "ja": "伝票のコードを読み取ると、商品がある棚のランプが光ります。",
+      "vi": "Khi quét mã trên phiếu thì đèn ở kệ có hàng sẽ sáng ạ.",
+      "terms": [
+        "伝票",
+        "読み取る"
+      ],
+      "scenes": [
+        "S003",
+        "S005",
+        "S013"
+      ],
+      "pattern": "to_verb_masu"
+    },
+    {
+      "id": "T-103-V13-007",
+      "group": "demo",
+      "role_vi": "Đại diện hỏi quy trình hiện tại để biết thiết bị có giúp được không",
+      "gender": "female",
+      "ja": "今は伝票を見た後、どうやって商品を探していますか。",
+      "vi": "Hiện giờ sau khi xem phiếu, bên anh tìm hàng bằng cách nào ạ?",
+      "terms": [
+        "伝票"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "douyatte_verb_teiru"
+    },
+    {
+      "id": "T-103-V13-008",
+      "group": "demo",
+      "role_vi": "Đại diện đề nghị cho xem thực tế bằng phiếu mẫu",
+      "gender": "female",
+      "ja": "今ここで、見本の伝票を使ってお見せしましょうか。",
+      "vi": "Tôi dùng phiếu mẫu để làm thử cho anh xem ngay tại đây nhé?",
+      "terms": [
+        "見本",
+        "伝票"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "o_verb_mashou_ka"
+    },
+    {
+      "id": "T-103-V13-009",
+      "group": "demo",
+      "role_vi": "Khách muốn tự thử nhưng sắp vào hội thảo",
+      "gender": "male",
+      "ja": "セミナーが終わってから、このブースに戻ってもいいですか。",
+      "vi": "Sau khi hội thảo kết thúc, tôi quay lại gian này được không ạ?",
+      "terms": [
+        "セミナー",
+        "ブース"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "te_kara_te_mo_ii"
+    },
+    {
+      "id": "T-103-V13-010",
+      "group": "demo",
+      "role_vi": "Đại diện thu ngắn phần demo vì khách sắp sang buổi khác",
+      "gender": "female",
+      "ja": "お時間がなければ、ランプが光るところだけお見せします。",
+      "vi": "Nếu anh không có nhiều thời gian, tôi cho anh xem riêng đoạn đèn sáng ạ.",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "ba_dake_verb"
+    },
+    {
+      "id": "T-103-V13-011",
+      "group": "technical",
+      "role_vi": "Khách hỏi thiết bị có dùng với máy quét hiện có được không",
+      "gender": "male",
+      "ja": "この装置は今の読み取り機と一緒に使えますか。",
+      "vi": "Thiết bị này dùng được với máy quét hiện tại của bên tôi không ạ?",
+      "terms": [
+        "装置",
+        "読み取り機"
+      ],
+      "scenes": [
+        "S006",
+        "S019"
+      ],
+      "pattern": "to_issho_ni_tsukaemasu"
+    },
+    {
+      "id": "T-103-V13-012",
+      "group": "technical",
+      "role_vi": "Đại diện xin xem mã thiết bị để hỏi người chuyên trách",
+      "gender": "female",
+      "ja": "型番を教えていただければ、技術担当に確認します。",
+      "vi": "Anh cho tôi mã thiết bị thì tôi sẽ hỏi người phụ trách kỹ thuật ạ.",
+      "terms": [
+        "型番",
+        "技術担当"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "te_itadakereba_verb"
+    },
+    {
+      "id": "T-103-V13-013",
+      "group": "technical",
+      "role_vi": "Đại diện nêu giới hạn của thiết bị khi khách hỏi về nhiều kho",
+      "gender": "female",
+      "ja": "この装置では、三つの倉庫の在庫をまとめて見ることはできません。",
+      "vi": "Thiết bị này không xem gộp tồn kho của cả ba kho được ạ.",
+      "terms": [
+        "装置"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "dewa_koto_wa_dekimasen"
+    },
+    {
+      "id": "T-103-V13-014",
+      "group": "technical",
+      "role_vi": "Đại diện chỉ nhóm tư vấn cho nhu cầu vượt khỏi phạm vi bộ mẫu",
+      "gender": "female",
+      "ja": "複数の倉庫については、隣のブースでご相談いただけます。",
+      "vi": "Về nhu cầu quản lý nhiều kho, anh có thể trao đổi ở gian bên cạnh ạ.",
+      "terms": [
+        "ブース"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "place_de_go_soudan_potential"
+    },
+    {
+      "id": "T-103-V13-015",
+      "group": "partner",
+      "role_vi": "Đại diện hỏi đối tác về khu vực có thể lắp đặt và hướng dẫn",
+      "gender": "female",
+      "ja": "御社はどの地域まで機器の設置に対応できますか。",
+      "vi": "Quý công ty có thể hỗ trợ lắp thiết bị ở những khu vực nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "dono_area_made"
+    },
+    {
+      "id": "T-103-V13-016",
+      "group": "partner",
+      "role_vi": "Đại diện đối tác chỉnh cách hiểu về mục đích hợp tác",
+      "gender": "male",
+      "ja": "自社で使うのではなく、販売代理店として取り扱いたいです。",
+      "vi": "Bên tôi muốn phân phối thiết bị với vai trò đại lý, không phải mua về tự dùng ạ.",
+      "terms": [
+        "販売代理店"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "a_dewa_naku_toshite"
+    },
+    {
+      "id": "T-103-V13-017",
+      "group": "partner",
+      "role_vi": "Đại diện đề nghị mời người có thẩm quyền bàn điều kiện mua bán",
+      "gender": "female",
+      "ja": "取引条件を話す際は、両社の営業責任者にも同席をお願いしましょう。",
+      "vi": "Khi bàn điều kiện giao dịch, mình mời cả người phụ trách kinh doanh hai bên cùng dự nhé.",
+      "terms": [
+        "取引条件",
+        "営業責任者"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "sai_wa_teian_mashou"
+    },
+    {
+      "id": "T-103-V13-018",
+      "group": "partner",
+      "role_vi": "Đại diện hẹn xác nhận lịch trước khi chốt buổi gặp",
+      "gender": "female",
+      "ja": "打ち合わせの日時は、両社の都合が分かってから決めましょう。",
+      "vi": "Khi biết lịch hai bên rồi mình chốt ngày giờ trao đổi nhé.",
+      "terms": [
+        "日時",
+        "都合"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "te_kara_teian_mashou"
+    },
+    {
+      "id": "T-103-V13-019",
+      "group": "follow",
+      "role_vi": "Đại diện chốt nội dung và giờ gọi lại theo đề nghị của khách",
+      "gender": "female",
+      "ja": "火曜の十四時に、二列での使い方についてお電話します。",
+      "vi": "Lúc 14 giờ thứ Ba tôi sẽ gọi về cách dùng thiết bị cho hai dãy kệ ạ.",
+      "terms": [],
+      "scenes": [
+        "S014",
+        "S017"
+      ],
+      "pattern": "time_ni_topic_ni_tsuite"
+    },
+    {
+      "id": "T-103-V13-020",
+      "group": "follow",
+      "role_vi": "Đại diện mời khách chỉ ghé tham khảo tự mang tài liệu về",
+      "gender": "female",
+      "ja": "よろしければ、概要をまとめた資料をお持ちください。",
+      "vi": "Nếu anh muốn, anh cứ mang theo tờ giới thiệu tóm tắt này ạ.",
+      "terms": [
+        "概要"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "yoroshikereba_o_kudasai"
+    },
+    {
+      "id": "T-103-V13-021",
+      "group": "follow",
+      "role_vi": "Đại diện nhắc một đặc điểm để khách nhớ đúng gian trước khi trao đổi tiếp",
+      "gender": "female",
+      "ja": "伝票を読み取ると棚の青いランプが光る展示でした。",
+      "vi": "Đó là gian trưng bày mà khi quét phiếu thì đèn xanh trên kệ sáng lên ạ.",
+      "terms": [
+        "伝票",
+        "読み取る"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "to_verb_masu"
+    },
+    {
+      "id": "T-103-V13-022",
+      "group": "follow",
+      "role_vi": "Đại diện đề nghị mời kỹ thuật đến xem cùng trong buổi thử sau triển lãm",
+      "gender": "female",
+      "ja": "次の実演には、弊社の技術担当も一緒に伺います。",
+      "vi": "Buổi demo tới người phụ trách kỹ thuật bên tôi cũng sẽ cùng đến ạ.",
+      "terms": [
+        "実演",
+        "技術担当"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "time_ni_mo_ukagau"
+    },
+    {
+      "id": "T-103-V13-023",
+      "group": "follow",
+      "role_vi": "Đại diện xin một mốc để hỏi kết quả sau khi khách trao đổi nội bộ",
+      "gender": "female",
+      "ja": "金曜の午前に、検討状況を伺ってもよろしいですか。",
+      "vi": "Sáng thứ Sáu tôi liên hệ hỏi bên anh đã cân nhắc đến đâu được không ạ?",
+      "terms": [
+        "検討状況"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "te_mo_yoroshii"
+    },
+    {
+      "id": "T-103-V13-024",
+      "group": "follow",
+      "role_vi": "Đại diện hẹn kiểm kết nối dịp khác nếu thiếu người phụ trách",
+      "gender": "female",
+      "ja": "ご担当の方が参加できなければ、機器の接続は別の機会に確認しましょう。",
+      "vi": "Nếu người phụ trách bên anh không tham gia được thì mình kiểm phần kết nối thiết bị vào dịp khác nhé.",
+      "terms": [
+        "接続"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "ba_teian_mashou"
+    }
+  ]
+}

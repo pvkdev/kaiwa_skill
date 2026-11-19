@@ -1,0 +1,390 @@
+{
+  "code": "H-060",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "4f7e92bff06aa57976a036e45dd5bfc8ae4ae24cb99d19f57c1bc39c53e06ac6",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "scope": "Xin phép mở đề tài và thống nhất phạm vi",
+    "source": "Kiểm nguồn, con số và trạng thái đề xuất",
+    "school": "Hỏi tác động từ phía nhà trường và gia đình",
+    "disagree": "Nói khác quan điểm về cách triển khai",
+    "group": "Ghi đúng ý kiến của từng người và của nhóm",
+    "after": "Sửa cách nói và giữ quan hệ"
+  },
+  "items": [
+    {
+      "id": "H-060-V13-001",
+      "group": "scope",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "町の学習室のこと、今ちょっと話してもいい？",
+      "vi": "Giờ tớ nói một chút về phòng học cộng đồng được không?",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S004"
+      ],
+      "pattern": "ask_permission_to_raise_topic"
+    },
+    {
+      "id": "H-060-V13-002",
+      "group": "scope",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "male",
+      "ja": "今日は、学習室が夕方も開くと子どもの送迎にどう影響するかだけ話したいな。",
+      "vi": "Hôm nay tớ chỉ muốn bàn xem nếu phòng học mở cả buổi chiều tối thì việc đưa đón con sẽ bị ảnh hưởng thế nào thôi.",
+      "terms": [
+        "送迎"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "set_discussion_scope"
+    },
+    {
+      "id": "H-060-V13-003",
+      "group": "scope",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "町が出した学習室の原案は、まだ読んでないんだ。",
+      "vi": "Tớ vẫn chưa đọc bản đề xuất gốc của thị trấn về phòng học cộng đồng.",
+      "terms": [
+        "原案"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "state_evidence_limit"
+    },
+    {
+      "id": "H-060-V13-004",
+      "group": "scope",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "町の学習室の話は今は置いておいて、この前見た映画の話にしようか。",
+      "vi": "Chuyện phòng học cộng đồng mình để khi khác nhé, hay nói về bộ phim hôm trước đi?",
+      "terms": [],
+      "scenes": [
+        "S004",
+        "S028"
+      ],
+      "pattern": "switch_subject_respectfully"
+    },
+    {
+      "id": "H-060-V13-005",
+      "group": "source",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "「保護者の七割が賛成」っていう数字は、誰にどう聞いた調査の結果か分かる？",
+      "vi": "Con số “bảy mươi phần trăm phụ huynh ủng hộ” là kết quả cuộc khảo sát hỏi ai và hỏi thế nào, cậu biết không?",
+      "terms": [
+        "保護者"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "ask_how_number_was_derived"
+    },
+    {
+      "id": "H-060-V13-006",
+      "group": "source",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "見出しには「決定」とあるけど、発信元は町じゃなくて個人の論評だから、町のページも確認しよう。",
+      "vi": "Tiêu đề ghi “đã quyết”, nhưng đây là bài bình luận của một cá nhân, mình xem thêm trang chính thức của thị trấn nhé.",
+      "terms": [
+        "見出し",
+        "発信元",
+        "論評"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "identify_source_and_check"
+    },
+    {
+      "id": "H-060-V13-007",
+      "group": "source",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "月曜に原案が公表されたというだけで、月曜から学習室が使えるようになったわけじゃないよ。",
+      "vi": "Bản đề xuất gốc được công bố thứ Hai, vậy chưa có nghĩa là mình dùng được phòng học từ thứ Hai đâu.",
+      "terms": [
+        "原案"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-060-V13-008",
+      "group": "source",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "要約では利用対象も人員配置も分からないから、原文を読めるまではその二点は保留にしよう。",
+      "vi": "Bản tóm tắt chưa cho biết ai được dùng và sẽ bố trí nhân sự thế nào, mình để ngỏ hai điểm đó cho đến khi đọc được văn bản gốc nhé.",
+      "terms": [
+        "要約",
+        "利用対象",
+        "人員配置",
+        "原文",
+        "保留"
+      ],
+      "scenes": [
+        "S002",
+        "S009"
+      ],
+      "pattern": "hold_until_source_available"
+    },
+    {
+      "id": "H-060-V13-009",
+      "group": "source",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "male",
+      "ja": "町の窓口でもらった原案では、中学生以上を利用対象にすると書いてあるけど、実施が決まったわけじゃないよ。",
+      "vi": "Bản đề xuất gốc tớ lấy ở quầy của thị trấn ghi là đối tượng sử dụng từ học sinh cấp hai trở lên, còn việc thực hiện thì vẫn chưa chốt đâu.",
+      "terms": [
+        "原案",
+        "利用対象"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-060-V13-010",
+      "group": "school",
+      "role_vi": "Phụ huynh hỏi giáo viên",
+      "gender": "female",
+      "ja": "夕方の学習室ができるとしたら、先生のクラスではどういうご家庭が影響を受けそうですか。",
+      "vi": "Nếu mở phòng học cộng đồng vào chiều tối, cô thấy những gia đình trong hoàn cảnh nào ở lớp cô có thể bị ảnh hưởng ạ?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "ask_impact_from_role"
+    },
+    {
+      "id": "H-060-V13-011",
+      "group": "school",
+      "role_vi": "Phụ huynh nói với phụ huynh khác",
+      "gender": "female",
+      "ja": "うちの子の学校では放課後に図書室を使えますが、ほかの学校も同じとは限りませんね。",
+      "vi": "Trường con tôi cho dùng phòng đọc sau giờ học, nhưng chưa chắc các trường khác cũng làm vậy chị nhỉ.",
+      "terms": [
+        "放課後"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "limit_claim_to_experience"
+    },
+    {
+      "id": "H-060-V13-012",
+      "group": "school",
+      "role_vi": "Phụ huynh hỏi giáo viên",
+      "gender": "female",
+      "ja": "学校に新しい役割を求める前に、町の案ではどこが運営主体になるのか確認できませんか。",
+      "vi": "Trước khi nhờ trường đảm nhiệm thêm việc, mình hỏi rõ theo đề xuất thì đơn vị nào sẽ vận hành được không ạ?",
+      "terms": [
+        "運営主体"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "check_before_acting"
+    },
+    {
+      "id": "H-060-V13-013",
+      "group": "school",
+      "role_vi": "Phụ huynh nói với phụ huynh khác",
+      "gender": "female",
+      "ja": "ご家庭の送迎の仕方を評価したいんじゃなくて、迎えに行く時間を決められるように、学習室の終了時刻を聞きたいんです。",
+      "vi": "Tôi không định đánh giá cách các nhà đưa đón con, tôi chỉ muốn hỏi phòng học kết thúc lúc mấy giờ để tiện xếp giờ đi đón.",
+      "terms": [
+        "送迎"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "clarify_operational_question"
+    },
+    {
+      "id": "H-060-V13-014",
+      "group": "disagree",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "家で静かに勉強しにくい子の学習環境を整えたいという点では、私も同じ考えだよ。",
+      "vi": "Tớ cũng muốn cải thiện điều kiện học cho những em ở nhà khó tìm chỗ yên tĩnh.",
+      "terms": [
+        "学習環境"
+      ],
+      "scenes": [
+        "S016",
+        "S020"
+      ],
+      "pattern": "acknowledge_shared_goal"
+    },
+    {
+      "id": "H-060-V13-015",
+      "group": "disagree",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "学習室が駅前だけなら、遠い地区の子も使えるように、帰りの交通手段をどうするか聞いておきたいな。",
+      "vi": "Nếu phòng học chỉ có ở trước ga, tớ muốn hỏi họ dự tính chuyện đi về thế nào để các em ở khu xa cũng dùng được.",
+      "terms": [
+        "交通手段"
+      ],
+      "scenes": [
+        "S017",
+        "S023"
+      ],
+      "pattern": "name_different_burden"
+    },
+    {
+      "id": "H-060-V13-016",
+      "group": "disagree",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "試行には賛成できる部分もあるけど、利用者数だけで判断が偏らないように、来られなかった子の声も聞きたいな。",
+      "vi": "Tớ có phần ủng hộ việc thử, nhưng tớ muốn nghe cả các em không đến được để đánh giá không lệch vì chỉ dựa vào số người tới.",
+      "terms": [
+        "試行",
+        "偏る"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "name_condition_for_support"
+    },
+    {
+      "id": "H-060-V13-017",
+      "group": "disagree",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "私の家のことまで持ち出されるなら、町の学習室の話は今日はここまでにしたい。",
+      "vi": "Nếu còn lôi cả chuyện nhà tớ vào thì hôm nay tớ muốn dừng bàn về phòng học ở đây.",
+      "terms": [
+        "持ち出す"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "pause_when_gets_personal"
+    },
+    {
+      "id": "H-060-V13-018",
+      "group": "group",
+      "role_vi": "Cư dân phát biểu trong nhóm thảo luận",
+      "gender": "female",
+      "ja": "遠い地区の生徒の希望を代弁する前に、使いたい時間と行き帰りで困ることを、本人たちに聞いてみませんか。",
+      "vi": "Trước khi nói thay các em học sinh ở khu xa, mình hỏi chính các em muốn dùng phòng vào giờ nào và đi về có gì khó được không ạ?",
+      "terms": [
+        "代弁する"
+      ],
+      "scenes": [
+        "S017",
+        "S022"
+      ],
+      "pattern": "check_before_acting"
+    },
+    {
+      "id": "H-060-V13-019",
+      "group": "group",
+      "role_vi": "Cư dân phát biểu trong nhóm thảo luận",
+      "gender": "female",
+      "ja": "試行するなら遠い地区の声も聞きたいと言ったのであって、皆さんが試行に賛成だと申し上げたわけではありません。",
+      "vi": "Tôi nói rằng nếu làm thử thì cần nghe cả ý kiến từ khu xa, tôi chưa hề nói cả nhóm đều tán thành làm thử ạ.",
+      "terms": [
+        "試行"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-060-V13-020",
+      "group": "group",
+      "role_vi": "Người điều phối nói với nhóm cư dân",
+      "gender": "male",
+      "ja": "今日は運営主体と帰宅の方法を町に聞くところまでを決めて、試行への賛否は返答が来るまで保留にしてもよろしいですか。",
+      "vi": "Hôm nay mình chỉ chốt sẽ hỏi thị trấn ai vận hành và các em sẽ về nhà bằng cách nào, còn việc có ủng hộ thử hay không thì đợi có trả lời rồi bàn, được không ạ?",
+      "terms": [
+        "運営主体",
+        "試行",
+        "賛否",
+        "保留"
+      ],
+      "scenes": [
+        "S023",
+        "S025"
+      ],
+      "pattern": "record_decision_and_open_issue"
+    },
+    {
+      "id": "H-060-V13-021",
+      "group": "after",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "学習室の話で私の言い方に引っかかったところがあったら、次に話す前に聞かせてくれる？",
+      "vi": "Nếu có chỗ nào trong cách tớ nói về phòng học làm cậu khó chịu, cậu nói cho tớ biết trước khi mình bàn lại được không?",
+      "terms": [],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "ask_about_impact_of_wording"
+    },
+    {
+      "id": "H-060-V13-022",
+      "group": "after",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "学習室を週に二回開くだけでも助かる人がいると聞いて、試行には前より前向きだけど、帰り方と運営の条件は確かめたいな。",
+      "vi": "Nghe nói chỉ mở hai buổi một tuần cũng giúp được một số người, tớ cởi mở hơn với việc thử, nhưng vẫn muốn biết rõ cách về nhà và điều kiện vận hành.",
+      "terms": [
+        "試行",
+        "前向き"
+      ],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "update_position_with_conditions"
+    },
+    {
+      "id": "H-060-V13-023",
+      "group": "after",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "female",
+      "ja": "町が出した学習室の原文は送れるけど、今は話したくなければ、また読みたくなったときに言ってね。",
+      "vi": "Tớ có thể gửi văn bản gốc của thị trấn về phòng học, nếu giờ cậu chưa muốn bàn thì khi nào muốn đọc cứ bảo tớ nhé.",
+      "terms": [
+        "原文"
+      ],
+      "scenes": [
+        "S028",
+        "S029"
+      ],
+      "pattern": "offer_source_without_pressure"
+    },
+    {
+      "id": "H-060-V13-024",
+      "group": "after",
+      "role_vi": "Người bạn trao đổi về đề xuất phòng học",
+      "gender": "male",
+      "ja": "学習室の案について考えが違っても、週末はいつもどおり一緒に散歩しようよ。",
+      "vi": "Dù mình còn khác ý về đề xuất phòng học, cuối tuần vẫn đi dạo cùng nhau như mọi khi nhé.",
+      "terms": [],
+      "scenes": [
+        "S030"
+      ],
+      "pattern": "continue_relationship"
+    }
+  ]
+}

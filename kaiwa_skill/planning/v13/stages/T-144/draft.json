@@ -1,0 +1,378 @@
+{
+  "code": "T-144",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "484ceea85f733c647b23c0be2b4c2bc12456ee5247f1fee3541f05cbe81d107b",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "current_skill": "Nói việc đang làm và kỹ năng muốn học",
+    "choose_course": "Hỏi lớp phù hợp với trình độ và ca làm",
+    "work_shift": "Thỏa thuận giờ học với quản lý",
+    "in_class": "Nói chỗ vướng và xin hướng dẫn thêm",
+    "after_course": "Báo điều đã học và đề xuất áp dụng thử"
+  },
+  "items": [
+    {
+      "id": "T-144-V13-001",
+      "group": "current_skill",
+      "role_vi": "Mori nói với tư vấn viên đào tạo",
+      "gender": "female",
+      "ja": "倉庫で働いています。",
+      "vi": "Em làm việc ở kho ạ.",
+      "terms": [
+        "倉庫"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "state_current_work"
+    },
+    {
+      "id": "T-144-V13-002",
+      "group": "current_skill",
+      "role_vi": "Mori nói với tư vấn viên đào tạo",
+      "gender": "female",
+      "ja": "毎日、入荷した数を表に入力しています。",
+      "vi": "Ngày nào em cũng nhập số lượng hàng về vào bảng ạ.",
+      "terms": [
+        "入荷する",
+        "入力する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "state_existing_skill"
+    },
+    {
+      "id": "T-144-V13-003",
+      "group": "current_skill",
+      "role_vi": "Mori nói với tư vấn viên đào tạo",
+      "gender": "female",
+      "ja": "品目ごとに週の合計を出せるようになりたいです。",
+      "vi": "Em muốn biết cách tính tổng số hàng mỗi tuần theo từng mặt hàng ạ.",
+      "terms": [
+        "品目"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "state_learning_goal"
+    },
+    {
+      "id": "T-144-V13-004",
+      "group": "current_skill",
+      "role_vi": "Mori nói với tư vấn viên đào tạo",
+      "gender": "female",
+      "ja": "フィルターは使えますが、関数を自分で入れたことはありません。",
+      "vi": "Em biết dùng bộ lọc, nhưng chưa tự nhập hàm bao giờ ạ.",
+      "terms": [
+        "フィルター",
+        "関数"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "state_skill_boundary"
+    },
+    {
+      "id": "T-144-V13-005",
+      "group": "choose_course",
+      "role_vi": "Mori nói với tư vấn viên đào tạo",
+      "gender": "female",
+      "ja": "関数を使うのが前提なら、合計の練習から始められる入門講座はありますか。",
+      "vi": "Nếu khóa này yêu cầu biết dùng hàm, có lớp nhập môn nào cho em bắt đầu bằng bài tập tính tổng không ạ?",
+      "terms": [
+        "関数",
+        "前提",
+        "入門"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "ask_for_specific_alternative"
+    },
+    {
+      "id": "T-144-V13-006",
+      "group": "choose_course",
+      "role_vi": "Mori nói với tư vấn viên đào tạo",
+      "gender": "female",
+      "ja": "倉庫の表で品目を絞り込むだけでも、集計した経験に入りますか。",
+      "vi": "Ở kho em chỉ lọc bảng theo mặt hàng, vậy có được tính là có kinh nghiệm tổng hợp số liệu không ạ?",
+      "terms": [
+        "倉庫",
+        "品目",
+        "絞り込む",
+        "集計する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "clarify_rule_with_example"
+    },
+    {
+      "id": "T-144-V13-007",
+      "group": "choose_course",
+      "role_vi": "Mori nói với tư vấn viên đào tạo",
+      "gender": "female",
+      "ja": "平日の夕方はシフトと重なるので、同じ実習ができる土曜のクラスはありますか。",
+      "vi": "Buổi chiều tối ngày thường trùng ca của em, vậy có lớp thứ Bảy nào được thực hành tương tự không ạ?",
+      "terms": [
+        "シフト",
+        "重なる",
+        "実習"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "ask_for_specific_alternative"
+    },
+    {
+      "id": "T-144-V13-008",
+      "group": "choose_course",
+      "role_vi": "Mori nói với tư vấn viên đào tạo",
+      "gender": "female",
+      "ja": "講座に申し込む前に、講師と短い面談をしてもいいですか。",
+      "vi": "Trước khi đăng ký khóa học, em có thể hẹn trao đổi ngắn với giáo viên được không ạ?",
+      "terms": [
+        "講師",
+        "面談"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "request_pre_enrollment_meeting"
+    },
+    {
+      "id": "T-144-V13-009",
+      "group": "work_shift",
+      "role_vi": "Mori nói với quản lý kho",
+      "gender": "female",
+      "ja": "集計の方法を覚えれば、週の合計が今より確認しやすくなると思います。",
+      "vi": "Em nghĩ nếu học được cách tổng hợp thì sẽ dễ kiểm tra tổng số hàng mỗi tuần hơn ạ.",
+      "terms": [
+        "集計する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "explain_benefit_for_work"
+    },
+    {
+      "id": "T-144-V13-010",
+      "group": "work_shift",
+      "role_vi": "Mori nói với quản lý kho",
+      "gender": "female",
+      "ja": "来週の水曜だけ、講座に間に合うように18時で上がってもいいですか。",
+      "vi": "Riêng thứ Tư tuần sau, anh cho em tan ca lúc 18 giờ để kịp đi học được không ạ?",
+      "terms": [
+        "間に合う",
+        "上がる"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "ask_to_finish_shift_early"
+    },
+    {
+      "id": "T-144-V13-011",
+      "group": "work_shift",
+      "role_vi": "Mori nói với quản lý kho",
+      "gender": "female",
+      "ja": "遅い便を引き継ぐ人が決まるまでは、今のシフトどおりに勤務します。",
+      "vi": "Khi chưa chốt được ai sẽ nhận bàn giao các chuyến hàng đến sau, em vẫn làm theo ca hiện tại ạ.",
+      "terms": [
+        "引き継ぐ",
+        "シフト",
+        "勤務する"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "state_commitment_until_confirmed"
+    },
+    {
+      "id": "T-144-V13-012",
+      "group": "work_shift",
+      "role_vi": "Mori nói với quản lý kho",
+      "gender": "female",
+      "ja": "水曜のシフトが変えられないなら、講座の担当者に来月の別の日程を聞いてもいいですか。",
+      "vi": "Nếu không đổi được ca thứ Tư, em có thể hỏi bên phụ trách xem tháng sau còn đợt học nào khác không ạ?",
+      "terms": [
+        "シフト",
+        "日程"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "ask_for_specific_alternative"
+    },
+    {
+      "id": "T-144-V13-013",
+      "group": "work_shift",
+      "role_vi": "Mori nói với quản lý kho",
+      "gender": "female",
+      "ja": "講座が水曜から木曜に変わったので、18時で上がれるか改めて相談してもいいですか。",
+      "vi": "Lớp đã chuyển từ thứ Tư sang thứ Năm, em có thể trao đổi lại xem thứ Năm em tan ca lúc 18 giờ được không ạ?",
+      "terms": [
+        "上がる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "ask_to_finish_shift_early"
+    },
+    {
+      "id": "T-144-V13-014",
+      "group": "in_class",
+      "role_vi": "Mori nói với người hướng dẫn khóa nghề",
+      "gender": "female",
+      "ja": "データの範囲を選ぶときに、最後の三行を見落としたみたいです。",
+      "vi": "Hình như lúc chọn vùng dữ liệu, em đã bỏ sót ba dòng cuối.",
+      "terms": [
+        "範囲",
+        "行",
+        "見落とす"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "report_where_error_happened"
+    },
+    {
+      "id": "T-144-V13-015",
+      "group": "in_class",
+      "role_vi": "Mori nói với người hướng dẫn khóa nghề",
+      "gender": "female",
+      "ja": "数量の列を確認するところだけ、小さい表でもう一度見せてもらえますか。",
+      "vi": "Thầy có thể dùng một bảng nhỏ để làm mẫu lại riêng bước kiểm tra cột số lượng được không ạ?",
+      "terms": [
+        "数量",
+        "列"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "request_focused_help"
+    },
+    {
+      "id": "T-144-V13-016",
+      "group": "in_class",
+      "role_vi": "Người hướng dẫn nói với Mori",
+      "gender": "male",
+      "ja": "列の見出しを見てから、三件とも数が入っているか確認しましょう。",
+      "vi": "Em xem tiêu đề cột trước, rồi kiểm tra xem cả ba mục đều có số liệu chưa nhé.",
+      "terms": [
+        "列",
+        "見出し",
+        "～件"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "guide_sequence"
+    },
+    {
+      "id": "T-144-V13-017",
+      "group": "in_class",
+      "role_vi": "Mori nói với người hướng dẫn khóa nghề",
+      "gender": "female",
+      "ja": "次の回は仕事で欠席するので、あとで空白行があるときの範囲の選び方を質問してもいいですか。",
+      "vi": "Buổi tới em phải vắng vì đi làm, sau đó em có thể hỏi thầy cách chọn vùng dữ liệu khi có dòng trống được không ạ?",
+      "terms": [
+        "欠席する",
+        "空白",
+        "行",
+        "範囲"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "request_focused_help"
+    },
+    {
+      "id": "T-144-V13-018",
+      "group": "in_class",
+      "role_vi": "Mori nói với người hướng dẫn khóa nghề",
+      "gender": "female",
+      "ja": "練習用の表で合計が合わなかった例を一つ選んで、どこまで範囲に入れたかお見せします。",
+      "vi": "Em sẽ chọn một ví dụ có tổng không khớp trên bảng tập rồi chỉ cho thầy xem em đã chọn vùng dữ liệu đến đâu ạ.",
+      "terms": [
+        "練習用",
+        "範囲"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "offer_example_for_feedback"
+    },
+    {
+      "id": "T-144-V13-019",
+      "group": "after_course",
+      "role_vi": "Mori nói với người hướng dẫn khóa nghề",
+      "gender": "female",
+      "ja": "講座は終わりましたが、行が多い表で迷ったらどこで相談できますか。",
+      "vi": "Khóa học kết thúc rồi, giờ nếu gặp bảng nhiều dòng và chưa biết xử lý thế nào thì em có thể hỏi ở đâu ạ?",
+      "terms": [
+        "行",
+        "迷う"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "ask_where_to_get_follow_up"
+    },
+    {
+      "id": "T-144-V13-020",
+      "group": "after_course",
+      "role_vi": "Mori nói với người hướng dẫn khóa nghề",
+      "gender": "female",
+      "ja": "質問会には、社内データの代わりに、同じ形で架空の数字を入れた表を持っていきます。",
+      "vi": "Đến buổi hỏi đáp, em sẽ mang một bảng cùng dạng dùng số liệu giả thay cho dữ liệu nội bộ công ty ạ.",
+      "terms": [
+        "社内データ",
+        "架空"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "offer_example_for_feedback"
+    },
+    {
+      "id": "T-144-V13-021",
+      "group": "after_course",
+      "role_vi": "Mori nói với quản lý kho",
+      "gender": "female",
+      "ja": "講座では、最後の行まで入っているか確認してから、品目ごとに合計を出す方法を練習しました。",
+      "vi": "Trong khóa, em đã luyện cách kiểm tra xem đã chọn dữ liệu đến dòng cuối chưa rồi tính tổng theo từng mặt hàng ạ.",
+      "terms": [
+        "行",
+        "品目"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "report_skill_learned"
+    },
+    {
+      "id": "T-144-V13-022",
+      "group": "after_course",
+      "role_vi": "Mori nói với quản lý kho",
+      "gender": "female",
+      "ja": "まずは表のコピーで一品目だけ試して、金曜に今のやり方と比べた結果をお見せしてもいいですか。",
+      "vi": "Trước hết em thử với một mặt hàng trên bản sao của bảng, rồi thứ Sáu em cho anh xem kết quả so sánh với cách làm hiện tại được không ạ?",
+      "terms": [
+        "品目",
+        "試す"
+      ],
+      "scenes": [
+        "S009",
+        "S015"
+      ],
+      "pattern": "propose_limited_trial"
+    }
+  ]
+}

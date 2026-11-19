@@ -1,0 +1,336 @@
+{
+  "code": "T-121",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "88e47622ee70bc52dd5fcbd2ab1f08f8eae383c4d2344ec8e22b7e6dd68720c5",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "pack": "Hỏi túi, đũa và cách chuẩn bị món",
+    "pay": "Báo tổng tiền và xác nhận trạng thái thanh toán",
+    "counter": "Nhận kiện và hướng dẫn thanh toán qua phiếu",
+    "fix": "Kiểm giá và xử lý hàng có vấn đề",
+    "queue": "Điều phối hàng chờ và bàn giao ca"
+  },
+  "items": [
+    {
+      "id": "T-121-V13-001",
+      "group": "pack",
+      "role_vi": "Thu ngân hỏi khách có cần túi",
+      "gender": "female",
+      "ja": "レジ袋はお付けしますか。",
+      "vi": "Anh có cần túi đựng hàng không ạ?",
+      "terms": [
+        "レジ袋"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～はお付けしますか"
+    },
+    {
+      "id": "T-121-V13-002",
+      "group": "pack",
+      "role_vi": "Thu ngân đọc lại số túi và số đôi đũa",
+      "gender": "male",
+      "ja": "袋は一枚で、お箸は二膳ですね。",
+      "vi": "Một túi và hai đôi đũa, đúng không ạ?",
+      "terms": [
+        "膳"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～は～で、～は～ですね"
+    },
+    {
+      "id": "T-121-V13-003",
+      "group": "pack",
+      "role_vi": "Thu ngân hỏi khách có muốn hâm cơm không",
+      "gender": "female",
+      "ja": "お弁当を温めましょうか。",
+      "vi": "Tôi hâm hộp cơm giúp anh nhé?",
+      "terms": [
+        "温める"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～ましょうか"
+    },
+    {
+      "id": "T-121-V13-004",
+      "group": "pack",
+      "role_vi": "Thu ngân giải thích món nào không hâm được",
+      "gender": "male",
+      "ja": "こちらの冷凍グラタンは店の電子レンジでは温められないので、お弁当だけ温めますね。",
+      "vi": "Tôi không hâm được gratin đông lạnh này bằng lò vi sóng của cửa hàng, nên tôi hâm riêng hộp cơm nhé.",
+      "terms": [
+        "冷凍",
+        "電子レンジ",
+        "温める"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "～ので、～だけ～ます"
+    },
+    {
+      "id": "T-121-V13-005",
+      "group": "pack",
+      "role_vi": "Thu ngân hỏi để nguyên gói sốt hay không",
+      "gender": "female",
+      "ja": "ソースは小袋のままお渡ししてもよろしいですか。",
+      "vi": "Tôi để nguyên gói sốt đưa anh nhé?",
+      "terms": [
+        "小袋"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～のまま～てもよろしいですか"
+    },
+    {
+      "id": "T-121-V13-006",
+      "group": "pack",
+      "role_vi": "Thu ngân nhắc khách hộp vừa hâm còn nóng",
+      "gender": "male",
+      "ja": "お弁当の容器が熱いので、お持ちになるときはお気をつけください。",
+      "vi": "Hộp cơm đang nóng, chị cẩn thận khi cầm nhé.",
+      "terms": [
+        "容器"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ので、～ときはお気をつけください"
+    },
+    {
+      "id": "T-121-V13-007",
+      "group": "pay",
+      "role_vi": "Thu ngân đọc tổng tiền và hỏi cách thanh toán",
+      "gender": "female",
+      "ja": "二点で六百四十八円ですが、お支払いはどうされますか。",
+      "vi": "Hai món tổng cộng 648 yên, anh muốn thanh toán thế nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～ですが、お支払いはどうされますか"
+    },
+    {
+      "id": "T-121-V13-008",
+      "group": "pay",
+      "role_vi": "Thu ngân chỉ chỗ chạm thẻ giao thông",
+      "gender": "male",
+      "ja": "交通系ICカードをこちらの読み取り部にタッチしてください。",
+      "vi": "Chị chạm thẻ IC giao thông vào đầu đọc ở đây nhé.",
+      "terms": [
+        "交通系ICカード",
+        "読み取り部"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～を～にタッチしてください"
+    },
+    {
+      "id": "T-121-V13-009",
+      "group": "pay",
+      "role_vi": "Thu ngân nói rõ giao dịch chưa xong vì thiếu số dư",
+      "gender": "female",
+      "ja": "カードの残高が足りず、まだお支払いは済んでいません。",
+      "vi": "Thẻ không đủ số dư nên giao dịch vẫn chưa thanh toán xong ạ.",
+      "terms": [
+        "残高"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～が足りず、まだ～ていません"
+    },
+    {
+      "id": "T-121-V13-010",
+      "group": "pay",
+      "role_vi": "Thu ngân giao tiền thừa cùng biên lai",
+      "gender": "male",
+      "ja": "三百五十二円のお釣りとレシートをお渡しします。",
+      "vi": "Đây là 352 yên tiền thừa và biên lai của chị ạ.",
+      "terms": [
+        "お釣り",
+        "レシート"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～と～をお渡しします"
+    },
+    {
+      "id": "T-121-V13-011",
+      "group": "counter",
+      "role_vi": "Thu ngân xin xem mã vạch khi giao kiện hàng",
+      "gender": "female",
+      "ja": "荷物の受け取り用バーコードをお見せいただけますか。",
+      "vi": "Anh cho tôi xem mã vạch nhận hàng được không ạ?",
+      "terms": [
+        "バーコード"
+      ],
+      "scenes": [
+        "S009",
+        "S020"
+      ],
+      "pattern": "～をお見せいただけますか"
+    },
+    {
+      "id": "T-121-V13-012",
+      "group": "counter",
+      "role_vi": "Thu ngân xin khách chờ khi chưa tìm thấy kiện trên kệ",
+      "gender": "male",
+      "ja": "受け取り棚に荷物が見当たらないので、引き継ぎを確認しますね。",
+      "vi": "Tôi chưa thấy kiện trên kệ nhận hàng, để tôi kiểm tra ghi chú bàn giao nhé.",
+      "terms": [
+        "引き継ぎ"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～が見当たらないので、～を確認します"
+    },
+    {
+      "id": "T-121-V13-013",
+      "group": "counter",
+      "role_vi": "Thu ngân hướng dẫn bước mang phiếu ra quầy",
+      "gender": "female",
+      "ja": "機械から出た申込券を、こちらのレジにお持ちください。",
+      "vi": "Anh mang phiếu yêu cầu vừa in ra từ máy đến quầy này nhé.",
+      "terms": [
+        "申込券"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～を、～にお持ちください"
+    },
+    {
+      "id": "T-121-V13-014",
+      "group": "counter",
+      "role_vi": "Thu ngân giải thích phiếu máy in chưa phải biên lai",
+      "gender": "male",
+      "ja": "申込券が出ても、代金はレジでお支払いいただくことになります。",
+      "vi": "Máy in phiếu yêu cầu rồi thì chị vẫn cần thanh toán tại quầy ạ.",
+      "terms": [
+        "申込券"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ても、～ていただくことになります"
+    },
+    {
+      "id": "T-121-V13-015",
+      "group": "fix",
+      "role_vi": "Thu ngân đối chiếu thông tin định giá trên kệ",
+      "gender": "female",
+      "ja": "値札と商品の番号を照合しますので、お支払いは少しお待ちください。",
+      "vi": "Tôi sẽ đối chiếu nhãn giá với mã sản phẩm, anh khoan thanh toán một chút nhé.",
+      "terms": [
+        "値札",
+        "照合する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ますので、～は少しお待ちください"
+    },
+    {
+      "id": "T-121-V13-016",
+      "group": "fix",
+      "role_vi": "Thu ngân báo lại số tiền đã sửa",
+      "gender": "male",
+      "ja": "値札と同じ百三十八円に訂正しましたので、画面をご確認ください。",
+      "vi": "Tôi đã sửa về 138 yên đúng với nhãn giá, chị kiểm tra lại màn hình nhé.",
+      "terms": [
+        "値札",
+        "訂正する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ましたので、～をご確認ください"
+    },
+    {
+      "id": "T-121-V13-017",
+      "group": "fix",
+      "role_vi": "Thu ngân hỏi xem món bị lỗi và biên lai",
+      "gender": "female",
+      "ja": "交換できるか確認したいので、破れた袋とレシートを見せていただけますか。",
+      "vi": "Tôi muốn kiểm tra có đổi được không, anh cho tôi xem gói bị rách và biên lai được không ạ?",
+      "terms": [
+        "レシート"
+      ],
+      "scenes": [
+        "S015",
+        "S016"
+      ],
+      "pattern": "～をお見せいただけますか"
+    },
+    {
+      "id": "T-121-V13-018",
+      "group": "queue",
+      "role_vi": "Thu ngân chỉ khách đang vội sang quầy khác",
+      "gender": "male",
+      "ja": "こちらは荷物のお渡しに時間がかかるので、お急ぎでしたら二番のレジにお進みください。",
+      "vi": "Quầy này đang mất thêm thời gian giao kiện hàng, nếu chị đang vội thì mời sang quầy số hai ạ.",
+      "terms": [],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～でしたら、～にお進みください"
+    },
+    {
+      "id": "T-121-V13-019",
+      "group": "queue",
+      "role_vi": "Thu ngân hướng dẫn khách đợi ngoài hàng để kiểm tiếp",
+      "gender": "female",
+      "ja": "確認が終わったらお呼びしますので、レジの横でお待ちいただけますか。",
+      "vi": "Kiểm xong tôi sẽ gọi, anh chờ ở cạnh quầy được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～たら～ますので、～ていただけますか"
+    },
+    {
+      "id": "T-121-V13-020",
+      "group": "queue",
+      "role_vi": "Nhân viên bàn giao một kiện chưa tìm thấy",
+      "gender": "male",
+      "ja": "番号の末尾が五二の荷物はまだ見つかっていないので、入荷記録を見てもらえますか。",
+      "vi": "Kiện có số đuôi 52 vẫn chưa tìm thấy, em xem giúp sổ hàng nhập được không?",
+      "terms": [
+        "入荷記録"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～ので、～を見てもらえますか"
+    },
+    {
+      "id": "T-121-V13-021",
+      "group": "queue",
+      "role_vi": "Nhân viên ca sau gọi khách đến nhận đúng mã",
+      "gender": "female",
+      "ja": "荷物が見つかりましたので、受け取りの際は同じバーコードをレジでお見せください。",
+      "vi": "Cửa hàng đã tìm thấy kiện hàng rồi, khi tới nhận anh đưa lại mã vạch đó ở quầy nhé.",
+      "terms": [
+        "バーコード"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～ましたので、～をお見せください"
+    }
+  ]
+}

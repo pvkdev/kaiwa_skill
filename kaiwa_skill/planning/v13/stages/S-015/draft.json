@@ -1,0 +1,392 @@
+{
+  "code": "S-015",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "5ea0b9233deeffa337588b7ed7c4ee2f492f00e39ab6994d3576748e6c0a5487",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "workday": "Chào khi đến và ra về",
+    "reconnect": "Hỏi thăm và nối lại câu chuyện",
+    "switch": "Chuyển vào việc hoặc kết thúc câu chuyện",
+    "reception": "Chào khách và hỏi người cần gặp",
+    "handover": "Mời khách đợi và chuyển lời"
+  },
+  "items": [
+    {
+      "id": "S-015-V13-001",
+      "group": "workday",
+      "role_vi": "Nhân viên vừa đến văn phòng chào đồng nghiệp buổi sáng",
+      "gender": "female",
+      "ja": "おはようございます。",
+      "vi": "Chào buổi sáng ạ.",
+      "terms": [
+        "おはようございます"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "morning_greeting"
+    },
+    {
+      "id": "S-015-V13-002",
+      "group": "workday",
+      "role_vi": "Nhân viên gặp đồng nghiệp bộ phận khác giữa ngày làm việc",
+      "gender": "male",
+      "ja": "お疲れさまです。",
+      "vi": "Chào anh ạ.",
+      "terms": [
+        "お疲れさまです"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "otsukaresama_present"
+    },
+    {
+      "id": "S-015-V13-003",
+      "group": "workday",
+      "role_vi": "Nhân viên xin phép về trước người còn ở lại văn phòng",
+      "gender": "female",
+      "ja": "お先に失礼します。",
+      "vi": "Tôi xin phép về trước ạ.",
+      "terms": [
+        "お先に失礼します"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "osakini_shitsureishimasu"
+    },
+    {
+      "id": "S-015-V13-004",
+      "group": "workday",
+      "role_vi": "Đồng nghiệp còn ở văn phòng chào người vừa kết thúc ca",
+      "gender": "male",
+      "ja": "お疲れさまでした。",
+      "vi": "Hôm nay chị vất vả rồi ạ.",
+      "terms": [
+        "お疲れさまでした"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "otsukaresama_past"
+    },
+    {
+      "id": "S-015-V13-005",
+      "group": "workday",
+      "role_vi": "Đồng nghiệp hỏi thăm khi thấy người kia đến sớm hơn thường lệ",
+      "gender": "female",
+      "ja": "今日は早いですね。",
+      "vi": "Hôm nay anh đến sớm nhỉ.",
+      "terms": [
+        "早い"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "kyou_wa_adjective_ne"
+    },
+    {
+      "id": "S-015-V13-006",
+      "group": "workday",
+      "role_vi": "Nhân viên nói lý do mình đến văn phòng sớm",
+      "gender": "male",
+      "ja": "朝の会議の資料を見るために早く来ました。",
+      "vi": "Tôi đến sớm để xem tài liệu cho cuộc họp sáng.",
+      "terms": [
+        "会議",
+        "資料",
+        "早い",
+        "来る"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "tame_ni_motion"
+    },
+    {
+      "id": "S-015-V13-007",
+      "group": "reconnect",
+      "role_vi": "Nhân viên xác nhận đã đọc lời nhắn được hứa gửi tối qua",
+      "gender": "female",
+      "ja": "昨日のメッセージを読みました。",
+      "vi": "Tôi đã đọc tin nhắn hôm qua rồi ạ.",
+      "terms": [
+        "メッセージ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "detail_wo_past"
+    },
+    {
+      "id": "S-015-V13-008",
+      "group": "reconnect",
+      "role_vi": "Nhân viên chào đồng nghiệp vừa đi công tác về sau vài ngày",
+      "gender": "male",
+      "ja": "お久しぶりです。",
+      "vi": "Lâu rồi mới gặp chị ạ.",
+      "terms": [
+        "お久しぶりです"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "ohisashiburi"
+    },
+    {
+      "id": "S-015-V13-009",
+      "group": "reconnect",
+      "role_vi": "Nhân viên hỏi thăm chuyến công tác của đồng nghiệp vừa trở lại",
+      "gender": "female",
+      "ja": "出張はどうでしたか。",
+      "vi": "Chuyến công tác thế nào ạ?",
+      "terms": [
+        "出張"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "noun_wa_doudeshita"
+    },
+    {
+      "id": "S-015-V13-010",
+      "group": "reconnect",
+      "role_vi": "Đồng nghiệp bộ phận khác hỏi xem có đúng đã gặp nhau ở buổi hướng dẫn",
+      "gender": "male",
+      "ja": "先日の説明会で会いましたね。",
+      "vi": "Mình đã gặp nhau ở buổi hướng dẫn hôm trước nhỉ.",
+      "terms": [
+        "先日",
+        "説明会",
+        "会う"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "shared_event_ne"
+    },
+    {
+      "id": "S-015-V13-011",
+      "group": "reconnect",
+      "role_vi": "Nhân viên xin lỗi vì gọi nhầm và xác nhận lại tên đã sửa",
+      "gender": "female",
+      "ja": "失礼しました、田辺さんですね。",
+      "vi": "Xin lỗi, anh là anh Tanabe, đúng không ạ?",
+      "terms": [
+        "失礼しました"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "detail_desu_ne"
+    },
+    {
+      "id": "S-015-V13-012",
+      "group": "switch",
+      "role_vi": "Nhân viên bắt chuyện với đồng nghiệp ở khu chung vào ngày mưa",
+      "gender": "female",
+      "ja": "今日は雨ですね。",
+      "vi": "Hôm nay trời mưa nhỉ.",
+      "terms": [
+        "雨"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "kyou_wa_weather_ne"
+    },
+    {
+      "id": "S-015-V13-013",
+      "group": "switch",
+      "role_vi": "Đồng nghiệp chuyển từ nói chuyện thời tiết sang hỏi giờ họp",
+      "gender": "male",
+      "ja": "午後の会議は何時からですか。",
+      "vi": "Cuộc họp chiều bắt đầu lúc mấy giờ ạ?",
+      "terms": [
+        "午後",
+        "会議",
+        "時"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "nanjikara_desu_ka"
+    },
+    {
+      "id": "S-015-V13-014",
+      "group": "switch",
+      "role_vi": "Người báo mình sắp phải vào họp để khép cuộc trò chuyện",
+      "gender": "female",
+      "ja": "そろそろ会議に行きますね。",
+      "vi": "Tôi sắp đi họp rồi ạ.",
+      "terms": [
+        "そろそろ",
+        "会議"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "sorosoro_verb"
+    },
+    {
+      "id": "S-015-V13-015",
+      "group": "switch",
+      "role_vi": "Nhân viên đề nghị cầm giúp đồng nghiệp một tập hồ sơ",
+      "gender": "male",
+      "ja": "ファイルを一つ持ちましょうか。",
+      "vi": "Để tôi cầm giúp một tập hồ sơ nhé?",
+      "terms": [
+        "ファイル",
+        "持つ"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "teian_mashou_ka"
+    },
+    {
+      "id": "S-015-V13-016",
+      "group": "reception",
+      "role_vi": "Lễ tân chào khách vừa tới công ty",
+      "gender": "female",
+      "ja": "いらっしゃいませ。",
+      "vi": "Xin chào quý khách ạ.",
+      "terms": [
+        "いらっしゃいませ"
+      ],
+      "scenes": [
+        "S011",
+        "S013"
+      ],
+      "pattern": "irasshaimase"
+    },
+    {
+      "id": "S-015-V13-017",
+      "group": "reception",
+      "role_vi": "Lễ tân muốn biết khách có việc với bộ phận nào",
+      "gender": "male",
+      "ja": "どちらの部署にご用ですか。",
+      "vi": "Anh cần gặp bộ phận nào ạ?",
+      "terms": [
+        "部署",
+        "ご用"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "dochira_no_noun"
+    },
+    {
+      "id": "S-015-V13-018",
+      "group": "reception",
+      "role_vi": "Khách tới quầy nói tên người mình cần gặp",
+      "gender": "male",
+      "ja": "営業部の佐藤さんに会いたいです。",
+      "vi": "Tôi muốn gặp anh Sato ở phòng kinh doanh ạ.",
+      "terms": [
+        "営業部",
+        "会う"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "person_ni_aitai"
+    },
+    {
+      "id": "S-015-V13-019",
+      "group": "reception",
+      "role_vi": "Lễ tân xin khách từng đến nhắc lại tên",
+      "gender": "female",
+      "ja": "お名前をもう一度伺ってもよろしいですか。",
+      "vi": "Cho tôi hỏi lại tên anh được không ạ?",
+      "terms": [
+        "お名前",
+        "もう一度",
+        "伺う"
+      ],
+      "scenes": [
+        "S011",
+        "S013"
+      ],
+      "pattern": "te_mo_yoroshii_desu_ka"
+    },
+    {
+      "id": "S-015-V13-020",
+      "group": "handover",
+      "role_vi": "Lễ tân mời khách đợi trong lúc liên hệ người phụ trách",
+      "gender": "female",
+      "ja": "こちらで少々お待ちください。",
+      "vi": "Anh vui lòng chờ ở đây một lát ạ.",
+      "terms": [
+        "少々お待ちください"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "shoushou_omachi"
+    },
+    {
+      "id": "S-015-V13-021",
+      "group": "handover",
+      "role_vi": "Lễ tân đề nghị liên hệ phòng kinh doanh vì người khách cần gặp chưa tới",
+      "gender": "female",
+      "ja": "営業部に連絡しましょうか。",
+      "vi": "Tôi liên hệ với phòng kinh doanh giúp anh nhé?",
+      "terms": [
+        "営業部"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "teian_mashou_ka"
+    },
+    {
+      "id": "S-015-V13-022",
+      "group": "handover",
+      "role_vi": "Lễ tân báo cho đồng nghiệp biết vị khách đang đợi",
+      "gender": "female",
+      "ja": "佐藤さん、山本様がお待ちです。",
+      "vi": "Anh Sato, anh Yamamoto đang đợi anh ạ.",
+      "terms": [
+        "お待ちです"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "guest_ga_omachi"
+    },
+    {
+      "id": "S-015-V13-023",
+      "group": "handover",
+      "role_vi": "Người phụ trách xin lỗi khách khi ra đón muộn",
+      "gender": "male",
+      "ja": "お待たせしました。",
+      "vi": "Xin lỗi đã để anh chờ ạ.",
+      "terms": [
+        "お待たせしました"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "omatase_shimashita"
+    },
+    {
+      "id": "S-015-V13-024",
+      "group": "handover",
+      "role_vi": "Người phụ trách mời khách đang đợi vào trong",
+      "gender": "male",
+      "ja": "こちらへどうぞ。",
+      "vi": "Mời anh đi lối này ạ.",
+      "terms": [
+        "こちらへどうぞ"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "kochira_e_douzo"
+    }
+  ]
+}

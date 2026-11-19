@@ -1,0 +1,370 @@
+{
+  "code": "H-032",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "30e4af16572340b3487ae26e847e42c1585f6ea4c8503f7e9298a2ba497413a7",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "open": "Mở cuộc họp và xác định phạm vi",
+    "keep": "Ghi nhận điều hiệu quả và người đóng góp",
+    "facts": "Xem lại thời điểm và cách mỗi bên nhận tin",
+    "trial": "Chọn một thay đổi nhỏ có thể thử",
+    "measure": "Chốt người phụ trách và cách đánh giá",
+    "next": "Kiểm kết quả và quyết điều sẽ giữ"
+  },
+  "items": [
+    {
+      "id": "H-032-V13-001",
+      "group": "open",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "今日は、通知が遅れたときの対応を振り返ります。",
+      "vi": "Hôm nay mình nhìn lại cách cả nhóm xử lý khi thông báo đến chậm.",
+      "terms": [
+        "振り返る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "今日は～を振り返ります"
+    },
+    {
+      "id": "H-032-V13-002",
+      "group": "open",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "対応の中で、うまくいったことを一つずつ挙げてもらえますか。",
+      "vi": "Mỗi người nêu một việc đã làm tốt trong lúc xử lý sự cố được không?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "一つずつ～を挙げる"
+    },
+    {
+      "id": "H-032-V13-003",
+      "group": "open",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "この振り返りは、誰が悪かったかを決める場ではなく、次に試す改善策を考える場です。",
+      "vi": "Buổi nhìn lại này để cùng nghĩ ra cách cải tiến có thể thử lần tới, chứ không phải để quy lỗi cho ai.",
+      "terms": [
+        "改善策"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "～するための場です"
+    },
+    {
+      "id": "H-032-V13-004",
+      "group": "open",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "今日の話は火曜朝の通知の遅れと連絡の流れに絞り、予約画面の設計は別の機会に扱いましょう。",
+      "vi": "Hôm nay mình tập trung vào việc thông báo đến chậm sáng thứ Ba và cách chuyển tin, còn thiết kế màn hình đặt lịch để bàn dịp khác nhé.",
+      "terms": [
+        "絞る"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～に絞って～する"
+    },
+    {
+      "id": "H-032-V13-005",
+      "group": "keep",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "復旧時刻が分からない中でもお客様に状況を伝え続けられたのは、何が効いたと思いますか。",
+      "vi": "Theo mọi người, điều gì giúp mình vẫn báo được tình hình cho khách dù chưa biết giờ khôi phục?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～できたのは何が効いた"
+    },
+    {
+      "id": "H-032-V13-006",
+      "group": "keep",
+      "role_vi": "Thành viên phía vận hành",
+      "gender": "female",
+      "ja": "夕方の当番が交代時に問い合わせを引き継いでくれたおかげで、同じお客様に二度案内するのを防げました。",
+      "vi": "Nhờ người trực ca chiều tiếp nhận các câu hỏi khi đổi ca, mình tránh được việc báo cùng một khách hai lần.",
+      "terms": [
+        "当番"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "～のおかげで～を防げた"
+    },
+    {
+      "id": "H-032-V13-007",
+      "group": "keep",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "二重の案内がなかったのはたまたまかもしれませんが、連絡した時刻を残すやり方は次回も試せます。",
+      "vi": "Có thể tình cờ mà lần này không báo trùng, nhưng lần sau mình vẫn có thể thử ghi lại thời điểm đã liên hệ.",
+      "terms": [
+        "たまたま"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～かもしれないが次回も"
+    },
+    {
+      "id": "H-032-V13-008",
+      "group": "keep",
+      "role_vi": "Thành viên phía vận hành",
+      "gender": "female",
+      "ja": "夕方の当番には、通知待ちの予約など、引き継ぎに必要な情報だけを渡したいです。",
+      "vi": "Tôi muốn chỉ bàn giao cho ca chiều những tin cần thiết, như lượt đặt lịch nào vẫn chưa nhận được thông báo.",
+      "terms": [
+        "当番",
+        "引き継ぎ"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～に必要な情報だけを渡す"
+    },
+    {
+      "id": "H-032-V13-009",
+      "group": "facts",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "技術側の情報が窓口に届くまでに何があったか、時刻順に教えてください。",
+      "vi": "Mọi người kể theo thứ tự thời gian từ lúc bên kỹ thuật có thông tin đến lúc bộ phận tiếp nhận nhận được tin nhé.",
+      "terms": [
+        "時刻順"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を時刻順に教えてください"
+    },
+    {
+      "id": "H-032-V13-010",
+      "group": "facts",
+      "role_vi": "Thành viên phía kỹ thuật",
+      "gender": "female",
+      "ja": "十時十分に投稿した記録はありますが、窓口の担当が何時に閲覧したかはまだ分かりません。",
+      "vi": "Có ghi nhận tôi đã đăng tin lúc mười giờ mười, nhưng vẫn chưa rõ mấy giờ người trực ở bộ phận tiếp nhận mới đọc được.",
+      "terms": [
+        "投稿",
+        "閲覧"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～した記録はあるが～は分からない"
+    },
+    {
+      "id": "H-032-V13-011",
+      "group": "facts",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "連絡がなかったと結論づける前に、投稿の記録と運用側が見た時刻を突き合わせましょう。",
+      "vi": "Trước khi kết luận không ai báo, mình đối chiếu giờ đăng với thời điểm bên vận hành đọc được tin nhé.",
+      "terms": [
+        "投稿"
+      ],
+      "scenes": [
+        "S010",
+        "S013",
+        "S014"
+      ],
+      "pattern": "～前に～と～を突き合わせる"
+    },
+    {
+      "id": "H-032-V13-012",
+      "group": "facts",
+      "role_vi": "Thành viên phía vận hành",
+      "gender": "female",
+      "ja": "お客様への約束に影響する更新に絞って、投稿したあと窓口に一声かけてほしいです。",
+      "vi": "Tôi muốn bên kỹ thuật báo một tiếng cho bộ phận tiếp nhận sau khi đăng, riêng với các cập nhật ảnh hưởng đến cam kết với khách.",
+      "terms": [
+        "投稿",
+        "絞る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～に絞って～する"
+    },
+    {
+      "id": "H-032-V13-013",
+      "group": "trial",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "急ぎの更新だけ受信確認を試し、十分たっても確認がなければ投稿した人が一度だけ声をかける形にしませんか。",
+      "vi": "Mình thử đánh dấu đã nhận các cập nhật gấp thôi, nếu sau mười phút vẫn chưa có xác nhận thì để người đăng nhắc một lần được không?",
+      "terms": [
+        "受信確認",
+        "投稿"
+      ],
+      "scenes": [
+        "S011",
+        "S015"
+      ],
+      "pattern": "～だけ試しませんか"
+    },
+    {
+      "id": "H-032-V13-014",
+      "group": "trial",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "受信確認を試す前に、担当が席を外したときなど、見落としているリスクがあれば聞かせてください。",
+      "vi": "Trước khi thử xác nhận đã nhận tin, nếu còn nguy cơ nào mình chưa tính đến, chẳng hạn khi người phụ trách rời chỗ, mọi người góp ý nhé.",
+      "terms": [
+        "受信確認",
+        "見落とす"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～があれば聞かせてください"
+    },
+    {
+      "id": "H-032-V13-015",
+      "group": "trial",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "全チームへの自動通知は見送り、まず一チームの急ぎの更新に絞って、手動で受信確認を試しましょう。",
+      "vi": "Mình tạm gác việc gửi thông báo tự động cho tất cả các nhóm, trước hết thử xác nhận thủ công các cập nhật gấp ở một nhóm thôi nhé.",
+      "terms": [
+        "受信確認",
+        "見送る",
+        "絞る"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "～に絞って～する"
+    },
+    {
+      "id": "H-032-V13-016",
+      "group": "measure",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "急ぎの更新に確認印を付ける試行について、運用側の取りまとめをお願いできますか。",
+      "vi": "Trong đợt thử đánh dấu đã nhận các cập nhật gấp, chị có thể đứng ra điều phối phần việc bên vận hành được không?",
+      "terms": [
+        "試行"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～の担当をお願いできますか"
+    },
+    {
+      "id": "H-032-V13-017",
+      "group": "measure",
+      "role_vi": "Người phụ trách triển khai thử cải tiến",
+      "gender": "female",
+      "ja": "代行先にも急ぎの更新が届くと確認できてから、受信確認の試行を始めたいです。",
+      "vi": "Tôi muốn đợi đến khi xác nhận người trực thay cũng nhận được cập nhật gấp rồi mới thử cách đánh dấu đã nhận tin.",
+      "terms": [
+        "代行先",
+        "受信確認",
+        "試行"
+      ],
+      "scenes": [
+        "S019",
+        "S021"
+      ],
+      "pattern": "～を確認してから始めたい"
+    },
+    {
+      "id": "H-032-V13-018",
+      "group": "measure",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "次回は、投稿から確認までの時間、見落とした急ぎの更新の数、現場で増えた手間の三つを持ち寄りましょう。",
+      "vi": "Buổi họp sau, mình mang đến ghi nhận về ba việc: từ lúc đăng đến lúc xác nhận mất bao lâu, có bao nhiêu tin gấp bị bỏ sót và bên vận hành phải làm thêm những gì.",
+      "terms": [
+        "投稿",
+        "見落とす",
+        "手間",
+        "持ち寄る"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～の三つを持ち寄る"
+    },
+    {
+      "id": "H-032-V13-019",
+      "group": "next",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "急ぎの更新に確認印を付ける試行は、予定どおり始められましたか。",
+      "vi": "Đợt thử đánh dấu đã nhận cập nhật gấp đã bắt đầu theo kế hoạch chưa?",
+      "terms": [
+        "試行"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～は予定どおり始まりましたか"
+    },
+    {
+      "id": "H-032-V13-020",
+      "group": "next",
+      "role_vi": "Người phụ trách triển khai thử cải tiến",
+      "gender": "female",
+      "ja": "欠員で今週は代行先に連絡が届くか確かめられなかったので、新しい開始日はそこを確認してから決めたいです。",
+      "vi": "Tuần này thiếu người nên tôi chưa kiểm được tin có đến người trực thay không, tôi muốn xác nhận xong rồi mới chốt ngày bắt đầu mới.",
+      "terms": [
+        "欠員",
+        "代行先"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "～を確認してから決めたい"
+    },
+    {
+      "id": "H-032-V13-021",
+      "group": "next",
+      "role_vi": "Người phụ trách triển khai thử cải tiến",
+      "gender": "female",
+      "ja": "受信確認までの所要時間は平均八分でしたが、交代時には十五分かかった日もありました。",
+      "vi": "Thời gian đến lúc xác nhận trung bình là tám phút, nhưng có hôm vào lúc đổi ca phải mất mười lăm phút.",
+      "terms": [
+        "所要時間"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "平均では～だが～では"
+    },
+    {
+      "id": "H-032-V13-022",
+      "group": "next",
+      "role_vi": "Người điều phối buổi họp nhìn lại",
+      "gender": "male",
+      "ja": "一チームでの受信確認は継続し、時間帯別の結果がそろうまで、ほかのチームへの展開は保留しましょう。",
+      "vi": "Mình tiếp tục xác nhận đã nhận tin trong một nhóm và tạm hoãn mở rộng sang các nhóm khác cho đến khi có đủ kết quả theo từng khung giờ nhé.",
+      "terms": [
+        "受信確認",
+        "展開する",
+        "継続する",
+        "時間帯別"
+      ],
+      "scenes": [
+        "S023",
+        "S024"
+      ],
+      "pattern": "～まで継続し～は保留する"
+    }
+  ]
+}

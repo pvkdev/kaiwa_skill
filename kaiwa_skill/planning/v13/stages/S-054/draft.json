@@ -1,0 +1,378 @@
+{
+  "code": "S-054",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "04296917237504023738f39a70aacd8c568075c1c73e6196e162d78d3b673171",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "call": "Gọi cấp cứu và chỉ vị trí",
+    "observe": "Báo điều tận mắt thấy",
+    "guide": "Nhờ đón đội cấp cứu và chỉ lối vào",
+    "handover": "Bàn giao tình trạng và đầu mối"
+  },
+  "items": [
+    {
+      "id": "S-054-V13-001",
+      "group": "call",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "人が倒れたので、救急車をお願いします。",
+      "vi": "Có người vừa ngã, xin cho xe cấp cứu tới ạ.",
+      "terms": [
+        "倒れる",
+        "救急車"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜ので、救急車をお願いします"
+    },
+    {
+      "id": "S-054-V13-002",
+      "group": "call",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "あおい駅の北口の前にある、あおいビルの三階です。",
+      "vi": "Ở tầng ba tòa Aoi, ngay trước cửa bắc ga Aoi ạ.",
+      "terms": [
+        "北口",
+        "ビル",
+        "〜階"
+      ],
+      "scenes": [
+        "S001",
+        "S002",
+        "S004"
+      ],
+      "pattern": "場所を伝える"
+    },
+    {
+      "id": "S-054-V13-003",
+      "group": "call",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "建物の入口には青い看板があります。",
+      "vi": "Ở lối vào tòa nhà có biển hiệu màu xanh dương ạ.",
+      "terms": [
+        "建物",
+        "入口",
+        "青い",
+        "看板"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "〜には目印があります"
+    },
+    {
+      "id": "S-054-V13-004",
+      "group": "call",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "番地は分かりませんが、あおい駅の北口のすぐ前です。",
+      "vi": "Tôi không biết số nhà, nhưng ở ngay trước cửa bắc ga Aoi ạ.",
+      "terms": [
+        "番地",
+        "北口"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜は分かりませんが、〜です"
+    },
+    {
+      "id": "S-054-V13-005",
+      "group": "call",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "日本語なら、ゆっくり質問してもらえますか。",
+      "vi": "Nếu nói tiếng Nhật, anh hỏi chậm giúp tôi được không ạ?",
+      "terms": [
+        "ゆっくり"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-054-V13-006",
+      "group": "observe",
+      "role_vi": "Người tiếp nhận cuộc gọi cấp cứu",
+      "gender": "male",
+      "ja": "呼びかけたとき、その方は返事をしましたか。",
+      "vi": "Khi chị gọi, người đó có trả lời không ạ?",
+      "terms": [
+        "呼びかける",
+        "返事"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜たとき、〜しましたか"
+    },
+    {
+      "id": "S-054-V13-007",
+      "group": "observe",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "呼びかけると、目を開けて返事をしました。",
+      "vi": "Khi tôi gọi, người ấy mở mắt và trả lời ạ.",
+      "terms": [
+        "呼びかける",
+        "目",
+        "開ける",
+        "返事"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜と、〜しました"
+    },
+    {
+      "id": "S-054-V13-008",
+      "group": "observe",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "二分ぐらい前に、その人が倒れるところを見ました。",
+      "vi": "Khoảng hai phút trước, tôi tận mắt thấy người ấy ngã ạ.",
+      "terms": [
+        "〜分",
+        "倒れる",
+        "見る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜前に〜を見ました"
+    },
+    {
+      "id": "S-054-V13-009",
+      "group": "observe",
+      "role_vi": "Người báo mình không biết diễn biến trước lúc người ấy ngã",
+      "gender": "female",
+      "ja": "その人が倒れる前のことは、私は分かりません。",
+      "vi": "Tôi không biết chuyện trước lúc người ấy ngã ạ.",
+      "terms": [
+        "倒れる"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜前のことは分かりません"
+    },
+    {
+      "id": "S-054-V13-010",
+      "group": "observe",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "さっきは返事がありましたが、今は呼びかけても返事がありません。",
+      "vi": "Lúc nãy người ấy còn trả lời, giờ tôi gọi thì không đáp nữa ạ.",
+      "terms": [
+        "さっき",
+        "返事",
+        "呼びかける"
+      ],
+      "scenes": [
+        "S008",
+        "S013"
+      ],
+      "pattern": "さっきは〜ましたが、今は〜"
+    },
+    {
+      "id": "S-054-V13-011",
+      "group": "guide",
+      "role_vi": "Người nhờ người ở gần đón đội cấp cứu",
+      "gender": "female",
+      "ja": "北側の入口にある青い看板の前で、救急隊を迎えてください。",
+      "vi": "Anh ra trước biển hiệu xanh ở lối vào phía bắc đón đội cấp cứu giúp tôi ạ.",
+      "terms": [
+        "北側",
+        "入口",
+        "青い",
+        "看板",
+        "救急隊",
+        "迎える"
+      ],
+      "scenes": [
+        "S009",
+        "S011"
+      ],
+      "pattern": "〜の前で迎えてください"
+    },
+    {
+      "id": "S-054-V13-012",
+      "group": "guide",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "北側の入口は通れないので、東側の入口から入ってください。",
+      "vi": "Lối vào phía bắc không đi qua được, xin vào bằng cửa phía đông ạ.",
+      "terms": [
+        "北側",
+        "入口",
+        "通る",
+        "東側"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜ので、〜から入ってください"
+    },
+    {
+      "id": "S-054-V13-013",
+      "group": "guide",
+      "role_vi": "Người nhờ người ở gần đón đội cấp cứu",
+      "gender": "female",
+      "ja": "救急隊が来たら、倒れた人がいる三階まで案内してもらえますか。",
+      "vi": "Khi đội cấp cứu tới, anh dẫn họ lên tầng ba, chỗ người bị ngã, giúp tôi được không ạ?",
+      "terms": [
+        "救急隊",
+        "倒れる",
+        "〜階",
+        "案内する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-054-V13-014",
+      "group": "guide",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "東側からサイレンが聞こえますが、迎えの人は北側の入口にいます。",
+      "vi": "Tôi nghe tiếng còi ở phía đông, nhưng người ra đón đang ở lối vào phía bắc ạ.",
+      "terms": [
+        "東側",
+        "サイレン",
+        "聞こえる",
+        "北側",
+        "入口"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜ますが、〜にいます"
+    },
+    {
+      "id": "S-054-V13-015",
+      "group": "guide",
+      "role_vi": "Người gọi hỗ trợ cấp cứu",
+      "gender": "female",
+      "ja": "西側に入口はなく、東側は赤い自動販売機が目印です。",
+      "vi": "Phía tây không có lối vào, phía đông có máy bán hàng tự động màu đỏ làm mốc ạ.",
+      "terms": [
+        "入口",
+        "東側",
+        "自動販売機",
+        "目印"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜はなく、〜が目印です"
+    },
+    {
+      "id": "S-054-V13-016",
+      "group": "guide",
+      "role_vi": "Người nhờ người ở gần đón đội cấp cứu",
+      "gender": "female",
+      "ja": "今度は東側の自動販売機のそばで、救急隊を迎えてもらえますか。",
+      "vi": "Bây giờ anh ra cạnh máy bán hàng tự động phía đông đón đội cấp cứu giúp tôi được không ạ?",
+      "terms": [
+        "東側",
+        "自動販売機",
+        "救急隊",
+        "迎える"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜てもらえますか"
+    },
+    {
+      "id": "S-054-V13-017",
+      "group": "handover",
+      "role_vi": "Người trao đổi trực tiếp với đội cấp cứu",
+      "gender": "female",
+      "ja": "さっきは返事がありませんでしたが、今は目を開けました。",
+      "vi": "Lúc nãy gọi thì người ấy không đáp, giờ đã mở mắt rồi ạ.",
+      "terms": [
+        "さっき",
+        "返事",
+        "目",
+        "開ける"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "さっきは〜ましたが、今は〜"
+    },
+    {
+      "id": "S-054-V13-018",
+      "group": "handover",
+      "role_vi": "Người trao đổi trực tiếp với đội cấp cứu",
+      "gender": "female",
+      "ja": "近くにいた者なので、持病や飲んでいる薬は分かりません。",
+      "vi": "Tôi chỉ là người ở gần đó nên không biết người ấy có bệnh nền hay đang dùng thuốc gì ạ.",
+      "terms": [
+        "持病",
+        "薬"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜なので、〜は分かりません"
+    },
+    {
+      "id": "S-054-V13-019",
+      "group": "handover",
+      "role_vi": "Người trao đổi trực tiếp với đội cấp cứu",
+      "gender": "female",
+      "ja": "倒れた方のご家族が来たので、薬のことはこの方に聞いてください。",
+      "vi": "Người nhà của người bị ngã đã tới, anh hỏi người này về thuốc giúp tôi ạ.",
+      "terms": [
+        "倒れる",
+        "家族",
+        "薬"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜ので、〜てください"
+    },
+    {
+      "id": "S-054-V13-020",
+      "group": "handover",
+      "role_vi": "Người trao đổi trực tiếp với đội cấp cứu",
+      "gender": "female",
+      "ja": "ここを離れる前に、ほかに何か伝えておくことはありますか。",
+      "vi": "Trước khi rời đi, tôi còn cần báo thêm gì không ạ?",
+      "terms": [
+        "伝える"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜前に〜ことはありますか"
+    },
+    {
+      "id": "S-054-V13-021",
+      "group": "handover",
+      "role_vi": "Nhân viên đội cấp cứu",
+      "gender": "male",
+      "ja": "あとで確認することがあるかもしれないので、連絡先を教えてください。",
+      "vi": "Chị cho tôi xin thông tin liên lạc để chúng tôi tiện liên hệ nếu cần hỏi thêm nhé.",
+      "terms": [
+        "連絡先"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜かもしれないので、〜を教えてください"
+    }
+  ]
+}

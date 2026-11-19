@@ -1,0 +1,394 @@
+{
+  "code": "S-057",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "3d8f0be257012ef04dc955003ff2720d7c20f37ca0ce9a8b3a1cd7c469f6f29b",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "arrive": "Đến nơi và xin chỗ phù hợp",
+    "stay": "Hỏi đồ dùng và cách sinh hoạt",
+    "family": "Tìm người thân và cập nhật tin",
+    "move": "Báo đổi khu và chuyển nơi sơ tán"
+  },
+  "items": [
+    {
+      "id": "S-057-V13-001",
+      "group": "arrive",
+      "role_vi": "Người vừa đến nơi sơ tán",
+      "gender": "female",
+      "ja": "避難所の受付はどこですか。",
+      "vi": "Bàn tiếp nhận của nơi sơ tán ở đâu ạ?",
+      "terms": [
+        "避難所",
+        "受付"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_ở_đâu"
+    },
+    {
+      "id": "S-057-V13-002",
+      "group": "arrive",
+      "role_vi": "Người hỏi tại bàn tiếp nhận",
+      "gender": "female",
+      "ja": "この避難所にはまだ空きがありますか。",
+      "vi": "Nơi sơ tán này còn chỗ không ạ?",
+      "terms": [
+        "避難所",
+        "空き"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_còn_chỗ"
+    },
+    {
+      "id": "S-057-V13-003",
+      "group": "arrive",
+      "role_vi": "Nhân viên bàn tiếp nhận",
+      "gender": "male",
+      "ja": "この避難所は今いっぱいです。",
+      "vi": "Nơi sơ tán này hiện đã hết chỗ ạ.",
+      "terms": [
+        "避難所",
+        "いっぱい"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "báo_hết_chỗ"
+    },
+    {
+      "id": "S-057-V13-004",
+      "group": "arrive",
+      "role_vi": "Người đến cùng gia đình",
+      "gender": "female",
+      "ja": "子どもと祖母と一緒に休める場所はありますか。",
+      "vi": "Có chỗ nào để tôi nghỉ cùng con và bà tôi không ạ?",
+      "terms": [
+        "子ども",
+        "祖母"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_chỗ_phù_hợp"
+    },
+    {
+      "id": "S-057-V13-005",
+      "group": "arrive",
+      "role_vi": "Người được chỉ đến nơi sơ tán khác",
+      "gender": "female",
+      "ja": "次に行く避難所を地図で教えてください。",
+      "vi": "Xin chỉ giúp tôi trên bản đồ nơi sơ tán tôi cần đến tiếp ạ.",
+      "terms": [
+        "避難所",
+        "地図"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "nhờ_chỉ_vị_trí"
+    },
+    {
+      "id": "S-057-V13-006",
+      "group": "stay",
+      "role_vi": "Người hỏi khu nghỉ",
+      "gender": "female",
+      "ja": "家族が寝る場所はどこですか。",
+      "vi": "Chỗ ngủ của gia đình tôi ở đâu ạ?",
+      "terms": [
+        "家族",
+        "寝る"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "hỏi_ở_đâu"
+    },
+    {
+      "id": "S-057-V13-007",
+      "group": "stay",
+      "role_vi": "Người hỏi chỗ lấy nước",
+      "gender": "female",
+      "ja": "飲み水はどこでもらえますか。",
+      "vi": "Tôi có thể lấy nước uống ở đâu ạ?",
+      "terms": [
+        "飲み水"
+      ],
+      "scenes": [
+        "S005",
+        "S008"
+      ],
+      "pattern": "hỏi_chỗ_lấy_đồ"
+    },
+    {
+      "id": "S-057-V13-008",
+      "group": "stay",
+      "role_vi": "Người phụ trách phát nước",
+      "gender": "male",
+      "ja": "水は一人一本ずつ、列に並んで受け取ってください。",
+      "vi": "Mọi người xếp hàng nhận nước, mỗi người một chai nhé.",
+      "terms": [
+        "水",
+        "〜人",
+        "〜本",
+        "列",
+        "並ぶ",
+        "受け取る"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "phát_đồ_theo_lượt"
+    },
+    {
+      "id": "S-057-V13-009",
+      "group": "stay",
+      "role_vi": "Người hỏi đồ cho con",
+      "gender": "female",
+      "ja": "子どものおむつはここでもらえますか。",
+      "vi": "Tôi có thể xin tã cho con ở đây được không ạ?",
+      "terms": [
+        "子ども",
+        "おむつ"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hỏi_chỗ_lấy_đồ"
+    },
+    {
+      "id": "S-057-V13-010",
+      "group": "stay",
+      "role_vi": "Người muốn hỏi lại về tã",
+      "gender": "female",
+      "ja": "おむつのことは、何時にまた聞きに来ればいいですか。",
+      "vi": "Tôi nên quay lại lúc mấy giờ để hỏi về tã ạ?",
+      "terms": [
+        "おむつ"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_lúc_quay_lại"
+    },
+    {
+      "id": "S-057-V13-011",
+      "group": "stay",
+      "role_vi": "Người đi cùng bà",
+      "gender": "male",
+      "ja": "祖母の薬がもうすぐなくなるので、医療スタッフに相談したいです。",
+      "vi": "Thuốc bà tôi dùng sắp hết, tôi muốn hỏi ý kiến nhân viên y tế ạ.",
+      "terms": [
+        "祖母",
+        "薬",
+        "医療スタッフ"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "xin_gặp_người_hỗ_trợ"
+    },
+    {
+      "id": "S-057-V13-012",
+      "group": "stay",
+      "role_vi": "Người phụ trách khu nghỉ",
+      "gender": "male",
+      "ja": "新しいお知らせは一階の掲示板に出します。",
+      "vi": "Chúng tôi sẽ dán thông báo mới lên bảng ở tầng một ạ.",
+      "terms": [
+        "お知らせ",
+        "掲示板"
+      ],
+      "scenes": [
+        "S005",
+        "S008"
+      ],
+      "pattern": "chỉ_nơi_xem_thông_báo"
+    },
+    {
+      "id": "S-057-V13-013",
+      "group": "family",
+      "role_vi": "Người nhờ tìm mẹ",
+      "gender": "female",
+      "ja": "母とまだ連絡が取れません。",
+      "vi": "Tôi vẫn chưa liên lạc được với mẹ ạ.",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "báo_chưa_liên_lạc"
+    },
+    {
+      "id": "S-057-V13-014",
+      "group": "family",
+      "role_vi": "Người nhờ tìm mẹ",
+      "gender": "female",
+      "ja": "母に最後に会ったのは、今朝、さくら町の家です。",
+      "vi": "Lần cuối tôi gặp mẹ là sáng nay, ở nhà tại khu Sakura ạ.",
+      "terms": [
+        "最後"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "mốc_cuối_gặp"
+    },
+    {
+      "id": "S-057-V13-015",
+      "group": "family",
+      "role_vi": "Nhân viên hỗ trợ tìm người thân",
+      "gender": "male",
+      "ja": "同じ名前の方がお母様かどうか、避難所に確認します。",
+      "vi": "Chúng tôi sẽ hỏi nơi sơ tán đó để xác nhận người trùng tên có phải mẹ chị không ạ.",
+      "terms": [
+        "避難所"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "xác_nhận_đúng_người"
+    },
+    {
+      "id": "S-057-V13-016",
+      "group": "family",
+      "role_vi": "Người vừa nhận tin của mẹ",
+      "gender": "female",
+      "ja": "母から電話があって、無事だと分かりました。",
+      "vi": "Mẹ tôi vừa gọi, tôi biết mẹ đã an toàn rồi ạ.",
+      "terms": [
+        "無事"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "báo_tin_an_toàn"
+    },
+    {
+      "id": "S-057-V13-017",
+      "group": "family",
+      "role_vi": "Người chưa liên lạc được với mẹ",
+      "gender": "female",
+      "ja": "携帯の電波が入らないので、私のいる場所を受付に伝えてもいいですか。",
+      "vi": "Điện thoại tôi không có sóng, tôi để lại chỗ mình đang ở tại bàn tiếp nhận được không ạ?",
+      "terms": [
+        "電波",
+        "受付",
+        "伝える"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "để_lại_thông_tin"
+    },
+    {
+      "id": "S-057-V13-018",
+      "group": "move",
+      "role_vi": "Người ở cùng bà tại nơi sơ tán",
+      "gender": "female",
+      "ja": "祖母が眠れないので、もう少し静かな所に移れますか。",
+      "vi": "Bà tôi không ngủ được, chúng tôi chuyển sang chỗ yên hơn một chút được không ạ?",
+      "terms": [
+        "祖母",
+        "眠る",
+        "静か",
+        "移る"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "xin_chuyển_chỗ"
+    },
+    {
+      "id": "S-057-V13-019",
+      "group": "move",
+      "role_vi": "Người xác nhận chuyển khu",
+      "gender": "female",
+      "ja": "家族三人とも、新しい区画に移ってもいいですか。",
+      "vi": "Cả ba người nhà tôi đều có thể chuyển sang khu mới được không ạ?",
+      "terms": [
+        "家族",
+        "〜人",
+        "区画",
+        "移る"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "hỏi_ai_được_chuyển"
+    },
+    {
+      "id": "S-057-V13-020",
+      "group": "move",
+      "role_vi": "Người báo đổi điểm đến",
+      "gender": "male",
+      "ja": "行き先が北小学校から北体育館に変わりました。",
+      "vi": "Nơi chúng tôi đến đã đổi từ Trường Tiểu học Kita sang Nhà thi đấu Kita ạ.",
+      "terms": [
+        "行き先",
+        "体育館"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "báo_đổi_điểm_đến"
+    },
+    {
+      "id": "S-057-V13-021",
+      "group": "move",
+      "role_vi": "Người báo xe chưa đến",
+      "gender": "female",
+      "ja": "車がまだ来ないので、家族三人ともここで待っています。",
+      "vi": "Xe chưa đến nên cả ba người nhà tôi vẫn đang đợi ở đây ạ.",
+      "terms": [
+        "家族",
+        "〜人",
+        "待つ"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "báo_vị_trí_hiện_tại"
+    },
+    {
+      "id": "S-057-V13-022",
+      "group": "move",
+      "role_vi": "Người báo bàn tiếp nhận sau khi đổi khu",
+      "gender": "male",
+      "ja": "家族で二階のBに移ったので、受付の記録を変えてもらえますか。",
+      "vi": "Gia đình tôi đã chuyển sang khu B tầng hai, anh cập nhật giúp chỗ ở trong sổ tiếp nhận được không ạ?",
+      "terms": [
+        "家族",
+        "移る",
+        "受付",
+        "記録"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "nhờ_cập_nhật"
+    },
+    {
+      "id": "S-057-V13-023",
+      "group": "move",
+      "role_vi": "Người sắp rời nơi sơ tán",
+      "gender": "female",
+      "ja": "新しい避難所に着いたら、どの番号に連絡すればいいですか。",
+      "vi": "Khi đến nơi sơ tán mới, tôi cần gọi số nào ạ?",
+      "terms": [
+        "避難所",
+        "着く"
+      ],
+      "scenes": [
+        "S016",
+        "S013"
+      ],
+      "pattern": "hỏi_đầu_mối"
+    }
+  ]
+}

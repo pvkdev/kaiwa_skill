@@ -1,0 +1,380 @@
+{
+  "code": "S-010",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b262cfb4bd1052013fb0fdbbf7e34c77009d72e4fff39496181d6dea6338a53e",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Hỏi đường và xác nhận chỗ rẽ",
+    "landmarks": "Xác nhận mốc và hỏi tiếp",
+    "detour": "Đổi lối khi đi nhầm hoặc đường bị chặn",
+    "guide": "Chỉ đường và sửa hướng rẽ"
+  },
+  "items": [
+    {
+      "id": "S-010-V13-001",
+      "group": "ask",
+      "role_vi": "Người đi bộ hỏi bưu điện có gần đây không",
+      "gender": "female",
+      "ja": "郵便局はこの辺ですか。",
+      "vi": "Bưu điện có ở gần đây không ạ?",
+      "terms": [
+        "郵便局",
+        "この辺"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "place_wa_konohen"
+    },
+    {
+      "id": "S-010-V13-002",
+      "group": "ask",
+      "role_vi": "Người địa phương nói quãng đường từ chỗ đứng đến bưu điện",
+      "gender": "male",
+      "ja": "郵便局まで歩いて五分ぐらいです。",
+      "vi": "Đi bộ đến bưu điện khoảng năm phút ạ.",
+      "terms": [
+        "郵便局",
+        "歩く"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "made_aruite_duration"
+    },
+    {
+      "id": "S-010-V13-003",
+      "group": "ask",
+      "role_vi": "Người đi bộ muốn biết chính xác rẽ trái ở ngã nào",
+      "gender": "female",
+      "ja": "どの角で左に曲がりますか。",
+      "vi": "Tôi rẽ trái ở góc nào ạ?",
+      "terms": [
+        "角",
+        "左",
+        "曲がる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "dono_kado_de"
+    },
+    {
+      "id": "S-010-V13-004",
+      "group": "ask",
+      "role_vi": "Người địa phương chỉ rẽ vào đúng ngã thứ hai",
+      "gender": "male",
+      "ja": "二つ目の角を左に曲がってください。",
+      "vi": "Chị rẽ trái ở góc thứ hai nhé.",
+      "terms": [
+        "二つ目",
+        "角",
+        "左",
+        "曲がる"
+      ],
+      "scenes": [
+        "S002",
+        "S005"
+      ],
+      "pattern": "kado_wo_direction_te"
+    },
+    {
+      "id": "S-010-V13-005",
+      "group": "ask",
+      "role_vi": "Người hỏi đường nhắc lại đã nhận ra chỗ rẽ cạnh cửa hàng tiện lợi",
+      "gender": "female",
+      "ja": "コンビニの角を左ですね。",
+      "vi": "Rẽ trái ở góc cửa hàng tiện lợi, đúng không ạ?",
+      "terms": [
+        "コンビニ",
+        "角",
+        "左"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "detail_desu_ne"
+    },
+    {
+      "id": "S-010-V13-006",
+      "group": "landmarks",
+      "role_vi": "Người hỏi đường xin nghe lại tên tòa nhà được dùng làm mốc",
+      "gender": "female",
+      "ja": "ビルの名前をもう一度お願いします。",
+      "vi": "Anh nhắc lại tên tòa nhà giúp tôi với ạ.",
+      "terms": [
+        "もう一度"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "detail_mou_ichido"
+    },
+    {
+      "id": "S-010-V13-007",
+      "group": "landmarks",
+      "role_vi": "Người địa phương chỉ vị trí bưu điện bằng tòa nhà bên cạnh",
+      "gender": "male",
+      "ja": "郵便局は青葉ビルの隣です。",
+      "vi": "Bưu điện ở cạnh tòa nhà Aoba ạ.",
+      "terms": [
+        "郵便局",
+        "隣"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "noun_wa_place_no_tonari"
+    },
+    {
+      "id": "S-010-V13-008",
+      "group": "landmarks",
+      "role_vi": "Người hỏi đường muốn biết có thể hỏi tiếp ở quầy trong ga không",
+      "gender": "female",
+      "ja": "駅の案内所で道を聞けますか。",
+      "vi": "Tôi hỏi đường ở quầy thông tin trong ga được không ạ?",
+      "terms": [
+        "案内所",
+        "道",
+        "聞く"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "place_de_potential_ka"
+    },
+    {
+      "id": "S-010-V13-009",
+      "group": "landmarks",
+      "role_vi": "Người địa phương chỉ lối nhỏ cạnh tiệm bánh",
+      "gender": "male",
+      "ja": "パン屋の右に細い道があります。",
+      "vi": "Bên phải tiệm bánh có một lối nhỏ ạ.",
+      "terms": [
+        "右",
+        "細い",
+        "道"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "place_ni_noun_ga_arimasu"
+    },
+    {
+      "id": "S-010-V13-010",
+      "group": "landmarks",
+      "role_vi": "Người đi bộ hỏi người địa phương về lối vào trung tâm từ chỗ tiệm bánh",
+      "gender": "female",
+      "ja": "パン屋からセンターまでどう行きますか。",
+      "vi": "Từ tiệm bánh đến trung tâm thì đi thế nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "kara_made_dou_ikimasu"
+    },
+    {
+      "id": "S-010-V13-011",
+      "group": "detour",
+      "role_vi": "Người đi nhầm cửa ga xác nhận mình thực ra đang ở cửa nam",
+      "gender": "female",
+      "ja": "ここは北口じゃなくて南口ですね。",
+      "vi": "Đây là cửa nam, không phải cửa bắc, đúng không ạ?",
+      "terms": [
+        "北口",
+        "南口"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "a_ja_nakute_b"
+    },
+    {
+      "id": "S-010-V13-012",
+      "group": "detour",
+      "role_vi": "Người đi bộ đứng ở cửa nam hỏi đường tới cửa bắc",
+      "gender": "male",
+      "ja": "南口から北口までどう行きますか。",
+      "vi": "Từ cửa nam đến cửa bắc thì đi thế nào ạ?",
+      "terms": [
+        "南口",
+        "北口"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "kara_made_dou_ikimasu"
+    },
+    {
+      "id": "S-010-V13-013",
+      "group": "detour",
+      "role_vi": "Người qua đường chỉ cách đi từ cửa này sang cửa kia của ga",
+      "gender": "male",
+      "ja": "駅の外を回って反対側へ行ってください。",
+      "vi": "Chị đi vòng bên ngoài ga sang phía đối diện nhé.",
+      "terms": [
+        "外",
+        "回る",
+        "反対側"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "te_destination_e_ikimasu"
+    },
+    {
+      "id": "S-010-V13-014",
+      "group": "detour",
+      "role_vi": "Người đi bộ hỏi lối khác vì đường quen tới thư viện bị chắn",
+      "gender": "female",
+      "ja": "図書館へ行く別の道はありますか。",
+      "vi": "Có đường khác tới thư viện không ạ?",
+      "terms": [
+        "道"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "betu_no_noun_wa_arimasu"
+    },
+    {
+      "id": "S-010-V13-015",
+      "group": "detour",
+      "role_vi": "Người đi đường gọi bạn đang chờ để báo vị trí hiện tại",
+      "gender": "female",
+      "ja": "今、公園の前にいるよ。",
+      "vi": "Mình đang đứng trước công viên nè.",
+      "terms": [
+        "公園",
+        "前"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "ima_place_ni_iru"
+    },
+    {
+      "id": "S-010-V13-016",
+      "group": "detour",
+      "role_vi": "Người phải đi vòng báo cho bạn lối mình sẽ đi",
+      "gender": "male",
+      "ja": "郵便局の前を通って行くよ。",
+      "vi": "Mình sẽ đi qua trước bưu điện nhé.",
+      "terms": [
+        "郵便局",
+        "前",
+        "通る"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "place_wo_tootte_iku"
+    },
+    {
+      "id": "S-010-V13-017",
+      "group": "guide",
+      "role_vi": "Người dẫn đường hỏi khách định đi bộ hay đi tàu",
+      "gender": "female",
+      "ja": "歩いて行きますか、それとも電車で行きますか。",
+      "vi": "Anh định đi bộ hay đi tàu ạ?",
+      "terms": [
+        "歩く"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "a_ka_soretomo_b_ka"
+    },
+    {
+      "id": "S-010-V13-018",
+      "group": "guide",
+      "role_vi": "Người địa phương chỉ mốc đầu trên đường đến thư viện",
+      "gender": "male",
+      "ja": "まず公園までまっすぐ行ってください。",
+      "vi": "Trước tiên anh đi thẳng đến công viên nhé.",
+      "terms": [
+        "公園",
+        "まっすぐ"
+      ],
+      "scenes": [
+        "S011",
+        "S012",
+        "S014"
+      ],
+      "pattern": "made_massugu_te"
+    },
+    {
+      "id": "S-010-V13-019",
+      "group": "guide",
+      "role_vi": "Người chỉ đường nói bước tiếp theo ở hiệu sách",
+      "gender": "female",
+      "ja": "次に、本屋の角を左に曲がってください。",
+      "vi": "Sau đó, anh rẽ trái ở góc hiệu sách nhé.",
+      "terms": [
+        "本屋",
+        "角",
+        "左",
+        "曲がる"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "kado_wo_direction_te"
+    },
+    {
+      "id": "S-010-V13-020",
+      "group": "guide",
+      "role_vi": "Người địa phương nói rõ mình chỉ biết đường đến công viên",
+      "gender": "male",
+      "ja": "公園までの道しかわかりません。",
+      "vi": "Tôi chỉ biết đường đến công viên thôi ạ.",
+      "terms": [
+        "公園",
+        "道"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "shika_negative"
+    },
+    {
+      "id": "S-010-V13-021",
+      "group": "guide",
+      "role_vi": "Người địa phương sửa lời nhắc lại sai hướng của người hỏi",
+      "gender": "female",
+      "ja": "公園の角は右じゃなくて左です。",
+      "vi": "Tới góc công viên thì rẽ trái, không phải rẽ phải ạ.",
+      "terms": [
+        "公園",
+        "角",
+        "右",
+        "左"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "a_ja_nakute_b"
+    },
+    {
+      "id": "S-010-V13-022",
+      "group": "guide",
+      "role_vi": "Người chỉ đường kiểm người kia đã nhìn ra mốc công viên chưa",
+      "gender": "female",
+      "ja": "あそこに公園が見えますか。",
+      "vi": "Anh thấy công viên đằng kia không ạ?",
+      "terms": [
+        "あそこ",
+        "公園",
+        "見える"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "place_ni_miemasu"
+    }
+  ]
+}

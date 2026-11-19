@@ -1,0 +1,361 @@
+{
+  "code": "H-046",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "cf89ef9e1d55e9fb9f2707f208136859db8f9cbdcbbf9d1836042d28c3c012da",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "move": "Nói lý do muốn chuyển nhà và hỏi ưu tiên",
+    "care": "Chia việc chăm sóc và nói phần mình làm được",
+    "children": "Nghe ý con trước khi chọn cách hỗ trợ",
+    "disagree": "Nói điều chưa đồng ý và giữ cuộc trao đổi",
+    "trial": "Thử có thời hạn và hỏi lại người liên quan"
+  },
+  "items": [
+    {
+      "id": "H-046-V13-001",
+      "group": "move",
+      "role_vi": "Người vợ nói với chồng",
+      "gender": "female",
+      "ja": "母の近くに引っ越そうかと思ってる。",
+      "vi": "Em đang tính có nên chuyển đến ở gần mẹ không.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "tentative_intention"
+    },
+    {
+      "id": "H-046-V13-002",
+      "group": "move",
+      "role_vi": "Người con gái nói với mẹ",
+      "gender": "female",
+      "ja": "母さんは、通院の日に何が一番大変？",
+      "vi": "Mẹ thấy vất vả nhất chuyện gì vào ngày đi khám ạ?",
+      "terms": [
+        "通院"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "ask_main_difficulty"
+    },
+    {
+      "id": "H-046-V13-003",
+      "group": "move",
+      "role_vi": "Người mẹ lớn tuổi nói với con gái",
+      "gender": "female",
+      "ja": "買い物は、できるうちは自分で続けたいの。",
+      "vi": "Chừng nào còn tự đi mua đồ được, mẹ vẫn muốn tự đi.",
+      "terms": [],
+      "scenes": [
+        "S002",
+        "S006"
+      ],
+      "pattern": "express_self_choice"
+    },
+    {
+      "id": "H-046-V13-004",
+      "group": "move",
+      "role_vi": "Người vợ nói với chồng",
+      "gender": "female",
+      "ja": "引っ越しを決めたわけじゃなくて、候補地ごとに通勤にかかる時間と通学時間を比べたいの。",
+      "vi": "Em chưa chốt chuyển nhà, em muốn so thời gian đi làm và đi học ở từng khu đang cân nhắc.",
+      "terms": [
+        "候補地",
+        "通学時間"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-046-V13-005",
+      "group": "move",
+      "role_vi": "Người chồng nói với vợ",
+      "gender": "male",
+      "ja": "お義母さんの近くに住むなら、僕たちが普段使う駅や店にも行きやすいか、先に確かめない？",
+      "vi": "Nếu ở gần mẹ em, mình xem trước có tiện đi đến ga và các cửa hàng nhà mình hay dùng không nhé?",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "nara_check_first"
+    },
+    {
+      "id": "H-046-V13-006",
+      "group": "care",
+      "role_vi": "Người con gái nói với mẹ",
+      "gender": "female",
+      "ja": "通院の予約は私が確認するけど、付き添いが必要な日は母さんが決めてね。",
+      "vi": "Lịch đi khám để con xác nhận, còn hôm nào cần người đi cùng thì mẹ chọn nhé.",
+      "terms": [
+        "通院",
+        "付き添う"
+      ],
+      "scenes": [
+        "S004",
+        "S006",
+        "S007",
+        "S019"
+      ],
+      "pattern": "divide_choice"
+    },
+    {
+      "id": "H-046-V13-007",
+      "group": "care",
+      "role_vi": "Người anh trai nói với em gái",
+      "gender": "male",
+      "ja": "診察の時間を電話で確かめるならできるけど、月曜の朝は仕事があるから送迎までは引き受けられないよ。",
+      "vi": "Gọi điện xác nhận giờ khám thì anh làm được, nhưng sáng thứ Hai anh phải đi làm nên không đưa đón mẹ được.",
+      "terms": [
+        "送迎",
+        "引き受ける"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "partial_capacity"
+    },
+    {
+      "id": "H-046-V13-008",
+      "group": "care",
+      "role_vi": "Người em gái nói với anh trai",
+      "gender": "female",
+      "ja": "母さんの通院で、急な変更への対応がお兄ちゃんに偏ってるなら、私が代われる日を一緒に考えない？",
+      "vi": "Nếu chuyện xoay xở khi lịch khám của mẹ đổi gấp cứ dồn hết cho anh, mình xem hôm nào em có thể làm thay anh nhé?",
+      "terms": [
+        "通院",
+        "偏る"
+      ],
+      "scenes": [
+        "S008",
+        "S010"
+      ],
+      "pattern": "ask_about_burden"
+    },
+    {
+      "id": "H-046-V13-009",
+      "group": "care",
+      "role_vi": "Người mẹ lớn tuổi nói với con gái",
+      "gender": "female",
+      "ja": "介護のサービスを申し込むかどうかは、まずどんな手助けがあるのか聞いてから考えたいな。",
+      "vi": "Mẹ muốn nghe trước xem có những cách hỗ trợ nào rồi mới tính chuyện có đăng ký dịch vụ chăm sóc hay không.",
+      "terms": [
+        "介護"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "ask_before_deciding"
+    },
+    {
+      "id": "H-046-V13-010",
+      "group": "children",
+      "role_vi": "Người mẹ nói với con đang đi học",
+      "gender": "female",
+      "ja": "放課後に何をするか、まずはあなたがやってみたいことを聞かせて。",
+      "vi": "Mẹ muốn nghe con muốn thử làm gì sau giờ học trước đã.",
+      "terms": [
+        "放課後"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "invite_preference_first"
+    },
+    {
+      "id": "H-046-V13-011",
+      "group": "children",
+      "role_vi": "Người con đang đi học nói với mẹ",
+      "gender": "female",
+      "ja": "美術部に興味はあるけど、帰りが遅くなる曜日を確かめてから決めたいな。",
+      "vi": "Con thích câu lạc bộ mỹ thuật, nhưng con muốn xem hôm nào sẽ về muộn rồi mới quyết.",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "ask_before_deciding"
+    },
+    {
+      "id": "H-046-V13-012",
+      "group": "children",
+      "role_vi": "Người chồng nói với vợ",
+      "gender": "male",
+      "ja": "補習のこと、先生がうちの子に勧めたのか、それとも希望者全員に向けた案内なのか、僕が聞いてみるよ。",
+      "vi": "Chuyện phụ đạo, để anh hỏi xem thầy cô khuyên riêng con mình đi học hay chỉ thông báo chung cho các em có nhu cầu.",
+      "terms": [
+        "補習"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "verify_two_readings"
+    },
+    {
+      "id": "H-046-V13-013",
+      "group": "children",
+      "role_vi": "Người mẹ nói với con đang đi học",
+      "gender": "female",
+      "ja": "学校であったことは話せるときでいいから、今日の帰りに助けがいるかだけ教えてくれる？",
+      "vi": "Chuyện ở trường khi nào nói được thì kể, giờ con chỉ cho mẹ biết hôm nay lúc về có cần mẹ giúp gì không nhé?",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "limit_question"
+    },
+    {
+      "id": "H-046-V13-014",
+      "group": "children",
+      "role_vi": "Người vợ nói với chồng",
+      "gender": "female",
+      "ja": "勉強は手伝いたいけど、部活と両立できるかどうか、まず本人に聞いてみない？",
+      "vi": "Em muốn giúp con học, nhưng mình hỏi con trước xem có thu xếp được cả việc học lẫn câu lạc bộ không nhé?",
+      "terms": [
+        "両立する"
+      ],
+      "scenes": [
+        "S012",
+        "S015"
+      ],
+      "pattern": "invite_preference_first"
+    },
+    {
+      "id": "H-046-V13-015",
+      "group": "disagree",
+      "role_vi": "Người con gái nói với mẹ",
+      "gender": "female",
+      "ja": "通院が心配なのは分かるけど、今すぐ同居することにはまだ賛成できないの。",
+      "vi": "Con hiểu mẹ lo chuyện đi khám, nhưng con vẫn chưa đồng ý chuyển sang sống chung ngay.",
+      "terms": [
+        "通院",
+        "同居する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "acknowledge_and_disagree"
+    },
+    {
+      "id": "H-046-V13-016",
+      "group": "disagree",
+      "role_vi": "Người mẹ lớn tuổi nói với con gái",
+      "gender": "female",
+      "ja": "同居を押し付けたいわけじゃなくて、これからどう支えてもらえたら安心か、一緒に考えたいの。",
+      "vi": "Mẹ không muốn ép các con sống chung, mẹ muốn cùng bàn xem từ giờ được giúp thế nào thì mẹ yên tâm.",
+      "terms": [
+        "押し付ける"
+      ],
+      "scenes": [
+        "S016",
+        "S017",
+        "S018"
+      ],
+      "pattern": "wake_janai"
+    },
+    {
+      "id": "H-046-V13-017",
+      "group": "disagree",
+      "role_vi": "Người con gái nói với mẹ",
+      "gender": "female",
+      "ja": "このままだときつい言い方をしそうだから、いったん休んで、日曜の午後に同居の話を続けない？",
+      "vi": "Nếu nói tiếp lúc này chắc con sẽ nặng lời, mình tạm dừng rồi chiều Chủ nhật bàn tiếp chuyện ở chung nhé?",
+      "terms": [
+        "いったん"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "pause_and_reschedule"
+    },
+    {
+      "id": "H-046-V13-018",
+      "group": "disagree",
+      "role_vi": "Người con gái nói với mẹ",
+      "gender": "female",
+      "ja": "同居するなら家族みんなの暮らしが変わるから、夫と子どもの希望も聞いてから決めたいな。",
+      "vi": "Nếu sống chung thì sinh hoạt cả nhà sẽ thay đổi, nên con muốn nghe cả ý của chồng con và của cháu rồi mới quyết.",
+      "terms": [
+        "同居する"
+      ],
+      "scenes": [
+        "S005",
+        "S018"
+      ],
+      "pattern": "invite_preference_first"
+    },
+    {
+      "id": "H-046-V13-019",
+      "group": "trial",
+      "role_vi": "Người con gái nói với mẹ",
+      "gender": "female",
+      "ja": "当面は同居を見送って、試しに一か月だけ、通院の日の手伝いをみんなで分担してみない？",
+      "vi": "Trước mắt mình khoan sống chung, thử một tháng cả nhà chia nhau giúp mẹ những hôm đi khám nhé?",
+      "terms": [
+        "当面",
+        "見送る",
+        "試しに",
+        "通院",
+        "分担する"
+      ],
+      "scenes": [
+        "S004",
+        "S019"
+      ],
+      "pattern": "trial_limited_time"
+    },
+    {
+      "id": "H-046-V13-020",
+      "group": "trial",
+      "role_vi": "Người em gái nói với anh trai",
+      "gender": "female",
+      "ja": "通院の手伝いを一か月やってみて、私たちだけで決めずに、母さんにも何が助かったか聞いてから、分担を見直そう。",
+      "vi": "Thử giúp mẹ đi khám một tháng rồi, hai anh em mình đừng tự quyết, hãy hỏi mẹ việc gì có ích cho mẹ rồi xem lại cách chia việc nhé.",
+      "terms": [
+        "通院",
+        "見直す"
+      ],
+      "scenes": [
+        "S005",
+        "S010",
+        "S019"
+      ],
+      "pattern": "review_with_affected_person"
+    },
+    {
+      "id": "H-046-V13-021",
+      "group": "trial",
+      "role_vi": "Người chồng nói với vợ",
+      "gender": "male",
+      "ja": "子どもがやってみたいなら、勉強を手伝うのは今月だけ週に一回にして、月末に三人で続けるか話そう。",
+      "vi": "Nếu con muốn thử thì tháng này mình giúp con học mỗi tuần một buổi, cuối tháng cả ba cùng bàn xem có tiếp tục không.",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "trial_limited_time"
+    },
+    {
+      "id": "H-046-V13-022",
+      "group": "trial",
+      "role_vi": "Người mẹ lớn tuổi nói với con gái",
+      "gender": "female",
+      "ja": "通院のとき手伝ってくれるのは助かるけど、一か月たったら、私が自分でできたことも聞いてね。",
+      "vi": "Các con giúp lúc đi khám thì mẹ đỡ nhiều, nhưng sau một tháng nhớ hỏi cả những việc mẹ tự làm được nhé.",
+      "terms": [
+        "通院"
+      ],
+      "scenes": [
+        "S005",
+        "S019"
+      ],
+      "pattern": "request_review_own_independence"
+    }
+  ]
+}

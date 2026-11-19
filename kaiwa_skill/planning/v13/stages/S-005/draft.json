@@ -1,0 +1,367 @@
+{
+  "code": "S-005",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "80c1c2324215a20bae34fd8c4fdaf74233f31be13c3ec60cafc2306af3a2ebd4",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "basics": "Nói mình đang tìm phòng thế nào",
+    "needs": "Hỏi về các điều kiện ở",
+    "visit": "Hẹn và hỏi lại giờ xem phòng",
+    "fees": "Hỏi tiền thuê và các khoản phí",
+    "decide": "Xin cân nhắc và hẹn báo lại"
+  },
+  "items": [
+    {
+      "id": "S-005-V13-001",
+      "group": "basics",
+      "role_vi": "Người thuê mở lời với nhân viên môi giới gần ga",
+      "gender": "female",
+      "ja": "駅の近くで部屋を探しています。",
+      "vi": "Tôi đang tìm phòng gần ga ạ.",
+      "terms": [
+        "近く",
+        "部屋",
+        "探す"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "noun_wo_sagashiteimasu"
+    },
+    {
+      "id": "S-005-V13-002",
+      "group": "basics",
+      "role_vi": "Người thuê trả lời sẽ ở một mình",
+      "gender": "male",
+      "ja": "一人で住みます。",
+      "vi": "Tôi sẽ ở một mình ạ.",
+      "terms": [
+        "住む"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hitori_de_sumimasu"
+    },
+    {
+      "id": "S-005-V13-003",
+      "group": "basics",
+      "role_vi": "Người thuê nói mức tiền nhà tối đa mỗi tháng",
+      "gender": "female",
+      "ja": "家賃は毎月七万円までです。",
+      "vi": "Tôi có thể trả tiền thuê tối đa 70.000 yên mỗi tháng ạ.",
+      "terms": [
+        "家賃",
+        "毎月"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "amount_made_desu"
+    },
+    {
+      "id": "S-005-V13-004",
+      "group": "basics",
+      "role_vi": "Người thuê hỏi xem có căn hơi xa ga hơn trong tầm tiền không",
+      "gender": "male",
+      "ja": "駅から少し遠い部屋はありますか。",
+      "vi": "Có căn nào xa ga hơn một chút không ạ?",
+      "terms": [
+        "遠い",
+        "部屋"
+      ],
+      "scenes": [
+        "S004",
+        "S012"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-005-V13-005",
+      "group": "needs",
+      "role_vi": "Người thuê báo trước với môi giới rằng mình có nuôi mèo",
+      "gender": "female",
+      "ja": "猫を飼っています。",
+      "vi": "Tôi có nuôi mèo ạ.",
+      "terms": [
+        "飼う"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "pet_wo_katteimasu"
+    },
+    {
+      "id": "S-005-V13-006",
+      "group": "needs",
+      "role_vi": "Người thuê hỏi môi giới về nhà cho nuôi thú cưng",
+      "gender": "female",
+      "ja": "ペットと住める部屋はありますか。",
+      "vi": "Có căn nào cho ở cùng thú cưng không ạ?",
+      "terms": [
+        "ペット",
+        "住む",
+        "部屋"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-005-V13-007",
+      "group": "needs",
+      "role_vi": "Người thuê nói quãng đi bộ từ ga mình chấp nhận được",
+      "gender": "male",
+      "ja": "駅から歩いて十分以内がいいです。",
+      "vi": "Tôi muốn chỗ đi bộ từ ga không quá mười phút ạ.",
+      "terms": [
+        "以内"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "condition_ga_ii_desu"
+    },
+    {
+      "id": "S-005-V13-008",
+      "group": "needs",
+      "role_vi": "Người thuê cho môi giới biết mình thích căn có ánh sáng",
+      "gender": "female",
+      "ja": "明るい部屋がいいです。",
+      "vi": "Tôi thích căn sáng sủa ạ.",
+      "terms": [
+        "明るい",
+        "部屋"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "condition_ga_ii_desu"
+    },
+    {
+      "id": "S-005-V13-009",
+      "group": "visit",
+      "role_vi": "Khách gọi cho môi giới về phòng còn đăng trong quảng cáo",
+      "gender": "female",
+      "ja": "広告の二〇一号室はまだ見られますか。",
+      "vi": "Phòng 201 trên tin đăng còn xem được không ạ?",
+      "terms": [
+        "広告",
+        "号室"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "noun_wa_miraremasu_ka"
+    },
+    {
+      "id": "S-005-V13-010",
+      "group": "visit",
+      "role_vi": "Khách đề xuất buổi xem vào một giờ cụ thể",
+      "gender": "male",
+      "ja": "火曜日の午後三時に部屋を見られますか。",
+      "vi": "Chiều thứ Ba lúc ba giờ tôi đến xem phòng được không ạ?",
+      "terms": [
+        "部屋"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "noun_wo_miraremasu_ka"
+    },
+    {
+      "id": "S-005-V13-011",
+      "group": "visit",
+      "role_vi": "Nhân viên môi giới đề nghị điểm gặp trước khi đi xem phòng",
+      "gender": "male",
+      "ja": "青葉駅の北口で会いましょう。",
+      "vi": "Mình gặp ở cửa phía bắc ga Aoba nhé.",
+      "terms": [
+        "会う"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "place_de_aimashou"
+    },
+    {
+      "id": "S-005-V13-012",
+      "group": "visit",
+      "role_vi": "Khách hỏi khi nào môi giới sẽ liên lạc về giờ xem nhà",
+      "gender": "female",
+      "ja": "いつごろ連絡をいただけますか。",
+      "vi": "Khoảng khi nào tôi sẽ nhận được tin ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "itsugoro_receive"
+    },
+    {
+      "id": "S-005-V13-013",
+      "group": "visit",
+      "role_vi": "Nhân viên môi giới hẹn gọi báo tình hình trong ngày",
+      "gender": "male",
+      "ja": "今日の六時までに連絡します。",
+      "vi": "Tôi sẽ liên lạc chậm nhất là sáu giờ hôm nay ạ.",
+      "terms": [
+        "連絡する"
+      ],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "time_made_ni_verb"
+    },
+    {
+      "id": "S-005-V13-014",
+      "group": "visit",
+      "role_vi": "Khách gọi lại khi chưa có tin xác nhận lịch xem phòng",
+      "gender": "female",
+      "ja": "内見の時間は決まりましたか。",
+      "vi": "Giờ xem phòng đã chốt chưa ạ?",
+      "terms": [
+        "内見",
+        "決まる"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "noun_wa_kimarimashita_ka"
+    },
+    {
+      "id": "S-005-V13-015",
+      "group": "visit",
+      "role_vi": "Khách hỏi về căn khác có thể xem ngay khi phòng hẹn không xem được",
+      "gender": "female",
+      "ja": "ほかに今見られる部屋はありますか。",
+      "vi": "Có căn nào khác xem được ngay bây giờ không ạ?",
+      "terms": [
+        "部屋"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-005-V13-016",
+      "group": "fees",
+      "role_vi": "Người thuê hỏi còn khoản gì trả hằng tháng ngoài tiền thuê",
+      "gender": "female",
+      "ja": "家賃のほかに、毎月払うお金はありますか。",
+      "vi": "Ngoài tiền thuê nhà, còn khoản nào phải trả hằng tháng không ạ?",
+      "terms": [
+        "家賃",
+        "毎月",
+        "払う"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-005-V13-017",
+      "group": "fees",
+      "role_vi": "Người thuê kiểm có phải phí quản lý trả mỗi tháng hay không",
+      "gender": "female",
+      "ja": "管理費は毎月払うんですか。",
+      "vi": "Phí quản lý tháng nào cũng phải trả ạ?",
+      "terms": [
+        "管理費",
+        "毎月",
+        "払う"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "payment_timing_n_desu_ka"
+    },
+    {
+      "id": "S-005-V13-018",
+      "group": "fees",
+      "role_vi": "Nhân viên môi giới phân biệt tiền cọc với các khoản hằng tháng",
+      "gender": "male",
+      "ja": "敷金は最初に払います。",
+      "vi": "Tiền đặt cọc trả lúc đầu ạ.",
+      "terms": [
+        "敷金",
+        "払う"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "payment_timing_masu"
+    },
+    {
+      "id": "S-005-V13-019",
+      "group": "fees",
+      "role_vi": "Người thuê muốn biết tổng số tiền hằng tháng",
+      "gender": "female",
+      "ja": "毎月の合計はいくらですか。",
+      "vi": "Tổng cộng mỗi tháng là bao nhiêu ạ?",
+      "terms": [
+        "毎月",
+        "合計"
+      ],
+      "scenes": [
+        "S011",
+        "S014"
+      ],
+      "pattern": "noun_wa_ikura_desu_ka"
+    },
+    {
+      "id": "S-005-V13-020",
+      "group": "fees",
+      "role_vi": "Người thuê nhờ tách riêng hai loại chi phí",
+      "gender": "female",
+      "ja": "毎月のお金と最初のお金を分けて教えてください。",
+      "vi": "Anh nói riêng giúp tôi khoản trả hằng tháng và khoản trả lúc đầu với ạ.",
+      "terms": [
+        "毎月"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "wakete_oshiete_kudasai"
+    },
+    {
+      "id": "S-005-V13-021",
+      "group": "decide",
+      "role_vi": "Người thuê xin thêm thời gian để cân nhắc sau khi xem phòng",
+      "gender": "female",
+      "ja": "金曜日まで考えてもいいですか。",
+      "vi": "Cho tôi suy nghĩ đến thứ Sáu được không ạ?",
+      "terms": [
+        "考える"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-005-V13-022",
+      "group": "decide",
+      "role_vi": "Người thuê hẹn gọi lại cho môi giới sau khi cân nhắc",
+      "gender": "female",
+      "ja": "金曜日にまた連絡します。",
+      "vi": "Thứ Sáu tôi sẽ liên lạc lại ạ.",
+      "terms": [
+        "連絡する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "time_ni_mata_renraku"
+    }
+  ]
+}

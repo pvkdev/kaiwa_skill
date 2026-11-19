@@ -1,0 +1,373 @@
+{
+  "code": "S-058",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "178d07224c31875c12451754009191463d8c6ce97f7d838c50968546f89fcfd6",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "report": "Báo nguy cơ tại chỗ làm",
+    "evacuate": "Xác nhận lối đi và điểm tập trung",
+    "roll": "Báo có mặt và cập nhật đồng nghiệp",
+    "drill": "Hỏi trước và sau buổi diễn tập"
+  },
+  "items": [
+    {
+      "id": "S-058-V13-001",
+      "group": "report",
+      "role_vi": "Nhân viên báo người phụ trách an toàn",
+      "gender": "female",
+      "ja": "倉庫から煙が出ています。",
+      "vi": "Có khói bốc ra từ kho ạ.",
+      "terms": [
+        "倉庫",
+        "煙",
+        "煙が出る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "báo_nguy_cơ"
+    },
+    {
+      "id": "S-058-V13-002",
+      "group": "report",
+      "role_vi": "Nhân viên mô tả nơi có khói",
+      "gender": "female",
+      "ja": "倉庫の青いドアの近くに煙が見えます。",
+      "vi": "Tôi thấy khói gần cửa màu xanh của kho ạ.",
+      "terms": [
+        "倉庫",
+        "ドア",
+        "煙",
+        "見える"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "mốc_gần_nơi_nguy_hiểm"
+    },
+    {
+      "id": "S-058-V13-003",
+      "group": "report",
+      "role_vi": "Người phụ trách an toàn",
+      "gender": "male",
+      "ja": "安全な場所へ移動してください。",
+      "vi": "Mọi người di chuyển đến nơi an toàn nhé.",
+      "terms": [
+        "安全",
+        "場所"
+      ],
+      "scenes": [
+        "S001",
+        "S007"
+      ],
+      "pattern": "hướng_dẫn_di_chuyển"
+    },
+    {
+      "id": "S-058-V13-004",
+      "group": "report",
+      "role_vi": "Nhân viên đính chính nơi có khói",
+      "gender": "female",
+      "ja": "煙が出ているのは、倉庫の南側ではなく北側です。",
+      "vi": "Khói bốc ra ở phía bắc kho, không phải phía nam ạ.",
+      "terms": [
+        "煙",
+        "煙が出る",
+        "倉庫",
+        "南側",
+        "北側"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "sửa_vị_trí"
+    },
+    {
+      "id": "S-058-V13-005",
+      "group": "report",
+      "role_vi": "Nhân viên hỏi người phụ trách an toàn",
+      "gender": "female",
+      "ja": "今の作業を止めて避難すればいいですか。",
+      "vi": "Tôi dừng việc đang làm rồi sơ tán, đúng không ạ?",
+      "terms": [
+        "作業",
+        "止める",
+        "避難する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "hỏi_cần_làm_gì"
+    },
+    {
+      "id": "S-058-V13-006",
+      "group": "report",
+      "role_vi": "Nhân viên báo vị trí cuối thấy đồng nghiệp",
+      "gender": "male",
+      "ja": "山田さんを最後に見たのは、倉庫の隣の包装室です。",
+      "vi": "Lần cuối tôi thấy anh Yamada là ở phòng đóng gói cạnh kho ạ.",
+      "terms": [
+        "最後",
+        "倉庫",
+        "隣",
+        "包装室"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "báo_vị_trí_cuối_thấy"
+    },
+    {
+      "id": "S-058-V13-007",
+      "group": "evacuate",
+      "role_vi": "Nhân viên báo lối ra bị chặn",
+      "gender": "female",
+      "ja": "いつもの出口は煙で通れません。",
+      "vi": "Lối ra thường dùng có khói nên không đi qua được ạ.",
+      "terms": [
+        "出口",
+        "煙",
+        "通る"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "báo_lối_bị_chặn"
+    },
+    {
+      "id": "S-058-V13-008",
+      "group": "evacuate",
+      "role_vi": "Người hướng dẫn sơ tán",
+      "gender": "male",
+      "ja": "西側の非常階段から外に出てください。",
+      "vi": "Mọi người ra ngoài bằng cầu thang thoát hiểm phía tây nhé.",
+      "terms": [
+        "西側",
+        "非常階段",
+        "外に出る"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "hướng_dẫn_di_chuyển"
+    },
+    {
+      "id": "S-058-V13-009",
+      "group": "evacuate",
+      "role_vi": "Nhân viên hỏi người hướng dẫn sơ tán",
+      "gender": "female",
+      "ja": "外に出たら、どこに集まればいいですか。",
+      "vi": "Ra ngoài rồi tôi cần tập trung ở đâu ạ?",
+      "terms": [
+        "外に出る",
+        "集まる"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hỏi_cần_làm_gì"
+    },
+    {
+      "id": "S-058-V13-010",
+      "group": "evacuate",
+      "role_vi": "Nhân viên kiểm lại chỉ dẫn",
+      "gender": "female",
+      "ja": "集合場所は北側の広場で合っていますか。",
+      "vi": "Điểm tập trung là sân phía bắc, đúng không ạ?",
+      "terms": [
+        "集合場所",
+        "北側",
+        "広場"
+      ],
+      "scenes": [
+        "S006",
+        "S016"
+      ],
+      "pattern": "xác_nhận_điểm_tập_trung"
+    },
+    {
+      "id": "S-058-V13-011",
+      "group": "roll",
+      "role_vi": "Nhân viên vừa đến điểm tập trung",
+      "gender": "female",
+      "ja": "リンです、北側の広場に着きました。",
+      "vi": "Tôi là Linh, tôi đã đến sân phía bắc ạ.",
+      "terms": [
+        "北側",
+        "広場",
+        "着く"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "báo_có_mặt"
+    },
+    {
+      "id": "S-058-V13-012",
+      "group": "roll",
+      "role_vi": "Nhân viên báo chưa thấy đồng nghiệp",
+      "gender": "female",
+      "ja": "山田さんを集合場所でまだ見ていません。",
+      "vi": "Tôi vẫn chưa thấy anh Yamada ở điểm tập trung ạ.",
+      "terms": [
+        "集合場所",
+        "まだ"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "báo_chưa_thấy"
+    },
+    {
+      "id": "S-058-V13-013",
+      "group": "roll",
+      "role_vi": "Nhân viên báo người phụ trách điểm danh",
+      "gender": "male",
+      "ja": "リーさんを最後に見たのは、西側の階段の前です。",
+      "vi": "Lần cuối tôi thấy chị Ly là trước cầu thang phía tây ạ.",
+      "terms": [
+        "最後",
+        "西側"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "báo_vị_trí_cuối_thấy"
+    },
+    {
+      "id": "S-058-V13-014",
+      "group": "roll",
+      "role_vi": "Người phụ trách điểm danh",
+      "gender": "male",
+      "ja": "人数を確認するまで、広場で待ってください。",
+      "vi": "Mọi người chờ ở sân đến khi chúng tôi kiểm tra xong số người nhé.",
+      "terms": [
+        "人数",
+        "確認する",
+        "広場",
+        "待つ"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "chờ_điểm_danh"
+    },
+    {
+      "id": "S-058-V13-015",
+      "group": "roll",
+      "role_vi": "Nhân viên cập nhật việc có mặt",
+      "gender": "female",
+      "ja": "山田さんが今、集合場所に着きました。",
+      "vi": "Anh Yamada vừa đến điểm tập trung ạ.",
+      "terms": [
+        "集合場所",
+        "着く"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "báo_có_mặt"
+    },
+    {
+      "id": "S-058-V13-016",
+      "group": "roll",
+      "role_vi": "Nhân viên hỏi về đồ còn trong tòa nhà",
+      "gender": "female",
+      "ja": "荷物はいつ取りに戻れますか。",
+      "vi": "Khi nào tôi được quay lại lấy đồ ạ?",
+      "terms": [
+        "荷物",
+        "戻る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hỏi_lúc_được_quay_lại"
+    },
+    {
+      "id": "S-058-V13-017",
+      "group": "drill",
+      "role_vi": "Nhân viên sắp dự diễn tập",
+      "gender": "female",
+      "ja": "避難訓練の日は何時に来ればいいですか。",
+      "vi": "Hôm diễn tập sơ tán tôi cần có mặt lúc mấy giờ ạ?",
+      "terms": [
+        "避難訓練",
+        "何時"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "hỏi_cần_làm_gì"
+    },
+    {
+      "id": "S-058-V13-018",
+      "group": "drill",
+      "role_vi": "Nhân viên lần đầu diễn tập",
+      "gender": "female",
+      "ja": "避難訓練で何をするか、もう一度教えてください。",
+      "vi": "Anh nhắc lại giúp tôi cần làm gì trong buổi diễn tập sơ tán ạ.",
+      "terms": [
+        "避難訓練",
+        "もう一度"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "nhắc_lại_chỉ_dẫn"
+    },
+    {
+      "id": "S-058-V13-019",
+      "group": "drill",
+      "role_vi": "Người phụ trách buổi diễn tập",
+      "gender": "male",
+      "ja": "合図が聞こえたら作業を止めてください。",
+      "vi": "Khi nghe hiệu lệnh, mọi người dừng việc đang làm nhé.",
+      "terms": [
+        "合図",
+        "作業",
+        "止める"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "hướng_dẫn_dừng_việc"
+    },
+    {
+      "id": "S-058-V13-020",
+      "group": "drill",
+      "role_vi": "Nhân viên hỏi giúp người cùng nhóm",
+      "gender": "female",
+      "ja": "避難訓練で歩くのが大変な人は、誰に手伝ってもらえますか。",
+      "vi": "Trong buổi diễn tập sơ tán, người đi lại khó khăn có thể nhờ ai giúp ạ?",
+      "terms": [
+        "避難訓練",
+        "手伝う"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "hỏi_ai_hỗ_trợ"
+    },
+    {
+      "id": "S-058-V13-021",
+      "group": "drill",
+      "role_vi": "Nhân viên hỏi sau buổi diễn tập",
+      "gender": "male",
+      "ja": "次の避難訓練の前に、案内図で非常口を確認してもいいですか。",
+      "vi": "Trước lần diễn tập sơ tán tới, tôi xem vị trí lối thoát hiểm trên sơ đồ được không ạ?",
+      "terms": [
+        "避難訓練",
+        "案内図",
+        "非常口",
+        "確認する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "xin_xem_sơ_đồ"
+    }
+  ]
+}

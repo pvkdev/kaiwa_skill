@@ -1,0 +1,413 @@
+{
+  "code": "T-145",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "ab27ea0d3238964e6c2ad25bfd5d8a5729097fc40876b82159c0da381d9be71a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "handoff": "Đổi ưu tiên và bàn giao việc đang chờ",
+    "customer_update": "Báo khách phần đã xong và phần đang thử",
+    "personal_schedule": "Thu xếp ca làm và lịch nhận máy",
+    "week_close": "Chốt việc cuối tuần và cập nhật lịch tuần sau",
+    "thanks": "Cảm ơn đồng nghiệp đã giúp"
+  },
+  "items": [
+    {
+      "id": "T-145-V13-001",
+      "group": "handoff",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "先週の在庫表はまだ確認中です。",
+      "vi": "Bảng tồn kho tuần trước vẫn đang được kiểm tra ạ.",
+      "terms": [
+        "在庫表"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "report_unconfirmed_status"
+    },
+    {
+      "id": "T-145-V13-002",
+      "group": "handoff",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "先にカタログを修正します。",
+      "vi": "Em sẽ sửa catalogue trước ạ.",
+      "terms": [
+        "修正する"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "state_new_priority"
+    },
+    {
+      "id": "T-145-V13-003",
+      "group": "handoff",
+      "role_vi": "Morita nói với đồng nghiệp Ishii",
+      "gender": "female",
+      "ja": "在庫表の二つの品番について、倉庫への問い合わせを引き継いでもらえますか。",
+      "vi": "Anh nhận giúp em việc hỏi kho về hai mã hàng trong bảng tồn kho được không ạ?",
+      "terms": [
+        "在庫表",
+        "品番",
+        "問い合わせる",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "request_handoff"
+    },
+    {
+      "id": "T-145-V13-004",
+      "group": "handoff",
+      "role_vi": "Morita nói với đồng nghiệp Ishii",
+      "gender": "female",
+      "ja": "倉庫に送ったメールを転送するので、在庫の数量と、どの時点の数字かを確認してもらえますか。",
+      "vi": "Em sẽ chuyển tiếp thư đã gửi cho kho, anh kiểm giúp em số lượng hàng tồn và xem số đó được ghi nhận lúc nào nhé?",
+      "terms": [
+        "転送する",
+        "数量",
+        "時点"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "state_pending_checks"
+    },
+    {
+      "id": "T-145-V13-005",
+      "group": "handoff",
+      "role_vi": "Ishii nói với đồng nghiệp Morita",
+      "gender": "male",
+      "ja": "倉庫からまだ返事が来なくても、14時半までに在庫表の状況を共有するね。",
+      "vi": "Dù kho vẫn chưa trả lời, anh vẫn sẽ báo tình hình bảng tồn kho chậm nhất 14 giờ 30 nhé.",
+      "terms": [
+        "在庫表",
+        "共有する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "promise_update_even_if_pending"
+    },
+    {
+      "id": "T-145-V13-006",
+      "group": "customer_update",
+      "role_vi": "Morita nói với khách hàng Naruse",
+      "gender": "female",
+      "ja": "本文の修正は終わりましたが、表紙の色は印刷会社の確認待ちです。",
+      "vi": "Phần nội dung đã sửa xong, còn màu bìa vẫn đang chờ nhà in kiểm tra ạ.",
+      "terms": [
+        "本文",
+        "修正する",
+        "表紙",
+        "印刷会社"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "report_unconfirmed_status"
+    },
+    {
+      "id": "T-145-V13-007",
+      "group": "customer_update",
+      "role_vi": "Morita nói với khách hàng Naruse",
+      "gender": "female",
+      "ja": "今朝お送りしたPDFは本文確認用の見本なので、印刷には使わないでください。",
+      "vi": "File PDF tôi gửi sáng nay là bản mẫu để xem nội dung, nhờ anh đừng dùng bản đó để in ạ.",
+      "terms": [
+        "本文",
+        "見本"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "correct_document_status_and_use"
+    },
+    {
+      "id": "T-145-V13-008",
+      "group": "customer_update",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "注文コードを全ページに入れると、修正の確認は明日になりそうです。",
+      "vi": "Nếu thêm mã đặt hàng vào tất cả các trang thì có lẽ sang mai mới kiểm tra được phần sửa ạ.",
+      "terms": [
+        "～ページ",
+        "修正する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "explain_impact_of_new_request"
+    },
+    {
+      "id": "T-145-V13-009",
+      "group": "customer_update",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "注文コードを入れても文字が読みやすいか、まず一ページだけ試したいです。",
+      "vi": "Em muốn thử thêm mã đặt hàng trên một trang trước để xem chữ còn dễ đọc không ạ.",
+      "terms": [
+        "～ページ"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "propose_limited_trial"
+    },
+    {
+      "id": "T-145-V13-010",
+      "group": "customer_update",
+      "role_vi": "Morita nói với khách hàng Naruse",
+      "gender": "female",
+      "ja": "注文コードを全ページに入れるか決まっていなくても、明日15時までに一度お電話します。",
+      "vi": "Dù chưa quyết định có thêm mã đặt hàng vào tất cả các trang hay không, tôi vẫn sẽ gọi cho anh chậm nhất là 15 giờ ngày mai ạ.",
+      "terms": [
+        "～ページ"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "promise_update_even_if_pending"
+    },
+    {
+      "id": "T-145-V13-011",
+      "group": "personal_schedule",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "修理に出したパソコンを受け取る約束があるので、今日だけ15時45分に上がってもいいですか。",
+      "vi": "Em có hẹn nhận máy tính đã mang đi sửa, nên riêng hôm nay anh cho em về lúc 15 giờ 45 được không ạ?",
+      "terms": [
+        "上がる"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "request_early_departure_with_reason"
+    },
+    {
+      "id": "T-145-V13-012",
+      "group": "personal_schedule",
+      "role_vi": "Trưởng nhóm Kato nói với Morita",
+      "gender": "male",
+      "ja": "16時の定例会の引き継ぎが済んだら、15時45分に上がっていいよ。",
+      "vi": "Nếu em bàn giao xong phần việc cho cuộc họp định kỳ lúc 16 giờ thì em có thể về lúc 15 giờ 45 nhé.",
+      "terms": [
+        "定例会",
+        "引き継ぎ",
+        "上がる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "grant_early_departure_with_condition"
+    },
+    {
+      "id": "T-145-V13-013",
+      "group": "personal_schedule",
+      "role_vi": "Morita nói với nhân viên cửa hàng sửa máy tính",
+      "gender": "female",
+      "ja": "今日16時半のパソコンの受け取りを、18時以降に変更できますか。",
+      "vi": "Tôi có hẹn nhận máy tính lúc 16 giờ 30 hôm nay, có thể dời sang 18 giờ trở đi được không ạ?",
+      "terms": [
+        "受け取り",
+        "変更する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "request_new_pickup_time"
+    },
+    {
+      "id": "T-145-V13-014",
+      "group": "personal_schedule",
+      "role_vi": "Nhân viên cửa hàng sửa máy tính nói với Morita",
+      "gender": "male",
+      "ja": "今日の18時以降は予約が埋まっていますが、土曜の11時ならパソコンをお渡しできます。",
+      "vi": "Hôm nay từ 18 giờ trở đi đã kín lịch, nhưng bên tôi có thể giao máy cho chị lúc 11 giờ thứ Bảy ạ.",
+      "terms": [
+        "埋まる"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "offer_available_alternative"
+    },
+    {
+      "id": "T-145-V13-015",
+      "group": "personal_schedule",
+      "role_vi": "Morita nói với nhân viên cửa hàng sửa máy tính",
+      "gender": "female",
+      "ja": "今日16時半の受け取りは取り消して、土曜の11時にお願いします。",
+      "vi": "Nhờ anh hủy lịch nhận máy 16 giờ 30 hôm nay và chuyển sang 11 giờ thứ Bảy giúp tôi ạ.",
+      "terms": [
+        "受け取り",
+        "取り消す"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "confirm_new_pickup_time"
+    },
+    {
+      "id": "T-145-V13-016",
+      "group": "personal_schedule",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "パソコンの受け取りが土曜になったので、今日は早退せず16時の定例会に出ます。",
+      "vi": "Em đã dời lịch nhận máy tính sang thứ Bảy nên hôm nay em sẽ dự cuộc họp định kỳ lúc 16 giờ và không cần về sớm ạ.",
+      "terms": [
+        "受け取り",
+        "早退する",
+        "定例会"
+      ],
+      "scenes": [
+        "S011",
+        "S012",
+        "S013"
+      ],
+      "pattern": "report_changed_plan"
+    },
+    {
+      "id": "T-145-V13-017",
+      "group": "week_close",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "注文コードは主力商品だけに載せる形で、先方の了承を得ました。",
+      "vi": "Khách đã đồng ý với phương án chỉ thêm mã đặt hàng cho các sản phẩm chủ lực ạ.",
+      "terms": [
+        "先方",
+        "了承する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "report_agreed_scope"
+    },
+    {
+      "id": "T-145-V13-018",
+      "group": "week_close",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "表紙の色の確認が済んだので、先方にはカタログの最終版のPDFを送りました。",
+      "vi": "Màu bìa đã kiểm tra xong nên em đã gửi khách file PDF bản cuối của catalogue ạ.",
+      "terms": [
+        "表紙",
+        "先方",
+        "最終版"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "report_completed_delivery"
+    },
+    {
+      "id": "T-145-V13-019",
+      "group": "week_close",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "二つの品番の数量と、いつの数字かを在庫表に追記して、共有フォルダーに入れてあります。",
+      "vi": "Bảng tồn kho đã được bổ sung số lượng và thời điểm ghi nhận của cả hai mã hàng rồi lưu trong thư mục dùng chung ạ.",
+      "terms": [
+        "品番",
+        "数量",
+        "追記する",
+        "在庫表"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "report_where_final_record_is"
+    },
+    {
+      "id": "T-145-V13-020",
+      "group": "week_close",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "月曜10時の入稿はまだ仮なので、私から印刷会社の佐野さんに確認しましょうか。",
+      "vi": "Lịch gửi dữ liệu in lúc 10 giờ thứ Hai mới là dự kiến, để em xác nhận với anh Sano bên nhà in nhé?",
+      "terms": [
+        "入稿する",
+        "仮",
+        "印刷会社"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "ask_who_will_confirm_tentative_time"
+    },
+    {
+      "id": "T-145-V13-021",
+      "group": "week_close",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "印刷会社と相談して入稿が月曜11時に決まったので、共有の予定表を直します。",
+      "vi": "Em đã thống nhất với nhà in giờ gửi dữ liệu là 11 giờ thứ Hai, em sẽ sửa lại lịch dùng chung ạ.",
+      "terms": [
+        "印刷会社",
+        "入稿する",
+        "予定表"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "report_changed_plan"
+    },
+    {
+      "id": "T-145-V13-022",
+      "group": "week_close",
+      "role_vi": "Morita nói với trưởng nhóm Kato",
+      "gender": "female",
+      "ja": "月曜11時半までにデータが届いたか確認できなければ、私から印刷会社に電話します。",
+      "vi": "Nếu đến 11 giờ 30 thứ Hai mà vẫn chưa xác nhận được dữ liệu đã tới nhà in hay chưa, em sẽ gọi cho họ ạ.",
+      "terms": [
+        "印刷会社"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "set_deadline_for_receipt_confirmation"
+    },
+    {
+      "id": "T-145-V13-023",
+      "group": "thanks",
+      "role_vi": "Morita nói với đồng nghiệp Ishii",
+      "gender": "female",
+      "ja": "月曜に在庫表の確認を引き継いでくれたおかげで、カタログの修正に集中できました。",
+      "vi": "Nhờ anh nhận giúp phần xác nhận số liệu trong bảng tồn kho hôm thứ Hai mà em tập trung sửa catalogue được ạ.",
+      "terms": [
+        "在庫表",
+        "引き継ぐ",
+        "おかげ",
+        "修正する",
+        "集中する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "thank_with_specific_effect"
+    },
+    {
+      "id": "T-145-V13-024",
+      "group": "thanks",
+      "role_vi": "Ishii nói với đồng nghiệp Morita",
+      "gender": "male",
+      "ja": "転送してもらったメールがあったから、倉庫に同じ説明をしなくて済んで助かったよ。",
+      "vi": "Có thư em chuyển tiếp nên anh đỡ phải giải thích lại với bên kho.",
+      "terms": [
+        "転送する",
+        "助かる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "thank_with_specific_effect"
+    }
+  ]
+}

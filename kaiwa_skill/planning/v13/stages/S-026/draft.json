@@ -1,0 +1,386 @@
+{
+  "code": "S-026",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "55bfcbdc09b81ebe90ad1a6983642d85c33abe0ebf194597214afc79fe5f2591",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "find": "Tìm đúng tòa, tầng và cửa hàng",
+    "detour": "Đổi lối khi đường nối đóng",
+    "meeting": "Chọn mốc hẹn khi tách nhóm",
+    "services": "Hỏi chỗ nghỉ, gửi đồ và nhận hàng",
+    "lost": "Mô tả đồ bỏ quên và hẹn hỏi kết quả"
+  },
+  "items": [
+    {
+      "id": "S-026-V13-001",
+      "group": "find",
+      "role_vi": "Khách hỏi quầy thông tin cửa hàng Hana thuộc tòa nào",
+      "gender": "male",
+      "ja": "ハナはどの建物にありますか。",
+      "vi": "Cửa hàng Hana nằm ở tòa nào ạ?",
+      "terms": [
+        "建物"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "noun_wa_dono_place"
+    },
+    {
+      "id": "S-026-V13-002",
+      "group": "find",
+      "role_vi": "Nhân viên quầy chỉ chi nhánh tòa Đông bán văn phòng phẩm",
+      "gender": "female",
+      "ja": "文房具を買うなら東館の店です。",
+      "vi": "Mua văn phòng phẩm thì anh đến cửa hàng ở tòa Đông ạ.",
+      "terms": [
+        "文房具",
+        "東館"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "nara_place_desu"
+    },
+    {
+      "id": "S-026-V13-003",
+      "group": "find",
+      "role_vi": "Khách hỏi cách đi từ quầy đến hiệu sách tầng ba",
+      "gender": "male",
+      "ja": "三階の本屋へはどう行きますか。",
+      "vi": "Lên hiệu sách ở tầng ba thì đi thế nào ạ?",
+      "terms": [
+        "階",
+        "本屋"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "place_e_wa_dou_ikimasu"
+    },
+    {
+      "id": "S-026-V13-004",
+      "group": "find",
+      "role_vi": "Nhân viên chỉ dùng thang cuốn bên phải để lên tầng ba",
+      "gender": "female",
+      "ja": "右のエスカレーターで三階へ上がってください。",
+      "vi": "Anh đi thang cuốn bên phải lên tầng ba nhé.",
+      "terms": [
+        "エスカレーター",
+        "階",
+        "上がる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-026-V13-005",
+      "group": "find",
+      "role_vi": "Khách nói lại mình cần chi nhánh bên cạnh hiệu sách ở tòa Tây",
+      "gender": "male",
+      "ja": "西館の本屋の近くにあるハナを探しています。",
+      "vi": "Tôi đang tìm cửa hàng Hana gần hiệu sách ở tòa Tây ạ.",
+      "terms": [
+        "西館",
+        "本屋"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "noun_wo_sagashiteimasu"
+    },
+    {
+      "id": "S-026-V13-006",
+      "group": "detour",
+      "role_vi": "Khách hỏi đường sang tòa Tây do hành lang nối đang đóng",
+      "gender": "male",
+      "ja": "西館へ行く別の通路はありますか。",
+      "vi": "Có lối khác sang tòa Tây không ạ?",
+      "terms": [
+        "西館",
+        "通路"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-026-V13-007",
+      "group": "detour",
+      "role_vi": "Nhân viên chỉ khách đi qua sân giữa để sang tòa Tây",
+      "gender": "female",
+      "ja": "一階に下りて中庭を通ってください。",
+      "vi": "Anh xuống tầng một rồi đi qua sân giữa nhé.",
+      "terms": [
+        "階",
+        "下りる",
+        "中庭",
+        "通る"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-026-V13-008",
+      "group": "detour",
+      "role_vi": "Khách kiểm xem có vào được tòa Tây từ sân giữa không",
+      "gender": "male",
+      "ja": "中庭から西館に入れますか。",
+      "vi": "Từ sân giữa vào tòa Tây được không ạ?",
+      "terms": [
+        "中庭",
+        "西館"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "place_kara_potential"
+    },
+    {
+      "id": "S-026-V13-009",
+      "group": "meeting",
+      "role_vi": "Bạn đi mua sắm hỏi điểm gặp sau khi hai người tách nhau",
+      "gender": "male",
+      "ja": "買い物が終わったらどこで会う？",
+      "vi": "Mua xong mình gặp nhau ở đâu?",
+      "terms": [],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "tara_doko_de_casual"
+    },
+    {
+      "id": "S-026-V13-010",
+      "group": "meeting",
+      "role_vi": "Bạn đề xuất mốc hẹn là đồng hồ xanh trong tòa Đông",
+      "gender": "female",
+      "ja": "東館の青い時計の前で会おう。",
+      "vi": "Mình gặp trước đồng hồ xanh ở tòa Đông nhé.",
+      "terms": [
+        "東館",
+        "時計"
+      ],
+      "scenes": [
+        "S006",
+        "S009"
+      ],
+      "pattern": "place_de_aou"
+    },
+    {
+      "id": "S-026-V13-011",
+      "group": "meeting",
+      "role_vi": "Bạn gọi người đi cùng hỏi có thấy hiệu sách để xác định vị trí không",
+      "gender": "male",
+      "ja": "近くに本屋は見える？",
+      "vi": "Cậu có thấy hiệu sách nào gần đó không?",
+      "terms": [
+        "本屋",
+        "見える"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "noun_wa_mieru"
+    },
+    {
+      "id": "S-026-V13-012",
+      "group": "meeting",
+      "role_vi": "Bạn báo cho người đang đợi biết cổng chính mình đang đứng thuộc tòa Tây",
+      "gender": "female",
+      "ja": "西館の正面入口にいるよ。",
+      "vi": "Tớ đang ở cổng chính của tòa Tây nè.",
+      "terms": [
+        "西館",
+        "正面",
+        "入口"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "place_ni_iru_yo"
+    },
+    {
+      "id": "S-026-V13-013",
+      "group": "meeting",
+      "role_vi": "Bạn gọi báo mình đã đến đúng đồng hồ hẹn",
+      "gender": "male",
+      "ja": "青い時計の前に着いたよ。",
+      "vi": "Tớ đến trước đồng hồ xanh rồi nhé.",
+      "terms": [
+        "時計",
+        "着く"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "place_ni_tsuita_yo"
+    },
+    {
+      "id": "S-026-V13-014",
+      "group": "services",
+      "role_vi": "Khách đi cùng người lớn tuổi nhờ quầy chỉ chỗ gần đó có ghế",
+      "gender": "male",
+      "ja": "近くに座れる所はありますか。",
+      "vi": "Gần đây có chỗ ngồi nghỉ không ạ?",
+      "terms": [
+        "座る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-026-V13-015",
+      "group": "services",
+      "role_vi": "Khách mang túi lớn hỏi nơi có thể gửi giữ",
+      "gender": "male",
+      "ja": "大きい荷物はどこに預けられますか。",
+      "vi": "Tôi gửi túi lớn ở đâu được ạ?",
+      "terms": [
+        "荷物",
+        "預ける"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "doko_ni_potential_ka"
+    },
+    {
+      "id": "S-026-V13-016",
+      "group": "services",
+      "role_vi": "Nhân viên báo hiện tủ gửi đồ cỡ lớn không còn ô trống",
+      "gender": "female",
+      "ja": "大きいコインロッカーは空きがありません。",
+      "vi": "Tủ gửi đồ cỡ lớn hiện hết ô trống ạ.",
+      "terms": [
+        "コインロッカー",
+        "空き"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "aki_ga_arimasen"
+    },
+    {
+      "id": "S-026-V13-017",
+      "group": "services",
+      "role_vi": "Khách hỏi nơi nhận món mình đã mua",
+      "gender": "male",
+      "ja": "買った商品はどこで受け取れますか。",
+      "vi": "Tôi nhận món đã mua ở đâu ạ?",
+      "terms": [
+        "受け取る"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "doko_de_potential_ka"
+    },
+    {
+      "id": "S-026-V13-018",
+      "group": "services",
+      "role_vi": "Nhân viên nhờ khách đưa phiếu để xem nơi nhận",
+      "gender": "female",
+      "ja": "お店でもらった控えを見せてください。",
+      "vi": "Anh cho tôi xem phiếu cửa hàng đưa nhé.",
+      "terms": [
+        "控え"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-026-V13-019",
+      "group": "services",
+      "role_vi": "Khách muốn biết hạn phải tới quầy nhận hàng",
+      "gender": "male",
+      "ja": "何時までに受け取りに行けばいいですか。",
+      "vi": "Tôi phải đến nhận hàng chậm nhất mấy giờ ạ?",
+      "terms": [
+        "時",
+        "受け取る"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "nanjimadeni_verb_ba"
+    },
+    {
+      "id": "S-026-V13-020",
+      "group": "lost",
+      "role_vi": "Khách báo quầy thông tin không tìm thấy túi đồ vừa mua",
+      "gender": "male",
+      "ja": "買った物を入れた袋が見つかりません。",
+      "vi": "Tôi không tìm thấy túi đựng đồ vừa mua ạ.",
+      "terms": [
+        "袋",
+        "見つかる"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "noun_ga_mitsukarimasen"
+    },
+    {
+      "id": "S-026-V13-021",
+      "group": "lost",
+      "role_vi": "Khách cung cấp chi tiết nhận dạng túi cho quầy",
+      "gender": "male",
+      "ja": "青い袋で、中に白いシャツが入っています。",
+      "vi": "Túi màu xanh, bên trong có áo sơ mi trắng ạ.",
+      "terms": [
+        "袋"
+      ],
+      "scenes": [
+        "S017",
+        "S019"
+      ],
+      "pattern": "detail_de_description"
+    },
+    {
+      "id": "S-026-V13-022",
+      "group": "lost",
+      "role_vi": "Khách hỏi khi nào nên quay lại quầy thông tin hỏi về túi",
+      "gender": "male",
+      "ja": "袋のことはいつごろ聞きに戻ればいいですか。",
+      "vi": "Khoảng khi nào tôi quay lại hỏi về chiếc túi thì được ạ?",
+      "terms": [
+        "袋",
+        "戻る"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "itsugoro_verb_ba"
+    },
+    {
+      "id": "S-026-V13-023",
+      "group": "lost",
+      "role_vi": "Nhân viên chỉ khách tới Aoi hỏi tiếp về chiếc túi",
+      "gender": "female",
+      "ja": "袋のことは西館二階のアオイで聞いてください。",
+      "vi": "Về chiếc túi, anh hỏi cửa hàng Aoi ở tầng hai tòa Tây nhé.",
+      "terms": [
+        "袋",
+        "西館",
+        "階"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "te_kudasai"
+    }
+  ]
+}

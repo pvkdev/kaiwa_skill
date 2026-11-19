@@ -1,0 +1,345 @@
+{
+  "code": "H-008",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "d1488de38e8ec9535edbb9831c1faafb208b4099ca0d2d89c9ccdc4f1e8019b1",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "open": "Mở chuyện tự nhiên ở bữa trưa",
+    "transition": "Xin chuyển sang việc và hỏi ưu tiên",
+    "trial": "Thăm dò phạm vi thử và người cần tham gia",
+    "complaint": "Nghe phàn nàn và hẹn cách phản hồi",
+    "status": "Chốt bước tiếp theo và mức cam kết"
+  },
+  "items": [
+    {
+      "id": "H-008-V13-001",
+      "group": "open",
+      "role_vi": "Người mời hỏi khách có món cần tránh",
+      "gender": "female",
+      "ja": "何か召し上がれないものはありますか。",
+      "vi": "Anh có món nào không ăn được không ạ?",
+      "terms": [
+        "召し上がる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～はありますか"
+    },
+    {
+      "id": "H-008-V13-002",
+      "group": "open",
+      "role_vi": "Người mời hỏi khách chuyện đi lại",
+      "gender": "male",
+      "ja": "駅からお店までは迷わず来られましたか。",
+      "vi": "Từ ga đến quán, chị có dễ tìm đường không ạ?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～までは迷わず来られましたか"
+    },
+    {
+      "id": "H-008-V13-003",
+      "group": "open",
+      "role_vi": "Người mời nói rõ câu hỏi chỉ là lời hỏi thăm",
+      "gender": "male",
+      "ja": "駅からいらっしゃるのに、不便がなかったか気になっただけです。",
+      "vi": "Tôi chỉ muốn hỏi xem đi từ ga đến đây chị có gặp gì bất tiện không ạ.",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～か気になっただけです"
+    },
+    {
+      "id": "H-008-V13-004",
+      "group": "open",
+      "role_vi": "Người mời đề nghị nghe chuyện công việc sau khi ăn",
+      "gender": "female",
+      "ja": "お仕事の件は、お食事が落ち着いてからでもよろしいでしょうか。",
+      "vi": "Chuyện công việc để sau khi mình dùng bữa thong thả rồi bàn, được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "～の件は、～からでもよろしいでしょうか"
+    },
+    {
+      "id": "H-008-V13-005",
+      "group": "transition",
+      "role_vi": "Người mời xin phép chuyển sang dự án đang làm",
+      "gender": "male",
+      "ja": "食事の席で恐縮ですが、進行中の案件について少し伺ってもよろしいでしょうか。",
+      "vi": "Xin phép nhắc đến công việc trong bữa ăn, tôi có thể hỏi chị đôi chút về dự án đang làm không ạ?",
+      "terms": [
+        "案件",
+        "伺う"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-008-V13-006",
+      "group": "transition",
+      "role_vi": "Đại diện hỏi khách ưu tiên trước lần kiểm tiếp",
+      "gender": "female",
+      "ja": "次の確認に入る前に、御社が今いちばん重視している点を教えていただけますか。",
+      "vi": "Trước khi bắt đầu đợt kiểm tra tiếp theo, anh cho tôi biết hiện giờ bên anh coi trọng điểm nào nhất được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～前に、～を教えていただけますか"
+    },
+    {
+      "id": "H-008-V13-007",
+      "group": "transition",
+      "role_vi": "Khách nêu điều kiện khi nghe đề nghị dùng thử",
+      "gender": "female",
+      "ja": "試験導入を考えるにしても、現場の負担は今より増やしたくありません。",
+      "vi": "Dù cân nhắc dùng thử, bên tôi vẫn muốn tránh tăng khối lượng việc cho những người trực tiếp sử dụng ạ.",
+      "terms": [
+        "試験導入",
+        "現場",
+        "負担"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "～にしても、～たくありません"
+    },
+    {
+      "id": "H-008-V13-008",
+      "group": "trial",
+      "role_vi": "Đại diện thăm dò quy mô thử với khách",
+      "gender": "male",
+      "ja": "小規模に試すとしたら、対象は一つの会議に絞るのがよさそうでしょうか。",
+      "vi": "Nếu thử ở quy mô nhỏ, chị thấy giới hạn trong một cuộc họp có phù hợp không ạ?",
+      "terms": [
+        "小規模"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～としたら、～のがよさそうでしょうか"
+    },
+    {
+      "id": "H-008-V13-009",
+      "group": "trial",
+      "role_vi": "Đại diện hỏi thứ cần kiểm chứng trong lần thử",
+      "gender": "female",
+      "ja": "資料の共有方法を試すなら、まずどんな点を検証項目にしたいですか。",
+      "vi": "Nếu thử cách chia sẻ tài liệu, trước hết anh muốn kiểm chứng những gì ạ?",
+      "terms": [
+        "検証項目"
+      ],
+      "scenes": [
+        "S005",
+        "S014"
+      ],
+      "pattern": "～なら、どんな点を～にしたいですか"
+    },
+    {
+      "id": "H-008-V13-010",
+      "group": "trial",
+      "role_vi": "Đại diện giải thích giới hạn cam kết về nhân sự",
+      "gender": "male",
+      "ja": "必要な支援は伺えますが、人員を出せるかどうかは社内に持ち帰って確認します。",
+      "vi": "Tôi có thể nghe bên chị cần hỗ trợ gì, còn việc có cử người được không thì tôi sẽ mang về hỏi nội bộ ạ.",
+      "terms": [
+        "伺う",
+        "人員",
+        "持ち帰る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～は伺えますが、～は確認します"
+    },
+    {
+      "id": "H-008-V13-011",
+      "group": "trial",
+      "role_vi": "Đại diện đề nghị mời người dùng tài liệu hằng ngày",
+      "gender": "female",
+      "ja": "試験導入を検討する場には、現場で資料を使う方にも入っていただけますか。",
+      "vi": "Buổi bàn về việc dùng thử, anh mời thêm người trực tiếp dùng tài liệu tham gia được không ạ?",
+      "terms": [
+        "試験導入",
+        "現場"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～にも入っていただけますか"
+    },
+    {
+      "id": "H-008-V13-012",
+      "group": "trial",
+      "role_vi": "Khách cho biết còn phải kiểm người có thể dự họp",
+      "gender": "female",
+      "ja": "打ち合わせの候補日は、参加できる関係者を確認してから決めたいです。",
+      "vi": "Bên tôi muốn xác nhận những người liên quan nào có thể dự rồi mới chọn các ngày đề xuất cho buổi họp ạ.",
+      "terms": [
+        "候補日",
+        "関係者"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～てから決めたいです"
+    },
+    {
+      "id": "H-008-V13-013",
+      "group": "complaint",
+      "role_vi": "Đại diện nghe khách phản ánh về đầu mối liên hệ",
+      "gender": "male",
+      "ja": "差し支えなければ、窓口の返答が分かりにくかったときのやり取りを教えていただけますか。",
+      "vi": "Nếu tiện, chị kể tôi nghe lần trao đổi mà câu trả lời của đầu mối bên tôi khiến chị khó hiểu được không ạ?",
+      "terms": [
+        "差し支えなければ",
+        "窓口",
+        "やり取り"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "H-008-V13-014",
+      "group": "complaint",
+      "role_vi": "Khách nói rõ muốn sửa cách báo thời gian",
+      "gender": "female",
+      "ja": "納期の件では、担当者を替えてほしいというより、いつ返事が来るか知りたかったんです。",
+      "vi": "Về hạn giao, tôi muốn biết khi nào có câu trả lời hơn là muốn đổi người phụ trách ạ.",
+      "terms": [
+        "納期"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～というより、～たかったんです"
+    },
+    {
+      "id": "H-008-V13-015",
+      "group": "complaint",
+      "role_vi": "Đại diện xác nhận điều cần cải thiện ở các lần tiếp theo",
+      "gender": "male",
+      "ja": "納期を確認している間も、次にいつご連絡できるかお伝えしたほうがよいということですね。",
+      "vi": "Ý chị là cả khi đang kiểm tra hạn giao, bên tôi vẫn nên báo trước khi nào sẽ liên hệ lại, đúng không ạ?",
+      "terms": [
+        "納期"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～たほうがよいということですね"
+    },
+    {
+      "id": "H-008-V13-016",
+      "group": "complaint",
+      "role_vi": "Đại diện hẹn báo ai xử lý góp ý trước khi có kết quả",
+      "gender": "female",
+      "ja": "返答の時期が分かりにくかったというご意見は持ち帰り、明日までに担当者をお知らせします。",
+      "vi": "Tôi sẽ trao đổi trong công ty về góp ý của chị về mốc trả lời, chậm nhất ngày mai tôi sẽ báo ai phụ trách xem xét ạ.",
+      "terms": [
+        "持ち帰る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～は持ち帰り、～までにお知らせします"
+    },
+    {
+      "id": "H-008-V13-017",
+      "group": "complaint",
+      "role_vi": "Đại diện gọi lại báo đã chuyển góp ý",
+      "gender": "male",
+      "ja": "返答時刻の件は窓口を管理する秋山に引き継ぎましたので、方針が決まり次第、秋山からご連絡します。",
+      "vi": "Tôi đã chuyển việc báo mốc trả lời cho Akiyama, người quản lý đầu mối liên hệ, và chị ấy sẽ liên hệ khi có quyết định về cách xử lý ạ.",
+      "terms": [
+        "窓口",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～次第、～からご連絡します"
+    },
+    {
+      "id": "H-008-V13-018",
+      "group": "status",
+      "role_vi": "Đại diện nói rõ ý tưởng ở bàn ăn còn được xem xét",
+      "gender": "female",
+      "ja": "昼食の席で出た試験導入の案は、現時点ではまだ検討段階です。",
+      "vi": "Ý tưởng dùng thử nêu trong bữa trưa hiện vẫn đang được xem xét ạ.",
+      "terms": [
+        "試験導入",
+        "検討段階"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～は、現時点ではまだ～です"
+    },
+    {
+      "id": "H-008-V13-019",
+      "group": "status",
+      "role_vi": "Đại diện đề nghị buổi chính thức để bàn điều kiện thử",
+      "gender": "male",
+      "ja": "必要な関係者がそろいましたら、試す範囲と決裁者を確認する場を設けてもよろしいでしょうか。",
+      "vi": "Khi đã xác định đủ người cần tham gia, ta bố trí một buổi để làm rõ phạm vi thử và ai có quyền duyệt, được không ạ?",
+      "terms": [
+        "関係者",
+        "決裁者",
+        "場を設ける"
+      ],
+      "scenes": [
+        "S008",
+        "S014"
+      ],
+      "pattern": "～てもよろしいでしょうか"
+    },
+    {
+      "id": "H-008-V13-020",
+      "group": "status",
+      "role_vi": "Đại diện tôn trọng quyết định không tiếp tục đề xuất",
+      "gender": "female",
+      "ja": "試験導入は今回は見送るとのことですので、進行中の案件のほうは引き続き私が担当します。",
+      "vi": "Tôi hiểu lần này bên anh quyết định chưa dùng thử, còn dự án đang làm thì tôi vẫn tiếp tục phụ trách ạ.",
+      "terms": [
+        "試験導入",
+        "見送る",
+        "案件",
+        "引き続き"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～とのことですので、～は引き続き～ます"
+    },
+    {
+      "id": "H-008-V13-021",
+      "group": "status",
+      "role_vi": "Đồng nghiệp hỏi việc cần làm ngay sau bữa trưa",
+      "gender": "female",
+      "ja": "会社に戻る前に、利用者の負担とは具体的に何を指すのか確認しておきませんか。",
+      "vi": "Trước khi về công ty, mình hỏi lại xem khách nói gánh nặng cho người dùng cụ thể là việc gì nhé?",
+      "terms": [
+        "負担"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～前に、～か確認しておきませんか"
+    }
+  ]
+}

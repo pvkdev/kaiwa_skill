@@ -1,0 +1,415 @@
+{
+  "code": "S-075",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b301d4cb7b4dbe4fc385d71ee19a256eb3c25d47d836c4726ee75fd5991b435a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "plan": "Chọn chuyến đi và đặt phòng",
+    "desk": "Nhận phòng và gửi hành lý",
+    "stay": "Hỏi đường, xin đồ và theo dõi",
+    "finish": "Trả phòng, kiểm tiền và kể chuyến đi"
+  },
+  "items": [
+    {
+      "id": "S-075-V13-001",
+      "group": "plan",
+      "role_vi": "Bạn bàn chuyến đi biển",
+      "gender": "female",
+      "ja": "海の近くの町に旅行したいな。",
+      "vi": "Tớ muốn đi du lịch ở một thị trấn gần biển.",
+      "terms": [
+        "旅行する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "nói_điểm_đến"
+    },
+    {
+      "id": "S-075-V13-002",
+      "group": "plan",
+      "role_vi": "Bạn hỏi số đêm nghỉ",
+      "gender": "male",
+      "ja": "海の近くの宿に泊まるなら、一泊と二泊のどっちがいい？",
+      "vi": "Ở chỗ nghỉ gần biển, cậu thích ở một đêm hay hai đêm?",
+      "terms": [
+        "宿",
+        "～泊",
+        "泊まる"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_người_kia_chọn"
+    },
+    {
+      "id": "S-075-V13-003",
+      "group": "plan",
+      "role_vi": "Bạn rút ngắn chuyến đi",
+      "gender": "female",
+      "ja": "日曜しか休めないなら、日帰りにしようか。",
+      "vi": "Nếu cậu chỉ nghỉ được Chủ nhật, mình đi về trong ngày nhé?",
+      "terms": [
+        "日帰り"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "đề_xuất_theo_thời_gian"
+    },
+    {
+      "id": "S-075-V13-004",
+      "group": "plan",
+      "role_vi": "Bạn nhắc lại ngày đi và về",
+      "gender": "female",
+      "ja": "来週の金曜に出発して、土曜の午後に帰るんだよね。",
+      "vi": "Mình đi thứ Sáu tuần sau, về chiều thứ Bảy, đúng không?",
+      "terms": [
+        "出発する",
+        "帰る"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "chốt_ngày_đi_về"
+    },
+    {
+      "id": "S-075-V13-005",
+      "group": "plan",
+      "role_vi": "Khách hỏi phòng",
+      "gender": "female",
+      "ja": "五月十二日に大人二人で一泊できる部屋はありますか。",
+      "vi": "Ngày mười hai tháng Năm, khách sạn có phòng cho hai người lớn ở một đêm không ạ?",
+      "terms": [
+        "大人",
+        "～泊"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "hỏi_còn_phòng"
+    },
+    {
+      "id": "S-075-V13-006",
+      "group": "plan",
+      "role_vi": "Nhân viên báo phòng thay thế",
+      "gender": "male",
+      "ja": "ツインは満室ですが、ダブルなら空いています。",
+      "vi": "Phòng hai giường đơn đã hết, nhưng vẫn còn phòng một giường đôi ạ.",
+      "terms": [
+        "ツイン",
+        "満室",
+        "ダブル"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "đưa_phương_án_khác"
+    },
+    {
+      "id": "S-075-V13-007",
+      "group": "plan",
+      "role_vi": "Khách đang so giá phòng",
+      "gender": "female",
+      "ja": "二人で泊まる場合、一部屋の料金はいくらですか。",
+      "vi": "Nếu hai người ở, giá một phòng là bao nhiêu ạ?",
+      "terms": [
+        "泊まる",
+        "料金"
+      ],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "hỏi_giá_theo_phòng"
+    },
+    {
+      "id": "S-075-V13-008",
+      "group": "plan",
+      "role_vi": "Khách chốt đặt phòng",
+      "gender": "female",
+      "ja": "グエン・ランの名前で、五月二十日からダブルを一泊予約したいです。",
+      "vi": "Tôi muốn đặt một phòng giường đôi trong một đêm từ ngày hai mươi tháng Năm, dưới tên Nguyễn Lan ạ.",
+      "terms": [
+        "ダブル",
+        "～泊",
+        "予約する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "chốt_tên_và_ngày"
+    },
+    {
+      "id": "S-075-V13-009",
+      "group": "desk",
+      "role_vi": "Khách hỏi giờ tới khách sạn",
+      "gender": "female",
+      "ja": "チェックインは何時からですか。",
+      "vi": "Tôi có thể nhận phòng từ mấy giờ ạ?",
+      "terms": [
+        "チェックイン"
+      ],
+      "scenes": [
+        "S007",
+        "S013"
+      ],
+      "pattern": "hỏi_giờ_nhận"
+    },
+    {
+      "id": "S-075-V13-010",
+      "group": "desk",
+      "role_vi": "Khách đến quầy nhận phòng",
+      "gender": "female",
+      "ja": "グエン・ランの名前で予約していますが、チェックインをお願いできますか。",
+      "vi": "Tôi đã đặt dưới tên Nguyễn Lan, cho tôi nhận phòng ạ.",
+      "terms": [
+        "予約する",
+        "チェックイン"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "nói_tên_đặt_phòng"
+    },
+    {
+      "id": "S-075-V13-011",
+      "group": "desk",
+      "role_vi": "Khách tới sớm muốn gửi vali",
+      "gender": "female",
+      "ja": "チェックインまで、フロントに荷物を預けてもいいですか。",
+      "vi": "Tôi gửi hành lý ở quầy lễ tân đến giờ nhận phòng được không ạ?",
+      "terms": [
+        "チェックイン",
+        "フロント",
+        "荷物",
+        "預ける"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "xin_gửi_hành_lý"
+    },
+    {
+      "id": "S-075-V13-012",
+      "group": "desk",
+      "role_vi": "Lễ tân dặn khách khi lấy hành lý",
+      "gender": "male",
+      "ja": "荷物を受け取るときは、この札をフロントでお見せください。",
+      "vi": "Khi lấy lại hành lý, chị đưa thẻ này cho lễ tân xem nhé.",
+      "terms": [
+        "荷物",
+        "受け取る",
+        "札",
+        "フロント"
+      ],
+      "scenes": [
+        "S012",
+        "S021"
+      ],
+      "pattern": "dặn_cách_nhận_lại"
+    },
+    {
+      "id": "S-075-V13-013",
+      "group": "desk",
+      "role_vi": "Khách đưa thông tin khi chưa tìm thấy đặt phòng",
+      "gender": "female",
+      "ja": "ホテルの予約番号は、このメールに書いてあります。",
+      "vi": "Mã đặt phòng khách sạn nằm trong email này ạ.",
+      "terms": [
+        "ホテル",
+        "予約番号"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "chỉ_mã_xác_nhận"
+    },
+    {
+      "id": "S-075-V13-014",
+      "group": "desk",
+      "role_vi": "Lễ tân trao thẻ phòng",
+      "gender": "male",
+      "ja": "四〇五号室のカードキーはこちらです。",
+      "vi": "Đây là thẻ khóa của phòng bốn không năm ạ.",
+      "terms": [
+        "～号室",
+        "カードキー"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "trao_thẻ_phòng"
+    },
+    {
+      "id": "S-075-V13-015",
+      "group": "stay",
+      "role_vi": "Khách hỏi đường từ khách sạn",
+      "gender": "female",
+      "ja": "古い町並みを見に行きたいんですが、ホテルから歩いて行けますか。",
+      "vi": "Tôi muốn đến xem khu phố cổ, từ khách sạn đi bộ tới được không ạ?",
+      "terms": [
+        "町並み",
+        "ホテル",
+        "歩く"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "hỏi_đường_đi_bộ"
+    },
+    {
+      "id": "S-075-V13-016",
+      "group": "stay",
+      "role_vi": "Khách gọi báo thiếu khăn",
+      "gender": "female",
+      "ja": "四〇三号室ですが、バスタオルが一枚足りません。",
+      "vi": "Tôi ở phòng bốn không ba, trong phòng thiếu một khăn tắm lớn ạ.",
+      "terms": [
+        "～号室",
+        "バスタオル",
+        "～枚",
+        "足りる"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "báo_thiếu_vật_dụng"
+    },
+    {
+      "id": "S-075-V13-017",
+      "group": "stay",
+      "role_vi": "Khách hỏi bao lâu chăn tới",
+      "gender": "male",
+      "ja": "お願いした毛布は、あとどのくらいで部屋に届きますか。",
+      "vi": "Khoảng bao lâu nữa chăn tôi xin sẽ được mang tới phòng ạ?",
+      "terms": [
+        "毛布",
+        "届く"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "hỏi_bao_lâu"
+    },
+    {
+      "id": "S-075-V13-018",
+      "group": "stay",
+      "role_vi": "Khách gọi nhắc về chăn",
+      "gender": "female",
+      "ja": "四〇五号室ですが、お願いした毛布がまだ届いていません。",
+      "vi": "Tôi ở phòng bốn không năm, chăn tôi xin vẫn chưa được mang lên ạ.",
+      "terms": [
+        "～号室",
+        "毛布",
+        "届く"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "báo_chưa_nhận"
+    },
+    {
+      "id": "S-075-V13-019",
+      "group": "stay",
+      "role_vi": "Khách báo đã nhận chăn",
+      "gender": "female",
+      "ja": "毛布を受け取りましたので、もう大丈夫です。",
+      "vi": "Tôi nhận được chăn rồi, giờ thì ổn ạ.",
+      "terms": [
+        "毛布",
+        "受け取る"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "xác_nhận_đã_nhận"
+    },
+    {
+      "id": "S-075-V13-020",
+      "group": "finish",
+      "role_vi": "Khách hỏi hạn trả phòng",
+      "gender": "female",
+      "ja": "明日のチェックアウトは、朝十時までで合っていますか。",
+      "vi": "Sáng mai trả phòng chậm nhất lúc mười giờ, đúng không ạ?",
+      "terms": [
+        "チェックアウト"
+      ],
+      "scenes": [
+        "S007",
+        "S015"
+      ],
+      "pattern": "xác_nhận_hạn"
+    },
+    {
+      "id": "S-075-V13-021",
+      "group": "finish",
+      "role_vi": "Khách muốn gửi đồ sau khi trả phòng",
+      "gender": "female",
+      "ja": "チェックアウトしてから、午後二時まで荷物を預けてもいいですか。",
+      "vi": "Sau khi trả phòng, tôi gửi hành lý đến hai giờ chiều được không ạ?",
+      "terms": [
+        "チェックアウト",
+        "荷物",
+        "預ける"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "xin_gửi_hành_lý"
+    },
+    {
+      "id": "S-075-V13-022",
+      "group": "finish",
+      "role_vi": "Khách hỏi khoản chưa rõ",
+      "gender": "female",
+      "ja": "この千二百円は、一人分の朝食代ですか。",
+      "vi": "Một nghìn hai trăm yên ở dòng này là tiền một suất ăn sáng ạ?",
+      "terms": [
+        "～円",
+        "～人分",
+        "朝食代"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "kiểm_khoản_phí"
+    },
+    {
+      "id": "S-075-V13-023",
+      "group": "finish",
+      "role_vi": "Lễ tân xác nhận tổng tiền",
+      "gender": "male",
+      "ja": "部屋代と朝食代を合わせて、一万千二百円です。",
+      "vi": "Tổng tiền phòng và bữa sáng là mười một nghìn hai trăm yên ạ.",
+      "terms": [
+        "部屋代",
+        "朝食代",
+        "～円"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "báo_tổng_tiền"
+    },
+    {
+      "id": "S-075-V13-024",
+      "group": "finish",
+      "role_vi": "Bạn kể về chuyến đi",
+      "gender": "female",
+      "ja": "次は朝市が開いている日を調べてから行くよ。",
+      "vi": "Lần sau tớ xem chợ sáng mở hôm nào rồi mới đi.",
+      "terms": [
+        "朝市",
+        "調べる"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "nói_sẽ_làm_khác_lần_sau"
+    }
+  ]
+}

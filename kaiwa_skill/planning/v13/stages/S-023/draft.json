@@ -1,0 +1,378 @@
+{
+  "code": "S-023",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "2b2f4fcdeff5a5ebb8d18d07e6c9b6b178d56e21ca5e0a5b35451e41f7d22253",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "food": "Tìm và chọn món ăn nhanh",
+    "checkout": "Nói cần hâm nóng, lấy túi hay lấy đũa",
+    "parcel": "Gửi hoặc nhận kiện ở cửa hàng",
+    "check": "Kiểm lại giao dịch tại quầy"
+  },
+  "items": [
+    {
+      "id": "S-023-V13-001",
+      "group": "food",
+      "role_vi": "Khách tìm khu trưng bày cơm hộp trong cửa hàng tiện lợi",
+      "gender": "male",
+      "ja": "お弁当はどこですか。",
+      "vi": "Cơm hộp ở đâu ạ?",
+      "terms": [
+        "お弁当"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-023-V13-002",
+      "group": "food",
+      "role_vi": "Nhân viên chỉ vị trí cơm hộp cạnh kệ đồ uống",
+      "gender": "female",
+      "ja": "お弁当は飲み物の隣です。",
+      "vi": "Cơm hộp ở cạnh đồ uống ạ.",
+      "terms": [
+        "お弁当",
+        "飲み物"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_tonari"
+    },
+    {
+      "id": "S-023-V13-003",
+      "group": "food",
+      "role_vi": "Khách chọn giữa hai món và hỏi món nào không cay",
+      "gender": "male",
+      "ja": "辛くないお弁当はどちらですか。",
+      "vi": "Cơm hộp nào không cay ạ?",
+      "terms": [
+        "辛い",
+        "お弁当"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "noun_wa_dochira"
+    },
+    {
+      "id": "S-023-V13-004",
+      "group": "food",
+      "role_vi": "Khách thấy nhãn giá nằm giữa hai loại bánh",
+      "gender": "male",
+      "ja": "三百円はどちらのパンの値段ですか。",
+      "vi": "Ba trăm yên là giá của bánh nào ạ?",
+      "terms": [
+        "円",
+        "パン",
+        "値段"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "dochira_no_nedan"
+    },
+    {
+      "id": "S-023-V13-005",
+      "group": "food",
+      "role_vi": "Nhân viên giải thích giá ghi trên kệ áp dụng cho một bánh bên phải",
+      "gender": "female",
+      "ja": "右のパンは一つで三百円です。",
+      "vi": "Bánh bên phải giá ba trăm yên một chiếc ạ.",
+      "terms": [
+        "パン",
+        "円"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "quantity_de_price"
+    },
+    {
+      "id": "S-023-V13-006",
+      "group": "food",
+      "role_vi": "Khách hỏi món thay thế cùng tầm tiền khi loại định mua hết",
+      "gender": "male",
+      "ja": "四百円くらいで、ほかのお弁当はありますか。",
+      "vi": "Có cơm hộp nào khác khoảng bốn trăm yên không ạ?",
+      "terms": [
+        "円",
+        "お弁当"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-023-V13-007",
+      "group": "checkout",
+      "role_vi": "Thu ngân hỏi có cần hâm nóng cơm hộp trước khi giao không",
+      "gender": "female",
+      "ja": "お弁当は温めますか。",
+      "vi": "Anh có muốn hâm nóng cơm hộp không ạ?",
+      "terms": [
+        "お弁当",
+        "温める"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "noun_wa_atatamemasu_ka"
+    },
+    {
+      "id": "S-023-V13-008",
+      "group": "checkout",
+      "role_vi": "Khách nhờ thu ngân hâm nóng cơm hộp ngay tại quầy",
+      "gender": "male",
+      "ja": "このお弁当を温めてください。",
+      "vi": "Chị hâm nóng cơm hộp này giúp tôi ạ.",
+      "terms": [
+        "お弁当",
+        "温める"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-023-V13-009",
+      "group": "checkout",
+      "role_vi": "Thu ngân hỏi khách có lấy túi ở quầy không",
+      "gender": "female",
+      "ja": "レジ袋はお使いになりますか。",
+      "vi": "Anh có lấy túi của cửa hàng không ạ?",
+      "terms": [
+        "レジ袋"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "noun_wa_o_ni_narimasu"
+    },
+    {
+      "id": "S-023-V13-010",
+      "group": "checkout",
+      "role_vi": "Khách từ chối túi ở quầy vì đã mang túi mua hàng",
+      "gender": "male",
+      "ja": "マイバッグがあるので、レジ袋は結構です。",
+      "vi": "Tôi có mang túi rồi nên không cần túi của cửa hàng ạ.",
+      "terms": [
+        "マイバッグ",
+        "レジ袋",
+        "結構です"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "node_kekkou_desu"
+    },
+    {
+      "id": "S-023-V13-011",
+      "group": "checkout",
+      "role_vi": "Khách mua mì hộp xin một đôi đũa",
+      "gender": "male",
+      "ja": "お箸を一膳ください。",
+      "vi": "Cho tôi một đôi đũa ạ.",
+      "terms": [
+        "お箸",
+        "膳"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "quantity_kudasai"
+    },
+    {
+      "id": "S-023-V13-012",
+      "group": "checkout",
+      "role_vi": "Thu ngân hỏi khách có muốn lấy thìa ăn sữa chua không",
+      "gender": "female",
+      "ja": "ヨーグルトにスプーンをお付けしますか。",
+      "vi": "Anh có cần thìa ăn sữa chua không ạ?",
+      "terms": [
+        "ヨーグルト",
+        "スプーン"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "noun_wo_otsuke"
+    },
+    {
+      "id": "S-023-V13-013",
+      "group": "checkout",
+      "role_vi": "Khách nói rõ hâm cơm hộp và để nguyên mì lạnh",
+      "gender": "male",
+      "ja": "冷たい麺はそのままで、お弁当だけ温めてください。",
+      "vi": "Mì lạnh để nguyên, chị chỉ hâm cơm hộp giúp tôi ạ.",
+      "terms": [
+        "冷たい",
+        "麺",
+        "そのまま",
+        "お弁当",
+        "温める"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "dake_te_kudasai"
+    },
+    {
+      "id": "S-023-V13-014",
+      "group": "parcel",
+      "role_vi": "Khách báo nhân viên cửa hàng mình đến lấy kiện đã được thông báo",
+      "gender": "male",
+      "ja": "荷物を受け取りに来ました。",
+      "vi": "Tôi đến nhận kiện hàng ạ.",
+      "terms": [
+        "荷物",
+        "受け取る"
+      ],
+      "scenes": [
+        "S011",
+        "S014"
+      ],
+      "pattern": "verb_ni_kimashita"
+    },
+    {
+      "id": "S-023-V13-015",
+      "group": "parcel",
+      "role_vi": "Nhân viên cửa hàng nhờ khách mở màn hình có mã vạch",
+      "gender": "female",
+      "ja": "バーコードの画面を見せていただけますか。",
+      "vi": "Anh cho tôi xem màn hình có mã vạch được không ạ?",
+      "terms": [
+        "バーコード",
+        "画面"
+      ],
+      "scenes": [
+        "S011",
+        "S012",
+        "S014"
+      ],
+      "pattern": "te_itadakemasu_ka"
+    },
+    {
+      "id": "S-023-V13-016",
+      "group": "parcel",
+      "role_vi": "Khách hỏi khi nào nên quay lại vì chưa tìm thấy kiện",
+      "gender": "male",
+      "ja": "荷物はいつごろ受け取れますか。",
+      "vi": "Khoảng khi nào tôi nhận được kiện hàng ạ?",
+      "terms": [
+        "荷物",
+        "受け取る"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "itsugoro_potential"
+    },
+    {
+      "id": "S-023-V13-017",
+      "group": "parcel",
+      "role_vi": "Khách hỏi có thể gửi bưu kiện tại quầy đang đứng không",
+      "gender": "male",
+      "ja": "このレジで宅配便を送れますか。",
+      "vi": "Tôi gửi bưu kiện ở quầy này được không ạ?",
+      "terms": [
+        "レジ",
+        "宅配便",
+        "送る"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "place_de_potential_ka"
+    },
+    {
+      "id": "S-023-V13-018",
+      "group": "check",
+      "role_vi": "Khách báo thiếu tiền thừa và nhờ kiểm lại",
+      "gender": "male",
+      "ja": "お釣りが足りないので、確認してもらえますか。",
+      "vi": "Tiền thừa còn thiếu, chị kiểm tra giúp tôi được không ạ?",
+      "terms": [
+        "お釣り",
+        "足りる",
+        "確認する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "te_moraemasu_ka"
+    },
+    {
+      "id": "S-023-V13-019",
+      "group": "check",
+      "role_vi": "Khách vừa thanh toán quay lại báo trong túi không có món ghi trên hóa đơn",
+      "gender": "male",
+      "ja": "レシートにはヨーグルトがありますが、袋には入っていません。",
+      "vi": "Hóa đơn có sữa chua, nhưng trong túi lại không có ạ.",
+      "terms": [
+        "レシート",
+        "ヨーグルト",
+        "袋"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "a_ni_aru_ga_b"
+    },
+    {
+      "id": "S-023-V13-020",
+      "group": "check",
+      "role_vi": "Thu ngân đề nghị xem hóa đơn để kiểm món khách chưa nhận",
+      "gender": "female",
+      "ja": "レシートを見せていただけますか。",
+      "vi": "Anh cho tôi xem hóa đơn được không ạ?",
+      "terms": [
+        "レシート"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "te_itadakemasu_ka"
+    },
+    {
+      "id": "S-023-V13-021",
+      "group": "check",
+      "role_vi": "Thu ngân báo sẽ hỏi người phụ trách do quầy chưa tìm thấy món",
+      "gender": "female",
+      "ja": "店の責任者に確認します。",
+      "vi": "Tôi sẽ hỏi lại người phụ trách cửa hàng ạ.",
+      "terms": [
+        "責任者",
+        "確認する"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "person_ni_kakunin"
+    },
+    {
+      "id": "S-023-V13-022",
+      "group": "check",
+      "role_vi": "Khách báo hiện đã đủ hàng sau khi hai bên cùng kiểm",
+      "gender": "male",
+      "ja": "商品は全部そろいました。",
+      "vi": "Hàng đã đủ hết rồi ạ.",
+      "terms": [
+        "商品"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "noun_wa_soroimashita"
+    }
+  ]
+}

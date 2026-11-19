@@ -1,0 +1,371 @@
+{
+  "code": "S-018",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "8cbc679003bbf41e99b0cb30e4ca2cae05dd171d4eee4bdf9839463270a9fcc3",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "hours": "Hỏi giờ có mặt, giờ bắt đầu và giờ nghỉ",
+    "access": "Hỏi trước khi dùng phòng và thiết bị",
+    "items": "Cất đồ cá nhân và giao lại đồ tìm được",
+    "confirm": "Kiểm lại khi nghe quy tắc khác nhau",
+    "guests": "Hỏi cách đón khách đến muộn"
+  },
+  "items": [
+    {
+      "id": "S-018-V13-001",
+      "group": "hours",
+      "role_vi": "Nhân viên mới kiểm giờ bắt đầu ca với trưởng nhóm",
+      "gender": "female",
+      "ja": "仕事は九時からですね。",
+      "vi": "Ca làm bắt đầu từ chín giờ, đúng không ạ?",
+      "terms": [
+        "時"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "time_kara_desu_ne"
+    },
+    {
+      "id": "S-018-V13-002",
+      "group": "hours",
+      "role_vi": "Nhân viên mới hỏi hạn phải đến nơi làm việc",
+      "gender": "male",
+      "ja": "何時までに来ればいいですか。",
+      "vi": "Tôi cần có mặt chậm nhất là mấy giờ ạ?",
+      "terms": [
+        "時"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "nanjimadeni_verb_ba"
+    },
+    {
+      "id": "S-018-V13-003",
+      "group": "hours",
+      "role_vi": "Nhân viên hỏi giờ nghỉ giữa ca hôm nay",
+      "gender": "female",
+      "ja": "今日の休憩は何時からですか。",
+      "vi": "Hôm nay tôi nghỉ giữa ca từ mấy giờ ạ?",
+      "terms": [
+        "今日",
+        "休憩",
+        "時"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "nanjikara_desu_ka"
+    },
+    {
+      "id": "S-018-V13-004",
+      "group": "hours",
+      "role_vi": "Trưởng nhóm nêu hạn có mặt vào đầu ca",
+      "gender": "male",
+      "ja": "八時五十分までに来てください。",
+      "vi": "Chị có mặt chậm nhất là tám giờ năm mươi nhé.",
+      "terms": [
+        "時",
+        "分"
+      ],
+      "scenes": [
+        "S001",
+        "S002",
+        "S005"
+      ],
+      "pattern": "made_ni_te_kudasai"
+    },
+    {
+      "id": "S-018-V13-005",
+      "group": "hours",
+      "role_vi": "Nhân viên mới hỏi báo cho ai khi chuyến tàu bị trễ",
+      "gender": "female",
+      "ja": "電車が遅れたら、誰に連絡しますか。",
+      "vi": "Nếu tàu trễ thì tôi báo ai ạ?",
+      "terms": [
+        "遅れる",
+        "連絡する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "tara_dare_ni"
+    },
+    {
+      "id": "S-018-V13-006",
+      "group": "hours",
+      "role_vi": "Trưởng nhóm cho biết anh là người nhận báo khi nhân viên đến trễ",
+      "gender": "male",
+      "ja": "遅れるときは私に電話してください。",
+      "vi": "Nếu chị đến muộn thì gọi cho tôi nhé.",
+      "terms": [
+        "遅れる",
+        "電話する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "toki_wa_te_kudasai"
+    },
+    {
+      "id": "S-018-V13-007",
+      "group": "access",
+      "role_vi": "Nhân viên hỏi có thể vào phòng lưu hồ sơ ngay không",
+      "gender": "female",
+      "ja": "今、資料室に入ってもいいですか。",
+      "vi": "Bây giờ tôi vào phòng lưu tài liệu được không ạ?",
+      "terms": [
+        "資料室",
+        "入る"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-018-V13-008",
+      "group": "access",
+      "role_vi": "Trưởng nhóm dặn phải hỏi anh trước khi vào phòng lưu hồ sơ",
+      "gender": "male",
+      "ja": "私に聞いてから資料室に入ってください。",
+      "vi": "Chị hỏi tôi trước rồi mới vào phòng lưu tài liệu nhé.",
+      "terms": [
+        "聞く",
+        "資料室",
+        "入る"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "te_kara_te_kudasai"
+    },
+    {
+      "id": "S-018-V13-009",
+      "group": "access",
+      "role_vi": "Nhân viên hỏi có được mang máy tính công ty về nhà không",
+      "gender": "female",
+      "ja": "会社のパソコンを持って帰ってもいいですか。",
+      "vi": "Tôi mang máy tính công ty về nhà được không ạ?",
+      "terms": [
+        "パソコン",
+        "持って帰る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-018-V13-010",
+      "group": "access",
+      "role_vi": "Người phụ trách giải thích máy tính này không được mang ra ngoài",
+      "gender": "male",
+      "ja": "このパソコンは持ち出せません。",
+      "vi": "Máy tính này không được mang ra ngoài ạ.",
+      "terms": [
+        "パソコン",
+        "持ち出す"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "potential_negative"
+    },
+    {
+      "id": "S-018-V13-011",
+      "group": "access",
+      "role_vi": "Nhân viên xin xem tài liệu tại chỗ vì không được mang máy tính về",
+      "gender": "female",
+      "ja": "ここで資料を見てもいいですか。",
+      "vi": "Tôi xem tài liệu ở đây được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-018-V13-012",
+      "group": "items",
+      "role_vi": "Nhân viên mới hỏi chỗ cất túi khi đến làm",
+      "gender": "female",
+      "ja": "かばんはどこに置きますか。",
+      "vi": "Tôi để túi ở đâu ạ?",
+      "terms": [
+        "かばん"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "doko_ni_okimasu"
+    },
+    {
+      "id": "S-018-V13-013",
+      "group": "items",
+      "role_vi": "Người hướng dẫn chỉ cách nhận đúng tủ đồ cá nhân",
+      "gender": "male",
+      "ja": "名前のあるロッカーに入れてください。",
+      "vi": "Chị cất đồ vào tủ có tên mình nhé.",
+      "terms": [
+        "名前",
+        "ロッカー",
+        "入れる"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "place_ni_te_kudasai"
+    },
+    {
+      "id": "S-018-V13-014",
+      "group": "items",
+      "role_vi": "Nhân viên nhặt được tài liệu trên bàn chung và hỏi phải đưa cho ai",
+      "gender": "female",
+      "ja": "この資料は誰に渡せばいいですか。",
+      "vi": "Tôi nên đưa tập tài liệu này cho ai ạ?",
+      "terms": [
+        "渡す"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "dare_ni_verb_ba"
+    },
+    {
+      "id": "S-018-V13-015",
+      "group": "items",
+      "role_vi": "Người phụ trách nói sẽ kiểm xem tài liệu thuộc về ai",
+      "gender": "male",
+      "ja": "資料の持ち主を確認します。",
+      "vi": "Tôi sẽ kiểm tra xem tài liệu này là của ai ạ.",
+      "terms": [
+        "持ち主",
+        "確認する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "detail_wo_kakunin"
+    },
+    {
+      "id": "S-018-V13-016",
+      "group": "confirm",
+      "role_vi": "Nhân viên hỏi trưởng nhóm để biết chắc có được dùng phòng vào buổi trưa không",
+      "gender": "female",
+      "ja": "会議室は昼に使えますか。",
+      "vi": "Buổi trưa có dùng được phòng họp không ạ?",
+      "terms": [
+        "会議室",
+        "使う"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "noun_wa_potential_ka"
+    },
+    {
+      "id": "S-018-V13-017",
+      "group": "confirm",
+      "role_vi": "Trưởng nhóm hẹn trả lời sau khi hỏi quản lý tòa nhà",
+      "gender": "male",
+      "ja": "十時までに答えます。",
+      "vi": "Tôi sẽ trả lời chậm nhất là mười giờ ạ.",
+      "terms": [
+        "時",
+        "答える"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "made_ni_verb_masu"
+    },
+    {
+      "id": "S-018-V13-018",
+      "group": "confirm",
+      "role_vi": "Nhân viên trì hoãn đặt phòng khi còn chờ xác nhận quy tắc",
+      "gender": "female",
+      "ja": "会議室の予約は確認してからにします。",
+      "vi": "Tôi sẽ đợi xác nhận xong rồi mới đặt phòng họp ạ.",
+      "terms": [
+        "会議室",
+        "予約する",
+        "確認する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "te_kara_ni_shimasu"
+    },
+    {
+      "id": "S-018-V13-019",
+      "group": "confirm",
+      "role_vi": "Nhân viên báo cho đồng nghiệp thời gian đã xác nhận riêng hôm nay",
+      "gender": "male",
+      "ja": "今日は会議室を十二時半から使えます。",
+      "vi": "Hôm nay dùng được phòng họp từ mười hai giờ rưỡi nhé.",
+      "terms": [
+        "今日",
+        "会議室",
+        "時",
+        "使う"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "time_kara_potential"
+    },
+    {
+      "id": "S-018-V13-020",
+      "group": "guests",
+      "role_vi": "Nhân viên hỏi người phụ trách có thể dẫn khách đến muộn thẳng tới phòng họp không",
+      "gender": "female",
+      "ja": "お客様を会議室にご案内してもいいですか。",
+      "vi": "Tôi dẫn khách vào phòng họp được không ạ?",
+      "terms": [
+        "お客様",
+        "会議室",
+        "案内する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-018-V13-021",
+      "group": "guests",
+      "role_vi": "Người phụ trách nhận việc ra tận cửa đón khách",
+      "gender": "male",
+      "ja": "私が入口まで迎えに行きます。",
+      "vi": "Để tôi ra tận cửa đón khách nhé.",
+      "terms": [
+        "入口",
+        "迎えに行く"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "watashi_ga_verb_masu"
+    },
+    {
+      "id": "S-018-V13-022",
+      "group": "guests",
+      "role_vi": "Nhân viên mời khách đến muộn đợi người phụ trách ra đón",
+      "gender": "female",
+      "ja": "こちらでお待ちください。",
+      "vi": "Xin anh vui lòng đợi ở đây ạ.",
+      "terms": [
+        "お待ちください"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "place_de_omachi"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "code": "S-062",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "76dff26ad56bdd78565045ff72109f8048e264f50169e77760072fa04bd1379b",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "book": "Đề nghị và xác nhận cuộc hẹn",
+    "reception": "Xưng tên, hỏi chỗ chờ và xác nhận phòng",
+    "meet": "Trao danh thiếp và nói việc cần trao đổi",
+    "finish": "Chốt lần liên hệ tiếp theo"
+  },
+  "items": [
+    {
+      "id": "S-062-V13-001",
+      "group": "book",
+      "role_vi": "Nhân viên gọi cho đối tác",
+      "gender": "female",
+      "ja": "みどり商事のリンでございます。",
+      "vi": "Tôi là Linh bên công ty Midori ạ.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "giới_thiệu_bên_mình"
+    },
+    {
+      "id": "S-062-V13-002",
+      "group": "book",
+      "role_vi": "Nhân viên gọi hẹn đối tác",
+      "gender": "female",
+      "ja": "火曜日の午後、資料のことでお会いできますか。",
+      "vi": "Chiều thứ Ba, tôi có thể gặp anh để trao đổi về tài liệu không ạ?",
+      "terms": [
+        "午後",
+        "資料",
+        "会う"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "đề_nghị_giờ_gặp"
+    },
+    {
+      "id": "S-062-V13-003",
+      "group": "book",
+      "role_vi": "Đối tác nhận cuộc gọi hẹn",
+      "gender": "male",
+      "ja": "予定を確認しましたら、今日中にご連絡します。",
+      "vi": "Tôi sẽ kiểm tra lịch rồi liên hệ lại trong hôm nay ạ.",
+      "terms": [
+        "予定"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "báo_sẽ_trả_lời"
+    },
+    {
+      "id": "S-062-V13-004",
+      "group": "book",
+      "role_vi": "Nhân viên đề nghị giờ khác",
+      "gender": "female",
+      "ja": "水曜日の午前十時でしたら、ご都合はいかがですか。",
+      "vi": "Vậy mười giờ sáng thứ Tư thì anh có tiện không ạ?",
+      "terms": [
+        "午前"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "đề_nghị_giờ_gặp"
+    },
+    {
+      "id": "S-062-V13-005",
+      "group": "book",
+      "role_vi": "Nhân viên chốt người sẽ gặp",
+      "gender": "female",
+      "ja": "当日はどなたにお会いすればよろしいですか。",
+      "vi": "Hôm đó tôi sẽ cần gặp ai ạ?",
+      "terms": [
+        "当日",
+        "会う"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "hỏi_người_sẽ_gặp"
+    },
+    {
+      "id": "S-062-V13-006",
+      "group": "book",
+      "role_vi": "Nhân viên xác nhận địa điểm với đối tác",
+      "gender": "female",
+      "ja": "打ち合わせは御社の三階の会議室でよろしいですか。",
+      "vi": "Buổi trao đổi ở phòng họp tầng ba của quý công ty, đúng không ạ?",
+      "terms": [
+        "御社",
+        "～階",
+        "会議室"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "xác_nhận_địa_điểm"
+    },
+    {
+      "id": "S-062-V13-007",
+      "group": "reception",
+      "role_vi": "Khách giới thiệu lịch hẹn tại lễ tân",
+      "gender": "female",
+      "ja": "営業部の佐藤様と、午前十時にお約束しています。",
+      "vi": "Tôi có hẹn lúc mười giờ sáng với chị Sato ở phòng kinh doanh ạ.",
+      "terms": [
+        "営業部",
+        "～様",
+        "午前",
+        "約束"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "nói_đã_có_hẹn"
+    },
+    {
+      "id": "S-062-V13-008",
+      "group": "reception",
+      "role_vi": "Lễ tân hỏi khách theo lịch hẹn",
+      "gender": "male",
+      "ja": "恐れ入りますが、会社名を教えていただけますか。",
+      "vi": "Anh cho tôi xin tên công ty được không ạ?",
+      "terms": [
+        "会社名"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "xin_thông_tin"
+    },
+    {
+      "id": "S-062-V13-009",
+      "group": "reception",
+      "role_vi": "Khách đính chính tên người hẹn",
+      "gender": "female",
+      "ja": "私がお会いするのは、加藤様ではなく営業部の佐藤様です。",
+      "vi": "Tôi có hẹn với chị Sato ở phòng kinh doanh, không phải chị Kato ạ.",
+      "terms": [
+        "会う",
+        "～様",
+        "営業部"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "đính_chính_người_hẹn"
+    },
+    {
+      "id": "S-062-V13-010",
+      "group": "reception",
+      "role_vi": "Lễ tân báo người hẹn đang họp",
+      "gender": "male",
+      "ja": "営業部の佐藤は、ただいま会議中です。",
+      "vi": "Chị Sato bên phòng kinh doanh hiện đang họp ạ.",
+      "terms": [
+        "営業部",
+        "会議中"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "báo_đang_bận"
+    },
+    {
+      "id": "S-062-V13-011",
+      "group": "reception",
+      "role_vi": "Khách hỏi chờ ở đâu",
+      "gender": "female",
+      "ja": "打ち合わせまで、どちらで待てばいいですか。",
+      "vi": "Tôi nên chờ ở đâu trước buổi trao đổi ạ?",
+      "terms": [
+        "待つ"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_nơi_chờ"
+    },
+    {
+      "id": "S-062-V13-012",
+      "group": "reception",
+      "role_vi": "Lễ tân chỉ phòng họp",
+      "gender": "male",
+      "ja": "お待たせしました、三階の会議室へご案内します。",
+      "vi": "Cảm ơn chị đã chờ, tôi sẽ dẫn chị lên phòng họp tầng ba ạ.",
+      "terms": [
+        "お待たせしました",
+        "～階",
+        "会議室",
+        "案内する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "hướng_dẫn_đi"
+    },
+    {
+      "id": "S-062-V13-013",
+      "group": "meet",
+      "role_vi": "Nhân viên gặp đối tác lần đầu",
+      "gender": "female",
+      "ja": "はじめまして、みどり商事から参りました。",
+      "vi": "Rất vui được gặp anh, tôi đến từ công ty Midori ạ.",
+      "terms": [
+        "はじめまして"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "giới_thiệu_bên_mình"
+    },
+    {
+      "id": "S-062-V13-014",
+      "group": "meet",
+      "role_vi": "Nhân viên trao danh thiếp",
+      "gender": "female",
+      "ja": "こちらが私の名刺です。",
+      "vi": "Đây là danh thiếp của tôi ạ.",
+      "terms": [
+        "名刺"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "trao_danh_thiếp"
+    },
+    {
+      "id": "S-062-V13-015",
+      "group": "meet",
+      "role_vi": "Nhân viên hỏi cách xưng hô",
+      "gender": "female",
+      "ja": "田中部長とお呼びしてもいいでしょうか。",
+      "vi": "Tôi gọi anh là trưởng phòng Tanaka được không ạ?",
+      "terms": [
+        "部長"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "hỏi_cách_gọi"
+    },
+    {
+      "id": "S-062-V13-016",
+      "group": "meet",
+      "role_vi": "Đối tác giải thích mình tiếp thay",
+      "gender": "male",
+      "ja": "田中は急用で席を外しておりますので、私、鈴木が代わりに担当いたします。",
+      "vi": "Anh Tanaka phải ra ngoài có việc gấp nên tôi là Suzuki sẽ tiếp chị thay anh ấy ạ.",
+      "terms": [
+        "急用",
+        "席を外す"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "giải_thích_thay_người"
+    },
+    {
+      "id": "S-062-V13-017",
+      "group": "meet",
+      "role_vi": "Nhân viên nói mục đích với người tiếp thay",
+      "gender": "female",
+      "ja": "新しい資料の内容を一緒に確認していただけますか。",
+      "vi": "Anh cùng tôi xem nội dung tài liệu mới được không ạ?",
+      "terms": [
+        "資料",
+        "内容"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "nói_việc_cần_làm"
+    },
+    {
+      "id": "S-062-V13-018",
+      "group": "meet",
+      "role_vi": "Nhân viên xin thời gian trao đổi",
+      "gender": "female",
+      "ja": "資料のことで、十五分ほどお時間をいただけますか。",
+      "vi": "Anh có thể dành cho tôi khoảng mười lăm phút để trao đổi về tài liệu không ạ?",
+      "terms": [
+        "資料",
+        "～分"
+      ],
+      "scenes": [
+        "S010",
+        "S011"
+      ],
+      "pattern": "xin_thời_gian"
+    },
+    {
+      "id": "S-062-V13-019",
+      "group": "finish",
+      "role_vi": "Khách chào cảm ơn sau buổi gặp",
+      "gender": "female",
+      "ja": "今日はお時間をいただき、ありがとうございました。",
+      "vi": "Cảm ơn anh đã dành thời gian cho tôi hôm nay ạ.",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "cảm_ơn_sau_gặp"
+    },
+    {
+      "id": "S-062-V13-020",
+      "group": "finish",
+      "role_vi": "Nhân viên hẹn gửi tài liệu",
+      "gender": "female",
+      "ja": "金曜日に、今日の資料をメールでお送りします。",
+      "vi": "Thứ Sáu tôi sẽ gửi tài liệu hôm nay qua email ạ.",
+      "terms": [
+        "資料",
+        "送る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "chốt_bước_tiếp"
+    },
+    {
+      "id": "S-062-V13-021",
+      "group": "finish",
+      "role_vi": "Đối tác xác nhận sẽ xem",
+      "gender": "male",
+      "ja": "資料が届いたら、内容を確認してお返事します。",
+      "vi": "Khi nhận được tài liệu, tôi sẽ xem nội dung rồi trả lời chị ạ.",
+      "terms": [
+        "資料",
+        "届く",
+        "内容",
+        "返事する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "báo_sẽ_trả_lời"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "code": "T-127",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "0078884ad0aa069677fe3f51a8cde8a1085ec9fe8b839298eb96d3d0e6747343",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "pace": "Chọn nhịp đi hợp với cả nhà",
+    "budget": "Bàn ngân sách và chia việc đặt chỗ",
+    "stay": "Hỏi và xác nhận với chỗ nghỉ",
+    "change": "Điều chỉnh theo sức và lịch của người thân",
+    "meet": "Thống nhất nghỉ, đi riêng và gặp lại",
+    "after": "Chia chi phí và theo dõi sau chuyến"
+  },
+  "items": [
+    {
+      "id": "T-127-V13-001",
+      "group": "pace",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "宿でゆっくりするのと、何か所か回るのと、どっちがいい？",
+      "vi": "Em thích nghỉ thong thả ở chỗ ở hay đi tham quan vài nơi?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～と～、どっちがいい"
+    },
+    {
+      "id": "T-127-V13-002",
+      "group": "pace",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "予定を詰め込みすぎず、お昼のあとに休む時間を取ろう。",
+      "vi": "Mình đừng xếp lịch dày quá, chừa thời gian nghỉ sau bữa trưa nhé.",
+      "terms": [
+        "詰め込む"
+      ],
+      "scenes": [
+        "S002",
+        "S005"
+      ],
+      "pattern": "～を詰め込みすぎず"
+    },
+    {
+      "id": "T-127-V13-003",
+      "group": "pace",
+      "role_vi": "Em trai bàn chuyến đi với chị",
+      "gender": "male",
+      "ja": "月曜は休めないけど、土曜から一泊なら行けるよ。",
+      "vi": "Thứ Hai em không nghỉ được, nhưng đi từ thứ Bảy và ở một đêm thì em đi được.",
+      "terms": [
+        "一泊"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～なら行ける"
+    },
+    {
+      "id": "T-127-V13-004",
+      "group": "pace",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "箱根には行きたいけど、午後に三か所も回ると疲れそうだよ。",
+      "vi": "Chị vẫn muốn đi Hakone, chỉ lo một buổi chiều ghé cả ba chỗ thì mệt.",
+      "terms": [],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "～けど～と疲れそう"
+    },
+    {
+      "id": "T-127-V13-005",
+      "group": "budget",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "宿代と交通費と食事代を入れて、一人一万六千円を目安に探さない？",
+      "vi": "Mình thử tìm theo mức khoảng 16.000 yên một người, tính cả tiền phòng, đi lại và ăn uống nhé?",
+      "terms": [
+        "食事代",
+        "目安"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～も入れて～を目安に"
+    },
+    {
+      "id": "T-127-V13-006",
+      "group": "budget",
+      "role_vi": "Em trai bàn chuyến đi với chị",
+      "gender": "male",
+      "ja": "交通費を抑えたいから、タクシーは駅から宿までだけにしない？",
+      "vi": "Em muốn bớt tiền đi lại, mình chỉ đi taxi đoạn từ ga đến chỗ ở thôi nhé?",
+      "terms": [
+        "抑える"
+      ],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "～を抑えたいから"
+    },
+    {
+      "id": "T-127-V13-007",
+      "group": "budget",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "車の貸し切りは今回は見送って、駅に近い宿を探そう。",
+      "vi": "Lần này mình bỏ phương án thuê trọn xe và tìm chỗ nghỉ gần ga nhé.",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を見送って～を探す"
+    },
+    {
+      "id": "T-127-V13-008",
+      "group": "budget",
+      "role_vi": "Em trai bàn chuyến đi với chị",
+      "gender": "female",
+      "ja": "宿が決まってから、僕が切符を手配するね。",
+      "vi": "Chốt chỗ nghỉ xong thì để em lo vé nhé chị.",
+      "terms": [
+        "手配"
+      ],
+      "scenes": [
+        "S007",
+        "S010"
+      ],
+      "pattern": "～てから～する"
+    },
+    {
+      "id": "T-127-V13-009",
+      "group": "stay",
+      "role_vi": "Chị gọi hỏi cơ sở lưu trú cho gia đình",
+      "gender": "female",
+      "ja": "母と一緒に泊まるのですが、玄関からエレベーターまでに段差はありますか。",
+      "vi": "Tôi đi cùng mẹ, từ cửa vào đến thang máy có bậc nào không ạ?",
+      "terms": [
+        "段差"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～に～はありますか"
+    },
+    {
+      "id": "T-127-V13-010",
+      "group": "stay",
+      "role_vi": "Chị gọi hỏi cơ sở lưu trú cho gia đình",
+      "gender": "female",
+      "ja": "三人から二人に変わるかもしれないのですが、人数はいつまで変更できますか。",
+      "vi": "Có thể chúng tôi sẽ còn hai người thay vì ba người, hạn cuối để đổi số khách là khi nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～はいつまで変更できますか"
+    },
+    {
+      "id": "T-127-V13-011",
+      "group": "stay",
+      "role_vi": "Chị gọi hỏi cơ sở lưu trú cho gia đình",
+      "gender": "female",
+      "ja": "家族と相談したいのですが、この見積もりは何時まで有効ですか。",
+      "vi": "Tôi muốn bàn với gia đình trước, báo giá này có hiệu lực đến mấy giờ ạ?",
+      "terms": [
+        "見積もり"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～は何時まで有効ですか"
+    },
+    {
+      "id": "T-127-V13-012",
+      "group": "stay",
+      "role_vi": "Chị gọi hỏi cơ sở lưu trú cho gia đình",
+      "gender": "female",
+      "ja": "土曜から一泊、日曜のチェックアウトでお願いします。",
+      "vi": "Cho tôi đặt một đêm từ thứ Bảy và trả phòng vào Chủ nhật ạ.",
+      "terms": [
+        "一泊",
+        "チェックアウト"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～でお願いします"
+    },
+    {
+      "id": "T-127-V13-013",
+      "group": "stay",
+      "role_vi": "Chị gọi hỏi cơ sở lưu trú cho gia đình",
+      "gender": "female",
+      "ja": "予約したのは部屋だけで、朝食と送迎は入っていませんよね。",
+      "vi": "Tôi mới đặt phòng thôi, chưa gồm bữa sáng và xe đưa đón, đúng không ạ?",
+      "terms": [
+        "送迎"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～は入っていませんよね"
+    },
+    {
+      "id": "T-127-V13-014",
+      "group": "change",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "母さんは少し体調が悪いから、明日は歩く時間を短くしたいって。",
+      "vi": "Mẹ nói hơi mệt nên muốn mai đi bộ ít thôi.",
+      "terms": [
+        "体調"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～を短くしたいって"
+    },
+    {
+      "id": "T-127-V13-015",
+      "group": "change",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "少し遅く着いても、直通の電車にしない？",
+      "vi": "Dù đến muộn một chút, mình đi tàu thẳng để khỏi phải đổi tàu nhé?",
+      "terms": [
+        "直通"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ても～にしよう"
+    },
+    {
+      "id": "T-127-V13-016",
+      "group": "change",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "宿の変更料は一人ずつかかるの、それとも部屋ごとなの？",
+      "vi": "Phí đổi chỗ nghỉ là tính theo từng người hay tính cho cả phòng vậy em?",
+      "terms": [
+        "変更料"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～は一人分か全体か"
+    },
+    {
+      "id": "T-127-V13-017",
+      "group": "change",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "旅行は無理しなくていいから、宿の予約を二人に変えられるか私が聞いてみるね。",
+      "vi": "Em không cần cố đi đâu, để chị hỏi chỗ nghỉ xem có đổi đặt phòng xuống hai người được không nhé.",
+      "terms": [],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～は私が確認する"
+    },
+    {
+      "id": "T-127-V13-018",
+      "group": "meet",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "次にどこへ行くか決める前に、みんなで少し座って休もうか。",
+      "vi": "Trước khi quyết đi đâu tiếp, cả nhà mình ngồi nghỉ một lát nhé?",
+      "terms": [],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "～を決める前に～しよう"
+    },
+    {
+      "id": "T-127-V13-019",
+      "group": "meet",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "別々に回るかどうかは、父さんと母さんの希望を聞いてから決めよう。",
+      "vi": "Chuyện có tách ra đi riêng không thì mình hỏi bố mẹ muốn thế nào rồi mới quyết nhé.",
+      "terms": [],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～てから～する"
+    },
+    {
+      "id": "T-127-V13-020",
+      "group": "meet",
+      "role_vi": "Em trai bàn chuyến đi với chị",
+      "gender": "male",
+      "ja": "待ち合わせは三時、駅の改札の外にある案内所の前にしよう。",
+      "vi": "Ba giờ mình gặp nhau trước quầy thông tin bên ngoài cổng soát vé của ga nhé chị.",
+      "terms": [
+        "待ち合わせ",
+        "案内所"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～で待ち合わせよう"
+    },
+    {
+      "id": "T-127-V13-021",
+      "group": "after",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "駐車料金のレシートと、宿や交通費の内訳を確認してからお金を分けよう。",
+      "vi": "Mình xem biên lai đỗ xe và từng khoản tiền phòng, tiền đi lại rồi hẵng chia tiền nhé.",
+      "terms": [
+        "内訳"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "～も一緒に確認してから"
+    },
+    {
+      "id": "T-127-V13-022",
+      "group": "after",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "母さんが朝ゆっくり出られる便を選んでくれて助かったよ。",
+      "vi": "Cảm ơn em đã chọn chuyến tàu để buổi sáng mẹ không phải vội.",
+      "terms": [],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "～してくれて助かった"
+    },
+    {
+      "id": "T-127-V13-023",
+      "group": "after",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "送迎の返金は受け付けてもらえたけど、カードの明細にはまだ反映されていないよ。",
+      "vi": "Yêu cầu hoàn tiền xe đưa đón đã được tiếp nhận, nhưng sao kê thẻ vẫn chưa hiện khoản đó.",
+      "terms": [
+        "送迎",
+        "返金",
+        "明細",
+        "反映"
+      ],
+      "scenes": [
+        "S028",
+        "S029"
+      ],
+      "pattern": "～はまだ～していない"
+    },
+    {
+      "id": "T-127-V13-024",
+      "group": "after",
+      "role_vi": "Chị bàn chuyến đi với em trai",
+      "gender": "female",
+      "ja": "次は予約番号と変更の連絡先を、家族みんなが見られる所にまとめておこう。",
+      "vi": "Lần sau mình để chung mã đặt chỗ và thông tin liên hệ để đổi lịch ở nơi cả nhà đều xem được nhé.",
+      "terms": [
+        "予約番号",
+        "連絡先"
+      ],
+      "scenes": [
+        "S030"
+      ],
+      "pattern": "～をみんなで見られるように"
+    }
+  ]
+}

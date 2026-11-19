@@ -1,0 +1,379 @@
+{
+  "code": "T-118",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "c3005ce7db0837d9fc5147af9dd62090af3d46659f100254dea43cee5c0ba5fd",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "invite": "Hỏi nhu cầu và nói rõ cách tham gia",
+    "book": "Kiểm báo giá, xe và điều kiện đổi phòng",
+    "meet": "Hẹn điểm tập trung và xử lý người đến trễ",
+    "change": "Đổi lịch và báo đúng nơi, đúng giờ",
+    "support": "Hỗ trợ người gặp khó trong chuyến",
+    "after": "Trả đồ quên và rút kinh nghiệm"
+  },
+  "items": [
+    {
+      "id": "T-118-V13-001",
+      "group": "invite",
+      "role_vi": "Người phụ trách báo chuyến đi tự nguyện",
+      "gender": "female",
+      "ja": "社員旅行への参加は任意です。",
+      "vi": "Chuyến du lịch công ty là tự nguyện.",
+      "terms": [
+        "社員旅行",
+        "任意"
+      ],
+      "scenes": [
+        "S001",
+        "S006"
+      ],
+      "pattern": "～への参加は任意です"
+    },
+    {
+      "id": "T-118-V13-002",
+      "group": "invite",
+      "role_vi": "Người phụ trách hỏi ai có thể tham gia vào lúc nào",
+      "gender": "male",
+      "ja": "社員旅行は、土曜だけなら参加できそうですか。",
+      "vi": "Nếu chỉ đi ngày thứ Bảy thì anh có thể tham gia chuyến du lịch công ty không?",
+      "terms": [
+        "社員旅行"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～なら、～そうですか"
+    },
+    {
+      "id": "T-118-V13-003",
+      "group": "invite",
+      "role_vi": "Người phụ trách nói rõ có thể chọn nghỉ thay cho tham quan",
+      "gender": "female",
+      "ja": "見学は希望者だけなので、その時間はロビーで休んでも大丈夫です。",
+      "vi": "Buổi tham quan chỉ dành cho ai muốn đi, trong giờ đó anh nghỉ ở sảnh cũng được.",
+      "terms": [
+        "希望者"
+      ],
+      "scenes": [
+        "S003",
+        "S030"
+      ],
+      "pattern": "～なので、～ても大丈夫です"
+    },
+    {
+      "id": "T-118-V13-004",
+      "group": "invite",
+      "role_vi": "Người phụ trách xác nhận điều kiện cho người chỉ đi ngày đầu",
+      "gender": "female",
+      "ja": "土曜だけの参加なら、帰りに駅で降りられるかバス会社に聞いてみますね。",
+      "vi": "Nếu anh chỉ đi thứ Bảy, tôi sẽ hỏi hãng xe xem lúc về anh có thể xuống ở ga không nhé.",
+      "terms": [],
+      "scenes": [
+        "S007",
+        "S009"
+      ],
+      "pattern": "～なら、～か聞いてみます"
+    },
+    {
+      "id": "T-118-V13-005",
+      "group": "invite",
+      "role_vi": "Người phụ trách mời trao đổi riêng về nhu cầu trong chuyến",
+      "gender": "male",
+      "ja": "移動や食事で心配なことがあれば、あとで私に直接教えてください。",
+      "vi": "Nếu có điều gì băn khoăn về đi lại hoặc ăn uống, lát nữa anh báo riêng với tôi nhé.",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～があれば、～てください"
+    },
+    {
+      "id": "T-118-V13-006",
+      "group": "book",
+      "role_vi": "Người phụ trách kiểm mức phải xin duyệt trước khi đặt",
+      "gender": "female",
+      "ja": "見積もりが予算内でも、予約する前に承認をもらう必要がありますか。",
+      "vi": "Dù báo giá trong ngân sách, tôi vẫn cần xin duyệt trước khi đặt phải không ạ?",
+      "terms": [
+        "見積もり",
+        "承認"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ても、～前に～必要がありますか"
+    },
+    {
+      "id": "T-118-V13-007",
+      "group": "book",
+      "role_vi": "Người phụ trách gọi hãng xe xác nhận giờ rời điểm đón",
+      "gender": "female",
+      "ja": "貸切バスが駅の南口を出るのは、八時四十分でよろしいですか。",
+      "vi": "Xe thuê riêng rời cửa Nam nhà ga lúc tám giờ bốn mươi, đúng không ạ?",
+      "terms": [
+        "貸切バス"
+      ],
+      "scenes": [
+        "S010",
+        "S011"
+      ],
+      "pattern": "～のは、～でよろしいですか"
+    },
+    {
+      "id": "T-118-V13-008",
+      "group": "book",
+      "role_vi": "Người phụ trách yêu cầu phân biệt giờ rời bãi với giờ chở khách",
+      "gender": "male",
+      "ja": "参加者向けの行程表には、車庫を出る時刻ではなく、南口の出発時刻を書いてください。",
+      "vi": "Trong lịch trình gửi người tham gia, anh ghi giờ xe chạy từ cửa Nam, đừng ghi giờ xe rời bãi nhé.",
+      "terms": [
+        "行程表"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ではなく、～を書いてください"
+    },
+    {
+      "id": "T-118-V13-009",
+      "group": "book",
+      "role_vi": "Người phụ trách xin giữ phương án đổi phòng khi chưa hỏi đủ",
+      "gender": "female",
+      "ja": "同室になる二人に聞いてから決めたいので、部屋の変更は少し待っていただけますか。",
+      "vi": "Tôi muốn hỏi hai người sẽ ở chung phòng rồi mới quyết, anh đợi một chút rồi hẵng đổi phòng được không ạ?",
+      "terms": [
+        "同室"
+      ],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "～てから決めたいので、～ていただけますか"
+    },
+    {
+      "id": "T-118-V13-010",
+      "group": "book",
+      "role_vi": "Người phụ trách chốt đổi phòng sau khi đủ xác nhận",
+      "gender": "female",
+      "ja": "社内の承認が出て、同室になる二人にも確認できたので、ツインに変更をお願いします。",
+      "vi": "Công ty đã duyệt và tôi cũng đã hỏi hai người ở cùng phòng, nhờ anh đổi sang phòng hai giường ạ.",
+      "terms": [
+        "承認",
+        "同室"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ので、～に変更をお願いします"
+    },
+    {
+      "id": "T-118-V13-011",
+      "group": "meet",
+      "role_vi": "Người phụ trách chỉ mốc dễ nhận ở điểm tập trung",
+      "gender": "female",
+      "ja": "集合場所は、駅の南口を出てすぐの大きな時計の下です。",
+      "vi": "Điểm tập trung ở dưới đồng hồ lớn ngay ngoài cửa Nam nhà ga.",
+      "terms": [
+        "集合場所"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "集合場所は、～の下です"
+    },
+    {
+      "id": "T-118-V13-012",
+      "group": "meet",
+      "role_vi": "Người phụ trách nhắc điểm danh rồi mới ra điểm đón xe",
+      "gender": "male",
+      "ja": "時計の下で点呼をしてから、みんなでバス乗り場に向かいます。",
+      "vi": "Mình điểm danh dưới đồng hồ rồi cả đoàn cùng ra điểm đón xe nhé.",
+      "terms": [
+        "点呼"
+      ],
+      "scenes": [
+        "S015",
+        "S024"
+      ],
+      "pattern": "～をしてから、～に向かいます"
+    },
+    {
+      "id": "T-118-V13-013",
+      "group": "meet",
+      "role_vi": "Người phụ trách gọi hỏi khách đang ở đâu khi báo trễ",
+      "gender": "female",
+      "ja": "電車が遅れているそうですが、今どの駅にいますか。",
+      "vi": "Tôi nghe nói tàu đang trễ, hiện anh đang ở ga nào?",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～そうですが、今～にいますか"
+    },
+    {
+      "id": "T-118-V13-014",
+      "group": "meet",
+      "role_vi": "Người phụ trách thông báo xe đi đúng giờ và hẹn điểm nhập đoàn",
+      "gender": "female",
+      "ja": "バスは予定どおり出ますので、後から来る方は資料館の正面入口で合流しましょう。",
+      "vi": "Xe sẽ chạy đúng giờ, ai đến sau thì gặp lại đoàn ở lối vào chính của nhà trưng bày nhé.",
+      "terms": [
+        "合流する"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～で合流しましょう"
+    },
+    {
+      "id": "T-118-V13-015",
+      "group": "meet",
+      "role_vi": "Người phụ trách hướng dẫn rẽ đúng khi có hai lối ra",
+      "gender": "male",
+      "ja": "階段は上がらず、同じ階を右に行くと南口の正面に出ます。",
+      "vi": "Anh không lên cầu thang, cứ rẽ phải trên tầng này thì ra cửa chính phía Nam.",
+      "terms": [],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～ず、～と～ます"
+    },
+    {
+      "id": "T-118-V13-016",
+      "group": "change",
+      "role_vi": "Người phụ trách báo hủy hoạt động ngoài trời",
+      "gender": "female",
+      "ja": "雨が強くなったので、湖の散策は取りやめて、ホテルのロビーで休めるようにします。",
+      "vi": "Mưa nặng hạt hơn nên mình hủy đi dạo ven hồ và sẽ thu xếp để mọi người nghỉ được ở sảnh khách sạn.",
+      "terms": [
+        "取りやめる"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～ので、～て～ようにします"
+    },
+    {
+      "id": "T-118-V13-017",
+      "group": "change",
+      "role_vi": "Người phụ trách chốt giờ gặp lại với nhóm nghỉ",
+      "gender": "male",
+      "ja": "ロビーで休む方とは、昼食の前に受付の前で合流しましょう。",
+      "vi": "Những ai nghỉ ở sảnh thì gặp lại đoàn trước quầy lễ tân trước bữa trưa nhé.",
+      "terms": [
+        "合流する"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～で合流しましょう"
+    },
+    {
+      "id": "T-118-V13-018",
+      "group": "change",
+      "role_vi": "Người phụ trách gọi hãng xe khi xe tới sai bãi",
+      "gender": "female",
+      "ja": "西側の駐車場にバスが見当たらないので、今どこにいるか確認していただけますか。",
+      "vi": "Tôi không thấy xe ở bãi phía Tây, anh kiểm tra giúp xe đang ở đâu được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～ので、～か確認していただけますか"
+    },
+    {
+      "id": "T-118-V13-019",
+      "group": "change",
+      "role_vi": "Người phụ trách cập nhật giờ tới khách sạn",
+      "gender": "female",
+      "ja": "ホテルに着くのは午後四時二十分ごろの予定ですが、受付のことはまだ確認中です。",
+      "vi": "Dự kiến khoảng bốn giờ hai mươi chiều sẽ tới khách sạn, còn thủ tục ở quầy lễ tân thì tôi vẫn đang xác nhận.",
+      "terms": [],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～の予定ですが、～はまだ確認中です"
+    },
+    {
+      "id": "T-118-V13-020",
+      "group": "support",
+      "role_vi": "Người phụ trách hỏi có cần gọi nhân viên khách sạn đến không",
+      "gender": "female",
+      "ja": "気分が悪ければ私が付き添いますので、フロントの人を呼びましょうか。",
+      "vi": "Nếu anh thấy không khỏe thì tôi sẽ ở bên anh, tôi gọi nhân viên lễ tân đến nhé?",
+      "terms": [
+        "付き添う"
+      ],
+      "scenes": [
+        "S004",
+        "S023"
+      ],
+      "pattern": "～ので、～ましょうか"
+    },
+    {
+      "id": "T-118-V13-021",
+      "group": "support",
+      "role_vi": "Người phụ trách xin phép chia sẻ riêng với nhà hàng",
+      "gender": "male",
+      "ja": "食物アレルギーについては、皆さんへの案内には入れず、お店の方だけに伝えてもいいですか。",
+      "vi": "Về dị ứng thức ăn, tôi sẽ không đưa vào thông báo chung mà chỉ báo với người của nhà hàng, được không ạ?",
+      "terms": [
+        "食物アレルギー"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～には入れず、～だけに～てもいいですか"
+    },
+    {
+      "id": "T-118-V13-022",
+      "group": "after",
+      "role_vi": "Người phụ trách báo người mất đồ về bước xác nhận",
+      "gender": "female",
+      "ja": "置き忘れた袋と似たものが届いたそうなので、ご自分のものかフロントに直接確認してください。",
+      "vi": "Nghe nói quầy lễ tân nhận được một chiếc túi giống túi anh bỏ quên, anh hỏi trực tiếp họ xem có phải của mình không nhé.",
+      "terms": [
+        "置き忘れる"
+      ],
+      "scenes": [
+        "S026",
+        "S027"
+      ],
+      "pattern": "～そうなので、～てください"
+    },
+    {
+      "id": "T-118-V13-023",
+      "group": "after",
+      "role_vi": "Người phụ trách xin góp ý về đoạn lịch trình gây mệt",
+      "gender": "male",
+      "ja": "次の旅行に向けて、移動で負担が大きかったところを一つ教えてもらえますか。",
+      "vi": "Để chuẩn bị chuyến sau, anh kể giúp tôi một đoạn di chuyển khiến anh thấy vất vả được không?",
+      "terms": [
+        "負担"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～を一つ教えてもらえますか"
+    },
+    {
+      "id": "T-118-V13-024",
+      "group": "after",
+      "role_vi": "Người phụ trách nói cách tránh nhầm giờ tập trung với giờ xe chạy",
+      "gender": "female",
+      "ja": "次の行程表では、集合時刻とバスの出発時刻を分けて案内します。",
+      "vi": "Trong lịch trình lần sau, tôi sẽ ghi riêng giờ tập trung và giờ xe chạy.",
+      "terms": [
+        "行程表"
+      ],
+      "scenes": [
+        "S028",
+        "S031"
+      ],
+      "pattern": "次の～では、～を分けて案内します"
+    }
+  ]
+}

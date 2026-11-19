@@ -1,0 +1,385 @@
+{
+  "code": "H-031",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "6dfc9efa51106cf276de64fbe74468fc689077b80f60cb8886f6e9fb12d33e40",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "observe": "Xác nhận hiện tượng và phạm vi ban đầu",
+    "assign": "Phân việc xác minh và chốt mốc báo",
+    "contain": "Giảm ảnh hưởng cho khách trong lúc chờ",
+    "update": "Báo cấp trên và đầu mối khách",
+    "authorize": "Xin quyết định và giữ giới hạn đã duyệt",
+    "recover": "Xác minh mức khôi phục và hẹn nhìn lại"
+  },
+  "items": [
+    {
+      "id": "H-031-V13-001",
+      "group": "observe",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "予約通知の遅延に最初に気づいたのは、何時ごろですか。",
+      "vi": "Khoảng mấy giờ anh chị phát hiện thông báo xác nhận đặt lịch đến chậm lần đầu?",
+      "terms": [
+        "遅延"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "最初に～たのはいつ"
+    },
+    {
+      "id": "H-031-V13-002",
+      "group": "observe",
+      "role_vi": "Người phụ trách xác minh kỹ thuật",
+      "gender": "female",
+      "ja": "画面では予約が受け付けられていますが、確認の通知はまだ届いていません。",
+      "vi": "Trên màn hình thì lịch đã được tiếp nhận, nhưng thông báo xác nhận vẫn chưa đến.",
+      "terms": [],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "画面では～ですが"
+    },
+    {
+      "id": "H-031-V13-003",
+      "group": "observe",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "通知が届いていないという事実と、サーバーの不具合かもしれないという仮説は分けてください。",
+      "vi": "Hãy tách sự việc đã thấy là thông báo chưa đến khỏi giả thuyết máy chủ có trục trặc.",
+      "terms": [
+        "仮説",
+        "不具合"
+      ],
+      "scenes": [
+        "S002",
+        "S014"
+      ],
+      "pattern": "～と～を分けてください"
+    },
+    {
+      "id": "H-031-V13-004",
+      "group": "observe",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "確認通知を二重に送らないように、予約の受付は続けたまま、手動で再送する操作だけ一時停止してください。",
+      "vi": "Để tránh gửi trùng thông báo xác nhận, hãy tạm dừng riêng thao tác gửi lại bằng tay và tiếp tục nhận đặt lịch.",
+      "terms": [
+        "再送する",
+        "一時停止する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ため～だけ一時停止する"
+    },
+    {
+      "id": "H-031-V13-005",
+      "group": "assign",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "直近で変更した設定は別の担当に頼みますので、通知遅延の影響範囲を調べてもらえますか。",
+      "vi": "Tôi sẽ nhờ người khác kiểm tra cấu hình vừa thay đổi, chị kiểm phạm vi ảnh hưởng của việc thông báo đến chậm giúp tôi được không?",
+      "terms": [
+        "遅延",
+        "影響範囲"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～を担当してもらえますか"
+    },
+    {
+      "id": "H-031-V13-006",
+      "group": "assign",
+      "role_vi": "Người phụ trách xác minh kỹ thuật",
+      "gender": "female",
+      "ja": "通知の履歴を見る権限が付くまでは、画面で確認した二件しか報告できません。",
+      "vi": "Trước khi được cấp quyền xem lịch sử thông báo, tôi chỉ có thể báo hai trường hợp đã xác nhận trên màn hình.",
+      "terms": [
+        "権限"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～までは～しか言えません"
+    },
+    {
+      "id": "H-031-V13-007",
+      "group": "assign",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "復旧時刻は後で構いませんので、十時半までに影響範囲をどこまで確認できそうですか。",
+      "vi": "Giờ khôi phục báo sau cũng được, đến mười giờ rưỡi chị có thể xác minh được đến đâu về phạm vi ảnh hưởng?",
+      "terms": [
+        "影響範囲"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～までに何が分かりますか"
+    },
+    {
+      "id": "H-031-V13-008",
+      "group": "assign",
+      "role_vi": "Người phụ trách xác minh kỹ thuật",
+      "gender": "female",
+      "ja": "現時点で通知の遅延は五件確認できましたが、九時より前の履歴はまだ確認中です。",
+      "vi": "Hiện đã xác nhận năm trường hợp thông báo đến chậm, còn lịch sử trước chín giờ vẫn đang được kiểm tra.",
+      "terms": [
+        "現時点",
+        "遅延"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "現時点で～ですが"
+    },
+    {
+      "id": "H-031-V13-009",
+      "group": "contain",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "まず予約の状態をお客様に伝えることを優先して、確認できないときは調べてから折り返してください。",
+      "vi": "Trước mắt hãy ưu tiên báo cho khách biết tình trạng đặt lịch, nếu chưa xác nhận được thì kiểm tra rồi gọi lại.",
+      "terms": [
+        "折り返す"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～ことを優先する"
+    },
+    {
+      "id": "H-031-V13-010",
+      "group": "contain",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "窓口から予約状況を個別に伝えるのは暫定対応ですので、通知機能が復旧したとは案内しないでください。",
+      "vi": "Việc đầu mối báo tình trạng đặt lịch cho từng khách chỉ là cách xử lý tạm, đừng nói với khách là chức năng thông báo đã được khôi phục.",
+      "terms": [
+        "暫定対応",
+        "復旧する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～なので～と案内しない"
+    },
+    {
+      "id": "H-031-V13-011",
+      "group": "contain",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "遅れていた通知と重複する恐れがあるので、こちらからの個別連絡は見送り、お問い合わせのあった方にだけ案内しましょう。",
+      "vi": "Vì có thể trùng với thông báo đến muộn, mình tạm gác việc chủ động liên hệ từng khách và chỉ giải đáp cho người hỏi đến nhé.",
+      "terms": [
+        "重複する",
+        "見送る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～恐れがあるので見送る"
+    },
+    {
+      "id": "H-031-V13-012",
+      "group": "contain",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "通知機能を再開する試験の前に、窓口側の監視担当と、試験の停止条件を決めておきましょう。",
+      "vi": "Trước khi thử bật lại chức năng thông báo, mình chốt trước ai bên tiếp nhận sẽ theo dõi và khi nào phải dừng thử nhé.",
+      "terms": [
+        "停止条件",
+        "再開する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～前に～を決めておく"
+    },
+    {
+      "id": "H-031-V13-013",
+      "group": "update",
+      "role_vi": "Trưởng nhóm báo cáo với cấp trên",
+      "gender": "male",
+      "ja": "通知の遅れは現時点で五件確認しており、未確認の範囲も明らかにしたうえで、十一時半に途中経過をご報告します。",
+      "vi": "Hiện đã xác nhận năm trường hợp thông báo đến chậm, tôi sẽ cập nhật tình hình lúc mười một giờ rưỡi và chỉ rõ phần còn chưa kiểm ạ.",
+      "terms": [
+        "現時点",
+        "途中経過"
+      ],
+      "scenes": [
+        "S013",
+        "S015"
+      ],
+      "pattern": "～に途中経過をご報告する"
+    },
+    {
+      "id": "H-031-V13-014",
+      "group": "update",
+      "role_vi": "Trưởng nhóm báo cáo với cấp trên",
+      "gender": "male",
+      "ja": "設定変更と通知遅延が起きた時刻は近いですが、現時点では設定変更が原因だとは断定できません。",
+      "vi": "Thời điểm đổi cấu hình và thời điểm thông báo chậm khá gần nhau, nhưng hiện chưa thể khẳng định đổi cấu hình là nguyên nhân ạ.",
+      "terms": [
+        "現時点",
+        "遅延",
+        "断定する"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～とはまだ断定できない"
+    },
+    {
+      "id": "H-031-V13-015",
+      "group": "update",
+      "role_vi": "Trưởng nhóm nhờ đồng nghiệp cập nhật cho bộ phận tiếp nhận",
+      "gender": "male",
+      "ja": "復旧時刻はまだ確約できませんので、窓口には十一時半に途中経過を共有するとお伝えください。",
+      "vi": "Chưa thể hứa giờ khôi phục, anh báo cho bộ phận tiếp nhận là sẽ có cập nhật lúc mười một giờ rưỡi nhé.",
+      "terms": [
+        "確約する",
+        "途中経過"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～は確約できないので"
+    },
+    {
+      "id": "H-031-V13-016",
+      "group": "update",
+      "role_vi": "Trưởng nhóm báo cáo với cấp trên",
+      "gender": "male",
+      "ja": "十三時に通知を再開する試験ができる見込みですが、その時刻に復旧するとはまだ言えません。",
+      "vi": "Dự kiến một giờ chiều có thể thử bật lại thông báo, nhưng chưa thể nói đến giờ đó là khôi phục được ạ.",
+      "terms": [
+        "見込み",
+        "再開する",
+        "復旧する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～の見込みで～とは言えない"
+    },
+    {
+      "id": "H-031-V13-017",
+      "group": "authorize",
+      "role_vi": "Trưởng nhóm báo cáo với cấp trên",
+      "gender": "male",
+      "ja": "予約画面を二時間止めて外部支援を頼む案は私の権限では決められないため、ご判断をお願いします。",
+      "vi": "Phương án dừng màn hình đặt lịch hai giờ và nhờ hỗ trợ bên ngoài vượt quyền quyết của tôi, nhờ chị quyết giúp ạ.",
+      "terms": [
+        "権限",
+        "外部支援"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ためご判断をお願いします"
+    },
+    {
+      "id": "H-031-V13-018",
+      "group": "authorize",
+      "role_vi": "Trưởng nhóm báo cáo với cấp trên",
+      "gender": "male",
+      "ja": "費用上限は五万円で、三十分まで止められるのは通知機能だけという理解でよろしいでしょうか。",
+      "vi": "Tôi hiểu mức chi tối đa là 50.000 yên và chỉ được dừng chức năng thông báo trong tối đa 30 phút, đúng không ạ?",
+      "terms": [
+        "費用上限"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～という理解でよろしいでしょうか"
+    },
+    {
+      "id": "H-031-V13-019",
+      "group": "authorize",
+      "role_vi": "Trưởng nhóm báo cáo với cấp trên",
+      "gender": "male",
+      "ja": "予約の受付は続けたまま、稼働中でもできる範囲で通知の遅れを調べます。",
+      "vi": "Tôi sẽ giữ việc tiếp nhận đặt lịch hoạt động và kiểm tra thông báo đến chậm trong phạm vi có thể làm khi hệ thống đang chạy ạ.",
+      "terms": [
+        "稼働中"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～範囲だけ続ける"
+    },
+    {
+      "id": "H-031-V13-020",
+      "group": "authorize",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "通知の診断が三十分で終わらなければ、承認範囲を超えないよう、いったん止めて途中経過を知らせてください。",
+      "vi": "Nếu chẩn đoán phần thông báo chưa xong sau 30 phút, hãy dừng lại và báo tình hình để khỏi vượt giới hạn đã duyệt.",
+      "terms": [
+        "承認範囲",
+        "途中経過"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～なら一度止めて報告する"
+    },
+    {
+      "id": "H-031-V13-021",
+      "group": "recover",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "現時点で通知の到着を確認できたのは新しい試験予約の三件ですが、通知機能全体が復旧したとはまだ言えません。",
+      "vi": "Đến lúc này mới xác nhận thông báo đã đến với ba lượt đặt lịch thử mới, nên chưa thể nói toàn bộ chức năng thông báo đã khôi phục.",
+      "terms": [
+        "現時点",
+        "復旧する"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "現時点で～ですが"
+    },
+    {
+      "id": "H-031-V13-022",
+      "group": "recover",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "朝の遅延分が重複して届かないか十六時まで監視し、その結果を営業にも共有します。",
+      "vi": "Tôi sẽ theo dõi đến bốn giờ chiều xem các thông báo bị chậm từ sáng có đến trùng lặp không, rồi báo kết quả cho cả bộ phận kinh doanh.",
+      "terms": [
+        "遅延",
+        "監視する",
+        "重複する"
+      ],
+      "scenes": [
+        "S021",
+        "S023"
+      ],
+      "pattern": "～まで監視して～を共有する"
+    },
+    {
+      "id": "H-031-V13-023",
+      "group": "recover",
+      "role_vi": "Trưởng nhóm điều phối xử lý sự cố",
+      "gender": "male",
+      "ja": "お客様への状況報告は続けつつ、状況が落ち着いてから、技術と一緒に原因の調べ方と連絡手順を振り返りましょう。",
+      "vi": "Mình vẫn tiếp tục cập nhật cho khách, khi tình hình ổn định thì cùng bên kỹ thuật nhìn lại cách xác minh nguyên nhân và cách liên lạc nhé.",
+      "terms": [
+        "振り返る"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～が落ち着いてから"
+    }
+  ]
+}

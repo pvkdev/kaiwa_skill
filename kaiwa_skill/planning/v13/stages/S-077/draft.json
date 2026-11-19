@@ -1,0 +1,370 @@
+{
+  "code": "S-077",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "64578427de8537b35e1ea930cdc0b4111b799ce3af6de9bb76869f3251db63f8",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "meet": "Chốt nơi đón và phòng lúc mất liên lạc",
+    "search": "Tìm đúng người và đúng sảnh",
+    "assist": "Nghỉ chân và hỏi hỗ trợ đi lại",
+    "adjust": "Đổi lịch đi chơi và giờ xe đón"
+  },
+  "items": [
+    {
+      "id": "S-077-V13-001",
+      "group": "meet",
+      "role_vi": "Cháu gọi hỏi giờ tới",
+      "gender": "female",
+      "ja": "空港には何時に着くの？",
+      "vi": "Mấy giờ chú đến sân bay ạ?",
+      "terms": [
+        "空港",
+        "何時",
+        "着く"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "hỏi_giờ_đến"
+    },
+    {
+      "id": "S-077-V13-002",
+      "group": "meet",
+      "role_vi": "Cháu chọn điểm đón",
+      "gender": "female",
+      "ja": "二階の到着ロビーで会おうね。",
+      "vi": "Mình gặp ở sảnh đến tầng hai nhé chú.",
+      "terms": [
+        "～階",
+        "到着ロビー"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "chốt_điểm_đón"
+    },
+    {
+      "id": "S-077-V13-003",
+      "group": "meet",
+      "role_vi": "Chú báo khó liên lạc khi tới",
+      "gender": "male",
+      "ja": "空港に着いても、スマホで連絡できないかも。",
+      "vi": "Đến sân bay rồi có thể chú vẫn chưa liên lạc qua điện thoại được.",
+      "terms": [
+        "空港",
+        "着く",
+        "スマホ",
+        "連絡する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "báo_trở_ngại"
+    },
+    {
+      "id": "S-077-V13-004",
+      "group": "meet",
+      "role_vi": "Cháu hẹn cách xử lý nếu không thấy nhau",
+      "gender": "female",
+      "ja": "私が見えなかったら、案内カウンターの前で待っててね。",
+      "vi": "Nếu chưa thấy cháu, chú cứ đợi trước quầy hướng dẫn nhé.",
+      "terms": [
+        "案内カウンター",
+        "待つ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "nếu_không_gặp_thì_đợi"
+    },
+    {
+      "id": "S-077-V13-005",
+      "group": "meet",
+      "role_vi": "Cháu gọi lại hỏi điểm đến mới",
+      "gender": "female",
+      "ja": "飛行機が変わっても、着くターミナルは同じなの？",
+      "vi": "Chú đổi chuyến rồi nhưng vẫn đến cùng nhà ga sân bay phải không ạ?",
+      "terms": [
+        "着く",
+        "ターミナル"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "xác_nhận_điều_giữ_nguyên"
+    },
+    {
+      "id": "S-077-V13-006",
+      "group": "meet",
+      "role_vi": "Cháu sửa tên sân bay chú nghe nhầm",
+      "gender": "female",
+      "ja": "迎えに行くのは成田じゃなくて、羽田空港だよ。",
+      "vi": "Cháu sẽ đón chú ở sân bay Haneda, không phải Narita ạ.",
+      "terms": [
+        "迎える",
+        "空港"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "sửa_nơi_nghe_nhầm"
+    },
+    {
+      "id": "S-077-V13-007",
+      "group": "search",
+      "role_vi": "Người đi đón nhờ quầy thông tin",
+      "gender": "female",
+      "ja": "おじを迎えに来たんですが、まだ会えていません。",
+      "vi": "Tôi đến đón chú tôi nhưng vẫn chưa gặp được chú ạ.",
+      "terms": [
+        "おじ",
+        "迎える"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "báo_chưa_gặp"
+    },
+    {
+      "id": "S-077-V13-008",
+      "group": "search",
+      "role_vi": "Người đi đón kể lần cuối có tin",
+      "gender": "female",
+      "ja": "おじは荷物を取って、案内カウンターを探していると言っていました。",
+      "vi": "Chú tôi nói đã lấy hành lý và đang tìm quầy hướng dẫn ạ.",
+      "terms": [
+        "おじ",
+        "荷物",
+        "案内カウンター"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "nói_tin_cuối_có_được"
+    },
+    {
+      "id": "S-077-V13-009",
+      "group": "search",
+      "role_vi": "Nhân viên quầy chỉ lối xuống",
+      "gender": "male",
+      "ja": "到着ロビーへは、このエレベーターで二階に下りてください。",
+      "vi": "Để xuống sảnh đến, chị đi thang máy này xuống tầng hai nhé.",
+      "terms": [
+        "到着ロビー",
+        "エレベーター",
+        "～階"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "chỉ_lối_đến_sảnh"
+    },
+    {
+      "id": "S-077-V13-010",
+      "group": "search",
+      "role_vi": "Cháu gọi khi tìm chú",
+      "gender": "female",
+      "ja": "時計の近くのカウンターには、何て書いてある？",
+      "vi": "Quầy gần chỗ đồng hồ chú đang đứng có ghi gì ạ?",
+      "terms": [
+        "時計"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_mốc_gần_đó"
+    },
+    {
+      "id": "S-077-V13-011",
+      "group": "search",
+      "role_vi": "Chú nói đặc điểm để cháu tìm",
+      "gender": "male",
+      "ja": "Ｈのカウンターのそばにある大きな時計の前で待ってるよ。",
+      "vi": "Chú đợi trước đồng hồ lớn cạnh quầy chữ H nhé.",
+      "terms": [
+        "時計",
+        "待つ"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "chốt_mốc_đang_đợi"
+    },
+    {
+      "id": "S-077-V13-012",
+      "group": "search",
+      "role_vi": "Người đi đón chưa nghe rõ loa",
+      "gender": "female",
+      "ja": "今の放送の内容を、もう一度ゆっくり言ってもらえますか。",
+      "vi": "Anh nhắc lại chậm giúp tôi thông báo vừa phát được không ạ?",
+      "terms": [
+        "放送",
+        "ゆっくり"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "nhờ_nói_lại_chậm"
+    },
+    {
+      "id": "S-077-V13-013",
+      "group": "assist",
+      "role_vi": "Người đi đón xin chỗ ngồi",
+      "gender": "female",
+      "ja": "おじが疲れているので、近くに座れる場所はありますか。",
+      "vi": "Chú tôi đang mệt, gần đây có chỗ nào ngồi nghỉ không ạ?",
+      "terms": [
+        "おじ",
+        "疲れる",
+        "座る"
+      ],
+      "scenes": [
+        "S009",
+        "S011"
+      ],
+      "pattern": "hỏi_chỗ_nghỉ"
+    },
+    {
+      "id": "S-077-V13-014",
+      "group": "assist",
+      "role_vi": "Người đi đón hỏi mượn xe lăn",
+      "gender": "female",
+      "ja": "おじは長く歩けないんですが、車いすを借りられますか。",
+      "vi": "Chú tôi không đi bộ lâu được, tôi mượn xe lăn được không ạ?",
+      "terms": [
+        "おじ",
+        "歩く",
+        "車いす",
+        "借りる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "hỏi_mượn_hỗ_trợ"
+    },
+    {
+      "id": "S-077-V13-015",
+      "group": "assist",
+      "role_vi": "Nhân viên quầy khi chưa có xe",
+      "gender": "male",
+      "ja": "車いすが空きましたら、あちらの椅子まで呼びに行きます。",
+      "vi": "Khi có xe lăn trống, tôi sẽ ra hàng ghế đằng kia báo chị ạ.",
+      "terms": [
+        "車いす",
+        "空く",
+        "椅子"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "báo_khi_có_thay_đổi"
+    },
+    {
+      "id": "S-077-V13-016",
+      "group": "assist",
+      "role_vi": "Cháu nhắc lại hướng dẫn trả xe",
+      "gender": "female",
+      "ja": "車いすは使い終わったら、借りたカウンターに返すんだって。",
+      "vi": "Họ dặn dùng xe lăn xong mình trả ở quầy đã mượn đó chú.",
+      "terms": [
+        "車いす",
+        "借りる",
+        "返す"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "truyền_lại_chỉ_dẫn"
+    },
+    {
+      "id": "S-077-V13-017",
+      "group": "adjust",
+      "role_vi": "Cháu đề nghị rút ngắn buổi đi chơi",
+      "gender": "female",
+      "ja": "みんな疲れてるから、午後は食事だけにしない？",
+      "vi": "Cả nhà mệt rồi, chiều nay mình chỉ đi ăn thôi nhé chú?",
+      "terms": [
+        "疲れる",
+        "午後",
+        "食事"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "đề_xuất_rút_ngắn"
+    },
+    {
+      "id": "S-077-V13-018",
+      "group": "adjust",
+      "role_vi": "Chú vẫn muốn ghé công viên",
+      "gender": "male",
+      "ja": "少し休んでから、公園に寄ってもいいかな。",
+      "vi": "Mình nghỉ một lát rồi ghé công viên được không cháu?",
+      "terms": [
+        "休む",
+        "寄る"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "đề_nghị_giữ_một_phần"
+    },
+    {
+      "id": "S-077-V13-019",
+      "group": "adjust",
+      "role_vi": "Khách gọi đổi giờ xe",
+      "gender": "female",
+      "ja": "電車が遅れているので、駅でのお迎えを午後三時に変更できますか。",
+      "vi": "Tàu đang chậm, tôi đổi giờ xe đón ở ga sang ba giờ chiều được không ạ?",
+      "terms": [
+        "電車",
+        "遅れる",
+        "午後",
+        "変更する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "báo_lý_do_và_xin_đổi"
+    },
+    {
+      "id": "S-077-V13-020",
+      "group": "adjust",
+      "role_vi": "Nhân viên dịch vụ nhắc điểm đón",
+      "gender": "male",
+      "ja": "午後三時に駅の西口で、車をお待ちください。",
+      "vi": "Chị đợi xe ở cửa Tây của ga lúc ba giờ chiều nhé.",
+      "terms": [
+        "午後",
+        "西口",
+        "待つ"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "chốt_điểm_đón"
+    },
+    {
+      "id": "S-077-V13-021",
+      "group": "adjust",
+      "role_vi": "Khách xác nhận cách báo lại",
+      "gender": "female",
+      "ja": "電車がまた遅れたら、この番号に電話すればいいですか。",
+      "vi": "Nếu tàu lại chậm, tôi gọi số này, đúng không ạ?",
+      "terms": [
+        "電車",
+        "遅れる",
+        "番号",
+        "電話する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "nếu_có_đổi_thì_báo"
+    }
+  ]
+}

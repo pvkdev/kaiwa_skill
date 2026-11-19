@@ -1,0 +1,366 @@
+{
+  "code": "S-063",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "fac10a6771b10f35c26abf36e5a45a1ede4f73c8c2ef67b5e67fc7efcaa3d03e",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "start": "Xác nhận chủ đề và tài liệu họp",
+    "clarify": "Hỏi lại yêu cầu chưa rõ",
+    "opinion": "Xin phát biểu và góp ý",
+    "follow": "Xác nhận việc sau họp"
+  },
+  "items": [
+    {
+      "id": "S-063-V13-001",
+      "group": "start",
+      "role_vi": "Nhân viên tham dự họp",
+      "gender": "female",
+      "ja": "今日の会議のテーマは何ですか。",
+      "vi": "Hôm nay mình họp về chủ đề gì ạ?",
+      "terms": [
+        "会議",
+        "テーマ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_nội_dung_họp"
+    },
+    {
+      "id": "S-063-V13-002",
+      "group": "start",
+      "role_vi": "Nhân viên hỏi tài liệu cần xem",
+      "gender": "female",
+      "ja": "会議では、どの資料を使いますか。",
+      "vi": "Trong cuộc họp mình dùng tập tài liệu nào ạ?",
+      "terms": [
+        "会議",
+        "資料"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "hỏi_tài_liệu"
+    },
+    {
+      "id": "S-063-V13-003",
+      "group": "start",
+      "role_vi": "Người chủ trì cuộc họp",
+      "gender": "male",
+      "ja": "会議では、青い資料の二ページを開いてください。",
+      "vi": "Trong cuộc họp, mọi người mở trang hai của tập tài liệu màu xanh nhé.",
+      "terms": [
+        "資料",
+        "ページ",
+        "会議"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "chỉ_trang"
+    },
+    {
+      "id": "S-063-V13-004",
+      "group": "start",
+      "role_vi": "Nhân viên nghe chưa rõ hạn góp ý",
+      "gender": "female",
+      "ja": "意見を送る締め切りは、木曜日ですか。",
+      "vi": "Hạn gửi góp ý là thứ Năm ạ?",
+      "terms": [
+        "意見",
+        "送る",
+        "締め切り"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "hỏi_hạn"
+    },
+    {
+      "id": "S-063-V13-005",
+      "group": "start",
+      "role_vi": "Người chủ trì đính chính ngày",
+      "gender": "male",
+      "ja": "意見は木曜日ではなく、火曜日までに送ってください。",
+      "vi": "Mọi người gửi góp ý chậm nhất vào thứ Ba, không phải thứ Năm nhé.",
+      "terms": [
+        "意見",
+        "送る"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "sửa_mốc_hạn"
+    },
+    {
+      "id": "S-063-V13-006",
+      "group": "clarify",
+      "role_vi": "Nhân viên chưa hiểu định dạng",
+      "gender": "female",
+      "ja": "すみません、PDFはどんなファイルですか。",
+      "vi": "Cho tôi hỏi, PDF là loại tệp gì ạ?",
+      "terms": [
+        "PDF",
+        "ファイル"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "hỏi_nghĩa"
+    },
+    {
+      "id": "S-063-V13-007",
+      "group": "clarify",
+      "role_vi": "Người chủ trì giải thích định dạng",
+      "gender": "male",
+      "ja": "PDFなら、スマホで見てもページの形が変わりません。",
+      "vi": "Với PDF, xem trên điện thoại thì bố cục trang vẫn giữ nguyên.",
+      "terms": [
+        "PDF",
+        "ページ"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "giải_thích_gọn"
+    },
+    {
+      "id": "S-063-V13-008",
+      "group": "clarify",
+      "role_vi": "Nhân viên nhắc lại yêu cầu gửi tệp",
+      "gender": "female",
+      "ja": "資料はPDFで送るだけでいいですか。",
+      "vi": "Tôi chỉ cần gửi tài liệu dưới dạng PDF thôi, đúng không ạ?",
+      "terms": [
+        "資料",
+        "PDF",
+        "送る"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "xác_nhận_việc"
+    },
+    {
+      "id": "S-063-V13-009",
+      "group": "opinion",
+      "role_vi": "Nhân viên xin phát biểu",
+      "gender": "female",
+      "ja": "地図のことで、少し発言してもいいですか。",
+      "vi": "Tôi góp ý một chút về sơ đồ được không ạ?",
+      "terms": [
+        "地図",
+        "発言する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "xin_lượt_nói"
+    },
+    {
+      "id": "S-063-V13-010",
+      "group": "opinion",
+      "role_vi": "Nhân viên đề xuất thêm sơ đồ",
+      "gender": "female",
+      "ja": "お客様への案内に、入口から会議室までの地図を入れませんか。",
+      "vi": "Mình đưa sơ đồ từ lối vào đến phòng họp vào tờ hướng dẫn cho khách nhé?",
+      "terms": [
+        "地図"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "đề_nghị_thay_đổi"
+    },
+    {
+      "id": "S-063-V13-011",
+      "group": "opinion",
+      "role_vi": "Đồng nghiệp nêu lý do ủng hộ",
+      "gender": "male",
+      "ja": "地図があると、初めて来る人にもわかりやすいと思います。",
+      "vi": "Tôi nghĩ có sơ đồ thì cả người lần đầu đến cũng dễ tìm đường.",
+      "terms": [
+        "地図",
+        "わかりやすい"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "giải_thích_lý_do"
+    },
+    {
+      "id": "S-063-V13-012",
+      "group": "opinion",
+      "role_vi": "Nhân viên nhận làm sau họp",
+      "gender": "female",
+      "ja": "最後のページに地図を入れて、今日中に送ります。",
+      "vi": "Tôi sẽ thêm sơ đồ vào trang cuối rồi gửi trong hôm nay ạ.",
+      "terms": [
+        "ページ",
+        "地図",
+        "今日中",
+        "送る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "nhận_việc_và_nêu_hạn"
+    },
+    {
+      "id": "S-063-V13-013",
+      "group": "opinion",
+      "role_vi": "Người chủ trì chưa chốt đề xuất",
+      "gender": "male",
+      "ja": "地図を入れられるか確認するので、資料はそのままにしてください。",
+      "vi": "Tôi sẽ kiểm tra xem có thêm sơ đồ được không, mọi người cứ giữ nguyên tài liệu nhé.",
+      "terms": [
+        "地図",
+        "確認する",
+        "資料",
+        "そのまま"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "giữ_nguyên_trong_khi_chờ"
+    },
+    {
+      "id": "S-063-V13-014",
+      "group": "opinion",
+      "role_vi": "Nhân viên hỏi lúc có phản hồi",
+      "gender": "female",
+      "ja": "地図を入れられるか、何時ごろ分かりますか。",
+      "vi": "Khoảng mấy giờ mình biết có thêm sơ đồ được hay không ạ?",
+      "terms": [
+        "地図",
+        "～時"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "hỏi_thời_điểm_báo"
+    },
+    {
+      "id": "S-063-V13-015",
+      "group": "opinion",
+      "role_vi": "Người chủ trì giao phần cần sửa",
+      "gender": "male",
+      "ja": "今回は地図を入れないで、集合時間だけ直してください。",
+      "vi": "Lần này mình bỏ qua phần thêm sơ đồ, bạn chỉ sửa giờ tập trung giúp tôi nhé.",
+      "terms": [
+        "地図",
+        "集合時間",
+        "直す"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "giao_việc_trong_phạm_vi"
+    },
+    {
+      "id": "S-063-V13-016",
+      "group": "follow",
+      "role_vi": "Nhân viên nhắc lại việc mình hiểu",
+      "gender": "female",
+      "ja": "会議のあと、私が予定表を送ればいいですか。",
+      "vi": "Sau cuộc họp, tôi gửi bảng lịch, đúng không ạ?",
+      "terms": [
+        "会議",
+        "予定表",
+        "送る"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "xác_nhận_việc"
+    },
+    {
+      "id": "S-063-V13-017",
+      "group": "follow",
+      "role_vi": "Nhân viên hỏi lại chủ trì khi phân công chưa rõ",
+      "gender": "female",
+      "ja": "予定表を送る担当は、私と森さんのどちらですか。",
+      "vi": "Ai phụ trách gửi bảng lịch, tôi hay anh Mori ạ?",
+      "terms": [
+        "予定表",
+        "送る",
+        "担当"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "làm_rõ_người_phụ_trách"
+    },
+    {
+      "id": "S-063-V13-018",
+      "group": "follow",
+      "role_vi": "Người chủ trì nhắc thứ tự xử lý",
+      "gender": "male",
+      "ja": "予定表は、先に森さんに確認してもらってください。",
+      "vi": "Chị nhờ anh Mori xem qua bảng lịch trước nhé.",
+      "terms": [
+        "予定表",
+        "先に",
+        "確認する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "dặn_thứ_tự"
+    },
+    {
+      "id": "S-063-V13-019",
+      "group": "follow",
+      "role_vi": "Nhân viên chốt hạn gửi lịch",
+      "gender": "female",
+      "ja": "森さんに見てもらってから、金曜日までに予定表を送ります。",
+      "vi": "Tôi sẽ nhờ anh Mori xem qua rồi gửi bảng lịch chậm nhất vào thứ Sáu ạ.",
+      "terms": [
+        "予定表",
+        "送る"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "nhận_việc_và_nêu_hạn"
+    },
+    {
+      "id": "S-063-V13-020",
+      "group": "follow",
+      "role_vi": "Nhân viên hỏi người nhận kết quả",
+      "gender": "female",
+      "ja": "部屋が空いているか調べた結果は、誰に報告すればいいですか。",
+      "vi": "Khi kiểm tra xong phòng có trống hay không, tôi cần báo cho ai ạ?",
+      "terms": [
+        "空く",
+        "調べる",
+        "結果",
+        "報告する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "hỏi_người_cần_báo"
+    },
+    {
+      "id": "S-063-V13-021",
+      "group": "follow",
+      "role_vi": "Nhân viên chốt người nhận kết quả",
+      "gender": "female",
+      "ja": "部屋が空いているか分かったら、田中さんと森さんに伝えます。",
+      "vi": "Khi biết phòng có trống hay không, tôi sẽ báo cho chị Tanaka và anh Mori ạ.",
+      "terms": [
+        "空く",
+        "伝える"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "chốt_ai_nhận_tin"
+    }
+  ]
+}

@@ -1,0 +1,353 @@
+{
+  "code": "S-017",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "1e81dcc4863a6dad04b05b0ab1c99ddf35836e164489230f2393d95d88ef4ca0",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "find": "Tìm phòng họp và chỗ để đồ",
+    "print": "Hỏi cách dùng máy in và báo lỗi",
+    "supplies": "Hỏi chìa khóa và xin thêm đồ dùng",
+    "borrow": "Mượn, trả và nhận ra đúng đồ"
+  },
+  "items": [
+    {
+      "id": "S-017-V13-001",
+      "group": "find",
+      "role_vi": "Nhân viên tìm phòng họp số 302",
+      "gender": "female",
+      "ja": "三〇二の会議室はどこですか。",
+      "vi": "Phòng họp 302 ở đâu ạ?",
+      "terms": [
+        "会議室"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-017-V13-002",
+      "group": "find",
+      "role_vi": "Đồng nghiệp hướng dẫn rẽ phải khi ra khỏi thang máy",
+      "gender": "male",
+      "ja": "エレベーターを出て右です。",
+      "vi": "Ra khỏi thang máy thì rẽ phải ạ.",
+      "terms": [
+        "エレベーター",
+        "右"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "te_direction_desu"
+    },
+    {
+      "id": "S-017-V13-003",
+      "group": "find",
+      "role_vi": "Nhân viên hỏi chỗ cất áo khoác trong văn phòng",
+      "gender": "female",
+      "ja": "コートはどこに置きますか。",
+      "vi": "Tôi để áo khoác ở đâu ạ?",
+      "terms": [
+        "置く"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "doko_ni_okimasu"
+    },
+    {
+      "id": "S-017-V13-004",
+      "group": "find",
+      "role_vi": "Nhân viên đi nhầm tầng báo đồng nghiệp qua điện thoại mình đang ở đâu",
+      "gender": "male",
+      "ja": "今、二〇二の前にいます。",
+      "vi": "Tôi đang ở trước phòng 202 ạ.",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "ima_place_ni_imasu"
+    },
+    {
+      "id": "S-017-V13-005",
+      "group": "find",
+      "role_vi": "Nhân viên hỏi chỗ nghỉ trong giờ giải lao",
+      "gender": "male",
+      "ja": "休憩室はどこですか。",
+      "vi": "Phòng nghỉ giải lao ở đâu ạ?",
+      "terms": [
+        "休憩室"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "noun_wa_doko_desu_ka"
+    },
+    {
+      "id": "S-017-V13-006",
+      "group": "find",
+      "role_vi": "Đồng nghiệp chỉ nơi để giấy dùng chung khác với tủ đồ cá nhân",
+      "gender": "female",
+      "ja": "紙はあの棚にあります。",
+      "vi": "Giấy ở trên kệ đằng kia ạ.",
+      "terms": [
+        "紙",
+        "棚"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "place_ni_arimasu"
+    },
+    {
+      "id": "S-017-V13-007",
+      "group": "print",
+      "role_vi": "Nhân viên lần đầu dùng máy in chung nhờ đồng nghiệp chỉ cách dùng",
+      "gender": "female",
+      "ja": "プリンターの使い方を教えてください。",
+      "vi": "Anh chỉ tôi cách dùng máy in với ạ.",
+      "terms": [
+        "プリンター",
+        "使い方"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "way_wo_oshiete"
+    },
+    {
+      "id": "S-017-V13-008",
+      "group": "print",
+      "role_vi": "Đồng nghiệp chỉ thao tác đầu trên màn hình máy in",
+      "gender": "male",
+      "ja": "画面でファイルを選んでください。",
+      "vi": "Chị chọn tệp trên màn hình nhé.",
+      "terms": [
+        "画面",
+        "ファイル",
+        "選ぶ"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-017-V13-009",
+      "group": "print",
+      "role_vi": "Người dùng máy in xác nhận nút cần bấm",
+      "gender": "female",
+      "ja": "ファイルを選んだら青いボタンを押しますね。",
+      "vi": "Chọn tệp xong thì tôi bấm nút xanh, đúng không ạ?",
+      "terms": [
+        "ファイル",
+        "選ぶ",
+        "ボタン",
+        "押す"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "tara_verb_masu_ne"
+    },
+    {
+      "id": "S-017-V13-010",
+      "group": "print",
+      "role_vi": "Đồng nghiệp đề nghị in thử trước một tờ",
+      "gender": "male",
+      "ja": "まず一枚だけ印刷しましょう。",
+      "vi": "Trước hết mình in thử một tờ nhé.",
+      "terms": [
+        "枚",
+        "印刷する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "teian_mashou"
+    },
+    {
+      "id": "S-017-V13-011",
+      "group": "print",
+      "role_vi": "Nhân viên báo nguyên văn dòng máy in hiện trên màn hình",
+      "gender": "female",
+      "ja": "画面に「紙がありません」と出ています。",
+      "vi": "Màn hình đang báo “hết giấy” ạ.",
+      "terms": [
+        "画面",
+        "紙",
+        "出る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "quote_to_deteimasu"
+    },
+    {
+      "id": "S-017-V13-012",
+      "group": "supplies",
+      "role_vi": "Nhân viên hỏi ai giữ chìa khóa chỗ để văn phòng phẩm",
+      "gender": "female",
+      "ja": "文房具の棚の鍵は誰が持っていますか。",
+      "vi": "Ai giữ chìa khóa tủ văn phòng phẩm ạ?",
+      "terms": [
+        "文房具",
+        "棚",
+        "鍵"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "dare_ga_motteimasu"
+    },
+    {
+      "id": "S-017-V13-013",
+      "group": "supplies",
+      "role_vi": "Người giữ tủ nêu số tập giấy được lấy mỗi người",
+      "gender": "male",
+      "ja": "メモ帳は、今日は一人一冊です。",
+      "vi": "Hôm nay mỗi người lấy một tập thôi nhé.",
+      "terms": [
+        "冊"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "person_quantity_desu"
+    },
+    {
+      "id": "S-017-V13-014",
+      "group": "supplies",
+      "role_vi": "Nhân viên cần thêm một tập giấy ghi chú hỏi có được lấy thêm không",
+      "gender": "female",
+      "ja": "メモ帳をもう一冊取ってもいいですか。",
+      "vi": "Tôi lấy thêm một tập giấy ghi chú được không ạ?",
+      "terms": [
+        "冊"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-017-V13-015",
+      "group": "supplies",
+      "role_vi": "Người giữ tủ nhờ nhân viên hỏi lại mình sau về tập giấy thứ hai",
+      "gender": "male",
+      "ja": "メモ帳の二冊目は、あとで私に聞いてください。",
+      "vi": "Về tập giấy ghi chú thứ hai, lát nữa chị hỏi lại tôi nhé.",
+      "terms": [
+        "冊"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-017-V13-016",
+      "group": "borrow",
+      "role_vi": "Nhân viên xin mượn đồng nghiệp một cây bút trong buổi họp",
+      "gender": "female",
+      "ja": "会議の間、ペンを一本借りてもいいですか。",
+      "vi": "Tôi mượn một cây bút trong buổi họp được không ạ?",
+      "terms": [
+        "ペン",
+        "本",
+        "借りる"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-017-V13-017",
+      "group": "borrow",
+      "role_vi": "Đồng nghiệp cũng đang cần dùng cây bút duy nhất",
+      "gender": "male",
+      "ja": "すみません、このペンは今使います。",
+      "vi": "Xin lỗi, tôi đang cần dùng cây bút này.",
+      "terms": [
+        "ペン"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "sumimasen_verb"
+    },
+    {
+      "id": "S-017-V13-018",
+      "group": "borrow",
+      "role_vi": "Nhân viên hỏi mượn bút khác khi người kia vẫn cần bút của mình",
+      "gender": "female",
+      "ja": "予備のペンはありますか。",
+      "vi": "Có bút dự phòng không ạ?",
+      "terms": [
+        "予備",
+        "ペン"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "noun_wa_arimasu_ka"
+    },
+    {
+      "id": "S-017-V13-019",
+      "group": "borrow",
+      "role_vi": "Đồng nghiệp chỉ nơi đặt bút dự phòng ở bàn gần cửa",
+      "gender": "male",
+      "ja": "予備のペンは入口の机にあります。",
+      "vi": "Bút dự phòng ở bàn gần cửa đấy.",
+      "terms": [
+        "予備",
+        "ペン",
+        "入口",
+        "机"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "place_ni_arimasu"
+    },
+    {
+      "id": "S-017-V13-020",
+      "group": "borrow",
+      "role_vi": "Người mượn báo đã trả bút và để ở mép phải bàn",
+      "gender": "female",
+      "ja": "ペンは机の右端に置きました。",
+      "vi": "Tôi để bút ở mép phải bàn rồi ạ.",
+      "terms": [
+        "ペン",
+        "机",
+        "右端",
+        "置く"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "noun_wa_place_ni_okimashita"
+    },
+    {
+      "id": "S-017-V13-021",
+      "group": "borrow",
+      "role_vi": "Người mượn xác nhận cây bút có dấu trắng trước khi trả",
+      "gender": "male",
+      "ja": "白い印があるペンですね。",
+      "vi": "Cây bút có dấu trắng, đúng không ạ?",
+      "terms": [
+        "白い",
+        "印",
+        "ペン"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "detail_desu_ne"
+    }
+  ]
+}

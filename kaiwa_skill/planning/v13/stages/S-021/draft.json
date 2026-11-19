@@ -1,0 +1,382 @@
+{
+  "code": "S-021",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a54f82f7e796278da98b60d9c3655e09dfd7a4154d56d372a2d231e6624e2637",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "order": "Xác nhận việc, hạn và số bộ",
+    "example": "Hỏi phần nào được dùng lại",
+    "authority": "Hỏi nghĩa chỉ thị và người quyết định",
+    "supply": "Báo thiếu vật liệu và xác nhận trước khi in",
+    "finish": "Báo xong, báo thiếu và xin kiểm lại"
+  },
+  "items": [
+    {
+      "id": "S-021-V13-001",
+      "group": "order",
+      "role_vi": "Trưởng nhóm giao chuẩn bị tài liệu đào tạo",
+      "gender": "male",
+      "ja": "研修の資料を用意してください。",
+      "vi": "Chị chuẩn bị tài liệu cho buổi đào tạo nhé.",
+      "terms": [
+        "研修",
+        "資料",
+        "用意する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-021-V13-002",
+      "group": "order",
+      "role_vi": "Nhân viên hỏi thời hạn chuẩn bị tài liệu đào tạo",
+      "gender": "female",
+      "ja": "研修の資料はいつまでですか。",
+      "vi": "Hạn chuẩn bị tài liệu đào tạo là khi nào ạ?",
+      "terms": [
+        "研修",
+        "資料"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "noun_wa_itsumade"
+    },
+    {
+      "id": "S-021-V13-003",
+      "group": "order",
+      "role_vi": "Nhân viên nhắc lại mốc giao tài liệu hôm nay",
+      "gender": "female",
+      "ja": "資料は今日の午後三時までですね。",
+      "vi": "Tài liệu cần xong chậm nhất ba giờ chiều nay, đúng không ạ?",
+      "terms": [
+        "資料",
+        "午後",
+        "時"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "detail_desu_ne"
+    },
+    {
+      "id": "S-021-V13-004",
+      "group": "order",
+      "role_vi": "Nhân viên nghe không rõ số bộ cần in",
+      "gender": "female",
+      "ja": "印刷するのは十二部ですか、二十部ですか。",
+      "vi": "Tôi cần in mười hai bộ hay hai mươi bộ ạ?",
+      "terms": [
+        "印刷する",
+        "部"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "a_desu_ka_b_desu_ka"
+    },
+    {
+      "id": "S-021-V13-005",
+      "group": "order",
+      "role_vi": "Trưởng nhóm nói rõ số bộ cần in khi nhân viên hỏi lại",
+      "gender": "male",
+      "ja": "資料を十二部印刷してください。",
+      "vi": "Chị in mười hai bộ tài liệu nhé.",
+      "terms": [
+        "資料",
+        "部",
+        "印刷する"
+      ],
+      "scenes": [
+        "S002",
+        "S012"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-021-V13-006",
+      "group": "example",
+      "role_vi": "Nhân viên hỏi có thể tận dụng mẫu tài liệu của lần trước không",
+      "gender": "female",
+      "ja": "前の資料の見本を使ってもいいですか。",
+      "vi": "Tôi dùng mẫu tài liệu lần trước được không ạ?",
+      "terms": [
+        "資料",
+        "見本",
+        "使う"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-021-V13-007",
+      "group": "example",
+      "role_vi": "Nhân viên xác nhận chỉ lấy bố cục trang bìa của mẫu cũ",
+      "gender": "female",
+      "ja": "前の見本は表紙の形だけ使いますね。",
+      "vi": "Mẫu lần trước thì tôi chỉ dùng bố cục trang bìa, đúng không ạ?",
+      "terms": [
+        "見本",
+        "表紙",
+        "形",
+        "使う"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "detail_masu_ne"
+    },
+    {
+      "id": "S-021-V13-008",
+      "group": "example",
+      "role_vi": "Trưởng nhóm dặn làm mới phần nội dung cho buổi này",
+      "gender": "male",
+      "ja": "本文は新しく作ってください。",
+      "vi": "Chị soạn mới phần nội dung nhé.",
+      "terms": [
+        "本文"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-021-V13-009",
+      "group": "authority",
+      "role_vi": "Nhân viên hỏi đồng nghiệp từ chỉ thao tác thay trang nghĩa là gì",
+      "gender": "female",
+      "ja": "「差し替える」はどういう意味ですか。",
+      "vi": "Từ “sashikaeru” nghĩa là gì ạ?",
+      "terms": [
+        "差し替える",
+        "意味"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "word_wa_douiu_imi"
+    },
+    {
+      "id": "S-021-V13-010",
+      "group": "authority",
+      "role_vi": "Đồng nghiệp chỉ cách hiểu thao tác thay trang trong câu này",
+      "gender": "male",
+      "ja": "「差し替える」は、古いページを新しいページに変えることです。",
+      "vi": "“Sashikaeru” nghĩa là thay trang cũ bằng trang mới ạ.",
+      "terms": [
+        "差し替える",
+        "ページ"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "「V」は〜ことです"
+    },
+    {
+      "id": "S-021-V13-011",
+      "group": "authority",
+      "role_vi": "Đồng nghiệp nhận hỏi trưởng nhóm vì chưa rõ trang cần sửa",
+      "gender": "male",
+      "ja": "どのページを直すか、私がリーダーに聞きます。",
+      "vi": "Để tôi hỏi trưởng nhóm xem cần sửa trang nào nhé.",
+      "terms": [
+        "ページ",
+        "直す",
+        "リーダー"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "watashi_ga_verb"
+    },
+    {
+      "id": "S-021-V13-012",
+      "group": "authority",
+      "role_vi": "Nhân viên nói mình chỉ thay trang ba và giữ nguyên các trang khác",
+      "gender": "female",
+      "ja": "三ページ目だけ差し替えます。",
+      "vi": "Tôi chỉ thay trang ba thôi ạ.",
+      "terms": [
+        "ページ",
+        "差し替える"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "detail_dake_masu"
+    },
+    {
+      "id": "S-021-V13-013",
+      "group": "authority",
+      "role_vi": "Nhân viên nghe hai chỉ dẫn khác nhau nên hỏi ai có thể xác nhận",
+      "gender": "female",
+      "ja": "資料の留め方は誰に確認すればいいですか。",
+      "vi": "Tôi nên hỏi ai để xác nhận cách ghim bộ tài liệu ạ?",
+      "terms": [
+        "資料",
+        "留める",
+        "確認する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "dare_ni_verb_ba"
+    },
+    {
+      "id": "S-021-V13-014",
+      "group": "supply",
+      "role_vi": "Nhân viên báo không còn giấy đúng màu theo chỉ thị",
+      "gender": "female",
+      "ja": "すみません、白い紙がありません。",
+      "vi": "Xin lỗi, hết giấy trắng rồi ạ.",
+      "terms": [
+        "白い",
+        "紙"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "noun_ga_arimasen"
+    },
+    {
+      "id": "S-021-V13-015",
+      "group": "supply",
+      "role_vi": "Nhân viên xin phép dùng giấy màu kem thay giấy trắng",
+      "gender": "female",
+      "ja": "ベージュの紙を使ってもいいですか。",
+      "vi": "Tôi dùng giấy màu kem được không ạ?",
+      "terms": [
+        "ベージュ",
+        "紙",
+        "使う"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-021-V13-016",
+      "group": "supply",
+      "role_vi": "Trưởng nhóm giao việc kiểm thứ tự các trang trong khi chờ giấy",
+      "gender": "male",
+      "ja": "先に資料の順番を確認してください。",
+      "vi": "Trước hết chị kiểm tra thứ tự các trang trong tài liệu nhé.",
+      "terms": [
+        "資料",
+        "確認する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "te_kudasai"
+    },
+    {
+      "id": "S-021-V13-017",
+      "group": "supply",
+      "role_vi": "Nhân viên đã có giấy đúng màu hỏi có thể bắt đầu in chưa",
+      "gender": "female",
+      "ja": "白い紙で印刷を始めてもいいですか。",
+      "vi": "Tôi bắt đầu in bằng giấy trắng được chưa ạ?",
+      "terms": [
+        "白い",
+        "紙"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "te_mo_ii_desu_ka"
+    },
+    {
+      "id": "S-021-V13-018",
+      "group": "finish",
+      "role_vi": "Nhân viên báo trưởng nhóm đã chuẩn bị xong đủ số bộ",
+      "gender": "female",
+      "ja": "研修の資料が十二部できました。",
+      "vi": "Mười hai bộ tài liệu đào tạo đã xong ạ.",
+      "terms": [
+        "研修",
+        "資料",
+        "部",
+        "できる"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "noun_ga_dekimashita"
+    },
+    {
+      "id": "S-021-V13-019",
+      "group": "finish",
+      "role_vi": "Nhân viên báo chỗ đã đặt các tài liệu in xong",
+      "gender": "male",
+      "ja": "資料はこの机の上に置きました。",
+      "vi": "Tôi đã để tài liệu trên bàn này ạ.",
+      "terms": [
+        "資料",
+        "置く"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "place_ni_okimashita"
+    },
+    {
+      "id": "S-021-V13-020",
+      "group": "finish",
+      "role_vi": "Nhân viên kiểm lại và phát hiện một bộ thiếu trang ba",
+      "gender": "female",
+      "ja": "一部だけ三ページ目がありません。",
+      "vi": "Có đúng một bộ bị thiếu trang ba ạ.",
+      "terms": [
+        "部",
+        "ページ"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "detail_dake_ga_arimasen"
+    },
+    {
+      "id": "S-021-V13-021",
+      "group": "finish",
+      "role_vi": "Nhân viên báo đã bổ sung trang thiếu vào bộ cần sửa",
+      "gender": "female",
+      "ja": "足りなかった三ページ目を入れました。",
+      "vi": "Tôi bổ sung trang ba bị thiếu rồi ạ.",
+      "terms": [
+        "足りる",
+        "ページ",
+        "入れる"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "noun_wo_iremashita"
+    },
+    {
+      "id": "S-021-V13-022",
+      "group": "finish",
+      "role_vi": "Nhân viên xin trưởng nhóm xem lại bộ vừa bổ sung trang",
+      "gender": "female",
+      "ja": "この資料をもう一度見てもらえますか。",
+      "vi": "Anh xem lại bộ tài liệu này giúp tôi được không ạ?",
+      "terms": [
+        "資料",
+        "もう一度"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "te_moraemasu_ka"
+    }
+  ]
+}
