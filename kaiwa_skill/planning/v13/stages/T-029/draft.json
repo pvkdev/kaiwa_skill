@@ -1,0 +1,389 @@
+{
+  "code": "T-029",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "d0002d7f3f91cfcba9869ee6fc1fc6870df222db4ca544e03a625a12e03e9fc1",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "choose": "Chọn số phần và chu kỳ giao",
+    "delivery": "Chốt cách nhận và xem nhãn",
+    "adjust": "Đổi lượng cho từng kỳ",
+    "missing": "Báo thiếu hoặc giao muộn",
+    "restart": "Tạm dừng và nhận lại"
+  },
+  "items": [
+    {
+      "id": "T-029-V13-001",
+      "group": "choose",
+      "role_vi": "Khách chọn gói nguyên liệu",
+      "gender": "female",
+      "ja": "食材の定期宅配で、まずは二人分の夕食を三日分頼みたいです。",
+      "vi": "Tôi muốn đặt giao nguyên liệu định kỳ, trước mắt lấy đủ ba bữa tối cho hai người.",
+      "terms": [
+        "定期宅配",
+        "食材"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を三日分頼みたい"
+    },
+    {
+      "id": "T-029-V13-002",
+      "group": "choose",
+      "role_vi": "Khách hỏi thực đơn thay đổi ra sao",
+      "gender": "male",
+      "ja": "毎週同じ食材が届くんですか、それとも献立に合わせて変わるんですか。",
+      "vi": "Mỗi tuần giao nguyên liệu giống nhau hay thay đổi theo thực đơn ạ?",
+      "terms": [
+        "食材",
+        "献立"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "A、それともBですか"
+    },
+    {
+      "id": "T-029-V13-003",
+      "group": "choose",
+      "role_vi": "Khách đi làm trùng ngày giao cố định",
+      "gender": "female",
+      "ja": "配達日が火曜の午後だけの場合、仕事で家にいなくても受け取れる方法はありますか。",
+      "vi": "Nếu chỉ giao chiều thứ Ba, hôm đó tôi đi làm không có nhà thì có cách nhận nào không ạ?",
+      "terms": [
+        "配達日"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～場合、どんな方法で～"
+    },
+    {
+      "id": "T-029-V13-004",
+      "group": "choose",
+      "role_vi": "Khách muốn chọn theo món nhà dùng",
+      "gender": "male",
+      "ja": "家で使わない食材が毎週入るなら、中身を先に見られる別の定期コースから選びたいです。",
+      "vi": "Nếu tuần nào cũng có nguyên liệu nhà tôi không dùng, tôi muốn chọn một gói định kỳ khác có thể xem trước món trong hộp.",
+      "terms": [
+        "食材",
+        "定期コース"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～なら～から選びたい"
+    },
+    {
+      "id": "T-029-V13-005",
+      "group": "choose",
+      "role_vi": "Khách xác nhận tiền và lượng mỗi tuần",
+      "gender": "female",
+      "ja": "毎週届く箱には二人分の食材が三食分入っていて、配達料込みで四千円ということで合っていますか。",
+      "vi": "Tôi xin xác nhận mỗi tuần một hộp đủ ba bữa cho hai người, tổng cả phí giao là bốn nghìn yên, đúng không ạ?",
+      "terms": [
+        "食分",
+        "食材"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-029-V13-006",
+      "group": "delivery",
+      "role_vi": "Khách cần phương án khi cả nhà vắng",
+      "gender": "male",
+      "ja": "家族も不在なので、管理人室で食材の箱を預かってもらえるか確認します。",
+      "vi": "Người nhà cũng vắng, tôi sẽ hỏi phòng quản lý xem họ có giữ hộp thực phẩm giúp được không.",
+      "terms": [
+        "不在",
+        "管理人室",
+        "食材"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～てもらえるか確認します"
+    },
+    {
+      "id": "T-029-V13-007",
+      "group": "delivery",
+      "role_vi": "Khách hỏi nơi đọc cách bảo quản",
+      "gender": "female",
+      "ja": "食材の保存方法は、受け取った箱のどこで確認できますか。",
+      "vi": "Khi nhận hộp nguyên liệu, tôi xem hướng dẫn bảo quản ở đâu trên hộp ạ?",
+      "terms": [
+        "保存方法",
+        "食材"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～はどこで確認できますか"
+    },
+    {
+      "id": "T-029-V13-008",
+      "group": "delivery",
+      "role_vi": "Khách gọi hỏi hộp sau khi lỡ chuyến giao",
+      "gender": "male",
+      "ja": "家族も家にいない時間帯に配達が来たようですが、今、食材の箱はどこにありますか。",
+      "vi": "Hình như hàng đến vào lúc cả nhà đều vắng, hiện hộp thực phẩm đang ở đâu ạ?",
+      "terms": [
+        "時間帯"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ようですが、今～"
+    },
+    {
+      "id": "T-029-V13-009",
+      "group": "delivery",
+      "role_vi": "Khách sửa nơi giao thực phẩm",
+      "gender": "female",
+      "ja": "食材のお届け先は職場ではなく、緑町のみどりハイツ三〇二号室の自宅です。",
+      "vi": "Nơi giao thực phẩm là nhà tôi ở Midori Heights phòng 302 tại Midori-machi, chứ không phải chỗ làm ạ.",
+      "terms": [
+        "お届け先"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-029-V13-010",
+      "group": "delivery",
+      "role_vi": "Khách kiểm số bữa lúc nhận",
+      "gender": "male",
+      "ja": "今週の箱は伝票のとおり、二人で夕食を三回作れる量ですか。",
+      "vi": "Hộp tuần này đủ để nấu ba bữa tối cho hai người như ghi trên phiếu giao, đúng không ạ?",
+      "terms": [
+        "伝票"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～のとおり、～ですか"
+    },
+    {
+      "id": "T-029-V13-011",
+      "group": "adjust",
+      "role_vi": "Khách báo thêm người từ tháng sau",
+      "gender": "female",
+      "ja": "来月から家族が一人増えるので、定期宅配の量を二人分から三人分に変えられますか。",
+      "vi": "Từ tháng sau nhà tôi thêm một người, tôi đổi lượng giao định kỳ từ hai phần sang ba phần được không ạ?",
+      "terms": [
+        "定期宅配"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～から～に変えられますか"
+    },
+    {
+      "id": "T-029-V13-012",
+      "group": "adjust",
+      "role_vi": "Khách xin bỏ riêng nguyên liệu không dùng",
+      "gender": "male",
+      "ja": "来週の食材に入っているきのこは家で使わないのですが、その一品だけ外せますか。",
+      "vi": "Nhà tôi không dùng nấm có trong danh sách nguyên liệu tuần sau, bên anh bỏ riêng món đó được không ạ?",
+      "terms": [
+        "外す",
+        "品",
+        "食材"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～だけ外せますか"
+    },
+    {
+      "id": "T-029-V13-013",
+      "group": "adjust",
+      "role_vi": "Khách hỏi có thể thêm phần riêng dù đơn đã chốt",
+      "gender": "female",
+      "ja": "今週分の箱がもう確定していても、もう一人分を単品で追加できますか。",
+      "vi": "Dù hộp tuần này đã chốt, tôi có thể đặt thêm riêng một phần cho một người nữa không ạ?",
+      "terms": [
+        "今週分",
+        "確定する",
+        "単品",
+        "追加する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～が確定していても～"
+    },
+    {
+      "id": "T-029-V13-014",
+      "group": "adjust",
+      "role_vi": "Khách đi công tác muốn giảm trong đúng một tuần",
+      "gender": "male",
+      "ja": "出張するので、来週だけ食材を一食分にして、その次の週は元の三食分に戻せますか。",
+      "vi": "Vì tôi đi công tác, bên anh giảm nguyên liệu còn một bữa riêng tuần sau, tuần kế lại giao đủ ba bữa như cũ được không ạ?",
+      "terms": [
+        "食分",
+        "元に戻す"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～だけ～にして、その次は～"
+    },
+    {
+      "id": "T-029-V13-015",
+      "group": "missing",
+      "role_vi": "Khách báo thiếu đậu phụ",
+      "gender": "female",
+      "ja": "一覧にある三品のうち、豆腐だけが今日届いた箱に入っていません。",
+      "vi": "Trong ba món ghi trên danh sách hộp thực phẩm hôm nay, chỉ có đậu phụ là không có ạ.",
+      "terms": [
+        "品"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～のうち、～だけ入っていません"
+    },
+    {
+      "id": "T-029-V13-016",
+      "group": "missing",
+      "role_vi": "Khách báo giao quá muộn để dùng bữa tối",
+      "gender": "male",
+      "ja": "食材は午後四時までに届く予定でしたが、七時に届いたので今夜の夕食にはもう使えません。",
+      "vi": "Nguyên liệu theo hẹn giao chậm nhất lúc bốn giờ chiều, nhưng đến bảy giờ mới tới nên tôi không kịp dùng cho bữa tối nay nữa.",
+      "terms": [
+        "食材"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～予定でしたが、～には使えません"
+    },
+    {
+      "id": "T-029-V13-017",
+      "group": "missing",
+      "role_vi": "Khách hỏi lúc nào biết có giao bổ sung",
+      "gender": "female",
+      "ja": "夕食の材料を買いに行くか決めたいので、豆腐を今日中に補充できるか、いつまでに分かりますか。",
+      "vi": "Tôi cần quyết xem có đi mua nguyên liệu cho bữa tối không, chậm nhất khi nào biết bên anh có bổ sung được đậu phụ trong hôm nay ạ?",
+      "terms": [
+        "補充する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～か、いつまでに分かりますか"
+    },
+    {
+      "id": "T-029-V13-018",
+      "group": "missing",
+      "role_vi": "Khách cần biết món thay và giờ giao trước khi nhận",
+      "gender": "male",
+      "ja": "足りなかった豆腐の代替品が何で、いつ届くのか聞いてから、受け取るか決めたいです。",
+      "vi": "Tôi muốn biết món thay đậu phụ còn thiếu là gì và khi nào tới rồi mới quyết định có nhận không.",
+      "terms": [
+        "代替品"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～を聞いてから決めたい"
+    },
+    {
+      "id": "T-029-V13-019",
+      "group": "missing",
+      "role_vi": "Khách kiểm tiền đã bớt vì thiếu món kỳ trước",
+      "gender": "female",
+      "ja": "前回届かなかった食材の代金は、今回の請求金額から差し引かれていますか。",
+      "vi": "Tiền nguyên liệu không giao kỳ trước đã được trừ khỏi tiền phải trả kỳ này chưa ạ?",
+      "terms": [
+        "請求金額",
+        "差し引く",
+        "食材"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～から差し引かれていますか"
+    },
+    {
+      "id": "T-029-V13-020",
+      "group": "restart",
+      "role_vi": "Khách hỏi hạn báo bỏ qua hai lượt",
+      "gender": "male",
+      "ja": "旅行で二週間家を空けるので、定期宅配を二回スキップしたいのですが、連絡の締め切りはいつですか。",
+      "vi": "Tôi đi xa hai tuần nên muốn bỏ qua hai lượt giao định kỳ, chậm nhất lúc nào tôi cần báo ạ?",
+      "terms": [
+        "スキップ",
+        "締め切り",
+        "定期宅配"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～したい場合、いつまでに連絡を"
+    },
+    {
+      "id": "T-029-V13-021",
+      "group": "restart",
+      "role_vi": "Khách sửa hiểu nhầm là hủy hẳn",
+      "gender": "female",
+      "ja": "定期コースを解約するのではなく、二回分だけ休止して三週目から再開したいです。",
+      "vi": "Tôi muốn tạm nghỉ đúng hai chuyến rồi giao lại từ tuần thứ ba, chứ không hủy gói ạ.",
+      "terms": [
+        "解約",
+        "休止",
+        "再開",
+        "定期コース"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～のではなく～したいです"
+    },
+    {
+      "id": "T-029-V13-022",
+      "group": "restart",
+      "role_vi": "Khách hỏi lại kỳ đầu có thể dừng",
+      "gender": "male",
+      "ja": "今週分の締め切りを過ぎていれば、休止は来週の火曜からになりますか。",
+      "vi": "Nếu đã quá hạn đổi cho đơn tuần này thì phải tới thứ Ba tuần sau mới bắt đầu tạm dừng được ạ?",
+      "terms": [
+        "締め切り",
+        "今週分",
+        "休止"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～を過ぎていれば～からですか"
+    },
+    {
+      "id": "T-029-V13-023",
+      "group": "restart",
+      "role_vi": "Khách xác nhận ngày và lượng giao lại",
+      "gender": "female",
+      "ja": "定期宅配の再開は来週の火曜で、お届け先は自宅、箱は元どおり二人で三食分ということで合っていますか。",
+      "vi": "Tôi xin xác nhận giao lại từ thứ Ba tuần sau, giao về nhà, lượng trong hộp như cũ là ba bữa cho hai người, đúng không ạ?",
+      "terms": [
+        "再開",
+        "食分",
+        "お届け先",
+        "定期宅配"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～で合っていますか"
+    }
+  ]
+}

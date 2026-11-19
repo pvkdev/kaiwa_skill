@@ -1,0 +1,370 @@
+{
+  "code": "T-021",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "644252e49831b796f62bdd1ea32789f229635c842e132237b546bab453b0c2cd",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "arrange": "Hẹn khung và chỉ đường tới cửa",
+    "door": "Kiểm đúng kiện tại cửa",
+    "miss": "Báo vắng và xin giao lại",
+    "error": "Báo giao nhầm hoặc thiếu kiện",
+    "neighbor": "Nhận hộ và trả đúng người"
+  },
+  "items": [
+    {
+      "id": "T-021-V13-001",
+      "group": "arrange",
+      "role_vi": "Người nhận hẹn giờ có mặt",
+      "gender": "female",
+      "ja": "明日の午後なら家にいるので、その時間帯に配達してもらえますか。",
+      "vi": "Chiều mai tôi có nhà, anh đổi giúp khung giờ giao sang buổi chiều được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～なら家にいるので"
+    },
+    {
+      "id": "T-021-V13-002",
+      "group": "arrange",
+      "role_vi": "Người nhận chỉ lối vào tòa nhà",
+      "gender": "male",
+      "ja": "建物の入口は南側の細い路地にあって、青い看板が目印です。",
+      "vi": "Lối vào tòa nhà nằm trong ngõ nhỏ phía nam, anh nhìn bảng màu xanh dương để nhận ra nhé.",
+      "terms": [
+        "入口",
+        "路地",
+        "目印"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～が目印です"
+    },
+    {
+      "id": "T-021-V13-003",
+      "group": "arrange",
+      "role_vi": "Người nhận hỏi ngày thay thế",
+      "gender": "female",
+      "ja": "明日の午前中は受け取れないので、配達を明後日の午後に変更できませんか。",
+      "vi": "Sáng mai tôi không nhận được, anh đổi lịch giao sang chiều ngày kia giúp tôi được không ạ?",
+      "terms": [
+        "受け取る"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～ので、～に変更できませんか"
+    },
+    {
+      "id": "T-021-V13-004",
+      "group": "arrange",
+      "role_vi": "Người nhận hỏi khi nào biết giờ",
+      "gender": "male",
+      "ja": "送り状番号が五八一二の荷物は、配達予定が決まったらどうやって分かりますか。",
+      "vi": "Kiện mã vận đơn 5812, tôi sẽ biết lịch giao bằng cách nào khi bên anh chốt giờ ạ?",
+      "terms": [
+        "送り状番号",
+        "配達予定"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～はどうやって分かりますか"
+    },
+    {
+      "id": "T-021-V13-005",
+      "group": "arrange",
+      "role_vi": "Người nhận xác nhận cả hai kiện",
+      "gender": "female",
+      "ja": "部屋番号は三〇二で、荷物は二個とも明後日の午後に届くということで合っていますか。",
+      "vi": "Phòng là 302, và cả hai kiện sẽ được giao chiều ngày kia, đúng không ạ?",
+      "terms": [
+        "荷物",
+        "個",
+        "部屋番号"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-021-V13-006",
+      "group": "door",
+      "role_vi": "Người nhận kiểm tên trước khi cầm",
+      "gender": "male",
+      "ja": "荷物を受け取る前に、ラベルの宛名を確認してもいいですか。",
+      "vi": "Trước khi nhận kiện, tôi xin xem tên người nhận ghi trên nhãn được không ạ?",
+      "terms": [
+        "宛名",
+        "荷物",
+        "受け取る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～を確認してもいいですか"
+    },
+    {
+      "id": "T-021-V13-007",
+      "group": "door",
+      "role_vi": "Người nhận mong hai kiện cùng đến",
+      "gender": "female",
+      "ja": "荷物は二個届くはずですが、大きい箱と小さい箱の両方ありますか。",
+      "vi": "Tôi dự kiến nhận hai kiện, anh có cả thùng lớn và thùng nhỏ không ạ?",
+      "terms": [
+        "荷物",
+        "個"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～のはずですが、両方～"
+    },
+    {
+      "id": "T-021-V13-008",
+      "group": "door",
+      "role_vi": "Người nhận sửa số phòng",
+      "gender": "male",
+      "ja": "私の部屋番号は三〇三ではなく三〇二ですので、ラベルをもう一度見ていただけますか。",
+      "vi": "Số phòng của tôi là 302, không phải 303, anh xem lại nhãn giúp tôi được không ạ?",
+      "terms": [
+        "部屋番号"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-021-V13-009",
+      "group": "door",
+      "role_vi": "Người nhận từ chối kiện của người khác",
+      "gender": "female",
+      "ja": "この箱は三〇三号室の別の方宛てなので、私は受け取れません。",
+      "vi": "Thùng này gửi người khác ở phòng 303 nên tôi không nhận được ạ.",
+      "terms": [
+        "受け取る"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～宛てなので、受け取れません"
+    },
+    {
+      "id": "T-021-V13-010",
+      "group": "miss",
+      "role_vi": "Người nhận báo sẽ về muộn",
+      "gender": "male",
+      "ja": "午後の時間帯指定で受け取る予定でしたが、七時ごろまで帰れないので変更できますか。",
+      "vi": "Tôi đặt khung giao buổi chiều, nhưng khoảng bảy giờ tôi mới về, giờ còn đổi được không ạ?",
+      "terms": [
+        "受け取る",
+        "時間帯指定"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "～予定でしたが～"
+    },
+    {
+      "id": "T-021-V13-011",
+      "group": "miss",
+      "role_vi": "Người nhận hỏi hãng có cho giao người nhận thay",
+      "gender": "female",
+      "ja": "私が出かけている間、この荷物は代理人に渡していただけますか。",
+      "vi": "Trong lúc tôi đi vắng, bên anh có thể giao kiện này cho người nhận thay được không ạ?",
+      "terms": [
+        "代理人",
+        "荷物"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～に渡していただけますか"
+    },
+    {
+      "id": "T-021-V13-012",
+      "group": "miss",
+      "role_vi": "Người nhận xin giao lại bằng giấy báo",
+      "gender": "male",
+      "ja": "不在票が入っていたので、明日の午後で再配達をお願いできますか。",
+      "vi": "Tôi nhận được phiếu báo giao lúc vắng nhà, xin giao lại vào chiều mai được không ạ?",
+      "terms": [
+        "不在票",
+        "再配達"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ので再配達をお願いできますか"
+    },
+    {
+      "id": "T-021-V13-013",
+      "group": "miss",
+      "role_vi": "Người nhận xác nhận hãng đã nhận khung mới",
+      "gender": "female",
+      "ja": "不在票にある五八一二の荷物ですが、再配達は明日の午後二時から四時で受け付けられていますか。",
+      "vi": "Tôi gọi về mã 5812 trên phiếu báo vắng, bên anh đã nhận lịch giao lại từ hai đến bốn giờ chiều mai chưa ạ?",
+      "terms": [
+        "不在票",
+        "再配達",
+        "荷物"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～で受け付けられていますか"
+    },
+    {
+      "id": "T-021-V13-014",
+      "group": "error",
+      "role_vi": "Người vừa phát hiện kiện khác tên",
+      "gender": "male",
+      "ja": "別の方宛ての荷物が届きましたが、未開封のままなので回収していただけますか。",
+      "vi": "Tôi nhận được kiện gửi cho người khác, kiện còn nguyên chưa mở, bên anh qua lấy lại giúp tôi được không ạ?",
+      "terms": [
+        "未開封",
+        "回収する",
+        "荷物"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～のままなので～"
+    },
+    {
+      "id": "T-021-V13-015",
+      "group": "error",
+      "role_vi": "Người nhận báo thiếu một kiện",
+      "gender": "female",
+      "ja": "届いたのは大きい箱だけで、五八一三の小さい箱が見当たりません。",
+      "vi": "Tôi mới nhận được thùng lớn, không thấy thùng nhỏ mã 5813.",
+      "terms": [
+        "見当たる"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～だけで～が見当たらない"
+    },
+    {
+      "id": "T-021-V13-016",
+      "group": "error",
+      "role_vi": "Người nhận xin mốc biết kết quả",
+      "gender": "male",
+      "ja": "送り状番号五八一三の配達状況を、いつまでに教えていただけますか。",
+      "vi": "Về tình trạng giao kiện mã 5813, chậm nhất đến lúc nào bên anh báo được cho tôi ạ?",
+      "terms": [
+        "送り状番号",
+        "配達状況"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～をいつまでに教えていただけますか"
+    },
+    {
+      "id": "T-021-V13-017",
+      "group": "error",
+      "role_vi": "Người nhận hỏi lại khi quá giờ hẹn",
+      "gender": "female",
+      "ja": "五八一三の荷物は六時までにご連絡をいただく予定でしたが、今の確認結果を教えていただけますか。",
+      "vi": "Về kiện mã 5813, anh hẹn báo trước sáu giờ, xin cho tôi biết bên anh đã kiểm được đến đâu rồi ạ?",
+      "terms": [
+        "確認結果",
+        "荷物"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～までに連絡をいただく予定でしたが"
+    },
+    {
+      "id": "T-021-V13-018",
+      "group": "error",
+      "role_vi": "Người nhận xác nhận giao lại kiện tìm thấy",
+      "gender": "male",
+      "ja": "見つかった箱の宛先は三〇二号室で、配達は明日の午後ということで合っていますか。",
+      "vi": "Thùng đã tìm thấy gửi đến phòng 302, bên anh sẽ giao vào chiều mai, đúng không ạ?",
+      "terms": [
+        "宛先"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-021-V13-019",
+      "group": "neighbor",
+      "role_vi": "Hàng xóm xác minh điều kiện trước khi nhận hộ",
+      "gender": "female",
+      "ja": "本が入った箱を私が代わりに受け取ってもいいか、配達員に先に聞いてくれる？",
+      "vi": "Cậu hỏi trước người giao xem tớ có được nhận hộ thùng sách không nhé?",
+      "terms": [
+        "配達員",
+        "受け取る"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～か先に聞いてくれる？"
+    },
+    {
+      "id": "T-021-V13-020",
+      "group": "neighbor",
+      "role_vi": "Hàng xóm giới hạn thời gian lấy lại kiện",
+      "gender": "male",
+      "ja": "今日荷物を預かるなら、八時までに取りに来てくれると助かるよ。",
+      "vi": "Nếu hôm nay tớ giữ hộ kiện hàng, cậu đến lấy trước tám giờ giúp tớ nhé.",
+      "terms": [
+        "預かる",
+        "荷物"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～なら～までに取りに来て"
+    },
+    {
+      "id": "T-021-V13-021",
+      "group": "neighbor",
+      "role_vi": "Hàng xóm đính chính chỉ giữ nguyên kiện",
+      "gender": "female",
+      "ja": "箱は受け取って部屋に置いただけで、封はそのままだよ。",
+      "vi": "Tớ chỉ nhận thùng rồi để trong phòng, vẫn còn nguyên niêm phong nhé.",
+      "terms": [
+        "受け取る",
+        "封"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～だけで～はそのまま"
+    },
+    {
+      "id": "T-021-V13-022",
+      "group": "neighbor",
+      "role_vi": "Hàng xóm giao lại và cùng kiểm nhãn",
+      "gender": "male",
+      "ja": "預かってた箱はこの一個だから、名前と部屋番号が合ってるか確認してくれる？",
+      "vi": "Tớ giữ hộ đúng một thùng này, cậu kiểm tra xem tên và số phòng có đúng không nhé?",
+      "terms": [
+        "預かる",
+        "部屋番号",
+        "個"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～を確認してくれる？"
+    }
+  ]
+}

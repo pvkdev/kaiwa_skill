@@ -1,0 +1,390 @@
+{
+  "code": "T-026",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "9a12fcb31d2729c024fa171d692966765dc1284b805e43098fcbf1cf66d48cdf",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "compare": "So đúng tính năng và chi phí",
+    "stock": "Hỏi tồn kho và ngày hàng về",
+    "pickup": "Đặt và nhận đúng mẫu",
+    "fault": "Báo lỗi và theo kết quả kiểm",
+    "exchange": "Hỏi điều kiện rồi đổi hoặc trả"
+  },
+  "items": [
+    {
+      "id": "T-026-V13-001",
+      "group": "compare",
+      "role_vi": "Khách chọn máy tạo ẩm cho phòng ngủ",
+      "gender": "female",
+      "ja": "寝室で使う加湿器で、静かで手入れが簡単なものを予算内で探しています。",
+      "vi": "Tôi tìm máy tạo ẩm cho phòng ngủ, loại chạy êm, dễ vệ sinh và vừa ngân sách.",
+      "terms": [
+        "加湿器",
+        "手入れ",
+        "予算内"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～で使う～を探しています"
+    },
+    {
+      "id": "T-026-V13-002",
+      "group": "compare",
+      "role_vi": "Khách xin nghe thử hai máy",
+      "gender": "male",
+      "ja": "夜に使うので、こちらの二つの加湿器を動かして運転音を比べてもいいですか。",
+      "vi": "Tôi dùng vào ban đêm nên xin bật thử hai máy tạo ẩm này để so tiếng máy chạy được không ạ?",
+      "terms": [
+        "運転音",
+        "加湿器"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～を比べてもいいですか"
+    },
+    {
+      "id": "T-026-V13-003",
+      "group": "compare",
+      "role_vi": "Khách tính chi phí dùng lâu dài",
+      "gender": "female",
+      "ja": "本体を買った後、交換用のフィルターをどれくらいの間隔で買い足す必要がありますか。",
+      "vi": "Sau khi mua máy, khoảng bao lâu tôi cần mua thêm lõi lọc thay thế một lần ạ?",
+      "terms": [
+        "交換用",
+        "買い足す"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～を買い足す必要がありますか"
+    },
+    {
+      "id": "T-026-V13-004",
+      "group": "compare",
+      "role_vi": "Khách giữ tiêu chí chính khi mẫu vượt ngân sách",
+      "gender": "male",
+      "ja": "予算内で選びたいので、表示機能より運転音の静かさを重視したいです。",
+      "vi": "Tôi muốn chọn trong ngân sách nên ưu tiên máy chạy êm hơn các tính năng hiển thị.",
+      "terms": [
+        "運転音",
+        "重視する",
+        "予算内"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "～より～を重視したい"
+    },
+    {
+      "id": "T-026-V13-005",
+      "group": "stock",
+      "role_vi": "Khách hỏi tồn kho chi nhánh khác",
+      "gender": "female",
+      "ja": "青い収納ボックスのエムサイズは、ほかのお店に在庫がありますか。",
+      "vi": "Hộp đựng đồ xanh dương cỡ M còn hàng ở cửa hàng khác không ạ?",
+      "terms": [
+        "在庫"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～に在庫がありますか"
+    },
+    {
+      "id": "T-026-V13-006",
+      "group": "stock",
+      "role_vi": "Khách hỏi mốc biết ngày hàng về",
+      "gender": "male",
+      "ja": "青い収納ボックスを取り寄せる場合、入荷日はいつごろ分かりますか。",
+      "vi": "Nếu đặt hộp đựng đồ xanh dương về, khoảng khi nào tôi biết ngày hàng tới ạ?",
+      "terms": [
+        "取り寄せる",
+        "入荷日"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～はいつごろ分かりますか"
+    },
+    {
+      "id": "T-026-V13-007",
+      "group": "stock",
+      "role_vi": "Khách kiểm món màu khác có cùng mẫu",
+      "gender": "female",
+      "ja": "白い収納ボックスは、青いエムサイズのものと同じ型番の色違いですか。",
+      "vi": "Hộp đựng đồ màu trắng này có cùng mã với loại xanh dương cỡ M, chỉ khác màu thôi phải không ạ?",
+      "terms": [
+        "色違い",
+        "型番"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～の色違いですか"
+    },
+    {
+      "id": "T-026-V13-008",
+      "group": "stock",
+      "role_vi": "Khách chỉ đặt khi rõ lịch hàng",
+      "gender": "male",
+      "ja": "青い収納ボックスの入荷日がはっきりするまでは、注文を控えます。",
+      "vi": "Tôi xin khoan đặt hộp đựng đồ xanh dương đến khi biết rõ ngày hàng về.",
+      "terms": [
+        "入荷日"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～までは注文を控えます"
+    },
+    {
+      "id": "T-026-V13-009",
+      "group": "pickup",
+      "role_vi": "Khách nói rõ cỡ mẫu và số món đặt",
+      "gender": "female",
+      "ja": "ふた付きの収納ボックスで型番二一の青いエムを二つ注文したいです。",
+      "vi": "Tôi muốn đặt hai hộp đựng đồ có nắp màu xanh dương cỡ M, mã mẫu 21.",
+      "terms": [
+        "ふた付き",
+        "型番"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～を二つ注文したい"
+    },
+    {
+      "id": "T-026-V13-010",
+      "group": "pickup",
+      "role_vi": "Khách sửa mã mẫu trước thanh toán",
+      "gender": "male",
+      "ja": "注文をお願いした青いエムは、型番一二ではなく二一のほうです。",
+      "vi": "Mẫu xanh cỡ M tôi nhờ đặt là mã 21, chứ không phải mã 12 ạ.",
+      "terms": [
+        "型番"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-026-V13-011",
+      "group": "pickup",
+      "role_vi": "Khách hỏi thông tin cần đọc để nhận hàng",
+      "gender": "female",
+      "ja": "受け取り窓口では、注文番号と名前を伝えればいいですか。",
+      "vi": "Tới quầy nhận hàng, tôi chỉ cần đọc mã đơn và tên là được phải không ạ?",
+      "terms": [
+        "受け取り窓口",
+        "注文番号"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～を伝えればいいですか"
+    },
+    {
+      "id": "T-026-V13-012",
+      "group": "pickup",
+      "role_vi": "Khách nhận ra cỡ hộp khác với đơn",
+      "gender": "male",
+      "ja": "用意していただいた箱にはエルと書いてありますが、注文した収納ボックスはエルではなくエムです。",
+      "vi": "Trên thùng anh chuẩn bị ghi cỡ L, nhưng hộp đựng đồ tôi đặt là cỡ M, không phải L ạ.",
+      "terms": [],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-026-V13-013",
+      "group": "fault",
+      "role_vi": "Khách mô tả ấm mới mua tắt ngay",
+      "gender": "female",
+      "ja": "昨日こちらで買った電気ケトルは、スイッチを入れるとすぐ電源が切れてしまいます。",
+      "vi": "Ấm điện tôi mua ở đây hôm qua cứ bật lên là tắt ngay.",
+      "terms": [
+        "切れる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～とすぐ切れてしまう"
+    },
+    {
+      "id": "T-026-V13-014",
+      "group": "fault",
+      "role_vi": "Khách mang nguyên hộp bị giao sai",
+      "gender": "male",
+      "ja": "受け取った箱にレシートとは違う色が書いてあったので、未開封のまま持ってきたのですが、商品を確認していただけますか。",
+      "vi": "Trên thùng tôi nhận ghi màu khác với hóa đơn, tôi mang tới khi thùng vẫn còn nguyên chưa mở, anh kiểm tra món hàng giúp tôi được không ạ?",
+      "terms": [
+        "未開封"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～のまま持ってきたのですが"
+    },
+    {
+      "id": "T-026-V13-015",
+      "group": "fault",
+      "role_vi": "Khách hỏi có cần để lại ấm lỗi",
+      "gender": "female",
+      "ja": "すぐ電源が切れるケトルは、店で点検するために預ける必要がありますか。",
+      "vi": "Chiếc ấm vừa bật đã tắt, tôi cần để lại cửa hàng để bên anh kiểm tra ạ?",
+      "terms": [
+        "点検する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～ために預ける必要がありますか"
+    },
+    {
+      "id": "T-026-V13-016",
+      "group": "fault",
+      "role_vi": "Khách nghe lỗi đã tái hiện và hỏi thời hạn",
+      "gender": "male",
+      "ja": "お店でもケトルの症状が再現したそうですが、次の回答はいつごろいただけますか。",
+      "vi": "Tôi được báo chiếc ấm cũng gặp lỗi đó khi thử ở cửa hàng, khoảng khi nào tôi nhận được câu trả lời tiếp theo ạ?",
+      "terms": [
+        "症状",
+        "再現する"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～そうですが、いつごろいただけますか"
+    },
+    {
+      "id": "T-026-V13-017",
+      "group": "exchange",
+      "role_vi": "Khách hỏi đổi hoặc trả áo không hợp",
+      "gender": "female",
+      "ja": "コートに不具合はないのですが、サイズが合わない場合でも交換や返品はできますか。",
+      "vi": "Áo khoác không có lỗi, nhưng nếu mặc không vừa thì có được đổi hoặc trả không ạ?",
+      "terms": [
+        "不具合",
+        "交換",
+        "返品"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "～場合でも～できますか"
+    },
+    {
+      "id": "T-026-V13-018",
+      "group": "exchange",
+      "role_vi": "Khách hỏi còn cách đổi cỡ không",
+      "gender": "male",
+      "ja": "タグが付いたままのコートですが、返品ができない場合、同じ型のエルに交換できますか。",
+      "vi": "Áo khoác vẫn còn mác, nếu không trả được thì tôi đổi sang cỡ L cùng mẫu được không ạ?",
+      "terms": [
+        "返品",
+        "交換",
+        "タグ"
+      ],
+      "scenes": [
+        "S023",
+        "S024"
+      ],
+      "pattern": "～ができない場合、～はできますか"
+    },
+    {
+      "id": "T-026-V13-019",
+      "group": "exchange",
+      "role_vi": "Khách hỏi phần chênh sau khi thử áo",
+      "gender": "female",
+      "ja": "試着したところ黒のエルが合ったのですが、このサイズに交換すると差額はありますか。",
+      "vi": "Tôi thử thấy áo đen cỡ L vừa, đổi sang cỡ này có chênh lệch giá không ạ?",
+      "terms": [
+        "交換",
+        "差額"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～に交換すると差額は"
+    },
+    {
+      "id": "T-026-V13-020",
+      "group": "exchange",
+      "role_vi": "Khách cân nhắc ấm màu khác",
+      "gender": "male",
+      "ja": "交換品の機能や付属品が同じで、色だけ違うなら、白いケトルに交換することも考えます。",
+      "vi": "Nếu ấm đổi có cùng chức năng và phụ kiện, chỉ khác màu, tôi cũng cân nhắc đổi sang màu trắng.",
+      "terms": [
+        "交換品",
+        "付属品",
+        "交換"
+      ],
+      "scenes": [
+        "S019",
+        "S026"
+      ],
+      "pattern": "～だけ違うなら～も考える"
+    },
+    {
+      "id": "T-026-V13-021",
+      "group": "exchange",
+      "role_vi": "Khách báo ấm thay vẫn ngắt như trước",
+      "gender": "female",
+      "ja": "交換品のケトルもスイッチを入れるとすぐ切れてしまい、前のケトルと同じ症状が出ています。",
+      "vi": "Ấm được đổi cũng cứ bật lên là tắt ngay, đúng lỗi của chiếc trước.",
+      "terms": [
+        "交換品",
+        "切れる",
+        "症状"
+      ],
+      "scenes": [
+        "S027",
+        "S028"
+      ],
+      "pattern": "～とすぐ切れてしまう"
+    },
+    {
+      "id": "T-026-V13-022",
+      "group": "exchange",
+      "role_vi": "Khách xin người phụ trách khi được báo hai cách xử lý",
+      "gender": "male",
+      "ja": "交換するのか再点検なのかで説明が違ったので、どちらで進むか責任者の方に確認していただけますか。",
+      "vi": "Tôi được giải thích hai cách khác nhau, đổi ấm hoặc kiểm lại, anh nhờ người phụ trách xác nhận sẽ theo cách nào giúp tôi được không ạ?",
+      "terms": [
+        "交換",
+        "責任者"
+      ],
+      "scenes": [
+        "S029"
+      ],
+      "pattern": "～か責任者に確認していただけますか"
+    },
+    {
+      "id": "T-026-V13-023",
+      "group": "exchange",
+      "role_vi": "Khách chốt giờ nhận tin sau khi gửi kiểm",
+      "gender": "female",
+      "ja": "受付番号四〇五のケトルについて、金曜の夕方までに担当者の方から結果か進捗を教えていただけますか。",
+      "vi": "Về chiếc ấm mã tiếp nhận 405, người phụ trách có thể báo kết quả hoặc tiến độ cho tôi chậm nhất vào chiều thứ Sáu được không ạ?",
+      "terms": [
+        "担当者",
+        "進捗",
+        "受付番号"
+      ],
+      "scenes": [
+        "S030"
+      ],
+      "pattern": "～までに～を教えていただけますか"
+    }
+  ]
+}

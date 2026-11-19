@@ -1,0 +1,337 @@
+{
+  "code": "T-069",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "65d366223f6ac26ace7fe552364abc1a3b28c0ef1437425012b23a836f5e044f",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "setup": "Chuẩn bị và thử kết nối",
+    "live": "Xử lý gián đoạn khi đang họp",
+    "printer": "Báo lỗi máy in và tìm máy thay thế",
+    "hybrid": "Phối hợp giữa phòng họp và người ở xa"
+  },
+  "items": [
+    {
+      "id": "T-069-V13-001",
+      "group": "setup",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "オンラインで参加する人は、予定表の招待にあるリンクを使えばいいですか。",
+      "vi": "Người tham gia trực tuyến dùng đường dẫn trong thư mời trên lịch, đúng không ạ?",
+      "terms": [
+        "招待"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "確認ですか"
+    },
+    {
+      "id": "T-069-V13-002",
+      "group": "setup",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "相手の映像は見えるんですが、声がまったく聞こえません。",
+      "vi": "Em thấy hình của người bên kia nhưng không nghe thấy tiếng gì ạ.",
+      "terms": [
+        "映像"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "片方だけ"
+    },
+    {
+      "id": "T-069-V13-003",
+      "group": "setup",
+      "role_vi": "Người phụ trách cuộc họp",
+      "gender": "female",
+      "ja": "会議アプリのスピーカー設定で、ヘッドセットを選んでみてください。",
+      "vi": "Em thử chọn tai nghe có mic trong phần cài đặt loa của ứng dụng họp nhé.",
+      "terms": [
+        "ヘッドセット",
+        "スピーカー"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "設定を試す"
+    },
+    {
+      "id": "T-069-V13-004",
+      "group": "setup",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "ヘッドセットに切り替えたので、テストでもう一度話してもらえますか。",
+      "vi": "Em chuyển sang tai nghe rồi, chị nói thử lại một lần được không ạ?",
+      "terms": [
+        "ヘッドセット",
+        "切り替える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "試して確かめる"
+    },
+    {
+      "id": "T-069-V13-005",
+      "group": "setup",
+      "role_vi": "Người phụ trách cuộc họp",
+      "gender": "female",
+      "ja": "会議まであと五分なので、動作を確認してある隣の部屋の端末に切り替えましょう。",
+      "vi": "Còn năm phút là họp, mình chuyển sang dùng máy ở phòng bên đã kiểm tra rồi nhé.",
+      "terms": [
+        "端末",
+        "切り替える"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "切り替えを提案"
+    },
+    {
+      "id": "T-069-V13-006",
+      "group": "live",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "音が途切れて締め切りが聞こえなかったので、そこだけもう一度お願いできますか。",
+      "vi": "Tiếng bị ngắt đúng đoạn nói hạn chót, chị nhắc lại giúp em phần đó được không ạ?",
+      "terms": [
+        "音が途切れる"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "もう一度お願い"
+    },
+    {
+      "id": "T-069-V13-007",
+      "group": "live",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "会議中に接続が切れたので、今から入り直します。",
+      "vi": "Em bị mất kết nối giữa cuộc họp, giờ em sẽ vào lại ạ.",
+      "terms": [
+        "接続が切れる",
+        "入り直す"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "切れた後の対応"
+    },
+    {
+      "id": "T-069-V13-008",
+      "group": "live",
+      "role_vi": "Người phụ trách cuộc họp",
+      "gender": "female",
+      "ja": "音声が戻るまでは、先に次の議題を進めますね。",
+      "vi": "Trong lúc chờ có tiếng lại, tôi xin chuyển sang mục tiếp theo trước nhé.",
+      "terms": [
+        "議題"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "戻るまで別件"
+    },
+    {
+      "id": "T-069-V13-009",
+      "group": "live",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "お手数ですが、会議に戻れそうにないので、私の担当分を資料の三ページに沿って説明していただけますか。",
+      "vi": "Phiền chị một chút, có lẽ em chưa vào họp lại được, chị trình bày giúp phần em theo trang ba của tài liệu được không ạ?",
+      "terms": [
+        "お手数ですが"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "代わりを頼む"
+    },
+    {
+      "id": "T-069-V13-010",
+      "group": "live",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "私が会議を抜けている間に、検品の日程は決まりましたか。",
+      "vi": "Trong lúc em không vào được cuộc họp, mọi người đã chốt lịch kiểm hàng chưa ạ?",
+      "terms": [
+        "抜ける"
+      ],
+      "scenes": [
+        "S008",
+        "S017"
+      ],
+      "pattern": "抜けた間を確認"
+    },
+    {
+      "id": "T-069-V13-011",
+      "group": "printer",
+      "role_vi": "Nhân viên chuẩn bị buổi gặp khách",
+      "gender": "female",
+      "ja": "来客用の資料がずっと印刷待ちで、打ち合わせまであと十分しかありません。",
+      "vi": "Tài liệu cho khách cứ ở trạng thái chờ in, mà còn có mười phút nữa là tới cuộc gặp ạ.",
+      "terms": [
+        "印刷待ち"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "症状と急ぎ"
+    },
+    {
+      "id": "T-069-V13-012",
+      "group": "printer",
+      "role_vi": "Nhân viên chuẩn bị buổi gặp khách",
+      "gender": "female",
+      "ja": "プリンター本体は表示が出ていますが、パソコン側ではオフラインになっています。",
+      "vi": "Màn hình trên máy in vẫn hiển thị, nhưng trên máy tính thì máy in báo ngoại tuyến ạ.",
+      "terms": [
+        "オフライン"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "片方だけ"
+    },
+    {
+      "id": "T-069-V13-013",
+      "group": "printer",
+      "role_vi": "Nhân viên chuẩn bị buổi gặp khách",
+      "gender": "female",
+      "ja": "お客様との打ち合わせに間に合わせたいので、隣の部屋のプリンターを使わせてもらえますか。",
+      "vi": "Em muốn có tài liệu kịp buổi gặp khách, em dùng nhờ máy in ở phòng bên được không ạ?",
+      "terms": [
+        "間に合わせる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "代案の許可"
+    },
+    {
+      "id": "T-069-V13-014",
+      "group": "printer",
+      "role_vi": "Nhân viên hỗ trợ thiết bị",
+      "gender": "male",
+      "ja": "別のプリンターに送る前に、印刷キューに残っている分を取り消してください。",
+      "vi": "Em hủy các lệnh còn trong hàng chờ rồi hãy gửi sang máy in khác nhé.",
+      "terms": [
+        "印刷キュー",
+        "取り消す"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "先に処理してから"
+    },
+    {
+      "id": "T-069-V13-015",
+      "group": "printer",
+      "role_vi": "Nhân viên chuẩn bị buổi gặp khách",
+      "gender": "female",
+      "ja": "お客様用の資料は予備のプリンターで印刷して、会議室の入口に置きました。",
+      "vi": "Em đã in tài liệu cho khách bằng máy dự phòng và để ở cửa phòng họp rồi ạ.",
+      "terms": [
+        "予備"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "解決を報告"
+    },
+    {
+      "id": "T-069-V13-016",
+      "group": "hybrid",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "木曜の十四時は日本時間ですか、それともハノイの現地時間ですか。",
+      "vi": "Hai giờ chiều thứ Năm là giờ Nhật hay giờ Hà Nội ạ?",
+      "terms": [
+        "日本時間",
+        "現地時間"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "確認ですか"
+    },
+    {
+      "id": "T-069-V13-017",
+      "group": "hybrid",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "会議の時間に現地で別の予定があるので、終わったあと個別に十分だけお話しできませんか。",
+      "vi": "Em có lịch khác ở đây trùng giờ họp, họp xong mình trao đổi riêng mười phút được không ạ?",
+      "terms": [
+        "個別"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "切り替えを提案"
+    },
+    {
+      "id": "T-069-V13-018",
+      "group": "hybrid",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "皆さんの声が重なって担当が聞き取れなかったので、一人ずつ言い直してもらえますか。",
+      "vi": "Mọi người nói chồng tiếng nên em không nghe được ai phụ trách phần nào, mọi người lần lượt nhắc lại giúp em được không ạ?",
+      "terms": [
+        "聞き取る"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "もう一度お願い"
+    },
+    {
+      "id": "T-069-V13-019",
+      "group": "hybrid",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "声は聞こえているんですが、画面共有ではまだ前のページが表示されています。",
+      "vi": "Em vẫn nghe được tiếng, nhưng trên màn hình chia sẻ vẫn đang hiện trang trước ạ.",
+      "terms": [
+        "画面共有"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "片方だけ"
+    },
+    {
+      "id": "T-069-V13-020",
+      "group": "hybrid",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "共有画面が止まったままなので、表のリンクをチャットに貼ってもらえますか。",
+      "vi": "Màn hình chia sẻ vẫn đứng, chị gửi đường dẫn đến bảng vào khung chat giúp em được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "共有方法を頼む"
+    },
+    {
+      "id": "T-069-V13-021",
+      "group": "hybrid",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "male",
+      "ja": "会議に入り直す間に聞き逃したのですが、倉庫への確認は誰が担当することになりましたか。",
+      "vi": "Lúc thoát ra vào lại, em bỏ lỡ mất phần phân công. Cuối cùng ai phụ trách hỏi bên kho ạ?",
+      "terms": [
+        "聞き逃す"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "抜けた間を確認"
+    }
+  ]
+}

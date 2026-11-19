@@ -1,0 +1,351 @@
+{
+  "code": "T-067",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "02ca93f1a3eec7e32562c5811cd25087ee12dddcb1441a0a36f270d9394cd70c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "offer": "Xác nhận công việc và điều kiện",
+    "ask": "Làm rõ điểm còn vướng",
+    "time": "Thương lượng mốc phản hồi",
+    "decide": "Báo quyết định",
+    "follow": "Chuẩn bị ngày đầu"
+  },
+  "items": [
+    {
+      "id": "T-067-V13-001",
+      "group": "offer",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "勤務地は横浜のオフィスで合っていますか。",
+      "vi": "Tôi sẽ làm tại văn phòng Yokohama, đúng không ạ?",
+      "terms": [
+        "勤務地"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "条件を確かめる"
+    },
+    {
+      "id": "T-067-V13-002",
+      "group": "offer",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "お客様への操作説明も担当業務に入りますか。",
+      "vi": "Vị trí này có phụ trách cả việc hướng dẫn khách thao tác không ạ?",
+      "terms": [
+        "担当業務"
+      ],
+      "scenes": [
+        "S001",
+        "S008"
+      ],
+      "pattern": "範囲を尋ねる"
+    },
+    {
+      "id": "T-067-V13-003",
+      "group": "offer",
+      "role_vi": "Chuyên viên tuyển dụng",
+      "gender": "female",
+      "ja": "会社から届いた内定通知書を今日中にお送りします。",
+      "vi": "Trong hôm nay tôi sẽ gửi anh thông báo trúng tuyển mà công ty đã chuyển.",
+      "terms": [
+        "内定通知書"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "送付を伝える"
+    },
+    {
+      "id": "T-067-V13-004",
+      "group": "offer",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "資料に書いてある勤務時間が面接で伺った時間と違うのですが、人事に確認していただけますか。",
+      "vi": "Giờ làm ghi trong tài liệu khác với giờ tôi được nghe khi phỏng vấn, chị hỏi lại phòng nhân sự giúp tôi được không ạ?",
+      "terms": [
+        "勤務時間"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "説明との差"
+    },
+    {
+      "id": "T-067-V13-005",
+      "group": "ask",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "残業が少なかった月も、固定残業代は同じ額という理解で合っていますか。",
+      "vi": "Tôi hiểu là tháng nào làm thêm ít thì khoản tiền làm thêm cố định vẫn giữ nguyên, đúng không ạ?",
+      "terms": [
+        "固定残業代"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "ケースで確認する"
+    },
+    {
+      "id": "T-067-V13-006",
+      "group": "ask",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "配属後に普段の勤務地が変わることもありますか。",
+      "vi": "Sau khi về bộ phận, địa điểm làm việc hằng ngày của tôi có thể thay đổi không ạ?",
+      "terms": [
+        "勤務地"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "範囲を尋ねる"
+    },
+    {
+      "id": "T-067-V13-007",
+      "group": "ask",
+      "role_vi": "Nhân sự công ty tuyển dụng",
+      "gender": "female",
+      "ja": "宿泊を伴う出張の頻度は、配属先の責任者に確認してからお伝えします。",
+      "vi": "Tôi sẽ hỏi trưởng bộ phận xem bao lâu có một chuyến công tác qua đêm rồi báo anh.",
+      "terms": [
+        "出張",
+        "配属先",
+        "責任者"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "確認してから"
+    },
+    {
+      "id": "T-067-V13-008",
+      "group": "ask",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "電話で伺った週一日というのは、在宅勤務の上限でしょうか。",
+      "vi": "Một ngày mỗi tuần như tôi nghe qua điện thoại là mức tối đa được làm ở nhà phải không ạ?",
+      "terms": [
+        "在宅勤務",
+        "上限"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "正式条件を尋ねる"
+    },
+    {
+      "id": "T-067-V13-009",
+      "group": "time",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "回答期限までに条件を確認しきれそうにないので、金曜の夕方までお時間をいただけないでしょうか。",
+      "vi": "Có lẽ tôi không kịp xem kỹ các điều kiện trước hạn, bên tuyển có thể cho tôi đến chiều thứ Sáu được không ạ?",
+      "terms": [
+        "回答期限"
+      ],
+      "scenes": [
+        "S004",
+        "S019"
+      ],
+      "pattern": "までお時間を"
+    },
+    {
+      "id": "T-067-V13-010",
+      "group": "time",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "条件の最終版を確認してから、月曜の夕方までにお返事します。",
+      "vi": "Sau khi xem bản điều kiện cuối, tôi sẽ báo lại muộn nhất là chiều thứ Hai.",
+      "terms": [
+        "最終版"
+      ],
+      "scenes": [
+        "S005",
+        "S018"
+      ],
+      "pattern": "確認してから"
+    },
+    {
+      "id": "T-067-V13-011",
+      "group": "time",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "今の職場で引き継ぎがあるので、入社日を一週間ほど遅らせていただけないでしょうか。",
+      "vi": "Tôi còn phải bàn giao ở chỗ làm hiện tại, công ty có thể lùi ngày vào làm khoảng một tuần được không ạ?",
+      "terms": [
+        "引き継ぎ",
+        "入社日"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "変更を打診する"
+    },
+    {
+      "id": "T-067-V13-012",
+      "group": "time",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "今月の新人研修に間に合わない場合、次の回に合わせて入社日を決めることはできますか。",
+      "vi": "Nếu tôi không kịp tham gia đợt tập huấn nhân viên mới tháng này thì có thể chọn ngày vào làm theo đợt sau không ạ?",
+      "terms": [
+        "新人研修",
+        "入社日"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "代案を尋ねる"
+    },
+    {
+      "id": "T-067-V13-013",
+      "group": "time",
+      "role_vi": "Chuyên viên tuyển dụng",
+      "gender": "female",
+      "ja": "先方の確認が取れていなくても、金曜の正午までに進捗をご連絡します。",
+      "vi": "Dù chưa xác nhận được với bên tuyển, tôi sẽ cập nhật tình hình cho anh muộn nhất vào trưa thứ Sáu.",
+      "terms": [],
+      "scenes": [
+        "S009",
+        "S019"
+      ],
+      "pattern": "期限を約束する"
+    },
+    {
+      "id": "T-067-V13-014",
+      "group": "decide",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "仕事内容には関心がありますが、内定を承諾するかどうかはまだ決めていません。",
+      "vi": "Tôi quan tâm đến công việc, nhưng vẫn chưa quyết định có nhận lời hay không ạ.",
+      "terms": [
+        "関心",
+        "内定",
+        "承諾する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "検討中を明示する"
+    },
+    {
+      "id": "T-067-V13-015",
+      "group": "decide",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "日帰りの範囲であれば、出張にも対応できます。",
+      "vi": "Nếu đi về trong ngày thì tôi có thể đi công tác ạ.",
+      "terms": [
+        "日帰り",
+        "出張"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "条件を示す"
+    },
+    {
+      "id": "T-067-V13-016",
+      "group": "decide",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "水曜の朝までに条件の最終版をいただければ、その日の夕方にはお返事できます。",
+      "vi": "Nếu nhận được bản điều kiện cuối muộn nhất vào sáng thứ Tư, chiều hôm đó tôi có thể trả lời ạ.",
+      "terms": [
+        "最終版"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "条件を示す"
+    },
+    {
+      "id": "T-067-V13-017",
+      "group": "decide",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "お声がけいただいてありがたいのですが、勤務時間の都合で今回は内定を辞退いたします。",
+      "vi": "Tôi rất cảm ơn công ty đã ngỏ lời, nhưng lần này tôi xin từ chối vì giờ làm không phù hợp ạ.",
+      "terms": [
+        "勤務時間",
+        "内定",
+        "辞退する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "理由を添えて辞退"
+    },
+    {
+      "id": "T-067-V13-018",
+      "group": "decide",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "入社日は十月一日という条件で、内定をお受けします。",
+      "vi": "Tôi đồng ý nhận việc với ngày bắt đầu là mồng một tháng Mười ạ.",
+      "terms": [
+        "入社日",
+        "内定"
+      ],
+      "scenes": [
+        "S011",
+        "S020"
+      ],
+      "pattern": "承諾を明示する"
+    },
+    {
+      "id": "T-067-V13-019",
+      "group": "follow",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "初日の集合時間は朝九時で合っていますか。",
+      "vi": "Ngày đầu tôi cần có mặt lúc 9 giờ sáng, đúng không ạ?",
+      "terms": [
+        "集合時間"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "条件を確かめる"
+    },
+    {
+      "id": "T-067-V13-020",
+      "group": "follow",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "初出勤の日に電車の遅れで間に合いそうにない場合、連絡先は人事でよろしいでしょうか。",
+      "vi": "Nếu ngày đầu đi làm mà tàu chậm, tôi có nguy cơ đến muộn thì liên hệ với phòng nhân sự được chứ ạ?",
+      "terms": [
+        "初出勤",
+        "連絡先",
+        "人事"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "変更時の連絡先"
+    },
+    {
+      "id": "T-067-V13-021",
+      "group": "follow",
+      "role_vi": "Ứng viên",
+      "gender": "male",
+      "ja": "初出勤の日に利用する路線が朝は運休するため、集合時間を十時に変更していただけないでしょうか。",
+      "vi": "Sáng ngày đầu đi làm, tuyến tàu tôi định đi sẽ ngừng chạy. Chị có thể chuyển giờ có mặt sang 10 giờ giúp tôi được không ạ?",
+      "terms": [
+        "初出勤",
+        "集合時間"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "変更を打診する"
+    }
+  ]
+}

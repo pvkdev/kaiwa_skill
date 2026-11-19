@@ -1,0 +1,355 @@
+{
+  "code": "T-089",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "364c76b98da7c30522fff53f66d954a880658621a278f4ac1dc2f894e187e871",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "reserve": "Hỏi nhu cầu và chốt lượt đặt",
+    "change": "Đổi giờ và kiểm điều kiện mới",
+    "requests": "Kiểm yêu cầu của khách đi cùng trẻ",
+    "repair": "Tra lại đặt chỗ và sửa giờ ghi nhầm"
+  },
+  "items": [
+    {
+      "id": "T-089-V13-001",
+      "group": "reserve",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "ご希望のお日にちと人数を伺ってもよろしいですか。",
+      "vi": "Anh cho tôi xin ngày muốn đến và số người được không ạ?",
+      "terms": [
+        "ご希望",
+        "人数"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を伺ってもよろしいですか"
+    },
+    {
+      "id": "T-089-V13-002",
+      "group": "reserve",
+      "role_vi": "Khách đặt dịch vụ",
+      "gender": "male",
+      "ja": "土曜日の夜六時半に、大人四人で予約を取りたいのですが。",
+      "vi": "Tôi muốn đặt bàn cho bốn người lớn lúc sáu giờ rưỡi tối thứ Bảy ạ.",
+      "terms": [
+        "予約を取る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～で予約を取りたい"
+    },
+    {
+      "id": "T-089-V13-003",
+      "group": "reserve",
+      "role_vi": "Khách đặt dịch vụ",
+      "gender": "male",
+      "ja": "予約したいのは二十二日の日曜ではなく、二十一日の土曜です。",
+      "vi": "Tôi muốn đặt thứ Bảy ngày 21, thay vì Chủ nhật ngày 22 ạ.",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-089-V13-004",
+      "group": "reserve",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "長谷川様のお名前で、土曜の十八時半に四名様のご予約を承りました。",
+      "vi": "Tôi đã giữ bàn cho bốn người lúc sáu giờ rưỡi tối thứ Bảy, đứng tên anh Hasegawa ạ.",
+      "terms": [
+        "承る",
+        "名様"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～で承りました"
+    },
+    {
+      "id": "T-089-V13-005",
+      "group": "reserve",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "十八時半は満席ですが、次に四名様のお席をご用意できる十九時はいかがでしょうか。",
+      "vi": "Sáu giờ rưỡi tối đã kín bàn, khung tiếp theo có bàn cho bốn người là bảy giờ tối. Giờ đó anh thấy được không ạ?",
+      "terms": [
+        "満席",
+        "名様"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "いかがでしょうか"
+    },
+    {
+      "id": "T-089-V13-006",
+      "group": "change",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "お時間を変える前に、ご予約のお名前と予約番号を伺ってもよろしいですか。",
+      "vi": "Trước khi đổi giờ, anh cho tôi xin tên và mã đặt chỗ được không ạ?",
+      "terms": [
+        "予約番号"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～を伺ってもよろしいですか"
+    },
+    {
+      "id": "T-089-V13-007",
+      "group": "change",
+      "role_vi": "Khách đặt dịch vụ",
+      "gender": "male",
+      "ja": "今日のカラオケは午後二時の予約ですが、四時からに変更できますか。",
+      "vi": "Tôi đặt karaoke lúc hai giờ chiều nay, có thể đổi sang bốn giờ được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～に変更したい"
+    },
+    {
+      "id": "T-089-V13-008",
+      "group": "change",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "十六時の広い部屋に変更する場合は、一室につき一時間千円の追加料金がかかります。",
+      "vi": "Nếu đổi sang phòng rộng lúc bốn giờ chiều, phụ phí là một nghìn yên mỗi phòng mỗi giờ ạ.",
+      "terms": [
+        "追加料金",
+        "室"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～にすると追加料金"
+    },
+    {
+      "id": "T-089-V13-009",
+      "group": "change",
+      "role_vi": "Khách đặt dịch vụ",
+      "gender": "male",
+      "ja": "追加料金がかかるなら、午後二時の予約のままでお願いします。",
+      "vi": "Nếu có phụ phí thì chị giữ nguyên lượt đặt lúc hai giờ chiều giúp tôi ạ.",
+      "terms": [
+        "追加料金"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～のままでお願いします"
+    },
+    {
+      "id": "T-089-V13-010",
+      "group": "change",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "午後四時のお部屋の空き状況を確認し、正午までにこの番号へ折り返します。",
+      "vi": "Tôi sẽ kiểm phòng lúc bốn giờ chiều còn trống không rồi gọi lại vào số này muộn nhất trưa nay ạ.",
+      "terms": [
+        "空き状況",
+        "正午",
+        "折り返す"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～に折り返す"
+    },
+    {
+      "id": "T-089-V13-011",
+      "group": "change",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "新しいお時間が確定するまでは、午後二時のお部屋を確保しておきます。",
+      "vi": "Trong lúc chưa chốt giờ mới, tôi vẫn giữ phòng lúc hai giờ chiều cho anh ạ.",
+      "terms": [
+        "確保する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "確定するまでは～を残す"
+    },
+    {
+      "id": "T-089-V13-012",
+      "group": "change",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "午後四時に通常のお部屋が空きましたので、四名様のご予約をそちらへ変更してもよろしいですか。",
+      "vi": "Phòng thường lúc bốn giờ chiều đã trống. Tôi đổi lượt đặt cho bốn người sang giờ đó được không ạ?",
+      "terms": [
+        "名様"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～に変更してよいか"
+    },
+    {
+      "id": "T-089-V13-013",
+      "group": "requests",
+      "role_vi": "Khách đặt dịch vụ",
+      "gender": "male",
+      "ja": "二歳の子も一緒ですが、ベルト付きの子ども用の椅子はありますか。",
+      "vi": "Tôi đi cùng một bé hai tuổi, nhà hàng có ghế trẻ em loại có đai không ạ?",
+      "terms": [
+        "ベルト付き"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～はありますか"
+    },
+    {
+      "id": "T-089-V13-014",
+      "group": "requests",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "ベビーカーはお席までお持ちになりますか、それとも折りたたんでお預かりしましょうか。",
+      "vi": "Anh muốn mang xe đẩy tới bàn hay gập lại để bên tôi giữ giúp ạ?",
+      "terms": [
+        "ベビーカー",
+        "折りたたむ",
+        "預かる"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～か、それとも～か"
+    },
+    {
+      "id": "T-089-V13-015",
+      "group": "requests",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "ベルト付きの椅子が残っているか担当に確認して、午後二時ごろに折り返します。",
+      "vi": "Tôi sẽ hỏi người phụ trách xem còn ghế có đai không rồi gọi lại khoảng hai giờ chiều ạ.",
+      "terms": [
+        "ベルト付き",
+        "折り返す"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～に折り返す"
+    },
+    {
+      "id": "T-089-V13-016",
+      "group": "requests",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "通路をふさがずにベビーカーを置ける端のお席でしたらいかがでしょうか。",
+      "vi": "Bàn ở góc đặt được xe đẩy mà không chắn lối đi, anh thấy chỗ đó được không ạ?",
+      "terms": [
+        "通路",
+        "ベビーカー"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "いかがでしょうか"
+    },
+    {
+      "id": "T-089-V13-017",
+      "group": "requests",
+      "role_vi": "Nhân viên nhận đặt chỗ",
+      "gender": "female",
+      "ja": "お食事中は、折りたたんだベビーカーを入口の受付でお預かりできます。",
+      "vi": "Trong lúc anh dùng bữa, bên tôi có thể giữ xe đẩy đã gập ở quầy ngay cửa ạ.",
+      "terms": [
+        "ベビーカー",
+        "折りたたむ",
+        "預かる"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～を～でお預かり"
+    },
+    {
+      "id": "T-089-V13-018",
+      "group": "repair",
+      "role_vi": "Nhân viên tiếp khách tại cơ sở",
+      "gender": "female",
+      "ja": "体験のご予約をお調べしますので、確認メールの予約番号を見せていただけますか。",
+      "vi": "Tôi xin tra lại lượt đặt buổi trải nghiệm, anh cho tôi xem mã đặt chỗ trong email xác nhận được không ạ?",
+      "terms": [
+        "確認メール",
+        "予約番号"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～を見せていただけますか"
+    },
+    {
+      "id": "T-089-V13-019",
+      "group": "repair",
+      "role_vi": "Nhân viên tiếp khách tại cơ sở",
+      "gender": "female",
+      "ja": "こちらで開始時間を午後四時と誤って入力しており、申し訳ございません。",
+      "vi": "Bên tôi đã nhập sai giờ bắt đầu thành bốn giờ chiều, thành thật xin lỗi anh ạ.",
+      "terms": [
+        "開始時間"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ていて申し訳ない"
+    },
+    {
+      "id": "T-089-V13-020",
+      "group": "repair",
+      "role_vi": "Nhân viên tiếp khách tại cơ sở",
+      "gender": "female",
+      "ja": "早く始められる席を探しますので、何時までに出られれば間に合うか教えていただけますか。",
+      "vi": "Tôi sẽ tìm chỗ có thể bắt đầu sớm. Anh cho tôi biết cần rời đây muộn nhất lúc mấy giờ để kịp lịch sau được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "何時までなら間に合う"
+    },
+    {
+      "id": "T-089-V13-021",
+      "group": "repair",
+      "role_vi": "Nhân viên tiếp khách tại cơ sở",
+      "gender": "female",
+      "ja": "午後三時十五分からお二人一緒に始められて、所要時間は四十五分ですが、いかがでしょうか。",
+      "vi": "Anh và bạn có thể bắt đầu cùng nhau lúc ba giờ mười lăm chiều, buổi trải nghiệm kéo dài 45 phút. Giờ đó được không ạ?",
+      "terms": [
+        "所要時間"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "いかがでしょうか"
+    },
+    {
+      "id": "T-089-V13-022",
+      "group": "repair",
+      "role_vi": "Nhân viên tiếp khách tại cơ sở",
+      "gender": "female",
+      "ja": "追加料金なしで、午後三時十五分から二名様で承りました。",
+      "vi": "Tôi đã giữ chỗ cho hai người từ ba giờ mười lăm chiều, không tính phụ phí ạ.",
+      "terms": [
+        "追加料金",
+        "名様",
+        "承る"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～で承りました"
+    }
+  ]
+}

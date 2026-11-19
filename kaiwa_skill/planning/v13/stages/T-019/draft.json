@@ -1,0 +1,392 @@
+{
+  "code": "T-019",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "49780dedd39b3e768f647e5e853f8e77ccd0643003c06ef448db5bde6231c725",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "estimate": "Mô tả đồ và kiểm báo giá",
+    "building": "Điều phối xe với hai tòa nhà",
+    "change": "Xử lý ngày bàn giao thay đổi",
+    "move": "Điều phối đội trong ngày chuyển",
+    "verify": "Kiểm đủ đồ và theo thùng còn thiếu"
+  },
+  "items": [
+    {
+      "id": "T-019-V13-001",
+      "group": "estimate",
+      "role_vi": "Khách nêu ngày và hai đầu chuyển",
+      "gender": "female",
+      "ja": "来月五日に中野区の二〇一号室から杉並区の三〇二号室へ引っ越す予定です。",
+      "vi": "Tôi dự định chuyển nhà ngày mùng năm tháng sau, từ phòng 201 ở Nakano sang phòng 302 ở Suginami.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～日に～から～へ引っ越す予定"
+    },
+    {
+      "id": "T-019-V13-002",
+      "group": "estimate",
+      "role_vi": "Khách nói đồ tự mang ngoài gói",
+      "gender": "male",
+      "ja": "パソコンなどの貴重品は自分で運ぶので、見積もりの荷物には入れないでください。",
+      "vi": "Đồ giá trị như máy tính tôi tự mang, xin đừng tính vào số đồ cần chở trong báo giá.",
+      "terms": [
+        "荷物",
+        "貴重品"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ので～に入れないで"
+    },
+    {
+      "id": "T-019-V13-003",
+      "group": "estimate",
+      "role_vi": "Khách hỏi cách khảo sát trước",
+      "gender": "female",
+      "ja": "見積もりには自宅での下見が必要ですか、それとも家具の写真を送るだけで大丈夫ですか。",
+      "vi": "Để báo giá có cần qua nhà khảo sát không, hay tôi chỉ cần gửi ảnh đồ nội thất ạ?",
+      "terms": [
+        "下見"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "A、それともBですか"
+    },
+    {
+      "id": "T-019-V13-004",
+      "group": "estimate",
+      "role_vi": "Khách chỉnh số thùng dự kiến",
+      "gender": "male",
+      "ja": "段ボールは十箱とお伝えしましたが、数え直したら十四箱になりそうです。",
+      "vi": "Lúc nãy tôi báo mười thùng carton, nhưng đếm lại thì có lẽ sẽ là mười bốn thùng.",
+      "terms": [
+        "段ボール",
+        "箱"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "～とお伝えしましたが"
+    },
+    {
+      "id": "T-019-V13-005",
+      "group": "estimate",
+      "role_vi": "Khách kiểm tổng tiền có gồm tháo lắp",
+      "gender": "female",
+      "ja": "見積書の合計には、ベッドを分解して新居で組み立てる料金も含まれていますか。",
+      "vi": "Tổng trong bản báo giá đã gồm tiền tháo giường rồi lắp lại ở nhà mới chưa ạ?",
+      "terms": [
+        "見積書",
+        "分解",
+        "組み立て",
+        "新居"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "～も含まれていますか"
+    },
+    {
+      "id": "T-019-V13-006",
+      "group": "estimate",
+      "role_vi": "Khách cần gói ít dịch vụ hơn",
+      "gender": "male",
+      "ja": "荷造りは自分でしますので、運搬だけだといくらになりますか。",
+      "vi": "Tôi sẽ tự đóng đồ, nếu bên anh chỉ chở thì hết bao nhiêu ạ?",
+      "terms": [
+        "荷造り",
+        "運搬"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～だけだといくらですか"
+    },
+    {
+      "id": "T-019-V13-007",
+      "group": "building",
+      "role_vi": "Khách so giá và giờ hai chuyến",
+      "gender": "female",
+      "ja": "午前便と午後便では、料金や到着する時間帯にどんな違いがありますか。",
+      "vi": "Chuyến sáng và chuyến chiều khác nhau thế nào về giá và khung giờ đến ạ?",
+      "terms": [
+        "午前便",
+        "午後便",
+        "時間帯"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～では～に違いがありますか"
+    },
+    {
+      "id": "T-019-V13-008",
+      "group": "building",
+      "role_vi": "Cư dân báo ngày chuyển ra và hỏi chỗ xe",
+      "gender": "male",
+      "ja": "五日に荷物を搬出するので、引っ越しの車の駐車場所を教えていただけますか。",
+      "vi": "Mùng năm tôi chuyển đồ ra, anh chỉ giúp tôi chỗ đỗ cho xe chuyển nhà được không ạ?",
+      "terms": [
+        "搬出",
+        "駐車場所"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-019-V13-009",
+      "group": "building",
+      "role_vi": "Cư dân hỏi đăng ký thang máy",
+      "gender": "female",
+      "ja": "午後に大型家具を搬入する予定ですが、エレベーターの予約が必要ですか。",
+      "vi": "Tôi định chuyển đồ nội thất cỡ lớn vào buổi chiều, có cần đặt trước thang máy không ạ?",
+      "terms": [
+        "搬入",
+        "エレベーター",
+        "大型家具"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～には予約が必要ですか"
+    },
+    {
+      "id": "T-019-V13-010",
+      "group": "building",
+      "role_vi": "Cư dân xin giữ tạm giờ chờ hãng chuyển",
+      "gender": "male",
+      "ja": "業者に確認するまで、二時から四時の搬入の枠を仮押さえできますか。",
+      "vi": "Anh giữ tạm khung chuyển đồ vào từ hai đến bốn giờ giúp tôi đến khi tôi hỏi xong đơn vị chuyển nhà được không?",
+      "terms": [
+        "搬入",
+        "仮押さえ"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "～まで仮押さえできますか"
+    },
+    {
+      "id": "T-019-V13-011",
+      "group": "building",
+      "role_vi": "Khách báo giờ và chỗ xe cho hãng chuyển",
+      "gender": "female",
+      "ja": "新居の搬入時間は二時から四時で、車の駐車場所は建物の東側です。",
+      "vi": "Ở nhà mới, giờ chuyển đồ vào là từ hai đến bốn giờ, chỗ đỗ xe ở phía đông tòa nhà.",
+      "terms": [
+        "新居",
+        "搬入",
+        "駐車場所"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～は～で、～は～です"
+    },
+    {
+      "id": "T-019-V13-012",
+      "group": "change",
+      "role_vi": "Khách xin dời do chưa nhận được nhà",
+      "gender": "male",
+      "ja": "新居の引き渡しが遅れて五日に入れなくなったので、引っ越し日を八日に変更できますか。",
+      "vi": "Nhà mới bàn giao chậm nên mùng năm tôi chưa vào được, tôi đổi ngày chuyển sang mùng tám được không ạ?",
+      "terms": [
+        "新居",
+        "引き渡し",
+        "引っ越し日"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～ので～変更できますか"
+    },
+    {
+      "id": "T-019-V13-013",
+      "group": "change",
+      "role_vi": "Khách hỏi tiền chênh khi dời lịch",
+      "gender": "female",
+      "ja": "八日に日程変更すると、前の見積もりとの差額はいくらですか。",
+      "vi": "Nếu đổi lịch sang mùng tám thì chênh bao nhiêu so với báo giá cũ ạ?",
+      "terms": [
+        "日程変更",
+        "差額"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～と～はいくらですか"
+    },
+    {
+      "id": "T-019-V13-014",
+      "group": "change",
+      "role_vi": "Khách tìm chỗ giữ đồ giữa hai mốc",
+      "gender": "male",
+      "ja": "引っ越しの車が九日まで空かなければ、荷物の一時預かりのサービスはありますか。",
+      "vi": "Nếu đến mùng chín mới có xe chuyển nhà, bên anh có dịch vụ giữ đồ tạm không ạ?",
+      "terms": [
+        "荷物",
+        "一時預かり"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～のサービスはありますか"
+    },
+    {
+      "id": "T-019-V13-015",
+      "group": "change",
+      "role_vi": "Khách đề nghị tách thành hai chuyến",
+      "gender": "female",
+      "ja": "急がない箱を先に運んで、ベッドや生活用品は別便にすることはできますか。",
+      "vi": "Bên anh có thể chở trước những thùng chưa cần gấp, còn giường và đồ sinh hoạt chuyển chuyến khác được không ạ?",
+      "terms": [
+        "別便",
+        "箱"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～は別便にすることはできますか"
+    },
+    {
+      "id": "T-019-V13-016",
+      "group": "move",
+      "role_vi": "Khách hướng dẫn thứ tự dỡ",
+      "gender": "male",
+      "ja": "入口にベッドを置くとほかの荷物が通れなくなるので、先に奥の部屋へ運んでください。",
+      "vi": "Để giường ở cửa sẽ chặn đường của các đồ khác, xin chuyển giường vào phòng trong trước.",
+      "terms": [
+        "荷物"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～と～ので、先に～してください"
+    },
+    {
+      "id": "T-019-V13-017",
+      "group": "move",
+      "role_vi": "Khách đề nghị kiểm cửa khi kệ mắc",
+      "gender": "female",
+      "ja": "棚が入口で引っかかるので、棚と入口の幅を測ってから、別の方法がないか確認したいです。",
+      "vi": "Kệ bị mắc ở cửa, tôi muốn đo chiều rộng của kệ và cửa rồi xem có cách nào khác không.",
+      "terms": [
+        "幅"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～てから～を確認したい"
+    },
+    {
+      "id": "T-019-V13-018",
+      "group": "move",
+      "role_vi": "Khách hỏi phí của việc phát sinh",
+      "gender": "male",
+      "ja": "棚の扉を取り外す追加料金には、搬入後に付け直す作業も含まれていますか。",
+      "vi": "Phí thêm để tháo cánh cửa kệ đã bao gồm lắp lại sau khi đưa kệ vào nhà chưa ạ?",
+      "terms": [
+        "追加料金",
+        "搬入"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～も含まれていますか"
+    },
+    {
+      "id": "T-019-V13-019",
+      "group": "move",
+      "role_vi": "Khách nhờ đội đợi khung mới",
+      "gender": "female",
+      "ja": "新しいエレベーターの時間が決まるまでは、荷物を共用部に置かないでください。",
+      "vi": "Chưa chốt lại giờ dùng thang máy thì xin đừng để đồ ở khu dùng chung.",
+      "terms": [
+        "エレベーター",
+        "共用部",
+        "荷物"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～までは～に置かないでください"
+    },
+    {
+      "id": "T-019-V13-020",
+      "group": "verify",
+      "role_vi": "Khách kiểm đủ thùng trước khi đội đi",
+      "gender": "male",
+      "ja": "大型家具はそろっていますが、車が出る前に段ボールの箱も一緒に数えてもらえますか。",
+      "vi": "Đồ nội thất lớn đủ rồi, trước khi xe đi anh đếm giúp các thùng carton cùng tôi được không?",
+      "terms": [
+        "大型家具",
+        "箱",
+        "段ボール"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "～てもらえますか"
+    },
+    {
+      "id": "T-019-V13-021",
+      "group": "verify",
+      "role_vi": "Khách mô tả thùng thiếu",
+      "gender": "female",
+      "ja": "青いテープを貼って「本」と書いた十二番の箱が見当たりません。",
+      "vi": "Tôi không thấy thùng số mười hai dán băng xanh và có ghi chữ “sách”.",
+      "terms": [
+        "箱",
+        "見当たる"
+      ],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "～が見当たりません"
+    },
+    {
+      "id": "T-019-V13-022",
+      "group": "verify",
+      "role_vi": "Khách hỏi bao giờ có tin kiểm thùng",
+      "gender": "male",
+      "ja": "見つからない十二番の箱について、いつまでに担当窓口から連絡をいただけますか。",
+      "vi": "Về thùng số mười hai chưa tìm thấy, chậm nhất khi nào bộ phận phụ trách liên lạc với tôi ạ?",
+      "terms": [
+        "担当窓口"
+      ],
+      "scenes": [
+        "S028",
+        "S029"
+      ],
+      "pattern": "～はいつまでに連絡いただけますか"
+    },
+    {
+      "id": "T-019-V13-023",
+      "group": "verify",
+      "role_vi": "Khách hẹn nhận thùng được tìm lại",
+      "gender": "female",
+      "ja": "見つかった十二番の箱は、明日の午後三時以降なら自宅で受け取れます。",
+      "vi": "Về thùng số mười hai đã tìm thấy, từ ba giờ chiều mai trở đi tôi có thể nhận ở nhà.",
+      "terms": [
+        "箱"
+      ],
+      "scenes": [
+        "S030"
+      ],
+      "pattern": "～なら～できます"
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "code": "T-051",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "938811f8d7a661e218f7697aeb87e3448af12a040c12228371a63a779116d07e",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "start": "Xin tư vấn riêng và tìm hình thức phù hợp",
+    "talk": "Nói điều đang khó và đặt giới hạn",
+    "options": "Hỏi lựa chọn hỗ trợ và lịch hẹn tiếp",
+    "work": "Đề nghị điều chỉnh ở nơi làm",
+    "channel": "Kiểm lại hình thức và chốt cuộc hẹn"
+  },
+  "items": [
+    {
+      "id": "T-051-V13-001",
+      "group": "start",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "ストレスが続いているので、個別相談をお願いしたいです。",
+      "vi": "Tôi bị căng thẳng kéo dài nên muốn xin một buổi tư vấn riêng ạ.",
+      "terms": [
+        "ストレス",
+        "個別相談"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜ので、個別相談をお願いしたい"
+    },
+    {
+      "id": "T-051-V13-002",
+      "group": "start",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "次の個別相談まで待つのがつらいのですが、それより早く話を聞いてもらえる窓口はありますか。",
+      "vi": "Tôi thấy khó chờ đến lịch tư vấn riêng tới, có nơi nào tôi có thể nói chuyện sớm hơn không ạ?",
+      "terms": [
+        "個別相談"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜のですが、〜窓口はありますか"
+    },
+    {
+      "id": "T-051-V13-003",
+      "group": "start",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "気持ちを日本語で伝えるのが難しいので、ベトナム語で相談できるところを教えていただけますか。",
+      "vi": "Tôi khó diễn đạt cảm xúc bằng tiếng Nhật, anh/chị chỉ giúp nơi có thể tư vấn bằng tiếng Việt được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜ので、〜を教えていただけますか"
+    },
+    {
+      "id": "T-051-V13-004",
+      "group": "start",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "人前では話しづらいので、相談したい理由は個室でお話ししてもいいですか。",
+      "vi": "Tôi thấy khó nói trước mặt người khác, tôi có thể nói lý do cần tư vấn trong phòng riêng được không ạ?",
+      "terms": [
+        "人前",
+        "個室"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜ので、〜で話してもいい"
+    },
+    {
+      "id": "T-051-V13-005",
+      "group": "start",
+      "role_vi": "Nhân viên quầy hỗ trợ",
+      "gender": "male",
+      "ja": "個別相談の予約を変更するときは、お名前と予約日を電話でお伝えください。",
+      "vi": "Khi muốn đổi lịch tư vấn riêng, anh/chị gọi điện báo tên và ngày hẹn giúp tôi nhé.",
+      "terms": [
+        "個別相談"
+      ],
+      "scenes": [
+        "S005",
+        "S011"
+      ],
+      "pattern": "〜ときは、〜をお伝えください"
+    },
+    {
+      "id": "T-051-V13-006",
+      "group": "talk",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "寝つくまで時間がかかるようになって、仕事にも支障が出ています。",
+      "vi": "Dạo này tôi mất nhiều thời gian mới ngủ được, chuyện đó cũng bắt đầu ảnh hưởng đến công việc.",
+      "terms": [
+        "寝つく",
+        "支障が出る"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜ようになって、〜にも"
+    },
+    {
+      "id": "T-051-V13-007",
+      "group": "talk",
+      "role_vi": "Người tư vấn tâm lý",
+      "gender": "male",
+      "ja": "仕事に支障が出ている場面について、話せる範囲で教えていただけますか。",
+      "vi": "Trong phạm vi anh/chị thấy thoải mái, anh/chị có thể kể lúc nào công việc bị ảnh hưởng không ạ?",
+      "terms": [
+        "支障が出る",
+        "範囲"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "話せる範囲で"
+    },
+    {
+      "id": "T-051-V13-008",
+      "group": "talk",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "家のことはまだ言いづらいので、まず仕事で困っていることから話してもいいですか。",
+      "vi": "Tôi vẫn thấy khó kể chuyện gia đình, mình nói trước về những khó khăn ở chỗ làm được không ạ?",
+      "terms": [
+        "言いづらい"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜ので、〜から話してもいい"
+    },
+    {
+      "id": "T-051-V13-009",
+      "group": "talk",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "ここで話したことが会社や第三者に共有される場合は、先に教えていただけますか。",
+      "vi": "Nếu có trường hợp những điều tôi nói ở đây được chia sẻ với công ty hoặc bên thứ ba, anh/chị có thể báo trước cho tôi không ạ?",
+      "terms": [
+        "第三者"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜場合は、先に教えていただけますか"
+    },
+    {
+      "id": "T-051-V13-010",
+      "group": "talk",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "相談記録について、どんな場合に本人の同意を得ずに共有されるのか教えていただけますか。",
+      "vi": "Về ghi chép buổi tư vấn, anh/chị cho tôi biết trường hợp nào thông tin có thể được chia sẻ mà không có sự đồng ý của tôi được không ạ?",
+      "terms": [
+        "相談記録",
+        "同意を得る"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "どんな場合に〜のか教えて"
+    },
+    {
+      "id": "T-051-V13-011",
+      "group": "talk",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "仕事の負担を減らすというのは、例えば会議の時間を変えるということですか。",
+      "vi": "Giảm áp lực công việc có thể là đổi giờ họp chẳng hạn, đúng không ạ?",
+      "terms": [
+        "負担"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜というのは、例えば"
+    },
+    {
+      "id": "T-051-V13-012",
+      "group": "options",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "個別相談を続ける場合と医療機関を受診する場合で、最初にすることはどう違いますか。",
+      "vi": "Bước đầu khi tiếp tục tư vấn riêng và khi đến cơ sở y tế khám khác nhau thế nào ạ?",
+      "terms": [
+        "個別相談"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜場合と〜場合で、どう違う"
+    },
+    {
+      "id": "T-051-V13-013",
+      "group": "options",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "受診先の候補を聞いてから、個別相談を続けるか考えてもいいですか。",
+      "vi": "Tôi nghe về các cơ sở có thể đi khám rồi mới cân nhắc có tiếp tục tư vấn riêng không, như vậy được không ạ?",
+      "terms": [
+        "受診先",
+        "個別相談"
+      ],
+      "scenes": [
+        "S010",
+        "S015"
+      ],
+      "pattern": "〜か考えてもいい"
+    },
+    {
+      "id": "T-051-V13-014",
+      "group": "options",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "眠れない日が増えたので、次の個別相談では睡眠のことから話してもいいですか。",
+      "vi": "Dạo này tôi có nhiều đêm mất ngủ hơn, buổi tư vấn riêng tới mình nói về giấc ngủ trước được không ạ?",
+      "terms": [
+        "個別相談"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜ので、〜から話してもいい"
+    },
+    {
+      "id": "T-051-V13-015",
+      "group": "work",
+      "role_vi": "Nhân viên trao đổi với cấp trên",
+      "gender": "female",
+      "ja": "遅い時間の会議に出るのが難しいので、木曜日の会議だけ早めていただけますか。",
+      "vi": "Tôi khó tham gia họp muộn, anh/chị có thể dời riêng cuộc họp thứ Năm lên sớm hơn được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜ので、〜だけ〜ていただけますか"
+    },
+    {
+      "id": "T-051-V13-016",
+      "group": "work",
+      "role_vi": "Nhân viên trao đổi với cấp trên",
+      "gender": "female",
+      "ja": "会議を早めるのが難しければ、先に私の意見をお伝えしてもいいですか。",
+      "vi": "Nếu khó chuyển cuộc họp lên sớm hơn, tôi có thể nêu ý kiến trước được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "〜のが難しければ、〜してもいい"
+    },
+    {
+      "id": "T-051-V13-017",
+      "group": "work",
+      "role_vi": "Nhân viên trao đổi với cấp trên",
+      "gender": "female",
+      "ja": "勤務調整の理由は詳しく話しづらいので、まず出られる時間だけお伝えしてもいいですか。",
+      "vi": "Tôi thấy khó chia sẻ chi tiết lý do xin điều chỉnh lịch làm, trước mắt tôi chỉ báo khung giờ mình có thể tham gia được không ạ?",
+      "terms": [
+        "勤務調整"
+      ],
+      "scenes": [
+        "S009",
+        "S013"
+      ],
+      "pattern": "〜ので、〜だけ伝えてもいい"
+    },
+    {
+      "id": "T-051-V13-018",
+      "group": "channel",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "個別相談を予約したのにグループの部屋に案内されたので、予約内容を確認していただけますか。",
+      "vi": "Tôi đã đặt lịch tư vấn riêng nhưng lại được hướng dẫn vào phòng tư vấn nhóm, anh/chị kiểm tra giúp lịch hẹn của tôi được không ạ?",
+      "terms": [
+        "個別相談"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜のに〜ので、確認していただけますか"
+    },
+    {
+      "id": "T-051-V13-019",
+      "group": "channel",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "対面と電話相談では、話を聞いてくださる方や空き状況は違いますか。",
+      "vi": "Đặt tư vấn trực tiếp hay qua điện thoại thì người tư vấn và giờ còn trống có khác nhau không ạ?",
+      "terms": [
+        "対面",
+        "電話相談",
+        "空き状況"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜と〜では、違いますか"
+    },
+    {
+      "id": "T-051-V13-020",
+      "group": "channel",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "家では一人で話せる場所がないので、プライバシーを考えると対面のほうが話しやすいです。",
+      "vi": "Ở nhà tôi không có chỗ để nói chuyện riêng, xét về sự riêng tư thì gặp trực tiếp sẽ dễ nói hơn với tôi.",
+      "terms": [
+        "プライバシー",
+        "対面"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜を考えると、〜ほうが"
+    },
+    {
+      "id": "T-051-V13-021",
+      "group": "channel",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "対面の予約を残したまま、電話相談に変更するか少し考えてもいいですか。",
+      "vi": "Anh/chị giữ lịch gặp trực tiếp giúp tôi trong lúc tôi cân nhắc có đổi sang tư vấn qua điện thoại không, được không ạ?",
+      "terms": [
+        "対面",
+        "電話相談"
+      ],
+      "scenes": [
+        "S017",
+        "S019"
+      ],
+      "pattern": "〜か考えてもいい"
+    },
+    {
+      "id": "T-051-V13-022",
+      "group": "channel",
+      "role_vi": "Người tìm hỗ trợ tâm lý",
+      "gender": "female",
+      "ja": "電話相談への変更はせず、午後三時の対面の個別相談をお願いします。",
+      "vi": "Tôi xin giữ buổi tư vấn riêng trực tiếp lúc 3 giờ chiều, không đổi sang tư vấn qua điện thoại ạ.",
+      "terms": [
+        "電話相談",
+        "対面",
+        "個別相談"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜への変更はせず、〜をお願いします"
+    }
+  ]
+}

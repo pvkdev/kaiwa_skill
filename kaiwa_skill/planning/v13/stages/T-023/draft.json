@@ -1,0 +1,378 @@
+{
+  "code": "T-023",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "fc69d4c60328e17d58ecf9a720c0406fbd65d1fdbce803d23577abe5cb40b2b4",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "meet": "Hẹn nơi gặp và xác nhận món",
+    "inspect": "Kiểm tình trạng và phụ kiện",
+    "deal": "Quyết định mua và giao tiền",
+    "give": "Trao lại đồ không bán",
+    "follow": "Hỏi lại sau khi bàn giao"
+  },
+  "items": [
+    {
+      "id": "T-023-V13-001",
+      "group": "meet",
+      "role_vi": "Người mua hỏi chiếc đèn đã đăng",
+      "gender": "female",
+      "ja": "中古の白いデスクライトを出品されていましたが、まだありますか。",
+      "vi": "Chiếc đèn bàn trắng cũ anh đăng bán còn không ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～はまだありますか"
+    },
+    {
+      "id": "T-023-V13-002",
+      "group": "meet",
+      "role_vi": "Người mua hẹn chỗ dễ nhận ra",
+      "gender": "male",
+      "ja": "待ち合わせは、駅の改札口の外にある案内板の前にしませんか。",
+      "vi": "Mình hẹn trước bảng chỉ dẫn bên ngoài cổng soát vé nhà ga nhé?",
+      "terms": [
+        "改札口",
+        "案内板",
+        "待ち合わせ"
+      ],
+      "scenes": [
+        "S002",
+        "S005"
+      ],
+      "pattern": "～で待ち合わせしませんか"
+    },
+    {
+      "id": "T-023-V13-003",
+      "group": "meet",
+      "role_vi": "Người mua hỏi đủ thời gian thử trước khi mua",
+      "gender": "female",
+      "ja": "動作確認をしてから買うか決めたいのですが、別の日ならもう少し時間を取れますか。",
+      "vi": "Tôi muốn thử xem món có hoạt động rồi mới quyết định mua, hôm khác anh dành thêm chút thời gian được không ạ?",
+      "terms": [
+        "動作確認"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～ならもう少し～取れますか"
+    },
+    {
+      "id": "T-023-V13-004",
+      "group": "meet",
+      "role_vi": "Người mua dời điểm hẹn sang nơi sáng",
+      "gender": "male",
+      "ja": "待ち合わせは、もっと明るくて人通りがある駅前に変えられますか。",
+      "vi": "Mình có thể đổi chỗ hẹn sang trước ga, nơi sáng và đông người qua lại hơn không ạ?",
+      "terms": [
+        "人通り",
+        "駅前",
+        "待ち合わせ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～に変えられますか"
+    },
+    {
+      "id": "T-023-V13-005",
+      "group": "meet",
+      "role_vi": "Người mua nói sẽ quyết sau khi xem đèn",
+      "gender": "female",
+      "ja": "表示価格で買うかどうかは、傷を見て、ライトが点灯することを確かめてから決めたいです。",
+      "vi": "Tôi muốn xem vết xước và kiểm tra đèn có sáng không rồi mới quyết có mua với giá đã đăng không.",
+      "terms": [
+        "表示価格",
+        "傷",
+        "点灯する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～てから買うか決めたい"
+    },
+    {
+      "id": "T-023-V13-006",
+      "group": "inspect",
+      "role_vi": "Người bán báo trước vết xước loa",
+      "gender": "male",
+      "ja": "写真では見えにくいですが、スピーカーの裏側には小さな傷があります。",
+      "vi": "Trong ảnh hơi khó thấy, mặt sau chiếc loa có một vết xước nhỏ.",
+      "terms": [
+        "傷"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～では見えにくいですが"
+    },
+    {
+      "id": "T-023-V13-007",
+      "group": "inspect",
+      "role_vi": "Người mua hỏi máy ảnh có sạc đi kèm không",
+      "gender": "female",
+      "ja": "カメラ本体のほかに、専用の充電器も付きますか。",
+      "vi": "Ngoài thân máy ảnh, có kèm bộ sạc riêng của máy không ạ?",
+      "terms": [
+        "本体",
+        "充電器"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～のほかに～も付きますか"
+    },
+    {
+      "id": "T-023-V13-008",
+      "group": "inspect",
+      "role_vi": "Người mua xác nhận pin dự phòng không nằm trong giá",
+      "gender": "male",
+      "ja": "表示価格には写真に写っている予備の電池は含まれないんですね。",
+      "vi": "Giá đã đăng không gồm viên pin dự phòng trong ảnh, đúng không ạ?",
+      "terms": [
+        "表示価格",
+        "予備",
+        "含む"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～には～は含まれないんですね"
+    },
+    {
+      "id": "T-023-V13-009",
+      "group": "inspect",
+      "role_vi": "Người mua thử thấy không chụp được",
+      "gender": "female",
+      "ja": "電源は入りますが、シャッターを押しても写真が撮れません。",
+      "vi": "Máy bật lên được, nhưng bấm nút chụp vẫn không chụp được ảnh.",
+      "terms": [
+        "電源"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～は～が、～ても～ません"
+    },
+    {
+      "id": "T-023-V13-010",
+      "group": "inspect",
+      "role_vi": "Người mua hỏi chỉ mua sạc được không",
+      "gender": "male",
+      "ja": "本体は動かないので見送りますが、充電器だけ譲っていただけますか。",
+      "vi": "Thân máy không hoạt động nên tôi xin thôi, anh có thể bán riêng bộ sạc cho tôi được không ạ?",
+      "terms": [
+        "本体",
+        "充電器",
+        "譲る",
+        "動く",
+        "見送る"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～だけ譲っていただけますか"
+    },
+    {
+      "id": "T-023-V13-011",
+      "group": "deal",
+      "role_vi": "Người mua muốn suy nghĩ sau khi xem ghế",
+      "gender": "female",
+      "ja": "椅子の実物を見たので、うちに置けるか考えてから買うかどうか決めたいです。",
+      "vi": "Tôi đã xem ghế thật rồi, tôi muốn tính xem nhà có chỗ đặt không rồi mới quyết định mua.",
+      "terms": [
+        "実物"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～てから買うか決めたい"
+    },
+    {
+      "id": "T-023-V13-012",
+      "group": "deal",
+      "role_vi": "Người mua không lấy ghế chân lỏng",
+      "gender": "male",
+      "ja": "椅子の脚がかなりぐらつくので、今回は購入を見送ります。",
+      "vi": "Chân ghế lung lay khá nhiều nên lần này tôi xin phép không mua.",
+      "terms": [
+        "ぐらつく",
+        "見送る"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ので今回は見送ります"
+    },
+    {
+      "id": "T-023-V13-013",
+      "group": "deal",
+      "role_vi": "Người mua chỉ cân nhắc nếu đủ món đi kèm",
+      "gender": "female",
+      "ja": "充電器が見つかって一緒に付けてもらえるなら、カメラの購入を考えます。",
+      "vi": "Nếu anh tìm thấy bộ sạc và có thể để kèm, tôi sẽ cân nhắc mua máy ảnh.",
+      "terms": [
+        "充電器"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～なら購入を考えます"
+    },
+    {
+      "id": "T-023-V13-014",
+      "group": "deal",
+      "role_vi": "Người mua trả tiền và đối chiếu hai món",
+      "gender": "male",
+      "ja": "代金の三千円をお渡しするので、金額とスピーカー本体、ケーブルを一緒に確認しましょう。",
+      "vi": "Tôi gửi anh ba nghìn yên, mình cùng kiểm số tiền, loa và dây cáp nhé.",
+      "terms": [
+        "代金",
+        "本体"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～と～を一緒に確認しましょう"
+    },
+    {
+      "id": "T-023-V13-015",
+      "group": "give",
+      "role_vi": "Người cho quạt nêu giới hạn của món",
+      "gender": "female",
+      "ja": "この扇風機はまだ動きますが、首振りの機能は使えません。",
+      "vi": "Chiếc quạt này vẫn chạy, nhưng chức năng quay đầu không dùng được.",
+      "terms": [
+        "動く"
+      ],
+      "scenes": [
+        "S016",
+        "S020"
+      ],
+      "pattern": "～は動きますが～"
+    },
+    {
+      "id": "T-023-V13-016",
+      "group": "give",
+      "role_vi": "Người ngỏ ý nhượng kệ sách",
+      "gender": "male",
+      "ja": "小さい本棚が余っているので、ご自宅で使えそうならお譲りしたいです。",
+      "vi": "Tôi đang thừa một kệ sách nhỏ, nếu anh thấy dùng được ở nhà thì tôi muốn tặng lại.",
+      "terms": [
+        "譲る"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ならお譲りしたい"
+    },
+    {
+      "id": "T-023-V13-017",
+      "group": "give",
+      "role_vi": "Người tặng đón lời từ chối",
+      "gender": "female",
+      "ja": "本棚を置く場所がないなら、無理に引き取らなくて大丈夫ですよ。",
+      "vi": "Nếu không có chỗ để kệ sách thì anh không cần miễn cưỡng nhận đâu ạ.",
+      "terms": [
+        "無理に",
+        "引き取る"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～なら無理に～なくて大丈夫"
+    },
+    {
+      "id": "T-023-V13-018",
+      "group": "give",
+      "role_vi": "Người có quạt đồng ý giữ thêm ít ngày",
+      "gender": "male",
+      "ja": "扇風機は来週の日曜まで取り置きしますので、受け渡し場所はお返事の後で決めましょう。",
+      "vi": "Tôi giữ chiếc quạt đến Chủ nhật tuần sau, khi anh trả lời rồi mình chốt chỗ giao nhé.",
+      "terms": [
+        "取り置き",
+        "受け渡し場所"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～まで取り置きします"
+    },
+    {
+      "id": "T-023-V13-019",
+      "group": "follow",
+      "role_vi": "Người quên sạc sau buổi gặp",
+      "gender": "female",
+      "ja": "駅のベンチに青いシールを貼った充電器を忘れたかもしれませんが、見かけませんでしたか。",
+      "vi": "Có thể tôi để quên bộ sạc có dán nhãn màu xanh dương trên ghế ở ga, anh có thấy không ạ?",
+      "terms": [
+        "充電器"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～かもしれませんが、見かけませんでしたか"
+    },
+    {
+      "id": "T-023-V13-020",
+      "group": "follow",
+      "role_vi": "Người bán hỏi cách nối loa trước khi kết luận",
+      "gender": "male",
+      "ja": "右側の音量が小さくなったときの接続方法を教えていただけますか。",
+      "vi": "Anh cho tôi biết đã kết nối thế nào khi âm lượng bên phải bị nhỏ được không ạ?",
+      "terms": [
+        "接続方法",
+        "音量"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-023-V13-021",
+      "group": "follow",
+      "role_vi": "Người bán hẹn trả lời sau khi kiểm mô tả",
+      "gender": "female",
+      "ja": "スピーカーをお渡ししたときの説明を見直してから、今夜八時までにお返事します。",
+      "vi": "Tôi sẽ xem lại phần giải thích khi giao loa rồi trả lời anh trước tám giờ tối nay.",
+      "terms": [],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～を見直してから～"
+    },
+    {
+      "id": "T-023-V13-022",
+      "group": "follow",
+      "role_vi": "Người bán xin giữ loa để kiểm tra",
+      "gender": "male",
+      "ja": "スピーカーをいったん預かって状態を確認してから、返金などの対応を相談しませんか。",
+      "vi": "Hay trước hết để tôi giữ loa kiểm tra tình trạng, rồi mình bàn cách xử lý như hoàn tiền nhé?",
+      "terms": [
+        "預かる",
+        "返金"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～てから～相談しませんか"
+    },
+    {
+      "id": "T-023-V13-023",
+      "group": "follow",
+      "role_vi": "Người giữ hộ dây hỏi cách trả khi không gặp được",
+      "gender": "female",
+      "ja": "今週はお忘れになったケーブルを直接お返しする時間が取れないので、共通の知人に預けてもいいですか。",
+      "vi": "Tuần này tôi không thu xếp gặp trực tiếp để trả dây anh bỏ quên được, tôi gửi qua một người quen chung được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～ので、～に預けてもいいですか"
+    }
+  ]
+}

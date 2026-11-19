@@ -1,0 +1,341 @@
+{
+  "code": "T-094",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "42752dd1cb734ec36d7ff1ff02b10bcd88a4d7c2eb0f583216ab0e9c2867ce61",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "listen": "Hỏi phạm vi và số liệu đã biết",
+    "speak": "Xin phát biểu và nêu rủi ro",
+    "disagree": "Tìm điểm chung và thử nhỏ",
+    "finish": "Nhắc phần việc, hạn và người duyệt"
+  },
+  "items": [
+    {
+      "id": "T-094-V13-001",
+      "group": "listen",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "新しい注文フォームの対象範囲を確認してもいいですか。",
+      "vi": "Tôi xin hỏi lại biểu mẫu đặt hàng mới sẽ áp dụng cho những khách nào được không ạ?",
+      "terms": [
+        "確認してもいいですか",
+        "対象範囲"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を確認してもいいですか"
+    },
+    {
+      "id": "T-094-V13-002",
+      "group": "listen",
+      "role_vi": "Người trình bày đề xuất",
+      "gender": "male",
+      "ja": "今回の試行では、新規ではなく今のフォームを使っている三社だけにお願いします。",
+      "vi": "Đợt thử này, mình chỉ mời ba công ty đang dùng biểu mẫu hiện tại. Khách mới chưa tham gia.",
+      "terms": [
+        "新規",
+        "試行"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～だけに試してもらう"
+    },
+    {
+      "id": "T-094-V13-003",
+      "group": "listen",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "すべてのお客様に新しいフォームへ切り替えてもらうかどうかは、試した結果を見て決めるという理解で合っていますか。",
+      "vi": "Tôi hiểu là phải xem kết quả thử rồi mới quyết có chuyển tất cả khách sang biểu mẫu mới không, đúng không ạ?",
+      "terms": [
+        "切り替える"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "T-094-V13-004",
+      "group": "listen",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "今ある数字の中で、実績値と見込みを分けて教えていただけますか。",
+      "vi": "Anh giúp tôi phân biệt số liệu thực tế và số dự kiến trong những số hiện có được không ạ?",
+      "terms": [
+        "実績値",
+        "見込み"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～を分けて教えてください"
+    },
+    {
+      "id": "T-094-V13-005",
+      "group": "listen",
+      "role_vi": "Người trình bày đề xuất",
+      "gender": "male",
+      "ja": "先週の受付件数は三十件ですが、一件当たりの作業時間はまだ測定していません。",
+      "vi": "Tuần trước mình đã nhận ba mươi đơn, nhưng vẫn chưa đo thời gian xử lý mỗi đơn.",
+      "terms": [
+        "受付件数",
+        "作業時間",
+        "測定する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～はまだ測っていない"
+    },
+    {
+      "id": "T-094-V13-006",
+      "group": "listen",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "二つのフォームを比べるため、同じ種類の注文を五件ずつ処理して作業時間を測定できますか。",
+      "vi": "Để so hai biểu mẫu, anh có thể xử lý năm đơn cùng loại trên mỗi mẫu và đo thời gian làm được không ạ?",
+      "terms": [
+        "作業時間",
+        "測定する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ずつ測れますか"
+    },
+    {
+      "id": "T-094-V13-007",
+      "group": "speak",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "新しいフォームへの移行について、気になる点を一つ発言してもいいですか。",
+      "vi": "Tôi xin phát biểu một ý về quy trình chuyển sang biểu mẫu mới được không ạ?",
+      "terms": [
+        "移行",
+        "発言する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～てもいいですか"
+    },
+    {
+      "id": "T-094-V13-008",
+      "group": "speak",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "同じ注文がメールとフォームの両方に届くと、二重登録になる可能性があります。",
+      "vi": "Nếu cùng một đơn đến cả qua email lẫn biểu mẫu thì có thể bị nhập hai lần ạ.",
+      "terms": [
+        "二重登録"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～と～可能性がある"
+    },
+    {
+      "id": "T-094-V13-009",
+      "group": "speak",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "注文が重複したときの対応を試してから、運用を始める日を決めたほうがいいと思います。",
+      "vi": "Tôi nghĩ nên thử cách xử lý đơn trùng rồi mới chốt ngày bắt đầu vận hành.",
+      "terms": [
+        "重複"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～てから決める"
+    },
+    {
+      "id": "T-094-V13-010",
+      "group": "speak",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "三社で試す間に二重登録を防ぐため、私は何を準備すればいいですか。",
+      "vi": "Để tránh nhập trùng trong đợt thử với ba công ty, tôi cần chuẩn bị gì ạ?",
+      "terms": [
+        "二重登録"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～ために何を準備"
+    },
+    {
+      "id": "T-094-V13-011",
+      "group": "speak",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "項目を決める前に、出荷担当にも見本を見てもらいませんか。",
+      "vi": "Trước khi chốt các mục, mình nhờ cả bên phụ trách xuất hàng xem bản mẫu nhé?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～に見てもらいませんか"
+    },
+    {
+      "id": "T-094-V13-012",
+      "group": "disagree",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "注文の見落としを減らすことは、どちらの案でも共通の目標ですね。",
+      "vi": "Giảm bỏ sót đơn hàng là mục tiêu chung của cả hai phương án nhỉ.",
+      "terms": [
+        "共通の目標",
+        "見落とし"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～は同じだ"
+    },
+    {
+      "id": "T-094-V13-013",
+      "group": "disagree",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "メールを使うのはいいのですが、注文が入るたびに送ると、処理済みの通知までたまるのが気になります。",
+      "vi": "Tôi đồng ý dùng email, nhưng nếu cứ có đơn là gửi thì tôi lo cả thông báo của những đơn đã xử lý cũng dồn lại.",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～はよいが～が気になる"
+    },
+    {
+      "id": "T-094-V13-014",
+      "group": "disagree",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "受付から十分たっても未処理の注文だけを、通知の対象にしてはどうでしょうか。",
+      "vi": "Mình chỉ gửi thông báo cho những đơn nhận mười phút rồi mà vẫn chưa xử lý được không ạ?",
+      "terms": [
+        "未処理"
+      ],
+      "scenes": [
+        "S010",
+        "S011"
+      ],
+      "pattern": "～だけを対象にする"
+    },
+    {
+      "id": "T-094-V13-015",
+      "group": "disagree",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "試行中は、通知が届いてから担当者が気づくまでの時間を測定しましょう。",
+      "vi": "Trong lúc thử, mình đo thời gian từ khi thông báo tới đến lúc người phụ trách nhìn thấy nhé.",
+      "terms": [
+        "試行",
+        "担当者",
+        "測定する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～までの時間を測る"
+    },
+    {
+      "id": "T-094-V13-016",
+      "group": "disagree",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "朝礼中に来た通知にはすぐ気づけなかったので、メールだけで見落としを防げるとはまだ言えません。",
+      "vi": "Có thông báo đến trong lúc họp đầu ca mà không ai chú ý ngay, nên chưa thể nói chỉ dùng email là tránh bỏ sót được.",
+      "terms": [
+        "見落とし"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "まだ～とまでは言えない"
+    },
+    {
+      "id": "T-094-V13-017",
+      "group": "finish",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "試行する三社と各担当者を一覧にして、金曜の三時までに共有するという理解で合っていますか。",
+      "vi": "Tôi hiểu việc của mình là lập danh sách ba công ty tham gia thử cùng người phụ trách từng công ty và chia sẻ muộn nhất ba giờ thứ Sáu, đúng không ạ?",
+      "terms": [
+        "試行",
+        "担当者"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "T-094-V13-018",
+      "group": "finish",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "三社の一覧を共有する前に、どなたに承認をお願いすればよいですか。",
+      "vi": "Trước khi chia sẻ danh sách ba công ty, tôi nên nhờ ai duyệt ạ?",
+      "terms": [
+        "承認"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "誰に承認を頼む"
+    },
+    {
+      "id": "T-094-V13-019",
+      "group": "finish",
+      "role_vi": "Người chủ trì cuộc họp",
+      "gender": "male",
+      "ja": "一覧は運用の伊藤さんに最終確認をしてもらってから、全員に共有してください。",
+      "vi": "Cậu nhờ chị Ito bên vận hành kiểm lần cuối rồi mới chia sẻ danh sách cho mọi người nhé.",
+      "terms": [
+        "最終確認"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～てから共有する"
+    },
+    {
+      "id": "T-094-V13-020",
+      "group": "finish",
+      "role_vi": "Nhân viên dự họp",
+      "gender": "female",
+      "ja": "金曜の正午までに試行の一覧をお渡ししたら、二時半までに見ていただけますか。",
+      "vi": "Nếu tôi chuyển danh sách đợt thử muộn nhất trưa thứ Sáu thì chị xem giúp trước hoặc đúng hai giờ rưỡi được không ạ?",
+      "terms": [
+        "試行"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～までに見ていただけますか"
+    },
+    {
+      "id": "T-094-V13-021",
+      "group": "finish",
+      "role_vi": "Nhân viên duyệt danh sách",
+      "gender": "female",
+      "ja": "一覧には、担当者が休みの日に代わりに対応する代理の方も記載していただけますか。",
+      "vi": "Trong danh sách, chị ghi giúp cả người thay khi người phụ trách nghỉ được không ạ?",
+      "terms": [
+        "担当者",
+        "代理",
+        "記載する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～も記載して"
+    }
+  ]
+}

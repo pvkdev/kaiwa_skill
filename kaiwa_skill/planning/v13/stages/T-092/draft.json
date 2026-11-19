@@ -1,0 +1,330 @@
+{
+  "code": "T-092",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "d659d48eab1e3dcb0f8330db0a50203f9b74772b6f04e79562d2e92d6bf54665",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Hỏi ngày sử dụng và nhu cầu",
+    "compare": "Giải thích chênh lệch và chọn phòng",
+    "way": "Chỉ quầy nhận đồ bằng mốc rõ",
+    "check": "Xin kiểm yêu cầu đặc biệt và giới thiệu đầu mối"
+  },
+  "items": [
+    {
+      "id": "T-092-V13-001",
+      "group": "ask",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "お部屋をご利用になるのは何日でしょうか。",
+      "vi": "Anh dự định dùng phòng vào ngày nào ạ?",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～になるのはいつ"
+    },
+    {
+      "id": "T-092-V13-002",
+      "group": "ask",
+      "role_vi": "Khách thuê phòng hoặc thiết bị",
+      "gender": "male",
+      "ja": "来店日は十二日ですが、部屋を使うのは翌日の十三日です。",
+      "vi": "Tôi đến cơ sở ngày 12, còn dùng phòng vào ngày hôm sau, ngày 13 ạ.",
+      "terms": [
+        "来店日",
+        "翌日"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～は翌日です"
+    },
+    {
+      "id": "T-092-V13-003",
+      "group": "ask",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "十二日はご相談にいらっしゃる日ですか、それともお部屋の利用日ですか。",
+      "vi": "Ngày 12 là ngày anh đến cơ sở hay ngày anh thực sự dùng phòng ạ?",
+      "terms": [
+        "利用日"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～か、それとも～ですか"
+    },
+    {
+      "id": "T-092-V13-004",
+      "group": "ask",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "合うお部屋を探しますので、人数とご利用目的を教えていただけますか。",
+      "vi": "Để tôi tìm phòng phù hợp, anh cho tôi biết số người và mục đích sử dụng được không ạ?",
+      "terms": [
+        "人数",
+        "利用目的"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-092-V13-005",
+      "group": "ask",
+      "role_vi": "Khách thuê phòng hoặc thiết bị",
+      "gender": "male",
+      "ja": "六人でオンライン会議をするので、後ろの席の声も相手に届くようにしたいです。",
+      "vi": "Chúng tôi có sáu người họp trực tuyến, tôi muốn bên kia nghe được cả tiếng của người ngồi phía sau.",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～にも届くように"
+    },
+    {
+      "id": "T-092-V13-006",
+      "group": "compare",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "一時間当たりの料金は、画面だけのお部屋なら千五百円、卓上マイク付きなら二千円です。",
+      "vi": "Giá mỗi giờ là một nghìn năm trăm yên cho phòng chỉ có màn hình, hai nghìn yên cho phòng có mic để bàn ạ.",
+      "terms": [
+        "時間当たり",
+        "卓上マイク"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～なら～円です"
+    },
+    {
+      "id": "T-092-V13-007",
+      "group": "compare",
+      "role_vi": "Khách thuê phòng hoặc thiết bị",
+      "gender": "male",
+      "ja": "マイク付きの部屋なら、こちらで機材を持ち込まなくて大丈夫ですか。",
+      "vi": "Nếu chọn phòng có mic thì chúng tôi không cần mang thiết bị của mình vào đúng không ạ?",
+      "terms": [
+        "機材",
+        "持ち込む"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～なくて大丈夫ですか"
+    },
+    {
+      "id": "T-092-V13-008",
+      "group": "compare",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "マイクは備え付けですので、接続方法は当日受付でご案内します。",
+      "vi": "Phòng có sẵn mic, bên tôi sẽ hướng dẫn cách kết nối tại quầy vào ngày anh đến sử dụng ạ.",
+      "terms": [
+        "備え付け",
+        "接続方法",
+        "当日",
+        "案内する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～でご案内する"
+    },
+    {
+      "id": "T-092-V13-009",
+      "group": "way",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "貸し出しのお手続きは、入口から見て右側の三番窓口でお願いします。",
+      "vi": "Anh vui lòng làm thủ tục thuê đồ ở quầy số ba bên phải tính từ cửa vào ạ.",
+      "terms": [
+        "貸し出し"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～から見て右"
+    },
+    {
+      "id": "T-092-V13-010",
+      "group": "way",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "予約番号を確認してから、同じ窓口で機材をお受け取りいただけます。",
+      "vi": "Sau khi kiểm mã đặt chỗ, bên tôi sẽ giao thiết bị cho anh ngay tại quầy đó ạ.",
+      "terms": [
+        "予約番号",
+        "機材"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～てから"
+    },
+    {
+      "id": "T-092-V13-011",
+      "group": "way",
+      "role_vi": "Khách thuê phòng hoặc thiết bị",
+      "gender": "male",
+      "ja": "三番窓口が一時休止になっていましたが、今はどこで貸し出しの手続きができますか。",
+      "vi": "Quầy số ba đang tạm đóng. Bây giờ tôi làm thủ tục thuê ở đâu được ạ?",
+      "terms": [
+        "一時休止",
+        "貸し出し"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "今はどこへ～"
+    },
+    {
+      "id": "T-092-V13-012",
+      "group": "way",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "三番窓口が閉まっている間は、予約番号をお持ちの上、隣の総合窓口へお越しください。",
+      "vi": "Trong lúc quầy số ba đóng, anh mang mã đặt chỗ sang quầy tổng hợp bên cạnh giúp tôi ạ.",
+      "terms": [
+        "総合窓口",
+        "予約番号"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～へお越しください"
+    },
+    {
+      "id": "T-092-V13-013",
+      "group": "way",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "機材の受け取りは、返却の窓口ではなく、青い看板のある二番窓口です。",
+      "vi": "Anh nhận thiết bị ở quầy số hai có biển xanh, không phải quầy trả đồ ạ.",
+      "terms": [
+        "受け取り",
+        "返却",
+        "看板"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～のほうです"
+    },
+    {
+      "id": "T-092-V13-014",
+      "group": "way",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "二階でエレベーターを出たら、左側の青い看板を目印に進み、窓口で控えをお渡しください。",
+      "vi": "Ra khỏi thang máy ở tầng hai, anh đi về phía biển xanh bên trái rồi đưa phiếu ở quầy ạ.",
+      "terms": [
+        "看板",
+        "目印",
+        "控え"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～を目印に"
+    },
+    {
+      "id": "T-092-V13-015",
+      "group": "check",
+      "role_vi": "Khách thuê phòng hoặc thiết bị",
+      "gender": "male",
+      "ja": "会議室に電池式のスピーカーを持ち込んで、曲を流してもよろしいですか。",
+      "vi": "Tôi mang loa chạy pin vào phòng họp để mở nhạc được không ạ?",
+      "terms": [
+        "電池式",
+        "持ち込む"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～を持ち込んでも"
+    },
+    {
+      "id": "T-092-V13-016",
+      "group": "check",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "通常の会議室にスピーカーを持ち込めるかと、そこで音を出せるかを確認いたします。",
+      "vi": "Tôi sẽ kiểm tra xem anh có được mang loa vào phòng họp thường và bật loa trong phòng không ạ.",
+      "terms": [],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～を確認いたします"
+    },
+    {
+      "id": "T-092-V13-017",
+      "group": "check",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "担当が接客中ですので、十分後にわかった範囲で折り返してもよろしいでしょうか。",
+      "vi": "Người phụ trách đang tiếp khách. Mười phút nữa tôi gọi lại báo phần kiểm được, anh thấy được không ạ?",
+      "terms": [
+        "接客中",
+        "折り返す"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～後に折り返す"
+    },
+    {
+      "id": "T-092-V13-018",
+      "group": "check",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "スピーカーは持ち込めますが、通常の会議室の中で音を出すことはできません。",
+      "vi": "Anh có thể mang loa vào, nhưng không được bật loa trong phòng họp thường ạ.",
+      "terms": [
+        "持ち込む"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～はできるが～はできない"
+    },
+    {
+      "id": "T-092-V13-019",
+      "group": "check",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "音を出す用途でしたら、練習室の窓口で空きと利用条件をご相談いただけます。",
+      "vi": "Nếu cần dùng phòng để bật loa, anh có thể hỏi quầy phòng tập về phòng trống và điều kiện sử dụng ạ.",
+      "terms": [
+        "用途",
+        "練習室"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～なら～で相談"
+    },
+    {
+      "id": "T-092-V13-020",
+      "group": "check",
+      "role_vi": "Nhân viên hướng dẫn tại cơ sở",
+      "gender": "female",
+      "ja": "練習室の窓口には、六名様でスピーカーをお使いになると伝えてからお取り次ぎします。",
+      "vi": "Tôi sẽ báo quầy phòng tập là nhóm sáu người muốn dùng loa rồi chuyển anh sang gặp họ ạ.",
+      "terms": [
+        "練習室",
+        "取り次ぐ"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～てから"
+    }
+  ]
+}

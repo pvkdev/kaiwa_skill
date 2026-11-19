@@ -1,0 +1,357 @@
+{
+  "code": "T-060",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "08b35be296682b8b524c5eb36613f55f7be52aab600432925049adf5c8fb2037",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "contact": "Tìm đầu mối và mời mẹ cùng trao đổi",
+    "wants": "Nói khó khăn và hỏi mẹ muốn gì",
+    "trial": "Hỏi điều kiện và điều chỉnh số buổi",
+    "choice": "Đổi giờ theo lựa chọn của mẹ"
+  },
+  "items": [
+    {
+      "id": "T-060-V13-001",
+      "group": "contact",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母の買い物の手伝いや通院の付き添いについて相談したいです。",
+      "vi": "Tôi muốn hỏi về việc giúp mẹ đi mua đồ và đi cùng mẹ khi khám bệnh.",
+      "terms": [
+        "付き添い"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜について相談したい"
+    },
+    {
+      "id": "T-060-V13-002",
+      "group": "contact",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母は新宿区で一人暮らしをしていて、私は別の区に住んでいます。",
+      "vi": "Mẹ tôi sống một mình ở quận Shinjuku, còn tôi ở quận khác.",
+      "terms": [
+        "一人暮らし"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜ていて、私は"
+    },
+    {
+      "id": "T-060-V13-003",
+      "group": "contact",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母の住所を担当する地域包括支援センターの連絡先を教えていただけますか。",
+      "vi": "Chị cho tôi xin thông tin liên hệ của trung tâm hỗ trợ người cao tuổi phụ trách địa chỉ của mẹ tôi được không ạ?",
+      "terms": [
+        "地域包括支援センター"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-060-V13-004",
+      "group": "contact",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母の面談の日程が決まるまでは、買い物のことだけ先に電話で相談できますか。",
+      "vi": "Trong lúc chờ chốt ngày gặp để trao đổi về mẹ, tôi có thể gọi hỏi trước riêng việc đi mua đồ của bà không ạ?",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜が決まるまでは、先に相談"
+    },
+    {
+      "id": "T-060-V13-005",
+      "group": "contact",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母も相談に参加したいので、本人が話せる時間を取っていただけますか。",
+      "vi": "Mẹ tôi cũng muốn tham gia buổi tư vấn, chị có thể dành thời gian để chính bà trình bày được không ạ?",
+      "terms": [
+        "本人"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜ので、話せる時間を取っていただけますか"
+    },
+    {
+      "id": "T-060-V13-006",
+      "group": "wants",
+      "role_vi": "Con gái nói với mẹ",
+      "gender": "female",
+      "ja": "お母さん、買い物でこれからも自分で続けたいことを教えてくれる？",
+      "vi": "Mẹ ơi, chuyện đi mua đồ có phần nào mẹ vẫn muốn tự làm thì nói cho con biết nhé?",
+      "terms": [],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜ことを教えてくれる"
+    },
+    {
+      "id": "T-060-V13-007",
+      "group": "wants",
+      "role_vi": "Người mẹ cần hỗ trợ",
+      "gender": "female",
+      "ja": "近所の店には自分で行きたいけど、重い物を運ぶところだけ手伝ってほしいの。",
+      "vi": "Mẹ muốn tự đi cửa hàng gần nhà, mẹ chỉ muốn có người giúp mang đồ nặng thôi con ạ.",
+      "terms": [
+        "運ぶ"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "〜たいけど、〜だけ手伝ってほしい"
+    },
+    {
+      "id": "T-060-V13-008",
+      "group": "wants",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母は近所なら歩けますが、先週お米を買った帰りは、疲れて途中で二回休みました。",
+      "vi": "Mẹ tôi đi bộ được trong khu gần nhà, nhưng tuần trước lúc mua gạo về, mẹ mệt nên dừng nghỉ hai lần dọc đường.",
+      "terms": [
+        "疲れる"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜なら〜ますが、〜は"
+    },
+    {
+      "id": "T-060-V13-009",
+      "group": "wants",
+      "role_vi": "Con gái nói với mẹ",
+      "gender": "female",
+      "ja": "お母さんが自分でお店に行きたいなら、重い物を運ぶところだけ手伝ってもらえるか聞いてみようか。",
+      "vi": "Nếu mẹ muốn tự đi tiệm, mẹ con mình hỏi xem có ai giúp riêng phần mang đồ nặng được không nhé?",
+      "terms": [
+        "運ぶ"
+      ],
+      "scenes": [
+        "S006",
+        "S008",
+        "S009"
+      ],
+      "pattern": "〜たいなら、〜だけ聞いてみようか"
+    },
+    {
+      "id": "T-060-V13-010",
+      "group": "wants",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母が買った重い物を店から配達してもらえるか、配達料も含めて確認したいです。",
+      "vi": "Tôi muốn hỏi cửa hàng có giao đồ nặng mẹ tôi mua hay không và nếu có thì phí là bao nhiêu.",
+      "terms": [
+        "配達"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜か、〜も含めて確認したい"
+    },
+    {
+      "id": "T-060-V13-011",
+      "group": "trial",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "訪問介護を検討したいのですが、介護保険で使えるサービスの利用条件を教えていただけますか。",
+      "vi": "Tôi muốn cân nhắc dịch vụ chăm sóc tại nhà, chị cho tôi biết điều kiện sử dụng dịch vụ theo bảo hiểm chăm sóc được không ạ?",
+      "terms": [
+        "訪問介護",
+        "介護保険",
+        "利用条件"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-060-V13-012",
+      "group": "trial",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "今日来るはずのヘルパーさんがお休みだと聞いたのですが、代わりの方に来ていただけますか。",
+      "vi": "Tôi nghe người hỗ trợ lẽ ra đến hôm nay xin nghỉ, bên mình có thể cử người khác đến thay được không ạ?",
+      "terms": [
+        "ヘルパー"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜と聞いたのですが、来ていただけますか"
+    },
+    {
+      "id": "T-060-V13-013",
+      "group": "trial",
+      "role_vi": "Chuyên viên điều phối chăm sóc",
+      "gender": "female",
+      "ja": "代わりのヘルパーが見つからなくても、正午までに、事業所に確認できたことをお電話でお伝えします。",
+      "vi": "Dù chưa tìm được người hỗ trợ thay, chậm nhất trưa nay tôi sẽ gọi báo chị những gì đã xác nhận với bên cung cấp dịch vụ.",
+      "terms": [
+        "ヘルパー",
+        "事業所"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜なくても、〜までにお伝えします"
+    },
+    {
+      "id": "T-060-V13-014",
+      "group": "trial",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母は支援が週三回だと多いと感じているので、本人の希望に合わせて週一回から試せますか。",
+      "vi": "Mẹ tôi thấy ba buổi hỗ trợ mỗi tuần là nhiều, mình có thể thử một buổi mỗi tuần theo ý mẹ tôi được không ạ?",
+      "terms": [
+        "本人"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜と感じているので、〜から試せる"
+    },
+    {
+      "id": "T-060-V13-015",
+      "group": "trial",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "母が買い物の帰りに前より疲れて休むようになったので、ケアプランを見直していただけますか。",
+      "vi": "Dạo này lúc đi mua đồ về mẹ tôi mệt hơn trước và phải dừng nghỉ, chị xem lại kế hoạch chăm sóc giúp tôi được không ạ?",
+      "terms": [
+        "疲れる",
+        "ケアプラン",
+        "見直す"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜ようになったので、見直していただけますか"
+    },
+    {
+      "id": "T-060-V13-016",
+      "group": "trial",
+      "role_vi": "Con gái bàn với anh trai",
+      "gender": "female",
+      "ja": "母の買い物は第二木曜なら私が手伝えるけど、お兄ちゃんはほかの木曜日に行けそう？",
+      "vi": "Thứ Năm thứ hai trong tháng em giúp mẹ đi mua đồ được, những thứ Năm khác anh có đi được không?",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜なら〜けど、行けそう"
+    },
+    {
+      "id": "T-060-V13-017",
+      "group": "trial",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "木曜の支援を二回試してから、母も交えてケアプランを見直せますか。",
+      "vi": "Mình thử hai buổi hỗ trợ vào thứ Năm rồi cùng mẹ tôi xem lại kế hoạch chăm sóc được không ạ?",
+      "terms": [
+        "ケアプラン",
+        "見直す"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜てから、見直せますか"
+    },
+    {
+      "id": "T-060-V13-018",
+      "group": "choice",
+      "role_vi": "Con gái nói với mẹ",
+      "gender": "female",
+      "ja": "朝にヘルパーさんに来てもらうのは気が進まないって言ってたけど、何が気になるの？",
+      "vi": "Mẹ bảo mẹ ngại để người hỗ trợ đến buổi sáng, điều gì làm mẹ thấy không thoải mái ạ?",
+      "terms": [
+        "ヘルパー",
+        "気が進まない"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜って言ってたけど、何が気になる"
+    },
+    {
+      "id": "T-060-V13-019",
+      "group": "choice",
+      "role_vi": "Người mẹ cần hỗ trợ",
+      "gender": "female",
+      "ja": "木曜日の手伝いは続けてほしいけど、朝は慌てるから午後に変えてほしいの。",
+      "vi": "Mẹ vẫn muốn có người giúp vào thứ Năm, nhưng buổi sáng mẹ phải vội nên muốn chuyển sang chiều.",
+      "terms": [
+        "慌てる"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "〜てほしいけど、午後に変えてほしい"
+    },
+    {
+      "id": "T-060-V13-020",
+      "group": "choice",
+      "role_vi": "Con gái nói với mẹ",
+      "gender": "female",
+      "ja": "木曜の午後に前と同じヘルパーさんに来てもらうのと、お店の配達だけ頼むのとでは、どっちがいい？",
+      "vi": "Chiều thứ Năm nhờ người hỗ trợ lần trước đến, hoặc chỉ nhờ cửa hàng giao đồ, mẹ thích cách nào hơn ạ?",
+      "terms": [
+        "ヘルパー",
+        "配達"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜のと〜のとでは、どっちがいい"
+    },
+    {
+      "id": "T-060-V13-021",
+      "group": "choice",
+      "role_vi": "Con gái nói với mẹ",
+      "gender": "female",
+      "ja": "先週ヘルパーさんが午後に来たとき、朝より落ち着いて過ごせたか教えてくれる？",
+      "vi": "Mẹ cho con biết chiều tuần trước người hỗ trợ đến thì mẹ có thấy thong thả hơn so với buổi sáng không ạ?",
+      "terms": [
+        "ヘルパー"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜か、教えてくれる"
+    },
+    {
+      "id": "T-060-V13-022",
+      "group": "choice",
+      "role_vi": "Con gái hỏi về hỗ trợ chăm sóc mẹ",
+      "gender": "female",
+      "ja": "訪問するヘルパーさんが交代する場合は、前の日に母本人へ名前を知らせていただけますか。",
+      "vi": "Nếu đổi người đến hỗ trợ, chị báo tên trực tiếp cho mẹ tôi từ hôm trước được không ạ?",
+      "terms": [
+        "ヘルパー",
+        "交代する",
+        "本人"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜場合は、知らせていただけますか"
+    }
+  ]
+}

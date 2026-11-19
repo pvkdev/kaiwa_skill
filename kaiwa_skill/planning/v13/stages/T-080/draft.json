@@ -1,0 +1,355 @@
+{
+  "code": "T-080",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "4cc22aa1819ebd97f4debfb8dbd4c798a6119e292bc9db850dc2718fab87126b",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "goal": "Hỏi người dùng, hạn và loại bản cần làm",
+    "scope": "Chốt yêu cầu bắt buộc và ưu tiên",
+    "change": "Làm rõ thay đổi khi đã bắt tay",
+    "accept": "Chốt tiêu chí và người nghiệm thu"
+  },
+  "items": [
+    {
+      "id": "T-080-V13-001",
+      "group": "goal",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "最終版を使うのはどなたで、いつ必要か教えていただけますか。",
+      "vi": "Chị cho em biết ai sẽ dùng bản cuối và cần bản đó khi nào được không ạ?",
+      "terms": [
+        "最終版"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-080-V13-002",
+      "group": "goal",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "取引先への説明に使うなら、確認用は何時までに営業へ渡せばよいですか。",
+      "vi": "Nếu dùng để trình bày với đối tác thì em cần chuyển bản xem thử cho bên kinh doanh muộn nhất mấy giờ ạ?",
+      "terms": [
+        "取引先",
+        "確認用"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～までに渡せば"
+    },
+    {
+      "id": "T-080-V13-003",
+      "group": "goal",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "今回は本番環境に入れるところまで必要ですか、それとも見せるためのデモでよいですか。",
+      "vi": "Lần này em cần đưa lên môi trường dùng chính thức hay chỉ cần bản để trình diễn ạ?",
+      "terms": [
+        "本番環境",
+        "デモ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～でよいですか"
+    },
+    {
+      "id": "T-080-V13-004",
+      "group": "goal",
+      "role_vi": "Người đặt yêu cầu",
+      "gender": "female",
+      "ja": "デモは、営業の担当がサンプルデータで一通り操作できれば十分ですよ。",
+      "vi": "Bản demo chỉ cần người phụ trách bên kinh doanh thao tác được từ đầu đến cuối với dữ liệu mẫu là đủ nhé.",
+      "terms": [
+        "デモ",
+        "操作",
+        "サンプルデータ"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ば十分です"
+    },
+    {
+      "id": "T-080-V13-005",
+      "group": "scope",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "依頼された機能のうち、今回のデモで必須なのはどれですか。",
+      "vi": "Trong các chức năng được yêu cầu, bản demo lần này bắt buộc phải có mục nào ạ?",
+      "terms": [
+        "必須"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "どれが必須か"
+    },
+    {
+      "id": "T-080-V13-006",
+      "group": "scope",
+      "role_vi": "Người đặt yêu cầu",
+      "gender": "female",
+      "ja": "今回は送信と一覧での確認までを範囲にして、ファイル出力は次に回しましょう。",
+      "vi": "Lần này mình làm tới bước gửi và kiểm trong danh sách, phần xuất tệp để đợt sau nhé.",
+      "terms": [
+        "範囲"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "まず～だけ"
+    },
+    {
+      "id": "T-080-V13-007",
+      "group": "scope",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "送信後に受付番号で一覧から探せて、「受付済み」と表示されればよいという理解で合っていますか。",
+      "vi": "Em hiểu là sau khi gửi, cần dùng mã tiếp nhận để tìm được yêu cầu trong danh sách và thấy trạng thái “Đã tiếp nhận”, đúng không ạ?",
+      "terms": [
+        "受付番号",
+        "受付済み"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "T-080-V13-008",
+      "group": "scope",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "今日は三時間しかないので、デモと質問の資料の両方を一人では仕上げられません。",
+      "vi": "Hôm nay chỉ còn ba tiếng nên một mình em không làm xong được cả demo lẫn tài liệu câu hỏi ạ.",
+      "terms": [
+        "デモ",
+        "仕上げる"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～しか仕上げられない"
+    },
+    {
+      "id": "T-080-V13-009",
+      "group": "scope",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "今日はデモを先にお渡ししますが、質問の資料は明日の何時までが期限ですか。",
+      "vi": "Hôm nay em sẽ chuyển bản demo trước, còn tài liệu câu hỏi thì hạn là mấy giờ ngày mai ạ?",
+      "terms": [
+        "期限"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "何時までに必要"
+    },
+    {
+      "id": "T-080-V13-010",
+      "group": "scope",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "どうしても今日中に両方必要でしたら、質問への回答案を分担できる方を探していただけますか。",
+      "vi": "Nếu hôm nay nhất định cần cả hai, chị tìm giúp em người có thể chia sẻ phần chuẩn bị câu trả lời nháp được không ạ?",
+      "terms": [
+        "分担する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-080-V13-011",
+      "group": "scope",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "営業から分担の返事が来るまでは、デモの準備を先に進めます。",
+      "vi": "Trong lúc đợi bên kinh doanh phản hồi về việc phân công, em sẽ làm trước bản demo ạ.",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～までは先に"
+    },
+    {
+      "id": "T-080-V13-012",
+      "group": "change",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "送信画面はそのまま使えますが、一覧には「承認待ち」が出るように変更が必要です。",
+      "vi": "Màn hình gửi vẫn dùng được, nhưng cần sửa danh sách để hiện trạng thái “Đang chờ duyệt” ạ.",
+      "terms": [
+        "承認待ち"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～が使えるが～が必要"
+    },
+    {
+      "id": "T-080-V13-013",
+      "group": "change",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "社内で試す時間に間に合うよう、まず「承認待ち」の表示を作って、承認する人の操作はあとに回せませんか。",
+      "vi": "Để kịp buổi thử nội bộ, mình làm trước phần hiện “Đang chờ duyệt”, còn thao tác của người duyệt để sau được không ạ?",
+      "terms": [
+        "承認待ち",
+        "操作"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～は後で"
+    },
+    {
+      "id": "T-080-V13-014",
+      "group": "change",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "三時に完成というのは、確認用の版が操作できればよいという理解で合っていますか。",
+      "vi": "Em hiểu mốc hoàn thành lúc ba giờ chỉ cần bản có thể thao tác để kiểm, đúng không ạ?",
+      "terms": [
+        "確認用"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "T-080-V13-015",
+      "group": "change",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "試すときは送信と一覧の画面をお見せして、まだ作っていない承認側の操作だけ口頭で説明します。",
+      "vi": "Trong buổi thử em sẽ cho xem màn hình gửi và danh sách, riêng thao tác bên người duyệt chưa làm thì em giải thích bằng lời ạ.",
+      "terms": [
+        "口頭で",
+        "操作"
+      ],
+      "scenes": [
+        "S010",
+        "S012"
+      ],
+      "pattern": "～だけ口頭で"
+    },
+    {
+      "id": "T-080-V13-016",
+      "group": "change",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "社内で試した後に、承認側の操作を作るのにかかる時間もお伝えします。",
+      "vi": "Sau buổi thử nội bộ, em sẽ báo cả thời gian cần để làm thao tác cho người duyệt ạ.",
+      "terms": [
+        "操作"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～した後で必要な時間"
+    },
+    {
+      "id": "T-080-V13-017",
+      "group": "accept",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "営業とお客様にデモを見てもらった後、条件を満たしたかはどなたが判断するのでしょうか。",
+      "vi": "Sau khi bên kinh doanh và khách xem demo, ai sẽ quyết định bản này đã đạt các tiêu chí chưa ạ?",
+      "terms": [
+        "判断する",
+        "条件を満たす"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "誰が判断するか"
+    },
+    {
+      "id": "T-080-V13-018",
+      "group": "accept",
+      "role_vi": "Người duyệt bản thử",
+      "gender": "female",
+      "ja": "お客様が案内なしで三分以内に受付番号を見つけられるか確認します。",
+      "vi": "Chị sẽ kiểm xem khách có tự tìm được mã tiếp nhận trong vòng ba phút mà không cần ai chỉ không.",
+      "terms": [
+        "受付番号"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～かどうかを見る"
+    },
+    {
+      "id": "T-080-V13-019",
+      "group": "accept",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "試した後は、番号を見つけるのにかかった時間と、状態をどう読み取ったかを分けて記録します。",
+      "vi": "Thử xong, em sẽ ghi riêng thời gian họ mất để tìm mã và cách họ hiểu trạng thái hiển thị ạ.",
+      "terms": [
+        "読み取る"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "分けて記録する"
+    },
+    {
+      "id": "T-080-V13-020",
+      "group": "accept",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "二人とも送信はできましたが、一人は一覧を開くのに手助けが必要だったので、ほかにも満たせていない条件があるか確認したいです。",
+      "vi": "Cả hai đều gửi được nhưng một người cần được chỉ cách mở danh sách. Em muốn kiểm xem còn tiêu chí nào chưa đạt nữa không ạ.",
+      "terms": [
+        "条件を満たす"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "どの条件が未達か"
+    },
+    {
+      "id": "T-080-V13-021",
+      "group": "accept",
+      "role_vi": "Nhân viên được giao thực hiện",
+      "gender": "male",
+      "ja": "水曜にお見せする確認用は、一覧を開くボタンを追加して状態の説明を直した版でよいですか。",
+      "vi": "Bản đưa chị kiểm thứ Tư là bản đã thêm nút mở danh sách và sửa phần giải thích trạng thái, đúng không ạ?",
+      "terms": [
+        "確認用"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～でよいですか"
+    },
+    {
+      "id": "T-080-V13-022",
+      "group": "accept",
+      "role_vi": "Người duyệt bản thử",
+      "gender": "female",
+      "ja": "同じ条件でもう一度試してから、正式版として使ってよいか判断しましょう。",
+      "vi": "Mình thử lại với cùng điều kiện rồi mới quyết định có dùng làm bản chính thức được không nhé.",
+      "terms": [
+        "判断する",
+        "正式版"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～てから判断する"
+    }
+  ]
+}

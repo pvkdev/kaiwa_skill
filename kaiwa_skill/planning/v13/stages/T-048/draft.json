@@ -1,0 +1,352 @@
+{
+  "code": "T-048",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "5a0b03a18f90204a378513706df1c49c1c214c964d8b34d2cc2108ee8135dcbd",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "schedule": "Đặt lịch và hỏi cách chuẩn bị",
+    "station": "Hỏi thứ tự các bước khám",
+    "results": "Trao đổi riêng về kết quả",
+    "work": "Báo thời gian vắng và đổi lịch làm"
+  },
+  "items": [
+    {
+      "id": "T-048-V13-001",
+      "group": "schedule",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "会社の定期健康診断を受けたいのですが、今月はまだ予約できますか。",
+      "vi": "Tôi muốn khám sức khỏe định kỳ theo lịch công ty, tháng này còn đặt được lịch không ạ?",
+      "terms": [
+        "定期健康診断"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜たいのですが、まだ〜できますか"
+    },
+    {
+      "id": "T-048-V13-002",
+      "group": "schedule",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "今回の検査項目だと、何時から食事を控えればいいですか。",
+      "vi": "Với các xét nghiệm lần này, tôi cần nhịn ăn từ mấy giờ ạ?",
+      "terms": [
+        "検査項目"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "何時から〜すればいい"
+    },
+    {
+      "id": "T-048-V13-003",
+      "group": "schedule",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "健診の当日に常用薬を飲んでもいいか、医療担当の方に確認していただけますか。",
+      "vi": "Anh/chị hỏi giúp nhân viên y tế xem hôm đi khám sức khỏe tôi có thể uống thuốc vẫn dùng hằng ngày không ạ?",
+      "terms": [
+        "常用薬"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜か、確認していただけますか"
+    },
+    {
+      "id": "T-048-V13-004",
+      "group": "schedule",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "午前中は都合がつかなくなったのですが、午後枠に変更できますか。",
+      "vi": "Buổi sáng tôi không thu xếp được nữa, tôi đổi sang lịch buổi chiều được không ạ?",
+      "terms": [
+        "都合がつく",
+        "午後枠"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜なくなったのですが、変更できますか"
+    },
+    {
+      "id": "T-048-V13-005",
+      "group": "schedule",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "健診の日が会社の紙と受診案内で違うので、確定した予約日を教えていただけますか。",
+      "vi": "Ngày khám trên giấy công ty và tờ hướng dẫn đi khám không khớp, anh/chị cho tôi biết ngày hẹn đã chốt được không ạ?",
+      "terms": [
+        "受診案内"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜ので、教えていただけますか"
+    },
+    {
+      "id": "T-048-V13-006",
+      "group": "schedule",
+      "role_vi": "Nhân viên trung tâm khám sức khỏe",
+      "gender": "male",
+      "ja": "健診の時間が変わったら、登録されている携帯番号にお電話します。",
+      "vi": "Nếu giờ khám sức khỏe thay đổi, trung tâm sẽ gọi vào số di động anh/chị đã đăng ký.",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜が変わったら、連絡します"
+    },
+    {
+      "id": "T-048-V13-007",
+      "group": "station",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "九時から健診の予約があるのですが、問診票は受付で出せばいいですか。",
+      "vi": "Tôi có lịch khám sức khỏe lúc 9 giờ, tôi nộp phiếu hỏi trước khám ở quầy tiếp nhận phải không ạ?",
+      "terms": [
+        "問診票",
+        "受付"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜は、〜すればいい"
+    },
+    {
+      "id": "T-048-V13-008",
+      "group": "station",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "採血が終わったのですが、次の計測室はどこにありますか。",
+      "vi": "Tôi đã lấy máu xong, phòng đo chỉ số tiếp theo ở đâu ạ?",
+      "terms": [
+        "採血",
+        "計測室"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜が終わったのですが、次は"
+    },
+    {
+      "id": "T-048-V13-009",
+      "group": "station",
+      "role_vi": "Nhân viên trung tâm khám sức khỏe",
+      "gender": "male",
+      "ja": "計測が終わったら、番号札を持って診察室の前でお待ちください。",
+      "vi": "Khi đo xong, anh/chị cầm thẻ số ra đợi trước phòng bác sĩ nhé.",
+      "terms": [
+        "番号札",
+        "診察室"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜が終わったら、〜てください"
+    },
+    {
+      "id": "T-048-V13-010",
+      "group": "station",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "今の体調について、検査が始まる前に看護師さんと個別にお話しできますか。",
+      "vi": "Trước khi bắt đầu xét nghiệm, tôi có thể trao đổi riêng với điều dưỡng về tình trạng sức khỏe hiện tại không ạ?",
+      "terms": [
+        "体調",
+        "看護師"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜前に、個別に〜できますか"
+    },
+    {
+      "id": "T-048-V13-011",
+      "group": "station",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "私は二十三番ですが、今呼ばれたのは三十二番で合っていますか。",
+      "vi": "Tôi cầm số 23, số vừa gọi là 32 đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜ですが、〜で合っていますか"
+    },
+    {
+      "id": "T-048-V13-012",
+      "group": "station",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "健診の診察が午後に変わった場合、午前中に済んだ計測もやり直す必要がありますか。",
+      "vi": "Nếu phần bác sĩ khám chuyển sang buổi chiều, tôi có cần làm lại phần đo chỉ số đã xong buổi sáng không ạ?",
+      "terms": [
+        "やり直す"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜場合、〜必要がありますか"
+    },
+    {
+      "id": "T-048-V13-013",
+      "group": "results",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "健診の結果表に「要相談」とあるのですが、まず何を確認すればいいですか。",
+      "vi": "Phiếu kết quả khám sức khỏe ghi “cần trao đổi”, trước hết tôi nên kiểm tra điều gì ạ?",
+      "terms": [
+        "結果表"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜とあるのですが、まず何を"
+    },
+    {
+      "id": "T-048-V13-014",
+      "group": "results",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "血液検査の数値が前回と違うのですが、再検査が必要か教えていただけますか。",
+      "vi": "Chỉ số xét nghiệm máu khác lần trước, bác sĩ cho tôi biết có cần xét nghiệm lại không ạ?",
+      "terms": [
+        "血液検査",
+        "数値",
+        "再検査"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "〜か教えていただけますか"
+    },
+    {
+      "id": "T-048-V13-015",
+      "group": "results",
+      "role_vi": "Bác sĩ trao đổi kết quả",
+      "gender": "male",
+      "ja": "前回の結果と比べたいので、以前の結果表が手元にあれば次の診察にお持ちください。",
+      "vi": "Tôi muốn so sánh với kết quả lần trước, nếu chị còn giữ phiếu kết quả cũ thì mang theo buổi khám tới nhé.",
+      "terms": [
+        "結果表"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜が手元にあれば、〜をお持ちください"
+    },
+    {
+      "id": "T-048-V13-016",
+      "group": "results",
+      "role_vi": "Người đi khám sức khỏe định kỳ",
+      "gender": "female",
+      "ja": "健診の結果について、担当の先生に直接聞きたいのですが、結果説明の予約枠はありますか。",
+      "vi": "Tôi muốn hỏi trực tiếp bác sĩ phụ trách về kết quả khám sức khỏe, có lịch hẹn nghe giải thích kết quả không ạ?",
+      "terms": [
+        "結果説明",
+        "予約枠"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "〜たいのですが、〜はありますか"
+    },
+    {
+      "id": "T-048-V13-017",
+      "group": "results",
+      "role_vi": "Nhân viên trung tâm khám sức khỏe",
+      "gender": "male",
+      "ja": "健診の数値については担当の医師がご説明しますので、聞きたいことを当日お伝えください。",
+      "vi": "Bác sĩ phụ trách sẽ giải thích các chỉ số trong kết quả khám, hôm đó anh/chị trao đổi những điều muốn hỏi với bác sĩ nhé.",
+      "terms": [
+        "数値"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜しますので、〜てください"
+    },
+    {
+      "id": "T-048-V13-018",
+      "group": "work",
+      "role_vi": "Nhân viên báo lịch với quản lý",
+      "gender": "female",
+      "ja": "健診の結果について医師と話す日が決まったら、半休を取ってもよろしいでしょうか。",
+      "vi": "Khi chốt được lịch trao đổi với bác sĩ về kết quả khám, tôi xin nghỉ nửa ngày được không ạ?",
+      "terms": [
+        "半休"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜てもよろしいでしょうか"
+    },
+    {
+      "id": "T-048-V13-019",
+      "group": "work",
+      "role_vi": "Nhân viên báo lịch với quản lý",
+      "gender": "female",
+      "ja": "健診の追加結果がまだ届かないので、勤務予定を変える必要があるかは金曜日にお知らせします。",
+      "vi": "Kết quả khám bổ sung vẫn chưa đến, thứ Sáu tôi sẽ báo anh/chị có cần đổi lịch làm hay không.",
+      "terms": [
+        "勤務予定"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜ので、〜かは〜にお知らせ"
+    },
+    {
+      "id": "T-048-V13-020",
+      "group": "work",
+      "role_vi": "Nhân viên báo lịch với quản lý",
+      "gender": "female",
+      "ja": "火曜日の午後に健診結果の説明を受けるので、一時から四時まで席を外してもよろしいでしょうか。",
+      "vi": "Chiều thứ Ba tôi có lịch nghe giải thích kết quả khám sức khỏe, tôi xin vắng từ 1 đến 4 giờ được không ạ?",
+      "terms": [
+        "席を外す"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜てもよろしいでしょうか"
+    },
+    {
+      "id": "T-048-V13-021",
+      "group": "work",
+      "role_vi": "Nhân viên báo lịch với quản lý",
+      "gender": "female",
+      "ja": "健診の結果はまず医師に相談したいので、今は席を外す時間だけお伝えしてもいいですか。",
+      "vi": "Về kết quả khám, tôi muốn trao đổi với bác sĩ trước, nên giờ tôi chỉ báo khung giờ xin vắng có được không ạ?",
+      "terms": [
+        "席を外す"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜たいので、〜だけ伝えてもいい"
+    },
+    {
+      "id": "T-048-V13-022",
+      "group": "work",
+      "role_vi": "Nhân viên báo lịch với quản lý",
+      "gender": "female",
+      "ja": "医師との面談が木曜の午後に変わったので、水曜は通常どおり勤務して、木曜だけ席を外してもよろしいでしょうか。",
+      "vi": "Lịch trao đổi với bác sĩ đã đổi sang chiều thứ Năm, tôi làm việc bình thường vào thứ Tư và chỉ xin vắng chiều thứ Năm, như vậy được không ạ?",
+      "terms": [
+        "席を外す"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜てもよろしいでしょうか"
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "code": "T-049",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "d66fb497162d0a798ffd7d41744550f0b56f4f644fc8d750bb5eee9a1b159503",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "intake": "Đưa đơn và nói thuốc đang dùng",
+    "directions": "Hỏi và nhắc lại cách dùng",
+    "supply": "Báo thuốc sắp hết hoặc chưa nhận đủ",
+    "recheck": "Báo triệu chứng và xác nhận chỉ dẫn mới"
+  },
+  "items": [
+    {
+      "id": "T-049-V13-001",
+      "group": "intake",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "今日の処方箋とお薬手帳を持ってきました。",
+      "vi": "Tôi mang theo đơn thuốc hôm nay và sổ theo dõi thuốc ạ.",
+      "terms": [
+        "処方箋",
+        "お薬手帳"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜を持ってきました"
+    },
+    {
+      "id": "T-049-V13-002",
+      "group": "intake",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "別の病院でもらった薬も服用しているのですが、飲み合わせを確認していただけますか。",
+      "vi": "Tôi cũng đang uống thuốc được kê ở bệnh viện khác, anh/chị kiểm tra giúp các thuốc có dùng cùng nhau được không ạ?",
+      "terms": [
+        "服用する",
+        "飲み合わせ"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "〜を確認していただけますか"
+    },
+    {
+      "id": "T-049-V13-003",
+      "group": "intake",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "薬の名前の読み方に自信がないので、箱とお薬手帳を見ていただけますか。",
+      "vi": "Tôi không chắc cách đọc tên thuốc, anh/chị xem giúp hộp thuốc và sổ theo dõi thuốc được không ạ?",
+      "terms": [
+        "お薬手帳"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜ので、見ていただけますか"
+    },
+    {
+      "id": "T-049-V13-004",
+      "group": "intake",
+      "role_vi": "Dược sĩ tại nhà thuốc",
+      "gender": "male",
+      "ja": "似た名前のお薬でも、有効成分と用量が同じか処方箋で照合します。",
+      "vi": "Dù tên thuốc nghe giống nhau, tôi sẽ đối chiếu đơn xem hoạt chất và liều dùng có giống nhau không.",
+      "terms": [
+        "有効成分",
+        "用量",
+        "処方箋",
+        "照合する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜でも、〜か照合する"
+    },
+    {
+      "id": "T-049-V13-005",
+      "group": "intake",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "お薬手帳に載っていない薬があるので、家で薬袋を確認してから名前をお伝えします。",
+      "vi": "Tôi còn một loại thuốc chưa ghi trong sổ, tôi sẽ xem lại túi thuốc ở nhà rồi báo tên cho anh/chị.",
+      "terms": [
+        "お薬手帳",
+        "薬袋"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜を確認してから、お伝えします"
+    },
+    {
+      "id": "T-049-V13-006",
+      "group": "directions",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "薬袋に一回一錠とあるのですが、一日に何回飲めばいいですか。",
+      "vi": "Trên túi ghi mỗi lần một viên, vậy một ngày tôi cần uống mấy lần ạ?",
+      "terms": [
+        "薬袋",
+        "錠"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜とあるのですが、何回〜すればいい"
+    },
+    {
+      "id": "T-049-V13-007",
+      "group": "directions",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "前から飲んでいる薬は食前で、新しい薬は食後に飲むという理解で合っていますか。",
+      "vi": "Tôi hiểu là thuốc dùng từ trước uống trước bữa ăn, còn thuốc mới uống sau bữa ăn, đúng không ạ?",
+      "terms": [
+        "食前",
+        "食後"
+      ],
+      "scenes": [
+        "S008",
+        "S009"
+      ],
+      "pattern": "〜という理解で合っていますか"
+    },
+    {
+      "id": "T-049-V13-008",
+      "group": "directions",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "朝食が取れない日は、食後と書いてある薬をいつ飲めばいいですか。",
+      "vi": "Hôm nào tôi không ăn sáng được, tôi nên uống thuốc ghi “sau bữa ăn” vào lúc nào ạ?",
+      "terms": [
+        "食後"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜日は、いつ〜すればいい"
+    },
+    {
+      "id": "T-049-V13-009",
+      "group": "directions",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "処方医からは夜と聞いた気がしますが、薬袋には朝とあるので、正しい用法を確認していただけますか。",
+      "vi": "Tôi nhớ hình như bác sĩ kê đơn nói uống buổi tối, nhưng túi thuốc ghi buổi sáng, anh/chị kiểm tra giúp cách dùng đúng được không ạ?",
+      "terms": [
+        "処方医",
+        "薬袋",
+        "用法"
+      ],
+      "scenes": [
+        "S007",
+        "S016"
+      ],
+      "pattern": "〜を確認していただけますか"
+    },
+    {
+      "id": "T-049-V13-010",
+      "group": "directions",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "家で薬の飲み方が分からなくなったときのために、時間外の連絡先も教えていただけますか。",
+      "vi": "Phòng khi về nhà tôi không rõ cách uống thuốc, anh/chị cho tôi cả số liên hệ ngoài giờ được không ạ?",
+      "terms": [
+        "時間外"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜ときのために、〜も教えて"
+    },
+    {
+      "id": "T-049-V13-011",
+      "group": "supply",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "この処方箋の薬で、今日受け取れる分と入荷待ちの分を教えていただけますか。",
+      "vi": "Trong đơn này, anh/chị cho tôi biết thuốc nào nhận được hôm nay và thuốc nào còn chờ về được không ạ?",
+      "terms": [
+        "処方箋",
+        "入荷待ち"
+      ],
+      "scenes": [
+        "S005",
+        "S018"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-049-V13-012",
+      "group": "supply",
+      "role_vi": "Dược sĩ tại nhà thuốc",
+      "gender": "male",
+      "ja": "在庫を確認してから、足りないお薬をいつお渡しできるかお伝えします。",
+      "vi": "Tôi sẽ kiểm tra kho rồi báo anh/chị khi nào nhận được thuốc còn thiếu.",
+      "terms": [
+        "在庫"
+      ],
+      "scenes": [
+        "S005",
+        "S012"
+      ],
+      "pattern": "〜を確認してから、お伝えします"
+    },
+    {
+      "id": "T-049-V13-013",
+      "group": "supply",
+      "role_vi": "Người gọi phòng khám về đơn thuốc",
+      "gender": "female",
+      "ja": "いつもの薬があと三日分しかなく、再診は来週なのですが、診察を早められますか。",
+      "vi": "Thuốc tôi vẫn uống chỉ còn đủ ba ngày mà tuần sau mới tái khám, phòng khám có thể cho tôi khám sớm hơn được không ạ?",
+      "terms": [
+        "再診"
+      ],
+      "scenes": [
+        "S011",
+        "S014"
+      ],
+      "pattern": "〜しかなく、〜を早められますか"
+    },
+    {
+      "id": "T-049-V13-014",
+      "group": "supply",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "今日中に薬がそろわない場合、別の薬局で受け取れるか確認していただけますか。",
+      "vi": "Nếu hôm nay không nhận đủ thuốc được, anh/chị kiểm tra giúp xem tôi có thể nhận ở nhà thuốc khác không ạ?",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜か確認していただけますか"
+    },
+    {
+      "id": "T-049-V13-015",
+      "group": "supply",
+      "role_vi": "Dược sĩ tại nhà thuốc",
+      "gender": "male",
+      "ja": "在庫がなくてお渡しできなかったお薬は、入荷したらこちらからお電話します。",
+      "vi": "Thuốc còn thiếu hàng chưa giao được, khi có hàng chúng tôi sẽ gọi báo anh/chị.",
+      "terms": [
+        "在庫"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "入荷したら、お電話します"
+    },
+    {
+      "id": "T-049-V13-016",
+      "group": "recheck",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "薬を飲み始めてから腕に発疹が出たのですが、薬と関係があるか見ていただけますか。",
+      "vi": "Từ khi bắt đầu uống thuốc, tay tôi nổi ban, anh/chị kiểm tra giúp xem có liên quan đến thuốc không ạ?",
+      "terms": [
+        "発疹"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜てから〜たのですが、〜か見て"
+    },
+    {
+      "id": "T-049-V13-017",
+      "group": "recheck",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "腕の発疹が気になるので、次に薬を飲む前にどうすればいいか処方医に確認していただけますか。",
+      "vi": "Tôi lo về chỗ nổi ban trên tay, anh/chị hỏi giúp bác sĩ kê đơn xem tôi nên làm gì trước lần uống thuốc tiếp theo được không ạ?",
+      "terms": [
+        "発疹",
+        "処方医"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜か確認していただけますか"
+    },
+    {
+      "id": "T-049-V13-018",
+      "group": "recheck",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "再診について、処方医から明日の午後に折り返しがあるそうですが、新しい処方箋はまだ出ていません。",
+      "vi": "Về lịch tái khám, tôi được báo là bác sĩ kê đơn sẽ gọi lại chiều mai, hiện vẫn chưa có đơn mới.",
+      "terms": [
+        "再診",
+        "処方医",
+        "折り返し",
+        "処方箋"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜があるそうですが、まだ"
+    },
+    {
+      "id": "T-049-V13-019",
+      "group": "recheck",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "前回と今回で薬を飲む時間が違うので、処方箋を見比べて変更があったか確認していただけますか。",
+      "vi": "Giờ uống thuốc lần này khác lần trước, anh/chị so hai đơn giúp xem bác sĩ có đổi giờ uống không ạ?",
+      "terms": [
+        "処方箋",
+        "見比べる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜を確認していただけますか"
+    },
+    {
+      "id": "T-049-V13-020",
+      "group": "recheck",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "薬の用法を先生に確認していただいている間、いったん外に出てもいいですか。",
+      "vi": "Trong lúc anh/chị hỏi bác sĩ về cách dùng thuốc, tôi ra ngoài một lát được không ạ?",
+      "terms": [
+        "用法"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜ていただいている間、〜てもいい"
+    },
+    {
+      "id": "T-049-V13-021",
+      "group": "recheck",
+      "role_vi": "Dược sĩ tại nhà thuốc",
+      "gender": "male",
+      "ja": "処方医からまだ返事がなくても、十分後には確認の進み具合をお電話でお知らせします。",
+      "vi": "Dù bác sĩ kê đơn chưa trả lời, mười phút nữa tôi vẫn sẽ gọi báo tiến độ kiểm tra.",
+      "terms": [
+        "処方医"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "〜なくても、〜にはお知らせ"
+    },
+    {
+      "id": "T-049-V13-022",
+      "group": "recheck",
+      "role_vi": "Người nhận thuốc theo đơn",
+      "gender": "female",
+      "ja": "新しい処方箋では、この薬は夕食後ではなく朝食後に飲むという理解で合っていますか。",
+      "vi": "Tôi hiểu là từ đơn lần này, thuốc sẽ uống sau bữa sáng thay vì sau bữa tối, đúng không ạ?",
+      "terms": [
+        "処方箋"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜という理解で合っていますか"
+    }
+  ]
+}

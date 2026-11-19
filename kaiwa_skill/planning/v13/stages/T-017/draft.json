@@ -1,0 +1,376 @@
+{
+  "code": "T-017",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "885ba8302cbe369429c53667855b92f3f56b62c7852d24a09fae896736b00071",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "symptom": "Nói vị trí và biểu hiện hỏng",
+    "schedule": "Nêu ảnh hưởng và hẹn thợ",
+    "visit": "Thống nhất lúc vào và việc sẽ kiểm",
+    "after": "Theo lỗi sau lần kiểm",
+    "cost": "Hỏi chi phí và căn cứ trước khi đồng ý"
+  },
+  "items": [
+    {
+      "id": "T-017-V13-001",
+      "group": "symptom",
+      "role_vi": "Người thuê báo quản lý rò nước",
+      "gender": "female",
+      "ja": "昨夜から台所のシンクの下で水が少し漏れています。",
+      "vi": "Từ tối qua, dưới chậu rửa bếp có nước rỉ ra một ít.",
+      "terms": [
+        "シンク",
+        "漏れる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～で水が漏れています"
+    },
+    {
+      "id": "T-017-V13-002",
+      "group": "symptom",
+      "role_vi": "Người thuê báo máy lạnh không mát",
+      "gender": "male",
+      "ja": "エアコンの設定を確認しても、風が出るだけで部屋は冷えません。",
+      "vi": "Tôi đã kiểm chế độ của máy lạnh, nhưng máy chỉ thổi gió, phòng không mát.",
+      "terms": [
+        "冷える"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ても冷えない"
+    },
+    {
+      "id": "T-017-V13-003",
+      "group": "symptom",
+      "role_vi": "Người thuê hỏi trước khi dùng tiếp",
+      "gender": "female",
+      "ja": "水漏れの原因が分かるまでは、台所のシンクの使用を控えたほうがいいですか。",
+      "vi": "Trước khi biết vì sao rò nước, tôi có nên tạm tránh dùng chậu rửa bếp không?",
+      "terms": [
+        "水漏れ",
+        "シンク",
+        "控える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～まで使用を控えたほうが"
+    },
+    {
+      "id": "T-017-V13-004",
+      "group": "symptom",
+      "role_vi": "Người thuê đính chính vị trí ghi nhận",
+      "gender": "male",
+      "ja": "水漏れは二〇三号室の浴室の蛇口ではなく、三〇二号室の台所のシンクの下です。",
+      "vi": "Chỗ rò nước là dưới chậu rửa bếp căn 302, chứ không phải vòi phòng tắm căn 203.",
+      "terms": [
+        "蛇口",
+        "水漏れ",
+        "シンク"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-017-V13-005",
+      "group": "schedule",
+      "role_vi": "Người thuê đang không dùng được nhà vệ sinh",
+      "gender": "female",
+      "ja": "トイレの排水がうまくいかず使えないので、早めに点検をお願いできますか。",
+      "vi": "Bồn cầu không thoát nước nên tôi không dùng được, bên anh thu xếp người kiểm sớm giúp được không?",
+      "terms": [
+        "排水",
+        "点検"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～ので早めに～"
+    },
+    {
+      "id": "T-017-V13-006",
+      "group": "schedule",
+      "role_vi": "Người thuê hỏi cách sinh hoạt khi chờ thợ",
+      "gender": "male",
+      "ja": "トイレの修理が明後日になるなら、それまでの代替手段がないか確認していただけますか。",
+      "vi": "Nếu ngày kia mới sửa được bồn cầu, anh kiểm tra giúp tôi xem có cách nào dùng tạm trong lúc chờ không?",
+      "terms": [
+        "代替手段"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～なら、確認していただけますか"
+    },
+    {
+      "id": "T-017-V13-007",
+      "group": "schedule",
+      "role_vi": "Người thuê hỏi mốc quản lý báo lại",
+      "gender": "female",
+      "ja": "修理の手配は家主に確認するとのことですが、いつごろお返事をいただけますか。",
+      "vi": "Anh nói cần hỏi chủ nhà về việc sắp xếp sửa, khoảng khi nào tôi nhận được câu trả lời ạ?",
+      "terms": [
+        "家主",
+        "手配する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～とのことですが、いつごろ～"
+    },
+    {
+      "id": "T-017-V13-008",
+      "group": "schedule",
+      "role_vi": "Người thuê gọi lại sau giờ hẹn",
+      "gender": "male",
+      "ja": "トイレの修理は三時までにご連絡をいただく予定でしたが、設備業者の訪問時間は決まりましたか。",
+      "vi": "Anh hẹn báo về việc sửa bồn cầu trước ba giờ, giờ đã chốt giờ thợ đến chưa ạ?",
+      "terms": [
+        "設備業者"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～予定でしたが、今は～"
+    },
+    {
+      "id": "T-017-V13-009",
+      "group": "visit",
+      "role_vi": "Người thuê xác nhận thợ trước khi mở cửa",
+      "gender": "female",
+      "ja": "今日のトイレの点検で来てくださったのでしたら、会社名とお名前を確認してもいいですか。",
+      "vi": "Nếu anh đến kiểm bồn cầu theo lịch hôm nay, tôi xác nhận tên công ty và tên anh được không ạ?",
+      "terms": [
+        "点検"
+      ],
+      "scenes": [
+        "S010",
+        "S011"
+      ],
+      "pattern": "～を確認してもいいですか"
+    },
+    {
+      "id": "T-017-V13-010",
+      "group": "visit",
+      "role_vi": "Người thuê có giờ phải ra ngoài",
+      "gender": "male",
+      "ja": "十一時までなら立ち会えますが、点検の所要時間はどれくらいですか。",
+      "vi": "Tôi có thể có mặt đến mười một giờ, việc kiểm tra dự kiến mất bao lâu ạ?",
+      "terms": [
+        "立ち会う",
+        "点検",
+        "所要時間"
+      ],
+      "scenes": [
+        "S012",
+        "S013"
+      ],
+      "pattern": "～までなら立ち会えます"
+    },
+    {
+      "id": "T-017-V13-011",
+      "group": "visit",
+      "role_vi": "Người thuê không thể đón thợ giờ đến mới",
+      "gender": "female",
+      "ja": "正午に到着される場合は立ち会えないので、トイレの修理を別の日に変更できますか。",
+      "vi": "Nếu anh đến lúc mười hai giờ trưa thì tôi không có mặt được, mình dời lịch sửa bồn cầu sang ngày khác được không?",
+      "terms": [
+        "立ち会う"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～には立ち会えないので"
+    },
+    {
+      "id": "T-017-V13-012",
+      "group": "visit",
+      "role_vi": "Người thuê muốn biết phạm vi trước khi cho vào nhà lúc vắng",
+      "gender": "male",
+      "ja": "不在中に業者の方が部屋に入るなら、訪問日時と作業範囲を聞いてから同意したいです。",
+      "vi": "Nếu thợ vào nhà lúc tôi vắng, tôi muốn biết ngày giờ đến và phạm vi công việc rồi mới đồng ý.",
+      "terms": [
+        "不在",
+        "作業範囲",
+        "同意する"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～を聞いてから同意したい"
+    },
+    {
+      "id": "T-017-V13-013",
+      "group": "visit",
+      "role_vi": "Người thuê mô tả lúc nước bắt đầu rỉ",
+      "gender": "female",
+      "ja": "水を五分ほど出したときに、シンクの下の右側から漏れ始めることがあります。",
+      "vi": "Khi mở nước khoảng năm phút, đôi lúc nước bắt đầu rỉ từ phía bên phải dưới chậu rửa.",
+      "terms": [
+        "シンク",
+        "漏れる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～ほど出したときに"
+    },
+    {
+      "id": "T-017-V13-014",
+      "group": "after",
+      "role_vi": "Người thuê nói giờ máy lạnh bị lỗi",
+      "gender": "male",
+      "ja": "今はエアコンから冷たい風が出ますが、昨夜は三十分運転しても部屋が冷えませんでした。",
+      "vi": "Bây giờ máy lạnh thổi gió lạnh, nhưng tối qua chạy ba mươi phút phòng vẫn không mát.",
+      "terms": [
+        "冷える"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ても冷えない"
+    },
+    {
+      "id": "T-017-V13-015",
+      "group": "after",
+      "role_vi": "Người thuê hỏi lịch linh kiện và thợ",
+      "gender": "female",
+      "ja": "交換部品の入荷予定と、次に来ていただけそうな日の見込みを教えてください。",
+      "vi": "Xin anh cho tôi biết khi nào dự kiến có linh kiện thay và khoảng ngày nào thợ có thể đến lại.",
+      "terms": [
+        "入荷予定",
+        "見込み"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "～の見込みを教えてください"
+    },
+    {
+      "id": "T-017-V13-016",
+      "group": "after",
+      "role_vi": "Người thuê xác nhận sửa tạm và phần còn chờ",
+      "gender": "male",
+      "ja": "水漏れの応急処置までは済んでいますが、部品交換はまだですね。",
+      "vi": "Chỗ rò nước đã được xử lý tạm, còn thay linh kiện thì vẫn chưa, đúng không ạ?",
+      "terms": [
+        "応急処置",
+        "部品交換",
+        "水漏れ"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～までは済んでいますが、～はまだですね"
+    },
+    {
+      "id": "T-017-V13-017",
+      "group": "after",
+      "role_vi": "Người thuê báo xả bình thường sau sửa",
+      "gender": "female",
+      "ja": "修理後にトイレを二回流してみましたが、今は問題なく流れています。",
+      "vi": "Sau khi sửa, tôi đã xả thử bồn cầu hai lần, hiện nước thoát bình thường.",
+      "terms": [],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～てみましたが、問題なく～"
+    },
+    {
+      "id": "T-017-V13-018",
+      "group": "after",
+      "role_vi": "Người thuê báo lỗi cũ tái diễn kèm triệu chứng mới",
+      "gender": "male",
+      "ja": "点検したエアコンが夜にまた冷えなくなって、今回はカタカタという異音も出ています。",
+      "vi": "Máy lạnh vừa được kiểm đến tối lại không mát, lần này còn có tiếng lạch cạch bất thường.",
+      "terms": [
+        "点検",
+        "冷える",
+        "異音"
+      ],
+      "scenes": [
+        "S022",
+        "S023"
+      ],
+      "pattern": "～なくなって、今回は～も"
+    },
+    {
+      "id": "T-017-V13-019",
+      "group": "after",
+      "role_vi": "Người thuê hỏi ai xác nhận giờ kiểm lại",
+      "gender": "female",
+      "ja": "エアコンの再点検は明日午後とのことですが、具体的な時間はいつごろどなたからご連絡いただけますか。",
+      "vi": "Tôi được báo chiều mai sẽ kiểm lại máy lạnh, khoảng khi nào và ai sẽ báo tôi giờ cụ thể ạ?",
+      "terms": [
+        "再点検"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～はいつごろ～"
+    },
+    {
+      "id": "T-017-V13-020",
+      "group": "cost",
+      "role_vi": "Người thuê hỏi các khoản tính phí",
+      "gender": "male",
+      "ja": "見積もりの点検費用と部品代について、それぞれの金額を教えていただけますか。",
+      "vi": "Anh cho tôi biết số tiền riêng của phí kiểm tra và tiền linh kiện trong báo giá được không ạ?",
+      "terms": [
+        "見積もり",
+        "点検費用",
+        "部品代"
+      ],
+      "scenes": [
+        "S026",
+        "S030"
+      ],
+      "pattern": "～の金額を教えていただけますか"
+    },
+    {
+      "id": "T-017-V13-021",
+      "group": "cost",
+      "role_vi": "Người thuê sửa hiểu nhầm rằng đã tháo máy",
+      "gender": "female",
+      "ja": "エアコンは分解せず、教えていただいたとおりフィルターを確認しただけです。",
+      "vi": "Tôi không tháo máy lạnh, tôi chỉ kiểm bộ lọc theo hướng dẫn thôi ạ.",
+      "terms": [
+        "分解する"
+      ],
+      "scenes": [
+        "S027"
+      ],
+      "pattern": "～はせず～だけです"
+    },
+    {
+      "id": "T-017-V13-022",
+      "group": "cost",
+      "role_vi": "Người thuê cần giải thích trước khi chịu phí",
+      "gender": "male",
+      "ja": "費用負担について契約のどの条項が当てはまるかを聞くまでは、私が払うことに同意できません。",
+      "vi": "Chừng nào chưa được giải thích điều khoản hợp đồng nào áp dụng cho việc chịu phí, tôi chưa thể đồng ý tự trả.",
+      "terms": [
+        "費用負担",
+        "条項",
+        "同意する"
+      ],
+      "scenes": [
+        "S028",
+        "S029",
+        "S030"
+      ],
+      "pattern": "～を聞くまでは同意できない"
+    }
+  ]
+}

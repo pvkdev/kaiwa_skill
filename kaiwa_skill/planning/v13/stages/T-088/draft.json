@@ -1,0 +1,357 @@
+{
+  "code": "T-088",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "21977f4ea1d07c9baee6288cf0d0530c03d425948f6f0f4c883d8c8e80235d4a",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "urgent": "Xác định vấn đề gấp và cách hỗ trợ",
+    "upset": "Lắng nghe và làm rõ điều đã xác nhận",
+    "options": "Thương lượng mốc giao và mốc gửi tệp",
+    "internal": "Báo nội bộ và xin người có quyền quyết"
+  },
+  "items": [
+    {
+      "id": "T-088-V13-001",
+      "group": "urgent",
+      "role_vi": "Khách hàng gọi về sự cố hoặc lịch giao",
+      "gender": "male",
+      "ja": "出荷ラベルが印刷できなくなって、梱包した荷物が出せません。",
+      "vi": "Máy không in được nhãn gửi hàng nữa nên chúng tôi chưa gửi được các kiện đã đóng.",
+      "terms": [
+        "出荷ラベル"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～できない"
+    },
+    {
+      "id": "T-088-V13-002",
+      "group": "urgent",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "集荷までに、最低限何箱分のラベルが必要でしょうか。",
+      "vi": "Trước giờ xe đến lấy hàng, anh cần tối thiểu nhãn cho mấy thùng ạ?",
+      "terms": [
+        "集荷",
+        "最低限"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～までに何が必要か"
+    },
+    {
+      "id": "T-088-V13-003",
+      "group": "urgent",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "技術担当に状況を伝えたいので、プリンターの画面に出ている表示を教えていただけますか。",
+      "vi": "Để tôi báo kỹ thuật viên, anh đọc giúp dòng đang hiện trên màn hình máy in được không ạ?",
+      "terms": [
+        "技術担当",
+        "表示"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-088-V13-004",
+      "group": "urgent",
+      "role_vi": "Khách hàng gọi về sự cố hoặc lịch giao",
+      "gender": "male",
+      "ja": "プリンターに紙は入っているのに、「用紙がありません」と表示されます。",
+      "vi": "Trong máy in vẫn có giấy mà màn hình báo “Hết giấy” ạ.",
+      "terms": [
+        "表示"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～のに～と出る"
+    },
+    {
+      "id": "T-088-V13-005",
+      "group": "urgent",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "技術担当がまだ確認できていないので、午後三時までに私から折り返して、状況をお伝えします。",
+      "vi": "Kỹ thuật viên chưa kiểm được, tôi sẽ gọi lại cập nhật tình hình cho anh muộn nhất ba giờ chiều ạ.",
+      "terms": [
+        "技術担当",
+        "折り返す"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～から折り返す"
+    },
+    {
+      "id": "T-088-V13-006",
+      "group": "urgent",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "原因は確認中ですが、お持ちの予備機で同じラベルを出せることは確認できました。",
+      "vi": "Chúng tôi vẫn đang kiểm nguyên nhân, nhưng đã xác nhận máy dự phòng của anh in được cùng loại nhãn ạ.",
+      "terms": [
+        "原因",
+        "確認中",
+        "予備機"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～は確認中だが"
+    },
+    {
+      "id": "T-088-V13-007",
+      "group": "upset",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "お待たせしてすみません、資料が届かないと明日の朝の説明会に間に合わないということですね。",
+      "vi": "Xin lỗi vì đã để anh đợi. Nếu tài liệu vẫn chưa tới thì anh không có đủ tài liệu kịp cho buổi giới thiệu sáng mai, đúng không ạ?",
+      "terms": [
+        "お待たせしてすみません",
+        "間に合う"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "お待たせして～"
+    },
+    {
+      "id": "T-088-V13-008",
+      "group": "upset",
+      "role_vi": "Khách hàng gọi về sự cố hoặc lịch giao",
+      "gender": "male",
+      "ja": "説明会での必要部数は四十部で、明日の午前九時半までにそろっている必要があります。",
+      "vi": "Buổi giới thiệu cần 40 bộ, chúng tôi phải có đủ muộn nhất chín giờ rưỡi sáng mai ạ.",
+      "terms": [
+        "必要部数"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～までにそろう必要がある"
+    },
+    {
+      "id": "T-088-V13-009",
+      "group": "upset",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "本日お届けする予定とお伝えしましたが、配送会社から到着時刻の確認はまだ取れておりません。",
+      "vi": "Bên tôi đã báo dự kiến giao hôm nay, nhưng bên vận chuyển vẫn chưa xác nhận giờ hàng tới ạ.",
+      "terms": [
+        "確認が取れる"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～はまだ確認が取れていない"
+    },
+    {
+      "id": "T-088-V13-010",
+      "group": "upset",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "代替案として、店頭にある十部を今日お受け取りいただく形ではいかがですか。",
+      "vi": "Một phương án thay thế là hôm nay anh lấy trước mười bộ đang có ở cửa hàng, anh thấy được không ạ?",
+      "terms": [
+        "代替案"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～形ではいかがですか"
+    },
+    {
+      "id": "T-088-V13-011",
+      "group": "upset",
+      "role_vi": "Khách hàng gọi về sự cố hoặc lịch giao",
+      "gender": "male",
+      "ja": "明日の説明会には最低限四十部要るので、十部だけ先に受け取る形では難しいです。",
+      "vi": "Buổi giới thiệu sáng mai cần ít nhất 40 bộ, chỉ nhận trước mười bộ thì bên tôi khó thu xếp ạ.",
+      "terms": [
+        "最低限"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "～では難しい"
+    },
+    {
+      "id": "T-088-V13-012",
+      "group": "upset",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "別便の手配を判断できる出荷責任者に、今おつなぎしてもよろしいですか。",
+      "vi": "Tôi nối máy với người phụ trách xuất hàng có quyền quyết định việc bố trí chuyến riêng, được chứ ạ?",
+      "terms": [
+        "別便"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "判断できる人につなぐ"
+    },
+    {
+      "id": "T-088-V13-013",
+      "group": "options",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "最短の金曜午後のお届けでしたら、水曜の午後一時までに印刷データの最終版が必要です。",
+      "vi": "Nếu muốn nhận sớm nhất vào chiều thứ Sáu thì bên tôi cần tệp cuối để in muộn nhất một giờ chiều thứ Tư ạ.",
+      "terms": [
+        "最短",
+        "最終版"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～なら～が必要"
+    },
+    {
+      "id": "T-088-V13-014",
+      "group": "options",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "原稿をもう一日見直せるよう、木曜の入稿で月曜の午前にお届けする形ではいかがですか。",
+      "vi": "Để anh có thêm một ngày rà lại bản thảo, mình gửi tệp vào thứ Năm và bên tôi giao vào sáng thứ Hai được không ạ?",
+      "terms": [
+        "入稿"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～形ではいかがですか"
+    },
+    {
+      "id": "T-088-V13-015",
+      "group": "options",
+      "role_vi": "Khách hàng gọi về sự cố hoặc lịch giao",
+      "gender": "male",
+      "ja": "水曜の午後一時までに最終版を送れますので、金曜の午後に届けていただけますか。",
+      "vi": "Tôi có thể gửi bản cuối muộn nhất một giờ chiều thứ Tư, chị giao giúp vào chiều thứ Sáu được không ạ?",
+      "terms": [
+        "最終版"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～までに出せるので"
+    },
+    {
+      "id": "T-088-V13-016",
+      "group": "options",
+      "role_vi": "Khách hàng gọi về sự cố hoặc lịch giao",
+      "gender": "male",
+      "ja": "水曜の締め切りまでに入稿できるか、社内で確認してから決めたいです。",
+      "vi": "Tôi muốn kiểm trong công ty xem có nộp tệp in kịp hạn thứ Tư không rồi mới quyết ạ.",
+      "terms": [
+        "締め切り",
+        "入稿"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～てから決める"
+    },
+    {
+      "id": "T-088-V13-017",
+      "group": "options",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "印刷日程の候補はいったん残しておきますので、水曜の午前十一時に私から折り返します。",
+      "vi": "Tôi sẽ tạm giữ các phương án lịch in và gọi lại cho anh lúc mười một giờ sáng thứ Tư ạ.",
+      "terms": [
+        "折り返す"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～から折り返す"
+    },
+    {
+      "id": "T-088-V13-018",
+      "group": "options",
+      "role_vi": "Nhân viên chăm sóc khách hàng",
+      "gender": "female",
+      "ja": "最終版を受け取りましたら、月曜午前の納品予定も添えてメールでお返事します。",
+      "vi": "Khi nhận bản cuối, tôi sẽ trả lời qua email và ghi kèm lịch giao sáng thứ Hai ạ.",
+      "terms": [
+        "最終版"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～たら返信する"
+    },
+    {
+      "id": "T-088-V13-019",
+      "group": "internal",
+      "role_vi": "Nhân viên báo nội bộ",
+      "gender": "female",
+      "ja": "お客様に四時までに状況を伝える約束なので、別便が手配できるか至急確認していただけますか。",
+      "vi": "Em đã hẹn cập nhật cho khách muộn nhất bốn giờ, anh kiểm gấp giúp em có bố trí được chuyến riêng không ạ?",
+      "terms": [
+        "別便",
+        "至急"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-088-V13-020",
+      "group": "internal",
+      "role_vi": "Nhân viên báo nội bộ",
+      "gender": "female",
+      "ja": "お客様が了承したのは四時まで待つことで、別便を使うかはまだご相談していません。",
+      "vi": "Khách mới đồng ý đợi đến bốn giờ, em vẫn chưa bàn với khách về việc có dùng chuyến riêng hay không ạ.",
+      "terms": [
+        "別便"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "了承の範囲を確かめる"
+    },
+    {
+      "id": "T-088-V13-021",
+      "group": "internal",
+      "role_vi": "Nhân viên báo nội bộ",
+      "gender": "female",
+      "ja": "別便の費用負担について返事をするには、どなたの承認が必要でしょうか。",
+      "vi": "Em cần ai duyệt thì mới trả lời được về việc bên mình có chịu phí chuyến riêng không ạ?",
+      "terms": [
+        "費用負担",
+        "別便"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "誰の承認が必要か"
+    },
+    {
+      "id": "T-088-V13-022",
+      "group": "internal",
+      "role_vi": "Trưởng nhóm phụ trách giao hàng",
+      "gender": "male",
+      "ja": "費用負担は部長の承認を得てから返事をして、到着時刻だけ先に確認してね。",
+      "vi": "Chuyện chịu phí thì đợi trưởng bộ phận duyệt rồi mới trả lời, em cứ kiểm trước giờ hàng tới nhé.",
+      "terms": [
+        "費用負担"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～てから返事"
+    }
+  ]
+}

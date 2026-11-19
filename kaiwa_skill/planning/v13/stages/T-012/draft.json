@@ -1,0 +1,365 @@
+{
+  "code": "T-012",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "d58980a24eb16448fbad7811ab7f4ddd401d4f28e08c83f7ddf3d08dbc1a5e4c",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Hỏi có tiện và nêu rõ việc nhờ",
+    "accept": "Nhận phần làm được",
+    "decline": "Từ chối rõ và giữ quan hệ",
+    "scope": "Xử lý khi khối lượng việc đổi",
+    "handover": "Bàn giao, sửa và cảm ơn"
+  },
+  "items": [
+    {
+      "id": "T-012-V13-001",
+      "group": "ask",
+      "role_vi": "Bạn hỏi trước khi nhờ",
+      "gender": "female",
+      "ja": "展示の準備でちょっと頼みたいことがあるんだけど、今話せる？",
+      "vi": "Tớ có việc muốn nhờ về khâu chuẩn bị triển lãm, giờ cậu nghe được không?",
+      "terms": [
+        "頼む"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～ことがあるんだけど"
+    },
+    {
+      "id": "T-012-V13-002",
+      "group": "ask",
+      "role_vi": "Bạn nhờ sắp ảnh",
+      "gender": "male",
+      "ja": "金曜の夕方六時から、都合がつくなら展示用の写真を並べるのに一時間だけ手を貸してくれる？",
+      "vi": "Nếu thu xếp được thì từ sáu giờ chiều thứ Sáu, cậu giúp tớ sắp ảnh cho triển lãm một tiếng thôi được không?",
+      "terms": [
+        "都合がつく",
+        "手を貸す"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "都合がつくなら～だけ手を貸してくれる？"
+    },
+    {
+      "id": "T-012-V13-003",
+      "group": "ask",
+      "role_vi": "Đồng nghiệp xác định phần mình và phần người giúp",
+      "gender": "female",
+      "ja": "写真には私が先に番号を付けておきますので、当日は番号順に壁に並べるところをお願いします。",
+      "vi": "Tôi sẽ đánh số ảnh trước, hôm đó nhờ anh sắp ảnh lên tường theo thứ tự số nhé.",
+      "terms": [
+        "番号を付ける"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～は私が～ので、～お願いします"
+    },
+    {
+      "id": "T-012-V13-004",
+      "group": "ask",
+      "role_vi": "Bạn điều chỉnh lời nhờ khi người kia ít thời gian",
+      "gender": "male",
+      "ja": "三十分しかないなら、展示に使う写真を入口から運ぶところだけ頼める？",
+      "vi": "Nếu cậu chỉ có nửa tiếng, tớ nhờ cậu giúp đúng phần mang ảnh triển lãm từ lối vào được không?",
+      "terms": [
+        "頼む"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～だけ頼める？"
+    },
+    {
+      "id": "T-012-V13-005",
+      "group": "ask",
+      "role_vi": "Bạn tìm đầu mối khi người được nhờ bận",
+      "gender": "female",
+      "ja": "金曜に手伝ってもらえそうな人に心当たりがあれば、私から連絡するから教えてもらえる？",
+      "vi": "Nếu cậu nghĩ ra ai khác có thể giúp vào thứ Sáu thì cho tớ biết để tớ tự hỏi họ nhé?",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～に心当たりがあれば"
+    },
+    {
+      "id": "T-012-V13-006",
+      "group": "accept",
+      "role_vi": "Bạn hỏi về kết quả cần làm",
+      "gender": "male",
+      "ja": "展示の写真は、並べ方まで決めたほうがいい、それとも番号を付けるだけでいい？",
+      "vi": "Ảnh triển lãm thì tớ quyết luôn cách xếp hay chỉ đánh số thôi?",
+      "terms": [
+        "番号を付ける"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "A、それともB？"
+    },
+    {
+      "id": "T-012-V13-007",
+      "group": "accept",
+      "role_vi": "Bạn chỉ giúp được trước sáu giờ",
+      "gender": "female",
+      "ja": "六時までなら時間があるから、展示の写真を箱から出すところまでは引き受けられるよ。",
+      "vi": "Tớ giúp chuẩn bị triển lãm được đến sáu giờ nên có thể nhận phần lấy ảnh ra khỏi thùng.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～までなら～できる"
+    },
+    {
+      "id": "T-012-V13-008",
+      "group": "accept",
+      "role_vi": "Bạn nhận việc và hẹn báo tiến độ",
+      "gender": "male",
+      "ja": "二十枚の写真に番号を付けるのは引き受けるよ、明日の昼になったら進み具合を知らせるね。",
+      "vi": "Tớ nhận đánh số hai mươi tấm ảnh, đến trưa mai tớ báo làm được tới đâu nhé.",
+      "terms": [
+        "進み具合",
+        "番号を付ける",
+        "引き受ける"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～たら、進み具合を知らせる"
+    },
+    {
+      "id": "T-012-V13-009",
+      "group": "accept",
+      "role_vi": "Bạn hỏi lại khi thấy hai tệp trùng tên",
+      "gender": "female",
+      "ja": "同じ名前の写真が二つあるから、明るいほうと暗いほうのどっちに番号を付けるか教えてくれる？",
+      "vi": "Có hai ảnh trùng tên, cậu cho tớ biết nên đánh số tấm sáng hay tấm tối nhé?",
+      "terms": [
+        "番号を付ける"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～からどっち～か教えて"
+    },
+    {
+      "id": "T-012-V13-010",
+      "group": "accept",
+      "role_vi": "Bạn báo còn một quyết định trước khi xong",
+      "gender": "male",
+      "ja": "十九枚は番号を付け終わったけど、最後の一枚は縦にする、それとも横にする？",
+      "vi": "Tớ đánh số xong mười chín tấm rồi, còn tấm cuối cậu chọn bản dọc hay ngang?",
+      "terms": [
+        "番号を付ける"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "A、それともB？"
+    },
+    {
+      "id": "T-012-V13-011",
+      "group": "decline",
+      "role_vi": "Bạn từ chối dọn vì có hẹn",
+      "gender": "female",
+      "ja": "悪いんだけど、金曜の夜は先約があって、展示会場の片づけは手伝えないんだ。",
+      "vi": "Xin lỗi, tối thứ Sáu tớ có hẹn trước nên không giúp dọn chỗ triển lãm được.",
+      "terms": [
+        "悪いんだけど",
+        "先約",
+        "手伝う"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "悪いんだけど～は手伝えない"
+    },
+    {
+      "id": "T-012-V13-012",
+      "group": "decline",
+      "role_vi": "Bạn gợi người có thể hỏi",
+      "gender": "male",
+      "ja": "佐藤さんは前に展示を手伝いたいって言ってたけど、金曜に来られるかは本人に聞いてみてね。",
+      "vi": "Sato từng nói muốn giúp triển lãm, nhưng thứ Sáu có đến được không thì cậu hỏi trực tiếp cậu ấy nhé.",
+      "terms": [
+        "手伝う"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～か本人に聞いてみて"
+    },
+    {
+      "id": "T-012-V13-013",
+      "group": "decline",
+      "role_vi": "Bạn sửa hiểu lầm rằng chỉ cần dời ngày",
+      "gender": "female",
+      "ja": "展示会場の片づけは、別の日に変えても、今回は引き受けられないんだ。",
+      "vi": "Việc dọn chỗ triển lãm lần này dù đổi ngày tớ cũng không nhận được.",
+      "terms": [
+        "引き受ける"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ても今回は引き受けられない"
+    },
+    {
+      "id": "T-012-V13-014",
+      "group": "decline",
+      "role_vi": "Bạn chỉ rảnh mười phút để góp ý ảnh",
+      "gender": "male",
+      "ja": "十分しか空いてないから、候補の写真のうち特に迷ってる二枚だけなら見られるけど、どう？",
+      "vi": "Tớ chỉ rảnh mười phút, nếu chỉ xem hai tấm cậu phân vân nhất thì được, cậu thấy sao?",
+      "terms": [],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～だけなら見られるけど、どう？"
+    },
+    {
+      "id": "T-012-V13-015",
+      "group": "scope",
+      "role_vi": "Bạn báo có việc ngoài phần đã nhờ",
+      "gender": "female",
+      "ja": "写真を並べるだけの予定だったけど、説明のカードも貼ることになったから、追加の作業をどう分担するか相談してもいい？",
+      "vi": "Ban đầu định chỉ sắp ảnh, nhưng giờ còn phải dán thẻ chú thích, mình bàn cách chia phần việc thêm được không?",
+      "terms": [
+        "追加",
+        "作業",
+        "分担する"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～も必要になった"
+    },
+    {
+      "id": "T-012-V13-016",
+      "group": "scope",
+      "role_vi": "Người nhờ nhận phần phát sinh và giữ lời nhờ ban đầu",
+      "gender": "male",
+      "ja": "追加の説明カードは僕が明日の朝に貼るから、今日は写真を並べるところだけお願いね。",
+      "vi": "Sáng mai tớ sẽ dán phần thẻ chú thích mới thêm, hôm nay nhờ cậu sắp ảnh thôi nhé.",
+      "terms": [
+        "追加"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～は僕が～から、～お願い"
+    },
+    {
+      "id": "T-012-V13-017",
+      "group": "scope",
+      "role_vi": "Bạn cần tiếp quản phần dở dang",
+      "gender": "female",
+      "ja": "写真を並べる続きは私が引き継ぐから、何番まで終わったか教えてくれる？",
+      "vi": "Tớ sẽ làm tiếp phần sắp ảnh, cậu cho tớ biết đã sắp đến số mấy nhé?",
+      "terms": [
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～まで終わったか教えて"
+    },
+    {
+      "id": "T-012-V13-018",
+      "group": "scope",
+      "role_vi": "Bạn đề nghị làm tiếp ngày mai",
+      "gender": "male",
+      "ja": "今日は写真を十番まで並べて、残りは明日の六時から会場で一緒にやらない？",
+      "vi": "Hôm nay mình sắp ảnh đến số mười, còn lại mai từ sáu giờ mình làm tiếp ở chỗ triển lãm nhé?",
+      "terms": [
+        "残り"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～は今日、残りは明日"
+    },
+    {
+      "id": "T-012-V13-019",
+      "group": "handover",
+      "role_vi": "Bạn xác nhận trước khi tiếp việc",
+      "gender": "female",
+      "ja": "写真は十番まで並べてあって、十一番からは箱の中にあるってことで合ってる？",
+      "vi": "Ảnh đã sắp đến số mười, từ số mười một trở đi vẫn ở trong thùng, đúng không?",
+      "terms": [],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～で合ってる？"
+    },
+    {
+      "id": "T-012-V13-020",
+      "group": "handover",
+      "role_vi": "Bạn cảm ơn vì công dụng cụ thể",
+      "gender": "male",
+      "ja": "写真に番号を付けてくれたおかげで、会場で並べる順番がすぐ分かったよ。",
+      "vi": "Nhờ cậu đánh số ảnh mà lúc đến chỗ triển lãm tớ biết ngay phải xếp theo thứ tự nào.",
+      "terms": [
+        "おかげで",
+        "番号を付ける"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～てくれたおかげで"
+    },
+    {
+      "id": "T-012-V13-021",
+      "group": "handover",
+      "role_vi": "Bạn nhờ sửa đúng tấm dán nhầm",
+      "gender": "female",
+      "ja": "川の写真に山の説明が付いていたから、その一枚だけカードを貼り直してくれる？",
+      "vi": "Ảnh dòng sông bị dán chú thích ảnh núi, cậu dán lại đúng thẻ cho một tấm đó giúp tớ nhé?",
+      "terms": [
+        "貼り直す"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～だけ～てくれる？"
+    },
+    {
+      "id": "T-012-V13-022",
+      "group": "handover",
+      "role_vi": "Bạn hỏi sửa vào giờ vẫn kịp",
+      "gender": "male",
+      "ja": "川の写真のカードを貼り直すのが明日の九時になっても、午後の展示には間に合う？",
+      "vi": "Nếu tớ dán lại thẻ cho ảnh dòng sông lúc chín giờ sáng mai thì có kịp buổi triển lãm chiều không?",
+      "terms": [
+        "間に合う",
+        "貼り直す"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～になっても間に合う？"
+    },
+    {
+      "id": "T-012-V13-023",
+      "group": "handover",
+      "role_vi": "Bạn báo kiểm xong để người kia yên tâm",
+      "gender": "female",
+      "ja": "川の写真に正しいカードが付いてるのを確認したから、展示の準備はこれで全部終わったよ。",
+      "vi": "Tớ đã kiểm tra ảnh dòng sông có thẻ chú thích đúng rồi, vậy là khâu chuẩn bị triển lãm đã xong.",
+      "terms": [],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～のを確認したから"
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "code": "T-027",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "55ee7f7368c623c96decf1c78a3da11cba5ededb8598b096bac274a3d2cebeea",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "needs": "Nói rõ mục đích và mức giá",
+    "features": "Hỏi căn cứ và thử đúng tính năng",
+    "refusal": "Tính tổng rồi từ chối phần không cần",
+    "pause": "Tạm hoãn và xác minh thông tin",
+    "craft": "Nhờ tư vấn ở tiệm đồ đan"
+  },
+  "items": [
+    {
+      "id": "T-027-V13-001",
+      "group": "needs",
+      "role_vi": "Khách mua máy cho chính mình",
+      "gender": "female",
+      "ja": "六畳の寝室で夜も使える、自分用の空気清浄機を探しています。",
+      "vi": "Tôi đang tìm máy lọc không khí để dùng cho phòng ngủ khoảng sáu chiếu tatami của mình, cả vào ban đêm.",
+      "terms": [
+        "自分用"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を探しています"
+    },
+    {
+      "id": "T-027-V13-002",
+      "group": "needs",
+      "role_vi": "Khách nêu trần trước khi nghe tư vấn",
+      "gender": "male",
+      "ja": "空気清浄機の予算は二万五千円までで、寝るときの静かさを優先したいです。",
+      "vi": "Ngân sách mua máy lọc không khí của tôi tối đa hai mươi lăm nghìn yên, tôi ưu tiên loại chạy êm lúc ngủ.",
+      "terms": [
+        "予算",
+        "優先する"
+      ],
+      "scenes": [
+        "S002",
+        "S005"
+      ],
+      "pattern": "～までで、～を優先したい"
+    },
+    {
+      "id": "T-027-V13-003",
+      "group": "needs",
+      "role_vi": "Khách hỏi thông tin cần báo trước",
+      "gender": "female",
+      "ja": "空気清浄機を選ぶには、部屋の広さや用途のほかに何をお伝えすればいいですか。",
+      "vi": "Để chọn máy lọc không khí, ngoài diện tích phòng và mục đích dùng thì tôi cần cho anh biết thêm điều gì ạ?",
+      "terms": [
+        "用途"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～を選ぶには何を～"
+    },
+    {
+      "id": "T-027-V13-004",
+      "group": "needs",
+      "role_vi": "Khách sửa hiểu nhầm là mua quà",
+      "gender": "male",
+      "ja": "この空気清浄機は贈り物ではなく、自分用に探しているんです。",
+      "vi": "Tôi tìm máy lọc không khí này để tự dùng, chứ không phải làm quà ạ.",
+      "terms": [
+        "贈り物",
+        "自分用"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ではなく～なんです"
+    },
+    {
+      "id": "T-027-V13-005",
+      "group": "features",
+      "role_vi": "Khách muốn hiểu lý do gợi ý",
+      "gender": "female",
+      "ja": "こちらの機種は、寝室で使うのにどの点が向いていますか。",
+      "vi": "Mẫu máy này hợp để dùng trong phòng ngủ ở những điểm nào ạ?",
+      "terms": [
+        "機種"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～のにどの点が向いていますか"
+    },
+    {
+      "id": "T-027-V13-006",
+      "group": "features",
+      "role_vi": "Khách muốn loại dễ dùng trên thân máy",
+      "gender": "male",
+      "ja": "スマホとの接続機能は使わないので、本体のボタンだけで操作できる機種はありますか。",
+      "vi": "Tôi không dùng chức năng kết nối điện thoại, có mẫu nào chỉ cần dùng nút trên máy là điều khiển được không ạ?",
+      "terms": [
+        "接続機能",
+        "本体",
+        "操作する",
+        "機種"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～だけで操作できる～はありますか"
+    },
+    {
+      "id": "T-027-V13-007",
+      "group": "features",
+      "role_vi": "Khách cân nhắc mẫu chỉ gần đúng",
+      "gender": "female",
+      "ja": "この機種が希望に近いと伺いましたが、こちらが伝えた条件のうちどれが合っていませんか。",
+      "vi": "Tôi nghe nói mẫu máy này gần với nhu cầu của tôi, vậy trong các điều kiện tôi nêu, điều nào mẫu này chưa đáp ứng ạ?",
+      "terms": [
+        "機種"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～と伺いましたが、どの条件に～"
+    },
+    {
+      "id": "T-027-V13-008",
+      "group": "features",
+      "role_vi": "Khách hỏi nhân viên đang so điểm nào",
+      "gender": "male",
+      "ja": "この機種のほうがいいというのは、風量を比べてのことですか、それとも運転音ですか。",
+      "vi": "Anh nói mẫu máy này tốt hơn là đang so về lượng gió hay tiếng máy khi chạy ạ?",
+      "terms": [
+        "運転音",
+        "風量",
+        "機種"
+      ],
+      "scenes": [
+        "S009",
+        "S010",
+        "S013"
+      ],
+      "pattern": "～というのは、何を比べて～"
+    },
+    {
+      "id": "T-027-V13-009",
+      "group": "features",
+      "role_vi": "Khách hỏi chế độ tự động bằng ví dụ thật",
+      "gender": "female",
+      "ja": "自動運転は、例えば料理のにおいが入ってきたときに風量が変わるということですか。",
+      "vi": "Chế độ tự động nghĩa là chẳng hạn khi có mùi nấu ăn bay vào thì máy đổi mức gió phải không ạ?",
+      "terms": [
+        "自動運転",
+        "風量"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "例えば～とき、～ということですか"
+    },
+    {
+      "id": "T-027-V13-010",
+      "group": "features",
+      "role_vi": "Khách tách bảo hành với độ bền",
+      "gender": "male",
+      "ja": "機種の丈夫さとは別に、保証期間や対象を保証書で確認したいです。",
+      "vi": "Ngoài độ bền của máy, tôi muốn xem thời hạn và phạm vi bảo hành trên phiếu bảo hành.",
+      "terms": [
+        "保証期間",
+        "保証書",
+        "機種"
+      ],
+      "scenes": [
+        "S012",
+        "S015"
+      ],
+      "pattern": "～とは別に～を確認したい"
+    },
+    {
+      "id": "T-027-V13-011",
+      "group": "refusal",
+      "role_vi": "Khách hỏi tổng cả bộ trước khi quyết",
+      "gender": "female",
+      "ja": "空気清浄機と予備のフィルターをセットにすると、税込みの総額はいくらですか。",
+      "vi": "Nếu lấy máy lọc không khí cùng bộ lọc dự phòng theo bộ, tổng giá có thuế là bao nhiêu ạ?",
+      "terms": [
+        "セット",
+        "税込み",
+        "総額",
+        "予備"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～の税込みの総額はいくら"
+    },
+    {
+      "id": "T-027-V13-012",
+      "group": "refusal",
+      "role_vi": "Khách từ chối bộ lọc thêm để giữ ngân sách",
+      "gender": "male",
+      "ja": "予算を超えてしまうので、予備のフィルターは今回は結構です。",
+      "vi": "Thêm vào sẽ vượt ngân sách nên lần này tôi xin không lấy bộ lọc dự phòng ạ.",
+      "terms": [
+        "予算",
+        "予備",
+        "今回は結構です"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "今回は結構です"
+    },
+    {
+      "id": "T-027-V13-013",
+      "group": "refusal",
+      "role_vi": "Khách đính chính mình mới hỏi giá",
+      "gender": "female",
+      "ja": "予備のフィルターは価格を聞いただけで、まだ購入するとはお伝えしていません。",
+      "vi": "Tôi chỉ hỏi giá bộ lọc dự phòng, tôi chưa nói sẽ mua ạ.",
+      "terms": [
+        "予備"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～を聞いただけで、～ていません"
+    },
+    {
+      "id": "T-027-V13-014",
+      "group": "refusal",
+      "role_vi": "Khách kiểm lần cuối chỉ có máy",
+      "gender": "male",
+      "ja": "会計は空気清浄機の本体一台だけで、フィルターの追加や延長保証はなしですね。",
+      "vi": "Anh tính tiền một máy lọc không khí thôi, không thêm bộ lọc hoặc bảo hành mở rộng, đúng không ạ?",
+      "terms": [
+        "本体",
+        "延長保証"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～で、～はなしですね"
+    },
+    {
+      "id": "T-027-V13-015",
+      "group": "pause",
+      "role_vi": "Khách hẹn quay lại hỏi người biết",
+      "gender": "female",
+      "ja": "この機種のフィルター交換の目安を確認できる担当者は、いついらっしゃいますか。",
+      "vi": "Khi nào có người phụ trách ở đây để tôi hỏi khoảng bao lâu thì cần thay bộ lọc của mẫu máy này ạ?",
+      "terms": [
+        "目安",
+        "担当者",
+        "機種"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～できる方はいつ～"
+    },
+    {
+      "id": "T-027-V13-016",
+      "group": "pause",
+      "role_vi": "Khách xem sản phẩm rồi về đo chỗ đặt",
+      "gender": "male",
+      "ja": "この機種の寸法を控えて、家で置き場所を測ってから買うかどうか決めます。",
+      "vi": "Tôi sẽ ghi kích thước mẫu máy này, về đo chỗ đặt rồi mới quyết định có mua không.",
+      "terms": [
+        "寸法",
+        "控える",
+        "機種"
+      ],
+      "scenes": [
+        "S021",
+        "S025"
+      ],
+      "pattern": "～を控えてから～"
+    },
+    {
+      "id": "T-027-V13-017",
+      "group": "pause",
+      "role_vi": "Khách hỏi có thể giữ mẫu đến lúc quay lại",
+      "gender": "female",
+      "ja": "置き場所を測ってから戻るので、この機種を今日の閉店まで取り置きしていただけますか。",
+      "vi": "Tôi về đo chỗ đặt rồi sẽ quay lại, anh giữ mẫu này cho tôi đến lúc cửa hàng đóng cửa hôm nay được không ạ?",
+      "terms": [
+        "取り置き",
+        "機種"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～まで取り置きしていただけますか"
+    },
+    {
+      "id": "T-027-V13-018",
+      "group": "pause",
+      "role_vi": "Khách yêu cầu mẫu có chiều sâu vừa chỗ",
+      "gender": "male",
+      "ja": "家で測ったら置き場所の奥行きが二十二センチしかなかったので、もっと奥行きが短い機種を見せてください。",
+      "vi": "Tôi đo ở nhà thấy chỗ đặt chỉ sâu hai mươi hai xăng-ti-mét, xin cho tôi xem mẫu máy có chiều sâu nhỏ hơn.",
+      "terms": [
+        "奥行き",
+        "機種"
+      ],
+      "scenes": [
+        "S023",
+        "S024"
+      ],
+      "pattern": "～ので、～が短いものを"
+    },
+    {
+      "id": "T-027-V13-019",
+      "group": "pause",
+      "role_vi": "Khách nhờ xem thông tin đồ đi kèm trên hộp bán",
+      "gender": "female",
+      "ja": "この機種のフィルターが別売りかどうか、販売用の箱の同梱品の欄で確認していただけますか。",
+      "vi": "Anh kiểm tra giúp trên mục đồ đi kèm của hộp bán xem bộ lọc cho mẫu máy này có bán riêng không ạ?",
+      "terms": [
+        "別売り",
+        "同梱品",
+        "機種"
+      ],
+      "scenes": [
+        "S026",
+        "S027",
+        "S028",
+        "S030"
+      ],
+      "pattern": "～か～で確認していただけますか"
+    },
+    {
+      "id": "T-027-V13-020",
+      "group": "craft",
+      "role_vi": "Người mới tập đan xin tư vấn sợi",
+      "gender": "male",
+      "ja": "棒針で編み始めたばかりですが、マフラーを練習するならどんな糸が使いやすいですか。",
+      "vi": "Tôi mới tập đan bằng kim thẳng, nếu tập đan khăn thì nên dùng loại sợi nào cho dễ ạ?",
+      "terms": [
+        "棒針"
+      ],
+      "scenes": [
+        "S031",
+        "S032"
+      ],
+      "pattern": "～たばかりですが～"
+    },
+    {
+      "id": "T-027-V13-021",
+      "group": "craft",
+      "role_vi": "Người tập đan nhờ giải thích gauge",
+      "gender": "female",
+      "ja": "ゲージを確認するというのは、先に小さく試し編みして目数を数えるということですか。",
+      "vi": "Kiểm tra gauge, tức mật độ mũi đan, là đan thử một miếng nhỏ rồi đếm số mũi trước phải không ạ?",
+      "terms": [
+        "ゲージ",
+        "試し編み",
+        "目数"
+      ],
+      "scenes": [
+        "S033"
+      ],
+      "pattern": "～というのは～ということですか"
+    },
+    {
+      "id": "T-027-V13-022",
+      "group": "craft",
+      "role_vi": "Khách ở tiệm đan muốn dùng kim sẵn có",
+      "gender": "male",
+      "ja": "家に六ミリの棒針があるので、針と糸のセットは今回は結構です。",
+      "vi": "Ở nhà tôi đã có kim đan thẳng sáu mi-li-mét, lần này tôi xin không lấy bộ kim và sợi ạ.",
+      "terms": [
+        "棒針",
+        "セット",
+        "今回は結構です"
+      ],
+      "scenes": [
+        "S034"
+      ],
+      "pattern": "今回は結構です"
+    },
+    {
+      "id": "T-027-V13-023",
+      "group": "craft",
+      "role_vi": "Khách chỉ muốn thử cầm sợi",
+      "gender": "female",
+      "ja": "今日は糸を買うかまだ決めていないのですが、手に取って感触を確かめるだけでもいいですか。",
+      "vi": "Hôm nay tôi chưa quyết định mua sợi, tôi chỉ cầm thử xem cảm giác thế nào được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S035"
+      ],
+      "pattern": "～だけでもいいですか"
+    },
+    {
+      "id": "T-027-V13-024",
+      "group": "craft",
+      "role_vi": "Người tập đan đem miếng đan hỏi lại",
+      "gender": "male",
+      "ja": "マフラー用の糸で試し編みをしたら見本より目がゆるくなったので、見ていただけますか。",
+      "vi": "Tôi đan thử bằng sợi định dùng để đan khăn nhưng mũi lỏng hơn mẫu, anh xem giúp tôi được không ạ?",
+      "terms": [
+        "試し編み"
+      ],
+      "scenes": [
+        "S036"
+      ],
+      "pattern": "～ので見ていただけますか"
+    }
+  ]
+}

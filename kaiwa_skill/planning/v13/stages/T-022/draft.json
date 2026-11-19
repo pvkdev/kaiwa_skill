@@ -1,0 +1,373 @@
+{
+  "code": "T-022",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "572d6264683f5d8c2f713e0dc4624fa3d9f25b45f9c200dd2d747b1a52299585",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "plan": "Nêu nhu cầu và kiểm tiền thực trả",
+    "switching": "Giữ số và tách ngày chuyển mạng",
+    "install": "Hẹn lắp và hỏi trước khi đi dây",
+    "fault": "Mô tả lỗi và nhắc bước đã thử",
+    "follow": "Xin mốc xử lý và giải thích phí"
+  },
+  "items": [
+    {
+      "id": "T-022-V13-001",
+      "group": "plan",
+      "role_vi": "Khách hỏi gói di động và mạng nhà",
+      "gender": "female",
+      "ja": "外では月に十ギガくらい使って、家のWi-Fiは二人で使います。",
+      "vi": "Ra ngoài tôi dùng khoảng mười GB mỗi tháng, còn Wi-Fi ở nhà có hai người dùng.",
+      "terms": [
+        "ギガ",
+        "Wi-Fi"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～くらい使います"
+    },
+    {
+      "id": "T-022-V13-002",
+      "group": "plan",
+      "role_vi": "Khách hỏi tổng phí tháng",
+      "gender": "male",
+      "ja": "この月額には、ルーターの利用料も含まれますか。",
+      "vi": "Khoản hằng tháng này đã gồm phí sử dụng bộ định tuyến chưa ạ?",
+      "terms": [
+        "月額",
+        "ルーター"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～には～も含まれますか"
+    },
+    {
+      "id": "T-022-V13-003",
+      "group": "plan",
+      "role_vi": "Khách hỏi tiền khi hết giảm giá",
+      "gender": "female",
+      "ja": "割引期間が終わると、月額はいくらになりますか。",
+      "vi": "Hết thời gian ưu đãi, số tiền mỗi tháng sẽ là bao nhiêu ạ?",
+      "terms": [
+        "割引期間",
+        "月額"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～が終わると～いくらになりますか"
+    },
+    {
+      "id": "T-022-V13-004",
+      "group": "plan",
+      "role_vi": "Khách xin gói cơ bản vừa ngân sách",
+      "gender": "male",
+      "ja": "予算を超えているので、動画のオプションを外して基本の料金プランだけにできますか。",
+      "vi": "Số tiền vượt ngân sách của tôi, tôi bỏ dịch vụ video đi kèm và chỉ lấy gói cơ bản được không ạ?",
+      "terms": [
+        "オプション",
+        "料金プラン"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～を外して～にできますか"
+    },
+    {
+      "id": "T-022-V13-005",
+      "group": "plan",
+      "role_vi": "Khách tìm điều khoản về kết thúc hợp đồng",
+      "gender": "female",
+      "ja": "工事費の支払いが残っているうちに解約する場合の条件は、どこに書いてありますか。",
+      "vi": "Nếu hủy hợp đồng khi chưa trả hết phí lắp đặt, điều kiện áp dụng ghi ở mục nào ạ?",
+      "terms": [
+        "工事費",
+        "解約する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～場合の条件はどこに～"
+    },
+    {
+      "id": "T-022-V13-006",
+      "group": "switching",
+      "role_vi": "Khách muốn chuyển nhà mạng giữ số",
+      "gender": "male",
+      "ja": "今の電話番号を変えずにこちらに乗り換えたいのですが、最初に何をすればいいですか。",
+      "vi": "Tôi muốn chuyển sang nhà mạng bên anh mà giữ số hiện tại, trước tiên tôi cần làm gì ạ?",
+      "terms": [
+        "乗り換える"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～を変えずに～たい"
+    },
+    {
+      "id": "T-022-V13-007",
+      "group": "switching",
+      "role_vi": "Khách chuyển nơi lắp mạng nhà",
+      "gender": "female",
+      "ja": "インターネットの回線を移転する場合、新しい住所では何日から使えますか。",
+      "vi": "Nếu chuyển đường truyền internet sang địa chỉ mới, ở đó tôi có thể dùng từ ngày nào ạ?",
+      "terms": [
+        "回線",
+        "移転"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～日から使えますか"
+    },
+    {
+      "id": "T-022-V13-008",
+      "group": "switching",
+      "role_vi": "Khách muốn biết lúc chốt ngày mở mạng",
+      "gender": "male",
+      "ja": "新居の設備を確認していただいた後、開通日はいつごろ分かりますか。",
+      "vi": "Sau khi bên anh kiểm tra thiết bị ở nhà mới, khoảng khi nào tôi biết ngày mở mạng ạ?",
+      "terms": [
+        "開通日"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～はいつごろ分かりますか"
+    },
+    {
+      "id": "T-022-V13-009",
+      "group": "switching",
+      "role_vi": "Khách sửa nhầm giữa hai nơi",
+      "gender": "female",
+      "ja": "新しくネットを使うのは、今の住所の桜町ではなく、緑町の二〇五号室です。",
+      "vi": "Nơi dùng mạng mới là phòng 205 ở Midori-machi, chứ không phải địa chỉ hiện tại ở Sakura-machi.",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-022-V13-010",
+      "group": "switching",
+      "role_vi": "Khách chốt hai mốc chuyển dịch vụ",
+      "gender": "male",
+      "ja": "今の住所の回線は十二日まで、新しい住所では十三日から使えるということで合っていますか。",
+      "vi": "Tôi dùng đường truyền ở địa chỉ cũ đến hết ngày mười hai và ở địa chỉ mới từ ngày mười ba, đúng không ạ?",
+      "terms": [
+        "回線"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～まで、～からで合っていますか"
+    },
+    {
+      "id": "T-022-V13-011",
+      "group": "install",
+      "role_vi": "Khách gọi xác nhận buổi lắp",
+      "gender": "female",
+      "ja": "明日の開通工事に来る方のお名前と、到着の目安を教えていただけますか。",
+      "vi": "Anh cho tôi biết tên người đến lắp mạng ngày mai và khoảng giờ tới được không ạ?",
+      "terms": [
+        "開通工事"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-022-V13-012",
+      "group": "install",
+      "role_vi": "Khách nghe phương án đi dây bị vướng",
+      "gender": "male",
+      "ja": "壁側の配線が難しければ、ほかにケーブルを通せる場所はありますか。",
+      "vi": "Nếu khó đi dây phía tường, còn chỗ nào khác có thể luồn cáp không ạ?",
+      "terms": [
+        "配線"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～が難しければ～はありますか"
+    },
+    {
+      "id": "T-022-V13-013",
+      "group": "install",
+      "role_vi": "Khách cần xin phép trước việc khoan",
+      "gender": "female",
+      "ja": "穴あけが必要なら、先に管理会社の許可を取ってから作業をお願いしたいです。",
+      "vi": "Nếu cần khoan lỗ, tôi muốn xin phép công ty quản lý trước rồi mới nhờ anh làm.",
+      "terms": [
+        "穴あけ",
+        "許可"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～が必要なら～を取ってから"
+    },
+    {
+      "id": "T-022-V13-014",
+      "group": "install",
+      "role_vi": "Khách thử vị trí đặt bộ định tuyến",
+      "gender": "male",
+      "ja": "ルーターは机の横でつながるか試してから、設置場所を決めたいです。",
+      "vi": "Tôi muốn thử xem đặt bộ định tuyến cạnh bàn có kết nối được không rồi mới quyết định chỗ đặt.",
+      "terms": [
+        "ルーター",
+        "設置場所"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～で試してから決めたい"
+    },
+    {
+      "id": "T-022-V13-015",
+      "group": "fault",
+      "role_vi": "Khách báo lỗi xảy ra cả hai thiết bị",
+      "gender": "female",
+      "ja": "昨夜から家のネットが何度も途切れて、スマホでもパソコンでも同じです。",
+      "vi": "Từ tối qua kết nối bị ngắt nhiều lần, cả điện thoại lẫn máy tính đều bị ạ.",
+      "terms": [
+        "途切れる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～が途切れて、～でも同じ"
+    },
+    {
+      "id": "T-022-V13-016",
+      "group": "fault",
+      "role_vi": "Khách đã thử khởi động lại",
+      "gender": "male",
+      "ja": "案内されたとおりルーターを再起動してみても、五分ほどでまたネットが途切れました。",
+      "vi": "Tôi đã thử khởi động lại bộ định tuyến theo hướng dẫn, vậy mà khoảng năm phút sau mạng lại ngắt.",
+      "terms": [
+        "再起動する",
+        "途切れる"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ても、また途切れる"
+    },
+    {
+      "id": "T-022-V13-017",
+      "group": "fault",
+      "role_vi": "Khách làm rõ lỗi ở Wi-Fi nhà",
+      "gender": "female",
+      "ja": "スマホをモバイル通信に切り替えると使えるので、自宅のWi-Fiのほうを確認していただけますか。",
+      "vi": "Điện thoại chuyển sang dữ liệu di động thì dùng được, anh kiểm tra giúp phần Wi-Fi ở nhà được không ạ?",
+      "terms": [
+        "切り替える",
+        "Wi-Fi"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～に切り替えると使える"
+    },
+    {
+      "id": "T-022-V13-018",
+      "group": "fault",
+      "role_vi": "Khách xin báo tiến độ dù chưa rõ nguyên nhân",
+      "gender": "male",
+      "ja": "回線調査で原因がまだ分からなくても、明日の午後三時までに途中経過を知らせていただけますか。",
+      "vi": "Dù kiểm tra đường truyền chưa tìm được nguyên nhân, anh vẫn báo tiến độ cho tôi trước ba giờ chiều mai được không ạ?",
+      "terms": [
+        "回線調査",
+        "途中経過"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～が分からなくても～知らせていただけますか"
+    },
+    {
+      "id": "T-022-V13-019",
+      "group": "follow",
+      "role_vi": "Khách gọi lại sau giờ hẹn",
+      "gender": "female",
+      "ja": "受付番号四二一で回線調査をお願いした件ですが、午後三時を過ぎてもご連絡がないので、進み具合を教えていただけますか。",
+      "vi": "Về yêu cầu kiểm tra đường truyền mã 421, quá ba giờ chiều rồi tôi vẫn chưa được gọi, anh cho tôi biết tình hình được không ạ?",
+      "terms": [
+        "受付番号",
+        "回線調査"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-022-V13-020",
+      "group": "follow",
+      "role_vi": "Khách chưa thấy kỹ thuật viên sau khung hẹn",
+      "gender": "male",
+      "ja": "今日は一時から三時の間に担当の方が来る予定でしたが、三時半になってもまだお見えになっていません。",
+      "vi": "Hôm nay người phụ trách hẹn đến trong khoảng một đến ba giờ, nhưng ba rưỡi rồi tôi vẫn chưa thấy ai tới.",
+      "terms": [],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～予定でしたが～"
+    },
+    {
+      "id": "T-022-V13-021",
+      "group": "follow",
+      "role_vi": "Khách hỏi giải pháp trong lúc chờ thợ",
+      "gender": "female",
+      "ja": "次の訪問が木曜になるなら、それまで自宅の回線の代わりに使える方法はありますか。",
+      "vi": "Nếu đến thứ Năm thợ mới đến, trong lúc chờ có cách nào dùng tạm thay đường truyền ở nhà không ạ?",
+      "terms": [
+        "回線"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～になるなら、それまで使える方法はありますか"
+    },
+    {
+      "id": "T-022-V13-022",
+      "group": "follow",
+      "role_vi": "Khách xin đối chiếu khoản thu tháng này",
+      "gender": "male",
+      "ja": "今月の請求が聞いていた月額より高いので、最初の見積もりと照合していただけますか。",
+      "vi": "Hóa đơn tháng này cao hơn tiền hằng tháng tôi được báo, anh đối chiếu giúp với báo giá ban đầu được không ạ?",
+      "terms": [
+        "月額",
+        "照合する"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～と照合していただけますか"
+    },
+    {
+      "id": "T-022-V13-023",
+      "group": "follow",
+      "role_vi": "Khách hỏi rõ một lần hay trả hằng tháng",
+      "gender": "female",
+      "ja": "一度だけの費用か毎月の費用かで説明が違ったので、確認して回答する担当窓口を教えていただけますか。",
+      "vi": "Tôi nhận hai cách giải thích khác nhau về việc khoản này thu một lần hay hằng tháng, anh cho tôi biết bộ phận nào sẽ xác minh và trả lời ạ?",
+      "terms": [
+        "担当窓口"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～を教えていただけますか"
+    }
+  ]
+}

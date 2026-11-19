@@ -1,0 +1,385 @@
+{
+  "code": "T-032",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "915fd278700082234b4f938259aa216ac20edfbb67ceea1cddf1616314b4fc52",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "permission": "Hỏi điều kiện nuôi ở tòa nhà",
+    "vet": "Mô tả tình trạng khi đi khám",
+    "follow": "Hỏi lại và theo dõi sau khám",
+    "boarding": "Gửi thú và chốt cách báo",
+    "neighbors": "Trao đổi với hàng xóm về thú cưng"
+  },
+  "items": [
+    {
+      "id": "T-032-V13-001",
+      "group": "permission",
+      "role_vi": "Người sắp nuôi chó hỏi quản lý nhà",
+      "gender": "female",
+      "ja": "この建物で小型犬を飼えるか、契約書と飼育規則を確認したいです。",
+      "vi": "Tôi muốn xem hợp đồng và nội quy nuôi thú xem tòa nhà này có cho nuôi chó nhỏ không.",
+      "terms": [
+        "小型犬",
+        "飼育規則"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～か確認したい"
+    },
+    {
+      "id": "T-032-V13-002",
+      "group": "permission",
+      "role_vi": "Người định nhận chó nêu thông tin",
+      "gender": "male",
+      "ja": "迎えたいのは雑種の成犬一匹で、体重は五キロくらいです。",
+      "vi": "Tôi định nhận nuôi một con chó lai trưởng thành, nặng khoảng năm ki-lô.",
+      "terms": [
+        "成犬",
+        "匹",
+        "雑種",
+        "体重"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～は～で、体重は～です"
+    },
+    {
+      "id": "T-032-V13-003",
+      "group": "permission",
+      "role_vi": "Người thuê xác nhận giới hạn của căn mình",
+      "gender": "female",
+      "ja": "三〇二号室は、十キロ未満の犬一匹までで、迎える前に申請するという条件で合っていますか。",
+      "vi": "Cho tôi xác nhận phòng 302 chỉ được nuôi tối đa một chó dưới mười ki-lô và phải làm đơn trước khi đón về, đúng không ạ?",
+      "terms": [
+        "匹"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～という条件で合っていますか"
+    },
+    {
+      "id": "T-032-V13-004",
+      "group": "permission",
+      "role_vi": "Người thuê hỏi quy định nơi dùng chung",
+      "gender": "male",
+      "ja": "犬を連れて共用部分を通るときの飼育規則は、どこで確認できますか。",
+      "vi": "Tôi xem nội quy khi dắt chó qua khu vực dùng chung ở đâu ạ?",
+      "terms": [
+        "共用部分",
+        "飼育規則"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "～はどこで確認できますか"
+    },
+    {
+      "id": "T-032-V13-005",
+      "group": "vet",
+      "role_vi": "Chủ nuôi kể lúc bắt đầu ăn ít",
+      "gender": "female",
+      "ja": "昨夜からココの食欲が落ちて、今朝もいつもほど遊びませんでした。",
+      "vi": "Từ tối qua Coco ăn ít hơn, sáng nay nó cũng không chơi nhiều như thường.",
+      "terms": [
+        "昨夜",
+        "食欲"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～から～て、～も～"
+    },
+    {
+      "id": "T-032-V13-006",
+      "group": "vet",
+      "role_vi": "Chủ nuôi báo tình trạng dùng thuốc",
+      "gender": "male",
+      "ja": "先月もらった薬は使い終わっていて、ココには今は薬を飲ませていません。",
+      "vi": "Thuốc được kê tháng trước đã dùng hết, hiện tôi không cho Coco uống thuốc nào.",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～は今は～ていません"
+    },
+    {
+      "id": "T-032-V13-007",
+      "group": "vet",
+      "role_vi": "Chủ nuôi sửa tên con có triệu chứng",
+      "gender": "female",
+      "ja": "食欲が落ちたのはハルではなくココで、ハルは普段どおり食べています。",
+      "vi": "Coco mới là con ăn ít đi, còn Haru vẫn ăn như thường.",
+      "terms": [
+        "食欲"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-032-V13-008",
+      "group": "vet",
+      "role_vi": "Chủ nuôi hỏi khi nào biết kết quả",
+      "gender": "male",
+      "ja": "ココの検査結果はいつごろ、どうやって聞けますか。",
+      "vi": "Khoảng khi nào và bằng cách nào tôi có thể biết kết quả xét nghiệm của Coco ạ?",
+      "terms": [
+        "検査結果"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～はいつごろ、どうやって聞けますか"
+    },
+    {
+      "id": "T-032-V13-009",
+      "group": "follow",
+      "role_vi": "Chủ nuôi cần hiểu đúng cách dùng thuốc",
+      "gender": "female",
+      "ja": "ココの処方薬を与える時間を間違えないように、袋の指示を一緒に確認していただけますか。",
+      "vi": "Để tôi không nhầm giờ cho Coco dùng thuốc đã kê, bác sĩ xem hướng dẫn trên túi thuốc cùng tôi được không ạ?",
+      "terms": [
+        "処方薬"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～を一緒に確認していただけますか"
+    },
+    {
+      "id": "T-032-V13-010",
+      "group": "follow",
+      "role_vi": "Chủ nuôi gọi lại báo từ khi về",
+      "gender": "male",
+      "ja": "今日診ていただいたココが家に帰ってから何も食べず、水もほとんど飲んでいません。",
+      "vi": "Coco được khám hôm nay, từ khi về nhà nó không ăn gì và cũng hầu như không uống nước.",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～てから～ず、～も～"
+    },
+    {
+      "id": "T-032-V13-011",
+      "group": "follow",
+      "role_vi": "Chủ nuôi hỏi nên ghi gì tới ngày tái khám",
+      "gender": "female",
+      "ja": "二日後の再診までに、ココの食べた量や様子について何を記録しておけばいいですか。",
+      "vi": "Đến hôm tái khám sau hai ngày, tôi nên ghi những gì về lượng ăn và tình trạng của Coco ạ?",
+      "terms": [
+        "再診",
+        "記録する",
+        "様子"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～までに何を記録しておけば"
+    },
+    {
+      "id": "T-032-V13-012",
+      "group": "follow",
+      "role_vi": "Chủ nuôi báo lượng ăn ở lần tái khám",
+      "gender": "male",
+      "ja": "今日の再診でお伝えしたいのですが、ココの食事量は昨日より増えたものの、まだ普段の半分くらいです。",
+      "vi": "Trong buổi tái khám hôm nay, tôi muốn báo lượng Coco ăn đã tăng so với hôm qua nhưng vẫn chỉ khoảng nửa mức thường.",
+      "terms": [
+        "再診",
+        "食事量"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ものの、まだ～"
+    },
+    {
+      "id": "T-032-V13-013",
+      "group": "follow",
+      "role_vi": "Chủ nuôi nhắc lại điều sẽ ghi ở nhà",
+      "gender": "female",
+      "ja": "ココの食事量と飲水量、それに元気があるかどうかを家で記録するということで合っていますか。",
+      "vi": "Tôi sẽ ghi ở nhà lượng Coco ăn và uống, cùng với việc nó có hoạt bát không, đúng không ạ?",
+      "terms": [
+        "食事量",
+        "飲水量",
+        "記録する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～ということで合っていますか"
+    },
+    {
+      "id": "T-032-V13-014",
+      "group": "boarding",
+      "role_vi": "Chủ chó xin gửi chó nhỏ qua đêm",
+      "gender": "male",
+      "ja": "こちらのペットホテルで、小型犬を金曜から二泊預かっていただけますか。",
+      "vi": "Chỗ trông thú cưng bên anh có thể nhận một chó nhỏ hai đêm từ thứ Sáu không ạ?",
+      "terms": [
+        "ペットホテル",
+        "小型犬",
+        "泊"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "～を～泊預かっていただけますか"
+    },
+    {
+      "id": "T-032-V13-015",
+      "group": "boarding",
+      "role_vi": "Chủ nuôi hỏi cần chuẩn bị giấy gì",
+      "gender": "female",
+      "ja": "小型犬の受け入れ条件として、接種証明書など持っていくべき書類はありますか。",
+      "vi": "Để gửi chó nhỏ, bên anh có yêu cầu mang giấy tờ như giấy chứng nhận tiêm phòng không ạ?",
+      "terms": [
+        "受け入れ条件",
+        "接種証明書",
+        "小型犬"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～に必要な～はありますか"
+    },
+    {
+      "id": "T-032-V13-016",
+      "group": "boarding",
+      "role_vi": "Chủ chó tìm nơi khác vì hết chỗ",
+      "gender": "male",
+      "ja": "金曜からは満室で土曜からしか預けられないなら、出発に間に合わないので今回は見送ります。",
+      "vi": "Nếu từ thứ Sáu đã hết chỗ và chỉ gửi được từ thứ Bảy thì không kịp lúc tôi đi, lần này tôi xin không đặt.",
+      "terms": [
+        "満室"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～では間に合わないので"
+    },
+    {
+      "id": "T-032-V13-017",
+      "group": "boarding",
+      "role_vi": "Chủ chó sửa nhầm dịch vụ và chốt giờ đón",
+      "gender": "female",
+      "ja": "お願いしたいのはトリミングではなく宿泊だけで、迎えは日曜の午前十時で合っていますか。",
+      "vi": "Tôi chỉ muốn gửi trông qua đêm, không đặt cắt tỉa, và giờ đón là mười giờ sáng Chủ nhật, đúng không ạ?",
+      "terms": [
+        "宿泊",
+        "トリミング"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-032-V13-018",
+      "group": "boarding",
+      "role_vi": "Chủ chó kiểm số gọi nếu khẩn",
+      "gender": "male",
+      "ja": "ココに急な変化があれば、緊急連絡先に登録した私の携帯に先にご連絡ください。",
+      "vi": "Nếu Coco có thay đổi đột ngột, xin gọi trước vào số di động tôi đã đăng ký làm liên hệ khẩn cấp.",
+      "terms": [
+        "緊急連絡先"
+      ],
+      "scenes": [
+        "S020",
+        "S021"
+      ],
+      "pattern": "～に先にご連絡ください"
+    },
+    {
+      "id": "T-032-V13-019",
+      "group": "boarding",
+      "role_vi": "Chủ chó hỏi quan sát sau khi bỏ bữa",
+      "gender": "female",
+      "ja": "ココが夕食を食べなかったとのことですが、呼吸や歩く様子は普段と比べてどうですか。",
+      "vi": "Tôi được báo Coco không ăn bữa tối, nhịp thở và dáng đi của nó so với bình thường thế nào ạ?",
+      "terms": [
+        "呼吸",
+        "様子"
+      ],
+      "scenes": [
+        "S022",
+        "S023"
+      ],
+      "pattern": "～は普段と比べてどうですか"
+    },
+    {
+      "id": "T-032-V13-020",
+      "group": "boarding",
+      "role_vi": "Chủ chó xin xem ghi chép khi đến đón",
+      "gender": "male",
+      "ja": "ココを迎えに来たので、昨日から今朝までの食事量と飲水量の記録を見せていただけますか。",
+      "vi": "Tôi đến đón Coco, anh cho tôi xem ghi chép lượng ăn và lượng nước uống từ hôm qua đến sáng nay được không ạ?",
+      "terms": [
+        "食事量",
+        "飲水量"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～を見せていただけますか"
+    },
+    {
+      "id": "T-032-V13-021",
+      "group": "neighbors",
+      "role_vi": "Cư dân hỏi lối nào nên dùng khi dắt chó",
+      "gender": "female",
+      "ja": "犬を散歩に連れて行くときは、この建物ではどの出口を使えばいいですか。",
+      "vi": "Khi dắt chó đi dạo, ở tòa nhà này tôi nên dùng lối ra nào ạ?",
+      "terms": [
+        "散歩"
+      ],
+      "scenes": [
+        "S026"
+      ],
+      "pattern": "～ときはどこを通れば"
+    },
+    {
+      "id": "T-032-V13-022",
+      "group": "neighbors",
+      "role_vi": "Chủ chó hỏi giờ và chỗ nghe tiếng sủa",
+      "gender": "male",
+      "ja": "犬の鳴き声がしたのは何時ごろで、どの辺りから聞こえましたか。",
+      "vi": "Anh nghe tiếng chó sủa khoảng mấy giờ và từ phía nào ạ?",
+      "terms": [
+        "鳴き声"
+      ],
+      "scenes": [
+        "S027",
+        "S028"
+      ],
+      "pattern": "～は何時ごろ、どの辺りで～"
+    },
+    {
+      "id": "T-032-V13-023",
+      "group": "neighbors",
+      "role_vi": "Chủ chó xin kiểm lại sau khi đổi chỗ chó buổi tối",
+      "gender": "female",
+      "ja": "今夜からココを玄関の近くにいさせないようにするので、一週間後にまだ鳴き声が聞こえるか伺ってもいいですか。",
+      "vi": "Từ tối nay tôi sẽ không để Coco ở gần cửa ra vào, một tuần nữa tôi hỏi anh xem có còn nghe tiếng sủa không nhé?",
+      "terms": [
+        "鳴き声"
+      ],
+      "scenes": [
+        "S029",
+        "S030"
+      ],
+      "pattern": "～ので、一週間後にまた伺っても"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "code": "T-065",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "24596b759711a89cee71b52944040544883b048f222b61d35feeb134ca37b5c4",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "opening": "Mở đầu và xác nhận đúng buổi phỏng vấn",
+    "evidence": "Kể ví dụ và phần việc trực tiếp làm",
+    "work": "Hỏi nhiệm vụ và cách hướng dẫn",
+    "follow": "Hỏi đầu mối và thời gian phản hồi"
+  },
+  "items": [
+    {
+      "id": "T-065-V13-001",
+      "group": "opening",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "ミンと申しまして、前職では通販のお客様からの問い合わせを担当しておりました。",
+      "vi": "Tôi là Minh. Ở chỗ làm trước, tôi phụ trách trả lời thắc mắc của khách mua hàng trực tuyến.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜と申しまして、前職では"
+    },
+    {
+      "id": "T-065-V13-002",
+      "group": "opening",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "配送の問い合わせでは、注文番号で履歴を調べて、お客様に確認結果をお伝えするところまで担当していました。",
+      "vi": "Với thắc mắc về giao hàng, tôi phụ trách từ tra lịch sử theo mã đơn đến báo kết quả kiểm tra cho khách.",
+      "terms": [
+        "履歴"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜して、〜するところまで担当する"
+    },
+    {
+      "id": "T-065-V13-003",
+      "group": "opening",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "問い合わせの優先順位のところまでは聞き取れたのですが、その後の質問をもう一度お願いできますか。",
+      "vi": "Tôi nghe được đến phần thứ tự ưu tiên khi xử lý yêu cầu, chị nhắc lại phần câu hỏi sau đó được không ạ?",
+      "terms": [
+        "優先順位",
+        "聞き取る"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜までは聞き取れたのですが"
+    },
+    {
+      "id": "T-065-V13-004",
+      "group": "opening",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "ご案内ではカスタマーサポートと伺っていたのですが、念のため今日の面接の担当部署を確認させていただけますか。",
+      "vi": "Theo thư mời tôi được biết đây là vị trí hỗ trợ khách hàng, để chắc chắn, tôi có thể hỏi lại bộ phận phụ trách buổi phỏng vấn hôm nay không ạ?",
+      "terms": [
+        "念のため",
+        "担当部署",
+        "確認する"
+      ],
+      "scenes": [
+        "S003",
+        "S005"
+      ],
+      "pattern": "念のため確認させていただけますか"
+    },
+    {
+      "id": "T-065-V13-005",
+      "group": "opening",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "電車の遅れで面接に十分ほど遅れそうなのですが、本日お会いいただくことは可能でしょうか。",
+      "vi": "Tàu chậm nên có lẽ tôi đến phỏng vấn muộn khoảng mười phút, hôm nay chị vẫn có thể gặp tôi được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜そうなのですが、可能でしょうか"
+    },
+    {
+      "id": "T-065-V13-006",
+      "group": "evidence",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "返送された荷物の問い合わせでは、注文番号と返送日を調べてから倉庫の担当者に状況を確認しました。",
+      "vi": "Khi khách hỏi về kiện hàng bị trả về, tôi tra mã đơn và ngày hàng bị trả rồi xác nhận tình trạng với người phụ trách kho.",
+      "terms": [
+        "担当者",
+        "確認する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜を調べてから確認する"
+    },
+    {
+      "id": "T-065-V13-007",
+      "group": "evidence",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "再発送するか判断したのは倉庫で、私は決まった発送日をお客様にお伝えする役割でした。",
+      "vi": "Bộ phận kho quyết định có gửi lại hàng hay không, còn vai trò của tôi là báo ngày gửi đã chốt cho khách.",
+      "terms": [
+        "役割"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "判断したのは〜で、私は"
+    },
+    {
+      "id": "T-065-V13-008",
+      "group": "evidence",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "住所変更の対応を改善した成果は、チームで変更前と変更後の聞き直しの件数を比べて確かめました。",
+      "vi": "Cả nhóm so số yêu cầu phải hỏi lại khách trước và sau khi cải tiến cách xử lý đổi địa chỉ để kiểm chứng kết quả.",
+      "terms": [
+        "成果",
+        "件数"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜の成果は、〜を比べて確かめた"
+    },
+    {
+      "id": "T-065-V13-009",
+      "group": "evidence",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "私が提案したのは最初に確認する項目で、それをチーム全体で試して正式な手順にしました。",
+      "vi": "Tôi đề xuất các mục cần xác nhận ngay từ đầu, rồi cả nhóm cùng thử và đưa vào quy trình chính thức.",
+      "terms": [
+        "提案する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "私が提案したのは〜で、チーム全体で〜"
+    },
+    {
+      "id": "T-065-V13-010",
+      "group": "evidence",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "問い合わせ管理システムの実務経験はありませんが、練習用のツールで担当者と期限を入力する練習をしています。",
+      "vi": "Tôi chưa từng dùng hệ thống quản lý yêu cầu trong công việc, hiện tôi đang tập nhập người phụ trách và thời hạn trên công cụ thực hành.",
+      "terms": [
+        "実務経験",
+        "練習用",
+        "担当者"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜経験はありませんが、練習している"
+    },
+    {
+      "id": "T-065-V13-011",
+      "group": "evidence",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "問い合わせを引き継ぐときは、確認できたこととまだ分からないことを分けて伝えていました。",
+      "vi": "Khi bàn giao yêu cầu, tôi nói riêng phần đã xác minh được và phần còn chưa rõ.",
+      "terms": [
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜と〜を分けて伝える"
+    },
+    {
+      "id": "T-065-V13-012",
+      "group": "evidence",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "私は管理職ではなく、受け持った案件で倉庫とお客様の間に入って調整する立場でした。",
+      "vi": "Tôi không giữ vị trí quản lý, với những yêu cầu mình phụ trách, tôi làm đầu mối phối hợp giữa kho và khách hàng.",
+      "terms": [
+        "管理職"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "私は〜ではなく、〜する立場"
+    },
+    {
+      "id": "T-065-V13-013",
+      "group": "work",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "御社では、入社一か月目に何ができると順調だと評価されますか。",
+      "vi": "Ở quý công ty, trong tháng đầu người mới làm được gì thì được đánh giá là theo kịp công việc ạ?",
+      "terms": [
+        "御社"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "何ができると〜と評価される"
+    },
+    {
+      "id": "T-065-V13-014",
+      "group": "work",
+      "role_vi": "Người phỏng vấn tuyển dụng",
+      "gender": "female",
+      "ja": "すぐに答えが出ない問い合わせでは、確認できたことと次に連絡する時刻を分けてお客様にお伝えします。",
+      "vi": "Với yêu cầu chưa trả lời ngay được, nhân viên sẽ nói rõ với khách phần đã xác minh và giờ sẽ liên hệ lại.",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜と〜を分けて伝える"
+    },
+    {
+      "id": "T-065-V13-015",
+      "group": "work",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "採用していただけた場合、最初の一週間の業務と指導担当について教えていただけますか。",
+      "vi": "Nếu được nhận, chị cho tôi biết công việc trong tuần đầu và ai sẽ phụ trách hướng dẫn được không ạ?",
+      "terms": [
+        "指導担当"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜場合、〜について教えていただけますか"
+    },
+    {
+      "id": "T-065-V13-016",
+      "group": "work",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "勤務地に横浜と川崎の二つがあるのですが、普段はどちらに出勤することが多いですか。",
+      "vi": "Thông tin tuyển dụng ghi hai nơi làm là Yokohama và Kawasaki, thông thường tôi sẽ đến làm ở đâu nhiều hơn ạ?",
+      "terms": [
+        "勤務地"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜のですが、普段はどちら"
+    },
+    {
+      "id": "T-065-V13-017",
+      "group": "follow",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "遅番の終了時刻について、面接の後はどなたに確認すればよろしいですか。",
+      "vi": "Về giờ kết thúc ca muộn, sau buổi phỏng vấn tôi nên hỏi ai ạ?",
+      "terms": [
+        "遅番",
+        "終了時刻",
+        "確認する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "どなたに確認すればよろしい"
+    },
+    {
+      "id": "T-065-V13-018",
+      "group": "follow",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "選考結果は、金曜日をめどに紹介会社を通じてご連絡いただけるという理解でよろしいでしょうか。",
+      "vi": "Tôi hiểu là kết quả tuyển dụng dự kiến sẽ được báo qua công ty giới thiệu việc làm vào khoảng thứ Sáu, đúng không ạ?",
+      "terms": [
+        "選考結果",
+        "めど",
+        "紹介会社"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜という理解でよろしい"
+    },
+    {
+      "id": "T-065-V13-019",
+      "group": "follow",
+      "role_vi": "Ứng viên phỏng vấn tuyển dụng",
+      "gender": "male",
+      "ja": "来週の月曜になっても選考結果の連絡がなければ、紹介会社に状況を伺ってもよろしいでしょうか。",
+      "vi": "Nếu đến thứ Hai tuần sau vẫn chưa có tin về kết quả tuyển dụng, tôi có thể hỏi công ty giới thiệu việc làm về tình hình không ạ?",
+      "terms": [
+        "選考結果",
+        "紹介会社"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜になっても〜がなければ"
+    },
+    {
+      "id": "T-065-V13-020",
+      "group": "follow",
+      "role_vi": "Ứng viên gọi chuyên viên giới thiệu việc làm",
+      "gender": "male",
+      "ja": "問い合わせの受付は十九時までとありますが、遅番の日に実際は何時まで勤務するのか確認していただけますか。",
+      "vi": "Thông tin ghi tiếp nhận yêu cầu của khách đến 7 giờ tối, anh hỏi giúp ngày có ca muộn thì thực tế làm đến mấy giờ được không ạ?",
+      "terms": [
+        "遅番",
+        "確認する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜とありますが、実際は何時まで"
+    }
+  ]
+}

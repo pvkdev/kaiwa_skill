@@ -1,0 +1,337 @@
+{
+  "code": "T-082",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "9d344fb6f8c821cb7c4bb7dfa471369ca4bf9a4d9f3dede501dc84173764e690",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "input": "Xác định bản cần có để bắt đầu",
+    "delay": "Báo chậm và thay thứ tự làm",
+    "owner": "Chốt người xác nhận số liệu",
+    "schedule": "Nói rõ điều kiện rồi chốt lịch"
+  },
+  "items": [
+    {
+      "id": "T-082-V13-001",
+      "group": "input",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "受付とデモの位置がわかってから、案内図の経路を考える作業に着手します。",
+      "vi": "Khi biết vị trí bàn đăng ký và khu demo, em mới bắt đầu tính đường đi để thể hiện trên sơ đồ hướng dẫn ạ.",
+      "terms": [
+        "案内図",
+        "経路",
+        "着手する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～てから"
+    },
+    {
+      "id": "T-082-V13-002",
+      "group": "input",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "入口から受付までの経路を試すだけなら、二か所の位置がわかる図があれば十分です。",
+      "vi": "Nếu chỉ thử đường từ cửa vào tới bàn đăng ký thì sơ đồ cho biết vị trí hai chỗ đó là đủ ạ.",
+      "terms": [
+        "経路"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～があれば十分"
+    },
+    {
+      "id": "T-082-V13-003",
+      "group": "input",
+      "role_vi": "Nhân viên phụ trách sơ đồ bố trí",
+      "gender": "male",
+      "ja": "三か所の位置だけ入れた試作用の図なら、今日の午後には渡せます。",
+      "vi": "Nếu là sơ đồ thử chỉ ghi vị trí ba chỗ thì chiều nay anh chuyển được.",
+      "terms": [
+        "試作用"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "～だけ先に渡す"
+    },
+    {
+      "id": "T-082-V13-004",
+      "group": "input",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "経路は試作用の図で先に見て、配布用の案内は最終版を確認してから作ります。",
+      "vi": "Em sẽ xem trước đường đi trên sơ đồ thử, còn bản hướng dẫn để phát thì em đợi kiểm bản chốt rồi mới làm ạ.",
+      "terms": [
+        "試作用",
+        "最終版",
+        "配布用"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～てから"
+    },
+    {
+      "id": "T-082-V13-005",
+      "group": "input",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "机の配置はまだ仮なので、今は曲がり角で迷いそうかどうかだけ見ます。",
+      "vi": "Vị trí bàn vẫn còn tạm, nên giờ em chỉ xem ở chỗ rẽ người đi có dễ lạc không ạ.",
+      "terms": [
+        "配置"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～かどうかだけ"
+    },
+    {
+      "id": "T-082-V13-006",
+      "group": "delay",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "会場の図が一日遅れると、経路の確認も看板の準備も後ろにずれます。",
+      "vi": "Nếu sơ đồ hội trường chậm một ngày thì cả việc kiểm đường đi và chuẩn bị biển chỉ dẫn đều bị lùi ạ.",
+      "terms": [
+        "遅れる",
+        "経路"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～と～が遅れる"
+    },
+    {
+      "id": "T-082-V13-007",
+      "group": "delay",
+      "role_vi": "Trưởng nhóm",
+      "gender": "female",
+      "ja": "会場の図が来るまでは、受付で話す共通の説明を先に進めましょう。",
+      "vi": "Trong lúc đợi sơ đồ hội trường, mình soạn trước phần hướng dẫn chung ở bàn đăng ký nhé.",
+      "terms": [],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～を先に進める"
+    },
+    {
+      "id": "T-082-V13-008",
+      "group": "delay",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "木曜の昼までに、金曜の試しに看板の印刷が間に合う見込みかお伝えします。",
+      "vi": "Muộn nhất trưa thứ Năm, em sẽ báo xem dự kiến có in kịp biển cho buổi thử thứ Sáu không ạ.",
+      "terms": [
+        "見込み",
+        "間に合う"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～までに見込みを伝える"
+    },
+    {
+      "id": "T-082-V13-009",
+      "group": "delay",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "金曜の試しに主な経路だけ間に合わせるなら、別の入口からの案内は後回しにしてもいいですか。",
+      "vi": "Nếu buổi thử thứ Sáu chỉ cần kịp chuẩn bị tuyến chính, phần hướng dẫn từ lối vào khác em để sau được không ạ?",
+      "terms": [
+        "経路",
+        "後回しにする"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～なら後回しに"
+    },
+    {
+      "id": "T-082-V13-010",
+      "group": "delay",
+      "role_vi": "Trưởng nhóm",
+      "gender": "female",
+      "ja": "看板の印刷が間に合わなければ、本番と同じ大きさの紙で代用して試しましょう。",
+      "vi": "Nếu không kịp in biển, mình dùng tạm giấy cùng kích thước với biển thật để thử nhé.",
+      "terms": [
+        "代用する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～で代用する"
+    },
+    {
+      "id": "T-082-V13-011",
+      "group": "delay",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "設営担当に机の位置を確認してから、看板を印刷できるか報告します。",
+      "vi": "Em sẽ hỏi người phụ trách bố trí hội trường về vị trí bàn rồi báo có in biển được không ạ.",
+      "terms": [
+        "設営"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～を確認してから"
+    },
+    {
+      "id": "T-082-V13-012",
+      "group": "owner",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "発注表と図面で机の寸法が違いますが、設計に渡す数値は誰が確認しますか。",
+      "vi": "Kích thước bàn trên bảng đặt hàng khác với trên sơ đồ, ai sẽ kiểm số chuyển cho bên Thiết kế ạ?",
+      "terms": [
+        "寸法"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "誰が確認するか"
+    },
+    {
+      "id": "T-082-V13-013",
+      "group": "owner",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "机の寸法を確認する担当者を、設営側で一人決めていただけますか。",
+      "vi": "Chị chỉ định giúp một người bên bố trí hội trường phụ trách xác nhận kích thước bàn được không ạ?",
+      "terms": [
+        "担当者",
+        "寸法"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-082-V13-014",
+      "group": "owner",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "確認した人と確認日が入った表を見てから、図面の仮の寸法を差し替えてください。",
+      "vi": "Anh xem bảng có tên người kiểm và ngày xác nhận rồi mới thay kích thước tạm trên sơ đồ nhé.",
+      "terms": [
+        "確認日",
+        "差し替える",
+        "寸法"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～てから"
+    },
+    {
+      "id": "T-082-V13-015",
+      "group": "owner",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "寸法の担当者がお休みなので、正午までに代理を立てていただけますか。",
+      "vi": "Người phụ trách xác nhận kích thước hôm nay nghỉ, chị cử người thay muộn nhất trưa nay giúp em được không ạ?",
+      "terms": [
+        "担当者",
+        "代理",
+        "寸法"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-082-V13-016",
+      "group": "owner",
+      "role_vi": "Trưởng nhóm",
+      "gender": "female",
+      "ja": "正午までに寸法が決まらなくても、設計には予定どおり状況を伝えてね。",
+      "vi": "Dù đến trưa vẫn chưa chốt kích thước, em cứ báo tình hình cho bên Thiết kế như đã hẹn nhé.",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "決まらなくても～する"
+    },
+    {
+      "id": "T-082-V13-017",
+      "group": "schedule",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "午前十一時までに確定版の図が来れば、午後三時に誘導の練習ができます。",
+      "vi": "Nếu muộn nhất 11 giờ sáng có sơ đồ đã chốt, ba giờ chiều mình có thể tập dẫn khách ạ.",
+      "terms": [
+        "確定版"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～までに来れば"
+    },
+    {
+      "id": "T-082-V13-018",
+      "group": "schedule",
+      "role_vi": "Người phụ trách bàn đăng ký",
+      "gender": "male",
+      "ja": "誘導の練習ができるかまだわからないなら、午後三時は仮で空けておきます。",
+      "vi": "Nếu vẫn chưa biết tập dẫn khách được không, anh sẽ tạm giữ trống khung ba giờ chiều.",
+      "terms": [
+        "仮"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "ひとまず仮で"
+    },
+    {
+      "id": "T-082-V13-019",
+      "group": "schedule",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "練習の開始時刻は午後三時で仮に押さえていますが、図が届いてから正式に決めます。",
+      "vi": "Em tạm giữ giờ bắt đầu tập là ba giờ chiều. Khi sơ đồ tới, em mới chốt chính thức ạ.",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "まだ候補だと伝える"
+    },
+    {
+      "id": "T-082-V13-020",
+      "group": "schedule",
+      "role_vi": "Nhân viên phụ trách sơ đồ chỉ đường",
+      "gender": "female",
+      "ja": "確定版の図が届いて経路を確認できたので、今日の三時から予定どおり練習できます。",
+      "vi": "Em đã nhận sơ đồ chốt và kiểm được đường đi, nên hôm nay mình có thể tập từ ba giờ như dự kiến ạ.",
+      "terms": [
+        "確定版"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～どおりできる"
+    },
+    {
+      "id": "T-082-V13-021",
+      "group": "schedule",
+      "role_vi": "Người phụ trách bàn đăng ký",
+      "gender": "male",
+      "ja": "誘導の練習は三時から入口で始めると、受付のメンバーには私から伝えます。",
+      "vi": "Anh sẽ báo các bạn bên đăng ký là buổi tập dẫn khách bắt đầu lúc ba giờ ở lối vào.",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～には私から"
+    }
+  ]
+}

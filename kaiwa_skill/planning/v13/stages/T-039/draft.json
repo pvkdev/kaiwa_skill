@@ -1,0 +1,392 @@
+{
+  "code": "T-039",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "9271f4a8f49a5ee43b26eb3b581c164f419a6ff01c962b38f1b0c2acecc7a343",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "access": "Báo lỗi và hỏi về hạn chế",
+    "details": "Kiểm và cập nhật thông tin tài khoản",
+    "transfer": "Tra khoản chuyển chưa đến",
+    "follow": "Theo dõi việc xử lý",
+    "callback": "Xác minh cuộc gọi và tách từng yêu cầu"
+  },
+  "items": [
+    {
+      "id": "T-039-V13-001",
+      "group": "access",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "今朝からアプリで振り込めません。",
+      "vi": "Từ sáng nay tôi không chuyển khoản qua ứng dụng được.",
+      "terms": [
+        "振り込む"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜から〜できない"
+    },
+    {
+      "id": "T-039-V13-002",
+      "group": "access",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "残高は見られるのですが、振り込もうとするとエラー表示が出ます。",
+      "vi": "Tôi vẫn xem được số dư, nhưng cứ thử chuyển khoản là màn hình báo lỗi.",
+      "terms": [
+        "残高",
+        "振り込む",
+        "エラー表示"
+      ],
+      "scenes": [
+        "S001",
+        "S004"
+      ],
+      "pattern": "〜しようとすると"
+    },
+    {
+      "id": "T-039-V13-003",
+      "group": "access",
+      "role_vi": "Nhân viên quầy ngân hàng",
+      "gender": "male",
+      "ja": "口座を確認しますので、本人確認書類を見せていただけますか。",
+      "vi": "Tôi sẽ kiểm tra tài khoản, anh/chị cho tôi xem giấy tờ xác minh danh tính được không ạ?",
+      "terms": [
+        "口座",
+        "本人確認書類"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜ので、見せていただけますか"
+    },
+    {
+      "id": "T-039-V13-004",
+      "group": "access",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "アプリでもATMでも振り込めなかったので、口座に利用制限がかかっていないか見ていただけますか。",
+      "vi": "Tôi đã thử chuyển khoản cả qua ứng dụng lẫn ATM đều không được, anh/chị kiểm tra giúp xem tài khoản có bị hạn chế không ạ?",
+      "terms": [
+        "振り込む",
+        "口座",
+        "利用制限"
+      ],
+      "scenes": [
+        "S001",
+        "S004"
+      ],
+      "pattern": "〜か見ていただけますか"
+    },
+    {
+      "id": "T-039-V13-005",
+      "group": "details",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "口座名義と在留カードの表記が一文字違うのですが、どちらを振込先の名義として伝えればいいですか。",
+      "vi": "Tên trên tài khoản khác tên trên thẻ cư trú một ký tự, tôi nên báo tên nào cho người chuyển tiền vào tài khoản của tôi ạ?",
+      "terms": [
+        "口座名義",
+        "在留カード",
+        "表記",
+        "振込先"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "どちらを〜すればいい"
+    },
+    {
+      "id": "T-039-V13-006",
+      "group": "details",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "登録住所が引っ越す前の住所のままなので、変更方法を教えていただけますか。",
+      "vi": "Địa chỉ đăng ký vẫn là địa chỉ trước khi tôi chuyển nhà, anh/chị chỉ giúp tôi cách đổi được không ạ?",
+      "terms": [
+        "登録住所"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜ので、教えていただけますか"
+    },
+    {
+      "id": "T-039-V13-007",
+      "group": "details",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "住所変更に必要な書類をそろえてから、窓口に来ればいいですか。",
+      "vi": "Sau khi chuẩn bị đủ giấy đổi địa chỉ, tôi đến quầy là được phải không ạ?",
+      "terms": [
+        "住所変更"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜てから〜すればいい"
+    },
+    {
+      "id": "T-039-V13-008",
+      "group": "details",
+      "role_vi": "Nhân viên quầy ngân hàng",
+      "gender": "male",
+      "ja": "口座名義の確認は、問い合わせ番号を付けて担当部署に引き継ぎます。",
+      "vi": "Tôi sẽ gắn mã tra cứu cho yêu cầu kiểm tra tên tài khoản rồi chuyển đến bộ phận phụ trách.",
+      "terms": [
+        "口座名義",
+        "問い合わせ番号",
+        "担当部署",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜を付けて〜に引き継ぐ"
+    },
+    {
+      "id": "T-039-V13-009",
+      "group": "transfer",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "昨日他行へ振り込んだ三万円が、まだ受取人の口座に入っていないそうです。",
+      "vi": "Người nhận báo khoản 30.000 yên tôi chuyển sang ngân hàng khác hôm qua vẫn chưa vào tài khoản.",
+      "terms": [
+        "他行",
+        "振り込む",
+        "受取人",
+        "口座"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "まだ〜ていないそうです"
+    },
+    {
+      "id": "T-039-V13-010",
+      "group": "transfer",
+      "role_vi": "Nhân viên ngân hàng",
+      "gender": "male",
+      "ja": "着金したか調べますので、振込明細か受付番号を見せていただけますか。",
+      "vi": "Tôi sẽ kiểm tra tiền đã đến tài khoản người nhận chưa, anh/chị cho tôi xem thông tin chuyển khoản hoặc mã tiếp nhận được không ạ?",
+      "terms": [
+        "着金",
+        "振込明細",
+        "受付番号"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜ので、見せていただけますか"
+    },
+    {
+      "id": "T-039-V13-011",
+      "group": "transfer",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "振込日を八月十日とお伝えしましたが、控えにある十月八日が正しい日付です。",
+      "vi": "Tôi vừa báo ngày chuyển là 10 tháng 8, nhưng ngày đúng trên biên nhận là 8 tháng 10.",
+      "terms": [
+        "控え",
+        "日付"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜と伝えましたが、〜が正しい"
+    },
+    {
+      "id": "T-039-V13-012",
+      "group": "transfer",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "振込先が他行の場合、受取人にも自分の銀行に確認してもらったほうがいいですか。",
+      "vi": "Nếu tài khoản nhận ở ngân hàng khác, tôi có nên nhờ người nhận hỏi thêm bên ngân hàng của họ không ạ?",
+      "terms": [
+        "振込先",
+        "他行",
+        "受取人"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜場合、〜てもらったほうがいい"
+    },
+    {
+      "id": "T-039-V13-013",
+      "group": "transfer",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "振り込みが重複しないよう、前の処理状況が分かるまで送り直さずに待ちます。",
+      "vi": "Để tránh chuyển trùng, tôi sẽ chờ đến khi biết tình trạng giao dịch trước rồi mới tính chuyện gửi lại.",
+      "terms": [
+        "振り込む",
+        "重複"
+      ],
+      "scenes": [
+        "S003",
+        "S010"
+      ],
+      "pattern": "〜よう、〜まで待つ"
+    },
+    {
+      "id": "T-039-V13-014",
+      "group": "follow",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "昨日問い合わせた振り込みの件で、受付番号から処理状況を調べていただけますか。",
+      "vi": "Về khoản chuyển tôi hỏi hôm qua, anh/chị tra tình trạng giao dịch theo mã tiếp nhận giúp tôi được không ạ?",
+      "terms": [
+        "振り込む",
+        "受付番号"
+      ],
+      "scenes": [
+        "S010",
+        "S013"
+      ],
+      "pattern": "〜の件で、〜ていただけますか"
+    },
+    {
+      "id": "T-039-V13-015",
+      "group": "follow",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "本人確認が済んだと伺いましたが、振り込みの利用制限はもう解除されていますか。",
+      "vi": "Tôi được báo là đã xác minh danh tính xong, vậy hạn chế chuyển khoản đã được gỡ chưa ạ?",
+      "terms": [
+        "振り込む",
+        "利用制限",
+        "解除する"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "〜と伺いましたが、もう"
+    },
+    {
+      "id": "T-039-V13-016",
+      "group": "follow",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "口座の利用制限について、担当部署と直接お話しすることはできますか。",
+      "vi": "Tôi có thể trao đổi trực tiếp với bộ phận phụ trách về việc tài khoản bị hạn chế không ạ?",
+      "terms": [
+        "口座",
+        "利用制限",
+        "担当部署"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "直接お話しすることはできる"
+    },
+    {
+      "id": "T-039-V13-017",
+      "group": "follow",
+      "role_vi": "Nhân viên ngân hàng",
+      "gender": "male",
+      "ja": "振り込みを再開できるか確認してから、こちらから折り返します。",
+      "vi": "Sau khi kiểm tra anh/chị có thể chuyển khoản lại được chưa, bên tôi sẽ gọi lại.",
+      "terms": [
+        "振り込む",
+        "折り返す"
+      ],
+      "scenes": [
+        "S014",
+        "S016"
+      ],
+      "pattern": "〜か確認してから"
+    },
+    {
+      "id": "T-039-V13-018",
+      "group": "callback",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "恐れ入りますが、口座の件は公式窓口の番号にかけ直して確認してもよろしいですか。",
+      "vi": "Xin phép, tôi gọi lại số chính thức của ngân hàng để xác minh việc liên quan đến tài khoản được không ạ?",
+      "terms": [
+        "口座",
+        "公式窓口",
+        "かけ直す"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "〜てもよろしいですか"
+    },
+    {
+      "id": "T-039-V13-019",
+      "group": "callback",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "口座の確認については、暗証番号や認証コードを電話でお伝えすることはできません。",
+      "vi": "Về việc xác minh tài khoản, tôi không thể cung cấp mã PIN hay mã xác thực qua điện thoại.",
+      "terms": [
+        "口座",
+        "暗証番号",
+        "認証コード"
+      ],
+      "scenes": [
+        "S002",
+        "S017"
+      ],
+      "pattern": "〜することはできません"
+    },
+    {
+      "id": "T-039-V13-020",
+      "group": "callback",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "本人確認と住所変更では必要な書類が違うそうなので、それぞれ何が必要か教えていただけますか。",
+      "vi": "Tôi được báo là xác minh danh tính và đổi địa chỉ cần giấy tờ khác nhau, anh/chị cho tôi biết mỗi việc cần giấy gì được không ạ?",
+      "terms": [
+        "住所変更"
+      ],
+      "scenes": [
+        "S018",
+        "S019"
+      ],
+      "pattern": "〜ので、教えていただけますか"
+    },
+    {
+      "id": "T-039-V13-021",
+      "group": "callback",
+      "role_vi": "Nhân viên ngân hàng",
+      "gender": "male",
+      "ja": "口座の利用制限と住所変更は、問い合わせ番号を分けてお伝えします。",
+      "vi": "Tôi sẽ báo cho anh/chị mã tra cứu riêng cho hai việc, hạn chế tài khoản và đổi địa chỉ.",
+      "terms": [
+        "口座",
+        "利用制限",
+        "住所変更",
+        "問い合わせ番号"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜を分けてお伝えします"
+    },
+    {
+      "id": "T-039-V13-022",
+      "group": "callback",
+      "role_vi": "Khách gọi hoặc đến ngân hàng",
+      "gender": "female",
+      "ja": "口座がまた使えるようになったのですが、前の振り込みが着金したかどうかも確認していただけますか。",
+      "vi": "Tài khoản dùng lại được rồi, anh/chị kiểm tra thêm giúp tôi xem khoản chuyển trước đã đến tài khoản người nhận chưa được không ạ?",
+      "terms": [
+        "口座",
+        "振り込む",
+        "着金"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜かどうかも確認していただけますか"
+    }
+  ]
+}

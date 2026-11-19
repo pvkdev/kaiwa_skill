@@ -1,0 +1,390 @@
+{
+  "code": "T-011",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "78165ca255a42ea4479adb76cc6a998e5725c5965192b2e8aab118fa4e6411d1",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "pick": "Chọn món và người nhận",
+    "give": "Trao quà và tôn trọng câu trả lời",
+    "receive": "Nhận hoặc từ chối có chừng mực",
+    "late": "Báo quà chậm và hẹn cách trao",
+    "pool": "Bàn đóng góp và trao quà chung"
+  },
+  "items": [
+    {
+      "id": "T-011-V13-001",
+      "group": "pick",
+      "role_vi": "Bạn hỏi nên chọn quà thăm nhà",
+      "gender": "female",
+      "ja": "初めて森さんの家に伺うんだけど、手土産は何がいいかな。",
+      "vi": "Tớ sắp đến nhà anh Mori lần đầu, theo cậu nên mang quà gì?",
+      "terms": [
+        "手土産"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～なら何がいいかな"
+    },
+    {
+      "id": "T-011-V13-002",
+      "group": "pick",
+      "role_vi": "Bạn tư vấn chọn hộp bánh",
+      "gender": "male",
+      "ja": "ご家族で分けやすいものなら、個包装の焼き菓子はどう？",
+      "vi": "Nếu chọn món dễ chia cho cả nhà thì bánh nướng gói riêng từng phần được không?",
+      "terms": [
+        "焼き菓子",
+        "個包装"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "～なら～はどう？"
+    },
+    {
+      "id": "T-011-V13-003",
+      "group": "pick",
+      "role_vi": "Bạn chọn quà cho người kiêng sữa",
+      "gender": "female",
+      "ja": "森さんは牛乳を控えているから、渡す前にこのお菓子に乳成分が入っているかどうか確かめたいな。",
+      "vi": "Anh Mori đang kiêng sữa nên trước khi tặng, tớ muốn kiểm tra xem bánh này có thành phần từ sữa không.",
+      "terms": [
+        "控える",
+        "乳成分"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～かどうか確かめたい"
+    },
+    {
+      "id": "T-011-V13-004",
+      "group": "pick",
+      "role_vi": "Bạn đính chính hộp bánh dành cho cả nhà",
+      "gender": "male",
+      "ja": "この焼き菓子は森さんだけじゃなくて、ご家族みんなに食べてもらうつもりなんだ。",
+      "vi": "Hộp bánh nướng này tớ định mời cả nhà cùng ăn, chứ không tặng riêng anh Mori.",
+      "terms": [
+        "焼き菓子"
+      ],
+      "scenes": [
+        "S004",
+        "S005"
+      ],
+      "pattern": "～だけじゃなくて～"
+    },
+    {
+      "id": "T-011-V13-005",
+      "group": "give",
+      "role_vi": "Người được giúp chuyển đồ trao quà cảm ơn",
+      "gender": "female",
+      "ja": "先日荷物の運び出しを手伝っていただいたお礼に、よろしければこのお茶をお受け取りください。",
+      "vi": "Hôm trước anh giúp tôi chuyển đồ, nếu anh thấy tiện thì xin nhận ít trà này thay lời cảm ơn ạ.",
+      "terms": [],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～ていただいたお礼に"
+    },
+    {
+      "id": "T-011-V13-006",
+      "group": "give",
+      "role_vi": "Khách trao bánh cho gia đình chủ nhà",
+      "gender": "male",
+      "ja": "近所で評判の焼き菓子を持ってきたので、よかったら皆さんでどうぞ。",
+      "vi": "Tôi mang ít bánh nướng nổi tiếng trong khu tôi ở, nếu anh thích thì mời cả nhà dùng nhé.",
+      "terms": [
+        "焼き菓子",
+        "皆さんでどうぞ"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～ので、皆さんでどうぞ"
+    },
+    {
+      "id": "T-011-V13-007",
+      "group": "give",
+      "role_vi": "Khách để chủ nhà thoải mái nhận quà",
+      "gender": "female",
+      "ja": "お礼に選んだちょっとしたものですから、お返しは気にしないでくださいね。",
+      "vi": "Đây chỉ là món nhỏ tôi chọn để cảm ơn, anh đừng bận tâm chuyện đáp lễ nhé.",
+      "terms": [
+        "ちょっとしたもの",
+        "お返し"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～は気にしないで"
+    },
+    {
+      "id": "T-011-V13-008",
+      "group": "give",
+      "role_vi": "Người tặng vui vì món hợp sở thích",
+      "gender": "male",
+      "ja": "前に話していた写真展のカード、気に入ってもらえてよかったです。",
+      "vi": "Anh thích tấm bưu thiếp triển lãm ảnh mình từng nói tới là tôi vui rồi.",
+      "terms": [
+        "気に入る"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～てもらえてよかった"
+    },
+    {
+      "id": "T-011-V13-009",
+      "group": "give",
+      "role_vi": "Người tặng chấp nhận quà bị từ chối",
+      "gender": "female",
+      "ja": "個人的な贈り物を受け取るのが難しそうなら、このお菓子は持ち帰りますね。",
+      "vi": "Nếu anh thấy khó nhận quà riêng, tôi xin mang bánh này về nhé.",
+      "terms": [
+        "持ち帰る",
+        "贈り物",
+        "受け取る"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～そうなら持ち帰ります"
+    },
+    {
+      "id": "T-011-V13-010",
+      "group": "give",
+      "role_vi": "Người chỉ tiện nhận quà cho nhóm",
+      "gender": "male",
+      "ja": "私個人への贈り物は遠慮したいですが、次の集まりで皆さんと分けるお菓子なら受け取れます。",
+      "vi": "Quà cho riêng tôi thì tôi xin phép không nhận, còn nếu là bánh chia cho mọi người buổi tới thì tôi nhận được.",
+      "terms": [
+        "遠慮する",
+        "受け取る",
+        "贈り物"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～なら受け取れます"
+    },
+    {
+      "id": "T-011-V13-011",
+      "group": "receive",
+      "role_vi": "Bạn vừa nhận dụng cụ pha trà",
+      "gender": "female",
+      "ja": "このお茶の道具は初めて使うから、どこに茶葉を入れるか教えてくれる？",
+      "vi": "Đây là lần đầu tớ dùng dụng cụ pha trà kiểu này, cậu chỉ giúp tớ cho lá trà vào đâu được không?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～か教えてくれる？"
+    },
+    {
+      "id": "T-011-V13-012",
+      "group": "receive",
+      "role_vi": "Bạn nhận sổ và nói điều mình thích",
+      "gender": "male",
+      "ja": "青い表紙のノート、僕の好きな色を覚えていてくれたのがうれしいよ。",
+      "vi": "Cuốn sổ bìa xanh này, cậu còn nhớ màu tớ thích, tớ vui lắm.",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～のがうれしい"
+    },
+    {
+      "id": "T-011-V13-013",
+      "group": "receive",
+      "role_vi": "Bạn nhận bánh mình không ăn được",
+      "gender": "female",
+      "ja": "焼き菓子を選んでくれた気持ちはうれしいけど、牛乳が入っていて私は食べられないんだ。",
+      "vi": "Tớ vui vì cậu đã chọn bánh cho tớ, nhưng bánh có sữa nên tớ không ăn được.",
+      "terms": [
+        "焼き菓子"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～が入っていて～られない"
+    },
+    {
+      "id": "T-011-V13-014",
+      "group": "receive",
+      "role_vi": "Bạn nhận quà hỏi có thể chia bánh",
+      "gender": "male",
+      "ja": "せっかく買ってくれたお菓子だけど、よかったらここにいるみんなで分けてもいい？",
+      "vi": "Cậu đã cất công mua bánh, nếu cậu đồng ý thì tớ chia cho mọi người ở đây nhé?",
+      "terms": [
+        "せっかく"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～なら分けてもいい？"
+    },
+    {
+      "id": "T-011-V13-015",
+      "group": "receive",
+      "role_vi": "Bạn từ chối quà sinh nhật đắt tiền",
+      "gender": "female",
+      "ja": "誕生日を覚えていてくれたのはうれしいけど、こんなに高価なものは私には受け取りにくいんだ。",
+      "vi": "Cậu nhớ sinh nhật tớ làm tớ vui lắm, nhưng tớ thấy khó nhận một món đắt tiền thế này.",
+      "terms": [
+        "高価",
+        "受け取る"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～には受け取りにくい"
+    },
+    {
+      "id": "T-011-V13-016",
+      "group": "receive",
+      "role_vi": "Bạn rủ gặp sau khi không nhận quà",
+      "gender": "male",
+      "ja": "誕生日のお祝いをしてくれるなら、プレゼントの代わりに今度一緒にお茶するのはどう？",
+      "vi": "Nếu cậu muốn làm gì đó cho sinh nhật tớ thì hôm nào mình đi uống trà thay cho quà nhé?",
+      "terms": [
+        "お祝い",
+        "代わり"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～なら～はどう？"
+    },
+    {
+      "id": "T-011-V13-017",
+      "group": "late",
+      "role_vi": "Người chúc sinh nhật trước vì quà chưa tới",
+      "gender": "female",
+      "ja": "用意した誕生日プレゼントがまだ届かないから、今日は先にお祝いの気持ちだけ伝えさせてね。",
+      "vi": "Quà sinh nhật em chuẩn bị vẫn chưa tới, hôm nay cho em gửi lời chúc trước nhé.",
+      "terms": [
+        "お祝い"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～から先に～だけ"
+    },
+    {
+      "id": "T-011-V13-018",
+      "group": "late",
+      "role_vi": "Người sửa hiểu lầm mình quên sinh nhật",
+      "gender": "male",
+      "ja": "誕生日を忘れてたんじゃなくて、頼んだプレゼントが間に合わなくて何て言おうか迷ってたんだ。",
+      "vi": "Anh không quên sinh nhật em, chỉ là quà đặt không đến kịp nên anh lúng túng không biết nói sao.",
+      "terms": [
+        "間に合う"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～んじゃなくて～"
+    },
+    {
+      "id": "T-011-V13-019",
+      "group": "late",
+      "role_vi": "Người đề nghị phương án thay món hết hàng",
+      "gender": "female",
+      "ja": "誕生日用に選んだものが売り切れてたから、代わりに一緒に写真を撮りに出かけるのはどう？",
+      "vi": "Món em chọn làm quà sinh nhật hết hàng rồi, hay mình đi đâu đó chụp ảnh cùng nhau nhé?",
+      "terms": [
+        "売り切れる",
+        "代わり"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～代わりに～はどう？"
+    },
+    {
+      "id": "T-011-V13-020",
+      "group": "late",
+      "role_vi": "Người xin hẹn trao quà khi nhận được",
+      "gender": "male",
+      "ja": "プレゼントの到着日はまだ分からないから、届いてから渡せる日を相談するね。",
+      "vi": "Anh chưa biết ngày quà tới, để nhận được rồi anh bàn với em ngày đưa quà nhé.",
+      "terms": [
+        "到着日"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～てから相談するね"
+    },
+    {
+      "id": "T-011-V13-021",
+      "group": "pool",
+      "role_vi": "Thành viên hỏi muốn tặng riêng hay chung",
+      "gender": "female",
+      "ja": "佐藤さんの開講祝いはお金を出し合って一つ贈る、それとも各自で選ぶ？",
+      "vi": "Mừng Sato mở lớp, mình góp tiền tặng chung một món hay để mỗi người tự chọn quà?",
+      "terms": [
+        "お祝い",
+        "出し合う",
+        "各自"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～する、それとも～？"
+    },
+    {
+      "id": "T-011-V13-022",
+      "group": "pool",
+      "role_vi": "Thành viên nêu mức có thể góp",
+      "gender": "male",
+      "ja": "開講祝いの予算は、僕は二千円までなら無理なく出せるけど、みんなはどうかな。",
+      "vi": "Tiền góp quà mừng mở lớp thì tớ góp thoải mái tới hai nghìn yên, còn mọi người thấy sao?",
+      "terms": [
+        "予算"
+      ],
+      "scenes": [
+        "S022",
+        "S023"
+      ],
+      "pattern": "～までなら出せる"
+    },
+    {
+      "id": "T-011-V13-023",
+      "group": "pool",
+      "role_vi": "Thành viên báo sẽ chúc riêng",
+      "gender": "female",
+      "ja": "今回は共同の贈り物には参加せず、佐藤さんには私から別でお祝いを伝えるね。",
+      "vi": "Lần này tớ không góp quà chung, tớ sẽ gửi lời chúc riêng đến Sato.",
+      "terms": [
+        "共同",
+        "贈り物"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～には参加せず"
+    },
+    {
+      "id": "T-011-V13-024",
+      "group": "pool",
+      "role_vi": "Thành viên đại diện nhóm tặng quà người mở lớp",
+      "gender": "male",
+      "ja": "写真教室の開講のお祝いとして、みんなで選んだ品をお渡しします。",
+      "vi": "Mừng anh mở lớp nhiếp ảnh, chúng tôi xin gửi anh món quà cả nhóm cùng chọn.",
+      "terms": [
+        "お祝い",
+        "お渡しする"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～としてお渡しします"
+    }
+  ]
+}

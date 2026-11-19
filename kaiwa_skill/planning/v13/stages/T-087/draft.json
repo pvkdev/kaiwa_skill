@@ -1,0 +1,329 @@
+{
+  "code": "T-087",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b50de604392d68d6af17a6875678249ef79b8b74d4571b59a962d9c104651d17",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "receive": "Nhận lời nhắn và kiểm số gọi lại",
+    "relay": "Chuyển ý chính, hạn và tình trạng",
+    "callback": "Gọi lại, xin thông tin còn thiếu",
+    "follow": "Hẹn cập nhật và chọn kênh liên lạc"
+  },
+  "items": [
+    {
+      "id": "T-087-V13-001",
+      "group": "receive",
+      "role_vi": "Nhân viên nhận lời nhắn",
+      "gender": "female",
+      "ja": "藤井は席を外しておりますが、よろしければ伝言をお預かりしましょうか。",
+      "vi": "Fujii đang tạm rời chỗ, anh có muốn tôi nhận lời nhắn để chuyển lại không ạ?",
+      "terms": [
+        "席を外す",
+        "伝言",
+        "預かる"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～をお預かりしましょうか"
+    },
+    {
+      "id": "T-087-V13-002",
+      "group": "receive",
+      "role_vi": "Nhân viên nhận lời nhắn",
+      "gender": "female",
+      "ja": "会社名とお名前、それから折り返し先を教えていただけますか。",
+      "vi": "Anh cho tôi xin tên công ty, tên anh và số để gọi lại được không ạ?",
+      "terms": [
+        "会社名",
+        "折り返し先"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-087-V13-003",
+      "group": "receive",
+      "role_vi": "Khách hàng gọi điện",
+      "gender": "male",
+      "ja": "折り返しは会社の代表番号におかけの上、内線番号六、二、四、八をお願いします。",
+      "vi": "Khi gọi lại, chị gọi số tổng đài công ty rồi nhờ nối máy nhánh sáu, hai, bốn, tám giúp tôi ạ.",
+      "terms": [
+        "代表番号",
+        "内線番号"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "～をお願いします"
+    },
+    {
+      "id": "T-087-V13-004",
+      "group": "receive",
+      "role_vi": "Nhân viên nhận lời nhắn",
+      "gender": "female",
+      "ja": "内線の最後の一桁だけ、もう一度ゆっくりお願いできますか。",
+      "vi": "Anh đọc chậm lại giúp tôi riêng số cuối của máy nhánh được không ạ?",
+      "terms": [
+        "桁"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～だけもう一度"
+    },
+    {
+      "id": "T-087-V13-005",
+      "group": "receive",
+      "role_vi": "Nhân viên nhận lời nhắn",
+      "gender": "female",
+      "ja": "復唱いたしますが、野田様の内線番号は六、二、四、八でよろしいでしょうか。",
+      "vi": "Tôi xin đọc lại để xác nhận. Máy nhánh của anh Noda là sáu, hai, bốn, tám, đúng không ạ?",
+      "terms": [
+        "復唱する",
+        "内線番号"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "念のため復唱する"
+    },
+    {
+      "id": "T-087-V13-006",
+      "group": "receive",
+      "role_vi": "Nhân viên nhận lời nhắn",
+      "gender": "female",
+      "ja": "今日中に対応が必要ですか、それとも藤井が戻ってからお伝えすればよろしいですか。",
+      "vi": "Việc này cần xử lý trong hôm nay hay khi Fujii quay lại tôi chuyển lời là được ạ?",
+      "terms": [
+        "今日中",
+        "伝える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "今日中か戻ってからか"
+    },
+    {
+      "id": "T-087-V13-007",
+      "group": "receive",
+      "role_vi": "Khách hàng gọi điện",
+      "gender": "male",
+      "ja": "確認のお電話は結構ですので、荷物は問題なく受け取れたとだけお伝えください。",
+      "vi": "Chị khỏi gọi lại xác nhận, chỉ cần báo giúp tôi là đã nhận hàng ổn rồi ạ.",
+      "terms": [
+        "伝える"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～だけ伝えてください"
+    },
+    {
+      "id": "T-087-V13-008",
+      "group": "relay",
+      "role_vi": "Nhân viên trao đổi với đồng nghiệp",
+      "gender": "female",
+      "ja": "野田様からお電話があり、納品を木曜に変更できるか確認してほしいとのことです。",
+      "vi": "Anh Noda gọi nhờ anh kiểm xem có thể chuyển giao hàng sang thứ Năm được không.",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～とのことです"
+    },
+    {
+      "id": "T-087-V13-009",
+      "group": "relay",
+      "role_vi": "Nhân viên trao đổi với đồng nghiệp",
+      "gender": "female",
+      "ja": "先方は社内の打ち合わせがあるので、変更できるか午後三時までに知りたいそうです。",
+      "vi": "Bên khách có cuộc họp nội bộ nên muốn biết muộn nhất ba giờ chiều xem có đổi được không.",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～までに知りたい"
+    },
+    {
+      "id": "T-087-V13-010",
+      "group": "relay",
+      "role_vi": "Nhân viên trao đổi với đồng nghiệp",
+      "gender": "female",
+      "ja": "木曜で確定したわけではなく、野田様は変更できるかどうかの返事を待っていらっしゃいます。",
+      "vi": "Thứ Năm vẫn chưa chốt, anh Noda đang đợi bên mình trả lời xem có đổi được không.",
+      "terms": [
+        "確定する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～を待っている"
+    },
+    {
+      "id": "T-087-V13-011",
+      "group": "relay",
+      "role_vi": "Nhân viên trao đổi với đồng nghiệp",
+      "gender": "female",
+      "ja": "野田様の連絡先はこのメモですので、倉庫の確認が取れたら直接お電話してもらえますか。",
+      "vi": "Thông tin liên hệ anh Noda có trong ghi chú này. Khi kho xác nhận, anh gọi thẳng cho khách giúp tôi được không?",
+      "terms": [
+        "連絡先"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～たら連絡を頼む"
+    },
+    {
+      "id": "T-087-V13-012",
+      "group": "relay",
+      "role_vi": "Nhân viên phụ trách gọi lại",
+      "gender": "male",
+      "ja": "二時五十五分までに倉庫から返事が来なければ、まだ確認中だと野田様に一報を入れてもらえますか。",
+      "vi": "Nếu đến hai giờ năm mươi lăm kho chưa trả lời, chị báo anh Noda một tiếng rằng bên mình vẫn đang xác nhận được không?",
+      "terms": [
+        "一報",
+        "確認中"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～なら一報"
+    },
+    {
+      "id": "T-087-V13-013",
+      "group": "callback",
+      "role_vi": "Nhân viên phụ trách gọi lại",
+      "gender": "male",
+      "ja": "青葉の藤井と申しますが、納品を木曜に変更できるかとのお問い合わせでご連絡いたしました。",
+      "vi": "Tôi là Fujii bên Aoba, tôi gọi lại về việc anh hỏi có thể chuyển giao hàng sang thứ Năm được không ạ.",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～の件でご連絡"
+    },
+    {
+      "id": "T-087-V13-014",
+      "group": "callback",
+      "role_vi": "Nhân viên phụ trách gọi lại",
+      "gender": "male",
+      "ja": "金曜にお届けする分をすべて木曜に変更したい、というご希望でよろしいですか。",
+      "vi": "Anh muốn đổi tất cả phần hàng dự kiến giao thứ Sáu sang thứ Năm, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～というご希望ですか"
+    },
+    {
+      "id": "T-087-V13-015",
+      "group": "callback",
+      "role_vi": "Nhân viên phụ trách gọi lại",
+      "gender": "male",
+      "ja": "金曜のご注文が複数ありますので、該当する注文番号を教えていただけますか。",
+      "vi": "Thứ Sáu có vài đơn, anh cho tôi xin mã của đơn cần đổi được không ạ?",
+      "terms": [
+        "注文番号"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-087-V13-016",
+      "group": "callback",
+      "role_vi": "Nhân viên phụ trách gọi lại",
+      "gender": "male",
+      "ja": "確認メールの上のほうに、英字二文字で始まる注文番号がございます。",
+      "vi": "Gần đầu email xác nhận có mã đơn hàng bắt đầu bằng hai chữ cái ạ.",
+      "terms": [
+        "注文番号",
+        "英字"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～の上のほう"
+    },
+    {
+      "id": "T-087-V13-017",
+      "group": "callback",
+      "role_vi": "Nhân viên phụ trách gọi lại",
+      "gender": "male",
+      "ja": "六箱すべてを木曜にお届けできるか、倉庫と配送担当に確認します。",
+      "vi": "Tôi sẽ hỏi kho và bên giao xem thứ Năm có giao được cả sáu thùng không ạ.",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～か確認します"
+    },
+    {
+      "id": "T-087-V13-018",
+      "group": "follow",
+      "role_vi": "Nhân viên phụ trách gọi lại",
+      "gender": "male",
+      "ja": "配送の手配がまだ確定していなくても、二時半に一度状況をお伝えします。",
+      "vi": "Dù lịch giao chưa chốt, hai giờ rưỡi tôi vẫn sẽ cập nhật tình hình cho anh ạ.",
+      "terms": [
+        "手配",
+        "確定する"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ていなくても状況を伝える"
+    },
+    {
+      "id": "T-087-V13-019",
+      "group": "follow",
+      "role_vi": "Nhân viên phụ trách gọi lại",
+      "gender": "male",
+      "ja": "配送の確認後にお電話したいのですが、今日は何時ごろでしたらご都合がよろしいでしょうか。",
+      "vi": "Tôi muốn gọi lại sau khi kiểm được lịch giao, hôm nay khoảng mấy giờ anh tiện nghe máy ạ?",
+      "terms": [
+        "ご都合"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "何時ごろがご都合よいか"
+    },
+    {
+      "id": "T-087-V13-020",
+      "group": "follow",
+      "role_vi": "Khách hàng gọi điện",
+      "gender": "male",
+      "ja": "午後二時から三時の間であれば、今おかけしている会社の電話で受けられます。",
+      "vi": "Trong khoảng hai đến ba giờ chiều, tôi có thể nghe máy qua số công ty đang dùng để gọi ạ.",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ならこの番号で"
+    },
+    {
+      "id": "T-087-V13-021",
+      "group": "follow",
+      "role_vi": "Khách hàng gọi điện",
+      "gender": "male",
+      "ja": "午後三時から外出しますので、それ以降は先にメールでご連絡いただけますか。",
+      "vi": "Từ ba giờ chiều tôi sẽ ra ngoài, nếu lúc đó mới có tin thì anh báo trước cho tôi qua email được không ạ?",
+      "terms": [
+        "外出する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～を過ぎたらメールで"
+    }
+  ]
+}

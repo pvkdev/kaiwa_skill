@@ -1,0 +1,333 @@
+{
+  "code": "T-078",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "5d1f6600a876aac12b4bc7b6aad1bebebbd205c2b7d0f2e9ae11cf1a92690c4d",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "rules": "Hỏi quy trình và người duyệt",
+    "language": "Chọn cách xưng hô và hiểu ý họp",
+    "events": "Hỏi về giao lưu nội bộ",
+    "urgent": "Kiểm ngoại lệ và báo lại"
+  },
+  "items": [
+    {
+      "id": "T-078-V13-001",
+      "group": "rules",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "来客用の会議室は、社内ポータルから申請すればいいですか。",
+      "vi": "Phòng họp tiếp khách thì em đăng ký trên cổng thông tin nội bộ đúng không ạ?",
+      "terms": [
+        "社内ポータル",
+        "申請する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～から申請しますか"
+    },
+    {
+      "id": "T-078-V13-002",
+      "group": "rules",
+      "role_vi": "Người hướng dẫn nội bộ",
+      "gender": "female",
+      "ja": "予約画面で承認済みになったのを確認してから、お客様に会議室を案内してください。",
+      "vi": "Em xem trên màn hình đặt phòng đã hiện “đã duyệt” rồi mới báo phòng họp cho khách nhé.",
+      "terms": [
+        "承認済み"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～のを確認してから"
+    },
+    {
+      "id": "T-078-V13-003",
+      "group": "rules",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "ポータルで申請した後も、前の案内にある紙の申込書は必要ですか。",
+      "vi": "Đăng ký trên cổng nội bộ rồi, em còn phải nộp đơn giấy như hướng dẫn cũ không ạ?",
+      "terms": [
+        "申請する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～た後も必要ですか"
+    },
+    {
+      "id": "T-078-V13-004",
+      "group": "rules",
+      "role_vi": "Người hướng dẫn nội bộ",
+      "gender": "female",
+      "ja": "会議室を取る手順がわからないときは、総務のページで更新日が一番新しい案内を見てね。",
+      "vi": "Khi chưa rõ các bước đặt phòng, em xem hướng dẫn có ngày cập nhật gần nhất trên trang của Tổng vụ nhé.",
+      "terms": [
+        "総務",
+        "更新日"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "一番新しい案内"
+    },
+    {
+      "id": "T-078-V13-005",
+      "group": "rules",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "お客様に確定した納期を伝えるだけでも、リーダーに事前に相談する決まりですか。",
+      "vi": "Dù chỉ báo khách ngày giao đã chốt, quy định vẫn là phải trao đổi trước với trưởng nhóm ạ?",
+      "terms": [
+        "決まり"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～決まりですか"
+    },
+    {
+      "id": "T-078-V13-006",
+      "group": "rules",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "取引のある会社でも、初めて電話する支店なら社内の担当者に先に話を通せばよいですか。",
+      "vi": "Dù công ty đó đã có giao dịch, nếu lần đầu gọi cho một chi nhánh thì em cần trao đổi trước với đầu mối bên mình, đúng không ạ?",
+      "terms": [
+        "話を通す"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～前に話を通す"
+    },
+    {
+      "id": "T-078-V13-007",
+      "group": "language",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "部署が違う方がいる会議では、役職で呼ぶのと名字に「さん」をつけるのと、どちらが自然ですか。",
+      "vi": "Trong cuộc họp có người từ các bộ phận khác, em gọi theo chức danh hay gọi họ kèm “san” thì tự nhiên hơn ạ?",
+      "terms": [
+        "役職",
+        "名字"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "この会議ではどう呼ぶ"
+    },
+    {
+      "id": "T-078-V13-008",
+      "group": "language",
+      "role_vi": "Đồng nghiệp nhiều kinh nghiệm",
+      "gender": "male",
+      "ja": "社外の方には、社内での呼び方のままではなく、「弊社の田所が担当します」と伝えます。",
+      "vi": "Với người ngoài công ty, mình nói “Tadokoro bên công ty chúng tôi sẽ phụ trách”. Cách gọi đó khác cách gọi trong nội bộ.",
+      "terms": [
+        "弊社"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "相手に合わせて言い方を変える"
+    },
+    {
+      "id": "T-078-V13-009",
+      "group": "language",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "会議で「いったん持ち帰りましょう」と言われましたが、今回は見送りという意味ですか。",
+      "vi": "Trong cuộc họp mọi người nói “để mang về bàn lại”, có phải ý là lần này không triển khai không ạ?",
+      "terms": [
+        "持ち帰る",
+        "見送り"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～という意味ですか"
+    },
+    {
+      "id": "T-078-V13-010",
+      "group": "language",
+      "role_vi": "Đồng nghiệp nhiều kinh nghiệm",
+      "gender": "male",
+      "ja": "今回の「持ち帰る」は、部署で費用を調べてから改めて結論を出すという意味ですよ。",
+      "vi": "Ở cuộc họp lần này, “mang về bàn lại” có nghĩa là về bộ phận kiểm tra chi phí rồi mới kết luận nhé.",
+      "terms": [
+        "持ち帰る",
+        "結論"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～という意味ですか"
+    },
+    {
+      "id": "T-078-V13-011",
+      "group": "language",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "明日の十時までに、確認できた費用と、まだ経理に聞いている項目を分けてお伝えします。",
+      "vi": "Chậm nhất mười giờ sáng mai, em sẽ báo riêng các khoản chi phí đã kiểm được và các khoản vẫn đang hỏi kế toán ạ.",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～を分けて伝える"
+    },
+    {
+      "id": "T-078-V13-012",
+      "group": "events",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "金曜の部署交流会は、参加するか自分で決めてよいのでしょうか。",
+      "vi": "Buổi giao lưu giữa các bộ phận thứ Sáu là tự nguyện tham gia đúng không ạ?",
+      "terms": [
+        "部署交流会"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～は自由ですか"
+    },
+    {
+      "id": "T-078-V13-013",
+      "group": "events",
+      "role_vi": "Đồng nghiệp nhiều kinh nghiệm",
+      "gender": "male",
+      "ja": "交流会は希望者だけなので、少しだけ顔を出すなら来られる時間を総務に伝えてください。",
+      "vi": "Buổi giao lưu dành cho ai muốn đi, nếu em chỉ ghé một lúc thì báo Tổng vụ khung giờ em tới được nhé.",
+      "terms": [
+        "希望者",
+        "顔を出す",
+        "総務"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～なら先に知らせる"
+    },
+    {
+      "id": "T-078-V13-014",
+      "group": "urgent",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "お客様が納品を早めたいそうですが、事前承認が必要な変更を急いで進める場合は誰に相談すればよいですか。",
+      "vi": "Khách muốn nhận hàng sớm hơn. Nếu cần xử lý gấp một thay đổi phải được duyệt trước, em nên hỏi ai ạ?",
+      "terms": [
+        "事前承認"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "急ぎなら誰に相談"
+    },
+    {
+      "id": "T-078-V13-015",
+      "group": "urgent",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "お客様には、納品を早められるか確認するとだけ伝えて、時刻はまだ約束していません。",
+      "vi": "Em mới báo khách là sẽ kiểm xem có giao sớm được không. Em chưa hứa giờ cụ thể ạ.",
+      "terms": [],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "確定まで約束しない"
+    },
+    {
+      "id": "T-078-V13-016",
+      "group": "urgent",
+      "role_vi": "Trưởng nhóm",
+      "gender": "female",
+      "ja": "配送の準備がどこまで進んだか聞いた上で、今回だけ例外として時刻を変えられるか確認しますね。",
+      "vi": "Chị hỏi bên giao đã chuẩn bị tới đâu rồi xem lần này có thể cho đổi giờ như một ngoại lệ không nhé.",
+      "terms": [
+        "例外"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "どこまでを確認"
+    },
+    {
+      "id": "T-078-V13-017",
+      "group": "urgent",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "お客様には二時半までにお知らせしたいので、二時二十分ごろまでに状況を教えていただけますか。",
+      "vi": "Em cần cập nhật khách muộn nhất hai giờ rưỡi. Chị báo tình hình cho em trước khoảng hai giờ hai mươi được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～までに教えていただけますか"
+    },
+    {
+      "id": "T-078-V13-018",
+      "group": "urgent",
+      "role_vi": "Trưởng nhóm",
+      "gender": "female",
+      "ja": "今日の納品時刻を変えるだけなら、当番の山田さんに承認する権限があります。",
+      "vi": "Nếu chỉ đổi giờ giao trong ngày hôm nay, chị Yamada đang trực có quyền duyệt nhé.",
+      "terms": [
+        "当番",
+        "権限"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～だけなら権限がある"
+    },
+    {
+      "id": "T-078-V13-019",
+      "group": "urgent",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "倉庫と配送の確認が取れてから当番に相談し、時刻の変更が承認されたらお客様に連絡します。",
+      "vi": "Em sẽ đợi kho và bên giao xác nhận rồi hỏi người trực, khi đổi giờ được duyệt em mới báo khách ạ.",
+      "terms": [
+        "確認が取れる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "確認してから"
+    },
+    {
+      "id": "T-078-V13-020",
+      "group": "urgent",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "次に納品の日にちや数量も変わるときは、当番だけでなくリーダーに確認するんですね。",
+      "vi": "Lần sau nếu đổi cả ngày giao hay số lượng, em cần hỏi thêm trưởng nhóm, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "次回の範囲を確かめる"
+    },
+    {
+      "id": "T-078-V13-021",
+      "group": "urgent",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "次からは、誰に承認をもらったかと、お客様への連絡時刻を記録しておきます。",
+      "vi": "Từ lần sau em sẽ ghi lại ai đã duyệt và em báo khách lúc mấy giờ ạ.",
+      "terms": [
+        "連絡時刻",
+        "記録する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "誰に何時を記録する"
+    }
+  ]
+}

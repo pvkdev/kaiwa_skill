@@ -1,0 +1,381 @@
+{
+  "code": "T-038",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "5b675f20d9f86b793f95c20c9f64b16315c9bfface9f4ea107d9210daf9b08a5",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "change": "Chuyển bảo hiểm khi đổi việc",
+    "family": "Kiểm thông tin bảo hiểm của người nhà",
+    "visit": "Báo tình trạng bảo hiểm khi đi khám",
+    "fees": "Đối chiếu thông báo phí",
+    "followup": "Xác minh dữ liệu và báo lại"
+  },
+  "items": [
+    {
+      "id": "T-038-V13-001",
+      "group": "change",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "会社を辞めたので、健康保険の切り替えについて相談したいです。",
+      "vi": "Tôi đã nghỉ việc nên muốn hỏi về việc chuyển bảo hiểm y tế.",
+      "terms": [
+        "健康保険",
+        "切り替える"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "について相談したい"
+    },
+    {
+      "id": "T-038-V13-002",
+      "group": "change",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "新しい会社の保険の加入日は、どこに聞けばいいですか。",
+      "vi": "Tôi cần hỏi ở đâu để biết ngày bắt đầu tham gia bảo hiểm ở công ty mới ạ?",
+      "terms": [
+        "加入日"
+      ],
+      "scenes": [
+        "S002",
+        "S003"
+      ],
+      "pattern": "どこに聞けばいい"
+    },
+    {
+      "id": "T-038-V13-003",
+      "group": "change",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "退職日は九月末ですが、資格喪失証明書には十月一日とあります。",
+      "vi": "Ngày tôi thôi việc là cuối tháng 9, còn giấy chứng nhận chấm dứt bảo hiểm ghi ngày 1 tháng 10.",
+      "terms": [
+        "退職日",
+        "資格喪失証明書"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜ですが、書類には"
+    },
+    {
+      "id": "T-038-V13-004",
+      "group": "change",
+      "role_vi": "Nhân viên quầy bảo hiểm thành phố",
+      "gender": "male",
+      "ja": "会社の保険の加入日が分かったら、市の窓口にもう一度ご連絡ください。",
+      "vi": "Khi biết được ngày tham gia bảo hiểm công ty, anh/chị vui lòng liên hệ lại quầy bảo hiểm thành phố.",
+      "terms": [
+        "加入日"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "〜が分かったら、連絡"
+    },
+    {
+      "id": "T-038-V13-005",
+      "group": "family",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "夫が今月から私と暮らし始めたので、夫の健康保険についても相談したいです。",
+      "vi": "Chồng tôi chuyển đến sống cùng tôi từ tháng này, nên tôi muốn hỏi thêm về bảo hiểm y tế của anh ấy.",
+      "terms": [
+        "健康保険"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "について相談したい"
+    },
+    {
+      "id": "T-038-V13-006",
+      "group": "family",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "夫の氏名が通知とパスポートで違うのですが、どこで訂正してもらえますか。",
+      "vi": "Tên chồng tôi trên thông báo và hộ chiếu không khớp, tôi có thể nhờ sửa ở đâu ạ?",
+      "terms": [
+        "氏名",
+        "訂正する"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜のですが、どこで"
+    },
+    {
+      "id": "T-038-V13-007",
+      "group": "family",
+      "role_vi": "Nhân viên quầy bảo hiểm thành phố",
+      "gender": "male",
+      "ja": "ご主人の氏名が違っていたら、まず通知の発行元を教えてください。",
+      "vi": "Nếu tên chồng chị bị ghi sai, trước hết chị cho tôi biết đơn vị nào phát hành thông báo nhé.",
+      "terms": [
+        "氏名",
+        "発行元"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜ていたら、まず"
+    },
+    {
+      "id": "T-038-V13-008",
+      "group": "family",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "夫との関係を証明する書類は持ってきていないのですが、手続きについて先に伺ってもいいですか。",
+      "vi": "Hôm nay tôi chưa mang giấy chứng minh quan hệ vợ chồng, tôi có thể hỏi trước về thủ tục được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜のですが、先に伺ってもいい"
+    },
+    {
+      "id": "T-038-V13-009",
+      "group": "family",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "この通知の対象になっているのは、私ですか、それとも夫ですか。",
+      "vi": "Thông báo này áp dụng cho tôi hay cho chồng tôi ạ?",
+      "terms": [],
+      "scenes": [
+        "S008",
+        "S013"
+      ],
+      "pattern": "〜のは、〜ですか、それとも"
+    },
+    {
+      "id": "T-038-V13-010",
+      "group": "visit",
+      "role_vi": "Người đến khám",
+      "gender": "female",
+      "ja": "明日受診する予定ですが、資格確認書がまだ届いていません。",
+      "vi": "Ngày mai tôi có lịch đi khám, nhưng giấy xác nhận tư cách bảo hiểm vẫn chưa đến.",
+      "terms": [
+        "受診",
+        "資格確認書",
+        "届く"
+      ],
+      "scenes": [
+        "S009",
+        "S019"
+      ],
+      "pattern": "〜予定ですが、まだ"
+    },
+    {
+      "id": "T-038-V13-011",
+      "group": "visit",
+      "role_vi": "Người đến khám",
+      "gender": "female",
+      "ja": "マイナ保険証は使っていないのですが、受診の際は何を提示すればいいですか。",
+      "vi": "Tôi không dùng thẻ My Number làm thẻ bảo hiểm, vậy khi đi khám tôi cần xuất trình gì ạ?",
+      "terms": [
+        "マイナ保険証",
+        "受診",
+        "提示する"
+      ],
+      "scenes": [
+        "S009",
+        "S020"
+      ],
+      "pattern": "何を〜すればいい"
+    },
+    {
+      "id": "T-038-V13-012",
+      "group": "visit",
+      "role_vi": "Nhân viên tiếp nhận phòng khám",
+      "gender": "male",
+      "ja": "資格情報のお知らせをお持ちでしたら、まず受付で見せてください。",
+      "vi": "Nếu anh/chị có mang thông báo thông tin bảo hiểm, xin cho chúng tôi xem trước ở quầy tiếp nhận.",
+      "terms": [
+        "資格情報のお知らせ",
+        "受付"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜をお持ちでしたら"
+    },
+    {
+      "id": "T-038-V13-013",
+      "group": "visit",
+      "role_vi": "Người đến khám",
+      "gender": "female",
+      "ja": "資格確認ができない場合、今日の自己負担はいくらになるか教えていただけますか。",
+      "vi": "Nếu chưa xác minh được tư cách bảo hiểm, anh/chị cho tôi biết hôm nay tôi phải tự trả bao nhiêu được không ạ?",
+      "terms": [
+        "資格確認",
+        "自己負担"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜場合、教えていただけますか"
+    },
+    {
+      "id": "T-038-V13-014",
+      "group": "visit",
+      "role_vi": "Người đến khám",
+      "gender": "female",
+      "ja": "受診した日の保険資格があとで確認できたら、払い戻しについてどこに聞けばいいですか。",
+      "vi": "Nếu sau này xác nhận được tôi có bảo hiểm vào ngày khám, tôi cần hỏi ở đâu về việc hoàn tiền ạ?",
+      "terms": [
+        "受診",
+        "払い戻し"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "どこに聞けばいい"
+    },
+    {
+      "id": "T-038-V13-015",
+      "group": "visit",
+      "role_vi": "Nhân viên tiếp nhận phòng khám",
+      "gender": "male",
+      "ja": "保険者に支払いの件を相談する際に使えるよう、今日の領収書は取っておいてください。",
+      "vi": "Anh/chị giữ lại biên lai hôm nay để dùng khi hỏi bên bảo hiểm về khoản đã thanh toán nhé.",
+      "terms": [
+        "保険者",
+        "領収書"
+      ],
+      "scenes": [
+        "S011",
+        "S012"
+      ],
+      "pattern": "〜よう、〜ておいてください"
+    },
+    {
+      "id": "T-038-V13-016",
+      "group": "fees",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "国民健康保険の保険料の通知が届いたのですが、何月から何月までの分ですか。",
+      "vi": "Tôi nhận được thông báo phí bảo hiểm y tế quốc dân, khoản này tính từ tháng nào đến tháng nào ạ?",
+      "terms": [
+        "国民健康保険",
+        "保険料",
+        "届く"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜のですが、何月から"
+    },
+    {
+      "id": "T-038-V13-017",
+      "group": "fees",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "会社の保険に切り替えた月の保険料が市の通知にも出ているので、両方の記録を照合していただけますか。",
+      "vi": "Thông báo của thành phố cũng ghi phí của tháng tôi chuyển sang bảo hiểm công ty, anh/chị đối chiếu hai hồ sơ giúp tôi được không ạ?",
+      "terms": [
+        "切り替える",
+        "保険料",
+        "照合する"
+      ],
+      "scenes": [
+        "S014",
+        "S016"
+      ],
+      "pattern": "〜ので、〜ていただけますか"
+    },
+    {
+      "id": "T-038-V13-018",
+      "group": "fees",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "保険料の確認が終わる前に納付期限が来る場合、どうすればいいですか。",
+      "vi": "Nếu đến hạn nộp trước khi kiểm tra xong khoản phí, tôi nên làm gì ạ?",
+      "terms": [
+        "保険料",
+        "納付期限"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜前に〜場合"
+    },
+    {
+      "id": "T-038-V13-019",
+      "group": "fees",
+      "role_vi": "Nhân viên quầy bảo hiểm thành phố",
+      "gender": "male",
+      "ja": "保険料の金額を訂正するかどうかは、会社の資料と市の記録を照合してから判断します。",
+      "vi": "Sau khi đối chiếu giấy tờ công ty với hồ sơ thành phố, chúng tôi sẽ quyết định có cần sửa số tiền bảo hiểm hay không.",
+      "terms": [
+        "保険料",
+        "訂正する",
+        "照合する"
+      ],
+      "scenes": [
+        "S014",
+        "S016"
+      ],
+      "pattern": "〜かどうかは、〜てから判断"
+    },
+    {
+      "id": "T-038-V13-020",
+      "group": "followup",
+      "role_vi": "Người hỏi về bảo hiểm y tế",
+      "gender": "female",
+      "ja": "市では加入日を確認できなかったので、保険者が届出を受け付けた日を教えていただけますか。",
+      "vi": "Quầy thành phố chưa xác nhận được ngày tham gia, anh/chị cho tôi biết bên bảo hiểm đã tiếp nhận hồ sơ vào ngày nào được không ạ?",
+      "terms": [
+        "加入日",
+        "保険者",
+        "届出"
+      ],
+      "scenes": [
+        "S004",
+        "S017"
+      ],
+      "pattern": "〜ので、〜ていただけますか"
+    },
+    {
+      "id": "T-038-V13-021",
+      "group": "followup",
+      "role_vi": "Nhân viên nhân sự",
+      "gender": "male",
+      "ja": "健康保険の資格取得日が分かり次第、日付とその根拠になった書類をお伝えします。",
+      "vi": "Ngay khi xác nhận được ngày bắt đầu có bảo hiểm y tế, tôi sẽ báo anh/chị ngày đó và giấy tờ dùng để xác nhận.",
+      "terms": [
+        "健康保険",
+        "資格取得",
+        "分かり次第"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "分かり次第、お伝えします"
+    },
+    {
+      "id": "T-038-V13-022",
+      "group": "followup",
+      "role_vi": "Người đến khám",
+      "gender": "female",
+      "ja": "明日受診するので、保険者が確認した加入日を受付で伝えればよいか教えていただけますか。",
+      "vi": "Tôi có lịch khám ngày mai, anh/chị cho tôi hỏi tôi báo với quầy ngày tham gia đã được bên bảo hiểm xác nhận như vậy có đủ không ạ?",
+      "terms": [
+        "受診",
+        "保険者",
+        "加入日",
+        "受付"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "〜ので、教えていただけますか"
+    }
+  ]
+}

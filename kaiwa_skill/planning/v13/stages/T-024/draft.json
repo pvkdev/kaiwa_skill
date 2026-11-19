@@ -1,0 +1,377 @@
+{
+  "code": "T-024",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "2616935b22a8cbc685438a8d096cbd973f9d28abeac1f71ddc995554af031744",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "booking": "Gọi đặt chỗ và hỏi điều kiện",
+    "access": "Hỏi đúng chi nhánh và lối vào",
+    "update": "Báo bớt người hay đổi giờ",
+    "callback": "Nghe lại và gọi đúng hẹn",
+    "arrival": "Xác nhận tại quầy sau cuộc gọi"
+  },
+  "items": [
+    {
+      "id": "T-024-V13-001",
+      "group": "booking",
+      "role_vi": "Khách gọi hỏi bàn có trẻ đi cùng",
+      "gender": "female",
+      "ja": "大人三名と子ども一人なんですが、土曜の夜六時に空いている席はありますか。",
+      "vi": "Nhóm tôi có ba người lớn và một bé, tối thứ Bảy lúc sáu giờ quán còn bàn không ạ?",
+      "terms": [
+        "名"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～に空いている席はありますか"
+    },
+    {
+      "id": "T-024-V13-002",
+      "group": "booking",
+      "role_vi": "Khách nêu nhu cầu ghế cho bé",
+      "gender": "male",
+      "ja": "子供椅子を一つ使いたいので、できれば通路側の席をお願いできますか。",
+      "vi": "Nhóm tôi cần một ghế cho bé, nếu được xin cho bàn gần lối đi ạ.",
+      "terms": [
+        "子供椅子",
+        "通路側"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～席をお願いできますか"
+    },
+    {
+      "id": "T-024-V13-003",
+      "group": "booking",
+      "role_vi": "Khách hỏi giới hạn giờ dùng bàn",
+      "gender": "female",
+      "ja": "六時からの予約は、七時半には席を空ける必要がありますか。",
+      "vi": "Nếu đặt bàn lúc sáu giờ thì bảy rưỡi phải trả bàn rồi ạ?",
+      "terms": [
+        "席を空ける"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～には席を空ける必要がありますか"
+    },
+    {
+      "id": "T-024-V13-004",
+      "group": "booking",
+      "role_vi": "Khách cân nhắc khi giờ trả bàn không hợp",
+      "gender": "male",
+      "ja": "子ども連れで七時半までに食事を終えるのは難しそうなので、予約は見送ります。",
+      "vi": "Có trẻ đi cùng, chắc khó ăn xong trước bảy rưỡi nên lần này tôi xin không đặt.",
+      "terms": [
+        "子ども連れ"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～そうなので～は見送ります"
+    },
+    {
+      "id": "T-024-V13-005",
+      "group": "booking",
+      "role_vi": "Khách gọi chốt bàn và tên",
+      "gender": "female",
+      "ja": "土曜日の午後六時に大人三名と子ども一人で、山田の名前で予約して、子供椅子も一つお願いできますか。",
+      "vi": "Tôi xin đặt bàn tên Yamada lúc sáu giờ chiều thứ Bảy, ba người lớn và một bé, xin thêm một ghế cho bé ạ.",
+      "terms": [
+        "予約する",
+        "名",
+        "子供椅子"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～で予約して～もお願いできますか"
+    },
+    {
+      "id": "T-024-V13-006",
+      "group": "access",
+      "role_vi": "Khách muốn biết lối xe đẩy có vướng không",
+      "gender": "male",
+      "ja": "ベビーカーで入る場合、お店の入口には段差がありますか。",
+      "vi": "Nếu đi xe đẩy em bé, cửa vào quán có bậc không ạ?",
+      "terms": [
+        "ベビーカー",
+        "段差"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～で入る場合、～はありますか"
+    },
+    {
+      "id": "T-024-V13-007",
+      "group": "access",
+      "role_vi": "Khách hỏi có giữ chỗ để xe đẩy được không",
+      "gender": "female",
+      "ja": "山田の名前で予約していますが、ベビーカー一台を置く場所も確保できますか。",
+      "vi": "Tôi đã đặt tên Yamada, quán có thể giữ chỗ để một xe đẩy giúp tôi không ạ?",
+      "terms": [
+        "ベビーカー",
+        "確保する",
+        "予約する"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～を確保できますか"
+    },
+    {
+      "id": "T-024-V13-008",
+      "group": "access",
+      "role_vi": "Khách kiểm có gọi đúng chi nhánh không",
+      "gender": "male",
+      "ja": "予約したのは川沿いの店舗ではなく、駅前通りの一階にある店舗で合っていますか。",
+      "vi": "Quán tôi đặt là cơ sở ở tầng một trên đường trước ga, chứ không phải cơ sở ven sông, đúng không ạ?",
+      "terms": [
+        "店舗",
+        "予約する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ではなく～で合っていますか"
+    },
+    {
+      "id": "T-024-V13-009",
+      "group": "access",
+      "role_vi": "Khách cần quyết có mang xe đẩy không",
+      "gender": "female",
+      "ja": "ベビーカーを持っていきたいのですが、置く場所があるかどうかはいつごろ分かりますか。",
+      "vi": "Tôi muốn mang xe đẩy cho bé, khoảng khi nào biết quán có chỗ để không ạ?",
+      "terms": [
+        "ベビーカー"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～か、いつごろ分かりますか"
+    },
+    {
+      "id": "T-024-V13-010",
+      "group": "update",
+      "role_vi": "Khách báo một người không đến được",
+      "gender": "male",
+      "ja": "山田の名前で四名の予約をしているのですが、そのうち一人が来られなくなりました。",
+      "vi": "Tôi đặt bàn bốn người tên Yamada, nhưng một người trong nhóm không đến được nữa ạ.",
+      "terms": [
+        "名"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～のうち一人が来られなくなった"
+    },
+    {
+      "id": "T-024-V13-011",
+      "group": "update",
+      "role_vi": "Khách muốn giảm số người giữ nguyên giờ",
+      "gender": "female",
+      "ja": "予約の人数を四人から三人に変えても、午後六時のままにできますか。",
+      "vi": "Nếu giảm số người từ bốn xuống ba, quán vẫn giữ giờ đặt là sáu giờ chiều được không ạ?",
+      "terms": [
+        "人数"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～を変えても～はそのままにできますか"
+    },
+    {
+      "id": "T-024-V13-012",
+      "group": "update",
+      "role_vi": "Khách cân nhắc nhận bàn khác nếu có ghế cho bé",
+      "gender": "male",
+      "ja": "子供椅子を一つ置けるなら、入口から離れた席でも大丈夫です。",
+      "vi": "Nếu đặt được một ghế cho bé thì bàn xa cửa cũng được ạ.",
+      "terms": [
+        "子供椅子"
+      ],
+      "scenes": [
+        "S013",
+        "S023"
+      ],
+      "pattern": "～なら～でも大丈夫"
+    },
+    {
+      "id": "T-024-V13-013",
+      "group": "update",
+      "role_vi": "Khách hỏi ngày hôm sau trước khi đổi",
+      "gender": "female",
+      "ja": "日曜の午後七時に空きがあれば、土曜に入れている予約を変更したいです。",
+      "vi": "Nếu Chủ nhật lúc bảy giờ tối còn bàn, tôi muốn chuyển lượt đặt thứ Bảy sang giờ đó ạ.",
+      "terms": [],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～に空きがあれば、～変更したい"
+    },
+    {
+      "id": "T-024-V13-014",
+      "group": "update",
+      "role_vi": "Khách hỏi có tính phí khi đổi",
+      "gender": "male",
+      "ja": "土曜の六時から日曜の七時に変更すると、変更料はかかりますか。",
+      "vi": "Nếu đổi từ sáu giờ thứ Bảy sang bảy giờ Chủ nhật, có phí đổi lịch không ạ?",
+      "terms": [
+        "変更料"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～に変更すると～はかかりますか"
+    },
+    {
+      "id": "T-024-V13-015",
+      "group": "callback",
+      "role_vi": "Khách đang ở chỗ ồn xin nhắc lại giờ",
+      "gender": "female",
+      "ja": "周りが騒がしくて予約の日時が聞き取れなかったので、もう一度お願いできますか。",
+      "vi": "Xung quanh ồn quá nên tôi không nghe rõ ngày giờ đặt bàn, anh nhắc lại giúp tôi được không ạ?",
+      "terms": [
+        "聞き取る",
+        "日時"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～が聞き取れなかったので"
+    },
+    {
+      "id": "T-024-V13-016",
+      "group": "callback",
+      "role_vi": "Khách đối chiếu thứ và ngày trong ghi chú",
+      "gender": "male",
+      "ja": "私の控えでは十二月五日の土曜ですが、予約の日付と曜日を一緒に確認していただけますか。",
+      "vi": "Tôi ghi là thứ Bảy ngày mùng năm tháng mười hai, anh kiểm lại giúp tôi cả ngày và thứ của lượt đặt được không ạ?",
+      "terms": [
+        "控え",
+        "日付",
+        "曜日"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～では～ですが、～を確認"
+    },
+    {
+      "id": "T-024-V13-017",
+      "group": "callback",
+      "role_vi": "Khách xin hỏi gia đình trước khi nhận đổi bàn",
+      "gender": "female",
+      "ja": "奥の席に移ってもいいか家族に確認してから、七時までに折り返してもいいですか。",
+      "vi": "Tôi hỏi gia đình xem đổi sang bàn phía trong được không rồi gọi lại trước bảy giờ được chứ ạ?",
+      "terms": [
+        "折り返す"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～てから折り返してもいいですか"
+    },
+    {
+      "id": "T-024-V13-018",
+      "group": "callback",
+      "role_vi": "Khách báo quyết định sau khi hỏi",
+      "gender": "male",
+      "ja": "家族に確認したので、子供椅子を置けるなら奥の席でお願いします。",
+      "vi": "Tôi đã hỏi gia đình rồi, nếu đặt được ghế cho bé thì xin đổi sang bàn phía trong ạ.",
+      "terms": [
+        "子供椅子"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～なら～でお願いします"
+    },
+    {
+      "id": "T-024-V13-019",
+      "group": "callback",
+      "role_vi": "Khách kiểm có cập nhật bàn và ghế trước khi cúp",
+      "gender": "female",
+      "ja": "念のため確認ですが、土曜の六時に山田で四名、奥の席で子供椅子が一つで合っていますか。",
+      "vi": "Để chắc, cho tôi xác nhận bàn phía trong lúc sáu giờ thứ Bảy, tên Yamada, bốn người và một ghế cho bé, đúng không ạ?",
+      "terms": [
+        "念のため",
+        "名",
+        "子供椅子"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "念のため～で合っていますか"
+    },
+    {
+      "id": "T-024-V13-020",
+      "group": "arrival",
+      "role_vi": "Khách tới quán nhắc đã gọi đổi số người",
+      "gender": "male",
+      "ja": "山田で予約している者ですが、昨日のお電話で四名から三名に変更をお願いしました。",
+      "vi": "Tôi đặt bàn tên Yamada, hôm qua tôi đã gọi xin đổi từ bốn người xuống ba ạ.",
+      "terms": [
+        "名",
+        "予約する"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～に変更をお願いしました"
+    },
+    {
+      "id": "T-024-V13-021",
+      "group": "arrival",
+      "role_vi": "Khách nhắc tên nhân viên và giờ đã gọi",
+      "gender": "female",
+      "ja": "昨日の午後三時ごろ、予約を三名に変えたいと電話で佐藤さんにお伝えしました。",
+      "vi": "Khoảng ba giờ chiều hôm qua, tôi gọi nhờ anh Sato đổi lượt đặt bàn xuống còn ba người ạ.",
+      "terms": [
+        "名"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～ごろ～さんに伝えました"
+    },
+    {
+      "id": "T-024-V13-022",
+      "group": "arrival",
+      "role_vi": "Khách xin đối chiếu cuộc gọi với lượt đặt",
+      "gender": "male",
+      "ja": "店頭ではまだ四名になっているようなので、昨日の電話の記録と予約内容を照合していただけますか。",
+      "vi": "Ở quầy hình như vẫn ghi bốn người, anh đối chiếu lại thông tin đặt bàn với cuộc gọi hôm qua giúp tôi được không ạ?",
+      "terms": [
+        "照合する",
+        "名"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～と～を照合していただけますか"
+    },
+    {
+      "id": "T-024-V13-023",
+      "group": "arrival",
+      "role_vi": "Khách được điều chỉnh tại quầy xác nhận lần cuối",
+      "gender": "female",
+      "ja": "念のため、大人二人と子ども一人で、子供椅子が一つということで合っていますか。",
+      "vi": "Để chắc, bàn cho hai người lớn và một bé, có một ghế cho bé, đúng không ạ?",
+      "terms": [
+        "子供椅子",
+        "念のため"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "念のため～で合っていますか"
+    }
+  ]
+}

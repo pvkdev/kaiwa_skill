@@ -1,0 +1,333 @@
+{
+  "code": "T-090",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b43f2a6ae898fa148eeeb945abd84985b7df852d3213dbe5c133d13d6e0fa04d",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "arrival": "Đón khách, xác nhận người hẹn và dẫn vào",
+    "visit": "Thăm đối tác, trao danh thiếp và hỏi thời gian",
+    "discuss": "Vào mục đích chính và kiểm đúng phiên bản",
+    "close": "Nhắc việc sau buổi và đầu mối phản hồi"
+  },
+  "items": [
+    {
+      "id": "T-090-V13-001",
+      "group": "arrival",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "清和の桜井と申しますが、購買部の井上様との十時のお約束で伺いました。",
+      "vi": "Tôi là Sakurai bên Seiwa, tôi đến gặp chị Inoue ở bộ phận thu mua theo hẹn lúc mười giờ ạ.",
+      "terms": [
+        "購買部",
+        "伺う"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～で伺いました"
+    },
+    {
+      "id": "T-090-V13-002",
+      "group": "arrival",
+      "role_vi": "Nhân viên đón khách",
+      "gender": "female",
+      "ja": "お名前と会社名、それからどなたとお約束か伺ってもよろしいですか。",
+      "vi": "Anh cho tôi xin tên anh, tên công ty và người anh có hẹn được không ạ?",
+      "terms": [
+        "会社名"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～を伺ってもよろしいですか"
+    },
+    {
+      "id": "T-090-V13-003",
+      "group": "arrival",
+      "role_vi": "Nhân viên đón khách",
+      "gender": "female",
+      "ja": "担当者が十分ほど遅れるそうですが、ロビーと応接室のどちらでお待ちになりますか。",
+      "vi": "Người phụ trách báo sẽ tới muộn khoảng mười phút. Anh muốn chờ ở sảnh hay phòng tiếp khách ạ?",
+      "terms": [
+        "ロビー",
+        "応接室"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～と～のどちら"
+    },
+    {
+      "id": "T-090-V13-004",
+      "group": "arrival",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "今日は、見本について説明できるように、技術担当の三浦も同行しております。",
+      "vi": "Hôm nay có cả Miura bên kỹ thuật đi cùng để giải thích về mẫu ạ.",
+      "terms": [
+        "同行する",
+        "見本"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～のために同行"
+    },
+    {
+      "id": "T-090-V13-005",
+      "group": "arrival",
+      "role_vi": "Nhân viên đón khách",
+      "gender": "female",
+      "ja": "ご一緒の方のお名前と、今日の打ち合わせでのご担当を伺ってもよろしいですか。",
+      "vi": "Tôi xin hỏi tên và phần việc của người đi cùng anh trong buổi trao đổi hôm nay được không ạ?",
+      "terms": [
+        "ご担当"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～を伺ってもよろしいですか"
+    },
+    {
+      "id": "T-090-V13-006",
+      "group": "arrival",
+      "role_vi": "Nhân viên đón khách",
+      "gender": "female",
+      "ja": "購買部の井上が応接室でお待ちしておりますので、こちらへどうぞ。",
+      "vi": "Inoue bên thu mua đang đợi anh trong phòng tiếp khách, mời anh đi lối này ạ.",
+      "terms": [
+        "購買部",
+        "応接室"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～でお待ちしています"
+    },
+    {
+      "id": "T-090-V13-007",
+      "group": "visit",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "今回の納品を担当しております桜井でございますが、こちらが私の名刺です。",
+      "vi": "Tôi là Sakurai, phụ trách đợt giao hàng lần này. Đây là danh thiếp của tôi ạ.",
+      "terms": [
+        "名刺"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～担当でございます"
+    },
+    {
+      "id": "T-090-V13-008",
+      "group": "visit",
+      "role_vi": "Đối tác phụ trách thu mua",
+      "gender": "female",
+      "ja": "お名刺を頂戴いたします。",
+      "vi": "Tôi xin nhận danh thiếp của anh ạ.",
+      "terms": [
+        "名刺",
+        "頂戴する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "名刺を頂戴する"
+    },
+    {
+      "id": "T-090-V13-009",
+      "group": "visit",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "今日は何時ごろまでお時間をいただけますでしょうか。",
+      "vi": "Hôm nay chị tiện trao đổi tới khoảng mấy giờ ạ?",
+      "terms": [
+        "お時間をいただく"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～までお時間をいただけますか"
+    },
+    {
+      "id": "T-090-V13-010",
+      "group": "visit",
+      "role_vi": "Đối tác phụ trách thu mua",
+      "gender": "female",
+      "ja": "次の会議まで二十分ほどありますので、今なら納品の件をお話しできます。",
+      "vi": "Tôi còn khoảng hai mươi phút trước cuộc họp tiếp theo, giờ mình có thể bàn về việc giao hàng ạ.",
+      "terms": [],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～なら大丈夫"
+    },
+    {
+      "id": "T-090-V13-011",
+      "group": "visit",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "時間が限られているので、初回の納品日と当日の連絡先を先に確認しませんか。",
+      "vi": "Thời gian có hạn, mình xác nhận trước ngày giao đợt đầu và đầu mối liên hệ hôm đó nhé?",
+      "terms": [
+        "初回"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～を先に確認しませんか"
+    },
+    {
+      "id": "T-090-V13-012",
+      "group": "visit",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "見本の使い方は今日は説明しきれなかったので、次回その部分をお話しします。",
+      "vi": "Hôm nay tôi chưa giải thích hết cách dùng mẫu, lần tới tôi sẽ trao đổi về phần đó ạ.",
+      "terms": [
+        "見本",
+        "次回"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "残った点と次回"
+    },
+    {
+      "id": "T-090-V13-013",
+      "group": "discuss",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "画面の確認と日程のご相談なら、御社では今どちらを優先されますか。",
+      "vi": "Giữa việc kiểm màn hình và bàn lịch, hiện bên chị ưu tiên phần nào ạ?",
+      "terms": [
+        "御社",
+        "優先する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "何を優先するか"
+    },
+    {
+      "id": "T-090-V13-014",
+      "group": "discuss",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "同じ製品名で画面が二種類ありますので、資料の右上にバージョン二と書いてあるか確認していただけますか。",
+      "vi": "Cùng tên sản phẩm nhưng có hai phiên bản màn hình. Chị kiểm giúp góc trên bên phải tài liệu có ghi phiên bản hai không ạ?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "版を確かめる"
+    },
+    {
+      "id": "T-090-V13-015",
+      "group": "discuss",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "今日は画面の変更点を一緒に見た上で、導入前にどちらが何を確認するか決めたいです。",
+      "vi": "Hôm nay tôi muốn cùng chị xem những điểm thay đổi trên màn hình, rồi chốt mỗi bên sẽ kiểm việc gì trước khi đưa vào dùng ạ.",
+      "terms": [
+        "変更点",
+        "導入"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～た上で～を決めたい"
+    },
+    {
+      "id": "T-090-V13-016",
+      "group": "discuss",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "まず受付の画面を見て、その後で日程と担当を決めるという順番でいかがでしょうか。",
+      "vi": "Mình xem màn hình tiếp nhận trước, rồi mới chốt lịch và người phụ trách. Theo thứ tự đó được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～という順番でいかがでしょうか"
+    },
+    {
+      "id": "T-090-V13-017",
+      "group": "discuss",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "新しい受付画面で、未処理の注文を一件探していただけますか。",
+      "vi": "Chị thử tìm giúp một đơn chưa xử lý trên màn hình tiếp nhận mới được không ạ?",
+      "terms": [
+        "未処理"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-090-V13-018",
+      "group": "close",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "水曜の正午までに試用版のリンクをお送りしますので、御社で操作を試せる方がいるかご確認いただけますか。",
+      "vi": "Tôi sẽ gửi đường dẫn bản thử muộn nhất trưa thứ Tư. Nhờ chị xem bên mình có ai thao tác thử được không ạ.",
+      "terms": [
+        "試用版",
+        "御社"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～までにお送りします"
+    },
+    {
+      "id": "T-090-V13-019",
+      "group": "close",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "新しい画面を試せるかどうかは、御社のどなたから伺えばよろしいでしょうか。",
+      "vi": "Về việc có thể dùng thử màn hình mới không, tôi nên hỏi ai bên chị ạ?",
+      "terms": [
+        "御社",
+        "伺う"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "どなたから伺えば"
+    },
+    {
+      "id": "T-090-V13-020",
+      "group": "close",
+      "role_vi": "Nhân viên đến thăm đối tác",
+      "gender": "male",
+      "ja": "試用版を確認していただいた方のお名前と、実際に操作できたかを教えていただけますか。",
+      "vi": "Chị cho tôi biết ai đã xem bản thử và họ có thao tác được trên đó không ạ?",
+      "terms": [
+        "試用版"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-090-V13-021",
+      "group": "close",
+      "role_vi": "Đối tác phụ trách thu mua",
+      "gender": "female",
+      "ja": "受付の二人が試した後、明日の午後に質問をまとめてお伝えします。",
+      "vi": "Sau khi hai người bên tiếp nhận thử xong, chiều mai tôi sẽ tổng hợp và báo anh các câu hỏi của họ.",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～については私から"
+    }
+  ]
+}

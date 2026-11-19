@@ -1,0 +1,367 @@
+{
+  "code": "T-031",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "88f51d56521aa75b25614524cdde3a493814726a1b4389e1ffcf28698de9b312",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "join": "Hỏi thử phòng tập và chọn gói",
+    "first": "Học cách dùng máy và chờ lượt",
+    "coach": "Nêu mục tiêu và điều chỉnh buổi tập",
+    "schedule": "Dời lịch và kiểm số buổi còn lại",
+    "continue": "Bàn nhịp tập và việc gia hạn"
+  },
+  "items": [
+    {
+      "id": "T-031-V13-001",
+      "group": "join",
+      "role_vi": "Khách hỏi có được tham quan trước",
+      "gender": "female",
+      "ja": "入会する前に、ジムの中を見学できますか。",
+      "vi": "Trước khi đăng ký hội viên, tôi có thể tham quan bên trong phòng tập không ạ?",
+      "terms": [
+        "入会する",
+        "見学する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～前に～できますか"
+    },
+    {
+      "id": "T-031-V13-002",
+      "group": "join",
+      "role_vi": "Khách tìm lịch tập thử sau giờ làm",
+      "gender": "male",
+      "ja": "平日は仕事があるので、夜七時以降なら体験レッスンに参加できます。",
+      "vi": "Ngày thường tôi phải đi làm nên từ bảy giờ tối trở đi tôi mới đến tập thử được.",
+      "terms": [
+        "平日",
+        "体験レッスン"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～なら体験レッスンに参加できます"
+    },
+    {
+      "id": "T-031-V13-003",
+      "group": "join",
+      "role_vi": "Khách hỏi phí tháng gồm hướng dẫn máy không",
+      "gender": "female",
+      "ja": "この月会費に、初回に器具の使い方を教えてもらう時間も含まれていますか。",
+      "vi": "Phí tháng này có gồm buổi đầu được hướng dẫn cách dùng máy tập không ạ?",
+      "terms": [
+        "月会費",
+        "初回",
+        "器具"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～に～が含まれていますか"
+    },
+    {
+      "id": "T-031-V13-004",
+      "group": "join",
+      "role_vi": "Khách tìm lịch thử khác",
+      "gender": "male",
+      "ja": "水曜の午後は仕事なので、週末の午前に体験レッスンの空きはありませんか。",
+      "vi": "Chiều thứ Tư tôi đi làm, buổi sáng cuối tuần còn chỗ tập thử không ạ?",
+      "terms": [
+        "体験レッスン",
+        "週末"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～に空きはありませんか"
+    },
+    {
+      "id": "T-031-V13-005",
+      "group": "join",
+      "role_vi": "Khách xem lại lịch rồi mới chọn gói",
+      "gender": "female",
+      "ja": "仕事の予定を見て、無理なく通えそうか確認してから入会するか決めたいです。",
+      "vi": "Tôi muốn xem lịch làm và kiểm xem có thể đi tập đều được không rồi mới quyết định đăng ký.",
+      "terms": [
+        "無理なく",
+        "入会する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～か確認してから決めたい"
+    },
+    {
+      "id": "T-031-V13-006",
+      "group": "first",
+      "role_vi": "Hội viên mới hỏi nơi để đồ",
+      "gender": "male",
+      "ja": "更衣室と、荷物を入れるロッカーはどこにありますか。",
+      "vi": "Phòng thay đồ và tủ để đồ nằm ở đâu ạ?",
+      "terms": [
+        "更衣室",
+        "ロッカー"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～はどこにありますか"
+    },
+    {
+      "id": "T-031-V13-007",
+      "group": "first",
+      "role_vi": "Người mới dùng máy muốn xem làm mẫu",
+      "gender": "female",
+      "ja": "この器具を使うのは初めてなので、使い方を一度見せていただけますか。",
+      "vi": "Đây là lần đầu tôi dùng máy này, anh làm mẫu cách dùng một lần giúp tôi được không ạ?",
+      "terms": [
+        "器具"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-031-V13-008",
+      "group": "first",
+      "role_vi": "Hội viên muốn xác nhận khu tập tự do",
+      "gender": "male",
+      "ja": "自由利用のエリアにある器具は、予約がなくても使えますか。",
+      "vi": "Các máy trong khu tập tự do dùng được mà không cần đặt trước ạ?",
+      "terms": [
+        "自由利用",
+        "器具"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～は予約がなくても使えますか"
+    },
+    {
+      "id": "T-031-V13-009",
+      "group": "first",
+      "role_vi": "Hội viên hỏi về lượt khi máy đang dùng",
+      "gender": "female",
+      "ja": "使いたいマシンが使用中なら、近くで順番を待てばいいですか。",
+      "vi": "Nếu máy tôi muốn tập đang có người dùng thì tôi đợi đến lượt ở gần đó là được phải không ạ?",
+      "terms": [
+        "使用中",
+        "順番"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～なら～で待てばいいですか"
+    },
+    {
+      "id": "T-031-V13-010",
+      "group": "first",
+      "role_vi": "Hội viên hỏi dọn máy sau khi dùng",
+      "gender": "male",
+      "ja": "器具を使い終わったら、備え付けのタオルで拭けばいいですか。",
+      "vi": "Dùng máy xong, tôi lau bằng khăn có sẵn ở đây là được phải không ạ?",
+      "terms": [
+        "器具",
+        "備え付け",
+        "拭く"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～たら～で拭けばいいですか"
+    },
+    {
+      "id": "T-031-V13-011",
+      "group": "coach",
+      "role_vi": "Người mới nói mục tiêu vừa sức",
+      "gender": "female",
+      "ja": "無理なく運動習慣をつけたいので、まずは週二回から始めたいです。",
+      "vi": "Tôi muốn tạo thói quen vận động vừa sức, trước mắt muốn bắt đầu với hai buổi mỗi tuần.",
+      "terms": [
+        "無理なく",
+        "運動習慣"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～から始めたい"
+    },
+    {
+      "id": "T-031-V13-012",
+      "group": "coach",
+      "role_vi": "Người mới nhờ kiểm tư thế và thở",
+      "gender": "male",
+      "ja": "初めての動きを練習するときに、姿勢と呼吸を見ていただけますか。",
+      "vi": "Khi tôi tập động tác mới, anh xem giúp tư thế và nhịp thở được không ạ?",
+      "terms": [
+        "姿勢",
+        "呼吸"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-031-V13-013",
+      "group": "coach",
+      "role_vi": "Người tập đau đầu gối và xin dừng",
+      "gender": "female",
+      "ja": "この動きだと膝に痛みが出るので、いったん中止させてください。",
+      "vi": "Động tác này làm tôi đau đầu gối, cho tôi dừng lại ngay ạ.",
+      "terms": [
+        "膝",
+        "痛み",
+        "中止する"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～と痛みが出るので～"
+    },
+    {
+      "id": "T-031-V13-014",
+      "group": "coach",
+      "role_vi": "Người tập xin xem bài thay thế nhẹ hơn",
+      "gender": "male",
+      "ja": "この動きの代わりに、もう少し負荷の軽い動きはありますか。",
+      "vi": "Có động tác nào nhẹ hơn một chút để thay động tác này không ạ?",
+      "terms": [
+        "代わり",
+        "負荷"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～の代わりに～ありますか"
+    },
+    {
+      "id": "T-031-V13-015",
+      "group": "coach",
+      "role_vi": "Người mới muốn chốt phần vừa sức hôm nay",
+      "gender": "female",
+      "ja": "今日は重りを増やさずに、できた動きだけもう一度練習したいです。",
+      "vi": "Hôm nay tôi muốn tập lại những động tác đã làm được thôi, chưa tăng tạ ạ.",
+      "terms": [
+        "重り"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～ずに～だけ練習したい"
+    },
+    {
+      "id": "T-031-V13-016",
+      "group": "schedule",
+      "role_vi": "Người tập gọi xin dời buổi riêng",
+      "gender": "male",
+      "ja": "仕事が入って火曜に行けなくなったので、個別指導を別の日に振り替えられますか。",
+      "vi": "Thứ Ba tôi vướng việc không đến được nữa, tôi dời buổi hướng dẫn riêng sang ngày khác được không ạ?",
+      "terms": [
+        "個別指導",
+        "振り替える"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～に振り替えられますか"
+    },
+    {
+      "id": "T-031-V13-017",
+      "group": "schedule",
+      "role_vi": "Người tập hỏi đổi người hướng dẫn",
+      "gender": "female",
+      "ja": "土曜の午前なら来られるのですが、別のトレーナーに担当を変えていただけますか。",
+      "vi": "Sáng thứ Bảy tôi đến được, phòng tập có thể đổi sang một huấn luyện viên khác hướng dẫn tôi không ạ?",
+      "terms": [],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～なら～ていただけますか"
+    },
+    {
+      "id": "T-031-V13-018",
+      "group": "schedule",
+      "role_vi": "Người tập thấy số buổi không khớp",
+      "gender": "male",
+      "ja": "私の控えでは残り回数は二回ですが、これまでの出席記録を確認できますか。",
+      "vi": "Theo ghi chú của tôi, tôi còn hai buổi, anh kiểm lại lịch sử các buổi đã tập giúp tôi được không ạ?",
+      "terms": [
+        "残り回数",
+        "出席記録"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～では～ですが、～を確認できますか"
+    },
+    {
+      "id": "T-031-V13-019",
+      "group": "schedule",
+      "role_vi": "Người tập xin hoãn mua gói dài",
+      "gender": "female",
+      "ja": "仕事の予定がまだ分からないので、今は十二回のコースには申し込みません。",
+      "vi": "Lịch làm của tôi còn chưa rõ, nên lúc này tôi chưa đăng ký gói mười hai buổi.",
+      "terms": [],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～ので、今は～には申し込みません"
+    },
+    {
+      "id": "T-031-V13-020",
+      "group": "continue",
+      "role_vi": "Người tập đánh giá nhịp thực tế",
+      "gender": "male",
+      "ja": "平日は仕事で来られないことが多いですが、土曜に週一回なら無理なく続けられそうです。",
+      "vi": "Ngày thường tôi hay không đến được vì công việc, nhưng tập một buổi thứ Bảy mỗi tuần thì có vẻ tôi duy trì được mà không quá sức.",
+      "terms": [
+        "無理なく",
+        "平日"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "～なら無理なく続けられる"
+    },
+    {
+      "id": "T-031-V13-021",
+      "group": "continue",
+      "role_vi": "Hội viên hỏi có tự gia hạn sau buổi cuối",
+      "gender": "female",
+      "ja": "個別指導の回数を使い切ると、このコースは自動更新になりますか。",
+      "vi": "Khi dùng hết số buổi hướng dẫn riêng thì gói này tự gia hạn ạ?",
+      "terms": [
+        "使い切る",
+        "自動更新",
+        "個別指導"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～を使い切ると～になりますか"
+    },
+    {
+      "id": "T-031-V13-022",
+      "group": "continue",
+      "role_vi": "Hội viên chỉ muốn giữ quyền tự tập",
+      "gender": "male",
+      "ja": "次の個別指導には申し込まず、今月末までは自由利用を続けたいです。",
+      "vi": "Tôi không đăng ký gói hướng dẫn riêng tiếp theo, nhưng muốn tiếp tục dùng khu tập tự do đến hết tháng này.",
+      "terms": [
+        "個別指導",
+        "自由利用"
+      ],
+      "scenes": [
+        "S024",
+        "S025"
+      ],
+      "pattern": "～は申し込まず、～は続けたい"
+    }
+  ]
+}

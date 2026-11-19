@@ -1,0 +1,359 @@
+{
+  "code": "T-081",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "b0a7ee9c4cbd0b084e9fd44aff81a6f122b3d27700bfa793463253c302504aa0",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "start": "Chốt đầu vào, tên bản và người duyệt",
+    "blocked": "Hẹn lúc cập nhật và xin bản làm tạm",
+    "priority": "Thống nhất ưu tiên giữa hai bên",
+    "after": "Kiểm bản đã giao và xác nhận ai báo tiếp"
+  },
+  "items": [
+    {
+      "id": "T-081-V13-001",
+      "group": "start",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "店頭受け取りの案内を作るので、店舗別の情報をいただけますか。",
+      "vi": "Bên em cần soạn thông báo nhận hàng tại cửa hàng, anh gửi giúp em thông tin theo từng điểm được không ạ?",
+      "terms": [
+        "店舗別"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～をいただけますか"
+    },
+    {
+      "id": "T-081-V13-002",
+      "group": "start",
+      "role_vi": "Nhân viên bộ phận Vận hành",
+      "gender": "male",
+      "ja": "お渡しする一覧には、店舗名だけでなく運用開始日と受付時間も必要ですか。",
+      "vi": "Danh sách gửi cho em cần cả ngày bắt đầu và giờ tiếp nhận ngoài tên cửa hàng đúng không?",
+      "terms": [
+        "運用開始日",
+        "受付時間"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～も必要ですか"
+    },
+    {
+      "id": "T-081-V13-003",
+      "group": "start",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "作業用の候補一覧と、案内に掲載する店舗だけの一覧は、ファイル名を分けませんか。",
+      "vi": "Mình đặt tên khác nhau cho bảng dùng nội bộ gồm các cửa hàng đang cân nhắc và bảng chỉ gồm các cửa hàng sẽ đưa vào thông báo nhé?",
+      "terms": [
+        "作業用",
+        "掲載する"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～と～を分ける"
+    },
+    {
+      "id": "T-081-V13-004",
+      "group": "start",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "開始日と受付時間を掲載する前に、運営側のどなたに確認していただけばよいですか。",
+      "vi": "Trước khi đăng ngày bắt đầu và giờ tiếp nhận, em nhờ ai bên Vận hành xác nhận ạ?",
+      "terms": [
+        "受付時間",
+        "掲載する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "どなたに確認していただけば"
+    },
+    {
+      "id": "T-081-V13-005",
+      "group": "start",
+      "role_vi": "Nhân viên bộ phận Vận hành",
+      "gender": "male",
+      "ja": "承認済みの一覧は、水曜の午後二時までにプロジェクトのチャットで共有します。",
+      "vi": "Anh sẽ chia sẻ danh sách đã duyệt trong kênh chat của dự án muộn nhất hai giờ chiều thứ Tư.",
+      "terms": [
+        "承認済み",
+        "共有する"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～までに共有する"
+    },
+    {
+      "id": "T-081-V13-006",
+      "group": "blocked",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "受付時間の一覧がまだないので、店ごとの案内を完成させられません。",
+      "vi": "Em vẫn chưa có danh sách giờ tiếp nhận nên chưa hoàn thành được phần thông báo theo từng cửa hàng ạ.",
+      "terms": [
+        "受付時間"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～がないので～できない"
+    },
+    {
+      "id": "T-081-V13-007",
+      "group": "blocked",
+      "role_vi": "Nhân viên bộ phận Vận hành",
+      "gender": "male",
+      "ja": "三店舗は確認できましたが、西口店だけ受付時間の返事がまだ来ていません。",
+      "vi": "Anh xác nhận được ba cửa hàng rồi, riêng cửa hàng Nishiguchi vẫn chưa trả lời về giờ tiếp nhận.",
+      "terms": [
+        "受付時間"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～だけまだ"
+    },
+    {
+      "id": "T-081-V13-008",
+      "group": "blocked",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "印刷の締め切りがあるので、まだ時刻が確定していなくても、午後二時までに状況を教えていただけますか。",
+      "vi": "Bên em có hạn gửi đi in, nên dù chưa chốt được giờ, anh cập nhật tình hình muộn nhất hai giờ chiều giúp em được không ạ?",
+      "terms": [
+        "締め切り"
+      ],
+      "scenes": [
+        "S006",
+        "S008"
+      ],
+      "pattern": "～までに状況を教えて"
+    },
+    {
+      "id": "T-081-V13-009",
+      "group": "blocked",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "先にレイアウトを作りたいので、確認できた三店舗の時刻を入れた作業用の表をいただけますか。",
+      "vi": "Em muốn làm bố cục trước, anh gửi giúp em bảng làm việc có giờ của ba cửa hàng đã xác nhận được không ạ?",
+      "terms": [
+        "作業用"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～をいただけますか"
+    },
+    {
+      "id": "T-081-V13-010",
+      "group": "blocked",
+      "role_vi": "Nhân viên bộ phận Vận hành",
+      "gender": "male",
+      "ja": "未確定の店舗は行だけ残して、時刻の欄は空欄にしておきますね。",
+      "vi": "Các cửa hàng chưa chốt thì anh vẫn giữ dòng nhưng để trống ô giờ nhé.",
+      "terms": [
+        "未確定",
+        "空欄"
+      ],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "～は空欄にしておく"
+    },
+    {
+      "id": "T-081-V13-011",
+      "group": "blocked",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "今日の印刷に間に合わなければ、印刷担当に次の枠を相談します。",
+      "vi": "Nếu không kịp lượt in hôm nay, em sẽ trao đổi với bên in để xếp lượt tiếp theo ạ.",
+      "terms": [
+        "間に合う"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～なければ次の枠"
+    },
+    {
+      "id": "T-081-V13-012",
+      "group": "priority",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "先方が五時までに六店舗分を見たいそうですが、運営側の確認は間に合いそうですか。",
+      "vi": "Bên đối tác muốn xem thông tin sáu cửa hàng muộn nhất năm giờ, bên Vận hành có kịp xác nhận không ạ?",
+      "terms": [
+        "先方",
+        "間に合う"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～が必要だが間に合うか"
+    },
+    {
+      "id": "T-081-V13-013",
+      "group": "priority",
+      "role_vi": "Trưởng bộ phận Vận hành",
+      "gender": "female",
+      "ja": "六店舗すべては難しいですが、確定した二店舗だけなら先にお渡しできます。",
+      "vi": "Khó chuyển đủ cả sáu cửa hàng, nhưng riêng hai điểm đã chốt thì chị chuyển trước được.",
+      "terms": [
+        "確定する"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～なら先に渡せる"
+    },
+    {
+      "id": "T-081-V13-014",
+      "group": "priority",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "途中の版を先方に渡すのであれば、対象は確認済みの二店舗だけだと明記します。",
+      "vi": "Nếu gửi đối tác bản đang làm dở, em sẽ ghi rõ bản đó chỉ có hai cửa hàng đã xác nhận ạ.",
+      "terms": [
+        "明記する"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～だけだと明記する"
+    },
+    {
+      "id": "T-081-V13-015",
+      "group": "priority",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "先方の締め切りと運営の確認日程が合わないので、両チームの責任者で優先順位を決めていただけますか。",
+      "vi": "Hạn bên đối tác và lịch kiểm của Vận hành không khớp, hai trưởng nhóm có thể cùng chốt ưu tiên giúp em được không ạ?",
+      "terms": [
+        "責任者",
+        "締め切り"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-081-V13-016",
+      "group": "priority",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "今日の受け渡しは、運営から二店舗分をいただいて、制作が五時までに先方に共有するという段取りでよいですか。",
+      "vi": "Hôm nay bên em nhận thông tin hai cửa hàng từ Vận hành rồi Nội dung gửi cho đối tác muộn nhất năm giờ, theo trình tự đó được không ạ?",
+      "terms": [
+        "受け渡し",
+        "共有する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～という段取りでよいか"
+    },
+    {
+      "id": "T-081-V13-017",
+      "group": "after",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "店頭案内の下書きを開いていただけましたか。",
+      "vi": "Anh đã mở được bản nháp hướng dẫn nhận hàng tại cửa hàng chưa ạ?",
+      "terms": [
+        "下書き"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ていただけましたか"
+    },
+    {
+      "id": "T-081-V13-018",
+      "group": "after",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "各店舗に回す前に、この案内が運営側でそのまま使えるか確認したいです。",
+      "vi": "Trước khi gửi tới từng cửa hàng, em muốn kiểm xem bên Vận hành có dùng ngay bản thông báo này được không ạ.",
+      "terms": [
+        "運営側",
+        "回す"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～前に確認したい"
+    },
+    {
+      "id": "T-081-V13-019",
+      "group": "after",
+      "role_vi": "Nhân viên bộ phận Vận hành",
+      "gender": "male",
+      "ja": "十八時は閉店時刻で、お客様が商品を受け取れる受付時間は十七時半までです。",
+      "vi": "Sáu giờ là giờ đóng cửa, còn khách có thể đến lấy hàng đến năm giờ rưỡi chiều.",
+      "terms": [
+        "受付時間"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "二つの時刻を区別する"
+    },
+    {
+      "id": "T-081-V13-020",
+      "group": "after",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "受付時間と閉店時刻を別々に書いて、午後三時半までに修正版をお送りします。",
+      "vi": "Em sẽ ghi riêng giờ tiếp nhận và giờ đóng cửa, rồi gửi bản sửa muộn nhất ba giờ rưỡi chiều ạ.",
+      "terms": [
+        "受付時間"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～を分けて送る"
+    },
+    {
+      "id": "T-081-V13-021",
+      "group": "after",
+      "role_vi": "Nhân viên bộ phận Vận hành",
+      "gender": "male",
+      "ja": "修正版は私から各店舗に送付し、受け取ったことを確認できたらお知らせします。",
+      "vi": "Anh sẽ gửi bản sửa cho từng cửa hàng và báo em khi xác nhận bên họ đã nhận.",
+      "terms": [
+        "送付する",
+        "各店舗"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～たら知らせる"
+    },
+    {
+      "id": "T-081-V13-022",
+      "group": "after",
+      "role_vi": "Nhân viên bộ phận Nội dung",
+      "gender": "female",
+      "ja": "各店舗が新しい版を受け取ったと確認してから、こちらの共有ページも差し替えます。",
+      "vi": "Sau khi xác nhận các cửa hàng đã nhận bản mới, em cũng sẽ thay bản trên trang chung bên em ạ.",
+      "terms": [
+        "差し替える"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～てから差し替える"
+    }
+  ]
+}

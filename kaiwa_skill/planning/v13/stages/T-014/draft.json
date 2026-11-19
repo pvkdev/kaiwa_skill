@@ -1,0 +1,401 @@
+{
+  "code": "T-014",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "46cf26791ccb2d7c23ee6dd79f13e7d827f45c210c06d450aebd1321822b520d",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "search": "Chốt tiêu chí và tuyến đi làm",
+    "view": "Kiểm căn khi đến xem",
+    "terms": "Hỏi tiền, thiết bị và điều kiện thuê",
+    "application": "Theo hồ sơ và ngày vào",
+    "agreement": "Quyết định và hỏi trước khi gia hạn"
+  },
+  "items": [
+    {
+      "id": "T-014-V13-001",
+      "group": "search",
+      "role_vi": "Người tìm nhà nói mức ngân sách",
+      "gender": "female",
+      "ja": "月々の家賃と管理費を合わせて八万円以内で、一人で住める部屋を探しています。",
+      "vi": "Tôi đang tìm căn ở một mình, tổng tiền thuê và phí quản lý mỗi tháng không quá tám mươi nghìn yên.",
+      "terms": [
+        "家賃",
+        "管理費"
+      ],
+      "scenes": [
+        "S001",
+        "S005"
+      ],
+      "pattern": "～合わせて～以内"
+    },
+    {
+      "id": "T-014-V13-002",
+      "group": "search",
+      "role_vi": "Người thuê hỏi đường đi làm",
+      "gender": "male",
+      "ja": "この部屋の最寄り駅から新宿までは、朝も乗り換え一回で済みますか。",
+      "vi": "Buổi sáng đi từ ga gần căn này nhất đến Shinjuku cũng chỉ phải chuyển tàu một lần thôi ạ?",
+      "terms": [
+        "最寄り駅",
+        "乗り換え"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～で済みますか"
+    },
+    {
+      "id": "T-014-V13-003",
+      "group": "search",
+      "role_vi": "Người thuê nêu ưu tiên khi phải nhượng",
+      "gender": "female",
+      "ja": "予算に収めるためなら、広さより日当たりと通勤のしやすさを優先したいです。",
+      "vi": "Nếu phải lựa chọn để vừa ngân sách, tôi muốn ưu tiên ánh sáng và việc đi làm thuận tiện hơn diện tích.",
+      "terms": [
+        "日当たり"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～より～を優先したい"
+    },
+    {
+      "id": "T-014-V13-004",
+      "group": "search",
+      "role_vi": "Người thuê kiểm đoạn đi bộ từ ga",
+      "gender": "male",
+      "ja": "最寄り駅から徒歩十五分とありますが、内見のとき駅までの道も確認できますか。",
+      "vi": "Thông tin ghi đi bộ mười lăm phút từ ga gần nhất, lúc xem căn này tôi kiểm tra cả đường ra ga được không ạ?",
+      "terms": [
+        "最寄り駅",
+        "徒歩",
+        "内見"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "～とありますが～確認できますか"
+    },
+    {
+      "id": "T-014-V13-005",
+      "group": "view",
+      "role_vi": "Người thuê xin xem căn vào chiều muộn",
+      "gender": "female",
+      "ja": "通りの騒音が気になるので、夕方にも部屋を見せていただけますか。",
+      "vi": "Tôi băn khoăn về tiếng ồn ngoài đường, anh cho tôi xem căn vào chiều muộn nữa được không?",
+      "terms": [
+        "騒音"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～ので～見せていただけますか"
+    },
+    {
+      "id": "T-014-V13-006",
+      "group": "view",
+      "role_vi": "Người thuê hỏi lại hướng cửa sổ",
+      "gender": "male",
+      "ja": "南向きだと聞いていましたが、この窓の向きを間取り図でも確認できますか。",
+      "vi": "Tôi nghe nói căn hướng nam, mình kiểm tra hướng cửa sổ này trên sơ đồ căn được không?",
+      "terms": [
+        "南向き",
+        "間取り図"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～と聞いていましたが"
+    },
+    {
+      "id": "T-014-V13-007",
+      "group": "view",
+      "role_vi": "Người thuê xác minh máy lạnh thuộc về ai",
+      "gender": "female",
+      "ja": "このエアコンは部屋の設備でしょうか、それとも前の入居者の残置物ですか。",
+      "vi": "Máy lạnh này là thiết bị đi kèm căn hay là đồ người thuê trước để lại ạ?",
+      "terms": [
+        "設備",
+        "残置物"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "A、それともBですか"
+    },
+    {
+      "id": "T-014-V13-008",
+      "group": "view",
+      "role_vi": "Người thuê sửa cách hiểu về diện tích",
+      "gender": "male",
+      "ja": "二十五平方メートルというのは、寝室だけではなく、この部屋全体の専有面積ですね。",
+      "vi": "Hai mươi lăm mét vuông là diện tích sử dụng riêng của cả căn, chứ không chỉ phòng ngủ, đúng không ạ?",
+      "terms": [
+        "専有面積",
+        "平方メートル"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～のではなく～ですね"
+    },
+    {
+      "id": "T-014-V13-009",
+      "group": "view",
+      "role_vi": "Người thuê muốn đo chỗ đặt giường",
+      "gender": "female",
+      "ja": "ベッドが置けるか確かめたいので、寝室の寸法を測ってもいいですか。",
+      "vi": "Tôi muốn xem có đặt vừa giường không, tôi đo kích thước phòng ngủ được chứ?",
+      "terms": [
+        "寸法"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～たいので～てもいいですか"
+    },
+    {
+      "id": "T-014-V13-010",
+      "group": "terms",
+      "role_vi": "Người thuê hỏi đầu mối sửa thiết bị",
+      "gender": "male",
+      "ja": "入居後に給湯器が故障した場合、修理窓口はどちらですか。",
+      "vi": "Nếu sau khi vào ở mà máy nước nóng hỏng, tôi cần liên hệ bên nào để báo sửa ạ?",
+      "terms": [
+        "給湯器",
+        "修理窓口"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～た場合～はどちらですか"
+    },
+    {
+      "id": "T-014-V13-011",
+      "group": "terms",
+      "role_vi": "Người thuê xin bảng phí ban đầu",
+      "gender": "female",
+      "ja": "敷金や仲介手数料も含めて、入居までにかかる初期費用の内訳を教えていただけますか。",
+      "vi": "Anh cho tôi biết từng khoản chi trước khi vào ở, kể cả tiền đặt cọc và phí môi giới được không?",
+      "terms": [
+        "敷金",
+        "仲介手数料",
+        "初期費用",
+        "内訳"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-014-V13-012",
+      "group": "terms",
+      "role_vi": "Người thuê muốn hỏi điều kiện nuôi mèo và thêm người",
+      "gender": "male",
+      "ja": "猫を一匹飼っていて、あとで同居人が増えるかもしれないので、この部屋の条件を教えていただけますか。",
+      "vi": "Tôi nuôi một con mèo và sau này có thể có thêm người ở cùng, anh cho tôi biết điều kiện của căn này được không ạ?",
+      "terms": [
+        "同居人"
+      ],
+      "scenes": [
+        "S012",
+        "S015"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-014-V13-013",
+      "group": "terms",
+      "role_vi": "Người thuê xác nhận điều kiện từ chủ nhà",
+      "gender": "female",
+      "ja": "同居人を増やすには貸主の事前の承諾が必要で、猫は飼えないということで合っていますか。",
+      "vi": "Muốn thêm người ở cùng thì cần chủ nhà đồng ý trước, còn mèo thì không được nuôi, đúng không ạ?",
+      "terms": [
+        "同居人",
+        "貸主",
+        "承諾"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-014-V13-014",
+      "group": "terms",
+      "role_vi": "Người thuê từ chối vì căn không nhận mèo",
+      "gender": "male",
+      "ja": "猫と一緒に暮らせることが条件なので、この部屋への申込みは見送ります。",
+      "vi": "Điều kiện của tôi là phải sống cùng mèo được, nên tôi sẽ không nộp đơn thuê căn này.",
+      "terms": [],
+      "scenes": [
+        "S014",
+        "S024"
+      ],
+      "pattern": "～ので申込みは見送ります"
+    },
+    {
+      "id": "T-014-V13-015",
+      "group": "application",
+      "role_vi": "Người thuê hỏi thông tin bảo lãnh",
+      "gender": "female",
+      "ja": "この部屋に申し込む場合、保証会社に提出する書類は何ですか。",
+      "vi": "Nếu nộp đơn căn này, tôi phải nộp những giấy tờ gì cho công ty bảo lãnh ạ?",
+      "terms": [
+        "保証会社"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～場合、提出する書類は何ですか"
+    },
+    {
+      "id": "T-014-V13-016",
+      "group": "application",
+      "role_vi": "Ứng viên hỏi khi nào biết tình trạng hồ sơ",
+      "gender": "male",
+      "ja": "入居審査の結果は何日ごろ分かりそうですか。",
+      "vi": "Khoảng ngày nào có thể biết kết quả xét hồ sơ vào ở ạ?",
+      "terms": [
+        "入居審査"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ごろ分かりそうですか"
+    },
+    {
+      "id": "T-014-V13-017",
+      "group": "application",
+      "role_vi": "Ứng viên gọi lại sau mốc đã hẹn",
+      "gender": "female",
+      "ja": "金曜の夕方にご連絡をいただく予定でしたが、先週申し込んだ部屋はまだ審査中でしょうか。",
+      "vi": "Anh hẹn báo tôi chiều thứ Sáu, cho tôi hỏi căn tôi nộp đơn tuần trước vẫn đang xét hồ sơ ạ?",
+      "terms": [
+        "審査中"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～予定でしたが、今は～"
+    },
+    {
+      "id": "T-014-V13-018",
+      "group": "application",
+      "role_vi": "Ứng viên hỏi mốc bàn giao sau khi bị lùi",
+      "gender": "male",
+      "ja": "当初の予定日に部屋を引き渡せない場合、いつから入居できそうか教えてください。",
+      "vi": "Nếu không thể bàn giao căn vào ngày dự kiến ban đầu, xin anh cho tôi biết khoảng khi nào có thể vào ở.",
+      "terms": [
+        "引き渡す"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～場合、いつ～か教えてください"
+    },
+    {
+      "id": "T-014-V13-019",
+      "group": "application",
+      "role_vi": "Ứng viên hỏi cách tính tiền khi dời ngày",
+      "gender": "female",
+      "ja": "入居日が五日にずれると、家賃を払い始める日や初期費用も変わりますか。",
+      "vi": "Nếu ngày vào ở dời sang mùng năm, ngày bắt đầu tính tiền thuê và các khoản ban đầu cũng thay đổi ạ?",
+      "terms": [
+        "初期費用",
+        "家賃"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～にずれると～も変わりますか"
+    },
+    {
+      "id": "T-014-V13-020",
+      "group": "agreement",
+      "role_vi": "Ứng viên chưa đồng ý vì cần kiểm một khoản",
+      "gender": "male",
+      "ja": "この部屋を借りる方向で考えていますが、「その他費用」の内訳を確認してから返事をしたいです。",
+      "vi": "Tôi đang nghiêng về căn này, nhưng muốn xem từng khoản trong mục chi phí khác rồi mới trả lời.",
+      "terms": [
+        "内訳"
+      ],
+      "scenes": [
+        "S021",
+        "S022"
+      ],
+      "pattern": "～を確認してから返事したい"
+    },
+    {
+      "id": "T-014-V13-021",
+      "group": "agreement",
+      "role_vi": "Ứng viên đã xem điều kiện hỏi bước tiếp",
+      "gender": "female",
+      "ja": "契約前の重要事項説明を受けたいのですが、空いている日時と持ち物を教えていただけますか。",
+      "vi": "Tôi muốn nghe giải thích các điều khoản quan trọng trước khi ký, anh cho tôi biết ngày giờ còn trống và những gì cần mang được không?",
+      "terms": [
+        "重要事項説明"
+      ],
+      "scenes": [
+        "S023",
+        "S025"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-014-V13-022",
+      "group": "agreement",
+      "role_vi": "Người thuê gọi hỏi gia hạn trước hạn",
+      "gender": "male",
+      "ja": "契約期間の満了が近いので、続けて住むための条件と返事の期限を確認したいです。",
+      "vi": "Hợp đồng thuê sắp hết hạn, tôi muốn hỏi điều kiện để ở tiếp và hạn trả lời.",
+      "terms": [
+        "契約期間",
+        "満了",
+        "期限"
+      ],
+      "scenes": [
+        "S026",
+        "S028"
+      ],
+      "pattern": "～が近いので～確認したい"
+    },
+    {
+      "id": "T-014-V13-023",
+      "group": "agreement",
+      "role_vi": "Người thuê hỏi vì sao đề xuất gia hạn đổi",
+      "gender": "female",
+      "ja": "今回の更新料について、前回との違いと金額が変わった理由を教えていただけますか。",
+      "vi": "Về phí gia hạn lần này, anh cho tôi biết điểm khác so với lần trước và vì sao số tiền thay đổi được không?",
+      "terms": [
+        "更新料"
+      ],
+      "scenes": [
+        "S027",
+        "S029"
+      ],
+      "pattern": "～の理由も教えていただけますか"
+    },
+    {
+      "id": "T-014-V13-024",
+      "group": "agreement",
+      "role_vi": "Người thuê xác nhận đề xuất trước khi đồng ý",
+      "gender": "male",
+      "ja": "今回の更新案は、家賃は今のままで、変わるのは更新料と契約期間ということで合っていますか。",
+      "vi": "Theo đề xuất gia hạn lần này, tiền thuê giữ như hiện tại, chỉ phí gia hạn và thời hạn hợp đồng thay đổi, đúng không ạ?",
+      "terms": [
+        "家賃",
+        "更新料",
+        "契約期間"
+      ],
+      "scenes": [
+        "S030"
+      ],
+      "pattern": "～で合っていますか"
+    }
+  ]
+}

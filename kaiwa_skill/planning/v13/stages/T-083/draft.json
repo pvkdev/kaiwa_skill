@@ -1,0 +1,363 @@
+{
+  "code": "T-083",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "ec4f80989eb20b7717db7a1614fcb20c8b53c8bbe9957dc3a8b2bab91e3f2295",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "assign": "Giao bài tập và nhờ nói lại",
+    "model": "Làm mẫu và xử lý thông tin thiếu",
+    "feedback": "Chỉ một lỗi và cho luyện lại",
+    "follow": "Báo tiến độ và mở rộng việc vừa sức"
+  },
+  "items": [
+    {
+      "id": "T-083-V13-001",
+      "group": "assign",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "まずは修理の依頼を一件、練習画面に入力してみましょう。",
+      "vi": "Trước hết em thử nhập một yêu cầu sửa chữa vào màn hình thực hành nhé.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "まず～てみましょう"
+    },
+    {
+      "id": "T-083-V13-002",
+      "group": "assign",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "受付時刻と折り返し希望の時間を記録するところまでは、一人でできます。",
+      "vi": "Em có thể tự làm đến bước ghi giờ tiếp nhận và giờ khách muốn được gọi lại ạ.",
+      "terms": [
+        "受付時刻",
+        "折り返し"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～までは一人でできる"
+    },
+    {
+      "id": "T-083-V13-003",
+      "group": "assign",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "修理の依頼を入力してからどうするかも含めて、手順を一度言ってみてください。",
+      "vi": "Em thử nói lại các bước, gồm cả việc sẽ làm sau khi nhập yêu cầu sửa chữa nhé.",
+      "terms": [
+        "手順"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～てからどうするか"
+    },
+    {
+      "id": "T-083-V13-004",
+      "group": "assign",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "見本は確認済みですが、練習で入力した分は下書きのまま保存してください。",
+      "vi": "Mẫu đã được kiểm rồi, còn phiếu em nhập để tập thì lưu ở trạng thái nháp nhé.",
+      "terms": [
+        "見本",
+        "下書き"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～のままにしておく"
+    },
+    {
+      "id": "T-083-V13-005",
+      "group": "assign",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "まずは受付時刻と折り返しの希望時間だけ入れて、型番は空欄にしておいてね。",
+      "vi": "Em nhập trước giờ tiếp nhận và giờ khách muốn được gọi lại, ô mã kiểu máy tạm để trống nhé.",
+      "terms": [
+        "受付時刻",
+        "折り返し",
+        "空欄",
+        "型番"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "まず～だけ"
+    },
+    {
+      "id": "T-083-V13-006",
+      "group": "model",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "写真を拡大してから、ラベルの「型番」の行にある文字を入力してください。",
+      "vi": "Em phóng to ảnh rồi nhập các ký tự ở dòng “Mã kiểu máy” trên tem nhé.",
+      "terms": [
+        "拡大する",
+        "型番"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～してから～する"
+    },
+    {
+      "id": "T-083-V13-007",
+      "group": "model",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "ラベルの型番にある英数字は、省略せずにそのまま写してください。",
+      "vi": "Các chữ cái và chữ số trong mã kiểu máy trên tem, em chép nguyên cả dãy nhé.",
+      "terms": [
+        "英数字",
+        "写す"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～をそのまま写す"
+    },
+    {
+      "id": "T-083-V13-008",
+      "group": "model",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "写真を見ながら、どの部分を写すのか指さしてもらえますか。",
+      "vi": "Em nhìn ảnh rồi chỉ cho chị xem mình sẽ chép phần nào được không?",
+      "terms": [
+        "写す",
+        "指さす"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "どこか指さす"
+    },
+    {
+      "id": "T-083-V13-009",
+      "group": "model",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "もし依頼にラベルの写真が付いていなかったら、型番の欄はどうしますか。",
+      "vi": "Nếu phiếu không đính kèm ảnh tem thì em sẽ xử lý ô mã kiểu máy thế nào?",
+      "terms": [
+        "型番"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～がなかったらどうする"
+    },
+    {
+      "id": "T-083-V13-010",
+      "group": "model",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "同じお客様でも前と同じ機器とは限らないので、前の依頼から型番を移さないでください。",
+      "vi": "Cùng một khách vẫn có thể là thiết bị khác, nên em đừng lấy mã kiểu máy từ phiếu trước điền vào nhé.",
+      "terms": [
+        "型番"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～とは限らない"
+    },
+    {
+      "id": "T-083-V13-011",
+      "group": "model",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "今回の型番がわからないので、受付のときに聞いた内容を確認してもらえますか。",
+      "vi": "Em chưa biết mã kiểu máy lần này, anh xem lại thông tin anh đã hỏi khi tiếp nhận giúp em được không ạ?",
+      "terms": [
+        "型番"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～てもらえますか"
+    },
+    {
+      "id": "T-083-V13-012",
+      "group": "model",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "型番が確認できるまでは「確認中」とメモして、下書きのままにしておきます。",
+      "vi": "Trong lúc đợi xác nhận mã kiểu máy, em sẽ ghi chú “Đang xác nhận” và giữ phiếu ở trạng thái nháp ạ.",
+      "terms": [
+        "確認中",
+        "下書き"
+      ],
+      "scenes": [
+        "S007",
+        "S008"
+      ],
+      "pattern": "～のままにしておく"
+    },
+    {
+      "id": "T-083-V13-013",
+      "group": "feedback",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "受付時刻は元のメモと合っているので、型番の欄に入っている番号だけ直しましょう。",
+      "vi": "Giờ tiếp nhận đã khớp với ghi chú gốc, mình chỉ sửa dãy số trong ô mã kiểu máy nhé.",
+      "terms": [
+        "受付時刻",
+        "型番"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "よくできた点と一か所の修正"
+    },
+    {
+      "id": "T-083-V13-014",
+      "group": "feedback",
+      "role_vi": "Nhân viên mới",
+      "gender": "male",
+      "ja": "写真のラベルと一文字ずつ見比べながら、正しい型番を入れ直します。",
+      "vi": "Em sẽ so từng ký tự với tem trong ảnh rồi nhập lại cho đúng mã kiểu máy ạ.",
+      "terms": [
+        "見比べる",
+        "入れ直す",
+        "型番"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～と見比べながら"
+    },
+    {
+      "id": "T-083-V13-015",
+      "group": "feedback",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "直した型番が写真と合っていれば、次の依頼も一件、自分で入力してみてね。",
+      "vi": "Nếu mã đã sửa khớp ảnh, em thử tự nhập thêm một phiếu nữa nhé.",
+      "terms": [
+        "型番"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～が合っていれば"
+    },
+    {
+      "id": "T-083-V13-016",
+      "group": "feedback",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "似た番号があるときの見分け方を、自分で入力する前にもう一度一緒に練習しよう。",
+      "vi": "Mình luyện lại cách phân biệt khi có những dãy số giống nhau trước khi em tự nhập nhé.",
+      "terms": [
+        "見分ける"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～する前にもう一度"
+    },
+    {
+      "id": "T-083-V13-017",
+      "group": "feedback",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "修理の受付番号と機器の型番は、どう見分けたか説明してもらえますか。",
+      "vi": "Em giải thích cho chị xem em đã phân biệt số phiếu sửa chữa và mã kiểu máy thế nào được không?",
+      "terms": [
+        "見分ける"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～てもらえますか"
+    },
+    {
+      "id": "T-083-V13-018",
+      "group": "follow",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "必要な情報がそろっている依頼なら、ミンさんは一人で入力して下書きにできます。",
+      "vi": "Nếu phiếu có đủ thông tin, Minh có thể tự nhập rồi lưu nháp.",
+      "terms": [
+        "下書き"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～なら自分でできる"
+    },
+    {
+      "id": "T-083-V13-019",
+      "group": "follow",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "今のところミンさんに任せられるのは下書きまでで、次の担当に回す前に私が確認します。",
+      "vi": "Hiện giờ tôi có thể giao Minh làm tới bước lưu nháp. Tôi vẫn kiểm trước khi chuyển cho người phụ trách tiếp theo.",
+      "terms": [
+        "任せる",
+        "下書き"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "～までは任せられる"
+    },
+    {
+      "id": "T-083-V13-020",
+      "group": "follow",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "来週は、折り返し予定を知らせる定型メッセージも一件、下書きしてもらってよいでしょうか。",
+      "vi": "Tuần sau, tôi cho Minh thử soạn nháp thêm một tin theo mẫu để báo giờ dự kiến gọi lại, được không anh?",
+      "terms": [
+        "定型",
+        "折り返し",
+        "下書き"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "もう一つ試してもらう"
+    },
+    {
+      "id": "T-083-V13-021",
+      "group": "follow",
+      "role_vi": "Người hướng dẫn OJT",
+      "gender": "female",
+      "ja": "次のフォローアップまで、ミンさんが迷ったところを記録して、下書きの件数は増やさないつもりです。",
+      "vi": "Tới buổi trao đổi tiếp theo, tôi sẽ ghi lại những điểm Minh còn phân vân và dự định giữ nguyên số tin nhắn soạn nháp.",
+      "terms": [
+        "フォローアップ",
+        "下書き"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～までは増やさない"
+    },
+    {
+      "id": "T-083-V13-022",
+      "group": "follow",
+      "role_vi": "Trưởng nhóm",
+      "gender": "male",
+      "ja": "下書きしたメッセージ二件を確認してから、次に何を任せるか決めましょう。",
+      "vi": "Mình xem hai tin nhắn đã soạn nháp rồi quyết định giao cho Minh việc gì tiếp nhé.",
+      "terms": [
+        "下書き",
+        "任せる"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～てから決める"
+    }
+  ]
+}

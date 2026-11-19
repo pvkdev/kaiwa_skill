@@ -1,0 +1,358 @@
+{
+  "code": "T-050",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "cc34f772cda6f048df642276cb1672e91dbd1a985ccad53b20bd4adae3c759d3",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "arrival": "Xác nhận nhập viện và nhờ người nhà",
+    "ward": "Báo tình trạng và nhu cầu ở khoa",
+    "consent": "Hỏi trước khi quyết định xét nghiệm",
+    "discharge": "Chốt việc cần làm khi ra viện",
+    "coord": "Phối hợp người đón và hỗ trợ ở nhà"
+  },
+  "items": [
+    {
+      "id": "T-050-V13-001",
+      "group": "arrival",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "来週の月曜日に入院する予定ですが、入退院受付は何階ですか。",
+      "vi": "Tôi dự kiến nhập viện thứ Hai tuần sau, quầy làm thủ tục nhập và ra viện ở tầng mấy ạ?",
+      "terms": [
+        "入退院受付"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜予定ですが、何階ですか"
+    },
+    {
+      "id": "T-050-V13-002",
+      "group": "arrival",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "入院中の緊急連絡先を、日本語で電話に出られる兄にしてもいいですか。",
+      "vi": "Trong thời gian nằm viện, tôi để anh trai làm người liên hệ khẩn cấp được không ạ? Anh ấy có thể nghe điện thoại bằng tiếng Nhật.",
+      "terms": [
+        "緊急連絡先"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜を〜にしてもいい"
+    },
+    {
+      "id": "T-050-V13-003",
+      "group": "arrival",
+      "role_vi": "Nhân viên quầy nhập viện",
+      "gender": "male",
+      "ja": "入退院受付に着いたら、診察券と本人確認書類をお出しください。",
+      "vi": "Khi đến quầy nhập và ra viện, anh/chị vui lòng đưa thẻ khám bệnh và giấy tờ tùy thân.",
+      "terms": [
+        "入退院受付",
+        "診察券",
+        "本人確認書類"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "〜に着いたら、〜をお出しください"
+    },
+    {
+      "id": "T-050-V13-004",
+      "group": "arrival",
+      "role_vi": "Người bệnh gọi anh trai",
+      "gender": "female",
+      "ja": "入院日が一日ずれたんだけど、病院まで送ってもらう日も変えられる？",
+      "vi": "Ngày nhập viện của em dời một ngày rồi, anh đổi giúp ngày đưa em đến viện được không?",
+      "terms": [
+        "入院日"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜んだけど、〜られる"
+    },
+    {
+      "id": "T-050-V13-005",
+      "group": "arrival",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "入院当日は付き添いがいないのですが、受付から病棟まで案内していただけますか。",
+      "vi": "Hôm nhập viện tôi không có người đi cùng, anh/chị chỉ đường giúp tôi từ quầy đến khoa được không ạ?",
+      "terms": [
+        "付き添い",
+        "病棟"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜のですが、案内していただけますか"
+    },
+    {
+      "id": "T-050-V13-006",
+      "group": "ward",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "治療が終わったあとから吐き気が出て、立つと少しふらつきます。",
+      "vi": "Từ lúc điều trị xong tôi thấy buồn nôn, khi đứng lên thì hơi loạng choạng.",
+      "terms": [
+        "吐き気",
+        "ふらつく"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜あとから、〜と"
+    },
+    {
+      "id": "T-050-V13-007",
+      "group": "ward",
+      "role_vi": "Điều dưỡng khoa nội trú",
+      "gender": "female",
+      "ja": "吐き気が出始めた時刻と、息苦しさがあるかどうかを教えていただけますか。",
+      "vi": "Chị cho tôi biết mình bắt đầu thấy buồn nôn lúc nào và có khó thở không nhé.",
+      "terms": [
+        "吐き気",
+        "息苦しさ"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜かどうかを教えていただけますか"
+    },
+    {
+      "id": "T-050-V13-008",
+      "group": "ward",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "兄が夕方に来る予定なので、この病棟の面会時間を教えていただけますか。",
+      "vi": "Anh trai tôi định đến vào chiều tối, chị cho tôi biết giờ thăm của khoa này được không ạ?",
+      "terms": [
+        "病棟",
+        "面会時間"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-050-V13-009",
+      "group": "ward",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "面会時間が終わったあとでも、家族に持ってきてもらった荷物を受付に預けられますか。",
+      "vi": "Dù đã hết giờ thăm, người nhà tôi vẫn có thể gửi đồ mang đến tại quầy được không ạ?",
+      "terms": [
+        "面会時間",
+        "預ける"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜あとでも、〜られますか"
+    },
+    {
+      "id": "T-050-V13-010",
+      "group": "ward",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "治療の説明を聞くときに、ベトナム語の医療通訳をお願いできますか。",
+      "vi": "Khi nghe giải thích về điều trị, tôi có thể nhờ phiên dịch y tế tiếng Việt được không ạ?",
+      "terms": [
+        "医療通訳"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜ときに、〜をお願いできますか"
+    },
+    {
+      "id": "T-050-V13-011",
+      "group": "consent",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "追加検査で何を確かめて、その結果を今の治療にどう生かすのか教えていただけますか。",
+      "vi": "Bác sĩ cho tôi biết xét nghiệm bổ sung để kiểm tra điều gì và kết quả sẽ được dùng thế nào cho việc điều trị hiện tại được không ạ?",
+      "terms": [
+        "追加検査"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-050-V13-012",
+      "group": "consent",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "追加検査に同意する前に、今日中に受ける必要があるか聞いてもいいですか。",
+      "vi": "Trước khi đồng ý làm thêm xét nghiệm, tôi có thể hỏi xem có cần làm ngay trong hôm nay không ạ?",
+      "terms": [
+        "追加検査",
+        "同意する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜する前に、聞いてもいいですか"
+    },
+    {
+      "id": "T-050-V13-013",
+      "group": "consent",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "追加検査を今受ける場合と、少し待つ場合で、治療の進め方はどう違いますか。",
+      "vi": "Nếu làm xét nghiệm bổ sung ngay và nếu đợi thêm một chút, cách điều trị tiếp theo khác nhau thế nào ạ?",
+      "terms": [
+        "追加検査"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜場合と〜場合で、どう違う"
+    },
+    {
+      "id": "T-050-V13-014",
+      "group": "discharge",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "退院日は金曜日の見込みと聞きましたが、何を確認してから決まりますか。",
+      "vi": "Tôi nghe dự kiến ra viện thứ Sáu, còn cần kiểm tra điều gì rồi mới chốt ạ?",
+      "terms": [
+        "退院日"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜と聞きましたが、何を確認"
+    },
+    {
+      "id": "T-050-V13-015",
+      "group": "discharge",
+      "role_vi": "Người bệnh gọi anh trai",
+      "gender": "female",
+      "ja": "退院日が土曜日に変わったんだけど、午後に迎えに来られる？",
+      "vi": "Ngày ra viện của em chuyển sang thứ Bảy rồi, chiều anh đón em được không?",
+      "terms": [
+        "退院日",
+        "迎え"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜んだけど、〜られる"
+    },
+    {
+      "id": "T-050-V13-016",
+      "group": "discharge",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "退院後の再診は、予約票にある来週火曜日の午前十時で合っていますか。",
+      "vi": "Lịch tái khám sau khi ra viện là 10 giờ sáng thứ Ba tuần sau như trên phiếu hẹn, đúng không ạ?",
+      "terms": [
+        "再診",
+        "予約票"
+      ],
+      "scenes": [
+        "S013",
+        "S015"
+      ],
+      "pattern": "〜は、〜で合っていますか"
+    },
+    {
+      "id": "T-050-V13-017",
+      "group": "discharge",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "退院して家に帰ってから薬のことで分からないことがあったら、どちらに連絡すればいいですか。",
+      "vi": "Nếu về nhà sau khi ra viện mà có thắc mắc về thuốc, tôi nên liên hệ ở đâu ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜ことがあったら、どちらに連絡"
+    },
+    {
+      "id": "T-050-V13-018",
+      "group": "coord",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "私は金曜日に退院すると聞きましたが、兄は土曜日と聞いたそうなので、最新の退院日を確認していただけますか。",
+      "vi": "Tôi được báo ra viện thứ Sáu, còn anh trai tôi nghe là thứ Bảy, anh/chị kiểm tra giúp ngày ra viện mới nhất được không ạ?",
+      "terms": [
+        "退院日"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜と聞きましたが、確認していただけますか"
+    },
+    {
+      "id": "T-050-V13-019",
+      "group": "coord",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "兄が午後三時まで迎えに来られないので、退院の手続きが済んだあとも院内で待てますか。",
+      "vi": "Đến 3 giờ chiều anh trai tôi mới đến đón được, tôi có thể đợi trong bệnh viện sau khi làm xong thủ tục ra viện không ạ?",
+      "terms": [
+        "迎え"
+      ],
+      "scenes": [
+        "S017",
+        "S020"
+      ],
+      "pattern": "〜ので、〜あとも〜できますか"
+    },
+    {
+      "id": "T-050-V13-020",
+      "group": "coord",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "家に帰る日の夜は一人になるので、退院支援の担当の方と相談できますか。",
+      "vi": "Tối ngày ra viện tôi sẽ ở nhà một mình, tôi có thể trao đổi với người phụ trách hỗ trợ ra viện không ạ?",
+      "terms": [
+        "退院支援"
+      ],
+      "scenes": [
+        "S014",
+        "S018",
+        "S019"
+      ],
+      "pattern": "〜ので、相談できますか"
+    },
+    {
+      "id": "T-050-V13-021",
+      "group": "coord",
+      "role_vi": "Người bệnh",
+      "gender": "female",
+      "ja": "退院後の支援は日曜日からと聞いたのですが、土曜日の夜も手伝ってもらえる方法はありますか。",
+      "vi": "Tôi được báo là Chủ nhật mới có người hỗ trợ sau ra viện, có cách nào nhờ người giúp cả tối thứ Bảy không ạ?",
+      "terms": [],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜と聞いたのですが、方法はありますか"
+    },
+    {
+      "id": "T-050-V13-022",
+      "group": "coord",
+      "role_vi": "Điều phối viên hỗ trợ ra viện",
+      "gender": "male",
+      "ja": "お迎えが午後三時でしたら、お帰りの前にお薬の説明を聞いて、院内の待合でお待ちください。",
+      "vi": "Nếu người nhà đón lúc 3 giờ chiều, anh/chị nghe hướng dẫn về thuốc trước khi về rồi đợi ở khu chờ trong viện nhé.",
+      "terms": [
+        "迎え"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜でしたら、〜てお待ちください"
+    }
+  ]
+}

@@ -1,0 +1,360 @@
+{
+  "code": "T-020",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "c5e7d9911573291baad091bd66785cdd7928fe1b697ac9d7ab76543d13636982",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "notice": "Đọc thông báo và hỏi phần ảnh hưởng",
+    "entry": "Hẹn kiểm thiết bị trong căn",
+    "facilities": "Dùng chỗ chung khi có thay đổi",
+    "work": "Trao đổi về tiếng công trình",
+    "neighbors": "Xác minh khi cư dân nhận tin khác nhau"
+  },
+  "items": [
+    {
+      "id": "T-020-V13-001",
+      "group": "notice",
+      "role_vi": "Cư dân hỏi phạm vi kiểm tra",
+      "gender": "female",
+      "ja": "今回の設備点検は三〇二号室も対象ですか、それとも三階の共用部だけですか。",
+      "vi": "Đợt kiểm tra thiết bị lần này có kiểm cả căn 302 hay chỉ khu dùng chung tầng ba ạ?",
+      "terms": [
+        "設備点検",
+        "対象",
+        "共用部"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "A、それともBですか"
+    },
+    {
+      "id": "T-020-V13-002",
+      "group": "notice",
+      "role_vi": "Cư dân xác nhận lối thay khi cửa đông đóng",
+      "gender": "male",
+      "ja": "東側の出口が閉鎖されている間は、西側の出口を使えばいいですか。",
+      "vi": "Trong lúc cửa ra phía đông đóng, tôi dùng cửa phía tây là được phải không ạ?",
+      "terms": [
+        "閉鎖"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～間は～を使えばいいですか"
+    },
+    {
+      "id": "T-020-V13-003",
+      "group": "notice",
+      "role_vi": "Cư dân sửa giờ đã đọc nhầm",
+      "gender": "female",
+      "ja": "点検の時間を読み違えていましたが、十一時開始ではなく九時開始ですね。",
+      "vi": "Tôi đọc nhầm giờ kiểm tra, bắt đầu lúc chín giờ chứ không phải mười một giờ, đúng không ạ?",
+      "terms": [
+        "読み違える"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～ではなく～ですね"
+    },
+    {
+      "id": "T-020-V13-004",
+      "group": "notice",
+      "role_vi": "Cư dân hỏi đường cho người giao hàng cỡ lớn",
+      "gender": "male",
+      "ja": "エレベーターが一台しか動かないときは、大きな荷物を運ぶ人はどこを通れますか。",
+      "vi": "Khi chỉ có một thang máy hoạt động, người chuyển đồ cỡ lớn dùng lối nào được ạ?",
+      "terms": [],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～ときは～通れますか"
+    },
+    {
+      "id": "T-020-V13-005",
+      "group": "notice",
+      "role_vi": "Cư dân hỏi nơi đọc cập nhật trước lúc giao",
+      "gender": "female",
+      "ja": "大型の荷物を運び込める時間に変更があれば、一階の掲示板で確認できますか。",
+      "vi": "Nếu giờ được chuyển đồ lớn vào có thay đổi, tôi có thể xem trên bảng tin tầng một không ạ?",
+      "terms": [
+        "掲示板"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～があれば～確認できますか"
+    },
+    {
+      "id": "T-020-V13-006",
+      "group": "entry",
+      "role_vi": "Cư dân hỏi ai tới kiểm hệ thống thông gió",
+      "gender": "male",
+      "ja": "換気設備の点検に部屋へ来る担当者のお名前と会社名を教えていただけますか。",
+      "vi": "Anh cho tôi biết tên và công ty của người sẽ đến căn tôi kiểm hệ thống thông gió được không ạ?",
+      "terms": [
+        "換気設備",
+        "担当者"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～を教えていただけますか"
+    },
+    {
+      "id": "T-020-V13-007",
+      "group": "entry",
+      "role_vi": "Cư dân đi làm trùng giờ kiểm",
+      "gender": "female",
+      "ja": "九時半は仕事で不在なので、部屋の点検を同じ日の午後に変更できますか。",
+      "vi": "Chín giờ rưỡi tôi đi làm, không có nhà, anh đổi lịch kiểm căn sang buổi chiều cùng ngày được không ạ?",
+      "terms": [
+        "不在"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～で不在なので～できますか"
+    },
+    {
+      "id": "T-020-V13-008",
+      "group": "entry",
+      "role_vi": "Cư dân hỏi quy định về người thay mặt",
+      "gender": "male",
+      "ja": "点検の時間を変えられない場合は、代理人が立ち会ってもいいですか。",
+      "vi": "Nếu không đổi được giờ kiểm thì tôi nhờ người đại diện có mặt thay được không ạ?",
+      "terms": [
+        "代理人",
+        "立ち会う"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～場合は代理人が～てもいいですか"
+    },
+    {
+      "id": "T-020-V13-009",
+      "group": "entry",
+      "role_vi": "Cư dân hỏi mốc để sắp lại việc",
+      "gender": "female",
+      "ja": "仕事の時間を調整したいのですが、換気設備の点検を午後に変更できるかはいつごろ分かりますか。",
+      "vi": "Tôi cần xếp lại giờ làm, khoảng khi nào biết có dời lịch kiểm thông gió sang chiều được không ạ?",
+      "terms": [
+        "換気設備"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～はいつごろ分かりますか"
+    },
+    {
+      "id": "T-020-V13-010",
+      "group": "entry",
+      "role_vi": "Cư dân gọi kiểm lại giờ và người vào căn",
+      "gender": "male",
+      "ja": "三〇二号室の換気設備の点検は午後二時で、担当者は佐藤さんで合っていますか。",
+      "vi": "Tôi xin xác nhận kiểm thông gió căn 302 lúc hai giờ chiều, người phụ trách là anh Sato, đúng không ạ?",
+      "terms": [
+        "換気設備",
+        "担当者"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-020-V13-011",
+      "group": "facilities",
+      "role_vi": "Cư dân báo thẻ không mở được cửa đông",
+      "gender": "female",
+      "ja": "私のカードで駐輪場の西側の扉は開きますが、東側の扉は今朝から開きません。",
+      "vi": "Thẻ của tôi mở được cửa phía tây khu để xe đạp, nhưng từ sáng nay không mở được cửa phía đông.",
+      "terms": [
+        "駐輪場"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～は～が、～は開きません"
+    },
+    {
+      "id": "T-020-V13-012",
+      "group": "facilities",
+      "role_vi": "Cư dân hỏi nơi tạm đưa rác",
+      "gender": "male",
+      "ja": "いつものごみ置き場が閉まっている間は、どこにごみを出せばいいですか。",
+      "vi": "Trong lúc chỗ để rác thường dùng đóng cửa, tôi nên mang rác ra đâu ạ?",
+      "terms": [
+        "ごみ置き場"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～間はどこに出せば"
+    },
+    {
+      "id": "T-020-V13-013",
+      "group": "facilities",
+      "role_vi": "Cư dân chưa biết thứ Bảy dùng nơi nào",
+      "gender": "female",
+      "ja": "北側の仮置き場は金曜までとのことですが、土曜から元の場所に戻りますか、それともお知らせを待ったほうがいいですか。",
+      "vi": "Tôi được báo chỗ để rác tạm phía bắc dùng đến hết thứ Sáu, thứ Bảy trở lại chỗ cũ hay tôi nên chờ thông báo ạ?",
+      "terms": [
+        "仮置き場",
+        "お知らせ"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "A、それともBですか"
+    },
+    {
+      "id": "T-020-V13-014",
+      "group": "facilities",
+      "role_vi": "Cư dân thấy khu để rác vẫn khóa",
+      "gender": "male",
+      "ja": "ごみ置き場は今日から使えると聞いていましたが、まだ閉まっていて、再開日は変わったのでしょうか。",
+      "vi": "Tôi nghe nói chỗ để rác dùng lại từ hôm nay, nhưng thấy vẫn đóng. Ngày mở lại đã đổi rồi ạ?",
+      "terms": [
+        "ごみ置き場",
+        "再開日"
+      ],
+      "scenes": [
+        "S014",
+        "S015"
+      ],
+      "pattern": "～と聞いていましたが、～ましたか"
+    },
+    {
+      "id": "T-020-V13-015",
+      "group": "work",
+      "role_vi": "Cư dân làm việc tại nhà báo bị ảnh hưởng",
+      "gender": "female",
+      "ja": "昨日も今日も、午前十時から正午ごろまで騒音が続いて、家から参加する会議に支障が出ています。",
+      "vi": "Cả hôm qua lẫn hôm nay tiếng ồn kéo dài từ mười giờ sáng đến khoảng trưa, ảnh hưởng các cuộc họp tôi tham gia từ nhà.",
+      "terms": [
+        "騒音"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～から～まで続いて～"
+    },
+    {
+      "id": "T-020-V13-016",
+      "group": "work",
+      "role_vi": "Cư dân muốn xem lịch từng ngày",
+      "gender": "male",
+      "ja": "工事の日ごとの作業時間は、一階の掲示板で確認できますか。",
+      "vi": "Tôi có thể xem giờ thi công từng ngày trên bảng tin tầng một không ạ?",
+      "terms": [
+        "作業時間",
+        "掲示板"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～は～で確認できますか"
+    },
+    {
+      "id": "T-020-V13-017",
+      "group": "work",
+      "role_vi": "Cư dân xin báo sớm việc có tiếng ồn lớn",
+      "gender": "female",
+      "ja": "作業時間を変えるのが難しければ、大きな音が出る時間だけでも前の日に教えていただけますか。",
+      "vi": "Nếu khó đổi giờ thi công, anh báo giúp tôi trước một ngày ít nhất là những giờ có tiếng ồn lớn được không ạ?",
+      "terms": [
+        "作業時間"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～だけでも～教えていただけますか"
+    },
+    {
+      "id": "T-020-V13-018",
+      "group": "work",
+      "role_vi": "Cư dân báo tiếng giống thi công ngoài giờ",
+      "gender": "male",
+      "ja": "掲示では九時開始ですが、今朝七時十分ごろに東の階段から工事のような音がしたので、確認をお願いします。",
+      "vi": "Bảng ghi bắt đầu lúc chín giờ, nhưng khoảng bảy giờ mười sáng nay từ cầu thang phía đông có tiếng như thi công, xin kiểm tra giúp tôi.",
+      "terms": [
+        "掲示"
+      ],
+      "scenes": [
+        "S019",
+        "S020"
+      ],
+      "pattern": "～ような音がしたので"
+    },
+    {
+      "id": "T-020-V13-019",
+      "group": "neighbors",
+      "role_vi": "Cư dân hỏi hàng xóm đã nhận tờ giờ kiểm chưa",
+      "gender": "female",
+      "ja": "ケンタさんのところにも、来週のエレベーター点検のお知らせが届いた？",
+      "vi": "Nhà Kenta có nhận thông báo kiểm thang máy tuần sau không?",
+      "terms": [
+        "お知らせ"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～にも～届いた？"
+    },
+    {
+      "id": "T-020-V13-020",
+      "group": "neighbors",
+      "role_vi": "Cư dân muốn đối chiếu hai bản ở phòng quản lý",
+      "gender": "male",
+      "ja": "エレベーター点検の時刻が二枚の紙で食い違うから、両方持って管理室で聞いてみない？",
+      "vi": "Hai tờ ghi giờ kiểm thang máy khác nhau, mình mang cả hai tới phòng quản lý hỏi thử nhé?",
+      "terms": [
+        "食い違う",
+        "管理室"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～が食い違うから～"
+    },
+    {
+      "id": "T-020-V13-021",
+      "group": "neighbors",
+      "role_vi": "Cư dân nhờ cập nhật cho mọi người",
+      "gender": "female",
+      "ja": "エレベーター点検の正式な時間が決まったら、一階の掲示も更新していただけますか。",
+      "vi": "Khi chốt giờ kiểm thang máy chính thức, anh cập nhật luôn thông báo ở tầng một giúp tôi được không ạ?",
+      "terms": [
+        "正式",
+        "掲示",
+        "更新する"
+      ],
+      "scenes": [
+        "S023",
+        "S024"
+      ],
+      "pattern": "～たら～していただけますか"
+    },
+    {
+      "id": "T-020-V13-022",
+      "group": "neighbors",
+      "role_vi": "Cư dân báo hàng xóm đúng giờ theo bảng mới",
+      "gender": "male",
+      "ja": "管理室の掲示の最新版によると、エレベーター点検は火曜の午後二時からだって。",
+      "vi": "Theo thông báo mới nhất của phòng quản lý, đợt kiểm thang máy bắt đầu lúc hai giờ chiều thứ Ba đấy.",
+      "terms": [
+        "最新版",
+        "掲示"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～によると～だって"
+    }
+  ]
+}

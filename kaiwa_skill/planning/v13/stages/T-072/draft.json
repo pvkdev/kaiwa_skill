@@ -1,0 +1,323 @@
+{
+  "code": "T-072",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a60cb4351d91df6413a601452401432183f0c3ff7408f9db650e78f0f7fb8b46",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "ask": "Nhờ giới thiệu và xem giúp",
+    "repeat": "Nhắc lại chỉ thị và thời hạn",
+    "scope": "Xác nhận phần được tự quyết",
+    "change": "Đổi ưu tiên và bàn giao"
+  },
+  "items": [
+    {
+      "id": "T-072-V13-001",
+      "group": "ask",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "返品の集計を担当した方を紹介していただけますか。",
+      "vi": "Chị giới thiệu giúp em người phụ trách tổng hợp số đơn bị trả được không ạ?",
+      "terms": [
+        "紹介する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "紹介を頼む"
+    },
+    {
+      "id": "T-072-V13-002",
+      "group": "ask",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "田中さんには、先月の返品件数を地域別にお願いすればよろしいですか。",
+      "vi": "Em nhờ anh Tanaka cung cấp số đơn bị trả tháng trước theo từng khu vực là được, đúng không chị?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "何を頼むか確認"
+    },
+    {
+      "id": "T-072-V13-003",
+      "group": "ask",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "担当の方にまだ聞けないようでしたら、先にどの資料を確認すればよいでしょうか。",
+      "vi": "Nếu chưa hỏi được người phụ trách thì em nên kiểm tài liệu nào trước ạ?",
+      "terms": [],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "先に自分で"
+    },
+    {
+      "id": "T-072-V13-004",
+      "group": "ask",
+      "role_vi": "Cấp trên trực tiếp",
+      "gender": "female",
+      "ja": "終業前に、返品の数字で確認済みの地域だけ教えてください。",
+      "vi": "Trước giờ về, em báo chị những khu vực đã xác minh được số đơn trả nhé.",
+      "terms": [
+        "終業前",
+        "確認済み"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "確認範囲を示す"
+    },
+    {
+      "id": "T-072-V13-005",
+      "group": "ask",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "返品を数える基準を調べた上で、数字が合わないところだけご覧いただけますか。",
+      "vi": "Sau khi tìm hiểu họ dựa vào đâu để đếm số đơn trả, em nhờ chị xem riêng chỗ số liệu chưa khớp được không ạ?",
+      "terms": [
+        "基準",
+        "ご覧いただく"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "ご覧いただく"
+    },
+    {
+      "id": "T-072-V13-006",
+      "group": "repeat",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "返品率を一枚にまとめて、清水さんに確認していただいてから営業に渡します。",
+      "vi": "Em sẽ tóm tắt tỷ lệ trả hàng trong một trang, nhờ chị kiểm rồi chuyển cho bên kinh doanh.",
+      "terms": [],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "確認を受けてから"
+    },
+    {
+      "id": "T-072-V13-007",
+      "group": "repeat",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "木曜の午後三時は、私が下書きをお見せする締め切りで合っていますか。",
+      "vi": "Hạn ba giờ chiều thứ Năm là để em gửi chị bản nháp, đúng không ạ?",
+      "terms": [
+        "下書き",
+        "締め切り"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "合っていますか"
+    },
+    {
+      "id": "T-072-V13-008",
+      "group": "repeat",
+      "role_vi": "Cấp trên trực tiếp",
+      "gender": "female",
+      "ja": "下書きは木曜中に私に、完成版は月曜の朝までに営業の松井さんに渡してください。",
+      "vi": "Em gửi bản nháp cho chị trong thứ Năm, còn bản hoàn chỉnh thì chuyển cho anh Matsui bên kinh doanh muộn nhất là sáng thứ Hai nhé.",
+      "terms": [
+        "下書き",
+        "完成版"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "期限を分ける"
+    },
+    {
+      "id": "T-072-V13-009",
+      "group": "repeat",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "営業に完成版を渡し次第、清水さんにもご連絡します。",
+      "vi": "Vừa chuyển bản hoàn chỉnh cho bên kinh doanh xong, em sẽ báo chị ngay ạ.",
+      "terms": [
+        "完成版"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "送付後に連絡"
+    },
+    {
+      "id": "T-072-V13-010",
+      "group": "scope",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "お客様向けのガイドは、項目の順番を私の判断で変えてもよろしいでしょうか。",
+      "vi": "Trong bản hướng dẫn cho khách, em có thể tự quyết định đổi thứ tự các mục không ạ?",
+      "terms": [],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "自分の判断で"
+    },
+    {
+      "id": "T-072-V13-011",
+      "group": "scope",
+      "role_vi": "Cấp trên trực tiếp",
+      "gender": "female",
+      "ja": "ガイドの順番は変えていいけど、お客様が指定した項目を削るときは先に相談してね。",
+      "vi": "Em có thể đổi thứ tự trong hướng dẫn, nhưng định bỏ mục khách yêu cầu thì hỏi chị trước nhé.",
+      "terms": [
+        "指定する",
+        "削る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "先に相談"
+    },
+    {
+      "id": "T-072-V13-012",
+      "group": "scope",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "項目を削るかどうかはまだ回答待ちなので、先に手順の並べ替えだけ進めてもよろしいですか。",
+      "vi": "Vẫn đang chờ khách trả lời có bỏ mục nào không, em sắp xếp lại thứ tự các bước trước được không ạ?",
+      "terms": [
+        "回答待ち",
+        "並べ替え"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "待つ間に進める"
+    },
+    {
+      "id": "T-072-V13-013",
+      "group": "scope",
+      "role_vi": "Cấp trên trực tiếp",
+      "gender": "female",
+      "ja": "先方から返事があり次第、ガイドをどこまで変更していいか伝えますね。",
+      "vi": "Ngay khi phía khách trả lời, chị sẽ báo em được sửa bản hướng dẫn đến đâu nhé.",
+      "terms": [
+        "先方"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "決まり次第"
+    },
+    {
+      "id": "T-072-V13-014",
+      "group": "change",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "倉庫に渡す注文の確認も今日中なのですが、お客様との打ち合わせ資料を優先すればよろしいですか。",
+      "vi": "Đơn chuyển kho cũng cần kiểm trong hôm nay, nhưng em ưu tiên làm tài liệu họp với khách trước đúng không ạ?",
+      "terms": [
+        "優先する"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "優先を確かめる"
+    },
+    {
+      "id": "T-072-V13-015",
+      "group": "change",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "確認済みと未確認がわかるよう印を付けてから、注文一覧を佐々木さんに引き継ぎます。",
+      "vi": "Em đánh dấu rõ đơn nào đã kiểm, đơn nào chưa, rồi bàn giao danh sách cho chị Sasaki ạ.",
+      "terms": [
+        "確認済み",
+        "未確認",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "引き継ぐ内容"
+    },
+    {
+      "id": "T-072-V13-016",
+      "group": "change",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "倉庫に照会中の商品番号については、返事を佐々木さん宛てにいただくようお願いします。",
+      "vi": "Về mã hàng đang hỏi kho, em sẽ nhờ bên kho phản hồi cho chị Sasaki ạ.",
+      "terms": [
+        "照会中",
+        "宛て"
+      ],
+      "scenes": [
+        "S010",
+        "S011"
+      ],
+      "pattern": "照会先の切り替え"
+    },
+    {
+      "id": "T-072-V13-017",
+      "group": "change",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "残っていた注文の確認は佐々木さんに引き継いだので、今から打ち合わせ資料の修正に取りかかります。",
+      "vi": "Em đã bàn giao việc kiểm các đơn còn lại cho chị Sasaki, giờ em sẽ bắt đầu sửa tài liệu họp ạ.",
+      "terms": [
+        "引き継ぐ",
+        "取りかかる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "完了して着手"
+    },
+    {
+      "id": "T-072-V13-018",
+      "group": "change",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "修正版をお見せするのは、打ち合わせの三十分前で合っていますか。",
+      "vi": "Em cho chị xem bản đã sửa trước cuộc họp ba mươi phút, đúng không ạ?",
+      "terms": [
+        "修正版"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "合っていますか"
+    },
+    {
+      "id": "T-072-V13-019",
+      "group": "change",
+      "role_vi": "Nhân viên",
+      "gender": "male",
+      "ja": "営業と物流で返品を数える日付が違うので、報告に使う基準を両部署の責任者とそろえていただけますか。",
+      "vi": "Kinh doanh và hậu cần đang dùng ngày khác nhau để tính số đơn trả, chị thống nhất với người phụ trách hai bên cách tính cho báo cáo được không ạ?",
+      "terms": [
+        "基準",
+        "責任者"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "基準をそろえる"
+    },
+    {
+      "id": "T-072-V13-020",
+      "group": "change",
+      "role_vi": "Cấp trên trực tiếp",
+      "gender": "female",
+      "ja": "返品を数える基準が決まるまで、報告書の配布は保留してください。",
+      "vi": "Trong lúc chờ chốt cách đếm số đơn trả, em tạm hoãn gửi báo cáo nhé.",
+      "terms": [
+        "基準",
+        "保留する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "決定まで保留"
+    }
+  ]
+}

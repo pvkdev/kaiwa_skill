@@ -1,0 +1,386 @@
+{
+  "code": "T-016",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "a8224a74dae5e6ed0a06c8cda06225f9cee0383d942a64ddc0b2627c347f5d74",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "start": "Đăng ký và chốt lịch mở",
+    "transfer": "Tách mốc của hai địa chỉ",
+    "visit": "Đón kỹ thuật viên và báo trở ngại",
+    "billing": "Kiểm hóa đơn cuối",
+    "stop": "Chốt ngày ngừng theo từng dịch vụ"
+  },
+  "items": [
+    {
+      "id": "T-016-V13-001",
+      "group": "start",
+      "role_vi": "Người chuyển nhà gọi công ty điện",
+      "gender": "female",
+      "ja": "来月五日から新居で電気を使いたいので、使用開始を申し込みたいです。",
+      "vi": "Tôi muốn dùng điện ở nhà mới từ mùng năm tháng sau nên xin đăng ký mở điện ạ.",
+      "terms": [
+        "新居",
+        "申し込む"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～日から使いたい"
+    },
+    {
+      "id": "T-016-V13-002",
+      "group": "start",
+      "role_vi": "Người chuyển nhà gọi đơn vị cấp nước",
+      "gender": "male",
+      "ja": "入居日の五日を使用開始日にすれば、その日から水道を使えますか。",
+      "vi": "Tôi vào ở ngày mùng năm, nếu đăng ký bắt đầu dùng nước từ ngày đó thì mùng năm đã có nước chưa ạ?",
+      "terms": [
+        "使用開始日",
+        "入居日"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～日から使えますか"
+    },
+    {
+      "id": "T-016-V13-003",
+      "group": "start",
+      "role_vi": "Khách đặt lịch mở gas",
+      "gender": "female",
+      "ja": "ガスの開栓は午後なら私が立ち会えますので、空いている時間を教えてください。",
+      "vi": "Nếu mở gas buổi chiều thì tôi có thể có mặt, xin cho tôi biết khung giờ còn trống.",
+      "terms": [
+        "開栓",
+        "立ち会う"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～なら立ち会えます"
+    },
+    {
+      "id": "T-016-V13-004",
+      "group": "start",
+      "role_vi": "Khách tìm giờ mở gas khác",
+      "gender": "male",
+      "ja": "五日の午後が埋まっているなら、ガスの開栓は六日の午前にお願いできますか。",
+      "vi": "Nếu chiều mùng năm đã kín lịch, bên anh mở gas sáng mùng sáu giúp tôi được không ạ?",
+      "terms": [
+        "開栓"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～が埋まっているなら"
+    },
+    {
+      "id": "T-016-V13-005",
+      "group": "start",
+      "role_vi": "Khách xác nhận lịch và căn",
+      "gender": "female",
+      "ja": "ガスの開栓は六日の午前で、部屋番号は三〇二号室で合っていますか。",
+      "vi": "Cho tôi xác nhận lịch mở gas là sáng mùng sáu, ở phòng 302, đúng không ạ?",
+      "terms": [
+        "開栓",
+        "部屋番号"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-016-V13-006",
+      "group": "transfer",
+      "role_vi": "Người chuyển nhà báo hai mốc dùng điện",
+      "gender": "male",
+      "ja": "新居は五日から、旧居は七日まで電気を使う予定です。",
+      "vi": "Tôi dự định dùng điện nhà mới từ mùng năm, nhà cũ dùng đến hết mùng bảy.",
+      "terms": [
+        "新居",
+        "旧居"
+      ],
+      "scenes": [
+        "S006",
+        "S010"
+      ],
+      "pattern": "～は～から、～は～まで"
+    },
+    {
+      "id": "T-016-V13-007",
+      "group": "transfer",
+      "role_vi": "Khách hỏi hai việc có cần đăng ký riêng",
+      "gender": "female",
+      "ja": "旧居の電気を止めるのと新居で使い始めるのは、別々に申し込む必要がありますか。",
+      "vi": "Dừng điện nhà cũ và bắt đầu dùng ở nhà mới có cần đăng ký riêng không ạ?",
+      "terms": [
+        "旧居",
+        "新居",
+        "申し込む"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～は別々に申し込む必要がありますか"
+    },
+    {
+      "id": "T-016-V13-008",
+      "group": "transfer",
+      "role_vi": "Khách sửa số căn bị lẫn",
+      "gender": "male",
+      "ja": "新居は二〇一号室ではなく三〇二号室で、二〇一号室は旧居のほうです。",
+      "vi": "Nhà mới là phòng 302, còn phòng 201 là nhà cũ ạ.",
+      "terms": [
+        "新居",
+        "旧居"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-016-V13-009",
+      "group": "transfer",
+      "role_vi": "Khách xin đổi riêng ngày ngừng",
+      "gender": "female",
+      "ja": "旧居の引き渡しが延びたので、電気の使用停止日だけ八日に変えられますか。",
+      "vi": "Ngày bàn giao nhà cũ bị dời, tôi chỉ đổi ngày dừng điện sang mùng tám được không ạ?",
+      "terms": [
+        "旧居",
+        "使用停止日"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "～だけ～に変えられますか"
+    },
+    {
+      "id": "T-016-V13-010",
+      "group": "visit",
+      "role_vi": "Người hẹn mở gas hỏi ở cửa",
+      "gender": "male",
+      "ja": "今日のガスの開栓で来てくださった方でしたら、お名前を確認してもいいですか。",
+      "vi": "Nếu anh đến mở gas theo lịch hôm nay, tôi xác nhận tên anh được không ạ?",
+      "terms": [
+        "開栓"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～を確認してもいいですか"
+    },
+    {
+      "id": "T-016-V13-011",
+      "group": "visit",
+      "role_vi": "Khách kẹt đường báo không ai ở nhà",
+      "gender": "female",
+      "ja": "ガスの開栓に立ち会う予定でしたが、誰も家におらず、私も到着が遅れそうです。",
+      "vi": "Tôi dự định có mặt lúc mở gas, nhưng hiện nhà không có ai và tôi có thể đến muộn.",
+      "terms": [
+        "開栓",
+        "立ち会う"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～が遅れそうです"
+    },
+    {
+      "id": "T-016-V13-012",
+      "group": "visit",
+      "role_vi": "Khách hỏi hẹn lại trong ngày",
+      "gender": "male",
+      "ja": "ガスの開栓は今日の遅い時間に変更できますか、それとも別の日になりますか。",
+      "vi": "Lịch mở gas đổi sang giờ muộn hơn hôm nay được không, hay phải hẹn ngày khác ạ?",
+      "terms": [
+        "開栓"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～できますか、それとも～"
+    },
+    {
+      "id": "T-016-V13-013",
+      "group": "visit",
+      "role_vi": "Khách báo chưa có điện ngày mở",
+      "gender": "female",
+      "ja": "今日が電気の使用開始日のはずですが、部屋の照明がつかないので契約を確認していただけますか。",
+      "vi": "Theo lịch thì hôm nay bắt đầu dùng điện, nhưng đèn trong phòng không sáng, anh kiểm tra hợp đồng giúp tôi được không?",
+      "terms": [
+        "使用開始日"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～はずですが～"
+    },
+    {
+      "id": "T-016-V13-014",
+      "group": "visit",
+      "role_vi": "Khách hỏi mốc có kết quả",
+      "gender": "male",
+      "ja": "三〇二号室の電気がつかない件は調査中とのことですが、いつごろ結果が分かりますか。",
+      "vi": "Tôi được báo vụ phòng 302 chưa có điện đang được kiểm tra, khoảng khi nào có kết quả ạ?",
+      "terms": [
+        "調査中"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～とのことですが、いつごろ～"
+    },
+    {
+      "id": "T-016-V13-015",
+      "group": "billing",
+      "role_vi": "Khách hỏi hóa đơn cũ",
+      "gender": "female",
+      "ja": "八日まで住んでいた旧居の電気料金について、最終請求を確認したいです。",
+      "vi": "Tôi muốn kiểm tra hóa đơn điện cuối cùng của căn cũ tôi ở đến hết mùng tám.",
+      "terms": [
+        "最終請求",
+        "旧居"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～の最終請求を確認したい"
+    },
+    {
+      "id": "T-016-V13-016",
+      "group": "billing",
+      "role_vi": "Khách sửa nhầm nhà trên hóa đơn",
+      "gender": "male",
+      "ja": "確認したいのは新居の請求ではなく、旧居の二〇一号室の最終請求です。",
+      "vi": "Khoản tôi muốn kiểm là hóa đơn cuối cùng của nhà cũ phòng 201, chứ không phải hóa đơn nhà mới.",
+      "terms": [
+        "新居",
+        "旧居",
+        "最終請求"
+      ],
+      "scenes": [
+        "S017"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-016-V13-017",
+      "group": "billing",
+      "role_vi": "Khách hỏi khi nào có số tiền chính thức",
+      "gender": "female",
+      "ja": "今の数字は概算とのことですが、最終的な請求金額はいつごろ確定しますか。",
+      "vi": "Tôi hiểu con số hiện giờ là ước tính, khoảng khi nào chốt số tiền chính thức trên hóa đơn ạ?",
+      "terms": [
+        "概算",
+        "請求金額",
+        "確定する"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～とのことですが、いつごろ～"
+    },
+    {
+      "id": "T-016-V13-018",
+      "group": "billing",
+      "role_vi": "Khách nhờ chuyển máy sang nơi có thể đối chiếu",
+      "gender": "male",
+      "ja": "旧居の電気料金を二重払いしたかもしれないので、確認できる担当部署につないでいただけますか。",
+      "vi": "Có thể tôi đã trả tiền điện nhà cũ hai lần, anh chuyển máy cho bộ phận kiểm tra được giúp tôi ạ?",
+      "terms": [
+        "二重払い",
+        "担当部署"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～につないでいただけますか"
+    },
+    {
+      "id": "T-016-V13-019",
+      "group": "billing",
+      "role_vi": "Khách hỏi mốc chờ gọi lại",
+      "gender": "female",
+      "ja": "電気料金の件で明日の夕方までに折り返しがなければ、この受付番号で問い合わせればいいですか。",
+      "vi": "Có thể tôi đã trả tiền điện nhà cũ hai lần, anh chuyển máy giúp tôi sang bộ phận có thể kiểm tra được không ạ?",
+      "terms": [
+        "折り返す",
+        "受付番号"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～までに連絡がなければ"
+    },
+    {
+      "id": "T-016-V13-020",
+      "group": "stop",
+      "role_vi": "Khách xác định ngày cuối dùng nước",
+      "gender": "male",
+      "ja": "十日の掃除までは水を使う予定なので、水道の使用中止日は十日にしてもらえますか。",
+      "vi": "Tôi còn dùng nước để dọn nhà ngày mùng mười, xin cho tôi đăng ký ngừng nước vào ngày mùng mười được không ạ?",
+      "terms": [
+        "受付番号"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～を～にしてもらえますか"
+    },
+    {
+      "id": "T-016-V13-021",
+      "group": "stop",
+      "role_vi": "Khách hỏi có phải mở cửa tòa nhà cho nhân viên gas",
+      "gender": "female",
+      "ja": "建物の入口がオートロックなのですが、ガスの閉栓の日は立ち会う必要がありますか。",
+      "vi": "Lối vào tòa nhà có khóa tự động, hôm đến khóa gas tôi có cần có mặt không ạ?",
+      "terms": [
+        "オートロック",
+        "閉栓",
+        "立ち会う"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～ので立ち会う必要がありますか"
+    },
+    {
+      "id": "T-016-V13-022",
+      "group": "stop",
+      "role_vi": "Khách hỏi hạn đổi ngày dừng điện",
+      "gender": "male",
+      "ja": "退去日が変わって電気の使用停止日をずらすなら、いつまでに連絡すればいいですか。",
+      "vi": "Nếu ngày chuyển ra thay đổi và tôi cần dời ngày ngừng điện, chậm nhất khi nào tôi phải báo ạ?",
+      "terms": [
+        "退去日",
+        "使用停止日"
+      ],
+      "scenes": [
+        "S023",
+        "S024"
+      ],
+      "pattern": "～なら、いつまでに連絡すれば"
+    },
+    {
+      "id": "T-016-V13-023",
+      "group": "stop",
+      "role_vi": "Khách xác nhận lần cuối dịch vụ đã ngừng",
+      "gender": "female",
+      "ja": "今回受け付けていただいたのは、旧居の電気の使用停止日を十二日に変える手続きで合っていますか。",
+      "vi": "Cho tôi xác nhận bên anh vừa tiếp nhận việc đổi ngày ngừng điện ở nhà cũ sang ngày mười hai, đúng không ạ?",
+      "terms": [
+        "旧居",
+        "使用停止日"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～で合っていますか"
+    }
+  ]
+}

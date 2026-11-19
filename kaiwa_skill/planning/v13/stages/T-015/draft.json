@@ -1,0 +1,386 @@
+{
+  "code": "T-015",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "7504dd2c6b33aebc3d58aea968483405ff8b11aa8bb4a83cdef4df404760e493",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "move": "Tìm hiểu nếp nhà trước khi vào",
+    "kitchen": "Chia ngăn và dùng đồ chung",
+    "rota": "Đổi lượt dọn cho rõ",
+    "quiet": "Nói khi việc chung gây phiền",
+    "leaving": "Hướng dẫn người mới và bàn giao đồ"
+  },
+  "items": [
+    {
+      "id": "T-015-V13-001",
+      "group": "move",
+      "role_vi": "Người đi xem nhà chung",
+      "gender": "female",
+      "ja": "このシェアハウスでは、台所も居間も共用ですか。",
+      "vi": "Ở nhà chung này, cả bếp lẫn phòng sinh hoạt đều dùng chung ạ?",
+      "terms": [
+        "居間",
+        "シェアハウス"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～は共用ですか"
+    },
+    {
+      "id": "T-015-V13-002",
+      "group": "move",
+      "role_vi": "Người đi xem nhà chung hỏi quy tắc khách",
+      "gender": "male",
+      "ja": "来客が宿泊する場合、この家のハウスルールではどうなっているか教えていただけますか。",
+      "vi": "Anh cho tôi biết nội quy nhà này quy định thế nào nếu khách muốn ở lại qua đêm được không ạ?",
+      "terms": [
+        "来客",
+        "宿泊",
+        "ハウスルール"
+      ],
+      "scenes": [
+        "S002",
+        "S004"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-015-V13-003",
+      "group": "move",
+      "role_vi": "Người muốn xem tiếng ồn từ bếp",
+      "gender": "female",
+      "ja": "空室が台所の隣だと夜の音が気になるので、夕方に一度見せていただけますか。",
+      "vi": "Phòng trống cạnh bếp nên tôi hơi lo tiếng ồn buổi tối, anh cho tôi xem thử vào chiều muộn được không ạ?",
+      "terms": [
+        "空室"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-015-V13-004",
+      "group": "move",
+      "role_vi": "Người vào ở hẹn được chỉ chỗ chung",
+      "gender": "male",
+      "ja": "入居日に荷物を置いたら、共用部の使い方を案内していただけますか。",
+      "vi": "Ngày chuyển vào, sau khi tôi để hành lý xuống, anh chỉ giúp tôi cách dùng các khu chung được không ạ?",
+      "terms": [
+        "入居日",
+        "共用部"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～ていただけますか"
+    },
+    {
+      "id": "T-015-V13-005",
+      "group": "kitchen",
+      "role_vi": "Bạn cùng nhà muốn chia ngăn tủ lạnh",
+      "gender": "female",
+      "ja": "誰の食材か分かりやすいように、冷蔵庫は一人一段ずつ名前を付けて使わない？",
+      "vi": "Để dễ biết đồ ăn của ai, mỗi người mình dùng một ngăn tủ lạnh và dán tên lên nhé?",
+      "terms": [
+        "段"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～ずつ～ない？"
+    },
+    {
+      "id": "T-015-V13-006",
+      "group": "kitchen",
+      "role_vi": "Bạn cùng nhà xin mượn chảo",
+      "gender": "male",
+      "ja": "洗って元に戻すから、共有備品のフライパンを七時半まで借りてもいい？",
+      "vi": "Tớ sẽ rửa rồi để lại chỗ cũ, tớ mượn chảo dùng chung đến bảy rưỡi được không?",
+      "terms": [
+        "共有備品",
+        "元に戻す"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～まで借りてもいい？"
+    },
+    {
+      "id": "T-015-V13-007",
+      "group": "kitchen",
+      "role_vi": "Bạn cùng nhà xác nhận trước khi dùng bếp muộn",
+      "gender": "female",
+      "ja": "九時を過ぎて台所を使ったら、終わり次第、道具も調理台も片づけるね。",
+      "vi": "Nếu tớ dùng bếp sau chín giờ thì xong là tớ dọn dụng cụ và mặt bàn bếp ngay nhé.",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～たら終わり次第～"
+    },
+    {
+      "id": "T-015-V13-008",
+      "group": "kitchen",
+      "role_vi": "Bạn cùng nhà sửa hiểu nhầm về hộp sữa",
+      "gender": "male",
+      "ja": "その牛乳は共用じゃなくて僕の私物で、名前はパックの横に書いてあるんだ。",
+      "vi": "Hộp sữa đó là của riêng tớ, tớ ghi tên ở bên hông hộp ấy.",
+      "terms": [
+        "私物"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～じゃなくて～"
+    },
+    {
+      "id": "T-015-V13-009",
+      "group": "kitchen",
+      "role_vi": "Bạn cùng nhà thống nhất phải hỏi trước",
+      "gender": "female",
+      "ja": "冷蔵庫の物が私物か分からなければ、勝手に使わず、先に持ち主を聞こう。",
+      "vi": "Nếu chưa rõ đồ trong tủ lạnh có phải đồ riêng không, mình hỏi xem của ai trước khi dùng nhé.",
+      "terms": [
+        "私物",
+        "勝手に"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～か分からなければ"
+    },
+    {
+      "id": "T-015-V13-010",
+      "group": "rota",
+      "role_vi": "Bạn cùng nhà thấy bảng trực chưa cập nhật",
+      "gender": "male",
+      "ja": "当番表が先週のままだから、今週の掃除当番を管理の人に確認しない？",
+      "vi": "Bảng phân công vẫn là của tuần trước, mình hỏi quản lý tuần này ai trực dọn nhé?",
+      "terms": [
+        "当番表",
+        "掃除当番"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～だから～を確認しない？"
+    },
+    {
+      "id": "T-015-V13-011",
+      "group": "rota",
+      "role_vi": "Bạn cùng nhà xin đổi lượt dọn",
+      "gender": "female",
+      "ja": "土曜は留守にするから、私の台所の掃除当番と、ケンタの日曜の当番を交代してもらえる？",
+      "vi": "Thứ Bảy tớ vắng nhà, Kenta đổi lượt dọn bếp của tớ với lượt trực Chủ nhật của cậu được không?",
+      "terms": [
+        "留守にする",
+        "交代する",
+        "掃除当番"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～と交代してもらえる？"
+    },
+    {
+      "id": "T-015-V13-012",
+      "group": "rota",
+      "role_vi": "Bạn cùng nhà nói không đổi được",
+      "gender": "male",
+      "ja": "日曜は僕も留守にするから、今週は掃除当番を交代できないんだ。",
+      "vi": "Chủ nhật tớ cũng vắng, tuần này tớ không đổi lượt dọn được.",
+      "terms": [
+        "留守にする",
+        "交代する",
+        "掃除当番"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～も留守にするから"
+    },
+    {
+      "id": "T-015-V13-013",
+      "group": "rota",
+      "role_vi": "Bạn cùng nhà chốt lại lượt đã đổi",
+      "gender": "female",
+      "ja": "私が日曜に居間を掃除して、ケンタが土曜に台所を掃除すると管理の人に連絡するので合ってる？",
+      "vi": "Mình báo quản lý là tớ dọn phòng khách Chủ nhật, còn Kenta dọn bếp thứ Bảy, đúng chứ?",
+      "terms": [
+        "連絡する",
+        "居間"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～で合ってる？"
+    },
+    {
+      "id": "T-015-V13-014",
+      "group": "rota",
+      "role_vi": "Bạn cùng nhà báo đã làm xong lượt mới",
+      "gender": "male",
+      "ja": "日曜の居間掃除は終わって、床とテーブルも拭いておいたよ。",
+      "vi": "Tớ dọn xong phòng khách lượt Chủ nhật rồi, đã lau cả sàn lẫn bàn.",
+      "terms": [
+        "居間",
+        "拭く"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～ておいた"
+    },
+    {
+      "id": "T-015-V13-015",
+      "group": "quiet",
+      "role_vi": "Bạn cùng nhà xử lý túi chắn lối",
+      "gender": "female",
+      "ja": "通路をふさいでた私の袋は、みんなが通れるように個室に入れておくね。",
+      "vi": "Cái túi của tớ chắn lối đi, để tớ cất vào phòng riêng cho mọi người đi qua được nhé.",
+      "terms": [
+        "通路",
+        "ふさぐ",
+        "個室"
+      ],
+      "scenes": [
+        "S016",
+        "S017"
+      ],
+      "pattern": "～に入れておくね"
+    },
+    {
+      "id": "T-015-V13-016",
+      "group": "quiet",
+      "role_vi": "Bạn cùng nhà nêu ảnh hưởng của tiếng gọi khuya",
+      "gender": "male",
+      "ja": "最近、十一時ごろの台所の話し声が部屋まで響いて寝つきにくいんだ。",
+      "vi": "Dạo này khoảng mười một giờ đêm tiếng nói chuyện từ bếp vang vào tận phòng làm tớ khó ngủ.",
+      "terms": [
+        "話し声",
+        "響く",
+        "寝つく"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～が響いて寝つきにくい"
+    },
+    {
+      "id": "T-015-V13-017",
+      "group": "quiet",
+      "role_vi": "Bạn cùng nhà tìm cách để người kia vẫn gọi được",
+      "gender": "female",
+      "ja": "夜勤の前に電話するなら、台所じゃなくて自分の部屋に移って、声を抑えてくれる？",
+      "vi": "Nếu cậu cần gọi trước ca đêm, cậu chuyển từ bếp về phòng mình rồi nói nhỏ giúp tớ nhé?",
+      "terms": [
+        "夜勤",
+        "声を抑える"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "～なら～てくれる？"
+    },
+    {
+      "id": "T-015-V13-018",
+      "group": "quiet",
+      "role_vi": "Bạn cùng nhà đề nghị cùng hỏi quản lý",
+      "gender": "male",
+      "ja": "夜遅くの話し声がこのまま続くなら、どこで電話できるか二人で管理の人に相談しない？",
+      "vi": "Nếu đêm muộn vẫn còn tiếng nói chuyện thế này, hai đứa mình hỏi quản lý xem có thể gọi điện ở đâu nhé?",
+      "terms": [
+        "話し声"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "～続くなら～相談しない？"
+    },
+    {
+      "id": "T-015-V13-019",
+      "group": "leaving",
+      "role_vi": "Cư dân chỉ người mới cách dùng bếp chung",
+      "gender": "female",
+      "ja": "この家では、台所の共有備品は使ったら洗って元に戻すことになっています。",
+      "vi": "Nhà này thống nhất dùng xong đồ chung trong bếp thì rửa và đặt lại chỗ cũ.",
+      "terms": [
+        "共有備品",
+        "元に戻す"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～ことになっています"
+    },
+    {
+      "id": "T-015-V13-020",
+      "group": "leaving",
+      "role_vi": "Cư dân hỏi ngày dọn đồ trên kệ chung",
+      "gender": "male",
+      "ja": "退去日までに、共用の収納棚にある私物も全部持ち帰る予定？",
+      "vi": "Trước ngày chuyển đi, cậu định mang hết đồ riêng trên kệ chung đi luôn chứ?",
+      "terms": [
+        "退去日",
+        "収納棚",
+        "私物",
+        "持ち帰る"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～までに持ち帰る予定？"
+    },
+    {
+      "id": "T-015-V13-021",
+      "group": "leaving",
+      "role_vi": "Cư dân chưa biết nồi thuộc về ai",
+      "gender": "female",
+      "ja": "この鍋は底に共用の印があるから、共有備品かどうか管理の人に確認しよう。",
+      "vi": "Dưới đáy nồi có dấu đồ chung, mình hỏi quản lý xem nồi có phải đồ dùng chung không nhé?",
+      "terms": [
+        "共有備品"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～かどうか確認しよう"
+    },
+    {
+      "id": "T-015-V13-022",
+      "group": "leaving",
+      "role_vi": "Cư dân gợi ý nhường đèn nếu chủ muốn",
+      "gender": "male",
+      "ja": "そのスタンドを譲ってもいいなら、新しく来る人に使うかどうか聞いてみる？",
+      "vi": "Nếu cậu muốn nhường cái đèn bàn đó, mình hỏi người mới xem họ có muốn dùng không nhé?",
+      "terms": [
+        "譲る"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～てもいいなら～聞いてみる？"
+    },
+    {
+      "id": "T-015-V13-023",
+      "group": "leaving",
+      "role_vi": "Cư dân xác nhận đồ để lại đã rõ",
+      "gender": "female",
+      "ja": "スタンドは新しい入居者に引き渡して、共用の棚には私物を残さないってことで合ってる？",
+      "vi": "Cậu sẽ giao đèn bàn cho người mới và không để đồ riêng lại trên kệ chung, đúng chứ?",
+      "terms": [
+        "入居者",
+        "引き渡す",
+        "私物"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～で合ってる？"
+    }
+  ]
+}

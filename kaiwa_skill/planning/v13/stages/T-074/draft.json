@@ -1,0 +1,318 @@
+{
+  "code": "T-074",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "0e70c8c36f0c28deae82149d52903f64a253afb6c6d77a9864c4c838394be4cc",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "report": "Báo sai số và xác minh ảnh hưởng",
+    "apology": "Xin lỗi về việc giao trễ",
+    "shipping": "Điều chỉnh đợt giao",
+    "schedule": "Đổi lịch và nhắc lại hẹn"
+  },
+  "items": [
+    {
+      "id": "T-074-V13-001",
+      "group": "report",
+      "role_vi": "Nhân viên phụ trách báo cáo",
+      "gender": "female",
+      "ja": "会議で六十四台とお伝えしましたが、最新版に載っているのは四十六台です。",
+      "vi": "Trong cuộc họp em đã báo 64 chiếc, nhưng số ghi trong bản mới nhất là 46 chiếc ạ.",
+      "terms": [
+        "最新版"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "正しい情報に言い直す"
+    },
+    {
+      "id": "T-074-V13-002",
+      "group": "report",
+      "role_vi": "Nhân viên phụ trách báo cáo",
+      "gender": "female",
+      "ja": "すみません、今朝の会議で出荷一覧の古い版と新しい版を取り違えてしまいました。",
+      "vi": "Em xin lỗi, trong cuộc họp sáng nay em đã lấy nhầm bản danh sách xuất hàng cũ thay cho bản mới.",
+      "terms": [
+        "取り違える"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "ミスを明かす"
+    },
+    {
+      "id": "T-074-V13-003",
+      "group": "report",
+      "role_vi": "Nhân viên phụ trách báo cáo",
+      "gender": "female",
+      "ja": "営業資料がお客様に送られたかどうかは、営業のどなたに確認すればいいですか。",
+      "vi": "Em nên hỏi ai bên kinh doanh xem tài liệu đã gửi cho khách chưa ạ?",
+      "terms": [],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "誰に聞けば"
+    },
+    {
+      "id": "T-074-V13-004",
+      "group": "report",
+      "role_vi": "Trưởng nhóm",
+      "gender": "male",
+      "ja": "出荷できる台数を倉庫の記録と照合してから、会議の数字を訂正してください。",
+      "vi": "Em đối chiếu số thiết bị xuất được với hồ sơ bên kho rồi hãy đính chính số đã báo trong cuộc họp nhé.",
+      "terms": [
+        "照合する",
+        "訂正する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "確認が取れてから"
+    },
+    {
+      "id": "T-074-V13-005",
+      "group": "report",
+      "role_vi": "Nhân viên phụ trách báo cáo",
+      "gender": "female",
+      "ja": "正式な台数がわかるまでは、共有先に古い一覧を使わないようお願いしてもよいですか。",
+      "vi": "Trong lúc chưa có số chính thức, em báo trước cho những người đã nhận danh sách là tạm ngừng dùng bản cũ được không ạ?",
+      "terms": [
+        "共有先"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "先に止める"
+    },
+    {
+      "id": "T-074-V13-006",
+      "group": "report",
+      "role_vi": "Nhân viên phụ trách báo cáo",
+      "gender": "female",
+      "ja": "古い数字は営業資料の下書きに入っていましたが、社外には送っていないと確認が取れました。",
+      "vi": "Số cũ đã được đưa vào bản nháp của bên kinh doanh, nhưng em xác nhận được là chưa gửi ra ngoài công ty ạ.",
+      "terms": [
+        "社外",
+        "確認が取れる"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "確認結果を伝える"
+    },
+    {
+      "id": "T-074-V13-007",
+      "group": "report",
+      "role_vi": "Nhân viên phụ trách báo cáo",
+      "gender": "female",
+      "ja": "修正版を見ていただいてから、共有フォルダーにある出荷一覧を差し替えます。",
+      "vi": "Sau khi anh xem bản sửa, em sẽ thay danh sách xuất hàng trong thư mục chung ạ.",
+      "terms": [
+        "差し替える"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "確認が取れてから"
+    },
+    {
+      "id": "T-074-V13-008",
+      "group": "apology",
+      "role_vi": "Nhân viên phụ trách giao hàng",
+      "gender": "female",
+      "ja": "再検品が必要になり、木曜の午前中に納品できず申し訳ございません。",
+      "vi": "Bên tôi phải kiểm lại hàng nên không giao được trong sáng thứ Năm. Thành thật xin lỗi anh ạ.",
+      "terms": [
+        "納品する",
+        "申し訳ございません"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "お詫びと理由"
+    },
+    {
+      "id": "T-074-V13-009",
+      "group": "apology",
+      "role_vi": "Nhân viên phụ trách giao hàng",
+      "gender": "female",
+      "ja": "全部をお届けできるのは金曜の午後になる見込みですが、設置の予定に影響はございますか。",
+      "vi": "Dự kiến chiều thứ Sáu bên tôi mới giao được đủ hàng, như vậy có ảnh hưởng đến lịch lắp đặt của anh không ạ?",
+      "terms": [
+        "見込み",
+        "影響"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "新しい見込み"
+    },
+    {
+      "id": "T-074-V13-010",
+      "group": "apology",
+      "role_vi": "Nhân viên phụ trách giao hàng",
+      "gender": "female",
+      "ja": "最初の設置に間に合うよう、最低限必要な台数と受け取りの期限を教えていただけますか。",
+      "vi": "Để kịp đợt lắp đặt đầu, anh cho tôi biết cần ít nhất bao nhiêu chiếc và muộn nhất phải nhận lúc nào được không ạ?",
+      "terms": [
+        "台数",
+        "間に合う"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "間に合わせる条件"
+    },
+    {
+      "id": "T-074-V13-011",
+      "group": "apology",
+      "role_vi": "Đối tác nhận hàng",
+      "gender": "male",
+      "ja": "最初に使う十台を午前十時までに受け取れれば、残りは午後で大丈夫です。",
+      "vi": "Nếu mười chiếc dùng trước đến muộn nhất vào mười giờ sáng thì số còn lại giao buổi chiều cũng được.",
+      "terms": [],
+      "scenes": [
+        "S006",
+        "S007"
+      ],
+      "pattern": "条件をはっきり述べる"
+    },
+    {
+      "id": "T-074-V13-012",
+      "group": "shipping",
+      "role_vi": "Nhân viên phụ trách giao hàng",
+      "gender": "female",
+      "ja": "展示用のスタンドは二回に分けてお送りし、最初の十台は金曜の九時半までにお届けします。",
+      "vi": "Bên tôi sẽ giao chân đỡ trưng bày thành hai đợt, mười chiếc đầu sẽ đến muộn nhất vào chín giờ rưỡi sáng thứ Sáu ạ.",
+      "terms": [
+        "分けて送る"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "前後便を分ける"
+    },
+    {
+      "id": "T-074-V13-013",
+      "group": "shipping",
+      "role_vi": "Nhân viên phụ trách giao hàng",
+      "gender": "female",
+      "ja": "午後にお届けする二十台も、朝の便と同じ搬入口にお持ちすればよろしいですか。",
+      "vi": "Hai mươi chiếc giao buổi chiều cũng mang tới lối nhận hàng của chuyến sáng, đúng không ạ?",
+      "terms": [
+        "搬入口"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "受け取り先を確認"
+    },
+    {
+      "id": "T-074-V13-014",
+      "group": "shipping",
+      "role_vi": "Nhân viên phụ trách giao hàng",
+      "gender": "female",
+      "ja": "金曜の午後に到着する予定ですが、荷物はまだ倉庫で梱包中です。",
+      "vi": "Hàng dự kiến tới vào chiều thứ Sáu, nhưng hiện vẫn đang được đóng gói ở kho ạ.",
+      "terms": [
+        "梱包中"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "現時点を言い直す"
+    },
+    {
+      "id": "T-074-V13-015",
+      "group": "shipping",
+      "role_vi": "Nhân viên phụ trách giao hàng",
+      "gender": "female",
+      "ja": "荷物を配送会社に渡し次第、追跡番号をお知らせします。",
+      "vi": "Ngay khi bàn giao hàng cho bên vận chuyển, tôi sẽ báo mã theo dõi cho anh.",
+      "terms": [
+        "配送会社",
+        "追跡番号"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "次の連絡を約束"
+    },
+    {
+      "id": "T-074-V13-016",
+      "group": "schedule",
+      "role_vi": "Nhân viên hẹn gặp đối tác",
+      "gender": "female",
+      "ja": "こちらで違うサンプルを準備してしまい、木曜の訪問までに正しいものをご用意できず、申し訳ございません。",
+      "vi": "Bên tôi chuẩn bị nhầm mẫu nên không thu xếp được mẫu đúng kịp cho buổi gặp thứ Năm. Thành thật xin lỗi anh ạ.",
+      "terms": [
+        "申し訳ございません"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "お詫びと理由"
+    },
+    {
+      "id": "T-074-V13-017",
+      "group": "schedule",
+      "role_vi": "Nhân viên hẹn gặp đối tác",
+      "gender": "female",
+      "ja": "訪問の候補日ですが、金曜の午前と来週火曜の午後でしたら、どちらがご都合よろしいですか。",
+      "vi": "Để hẹn gặp lại, anh tiện sáng thứ Sáu hay chiều thứ Ba tuần sau ạ?",
+      "terms": [
+        "候補日"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "二つの候補を出す"
+    },
+    {
+      "id": "T-074-V13-018",
+      "group": "schedule",
+      "role_vi": "Nhân viên hẹn gặp đối tác",
+      "gender": "female",
+      "ja": "金曜はサンプルを持って、十時に本館一階の受付へ伺えばよろしいですか。",
+      "vi": "Thứ Sáu tôi mang mẫu đến quầy lễ tân tầng một tòa chính lúc mười giờ, đúng không ạ?",
+      "terms": [],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "場所を確認する"
+    },
+    {
+      "id": "T-074-V13-019",
+      "group": "schedule",
+      "role_vi": "Nhân viên hẹn gặp đối tác",
+      "gender": "female",
+      "ja": "今週の訪問は取りやめて、木曜の午後二時に十分だけお電話でお話しできませんか。",
+      "vi": "Mình chuyển buổi gặp trực tiếp tuần này sang một cuộc gọi mười phút lúc hai giờ chiều thứ Năm được không ạ?",
+      "terms": [
+        "取りやめる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "代わりの手段を打診"
+    },
+    {
+      "id": "T-074-V13-020",
+      "group": "schedule",
+      "role_vi": "Nhân viên hẹn gặp đối tác",
+      "gender": "female",
+      "ja": "来週は調整できるタイプのサンプルを持参して、展示場所に収まるか一緒に確認させてください。",
+      "vi": "Tuần sau tôi sẽ mang mẫu loại điều chỉnh được để cùng anh kiểm xem có đặt vừa chỗ trưng bày không ạ.",
+      "terms": [
+        "持参する"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "持参する物と目的"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "code": "T-079",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "e39d666a0365c8fb5f624d60f972f612829a5677ade3a0a8e7d7a8a702043e62",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "known": "Báo phần đã kiểm và phần chưa biết",
+    "contact": "Hỏi kho và cập nhật kinh doanh",
+    "decide": "Đưa phương án và xin quyết định",
+    "handover": "Bàn giao và cập nhật ca sau"
+  },
+  "items": [
+    {
+      "id": "T-079-V13-001",
+      "group": "known",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "今朝の入荷は、予定の二十台に対して十二台しか届いていません。",
+      "vi": "Lô nhập sáng nay dự kiến 20 chiếc, nhưng mới tới 12 chiếc ạ.",
+      "terms": [
+        "入荷"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "予定に対して"
+    },
+    {
+      "id": "T-079-V13-002",
+      "group": "known",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "伝票と照合したところ、現物の十二台はすべて今回の注文分でした。",
+      "vi": "Em đối chiếu phiếu rồi, cả 12 chiếc đang có đều thuộc đơn lần này ạ.",
+      "terms": [
+        "現物",
+        "伝票",
+        "照合する"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～と照合する"
+    },
+    {
+      "id": "T-079-V13-003",
+      "group": "known",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "二十台が全部未着ではなく、まだ届いていないのは残りの八台です。",
+      "vi": "Trong lô 20 chiếc, chỉ tám chiếc còn lại là chưa đến ạ.",
+      "terms": [
+        "未着"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～のは残りだけ"
+    },
+    {
+      "id": "T-079-V13-004",
+      "group": "known",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "届いた分の検品はできますが、後工程の梱包はいったん止めたほうがよいでしょうか。",
+      "vi": "Em kiểm được phần đã tới, còn bước đóng gói sau đó thì tạm dừng đúng không ạ?",
+      "terms": [
+        "後工程"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～たほうがよいでしょうか"
+    },
+    {
+      "id": "T-079-V13-005",
+      "group": "known",
+      "role_vi": "Trưởng ca hiện trường",
+      "gender": "female",
+      "ja": "先に十二台を検品して、ほかの出荷分と混ざらないように分けて置いてね。",
+      "vi": "Em kiểm trước 12 chiếc rồi để riêng cho khỏi lẫn với các lô chuẩn bị xuất khác nhé.",
+      "terms": [
+        "検品する"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "～は分けておく"
+    },
+    {
+      "id": "T-079-V13-006",
+      "group": "known",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "残りが別便に載っているか倉庫が調べているので、遅くとも十一時半までに状況をお伝えします。",
+      "vi": "Kho đang kiểm xem phần còn lại có đi chuyến khác không, em sẽ báo tình hình muộn nhất lúc 11 giờ rưỡi ạ.",
+      "terms": [
+        "別便",
+        "遅くとも"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "～までに状況を伝える"
+    },
+    {
+      "id": "T-079-V13-007",
+      "group": "contact",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "不足分が受け入れ場所に着く時刻が確定したら、教えていただけますか。",
+      "vi": "Khi chốt được giờ phần hàng còn thiếu tới khu nhận, anh báo giúp em được không ạ?",
+      "terms": [
+        "不足分",
+        "確定する"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～たら教えてください"
+    },
+    {
+      "id": "T-079-V13-008",
+      "group": "contact",
+      "role_vi": "Nhân viên kho gửi hàng",
+      "gender": "male",
+      "ja": "今の見込みでは明日の午前に着きますが、配送会社からの返事を待っているところです。",
+      "vi": "Dự kiến hàng tới vào sáng mai, nhưng anh vẫn đang chờ bên vận chuyển trả lời.",
+      "terms": [
+        "見込み"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "今の見込みでは"
+    },
+    {
+      "id": "T-079-V13-009",
+      "group": "contact",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "十時はお客様への納品時刻ではなく、当社に到着する見込みという理解で合っていますか。",
+      "vi": "Em hiểu mốc 10 giờ là dự kiến hàng tới công ty mình. Còn giờ giao khách là mốc khác, đúng không ạ?",
+      "terms": [
+        "見込み"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "T-079-V13-010",
+      "group": "contact",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "不足分の到着はまだ確認中なので、お客様には納品時刻が決まり次第ご連絡すると伝えてください。",
+      "vi": "Giờ tới của phần hàng thiếu vẫn đang được xác nhận, chị báo khách là mình sẽ liên hệ lại ngay khi biết giờ giao nhé.",
+      "terms": [
+        "不足分",
+        "確認中"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～ので／から"
+    },
+    {
+      "id": "T-079-V13-011",
+      "group": "contact",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "不足の八台は明日の十時までに届くと確定しましたが、お客様への納品は検品してから時間を決めます。",
+      "vi": "Đã chốt tám chiếc còn thiếu sẽ tới muộn nhất 10 giờ sáng mai. Giờ giao khách sẽ được quyết định sau khi bên mình kiểm hàng ạ.",
+      "terms": [
+        "検品する",
+        "確定する"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～てから"
+    },
+    {
+      "id": "T-079-V13-012",
+      "group": "decide",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "分納なら今日から設置を始められますが、お客様には二回受け取っていただく必要があります。",
+      "vi": "Nếu giao thành hai đợt thì khách có thể bắt đầu lắp hôm nay, nhưng họ phải bố trí nhận hai lần ạ.",
+      "terms": [
+        "分納"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～なら、～が"
+    },
+    {
+      "id": "T-079-V13-013",
+      "group": "decide",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "明日二十台まとめてお届けするなら、一度で受け取れますが、設置は明日以降になります。",
+      "vi": "Nếu mai giao gộp 20 chiếc, khách chỉ cần nhận một lần, nhưng phải từ ngày mai trở đi mới lắp được ạ.",
+      "terms": [
+        "まとめる"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～なら、～が"
+    },
+    {
+      "id": "T-079-V13-014",
+      "group": "decide",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "営業に先方の都合を確認してもらってから、今日お届けする十二台を梱包します。",
+      "vi": "Em sẽ nhờ bên kinh doanh xác nhận khách có tiện nhận không rồi mới đóng 12 chiếc giao hôm nay ạ.",
+      "terms": [
+        "先方"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～てから"
+    },
+    {
+      "id": "T-079-V13-015",
+      "group": "decide",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "まとめてお渡しする場合、お客様が受け取れる時間帯は明日の午後という理解で合っていますか。",
+      "vi": "Nếu giao gộp, em hiểu là khách có thể nhận vào chiều mai, đúng không ạ?",
+      "terms": [
+        "時間帯"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～という理解で合っていますか"
+    },
+    {
+      "id": "T-079-V13-016",
+      "group": "decide",
+      "role_vi": "Nhân viên hiện trường",
+      "gender": "male",
+      "ja": "十二台は午後の便で出荷しましたが、お客様の受け取り確認はまだ取れていません。",
+      "vi": "Em đã xuất 12 chiếc theo chuyến chiều, nhưng vẫn chưa xác nhận được khách đã nhận ạ.",
+      "terms": [
+        "受け取り確認"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～は済んだがまだ"
+    },
+    {
+      "id": "T-079-V13-017",
+      "group": "handover",
+      "role_vi": "Nhân viên bàn giao ca",
+      "gender": "male",
+      "ja": "納品先のＢ口が使えるかは先方の返事待ちだから、運転手にはまだ変更を伝えていないよ。",
+      "vi": "Tớ đang chờ khách xác nhận có dùng được cổng B để giao hàng không, nên chưa báo đổi cho lái xe.",
+      "terms": [
+        "先方",
+        "返事待ち"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～ので／から"
+    },
+    {
+      "id": "T-079-V13-018",
+      "group": "handover",
+      "role_vi": "Nhân viên bàn giao ca",
+      "gender": "male",
+      "ja": "先方から四時四十五分までに返事がなかったら、受け取り口がどこになるか聞いてもらえる？",
+      "vi": "Nếu đến 4 giờ 45 khách vẫn chưa phản hồi, cậu hỏi giúp tớ sẽ nhận hàng ở cổng nào nhé?",
+      "terms": [
+        "先方",
+        "受け取り口"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～たら聞いてもらえる"
+    },
+    {
+      "id": "T-079-V13-019",
+      "group": "handover",
+      "role_vi": "Nhân viên nhận ca sau",
+      "gender": "female",
+      "ja": "引き継ぎにあるＢ口は希望ということだから、まだ了承済みではないんだね。",
+      "vi": "Cổng B trong phần bàn giao mới là đề nghị, tức là khách vẫn chưa đồng ý đúng không?",
+      "terms": [
+        "引き継ぎ",
+        "了承済み"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～ということだね"
+    },
+    {
+      "id": "T-079-V13-020",
+      "group": "handover",
+      "role_vi": "Nhân viên nhận ca sau",
+      "gender": "female",
+      "ja": "Ｂ口で受け取れると確認してから運転手に案内を送り直して、配車担当にも伝えたよ。",
+      "vi": "Sau khi xác nhận khách nhận được ở cổng B, tớ đã gửi lại hướng dẫn cho lái xe và báo người điều xe rồi.",
+      "terms": [
+        "送り直す",
+        "配車担当"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～てから"
+    },
+    {
+      "id": "T-079-V13-021",
+      "group": "handover",
+      "role_vi": "Nhân viên nhận ca sau",
+      "gender": "female",
+      "ja": "納品は明日の朝九時のままで、受け取り口だけＢ口に更新したよ。",
+      "vi": "Vẫn giao lúc 9 giờ sáng mai, tớ chỉ cập nhật chỗ nhận hàng sang cổng B thôi.",
+      "terms": [
+        "受け取り口",
+        "更新する"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～だけ変わった"
+    }
+  ]
+}

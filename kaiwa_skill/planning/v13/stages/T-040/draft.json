@@ -1,0 +1,366 @@
+{
+  "code": "T-040",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "96580b080211ea2ba0d5a15abc8648461719add1ca4da2969a27858e95f0050f",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "before": "Hỏi nơi nhận, cách ghi tên và chi phí",
+    "application": "Giải thích mục đích và kiểm thông tin trước khi gửi",
+    "trace": "Tra soát khi tiền chưa đến",
+    "correction": "Sửa thông tin và theo dõi kết quả"
+  },
+  "items": [
+    {
+      "id": "T-040-V13-001",
+      "group": "before",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "ベトナムにいる母の口座に送金したいです。",
+      "vi": "Tôi muốn chuyển tiền vào tài khoản của mẹ tôi ở Việt Nam.",
+      "terms": [],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜に送金したい"
+    },
+    {
+      "id": "T-040-V13-002",
+      "group": "before",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "送金先の銀行名のほかに、支店名も必要ですか。",
+      "vi": "Ngoài tên ngân hàng nhận, có cần cả tên chi nhánh không ạ?",
+      "terms": [
+        "送金先",
+        "支店名"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜のほかに、〜も必要"
+    },
+    {
+      "id": "T-040-V13-003",
+      "group": "before",
+      "role_vi": "Nhân viên dịch vụ chuyển tiền",
+      "gender": "male",
+      "ja": "お申込みの前に、受取人のローマ字表記を銀行の登録情報と照らし合わせてください。",
+      "vi": "Trước khi đăng ký chuyển tiền, anh/chị đối chiếu cách ghi tên người nhận bằng chữ La-tinh với tên đăng ký ở ngân hàng giúp tôi nhé.",
+      "terms": [
+        "受取人",
+        "ローマ字表記"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜前に〜と照らし合わせる"
+    },
+    {
+      "id": "T-040-V13-004",
+      "group": "before",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "十万円を送る場合、送金手数料を含めて私はいくら払えばいいですか。",
+      "vi": "Nếu gửi 100.000 yên, tổng cộng cả phí chuyển tiền tôi phải trả bao nhiêu ạ?",
+      "terms": [
+        "送金手数料"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜場合、いくら〜"
+    },
+    {
+      "id": "T-040-V13-005",
+      "group": "before",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "受取銀行で費用が差し引かれる場合、母が受け取る見込み額はいくらですか。",
+      "vi": "Nếu ngân hàng nhận khấu trừ phí, mẹ tôi dự kiến nhận được bao nhiêu ạ?",
+      "terms": [
+        "受取銀行",
+        "差し引く",
+        "見込み額"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "〜場合、いくら〜"
+    },
+    {
+      "id": "T-040-V13-006",
+      "group": "before",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "この見積もりに使った適用レートは、実際に申し込むときも同じですか。",
+      "vi": "Tỷ giá dùng trong bản ước tính này có giữ nguyên lúc tôi làm lệnh chuyển không ạ?",
+      "terms": [
+        "見積もり",
+        "適用レート"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "〜は、〜ときも同じ"
+    },
+    {
+      "id": "T-040-V13-007",
+      "group": "application",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "今回の送金目的は、母の今月の家賃や食費などの生活費を負担することです。",
+      "vi": "Tôi chuyển khoản này để phụ tiền sinh hoạt tháng này của mẹ, như tiền nhà và tiền ăn.",
+      "terms": [
+        "送金目的",
+        "生活費"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜目的は〜ことです"
+    },
+    {
+      "id": "T-040-V13-008",
+      "group": "application",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "受取人口座番号の最後の一桁がはっきりしないので、母に確認してから手続きを進めたいです。",
+      "vi": "Tôi chưa chắc chữ số cuối trong số tài khoản nhận tiền, nên tôi muốn hỏi lại mẹ rồi mới làm tiếp.",
+      "terms": [
+        "受取人口座番号"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜てから手続きを進めたい"
+    },
+    {
+      "id": "T-040-V13-009",
+      "group": "application",
+      "role_vi": "Nhân viên dịch vụ chuyển tiền",
+      "gender": "male",
+      "ja": "今回お送りになるお金の出どころを教えていただけますか。",
+      "vi": "Anh/chị cho tôi biết khoản tiền định gửi lần này có nguồn từ đâu được không ạ?",
+      "terms": [
+        "出どころ"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-040-V13-010",
+      "group": "application",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "仕事の給料から貯めたお金ですが、何か月分の給与明細が必要ですか。",
+      "vi": "Đây là tiền tôi dành dụm từ lương, anh/chị cần phiếu lương của mấy tháng ạ?",
+      "terms": [
+        "給与明細"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜ですが、何か月分"
+    },
+    {
+      "id": "T-040-V13-011",
+      "group": "application",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "送金を受け付けてもらえなかったのですが、資料を追加すれば再検討していただけますか。",
+      "vi": "Lệnh chuyển của tôi chưa được tiếp nhận, nếu tôi bổ sung giấy tờ thì bên mình có thể xem xét lại được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜すれば、〜ていただけますか"
+    },
+    {
+      "id": "T-040-V13-012",
+      "group": "trace",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "三日前に母への送金を申し込みましたが、母の口座にはまだ入金されていないそうです。",
+      "vi": "Ba hôm trước tôi làm lệnh gửi tiền cho mẹ, nhưng mẹ báo tiền vẫn chưa vào tài khoản.",
+      "terms": [
+        "入金"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "まだ〜ていないそうです"
+    },
+    {
+      "id": "T-040-V13-013",
+      "group": "trace",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "送金の受付番号をお伝えすれば、取引状況を調べていただけますか。",
+      "vi": "Nếu tôi cung cấp mã tiếp nhận lệnh chuyển, anh/chị tra giúp tình trạng giao dịch được không ạ?",
+      "terms": [
+        "受付番号",
+        "取引状況"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜すれば、〜ていただけますか"
+    },
+    {
+      "id": "T-040-V13-014",
+      "group": "trace",
+      "role_vi": "Nhân viên tra soát chuyển tiền",
+      "gender": "male",
+      "ja": "お申込みは受付済みですが、受取銀行への入金はまだ照会中です。",
+      "vi": "Lệnh chuyển của anh/chị đã được tiếp nhận, còn việc tiền đã vào tài khoản ở ngân hàng nhận hay chưa thì chúng tôi vẫn đang kiểm tra.",
+      "terms": [
+        "受付済み",
+        "受取銀行",
+        "入金",
+        "照会中"
+      ],
+      "scenes": [
+        "S010",
+        "S016"
+      ],
+      "pattern": "〜済みですが、まだ〜中です"
+    },
+    {
+      "id": "T-040-V13-015",
+      "group": "trace",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "母が受取銀行に問い合わせるとき、どの番号を伝えればいいですか。",
+      "vi": "Khi mẹ tôi hỏi bên ngân hàng nhận, mẹ tôi cần cung cấp mã nào ạ?",
+      "terms": [
+        "受取銀行"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "どの〜を伝えればいい"
+    },
+    {
+      "id": "T-040-V13-016",
+      "group": "trace",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "送金の照会番号を控えておきたいのですが、いつごろ結果を聞けるかも教えていただけますか。",
+      "vi": "Tôi muốn ghi lại mã tra soát, anh/chị cho tôi biết thêm khoảng khi nào có thể hỏi kết quả được không ạ?",
+      "terms": [
+        "照会番号"
+      ],
+      "scenes": [
+        "S010",
+        "S016"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-040-V13-017",
+      "group": "correction",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "受取人の名前の順番を読み違えましたが、正しくはグエン・ラン・ティーです。",
+      "vi": "Tôi đọc nhầm thứ tự tên người nhận, thứ tự đúng là Nguyễn Lan Thị ạ.",
+      "terms": [
+        "受取人",
+        "読み違える"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜ましたが、正しくは"
+    },
+    {
+      "id": "T-040-V13-018",
+      "group": "correction",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "送金の控えを見直したら受取人の名前が違っていたので、今の段階で訂正依頼ができるか調べていただけますか。",
+      "vi": "Tôi xem lại biên nhận chuyển tiền và thấy tên người nhận bị sai, anh/chị kiểm tra giúp ở bước này còn yêu cầu sửa được không ạ?",
+      "terms": [
+        "控え",
+        "受取人",
+        "訂正依頼"
+      ],
+      "scenes": [
+        "S011",
+        "S013",
+        "S014"
+      ],
+      "pattern": "〜か調べていただけますか"
+    },
+    {
+      "id": "T-040-V13-019",
+      "group": "correction",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "名前の訂正が間に合わない場合、送金を取り消すことはできますか。",
+      "vi": "Nếu không kịp sửa tên, tôi có thể hủy lệnh chuyển tiền được không ạ?",
+      "terms": [
+        "取り消す"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜場合、〜ことはできる"
+    },
+    {
+      "id": "T-040-V13-020",
+      "group": "correction",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "送金を取り消すかどうかは、費用を聞いてから決めたいです。",
+      "vi": "Tôi muốn hỏi chi phí trước rồi mới quyết định có hủy lệnh chuyển hay không.",
+      "terms": [
+        "取り消す"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜かどうかは、〜てから決めたい"
+    },
+    {
+      "id": "T-040-V13-021",
+      "group": "correction",
+      "role_vi": "Nhân viên dịch vụ chuyển tiền",
+      "gender": "male",
+      "ja": "受取人のお名前の訂正については、受付番号を添えて担当窓口に引き継ぎます。",
+      "vi": "Tôi sẽ chuyển yêu cầu sửa tên người nhận kèm mã tiếp nhận cho bộ phận phụ trách.",
+      "terms": [
+        "受取人",
+        "受付番号",
+        "引き継ぐ"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜を添えて〜に引き継ぐ"
+    },
+    {
+      "id": "T-040-V13-022",
+      "group": "correction",
+      "role_vi": "Người gửi tiền cho người thân",
+      "gender": "female",
+      "ja": "名前の訂正依頼は受け付けてもらえましたが、母の口座への入金はまだ未確認です。",
+      "vi": "Bên chuyển tiền đã nhận yêu cầu sửa tên của tôi, còn tiền đã vào tài khoản mẹ hay chưa thì vẫn chưa xác nhận được.",
+      "terms": [
+        "訂正依頼",
+        "入金",
+        "未確認"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜ましたが、まだ未確認です"
+    }
+  ]
+}

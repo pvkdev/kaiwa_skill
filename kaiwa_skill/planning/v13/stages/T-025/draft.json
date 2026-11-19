@@ -1,0 +1,377 @@
+{
+  "code": "T-025",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "df28570df2285ddf5c50a71d73d247eb195ca3188337acb17d3cb0c4e288a702",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "order": "Hỏi mẫu và đặt đúng số lượng",
+    "delivery": "Chốt giá, địa chỉ và cách trả",
+    "alter": "Đổi số lượng hoặc ngày giao",
+    "handoff": "Kiểm hàng và cách trả tại cửa",
+    "after": "Theo món còn thiếu"
+  },
+  "items": [
+    {
+      "id": "T-025-V13-001",
+      "group": "order",
+      "role_vi": "Khách hỏi mẫu ghế còn hàng",
+      "gender": "female",
+      "ja": "青い折りたたみ椅子で、背もたれ付きのものはありますか。",
+      "vi": "Cửa hàng có ghế xếp màu xanh dương loại có tựa lưng không ạ?",
+      "terms": [
+        "背もたれ"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "～付きの～はありますか"
+    },
+    {
+      "id": "T-025-V13-002",
+      "group": "order",
+      "role_vi": "Khách cân nhắc màu khác do thiếu hàng",
+      "gender": "male",
+      "ja": "青で三脚そろわないなら、同じ型の色違いで三脚そろいますか。",
+      "vi": "Nếu không đủ ba ghế màu xanh dương, có đủ ba chiếc cùng mẫu mà khác màu không ạ?",
+      "terms": [
+        "色違い",
+        "脚"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "～なら～そろいますか"
+    },
+    {
+      "id": "T-025-V13-003",
+      "group": "order",
+      "role_vi": "Khách hỏi nhận hàng từ chi nhánh khác",
+      "gender": "female",
+      "ja": "店頭受け取りでもかまわないのですが、来週の金曜までに折りたたみ椅子を受け取れる方法はありますか。",
+      "vi": "Tôi có thể tự đến cửa hàng lấy, có cách nào nhận được ghế xếp chậm nhất vào thứ Sáu tuần sau không ạ?",
+      "terms": [
+        "店頭受け取り"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "～までに受け取れる方法はありますか"
+    },
+    {
+      "id": "T-025-V13-004",
+      "group": "order",
+      "role_vi": "Khách nhắc lại mẫu và số lượng",
+      "gender": "male",
+      "ja": "注文内容は、背もたれ付きで普通の高さの青い椅子が三脚で合っていますか。",
+      "vi": "Tôi xin xác nhận đơn gồm ba ghế xanh dương loại cao bình thường, có tựa lưng, đúng không ạ?",
+      "terms": [
+        "背もたれ",
+        "脚",
+        "注文内容"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-025-V13-005",
+      "group": "delivery",
+      "role_vi": "Khách hỏi tổng gồm phí giao",
+      "gender": "female",
+      "ja": "椅子三脚の配達料込みの総額はいくらですか。",
+      "vi": "Tổng tiền ba ghế, tính cả phí giao hàng, là bao nhiêu ạ?",
+      "terms": [
+        "配達料",
+        "総額",
+        "脚"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "～込みの総額はいくらですか"
+    },
+    {
+      "id": "T-025-V13-006",
+      "group": "delivery",
+      "role_vi": "Khách đọc địa chỉ và mốc cửa vào",
+      "gender": "male",
+      "ja": "配達先は一号棟の三〇二号室で、大通り側の青い看板が入口の目印です。",
+      "vi": "Xin giao tới tòa số một, phòng 302, lối vào có biển xanh dương phía đường lớn làm mốc ạ.",
+      "terms": [
+        "配達先",
+        "号棟",
+        "目印"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "～が目印です"
+    },
+    {
+      "id": "T-025-V13-007",
+      "group": "delivery",
+      "role_vi": "Khách sửa tầng và số phòng",
+      "gender": "female",
+      "ja": "配達先の部屋番号は二階の二〇二ではなく、三階の三〇二です。",
+      "vi": "Địa chỉ nhận hàng là phòng 302 tầng ba, chứ không phải phòng 202 tầng hai ạ.",
+      "terms": [
+        "配達先",
+        "部屋番号",
+        "階"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "～ではなく～です"
+    },
+    {
+      "id": "T-025-V13-008",
+      "group": "delivery",
+      "role_vi": "Khách xác nhận tổng sau khi cộng thêm",
+      "gender": "male",
+      "ja": "追加料金を含めた配達料が九百円で、総額は六千三百円で合っていますか。",
+      "vi": "Phí giao hàng sau khi cộng khoản phát sinh là chín trăm yên, vậy tổng đơn là sáu nghìn ba trăm yên, đúng không ạ?",
+      "terms": [
+        "追加料金",
+        "配達料",
+        "総額"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "～で合っていますか"
+    },
+    {
+      "id": "T-025-V13-009",
+      "group": "delivery",
+      "role_vi": "Khách chốt khi nào phải trả bằng tiền mặt",
+      "gender": "female",
+      "ja": "金曜の午後二時から四時に配達とのことですが、現金払いは受け取りのときでいいですか。",
+      "vi": "Tôi được báo giao từ hai đến bốn giờ chiều thứ Sáu, tôi trả tiền mặt lúc nhận là được phải không ạ?",
+      "terms": [
+        "現金払い"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "～とのことですが、～でいいですか"
+    },
+    {
+      "id": "T-025-V13-010",
+      "group": "alter",
+      "role_vi": "Khách muốn giảm ghế trong đơn đã đặt",
+      "gender": "male",
+      "ja": "使う人数が変わったので、注文した青い椅子を四脚から三脚に減らしたいです。",
+      "vi": "Số người dùng thay đổi nên tôi muốn giảm đơn ghế xanh dương từ bốn xuống ba chiếc ạ.",
+      "terms": [
+        "注文する",
+        "脚",
+        "減らす"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "～から～に減らしたい"
+    },
+    {
+      "id": "T-025-V13-011",
+      "group": "alter",
+      "role_vi": "Khách kiểm xem đơn đã đóng gói còn đổi được không",
+      "gender": "female",
+      "ja": "もう梱包が終わっていても、まだ発送前なら椅子を一脚だけ取り消せますか。",
+      "vi": "Dù đã đóng gói xong, nếu vẫn chưa gửi đi thì tôi hủy riêng một ghế được không ạ?",
+      "terms": [
+        "梱包",
+        "発送前",
+        "脚",
+        "取り消す"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "～なら～取り消せますか"
+    },
+    {
+      "id": "T-025-V13-012",
+      "group": "alter",
+      "role_vi": "Khách hỏi cách xử lý một ghế dư sau khi nhận",
+      "gender": "male",
+      "ja": "今は数を変えられないなら、四脚を受け取った後で余った一脚の扱いを相談できますか。",
+      "vi": "Nếu giờ không đổi số lượng được thì sau khi nhận bốn ghế, tôi có thể hỏi cách xử lý chiếc dư được không ạ?",
+      "terms": [
+        "脚"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "～た後で相談できますか"
+    },
+    {
+      "id": "T-025-V13-013",
+      "group": "alter",
+      "role_vi": "Khách xin đổi ngày nhưng giữ số lượng",
+      "gender": "female",
+      "ja": "椅子は四脚のままで、配達日時だけ土曜の午前中に変えられますか。",
+      "vi": "Ghế vẫn giữ bốn chiếc, tôi chỉ đổi giờ giao sang sáng thứ Bảy được không ạ?",
+      "terms": [
+        "脚",
+        "配達日時"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "～はそのままで～を変えられますか"
+    },
+    {
+      "id": "T-025-V13-014",
+      "group": "alter",
+      "role_vi": "Khách xác nhận đơn và giờ đã đổi",
+      "gender": "male",
+      "ja": "注文番号八一六は椅子四脚のままで、金曜の配達を取り消して土曜の午前中にお願いします。",
+      "vi": "Đơn mã 816 vẫn là bốn ghế, xin bỏ lịch giao thứ Sáu và giao sáng thứ Bảy giúp tôi ạ.",
+      "terms": [
+        "注文番号",
+        "脚",
+        "取り消す"
+      ],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "～で変更をお願いします"
+    },
+    {
+      "id": "T-025-V13-015",
+      "group": "handoff",
+      "role_vi": "Khách đối chiếu số kiện tại cửa",
+      "gender": "female",
+      "ja": "伝票では三個口になっているので、箱が三つそろっているか確認してもいいですか。",
+      "vi": "Phiếu ghi ba kiện, tôi kiểm tra xem đã đủ ba thùng chưa được không ạ?",
+      "terms": [
+        "個口"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "～か確認してもいいですか"
+    },
+    {
+      "id": "T-025-V13-016",
+      "group": "handoff",
+      "role_vi": "Khách nhờ ghi thiếu một kiện",
+      "gender": "male",
+      "ja": "伝票では三個口ですが、今ある二箱だけ受領して、一箱は未着だと記録していただけますか。",
+      "vi": "Phiếu ghi ba kiện, tôi sẽ chỉ nhận hai thùng đang có, anh ghi giúp là còn một thùng chưa giao được không ạ?",
+      "terms": [
+        "個口",
+        "受領",
+        "未着"
+      ],
+      "scenes": [
+        "S017",
+        "S019",
+        "S020"
+      ],
+      "pattern": "～と記録していただけますか"
+    },
+    {
+      "id": "T-025-V13-017",
+      "group": "handoff",
+      "role_vi": "Khách đính chính hình thức thanh toán",
+      "gender": "female",
+      "ja": "注文番号六一五は支払い済みではなく、受け取り時の現金払いだと思うので確認をお願いします。",
+      "vi": "Theo tôi nhớ, đơn mã 615 trả tiền mặt lúc nhận chứ chưa thanh toán, xin kiểm tra lại giúp tôi ạ.",
+      "terms": [
+        "支払い済み",
+        "現金払い",
+        "注文番号"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "～ではなく～だと思います"
+    },
+    {
+      "id": "T-025-V13-018",
+      "group": "after",
+      "role_vi": "Khách gọi báo một kiện vẫn chưa đến",
+      "gender": "male",
+      "ja": "注文番号九三二は昨日二箱だけ受け取って、残りの一箱がまだ届いていません。",
+      "vi": "Đơn mã 932 hôm qua tôi chỉ nhận hai thùng, còn một thùng vẫn chưa tới ạ.",
+      "terms": [
+        "注文番号"
+      ],
+      "scenes": [
+        "S021"
+      ],
+      "pattern": "～だけ受け取って～が届いていません"
+    },
+    {
+      "id": "T-025-V13-019",
+      "group": "after",
+      "role_vi": "Khách hỏi thay màu có đổi giá không",
+      "gender": "female",
+      "ja": "不足分の青い椅子の代替品として白い椅子を選ぶ場合、値段も変わりますか。",
+      "vi": "Nếu đổi ghế xanh dương còn thiếu sang ghế trắng thay thế thì giá cũng thay đổi ạ?",
+      "terms": [
+        "不足分",
+        "代替品"
+      ],
+      "scenes": [
+        "S022"
+      ],
+      "pattern": "～を選ぶ場合、値段も変わりますか"
+    },
+    {
+      "id": "T-025-V13-020",
+      "group": "after",
+      "role_vi": "Khách cần ghế sớm hơn ngày giao bổ sung",
+      "gender": "male",
+      "ja": "不足分は木曜の配達だと間に合わないので、水曜までに店頭受け取りにできますか。",
+      "vi": "Chiếc còn thiếu mà giao thứ Năm thì không kịp, tôi có thể tới cửa hàng lấy chậm nhất vào thứ Tư được không ạ?",
+      "terms": [
+        "不足分",
+        "店頭受け取り"
+      ],
+      "scenes": [
+        "S023"
+      ],
+      "pattern": "～までに店頭受け取りできますか"
+    },
+    {
+      "id": "T-025-V13-021",
+      "group": "after",
+      "role_vi": "Khách gọi lại sau ngày đã hẹn giao",
+      "gender": "female",
+      "ja": "注文番号九三二の残りは月曜に届くと聞いていましたが、まだ来ていないので状況を確認できますか。",
+      "vi": "Tôi được báo kiện còn lại của đơn 932 sẽ đến thứ Hai, nhưng vẫn chưa tới, anh kiểm tra tình hình giúp tôi được không ạ?",
+      "terms": [
+        "注文番号"
+      ],
+      "scenes": [
+        "S024"
+      ],
+      "pattern": "～と聞いていましたが、まだ～"
+    },
+    {
+      "id": "T-025-V13-022",
+      "group": "after",
+      "role_vi": "Khách xác nhận đủ hàng trước khi tất toán",
+      "gender": "male",
+      "ja": "これで注文した椅子が三脚そろったので、代金をどう精算すればいいか確認したいです。",
+      "vi": "Vậy đã đủ ba ghế tôi đặt, tôi muốn xác nhận giờ cần thanh toán thế nào ạ.",
+      "terms": [
+        "注文する",
+        "脚",
+        "精算"
+      ],
+      "scenes": [
+        "S025"
+      ],
+      "pattern": "～そろったので～確認したい"
+    }
+  ]
+}

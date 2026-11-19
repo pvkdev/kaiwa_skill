@@ -1,0 +1,399 @@
+{
+  "code": "T-034",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "62c45ba189aeb52759ab6d803885a178b8b95c106509d4278c1cb0665ba3b6fb",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "desk": "Tìm đúng quầy và người hỗ trợ",
+    "dates": "Trình bày các mốc và điểm chưa rõ",
+    "papers": "Hỏi giấy bổ sung và nơi nộp",
+    "state": "Hỏi trạng thái xử lý hồ sơ",
+    "changes": "Báo thay đổi và theo dõi hướng dẫn"
+  },
+  "items": [
+    {
+      "id": "T-034-V13-001",
+      "group": "desk",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "転職について、入管のどちらの窓口で相談できますか。",
+      "vi": "Về việc đổi việc, tôi có thể hỏi ở quầy nào của cơ quan quản lý xuất nhập cảnh ạ?",
+      "terms": [
+        "転職",
+        "入管"
+      ],
+      "scenes": [
+        "S001",
+        "S003"
+      ],
+      "pattern": "どちらの窓口で相談できますか"
+    },
+    {
+      "id": "T-034-V13-002",
+      "group": "desk",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "新しい勤務先で働く前に、在留資格に関する手続きが必要か確認したいです。",
+      "vi": "Trước khi đi làm ở công ty mới, tôi muốn kiểm tra xem có cần làm thủ tục gì về tư cách lưu trú không.",
+      "terms": [
+        "勤務先",
+        "在留資格"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "〜前に、必要か確認したい"
+    },
+    {
+      "id": "T-034-V13-003",
+      "group": "desk",
+      "role_vi": "Nhân viên bàn thông tin",
+      "gender": "male",
+      "ja": "在留資格のご相談でしたら、在留カードをお手元にご用意ください。",
+      "vi": "Nếu anh/chị muốn hỏi về tư cách lưu trú, xin để sẵn thẻ cư trú nhé.",
+      "terms": [
+        "在留資格",
+        "在留カード"
+      ],
+      "scenes": [
+        "S001",
+        "S002"
+      ],
+      "pattern": "〜でしたら、ご用意ください"
+    },
+    {
+      "id": "T-034-V13-004",
+      "group": "desk",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "この住所を管轄する入管の相談窓口を教えていただけますか。",
+      "vi": "Anh/chị cho tôi biết quầy tư vấn của cơ quan quản lý xuất nhập cảnh phụ trách địa chỉ này được không ạ?",
+      "terms": [
+        "管轄",
+        "入管",
+        "相談窓口"
+      ],
+      "scenes": [
+        "S003"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-034-V13-005",
+      "group": "desk",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "今日、ベトナム語の通訳が難しければ、別の日に相談を予約できますか。",
+      "vi": "Nếu hôm nay không có phiên dịch tiếng Việt, tôi đặt lịch ngày khác được không ạ?",
+      "terms": [
+        "通訳"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜が難しければ、別の日に"
+    },
+    {
+      "id": "T-034-V13-006",
+      "group": "dates",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "今の会社では十月末まで働き、新しい勤務先での開始日は十一月十日の予定です。",
+      "vi": "Tôi làm ở công ty hiện tại đến hết tháng 10, còn ngày bắt đầu ở chỗ làm mới dự kiến là 10 tháng 11.",
+      "terms": [
+        "勤務先",
+        "開始日"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜まで働き、〜の予定"
+    },
+    {
+      "id": "T-034-V13-007",
+      "group": "dates",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "開始日は十一月十日とお伝えしましたが、雇用契約書には十一日とあるので、会社に正式な日付を確認します。",
+      "vi": "Tôi vừa báo ngày bắt đầu là 10 tháng 11, nhưng hợp đồng lao động ghi ngày 11, nên tôi sẽ hỏi lại công ty ngày nào là chính thức.",
+      "terms": [
+        "開始日",
+        "雇用契約書"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "〜と伝えましたが、書類には"
+    },
+    {
+      "id": "T-034-V13-008",
+      "group": "dates",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "最後に出勤する日は分かりますが、契約終了日は会社に確認してからお伝えしてもいいですか。",
+      "vi": "Tôi biết ngày đi làm cuối cùng, còn ngày kết thúc hợp đồng thì tôi hỏi lại công ty rồi báo được không ạ?",
+      "terms": [
+        "契約終了日"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜てからお伝えしてもいい"
+    },
+    {
+      "id": "T-034-V13-009",
+      "group": "dates",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "新しい勤務先の業務内容について、質問を一つずつしていただけますか。",
+      "vi": "Về nội dung công việc ở công ty mới, anh/chị có thể hỏi từng câu một giúp tôi được không ạ?",
+      "terms": [
+        "勤務先",
+        "業務内容"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "一つずつ〜していただけますか"
+    },
+    {
+      "id": "T-034-V13-010",
+      "group": "papers",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "追加資料が必要とのことですが、どの書類で何を確認するのか教えていただけますか。",
+      "vi": "Tôi được báo cần bổ sung tài liệu, anh/chị cho tôi biết cần giấy nào và giấy đó dùng để xác nhận điều gì được không ạ?",
+      "terms": [
+        "追加資料"
+      ],
+      "scenes": [
+        "S009"
+      ],
+      "pattern": "〜のか教えていただけますか"
+    },
+    {
+      "id": "T-034-V13-011",
+      "group": "papers",
+      "role_vi": "Nhân viên cơ quan quản lý xuất nhập cảnh",
+      "gender": "male",
+      "ja": "在留資格の審査のために、新しい勤務先での勤務開始日が分かる書面を会社から取り寄せてください。",
+      "vi": "Anh/chị xin công ty cấp văn bản xác nhận ngày bắt đầu làm việc để bổ sung vào hồ sơ xét tư cách lưu trú nhé.",
+      "terms": [
+        "在留資格",
+        "勤務先",
+        "開始日",
+        "書面"
+      ],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜が分かる〜を取り寄せる"
+    },
+    {
+      "id": "T-034-V13-012",
+      "group": "papers",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "会社の書面が提出期限に間に合わない場合は、どちらに問い合わせればいいですか。",
+      "vi": "Nếu văn bản của công ty không kịp hạn nộp, tôi nên liên hệ hỏi ở đâu ạ?",
+      "terms": [
+        "書面",
+        "提出期限",
+        "問い合わせる"
+      ],
+      "scenes": [
+        "S011"
+      ],
+      "pattern": "〜場合は、どちらに問い合わせる"
+    },
+    {
+      "id": "T-034-V13-013",
+      "group": "papers",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "勤務先が出した書面に申請受付番号を添えて、指定の提出先へ出せばいいですか。",
+      "vi": "Tôi gửi văn bản do công ty cấp kèm mã tiếp nhận hồ sơ đến nơi nộp đã được chỉ định là được phải không ạ?",
+      "terms": [
+        "勤務先",
+        "書面",
+        "申請受付番号",
+        "提出先"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜を添えて、〜へ出せばいい"
+    },
+    {
+      "id": "T-034-V13-014",
+      "group": "papers",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "追加資料を提出した後、受領の控えをいただけますか。",
+      "vi": "Sau khi nộp tài liệu bổ sung, tôi có thể xin giấy xác nhận đã nộp được không ạ?",
+      "terms": [
+        "追加資料",
+        "受領",
+        "控え"
+      ],
+      "scenes": [
+        "S010",
+        "S012"
+      ],
+      "pattern": "〜した後、控えをいただけますか"
+    },
+    {
+      "id": "T-034-V13-015",
+      "group": "state",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "申請を受け付けたという連絡が来ましたが、今はどの段階か教えていただけますか。",
+      "vi": "Tôi nhận được thông báo đã tiếp nhận hồ sơ, anh/chị cho tôi biết hiện hồ sơ đang ở bước nào được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S013",
+        "S016"
+      ],
+      "pattern": "〜のか教えていただけますか"
+    },
+    {
+      "id": "T-034-V13-016",
+      "group": "state",
+      "role_vi": "Nhân viên tư vấn về hồ sơ",
+      "gender": "male",
+      "ja": "受付のお知らせですので、許可が出たかどうかは審査結果の通知でご確認ください。",
+      "vi": "Đây là thông báo tiếp nhận hồ sơ, anh/chị xem thông báo kết quả xét để biết hồ sơ có được chấp thuận hay không nhé.",
+      "terms": [
+        "許可",
+        "審査結果"
+      ],
+      "scenes": [
+        "S013",
+        "S014"
+      ],
+      "pattern": "〜かどうかは、通知で確認する"
+    },
+    {
+      "id": "T-034-V13-017",
+      "group": "state",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "今の在留資格で新しい仕事を始められるか、担当部署に確認していただけますか。",
+      "vi": "Anh/chị hỏi giúp bộ phận phụ trách xem với tư cách lưu trú hiện tại tôi có thể bắt đầu công việc mới không ạ?",
+      "terms": [
+        "在留資格",
+        "担当部署"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜か、確認していただけますか"
+    },
+    {
+      "id": "T-034-V13-018",
+      "group": "state",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "オンラインでは審査中と出ていますが、結果通知はどこに届くか教えていただけますか。",
+      "vi": "Hệ thống trực tuyến hiện “đang xét”, anh/chị cho tôi biết thông báo kết quả sẽ gửi đến đâu được không ạ?",
+      "terms": [
+        "審査中",
+        "結果通知"
+      ],
+      "scenes": [
+        "S016"
+      ],
+      "pattern": "〜のか教えていただけますか"
+    },
+    {
+      "id": "T-034-V13-019",
+      "group": "changes",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "申請した後で新しい勤務先から開始日が早まると言われたのですが、どの窓口に伝えればいいですか。",
+      "vi": "Sau khi nộp hồ sơ, tôi được công ty mới báo ngày bắt đầu làm sẽ sớm hơn, tôi cần báo với quầy nào ạ?",
+      "terms": [
+        "勤務先",
+        "開始日"
+      ],
+      "scenes": [
+        "S015",
+        "S017"
+      ],
+      "pattern": "〜した後で、どこに伝えればいい"
+    },
+    {
+      "id": "T-034-V13-020",
+      "group": "changes",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "開始日の変更は会社のメールにありますが、正式な書面が届いてから追加提出したほうがいいですか。",
+      "vi": "Tôi có email công ty báo đổi ngày bắt đầu, tôi nên đợi văn bản chính thức đến rồi mới nộp bổ sung phải không ạ?",
+      "terms": [
+        "開始日",
+        "書面",
+        "追加提出"
+      ],
+      "scenes": [
+        "S017",
+        "S018"
+      ],
+      "pattern": "〜が届いてから〜したほうがいい"
+    },
+    {
+      "id": "T-034-V13-021",
+      "group": "changes",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "開始日が変わったので、今すぐ出せる資料と、担当部署の回答を待つ必要がある資料を教えていただけますか。",
+      "vi": "Do ngày bắt đầu thay đổi, anh/chị cho tôi biết giấy nào có thể nộp ngay và giấy nào cần đợi bộ phận phụ trách trả lời được không ạ?",
+      "terms": [
+        "開始日",
+        "担当部署",
+        "回答"
+      ],
+      "scenes": [
+        "S018"
+      ],
+      "pattern": "〜を教えていただけますか"
+    },
+    {
+      "id": "T-034-V13-022",
+      "group": "changes",
+      "role_vi": "Nhân viên tư vấn về hồ sơ",
+      "gender": "male",
+      "ja": "明日お伝えするのは追加資料の出し方で、審査結果は別の通知でご確認ください。",
+      "vi": "Ngày mai chúng tôi sẽ báo cách nộp tài liệu bổ sung, còn kết quả xét thì anh/chị xem thông báo riêng nhé.",
+      "terms": [
+        "追加資料",
+        "審査結果"
+      ],
+      "scenes": [
+        "S019"
+      ],
+      "pattern": "〜は、通知で確認する"
+    },
+    {
+      "id": "T-034-V13-023",
+      "group": "changes",
+      "role_vi": "Người đến hỏi về tư cách lưu trú",
+      "gender": "female",
+      "ja": "変更後の開始日が分かる書面を受け取ったので、担当部署に提出先と提出方法を確認したいです。",
+      "vi": "Tôi đã nhận văn bản ghi ngày bắt đầu mới, tôi muốn hỏi bộ phận phụ trách về nơi nộp và cách nộp.",
+      "terms": [
+        "開始日",
+        "書面",
+        "担当部署",
+        "提出先"
+      ],
+      "scenes": [
+        "S020"
+      ],
+      "pattern": "〜を受け取ったので、確認したい"
+    }
+  ]
+}

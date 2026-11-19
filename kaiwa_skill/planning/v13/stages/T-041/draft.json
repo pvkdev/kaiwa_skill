@@ -1,0 +1,353 @@
+{
+  "code": "T-041",
+  "pins": {
+    "v11": "aa81d2b09ab47de0a7f611ad8fcc3de919342ce2f8749e684df523702cec833e",
+    "v12": "abfd69c91e85c698b15af5d6e61429e90a13970d864fb6d42863fd250deb3903",
+    "skill": "f21e9cc20b4d840f87efb009bc3f783a91aacc14a809eec67558d70326376b86"
+  },
+  "groups": {
+    "checkout": "Xử lý khi thanh toán không qua",
+    "charges": "Báo khoản trùng hoặc lạ",
+    "lost": "Báo mất và xin dừng thẻ",
+    "follow": "Hỏi lại về tra soát và hoàn tiền"
+  },
+  "items": [
+    {
+      "id": "T-041-V13-001",
+      "group": "checkout",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "さっきからカード払いが通りません。",
+      "vi": "Nãy giờ thẻ của tôi thanh toán không qua.",
+      "terms": [
+        "カード払い",
+        "通る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜から〜ない"
+    },
+    {
+      "id": "T-041-V13-002",
+      "group": "checkout",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "もう一度カード払いを試す前に、最初の支払いが通ったか見ていただけますか。",
+      "vi": "Trước khi thử thanh toán bằng thẻ lần nữa, anh/chị kiểm tra giúp lần đầu đã thanh toán được chưa ạ?",
+      "terms": [
+        "カード払い",
+        "通る"
+      ],
+      "scenes": [
+        "S001"
+      ],
+      "pattern": "〜前に、〜か見ていただけますか"
+    },
+    {
+      "id": "T-041-V13-003",
+      "group": "checkout",
+      "role_vi": "Nhân viên cửa hàng",
+      "gender": "male",
+      "ja": "カード払いが通らない場合は、現金でもお支払いいただけます。",
+      "vi": "Nếu thẻ không thanh toán được, anh/chị có thể trả bằng tiền mặt.",
+      "terms": [
+        "カード払い",
+        "通る"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜場合は、〜ても"
+    },
+    {
+      "id": "T-041-V13-004",
+      "group": "checkout",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "カード発行会社に確認する間、こちらの商品を取り置きしていただけますか。",
+      "vi": "Trong lúc tôi hỏi công ty phát hành thẻ, cửa hàng có thể giữ món này giúp tôi được không ạ?",
+      "terms": [
+        "カード発行会社",
+        "取り置き"
+      ],
+      "scenes": [
+        "S002"
+      ],
+      "pattern": "〜する間、〜ていただけますか"
+    },
+    {
+      "id": "T-041-V13-005",
+      "group": "checkout",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "今日の午後、文房具店でカード払いが承認されなかったので、カードの利用状況を確認していただけますか。",
+      "vi": "Chiều nay thẻ của tôi bị từ chối ở tiệm văn phòng phẩm, anh/chị kiểm tra giúp tình trạng sử dụng thẻ được không ạ?",
+      "terms": [
+        "カード払い",
+        "承認する",
+        "利用状況"
+      ],
+      "scenes": [
+        "S003",
+        "S004"
+      ],
+      "pattern": "〜ので、確認していただけますか"
+    },
+    {
+      "id": "T-041-V13-006",
+      "group": "checkout",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "先ほどの支払いは通りませんでしたが、カード自体は今も使えますか。",
+      "vi": "Lần thanh toán vừa rồi không qua, vậy bản thân thẻ vẫn dùng được chứ ạ?",
+      "terms": [
+        "通る"
+      ],
+      "scenes": [
+        "S004"
+      ],
+      "pattern": "〜でしたが、今も〜"
+    },
+    {
+      "id": "T-041-V13-007",
+      "group": "charges",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "利用明細に同じ店の二千円が二件あるのですが、二重請求になっていないか見ていただけますか。",
+      "vi": "Sao kê hiện hai khoản 2.000 yên ở cùng một cửa hàng, anh/chị xem giúp có bị tính tiền hai lần không ạ?",
+      "terms": [
+        "利用明細",
+        "二重請求"
+      ],
+      "scenes": [
+        "S005"
+      ],
+      "pattern": "〜か見ていただけますか"
+    },
+    {
+      "id": "T-041-V13-008",
+      "group": "charges",
+      "role_vi": "Nhân viên hỗ trợ thẻ",
+      "gender": "male",
+      "ja": "明細の二件目はまだ処理中ですので、請求額が確定したかどうかは後日ご確認ください。",
+      "vi": "Khoản thứ hai vẫn đang xử lý, anh/chị vui lòng kiểm tra lại sau xem khoản đó đã được chốt để tính tiền chưa.",
+      "terms": [
+        "処理中",
+        "請求",
+        "確定する"
+      ],
+      "scenes": [
+        "S005",
+        "S006"
+      ],
+      "pattern": "〜ですので、後日ご確認ください"
+    },
+    {
+      "id": "T-041-V13-009",
+      "group": "charges",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "処理中の支払いは、いつごろ利用明細を見直せばいいですか。",
+      "vi": "Với khoản đang xử lý, khoảng khi nào tôi nên xem lại sao kê ạ?",
+      "terms": [
+        "処理中",
+        "利用明細"
+      ],
+      "scenes": [
+        "S006"
+      ],
+      "pattern": "いつごろ〜すればいい"
+    },
+    {
+      "id": "T-041-V13-010",
+      "group": "charges",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "昨日の五千円の利用には心当たりがないので、どこで使われたか確認していただけますか。",
+      "vi": "Tôi không nhớ mình có giao dịch 5.000 yên hôm qua, anh/chị kiểm tra giúp khoản đó phát sinh ở đâu được không ạ?",
+      "terms": [
+        "心当たりがない"
+      ],
+      "scenes": [
+        "S007"
+      ],
+      "pattern": "〜ので、確認していただけますか"
+    },
+    {
+      "id": "T-041-V13-011",
+      "group": "charges",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "明細の二件目は二千円とお伝えしましたが、読み違えていて、正しくは二百円です。",
+      "vi": "Tôi vừa báo khoản thứ hai là 2.000 yên, nhưng tôi đọc nhầm, đúng ra là 200 yên ạ.",
+      "terms": [
+        "読み違える"
+      ],
+      "scenes": [
+        "S008"
+      ],
+      "pattern": "〜と伝えましたが、〜が正しい"
+    },
+    {
+      "id": "T-041-V13-012",
+      "group": "lost",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "財布をなくしたのですが、中に入っていたカードの利用を今すぐ止められますか。",
+      "vi": "Tôi bị mất ví, bên mình có thể khóa ngay thẻ trong ví giúp tôi được không ạ?",
+      "terms": [],
+      "scenes": [
+        "S009",
+        "S010"
+      ],
+      "pattern": "〜のですが、今すぐ〜られますか"
+    },
+    {
+      "id": "T-041-V13-013",
+      "group": "lost",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "身分証も財布に入っていたので、ほかの方法で本人確認をしていただけますか。",
+      "vi": "Giấy tờ tùy thân của tôi cũng ở trong ví, anh/chị có thể xác minh danh tính bằng cách khác giúp tôi được không ạ?",
+      "terms": [
+        "身分証",
+        "本人確認"
+      ],
+      "scenes": [
+        "S009",
+        "S011"
+      ],
+      "pattern": "〜ので、〜ていただけますか"
+    },
+    {
+      "id": "T-041-V13-014",
+      "group": "lost",
+      "role_vi": "Nhân viên bên phát hành thẻ",
+      "gender": "male",
+      "ja": "カードの利用停止が反映されたことを確認してから、受付番号をお伝えします。",
+      "vi": "Sau khi kiểm tra lệnh khóa thẻ đã có hiệu lực, tôi sẽ báo anh/chị mã tiếp nhận.",
+      "terms": [
+        "利用停止",
+        "反映",
+        "受付番号"
+      ],
+      "scenes": [
+        "S010"
+      ],
+      "pattern": "〜してから結果を伝える"
+    },
+    {
+      "id": "T-041-V13-015",
+      "group": "lost",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "紛失を届け出たカードが見つかったのですが、このカードをまた使ってもいいか確認していただけますか。",
+      "vi": "Tôi đã tìm thấy thẻ mà mình báo mất, anh/chị kiểm tra giúp tôi có thể dùng lại thẻ đó không ạ?",
+      "terms": [
+        "紛失"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜か確認していただけますか"
+    },
+    {
+      "id": "T-041-V13-016",
+      "group": "lost",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "見つかったカードが使えない場合は、再発行の手続きも教えてください。",
+      "vi": "Nếu thẻ tìm lại không dùng được, xin chỉ giúp tôi cả cách xin cấp lại ạ.",
+      "terms": [
+        "再発行"
+      ],
+      "scenes": [
+        "S012"
+      ],
+      "pattern": "〜場合は、〜も教えてください"
+    },
+    {
+      "id": "T-041-V13-017",
+      "group": "follow",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "先週問い合わせた二重請求の件で、受付番号から調査状況を確認していただけますか。",
+      "vi": "Về việc có thể bị tính trùng mà tôi hỏi tuần trước, anh/chị tra giúp tình trạng xử lý theo mã tiếp nhận được không ạ?",
+      "terms": [
+        "二重請求",
+        "受付番号"
+      ],
+      "scenes": [
+        "S013"
+      ],
+      "pattern": "〜か確認していただけますか"
+    },
+    {
+      "id": "T-041-V13-018",
+      "group": "follow",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "カードで支払った代金の返金を依頼したのですが、返金される場合はいつごろ利用明細に反映されますか。",
+      "vi": "Tôi đã yêu cầu hoàn tiền về thẻ, nếu được hoàn thì khoản đó sẽ hiện trên sao kê khoảng khi nào ạ?",
+      "terms": [
+        "利用明細",
+        "反映"
+      ],
+      "scenes": [
+        "S014"
+      ],
+      "pattern": "〜場合は、いつごろ〜"
+    },
+    {
+      "id": "T-041-V13-019",
+      "group": "follow",
+      "role_vi": "Nhân viên hỗ trợ thẻ",
+      "gender": "male",
+      "ja": "返金済みかどうかは、二件の利用明細を照合してからお知らせします。",
+      "vi": "Sau khi đối chiếu hai khoản trên sao kê, chúng tôi sẽ báo anh/chị tiền đã được hoàn hay chưa.",
+      "terms": [
+        "返金済み",
+        "利用明細",
+        "照合する"
+      ],
+      "scenes": [
+        "S013",
+        "S014",
+        "S016"
+      ],
+      "pattern": "〜してから結果を伝える"
+    },
+    {
+      "id": "T-041-V13-020",
+      "group": "follow",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "カードの調査担当からの連絡を待てばいいですか、それとも私から店にも確認したほうがいいですか。",
+      "vi": "Tôi nên chờ bộ phận tra soát liên hệ hay chủ động hỏi thêm cửa hàng ạ?",
+      "terms": [],
+      "scenes": [
+        "S015"
+      ],
+      "pattern": "〜ばいいですか、それとも"
+    },
+    {
+      "id": "T-041-V13-021",
+      "group": "follow",
+      "role_vi": "Chủ thẻ",
+      "gender": "female",
+      "ja": "来週の火曜に利用明細を確認し、返金が反映されていなければ受付番号を伝えて連絡します。",
+      "vi": "Thứ Ba tuần sau tôi sẽ xem lại sao kê, nếu khoản hoàn vẫn chưa hiện thì tôi sẽ liên hệ và báo mã tiếp nhận.",
+      "terms": [
+        "利用明細",
+        "反映",
+        "受付番号"
+      ],
+      "scenes": [
+        "S014",
+        "S016"
+      ],
+      "pattern": "〜ていなければ、連絡します"
+    }
+  ]
+}
