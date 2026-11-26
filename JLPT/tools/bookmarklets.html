@@ -17,8 +17,61 @@
   <textarea readonly id="url" aria-label="URL dấu trang Chuẩn bị lưu JLPT"></textarea>
   <button type="button" id="copy">Sao chép URL thu nội dung</button>
 </section>
+<section aria-labelledby="audio-heading">
+  <h2 id="audio-heading">Lưu file nghe</h2>
+  <p>Chạy trên phần thi nghe để lưu file audio tổng. Trong bản SingleFile đã có phụ lục, dấu trang cũng có thể mở lại nguồn audio đã ghi.</p>
+  <a id="audio-link" draggable="true">Tải audio JLPT</a>
+  <textarea readonly id="audio-url" aria-label="URL dấu trang Tải audio JLPT"></textarea>
+  <button type="button" id="audio-copy">Sao chép URL tải audio</button>
+</section>
 <script type="text/plain" id="select-code">
 javascript:(()=>{const root=document.getElementById('vnjp-jlpt-exam-form')||document;let radios=[...root.querySelectorAll('input[type=radio][name^="answer["]')];if(!radios.length)radios=[...document.querySelectorAll('input[type=radio][name]')];const groups=new Map();radios.forEach(r=>{if(!groups.has(r.name))groups.set(r.name,r);});let changed=0;groups.forEach(first=>{if(!first.checked&&!first.disabled){first.click();changed++;}});alert('Tìm thấy '+groups.size+' câu, đã chọn đáp án 1 ('+changed+' câu vừa thay đổi)');})();
+</script>
+<script type="text/plain" id="audio-code">
+function downloadJLPTAudio() {
+  const player = document.getElementById('vnjp-jlpt-choukai-audio');
+  const recorded = [...document.querySelectorAll('#jlpt-singlefile-notes [data-key^="audio|đề|"]')];
+  const sources = [
+    player?.currentSrc,
+    player?.getAttribute('src'),
+    player?.querySelector('source[src]')?.getAttribute('src'),
+    ...recorded.flatMap(node => [...node.textContent.matchAll(/^(?:currentSrc|src) = (.+)$/gm)].map(match => match[1].trim()))
+  ];
+  let audio;
+  for (const source of sources) {
+    if (!source || source.startsWith('[')) continue;
+    try {
+      const url = new URL(source, document.baseURI);
+      const web = ['https:', 'http:'].includes(url.protocol);
+      if ((web || url.protocol === 'blob:' || /^data:audio\//i.test(source)) && !/\.m3u8$/i.test(url.pathname)) {
+        audio = url;
+        break;
+      }
+    } catch {}
+  }
+  if (!audio) {
+    alert('Chưa thấy nguồn audio tổng. Nếu đang ở trang nghe online, phát audio chính một lần rồi thử lại.');
+    return;
+  }
+  audio.hash = '';
+  const link = document.createElement('a');
+  link.href = audio.href;
+  if (audio.protocol === 'blob:' || audio.protocol === 'data:' || audio.origin === location.origin) {
+    const filename = audio.pathname.split('/').pop() || '';
+    const mime = audio.protocol === 'data:' ? audio.href.match(/^data:audio\/([^;,]+)/i)?.[1]?.toLowerCase() : '';
+    const extension = {mpeg:'mp3', mp4:'m4a', wav:'wav', ogg:'ogg', webm:'webm', aac:'aac', 'x-wav':'wav'}[mime];
+    const file = /^[-\w]+\.(?:mp3|m4a|aac|ogg|wav|opus|flac|webm)$/i.test(filename) ? filename : '';
+    const exam = audio.pathname.match(/\/(n[1-5])\/(\d{4}-\d{2}\.(?:mp3|m4a|aac|ogg|wav|opus|flac|webm))$/i);
+    link.download = exam ? 'JLPT-' + exam[1].toUpperCase() + '-' + exam[2] : file || 'jlpt-audio' + (extension ? '.' + extension : '');
+  } else {
+    alert('Nguồn audio sẽ mở trong tab mới. Dùng Ctrl+S hoặc mục Tải xuống của trình phát để lưu file.');
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+  }
+  document.body.append(link);
+  link.click();
+  link.remove();
+}
 </script>
 <script type="text/plain" id="code">
 async function prepareJLPT() {
@@ -50,7 +103,7 @@ async function prepareJLPT() {
   function sourceText(node) {
     if (!node) return '';
     const clone = node.cloneNode(true);
-    clone.querySelectorAll('rt,rp,button,[role=tooltip],' + resultSelector).forEach(e => e.remove());
+    clone.querySelectorAll('rt,rp,button,audio,.vnjp-choukai-q-player,[role=tooltip],' + resultSelector).forEach(e => e.remove());
     clone.querySelectorAll('br').forEach(e => e.replaceWith('\n'));
     clone.querySelectorAll('p,div,li').forEach(e => e.append('\n'));
     return text(clone).replace(/[ \t]+/g,' ').replace(/\n\s*\n/g,'\n');
@@ -238,7 +291,7 @@ async function prepareJLPT() {
       };
       const value = await waitFor(read, 5500);
       const key = 'script-' + i;
-      if (value) save(key, label(btn) + ' · Script nghe hiểu',value);
+      if (value) save(key, label(btn) + ' · Script nghe hiểu',value,group.querySelector(panelSelector));
       if (cached.has(key)) scripts++;
       const openedPanel = group.querySelector(panelSelector);
       if (openedPanel && !openedPanel.hidden) captureAudio(openedPanel, i+1);
@@ -280,9 +333,10 @@ async function prepareJLPT() {
 }
 </script>
 <script>
-const code = document.getElementById('code').textContent.trim();
-const captureUrl = 'javascript:void(' + encodeURIComponent('(' + code + ')()') + ')';
-const selectUrl = document.getElementById('select-code').textContent.trim();
+function bookmarkUrl(id) {
+  const code = document.getElementById(id).textContent.trim();
+  return 'javascript:void(' + encodeURIComponent('(' + code + ')()') + ')';
+}
 function installLink(prefix, url) {
   const field = document.getElementById(prefix + 'url');
   const link = document.getElementById(prefix + 'link');
@@ -295,6 +349,7 @@ function installLink(prefix, url) {
     catch { copy.textContent = 'Nhấn Ctrl+C để sao chép'; }
   };
 }
-installLink('select-', selectUrl);
-installLink('', captureUrl);
+installLink('select-', document.getElementById('select-code').textContent.trim());
+installLink('', bookmarkUrl('code'));
+installLink('audio-', bookmarkUrl('audio-code'));
 </script></html>

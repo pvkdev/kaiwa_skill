@@ -1,16 +1,17 @@
 # Lưu đề và lời giải JLPT bằng SingleFile
 
-[bookmarklets.html](bookmarklets.html) chứa hai bookmarklet dùng trên trang thi thử VNJPCLUB. Các đường dẫn trong tài liệu này tính từ thư mục `JLPT/tools/`.
+[bookmarklets.html](bookmarklets.html) chứa các bookmarklet dùng trên trang thi thử VNJPCLUB. Các đường dẫn trong tài liệu này tính từ thư mục `JLPT/tools/`.
 
 | Dấu trang | Chạy ở đâu | Tác dụng |
 | --- | --- | --- |
 | **Chọn đáp án 1** | Trang đang làm bài | Bấm lựa chọn đầu tiên của từng nhóm radio và báo số nhóm tìm thấy, số nhóm vừa thay đổi. |
 | **Chuẩn bị lưu JLPT** | Trang đã có kết quả | Bật Dịch và Giải thích nếu khả dụng, mở script nghe, rê chuột qua các dòng và gom nội dung vào phụ lục cuối trang. |
+| **Tải audio JLPT** | Trang phần thi nghe hoặc bản SingleFile có phụ lục | Lưu file nghe tổng từ nguồn audio đã có trên trang. |
 
 ## Cài vào Chrome hoặc Edge
 
 1. Mở `bookmarklets.html` từ bản sao repo trên máy. Bật thanh dấu trang bằng `Ctrl+Shift+B`.
-2. Kéo **Chọn đáp án 1** và **Chuẩn bị lưu JLPT** lên thanh dấu trang.
+2. Kéo các nút dấu trang cần dùng lên thanh dấu trang.
 3. Nếu thao tác kéo không được, dùng nút **Sao chép URL** tương ứng. Tạo dấu trang mới, đặt tên như trên và dán cả chuỗi bắt đầu bằng `javascript:` vào ô URL của dấu trang. Nếu nút sao chép yêu cầu `Ctrl+C`, bấm tổ hợp phím khi ô URL đang được chọn.
 4. Nếu đã cài **Chuẩn bị lưu JLPT** từ bản trước, thay URL của dấu trang cũ bằng URL mới.
 
@@ -22,6 +23,10 @@
 4. Bấm biểu tượng **SingleFile** sau khi kiểm tra phụ lục. Mở bản HTML vừa lưu và tìm **Nội dung đã mở để lưu offline** bằng `Ctrl+F`. Kiểm tra một vài cặp Nhật–Việt, lời giải và mốc audio nếu có. Nếu lưu cả đề và phần nghe, lặp lại trên từng trang kết quả.
 
 ## Audio và giới hạn của bản lưu
+
+1. Trên trang phần thi nghe, bấm **Tải audio JLPT**. Nếu chưa thấy nguồn audio, bấm phát trình nghe chính một lần rồi thử lại.
+2. Với nguồn cùng trang, trình duyệt tải trực tiếp file tổng. Nếu nguồn mở trong tab mới, dùng **Ctrl+S** hoặc nút **Tải xuống** của trình phát trong tab đó.
+3. Để file audio cạnh bản HTML. Lấy các mốc bắt đầu và kết thúc từ phụ lục khi cần tra đoạn tương ứng.
 
 - Khi trang cung cấp dữ liệu, phụ lục giữ nguồn audio, thời lượng, mốc bắt đầu hoặc kết thúc, đoạn `#t=` và cue phụ đề. Giá trị đi cùng tên thuộc tính hoặc đơn vị gốc. Trình phát trong script được ghi cùng số câu và số dòng khi xác định được dòng tương ứng.
 - Số **Mục thông tin audio** là số vị trí có dữ liệu đọc được, có thể gồm cả thời lượng của trình phát tổng. Muốn xác nhận hai đoạn dùng chung file, đối chiếu phần nguồn trước `#t=` và so sánh mốc của từng đoạn. Một dòng `Đồng hồ hiển thị` ghi đúng giá trị trên trình phát tại thời điểm thu.
@@ -37,5 +42,7 @@ Trong các bản SingleFile kiểm tra cục bộ, bốn phần nghe có nút **
 | N3 2018-07 | 0/28 | 37:50 |
 | N3 2018-12 | 0/28 | 40:57 |
 | N2 2018-12 | 0/29 | 39:29 |
+
+Bản N2 2018-12 mới trong `../N2/1812_1/` lưu đủ 29 script và 29 khoảng audio. Đoạn cuối phục vụ câu 29 và 30. Phần nghe có 253 cặp Nhật–Việt trong script và 44 cặp của đề. Phần từ vựng, ngữ pháp và đọc hiểu có 337 cặp. Cả hai phần có đủ lời giải và đáp án theo bản nguồn.
 
 Trang cài đặt lưu nguyên mã **Chọn đáp án 1** đã cung cấp. Bookmarklet **Chuẩn bị lưu JLPT** đã được kiểm thử cục bộ với tooltip tạm thời, lời giải bị khóa và mốc cắt dùng chung một file audio. Kết quả trên VNJPCLUB thực tế cần được đối chiếu từ phụ lục sau khi chạy.
