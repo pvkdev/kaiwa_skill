@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="vi"><meta charset="utf-8"><title>Bookmarklet JLPT cho SingleFile</title>
+<style>body{font:17px/1.55 system-ui;max-width:44rem;margin:8vh auto;padding:0 1rem;color:#183143}section{margin:2rem 0}a,button{display:inline-block;background:#18546a;color:white;border:0;border-radius:6px;padding:.55rem 1rem;font:inherit;cursor:pointer}textarea{display:block;box-sizing:border-box;width:100%;height:5rem;margin:.6rem 0}</style>
+<h1>Bookmarklet JLPT cho SingleFile</h1>
+<p>Kéo từng nút lên thanh dấu trang hoặc sao chép URL vào ô địa chỉ của một dấu trang mới.</p>
+<section aria-labelledby="select-heading">
+  <h2 id="select-heading">Điền đáp án mẫu</h2>
+  <p>Chạy trên trang đang làm bài nếu muốn điền sẵn lựa chọn 1. Kiểm tra các lựa chọn trước khi tự nộp bài.</p>
+  <a id="select-link" draggable="true">Chọn đáp án 1</a>
+  <textarea readonly id="select-url" aria-label="URL dấu trang Chọn đáp án 1"></textarea>
+  <button type="button" id="select-copy">Sao chép URL chọn đáp án</button>
+</section>
+<section aria-labelledby="capture-heading">
+  <h2 id="capture-heading">Thu nội dung từ trang kết quả</h2>
+  <p>Chạy trên trang kết quả đã mở, đợi thông báo <strong>Đã rà xong</strong> rồi lưu bằng SingleFile. Phụ lục cuối trang giữ các cặp Nhật–Việt, vị trí gốc và thông tin audio đọc được từ trang.</p>
+  <a id="link" draggable="true">Chuẩn bị lưu JLPT</a>
+  <textarea readonly id="url" aria-label="URL dấu trang Chuẩn bị lưu JLPT"></textarea>
+  <button type="button" id="copy">Sao chép URL thu nội dung</button>
+</section>
+<script type="text/plain" id="select-code">
+javascript:(()=>{const root=document.getElementById('vnjp-jlpt-exam-form')||document;let radios=[...root.querySelectorAll('input[type=radio][name^="answer["]')];if(!radios.length)radios=[...document.querySelectorAll('input[type=radio][name]')];const groups=new Map();radios.forEach(r=>{if(!groups.has(r.name))groups.set(r.name,r);});let changed=0;groups.forEach(first=>{if(!first.checked&&!first.disabled){first.click();changed++;}});alert('Tìm thấy '+groups.size+' câu, đã chọn đáp án 1 ('+changed+' câu vừa thay đổi)');})();
+</script>
+<script type="text/plain" id="code">
+async function prepareJLPT() {
+  const root = document.querySelector('.vnjp-jlpt-root');
+  if (!root) { alert('Hãy mở trang đề thi JLPT trước.'); return; }
+  const id = 'jlpt-singlefile-notes';
+  let notes = document.getElementById(id);
+  if (!notes) {
+    notes = document.createElement('section');
+    notes.id = id;
+    notes.lang = 'vi';
+    notes.style.cssText = 'display:block;background:white;color:#222;padding:24px;max-width:900px;margin:24px auto;white-space:pre-wrap;text-align:left';
+    notes.innerHTML = '<h2>Nội dung đã mở để lưu offline</h2><p role="status"></p><div></div>';
+    document.body.append(notes);
+  }
+  if (notes.dataset.running === 'yes') { notes.scrollIntoView(); return; }
+  const status = notes.querySelector('[role=status]');
+  const entries = notes.lastElementChild;
+  const cached = new Map(Array.from(entries.children, node => [node.dataset.key, node]));
+  const pause = ms => new Promise(resolve => setTimeout(resolve, ms));
+  const text = node => (node?.textContent || '').trim();
+  const japanese = value => /[ぁ-んァ-ヺ一-龯]/.test(value);
+  const isBusy = value => /^(?:đang (?:tải|dịch)|loading|vui lòng (?:chờ|đợi)|chưa có bản dịch|không (?:có bản dịch|thể (?:tải|dịch))|lỗi (?:tải|kết nối)|bạn cần đăng nhập|読み込み中|翻訳中)/i.test(value);
+  const available = button => button && !button.matches(':disabled,[aria-disabled=true],[class*="--locked"]');
+  const list = (scope, selector) => Array.from(scope.querySelectorAll(selector));
+  const panelSelector = '.vnjp-choukai-q-script-panel';
+  const sourceSelector = '.vnjp-jlpt-candich';
+  const resultSelector = '.vnjp-jlpt-kqdich';
+  function sourceText(node) {
+    if (!node) return '';
+    const clone = node.cloneNode(true);
+    clone.querySelectorAll('rt,rp,button,[role=tooltip],' + resultSelector).forEach(e => e.remove());
+    clone.querySelectorAll('br').forEach(e => e.replaceWith('\n'));
+    clone.querySelectorAll('p,div,li').forEach(e => e.append('\n'));
+    return text(clone).replace(/[ \t]+/g,' ').replace(/\n\s*\n/g,'\n');
+  }
+  const question = node => node.closest('.q-item')?.id || '';
+  const label = node => question(node).replace(/^q-/, 'Câu ') || 'Phần chung';
+  function save(key, title, value, origin) {
+    let item = cached.get(key);
+    if (!item) {
+      item = document.createElement('div');
+      item.dataset.key = key;
+      item.style.margin = '14px 0';
+      entries.append(item);
+      cached.set(key, item);
+    }
+    const head = document.createElement('strong');
+    head.textContent = title;
+    item.replaceChildren(head, document.createTextNode('\n' + value));
+    if (origin) {
+      if (!origin.id) {
+        let i = cached.size;
+        while (document.getElementById('jlpt-origin-' + i)) i++;
+        origin.id = 'jlpt-origin-' + i;
+      }
+      const link = document.createElement('a');
+      link.href = '#' + encodeURIComponent(origin.id);
+      link.textContent = 'Về vị trí gốc';
+      item.append('\n', link);
+    }
+    return item;
+  }
+  function captureAudio(scope, panel) {
+    const timing = /^data-(?:(?:audio|clip|segment|cue|media|play|line|sentence|track)-)?(?:start|end|from|to|begin|stop|offset|time|timestamp|duration)(?:-(?:time|at|sec|seconds|ms))?$/i;
+    const source = /^data-(?:audio(?:-(?:src|url|file|id))?|mp3|track-id|clip-id|src)$/i;
+    const location = node => {
+      const path = [];
+      for (let el = node; el && el !== scope; el = el.parentElement) {
+        path.unshift(el.localName + '[' + (Array.prototype.indexOf.call(el.parentElement.children,el) + 1) + ']');
+      }
+      return path.join('/') || '.';
+    };
+    function mediaRef(value) {
+      if (/^data:/i.test(value)) return '[audio nhúng]';
+      if (/^blob:/i.test(value)) return '[blob của phiên mở trang]' + (value.match(/#t=[^\s]+/)?.[0] || '');
+      return value;
+    }
+    const scriptLines = list(scope,sourceSelector);
+    for (const el of [scope, ...list(scope,'*')]) {
+      if (!panel && el.closest(panelSelector)) continue;
+      const media = el.matches('audio, audio source, audio track');
+      const facts = new Set();
+      for (const attr of el.attributes) {
+        if (!attr.value.trim()) continue;
+        if (timing.test(attr.name) && (panel || media || el.closest('.q-item') || /audio|clip|cue|track/.test(attr.name))) facts.add(attr.name + ' = ' + attr.value);
+        if ((source.test(attr.name) && (panel || media || /audio|mp3|track-id|clip-id/.test(attr.name))) ||
+            (attr.name === 'src' && media) || (attr.name === 'href' && /#t=(?:npt:)?[\d.,]/i.test(attr.value))) {
+          facts.add(attr.name + ' = ' + mediaRef(attr.value));
+        }
+      }
+      if (el.matches('audio')) {
+        if (el.currentSrc) facts.add('currentSrc = ' + mediaRef(el.currentSrc));
+        if (Number.isFinite(el.duration)) facts.add('Thời lượng = ' + el.duration + ' s');
+        for (const track of Array.from(el.textTracks || [])) {
+          let cues;
+          try { cues = Array.from(track.cues || []); } catch { continue; }
+          for (const cue of cues) facts.add('Cue ' + (track.label || track.kind) + ' · ' + cue.startTime + '–' + cue.endTime + ' s · ' + (cue.text || ''));
+        }
+      }
+      if (el.id === 'vnjp-jlpt-choukai-time-dur' && text(el)) facts.add('Thời lượng hiển thị = ' + text(el));
+      if (panel && !el.children.length && el.closest('[class*="player"],[class*="audio"],[class*="timestamp"],[class*="timecode"]')) {
+        const clock = text(el);
+        if (/^\d{1,3}:\d{2}(?::\d{2})?(?:[.,]\d+)?(?:\s*[-–—/]\s*\d{1,3}:\d{2}(?::\d{2})?(?:[.,]\d+)?)?$/.test(clock)) facts.add('Đồng hồ hiển thị = ' + clock);
+      }
+      if (!facts.size) continue;
+      let line = el.closest(sourceSelector);
+      if (panel && !line) {
+        for (let row = el; row && row !== scope; row = row.parentElement) {
+          const siblings = list(row,sourceSelector);
+          if (siblings.length) { if (siblings.length === 1) line = siblings[0]; break; }
+        }
+      }
+      const position = location(el);
+      const lineNo = panel && line ? scriptLines.indexOf(line) + 1 : 0;
+      const group = panel ? 'script ' + panel : 'đề';
+      const title = label(el) + ' · Audio ' + group + (lineNo ? ' · dòng ' + lineNo : '');
+      save('audio|' + group + '|' + position,title,[line && sourceText(line), ...facts, 'Vị trí HTML · ' + position].filter(Boolean).join('\n'),el);
+    }
+  }
+  let stopped = false;
+  const stop = document.createElement('button');
+  stop.type = 'button';
+  stop.textContent = 'Dừng thu thập';
+  stop.onclick = () => { stopped = true; };
+  status.after(stop);
+  const bar = document.createElement('div');
+  bar.style.cssText = 'position:fixed;bottom:8px;right:8px;z-index:2147483647;padding:8px 12px;background:#182b37;color:white;font:14px sans-serif;max-width:80vw';
+  document.body.append(bar);
+  bar.onclick = () => notes.scrollIntoView();
+  const say = msg => { status.textContent = msg; bar.textContent = msg; };
+  notes.dataset.running = 'yes';
+  async function waitFor(read, ms) {
+    const end = Date.now() + ms;
+    let value = read();
+    while (!value && !stopped && Date.now() < end) {
+      await pause(120);
+      value = read();
+    }
+    return value;
+  }
+  function hover(node, enter) {
+    const box = node.getBoundingClientRect();
+    const init = {clientX: box.x + box.width/2, clientY: box.y + box.height/2, pointerType:'mouse'};
+    for (const prefix of ['pointer','mouse']) {
+      const EventType = prefix === 'pointer' ? window.PointerEvent : MouseEvent;
+      if (!EventType) continue;
+      for (const name of (enter ? ['over','enter','move'] : ['out','leave'])) {
+        node.dispatchEvent(new EventType(prefix + name, {...init, bubbles: !['enter','leave'].includes(name)}));
+      }
+    }
+  }
+  function translation(node) {
+    const wrap = node.closest('.vnjp-jlpt-tudich');
+    const linked = (node.getAttribute('aria-describedby') || '').split(/\s+/).filter(Boolean).map(id => document.getElementById(id)).filter(e => e?.matches('[role=tooltip]'));
+    const selector = resultSelector + ',[role=tooltip]';
+    const targets = wrap ? list(wrap, selector).filter(e => e.closest('.vnjp-jlpt-tudich') === wrap) : list(node, selector);
+    if (node.nextElementSibling?.matches(selector)) targets.push(node.nextElementSibling);
+    const nativeTip = node.getAttribute('title') || '';
+    return [...targets, ...linked].map(text).concat(/[ăâđêôơưạ-ỹ]/i.test(nativeTip) ? nativeTip : '').find(v => v && !isBusy(v) && !/^[.\s…]+$/.test(v)) || '';
+  }
+  const missing = [];
+  let total = 0, done = 0, scripts = 0, unknown = 0;
+  const scriptButtons = list(root,'.vnjp-choukai-q-script-toggle');
+  async function collect(nodes, group) {
+    for (const [i, node] of nodes.entries()) {
+      if (stopped) return;
+      const ja = sourceText(node);
+      if (!ja) continue;
+      const key = JSON.stringify([group,question(node),i,ja]);
+      const prior = cached.get(key);
+      let vi = prior?.dataset.vi || '';
+      if (prior && !('vi' in prior.dataset)) {
+        const old = prior.childNodes[1]?.textContent || '';
+        if (old.startsWith('\n' + ja + '\n')) vi = old.slice(ja.length + 2).trim();
+      }
+      total++;
+      if (!vi) {
+        say('Đang lấy bản dịch ' + total + ' · ' + label(node));
+        vi = translation(node);
+        if (!vi) {
+          const box = node.getBoundingClientRect();
+          if (box.bottom < 0 || box.top > window.innerHeight) node.scrollIntoView({block:'center',behavior:'instant'});
+          hover(node,true);
+          try { vi = await waitFor(() => translation(node), 3500); }
+          finally { hover(node,false); }
+        }
+        await pause(160);
+      }
+      const choice = node.closest('.choice');
+      const part = choice ? ' · lựa chọn ' + (list(choice.parentElement,'.choice').indexOf(choice) + 1) : '';
+      const title = label(node) + ' · ' + group + part + ' · dòng ' + (i+1);
+      save(key,title,'Nhật · ' + ja + '\nViệt · ' + (vi || '[chưa lấy được]'),node).dataset.vi = vi;
+      if (vi) done++;
+      else missing.push(label(node) + ' · ' + ja.slice(0,45));
+    }
+  }
+  try {
+    const switches = ['dich','giaithich'].map(name => root.querySelector('#vnjp-jlpt-toggle-' + name));
+    for (const button of switches) {
+      if (available(button) && button.getAttribute('aria-pressed') === 'false') { button.click(); await pause(250); }
+    }
+    const [translate, explain] = switches;
+    const canTranslate = available(translate) && translate.getAttribute('aria-pressed') === 'true';
+    for (const [i,btn] of scriptButtons.entries()) {
+      if (stopped) break;
+      say('Đang mở script ' + (i+1) + '/' + scriptButtons.length);
+      if (!available(btn)) continue;
+      const group = btn.closest('.vnjp-choukai-q-script');
+      if (!group) continue;
+      if (btn.getAttribute('aria-expanded') === 'false') btn.click();
+      const read = () => {
+        const panel = group.querySelector(panelSelector);
+        if (!panel || panel.hidden || !panel.getClientRects().length) return '';
+        const value = sourceText(panel);
+        return japanese(value) && !isBusy(value) ? value : '';
+      };
+      const value = await waitFor(read, 5500);
+      const key = 'script-' + i;
+      if (value) save(key, label(btn) + ' · Script nghe hiểu',value);
+      if (cached.has(key)) scripts++;
+      const openedPanel = group.querySelector(panelSelector);
+      if (openedPanel && !openedPanel.hidden) captureAudio(openedPanel, i+1);
+      if (!value || !canTranslate) continue;
+      const panel = group.querySelector(panelSelector);
+      let rows = list(panel,sourceSelector);
+      if (!rows.length) {
+        const candidates = list(panel,'[aria-describedby],p,li,div,span').filter(e => !e.closest('ruby,rt,rp,[role=tooltip],' + resultSelector) && japanese(sourceText(e)));
+        rows = candidates.filter(e => !candidates.some(child => child !== e && e.contains(child)));
+        if (!rows.length) rows = [panel];
+        unknown++;
+      }
+      await collect(rows,'Dịch script ' + (i+1));
+      captureAudio(panel, i+1);
+    }
+    if (canTranslate && !stopped) {
+      await collect(list(root,sourceSelector).filter(e => !e.closest(panelSelector)), 'Dịch đề');
+    }
+    captureAudio(root, 0);
+    const questions = list(root,'.q-item');
+    let answers = 0;
+    if (available(explain) && explain.getAttribute('aria-pressed') === 'true') {
+      for (const q of questions) {
+        const value = text(q.querySelector('.complete-answer'));
+        if (value && !isBusy(value)) { save('answer-' + q.id,label(q) + ' · Giải thích',value); answers++; }
+      }
+    }
+    const audioCount = Array.from(cached.keys()).filter(key => key.startsWith('audio|')).length;
+    const summary = (stopped ? 'Đã dừng. ' : 'Đã rà xong. ') + 'Script ' + scripts + '/' + scriptButtons.length + '. Bản dịch ' + done + '/' + total + ' dòng đã rà. Giải thích ' + answers + '/' + questions.length + ' câu. Mục thông tin audio: ' + audioCount + '.';
+    say(summary + (!canTranslate ? ' Chế độ dịch chưa bật.' : '') + (!available(explain) ? ' Nút giải thích bị khóa hoặc không có.' : '') + (unknown ? ' Có ' + unknown + ' script dùng cấu trúc dòng chưa xác minh.' : '') + (missing.length ? '\nChưa lấy được: ' + missing.slice(0,6).join(' · ') : ''));
+  } catch (e) {
+    say('Thu thập bị gián đoạn. ' + e.message + '. Nội dung đã lấy nằm bên dưới.');
+  } finally {
+    delete notes.dataset.running;
+    stop.remove();
+    bar.remove();
+    notes.scrollIntoView();
+  }
+}
+</script>
+<script>
+const code = document.getElementById('code').textContent.trim();
+const captureUrl = 'javascript:void(' + encodeURIComponent('(' + code + ')()') + ')';
+const selectUrl = document.getElementById('select-code').textContent.trim();
+function installLink(prefix, url) {
+  const field = document.getElementById(prefix + 'url');
+  const link = document.getElementById(prefix + 'link');
+  const copy = document.getElementById(prefix + 'copy');
+  field.value = url;
+  link.href = url;
+  copy.onclick = async () => {
+    field.select();
+    try { await navigator.clipboard.writeText(field.value); copy.textContent = 'Đã sao chép'; }
+    catch { copy.textContent = 'Nhấn Ctrl+C để sao chép'; }
+  };
+}
+installLink('select-', selectUrl);
+installLink('', captureUrl);
+</script></html>
