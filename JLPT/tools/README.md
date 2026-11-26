@@ -1,6 +1,6 @@
 # Lưu đề và lời giải JLPT bằng SingleFile
 
-[bookmarklets.html](bookmarklets.html) chứa hai bookmarklet dùng trên trang thi thử VNJPCLUB. Các đường dẫn trong tài liệu này tính từ thư mục `tools/jlpt/`.
+[bookmarklets.html](bookmarklets.html) chứa hai bookmarklet dùng trên trang thi thử VNJPCLUB. Các đường dẫn trong tài liệu này tính từ thư mục `JLPT/tools/`.
 
 | Dấu trang | Chạy ở đâu | Tác dụng |
 | --- | --- | --- |
