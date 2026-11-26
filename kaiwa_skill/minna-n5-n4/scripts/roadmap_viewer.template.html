@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minna no Nihongo · Lộ trình N5–N4</title>
+<style>
+:root{color-scheme:light;--paper:#faf9f5;--surface:#fff;--rail:#f1f2eb;--ink:#213832;--muted:#526760;--line:#d7dfd6;--green:#185b49;--mint:#e1eee5;--orange:#a5502c;--bad:#962e2b}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 "Segoe UI",Meiryo,sans-serif}button,input,select{font:inherit;color:inherit}button,a,input,select,summary{touch-action:manipulation}button,summary{cursor:pointer}a{color:var(--green);text-underline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #c47744;outline-offset:2px}
+header.top{height:60px;background:#183b33;color:#f8f8ee;display:flex;align-items:center;justify-content:space-between;padding:0 24px;gap:14px}.brand{display:flex;align-items:center;gap:12px;font-weight:700;color:inherit;text-decoration:none;font-size:18px}.mark{font-family:serif;display:grid;place-items:center;width:32px;height:32px;border:1px solid #91aaa0;border-radius:6px;color:#f3d4a3;font-size:22px}.top nav{display:flex;gap:16px}.top nav a{color:#ebf3eb;font-size:14px;text-decoration:none}.top nav a:hover{text-decoration:underline}
+.layout{display:grid;grid-template-columns:290px minmax(0,1fr);min-height:calc(100vh - 60px)}aside{background:var(--rail);border-right:1px solid var(--line);position:sticky;top:0;align-self:start;height:100vh;max-height:100vh;overflow:auto;padding:23px 16px}.rail-head{font-weight:700;display:flex;justify-content:space-between;align-items:center;margin-bottom:11px}.count,.dim,small{color:var(--muted)}.count{font-size:13px;font-weight:500}input[type=search],select,input.answer{border:1px solid #b6c4ba;background:#fff;border-radius:7px;padding:8px 10px;max-width:100%}#jump{width:100%;margin-bottom:15px}.level{padding:9px 4px}.level>summary{font-weight:700;color:var(--green);margin-bottom:5px}.lesson-link,.branch a{display:block;text-decoration:none;color:var(--ink);padding:5px 9px;border-radius:5px}.lesson-link.active,.branch a.active{background:#dae8dd;color:#184c3b;font-weight:650}.lesson-link:hover,.branch a:hover{background:#e3e9e0}.branch{margin:2px 0 8px 16px;border-left:1px solid #b9c9bc;padding-left:5px}.branch a{font-size:13px;line-height:1.4;margin:1px 0}.level[hidden],.lesson-row[hidden]{display:none}
+main{width:100%;max-width:1130px;margin:0 auto;padding:24px clamp(16px,4vw,58px) 60px;min-width:0}.crumb{color:var(--muted);font-size:14px;margin-bottom:16px}.crumb a{text-decoration:none}.crumb span{margin:0 6px;color:#819188}h1,h2,h3{line-height:1.27;margin:0 0 12px;overflow-wrap:anywhere}h1{font-family:Georgia,"Yu Mincho",serif;color:#193e32;font-size:clamp(29px,3.5vw,46px);font-weight:600}h2{font-size:21px;margin-top:27px}h3{font-size:16px}p{margin:7px 0 12px}.hero{background:#e9efe4;border:1px solid #d4dfce;border-radius:13px;padding:22px 25px}.hero h1{margin:0}.metrics{display:flex;gap:14px 25px;flex-wrap:wrap;margin-top:12px}.metrics a{font-weight:600;text-decoration:none}.unit{margin:7px 0 18px;color:var(--muted)}.listbox,.panel,.card{background:white;border:1px solid var(--line);border-radius:10px}.listbox{overflow:hidden}.navrow{padding:10px 14px;display:flex;text-decoration:none;align-items:center;gap:10px;color:var(--ink);border-top:1px solid var(--line)}.navrow:first-child{border-top:0}.navrow:hover{background:#f1f6f0}.navrow .text{flex:1}.navrow .arrow{color:#72887a}.kind{color:var(--muted);font-size:13px}.tag{background:#f1eee4;color:#6e593a;border-radius:6px;padding:2px 7px;font-size:12px;white-space:nowrap}.panel,.card{padding:17px 20px;margin:12px 0}.panel h2,.panel h3,.card h2{margin-top:0}.formula{padding:12px 15px;background:var(--mint);border-left:3px solid var(--green);border-radius:4px;font-size:18px;font-weight:600}.example{padding:11px 0;border-top:1px solid var(--line)}.example:first-child{border-top:0}.ja{font-size:18px;line-height:1.7;white-space:pre-line;overflow-wrap:anywhere}.vi{color:var(--muted);white-space:pre-line}.tools{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:10px 0}.btn,button.plain{display:inline-block;background:white;border:1px solid #b6c6ba;color:var(--green);border-radius:7px;padding:6px 11px;text-decoration:none;font-weight:600}.primary{background:var(--green);border:1px solid var(--green);color:white;border-radius:7px;padding:7px 14px;font-weight:650}.smallbtn{font-size:13px;padding:3px 8px!important}.card fieldset{border:0;padding:0;margin:0}.card legend{font-weight:650;margin-bottom:4px}.choice{display:flex;align-items:baseline;gap:9px;border:1px solid var(--line);padding:7px 10px;margin:5px 0;border-radius:6px;cursor:pointer}.choice:has(:checked){border-color:#52896a;background:#edf5ec}.choice input{accent-color:var(--green)}.feedback{margin:8px 0 0;border-left:3px solid var(--green);padding:6px 12px;background:#edf5ee}.wrong{border-color:var(--bad);background:#fcf0eb}.note{color:var(--muted);background:#f4f3ed;border-radius:6px;padding:9px 13px}.gridtable{overflow:auto;margin-top:12px}table{width:100%;border-collapse:collapse;background:#fff}th,td{text-align:left;border-bottom:1px solid var(--line);padding:8px 10px;vertical-align:top}th{color:var(--green);background:#edf1e8;font-size:13px}td[lang=ja]{font-size:17px}.pages{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:28px;border-top:1px solid var(--line);padding-top:15px}.pages a{text-decoration:none}.disclosure{border:1px solid var(--line);padding:8px 12px;background:white;border-radius:7px;margin:10px 0}.disclosure summary{font-weight:600}.disclosure>div{margin-top:10px}.article h5{font-size:17px;margin:14px 0 0}.article h6{font-weight:400;font-size:15px;color:var(--muted);margin:0 0 12px}.article blockquote{border-left:3px solid #83a78b;margin:10px 0;padding:4px 12px;background:#f0f5ed}.article img{max-width:100%}.article{overflow-wrap:anywhere;overflow:auto}.article h2,.article h3{margin:22px 0 9px}.mobile-toggle{display:none}audio{max-width:100%;width:380px}#media-status{font-size:14px;color:var(--muted)}#media-status:empty{display:none}.accent{color:var(--orange);font-size:13px;font-weight:650}.library-row{display:block;padding:10px 14px;border-bottom:1px solid var(--line);text-decoration:none}.library-row small{margin-left:10px}.library-row:last-child{border:0}summary{overflow-wrap:anywhere}hr{border:0;border-top:1px solid var(--line)}button:disabled{opacity:.65}.hide{display:none!important}
+@media(max-width:780px){.layout{display:block}.mobile-toggle{display:inline-block;background:none;border:1px solid #a3b8aa;border-radius:5px;color:white;padding:3px 7px}aside{display:none;position:static;width:100%;height:auto;max-height:60vh;border-bottom:1px solid var(--line)}aside.open{display:block}.top nav{gap:10px}.top nav a{font-size:13px}header.top{padding:0 12px}.brand{font-size:16px;gap:7px}.hero{padding:17px}main{padding-top:16px}.card,.panel{padding:13px}.navrow{padding:9px}.words th,.words td{padding:6px}.layout:has(aside.open) main{padding-top:12px}}
+</style></head>
+<body><header class="top"><a class="brand" href="#bai-1"><span class="mark" aria-hidden="true">み</span>Minna no Nihongo</a><nav aria-label="Điều hướng chính"><button class="mobile-toggle" id="toggle" aria-controls="sidebar" aria-expanded="false">Mục lục</button><a href="#thu-vien">Thư viện ngữ pháp</a></nav></header>
+<div class="layout"><aside id="sidebar" aria-label="Cây lộ trình"><div class="rail-head">Lộ trình N5–N4 <span class="count">50 bài</span></div><input type="search" id="jump" placeholder="Tìm bài hoặc mẫu ngữ pháp…" aria-label="Tìm trong lộ trình"><label class="kind"><input id="show-extra" type="checkbox" checked> Hiện phần nghe và đọc tùy chọn</label><nav id="tree"></nav></aside><main id="main" tabindex="-1"></main></div>
+<noscript>Hãy bật JavaScript trong trình duyệt để mở cây bài học và làm bài tập.</noscript>
+<script type="application/json" id="course">__COURSE_JSON__</script>
+<script>
+'use strict';
+const {lessons,library,audio:mediaFiles}=JSON.parse(document.querySelector('#course').textContent);
+const $=s=>document.querySelector(s);
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fold=x=>String(x??'').normalize('NFKC').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d');
+const link=(dest,title,cls='')=>`<a class="${cls}" href="#${esc(dest)}">${esc(title)}</a>`;
+const route=(n,id='')=>'bai-'+n+(id?'/'+encodeURIComponent(id):'');
+const bankNames={'quick-checks':'Kiểm tra nhanh','renshuu':'Renshuu B · Bài đại diện','renshuu-drills':'Renshuu B · Luyện thêm'};
+const kindNames={vocabulary_video:'Video từ vựng',vocabulary_learning:'Học từ vựng',grammar_video:'Bài giảng',grammar_practice:'Luyện tập',shadowing:'Shadowing · Văn mẫu và Renshuu A',listening:'Luyện nghe',short_reading:'Đọc ngắn',long_reading:'Đọc dài',conversation_video:'Video hướng dẫn hội thoại',renshuu_c:'Hội thoại · Renshuu C',kaiwa:'Hội thoại tổng hợp · Kaiwa',assessment:'Kiểm tra · Mondai 1–6',pilot:'Bản luyện bổ sung bài 39',templates:'Năm dạng bài tập mẫu'};
+const templateNames={manualQnA:'Chọn một đáp án',manualFillInBlank:'Điền chỗ trống',manualMultiSelect:'Chọn nhiều đáp án',jlptReading:'Đọc hiểu JLPT',jlptListening:'Nghe hiểu JLPT'};
+const article39=['61594c26-60d4-4b86-90ab-9c0adeb618ae','61594c26-60d4-4b86-90ab-9c0adeb618ae','61594c26-60d4-4b86-90ab-9c0adeb618ae','447866c5-e3d1-4483-afd4-5b023990f6d5','d740c696-c5c7-44ab-b560-e0d581f51810','3fd64d53-716c-41fe-9e3f-fd5eed6179a4'];
+const groupsOf=l=>Object.fromEntries(l.groups.map(g=>[g.grammar_ref,g]));
+const allNodes=l=>l.extra.templates?[...l.nodes,...['pilot','templates'].map(kind=>({id:kind,kind}))]:l.nodes;
+const visibleNodes=l=>allNodes(l).filter(n=>$('#show-extra').checked||!n.optional);
+const isEmpty=n=>['pending','needs_review','snapshot_missing'].includes(n.status);
+const isVideo=n=>['vocabulary_video','conversation_video'].includes(n.kind);
+function nodeTitle(n,l,short=false){
+ const base=kindNames[n.kind]||n.kind;
+ if(n.source_rows)return base+' · '+n.source_rows.join('–');
+ if(n.grammar_ref){let title=groupsOf(l)[n.grammar_ref].title; if(short)title=title.split(' — ')[0];return base+' · '+title}
+ return base;
+}
+let current=lessons[0],active='',graded={},entries=new Map(),clipList=[],playing=null;
+try{graded=JSON.parse(sessionStorage.getItem('minna-viewer-answers-v1')||'{}')||{}}catch{}
+const preserve=()=>{try{sessionStorage.setItem('minna-viewer-answers-v1',JSON.stringify(graded))}catch{}};
+function disclosure(title,body,open=false){return `<details class="disclosure" ${open?'open':''}><summary>${esc(title)}</summary><div>${body}</div></details>`}
+function renderTree(){
+ const query=fold($('#jump').value.trim());let shown=0;
+ $('#tree').innerHTML=[0,1].map(level=>{
+  let html='';
+  for(const l of lessons.slice(level*25,(level+1)*25)){
+   const label='Bài '+l.n;const matches=l.groups.filter(g=>fold(g.title).includes(query));
+   if(query&&!fold(label).includes(query)&&!String(l.n).padStart(2,'0').includes(query)&&!matches.length)continue;
+   shown++;const selected=current===l&&!location.hash.startsWith('#thu-vien');
+   html+=`<div class="lesson-row">${link(route(l.n),label,'lesson-link'+(selected?' active':''))}`;
+   if(selected||query&&matches.length&&!fold(label).includes(query)){
+    const nodes=selected&&!query?visibleNodes(l):l.nodes.filter(n=>n.kind==='grammar_video'&&matches.some(g=>g.grammar_ref===n.grammar_ref));
+    html+=`<div class="branch">${nodes.map(n=>link(route(l.n,n.id),nodeTitle(n,l,true),active===n.id&&selected?'active':'')).join('')}</div>`;
+   }
+   html+='</div>';
+  }
+  return html?`<details class="level" ${query||(current.n>25?1:0)===level?'open':''}><summary>${level?'N4 · Bài 26–50':'N5 · Bài 1–25'}</summary>${html}</details>`:'';
+ }).join('')||(shown?'':'<p class="dim">Không tìm thấy bài phù hợp.</p>');
+}
+function navRow(l,n){
+ const badge=isEmpty(n)?'Chờ nội dung':isVideo(n)?'Chờ video':n.kind==='grammar_video'?'Có bài giảng chữ':n.kind==='grammar_practice'?groupsOf(l)[n.grammar_ref].items.length+' câu':'';
+ return `<a class="navrow" href="#${route(l.n,n.id)}"><span class="text">${esc(nodeTitle(n,l))}</span>${badge?'<span class="tag">'+esc(badge)+'</span>':''}<span class="arrow" aria-hidden="true">›</span></a>`;
+}
+function overview(l){
+ const count=l.groups.reduce((a,g)=>a+g.items.length,0);
+ const blocks=[['Từ vựng',n=>n.source_rows],['Ngữ pháp và Renshuu B',n=>n.grammar_ref],['Luyện kỹ năng và kiểm tra',n=>!n.source_rows&&!n.grammar_ref&&l.nodes.includes(n)],['Tài liệu bổ sung',n=>['pilot','templates'].includes(n.kind)]];
+ return `<div class="hero"><div class="accent">Minna no Nihongo · ${l.n<=25?'N5':'N4'}</div><h1>Bài ${l.n}</h1><div class="metrics">${link(route(l.n,'tu-vung'),l.words.length+' từ vựng')}<span>${l.groups.length} mẫu ngữ pháp</span><span>${count} câu luyện ngữ pháp</span></div></div>`+
+ blocks.map(([s,test])=>{const rows=visibleNodes(l).filter(test);return rows.length?`<h2>${s}</h2><div class="listbox">${rows.map(n=>navRow(l,n)).join('')}</div>`:''}).join('');
+}
+function vocab(l,rows){
+ const words=l.words.filter(w=>!rows||(+w[0]>=rows[0]&&+w[0]<=rows[1]));
+ return `<div class="tools"><input id="word-search" type="search" placeholder="Tìm từ, cách đọc hoặc nghĩa…" aria-label="Tìm trong danh sách từ"><label><input id="study-words" type="checkbox"> Tự ôn nghĩa</label>${rows?link(route(l.n,'tu-vung'),'Xem cả '+l.words.length+' từ','btn'):''}</div><div class="gridtable"><table class="words"><thead><tr><th>#</th><th>Từ</th><th>Cách đọc</th><th>Hán Việt</th><th>Nghĩa</th></tr></thead><tbody>${words.map(w=>'<tr class="word-row">'+w.map((t,i)=>i===4?'<td><span class="word-meaning">'+esc(t)+'</span><button type="button" class="plain smallbtn hide reveal-word">Xem nghĩa</button></td>':'<td'+(i===1||i===2?' lang="ja"':'')+'>'+esc(t)+'</td>').join('')+'</tr>').join('')}</tbody></table></div><p id="no-words" class="dim hide">Không tìm thấy từ phù hợp.</p>`;
+}
+function clip(url,times){
+ if(!url||!/^https:\/\//i.test(url))return '';
+ const id=clipList.push({url,times})-1;
+ return `<button class="plain smallbtn clip" type="button" data-clip="${id}">▷ Nghe từ nguồn</button>`;
+}
+function examples(rows,l){
+ return '<div class="panel">'+rows.map(ex=>{
+ const m=ex.media||{},times=m.clip_seconds||(m['data-t']||'').split(',').map(Number);
+ return `<div class="example">${ex.speaker?'<strong>'+esc(ex.speaker)+'</strong>':''}<div class="ja" lang="ja">${esc(ex.ja)}</div><div class="vi">${esc(ex.vi)}</div>${clip(m.source_url||l.tracks[m['data-track']],times)}</div>`
+ }).join('')+'</div>';
+}
+function grammar(l,g){
+ let article='';
+ if(l.n===39){const id=article39[l.groups.indexOf(g)],a=library.find(a=>a.id===id);if(a)article=link('thu-vien/'+id,a.name,'btn')}
+ return `<p class="note">Video đang chờ sản xuất. Bài giảng chữ và ví dụ đã có bên dưới.</p><div class="formula">${g.formula.map(esc).join('<br>')}</div><h2>Ý nghĩa</h2><p>${esc(g.meaning)}</p><h2>Cách dùng</h2><ul>${g.usage.map(x=>'<li>'+esc(x)+'</li>').join('')}</ul><h2>Ví dụ Nhật–Việt</h2>${examples(g.examples,l)}<div class="tools">${article}${link('thu-vien','Tra thư viện bài giảng Harumii','btn')}</div>`;
+}
+function card(q,i){
+ const ix=entries.size;entries.set(ix,q);
+ const old=graded[q.id];const type=q.multi?'checkbox':'radio';
+ const fields=q.blanks?q.blanks.map((_,k)=>`<label>Ô ${k+1} <input class="answer" autocomplete="off" lang="ja" value="${esc(old?.values?.[k]||'')}"></label>`).join(' '):
+ q.choices.map((t,k)=>`<label class="choice"><input type="${type}" name="a${ix}" value="${k}" ${old?.values?.includes(k)?'checked':''}><span lang="ja">${esc(t)}</span></label>`).join('');
+ return `<form class="card question" data-q="${ix}"><fieldset><legend>Câu ${i+1}${q.multi?' · Chọn tất cả đáp án đúng':''}</legend>${q.instruction?'<div class="dim">'+esc(q.instruction)+'</div>':''}<p class="ja" lang="ja">${esc(q.prompt)}</p>${q.vi?'<p class="vi">'+esc(q.vi)+'</p>':''}${fields}</fieldset><div class="tools"><button class="primary" type="submit">Kiểm tra</button><button class="plain" type="button" data-reveal>Xem lời giải</button></div><div aria-live="polite" class="result">${old?feedback(q,old):''}</div></form>`
+}
+function feedback(q,state){
+ const sol=q.blanks||q.key.map(k=>q.choices[k]);
+ const msg=state.reveal?'Lời giải':state.ok?'Đúng rồi':'Chưa đúng';
+ return `<div class="feedback ${state.ok===false?'wrong':''}"><strong>${msg}</strong><div>Đáp án: <b>${sol.map(esc).join(' · ')}</b></div><div>${esc(q.why)}</div></div>`
+}
+function check(form,reveal){
+ const q=entries.get(+form.dataset.q);
+ const values=q.blanks?Array.from(form.querySelectorAll('.answer'),f=>f.value.trim()):Array.from(form.querySelectorAll('input:checked'),f=>+f.value);
+ if(!reveal&&(!values.length||values.some(v=>v===''))){form.querySelector('.result').textContent='Hãy trả lời câu hỏi trước khi kiểm tra.';return}
+ const tidy=s=>s.normalize('NFKC').replace(/\s+/g,'').trim();
+ const ok=q.blanks?q.blanks.every((v,i)=>tidy(v)===tidy(values[i]||'')):
+ q.key.length===values.length&&q.key.every(i=>values.includes(i));
+ const state={values,reveal,ok:reveal?null:ok};graded[q.id]=state;preserve();
+ form.querySelector('.result').innerHTML=feedback(q,state);
+}
+function practice(g){
+ return Object.entries(bankNames).map(([key,name])=>{
+  const items=g.items.filter(q=>q.bank===key);
+  return items.length?`<h2>${name} <small>· ${items.length} câu</small></h2>${items.map(card).join('')}`:'';
+ }).join('');
+}
+function speech(l,kind){
+ const isShadow=kind==='shadowing',sections=l.extra[isShadow?'shadowing':'conversation'];
+ if(!sections)return '';
+ const relevant=sections.filter(s=>isShadow||((s.id==='mk-kaiwa')===(kind==='kaiwa')));
+ return relevant.map((s,i)=>{
+  const title=isShadow?(s.id==='mr-bunkei'?'Văn mẫu':'Renshuu A · '+s.id.replace('mr-a','')):kind==='kaiwa'?'Kaiwa':'Renshuu C · '+s.id.replace('mk-c','');
+  const variants=s.variants?.length?s.variants.map(v=>`<h3>${esc(v.label)} ${esc(v.cue||'')}</h3>${examples(s.turns.filter(t=>t.variant_id===v.id),l)}`).join(''):examples(s.turns,l);
+  const frames=s.frames?.length?disclosure('Bảng thay thế',`<div class="gridtable"><table>${s.frames.map(row=>'<tr>'+row.map(c=>`<td colspan="${Number(c.colspan)||1}" rowspan="${Number(c.rowspan)||1}">${esc(c.text)}</td>`).join('')+'</tr>').join('')}</table></div>`):'';
+  return disclosure(title+' · '+s.turns.length+' lượt',frames+variants,i===0);
+ }).join('');
+}
+function sectionView(s,i){
+ const name=templateNames[s.kind]||s.id;
+ const au=s.audio&&mediaFiles[s.audio]?`<audio controls preload="metadata" aria-label="Audio tiếng Nhật" src="${mediaFiles[s.audio]}"></audio>`:'';
+ const text=s.passage?`<div class="panel"><div class="ja" lang="ja">${esc(s.passage[0])}</div>${disclosure('Bản dịch tiếng Việt',esc(s.passage[1]))}</div>`:'';
+ return au+text+s.questions.map(card).join('')+(s.transcript?disclosure('Xem lời nghe và bản dịch',`<p lang="ja">${esc(s.transcript[0])}</p><p>${esc(s.transcript[1])}</p>`):'');
+}
+function skills(l,n){
+ if(['shadowing','renshuu_c','kaiwa'].includes(n.kind))return speech(l,n.kind);
+ if(n.kind==='short_reading'||n.kind==='long_reading'){
+  const ps=l.extra[n.kind];if(!ps)return '';
+  const qs=l.extra.reading_exercises?.[n.kind]||[];
+  return `<div class="panel">${ps.map(p=>'<p class="ja" lang="ja">'+esc(p.ja)+'</p>').join('')}${disclosure('Bản dịch tiếng Việt',ps.map(p=>'<p>'+esc(p.vi)+'</p>').join(''))}</div>${qs.length?'<h2>Câu hỏi đọc hiểu</h2>'+qs.map(card).join(''):''}`;
+ }
+ if(n.kind==='assessment'||n.kind==='listening'){
+  const ss=l.extra[n.kind+'_exercises'];if(!ss)return '';
+  return (n.kind==='listening'?'<p class="dim">Bài nghe biên soạn bổ sung · Audio có sẵn trong file.</p>':'')+ss.map((s,i)=>`<h2>${n.kind==='assessment'?'Mondai '+(i+1):'Bài nghe '+(i+1)}</h2>${sectionView(s,i)}`).join('');
+ }
+ if(n.kind==='templates')return l.extra.templates.map((s,i)=>disclosure(templateNames[s.kind],sectionView(s,i),i===0)).join('');
+ if(n.kind==='pilot')return l.extra.pilot.filter(x=>x.kind==='grammar_practice').map((node,i)=>{
+  const lecture=l.extra.pilot.find(x=>x.id===node.after);
+  let content=lecture?`<p>${esc(lecture.lesson_vi)}</p>${examples([lecture.example],l)}`:'';
+  for(const group of node.groups){
+   content+='<h3>'+esc(group.title_vi)+'</h3>'+group.items.map((q,idx)=>card({id:q.id,prompt:q.prompt_ja,instruction:q.instruction_vi,choices:q.choices.map(x=>x.text),key:[q.choices.findIndex(x=>x.id===q.correct_choice_id)],why:q.explanation_vi},idx)).join('');
+  }
+  return disclosure(lecture?.pattern||node.id,content,i===0)
+ }).join('');
+ return '';
+}
+function nodePage(l,n){
+ const group=n.grammar_ref&&groupsOf(l)[n.grammar_ref];
+ let body='';
+ if(n.kind==='vocabulary_learning')body=vocab(l,n.source_rows);
+ else if(n.kind==='grammar_video')body=grammar(l,group);
+ else if(n.kind==='grammar_practice')body=practice(group);
+ else if(isVideo(n))body=`<p class="note">Video đang chờ sản xuất.</p>${n.source_rows?vocab(l,n.source_rows):''}`;
+ else body=skills(l,n);
+ if(!body)body='<p class="note">Phần này đang chờ nội dung cho bài '+l.n+'.</p>';
+ const nodes=visibleNodes(l),i=nodes.findIndex(x=>x.id===n.id);
+ return `<h1>${esc(nodeTitle(n,l))}</h1>${body}<div id="media-status" role="status"></div><nav class="pages">${i>0?link(route(l.n,nodes[i-1].id),'← '+nodeTitle(nodes[i-1],l,true)):link(route(l.n),'← Mục lục bài')}${i+1<nodes.length?link(route(l.n,nodes[i+1].id),nodeTitle(nodes[i+1],l,true)+' →'):link(route(l.n),'Mục lục bài →')}</nav>`;
+}
+function libraryPage(id){
+ const a=library.find(x=>x.id===id);
+ if(a)return `<div class="crumb">${link('thu-vien','Thư viện ngữ pháp')} <span>/</span> ${esc(a.level)}</div><h1>${esc(a.name)}</h1><div class="article">${a.html}</div>`;
+ return `<div class="crumb">Harumii</div><h1>Thư viện ngữ pháp</h1><p class="unit">180 bài giảng N5–N4</p><div class="tools"><input type="search" id="articles-q" placeholder="Tìm mẫu hoặc nghĩa…" aria-label="Tìm bài giảng"><select id="articles-level" aria-label="Cấp độ"><option value="">Cả hai cấp</option><option>N5</option><option>N4</option></select></div><div class="listbox" id="articles"></div>`;
+}
+function filterLibrary(){
+ const search=fold($('#articles-q').value),level=$('#articles-level').value;
+ const rows=library.filter(a=>(!level||a.level===level)&&fold(a.name+' '+a.meaning).includes(search));
+ $('#articles').innerHTML=rows.map(a=>`<a class="library-row" href="#thu-vien/${esc(a.id)}"><b>${esc(a.name)}</b> <small>${esc(a.level)}</small>${a.meaning?'<div class="dim">'+esc(a.meaning)+'</div>':''}</a>`).join('')||'<p class="panel">Không tìm thấy bài giảng.</p>';
+}
+function stopClip(){if(playing){playing.pause();playing=null}}
+function startClip(idx){
+ stopClip();document.querySelectorAll('audio').forEach(a=>a.pause());
+ const {url,times}=clipList[idx],hasTime=times?.length===2&&Number(times[1])>Number(times[0]);
+ const a=new Audio(url+(hasTime?'#t='+times.join(','):''));playing=a;
+ const status=$('#media-status');
+ a.ontimeupdate=()=>{if(hasTime&&a.currentTime>=Number(times[1]))a.pause()};
+ const button=document.querySelector('[data-clip="'+idx+'"]'); const title=button.textContent;
+ const restore=()=>{button.textContent=title;button.removeAttribute('aria-pressed')};
+ a.onpause=restore;a.onended=restore;
+ a.play().then(()=>{button.textContent='■ Dừng';button.setAttribute('aria-pressed','true');if(status)status.textContent=''}).catch(()=>{if(playing!==a)return;restore();button.textContent='Audio nguồn chưa phát được';if(status)status.textContent='Không mở được audio nguồn. Hãy kiểm tra kết nối hoặc thử lại sau.'});
+}
+function render(){
+ stopClip();entries=new Map();clipList=[];
+ let [page,id='']=location.hash.slice(1).split('/');try{id=decodeURIComponent(id)}catch{id=''}
+ const lib=page==='thu-vien';active=id;
+ if(lib){$('#main').innerHTML=libraryPage(id);if($('#articles'))filterLibrary()}
+ else{
+  const n=Number((page||'bai-1').replace(/^bai-/,''));current=lessons[n-1]||lessons[0];
+  const l=current,node=allNodes(l).find(x=>x.id===id);
+  if(node?.optional)$('#show-extra').checked=true;
+  const crumb=`<div class="crumb">${l.n<=25?'N5':'N4'} <span>/</span> ${link(route(l.n),'Bài '+l.n)}${id?' <span>/</span> '+esc(node?kindNames[node.kind]:'Từ vựng'):''}</div>`;
+  $('#main').innerHTML=crumb+(id==='tu-vung'?'<h1>Từ vựng bài '+l.n+'</h1>'+vocab(l):node?nodePage(l,node):overview(l));
+ }
+ renderTree();$('#sidebar').classList.remove('open');$('#toggle').setAttribute('aria-expanded','false');
+ document.title=($('#main h1')?.textContent||'Lộ trình')+' · Minna no Nihongo';
+ window.scrollTo(0,0);
+}
+$('#main').addEventListener('submit',e=>{if(e.target.matches('.question')){e.preventDefault();check(e.target,false)}});
+$('#main').addEventListener('click',e=>{
+ const btn=e.target.closest('button');if(!btn)return;
+ if(btn.matches('.reveal-word')){btn.previousElementSibling.classList.remove('hide');btn.classList.add('hide')}
+ if(btn.hasAttribute('data-reveal'))check(btn.closest('form'),true);
+ if(btn.hasAttribute('data-clip')){if(btn.getAttribute('aria-pressed')==='true')stopClip();else startClip(+btn.dataset.clip)}
+});
+$('#main').addEventListener('input',e=>{
+ if(e.target.id==='word-search'){
+  const q=fold(e.target.value);let n=0;
+  document.querySelectorAll('.word-row').forEach(row=>{row.hidden=!fold(row.textContent).includes(q);if(!row.hidden)n++});$('#no-words').classList.toggle('hide',n>0);
+ }else if(e.target.id==='study-words'){
+  const hide=e.target.checked;document.querySelectorAll('.word-meaning').forEach(x=>x.classList.toggle('hide',hide));document.querySelectorAll('.reveal-word').forEach(x=>x.classList.toggle('hide',!hide));
+ }else if(e.target.id==='articles-q'||e.target.id==='articles-level')filterLibrary();
+ else if(e.target.closest('.question')){const form=e.target.closest('.question'),q=entries.get(+form.dataset.q);delete graded[q.id];preserve();form.querySelector('.result').textContent=''}
+});
+$('#jump').addEventListener('input',renderTree);
+$('#show-extra').addEventListener('change',()=>{
+ const node=current.nodes.find(n=>n.id===active);
+ if(node?.optional&&!$('#show-extra').checked&&!location.hash.startsWith('#thu-vien'))location.hash=route(current.n);
+ else render();
+});
+$('#toggle').onclick=()=>{const open=$('#sidebar').classList.toggle('open');$('#toggle').setAttribute('aria-expanded',String(open));if(open)$('#jump').focus()};
+window.addEventListener('hashchange',render);render();
+</script></body></html>

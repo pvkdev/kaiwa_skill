@@ -1,0 +1,10 @@
+# Supplemental listening for lessons 01 and 39
+
+The two source listening snapshots provide the group themes, item layout, and source track URLs, but their script bodies are empty (16/16 items in lesson 01, 15/15 in lesson 39) and no answer field is present. The new questions, answers, scripts, and MP3s below are **AI-authored supplemental practice**, not recovered source answers or source audio. The original source URLs remain only in `source_url` metadata.
+
+- Lesson 01: source group `ml-c3` (occupation/workplace). Authored `authored/lesson-01/listening.json`; Haruka MP3 `authored/lesson-01/audio/lesson-01-listening-supplement.mp3` (5.772426 s, 46,854 bytes, SHA256 `20dbe90b4543cdafe2c1feb039a7342847e98e9c44d5592f3364d2381ba21382`). Native storage and index: `exports/curriculum-exercises/listening/lesson-01/`.
+- Lesson 39: source group `ml-c1` (a person's experience). Authored `authored/lesson-39/listening.json`; Haruka MP3 `authored/lesson-39/audio/lesson-39-listening-supplement.mp3` (7.997098 s, 64,826 bytes, SHA256 `8ead4e0893a18912d9499b442f171e36412a0c03f07c11779a75386aeb279206`). Native storage and index: `exports/curriculum-exercises/listening/lesson-39/`. This MP3 is distinct from `authored/lesson-39/templates/audio/earthquake-news.mp3` and all source tracks.
+
+Each native section contains two questions. Every explanation quotes evidence found in its own script. `curriculum_listening_audio.ps1` reads the scripts from the authored JSON and synthesizes Japanese speech with Microsoft Haruka Desktop. `curriculum_listening_verify.py` checks source snapshot limits, evidence, hashes, FFprobe durations, full FFmpeg decoding, and native export state; its machine report is `reports/listening-supplemental-01-39.json`. The focused Harumii frontend storage → save → learner round trip passed 2/2 tests.
+
+Both storage files intentionally contain `pending://` media URLs, `audioPath: null`, and an `index.json` `pending_audio_media_ids` entry. The local MP3s must be uploaded and bound to public Harumii media before release to learners. There is no listening paste JSON because media binding is still pending.

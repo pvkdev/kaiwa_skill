@@ -1,0 +1,10 @@
+# QA native templates — 2026-11-25
+
+- Bài 39: 5 section, 8 câu; mọi câu có lời giải tiếng Việt. `*.storage.json` đã kiểm save/load cho đủ 5 loại. `*.paste.json` chỉ có `manualFillInBlank` và `jlptReading`, đã kiểm paste/save/load.
+- Adapter Renshuu: 50 file authored bản cuối, 359 section/359 câu; native storage đều load lại đúng loại, lời giải và đáp án. File QnA không phát hành dạng paste do lỗi remap ID của app. Các bài vẫn là bản tác giả nháp, không nâng thành đáp án drill chính thức.
+- Quick check: 50 file authored bản cuối, 420 section/420 câu, 318 nhóm grammar_refs; 218 nhóm một câu, 98 nhóm hai câu, 2 nhóm ba câu. Toàn bộ section có `placement_after_grammar_refs`; 318 nhóm trùng đầy đủ ID và thứ tự với catalog. Kiểm trực tiếp raw choice IDs dạng chuỗi `"0"`, `"1"`, `"2"` sang text đáp án sau mapper Harumii, cùng lời giải và loại template. Bản `quick-checks/lesson-39/api-requests.json` có 6 request mẫu, chưa thể gửi vì còn thiếu UUID unit/template/session.
+- Kiểm đầu vào hỏng: đáp án không thuộc choice IDs, thiếu lời giải, thiếu đáp án ô trống và thiếu audio local đều bị chặn.
+- Nghe: script và URL sống qua paste/save/load về cấu trúc. URL nguồn hiện HTTP 403. Bản MP3 TTS Nhật cục bộ giải mã được toàn bộ, có hash trong `references/TEMPLATES.md`; upload Harumii còn chờ. Không tuyên bố bài nghe phát được trong learner lúc này.
+- Lỗi app còn mở: `parseCopiedExerciseJson` đổi choice IDs của QnA/multi mà không sửa ID đáp án. Dấu ô trống `（　　）` cũng bị mất đáp án ở `learningContentMappers.ts` vì mapper chỉ đếm `(...)`; adapter đã dùng `(...)`.
+
+Lần kiểm toàn khóa sau khi đóng băng dữ liệu đạt **162/162 test frontend**. Bộ kiểm tải 50 bài ở mỗi kho quick check, B đại diện và biến thể drill. Ngoài ra có năm template mẫu, hai đường paste hỗ trợ, hai bài đọc, hai bài nghe và Mondai 1–6. Đã kiểm lại đáp án và lời giải sau khi lưu/mở theo đúng định dạng. Python đạt 5/5 test đầu vào, FFmpeg giải mã thành công ba MP3 cục bộ. [Tổng hợp phạm vi bàn giao và mã kiểm ZIP](minna-quality-review.md).

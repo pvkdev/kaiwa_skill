@@ -1,0 +1,382 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Minna grammar/practice lesson exchange",
+  "type": "object",
+  "required": [
+    "format_version",
+    "course_id",
+    "lesson_number",
+    "revision",
+    "scope",
+    "state",
+    "source_url",
+    "authorship",
+    "assets",
+    "nodes"
+  ],
+  "properties": {
+    "format_version": {
+      "const": "1.0.0-rc.1"
+    },
+    "course_id": {
+      "const": "minna-n5-n4"
+    },
+    "lesson_number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "scope": {
+      "const": "grammar_practice"
+    },
+    "state": {
+      "enum": [
+        "draft",
+        "reviewed"
+      ]
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "authorship": {
+      "type": "object",
+      "required": [
+        "origin",
+        "model",
+        "method"
+      ],
+      "properties": {
+        "origin": {
+          "enum": [
+            "ai_editorial",
+            "editor"
+          ]
+        },
+        "model": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/asset"
+      },
+      "minItems": 1
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/$defs/grammar"
+          },
+          {
+            "$ref": "#/$defs/practice"
+          }
+        ]
+      },
+      "minItems": 2
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "asset": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "status",
+        "playback_url"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9._-]+$"
+        },
+        "kind": {
+          "const": "video"
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "available"
+          ]
+        },
+        "playback_url": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            },
+            {
+              "const": null
+            }
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "grammar": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "pattern",
+        "title_vi",
+        "lesson_vi",
+        "example",
+        "recording_brief_vi",
+        "video_asset_id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9._-]+$"
+        },
+        "kind": {
+          "const": "grammar_video"
+        },
+        "pattern": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title_vi": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lesson_vi": {
+          "type": "string",
+          "minLength": 1
+        },
+        "example": {
+          "type": "object",
+          "required": [
+            "ja",
+            "vi"
+          ],
+          "properties": {
+            "ja": {
+              "type": "string",
+              "minLength": 1
+            },
+            "vi": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "recording_brief_vi": {
+          "type": "string",
+          "minLength": 1
+        },
+        "video_asset_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9._-]+$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "practice": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "after",
+        "groups"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9._-]+$"
+        },
+        "kind": {
+          "const": "grammar_practice"
+        },
+        "after": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9._-]+$"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/group"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "group": {
+      "type": "object",
+      "required": [
+        "id",
+        "title_vi",
+        "grammar_refs",
+        "source_group_id",
+        "items"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9._-]+$"
+        },
+        "title_vi": {
+          "type": "string",
+          "minLength": 1
+        },
+        "grammar_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9._-]+$"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "source_group_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "item": {
+      "type": "object",
+      "required": [
+        "id",
+        "source_item_id",
+        "edit",
+        "source_explanation_vi",
+        "ai_note_for_source_vi",
+        "prompt_ja",
+        "instruction_vi",
+        "choices",
+        "correct_choice_id",
+        "explanation_vi"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9._-]+$"
+        },
+        "source_item_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "edit": {
+          "enum": [
+            "image_to_text",
+            "reorder_to_mcq",
+            "new_practice",
+            "source_mcq"
+          ]
+        },
+        "source_explanation_vi": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ai_note_for_source_vi": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "prompt_ja": {
+          "type": "string",
+          "minLength": 1
+        },
+        "instruction_vi": {
+          "type": "string",
+          "minLength": 1
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "text"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9._-]+$"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "correct_choice_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9._-]+$"
+        },
+        "explanation_vi": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

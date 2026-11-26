@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Minna immutable lesson artifact",
+  "type": "object",
+  "required": [
+    "format_version",
+    "course_id",
+    "scope",
+    "lesson_number",
+    "revision",
+    "state",
+    "files"
+  ],
+  "properties": {
+    "format_version": {
+      "const": "1.0.0-rc.1"
+    },
+    "course_id": {
+      "const": "minna-n5-n4"
+    },
+    "scope": {
+      "const": "grammar_practice"
+    },
+    "lesson_number": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "state": {
+      "enum": [
+        "draft",
+        "reviewed"
+      ]
+    },
+    "files": {
+      "type": "object",
+      "required": [
+        "lesson.json",
+        "projection.json"
+      ],
+      "properties": {
+        "lesson.json": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "projection.json": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
