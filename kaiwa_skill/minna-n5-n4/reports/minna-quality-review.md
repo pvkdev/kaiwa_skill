@@ -7,7 +7,7 @@
 
 ## Ngữ pháp và Renshuu B
 
-Trang ngữ pháp của đủ 50 bài cung cấp 318 mục với công thức, nghĩa, cách dùng và 961 ví dụ Nhật–Việt có tham chiếu media. Các URL và khóa TTS cho biết cách nguồn tham chiếu bản đọc; 961 file audio chưa được tải và kiểm phát. Bảng từ Harumii có 2.229 mục. Preview đề xuất 97 nhóm theo thứ tự bản xuất, tối đa 30 từ mỗi nhóm. Các bài ngắn hoặc nhóm được chia đều có thể ít hơn 20 từ.
+Trang ngữ pháp của đủ 50 bài cung cấp 318 mục với công thức, nghĩa, cách dùng và 961 ví dụ Nhật–Việt có tham chiếu media. Các URL và khóa TTS cho biết cách nguồn tham chiếu bản đọc; 961 file audio chưa được tải và kiểm phát. Bảng từ Harumii có 2.229 mục. Từ 27/11/2026, bản preview dùng một video từ vựng và một node học ngay sau video cho mỗi bài. Cả hai tham chiếu toàn bộ danh sách từ theo thứ tự bản xuất Harumii.
 
 Mỗi mục có ID video ổn định, tiếp đến là node thực hành. Các nhóm dùng nhiều mẫu nằm sau mẫu cuối cần học. Video đang ở trạng thái lên kế hoạch. Ba kho bài tập cung cấp tổng cộng **1.738 câu**.
 
@@ -38,4 +38,4 @@ Kiểm tra từ vựng sử dụng Sudachi để so sánh dạng từ trong đ�
 
 Bản nguồn cache đặt tại `sources/`; dữ liệu chuẩn hóa ở `normalized/`; đầu vào để sửa ở `authored/`; gói sinh ra ở `exports/`. Hai thư mục `sources/` và `exports/` nằm trong Git ignore của repo. Khi chuyển sang máy khác, mang theo snapshot hoặc bản lưu có checksum nếu cần tái tạo dữ liệu. Toàn bộ công việc trong đợt này diễn ra cục bộ, chưa upload lên Harumii.
 
-Lần build cuối đạt 162/162 kiểm thử frontend và 5/5 kiểm thử Python. Đã mở lại cả hai ZIP, kiểm tập tin, SHA-256 và thứ tự các node. Số node dự kiến là 1.230, tính cả video, các node tùy chọn và phần chờ thu thập. Mã SHA-256 của ZIP ngữ pháp r2 là `c5dd0e65bece402ba840b84080da59715eb87a2c4af49a9ce5adc3831f2cd631`. Mã của ZIP preview là `5475b5d75a07f457807e297590c48bf353866a554663400f591392211da4e168`.
+Lượt kiểm bài tập ngày 25/11 đạt 162/162 kiểm thử frontend và 5/5 kiểm thử Python. Lượt 27/11 kiểm lại SHA-256, thứ tự node và phạm vi danh sách từ vựng trong cả 50 bài. Bản preview có 1.136 node dự kiến, trong đó 50 video từ vựng và 50 node học từ vựng. Mã SHA-256 của ZIP ngữ pháp r2 là `c5dd0e65bece402ba840b84080da59715eb87a2c4af49a9ce5adc3831f2cd631`. Mã của ZIP preview là `0d86ba32665c4af3c73d99a551893ca99f3a0acb96964bd7b0c9a7afea95b381`.

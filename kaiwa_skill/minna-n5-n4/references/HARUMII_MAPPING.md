@@ -14,14 +14,14 @@
 
 ## Hướng mapping, chưa phải quyết định triển khai
 
-- Vocab → binding curriculum/unit/list đã có. Chỉ chia batch 20–30 sau khi resolve đúng edition/bài và thứ tự; ambiguous không auto-pick.
+- Từ vựng dùng curriculum và unit đã có. Xác định đúng ấn bản và bài Minna, rồi gắn toàn bộ ID mục từ theo thứ tự bản xuất vào một `VocabLearningConfig` cho bài. Trường hợp có nhiều kết quả khớp cần đối chiếu trước khi chọn.
 - Grammar → GrammarPool/Grammar curriculum sau khi đối chiếu mẫu cụ thể. Tên tương tự không đủ để auto-bind.
 - B → `TaskType.Exercise` với `GrammarExerciseConfig`. Gói bài 39 chiếu 9 nhóm thành 9 `GrammarExercise.Content`, chia cho 6 task thực hành theo thứ tự.
 - Shadowing → xem xét PronunciationPractice engine, nhưng cần kiểm tra hỗ trợ clip và thứ tự nhóm A; không áp giới hạn comment 10 vào dataset.
 - Listening/Reading → task hiện có với adapter đúng `Format/Content`; không ép text passage thành MCQ nếu mất cấu trúc câu hỏi.
 - C/Kaiwa → xem xét RolePlay hoặc engine hội thoại phù hợp; mẫu/variant/speaker không tự flatten.
 - Mondai 1–6 → Exercise/Test sau khi kiểm contract kiểm tra; đây là bài ôn Minna, không tự biến thành đề JLPT chuẩn.
-- Mỗi `GrammarCurriculumEntry.VideoUrl` nhận URL video của đúng mẫu sau khi resolve asset. Route learner có link mở video. Video vocab/hội thoại cần binding riêng. [Quy cách gói trao đổi và xử lý khi nhập lại](../contracts/harumii-minna/v1/CONTRACT.md).
+- Mỗi `GrammarCurriculumEntry.VideoUrl` nhận URL video của đúng mẫu sau khi resolve asset. Route learner có link mở video. Video từ vựng cho cả bài có một binding media riêng và đứng ngay trước node học từ vựng. Video hội thoại cần binding riêng. [Quy cách gói trao đổi và xử lý khi nhập lại](../contracts/harumii-minna/v1/CONTRACT.md).
 - `Shared/LearningPathTaskConfigSchemas.cs` khai báo `VocabLearningConfig` nhận unit ID + danh sách vocab item IDs, `GrammarConfig` nhận unit ID + entry ID, nghe/đọc nhận exercise ID. Adapter phải resolve các binding này trên môi trường đích.
 - Bật/tắt node → chưa thấy field chuyên dụng trong entity task đã đọc; cần thiết kế config/publication/learner preference sau. Không tuyên bố tính năng đã có.
 

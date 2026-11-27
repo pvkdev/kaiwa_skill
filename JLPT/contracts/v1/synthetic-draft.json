@@ -1,0 +1,496 @@
+{
+  "schemaVersion": "1.1.0",
+  "packageId": "5ad734aa-d107-508b-beba-866da3105840",
+  "revision": 1,
+  "exam": {
+    "level": "N5",
+    "slug": "synthetic-contract-demo",
+    "name": "Ví dụ hợp đồng local — không phải đề VNJPClub",
+    "kind": "synthetic",
+    "year": null,
+    "month": null
+  },
+  "structure": {
+    "profileKey": "synthetic-demo-v1",
+    "description": "Hai câu đọc dùng chung passage, một khung nghe 3 lựa chọn. Mojigoi/bunpou cố ý trống. Không mô phỏng một cấu trúc thi thật.",
+    "sectionOrder": [
+      "mojigoi",
+      "bunpou",
+      "dokkai",
+      "choukai"
+    ],
+    "timings": [],
+    "expectations": [
+      {
+        "mondaiId": "87da3c13-7611-5d22-b8bf-d6202841b977",
+        "questionCount": 2
+      },
+      {
+        "mondaiId": "19ed070a-737b-595e-8e94-42b12f42c194",
+        "questionCount": 2
+      }
+    ]
+  },
+  "sources": [
+    {
+      "sourceId": "synthetic-author",
+      "kind": "synthetic",
+      "url": null,
+      "localPath": null,
+      "sha256": null,
+      "capturedAt": null,
+      "status": "available",
+      "note": "Tự biên soạn để kiểm schema; không lấy từ website."
+    }
+  ],
+  "assets": [],
+  "content": {
+    "mojigoi": {
+      "mondais": []
+    },
+    "bunpou": {
+      "mondais": []
+    },
+    "dokkai": {
+      "mondais": [
+        {
+          "id": "87da3c13-7611-5d22-b8bf-d6202841b977",
+          "section": "dokkai",
+          "mondaiNumber": 4,
+          "label": "Ví dụ tự viết — không phải đề thật",
+          "instruction": "次の文を読んで、質問に答えてください。",
+          "blocks": [
+            {
+              "id": "82e893df-cf28-521c-aaf6-1998a9fc4086",
+              "choiceCount": 4,
+              "mediaItems": [
+                {
+                  "id": "bfad9f94-8b13-5ac2-b383-7b9099a10f7f",
+                  "kind": "passage",
+                  "passage": {
+                    "jaMd": "この店は午前九時から午後六時までです。",
+                    "viMd": "Cửa hàng này mở từ 9 giờ sáng đến 6 giờ chiều."
+                  }
+                }
+              ],
+              "questions": [
+                {
+                  "id": "88e004b4-292f-5058-a25a-d021c3b4d21a",
+                  "prompt": {
+                    "text": "店は何時からですか。"
+                  },
+                  "choices": [
+                    {
+                      "id": "a",
+                      "text": "午前九時"
+                    },
+                    {
+                      "id": "b",
+                      "text": "午前十時"
+                    },
+                    {
+                      "id": "c",
+                      "text": "午後六時"
+                    },
+                    {
+                      "id": "d",
+                      "text": "午後七時"
+                    }
+                  ],
+                  "correctChoiceId": "a",
+                  "explanation": "Đáp án a. Bài đọc ghi cửa hàng mở từ 9 giờ sáng. b là 10 giờ, không đúng giờ mở cửa; c là 6 giờ chiều, đúng giờ đóng cửa; d là 7 giờ tối, không được nêu. Cần phân biệt から (từ) và まで (đến). Đây là ví dụ tự biên soạn.",
+                  "translationVi": null,
+                  "vocabNotes": null,
+                  "grammarNotes": null
+                },
+                {
+                  "id": "406b13f7-b3f9-51da-b16f-dec2129393da",
+                  "prompt": {
+                    "text": "店は何時までですか。"
+                  },
+                  "choices": [
+                    {
+                      "id": "a",
+                      "text": "午前九時"
+                    },
+                    {
+                      "id": "b",
+                      "text": "午前十時"
+                    },
+                    {
+                      "id": "c",
+                      "text": "午後六時"
+                    },
+                    {
+                      "id": "d",
+                      "text": "午後七時"
+                    }
+                  ],
+                  "correctChoiceId": "c",
+                  "explanation": "Đáp án c. 午後六時まで chỉ thời điểm kết thúc. a là giờ mở cửa; b và d không xuất hiện trong thông báo. Đây là ví dụ tự biên soạn.",
+                  "translationVi": null,
+                  "vocabNotes": null,
+                  "grammarNotes": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "choukai": {
+      "mondais": [
+        {
+          "id": "19ed070a-737b-595e-8e94-42b12f42c194",
+          "section": "choukai",
+          "mondaiNumber": 1,
+          "label": "Khung nghe thiếu tài nguyên để kiểm tra draft",
+          "instruction": "音声を聞いて答えてください。",
+          "blocks": [
+            {
+              "id": "17914356-61fd-5cd9-9244-2d5f0cbfaa11",
+              "choiceCount": 3,
+              "mediaItems": [
+                {
+                  "id": "1746c5d4-a646-5900-87d1-39d141b27569",
+                  "kind": "audio",
+                  "audio": {
+                    "url": null,
+                    "scriptJaMd": "",
+                    "scriptViMd": ""
+                  }
+                },
+                {
+                  "id": "24f1fd48-8319-5bf0-a90a-77c5197d0a3e",
+                  "kind": "image",
+                  "image": {
+                    "url": null
+                  }
+                }
+              ],
+              "questions": [
+                {
+                  "id": "6bc4bc77-0c14-50ba-b8f2-e4c407bef056",
+                  "prompt": {
+                    "text": ""
+                  },
+                  "choices": [
+                    {
+                      "id": "a",
+                      "text": "1"
+                    },
+                    {
+                      "id": "b",
+                      "text": "2"
+                    },
+                    {
+                      "id": "c",
+                      "text": "3"
+                    }
+                  ],
+                  "correctChoiceId": null,
+                  "explanation": null,
+                  "translationVi": null,
+                  "vocabNotes": null,
+                  "grammarNotes": null,
+                  "jlptListenScript": {
+                    "scriptJaMd": "",
+                    "scriptViMd": ""
+                  }
+                },
+                {
+                  "id": "9e5b693c-d3a9-50e0-b354-3f1f824354e8",
+                  "prompt": {
+                    "text": ""
+                  },
+                  "choices": [
+                    {
+                      "id": "a",
+                      "text": "1"
+                    },
+                    {
+                      "id": "b",
+                      "text": "2"
+                    },
+                    {
+                      "id": "c",
+                      "text": "3"
+                    }
+                  ],
+                  "correctChoiceId": null,
+                  "explanation": null,
+                  "translationVi": null,
+                  "vocabNotes": null,
+                  "grammarNotes": null,
+                  "jlptListenScript": {
+                    "scriptJaMd": "",
+                    "scriptViMd": ""
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "annotations": {
+    "nodes": [
+      {
+        "nodeId": "87da3c13-7611-5d22-b8bf-d6202841b977",
+        "sourceId": "synthetic-author",
+        "locator": "dokkai",
+        "sourceNumber": "4",
+        "sourceChoiceLabels": []
+      },
+      {
+        "nodeId": "82e893df-cf28-521c-aaf6-1998a9fc4086",
+        "sourceId": "synthetic-author",
+        "locator": "block/82e893df-cf28-521c-aaf6-1998a9fc4086",
+        "sourceNumber": null,
+        "sourceChoiceLabels": []
+      },
+      {
+        "nodeId": "bfad9f94-8b13-5ac2-b383-7b9099a10f7f",
+        "sourceId": "synthetic-author",
+        "locator": "media/bfad9f94-8b13-5ac2-b383-7b9099a10f7f",
+        "sourceNumber": null,
+        "sourceChoiceLabels": []
+      },
+      {
+        "nodeId": "88e004b4-292f-5058-a25a-d021c3b4d21a",
+        "sourceId": "synthetic-author",
+        "locator": "question/88e004b4-292f-5058-a25a-d021c3b4d21a",
+        "sourceNumber": "1",
+        "sourceChoiceLabels": [
+          {
+            "choiceId": "a",
+            "label": "1"
+          },
+          {
+            "choiceId": "b",
+            "label": "2"
+          },
+          {
+            "choiceId": "c",
+            "label": "3"
+          },
+          {
+            "choiceId": "d",
+            "label": "4"
+          }
+        ]
+      },
+      {
+        "nodeId": "406b13f7-b3f9-51da-b16f-dec2129393da",
+        "sourceId": "synthetic-author",
+        "locator": "question/406b13f7-b3f9-51da-b16f-dec2129393da",
+        "sourceNumber": "2",
+        "sourceChoiceLabels": [
+          {
+            "choiceId": "a",
+            "label": "1"
+          },
+          {
+            "choiceId": "b",
+            "label": "2"
+          },
+          {
+            "choiceId": "c",
+            "label": "3"
+          },
+          {
+            "choiceId": "d",
+            "label": "4"
+          }
+        ]
+      },
+      {
+        "nodeId": "19ed070a-737b-595e-8e94-42b12f42c194",
+        "sourceId": "synthetic-author",
+        "locator": "choukai",
+        "sourceNumber": "1",
+        "sourceChoiceLabels": []
+      },
+      {
+        "nodeId": "17914356-61fd-5cd9-9244-2d5f0cbfaa11",
+        "sourceId": "synthetic-author",
+        "locator": "block/17914356-61fd-5cd9-9244-2d5f0cbfaa11",
+        "sourceNumber": null,
+        "sourceChoiceLabels": []
+      },
+      {
+        "nodeId": "1746c5d4-a646-5900-87d1-39d141b27569",
+        "sourceId": "synthetic-author",
+        "locator": "media/1746c5d4-a646-5900-87d1-39d141b27569",
+        "sourceNumber": null,
+        "sourceChoiceLabels": []
+      },
+      {
+        "nodeId": "24f1fd48-8319-5bf0-a90a-77c5197d0a3e",
+        "sourceId": "synthetic-author",
+        "locator": "media/24f1fd48-8319-5bf0-a90a-77c5197d0a3e",
+        "sourceNumber": null,
+        "sourceChoiceLabels": []
+      },
+      {
+        "nodeId": "6bc4bc77-0c14-50ba-b8f2-e4c407bef056",
+        "sourceId": "synthetic-author",
+        "locator": "question/6bc4bc77-0c14-50ba-b8f2-e4c407bef056",
+        "sourceNumber": "1",
+        "sourceChoiceLabels": [
+          {
+            "choiceId": "a",
+            "label": "1"
+          },
+          {
+            "choiceId": "b",
+            "label": "2"
+          },
+          {
+            "choiceId": "c",
+            "label": "3"
+          }
+        ]
+      },
+      {
+        "nodeId": "9e5b693c-d3a9-50e0-b354-3f1f824354e8",
+        "sourceId": "synthetic-author",
+        "locator": "question/9e5b693c-d3a9-50e0-b354-3f1f824354e8",
+        "sourceNumber": "2",
+        "sourceChoiceLabels": [
+          {
+            "choiceId": "a",
+            "label": "1"
+          },
+          {
+            "choiceId": "b",
+            "label": "2"
+          },
+          {
+            "choiceId": "c",
+            "label": "3"
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "targetId": "88e004b4-292f-5058-a25a-d021c3b4d21a",
+        "fieldPointer": "/explanation",
+        "origin": "ai",
+        "sourceId": "synthetic-author",
+        "runId": "fixture-authoring-2026-11-25",
+        "model": "codex-session",
+        "skillVersion": "synthetic-fixture-v1",
+        "inputSha256": "13aa0ac38a5072d1a6d64b4b2ef338015d5b89f41af7892790a0a034ec2fdde6",
+        "reviewStatus": "pending",
+        "note": "Ví dụ tự biên soạn; chưa có người review."
+      },
+      {
+        "targetId": "406b13f7-b3f9-51da-b16f-dec2129393da",
+        "fieldPointer": "/explanation",
+        "origin": "ai",
+        "sourceId": "synthetic-author",
+        "runId": "fixture-authoring-2026-11-25",
+        "model": "codex-session",
+        "skillVersion": "synthetic-fixture-v1",
+        "inputSha256": "3fba97a82572299ca19c97007e45a32d9f4ef9c712fd84f9fbb0201c62d27108",
+        "reviewStatus": "pending",
+        "note": "Ví dụ tự biên soạn; chưa có người review."
+      }
+    ],
+    "answers": [
+      {
+        "questionId": "88e004b4-292f-5058-a25a-d021c3b4d21a",
+        "sourceChoiceId": "a",
+        "aiChoiceId": null,
+        "resolvedChoiceId": "a",
+        "resolution": "source_confirmed",
+        "sourceId": "synthetic-author",
+        "note": "Đáp án ví dụ tự viết."
+      },
+      {
+        "questionId": "406b13f7-b3f9-51da-b16f-dec2129393da",
+        "sourceChoiceId": "c",
+        "aiChoiceId": null,
+        "resolvedChoiceId": "c",
+        "resolution": "source_confirmed",
+        "sourceId": "synthetic-author",
+        "note": "Đáp án ví dụ tự viết."
+      },
+      {
+        "questionId": "6bc4bc77-0c14-50ba-b8f2-e4c407bef056",
+        "sourceChoiceId": null,
+        "aiChoiceId": null,
+        "resolvedChoiceId": null,
+        "resolution": "unresolved",
+        "sourceId": "synthetic-author",
+        "note": "Chưa có nội dung nghe, không đoán đáp án."
+      },
+      {
+        "questionId": "9e5b693c-d3a9-50e0-b354-3f1f824354e8",
+        "sourceChoiceId": null,
+        "aiChoiceId": null,
+        "resolvedChoiceId": null,
+        "resolution": "unresolved",
+        "sourceId": "synthetic-author",
+        "note": "Chưa có nội dung nghe, không đoán đáp án."
+      }
+    ],
+    "audioSegments": [
+      {
+        "mondaiId": "19ed070a-737b-595e-8e94-42b12f42c194",
+        "questionIds": [],
+        "startMs": 1000,
+        "endMs": 39000,
+        "role": "mondai",
+        "sourceId": "synthetic-author",
+        "locator": "synthetic timeline/mondai-1"
+      },
+      {
+        "mondaiId": "19ed070a-737b-595e-8e94-42b12f42c194",
+        "questionIds": [
+          "6bc4bc77-0c14-50ba-b8f2-e4c407bef056",
+          "9e5b693c-d3a9-50e0-b354-3f1f824354e8"
+        ],
+        "startMs": 1200,
+        "endMs": 38000,
+        "role": "shared",
+        "sourceId": "synthetic-author",
+        "locator": "synthetic timeline/shared-1"
+      }
+    ],
+    "grammarRefs": []
+  },
+  "review": {
+    "status": "draft",
+    "reviewedBy": null,
+    "reviewedAt": null,
+    "issues": [
+      {
+        "code": "MISSING_LISTENING_MEDIA",
+        "severity": "error",
+        "targetId": "17914356-61fd-5cd9-9244-2d5f0cbfaa11",
+        "message": "Chưa có audio, ảnh, script, bản dịch hoặc đáp án thật; không sẵn import."
+      },
+      {
+        "code": "EXPLANATION_REVIEW_PENDING",
+        "severity": "error",
+        "targetId": null,
+        "message": "Giải thích ví dụ chưa được người review; không có bằng chứng kiểm thử renderer."
+      },
+      {
+        "code": "INCOMPLETE_TRANSLATIONS",
+        "severity": "error",
+        "targetId": null,
+        "message": "Bản dịch câu hỏi/lựa chọn trong fixture chưa đầy đủ."
+      }
+    ]
+  },
+  "masterAudio": {
+    "assetId": null,
+    "durationMs": 40000,
+    "rss": null
+  }
+}

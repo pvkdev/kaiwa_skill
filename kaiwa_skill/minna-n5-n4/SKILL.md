@@ -1,6 +1,6 @@
 ---
 name: minna-n5-n4
-description: Khảo sát nguồn VNJPCLUB, biên soạn dữ liệu Minna no Nihongo 50 bài N5–N4 trong kaiwa_skill và chuẩn bị gói migration sang Harumii. Dùng khi làm nguồn, ngữ pháp, Renshuu B, shadowing Văn mẫu/A, Renshuu C/Kaiwa hoặc contract dữ liệu Minna.
+description: Khảo sát nguồn VNJPCLUB, biên soạn dữ liệu Minna no Nihongo 50 bài N5–N4 trong kaiwa_skill và chuẩn bị gói migration sang Harumii. Dùng khi làm nguồn, từ vựng, ngữ pháp, Renshuu B, shadowing Văn mẫu/A, Renshuu C/Kaiwa hoặc contract dữ liệu Minna.
 ---
 
 # Minna N5–N4: biên soạn trước, migration sau
@@ -20,7 +20,7 @@ Khi crawl hoặc cập nhật một bài, làm theo [quy trình chạy và kiể
 
 ## Phạm vi cố định từ yêu cầu
 
-- Dùng danh sách từ vựng người biên soạn cung cấp để chọn từ khi viết bài tập. Các node học từ vựng tham chiếu dữ liệu hiện có trong Harumii và chia nhóm khoảng 20–30 từ. Bước crawl VNJPCLUB bỏ qua trang từ vựng.
+- Mỗi bài trong 50 bài bắt đầu bằng đúng một video từ vựng cho cả bài, ngay sau đó là đúng một node học chứa toàn bộ từ vựng của bài theo thứ tự bản xuất Harumii. Dùng danh sách người biên soạn cung cấp để chọn từ khi viết bài tập. Bước crawl VNJPClub bỏ qua trang từ vựng.
 - Lấy ngữ pháp, ví dụ Nhật–Việt, media, đáp án/lời giải nếu nguồn cung cấp; Renshuu B là ưu tiên cao nhất.
 - Shadowing từ `luyen-doc`: chỉ Văn mẫu (`bunkei`) và luyện tập A. Không tự lấy thêm Ví dụ (`reibun`) hoặc tab kiểm tra.
 - Hội thoại: giữ nhóm C, mẫu và biến thể; xếp C trước Kaiwa tổng hợp dù trang nguồn hiển thị Kaiwa trước.
@@ -75,7 +75,7 @@ py -X utf8 scripts/grammar_practice_order.py
 
 Khi nguồn đổi thứ tự điểm ngữ pháp, tra [sổ ID video](catalog/grammar-video-ids.json) để giữ nguyên liên kết với media và tiến độ. Khi nguồn thêm một điểm thực sự mới, cấp số video chưa dùng của bài. Khi nguồn đổi ID cho cùng một điểm, đối chiếu nội dung và chuyển khóa nguồn sang ID video đã có. Giữ số video đã nghỉ để tránh dùng lại.
 
-Chạy `pwsh -NoProfile -File scripts/build_exercise_release.ps1` để xuất toàn bộ câu đã biên tập, kiểm đáp án và đóng gói `exports/harumii/minna-50-exercises-preview.zip`. ZIP chứa 50 bài theo đúng thứ tự, dữ liệu bài tập native, manifest checksum và bản nghe mẫu cục bộ. Gói Markdown cho admin ngữ pháp dùng quy trình riêng theo hợp đồng bài giảng.
+Chạy `pwsh -NoProfile -File scripts/build_exercise_release.ps1` để xuất toàn bộ câu đã biên tập, kiểm đáp án và đóng gói `exports/harumii/minna-50-exercises-preview.zip`. ZIP chứa 50 bài theo đúng thứ tự, dữ liệu bài tập native, manifest checksum và bản nghe mẫu cục bộ. Gói Markdown cho admin ngữ pháp dùng quy trình riêng theo hợp đồng bài giảng. Khi có cả ZIP preview lẫn `exports/grammar-upload/minna-n5-n4-grammar-r2.zip` và đã cài Mistune 3.x, chạy `py -B -X utf8 scripts/roadmap_viewer.py` để dựng lại `lo-trinh-minna.html`.
 
 Xem [biên bản bàn giao](reports/minna-quality-review.md) để lấy đúng ZIP ngữ pháp dùng cho admin, ZIP lộ trình dùng để preview và danh sách dữ liệu nguồn còn thiếu.
 

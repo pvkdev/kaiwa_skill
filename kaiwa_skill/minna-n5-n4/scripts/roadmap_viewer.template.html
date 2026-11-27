@@ -31,9 +31,16 @@ const allNodes=l=>l.extra.templates?[...l.nodes,...['pilot','templates'].map(kin
 const visibleNodes=l=>allNodes(l).filter(n=>$('#show-extra').checked||!n.optional);
 const isEmpty=n=>['pending','needs_review','snapshot_missing'].includes(n.status);
 const isVideo=n=>['vocabulary_video','conversation_video'].includes(n.kind);
+const isVocabulary=n=>['vocabulary_video','vocabulary_learning'].includes(n.kind);
+function nodeForRoute(l,id){
+ const node=allNodes(l).find(n=>n.id===id);
+ if(node)return node;
+ if(id==='tu-vung')return l.nodes.find(n=>n.kind==='vocabulary_learning');
+ const previous=id.match(/^minna\.l(\d{2})\.v\d{2}\.(vocabulary_video|vocabulary_learning)$/);
+ if(previous&&Number(previous[1])===l.n)return l.nodes.find(n=>n.kind===previous[2]);
+}
 function nodeTitle(n,l,short=false){
  const base=kindNames[n.kind]||n.kind;
- if(n.source_rows)return base+' · '+n.source_rows.join('–');
  if(n.grammar_ref){let title=groupsOf(l)[n.grammar_ref].title; if(short)title=title.split(' — ')[0];return base+' · '+title}
  return base;
 }
@@ -65,13 +72,13 @@ function navRow(l,n){
 }
 function overview(l){
  const count=l.groups.reduce((a,g)=>a+g.items.length,0);
- const blocks=[['Từ vựng',n=>n.source_rows],['Ngữ pháp và Renshuu B',n=>n.grammar_ref],['Luyện kỹ năng và kiểm tra',n=>!n.source_rows&&!n.grammar_ref&&l.nodes.includes(n)],['Tài liệu bổ sung',n=>['pilot','templates'].includes(n.kind)]];
- return `<div class="hero"><div class="accent">Minna no Nihongo · ${l.n<=25?'N5':'N4'}</div><h1>Bài ${l.n}</h1><div class="metrics">${link(route(l.n,'tu-vung'),l.words.length+' từ vựng')}<span>${l.groups.length} mẫu ngữ pháp</span><span>${count} câu luyện ngữ pháp</span></div></div>`+
+ const study=l.nodes.find(n=>n.kind==='vocabulary_learning');
+ const blocks=[['Từ vựng',isVocabulary],['Ngữ pháp và Renshuu B',n=>n.grammar_ref],['Luyện kỹ năng và kiểm tra',n=>!isVocabulary(n)&&!n.grammar_ref&&l.nodes.includes(n)],['Tài liệu bổ sung',n=>['pilot','templates'].includes(n.kind)]];
+ return `<div class="hero"><div class="accent">Minna no Nihongo · ${l.n<=25?'N5':'N4'}</div><h1>Bài ${l.n}</h1><div class="metrics">${link(route(l.n,study.id),l.words.length+' từ vựng')}<span>${l.groups.length} mẫu ngữ pháp</span><span>${count} câu luyện ngữ pháp</span></div></div>`+
  blocks.map(([s,test])=>{const rows=visibleNodes(l).filter(test);return rows.length?`<h2>${s}</h2><div class="listbox">${rows.map(n=>navRow(l,n)).join('')}</div>`:''}).join('');
 }
-function vocab(l,rows){
- const words=l.words.filter(w=>!rows||(+w[0]>=rows[0]&&+w[0]<=rows[1]));
- return `<div class="tools"><input id="word-search" type="search" placeholder="Tìm từ, cách đọc hoặc nghĩa…" aria-label="Tìm trong danh sách từ"><label><input id="study-words" type="checkbox"> Tự ôn nghĩa</label>${rows?link(route(l.n,'tu-vung'),'Xem cả '+l.words.length+' từ','btn'):''}</div><div class="gridtable"><table class="words"><thead><tr><th>#</th><th>Từ</th><th>Cách đọc</th><th>Hán Việt</th><th>Nghĩa</th></tr></thead><tbody>${words.map(w=>'<tr class="word-row">'+w.map((t,i)=>i===4?'<td><span class="word-meaning">'+esc(t)+'</span><button type="button" class="plain smallbtn hide reveal-word">Xem nghĩa</button></td>':'<td'+(i===1||i===2?' lang="ja"':'')+'>'+esc(t)+'</td>').join('')+'</tr>').join('')}</tbody></table></div><p id="no-words" class="dim hide">Không tìm thấy từ phù hợp.</p>`;
+function vocab(l){
+ return `<div class="tools"><input id="word-search" type="search" placeholder="Tìm từ, cách đọc hoặc nghĩa…" aria-label="Tìm trong danh sách từ"><label><input id="study-words" type="checkbox"> Tự ôn nghĩa</label></div><div class="gridtable"><table class="words"><thead><tr><th>#</th><th>Từ</th><th>Cách đọc</th><th>Hán Việt</th><th>Nghĩa</th></tr></thead><tbody>${l.words.map(w=>'<tr class="word-row">'+w.map((t,i)=>i===4?'<td><span class="word-meaning">'+esc(t)+'</span><button type="button" class="plain smallbtn hide reveal-word">Xem nghĩa</button></td>':'<td'+(i===1||i===2?' lang="ja"':'')+'>'+esc(t)+'</td>').join('')+'</tr>').join('')}</tbody></table></div><p id="no-words" class="dim hide">Không tìm thấy từ phù hợp.</p>`;
 }
 function clip(url,times){
  if(!url||!/^https:\/\//i.test(url))return '';
@@ -159,10 +166,10 @@ function skills(l,n){
 function nodePage(l,n){
  const group=n.grammar_ref&&groupsOf(l)[n.grammar_ref];
  let body='';
- if(n.kind==='vocabulary_learning')body=vocab(l,n.source_rows);
+ if(n.kind==='vocabulary_learning')body=vocab(l);
  else if(n.kind==='grammar_video')body=grammar(l,group);
  else if(n.kind==='grammar_practice')body=practice(group);
- else if(isVideo(n))body=`<p class="note">Video đang chờ sản xuất.</p>${n.source_rows?vocab(l,n.source_rows):''}`;
+ else if(isVideo(n))body=`<p class="note">Video đang chờ sản xuất.</p>${n.kind==='vocabulary_video'?vocab(l):''}`;
  else body=skills(l,n);
  if(!body)body='<p class="note">Phần này đang chờ nội dung cho bài '+l.n+'.</p>';
  const nodes=visibleNodes(l),i=nodes.findIndex(x=>x.id===n.id);
@@ -197,10 +204,11 @@ function render(){
  if(lib){$('#main').innerHTML=libraryPage(id);if($('#articles'))filterLibrary()}
  else{
   const n=Number((page||'bai-1').replace(/^bai-/,''));current=lessons[n-1]||lessons[0];
-  const l=current,node=allNodes(l).find(x=>x.id===id);
+  const l=current,node=nodeForRoute(l,id);
+  active=node?.id||'';
   if(node?.optional)$('#show-extra').checked=true;
-  const crumb=`<div class="crumb">${l.n<=25?'N5':'N4'} <span>/</span> ${link(route(l.n),'Bài '+l.n)}${id?' <span>/</span> '+esc(node?kindNames[node.kind]:'Từ vựng'):''}</div>`;
-  $('#main').innerHTML=crumb+(id==='tu-vung'?'<h1>Từ vựng bài '+l.n+'</h1>'+vocab(l):node?nodePage(l,node):overview(l));
+  const crumb=`<div class="crumb">${l.n<=25?'N5':'N4'} <span>/</span> ${link(route(l.n),'Bài '+l.n)}${node?' <span>/</span> '+esc(kindNames[node.kind]):''}</div>`;
+  $('#main').innerHTML=crumb+(node?nodePage(l,node):overview(l));
  }
  renderTree();$('#sidebar').classList.remove('open');$('#toggle').setAttribute('aria-expanded','false');
  document.title=($('#main h1')?.textContent||'Lộ trình')+' · Minna no Nihongo';
