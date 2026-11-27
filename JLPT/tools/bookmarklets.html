@@ -3,6 +3,18 @@
 <style>body{font:17px/1.55 system-ui;max-width:44rem;margin:8vh auto;padding:0 1rem;color:#183143}section{margin:2rem 0}a,button{display:inline-block;background:#18546a;color:white;border:0;border-radius:6px;padding:.55rem 1rem;font:inherit;cursor:pointer}textarea{display:block;box-sizing:border-box;width:100%;height:5rem;margin:.6rem 0}</style>
 <h1>Bookmarklet JLPT cho SingleFile</h1>
 <p>Kéo từng nút lên thanh dấu trang hoặc sao chép URL vào ô địa chỉ của một dấu trang mới.</p>
+<section aria-labelledby="css-heading">
+  <h2 id="css-heading">Khôi phục bố cục khi trang mất CSS</h2>
+  <p>Chọn bản SingleFile cũ có bố cục tốt, chẳng hạn phần đọc N3 kỳ 2018-12. Sau đó cài nút vừa tạo và bấm nó trên tab bị vỡ. CSS được đọc từ file bạn chọn.</p>
+  <label for="css-source">Bản HTML dùng làm nguồn CSS</label>
+  <input type="file" id="css-source" accept=".html,.htm,text/html">
+  <p id="css-status" role="status"></p>
+  <div id="css-tools" hidden>
+    <a id="css-link" draggable="true">Khôi phục CSS JLPT</a>
+    <textarea readonly id="css-url" aria-label="URL dấu trang Khôi phục CSS JLPT"></textarea>
+    <button type="button" id="css-copy">Sao chép URL khôi phục CSS</button>
+  </div>
+</section>
 <section aria-labelledby="select-heading">
   <h2 id="select-heading">Điền đáp án mẫu</h2>
   <p>Chạy trên trang đang làm bài nếu muốn điền sẵn lựa chọn 1. Kiểm tra các lựa chọn trước khi tự nộp bài.</p>
@@ -352,4 +364,75 @@ function installLink(prefix, url) {
 installLink('select-', document.getElementById('select-code').textContent.trim());
 installLink('', bookmarkUrl('code'));
 installLink('audio-', bookmarkUrl('audio-code'));
+
+async function restoreJLPTRendering(payload) {
+  const host = location.hostname;
+  if (!/^(?:www\.)?vnjpclub\.com$/i.test(host) &&
+      !(location.protocol === 'file:' && document.querySelector('.vnjp-jlpt-root'))) {
+    alert('Mở trang VNJPCLUB hoặc bản HTML đề thi đã lưu trước.');
+    return;
+  }
+  const bytes = Uint8Array.from(atob(payload), char => char.charCodeAt(0));
+  const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('deflate'));
+  const styles = JSON.parse(await new Response(stream).text());
+  const added = [];
+  let blocked = 0;
+  for (const [id, css] of Object.entries(styles)) {
+    const fixId = 'jlpt-css-recovery-' + id;
+    const original = document.getElementById(id);
+    const existing = document.getElementById(fixId);
+    const originalLoaded = original?.localName === 'style' ? original.textContent.trim() : original?.sheet;
+    if (existing?.sheet || originalLoaded) continue;
+    const style = existing || document.createElement('style');
+    style.id = fixId;
+    style.textContent = css;
+    document.head.append(style);
+    if (style.sheet) added.push(id);
+    else blocked++;
+  }
+  if (added.length) alert('Đã chèn ' + added.length + ' khối CSS. Giờ thử lại các nút trên trang.');
+  else if (blocked) alert('Trình duyệt hoặc chính sách của trang đã chặn CSS chèn trực tiếp.');
+  else alert('Các khối CSS nguồn đã có trên trang.');
+}
+
+const restorableStyles = new Set([
+  'generate-style-css', 'generate-child-css', 'generate-navigation-branding-css',
+  'vnjp-left-sidebar-css', 'vnjp-ls-combined-css', 'vnjp-site-menu-css',
+  'vnjp-mobile-header-tools-css', 'vnjp-site-search-css', 'vnjp-jlpt-test-online-css'
+]);
+const cssSource = document.getElementById('css-source');
+const cssStatus = document.getElementById('css-status');
+const cssTools = document.getElementById('css-tools');
+cssSource.onchange = async () => {
+  cssTools.hidden = true;
+  const file = cssSource.files[0];
+  if (!file) { cssStatus.textContent = ''; return; }
+  try {
+    const html = await file.text();
+    if (cssSource.files[0] !== file) return;
+    const styles = {};
+    // Read style text directly. Parsing the snapshot as a document can load images or frames.
+    for (const [, attributes, content] of html.matchAll(/<style\b([^>]*)>([\s\S]*?)<\/style\s*>/gi)) {
+      const id = attributes.match(/(?:^|\s)id\s*=\s*["']?([\w-]+)/i)?.[1];
+      if (!restorableStyles.has(id) || !content.trim()) continue;
+      const css = content.replace(/\/\*[\s\S]*?\*\//g,'');
+      if (/@import\b|(?:image-set|src)\s*\(/i.test(css)) continue;
+      const urls = css.matchAll(/url\s*\(\s*["']?([^"'\s)]+)/gi);
+      if ([...urls].some(([, value]) => !/^(?:data:|#)/i.test(value))) continue;
+      styles[id] = css;
+    }
+    const count = Object.keys(styles).length;
+    if (!count) { cssStatus.textContent = 'File này không có khối CSS phù hợp.'; return; }
+    const compressed = new Blob([JSON.stringify(styles)]).stream().pipeThrough(new CompressionStream('deflate'));
+    const buffer = new Uint8Array(await new Response(compressed).arrayBuffer());
+    if (cssSource.files[0] !== file) return;
+    const payload = btoa(Array.from(buffer, byte => String.fromCharCode(byte)).join(''));
+    const js = '(' + restoreJLPTRendering + ')(' + JSON.stringify(payload) + ')';
+    installLink('css-', 'javascript:void(' + encodeURIComponent(js) + ')');
+    cssStatus.textContent = 'Đã đọc ' + count + ' khối CSS. Bạn có thể cài dấu trang bên dưới.';
+    cssTools.hidden = false;
+  } catch (error) {
+    cssStatus.textContent = 'Không tạo được dấu trang CSS. ' + error.message;
+  }
+};
 </script></html>

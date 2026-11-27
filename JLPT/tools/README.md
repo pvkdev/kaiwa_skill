@@ -7,6 +7,7 @@
 | **Chọn đáp án 1** | Trang đang làm bài | Bấm lựa chọn đầu tiên của từng nhóm radio và báo số nhóm tìm thấy, số nhóm vừa thay đổi. |
 | **Chuẩn bị lưu JLPT** | Trang đã có kết quả | Bật Dịch và Giải thích nếu khả dụng, mở script nghe, rê chuột qua các dòng và gom nội dung vào phụ lục cuối trang. |
 | **Tải audio JLPT** | Trang phần thi nghe hoặc bản SingleFile có phụ lục | Lưu file nghe tổng từ nguồn audio đã có trên trang. |
+| **Khôi phục CSS JLPT** | Tab VNJPCLUB thiếu CSS hoặc bản HTML đề thi lưu cục bộ | Chèn các stylesheet còn thiếu từ bản SingleFile cũ do bạn chọn. |
 
 ## Cài vào Chrome hoặc Edge
 
@@ -14,6 +15,14 @@
 2. Kéo các nút dấu trang cần dùng lên thanh dấu trang.
 3. Nếu thao tác kéo không được, dùng nút **Sao chép URL** tương ứng. Tạo dấu trang mới, đặt tên như trên và dán cả chuỗi bắt đầu bằng `javascript:` vào ô URL của dấu trang. Nếu nút sao chép yêu cầu `Ctrl+C`, bấm tổ hợp phím khi ô URL đang được chọn.
 4. Nếu đã cài **Chuẩn bị lưu JLPT** từ bản trước, thay URL của dấu trang cũ bằng URL mới.
+
+## Thử khôi phục bố cục
+
+1. Mở `bookmarklets.html`, tìm **Khôi phục bố cục khi trang mất CSS** và chọn một bản SingleFile trước đó có giao diện đầy đủ, chẳng hạn phần đọc ở `../N3/1812/`.
+2. Khi trang báo đã đọc CSS, kéo **Khôi phục CSS JLPT** lên thanh dấu trang. Mở tab VNJPCLUB đang bị vỡ và bấm dấu trang đó. Hiệu lực chỉ trên tab hiện tại cho đến khi tải lại hoặc chuyển trang.
+3. Thử **Dịch**, **Giải thích** hoặc **Script nghe hiểu**. Nếu bố cục đã trở lại mà nút vẫn đứng yên, trang cần tải được JavaScript gốc. Có thể đóng quảng cáo xen trang rồi quay lại URL sạch và tải lại bằng `Ctrl+Shift+R`.
+
+Bookmarklet đọc CSS từ file đã chọn và giữ lại các khối có tên nhận diện được. Nó chỉ chèn stylesheet còn thiếu, dùng tài nguyên đã nhúng và không khởi tạo truy cập mạng để lấy CSS.
 
 ## Lưu một phần thi
 
