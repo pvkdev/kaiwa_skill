@@ -9,15 +9,15 @@ Chạy ở gốc kho `JLPT/`. Đọc [hợp đồng audio](../../../contracts/v1
 
 ## Xác định phần việc của một đề
 
-1. Đọc HTML nghe mới nhất đúng kỳ và MP3 tương ứng. Đối chiếu `data-start`, `data-end`, script, phụ lục, câu có hình và các câu dùng chung một đoạn. Mốc nguồn tính bằng giây thì đổi sang mili giây đúng một lần. Đồng hồ cục bộ của một player ghi 00:00 không xác định được vị trí trong đề. Đối chiếu thời lượng bằng ffprobe. Khi đổi bản thu/RSS, đối chiếu nếu cùng MP3 (SHA-256), hoặc thử tín hiệu đầu, giữa, cuối trên enclosure. Bản thêm quảng cáo/intro có thể lệch dù cùng tên.
-2. Chạy `py -3 tools/align_listening.py packages/N3/2018-12/package.json` (thay kỳ thật). Lệnh **không gọi API**. File xuất nằm ở `work/stt/<packageId>/alignment-review.json`. Đọc `rows[].number`, UUID, `role`, `sourceCues`, `hasScript` và `needs`. Nếu nguồn đã có đủ bằng chứng, dùng trực tiếp. Chỉ chạy STT khi cần khôi phục script hoặc biên mốc chưa có nguồn. Trước khi gửi track lớn, xem có bản supplement/script đúng kỳ tại chỗ hay chưa.
+1. Đọc HTML nghe và master đúng SHA của revision được giao. Nếu đã tải bản mới hơn, ghi nhận thay đổi và đối chiếu trước khi dùng lại script hoặc cue. Đối chiếu `data-start`, `data-end`, script, phụ lục, câu có hình và các câu dùng chung một đoạn. Mốc nguồn tính bằng giây thì đổi sang mili giây đúng một lần. Đồng hồ cục bộ của một player ghi 00:00 không xác định được vị trí trong đề. Đối chiếu thời lượng bằng ffprobe. Khi đổi bản thu/RSS, đối chiếu nếu cùng MP3 (SHA-256), hoặc thử tín hiệu đầu, giữa, cuối trên enclosure. Bản thêm quảng cáo/intro có thể lệch dù cùng tên.
+2. Chạy `py -3 tools/align_listening.py "<package.json đang rà>"` (thay kỳ thật). Dùng đường dẫn chính xác của revision được giao, kể cả bản staging. Khi nhiều revision cùng packageId đang được rà, truyền `--out "<job>/alignment-review.json"` để mỗi job giữ đúng kết quả. Lệnh **không gọi API**. Mặc định file xuất nằm ở `work/stt/<packageId>/alignment-review.json`. Đọc `rows[].number`, UUID, `role`, `sourceCues`, `hasScript` và `needs`. Nếu nguồn đã có đủ bằng chứng, dùng trực tiếp. Chỉ chạy STT khi cần khôi phục script hoặc biên mốc chưa có nguồn. Trước khi gửi track lớn, xem có bản supplement/script đúng kỳ tại chỗ hay chưa.
 
 ## STT có thể chạy tiếp
 
 ```powershell
 py -3 tools/listening_stt.py "N3/1812/JLPT-N3-2018-12.mp3" --max-chunks 1
 py -3 tools/listening_stt.py "N3/1812/JLPT-N3-2018-12.mp3"
-py -3 tools/align_listening.py packages/N3/2018-12/package.json --timeline "<đường dẫn timeline.json đã in>"
+py -3 tools/align_listening.py "<package.json đang rà>" --timeline "<đường dẫn timeline.json đã in>"
 ```
 
 - Cần Python 3.11+, `requests`, ffmpeg và ffprobe trên PATH. Key lấy từ `GROQ_API_KEY`, kế đến `D:/JLPT/groq/groq_api_key.txt`. Có thể truyền đường dẫn bằng `--key-file`. Giữ key ngoài repo và ngoài log.
