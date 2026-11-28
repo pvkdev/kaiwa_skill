@@ -26,6 +26,6 @@ Trước khi bàn giao, dựng thử JA, VI và JAVI theo [quy ước bố cục
 
 Chuyển bản đã ghép sang [jlpt-exam-review](../jlpt-exam-review/SKILL.md) để rà theo nguồn trước khi chốt trạng thái.
 
-Viết **Đáp án**, **Vì sao chọn**, **Vì sao loại** theo bằng chứng thực, thêm ngữ pháp khi mẫu đó giúp giải câu. Ghi nhãn và chính tả theo nguồn. Với đáp án nghe chỉ có số, câu trả lời cần dẫn đúng tín hiệu nghe được. Với bảng chỉ rõ hàng, cột, điều kiện và phép tính nếu có. Dùng khóa nguồn để đối chiếu sau khi tự giải. Khi câu hỏi và khóa mâu thuẫn, bảo toàn hai bằng chứng, yêu cầu rà lại.
+Chép nguyên văn toàn bộ lời giải từ HTML hoặc phụ lục đúng câu, kể cả khi chỉ có một câu ngắn. Chỉ giữ tiêu đề, thứ tự và nội dung có trong nguồn (`origin=source`). Khi nguồn thiếu, đọc ví dụ VNJPClub cùng dạng ở [hướng dẫn lời giải](../jlpt-exam-ingest/references/editorial.md), rồi viết đoạn giải thích từ bằng chứng riêng của câu (`origin=ai`). Nếu khóa hoặc lời giải mâu thuẫn với đề, lưu các bằng chứng và ghi issue theo UUID.
 
 Ghi trường đã thay đổi, pointer, hash đầu vào, nguồn/tên model và người rà theo [hợp đồng](../../../contracts/v1/CONTRACT.md). Giữ lời giải nguồn đọc lại được từ HTML. Nộp patch với base revision, target UUID và locator. Mở lại JA, VI và JAVI ở summary để kiểm câu/dòng, lời dịch thiếu, dấu ngoặc và bố cục bảng. Chốt đúng câu còn cần admin cung cấp nguồn.

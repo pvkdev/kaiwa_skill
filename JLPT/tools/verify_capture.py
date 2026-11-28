@@ -8,13 +8,17 @@ from pathlib import Path
 import sys
 
 from convert_singlefile import ROOT, SingleFileDocument, first, ja, tidy
-from audit_sources import ANSWER
+from audit_sources import ANSWER, appendix_answers, source_explanation
 from validate_package import source_snapshot
 
 
 def verify(package, root):
     nodes = {n["nodeId"]: n for n in package["annotations"]["nodes"]}
     source_answers = {a["questionId"]: a for a in package["annotations"]["answers"]}
+    fields = {}
+    for field in package["annotations"]["fields"]:
+        if field["fieldPointer"] == "/explanation":
+            fields.setdefault(field["targetId"], []).append(field)
     counts = Counter()
 
     def same(expected, actual, field):
@@ -35,6 +39,7 @@ def verify(package, root):
                     for m in tab["mondais"] for b in m["blocks"] for q in b["questions"]]
         originals = document.root.find("q-item")
         same(len(originals), len(compiled), "question count")
+        appendix = appendix_answers(document.root)
         materials = {}
         previous = []
         for element in document.root.find("mondai-block"):
@@ -58,6 +63,15 @@ def verify(package, root):
             choices = original.find("choice")
             same([tidy(ja(first(c, "choice-text"))) for c in choices],
                  [c["text"] for c in question["choices"]], locator + "/choices")
+            explanation, _ = source_explanation(original, appendix)
+            origins = fields.get(question["id"], [])
+            if explanation:
+                same(explanation, question["explanation"], locator + "/explanation")
+                same([("source", part)], [(f["origin"], f["sourceId"]) for f in origins], locator + "/explanation/origin")
+                counts["sourceExplanations"] += 1
+            elif question["explanation"]:
+                same(True, len(origins) == 1 and origins[0]["origin"] in {"ai", "human"}, locator + "/explanation/origin")
+                counts["authoredExplanations"] += 1
             answer = source_answers[question["id"]]
             if answer["resolution"] == "source_confirmed":
                 same([chr(97 + i) for i, c in enumerate(choices) if "choice-correct" in c.classes],

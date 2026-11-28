@@ -82,6 +82,49 @@ class Document(HTMLParser):
             self.stack[-1].children.append(data)
 
 
+def explanation_text(node):
+    if isinstance(node, str):
+        return node
+    if node.tag in {"script", "style", "button", "rt", "rp"}:
+        return ""
+    if node.tag == "br":
+        return "\n"
+    value = "".join(explanation_text(child) for child in node.children)
+    if node.tag in {"p", "div", "li"}:
+        return "\n" + value + "\n"
+    return value
+
+
+def appendix_answers(doc):
+    notes = next((n for n in doc.walk() if n.attrs.get("id") == "jlpt-singlefile-notes"), None)
+    answers = {}
+    if notes:
+        for row in notes.walk():
+            key = row.attrs.get("data-key", "")
+            if key.startswith("answer-"):
+                # The bookmarklet stores a heading, a text node and an optional backlink.
+                answers[key[7:]] = "".join(c for c in row.children if isinstance(c, str)).strip()
+    return answers
+
+
+def source_explanation(question, appendix):
+    anchor = question.attrs["id"]
+    candidates = [(explanation_text(n), "#" + anchor + " .complete-answer")
+                  for n in question.find("complete-answer")]
+    candidates.append((appendix.get(anchor, ""), f'#jlpt-singlefile-notes [data-key="answer-{anchor}"]'))
+    for raw, locator in candidates:
+        value = "\n".join(line.strip() for line in raw.strip().splitlines())
+        if (value and not re.fullmatch(r"[.\s…]+|(?:đáp án(?: đúng)?\s*[:：]?\s*)?[1-9][.。]?", value, re.I)
+                and not re.fullmatch(r"(?:đang tải|loading|vui lòng (?:chờ|đợi)|chưa có (?:lời giải|giải thích)|"
+                                     r"(?:bạn cần|vui lòng) đăng nhập(?: để xem(?: (?:lời giải|giải thích|đáp án))?)?|\[chưa lấy được\])[.!…\s]*", value, re.I)):
+            # The bookmarklet saves rendered innerText, including the actual line breaks.
+            rendered = appendix.get(anchor, "")
+            if rendered and rendered.split() == value.split():
+                value = rendered
+            return value, locator
+    return "", None
+
+
 def group_gaps(locations, missing):
     groups = {}
     for qid in missing:
@@ -131,13 +174,14 @@ def audit_page(root, path, media):
         return page
     bad_keys, missing_explanations = [], []
     scripts, ranges = {}, {}
+    appendix = appendix_answers(doc)
     for qid, q in zip(ids, qs):
         choices = q.find("choice")
         marked = [i for i, c in enumerate(choices, 1) if "choice-correct" in c.classes]
         results = [m.group(1) for line in q.find("result-line") for m in ANSWER.finditer(line.text())]
         if len(marked) != 1 or results != [str(marked[0])]:
             bad_keys.append(qid)
-        if not any(n.text() for n in q.find("complete-answer")):
+        if not source_explanation(q, appendix)[0]:
             missing_explanations.append(qid)
         for panel in q.find("vnjp-choukai-q-script-panel"):
             lines = panel.find("vnjp-jlpt-candich")

@@ -20,7 +20,7 @@ from uuid import NAMESPACE_URL, uuid5
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / ".agents/skills/jlpt-exam-ingest/scripts"))
-from audit_sources import ANSWER, Document, Node, interval, translated_value
+from audit_sources import ANSWER, Document, Node, appendix_answers, interval, source_explanation, translated_value
 sys.path.insert(0, str(ROOT / "contracts/v1"))
 from jlpt_coverage import checklist_issues
 from jlpt_sentences import sentence_units
@@ -501,8 +501,7 @@ class Package:
             sourceId=self.source, note=f"{selector} .choice-correct / .result-line"))
         if not ans:
             self.issue("VERIFY_KEY", f"{self.source} {selector} · Cần đối chiếu đáp án.", uid, "error")
-        exp = first(original, "complete-answer")
-        explanation = tidy(exp.text()) if exp else ""
+        explanation, explanation_locator = source_explanation(original, self.appendix_answers)
         q = dict(id=uid, prompt=qprompt, choices=choices, correctChoiceId=ans,
                  explanation=explanation or None, translationVi=vi or None,
                  vocabNotes=None, grammarNotes=None)
@@ -523,21 +522,21 @@ class Package:
                     sourceId=f"translations-{self.source}", runId=f"{self.level}-{self.period}-{self.source}-questions",
                     model="Codex", skillVersion="jlpt-exam-ingest-1.3", inputSha256=self.capture_hash,
                     reviewStatus="pending", note=selector))
-        if anchor in self.editorial:
-            edit = self.editorial.pop(anchor)
+        edit = self.editorial.pop(anchor, None)
+        if edit and edit.get("sourceIssue"):
+            self.issue("VERIFY_SOURCE_TEXT", f"{self.source} {selector} · {edit['sourceIssue']}", uid, "error")
+        if explanation:
+            self.annotations["fields"].append(dict(targetId=uid, fieldPointer="/explanation",
+                origin="source", sourceId=self.source, runId=None, model=None, skillVersion=None,
+                inputSha256=None, reviewStatus="pending", note=explanation_locator))
+        elif edit:
             if ans != chr(96 + edit["key"]) or not edit["explanation"].strip():
                 raise ValueError(f"Unverified editorial patch: {selector}")
             q["explanation"] = edit["explanation"].strip()
-            if edit.get("sourceIssue"):
-                self.issue("VERIFY_SOURCE_TEXT", f"{self.source} {selector} · {edit['sourceIssue']}", uid, "error")
             self.annotations["fields"].append(dict(targetId=uid, fieldPointer="/explanation",
                 origin="ai", sourceId=f"editorial-{self.source}", runId=f"{self.level}-{self.period}-{self.source}",
                 model="Codex", skillVersion="jlpt-exam-ingest-1.3", inputSha256=self.capture_hash,
                 reviewStatus="pending", note=f"{selector}; source bytes {self.capture_hash}; patch SHA-256 {self.editorial_hash}."))
-        elif explanation:
-            self.annotations["fields"].append(dict(targetId=uid, fieldPointer="/explanation",
-                origin="source", sourceId=self.source, runId=None, model=None, skillVersion=None,
-                inputSha256=None, reviewStatus="pending", note=selector + " .complete-answer"))
         else:
             self.issue("EXPLANATION_TO_AUTHOR", f"{self.source} {selector} · AI cần soạn lời giải khi đủ căn cứ.", uid)
         images = [img for n in original.find("vnjp-q-image") for img in n.walk() if img.tag == "img"]
@@ -711,6 +710,7 @@ class Package:
         parser = SingleFileDocument()
         parser.feed(raw.decode("utf-8-sig"))
         parser.close()
+        self.appendix_answers = appendix_answers(parser.root)
         self.translations = translation_index(parser.root)
         self.shared = {q:g["scriptOwner"] for g in page.get("sharedScripts",[]) for q in g["questions"]}
         if self.source == "listening":

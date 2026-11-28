@@ -1,26 +1,24 @@
-# Lời giải người học đọc sau khi làm bài
+# Lời giải sau khi nộp bài
 
-Viết bằng tiếng Việt. Cho người học thấy lựa chọn nào đúng, dấu hiệu nào trong tiếng Nhật quyết định đáp án và họ có thể tự nhận ra dấu hiệu ấy ở đâu. Giữ nguyên thứ tự đáp án và câu hỏi. Chép văn bản Nhật từ đề hoặc script; tách phần dịch khỏi phần giải thích. Lời giải VNJPClub được giữ trong bằng chứng, tác nhân kiểm và viết lại sau khi tự giải câu. Nếu có căn cứ cho thấy khóa nguồn sai, ghi khóa nguồn, đáp án đề nghị, vị trí bằng chứng rồi chuyển QA; không tự sửa khóa.
+## Khi HTML đã có lời giải
 
-## Format biên tập
+Đọc `.complete-answer` trong đúng `.q-item` của cùng kỳ và phần thi. Nếu ô trống, tra `#jlpt-singlefile-notes [data-key="answer-<id câu>"]` trong cùng file. Số câu có thể lặp ở phần viết và phần nghe. Chép nguyên lời giải vào `question.explanation`, giữ chữ Nhật, chữ Việt, số, dấu câu, thứ tự và ngắt đoạn có nghĩa. Bỏ nhãn giao diện của phụ lục. Giữ cả lời giải ngắn hoặc có cách trình bày khác các câu bên cạnh. Đánh dấu `origin=source`, ghi sourceId và locator. Nếu lời giải mâu thuẫn với đề hoặc khóa, giữ nguyên cả hai và mở issue có UUID để đối chiếu.
 
-- **Đáp án.** Ghi số theo đề và nội dung chọn. Với các đáp án chỉ có số, thêm lời đáp khi có nguồn xác định chính xác lời tương ứng.
-- **Vì sao chọn.** Trích vừa đủ một từ, vế câu, ô bảng hoặc lượt thoại có giá trị phân biệt. Giải nghĩa tiếng Việt rồi nối dữ kiện với đúng yêu cầu đề. Với câu đọc thái độ tác giả, phân biệt lời người được trích và kết luận của tác giả. Với câu nghe hỏi việc làm *đầu tiên*, nêu ai làm, trình tự và điều kiện thay đổi quyết định.
-- **Vì sao loại.** Nêu điểm sai của từng phương án khi có sự khác biệt đáng học. Có thể gộp phương án trùng, chỉ rõ các số đã gộp. Với câu sắp xếp, cho chuỗi hoàn chỉnh và vị trí ★. Với câu từ vựng, chỉ rõ âm, chữ, kết hợp từ hoặc sắc thái gây nhầm. Với đề nghe chỉ hiện số, thiếu lời các phương án thì chỉ loại với bằng chứng thực sự có.
-- **Ngữ pháp liên quan** là phần tùy câu. Chọn mẫu có vai trò trong cách hiểu hoặc cách loại phương án, dẫn đúng cụm trong đề và giải nghĩa ở chính ngữ cảnh đó. Lưu ghi chú ngữ pháp riêng theo mapping hợp đồng; UI có thể hiển thị ngay sau phần giải. Không nhồi danh mục cùng cấp vào mọi câu.
+**Mốc đối chiếu khi kiểm preview.** N3 tháng 12/2025, phần viết, `#q-1` (西洋). Toàn bộ nội dung bên trong «Giải thích đáp án» của câu này là một đoạn:
+
+> Từ đúng là 西洋 (せいよう) nghĩa là “phương Tây”. Các lựa chọn khác là đọc sai hoặc từ khác (vd. せいゆう = 声優).
+
+So từng chữ với HTML. Nếu preview có thêm nhãn “Đáp án”, “Vì sao chọn”, “Vì sao loại” hoặc thêm diễn giải âm của từng kanji, kiểm revision/hash đang nhập và dữ liệu câu trong Harumi. Lời giải ngắn như nguồn đã là bản hoàn chỉnh.
+
+## Khi HTML thiếu lời giải
+
+Một dòng chỉ báo đáp án, trạng thái đang tải hoặc yêu cầu đăng nhập chưa đủ làm lời giải. Mở một lời giải **gốc** cùng dạng câu để tham khảo cách lập luận. Có thể dùng hai HTML của N3 tháng 12/2025 trong `N3/2512/`. Soạn bằng tiếng Việt với dữ kiện riêng của câu, dùng số đáp án theo thứ tự nguồn. Các ví dụ tra cứu:
+
+- Phần viết `#q-1` (cách đọc) nêu từ, cách đọc và nghĩa trong câu. Chỉ đối chiếu một âm dễ nhầm nếu hữu ích.
+- Phần viết `#q-37` (ngữ pháp) đặt mẫu trong cụm tiếng Nhật và giải nghĩa theo tình huống.
+- Phần viết `#q-59` (đọc thông báo) chỉ ra điều kiện trong bài quyết định đáp án. Với bảng, dùng đúng dòng và cột liên quan.
+- Phần nghe `#q-2` (việc cần làm trước) phân biệt việc được nhờ ngay với việc để sau bằng chi tiết trong hội thoại. Với câu dùng sơ đồ hoặc ảnh, kiểm cả nhãn trên ảnh và lời thoại.
+
+Viết thành đoạn tự nhiên, thường có thể mở đầu bằng câu trả lời rồi nêu chi tiết quyết định. Chỉ phân tích lựa chọn gây nhầm khi việc đó giúp hiểu bài. Độ dài tùy câu. Ghi `origin=ai` và bằng chứng của đúng target. Nếu thiếu script, ảnh hoặc dữ kiện quyết định, giữ lời giải trống và báo đúng kỳ, phần, mondai, câu, UUID và hiện vật cần bổ sung. Ghi chú ngữ pháp có ích để riêng ở `grammarNotes`.
 
 Phạm vi ngữ pháp tính từ thư mục cha của `JLPT/`. Với N3–N1, tra `bunpou_skill/source/<cấp>/_quan_ly.json` theo trường `mau` hoặc `ma`, mở đúng file ở trường `file`, đối chiếu cách dùng, ghi mã và đường dẫn thật. Với N5–N4, tra `kaiwa_skill/minna-n5-n4/catalog/grammar-points.json`, lưu cả số bài và `points[].id` vì ID một mình có thể lặp giữa các bài. Tra bài tương ứng nếu tiêu đề chưa đủ để phân biệt cách dùng. Ghi catalog theo phiên bản đang đọc. Nếu nguồn có mẫu nhưng tra chưa khớp, có thể giải thích ngay trong câu mà để trống liên kết. Một ghi chú biên tập không cấp ID bản ghi ngữ pháp ở DB Harumi.
-
-## Ví dụ đã đối chiếu với bản N3 tháng 12/2018
-
-Nguồn phần viết `8ee1351a9921d5c15d29aff63562ec3ff31f3491e11c03eaaef7e628468b5ffc`, vị trí `#q-1`. Câu hỏi kiểm tra cách đọc phần gạch chân trong 息子は来年【卒業】します。 Bản lưu có furigana và có hai lựa chọn trùng nhau. Nội dung người học có thể đọc sau khi trả lời:
-
-> **Đáp án 2 · そつぎょう.** 「卒業します」 nghĩa là “tốt nghiệp”. Trong từ này, 卒 đọc là そつ và 業 đọc là ぎょう. Cả câu nghĩa là “Con trai tôi sẽ tốt nghiệp vào năm sau”.
->
-> **Vì sao loại.** Phương án 1 và 4 đều ghi さつぎょう, sai âm đầu của 卒. Phương án 3 ghi そつきょう, đọc 業 thành きょう thay vì ぎょう.
-
-Không cần gắn mẫu ngữ pháp cho ví dụ này. Giữ nguyên hai lựa chọn trùng như nguồn và ghi vào ghi chú biên tập. Bản dịch trong lời giải không được hiện bên cạnh câu hỏi trước khi chấm nếu nó tiết lộ đáp án.
-
-## Khi thiếu
-
-Thiếu lời giải nguồn nhưng đủ đề, lựa chọn, đáp án và căn cứ → AI tự soạn, ghi provenance là phần AI biên tập. Thiếu script làm thay đổi khả năng chứng minh câu nghe → giữ đề, khóa và lời giải nguồn nếu có; ghi chính xác kỳ, mondai, câu (cả số hiển thị và ID trong HTML), file, đoạn nếu biết, và yêu cầu “cần nguyên văn Nhật của đoạn này”. Script do người dùng bổ sung vẫn cần đối chiếu người nói và câu hỏi. Khi một đoạn phục vụ nhiều câu, gửi một yêu cầu cho cả nhóm. Thiếu bản dịch Việt nhưng có đủ nguyên văn Nhật → AI có thể dịch, đánh dấu nguồn bản dịch. Không dùng khóa trắc nghiệm để suy ngược lời thoại.
