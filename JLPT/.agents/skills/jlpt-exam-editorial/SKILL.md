@@ -10,6 +10,7 @@ Nhận cấp/kỳ, revision, SHA của nguồn, UUID/locator và tệp được 
 ## Các trường cần dịch
 
 - Dùng N2 2018/12 hoặc N3 2025/12 làm mẫu cho cùng loại câu. Dịch câu dẫn có nội dung học, câu hỏi đọc hiểu, phương án là câu trả lời mang nghĩa và các câu ví dụ kiểm tra cách dùng từ. Giữ bản dịch đã có của nguồn nếu đúng. Với bài chọn cách đọc/chữ, phần Nhật trước đáp án vẫn phải giữ chính xác mục tiêu cần kiểm tra. Các số lựa chọn, vị trí lỗ trống như `[48]`, câu hỏi nghe chỉ có ảnh, dòng trống và ký hiệu thuần túy không cần tạo bản dịch giả.
+- Bản Việt dùng sau khi nộp bài. Với câu điền khuyết, xếp từ hoặc đoạn có nhiều ô trống, điền đáp án đúng của từng câu trước khi dịch để câu Việt trọn nghĩa. Giữ bản Việt nguồn đã dịch đúng theo cách này. Giữ nguyên ký hiệu và thứ tự mảnh trong đề Nhật để làm bài và để neo bản dịch JAVI vào đúng câu.
 - Với prompt có cả bảng và câu hỏi, giữ từng ô, tiêu đề, đơn vị, hướng đọc, dòng chú thích và dấu gạch chân. Lấy số câu hiển thị từ node annotation. Các số trùng ở phần khác là hợp lệ.
 - Lưu dịch câu hỏi vào `prompt.textVi` và đồng bộ `translationVi` theo gói hiện tại. Lưu dịch lựa chọn vào `choices[].textVi`. Lời giải ghi riêng trong `explanation`. Bản Việt chưa đủ căn cứ để trống và ghi issue.
 
