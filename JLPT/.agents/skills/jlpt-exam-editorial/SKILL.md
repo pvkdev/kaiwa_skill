@@ -22,6 +22,10 @@ Nhận cấp/kỳ, revision, SHA của nguồn, UUID/locator và tệp được 
 
 ## Lời giải và bàn giao
 
+Trước khi bàn giao, dựng thử JA, VI và JAVI theo [quy ước bố cục và nhãn nhân vật](../../../contracts/v1/CONTRACT.md#bố-cục-song-ngữ-và-nhãn-nhân-vật-quy-ước-biên-tập-13). Đọc hai bản theo từng đoạn, lượt thoại, tiêu đề, hàng bảng và chú thích. Ví dụ một lượt hai câu có hai hàng: `{"ja":"田中：はい。","vi":"**Tanaka**: Vâng."}` rồi `{"ja":"明日行きます。","vi":"Ngày mai tôi sẽ đi."}`. Đặt nhãn đúng ở câu mở đầu lượt; giữ nguyên chính tả tên trong bản Nhật và chỉ đậm tên trước dấu hai chấm. Dùng quy ước này cho cả script riêng, script chung và hội thoại trong bài đọc. Phân biệt nhãn nhân vật với giờ hẹn, URL, nhãn trường thông tin. Bản nháp thiếu dịch dùng `vi:null` và ghi đúng UUID, số hàng.
+
+Chuyển bản đã ghép sang [jlpt-exam-review](../jlpt-exam-review/SKILL.md) để rà theo nguồn trước khi chốt trạng thái.
+
 Viết **Đáp án**, **Vì sao chọn**, **Vì sao loại** theo bằng chứng thực, thêm ngữ pháp khi mẫu đó giúp giải câu. Ghi nhãn và chính tả theo nguồn. Với đáp án nghe chỉ có số, câu trả lời cần dẫn đúng tín hiệu nghe được. Với bảng chỉ rõ hàng, cột, điều kiện và phép tính nếu có. Dùng khóa nguồn để đối chiếu sau khi tự giải. Khi câu hỏi và khóa mâu thuẫn, bảo toàn hai bằng chứng, yêu cầu rà lại.
 
 Ghi trường đã thay đổi, pointer, hash đầu vào, nguồn/tên model và người rà theo [hợp đồng](../../../contracts/v1/CONTRACT.md). Giữ lời giải nguồn đọc lại được từ HTML. Nộp patch với base revision, target UUID và locator. Mở lại JA, VI và JAVI ở summary để kiểm câu/dòng, lời dịch thiếu, dấu ngoặc và bố cục bảng. Chốt đúng câu còn cần admin cung cấp nguồn.

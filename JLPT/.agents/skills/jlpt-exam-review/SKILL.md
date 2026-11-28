@@ -1,0 +1,23 @@
+---
+name: jlpt-exam-review
+description: Rà độc lập toàn bộ gói đề JLPT theo UUID sau khi chuyển nguồn, biên tập hoặc ghép script/audio; đối chiếu nguồn và quyết định bản nháp dev hay bản đủ điều kiện release.
+---
+
+# Rà gói đề JLPT
+
+Chạy tại gốc `JLPT/` sau **mỗi lượt** tạo, sửa hoặc ghép một gói. Nhận đường dẫn package, cấp/kỳ, base revision, phạm vi thay đổi, hash các nguồn và master audio. Đọc [hợp đồng 1.3](../../../contracts/v1/CONTRACT.md) và [migration](../../../MIGRATION.md). Rà trên **bytes gói cuối cùng**; patch đến muộn hoặc hash đầu vào đổi phải đối chiếu lại trước khi nhận. Người rà không tự điền thiếu bằng suy đoán.
+
+## Kiểm kê và đối chiếu từng ID
+
+1. Lập kiểm kê độc lập từ từng HTML/MP3/supplement đúng kỳ, gồm phần, mondai, block, câu, media, ảnh, bảng, script, số và thứ tự lựa chọn. Dùng `audit_sources.py` và `extract_evidence.py` theo skill [ingest](../jlpt-exam-ingest/SKILL.md), rồi mở lại locator trong nguồn. So kiểm kê với `content`, `structure`, `sources`, `assets` và `annotations.nodes`. Rà **mọi UUID** mondai, block, question và media; không lấy mẫu. Ghi rõ ID/locator nào đã rà và ID/locator nào chưa rà.
+2. Với từng câu, xem nguyên văn Nhật, gạch chân, ★, lỗ trống, hình/bảng, lựa chọn đúng thứ tự, nhãn số, đáp án nguồn, `correctChoiceId`, `annotations.answers`, lời giải và bản dịch áp dụng. Tự giải theo bằng chứng rồi đối chiếu khóa; nguồn mâu thuẫn thì giữ cả hai bằng chứng và issue, không tự chọn đáp án. Kiểm nhóm câu dùng chung và ranh giới block bằng nguồn, không để passage/script/hình bị gán nhầm câu.
+3. Với từng media và câu nghe, mở ảnh thật; kiểm script Nhật với HTML hoặc nghe master đúng SHA, người nói, từ đồng âm, phủ định, số liệu, lời hỏi lặp. Nghe đầu/cuối **từng cue** mondai, question và shared trên master; kiểm đơn vị mili giây, timebase toàn file, thứ tự, khoảng chồng và `questionIds`. Cue suy ra hoặc STT chỉ được chấp nhận khi có locator/biên và đã nghe xác nhận. Kiểm RSS/enclosure với đúng bản thu nếu dùng để phát.
+4. Rà `annotations.sentencePairs` theo đúng UUID chủ sở hữu. Từng câu hoặc lượt lời có cặp JA/VI đúng thứ tự và nghĩa; JA đầy đủ, VI đầy đủ và JAVI phải giữ cấu trúc đoạn, lượt nói, hàng/cột bảng, tiêu đề và đơn vị tương đương. Không gộp nhiều câu vào một hàng khi cần chạm riêng. Markdown chỉ **prefix người nói** được in đậm, không in đậm cả lời thoại. Mở preview JA/VI/JAVI để kiểm xuống dòng, bảng, dấu ngoặc, câu chạm và bản Việt hiện đúng hàng. `vi:null` là thiếu của draft, không phải bản hoàn thành.
+5. Với mọi trường biên tập hoặc STT, kiểm `annotations.fields`/nguồn liên quan: target UUID, JSON Pointer, origin, sourceId, locator, hash bytes đầu vào, model/skill nếu có, reviewStatus; đối chiếu nội dung gốc và revision trước để giữ UUID. Lời giải phải có căn cứ cụ thể cho đáp án chọn và loại. Kiểm hash nguồn, asset và master thực tế; không dựa vào tên file.
+
+## Kết luận và checkpoint
+
+- Chạy các lệnh đã có: `py -3 contracts/v1/validate_package.py <package.json> --root .` và `py -3 tools/corpus_checklist.py`; đọc `reports/EXAM_CHECKLIST.md` và `reports/exam-checklist.json`. Các lệnh kiểm cấu trúc/độ phủ, **không thay** bước đọc hiểu và nghe ở trên. Với bản 1.3 sửa nội dung, tính lại issue `COVERAGE_*` bằng `jlpt_coverage.checklist_issues(package)` như workflow ingest, giữ mọi issue biên tập khác.
+- Ghi `checkpoint.md` cạnh gói với **packageId, đường dẫn, revision chính xác, SHA-256 bytes package cuối**, hash từng HTML/asset/master liên quan, danh sách UUID đã rà và chưa rà, lệnh/kết quả kiểm, người/ngày rà, cùng **mọi issue đã phát hiện** (đã sửa hoặc còn mở) theo UUID, sourceId/locator, severity, bằng chứng, việc sửa hoặc hiện vật admin cần cung cấp. Chuyển các issue còn mở vào `review.issues[]` và checklist admin đúng chủ sở hữu; không ẩn issue chỉ vì validator PASS. Nếu sửa package sau checkpoint, tính hash lại và rà phần bị tác động cùng quan hệ phụ thuộc trước khi kết luận.
+- **Dev preview:** gói `draft`/`needs_review` có khóa chấm có thể nhập dev để xem và thử. Ghi rõ phạm vi chưa rà, thiếu dịch/script/cue và vấn đề còn lại. Không ghi `review.status=approved` cho phần chưa kiểm.
+- **Release:** chỉ duyệt khi mọi UUID và nguồn liên quan đã rà, mọi lỗi đã xử lý, từng cặp/preview đúng, provenance đầy đủ, checklist khớp và validator `py -3 contracts/v1/validate_package.py <package.json> --root . --release` PASS trên cùng revision/hash. Ghi `reviewedBy`/`reviewedAt` và trạng thái từng trường. **Chưa kiểm một mục nào thì không PASS**, kể cả khi lệnh tự động xanh.

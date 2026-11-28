@@ -33,12 +33,19 @@ Trang nhập đề trong Harumi Development ở `/admin/jlpt-exams/import`. Xem 
 {
   "sentencePairs": {
     "87eabb7a-4413-4cd2-bbb8-c6989d049961": [
-      { "ja": "女：受付は二階です。", "vi": "Nữ: Quầy tiếp tân ở tầng hai." },
-      { "ja": "男：ありがとうございます。", "vi": "Nam: Cảm ơn chị." }
+      { "ja": "女：受付は二階です。", "vi": "**Nữ**: Quầy tiếp tân ở tầng hai." },
+      { "ja": "階段を使ってください。", "vi": "Xin hãy đi cầu thang bộ." },
+      { "ja": "男：ありがとうございます。", "vi": "**Nam**: Cảm ơn chị." }
     ]
   }
 }
 ```
+
+### Bố cục song ngữ và nhãn nhân vật (quy ước biên tập 1.3)
+
+Ví dụ trên tương ứng hai dòng nguồn: `女：受付は二階です。階段を使ってください。` rồi `男：ありがとうございます。`. Ba hàng dữ liệu tạo hai lượt lời ở cả JA và VI. Giữ nguyên dấu, nội dung và xuống dòng trong `jaMd`/`scriptJaMd`. Mỗi `ja` là câu trích từ đó, bao gồm nhãn người nói nếu có. Ở đầu lượt thoại, đặt **chỉ tên hoặc vai** của nhân vật trong cặp dấu `**` ở đầu `vi`, theo mẫu `**Nhân viên**: Xin mời.`. Dấu hai chấm nằm ngoài phần đậm. Đó là tín hiệu để Harumi cũng in đậm nhãn tương ứng trước `:` hoặc `：` ở bản Nhật. Chỉ dùng khi xác định được người nói từ nguồn. Giờ, URL, nhãn bảng và lời dẫn giữ định dạng riêng.
+
+Một hàng phục vụ một câu tra dịch. Mỗi ngôn ngữ giữ bố cục theo đoạn nguồn, gồm tiêu đề, dòng trống, lượt nói, danh sách, bảng và chú thích. Câu tiếp theo của cùng lượt không lặp lại tên. Ở bảng, giữ hàng phân cách, số cột, ô trống và thứ tự ô trong bản Việt. `viMd`/`scriptViMd` lưu đúng phép nối các `vi` khác null bằng `\n` theo hợp đồng nhập. Khi hiển thị, Harumi lấy ranh giới đoạn và lượt lời từ vị trí các hàng trong JA. Bằng chứng HTML và UUID được giữ nguyên; chỉnh cặp câu trong gói đã nhập cần tăng revision.
 
 Giữ nguyên `passage.jaMd` hoặc `scriptJaMd` cho chế độ đọc nguyên bản, kể cả ký hiệu trống, bảng, nhãn người nói. Giao diện lấy bản Việt đầy đủ từ `passage.viMd`, `audio.scriptViMd` hoặc `jlptListenScript.scriptViMd`. Với node có hàng, trường này phải bằng chính xác `rows.filter(r => r.vi !== null).map(r => r.vi).join("\n")`. Trong JAVI, ánh xạ từng hàng vào đúng vị trí trong bài Nhật để người học chạm xem bản dịch.
 

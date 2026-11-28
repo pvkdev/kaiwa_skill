@@ -11,12 +11,13 @@ py -3 -X utf8 tools/convert_singlefile.py --level N3 --period 2025-12 --revision
 py -3 -X utf8 tools/verify_capture.py packages/N3/2025-12/package.json
 py -3 -X utf8 contracts/v1/validate_package.py packages/N3/2025-12/package.json --root .
 py -3 -X utf8 tools/corpus_checklist.py
+# Chạy skill jlpt-exam-review trên package cuối, ghi checkpoint rồi mới build.
 py -3 -X utf8 tools/build_pilot_bundle.py --package packages/N3/2025-12/package.json
 ```
 
 1. Với layout mới, đối chiếu số, lời dẫn, block đầu tiên của từng phần rồi lưu mapping của đúng SHA nguồn vào `written-layout.json` cạnh HTML hoặc truyền `--layout`. Với gói đã biên tập, dùng `--output-root` trỏ sang staging, so thay đổi và tăng revision đã nhập trước khi thay gói canonical.
-2. Dán RSS ở ô **B4** của [sổ audio](JLPT_AUDIO.xlsx), lưu, đóng Excel rồi chạy `.\tools\sync_exam_audio.ps1`. Kiểm tra kết quả từng dòng. Công cụ đặt enclosure vào gói; sau đó chạy lại checklist, validate và build để có thư mục upload theo hash mới. Nếu đang chờ feed, có thể dùng MP3 local để preview. Khi nhận nguồn bổ sung cho nghe, dùng [skill nghe](.agents/skills/jlpt-listening/SKILL.md).
-3. Chọn **thư mục mới mà lệnh build in ra** ở [trang import](http://localhost:3000/admin/jlpt-exams/import). Bỏ `--package` để đóng cả kho. Đăng nhập admin, xem preview, chọn các đề, nhập rồi mở trang xem. Phần biên tập còn thiếu hiện trong checklist trang sửa. Khi duyệt phát hành dùng validator với `--release` và `tools/build_catalog.py`.
+2. Dán RSS ở ô **B4** của [sổ audio](JLPT_AUDIO.xlsx), lưu, đóng Excel rồi chạy `.\tools\sync_exam_audio.ps1`. Kiểm tra kết quả từng dòng. Công cụ đặt enclosure vào gói; sau đó chạy lại checklist, validate, review và build để có thư mục upload theo hash mới. Nếu đang chờ feed, có thể dùng MP3 local để preview. Khi nhận nguồn bổ sung cho nghe, dùng [skill nghe](.agents/skills/jlpt-listening/SKILL.md).
+3. Sau mỗi lần tạo/sửa gói, chạy [skill rà gói](.agents/skills/jlpt-exam-review/SKILL.md) trước khi build: đối chiếu từng UUID với nguồn, ghi checkpoint đúng revision/SHA-256 bytes và mọi vấn đề còn mở. Bản draft có khóa chấm được xem trước trên dev; chưa rà hết thì không duyệt. Chọn **thư mục mới mà lệnh build in ra** ở [trang import](http://localhost:3000/admin/jlpt-exams/import). Bỏ `--package` để đóng cả kho. Đăng nhập admin, xem preview, chọn các đề, nhập rồi mở trang xem. Phần biên tập còn thiếu hiện trong checklist trang sửa. Khi duyệt phát hành dùng validator với `--release` trên cùng revision/hash và `tools/build_catalog.py`.
 4. Để kiểm sau migration, đối chiếu số câu, ảnh, khóa và nhóm dùng chung với nguồn. Mở phần nghe, thử mốc đầu/giữa/cuối trên cùng file, kiểm một câu có cue riêng và một nhóm dùng chung nếu kỳ có. Nộp bài, thử JA để tra từ, VI cho bản dịch đầy đủ và chạm câu trong JAVI. Với mobile, thử nút tiến/lùi bên phải footer, nút nộp ở header, quay lại sau reload ở chế độ bấm giờ.
 
 Các bước còn lại bên dưới mô tả API và năm gói 1.1/1.2 đã dùng trong pilot năm 2018.
@@ -42,7 +43,7 @@ py -3 tools/build_pilot_bundle.py
 py -3 tools/build_pilot_bundle.py --package packages/N2/2018-12/package.json
 ```
 
-Dùng `--output-root <thư-mục-staging>` cho converter khi đối chiếu thay đổi trên gói đã biên tập. Giữ UUID cũ khi có thay đổi số thứ tự. Bổ sung nguồn, lời giải, bản dịch trong kho này, chứng minh nội dung thay đổi và tăng revision trước khi đóng gói. Bản sửa trực tiếp trên app chỉ ở DB dev. Đồng bộ chỉnh sửa có giá trị về kho trước lần nhập sau. Gói phát hành đã duyệt dùng `tools/build_catalog.py`. Pilot chấp nhận bản nháp có đáp án đã xác minh.
+Dùng `--output-root <thư-mục-staging>` cho converter khi đối chiếu thay đổi trên gói đã biên tập. Giữ UUID cũ khi có thay đổi số thứ tự. Bổ sung nguồn, lời giải, bản dịch trong kho này, chứng minh nội dung thay đổi và tăng revision trước khi đóng gói. Chạy [review](.agents/skills/jlpt-exam-review/SKILL.md) trên bản cuối sau mỗi lần chỉnh/gộp. Bản sửa trực tiếp trên app chỉ ở DB dev. Đồng bộ chỉnh sửa có giá trị về kho trước lần nhập sau. Gói phát hành đã duyệt dùng `tools/build_catalog.py`. Pilot chấp nhận bản nháp có đáp án đã xác minh.
 
 ## Hợp đồng trao đổi và lưu trữ
 
