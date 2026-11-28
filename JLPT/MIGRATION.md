@@ -2,6 +2,8 @@
 
 ## Biên soạn và thử một kỳ với hợp đồng 1.3
 
+Gói N3 tháng 12/2025 revision 3 đã kiểm 101 lời giải với HTML gốc. Chọn `pilot-upload/22d5ee6b4eb971a7` để nhập riêng revision này. Sau khi nộp bài, mở **Giải thích đáp án** ở câu nghe có sơ đồ hiệu sách để đối chiếu với VNJPClub.
+
 Tại gốc kho `JLPT`, quy trình cho N3 tháng 12/2025 như sau. Bộ nguồn hiện hành gồm các thư mục cấp/kỳ, còn thư mục `packages` chỉ chứa những kỳ đã biên soạn. [Skill điều phối](.agents/skills/jlpt-exam-ingest/SKILL.md) và [checklist từng kỳ](reports/EXAM_CHECKLIST.md).
 
 ```powershell

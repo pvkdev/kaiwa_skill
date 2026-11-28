@@ -1,6 +1,10 @@
 # Pilot N3 2025-12
 
-Đã chuyển nguyên dữ liệu có trong nguồn. Trạng thái draft.
+Revision 3 · draft · SHA-256 `22a4a8cff8a9d37c55c79337058b63edebbd6f5abd5b975a5afdb4076858021c`.
+
+Đã đối chiếu lời giải của toàn bộ 73 câu viết và 28 câu nghe với HTML và phụ lục đúng phần, đúng UUID. Cả 101 trường `/explanation` có nguồn trực tiếp, locator nằm trong `annotations.fields`. Hai overlay editorial cũ là hiện vật của revision trước và giữ thông tin đối chứng cho câu viết 28.
+
+`verify_capture.py` xác nhận 101 lời giải, 391 lựa chọn, 5 ảnh và 28 script. Validator gói draft PASS. Chưa duyệt release hoặc nghe lại toàn bộ cue trong lượt sửa lời giải.
 
 - written · `N3/2512/Thi thử JLPT N3 online, chọn kỳ thi và phần thi ｜ VNJPCLUB (27_11_2026 23：25：36).html` · SHA-256 `8173f965d67f459ef639bd5ad38d2061abcbd8eec8981c380455ad2bd32353d1`
 - sentence-edits-written · `N3/2512/editorial-sentence-rows-written.vi.json` · SHA-256 `22f5342aaa881aad95591b8e93ea307f5847c741346c87e723b00021acf56b0f`
@@ -26,6 +30,6 @@ Mốc audio có bằng chứng: 33.
 - VERIFY_SOURCE_TEXT · 1
 - CHECK_MASTER_ALIGNMENT · 1
 - EDITORIAL_REVIEW · 1
-- COVERAGE_rssUrl · 1
+- RSS đã gắn vào master audio từ revision 2.
 
-Xem `review.issues` trong gói để tìm UUID và locator từng câu. Bước tiếp là rà bài giải, bổ sung script/audio rồi tăng revision; giữ lại ID hiện tại.
+Xem `review.issues` trong gói để tìm UUID và locator từng câu. Cần bản đề đối chứng cho câu viết 28, rà nội dung trước phát hành và nghe kiểm các mốc trên bản thu cuối.

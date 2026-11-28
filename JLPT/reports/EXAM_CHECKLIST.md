@@ -41,7 +41,7 @@ Mỗi thiếu sót theo file, mondai, câu hoặc dòng nằm trong [checklist J
 | N3 | 2024/07 | 73 | 28 | Chờ biên soạn | Còn thiếu |
 | N3 | 2024/12 | 73 | 28 | Chờ biên soạn | Còn thiếu |
 | N3 | 2025/07 | 73 | 28 | Chờ biên soạn | Còn thiếu |
-| N3 | 2025/12 | 73 | 28 | [r2](../packages/N3/2025-12/package.json) | Còn thiếu |
+| N3 | 2025/12 | 73 | 28 | [r3](../packages/N3/2025-12/package.json) | Còn thiếu |
 
 ## Admin chuẩn bị
 
