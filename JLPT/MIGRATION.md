@@ -1,5 +1,11 @@
 # Nhập kho đề JLPT vào Harumii dev
 
+## Xuất thư mục cho admin
+
+Từ gốc JLPT, chạy `py -3 -X utf8 tools/build_publish_ready.py`. Chỉ gói 1.3 đã duyệt trong `packages/<level>/<period>/package.json` có biên nhận review đúng hash mới được đưa vào. Khi một gói approved hỏng, lần build dừng và bộ bàn giao trước đó được giữ. Khi rút duyệt một kỳ, đổi trạng thái trong kho tác giả rồi build lại. Nếu hết đề đã duyệt, `publish-ready/` rỗng và không có catalog để nhập. Bản xuất trước khi thay nằm trong `work/evidence/publish/` để tra cứu. Việc build lại thư mục local và thao tác thu hồi trong DB Harumi là hai hành động độc lập.
+
+Admin chọn **cả thư mục publish-ready**. Catalog trỏ tới dạng `N3/JLPT-N3-2024-12-r02/package.json`, cùng `assets/sha256/` ở gốc. Các SHA, URL RSS, UUID và revision giữ nguyên như khi review. [Hợp đồng triển khai admin cho Claude Opus](../../harumi/design/jlpt/ADMIN_IMPLEMENTATION_CONTRACT.md)
+
 ## Biên soạn và thử một kỳ với hợp đồng 1.3
 
 Gói N3 tháng 12/2025 revision 3 đã kiểm 101 lời giải với HTML gốc. Chọn `pilot-upload/22d5ee6b4eb971a7` để nhập riêng revision này. Sau khi nộp bài, mở **Giải thích đáp án** ở câu nghe có sơ đồ hiệu sách để đối chiếu với VNJPClub.

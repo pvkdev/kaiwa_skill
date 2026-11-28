@@ -122,7 +122,7 @@ def absolute_rows(raw, field, start, end):
 
 
 @contextmanager
-def master_lock(folder):
+def master_lock(folder, busy_message="Another STT process is already processing this audio."):
     # OS locks release on process exit, including an interrupted transcription.
     with (folder / ".running").open("a+b") as handle:
         if handle.tell() == 0:
@@ -137,7 +137,7 @@ def master_lock(folder):
                 import fcntl
                 fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except OSError as error:
-            raise ValueError("Another STT process is already processing this audio.") from error
+            raise ValueError(busy_message) from error
         yield
 
 

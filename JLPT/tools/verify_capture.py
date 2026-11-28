@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 import sys
 
-from convert_singlefile import ROOT, SingleFileDocument, first, ja, tidy
+from convert_singlefile import ROOT, SingleFileDocument, first, ja, passage_markdown, tidy
 from audit_sources import ANSWER, appendix_answers, source_explanation
 from validate_package import source_snapshot
 
@@ -45,13 +45,13 @@ def verify(package, root):
         for element in document.root.find("mondai-block"):
             group = element.find("q-item")
             if group:
-                texts = [tidy(ja(p)) for p in element.find("passage-content")]
+                texts = [passage_markdown(p) for p in element.find("passage-content")]
                 for q in group:
                     materials[q.attrs["id"]] = [p for p in texts if p]
                 previous = [q.attrs["id"] for q in group]
             elif extra := first(element, "vnjp-dokkai-thongtindich"):
                 for anchor in previous:
-                    materials[anchor].append(tidy(ja(extra)))
+                    materials[anchor].append(passage_markdown(extra))
         for original, (question, block) in zip(originals, compiled, strict=True):
             locator = "#" + original.attrs["id"]
             identity = nodes[question["id"]]

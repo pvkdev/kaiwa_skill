@@ -16,12 +16,18 @@ Chạy tại thư mục JLPT trong repo dữ liệu. Đơn vị bàn giao là m�
 
 ## Phân công và ghép dữ liệu
 
+Khi chủ kho mở lô raw, lấy danh sách kỳ từ audit hiện hành, bỏ thư mục old và các kỳ đã nghiệm thu trên cùng SHA. Coordinator giao một kỳ bằng `py -3 tools/batch_job.py --level N3 --period 2024-12 --owner <worker>`. Lệnh in thư mục job, lưu người sở hữu, SHA file cạnh capture và revision/hash canonical. Với pilot đang ở staging, ghi thêm đường dẫn và SHA pilot được chọn làm base vào checkpoint trước khi sửa. Những nguồn ngoài thư mục capture như transcript hay RSS phải ghi SHA/GUID riêng khi dùng.
+
+Worker ghi tiến độ vào `checkpoint.md` trong job sau từng bước audit, convert, editorial, review và build. Nêu đường dẫn package, revision, SHA, UUID còn mở, bước đã kiểm, bước kế tiếp và ai cần xử lý. Dùng thư mục con của job làm output staging. Trước khi tiếp quản hoặc ghép, chạy lại cùng lệnh với đúng owner, hoặc bỏ `--owner` để kiểm checkpoint. Khi nguồn/base đổi, coordinator lưu job cũ, rà phần bị tác động rồi giao base mới. Dùng revision cao hơn mọi revision đã giao cho cùng packageId. Chỉ coordinator đưa package và asset đã rà sang kho canonical, kiểm hash sau khi chép; ghi lại kết quả vào checkpoint. Một kỳ chờ admin được ghi riêng và các worker khác tiếp tục theo hàng đợi.
+
 - Giao worker biên tập [jlpt-exam-editorial](../jlpt-exam-editorial/SKILL.md) bản Nhật, khóa, ảnh, phụ lục và hash đầu vào. Worker giữ nguyên lời giải HTML và chỉ soạn theo ví dụ VNJPClub cùng dạng khi câu thiếu lời giải. Worker trả lời giải có provenance, dịch câu hỏi/lựa chọn áp dụng và cặp câu Nhật–Việt cho từng đoạn hoặc script. Ví dụ đầy đủ nằm ở N3 2025/12 và N2 2018/12. Ưu tiên bằng chứng của đúng kỳ.
 - Giao worker nghe [jlpt-listening](../jlpt-listening/SKILL.md) audio tổng, danh sách câu và mốc đã có. Trả script, cue câu/nhóm/mondai, hash master và các biên cần nghe đối chiếu. Ghép binding RSS qua [sổ audio](../../../tools/AUDIO_RSS.md).
 - Mỗi worker nhận một kỳ hoặc một phần trong thư mục staging riêng, kèm base revision, hash nguồn và phạm vi được sửa. Chỉ người ghép ghi package cuối, revision và catalog. Khi có một tác nhân, làm tuần tự cùng đầu ra.
 - Sau **mỗi lần** tạo, biên tập hoặc ghép gói, chạy [jlpt-exam-review](../jlpt-exam-review/SKILL.md) trên package cuối trước khi duyệt/build. Người rà đối chiếu toàn bộ UUID câu, nhóm, media, khóa, ảnh/bảng, script, cue, cặp JA/VI và provenance với đúng nguồn; không duyệt nếu còn mục chưa rà. Ghi `checkpoint.md` với revision và SHA-256 bytes package chính xác, phạm vi đã/chưa kiểm và mọi issue theo UUID/locator. Giao cho admin những thứ cần người sưu tầm cung cấp như HTML, MP3, RSS hoặc phần bằng chứng bị mất. Việc dịch, soạn lời giải và tách câu có đủ căn cứ thuộc worker.
 
 ## Nghiệm thu và migration
+
+Sau bước review, gói đủ tiêu chuẩn dùng `py -3 -X utf8 tools/build_publish_ready.py` tại gốc JLPT. Lệnh xuất toàn bộ kỳ 1.3 đã duyệt, kiểm release trên nguồn và kiểm biên nhận `release-review.json` cạnh package. Hướng dẫn giao cho admin và xử lý bản bị rút ở [migration](../../../MIGRATION.md). Bundle pilot dùng riêng cho preview.
 
 1. Chạy `py -3 contracts/v1/validate_package.py <package.json> --root .`. Kiểm lại cả nghĩa và phạm vi câu khi một nguồn chỉ có bản dịch gộp nhiều câu. Thư mục draft có thể được nhập dev để xem trước khi hoàn tất biên tập nếu đã có khóa chấm.
 2. Chạy `py -3 tools/corpus_checklist.py`. Mở [tổng hợp cho admin](../../../reports/EXAM_CHECKLIST.md) và [chi tiết theo vị trí](../../../reports/exam-checklist.json). Với package 1.3 khi sửa nội dung, tính lại các issue `COVERAGE_*` bằng `jlpt_coverage.checklist_issues(package)`, giữ nguyên issue biên tập còn mở.

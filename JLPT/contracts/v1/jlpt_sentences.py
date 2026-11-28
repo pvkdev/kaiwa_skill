@@ -1,11 +1,12 @@
 """Source-preserving sentence boundaries used by JLPT editorial overlays and coverage."""
 
-def sentence_units(text):
+def sentence_units(text, quote_context=None):
     """Return source-preserving study units, keeping table rows and quoted/parenthetic speech together."""
     if "|" in text:
         return [text]
     closing = {"「": "」", "『": "』", "（": "）", "(": ")", "【": "】"}
-    stack, parts = [], []
+    stack = [] if quote_context is None else quote_context
+    parts = []
     start = 0
     for idx, char in enumerate(text):
         if char in closing:

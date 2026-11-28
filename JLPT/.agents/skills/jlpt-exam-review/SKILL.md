@@ -26,6 +26,10 @@ Chạy tại gốc `JLPT/` sau **mỗi lượt** tạo, sửa hoặc ghép một
 
 ## Kết luận và checkpoint
 
+Khi chuẩn bị phát hành, chạy công cụ **từ repo JLPT hiện hành** với `--root` trỏ kho tác giả chứa nguồn của revision đang rà. Đối chiếu poster theo các bảng HTML thật, gồm đoạn chữ trước/sau bảng, từng hàng/ô, đơn vị và chú thích ở JA/VI/JAVI. Với lời trích dẫn qua hai hàng, đọc cùng câu trước. Với lựa chọn chỉ có nhãn ảnh, mở ảnh kiểm từng ký hiệu và thứ tự khớp lựa chọn. Ghi lỗi nội dung sai dù bộ đếm đã đủ.
+
+Chỉ sau khi hoàn tất review toàn bộ và `--release` đạt trên bytes cuối, lưu cạnh package một `release-review.json` chứa `packageId`, `revision` (số nguyên) và `sha256` (64 chữ số hex thường) của chính file đã duyệt. Danh tính người rà và thời điểm nằm trong `package.review`, chi tiết theo UUID ở checkpoint. Reviewer xác nhận biên nhận này; builder chỉ đọc nó. Khi đổi bytes phải rà lại thay đổi, tính SHA mới và cấp lại biên nhận khi đủ điều kiện.
+
 - Kiểm lời giải nguồn bằng `py -3 -X utf8 tools/verify_capture.py <package.json>`. Khi đối chiếu lỗi từ ảnh preview, mở đúng đề, phần và câu trong Harumi sau import. So lời giải nhìn thấy với chính HTML (bỏ qua ruby hiển thị), ghi revision đang chạy. Nếu package đã đúng mà app còn hiển thị bản cũ, báo riêng trạng thái trên app.
 
 - Chạy các lệnh đã có: `py -3 contracts/v1/validate_package.py <package.json> --root .` và `py -3 tools/corpus_checklist.py`; đọc `reports/EXAM_CHECKLIST.md` và `reports/exam-checklist.json`. Các lệnh kiểm cấu trúc/độ phủ, **không thay** bước đọc hiểu và nghe ở trên. Với bản 1.3 sửa nội dung, tính lại issue `COVERAGE_*` bằng `jlpt_coverage.checklist_issues(package)` như workflow ingest, giữ mọi issue biên tập khác.

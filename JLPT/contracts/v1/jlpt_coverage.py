@@ -37,13 +37,17 @@ def coverage(package):
     def sentence_pairs(node, field, japanese):
         rows = ann.get("sentencePairs", {}).get(node, [])
         check(field, rows, node, "mapping")
+        quote_context = []
         for index, row in enumerate(rows, 1):
             check(field, bool((row.get("vi") or "").strip()), node, f"row {index}")
             # Table rows are structural pairs. Quoted dialogue may end inside a sentence.
             if "|" not in row["ja"]:
-                check("sentenceSplit", len(sentence_units(row["ja"])) == 1, node, f"row {index}")
+                check("sentenceSplit", len(sentence_units(row["ja"], quote_context)) == 1, node, f"row {index}")
         # A dropped anchor must not make a partially translated passage appear complete.
-        compact = lambda text: re.sub(r"[\s|]+|(?m:^\|(?:\s*:?-+:?\s*\|)+\s*$)", "", text)
+        def compact(text):
+            # Alignment rows may omit Markdown's delimiter row. Cell boundaries carry meaning.
+            text = re.sub(r"(?m)^\|(?:[ \t]*:?-+:?[ \t]*\|)+[ \t]*$", "", text)
+            return re.sub(r"\s+", "", text)
         if rows:
             check(field, compact(japanese) == compact("\n".join(r["ja"] for r in rows)), node, "JA coverage")
 
@@ -73,7 +77,9 @@ def coverage(package):
                     if meaningful(prompt["text"]) and not usage:
                         check("questionVi", (prompt.get("textVi") or q.get("translationVi") or "").strip(), qid)
                     for c in q["choices"]:
-                        if meaningful(c["text"]) and (usage or section in ("dokkai", "choukai")):
+                        image_label = section == "choukai" and q.get("imageUrl") and re.fullmatch(
+                            r"[アイウエ](?:[\s・→、]+[アイウエ])*", c["text"].strip())
+                        if not image_label and meaningful(c["text"]) and (usage or section in ("dokkai", "choukai")):
                             check("choiceVi", (c.get("textVi") or "").strip(), qid, c["id"])
                     if section == "choukai":
                         script = (q.get("jlptListenScript") or {}).get("scriptJaMd", "").strip()

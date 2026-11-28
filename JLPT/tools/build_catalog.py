@@ -9,7 +9,7 @@ import sys
 import tempfile
 
 
-def build(root):
+def approved_entries(root):
     entries = []
     version = "1.2.0"
     for path in sorted((root / "packages").glob("*/*/package.json")):
@@ -24,6 +24,11 @@ def build(root):
             version = "1.3.0"
         entries.append({"packageId": data["packageId"], "revision": data["revision"],
                         "path": relative, "sha256": hashlib.sha256(raw).hexdigest()})
+    return version, entries
+
+
+def build(root):
+    version, entries = approved_entries(root)
     if not entries:
         raise ValueError("No approved package found. No new catalog was generated.")
     content = json.dumps({"schemaVersion": version, "packages": entries},

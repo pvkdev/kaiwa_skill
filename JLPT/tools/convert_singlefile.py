@@ -113,7 +113,7 @@ def markdown_table(node, renderer):
     return "\n" + (caption + "\n" if caption else "") + "\n".join(rows) + "\n"
 
 
-def ja(node):
+def ja(node, *, separate_tables=False):
     if isinstance(node, str):
         return re.sub(r"[\r\n\t]+", " ", node)
     if node is None or node.tag in {"rt", "rp", "script", "style", "svg", "button"}:
@@ -122,11 +122,12 @@ def ja(node):
         return ""
     if node.tag == "table":
         if cells := layout_cells(node):
-            return "\n" + "\n".join(ja(cell) for cell in cells) + "\n"
-        return markdown_table(node, ja)
+            return "\n" + "\n".join(ja(cell, separate_tables=separate_tables) for cell in cells) + "\n"
+        table = markdown_table(node, ja)
+        return f"\x00{table}\x00" if separate_tables and table else table
     if node.tag == "br":
         return "\n"
-    val = "".join(ja(c) for c in node.children)
+    val = "".join(ja(c, separate_tables=separate_tables) for c in node.children)
     if node.tag == "u" and val.strip():
         return f"【{val.strip()}】"
     if "border-radius:50%" in node.attrs.get("style", "") and val.strip():
@@ -134,6 +135,12 @@ def ja(node):
     if node.tag in {"div", "p", "h3", "h4", "li"}:
         return "\n" + val + "\n"
     return val
+
+
+def passage_markdown(node):
+    # Keep actual DOM tables apart from surrounding Markdown paragraphs.
+    blocks = ja(node, separate_tables=True).split("\x00")
+    return "\n\n".join(text for block in blocks if (text := tidy(block)))
 
 
 def translation_index(doc):
@@ -417,7 +424,7 @@ class Package:
             raise ValueError("Written section anchors are missing, out of order, or inside a question group.")
 
     def passage(self, block, original, locator):
-        jp = tidy(ja(original))
+        jp = passage_markdown(original)
         if not jp:
             return
         media_id = self.node(f"{block['id']}/passage/{len(block['mediaItems'])}", locator)

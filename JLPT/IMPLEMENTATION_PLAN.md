@@ -1,5 +1,7 @@
 # Từ SingleFile đến một kho JLPT nhập được vào Harumi
 
+Kế hoạch đang thực hiện trước khi mở hàng đợi raw là [TODO skill chạy hàng loạt, kho phát hành và Harumi FE/BE/DB](RELEASE_TODO.md). Các bước bên dưới ghi lại lộ trình pilot ban đầu.
+
 Trạng thái sau triển khai pilot ngày 27/11/2026 nằm trong [nhật ký kiểm thử](reports/PILOT_2026-11-27.md). Để nạp dữ liệu ngay, làm theo [hướng dẫn migration](MIGRATION.md).
 
 Thư mục làm việc là `JLPT/` trong repo `kaiwa_skill`. Người sưu tầm lưu một HTML kết quả cho phần viết, một HTML cho phần nghe và một bản audio tổng khi có. AI chịu trách nhiệm từ lúc nhận nguồn đến lúc giao gói dữ liệu đã rà. Mục tiêu ở bản fork là chọn kho một lần, nhập toàn bộ các đề đã sẵn sàng và mở một đề để làm, chấm, nghe lại, xem lời giải. Các kỳ có thể đổi cấu trúc, số phương án, cách đánh số và số câu cho mỗi đoạn.
