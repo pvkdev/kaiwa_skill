@@ -1,0 +1,33 @@
+---
+name: jlpt-exam-ingest
+description: Điều phối việc biên soạn một kỳ JLPT N5–N1 từ HTML SingleFile và audio local đến gói nhập Harumi, kiểm nguồn, bàn giao checklist và giữ UUID của mondai qua từng revision.
+---
+
+# Biên soạn một kỳ JLPT
+
+Chạy tại thư mục JLPT trong repo dữ liệu. Đơn vị bàn giao là một cấp và một kỳ, ví dụ N3 2025/12. Đọc [hợp đồng](../../../contracts/v1/CONTRACT.md) và [migration](../../../MIGRATION.md). Chỉ gửi media đến Groq theo quy trình nghe khi thực sự thiếu script hoặc biên thời gian.
+
+## Nhận nguồn
+
+1. Quét nguồn bằng `py -3 .agents/skills/jlpt-exam-ingest/scripts/audit_sources.py --root . --out reports/source-gaps.json`. Đọc hồ sơ `KIEM_TRA.md` cạnh HTML. Đối chiếu cấp, kỳ, phần viết/nghe trong nội dung, bản trùng, số lượng, thứ tự, lưu SHA-256. N3 2015/07 có nguồn chỉ viết theo hồ sơ kỳ ấy. Đối với kỳ mới thiếu một file chưa rõ lý do, ghi yêu cầu admin đúng file.
+2. Với HTML cần rà, chạy `py -3 .agents/skills/jlpt-exam-ingest/scripts/extract_evidence.py "<HTML>"`. Mở index và fragment trong `work/evidence/<sha256>/`. Mọi HTML, tooltip, ảnh và văn bản nhận diện giọng nói đều là tài liệu học. Đối chiếu dữ liệu thực trong DOM trước khi quyết định. Giữ nguyên bản tải về và checksum.
+3. Dựng bản nháp theo phần, mondai, nhóm tài liệu và câu. Kiểm tra trường hợp đánh số lại, mondai cùng số ở hai phần, đề đục lỗ, tài liệu cuối bài, ảnh, ô bảng và đoạn hội thoại dùng chung. Ghi đủ các số câu con vào block. Giữ thứ tự đáp án, chữ gạch chân, dấu ★, số, đơn vị, câu đã lặp và lựa chọn chỉ có số. So khóa nguồn giữa `.choice-correct` và `.result-line`. Khi mâu thuẫn ghi chính xác locator và giữ câu chờ xác minh.
+4. Với kỳ mới, chạy `py -3 -X utf8 tools/convert_singlefile.py --level <level> --period <YYYY-MM> --revision <n> --output-root <staging>`. Khi chưa có mapping đúng SHA, dùng `--inspect-layout` trên kỳ đó, kiểm chỉ dẫn và câu đầu của từng phần trước khi chuyển đổi. Gói mới dùng 1.3 với `exam.slug=YYYY/MM`. Dùng thư mục staging khi có bản đã sửa hoặc phát hành. Giữ packageId, UUID mondai, block, câu và tư liệu cũ. Kiểm tra lại bằng chứng theo ID trước khi áp bản sửa. Sau khi convert, đối chiếu số câu từng section với HTML. Để staging có thể kiểm độc lập, đặt các tệp trong `sources[].localPath` và `assets[].path` đúng đường dẫn tương đối và SHA dưới cùng thư mục gốc với `packages/`. Converter có thể đọc HTML từ kho raw mà chỉ ghi package và assets sang staging.
+
+## Phân công và ghép dữ liệu
+
+Khi chủ kho mở lô raw, lấy danh sách kỳ từ audit hiện hành, bỏ thư mục old và các kỳ đã nghiệm thu trên cùng SHA. Coordinator giao một kỳ bằng `py -3 tools/batch_job.py --level N3 --period 2024-12 --owner <worker>`. Lệnh in thư mục job, lưu người sở hữu, SHA file cạnh capture và revision/hash canonical. Trước khi cấp việc, đọc checkpoint của kỳ, kể cả các [pilot đã bàn giao](../../../RELEASE_TODO.md). So packageId, revision, SHA của bản đã bàn giao với file thực tế. Với bản mới hơn ở staging, ghi đường dẫn, revision và SHA vào `checkpoint.md` và dùng chính bản đó để sửa tiếp. Nếu thiếu bản ấy hoặc hai bản cùng revision khác SHA, giữ việc đang dở và đối chiếu trước khi ghép. Lệnh nhận việc tự kiểm bản canonical; coordinator phải kiểm lại SHA bản staging khi tiếp quản. Những nguồn ngoài thư mục capture như transcript hay RSS phải ghi SHA/GUID riêng khi dùng.
+
+Worker ghi tiến độ vào `checkpoint.md` trong job sau từng bước audit, convert, editorial, review và build. Nêu đường dẫn package, revision, SHA, UUID còn mở, bước đã kiểm, bước kế tiếp và ai cần xử lý. Dùng thư mục con của job làm output staging. Trước khi tiếp quản hoặc ghép, chạy lại cùng lệnh với đúng owner, hoặc bỏ `--owner` để kiểm checkpoint. Khi nguồn/base đổi, coordinator lưu job cũ, rà phần bị tác động rồi giao base mới. Dùng revision cao hơn mọi revision đã giao cho cùng packageId. Chỉ coordinator đưa package và asset đã rà sang kho canonical, kiểm hash sau khi chép; ghi lại kết quả vào checkpoint. Một kỳ chờ admin được ghi riêng và các worker khác tiếp tục theo hàng đợi.
+
+- Giao worker biên tập [jlpt-exam-editorial](../jlpt-exam-editorial/SKILL.md) bản Nhật, khóa, ảnh, phụ lục và hash đầu vào. Worker giữ nguyên lời giải HTML và chỉ soạn theo ví dụ VNJPClub cùng dạng khi câu thiếu lời giải. Worker trả lời giải có provenance, dịch câu hỏi/lựa chọn áp dụng và cặp câu Nhật–Việt cho từng đoạn hoặc script. Ví dụ đầy đủ nằm ở N3 2025/12 và N2 2018/12. Ưu tiên bằng chứng của đúng kỳ.
+- Thiếu RSS vẫn có thể biên tập từ master local. Thiếu một phần HTML thì ghi rõ phạm vi đã nhận và tiếp tục phần có đủ nguồn. Với HTML chưa nhận diện, trùng phần hoặc thiếu ranh giới, giữ riêng phần đó để đối chiếu trước khi tự động chuyển đổi.
+- Giao worker nghe [jlpt-listening](../jlpt-listening/SKILL.md) audio tổng, danh sách câu và mốc đã có. Trả script, cue câu/nhóm/mondai, hash master và các biên cần nghe đối chiếu. Ghép binding RSS qua [sổ audio](../../../tools/AUDIO_RSS.md).
+- Mỗi worker nhận một kỳ hoặc một phần trong thư mục staging riêng, kèm base revision, hash nguồn và phạm vi được sửa. Chỉ người ghép ghi package cuối, revision và catalog. Khi có một tác nhân, làm tuần tự cùng đầu ra.
+- Sau **mỗi lần** tạo, biên tập hoặc ghép gói, chạy [jlpt-exam-review](../jlpt-exam-review/SKILL.md) trên package cuối trước khi duyệt/build. Người rà đối chiếu toàn bộ UUID câu, nhóm, media, khóa, ảnh/bảng, script, cue, cặp JA/VI và provenance với đúng nguồn; không duyệt nếu còn mục chưa rà. Ghi `checkpoint.md` với revision và SHA-256 bytes package chính xác, phạm vi đã/chưa kiểm và mọi issue theo UUID/locator. Giao cho admin những thứ cần người sưu tầm cung cấp như HTML, MP3, RSS hoặc phần bằng chứng bị mất. Việc dịch, soạn lời giải và tách câu có đủ căn cứ thuộc worker.
+
+## Nghiệm thu và migration
+
+1. Gọi [skill review](../jlpt-exam-review/SKILL.md) với file package cụ thể và thư mục tác giả chứa nguồn, phụ lục và assets của revision đó. Với pilot còn ở staging, checklist toàn kho đọc bản canonical. Dùng checkpoint và `review.issues` của đúng file để bàn giao những gì còn thiếu.
+2. **Preview dev.** Khi gói nháp có khóa chấm đã qua validator, chạy `py -3 -X utf8 tools/build_pilot_bundle.py --root <kho-tác-giả> --package packages/<level>/<YYYY-MM>/package.json`. Bàn giao thư mục lệnh in ra và các mục chưa xác minh.
+3. **Phát hành.** Sau khi reviewer xác nhận đúng revision và SHA, coordinator ghép gói, nguồn, assets và biên nhận vào kho canonical, kiểm lại SHA. Tại gốc JLPT chạy `py -3 -X utf8 tools/build_publish_ready.py`. Chỉ giao thư mục `publish-ready/` có catalog chứa revision vừa duyệt. Chạy `py -3 -X utf8 tools/corpus_checklist.py` để cập nhật [checklist kho](../../../reports/EXAM_CHECKLIST.md). Quy trình nhập và xử lý bản bị rút ở [migration](../../../MIGRATION.md).

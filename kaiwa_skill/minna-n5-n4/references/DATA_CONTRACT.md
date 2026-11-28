@@ -17,7 +17,7 @@ Không bắt đầu bằng một cột HTML cho cả lesson: sẽ mất speaker,
 - `volume`: 1 cho bài 1–25, 2 cho 26–50. `target_level` N5/N4 là cách tổ chức lộ trình, không chứng nhận mỗi điểm trong sách tương đương tuyệt đối JLPT.
 - `sources[]`: resource references.
 - `grammar_points[]`, `utterances[]`, `exercise_groups[]`, `dialogues[]`, `passages[]`, `assets[]`, `nodes[]`.
-- `vocabulary_binding_request`: tham chiếu bộ Minna và số bài, trạng thái unresolved/resolved/ambiguous. Không tạo từ mới, không chia batch bằng số lượng ước đoán.
+- `vocabulary_binding_request` tham chiếu bộ Minna, số bài và toàn bộ danh sách từ theo thứ tự bản xuất Harumii. Trạng thái là `unresolved`, `resolved` hoặc `ambiguous`.
 - `coverage`: trạng thái và số lượng riêng từng phần/trường; `issues[]`: lỗi/pending có source và mức ảnh hưởng.
 
 Stable IDs ví dụ: `minna.l39.g01`, `minna.l39.b01.q01`, `minna.l39.shadow.bunkei.s01`. ID cấp một lần và giữ xuyên reorder/sửa wording. `source_id`/DOM locator là chứng cứ, không phải identity duy nhất; source đổi ID cần reconciliation, không tự coi câu mới.
@@ -96,10 +96,12 @@ Ref: `asset_id`, `source_track_key`, `start_ms`, `end_ms`, `alignment_status`.
 
 Kinds biên tập: `vocab_video`, `vocab_learning`, `grammar`, `grammar_practice`, `shadowing`, `listening`, `reading`, `conversation_video`, `renshuu_c`, `kaiwa`, `assessment`. Đây là tên trung lập, không tuyên bố tồn tại trong enum Harumi.
 
-Mỗi mẫu có một video riêng. Thứ tự node lấy từ mảng `nodes` của gói trao đổi. Mỗi node `grammar_video` có một node `grammar_practice` nối ngay sau, có thể chứa nhiều nhóm B hoặc phần luyện thêm. Thay đổi thứ tự vẫn giữ ID của node.
+Với mỗi bài 01–50, hai vị trí đầu của `nodes` lần lượt là đúng một `vocab_video` cho cả bài và đúng một `vocab_learning` chứa toàn bộ danh sách từ. Preview dùng ID `minna.lNN.v01.vocabulary_video` và `minna.lNN.v01.vocabulary_learning`. Cả hai tham chiếu cùng bảng từ của bài với `source_rows` bằng `[1, N]`, trong đó `N` là số mục từ đã kiểm trong bảng, tính cả hai đầu.
+
+Mỗi mẫu ngữ pháp có một video riêng. Thứ tự node lấy từ mảng `nodes` của gói trao đổi. Mỗi node `grammar_video` có một node `grammar_practice` nối ngay sau, có thể chứa nhiều nhóm B hoặc phần luyện thêm. Thay đổi thứ tự vẫn giữ ID của node.
 
 ## Export gate
 
 Gói có `schema_version`, `course_id`, `export_revision`, lesson file list/hash, media list/hash, unresolved bindings và provenance summary. Chỉ nội dung reviewed mới là publishable. Có thể xuất draft để preview nhưng bắt buộc phân biệt draft với published.
 
-Semantic checks bắt buộc khi có dataset: unique IDs; refs tồn tại; source/group/lesson không lệch; phạm vi đúng; MCQ answer tồn tại; reorder không dùng token không có trong pool; không chấm câu mở bằng đáp án đơn; Nhật–Việt không lệch; timing hợp lệ; asset được xác minh; đáp án không lộ trong learner prompt; các node tắt không chặn luồng chính. Mọi số lượng so với inventory cùng source variant/revision.
+Semantic checks bắt buộc khi có dataset: unique IDs; refs tồn tại; source/group/lesson không lệch; phạm vi đúng; MCQ answer tồn tại; reorder không dùng token không có trong pool; không chấm câu mở bằng đáp án đơn; Nhật–Việt không lệch; timing hợp lệ; asset được xác minh; đáp án không lộ trong learner prompt; các node tắt không chặn luồng chính. Mọi số lượng so với inventory cùng source variant/revision. Với gói đủ 50 bài, kiểm đúng 50 cặp video từ vựng → học từ vựng, mỗi bài một cặp đứng đầu và bao phủ đủ số dòng của bảng từ tương ứng.

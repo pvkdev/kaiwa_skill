@@ -24,17 +24,12 @@ def payload(value):
 def roadmap(lesson, inventory):
     n = lesson["lesson"]
     prefix = f"minna.l{n:02}"
-    nodes = []
-    count = inventory["words"]
-    batches = (count + 29) // 30
-    low, higher = divmod(count,batches)
-    start = 1
-    for i in range(batches):
-        end = start + low + (i < higher) - 1
-        for kind, status in (("vocabulary_video","planned"),("vocabulary_learning","needs_harumii_binding")):
-            nodes.append({"id":f"{prefix}.v{i+1:02}.{kind}", "kind":kind,"status":status,
-                          "source_rows":[start,end]})
-        start = end + 1
+    nodes = [
+        {"id": f"{prefix}.v01.vocabulary_video", "kind": "vocabulary_video",
+         "status": "planned", "source_rows": [1, inventory["words"]]},
+        {"id": f"{prefix}.v01.vocabulary_learning", "kind": "vocabulary_learning",
+         "status": "needs_harumii_binding", "source_rows": [1, inventory["words"]]},
+    ]
     for group in lesson["groups"]:
         ref = group["grammar_ref"]
         nodes.append({"id":group["video_asset"],"kind":"grammar_video","status":"planned",

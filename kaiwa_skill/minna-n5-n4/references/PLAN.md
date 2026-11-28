@@ -31,7 +31,7 @@ exports/harumii/         gói ZIP theo bài, phạm vi và revision để previe
 
 ## Lộ trình học đề xuất
 
-1. Video vocab nhóm 1 → node vocab nhóm 1 → video vocab nhóm 2 → node vocab nhóm 2… Chia nhóm 20–30 từ khi binding vocab thật, không tạo list từ mới từ VNJPCLUB.
+1. Mỗi bài 1–50 mở đầu bằng đúng một video từ vựng cho cả bài, ngay sau đó là đúng một node học toàn bộ từ vựng của bài. Cả hai dùng trọn danh sách theo thứ tự bản xuất Harumii.
 2. Mỗi mẫu có một video độc lập, bài giảng chữ và ví dụ. Cấp ID video ngay lúc biên soạn và gắn URL khi quay xong.
 3. Ngữ pháp 1 → B liên quan → ngữ pháp 2 → B liên quan… B dùng nhiều mẫu nằm sau khi đã giới thiệu đủ các mẫu ấy. Đây là thứ tự khuyến nghị, chưa thiết kế khóa tiến độ.
 4. Shadowing Văn mẫu và A; có thể tách thành nhiều node để học vừa sức, không làm mất cấu trúc bảng/thay thế của A.
