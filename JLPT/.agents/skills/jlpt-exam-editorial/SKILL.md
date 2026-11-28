@@ -1,0 +1,27 @@
+---
+name: jlpt-exam-editorial
+description: Biên tập lời giải, dịch câu hỏi và đối chiếu từng câu Nhật–Việt cho passage hoặc script của một kỳ JLPT. Dùng khi có HTML, ảnh, khóa nguồn hoặc bản nghe đã xác minh và cần bổ sung nội dung học vào gói Harumi.
+---
+
+# Biên tập câu hỏi và tài liệu dùng chung
+
+Nhận cấp/kỳ, revision, SHA của nguồn, UUID/locator và tệp được phép sửa. Mở nguyên văn Nhật, lựa chọn theo thứ tự, dấu đánh đáp án, lời giải nguồn, tư liệu dùng chung và hình liên quan. Với nghe, đối chiếu lời thoại hoặc master ở đúng khoảng câu. [Quy tắc lời giải và ví dụ](../jlpt-exam-ingest/references/editorial.md)
+
+## Các trường cần dịch
+
+- Dùng N2 2018/12 hoặc N3 2025/12 làm mẫu cho cùng loại câu. Dịch câu dẫn có nội dung học, câu hỏi đọc hiểu, phương án là câu trả lời mang nghĩa và các câu ví dụ kiểm tra cách dùng từ. Giữ bản dịch đã có của nguồn nếu đúng. Với bài chọn cách đọc/chữ, phần Nhật trước đáp án vẫn phải giữ chính xác mục tiêu cần kiểm tra. Các số lựa chọn, vị trí lỗ trống như `[48]`, câu hỏi nghe chỉ có ảnh, dòng trống và ký hiệu thuần túy không cần tạo bản dịch giả.
+- Với prompt có cả bảng và câu hỏi, giữ từng ô, tiêu đề, đơn vị, hướng đọc, dòng chú thích và dấu gạch chân. Lấy số câu hiển thị từ node annotation. Các số trùng ở phần khác là hợp lệ.
+- Lưu dịch câu hỏi vào `prompt.textVi` và đồng bộ `translationVi` theo gói hiện tại. Lưu dịch lựa chọn vào `choices[].textVi`. Lời giải ghi riêng trong `explanation`. Bản Việt chưa đủ căn cứ để trống và ghi issue.
+
+## Tách câu cho Đọc hiểu và Nghe hiểu
+
+1. Tìm đúng target. Passage hoặc audio chung lấy UUID của media. Script riêng lấy UUID câu hỏi. Một đoạn chung nhiều câu dùng một bộ hàng.
+2. Ghép anchor tooltip hoặc phụ lục vào chính câu gốc. Đối chiếu với JA hiển thị, bỏ ruby trợ đọc và markup điều khiển. Giữ thứ tự đoạn, tên người nói, điều kiện, phủ định, câu hỏi nhắc lại và số liệu. Nếu một lượt lời có ba câu, tách ra ba hàng và dịch đúng nghĩa từng câu. Gắn nhãn người nói với chính lời nói đó. Dấu câu nằm trong trích dẫn cần đọc theo ngữ cảnh. Hàng bảng và tiêu đề có thể là một đơn vị cấu trúc.
+3. Ghi `annotations.sentencePairs[targetId] = [{ja,vi}, ...]`. Giữ nguyên văn Nhật ở trường JA đầy đủ. VI toàn đoạn luôn là các bản Việt theo thứ tự, nối bằng xuống dòng. Khi thiếu nghĩa của một hàng, giữ hàng Nhật và `vi:null` trong draft, đưa target và số hàng vào checklist. Tránh lặp cả đoạn Việt vào từng hàng. Đối chiếu toàn bộ ký tự có nghĩa trong JA đầy đủ với các hàng JA.
+4. Khi nguồn đã có bản dịch cả đoạn, dùng nó kiểm tra thuật ngữ và đại từ, rồi biên tập lại theo câu. Khi chỉ có tiếng Nhật, AI tự dịch và ghi provenance. Nếu nguồn thiếu cả script, chuyển [worker nghe](../jlpt-listening/SKILL.md) từ đúng audio tổng trước khi soạn lời giải.
+
+## Lời giải và bàn giao
+
+Viết **Đáp án**, **Vì sao chọn**, **Vì sao loại** theo bằng chứng thực, thêm ngữ pháp khi mẫu đó giúp giải câu. Ghi nhãn và chính tả theo nguồn. Với đáp án nghe chỉ có số, câu trả lời cần dẫn đúng tín hiệu nghe được. Với bảng chỉ rõ hàng, cột, điều kiện và phép tính nếu có. Dùng khóa nguồn để đối chiếu sau khi tự giải. Khi câu hỏi và khóa mâu thuẫn, bảo toàn hai bằng chứng, yêu cầu rà lại.
+
+Ghi trường đã thay đổi, pointer, hash đầu vào, nguồn/tên model và người rà theo [hợp đồng](../../../contracts/v1/CONTRACT.md). Giữ lời giải nguồn đọc lại được từ HTML. Nộp patch với base revision, target UUID và locator. Mở lại JA, VI và JAVI ở summary để kiểm câu/dòng, lời dịch thiếu, dấu ngoặc và bố cục bảng. Chốt đúng câu còn cần admin cung cấp nguồn.

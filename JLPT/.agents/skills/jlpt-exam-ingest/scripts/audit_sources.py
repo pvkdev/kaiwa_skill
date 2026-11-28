@@ -9,11 +9,19 @@ from collections import Counter
 from decimal import Decimal, InvalidOperation
 from html.parser import HTMLParser
 from pathlib import Path
+from tempfile import NamedTemporaryFile
 
 
 VOID = set("area base br col embed hr img input link meta param source track wbr".split())
 JAPANESE = re.compile(r"[ぁ-んァ-ヺ一-龯]")
 ANSWER = re.compile(r"đáp án(?: đúng)?\s*:\s*([1-9]\d*)", re.I)
+
+
+def translated_value(value):
+    text = (value or "").strip()
+    if not text or re.search(r"</?[a-z][^>]*>", text, re.I) or "[chưa lấy được]" in text.casefold():
+        return ""
+    return text
 # These two shared recordings have been reviewed against the numbered questions.
 # Match both spoken prompts so a revised capture cannot inherit a link by position alone.
 SHARED_PROMPTS = {
@@ -153,7 +161,7 @@ def audit_page(root, path, media):
             continue
         if not isinstance(group, str) or not group.startswith("Dịch "):
             continue
-        if entry.attrs.get("data-vi", "").strip():
+        if translated_value(entry.attrs.get("data-vi")):
             translations["script" if group.startswith("Dịch script") else "exam"] += 1
         else:
             missing_translations.append({"group": group, "question": qid, "lineIndex": line_index,
@@ -180,18 +188,20 @@ def audit_page(root, path, media):
         covered.update(pair["questions"])
         if pair["intervalMs"]:
             timed.update(pair["questions"])
-    pattern = f"{level}-{period}".casefold()
-    nearby = [p.relative_to(root).as_posix() for p in media
-              if p.parent == path.parent or pattern in p.stem.casefold()]
     page.update({
         "scriptPanelCountWithJapanese": len(scripts),
         "intervalCount": len(ranges),
         "sharedScripts": shared,
         "requestScript": group_gaps(locations, [qid for qid in ids if qid not in covered]),
         "unverifiedTiming": group_gaps(locations, [qid for qid in ids if qid not in timed]),
-        "masterAudioCandidates": nearby,
+        "masterAudioCandidates": audio_candidates(root, path, page, media),
     })
     return page
+
+
+def audio_candidates(root, path, page, media):
+    pattern = f"{page['level']}-{page['period']}".casefold()
+    return [p.relative_to(root).as_posix() for p in media if p.parent == path.parent or pattern in p.stem.casefold()]
 
 
 def main():
@@ -200,20 +210,37 @@ def main():
     args.add_argument("--out", type=Path, help="JSON report path, relative to root or absolute")
     opt = args.parse_args()
     root = opt.root.resolve(strict=True)
-    media = sorted(p for p in root.rglob("*") if p.is_file() and
-                   p.suffix.lower() in {".mp3", ".m4a", ".aac", ".ogg", ".wav", ".opus"})
+    media = sorted(p for level in root.glob("N[1-5]") for p in level.rglob("*") if p.is_file() and
+                   p.suffix.lower() in {".mp3", ".m4a", ".aac", ".ogg", ".wav", ".opus", ".flac"})
+    audit_hash = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+    target = (root / opt.out).resolve() if opt.out else None
+    cache = {}
+    if target and target.is_file() and target.suffix.lower() == ".json":
+        previous = json.loads(target.read_bytes())
+        if previous.get("auditorSha256") == audit_hash:
+            cache = {p["path"]: p for p in previous["pages"]}
     pages = []
     for level in sorted(root.glob("N[1-5]")):
         for f in sorted(level.rglob("*.html")):
             if any(name.lower() in {"old", "sample"} for name in f.relative_to(level).parts[:-1]):
                 continue
-            pages.append(audit_page(root, f, media))
+            page = cache.get(f.relative_to(root).as_posix())
+            if page is not None:
+                with f.open("rb") as stream:
+                    if hashlib.file_digest(stream, "sha256").hexdigest() != page["sha256"]:
+                        page = None
+            if page is None:
+                page = audit_page(root, f, media)
+            elif page.get("section") == "listening":
+                page["masterAudioCandidates"] = audio_candidates(root, f, page, media)
+            pages.append(page)
     if not pages:
         args.error("No active HTML under N1 through N5")
     counts = Counter((p["level"], p["period"], p["section"]) for p in pages)
     duplicates = [list(key) for key, count in counts.items() if count > 1]
     report = {
         "schemaVersion": 1,
+        "auditorSha256": audit_hash,
         "scope": "N1…N5, bỏ qua thư mục old và sample khi đọc HTML. Đường dẫn tính từ JLPT.",
         "howToUse": {
             "requestScript": "Gửi người sưu tầm cấp, kỳ, mondai và số câu. Kiểm tra khả năng dùng chung đoạn trước khi yêu cầu lấy lại từng câu.",
@@ -228,12 +255,17 @@ def main():
         "pages": pages,
     }
     data = json.dumps(report, ensure_ascii=False, indent=2) + "\n"
-    if opt.out:
-        target = (root / opt.out).resolve()
+    if target:
         if target.suffix.lower() != ".json":
             args.error("Output path must end in .json")
         target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_text(data, encoding="utf-8")
+        with NamedTemporaryFile(dir=target.parent, delete=False) as stream:
+            temp = Path(stream.name)
+            stream.write(data.encode("utf-8"))
+        try:
+            temp.replace(target)
+        finally:
+            temp.unlink(missing_ok=True)
     else:
         sys.stdout.buffer.write(data.encode("utf-8"))
 

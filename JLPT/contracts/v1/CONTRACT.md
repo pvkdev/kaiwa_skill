@@ -1,8 +1,18 @@
-# Hợp đồng gói JLPT 1.2.0
+# Hợp đồng gói JLPT 1.3.0
 
 Trang nhập đề trong Harumi Development ở `/admin/jlpt-exams/import`. Xem định dạng thư mục, thao tác thêm/ghi đè và cơ chế thử lại trong [hướng dẫn migration](../../MIGRATION.md).
 
 Đơn vị nhập là một đề, gồm cả phần viết và nghe của cùng cấp/kỳ. `exam-package.schema.json` mô tả một gói. `catalog.schema.json` liệt kê những gói trong một lần nhập toàn kho. Cả hai dùng JSON Schema 2020-12. `synthetic-draft.json` là fixture tự biên, có một đoạn dùng chung hai câu và vài chỗ cố ý bỏ trống để kiểm luồng bản nháp.
+
+## Quy ước cho bản 1.3
+
+- Danh tính biên soạn là `(exam.level, exam.slug)`, ví dụ `N3` và `2025/12`. Cấp hợp lệ từ N5 đến N1. Năm, tháng là số và phải khớp slug. Thư mục dùng `packages/N3/2025-12/`. Harumi giữ `2025/12` trong `importMetadata.periodSlug` và lưu `2025-12` ở cột slug cho các route nhận một đoạn URL. Khi nâng gói cũ, giữ nguyên packageId và mọi UUID, tăng revision. Importer đọc cả 1.1 và 1.2 theo slug cũ.
+- Đề gốc gồm HTML bất biến, file đính kèm và hash. Phần phát cho người học lưu chính chữ Nhật, thứ tự, nhóm, hình, bảng và khóa gốc. Ruby là lớp hiển thị riêng của Harumi. Lời giải biên tập, dịch, furigana và STT đều có nguồn gốc riêng. Nếu bản gốc tự mâu thuẫn, giữ nguyên văn, ghi issue có UUID, locator và yêu cầu đối chiếu. Một bản chụp có thể đầy đủ file nhưng vẫn còn lỗi nội dung.
+- `review.status=approved` hiển thị **Hoàn thành**. `draft` hoặc `needs_review` hiển thị **Còn thiếu**. Đây là trạng thái biên soạn của revision nhập. `IsPublished` quản lý việc xuất bản riêng. Mỗi issue có mã, mức độ, UUID đích (null cho cả đề), mô tả và vị trí có thể tìm lại. Checklist theo repo tổng hợp nguồn hiện hành, số mục có/cần, UUID, câu, dòng và người xử lý. Chạy lại sau khi cập nhật nguồn, RSS hoặc package. [Chi tiết checklist](../../reports/exam-checklist.json)
+- `annotations.sentencePairs` bắt buộc có ở 1.3. Với bản hoàn thành, từng câu Nhật có bản Việt tương ứng theo thứ tự. Bảng có thể giữ đơn vị hàng/ô và nhãn. JA hiển thị nguyên bản và cho tra từ. VI lấy bản Việt đã ghép. Trong JAVI, chạm câu Nhật để hiện nghĩa tương ứng. Bản nháp có thể có `vi:null`. Bản cũ chỉ có dịch nguyên đoạn vẫn hiển thị được ở VI.
+- Đối với phần nghe, dùng một master. Bản hoàn thành cần enclosure RSS, script Nhật, bản dịch và đủ cặp start/end cho từng mondai cùng các câu. Hai câu hỏi cùng một hội thoại có thể dùng chung một cue `shared`. Lưu mốc riêng nếu có bằng chứng riêng. Với đề chỉ có phần viết theo nguồn, ghi bằng chứng phạm vi tại hồ sơ kỳ và để phần nghe rỗng. Điểm kết thúc của đoạn là mốc loại trừ.
+- Khi trộn mondai từ nhiều đề, lấy `practiceSource` qua `GET /api/exam/admin/jlpt-mondais/{id}`. Câu hỏi kế thừa group từ `JlptMondai.Section` và giữ nguyên block cùng tư liệu. `practiceSource.examId` xác định đề gốc, `masterAudioUrl` xác định track nghe. `audioSegments`, `sentencePairs`, `questionLabels` chỉ chứa mốc và UUID của mondai được hỏi. Quan hệ trong DB qua `JlptExamSetMondai` giữ được nguồn khi ghép nhiều đề. Sửa master/cue trong đề rồi đọc lại mondai sẽ dùng dữ liệu mới. Mondai soạn tay có thể nhận `practiceSource:null`.
+- `structure.timings[].seconds` là thời gian thi cho các `sectionKeys` nêu rõ, có nguồn. Khi không biết thời gian thi, giữ mảng rỗng. `masterAudio.durationMs` chỉ mô tả độ dài bản ghi. [Quy trình STT](../../.agents/skills/jlpt-listening/SKILL.md) và [binding RSS](../../tools/AUDIO_RSS.md).
 
 ## Danh tính, thứ tự và nguồn
 
@@ -30,9 +40,9 @@ Trang nhập đề trong Harumi Development ở `/admin/jlpt-exams/import`. Xem 
 }
 ```
 
-Giữ nguyên `passage.jaMd` hoặc `scriptJaMd` cho chế độ đọc nguyên bản, kể cả ký hiệu trống, bảng, nhãn người nói. Giao diện lấy bản Việt đầy đủ từ `passage.viMd`, `audio.scriptViMd` hoặc `jlptListenScript.scriptViMd`. Với node có hàng, trường này phải bằng chính xác `rows.filter(r => r.vi !== null).map(r => r.vi).join("\n")`. Bản song ngữ toàn đoạn dùng hai trường đầy đủ. Bảng Nhật–Việt dùng các hàng theo thứ tự đã biên soạn.
+Giữ nguyên `passage.jaMd` hoặc `scriptJaMd` cho chế độ đọc nguyên bản, kể cả ký hiệu trống, bảng, nhãn người nói. Giao diện lấy bản Việt đầy đủ từ `passage.viMd`, `audio.scriptViMd` hoặc `jlptListenScript.scriptViMd`. Với node có hàng, trường này phải bằng chính xác `rows.filter(r => r.vi !== null).map(r => r.vi).join("\n")`. Trong JAVI, ánh xạ từng hàng vào đúng vị trí trong bài Nhật để người học chạm xem bản dịch.
 
-Liên kết một câu Nhật với đúng bản dịch qua DOM anchor/phụ lục cùng nguồn hoặc qua bản biên tập có hash. Nếu nguồn gộp nhiều câu vào một lượt lời, giữ chung lượt lời đến khi có người tách và rà nghĩa hai bên. Đối với biểu mẫu dùng chung và bảng giá, một hàng có thể chứa cả hàng bảng tương ứng bằng Markdown. Bản dịch tự soạn được đánh dấu `origin: ai` trên trường đích. `1.1.0` vẫn nhập được theo các trường nguyên đoạn cũ. Bổ sung hàng vào bản cũ cần tăng `schemaVersion` và `revision`, giữ nguyên toàn bộ UUID.
+Liên kết một câu Nhật với đúng bản dịch qua DOM anchor/phụ lục cùng nguồn hoặc qua bản biên tập có hash. Nếu nguồn gộp nhiều câu vào một lượt lời, lưu bằng chứng gộp trong HTML, sau đó tách và rà nghĩa hai bên trước khi duyệt 1.3. Đối với biểu mẫu dùng chung và bảng giá, một hàng có thể chứa cả hàng bảng tương ứng bằng Markdown. Bản dịch tự soạn được đánh dấu `origin: ai` trên trường đích. `1.1.0` vẫn nhập được theo các trường nguyên đoạn cũ. Bổ sung hàng vào bản cũ cần tăng `schemaVersion` và `revision`, giữ nguyên toàn bộ UUID.
 
 ## Một audio cho một đề
 
@@ -48,7 +58,7 @@ Liên kết một câu Nhật với đúng bản dịch qua DOM anchor/phụ l�
 
 `exam` ánh xạ vào `JlptExamSet`. Mỗi phần tử `content.<section>.mondais` ánh xạ một `JlptMondai`; `section/paper, mondaiNumber, label` là metadata và `instruction, blocks` vào `ContentJson`. `JlptExamSetMondai` nối đề–mondai theo thứ tự mảng của từng section. Adapter ánh xạ `asset://` sang URL ảnh sử dụng được. Câu chỉ có đáp án số vẫn giữ đúng 3 hoặc 4 lựa chọn theo nguồn; ID a/b/c/d áp theo thứ tự, giữ nhãn nguồn riêng. Một block dùng chung một `choiceCount`; khi số lựa chọn khác nhau, tách block và giữ liên kết tới media chung. So sánh vòng xuất–nhập toàn bộ ID, số thứ tự, đoạn đọc, bảng, ảnh và Markdown.
 
-`JlptExamCompositionService` hiện chỉ giữ instruction/instructionHtml/blocks khi split; assemble tạo lại đúng bốn tab. Adapter mới cần lưu master, mốc và metadata import theo ID đề, đọc lại chúng qua API và giữ được khi dùng editor. Chỉ dán JSON gói vào endpoint cũ sẽ mất phần ngoài content. Tham chiếu R2/RSS thuộc tài nguyên phát, không chuyển raw SingleFile hoặc thông tin chạy model lên app. Trước khi tạo/sửa, đối chiếu package→exam và quyền sở hữu mondai để ngăn ghi nhầm lên đề dùng chung. Đụng slug/UUID không thuộc cùng gói phải trả conflict. Gói sửa chỉ cập nhật snapshot mình sở hữu; phát hiện sửa tay ở đích bằng fingerprint. Nếu có shared mondai với đề khác, xử lý xung đột hoặc tạo bản sở hữu riêng có mapping ổn định.
+`JlptExamCompositionService` hiện chỉ giữ instruction/instructionHtml/blocks khi split; assemble tạo lại đúng bốn tab. Importer lưu master, mốc và metadata theo ID đề. Editor và API đọc lại những trường này. Chỉ dán JSON gói vào endpoint cũ sẽ mất phần ngoài content. Tham chiếu R2/RSS thuộc tài nguyên phát, không chuyển raw SingleFile hoặc thông tin chạy model lên app. Trước khi tạo/sửa, đối chiếu package→exam và quyền sở hữu mondai để ngăn ghi nhầm lên đề dùng chung. Đụng slug/UUID không thuộc cùng gói phải trả conflict. Gói sửa chỉ cập nhật snapshot mình sở hữu; phát hiện sửa tay ở đích bằng fingerprint. Nếu có shared mondai với đề khác, xử lý xung đột hoặc tạo bản sở hữu riêng có mapping ổn định.
 
 Catalog chứa `schemaVersion, packages[]`; mỗi entry có `packageId, revision, path, sha256`. Luồng nhập kiểm **tất cả** entry và asset trước khi ghi. Cùng ID/revision và hash đã commit là no-op; cùng revision khác hash hoặc revision lùi là conflict. Revision tăng cập nhật cùng exam. Mỗi đề có transaction và nhật ký tiến độ riêng để chạy lại sau lỗi; không xóa đề chỉ vì một gói vắng mặt trong catalog.
 

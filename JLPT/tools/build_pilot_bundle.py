@@ -25,6 +25,7 @@ def check_bundle(folder, files):
 
 def build(root, selected=None):
     packages = []
+    version = "1.2.0"
     files = {}
     paths = sorted((root / "packages").glob("*/*/package.json"))
     if selected is not None:
@@ -35,6 +36,8 @@ def build(root, selected=None):
     for path in paths:
         raw = path.read_bytes()
         package = json.loads(raw)
+        if package["schemaVersion"] == "1.3.0":
+            version = "1.3.0"
         relative = path.relative_to(root).as_posix()
         digest = hashlib.sha256(raw).hexdigest()
         files[relative] = digest
@@ -44,7 +47,7 @@ def build(root, selected=None):
             files[asset["path"]] = asset["sha256"]
     if not packages:
         raise ValueError("No packages/*/*/package.json found.")
-    catalog = json.dumps({"schemaVersion": "1.2.0", "packages": packages},
+    catalog = json.dumps({"schemaVersion": version, "packages": packages},
                          ensure_ascii=False, indent=2).encode() + b"\n"
     bundle_id = hashlib.sha256(catalog).hexdigest()
     parent = root / "pilot-upload"

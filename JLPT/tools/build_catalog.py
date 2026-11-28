@@ -11,6 +11,7 @@ import tempfile
 
 def build(root):
     entries = []
+    version = "1.2.0"
     for path in sorted((root / "packages").glob("*/*/package.json")):
         raw = path.read_bytes()
         data = json.loads(raw.decode("utf-8-sig"))
@@ -19,11 +20,13 @@ def build(root):
         if state != "approved":
             print(f"Skipped {relative} ({state})", file=sys.stderr)
             continue
+        if data["schemaVersion"] == "1.3.0":
+            version = "1.3.0"
         entries.append({"packageId": data["packageId"], "revision": data["revision"],
                         "path": relative, "sha256": hashlib.sha256(raw).hexdigest()})
     if not entries:
         raise ValueError("No approved package found. No new catalog was generated.")
-    content = json.dumps({"schemaVersion": "1.2.0", "packages": entries},
+    content = json.dumps({"schemaVersion": version, "packages": entries},
                          indent=2, ensure_ascii=False) + "\n"
     with tempfile.NamedTemporaryFile(dir=root, prefix=".catalog-", suffix=".json",
                                      delete=False) as output:

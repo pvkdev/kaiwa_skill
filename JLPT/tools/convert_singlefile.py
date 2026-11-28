@@ -1,12 +1,12 @@
-"""Build the five reviewed 2018 pilot layouts from offline SingleFile snapshots.
+"""Build one JLPT N5–N1 package from audited offline SingleFile snapshots.
 
 Run audit_sources.py first. Existing edited packages are never overwritten. To stage a
 new revision in a separate tree, use --output-root. References remain relative to JLPT.
 """
 import argparse
 import base64
-from collections import Counter, defaultdict
-from decimal import Decimal
+from collections import Counter
+from decimal import Decimal, InvalidOperation
 from hashlib import sha256
 import json
 import os
@@ -20,14 +20,12 @@ from uuid import NAMESPACE_URL, uuid5
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / ".agents/skills/jlpt-exam-ingest/scripts"))
-from audit_sources import ANSWER, Document, Node, interval
+from audit_sources import ANSWER, Document, Node, interval, translated_value
+sys.path.insert(0, str(ROOT / "contracts/v1"))
+from jlpt_coverage import checklist_issues
+from jlpt_sentences import sentence_units
 
 SECTIONS = ["mojigoi", "bunpou", "dokkai", "choukai"]
-# Reviewed written section boundaries in these historical captures; numbers reset on N3.
-PROFILES = {("N1", "2018-12"): (4, 7), ("N2", "2018-07"): (6, 9),
-            ("N2", "2018-12"): (6, 9), ("N3", "2018-07"): (5, 3),
-            ("N3", "2018-12"): (5, 3)}
-MASTER_FILES = {("N2", "2018-12"): "N2/old/1812_1/JLPT-N2-2018-12.mp3"}
 
 
 class SingleFileDocument(Document):
@@ -70,12 +68,31 @@ def tidy(value):
     return "\n".join(line.strip(" \t\r") for line in value.splitlines() if line.strip()).strip()
 
 
+def table_rows(node):
+    for child in node.children:
+        if not isinstance(child, Node) or child.tag == "table":
+            continue
+        if child.tag == "tr":
+            yield [c for c in child.children if isinstance(c, Node) and c.tag in {"td","th"}]
+        else:
+            yield from table_rows(child)
+
+
+def layout_cells(table):
+    # Single-column layout tables can wrap a real data table between paragraphs.
+    rows = list(table_rows(table))
+    if (rows and all(len(row) == 1 and row[0].attrs.get("colspan", "1") == "1" for row in rows)
+            and any(n.tag == "table" and n is not table for n in table.walk())):
+        return [row[0] for row in rows]
+    return None
+
+
 def markdown_table(node, renderer):
     """Flatten spans into a rectangular grid, including CSS-circled calendar days."""
     cells = {}
-    for row, tr in enumerate(n for n in node.walk() if n.tag == "tr"):
+    for row, children in enumerate(table_rows(node)):
         col = 0
-        for td in (n for n in tr.children if isinstance(n, Node) and n.tag in ("th", "td")):
+        for td in children:
             while (row, col) in cells:
                 col += 1
             value = tidy(renderer(td)).replace("|", "\\|").replace("\n", " / ")
@@ -104,6 +121,8 @@ def ja(node):
     if "vnjp-jlpt-kqdich" in node.classes or "vnjp-jlpt-nddich" in node.classes:
         return ""
     if node.tag == "table":
+        if cells := layout_cells(node):
+            return "\n" + "\n".join(ja(cell) for cell in cells) + "\n"
         return markdown_table(node, ja)
     if node.tag == "br":
         return "\n"
@@ -123,15 +142,16 @@ def translation_index(doc):
     if notes:
         for row in notes.walk():
             key = row.attrs.get("data-key", "")
-            if not key.startswith("[") or not row.attrs.get("data-vi"):
+            value = translated_value(row.attrs.get("data-vi"))
+            if not key.startswith("[") or not value:
                 continue
             anchor = next((n.attrs["href"][1:] for n in row.walk()
                            if n.tag == "a" and n.attrs.get("href", "").startswith("#")), None)
             if anchor:
-                index[anchor] = row.attrs["data-vi"].strip()
+                index[anchor] = value
             group, qid, _, source_text = json.loads(key)
             if group == "Dịch đề" and qid:
-                index.setdefault((qid, source_text.strip()), set()).add(row.attrs["data-vi"].strip())
+                index.setdefault((qid, source_text.strip()), set()).add(value)
     return index
 
 
@@ -144,7 +164,7 @@ def translations(node, index):
         text = index.get(src.attrs.get("id")) if src else None
         inline = first(holder, "vnjp-jlpt-kqdich")
         if not text and inline:
-            text = inline.text()
+            text = translated_value(inline.text())
         if text:
             rows.append(text.strip())
     return "\n".join(rows)
@@ -195,6 +215,12 @@ def aligned_rows(node, index):
             return
         if item.tag == "table":
             flush()
+            if layout := layout_cells(item):
+                for cell in layout:
+                    walk(cell)
+                return
+            if any(n is not item and n.tag == "table" for n in item.walk()):
+                raise ValueError("Nested data tables need a reviewed layout before conversion.")
             cells = {cell: aligned_rows(cell, index) for cell in item.walk()
                      if cell.tag in {"td", "th", "caption"}}
             if any(row["vi"] is None for aligned in cells.values() for row in aligned):
@@ -251,9 +277,27 @@ def joined_vi(rows):
     return "\n".join(row["vi"] for row in rows if row["vi"])
 
 
+def source_times(player):
+    if not player:
+        return None
+    full = interval(player)
+    if full:
+        return full
+    if not (player.attrs.get("data-end") or "").strip():
+        try:
+            value = Decimal(player.attrs["data-start"])
+            if value.is_finite() and value >= 0:
+                return [round(1000 * value), None]
+        except (KeyError, InvalidOperation):
+            pass
+    return None
+
+
 class Package:
-    def __init__(self, level, period, output):
+    def __init__(self, level, period, output, revision, layout=None):
         self.level, self.period, self.output = level, period, output
+        self.revision, self.layout = revision, layout
+        self.written_sections = {}
         self.namespace = uuid5(NAMESPACE_URL, f"urn:harumi-pilot:vnjpclub:{level}:{period}")
         self.assets = {}
         self.sources = []
@@ -269,6 +313,9 @@ class Package:
         self.editorial_hash = None
         self.editorial_passages = {}
         self.question_translations = {}
+        self.handled_images = set()
+        self.sentence_edits = {}
+        self.written_only = False
 
     def uid(self, key):
         return str(uuid5(self.namespace, key))
@@ -299,12 +346,19 @@ class Package:
             mins, secs = map(int, duration_node.text().split(":"))
             duration = (mins * 60 + secs) * 1000
         self.master = dict(assetId=None, durationMs=duration, rss=None)
-        local = MASTER_FILES.get((self.level, self.period))
+        name = f"JLPT-{self.level}-{self.period}"
+        types = {".mp3":"audio/mpeg", ".m4a":"audio/mp4", ".ogg":"audio/ogg", ".wav":"audio/wav"}
+        matching = [p for p in page["masterAudioCandidates"]
+                    if Path(p).stem.casefold() == name.casefold() and Path(p).suffix.lower() in types]
+        adjacent = [p for p in matching if Path(p).parent == Path(page["path"]).parent]
+        candidates = adjacent or matching
+        local = candidates[0] if len(candidates) == 1 else None
         if not local:
+            if matching:
+                self.issue("AMBIGUOUS_MASTER", f"Nhiều bản {name}. Cần xác định MP3 đúng với HTML nghe.", severity="error")
+                return
             self.issue("MISSING_MASTER", "Cần MP3 tổng hoặc binding RSS khớp bản thu của đề.", severity="error")
             return
-        if local not in page["masterAudioCandidates"]:
-            raise ValueError(f"Expected master missing: {local}")
         raw = (ROOT / local).read_bytes()
         seconds = subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration",
             "-of", "default=nw=1:nk=1", str(ROOT / local)], text=True).strip()
@@ -313,22 +367,54 @@ class Package:
             raise ValueError(f"Master duration differs from capture: {local}")
         self.sources.append(source_record("master", local, raw))
         self.source = "master"
-        checksum = self.asset(raw, "mp3", "audio/mpeg", local, measured)
+        ext = Path(local).suffix.lower()
+        checksum = self.asset(raw, ext[1:], types[ext], local, measured)
         self.master.update(assetId="sha256:" + checksum, durationMs=measured)
         self.source = "listening"
         self.issue("CHECK_MASTER_ALIGNMENT", "Đã đối chiếu tên kỳ và thời lượng. Cần nghe đối chiếu mốc đầu, giữa, cuối trước phát hành.")
 
-    def section(self, number, block):
-        if self.source == "listening":
-            return "choukai"
-        vocab_end, grammar_end = PROFILES[self.level, self.period]
-        instruction = first(block, "tieude")
-        if self.level == "N3":
-            if instruction and "vnjp-moji-goi-mondai-tieude" in instruction.classes:
-                return "mojigoi"
-        elif number <= vocab_end:
-            return "mojigoi"
-        return "bunpou" if number <= grammar_end else "dokkai"
+    def map_written(self, doc, page):
+        sidecar = Path(page["path"]).parent / "written-layout.json"
+        path = self.layout or (ROOT / sidecar)
+        if self.layout and not path.is_file():
+            raise ValueError(f"Layout file does not exist: {path}")
+        if path.is_file():
+            profile = json.loads(path.read_bytes())
+        else:
+            profiles = json.loads((ROOT / "tools/written-layouts.json").read_bytes())
+            profile = profiles.get(f"{self.level}/{self.period}")
+        if not profile or profile.get("captureSha256") != page["sha256"]:
+            raise ValueError(f"Written layout needs review. Run --inspect-layout, then supply {sidecar} "
+                             "with captureSha256 and sectionStarts.")
+        if evidence := profile.get("writtenOnlyEvidence"):
+            path = (ROOT / evidence["path"]).resolve()
+            if not path.is_relative_to(ROOT) or not path.is_file():
+                raise ValueError("Missing local evidence for written-only scope")
+            raw = path.read_bytes()
+            if digest(raw) != evidence["sha256"]:
+                raise ValueError("Changed evidence for written-only scope")
+            self.sources.append(source_record("written-only-scope", path.relative_to(ROOT).as_posix(), raw))
+            self.written_only = True
+        starts = profile["sectionStarts"]
+        if set(starts) != set(SECTIONS[:3]) or len(set(starts.values())) != 3:
+            raise ValueError("Written sectionStarts must identify three distinct source question IDs.")
+        by_anchor = {anchor: section for section, anchor in starts.items()}
+        section, seen = None, []
+        for block in doc.find("mondai-block"):
+            questions = block.find("q-item")
+            if not questions:
+                continue
+            anchor = questions[0].attrs["id"]
+            if anchor in by_anchor:
+                if not first(block, "mondai-title"):
+                    raise ValueError(f"Section boundary at {anchor} has no source mondai title")
+                section = by_anchor[anchor]
+                seen.append(section)
+            if section is None:
+                raise ValueError(f"Written layout omits first question {anchor}")
+            self.written_sections[anchor] = section
+        if seen != SECTIONS[:3]:
+            raise ValueError("Written section anchors are missing, out of order, or inside a question group.")
 
     def passage(self, block, original, locator):
         jp = tidy(ja(original))
@@ -342,14 +428,41 @@ class Package:
             if normalized(jp) != normalized("\n".join(r["ja"] for r in rows)):
                 raise ValueError(f"Stale Japanese passage in editorial translation: {media_id}")
             self.annotations["fields"].append(dict(targetId=media_id, fieldPointer="/passage/viMd",
-                origin="ai", sourceId="editorial-passages", runId=f"pilot-{self.level}-{self.period}-passages",
-                model="Codex", skillVersion="jlpt-exam-ingest-1.2", inputSha256=self.capture_hash,
+                origin="ai", sourceId="editorial-passages", runId=f"{self.level}-{self.period}-passages",
+                model="Codex", skillVersion="jlpt-exam-ingest-1.3", inputSha256=self.capture_hash,
                 reviewStatus="pending", note=locator))
         else:
             rows = aligned_rows(original, self.translations)
+        rows = self.edit_pairs(media_id, rows, "/passage/viMd", locator)
         self.annotations["sentencePairs"][media_id] = rows
         block["mediaItems"].append(dict(id=media_id, kind="passage", passage=dict(
             jaMd=jp, viMd=joined_vi(rows))))
+
+    def edit_pairs(self, owner, rows, field, locator):
+        edits = self.sentence_edits.pop(owner, None)
+        if edits is None:
+            return rows
+        result = []
+        edits = dict(edits)
+        for idx, row in enumerate(rows, 1):
+            entry = edits.pop(str(idx), None)
+            if entry is None:
+                result.append(row)
+                continue
+            units = entry.get("ja") or sentence_units(row["ja"])
+            values = entry["vi"]
+            if (not isinstance(units, list) or not isinstance(values, list) or len(units) != len(values)
+                    or not units or not all(isinstance(v, str) and v.strip() for v in units + values)
+                    or re.sub(r"\s", "", "".join(units)) != re.sub(r"\s", "", row["ja"])):
+                raise ValueError(f"Invalid JA/VI sentence edit {owner} row {idx}")
+            result.extend(dict(ja=ja, vi=vi) for ja,vi in zip(units, values))
+        if edits:
+            raise ValueError(f"Unknown source row(s) for {owner}: {sorted(edits)}")
+        self.annotations["fields"].append(dict(targetId=owner, fieldPointer=field, origin="ai",
+            sourceId=f"sentence-edits-{self.source}", runId=f"sentence-edits-{self.level}-{self.period}-{self.source}",
+            model="Codex", skillVersion="jlpt-exam-ingest-1.3", inputSha256=self.capture_hash,
+            reviewStatus="pending", note=locator))
+        return result
 
     def question(self, original):
         anchor = original.attrs["id"]
@@ -407,17 +520,19 @@ class Package:
                     changed.append(f"/choices/{idx}/textVi")
             for pointer in changed:
                 self.annotations["fields"].append(dict(targetId=uid, fieldPointer=pointer, origin="ai",
-                    sourceId=f"translations-{self.source}", runId=f"pilot-{self.level}-{self.period}-questions",
-                    model="Codex", skillVersion="jlpt-exam-ingest-1.2", inputSha256=self.capture_hash,
+                    sourceId=f"translations-{self.source}", runId=f"{self.level}-{self.period}-{self.source}-questions",
+                    model="Codex", skillVersion="jlpt-exam-ingest-1.3", inputSha256=self.capture_hash,
                     reviewStatus="pending", note=selector))
-        if self.source == "written" and anchor in self.editorial:
+        if anchor in self.editorial:
             edit = self.editorial.pop(anchor)
             if ans != chr(96 + edit["key"]) or not edit["explanation"].strip():
                 raise ValueError(f"Unverified editorial patch: {selector}")
             q["explanation"] = edit["explanation"].strip()
+            if edit.get("sourceIssue"):
+                self.issue("VERIFY_SOURCE_TEXT", f"{self.source} {selector} · {edit['sourceIssue']}", uid, "error")
             self.annotations["fields"].append(dict(targetId=uid, fieldPointer="/explanation",
-                origin="ai", sourceId="editorial-written", runId=f"pilot-{self.level}-{self.period}-written",
-                model="Codex", skillVersion="jlpt-exam-ingest-pilot-1", inputSha256=self.capture_hash,
+                origin="ai", sourceId=f"editorial-{self.source}", runId=f"{self.level}-{self.period}-{self.source}",
+                model="Codex", skillVersion="jlpt-exam-ingest-1.3", inputSha256=self.capture_hash,
                 reviewStatus="pending", note=f"{selector}; source bytes {self.capture_hash}; patch SHA-256 {self.editorial_hash}."))
         elif explanation:
             self.annotations["fields"].append(dict(targetId=uid, fieldPointer="/explanation",
@@ -429,9 +544,13 @@ class Package:
         if len(images) > 1:
             raise ValueError(f"Multiple question images: {selector}")
         if images:
-            header, payload = images[0].attrs["src"].split(",", 1)
+            self.handled_images.add(images[0])
+            header, _, payload = images[0].attrs.get("src", "").partition(",")
             media = {"data:image/jpeg;base64": ("jpg", "image/jpeg"),
-                     "data:image/png;base64": ("png", "image/png")}[header]
+                     "data:image/png;base64": ("png", "image/png"),
+                     "data:image/webp;base64": ("webp", "image/webp")}.get(header)
+            if not media or not payload:
+                raise ValueError(f"Missing or unsupported embedded question image: {self.source} {selector}")
             checksum = self.asset(base64.b64decode(payload, validate=True), *media, selector+" img")
             q["imageUrl"] = "asset://" + checksum
         return q
@@ -452,7 +571,7 @@ class Package:
             heading = first(element, "mondai-title")
             if heading:
                 number = int(re.search(r"問題\s*(\d+)", heading.text())[1])
-                section = self.section(number, element)
+                section = "choukai" if self.source == "listening" else self.written_sections[original_qs[0].attrs["id"]]
                 key = (section, number)
                 current = grouped.get(key)
                 if not current:
@@ -462,6 +581,11 @@ class Package:
                         instruction=tidy(ja(first(element, "tieude"))), blocks=[])
                     self.content[section]["mondais"].append(current)
                     grouped[key] = current
+                if section == "choukai" and (player := first(element, "vnjp-choukai-mondai-player")):
+                    if marks := source_times(player):
+                        self.annotations["audioSegments"].append(dict(mondaiId=current["id"],
+                            questionIds=[], startMs=marks[0], endMs=marks[1], role="mondai",
+                            sourceId=self.source, locator=loc+" .vnjp-choukai-mondai-player[data-start]"))
             if current is None:
                 raise ValueError(f"Unassociated questions at {loc}")
             # Passage groups come from the DOM. Audio blocks follow a single recorded exchange.
@@ -490,6 +614,12 @@ class Package:
         expected = [n.attrs["id"] for n in doc.find("q-item")]
         if processed != expected or len(set(processed)) != len(processed):
             raise ValueError(f"Question identity/order mismatch: {self.source}")
+        for idx, block in enumerate(doc.find("mondai-block"), 1):
+            for image in block.walk():
+                if image.tag == "svg" and "vnjp-choukai-q-player__ico" in image.classes:
+                    continue
+                if image.tag in {"img", "svg", "canvas", "object", "picture"} and image not in self.handled_images:
+                    raise ValueError(f"Unmapped {image.tag}: {self.source} .mondai-block {idx}. Inspect source before export.")
 
     def listening(self, mondai, block, originals, owner):
         script_owner = next((n for n in originals if n.attrs["id"] == owner), None)
@@ -500,23 +630,43 @@ class Package:
         targets = [q["id"] for q in block["questions"]]
         if script and tidy(ja(script)):
             rows = aligned_rows(script, self.translations)
-            audio = dict(scriptJaMd=tidy(ja(script)), scriptViMd=joined_vi(rows))
             if len(targets) > 1:
-                media = dict(id=self.node(block["id"]+"/audio",loc+" .vnjp-choukai-script-inner"),
-                             kind="audio", audio=dict(url=None,**audio))
+                media_id = self.node(block["id"]+"/audio",loc+" .vnjp-choukai-script-inner")
+                rows = self.edit_pairs(media_id, rows, "/audio/scriptViMd", loc)
+                media = dict(id=media_id, kind="audio", audio=dict(url=None,
+                    scriptJaMd=tidy(ja(script)), scriptViMd=joined_vi(rows)))
                 block["mediaItems"].append(media)
                 self.annotations["sentencePairs"][media["id"]] = rows
             else:
-                block["questions"][0]["jlptListenScript"] = audio
+                rows = self.edit_pairs(targets[0], rows, "/jlptListenScript/scriptViMd", loc)
+                block["questions"][0]["jlptListenScript"] = dict(scriptJaMd=tidy(ja(script)), scriptViMd=joined_vi(rows))
                 self.annotations["sentencePairs"][targets[0]] = rows
         else:
             self.issue("MISSING_SCRIPT", f"{self.level} {self.period}, {mondai['label']}, {loc} · Cần script tiếng Nhật.", targets[0], "error")
         player = first(script_owner, "vnjp-choukai-q-player")
-        times = interval(player) if player else None
+        times = source_times(player)
         if times:
             self.annotations["audioSegments"].append(dict(mondaiId=mondai["id"], questionIds=targets,
                 startMs=times[0], endMs=times[1], role="shared" if len(targets)>1 else "question",
-                sourceId=self.source,locator=loc+" .vnjp-choukai-q-player[data-start][data-end]"))
+                sourceId=self.source,locator=loc+" .vnjp-choukai-q-player[data-start]"))
+
+    def mondai_ranges(self):
+        segments = self.annotations["audioSegments"]
+        for m in self.content["choukai"]["mondais"]:
+            present = [s for s in segments if s["mondaiId"] == m["id"]]
+            if any(s["role"] == "mondai" for s in present):
+                continue
+            intervals = [s for s in present if s["role"] in {"question", "shared"} and s["endMs"] is not None]
+            expected = [q["id"] for b in m["blocks"] for q in b["questions"]]
+            if not intervals or [q for s in intervals for q in s["questionIds"]] != expected:
+                continue
+            if any(a["endMs"] > b["startMs"] for a,b in zip(intervals,intervals[1:])):
+                self.issue("CHECK_MONDAI_TIMES", "Mốc câu chồng lấn. Rà lại biên luyện mondai.", m["id"])
+                continue
+            first_cue, last_cue = intervals[0], intervals[-1]
+            segments.append(dict(mondaiId=m["id"], questionIds=[], role="mondai",
+                startMs=first_cue["startMs"], endMs=last_cue["endMs"], sourceId="listening",
+                locator=f"Question span: {first_cue['locator']} to {last_cue['locator']} (intro not measured)"))
 
     def load_page(self, page):
         self.source = page["section"]
@@ -525,6 +675,14 @@ class Package:
             raise ValueError("Refresh/review audit for " + page["path"])
         self.sources.append(source_record(self.source,page["path"],raw))
         self.capture_hash = digest(raw)
+        overlay = Path(page["path"]).parent / f"editorial-sentence-rows-{self.source}.vi.json"
+        if (ROOT / overlay).is_file():
+            patch = (ROOT / overlay).read_bytes()
+            data = json.loads(patch)
+            if data["captureSha256"] != self.capture_hash:
+                raise ValueError(f"Source changed since sentence edit: {overlay}")
+            self.sentence_edits = dict(data["edits"])
+            self.sources.append(source_record(f"sentence-edits-{self.source}",overlay.as_posix(),patch))
         overlay = Path(page["path"]).parent / f"editorial-questions-{self.source}.vi.json"
         if (ROOT / overlay).is_file():
             patch = (ROOT / overlay).read_bytes()
@@ -541,15 +699,15 @@ class Package:
                 raise ValueError(f"Passage source changed since translation: {overlay}")
             self.editorial_passages = dict(data["passages"])
             self.sources.append(source_record("editorial-passages", overlay.as_posix(), patch))
-        overlay = Path(page["path"]).parent / "editorial-written.vi.json"
-        if self.source == "written" and (ROOT / overlay).is_file():
+        overlay = Path(page["path"]).parent / f"editorial-{self.source}.vi.json"
+        if (ROOT / overlay).is_file():
             patch = (ROOT / overlay).read_bytes()
             data = json.loads(patch)
             if data["captureSha256"] != self.capture_hash:
-                raise ValueError(f"Written source changed since AI review: {overlay}")
+                raise ValueError(f"Source changed since explanation review: {overlay}")
             self.editorial_hash = digest(patch)
             self.editorial = dict(data["questions"])
-            self.sources.append(source_record("editorial-written",overlay.as_posix(),patch))
+            self.sources.append(source_record(f"editorial-{self.source}",overlay.as_posix(),patch))
         parser = SingleFileDocument()
         parser.feed(raw.decode("utf-8-sig"))
         parser.close()
@@ -557,31 +715,40 @@ class Package:
         self.shared = {q:g["scriptOwner"] for g in page.get("sharedScripts",[]) for q in g["questions"]}
         if self.source == "listening":
             self.prepare_master(parser.root,page)
+        else:
+            self.map_written(parser.root, page)
         self.read_blocks(parser.root)
         if (self.level, self.period, self.source) == ("N1", "2018-12", "written"):
             q46 = self.uid("written/q-46")
             self.issue("VERIFY_PASSAGE_START", "Bài đọc của #q-46 mở đầu bằng 人間だとすれば; đối chiếu bản gốc xem có thiếu phần mở đầu.", q46)
-        unknown = self.editorial.keys() | self.editorial_passages.keys() | self.question_translations.keys()
+        unknown = self.editorial.keys() | self.editorial_passages.keys() | self.question_translations.keys() | self.sentence_edits.keys()
         if unknown:
             raise ValueError(f"Unknown editorial targets: {sorted(unknown)}")
         self.expected[self.source] = page["questionCount"]
 
     def finish(self):
         year, month = map(int,self.period.split("-"))
-        self.issue("EDITORIAL_REVIEW", "Pilot nhập thử. Rà nghĩa, lời giải, ghi chú ngữ pháp và các bảng so với HTML trước phát hành.")
+        self.mondai_ranges()
+        if self.written_only and "listening" in self.expected:
+            raise ValueError("Listening capture found for edition marked written-only. Review its scope evidence.")
+        for source in ("written", "listening"):
+            if source not in self.expected and not (source == "listening" and self.written_only):
+                self.issue("MISSING_" + source.upper(), f"Thiếu nguồn {source} cho {self.level} {self.period}.", severity="error")
+        self.issue("EDITORIAL_REVIEW", "Rà nghĩa, lời giải, ghi chú ngữ pháp và các bảng so với HTML trước phát hành.")
         expectations = [dict(mondaiId=m["id"], questionCount=sum(len(b["questions"]) for b in m["blocks"]))
                         for paper in self.content.values() for m in paper["mondais"]]
         if sum(e["questionCount"] for e in expectations) != sum(self.expected.values()):
             raise ValueError("Coverage mismatch")
-        package = dict(schemaVersion="1.2.0", packageId=str(self.namespace),revision=2,
-                       exam=dict(level=self.level,slug=f"vnjpclub-{self.level.lower()}-{self.period}",
+        package = dict(schemaVersion="1.3.0", packageId=str(self.namespace),revision=self.revision,
+                       exam=dict(level=self.level,slug=f"{year:04d}/{month:02d}",
                                  name=f"JLPT {self.level} · {month:02d}/{year}",kind="practice",year=year,month=month),
                        structure=dict(profileKey=f"vnjpclub-{self.level.lower()}-{self.period}",
-                                      description="Thứ tự và số mondai từ hai bản SingleFile.",
+                                      description="Thứ tự và số mondai từ các bản SingleFile đang có.",
                                       sectionOrder=SECTIONS,timings=[],expectations=expectations),
                        sources=self.sources, assets=list(self.assets.values()),content=self.content,
                        annotations=self.annotations,masterAudio=self.master,
                        review=dict(status="draft",reviewedBy=None,reviewedAt=None,issues=self.issues))
+        self.issues.extend(checklist_issues(package))
         target = self.output / "packages" / self.level / self.period
         write_exact(target / "package.json",(json.dumps(package,indent=2,ensure_ascii=False)+"\n").encode())
         details = [f"# Pilot {self.level} {self.period}", "", "Đã chuyển nguyên dữ liệu có trong nguồn. Trạng thái draft.",
@@ -597,21 +764,44 @@ class Package:
 
 def main():
     cli = argparse.ArgumentParser(description=__doc__)
+    cli.add_argument("--level", required=True, choices=["N1", "N2", "N3", "N4", "N5"])
+    cli.add_argument("--period", required=True, help="YYYY-MM")
+    cli.add_argument("--revision", type=int, help="Positive revision to stage")
+    cli.add_argument("--layout", type=Path, help="Reviewed written-layout.json bound to the written capture SHA")
+    cli.add_argument("--inspect-layout", action="store_true", help="Print written block boundaries and instructions only")
     cli.add_argument("--output-root", type=Path, default=ROOT)
     args = cli.parse_args()
+    if not re.fullmatch(r"\d{4}-(0[1-9]|1[0-2])", args.period):
+        cli.error("--period must be YYYY-MM")
+    if not args.inspect_layout and (args.revision is None or args.revision < 1):
+        cli.error("--revision must be a positive integer")
     report = json.loads((ROOT/"reports/source-gaps.json").read_bytes())
-    groups = defaultdict(list)
-    for p in report["pages"]:
-        groups[p["level"],p["period"]].append(p)
-    for key, pages in sorted(groups.items()):
-        if key not in PROFILES:
-            raise ValueError(f"Layout requires review before extraction: {key}")
-        if sorted(p["section"] for p in pages) != ["listening","written"]:
-            raise ValueError(f"Expected one written and one listening capture for {key}")
-        pack = Package(*key,args.output_root.resolve())
-        for p in sorted(pages,key=lambda p:p["section"]!="written"):
-            pack.load_page(p)
-        print(pack.finish(), flush=True)
+    pages = [p for p in report["pages"] if p["level"] == args.level and p["period"] == args.period]
+    if not pages or any(p["section"] not in {"listening","written"} for p in pages):
+        cli.error("No recognized audited pages for this exam. Inspect the captures and rerun audit_sources.py.")
+    if len({p["section"] for p in pages}) != len(pages):
+        cli.error("Multiple audited captures for the same section. Resolve active/archive selection first.")
+    if args.inspect_layout:
+        for page in pages:
+            if page["section"] != "written":
+                continue
+            raw = (ROOT / page["path"]).read_bytes()
+            if digest(raw) != page["sha256"]:
+                cli.error("Written capture changed since audit")
+            print("captureSha256", page["sha256"])
+            doc = SingleFileDocument()
+            doc.feed(raw.decode("utf-8-sig"))
+            doc.close()
+            for block in doc.root.find("mondai-block"):
+                questions = block.find("q-item")
+                if questions:
+                    title = first(block, "mondai-title")
+                    print(questions[0].attrs["id"], title.text() if title else "-", tidy(ja(first(block,"tieude"))))
+        return
+    pack = Package(args.level, args.period, args.output_root.resolve(), args.revision, args.layout)
+    for page in sorted(pages, key=lambda p:p["section"] != "written"):
+        pack.load_page(page)
+    print(pack.finish(), flush=True)
 
 
 if __name__ == "__main__":

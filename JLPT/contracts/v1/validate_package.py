@@ -7,6 +7,7 @@ from collections import Counter
 from pathlib import Path
 
 from jsonschema import Draft202012Validator, FormatChecker
+from jlpt_coverage import checklist_issues
 
 
 HERE = Path(__file__).resolve().parent
@@ -34,6 +35,22 @@ def relative_file(root, relative):
     return candidate
 
 
+def source_snapshot(root, source):
+    relative = Path(source["localPath"])
+    candidate = (root / relative).resolve()
+    ensure(not relative.is_absolute() and candidate.is_relative_to(root) and ".." not in relative.parts,
+           f"Path outside root: {relative}")
+    if candidate.is_file():
+        return candidate
+    if relative.parts and relative.parts[0] in ("N1", "N2", "N3", "N4", "N5"):
+        archive = root / relative.parts[0] / "old"
+        for path in archive.rglob("*"):
+            if (path.name == relative.name and path.is_file() and path.resolve().is_relative_to(root)
+                    and sha256(path) == source["sha256"]):
+                return path
+    raise ValueError(f"Missing source snapshot: {relative}")
+
+
 def unique(values, label):
     counts = Counter(values)
     duplicates = [key for key, count in counts.items() if count > 1]
@@ -50,12 +67,18 @@ def schema_check(data, filename):
 
 def check_package(p, root, release):
     schema_check(p, "exam-package.schema.json")
+    if p["schemaVersion"] == "1.3.0":
+        exam = p["exam"]
+        ensure(exam["slug"] == f"{exam['year']:04}/{exam['month']:02}", "Slug disagrees with exam date")
+        if release or p["review"]["status"] == "approved":
+            gaps = checklist_issues(p)
+            ensure(not gaps, f"Missing release material ({len(gaps)} checks): {gaps[:3]}")
     source_ids = unique((s["sourceId"] for s in p["sources"]), "sourceId")
     for s in p["sources"]:
         if s["status"] == "available" and s["kind"] != "synthetic":
             ensure(s["localPath"] and s["sha256"], f"Missing source snapshot/hash: {s['sourceId']}")
         if s["localPath"] and s["status"] == "available":
-            ensure(sha256(relative_file(root, s["localPath"])) == s["sha256"], f"Source changed: {s['localPath']}")
+            ensure(sha256(source_snapshot(root, s)) == s["sha256"], f"Source changed: {s['localPath']}")
 
     unique((a["assetId"] for a in p["assets"]), "assetId")
     assets = {a["assetId"]: a for a in p["assets"]}
@@ -241,7 +264,7 @@ def main():
             ensure(not package_ids.intersection(nodes), f"Package UUID reused by a content node: {path}")
             ensure(not all_nodes.intersection(nodes), f"UUID shared between packages: {path}")
             all_nodes.update(nodes)
-            slug = (p["exam"]["level"], p["exam"]["slug"])
+            slug = (p["exam"]["level"], p["exam"]["slug"].replace("/", "-"))
             ensure(slug not in slugs, f"Duplicate level/slug: {slug}")
             slugs.add(slug)
     print(f"OK {args.path}")
