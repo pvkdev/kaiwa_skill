@@ -136,5 +136,10 @@ class ReleaseChecks(unittest.TestCase):
         self.assertTrue(missing())
         question["imageUrl"] = "asset://test"
         self.assertFalse(missing())
+        choice["text"] = "アイウ"
+        self.assertFalse(missing())
+        del question["imageUrl"]
+        self.assertTrue(missing())
+        question["imageUrl"] = "asset://test"
         choice["text"] = "アイス"
         self.assertTrue(missing())

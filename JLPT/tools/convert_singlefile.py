@@ -615,6 +615,9 @@ class Package:
                 current["blocks"].append(block)
                 for p in element.find("passage-content"):
                     self.passage(block,p,loc+" .passage-content")
+                for child in element.children:
+                    if isinstance(child, Node) and "vnjp-dokkai-thongtindich" in child.classes:
+                        self.passage(block, child, loc+" .vnjp-dokkai-thongtindich")
                 if self.source == "listening":
                     self.listening(current,block,nodes,group)
         expected = [n.attrs["id"] for n in doc.find("q-item")]

@@ -78,7 +78,7 @@ def coverage(package):
                         check("questionVi", (prompt.get("textVi") or q.get("translationVi") or "").strip(), qid)
                     for c in q["choices"]:
                         image_label = section == "choukai" and q.get("imageUrl") and re.fullmatch(
-                            r"[アイウエ](?:[\s・→、]+[アイウエ])*", c["text"].strip())
+                            r"[アイウエ](?:[\s・→、]*[アイウエ])*", c["text"].strip())
                         if not image_label and meaningful(c["text"]) and (usage or section in ("dokkai", "choukai")):
                             check("choiceVi", (c.get("textVi") or "").strip(), qid, c["id"])
                     if section == "choukai":

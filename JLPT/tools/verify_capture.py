@@ -46,6 +46,8 @@ def verify(package, root):
             group = element.find("q-item")
             if group:
                 texts = [passage_markdown(p) for p in element.find("passage-content")]
+                texts.extend(passage_markdown(p) for p in element.find("vnjp-dokkai-thongtindich")
+                             if p in element.children)
                 for q in group:
                     materials[q.attrs["id"]] = [p for p in texts if p]
                 previous = [q.attrs["id"] for q in group]
